@@ -44,7 +44,7 @@ Despite extensive cryo-Electron Microscopy (cryo-EM) studies, a map of the S:A
 
 ## Results and discussion
 
-## Subunit-specific dynamics and domain motions of S protein trimer
+### Subunit-specific dynamics and domain motions of S protein trimer
 
 Structural snapshots of the ACE2 binding interface with the SARS-CoV-2 S protein have previously been described for the RBD alone (Lan et al., 2020; Wrapp et al., 2020; Ali and Vijayan, 2020; Chan et al., 2020; Wang et al., 2020a). In this study, we have expanded this to map interactions and dynamics of ACE2 binding with a larger S protein construct, S (1–1208), lacking only the C-terminal membrane spanning helices. Mutations at the S1/S2 cleavage site (PRRAS motif substituted by PGSAS motif) and 986–987 (KV substituted PP) were engineered (Wrapp et al., 2020) to block host cell-mediated S protein proteolysis during expression and purification (Figure 2—figure supplement 1). S (1–1208), ACE2, and RBD eluted as trimers, dimers, and monomers, respectively, on size-exclusion chromatography (Figure 2—figure supplement 1, Figure 3—figure supplement 1, and Figure 5—figure supplement 1). S protein hereafter in the text denotes S (1–1208). Isolated RBD constructs showed high-affinity binding to ACE2 (Figure 3—figure supplement 1, Figure 5—figure supplement 1).
 
@@ -52,19 +52,55 @@ HDXMS of S protein alone was next carried out as described in 'Materials and m
 
 HDXMS results were overlaid onto integrative models of the full-length S protein trimer built using experimental structures of prefusion S ECD in the open conformation (PDB ID: 6VSB) (Wrapp et al., 2020) and HR2 domain from SARS S protein as templates. A deuterium exchange heat map (t = 1 and 10 min) revealed the stalk region to show the greatest relative deuterium exchange (Figure 2A). This is consistent with earlier studies showing at least 60° sweeping motions of the three identified hinge regions of the stalk (Turoňová et al., 2020). This was further verified via all-atom MD simulations of the S protein model embedded in a viral model membrane, which showed significant motions of the S protein ECD resulting from the high flexibility of the stalk region (Figure 2B), combined with large atomic fluctuations around the HR2 domain, compared to the rest of the protein (Figure 2—figure supplement 3, Figure 2—figure supplement 4).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-v2.jpg)
+
+**Figure 2.:** (A) Deuterium exchange at t = 1 min deuterium exchange mapped onto the structure of S protein (shades of blue [low exchange] and red [high exchange]). (B) Per-residue root mean square fluctuation (RMSF) of the S protein mapped onto the surface of the S trimer. Deuterium exchange-based dynamics across N-terminal domain (NTD) (C), receptor binding domain (RBD) (D), and the S2 subunit (E). (i) Relative fractional deuterium uptake (RFU) plots of NTD, RBD, and the S2 subunit at 1 min (orange) and 10 min (black) deuterium exchange times, with pepsin digest fragments displayed from N to C-terminus (X-axis). Peptides are grouped into clusters indicated by brackets (X-axis) for ease of display. Individual peptides within each cluster are identifiable from the Supplementary Excel file, which lists clusters and each peptide within each cluster (Supplementary file 1: Table S1). (Also see Figure 2—figure supplement 2). (ii) Deuterium exchange maps on close-up of the structures of NTD (21–303), RBD (318–552), and the S2 subunit (821–1197). Peptides spanning NTD–RBD interaction sites (166–182, 213–223, 294–303, 318–325, 375–387, and 442–449) showing relatively high deuterium exchange at t = 1 min are highlighted. (iii) The first principal motion and RMSF values of backbone atoms on the NTD, RBD, and the S2 subunit. Residues with high RMSF are labeled. Different domains (fusion peptide [FP], heptad repeat 1 [HR1], central helix [CH], connector domain [CD], heptad repeat 1 [HR2]) showing domain-specific RFU changes are labeled. RFU values are tabulated in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Images of denaturing polyacrylamide gel electrophoresis of purified S protein (1–1208) is shown along with its molecular size highlighted with red arrow, alongside protein standards. (B) Molecular weight analysis of purified S (1–1208) by size exclusion chromatography – multiple angle light scattering with measured molecular weight of 484.2 (kDa) (±4.9%).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Coverage map showing 317 peptides spanning 87% of the S protein: (A) 1–600 and (B) 601–1208, with the mutations highlighted in red. Glycosylation sites are indicated by asterisks, and peptide coverage for C-terminal twin strep tag is not shown. The domain organization for S protein construct 1–1208 is shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Relative fractional deuterium uptake (RFU, Y-axis) of each pepsin proteolyzed peptide listed from N- to C-terminus (X-axis) spanning S1 subunit (A) and S2 subunit (B) at labeling times 1 min (orange) and 10 min (black) are shown in a modified mirror plot of RFU versus pepsin fragment peptide. Peptides are grouped into clusters for ease of display. Peptides in each cluster are listed in Supplementary file 1: Table S1. Red line indicates the average RFU values of all peptides constituting S1 and S2 subunits. Purple box in dashed lines highlights peptides spanning the S1/S2 cleavage site. RFU values at 1 min deuterium labeling mapped onto the structures of the S1 (C) and S2 (D) subunits. High (red) and low (blue) exchanging regions are as per key. Relative fractional uptake is the ratio of number of deuterons exchanged to the total number of exchangeable amides in a peptide. RFU values are tabulated in Figure 2—source data 1. FP: fusion peptide; HR1: heptad repeat 1; CH: central helix; CD: connector domain; HR2: heptad repeat 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The first principal motion of all backbone atoms for full-length S protein during all-atom MD simulations as determined by principal component analysis. (B, C) Root mean square fluctuation (RMSF) values of backbone atoms on the S2 subunit and N-terminal domain. Residues with high RMSF are labeled. ECD: ectodomain; HR1: heptad repeat 1; HR2: heptad repeat 2; FP: fusion peptide; CD: connector domain; CH: central helix.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Root mean square deviation of the C⍺ atoms of the N-terminal domain (residues 27–305), receptor binding domain (RBD) (residues 317–553), and heptad repeat 2 domain (residues 1165–1208) for all three chains of the S protein throughout the 200 ns simulation. (B) Root mean square fluctuation (RMSF) of these three domains calculated for every 20 ns window throughout the simulations. ACE2: angiotensin-converting enzyme 2.
+
 Interestingly, the deuterium exchange heat map also showed highest relative exchange in the S2 subunit (Figure 2—figure supplement 3) and helical segments of the stalk, while peptides spanning the FP showed relatively lower deuterium exchange overall. Individually, S1 and S2 subunits showed different intrinsic deuterium exchange kinetics, where average relative fractional deuterium uptake (RFU) at early deuterium exchange time points of S1 subunit (~0.25) was lower than the average RFU (~0.35) for the S2 subunit (Figure 2—figure supplement 3, source data – Figure 2—source data 1). Furthermore, peptides connecting the RBD to the rest of the S protein showed greater deuterium exchange, suggesting a ‘hinge’ role for this segment to facilitate RBD adopting an ensemble of open and closed conformational states (Figure 2C). Indeed, in our simulations of the S protein (Figure 2B), the RBD oriented initially in an ‘up’ conformation and exhibited spontaneous motion toward the ‘down’ conformation relative to the hinge region (Figure 2D, Figure 2—figure supplement 4A). Interestingly, a part of the receptor binding motif, specifically residues 476–486, exhibited a higher degree of flexibility based on its average atomic fluctuations (Figures 2B and 3B), suggesting a role for the ACE2 receptor in stabilizing S protein dynamics and priming it for host furin proteolysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig3-v2.jpg)
+
+**Figure 3.:** (A) Relative fractional deuterium uptake values at t = 1 min for RBD (314–547) of spike (S) protein (RBDS) mapped onto the structure of RBD extracted from S protein model (see Supplementary file 1: Table S2). High and low exchanging regions are represented as shown in key, and regions with no coverage are shown in black. (B) The root mean square fluctuation (RMSF) values of backbone atoms on the RBD showing residues with high RMSF (476–486) as per key. Differences in deuterium exchanged between RBDisolated:ACE2 complex and free RBDisolated (C) and RBDS:ACE with free RBDS (D) at 1 min of deuterium labeling are mapped onto the structure of RBD. Protection from deuterium uptake and increases in exchange are indicated in blue and red, respectively. Regions with no peptide coverage are in black. RFU: relative fractional deuterium uptake.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Images of denaturing polyacrylamide gel electrophoresis of purified RBD isolated (maltose-binding protein [MBP]-tagged) are shown along with its molecular sizes highlighted with red arrow, alongside protein standards. (B) Molecular weight analysis of expressed MBP-tagged RBD by size exclusion chromatography – multiple angle light scattering. The measured molecular weight (kDa) is 81.2 (±4.8%) for RBD. (C) Interactions between ACE2 and RBD represented by the binding curves obtained from enzyme-linked immunosorbent assay experiments as described in 'Materials and methods'. Testing of RBD was performed by adding 100 µL of 10.4 nM ACE2 to a maxisorp plate coated with RBD at varying concentrations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Coverage map showing 92 peptides (green bar) spanning ~92% sequence of maltose-binding protein (MBP)-RBDisolated (318–589) fusion protein. Peptides spanning the N-terminal MBP affinity tag are not shown. Glycosylation sites are indicated by green asterisks. (B) Relative fractional deuterium uptake (RFU) plot of pepsin proteolyzed peptides of RBDisolated listed N- to C-terminus for deuterium labeling times as per key. Peptides are grouped into clusters for ease of display. RFU values for peptide clusters are tabulated in Figure 3—figure supplement 2—source data 1.
 
 The NTD of the S protein showed low overall RFU (~0.2), consistent with its well-structured arrangement of β-sheets connected by loops (Figures 1B and 2C). Importantly, certain regions showed significantly higher deuterium exchange (~0.4), of which two loci (136–143, 243–265) span the dynamic interdomain interactions with the RBD. This is supported by the high per-residue root mean square fluctuations (RMSFs) and large principal motions observed for residues 249–259 during simulations (Figure 2C, Figure 2—figure supplement 4C). One locus (291–303) at the C-terminal end of the NTD connecting to the RBD showed high deuterium exchange, indicating high relative motions of the two domains. The RBD (Figure 2D) showed an overall higher deuterium exchange (RFU ~0.35), with the peptides spanning the hinge regions (318–336) showing greatest deuterium exchange (~0.6). Peptides spanning residues 351–375 and 432–452 showed significantly increased deuterium uptake, and these correspond to the NTD interdomain interaction sites. Interestingly, certain loci of the RBD at the ACE2 interface (453–467, 491–510) showed higher intrinsic exchange.
 
 Overall, the S2 subunit showed variable deuterium exchange across the constituent domains (Figure 2E, Figure 2—figure supplement 3). Interestingly, peptides spanning the region directly C-terminal to the S1/S2 cleavage site showed the greatest deuterium exchange (0.6). Congruently, our MD simulations revealed the unstructured loop housing the S1/S2 cleavage site (residues 677–689) to be highly dynamic (Figure 2—figure supplement 4), with RMSFs reaching >1.0 nm. It is important to note that the S1/S2 cleavage site has been abrogated in the construct of the S protein used in this study to block proteolytic processing into S1 and S2 subunits during expression in host cells. We observed lower deuterium exchange (and lower RMSF values) at peptides forming the CH and CD, suggesting their function as the central stable core of prefusion S. In contrast, peptides spanning hinge segments and heptad repeats (HR1 and HR2) showed high exchange and RMSF values, reflecting the S protein’s ensemble properties encompassing prefusion, fusion, and postfusion conformations in solution.
 
-## Domain-specific and global effects of ACE2 binding to the RBD
+### Domain-specific and global effects of ACE2 binding to the RBD
 
 Comparative HDXMS of the S protein and S:ACE2 complex showed large-scale changes in S protein upon ACE2 binding. The RBD forms the main interaction site on S protein for ACE2. We therefore set out to comparatively map HDXMS of ACE2:RBD interface of an isolated MBP fusion construct of the RBD (‘RBDisolated’) (Figure 3C, Figure 3—figure supplement 2—source data 1 Supplementary file 1: Table S2) with S:ACE2 complex (Figure 4A, B). A list of peptides common to RBDisolated and S protein (‘RBDS’) showed differences in deuterium exchange only at interdomain interfaces within individual monomers and trimer interaction sites in the S protein (Supplementary file 1: Table S3). Several RBDS peptides showed decreased exchange upon complexation with ACE2 (Figure 3). These include peptides 340–359, 400–420, 432–452, and 487–502 in the RBDS:ACE2 complex (Figure 4). Sites showing deuterium exchange protection are consistent with the RBD:ACE2 interface described by X-ray crystallography (PDB: 6M0J) (Lan et al., 2020). Further, HDXMS revealed the core of this interface to be contributed by peptides 340–359, 400–420, 432–452, and 491–510 (Figure 4A, D, Figure 2—figure supplement 3). Interestingly, loci showing large-magnitude differences in deuterium exchange correlate to certain mutational hotspots (Wang et al., 2020b).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig4-v2.jpg)
 
-**Figure 4.:** (A) Differences in deuterium exchange (ΔDex) (t = 1 min) in S protein upon binding ACE2 showing decreased (blue) and increased (red) deuterium exchange, mapped onto the structure of S protein. Deuterium exchange differences (X-axis) for peptides from (B) receptor binding domain (RBD)S and S2 subunit (C). Peptides are grouped into clusters indicated by brackets (X-axis) for ease of display. Individual peptides within each cluster are identifiable from the source data (Figure 4—source data 1). Difference cutoff ±0.3 D (Houde et al., 2011) is the deuterium exchange significance threshold indicated by pink shaded box with standard error values in gray. Positive differences (>0.3 D) denote increased deuterium exchange, and negative differences (<−0.3 D) denote decreased deuterium exchange in S protein bound to ACE2. (B) Peptides spanning residues interacting with ACE2 are in purple. (C) Peptides spanning S1/S2 cleavage site, fusion peptide (FP) and heptad repeat 1 (HR1) are highlighted in pink boxes, while peptides spanning central helix and heptad repeat 2 (HR2) are in blue. (D) Stacked mass spectra with isotopic envelopes after deuterium exchange (t = 1, 10 min) for select peptides from (i) RBD (residues 476–498), (ii) S1/S2 cleavage site (residues 672–690), (iii) FP (residues 823–832), and (iv) HR2 (residues 1175–1188) are shown for the S protein and S:ACE2 complex. Mass spectra of the equivalent undeuterated peptide are shown for reference. The centroid masses are indicated by red arrowheads.Figure 4—source data 1.
+**Figure 4.:** (A) Differences in deuterium exchange (ΔDex) (t = 1 min) in S protein upon binding ACE2 showing decreased (blue) and increased (red) deuterium exchange, mapped onto the structure of S protein. Deuterium exchange differences (X-axis) for peptides from (B) receptor binding domain (RBD)S and S2 subunit (C). Peptides are grouped into clusters indicated by brackets (X-axis) for ease of display. Individual peptides within each cluster are identifiable from the source data (Figure 4—source data 1). Difference cutoff ±0.3 D (Houde et al., 2011) is the deuterium exchange significance threshold indicated by pink shaded box with standard error values in gray. Positive differences (>0.3 D) denote increased deuterium exchange, and negative differences (<−0.3 D) denote decreased deuterium exchange in S protein bound to ACE2. (B) Peptides spanning residues interacting with ACE2 are in purple. (C) Peptides spanning S1/S2 cleavage site, fusion peptide (FP) and heptad repeat 1 (HR1) are highlighted in pink boxes, while peptides spanning central helix and heptad repeat 2 (HR2) are in blue. (D) Stacked mass spectra with isotopic envelopes after deuterium exchange (t = 1, 10 min) for select peptides from (i) RBD (residues 476–498), (ii) S1/S2 cleavage site (residues 672–690), (iii) FP (residues 823–832), and (iv) HR2 (residues 1175–1188) are shown for the S protein and S:ACE2 complex. Mass spectra of the equivalent undeuterated peptide are shown for reference. The centroid masses are indicated by red arrowheads.
 
 A closer examination of the RBDisolated:ACE2 interface by HDXMS also revealed decreased exchange in peptides spanning these regions (Figure 3). However, the magnitude of deuterium exchange protection was significantly more in RBDisolated than in RBDS, potentially reflecting the higher flexibility in the full-length S trimer relative to free RBD, interfering with ACE2 binding. High-resolution structures of RBD:ACE2 reveal the core of the RBD interface to be formed by amino acids Y449, Y453, N487, Y489, G496, T500, G502, Y505, L455, F456, F486, Q493, Q498, and N501 (Wang et al., 2020a). These correspond to peptide 448–501 from S protein and RBDisolated in our HDXMS study.
 
@@ -72,41 +108,179 @@ Cryo-EM studies have shown that each RBD in the trimeric S protein can adopt an 
 
 ACE2 binding to RBDisolated and RBDS resulted in similar effects, where we observed deuterium exchange protection at the peptide regions spanning the known binding interface of RBD. Notably, increased deuterium exchange was observed at the hinge region (Figure 3D), indicating allosteric conformational changes, associated with restricting the open and closed states interconversion. Therefore, the destabilization/local unfolding observed at the hinge region as a result of ACE2 binding enables RBD to maintain the open conformation. It therefore seems likely that small molecules and biologics targeting the hinge region to lock RBD in the closed state would be of potential high therapeutic value.
 
-## ACE2 binding to RBD is allosterically propagated to the S1/S2 cleavage site and HR
+### ACE2 binding to RBD is allosterically propagated to the S1/S2 cleavage site and HR
 
 Unexpectedly, ACE2 binding at the RBD induced large-scale changes in deuterium exchange in distal regions of the S protein. Some of the peptides in the stalk of S protein showed decreased exchange in the S:ACE2 complex (Figure 4C,D). This indicates that ACE2 receptor interactions stabilized the hinge dynamics in the S protein. Decreased exchange was also seen in the distal sites in the S2 subunit, localized at the FP locus and CH. Interestingly, increased exchange was seen in multiple peptides flanking the S1/S2 cleavage site, HR1 domain, and critically at the S1/S2 cleavage site (Figure 4D). Even though the protease cleavage site is abrogated in the construct used in this study, we still observed increased dynamics as inferred by the higher relative deuterium exchange at the S1/S2 locus. Furthermore, this region exhibited high RMSF values during simulations (Figure 2—figure supplement 4B). These results clearly indicate that ACE2 binding induces allosteric enhancement of dynamics at this locus, providing mechanistic insights into the conformational switch from the prefusion to fusogenic intermediate. Differences in deuterium exchange between free S protein and the S:ACE2 complex show stabilization at the ACE2 interacting site and local destabilization at peptides juxtaposed to the S1/S2 cleavage site and HR1 ( peptides 931–938). This suggests that ACE2 binding allosterically primes HR1 and other high exchanging regions flanking the S1/S2 cleavage site for enhanced furin protease binding and cleavage. Importantly, these results suggest that the S1/S2 cleavage site is a critical hotspot for S protein dynamic transitions for facilitating SARS-CoV-2’s entry into the host, and therefore represents a new target for inhibitory therapeutics against the virus.
 
-## Dynamics of RBD:ACE2 and S:ACE2 protein interactions provides insights for viral–host entry
+### Dynamics of RBD:ACE2 and S:ACE2 protein interactions provides insights for viral–host entry
 
 Considering the indispensable role of ACE2 binding in SARS-CoV-2 infection, it is crucial to assess the effects of S protein and RBD binding on ACE2 dynamics (Figure 5, Figure 5—figure supplements 1–3, Supplementary file 1: Table S4). We therefore mapped the corresponding binding sites of RBD, both isolated and within the S protein, onto ACE2. The S:ACE2 complex represents the prefusion pre-cleavage state wherein full-length S protein is bound to the ACE2 receptor (Figure 1B, ii), while the RBDisolated:ACE2 complex represents the post-furin cleavage product formed by the S1 subunit and ACE2 (Figure 1B, iii). Previous studies have shown that 14 key amino acids of RBD interact with ACE2, wherein mutations at six sites resulted in higher binding affinity of SARS-CoV-2 (Li et al., 2005). SARS-CoV-2 adopted a different binding mode to ACE2 as a superior strategy for infection compared to SARS-CoV-1. A crystal structure of RBDisolated:ACE2 complex has identified 24 key ACE2 residues, spanning across peptides 16–45, 79–83, 325–330, 350–357, and R393 (Towler et al., 2004). While most of these residues are conserved in binding to both SARS-CoV-1 and SARS-CoV-2, R393 and residues 325–330 are unique to SARS-CoV-1 interaction (Wang et al., 2020b). Interestingly, we observed increased deuterium exchange at these residues in the S:ACE2 complex compared to ACE2 alone (Figure 5C). Identifying the intrinsic dynamics and allosteric changes upon binding could guide development of therapeutic antibodies and small molecule drugs.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig5-v2.jpg)
+
+**Figure 5.:** (A) Structure of extracellular domain of ACE2 receptor (PDB ID: 1R42) depicting the relative fractional deuterium uptake (RFU) at t = 1 min. (B) Differences in deuterium exchange of RBDisolated:ACE2 complex and free ACE2 at t = 1 min mapped onto the structure of ACE2, predominantly showing decreased deuterium exchange in ACE2 (shades of blue). (C) Heat map of differences in deuterium exchange (t = 1 min) of S:ACE2 complex and free ACE2. (D) Plot showing differences in deuterium exchange between ACE2 and complexes with RBDisolated (i) and S (ii) at different labeling times. Peptides are grouped into clusters for ease of display and listed in source data (Figure 5—source data 1). Cutoff ± 0.3 D is the deuterium exchange significance threshold, indicated by pink shaded box, and standard errors are in gray. Positive differences denote increased deuterium exchange in (i) RBDisolated:ACE2 or (ii) S:ACE2 compared to free ACE2, while negative differences denote decreased deuterium exchange. Peptides spanning the sites of interaction with RBD and two distal sites (278–292, 574–585) are highlighted. (E) Stacked mass spectra showing isotopic distribution for select peptides spanning the binding sites (Ali and Vijayan, 2020; Chan et al., 2020; Wang et al., 2020a; Watanabe et al., 2020; Cai et al., 2020; Wang et al., 2020b; Li et al., 2005; Towler et al., 2004; Hamuro et al., 2008; Hoofnagle et al., 2003; Houde et al., 2011; Šali and Blundell, 1993; Hakansson-McReynolds et al., 2006; Dev et al., 2016; Eramian et al., 2006; Ramachandran et al., 1963; Petit et al., 2007; van Meer, 1998; Krijnse-Locker et al., 1994) and a distal allosteric site (575–586) for ACE2, S:ACE2, and RBDisolated:ACE2 are shown at 1 min deuterium labeling time. Centroids indicated by red arrowheads.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images of denaturing polyacrylamide gel electrophoresis of purified ACE2 (Fc-tagged) is shown, and its molecular sizes are highlighted with red arrow, alongside protein standards. (B) Molecular weight analysis of Fc-tagged ACE2 by size exclusion chromatography – multiple angle light scattering. The measured molecular weight (kDa) is 193.6 (±7.9%) for ACE2. (C) Interactions between ACE2 and RBD represented by the binding curves obtained from enzyme-linked immunosorbent assay experiments as described in 'Materials and methods'. Testing of ACE2 was performed by adding ACE2 at varying concentrations to a maxisorp plate coated with 100 µL of 27.2 nM RBD.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Coverage map showing 146 peptides (pink horizontal bars) covering ~80% sequence of ACE2 (18–615). Sequence of Fc-tag is not shown. Glycosylation sites are represented by green asterisks.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63646/elife-63646-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Relative fractional deuterium uptake values of pepsin proteolyzed peptides listed in N- to C-terminus of ACE2 (peptides 18–615) for deuterium labeling times. Peptides are grouped into clusters for ease of display and are listed in source data (Figure 5—figure supplement 2—source data 1). (B) Differences in deuterium exchange (Y-axis) for ACE2 peptides listed from N- to C-terminus (X-axis) between S:ACE2 complex and receptor binding domain (RBD)isolated:ACE2 complex. Deuterium exchange significance threshold of ±0.3 D is indicated in red and standard errors in gray (within ±0.3 D) and are tabulated in source data (Figure 5—figure supplement 2—source data 2). (C) The first principal motion of all backbone atoms of the ACE2 monomer as determined by principal component analysis. (D) The root mean square fluctuation (RMSF) values of the ACE2 receptor mapped onto the surface of the ACE2. TM: transmembrane domain.
+
 Simulations of the ACE2 dimer complexed with the B0AT1 amino acid transporter (PDB: 6M1D) (Yan et al., 2020) in a model epithelial membrane revealed a large motion of the peptidase domain, which recognizes the S protein RBD, with respect to the transmembrane and juxtamembrane domains (Figure 5—figure supplement 3). This large motion is reminiscent of the flexible tilting displayed by the S protein ECD itself, suggesting that both S protein and ACE2 have adaptable hinges that allow for orientational freedom of the domains involved in recognition. To understand how S protein binding affects ACE2 dynamics, we performed HDXMS experiments of monomeric ACE2 alone, S:ACE2 and RBD:ACE2 complexes (Figure 5, Figure 5—figure supplement 2) and mapped the deuterium exchange values onto a deletion construct of ACE2 (PDB: 1R42) (Towler et al., 2004; Figure 5, Figure 5—figure supplement 2). We observed a reduction in deuterium exchange across both RBDisolated:ACE2 and larger S:ACE2 complexes compared to free ACE2 (Figure S8B and S8C). Differences in deuterium exchange between RBDisolated:ACE2 complex and free ACE2 showed that RBD binding stabilizes ACE2 globally, specifically large differences at the binding site (peptides 21–29, 30–39, and 75–92), and also at distal regions (peptides 121–146, 278–292, and 575–586) from the RBD binding site of ACE2 (Figure 5E). Cryo-EM studies have shown that a dimeric full-length ACE2 receptor can stably bind to one trimer of the S protein (Yan et al., 2020).
 
-## Conclusions
+### Conclusions
 
 Here, a combination of HDXMS and MD simulations provides a close-up of S protein dynamics in the prefusion, ACE2-bound, and other associated conformations. Our results reveal the energetics of the S:ACE2 complex interface. ACE2 binding to the isolated RBD and S protein alike leads to binding and stabilization. Interestingly, ACE2 binding to the RBD induces global conformational changes across the entire S trimer. Importantly, the stalk region undergoes dampening of conformational motions while showing increased deuterium exchange at the proteolytic processing sites. This study may help in explaining how mutations in emerging strains in the ongoing COVID-19 outbreak might alter dynamics and allostery of ACE2 binding and offer a mechanistic basis for altered infectivities observed in emerging strains. Sites on S protein showing altered deuterium exchange describe allosteric propagation of ACE2 binding and represent novel cryptic targets for therapeutic small molecule inhibitor/antibody discovery.
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (SARS-CoV-2)</td>
+      <td>pTT5 expression vector</td>
+      <td>GenBank</td>
+      <td>QHD43416.1</td>
+      <td>For recombinant S protein</td>
+    </tr>
+    <tr>
+      <td>Gene (ACE2)</td>
+      <td>pHL-sec expression vector</td>
+      <td>GenBank</td>
+      <td>AB046569.1</td>
+      <td>For recombinant ACE2 protein</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human embryonic kidney (HEK293-6E)</td>
+      <td>NRC, Canada</td>
+      <td>RRID:CVCL_HF20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Expi293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_D615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG Fc HRHorseradish Peroxidase (HRP)(goat polyclonal)</td>
+      <td>Thermo Scientific</td>
+      <td>RRID:AB_2536544</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHLmMBP-10 (plasmid)</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_72348</td>
+      <td>For recombinant RBD protein</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTT5 expression vector (plasmid)</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_52367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHL-sec expression vector (plasmid)</td>
+      <td>Addgene, USA</td>
+      <td>RRID:Addgene_99845</td>
+      <td>recombinant DNA reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3′,5,5′-Tetramethylbenzidine</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_2336758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deuterium oxide (chemical)</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>CAS# 7789-20-0</td>
+      <td>Deuterium exchange experiments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DynamX</td>
+      <td>Waters Corporation (Milford, MA)</td>
+      <td></td>
+      <td>Version 3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProteinLynx Global Server (PLGS)</td>
+      <td>Waters Corporation (Milford, MA)</td>
+      <td></td>
+      <td>Version 3.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 5.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Modeller</td>
+      <td>1989–2020 Andrej Sali</td>
+      <td>RRID:SCR_008395</td>
+      <td>Version 9.21</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Visual molecular dynamics</td>
+      <td>University of Illinois at Urbana-Champaign</td>
+      <td>RRID:SCR_001820</td>
+      <td>Version 1.9.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Mass spectrometry grade acetonitrile, formic acid, and water were from Fisher Scientific (Waltham, MA); deuterium oxide was from Cambridge Isotope Laboratories (Tewksbury, MA). All reagents and chemicals were research grade or higher and obtained from Merck-Sigma-Aldrich (St. Louis, MO).
 
-## Methods
+### Methods
 
-## Transient expression and purification of recombinant SARS-CoV-2 spike, RBD, and ACE2 receptor
+#### Transient expression and purification of recombinant SARS-CoV-2 spike, RBD, and ACE2 receptor
 
 A near-full-length S protein of SARS-CoV-2 (1–1208; Wuhan-Hu-1; GenBank: QHD43416.1), excluding TD and CT, was codon optimized for mammalian cell expression and cloned into pTT5 expression vector with a twin strep tag at the C-terminus (Twist Biosciences, Singapore). Mutations were introduced into this construct at two sites: (i) RRAR motif at the S1/S2 cleavage site (682–685) was substituted by GSAS and (ii) KV motif (986–987) was substituted with two prolines. A gene encoding SARS-CoV-2-RBD (319–591 of SARS-CoV-2 spike) (BioBasic, Singapore) was cloned into the expression vector pHLmMBP-10 as a fusion protein with N-terminal mMBP and C-terminal hexahistidine tags. A gene encoding human ACE2 (residues 21–597) fused to a C-terminal Fc-tag (BioBasic, Singapore) was cloned into vector pHL-sec between the signal peptide and C-terminal 6xHis tag. S (1–1208) was expressed in HEK293-6E using polyethylenimine as the transfection reagent while the isolated RBD (‘RBDisolated’) and ACE2 constructs were expressed in Expi293F using the Expi293 System. Culture supernatant was harvested on day 7 for HEK293-6E expression and day 5 for Expi293F expression. S protein was affinity purified using Strep-TactinXT column (IBA), RBD protein was affinity purified using cOmplete His-Tag Purification column (Merck, Darmstadt, Germany), and ACE2 receptor was affinity purified using HiTrap MabSelect SuRe column (GE Healthcare, Chicago, IL,USA). Purified proteins were concentrated and buffer exchanged into phosphate buffered saline (PBS) using VivaSpin, and the purity was assessed by denaturing polyacrylamide gel electrophoresis (Figure 2—figure supplement 1A, Figure 3—figure supplement 1A, and Figure 5—figure supplement 1A). Cell lines obtained commercially are listed in key resources table and were tested for contamination by Mycoplasma species.
 
-## Characterization of RBD:ACE2 receptor binding
+#### Characterization of RBD:ACE2 receptor binding
 
 Interactions between recombinant purified MBP-RBD and ACE2 receptor (Figure 3—figure supplement 1A and Figure 5—figure supplement 1A) were confirmed by enzyme-linked immunosorbent assay. To test binding activity of ACE2, 96-well maxisorp plates were coated with 100 µL of 27.2 nM MBP-RBD diluted in PBS at 4°C for 16 hr and blocked with 350 µL of 4% skimmed milk in PBST (0.05% Tween 20 in PBS) at room temperature for 1.5 hr. This was followed by 1 hr incubation with ACE2 (100 µL) at varying concentrations and detection with 100 µL of goat-anti-human IgG Fc HRP diluted at 1:5000 in 2% skimmed milk in PBST for 1 hr. Plates were washed three times in PBST after each incubation step above. After 5 min incubation with 100 µL of 3,3′,5,5′-tetramethylbenzidine, reaction was stopped with 100 µL of 1 M H2SO4 and absorbance at 450 nm (A450) was recorded. A similar protocol was adopted for the quality testing of MBP-RBD – it was coated at variable concentrations in PBS at 4°C for 16 hr and blocked at room temperature for 1.5 hr. This was followed by 1 hr incubation with 10.4 nM ACE2 (100 µL) diluted in blocking buffer. Detection, plate washing, and color development steps were performed in the same manner as described above. Data represents an average of three replicates, along with their error bars and plotted using GraphPad Prism 5 (San Diego, CA).
 
-## Deuterium exchange
+#### Deuterium exchange
 
 S protein (8 µM), ACE2 (52 µM), and RBD (67 µM) solubilized in PBS (pH 7.4) were incubated at 37°C in PBS buffer reconstituted in D2O (99.90%), resulting in a final D2O concentration of 90%. S:ACE2 and RBDisolated:ACE2 complexes (KD of ~15 and ~150 nM, respectively) (Wrapp et al., 2020) were pre-incubated at 37°C for 30 min in a 1:1 molar ratio to achieve >90% binding prior to each hydrogen–deuterium exchange reaction. Deuterium labeling was performed for 1, 10, and 100 min for isolated construct of RBD, free ACE2, and RBDisolated:ACE2 complex. For isolated S protein and S:ACE2 complex, 1 and 10 min labeling timescales were used. Pre-chilled quench solution 1.5 M GnHCl and 0.25 M Tris(2-carboxyethyl) phosphine-hydrochloride was added to deuterium exchange reaction mixture to lower the pHread to ~2.5 and lower the temperature to ~4°C. Next, the quenched reaction was incubated at 4°C on ice for 1 min followed by online pepsin digestion.
 
-## Mass spectrometry and peptide identification
+#### Mass spectrometry and peptide identification
 
 Approximately 100 pmol quenched samples were injected onto chilled nanoUPLC HDX sample manager (Waters, Milford, MA). The injected samples were subjected to online digestion using immobilized Enzymate BEH pepsin column (2.1 × 30 mm) (Waters, Milford, MA) in 0.1% aqueous formic acid at 100 μL/min. Simultaneously, the proteolyzed peptides were trapped in a 2.1 × 5 mm C18 trap (ACQUITY BEH C18 VanGuard Pre-column, 1.7 μm, Waters, Milford, MA). Following pepsin digestion, the proteolyzed peptides were eluted using acetonitrile gradient of 8–40% in 0.1% formic acid at a flow rate of 40 µL/min into reverse phase column (ACQUITY UPLC BEH C18 Column, 1.0 × 100 mm, 1.7 μM, Waters, Milford, MA) pumped by nanoACQUITY Binary Solvent Manager (Waters, Milford, MA). Electrospray ionization mode was used to ionize peptides sprayed onto SYNAPT G2-Si mass spectrometer (Waters, Milford, MA) acquired in HDMSE mode. A flow rate of 5 µL/min was used to continually inject 200 fmol μL−1 of [Glu1]-fibrinopeptide B ([Glu1]-Fib) as lockspray reference mass.
 
@@ -116,7 +290,7 @@ Undeuterated protein samples were used to identify sequences from mass spectra d
 
 RFU is the ratio of number of deuterons exchanged to the total number of exchangeable amides of the peptide. Centroid masses of undeuterated reference spectra were subtracted from equivalent spectra of deuterium exchanged peptides to calculate the average deuterons exchanged for each peptide. Deuterium exchange plots, relative deuterium exchange, and difference plots were generated by DynamX v.3.0. The N-terminus and all prolines in each peptide were excluded for estimation of exchangeable amides per peptide (Hoofnagle et al., 2003). Deuterium exchange experiments for two biological replicates and technical triplicates of S protein and the S:ACE2 complex were carried out. Average deuterium exchange measurements between the two biological replicates were within ±0.3 Da (Supplementary file 1: Table S5, S6) (Houde et al., 2011). While deuterium exchange values are not corrected for back exchange, fully deuterated S protein samples were used to measure deuterium back exchange. A list of peptides with back exchange values is shown in Supplementary file 1: Table S7. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE [1] partner repository with the dataset identifier PXD023138.
 
-## Modeling and MD simulations
+#### Modeling and MD simulations
 
 An integrative model of full-length SARS-CoV-2 S protein was built using Modeller v.9.21 (Šali and Blundell, 1993). The cryo-EM structure of prefusion S ECD in the open conformation (PDB: 6VSB) (Wrapp et al., 2020) was used as the template for the ECD with missing loops on the NTD and the C-terminus of the ECD modeled based on the cryo-EM structure of S ECD in the closed conformation resolved at a higher resolution (PDB: 6XR8) (Cai et al., 2020). The Nuclear Magnetic Resonance (NMR) structure of the SARS S HR2 domain (PDB: 2FXP) (Hakansson-McReynolds et al., 2006) was used as the template for the HR2 domain, while the TM domain was modeled using the NMR structure of the HIV-1 gp-41 TM domain (PDB: 5JYN) (Dev et al., 2016). Ten models were built and subjected to stereochemical assessment using the discreet optimized protein energy (DOPE) score (Eramian et al., 2006) and Ramachandran analysis (Ramachandran et al., 1963). The model with the lowest DOPE score and the smallest number of Ramachandran outliers was chosen. Palmitoylation was performed at three cysteine residues (C1236, C1240, and C1243) on the CT domain based on a study showing its importance in SARS S protein function (Petit et al., 2007). The S protein model was then embedded into a model membrane representing the endoplasmic reticulum–Golgi intermediate compartment (ERGIC) (van Meer, 1998), where coronaviruses are known to assemble in a bud form (Krijnse-Locker et al., 1994; Klumperman et al., 1994). The ERGIC model membrane was built using CHARMM-GUI Membrane Builder (Lee et al., 2019).
 

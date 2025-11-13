@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01q9sj412 Department of Visceral Surgery and Medicine, Inselspital, Bern University Hospital, University Hospital of Bern Bern Switzerland
-2. https://ror.org/01q9sj412 Department for BioMedical Research, Visceral Surgery and Medicine, University Hospital of Bern Bern Switzerland
+1. Department of Visceral Surgery and Medicine, Inselspital, Bern University Hospital, University Hospital of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))
+2. Department for BioMedical Research, Visceral Surgery and Medicine, University Hospital of Bern Bern Switzerland ([ROR:01q9sj412](https://ror.org/01q9sj412))
 
 † Corresponding author
 
 ## Abstract
 
-Sepsis causes millions of deaths per year worldwide and is a current global health priority declared by the WHO. Sepsis-related deaths are a result of dysregulated inflammatory immune responses indicating the need to develop strategies to target inflammation. An important mediator of inflammation is extracellular adenosine triphosphate (ATP) that is released by inflamed host cells and tissues, and also by bacteria in a strain-specific and growth-dependent manner. Here, we investigated the mechanisms by which bacteria release ATP. Using genetic mutant strains of Escherichia coli ( E. coli ), we demonstrate that ATP release is dependent on ATP synthase within the inner bacterial membrane. In addition, impaired integrity of the outer bacterial membrane notably contributes to ATP release and is associated with bacterial death. In a mouse model of abdominal sepsis, local effects of bacterial ATP were analyzed using a transformed E. coli bearing an arabinose-inducible periplasmic apyrase hydrolyzing ATP to be released. Abrogating bacterial ATP release shows that bacterial ATP suppresses local immune responses, resulting in reduced neutrophil counts and impaired survival. In addition, bacterial ATP has systemic effects via its transport in outer membrane vesicles (OMV). ATP-loaded OMV are quickly distributed throughout the body and upregulated expression of genes activating degranulation in neutrophils, potentially contributing to the exacerbation of sepsis severity. This study reveals mechanisms of bacterial ATP release and its local and systemic roles in sepsis pathogenesis.
+Sepsis causes millions of deaths per year worldwide and is a current global health priority declared by the WHO. Sepsis-related deaths are a result of dysregulated inflammatory immune responses indicating the need to develop strategies to target inflammation. An important mediator of inflammation is extracellular adenosine triphosphate (ATP) that is released by inflamed host cells and tissues, and also by bacteria in a strain-specific and growth-dependent manner. Here, we investigated the mechanisms by which bacteria release ATP. Using genetic mutant strains of Escherichia coli (E. coli), we demonstrate that ATP release is dependent on ATP synthase within the inner bacterial membrane. In addition, impaired integrity of the outer bacterial membrane notably contributes to ATP release and is associated with bacterial death. In a mouse model of abdominal sepsis, local effects of bacterial ATP were analyzed using a transformed E. coli bearing an arabinose-inducible periplasmic apyrase hydrolyzing ATP to be released. Abrogating bacterial ATP release shows that bacterial ATP suppresses local immune responses, resulting in reduced neutrophil counts and impaired survival. In addition, bacterial ATP has systemic effects via its transport in outer membrane vesicles (OMV). ATP-loaded OMV are quickly distributed throughout the body and upregulated expression of genes activating degranulation in neutrophils, potentially contributing to the exacerbation of sepsis severity. This study reveals mechanisms of bacterial ATP release and its local and systemic roles in sepsis pathogenesis.
 
 ## Introduction
 
@@ -39,17 +39,31 @@ In this study, we investigated if ATP released from bacteria influences the outc
 
 ## Results
 
-## E. coli, one of the major pathogens in sepsis, releases ATP in a growth-dependent manner
+### E. coli, one of the major pathogens in sepsis, releases ATP in a growth-dependent manner
 
 To assess ATP release of sepsis-associated bacteria, abdominal fluid of patients with abdominal sepsis was sampled and an/aerobically incubated on LB agar plates (Figure 1A). Twenty-five different colonies were randomly picked and analyzed by whole 16S-rRNA Sanger sequencing, which resulted in 12 different bacterial species (Figure 1B). From these, the four most clinically important sepsis-associated bacteria E. coli, K. pneumoniae (both gramneg), E. faecalis, and S. aureus (both grampos) (Diekema et al., 2019; Mureșan et al., 2018) were further cultivated for experimental studies. We quantified released ATP over time (Figure 1—figure supplement 1) using a luciferin-luciferase-based assay. A growth-dependent release of ATP was observed in all species, peaking during exponential growth phase (Figure 1C). Cumulative amount of released ATP was quantified using the area under the curve (AUC) of released ATP over time (AUC ATP). ATP release was detected across all assessed species (Figure 1D). To model these findings in mice, abdominal sepsis was induced using a standardized cecal ligation and puncture (CLP) model (Dosch et al., 2019; Figure 1E). Similar to human samples, Proteobacteria and Firmicutes phyla were predominating (Figure 1F, see Figure 1B). In the mouse model, E. coli released notably more cumulative ATP compared to E. faecalis and S. aureus (Figure 1G and H). The bacterial species assessed in humans and mice (E. coli, E. faecalis, S. aureus) differed on the strain level (sequences deposited, see Data availability statement) confirming that ATP release is strain-specific (Mempin et al., 2013). In summary, sepsis-associated bacteria release ATP in a growth-dependent and strain-specific manner. E. coli, which is one of the most frequent facultative pathogens in patients with abdominal sepsis, released the highest amount of ATP isolated from a standardized mouse model of abdominal sepsis.
 
-## Bacterial ATP release is dependent on ATP synthesis at the inner bacterial membrane and correlates with bacterial growth
+![Figure 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental approach to isolate and cultivate sepsis-associated bacteria from abdominal fluid of patients with abdominal sepsis. (B) Bacterial species identified by whole 16S-rRNA Sanger sequencing from abdominal fluid of patients with abdominal sepsis. Three colonies out of 25 could not be identified. (C) Measurement of released ATP (M) and growth (OD600) over time (hours) from the four sepsis-associated bacteria E. coli, K. pneumoniae, E. faecalis, and S. aureus isolated from patients. N=2 independent bacteria cultures. Means and standard deviations are shown. (D) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). One-way ANOVA, N=2 independent bacteria cultures. Means and individual values are shown. (E) Experimental approach to isolate and cultivate sepsis-associated bacteria from abdominal fluid of mice with abdominal sepsis. (F) Bacterial species identified by whole 16S-rRNA Sanger sequencing from abdominal fluid of mice with abdominal sepsis. Seven colonies out of 25 could not be identified. (G) Measurement of released ATP (M) and growth (OD600) over time (hours) from the three sepsis-associated bacteria E. coli, E. faecalis, and S. aureus isolated from mice. N=2 independent bacteria cultures. Means and standard deviations are shown. (H) AUC of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). One-way ANOVA, N=2 independent bacteria cultures. Means and individual values are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig1-figsupp1-v1.jpg)
+
+### Bacterial ATP release is dependent on ATP synthesis at the inner bacterial membrane and correlates with bacterial growth
 
 After having demonstrated that sepsis-associated bacteria release ATP, we next questioned whether and how ATP release is dependent on ATP generation. ATP synthase and cytochrome oxidases, which are located in the inner bacterial membrane, are key components of ATP generation under aerobic conditions. Therefore, ATP release of the E. coli parental strain (PS) was compared to all available mutants of ATP synthase subunits (ΔatpA, ΔatpB, ΔatpC, ΔatpD, ΔatpE, ΔatpF, ΔatpH) and cytochrome bo3 oxidase subunits (ΔcyoA, ΔcyoB, ΔcyoC, ΔcyoD) from the Keio collection (Baba et al., 2006; Yamamoto et al., 2009). The use of different mutants allows to identify the most relevant subunits influencing ATP release. Also, it allows to identify a possible correlation of bacterial ATP release with growth, which is a function of ATP generation (Figure 2A; Galber et al., 2021; Ihssen et al., 2021; Ivancic et al., 2008; Lundin, 2000).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig2-v1.jpg)
+
+**Figure 2.:** (A) Illustration depicting the location of ATP synthase and cytochrome bo3 oxidase in gramneg bacteria. (B) Measurement of released ATP (M) and growth (OD600) over time (hours) from cytochrome bo3 oxidase (cyo) and ATP synthase (atp) mutants. The parental strain (PS) was added as a control. N=2 independent bacteria cultures. Means and standard deviations are shown. (C) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP) is shown individually in the left panel. N=2 independent bacteria cultures. Means and individual values are shown. Means of grouped cyo and atp mutants are compared in the right panel. t-Test. Means and individual values are shown. (D) Cumulative ATP (M*hours) and cumulative growth (OD600*hours) of all assessed cyo and atp mutants and the PS were plotted against each other. Pearson’s correlation (r) and coefficient of determination (R2) of the applied linear model are depicted. 95% confidence level is shown by the black dashed lines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Pearson’s correlation (r) and coefficient of determination (R2) of the applied linear model are depicted. 95% confidence level is shown by the black dashed lines.
+
 Bacterial growth (OD600) and ATP release were measured over time and cumulative ATP release (AUC ATP) was assessed (Figure 2B). We first noticed that mutations in subunits of ATP synthase, which is the key enzyme of ATP generation, were generally associated with significantly lower cumulative ATP release compared to mutations in cytochrome bo3 oxidase subunits (Figure 2C). Therefore, we suspected an interrelation between ATP generation and released ATP (see growth and ATP release curves in Figure 2B). We determined cumulative growth (AUC growth) in addition to cumulative ATP release and indeed, cumulative ATP release and cumulative growth were positively correlated (Figure 2D), similar to peak ATP and peak growth (OD600) that are positively correlated (Figure 2—figure supplement 1). In summary, ATP release is directly dependent on ATP generation at the inner bacterial membrane. Mutations in subunits of bacterial ATP synthase have a higher impact on ATP generation, growth, and ATP release than mutations in subunits of cytochrome bo3 oxidase (Figure 2C).
 
-## Outer bacterial membrane integrity and bacterial death determine bacterial ATP release during growth
+### Outer bacterial membrane integrity and bacterial death determine bacterial ATP release during growth
 
 We next focused on the outer membrane by challenging its integrity while leaving ATP generation and the inner membrane intact. For that purpose, we used the E. coli porin mutants ΔompC, ΔompF, ΔlamB, and ΔphoE (Figure 3A; Baba et al., 2006; Yamamoto et al., 2009), which have been shown to suffer from impaired outer membrane integrity in varying degrees (Choi and Lee, 2019). ATP release and growth were measured over time including E. coli PS as baseline and membrane destabilizing EDTA and stabilizing Ca2+ as additional controls (Leive, 1968). Cumulative ATP release (AUC ATP) from the porin mutants were notably different compared to the PS, being lowest in ΔompC and highest in ΔompF (Figure 3B and C).
 
@@ -63,27 +77,67 @@ We did not interfere with ATP generation at the inner membrane but deliberately 
 
 In summary, outer membrane integrity and finally bacterial death notably contribute to the amount of bacterial ATP release during growth.
 
-## Released bacterial ATP reduces neutrophil counts and impairs survival during abdominal sepsis
+### Released bacterial ATP reduces neutrophil counts and impairs survival during abdominal sepsis
 
 Next, we wanted to investigate the function of bacterial ATP release in vivo. To study this, we transformed the E. coli PS with an arabinose-inducible apyrase (PS+pAPY) and compared it to the PS transformed with the empty vector (PS+pEMPTY) (Proietti et al., 2019). In this model, ATP released by bacteria is hydrolyzed and consequently depleted by a periplasmic apyrase (Santapaola et al., 2006; Scribano et al., 2014).
 
 Indeed, apyrase induction resulted in a significant reduction of ATP release in PS+pAPY, compared to PS+pEMPTY (Figure 4—figure supplement 1A and B). To test the consequences in vivo, apyrase was induced by arabinose 3 hr before intraabdominal (i.a.) injection into wild type C57Bl/6 mice (Figure 4A). Thereby ATP release was abrogated in the bacteria cultures that were used for injection (Figure 4B). In vivo, no difference in ATP levels was detected when ATP was measured directly in the abdominal fluid after 4 (Figure 4C) and 8 hr (Figure 4—figure supplement 1C). This is not surprising given that ATP is rapidly hydrolyzed by ectonucleotidases in vivo (Eltzschig et al., 2012). After both 4 (Figure 4D and E) and 8 hr (Figure 4—figure supplement 1D and E), no differences in local or systemic bacterial counts were observed. Yet, despite similar bacterial counts, the survival was significantly higher in the absence of bacterial ATP (PS+pAPY) compared to ATP-generating controls (PS+pEMPTY) after i.a. injection (Figure 4F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental approach to determine the local role of bacterial ATP in vivo, intraabdominal (i.a.) injecting parental strain (PS)+pEMPTY or PS+pAPY. (B) Measurement of released ATP (M) in bacteria culture supernatant immediately before bacteria were i.a. injected. t-Test, N=2 independent bacteria cultures. Means and individual values are shown. (C) Measurement of ATP (M) in abdominal fluid from mice 4 hr after i.a. injection of bacteria. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Quantitative assessment of colony forming units in abdominal fluid and (E) blood from mice 4 hr after i.a. injection of bacteria. Wilcoxon rank-sum test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. No growth for controls was detected. (F) Kaplan-Meier curves of mice after i.a. injection of bacteria. Log-rank test, n=10 animals per group. (G) Heatmap showing surface marker expression (x-axis), which was used to characterize the different immune cell populations (y-axis). (H) Concatenated (n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments) and down-sampled images of immune cell populations characterized in the abdominal cavity 4 hr after sham treatment or i.a. injection of bacteria. (I) Abundance of neutrophils, small peritoneal macrophages (SPM), and CX3CR1pos monocytes in abdominal fluid from mice 4 hr after sham treatment or i.a. injection of bacteria. One-way ANOVA followed by Tukey post hoc test, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Measurement of released adenosine triphosphate (ATP) (M) and growth (OD600) over time (hours) from parental strain (PS)+pEMPTY and PS+pAPY. n=2 measurements of N=3 independent bacteria cultures. Means and standard deviations are shown. (B) Area under the curve (AUC) of released ATP over time (M*hours) of the previously assessed bacteria (cumulative ATP). t-Test, n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (C) Measurement of ATP (M) in abdominal fluid from mice 8 hr after i.a. injection of bacteria. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Quantitative assessment of colony forming units in abdominal fluid and (E) blood from mice 8 hr after i.a. injection of bacteria. Wilcoxon rank-sum test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. No growth for controls was detected. (F) Concatenated (n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments) and down-sampled images of immune cell populations characterized in the abdominal cavity 8 hr after sham treatment or i.a. injection of bacteria. (G) Abundance of neutrophils, small peritoneal macrophages (SPM), and CX3CR1pos monocytes in abdominal fluid from mice 8 hr after sham treatment or i.a. injection of bacteria. One-way ANOVA followed by Tukey post hoc test, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.
+
 Next, we asked how this difference in bacterial ATP release affects the immune system. Therefore, inflammatory cells in the abdominal cavity were characterized using flow cytometry (Figure 4G). As expected, a disappearance reaction of large peritoneal macrophages (LPM) was observed after both, E. coli PS+pEMPTY and E. coli PS+pAPY, i.a. injection compared to sham controls after 4 (Figure 4H) and 8 hr (Figure 4—figure supplement 1F; Ghosn et al., 2010). Such LPM disappearance following abdominal E. coli infection is a result of free-floating clots composed of LPM and neutrophils and important for effective pathogen clearance (Salm et al., 2023; Vega-Pérez et al., 2021; Zindel et al., 2021) but not dependent on ATP release according to our data. Interestingly, however, the number of small peritoneal macrophages (SPM) and CX3CR1pos monocytes was significantly reduced, whereas neutrophils were significantly increased almost up to 8 hr (Figure 4I, Figure 4—figure supplement 1G) in bacterial ATP-depleted abdominal sepsis (PS+pAPY). This effect is dependent on released bacterial ATP given that no differences in bacterial counts were observed (see Figure 4D and E, Figure 4—figure supplement 1D–E).
 
 In summary, ATP released by bacteria suppresses abdominal inflammatory responses and worsened survival in a model of abdominal sepsis.
 
-## Establishing ATP-loaded OMV as a model system to assess the systemic relevance of bacterial ATP
+### Establishing ATP-loaded OMV as a model system to assess the systemic relevance of bacterial ATP
 
 ATP is rapidly metabolized in the extracellular space and therefore, the mode of action of released bacterial ATP is limited to the immediate cellular vicinity (Junger, 2011). However, the outcome of sepsis is not only dependent on local but also on systemic responses to microorganisms. Therefore, we hypothesized that bacterial ATP has systemic effects as protected cargo in OMV (Alvarez et al., 2017). OMV are small (20–300 nm) spherical particles that are released by both gramneg and grampos bacteria (Schwechheimer and Kuehn, 2015). In gramneg bacteria, they bulge off the outer membrane and disseminate throughout the body (Jang et al., 2015). They are equipped with typical bacterial surface features lacking the machinery for self-reproduction, and contain DNA, proteins, and metabolites (Baeza and Mercade, 2021; Bitto et al., 2017; Kulp and Kuehn, 2010; Lee et al., 2007). Therefore, OMV are suited as a systemic delivery system for bacterial ATP. Indeed, recently, ATP has been detected in OMV derived from pathogenic Neisseria gonorrhoeae, Pseudomonas aeruginosa PAO1, and Acinetobacter baumannii AB41 (Pérez-Cruz et al., 2015).
 
 To assess the potential of OMV as ATP carriers, we compared the OMV production from several hypervesiculation E. coli mutants (ΔmlaE, ΔmlaA, ΔrfaD, ΔdegP, ΔrodZ, ΔnlpI, ΔtolB) (Figure 5A; McBroom et al., 2006). The ΔnlpI and ΔtolB strains showed a 20- and 30-fold increase of OMV when compared with the PS (Figure 5B). We then assessed ATP release and growth over time from ΔnlpI, ΔtolB, and the PS, to identify their individual peak of ATP release, and isolated OMV at their individual peak of ATP release and after 24 hr (Figure 5—figure supplement 1A). ATP was detected in OMV from all assessed strains at the individual peak of ATP release but only in minimal detectable levels after 24 hr (Figure 5C). The ΔtolB OMV isolated after 24 hr were then used as ATP-depleted vehicles. Density gradient ultracentrifugation showed that most ΔtolB OMV were of similar density and protein composition (Figure 5D, Figure 5—figure supplement 1B). They were equipped with outer membrane ompF but not cytoplasmic ftsZ (Figure 5D), indicating that they are outer membrane derived. In order to generate OMV with known and constant ATP concentrations, we used electroporation (EP) to load OMV with ATP while empty OMV (ΔtolB OMV harvested from 24 hr culture) served as ATP-depleted controls (Fu et al., 2020; Lennaárd et al., 2021). Before and after EP, the OMV size distribution was assessed by nanoparticle tracking analysis and morphology by electron microscopy (Figure 5E, Figure 5—figure supplement 1C). OMV were loaded with ATP (Figure 5F) and over time, the amount of ATP in OMV decreased, especially at physiological (37°C) temperature (Figure 5G) as opposed to 4°C (Figure 5—figure supplement 1D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration depicting the location of assessed proteins that lead to a hypervesiculation phenotype if knocked out in the gramneg bacterium E. coli. (B) Relative amount of OMV compared to the parental strain (PS) isolated from growth cultures of the assessed hypervesiculation mutants after 5 hr (exponential growth phase) and O/N (stationary phase). n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (C) Absolute quantification of ATP in OMV isolated from growth cultures of the PS, ΔnlpI and ΔtolB at their individual peak of ATP release and after 24 hr. n=2 measurements of N=3 independent bacteria cultures. Means and individual values are shown. (D) Amount of protein (BCA assay) detected in different fractions after density gradient ultracentrifugation. n=2 measurements of the different fractions. 20 µl of E. coli growth culture and 20 µl of each fraction were then characterized by Coomassie blue staining and specific detection of outer membrane ompF and cytoplasmic ftsZ. (E) Characterization of OMV by nanoparticle tracking analysis (n=5 measurements per sample) and electron microscopy (representative image) before and after electroporation. (F) Absolute quantification of ATP in OMV, which were loaded using different strategies. Columns 2–5: different concentrations of ATP incubated for 1 hr at 37°C (passive filling). Columns 6–12: different voltages with fixed settings for resistance (100 Ω) and capacitance (50 µF). N=2–9 independent experiments. Means and standard deviations are shown. (G) Relative quantification of ATP in OMV over 24 hr at 37°C after electroporation (0 hr=100%). n=2 measurements of N=3 independent experiments. Means and individual values are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Measurement of released ATP (M) and growth (OD600) over time (hours) from PS, ΔnlpI and ΔtolB. OMV collection time points are marked in purple. n=2 measurements of N=3 independent bacteria cultures. Means and standard deviations are shown. (B) OMV before and after density gradient ultracentrifugation for 16 hr at 150,000×g. (C) Statistical parameters of OMV before electroporation as well as ATP-loaded and empty OMV after electroporation. (D) Relative quantification of ATP in OMV 16 hr at 4°C after electroporation (0 hr=100%). n=2 measurements of N=3 independent experiments. Means and individual values are shown.
+
 In summary, OMV contain ATP and release ATP at physiological temperatures. To use OMV as an ATP delivery system, empty OMV were loaded using EP.
 
-## OMV-derived bacterial ATP induces degranulation processes in neutrophils after lysosomal uptake
+### OMV-derived bacterial ATP induces degranulation processes in neutrophils after lysosomal uptake
 
 OMV are potent inducers of inflammation and sepsis (Park et al., 2010; Park et al., 2013), which travel throughout the body and are taken up by a variety of cells (Bittel et al., 2021; Kim et al., 2013; Lee et al., 2018). To tests the hypothesis that ATP within OMV mediates systemic effects of invasive bacteria, we injected ATP-loaded and empty OMV i.a. and investigated the resulting inflammation 1 hr after injection (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-v1.jpg)
+
+**Figure 6.:** (A) Experimental approach to determine the systemic role of bacterial ATP in vivo, intraabdominal (i.a.) injecting ATP-loaded or empty OMV. (B) Representative microscopic images of cells from the abdominal cavity 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV: DiI, Nucleus: DAPI, Neutrophils: Ly-6G-FITC. (C) Cells from remote organs were isolated 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV were mainly taken up by neutrophils (except in the spleen, ratio ≈ 1). t-Test with Benjamini-Hochberg correction, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (D) Representative microscopic image of pulmonary neutrophils 1 hr after i.a. injection of either ATP-loaded or empty OMV. OMV co-localize with the endolysosomal compartment. OMV: DiI, Endolysosomal system: LysoTracker Deep Red, Neutrophils: Ly-6G-FITC. (E) Pulmonary neutrophils were isolated 1 hr after i.a. injection of ATPγs-loaded or empty OMV, bead-sorted, and RNA sequencing was done. Principal component analysis shows significantly different clustering between neutrophils that took up ATPγs-loaded (NA) or empty OMV (NE). PERMANOVA, n=6 animals in the NE group, n=5 animals in the NA group. Ellipses represent 95% confidence level. (F) Volcano plot of RNA sequencing results shows an upregulation of genes mainly in the NA group. Genes classified in either lysosome (LYSO) or neutrophil degranulation pathways (NDG) or both, which were mentioned in the text, were highlighted. (G) Heatmap of the lysosome pathway (LYSO) showing the gene expression per sample. (H) Heatmap of the neutrophil degranulation pathway (NDG) showing the gene expression per sample.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative images of OMV uptake by neutrophils in the abdominal cavity 1 hr after intraabdominal (i.a.) injection additionally assessed using flow cytometry (ImageStream).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Gating strategy to identify large peritoneal macrophages (LPM), small peritoneal macrophages (SPM), and neutrophils in abdominal fluid. (B) Abundance of OMVpos/(OMVpos+OMVneg) LPM, SPM, and neutrophils 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV. t-Test with Benjamini-Hochberg correction, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (C) Abundance of LPM, SPM, and neutrophils 1 hr after sham treatment or i.a. injection of either ATP-loaded or empty OMV. One-way ANOVA, n=5 animals for each treatment group, n=3 animals for control group of N=2 independent experiments. Means and individual values are shown.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Gating strategy to identify total OMVpos cells and specifically OMVpos neutrophils in blood and remote organs (lung, liver, kidney, and spleen). (B) Fraction of OMVpos/(OMVpos+OMVneg) neutrophils 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown. (C) Fraction of % of CD45poslive cells 1 hr after intraabdominal (i.a.) injection of adenosine triphosphate (ATP)-loaded or empty OMV including control without OMV injection. t-Test, n=5 animals per group of N=2 independent experiments. Means and individual values are shown.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Pulmonary neutrophils were isolated 1 hr after i.a. injection of ATPγs-loaded or empty outer membrane vesicle (OMV), bead-sorted and assessed for purity by flow cytometry. A representative image is shown.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/96678/elife-96678-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** Pulmonary neutrophils were isolated 1 hr after intraabdominal (i.a.) injection of ATPγs-loaded or empty outer membrane vesicle (OMV), bead-sorted, and RNA sequencing was done. This resulted in these significantly different pathways between the groups after enrichment analysis. DESeq, n=6 animals in the NE group, n=5 animals in the NA group.
 
 In the abdominal fluid, uptake of DiI-stained OMV by leukocytes was independent of ATP cargo (Figure 6B, Figure 6—figure supplement 1) and all major cell populations with phagocytic ability (LPM, SPM, neutrophils) were highly positive for OMV (Figure 6—figure supplement 2A and B). LPM dramatically decreased, whereas neutrophils increased in response to OMV when compared to sham controls (Figure 6—figure supplement 2C).
 
@@ -111,77 +165,77 @@ This study reveals that ATP is released by bacteria during growth because of imp
 
 ## Materials and methods
 
-## Human data
+### Human data
 
 From five patients that underwent revision laparotomy because of abdominal sepsis, swabs were taken from abdominal fluid, streaked on LB agar plates (15 g Agar, 5 g Bacto Yeast Extract, 10 g Bacto Tryptone, 5 g NaCl in 1 l ddH2O; Key resources table) and cultivated an/aerobically for 48 hr. The human experimental protocol was approved by the Cantonal Ethics Commission Bern, Switzerland (ethical approval 2017-00573, NCT03554148). Written informed consent was obtained from all patients and the study has been performed in accordance with the Declaration of Helsinki as well as the CONSORT statement.
 
-## Mouse handling
+### Mouse handling
 
 Specific pathogen-free C57Bl/6JRccHsd mice (Key resources table) were purchased at the age of 8 weeks from Inotiv (earlier Envigo, the Netherlands) and were housed in ventilated cages in the Central Animal Facility, University of Bern, Switzerland. All experiments were performed in the morning, mice were supplied with a 12 hr light/dark cycle at 22°C and fed ad libitum with chow and water. To minimize cage effects, we mixed mice over several cages and therefore only used female mice. All animal procedures were carried out in accordance with the Swiss guidelines for the care and use of laboratory animals as well as in accordance with the ARRIVE guidelines and were approved by the Animal Care Committee of the Canton of Bern (Switzerland) under the following number: BE41/2022.
 
-## CLP sepsis model
+### CLP sepsis model
 
 To isolate bacteria from mice with abdominal sepsis, CLP was performed as described elsewhere with some minor modifications (Rittirsch et al., 2009). In brief, mice were anesthetized s.c. injecting (3 µl/g body weight) a mixture of fentanyl (0.05 mg/ml), dormicum (5 mg/ml), and medetor (1 mg/ml) and were then shaved and disinfected with Betadine. Mid-line laparotomy was performed (approximately 1 cm) and the cecum was exposed. The proximal one third of the cecum was ligated with Vicryl 4-0 (Ethicon, cat# V1224H) and perforated with a 23 G needle. The cecum was returned to the abdominal cavity and the laparotomy was sutured continuously in two layers with prolene 6-0 (Ethicon, cat# MPP8697H). At the end, the antidote (naloxone [0.1 mg/ml], revertor [5 mg/ml], temgesic [0.3 mg/ml]) was s.c. injected (9 µl/g body weight). A semiquantitative score sheet was used to predict animal postoperative well-being. Mice were evaluated every 4 hr according to the following criteria: appearance, level of consciousness, activity, response to stimulus, eye shape, respiratory rate, and respiratory quality and analgesia was applied if necessary. After 10 hr, abdominal fluid was collected, spread on LB agar plates, and cultivated an/aerobically for 48 hr.
 
-## Whole 16S-rRNA Sanger sequencing
+### Whole 16S-rRNA Sanger sequencing
 
 Twenty-five colonies cultivated from abdominal fluid of patients and mice each described above were randomly picked and collected in separate sterile Eppendorf tubes and resuspended in 1 ml of sterile PBS. Each sample was centrifuged for 5 min at 20,000×g and washed once with 1 ml sterile PBS. The pellet was resuspended in 20 µl of sterile PBS and samples were incubated 5 min at 100°C. 1 µl was used for PCR using GoTaq G2 Green Master Mix (Key resources table) and the following primers (Key resources table) at a final concentration of 0.2 µM:
 
 PCR conditions were as follows: Initial 5 min at 94°C for denaturation, followed by 35 cycles of 1 min denaturation at 94°C, 1 min annealing at 43°C, and 2 min extension at 72°C, with a final extension for 10 min at 72°C. This resulted in a PCR product of optimally ~1400–1500 bp. 20 µl PCR product were run on 2% agarose gel for 90 min, cut out and purified using QIAquick Gel Extraction Kit (Key resources table). The amplicon concentration was measured using nanodrop (Thermo Fisher Scientific) and Sanger sequencing was done by Microsynth.
 
-## Quantification of released bacterial ATP
+### Quantification of released bacterial ATP
 
 Bacteria were aerobically grown in 20 ml LB medium (5 g Bacto Yeast Extract, 10 g Bacto Tryptone, 5 g NaCl in 1 l ddH2O; Key resources table) overnight (O/N) (16 hr/37°C/200 rpm) and 0.25 ml of O/N culture were diluted in 100 ml fresh LB medium. Up to 24 hr, 0.25 ml bacteria culture were taken at several time points for growth assessment (OD600) and 1 ml was taken for ATP quantification. OD600 was measured using a Tecan Spark spectrophotometer. The 1 ml sample for ATP quantification was centrifuged for 5 min at 16,000×g, the supernatant was filtered through a 0.2 µm syringe filter and stored at –80°C. ATP was quantified using a luciferin-luciferase-based assay according to the manufacturer’s protocol (ATP Kit SL, Key resources table) and bioluminescence was measured using a Tecan Spark spectrophotometer. In Figure 3, LB medium was supplemented with 1 mM calcium or 0.5 mM EDTA for the controls.
 
-## Absolute quantification of bacteria and assessment of viability
+### Absolute quantification of bacteria and assessment of viability
 
 Growth culture was set up as described above and after 4 hr (ATP peak), samples were taken to quantify bacteria and assess viability. Bacteria were diluted in PBS and stained using the Cell Viability Kit with BD Liquid Counting Beads (Key resources table) according to the manufacturer’s protocol. In brief, 100 µl of diluted bacterial growth culture was stained with 1 µl TO dye, 1 µl PI dye, and 10 µl of counting beads were added. The sample was acquired on a CytoFlex S (Beckman Coulter), setting the thresholds for the TO- and the PI-channel to 1000 and analysis was done with FlowJo software (Key resources table). Bacterial biomass was calculated to bacteria/ml culture according to the manufacturer’s protocol.
 
-## Transformation of E. coli PS
+### Transformation of E. coli PS
 
 The Keio collection (Key resources table) E. coli PS was aerobically grown in LB medium O/N (16 hr/37°C/200 rpm). 0.5 ml O/N culture was diluted in 35 ml fresh LB medium and incubated until OD600 was 0.35–0.45. Cultures were chilled in ice-water and washed two times with ice-cold 20 ml ultrapure water (Thermo Fisher Scientific, cat# 10977035) (20 min/4°C/3200×g). The supernatant was carefully decanted, and the bacterial pellet was gently resuspended by pipetting (no vortex). After the final wash, the pellet was resuspended in 240 µl ice-cold ultrapure water and kept on ice until EP. 80 µl of ice-cold bacterial cells were mixed with 1 µl plasmid (pBAD28==pEMPTY or pHND10==pAPY, 100–200 ng, Key resources table) in chilled 0.1 cm cuvettes (Bio-Rad, cat# 1652089) and immediately electroporated (voltage = 1.8 kV, capacitance = 25 µF, resistance = 200 Ω). Directly after EP, 1 ml of warm LB medium was added to the cuvette, bacteria were transferred to a tube containing 10 ml pre-warmed LB medium and cultivated for 1 hr at 37°C. Then, bacteria were dispersed on LB agar plates supplemented with ampicillin (100 µg/ml) and incubated at 37°C. The next day, three colonies were picked, streaked on a new ampicillin supplemented LB agar plate, and incubated for 24 hr. The following day, two cryostocks were made from single colonies in LB medium supplemented with 20% glycerol.
 
-## Bacteria injection sepsis model
+### Bacteria injection sepsis model
 
 The Keio collection (Key resources table) E. coli PS transformed with either pEMPTY or pAPY was aerobically grown O/N (16 hr/37°C/200 rpm) in 20 ml LB medium supplemented with ampicillin (100 µg/ml). PS+pEMPTY and PS+pAPY were washed with PBS (20 min/22°C/3200×g) and resuspended in 20 ml fresh LB medium supplemented with ampicillin (100 µg/ml). To induce the apyrase, L-arabinose (0.03%, Sigma-Aldrich, cat# A3256-25G) was added. After 3 hr, bacteria were washed, resuspended in PBS supplemented with L-arabinose (0.03%) and 2×109 colony forming units were injected i.a. ATP in bacteria cultures and in the abdominal fluid were assessed using the same assay as described above (ATP Kit SL, Key resources table). Mice were evaluated for postoperative well-being every 4 hr as described above. After 4 and 8 hr and when the score reached specific criteria (for the survival experiment), animals were sacrificed using pentobarbital (150 mg/kg body weight) followed by organ collection.
 
-## Collection of abdominal fluid, blood, and organs
+### Collection of abdominal fluid, blood, and organs
 
 After pentobarbital injection, the mice were placed on a surgical tray, fixed, the abdomen was shaved, the abdominal skin was disinfected with Betadine and the skin (but not peritoneum) was cut. Abdominal cells were isolated as described elsewhere with some modifications (Ray and Dittel, 2010). In brief, a 22 G peripheral IV catheter was inserted into the abdominal cavity through the peritoneum. The abdominal cavity was flushed two times with 5 ml MACS buffer (PBS supplemented with 3% FBS [Gibco, cat# 10500-064], 2% HEPES [Sigma-Aldrich, cat# H0887-100ml], and 2 mM EDTA [Sigma-Aldrich, cat# E5134-500G]). The first 5 ml were used to flush the upper abdomen under pressure, and the second 5 ml, to flush the lower abdomen under pressure. Part of the aspirated fluid was used for aerobic plating, if needed, and the rest was centrifuged for 5 min at 700×g to pellet the abdominal cells for various downstream applications. To collect blood, the peritoneum was opened. 300 µl blood was collected from the inferior vena cava using a 22 G peripheral IV catheter and a 1 ml syringe, which was prefilled with 30 µl 2 mM EDTA. Before organ collection (lungs, liver, kidney, and spleen), the mouse was flushed with 5 ml PBS. Organs were excised and used for downstream processing.
 
-## Digestion of organs and preparation of single-cell suspension
+### Digestion of organs and preparation of single-cell suspension
 
 Harvested organs were digested (Key resources table; kidney and lungs: 1 mg/ml Col I+1 mg/ml Col IV+1 mg/ml Col D+0.1 mg/ml DNase I in DMEM [Gibco, cat# 31966-047]+3% FBS for 30 min; liver: 1 mg/ml Col IV+0.1 mg/ml DNase I in DMEM+3% FBS for 20 min) at 37°C with a spinning magnet or gently pushed through a 100 µm mesh (spleen). After washing with MACS buffer (5 min/4°C/700×g), erythrocytes were lysed using self-made RBC buffer (90 g NH4Cl, 10 g KHCO3, 370 mg EDTA in 1 l ddH2O for 10× stock). Cells were washed again and stained as described below.
 
-## Staining of cells and flow cytometry
+### Staining of cells and flow cytometry
 
 First, viability dye (Key resources table) and Fc-block (Key resources table) were diluted in PBS and cells were incubated for 20 min at 4°C in the dark. Cells were washed with MACS buffer and surface staining was done with the listed antibody cocktail:
 
 for 20 min at 4°C in the dark. Cells were washed again and resuspended in MACS buffer for acquisition on an LSR-Fortessa (BD Biosciences). Analysis was done with FlowJo software (Key resources table) and OMIQ web-based analysis platform (https://www.omiq.ai/). To preserve the global structure of abdominal cell populations, uniform manifold approximation and projection was used as dimensionality reduction technique and cell populations were defined using FlowSOM clustering algorithm (Van Gassen et al., 2015).
 
-## Absolute quantification of bacteria by plating
+### Absolute quantification of bacteria by plating
 
 To count bacteria in isolated abdominal fluid, blood, or growth cultures, serial dilutions were done (1 to 1:100,000) and 50 µl of each dilution was streaked on LB agar plates and aerobically incubated. Plates which had between 20 and 200 colony forming units were used for quantification.
 
-## Collection of OMV and ATP measurement of OMV
+### Collection of OMV and ATP measurement of OMV
 
 E. coli PS or hypervesiculation mutants from the Keio collection were grown in LB medium for 5 hr, O/N (16 hr) or 24 hr at 37°C and 200 rpm. Bacteria cultures were then centrifuged (20 min/4°C/3200×g) to pellet bacteria. The supernatant was filtered through a 0.45 µm PES filter (Key resources table) and ultracentrifuged (1.5 hr/4°C/150,000×g) to pellet OMV. When ATP within OMV was measured, OMV were washed in PBS and directly stored at –80°C. ATP was quantified using a luciferin-luciferase-based assay according to the manufacturer’s protocol (Microbial ATP Kit HS, Key resources table) and bioluminescence was measured using Tecan Spark spectrophotometer.
 
 If OMV were used for characterization or i.a. injection, first ultracentrifugation was followed by a density gradient ultracentrifugation using OptiPrep (Iodixanol, STEMCELL Technologies, cat# 07820). OMV were resuspended in 50% OptiPrep and OptiPrep gradient (10%, 20%, 30%, 40%, 45%, 50%) was made in underlay technique starting with the 10% layer. Samples were ultracentrifuged (16 hr/4°C/150,000×g) and six fractions (fractions 1, 2, 3a, 3b, 4, and 5) were defined. Fractions were washed separately with PBS (1.5 hr/4°C/150,000×g) and the amount of OMV was determined measuring protein concentration using BCA assay according to the manufacturer’s protocol (Thermo Fisher Scientific, cat# 23227). For experiments, only OMV from fraction 3 were used, which were washed with PBS (1.5 hr/4°C/150,000×g), resuspended in PBS, and stored at –80°C until further processing.
 
-## EP and staining of OMV
+### EP and staining of OMV
 
 If EP and staining of OMV was performed, OMV were thawed, pelleted (1.5 hr/4°C/150,000×g), the pellet was resuspended in 720 µl EP buffer (500 mM sucrose and 1 ml glycerol in 10 ml ultrapure water) and kept on ice. This suspension was mixed with either 80 µl EP buffer (control) or 80 µl 10 mM ATP (or ATPγs for RNA sequencing experiment) (Key resources table), filled in chilled 0.4 mm EP cuvettes (Bio-Rad, cat# 1652088) and immediately electroporated (voltage = 1100 V, capacitance = 50 µF, resistance = 100 Ω). After EP, the OMV were 1:1 diluted in warm PBS and kept at 37°C for 20 min. DiI (Key resources table) was added 1:100 to the sample during the incubation time. OMV suspension was then washed with PBS (1.5 hr/4°C/150,000×g).
 
-## OMV injection sepsis model
+### OMV injection sepsis model
 
 After the final wash in PBS (see above), OMV were resuspended in NaCl 0.9% and filtered through a 0.45 µm centrifuge filter tube (Sigma-Aldrich, cat# CLS8162-96EA). The final OMV suspension was quantified using a BCA assay. 25 µg of either ATP-loaded OMV or empty OMV were i.a. injected and mice were evaluated as described above. After 1 hr, the animal was sacrificed using pentobarbital followed by organ collection. Tissue digestion and flow cytometry was done as described above.
 
-## Assessment of ATP release by OMV
+### Assessment of ATP release by OMV
 
 OMV were electroporated as described above. After washing in PBS (1.5 hr/4°C/150,000×g), the OMV pellet was resuspended in 6 ml warm PBS and incubated at 37°C. At baseline, after 1, 3, 5, 10, and 24 hr, 1 ml was taken and washed with PBS (1.5 hr/4°C, 150,000×g). The OMV pellet was then resuspended in 200 µl PBS to assess protein concentration using a BCA assay, and ATP in OMV was quantified using a luciferin-luciferase-based assay according to the manufacturer’s protocol (Intracellular ATP Kit HS, Key resources table). Bioluminescence was measured using a Tecan Spark spectrophotometer.
 
-## SDS-PAGE, protein staining, and western blot
+### SDS-PAGE, protein staining, and western blot
 
 20 µl of diluted E. coli culture and 20 µl of the different OMV fractions (except fraction 1, since no protein could be detected) were diluted 1:1 with Laemmli/βME (Laemmli buffer solution containing 5% β-mercaptoethanol). The mixture was heated at 100°C for 5 min, shortly centrifuged at 13,000 rpm and loaded on Mini-PROTEAN TGX Gels (Bio-Rad, cat# 4561094). Bio-Rad marker (6 µl) was added to one well and the gel was run at 100 V for 1.5 hr. The gel was then either directly stained with Coomassie blue or transferred to a membrane.
 
@@ -189,15 +243,15 @@ Coomassie blue staining was done as follows: The gel was washed in ddH2O and the
 
 To transfer the proteins to a membrane, iBlot2 (Invitrogen) was used. Membranes were then blocked with 4% milk/PBS for 1 hr. FtsZ-antibody (1:200, Key resources table) and ompF-antibody (1:500, Key resources table) were added and incubated O/N at 4°C. The next day, membranes were washed with PBS Tween (PBST, 0.05%) three times for 5 min. Secondary fluorescent antibody was then added in milk (1:10,000, Key resources table) and membrane was incubated for 1 hr. The membrane was washed again with PBST three times for 5 min and then scanned using a Licor Odyssey.
 
-## Nanoparticle tracking analysis
+### Nanoparticle tracking analysis
 
 Size distribution of OMV was analyzed using the NanoSight NS300 Instrument (Malvern Panalytical, 405 nm laser) according to the manufacturer’s protocols. OMV were resuspended in PBS and serial dilutions (1 to 1:100,000) were used to find suitable concentrations. Each experimental sample was analyzed five times. PBS was used to flush the system between the samples and to assess background. For each sample, the relative amount of OMV and the OMV size was recorded, which resulted in a size distribution curve. NTA 2.3 software was used to analyze the data and the following script was used for acquisition (Gheinani et al., 2018): SETTEMP 25; CAMERAON; CAMERAGAIN 12; CAMERALEVEL 11; REPEATSTART; SYRINGLOAD 100; DELAY 10; SYRINGSTOP; DELAY 15; CAPTURE 60; DELAY 1; REPEAT 4; SETTEMP OFF; PROCESSINGLESETTING; EXPORTRESULTS.
 
-## Electron microscopy negative staining
+### Electron microscopy negative staining
 
 For imaging of negatively stained samples, 5 µl of OMV suspension were adsorbed on glow discharged carbon-coated 400 mesh copper grids (Plano) for 1–5 min. After washing the grids three times by dipping in ultrapure water, the grids were stained with 2% uranyl acetate solution (Electron Microscopy Science) in water for 45 s. The excess fluid was removed by gently pushing the grids sideways onto filter paper. The grids were then examined with an FEI Tecnai Spirit transmission electron microscope at 80 kV, which was equipped with a Veleta TEM CCD camera (Olympus).
 
-## Immunofluorescent microscopy
+### Immunofluorescent microscopy
 
 One hour after i.a. injection of DiI-stained OMV, lungs were digested as described above. Single-cell suspension was either fixed and imaged or live cells were imaged. For the fixed approach, single-cell suspension was immunolabeled with FITC-tagged anti-Ly-6G (Key resources table) at 1:100 dilution for 20 min at 4°C in the dark to distinguish neutrophils. Cells were washed once with PBS and applied onto glass slides using Cytospin (Thermo Shandon) for 5 min (1800 rpm). Slides were air-dried for 2 min, washed with PBS, and fixed using 4% paraformaldehyde solution for 10 min. Cell nuclei were stained with DAPI (Key resources table) at 1:5000 concentration in IF buffer (0.25% BSA, 0.1% Triton X-100 in PBS) for 1.5 hr at room temperature in the dark. After washing 3×5 min with IF buffer, the slides were covered and sealed with nail polish.
 
@@ -205,39 +259,39 @@ If live cells were imaged, single-cell suspension was concurrently immunolabeled
 
 Fluorescence images were taken using either a Zeiss LSM710 or a Zeiss LSM980 inverted confocal laser scanning microscope equipped with a ×63 (NA1.4) oil immersion objective. Detector wavelength cutoffs were set to minimize signal crosstalk between fluorophores.
 
-## RNA isolation from pulmonary neutrophils
+### RNA isolation from pulmonary neutrophils
 
 One hour after OMV i.a. injection, lungs were digested as described above. One animal had to be excluded, since the surgical time point has been missed. Neutrophils were isolated from single-cell suspension using Streptavidin MicroBeads (Miltenyi Biotec, cat# 130-048-101) according to the manufacturer’s protocol. In brief, cells were counted and incubated with a biotinylated anti-mouse Ly-6G antibody (Key resources table) for 20 min at 4°C. After washing, Streptavidin MicroBeads were added and incubated for 20 min at 4°C. After washing, a MidiMACS separator (Miltenyi Biotec, cat# 130-042-302) together with an LS column (Miltenyi Biotec, cat# 130-042-401) was used to isolate neutrophils and purity of positively selected neutrophils as well as unlabeled cells was assessed by flow cytometry (Key resources table: Ly-6C PE-Cy7, CD11b APC). Neutrophils were pelleted, and supernatant was removed by pipetting. Neutrophils were snap-frozen and stored at –80°C. RNA was isolated directly from frozen neutrophils pellets using Promega ReliaPrep RNA Cell Miniprep System (Key resources table) according to the manufacturer’s protocol and quality was assessed using Bioanalyzer and RNA 6000 Nano Kit (RQN 5.8–9.6, median 7.55). Samples were snap-frozen and stored at –80°C until further processing by the Next Generation Sequencing Platform, University of Bern, https://www.ngs.unibe.ch/.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA sequencing libraries were prepared using Lexogen CORALL total RNA-seq library kit according to the manufacturer’s protocol, which includes an rRNA depletion step. Sequencing was performed on an Illumina NovaSeq6000 SP flow cell, 2×50 cycles.
 
-## Alignment and quantification
+#### Alignment and quantification
 
 The resulting fastq files were quality controlled using fastqc v0.11.9 (Babraham Bioinformatics, 2024). Forward R1 reads were debarcoded by moving the first 12 nucleotides on the 5' end to the name of the read via fastp v0.19.5 (Chen et al., 2018). The alignment was performed with STAR v2.7.10a_alpha_220818 (Dobin et al., 2013). First, a genome index was generated from the mouse reference genome GRCm39 ENSEMBL v108. Second, the reads were then aligned to the reference using STAR with default parameters. Gene read counts were quantified using featureCounts from subread v2.0.1 using the mm108 GTF annotation with default parameters (Liao et al., 2014).
 
-## Data visualization
+#### Data visualization
 
 The data from the read count matrix was normalized to reads per million and log-transformed, x → log(1+x). The resulting data was used for principal component analysis, which was performed with the R function prcomp and visualized with a custom script using ggplot2 (Wickham, 2016).
 
-## Differential gene expression
+#### Differential gene expression
 
 Differentially expressed genes were computed using the R package DESeq2 (Love et al., 2014).
 
-## Pathway enrichment analysis
+#### Pathway enrichment analysis
 
 The differentially expressed genes obtained from DESeq2 with an adjusted p-value below 0.01 were uploaded to Metascape for pathway analysis on December 5, 2023 (Zhou et al., 2019).
 
-## Heatmaps
+#### Heatmaps
 
 The lists of genes of the pathways of interest were obtained from genome.jp for the KEGG pathways and using the R function gconvert from the R package gprofiler2 otherwise (Kolberg and Raudvere, 2023). The log-transformed data was used and the heatmaps were done with the heatmap.2 function of the R package gplots with the hierarchical cluster method ‘complete’ using Pearson’s correlation distance (Warnes et al., 2022).
 
-## Volcano plot
+#### Volcano plot
 
 The volcano plots were performed with the R package ggplot2 and a custom R script (Wickham, 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 Descriptive statistics and statistical tests were performed using Prism software (Key resources table) or R and RStudio (Key resources table). For differences between two groups a t-test was applied when data was normally distributed (parametric). Otherwise, a Wilcoxon rank-sum test was used (nonparametric). For differences between more than two groups, a one-way ANOVA followed by a Tukey post hoc test (parametric), or a Kruskal-Wallis test followed by a pairwise Wilcoxon rank-sum test with Benjamini-Hochberg correction (nonparametric) was used. For survival analyses, a log-rank test was used. No one-tailed tests were used. No method was used to predetermine experimental sample sizes. A linear model and the correlation between ATP and OD600 in Figure 2 and Figure 3 were computed using the R functions lm and cor.test with the following parameters:
 

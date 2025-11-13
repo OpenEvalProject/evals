@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Division of Molecular and Cellular Biology, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States
+1. Division of Molecular and Cellular Biology, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -31,9 +31,17 @@ The amino acid sequence of eIF2A is fairly well conserved between yeast and mamm
 
 ## Results
 
-## Eliminating yeast eIF2A has little impact on translational reprogramming conferred by phosphorylation of eIF2α in cells starved for amino acids
+### Eliminating yeast eIF2A has little impact on translational reprogramming conferred by phosphorylation of eIF2α in cells starved for amino acids
 
 To examine whether eIF2A provides an eIF2-independent initiation mechanism for any yeast mRNAs, we first examined bulk polysome formation in a yeast mutant lacking the gene YGR054W encoding eIF2A (denoted eIF2AΔ below) and an isogenic wild-type strain (WT), both grown in nutrient-replete medium (SC) or under conditions of isoleucine/valine starvation, imposed by the drug sulfometuron methyl (SM), to induce eIF2α phosphorylation by Gcn2 and thereby reduce TC levels. We reasoned that if eIF2A can substitute for eIF2 to maintain translation initiation of a sizeable fraction of mRNAs when eIF2 function is reduced, then we might observe a depletion of polysomes in the SM-treated eIF2AΔ mutant compared to SM-treated WT cells. As we reported previously (Gaikwad et al., 2021), SM treatment of WT evoked a small reduction in the ratio of polysomes to monosomes (P/M), indicating a diminished rate of bulk translation initiation (Figure 1A(i) and (iii)). Essentially identical P/M ratios were observed in the corresponding untreated and SM-treated eIF2AΔ mutant (Figure 1A(ii) and (iv)), suggesting that eIF2A does not function broadly to compensate for reduced eIF2 function in the yeast translatome. These findings are consistent with a previous analysis in which eIF2A was depleted by transcriptional shut-off of an eIF2A allele expressed from the GAL1 promoter (Zoll et al., 2002).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig1-v1.jpg)
+
+**Figure 1.:** (A) Polysome profiles of wild-type (WT) strain (BY4741) and eIF2AΔ mutant (F2247) untreated (i–ii) or treated with sulfometuron methyl (SM) (iii–iv). For (i–ii), cells were cultured in SC medium at 30°C to log-phase and treated with 50 μg/mL of cycloheximide 5 min prior to harvesting. For (iii–iv), cells were cultured in SC medium lacking Ile/Val and treated with 1 µg/mL of SM for 20 min before addition of cycloheximide. Cell extracts were resolved by sedimentation through sucrose density gradients and scanned continuously at 260 nm during fractionation. The plots show the A260 measured across the gradient with the top of the gradient on the left. (B) Schema of translational control of GCN4 mRNA, wherein translation of the main coding sequences (CDS) is induced by phosphorylation of eIF2α through a specialized ‘delayed reinitiation’ process mediated by four short upstream open-reading frames (uORFs). (See text for details.) (C) Genome browser view of ribosome profiling data for GCN4 mRNA. Tracks display RPF or mRNA reads mapped across the transcription unit, with the scales given in rpkm (reads per kilobase of transcript per million mapped reads). Data are presented for WT (blue) and eIF2∆ cells (purple) with or without SM treatment, as indicated. Each genotype/treatment includes two biological replicates, designated _a and _b. The main CDS is shown schematically in orange below the tracks and the four uORFs are in gray. The calculated values for log2∆TEWT+SM/WT and log2∆TEeIF2A∆+SM/eIF2A∆+SM and the respective false discovery rates (FDRs) are shown on the right.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–H) Scatterplots depict the RPF (A, C, E, G) or mRNA (B, D, F, H) read densities for all expressed mRNAs across biological replicates of the wild-type (WT) (A, B), the eIF2AΔ mutant (C, D), sulfometuron methyl (SM)-treated WT (E, F), and SM-treated eIF2AΔ mutant (G, H). The read densities were calculated by mapping the reads to the coding sequences (CDS) of each gene and expressed as reads per million mapped reads (RPM) in individual libraries of biological replicates. The Pearson’s coefficient (r) is indicated in each plot, quantifying the degree of correlation between the replicate datasets.
 
 We next asked whether eIF2A can provide an eIF2-independent initiation mechanism for any particular mRNAs in yeast by conducting ribosome profiling of the same eIF2AΔ mutant and WT strains under the conditions of SM treatment employed above. Ribosome profiling entails deep-sequencing of 80S ribosome-protected mRNA fragments (RPFs, or ribosome footprints) in parallel with total RNA. The ratio of sequencing reads of RPFs summed over the CDS to the total mRNA reads for the corresponding transcript provides a measure of translational efficiency (TE) for each mRNA (Ingolia et al., 2009). Owing to normalization for total read number in each library, the RPF and mRNA reads and the calculated TEs are determined relative to the average values for each strain. The RPF and RNA read counts between biological replicates for each strain and condition were highly reproducible (Pearson’s r ≈ 0.99) (Figure 1—figure supplement 1A–H).
 
@@ -43,13 +51,29 @@ Ribosome profiling revealed the expected strong induction of GCN4 translation ev
 
 We turned next to the question of whether eliminating eIF2A alters the translation of any other yeast mRNAs, reasoning that mRNAs able to utilize eIF2A in place of TC for recruitment of Met-tRNAi would exhibit greater TE reductions evoked by SM in eIF2AΔ mutant versus WT cells. If such mRNAs could be translated efficiently utilizing TC alone, then they would require eIF2A conditionally, that is, only when eIF2 function is reduced during starvation. If instead such mRNAs rely primarily on eIF2A for efficient initiation regardless of TC levels, they would exhibit reduced TEs in eIF2AΔ versus WT cells in the absence of SM treatment. Importantly, DESeq2 analysis of the ribosome profiling data obtained for the eIF2AΔ mutant and WT strains cultured in the absence of SM revealed no significant TE reductions in the mutant, as no mRNAs exhibited TEeIF2AΔ/TEWT ratios < 1 at a false discovery rate (FDR < 0.25) that is appropriate for two highly correlated biological replicates (Lamarre et al., 2018; Figure 2A). This finding suggests that few, if any, mRNAs are appreciably dependent on eIF2A for translation initiation in nutrient-replete cells where TC is abundant.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig2-v1.jpg)
+
+**Figure 2.:** (A) Volcano plot depicting the log2 ratios of TEs in eIF2AΔ versus wild-type (WT) cells (log2∆TEeIF2A∆/WT values) for each mRNA (x-axis) versus negative log10 of the false discovery rate (FDR) (y-axis) determined by DESeq2 analysis of ribosome profiling data for the 5340 mRNAs with evidence of translation. Genes showing a significant increase in TE in eIF2AΔ versus WT cells at FDR < 0.25 (∆TEeIF2A∆+SM/WT_up) are plotted in orange circles. The dotted line marks the 25% FDR threshold, below which all other 5337 mRNAs are plotted in gray. (B) Volcano plot as in (A) showing the log2 ratios of TEs in WT+ sulfometuron methyl (SM) cells versus WT cells (log2∆TEWT+SM/WT values) for the 5441 mRNAs with evidence of translation. The dotted line marks the 1% FDR threshold. Genes showing a significant increase (∆TEeIF2A∆+SM/WT_up) or decrease (∆TEWT+SM/WT_down) in TE in WT+SM versus WT cells at FDR < 0.01 are plotted in magenta and pink circles, respectively. (C) Hierarchical clustering analysis of log2∆TE values for the 1884 mRNAs (arrayed from top to bottom) that exhibit significant TE decreases or increases in SM-treated versus untreated WT cells at FDR < 0.01 (defined in (B)) conferred by SM treatment of WT cells (column 1) or SM treatment of eIF2AΔ cells (column 2), with the log2ΔTE values represented on a color scale ranging from 4 (dark blue) to –4 (dark red). The Pearson coefficient (r) and corresponding p-value for the correlation between log2∆TE values in the two columns are indicated below. (D) Notched box plots of log2ΔTE values for the indicated mutant/condition for all mRNAs (columns 1–4) or for the indicated mRNA groups identified in (B). The y-axis scale was expanded by excluding a few outliers from the plots.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plot as in Figure 2A showing the log2 ratios of TEs in sulfometuron methyl (SM)-treated eIF2A∆ versus untreated eIF2AΔ cells (∆TEeIF2A∆+SM/eIF2A∆ values) for the 5426 mRNAs with evidence of translation. The dotted line marks the 1% false discovery rate (FDR) threshold. Genes showing a significant increase (∆TEeIF2A∆+SM/eIF2A∆_up) or decrease (∆TEeIF2A∆+SM/eIF2A∆_down) in TE in SM-treated eIF2AΔ versus eIF2AΔ mutant cells at FDR < 0.05 are plotted in dark and light blue circles, respectively. (B) Proportional Venn diagram showing overlap between the 1884 mRNAs identified in Figure 2B and 786 mRNAs identified in (A).
+
 In addition to induction of GCN4 translation, SM treatment of WT cells leads to a broad reprogramming of translational efficiencies as DESeq2 analysis revealed hundreds of mRNAs exhibiting increases or decreases in relative TE even at the highly stringent FDR of < 0.01 (Figure 2B). Previously, we presented evidence that many of these TE changes conform to a pattern in which mRNAs that are efficiently translated in untreated WT cells tend to exhibit increased relative TEs, whereas poorly translated mRNAs tend to show reduced relative TEs, when phosphorylation of eIF2α is induced by SM. This same pattern was evident under two other conditions in which 43S PIC assembly is reduced, impaired recycling of 40S subunits from post-termination complexes at stop codons and depletion of an essential 40S ribosomal protein. We proposed that this stereotypical reprogramming of translation arises from increased competition among mRNAs for limiting PICs wherein strongly translated mRNAs outcompete weakly translated mRNAs to skew TE increases towards ‘strong’ mRNAs (Gaikwad et al., 2021). SM treatment of the eIF2AΔ mutant also produced a broad reprogramming of TEs involving hundreds of mRNAs translated relatively better or worse on SM treatment (Figure 2—figure supplement 1A). Comparing the TE changes conferred by SM in WT versus eIF2AΔ cells for the mRNAs showing TE changes in WT revealed that the majority of transcripts showed TE changes in the same direction on SM treatment of WT and eIF2AΔ cells (Figure 2C). Indeed, the majority of mRNAs dysregulated in the eIF2AΔ mutant also showed TE changes in the WT strain (Figure 2C, Figure 2—figure supplement 1B) and a very strong positive correlation exists, with a coefficient of 0.91, between the TE changes conferred by SM in the two strains. Thus, elimination of eIF2A did not substantially alter the global reprogramming of translation produced by phosphorylation of eIF2α.
 
 If certain mRNAs depend more heavily on eIF2A for Met-tRNAi recruitment when eIF2α is phosphorylated, we might expect to observe additive reductions in TE when combining elimination of eIF2A by the eIF2AΔ mutation with inhibition of eIF2 by SM treatment. Interrogating the large group of 879 mRNAs that showed TE reductions on SM treatment of WT cells revealed that they show a relatively smaller, not larger, decrease in median TE on SM treatment of the eIF2AΔ mutant versus SM treatment of WT (Figure 2D, column 12 versus column 9). Consistent with this finding, most of these mRNAs exhibit a small increase in TE on comparing SM-treated eIF2AΔ to SM-treated WT cells (Figure 2D, column 11). (In these and all other box plots, when the notches of different boxes do not overlap, their median values are judged to differ significantly with a 95% confidence level. As shown in columns 1–4, the median TE change for all ~5500 expressed mRNAs detected in our profiling experiments is close to unity (log2 = 0) for all of the comparisons examined in Figure 2D). These results suggest that the majority of mRNAs whose translation is diminished by eIF2α phosphorylation in WT cells do not utilize eIF2A for a back-up initiation mechanism that would mitigate their TE reductions when eIF2 is impaired. Our finding that most mRNAs exhibit somewhat greater TEs in eIF2AΔ versus WT cells when both are treated with SM (Figure 2D, column 11) might indicate that eIF2A generally acts to repress the translation of these mRNAs rather than augmenting eIF2 function in Met-tRNAi recruitment. This would not be the case in the absence of SM, however, as the results in column 10 of Figure 2D suggest a small positive effect of eIF2A on translation of these mRNAs in non-starved cells.
 
-## Only a few mRNAs exhibit translational reprogramming consistent with eIF2A functioning as a back-up to eIF2
+### Only a few mRNAs exhibit translational reprogramming consistent with eIF2A functioning as a back-up to eIF2
 
 To determine whether there are any individual mRNAs that show greater TE reductions in response to SM treatment when eIF2A is absent, we conducted DESeq2 analysis of the TE changes in SM-treated eIF2AΔ versus SM-treated WT cells. A group of only 32 mRNAs showed significant TE reductions in this comparison, that is, TEeIF2AΔ+SM/TEWT+SM < 1, FDR < 0.25 (Figure 3A). The TE reductions for this group of transcripts (designated ΔTEeIF2AΔ+SM/WT+SM_down) in comparison to all mRNAs were nearly two-fold greater in SM-treated eIF2AΔ versus SM-treated WT cells (Figure 3B, column 1), which are the results expected if they utilize eIF2A as a back-up when eIF2 is impaired by phosphorylation. They also showed TE reductions in SM-treated versus untreated eIF2AΔ cells, albeit of lesser magnitude (Figure 3B, column 2), also in the manner expected if eIF2 and eIF2A play redundant roles in their translation. Functional redundancy is further supported by the findings that both SM treatment of WT cells and elimination of eIF2A from untreated cells does not reduce their median TEs (Figure 3B, columns 3–4), as only one of the two factors is impaired or eliminated in these latter comparisons. The fact that the median TE of these mRNAs increases rather than decreases on SM treatment of WT (Figure 3B, column 3) might be explained by proposing that their ability to rely on eIF2A provides them with a competitive advantage with mRNAs that depend solely on eIF2 when the latter is impaired by phosphorylation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig3-v1.jpg)
+
+**Figure 3.:** (A) Volcano plot as in Figure 2A showing the log2 ratios of translational efficiencies (TEs) in eIF2AΔ cells treated with sulfometuron methyl (SM) versus wild-type (WT) cells treated with SM (log2∆TEeIF2A∆+SM/WT+SM values) for the 5482 mRNAs with evidence of translation. The dotted line marks the 25% false discovery rate (FDR) threshold. Genes exhibiting a significant increase (∆TEeIF2A∆+SM/WT+SM_up) or decrease (∆TEeIF2A∆+SM/WT+SM_down) at FDR < 0.25 are plotted in dark or light green circles, respectively. (B) Notched box plots of log2ΔTE values for the indicated mutant/condition for the 32 mRNAs in the group ∆TEeIF2A∆+SM/WT+SM_down defined in (A). The y-axis scale was expanded by excluding a few outliers from the plots. Statistical significance determined using the Mann–Whitney U test is indicated for the changes in column 4 compared to the changes observed for all mRNAs. (C) Hierarchical clustering analysis of log2∆TE values for the 32 mRNAs (arrayed from top to bottom) in the group defined in (A) for the four comparisons listed across the top, with log2ΔTE values represented on a color scale ranging from 4 (dark blue) to –4 (dark red). The systematic gene names are listed for all 32 mRNAs, and the common name is indicated for those genes subjected to LUC reporter analysis below. Genes marked with ‘#’s display the pattern of TE changes consistent with conditional stimulation by eIF2A when eIF2 function is reduced by phosphorylation. Only 17 of the 32 transcripts (marked with ‘#’) displayed the diagnostic pattern of an appreciable reduction in TE both on elimination of eIF2A in SM-treated cells and on SM treatment of cells lacking eIF2A (red or pink hues in columns 1–2) but either a lesser reduction, no change, or increase in TE on SM treatment of WT cells and on elimination of eIF2A from untreated cells (light pink, white or blue hues in columns 3–4). (D) Expression of LUC reporters in different strains/conditions constructed for selected candidate genes analyzed in (C). The schematic depicts reporter construct design wherein the native gene promoter, 5' UTR, and first 20 codons of the coding sequences (CDS) are fused to firefly luciferase coding sequences (F.LUC), followed by a modified RPL41A 3' UTR. Plasmid-borne reporter constructs were introduced into the WT and eIF2AΔ strains and three independent transformants were cultured in SC-Ura medium at 30°C to log phase (-SM) or treated with SM at 1 μg/mL after log-phase growth in SC-Ura/Ile/Val and cultured for an additional 6 hr before harvesting. Luciferase activities were quantified in whole-cell extracts (WCEs), normalized to total protein, and reported as fold change in relative light units (RLUs) per mg of protein, as means (± SEM) determined from the replicate transformants. The changes in luciferase activity plotted for each of the two comparisons depicted in the histogram were calculated as ratios of the appropriate mean activities. Results of Student’s t-tests of the differences in fold changes between the indicated mutations/conditions are indicated. (E) Determination of relative TEs for the native mRNAs of selected candidate genes analyzed in (C, D). Cells were cultured in the four conditions described in (D), WCEs were resolved by sedimentation through 10–50% sucrose gradients, and fractions were collected while scanning at 260 nm. Total RNA was extracted from 80S and polysome fractions, and the abundance of each target mRNA was quantified in each fraction by qRT-PCR, and normalized for (i) the amounts of 18S rRNA quantified for the same fractions and (ii) for the total amounts of monosomes/polysomes recovered in the gradient. The resulting normalized amounts of mRNA in each fraction were multiplied by the number of ribosomes per mRNA in that fraction, summed across all fractions, and divided by the input amount of mRNA in the WCEs, normalized to ACT1 mRNA, to yield the TE for that mRNA in each condition. (See ‘Materials and methods’ for further details.) The changes in TE conferred by SM treatment of WT or eIF2AΔ cells were calculated for each replicate culture, untreated or SM-treated, and the mean TE changes with standard error of the means (SEMs) were plotted for the indicated comparisons. The results of Student’s t-tests of the differences in mean TE changes are indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The A260 values were determined continuously during fractionation of the gradient. Fractions pooled for isolation of RNA from 80S monosome or the various polysomal species are indicated by boxes.
 
 To determine how many of these 32 transcripts exhibit TE reductions exclusively when both eIF2 and eIF2A are impaired/eliminated, we conducted hierarchical clustering of the TE changes in the four comparisons described above, displaying the magnitude of changes with a heat map. Only 17 of the 32 transcripts (marked with ‘#’) displayed the diagnostic pattern of an appreciable reduction in TE both on elimination of eIF2A in SM-treated cells and on SM treatment of cells lacking eIF2A (red or pink hues in columns 1–2 of Figure 3C), but either a lesser reduction, no change, or increase in TE on SM treatment of WT cells and on elimination of eIF2A from untreated cells (light pink, white or blue hues in columns 3–4 of Figure 3C).
 
@@ -57,7 +81,7 @@ In an effort to provide independent evidence that a subset of the transcripts an
 
 As an independent approach, we determined the distributions of native candidate mRNAs that co-sedimented with 80S monosomes or different polysomal species in cell extracts, examining HKR1 and two other mRNAs (CHS5 and DBF4) that satisfied both of the aforementioned criteria for conditional dependence on eIF2A, three mRNAs (NET1, SAG1, SVL3) that satisfied only one of the two criteria, and ACT1 and TRM44 mRNAs examined as negative controls. The amounts of each mRNA found in monosome or polysomal fractions were multiplied by the number of ribosomes per mRNA in that fraction (one for monosomes, two for disomes, three for trisomes, etc.) to calculate the abundance of ribosomes translating the mRNA and normalized to the input level of the mRNA in the unfractionated extracts to calculate the TE of the transcript in each condition. Analyzing the results from three biological replicates for WT versus eIF2AΔ cells ± SM revealed that only three transcripts, HKR1, SAG1, and SVL3, displayed a greater TE reduction in response to SM treatment of eIF2AΔ cells compared to SM treatment of WT (Figure 3, Figure 3—figure supplement 1). Thus, only the HKR1 transcript satisfied all of the criteria for conditional eIF2A dependence in ribosome profiling data in a manner confirmed by both reporter analysis and polysome profiling. We conclude that there are very few mRNAs, possibly only one, that utilize eIF2A as a back-up for eIF2 in recruitment of tRNAi when eIF2 is impaired by phosphorylation.
 
-## Eliminating yeast eIF2A has little consequence on translation of mRNAs harboring IRESs or upstream open-reading-frames
+### Eliminating yeast eIF2A has little consequence on translation of mRNAs harboring IRESs or upstream open-reading-frames
 
 We next interrogated our ribosome profiling data for the effects of deleting eIF2A on translation of URE2 mRNA, reported to contain an IRES that is inhibited by eIF2A (Komar et al., 2005). We found no significant change in TE or ribosome occupancy for URE2 mRNA on deletion of eIF2A in either non-starved or SM-starved cells (Figure 4A). It was reported that yeast mRNAs GIC1 and PAB1 also contain IRESs and are subject to translational repression by eIF2A (Reineke and Merrick, 2009); however, we again found no significant alteration in their TEs between eIF2AΔ and WT cells in the presence or absence of SM treatment (Figure 4B and C). Our results do not support a role for eIF2A in repressing IRES function in yeast cells. It should be noted, however, that eliminating eIF2A would not be expected to confer a marked increase in TE if the IRESs make only a small contribution to overall translation of these mRNAs under the conditions of our experiments.
 
@@ -71,9 +95,21 @@ In addition to GCN4 described above, CPA1 mRNA, encoding an arginine biosyntheti
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig5-v1.jpg)
 
-**Figure 5.:** CPA1 or YAP2/CAD1 mRNA.Genome browser views of RPF and RNA reads from ribosome profiling data for (A) CPA1 mRNA and (B) YAP2/CAD1 mRNA presented as in Figures 1 and 4. Coding sequences (CDS) and uORFs are represented in orange and gray rectangles, respectively.
+**Figure 5.:** Genome browser views of RPF and RNA reads from ribosome profiling data for (A) CPA1 mRNA and (B) YAP2/CAD1 mRNA presented as in Figures 1 and 4. Coding sequences (CDS) and uORFs are represented in orange and gray rectangles, respectively.
 
 Looking more broadly, we interrogated a previously identified group of 1306 mRNAs containing 2720 uORFs, initiating with either AUG or one of the nine NCCs, that showed evidence of translation in multiple ribosome profiling datasets from various mutant and WT strains (Zhou et al., 2020). We also analyzed a second set of 791 mRNAs containing 982 AUG- or NCC-initiated uORFs that are both evolutionarily conserved and show evidence of translation in ribosome profiling experiments (Spealman et al., 2018). These four groups of mRNAs with translated AUG- or NCC-uORFs showed little or no TE change for their CDSs on SM treatment of WT cells (Figure 6A(i)–(ii), columns 4 and 7 versus 1), indicating that, in contrast to GCN4, CPA1, and YAP2/CAD1 mRNAs, most of them do not contain inhibitory uORFs that can be bypassed in response to eIF2α phosphorylation. Both groups of mRNAs containing either AUG- or NCC-initiated uORFs exhibit very small, albeit highly significant, reductions in CDS TEs in the eIF2AΔ mutant versus WT cells in the absence of SM (Figure 6A(i)–(ii), columns 5 and 8 versus 2); however, the same was not observed for the effects of eIF2AΔ in SM-treated cells where eIF2 function is attenuated (Figure 6(i)–(ii), columns 6 and 9 versus 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig6-v1.jpg)
+
+**Figure 6.:** (A) Notched box plots of log2ΔTE values for all mRNAs (for which translational efficiencies (TEs) could be determined from our ribosome profiling data) containing annotated AUG- or NCC-uORFs (i), conserved AUG- or NCC-uORFs (ii), or single functional inhibitory AUG-uORFs (iii), conferred by sulfometuron methyl (SM) treatment of wild-type (WT) cells (maroon), by the eIF2AΔ mutation in untreated cells (orange), or by the eIF2AΔ mutation in SM-treated cells (green). Statistical significance determined using the Mann–Whitney U test is indicated for selective comparisons of changes observed for the indicated groups in comparison to the changes for all mRNAs. A few outliers were omitted from the plots to expand the y-axis scale. (B) Notched box plots as in (A) for the subsets of the same mRNA groups analyzed there exhibiting >1.41-fold increases in TE in SM-treated versus untreated WT cells. A few outliers were omitted from the plots to expand the y-axis scale. Statistical significance determined as in (A). (C) Notched box plots as in (A, B) for the subsets of the mRNA groups analyzed there exhibiting >1.41-fold decreases in TE in SM-treated eIF2AΔ versus SM-treated WT cells. A few outliers were omitted from the plots to expand the y-axis scale. Statistical significance determined as in (A). (D) Proportional Venn diagram showing overlap between the 17 mRNAs identified in Figure 3A showing evidence for a conditional requirement for eIF2A when eIF2 function is reduced by SM (marked in Figure 3A with ‘#’s) and the 514 mRNAs bearing functional AUG or NCC-uORFs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Smoothed scatterplots displaying the relationship between log2RROWT (x-axis) and log2RROeIF2A∆ (y-axis) for all mRNAs containing annotated AUG- or NCC-uORFs (A) or evolutionarily conserved AUG- or NCC-uORFs (B) in wild-type (WT) versus eIF2AΔ cells without sulfometuron methyl (SM) treatment. No mRNAs showed ≥2-fold changes in RRO in the eIF2AΔ mutant versus WT cells at false discovery rate (FDR) < 0.5. (C, D) Smoothed scatterplots displaying the relationship between log2RROWT+SM (x-axis) versus log2RROeIF2A∆+SM (y-axis) for the same mRNAs analyzed in (A, B) but in the presence of SM. Again, no mRNAs showed ≥2-fold changes in RRO in the eIF2AΔ mutant versus WT cells at FDR < 0.5. (E–H) Notched box plot displaying log2RRO values for all mRNAs containing annotated AUG- or NCC-uORFs (E, G) or evolutionarily conserved AUG- or NCC-uORFs (F, H) in untreated WT and eIF2AΔ mutant (E, F) or SM-treated WT and eIF2AΔ mutant (G, H). The y-axis scale was expanded by omitting a few outliers. Statistical significance determined using the Mann–Whitney U test is shown for the bracketed comparisons in panels (E, G).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Cell spotting assays were performed on synthetic complete (SC) plates (A) or synthetic minimal (SD) plates (B) to assess the growth of wild-type (WT), eIF2AΔ, fcy2Δ, and eIF2AΔ fcy2Δ strains. Ten-fold serial dilutions of saturated cultures were applied to SC or SD plates supplemented with the indicated concentrations of adenine and incubated at 30°C for 2 d. (C) WT and eIF2AΔ strains were transformed with the indicated lacZ reporter plasmids. Transformants were grown in SC-Ura (containing 0.015 mM adenine) to saturation and diluted into the same (fresh) medium and grown for 6 hr to A600 of ∼1.0. Whole-cell extracts (WCEs) were prepared and assayed for β-galactosidase activities, expressed in units of nmol of ONPG cleaved per mg of protein per min. The results represent the fold change of means (± SEMs) of activities (eIF2AΔ/WT) calculated from three independent transformants of each strain. The IMD2-lacZ reporter contains IMD2 coding sequences along with 1186 bp of 5’ non-coding sequences while the IMD3-lacZ reporter contains IMD3 coding sequences and 555 bp of 5’ non-coding DNA.
 
 Evidence of translation of a uORF does not guarantee that it has an appreciable impact on the proportion of scanning ribosomes that reach the downstream CDS. Recently, groups of 557 mRNAs containing AUG-initiated uORFs and 191 mRNAs with NCC-uORFs were identified in which the uORFs were shown to influence translation of downstream CDSs by massively parallel analysis of reporters containing the native 5′ UTRs in comparison to mutant reporters lacking the uORF start codons (May et al., 2023). It was reported that among the 407 mRNAs containing a single functional AUG-uORF wherein mutating the uORF significantly altered reporter expression by >1.5-fold, all but 13 of the uORFs functioned to inhibit reporter expression. Among the 144 mRNAs containing a single functional NCC-uORF, only 13 of the uORFs influenced reporter expression either positively or negatively by >1.5-fold, reflecting the weaker effects of NCC- versus AUG-initiated uORFs on downstream translation (May et al., 2023). Our analysis of the 394 mRNAs containing a single inhibitory AUG-uORF—the only group large enough for statistical analysis of TE changes—revealed little or no change in median TE in response to SM treatment or to the eIF2AΔ mutation in the presence or absence of SM (Figure 6A(iii), columns, 4–6 versus 1–3). These findings suggest that eIF2A has a minimal role in determining whether functional inhibitory AUG-initiated uORFs are translated or bypassed by scanning ribosomes in the presence or absence of eIF2α phosphorylation. These results support our findings above that the majority of mRNAs containing translated uORFs show little response to either eIF2α phosphorylation, the elimination of eIF2A, or a combination of both perturbations.
 
@@ -83,15 +119,15 @@ To explore this hypothesis further, we focused on the uORF-containing mRNAs that
 
 As an orthogonal approach to detecting a role for eIF2A in regulating the translation of negative-acting uORFs, we reasoned that decreased translation of inhibitory uORFs in eIF2AΔ cells would increase the translation of downstream CDSs, leading to a decrease in the ratio of RPFs in uORFs relative to RPFs in the CDSs, which we termed relative ribosome occupancy (RRO). To examine this possibility, we employed DESeq2 to identify statistically significant changes in RRO values for the same groups of mRNAs analyzed above in Figure 6A and B containing annotated or conserved uORFs with either AUG- or NCC-start sites, and which also showed evidence of translation in both WT and eIF2AΔ cells. We found that no mRNAs exhibited significant changes in RRO in the eIF2AΔ mutant versus WT in the absence or presence SM, even at a relatively non-stringent FDR of 0.5 (Figure 6—figure supplement 1A–D). Furthermore, the groups of mRNAs with annotated or conserved AUG- or NCC-initiated uORFs showed little or no difference in median RRO in the eIF2AΔ mutant versus WT cells in the absence or presence of SM (Figure 6—figure supplement 1E–H, yellow versus blue data). At least for the annotated uORFs, the median RRO values are generally higher for mRNAs containing AUG-initiated versus NCC-initiated uORFs in the presence or absence of SM (Figure 6—figure supplement 1E and G, blue data), as would be expected from more efficient initiation at AUG versus NCC start codons. Thus, our results provide no compelling evidence that eIF2A frequently enhances initiation at negative-acting uORFs initiated by either AUG or NCC start codons in either starved or non-starved cells.
 
-## eIF2A does not affect decoding rates at particular codon combinations during translation elongation
+### eIF2A does not affect decoding rates at particular codon combinations during translation elongation
 
 Translation elongation factor eIF5A acts broadly to stimulate the rates of decoding and termination, but is particularly important for certain combinations of codons, which include stretches of proline codons and various three-codon combinations of Proline (Pro), aspartic acid (Asp), and glyine (Gly) codons (Saini et al., 2009; Gutierrez et al., 2013; Schuller et al., 2017). Slower decoding rates for these codon combinations were detected by ribosome profiling of yeast cells depleted of eIF5A by computing pause scores for all ~8000 three-amino acid motifs (Schuller et al., 2017). The pause score for each motif is calculated from its 80S occupancy relative to the surrounding stretch of CDS and averaged across the translatome. Analyzing our profiling data revealed no significant increase in pause scores for any tripeptide motif in the eIF2AΔ mutant versus WT cells (Figure 7A). As a positive control for the analysis, we examined our data on WT cells treated or untreated with SM, observing a marked increase in pause scores for all tripeptide motifs with valine (Val) in the third position, placing the corresponding Val codons in the A-site of the decoding ribosomes (Figure 7B). Increased pausing at these motifs is expected from reduced levels of charged valyl-tRNA on inhibition of valine biosynthesis by SM and attendant slower decoding of all Val codons. It is unclear why increased pausing is not found at codons for isoleucine as SM inhibits an enzyme common to the Ile and Val biosynthetic pathways (Jia et al., 2000); however, we note that flux through these pathways is differentially regulated and that the Val and leucine pathways compete for a common precursor (Jones and Fink, 1982). Taken together, our findings indicate that eIF2A plays no major role in stimulating translation elongation through particular tripeptide motifs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92916/elife-92916-fig7-v1.jpg)
 
-**Figure 7.:** (A) Scatterplot of average pause scores for 8006 tripeptide motifs, comparing the two biological replicates of ribosome profiling data for eIF2A∆ versus wild-type (WT) cells. Each dot on the plot represents a tripeptide motif. Pause scores were computed using a shift value of 18 nt from the 3′-end of the footprint, positioning the first codon of the tripeptide motif in the E site. (B) Scatterplot of average pause scores for 6267 tripeptide motifs, comparing the two biological replicates of sulfometuron methyl (SM)-treated versus untreated WT cells. All 351 detected motifs with valine codons in the A site are highlighted in red. Pause scores were computed as in (A).Figure 7—source data 1.eIF2AΔ cell, wild-type (WT) cells, and SM-treated WT cells.
+**Figure 7.:** (A) Scatterplot of average pause scores for 8006 tripeptide motifs, comparing the two biological replicates of ribosome profiling data for eIF2A∆ versus wild-type (WT) cells. Each dot on the plot represents a tripeptide motif. Pause scores were computed using a shift value of 18 nt from the 3′-end of the footprint, positioning the first codon of the tripeptide motif in the E site. (B) Scatterplot of average pause scores for 6267 tripeptide motifs, comparing the two biological replicates of sulfometuron methyl (SM)-treated versus untreated WT cells. All 351 detected motifs with valine codons in the A site are highlighted in red. Pause scores were computed as in (A).
 
-## Exploring a possible role for eIF2A in purine biosynthesis
+### Exploring a possible role for eIF2A in purine biosynthesis
 
 As noted above, a synthetic growth phenotype was observed on combining the eIF2AΔ mutation with either a temperature-sensitive mutation affecting eIF4E (Komar et al., 2005) or deletion of the FUN12 gene encoding eIF5B (Zoll et al., 2002), suggesting functional interactions between eIF2A and these initiation factors. Other genetic interactions involving the eIF2AΔ mutation were uncovered in a global analysis of synthetic phenotypes produced by phenotyping double mutants that combine deletions or point mutations in ~90% of all yeast genes (Costanzo et al., 2016; van Leeuwen et al., 2016), compiled at https://thecellmap.org/costanzo2016/. The profile of genetic interactions observed for the eIF2AΔ mutation was found to significantly resemble that of an ade1Δ mutation, including synthetic growth defects in eIF2AΔ double mutants containing deletions of genes HPT1 and FCY2, whose products function in purine base and cytosine uptake (Fcy2) or in synthesizing purine nucleotides from purine bases via the salvage pathway (Hpt1) (Ljungdahl and Daignan-Fornier, 2012). These findings suggested that eIF2A might function as a positive regulator of de novo purine biosynthesis, such that the eIF2AΔ mutation would mimic adeΔ mutations in reducing growth in combination with the hpt1Δ and fcy2Δ mutations as a result of simultaneously impairing both the de novo and salvage pathways for adenine biosynthesis (Ljungdahl and Daignan-Fornier, 2012). To test this possibility, we generated the fcy2ΔeIF2AΔ double mutant and tested it for growth on synthetic minimal (SD) or synthetic complete (SC) medium supplemented with varying concentrations of adenine. Contrary to expectations, we failed to detect any reduction in growth in the double mutant versus either single mutant or the WT strain in the presence or absence of adenine supplements (Figure 6—figure supplement 2A and B). We also interrogated our ribosome profiling data to examine the effects of the eIF2AΔ mutation on expression of the 17 yeast genes encoding proteins involved in de novo synthesis of inosine, adenine, or guanine nucleotides (Ljungdahl and Daignan-Fornier, 2012). The eIF2AΔ mutation conferred no significant reductions in the RPFs, mRNA levels, or TEs of any of 17 genes in non-starvation conditions. Moreover, assaying lacZ reporters for two such genes, IMD2 and IMD3, in cells cultured under the conditions of our ribosome profiling experiments revealed no significant reductions in expression conferred by elimination of eIF2A (Figure 6—figure supplement 2C). Our findings do not support the possibility that eIF2A promotes expression of the biosynthetic genes for de novo purine biosynthesis.
 
@@ -111,19 +147,336 @@ It is surprising that we found so little evidence that eIF2A functions in the ye
 
 ## Materials and methods
 
-## Yeast strain and plasmid construction
+### Yeast strain and plasmid construction
 
 Yeast strains used in this study are listed in Table 1. The primers used for strain construction and verification are listed in Table 3. Strain SGY3 (eIF2AΔfcy2Δ) was generated through a two-step process. First, the kanMX cassette of the eIF2AΔ deletion allele, ygr054wΔ::kanMX4, in strain F2247 was swapped with a hygromycin-resistance cassette to produce SGY1 (ygr054wΔ::hphMX4) by transforming F2247 with a DNA fragment containing the hphMX4 allele that was PCR-amplified from plasmid p4430. Transformants were selected on YPD agar plates supplemented with 300 μg/mL hygromycin B. In the second step, the FCY2 gene was deleted in SGY1 by transformation with a DNA fragment containing the fcy2Δ::kanMX4 allele PCR-amplified from the genomic DNA of strain F2379. Transformants were selected on YPD agar plates containing 200 μg/mL geneticin (G418) to produce SGY3. The ygr054wΔ::hphMX4 and fcy2Δ::kanMX4 alleles in strains SGY1 and SGY3, respectively, were verified by PCR analysis of chromosomal DNA using the appropriate primers listed in Table 3.
 
+**Table 1.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BY4741</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>GE Healthcare</td>
+    </tr>
+    <tr>
+      <td>BY4742</td>
+      <td>MATα his3Δ1 leu2Δ0 lysΔ2 ura3Δ0</td>
+      <td>GE Healthcare</td>
+    </tr>
+    <tr>
+      <td>F2247/4684</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 ygr054wΔ::kanMX4</td>
+      <td>GE Healthcare</td>
+    </tr>
+    <tr>
+      <td>F2379/191</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 fcy2Δ::kanMX4</td>
+      <td>GE Healthcare</td>
+    </tr>
+    <tr>
+      <td>YSG1</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 ygr054wΔ::hphMX4</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>YSG3</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 fcy2Δ::kanMX4 ygr054wΔ::hphMX4</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
 All plasmids employed in this study are listed in Tables 2 and 3. Plasmids p6593-p6604 were constructed by LifeSct LLC by synthesizing DNA fragments containing the promoter, 5′ UTR, and first 20 codons of the main CDS of the candidate genes and using them to replace the corresponding fragment of p6029 (Sen et al., 2015), fusing the first 20 codons of the candidate genes to the F.LUC CDS.
 
-## Preparation of ribosome footprint (RPF) and RNA-seq sequencing libraries
+**Table 2.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Source/reference</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p6586</td>
+      <td>IMD2-lacZ</td>
+      <td colspan="3">Escobar-Henriques and Daignan-Fornier, 2001</td>
+    </tr>
+    <tr>
+      <td>p6587</td>
+      <td>IMD3-lacZ</td>
+      <td colspan="3">Escobar-Henriques and Daignan-Fornier, 2001</td>
+    </tr>
+    <tr>
+      <td>p4430</td>
+      <td>hphMX4</td>
+      <td colspan="3">Goldstein and McCusker, 1999</td>
+    </tr>
+    <tr>
+      <td colspan="3">F.LUC reporter plasmids containing native promoter and 5' UTR (nucleotides (nt) indicated) and first 20 codons of the main CDSs of the indicated genes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6593</td>
+      <td>600 nt 5' ncDNA + first 20 codons of SVL3 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6594</td>
+      <td>600 nt 5' nc DNA + first 20 codons of NET1 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6595</td>
+      <td>1080 nt 5' ncDNA + first 20 codons of RAD9 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6596</td>
+      <td>1080 nt 5' ncDNA + first 20 codons of SAG1 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6597</td>
+      <td>300 nt 5' ncDNA + first 20 codons of PUS7 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6598</td>
+      <td>720 nt 5' ncDNA + first 20 codons of DBF4 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6599</td>
+      <td>420 nt 5' ncDNA + first 20 codons of PBP4 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6600</td>
+      <td>600 nt 5' ncDNA + first 20 codons of HKR1 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6601</td>
+      <td>840 nt 5' ncDNA + first 20 codons of MET4 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6602</td>
+      <td>360 nt 5' ncDNA + first 20 codons of CHS5 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6603</td>
+      <td>540 nt 5' ncDNA + first 20 codons of DNA2 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p6604</td>
+      <td>420 nt 5' ncDNA + first 20 codons of NSI1 in pRS416</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequence 5′ – 3′</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Primers for qRT-PCR</td>
+    </tr>
+    <tr>
+      <td>Firefly Fwd</td>
+      <td>GTGTTGGGCGCGTTATTTATC</td>
+    </tr>
+    <tr>
+      <td>Firefly Rev</td>
+      <td>TAGGCTGCGAAATGTTCATACT</td>
+    </tr>
+    <tr>
+      <td>CHS5 Fwd</td>
+      <td>CTGTGGAGGATGCCAATGAA</td>
+    </tr>
+    <tr>
+      <td>CHS5 Rev</td>
+      <td>AGAGGCAATGTCGGTAGTAAAC</td>
+    </tr>
+    <tr>
+      <td>DBF4 Fwd</td>
+      <td>GCAAGGCAAGAAACTGAAGAAG</td>
+    </tr>
+    <tr>
+      <td>DBF4 Rev</td>
+      <td>GATGTGCACCACTTGCTTTG</td>
+    </tr>
+    <tr>
+      <td>HRK1 Fwd</td>
+      <td>GCCATACAGCTCTGTCCATT</td>
+    </tr>
+    <tr>
+      <td>HRK1 Rev</td>
+      <td>AGAGGAAACGGATGCAGATAAG</td>
+    </tr>
+    <tr>
+      <td>NET1 Fwd</td>
+      <td>TGCTTCAGCTTCTTCCTCTTC</td>
+    </tr>
+    <tr>
+      <td>NET1 Rev</td>
+      <td>GGTTACGGGTGGTTTCCTATT</td>
+    </tr>
+    <tr>
+      <td>SAG1 Fwd</td>
+      <td>CCATCCAGTCCCTCATCTTATAC</td>
+    </tr>
+    <tr>
+      <td>SAG1 Rev</td>
+      <td>TGGCACAGAAGGCGTAAA</td>
+    </tr>
+    <tr>
+      <td>SVL3 Fwd</td>
+      <td>CCTCCTACAACCTCTGTTTCAG</td>
+    </tr>
+    <tr>
+      <td>SVL3 Rev</td>
+      <td>GGTACTAGGCGAAGCCATATTC</td>
+    </tr>
+    <tr>
+      <td>18S rRNA Fwd</td>
+      <td>TCACCAGGTCCAGACACAATAAG</td>
+    </tr>
+    <tr>
+      <td>18S rRNA Rev</td>
+      <td>TCTCGTTCGTTATCGCAATTAAGC</td>
+    </tr>
+    <tr>
+      <td>ACT1 Fwd</td>
+      <td>TGTGTAAAGCCGGTTTTGCC</td>
+    </tr>
+    <tr>
+      <td>ACT1 Rev</td>
+      <td>GATACCTCTCTTGGATTGAGCTTC</td>
+    </tr>
+    <tr>
+      <td colspan="2">Primers used for deletion verification and construction of double deletion strains</td>
+    </tr>
+    <tr>
+      <td>KanB</td>
+      <td>CTGCAGCGAGGAGCCGTAAT</td>
+    </tr>
+    <tr>
+      <td>KanC</td>
+      <td>TGATTTTGATGACGAGCGTAAT</td>
+    </tr>
+    <tr>
+      <td>Hyg Fwd</td>
+      <td>CGGATCCCCGGGTTAATTAA</td>
+    </tr>
+    <tr>
+      <td>HygC Rev</td>
+      <td>GAATTCGAGCTCGTTTAAAC</td>
+    </tr>
+    <tr>
+      <td>Hyg-B</td>
+      <td>TTTCGATCAGAAACTTCTCGACA</td>
+    </tr>
+    <tr>
+      <td>Hyg-C</td>
+      <td>TGCTCCGCATTGGTCTTGACC</td>
+    </tr>
+    <tr>
+      <td>eIF2A-A</td>
+      <td>TTCAGCTTCATAGCGATTTATTTTC</td>
+    </tr>
+    <tr>
+      <td>eIF2A-B</td>
+      <td>CATATGATTAATTGAGCCGGTTTAC</td>
+    </tr>
+    <tr>
+      <td>eIF2A-C</td>
+      <td>AGAGTACATAAGTCAACACCCAAGC</td>
+    </tr>
+    <tr>
+      <td>eIF2A-D</td>
+      <td>GACACTCCATATTCATTTATTGCCT</td>
+    </tr>
+    <tr>
+      <td>FCY2-A</td>
+      <td>TATCATTTCCGCTTATCTGACTTCT</td>
+    </tr>
+    <tr>
+      <td>FCY2-B</td>
+      <td>CTAACCTTAACACCAACTTCCTCAA</td>
+    </tr>
+    <tr>
+      <td>FCY2-C</td>
+      <td>TTGAGGAAGTTGGTGTTAAGGTTAG</td>
+    </tr>
+    <tr>
+      <td>FCY2-D</td>
+      <td>AATCAGCAGATTCCATCAAAAGTAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of ribosome footprint (RPF) and RNA-seq sequencing libraries
 
 Ribosome profiling and RNA-seq analyses were carried out in parallel on strains BY4742 (WT) and F2247 (eIF2AΔ), with two biological replicates for each strain, as described previously (Gaikwad et al., 2021). In brief, both strains were grown at 30°C in SC until reaching log phase at A600 = 0.5–0.6 for untreated cells, or to A600 = 0.5–0.6 in SC lacking isoleucine and valine (SC-Ile/Val) and treated with SM at 1 µg/mL for 25 min for SM-treated cells. Cells were harvested by high-speed vacuum filtration and snap-frozen in liquid nitrogen. Cell lysis was performed using a freezer mill in the presence of lysis buffer containing 500 μg/mL of cyclohexamide, and RPFs were prepared by digesting cell lysates with RNase I. The 80S monosomes were resolved by sedimentation through a 10–50% sucrose gradient. The RPFs were purified from the monosomes using hot phenol-chloroform extraction. After size selection and dephosphorylation steps, a Universal miRNA cloning linker was attached to the 3' ends of the footprints. This was followed by reverse transcription, circular ligation, rRNA subtraction, PCR amplification of the cDNA library, and DNA sequencing using an Illumina HiSeq system at the NHLBI DNA Sequencing and Genomics Core at NIH (Bethesda, MD).
 
 For RNA-seq library preparation, total RNA was extracted and purified from aliquots of the same snapped-frozen cells lysates described above using hot phenol-chloroform extraction. Then, 5 µg of randomly fragmented total RNA was used for library generation and sequencing, similar to the steps mentioned above except that the Ribo-Zero Gold rRNA Removal Kit (Illumina; MRZ11124C) was employed to remove rRNA after linker-ligation.
 
-## Differential gene expression and uORF translation analysis of ribosome profiling data
+### Differential gene expression and uORF translation analysis of ribosome profiling data
 
 Processing and analysis of sequence libraries of RPFs or total mRNA fragments, including Wiggle track normalization to the total number of mapped reads for viewing RPF or RNA reads in the IGV browser, were conducted exactly as described previously (Gaikwad et al., 2021). In brief, sequencing reads were trimmed and noncoding RNA sequences were eliminated by aligning trimmed FASTA sequences to the Saccharomyces cerevisiae ribosomal database using Bowtie (Langmead et al., 2009). The remaining reads were mapped to the yeast genome using TopHat (Trapnell et al., 2009), and DESeq2 was used for statistical analysis of mRNA reads, RPFs, and TEs (Love et al., 2014). The R script employed for DESeq2 analysis of TE changes can be found on GitHub (https://github.com/hzhanghenry/RiboProR; Zhang, 2023). Wiggle files were visualized using IGV 2.4.14 at http://software.broadinstitute.org/software/igv/ (Robinson et al., 2011).
 
@@ -131,16 +484,16 @@ RROs for genes containing translated uORFs were calculated by dividing the RPF c
 
 Tripeptide pause scores were computed as described previously (Meydan et al., 2023). Briefly, this involved dividing the 80S reads per million (rpm) of a three-amino acid motif by the average rpm in the surrounding region (± 50 nt around each motif). Sites smaller than the ± 50 nt window were excluded from the analysis. To generate average pause scores, we calculated the mean of individual pause scores for each tripeptide motif across the translatome. Motifs represented in the genome less than 100 times were excluded to reduce noise in the analysis.
 
-## Yeast biochemical methods
+### Yeast biochemical methods
 
 β-Galactosidase activities were assayed in WCEs using a modified version of a protocol described previously (Moehle and Hinnebusch, 1991) in which the cleavage of ONPG was determined manually after a 30 min incubation with the WCE. Expression of luciferase was assayed in WCEs as previously described (Gaikwad et al., 2021) using the Dual-Luciferase Reporter Assay System (Promega) following the supplier’s protocol, and luciferase activities were normalized to total protein levels in the WCEs determined using the Bradford assay kit (Bio-Rad Laboratories).
 
-## Polysome profile analysis and measurement of TEs of individual mRNAs
+### Polysome profile analysis and measurement of TEs of individual mRNAs
 
 To conduct bulk polysome profiling, cells were cultured as described in the figure legends, harvested by centrifugation, and WCEs were prepared by vortexing cell pellets, applying eight cycles of vortexing for 30 s followed by incubation on ice for 30 s, using two volumes of glass beads in ice-cold 1× breaking buffer (20 mM Tris–HCl (pH 7.5), 50 mM KCl, 10 mM MgCl2, 1 mM DTT, 200 μg/mL heparin, 50 μg/mL cycloheximide, and 1 cOmplete EDTA-free Protease Inhibitor cocktail Tablet (Roche)/50 mL buffer). Fifteen A260 units of WCEs were layered on a pre-chilled 10–50% sucrose gradient and centrifuged at 40,000 rpm for 2 hr at 4°C in a SW41Ti rotor (Beckman). Gradient fractions were continuously scanned at A260 using the BioComp Gradient Station, and polysome to monosome (P/M) ratios were calculated using ImageJ software for at least two biological replicates.
 
 To determine polysome association of individual mRNAs and calculate their TEs, 20 A260 units of WCEs from each of three replicate cultures were sedimented through a 10–50% sucrose gradient by centrifugation at 35,000 rpm for 2.4 hr and the gradient fractions were scanned at A260 nm. The fractions containing 80S monosomes or different polysomal species (2-mers, 3-mers, etc.) were collected using ‘the advanced fraction’ function of the BioComp fractionator (Figure 3—figure supplement 1). RNA was extracted from 1/5th of the total volume of input WCEs and from 300 µL of each set of pooled fractions containing 80S or different polysomal species using QIAzol lysis Reagent (QIAGEN) according to the manufacturer’s protocol. Reverse transcription (RT) was done using SuperScript III First-Strand Synthesis SuperMix (Invitrogen) with random hexamers, using 5 μg of RNA for each reverse transcription (RT) reaction. Transcript levels were quantified by qPCR using the Brilliant III Ultra-Fast SYBR Green qPCR Master Mix (Agilent Technologies) on a Roche LightCycler 96 Instrument. Primers listed in Table 3 were used to measure the individual mRNAs and 18S rRNA. The absolute mRNA/18S rRNA levels were calculated using the 2-CT method and corrected to account for differences in the proportions of the pooled fractions from which RNA was isolated by multiplying by a factor calculated by dividing the total fraction volume (in µL) by 300 µL. They were further corrected to account for differences in the proportion of the total RNA employed for RT by multiplying by a factor calculated as 25 µL (the total volume of extracted mRNA) divided by the volume of the pooled fraction (in µL) containing 5 µg of RNA. To account for potential losses during RNA extraction, RNA recovery normalization factors were calculated for each fraction by determining the proportion of total A260 units across all gradient fractions that is present in each set of pooled fraction (calculated from the A260 trace obtained during gradient fractionation) and dividing the results by the proportion of total 18S rRNA across the gradient found in the corresponding pooled fraction. A second normalization factor was calculated to correct for losses in recovery of monosomes/polysomes in the gradient separations of fixed amounts of input WCEs by calculating the total A260 units found in monosomes/polysomes for each gradient, determining the mean value for all of the gradients/samples analyzed in parallel, and dividing the mean value by the value determined for each gradient. (This correction assumes that WT and eIF2AΔ cells have the same total amounts of monosomes/polysomes per A260 of WCE, as indicated by our repeated polysome profiling of biological replicates depicted in Figure 1A). The absolute amounts of mRNAs measured in each pooled fraction were multiplied by both normalization factors to obtain the normalized mRNA levels for each pooled fraction, which was multiplied by the number of ribosomes per mRNA in that pooled fraction (i.e., one for monosomes, two for 2-mer polysomes, etc.) and summed across the gradient fractions to calculate the total number of ribosomes translating the mRNA. To calculate TEs, this last quantity was divided by amount of input mRNA measured in the starting WCE normalized to level of ACT1 mRNA. For each of three biological replicate cultures of each strain, WT or eIF2AΔ mutant, we determined the ratio of TE in the presence versus absence of SM and calculated the mean and SEM values for ∆TEs.
 
-## Statistical analyses and data visualization
+### Statistical analyses and data visualization
 
 Notched box plots were created using a web-based tool (http://shiny.chemgrid.org/boxplotr/). Scatterplots and volcano plots were generated using the scatterplot function in Microsoft Excel. Hierarchical cluster analysis of TE changes in mutants/conditions was performed using the R heatmap.2 function from the 'gplots' library using the default hclust hierarchical clustering algorithm. Smoothed scatterplots were computed and plotted using the ggplot2 package in R. Calculation of Spearman’s correlation coefficients and Student’s t-tests were performed using built-in features of Microsoft Excel. The Mann–Whitney U test and p-values for Pearson’s correlation were computed using the R Stats package in R.

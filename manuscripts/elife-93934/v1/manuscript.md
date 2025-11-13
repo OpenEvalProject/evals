@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04qtj9h94 Department of Health Technology, Section for Bioinformatics, Technical University of Denmark Lyngby Denmark
+1. Department of Health Technology, Section for Bioinformatics, Technical University of Denmark Lyngby Denmark ([ROR:04qtj9h94](https://ror.org/04qtj9h94))
 
 † Corresponding author
 
 ## Abstract
 
-Predicting the interaction between Major Histocompatibility Complex (MHC) class I-presented peptides and T-cell receptors (TCR) holds significant implications for vaccine development, cancer treatment, and autoimmune disease therapies. However, limited paired-chain TCR data, skewed towards well-studied epitopes, hampers the development of pan-specific machine-learning (ML) models. Leveraging a larger peptide-TCR dataset, we explore various alterations to the ML architectures and training strategies to address data imbalance. This leads to an overall improved performance, particularly for peptides with scant TCR data. However, challenges persist for unseen peptides, especially those distant from training examples. We demonstrate that such ML models can be used to detect potential outliers, which when removed from training, leads to augmented performance. Integrating pan-specific and peptide-specific models alongside with similarity-based predictions, further improves the overall performance, especially when a low false positive rate is desirable. In the context of the IMMREP22 benchmark, this modeling framework attained state-of-the-art performance. Moreover, combining these strategies results in acceptable predictive accuracy for peptides characterized with as little as 15 positive TCRs. This observation places great promise on rapidly expanding the peptide covering of the current models for predicting TCR specificity. The NetTCR 2.2 model incorporating these advances is available on GitHub ( https://github.com/mnielLab/NetTCR-2.2 ) and as a web server at https://services.healthtech.dtu.dk/services/NetTCR-2.2/ .
+Predicting the interaction between Major Histocompatibility Complex (MHC) class I-presented peptides and T-cell receptors (TCR) holds significant implications for vaccine development, cancer treatment, and autoimmune disease therapies. However, limited paired-chain TCR data, skewed towards well-studied epitopes, hampers the development of pan-specific machine-learning (ML) models. Leveraging a larger peptide-TCR dataset, we explore various alterations to the ML architectures and training strategies to address data imbalance. This leads to an overall improved performance, particularly for peptides with scant TCR data. However, challenges persist for unseen peptides, especially those distant from training examples. We demonstrate that such ML models can be used to detect potential outliers, which when removed from training, leads to augmented performance. Integrating pan-specific and peptide-specific models alongside with similarity-based predictions, further improves the overall performance, especially when a low false positive rate is desirable. In the context of the IMMREP22 benchmark, this modeling framework attained state-of-the-art performance. Moreover, combining these strategies results in acceptable predictive accuracy for peptides characterized with as little as 15 positive TCRs. This observation places great promise on rapidly expanding the peptide covering of the current models for predicting TCR specificity. The NetTCR 2.2 model incorporating these advances is available on GitHub (https://github.com/mnielLab/NetTCR-2.2) and as a web server at https://services.healthtech.dtu.dk/services/NetTCR-2.2/.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ In this manuscript, we seek to address these issues in the context of a large da
 
 ## Materials and methods
 
-## Training data
+### Training data
 
 The initial data was acquired from IEDB (Vita et al., 2019) and VDJdb (Bagaev et al., 2020) on the 23rd and 24th of August 2022, respectively, using a query to select only positive T-cell assays for MHC class I and Human cells. Additionally, only paired-chain (αβ) data was collected. This resulted in a dataset of 21,825 observations across 631 peptides for IEDB and 27,005 observations across 898 peptides for VDJdb.
 
@@ -51,31 +51,339 @@ In cases where Stitchr failed to reconstruct the TCR, a second run of Stitchr wa
 
 Finally, the CDR1, CDR2, and CDR3 amino acid sequences were annotated by submitting the full TCR sequences to the ANARCI software (Dunbar and Deane, 2016), which is a tool that is used for annotating the sequences according to the IMGT naming scheme (Lefranc et al., 2003). Here, CDR1 was defined as position 27–38, CDR2 as position 56–65 and CDR3 as position 105–117.
 
-## Redundancy reduction
+### Redundancy reduction
 
 The CDR-annotated data was redundancy reduced in two steps using the Hobohm 1 algorithm (Hobohm et al., 1992) based on a summed BLOSUM62 encoded kernel similarity (Shen et al., 2012) of CDR3α and CDR3β. In the first step, the dataset was split according to peptides, and a redundancy reduction was carried out separately for TCRs belonging to each unique peptide using a 0.95 kernel similarity threshold. Here, only peptides with at least 30 unique TCRs after the first redundancy reduction were kept. This redundancy reduction and filtering resulted in a dataset of 6415 observations across 26 peptides.
 
 A second redundancy reduction was subsequently carried out also at a 0.95 kernel similarity threshold across all remaining observations and peptides, where the data was sorted by peptide according to TCR count (least abundant to most abundant) in order to limit the risk of removing observations from peptides with few observations. This resulted in the further removal of 68 observations, resulting in a final dataset of 6,353 positive observations across 26 peptides. The amount of redundant data removed by the redundancy reductions are summarized in Table 1, as well as information regarding source organism and MHC allele for each peptide, and number of observations originating from 10 X sequencing data. The vast majority of 10 X data comes from the iTRAP filtered dataset, with a few observations originating from other 10 X studies that managed to slip through the initial manual filtering.
 
-## Data partitioning and generation of swapped negatives
+**Table 1.**
+ Per peptide overview of the full positive training data.The source organism for each epitope, as well as the MHC allele which they bind to, are here shown. Additionally, the number of observations discarded during each redundancy reduction step, as well as the total remaining number of observations, are also listed, along with the number of observations originating from 10 x sequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>Organism</th>
+      <th>MHC</th>
+      <th>Pre reduction count</th>
+      <th>Removed in first reduction</th>
+      <th>Removed in second reduction</th>
+      <th>Post reduction count</th>
+      <th>Not 10 X</th>
+      <th>10 X</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GILGFVFTL</td>
+      <td>Influenza A virus</td>
+      <td>HLA-A*02:01</td>
+      <td>1897</td>
+      <td>645</td>
+      <td>127</td>
+      <td>1125</td>
+      <td>426</td>
+      <td>699</td>
+    </tr>
+    <tr>
+      <td>RAKFKQLL</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-B*08:01</td>
+      <td>1065</td>
+      <td>114</td>
+      <td>17</td>
+      <td>934</td>
+      <td>0</td>
+      <td>934</td>
+    </tr>
+    <tr>
+      <td>KLGGALQAK</td>
+      <td>Human CMV</td>
+      <td>HLA-A*03:01</td>
+      <td>912</td>
+      <td>8</td>
+      <td>2</td>
+      <td>902</td>
+      <td>0</td>
+      <td>902</td>
+    </tr>
+    <tr>
+      <td>AVFDRKSDAK</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-A*11:01</td>
+      <td>725</td>
+      <td>5</td>
+      <td>4</td>
+      <td>716</td>
+      <td>0</td>
+      <td>716</td>
+    </tr>
+    <tr>
+      <td>ELAGIGILTV</td>
+      <td>Melanoma neoantigen</td>
+      <td>HLA-A*02:01</td>
+      <td>435</td>
+      <td>6</td>
+      <td>3</td>
+      <td>426</td>
+      <td>55</td>
+      <td>371</td>
+    </tr>
+    <tr>
+      <td>NLVPMVATV</td>
+      <td>Human CMV</td>
+      <td>HLA-A*02:01</td>
+      <td>384</td>
+      <td>43</td>
+      <td>11</td>
+      <td>330</td>
+      <td>154</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>IVTDFSVIK</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-A*11:01</td>
+      <td>323</td>
+      <td>13</td>
+      <td>2</td>
+      <td>308</td>
+      <td>0</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>LLWNGPMAV</td>
+      <td>Yellow fever virus</td>
+      <td>HLA-A*02:01</td>
+      <td>322</td>
+      <td>72</td>
+      <td>21</td>
+      <td>229</td>
+      <td>229</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CINGVCWTV</td>
+      <td>Hepatitis C virus</td>
+      <td>HLA-A*02:01</td>
+      <td>231</td>
+      <td>4</td>
+      <td>1</td>
+      <td>226</td>
+      <td>75</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td>GLCTLVAML</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-A*02:01</td>
+      <td>278</td>
+      <td>59</td>
+      <td>7</td>
+      <td>212</td>
+      <td>95</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>SPRWYFYYL</td>
+      <td>SARS-CoV2</td>
+      <td>HLA-B*07:02</td>
+      <td>158</td>
+      <td>4</td>
+      <td>5</td>
+      <td>149</td>
+      <td>149</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ATDALMTGF</td>
+      <td>Hepatitis C virus</td>
+      <td>HLA-A*01:01</td>
+      <td>128</td>
+      <td>21</td>
+      <td>4</td>
+      <td>103</td>
+      <td>0</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>DATYQRTRALVR</td>
+      <td>Influenza A virus</td>
+      <td>HLA-A*68:01</td>
+      <td>100</td>
+      <td>4</td>
+      <td>3</td>
+      <td>93</td>
+      <td>93</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>KSKRTPMGF</td>
+      <td>Hepatitis C virus</td>
+      <td>HLA-B*57:01</td>
+      <td>115</td>
+      <td>14</td>
+      <td>12</td>
+      <td>89</td>
+      <td>0</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>YLQPRTFLL</td>
+      <td>SARS-CoV2</td>
+      <td>HLA-A*02:01</td>
+      <td>69</td>
+      <td>6</td>
+      <td>1</td>
+      <td>62</td>
+      <td>54</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>HPVTKYIM</td>
+      <td>Hepatitis C virus</td>
+      <td>HLA-B*08:01</td>
+      <td>60</td>
+      <td>5</td>
+      <td>2</td>
+      <td>53</td>
+      <td>0</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>RFPLTFGWCF</td>
+      <td>HIV-1</td>
+      <td>HLA-A*24:02</td>
+      <td>58</td>
+      <td>7</td>
+      <td>0</td>
+      <td>51</td>
+      <td>51</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>GPRLGVRAT</td>
+      <td>Hepatitis C virus</td>
+      <td>HLA-B*07:02</td>
+      <td>51</td>
+      <td>3</td>
+      <td>0</td>
+      <td>48</td>
+      <td>0</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>CTELKLSDY</td>
+      <td>Influenza A virus</td>
+      <td>HLA-A*01:01</td>
+      <td>48</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48</td>
+      <td>48</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RLRAEAQVK</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-A*03:01</td>
+      <td>47</td>
+      <td>0</td>
+      <td>0</td>
+      <td>47</td>
+      <td>0</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>RLPGVLPRA</td>
+      <td>AML neoantigen</td>
+      <td>HLA-A*02:01</td>
+      <td>43</td>
+      <td>0</td>
+      <td>0</td>
+      <td>43</td>
+      <td>0</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>SLFNTVATLY</td>
+      <td>HIV-1</td>
+      <td>HLA-A*02:01</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>38</td>
+      <td>0</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>RPPIFIRRL</td>
+      <td>Epstein Barr virus</td>
+      <td>HLA-B*07:02</td>
+      <td>40</td>
+      <td>2</td>
+      <td>2</td>
+      <td>36</td>
+      <td>24</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>FEDLRLLSF</td>
+      <td>Influenza A virus</td>
+      <td>HLA-B*37:01</td>
+      <td>31</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31</td>
+      <td>31</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>VLFGLGFAI</td>
+      <td>T1D neoantigen</td>
+      <td>HLA-A*02:01</td>
+      <td>32</td>
+      <td>1</td>
+      <td>0</td>
+      <td>31</td>
+      <td>31</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>FEDLRVLSF</td>
+      <td>Influenza A virus</td>
+      <td>HLA-B*37:01</td>
+      <td>36</td>
+      <td>0</td>
+      <td>13</td>
+      <td>23</td>
+      <td>23</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data partitioning and generation of swapped negatives
 
 To prepare the data for model training, this data was randomly split into five partitions, and negatives were generated by swapping the TCRs for a given peptide with TCRs binding to other peptides. Here, such TCRs were only samples from peptides which had a Levenshtein distance greater than 3, to reduce the risk of generating false negatives. For each positive observation, five negative observations were generated using this approach, except for the GILGFVFTL peptide, where all TCRs from the other peptides were used as negatives, since there was not enough data to allow for a 1:5 positive to negative ratio for this peptide (a 1:4.647 ratio was achieved here). The generation of swapped negatives was done separately within each partition, in order to reduce the risk of data leakage.
 
-## Baseline model
+### Baseline model
 
 TCRbase (Montemurro et al., 2022), a distance-based model, was used as the baseline model. For a given peptide, TCRbase calculated the similarity between sets of CDRs found in the test partition to all positive CDR sets found in the remaining partitions. In short, the similarity is calculated per CDR as the mean kernel-similarity of BLOSUM62-encoded kmers ranging from size 1–30 between the two sets of CDRs that are compared (Shen et al., 2012). The weighting for the CDRs was set to 1,1,3,1,1,3 for CDR1α-, CDR2α-, CDR3α-, CDR1β-, CDR2β-, and CDR3β, respectively, in line with earlier recommendations (Montemurro et al., 2022).
 
-## CNN architecture
+### CNN architecture
 
 The CNN architecture for NetTCR 2.1 (Montemurro et al., 2022) was reconstructed in Keras (Chollet, 2015), in preparation for further updates to the architecture. In brief, the original architecture consists of a set of convolutional 1D layers for each input feature, where each layer has 16 filters of kernel size of 1, 3, 5, 7, and 9, respectively, which are activated by a sigmoid activation function. Each layer is then max-pooled, concatenated, and fed to a dense layer of size 32 followed by a linear output layer of size 1, representing the final prediction score. The outputs of both linear layers are activated by a sigmoid activation function.
 
 Except for the first models referred to as NetTCR 2.1 (which ran in PyTorch Paszke et al., 2019), the version 2.2 CNN models described in this paper used a slightly modified architecture compared to NetTCR 2.1. Here, the activation function for the max-pooling layer was replaced with a rectified linear unit (previously sigmoid), a dropout layer was introduced for the concatenated max-pooling output, and the size of the dense layer was doubled to 64 neurons. For the models utilizing dropout, a dropout rate of 0.6 was used. The models referred to here as NetTCR 2.1 uses the original pan-specific NetTCR 2.1 architecture (Montemurro et al., 2022), which also includes convolutional filters for the peptide-sequence.
 
-## Embedding
+### Embedding
 
 The input features for the CNN models consisted of peptide-, CDR1α-, CDR2α-, CDR3α-, CDR1β-, CDR2β-, and CDR3β-amino acid sequence. These were each represented using a BLOSUM50-embedding (calculated using a normalization factor of 5) and right-padded to the maximum length observed for that feature in the dataset, by assigning a vector of 20 times –1 for each missing residue. For reference, the maximum length observed was 12, 7, 8, 22, 6, 7, and 23 residues for the peptide-, CDR1α-, CDR2α-, CDR3α-, CDR1β-, CDR2β-, and CDR3β-amino acid sequences, respectively.
 
-## Training setup and early stopping
+### Training setup and early stopping
 
 All CNN models were trained in a nested cross-validation setup with four folds in the inner loop and fivefolds in the outer loop. Here, three partitions were used for training, one was used for validation, while the remaining partition was used as a test partition to evaluate the performance of the model. For all CNN models, Binary Cross Entropy was used as the loss function, and the Adam optimizer (Kingma and Ba, 2014) was used for updating the weights during training. A learning rate of 0.001 was used for training of all models.
 
@@ -83,33 +391,47 @@ A patience of 200 epochs was used for the early stopping for the peptide-specifi
 
 For the pan-specific models, a batch size of 64 was used together with shuffling. For the peptide-specific models, an adaptive batch size was used, which ensured that no batch ended up having less than 32 observations. Here, it was first tested if it was possible to use a batch size of 64 while still having at least 32 observations for the final batch. If not, the default batch size of 64 was progressively increased by 1, until it was ensured that the final batch had at least 32 observations.
 
-## Performance evaluation
+### Performance evaluation
 
-The cross-validation setup results in four models generated in the inner loop. The test set predictions were then calculated from the average over the four predictions for each entry. The performance was evaluated on the five concatenated test sets in terms of AUC and AUC 0.1 on a per-peptide basis, as well as the unweighted and weighted average performance across all peptides:Munweighted=∑peptideMpeptideNuniquepeptidesMweighted=∑peptideMpeptide∙NpeptideNtotal
+The cross-validation setup results in four models generated in the inner loop. The test set predictions were then calculated from the average over the four predictions for each entry. The performance was evaluated on the five concatenated test sets in terms of AUC and AUC 0.1 on a per-peptide basis, as well as the unweighted and weighted average performance across all peptides:
+
+$$
+M_{unweighted}=\frac{\sumpeptideM_{peptide}}{N_{uniquepeptides}}
+$$
+
+
+
+$$
+M_{weighted}=\sum_{peptide}M_{peptide}∙\frac{N_{peptide}}{N_{total}}
+$$
 
 where Munweighted and Mweighted is the unweighted and weighted average metric, respectively, Mpeptide is the metric for a given peptide, Npeptide is the number of positive observations for a given peptide, Nunique peptides is the number of unique peptides, and Ntotal is the total number of positive observations across all peptides.
 
 A summary of the per-peptide performance of all models is found in Supplementary file 1.
 
-## Performance comparisons
+### Performance comparisons
 
 To assess the difference in performance between models, bootstraps were performed by sampling with replacement from the model predictions 10,000 times and calculating the weighted and unweighted performance metrics for each subsample as described above. The same seed for subsampling and order of predictions was used for all bootstraps, to ensure that performance within a given subsample could be compared between models. The p-value for the null hypothesis that two models had equal performance was then calculated as the number of times that the first model had a higher performance than the second model within the same subsample, normalized by the total number of subsamples.
 
-## Weighted loss
+### Weighted loss
 
-A weighted loss was implemented for the pan-specific CNN model to allow the model to focus more on the observations from the less abundant peptides in the training dataset. Here, the binary cross entropy loss for observations from each peptide was weighted according to the formula:lossweighted=log2NtotalNpeptidec
+A weighted loss was implemented for the pan-specific CNN model to allow the model to focus more on the observations from the less abundant peptides in the training dataset. Here, the binary cross entropy loss for observations from each peptide was weighted according to the formula:
+
+$$
+loss_{weighted}=\frac{log2\frac{N_{total}}{N_{peptide}}}{c}
+$$
 
 where Ntotal is the total number of observations, Npeptide is the number of observations for the given peptide, and c is a constant that is used to scale the loss, so the overall loss becomes close to that of the unweighted approach. The value of c was set to 3.8 to ensure that the overall weighted loss was comparable to the training done without sample weighting. For the peptide-specific models, a weight of 1 was used for all samples.
 
-## Redundant training dataset
+### Redundant training dataset
 
 A dataset was constructed based on the primary training dataset, where redundant data from the first redundancy reduction (see Table 1) was added back by assigning them to the partition of the data point that they were redundant to. Only positive data was added back in this way, and additional swapped negatives were not generated for this dataset to keep it as similar to the original as possible. Models trained on this dataset were evaluated on the original test datasets without redundant data.
 
-## Limited training dataset
+### Limited training dataset
 
 Using the prediction scores for the validation partitions of the updated peptide-specific CNN model, additional datasets were constructed by removing observations that consistently received a poor prediction score in relation to their designated label. That is, positive observations were removed if they received a validation prediction score of less than the nth percentile of the negative prediction scores for the given peptide for all four models that were not trained on that partition, while negative observations were removed if they received a validation prediction score of more than the (1 – n)th percentile of the positive validation prediction scores for all four models that were not trained on that partition. Thresholds of n=50, 60, 70, 80, 85, 90, and 95 were tested in this way.
 
-## Pre-trained models
+### Pre-trained models
 
 A modified version of the NetTCR 2.2 architecture was made to combine the properties of the pan- and peptide-specific models, as shown in Figure 1. This architecture consists of a pan-specific and a peptide-specific CNN block. The pan-specific CNN block consists of 32 1D convolutional filters of size 1, 3, 5, 7, and 9, respectively for each of the peptide-, CDR1α-, CDR2α-, CDR3α-, CDR1β-, CDR2β-, and CDR3β embeddings. The peptide-specific CNN block consists of 16 1D convolutional filters, also of size 1, 3, 5, 7, and 9, respectively, for the same feature embeddings, except the peptide embedding, as this information is redundant when trained on a single peptide. The outputs from each CNN block are max-pooled with a rectified linear unit activation function, concatenated, and fed to two dropout layers with a dropout rate of 0.6, one for each output of a CNN block.
 
@@ -121,23 +443,27 @@ Each of the two resulting tensors are fed separately to dense layers with 64 uni
 
 These models are trained in two rounds. During the first round of training, a pan-specific training is performed. Here the weights in the peptide-specific CNN block are kept frozen, as shown in Figure 1. This pre-trained model is then used as the starting point for a second round of training performed in a peptide-specific setup, where the weights in the pan-specific CNN block are frozen, while those in the peptide-specific CNN block are unfrozen. During both training rounds, a patience of 100 is used and the maximum number of epochs is set to 200.
 
-## CNN – TCRbase ensemble
+### CNN – TCRbase ensemble
 
-The pre-trained CNN model was combined with the sequence similarity based TCRbase model (Montemurro et al., 2022; Shen et al., 2012). The predictions for this new ensemble were calculated using the following formula:PTCRbaseensemble=PCNN⋅PTCRbaseα
+The pre-trained CNN model was combined with the sequence similarity based TCRbase model (Montemurro et al., 2022; Shen et al., 2012). The predictions for this new ensemble were calculated using the following formula:
+
+$$
+P_{TCRbaseensemble}=P_{CNN}⋅P_{TCRbase}^{\alpha}
+$$
 
 where PTCRbase ensemble is the prediction of the combined ensemble, PCNN is the prediction of the CNN model, PTCRbase is the prediction from TCRbase, and α is a scaling factor used to give TCRs with low similarity to known binders a harsher penalty. This ensemble was tested on the validation partitions of the full dataset, where α was varied from 0 to 40.
 
 The Pearson correlation coefficients between the α resulting in the best performance in terms of AUC and AUC 0.1, respectively, and the corresponding performance metric for the TCRbase and pre-trained model without scaling, was calculated using the pearsonr function from scipy.stats (Virtanen et al., 2020). Five samples were used for each peptide, as there were five different validation partitions to consider, resulting in a total of 130 samples for calculating the Pearson correlation coefficients. p-Values for the null hypothesis that there was no correlation was also reported using this function.
 
-## Percentile-rank rescaling
+### Percentile-rank rescaling
 
 Prediction scores were rescaled to a percentile rank by comparing the score to the score distribution obtained for 15,957 negative controls paired to the corresponding peptide. These negative controls were obtained from the IMMREP 2022 workshop dataset (Meysman et al., 2023). Here, the percentile rank score for a given TCRs was calculated as the percentage of negative controls which had a score above the score of that of the TCR.
 
-## Peptide specificity test
+### Peptide specificity test
 
 To evaluate the models’ ability to correctly identify which peptide is most likely to bind a given TCR, all TCRs were paired with all peptides present within each partition, and predictions were performed by the models which had not seen the given partition during training. The specificity was then calculated per peptide as the number of times that the true peptide-TCR complex was given the highest prediction score, compared to the total number of positive observations in the original dataset for the given peptide. The test was performed on the limited dataset, where the peptides KLGGALQAK, AVFDRKSDAK, NLVPMVATV, CTELKLSDY, RLRAEAQVK, RLPGVLPRA, and SLFNTVATLY were discarded, due to low performance of the full model (AUC 0.1<0.65).
 
-## Leave most out
+### Leave most out
 
 To test the models’ ability to learn from small data sets, models were re-trained on small subsets of the original data. For each of the peptides with at least 100 positive observations in the limited training dataset except for KLGGALQAK, AVFDRKSDAK, and NLVPMVATV (e.g. GILGFVFTL, RAKFKQLL, ELAGIGILTV, IVTDFSVIK, LLWNGPMAV, CINGVCWTV, GLCTLVAML and SPRWYFYYL were included), new training datasets were constructed by subsampling 5, 10, 15, 20, 25, 50, and 100 positive peptides, respectively, per partition, as well as five negative observations per positive. KLGGALQAK, AVFDRKSDAK, and NLVPMVATV were excluded from this analysis, due to low performance of the full model (AUC 0.1<0.65). All models trained here were evaluated on the full dataset (not limited).
 
@@ -149,15 +475,144 @@ A set of pre-trained models were also re-trained on these datasets, where the fi
 
 Finally, an ensemble consisting of the pre-trained models scaled by the TCRbase prediction (α=10) were evaluated (see CNN - TCRbase ensemble).
 
-Due to the low number of positives for some of the leave-most-out datasets, the default batch size was set to 32 for the peptide-specific training, while the criteria for early stopping and model saving was changed from validation AUC 0.1 to a custom metric taking both validation AUC 0.1 and binary cross entropy loss into account. This custom metric was calculated as:CMval=AUC0.1val−Lossval⋅0.1
+Due to the low number of positives for some of the leave-most-out datasets, the default batch size was set to 32 for the peptide-specific training, while the criteria for early stopping and model saving was changed from validation AUC 0.1 to a custom metric taking both validation AUC 0.1 and binary cross entropy loss into account. This custom metric was calculated as:
+
+$$
+CM_{val}=AUC0.1_{val}−Loss_{val}⋅0.1
+$$
 
 and the model was saved when this value was maximized. A patience of 100 was used for early stopping during the peptide-specific training.
 
-## IMMREP 2022 training and evaluation
+### IMMREP 2022 training and evaluation
 
 The labeled training and test data for the IMMREP 2022 workshop (Meysman et al., 2023) was collected from GitHub (GitHub - viragbioinfo/IMMREP_2022_TCRSpecificity; viragbioinfo et al., 2022) on the 5th of July 2023. The training data was randomly split into five partitions, and models were trained in the same cross-validation as described above, for example nested cross-validation for the neural network models and a fivefold cross-validation for TCRbase. To make the data compatible with our models, the labels for the negative observations were changed from –1 to 0. The performance of each model was then evaluated on the separate test dataset, using the average in prediction score given by all models resulting from the cross-validation.
 
 A separate redundancy reduced dataset was created based on the IMMREP dataset following the strategy described above. An overview of the number of observations removed by this redundancy reduction is shown in Table 2.
+
+**Table 2.**
+ Overview of number of TCRs for each peptide in the IMMREP 2022 training dataset before and after redundancy reduction.The redundancy reduction was performed using a kernel similarity threshold of 95%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>Pre reduction count</th>
+      <th>Post reduction count</th>
+      <th>Percent redundant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All</td>
+      <td>2445</td>
+      <td>1960</td>
+      <td>19.8%</td>
+    </tr>
+    <tr>
+      <td>GILGFVFTL</td>
+      <td>544</td>
+      <td>301</td>
+      <td>44.7%</td>
+    </tr>
+    <tr>
+      <td>NLVPMVATV</td>
+      <td>274</td>
+      <td>242</td>
+      <td>11.7%</td>
+    </tr>
+    <tr>
+      <td>YLQPRTFLL</td>
+      <td>267</td>
+      <td>227</td>
+      <td>15.0%</td>
+    </tr>
+    <tr>
+      <td>TTDPSFLGRY</td>
+      <td>193</td>
+      <td>187</td>
+      <td>3.1%</td>
+    </tr>
+    <tr>
+      <td>LLWNGPMAV</td>
+      <td>188</td>
+      <td>175</td>
+      <td>6.9%</td>
+    </tr>
+    <tr>
+      <td>CINGVCWTV</td>
+      <td>183</td>
+      <td>179</td>
+      <td>2.2%</td>
+    </tr>
+    <tr>
+      <td>GLCTLVAML</td>
+      <td>146</td>
+      <td>91</td>
+      <td>37.7%</td>
+    </tr>
+    <tr>
+      <td>ATDALMTGF</td>
+      <td>104</td>
+      <td>78</td>
+      <td>25.0%</td>
+    </tr>
+    <tr>
+      <td>LTDEMIAQY</td>
+      <td>100</td>
+      <td>94</td>
+      <td>6.0%</td>
+    </tr>
+    <tr>
+      <td>SPRWYFYYL</td>
+      <td>92</td>
+      <td>92</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>KSKRTPMGF</td>
+      <td>85</td>
+      <td>63</td>
+      <td>25.9%</td>
+    </tr>
+    <tr>
+      <td>NQKLIANQF</td>
+      <td>56</td>
+      <td>53</td>
+      <td>5.4%</td>
+    </tr>
+    <tr>
+      <td>HPVTKYIM</td>
+      <td>48</td>
+      <td>41</td>
+      <td>14.6%</td>
+    </tr>
+    <tr>
+      <td>TPRVTGGGAM</td>
+      <td>45</td>
+      <td>44</td>
+      <td>2.2%</td>
+    </tr>
+    <tr>
+      <td>NYNYLYRLF</td>
+      <td>44</td>
+      <td>42</td>
+      <td>4.6%</td>
+    </tr>
+    <tr>
+      <td>GPRLGVRAT</td>
+      <td>40</td>
+      <td>37</td>
+      <td>7.5%</td>
+    </tr>
+    <tr>
+      <td>RAQAPPPSW</td>
+      <td>36</td>
+      <td>14</td>
+      <td>61.1%</td>
+    </tr>
+  </tbody>
+</table>
 
 Swapped negatives were generated within each partition, by randomly sampling TCRs binding to other peptides with a Levenshtein distance of at least three, until a 1:3 ratio of positives to negatives were achieved. Negative controls were first subjected to a redundancy reduction at a 95% similarity threshold, followed by random partitioning. Within each partition, negative controls were sampled in a 1:2 ratio of positive to negatives for each peptide, bringing the total positive to negative ratio up to 1:5.
 
@@ -173,11 +628,19 @@ The NetTCR framework has so far performed best in a peptide-specific setup where
 
 **Figure 2.:** The peptides are sorted based on the number of positive observations from most abundant to least abundant, with the number of positive observations listed next to the peptide sequence. The unweighted (direct) mean of AUC across all peptides is shown furthest to the left, while the weighted mean is shown second furthest to the left. The weighted mean is weighted by the number of positive observations per peptide and puts more emphasis on the peptides with the most observations. The models included in this figure corresponds to model 1 (NetTCR 2.1 - Pan) and model 2 (NetTCR 2.1 - Peptide) in Supplementary file 1.
 
-## Improving the pan-specific model
+### Improving the pan-specific model
 
-## Updating the model architecture for pan-specific predictions
+#### Updating the model architecture for pan-specific predictions
 
 One potential source of the low performance for the pan-specific model is the high imbalance in the number of observations per peptide resulting in the model focusing/overfitting on the more abundant peptides. To investigate this, we first introduced a dropout-layer with a dropout rate of 0.6 to the architecture for the concatenated output of the max-pooling layer, while also doubling the number of neurons for the dense layer from 32 to 64 to allow for sufficient flow of information. Additionally, this model was rebuilt in Keras (Chollet, 2015) and the stopping criterion was changed from validation loss to validation AUC 0.1. As shown in Figure 3, this resulted in a highly significant increase in performance (bootstrap test resulting in p<0.0001 for all tested metrics).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig3-v1.jpg)
+
+**Figure 3.:** The NetTCR 2.2 models include the updates to the model architecture, with the primary change being the introduction of dropout for the concatenated max-pooling layer (dropout rate = 0.6). Both the introduction of dropout and sample weights are shown to result in considerably improved performance for the pan-specific model. Separate boxplots are shown for all peptides, as well as separately for peptides with at least 100 positive observations and peptides with less than 100 positive observations, to highlight the effect of introducing dropout and sample weight for the least abundant peptides. The models included in this figure corresponds to model 1 (NetTCR 2.1 - Pan), model 3 (NetTCR 2.2 - Pan +Dropout), model 4 (NetTCR 2.2 - Pan +Dropout + Sample Weight), model 2 (NetTCR 2.1 - Peptide) and model 5 (NetTCR 2.2 - Peptide +Dropout) in Supplementary file 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The NetTCR 2.2 models include the updates to the model architecture, with the primary change being the introduction of dropout for the concatenated max-pooling layer (dropout rate = 0.6). Both the introduction of dropout and sample weights are shown to result in considerably improved performance for the pan-specific model. Separate boxplots are shown for all peptides, as well as separately for peptides with at least 100 positive observations and peptides with less than 100 positive observations, to highlight the effect of introducing dropout and sample weight for the least abundant peptides. The models included in this figure corresponds to model 1 (NetTCR 2.1 - Pan), model 3 (NetTCR 2.2 - Pan +Dropout), model 4 (NetTCR 2.2 - Pan +Dropout + Sample Weight), model 2 (NetTCR 2.1 - Peptide), and model 5 (NetTCR 2.2 - Peptide +Dropout) in Supplementary file 1.
 
 To further deal with the imbalance problem, we next introduced a peptide specific sample weight so that the loss was increased for peptides with a low number of positive observations (for details refer to Materials and methods). This is based on the notation that the model then would focus more on the less abundant peptides when updating the weights. As demonstrated in Figure 3, this approach resulted in a further increase in performance for the less abundant peptides, whereas the performance for the more abundant peptides was largely unaffected. Here, a significant increase in performance was observed for the unweighted mean AUC (p=0.0026) and AUC 0.1 (p<0.0001).
 
@@ -185,7 +648,7 @@ Moreover, when only considering the peptides with less than 100 positive observa
 
 Next, the impacts of the updates to the model architecture and training strategy on the performance of peptide-specific models was investigated. As expected, these results (Figure 3 and Figure 3—figure supplement 1) demonstrated a limited gain in performance compared to NetTCR-2.1 - Peptide, which was however significant for all metrics (p=0.0337 for AUC, and p<0.0001 for AUC 0.1 and weighted AUC/AUC 0.1). Interestingly, the updated pan-specific model significantly outperformed the updated peptide-specific models in terms of both unweighted (p<0.0001) and weighted AUC (p=0.0004), and the performance gain was especially observed for the less abundant peptides. However, in terms of AUC 0.1, the updated peptide-specific model (NetTCR-2.2 - Peptide) maintained a superior performance (see Figure 3—figure supplement 1) (p=0.0008 and p<0.0001 for AUC 0.1 and weighted AUC 0.1, respectively). We will later address how to get the best of the two models later in the Pre-training section.
 
-## Reusing redundant data does not lead to better performance
+#### Reusing redundant data does not lead to better performance
 
 The results until now have been generated based on redundancy reduced data. That is data where redundant data have been removed based on a Hobohm-1 like redundancy reduction algorithm (for details see Materials and methods). However, as data is very sparse, one could argue that a better approach would be to reuse redundant data, either by performing clustering when making the data partitions, or by adding back redundant data to the same partition as the data that it was redundant to. To test how such a strategy would affect the performance of the model, a new dataset was created using the latter approach. To keep the performance evaluation fair, redundant data were only re-introduced to the training dataset while the original dataset without redundant observations was used for testing and performance evaluation. The total number of redundant observations for each peptide from the first redundancy reduction is shown in Table 1 (note that those from the second reduction are not added back).
 
@@ -195,15 +658,29 @@ As shown in Figure 4, neither the peptide- nor the pan-specific model benefitted
 
 **Figure 4.:** The AUC is reported in terms of weighted and unweighted mean across all peptides, as well as unweighted mean when the data is split into peptides with at least 100 positive observations, and less than 100 positive observations. The models included in this figure corresponds to model 4 (NetTCR 2.2 - Pan), model 6 (NetTCR 2.2 - Pan - Add Redundant), model 5 (NetTCR 2.2 - Peptide), and model 7 (NetTCR 2.2 - Peptide - Add Redundant) in Supplementary file 1.
 
-## Removing potential outliers from training leads to better performance
+#### Removing potential outliers from training leads to better performance
 
 During the testing of our models, we observed that several peptides consistently had a performance much lower compared to other peptides characterized with similar amounts of data. One thing shared by these peptides is that 10 X sequencing made up the vast majority of the experimental source of the recorded TCRs, as shown in Table 1. For most of the peptides with poor performance (KLG, AVF, IVT, RLR, RLP, SLF), only 10 X sequencing data was available. On the other hand, not all 10 X data are bad, as illustrated by RAKFKQLL which is a high performing peptide only covered by 10 X data (see for instance Supplementary file 1). Further, when comparing the predicted score distributions between positive and negative TCRs, we observe examples of outliers with low scoring positive TCRs and high scoring negative TCRs across all peptides (see Figure 5—figure supplement 1). These observations strongly suggest that the data contain a certain degree of wrongly labeled entries, and that these could be a source to limit the performance of the models. Inspired by the plot in Figure 5—figure supplement 1, outliers were identified by scoring TCRs using the NetTCR-2.2 peptide-specific model, and positive and negative TCR outliers assessed based percentile scores estimated from the contrary TCR pool (for details refer to Materials and methods). Using this approach, TCRs were removed from the training data based on percentile thresholds of 50%, 60%, 70%, 80%, 85%, 90%, and 95% respectively. That is, for a threshold of 70%, a positive TCR was identified as an outlier if it had a predicted score below the lower 70% percentile score range of the negative TCRs for all models predicting on the validation data (four models per partition). Next, pan-specific models were trained using the “limited” data for training and validation, while evaluating the models based on the full dataset.
 
 An overall increase in performance for the models trained on the limited datasets was observed up until the 70th percentile datasets, after which the performance gain stagnated (see Figure 5—figure supplement 2). Since the difference in performance between the 80th and 70th percentile model was statistically insignificant for any of the bootstrap metrics (p>0.08 in all of weight and unweight performance metrics), the 70th percentile dataset for removing outliers from training was selected, since this filtering removed the least amount of data. As seen in Figure 5—figure supplement 3, more observations were, as expected, removed for the peptides with poor performance, indicating a higher presence of outliers for these peptides. The average performance of the model trained on the 70th percentile dataset was significantly higher than the model trained on the full dataset (p=0.0001, p<0.0001, p=0.0054 and p<0.0001 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively). As shown in Figure 5, a higher performance was also consistently observed for the peptides which originated from 10 X sequencing, apart from the RLP peptide, which obtained a slightly lower AUC (–0.0066). While most peptides benefitted from the removal of potential outliers, some peptides did receive a substantially lower performance. It should however be noted that the performance evaluation was conducted on the full dataset, meaning that if a peptide has many actual outliers, the performance may be underestimated, since these outliers are included in the evaluation.
 
-## Improving the peptide-specific models
+![Figure 5.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig5-v1.jpg)
 
-## Pre-training
+**Figure 5.:** Peptides with TCRs originating solely from 10 x sequencing are highlighted in red. The performance was in both cases evaluated per peptide on the full dataset. A positive ΔAUC indicates that the model trained on the limited dataset performs better than the model trained on the full dataset. The performance differences are based on the performance of model 10 and model 4 in Supplementary file 1, with model 4 being the baseline.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The prediction scores are shown for model 5 in Supplementary file 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The percentile refers to the threshold of prediction scores used for removing observations (see Materials and methods), and the higher the percentile is, the more observations are removed from training. The AUC is reported in terms of weighted and unweighted mean across all peptides, as well as unweighted mean when the data is split into peptides with at least 100 positive observations, and less than 100 positive observations. The performance is based on model 4 (All data), model 8 (50th percentile), model 9 (60th percentile), model 10 (70th percentile), model 11 (80th percentile), model 12 (85th percentile), model 13 (90th percentile), and model 14 (95th percentile) in Supplementary file 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig5-figsupp3-v1.jpg)
+
+### Improving the peptide-specific models
+
+#### Pre-training
 
 As described earlier, the pan-specific model was generally observed to excel in terms of AUC, whereas the peptide-specific model was better in terms of AUC 0.1.
 
@@ -211,17 +688,69 @@ To benefit from the strengths of both of these models, a new model architecture 
 
 As shown in Figure 6, this pre-trained model outperformed both the pan- and peptide-specific models. This improvement was found to be highly significant (p<0.0001) across all metrics, when compared to the bootstrap of the pan-specific model, which was also the case when comparing to the peptide-specific model (p<0.0001, p<0.0001, p=0.0008 and p=0.0021 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively). Furthermore, this pre-trained model had higher performance across all metrics than a simple ensemble of the pan-specific and peptide-specific models (data not shown).
 
-## TCRbase ensemble
+![Figure 6.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig6-v1.jpg)
+
+**Figure 6.:** The peptides are sorted based on the number of positive observations from most abundant to least abundant, with the number of positive observations listed next to the peptide sequence. The unweighted (direct) mean of AUC across all peptides is shown furthest to the left, while the weighted mean is shown second furthest to the left. The weighted mean is weighted by the number of positive observations per peptide and puts more emphasis on the peptides with the most observations. The models included in this figure corresponds to model 10 (NetTCR 2.2 - Pan), model 15 (NetTCR 2.2 - Peptide), model 16 (NetTCR 2.2 - Pre-trained) and model 17 (TCRbase ensemble) in Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The peptides are sorted based on the number of positive observations from most abundant to least abundant, with the number of positive observations listed next to the peptide sequence. The unweighted (direct) mean of AUC across all peptides is shown furthest to the left, while the weighted mean is shown second furthest to the left. The weighted mean is weighted by the number of positive observations per peptide and puts more emphasis on the peptides with the most observations. The models included in this figure corresponds to model 10 (NetTCR 2.2 - Pan), model 15 (NetTCR 2.2 - Peptide), model 16 (NetTCR 2.2 - Pre-trained), and model 17 (TCRbase ensemble) in Supplementary file 1.
+
+#### TCRbase ensemble
 
 Earlier work has demonstrated a high performance of simple similarity-based models for prediction of TCR-specificity (Meysman et al., 2023). We therefore wanted to investigate if the predictive power could be further improved by integrating the sequence-similarity based predictions of TCRbase (Montemurro et al., 2022) into our modeling framework. In short, TCRbase makes predictions by calculating a similarity between a given TCR and the positive TCRs for a given peptide in terms of a sum over the paired similarities over the 6 CDR loops (Montemurro et al., 2022). TCRbase was integrated in terms of a simple scaling factor so that the pre-trained CNN model predictions were multiplied by the TCRbase predictions lifted to a power of α>0. The optimal value of α was here estimated based on the validation partitions, and the test partitions were removed from the positive database given to TCRbase, to avoid overfitting and performance overestimation.
 
 As shown in Figure 7a, the use of TCRbase predictions as a scaling factor resulted in a consistent increase in performance across both unweighted mean AUC and AUC 0.1. Although the mean AUC was only affected slightly by this scaling (maximum increase of 0.00212 at α=14), a greater increase in performance was observed in terms of AUC 0.1 (maximum increase of 0.00723 at α=8). Overall, the integration of TCRbase led to a significant improvement in performance for all metrics (p<0.0001). It should however be noted that while the use of the TCRbase scaling generally improved performance, the optimal α factor varied between each validation partition and cross-validation model (see Figure 7b). Nevertheless, the median of the optimal α across the cross-validation models was 10 in the case of AUC 0.1, which strengthened our confidence in using this α as the base scaling factor. Despite these variable observations, we for the sake of consistency stick to an α of 10 for the remaining analysis in this paper. The performance per peptide when using the α=10 scaling is shown in Figure 6 (AUC), as well as Figure 6—figure supplement 1.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig7-v1.jpg)
+
+**Figure 7.:** (A) The predictions of the pre-trained model ensemble (trained on the limited dataset) on the test partitions (full data) were scaled by the kernel similarity to known binders, as given by TCRbase with a weight of (1,1,3,1,1,3), to a power of α. The performance is given as the unweighted mean performance across all 26 peptides, in terms of AUC and AUC 0.1. The dashed line shows the performance when α is set to 10, which strikes a good balance between AUC and AUC 0.1. An α of zero corresponds to the model ensemble without the TCRbase scaling. (B) Boxplot of the optimal alpha scaling factor per cross-validation model, when evaluated in terms of AUC and AUC 0.1, respectively, on the validation partitions. The models used for calculating the performance of the ensembles in this figure are model 16 (NetTCR 2.2 - Pre-trained) and model 21 (TCRbase) in Supplementary file 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** A positive ΔTPR corresponds to an increased performance of the TCRbase ensemble compared to the pre-trained models alone. The models used for this figure are model 16 (NetTCR 2.2 - Pre-trained) and model 17 (TCRbase ensemble) in Supplementary file 1.
+
 We also observed that the optimal value for α varied between peptides, with a slight positive correlation to the performance of TCRbase for the given peptide (see Table 3), suggesting the peptides with high TCRbase performance benefit more from the α rescaling.
+
+**Table 3.**
+ Pearson Correlation Coefficients (PCC) between the optimal α scaling factor and performance per peptide in terms of AUC and AUC 0.1 of the pre-trained CNN model and TCRbase model, respectively, for the validation partitions.Each partition was considered as a separate sample. p-Values for the null hypothesis that the performance and optimal α are uncorrelated are also shown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>PCC to optimal alpha</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CNN AUC</td>
+      <td>–0.1101</td>
+      <td>0.2123</td>
+    </tr>
+    <tr>
+      <td>TCRbase AUC</td>
+      <td>0.3056</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>CNN AUC 0.1</td>
+      <td>–0.0809</td>
+      <td>0.3602</td>
+    </tr>
+    <tr>
+      <td>TCRbase AUC 0.1</td>
+      <td>0.2068</td>
+      <td>0.0183</td>
+    </tr>
+  </tbody>
+</table>
 
 To investigate further how the integration of TCRbase predictions benefitted the performance, we in Figure 7—figure supplement 1 plotted the difference in true positive rates at different false positives rates between the TCRbase ensemble and the pre-trained CNN alone. This figure demonstrates that the benefit from TCRbase mainly consist of increasing the discrimination between binders and non-binders at thresholds corresponding to low FPRs (0 ≤ FPR <= 0.15), whereas the predictions may become slightly worse than without scaling when the threshold for binders are set to that of an FPR higher than 0.3. This result thus suggests that scaling the predictions of neural network models based on similarity to known binders is mostly beneficial when a high specificity is desired.
 
-## Percentile rank rescaling
+#### Percentile rank rescaling
 
 The prediction scores of the final CNN + TCRbase model ensemble fall between 0 and 1 but display substantial score distribution variations between peptides (see Figure 8), which makes it hard to directly compare prediction scores between peptides. A common approach to resolve this is to apply percentile rank scores (Montemurro et al., 2022). Here, we used the CNN + TCRbase model to predict scores for a set of 15,957 negative TCRs for each peptide, which was obtained from the dataset for the IMMREP 2022 workshop (Meysman et al., 2023), and used these scores to calculate a percentile rank for each observation in our test data. Here, the percentile rank is defined as the proportion (in percentage) of negative controls, which scored higher than the given observation. As shown in Figure 8, the percentile ranks for binders between peptides are more similar when compared to the direct prediction scores.
 
@@ -229,9 +758,17 @@ The prediction scores of the final CNN + TCRbase model ensemble fall between 0 a
 
 **Figure 8.:** Peptides with 100% of positive observations coming from 10 X sequencing are highlighted in red. The model used in this figure is model 17 (TCRbase ensemble) in Supplementary file 1.
 
-## Peptide specificity test
+#### Peptide specificity test
 
 The performance evaluations performed so far have focused on the ability to predict whether or not a TCR can bind to a given peptide. Another important aspect is the ability to predict the correct peptide target of a given TCR. To investigate the performance in this context, each positive TCR was scored against all peptides, and a performance metric was estimated in terms of how often the correct TCR-peptide pair was given the highest score (or lowest percentile rank). The result of this analysis is shown in Figure 9, which was conducted on the limited dataset, while excluding observations for low performing peptides with an AUC <0.8 and AUC 0.1<0.65 for the TCRbase ensemble (see Figure 6 and Figure 6—figure supplement 1). This dataset thus consists of 21 peptides, and a random predictor is expected to obtain a performance of 1/19~0.05. The results show that the model clearly outperforms this random baseline for all peptides. Also, a higher performance is observed for the three most abundant peptides in this analysis (GILGFVFTL, RAKFKQLL and ELAGIGILTV). Furthermore, it is seen that there is a slight tendency for a lower percentage of correctly chosen peptide-TCR pairs, as the number of positive TCRs for the training becomes lower. Interestingly, the percentage of correctly chosen pairs correlates very strongly with the AUC and the AUC 0.1 of the peptides. In the case of ranks when using direct prediction, the PCC of the percentage of correct predictions to AUC and AUC 0.1 were 0.740 and 0.830, respectively (sample size of 19 peptides). This high correlation was also observed for percentile ranks, with a PCC of 0.706 and 0.873 to AUC and AUC 0.1, respectively.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig9-v1.jpg)
+
+**Figure 9.:** This was evaluated using the direct prediction score (blue) and the percentile rank (orange) of the TCRbase ensemble. KLGGALQAK, AVFDRKSDAK, NLVPMVATV, CTELKLSDY, RLRAEAQVK, RLPGVLPRA, and SLFNTVATLY were excluded from this analysis due to low predictive performance for these peptides (AUC 0.1<0.65). The numbers next to the peptides indicate the number of positive TCRs in the filtered dataset, and the dashed line indicates the expected value for a random prediction. The predictions are based on model 17 (TCRbase ensemble) in Supplementary file 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** The rank was evaluated on the limited dataset covering 21 peptides, that is excluding the peptides with low performance (KLGGALQAK, AVFDRKSDAK, NLVPMVATV, CTELKLSDY, RLRAEAQVK, RLPGVLPRA and SLFNTVATLY). The models used in this figure corresponds to model 21 (TCRbase), model 10 (NetTCR 2.2 - Pan), model 15 (NetTCR 2.2 - Peptide), model 16 (NetTCR 2.2 - Pre-trained), and model 17 (TCRbase ensemble) in Supplementary file 1.
 
 Furthermore, a tendency of lower average ranks for the pre-trained and TCRbase ensemble models compared to the other models was observed (see Figure 9—figure supplement 1). However, while the application of percentile rank widened the range of average rank per peptide, it generally resulted in a decrease of the median rank for most peptides.
 
@@ -247,11 +784,19 @@ Interestingly, the percentile ranks for the TCR pairs of two of the peptides FED
 
 Generally, it should also be noted that in cases where the correct peptide-TCR is not given the lowest rank, the correct peptide-TCR pair is given a very high percentile rank, most often greater than 20 (refer to FN label in Figure 10). The same observation holds for the top scoring peptides in these cases (top FP in Figure 10). This once again indicates that there might be some potential wrongly labeled outliers in the positive data, even when the data is filtered with the use of the model predictions.
 
-## Performance when data is scarce or absent
+### Performance when data is scarce or absent
 
 Having demonstrated a robust and high performance of the CNN-pan-specific model in the context of TCR specificity towards known peptides, i.e. peptides included in the training data, we next turned to the uttermost challenging question namely prediction of TCR specificity towards novel peptides.
 
 To investigate this, we trained models in a pan-specific leave-one-out setup, where for a given peptide, both positives and negatives generated from that peptide were removed from the training data, thus preventing data leakage. This was done both for the NetTCR 2.1 and the updated NetTCR 2.2 architecture. For this experiment, the limited training dataset with outliers removed was used. This resulted in 26 different models, each of which was evaluated on the peptide dataset for the left-out peptide. As shown in Figure 11, a performance in terms of AUC slightly better than random was observed for most of the peptides. Furthermore, a noticeable improvement in performance was seen for the updated NetTCR 2.2 model. However, the performance was almost completely random when evaluated in terms of AUC 0.1, as can be seen in Figure 11—figure supplement 1. The only peptides with non-random AUC 0.1 performance were FEDLRLLSF and FEDLRVLSF, and this was only the case for the NetTCR-2.2 model architecture. These peptides differ by only a single amino acid, and the result thus indicates that the updated model in this case is able to transfer the knowledge gained from training on another similar peptide, which was not the case with the old architecture.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig11-v1.jpg)
+
+**Figure 11.:** The performance was evaluated in terms of AUC on the full dataset. The performance shown in this figure is based on model 63 (NetTCR 2.1 - Leave one out) and model 19 (NetTCR 2.2 - Leave one out) in Supplementary file 1.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** The performance was evaluated in terms of AUC on the full dataset. The performance shown in this figure is based on model 63 (NetTCR 2.1 - Leave one out) and model 19 (NetTCR 2.2 - Leave one out) in Supplementary file 1.
 
 We next extended the analysis to a leave-most-out setting to investigate how little data is required in order to train models with non-random performance. Here, a number of training datasets were generated by subsampling the limited dataset in order to achieve 5, 10, 15, 20, 25, 50, and 100 positive observations, respectively, per peptide. Swapped negatives were also subsample in this way, keeping a ratio of 1:5 between binders and non-binders. This was only done for the peptides GILGFVFTL, RAKFKQLL, ELAGIGILTV, IVTDFSVIK, LLWNGPMAV, CINGVCWTV, GLCTLVAML and SPRWYFYYL, since they all had substantial performance (AUC 0.1 ≥ 0.65) for the full model and more than 100 positive observations to begin with.
 
@@ -259,19 +804,160 @@ In the case of the pre-trained model, the leave-one-out model was used as the st
 
 As shown in Figure 12 and Figure 12—figure supplement 1 all models demonstrated a non-random performance with as low as 5 positive observations. As expected, a general increase in performance was observed as more and more data was available for training. This was especially the case for the TCRbase ensemble model, which strongly outperformed all other models with an AUC close to 0.8, when the number of training points surpassed 15.
 
+![Figure 12.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig12-v1.jpg)
+
+**Figure 12.:** These models were trained on the following peptides: GILGFVFTL, RAKFKQLL, ELAGIGILTV, IVTDFSVIK, LLWNGPMAV, CINGVCWTV, GLCTLVAML, and SPRWYFYYL. The pre-trained models were based on the leave-one-out model, and afterwards fine-tuned and re-trained on the smaller training datasets. The performance shown is based on the predictions for model 24–51 in Supplementary file 1.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** These models were trained on the following peptides: GILGFVFTL, RAKFKQLL, ELAGIGILTV, IVTDFSVIK, LLWNGPMAV, CINGVCWTV, GLCTLVAML and SPRWYFYYL. The pre-trained models were based on the leave-one-out model, and afterwards fine-tuned and re-trained on the smaller training datasets. The performance shown is based on the predictions for model 24–51 in Supplementary file 1.
+
 Noticeably, the performance of the baseline TCRbase model did not improve nearly as much as the CNN-based models when the amount of training data was increased, suggesting that the CNN models are able to benefit much more from the increased amount of information present in larger datasets.
 
-## External evaluation
+### External evaluation
 
-## IMMREP 2022 benchmark
+#### IMMREP 2022 benchmark
 
 Having defined a novel and improved architecture and framework for training models for prediction of TCR specificity, we next turned to an independent data set to confirm its robustness. Here, we applied the datasets from the IMMREP 2022 workshop (Meysman et al., 2023), keeping all model hyperparameters unchanged compared to the different models described above. As shown in Figure 13, the updated peptide-specific models, NetTCR-2.2 - Peptide, significantly outperformed NetTCR 2.1 (p=0.0367, p=0.0263, p=0.0087 and p=0.0034 for AUC, weighted AUC, AUC 0.1 and weighted AUC 0.1, respectively). With an unweighted average AUC of 0.8476, this model performed on par with the best performing model in terms of AUC at the IMMREP workshop, TCRex αβ (Gielis et al., 2018), with an average unweighted AUC of 0.8473. However, to our surprise, and contrary to our findings on the original dataset of this paper, the NetTCR-2.2 - Pre-trained model underperformed compared to the peptide-specific model, even though part of this performance loss was recovered when introducing the TCRbase scaling on the pre-trained model. Furthermore, the NetTCR-2.2 - Pan model was also found to perform much worse than expected.
+
+![Figure 13.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig13-v1.jpg)
+
+**Figure 13.:** Except for the updated NetTCR 2.2 models (NetTCR 2.2 - Pan, NetTCR 2.2 - Peptide, NetTCR 2.2 - Pre-trained and TCRbase ensemble) the performance of all models is equal to the reported performance in the IMMREP benchmark. The color of the bars indicates the type of input used by the model. Machine-learning models are labeled with black text, whereas distance-based models are labeled with blue text. Note that the TCRbase ensemble is a mixture between a machine-learning and distance-based model. The performance of the NetTCR 2.2 models is based on model 53 (NetTCR 2.2 - Pan), model 54 (NetTCR 2.2 - Peptide), model 55 (NetTCR 2.2 - Pre-trained), and model 56 (TCRbase ensemble) in Supplementary file 2. The performance of the remaining models are based on the values listed in the IMMREP 2022 GitHub repository at https://github.com/viragbioinfo/IMMREP_2022_TCRSpecificity/blob/main/evaluation/microaucs.csv.
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/93934/elife-93934-fig13-figsupp1-v1.jpg)
+
+**Figure 13—figure supplement 1.:** The updated NetTCR 2.2 models are included to the right. The color of the bars indicates the type of input used by the model. Machine-learning models are labeled with black text, whereas distance-based models are labeled with blue text. Note that the TCRbase ensemble is a mixture between a machine-learning and distance-based model. The mean rank of the NetTCR 2.2 models are based on model 53 (NetTCR 2.2 - Pan), model 54 (NetTCR 2.2 - Peptide), model 55 (NetTCR 2.2 - Pre-trained), and model 56 (TCRbase ensemble) in Supplementary file 2. The mean rank of the remaining models are based on the values listed in the IMMREP 2022 GitHub repository at https://github.com/viragbioinfo/IMMREP_2022_TCRSpecificity/blob/main/evaluation/epitoperank.csv.
 
 We further evaluated the peptide specificity of the models by calculating the average rank of each peptide in the benchmark specificity test dataset, and compared the ranks to those of the other methods included in the IMMREP benchmark. As is shown in Figure 13—figure supplement 1, also here the average ranks of the updated models were found to be comparable to the best performing models in the IMMREP benchmark.
 
 To understand the source of the relatively poor performance of the pan-specific models in this benchmark, we further investigated the IMMREP datasets. Even though the construction of IMMRep datasets was made to ensure that no positive TCR was shared between the training and test data sets, inspection of the data revealed that swapped negatives were present in the training data, which originated from positive peptides in the test data. When a pan-specific model is trained on such data, this results in certain TCRs being ‘seen’ only as non-binders only during the model training. Given this, the model will likely assign such TCRs as negative when asked to predict the test data. This problem is limited to pan-specific models hence explaining the reduced performance compared to the peptide-specific model.
 
 Further, as shown in Table 4, the degree of redundancy between training and test data was relatively high for many of the peptides. This redundancy between the IMMREP test and training data may result in test performance overestimation since the models observe similar TCR-peptide combinations during training.
+
+**Table 4.**
+ Degree of redundancy between the IMMREP test and training data, when using a 95% kernel similarity threshold for redundancy within each peptide.The redundancy reduction was performed on both positive and negative observations. The counts and percentages, however, only refers to the positive observations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>Pre reduction count</th>
+      <th>Post reduction count</th>
+      <th>Percent redundant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All</td>
+      <td>619</td>
+      <td>467</td>
+      <td>24.56%</td>
+    </tr>
+    <tr>
+      <td>GILGFVFTL</td>
+      <td>136</td>
+      <td>58</td>
+      <td>57.35%</td>
+    </tr>
+    <tr>
+      <td>NLVPMVATV</td>
+      <td>69</td>
+      <td>54</td>
+      <td>21.74%</td>
+    </tr>
+    <tr>
+      <td>YLQPRTFLL</td>
+      <td>67</td>
+      <td>53</td>
+      <td>20.90%</td>
+    </tr>
+    <tr>
+      <td>TTDPSFLGRY</td>
+      <td>49</td>
+      <td>47</td>
+      <td>4.08%</td>
+    </tr>
+    <tr>
+      <td>LLWNGPMAV</td>
+      <td>47</td>
+      <td>44</td>
+      <td>6.38%</td>
+    </tr>
+    <tr>
+      <td>CINGVCWTV</td>
+      <td>46</td>
+      <td>46</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>GLCTLVAML</td>
+      <td>37</td>
+      <td>23</td>
+      <td>37.84%</td>
+    </tr>
+    <tr>
+      <td>ATDALMTGF</td>
+      <td>26</td>
+      <td>22</td>
+      <td>15.38%</td>
+    </tr>
+    <tr>
+      <td>LTDEMIAQY</td>
+      <td>25</td>
+      <td>23</td>
+      <td>8.00%</td>
+    </tr>
+    <tr>
+      <td>SPRWYFYYL</td>
+      <td>24</td>
+      <td>24</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>KSKRTPMGF</td>
+      <td>22</td>
+      <td>13</td>
+      <td>40.91%</td>
+    </tr>
+    <tr>
+      <td>NQKLIANQF</td>
+      <td>15</td>
+      <td>15</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>TPRVTGGGAM</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>HPVTKYIM</td>
+      <td>12</td>
+      <td>10</td>
+      <td>16.67%</td>
+    </tr>
+    <tr>
+      <td>NYNYLYRLF</td>
+      <td>12</td>
+      <td>9</td>
+      <td>25.00%</td>
+    </tr>
+    <tr>
+      <td>GPRLGVRAT</td>
+      <td>11</td>
+      <td>11</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>RAQAPPPSW</td>
+      <td>9</td>
+      <td>3</td>
+      <td>66.67%</td>
+    </tr>
+  </tbody>
+</table>
 
 When comparing the per peptide AUC of all models to the per peptide redundancy between training- and test data, we observed a Pearson correlation of 0.428 (sample size of 370), which was a much stronger correlation than observed between the number of training observations and AUC (0.062).
 
@@ -285,32 +971,32 @@ To address these issues, we applied the redundancy reduction and swapped negativ
 
 Here, we have presented an improved NetTCR framework for prediction of TCR specificity including updates to the training data, modeling architecture and training setup, with the goal of increasing the overall performance and generalization power of the model. First and foremost, the update includes a substantial expansion of the training data to 26 peptides, up from the six peptides available for predictions in NetTCR 2.1. The model updates included dropout and peptide-specific sample weights to deal with data imbalance, forcing the model to focus more evenly on all peptides, and resulted in vastly improved performance in the pan-specific setup. This performance gain was particularly pronounced for peptides with few observed binding TCRs. The updated architecture in the form of more hidden units in the dense layer, the change from sigmoid to ReLu activation for the max-pooling, and the introduction of dropout further improved the NetTCR model. A variation of the updated architecture was also investigated, which combined the properties of the pan-specific and peptide-specific models, by having two separate CNN blocks where one block was pre-trained separately in pan-specific setup, followed by training the second block in a peptide-specific setup. This pre-training setup resulted in an additional increase in performance, mainly for the least abundant peptides.
 
-## How to best use available data for training
+### How to best use available data for training
 
 The scarness of paired TCR data means that it often could be tempting to include all available data to the fullest, and include all redundant data for training. However, as we show here, the addition of redundant data in the training does not lead to improved performance. In fact, we found that the addition of redundant data may cause pan-specific models to underperform if the peptide imbalance of data is not accounted for, since the inclusion of redundant data often results in a further increased peptide imbalance.
 
 The observation that the predictive performance for some peptides was much lower than expected given the amount of available training data, led us to believe that outliers in the form of false positives might be a potential issue. Furthermore, many of these peptides had in common that the main source of data was 10 X sequencing (10x Genomics, 2020), a platform known to have a high proportion of false annotations (Zhang et al., 2021; Povlsen et al., 2023). To deal with this issue, we implemented a machine learning driven approach for outlier detection using the predictions of the peptide-specific NetTCR models to identify observations which repeatedly received very poor predictions. The removal of these potential outliers from the training led to significantly improved test performance. It should also be noted that the data applied in the study included denoising for most of the 10 X data in the form of ITRAP (Povlsen et al., 2023), which together with ICON Zhang et al., 2021 have earlier been shown to properly remove outliers (Montemurro et al., 2023). Nevertheless, our results suggest that some outliers had escaped these denoising steps, indicating that denoising methods should still be improved upon. While the use of our model predictions to remove outliers resulted in improved performance, we believe that this approach should only be considered a proof-of-concept, and that more elaborate ways to identify outliers merit further investigation.
 
-## Integrating distance-based methods can improve performance of ML models
+### Integrating distance-based methods can improve performance of ML models
 
 Inspired by the observation that sequence similarity distance-based models often achieve very high performance for the prediction of TCR specificity (Meysman et al., 2023), we investigated if integrating TCRbase predictions could improve the performance of our models. We integrated TCRbase by scaling the CNN prediction with the TCRbase prediction to a power of α, and found that the performance of this ensemble (Pre-trained +TCRbase) achieved a significantly improved performance in terms of AUC and AUC 0.1. Interestingly, further inspections revealed that the increased performance mainly resulted from improved discrimination of binders and non-binders when the binding-threshold was set to result in a low FPR. Given how we are often interested in keeping the FPR very low for TCR specificity predictions, the simple integration of TCRbase can thus vastly benefit many real-world use-cases for TCR specificity predictions. While we decided to use a general α of 10 for the TCRbase scaling, it is possible that performance could be improved further, if α is allowed to be flexible depending on the peptide. For example, one could imagine that a peptide with a very high TCRbase predictive performance could benefit from a higher α, compared to another peptide with a lower TCRbase performance. Furthermore, the amount of positive data also influences which α is optimal. It would therefore be interesting to further investigate this, as this could potentially lead to further improved performance. Finally, investigating the relation between TPR and FPR at different values of α could also benefit many actual use-cases, considering that the optimal alpha value could be determined based on the desired maximum FPR rate.
 
-## Predictions for unseen peptide
+### Predictions for unseen peptide
 
 It has repeatedly been shown that predicting TCR specificity for “unseen” peptides is extremely hard, especially for peptides that are very dissimilar to the peptides included in the training data (Moris et al., 2021; Grazioli et al., 2022). Investigating the performance of the pan-specific models in a leave-one-out setup revealed that the performance on unseen peptides overall remained very poor, also for the updated NetTCR-2.2 model. While the performance for NetTCR-2.2 in terms of AUC was generally better than random, the performance in terms of AUC 0.1 was very close to random, severely limiting its general potential use. Nevertheless, we observed that the performance of NetTCR 2.2 in the leave-one-out setup was improved when compared to NetTCR 2.1, especially for two peptides sharing a high mutual similarity. While the performance for these two peptides was still low compared to that observed in the full training setup, this result affirms that given a broad enough peptide coverage, pan-specific models have the potential to predict binding also for unseen peptides.
 
-## Improved performance when data is scarce
+### Improved performance when data is scarce
 
 While high performance for unseen peptides so far remains very challenging, another important issue is to boost performance for peptides with relatively few observations. Performing a leave-most-data-out, a substantial increase in performance was observed compared to the leave-out-out experiment with as little as five training observations, and already with 15 observations, a satisfactory performance was observed. This is in great contrast to earlier work, where a number of ~150 was suggested to be required for modeling TCR specificity (Montemurro et al., 2021). These results thus suggest that the pre-trained models can beneficially be used as seeds for the development of peptide-specific models allowing for rapid fine-tuning to new data.
 
 We also observed that the TCRbase ensemble based on the pre-trained model consistently outperformed any of the other models, both when data was very scarce, but also as the amount of training data was increased, highlighting the benefits of integrating distance-based methods for predictions. As a final note, we would also expect that the discrepancy between the performance of the peptide-specific- and pre-trained model will become larger as the number of peptides to train on increases in the future, as a pan-specific CNN block trained on a more diverse dataset should allow for better generalization.
 
-## Performance on IMMREP 2022 benchmark
+### Performance on IMMREP 2022 benchmark
 
 To compare the updated models with other models for TCR specificity predictions, we applied the modeling framework to the dataset from the IMMREP 2022 benchmark (Meysman et al., 2023). Here, we observed that the updated peptide-specific model performed on par with the best models in the benchmark. We however also observed that the pre-trained model performed worse than expected. Careful inspection of the data revealed that swapped negatives had been generated across the test and training data, meaning that some TCRs were only seen as negatives in the training, whereas they could be positive in the test data, albeit for a different peptide. This problem strongly affected the pre-trained model, which had a pan-specific component. Furthermore, since redundancy was only dealt with by removing duplicate TCRs, redundancy in both training and test data was observed, resulting in a certain degree of performance overestimation. This was for instance reflected in an unusually high performance for the peptides which had higher degrees of redundancies between training and test data.
 
 To deal with these problems, we performed redundancy reduction on the training data identical to what was done for our novel extended data set, and made sure to only generate swapped negatives from TCRs within a given partition. We then trained and evaluated our models using the nested cross-validation approach on this redundancy reduced data. Here, we recovered the earlier conclusion that the pre-trained models outperformed the peptide-specific models, and that the integration of TCRbase led to the highest overall performance. These results thus strongly underline a problematic issue with data redundancy and the leakage of swapped negative TCR between training and test datasets present in the IMMREP benchmark. This is of high concern, since these properties, as shown here, are in particular detrimental for pan-specific models. Considering this, we encourage the creation of a new benchmark which takes these issues into account, while ideally also expanding on the number of peptides present for predictions.
 
-## Conclusion
+### Conclusion
 
 In this work, we have demonstrated how prediction of TCR specificity can be greatly improved by introducing minor but critical updates to the NetTCR training and modeling framework. While also improving on the peptide-specific models, these updates in particular boost the performance of pan-specific models. In addition, we show that pre-training models on pan-specific data, followed by training in a peptide-specific setup, leads to substantially improved performance, especially when the amount of data is low. Scaling the predictions from NetTCR with similarity to known binders is also shown to boost performance. Further, we have for the first time demonstrated how machine learning models can be designed and applied for rational data denoising in the context of TCR specificity data. The performance for ‘unseen’ peptides was found to be overall low. However, the results demonstrated an encouraging tendency of high predictive power in cases of ‘unseen’ peptides with high similarity to the training data.

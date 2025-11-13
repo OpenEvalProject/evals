@@ -11,17 +11,17 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Center for Mechanical Excitability, The University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Department of Biochemistry and Molecular Biology, The University of Chicago Chicago United States
-3. https://ror.org/024mw5h28 Institute for Neuroscience, The University of Chicago Chicago United States
-4. https://ror.org/024mw5h28 Institute for Biophysical Dynamics, The University of Chicago Chicago United States
-5. https://ror.org/024mw5h28 Prizker School for Molecular Engineering, The University of Chicago Chicago United States
+1. Center for Mechanical Excitability, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Department of Biochemistry and Molecular Biology, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Institute for Neuroscience, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Institute for Biophysical Dynamics, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+5. Prizker School for Molecular Engineering, The University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
 ## Abstract
 
-Prestin responds to transmembrane voltage fluctuations by changing its cross-sectional area, a process underlying the electromotility of outer hair cells and cochlear amplification. Prestin belongs to the SLC26 family of anion transporters yet is the only member capable of displaying electromotility. Prestin’s voltage-dependent conformational changes are driven by the putative displacement of residue R399 and a set of sparse charged residues within the transmembrane domain, following the binding of a Cl − anion at a conserved binding site formed by the amino termini of the TM3 and TM10 helices. However, a major conundrum arises as to how an anion that binds in proximity to a positive charge (R399), can promote the voltage sensitivity of prestin. Using hydrogen–deuterium exchange mass spectrometry, we find that prestin displays an unstable anion-binding site, where folding of the amino termini of TM3 and TM10 is coupled to Cl − binding. This event shortens the TM3–TM10 electrostatic gap, thereby connecting the two helices, resulting in reduced cross-sectional area. These folding events upon anion binding are absent in SLC26A9, a non-electromotile transporter closely related to prestin. Dynamics of prestin embedded in a lipid bilayer closely match that in detergent micelle, except for a destabilized lipid-facing helix TM6 that is critical to prestin’s mechanical expansion. We observe helix fraying at prestin’s anion-binding site but cooperative unfolding of multiple lipid-facing helices, features that may promote prestin’s fast electromechanical rearrangements. These results highlight a novel role of the folding equilibrium of the anion-binding site, and help define prestin’s unique voltage-sensing mechanism and electromotility.
+Prestin responds to transmembrane voltage fluctuations by changing its cross-sectional area, a process underlying the electromotility of outer hair cells and cochlear amplification. Prestin belongs to the SLC26 family of anion transporters yet is the only member capable of displaying electromotility. Prestin’s voltage-dependent conformational changes are driven by the putative displacement of residue R399 and a set of sparse charged residues within the transmembrane domain, following the binding of a Cl− anion at a conserved binding site formed by the amino termini of the TM3 and TM10 helices. However, a major conundrum arises as to how an anion that binds in proximity to a positive charge (R399), can promote the voltage sensitivity of prestin. Using hydrogen–deuterium exchange mass spectrometry, we find that prestin displays an unstable anion-binding site, where folding of the amino termini of TM3 and TM10 is coupled to Cl− binding. This event shortens the TM3–TM10 electrostatic gap, thereby connecting the two helices, resulting in reduced cross-sectional area. These folding events upon anion binding are absent in SLC26A9, a non-electromotile transporter closely related to prestin. Dynamics of prestin embedded in a lipid bilayer closely match that in detergent micelle, except for a destabilized lipid-facing helix TM6 that is critical to prestin’s mechanical expansion. We observe helix fraying at prestin’s anion-binding site but cooperative unfolding of multiple lipid-facing helices, features that may promote prestin’s fast electromechanical rearrangements. These results highlight a novel role of the folding equilibrium of the anion-binding site, and help define prestin’s unique voltage-sensing mechanism and electromotility.
 
 ## Introduction
 
@@ -37,15 +37,161 @@ Here, we studied the influence of anion-binding on the dynamics and structural c
 
 We carried out HDX measurements on dolphin prestin and mouse SLC26A9 solubilized in glyco-diosgenin (GDN) at either pDread 7.1, 25°C or pDread 6.1, 0°C (Table 1). The observed HDX rates reported on the stability, as exchange occurred mostly via EX2 kinetics (Appendix 1). Employment of the two conditions increased the effective dynamic range of the HDX measurement to span seven log units, allowing us to determine the stability of both the highly and minimally stable regions within the protein (Hamuro, 2021). To properly combine the two datasets, the stability of the protein should be the same under the two conditions, and this was supported by the exchange rates scaling with kchem (intrinsic exchange rates) (Bai et al., 1993; Nguyen et al., 2018; Appendix 1—figure 1).
 
+**Table 1.**
+ Biochemical and statistical details for HDX.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Prestin, Cl−</th>
+      <th>Prestin, HEPES (apo)</th>
+      <th>Prestin, SO42−</th>
+      <th>Prestin, salicylate</th>
+      <th>Prestin, nanodisc, Cl−</th>
+      <th>Slc26a9, Cl−</th>
+      <th>Slc26a9, HEPES (apo)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HDX reaction details</td>
+      <td>360 mM NaCl, 20 mM Tris (NaPi for pDread 6.1, 0°C), 3 mM DTT, 1 mM EDTA, 0.02% GDN. pDread 7.1, 25°C or pDread 6.1, 0°C</td>
+      <td>150 mM HEPES, 0.02% GDN. pDread 7.1, 25°C</td>
+      <td>140 mM Na2SO4, 5 mM MgSO4, 20 mM NaPi, 0.02% GDN. pDread 7.1, 25°C or pDread 6.1, 0°C</td>
+      <td>140 mM Na2SO4, 5 mM MgSO4, 50 mM salicylate, 20 mM NaPi, 0.02% GDN. pDread 7.1, 25°C or pDread 6.1, 0°C</td>
+      <td>20 mM Tris (NaPi for pDread 6.1, 0°C), 150 mM NaCl. pDread 7.1, 25°C or pDread 6.1, 0°C</td>
+      <td>360 mM NaCl, 20 mM Tris (NaPi for pD 6.5, 0°C), 3 mM DTT, 1 mM EDTA, 0.02% GDN. pDread 7.1, 25°C or pDread 6.1, 0°C</td>
+      <td>150 mM HEPES, 0.02% GDN. pDread 7.1, 25 °C</td>
+    </tr>
+    <tr>
+      <td>HDX time course (*: replicated. Times in parenthesis: times in pDread 7.1, 25°C after correcting for the kchem difference)</td>
+      <td>pDread 6.1, 0°C: 1 s (0.007 s), 10 s (0.07 s)*, 90 s (0.6 s)*; pDread 7.1, 25°C: 6 s, 10 s*, 30 s, 90 s*, 5 min, 15 min*, 45 min, 150 min*, 27 hr*</td>
+      <td>pDread 7.1, 25°C: 10 s*, 90 s*, 5 min*, 15 min*, 150 min*, 27 hr*</td>
+      <td>pDread 6.1, 0°C: 1 s (0.007 s), 10 s (0.07 s), 90 s (0.6 s); pDread 7.1, 25°C: 10 s, 30 s, 90 s, 5 min, 15 min, 150 min, 27 hr</td>
+      <td>pDread 6.1, 0°C: 1 s (0.007 s), 90 s (0.6 s); pDread 7.1, 25°C: 10 s, 90 s, 5 min, 15 min, 150 min, 27 hr</td>
+      <td>pDread 6.1, 0°C: 90 s (0.6 s); pDread 7.1, 25°C: 10 s, 90 s, 15 min, 150 min, 27 hr</td>
+      <td>pDread 6.1, 0°C: 1 s (0.007 s), 10 s (0.07 s)*, 90 s (0.6 s)*; pDread 7.1, 25°C: 10 s*, 30 s, 90 s*, 5 min, 15 min*, 150 min*, 27 hr*</td>
+      <td>pDread 7.1, 25 °C: 10 s*, 90 s*, 15 min*, 150 min*, 27 h*</td>
+    </tr>
+    <tr>
+      <td>HDX control samples</td>
+      <td colspan="5">Non-deuterated control; in-exchange control; maximally labeled control</td>
+      <td colspan="2">Non-deuterated control; in-exchange control; maximally labeled control</td>
+    </tr>
+    <tr>
+      <td>In- and back-exchange, mean/IQR</td>
+      <td colspan="5">In-exchange: 3.1%/2.0%; back-exchange: 27%/14%</td>
+      <td colspan="2">In-exchange: 2.5%/1.9%; back-exchange: 29%/17%</td>
+    </tr>
+    <tr>
+      <td>No. of peptides</td>
+      <td>266 (TMD: 95; cytosolic: 171)</td>
+      <td>265 (TMD: 94; cytosolic: 171)</td>
+      <td>266 (TMD: 95; cytosolic: 171)</td>
+      <td>265 (TMD: 94; cytosolic: 171)</td>
+      <td>256 (TMD: 85; cytosolic: 171)</td>
+      <td>338 (TMD: 85; cytosolic: 253)</td>
+      <td>335 (TMD: 82; cytosolic: 253)</td>
+    </tr>
+    <tr>
+      <td>Sequence coverage</td>
+      <td>83% (TMD: 75%; cytosolic: 95%)</td>
+      <td>83% (TMD: 75%; cytosolic: 95%)</td>
+      <td>83% (TMD: 75%; cytosolic: 95%)</td>
+      <td>83% (TMD: 74%; cytosolic: 95%)</td>
+      <td>79% (TMD: 67%; cytosolic: 95%)</td>
+      <td>81% (TMD: 68%; cytosolic: 96%)</td>
+      <td>81% (TMD: 68%; cytosolic: 96%)</td>
+    </tr>
+    <tr>
+      <td>Average peptide length/redundancy</td>
+      <td>12.2/4.3</td>
+      <td>12.2/4.3</td>
+      <td>12.2/4.3</td>
+      <td>12.2/4.3</td>
+      <td>12.2/4.1</td>
+      <td>12.5/5.3</td>
+      <td>12.5/5.3</td>
+    </tr>
+    <tr>
+      <td>Replicates</td>
+      <td>2 (Biological)</td>
+      <td>3 (Biological)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3 (Technical)</td>
+      <td>3 (Technical)</td>
+    </tr>
+    <tr>
+      <td>Repeatability (TM peptides only)</td>
+      <td>0.69%/0.06 Da (average SD of the Δ%D/Δ#D between the duplicates)</td>
+      <td>0.93%/0.09 Da (average SD)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>0.64%/0.06 Da (average SD)</td>
+      <td>0.60%/0.05 Da (average SD)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Significant differences in HDX (ΔHDX &gt; X Da, TM peptides only)</td>
+      <td>N/A</td>
+      <td>0.22 Da(95% CI)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>0.14 Da(95% CI)</td>
+      <td>0.13 Da(95% CI)</td>
+    </tr>
+    <tr>
+      <td colspan="2">0.17 Da(95% CI)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td colspan="2">0.11 Da(95% CI)</td>
+    </tr>
+  </tbody>
+</table>
+
 The HDX data were presented in terms of the relevant region with the specific sequence and peptides noted in parentheses (Materials and methods), for example, the N-terminus of prestin’s TM10 (Region394–397: Peptide392–397). Although we mostly focused on the anion-binding site, we also obtained comparative thermodynamic information throughout the two proteins (Appendix 2).
 
-## Prestin’s anion-binding site is less stable than SLC26A9s
+### Prestin’s anion-binding site is less stable than SLC26A9s
 
 To examine the effect of anion binding to the dynamics of prestin and SLC26A9, we dialyzed the proteins purified in Cl− into a HEPES buffer lacking other anions. Cl− removal resulted in distinct stability changes for prestin and SLC26A9, manifested by significant HDX acceleration for prestin while mild HDX slowing for SLC26A9 (Figure 1, Figure 1—figure supplement 1). These HDX effects indicate that anion binding induced global stabilization for prestin while slight destabilization for SLC26A9 (Figure 1).
 
-Among the observed HDX responses for prestin, the HDX acceleration at the anion-binding pocket appeared to be the most pronounced and indicates local stabilization induced by anion binding (Figure 2A). In detail, HDX accelerated by 20-fold for the N-termini of both TM3 (Region136–142: Peptide134–142 + 9 other peptides) and TM10 (Region394–397: Peptide392–397) (Figure 2A, Figure 1—figure supplement 2.22–2.31). This HDX change translates to a difference in free energy of unfolding (ΔΔG) by at least 1.8 kcal/mol; ΔΔGCI bindingbindingsite=1.8kcal/mol. At least four residues in the middle of TM1 exhibited faster HDX (Region90–101: Peptide88–101 + 10 other peptides), collectively by 350-fold;ΔΔGCI bindingTM1=3.5kcal/mol (Figure 1A, Figure 1—figure supplement 2.6–2.16). The TM1 region with accelerated HDX included L93, Q97, and F101, residues that are known to participate in the binding pocket (Bavi et al., 2021; Ge et al., 2021; Schaechinger et al., 2011).
+![Figure 1.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig1-v1.jpg)
 
-SLC26A9 exhibited similar stability as prestin in Cl− for the majority of the TMD, except for the N-terminal TM3 (Region131–134: Peptide129–134) which exchanged at least 100-fold slower than that of prestin’s (Region136–142: Peptide134–142) (Figure 2). This difference in HDX points to a relatively unstable anion-binding site of prestin as compared to SLC26A9; ΔΔGSLC26A9−prestinN−terminalTM3=2.8kcal/mol, and was also seen in the site-resolved protection factors (PFs) that were obtained by deconvoluting the HDX-MS data using PyHDX (Smit et al., 2021; Figure 2—figure supplement 1).
+**Figure 1.:** (A) HDX data analysis to obtain (B) and (C). One example peptide is shown in cases where HDX becomes faster or slower in HEPES (the putative apo state) compared to in Cl−. Deuteration levels are obtained from the mass spectra. Here, spectra for the undeuterated peptide (gray) and after 5 min HDX labeling in Cl− (black) and HEPES (green) are shown as an example. The resulting deuterium uptake plots are used to generate the differential deuteration heatmaps in (B). Changes in free energy of unfolding (ΔΔG) in (C) are calculated after fitting the data with a stretched exponential (Materials and methods) (Hamuro, 2021). (B) Heatmaps showing the difference in deuteration levels at each labeling time for all transmembrane domain (TMD) peptides of prestin and SLC26A9 measured in HEPES compared to Cl−. Peptide sequences are displayed on the y-scale and legible through the high-resolution image. (C) The ΔΔGs in HEPES compared to Cl− for full-length prestin and SLC26A9 mapped onto the structure (PDB 7S8X and 6RTC). Red and blue indicate increased and decreased stability upon Cl− binding, respectively. Following regions of the left subunits are shown as low transparency to highlight the binding site – prestin: TM5 and TM12–14; SLC26A9: TM5 and TM13–14. Regions with no fitting results are in gray.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A hybrid statistical analysis is employed (Hageman and Weis, 2019). Each data point represents one time point of a peptide. The horizontal axis shows the difference between the observed mean peptide masses ($ΔHX¯$) for the protein in HEPES and in Cl−. The vertical axis shows Welch’s t-test p-values. The dashed horizontal lines denote p-value significance limits defined at α = 0.05. The dashed vertical lines denote the $ΔHX¯$ significance threshold corresponding to α = 0.05, calculated to be ±0.17 and ±0.11 Da for (A) prestin and (B) SLC26A9, respectively. Data points in the red and blue areas (i.e., exceeding significance limits in both dimensions) represent peptides that show statistical significance and are stabilized and destabilized upon Cl− binding, respectively. Colored data points correspond to colored regions in the corresponding transmembrane domain (TMD) structure below.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Two deuterium uptake plots are shown for each peptide – left plot: Cl− (black) and HEPES (red); right plot: Cl− (black), SO42− (green), salicylate (blue), and prestin in nanodisc in Cl− (orange). Except for the orange curves, all other HDX data were collected on glyco-diosgenin (GDN)-solublized prestin. Replicates (circles, triangles, and squares): 2 in Cl−, 3 in HEPES, biological. Peptides covering TM9 (S2.88–S2.91) exhibited EX1 behavior in HEPES (Appendix 1—figure 2).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** One deuterium uptake plot is shown for each peptide – Cl− (black) and HEPES (red). Three technical replicates are shown as circles, triangles, and squares. All HDX data were collected on glyco-diosgenin (GDN)-solubilized SLC26A9.
+
+Among the observed HDX responses for prestin, the HDX acceleration at the anion-binding pocket appeared to be the most pronounced and indicates local stabilization induced by anion binding (Figure 2A). In detail, HDX accelerated by 20-fold for the N-termini of both TM3 (Region136–142: Peptide134–142 + 9 other peptides) and TM10 (Region394–397: Peptide392–397) (Figure 2A, Figure 1—figure supplement 2.22–2.31). This HDX change translates to a difference in free energy of unfolding ($ΔΔG$) by at least 1.8 kcal/mol; $ΔΔG_{CI binding}^{bindingsite}=1.8kcal/mol$. At least four residues in the middle of TM1 exhibited faster HDX (Region90–101: Peptide88–101 + 10 other peptides), collectively by 350-fold;$ΔΔG_{CI binding}^{TM1}=3.5kcal/mol$ (Figure 1A, Figure 1—figure supplement 2.6–2.16). The TM1 region with accelerated HDX included L93, Q97, and F101, residues that are known to participate in the binding pocket (Bavi et al., 2021; Ge et al., 2021; Schaechinger et al., 2011).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig2-v1.jpg)
+
+**Figure 2.:** Cl− binding stabilizes prestin’s anion-binding pocket (A) but mildly affects SLC26A9s (B). The structure shows the anion-binding pocket (TM1, TM3, and TM10) with the putative position of the bound Cl−. Colored regions correspond to peptides whose deuterium uptake plots are shown when the protein is in Cl− (black) and in HEPES (red). Prolines are colored in gray. Gray dashed lines indicate deuteration levels in the full-D control. Data from two and three biological replicates are shown for prestin in Cl− and HEPES, respectively. Data from three technical replicates are shown for SLC26A9. Replicates are shown as circles, triangles, and squares. Some replicates are superimposable and hence not observable. The symbols (* and #) in (A.b) denote data points used in Figure 3B. (C) Sequence alignment using Clustal Omega of prestin and close SLC26 transporters across species for the anion-binding pocket. Shades of blue indicate degree of conservation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Site-resolved protection factors in a log scale (logPF) for the transmembrane domains (TMDs) of prestin and SLC26A9 with residue numbers denoted. (B) The difference in logPF (∆logPF) mapped onto the prestin structure. Gray represents regions with no fitting data available. TM5 and TM12–14 do not have fitting data and are not shown to highlight the anion-binding site. Fitting was done using PyHDX (Smit et al., 2021) on hydrogen–deuterium exchange mass spectrometry (HDX-MS) data measured for both proteins in Cl−.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sequence alignment for the N-terminus of TM3 for prestin across species. A conserved threonine at residue 136 in prestin from other vertebrates is replaced with a proline in mammalian prestin. (B) Molecular simulations of thermo-denaturation of prestin conducted with Upside (Jumper et al., 2018a; Jumper et al., 2018b) (Materials and methods). A P136T mutation largely increases the stability of TM3 but mildly decreases TM10 stability, as compared to wild-type prestin.
+
+SLC26A9 exhibited similar stability as prestin in Cl− for the majority of the TMD, except for the N-terminal TM3 (Region131–134: Peptide129–134) which exchanged at least 100-fold slower than that of prestin’s (Region136–142: Peptide134–142) (Figure 2). This difference in HDX points to a relatively unstable anion-binding site of prestin as compared to SLC26A9; $ΔΔG_{SLC26A9−prestin}^{N−terminalTM3}=2.8kcal/mol$, and was also seen in the site-resolved protection factors (PFs) that were obtained by deconvoluting the HDX-MS data using PyHDX (Smit et al., 2021; Figure 2—figure supplement 1).
 
 Compared to the 20- to 350-fold HDX acceleration observed at prestin’s binding site upon Cl− removal, HDX of SLC26A9’s binding pocket was only affected mildly (Figure 2B). These included a slight slowing in HDX for the N-termini of TM3 (Region131–134: Peptide129–134) and TM10 (Region392–395: Peptide390–395) (Figure 2B). The TM1 (Region72–92: Peptide83–92 + 10 other peptides) continued to remain undeuterated even after 27 hr (Figure 2, Figure 1—figure supplement 3.4–3.14), emphasizing the intrinsic high stability of SLC26A9’s anion-binding pocket.
 
@@ -53,25 +199,25 @@ Although the anion-binding pocket is highly conserved and structurally similar a
 
 In addition to the binding pocket, we observed stability changes in various regions of the TMDs for prestin and SLC26A9 that may explain their distinct functions. For prestin, anion binding resulted in stabilization for the intracellular cavity but destabilization for regions facing the extracellular milieu (Figure 1C, Figure 1—figure supplement 1A). The stabilizing effects for the cytosol-facing regions were manifested by HDX acceleration upon Cl− removal at the linker between TM2 and TM3, and the intracellular portions of TM7, TM8, and TM9 (Region128–135, Region284–294, and Region354–375) (Figure 1—figure supplement 2.22–2.27, 2.58–2.64, 2.82–2.87). In contrast, HDX slowed for the regions facing the extracellular environment, namely the extracellular ends of TM5b, TM6, and TM7 (Region250–262 and Region309–316) (Figure 1—figure supplement 2.45–2.51, 2.66–2.68, 2.71). However, for SLC26A9, anion binding destabilized the cytosol-facing regions, as HDX slowed by ~fivefold upon Cl− removal for the intracellular ends of TM8, TM9, and TM12 (Region351–369 and Region440–455) (Figure 1C, Figure 1—figure supplement 1B, Figure 1—figure supplement 3.62–3.63, 3.77–3.82). The distinct thermodynamic consequences of anion binding for prestin and SLC26A9 point to a distinct molecular basis underlying their different functions as a motor and a transporter, respectively.
 
-## Anion binding drives the folding of prestin’s binding site
+### Anion binding drives the folding of prestin’s binding site
 
 For prestin in HEPES, which adopted the putative apo state, the 20-fold HDX acceleration for the binding site (Figure 2A) is consistent with a process of local destabilization, even unfolding, or increased solvent accessibility as the region becomes exposed to the intracellular water cavity (Bavi et al., 2021). To investigate these possibilities, we measured prestin’s HDX in response to a chaotrope, urea, which destabilizes proteins by interacting with backbone amides (Lim et al., 2009). In a background of 360 mM Cl−, the addition of 4 M urea accelerated HDX for the N-terminus of TM3 (Region137–140: Peptide134–140) by 20-fold (Figure 3A), suggesting that this region was destabilized and accessible to urea in its exchange-competent state. In apo prestin, however, the PF at the N-terminus of TM3 was unaffected by urea (after accounting for the known ~50% slowing of the kchem; Lim et al., 2009; Figure 3A), arguing that this region was already unfolded prior to the addition of urea (Ramesh et al., 2019).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig3-v1.jpg)
 
-**Figure 3.:** (A) Deuterium uptake plots for the N-terminus of TM3 (Peptide134–140) measured in the absence and presence of 4 M urea, in a background of (left) Cl− and (right) HEPES. Replicates (circles, triangles, and squares): 2 in Cl−, 3 in HEPES, 2 in HEPES with urea, biological. Gray dashed curves represent deuterium uptake with k (chemBai et al., 1993; Nguyen et al., 2018), normalized with the back-exchange level. (B) Deuteration levels for (left) the N-terminus of TM3 (Peptide134–142) in three biological replicates and for (right) TM1 (Peptide84–101) after 5 min labeling upon titrating Cl− to apo state of prestin. Dashed lines indicate deuteration levels at t = 5 min (* and # for apo and Cl−-bound states, respectively) taken from Figure 2A.b and Figure 1—figure supplement 2.11. Residues in gray denoted in the peptide sequence do not contribute to the deuterium uptake curve.
+**Figure 3.:** (A) Deuterium uptake plots for the N-terminus of TM3 (Peptide134–140) measured in the absence and presence of 4 M urea, in a background of (left) Cl− and (right) HEPES. Replicates (circles, triangles, and squares): 2 in Cl−, 3 in HEPES, 2 in HEPES with urea, biological. Gray dashed curves represent deuterium uptake with kchem (Bai et al., 1993; Nguyen et al., 2018), normalized with the back-exchange level. (B) Deuteration levels for (left) the N-terminus of TM3 (Peptide134–142) in three biological replicates and for (right) TM1 (Peptide84–101) after 5 min labeling upon titrating Cl− to apo state of prestin. Dashed lines indicate deuteration levels at t = 5 min (* and # for apo and Cl−-bound states, respectively) taken from Figure 2A.b and Figure 1—figure supplement 2.11. Residues in gray denoted in the peptide sequence do not contribute to the deuterium uptake curve.
 
 We note that in apparent contradiction to our inference that the N-terminus of TM3 was unfolded in the apo state, its HDX was ~100-fold slower than kchem. Such apparent PF for an unfolded region has been reported when it is located inside an outer membrane β-barrel, rationalized by the region having a lower effective local concentration of the HDX catalyst, [OD−], than in bulk solvent (Zmyslowski et al., 2022; Lin et al., 2022). For prestin, we propose that detergent molecules in the micelle can restrict the access of OD− to amide protons, leading to a local effective pD lower than the bulk solvent and hence producing the apparent PF for the unfolded N-terminus of TM3.
 
 The folding reversibility of the anion-binding site was evaluated by tracking the HDX for 5 min after titrating in Cl− to apo prestin. Deuteration levels for the N-terminus of TM3 (Region137–140) decreased with increasing Cl− concentration (Figure 3B), suggesting reversible folding upon Cl− binding. Similar behavior was seen in the middle of TM1 (Region86–101: Peptide84–101) as Cl− binding stabilized the binding pocket (Figure 3B).
 
-We also examined prestin’s stability in its intermediate states, obtained by replacing Cl− anions with SO42− and salicylate (Bavi et al., 2021; Ge et al., 2021). When SO42− is the major anion, prestin’s HDX was nearly identical as in Cl−, except for a slightly faster HDX at the anion-binding site (Region128–142 and Region394–397) at labeling times longer than 103 s (Figure 4). This mild HDX response suggested a slightly destabilized binding site while the remaining regions retained normal dynamics as in Cl−. In the presence of salicylate, HDX slowed across the TMD, with the greatest effect seen at the anion-binding site (10-fold; ΔΔGsalicylate−Cl−bindingsite=1.4kcal/mol) (Figure 4), indicating that salicylate binding to prestin globally stabilized the TMD, primarily at the anion-binding site. These stability changes provide a thermodynamic context to the cryo-EM structures (Bavi et al., 2021).
+We also examined prestin’s stability in its intermediate states, obtained by replacing Cl− anions with SO42− and salicylate (Bavi et al., 2021; Ge et al., 2021). When SO42− is the major anion, prestin’s HDX was nearly identical as in Cl−, except for a slightly faster HDX at the anion-binding site (Region128–142 and Region394–397) at labeling times longer than 103 s (Figure 4). This mild HDX response suggested a slightly destabilized binding site while the remaining regions retained normal dynamics as in Cl−. In the presence of salicylate, HDX slowed across the TMD, with the greatest effect seen at the anion-binding site (10-fold; $ΔΔG_{salicylate−Cl−}^{bindingsite}=1.4kcal/mol$) (Figure 4), indicating that salicylate binding to prestin globally stabilized the TMD, primarily at the anion-binding site. These stability changes provide a thermodynamic context to the cryo-EM structures (Bavi et al., 2021).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig4-v1.jpg)
 
 **Figure 4.:** (A) Heatmaps showing the difference in deuteration levels at each labeling time for all transmembrane domain (TMD) peptides measured in SO42− or salicylate compared to Cl−. Peptide sequences are displayed on the y-scale and legible through the high-resolution image. (B) The structure shows the anion-binding pocket with the putative position of the bound Cl−. The pink mesh highlights the region with the greatest HDX response to binding to various anions. Colored regions correspond to peptides whose deuterium uptake plots are shown when the protein is in Cl− (black, two biological replicates shown in circles and triangles), SO42− (green), and salicylate (blue). Prolines are colored in gray. Gray dashed lines indicate deuteration levels in the full-D control.
 
-## Prestin in a lipid bilayer exhibits a highly dynamic TM6
+### Prestin in a lipid bilayer exhibits a highly dynamic TM6
 
 We chose to measure the HDX of prestin in GDN micelle to match the cryo-EM conditions (Bavi et al., 2021; Ge et al., 2021; Butan et al., 2022). Structures of GDN-solubilized prestin in Cl− obtained by three research groups are indistinguishable (Cα RMSD <1 Å), demonstrating the reproducibility and robustness of the system.
 
@@ -83,15 +229,23 @@ To evaluate the dynamics in a more native membrane environment, we measured HDX 
 
 Interestingly, nanodisc-embedded prestin displayed a less stable TM6 for the intracellular portion than prestin in micelles, manifested by the 10-fold HDX increase (Region275–282: Peptide273–282 + 2 peptides) (Figure 5, Figure 1—figure supplement 2.53–2.55). TM6 defines the interface between prestin and the lipid bilayer, and has been proposed to mediate area expansion through helical bending (Bavi et al., 2021). The exact role of TM6 in regulating prestin’s conformational cycle is currently under investigation.
 
-## Incremental unfolding of prestin’s binding site versus cooperative unfolding of the lipid-facing helices
+### Incremental unfolding of prestin’s binding site versus cooperative unfolding of the lipid-facing helices
 
 Our broad HDX time range and dense sampling allowed us to observe effects at the residue level. In particular, the binding site of prestin (Region128–140 and Region394–397) exhibited a broad deuterium uptake curve in Cl−, indicative of helix fraying where exchange of deuterium occurs from multiple states that differ by one hydrogen bond (Figure 6A). Such HDX pattern is consistent with the associated residues undergoing sequential unfolding with distinct PFs (i.e., stability). Site-resolved PFs obtained using PyHDX (Smit et al., 2021) support that the stability increased residue-by-residue for TM3 for amide protons located further away from the substrate (Figure 6—figure supplement 1). This gradual increase in residue stability along the helices is indicative of helix fraying starting from prestin’s binding site.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left: Deuterium buildup curves for (i) the N-terminal TM3 (Peptide134–140) and (ii) the intracellular portion of TM6 (Peptide273–282) in Cl− depicting helix fraying and mild cooperativity, respectively. Circles: experimental deuteration levels, normalized with in- and back-exchange levels. Gray dashed curves: hypothetical intrinsic uptake curves (PF = 1). On the top shows individual exponentials whose sum is fitted to the experimental values and plotted on the main buildup curves. Residues in gray denoted in the peptide sequence do not contribute to the deuterium uptake curve. Upper right: χ2 and the relative error as the number of fit exponentials increases, used to assess the quality of fit. Lower right: Models and free energy surface of unfolding illustrating the difference between (i) fraying and (ii) mild cooperativity. (B) Mechanism for prestin’s conformational transition from the expanded to the contracted state regulated by the anion concentration. Green rectangles and curved lines: folded and unfolded fractions, respectively, of TM3 and TM10. Blue filled circle: R399. Blue dashed circle: partial positive charges from TM3 and TM10 helical dipoles. Red filled circle: anions, with the size of the circle depicting anion concentrations. Black arrows: prestin’s conformational change.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89635/elife-89635-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Left: Site-resolved protection factor values in a log scale (logPF) obtained by deconvoluting hydrogen–deuterium exchange mass spectrometry (HDX-MS) data using PyHDX (Smit et al., 2021) for regions covering (A) the N-terminus of TM3 and (B) the intracellular portion of TM6. Right: PyHDX fittings for the corresponding peptides – black circles: experimental deuteration levels; red curves: fittings.
+
 In contrast, we observed much more cooperative unfolding in prestin’s lipid-facing helices, with exchange occurring from one or a few high energy states where a set of hydrogen bonds are broken concertedly. Cooperatively exchanging residues have similar PFs and a characteristic sigmoidal deuterium uptake curve for the associated peptide, as seen in prestin’s intracellular portion of TM6 (Region275–282: Peptide273–282 + 4 peptides) (Figure 6A, Figure 1—figure supplement 2.53-2.57).
 
-To characterize the degree of cooperativity for the HDX at the N-terminus of TM3 (Peptide134–140) and the intracellular portion of TM6 (Peptide273–282), we fit the deuterium uptake curves as a sum of exponentials (Hamuro, 2021), D(t)=∑i=1n(1−e−kit), where ki is the exchange rate and n is the number of exponentials, ranging from one to the number of exchange-competent residues. The value of n was determined by the quality of the fit, evaluated by χ2 and having a relative error smaller than one (i.e., standard deviation for ki less than ki itself). HDX data for the N-terminus of prestin’s TM3 (Peptide134–140) were fit with four well-separated exponentials with rates spanning five log units for the four residues (Figure 6A). The need to individually fit each site indicates a lack of cooperativity and helix fraying. In contrast, the peptide representing the intracellular portion of TM6 (Peptide273–282) has eight residues yet it could be fitted with only three rates spanning less than two log units (Figure 6A). This rather concerted deuterium uptake was independent of the anion substrate identity and also observed for TM1, TM5b, the intracellular portion of TM7, and the N-terminus of TM8 (Figure 1—figure supplement 2.6-2.16, 2.42–2.43, 2.45–2.51, 2.58–2.63, 2.78–2.79).
+To characterize the degree of cooperativity for the HDX at the N-terminus of TM3 (Peptide134–140) and the intracellular portion of TM6 (Peptide273–282), we fit the deuterium uptake curves as a sum of exponentials (Hamuro, 2021), $D(t)=\sumi=1n(1−e^{−k_{i}t})$, where $k_{i}$ is the exchange rate and $n$ is the number of exponentials, ranging from one to the number of exchange-competent residues. The value of $n$ was determined by the quality of the fit, evaluated by χ2 and having a relative error smaller than one (i.e., standard deviation for $k_{i}$ less than $k_{i}$ itself). HDX data for the N-terminus of prestin’s TM3 (Peptide134–140) were fit with four well-separated exponentials with rates spanning five log units for the four residues (Figure 6A). The need to individually fit each site indicates a lack of cooperativity and helix fraying. In contrast, the peptide representing the intracellular portion of TM6 (Peptide273–282) has eight residues yet it could be fitted with only three rates spanning less than two log units (Figure 6A). This rather concerted deuterium uptake was independent of the anion substrate identity and also observed for TM1, TM5b, the intracellular portion of TM7, and the N-terminus of TM8 (Figure 1—figure supplement 2.6-2.16, 2.42–2.43, 2.45–2.51, 2.58–2.63, 2.78–2.79).
 
-We define a parameter σΔG to quantify the degree of folding cooperativity. The value of σΔG is calculated as the standard deviation for the free energies of unfolding (∆G) for exchange-competent residues comprising the peptide. When a region folds 100% cooperatively, σΔG is zero as all residues have the same ∆G. As the diversity increases (lower cooperativity), the σΔG value becomes larger. The accuracy of the ∆G determination at residue level can be increased by comparing uptake curves for overlapping peptides and/or deconvoluting isotope envelopes (Hamuro, 2021). Here, we assigned exchange rates (ki), obtained from the fitting method mentioned above, to residues based on the directionality of helix fraying, with residues closer to the end of a helix having faster rates. When there is ambiguity on which rate to assign to a given residue, the geometric mean of the rates was used (Materials and methods). We found that prestin’s intracellular portion of TM6 (Peptide273–282) has σΔG = 1.1, indicating mild cooperativity, whereas the non-cooperative N-terminal TM3 (Peptide134–140) has a σΔG = 2.9. This significant decrease in folding cooperativity for helices directly involved in the Cl−-binding site likely has functional consequences related to prestin’s electromotility, as discussed below.
+We define a parameter σΔG to quantify the degree of folding cooperativity. The value of σΔG is calculated as the standard deviation for the free energies of unfolding (∆G) for exchange-competent residues comprising the peptide. When a region folds 100% cooperatively, σΔG is zero as all residues have the same ∆G. As the diversity increases (lower cooperativity), the σΔG value becomes larger. The accuracy of the ∆G determination at residue level can be increased by comparing uptake curves for overlapping peptides and/or deconvoluting isotope envelopes (Hamuro, 2021). Here, we assigned exchange rates ($k_{i}$), obtained from the fitting method mentioned above, to residues based on the directionality of helix fraying, with residues closer to the end of a helix having faster rates. When there is ambiguity on which rate to assign to a given residue, the geometric mean of the rates was used (Materials and methods). We found that prestin’s intracellular portion of TM6 (Peptide273–282) has σΔG = 1.1, indicating mild cooperativity, whereas the non-cooperative N-terminal TM3 (Peptide134–140) has a σΔG = 2.9. This significant decrease in folding cooperativity for helices directly involved in the Cl−-binding site likely has functional consequences related to prestin’s electromotility, as discussed below.
 
 ## Discussion
 
@@ -111,17 +265,17 @@ Helices that exhibit cooperative unfolding all appear to be lipid-facing helices
 
 Based on the structural and allosteric role of Cl− binding at the TM3–TM10 electrostatic gap, we propose a model in which prestin’s conformational changes and electromotility are regulated by the folding equilibrium of the anion-binding site (Figure 6B). In our model, anion binding participates in a local electrostatic balance that includes the positively charged R399 and the positive TM3–TM10 helical macrodipoles. In the apo state, the anion-binding site unfolds due to the electrostatic repulsion between these positively charged groups. Being a buried charge, R399 may exit from the electric field concentrated in the lower dielectric environment of the protein, and move into the solvent region as it lacks a neutralizing anion. This event is coupled to the allosteric expansion of prestin’s membrane footprint (Bavi et al., 2021). Anion binding partially neutralizes the positive electric field at the binding site, an event that is coupled to the residue-by-residue folding for the N-termini of TM3 and TM10 as well as the shortening of the electrostatic gap. This folding event results in a more focused electric field and consequent contraction of prestin’s intermembrane cross-sectional area. At physiologically relevant low Cl− concentration (1.5–4 mM) (McPherson, 2018), prestin’s binding site is likely to be only partially folded. Complete folding may be achieved by membrane potential acting on the TM3–TM10 helical dipoles, which leads to the movement of the voltage sensor across the electric field and the rapid areal expansion for the TMDs (i.e., electromotility).
 
-## Structure of prestin in HEPES and low Cl− levels
+### Structure of prestin in HEPES and low Cl− levels
 
 We associate the HEPES solvent condition to an apo state as the HEPES anion is too big to fit into the chloride site and prestin has a right-shifted NLC (Rybalchenko and Santos-Sacchi, 2008), To investigate further whether HEPES anion binds, we determined the structure of prestin in the HEPES-based buffer using cryo-EM. Our initial attempt to solve the structure in the complete absence of Cl− was unsuccessful due to sample aggregation under cryogenic conditions. Aggregated particles were greatly reduced in the presence of 1 mM Cl−, and we were able to solve the structure of GDN-solubilized prestin in 1 mM Cl−, containing 190 mM HEPES, at a nominal resolution of 3.4 Å (Appendix 3, Appendix 3—figures 1 and 2, Appendix 3—table 1). Surprisingly, under these conditions prestin adopted a ‘compact’ conformation, virtually identical to the previously reported Cl−-bound ‘Up’ state (Bavi et al., 2021), displaying a clear density at the anion-binding site (Appendix 3—figure 1). This density is incompatible with the placing of a HEPES molecule, and we reason it to be a small population of Cl−-bound prestin resulting from a weak Cl− affinity (e.g., EC50 = 6 mM11 implies 17% bound). This result is consistent with the fundamental role of bound anions in the conformational stability of prestin and supports a new role for the folding equilibrium of the anion-binding site in the mechanism of voltage sensing. Ultimately, however, understanding the underlying mechanism for prestin’s electromotility necessitates consideration of physiological elements such as membrane potential, kHz frequency, and protein–lipid interactions.
 
-## Conclusions
+### Conclusions
 
 We applied HDX-MS to the study of prestin’s electromotility and identified folding events that are likely critical for function but had escaped detection by cryo-EM. The folding equilibrium of the Cl−-binding site and its dependence on Cl− concentration appears to rationalize the conundrum of how an anion that binds in proximity to a positive charge (R399), can enable the NLC of prestin. We directly compared the dynamics of prestin in nanodisc to in micelles and identified TM6 as a potential mechano-sensing helix. We observed fraying of the helices forming the anion-binding site, which contrasts with cooperative unfolding of the lipid-facing helices. We believe that the non-cooperative fraying of the helices involved in voltage sensing may allow for fast charge movements within the electric field. This heightened sensitivity of the voltage sensor then induces large-scale motions of the lipid-facing helices, enabled by their cooperativity (or allostery), thereby altering the cross-sectional area of prestin. These principles warrant further investigation.
 
 ## Materials and methods
 
-## Sample preparation for prestin and SLC26A9
+### Sample preparation for prestin and SLC26A9
 
 Generation of the dolphin prestin and mouse SLC26A9 constructs, protein overexpression, and purification were conducted using the same protocol as previously described (Bavi et al., 2021). The HEK293S GnTI− cells in suspension that were used for protein expression and purification were obtained and authenticated from ATCC (CRL-3022). Following the cleavage of the GFP tag, the protein was purified by size-exclusion chromatography (SEC) on a Superose 6, 10/300 GE column (GE Healthcare), with the running buffer being either the ‘Cl−/H2O Buffer’ or the ‘SO42−/H2O Buffer’, including 1 μg/ml aprotinin and 1 μg/ml pepstatin (Bavi et al., 2021). The ‘Cl−/H2O Buffer’ contained 360 mM NaCl, 20 mM Tris, 3 mM dithiothreitol (DTT), 1 mM Ethylenediaminetetraacetic acid (EDTA), and 0.02% GDN at pH 7.5. The ‘SO42−/H2O Buffer’ contained 140 mM Na2SO4, 5 mM MgSO4, 20 mM Tris, 0.02% GDN, and 10–15 mM methanesulfonic acid to adjust the pH to 7.5. Peak fractions containing the sample were concentrated on a 100 K MWCO centrifugal filter (Millipore) to 2–3 mg/ml, flash-frozen in liquid nitrogen, and kept at −80°C until use.
 
@@ -129,7 +283,7 @@ For prestin reconstitution into nanodiscs, porcine brain lipid extract (Avanti) 
 
 For structure determination by cryo-EM, prestin purification was performed in buffers containing 360 mM NaCl as previously described (Bavi et al., 2021), except that the SEC running buffer now consisted of 190 mM HEPES, ~95 mM Tris-base (used to adjust the pH to 7.5), 1 mM NaCl, 3 mM Dithiothreitol (DTT), 0.02% GDN, 1 μg/ml aprotinin, and 1 μg/ml pepstatin. Peak fractions containing the sample were concentrated to 3 mg/ml and used immediately for grid preparation.
 
-## Hydrogen–deuterium exchange
+### Hydrogen–deuterium exchange
 
 Table 1 provides biochemical and statistical details for HDX in this study per recommendations by Masson et al., 2019. HDX reactions, quench, and injection were all performed manually. Prior to HDX, proteins purified in Cl− and SO42− were buffer exchanged to the same H2O buffer without protease inhibitor using 7 K MWCO Zeba spin desalting columns (Thermo 89882). For HDX conducted in HEPES, proteins purified in Cl− were dialyzed against the ‘HEPES/H2O Buffer’ (150 mM HEPES, 0.02% GDN, pH adjusted to 7.5 by HEPES acid or base) using a 10 K MWCO dialysis device (Thermo Slide-A-Lyzer MINI 69570) with three times of buffer exchange for near-complete Cl− removal. HDX in a solution of 93% deuterium (D) content was initiated by diluting 2 μl of 25 μM prestin or SLC26A9 stock in an H2O buffer into 28 μl of the corresponding buffer made with D2O (99.9% D, Sigma-Aldrich 151882). HDX was conducted in one of the two conditions: (1) pDread 7.1, 25°C; (2) pDread 6.1, 0°C. The D2O buffers contained the same compositions as the corresponding H2O buffers, except that Tris was replaced with phosphate for the ‘SO42−/D2O Buffer’ for both HDX conditions, and the ‘Cl−/D2O Buffer’ for HDX performed at pDread 6.1, 0°C. The pDread was adjusted to 7.1 or 6.1 by DCl for the ‘Cl−/D2O Buffers’ and by NaOD for other D2O buffers. For HDX in the presence of salicylate, 50 mM salicylate acid was added to the ‘SO42−/D2O Buffer’ and the pDread was adjusted by NaOD. For HDX in the presence of urea, 4 M urea was added to the ‘Cl−/D2O Buffer’ or the ‘HEPES/D2O Buffer’, with accurate urea concentration determined to be 4.16 and 4.54 M, respectively, by refractive index using a refractometer (WAY Abbe) (Warren and Gordon, 1966).
 
@@ -137,32 +291,32 @@ HDX was quenched at various times, ranging from 1 s to 27 hr, by the addition of
 
 HDX reactions were performed in random order. No peptide carryover was observed as accessed by following sample runs with injections of quench buffer containing 4 M urea and 0.01% GDN. In-exchange controls accounting for forward deuteration toward 41.5% D in the quenched reaction were performed by mixing D2O buffer and ice-chilled quench buffer prior to the addition of the protein. Maximally labeled controls (All D) accounting for back-exchange were performed by a 48-hr incubation with the ‘Cl−/D2O Buffer’ at 37°C, followed by a 30-min incubation with 8 M of deuterated urea at 25°C.
 
-## Protease digestion and liquid chromatography–mass spectrometry
+### Protease digestion and liquid chromatography–mass spectrometry
 
 Upon injection, the protein was digested online by a pepsin/FPXIII (Sigma-Aldrich P6887/P2143) mixed protease column maintained at 20°C. Protease columns were prepared in-house by coupling the protease to a resin (Thermo Scientific POROS 20 Al aldehyde activated resin 1602906) and hand-packing into a column (2 mm ID × 2 cm, IDEX C-130B). After digestion, peptides were desalted by flowing across a hand-packed trap column (Thermo Scientific POROS R2 reversed-phase resin 1112906, 1 mm ID × 2 cm, IDEX C-128) at 5°C. The total time for digestion and desalting was 2.5 min at 100 μl/min of 0.1% formic acid at pH 2.5. Peptides were then separated on a C18 analytical column (TARGA, Higgins Analytical, TS-05M5-C183, 50 × 0.5 mm, 3 μm particle size) via a 14 min, 10–60% (vol/vol) acetonitrile (0.1% formic acid) gradient applied by a Dionex UltiMate-3000 pump. Eluted peptides were analyzed by a Thermo Q Exactive mass spectrometer. MS data collection, peptide assignments by SearchGUI version 4.0.25, and HDX data processing by HDExaminer 3.1 (Sierra Analytics) were performed as previously described (Zmyslowski et al., 2022; Lin et al., 2022).
 
-## HDX data presentation, quantification, and statistics
+### HDX data presentation, quantification, and statistics
 
-In our labeling convention, we name capitalized regions according to the third residue of each peptide since the first two residues have much faster kchem (Bai et al., 1993; Nguyen et al., 2018) and hence, exhibit complete back-exchange. Labeling times for HDX performed in pDread 6.1, 0°C were corrected to those in pDread 7.1, 25°C by a factor of 140, determined by the ratio of the kchem for full-length proteins in the two conditions – prestin: τchempDread 6.1,  0 °C = 10 s, τchempDread 7.1,  25 °C = 74 ms; SLC26A9: τchempDread 6.1,  0∘C = 9 s, τchempDread 7.1,  25∘C = 65 ms. Deuteration levels were adjusted with the 93% D content but not with back-exchange levels except for Figure 6A. For HDX in the presence of urea (Figure 3A), D contents of 76% and 74% were used to account for the volumes of 4.16 and 4.54 M urea in the ‘Cl−/D2O Buffer’ and the ‘HEPES/D2O Buffer’, respectively.
+In our labeling convention, we name capitalized regions according to the third residue of each peptide since the first two residues have much faster kchem (Bai et al., 1993; Nguyen et al., 2018) and hence, exhibit complete back-exchange. Labeling times for HDX performed in pDread 6.1, 0°C were corrected to those in pDread 7.1, 25°C by a factor of 140, determined by the ratio of the kchem for full-length proteins in the two conditions – prestin: $\tau_{chem}^{pDread 6.1,  0 °C}$ = 10 s, $\tau_{chem}^{pDread 7.1,  25 °C}$ = 74 ms; SLC26A9: $\tau_{chem}^{pDread 6.1,  0^{∘}C}$ = 9 s, $\tau_{chem}^{pDread 7.1,  25^{∘}C}$ = 65 ms. Deuteration levels were adjusted with the 93% D content but not with back-exchange levels except for Figure 6A. For HDX in the presence of urea (Figure 3A), D contents of 76% and 74% were used to account for the volumes of 4.16 and 4.54 M urea in the ‘Cl−/D2O Buffer’ and the ‘HEPES/D2O Buffer’, respectively.
 
 HDX rates, PFs, and changes of free energy of unfolding (ΔΔGs) in Results were estimated by fitting uptake curves of each peptide, after correcting for back-exchange levels, with a stretched exponential as described by Hamuro, 2021, except for discussion relevant to Figure 6A. Peptides with less than 10% D at the longest labeling time (~105 s) were not used for fitting. The residue-level ΔΔG values presented in the full-length proteins in Figure 1C were estimated by averaging ΔΔG values for peptides containing the residue. We note that this stretched exponential method is only a rough approximation to extract ΔΔGs and our major conclusions are not dependent on this fitting method.
 
-For fitting HDX data and extracting rates relevant to Figure 6A, HDX data were first normalized to in- and back-exchange levels. Given the helices are likely to exchange by fraying, the exchange rate for each residue was assigned based on their distance from the end of the helix. When a residue could not be assigned to a single rate, the geometric mean of the possible rates was used, for example, the HDX data for the 8-residue Peptide273–282 were well fit with three exponentials, and the three associated rates, k1, k2, and k3, were assigned to the 8 residues according to k1, k1, (k1k1k2)1/3, k2, k2, (k2k2k3)1/3, k3, and k3. These rates were used to calculate folding stability according to ΔG=−RTln(kchem/ki−1).
+For fitting HDX data and extracting rates relevant to Figure 6A, HDX data were first normalized to in- and back-exchange levels. Given the helices are likely to exchange by fraying, the exchange rate for each residue was assigned based on their distance from the end of the helix. When a residue could not be assigned to a single rate, the geometric mean of the possible rates was used, for example, the HDX data for the 8-residue Peptide273–282 were well fit with three exponentials, and the three associated rates, k1, k2, and k3, were assigned to the 8 residues according to k1, k1, (k1k1k2)1/3, k2, k2, (k2k2k3)1/3, k3, and k3. These rates were used to calculate folding stability according to $ΔG=−RTln(k_{chem}/k_{i}−1)$.
 
 A hybrid statistical analysis used to generate Figure 1—figure supplement 1 was performed as described by Hageman and Weis, 2019, with significance limits defined at α = 0.05.
 
-## MD simulations
+### MD simulations
 
 Simulations were conducted in our Upside molecular dynamics package (Jumper et al., 2018a; Jumper et al., 2018b) using a membrane thickness of 38 Å. Missing residues for prestin (PDB 7S8X) were built using MODELLER (Sali and Blundell, 1993) and the placement within the bilayers was accomplished using Positioning of Proteins in Membranes webserver (Lomize et al., 2022). Local restraints in the form of small springs between nearby residues were used to maintain the native structure of cytosolic domains, as well as to the TM13–TM14 helices. Also, the distance between the two TMDs was held fixed. We ran 28 temperature replicas between 318 and 360 K.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 The cryo-EM data were collected from three separate samples and microscope sessions. For dataset 1, 3.5 μl of prestin sample was applied to Quantifoil 200-mesh 1.2/1.3 Cu grids (Quantifoil) that were plasma cleaned for 30 s at 20 W. For datasets 2 and 3, 3.5 μl of prestin sample was applied to UltrAuFoil 300-mesh 1.2/1.3 grids (Quantifoil UltrAuFoil) that were plasma cleaned for 40 s at 20 W. The remaining sample preparation and imaging conditions were kept constant for all three samples. Grids were blotted at 22°C and 100% humidity with a blot time of 3.5  s and a blot force of 1, and flash-frozen into liquid ethane using a Vitrobot Mark IV (Thermo Fisher). Grids were imaged at The University of Chicago Advanced Electron Microscopy Facility on a 300 kV Titan Krios G3i electron microscope equipped with a Gatan K3 camera in CDS mode, a GIF energy filter (set to 20  eV) and with magnification set to ×81,000, corresponding to a physical pixel size of 1.068 Å. Movies were acquired at a dose of 1.2 e−/Å2 for 50 frames (corresponding to a total dose of 60 e−/Å2) and a defocus range of −0.7 to −2.1 μm. 2153 movies were collected for dataset 1, 1928 movies for dataset 2, and 6665 movies for dataset 3.
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 Cryo-EM data processing was performed using Relion-4.0 (Kimanius et al., 2021) and cryoSPARC v4.1 (Punjani et al., 2017). Movies from the different datasets were motion-corrected independently in Relion with a bin-1 pixel size of 1.068 Å. The motion-corrected micrographs were then combined and imported into cryoSPARC for Patch CTF Estimation. Unless otherwise mentioned, the following steps were performed in cryoSPARC. Particles were picked using template-based particle picking. The initial picks were curated using Inspect Picks and extracted at a box size of 256. Two rounds of 2D Classification were performed to filter out additional ‘junk’ particles, resulting in a set of 328,033 particles. Two consecutive rounds of ab initio reconstruction, followed by heterogeneous refinement with C1 symmetry were performed to obtain a stack of 170,313 particles. These particles were used as input for an initial round of non-uniform and local CTF refinement using C2 symmetry and exported to Relion for Bayesian Polishing. Additional 3D Classification was performed in Relion to remove additional ‘junk’ particles, resulting in a set of 170,313 particles. However, no additional classes were found. The final set of polished particles was then imported back into cryoSPARC and subjected to a final round of non-uniform and CTF refinement, resulting in a map with a nominal resolution of 3.4 Å, according to the gold-standard 0.143 Fourier shell correlation (FSC) criterion (Rosenthal and Henderson, 2003). Local resolution was estimated using local resolution estimation in cryoSPARC.
 
-## Model building and refinement
+### Model building and refinement
 
 A previous model of dolphin prestin (PDB 7S8X) was roughly fit into the density map and used as a template for model building. Initially, only a monomer was considered for model building, and the fitting was improved by running Phenix real space refinement (Afonine et al., 2018) with secondary structure restraints, morphing, and simulated annealing enabled. Subsequently, the monomer model was iteratively refined by manual inspection in Coot (Brown et al., 2015) and real space refinement without morphing and simulated annealing in Phenix. After several rounds of refinement, the second monomer was added using the apply_ncs tool in Phenix with C2 symmetry, and the resulting dimer model was subjected to an additional round of manual inspection in Coot. A chloride ion was manually added into the density observed in the anion-binding pocket in Coot. All figures related to the cryo-EM structure were prepared using UCSF ChimeraX (Pettersen et al., 2021).

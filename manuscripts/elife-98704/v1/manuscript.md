@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Biology, Washington University in St. Louis St. Louis United States
-2. https://ror.org/00f54p054 Department of Biology, Stanford University Stanford United States
-3. https://ror.org/0420db125 Rockefeller University New York City United States
+1. Department of Biology, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Rockefeller University New York City United States ([ROR:0420db125](https://ror.org/0420db125))
 
 † Corresponding author
 
@@ -37,23 +37,51 @@ Here, we extend our original work by defining the roles of two additional protei
 
 ## Results
 
-## Loss of TEDC1 or TEDC2 phenocopies loss of TUBD1 or TUBE1
+### Loss of TEDC1 or TEDC2 phenocopies loss of TUBD1 or TUBE1
 
 TEDC1 and TEDC2 have been reported to physically interact with delta-tubulin and epsilon-tubulin, and loss of either Tedc1 or Tedc2 in 3T3 cells results in cells with a variable number of centrioles through the cell cycle (Breslow et al., 2018). To further dissect the phenotypes of loss of TEDC1 or TEDC2 and directly compare to our original report on delta-tubulin and epsilon-tubulin, we used CRISPR/Cas9 to generate strong loss of function/null mutations in TEDC1 or TEDC2 in the same cell type and background genotype (hTERT RPE-1 TP53-/-, which will be referred to as RPE-1 p53-/-) as the TUBD1-/- (delta-tubulin knockout) and TUBE1-/- (epsilon-tubulin knockout) mutant cells (Figure 1—figure supplement 1). By immunofluorescence staining for two centriolar proteins, centrin (CETN) and CP110, we observed that TEDC1-/- and TEDC2-/- mutant cells had similar phenotypes to each other and to TUBD1-/- and TUBE1-/- mutant cells: in an asynchronously growing culture, about half of the cells had no centrioles, and half had five or more centrioles. These phenotypes were fully rescued by expression of tagged TEDC1 (TEDC1-Halotag-3xFlag) or TEDC2 (TEDC2-V5-APEX2; Figure 1, Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig1-v1.jpg)
+
+**Figure 1.:** (A) Immunofluorescence staining of control (RPE1 TP53-/-), TEDC1-/- (RPE1 TP53-/-; TEDC1-/-), TEDC1 Rescued (RPE1 TP53-/-; TEDC1-/-; TEDC1-Halotag-3xflag), TEDC2-/- (RPE1 TP53-/-; TEDC2-/-), TEDC2 Rescued (RPE1 TP53-/-; TEDC2-/-; TEDC2-V5-APEX2) cells. Top row: G1 stage cells with 2 centrioles. Bottom row: S/G2 stage cells with 4 centrioles. Blue: DAPI; Yellow: Centrin (CETN); Magenta: CP110. Images are maximum projections of confocal stacks. Scale bar: 5 µm (B) Centriole number counts of the indicated cell lines. Cells were either asynchronous, serum-starved for G0/G1, stained for PCNA for S-phase, synchronized with RO-3306 for G2/M, or mitotic figures were identified by DAPI staining. Each condition was performed in triplicate, with n=100 cells scored for each. (C) Percent of all centrioles (parental, pro-, and de novo centrioles) in indicated cell types positive for SASS6 staining. Each condition was performed in triplicate, with 200 cells scored for each. (D) Percent of all centrioles (parental, pro-, and de novo centrioles) in indicated cell types positive for CEP164 staining. Each condition was performed in triplicate, with 100 cells scored for each. (E) TEM cross-section of a centriole in a G2-phase TEDC1-/- cell. Scale bar: 100 nm (F) TEM cross-section of a centriole in a G2-phase TEDC2-/- cell. Scale bar: 100 nm (G) Schematic of centriole formation and loss in control and TEDC1-/- or TEDC2-/- cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gene structure of the TEDC1 locus in parental TP53-/- cells and the TEDC1-/- mutant. Green boxes: exons; blue lines: introns; red triangles: sgRNA binding sites; black arrow: translation start site. The TEDC1-/- mutant (clone 2F4) is a compound heterozygote bearing a deletion of 227 bp on one allele and a deletion of 329 bp on the other allele. In both alleles, the ATG start site is deleted and the next ATG is not in-frame. (B) Gene structure of the TEDC2 locus in parental TP53-/- cells and the TEDC2-/- mutant. Green boxes: exons; blue lines: introns; red triangles: sgRNA binding sites; black arrow: translation start site. The TEDC2-/- mutant (clone F5) is a compound heterozygote bearing a deletion of 19 bp on one allele flanking the ATG start site. On the other allele, there is an insertion of 306 bp corresponding to a fusion between TEDC2 and the hCLHC1 gene. In both alleles, the ATG start site is deleted, the next ATG is not in-frame, and no additional ATG start sites are found. (C) Genotyping PCR of the TEDC1 locus in parental TP53-/- cells, the TEDC1-/- mutant, and TEDC1 Rescued (RPE1 TP53-/-; TEDC1-/-; TEDC1-Halotag-3xflag) cells. Top: PCR for TEDC1. Bottom: PCR for Halotag. (D) Genotyping PCR of the TEDC2 locus in parental TP53-/- cells, the TEDC1-/- mutant, and TEDC2 Rescued (RPE1 TP53-/-; TEDC2-/-; TEDC2-V5-APEX2) cells. Top: PCR for TEDC2. Bottom: PCR for APEX2. (E) Western blot of TEDC1 protein levels in parental TP53-/- cells, the TEDC1-/- mutant, and TEDC1 Rescued (RPE1 TP53-/-; TEDC1-/-; TEDC1-Halotag-3xflag) cells. Total protein stain is used as a loading control. TEDC1-Halotag-3xFlag is overexpressed 73-fold above endogenous levels (average of three independent experiments). Asterisks mark non-specific bands. (F) Western blot of TEDC2 protein levels in parental TP53-/- cells, the TEDC2-/- mutant, and TEDC2 Rescued (RPE1 TP53-/-; TEDC2-/-; TEDC2-V5-APEX2) cells. Total protein stain is used as a loading control. TEDC2-V5-APEX2 is overexpressed 26-fold above endogenous levels (average of three independent experiments). Asterisks mark non-specific bands.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Original (left) and symmetrized (right) images of TEM images of TEDC1-/- and TEDC2-/- centrioles. The top image is the same as that in Figure 1E, the bottom image is the same as that in Figure 1F. The middle image is an additional centriole from the TEDC1-/- mutant cells. Scale bars: 10 nm.
 
 Next, we checked whether the centrioles in TEDC1-/- and TEDC2-/- mutant cells underwent a futile cycle of centriole formation and disintegration. We synchronized cells in each stage of the cell cycle, quantified the number of cells with centrioles, and found that almost all mutant cells lacked centrioles in G0/G1 phase. Centrioles formed in S-phase and disintegrated in M (Figure 1B). The centrioles that were present in mutant cells were immature: all centrioles were positive for the procentriole marker SASS6 and negative for the mature centriole marker CEP164 (Figure 1C and D). We conclude that cells lacking TEDC1 or TEDC2 also undergo a futile cycle, similar to cells lacking delta-tubulin or epsilon-tubulin (Figure 1G).
 
 We also examined the centriolar microtubule status of TEDC1-/- and TEDC2-/- mutant cells by TEM. Similar to cells lacking delta-tubulin or epsilon-tubulin, we found that centrioles in TEDC1-/- and TEDC2-/- mutant cells lacked compound microtubules and only had singlet microtubules. These centrioles had cartwheels and pinheads, but A-C linkers were not visible (Figure 1E and F, Figure 1—figure supplement 2). Together, these results demonstrate that loss of TEDC1 or TEDC2 phenocopies loss of delta-tubulin or epsilon-tubulin, indicating that these proteins likely act together.
 
-## TEDC1 and TEDC2 localize to centrosomes
+### TEDC1 and TEDC2 localize to centrosomes
 
 Next, we investigated the localization of TEDC1 and TEDC2 to determine if they may directly act on centrosomes. TEDC1 and TEDC2 are expressed at low levels in cells (Figure 1—figure supplement 1), and we could not reproducibly localize the endogenous proteins with antibody staining. Instead, we localized the functional, tagged proteins in our rescue cell lines. We found that the tagged rescue constructs localize to centrosomes (Figure 2A and B) and the antibodies for the tags were specific (Figure 2—figure supplement 1E-J). TEDC1 and TEDC2 were enriched at centrosomes in S/G2 and colocalized with SASS6, but not centrin, indicating that TEDC1 and TEDC2 may localize to newly formed procentrioles and/or the proximal ends of parental centrioles.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunofluorescence staining of TEDC1 rescue cell lines expressing TEDC1-Halotag-3xFlag in G1, S/G2, and M. Images are maximum projections of confocal stacks. Blue: DAPI; Cyan: Centrin (CETN); Magenta: TEDC1-Halotag-3xFlag (localized with anti-Flag antibody); Yellow: SASS6. Scale bar: 5 µm. (B) Immunofluorescence staining of TEDC2 rescue cell lines expressing TEDC2-V5-APEX2 in G1, S/G2, and M. Images are maximum projections of confocal stacks. Blue: DAPI; Cyan: Centrin (CETN, localized with anti-GFP antibody recognizing GFP-centrin); Magenta: TEDC2-V5-APEX2 (localized with anti-V5 antibody); Yellow: SASS6. Scale bar: 5 µm. (C) U-ExM of TEDC1 rescue cell lines expressing TEDC1-Halotag-3xFlag, arranged by procentriole length. Cyan: Acetylated tubulin; Magenta: TEDC1-Halotag-3xFlag (localized with anti-Flag antibody). Confocal image stacks were deconvolved using Microvolution; single plane images shown. Scale bar: 1 µm. (D) U-ExM of TEDC2 rescue cell lines expressing TEDC2-V5-APEX2, arranged by procentriole length. Cyan: Acetylated tubulin; Magenta: TEDC2-V5-APEX2 (localized with anti-V5 antibody). Confocal image stacks were acquired with a Yokogawa CSU-W1 spinning disk microscope and deconvolved using Microvolution; single plane images shown. Scale bar: 1 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunofluorescence staining of a TEDC1 rescue cell in G2 phase expressing TEDC1-Halotag-3xFlag, super-resolution image using SoRA disk and 2.8 x relay. Maximum projection. Cyan: Centrin (CETN); Magenta: TEDC1-Halotag-3xFlag (localized with anti-Flag antibody); Yellow: SASS6. Scale bar: 0.5 µm (B) Immunofluorescence staining of a TEDC2 rescue cell in G2 phase expressing TEDC2-V5-APEX2, super-resolution image using SoRA disk and 2.8 x relay. Maximum projection. Cyan: Centrin (CETN); Magenta: TEDC2-V5-APEX2 (localized with anti-V5 antibody); Yellow: SASS6. Scale bar: 0.5 µm (C) Expansion microscopy image of TEDC1 rescue cells expressing TEDC1-Halotag-3xFlag. Expansion gel was made as described in Kong et al., 2024. The procentriole is oriented vertically. Cyan: CEP44; Magenta: TEDC1-Halotag-3xFlag (localized with anti-Flag antibody). Deconvolved using Microvolution; maximum projection. Scale bar: 1 µm. (D) Expansion microscopy image of TEDC2 rescue cells expressing TEDC2-V5-APEX2. Expansion gel was made as described in Kong et al., 2024. The procentriole is oriented vertically. Cyan: CEP44; Magenta: TEDC2-V5-APEX2 (localized with anti-V5 antibody). Deconvolved using Microvolution; maximum projection of confocal stacks. Scale bar: 1 µm. (E) Immunofluorescence staining of TP53-/- cells expressing Halotag-Flag - negative control for Figure 2A. Images are maximum projections of confocal stacks and were acquired with the same exposure settings as in Figure 2A. Blue: DAPI; Cyan: Centrin; Magenta: Flag; Yellow: SASS6. Scale bar: 5 µm. (F) Immunofluorescence staining of TP53-/- cells expressing V5-APEX2 - negative control for Figure 2B. Images are maximum projections of confocal stacks and were acquired with the same exposure settings as in Figure 2B. Blue: DAPI; Cyan: Centrin (localized with anti-GFP antibody recognizing GFP-centrin); Magenta: V5; Yellow: SASS6. Scale bar: 5 µm. (G) U-ExM of TP53-/- cells expressing Halotag-Flag - negative control for Figure 2C. Cyan: Acetylated tubulin; Magenta: Flag. Confocal image stacks were deconvolved using Microvolution; single plane images shown. Images were acquired using the same parameters as Figure 2C. Scale bar: 1 µm. (H) U-ExM of TP53-/- cells expressing V5-APEX2 - negative control for Figure 2D. Cyan: Acetylated tubulin; Magenta: V5. Confocal image stacks were deconvolved using Microvolution; single plane images shown. Images were acquired using the same parameters as Figure 2D. Scale bar: 1 µm. (I) Expansion microscopy image of TP53-/- cells stained with Flag antibody, negative control for (C). Cyan: CEP44; Magenta: Flag. Confocal image stacks were deconvolved using Microvolution; image is a maximum projection of confocal stack. Scale bar: 1 µm. (J) Expansion microscopy image of TP53-/- stained with V5 antibody, negative control for (D).Cyan: CEP44; Magenta: V5. Confocal image stacks were deconvolved using Microvolution; image is a maximum projection of confocal stack. Scale bar: 1 µm.
+
 To analyze TEDC1 and TEDC2 localization at higher resolution, we localized our tagged rescue constructs using three methods: a super-resolution spinning disk confocal microscope with immunofluorescence microscopy (Figure 2—figure supplement 1A, B), ultrastructure expansion microscopy (U-ExM, (Gambarotto et al., 2019), Figure 2C and D), and a second expansion microscopy method (Kong et al., 2024, Figure 2—figure supplement 1C, D). With all three methods, we observed that both proteins localize to procentrioles and the proximal ends of parental centrioles. At these regions, both proteins overlap with the centriolar microtubules. Together, these results show that TEDC1 and TEDC2 localize to centrosomes and likely directly act upon them.
 
-## TEDC1, TEDC2, TUBD1, and TUBE1 form a complex in cells
+### TEDC1, TEDC2, TUBD1, and TUBE1 form a complex in cells
 
 To determine how TEDC1, TEDC2, TUBD1 and TUBE1 might act together, we first determined whether they are mutually required for their localization at centrosomes. We found that TEDC1 did not localize to centrioles in the absence of TEDC2, TUBD1, or TUBE1 (Figure 3A). Likewise, TEDC2 did not localize to centrioles in the absence of TEDC1, TUBD1, or TUBE1 (Figure 3B). These results indicate that these proteins are mutually required for TEDC1 or TEDC2 localization. Furthermore, overexpression of TEDC1 or TEDC2 did not rescue the centriole phenotypes in any of the other mutants, indicating that TEDC1 and TEDC2 are not downstream effectors of TUBD1 and TUBE1 (Figure 3A and B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig3-v1.jpg)
+
+**Figure 3.:** (A) Centrosomal TEDC1 localization depends on TEDC2, TUBD1, TUBE1. Immunofluorescence staining of cells expressing TEDC1-Halotag-3xFlag. Control cell is TEDC1-/- mutant cells rescued with TEDC1-Halotag-3xFlag. Images are maximum projections of confocal stacks. Blue: DAPI; Cyan: SASS6; Magenta: TEDC1-Halotag-3xFlag (localized with anti-Flag antibody). Scale bar: 5 µm. (B) Centrosomal TEDC2 localization depends on TEDC1, TUBD1, TUBE1. Immunofluorescence staining of cells expressing TEDC2-V5-APEX2. Control cell is TEDC2 mutant cells rescued with TEDC2-V5-APEX2. Images are maximum projections of confocal stacks. Blue: DAPI; Cyan: SASS6; Magenta: TEDC2-V5-APEX2 (localized with anti-V5 antibody). Scale bar: 5 µm. (C) TEDC1 pulls down TEDC2 in the absence of delta or epsilon-tubulin. Western blot of input and pulldown of Halotag-Flag or TEDC2-Halotag-Flag in the indicated cell lines. Control cells are TP53-/- cells expressing Halotag-3xFlag. IB: indicates the antibody used for immunoblotting. The proteins and their positions are labeled on the right. Asterisks mark non-specific bands. (D) TEDC2 pulls down TEDC1 in the absence of delta or epsilon-tubulin. Western blot of input and pulldown of TUBA1B-V5-APEX2 or TEDC2-V5-APEX2 in the indicated cell lines. Control cells are TP53-/- cells expressing TUBA1B-V5-APEX2. IB: indicates the antibody used for immunoblotting. The proteins and their positions are labeled on the right. Asterisks mark non-specific bands. (E) AlphaFold-Multimer prediction of the complex (F) AlphaFold-Multimer prediction colored according to pLDDT. Very high: pLDDT > 90. High: 90 > pLDDT > 70. Low: 70 > pLDDT > 50. Very low: pLDDT <50 (G) Predicted align error of the AlphaFold Multimer prediction. Expected position error (Angstroms) is graphed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (Ai) Rotated view of the AlphaFold-Multimer prediction from Figure 3E (120 degrees around the y-axis) (Aii) Rotated view colored according to pLDDT. Very high: pLDDT > 90. High: 90 > pLDDT > 70. Low: 70 > pLDDT > 50. Very low: pLDDT <50 (Aiii) Rotated view of the AlphaFold-Multimer prediction from Figure 3E (240 degrees around the y-axis) (Aiv) Rotated view colored according to pLDDT. Very high: pLDDT >90. High: 90>pLDDT > 70. Low: 70>pLDDT > 50. Very low: pLDDT <50 (Bi) AlphaFold3 prediction of the complex (Bii) AlphaFold3 prediction colored according to pLDDT. Very high: pLDDT >90. High: 90>pLDDT > 70. Low: 70>pLDDT > 50. Very low: pLDDT <50 (Biii) Predicted align error of the AlphaFold3 prediction. Expected position error (Angstroms) is graphed. (Biv) Structural alignment between the AlphaFold3 prediction (magenta) and the AlphaFold-Multimer prediction (cyan). Using ChimeraX v1.7.1 Matchmaker, the RMSD between 450 pruned atom pairs is 0.538 angstroms (across all 475 pairs: 0.979). (Ci) AlphaFold-Multimer prediction of TEDC1, TEDC2, TUBA1A, TUBB (Cii) AlphaFold-Multimer prediction from (Ci) colored according to pLDDT. Very high: pLDDT >90. High: 90>pLDDT > 70. Low: 70>pLDDT > 50. Very low: pLDDT <50 (Ciii) Predicted align error of the AlphaFold-Multimer prediction from (Ci). Expected position error (Angstroms) is graphed. (Di) AlphaFold Multimer prediction of Xenopus TEDC1, TEDC2, TUBD1, TUBE1 (Dii) AlphaFold-Multimer prediction from (Di) colored according to pLDDT. Very high: pLDDT >90. High: 90>pLDDT > 70. Low: 70>pLDDT > 50. Very low: pLDDT <50 (Diii) Predicted align error of the AlphaFold-Multimer prediction from (Di). Expected position error (Angstroms) is graphed.
 
 TEDC1 and TEDC2 have previously been shown to physically interact with TUBD1 and TUBE1 (Breslow et al., 2018). To further probe the nature of this interaction, we first determined whether any of these proteins may form subcomplexes in cells. We expressed TEDC1-Halotag-3xFlag in each mutant cell line and determined whether immunoprecipitation of tagged TEDC1 could precipitate the other proteins. TEDC1-Halotag-3xFlag rescuing the TEDC1-/- mutant could precipitate TEDC2, TUBD1, and TUBE1, indicating that all four proteins physically interact. TEDC1 did not interact with epsilon-tubulin in the absence of delta-tubulin, nor did it interact with delta-tubulin in the absence of TUBE1. In the absence of TEDC2, TEDC1 did not interact with TUBD1 or TUBE1. However, in the absence of TUBD1 or TUBE1, TEDC1 and TEDC2 could still interact with each other (Figure 3C).
 
@@ -65,11 +93,35 @@ To gain additional insight into the nature of this interaction, we used AlphaFol
 
 Our pulldown experiments showed that TEDC1 and TEDC2 can interact in a subcomplex in the absence of TUBD1 or TUBE1, which supports the predicted structural model, in which TEDC1 and TEDC2 are predicted to directly interact with each other without being bridged by either tubulin. Further supporting this model, immunoprecipitation of TEDC2 identifies the other proteins in stoichiometric amounts (Breslow et al., 2018), and we previously showed that TUBD1 and TUBE1 physically interact (Wang et al., 2017). Given the size and shape of the tetrameric complex as predicted by AlphaFold-Multimer, it is possible that these may form a structural component of centrioles. Future work will be necessary to test these possibilities. Together, our experiments indicate that TEDC1, TEDC2, TUBD1, and TUBE1 physically interact in a complex and are recruited together to centrioles.
 
-## Loss of TEDC1, TEDC2, TUBD1, or TUBE1 results in centrioles with aberrant ultrastructure
+### Loss of TEDC1, TEDC2, TUBD1, or TUBE1 results in centrioles with aberrant ultrastructure
 
 Next, we determined how the loss of these proteins, and the triplet microtubules themselves, affect centriole ultrastructure and protein composition. Because centrioles are constitutively formed de novo every cell cycle in our mutant cells, we incorporated two controls in our analysis: procentrioles undergoing normal parental-mediated centriole duplication in control (RPE-1 p53-/-) cells, and centrioles formed in RPE-1 p53-/- cells de novo in the first cell cycle after centrinone washout (Wong et al., 2015). For each of the two control and four mutant cell lines, cells were synchronized by mitotic shake off, resulting in coverslips enriched for cells in late S- and G2-phases, with a minor population in M-phase. Synchronized cells were then expanded using U-ExM and stained for centriolar markers.
 
 We first tested whether the microtubules of mutant centrioles could be modified by acetylation of alpha-tubulin. During centriole formation, acetylation is thought to proceed from the proximal toward the distal end and from the A- to the C-tubules (Sahabandu et al., 2019). We found that antibodies against acetylated alpha-tubulin stained mutant centrioles well (Figure 4B), indicating that centrioles with only singlet A-tubules can be acetylated.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-v1.jpg)
+
+**Figure 4.:** (A) Lengths of expanded centrioles from cells of the indicated cell cycle stages. Lengths were adjusted for the gel expansion factors. Cells were synchronized in S/G2/M and S-phase cells were marked with PCNA. For each genotype, the differences between S and G2 phase centriole lengths are statistically significant (p<0.0001, Welch’s t-test). (B) U-ExM images of centrioles stained for alpha-tubulin and acetylated tubulin. (C) U-ExM of centrioles in S or G2 phase stained with monoE (GT335) antibody. (D) U-ExM of control centrioles in S or G2 phase stained with acetylated tubulin and polyE antibodies (Ei) U-ExM of centrioles in G2-phase stained with acetylated tubulin (cyan) and POC5 (magenta) antibodies. POC5 is present in the central core of control procentrioles and de novo centrioles and absent from mutants. (Eii) U-ExM of centrioles in G2 phase stained with acetylated tubulin (cyan) and WDR90 (magenta) antibodies. WDR90 is present in the central core of control procentrioles and de novo centrioles, and absent from mutants. (F–I) U-ExM of centrioles in S and G2 phase stained for alpha tubulin (cyan) or acetylated tubulin (Ac Tub, cyan) and the following antibodies in magenta: (F) SASS6, (G) CEP135, (H) STIL, (I) CPAP. In control centrioles, these proteins are limited to the proximal end. In mutant centrioles, these proteins are present at the proximal end in S phase centrioles and elongate throughout the entire centriole in G2 phase. Images were acquired with a Yokogawa CSU-W1 SoRA with 2.8 x relay and deconvolved with 10 iterations using Microvolution. Scale bars: 1 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F) U-ExM of centrioles in S and G2 phase stained for acetylated tubulin (cyan) and the following proteins in magenta: (A) CEP44, (B) CETN2, (C) CP110, (D) CEP120, (E) gamma-tubulin, (F) CEP295. Scale bars = 1 µm. Images were acquired with a Yokogawa CSU-W1 SoRA with 2.8 x relay and deconvolved with 10 iterations using Microvolution. (G) Measurements of the widths of parental centrioles from each experiment as a readout of expansion factor, including the cell cycle analyses in Figure 4A and B. Centriole widths were a mean of 1.0 um, corresponding to a fourfold expansion factor.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Western blot of control (RPE1 TP53-/-), TEDC1-/-, TEDC2-/-, TUBD1-/-, TUBE1-/-, SASS6-/- cell lysates, immunoblotted for SASS6. Total protein stain (Revert) serves as a loading control. (B) Western blot of control (RPE1 TP53-/-), TEDC1-/-, TEDC2-/-, TUBD1-/-, TUBE1-/- cell lysates, immunoblotted for STIL. Total protein stain (Revert) serves as a loading control. (C) Western blot of control (RPE1 TP53-/-), TEDC1-/-, TEDC2-/-, TUBD1-/-, TUBE1-/- cell lysates, immunoblotted for CPAP. Total protein stain (Revert) serves as a loading control. (D) Western blot of control (RPE1 TP53-/-), TEDC1-/-, TEDC2-/-, TUBD1-/-, TUBE1-/- cell lysates, immunoblotted for POC5. Total protein stain (Revert) serves as a loading control.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Mutant centrioles have over-elongated CEP135. (A) control procentrioles, n=29 centrioles; (B) de novo centrioles, n=42 centrioles; (C) TUBD1-/-, n=32 centrioles; (D) TUBE1-/-, n=30 centrioles; (E) TEDC1-/-, n=23 centrioles; (F) TEDC2-/-, n=36 centrioles. For each panel, representative U-ExM images of centrioles in S and G2 phase are shown. These are the same centrioles as shown in Figure 4G and were stained for alpha-tubulin (cyan), acetylated tubulin (yellow), and CEP135 (magenta). Scale bars = 1 µm. Graphs: Each column represents a centriole, for which the proximal and distal positions of CEP135 (magenta), acetylated tubulin (yellow) and alpha-tubulin (cyan) are displayed. Centrioles were arranged from shortest to longest. Numbers were adjusted for expansion factor. Lines of best fit were added for CEP135 position: control procentrioles (dashed), de novo centrioles (dotted), and mutants (solid).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Mutant centrioles have over-elongated SASS6. (A) control procentrioles, n=53 centrioles; (B) de novo centrioles, n=44 centrioles; (C) TUBD1-/-, n=39 centrioles; (D) TUBE1-/-, n=44 centrioles; (E) TEDC1-/-, n=34 centrioles; (F) TEDC2-/-, n=30 centrioles. Each column represents a centriole, for which the proximal and distal positions of SASS6 (magenta) and alpha-tubulin (cyan) are displayed. Centrioles were arranged from shortest to longest. Numbers were adjusted for expansion factor. Lines of best fit were added for SASS6 position: control procentrioles (dashed), de novo centrioles (dotted), and mutants (solid).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Mutant centrioles have smaller widths compared to controls. (A) control procentrioles, n=82 centrioles; (B) de novo centrioles, n=86 centrioles; (C) TUBD1-/-, n=64 centrioles; (D) TUBE1-/-, n=74 centrioles; (E) TEDC1-/-, n=56 centrioles; (F) TEDC2-/-, n=62 centrioles. Centriole widths and lengths measured by alpha-tubulin antibody are graphed, adjusted for expansion factor. A line of best fit was added (red).
 
 We next tested whether mutant centrioles were capable of elongating during the cell cycle. In our expansion gels of cells enriched in late S and G2 phases, we used PCNA to mark S-phase cells and co-stained with acetylated tubulin to mark centrioles. Similar to a recently published report, we also found a range of centriole lengths in S- and G2-phases (Laporte et al., 2024). In S-phase, centrioles were short in all conditions. In G2-phase, centrioles elongated in all conditions, and mutant centrioles reached approximately similar lengths as control centrioles (Figure 4A). By contrast, mutant centriole widths did not increase and centrioles remained narrow, as we previously reported (Figure 4—figure supplement 5 and Wang et al., 2017). These results indicate that centrioles with singlet microtubules can elongate to the same overall length as control centrioles in G2 phase. Consistent with this hypothesis, CEP120, a protein involved in regulating centriole length (Comartin et al., 2013; Lin et al., 2013b; Mahjoub et al., 2010), was present and properly localized within mutant centrioles (Figure 4—figure supplement 1D).
 
@@ -81,7 +133,7 @@ Next, we tested whether the centriole proximal end might be properly formed in m
 
 Elongation of the proximal end of centrioles may also indicate an overall defect in centriole polarity. To test this hypothesis, we next determined whether these mutant centrioles might properly recruit proteins to their distal ends. We found that CETN2 and CP110, two proteins of the distal centriole, were localized to mutant centrioles and clearly marked one end of the centriole barrel in both S-phase and G2-phase (Figure 4—figure supplement 1B, C). We conclude that proximal-to-distal centriole polarity was unaffected in mutant centrioles, and proximal end elongation did not affect the recruitment of proteins to the centriole distal end. Together, these results indicate that centrioles lacking compound microtubules are unable to properly regulate the length of the proximal end.
 
-## Mutant centrioles elongate further in mitosis before fragmenting
+### Mutant centrioles elongate further in mitosis before fragmenting
 
 Centrioles lacking triplet microtubules undergo a futile cycle of formation and disassembly, but the mechanisms underlying disassembly are not well-understood. We first tested whether centriole loss in mutant centrioles may be due to loss of CEP295. CEP295 promotes centriole-to-centrosome conversion, a process in which pericentriolar material is recruited to newly-formed procentrioles. Cells lacking CEP295 form centrioles that disintegrate during the cell cycle due to a failure to undergo centriole-to-centrosome conversion (Izquierdo et al., 2014). Using U-ExM, we found that CEP295 was present and normally localized within mutant centrioles in both S- and G2-phases (Figure 4—figure supplement 1F). We conclude that centriole loss in our mutants is unlikely to be due to loss of CEP295 localization, and therefore that TEDC1, TEDC2, TUBD1, and TUBE1 are likely part of a different pathway required for centriole stability through the cell cycle.
 
@@ -89,7 +141,7 @@ Next, we used U-ExM to visualize centriole loss during mitosis. We stained for t
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/98704/elife-98704-fig5-v1.jpg)
 
-**Figure 5.:** U-ExM of centrioles stained for monoE (GT335, cyan), CP110 (yellow) and SASS6 (magenta). (A) A prometaphase cell with centrioles formed de novo after centrinone washout (B) An anaphase cell with centrioles formed de novo (C) A prometaphase TUBD1 cell (-/-D) A telophase TUBD1 cell (-/-E) A prometaphase TUBE1 cell (-/-F) An anaphase TUBE1 cell. Scale bars: 1 um. Images were acquired with a Yokogawa CSU-W1 SoRA with 2.8 x relay.-/-
+**Figure 5.:** U-ExM of centrioles stained for monoE (GT335, cyan), CP110 (yellow) and SASS6 (magenta). (A) A prometaphase cell with centrioles formed de novo after centrinone washout (B) An anaphase cell with centrioles formed de novo (C) A prometaphase TUBD1-/- cell (D) A telophase TUBD1-/- cell (E) A prometaphase TUBE1-/- cell (F) An anaphase TUBE1-/- cell. Scale bars: 1 um. Images were acquired with a Yokogawa CSU-W1 SoRA with 2.8 x relay.
 
 ## Discussion
 
@@ -111,11 +163,427 @@ In conclusion, this work, along with our previously published study, identifies 
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium acrylate</td>
+      <td>AK Scientific or Sigma Aldrich</td>
+      <td>AK Sci cat# R624, Sigma cat# 408220</td>
+      <td>There is batch to batch variability in acrylate purity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>40% Acrylamide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A4058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>36–38% Formaldehyde</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# F8775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N′-Methylenebisacrylamide solution (BIS)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M1533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium Persulfate (APS)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N,N',N'-Tetramethylethylenediamine (TEMED)</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dodecyl sulfate (SDS)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 75746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Sodium chloride (NaCl)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# S9888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris base</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 93362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride (KCl)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithiothreitol (DTT)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# D9779</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BP381-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# P1379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetlyated- tubulin, clone 6-11B-1 (monoclonal mouse IgG2b)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T6793, RRID:AB_477585</td>
+      <td>UExM (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetyl-alpha-tubulin, Lys40 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5335, RRID:AB_10544694</td>
+      <td>UExM 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrin, clone 20H5 (monoclonal mouse IgG2a)</td>
+      <td>EMD Millipore</td>
+      <td>RRID:AB_10563501</td>
+      <td>IF 1:200, UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centrin3, clone 3e6 (monoclonal mouse IgG2b)</td>
+      <td>Novus Biological</td>
+      <td>RRID:AB_537701</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CENPJ (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 11517–1-AP, RRID:AB_2244605</td>
+      <td>WB 1:1000 UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cep44 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 24457–1-AP, RRID:AB_2879557</td>
+      <td>UExM 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cep120 (rat polyclonal)</td>
+      <td>Gift from Moe Mahjoub</td>
+      <td></td>
+      <td>Betleja et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cep135 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 24428–1-AP, RRID:AB_2879543</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cep295 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA038596, RRID:AB_10672720</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CP110 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 12780–1-AP, RRID:AB_10638480</td>
+      <td>IF 1:200, UExM 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag, clone M2 (monoclonal mouse IgG1)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>WB 1:2000, UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-gamma-tubulin, clone GTU-88 (monoclonal mouse IgG1)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477584</td>
+      <td>IF 1:1000, UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (monoclonal mouse IgG2a)</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_314692</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-POC5 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>RRID:AB_10949152</td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-POC5 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A303-341A, RRID:AB_10971172</td>
+      <td>WB 1:1000 UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-polyglutamylation, clone GT335 (monoclonal mouse IgG1)</td>
+      <td>AdipoGen</td>
+      <td>Cat# AG-20B-0020, RRID:AB_2490210</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-polyglutamylate-chain, polyE (rabbit polyclonal)</td>
+      <td>AdipoGen</td>
+      <td>Cat# AG-25B-0030, RRID:AB_2490540</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SASS6 (monoclonal mouse IgG2b)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-81431, RRID:AB_1128357</td>
+      <td>IF, WB, UExM 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STIL (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab89314, RRID:AB_2197878</td>
+      <td>WB 1:2000 UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (monoclonal mouse IgG2a)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R960-25, RRID:AB_2556564</td>
+      <td>WB 1:1000 UExM 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WDR90 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientfic</td>
+      <td>Cat# PA5-61943, RRID:AB_2649628</td>
+      <td>UExM 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG1, 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A21121, RRID:AB_2535764</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG2a, 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21131, RRID:AB_2535771</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG2b, 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21141, RRID:AB_2535778</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L), 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>UExM 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG1, 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21124, RRID:AB_2535766</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG2a, 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21134, RRID:AB_2535773</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG2b, 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21144, RRID:AB_2535780</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-rabbit IgG (H+L), 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11036, RRID:AB_10563566</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG3, 594</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21155, RRID:AB_2535785</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rat IgG (H+L), 594</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11007, RRID:AB_10561522</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG1, 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21240, RRID:AB_2535809</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG2a, 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21241, RRID:AB_2535810</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-Mouse IgG2b, 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21242, RRID:AB_2535811</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L), 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A32733, RRID:AB_2633282</td>
+      <td>UExM 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-TUBD1 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA027090, RRID:AB_1858457</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-TUBE1 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA032074, RRID:AB_10601216</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti C14orf80 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA039049, RRID:AB_2676320</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti C16orf59 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HPA055389, RRID:AB_2732595</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>680 Donkey anti rabbit (H+L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A10043, RRID:AB_2534018</td>
+      <td>WB 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>800 Donkey anti rabbit (H+L)</td>
+      <td>Li-COR</td>
+      <td>Cat# 926–32213, RRID:AB_621848</td>
+      <td>WB 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>680 Donkey anti mouse (H+L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A10038, RRID:AB_11180593</td>
+      <td>WB 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>800 Donkey anti mouse (H+L)</td>
+      <td>Li-COR</td>
+      <td>Cat# 926–32212, RRID:AB_621847</td>
+      <td>WB 1:20,000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 Human hTERT RPE-1 TP53−/− cells were a gift from Meng-Fu Bryan Tsou (Memorial Sloan Kettering Cancer Center) and were cultured in DMEM/F-12 (Corning) supplemented with 10% Cosmic Calf Serum (CCS; HyClone). Human HEK293T cells for lentivirus production (see below) were obtained from the ATCC and cultured in DMEM (Corning) supplemented with 10% CCS. hTERT RPE-1 and HEK293T/17 cells were authenticated using STR profiling using CODIS loci. All other cell lines used were derived from hTERT RPE-1 TP53−/− cells. Stable TP53−/−; TEDC1−/− and TP53−/−; TEDC2−/− knockout cell lines were made in the hTERT RPE-1 TP53−/− cells by CRISPR/Cas9 (see below). For rescue experiments, clonal knockout cell lines were rescued using lentiviral transduction (see below). All cells were cultured at 37 °C under 5% CO2, and are mycoplasma-free (Uphoff and Drexler, 2011).
 
-## Generation of TEDC1-/- and TEDC2-/- cells and rescue cell lines
+### Generation of TEDC1-/- and TEDC2-/- cells and rescue cell lines
 
 TEDC1-/- and TEDC2-/- cells were generated by CRISPR/Cas9 mediated gene editing using a recombinantly produced, purified Cas9 protein (Cas9-NLS, QB3 Macrolab, Berkeley) and chemically synthetized two-component gRNA (crRNA:tracrRNA, Alt-R CRISPR-Cas9 system, IDT). For increased efficiency, two gRNAs, both targeting the 5’ end of each gene, were used at the same time. Target sequences were: 5’-CGCCAAGTTCGACCGTCCGG-3’ and 5’-CGTCCAATCACCGCACGGGC-3’ for TEDC1, and 5’-CGCACAGCGACAATTGCAAT-3’ and 5’-CACCGGCGCGAGCAGCCCGC-3’ for TEDC2.
 
@@ -129,37 +597,37 @@ Primers used for genotyping were: 5’CCCTGCCGACGCAGTGATTGG3’ and 5’CAGGGAGT
 
 To rescue the mutations, Halotag-3xFlag-tagged TEDC1 or APEX-V5-tagged TEDC2 were introduced into the mutant cells using lentiviral transduction as described below.
 
-## Lentivirus production and viral transduction
+### Lentivirus production and viral transduction
 
 Recombinant lentiviruses were made by cotransfection of HEK293T cells with the respective transfer vectors (TEDC1-Halotag-3xFlag and TEDC2-V5-APEX2), second-generation lentiviral cassettes (packaging vector psPAX2, pTS3312 and envelope vector pMD2.G, pTS3313) using calcium phosphate-mediated transfection. Briefly, transfection mixture was made with CaCl2, 2 x HBS (50 mM Hepes, 10 mM KCl, 12 mM dextrose, 280 mM NaCl, 1.5 mM Na2HPO4x7H2O, pH 7.05), and plasmids. Cells were treated with 25 µM chloroquine immediately before transfection, then the transfection mixture was added to cells. The medium was changed 5–6 hr after transfection, and viral supernatant was harvested after an additional 48 and 72 hr. Recipient cells (RPE-1 TP53−/−; TEDC1−/− and TP53−/−; TEDC2−/− and TP53−/−; TUBD1−/− and TP53−/−; TUBE1−/−) were transduced with viral supernatant and 8 µg/mL Sequabrene. Transduced cells were expanded to 10 cm dishes.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were grown on poly-L-lysine-coated #1.5 glass coverslips (Electron Microscopy Sciences). Cells were fixed with −20 °C methanol for 15 min. Coverslips were then washed with PBS for 10 min and blocked with PBS-BT (3% BSA, 0.1% Triton X-100, 0.02% sodium azide in PBS) for 30 min. Coverslips were incubated with primary antibodies diluted in PBS-BT for 1 hr, washed with PBS-BT, incubated with secondary antibodies and DAPI diluted in PBS-BT for 1 hr, then washed again. Samples were mounted using Mowiol (Polysciences) in glycerol containing 1,4,-diazobicycli-[2.2.2]octane (DABCO, Sigma-Aldrich) antifade.
 
-## Cell cycle synchronization
+### Cell cycle synchronization
 
 For cell cycle analyses in Figure 1, cells were seeded onto coverslips, then synchronized in G0/G1 by serum withdrawal for 24 hr, or in G2 with 10 µM RO-3306 (Adipogen) for 24 hr. Cells were fixed for immunofluorescence and analyzed for centrin/CP110 presence. Three biological replicates were performed.
 
 For Figures 4 and 5, mitotic shakeoff was performed on asynchronously growing cells. One pre-shake was performed to improve synchronization. Cells were fixed for U-ExM and expanded as below.
 
-## Expansion microscopy
+### Expansion microscopy
 
-## Ultrastructure expansion microscopy (U-ExM)
+#### Ultrastructure expansion microscopy (U-ExM)
 
 Cells were grown on poly-D-lysine-coated #1.5 glass coverslips (Electron Microscopy Sciences) and fixed with −20 °C methanol for 15 min, then washed with PBS. U-ExM was performed as previously described (Gambarotto et al., 2019): coverslips were incubated overnight in an acrylamide–formaldehyde anchoring solution (AA/FA; 0.7% formaldehyde, 1% acrylamide in PBS) at 37 °C. Gelation was allowed to proceed in monomer solution (19% sodium acrylate, 10% acrylamide, 0.1% bis-acrylamide, 0.5% ammonium persulfate-APS, 0.5% TEMED) for 1 hr at 37 °C. Gels were heated in denaturation buffer (200  mM SDS, 200  mM NaCl, 50  mM Tris-HCl pH 9) at 95 °C for 1  hr. After denaturation buffer was removed, gels were washed with multiple water rinses and allowed to expand in water at room temperature overnight. Small circles of each expanded gel (∼5  mm in diameter) were excised and incubated with primary antibodies diluted in PBS-BT (3% BSA, 0.1% Triton X-100 in PBS) on a nutator at 4 °C overnight. The next day, gels were washed three times with PBS-BT buffer and incubated with secondary antibodies and 5  μg/ml DAPI diluted in PBS-BT, protected from light, on a nutator at 4 °C overnight.
 
 For Figure 4, Figure 4—figure supplement 3 and Figure 4—figure supplement 4 when co-staining with alpha-tubulin, centrioles were fixed with 1.4% formaldehyde and 2% acrylamide for 3–5 hr at 37 °C. U-ExM was performed as described above. Gels were pre-incubated with anti alpha-tubulin antibody at 4 °C overnight prior to staining with other primary antibodies.
 
-## Expansion microscopy as per Kong et al
+#### Expansion microscopy as per Kong et al
 
 For Figure 2—figure supplement 1C,D, expansion microscopy was performed similar to Kong et al., 2024. Coverslips were incubated in 4% formaldehyde in 1 x PBS for 1 hr. The coverslips were then incubated overnight in an acrylamide–formaldehyde anchoring solution (AA/FA; 4% formaldehyde, 30% acrylamide in PBS) at 40 °C. Gelation was allowed to proceed in monomer solution (7% sodium acrylate, 20% acrylamide, 0.04% bis-acrylamide, 0.5% ammonium persulfate-APS, 0.5% TEMED in PBS) for 20 min on ice followed by 1 hr at room temperature. Gels were heated in denaturation buffer (200  mM SDS, 200  mM NaCl, 50  mM Tris-HCl pH 9) at 90 °C for 1  hr. After denaturation buffer was removed, gels were washed with multiple water rinses and allowed to expand in water at room temperature overnight. Small circles of each expanded gel (∼5  mm in diameter) were excised and incubated with primary antibodies diluted in PBS-BT (3% BSA, 0.1% Triton X-100 in PBS) at 4 °C overnight. The next day, gels were washed three times with PBS-BT buffer and incubated with secondary antibodies and 5  μg/ml DAPI diluted in PBS-BT, protected from light, at 4 °C overnight.
 
-## Expansion gel imaging (all protocols)
+##### Expansion gel imaging (all protocols)
 
 Immunostained gels were washed once with PBS and at least three times with water, and placed in a glass-bottomed 35  mm plate for imaging. All U-ExM images were acquired as z-stacks collected at 0.27 μm intervals using a confocal Zeiss Axio Observer microscope (Carl Zeiss) with a PlanApoChromat 1.4 NA 63×oil immersion objective, a Yokogawa CSU-W1 (Figure 2) or Yokogawa CSU-W1 SoRA head with 2.8 x relay (Figures 4 and 5) and a Photometrics Prime BSI express CMOS camera. Slidebook software (Intelligent Imaging Innovations, 3i) was used to control the microscope system. Deconvolution was performed with Microvolution (Cupertino, CA) using a calculated point spread function (PSF) for 10 iterations. ImageJ (FIJI) was used for image analysis (Schindelin et al., 2012).
 
-## Centriole measurements
+### Centriole measurements
 
 For measuring overall centriole width or length, z-stacks of U-ExM images were measured using ImageJ (FIJI) on maximum projections. Only centrioles that were in perfect longitudinal or cross-section were measured. Three measurements were made per centriole and averaged. Measurements were adjusted for gel expansion factor. Statistical analysis was performed with Graphpad Prism.
 
@@ -167,23 +635,23 @@ For measuring protein position as in Figure 4—figure supplement 3 and Figure 4
 
 Welch’s t-test was chosen for statistical analysis in Figure 4A, which is an unpaired t test that does not assume that the two datasets have the same variance.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For ultrastructural analysis of centrosomes by TEM, RPE-1 TP53-/-; TEDC1-/- and RPE-1 TP53-/-; TEDC2-/- cells were synchronized in G2/M with 10 µM RO-3306 for 24 hrs. Cells were trypsinized, resuspended in complete media and centrifuged at 800 × g for 5 min. The pellet was collected in a 14 mL tube and fixed in 2% paraformaldehyde/2.5% glutaraldehyde (Ted Pella Inc, Redding, CA) in 100 mM cacodylate buffer, pH 7.2 for 2 hr at room temperature. Samples were washed in cacodylate buffer and postfixed in 1% osmium tetroxide (Ted Pella Inc)/1.5% potassium ferricyanide (Sigma, St. Louis, MO) for 1 hr. Samples were then rinsed extensively in dH2O prior to en bloc staining with 1% aqueous uranyl acetate (Ted Pella Inc) for 1 hr. Following several rinses in dH2O, samples were dehydrated in a graded series of ethanol and embedded in Eponate 12 resin (Ted Pella Inc). Ultrathin sections of 95 nm were cut with a Leica Ultracut UCT ultramicrotome (Leica Microsystems Inc, Bannockburn, IL), stained with uranyl acetate and lead citrate, and viewed on a JEOL 1200 EX transmission electron microscope (JEOL USA Inc, Peabody, MA) equipped with an AMT 8 megapixel digital camera and AMT Image Capture Engine V602 software (Advanced Microscopy Techniques, Woburn, MA).
 
 Symmetrization of TEM images was performed with centrioleJ.
 
-## TEDC1 and TEDC2 pulldowns
+### TEDC1 and TEDC2 pulldowns
 
 Cells stably expressing TEDC1-Halotag-3xFlag or TEDC2-V5-APEX2 were lysed in 50 mM Tris pH7.5, 150 mM NaCl, 1% Triton X-100, 1 mM DTT, Halt protease and phosphatase inhibitor cocktail (ThermoFisher Scientific) for 30 min on ice, then cleared by centrifugation at 21,000 × g for 20 min. Protein concentration was determined by Pierce BCA Protein Assay - Reducing Agent Compatible (ThermoFisher Scientific). Each cell lysate was incubated with 25 µL of equilibrated Chromotek Halo-Trap Magnetic Agarose (Proteintech) or Chromotek V5-Trap Magnetic Agarose (Proteintech) for 1 hr at 4 °C on a nutator. Beads were washed using a magnetic separator rack. Elution was performed by adding 80 µL of 2 x SDS loading buffer (100 mM Tris pH 6.8, 4% SDS, 20% glycerol, 100 mM DTT), boiling the beads for 5 min at 95 °C, then separating the eluate with a magnetic separator rack. Samples were loaded on SDS-PAGE and transferred for western blotting. Three biological replicates were performed.
 
-## Western blotting
+### Western blotting
 
 For Figure 4—figure supplement 2, samples were lysed in 50 mM Tris pH7.5, 150 mM NaCl, 1% Triton X-100, 1 mM DTT, Halt protease and phosphatase inhibitor cocktail (Thermo Fisher Scientific) for 30 min on ice, then cleared by centrifugation at 21,000 × g for 20 min. Protein concentration was determined by Pierce BCA Protein Assay - Reducing Agent Compatible (Thermo Fisher Scientific). Equal amounts of protein (20–40 µg) were loaded per lane. For Figure 3, samples were loaded after pulldowns.
 
 Proteins were separated by SDS-PAGE and transferred to nitrocellulose (LiCOR Biosciences) in transfer buffer (192 mM Glycine, 25 mM Tris, 20% ethanol). Membranes were blocked with 5% milk in TBST (137 mM NaCl, 25 mM Tris, 2.7 mM KCl, 0.1% Tween-20) at room temp for 1 h, then washed three times with TBST for 5 min each wash. Membranes were incubated with primary antibodies overnight at 4°C on a nutator. The next day, membranes were washed three times with TBST for 5 min each wash and incubated with secondary antibodies at room temperature for 2.5 hr. Membranes were washed again with TBST for 5 min each wash and then imaged with the LiCOR Odyssey XF imager and analyzed using Image Studio (LiCOR Biosciences). Three biological replicates were performed.
 
-## Antibodies
+### Antibodies
 
 Primary antibodies used for immunofluorescence and U-ExM and dilutions in PBS-BT: mouse IgG2b anti-acetylated-tubulin, clone 6-11B-1 (1:1000,Sigma-Aldrich Cat# T6793, RRID:AB_477585), rabbit anti-acetyl-α-tubulin (Lys40) (1:100, Cell Signaling Technology Cat# 5335, RRID:AB_10544694), mouse IgG2b anti-centrin3, clone 3e6 (1:1000, Novus Biological, RRID:AB_537701), mouse IgG2a anti-centrin, clone 20H5 (IF 1:200, UExM 1:500, EMD Millipore, RRID:AB_10563501), rat anti-Cep120 (1:1000, gift from Moe Mahjoub Betleja et al., 2018), rabbit anti-Cep135 (1:500, Proteintech Cat# 24428–1-AP, RRID:AB_2879543), rabbit anti-Cep295 (1:1000, Sigma-Aldrich Cat# HPA038596, RRID:AB_10672720), rabbit anti-Cep44 (1:100, Proteintech Cat# 24457–1-AP, RRID:AB_2879557), rabbit anti-CENPJ (1:500, Proteintech Cat# 11517–1-AP, RRID:AB_2244605), rabbit anti-CP110 (IF 1:200, UExM 1:2000, Proteintech Cat# 12780–1-AP, RRID:AB_10638480), mouse IgG1 anti-Flag, clone M2 (1:500, Sigma-Aldrich Cat# F1804, RRID:AB_262044), mouse IgG1 anti-gamma-tubulin, clone GTU-88 (IF 1:1000, UExM 1:500, Sigma-Aldrich, RRID:AB_477584), mouse IgG2a anti-PCNA (1:500, BioLegend, RRID:AB_314692), rabbit anti-POC5 (for IF: 1:500, Bethyl Laboratories, RRID:AB_10949152), rabbit anti-POC5 (for U-ExM: 1:500, Thermo Fisher Scientific Cat# A303-341A (also A303-341A-T), RRID:AB_10971172), mouse IgG1 anti-polyglutamylation, clone GT335 (1:500, AdipoGen Cat# AG-20B-0020, RRID:AB_2490210), rabbit anti-polyglutamate-chain, polyE (1:500, AdipoGen Cat# AG-25B-0030, RRID:AB_2490540), mouse IgG2b anti-SASS6 (1:200, Santa Cruz Cat# sc-81431, RRID:AB_1128357), rabbit anti-STIL (1:500, Abcam Cat# ab89314, RRID:AB_2197878), mouse IgG2a anti-V5 (1:00, Thermo Fisher Scientific Cat# R960-25, RRID:AB_2556564), rabbit anti-WDR90 (1:100, Thermo Fisher Scientific Cat# PA5-61943, RRID:AB_2649628), chicken anti-GFP antibody (Aves Cat# GFP-1020, RRID:AB_10000240).
 
@@ -191,6 +659,6 @@ For immunofluorescence and U-ExM, AlexaFluor conjugated secondary antibodies (Th
 
 Primary antibodies used for Western blotting and dilutions in TBST: rabbit anti TUBD1 (1:1000, Sigma-Aldrich Cat# HPA027090, RRID:AB_1858457), rabbit anti TUBE1 (1:1000, Sigma-Aldrich Cat# HPA032074, RRID:AB_10601216), rabbit anti C14orf80 (1:1000, Sigma-Aldrich Cat# HPA039049, RRID:AB_2676320), rabbit anti C16orf59 (1:1000, Sigma-Aldrich Cat# HPA055389, RRID:AB_2732595), mouse IgG2b anti SASS6 (1:200, Santa Cruz Biotech Cat# sc-81431, RRID:AB_1128357), rabbit anti STIL (1:2000, Abcam Cat# ab89314, RRID:AB_2197878), rabbit anti CENPJ/CPAP (1:1000, Proteintech Cat# 11517–1-AP, RRID:AB_2244605), rabbit anti POC5 (1:1000, Thermo Fisher Scientific Cat# A303-341A (also A303-341A-T), RRID:AB_10971172), mouse IgG2a anti V5 (1:1000, Thermo Fisher Scientific Cat# R960-25, RRID:AB_2556564), mouse IgG1 anti Flag, clone M2 (1:2000, Sigma-Aldrich Cat# F1804, RRID:AB_262044). Secondary antibodies used for Western blotting: 680 Donkey anti rabbit (H+L) (1:20,000, Thermo Fisher Scientific Cat# A10043, RRID:AB_2534018), 800 Donkey anti rabbit (H+L) (1:20,000, Li-COR Cat# 926–32213, RRID:AB_621848), 680 Donkey anti mouse (H+L) (1:20,000, Thermo Fisher Scientific Cat# A10038, RRID:AB_11180593), 800 Donkey anti mouse (H+L) (1:20,000, Li-COR Cat# 926–32212, RRID:AB_621847).
 
-## Novel materials availability statement
+### Novel materials availability statement
 
 The cell lines generated in this work are available through contacting the corresponding author (Jennifer T. Wang, Department of Biology, Washington University in St. Louis).

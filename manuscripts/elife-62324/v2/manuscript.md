@@ -41,9 +41,9 @@ The codes that were employed to carry out the analyses described in the present 
 
 ## Results
 
-## Contributions of nuisance processes to the BOLD signal
+### Contributions of nuisance processes to the BOLD signal
 
-We examined regional differences in the influence of physiological processes and head motion to the BOLD signal. The physiological processes evaluated here were breathing motion, cardiac pulsatility, and SLFOs associated with changes in heart rate and breathing patterns (see Materials and methods – Nuisance processes evaluated). Scans with LR and RL phase encoding were examined separately as it has been suggested that breathing motion artifacts vary across scans with different phase encoding directions (Raj et al., 2001), and thus we aimed to examine whether other processes such as head motion demonstrate a similar dependence. The contributions of each nuisance process on BOLD signal fluctuations were quantified as the correlation between the nuisance fluctuations of the process in question, modeled using externally recorded physiological measurements, and the BOLD fluctuations 'cleaned' of all other nuisance fluctuations (denoted as rnuis in the Materials and methods section – Isolation of nuisance fluctuations from fMRI data, see also Figure 7). We computed these contributions for each scan and then tested for the presence of consistent patterns across scans with the same phase encoding direction (significance testing using inter-subject surrogates, two-sample t-test, p<0.05, Bonferroni corrected).
+We examined regional differences in the influence of physiological processes and head motion to the BOLD signal. The physiological processes evaluated here were breathing motion, cardiac pulsatility, and SLFOs associated with changes in heart rate and breathing patterns (see Materials and methods – Nuisance processes evaluated). Scans with LR and RL phase encoding were examined separately as it has been suggested that breathing motion artifacts vary across scans with different phase encoding directions (Raj et al., 2001), and thus we aimed to examine whether other processes such as head motion demonstrate a similar dependence. The contributions of each nuisance process on BOLD signal fluctuations were quantified as the correlation between the nuisance fluctuations of the process in question, modeled using externally recorded physiological measurements, and the BOLD fluctuations 'cleaned' of all other nuisance fluctuations (denoted as $r_{nuis}$ in the Materials and methods section – Isolation of nuisance fluctuations from fMRI data, see also Figure 7). We computed these contributions for each scan and then tested for the presence of consistent patterns across scans with the same phase encoding direction (significance testing using inter-subject surrogates, two-sample t-test, p<0.05, Bonferroni corrected).
 
 The results showed distinct regional patterns for each of the nuisance processes. SLFOs mostly affected sensory regions, including the visual and somatosensory cortices (particularly of the face) (Figure 1A). Phase encoding was not found to modulate the magnitude of the SLFOs contributions on the BOLD signal (Figure 1A). Head motion exhibited the largest effect in the somatosensory and visual cortices (Figure 1B). Intriguingly, the effect in the visual cortex was highest in the right hemisphere for LR phase encoding, but highest in the left hemisphere for RL phase encoding (Figure 1B). Breathing motion effects were more pronounced in prefrontal, parietal and temporal brain regions (Figure 1C). Further, breathing motion had a much larger impact on the left hemisphere when the phase encoding was LR, whereas the reverse pattern was observed for RL phase encoding (Figure 1C). Cardiac pulsatility was highest in regions such as the visual and auditory cortices, as well as the insular cortex (Figure 1D).
 
@@ -51,13 +51,37 @@ The results showed distinct regional patterns for each of the nuisance processes
 
 **Figure 1.:** T-score maps of the correlation between each nuisance process and BOLD fMRI fluctuations (raw data) for (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility, computed within each parcel of the Gordon atlas (nonparametric permutation test, p<0.05, FDR corrected). The tests were performed for each phase encoding separately. The physiological fluctuations were obtained from simultaneous external recordings. These results illustrate the cortical regions most affected by each nuisance process.
 
-## Physiological and head motion signatures in static FC
+### Physiological and head motion signatures in static FC
 
 To examine the effect of physiological fluctuations and head motion in static FC, we developed a framework that quantifies the extent to which functional connections are influenced by a nuisance process at the individual scan level. Briefly, synthetic datasets were generated for each scan based on the contributions of the examined nuisance processes within each ROI (see Materials and methods – Isolation of nuisance fluctuations from fMRI data). These datasets retained the variance explained by nuisance fluctuations and replaced the remaining variance (often considered as the ‘neural’ variance) with random signals generated through an autocorrelated process. This framework allowed us to compute FC matrices that illustrate the whole-brain connectome profiles arising from the nuisance processes of interest (see Materials and methods – Estimation of static and time-varying functional connectivity).
 
 The group-averaged static FC matrices across all 1568 scans revealed consistent whole-brain connectome patterns for SLFOs, head motion and breathing motion (Figure 2A–C). SLFO-based connectivity profiles exhibited strong positive correlations for all edges of the FC matrix, particularly for edges within the visual network, as well as between the visual network and the rest of the brain (Figure 2A). Head motion mainly influenced functional connections within the visual and sensorimotor networks, as well as edges within the DMN (Figure 2B). Note that even though areas in both the visual and sensorimotor networks were influenced by motion artifacts (Figure 1B), we did not observe strong correlations between the two aforementioned networks. This is not entirely surprising, as two brain areas may be associated with a different linear combination of head motion nuisance regressors and, thus, the correlation between the region-specific motion-induced fluctuations can in principle be around zero. Breathing motion exhibited an intriguing chess-like pattern, with both positive and negative correlations (Figure 2C, lower triangular matrix). Based on this observation, we subsequently reordered the ROIs with respect to their hemisphere, which revealed that positive correlations were mostly confined between ROIs of the same hemisphere, whereas correlations between hemispheres were close to zero or even negative (Figure 2C, upper triangular matrix). Even when scans with LR and RL phase encoding were averaged separately, both hemispheres exhibited increased within-hemisphere connectivity (Figure 2—figure supplement 1C). Nonetheless, the connectome profile of breathing motion exhibited clear differences between phase encoding directions, whereas all other nuisance processes did not exhibit perceivable differences (Figure 2—figure supplement 1). Finally, cardiac pulsatility did not exhibit a characteristic spatial pattern and the group-averaged correlation values were low, suggesting that it does not affect static FC in a systematic manner across subjects (Figure 2D).
 
-## Capability of preprocessing strategies to remove the nuisance signatures on static FC
+![Figure 2.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Group averaged nuisance FC matrices across all 1568 scans for (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility. The lower triangular matrices show the FC value for each network pair. The upper triangular matrices show FC values from the lower triangular averaged within network pairs (A, B, D panels), or the FC value for each network pair reordered according to left/right hemisphere (C panel). These results demonstrate that nuisance fluctuations induce heterogeneous whole-brain connectivity profiles which, if unaccounted for, can result in biased estimates functional connectivity. (E–H) Distribution of Pearson correlation coefficients across all 1568 scans between the ‘neural’ FC matrix for different preprocessing strategies and nuisance FC matrices associated to (E) SLFOs, (F) head motion, (G) breathing motion, and (H) cardiac pulsatility. Correlation values were Fisher z transformed. SLFOs, head motion and breathing motion were found to confound the FC matrices more severely (E–G). GSR effectively removed the effects of SLFOs, while more aggressive preprocessing pipelines mitigated the effects of head motion, breathing motion and cardiac pulsatility.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Group averaged nuisance FC matrices across 784 scans based on their LR and RL phase encoding direction for (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility. The lower triangular matrices show the FC value for each network pair. The upper triangular matrices show FC values from the lower triangular averaged within network pairs (A, B, D panels), or the FC value for each network pair reordered according to left/right hemisphere (C panels).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Distribution of Pearson correlation coefficients across all 1568 scans between the ‘neural’ FC matrix after each preprocessing pipeline and nuisance FC matrices associated to SLFOs, both when the global signal was computed across vertices in surface space (left column), and when the global signal was computed across the whole brain in volumetric space (right column). Correlation values were Fisher z transformed.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Distribution of Pearson correlation coefficients across all 1568 runs between the ‘neural’ FC matrix after each preprocessing pipeline and nuisance FC matrices associated to (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility, when physiological regressors obtained from model-based techniques were included (right column) or not (left column) as nuisance regressors in the preprocessing strategies. Correlation values were Fisher z transformed.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Plot of the correlation between the global signal (GS) and SLFOs versus the similarity of the raw data with the SLFOs signature, before (left) and after (right) GSR. The red dots highlight scans that exhibit a negative correlation with the SLFO signature after GSR. (B) Averaged matrices for the scans highlighted in red in (A). (C) Same plot as in (A), but in this case the red dots illustrate scans that exhibited a zero correlation with the SLFO signature after GSR. (D) Averaged matrices for the scans highlighted in red in (C).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–D) Group averaged ‘physiological’ FC across all 1568 scans for (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility. The lower triangular matrices show the FC value for each network pair. The upper triangular matrices show FC values from the lower triangular averaged within network pairs (A, B, D panels), or the FC value for each network pair reordered according to left/right hemisphere (C panel). (E–H) Distribution of Pearson correlation coefficients across all 1568 scans between the ‘neural’ FC matrix after each preprocessing pipeline and nuisance FC matrices associated to (E) SLFOs, (F) head motion, (G) breathing motion, and (H) cardiac pulsatility. Correlation values were Fisher z transformed.
+
+### Capability of preprocessing strategies to remove the nuisance signatures on static FC
 
 To examine the capability of various preprocessing strategies to reduce the effects introduced by physiological processes and head motion on static FC, we computed for each scan the similarity of the connectome profile that arises from a nuisance process with the connectome profile calculated from preprocessed fMRI data (considered as the ‘neural’ profile). This similarity reflects the extent to which the ‘neural’ connectome profile extracted after a specific denoising strategy is confounded by physiological and head motion artifacts. A distribution of the similarity values across scans, in this case Pearson’s correlation coefficients, is shown in Figure 2E–H for each preprocessing strategy and nuisance process. We found that SLFOs, head motion and breathing motion had the strongest influence on static FC, based on the similarity of their connectome profiles with the ‘neural’ connectome profiles from the raw data (Figure 2E–H).
 
@@ -65,11 +89,23 @@ The signature induced by SLFOs remained after the MildA, MildB, and FIX pipeline
 
 Finally, we evaluated the addition of model-based nuisance regressors to the preprocessing strategies. Specifically, we added the physiological regressors used to model SLFOs (Kassinopoulos and Mitsis, 2019), cardiac pulsatility and breathing motion (Glover et al., 2000). We found that including the regressor that models SLFOs reduces their effect on static FC for all preprocessing strategies apart from WM50 and WM200, but, in contrast to GSR, the similarity remains well above chance levels (Figure 2—figure supplement 3A). Including the RETROICOR regressors related to breathing motion considerably reduced the breathing motion signature in the raw data and when only using GSR as a preprocessing method; however, none of the preprocessing strategies benefited from including these regressors (Figure 2—figure supplement 3C). On the contrary, including the RETROICOR regressors related to cardiac pulsatility completely removed the effect of the latter for the raw data and the MildA and MildB strategies (Figure 2—figure supplement 3D), suggesting that conservative preprocessing strategies greatly benefit by adding the model-based regressors for cardiac pulsatility.
 
-## Connectome-based identification of individuals
+### Connectome-based identification of individuals
 
 We next investigated the extent to which FC matrices associated to physiological processes and head motion can identify an individual subject, and whether the accuracy of connectome-based fingerprinting is inflated by the examined nuisance processes (see Materials and methods – Connectome-based identification of individual subjects).
 
 We initially considered all the edges of the FC matrices for subject identification (Gordon atlas: 40,755 edges). Accuracy was above chance for all database-target combinations for the nuisance processes, with rates up to 40% (Figure 3A). Breathing motion exhibited an intriguing bimodal distribution: database-target pairs that had the same phase encoding yielded much higher identification rates than database-target pairs with different phase encodings, even if the latter were acquired on the same day. This effect was also observed, although to a lesser extent, for cardiac pulsatility and head motion.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fingerprinting accuracy obtained using the static FC matrices from the generated nuisance datasets whereby non-neural fluctuations were isolated from the BOLD data. Above-chance level accuracy values were obtained for all nuisance processes, suggesting some degree of subject specificity in whole-brain connectivity profiles arises from nuisance fluctuations. (B) Fingerprinting accuracy obtained using the static FC matrices generated from each of the preprocessing strategies evaluated. The pairs of resting-state scans are indicated with different symbols, depending on whether they belong to the same or different day session, as well as whether they have the same phase encoding. Higher fingerprinting accuracy values were observed for white matter denoising approaches (WM50, WM200) compared to milder pipelines and FIX denoising. Both mild and more aggressive pipelines yielded higher subject discriminability for pairs of scans acquired on the same day. GSR increased the fingerprinting accuracy of milder strategies and FIX denoising.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Diagram of the target-database combinations between resting-state scans. (B) Example on how to compute the identification accuracy for a target-database pair. Figure based on Finn et al., 2015.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fingerprinting accuracy obtained using the static FC matrices from the generated nuisance datasets where non-neural fluctuations were isolated from the BOLD data. (B) Fingerprinting accuracy obtained using the static FC matrices generated from each of the preprocessing strategies evaluated.
 
 Identification accuracy was much higher for the ‘neural’ datasets compared to the nuisance datasets, with rates ranging from 52% to 99% (Figure 3B). The MildA, MildB, and FIX techniques considerably improved the accuracy compared to the raw data, and the WM50 and WM200 techniques significantly outperformed all other preprocessing strategies. GSR considerably improved identification accuracy for the MildA, MildB and FIX strategies. Furthermore, we observed that for the raw data, database-target pairs from different days with the same phase encoding showed identification rates as high as the ones from the same day but different phase encoding. In contrast, for all other preprocessing strategies the database-target pairs from the same day were always higher.
 
@@ -81,9 +117,29 @@ We subsequently tested identification accuracy on the basis of within and betwee
 
 Regarding the ‘neural’ datasets, we focused on the most aggressive strategies, namely FIX and WM200. Networks of ‘top-down’ control (FPN, CO, DAN, VAN), as well as the DMN, yielded higher identification accuracy compared to sensorimotor processing networks (Visual, SMd, Aud) for all preprocessing strategies (Figure 4B). These results indicate that FC patterns in higher order association cortices (‘top-down’ control networks) tend to be distinctive for each individual, whereas primary sensory and motor regions (processing networks) tend to exhibit similar patterns across individuals, consistent with previous studies (Finn et al., 2015; Gratton et al., 2018; Horien et al., 2019). We then tested for differences in identification accuracy between the raw data vs. FIX and WM200 data (Figure 4C, p<0.05, Bonferroni corrected, Wilcoxon rank-sum). FIX denoising significantly increased the subject discriminability of connections within and between several top-down control networks, but significantly decreased the subject discriminability of connections between the FPN and SMd, as well as the FPN and Aud networks. Conversely, WM200 denoising significantly increased the subject discriminability of connections within and between all top-down control networks, connections within the Visual and SMd networks, and connections of the DAN with the Visual and SMd network.
 
-## Physiological and head motion signatures in time-varying FC and the effect of preprocessing strategies
+### Physiological and head motion signatures in time-varying FC and the effect of preprocessing strategies
 
 To examine the effect of physiological processes and head motion on time-varying FC estimates, we computed functional connectivity dynamics (FCD) matrices (Hansen et al., 2015) using the generated nuisance and ‘neural’ datasets from each scan, whereby each FCD matrix captures the temporal evolution of FC patterns within a scan. We subsequently computed the similarity of the nuisance and ‘neural’ FCD matrices at the individual level to examine the capability of various preprocessing strategies to reduce the confounds introduced by physiological processes and head motion on time-varying FC. A distribution of the similarity values, in this case Pearson’s correlation coefficients, is shown in Figure 5 for each preprocessing strategy and nuisance process. We observed that the temporal evolution of FC patterns from SLFOs and head motion were similar to the ones observed in the raw data. An illustration of this similarity is shown in Figure 6 for six subjects. On the other hand, the distribution of similarity values for breathing motion and cardiac pulsatility FCD matrices was around zero, indicating the absence of systematic effects on ‘neural’ FCD matrices (Figure 5). Including model-based regressors in the preprocessing pipelines led to a small decrease in the similarity between neural and SLFOs FCD matrices, particularly for mild pipelines and FIX without GSR, even though these decreased similarity values were still above chance levels (Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig5-v2.jpg)
+
+**Figure 5.:** Distribution of Pearson correlation coefficients across all 1568 scans between the ‘neural’ functional connectivity dynamics (FCD) matrix after each preprocessing pipeline and nuisance FCD matrices associated to (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility. Correlation values were Fisher z transformed. Results shown in the top row of each subpanel (raw data) suggest that SLFOs and head motion most severely confound the FC matrices, whereas breathing motion and cardiac pulsatility do not induce artifactual dynamics. None of the examined strategies completely eliminated these effects.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Distribution of similarity (Pearson correlation coefficient) values across all 1568 scans between the ‘neural’ FCD matrix after applying different preprocessing pipelines and the nuisance FCD matrices associated to (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility, when physiological regressors obtained from model-based techniques were not included (left column) or included (right column) as nuisance regressors in the preprocessing strategies. Correlation values were Fisher z transformed.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Distribution of Pearson correlation coefficients across all 1568 scans between the ‘neural’ FCD matrix after each preprocessing pipeline and nuisance FCD matrices associated to (A) SLFOs, (B) head motion, (C) breathing motion, and (D) cardiac pulsatility. Correlation values were Fisher z transformed.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig6-v2.jpg)
+
+**Figure 6.:** Illustrative examples of FCD matrices from specific HCP subjects as obtained from the fMRI data for several pre-processing pipelines (rows 1–6), as well as from SLFOs and head motion (rows 7 and 8, respectively). All the examples are from the HCP scan Rest1_LR. These examples show a clear resemblance between FCD matrices computed from the ‘neural’ datasets and the nuisance processes (SLFOs and head motion). Note that the size of FCD matrices is W×W, where W is the number of sliding windows within a scan.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Illustrative examples of FCD matrices from specific HCP subjects for several pre-processing pipelines (rows 1–6), SLFOs and head motion (rows 7 and 8, respectively). All the examples are from the HCP scan Rest1_LR. These subjects did not exhibit a large resemblance between FCD matrices computed from the ‘neural’ datasets and FCD matrices computed from the nuisance datasets of SLFOs and head motion. Note that the WM200 preprocessing strategy substantially diminished the recurrent FC patterns. Note that the size of FCD matrices is W×W, where W is the number of sliding windows within a scan.
 
 None of the preprocessing pipelines was able to vanish the effects of SLFOs and head motion. However, these effects were considerably reduced by the WM50 and WM200 strategies (Figure 5A–B, Figure 6). FIX denoising was the least successful strategy in terms of reducing the SLFOs’ signature (Figure 5A, Figure 6), similarly to static FC (Figure 2E), and only achieved the same levels of performance as other strategies after GSR. However, even after GSR none of the strategies reached chance levels (Figure 5A), in contrast with the static FC results (Figure 2E). GSR led also to a slight reduction in the similarity between the head motion and ‘neural’ FCD matrices (Figure 5B), as in the case of static FC (Figure 2F).
 
@@ -91,7 +147,7 @@ None of the preprocessing pipelines was able to vanish the effects of SLFOs and 
 
 In this work, we characterized the effects of physiological processes and head motion on static and time-varying estimates of functional connectivity measured with BOLD fMRI. While the BOLD signal is considered a proxy of neural activity via changes in local blood oxygenation, physiological processes and motion artifacts can also induce variations in the BOLD signal, which can in turn lead to confounds in estimates of functional connectivity. Here, we developed an innovative framework to characterize the spatial signature of head motion and physiological processes (cardiac and breathing activity) on estimates of functional connectivity. Our results demonstrated that functional connectivity measures can be influenced by non-neural processes. Specifically, we identified stereotyped whole-brain functional connectivity profiles for SLFOs, head motion and breathing motion (Figure 2A–C), suggesting that these processes introduce a systematic bias in estimates of functional connectivity if they are not properly accounted for. Furthermore, we provided evidence that recurring patterns in time-varying FC can be attributed, to some extent, to SLFOs and head motion (Figure 5, Figure 6). We also assessed the performance of several state-of-the-art preprocessing strategies in mitigating the effects of nuisance processes, and showed that more aggressive preprocessing strategies such as FIX (Salimi-Khorshidi et al., 2014) and WM denoising (Kassinopoulos and Mitsis, 2021a) combined with GSR were the most effective with regard to removing the effects of non-neural processes for both static and time-varying FC analyses (Figure 2E–H, Figure 5, Figure 6). Finally, we evaluated the potential subject specificity of the connectivity profiles associated with physiological and motion confounds, along with their role as hypothetical contributors to connectome fingerprinting accuracy. Interestingly, we found that these non-neural functional connectivity patterns are to some extent subject specific (Figure 3A); however, fMRI data corrected for these confounds increased identification accuracy in connectome fingerprinting (Figure 3B), suggesting that the inter-individual differences in FC that facilitate subject identification are strongly neural and do not largely stem from physiological processes or head motion.
 
-## Spatially heterogeneous contributions of nuisance processes to the BOLD signal
+### Spatially heterogeneous contributions of nuisance processes to the BOLD signal
 
 It is well established that head and breathing motion affect areas at the edges of the brain (Jo et al., 2010; Patriat et al., 2015; Satterthwaite et al., 2013), whereas cardiac pulsatility affects areas near the large cerebral arteries just above the neck (Glover et al., 2000; Kassinopoulos and Mitsis, 2021b). These observations are based on studies that typically examine the brain regions affected by the aforementioned sources of noise on a voxel-wise basis. However, at the voxel level we cannot easily assess whether the average fMRI signal from atlas-based ROIs includes significant contributions from these nuisance processes. In principle, it could be the case that the dynamics of artifacts associated with a specific nuisance process demonstrate significant variability across voxels, and as a result their effects cancel out when averaging voxels within an ROI. In the present study, we assessed the impact and regional variation of these nuisance processes in the Gordon parcellation (Gordon et al., 2016), a widely used atlas in the literature.
 
@@ -99,7 +155,7 @@ SLFOs related to changes in heart rate and breathing patterns were found to affe
 
 Regarding head motion, previous studies found that its effect was more pronounced in prefrontal, sensorimotor, and visual brain regions (Satterthwaite et al., 2013; Yan et al., 2013). However, these studies did not remove breathing artifacts from the realignment parameters, which are present even in single-band datasets (Gratton et al., 2020), and thus were unable to disentangle whether a specific type of motion affected particular brain regions. In the present work, we regressed out breathing motion from the realignment parameters, and observed that sensorimotor and visual areas were strongly affected by head motion (Figure 1B), whereas breathing motion artifacts were more pronounced in the prefrontal cortex and brain regions in the parietal and temporal cortices (Figure 1C). Furthermore, Yan et al. showed that framewise displacement was positively correlated with sensory regions and negatively correlated with prefrontal regions. Collectively, these findings suggest that most regions exhibit an increase in the BOLD signal due to head and breathing motion, whereas the prefrontal cortex may exhibit a decrease in the BOLD signal likely due to breathing-related chest movements.
 
-## Physiological and head motion signatures in static FC
+### Physiological and head motion signatures in static FC
 
 Head motion is considered the biggest source of confound for FC fMRI studies and there is a significant effort from the neuroimaging community toward developing and evaluating preprocessing strategies that mitigate its effects (Ciric et al., 2017; Parkes et al., 2018; Power et al., 2015). On the other hand, while it has been shown that SLFOs affect the default-mode network (Birn et al., 2014; Birn et al., 2008a; Chang and Glover, 2009a), and high frequency cardiac and breathing artifacts influence the BOLD signal (Glover et al., 2000; Power, 2019), a systematic investigation of the effects of physiological processes in the context of whole-brain FC is lacking in the literature. In the present study, we evaluated collectively the impact of the aforementioned sources of noise on whole-brain fMRI resting-state FC.
 
@@ -117,7 +173,7 @@ In our dataset, cardiac pulsatility did not seem to have a large effect on FC, n
 
 It is important to note that our proposed methodology assumes that the stereotyped nuisance connectome profiles do not resemble the true neural connectome profiles. However, in principle, nuisance fluctuations could give rise to similar spatial patterns as neurally-driven fluctuations. A recent study by Bright et al., 2020 provided evidence that physiological fluctuations (end-tidal CO2) give rise to networks that spatially resemble neurally driven networks linked to working memory and visual stimuli. The authors suggested that this phenomenon may be due to the vasculature adapting to the neural network architecture, as vascular and neuronal growth processes evolve concurrently during development (Quaegebeur et al., 2011). These findings suggest a possible caveat of our methodology when assessing pre-processing strategies, as pipelines that yield the lowest similarity between nuisance and ‘neural’ FC matrices might also remove some signal of interest. Nonetheless, the pre-processing strategies that were found in this study to reduce the nuisance effects the most (i.e. FIX and WM denoising combined with GSR) have been shown to demonstrate the highest improvement in large-scale network identifiability in an earlier study (Kassinopoulos and Mitsis, 2021a). In addition, these pipelines were found to exhibit the highest accuracy in connectome fingerprinting (Figure 3B). These results suggest that they are able to adequately remove the effects of nuisance processes while also preserving the signal of interest.
 
-## Physiological and head motion signatures in time-varying FC
+### Physiological and head motion signatures in time-varying FC
 
 The investigation of neural dynamics using resting-state fMRI is a promising avenue of research that has gained increasing attention lately (Hutchison et al., 2013; Lurie et al., 2020). Yet, there is skepticism regarding its validity and underlying origins. For instance, variations in FC over shorter time-scales (i.e. minutes) could largely be explained by sampling error, acquisition artifacts and subject arousal (Hindriks et al., 2016; Laumann et al., 2017; Savva et al., 2020), as well as head motion and physiological processes (Nalci et al., 2019; Nikolaou et al., 2016).
 
@@ -129,7 +185,7 @@ While head motion and SLFOs were found to be strongly associated to recurrent co
 
 Importantly, neither data-driven nor model-based preprocessing strategies were able to completely remove these confounds (Figure 5—figure supplement 1). It was only recently that researchers have started to examine the performance of pre-processing pipelines in the context of time-varying FC (Lydon-Staley et al., 2019), albeit with a focus on motion effects, thus more work is needed to identify effective data cleaning strategies for resting-state time-varying FC studies.
 
-## Global signal regression
+### Global signal regression
 
 The practice of removing the GS from fMRI data (i.e. GSR) has been adopted by many fMRI investigators as it has been linked to head motion artifacts and fluctuations in heart rate and breathing patterns (Birn et al., 2006; Byrge and Kennedy, 2018; Chang and Glover, 2009a; Falahpour et al., 2013; Kassinopoulos and Mitsis, 2019; Power et al., 2018; Power et al., 2014; Shmueli et al., 2007). Further, GSR has been shown to increase the neuronal-hemodynamic correspondence of FC measures extracted from BOLD signals and electrophysiological high gamma recordings (Keller et al., 2013), as well as strengthen the association between FC and behavior (Li et al., 2019b). On the other hand, studies capitalizing on EEG-fMRI data have reported an association between the GS amplitude and vigilance measures (Wong et al., 2016; Wong et al., 2013) and individual differences in the global signal topography have been related to behavior and cognition (Li et al., 2019a). Thus, as there is evidence that GSR may remove neuronal-related activity in addition to nuisance-related fluctuations, GSR still remains a controversial pre-processing step (Liu et al., 2017; Murphy et al., 2009; Murphy and Fox, 2017).
 
@@ -141,95 +197,294 @@ Regarding time-varying FC, GSR did not reduce the effect of nuisance processes e
 
 Despite the effectiveness of GSR in reducing nuisance confounds from the data, we cannot exclude the possibility of removing some neuronal-related fluctuations. Alternatives to GSR that have been proposed to remove global artifacts include time delay analysis using ‘rapidtide’ (Tong et al., 2019), removal of the first principal component from the fMRI data (Carbonell et al., 2011), removal of fluctuations associated to large clusters of coherent voxels (Aquino et al., 2020), and the use of temporal ICA (Glasser et al., 2018), albeit the latter is only applicable to datasets with a large number of subjects such as the HCP.
 
-## The effect of phase encoding direction in connectivity
+### The effect of phase encoding direction in connectivity
 
 Earlier studies have demonstrated that chest wall movements due to breathing perturb the B0 field (Raj et al., 2001; Raj et al., 2000; Van de Moortele et al., 2002), which has consequences on EPI fMRI data. While this phenomenon is not fully understood, it seems to have two main effects that are observable along the phase encoding direction: (1) Breathing causes factitious motion of the fMRI volumes in the phase encoding direction (Raj et al., 2001; Raj et al., 2000). This effect has sparkled attention recently, since it has been recognised that it may have critical implications for motion correction when performing censoring (i.e. removal of motion-contaminated fMRI volumes) in multi-band (Fair et al., 2020; Power et al., 2019) and single-band (Gratton et al., 2020) data. (2) Breathing induces artifacts on voxel timeseries that depend on the location of those voxels along the phase encoding direction (Raj et al., 2001; Raj et al., 2000). Our results provide further evidence in support of the latter effect. Specifically, we found that depending on the phase encoding direction (LR or RL), breathing motion artifacts were more pronounced in the left or right hemisphere respectively (Figure 1C). Moreover, we observed that breathing motion increased within-hemisphere connectivity for both phase encoding scan types (Figure 2C, Figure 2—figure supplement 1C), which implies that breathing induces artifactual fluctuations that are to a certain extent different between hemispheres. However, note that the connectome profile of breathing motion exhibited some differences between the two phase encoding directions (Figure 2—figure supplement 1C), which explains the higher connectome fingerprinting accuracy in the breathing motion dataset when examining pairs of scans with the same phase encoding direction, compared to scans with different phase encoding direction (Figure 3A).
 
 Our results point to a systematic effect of breathing on static FC through variations in the B0 magnetic field. Importantly, this systematic bias is contingent on the phase encoding direction, which seems to indicate that factitious rather than real motion is the predominant source of respiration-related motion artifacts in fMRI, as has been previously suggested (Brosch et al., 2002; Raj et al., 2001). Even though common preprocessing pipelines greatly reduce these effects, they do not eliminate them (Figure 2G). Thus, studies that consider datasets with different phase encodings, should be aware of the effect of phase encoding on FC, especially if data from different groups have been acquired with different phase encodings.
 
-## Individual discriminability
+### Individual discriminability
 
 Test-retest reliability is important for establishing the stability of inter-individual variation in fMRI FC across time. However, apart from neural processes, nuisance processes can also have an impact on test-retest reliability, given the subject-specific nature of physiological processes (Batchvarov et al., 2002; Golestani et al., 2015; Malik et al., 2008; Pinna et al., 2007; Pitzalis et al., 1996; Power et al., 2020; Reland et al., 2005) and head motion (Van Dijk et al., 2012; Zeng et al., 2014). This leads to the concerning notion that nuisance processes may be artifactually driving the reports of high reliability in FC measures. For instance, it has been reported that the median of intraclass correlation values across functional connections, which is a metric of test-retest reliability, is reduced when a relatively aggressive pipeline is used (Birn et al., 2014; Parkes et al., 2018). Furthermore, motion can classify subjects at above-chance levels (Horien et al., 2019), and breathing motion is more prominent in older individuals and those with a higher body mass index (Gratton et al., 2020). In the present study, we examined the potential effect of nuisance processes on subject discriminability using connectome fingerprinting.
 
-## Whole-brain identification
+#### Whole-brain identification
 
 To assess the individual discriminability of nuisance processes, we performed connectome fingerprinting analysis using the generated nuisance datasets. All nuisance processes exhibited identification accuracy above chance level (Figure 3A). Pairs of scans with the same phase encoding yielded higher identification accuracy than pairs of scans with different phase encoding (Figure 3A). This effect is particularly evident for breathing motion, and to a lesser extent cardiac pulsatility and head motion. This observation suggests that not only these confounds exert a distinctive artifactual spatial pattern that is dependent on the phase encoding direction, which can be also observed upon careful examination of Figure 1B–D, but also that this artifactual pattern is to a certain degree subject-specific. On the other hand, the subject discriminability of SLFOs is not modulated by phase encoding (Figure 3A). Given the nature of SLFOs (i.e. they affect the BOLD signal through changes in CBF), the high subject discriminability of SLFOs suggests a certain degree of idiosyncrasy that is possibly related to the vascular architecture of an individual. Overall, our results suggest that there is some degree of subject discriminability in nuisance processes.
 
 Identification accuracies of ‘neural’ datasets were very high for all preprocessing strategies (Figure 3B), in line with previous studies (Finn et al., 2015; Horien et al., 2019). WM denoising, which was found to be the most effective strategy for reducing confounds due to head motion and physiological fluctuations (Figure 2E–H), yielded also the highest accuracy in connectome fingerprinting (Figure 3B), suggesting that the high subject discriminability observed in the HCP data is not due to the presence of confounds. Interestingly, the increased accuracy observed in the nuisance datasets for scans with the same phase encoding (Figure 3A) was also observed in the case of the raw data (Figure 3B). In contrast, for the rest of the pipelines the difference in accuracy between pairs of scans from different days with the same or different phase encoding direction vanishes (Figure 3B). This is likely because of the reduction of nuisance effects, mainly breathing motion artifacts. Note also that for both mild and aggressive pipelines, pairs of scans from the same day exhibited higher accuracies compared to pairs of scans from different days, which cannot be attributed to potential residuals of nuisance fluctuations (Figure 3A). Possible explanations for this finding are that the functional connectome of a subject reflects some aspects of their vigilance levels (Tagliazucchi and Laufs, 2014; Thompson et al., 2013a; Wang et al., 2016), mind-wandering (Gonzalez-Castillo et al., 2019; Gorgolewski et al., 2014; Kucyi, 2018; Kucyi and Davis, 2014), or the effect of time of day (Hodkinson et al., 2014; Jiang et al., 2016; Orban et al., 2020; Shannon et al., 2013), which can differ across sessions. Overall, the high connectome-based identification accuracies reported in the literature do not appear to be driven by nuisance confounds, suggesting a neural origin underpinning the inter-individual differences in connectivity. Nonetheless, it is worth pointing out that subject variability in the magnitude of functional connections has been shown to arise as a result of spatial topographical variability in the location of functional regions across individuals (Bijsterbosch et al., 2018), which could also explain the high subject discriminability observed in fMRI-based connectomes.
 
-## Network-based identification
+#### Network-based identification
 
 We observed that edges within association cortices (e.g. parts of the frontoparietal, default mode, and cinguloopercular systems) exhibited the highest subject specificity (Figure 4B), consistent with previous studies (Finn et al., 2015; Gratton et al., 2018; Horien et al., 2019; Mueller et al., 2013; Seitzman et al., 2019; Vanderwal et al., 2017). The fact that association cortices are the most evolutionarily recent (Zilles et al., 1988) and are thought to be involved in higher level functions (Cole et al., 2014; Cole et al., 2013; Dosenbach et al., 2007; Gratton et al., 2017; Raichle, 2015) has been posited as a possible reason for the high identification accuracy yielded by these networks. On the other hand, it has also been speculated that medial frontal and frontoparietal networks exhibit the highest identification accuracy as a result of being less prone to distortions from susceptibility artifacts (Horien et al., 2019; Noble et al., 2017). If the latter was the case, we would expect to see decreased accuracy for these networks when probing the nuisance datasets. However, we did not observe such a tendency for any of the nuisance processes evaluated (Figure 4A), and preprocessing strategies that successfully removed nuisance processes yielded enhanced subject discriminability of control networks and the DMN (Figure 4C). These results seem to indicate that the basis of the high identification rates for association cortices is of neural origin, and thus that resting-state fMRI-based connectome fingerprinting can capture idiosyncratic aspects of cognition reflected on the resting-state functional characteristics of the association cortex.
 
-## Conclusions
+### Conclusions
 
 The current study introduces a novel framework for assessing the effects of the main fMRI confounds on static and time-varying FC. Our results suggest that head motion and systemic BOLD fluctuations associated to changes in heart rate and breathing patterns cause systematic biases in static FC and result in recurrent patterns in time-varying FC. Data-driven techniques based on decomposing the data into principal or independent components (PCA, ICA), combined with GSR, lead to the strongest reduction of the aforementioned effects. Importantly, these preprocessing strategies also improve connectome-based subject identification, indicating that the high subject discriminability reported in the literature is not attributable to nuisance processes.
 
 ## Materials and methods
 
-## Human Connectome Project (HCP) dataset
+### Human Connectome Project (HCP) dataset
 
 The resting-state fMRI data analysed in this study are from the S1200 release of the 3T HCP dataset (Smith et al., 2013; Van Essen et al., 2013), which consists of young, healthy twins and siblings (age range: 22–36 years). The HCP dataset includes, among others, resting-state data acquired on 2 different days, during which subjects were instructed to keep their eyes open and fixated on a cross-hair. Each day included two consecutive 15 min resting-state runs, acquired with left-to-right (LR) and right-to-left (RL) phase encoding direction. During each fMRI run, 1200 frames were acquired using a gradient-echo echo-planar imaging (EPI) sequence with a multiband factor of 8, spatial resolution of 2 mm isotropic voxels, and a TR of 0.72 s. Further details of the data acquisition parameters can be found in previous publications (Smith et al., 2013; Van Essen et al., 2012). Concurrently with fMRI images, cardiac and respiratory signals were measured using a standard Siemens pulse oximeter placed on the fingertip and a breathing belt placed around the chest, with a 400 Hz sampling rate.
 
 We only considered subjects who had available data from all four runs, and excluded subjects based on the quality of the physiological recordings (see section 5.2.1 below for details). Pulse oximeter and respiratory belt signals from ~1000 subjects were first visually inspected to determine their quality, since their traces are often not of sufficient quality for reliable peak detection (Power, 2019). The selection process resulted in a final dataset with 392 subjects (ID numbers provided in Supp. Material).
 
-## Preprocessing
+### Preprocessing
 
-## Preprocessing of physiological recordings
+#### Preprocessing of physiological recordings
 
 After selecting subjects with good quality traces, the pulse wave was processed to automatically detect beat-to-beat intervals (RR), and the heart rate signal was further computed as the inverse of the time differences between pairs of adjacent peaks and converted to units of beats-per-minute (bpm). Heart rate traces were visually checked to ensure that outliers and abnormalities were not present. An outlier replacement filter was used to eliminate spurious changes in heart rate when these changes were found to be due to sporadic noisy cardiac measurements (for more details see Supp. Figures 1 and 2 from Kassinopoulos and Mitsis, 2019). We also excluded subjects with a heart rate of exactly 48 bpm and lack of heartbeat interval variability, as they have been pointed out as outliers in recent studies (Orban et al., 2020; Valenza et al., 2019). The signal from the breathing belt was detrended linearly, visually inspected and corrected for outliers using a replacement filter. Subsequently, it was low-pass filtered at 5 Hz and Z-scored. The respiratory flow, proposed in Kassinopoulos and Mitsis, 2019 as a robust measure of the absolute flow of inhalation and exhalation of a subject at each time point, was subsequently extracted by applying further smoothing on the breathing signal (moving average filter of 1.5 s window) and, subsequently, computing the square of the derivative of the smoothed breathing signal. Finally, heart rate and respiratory flow time-series were re-sampled at 10 Hz.
 
 An example code (Preprocess_Phys.m) showing the detailed specifications of the algorithms used during the preprocessing of the physiological signals is available on github.com/mkassinopoulos/PRF_estimation/.
 
-## Preprocessing of fMRI data: assessing the impact of nuisance correction strategies
+#### Preprocessing of fMRI data: assessing the impact of nuisance correction strategies
 
 From the HCP database we downloaded the minimally preprocessed data described in Glasser et al., 2013 and the FIX-denoised data, both in volume and surface space. Briefly, the minimal preprocessing pipeline included removal of spatial distortion, motion correction via volume re-alignment, registration to the structural image, bias-field correction, 4D image intensity normalization by a global mean, brain masking, and non-linear registration to MNI space. Further steps to obtain surface data were volume to surface projection, multimodal inter-subject alignment of the cortical surface data (Robinson et al., 2014), and 2 mm (FWHM) surface-constrained smoothing. Additional steps following minimal preprocessing to obtain the FIX-denoised data were de-trending using a mild high-pass filter (2000 s), head motion correction via 24 parameter regression, and denoising via spatial ICA followed by an automated component classifier (FMRIB's ICA-based X-noiseifier, FIX) (Griffanti et al., 2014; Salimi-Khorshidi et al., 2014). Minimal spatial smoothing (FWHM = 4 mm) was applied to the downloaded minimally preprocessed and FIX-denoised volumetric data. Both minimally preprocessed and FIX-denoised data were parcellated employing the Gordon atlas across 333 regions of interest (ROIs) (Gordon et al., 2016) and the Seitzman atlas across 300 ROIs (Seitzman et al., 2020), using the surface and volume space data, respectively. ROIs that did not belong to a brain network were disregarded, hence a total of 286 ROIs (Gordon atlas) and 285 ROIs (Seitzman atlas) were retained for further analyses. The main differences between these two brain parcellations, apart from being computed on the surface and volume space respectively, are that the ROIs in the Gordon atlas do not have the same size, whereas in the Seitzman atlas the ROIs are all spheres of 8 mm diameter, and that the Gordon atlas only includes cortical regions, whereas the Seitzman atlas includes cortical and subcortical regions. The results from the Gordon atlas are presented in the main manuscript whereas the results from the Seitzman atlas can be found in the Supplementary Material (Figure 2—figure supplement 5, Figure 3—figure supplement 2, Figure 5—figure supplement 2). Further, the parcellated data were high-pass filtered at 0.01 Hz.
 
 In addition to the FIX-denoising strategy, several other data-driven preprocessing techniques were evaluated to assess the extent to which they were able to remove physiological and motion-driven confounds (Table 1). We chose pipelines that had been used in the landmark FC studies of Finn et al., 2015 and Laumann et al., 2017. These were denoted as ‘mild’ pipelines, since they regress out considerably fewer components compared to FIX. Further, we also included two more aggressive pipelines that were found to outperform previously proposed techniques in terms of network identifiability (Kassinopoulos and Mitsis, 2021a). Nuisance regression was performed after the minimally preprocessed data had been parcellated to reduce computational time. All preprocessing strategies were evaluated with and without global signal regression (GSR), since the latter is still somewhat controversial (Liu et al., 2017; Murphy et al., 2009; Murphy and Fox, 2017). To facilitate the comparison between preprocessing strategies, the minimally preprocessed data were also evaluated, yielding in total 12 preprocessing strategies. Given that the minimal preprocessing pipeline consists of only the initial steps for fMRI denoising, for simplicity in the results we refer to these data as raw data. The regressors included in each preprocessing strategy can be found in Table 1. Note that for the pipeline from Laumann et al., 2017 the derivative of the global signal was also regressed out. The global signal for the surface and volumetric data was computed as the average fMRI timeseries across vertices and the whole brain respectively.
 
-## Nuisance processes evaluated
+**Table 1.**
+ Preprocessing strategies examined.All strategies were evaluated with and without global signal regression (GSR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Preprocessing strategy</th>
+      <th>Acronym</th>
+      <th>Regressors included</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Minimally preprocessed HCP data</td>
+      <td>Raw data</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>FIX-denoised HCP data</td>
+      <td>FIX</td>
+      <td>ICA-based technique combined with an automated component classifier (Salimi-Khorshidi et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Pipeline used in Finn et al., 2015, Nature Neuroscience</td>
+      <td>MildA</td>
+      <td>Mean time-series of the white matter and CSF voxels (2); realignment parameters and their first derivatives (12)</td>
+    </tr>
+    <tr>
+      <td>Pipeline used in Laumann et al., 2017, Cerebral Cortex</td>
+      <td>MildB</td>
+      <td>Mean time-series of the white matter and CSF voxels and their derivatives (4); realignment parameters and their first derivatives, quadratic terms, and squares of derivatives (24)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pipeline proposed by Kassinopoulos and Mitsis, 2021a, bioRxiv</td>
+      <td>WM50</td>
+      <td>50 PCA components from white matter voxels</td>
+    </tr>
+    <tr>
+      <td>WM200</td>
+      <td>200 PCA components from white matter voxels</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nuisance processes evaluated
 
 The following four nuisance processes were considered (Table 2):
 
-## Systemic low frequency oscillations (SLFOs)
+**Table 2.**
+ Nuisance processes examined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SLFOs</th>
+      <th>Cardiac pulsatility</th>
+      <th>Breathing motion</th>
+      <th>Head motion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recordings</td>
+      <td>Pulse oximeter, breathing belt, fMRI global signal</td>
+      <td>Pulse oximeter</td>
+      <td>Breathing belt</td>
+      <td>fMRI</td>
+    </tr>
+    <tr>
+      <td>Signals employed</td>
+      <td>Heart rate, respiratory flow, global signal</td>
+      <td>Cardiac cycle</td>
+      <td>Breathing cycle</td>
+      <td>Realignment parameters and derivatives</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>Kassinopoulos and Mitsis, 2019, NeuroImage</td>
+      <td>3rd order RETROICOR Glover et al., 2000, NeuroImage</td>
+      <td>3rd order RETROICOR Glover et al., 2000, NeuroImage</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of regressors</td>
+      <td>1</td>
+      <td>6</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Systemic low frequency oscillations (SLFOs)
 
 SLFOs refer to non-neuronal global BOLD fluctuations. Major sources of SLFOs are spontaneous fluctuations in the rate or depth of breathing (Birn et al., 2006) and fluctuations in heart rate (Chang et al., 2009; Shmueli et al., 2007). The former mainly exert their effects via changing the concentration of arterial CO2, which is a potent vasodilator, altering CBF and thus the BOLD fMRI signal (Birn et al., 2008a; Birn et al., 2008b; Chang and Glover, 2009b; Prokopiou et al., 2019; Wise et al., 2004), Importantly, there is evidence that SLFOs are a more substantial source of physiological noise in BOLD fMRI compared to high frequency cardiac pulsatility and breathing motion artifacts (Tong et al., 2019; Tong and Frederick, 2014). In this study, SLFOs were modeled following a framework proposed in our previous work (Kassinopoulos and Mitsis, 2019 scripts available on github.com/mkassinopoulos/PRF_estimation/). Briefly, the extracted heart rate and respiratory flow signals were fed into an algorithm that estimated scan-specific physiological response functions (PRFs). This algorithm estimates PRF curves that maximize the correlation between their convolution with heart rate and respiratory flow and the global signal of the same scan, while ensuring that the shapes of the PRF curves are physiologically plausible. The heart rate and respiratory flow signals were subsequently convolved with their respective PRFs and added to each other, yielding time-series that reflect the total effect of SLFOs (Figure 7—figure supplement 1A). These time-series were used in the current study as the physiological regressor related to SLFOs.
 
-## Cardiac pulsatility
+#### Cardiac pulsatility
 
 Pulsatility of blood flow in the brain can cause pronounced modulations of the BOLD signal (Noll and Schneider, 1994), which tend to be localized along the vertebrobasilar arterial system and the sigmoid transverse and superior sagittal sinuses (Dagli et al., 1999; Kassinopoulos and Mitsis, 2019). We modeled fluctuations induced by cardiac pulsatility using six regressors obtained with 3rd order RETROICOR (Glover et al., 2000), based on the pulse oximeter signal of each scan.
 
-## Breathing Motion
+#### Breathing Motion
 
 Chest movements during the breathing cycle generate head motion in the form of head nodding by mechanical linkage through the neck, but also factitious motion (also known as pseudomotion) through small perturbations of the B0 magnetic field caused by changes in abdominal volume when air enters the lungs (Power et al., 2019; Raj et al., 2001; Van de Moortele et al., 2002). We modeled breathing-induced fluctuations using six regressors obtained with 3rd order RETROICOR (Glover et al., 2000), based on the respiratory signal of each scan.
 
-## Head motion
+#### Head motion
 
 Subject motion produces substantial signal disruptions in fMRI studies (Friston et al., 1996; Power et al., 2012) and is a major confound when evaluating connectivity differences between groups with dissimilar tendencies for motion (Makowski et al., 2019; Satterthwaite et al., 2012; Van Dijk et al., 2012). We quantified head motion using the six realignment parameters as well as their temporal first derivatives provided by the HCP. The six physiological regressors related to breathing motion were regressed out from the realignment parameters and their derivatives, since true and factitious motion due to breathing is reflected on the realignment parameters (Fair et al., 2020).
 
 All nuisance regressors were high-pass filtered at 0.01 Hz to ensure similar spectral content with the fMRI data and thus avoid reintroduction of nuisance-related variation (Bright et al., 2017; Hallquist et al., 2013). The regressors were then normalized to zero mean and unit variance. Figure 7—figure supplement 2 demonstrates the spectral content of each nuisance process, as well as the effect of regressing out breathing motion from the realignment parameters. Physiological and motion traces from three illustrative scans, along with fMRI carpet plots, can be found in Figure 7—figure supplement 3. Nuisance traces and carpet plots from all subjects are available on figshare (Xifra-Porxas et al., 2021b).
 
-## Isolation of nuisance fluctuations from fMRI data
+### Isolation of nuisance fluctuations from fMRI data
 
 We propose a framework to isolate nuisance fluctuations for each of the aforementioned processes, which reflects the physiologically-driven fluctuations and head motion artifacts observed in the fMRI data (Figure 7). A similar methodology was used in Bright and Murphy, 2015 to investigate whether preprocessing strategies remove variance associated to resting-state networks.
 
-Initially, the contribution of each nuisance process on the ROI time-series was quantified using a generalised linear model, formulated as:(1)y(t)=β0+βSLFOsxSLFOs(t)+ββCPxCP(t)+ββBMxBM(t)+ββHMxHM(t)+ε(t)ββCP=[βCP1⋯βCP6],ββBM=[βBM1⋯βBM6],ββHM=[βHM1⋯βHM12]xCP(t)=xCP1(t)⋮xCP6(t), xBM(t)=xBM1(t)⋮xBM6(t), xHM(t)=xHM1(t)⋮xHM12(t)
+![Figure 7.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-v2.jpg)
 
-where y are ROI time-series from the minimally preprocessed data, xSLFOs is the physiological regressor modeling SLFOs, xCPt are the 6 physiological regressors modeling cardiac pulsatility, xBMt are the 6 physiological regressors modeling breathing motion, xHMt are the 12 regressors modeling head motion, {β0,βSLFOs,βCP,βBM,βHM} denote the parameters to be estimated, and ε is the error (or residual). As can be seen, all four nuisance processes (25 regressors in total) were included simultaneously in the regression to model the BOLD signal fluctuations in a specific ROI. Note that no significant collinearity was observed between the 25 regressors (Figure 7—figure supplement 4).
+**Figure 7.:** For each scan, the ROI time-series are modeled using the regressors related to systemic low frequency oscillations (SLFOs), cardiac pulsatility (CP), breathing motion (BM), and head motion (HM). Subsequently, the fraction of BOLD variance explained by each nuisance process is isolated and employed to generate synthetic datasets that only contain nuisance fluctuations.
 
-For each nuisance process, the estimated values β^ were multiplied by their corresponding regressors and added together to obtain the fluctuations of the nuisance process of interest (y^NPI(t)) within a specific ROI, and a 'clean' time-series was calculated via removal of all other nuisance processes (y^NPI+Neur(t)), as follows:(2)SLFOs:y^NPI(t)=β^SLFOsxSLFOs(t)(3)y^NPI+Neur(t)=y(t)−β^0−β^CPxCP(t)−β^BMxBM(t)β^HMxHM(t)(4)Cardiacpulsatility:y^NPI(t)=β^CPxCP(t)(5)y^NPI+Neur(t)=y(t)−β^0−β^SLFOsxSLFOs(t)−β^BMxBM(t)−β^HMxHM(t)(6)Breathingmotion:y^NPI(t)=β^BMxBM(t)(7)y^NPI+Neur(t)=y(t)−β^0−β^SLFOsxSLFOs(t)−β^CPxCP(t)−β^HMxHM(t)(8)Head motion:y^NPI(t)=β^HMxHM(t)(9)y^NPI+Neur(t)=y(t)−β^0−β^SLFOsxSLFOs(t)−β^CPxCP(t)−β^BMxBM(t)
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-figsupp1-v2.jpg)
 
-In this manner, we generated ‘cleaned’ ROI time-series (y^NPI+Neur(t)) in which all considered noisy fluctuations were removed except the ones corresponding to the specific nuisance process being evaluated. The next step was to quantify the contribution of the latter to the remaining fluctuations within each ROI. To achieve this, the estimated nuisance signal was correlated to the ‘clean’ ROI time-series:(10)rnuis=corr(y^NPI(t),y^NPI+Neur(t))
+**Figure 7—figure supplement 1.:** The respiratory flow was defined as the square of the derivative of the breathing signal. The cardiac and respiration response functions were estimated separately for each scan, using the methodology proposed in Kassinopoulos and Mitsis, 2019. Heart rate and respiratory flow were convolved with the cardiac and respiration response functions, respectively, in order to obtain the fluctuations of SLFOs. As can be seen in the example, SLFOs were strongly correlated to the global signal (GS). (B) Histogram illustrating the correlation between SLFOs and the GS across all scans considered in the present study. The average correlation is 0.65 across all scans considered in this study. (C) The variance of the heart rate signal was positively correlated with the correlation coefficient between the cardiac regressor (HR*CRF) and GS. (D) The variance of the respiratory flow signal was strongly correlated with the correlation coefficient between the respiratory regressor (RF*RRF) and GS.
 
-Subsequently, the estimated nuisance signal was subtracted from the ‘clean’ ROI time-series to obtain what is typically considered the ‘neural’ time-series. These time-series were correlated to the ‘clean’ time-series to quantify the contribution of the ‘neural’ variations to the total ROI signal fluctuations:(11)y^Neur(t)=y^NPI+Neur(t)−y^NPI(t)(12)rneur=corr(y^Neur(t),y^NPI+Neur(t))
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-figsupp2-v2.jpg)
 
-Afterwards, nuisance datasets for each process were created by scaling the estimated nuisance signal within each ROI with its corresponding correlation coefficient rneur=corr(y^Neurt,y^NPI+Neurt) and a first order autoregressive (AR(1)) process (ψ(t)) scaled with r_neur. We used an AR(1) model as it has been shown to be able to capture both the static and time-varying FC structure of resting-state fMRI data (Liégeois et al., 2017). This is expressed as:(13)yNuis(t)=rnuisZ[y^NPI(t)]+rneurZ[ψ(t)](14)yNuist=rnuisZy^NPIt+rneurZ[ψt]where ψt=a1ψt-1+ξt denotes normalization to zero mean and unit variance. The coefficient Z∙ was randomly sampled from a distribution of coefficients generated through fitting an AR(1) model to the real fMRI data (Figure 7—figure supplement 5).
+**Figure 7—figure supplement 2.:** (A) Power spectral densities of the nuisance processes evaluated in the present study (as well as the global signal for reference). SLFOs mostly exhibit low-frequency fluctuations (<0.15 Hz). Breathing motion exhibits a peak at ~0.3 Hz, consistent with the average breathing rate across subjects. Head motion exhibits the same 0.3 Hz peak, underscoring the observation that realignment parameters are contaminated by breathing. We also observe a peak in head motion at ~0.12 Hz, recently attributed to deep breaths (Power et al., 2019), and a very narrow peak at 0.55 Hz that is likely due to scanner artifacts. The fMRI data is not sampled fast enough to capture cardiac pulsatility (~1 Hz), hence the effect of cardiac activity is aliased within a range of lower frequencies. Thus, any variation in heart rate during a scan as well as across subjects is likely to spread cardiac pulsatility artifacts across different frequencies, broadening the main spectral peak. (B) Power spectral density of head motion before and after regressing out breathing motion. Note the substantial decrease in power around 0.3 Hz after removing the effect of breathing motion. Both figures show the mean and standard error across subjects for scan Rest1_LR (similar results were observed for all other scans).
 
-Thus, this framework generated four synthetic nuisance datasets that contained the isolated fluctuations from each of the nuisance processes evaluated. In a sense, the ROI time-series in each nuisance dataset are equivalent to the term y^NPI+Neur(t), with the ‘neural’ fluctuations replaced by random autocorrelated processes. These time-series were used to characterize the connectome profile of the nuisance processes without the presence of neurally related signals, while maintaining the noise-to-signal ratio between physiological/motion-related noise and ‘neural’ signal intact. Note that if the nuisance datasets consisted solely of artifactual fluctuations without the AR(1) process added, this would result in an overestimation of the correlation fraction attributed to the nuisance processes that was present in the experimental fMRI data. This can be easily understood in the case of two ROI time-series that are weakly driven by SLFOs. As the contribution of this nuisance process to the aggregate ROI time-series would be small, the parameter y^NPI+Neurt in Equation 2 for both ROIs would be relatively small as well. However, without the addition of autocorrelated processes, the correlation of the time-series β^SLFOs associated with these two ROIs would be 1.00 (or −1.00 depending on the signs of the corresponding beta parameters) as Pearson’s correlation is a metric that is blind to the variance of the signals, thereby overestimating the contribution of SLFOs to the FC between those ROIs.
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-figsupp3-v2.jpg)
 
-## Estimation of static and time-varying functional connectivity (FC)
+**Figure 7—figure supplement 3.:** (A) 101915, Rest1_LR, (B) 138837, Rest1_LR, (C) 208630, Rest1_LR. For each scan, the five subpanels show the motion parameters and framewise displacement (first row), the respiratory trace from the breathing belt (second row), the heart rate (third row), the global signal and SLFOs (fourth row), and the carpet plot of ROIs timeseries (fifth row). The carpet plot is arranged in descending order according to the Pearson correlation between the averaged ROI timeseries and the global signal.
 
-Using the pre-processed fMRI data from each of the 12 pipelines (see section 5.2.2), henceforth called 'neural' datasets, and the 4 nuisance datasets, we performed Pearson correlation analyses between brain regions over the whole scan (static FC) and within sliding windows (time-varying FC). To quantify time-varying FC, the entire scan was split up into 62 sliding windows of 43.2 sec (60 samples) duration, with 70% overlap in time. Subsequently, for each scan, we computed the functional connectivity dynamics (FCD) matrix (Hansen et al., 2015), which is a symmetric matrix in which the entries y^NPI correspond to the Pearson correlations between the upper triangular elements of the FC matrices in windows (i,j) and i. The size of the FCD matrix was j, where W×W is the number of windows (62). Thus, while the static FC matrix characterizes the spatial structure of resting activity, the FCD matrix captures the temporal evolution of connectome correlations.
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Pearson correlation coefficients between the 25 nuisance regressors, averaged across all 1568 scans. Note that breathing motion had already been regressed out from the realignment parameters and its derivatives. The highest correlations were between realignment parameters and their derivatives, but even those were below 0.5.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/62324/elife-62324-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Distribution of autoregressive coefficients (across subjects and ROIs) which was used to generate the noise added to the surrogate datasets by random sampling.
+
+Initially, the contribution of each nuisance process on the ROI time-series was quantified using a generalised linear model, formulated as:
+
+$$
+y(t)=\beta_{0}+\beta_{SLFOs}x_{SLFOs}(t)+\beta\beta_{CP}x_{CP}(t)+\beta\beta_{BM}x_{BM}(t)+\beta\beta_{HM}x_{HM}(t)+\epsilon(t)
+$$
+
+
+
+$$
+\beta\beta_{CP}=[\beta_{CP}^{1}⋯\beta_{CP}^{6}],\beta\beta_{BM}=[\beta_{BM}^{1}⋯\beta_{BM}^{6}],\beta\beta_{HM}=[\beta_{HM}^{1}⋯\beta_{HM}^{12}]
+$$
+
+$x_{CP}(t)=x_{CP}^{1}(t)⋮x_{CP}^{6}(t)$, $x_{BM}(t)=x_{BM}^{1}(t)⋮x_{BM}^{6}(t)$, $x_{HM}(t)=x_{HM}^{1}(t)⋮x_{HM}^{12}(t)$
+
+where $y$ are ROI time-series from the minimally preprocessed data, $x_{SLFOs}$ is the physiological regressor modeling SLFOs, $x_{CP}t$ are the 6 physiological regressors modeling cardiac pulsatility, $x_{BM}t$ are the 6 physiological regressors modeling breathing motion, $x_{HM}t$ are the 12 regressors modeling head motion, ${\beta_{0},\beta_{SLFOs},\beta_{CP},\beta_{BM},\beta_{HM}}$ denote the parameters to be estimated, and $\epsilon$ is the error (or residual). As can be seen, all four nuisance processes (25 regressors in total) were included simultaneously in the regression to model the BOLD signal fluctuations in a specific ROI. Note that no significant collinearity was observed between the 25 regressors (Figure 7—figure supplement 4).
+
+For each nuisance process, the estimated values $\beta^$ were multiplied by their corresponding regressors and added together to obtain the fluctuations of the nuisance process of interest ($y^_{NPI}(t)$) within a specific ROI, and a 'clean' time-series was calculated via removal of all other nuisance processes ($y^_{NPI+Neur}(t)$), as follows:
+
+$$
+SLFOs:y^_{NPI}(t)=\beta^_{SLFOs}x_{SLFOs}(t)
+$$
+
+
+
+$$
+y^_{NPI+Neur}(t)=y(t)−\beta^_{0}−\beta^_{CP}x_{CP}(t)−\beta^_{BM}x_{BM}(t)\beta^_{HM}x_{HM}(t)
+$$
+
+
+
+$$
+Cardiacpulsatility:y^_{NPI}(t)=\beta^_{CP}x_{CP}(t)
+$$
+
+
+
+$$
+y^_{_{NPI+Neur}}(t)=y(t)−\beta^_{0}−\beta^_{SLFOs}x_{SLFOs}(t)−\beta^_{BM}x_{BM}(t)−\beta^_{HM}x_{HM}(t)
+$$
+
+
+
+$$
+Breathingmotion:y^_{NPI}(t)=\beta^_{BM}x_{BM}(t)
+$$
+
+
+
+$$
+y^_{_{NPI+Neur}}(t)=y(t)−\beta^_{0}−\beta^_{SLFOs}x_{SLFOs}(t)−\beta^_{CP}x_{CP}(t)−\beta^_{HM}x_{HM}(t)
+$$
+
+
+
+$$
+Head motion:y^_{NPI}(t)=\beta^_{HM}x_{HM}(t)
+$$
+
+
+
+$$
+y^_{_{NPI+Neur}}(t)=y(t)−\beta^_{0}−\beta^_{SLFOs}x_{SLFOs}(t)−\beta^_{CP}x_{CP}(t)−\beta^_{BM}x_{BM}(t)
+$$
+
+In this manner, we generated ‘cleaned’ ROI time-series ($y^_{NPI+Neur}(t)$) in which all considered noisy fluctuations were removed except the ones corresponding to the specific nuisance process being evaluated. The next step was to quantify the contribution of the latter to the remaining fluctuations within each ROI. To achieve this, the estimated nuisance signal was correlated to the ‘clean’ ROI time-series:
+
+$$
+r_{nuis}=corr(y^_{NPI}(t),y^_{NPI+Neur}(t))
+$$
+
+Subsequently, the estimated nuisance signal was subtracted from the ‘clean’ ROI time-series to obtain what is typically considered the ‘neural’ time-series. These time-series were correlated to the ‘clean’ time-series to quantify the contribution of the ‘neural’ variations to the total ROI signal fluctuations:
+
+$$
+y^_{Neur}(t)=y^_{NPI+Neur}(t)−y^_{NPI}(t)
+$$
+
+
+
+$$
+r_{neur}=corr(y^_{Neur}(t),y^_{NPI+Neur}(t))
+$$
+
+Afterwards, nuisance datasets for each process were created by scaling the estimated nuisance signal within each ROI with its corresponding correlation coefficient $r_{neur}=corr(y^_{Neur}t,y^_{NPI+Neur}t)$ and a first order autoregressive (AR(1)) process (ψ(t)) scaled with r_neur. We used an AR(1) model as it has been shown to be able to capture both the static and time-varying FC structure of resting-state fMRI data (Liégeois et al., 2017). This is expressed as:
+
+$$
+y_{Nuis}(t)=r_{nuis}Z[y^_{NPI}(t)]+r_{neur}Z[ψ(t)]
+$$
+
+
+
+$$
+y_{Nuis}t=r_{nuis}Zy^_{NPI}t+r_{neur}Z[ψt]
+$$
+
+where $ψt=a_{1}ψt-1+ξt$ denotes normalization to zero mean and unit variance. The coefficient $Z∙$ was randomly sampled from a distribution of coefficients generated through fitting an AR(1) model to the real fMRI data (Figure 7—figure supplement 5).
+
+Thus, this framework generated four synthetic nuisance datasets that contained the isolated fluctuations from each of the nuisance processes evaluated. In a sense, the ROI time-series in each nuisance dataset are equivalent to the term $y^_{NPI+Neur}(t)$, with the ‘neural’ fluctuations replaced by random autocorrelated processes. These time-series were used to characterize the connectome profile of the nuisance processes without the presence of neurally related signals, while maintaining the noise-to-signal ratio between physiological/motion-related noise and ‘neural’ signal intact. Note that if the nuisance datasets consisted solely of artifactual fluctuations without the AR(1) process added, this would result in an overestimation of the correlation fraction attributed to the nuisance processes that was present in the experimental fMRI data. This can be easily understood in the case of two ROI time-series that are weakly driven by SLFOs. As the contribution of this nuisance process to the aggregate ROI time-series would be small, the parameter $y^_{NPI+Neur}t$ in Equation 2 for both ROIs would be relatively small as well. However, without the addition of autocorrelated processes, the correlation of the time-series $\beta^_{SLFOs}$ associated with these two ROIs would be 1.00 (or −1.00 depending on the signs of the corresponding beta parameters) as Pearson’s correlation is a metric that is blind to the variance of the signals, thereby overestimating the contribution of SLFOs to the FC between those ROIs.
+
+### Estimation of static and time-varying functional connectivity (FC)
+
+Using the pre-processed fMRI data from each of the 12 pipelines (see section 5.2.2), henceforth called 'neural' datasets, and the 4 nuisance datasets, we performed Pearson correlation analyses between brain regions over the whole scan (static FC) and within sliding windows (time-varying FC). To quantify time-varying FC, the entire scan was split up into 62 sliding windows of 43.2 sec (60 samples) duration, with 70% overlap in time. Subsequently, for each scan, we computed the functional connectivity dynamics (FCD) matrix (Hansen et al., 2015), which is a symmetric matrix in which the entries $y^_{NPI}$ correspond to the Pearson correlations between the upper triangular elements of the FC matrices in windows $(i,j)$ and $i$. The size of the FCD matrix was $j$, where $W\timesW$ is the number of windows (62). Thus, while the static FC matrix characterizes the spatial structure of resting activity, the FCD matrix captures the temporal evolution of connectome correlations.
 
 The analyses resulted in 32 matrices for each subject (Figure 8): four static FC and 4 FCD nuisance matrices (one for each physiological process considered), as well as 12 static FC and 12 FCD ‘neural’ matrices (one for each preprocessing strategy evaluated). To quantify the influence of the nuisance processes on static FC and FCD for each preprocessing strategy, similarities between pairs of nuisance and ‘neural’ matrices were evaluated by correlating their upper triangular values. Note that for the FCD matrices, upper triangular elements corresponding to the correlation between overlapping windows were disregarded because of high correlation by design (see block diagonal in Figure 8). All correlation values were Fisher z transformed.
 
@@ -237,13 +492,13 @@ The analyses resulted in 32 matrices for each subject (Figure 8): four static FC
 
 **Figure 8.:** For both static and time-varying FC analyses, four nuisance connectivity matrices were computed using the generated nuisance datasets, as well as 12 ‘neural’ connectivity matrices corresponding to the 12 pre-processing strategies evaluated (note that each of the six strategies listed in Table 1 was assessed with and without GSR). Static FC matrices were computed as the correlation across brain regions using the whole scan. Time-varying FC analysis constructed time-resolved connectivity matrices as the correlation between static FC matrices within sliding windows, known as functional connectivity dynamics (FCD) matrices (Hansen et al., 2015).
 
-## Connectome-based identification of individuals
+### Connectome-based identification of individuals
 
-We implemented a connectome-based identification of individual subjects using the static FC matrices to investigate the potential effect of 'nuisance fingerprints' on the degree of subject specificity in individual FC metrics. The identification procedure, known as connectome fingerprinting, has been described in detail previously (Finn et al., 2015). Briefly, a database was first created consisting of all subjects’ FC matrices from a particular resting-state scan (Figure 3—figure supplement 1B). An FC matrix from a specific subject and different resting-state scan was then selected and denoted as the target (W). Pearson correlation coefficients Subjx were computed between the upper triangular values of the target FC matrix and all the FC matrices in the database. If the highest correlation coefficient corresponded to a pair of FC matrices from the same subject, a successful identification was indicated ((r1,…,rN)); otherwise, it was marked as an incorrect identification (IDSubjx=1). The identification test was repeated such that each subject serves as the target subject once, and then the ID values were averaged across subjects to obtain the identification accuracy of the database-target pair. This process was repeated until tests between all scanning sessions were performed. In total, 12 database-target combinations were computed (Figure 3—figure supplement 1A). Identification was performed using the whole brain connectivity matrix, as well as based on edges from within and between networks. In the latter case, networks containing less than 10 ROIs were excluded from the analysis.
+We implemented a connectome-based identification of individual subjects using the static FC matrices to investigate the potential effect of 'nuisance fingerprints' on the degree of subject specificity in individual FC metrics. The identification procedure, known as connectome fingerprinting, has been described in detail previously (Finn et al., 2015). Briefly, a database was first created consisting of all subjects’ FC matrices from a particular resting-state scan (Figure 3—figure supplement 1B). An FC matrix from a specific subject and different resting-state scan was then selected and denoted as the target ($W$). Pearson correlation coefficients $Subj_{x}$ were computed between the upper triangular values of the target FC matrix and all the FC matrices in the database. If the highest correlation coefficient corresponded to a pair of FC matrices from the same subject, a successful identification was indicated ($(r_{1},…,r_{N})$); otherwise, it was marked as an incorrect identification ($ID_{Subj_{x}}=1$). The identification test was repeated such that each subject serves as the target subject once, and then the ID values were averaged across subjects to obtain the identification accuracy of the database-target pair. This process was repeated until tests between all scanning sessions were performed. In total, 12 database-target combinations were computed (Figure 3—figure supplement 1A). Identification was performed using the whole brain connectivity matrix, as well as based on edges from within and between networks. In the latter case, networks containing less than 10 ROIs were excluded from the analysis.
 
 The connectome fingerprinting analysis was performed independently for each physiological process, as well as for each preprocessing strategy, using the generated FC matrices (Figure 8). This analysis was only performed on static FC matrices and not time-varying FC matrices because recurrent patterns of connectivity observed in the FCD matrices are not expected to occur at similar time instances between scans.
 
-## Statistics
+### Statistics
 
 To assess the significance of the results, surrogate nuisance datasets were generated via inter-subject surrogates (Lancaster et al., 2018), using fMRI data recorded from one subject’s scan and physiological signals recorded from a different subject’s scan (in the case of the head motion dataset, volume realignment parameters were employed). Note that when creating each surrogate dataset, only the nuisance process being examined was replaced by signals from a different subject, whereas all other nuisance regressors remained the same. This procedure was repeated 1000 times for each nuisance process, where each surrogate dataset consisted of permuting the nuisance signals across subjects. A null distribution for each brain region was computed by estimating the mean contribution to BOLD across subjects for each surrogate nuisance dataset, leading to a distribution of 1000 values. Subsequently, the significance of the nuisance contributions to the BOLD signal were assessed by comparing the observed contribution (mean across subjects) to the corresponding null distribution for each ROI. The significance level at p < 0.05 was corrected for multiple comparisons using false discovery rate (FDR). Furthermore, the similarity between the nuisance and 'neural' FC matrices was compared against the similarity obtained using surrogate nuisance FC matrices. Note that for visualization purposes, similarity values identified as outliers (> 3 SD) are not displayed in Figure 2.
 

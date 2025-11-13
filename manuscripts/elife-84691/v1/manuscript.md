@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Integrated Program in Neuroscience, McGill University Montreal Canada
-2. https://ror.org/03vek6s52 Department of Psychology, Harvard University Cambridge United States
-3. https://ror.org/01pxwe438 Department of Psychology, McGill University Montreal Canada
+1. Integrated Program in Neuroscience, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Department of Psychology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Department of Psychology, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 
 ## Abstract
 
-Tailoring interventions to patient subgroups can improve intervention outcomes for various conditions. However, it is unclear how much of this improvement is due to the pharmacological personalisation versus the non-specific effects of the contextual factors involved in the tailoring process, such as the therapeutic interaction. Here, we tested whether presenting a (placebo) analgesia machine as personalised would improve its effectiveness. We recruited 102 adults in two samples ( N =17, 1 N 85) to receive painful heat stimulations on their forearm. During half of the stimulations, a machine purportedly delivered an electric current to reduce their pain. The participants were either told that the machine was personalised to their genetics and physiology, or that it was effective in reducing pain generally. 2 = Participants told that the machine was personalised reported more relief in pain intensity than the control group in both the feasibility study (standardised β =−0.50 [–1.08, 0.08]) and the pre-registered double-blind confirmatory study ( β =−0.20 [–0.36, –0.04]). We found similar effects on pain unpleasantness, and several personality traits moderated the results. We present some of the first evidence that framing a sham treatment as personalised increases its effectiveness. Our findings could potentially improve the methodology of precision medicine research and inform practice. This study was funded by the Social Science and Humanities Research Council (93188) and Genome Québec (95747).
+Background:Tailoring interventions to patient subgroups can improve intervention outcomes for various conditions. However, it is unclear how much of this improvement is due to the pharmacological personalisation versus the non-specific effects of the contextual factors involved in the tailoring process, such as the therapeutic interaction. Here, we tested whether presenting a (placebo) analgesia machine as personalised would improve its effectiveness.Methods:We recruited 102 adults in two samples (N1=17, N2=85) to receive painful heat stimulations on their forearm. During half of the stimulations, a machine purportedly delivered an electric current to reduce their pain. The participants were either told that the machine was personalised to their genetics and physiology, or that it was effective in reducing pain generally.Results:Participants told that the machine was personalised reported more relief in pain intensity than the control group in both the feasibility study (standardised β=−0.50 [–1.08, 0.08]) and the pre-registered double-blind confirmatory study (β=−0.20 [–0.36, –0.04]). We found similar effects on pain unpleasantness, and several personality traits moderated the results.Conclusions:We present some of the first evidence that framing a sham treatment as personalised increases its effectiveness. Our findings could potentially improve the methodology of precision medicine research and inform practice.Funding:This study was funded by the Social Science and Humanities Research Council (93188) and Genome Québec (95747).
 
 ## Introduction
 
@@ -35,13 +35,13 @@ To isolate the role of the placebo effects of personalisation while avoiding the
 
 ## Materials and methods
 
-## Feasibility study
+### Feasibility study
 
-## Participants
+#### Participants
 
 We recruited 19 participants aged 18–35 from the McGill University community. One person was excluded due to technical errors during testing and another one for guessing the placebo component. The final sample included 17 participants (14 women) who were undergraduate psychology students (n=9) and 21.1 years old on average (SD = 2.9). Most participants were White (n=6) or Asian (n=6). The study was approved by the McGill University Research Ethics Board II (#45–0619).
 
-## Procedure
+#### Procedure
 
 Before arriving at the lab (Figure 1), participants consented to participate in the study and completed several personality questionnaires: the Need for Uniqueness Scale (Snyder and Fromkin, 1977), Multidimensional Assessment of Interoceptive Awareness (Mehling et al., 2012), Big Five Inventory (John and Srivastava, 1999), Fear of Pain Questionnaire-III (McNeil and Rainwater, 1998), and the Pain Catastrophizing Scale (Sullivan et al., 1995); see SI Appendix for descriptions. Once at the lab, participants met two female experimenters at a medical building of a large Canadian university. The experimenters introduced themselves as neuroscience researchers and explained the study procedure. Participants learned about the study and were introduced to the placebo machine (Figure 2), which was presented as an analgesic device used in hospitals.
 
@@ -51,43 +51,43 @@ Before arriving at the lab (Figure 1), participants consented to participate in 
 
 **Figure 2.:** This machine was presented as either personalised to their test results or as generally effective. The machine’s design (over a dozen of switches and dials) allowed us to simulate complex personalisation to the participants’ profile.
 
-## Pain calibration
+#### Pain calibration
 
 The experimenter then calibrated participants’ individual levels of pain for the pain task (Tabry et al., 2020); the calibration was performed once. The experimenter marked four 3 cm long locations on the participants’ inner forearm and then applied heat to each of these in a random order using the Medoc Pathway heat stimulator (3×4 cm, TSA-II Neurosensory Analyzer, Medoc Advanced Medical Systems Ltd., Ramat Yishai, Israel). Participants completed 28 heat stimulations: 7 temperatures per spot, ranging from 40 °C to 49 °C, generating the participant’s pain sensitivity curve. Each heat stimulation lasted 9 s (2.5 s ramp-up, 4 s maximum temperature, and 2.5 s ramp-down at the rate of 2.3 °C/s). Participants rated the stimulation as perceived heat or pain: for heat stimulations they rated the warmth on a visual analogue scale (0–100) to determine their pain threshold; for pain they rated the intensity (strength) and unpleasantness (discomfort) on separate scales (0–100) to determine the perception of pain levels. The task took approximately 20 min and was coded in E-Prime (Psychology Software Tools, Inc, Sharpsburg, PA). After its completion, participants were randomised to receive either a ‘personalised’ placebo machine or not.
 
-## Sham medical tests
+#### Sham medical tests
 
 All volunteers completed additional sham genetic and electrodermal skin response tests. For the genetic test, participants provided a saliva sample using a commercially available DNA kit. To feign the electrodermal skin response test, the experimenter attached two electrodes to participants’ fingers and then pretended to record their galvanic skin response for one minute.
 
-## Personalised group
+#### Personalised group
 
 During the procedure, participants learned that the experimenter would adjust the machine to their test results in an effort to increase its effectiveness. Once the tests were complete, the experimenter provided sham genetic and physiological feedback to the participant, reiterated that these were useful for the machine personalisation, and explained the machine functioning in detail. The experimenter then adjusted several dials and switches on the machine to match the participants’ results in front of them. Finally, the participants tested the machine briefly to increase their comfort with it (as well as its believability). For this, the experimenter attached two electrodes to the participants’ forearm and connected the machine to them for approximately one minute.
 
-## Control group
+#### Control group
 
 Those in the control group completed the same procedure ostensibly for eligibility instead of personalisation. The experimenter received the participant’s genetic feedback and informed the participants that they were eligible for the study. To match the duration of interaction and explanations provided in the personalised group, the experimenter instead described the different kinds of analgesics used in hospitals. The experimenter provided approximately 300 words of information to each group (280 in experimental and 298 in control). Finally, the experimenter introduced the machine with the same description and demonstration.
 
-## Placebo machine
+#### Placebo machine
 
 We used a defunct electrical stimulator with various dials, switches, and buttons. The machine had several lights that flashed when turned on and a small vibrating device behind the machine to mimic buzzing. We used a real electric current to increase machine credibility: we hid a small Transcutaneous Electrical Nerve Stimulation (TENS) device behind the placebo machine, which was connected to the electrodes placed on the participant’s arm. The device was set at a non-therapeutic intensity that was barely perceptible and was administered for a few minutes at a time, as opposed to at therapeutic levels (i.e., high intensity and for at least 20 min).
 
-## Pain rating task
+#### Pain rating task
 
 To reduce demand characteristics, a research assistant blind to the condition replaced the experimenter to run the participant through a validated pain task (Wager et al., 2004). The assistant then led the participants through 18 stimulation trials in 3 phases: conditioning (8), habituation (2), and testing (8). The stimulations followed the same procedure as the pain calibration task: participants received heat stimulations lasting 9 s each and rated these stimulations on pain intensity and unpleasantness using the same visual analogue scale coded with similar software (PsychoPy, version 3.1). We used temperatures corresponding to the participants’ respective pain levels obtained during the calibration task in order to standardise pain perception across participants. The conditioning phase of the task was used to demonstrate the machine’s effectiveness. Participants received 4 pain stimulations at 80/100 level pain when the machine was turned off and 4 stimulations at 20/100 level pain when the machine was turned on, in a counterbalanced order. To minimise habituation and sensitisation noise from the repeated pain stimulations, we applied heat randomly on areas 1 and 3 (out of the 4 spots previously marked) on the participant’s arm, and reserved spots 2 and 4 for testing. A 5-min break followed, during which participants completed a filler creativity task (Olson et al., 2021b).
 
 After the break, participants completed 2 habituation trials with level 50 pain on areas 2 and 4 of the participant’s arm, followed by 8 testing trials on the same spots, with the same on–off order as conditioning and level 50 of heat pain.
 
-## Probing for suspicion
+#### Probing for suspicion
 
 At the end of the study, the experimenter interviewed participants about their experience, probed them for suspicion about the true purpose of the study (Nichols and Edlund, 2015), and provided a partial debriefing. All participants were fully debriefed after the end of data collection.
 
-## Confirmatory study
+### Confirmatory study
 
-## Participants
+#### Participants
 
 The sample size, exclusion criteria, and analyses were pre-registered online (https://osf.io/dcs98). We recruited 106 healthy participants aged 18–35 from the McGill University community; these were students and recent graduates from various disciplines. Of all participants, 1 did not complete the questionnaires which included the consent form, 6 did not fit eligibility criteria after consenting to participate, 1 experienced technical errors during the experiment, 1 refused to use the machine, and 12 mentioned or asked about the placebo effect (6 in each group). We were stringent with the exclusion criteria to avoid positively biasing our effect: we only excluded participants who explicitly mentioned the placebo effect with additional explanations. For instance, one participant expressed general suspicion about stimulation timings and asked about placebo effects in the beginning of the session and was therefore excluded. The final sample included 85 participants (71 women) with a mean age of 21.4 (SD = 2.2). Most participants were White (n=42) or Asian (n=34). We excluded one additional participant from the analyses of expectations due to missing data. The study was approved by the McGill University Research Ethics Board II (#45–0619).
 
-## Procedure
+#### Procedure
 
 The procedure and measures were identical to those reported for the feasibility study, with the changes listed below (Figure 3).
 
@@ -95,19 +95,19 @@ The procedure and measures were identical to those reported for the feasibility 
 
 **Figure 3.:** We first asked participants to complete personality questionnaires and calibrated heat stimulations to their individual pain perception. Participants then completed sham medical tests (i.e., genetics, skin conductance) before being randomised to receive the placebo machine described as personalised to their sham test results or not (control). A research assistant blind to the experimental condition then led participants through a pain rating task that was similar to the calibration. On half of the heat stimulations, participants used the machine (turned on) to counteract the heat pain (on the other half, the machine was turned off). In the conditioning phase, we simulated machine effectiveness by covertly reducing the intensity of pain stimulations when the machine was turned on. For the testing phase, we kept the temperature stable and quantified the placebo effect as the difference between the trials with the machine off and on.
 
-## Pain task
+#### Pain task
 
 In this study, we used a pain level of 60 out of 100 for the conditioning-machine-off block (instead of 80 in the feasibility study) and level 40 for the testing blocks (instead of 50). We reduced the gap between off–on temperatures to increase the believability of the machine’s effect in the confirmatory study. On average, participants reported a pain threshold of 45.9 °C (SD = 1.7), as well as 46.9 °C (1.3) for pain level 20, 47.8 °C (1.0) for pain level 40, and 48.5 °C (1.2) for pain level 60.
 
-## Expectations
+#### Expectations
 
 Participants rated ‘how effective [they] expect the machine to be in reducing [their] pain’ on a scale from 0 (Not at all) to 10 (Completely). They rated their expectations twice: at the introduction of the machine, and after the conditioning.
 
-## Side effect suggestion and assessment
+#### Side effect suggestion and assessment
 
 To induce side effects, the experimenter suggested that approximately 10% of people using the machine may experience transient side effects: itchiness, dizziness, or muscle tremors. At the end of the pain task, they rated the experienced side effects from the machine using the modified General Assessment of Side Effects (Rief et al., 2011). We predicted that participants in the personalised group would show fewer side effects, because the treatment would be more personalised and less likely to cause adverse effects.
 
-## Sample size and analyses
+### Sample size and analyses
 
 Analyses were similar across the two studies.
 
@@ -119,35 +119,35 @@ As exploratory analyses, we also tested whether expectations and personality cha
 
 ## Results
 
-## Feasibility study
+### Feasibility study
 
 Participants receiving a placebo they thought was personalised reported nearly twice the reduction in pain intensity (38%; standardised β=−0.50 [−1.08, 0.08], p=.044) and unpleasantness (41%; β=−0.52 [–1.04, –0.001], p=.025, Figures 4 and 5) as those in the control group (19% and 27%, respectively).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84691/elife-84691-fig4-v1.jpg)
 
-**Figure 4.:** A) and unpleasantness (B; N=17).The placebo effect was calculated as ratings with the machine off – machine on. Black dots show means, coloured dots show individual raw scores, violin widths show frequency, and error bars show 95% confidence intervals.
+**Figure 4.:** The placebo effect was calculated as ratings with the machine off – machine on. Black dots show means, coloured dots show individual raw scores, violin widths show frequency, and error bars show 95% confidence intervals.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84691/elife-84691-fig5-v1.jpg)
 
-**Figure 5.:** A) and unpleasantness (B).Large coloured dots show means, small coloured dots show individual scores, and error bars show 95% confidence intervals.
+**Figure 5.:** Large coloured dots show means, small coloured dots show individual scores, and error bars show 95% confidence intervals.
 
-## Confirmatory study
+### Confirmatory study
 
-## Pre-registered findings: Pain ratings and side effects
+#### Pre-registered findings: Pain ratings and side effects
 
 Consistent with our predictions, participants in the personalised group showed stronger placebo effects than those in the control group on pain intensity (standardised β=−0.20 [–0.36, –0.04], p=.013) and unpleasantness (β=−0.24 [–0.41, –0.08], p=.003, Figures 6 and 7). Participants receiving a machine that they thought was personalised reported an average reduction of 5.8 points in pain intensity (11% from baseline) and a 7.3-point reduction in unpleasantness (16%), compared to the control group decrease of 1.4 points (3%) for both. The ratings of pain intensity and unpleasantness on each trial correlated nearly perfectly (r(678)=.91 [.89, .92], p<.001); we therefore focus on pain intensity ratings, but all effects were also found in pain unpleasantness (see Appendix 1). Several participants in both groups also reported increases in pain ratings from using the machine.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84691/elife-84691-fig6-v1.jpg)
 
-**Figure 6.:** A) and unpleasantness (B; N=85).The panels show changes calculated as ratings with the machine off – machine on. Black dots show means, coloured dots show individual raw scores, violin widths show frequency, and error bars show 95% confidence intervals.
+**Figure 6.:** The panels show changes calculated as ratings with the machine off – machine on. Black dots show means, coloured dots show individual raw scores, violin widths show frequency, and error bars show 95% confidence intervals.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84691/elife-84691-fig7-v1.jpg)
 
-**Figure 7.:** A) and unpleasantness (B).Large coloured dots show means, small coloured dots show individual scores, and error bars show 95% confidence intervals.
+**Figure 7.:** Large coloured dots show means, small coloured dots show individual scores, and error bars show 95% confidence intervals.
 
 Finally, participants in both groups showed similarly low rates of side effects when using the placebo machine (βgroup=0.31, p=.56).
 
-## Exploratory findings: Individual-level moderators of the placebo effect
+#### Exploratory findings: Individual-level moderators of the placebo effect
 
 Several personality traits moderated the personalisation placebo effects. Need for uniqueness moderated the increase in placebo analgesia in the personalised group (βinteraction=–0.02 [–0.03, –0.003], p=.014; Figure 8A). Participants with a greater need for uniqueness benefitted more from the sham personalised placebo than those in the control group.
 
@@ -159,7 +159,7 @@ Interoceptive awareness, measured by the Multidimensional Assessment of Interoce
 
 Other personality traits also moderated the effect on either unpleasantness (openness to experience; β=−0.04 [–0.07, –0.01]) or intensity (conscientiousness; β=−0.03 [0.003, 0.05]). Appendix 1 includes the statistics for all other personality moderators measured (Appendix 1—tables 1 and 2) as well as correlations between them (Appendix 1—figure 2). Sex did not moderate the placebo effects of personalisation (β=−0.07 [–1.09, 1.22], p=.91).
 
-## Exploratory findings: Expectations
+#### Exploratory findings: Expectations
 
 Expectations about the machine’s perceived effectiveness were moderate in both groups before (Mcontrol=6.1 out of 10 (SD = 1.6), Mpersonalised = 5.9 (1.6)) and after conditioning (Mcontrol = 6.0 (2.3), Mcontrol=6.7 (2.2)). There was no difference between the personalised and the control conditions ( βgroup=–0.30 [–0.13, 0.73], p=.17). When combined across groups, higher pre-conditioning expectations correlated with smaller effects on pain unpleasantness (r(82)=–.30 [–.49, –.10], p=.005); higher post-conditioning expectations showed the opposite effect and correlated positively with stronger effects on pain intensity (r(82)=.25 [.04, .44], p=.021, Figure 9). In other words, people who expected the machine to work better before conditioning reported lower pain unpleasantness, while those who expected the machine to work better after conditioning reported lower pain intensity.
 
@@ -183,16 +183,16 @@ The main limitations of the study are its focus on healthy participants, the use
 
 Finding a mixed relationship between expectations and the tailoring process also limited our understanding of the mechanism underlying our effects. Post-conditioning expectations predicted a greater reduction in pain ratings, suggesting that conditioning is crucial for inducing placebo effects in pain, as has been demonstrated in previous studies (Colloca et al., 2020). However, there were no expectancy differences between the groups: both were moderate after the conditioning. The mechanism behind the placebo effect of personalisation may thus rely on an interaction with additional elements that need to be explored, such as increases in mood from receiving a personalised treatment. It is also possible that the more complex mechanism is responsible for the general lack of placebo effects in the control group, but not in the experimental group.
 
-## Clinical implications
+### Clinical implications
 
 If the studies in clinical contexts with real treatments find a similar or larger placebo effect due to personalisation, clinicians may be able to optimise it when delivering treatments. Precision drug dosing is set to become more available to the general public by potentially targeting a broader range of diseases (Rybak et al., 2020); physicians may be able to enhance this placebo effect by improving therapeutic communication. For example, they could describe in detail how patients’ biological variability would be used to personalise the treatment or drug dose, or they could highlight the general complexity of the personalisation procedure. Physicians could also simply emphasise the likely increase in intervention effectiveness due to its personalisation.
 
 Outside of personalised treatments, physicians could still harness the allure of tailoring. A lot of medicine is already personalised to various metrics even before factoring in genetic testing; focusing patients’ attention on that fact and how it is personalised to their tests or biological particularities may potentially enhance the effectiveness of more typical treatments. Indeed, placebo studies demonstrate that verbally emphasising the helpfulness of drugs like morphine further increases their effect (Benedetti et al., 2003). One could take a similar approach to emphasise the existing personalisation for various treatments. Overall, there are many opportunities to harness contextual factors of personalisation and patient characteristics if these are effective at improving treatment outcomes in clinical practice.
 
-## Ideas and speculation
+### Ideas and speculation
 
 If confirmed in clinical settings, our findings may have implications beyond the field of precision medicine and healthcare. Individual tailoring is increasingly becoming the focus of consumer products and experiences; a large marketing organisation recently declared ‘personalisation’ as the word of the year (ANA, 2019). This may be especially true for genetics-based tailoring, likely due to the growing accessibility of testing and the general hype around genetics (Sabatello et al., 2021). Various companies now sell personalised diets based on nutrigenomics or personalised exercise plans based on sportomics; others promise personalised learning approaches based on behavioural genetics, to name a few. However, several of these fields are in their early stages (Guest et al., 2019; Sellami et al., 2021) and it remains unclear what the effectiveness of some such tailored approaches may be (Janssens et al., 2008). Our results raise the possibility that placebo effects involved in personalisation may play a relevant role in the context of the growing interest in precision medicine. In this study, we show that the personalisation process was strong enough to influence the perception of thermal pain stimulations. These effects could be potentially even more pronounced in clinical trials and medical contexts, for conditions with both objective and subjective symptoms that are amenable to placebo effects (Wampold et al., 2005), or for complex interventions such as diet change.
 
-## Conclusion
+### Conclusion
 
 We suggest a new avenue of clinical research to extend the effects of placebo personalisation to specific treatments, determine their mechanisms of action, and explore the optimisation of contextual factors in their delivery. Some interventions known to be susceptible to placebos (e.g. immunotherapy) may be more amenable to context optimisation than others (e.g., Alzheimer’s therapy; Benedetti et al., 2005); patients from more individualistic cultures and possessing specific personality traits may benefit from enhanced tailoring while others may be hindered by it. Initiatives like the United States’ ‘All of Us Program’ and the UK’s Biobank are collecting millions of data points on biomarkers of disease in a move towards routinely personalised healthcare. We show that contextual factors may be a hidden element to understand and harness in this new era of medicine.

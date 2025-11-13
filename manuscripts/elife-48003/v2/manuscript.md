@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.48003.001 Epithelial homeostasis and regeneration require a pool of quiescent cells. How the quiescent cells are established and maintained is poorly understood. Here, we report that Trpv6, a cation channel responsible for epithelial Ca 2+ absorption, functions as a key regulator of cellular quiescence. Genetic deletion and pharmacological blockade of Trpv6 promoted zebrafish epithelial cells to exit from quiescence and re-enter the cell cycle. Reintroducing Trpv6, but not its channel dead mutant, restored the quiescent state. Ca 2+ imaging showed that Trpv6 is constitutively open in vivo. Mechanistically, Trpv6-mediated Ca 2+ influx maintained the quiescent state by suppressing insulin-like growth factor (IGF)-mediated Akt-Tor and Erk signaling. In zebrafish epithelia and human colon carcinoma cells, Trpv6/TRPV6 elevated intracellular Ca 2+ levels and activated PP2A, which down-regulated IGF signaling and promoted the quiescent state. Our findings suggest that Trpv6 mediates constitutive Ca 2+ influx into epithelial cells to continuously suppress growth factor signaling and maintain the quiescent state.
+Epithelial homeostasis and regeneration require a pool of quiescent cells. How the quiescent cells are established and maintained is poorly understood. Here, we report that Trpv6, a cation channel responsible for epithelial Ca2+ absorption, functions as a key regulator of cellular quiescence. Genetic deletion and pharmacological blockade of Trpv6 promoted zebrafish epithelial cells to exit from quiescence and re-enter the cell cycle. Reintroducing Trpv6, but not its channel dead mutant, restored the quiescent state. Ca2+ imaging showed that Trpv6 is constitutively open in vivo. Mechanistically, Trpv6-mediated Ca2+ influx maintained the quiescent state by suppressing insulin-like growth factor (IGF)-mediated Akt-Tor and Erk signaling. In zebrafish epithelia and human colon carcinoma cells, Trpv6/TRPV6 elevated intracellular Ca2+ levels and activated PP2A, which down-regulated IGF signaling and promoted the quiescent state. Our findings suggest that Trpv6 mediates constitutive Ca2+ influx into epithelial cells to continuously suppress growth factor signaling and maintain the quiescent state.
 
 ## Introduction
 
@@ -28,33 +28,129 @@ The transient receptor potential cation channel subfamily V member 6 (TRPV6) is 
 
 ## Results
 
-## Trpv6 is crucial for epithelial Ca2+ uptake in zebrafish
+### Trpv6 is crucial for epithelial Ca2+ uptake in zebrafish
 
 Three trpv6 mutant fish lines were generated using CRISPR/Cas9 (Figure 1A). All three Trpv6 mutant proteins lack the six transmembrane domains and the critical ion pore region and are predicted to be null mutations (Figure 1B). The trpv6Δ7 and trpv6Δ8 lines were made in the Tg(igfbp5a:GFP) fish background. Tg(igfbp5a:GFP) is a transgenic fish line expressing EGFP in the trpv6-expressing NaR cells (Liu et al., 2017), allowing real-time analysis of NaR cell proliferation. The trpv6Δ8–2 line was in a non-transgenic fish background and used in Ca2+ imaging analysis described later. The gross morphology and body size of the mutant fish were similar to their siblings (Figure 1—figure supplement 1). All mutant fish died within 2 weeks (Figure 1C and D). Alizarin red staining indicated a marked reduction in the calcified bone mass in the trpv6-/- mutant fish (Figure 1E), indicating body calcium deficiency. Fura-2 Ca2+ imaging experiments in HEK293 cells transfected with zebrafish Trpv6 and human TRPV6 were performed. The Trpv6-mediated [Ca2+]i change was similar to that of TRPV6 (Figure 1F). D542 in mammalian TRPV6 occupies a critical position in the ion pore region and mutation of this residue abolishes its Ca2+ permeability (McGoldrick et al., 2018; Sakipov et al., 2018). This residue is conserved in zebrafish Trpv6 at position 539 (Figure 1—figure supplement 2). We generated and tested Trpv6D539A mutant. The [Ca2+]i levels in Trpv6D539A mutant transfected cells were low and did not respond to changes in extracellular [Ca2+] (Figure 1F). The maximal Ca2+ influx rate was reduced to a negligible level in Trpv6D539A transfected cells (Figure 1G). Whole-cell patch clamp experiments confirmed that the Trpv6 mediated Ca2+ current and this activity was abolished in the Trpv6D539A mutant (Figure 1H). These findings support the notion that Trpv6 plays an indispensable role in epithelial Ca2+ uptake and maintaining body Ca2+ balance and provided critical reagents for subsequent experiments.
 
-## Trpv6 regulates the quiescence-proliferation decision in epithelial cells
+![Figure 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram showing trpv6 gene (WT) and various mutant sequences. Filled boxes indicate trpv6 ORF and open boxes indicate UTRs. Introns are shown as lines. The gRNA targeting site is indicated in blue color and PAM motif is underlined. Deleted and inserted nucleotides are indicated by dash lines and red letters, respectively. (B) Schematic diagram of Trpv6 (WT) and its mutants. Putative functional domains are indicated. The gray box indicates altered sequence caused by frame shifts. (C–D) Survival curves of trpv6Δ8-/-; Tg(igfbp5a:GFP) (C) and trpv6Δ7-/-; Tg (igfbp5a:GFP) fish (D) and siblings. The numbers of total fish are indicated. (E) Representative images of Alizarin red stained wild-type and trpv6Δ8-/-; Tg(igfbp5a:GFP) fish at 7 days post fertilization (dpf). (F) Fura-2 Ca2+ imaging analysis of HEK293 cells transfected with the indicated plasmids. n > 50 cells from three independent experiments. (G) The maximal influx rate. n = 3 independent experiments. (H) Currents evoked by a RAMP voltage from −120 mV to +120 mV in HEK293 cells transfected with the indicated plasmids. In this and all subsequent figures, unless specified otherwise data shown are Mean ± SEM. Different letters indicate significant difference at p<0.05, one-way ANOVA followed by Tukey’s multiple comparison test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Gross morphology (A) and body size (B) of trpv6Δ8-/-; Tg(igfbp5a:GFP) fish and siblings. Values are Mean ± SEM, n = 7–23 fish. No statistical significance was found.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Transmembrane domain 5 and 6 are indicated in yellow and orange letters, respectively. The ion pore region is indicated by black letters and the critical Asp residue (D) is labeled in red.
+
+### Trpv6 regulates the quiescence-proliferation decision in epithelial cells
 
 To determine the possible role of Trpv6 in NaR cells, double-blind tests were performed (Figure 2A). In agreement with previous studies (Dai et al., 2014; Liu et al., 2017), NaR cells in the wild-type and heterozygous siblings were distributed in the yolk sac region as single cells in a salt-and-pepper pattern (Figure 2B). NaR cells in the trpv6Δ8 mutant larvae were often observed in clusters of newly divided cells (Figure 2B). These proliferating NaR cells had enlarged apical opening (Figure 2—figure supplement 1). The NaR cell proliferation rate was significantly elevated in the mutant fish in all stages examined (Figure 2C). At five dpf, the trpv6Δ8 mutant fish had 3-time more NaR cells (Figure 2C). Essentially same data were obtained with the trpv6Δ7 fish (Figure 2D). GdCl3, a Trpv6 inhibitor, was used to further test the role of Trpv6. GdCl3 treatment increased NaR cell proliferation in the wild-type and heterozygous fish, while it did not further increase NaR cell proliferation in the mutant fish (Figure 2E and Figure 2—figure supplement 2). Ruthenium red, another Trpv6 inhibitor, had similar effects (Figure 2—figure supplement 2). Next, Trpv6 and Trpv6D539A were randomly expressed in NaR cells in trpv6Δ8-/-; Tg(igfbp5a:GFP) fish using a Tol2 transposon BAC-mediated genetic mosaic assay (Liu et al., 2018). Reintroduction of Trpv6 reversed the quiescence to proliferation transition (Figure 2F) and reduced the apical opening size to the control levels (Figure 2—figure supplement 1). Trpv6D539A, however, had no such effect (Figure 2F). These data showed that Trpv6 functions as a major barrier in the quiescence to proliferation transition and this action requires its Ca2+ permeability.
 
-## Trpv6 controls the quiescence-proliferation decision via regulating IGF signaling
+![Figure 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram of the experimental design. (B) Representative images. In this and all subsequent larval images, lateral views of the yolk-sac region are shown with dorsal up and anterior to the left. (C–D) Mean NaR cell number/fish of the indicated genotypes. n = 6–9. (E) Progenies of trpv6 Δ8+/-; Tg (igfbp5a:GFP) intercross were raised to 3 dpf and treated with 100 µM GdCl3 from 3 to 5 dpf. NaR cells in each fish were quantified following individual genotyping. n = 13–22. (F) Progenies of trpv6Δ8+/-;Tg(igfbp5a:GFP) intercross were injected with the indicated BAC-mCherry DNA at one-cell stage. At 5 dpf, the Trpv6-expressing NaR cells in each fish were scored following a published scoring system (Liu et al., 2018). Representative images are shown in the left and quantified results in the right panel. ****, p<0.0001 by Chi-Square test, fish n = 12–38.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Progenies of a trpv6Δ8+/-;Tg(igfbp5a:GFP) intercross were injected with or without the BAC(igfbp5a:Trpv6-mCherry) DNA. At 3 dpf, larvae were photographed, followed by individual genotyping. Representative images are shown in (A). The apical opening of NaR cells were quantified and shown in (B). Data are Mean ± SEM, n = 8–42. Different letters indicate significant difference at p<0.05, one-way ANOVA followed by Tukey’s multiple comparison test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) Tg(igfbp5a:GFP) fish were treated with Ruthenium Red (2 µM) or GdCl3 (100 µM) from 3 to 5 dpf. Representative images are shown in (A). NaR cell numbers were quantified and shown in (B). **, **** indicate p<0.01 and 0.0001 by unpaired t-test.
+
+### Trpv6 controls the quiescence-proliferation decision via regulating IGF signaling
 
 Previous studies showed that pre-exiting NaR cells in wild-type fish re-enter the cell cycle in response to low [Ca2+] treatment (Dai et al., 2014; Liu et al., 2017). To determine whether this effect is related to Trpv6, 3 dpf trpv6Δ7-/-;Tg(igfbp5a:GFP) larvae and siblings were subjected to low [Ca2+] challenge test. Low [Ca2+] treatment resulted in a three-fold increase in proliferating NaR cells in the wild-type and heterozygous fish (Figure 3A). This value was comparable to that of trpv6Δ7-/- larvae kept in normal [Ca2+] media (Figure 3A). Low [Ca2+] treatment did not further increase NaR cell number in the mutant larvae (Figure 3A). Low [Ca2+] treatment significantly increased trpv6 mRNA level in wild-type fish and heterozygous fish, an adaptive response in Ca2+ homeostasis reported previously (Liu et al., 2017). This increase, however, was abolished in trpv6-/- mutant (Figure 3—figure supplement 1A), likely due to non-sense mRNA decay of mutant trpv6 mRNA.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig3-v2.jpg)
+
+**Figure 3.:** (A) Progenies of trpv6Δ7+/-; Tg(igfbp5a:GFP) intercrosses were grown in embryo solutions with the indicated Ca2+ concentration from 3 dpf to 5 dpf. NaR cells in each fish were quantified followed by individual genotyping. n = 5–17 fish. (B–C) Embryos of the indicated genotypes were raised to 3 dpf and treated with 0.3 µM BMS-754807 or DMSO. At 4 dpf, the treated fish were subjected to immunostaining using an anti-phospho-Akt antibody (B) or an anti-phospho-S6 antibody (C). Representative images are shown in (Figure 3—figure supplement 2A and B). n = 5–41. (D) Progenies of a trpv6Δ8+/-; Tg (igfbp5a:GFP) intercross were injected with the indicated BAC-mCherry DNA at one-cell stage. At 4 dpf, the larvae were subjected to phospho-Akt and mCherry double staining. (E) Embryos of the indicated genotypes were raised to 3 dpf and treated with 30 µM U0126 or DMSO. At 4 dpf, the treated fish were subjected to immunostaining using an anti-phospho-Erk antibody. pErk signals were scaled as shown in Dai et al. (2014). n = 4–24. (F–I) Progenies of trpv6Δ8+/-; Tg(igfbp5a:GFP) or trpv6Δ7+/-; Tg(igfbp5a:GFP) intercrosses were raised to 3 dpf and treated with BMS-754807 (0. 3 µM), Wortmannin (0. 06 µM), Rapamycin (1 µM), U0126 (10 µM) or DMSO from 3 to 5 dpf. NaR cells in each fish were quantified followed by individual genotyping, n = 6–22.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) trpv6Δ7+/-; Tg(igfbp5a:GFP) intercrosses were raised in normal or low [Ca2+] solutions from 3 to 5 dpf. Caudal fin was clipped for genotyping and 4–6 fish from the same genotype group were pooled for RNA extraction and RT-qPCR. Gene expression level was normalized to 18 s. Values shown are Mean ± SEM, n = 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–B) trpv6Δ8+/-; Tg(igfbp5a:GFP) intercrosses were treated with 0.3 µM BMS-754807 or DMSO. At 4 dpf, the treated fish were subjected to immunostaining using an anti-phospho-Akt antibody (A) or an anti-phospho-S6 antibody (B).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–B) Wild type fish were treated with Ruthenium Red (30 µM) or GdCl3 (100 µM) from 3 to 4 dpf and analyzed by immunostaining using an anti-phospho-Akt antibody. Representative images are shown in (A) and quantified results shown in (B). **, **** indicate p<0.01 and 0.0001 by unpaired t-test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) trpv6Δ7+/-; Tg(igfbp5a:GFP) intercrosses were treated with 30 µM U0126 or DMSO from 3 to 4 dpf and then stained for phosphorylated-Erk signals. pErk signals were scaled as shown in Dai et al. (2014) n = 5–17.
 
 Low [Ca2+] stress induces NaR cell proliferation and this has been attributed to the activation of IGF1 receptor-mediated PI3 kinase-Akt-Tor signaling (Dai et al., 2014; Liu et al., 2017; Liu et al., 2018). Gene expression analysis results showed that the igfr1a and igfr1b mRNA levels were comparable between trpv6Δ7-/- larvae and siblings (Figure 3—figure supplement 1B–1C). Immunostaining results showed significant increases in the number of phosphorylated Akt-positive NaR cells in trpv6Δ7-/- and trpv6Δ8-/- larvae kept in the normal [Ca2+] embryo medium (Figure 3B; Figure 3—figure supplement 2A). The levels of phospho-Akt in the siblings were minimal. Blocking Trpv6 channel activity using GdCl3 and Ruthenium red increased phospho-Akt levels in the wild-type fish (Figure 3—figure supplement 3). Re-expression of Trpv6 in mutant fish inhibited Akt phosphorylation in NaR cells (Figure 3D), indicating that Trp6 is both required and sufficient in suppressing Akt signaling. Tor signaling activity was also significantly elevated in the trpv6Δ7-/- and trpv6Δ8-/- mutant larvae (Figure 3C; Figure 3—figure supplement 2B). Mitogen-activated kinase (MAPK) pathway is another major signaling pathway downstream of the IGF1 receptor (Duan et al., 2010). Immunostaining results of pErk signaling activity was significantly increased in trpv6-/- mutant larvae (Figure 3E and Figure 3—figure supplement 4). These data show that loss of Trpv6 expression or activity results in elevated IGF signaling in NaR cells.
 
 If Trvp6 regulates the quiescence-proliferation decision by suppressing the IGF1 receptor-mediated signaling, then a blockade of IGF1 receptor and key downstream signaling molecules should inhibit the quiescent to proliferation transition. Indeed, treatment of trpv6-/- mutant fish with BMS-754807, an IGF1 receptor inhibitor, abolished the quiescence to proliferation transition in mutant larvae (Figure 3F). However, IGF1 receptor inhibition did not show any significant effect on NaR cell proliferation in wild-type and heterozygous siblings (Figure 3F). Treatment of trpv6-/- mutant fish with PI3 kinase inhibitor Wortmannin, Tor inhibitor Rapamycin, and Mek inhibitor U0126 had similar effects (Figure 3G–3I).
 
-## Trpv6 constitutively conducts Ca2+ into epithelial cells and regulates the [Ca2+]i levels in vivo
+### Trpv6 constitutively conducts Ca2+ into epithelial cells and regulates the [Ca2+]i levels in vivo
 
 To investigate Trvp6-mediated Ca2+ influx into NaR cells in vivo, we generated the Tg(igfbp5a:GCaMP7a) fish, a stable reporter fish line expressing GCaMP7a in NaR cells (Figure 4—figure supplement 1). After validating the effectiveness of GCaMP7a in reporting intracellular Ca2+ levels ([Ca2+]i) (Figure 4—figure supplement 2), trpv6Δ8–2+/-; Tg(igfbp5a:GCaMP7a)+/- fish were crossed with trpv6Δ8–2+/- fish and their offspring were screened at three dpf and subsequently genotyped individually. While GCaMP7a-positive cells were observed in ~50% of the siblings as expected, none of the trpv6Δ8–2-/- mutant larvae had any GCaMP7a-positive cells (Figure 4A). Addition of the Ca2+ ionophore ionomycin restored GCaMP7a signal in the mutant fish to a level comparable to their siblings (Figure 4B and C), thus ruling out the possibility that GCaMP7a expression is altered in the mutant fish. Next, Trpv6 was randomly expressed in NaR cells in the trpv6 Δ8–2-/-; Tg(igfbp5a:GCaMP7a) fish using the genetic mosaic assay. Reinduction of Trpv6 significantly increased GCaMP7a signal levels (Figure 4D). Ionomycin treatment did not result in further increase (Figure 4D). These genetic and in vivo imaging data argue strongly that Trpv6 is not only critical in conducting Ca2+ into NaR cells, but also in maintaining the high [Ca2+]i levels in these cells. We next used Trpv6 inhibitors to block Trpv6 activity in Tg(igfbp5a:GCaMP7a) fish. Within 8 min after the GdCl3 treatment, the [Ca2+]i levels became significantly lower and the reduction became more pronounced in 12 and 16 min (Figure 4E and G; Video 1). When GdCl3 was washed out, the [Ca2+]i levels gradually increased and returned to normal levels after 12 min (Figure 4F and G; Video 2). Similar results were obtained with Ruthenium red (Figure 4—figure supplement 3). Addition of the IGF1 receptor inhibitor BMS-754807 did not change the [Ca2+]i levels in NaR cells (Figure 4—figure supplement 4). Therefore, Trpv6 constitutively conducts Ca2+ into epithelial cells and continuously maintains high [Ca2+]i levels in vivo.
 
-## Trpv6 inhibits IGF signaling and epithelial cell proliferation by regulating [Ca2+]i and PP2A is a downstream effector
+![Figure 4.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig4-v2.jpg)
+
+**Figure 4.:** (A) trpv6Δ8–2+/-;Tg (igfbp5a:GCaMP7a)+/- was crossed with trpv6Δ8–2+/-. The progenies were imaged at three dpf followed by individual genotyping. Percentage of GCaMP7a-positive fish is shown. *, p<0.05 by Chi-Square test, n = 21. (B–C) Fish described in (A) were imaged before and after the addition of 7.5 µM Ionomycin + 10 mM CaCl2. Representative images are shown in (B) and the quantified results are shown in (C). n = 5–7. (D) Progenies from a trpv6Δ8–2+/-;Tg (igfbp5a:GCaMP7a)+/- and trpv6Δ8–2+/- intercross were injected with BAC (igfbp5a:Trpv6-mCherry) DNA at 1 cell stage. They were raised to three dpf. GCaMP7a signal intensity in Trpv6-mCherry-expressing cells and non-expressing NaR cells were quantified before and after the addition of 7.5 µM Ionomycin+10 mM CaCl2. n = 4. (E–G) Time-lapse images of 3 dpf Tg (igfbp5a:GCaMP7a) larvae after the addition of 100 µM GdCl3 (E) or following drug removal (F). Changes in GCaMP7a and mCherry signal intensity ratio were quantified and shown in (G). n = 5. * and **** indicate p<0.05 and<0.0001 by Two-way ANOVA followed by Dunnett's multiple comparison test. (H) Wild-type larvae were treated with BAPTA-AM (100 µM) from 3 dpf to 5 dpf. NaR cells were labeled by in situ hybridization using a trpv6 riboprobe and quantified. (I) Larvae described in (H) were stained for phosphor-Akt after 24 hr treatment. Mean ± SEM. ****, p<0.0001, unpaired t-test. n = 15–19.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Filled boxes indicate igfbp5a ORF and open boxes indicate its UTRs. The iTol2 cassette and GCaMP7a reporter cassette were introduced into DKEYP-56B7 by homologous recombination. The igfbp5a sequence from the start codon to the end of first exon was replaced by the GCaMP7a cassette.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Embryos injected with BAC(igfbp5a:GCaMP7a) DNA were raised in E3 embryo solution and imaged at 3 dpf before and after the addition of the indicated chemicals (Ionomycin: 5 µM, CaCl2: 10 mM, EGTA: 10 mM).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–C) Time-lapse images of 3 dpf larvae were taken after the addition (A) and removal (B) of 100 µM Ruthenium red (RR) at the indicated time points. Fluorescence change of GCaMP7a (green) and mCherry (red) were quantified and shown in (C). Mean ± SEM, n = 8. **,***, and **** indicate p<0.01, p<0.001, p<0.0001 by multiple t-tests.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Time-lapse images of 3 dpf Tg (igfbp5a:GCaMP7a) larvae at the indicated time points after adding 0.3 µM BMS-754807. Changes in GCaMP7a (green) and mCherry (red) signal intensity were quantified. Representative images are shown in (A) and quantified results are shown in (B). Mean ± SEM, n = 3. No significance was found by two-way ANOVA followed by Dunnett's multiple comparison test.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-video2.mp4.jpg)
+
+### Trpv6 inhibits IGF signaling and epithelial cell proliferation by regulating [Ca2+]i and PP2A is a downstream effector
 
 The observation that [Ca2+]i in NaR cells are continuously maintained at high levels was surprising and intriguing. To determine whether the observed high [Ca2+]i levels have any functional significance, Tg(igfbp5a:GFP) larvae were treated with the intracellular Ca2+ chelator BAPTA-AM. BAPTA-AM treatment resulted in a significant increase in NaR cell proliferation (Figure 4H) and in phospho-Akt signaling levels (Figure 4I). These data indicate that the high [Ca2+]i levels are critical in maintaining the quiescent state. To identify the downstream effector(s) of [Ca2+]i, a collection of small molecule inhibitors with known protein targets were screened using Tg(igfbp5a:GFP) larvae. Okadaic acid and Calyculin A, two inhibitors of the conserved protein phosphatase 2A (PP2A), were among the strongest hits. Treatment of Tg(igfbp5a:GFP) larvae with either drug significantly increased NaR cell proliferation (Figure 5A and B). This effect is specific because the drug treatment had no such effect in PP2A-deficient zebrafish (Figure 5—figure supplement 1). Importantly, the Okadaic acid and Calyculin A treatment-induced NaR cell proliferation was abolished by the IGF1 receptor inhibitor BMS-754807, PI3K inhibitor Wortmannin, Tor inhibitor Rapamycin, and Mek inhibitor U0126 (Figure 5A–5C). Okadaic acid or Calyculin A treatment also resulted in significant increases in the phosphorylated-Akt levels in an IGF1 receptor-dependent manner (Figure 5D). However, Okadaic acid or Calyculin A treatment did not change the [Ca2+]i levels (Figure 5—figure supplement 2), indicating that PP2A acts downstream of the [Ca2+]i.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Tg(igfbp5a:GFP) embryos were treated with 1 µM Okadaic acid (OA) or 0.1 µM Calyculin A in the presence or absence of 0.3 µM BMS-754807 from 3 dpf. NaR cells were quantified at 4 and 5 dpf. Data shown are n = 10–38. (C) Tg(igfbp5a:GFP) embryos were treated with 1 µM Okadaic acid (OA) in the presence or absence of Wortmannin (0. 06 µM), Rapamycin (1 µM), U0126 (10 µM) or DMSO from 3 to 5 dpf. NaR cells were quantified at 4 and 5 dpf. Data shown are n = 16–19. (D) Wild-type larvae were treated with 1 µM Okadaic acid or 0.1 µM Calyculin A in the presence or absence of 0.3 µM BMS-754807 from 3 dpf to 4 dpf. They were analyzed by immunostaining for phospho-Akt. n = 9–16. (E) Tg(igfbp5a:GFP) embryos were injected with gRNAs targeting three ppp2c genes and Cas9 protein at one-cell stage. They were raised to five dpf. NaR cell division was quantified following a published scoring system (Liu et al., 2018). n = 24–28. ****, p<0.0001 by Chi-Square test. (F) The embryos treated as in (E) were raised to 4 dpf and analyzed by immunostaining for phospho-Akt signal. n = 20–21. *, p<0.05, unpaired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic diagram and guide RNA targeting sites. The target sites are labeled by blue letters and the PAM motif is underlined. (B) Embryos injected with gRNAs and Cas9 protein were raised to 1 dpf. Each of them was lysed and analyzed by PCR followed by hetero-duplex motility assay. (C) Embryos injected with gRNAs and Cas9 protein were raised to 3 dpf and treated with Calyculin A or vehicle. Values are Mean ± SEM, n = 7–15.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Time-lapse images of 3 dpf Tg (igfbp5a:GCaMP7a) larvae at the indicated time points after adding 1 µM Okadaic acid (OA) (A, B) or 0.1 µM Calyculin A (C, D). Changes in GCaMP7a (green) and mCherry (red) signal intensity were quantified. Representative images are shown in (A, C) and quantified results are shown in (B, D). Mean ± SEM, n = 3. No significance was found by two-way ANOVA followed by Dunnett's multiple comparison test.
 
 PP2A are a family of conserved protein phosphatases that dephosphorylate Akt and many other proteins (Perrotti and Neviani, 2013; Seshacharyulu et al., 2013). PP2A holoenzymes are heterotrimers. The core enzyme is made by a catalytic C subunit (Cα and Cβ isoform), a scaffold A subunit (Aα and Aβ), and many regulatory B subunits (Virshup and Shenolikar, 2009). The combination of these subunits results in a very large number of different holoenzyme complexes. Our database search suggests that the zebrafish genome contains 3 C subunit genes (ppp2ca, cb, and cc). We used CRISPR/Cas9 to transiently knockdown the ppp2c genes because stable knockout is likely embryonic lethal. The effectiveness of the targeting guide RNAs was validated (Figure 5—figure supplement 1). Transient knockdown of ppp2cs resulted in significant increases in the number of proliferating NaR cells (Figure 5E) and in phospho-Akt levels (Figure 5F), suggesting that PP2A mediates the action of Trpv6-mediated Ca2+ influx in zebrafish epithelia.
 
 To determine whether this signaling mechanism is functional in human cells, TRPV6 knockdown experiments were performed in human LoVo colon carcinoma cells using validated siRNA (Lallet-Daher et al., 2009). These cells were synchronized by serum starvation followed by serum re-stimulation. Knockdown of TRPV6 resulted in a significant increase in LoVo cell proliferation (Figure 6A and Figure 6—figure supplement 1). Treatment of LoVo cells with Ruthenium red, GdCl3, BAPTA-AM, and Okadaic acid all significantly increased cell proliferation (Figure 6B and Figure 6—figure supplement 2). MTT assay results showed little changes in cell viability in GdCl3, BAPTA-AM, and Okadaic-acid-treated cells. Ruthenium red treatment resulted in a modest but statistically significant decrease in cell viability (Figure 6—figure supplement 3). Finally, LoVo cells were transfected with PP2A-CαL199P and PP2A-CαH118N, two dominant-negative forms of catalytic subunit Cα of PP2A (Katsiari et al., 2005). Expression of PP2A-CαL199P and PP2A-CαH118N both significantly increased LoVo cell proliferation (Figure 6C and Figure 6—figure supplement 4).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig6-v2.jpg)
+
+**Figure 6.:** (A) LoVo cells transfected with scrambled siRNA or TRPV6 targeting siRNA were synchronized by serum starvation followed by serum re-stimulation. Cells were analyzed by flow cytometry analysis after propidium iodide staining. Percentage of S-phase cells are calculated and shown. Mean ± SEM, n = 3. **, p<0.01 by unpaired t-test. (B) LoVo cells were synchronized by serum starvation. They were re-stimulated with 2% FBS medium containing Ruthenium Red (RR, 100 µM), GdCl3 (100 µM), BAPTA-AM (100 µM), Okadaic acid (OA, 20 nM) or DMSO for 48 hr and analyzed by flow cytometry analysis after propidium iodide staining. Percentage of S-phase cells are shown. Mean ± SEM, n = 3. (C) LoVo cells transfected with the indicated DN-PP2A constructs were synchronized by serum starvation followed by serum re-stimulation. Cells were analyzed by flow cytometry analysis after propidium iodide staining. Percentage of S-phase cells are calculated and shown. Mean ± SEM, n = 3. ****, ***, ** indicate P<0.0001, P<0.001, P<0.01 by one-way ANOVA followed by Tukey’s multiple comparison test in (B) and (C). (D) Schematic diagram of the proposed model. See text for details.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The PI fluorescence intensity is given in arbitrary units (a.u.) on the X-axis, and the Y-axis indicates cell counts normalized to percent of the max as measured by flow cytometry.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** LoVo cells were synchronized by serum starvation. They were re-stimulated with 2% FBS medium containing Ruthenium Red (RR, 100 µM), GdCl3 (100 µM), BAPTA-AM (100 µM), Okadaic acid (OA, 20 nM) or DMSO for 48 hr and analyzed by MTT assays. Mean ± SEM, n = 3.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48003/elife-48003-fig6-figsupp4-v2.jpg)
 
 ## Discussion
 
@@ -72,62 +168,289 @@ Our findings linking the Trpv6-meiated Ca2+ uptake to the cellular quiescence re
 
 ## Materials and methods
 
-## Chemicals and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(igfbp5a:GFP)</td>
+      <td>Pubmed ID: 28515443</td>
+      <td>ZFIN ID: ZDB-TGCONSTRCT-170830–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>trpv6-/-; Tg(igfbp5a:GFP)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR/Cas9-mediated knockout</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(igfbp5a:GCaMP7a)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Tol2-mediated transgenesis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>trpv6-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR/Cas9-mediated knockout</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>trpv6-/-; Tg(igfbp5a:GCaMP7a)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cross trpv6-/- with Tg (igfbp5a:GCaMP7a)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>Human TRPV6 siRNA</td>
+      <td>Pubmed ID: 19270724</td>
+      <td></td>
+      <td>GACUCUCUAUGACCUCACA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>Mission siRNA Universal Negative Control #1</td>
+      <td>Sigma</td>
+      <td>Catalog no.: SIC001-10nmol</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>LoVo</td>
+      <td>ATCC</td>
+      <td>RRID: CVCL_039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>RRID: CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Akt (Ser473) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_2315049</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_2315112</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-S6 Ribosomal Protein (Ser235/236) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID: AB_2181037</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-conjugated AffiniPure Donkey Anti-Rabbit IgG (H+L) (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID: AB_10015282</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 AffiniPure Goat Anti-Rabbit IgG (H+L) (Goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>RRID: AB_2338006</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-digoxigenin POD-conjugate (Sheep polyclonal)</td>
+      <td>Roche</td>
+      <td>RRID: AB_51450</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PP2Ac-L199P</td>
+      <td>Pubmed ID: 16224536</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PP2Ac-H118N</td>
+      <td>Pubmed ID: 16224536</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS-754807</td>
+      <td>Active Biochemicals Co.</td>
+      <td>Catalog no.: A-1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wortmannin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog no.: 9951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Calbiochem</td>
+      <td>Catalog no.: 553210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog no.: 9903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Okadaic acid</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Catalog no.: sc3513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calyculin A</td>
+      <td>Alonmone</td>
+      <td>Catalog no.: C-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gadolinium (III) chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog no.: 439770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ruthenium red</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog no.: R2751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alizarin red S</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog no.: A5533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog no.: P4170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura-2, AM, cell permeant</td>
+      <td>Invitrogen</td>
+      <td>Catalog no.: F1221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cas9 protein with NLS</td>
+      <td>PNA Bio</td>
+      <td>Catalog no.: CP01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals and reagents
 
 All chemical reagents were purchased from Fisher Scientific (Pittsburgh, PA) unless stated otherwise. Restriction enzymes were bought from New England Bio Labs (Beverly, MA).
 
-## Zebrafish husbandry
+### Zebrafish husbandry
 
 Fish were raised following standard zebrafish husbandry guideline (Westerfield, 2000). Embryos were obtained by natural cross and staged following Kimmel et al. (1995). E3 embryo rearing solution (containing 0.33 mM [Ca2+]) was prepared as reported (Westerfield, 2000). Two additional embryo rearing solutions containing 0.2 mM [Ca2+] (i.e. normal [Ca2+] solution) or 0.001 mM [Ca2+] (i.e. low [Ca2+] solution) were made following previously reported formula (Dai et al., 2014). To inhibit pigmentation, 0.003% (w/v) N-phenylthiourea (PTU) was added in some experiments. All experiments were conducted in accordance with the guidelines approved by the University of Michigan Institutional Committee on the Use and Care of Animals.
 
-## Generation of trpv6-/- fish lines using CRISPR/Cas9
+### Generation of trpv6-/- fish lines using CRISPR/Cas9
 
 The sgRNA targeting trpv6 (5’-GGGCTCGTTGATGAGCTCCG-3’) was designed using CHOPCHOP (http://chopchop.cbu.uib.no/). The sgRNA (30 ng/μl) was mixed with Cas9 protein (700 ng/μl) and co-injected into Tg(igfbp5a:GFP) or wild-type embryos at the one-cell stage as described (Xin and Duan, 2018). After confirming indels by PCR followed by hetero-duplex assay using a subset of F0 embryos, the remaining F0 embryos were raised to adulthood and crossed with Tg(igfbp5a:GFP) or wild-type fish. F1 fish were raised to the adulthood and genotyped. After confirming indels by DNA sequencing, the heterozygous F1 fish were intercrossed to generate F2 fish.
 
-## Transient knockdown of ppp2cs
+### Transient knockdown of ppp2cs
 
 Three sgRNAs targeting ppp2cs were designed using CHOPCHOP (http://chopchop.cbu.uib.no/). Their sequences are: ppp2ca-sgRNA: 5’-GTTCCATAAGATCGTGAAAC-3’; ppp2cb-sgRNA: 5’-GAGCGTTCTCACTTGGTTCT-3’; ppp2ca2-sgRNA: 5’-GACGAAGGAGTCGAATGTGC-3’. sgRNAs (30 ng/μl) were mixed with Cas9 protein (700 ng/μl) and co-injected into Tg(igfbp5a:GFP) or wild type embryos at the one-cell stage as reported (Xin and Duan, 2018). A subset of injected embryos was pooled, DNA isolated, and analyzed by PCR followed by hetero-duplex assays as reported (Liu et al., 2018). After confirming the indels, the remaining injected embryos were used for experiments.
 
-## Genotyping
+### Genotyping
 
 To isolate genomic DNA, pooled embryos or individual adult caudal fin were incubated in 50 μl NaOH (50 mM) at 95°C for 10 min and neutralized by adding 5 μl 1 M Tris-HCl (pH 8.0). PCR was performed using the following primers: trpv6-gt-f, 5’-TGACATTGTGTGTGTTTGTTGC-3’; trpv6-gt-r, 5’-GTGAAGGGCTGTTAAACCTGTC-3’; trpv6-HMA-f, 5’- GCAGCGGTGGCTTTAATGAAT-3’; trpv6-HMA-r, 5’- AAACCTGTCAATCAGAGCACAC-3’; ppp2ca-gt-f, 5’- TCACCATCAGTGCATGTCAATA-3’; ppp2ca-gt-r, 5’- CTCGATCCACATAGTCTCCCAT-3’; ppp2cb-gt-f, 5’- TGGATGATAAAGCGTTTACGAA-3’; ppp2cb-gt-r, 5’- ACGTTACACATTGCTTTCATGC-3’; ppp2ca2-gt-f, 5’-CTGATGGTTGTGATGCTGTTTT-3’; ppp2ca2-gt-r, 5’-CGGTTTCCACAGAGTAATAGCC-3’.
 
-## Morphology analysis
+### Morphology analysis
 
 Body length, defined as the curvilinear distance from the head to the end of caudal tail, was measured. Alizarin red staining was performed following a published protocol (Du et al., 2001). Images were captured with a stereomicroscope (Leica MZ16F, Leica, Wetzlar, Germany) equipped with a QImaging QICAM camera (QImaging, Surrey, BC, Canada).
 
-## Whole-mount in situ hybridization, and immunostaining
+### Whole-mount in situ hybridization, and immunostaining
 
 For whole mount immunostaining or in situ hybridization analysis, zebrafish larvae were fixed in 4% paraformaldehyde, permeabilized in methanol, and analyzed as described previously (Dai et al., 2014). For double color in situ hybridization and immunostaining, mCherry mRNA signal was detected using anti-DIG-POD antibody (Roche), followed by Alexa 488 Tyramide Signal Amplification (Invitrogen). After in situ hybridization, the stained larvae were washed in 1X PBST and incubated with phosphorylated-Akt antibody overnight at 4°C and then stained with a Cy3-conjugated goat anti-rabbit immunoglobulin G antibody (Jackson ImmunoResearch). Fluorescent images were acquired using a Nikon Eclipse E600 Fluorescence Microscope with PMCapture Pro six software.
 
-## Plasmid and BAC constructs
+### Plasmid and BAC constructs
 
 The ORF of zebrafish Trpv6 was amplified by PCR using five dpf zebrafish cDNA as template and cloned into pEGFPN1 using the following primers: BglII-zftrpv6-F, 5’-atatAGATCTcgccaccATGCCACCCGCCATATC-3’; no stop-zftrpv6-ca-SalI-R, 5’- TACCGTCGACcaGAGAAACTTGAAATTggggcaatc-3’; Trpv6D539A was engineered by site-directed mutagenesis using the following primers: zTrpv6_D539A_f, 5’-GGTCAGATTGCCTTGCCAGTGGA-3’; zTrpv6_D539A_r, 5’- TCCACTGGCAAGGCAATCTGACC-3’. Human TRPV6 ORF was sub-cloned into pEGFPN1 using the following primers: 5’-atatCTCGAGcgccaccATGGGTTTGTCACTG-3’; 5’- TACCGTCGACcaGATCTGATATTCC-3’. EGFP sequence in those vectors was replaced by mCherry sequence from pmCherry-C1 vector using the following primers: AgeI-mCherry-F, 5’- caACCGGTCGCCACCATGGTGAGCAAGGGC-3’; mCherry-NotI-stop-r, 5’- TCGCGGCCGCCTACTTGTACAGCTCGTCC-3’. Wild-type zebrafish Trpv6 and Trpv6D539A tagged with mCherry were then inserted into the igfbp5aBAC construct to replace the igfbp5a coding sequence from the start codon to the end of the first exon through homologous recombination as reported (Liu et al., 2017). The primers are: igfbp5a-zTrpv56-f, 5’- GTTTTGCCATTTCAAAGCTGGTGAAATAGGTGTTCTACAGTAGGACGATGCCACCCGCCATATCTGGTGAA-3’ and igfbp5a-pEGFP-C3-Kan-R, . The resulted BAC DNA was validated by sequencing. The validated BAC DNA and Tol2 mRNA were mixed and injected into 1 cell stage trpv6-/-; Tg(igfbp5a:GFP) embryos. Cells co-expressing mCherry and GFP at five dpf were identified and scored using a reported scoring system (Liu et al., 2018). PP2AcL199P and PP2AcH118N were kind gifts from Dr. George Tsokos, Harvard Medical School. They were subloned into pIRES-mCherry vector using the following primers: EcoRI-PP2A-f: 5’-ccgGAATTCATGGACGAGAAGGTGTTCAC-3’, BamHI-PP2A-r: 5’-cgcGGATCCTTACAGGAAGTAGTCTGGGG-3’ and used in cell transfection.
 
-## Generation of the Tg(igfbp5a:GCaMP7a) fish line
+### Generation of the Tg(igfbp5a:GCaMP7a) fish line
 
 GCaMP7a DNA was cloned into pEGFPN1 to replace the EGFP sequence using the following primers: BamHI-HA-F, 5’- cgcggatccATGGCATACCCCTACGACG-3’; GCaMP7a-stop-NotI-R, 5’- atttgcggccgcTTACTTAGCGGTCATCATC-3’. The BAC(igfbp5a:GCaMP7a) construct was generated following a published protocol (Liu et al., 2017). The following primers were used to amplify the GCaMP7a cassette sequence: igfbp5a_GCaMP7a_fw, 5′- GTTTTGCCATTTCAAAGCTGGTGAAATAGGTGTTCTACAGTAGGACGATGGCATACCCCTACGACGTGCCCGAC −3′ and igfbp5a-pEGFP-C3-kan-R The resulted BAC(igfbp5a:GCaMP7a) was validated by sequencing. BAC(igfbp5a:GCaMP7a) DNA and Tol2 mRNAs were mixed and injected into zebrafish embryos at one-cell stage. The F0 embryos were screened at 72 hpf by checking GCaMP7a responses to high or low [Ca2+] solutions. GCaMP7a-positive F0 embryos were raised and crossed with wild-type fish to obtain F1 individuals. F2 fish were generated by crossing F1 fish.
 
-## Live GCaMP7a imaging
+### Live GCaMP7a imaging
 
 Zebrafish larvae were anesthetized using normal [Ca2+] embryo solution supplemented with 0.168 mg/ml tricaine. They were mounted in 0.3% low-melting agarose gel and immersed in 1 ml normal [Ca2+] solution. A Leica TCS SP8 confocal microscope equipped with the HC PL APO 93X/1.30 GLYC was used for imaging and LAS X and Image J were used for image analysis.
 
-## RT-qPCR
+### RT-qPCR
 
 Zebrafish larvae raised in E3 embryo rearing solution were transferred to normal or low [Ca2+] embryo solution from three dpf. Two days later, caudal fin was clipped for genotyping. The larvae of the same genotype and treatment group were pooled and RNA was isolated. Reverse transcription reaction was performed using M-MLV (Invitrogen) oligo(dT)18 oligos primer. qPCR was carried out using SYBR Green (Bio-Rad). Primers for qPCR are: trpv6-qPCR-F: 5’- GGACCCTACGTCATTGTGATAC-3’, trpv6-qPCR-R: 5’- GGTACTGCGGAAGTGCTAAG-3’, igf1ra-qPCR-F: 5’- CGTACCTCAATGCCAACAAG-3’, igf1ra-qPCR-R: 5’- TAGGGCTGTTCGGCTAATGT-3’, igf1rb-qPCR-F: 5’- AAACTTGGGACCAGGGAACT-3’, igf1rb-qPCR-R: 5’- ATCTTCTCCCGCTCCACTTC-3’. 18s-qPCR-F: 5’- AATCGCATTTGCCATCACCG-3’, 18s-qPCR-R: 5’- TCACCACCCTCTCAACCTCA-3’.
 
-## Cell culture
+### Cell culture
 
 Human embryonal kidney cells (HEK293) and human LoVo conlon cancer cells were obtained from American Type Tissue Collection (ATCC). Cell identity was authenticated by short tandem repeat (STR) analysis. Cells used were periodically tested for Mycoplasma contamination. HEK293 and LoVo cells were cultured in DMEM or DMEM/F12 supplemented with 10% FBS, penicillin and streptomycin in a humidified-air atmosphere incubator containing 5% CO2.
 
-## Fura-2 imaging and electrophysiology recording
+### Fura-2 imaging and electrophysiology recording
 
 HEK293 cells were plated onto 24-mm cover glass coated with L-polylysine and transfected with 0.3 µg of plasmid DNA using Lipofectamine 2000. Twenty-four hours after the transfection, the cover glass was mounted on an imaging chamber and washed with calcium-free Krebs-Ringer HEPES (KRH) solution (118 mM NaCl, 4.8 mM KCl, 1 mM MgCl2, 5 mM D-glucose, and 10 mM HEPES, pH = 7.4). Fura-2 loading was performed following a published method (Kovacs et al., 2012). Successfully transfected cells were chosen by mCherry expression. Their cytosolic Ca2+ levels were recorded by an EasyRatio Pro system (PTI) at two different wavelengths (340 nm and 380 nm). The Fura-2 ratio (F340/F380) was used to determine changes in intracellular [Ca2+]i. At least 50 cells were measured in each slide. Patch clamp recordings were performed at room temperature (Weissgerber et al., 2012). The internal pipette solution contained (in mM): Aspartate-Cs 145, NaCl 8, MgCl2 2, HEPES 10, EGTA 10, Mg-ATP 2, pH 7.2. Normal external solution contained (in mM): NaCl 135, KCl 6, MgCl2 1.2, HEPES 10, Glucose 12, pH 7.4, supplemented with 10 mM CaCl2 or 30 mM BaCl2. For measuring Ca2+ currents, cells were perfused with the normal external solution at first and then switched to solutions as indicated. The DVF solution contains (in mM): NaCl 150, EDTA 10, HEPES 10, pH 7.4. Solutions with different concentration of Ca2+ contains (in mM): NaCl 150, HEPES 10, Glucose 12, pH 7.4, supplemented with 0 to 10 mM CaCl2 as indicated.
 
-## Flowcytometry analysis and MTT assay
+### Flowcytometry analysis and MTT assay
 
 Human LoVo cells were washed three times with serum-free medium (SFM) and starved in SFM for 12 hr. The cells were then stimulated with 2% FBS medium, with or without inhibitors. Forty-eight hours later, cell cycle analysis was performed using Attune Acoustic Focusing cytometer (Applied Biosystems, Life Technologies) after propidium iodide staining (Liu et al., 2018). For siRNA transfection, 100 pmol siRNA and 1.5 µl Lipofectamine RNAiMAX (Invitrogen) was used in each well in 24-well tissue culture plates. For plasmid transfection, 2 µg plasmid and 2 µl Lipofectamine 3000 (Invitrogen) were used in in each well in 24-well tissue culture plates. Six hrs post transfection, cells were grown in complete media containing 10% FBS. There were washed three times with SFM and synchronized by incubation in SFM for 12 hr. The synchronized cells were stimulated with 2% FBS-containing medium for 48 hr and subjected to cell cycle analysis or MTT assay. For MTT assay, 5 mg/ml MTT (Invitrogen) stock solution was diluted with 2% FBS-containing medium and cells were stained for 4 hr at 37°C before dissolving using DMSO. Absorbance at 540 nm was read by a microplate reader (Tecan).
 
-## Statistical analysis
+### Statistical analysis
 
 Values are shown as Mean ± standard error of the mean (SEM). Statistical significance between experimental groups was determined using one-way ANOVA followed by Tukey’s multiple comparison test or student t-test. Chi-square test was used to analyze the association between two categorical variables. Statistical significances were accepted at p<0.05 or greater.

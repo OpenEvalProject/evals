@@ -23,7 +23,7 @@
 
 ## Abstract
 
-The imidazopyridine telacebec, also known as Q203, is one of only a few new classes of compounds in more than 50 years with demonstrated antituberculosis activity in humans. Telacebec inhibits the mycobacterial respiratory supercomplex composed of complexes III and IV (CIII 2 CIV 2 ). In mycobacterial electron transport chains, CIII 2 CIV 2 replaces canonical CIII and CIV, transferring electrons from the intermediate carrier menaquinol to the final acceptor, molecular oxygen, while simultaneously transferring protons across the inner membrane to power ATP synthesis. We show that telacebec inhibits the menaquinol:oxygen oxidoreductase activity of purified Mycobacterium smegmatis CIII 2 CIV 2 at concentrations similar to those needed to inhibit electron transfer in mycobacterial membranes and Mycobacterium tuberculosis growth in culture. We then used electron cryomicroscopy (cryoEM) to determine structures of CIII 2 CIV 2 both in the presence and absence of telacebec. The structures suggest that telacebec prevents menaquinol oxidation by blocking two different menaquinol binding modes to prevent CIII 2 CIV 2 activity.
+The imidazopyridine telacebec, also known as Q203, is one of only a few new classes of compounds in more than 50 years with demonstrated antituberculosis activity in humans. Telacebec inhibits the mycobacterial respiratory supercomplex composed of complexes III and IV (CIII2CIV2). In mycobacterial electron transport chains, CIII2CIV2 replaces canonical CIII and CIV, transferring electrons from the intermediate carrier menaquinol to the final acceptor, molecular oxygen, while simultaneously transferring protons across the inner membrane to power ATP synthesis. We show that telacebec inhibits the menaquinol:oxygen oxidoreductase activity of purified Mycobacterium smegmatis CIII2CIV2 at concentrations similar to those needed to inhibit electron transfer in mycobacterial membranes and Mycobacterium tuberculosis growth in culture. We then used electron cryomicroscopy (cryoEM) to determine structures of CIII2CIV2 both in the presence and absence of telacebec. The structures suggest that telacebec prevents menaquinol oxidation by blocking two different menaquinol binding modes to prevent CIII2CIV2 activity.
 
 ## Introduction
 
@@ -43,15 +43,202 @@ Here, we use electron cryomicroscopy (cryoEM) to investigate how telacebec inhib
 
 ## Results
 
-## Structure of CIII2CIV2 reveals movement of SOD subunit and cyt. cc domain
+### Structure of CIII2CIV2 reveals movement of SOD subunit and cyt. cc domain
 
 In order to facilitate isolation of CIII2CIV2, we used the ORBIT (oligonucleotide-mediated recombineering followed by Bxb1 integrase targeting) strategy (Murphy et al., 2018) to introduce sequence for a 3×FLAG affinity tag into the chromosomal DNA of M. smegmatis immediately 3′ to the qcrB gene. While M. smegmatis is typically grown in 7H9 medium supplemented with albumin, dextrose, and sodium chloride (ADS), we found that supplementing instead with tryptone, dextrose, and sodium chloride (TDS), which is more economical for large-scale culture, gave equivalent or superior growth. Purification of CIII2CIV2 from M. smegmatis grown in these conditions gave a high yield of enzyme with clear bands on an SDS-PAGE gelfor most of the known subunits of the complex (Figure 1A). We observed that following affinity purification, gel filtration chromatography of the enzyme led to depletion of the LpqE and SOD subunits (Figure 1A, right) compared to affinity purification alone (Figure 1A, left), and consequently this purification step was avoided.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig1-v3.jpg)
+
+**Figure 1.:** (A) SDS-PAGE shows most of the known subunits of the complex and indicates that the superoxide dismutase (SOD) and LpqE subunits are depleted by gel filtration chromatography. (B) Electron cryomicroscopy (CryoEM) map of the CIII2CIV2. The different density thresholds for the SOD subunit and the rest of the complex are indicated. Scale bar, 50 Å. (C) Three-dimensional variability analysis indicates two different clusters of particle images (‘cluster 1’ and ‘cluster 2’) that show the SOD subunit in different positions over the twofold symmetry axis of the complex. Scale bar, 50 Å. (D) An atomic model for the CIII2CIV2 complex with SOD fitted into the map and showing one half of the complex missing the LpqE subunit and with the cyt. cc domain in the ‘open’ conformation and the other half of the complex possessing the LpqE subunit and with the cyt. cc domain in the ‘closed’ conformation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) An example micrograph, class average images, Fourier shell correlation curves (including correction for the effects of masking following gold-standard refinement), orientation distribution plot, and local resolution estimate are shown for the inhibitor-free CIII2CIV2 map. (B) An example micrograph, class average images, Fourier shell correlation curves (including correction for the effects of masking following gold-standard refinement), orientation distribution plot, and local resolution estimate are shown for the telacebec-bound CIII2CIV2 map. Scale bars, 50 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Focusing on one half of the CIII2CIV2 supercomplex with symmetry expansion to allow all half complexes to contribute, complexes were identified with LpqE (gold) and the cyt. cc domain (cyan) in the ‘closed’ position (A) and without LpqE and the cyt. cc domain (cyan) in the ‘open’ position (B).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Examples for model in map fit are shown for the CIII part of the supercomplex (A), the CIV part of the supercomplex (B), as well as the superoxide dismutase (SOD) (C) and LpqE (D) subunits.
+
 CryoEM of the CIII2CIV2 preparation allowed for calculation of a 3D map of the enzyme at a nominal resolution of 3.0 Å (Figure 1B, Figure 1—figure supplement 1, and Table 1). The map shows strong density for the LpqE subunit (Figure 1B, orange). LpqE was observed in one previous structural study of CIII2CIV2 from M. smegmatis (Gong et al., 2018) but was absent in another (Wiseman et al., 2018), presumably due to depletion of the subunit during purification of the supercomplex. In the structure missing LpqE, the cyt. cc domain of subunit QcrC adopts both an ‘open’ and a ‘closed’ conformation, while the structure with LpqE was found only in the closed conformation. The closed conformation creates a direct electronic connection between heme cII of CIII and CuA of CIV (Gong et al., 2018; Wiseman et al., 2018). In the open conformation, heme cII from the cyt. cc domain is too far from CuA to allow electron transfer, leading to the hypothesis that switching between the closed and open conformations plays a role in controlling the flow of electrons through the supercomplex (Wiseman et al., 2018). In contrast, LpqE was hypothesized to strengthen the physical attachment between CIII and CIV (Gong et al., 2018). 3DVA with the current dataset (Punjani and Fleet, 2021), focused on one half of the supercomplex, revealed complexes with and without LpqE. Where LpqE was missing, the cyt. cc domain exhibits the open conformation, while complexes with LpqE show only the closed conformation of cyt. cc (Figure 1—figure supplement 2, Video 1). Clashes between LpqE and the open conformation of cyt. cc suggest that LpqE prevents the open conformation.
+
+**Table 1.**
+ Electron cryomicroscopy (CryoEM) structure determination.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">A. CryoEM data acquisition and image processing</th>
+    </tr>
+    <tr>
+      <th colspan="4">Data collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Electron microscope</td>
+      <td colspan="2">Titan Krios G3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Camera</td>
+      <td colspan="2">Falcon 4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Voltage (kV)</td>
+      <td colspan="2">300</td>
+    </tr>
+    <tr>
+      <td colspan="2">Nominal magnification</td>
+      <td colspan="2">75,000</td>
+    </tr>
+    <tr>
+      <td colspan="2">Calibrated pixel size (Å)</td>
+      <td colspan="2">1.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total exposure (e/Å2)</td>
+      <td colspan="2">43.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Exposure rate (e/pixel/s)</td>
+      <td colspan="2">5.99</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of exposure fractions</td>
+      <td colspan="2">29</td>
+    </tr>
+    <tr>
+      <td colspan="2">Defocus range (μm)</td>
+      <td colspan="2">0.7–2</td>
+    </tr>
+    <tr>
+      <td colspan="4">Image processing</td>
+    </tr>
+    <tr>
+      <td colspan="2">Motion correction software</td>
+      <td colspan="2">cryoSPARC v3</td>
+    </tr>
+    <tr>
+      <td colspan="2">CTF estimation software</td>
+      <td colspan="2">cryoSPARC v3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Particle selection software</td>
+      <td colspan="2">cryoSPARC v3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Micrographs used in inhibitor-free dataset</td>
+      <td colspan="2">4308</td>
+    </tr>
+    <tr>
+      <td colspan="2">Micrographs used in telacebec-bound dataset</td>
+      <td colspan="2">2793</td>
+    </tr>
+    <tr>
+      <td colspan="2">Particle images selected in inhibitor-free dataset</td>
+      <td colspan="2">1,037,709</td>
+    </tr>
+    <tr>
+      <td colspan="2">Particle images selected in telacebec-bound dataset</td>
+      <td colspan="2">387,777</td>
+    </tr>
+    <tr>
+      <td colspan="2">3D map classification and refinement software</td>
+      <td colspan="2">cryoSPARC v3</td>
+    </tr>
+    <tr>
+      <td colspan="2">B. Model statistics</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Dataset</td>
+      <td colspan="2">Inhibitor-free</td>
+      <td>Telacebec-bound</td>
+    </tr>
+    <tr>
+      <td>Associated PDB ID</td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Modeling and refinement software</td>
+      <td colspan="2">Coot, phenix, ISOLDE</td>
+      <td>Coot, phenix, ISOLDE</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td colspan="2">6058</td>
+      <td>6075</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td colspan="2">9 XX: 4, 9Y0: 6, 9YF: 8, FES: 2, HEC: 4, HEA: 4, MQ9: 10, HEM: 4, PLM: 4, CU: 8</td>
+      <td>9 XX: 4, 9Y0: 6, 9YF: 8, FES: 2, HEC: 4, HEA: 4, MQ9: 10, HEM: 4, PLM: 4, CU: 8, QTE: 1</td>
+    </tr>
+    <tr>
+      <td>RMSD bond length (Å)</td>
+      <td colspan="2">0.005</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>RMSD bond angle (°)</td>
+      <td colspan="2">0.712</td>
+      <td>0.818</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td colspan="2">0.22</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td colspan="2">92.58</td>
+      <td>91.52</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td colspan="2">0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td colspan="2">19.29</td>
+      <td>15.47</td>
+    </tr>
+    <tr>
+      <td>MolProbabity score</td>
+      <td colspan="2">2.25</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td colspan="2">3.12</td>
+      <td>2.61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/71959/elife-71959-video1.mp4.jpg)
+
+**Video 1.:** cc subunit in the closed position or the absence of LpqE with the cyt. cc subunit in the open position. Subunits are colored as in Figure 1. Please view as a loop.
 
 In previous studies, the SOD subunit of CIII2CIV2 was poorly resolved in cryoEM maps and appeared as a diffuse density (Gong et al., 2018; Wiseman et al., 2018). In the present map, the overall shape of SOD, although still at lower density than the rest of the complex, was more readily apparent (Figure 1B, pink). The N-terminal anchors from the SOD dimer that bind to subunit QcrB are well resolved and terminate at the middle of the complex with a lipid anchor (Figure 1B, beige). The improved density for the SOD subunit allowed fitting of a homology model of the protein into the map with a slight rotation relative to how it was fit previously (Figure 1C, right). 3DVA (Figure 1C, Video 2) shows that SOD moves between the center of the complex, where it was observed previously (Gong et al., 2018; Wiseman et al., 2018) to immediately above heme cI. This proximity suggests that SOD may indeed transfer electrons abstracted from superoxide in the periplasm of M. smegmatis to CIV to contribute to the PMF (Gong et al., 2018; Wiseman et al., 2018), although this hypothesis requires further testing. The overall resolution of the map, which is somewhat better than in previous studies, allowed refinement of an atomic model for CIII2CIV2 including residues T82, E83, A123 to D131, and S183 from LpqE, and residues H57 to G78 from MSMEG_4693 (also known as CtaJ), which could not be modeled previously (Figure 1D, Figure 1—figure supplement 3, and Table 1). The model shown in Figure 1D illustrates one cyt. cc domain in the closed position with LpqE present (Figure 1D, right side: cyan and orange) and the other cyt. cc domain in the open position without LpqE (Figure 1D, left side: cyan), although other combinations could also be modeled.
 
-## Nanomolar telacebec inhibits oxidoreductase activity with purified CIII2CIV2
+![Video 2.](https://cdn.elifesciences.org/articles/71959/elife-71959-video2.mp4.jpg)
+
+**Video 2.:** Subunits are colored as in Figure 1. Please view as a loop.
+
+### Nanomolar telacebec inhibits oxidoreductase activity with purified CIII2CIV2
 
 To investigate inhibition of CIII2CIV2 by telacebec, we established a supercomplex activity assay, based on measurement of oxygen consumption with a Clark-type electrode. The mycobacterial electron transport chain uses MQH2 as the electron donor for CIII2CIV2 while in canonical mitochondrial electron transport chains UQH2 donates electrons to CIII2 (Cook et al., 2017). Both UQH2 and MQH2 are insoluble in aqueous solution and consequently soluble analogues must be employed as substrates in assays with detergent-solubilized enzymes.
 
@@ -59,17 +246,33 @@ The midpoint potentials of the redox centers in mycobacterial CIII2 are lower th
 
 Initial activity assays led to anomalous results where addition of low concentrations of CIII2CIV2 to the assay mixture appeared to decrease the rate of oxygen reduction below the background autoxidation rate. On subsequent investigation, we realized that at low concentrations of CIII2CIV2 the SOD subunit suppresses autoxidation of DMWH2 more than CIII2CIV2 catalyzes oxidation of DMWH2. This suppression of quinol autoxidation by SOD, which has been described previously (Cadenas et al., 1988), can lead to apparent negative activities for CIII2CIV2 when the background autoxidation is subtracted. Autoxidation of quinols is believed to involve a superoxide anion intermediate, with the SOD-catalyzed dismutation of the intermediate to hydrogen peroxide removing this reactant to slow the process (Munday, 2000). To remove error introduced by the effect of the SOD subunit on the observed oxygen reduction signal, we established that bovine C-type SOD can similarly limit the autoxidation of DMWH2 (Figure 2A, blue and orange curves), as well as menadiol (Figure 2—figure supplement 1D). Thus, by adding an excess of exogenous bovine SOD to assays, the CIII2CIV2’s DMWH2:O2 oxidoreductase activity can be measured with suppression of DMWH2 autoxidation (e.g. Figure 2A, green). With 500 nM SOD added, the CIII2CIV2’s DMWH2:O2 oxidoreductase activity was measured at 91 ± 4 e-/s (± s.d., n = 6 independent assays with three each from two separate batches of protein), which is nearly an order of magnitude greater than the apparent activity found previously (Wiseman et al., 2018). We subsequently added 500 nM bovine SOD to all assays to limit autoxidation of DMWH2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig2-v3.jpg)
+
+**Figure 2.:** (A) An oxygen reduction assay shows that autoxidation of DMWH2, blue curve, is decreased by the presence of 500 nM bovine superoxide dismutase (SOD), orange curve. Measurement of oxygen reduction by CIII2CIV2 in the presence of bovine SOD, green curve, allows calculation of CIII2CIV2 activity. (B) Structure of CIII2CIV2 inhibitor telacebec (Q203). (C) Titration of CIII2CIV2 (60 nM) with telacebec shows an IC50 of 53 ± 19 nM (± s.d., n = 3 independent titrations) with 100 µM DMWH2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Oxidized menaquinone (A), menadione (2-methyl-[1,4]naphthoquinone) (B), and DMW (2,3-dimethyl-[1,4]naphthoquinone) (C) are shown. (D) An overlay of oxygen reduction assays shows that the rate of autoxidation for menadiol (2-dimethyl-[1,4]naphthohydroquinone) blue curve, is larger than for DMWH2 (2,3-dimethyl-[1,4]naphthohydroquinone) red curve, and both autoxidation rates decrease in the presence of 500 nM bovine superoxide dismutase (SOD) orange and purple curves. Measurement of oxygen reduction by CIII2CIV2 in the presence of bovine SOD shows that CIII2CIV2 activity is greater with DMWH2 green curve, than with menadiol brown curve.
+
 Telacebec (Figure 2B) is a potent inhibitor of mycobacterial CIII2 (Pethe et al., 2013). The compound consists of an imidazo[1,2-a]pyridine attached via an amide linker to an N‐[(4‐{4‐[4‐(trifluoromethoxy)phenyl]piperidin‐1‐yl}phenyl)methyl] ‘tail’. Titrations of CIII2CIV2 activity with varying concentrations of telacebec (Figure 2C) show an IC50 of 53 ±19 nM (± s.d., n = 3 independent titrations, with two titrations from one batch of purified protein and a third titration from a second batch of purified protein) with 65 nM CIII2CIV2 and 100 µM DMWH2. This IC50 is lower than the 840 ± 22 nM seen with the menadiol-based assay (Gong et al., 2018), but higher than the 20 nM concentration needed to inhibit 50% of respiratory chain activity with inverted membrane vesicles from M. smegmatis (Lu et al., 2018) or 2.7 nM required to inhibit the 50% of M. tuberculosis growth in liquid culture (Pethe et al., 2013). The increased IC50 in the current assay compared to assays with inverted membrane vesicles or bacterial growth in liquid culture may be due to the binding affinity or high concentration of DMWH2, which could allow DMWH2 to compete with telacebec for binding to the complex. In addition, differences in inhibition in the different assays could be due to CIII2CIV2 being in detergent micelles rather than a lipid bilayer. The M. tuberculosis telacebec resistance mutations T313A and T313I (Pethe et al., 2013), equivalent to mutation of Thr308 in M. smegmatis, are near the QP site and suggest that the inhibitor could interfere with MQH2 binding to CIII2CIV2.
 
-## The CIII2CIV2 structure has endogenous MQ in its QP site
+### The CIII2CIV2 structure has endogenous MQ in its QP site
 
 As telacebec is expected to bind near the QP site of CIII2CIV2, we carefully characterized this site in the cryoEM map of the enzyme in the absence of inhibitor. The QP site is near the periplasmic side of the membrane, located between heme bL and the FeS cluster (Figure 3A), and is formed by several loops and α helices from both the QcrB and QcrA subunits (Figure 3B). The arrangement of structural elements in the site is conserved from other CIIIs (Sarewicz and Osyczka, 2015). The entrance to the QP site is formed by the C and F transmembrane α helices, and the cd1 α helix that separates the periplasmic side of the QP pocket from the QcrA subunit. The ef helix and ef loop from the QcrB subunit are deeper in the QP site, as is a short section from the QcrA subunit that includes the FeS-bound His368 residue (Figure 3B). His368 from QcrA is believed to have an important role in CIII, accepting a proton during quinol oxidation at the QP site (Mulkidjanian, 2005).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig3-v3.jpg)
+
+**Figure 3.:** (A) The dashed boxes indicate the two QP sites in CIII2CIV2, each showing menaquinone (blue), the Rieske protein FeS (yellow), and heme bL (red). (B) In the inhibitor-free structure, there is density for endogenous menaquinone (pink model and gray surface) distal from the FeS group among the well-conserved structural elements of the QP site. (C) In the inhibitor-bound structure, there is density for telacebec (orange model and gray surface) deeper in the QP site where it can form numerous interactions with the protein, including possible hydrogen bonds (dashed teal lines), hydrophobic interactions (dashed green line), a halogen bond (dashed purple line), and an aromatic interaction (dashed pink line). (D) A two-dimensional (2D) representation of the interactions between telacebec and residues of CIII2CIV2 using the same color convention as in part C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Both stigmatellin (gray model) in the bovine CIII2 QP site (left) (PDB: 1PPJ) (Huang et al., 2005) and ubiquinone (green model) in the bovine CICIII2 supercomplex QP (right) (PDB: 6Q9E) (Letts et al., 2019) bind deep in the site close to the FeS group, different from endogenous menaquinone (MQ) with Mycobacterium smegmatis CIII2CIV2. (B) Electron cryomicroscopy (CryoEM) density from the 200 kV screening microscope shows that CIII2CIV2 with telacebec but without 2,3-dimethyl-[1,4] naphthohydroquinone (DMWH2) at 4.7 Å resolution (left) and with enzymatically reduced DMWH2 but without telacebec at 4.4 Å resolution (right) is consistent with binding of MQ (pink model) but not telacebec (white model) in the QP site. (C) Alternative view of Mycobacterium smegmatis QP site showing H109. (D) Overlay of a bovine CIII2 atomic model (PDB: 1PPJ) with the M. smegmatis CIII2CIV2 atomic model.
 
 In the inhibitor-free structure there is density for endogenous MQ in the QP site (Figure 3B, pale blue surface). With the standard deviation of the cryoEM map normalized to σ = 1, the head group of MQ matches the density at 4.4σ. However, even with this strong density, the symmetry of the head group (Figure 2—figure supplement 1) makes it difficult to determine which of two poses, related by a 180° rotation, is correct. This ambiguity is exacerbated by weak density for the MQ tail, which is visible at 2.6σ, closer to the 1.7σ threshold used for visualizing lipids in the map. Figure 3B depicts the MQ pose that appears to match the density slightly better than the rotated pose, and is also the same pose as modeled previously (Gong et al., 2018). It is also possible that MQ could bind the structure in either pose, with the experimental map showing the average of both orientations.
 
 The naphthoquinone head group of MQ is positioned near the entrance to the site, between the F and C helices (Figure 3A). This position for endogenous MQ was reported in a previous study of CIII2CIV2 from M. smegmatis (Gong et al., 2018). In this position, the naphthoquinone head group is ~14 Å away from the FeS cluster and the hydroxyl proton is ~15 Å from His368, which is too far for rapid coupled electron and proton transfer from MQH2 to FeS and His368, respectively. This distance contrasts the deeper binding position adopted by UQ in ovine CIII2 (Letts et al., 2019). It is also further from the FeS than the position observed for UQ-analogue inhibitors such as stigmatellin bound to chicken CIII2 (Zhang et al., 1998), as well as 5-undecyl-6-hydroxy-4,7-dioxobenzothiazole (Esser et al., 2004) and 2-n-nonyl-4-hydroxyquinoline N-oxide (Gao et al., 2003) bound to bovine CIII2. In the deeper position the head groups of UQ or its analogues are wedged between the ef helix/loop, and the cd1 helix, with the tail trailing between the F and C helix at the QP site entrance (Figure 3—figure supplement 1A). In these structures, the distance between the quinone head group and the FeS cluster depends on the position of the mobile Rieske head domain, but can be as little as ~7 Å, allowing for rapid electron transfer from the UQH2 to the FeS (Moser et al., 2006).
 
-## Telacebec replaces MQ in the QP site of active CIII2CIV2
+### Telacebec replaces MQ in the QP site of active CIII2CIV2
 
 Our initial attempts to image CIII2CIV2 with telacebec failed to resolve the inhibitor (Figure 3—figure supplement 1B, left), leading us to consider the possibility that inhibitor binding occurs during substrate turnover by the enzyme. CryoEM of CIII2CIV2 in the presence of DMWH2 but without telacebec confirmed that under these conditions the density in the QP site was indistinguishable from MQ seen with the enzyme at rest (Figure 3—figure supplement 1B, right). We then incubated CIII2CIV2 with both DMWH2 and telacebec to produce an inhibited complex and determined the structure of this complex to a nominal resolution of 3.0 Å by cryoEM (Figure 1—figure supplement 1, Table 1). Telacebec binding did not cause large-scale conformational changes in CIII2CIV2 but produced a clear density for the inhibitor in each of the two QP sites in the CIII2 dimer (Figure 3C). The inhibitor’s imidazopyridine moiety, amide linker region, and A-phenyl and B-piperidinyl moieties are all resolved clearly, with weaker density toward the end of the tail, which points into the lipid bilayer toward the cytoplasmic side of the membrane (Figure 3C, pale blue surface). These densities show that telacebec binds with its head group deep within the QP binding pocket in a pose similar to UQ and the UQ-analogue inhibitors bound within the canonical CIII2 as described above (Figure 3—figure supplement 1A). Telacebec’s imidazopyridine moiety forms multiple interactions with the protein to stabilize inhibitor binding. Although hydrogen bonds cannot be detected with complete confidence at the present resolution, the position of the N1 nitrogen in telacebec’s imidazopyridine moiety is consistent with formation of a hydrogen bond with the His368 from the QcrA subunit, which also binds the FeS group (Figure 3C and D, dashed teal line). The occurrence of a similar hydrogen bond between UQ and the equivalent histidine residue in canonical CIII2 (Zhang et al., 1998) has been proposed to coordinate the Q cycle (e.g. see Sarewicz and Osyczka, 2015). The 2-ethyl group from the imidazopyridine is ~4 Å away from Ile178 from the QcrB subunit, providing hydrophobic interactions (Figure 3C and D, dashed green line), while the 6-chloro group from the imidazopyridine is close to the backbone carboxyl group of Leu166 from the QcrB subunit, enabling formation of a possible halogen bond (Figure 3C and D, dashed purple line).
 
@@ -87,13 +290,13 @@ Within the QP site different positions for both UQ and MQ have been described pr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71959/elife-71959-fig4-v3.jpg)
 
-**Figure 4.:** 2 in the QP site and how telacebec blocks it.An emerging model for MQH2 reduction at the QP site proposes that the substrate binds in the Q1b position where it is too far from FeS to donate protons and electrons (A). Upon moving deeper into the QP site to the Q1a position, MQH2 is oxidized to menaquinone (MQ), donating its first electron to FeS, its second electron to heme bL, and releasing two protons to the positively charged periplasmic side of the lipid bilayer (B). Telacebec binds deep within the QP site, forming numerous interactions with the protein and blocking both the Q1a and Q1b positions (C).
+**Figure 4.:** An emerging model for MQH2 reduction at the QP site proposes that the substrate binds in the Q1b position where it is too far from FeS to donate protons and electrons (A). Upon moving deeper into the QP site to the Q1a position, MQH2 is oxidized to menaquinone (MQ), donating its first electron to FeS, its second electron to heme bL, and releasing two protons to the positively charged periplasmic side of the lipid bilayer (B). Telacebec binds deep within the QP site, forming numerous interactions with the protein and blocking both the Q1a and Q1b positions (C).
 
 Inhibiting CIII2CIV2 has demonstrated antituberculosis activity in humans (de Jager et al., 2020), even though M. tuberculosis possesses cyt. bd as an alternative enzyme that can oxidize MQH2 and sustain the electron flux to oxygen in the mycobacterial membrane. More potent killing of mycobacterial pathogens can be accomplished by simultaneous inhibition of both the CIII2CIV2 and cyt. bd terminal oxidases (Beites et al., 2019; Kalia et al., 2017; Lee et al., 2021). The present study demonstrates how cryoEM can reveal the mechanisms of electron transport chain inhibitors, enabling new strategies for targeting mycobacterial infections.
 
 ## Materials and methods
 
-## Construction of M. smegmatis strain, cell culture, and protein isolation
+### Construction of M. smegmatis strain, cell culture, and protein isolation
 
 An M. smegmatis strain with a 3×FLAG tag at the C terminus of subunit QcrB was generated with the ORBIT method (Murphy et al., 2018). This method requires transformation of the parent strain with a plasmid encoding the Che9c phage RecT annealase and Bxb1 integrase, a payload plasmid with the desired insert, and an oligonucleotide that guides integration of the payload into the chromosomal DNA. The parent strain MC2155 was transformed with plasmid pKM444, which encodes the Che9c annealase and Bxb1 integrase. The resulting strain was subsequently transformed with payload plasmid pSAB41, which encodes a 3×FLAG tag and was described previously (Guo et al., 2021), as well as the targeting oligonucleotide 5′-CAAGTCGCTCACGGCGCTCAAGGAGCACCAGGACCGCATCCACGGCAACGGGGAGACCAACGGTCATCACGGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACCTGATCGCTGAGATACTCGGATCGCCGCAATTCCTCTTCGGAGGGGTTGCGGCGATCTTTTTATGTGCGCTTTC-3′. The resulting strain ‘M. smegmatis QcrB-3xFLAG’ was selected with hygromycin (50 μg/mL) and correct insertion of the 3×FLAG sequence was confirmed by colony PCR.
 
@@ -101,20 +304,20 @@ M. smegmatis was cultured in 7H9 medium (Sigma) supplemented with TDS (10 g/L tr
 
 To purify CIII2CIV2, membranes were resuspended in lysis buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 0.5 mM EDTA) at 4 mL/g and solid dodecyl maltoside (DDM) detergent was added to 1% (w/v) with stirring at 4°C for 45 min. Insoluble material was removed by centrifugation at 149,000× g for 45 min and the solubilized protein was loaded onto a gravity column of 2 mL M2 anti-FLAG affinity matrix (Sigma). The column was washed with 10 mL of wash buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 0.02% [w/v] DDM) and eluted with 5 mL of wash buffer supplemented with 3×FLAG peptide at 150 μg/mL. Purified protein was exchanged into 50 mM Tris-HCl pH 7.4, 150 mM NaCl, and 0.003% (w/v) glycol-diosgenin (GDN) with a 100 kDa molecular weight cutoff concentrator (Sigma).
 
-## Activity assays
+### Activity assays
 
 DMW (Enamine) at 20 mM in anhydrous ethanol (400 μL) on ice was reduced with a few grains of NaBH4 and the reaction was quenched by addition of 4 N HCl (10–20 μL). Enzymatically reduced DMWH2 was prepared with 7.5 mM NADH, 200 DMW, and 300 μg/mL NDH-2 from Caldalkalibacillus thermarum (Nakatani et al., 2017). Oxygen-reduction assays were performed with an Oxygraph Clark-type electrode (Hansatech) in 1 mL of reaction buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 0.5 mM EDTA, and 500 nM bovine SOD [Sigma]). CIII2CIV2 was added (65 nM) and reactions were initiated by addition of 100 µM DMWH2. For inhibition studies, telacebec (DC Chemicals) at varying concentrations was incubated with 65 nM CIII2CIV2 in the reaction buffer for 3 hr at 4°C. This mixture was added to the Oxygraph and reactions were initiated by addition of 100 µM DMWH2. To account for any background oxygen reduction that still occurs in the presence of SOD, the rate of oxygen reduction in the presence of DMWH2 and SOD, but in the absence of CIII2CIV2, was subtracted from the rate in the presence of DMWH2, SOD, and CIII2CIV2. The resulting oxygen reduction rates for CIII2CIV2 at different concentrations of telacebec were fit with a Python script. Individual inhibition curves, which were produced on different days with different preparations of reagent, were fit individually, with the average of the IC50 values reported and the standard deviation of the fitted IC50 values reported as the error (Dahlin et al., 2004). Plots were produced using the Python matplotlib library.
 
-## CryoEM specimen preparation and imaging
+### CryoEM specimen preparation and imaging
 
 For cryoEM of inhibitor-free CIII2CIV2, enzyme at ~16 mg/mL (2 µL) was applied to homemade nanofabricated holey gold grids (Marr et al., 2014), which had previously been glow-discharged in air for 120 s at 20 mA (PELCO easiGlow), within a Vitrobot Mark III (FEI) at 4°C and 100% relative humidity. Grids were blotted for 24 s before freezing. For cryoEM of telacebec-bound CIII2CIV2, DMWH2 in ethanol was added to 100 µM (0.02% ethanol) and telacebec in DMSO was added to 25 µM (1.5% DMSO) to a solution containing purified CIII2CIV2 at ~0.08 mg/mL (6 mL). The solution was concentrated ~100-fold by centrifugation at 700× g with a 100 kDa molecular weight cutoff centrifuged concentrator device (Sigma). The sample (2 µL) was then applied to homemade nanofabricated holey gold grids, which had previously been glow-discharged in air for 120 s at 20 mA, within an EM GP2 (Leica) grid freezing device at 4°C and 100% relative humidity. Grids were blotted for 1 s before freezing.
 
 Screening of specimens was done with an FEI Tecnai F20 electron microscope equipped with a K2 Summit direct detector device camera. High-resolution cryoEM data were collected with a Titan Krios G3 electron microscope (Thermo Fisher Scientific) operated at 300 kV and equipped with a Falcon 4 direct detector device camera. Automated data collection was done with the EPU software package. The inhibitor-free dataset consisted of 2793 movies and telacebec-bound sample consisted of 4308 movies. Movies were collected at a nominal magnification of 75,000× with a calibrated pixel size of 1.03 Å. Movies consisted of 30 exposure fractions over 7.7 s. The camera exposure rate and the total exposure were 5.99 e-/pixel/s and ~43.5 e-/Å2, respectively (Table 1).
 
-## Image analysis and atomic model building
+### Image analysis and atomic model building
 
 All image analysis was performed within the cryoSPARC software package, version 3 (Punjani et al., 2017), including individual particle motion correction (Rubinstein and Brubaker, 2015), non-uniform refinement (Punjani et al., 2020), and 3DVA (Punjani and Fleet, 2021). Image analysis and 3D reconstruction for each dataset was performed in the same way. Motion was corrected and CTF parameters were estimated for each movie in patches. Manual particle selection and 2D classification was used to generate templates, which were in turn used to select of 387,777 and 1,037,709 particle images for the telacebec-bound and inhibitor-free datasets, respectively. Datasets were cleaned with 2D classification, 3D classification, and heterogeneous refinement to 70,818 and 150,885 particle images for the telacebec-bound and inhibitor-free datasets, respectively. Beam tilt was corrected and each map was refined with non-uniform refinement without symmetry enforced. CTF values were then refined, the detergent micelle subtracted, and alignment parameters adjusted with local refinement with C2 symmetry enforced, yielding maps at 3.0 Å resolution for each dataset. 3DVA was done on a pooled dataset with masks including the SOD subunit or cyt. cc domain. Atomic models were constructed starting from previous models of the complex (Gong et al., 2018; Wiseman et al., 2018). Additions to the models were made in Coot (Emsley et al., 2010) and refined with Phenix (Liebschner et al., 2019) and ISOLDE (Croll, 2018).
 
-## Structure-activity relation analysis studies
+### Structure-activity relation analysis studies
 
 Insight into protein-inhibitor interaction was facilitated by analysis with the Schrödinger software package (Release 2019–1). The protein preparation wizard within Schrödinger was used to prepare the protein for modeling. Briefly, the QcrA and QcrB chains and the ligand from the PDB file were merged and pre-processed to add missing hydrogen atoms, fill in missing side chains, and adjust ionization and tautomeric states of the ligand. The hydrogen bond network between the protein’s amino acids and the ligand was optimized by allowing reorientation of amino acid side chains like His, Asn, Asp, Glu, and Gln, and the ionization and tautomeric states of these side chains were estimated (Olsson et al., 2011). The resulting structure was refined to remove clashes and optimize geometry with the OPLS3e force field (Roos et al., 2019). These changes did not noticeably affect the fit of the model within the experimental cryoEM density map.

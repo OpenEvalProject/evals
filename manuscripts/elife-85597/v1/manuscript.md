@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04drvxt59 Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States
-2. https://ror.org/04drvxt59 Division of Endocrinology, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States
-3. https://ror.org/02pammg90 Department of Medicine, Cedars-Sinai Medical Center Los Angeles United States
-4. https://ror.org/05byvp690 Division of Nephrology, Departments of Internal Medicine and Pharmacology, University of Texas Southwestern Medical School Dallas United States
+1. Department of Anesthesia, Critical Care, and Pain Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+2. Division of Endocrinology, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+3. Department of Medicine, Cedars-Sinai Medical Center Los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
+4. Division of Nephrology, Departments of Internal Medicine and Pharmacology, University of Texas Southwestern Medical School Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
@@ -41,6 +41,14 @@ To illuminate gestational age-dependent transcriptional changes in across a heal
 
 **Figure 1.:** 326 Gene Expression Omnibus (GEO) datasets were identified by the search terms ‘placenta’ and ‘transcriptome’; nine met criteria for containing placental transcriptomic data representing normal physiology at a range of gestational timepoints spanning through the final 1/3 of pregnancy. Dataset selected for further analysis in yellow.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig2-v1.jpg)
+
+**Figure 2.:** Weighted gene correlation network analysis (WGCNA) yielded 20 gene clusters. Functional pathways overrepresented in clusters found to increase (blue) and decrease (turquoise) across gestation highlight enhanced cellular senescence, increased HIF-1 signaling, and decreased mitochondrial synthesis and respiration late in pregnancy (A). mRNA expression of senescence marker Glb1 peaks at e17.5 (B; one-way ANOVA p=0.0048). HIF-1 protein abundance is higher at e17.5 versus e13.5 and e15.5 (C; one-way ANOVA p=0.019), as is expression of HIF-1 targets Hk2 and Slc2a1 (D; two-way ANOVA p<0.0001 for gestational age factor). (See Figure 2—figure supplement 1 for analysis of gene expression changes across timepoints by placental sex.) Mitochondrial abundance, reflected by COX IV protein, decreases with gestational age (E, one-way ANOVA p=0.0064), and mitochondrial DNA lesion rate peaks at e17.5 in the regions of the D-loop (one-way ANOVA p=0.0001), COII/ATPase6 (p=0.0027), and ND5 (p=0.036) (F). (B–F) Each data point represents a biological replicate (e.g. RNA, protein, or DNA extracted from an individual placenta, in turn collected from one of 2–4 pregnant dams per group). Data normalized to mean at e13.5. See Figure 2—source data 1 for uncropped blots.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Subgroup analysis did not reveal sex-dependent mRNA expression changes in Glb1 (A) or Hk2 (B) by qPCR, but did demonstrate consistently higher Slc2a1 expression in male placentas at all gestational ages and an interaction between the effects of sex and gestational age on Slc2a1 expression (C; two-way ANOVA p<0.0001 for sex, p<0.0001 for gestational age, and p=0.028 for interaction). Each data point represents a biological replicate (RNA isolated from an individual placenta, collected from one of 2–4 dams per group). Data normalized to collective (M+F) mean at e13.5.
+
 To validate the dynamic pathway activity suggested by the WGCNA, we used qPCR to quantify mRNA expression of the senescence marker Glb1 (Lee et al., 2006) in our mouse placentas, which mirrored the WGCNA finding that cellular senescence in the placenta peaks in the final days of gestation (Figure 2B). HIF-1 protein abundance was found to peak at e17.5 (Figure 2C) and HIF-1 targets Hk2 and Slc2a1 likewise confirmed increasing HIF-1 activation with advancing gestational age through e17.5 (Figure 2D). Of note, a modest but significant fetal sex-dependent difference in HIF-1 target expression (but not Glb1) was also observed across timepoints (Figure 2—figure supplement 1). To assess changes in mitochondrial abundance across gestation, we measured COX IV protein expression and found it declined progressively across mouse gestation (Figure 2E) as predicted by the WGCNA.
 
 Having observed a pattern of declining mitochondrial abundance in the placenta with advancing gestational age, we next investigated the mitochondrial DNA (mtDNA) lesion rate. The mitochondrial genome is particularly vulnerable to reactive oxygen species (ROS) insults, and mtDNA damage participates in a vicious cycle with mitochondrial dysfunction and further ROS production; these effects are observed in a number of age-related diseases in various tissues (Jang et al., 2018) and may drive age-associated loss of function (Trifunovic et al., 2004). We employed a semi-long run real-time qPCR approach (Rothfuss et al., 2010) to quantify relative mtDNA lesion rates in mouse placentas, normalized to e13.5. There was a measurable increase in the mtDNA lesion rate in the D-loop and COII/ATPase 6 regions of the mitochondrial genome at e17.5 (Figure 2F). Together, these results reflect a series of coordinated changes as gestation progresses—namely HIF-1 signaling induction, decreasing mitochondrial abundance, accumulating mtDNA damage, and escalating cellular senescence—confirming the patterns we discovered through reanalysis of published transcriptomic data.
@@ -49,19 +57,130 @@ We next probed human placentas for the same gestational age-dependent changes. S
 
 Placentas from 9 cesarean deliveries occurring before 35 weeks’ gestation and 11 cesarean deliveries occurring after 39 weeks’ gestation were studied (Table 1). Maternal characteristics including race, nulliparity, and obesity were not statistically different across the early versus late groups; there was a small but statistically significant difference in maternal age at the time of delivery (31.9±0.9 years versus 36.2±1.0 for early gestation versus late, p=0.008). The distribution of fetal sex was not different among groups.
 
+**Table 1.**
+ Maternal and fetal characteristics.Data summarized by mean ± SEM or n (%). p-Values calculated via t-test (continuous variables) or Chi-square contingency table (categorical variables).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>&lt;35 weeks</th>
+      <th>&gt;39 weeks</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>n=9</td>
+      <td>n=11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gestational age at delivery (weeks)</td>
+      <td>34.0±0.3</td>
+      <td>39.5±0.1</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Maternal age (years)</td>
+      <td>31.9±0.9</td>
+      <td>36.2±1.0</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Maternal BMI &gt;40</td>
+      <td>1 (11)</td>
+      <td>0 (0)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Maternal race</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>7 (78)</td>
+      <td>9 (82)</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>2 (22)</td>
+      <td>0 (0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>0 (0)</td>
+      <td>2 (18)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primiparous</td>
+      <td>4 (44)</td>
+      <td>4 (36)</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>Female neonate</td>
+      <td>5 (55)</td>
+      <td>8 (73)</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Indication for delivery</td>
+      <td>Placenta previa (3)</td>
+      <td>Scheduled repeat (7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vasa previa (4)</td>
+      <td>Breech presentation (3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Thinned lower uterine segment (2)</td>
+      <td>Elective (1)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 qPCR revealed a trend toward increased mRNA expression of GLB1 and HIF-1 targets HK2 and SLC2A1 in the >39-week cohort (Figure 3A), consistent with the gestational age-dependent effect seen in mouse placenta. We also examined mitochondrial abundance in the two groups and found that mitochondrial RNA transcripts ATP6 and COX2 were significantly decreased (Figure 3B) and COX IV protein abundance was lower at the later timepoint (Figure 3C), mirroring the mouse findings. Of note, power calculation to reject the null hypothesis for difference between means for some of these measurements (with α=0.05 and β=0.2) suggests a sample size of greater than 35 per group is required, assuming a similar effect size as seen in mouse data (e.g. expecting GLB1 fold change [FC] difference of 40% across groups), and greater variability than seen for mouse data (e.g. expected standard deviation of GLB1 FC equal to 0.6, vs 0.3 in mice). Practical constraints, especially given our strict exclusion criteria, make a study of this size unfeasible; nonetheless, we have included analysis of 20 human placentas here in recognition of the vital importance of translating mouse findings to human biology, even preliminarily. The data should be interpreted in the context of these statistical realities.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig3-v1.jpg)
 
-**Figure 3.:** mRNA expression of senescence marker GLB1 and HIF-1 targets HK2 and SLC2A1 trends higher in placentas from >39-week cohort vs <35-week cohort (A; two-way ANOVA gestational age factor p=0.057). Mitochondrial abundance, reflected by mitochondrial genes ATP6 and COX2 (B; two-way ANOVA gestational age factor p=0.042) and COX IV protein (C; p=0.0036) decreases with advancing gestational age. Each data point represents a biological replicate (RNA or protein isolated from an individual placenta). Data normalized to mean in <35-week group. See Figure 3—source data 1 for uncropped blots.Figure 3—source data 1.Figure 3.
+**Figure 3.:** mRNA expression of senescence marker GLB1 and HIF-1 targets HK2 and SLC2A1 trends higher in placentas from >39-week cohort vs <35-week cohort (A; two-way ANOVA gestational age factor p=0.057). Mitochondrial abundance, reflected by mitochondrial genes ATP6 and COX2 (B; two-way ANOVA gestational age factor p=0.042) and COX IV protein (C; p=0.0036) decreases with advancing gestational age. Each data point represents a biological replicate (RNA or protein isolated from an individual placenta). Data normalized to mean in <35-week group. See Figure 3—source data 1 for uncropped blots.
 
 The co-appearance of cellular senescence, HIF-1 signaling, and mitochondrial dysregulation in the placenta as it approaches the end of gestation led us to hypothesize that in aging placental cells, HIF-1 induction could be upstream of mitochondrial dysregulation and cellular senescence, as is seen in other systems in emerging aging research (Bratic and Larsson, 2013; Wiley and Campisi, 2016; Wiley and Campisi, 2021). To test this hypothesis, we established a pharmacological model of HIF-1 induction in primary mouse trophoblasts using cobalt chloride, a prolyl hydroxylase inhibitor that stabilizes HIF-1α (Maxwell et al., 1999; Jaakkola et al., 2001) and has been widely used to model hypoxia. After 6 hr of CoCl2 exposure, we confirmed HIF-1 protein accumulation in cultured trophoblasts (Figure 4A). After 48 hr of CoCl2 exposure, mouse trophoblasts exhibit decreased mitochondrial abundance, by Cox2 mRNA expression (Figure 4B) and Cox IV protein abundance (Figure 4C), and an increase in senescence-associated beta galactosidase (SA-βGal), encoded by Glb1 (Figure 4D) and detected as a blue stain in an X-gal assay for senescence (Figure 4E). These findings suggest that HIF-1 stabilization induces subsequent mitochondrial dysfunction and senescence in trophoblasts.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig4-v1.jpg)
 
-**Figure 4.:** HIF-1 is detected in cultured trophoblasts exposed to CoCl2 (A). After 48 hr of CoCl2 exposure, trophoblasts exhibit decreased mitochondrial abundance reflected by Cox2 mRNA expression levels (B; p=0.014) and COX IV protein levels (C; p=0.0047). Senescence marker Glb1 is increased (D; p=0.038) and senescence-associated beta galactosidase (SA-βGal) accumulation is noted by X-gal assay (E; p=0.012). Each data point represents a technical replicate (e.g. protein, RNA, or β-Gal measured from an individual well of cells grown in treated or control condition). Data normalized to mean of control treatment group. See Figure 4—source data 1 for uncropped blots.Figure 4—source data 1.
+**Figure 4.:** HIF-1 is detected in cultured trophoblasts exposed to CoCl2 (A). After 48 hr of CoCl2 exposure, trophoblasts exhibit decreased mitochondrial abundance reflected by Cox2 mRNA expression levels (B; p=0.014) and COX IV protein levels (C; p=0.0047). Senescence marker Glb1 is increased (D; p=0.038) and senescence-associated beta galactosidase (SA-βGal) accumulation is noted by X-gal assay (E; p=0.012). Each data point represents a technical replicate (e.g. protein, RNA, or β-Gal measured from an individual well of cells grown in treated or control condition). Data normalized to mean of control treatment group. See Figure 4—source data 1 for uncropped blots.
 
 Primary trophoblasts undergo spontaneous syncytialization in culture, a phenomenon that limits the duration of study and may also confound the interpretation of experimental changes in key metabolic factors (Nursalim et al., 2020). We therefore also modeled HIF-1 activation in JAR cells, a trophoblast cell line that does not undergo syncytialization (Rothbauer et al., 2017). Consistent with our results in primary cells, we found that HIF-1 is stabilized in CoCl2-treated JAR cells (Figure 5A), and after 6 days of exposure, mtDNA and protein abundance declined (Figure 5B–C). We further defined the time course of mitochondrial downregulation: by 72 hr the effect began to appear (Figure 5—figure supplement 1). Furthermore, at the 6-day timepoint we found that CoCl2 exposure leads to accumulation of mitochondrial ROS, as measured by mtSOX, a fluorescent mt-superoxide indicator dye (Figure 5D), and impairs mitochondrial polarization, as measured by tetramethylrhodamine ethyl ester (TMRE) staining, a cell-permeant fluorescent dye that accumulates in polarized mitochondria (Figure 5E). Additionally, we observed pronounced signs of cellular senescence: morphological hallmarks (cellular swelling) and β-galactosidase overexpression (Figure 5F); growth arrest which persists for days after removal of the HIF-1 stabilizing compound (Figure 5G); and a senescence-associated secretory phenotype (SASP, Figure 5H) reflected by increases in mRNA expression of the genes encoding VEGF, TNFα, and IL-1α and a decrease in mRNA expression of the gene encoding anti-inflammatory cytokine IL-10.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig5-v1.jpg)
+
+**Figure 5.:** HIF-1 is stabilized at 6-day timepoint of CoCl2 exposure (A). After 6 days, mitochondrial abundance is decreased as reflected by a drop in the mitochondrial:nuclear DNA copy number (B) and a decrease in COX IV protein (C). (See Figure 5—figure supplement 1 for timecourse of declining mitochondrial abundance.) Cells also exhibit augmented signs of mitochondrial dysfunction via MtSox (D; p=0.0003) and tetramethylrhodamine ethyl ester (TMRE) staining (E; two-way ANOVA CoCl2 factor p<0.0001). Senescence-associated beta galactosidase (SA-βGal) staining reflects a high proportion of senescent cells (F; p<0.0001) and growth arrest is confirmed by cell counting following a 6-day pre-treatment with CoCl2 (G; two-way ANOVA p<0.0001 for interaction of CoCl2 factor with time). (See Figure 5—figure supplement 2 for assessment of cell death by propidium iodide staining.) mRNA expression of senescence-associated secretory phenotype (SASP) candidates VEGF, TNFA, IL1A, and IL10 is altered after CoCl2 exposure (H; *, adjusted p<0.01). RNA-Seq revealed upregulation of 2188 and downregulation of 1389 genes (I; genes with |log2(FC)|>1 and -log(FDR)>2 indicated in red) after CoCl2 treatment, with gene set enrichment analysis revealing several pathways significantly dysregulated after CoCl2 treatment recapitulating changes seen in transcriptomic analysis of late versus early gestation mouse placenta. Scale marker = 200 μm. FCCP = carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone, an ionophore uncoupler of oxidative phosphorylation which depolarizes mt membrane potential. See Figure 5—figure supplement 3 for assessment of effects of HIF-1 stabilization in JAR cells using dimethyloxalyl glycine (DMOG). Each data point represents a technical replicate (measurement from an independent well of cells grown in treatment vs control condition). Data normalized to mean of control group. See Figure 5—source data 1 for uncropped blots.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Each data point represents a technical replicate (independent well of cells grown in control vs treatment condition).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Each data point represents a technical replicate (independent well of cells grown in control vs treatment condition).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Each data point represents a technical replicate (measurement from an independent well of cells grown in treatment vs control condition). See Figure 5—source data 1 for uncropped blots.
 
 We conducted additional studies to confirm that cell death was not a primary contributor to the lack of proliferation. Propidium iodide staining with quantitative fluorescence cytometry indicated that CoCl2 treatment only increased cell death by 0–3% (Figure 5—figure supplement 2). Importantly, cells remained adherent and continued to acidify culture medium beyond 14 days of CoCl2 exposure, providing confidence that HIF-1 stabilization induces a phenotype characterized by predominantly viable cells that are no longer proliferating, namely cellular senescence. Finally, to assess whether the effects we observed were attributable to HIF-1 stabilization and not an off-target effect of CoCl2, we also evaluated an alternative prolyl hydroxylase inhibitor, dimethyloxalylglycine (DMOG) (Epstein et al., 2001), and found similar effects on HIF-1, mitochondrial abundance and cellular senescence (Figure 5—figure supplement 3).
 
@@ -79,7 +198,7 @@ To test whether HIF-1 induction drives labor onset in vivo, we administered DMOG
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/85597/elife-85597-fig7-v1.jpg)
 
-**Figure 7.:** HIF-1α protein is detected in placental lysates 12 hr following DMOG injection but not vehicle (A). mRNA expression of HIF-1 targets Hk2 and Slc2a1 is upregulated following DMOG injection (p=0.002 for DMOG vs vehicle, two-way ANOVA) (B). Gestational length is significantly shortened following DMOG injection versus vehicle (C–D). Each data point represents a biological replicate (in A and B, each measurement from an individual placenta collected from one of two pregnant dams). Data normalized to mean of vehicle group. See Figure 7—source data 1 for uncropped blots.Figure 7—source data 1.Figure 7.
+**Figure 7.:** HIF-1α protein is detected in placental lysates 12 hr following DMOG injection but not vehicle (A). mRNA expression of HIF-1 targets Hk2 and Slc2a1 is upregulated following DMOG injection (p=0.002 for DMOG vs vehicle, two-way ANOVA) (B). Gestational length is significantly shortened following DMOG injection versus vehicle (C–D). Each data point represents a biological replicate (in A and B, each measurement from an individual placenta collected from one of two pregnant dams). Data normalized to mean of vehicle group. See Figure 7—source data 1 for uncropped blots.
 
 ## Discussion
 
@@ -97,80 +216,276 @@ In summary, we report a molecular characterization of placental aging phenomena 
 
 ## Materials and methods
 
-## Mouse placenta collection
+### Mouse placenta collection
 
 Wild-type C57BL/6 mice (Jackson Laboratory #000664) were fed a chow diet and housed at 20°C in a 12 hr light/12 hr dark cycle. Nulliparous females (<6 months of age) were housed for a single dark cycle (midnight = gestational day 0) with a stud male. On gestational day e13.5–17.5, placentas were isolated via laparotomy from pregnant females anesthetized via surgical-plane isoflurane. Placentas were quartered, immersion-rinsed in dH2O and blotted dry, then snap-frozen in liquid nitrogen and stored at –80°C prior to use.
 
-## Mouse trophoblast isolation
+### Mouse trophoblast isolation
 
 Protocol described in full in Pennington et al., 2012. On gestational day e15.5, placentas were collected via laparotomy from pregnant wild-type C57BL/6 female mice anesthetized with surgical-plane isoflurane. After dissection, placentas were quartered, immersion-rinsed in dH2O, then placed in ice-cold digestion buffer: DMEM plus HEPES 20 mM, collagenase 1 mg/mL, and DNase I 4000 U/mL. Placentas were digested for 20–40 min at 37°C with trituration and examined under a microscope until optimal digestion achieved. Digested cells were passed through a 70 µm strainer, washed in DMEM, then separated using a Percoll gradient. Trophoblast fraction was washed once more then plated in complete medium: DMEM with HEPES 20 mM, FBS 10%, and supplemented with sodium pyruvate, pen-strep-glutamine, non-essential amino acids, and gentamicin. Cells were grown at 37°C in 95% ambient air with 5% CO2.
 
-## Mouse DMOG injection and measurement of gestational length
+### Mouse DMOG injection and measurement of gestational length
 
 On gestational day e16.5, dams received an intraperitoneal injection of DMOG (Selleck Chemicals) 7.5 mg in 0.3 mL sterile saline (approximately 250 mg/kg) versus vehicle alone. Video recordings were used to measure gestational length, defined as interval from midnight of timed mating period until birth of the first pup.
 
-## Human placental specimens
+### Human placental specimens
 
 Placenta samples were collected at the time of cesarean delivery, within 20 min of delivery of the placenta. Placental tissue was sampled from approximately 1 cm deep to the maternal surface after dissecting away membranes. Cotyledons from all four quadrants were collected and minced together prior to immersion rinse in dH2O and storage of separate aliquots by snap freezing versus immersion in RNA later. All samples were stored at –80°C prior to use.
 
-## Cell culture
+### Cell culture
 
 All cells were grown at 37°C in 95% ambient air with 5% CO2. JAR choriocarcinoma cells (ATCC HTB-144; authenticated by STR profiling and confirmed negative for mycoplasma contamination) were grown in RPMI 1640 media (4.5 g/L glucose) supplemented with 10% FBS. Adherent JAR cells were treated with HIF-1-stabilizing agents dissolved in 1X PBS (pH 7.4): cobalt chloride hexahydrate (100 µM CoCl2, Millipore Sigma) and dimethyloxalylglycine, N-(methoxyoxoacetyl)-glycine methyl ester (1 mM DMOG, Millipore Sigma). JAR cells were treated with 100 µM CoCl2 or 1 mM DMOG in culture media as indicated prior to endpoint assays.
 
-## Preparation of conditioned media
+#### Preparation of conditioned media
 
 On day 5 of JAR cell treatment with CoCl2 (versus control condition), media exchange was performed to apply serum-free media for both conditions. 24 hr later, conditioned media samples were collected and applied to 10 kDa molecular weight cutoff filters (Amicon Ultra), with centrifugation for 20 min at 4000 × g, 4°C. Filters were washed with one volume of hTERT-HM base medium (see below), with repeat centrifugation. Concentrated proteins retained in suspension above the filter were collected and stored at –80°C.
 
 hTERT-HM cells (generously supplied by Dr. Jennifer Condon, Wayne State; STR reference profile not available) were grown in DMEM/F12 medium (Gibco) with 10% FBS and Antibiotic-Antimycotic (1X, Gibco). Cells were stimulated by addition of recombinant human IL-1β (R&D Systems) and/or filter-concentrated JAR cell conditioned media as indicated, 6 hr prior to collection of cellular RNA.
 
-## RT-qPCR
+#### RT-qPCR
 
 Total RNA was reverse-transcribed to cDNA with the Superscript III reverse transcriptase (Invitrogen) system with random hexamer primers (Invitrogen) according to the manufacturer’s instructions. cDNA was amplified via real-time quantitative PCR with TaqMan Fast Advanced Master Mix (Applied Biosystems) or SYBR Green PCR Master mix (QIAGEN) in a QuantStudio 6 Flex Real-Time PCR System (Applied Biosystems). In mouse samples, target gene expression was normalized to endogenous levels of housekeeping gene, β-actin. In human samples, target gene expression was normalized to endogenous levels of housekeeping gene, YWHAZ (TaqMan) or β-actin (SYBR). Mouse and human primers are listed in Table 2.
 
-## Collagen lattice contraction assay
+**Table 2.**
+ Primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Mouse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target</td>
+      <td>Sequence</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td>Glb1</td>
+      <td>Mm00515342_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>Hk2</td>
+      <td>Mm00443385_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>Slc2a1</td>
+      <td>Mm00441473_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>D loop (long, 801 bp amplicon)</td>
+      <td>F: CGTACATTAAACTATTTTCCCCAAGR: GAGTTTTGGTTCACGGAACAT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>COII/ATPase 6 (long, 855 bp amplicon)</td>
+      <td>F: TTGGTCTACAAGACGCCACAR: ATTTTGGTGAAGGTGCCAGT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>Nd5 (long, 930 bp amplicon)</td>
+      <td>F: CGCCTACTCCTCAGTTAGCCR: ATGGTGACTCAGTGCCAGGT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>Nd2/Nd1 (long, 832 bp amplicon)</td>
+      <td>F: GGATGAGCCTCAAACTCCAAR: ATGATGGCAAGGGTGATAGG</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>D loop (short)</td>
+      <td>F: TGACTATCCCCTTCCCCATTR: TTGTTGGTTTCACGGAGGAT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>COII/ATPase 6 (short)</td>
+      <td>F: TCTCCCCTCTCTACGCATTCR: CGGTTAATACGGGGTTGTTG</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>Nd5 (short)</td>
+      <td>F: GGCCTCACATCATCACTCCTR: GCTGTGGATCCGTTCGTAGT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>Nd2/Nd1 (short)</td>
+      <td>F: GGATGAGCCTCAAACTCCAAR: GGCTCGTAAAGCTCCGAATA</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>Actb</td>
+      <td>Mm00607939_s1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td colspan="3">Human</td>
+    </tr>
+    <tr>
+      <td>HK2</td>
+      <td>Hs00606086_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>SLC2A1</td>
+      <td>Hs00892681_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>IL1A</td>
+      <td>Hs00174092_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>IL1B</td>
+      <td>Hs01555410_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>TNFA</td>
+      <td>Hs00174128_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>IL6</td>
+      <td>Hs00174131_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>IL10</td>
+      <td>Hs00961622_m1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>MT-ATP6</td>
+      <td>Hs02596862_g1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>MT-COX2</td>
+      <td>Hs02596865_g1</td>
+      <td>TaqMan</td>
+    </tr>
+    <tr>
+      <td>ND1</td>
+      <td>F: CCATAAAACCCGCCACACTR: GAGCGATGGTGAGAGCTAAGGT</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>18S</td>
+      <td>F: CGCAGCTAGGAATAATGGAATAGGR: CATGGCCTCAGTTCCGAAA</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>GJA1</td>
+      <td>Hs.PT.58.38338544</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>PTGS2</td>
+      <td>Hs.PT.58.77266</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>ACTB</td>
+      <td>Hs.PT.39a.22214847</td>
+      <td>SYBR</td>
+    </tr>
+    <tr>
+      <td>YWHAZ</td>
+      <td>Hs01122445_g1</td>
+      <td>TaqMan</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Collagen lattice contraction assay
 
 As previously described (Nishimura et al., 2020; Devost and Zingg, 2007), hTERT-HM cells were suspended in a collagen gel matrix (Cellmatrix collagen type I-A, Fisher Scientific, prepared with MEM, NaOH, and HEPES) then plated in 12-well dishes and grown in hTERT-HM medium. When cells reached approximately 60% confluence, gel matrix was detached from plate and experimental treatments were applied in fresh cell culture medium. After 1 hr incubation, a photograph was taken of each well for manual measurement of percent well area occupied by collagen disc (using ImageJ), reflecting cellular contraction.
 
-## mtDNA damage assay
+#### mtDNA damage assay
 
-mtDNA damage was assayed from total DNA via a semi-long run real-time PCR approach, as described elsewhere (Rothfuss et al., 2010). Briefly, separate qPCRs were assayed to compare a long versus short amplicon representing each genomic region. A lesion rate per 10 kb of mtDNA was calculated as:lesion rate =10000 (bp)size of long fragment (bp)∗(1−FClong−short),
+mtDNA damage was assayed from total DNA via a semi-long run real-time PCR approach, as described elsewhere (Rothfuss et al., 2010). Briefly, separate qPCRs were assayed to compare a long versus short amplicon representing each genomic region. A lesion rate per 10 kb of mtDNA was calculated as:
 
-with FClong−short=2−ΔΔCt calculated in the usual method.
+$$
+lesion rate =\frac{10000 (bp)}{size of long fragment (bp)}∗(1−FC_{long−short}),
+$$
 
-## Relative mtDNA copy number
+with $FC_{long−short}=2^{−ΔΔCt}$ calculated in the usual method.
+
+#### Relative mtDNA copy number
 
 qPCR assays for nuclear and mitochondrial genes were performed using total DNA as a template. Relative mtDNA was calculated as follows:
 
-mt:nuc DNA copy number =2*2∆Ct, where ∆Ct= Ctnuclear gene-Ctmitochondrial gene .
+mt:nuc DNA copy number $=2*2^{\DeltaCt},$ where $\DeltaCt= Ct_{nuclear gene}-Ct_{mitochondrial gene}$ .
 
-## Immunoblots
+#### Immunoblots
 
 Protein extraction was performed on cell pellets using RIPA lysis buffer, or on snap-frozen tissue using RIPA lysis buffer and a bead homogenizer. Protein lysates were fractionated using NuPage Bis-Tris polyacrylamide gels (20 μg total protein per well) and transferred to PVDF membranes. Antibodies are listed in Table 3.
 
-## SA-βGal assay
+**Table 3.**
+ Antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Working concentration</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CoxIV</td>
+      <td>Mouse IgG mAb</td>
+      <td>1:1000</td>
+      <td>Cell Signaling Technology, #11967S</td>
+    </tr>
+    <tr>
+      <td>β-Actin-HRP conjugate</td>
+      <td>Rabbit IgG mAb</td>
+      <td>1:2000</td>
+      <td>Cell Signaling Technology, # 5125S</td>
+    </tr>
+    <tr>
+      <td>HIF-1</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Cell Signaling Technology, #14179S</td>
+    </tr>
+  </tbody>
+</table>
+
+#### SA-βGal assay
 
 Adherent cells were fixed and stained for SA-βGal via a Senescence Detection kit (Abcam, ab65351) per manufacturer’s instructions. Representative images were used to calculate the fraction of SA-βGal-positive cells, scored by an observer blinded to treatment condition.
 
-## Live cell staining
+#### Live cell staining
 
 Adherent cells were stained using the TMRE-Mitochondrial Membrane Potential Assay Kit (Abcam, ab113852) per manufacturer’s instructions. Select wells were pre-treated with 20 µM FCCP, a decoupling agent, as a positive control for 20 min before TMRE and Hoechst counterstain was applied. Live JAR cells were analyzed by the Celigo Image Cytometer (Nexcelom BioScience) for fluorescence quantification and gating. Adherent live JAR cells were stained with MitoSOX Red Mitochondrial Superoxide Indicator kit (Invitrogen) and analyzed using the cytometer in a similar manner.
 
-## Cell counting
+#### Cell counting
 
 JAR cells were cultured for 6 days±cobalt chloride exposure prior to cell counting. On day 6, cells from each condition were replated in a 96-well plate in CoCl2-free media at a density of 5×103 cells per well. Celigo Image Cytometer was used for automated cell counting (total cells per well) at 24 hr intervals.
 
-## RNA-Seq
+#### RNA-Seq
 
 Following 6 days of treatment with CoCl2 100 µM versus control media, total RNA was isolated from JAR cells as described above. Extracted RNA (300 ng) was treated with NEBNext rRNA Depletion Kit v2 (E7400X) and cDNA was generated using random hexamer priming and Maxima H Minus Reverse Transcriptase. cDNA was converted into double-stranded cDNA using NEBNext mRNA Second Strand Synthesis Module (E6111L) and sequencing libraries were generated by tagmentation using Nextera XT DNA Library Preparation Kit (Illumina FC-131) with 12 cycles of PCR amplification. Sequencing libraries were analyzed by Qubit and Agilent Bioanalyzer, pooled at a final concentration of 1.2 pM, and sequenced on an Illumina NextSeq500 instrument 36 × 8 × 36 read structure.
 
-## Transcriptomics analysis
+#### Transcriptomics analysis
 
 Sequencing reads were demultiplexed and trimmed for adapters using bcl2fastq (v2.20.0). Secondary adapter trimming, NextSeq/Poly(G) tail trimming, and read filtering were performed using fastp (v0.20.0) (Chen et al., 2018) low-quality reads and reads shorter than 18 nt after trimming were removed from the read pool. Salmon (v1.1.0) (Patro et al., 2017) was used to simultaneously map and quantify reads to transcripts in the GENCODE 33 genome annotation of the GRCh38/hg38 human assembly. Salmon was run using full selective alignment, with sequence-specific and fragment GC-bias correction turned on (--seqBias and --gcBias options, respectively). Transcript abundances were collated and summarized to gene abundances using the tximport package for R (Soneson et al., 2015). Normalization and differential expression analysis were performed using edgeR (Robinson et al., 2010; Chen et al., 2016). For differential gene expression analysis, genes were considered significant if they passed an FC cutoff of log2FC >1 and an FDR cutoff of FDR <0.05. Functional enrichment analyses were performed using g:Profiler (Raudvere et al., 2019). WGCNA (Langfelder and Horvath, 2008) was performed after removing genes with low expression as previously described (Bentsen et al., 2020).
 
-## Statistics
+#### Statistics
 
 Student’s two-tailed unpaired t-test, ordinary one-way, and two-way ANOVA statistical tests were applied as indicated to compare biological replicates in each experiment. Data were excluded as outliers using the interquartile range method (lower limit = first quartile – 1.5× IQR; upper limit = third quartile + 1.5× IQR).
 
-## Study approval
+#### Study approval
 
 All animal experiments were approved by the Beth Israel Deaconess Medical Center Institutional Animal Care and Use Committee (protocol #008-2022). Human placental specimens and data were biobanked and accessed under protocols approved by the Beth Israel Deaconess Medical Center Institutional Review Board, and written informed consent was obtained before subject participation (protocols #2008P000061, 2020P000997, 2021P000897).

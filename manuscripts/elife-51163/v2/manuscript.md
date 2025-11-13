@@ -53,63 +53,435 @@ In this study, we investigate the role of the different chain initiating and elo
 
 ## Results
 
-## Intracellular concentrations of SCF-associated enzymes
+### Intracellular concentrations of SCF-associated enzymes
 
 We sought to resolve how multiple ubiquitin priming and poly-ubiquitin elongating enzymes collaborate with human SCF ubiquitin ligases by measuring the individual rates of poly-ubiquitin chain priming and elongation using pre-steady state kinetic measurements with different combinations of SCF-associated enzymes. To accomplish this goal, we employed two well-characterized and biologically important SCF complexes based on the βTRCP substrate receptor (SCFβTRCP) and the FBW7 substrate receptor (SCFFBW7; for more details, please see Appendix 1).
 
 A critical parameter for measurement of the kinetics of in vitro reconstituted reactions is the concentrations for both ubiquitin chain initiator and elongator E2s and E3s needed to saturate the E3–substrate complex and thereby promote maximal rates of ubiquitin transfer to the substrate. Multi-turnover Michaelis-Menten kinetic assays were used to determine the levels of ARIH1, UBE2D3 and UBE2R2 necessary to saturate either SCFβTRCP or SCFFBW7 complexes (Figure 1, Figure 1—figure supplement 1, and Table 1). Care was also taken to assess the relative activities of the recombinant enzyme preparations (Ronchi and Haas, 2012) (please see Appendix 2 for a description and possible impact on interpretation of results).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig1-v2.jpg)
+
+**Figure 1.:** Multi-turnover ubiquitylation reactions were assembled in the presence of constant amounts of SCFFBW7 and 32P-labeled Cyclin E peptide or SCFβTRCP and 32P-labeled β-Catenin peptide and increasing amounts of (a) ARIH1 protein (along with sufficient UBE2L3 to saturate ARIH1), (b) UBE2D3, or (c) UBE2R2. In the case of UBE2R2, mono-ubiquitylated versions of the peptide substrates were used. The enzyme concentrations have been provided in Supplementary file 2. Reaction velocities were calculated (see Materials and methods) and plotted as a function of the protein concentration. The data were fit to the Michaelis-Menten equation, $velocity=\frac{k_{cat}[S]}{([K_{m}+[S])}$, where [S] represents the substrate concentration and Km is the Michaelis constant, using nonlinear curve fitting (Prism 8 software). All reactions were performed in duplicate technical replicates. Figure 1—figure supplement 1 shows representative autoradiograms of the ubiquitylation reactions. The R2 values for the fit of the data to the model have been provided in Table 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Multi-turnover ubiquitylation reactions were assembled in the presence of constant amounts of SCFFBW7 and 32P-labeled Cyclin E peptide and increasing amounts of ARIH1 protein in combination with saturating UBE2L3. Each lane represents a single ubiquitylation reaction used to calculate the reaction velocities. (b) Same as in (a), except with β-Catenin peptide substrate and SCFβTRCP. (c) Same as in (a), except with UBE2D3 protein. (d) Same as in (b), except with UBE2D3. (e) Same as in (a), except with UBE2R2 protein and mono-ubiquitylated cyclin E peptide. (f) Same as in (b), except with UBE2R2 and mono-ubiquitylated β-Catenin peptide. S0 represents unmodified substrate, S1 represents substrate modified with one ubiquitin, etc. The data are representative of duplicate technical replicates used to estimate Km. The enzyme concentrations have been provided in Supplementary file 2.
+
+**Table 1.**
+ Estimates of Km and kcat for Substrate Ubiquitylation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>Chain modifying E2 or E3</th>
+      <th>E3</th>
+      <th>KM (10−9 M)</th>
+      <th>kcat (min−1)</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cyclin E</td>
+      <td>ARIH1</td>
+      <td>SCFFBW7</td>
+      <td>149 ± 36</td>
+      <td>0.29 ± 0.02</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>ARIH1</td>
+      <td>SCFβTRCP</td>
+      <td>486 ± 138</td>
+      <td>0.32 ± 0.03</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>UBE2D3</td>
+      <td>SCFFBW7</td>
+      <td>1673 ± 460</td>
+      <td>0.77 ± 0.06</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>UBE2D3</td>
+      <td>SCFβTRCP</td>
+      <td>488 ± 53</td>
+      <td>1.9 ± 0.04</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>UBE2R2</td>
+      <td>SCFFBW7</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>UBE2R2</td>
+      <td>SCFβTRCP</td>
+      <td>*1900 ± 100</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ub-Cyclin E</td>
+      <td>UBE2R2</td>
+      <td>SCFFBW7</td>
+      <td>317 ± 44</td>
+      <td>3.7 ± 0.1</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Ub-β-Catenin</td>
+      <td>UBE2R2</td>
+      <td>SCFβTRCP</td>
+      <td>292 ± 35</td>
+      <td>3.2 ± 0.1</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Ub-Cyclin E</td>
+      <td>UBE2G1</td>
+      <td>SCFFBW7</td>
+      <td>1300 ± 20</td>
+      <td>2.3 ± 0.1</td>
+      <td>0.96</td>
+    </tr>
+  </tbody>
+</table>
+
+_*(Hill et al., 2018); ND, not determined._
+
 A potential caveat with saturating kinetics is that E2 and E3 concentrations in cells may be insufficient to saturate the E3–substrate complex, resulting in slower rates of ubiquitin transfer to the substrate in vivo. To address this issue, single reaction monitoring (SRM) mass spectrometry was used to determine the copy numbers of ARIH1, UBE2D1/2/3, UBE2R1/2, as well as the SCF subunits CUL1 and SKP1 in several common tissue culture cell lines, enabling calculation of the protein concentration within the cell (Table 2). To account for modest nuclear enrichment previously shown for UBE2R1 (Kleiger et al., 2009a), the activities of ARIH1, UBE2D3 and UBE2R2 were assayed at twice the cellular concentration estimated by SRM.
+
+**Table 2.**
+ Estimates of the cellular concentrations of SCF-related E2s and E3s in four common cell lines (10−9 M ± SEM).Table 2—source data 1.Detailed calculations and results for the absolute quantification of the proteins in Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>293T-FiTx</th>
+      <th>293T/17</th>
+      <th>HeLa</th>
+      <th>MRC5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARIH1</td>
+      <td>200 ± 10</td>
+      <td>148 ± 7</td>
+      <td>200 ± 10</td>
+      <td>160 ± 10</td>
+    </tr>
+    <tr>
+      <td>UBE2D1/2/3/4</td>
+      <td>2100 ± 100</td>
+      <td>1700 ± 100</td>
+      <td>1875 ± 7</td>
+      <td>1770 ± 40</td>
+    </tr>
+    <tr>
+      <td>UBE2R1</td>
+      <td>70 ± 3</td>
+      <td>134 ± 3</td>
+      <td>83 ± 2</td>
+      <td>82 ± 2</td>
+    </tr>
+    <tr>
+      <td>UBE2R2</td>
+      <td>132 ± 7</td>
+      <td>99 ± 6</td>
+      <td>280 ± 30</td>
+      <td>117 ± 1</td>
+    </tr>
+    <tr>
+      <td>CUL1</td>
+      <td>300 ± 20</td>
+      <td>340 ± 10</td>
+      <td>134 ± 5</td>
+      <td>176 ± 1</td>
+    </tr>
+    <tr>
+      <td>SKP1</td>
+      <td>2300 ± 100</td>
+      <td>1173 ± 9</td>
+      <td>1860 ± 20</td>
+      <td>1440 ± 40</td>
+    </tr>
+  </tbody>
+</table>
+
+_Details on the calculations are provided in Table 2—source data 1._
 
 The rates of ARIH1-catalyzed ubiquitin chain initiation and elongation were obtained by measuring the pre-steady state kinetics of a single encounter ubiquitylation reaction containing SCFFBW7, single lysine Cyclin E peptide, and 2.5 μM ARIH1 to saturate the SCF–substrate complex (Figure 2a–c). The rate of chain initiation was 0.5 sec−1, the second ubiquitin transfer to substrate was only modestly slower (0.2 sec−1), and the rate of the third ubiquitin transfer was 0.08 sec−1 (Table 3). The kinetics were sufficient to generate products containing up to four ubiquitins on the substrate modified poly-ubiquitin chain prior to substrate dissociation from SCF (Figures 2b and 3a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-v2.jpg)
+
+**Figure 2.:** (a) Typical conditions for the single-encounter quench flow ubiquitylation reactions used to estimate the rates of ubiquitin transfer. (b) Autoradiogram of a Cyclin E peptide ubiquitylation reaction with ARIH1 levels (2.5 μM) sufficient to saturate the SCF complex, where S0 represents unmodified substrate, S1 represents substrate modified with one ubiquitin, etc. Each time-point was performed in duplicate technical replicates. (c) Data points and fit to the kinetic model of the reaction in (b) for substrate (S0) and two products (S1 and S2). (d) Same as (b), except more physiological ARIH1 levels (Table 2) were used in the assay. (e) Same as (b), except with β-Catenin peptide substrate and SCFβTRCP. (f) Same as (e), except with more physiological ARIH1 levels. Figure 2—figure supplements 1–9 show the reactions and/or the fit of the data to the model for UBE2D3, UBE2R2, and combinations with ARIH1 or UBE2D3. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Data points and fit to the kinetic model of a ubiquitylation reaction containing Cyclin E peptide and physiological ARIH1 levels (Table 2) (see Figure 2 - panel d for the autoradiogram). Duplicate data points are shown from technical replicates. (b) Same as (a), except with β-Catenin peptide substrate levels that are saturating for SCFβTRCP (autoradiogram shown in Figure 2 - panel e). (c) Same as (b), except with more physiological ARIH1 levels (also see Figure 2 - panel f).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Autoradiogram of a Cyclin E ubiquitylation reaction with UBE2D3 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model of the reaction in (a) for substrate (S0) and mono-ubiquitylated product (S1). Duplicate data points from technical replicates are shown. (c,d) Same as (a,b), except with more physiological UBE2D3 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Autoradiogram of a β-Catenin peptide ubiquitylation reaction with UBE2D3 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model for the reaction in panel a. Duplicate data points from technical replicates are shown. (c,d) Same as (a,b), except with more physiological UBE2D3 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Autoradiogram of a Cyclin E ubiquitylation reaction with saturating UBE2R2 levels. Notice that mono-ubiquitylated substrate (S1) is barely detectible since it is very rapidly converted to S2. (b) Data points and fit to the kinetic model for the reaction in panel a. Estimation of the rate of ubiquitin transfer from UBE2R2 ~ ubiquitin to S1 was done independently, since S1 levels are only approximately 1% of the total signal and could not be reliably fit to the model. Duplicate data points from technical replicates are shown. (c) Autoradiogram of a mono-ubiquitylated Cyclin E peptide (S1) ubiquitylation reaction containing SCFFBW7 and saturating levels of UBE2R2. Reactions were also carried out in the presence of lysine-less (K0) ubiquitin, resulting in a single product (S2). (d) Data points and fit to the single, exponential decay of S1 and the formation of S2 from the reaction in panel c. Duplicate data points from technical replicates are shown. (e, f) Same as in (a, b), except with β-Catenin peptide substrate and SCFβTRCP. (g, h) Same as in (c, d), except with mono-ubiquitylated β-Catenin peptide substrate and SCFβTRCP. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Autoradiogram of a Cyclin E ubiquitylation reaction with more physiological UBE2R2 levels. (b) Same as in (a), except with β-Catenin peptide substrate and SCFβTRCP. The data are representative of duplicate technical replicates. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a) Autoradiogram of a Cyclin E ubiquitylation reaction with ARIH1 and UBE2R2 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model for the reaction shown in panel a. Duplicate data points from technical replicates are shown. (c, d) Same as (a, b), except with more physiological ARIH1 and UBE2R2 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (a) Autoradiogram of a β-Catenin peptide ubiquitylation reaction with ARIH1 and UBE2R2 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model for the reaction in panel a. Duplicate data points from technical replicates are shown. (c, d) Same as (a, b), except with more physiological ARIH1 and UBE2R2 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (a) Autoradiogram of a Cyclin E ubiquitylation reaction with UBE2D3 and UBE2R2 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model for the reaction in panel a. Duplicate data points from technical replicates are shown. (c, d) Same as (a, b) except with more physiological UBE2D3 and UBE2R2 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** (a) Autoradiogram of a β-Catenin peptide ubiquitylation reaction with UBE2D3 and UBE2R2 levels sufficient to saturate the SCF complex. (b) Data points and fit to the kinetic model for the reaction in panel a. Duplicate data points from technical replicates are shown. (c, d) Same as (a, b), except with more physiological UBE2D3 and UBE2R2 levels. The enzyme concentrations have been provided in Supplementary file 2.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig3-v2.jpg)
 
-**Figure 3.:** At saturating conditions, all enzymes can prime SCF-bound substrates, but only UBE2D3 and ARIH1 can prime at physiological concentrations. (a) Quantitation of the fractions of Cyclin E substrate (S0) and all products taken from the 10 s time-points from the quench flow reactions in Figure 2. Solid bars represent levels for reactions where ARIH1, UBE2D3, and/or UBE2R2 were saturating for SCF; empty bars represent reactions containing the same enzymes at more physiological levels (Table 2). Notice that UBE2R2 is capable of generating substantial products with long poly-ubiquitin chains when saturating for SCFFBW7, but produces almost no product when UBE2R2 levels are at estimated physiological levels. (b) Same as in (a), except with β-Catenin peptide substrate and SCFβTRCP.Figure 3—source data 1.Figure 3a,b.
+**Figure 3.:** At saturating conditions, all enzymes can prime SCF-bound substrates, but only UBE2D3 and ARIH1 can prime at physiological concentrations. (a) Quantitation of the fractions of Cyclin E substrate (S0) and all products taken from the 10 s time-points from the quench flow reactions in Figure 2. Solid bars represent levels for reactions where ARIH1, UBE2D3, and/or UBE2R2 were saturating for SCF; empty bars represent reactions containing the same enzymes at more physiological levels (Table 2). Notice that UBE2R2 is capable of generating substantial products with long poly-ubiquitin chains when saturating for SCFFBW7, but produces almost no product when UBE2R2 levels are at estimated physiological levels. (b) Same as in (a), except with β-Catenin peptide substrate and SCFβTRCP.
 
-## Measurement of ARIH1-catalyzed SCF reaction rates at physiological enzyme concentrations
+**Table 3.**
+ Estimates of the rates of ubiquitin transfer to substrate determined as kobs values (sec−1).Table 3—source data 1.P-values for the fit of the pre-steady ubiquitylation reaction data to the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th colspan="3">Substrate prior to ubiquitin transfer*</th>
+    </tr>
+    <tr>
+      <th>Substrate</th>
+      <th>Chain modifying E2 or E3</th>
+      <th>E3</th>
+      <th>S0</th>
+      <th>S1</th>
+      <th>S2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cyclin E</td>
+      <td>ARIH1</td>
+      <td>SCFFBW7</td>
+      <td>0.5 ± 0.04 (0.2 ± 0.005)</td>
+      <td>0.2 ± 0.03 (0.1 ± 0.01)</td>
+      <td>0.08 ± 0.01 (0.1 ± 0.02)</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>ARIH1</td>
+      <td>SCFβTRCP</td>
+      <td>0.2 ± 0.01 (0.1 ± 0.005)</td>
+      <td>0.3 ± 0.07 (0.2 ± 0.02)</td>
+      <td>ND (0.1 ± 0.02)</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>UBE2D3</td>
+      <td>SCFFBW7</td>
+      <td>0.1 ± 0.01 (0.06 ± 0.003)</td>
+      <td>0.2 ± 0.08 (0.2 ± 0.03)</td>
+      <td>ND (ND)</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>UBE2D3</td>
+      <td>SCFβTrCP</td>
+      <td>5 ± 0.6 (3 ± 0.2)</td>
+      <td>0.2 ± 0.04 (0.2 ± 0.03)</td>
+      <td>ND (0.5 ± 0.1)</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>UBE2R2</td>
+      <td>SCFFBW7</td>
+      <td>0.2 ± 0.02 (ND)</td>
+      <td>40 ± 4 (ND)</td>
+      <td>4 ± 0.5 (ND)</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>UBE2R2</td>
+      <td>SCFβTrCP</td>
+      <td>0.1 ± 0.01 (ND)</td>
+      <td>30 ± 3 (ND)</td>
+      <td>7 ± 0.5 (ND)</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>ARIH1/UBE2R2</td>
+      <td>SCFFBW7</td>
+      <td>0.2 ± 0.06 (0.2 ± 0.006)</td>
+      <td>ND (0.4 ± 0.03)</td>
+      <td>ND (1 ± 0.1)</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>ARIH1/UBE2R2</td>
+      <td>SCFβTrCP</td>
+      <td>0.3 ± 0.05 (0.07 ± 0.006)</td>
+      <td>2 ± 0.6 (0.6 ± 0.08)</td>
+      <td>5 ± 0.8 (1 ± 0.1)</td>
+    </tr>
+    <tr>
+      <td>Cyclin E</td>
+      <td>UBE2D3/UBE2R2</td>
+      <td>SCFFBW7</td>
+      <td>0.2 ± 0.01 (0.1 ± 0.006)</td>
+      <td>7 ± 1 (3 ± 0.4)</td>
+      <td>4 ± 0.3 (2 ± 0.1)</td>
+    </tr>
+    <tr>
+      <td>β-Catenin</td>
+      <td>UBE2D3/UBE2R2</td>
+      <td>SCFβTrCP</td>
+      <td>4 ± 0.5 (3 ± 0.3)</td>
+      <td>0.9 ± 0.1 (0.4 ± 0.04)</td>
+      <td>4 ± 0.4 (1 ± 0.1)</td>
+    </tr>
+    <tr>
+      <td>Ub-Cyclin E</td>
+      <td>UBE2G1</td>
+      <td>SCFFBW7</td>
+      <td>ND (ND)</td>
+      <td>1.0 ± 0.1 (ND)</td>
+      <td>1.0 ± 0.1 (ND)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Rates are given for both saturating E2/E3 for SCF or for estimated cellular E2/E3 for SCF (in parenthesis and italics). P-values for the goodness of fit to the model are provided in Table 3—source data 1.ND; not determined or not statistically significant._
+
+### Measurement of ARIH1-catalyzed SCF reaction rates at physiological enzyme concentrations
 
 Reducing the concentration of ARIH1 some 7-fold lower to more physiological levels resulted in only modest changes to the rates of ubiquitin transfer. The rates of the first and the second ubiquitin transfers (0.2 sec−1 and 0.1 sec−1, respectively) were only 2-fold slower than in the case where ARIH1 was saturating for SCF, and the rates of the third ubiquitin transfers were comparable (Table 3). As such, these reactions at lower ARIH1 levels still generated products with up to four ubiquitins on SCF-bound substrates (Figure 2d, Figure 2—figure supplement 1a, and Figure 3a).
 
 Assaying ARIH1 with β-Catenin peptide substrate and SCFβTRCP resulted in both similar kinetics as well as ubiquitylated products compared with the reactions with Cyclin E peptide and SCFFBW7 (Figures 2e,f and 3b, Figure 2—figure supplement 1b,c and Table 3). The rates of chain initiation were comparable when the ARIH1 concentration was 2.5 μM or 0.36 μM (0.2 sec−1 and 0.1 sec−1, respectively), and the rates of the second ubiquitin transfers were also similar to those for Cyclin E. Taken together, these results demonstrated that ARIH1 rapidly initiates a poly-ubiquitin chain on SCF-bound substrates and is capable of modest chain extension prior to product dissociation, even at ARIH1 levels that reflected intracellular concentrations.
 
-## UBE2D3-catalyzed SCF reactions exhibit pronounced specificity for substrate and/or the SCF substrate receptor
+### UBE2D3-catalyzed SCF reactions exhibit pronounced specificity for substrate and/or the SCF substrate receptor
 
 The rates of chain initiation and elongation were measured next for UBE2D3. At a saturating concentration of 10 μM, the rate of chain initiation was 0.1 sec−1 for SCFFBW7 and Cyclin E peptide (Figure 2—figure supplement 2a,b and Table 3), 5-fold slower than the same rate catalyzed by ARIH1. Similar to ARIH1, this rate was only reduced 2-fold when UBE2D3 levels were lowered to 3.7 μM to more accurately reflect cellular levels (Figure 2—figure supplement 2c,d and Table 2). However, when 10 μM UBE2D3 was assayed with β-Catenin peptide and SCFβTRCP, the rate of chain initiation (5 sec−1) was far more rapid than with Cyclin E peptide and SCFFBW7 (Figure 2—figure supplement 3 and Table 3). Reduction of the concentration of UBE2D3 by approximately 3-fold to physiological levels had a negligible effect on the rate of chain initiation. With chain elongation rates between 0.2 sec−1–0.5 sec−1, UBE2D3 was also capable of substantial poly-ubiquitin chain assembly onto β-Catenin substrate, even at reduced levels (Figure 3b). Thus, in contrast with ARIH1, UBE2D3 activity is sensitive to either the identity of the substrate and/or the SCF substrate receptor.
 
-## Physiological levels of UBE2R1/2 are too low to achieve substrate priming
+### Physiological levels of UBE2R1/2 are too low to achieve substrate priming
 
 When saturating levels (10 μM) of the ubiquitin-conjugating enzyme UBE2R2 was assayed with both SCFFBW7 and Cyclin E peptide or with SCFβTRCP with β-Catenin peptide, the rates of chain initiation were highly similar (0.1 sec−1–0.2 sec−1, respectively) and comparable to the rates generated by ARIH1 (Figure 2—figure supplement 4 and Table 3). Consistent with prior results, the rate of the second ubiquitin transfer was far more rapid for both substrates and SCF complexes (40 sec−1 and 30 sec−1 to mono-ubiquitylated Cyclin E and β-Catenin peptides, respectively). The rates of the third ubiquitin transfers to SCF-bound substrates were also rapid, resulting in very long poly-ubiquitin chains on products (Figure 3), a hallmark of UBE2R1/2-catalyzed ubiquitylation reactions.
 
 While reactions containing saturating UBE2R2 for SCF added impressively long poly-ubiquitin chains onto substrate, reduction of the UBE2R2 levels by 20-fold to mimic cellular conditions resulted in the near elimination of any product for both Cyclin E and β-Catenin peptide (Figure 2—figure supplement 5 and Table 3). Indeed, product levels were so low that we were unable to estimate the rate of poly-ubiquitin chain initiation for either substrate. This result strongly suggested that UBE2R1/2 are incapable of mediating substrate ubiquitylation in vivo without the assistance of other SCF-associated enzymes.
 
-## Initiation and elongation enzyme mixtures improve reaction kinetics
+### Initiation and elongation enzyme mixtures improve reaction kinetics
 
 We then compared the rates of chain initiation and elongation for reactions containing initiator E2 or E3 in combination with UBE2R2. Ubiquitylation reactions containing both saturating ARIH1 (2.5 μM) and UBE2R2 (10 μM) for SCFFBW7 were performed in the presence of Cyclin E peptide (Figure 2—figure supplement 6a,b). The rate of chain initiation was only 2-fold slower than in comparison with the same reaction containing only ARIH1 (Table 3). Reduction of both ARIH1 (0.36 μM) and UBE2R2 (0.5 μM) to more physiological levels did not affect the rate of chain initiation, but the rate of chain elongation was greatly reduced when compared to the reaction containing saturating UBE2R2 alone (Figure 2—figure supplement 6c,d and Table 3). Similar trends in the rates as well as the effects on poly-ubiquitin chain lengths were observed for β-Catenin peptide and SCFβTRCP (Figure 2—figure supplement 7). Nevertheless, the rates of chain elongation for ARIH1 in the presence of UBE2R2 were significantly faster than for reactions containing ARIH1 alone, resulting in substrates modified with poly-ubiquitin chains that were substantially longer than those formed by ARIH1 in the absence of UBE2R2 (Figure 3b). These results suggested that while ARIH1 can provide the initiator ubiquitin for subsequent elongation by UBE2R1/2, it also acts as a competitor for the elongation cycles in in vitro ubiquitylated reactions.
 
 The rates of chain initiation and elongation were then determined for analogous reactions containing both 10 μM UBE2D3 and UBE2R2 (Figure 2—figure supplements 8 and 9; Table 3). While the rates of ubiquitin chain initiation were comparable to those from reactions containing UBE2D3 alone, the rates of the second ubiquitin transfer to substrate were suppressed compared to reactions containing UBE2R2 alone, in particular for reactions with β-Catenin peptide and SCFβTRCP (0.9 sec−1 versus 30 sec−1, respectively). Reduction of the levels of both UBE2D3 (3.7 μM) and UBE2R2 (0.5 μM) further slowed the rates of chain elongation; however, long poly-ubiquitin chains were still observed on substrates, especially β-Catenin peptide (Figure 3). These results suggested that, like ARIH1, UBE2D3 also acts as a competitor for chain elongation by UBE2R1/2.
 
-## Physiological concentrations appear optimized for substrate ubiquitylation
+### Physiological concentrations appear optimized for substrate ubiquitylation
 
 Considering that the average estimated physiological concentrations for ARIH1, UBE2D3, and UBE2R1/2 (Table 2) were all quite close to the Km values of these enzymes for SCF (Table 1), we reasoned that relatively subtle changes in ARIH1, UBE2D3, and UBE2R1/2 levels may result in substantial differences in both the fraction of substrate converted into ubiquitylated product as well as the lengths of the poly-ubiquitin chains. To test for this, single encounter ubiquitylation reactions were assembled with SCFFBW7, Cyclin E peptide, and where ARIH1, UBE2D3, and UBE2R2 levels were assayed either up to four times higher or lower than their estimated physiological concentrations.
 
 Very little product was observed for any of the reactions when the enzyme levels were assayed at either one-fourth or one-half the estimated cellular concentrations (Figure 4). Substantial mono-ubiquitylation of Cyclin E peptide occurred for both ARIH1 and UBE2D3 when assayed at the estimated physiological concentrations, and introduction of UBE2R2 to these reactions also resulted in the formation of poly-ubiquitin chains onto product containing four or more ubiquitins (Figure 4 and Figure 4—figure supplement 1). Increasing ARIH1 levels to either twice or four times the estimated cellular concentration resulted in both increased conversion of substrate to product containing at least one ubiquitin, as well as substantial poly-ubiquitin chains on product (up to five ubiquitins in the latter case). Increasing UBE2D3 levels also resulted in greater product formation, although to a lesser extent than for ARIH1. The UBE2D3 product was also primarily mono-ubiquitylated. Increasing the UBE2R2 concentration also led to some product formation, all containing very long poly-ubiquitin chains. Finally, combining either ARIH1 or UBE2D3 with UBE2R2 and assaying at levels two or four times greater than the estimated physiological levels resulted in greater amounts of product containing much longer poly-ubiquitin chains. Thus, subtle changes in the concentrations of ARIH1, UBE2D3, and UBE2R2 led to significant changes in both the amount of substrate converted to product as well as the lengths of the poly-ubiquitin chains on the product.
 
-## UBE2R1/2 activity is dispensable for the degradation of four canonical SCF substrates
+![Figure 4.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig4-v2.jpg)
+
+**Figure 4.:** Single-encounter ubiquitylation reactions were initiated with either ARIH1, UBE2D3, or UBE2R2 alone or relevant combinations at estimated cellular levels (middle panel). The same reactions were also performed with either a 2- or 4-fold reduction in the enzyme levels (left panel), or 2- or 4-fold greater levels (right panel). All reactions were performed in duplicate technical replicates. Figure 4—figure supplement 1 provides graphs of the relative frequencies for the distribution of unmodified substrate and products. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Quantitation of the fractions of substrate (S0) and all products from the single-encounter reactions in Figure 4 containing varying amounts of ARIH1 protein. The mid-range level was near physiological (Table 2). (b) Same as in (a), except with UBE2D3. (c) Same as in (a), except with UBE2R2. (d) Same as in (a), except with both ARIH1 and UBE2R2. (e) Same as in (a), except with both UBE2D3 and UBE2R2. Data points are shown from duplicate technical replicates.
+
+### UBE2R1/2 activity is dispensable for the degradation of four canonical SCF substrates
 
 Since modest changes in enzyme levels, particularly UBE2R2, resulted in substantial changes in poly-ubiquitin chains appended to substrate, we reasoned that a 2-fold reduction in UBE2R1/2 levels might result in the stabilization of SCF substrates in the cell. Surprisingly, the stabilities of the SCFFBW7 substrates p27 and CYCLIN E were comparable by cycloheximide chase in either wild-type (WT) or UBE2R1 knock out HEK293T Flp-In T-Rex (293T-FiTx cells; Figure 5—figure supplement 1a). Note that ablation of UBE2R1 protein did not significantly affect UBE2R2 mRNA levels, ruling out a dosage compensation effect (Figure 5—figure supplement 1b).
 
 Since the above results may be reconciled by the presence of UBE2R2 protein that might compensate for loss of UBE2R1 protein, CRISPR/Cas9 technology was used to disrupt both UBE2R1 and UBE2R2 loci in HEK 293T cells. Multiple clones were isolated that contained frameshift indels that caused total ablation of UBE2R1 and/or UBE2R2 protein, as demonstrated by immunoblotting with antibodies with high specificity to either UBE2R1 or UBE2R2 (Figure 5—figure supplements 2 and 6b). Remarkably, the steady state levels of three SCF substrates, β-CATENIN, CYCLIN E, and p27, were not significantly enriched in three independent UBE2R1/2 knockout cell lines in comparison with three control lines (Figure 5a,b). Cycloheximide chase analysis performed on the UBE2R1/2 double knockout cells demonstrated that p27 protein degradation was indistinguishable in comparison with control cells (Figure 5c and Figure 5—figure supplement 3a). The degradation of IκBα in response to TNFα treatment in control or UBE2R1/2 double knockout cells was also indistinguishable (Figure 5d and Figure 5—figure supplement 3b). Finally, since Cdc34 is required for the G1-S cell cycle transition in budding yeast, flow cytometry was used to estimate the percentage of cells in each phase of the cell cycle in control versus UBE2R1/2 double knockout cells but no differences were found (Figure 5e and Figure 5—figure supplement 4). These results demonstrated that both UBE2R1 and UBE2R2 are entirely dispensable for the degradation of at least some SCF substrates and progression through the cell cycle.
 
-## A genome-wide CRISPR screen reveals specific dependency of UBE2R1/UBE2 R2 double knockout cells on UBE2G1
+![Figure 5.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-v2.jpg)
+
+**Figure 5.:** (a) Comparison of the steady state stabilities of β-CATENIN, CYCLIN E, and p27 proteins in either control cell lines (clones 1, G3, and D5) or UBE2R1/2 double knockout cell lines (clones B3, E4 and A10). Demonstrations of the anti-UBE2R1 and anti-UBE2R2 antibody specificities are provided in Figure 5—figure supplements 2 and 5b. (b) β-CATENIN (black circles), CYCLIN E (gray squares), and p27 (orange diamonds) protein levels from control or UBE2R1/2 double knockout cell lines. The median levels for each group are shown as dashed horizonal lines. While two of the double knockout cell lines showed evident enrichment of p27 in comparison with control cells, this result did not meet a minimal standard for statistical significance (p-value of 0.13 using an unpaired t-test). (c) Cycloheximide chase time courses measuring p27 protein stability from either control or UBE2R1/2 double knockout cells. Protein levels were normalized to the untreated samples and fit to a one phase decay model ( R2 values for control and knockout cells were 0.85 and 0.77, respectively). Representative immunoblots are shown in Figure 5—figure supplement 3a. (d) TNFα-induced degradation of IκBα is comparable in either control or UBE2R1/2 double knockout cells. Protein levels were normalized to the untreated samples and fit to a one phase decay model (R2 values for control and double knockout cells are 0.77 and 0.80, respectively). Representative immunoblots are shown in Figure 5—figure supplement 3b. (e) Cell cycle analysis was performed on actively dividing populations of control or UBE2R1/2 double knockout cells. Representative spectra are shown in Figure 5—figure supplement 4. Three biological replicates each for control and UBE2R1/2 double knockout cell lines with duplicate technical replicates were used to generate the data for all panels.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative data showing the stabilities of CYCLIN E and p27 proteins from a cycloheximide (CHX) chase experiment comparing wild-type and UBE2R1 knockout 293T-FiTx cells. (b) Relative expression ratios for either UBE2R1 or UBE2R2 mRNA comparing wild-type or UBE2R1 knockout 293T-FiTx cells. Data points are shown from duplicate technical replicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Immunoblot of cellular lysates from the parental and various UBE2R1, UBE2R2 and UBE2R1/2 knockout cell lines demonstrating the specificities of the antibodies used to detect UBE2R1 and the closely related UBE2R2 protein (greater than 85% amino acid sequence identity). Notice that colony E11 shows ablation of both UBE2R1 and UBE2R2, likely due to the high similarity of UBE2R2 guide #2 with the UBE2R1 DNA sequence. The anti-UBE2R2 antibody was used for all immunoblots throughout the manuscript, whereas the anti-UBE2R1 antibody was used for immunoblots shown in Figure 6—figure supplements 1 and 2.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Representative immunoblots for the cycloheximide chase experiment shown in Figure 5c. (b) Representative immunoblots for the TNFα-induced degradation of IκBα protein (Figure 5d). Three independent cell lines for control (clones 1, G3 and D5) and UBE2R1/2 double knockout (clones B3, E4, and A10) cells were used to generate the data for both panels with duplicate technical replicates.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Representative flow cytometry profiles for three control (clones 1, G3 and D5) and three UBE2R1/2 double knockout (clones B3, E4, and A10) cell lines. Duplicate technical replicates were used to generate the graph shown in Figure 5e.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (a) Immunofluorescence staining of UBE2R1 protein (green; middle panel). UBE2R1 protein is visible with modest evident nuclear enrichment, to a lesser extent in the cytoplasm, and in adjacent pairs of foci. Scale bar, 5 μM. (b) Immunofluorescence staining for UBE2R1 protein (green; middle panel) performed on HEK 293T-FiTx UBE2R1 knockout cells. Notice that no UBE2R1 staining is observed. Scale bar, 20 μM. Representative data are shown from duplicate biological replicates.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** (a) Products from PCR reactions spanning the UBE2R1 exon two guide RNA site were resolved by agarose gel electrophoresis. Incorporation of the oligo DNA (see Supplementary file 1 - Key Resources Table) into the genome should increase the PCR product by 50 base pairs. Notice that upward shifts were observed for multiple clones, such as 9 and 32. The results are representative of duplicate technical replicates. (b) Demonstration of the specificity of an anti-UBE2R1 antibody with recombinant UBE2R1 and UBE2R2 proteins. This antibody was used to generate immunoblots shown in Figure 5a, Figure 5—figure supplement 1, and Figure 7a.
+
+### A genome-wide CRISPR screen reveals specific dependency of UBE2R1/UBE2 R2 double knockout cells on UBE2G1
 
 To explain how p27, CYCLIN E, β-CATENIN, and IκBα become ubiquitylated in the absence of UBE2R1/2, we considered two potential hypotheses: (1) ARIH1 and/or UBE2D1/2/3 are sufficient for both initiation as well as modest poly-ubiquitin chain elongation (as evidenced by the kinetic results here); and (2) a different E2 may complement UBE2R1/2 activity in the cell. The first hypothesis predicts that ARIH1 and/or UBE2D1/2/3 might become more essential in the absence of UBE2R1/2, whereas the second hypothesis suggests that one or more other E2s may become essential in the absence of UBE2R1/2.
 
 To address this question in an unbiased manner, we performed genome-wide CRISPR knockout screens in the NALM-6 pre-B cell lymphoma line with the previously reported EKO sgRNA library (Bertomeu et al., 2018) to identify genes that exhibit synthetic lethality with the loss of UBE2R1 and/or UBE2R2. Cell populations were first transduced with individual sgRNAs targeting either UBE2R1, UBE2R2, or both UBE2R1 and UBE2R2, as well as the AAVS1 locus and a non-targeting control sgRNA (Figure 6a and Figure 6—figure supplement 1; for screen details, see Materials and methods). Each population was then transduced with the EKO library pool and propagated for 14 days, followed by determination of sgRNA frequencies by next generation sequencing and calculation of gene-level scores by the RANKS algorithm (Bertomeu et al., 2018). Differential RANKS scores for every gene in each experimental screen were obtained by subtraction of the averaged RANKS scores of the two control screens. Strikingly, the UBE2G1 gene scored as the top synthetic lethal interactor in both replicates of the UBE2R1/2 double knockout screen but did not score in either of the UBE2R1 or UBE2R2 single knockout screens (Figure 6b–e). Moreover, out of the five experimental screens analyzed, the only statistically significant hit (FDR < 0.05) was UBE2G1 in the UBE2R1/2 double knockout screen. The three-way genetic interaction between UBE2R1, UBE2R2 and UBE2G1 was validated by population-level knockout of UBE2G1 in UBE2R1/2 single and double knockout clones in the NALM-6 parental cell line (Figure 6—figure supplement 2). We did not observe any other significant genetic interactions with loss of UBE2R1/2, including with ARIH1, UBE2D3 or other SCF components. These genetic screen data suggested that UBE2G1 uniquely buffers the loss of UBE2R1/2, and in particular that the elongation activity of ARIH1 and UBE2D3 are unable to substitute for the three dedicated elongation E2 enzymes.
 
-## UBE2G1 mediates SCF substrate instability in vivo and exhibits potent chain elongation activity in vitro
+![Figure 6.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic of CRISPR screen workflow to identify genes that cause synthetic lethality in a UBE2R1/2 double mutant background. (b) Scatter plot of differential RANKS scores of all genes in replicate UBE2R1/2 double knockout screens. Negative values indicate sgRNA depletion relative to the control population background and positive values indicate sgRNA enrichment. (c,d). Scatter plot comparisons of differential RANKS scores for UBE2R1/2 double knockout compared to UBE2R2 and UBE2R1 screens. For both plots, UBE2R1/2 scores are the average of the two screens in panel b. (e) Scatter plot comparison of UBE2R1 versus UBE2R2 screens. Scores for UBE2R2 screens are the average of two independent replicates, whereas scores for UBE2R1 are from a single screen.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** NALM-6 populations treated with sgRNAs that target AAVS1, GFP, UBE2R1 and/or UBE2R2 as indicated. UBE2R1 and UBE2R2 protein were detected by immunoblot with anti-UBE2R1 or anti-UBE2R2 antibody at 1:1000 dilution. Note that since CRISPR-mediated knockout populations were not clonal, residual protein was detected in some instances.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Loss of UBE2R1 and UBE2R2 protein in clonal knockout NALM-6 cell lines for the UBE2R1 locus (top) or UBE2R2 locus (middle) or both loci (bottom). Clones used for analysis in panel b and c are indicated by red boxes. (b) Loss of UBE2G1 protein in AAVS1/GFP control and UBE2R1/UBE2R2 double knockout NALM-6 cell lines populations treated with indicated lentiviral constructs that target either control AZ-Green or UBE2G1. (c) Viability of colonies for the indicated combinations of UBE2R1, UBE2R2 and UBE2G1 knockouts. All cell lines and populations for validation experiments were generated in the NALM-6 doxycycline-inducible Cas9 clone #20 background.
+
+### UBE2G1 mediates SCF substrate instability in vivo and exhibits potent chain elongation activity in vitro
 
 To determine whether depletion of UBE2G1 may affect the stability of SCF substrates, UBE2R1/2 double knockout 293T cell lines were treated with siRNAs targeting UBE2G1. p27 levels were modestly increased in populations treated with non-targeting siRNAs but were strongly increased in UBE2R1/2 double knockout cells treated with UBE2G1-targeting siRNA (Figure 7a,b). Stabilization of CYCLIN E protein was also observed in UBE2R1/2 double knockout cells treated with UBE2G1-targeting siRNA. To determine whether these observations might extend to additional CRLs, we assessed the CRL2VHL substrate HIF1α in control versus UBE2R1/2 knockout cell lines. Similar to p27, HIF1α was heavily stabilized upon knockdown of UBE2G1 in UBE2R1/2 double knockout cells (Figure 7a,b). These results demonstrate the functional redundancy between UBE2R1/2 and UBE2G1 across the CRL family.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig7-v2.jpg)
+
+**Figure 7.:** (a) Comparison of the steady state stabilities of HIF1α, CYCLIN E, and p27 proteins in HEK 293T control or UBE2R1/2 double knockout cells treated with siRNA targeting UBE2G1 expression. (b) Quantitative comparison of the steady state levels for HIF1α (open or closed black circles), CYCLIN E (open or closed gray squares), and p27 protein (open or closed orange diamonds). P-values were calculated using an unpaired t-test (* and ** denote values of less than 0.05 or 0.01, respectively). P-values for all relevant combinations are provided in Figure 7—source data 1. Three biological replicates each for control and UBE2R1/2 double knockout cells were used to generate the figure with duplicate technical replicates. (c) Representative autoradiogram of a Cyclin E peptide ubiquitylation reaction with either ARIH1, UBE2D3, or UBE2G1 alone or in combination. (d) Graphical representation of the levels of unmodified substrate and ubiquitylated products from the reactions shown in panel c. Duplicate technical replicates were performed to generate the figure. Source data have been provided in Figure 7—source data 2 for panel d. (e) Representative autoradiogram of a Cyclin E ubiquitylation reaction with UBE2G1 levels (12.5 μM) sufficient to saturate the SCF complex. Figure 7—figure supplement 1d shows the fit of the data to the kinetic model. The enzyme concentrations have been provided in Supplementary file 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51163/elife-51163-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Single encounter ubiquitylation reactions containing either saturating UBE2R2 or UBE2G1 and mono-ubiquitylated β-Catenin peptide substrate and SCFβTRCP or mono-ubiquitylated Cyclin E peptide substrate and SCFFBW7. Reactions were quenched at 10 s (see Materials and methods). (b) Multi-turnover ubiquitylation reactions were assembled in the presence of constant amounts of SCFFBW7 and 32P-labeled Ub-Cyclin E peptide and increasing amounts of UBE2G1 protein. Each lane represents a single ubiquitylation reaction used to calculate the reaction velocity (see Materials and methods). Representative data from two technical replicates are shown for panels (a) and (b). (c) The velocities from the reactions in (b) were plotted as a function of the UBE2G1 protein concentration and the data were fit to the Michaelis-Menten equation, $velocity=\frac{k_{cat}[S]}{([K_{m}+[S])}$, using nonlinear curve fitting. Data points are shown from duplicate technical replicates. (d) Data points and fit to the kinetic model of the reaction in Figure 7d for mono-ubiquitylated substrate. Data points are shown from duplicate technical replicates. All relevant enzyme concentrations have been provided in Supplementary file 2.
 
 We then determined whether UBE2G1 can support SCF-mediated substrate ubiquitylation in vitro. UBE2G1 itself had no measurable chain initiation activity, but exhibited substantial chain elongation activity against either mono-ubiquitylated β-Catenin or Cyclin E peptides in the presence of SCFFBW7 or SCFβTRCP, respectively (Figure 7—figure supplement 1a). The Km of UBE2G1 was estimated as 1.30 ± 0.2 μM from multi-turnover Michaelis-Menten kinetics in the presence of mono-ubiquitylated Cyclin E peptide substrate (Figure 7—figure supplement 1b,c and Table 1). We then tested the ability of UBE2G1 to participate in a hand-off reaction with either ARIH1 or UBE2D3. Maximal chain elongation on substrate was observed only when ARIH1 or UBE2D3 were assayed in the presence of UBE2G1 (Figure 7c,d). Finally, the pre-steady state kinetics of UBE2G1-catalyzed ubiquitin transfer to the Cyclin E peptide yielded rates of ubiquitin transfer of 1 ± 0.1 sec−1 under conditions where UBE2G1 levels were sufficient to saturate SCF (Figure 7e, Figure 7—figure supplement 1d, and Table 3). In terms of enzyme efficiency (kobs/Km), the UBE2R2 efficiency (1.3 × 108 M−1 sec−1) was 173-fold greater than for UBE2G1 (7.7 × 105 M−1 sec−1) for the first ubiquitin transfer to mono-ubiquitylated substrate, and 17-fold greater for the subsequent transfer. Thus, while UBE2R2 is far more efficient during catalysis of ubiquitin transfer to substrate on SCF, UBE2G1 activity is nevertheless sufficient to poly-ubiquitylate substrates that have been primed by either UBE2D1/2/3 or ARIH1. Collectively, these results demonstrated that UBE2G1 can act as a dedicated elongation E2 for SCF complexes, and thereby buffer cells against the loss of UBE2R1 and UBE2R2.
 
@@ -137,17 +509,17 @@ Many other details remain to be elucidated regarding how SCF and other CRLs func
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 HEK293T Flp-In T-Rex (293T-FiTx) HEK293T/17, HeLa, and MRC5 cells were all grown in DMEM (4.5 g/L glucose) supplemented with 10% fetal bovine serum, 4 mM L-Glutamine, 100 units/mL Penicillin, 100 μg/mL Streptomycin, and 10 μg/mL Ciprofloxacin in a standard tissue culture incubator with 5% carbon dioxide. NALM-6 cells were grown in RPMI 1640 medium supplemented with 10% fetal bovine serum.
 
 The NALM-6 cell line was provided by Stephen Elledge (Harvard Medical School). Authenticity was determined by whole genome sequence analysis of the parental line and the doxycycline inducible Cas9 clone used for CRISPR screens. Both cell lines matched the previously reported NALM-6 sequence and chromosome complement. Both lines were verified as mycoplasma negative before experiments were initiated. All other cell lines were purchased directly from the ATCC (see Supplementary file 1 - key resources table) prior to beginning these experiments, and were grown in the presence of Ciprofloxacin to eliminate potential mycoplasma contamination.
 
-## Constructs
+### Constructs
 
 All expression constructs used in this study have been listed in the key resources table (Supplementary file 1). Expression constructs that had been generated specifically for this study include human (His)8-NEDD8, human (His)6-ubiquitin, (His)6-no lysine (K0) human ubiquitin, and UBE2G1.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Detailed protocols for the expression and purification of split-n-co-express human K720R and neddylated CUL1-RBX1 (Li et al., 2005), full-length human βTRCP2 (FBW11)-SKP1 complex (Scott et al., 2016), human FBW7(263-C-terminus)-SKP1 complex (Scott et al., 2016), human UBE2L3 and ARIH1 (Scott et al., 2016), UBE2R2 (Hill et al., 2018), UBE2D3 (Hill et al., 2018), human APPBP1-UBA3, human UBC12 (Huang and Schulman, 2005), human UBE1 (E1) (Scott et al., 2016), and mono-ubiquitylated β-Catenin peptide (Hill et al., 2018) have been described in detail elsewhere.
 
@@ -163,59 +535,59 @@ An expression construct for UBE2G1 was first obtained from Addgene (Plasmid #157
 
 Mono-ubiquitylated Cyclin E peptide substrate was generated by incubating 130 μM (His)6-ubiquitin, 0.25 μM human E1, 2 μM UBE2D3, 600 nM K720R CUL1-RBX1, 600 nM FBW7(263-C-terminus)-Skp1 complex, and 100 μM cyclin E peptide overnight at 20° C. The reaction was quenched the following morning by addition of DTT to a final concentration of 10 mM DTT, and product was isolated by three successive rounds of gel filtration on a Superdex 75 column that had been pre-equilibrated in storage buffer. The yield of purified mono-ubiquitylated Cyclin E peptide was approximately 5% of the starting peptide. The calculated extinction coefficient was 2,560 M−1cm−1.
 
-## Multi-turnover reactions for estimation of KM
+### Multi-turnover reactions for estimation of KM
 
-Reactions were setup by first adding E1 to a mixture already containing reaction buffer (30 mM Tris-HCl (pH 7.5), 100 mM NaCl, 5 mM MgCl2, 2 mM DTT and 2 mM ATP) and ubiquitin and incubating for 1 min (see Supplementary file 2 for concentrations). The mixture was then divided into ten individual Eppendorf tubes, followed by the addition of a 2-fold dilution series of ARIH1 (UBE2L3 was kept constant for all reactions in the titration series and was always in excess of ARIH1), UBE2D3, Ube2R2, or UBE2G1. After 2 min of incubation, SCFβTRCP or SCFFBW7 complexes were added, centrifuged briefly, and then initiated by addition of 32P-labeled β-catenin or Cyclin E peptide substrate (unmodified or mono-ubiquitylated). Reactions were quenched in 2x SDS-PAGE buffer (100 mM Tris-HCl (pH 6.8), 20% glycerol, 30 mM EDTA, 4% SDS, and 4% beta-mercaptoethanol), ensuring that reactions containing the highest concentration of E2 or ARIH1 had converted no more than 20% of substrate into product. Each reaction was performed in duplicate, and time points were resolved on 18% polyacrylamide SDS-PAGE gels. Autoradiography was performed using a Typhoon 9410 Imager and Image Quant software (GE Healthcare). Percent conversion was determined by dividing the total product signal (e.g. any species that migrated slower than substrate) by the entire lane signal, and then estimating the velocity by first normalizing for substrate and enzyme concentrations (multiplying by substrate concentration and dividing by the SCF concentration) and then dividing by the time of incubation. The data were fit to the Michaelis-Menten equation, velocity = kcat[S]([KM + [S]), where [S] represents the substrate concentration and KM is the Michaelis constant, using nonlinear curve fitting (Prism 8 software).
+Reactions were setup by first adding E1 to a mixture already containing reaction buffer (30 mM Tris-HCl (pH 7.5), 100 mM NaCl, 5 mM MgCl2, 2 mM DTT and 2 mM ATP) and ubiquitin and incubating for 1 min (see Supplementary file 2 for concentrations). The mixture was then divided into ten individual Eppendorf tubes, followed by the addition of a 2-fold dilution series of ARIH1 (UBE2L3 was kept constant for all reactions in the titration series and was always in excess of ARIH1), UBE2D3, Ube2R2, or UBE2G1. After 2 min of incubation, SCFβTRCP or SCFFBW7 complexes were added, centrifuged briefly, and then initiated by addition of 32P-labeled β-catenin or Cyclin E peptide substrate (unmodified or mono-ubiquitylated). Reactions were quenched in 2x SDS-PAGE buffer (100 mM Tris-HCl (pH 6.8), 20% glycerol, 30 mM EDTA, 4% SDS, and 4% beta-mercaptoethanol), ensuring that reactions containing the highest concentration of E2 or ARIH1 had converted no more than 20% of substrate into product. Each reaction was performed in duplicate, and time points were resolved on 18% polyacrylamide SDS-PAGE gels. Autoradiography was performed using a Typhoon 9410 Imager and Image Quant software (GE Healthcare). Percent conversion was determined by dividing the total product signal (e.g. any species that migrated slower than substrate) by the entire lane signal, and then estimating the velocity by first normalizing for substrate and enzyme concentrations (multiplying by substrate concentration and dividing by the SCF concentration) and then dividing by the time of incubation. The data were fit to the Michaelis-Menten equation, $velocity=\frac{k_{cat}[S]}{([K_{M}+[S])}$, where [S] represents the substrate concentration and KM is the Michaelis constant, using nonlinear curve fitting (Prism 8 software).
 
-## Estimation of cellular protein concentrations using SILAC SRM (Selected Reaction Monitoring) mass spectrometry
+### Estimation of cellular protein concentrations using SILAC SRM (Selected Reaction Monitoring) mass spectrometry
 
 HEK 293T/17, 293T-FiTx, HeLa or MRC5 cells were grown in isotopically heavy (R6 and K8) SILAC medium for a minimum period of 10 cell doublings. Cells were harvested from 10 cm dishes, resuspended in 1 ml PBS, filtered through 40 µm mesh and counted using a CEDEX HiRES automated cell counter (Roche), which determines average cell number and cell diameter from 20 technical replicates. Cells were lysed in 500 µl of lysis buffer (8 M Urea, 100 mM ammonium bicarbonate, 5 mM TCEP) that was spiked with a master mix of purified recombinant proteins (ARIH1, UBE2D3, UBE2R1, UBE2R2, CUL1 and SKP1; for concentrations and details see Table 2—source data 1). Lysates were then sonicated for 30 s (1 s on/off) at 30% maximum efficiency on a Branson Sonifier and subsequently incubated at 23°C for 20 min. Lysates were then clarified by centrifugation at 26,000 x g for 10 min and the protein concentration was determined via A280 on a nanodrop instrument. Subsequently, 100 µg of total protein were alkylated via iodoacetamide followed by digest for 4 hr at 1 µg/30 µg LysC and o/n at 1 µg/30 µg trypsin at 23C and 550 rpm in a temperature-controlled shaker. The digested samples were acidified with 50% formic acid (final concentration 5%), diluted 1:1 in 0.2% formic acid and then desalted using C18 cartridges (SPE 50 mg/mL C18 Hypersep column Thermo #60108–390). C18 eluates were lyophilized and resuspended in 2% Acetonitrile and 0.2% formic acid Buffer A and approximately 300 ng of total peptide were subjected to SRM MS analysis on a QTRAP 6500 (SCIEX) under conditions previously described in Reitsma et al. (2017). Data was analyzed using Skyline (MacLean et al., 2010), RStudio, and Excel. The obtained heavy to light ratios were used to calculate estimates of cellular concentrations (for details, see Table 2—source data 1).
 
-## Pre-steady state single-encounter quench flow reactions
+### Pre-steady state single-encounter quench flow reactions
 
 Reactions were assembled in two separate mixtures: an E1/E2 mix that contained excess unlabeled peptide (tube 1) and an SCF-32P-labeled substrate mix (tube 2; see Supplementary file 2 for concentrations). Following addition of E2 and/or ARIH1 to tube 1 already containing reaction buffer (30 mM Tris-HCl (pH 7.5), 100 mM NaCl, 5 mM MgCl2, 2 mM DTT and 2 mM ATP) and ubiquitin, each mix was incubated for at least 8 min while being loaded into separate sample loops on a KinTek RQF-3 quench flow instrument. Reactions were initiated by bringing the two mixes together in drive buffer (30 mM Tris-HCl (pH 7.5), 100 mM NaCl), and then quenched at various time points in reducing 2x SDS-PAGE loading buffer (100 mM Tris-HCl (pH 6.8), 20% glycerol, 30 mM EDTA, 4% SDS, and 4% beta-mercaptoethanol). Each reaction was performed at least in duplicate, and time points were resolved on 18% polyacrylamide SDS-PAGE gels. Autoradiography was performed using a Typhoon 9410 Imager and Image Quant software (GE Healthcare). Each product species was quantified as a fraction of the total signal of its respective lane. The rates of ubiquitin transfer were determined by fitting to analytical closed-form solutions (Pierce et al., 2009) using Mathematica.
 
-## Single-encounter reactions near estimated physiological concentrations
+### Single-encounter reactions near estimated physiological concentrations
 
 Reactions were assembled identically to those for the pre-steady state reactions (see Supplementary file 2 for the concentrations of the reaction constituents). After an 8 min incubation, the E1/E2 mix was pipetted into the SCF/substrate mix initiating the reaction, which was then briefly vortexed and quenched in reducing 2x loading SDS-PAGE buffer after 10 s. The reactions were performed in duplicate, and resolved and quantified in the same manner as the quench flow reactions above.
 
-## Generation of UBE2R1 knockout using CRISPR/Cas9 technology
+### Generation of UBE2R1 knockout using CRISPR/Cas9 technology
 
 WT 293T-FiTx cells were seeded onto 6-well tissue culture plates to 80% confluency, and then transfected with 0.5 μg of a pX330 vector containing a small guide sequence targeting exon 2 of UBE2R1 as well as single stranded DNA oligos (Supplementary file 1) using Lipofectamine 3000. The DNA oligo contained homology arms adjacent to the predicted Cas9 cut site as well as a 50 base pair insert that disrupts protein translation by the introduction of 4 stop consecutive stop codons into the UBE2R1 reading frame. After 48 hr, detached cells were removed by washing with DPBS, followed by treatment of the attached cells with trypsin solution. Detached cells were diluted in growth media, counted and diluted to obtain single cells in each well of a 96-well plate. After 1 week, each well was observed under a microscope to verify single colony formation. After 2 weeks, colonies were exposed to trypsin, and half of the cells were used to seed wells in a 48-well plate, whereas the other half were lysed using QuickExtract solution. Genomic DNA was used in PCR reactions with primers adjacent to the PAM site (Supplementary file 1) that were analyzed by standard agarose gel electrophoresis and product visualization by staining with ethidium bromide. Incorporation of the oligo into the genome resulted in an increase of PCR product sizes by 50 base pairs (Figure 5—figure supplement 6a). Additional PCR primers were generated that also contained restriction sites which allowed for cloning of the PCR product into pGex-4T1 vector and DNA sequencing to confirm correct incorporation of the oligo sequence into the genomic one. Disruption of UBE2R1 protein expression was also verified by immunofluorescence microscopy (Figure 5—figure supplement 5).
 
-## Cycloheximide chase to determine the stabilities of p27 and CYCLIN E proteins
+### Cycloheximide chase to determine the stabilities of p27 and CYCLIN E proteins
 
 WT or Ube2R1 knockout 293T-FiTx cells were seeded onto 6-well tissue culture plates with approximately 0.5 × 106 cells per well. Within 24 hr, the growth media was removed, the cells were washed once with DPBS, and fresh growth media containing 100 μg/mL cycloheximide was added. At each time-point, cells were washed once with DPBS, followed by preparation of lysate by the introduction of 50–100 μL RIPA buffer and extraction of the cells from the plate. The lysates were briefly sonicated followed by centrifugation. A small sample of lysate was withdrawn for estimation of the amount of protein in each sample by the BCA assay (Thermo Fisher Scientific), followed by the addition of an equal volume of 2x SDS-PAGE loading buffer (100 mM Tris-HCl (pH 6.8), 20% glycerol, 30 mM EDTA, 4% SDS, and 4% beta-mercaptoethanol). Equal amounts of lysate were loaded onto 4–20% Tris-Glycine SDS-PAGE gels and subject to electrophoresis. Denatured proteins were transferred to nitrocellulose membranes, followed by blocking in TBS-T containing 10% non-fat milk and overnight incubation with primary antibody at 4° C and light agitation (a 1:2000 dilution was used for anti-CYCLIN E antibody, and 1:1000 for anti-p27 antibody). Immunoblots were washed three times with TBS-T, followed by incubation with the appropriate secondary antibodies (1:3000 dilution). After three additional washes with TBS-T, the immunoblots were exposed to enhanced chemiluminescence reagent. Detection was performed by exposure of the immunoblot to x-ray film. Control proteins were detected with anti-α-TUBULIN (1:2,000) and anti-UBE2R1 (1:5,000).
 
-## Comparison of UBE2R1 and UBE2R2 mRNA expression levels in WT or UBE2R1 knockout 293T-FiTx cells by real-time PCR
+### Comparison of UBE2R1 and UBE2R2 mRNA expression levels in WT or UBE2R1 knockout 293T-FiTx cells by real-time PCR
 
 Cells were seeded onto 6-well tissue culture plates at 60–80% confluency. After 72 hr, cells were treated with trypsin solution to remove them from the tissue culture plates. Half of the cells were used for immunoblotting analysis, and the other half were processed for mRNA extraction using the RNeasy mini kit (Qiagen). The mRNA levels were quantified using a nanodrop spectrophotometer, and equal amounts were used for cDNA synthesis using the SuperScript III First-Strand Synthesis System for RT-PCR (Invitrogen). The cDNA samples were included in PCR reactions containing SsoAdvanced Universal SYBR Green Supermix (BioRad) and primers corresponding to amplicons for UBE2R1, UBE2R2, or GAPDH as a control (Supplementary file 1). PCR reactions were performed on a Bio-Rad CFX96 Real-Time PCR Detection System. The relative expression ratios were calculated according to the Pfaffl method.
 
-## Generation of a UBE2R1/2 double knockout using CRISPR/Cas9 technology
+### Generation of a UBE2R1/2 double knockout using CRISPR/Cas9 technology
 
 UBE2R1/2 knockout cell lines were obtained by transfecting HEK 293T cells (ATCC) with pSpCas9(BB)−2A-Puro (pX459) plasmids encoding sgRNA sequences targeting either UBE2R1 or UBE2R2. UBE2R1/2 double knockout clones were generated by sequential knockout of either UBE2R1 then Ube2R2 or vice versa. Two sgRNA sequences were synthesized targeting either locus (Supplementary file 1) and inserted into the BbsI restriction site of pX459. The transfected cell population was selected in puromycin for 2 days, and surviving cells were then cloned by serial dilution. Cell clones were expanded and then screened at the protein level by immunoblotting of total cell lysates with isoform specific antibodies (Figure 5—figure supplement 2). Clones that showed a loss of protein expression were verified at the DNA level by sequencing. Flanking sequences of the Cas9 target site were amplified by PCR, followed by Sanger sequencing. If the resulting sequence traces showed overlapping sequences (suggestive of heterozygosity), the PCR products were cloned into TOPO TA plasmids, and DNA isolated from individual colonies were sequenced until the DNA sequences for both alleles were obtained.
 
 Knockout rate at the protein level was 7 out of 11 clones screened for UBE2R1 clones, 8 out of 11 for UBE2R2 clones, 11 out of 17 for UBE2R1 knockout followed by UBE2R2 knockout, and 7 out of 7 for UBE2R2 knockout followed by UBE2R1. DNA sequencing of the Cas9 target site was carried out on four protein-negative clones for each category and all proved to harbor biallelic indels causing protein termination.
 
-## Determination of the steady-state stabilities of β-CATENIN, CYCLIN E, and p27
+### Determination of the steady-state stabilities of β-CATENIN, CYCLIN E, and p27
 
 Control or UBE2R1/2 double knock-out 293T cells were seeded onto 10 cm tissue culture plates at 10% confluency and were incubated under standard tissue culture conditions for 48 hr. For the analysis of p27, CYCLIN E, and β-CATENIN proteins, cells were washed with DPBS, followed by the introduction of 1x SDS-PAGE loading buffer directly to the plate. Following brief sonication, samples were boiled for 5 min, and centrifuged at maximum speed using a table top microcentrifuge. Equivalent volumes of lysate were loaded onto 4–20% Tris-Glycine SDS-PAGE gels and subjected to electrophoresis. Immunoblotting was performed as described above. A 1:2000 dilution was used for anti-β-CATENIN antibody (the same dilutions were used for p27 and CYCLIN E as described above). Additional cellular proteins include: anti-α-TUBULIN (1:5,000), anti-UBE2R1 (1:5,000), anti-ARIH1 (1:500), anti-Ube2R2 (1:2000), and anti-UBE2D3 (1:5,000).
 
 For quantitation of the steady-state protein levels, immunoblots were processed as described above and incubated in primary antibody overnight. Blots were then washed three times with TBS-T and incubated with StarBright B700 (BioRad) secondary antibodies (1:3000) for approximately 1 hr. Blots were incubated at room-temperature in the dark, followed by 4 to 6 washes with TBS-T. Immunoblots were imaged on a BioRad ChemiDoc MP gel imaging system. Quantitation of the protein levels was accomplished in Image Lab (BioRad) by first correcting for protein loading using the α-TUBULIN levels present in each lane. The corrected values for protein levels were first averaged across all of the lanes and then used to normalize the total signal for each protein in each lane.
 
-## Cycloheximide chase to determine the stability of p27 in control and UBE2R1/2 double knockout cells
+### Cycloheximide chase to determine the stability of p27 in control and UBE2R1/2 double knockout cells
 
 Cells were seeded onto 6-well plates at approximately 60% confluency late in the day and incubated overnight. Cells were then treated with 100 μg/mL cycloheximide and time-points were collected at 0, 1, 3 and 6 hr. Cells were washed once with DPBS, and collected as described above. Immunoblots with quantitation were performed as above.
 
-## TNFα-induced degradation of IκBα protein
+### TNFα-induced degradation of IκBα protein
 
 Control or UBE2R1/2 double knockout 293T cells were seeded onto 6-well tissue culture plates with approximately 0.5 × 106 cells per well in starvation media (DMEM supplemented with 0.1% fetal bovine serum, 400 μg/mL Bovine Serum Albumin, 4 mM L-Glutamine, 100 units/mL Penicillin and 100 μg/mL Streptomycin) overnight. The next day, 100 μg/mL cycloheximide was added to the media. After 5 min, TNFα was added to each well (50 ng/mL final). At the indicated time-points, the cells were washed once with 2 mL of DPBS, followed by the addition of 1x SDS-PAGE loading buffer directly to the plate and immediate collection of the lysate into Eppendorf tubes. Lysates were briefly sonicated, followed by boiling for 5 min, and centrifugation in a table top microcentrifuge at the maximum setting for 2 min. Equal amounts of sample were loaded to 4–20% Tris-Glycine SDS-PAGE gels, followed by quantitative immunoblotting as described above (the anti-IκBα antibody was diluted 1:1,000).
 
-## Cell cycle analysis by flow cytometry
+### Cell cycle analysis by flow cytometry
 
 WT or UBE2R1/2 double knockout cells were seeded onto 6-well tissue culture plates at approximately 60% confluency and incubated for 48 hr under typical tissue culture conditions. Cells were then trypsinized and grown on a 10 cm dish for an additional day. A minimum of 300,000 cells were collected by centrifugation at 1500 x g for 5 min. Cell pellets were resuspended in 1 mL of cold PBS and then recollected by centrifugation as described above. Cell pellets were resuspended in 100 µL cold PBS and fixed by adding 900 µL cold ethanol dropwise while gently vortexing. Fixed cells were stored at 4° C for a minimum of 24 hr and then centrifuged as above to remove ethanol. Cells were re-suspended in 300 µL of propidium iodide staining solution containing a 1:1:1 ratio by volume of propidium iodide (150 µg/mL), Triton X-100 (0.1%), and Ribonuclease A (1 mg/mL), transferred to round bottom tubes (Falcon) and incubated in the dark at room temperature for 20 min before being placed on ice to be analyzed. Flow cytometry was performed on a BD FACSCalibur flow cytometer with BD CellQuest Pro software for the acquisition, a 488 nm laser for the excitation, and measuring the emission in the FL2 detector with a 585/42 nm emission filter. The samples were run at a low flow rate and 20,000 events were collected. The cell cycle analysis was determined by histogram plots of the fluorescent signal in the FL2-A verses counts using FlowJo 7.6.5 software (Tree Star).
 
-## Generation of UBE2R1 and UBE2R2 knockout populations and genome-wide CRISPR screens
+### Generation of UBE2R1 and UBE2R2 knockout populations and genome-wide CRISPR screens
 
 sgRNAs for Cas9-mediated generation of UBE2R1 and UBE2R2 single and double knockout populations were drawn from the previously described Extended Knockout (EKO) sgRNA library (Bertomeu et al., 2018), and are also represented in an earlier sgRNA library (Wang et al., 2014a). Additional sgRNAs that targeted the AAVS1 locus and GFP were used as inert targeting sequences to control for the effects of multiple lentiviral infections. The sgRNA targeting sequences used are shown in Supplementary file 1.
 
@@ -223,20 +595,20 @@ To allow iterative infections with up to three series of sgRNA lentiviral constr
 
 NALM-6 knockout populations were generated by lentiviral infection with UBE2R1#1, UBE2R1#2 and AAVS1 sgRNA constructs in pLX-sgRNA 2X BsiW1 Neo followed by selection with G418 (800 µg/mL) for 7 days or until uninfected controls were inviable. Subsequently, the UBE2R1#1, UBE2R1#2 and AAVS1 infected populations were re-infected with UBE2R2#1, UBE2R2#2 or GFP sgRNA lentiviruses in pLX-sgRNA 2X BsiW1 Hygro, followed by selection with Hygromycin B (200 µg/mL) for 7 days (or until uninfected controls were inviable) to generate populations for double knockout generation. Finally, each dual guide cell population was transduced with a lentiviral vector (Wong et al., 2016) that expressed Cas9 from the constitutive EF1α promoter and selected on Zeocin (200 µg/mL) for 5 days or until uninfected controls were inviable. Populations were verified for UBE2R1 and/or UBE2R2 knockout after 10 and 18 days by immunoblot with antibodies against UBE2R1 (Santa Cruz) and UBE2R2 (Santa Cruz) at recommended dilutions and detection by SuperSignal West Femto chemiluminescent substrate (Thermoscientific; Figure 6—figure supplement 1). Aliquots of each AAVS1/GFP control, UBE2R1/GFP, AAVS1/UBE2R2 and UBE2R1/UBE2R2 knockout population were frozen until the start of the genome-wide EKO screens. To initiate screens, thawed aliquots of each population genotype (UBE2R1#1 + GFP + Cas9; UBE2R2#2 + AAVS1 + Cas9; UBE2R1#2 + GFP + Cas9; UBE2R2#2 + AAVS1 + Cas9; UBE2R1#1 + UBE2R2#1 + Cas9; UBE2R1#2 + UBE2R2#2 + Cas9; AAVS1 + GFP + CAS9 negative control) were expanded and then infected with the EKO sgRNA library at an MOI of 0.36 (Bertomeu et al., 2018) and a clonal representation of 1,700 cells per sgRNA, selected for 6 days with blasticidin (10 µg/mL), and allowed to grow in the absence of antibiotic selection for an additional 14 days. Cell cultures were harvested at day 0 (immediately post-blasticidin treatment) and day 14 for each screen. Genomic DNA was extracted, sgRNAs amplified by two rounds of PCR and high-throughput sequencing performed on an Illumina HiSeq 2000 or a NextSeq 500 instrument in multiplexed format, as previously described (Bertomeu et al., 2018) except that an internal primer within the blasticidin resistance gene was used in the first PCR step to avoid amplification of sgRNA cassettes initially used to target UBE2R1/2. Total read counts for each screen ranged between 14.8 and 26.9 million reads. High through-put sequence data can be found at the GEO repository: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136175.
 
-## Genome-wide CRISPR screen analysis
+### Genome-wide CRISPR screen analysis
 
 Sequences were aligned using Bowtie 2.2.5 (Langmead and Salzberg, 2012) with default parameters other than the ‘--norc’ option. sgRNA read counts from all day 0 samples were summed together to generate consensus day 0 sgRNA levels, which were used as the control for scoring each screen. Each sample was analyzed using RANKS (Bertomeu et al., 2018) with default parameters and using the non-targeting sgRNA control set that is contained in the EKO library. To control for the effects of genotype-independent fitness defects, we averaged the RANKS scores from the two control screens and subtracted these scores from those of each knockout screen. The resulting differential RANKS scores represent the genotype-specific fitness effects of the culminative gene indels in the pooled library. P-values and FDR values were estimated using a custom-generated control distribution modeling the effects of subtracting scores. RANKS scores for different replicates of a given genetic background were then averaged together. We note that UBE2G1 scored as the 108th highest ranked synthetic lethal gene deletion (RANKS score = −1.9) in one of the two UBE2R2 single knockout backgrounds. Since UBE2R2 and UBE2R1 have a high degree of sequence similarity at the DNA level, we hypothesized that the sgRNA in question might have had an off-target effect on UBE2R1 with a lower but nevertheless detectable efficiency. We compared the UBE2R2 sgRNA sequence (CGACCTCTACAACTGGGAGG) to all potential sgRNAs with an associated PAM site that target RefSeq genes and identified one site in UBE2R1 with only two mismatched bases near the beginning of the sequence (CGATCTATACAACTGGGAGG), which is where mismatches are known to have a relatively small effect on Cas9 recognition and nuclease efficiency (Wang et al., 2014a). It is therefore likely that UBE2R1 was fully or partially deleted in a subset of cells in the UBE2R2 population generated with this sgRNA, explaining why a weak genetic interaction with UBE2G1 was observed. The other UBE2R2-targeting sgRNA did not have any predicted off-target cleavage sites with up to two mismatches and correspondingly UBE2G1 did not score strongly in the screen with this sgRNA.
 
-## Validation of UBE2R1/UBE2R2/UBE2G1 genetic interaction
+### Validation of UBE2R1/UBE2R2/UBE2G1 genetic interaction
 
 The genetic interaction between UBE2R1, UBE2R2 and UBE2G1 was validated in NALM-6 cells by generation of clonal UBE2R1/2 double knockout cell lines. Populations of a clone that expressed Cas9 under doxycycline-inducible control (NALM-6 #20; Bertomeu et al., 2018) were generated by lentiviral infection with sgRNA constructs for each of GFP, UBE2R2#1 and UBE2R2#2 in pLX-sgRNA 2X BsiW1 Hygro, followed by selection with 200 µg/mL Hygromycin B. Cell populations were subsequently infected with lentiviral constructs for AAVS1, UBE2R1#1 and UBE2R1#2 in pLX-sgRNA 2X BsiW1 Neo, followed by selection with 800 µg/mL G418. Control, single knockout and double knockout populations were then induced with 2 µg/mL doxycycline for 5 days, after which clonal knockout cell lines were generated by serial dilution single cell cloning. Clones were confirmed for loss of UBE2R1 and/or UBE2R2 protein expression by immunoblot (Figure 6—figure supplement 2a,b). Each cell line was then transduced with lentiviral constructs for two different sgRNAs that target the UBE2G1 locus (Supplementary file 1).
 
 After selection with blasticidin, UBE2R1, UBE2R2 or UBER1/2 double knockout clones that expressed the UBE2G1 sgRNAs were treated with 2 µg/mL doxycycline to induce generation of indels in the UBE2G1 locus. Following 6 days of doxycycline induction, single cells were seeded in 96-well plates by serial dilution and monitored for colony growth. After 21 days, individual colonies for each genotype were assessed for cell number and viability by phase contrast microscopy (Figure 6—figure supplement 2c).
 
-## UBE2G1 knockdown in the UBE2R1/2 double knockout background
+### UBE2G1 knockdown in the UBE2R1/2 double knockout background
 
 Control or UBE2R1/2 double knockout cells were seeded at ~60–80% confluency. The next day, cells were transfected with 25 pmol of siRNA (Dharmacon) for either UBE2G1 or a nontargeting control (Supplementary file 1). After a 48 hr incubation period, the cells were treated with trypsin and seeded onto 10 cm dishes. Cells were incubated for an additional 24 hr and then harvested for protein analysis 3 days post transfection. Lysates were prepared and immunoblotting was performed as above (detection by both x-ray film and fluorescent secondary antibodies). The anti-HIF1α antibody was diluted 1:500, and the anti-UBE2G1 antibody was diluted 1:250.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 WT 293T-FiTx or 293T-FiTx UBE2R1Δ were seeded onto 35 mm glass bottom plates and incubated for 24–36 hr prior to fixation in 4% paraformaldehyde for 3 min. Cells were then washed three times in DPBS for 3 min, quenched in 50 mM NH4Cl for 5 min, washed again, and permeabilized in 0.1% Triton X-100 for 30 min. Primary antibody (anti-UBE2R1; Abcam) was incubated overnight at 4° C, which was then repeatedly washed off in PBS-T, first every 5 min for an hour, and again every 10 min for an additional hour. Secondary antibody (Alexa Fluor 488) was incubated for 1 hr at room temperature, repeatedly washed in PBS-T first every 5 min for two hours, and again every 10 min for an additional two hours. The cells were then mounted using Permount with DAPI, and imaged using a Nikon A1D confocal microscope. The images were taken as maximum projections of z-stacks (0.5 μm).

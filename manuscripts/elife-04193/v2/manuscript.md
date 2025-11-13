@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.04193.001 Rapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na + (Na V ) ‘resurgent’ current, which allows renewed Na + influx during membrane repolarization. Resurgent current results from unbinding of a blocking particle that competes with normal channel inactivation. The underlying molecular components contributing to resurgent current have not been fully identified. In this study, we show that the Na V channel auxiliary subunit FGF14 ‘b’ isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons. FGF14 knockdown biased Na V channels towards the inactivated state by decreasing channel availability, diminishing the ‘late’ Na V current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking. Critical for these effects was both the alternatively spliced FGF14b N-terminus and direct interaction between FGF14b and the Na V C-terminus. Together, these data suggest that the FGF14b N-terminus is a potent regulator of resurgent Na V current in cerebellar Purkinje neurons. DOI: http://dx.doi.org/10.7554/eLife.04193.001
+Rapid firing of cerebellar Purkinje neurons is facilitated in part by a voltage-gated Na+ (NaV) ‘resurgent’ current, which allows renewed Na+ influx during membrane repolarization. Resurgent current results from unbinding of a blocking particle that competes with normal channel inactivation. The underlying molecular components contributing to resurgent current have not been fully identified. In this study, we show that the NaV channel auxiliary subunit FGF14 ‘b’ isoform, a locus for inherited spinocerebellar ataxias, controls resurgent current and repetitive firing in Purkinje neurons. FGF14 knockdown biased NaV channels towards the inactivated state by decreasing channel availability, diminishing the ‘late’ NaV current, and accelerating channel inactivation rate, thereby reducing resurgent current and repetitive spiking. Critical for these effects was both the alternatively spliced FGF14b N-terminus and direct interaction between FGF14b and the NaV C-terminus. Together, these data suggest that the FGF14b N-terminus is a potent regulator of resurgent NaV current in cerebellar Purkinje neurons.
 
 ## Introduction
 
@@ -31,37 +31,187 @@ Using shRNA knockdown of endogenous FGF14 in cultured cerebellar Purkinje neuron
 
 ## Results
 
-To test whether FGF14 was a contributor to regulation of Na
+To test whether FGF14 was a contributor to regulation of NaV current in cerebellar Purkinje neurons, we first confirmed its expression in cerebellum and demonstrated that FGF14 co-immunoprecipitates with NaV1.6 channels in mouse cerebellar lysates (Figure 1A). Although FGF14 was previously shown to co-immunoprecipitate with NaV1.6 in a heterologous expression system (Laezza et al., 2009), co-immunoprecipitation between FGF14 and NaV1.6 channels has not been reported from brain.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig1-v2.jpg)
 
-**Figure 1.:** V1.6 macromolecular complex in mouse cerebellum, but shRNA knockdown does not affect NaV current density in cultured cerebellar Purkinje neurons.(A) Co-immunoprecipitation (IP) of NaV1.6 by FGF14 from mouse cerebellum and immunoblot (IB) with the indicated antibodies. Mw markers are indicated on right. Arrowheads indicate NaV1.6 (top panel) and FGF14 (bottom panel). Intense signal in bottom panel below the FGF14 signal is immunoglobulin light chain. (B) Current–voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol.DOI: http://dx.doi.org/10.7554/eLife.04193.003
+**Figure 1.:** (A) Co-immunoprecipitation (IP) of NaV1.6 by FGF14 from mouse cerebellum and immunoblot (IB) with the indicated antibodies. Mw markers are indicated on right. Arrowheads indicate NaV1.6 (top panel) and FGF14 (bottom panel). Intense signal in bottom panel below the FGF14 signal is immunoglobulin light chain. (B) Current–voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol.
 
 To evaluate the consequences of FGF14 haploinsufficiency in SCA27, we used a previously validated shRNA (Yan et al., 2013) to knockdown endogenous FGF14 in cultured cerebellar Purkinje neurons. Knockdown of FGF14 did not affect NaV current density compared to the NaV current density recorded in neurons transfected with a control shRNA (Figure 1B). Because knockout of Fgf14 reduced spiking activity (Goldfarb et al., 2007) but NaV current density was unaffected in Fgf14 knockout or knockdown, we hypothesized that the absence of FGF14 must affect NaV kinetic properties in ways that prevent repetitive firing. We therefore examined NaV kinetic properties in more detail.
 
-Voltage dependence of activation was unaffected by FGF14 knockdown (
+Voltage dependence of activation was unaffected by FGF14 knockdown (Figure 2A), but the V1/2 of steady-state inactivation was shifted about −10 mV, thereby decreasing channel availability (Figure 2B and Table 1). When we co-expressed a FGF14b cDNA with synonymous substitutions rendering it resistant to the FGF14 shRNA (FGF14bWT), the V1/2 of steady-state inactivation was restored to the control voltage; activation was unaffected (Figure 2A–B and Table 1). The ‘rescue’ of steady-state inactivation by expression of the shRNA-insensitive FGF14 provided additional demonstration of the specificity of our shRNA targeting strategy (and see similar rescue for additional parameters below). In addition to the decreased channel availability, we observed that FGF14 knockdown accelerated inactivation kinetics (Figure 2C–D). FGF14 knockdown also reduced the late NaV current (Figure 2E–F). Thus, by several different kinetic measures, FGF14 knockdown in cerebellar Purkinje neurons biased the endogenous NaV channels towards entering the inactivated state. We anticipated, therefore, that FGF14 knockdown should reduce NaV resurgent current amplitude, a key feature that allows cerebellar Purkinje neurons to fire repetitively. Indeed, the amplitude of the resurgent NaV current (Figure 2G–J) was markedly diminished using a well-established protocol to elicit NaV resurgent current (Raman and Bean, 1997). As with the other kinetic properties of NaV currents (above), co-expression of FGF14bWT in the presence of the shRNA provided a complete rescue (Figure 2G–J). While FGF14 knockdown reduced the amplitude of resurgent NaV current, it did not significantly affect the time to peak (Figure 2K).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig2-v2.jpg)
 
-**Figure 2.:** V channel biophysical properties.(A and B) Voltage-dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol. (C) Exemplar normalized NaV current traces elicited with a step depolarization to 0 mV from a holding potential of −90 mV and an exemplar single exponential fit (for Scrambled) for the time constant (τ) of inactivation (dotted line). (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. **p < 0.01. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV. (F) Amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. **p < 0.01. (G) Voltage-clamp protocol and exemplar TTX-sensitive resurgent NaV currents recorded from cerebellar Purkinje neurons transfected with Scrambled control shRNA. The transient current has been clipped. (H) Current–voltage relationship of NaV resurgent currents. The number of neurons tested, N, is in parentheses. **p < 0.01. (I) Overlay of NaV resurgent currents for the indicated conditions recorded with the indicated voltage protocol. The transient current has been clipped. (J) Ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. **p < 0.01. (K) Time to peak of NaV resurgent current over a broad range of voltages. The number of neurons tested, N, is in parentheses. **p < 0.01.DOI: http://dx.doi.org/10.7554/eLife.04193.004
+**Figure 2.:** (A and B) Voltage-dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with Scrambled control shRNA (Scrambled), FGF14 shRNA (shRNA), or FGF14 shRNA plus the shRNA-resistant FGF14bWT (shRNA/FGF14WT). The number of neurons tested, N, is in parentheses. Inset shows schematic of voltage protocol. (C) Exemplar normalized NaV current traces elicited with a step depolarization to 0 mV from a holding potential of −90 mV and an exemplar single exponential fit (for Scrambled) for the time constant (τ) of inactivation (dotted line). (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. **p < 0.01. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV. (F) Amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. **p < 0.01. (G) Voltage-clamp protocol and exemplar TTX-sensitive resurgent NaV currents recorded from cerebellar Purkinje neurons transfected with Scrambled control shRNA. The transient current has been clipped. (H) Current–voltage relationship of NaV resurgent currents. The number of neurons tested, N, is in parentheses. **p < 0.01. (I) Overlay of NaV resurgent currents for the indicated conditions recorded with the indicated voltage protocol. The transient current has been clipped. (J) Ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. **p < 0.01. (K) Time to peak of NaV resurgent current over a broad range of voltages. The number of neurons tested, N, is in parentheses. **p < 0.01.
 
-To determine how FGF14 regulates Na
+**Table 1.**
+ NaV current activation and inactivation parameters in cerebellar Purkinje neurons
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Activation</th>
+      <th colspan="3">Inactivation</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>V1/2 (mV)</th>
+      <th>K</th>
+      <th>n</th>
+      <th>V1/2 (mV)</th>
+      <th>K</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scrambled</td>
+      <td>−34.4 ± 1.5</td>
+      <td>4.0 ± 0.3</td>
+      <td>21</td>
+      <td>−49.7 ± 1.2</td>
+      <td>4.2 ± 0.1</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>shRNA</td>
+      <td>−35.0 ± 1.9</td>
+      <td>4.3 ± 0.5</td>
+      <td>22</td>
+      <td>−59.0 ± 1.2**</td>
+      <td>4.7 ± 0.2</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>shRNA/FGF14bWT</td>
+      <td>−35.5 ± 1.5</td>
+      <td>3.9 ± 0.3</td>
+      <td>14</td>
+      <td>−52.0 ± 0.9</td>
+      <td>5.2 ± 0.3</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>shRNA/FGF14RA</td>
+      <td>−33.2 ± 1.5</td>
+      <td>3.5 ± 0.2</td>
+      <td>12</td>
+      <td>−50.9 ± 1.4</td>
+      <td>4.4 ± 0.3</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>FGF14bWT</td>
+      <td>−33.1 ± 1.4</td>
+      <td>4.5 ± 0.5</td>
+      <td>14</td>
+      <td>−50.6 ± 1.3</td>
+      <td>4.9 ± 0.3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>FGF14∆NT</td>
+      <td>−33.9 ± 2.0</td>
+      <td>3.9 ± 0.5</td>
+      <td>14</td>
+      <td>−59.1 ± 0.8**</td>
+      <td>4.7 ± 0.3</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean ± s.e.m. (n), **p < 0.01 compared to Scrambled control._
+
+To determine how FGF14 regulates NaV kinetics and NaV resurgent current, we turned our focus to the FGF14 N-terminus. The alternatively spliced N-termini of various FHFs have been shown to exert specific effects on NaV currents (Lou et al., 2005; Rush et al., 2006), including the regulation of inactivation kinetics (Laezza et al., 2009; Dover et al., 2010), but the role of the FGF14 N-termini have not been investigated in cerebellar Purkinje neurons. FGF14b is the predominant FGF14 splice variant expressed in brain (Wang et al., 2000, 2011) and the FGF14 splice variant found in the cytoplasm; FGF14a is localized to the nucleus (Wang et al., 2000). To test the specific roles of the FGF14b N-terminus, we expressed a FGF14 in which the N-terminus was deleted (FGF14ΔNT). Because the interaction site for the NaV CTD on FHFs lies within the conserved core domain (Wang et al., 2012), deletion of the N-terminus does not affect interaction with the NaV CTD. Thus, the FGF14ΔNT exerts a dominant negative effect by competing with endogenous FGF14 for interaction with the NaV CTD (Figure 3A). Current density (Figure 3B) and the V1/2 of activation (Figure 3C and Table 1) were unaffected. However, expression of FGF14ΔNT shifted the V1/2 of steady-state inactivation about −10 mV (Figure 3C), accelerated kinetics of inactivation (Figure 3D), reduced the late NaV current (Figure 3E), and diminished resurgent current (Figure 3F) to a degree similar to or even greater than shRNA knockdown. FGF14ΔNT diminished resurgent NaV current even more effectively than shRNA knockdown of FGF14. As a control, we overexpressed the FGF14bWT that had rescued the parameters affected by shRNA knockdown (Figure 1). Overexpression of FGF14bWT here was without effect (Figure 3 and Table 1). Not only did this serve as a control for FGF14ΔNT, but these data suggest that endogenous FGF14b is saturating. These data also suggest that FGF14b's main regulatory component for Purkinje neuron NaV currents lies within the FGF14b N-terminus.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig3-v2.jpg)
 
-**Figure 3.:** NT affects multiple NaV channel biophysical properties indicating essential roles for the FGF14 N-terminus.(A) Schematic of endogenous wild type (WT) FGF14 binding to the C-terminus of the NaV1.6 α subunit (top) and magnified schematic of the expressed FGF14ΔNT preventing binding of the WT FGF14 (in box). (B) Current–voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bWT or FGF14ΔNT. The number of neurons tested, N, is in parentheses. The current–voltage relationship for Scrambled control shRNA (from Figure 1) is shown for comparison. (C) Voltage dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with FGF14bWT or FGF14ΔNT. The number of neurons tested, N, is in parentheses. The curves for Scrambled control shRNA (from Figure 1) are shown for comparison. (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV. The number of neurons tested, N, is in parentheses. **p < 0.01. (F) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14ΔNT or FGF14bWT and ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.DOI: http://dx.doi.org/10.7554/eLife.04193.006
+**Figure 3.:** (A) Schematic of endogenous wild type (WT) FGF14 binding to the C-terminus of the NaV1.6 α subunit (top) and magnified schematic of the expressed FGF14ΔNT preventing binding of the WT FGF14 (in box). (B) Current–voltage relationships (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bWT or FGF14ΔNT. The number of neurons tested, N, is in parentheses. The current–voltage relationship for Scrambled control shRNA (from Figure 1) is shown for comparison. (C) Voltage dependence of NaV channel activation and steady-state inactivation in cerebellar Purkinje neurons transfected with FGF14bWT or FGF14ΔNT. The number of neurons tested, N, is in parentheses. The curves for Scrambled control shRNA (from Figure 1) are shown for comparison. (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV. The number of neurons tested, N, is in parentheses. **p < 0.01. (F) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14ΔNT or FGF14bWT and ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.
 
-The dominant negative effect exerted by FGF14Δ
+The dominant negative effect exerted by FGF14ΔNT as it replaced the endogenous FGF14 on the NaV CTD implied that although FGF14 regulates NaV current through its N-terminus, it may require that FGF14 be in direct interaction with the channel. To test this hypothesis specifically, we designed a FGF14b that was unable to bind to the channel CTD and examined whether expression of this mutant could restore the diminished resurgent current resulting from shRNA knockdown of FGF14. Structural determination of a ternary complex containing FGF13, the NaV1.5 CTD, and calmodulin had identified key amino acids on the conserved FHF interaction surface that participated in the interaction with the conserved NaV CTD surface (Wang et al., 2012). We focused on a highly conserved Arg in the FHF core domain (Arg57 in FGF13U, equivalent to Arg117 in FGF14b), which inserts into a deep pocket on the NaV1.5 CTD binding surface (Figure 4A). We therefore generated the homologous R117A mutant (FGF14bR/A) in the FGF14b shRNA-resistant cDNA background and tested whether FGF14bR/A could bind to the intact NaV1.6. Although immunoprecipitation of FGF14bWT from lysates of HEK293 cells transfected with FGF14bWT and NaV1.6 showed co-immunoprecipitation of NaV1.6, the mutant FGF14bR/A was unable to co-immunoprecipitate NaV1.6 (Figure 4B). Thus, mutation of R117A in FGF14b prevents interaction with NaV1.6. We therefore transfected the shRNA-resistant FGF14bR/A (or the shRNA-resistant FGF14bWT) along with the FGF14 shRNA into cultured cerebellar Purkinje neurons to determine the effect of FGF14 interaction with NaV1.6 on NaV currents. Expression of FGF14bR/A after shRNA knockdown of endogenous FGF14 had no effect on NaV current density (Figure 4C). In contrast to the rescue afforded by FGF14bWT, FGF14bR/A did not rescue the key parameters that lead to increased inactivation observed after FGF14 shRNA. NaV late current and the time constant of inactivation were not different from shRNA (Figure 4D–F). Consistent with these findings, we observed the expected reduction in resurgent NaV current (Figure 4G–H). Thus, the FGF14 N-terminus must exert its key effects through FGF14's direct interaction with the NaV C-terminus.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig4-v2.jpg)
 
-**Figure 4.:** R/A mutant that prevents interaction with the NaV C-terminus cannot rescue NaV kinetic effects of FGF14 knockdown.(A) Surface representation of the crystal structure of a ternary complex containing the NaV1.5 C-terminus domain (CTD, green), FGF13 (yellow), and calmodulin (purple); the interaction surfaces are colored gray (PDB ID: 4DCK). The critical R57 in FGF13 (equivalent to R117 in FGF14) is indicated in red, as is its binding pocket on the NaV1.5 CTD. (B) Co-immunoprecipitation (IP) of NaV1.6 and FGF14bWT or FGF14bR/A expressed in HEK293 cells, showing that the FGF14bR/A is unable to interact with the intact NaV1.6. Immunoblots (IB) were performed with the indicated antibodies. (C) Current–voltage relationship (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bR/A. The number of neurons tested, N, is in parentheses. The current–voltage relationship for FGF14 knockdown (shRNA) and knockdown rescued with shRNA-insensitive FGF14bWT (shRNA/FGF14bWT) from Figure 1 are shown for comparison. (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV and (F) amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. Averages for shRNA and for shRNA/FGF14bWT (see Figure 1) are shown for comparison. (G) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14bR/A or FGF14bWT and (H) ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.DOI: http://dx.doi.org/10.7554/eLife.04193.007
+**Figure 4.:** (A) Surface representation of the crystal structure of a ternary complex containing the NaV1.5 C-terminus domain (CTD, green), FGF13 (yellow), and calmodulin (purple); the interaction surfaces are colored gray (PDB ID: 4DCK). The critical R57 in FGF13 (equivalent to R117 in FGF14) is indicated in red, as is its binding pocket on the NaV1.5 CTD. (B) Co-immunoprecipitation (IP) of NaV1.6 and FGF14bWT or FGF14bR/A expressed in HEK293 cells, showing that the FGF14bR/A is unable to interact with the intact NaV1.6. Immunoblots (IB) were performed with the indicated antibodies. (C) Current–voltage relationship (normalized to cell capacitance) of transient NaV currents from cerebellar Purkinje neurons transfected with FGF14bR/A. The number of neurons tested, N, is in parentheses. The current–voltage relationship for FGF14 knockdown (shRNA) and knockdown rescued with shRNA-insensitive FGF14bWT (shRNA/FGF14bWT) from Figure 1 are shown for comparison. (D) τ of inactivation at the indicated test voltages. The number of neurons tested, N, is in parentheses. (E) Exemplar normalized TTX-sensitive late NaV currents at −20 mV (measured at 150 ms, arrowhead) from a holding potential of −90 mV and (F) amplitude of late NaV current as a % of peak (transient) NaV current. The number of neurons tested, N, is in parentheses. Averages for shRNA and for shRNA/FGF14bWT (see Figure 1) are shown for comparison. (G) Overlay of NaV resurgent currents recorded from cerebellar Purkinje neurons transfected with FGF14bR/A or FGF14bWT and (H) ratio of peak NaV resurgent current (at +20 mV) to transient NaV current (at −10 mV). The number of neurons tested, N, is in parentheses. The average for FGF14 shRNA knockdown (Figure 1) is shown for comparison. **p < 0.01.
 
-Because the absence of the FGF14 or its N-terminus accelerated Na
+Because the absence of the FGF14 or its N-terminus accelerated NaV channel inactivation, diminished late current, and decreased resurgent current, we anticipated that the resultant bias towards NaV inactivation would adversely affect excitability in cerebellar Purkinje neurons. We tested this hypothesis by determining the effects of the FGF14 and its N-terminus on action potential threshold and on the number of action potentials evoked with depolarizing current injections in current-clamp mode. Under our culture conditions (≤14 days in vitro), we found that 8–10% of cerebellar Purkinje neurons exhibit spontaneous action potentials (firing rate 5–20 Hz) with regular and irregular patterns. When neurons were cultured for extended periods (>20 days in vitro), we observed that ∼50% of Purkinje neurons spontaneously fired—more similar to acutely isolated Purkinje neurons (Raman and Bean, 1999) and cultured Purkinje neurons (Gruol and Franklin, 1987). These data suggest that spontaneous activity depends upon the maturity of the neurons in culture. Because of the difficulty in achieving voltage clamp on Purkinje neurons ≥14 days in vitro, our voltage-clamp experiments were performed on the younger cells (Figures 2–4). Thus, we continued with immature neurons for these experiments, and focused on measuring evoked action potentials rather than spontaneous action potentials. Single action potentials were evoked by a 10-ms current injection with 5-pA increments to determine the current threshold to initiate an action potential. Figure 5A–B and Table 2 show that FGF14 knockdown and expression of the dominant negative FGF14bΔNT markedly increased the current threshold to produce an action potential; other action potential parameters were not affected. Rescue of FGF14 knockdown by co-expression of FGF14bWT restored the current threshold to control levels. Rescue with the non-interacting FGF14bR/A did not. We also analyzed the number of actions evoked during 600 ms current injection over a wide range of current amplitudes. The number of action potentials evoked was significantly larger in control (scrambled shRNA) neurons than in neurons transfected with FGF14 shRNA. Rescue with FGF14bWT, but not FGF14bR/A, restored the number of evoked action potentials to control levels. Expression of the dominant negative FGF14bΔNT reduced the number of evoked action potentials to the level observed after FGF14 knockdown (Figure 5C–D). Thus, as observed for the individual NaV channel kinetic parameters, FGF14b, and its N-terminus specifically, is a critical regulator of neuronal firing and intrinsic membrane properties.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04193/elife-04193-fig5-v2.jpg)
 
-**Figure 5.:** (A) Overlay of single action potentials evoked with a 10 ms current injection (current amplitude shown in parentheses). (B) Current threshold to induce action potentials for the indicated conditions. **p < 0.01. The number of neurons tested, N, is in parentheses. Additional summary data are presented in Table 2. (C) Example evoked action potentials for the indicated treatments at two separate current injection amplitudes (shown in insets). The resting membrane potential is indicated. (D) The number of evoked action potentials for the indicated amplitude of current injection. The number of neurons tested, N, is in parentheses.DOI: http://dx.doi.org/10.7554/eLife.04193.008
+**Figure 5.:** (A) Overlay of single action potentials evoked with a 10 ms current injection (current amplitude shown in parentheses). (B) Current threshold to induce action potentials for the indicated conditions. **p < 0.01. The number of neurons tested, N, is in parentheses. Additional summary data are presented in Table 2. (C) Example evoked action potentials for the indicated treatments at two separate current injection amplitudes (shown in insets). The resting membrane potential is indicated. (D) The number of evoked action potentials for the indicated amplitude of current injection. The number of neurons tested, N, is in parentheses.
+
+**Table 2.**
+ Intrinsic membrane properties and single action potential (AP) characteristics measured in cerebellar Purkinje neurons
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Scrambled</th>
+      <th>shRNA</th>
+      <th>shRNA/FGF14bWT</th>
+      <th>shRNA/FGF14bRA</th>
+      <th>FGF14∆NT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input resistance (MΩ)</td>
+      <td>221.8 ± 15.8 (7)</td>
+      <td>238.0 ± 49.5 (11)</td>
+      <td>266.6 ± 24.5 (11)</td>
+      <td>225.9 ± 10.8 (6)</td>
+      <td>269.5 ± 30.2 (6)</td>
+    </tr>
+    <tr>
+      <td>Resting membrane potential (mV)</td>
+      <td>−54.5 ± 1.3 (21)</td>
+      <td>−55.8 ± 1.2 (19)</td>
+      <td>−54.4 ± 1.0 (16)</td>
+      <td>−55.4 ± 0.7 (10)</td>
+      <td>−54.9 ± 1.4 (11)</td>
+    </tr>
+    <tr>
+      <td>Current threshold (pA)</td>
+      <td>77.8 ± 6.4 (21)</td>
+      <td>142.1 ± 18.5 (19)**</td>
+      <td>78.8 ± 10.4 (16)</td>
+      <td>170.5 ± 16.7 (10)**</td>
+      <td>191.0 ± 22.1 (11)**</td>
+    </tr>
+    <tr>
+      <td>AP threshold (mV)</td>
+      <td>−35.6 ± 1.0 (21)</td>
+      <td>−32.8 ± 1.2 (19)</td>
+      <td>−34.5 ± 0.8 (16)</td>
+      <td>−32.8 ± 1.4 (10)</td>
+      <td>−32.7 ± 0.8 (11)</td>
+    </tr>
+    <tr>
+      <td>AP amplitude (mV)</td>
+      <td>78.8 ± 3.2 (21)</td>
+      <td>77.5 ± 2.8 (19)</td>
+      <td>78.9 ± 4.5 (16)</td>
+      <td>79.1 ± 4.3 (10)</td>
+      <td>73.1 ± 4.7 (11)</td>
+    </tr>
+    <tr>
+      <td>AP duration (ms)</td>
+      <td>2.3 ± 0.2 (21)</td>
+      <td>2.0 ± 0.1 (19)</td>
+      <td>2.2 ± 0.1 (16)</td>
+      <td>1.8 ± 0.1 (10)</td>
+      <td>2.1 ± 0.3 (11)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean ± s.e.m. (n), **p < 0.01 compared to Scrambled control._
 
 ## Discussion
 
@@ -79,24 +229,24 @@ In summary, these data add to a growing appreciation of physiologic and pathophy
 
 ## Materials and methods
 
-## Primary cerebellar neuron culture and transfection
+### Primary cerebellar neuron culture and transfection
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved Institutional Animal Care and Use Committee (IACUC) of Duke University (protocol #A292-13-11). Primary dissociated cerebellar neurons were cultured as previously described (Yan et al., 2013) with some modifications. Briefly, primary cultures were prepared from P6-P8 C57BL6 mice. Cerebella were excised, dissected on ice, digested with 0.25% trypsin for 10 min at 37°C with Dulbecco's Modified Eagle's Medium (DMEM, Sigma, St. Louis, MO), and dissociated into single cells by gentle trituration. The cells were seeded onto coverslips coated with 50 μg/ml poly-D-lysine (Sigma) and 25 μg/ml laminin (Sigma) at a density of 2.5–3.0 × 105 cells/coverslip in DMEM supplemented with 10% heat-inactivated fetal bovine serum (FBS). The neurons were maintained in a humidified incubator in 5% CO2 at 37°C. After 15–16 hr, the medium was replaced with Basal Medium Eagle (BME, Sigma) supplemented with 2% B27 (Invitrogen), 5% FBS, 25 μM uridine, 70 μM 5-fluorodeoxyuridine, and 20 mM KCl. Neurons were transiently transfected at 4 days in vitro with 1 μg plasmid DNA and/or shRNA plasmids per coverslip with calcium phosphate. Experiments were performed 8–10 days after transfection (12–14 days in vitro). To achieve good voltage control, all recordings were performed in neurons cultured no longer than 14 days in vitro.
 
-## shRNA and cDNA construction
+### shRNA and cDNA construction
 
 shRNAs targeted to FGF14 were designed with Invitrogen's RNAi Designer as previously described (Yan et al., 2013) and the sequences were cloned into pLVTHM (Addgene). After evaluating several candidates, we found that the most effective shRNA sequence was 5′ CGCGTGGAGGCAAACCAGTCAACAAGTGCATTCAAGAGATGCACTTGTTGACTGGTTTGC CTCCTTTTTTAT 3′, which was used for the experiments described here. The scrambled shRNA which bears no homology to genes in the rodent genome (Wang et al., 2011) has the sequence: 5′-CGCGTGACCCTTAGTTTATACCTATTCAAGAGATAGGTATAAACTAAGGGTCTTTTTTAT-3′. FGF14 rescue and overexpression experiments were performed with FGF14 constructs (either full-length or with the N-terminus truncated) cloned into pcDNA3.1 also containing tdTomato. Mutagenesis to obtain FGF14bR/A was performed using QuikChange (Agilent). All plasmids were verified by sequencing.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Purkinje neurons were identified by their characteristic teardrop morphology and large size. Whole-cell NaV currents and membrane voltage were recorded at 23–25°C using an EPC 10 USB patch amplifier (HEKA Elektronik). The signal was filtered at 2.9 Hz and digitized at 20 Hz. NaV currents were recorded with an extracellular solution containing (in mM) 124 NaCl, 20 TEA-Cl (tetraethylammonium Chloride), 5 HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 10 glucose, 0.3 CdCl2, 2 BaCl2, and 4-AP (4-aminopyridine). NaOH was added to achieve pH 7.3 (300–310 mOsm). Borosilicate glass patch pipettes (resistances within 3–4 MΩ) were filled with the following internal solution (in mM): 125 CsF, 10 NaCl, 10 HEPES, 15 TEA-Cl, 1.1 ethylene glycol tetraacetic acid (EGTA), and 0.5 Na-guanosine-5′-triphosphate (Na-GTP), pH adjusted to 7.3 with CsOH (290–300 mOsm). Tetrodotoxin (TTX)-sensitive NaV currents were isolated by subtraction of recordings performed in 1 μM TTX from the control recordings. Series resistance was compensated >70%. Current-clamp recordings were performed after obtaining seal resistances >1.2 GΩ. The internal solution was (in mM) 130 K-gluconate, 5 NaCl, 2 MgCl2, 10 HEPES, 4 Mg-ATP, 0.5 Na-GTP, 0.2 EGTA, and 10 phosphocreatine. KOH was used to obtain pH 7.3 (290–300 mOsm). The external solution was (in mM) 140 NaCl, 5 KCl, 2 CaCl2, 1 MgCl2, 5 HEPES, and 10 glucose, pH adjusted to 7.3 with NaOH. Resting membrane potential was directly measured in current-clamp mode after membrane rupture and only cells with a resting membrane potential more negative than −50 mV were studied. The liquid junction potential was not corrected. Input resistance was determined from membrane voltage deflection, evoked by 600-ms hyperpolarizing current injections (0 to −300 pA in steps of 50 pA) and calculated from the measured slope. Single action potentials were elicited by 10 ms depolarizing current injections with 5-pA increments. All drugs were from Sigma Aldrich, except for TTX (Abcam Biochemicals).
 
-## Protocols and data analysis
+### Protocols and data analysis
 
 Data analysis was performed using FitMaster (HEKA), Excel (Microsoft), and Origin software. All averaged data are presented as mean ± SEM. Statistical significance was determined using Student's t or one-way ANOVA tests. Calculated p values of ≤0.05 were accepted as evidence of statistically significant differences. For current amplitude, neurons were held at −90 mV and transient NaV current was elicited by depolarizing pulses of 20 ms from −90 mV to +55 mV in 5-mV increments. Current density was obtained by normalizing peak NaV current to membrane capacitance. Resurgent NaV current was evoked with repolarizing steps from +20 mV to a range of voltages between −80 mV and +5 mV in 5-mV increments for a 200-ms test pulse after 15 ms conditioning steps. NaV activation curves were obtained by transforming current data to conductance (G), with the equation G = INa/(Em − Erev), where: INa is the peak current; Em is the membrane potential; and Erev is the reversal potential of INa; and fitted with a Boltzmann equation of the form: G = Gmax/[1 + exp(V1/2 − V)/k], where Gmax is the extrapolated maximum Na+ conductance, V is the test voltage, V1/2 is the half-activation voltage, and k is the slope factor. For NaV steady-state inactivation, a voltage step to −20 mV for 20 ms was applied from a holding potential of −90 mV to preferentially activate INa after pre-pulse conditioning voltage steps of 300 ms in duration (ranging from −90 to +20 mV) in 5-mV increments. Steady-state inactivation curves were constructed by plotting the normalized peak current amplitude elicited during the test pulse as a function of the conditioning pre-pulse. A Boltzmann relationship, I/Imax = (1 + exp((V − V1/2)/k))−1 was used to fit the data where Imax is current elicited by the test pulse after a −90-mV prepulse; V1/2 is half-inactivation voltage; k is the slope. Late NaV current was measured at 150 ms during a 200 ms depolarizing pulse to −20 mV. The rate of decay of the transient NaV current (τ) was obtained from a single exponential function, I(t) = INa exp (−t/τ)+ ISS, where I(t) is the amplitude of the current at time t; ISS is the steady-state current during a single voltage step.
 
 In current clamp, action potential amplitude was measured as the peak voltage with respect to the baseline 10 ms before the peak of the action potential. The action potential duration was evaluated at half-amplitude. Evoked action potentials were elicited by injecting a depolarizing current from 0 pA to 300 pA for 600 ms duration with 10-pA increments.
 
-## Immunoprecipitation and Western blotting
+### Immunoprecipitation and Western blotting
 
 Cerebella were isolated from two 5-week-old C57BL/6J mice and homogenized with a mortar and pestle in 8 ml of lysis buffer composed of 150 mM NaCl, 50 mM Tris-Cl, 1% Triton, and 1% sodium deoxycholate. Lysate was incubated on ice for 2 hr, passed through a 20g needle 20 times, and rocked end over end for 30 min at 4°C. The lysate was cleared of insoluble material by centrifugation at 4000 rcf at 4°C for 30 min followed by a second centrifugation at 17,100 rcf at 4°C for 10 min. The lysate was preincubated with 30 μl of Protein A/G (Santa Cruz Biotechnology) beads for 2 hr at 4°C. The beads were gently spun down at 0.4 rcf for 1 min to separate them from the lysate, which was then incubated with 20 μg of either anti-FGF14 (NeuroMab) or non-immune mouse IgG (Santa Cruz Biotechnology) overnight at 4°C. In order to immunoprecipitate protein complexes, 30 μl of Protein A/G beads were added and incubated with the lysate for 2 hr. Beads were then washed three times with lysis buffer followed by elution in 2× LDS Sample Buffer (Novex NuPage) plus 10 mM dithiothreiotol. Protein samples were run on 8–16% Tris-glycine SDS page gels and transferred to PVDF membranes. Primary antibodies used were rabbit polyclonal anti Nav1.6 from Millipore (1:200), anti-β-tubulin from Sigma (1:1000) as a loading control, and rabbit polyclonal anti-FGF14 (1:200), which was a kind gift from the Ornitz lab (Washington University, St. Louis). HEK293T cells on 100-mm plates were transfected with Lipofectamine 2000 (Invitrogen) when cells were at ∼60% confluency with 9 μg of NaV1.6 and 3 μg of FGF14bWT or FGF14bR/A. Cells were washed with ice-cold PBS 60 hr after transfection, and cell lysates were prepared with the addition of lysis buffer containing 150 mm NaCl, 50 mm Tris–HCl, pH 7.5, 1% Triton with protease inhibitor (Roche). The pelleted cells were pipetted up and down 20 times with lysis buffer, incubated at 4°C for 1 hr and then centrifuged at 16,000×g for 10 min at 4°C. Immunoprecipitation was performed on 2 mg of lysate with 2 μg of anti-FGF14 antibody (Neuromab). The samples were rocked gently at 4°C for 1 hr followed by addition of 30 μl of protein A/G-agarose slurry. The samples were rotated overnight at 4°C and microcentrifuged at 7000 rpm for 2 min. After washing with lysis buffer three times, 40 μl of loading buffer was added to the pellet, and protein was eluted from the beads by heating at 70°C for 20 min. The samples were subjected to NuPAGE 8–16% Bis-Tris gels (Invitrogen). The proteins were transferred to nitrocellulose membranes and subsequently immunoblotted with the anti-FGF14, anti-pan NaV antibody, and anti-tubulin antibody.

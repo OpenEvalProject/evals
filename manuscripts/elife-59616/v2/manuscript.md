@@ -50,13 +50,21 @@ The work outlined in this report sought to determine if ERα is the primary rece
 
 ## Results
 
-## 17α-E2 and 17β-E2 similarly modulate genomic binding and transcriptional activity of ERα
+### 17α-E2 and 17β-E2 similarly modulate genomic binding and transcriptional activity of ERα
 
 Ligand-mediated ERα dimerization leads to nuclear translocation and transcriptional activity. Previous work has shown that 17α-E2 and 17β-E2 can bind to ERα with different affinities (Edwards and McGUIRE, 1980; Korenman, 1969; Littlefield et al., 1990; Anstead et al., 1997), yet potential differences in resultant genomic binding and transcriptional activity between the two ligands remains unexplored. We assessed ERα DNA binding and transcriptional induction following exposure to 17β-E2 (10 nM) or 17α-E2 (10 nM or 100 nM) in U2OS cells that stably express ERα following doxycycline induction. We chose to use these cells because they do not endogenously express any form of ERα or ERβ and have been extensively utilized to elucidate the effects of ERα and ERβ agonists and antagonists on gene expression (Monroe et al., 2003; Monroe et al., 2005). ChIP-sequencing revealed peaks of ERα genomic binding in all conditions, that when compared, are qualitatively similar across treatments (Figure 1A). Statistically significant differences in ERα binding were determined by negative binomial regression with a Wald’s pairwise post-hoc comparison (false discovery rate correction, FDR < 0.05). A total of 21,443 peaks were found to have a significant pairwise post-hoc comparison between vehicle and 17α-E2 and/or 17β-E2 treated cells. No statistically significant differences between 17α-E2 and 17β-E2-treated groups were observed. 17α-E2 and 17β-E2 not only induced ERα binding at the same genomic locations but also to similar magnitudes. Comparing the levels of increased or decreased ERα binding (as compared to vehicle control) between treatments demonstrates the consistency of ERα genomic binding regardless of the agonist (Figure 1B, Supplementary file 1). The degree of increased or decreased ERα binding was highly similar between 10 nM 17α-E2 and 10 nM 17β-E2, (Pearson’s r = 0.95, p<0.001) and 100 nM 17α-E2 and 10 nM 17β-E2 (Pearson’s r = 0.96, p<0.001). As expected, ERα-binding sites were enriched for estrogen response elements (ERE), estrogen-related receptor beta (Esrrb), and estrogen-related receptor alpha (Erra). Other common motifs found within ER elements, including steroidogenic factor-1 (SF1) (Lin et al., 2007), and motif elements of known interacting partners, including retinoid acid receptor:retinoid X receptor (RAR:RXR) (Lee et al., 1998), were also enriched (Figure 1C). In addition, we observed enrichment of androgen response elements (ARE) in ERα peaks (Figure 1C). Of particular relevance, many of the top enriched motifs identified contained the ERE consensus sequence TTGAC (Supplementary file 2). Following motif enrichment, we performed pairwise differential motif enrichment across all groups to determine if a specific agonist or agonist concentration caused a differential enrichment of any motifs, as would be suggestive of differential genomic binding. No differential motif binding was observed across treatment groups indicating that both 17α-E2 and 17β-E2 cause ERα to bind to the same types of genomic elements (Hypergeometric test, FDR < 0.05).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig1-v2.jpg)
+
+**Figure 1.:** (A) Heatmap representing normalized genome-wide DNA binding by ERα via ChIP sequencing analyses centered according to peak summits for each treatment group and compared to each other group. (B) Differential binding was identified between vehicle and 17α-E2 or 17β-E2 treatment groups, but no differences were identified between 17α-E2 and 17β-E2-treated groups (negative binomial regression, followed by Wald test for pairwise comparisons, FDR < 0.05). Fold change in binding relative to vehicle control was compared between 17α-E2 treatments and 17β-E2. (C) Motif enrichment analysis, filtered for mammalian and non-overlapping motif groups, showing the top 10 non-redundant enriched sequence motifs across treatment groups (hypergeometric test, FDR < 0.05), (D) PCA plot of transcriptional profiles by RNA sequencing analyses demonstrating clustering of 17α-E2 and 17β-E2 treatment groups together, opposite from Vehicle-treated group along the first principle component, and (E) Heatmap representing differentially expressed genes (negative binomial regression, followed by Wald test for pairwise comparisons, FDR < 0.05) by RNA sequencing analyses (left) and ERα binding patterns within the gene body ±5 kb flanking regions of these genes via ChIP sequencing (right). Significant differential pairwise expression was observed only between 17α-E2 and 17β-E2 treatment groups and vehicle-treated control. These studies utilized U2OS-ERα cells treated with low dose (10 nM) 17α-E2, high dose (100 nM) 17α-E2, 17β-E2 (10 nM), or vehicle (EtOH). n = 3/group.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** PCA plot of genome-wide ERα binding profiles by ChIP sequencing analyses. U2OS-ERα cells treated with low dose (10 nM) 17α-E2, high dose (100 nM) 17α-E2, or 17β-E2 (10 nM) induced binding in common genomic locations and differed from vehicle (EtOH) treated cells. n = 3/group.
+
 Next, we examined potential differences in transcriptional responses between treatment groups using RNA-sequencing. Principle component analysis based on the entire transcriptome revealed that all samples exposed to either 17α-E2 or 17β-E2 clustered together, whereas vehicle-treated cells remained distinctly separated from treated cells on the first principle component, which explains the majority of the variance in transcription (70.6%) (Figure 1D). These data suggest that treatment vs vehicle is the primary covariate explaining variance in transcriptional profiles, not the specific agonist. Next, differential expression was assessed between all groups using a negative binomial regression model with a Wald pairwise post-hoc test. No genes were found to be differentially regulated (FDR < 0.05) between the estrogen treatments. Yet, compared to vehicle-treated cells, treatment of U2OS cells with either 10 nM or 100 nM 17α-E2 or 10 nM 17β-E2 resulted in nearly identical gene suppression and activation signatures (Figure 1E, left). Additionally, both 17α-E2 or 17β-E2 treatment conditions resulted in higher ERα DNA binding affinity to gene bodies of these differentially expressed transcripts compared to vehicle treatment, and no differences were observed between 17α-E2 and 17β-E2 conditions (Figure 1E, right) (negative binomial regression with Wald pairwise post-hoc). These findings led us to postulate that 17α-E2 may be the signaling through ERα to modulate health parameters in male mice. As such, we subsequently sought to determine if the ablation of ERα in vivo would mitigate the effects of 17α-E2.
 
-## ERα ablation attenuates 17α-E2-mediated benefits on metabolic parameters in male mice in vivo
+### ERα ablation attenuates 17α-E2-mediated benefits on metabolic parameters in male mice in vivo
 
 To induce obesity and metabolic perturbations in male mice, we administered high-fat diet (HFD) for several months prior to initiating 17α-E2 treatment. Control mice remained on HFD, whereas 17α-E2-treated mice were switched to an identical HFD containing 17α-E2. Almost immediately after 17α-E2 treatment began, male WT mice displayed significant reductions in mass (Figure 2A–B) and adiposity (Figure 2C–D). This is aligned with our previous reports demonstrating that 17α-E2 administration quickly reduces body mass and adiposity (Stout et al., 2017b; Steyn et al., 2018; Miller, 2020), which we have linked to hypothalamic regulation of anorexigenic signaling pathways (Steyn et al., 2018). Indeed, male WT mice in the current study also displayed robust declines in calorie consumption during the first 4 weeks of treatment (Figure 2E). Conversely, all these benefits were completely abolished in male mice lacking ERα (ERα KO), thereby confirming that 17α-E2 definitively acts through ERα to modulate feeding behaviors, mass, and adiposity in male mice. Given the close association between adiposity and metabolic homeostasis, coupled with our previous work demonstrating the ability of 17α-E2 to improve metabolic parameters (Stout et al., 2017b; Steyn et al., 2018), we also assessed several metabolic variables in these studies. Similar to the mass and adiposity data described above, male WT mice receiving 17α-E2 displayed significant improvements in fasting insulin (Figure 3B), HbA1C (Figure 3C), and glucose tolerance (Figure 3D–E, Figure 3—figure supplement 1), whereas male ERα KO mice receiving 17α-E2 failed to recapitulate these findings. Interestingly, despite the masses of the male WT 17α-E2 treatment group being nearly 15 grams greater than those of the male WT chow-fed controls, glucose tolerance was essentially identical between these groups, thereby indicating that 17α-E2 restores metabolic flexibility in the presence of obesity in male mice (Figure 3D–E, Figure 3—figure supplement 1). We also evaluated the effects of 17α-E2 on metabolic parameters in female WT and ERα KO mice provided a standard chow diet. In contrast to the males, we chose not to subject female WT and ERα KO mice to HFD because female ERα KO mice spontaneously develop obesity due to the ablation of ERα (Manrique et al., 2012; Vidal et al., 1999). Given that the female ERα KO mice are already in a challenged state, HFD would further exacerbate mass and adiposity differences between ERα KO and WT female mice. We found that 17α-E2 failed to elicit improvements in mass, adiposity, calorie consumption, or metabolic parameters in female mice of either genotype (Figure 3—figure supplement 2). The positive effects of 17α-E2 in male mice led us to speculate that the liver may play a key role in modulating 17α-E2-mediated effects on systemic metabolic homeostasis. Importantly, several studies have implicated hepatic ERα in the regulation of glucose homeostasis, insulin sensitivity, and crosstalk with hypothalamic neurons that modulate metabolism and feeding behavior (Meda et al., 2020; Torre et al., 2017; Barros and Gustafsson, 2011).
 
@@ -64,9 +72,33 @@ To induce obesity and metabolic perturbations in male mice, we administered high
 
 **Figure 2.:** (A) Percent change in mass (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005 between WT HFD and WT HFD+17α), (B) Mass at baseline (week 0; solid) and week 14 (striped) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), (C) Percent change in fat mass (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), (D) Fat mass at baseline (week 0; solid) and week 14 (striped) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), and (E) Average daily calorie intake per week in WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 10 (WT HFD), 10 (WT HFD+17α), 9 (KO HFD), 10 (KO HFD+17α), 12–15 (WT Chow).
 
-## 17α-E2 improves liver disease pathology in an ERα-dependent manner in male mice
+![Figure 3.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fasting glucose (mean ± SEM, two-way repeated measures ANOVA), (B) Fasting insulin (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), and (C) glycosylated hemoglobin (HbA1c) at baseline (week 0; solid) and week 14 (striped) in WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4 ppm) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; **p<0.005). (D) Glucose tolerance testing (GTT; 1 mg/kg) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05 between WT HFD and WT HFD+17α), and (E) GTT AUC during week 10 of the study (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 9–10 (WT HFD), 8–10 (WT HFD+17α), 9–10 (KO HFD), 8–10 (KO HFD+17α), 12–15 (WT Chow).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Glucose tolerance testing (GTT; 1 mg/kg), normalized to baseline (min 0) (mean ± SEM, two-way repeated measures ANOVA with Holm-Sidak post-hoc; *p<0.05 between WT HFD and WT HFD+17α), and (B) Normalized GTT AUC in WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) for 10 weeks (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 10 (WT HFD), 8 (WT HFD+17α), 9 (KO HFD), 8 (KO HFD+17α), 12 (WT Chow).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Mass at baseline (week 0; solid) and week 4 (striped) (mean ± SEM, two-way repeated measures ANOVA), (B) Fat mass at baseline (week 0; solid) and week 4 (striped) (mean ± SEM, two-way repeated measures ANOVA), (C) Average daily calorie intake per week (mean ± SEM, two-way repeated measures ANOVA), (D) Fasting glucose during week 4 (mean ± SEM, two-way repeated measures ANOVA), and (E) Fasting insulin during week 4 in WT and ERα KO female mice provided chow (TestDiet 58YP)±17α-E2 (14.4ppm) (mean ± SEM, two-way repeated measures ANOVA). n = 9 (WT Chow), 9 (WT 17α), 11 (KO Chow), 9 (KO 17α).
+
+### 17α-E2 improves liver disease pathology in an ERα-dependent manner in male mice
 
 We previously reported that 17α-E2 alters hepatic lipid deposition and DNA damage responses in male mice through unknown mechanisms (Stout et al., 2017b). In the current study, we sought to determine if these findings are mediated through ERα. We found that 17α-E2 significantly reduced liver mass and steatosis in male WT, but not ERα KO mice, as evidenced by reductions in oil-red-O positivity, fatty acid content, and triglyceride accumulation (Figure 4, Figure 4—figure supplement 1). These observations were accompanied by significant alterations in gene expression associated with de novo lipogenesis (fatty acid synthase [Fasn]) and β-oxidation (peroxisome proliferator-activated receptor alpha [Pparα]; sterol regulatory element binding transcription factor 1 [Srebf1]) (Figure 4—figure supplement 1). These findings are similar to previous reports showing that 17β-E2 acts through ERα to modulate the expression and activity of genes that regulate hepatic lipid metabolism (Della Torre et al., 2016; Stubbins et al., 2012; Zhang et al., 2013). Interestingly, despite seeing overall reductions in hepatic fatty acid content with 17α-E2 treatment in male WT mice (Figure 4C), we also observed elevations in specific fatty acids in these mice as compared to WT HFD controls. Notably, arachidonic acid (AA, 20:4n6) and docosahexaenoic acid (DHA, 22:6n3), both of which are precursors for eicosanoid, resolvin, and protectin production (Szefel et al., 2015; Kohli and Levy, 2009), were found to be increased by 17α-E2 treatment in male WT mice (Figure 4—figure supplement 2). Our findings are aligned with a previous report by Garratt et al. showing that 17α-E2 increases AA and DHA in liver (Garratt et al., 2018). None of the 17α-E2-mediated changes in fatty acid profiles were observed in male ERα KO mice receiving 17α-E2. In response to the elevations in AA and DHA with 17α-E2 treatment, we also assessed circulating eicosanoids. We found that 17α-E2 treatment also mildly altered several circulating eicosanoid concentrations in male WT mice (Supplementary file 3). Many of these have been linked to changes in inflammatory signaling (Kiss et al., 2010; Gilroy et al., 2016), although the role they are playing in 17α-E2-mediated effects of on metabolism and/or aging remain unclear.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig4-v2.jpg)
+
+**Figure 4.:** (A) Liver mass (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05), (B) Representative liver oil-red-O staining, (C) Liver fatty acids (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; **p<0.005), and (D) Liver triglycerides in WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) for 14 weeks (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; **p<0.005). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 4–10 (WT HFD), 4–9 (WT HFD+17α), 4–9 (KO HFD), 4–10 (KO HFD+17α), 4–15 (WT Chow).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of oil-red-O lipid staining in liver sections from WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) for 14 weeks (mean ± SEM, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05). Hepatic gene expression related to (B) Lipid metabolism (box plots depict total range of fold changes in gene expression with mean shown as a horizontal black line, Benjamini–Hochberg multiple testing correction, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), (C) Hepatic insulin resistance (box plots depict total range of fold changes in gene expression with mean shown as a horizontal black line, Benjamini–Hochberg multiple testing correction, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005), and (D) Glucose homeostasis from WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) for 14 weeks (box plots depict total range of fold changes in gene expression with mean shown as a horizontal black line, Benjamini–Hochberg multiple testing correction, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 5–10 (WT HFD), 5–9 (WT HFD+17α), 5–7 (KO HFD), 5–10 (KO HFD+17α), 8–11 (WT Chow).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59616/elife-59616-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Relative molar % of fatty acids in the liver from WT and ERα KO mice provided 45% HFD (TestDiet 58V8)±17α-E2 (14.4ppm) for 14 weeks (mean ± SEM, Benjamini–Hochberg multiple testing correction, two-way ANOVA with Holm-Sidak post-hoc; *p<0.05, **p<0.005). Age-matched, male WT, chow-fed (TestDiet 58YP) mice were also evaluated as a normal-weight reference group and the corresponding means are depicted as dashed gray lines. n = 4.
 
 Due to the association between obesity-related hepatic steatosis and the onset of fibrosis, we assessed collagen deposition by trichrome staining and found that 17α-E2 reduced this in male WT, but not ERα KO, mice (Figure 5A). We also observed significant suppression of several transcripts associated with liver fibrosis in male WT mice receiving 17α-E2, including collagen type 1 alpha 1 (Col1a1) (Hayashi et al., 2014; Lua et al., 2016), cyclin-dependent kinase inhibitor 1A (Cdkn1a) (Crary and Albrecht, 1998; Yang et al., 2020), matrix metallopeptidase 1 (Mmp1) (Lichtinghagen et al., 2003), matrix metallopeptidase 12 (Mmp12) (Madala et al., 2010), monocyte chemoattractant protein 1 (Ccl2) (Glass et al., 2018; Baeck et al., 2012), C-X-C motif chemokine ligand 1 (Cxcl1) (Yang et al., 2017), growth differentiation factor 15 (Gdf15) (Koo et al., 2018), and TNF receptor superfamily member 1A (Tnfrsf1a) (Grattagliano et al., 2019; Figure 5B). Transcripts shown to be predicative of hepatic insulin resistance (follistatin [Fst], inhibin subunit beta E [Inhbe], insulin receptor substrate 2 [Irs2]) (Tao et al., 2018; Parks et al., 2015) and gluconeogenic plasticity (phosphoenolpyruvate carboxykinase 1 [Pck1], pyruvate kinase [Pkm]) (Xiong et al., 2011) were also beneficially modulated by 17α-E2 in male WT mice (Figure 4—figure supplement 1). To confirm that 17α-E2 improves hepatic insulin sensitivity, we also evaluated phosphorylation status of AKT and FOXO1 in livers from male WT and ERα KO mice following the administration of an insulin bolus (Figure 5C). We found dramatic improvements in phosphorylated AKT (pS473) and FOXO1 (pS256) in male WT mice treated with 17α-E2 (Figure 5D–E), whereas these benefits were not observed in male ERα KO mice. Our findings are aligned with previous reports demonstrating that hepatic ERα plays a critical role in regulating insulin sensitivity in the liver of male mice (Yan et al., 2019; Guillaume et al., 2019; Qiu et al., 2017; Zhu et al., 2014). Collectively, these findings suggest that the liver is highly responsive to 17α-E2 and that hepatic ERα is likely the signaling mechanism by which 17α-E2 prevents and/or reverses steatosis, fibrosis, and insulin resistance.
 
@@ -76,7 +108,7 @@ Due to the association between obesity-related hepatic steatosis and the onset o
 
 Despite our findings demonstrating that 17α-E2 reduces calorie intake and improves liver disease parameters in male mice in an ERα-dependent manner, it has historically been unclear if the benefits attributed to 17α-E2 occur primarily due to long-term reductions in calorie intake. Moreover, it remains unclear if 17α-E2 acts in a tissue-specific manner and if these observations would also occur in other mammalian species. To address these questions, we subsequently evaluated the effects of acute 17α-E2 administration during hyperinsulinemic-euglycemic clamps in male WT outbred rats. These experiments allowed us to evaluate tissue-specific insulin-sensitivity following acute 17α-E2 exposure, thereby circumventing long-term effects of the compound including reductions in calorie intake.
 
-## Acute 17α-E2 administration improves hepatic insulin sensitivity in male rats
+### Acute 17α-E2 administration improves hepatic insulin sensitivity in male rats
 
 The hyperinsulinemic-euglycemic clamp is the gold-standard for assessing insulin action in vivo (Ayala et al., 2010). Animals are fasted overnight prior to receiving a constant infusion of insulin and a variable infusion of [3-3H] glucose to maintain a euglycemia throughout the clamping period. Blood samples are frequently obtained to assess glucose concentration and adjust glucose infusion rates (GIRs) to maintain euglycemia, thereby allowing the calculation of insulin sensitivity to be done. Our first set of experiments in male rats sought to determine if acute peripheral infusions of 17α-E2 modulates metabolic parameters during hyperinsulinemic-euglycemic clamps (Figure 6A). We found that acute peripheral administration of 17α-E2 significantly increased systemic insulin responsiveness as compared to vehicle controls, which is indicated by increased GIRs (Figure 6B). These studies also determined that peripheral 17α-E2 administration robustly suppressed hepatic gluconeogenesis as compared to vehicle controls (Ra; Figure 6C–D), whereas glucose disposal rates (Rd; Figure 6E) were essentially identical between groups under clamped conditions. These data indicate that 17α-E2 beneficially modulates metabolic parameters independent of reductions in calorie intake and adiposity. Furthermore, these findings strongly suggest that the liver is a primary site where 17α-E2 acts to improve metabolic homeostasis due to gluconeogenesis being tightly controlled by hormonal actions on hepatocytes (Zhang et al., 2018). However, it also well established that the hypothalamus can directly modulate gluconeogenesis in the liver through hepatic innervation (Timper and Brüning, 2017); therefore, we sought to determine if acute intracerebroventricular (ICV) delivery of 17α-E2 (Figure 6F) could modulate metabolic parameters similarly to that observed during peripheral 17α-E2 administration. Interestingly, we found that central administration of 17α-E2 essentially phenocopied the effects of peripheral 17α-E2 infusion with regard to GIRs and suppression of hepatic gluconeogenesis (Figure 6G–I). These findings suggest that 17α-E2 likely acts through hypothalamic neurons to regulate hepatic gluconeogenesis. Indeed, agouti-related peptide/neuropeptide Y (AgRP/NPY) and pro-opiomelanocortin (Pomc) neurons are known to regulate hepatic glucose production (Könner et al., 2007; Ruud et al., 2017; Pocai et al., 2005a; Pocai et al., 2005b; Dodd et al., 2018) and both neuronal populations express ERα (Smith et al., 2013; Skinner and Herbison, 1997; Xu et al., 2011; Acosta-Martinez et al., 2007; Stincic et al., 2018; Kelly and Rønnekleiv, 2015; Smith et al., 2014). Collectively, the hyperinsulinemic-euglycemic clamp studies revealed that 17α-E2 definitively modulates metabolic homeostasis in an acute manner and suggests that the liver and hypothalamus are two primary sites of action for the regulation of metabolic parameters by 17α-E2.
 
@@ -108,62 +140,324 @@ In summary, the data presented herein are the first to show that 17α-E2 and 17�
 
 ## Materials and methods
 
-## U2OS cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6N(Cg)-Esr1tm4.2Ksk/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No:026176; RRID:IMSR_JAX:026176</td>
+      <td>ERα (Esr1) KO mice</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapien)</td>
+      <td>U2OS Cells</td>
+      <td>ATCC</td>
+      <td>HTB-96; RRID:CVCL_0042</td>
+      <td>PMID:15802376 PMID:14505348</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804</td>
+      <td>IP: 1 uL per pull-down (1 mg/mL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G Dynabeads</td>
+      <td>Applied Biosystems/Thermofisher Scientific</td>
+      <td>10003D</td>
+      <td>IP: 30 uL per IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>17α-E2</td>
+      <td>Steraloids, Inc</td>
+      <td>E0870-000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Novolin R 100 U/ml</td>
+      <td>Novolin</td>
+      <td></td>
+      <td>2mU/g</td>
+    </tr>
+    <tr>
+      <td>Other (diet)</td>
+      <td>Chow; TestDiet 58YP</td>
+      <td>TestDiet</td>
+      <td>TestDiet 58YP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other (diet)</td>
+      <td>HFD; TestDiet 58V8</td>
+      <td>TestDiet</td>
+      <td>TestDiet 58V8</td>
+      <td>HFD 45% by kcal</td>
+    </tr>
+    <tr>
+      <td>Other (diet)</td>
+      <td>HFD; TestDiet 58Y1</td>
+      <td>TestDiet</td>
+      <td>TestDiet 58Y1</td>
+      <td>HFD 60% by kcal</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Ultrasensitive Insulin ELISA</td>
+      <td>ALPCO</td>
+      <td>Cat# 80-INSMSU-E01; RRID:AB_2792981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Free Glycerol Agent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma F6428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma F6428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glycerol Standard</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma G1394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pS473 AKT (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab81283; RRID:AB_2224551</td>
+      <td>WB: (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pan-AKT (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab179463; RRID:AB_2810977</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pS256 FOX01 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab131339; RRID:AB_11159015</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FOX01a (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab52857; RRID:AB_869817</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9485; RRID:AB_307275</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, IRDye 800 CW</td>
+      <td>LI-COR</td>
+      <td>Cat# 926–32211; RRID:AB_621843</td>
+      <td>WB (1:15000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Gene Expression Master Mix</td>
+      <td>Applied Biosystems/Thermofisher Scientific</td>
+      <td>4369542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Mmp1</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.42286812 Ref Seq: NM_008607(1)</td>
+      <td>Exon 5–6</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Mmp12</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.31615472 Ref Seq: NM_008605(1)</td>
+      <td>Exon 8–9</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Ccl2</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.42151692 Ref Seq: NM_011333(1)</td>
+      <td>Exon 1–3</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Srebf1</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.8508227 Ref Seq: NM_011480(1)</td>
+      <td>Exon 1–2</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Pck1</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.11992693 Ref Seq: NM_011044(1)</td>
+      <td>Exon 3–4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Cdkn1a</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.17125846 Ref Seq: NM_007669(1)</td>
+      <td>Exon 2–3</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Pparα</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.9374886 Ref Seq: NM_001113418(2)</td>
+      <td>Exon 8–9</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Cxcl1</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.42076891 Ref Seq: NM_008176(1)</td>
+      <td>Exon 2–4</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Col1a1</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.7562513 Ref Seq: M_007742(1)</td>
+      <td>Exon 1–2</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>qPCR primer Tnfrsf1a</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Mm.PT.58.28810479 Ref Seq: NM_011609(1)</td>
+      <td>Exon 5–7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot 12.5</td>
+      <td>Systat Software</td>
+      <td>RRID:SCR_003210</td>
+      <td>statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>histological quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR</td>
+      <td>RRID:SCR_015795</td>
+      <td>western blot quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>GenomicAlignments DiffBind DESeq2 GenomicRanges</td>
+      <td>RRID:SCR_000432</td>
+      <td>Peak Calling Differential expression Differential binding</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 MACS2 Bedtools Samtools Picard-tools Trimmomatic</td>
+      <td>Bowtie2 MACS2 Bedtools Samtools Picard-tools Trimmomatic</td>
+      <td></td>
+      <td>Alignment, Peak Calling, trimming, duplicate identification</td>
+    </tr>
+  </tbody>
+</table>
+
+### U2OS cells
 
 U2OS osteosarcoma cells stably expressing flag-tagged ERα (U2OS-ERα) under the control of doxycycline (dox)-inducible promoter (Monroe et al., 2003) were utilized for the studies described here. U2OS cells were originally purchased from ATTC and were authenticated using IDEXX BioAnalytics (Westbrook, ME). Cells were also regularly checked for mycoplasma contamination using a PCR-based mycoplasma detection kit from SouthernBiotech (Birmingham, AL) and were confirmed to be negative. U2OS-ERα cells were cultured in phenol-free αMEM medium supplemented with 10% HyCloneTM charcoal/dextran stripped FBS (GE Healthcare Life Sciences, Pittsburgh, PA), 1% antibiotic/antimycotic, 5 mg/L blasticidin S, and 500 mg/L zeocin in a humidified 37°C incubator with 5% CO2. Cells were plated in 12-well plates in the presence of doxycycline to induce ERα expression. The following day, cells were treated for 24 hr with 17β-E2 (10 nM) or 17α-E2 (10 nM and 100 nM) (Steraloids, Newport, RI) in charcoal-stripped FBS-containing media.
 
-## ChIP-sequencing
+### ChIP-sequencing
 
 To evaluate patterns of ERα binding agonized by 17α-E2 vs 17β-E2, we performed ChIP-Sequencing. U2OS-ERα cells were harvested 24 hr post-treatment and chromatin immunoprecipitation was performed as previously described (Reese et al., 2018; Nelson et al., 2006). Briefly, ERα was immunoprecipitated overnight at 4°C using 10 µg of Flag antibody (clone M2, Sigma-Aldrich, St. Louis, MO). Complexes bound to the antibody were captured with protein G Dynabeads (Thermo Fisher Scientific, Waltham, MA), extensively washed, and reverse cross-linked at 65°C overnight. DNA isolation was performed by phenol/chloroform extraction and was used for ChIP-sequencing library preparation. Libraries were sequenced using paired-end 100 bp reads on the Illumina HiSeq 4000 (GSE151039). Reads were aligned to the human genome (hg19, https://genome.ucsc.edu/cgi-bin/hgGateway) using bowtie2 (Langmead and Salzberg, 2012) and duplicated reads were flagged with Picard-tools (http://broadinstitute.github.io/picard/). ERα-binding peaks were called using MACS2 (Zhang et al., 2008) with recommended settings. Peak genomic location, breadth of coverage, and peak summit location were determined using MACS2. NarrowPeak files containing peak information were used to determine differential ERα binding. First, peaks were centralized around the summit and 250 bp flanking regions were added to the summit location to generate equal 500 bp regions across all experimental groups. Peak files were then used to extract read counts from the aligned de-duplicated BAM file using samtools (Li et al., 2009), read counts were then normalized to total library sequencing depth. To determine differential binding, the R package diffbind was utilized (Ross-Innes et al., 2012). Normalized read counts were log2 transformed and normalized across all experimental groups. Differential binding between treatment groups was determined using negative binomial regression models utilized in the R package DESeq2, statistical significance for pairwise comparisons between experimental groups was determined using Wald test. To account for multiple comparisons, we used Benjamini-Hochberg multiple testing correction (False-discovery rate, FDR). Motif analysis was performed using HOMER with standard settings to identified motifs. Peak regions called for each treatment group were analyzed to identify enriched motifs relative to the entire genome. For pairwise differential motif enrichment or depletion between experimental groups, we utilized a hypergeometric test with the number of sequences with a motif from each group and total number of peaks as total sample size. Motifs that appeared in less than five sequences between both pairwise test groups were removed. Benjamini-Hochberg multiple testing correction was utilized to control for multiple testing (FDR < 0.05).
 
-## RNA-sequencing
+### RNA-sequencing
 
 U2OS-ERα cells were harvested 24 hr post-treatment and RNA was extracted using Trizol and DNase cleanup. RNA libraries were prepared with Illumina’s TrueSeq RNA-seq library prep according to manufacturer protocol. Libraries were sequenced with 150 bp paired-end reads on the Illumina 4000 platform (Illumina, San Diego, CA) (GSE151039). Sequence quality control was performed with fastQC, Paired reads were trimmed using trimmomatic, and were aligned to the hg19 genome using STAR (Dobin et al., 2013). Differential expression was determined using previously described methods (Hadad et al., 2019). In brief, gene counts were determined with the R package GenomicAlignments ‘summarizeOverlap’ function. Gene counts were then transformed using regularized log transformation and normalized relative to library size using the DESeq2 (Love et al., 2014) R package. Differential expression was determined using negative binomial generalized linear model using counts ~ treatment model. We performed pairwise differential expression between all experimental groups using Wald test. All comparisons were corrected for multiple testing using Benjamini-Hochberg multiple testing correction method. Differential expression significance threshold was set to FDR corrected p<0.05.
 
-## Animal study 1
+### Animal study 1
 
 To determine if ERα is the primary receptor by which 17α-E2 signals to elicit metabolic benefits in vivo, we utilized male global ERα KO and WT littermate mice. Mice were acquired from Dr. Kenneth Korach (National Institute of Environmental Health Sciences [NIEHS]) and were also bred at OUHSC by pairing ERα heterozygous KO mice (JAX; strain #026176). Mice were fed a 45% high-fat diet (HFD) (TestDiet 58V8, 35.5% CHO, 18.3% PRO, 45.7% FAT) from TestDiet (Richmond, IN) for 4 months prior to study initiation to induce obesity and metabolic perturbations. Additionally, age-matched, male WT, chow-fed mice were maintained on TestDiet 58YP (66.6% CHO, 20.4% PRO, 13.0% FAT) throughout the entire study as a healthy-weight reference group. Mice were individually housed with ISO cotton pad bedding, cardboard enrichment tubes, and nestlets at 22 ± 0.5°C on a 12:12 hr light-dark cycle. Unless otherwise noted, all mice had ad libitum access to food and water throughout the experimental timeframe. At the conclusion of the fattening period, all mice (age: 6–8 months) receiving HFD were randomized within genotype by age, body mass, fat mass, calorie intake, fasting glucose, fasting insulin, and glycosylated hemoglobin (HbA1C) into HFD or HFD+17α (TestDiet 58V8 + 17α-E2, 14.4ppm; Steraloids, Newport, RI) treatment groups for a 14-week intervention. Body mass and calorie intake were assessed daily for the first 4 weeks, followed by body mass and body composition (EchoMRI, Houston, TX) on a weekly basis. At 10 weeks post-treatment, mice were fasted for 5–6 hr and fasting glucose, fasting insulin, HbA1C, and glucose tolerance were assessed. At the conclusion of the study (14 weeks post treatment), mice were euthanized with isoflurane in the fasted state (5–6 hr). Blood was collected into EDTA-lined tubes by cardiac puncture, and plasma was collected and frozen. Tissues were excised, weighed, flash frozen, and stored at −80°C unless otherwise noted. Small sections of liver were fixed in 4% paraformaldehyde in preparation for paraffin- or cryo-embedding for future analyses. All animal procedures were reviewed and approved by the Institutional Animal Care and Use Committee at OUHSC.
 
-## Animal study 2
+### Animal study 2
 
 Although previous studies [Strong et al., 2016; Harrison et al., 2014; Garratt et al., 2017; Garratt et al., 2018] have demonstrated minimal effects of 17α-E2 in female mice, we thought it prudent to determine if the ablation of ERα would alter female responsiveness to 17α-E2. Female WT and ERα KO mice were acquired from Dr. Kenneth Korach (National Institute of Environmental Health Sciences [NIEHS]). Female mice were maintained on Chow TestDiet 58YP (66.6% CHO, 20.4% PRO, 13.0% FAT) and were not subject to HFD feeding due to ERα KO female mice naturally displaying an obesity phenotype. Mice were individually housed with ISO cotton pad bedding, cardboard enrichment tubes, and nestlets at 22 ± 0.5°C on a 12:12 hr light-dark cycle. Unless otherwise noted, all mice had ad libitum access to food and water throughout the experimental timeframe. At age 9–11 months, female mice were randomized within genotype by age, body mass, fat mass, calorie intake, fasting glucose, fasting insulin, and glycosylated hemoglobin (HbA1C) into Chow or Chow+17α-E2 (TestDiet 58YP + 17α-E2,14.4ppm; Steraloids, Newport, RI) treatment groups. The study was terminated following a 4-week intervention due to a lack of responsiveness to 17α-E2. At the conclusion of the study, mice were euthanized with isoflurane in the fasted state (5–6 hr). Blood was collected into EDTA-lined tubes by cardiac puncture, and plasma was collected and frozen. Tissues were excised, weighed, flash frozen, and stored at −80°C. All animal procedures were reviewed and approved by the Institutional Animal Care and Use Committee at OUHSC.
 
-## Animal study 3
+### Animal study 3
 
 To assess insulin sensitivity within the liver, an additional cohort of ERα KO and WT littermate mice were bred from mice acquired from Jackson Laboratory (JAX; strain #026176), which were generated from identical founder strains in the laboratory of Dr. Korach at NIEHS. Male ERα KO and WT mice were fed a 60% high-fat diet (HFD; TestDiet 58Y1, 20.3% CHO, 18.1% PRO, 61.6% FAT) for 4 months prior to study initiation to induce obesity and metabolic perturbations. Additionally, as was done in Animal Study 1, age-matched, male WT, chow-fed mice were maintained on TestDiet 58YP (66.6% CHO, 20.4% PRO, 13.0% FAT) throughout the entire study as a healthy-weight reference group. Mice were group housed with corncob bedding, cardboard enrichment tubes, and nestlets at 22 ± 0.5°C on a 12:12 hr light-dark cycle. Unless otherwise noted, all mice had ad libitum access to food and water throughout the experimental timeframe. At the conclusion of the fatting period, all mice (age: 6 months) receiving HFD were randomized within genotype by body mass, fat mass, calorie intake, fasting glucose, and fasting insulin into HFD or HFD+17α (TestDiet 58Y1 + 17α-E2, 14.4ppm; Steraloids, Newport, RI) treatment groups for a 12-week intervention. Prior to being euthanized, mice were fasted (5–6 hr) and IP injected with insulin (Novolin R 100 U/ml; 2mU/g) to assess insulin activity and sensitivity in tissue as previously described (Lu et al., 2012). Each mouse was euthanized with isoflurane 15 min following their insulin injection. Blood was collected into EDTA-lined tubes by cardiac puncture, and plasma was collected and frozen. Tissues were excised, weighed, flash frozen, and stored at −80°C unless otherwise noted. All animal procedures were reviewed and approved by the Institutional Animal Care and Use Committee at OUHSC.
 
-## Animal study 4
+### Animal study 4
 
 Hyperinsulinemic-euglycemic clamp experiments, the gold-standard for assessing insulin sensitivity, were performed in male rats to determine if 17α-E2 can acutely modulate insulin sensitivity and glucose homeostasis. FBN-F1 hybrid male rats were acclimated to the animal facilities within the Einstein Nathan Shock Center for 2 weeks prior to undergoing surgeries in preparation for hyperinsulinemic-euglycemic clamp studies. Rats were fed Purina 5001 (58.0% CHO, 28.5% PRO, 13.5% FAT) and were individually housed with corncob bedding at 22 ± 0.5°C on a 14:10 hr light-dark cycle with ad libitum access to food and water. All surgeries were conducted under 2% isoflurane. For clamp studies incorporating central infusions, rats underwent two surgical procedures. First, stereotactic placement of a steel-guide cannula (Plastics One, Roanoke, VA) reaching the 3rd ventricle was performed. The implant was secured in place with dental cement and animals were treated with analgesic as needed. Approximately 14 days later, animals underwent a second surgical procedure to place indwelling catheters into the right internal jugular vein and the left carotid artery, which was also performed for animals undergoing only peripheral clamp studies. Hyperinsulinemic-euglycemic clamp studies incorporating peripheral 17α-E2 infusions were performed as previously described (Einstein et al., 2010). For studies employing peripheral infusions of 17α-E2, 17α-E2 was diluted in sterile saline to a final concentration of 30 ng/µl. Beginning at t = 0 min animals received a primed-continuous infusion of saline or 30 ng/µl 17α-E2 provided as a 3 µg bolus at a rate of 20 ul/min over 5 min, followed by a continuous infusion at a rate of 0.06 ml/hr over 235 min (9.4 ng/hr) for a maintenance dose of 7 µg (total dose 10 µg). Hyperinsulinemic-euglycemic clamp studies with intracerebroventricular (ICV) infusions were performed as previously described (Huffman et al., 2016a). 17α-E2 powder (Steraloids, Newport, RI) was dissolved in DMSO at a concentration of 10 mg/ml and stored at −80°C. For ICV infusions, 17α-E2 was diluted in artificial cerebral spinal fluid (ACSF) to a final concentration of 2 ng/µl. Beginning at t = 0 min, animals received a primed-continuous ICV infusion of ACSF (Veh.) or 17α-E2 (17α) provided as a 15 ng bolus at a rate of 1 µl/min over 7.5 min, followed by a continuous infusion of 56.5 ng at a rate of 0.08 µl/hr over 6 hr (9.4 ng/hr) and a total dose of 71.5 ng. All animal procedures were reviewed and approved by the Institutional Animal Care and Use Committee at the Einstein College of Medicine.
 
-## In vivo metabolic analyses in mice
+### In vivo metabolic analyses in mice
 
 To evaluate the effects of 17α-E2 on metabolic parameters in vivo, we performed several assessments of glucose homeostasis. Unless otherwise noted, all experiments requiring fasting conditions were performed in the afternoon, 5–6 hr following the removal of food at the beginning of the light-cycle as outlined elsewhere (Ayala et al., 2010). To ensure fasting conditions, mice were transferred to clean cages containing ISO cotton padding and clean cardboard enrichment tubes. Non-terminal blood was collected via tail snip. Fasting glucose was evaluated using a Bayer Breeze 2 Blood Glucose Monitoring System (Bayer Global, Leverkusen, Germany). Fasting insulin was evaluated using a Mouse Ultrasensitive Insulin ELISA from Alpco (Salem, NH). HbA1c was assessed by A1C-Now Monitoring kits (Bayer, Whippany, NJ). Glucose tolerance tests were performed following a 5 hr fast using an intraperitoneal filtered dextrose injection of 1 g/kg body mass (Huffman et al., 2016b). Blood glucose was measured immediately pre-injection (time 0) and at 15, 30, 60, 90, and 120 min post-injection.
 
-## Liver histology
+### Liver histology
 
 To evaluate the effects of 17α-E2 treatment on lipid accumulation and fibrosis, we evaluated fixed liver tissue. Tissues were fixed in 4% PFA for 24 hr, cryo-embedding samples were transferred to 30% sucrose for 72 hr and embedded in OCT, paraffin-embedding samples were transferred to 1X PBS for 48 hr, then to 70% ethanol until embedding. Liver oil-red-O and Masson’s trichrome staining were performed by the Oklahoma Medical Research Foundation Imaging Core Facility using previously reported methodology (Leonard et al., 2018; Mehlem et al., 2013). Oil-red-O (ORO, Sigma-Aldrich, St. Louis, MO) and H and E counterstaining were performed on cryo-embedded tissues, and were imaged within 6 hr of staining. Red lipid stain was blindly quantified from 10 images per animal using ImageJ software and presented as a lipid to total tissue ratio. Masson’s trichrome staining was performed on paraffin embedded liver tissue and was used for qualitative purposes. In brief, slides were stained with Weigert’s Iron Hematoxylin (Sigma-Aldrich, St. Louis, MO), washed, stained with Biebrich Scarlet-Acid Fusion (Sigma-Aldrich, St. Louis, MO), washed, stained with Phosphomolybdic Acid-Phosphotunsctic Acid, and then stained with Aniline Blue (Sigma-Aldrich, St. Louis, MO).
 
-## Liver triglycerides
+### Liver triglycerides
 
 We evaluated the effects of 17α-E2 treatment on triglyceride accumulation in the liver. Liver samples (∼100 mg) were homogenized on ice for 60 s in 10X (v/w) Cell Signaling Lysis Buffer (Cell Signaling, Danvers, MA) with protease and phosphatase inhibitors (Boston BioProducts, Boston, MA). Total lipid was extracted from the homogenate using the Folch method with a 2:1 chloroform-methanol mixture (Folch et al., 1957). Lipid was dried down using a nitrogen drier at room temperature, and resuspended in 100 µl of 3:1:1 tert-butyl alcohol-methanol-Triton X-100 solution. Final triglyceride concentrations were determined using a spectrophotometric assay with a 4:1 Free Glycerol Agent/Triglyceride Agent solution (Sigma Triglyceride and Free-Glycerol reagents, St. Louis, MO) as previously described (Stout et al., 2011).
 
-## Liver fatty acids
+### Liver fatty acids
 
 We evaluated the effects of 17α-E2 on hepatic fatty acid content. Liver samples (∼50 mg) were homogenized and on ice for 60 s in 10X (v/w) Cell Signaling Lysis Buffer (Cell Signaling, Danvers, MA) with protease and phosphatase inhibitors (Boston BioProducts, Boston, MA). Total lipid was extracted using a modified Bligh and Dyer method (Bligh and Dyer, 1959) (Sigma-Aldrich, St. Louis, MO). Of 15:0 and 17:0 internal standards, 50 nmol were added and acid hydrolysis/methanolysis was done to generate fatty acid methyl esters (FAMEs) (Agbaga et al., 2018). FAMEs were identified as previously described by GC-MS (Agbaga et al., 2018). A 6890N gas chromatograph with flame ionization detector (GC-FID) (Agilent Technologies) was used to quantify FAMEs (Yu et al., 2012). Standards 15:0 and 17:0 were used to compare and determine sample concentrations. Data is represented as the relative mole percent of each fatty acid.
 
-## Plasma eicosanoids
+### Plasma eicosanoids
 
 We evaluated the effects of 17α-E2 treatment on circulating eicosanoids (Supplementary file 3). Plasma eicosanoid analyses were performed by the UCSD Lipidomics Core as described previously (Quehenberger et al., 2010). Eicosanoids were isolated from plasma, extracted, separated using liquid chromatography, and analyzed with mass spectrometry (MDS SCIEX 4000 Q Trap; Applied Biosystems, Foster City, CA) (Quehenberger et al., 2010).
 
-## Real-time PCR
+### Real-time PCR
 
 To evaluate alterations in gene expression following 17α-E2 treatment, we performed qPCR for genes related to fibrosis, lipid metabolism, insulin resistance, and glucose metabolism in the liver. Total RNA was extracted using Trizol (Life Technologies, Carlsbad, CA) and was reverse transcribed to cDNA with the High-Capacity cDNA Reverse Transcription kit (Applied Biosystems, Foster City, CA). Real-time PCR was performed in a QuantStudio 12K Flex Real Time PCR System (Thermofisher Scientific, Waltham, MA) using TaqMan Gene Expression Master Mix (Applied Biosystems/Thermofisher Scientific, Waltham, MA) and predesigned gene expression assays with FAM probes from Integrated DNA Technologies (Skokie, Illinois). Target gene expression was expressed as 2−ΔΔCT by the comparative CT method (Livak and Schmittgen, 2001) and normalized to the expression of TATA-Box Binding Protein (TBP) in liver.
 
-## Western blotting
+### Western blotting
 
 To determine if 17α-E2 altered hepatic insulin sensitivity, we evaluated phosphorylation status of AKT and FOXO1 following an insulin bolus. Liver was homogenized in RIPA Buffer (Cell Signaling, Danvers, MA) with protease and phosphatase inhibitors (Boston Bioproducts, Boston, MA). Total protein was quantified using BCA Protein Assay Reagent Kit (Pierce, Rockford, IL). Proteins were separated on an Any kD Criterion TGX Stain-Free Protein Gel (Biorad, Hercules, CA) at 75V for 150 min in Running Buffer (Cell Signaling, Danvers, MA) and transferred to a 0.2 µm pore size nitrocellulose membrane, (Biorad, Hercules, CA) at 75V for 90 min on ice. Primary antibodies used were pS256 FOX01 (Abcam ab131339, 1:1000), FOX01a (Abcam ab52857, 1:1000), pS473 AKT (Abcam ab81283, 1:3000), pan-AKT (Abcam ab179463, 1:10000), GAPDH (Abcam ab9485, 1:2500). Primary antibody detection was performed with IRDye 800CW Infrared Rabbit (LI-COR Biotechnology, Lincoln, NE) at 1:15,000 concentration. GAPDH was diluted in 5% dry milk (Cell Signaling, Danvers, MA), all other antibodies were diluted in 5% BSA (Cell Signaling, Danvers, MA). Blot imaging was done on Odyssey Fc Imaging System (LI-COR Biotechnology, Lincoln, NE) with a two-minute exposure time at 800λ, and protein detection and quantification were performed using Image Studio Software (LI-COR Biotechnology, Lincoln, NE).
 
-## Statistical analyses
+### Statistical analyses
 
 Results are presented as mean ± SEM unless otherwise stated with p values less than 0.05 considered to be significant unless otherwise specified. Analyses of differences between groups were performed by two-way ANOVA, two-way repeated measures ANOVA, or Student’s t-test where appropriate using SigmaPlot 12.5 Software. A Benjamini-Hochberg multiple testing correction was applied to the F test result to correct for the number of transcripts, proteins, and fatty acids analyzed.

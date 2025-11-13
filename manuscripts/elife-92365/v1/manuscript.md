@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00xkeyj56 Division of Natural Sciences, University of Kent Canterbury United Kingdom
-2. https://ror.org/00xkeyj56 School of Sociology, Social Policy, and Social Research, Division for the study of Law, Society, and Social Justice, University of Kent Canterbury United Kingdom
-3. https://ror.org/01ryk1543 School of Biological Sciences, University of Southampton Southampton United Kingdom
-4. https://ror.org/010jx2260 Crop Science and Production Systems, National Institute of Agricultural Botany East Malling United Kingdom
-5. https://ror.org/00ayhx656 School of Life Sciences, University of Sussex Brighton United Kingdom
+1. Division of Natural Sciences, University of Kent Canterbury United Kingdom ([ROR:00xkeyj56](https://ror.org/00xkeyj56))
+2. School of Sociology, Social Policy, and Social Research, Division for the study of Law, Society, and Social Justice, University of Kent Canterbury United Kingdom ([ROR:00xkeyj56](https://ror.org/00xkeyj56))
+3. School of Biological Sciences, University of Southampton Southampton United Kingdom ([ROR:01ryk1543](https://ror.org/01ryk1543))
+4. Crop Science and Production Systems, National Institute of Agricultural Botany East Malling United Kingdom ([ROR:010jx2260](https://ror.org/010jx2260))
+5. School of Life Sciences, University of Sussex Brighton United Kingdom ([ROR:00ayhx656](https://ror.org/00ayhx656))
 
 † Corresponding author
 
@@ -76,7 +76,7 @@ Following the six reflexivity sessions, the recordings of the meetings were tran
 
 ## The five themes to emerge from the SoCoBio Reflexivity in Research programme
 
-## Theme 1: Coping with stress and pressure
+### Theme 1: Coping with stress and pressure
 
 The programme was explicitly designed to support the participants to reflect on how they coped with stress and to explore the mechanisms they could put into place to support themselves and each other. This recognised that postgraduate study is often a time of intense pressure and stress (Ayres, 2022). Establishing an academic identity within the current academic environment in any discipline demands that an individual deals with the pressure and stress (Clark and Sousa, 2018; Gill, 2009). However, those who are marginalised in science are much more likely to face stress (Rolle et al., 2021). All the student participants recognised that the scientific research environment brings unique challenges. They had anticipated some of these challenges but, others were completely unexpected. When asked to draw or find an image to represent what stress felt like to them; one analogy used was the comparison of stress to a tidal wave, i.e., you either succumb to that wave and go under, or drag yourself out and persevere. The unexpected challenges particularly caused the students to report feeling overwhelmed, stressed, anxious, and frustrated. Some situations that caused stress and anxiety related to daily challenges of experimental work, but others were centred on personal relationships. When discussing the former, one participant described the experimental challenges they were facing and their feelings when talking about them with their supervisor.
 
@@ -84,25 +84,25 @@ To balance out the discussions of stress, participants were asked to share the m
 
 The groups were encouraged to listen to each other and recognise how individuals deal and respond to stress differently, so that they might formulate a toolkit to address their own levels of stress to prevent burnout. This stimulated discussions on the importance of work life balance, informal support networks including peers, supervisors, colleagues, friends and family, and offered a platform to outline more formal support available for postgraduate students (such as Departmental and University wellbeing and mental health services, and local charities).
 
-## Theme 2: Challenges of the student-supervisor relationship
+### Theme 2: Challenges of the student-supervisor relationship
 
 It has long been recognised that supervisory relationships can be challenging (Eshtiaghi et al., 2012). One key aspect is the ‘fit’ between student and supervisor and the quality of the relationship between them (Gill and Burnard, 2008; Johansson and Yerrabati, 2017; Löfström and Pyhältö, 2017; Sambrook et al., 2008). Several students in the groups were experiencing issues with their supervisor. They described themselves using words such as ‘lost’, ‘alone’, ‘overwhelmed’, ‘tired’, ‘unmotivated’, ‘frustrated’ and ‘annoyed’. It is easy to see how a student caught up in this storm of negative emotion might not feel they belong in science (Royal Society of Chemistry, 2021). The programme provided a space and facilitated students to reflect on and articulate the challenges they were facing in their supervisory relationships. The facilitators were able to navigate discussions on the expectations of a supervisor, a PhD, and allowed the groups time to reflect on this:
 
 The students highlighted the importance of clear communication, regular feedback, and transparency around the roles and expectations of both a student and supervisor through a PhD programme.
 
-## Theme 3: Dealing with imposter syndrome and maintaining authenticity
+### Theme 3: Dealing with imposter syndrome and maintaining authenticity
 
 Imposter syndrome is rife within academia (Bothello and Roulet, 2019; Taylor and Lahad, 2018) and not addressing it threatens the aim to increase diversity and inclusion in science (Chrousos and Mentis, 2020). Unsurprisingly, many of the participants expressed general feelings of not fitting in within the research environment. One of the first exercises they were asked to complete was to reflect on how they saw themselves as a scientist, and what being a scientist meant.
 
 At the same time, students shared the desire to remain true to their own identify and values and did not wish to conform to a scientific stereotype. This also led to discussions about the importance of diversity within research groups and valuing and understanding an individual’s contributions.
 
-## Theme 4: Building trust and transparency in professional networks
+### Theme 4: Building trust and transparency in professional networks
 
 Trust was a strong theme throughout and came up in almost all aspects of our discussions. This included trust in peers, laboratory colleagues, supervisors, the DTP itself and their personal relationships. All of these were important for maintaining a sense of balance and security in a rapidly changing and challenging research environment. The concept of relating a beautiful, well-tended garden to the PhD environment was used by several students:
 
 The students were very engaged with the programme (attendance rate of >85%) and willing to discuss how they can support themselves and their peers both through engaging in the Reflexivity in Research programme, and via the DTP. It was clear from the outset that students feel that transparency and inclusion in DTP processes were also very important. Making it clear that students are important, included and valued at all levels in the DTP will help to foster a more inclusive and open environment.
 
-## Theme 5: The benefits of the Reflexivity in Research programme
+### Theme 5: The benefits of the Reflexivity in Research programme
 
 We received overwhelmingly positive feedback from the students on the programme.
 

@@ -25,7 +25,7 @@ Further examination of the kinetics of infection by the parasites revealed that 
 
 ## Results and discussion
 
-## Evidence for the importance of stumpy forms
+### Evidence for the importance of stumpy forms
 
 We offer an alternative interpretation for these experiments, retaining the importance of stumpy forms in the cyclical transmission of Trypanosoma brucei. This is based on a number of points that we summarise as follows.
 
@@ -35,7 +35,7 @@ We offer an alternative interpretation for these experiments, retaining the impo
 
 In summary, we consider that the carefully executed experiments of Schuster et al can be interpreted within existing knowledge and without the necessity to challenge the importance of stumpy forms in parasite transmission. The observations that small numbers of trypanosomes can establish infections and then go on to mature is epidemiologically important and supportive of previous studies with Trypanosoma congolense, a species that follows a similar establishment path as T. brucei in the tsetse (Maudlin and Welburn, 1989). We also emphasise that we agree that slender cells can establish infections in flies in the laboratory conditions used, but with the caveat that they must first become stumpy in the fly to do so.
 
-## Biological perspectives on the importance of stumpy forms in Trypanosome transmission
+### Biological perspectives on the importance of stumpy forms in Trypanosome transmission
 
 There are the central biological questions that emerge from this thought-provoking study. If stumpy forms are unnecessary for transmission, why are they maintained at a fitness cost to parasites in the field? Without tsetse transmission, laboratory lines rapidly reduce stumpy formation but pleomorphism is sustained in the field. This would not be expected if slender and stumpy forms can infect flies with equivalent efficiency. Further, if stumpy forms are not important for transmission, then why do the Trypanosoma brucei subspecies T. b. evansi, and T. b. equiperdum, which are no longer transmitted by tsetse flies, invariably lose the ability to generate stumpy forms and become monomorphic?
 

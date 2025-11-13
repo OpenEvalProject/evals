@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.08150.001 Cell-to-cell viral infection, in which viruses spread through contact of infected cell with surrounding uninfected cells, has been considered as a critical mode of virus infection. However, since it is technically difficult to experimentally discriminate the two modes of viral infection, namely cell-free infection and cell-to-cell infection, the quantitative information that underlies cell-to-cell infection has yet to be elucidated, and its impact on virus spread remains unclear. To address this fundamental question in virology, we quantitatively analyzed the dynamics of cell-to-cell and cell-free human immunodeficiency virus type 1 (HIV-1) infections through experimental-mathematical investigation. Our analyses demonstrated that the cell-to-cell infection mode accounts for approximately 60% of viral infection, and this infection mode shortens the generation time of viruses by 0.9 times and increases the viral fitness by 3.9 times. Our results suggest that even a complete block of the cell-free infection would provide only a limited impact on HIV-1 spread. DOI: http://dx.doi.org/10.7554/eLife.08150.001
+Cell-to-cell viral infection, in which viruses spread through contact of infected cell with surrounding uninfected cells, has been considered as a critical mode of virus infection. However, since it is technically difficult to experimentally discriminate the two modes of viral infection, namely cell-free infection and cell-to-cell infection, the quantitative information that underlies cell-to-cell infection has yet to be elucidated, and its impact on virus spread remains unclear. To address this fundamental question in virology, we quantitatively analyzed the dynamics of cell-to-cell and cell-free human immunodeficiency virus type 1 (HIV-1) infections through experimental-mathematical investigation. Our analyses demonstrated that the cell-to-cell infection mode accounts for approximately 60% of viral infection, and this infection mode shortens the generation time of viruses by 0.9 times and increases the viral fitness by 3.9 times. Our results suggest that even a complete block of the cell-free infection would provide only a limited impact on HIV-1 spread.
 
 ## Introduction
 
@@ -42,55 +42,251 @@ In this study, through coupled experimental and mathematical investigation, we d
 
 ## Results
 
-## Adaptation of a mathematical model to explicitly consider cell-free and cell-to-cell infection
+### Adaptation of a mathematical model to explicitly consider cell-free and cell-to-cell infection
 
-A static cell culture system (i.e., a conventional cell culture system) allows viruses to perform both cell-free and cell-to-cell infection. On the other hand, Sourisseau et al. have reported that the cell-to-cell infection can be prevented by mildly shaking the cell culture infected with viruses (
+A static cell culture system (i.e., a conventional cell culture system) allows viruses to perform both cell-free and cell-to-cell infection. On the other hand, Sourisseau et al. have reported that the cell-to-cell infection can be prevented by mildly shaking the cell culture infected with viruses (Sourisseau et al., 2007). Consistent with the previous report (Sourisseau et al., 2007), we verified that shaking did not induce nonspecific consequences on HIV-1 infection (Figure 2—figure supplement 1). To quantitatively estimate the efficacy of the cell-free infection and that of the cell-to-cell infection respectively, we adopted this experimental method (see ‘Materials and methods’). Static cultures of Jurkat cells, an HIV-1-susceptible human CD4+ T-cell line, allow HIV-1 to propagate both by the cell-free and cell-to-cell infection, while under shaking conditions, Jurkat cells allows HIV-1 to replicate only by the cell-free infection (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig1-v1.jpg)
 
-**Figure 1.:** (A) Static and shaking cultures of Jurkat cells. The static and shaking cell cultures allow human immunodeficiency virus type 1 (HIV-1) to perform both cell-free and cell-to-cell infection, and only cell-free infection, respectively. (B) The basic reproduction number, R0, is defined as the number of the secondly infected cells produced from a typical infected cell during its infectious period. In the presence of the cell-to-cell and cell-free infection, the basic reproduction number consists of two sub-reproduction numbers through the cell-free infection, R, and through the cell-to-cell infection, cfR, respectively.ccDOI: http://dx.doi.org/10.7554/eLife.08150.003
+**Figure 1.:** (A) Static and shaking cultures of Jurkat cells. The static and shaking cell cultures allow human immunodeficiency virus type 1 (HIV-1) to perform both cell-free and cell-to-cell infection, and only cell-free infection, respectively. (B) The basic reproduction number, R0, is defined as the number of the secondly infected cells produced from a typical infected cell during its infectious period. In the presence of the cell-to-cell and cell-free infection, the basic reproduction number consists of two sub-reproduction numbers through the cell-free infection, Rcf, and through the cell-to-cell infection, Rcc, respectively.
 
-Previous mathematical models, which have been widely used for data analyses, essentially describe only the cell-free infection (Nowak and May, 2000; Perelson, 2002; Iwami et al., 2012a, 2012b) or implicitly both infection modes (Komarova and Wodarz, 2013; Komarova et al., 2013a, 2013b). Here we used the following revised model including both infection modes explicitly:(1)dT(t)dt=gT(t)(1−T(t)+I(t)Tmax)−βT(t)V(t)−ωT(t)I(t),(2)dI(t)dt=βT(t)V(t)+ωT(t)I(t)−δI(t),(3)dV(t)dt=pI(t)−cV(t),where T(t) and I(t) are the numbers of uninfected and infected cells per ml of a culture, respectively, and V(t) is the viral load measured by the amount of HIV-1 p24 per ml of culture supernatant. The target cells (we used Jurkat cells) grow at a rate g with the carrying capacity of Tmax (the maximum number of cells in the cell culture flask). The parameters β, δ, p and c represent the cell-free infection rate, the death rate of infected cells, the virus production rate, and the clearance rate of virions, respectively. Note that c, g, and δ include the removal of virus, and of the uninfected and infected cells, due to the experimental samplings. In our earlier works (Iwami et al., 2012a, 2012b; Fukuhara et al., 2013; Kakizoe et al., 2015), we have shown that the approximating punctual removal as a continuous exponential decay has minimal impact on the model parameters and provides an appropriate fit to the experimental data. In addition, we introduce the parameter ω, describing the infection rate via cell-to-cell contacts (Sourisseau et al., 2007; Sattentau, 2008; Sigal et al., 2011). In the shaking cell culture system, we fixed ω = 0 because the shaking inhibits the formation of cell-to-cell contacts completely (Sourisseau et al., 2007). In previous reports, Komarova et al. used a quasi-equilibrium approximation for the number of free virus, and incorporated the dynamics of V(t) into that of I(t) in Komarova and Wodarz (2013), Komarova et al. (2013a), and Komarova et al. (2013b). However, in cell culture system, the clearance of virions usually is not much larger than the death rate of infected cells, like in vivo (see below). This fact does not validate the quasi-equilibrium approximation, and it may affect the quantification of the dynamics of the cell-to-cell and cell-free infection. We introduced the above full model, relying on a carefully designed experiment, to accurately extract the quantitative information that underlies HIV-1 infection. Furthermore, our experimental datasets include all time-series of the number of uninfected, infected cell, and virions. Thus, our coupled experimental and mathematical investigations with a sufficient datasets allowed us to estimate all parameters in Equations 1–3, and to compute the basic reproduction number, generation time, and Malthus coefficient (see below).
+Previous mathematical models, which have been widely used for data analyses, essentially describe only the cell-free infection (Nowak and May, 2000; Perelson, 2002; Iwami et al., 2012a, 2012b) or implicitly both infection modes (Komarova and Wodarz, 2013; Komarova et al., 2013a, 2013b). Here we used the following revised model including both infection modes explicitly:
 
-## Data fitting to quantify the cell-free and cell-to-cell contribution to HIV spread
+$$
+\frac{dT(t)}{dt}=gT(t)(1−\frac{T(t)+I(t)}{T_{max}})−\betaT(t)V(t)−\omegaT(t)I(t),
+$$
+
+
+
+$$
+\frac{dI(t)}{dt}=\betaT(t)V(t)+\omegaT(t)I(t)−\deltaI(t),
+$$
+
+
+
+$$
+\frac{dV(t)}{dt}=pI(t)−cV(t),
+$$
+
+where T(t) and I(t) are the numbers of uninfected and infected cells per ml of a culture, respectively, and V(t) is the viral load measured by the amount of HIV-1 p24 per ml of culture supernatant. The target cells (we used Jurkat cells) grow at a rate g with the carrying capacity of Tmax (the maximum number of cells in the cell culture flask). The parameters β, δ, p and c represent the cell-free infection rate, the death rate of infected cells, the virus production rate, and the clearance rate of virions, respectively. Note that c, g, and δ include the removal of virus, and of the uninfected and infected cells, due to the experimental samplings. In our earlier works (Iwami et al., 2012a, 2012b; Fukuhara et al., 2013; Kakizoe et al., 2015), we have shown that the approximating punctual removal as a continuous exponential decay has minimal impact on the model parameters and provides an appropriate fit to the experimental data. In addition, we introduce the parameter ω, describing the infection rate via cell-to-cell contacts (Sourisseau et al., 2007; Sattentau, 2008; Sigal et al., 2011). In the shaking cell culture system, we fixed ω = 0 because the shaking inhibits the formation of cell-to-cell contacts completely (Sourisseau et al., 2007). In previous reports, Komarova et al. used a quasi-equilibrium approximation for the number of free virus, and incorporated the dynamics of V(t) into that of I(t) in Komarova and Wodarz (2013), Komarova et al. (2013a), and Komarova et al. (2013b). However, in cell culture system, the clearance of virions usually is not much larger than the death rate of infected cells, like in vivo (see below). This fact does not validate the quasi-equilibrium approximation, and it may affect the quantification of the dynamics of the cell-to-cell and cell-free infection. We introduced the above full model, relying on a carefully designed experiment, to accurately extract the quantitative information that underlies HIV-1 infection. Furthermore, our experimental datasets include all time-series of the number of uninfected, infected cell, and virions. Thus, our coupled experimental and mathematical investigations with a sufficient datasets allowed us to estimate all parameters in Equations 1–3, and to compute the basic reproduction number, generation time, and Malthus coefficient (see below).
+
+### Data fitting to quantify the cell-free and cell-to-cell contribution to HIV spread
 
 Correctly estimated parameter sets with possible variation are required to reproduce model prediction for pure cell-to-cell infection in silico. However, point estimation of the model parameter set by a conventional ordinary least square method does not capture possible variations of kinetic parameters and model prediction. To assess the variability of kinetic parameters and model prediction, we perform Bayesian estimation for the whole dataset using Markov Chain Monte Carlo (MCMC) sampling (see ‘Materials and methods’ and Supplementary file 1), and simultaneously fit Equations 1–3 with ω > 0 and ω = 0 to the concentration of p24-negative and -positive Jurkat cells and the amount of p24 viral protein in the static and shaking cell cultures, respectively. Here we note that g and Tmax were separately estimated and fixed to be 0.47 ± 0.10 for the static culture and 0.54 ± 0.09 for the shaking culture per day, and (1.51 ± 0.02) × 106 and (1.22 ± 0.02) × 106 cells per flask of medium from the cell growth experiments, respectively (see ‘Materials and methods’, Figure 2—figure supplement 2 and Supplementary file 2). In addition, we used c value of 2.3 per day, which is estimated from daily harvesting of viruses (i.e., the amount of p24 have to be reduced by around 90% per day by the daily medium-replacement procedure).
 
-The remaining four common parameters
+The remaining four common parameters β, ω, δ and p, along with the six initial values for T(0), I(0) and V(0) in the static and the shaking cell cultures, were determined by fitting the model to the data. Experimental measurements, which were below the detection limit, were excluded in the fitting. The estimated parameters of the model and derived quantities are given in Table 1, and the estimated initial values are summarized in Supplementary file 3. The typical behavior of the model using these best-fit parameter estimates is shown together with the data in Figure 2, which reveals that Equations 1–3 describe these in vitro data very well. The shadowed regions correspond to 95% posterior predictive intervals, the dashed lines give the best-fit solution (mean) for Equations 1–3, and the dots show the experimental datasets. This suggests that the parameters that were estimated are representative for the various processes underlying the HIV-1 kinetics including the cell-to-cell and cell-free infection.
+
+**Table 1.**
+ Parameters estimated by mathematical-experimental analysis
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter name</th>
+      <th>Symbol</th>
+      <th>Unit</th>
+      <th>Exp. 1</th>
+      <th>Exp. 2</th>
+      <th>Exp. 3</th>
+      <th>Ave. ± S.D.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Parameters obtained from simultaneous fit to time-course experimental dataset</td>
+    </tr>
+    <tr>
+      <td>Rate constant for cell-free infection</td>
+      <td>β</td>
+      <td>10−6 × (p24 day)−1</td>
+      <td>5.59* (3.54–8.41)†</td>
+      <td>3.27 (2.05–5.01)</td>
+      <td>‡3.70 (2.28–5.77)</td>
+      <td>4.18 ± 1.41</td>
+    </tr>
+    <tr>
+      <td>Rate constant for cell-to-cell infection</td>
+      <td>ω</td>
+      <td>10−6 × (cell day)−1</td>
+      <td>0.88 (0.45–1.39)</td>
+      <td>1.25 (0.70–1.97)</td>
+      <td>1.13 (0.64–1.79)</td>
+      <td>1.09 ± 0.33</td>
+    </tr>
+    <tr>
+      <td>Production rate of total viral protein</td>
+      <td>p</td>
+      <td>day−1</td>
+      <td>0.37 (0.22–0.59)</td>
+      <td>0.59 (0.34–0.92)</td>
+      <td>0.54 (0.31–0.86)</td>
+      <td>0.50 ± 0.16</td>
+    </tr>
+    <tr>
+      <td>Death rate of infected cells</td>
+      <td>δ</td>
+      <td>day−1</td>
+      <td>0.45 (0.32–0.64)</td>
+      <td>0.54 (0.38–0.75)</td>
+      <td>0.50 (0.36–0.68)</td>
+      <td>0.50 ± 0.10</td>
+    </tr>
+    <tr>
+      <td colspan="7">Quantities derived from fitted values</td>
+    </tr>
+    <tr>
+      <td>Basic reproduction number through cell-free infection</td>
+      <td>Rcf</td>
+      <td>–</td>
+      <td>2.88 (2.34–3.53)</td>
+      <td>2.27 (1.98–2.66)</td>
+      <td>2.43 (2.04–2.95)</td>
+      <td>2.44 ± 0.23</td>
+    </tr>
+    <tr>
+      <td>Basic reproduction number through cell-to-cell infection</td>
+      <td>Rcc</td>
+      <td>–</td>
+      <td>2.95 (1.48–4.70)</td>
+      <td>3.65 (1.77–6.05)</td>
+      <td>3.39 (1.82–5.38)</td>
+      <td>3.39 ± 0.91</td>
+    </tr>
+    <tr>
+      <td>Basic reproduction number</td>
+      <td>R0</td>
+      <td>–</td>
+      <td>5.83 (4.20–7.75)</td>
+      <td>5.92 (3.99–8.46)</td>
+      <td>5.83 (4.21–7.89)</td>
+      <td>5.83 ± 0.94</td>
+    </tr>
+    <tr>
+      <td>Contribution of cell-to-cell infection</td>
+      <td>RccRcf+Rcc</td>
+      <td>–</td>
+      <td>0.50 (0.34–0.63)</td>
+      <td>0.60 (0.44–0.72)</td>
+      <td>0.57 (0.43–0.70)</td>
+      <td>0.57 ± 0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean value.†95% confidence interval.‡Average and standard deviation of merged values in experiment 1, 2, and 3._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig2-v1.jpg)
 
-**Figure 2.:** Jurkat cells were inoculated with HIV-1 (at multiplicity of infection 0.1) in the static and shaking cell cultures. Panels A and B show the time-course of experimental data for the numbers of uninfected cells (top) and infected cells (middle), and the amount of viral protein p24 (bottom) in the static and shaking cell culture systems, respectively. The shadow regions correspond to 95% posterior predictive intervals, the dashed curves give the best-fit solution (mean) for Equations 1–3 to the time-course dataset. All data in each experiment were fitted simultaneously. In panels A and B, the results of three independent experiments are respectively shown.DOI: http://dx.doi.org/10.7554/eLife.08150.005
+**Figure 2.:** Jurkat cells were inoculated with HIV-1 (at multiplicity of infection 0.1) in the static and shaking cell cultures. Panels A and B show the time-course of experimental data for the numbers of uninfected cells (top) and infected cells (middle), and the amount of viral protein p24 (bottom) in the static and shaking cell culture systems, respectively. The shadow regions correspond to 95% posterior predictive intervals, the dashed curves give the best-fit solution (mean) for Equations 1–3 to the time-course dataset. All data in each experiment were fitted simultaneously. In panels A and B, the results of three independent experiments are respectively shown.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Jurkat cells were infected with HIV-1 (at multiplicity of infection 1) as described in ‘Materials and methods’, and the infected cells were cultured in the static and the shaking condition. By harvesting the cells at 24 and 48 hr postinfection, the cells were analyzed by flow cytometry as described in ‘Materials and methods’. The percentage of the average of p24-positive cells are shown with SD. The assay was performed in triplicate, and the representative result is shown. Note that the ratio of input virus to target cells (multiplicity of infection) of this experiment is 10-fold higher than that of the experiment shown in Figure 2. This is for the clear detection of the infected cells (p24-positive cells) during early time points.DOI: http://dx.doi.org/10.7554/eLife.08150.006
+**Figure 2—figure supplement 1.:** Jurkat cells were infected with HIV-1 (at multiplicity of infection 1) as described in ‘Materials and methods’, and the infected cells were cultured in the static and the shaking condition. By harvesting the cells at 24 and 48 hr postinfection, the cells were analyzed by flow cytometry as described in ‘Materials and methods’. The percentage of the average of p24-positive cells are shown with SD. The assay was performed in triplicate, and the representative result is shown. Note that the ratio of input virus to target cells (multiplicity of infection) of this experiment is 10-fold higher than that of the experiment shown in Figure 2. This is for the clear detection of the infected cells (p24-positive cells) during early time points.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Dynamics of Jurkat cell growth in the static and shaking cell cultures. By harvesting the cells for 37 days (A) in the static and (B) in the shaking cell cultures, the growth kinetics of Jurkat cells in these conditions was estimated as described in Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.08150.007
+**Figure 2—figure supplement 2.:** Dynamics of Jurkat cell growth in the static and shaking cell cultures. By harvesting the cells for 37 days (A) in the static and (B) in the shaking cell cultures, the growth kinetics of Jurkat cells in these conditions was estimated as described in Materials and methods.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** Representative results of flow cytometry (experiment 1). Time-course results of flow cytometry analyses on experiment 1 of static (left) and shaking (right) cultures are respectively shown. The cells positive for p24 antigen is gated in pink, and the number in the bottom right of the gate indicates the percentage of p24-positive cells. The data is available upon request.DOI: http://dx.doi.org/10.7554/eLife.08150.008
+**Figure 2—figure supplement 3.:** Representative results of flow cytometry (experiment 1). Time-course results of flow cytometry analyses on experiment 1 of static (left) and shaking (right) cultures are respectively shown. The cells positive for p24 antigen is gated in pink, and the number in the bottom right of the gate indicates the percentage of p24-positive cells. The data is available upon request.
 
-Our model (i.e.,
+Our model (i.e., Equations 1–3) applied to time-course experimental data under static and shaking conditions (i.e., Figure 2A and Figure 2B, respectively) allowed to extract the kinetic parameters in the model (see Table 1), in particular the rate constant for the cell-free infection (β) and the rate constant for the cell-to-cell infection (ω). However, from the estimated values of β and ω, we could not directly compare the efficiency of the two infection modes, because of the different units of measure of these parameters (p24/day for β, and cells/day for ω). To quantify each infection mode and overcome the above difficulty, we derived the basic reproduction number R0 (Perelson and Nelson, 1999; Nowak and May, 2000; Iwami et al., 2012b), an index reflecting the average number of newly infected cells produced from any one infected cell (see mathematical appendix in ‘Materials and methods’). Note that secondly infected cells are produced from both the cell-free and cell-to-cell infection. Interestingly, in spite of nonlinear interaction between the two modes of virus transmission, our derivation of R0 revealed that the secondly infected cells were the sum of the basic reproduction number through the cell-free infection Rcf = βpTmax/δc and the basic reproduction number through the cell-to-cell infection Rcc = ωTmax/δ, (i.e., R0 = Rcf + Rcc) (see Figure 1B). Using all accepted MCMC parameter estimates from the time-course experimental datasets, we calculated that on average the mean of the total basic reproductive number is R0 = 5.83 ± 0.94 (average ± standard deviation), and the mean number of secondly infected cells through the cell-free infection and the cell-to-cell infection are Rcf = 2.44 ± 0.23 and Rcc = 3.39 ± 0.91, respectively (see Table 1). The distributions of calculated R0, Rcf, and Rcc, are shown in Figure 3A–C, respectively. These estimates indicate that the contribution of the cell-to-cell infection is almost 60% on average (i.e., Rcc/(Rcc + Rcf) = 0.57 ± 0.07: Table 1) and this mode of infection is predominant during the HIV-1 spread in Jurkat cells. In Figure 3D, the distributions of calculated ratio are shown. Interestingly, this estimation is consistent with that by Komarova and Wodarz (2013), Komarova et al. (2013a), and Komarova et al. (2013b), although they did not take into account the difference of the death rate in the shaking and static conditions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig3-v1.jpg)
 
-**Figure 3.:** The distribution of the basic reproduction number, R0, the number of secondary infected cells through the cell-free infection, R, and the cell-to-cell infection, cfR, calculated from all accepted Markov Chain Monte Carlo (MCMC) parameter estimates are shown in ccA, B, and C, respectively. The contribution of the cell-to-cell infection (i.e., R/(ccR + cfR)) is distributed as in ccD. For each plot, the last 15,000 MCMC samples among the total 50,000 samples are used. a.u., arbitrary unit.DOI: http://dx.doi.org/10.7554/eLife.08150.009
+**Figure 3.:** The distribution of the basic reproduction number, R0, the number of secondary infected cells through the cell-free infection, Rcf, and the cell-to-cell infection, Rcc, calculated from all accepted Markov Chain Monte Carlo (MCMC) parameter estimates are shown in A, B, and C, respectively. The contribution of the cell-to-cell infection (i.e., Rcc/(Rcf + Rcc)) is distributed as in D. For each plot, the last 15,000 MCMC samples among the total 50,000 samples are used. a.u., arbitrary unit.
 
-## Advantage of cell-to-cell infection
+### Advantage of cell-to-cell infection
 
-We also derived the viral generation time, defined as the time it takes for a population of virions to infect cells and reproduce (Perelson and Nelson, 1999), from Equations 1–3 in the static and shaking cell cultures (see mathematical appendix in ‘Materials and methods’). In the presence and absence of the cell-to-cell infection (i.e., for the static and shaking cell cultures, respectively), the mean generation time is calculated as 1/δ + Rcf/cR0 = 2.22 ± 0.32 days and 1/δ + 1/c = 2.47 ± 0.32 days, respectively (see Table 2). Thus, cell-to-cell infection shortens the generation time by on average 0.90 times, and enables HIV-1 to efficiently infect target cells (Sato et al., 1992; Carr et al., 1999). Furthermore, we calculated the Malthus coefficient, defined as the fitness of virus (Nowak and May, 2000; Nowak, 2006) (or the speed of virus infection) (see mathematical appendix in ‘Materials and methods’). In the presence and absence of the cell-to-cell infection, the Malthus coefficient is calculated as 1.86 ± 0.37 and 0.49 ± 0.05 per day, respectively (see Table 2). Thus, cell-to-cell infection increases the HIV-1 fitness by 3.80-fold (corresponding to 944-fold higher viral load 5 days after the infection) and plays an important role in the rapid spread of HIV-1. Thus, the efficient viral spread via the cell-to-cell infection is relevant, especially at the beginning of virus infection.10.7554/eLife.08150.010Table 2.Generation time and Malthus coefficient of virus infectionDOI: http://dx.doi.org/10.7554/eLife.08150.010Cell culture systemExp. 1Exp. 2Exp. 3Ave. ± S.D.Generation time of HIV-1 Static cell culture2.51* days2.08 days2.22 days(2.22 ± 0.32)‡ days(1.78–3.38) days(1.54–2.78) days(1.69–2.93) days– Shaking cell culture2.73† days2.34 days2.47 days(2.47 ± 0.32) days(1.99–3.59) days(1.77–3.06) days(1.91–3.18) days–Malthus coefficient of HIV-1 Static cell culture1.61 day−12.03 day−11.86 day−1(1.86 ± 0.37) day−1(1.10–2.27) day−1(1.32–3.01) day−1(1.26–2.72) day−1– Shaking cell culture0.57 day−10.46 day−110.49 day−1(0.49 ± 0.05) day−1(0.47–0.67) day−1(0.38–0.56) day−1(0.39–0.61) day−1–*Mean value.†95% confidence interval.‡Average and standard deviation of merged values in experiment 1, 2, and 3.HIV-1, human immunodeficiency virus type 1.
+We also derived the viral generation time, defined as the time it takes for a population of virions to infect cells and reproduce (Perelson and Nelson, 1999), from Equations 1–3 in the static and shaking cell cultures (see mathematical appendix in ‘Materials and methods’). In the presence and absence of the cell-to-cell infection (i.e., for the static and shaking cell cultures, respectively), the mean generation time is calculated as 1/δ + Rcf/cR0 = 2.22 ± 0.32 days and 1/δ + 1/c = 2.47 ± 0.32 days, respectively (see Table 2). Thus, cell-to-cell infection shortens the generation time by on average 0.90 times, and enables HIV-1 to efficiently infect target cells (Sato et al., 1992; Carr et al., 1999). Furthermore, we calculated the Malthus coefficient, defined as the fitness of virus (Nowak and May, 2000; Nowak, 2006) (or the speed of virus infection) (see mathematical appendix in ‘Materials and methods’). In the presence and absence of the cell-to-cell infection, the Malthus coefficient is calculated as 1.86 ± 0.37 and 0.49 ± 0.05 per day, respectively (see Table 2). Thus, cell-to-cell infection increases the HIV-1 fitness by 3.80-fold (corresponding to 944-fold higher viral load 5 days after the infection) and plays an important role in the rapid spread of HIV-1. Thus, the efficient viral spread via the cell-to-cell infection is relevant, especially at the beginning of virus infection.
 
-## Virtual experiments of cell-to-cell infection in silico
+**Table 2.**
+ Generation time and Malthus coefficient of virus infection
 
-While the shaking culture prevents the cell-to-cell infection, it is technically difficult to completely block the cell-free infection. Here, using our estimated kinetic parameters (
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell culture system</th>
+      <th>Exp. 1</th>
+      <th>Exp. 2</th>
+      <th>Exp. 3</th>
+      <th>Ave. ± S.D.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Generation time of HIV-1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Static cell culture</td>
+      <td>2.51* days</td>
+      <td>2.08 days</td>
+      <td>2.22 days</td>
+      <td>(2.22 ± 0.32)‡ days</td>
+    </tr>
+    <tr>
+      <td>(1.78–3.38) days</td>
+      <td>(1.54–2.78) days</td>
+      <td>(1.69–2.93) days</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Shaking cell culture</td>
+      <td>2.73† days</td>
+      <td>2.34 days</td>
+      <td>2.47 days</td>
+      <td>(2.47 ± 0.32) days</td>
+    </tr>
+    <tr>
+      <td>(1.99–3.59) days</td>
+      <td>(1.77–3.06) days</td>
+      <td>(1.91–3.18) days</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td colspan="5">Malthus coefficient of HIV-1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Static cell culture</td>
+      <td>1.61 day−1</td>
+      <td>2.03 day−1</td>
+      <td>1.86 day−1</td>
+      <td>(1.86 ± 0.37) day−1</td>
+    </tr>
+    <tr>
+      <td>(1.10–2.27) day−1</td>
+      <td>(1.32–3.01) day−1</td>
+      <td>(1.26–2.72) day−1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Shaking cell culture</td>
+      <td>0.57 day−1</td>
+      <td>0.46 day−11</td>
+      <td>0.49 day−1</td>
+      <td>(0.49 ± 0.05) day−1</td>
+    </tr>
+    <tr>
+      <td>(0.47–0.67) day−1</td>
+      <td>(0.38–0.56) day−1</td>
+      <td>(0.39–0.61) day−1</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean value.†95% confidence interval.‡Average and standard deviation of merged values in experiment 1, 2, and 3.HIV-1, human immunodeficiency virus type 1._
+
+### Virtual experiments of cell-to-cell infection in silico
+
+While the shaking culture prevents the cell-to-cell infection, it is technically difficult to completely block the cell-free infection. Here, using our estimated kinetic parameters (Table 1 and Supplementary file 3), we carried out a ‘virtual experiment’ eliminating the contribution of the cell-free infection using all accepted MCMC estimated parameter values, allowing to estimate only the cell-to-cell infection, in silico (see Figure 4). Our simulated mean values (represented by solid lines) of the cell-to-cell infection of HIV-1 are consistently located between the time course of experimental data under the static conditions (closed circles, including both the cell-free and cell to cell infections) and those under the shaking conditions (open circles, reflecting only the cell-free infection). The shadowed regions correspond to 95% posterior predictive intervals. In terms of the dynamics of infected cells and virus production, the simulated values corresponding to cell-to-cell virus propagation, are closer to experimental data from the coupled cell-free and cell-to-cell infection, than to data from the cell-free infection only. This shows that the cell-free infection, which contributes approximately 40% to the whole HIV-1 infection process, plays a limited role on the virus spread. In other words, even if we could completely block the cell-free infection, the cell-to-cell infection would still effectively spread viruses (Sigal et al., 2011). We address this point in ‘Discussion’.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08150/elife-08150-fig4-v1.jpg)
 
-**Figure 4.:** Using our estimated parameters, the pure cell-to-cell infection is simulated in silico (solid curves). The simulated values are located between the time course of experimental data under the static conditions (closed circles) and those under the shaking conditions (open circles). The shadowed regions correspond to 95% posterior predictive intervals.DOI: http://dx.doi.org/10.7554/eLife.08150.011
+**Figure 4.:** Using our estimated parameters, the pure cell-to-cell infection is simulated in silico (solid curves). The simulated values are located between the time course of experimental data under the static conditions (closed circles) and those under the shaking conditions (open circles). The shadowed regions correspond to 95% posterior predictive intervals.
 
 ## Discussion
 
@@ -104,44 +300,172 @@ In addition to HIV-1, other viruses such as herpes simplex virus, measles virus,
 
 ## Materials and methods
 
-## Cell culture and HIV-1 infection
+### Cell culture and HIV-1 infection
 
 Jurkat cell line (Watanabe et al., 2012) was cultured in the culture medium: RPMI 1640 (Sigma, St. Louis, MO) containing 2% fetal calf serum and antibiotics. The virus solution was prepared as previously described (Sato et al., 2010, 2013, 2014; Iwami et al., 2012a). Briefly, 30 μg of pNL4-3 plasmid (Adachi et al., 1986) (GenBank accession no. M19921.2) was transfected into 293T cells by the calcium-phosphate method. At 48 hr post-transfection, the culture supernatant was harvested, centrifuged, and then filtered through a 0.45-μm-pore-size filter to produce virus solution. The infectivity of virus solution was titrated as previously described (Iwami et al., 2012a). Briefly, the virus solution obtained was serially diluted and then inoculated onto phytohemagglutinin-stimulated human peripheral blood mononuclear cells in a 96-well plate in triplicate. At 14 days postinfection, the endpoint was determined by using an HIV-1 p24 antigen enzyme-linked immunosorbent assay (ELISA) kit (ZetptoMetrix, Buffalo, NY) according to the manufacture's procedure, and virus infectivity was calculated as the 50% tissue culture infectious doses (TCID50) according to the Reed-Muench method.
 
 For HIV-1 infection, 3 × 105 of Jurkat cells were infected with HIV-1 (multiplicity of infection 0.1) at 37°C for 2 hr. The infected cells were washed three times with the culture medium, and then suspended with 3 ml of culture medium and seeded into a 25-cm2 flask (Nunc, Rochester, NY). For the static infection, the infected cell culture was kept in a 37°C/5% CO2 incubator as usual. For the shaking infection, the infected cell culture was handled as previously described (Sourisseau et al., 2007). Briefly, the cell culture was kept on a Petit rocker Model-2230 (Wakenyaku, Japan) placed in 37°C/5% CO2 incubator, and was gently shaken at 40 movements per min. The amount of virus particles in the culture supernatant and the number of infected cells were routinely measured as follows: a portion (300 μl) of the infected cell culture was routinely harvested, and the amount of released virions in the culture supernatant was quantified by using an HIV-1 p24 antigen ELISA kit (ZetptoMetrix) according to the manufacture's procedure. The cell number was counted by using a Scepter handled automated cell counter (Millipore, Germany) according to the manufacture's protocol. The percentage of infected cells was measured by flow cytometry. Flow cytometry was performed with a FACSCalibur (BD Biosciences, San Jose, CA) as previously described (Sato et al., 2010; Sato et al., 2011, 2013, 2014; Iwami et al., 2012a), and the obtained data were analyzed with CellQuest software (BD Biosciences). For flow cytometry analysis, a fluorescein isothiocyanate-labeled anti-HIV-1 p24 antibody (KC57; Beckman Coulter, Pasadena, CA) was used. The representative dot plots are shown in Figure 2—figure supplement 3. The data is available upon request. The remaining cell culture was centrifuged and then resuspended with 3 ml of fresh culture medium. It should be noted that the procedure for HIV-1 infection was performed at time t = −2 day in the figures. Because there is no viral protein production in the first day after infection, each in vitro experimental quantity was measured daily from t = 0 day (i.e., 2 days after HIV-1 inoculation). The detection threshold of each value are the followings: cell number (cell counting), 3000 cells/ml; % p24-positive cells (flow cytometry), 0.3%; and p24 antigen in culture supernatant (p24 antigen ELISA), 80 pg/ml.
 
-## Parameter estimation
+### Parameter estimation
 
 A statistical model adopted in the Bayesian inference assumes measurement error to follow normal distribution with mean zero and unknown variance (error variance). A distribution of error variance is also inferred with the Gamma distribution as its prior distribution. Posterior predictive parameter distribution as an output of MCMC computation represents parameter variability. Distributions of model parameters and initial values were inferred directly by MCMC computations. On the other hand, distributions of the basic reproduction numbers and the other quantities were calculated from the inferred parameter sets (Figure 3 for graphical representation). A set of computations for Equations 1–3 with estimated parameter sets gives a distribution of outputs (virus load and cell density) as model prediction. To investigate variation of model prediction, global sensitivity analyses were performed. The range of possible variation is drawn in Figure 2 as 95% confidence interval. Technical details of MCMC computations are summarized in Supplementary file 1.
 
-## Quantification of Jurkat cell growth
+### Quantification of Jurkat cell growth
 
-We here estimate the growth kinetics of Jurkat cells, which have been commonly used for HIV-1 studies, under the normal (i.e., mock-infected) condition with the following mathematical model:(4)dT(t)dt=gT(t)(1−T(t)Tmax),where the variable T(t) is the number of Jurkat cells at time t and the parameters g and Tmax are the growth rate of the cells (i.e., Log2/g is the doubling time) and the carrying capacity of the cell culture flask, respectively. Nonlinear least-squares regression (FindMinimum package of Mathematica9.0) was performed to fit Equation 4 to the time-course numbers of Jurkat cells in the normal condition. The fitted parameter values are listed in Supplementary file 2 and the model behavior using these best-fit parameter estimates is presented together with the data in Figure 2—figure supplement 2.
+We here estimate the growth kinetics of Jurkat cells, which have been commonly used for HIV-1 studies, under the normal (i.e., mock-infected) condition with the following mathematical model:
 
-## Mathematical appendix
+$$
+\frac{dT(t)}{dt}=gT(t)(1−\frac{T(t)}{T_{max}}),
+$$
 
-The linearized equation of Equations 1–3 at the virus-free steady state, (Tmax, 0, 0), is given as follows:(5)dI(t)dt=βTmaxV(t)+ωTmaxI(t)−δI(t),(6)dV(t)dt=pI(t)−cV(t).
+where the variable T(t) is the number of Jurkat cells at time t and the parameters g and Tmax are the growth rate of the cells (i.e., Log2/g is the doubling time) and the carrying capacity of the cell culture flask, respectively. Nonlinear least-squares regression (FindMinimum package of Mathematica9.0) was performed to fit Equation 4 to the time-course numbers of Jurkat cells in the normal condition. The fitted parameter values are listed in Supplementary file 2 and the model behavior using these best-fit parameter estimates is presented together with the data in Figure 2—figure supplement 2.
 
-Let b(t) be the number of newly produced infected cells in the linear phase:(7)b(t):=βTmaxV(t)+ωTmaxI(t).
+### Mathematical appendix
 
-Applying the variation of constants formula to Equations 5, 6, we have(8)V(t)=V(0)e−ct+∫0te−c(t−s)pI(s)ds,(9)I(t)=I(0)e−δt+∫0te−δ(t−z)b(z)dz.
+The linearized equation of Equations 1–3 at the virus-free steady state, (Tmax, 0, 0), is given as follows:
 
-Inserting Equation 9 into Equation 8 to exchange the order of integrals, we have(10)V(t)=g(t)+p∫0t∫0xe−c(x−θ)−δθdθb(t−x)dx,whereg(t)∶=V(0)e−ct+∫0te−c(t−s)pI(0)e−δtds.
+$$
+\frac{dI(t)}{dt}=\betaT_{max}V(t)+\omegaT_{max}I(t)−\deltaI(t),
+$$
 
-From Equation 7 and Equations 9, 10, we arrive at the following renewal equation:b(t)=h(t)+∫0tΨ(x)b(t−x)dx,where h(t) is given byh(t)∶=ωTmaxI(0)e−δt+βTmaxg(t),and the kernel Ψ(x) is given byΨ(x)∶=βTmaxp∫0xe−δθ−c(x−θ)dθ+ωTmaxe−δx,=βTmaxpδc(ϕ1∗ϕ2)(x)+ωTmaxδϕ1(x).
 
-In the above expression, ϕj(x) denotes the probability density function given byϕ1(x)=δe−δx,   ϕ2(x)=ce−cx,and, ∗ denotes the convolution of functions. From the general theory of the basic reproduction number (Inaba, 2012), R0 for the reproduction of infected cells is given byR0=∫0∞Ψ(x)dx=βTmaxpδc+ωTmaxδ=Rcf+Rcc,where Rcf and Rcc denote the reproduction numbers for infected cells mediated by the cell-free and cell-to-cell infection, respectively.
 
-Next we consider the reproduction process of viruses. Let ρ(t):= pI(t) be the number of newly produced viruses at time t. From Equations 8, 9, we obtain(11)ρ(t)=pI(0)e−δt+∫0te−δ(t−z)(βTmaxpV(z)+ωTmaxρ(z))dz, where(12)V(t)=V(0)e−ct+∫0te−c(t−s)ρ(s)ds.
+$$
+\frac{dV(t)}{dt}=pI(t)−cV(t).
+$$
 
-Inserting Equation 11 into Equation 12, we again arrive at the following renewal equation:ρ(t)=q(t)+∫0tΨ(x)ρ(t−x)dx,where q(t) is given byq(t)∶=pI(0)e−δt+∫0te−δ(t−z)pβTmaxV(0)e−czdz.
+Let b(t) be the number of newly produced infected cells in the linear phase:
 
-Note that the reproduction kernel Ψ(x) for the virus reproduction is the same as the kernel for the cell reproduction. Thus the probability density function of the virus reproduction is given byψ(x)∶=Ψ(x)R0=RcfR0(ϕ1∗ϕ2)(x)+RccR0ϕ1(x).
+$$
+b(t):=\betaT_{max}V(t)+\omegaT_{max}I(t).
+$$
 
-Then the generation time for the virus reproduction, denoted by G, is calculated as follows:G∶=∫0∞tψ(t)dt=RcfR0Gcf+RccR0Gcc≤Gcf,where Gcf : = 1/δ + 1/c and Gcc : = 1/δ are the generation times for virus reproduction mediated by the cell-free and cell-to-cell infection, respectively.
+Applying the variation of constants formula to Equations 5, 6, we have
 
-The Malthusian coefficient for the virus reproduction must be given as the dominant real root of the Euler-Lotka equation as∫0∞e−λxΨ(x)dx=βTmaxpδcϕ1^(λ)ϕ2^(λ)+ωTmaxδϕ1^(λ)=1,where ϕj^ denotes the Laplace transformation of a function ϕj. That is,ϕ1^(λ)=∫0∞e−λxϕ1(x)ds=δδ+λ, ϕ2^(λ)=∫0∞e−λxϕ2(x)ds=cc+λ.
+$$
+V(t)=V(0)e^{−ct}+\int0te^{−c(t−s)}pI(s)ds,
+$$
 
-Therefore the Euler-Lotka equation can be calculated explicitly as follows:βTmaxpδcδc(δ+λ)(c+λ)+ωTmaxδδδ+λ=1,which is reduced to a quadratic equation,(13)λ2+δc(Gcc+(1−Rcc)(Gcf−Gcc))λ+δc(1−R0)=0.
 
-If R0 > 1, Equation 13 has a unique positive root, which is no other than the Malthusian coefficient for the virus reproduction, so it is calculated as,λ=−δc(Gcc+(1−Rcc)(Gcf−Gcc))+δ2c2(Gcc+(1−Rcc)(Gcf−Gcc))2−4δc(1−R0)2.
+
+$$
+I(t)=I(0)e^{−\deltat}+\int0te^{−\delta(t−z)}b(z)dz.
+$$
+
+Inserting Equation 9 into Equation 8 to exchange the order of integrals, we have
+
+$$
+V(t)=g(t)+p\int0t\int0xe^{−c(x−\theta)−\delta\theta}d\thetab(t−x)dx,
+$$
+
+where
+
+$$
+g(t)∶=V(0)e^{−ct}+\int0te^{−c(t−s)}pI(0)e^{−\deltat}ds.
+$$
+
+From Equation 7 and Equations 9, 10, we arrive at the following renewal equation:
+
+$$
+b(t)=h(t)+\int0tΨ(x)b(t−x)dx,
+$$
+
+where h(t) is given by
+
+$$
+h(t)∶=\omegaT_{max}I(0)e^{−\deltat}+\betaT_{max}g(t),
+$$
+
+and the kernel Ψ(x) is given by
+
+$$
+Ψ(x)∶=\betaT_{max}p\int0xe^{−\delta\theta−c(x−\theta)}d\theta+\omegaT_{max}e^{−\deltax},
+$$
+
+
+
+$$
+=\frac{\betaT_{max}p}{\deltac}(ϕ_{1}∗ϕ_{2})(x)+\frac{\omegaT_{max}}{\delta}ϕ_{1}(x).
+$$
+
+In the above expression, ϕj(x) denotes the probability density function given by
+
+$$
+ϕ_{1}(x)=\deltae^{−\deltax},   ϕ_{2}(x)=ce^{−cx},
+$$
+
+and, ∗ denotes the convolution of functions. From the general theory of the basic reproduction number (Inaba, 2012), R0 for the reproduction of infected cells is given by
+
+$$
+R_{0}=\int0∞Ψ(x)dx=\frac{\betaT_{max}p}{\deltac}+\frac{\omegaT_{max}}{\delta}=R_{cf}+R_{cc},
+$$
+
+where Rcf and Rcc denote the reproduction numbers for infected cells mediated by the cell-free and cell-to-cell infection, respectively.
+
+Next we consider the reproduction process of viruses. Let ρ(t):= pI(t) be the number of newly produced viruses at time t. From Equations 8, 9, we obtain
+
+$$
+ρ(t)=pI(0)e^{−\deltat}+\int0te^{−\delta(t−z)}(\betaT_{max}pV(z)+\omegaT_{max}ρ(z))dz, 
+$$
+
+where
+
+$$
+V(t)=V(0)e^{−ct}+\int0te^{−c(t−s)}ρ(s)ds.
+$$
+
+Inserting Equation 11 into Equation 12, we again arrive at the following renewal equation:
+
+$$
+ρ(t)=q(t)+\int0tΨ(x)ρ(t−x)dx,
+$$
+
+where q(t) is given by
+
+$$
+q(t)∶=pI(0)e^{−\deltat}+\int0te^{−\delta(t−z)}p\betaT_{max}V(0)e^{−cz}dz.
+$$
+
+Note that the reproduction kernel Ψ(x) for the virus reproduction is the same as the kernel for the cell reproduction. Thus the probability density function of the virus reproduction is given by
+
+$$
+ψ(x)∶=\frac{Ψ(x)}{R_{0}}=\frac{R_{cf}}{R_{0}}(ϕ_{1}∗ϕ_{2})(x)+\frac{R_{cc}}{R_{0}}ϕ_{1}(x).
+$$
+
+Then the generation time for the virus reproduction, denoted by G, is calculated as follows:
+
+$$
+G∶=\int0∞tψ(t)dt=\frac{R_{cf}}{R_{0}}G_{cf}+\frac{R_{cc}}{R_{0}}G_{cc}\leqG_{cf},
+$$
+
+where Gcf : = 1/δ + 1/c and Gcc : = 1/δ are the generation times for virus reproduction mediated by the cell-free and cell-to-cell infection, respectively.
+
+The Malthusian coefficient for the virus reproduction must be given as the dominant real root of the Euler-Lotka equation as
+
+$$
+\int0∞e^{−\lambdax}Ψ(x)dx=\frac{\betaT_{max}p}{\deltac}ϕ_{1}^(\lambda)ϕ_{2}^(\lambda)+\frac{\omegaT_{max}}{\delta}ϕ_{1}^(\lambda)=1,
+$$
+
+where $ϕ_{j}^$ denotes the Laplace transformation of a function ϕj. That is,
+
+$$
+ϕ_{1}^(\lambda)=\int0∞e^{−\lambdax}ϕ_{1}(x)ds=\frac{\delta}{\delta+\lambda}, ϕ_{2}^(\lambda)=\int0∞e^{−\lambdax}ϕ_{2}(x)ds=\frac{c}{c+\lambda}.
+$$
+
+Therefore the Euler-Lotka equation can be calculated explicitly as follows:
+
+$$
+\frac{\betaT_{max}p}{\deltac}\frac{\deltac}{(\delta+\lambda)(c+\lambda)}+\frac{\omegaT_{max}}{\delta}\frac{\delta}{\delta+\lambda}=1,
+$$
+
+which is reduced to a quadratic equation,
+
+$$
+\lambda^{2}+\deltac(G_{cc}+(1−R_{cc})(G_{cf}−G_{cc}))\lambda+\deltac(1−R_{0})=0. 
+$$
+
+If R0 > 1, Equation 13 has a unique positive root, which is no other than the Malthusian coefficient for the virus reproduction, so it is calculated as,
+
+$$
+\lambda=\frac{−\deltac(G_{cc}+(1−R_{cc})(G_{cf}−G_{cc}))+\sqrt{\delta^{2}c^{2}(G_{cc}+(1−R_{cc})(G_{cf}−G_{cc}))^{2}−4\deltac(1−R_{0})}}{2}.
+$$

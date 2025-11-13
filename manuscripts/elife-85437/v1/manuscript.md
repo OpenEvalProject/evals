@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03qryx823 Ruth and Bruce Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel
-2. https://ror.org/01yvj7247 Bnai Zion Medical Center Haifa Israel
+1. Ruth and Bruce Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+2. Bnai Zion Medical Center Haifa Israel ([ROR:01yvj7247](https://ror.org/01yvj7247))
 
 † Corresponding author
 

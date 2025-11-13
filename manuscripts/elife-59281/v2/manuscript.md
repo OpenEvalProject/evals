@@ -30,31 +30,55 @@ We therefore sought to determine the role of PL projections to VS and to BLA in 
 
 ## Results
 
-## PL projections to the VS: photoactivation impairs avoidance
+### PL projections to the VS: photoactivation impairs avoidance
 
 Our previous study revealed that inhibitory tone responses in PL neurons were only observed in rats that received avoidance training (Diehl et al., 2018). We interpreted this as inhibitory responses in PL signaling the avoidability of the tone-predicted shock. Opposing these inhibitory responses by photoactivating PL at the baseline rate of 4 Hz impaired avoidance. Because PL projects densely to the VS (Sesack et al., 1989; Vertes, 2004), we hypothesized that inhibitory responses in PL neurons projecting to the VS would promote avoidance. If so, activating these projection neurons with channelrhodopsin (ChR2) would be expected to impair avoidance. Following viral infusion and surgical implantation of optic probes, rats were trained in PMA over 10 days as previously described (Figure 1A, Bravo-Rivera et al., 2014; Rodriguez-Romaguera et al., 2016; Diehl et al., 2018). Histological analysis showed that expression of ChR2 was largely confined to rostral PL with some spread to rostral anterior cingulate (Cg1) and caudal PL (Figure 1—figure supplement 1A). Following training, blue laser light (473 nm) was used to activate PL terminals in VS, at a frequency of either 4 Hz or 15 Hz (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig1-v2.jpg)
+
+**Figure 1.:** (A) Rats were trained in platform-mediated avoidance (PMA) for 10 days, followed by a test with laser illumination during the tone. (B) Schematic of virus infusion and optic probe placement. The CaMKII-α promoter was used for all AAVs. (C) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and 4 Hz and 15 Hz Laser tests performed one or four days later. (D) Timecourse of avoidance during 4 Hz Laser revealed that PL-VS ChR2 (n = 8) rats showed delayed avoidance compared to eYFP (n = 12) controls (repeated-measures ANOVA, post-hoc Tukey). (E) Same as in panel D with 15 Hz Laser. (F) Schematic of ArchT virus infusion and optic probe placement. (G) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and Test day (Tone with Laser). (H) Timecourse of avoidance during Test revealed that ArchT (n = 8) rats showed similar percent time on platform compared to eYFP (n = 14) controls (NS; repeated-measures ANOVA, post-hoc Tukey). All data are shown as mean ± SEM. *p<0.05, **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Min/max spread of AAV expression with example micrograph. (B) Location of optic fiber tips with example micrograph for each projection tested.
 
 Figure 1C shows that ChR2 photoactivation at either frequency significantly reduced the time spent on the platform during the tone, compared to eYFP controls (4 Hz: eYFP 77% vs. ChR2 51%, t(18)=2.370, p>0.05, Bonferroni corrected; 15 Hz: eYFP 88% vs. ChR2 22%, t(18)=7.152, p<0.01, Bonferroni corrected). Analysis of avoidance across the tone in 3 s bins (Figure 1D) indicated that ChR2 rats were significantly delayed in their avoidance 3–6 s after tone onset during 4 Hz photoactivation (repeated-measures ANOVA, F(1,9) = 5.88, p=0.026; post-hoc Tukey test, 3–6 s p=0.029). Photoactivation at 15 Hz had a stronger effect, with ChR2 rats showing a significant reduction of avoidance throughout the tone (Figure 1E, repeated-measures ANOVA, F(1,9) = 48.92, p<0.001; post-hoc Tukey test, 6–30 s, all p’s < 0.01). Photoactivation of PL-VS projections had no effect on locomotion, as indicated by distance traveled in an open field (4 Hz; eYFP n = 15, 2.7 m vs. ChR2 n = 7, 2.2 m, t(20)=1.54 p=0.138), nor on anxiety levels, as both groups spent a similar amount of time in the center of the open field (4 Hz: eYFP n = 15, 4.1 s vs. ChR2 n = 7, 6.4 s, t(20)=1.17, p=0.255). Thus, photoactivation of PL terminals in VS during the tone impaired the expression of avoidance, similar to photoactivation of PL somata (Diehl et al., 2018).
 
 If photoactivation impairs avoidance, we hypothesized that photosilencing PL-VS projections would enhance avoidance, similar to what we observed when photosilencing PL somata (Diehl et al., 2018). Archaerhodopsin (ArchT) was infused into PL and optic fibers were implanted to target PL terminals in VS (Figure 1F; Figure 1—figure supplement 1B). However, photosilencing PL-VS projections had no significant effect on average avoidance levels (Figure 1G, eYFP 76% vs. ArchT 69%, t(20)=0.8498, p=0.406) or on the timecourse of avoidance across the tone (Figure 1H, repeated-measures ANOVA, F(1,9)=0.7088, p=0.410). Photosilencing PL-VS projections also had no effect on spontaneous bar-pressing (ArchT, n = 9, seven average number of presses during laser OFF vs. six average number of presses during laser ON, t(8)=1.32, p=0.224). These negative findings of photosilencing PL-VS projections disagree with our prior somatic results (Diehl et al., 2018) and may be due to a ceiling effect or other factors (see Discussion).
 
-## PL projections to the BLA: photoactivation facilitates avoidance
+### PL projections to the BLA: photoactivation facilitates avoidance
 
 Our previous study suggested that PL excitation was not necessary for avoidance, because photosilencing PL somata did not impair avoidance (Diehl et al., 2018). Nevertheless, excitatory responses of PL neurons were observed during both tone onset and platform entry, and the opposing effects on behavior of inhibitory and excitatory responses may have been masked by our non-specific targeting of PL somata. Anatomical studies demonstrate strong projections from PL to BLA (Sesack et al., 1989; Vertes, 2004). Therefore, we sought to determine if optogenetic manipulation of PL projections to BLA would modulate avoidance. ChR2 was infused into PL and optic fibers were implanted in BLA (Figure 2A; Figure 2—figure supplement 1A). In contrast to PL-VS photoactivation, PL-BLA photoactivation at 4 or 15 Hz did not impair avoidance; in fact, avoidance significantly increased with 15 Hz photoactivation (Figures 2B, 4 Hz: eYFP 80% vs. ChR2 90%, t(11)=1.652, p=0.127; 15 Hz: eYFP 75% vs. ChR2 88%, t(15)=2.700, p<0.05, Bonferroni corrected). Analysis across the tone (Figure 2C–D) revealed increased avoidance with 15 Hz photoactivation at both 3 s and 6 s time bins (Mann-Whitney U-test, 3–6 s p=0.006, 6–9 s p=0.027).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of ChR2 virus infusion and optic probe placement. (B) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and 4 Hz and 15 Hz Tests (with Laser). (C) Timecourse of avoidance during the 4 Hz Test (ChR2 n = 5, eYFP n = 8). (D) Same as in panel B with 15 Hz Laser (ChR2 n = 9, eYFP n = 8). (E) Photoactivation of PL-BLA projections (15 Hz) reinstates avoidance following extinction (ChR2 n = 4, eYFP n = 4). (F) Schematic of ArchT virus infusion and optic probe placement. (G) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and Test (Tone with Laser). (H) Timecourse of avoidance during Test revealed that ArchT (n = 9) rats showed delayed avoidance compared to eYFP (n = 11) controls (repeated-measures ANOVA, post-hoc Tukey). All data are shown as mean ± SEM. *p<0.05, **p<0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Min/max spread of AAV expression with example micrograph. (B) Location of optic fiber tips with example micrograph for each projection tested.
+
 The small effect of photoactivation of PL-BLA projections is likely due to ceiling levels of avoidance, as control rats avoided at 82% (Figure 2B, No Laser Cond). To reduce avoidance levels, we extinguished a subset of rats by administering 15 trials of avoidance extinction (tone without shock, no laser, Figure 2E). On the last trial of extinction, photoactivation of PL terminals in BLA (at 15 Hz) significantly increased avoidance compared to eYFP controls (eYFP 2.4% vs. ChR2 34.5% time on platform, t(6)=3.269, p=0.017). Photoactivation of this pathway did not affect locomotion (15 Hz: n = 6 eYFP, 3.2 m vs. n = 5 ChR2, 3.1 m of distance traveled in an open field, t(9)=0.196, p=0.849), or anxiety levels (15 Hz: n = 6 eYFP, 5.1 s vs. n = 5 ChR2, 4.0 s of time spent in center of open field, t(9)=0.318, p=0.757;). Overall, these findings suggest that PL activation of BLA promotes avoidance.
 
-## PL projections to the BLA: photosilencing impairs avoidance
+### PL projections to the BLA: photosilencing impairs avoidance
 
 We next determined whether photosilencing PL-BLA projections would impair avoidance, demonstrating the necessity of this excitatory pathway in avoidance expression. Rats infused with ArchT in PL and implanted with optic fibers in BLA (Figure 2F; Figure 2—figure supplement 1B) underwent avoidance training followed by a test of avoidance expression. Photosilencing PL-BLA projections significantly impaired the expression of avoidance (Figure 2G, eYFP 77% vs. ArchT 38% time on platform, t(18)=2.985, p<0.05, Bonferroni corrected). Furthermore, ArchT rats showed an overall decrease in avoidance across the tone compared to eYFP controls (Figure 2H, repeated-measures ANOVA, F(1,9)=9.449, p=0.007, post-hoc Tukey tests, 3–9 and 12–24 s, all p’s < 0.05). Photosilencing PL-BLA projections had no effect on spontaneous bar-pressing (ArchT n = 11, 4.82 average number of presses during laser OFF vs. 5.77 average number of presses during laser ON, p=0.255, t(10)=1.21). These findings suggest that PL excitation of BLA is necessary for the expression of active avoidance.
 
-## BLA projections to the VS: photoactivation facilitates avoidance
+### BLA projections to the VS: photoactivation facilitates avoidance
 
 Thus far, distinct PL projections appear to have opposite roles in avoidance: PL-VS projections inhibit avoidance whereas PL-BLA projections promote avoidance. How might signaling between VS and BLA regulate avoidance? Previous studies have shown that BLA sends strong projections to VS (Kelley et al., 1982; Mcdonald, 1991a; Mcdonald, 1991b), and pharmacological disconnection of BLA and VS impairs shuttle avoidance (Ramirez et al., 2015). Therefore, we reasoned that BLA-VS projections may also promote avoidance. Following ChR2 infusion into BLA and implantation of optic fibers targeting the VS (Figure 3A; Figure 3—figure supplement 1A), photoactivation of BLA-VS projections slightly increased avoidance, but this did not reach statistical significance (Figure 3B) at 4 Hz (eYFP 70% vs. ChR2 90% time on platform, t(12)=1.678, p=0.119) or 15 Hz (eYFP 70% vs ChR2 86% time on platform, t(12)=1.50, p=0.159). There was also no significant difference in the timecourse of avoidance across the tone (Figure 3C–D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of ChR2 virus infusion and optic probe placement. (B) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and 4 Hz and 15 Hz Laser tests. (C) Timecourse of avoidance during 4 Hz Laser revealed that BLA-VS ChR2 (n = 7) rats showed no significant difference in percent time on platform compared to eYFP (n = 7) controls (repeated-measures ANOVA, post-hoc Tukey). (D) Same conventions as in panel C during 15 Hz Laser. (E) 15 Hz photoactivation of VS-BLA projections reinstates avoidance following extinction (ChR2 n = 7, eYFP n = 7). (F) Schematic of ArchT virus infusion and optic probe placement. (G) Percent time on platform during the last day of avoidance conditioning (Cond; No Laser), and Test (Tone with Laser). (H) Timecourse of avoidance during Test revealed that ArchT (n = 7) rats showed impaired avoidance compared to eYFP (n = 14) controls (repeated-measures ANOVA, post-hoc Tukey). All data are shown as mean ± SEM. *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59281/elife-59281-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Min/max spread of AAV expression with example micrograph. (B) Location of optic fiber tips with example micrograph for each projection tested.
+
 Similar to photoactivation of PL-BLA projections, a ceiling effect was observed during photoactivation of BLA-VS projections. Therefore, a subset of rats underwent avoidance extinction to determine if photoactivating BLA-VS projections would reinstate avoidance expression (Figure 3E). In the final trial of extinction training, photoactivation of BLA-VS projections at 15 Hz significantly increased avoidance expression (eYFP 9% vs. ChR2 38% time on platform, t(11)=3.521, p=0.005). Photoactivation did not affect locomotion (15 Hz: n = 5 eYFP, 2.7 m vs. n = 7 ChR2, 3.2 m of distance traveled in an open field, t(10)=1.10, p=0.298), or anxiety levels (15 Hz: n = 5 eYFP, 4.0 s vs. n = 7 ChR2, 4.2 s of time spent in center of open field, t(10)=0.0085, p=0.934). Taken together, these findings show that BLA-VS projections facilitate the expression of avoidance.
 
-## BLA projections to the VS: photosilencing impairs avoidance
+### BLA projections to the VS: photosilencing impairs avoidance
 
 To establish the necessity of the BLA-VS excitatory pathway in avoidance expression, we assessed whether photosilencing BLA-VS projections would impair avoidance. Following infusions of ArchT into BLA and optic fiber implantation into VS (Figure 3F; Figure 3—figure supplement 1B), rats underwent PMA training followed by a test of avoidance expression. Photosilencing BLA-VS projections significantly impaired the expression of avoidance (Figure 3G, eYFP 78% vs. ArchT 28%, t(19)=3.849, p<0.01, Bonferroni corrected). Furthermore, ArchT rats showed a decrease in avoidance throughout the tone, compared to eYFP controls (Figure 3H, repeated-measures ANOVA, F(1,9)=5.23, p=0.034, post-hoc Tukey tests, 6–15 s, all p’s < 0.01, 15–18 s, p<0.05). Photosilencing BLA-VS projections did not affect spontaneous bar-pressing (ArchT n = 6, 5.75 average number of presses during laser OFF vs. 7.58 average number of presses during laser ON, t(5)=1.27, p=0.259). Overall, these findings suggest that BLA excitation of VS is necessary for the expression of active avoidance.
 
@@ -78,11 +102,56 @@ The rodent PL is thought to be homologous to the dorsal anterior cingulate corte
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Chlamydomonas reinhardtii)</td>
+      <td>AAV5:CaMKIIα::hChR2(H134R)-eYFP</td>
+      <td>UNC vector core</td>
+      <td>channelrhodopsin (ChR2)</td>
+      <td>Serotype 5; 4 × 1012 particles/mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Aequorea victoria)</td>
+      <td>AAV5:CaMKIIα::eYFP</td>
+      <td>UNC vector core</td>
+      <td>Enhanced yellow fluorescent protein (eYFP)</td>
+      <td>Serotype 5; 3 × 1012 particles/mL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Halorubrum sodomense)</td>
+      <td>AAV5:CaMKIIα::eArchT3.0-eYFP</td>
+      <td>UNC vector core</td>
+      <td>Archaerhodopsin (ArchT)</td>
+      <td>Serotype 5; 4 × 1012 particles/mL</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANY-Maze behavioral software</td>
+      <td>Stoelting</td>
+      <td>ANY-Maze</td>
+      <td>Woodale, IL</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 118 adult male Sprague Dawley rats (Envigo Laboratories, Indianapolis, IN) aged 3–5 months and weighing 320–420 g were housed and handled as previously described (Diehl et al., 2018). Rats were kept on a restricted diet (18 g/day) of standard laboratory rat chow to facilitate pressing a bar for sucrose pellets (BioServ, Flemington, NJ) on a variable interval schedule of reinforcement (VI-30). Rats were trained until they reached a criterion of >15 presses/min. All procedures were approved by the Institutional Animal Care and Use Committee of the University of Puerto Rico School of Medicine in compliance with the National Institutes of Health guidelines for the care and use of laboratory animals.
 
-## Surgery
+### Surgery
 
 Rats were anesthetized with isoflurane inhalant gas (5%) first in an induction chamber, then positioned in a stereotaxic frame (Kopf Instruments, Tujunga, CA). Isoflurane (1–3%) was delivered through a facemask for anesthesia maintenance. Prior to beginning the surgery, rats were administered an analgesic (Meloxicam, 1 mg/Kg) subcutaneously.
 
@@ -90,32 +159,32 @@ For optogenetic experiments, rats were bilaterally infused with viral vectors in
 
 After surgery, triple antibiotic was applied topically around the surgery incision, and 24 hr following surgery, an analgesic (Meloxicam, 1 mg/kg) was injected subcutaneously once again. Rats were allowed a minimum of 7 days to recover from surgery prior to behavioral training.
 
-## Behavior
+### Behavior
 
 Rats were initially trained to press a bar to receive food pellets on a variable interval reinforcement schedule (VI-30) inside standard operant chambers (Coulbourn Instruments, Whitehall, PA) located in sound-attenuating cubicles (MED Associates, St. Albans, VT). Bar-pressing was used to maintain a constant level of activity against which avoidance could reliably be measured. For platform-mediated avoidance, rats were trained as previously described (Bravo-Rivera et al., 2014). Rats were conditioned with a pure tone (30 s, 4 kHz, 75 dB) co-terminating with a footshock delivered through the floor grids (2 s, 0.3–0.4 mA). The inter-trial interval (ITI) was variable, averaging 3 min. An acrylic square platform (14.0 cm each side, 0.33 cm tall) located in the opposite corner of the sucrose dish allowed rats to be protected from the shock. The platform was fixed to the floor and was present during all stages of training. Rats were conditioned for 10 days with nine tone-shock pairings per day and a VI-30 schedule maintained across all training and test sessions. The availability of food on the side opposite to the platform motivated rats to leave the platform during the ITI, facilitating trial-by-trial assessment of avoidance.
 
 Once platform-mediated avoidance was learned, rats underwent an avoidance expression test, involving the presentation of tones without shock. Laser manipulation occurred during the presentation of tone 1. Following the avoidance expression test, a subset of rats underwent extinction training, which involved 15 tone presentations without shock. Laser manipulation took place on the 15th tone to assess for avoidance reinstatement after extinction.
 
-## Viruses
+### Viruses
 
 The adeno-associated viruses (AAVs; serotype 5) were obtained from the University of North Carolina Vector Core (Chapel Hill, NC). Viral titers were 4 × 1012 particles/mL for channelrhodopsin (AAV5:CaMKIIα::hChR2(H134R)-eYFP) and archaerhodopsin (AAV5:CaMKIIα::eArchT3.0-eYFP), and 3 × 1012 particles/mL control (AAV5:CaMKIIα::eYFP). Rats expressing eYFP in PL or BLA were used to control potential changes in neural activity due to laser-induced overheating of tissue (Stujenske et al., 2015). The CaMKIIα promoter was used to enable transgene expression favoring pyramidal neurons (Liu and Jones, 1996 ) in cortical regions (Jones et al., 1994; Van den Oever et al., 2013; Warthen et al., 2016). Viruses were housed in a −80°C freezer until the day of infusion.
 
-## Laser delivery
+### Laser delivery
 
 Rats expressing channelrhodopsin (ChR2) in PL or BLA were illuminated using a blue diode-pump solid state laser (DPSS, 473 nm, 4 or 15 Hz, 5 ms pulse width, 8–12 mW at the optical fiber tip; OptoEngine, Midvale, UT), similar to our previous study (Do-Monte et al., 2015). Rats expressing archaerhodopsin (ArchT) in PL were bilaterally illuminated using a DPSS green laser (532 nm, constant, 12–15 mW at the optical fiber tip; OptoEngine). For both ChR2 and ArchT experiments, the laser was activated at tone onset and persisted throughout the 30 s tone presentation. Laser light was passed through a shutter/coupler (200 nm, Oz Optics, Ontario, Canada), patch cord (200 nm core, ThorLabs, Newton NJ), rotary joint (200 nm core, 1 × 2, Doric Lenses, Quebec city, Canada), dual patch cord (0.22 NA, 200 nm core, ThorLabs), and bilateral optical fibers targeting the specific subregions in PL or BLA. Rats were familiarized with the patch cord during bar press training and the last 4 days of avoidance conditioning before the expression test.
 
-## Open field task
+### Open field task
 
 Locomotor activity in the open field arena (90 cm diameter) was automatically assessed (ANY-Maze) by measuring distance traveled, time spent, and speed in center or periphery of the arena during 30 s laser off and laser on time periods. A 3 min acclimation period preceded 30 s of 4 Hz photo-activation, which was followed by an additional 3 min ITI, and a second 30 s laser trial of 15 Hz photo-activation. The distance and speed traveled was used to assess locomotion and time in center was used to assess anxiety.
 
-## Pressing test
+### Pressing test
 
 Rats pressed on a variable interval reinforcement schedule (VI-30). Changes in the average number of presses were measured during two trials of Laser On (30 s) and Laser Off periods (30 s preceding Laser On). The task began with a 60 s acclimation period, followed by 30 s of Laser On (532 nm), which was followed by a 60 s ITI and 30 s of Laser On. The number of lever activations was compared during Laser Off and Laser On periods within subjects using a paired-t-test.
 
-## Histology
+### Histology
 
 After behavioral experiments, rats were deeply anesthetized with sodium pentobarbital (450 mg/kg i.p.) and transcardially perfused with 0.9% saline followed by a 10% formalin solution. Brains were removed from the skull and stored in 30% sucrose for cryoprotection for at least 72 hr before sectioning and Nissl staining. Histology was analyzed for placement of viral expression and optic fibers.
 
-## Data collection and analysis
+### Data collection and analysis
 
 Behavior was recorded with digital video cameras (Micro Video Products, Peterborough, Ontario, Canada). ANY-Maze software (Stoelting, Wood Dale, IL) was used to detect the animal’s location and movements. ANY-Maze was used to quantify the time spent on the platform during tone presentations as a measure of avoidance. Avoidance to the tone was expressed as a percentage of the 30 s tone presentation. Statistical significance was determined with Student’s two-tailed t tests, Fisher Exact tests, Mann–Whitney U tests, or repeated-measures ANOVA, followed by post- hoc Tukey analysis, where appropriate using STATISTICA (Statsoft, Tulsa, OK) and Prism (Graphpad, La Jolla, CA).

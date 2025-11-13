@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.30649.001 Human speech is one of the few examples of vocal learning among mammals yet ~half of avian species exhibit this ability. Its neurogenetic basis is largely unknown beyond a shared requirement for FoxP2 in both humans and zebra finches. We manipulated FoxP2 isoforms in Area X, a song-specific region of the avian striatopallidum analogous to human anterior striatum, during a critical period for song development. We delineate, for the first time, unique contributions of each isoform to vocal learning. Weighted gene coexpression network analysis of RNA-seq data revealed gene modules correlated to singing, learning, or vocal variability. Coexpression related to singing was found in juvenile and adult Area X whereas coexpression correlated to learning was unique to juveniles. The confluence of learning and singing coexpression in juvenile Area X may underscore molecular processes that drive vocal learning in young zebra finches and, by analogy, humans.
+Human speech is one of the few examples of vocal learning among mammals yet ~half of avian species exhibit this ability. Its neurogenetic basis is largely unknown beyond a shared requirement for FoxP2 in both humans and zebra finches. We manipulated FoxP2 isoforms in Area X, a song-specific region of the avian striatopallidum analogous to human anterior striatum, during a critical period for song development. We delineate, for the first time, unique contributions of each isoform to vocal learning. Weighted gene coexpression network analysis of RNA-seq data revealed gene modules correlated to singing, learning, or vocal variability. Coexpression related to singing was found in juvenile and adult Area X whereas coexpression correlated to learning was unique to juveniles. The confluence of learning and singing coexpression in juvenile Area X may underscore molecular processes that drive vocal learning in young zebra finches and, by analogy, humans.
 
 ## Introduction
 
@@ -39,19 +39,67 @@ These observations pinpoint FoxP2 as a molecular entry point to the pathways und
 
 ## Results
 
-## Virus-mediated overexpression of FoxP2 isoforms affects song learning and/or vocal variability
+### Virus-mediated overexpression of FoxP2 isoforms affects song learning and/or vocal variability
 
 Adeno-associated viral (AAV) constructs were used to drive overexpression of FoxP2.FL or FoxP2.10+ in Area X of developing males (Figure 1—figure supplement 1). To verify isoform-specific overexpression, we used two riboprobes in in situ hybridization experiments: one antisense to a region common to both transcripts (mid probe) and one antisense to a region near the 3’ end of FoxP2.FL (3’ probe; [Teramitsu and White, 2006]; Figure 1A). Robust signals beyond endogenous/background levels were observed in the striatopallidum of both hemispheres using the mid probe but only in the hemisphere injected with the FoxP2.FL construct using the 3’ probe (Figure 1B). These results indicate that each viral construct overexpressed its encoded FoxP2 isoform and was thus suitable for bilateral injection into Area X of juvenile males at 35d. An additional cohort received AAV encoding GFP as a control. We quantified levels of FoxP2 expression at 65d by performing qRT-PCR with a set of primers that amplifies a region common to both transcripts (Haesler et al., 2007; Olias et al., 2014) and another set specific to the FoxP2.10+ (see Materials and methods). The first primer set indicated that FoxP2 levels were higher in birds injected with either construct relative to control levels. When quantified by the second primer set, we found elevated PCR product only in the animals injected with the FoxP2.10+ construct (Figure 1C). No overexpression was detected in the ventral striatopallidum (VSP; the zebra finch striatum is interspersed with pallidal-like cells and is separate from the pallidum [Reiner et al., 2004]) (Figure 1—figure supplement 2). Taken together, these results indicate that both constructs were effective in elevating levels of their encoded FoxP2 isoform within Area X throughout the 30d experimental period.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematics show full-length (FoxP2.FL) and 10+ (FoxP2.10+) isoforms. Regions whose transcripts were targeted by the complementary riboprobes are shown in red. (B) Left panel depicts experimental design to test for isoform-specific expression in vivo. Middle and right images depict two sections from the same female brain. For purposes of validation only, the bird’s right hemisphere (shown on left) was injected with an AAV expressing FoxP2.FL while the left hemisphere was injected with the FoxP2.10+ construct. Two weeks post-injection, robust signals were observed in the striatopallidum of both hemispheres using the mid probe but only in the hemisphere injected with the FoxP2.FL construct using the 3’ probe. Signals reflect both the endogenous FoxP2 expression pattern (Teramitsu and White, 2006; Teramitsu et al., 2004; Teramitsu et al., 2010) as well as enhanced levels due to viral-driven expression. (C) FoxP2 expression quantified by qRT-PCR in juvenile males that were bilaterally injected with one of the constructs at 35d using primers that identify both isoforms (left graph) or only the FoxP2.10+ isoform (right graph). Using the former primers, enhanced expression is observed in the FoxP2.FL (grey; 126.5 ± 13.53%; n = 6) and FoxP2.10+ (red; 162.4 ± 26.77%; n = 6) groups relative to levels of birds that received the GFP control construct (green; 100 ± 7.54%; n = 7). Using the ‘FoxP2.10+ Only’ primers, enhanced expression is only observed in the FoxP2.10+ group (red; 279 ± 52.69%; n = 6) vs. the FoxP2.FL (grey; 126.16 ± 24.61%; n = 6) and GFP (green; 100 ± 22.95%; n = 7). Values represent percentage relative to GFP ±SEM. * and # denote p=0.031 and p=0.084, respectively, of an unpaired two-tailed bootstrap test. (D) A cell in the zebra finch striatopallidum expressing GFP (indicating viral transduction; green), endogenous FoxP2 as revealed by an antibody directed to the C-terminus (red), and Xpress-FoxP2.10+ revealed by an antibody to the Xpress tag (cyan). The Xpress signal is reminiscent of FoxP2.10+ aggresomes observed by Vernes et al. (Vernes et al., 2006). Orthogonal views of the cell are presented below. Scale bar = 5 µM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Immunoblot loaded with 20 and 10 micrograms of zebra finch whole brain homogenate. Incubation with an antibody (Proteintech, Rosemont, IL, USA, Cat. No. 20529–1-AP) against the N-terminus of FoxP2 reveals bands at the predicted molecular weights in zebra finch (FL,~77 and 79 kDa, 10+,~47 kDa). GAPDH signals (~32 kDa) were used as a loading control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** In contrast to Area X, FoxP2 overexpression is not observed in VSP samples.
 
 Overexpression of a tagged form of FoxP2.10+ in a human neuronal cell line (SH-SY5Y) suggested that FoxP2.10+ acts as a posttranslational regulator of FoxP2.FL through heterodimerization and the formation of cytoplasmic aggresomes (Vernes et al., 2006). We thus examined the protein-level distribution of FoxP2.10+ and FoxP2.FL in the finch striatopallidum following overexpression of an N-terminus Xpress tagged FoxP2.10+ linked to a GFP reporter (see Stereotaxic Surgery and Viruses in Materials and methods). Transduced cells shared the distinctive FoxP2.10+ staining pattern of aggresomes seen previously. In FoxP2+ cells that co-expressed the Xpress tag and GFP reporter, endogenous FoxP2.FL signal was interspersed among Xpress-positive puncta (Vernes et al., 2006) (Figure 1D).
 
 We previously found that, in unmanipulated birds, two hours of UD singing in the morning is sufficient to decrease Area X FoxP2 mRNA (as measured by both the mid and 3’ probes) and protein (Teramitsu and White, 2006; Miller et al., 2008). This decrease in FoxP2 was accompanied by an increase in the variability of UD songs, in the form of decreased self-similarity (see Materials and methods), that were sung subsequent to the two hour time-point, a paradigm which we term UD-UD (Miller et al., 2010; Hilliard et al., 2012a). In contrast, when birds were distracted from singing for two hours in the morning (non-singing; NS), their subsequent UD songs (termed NS-UD) were less variable. Moreover, overexpression of FoxP2.FL in Area X abolished the increase in vocal variability normally induced by the UD-UD paradigm (Heston and White, 2015). These observations indicate that downregulation of full length FoxP2 is important for acute vocal variability but we did not directly manipulate FoxP2.10+. Here, we performed similar behavioral experiments to test for the induction of vocal variability and included the FoxP2.10+ injected animals (Figure 2A and B). To assess whether UD singing drove an increase in vocal variability, we used the UD-UD paradigm (see Materials and methods) and quantified the effect of two hours of UD singing on the coefficient of variation (CV) of acoustic features in the subsequent UD songs of ~60d birds overexpressing GFP, FoxP2.FL, or FoxP2.10+. Results were compared to songs sung by the same birds undergoing the NS-UD paradigm. As predicted, GFP-expressing animals exhibited a negative effect size for most acoustic features, and FoxP2.FL overexpression diminished these practice-induced changes in vocal variability, replicating our previous findings (Heston and White, 2015) (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig2-v3.jpg)
+
+**Figure 2.:** (A) Timeline of experimental procedures relative to critical periods in song development. (B) Schematic illustrates NS-UD or UD-UD experiments performed on adjacent days. (C) The effect size of two hours of UD singing on syllable CV was calculated using the formula (NS-UD)/(NS + UD) after an NS-UD, UD-UD experiment performed at ~60d and 61d as in (B). Overexpression of FoxP2.FL (grey bars; n = 16 syllables; Duration = −0.059 ± 0.029; AM = −0.010 ± 0.028; Entropy = −0.038 ± 0.04) diminishes singing induced variability relative to that seen in GFP-expressing controls (green bars; n = 9 syllables; Duration = −0.128 ± 0.071; AM = −0.065 ± 0.035; Entropy = −0.091 ± 0.034). In contrast, overexpression of FoxP2.10+ (red bars; n = 13 syllables; Duration = 0.070 ± 0.054; AM = 0.088 ± 0.047; Entropy = 0.048 ± 0.029) leads to a singing-induced state of relative invariability. Values and bar heights represent the average effect size for all syllables within the virus construct group ±SEM. * denotes significant result in one-way ANOVA (Duration: F(2,35) = 3.95, p=0.028; AM: F(2,35) = 3.96, p=0.028; Entropy: F(2,35) = 3.63, p=0.037) and Tukey’s HSD post-hoc test (p<0.05). (D) Learning curves plot the relationship between percentage similarity to tutor as a function of time. Animals overexpressing GFP (green; letter ‘B’; n = 7 birds;~65 d similarity = 67.2 ± 6.64%) or FoxP2.10+ (red, letter ‘A’; n = 5 birds;~65 d similarity = 75.8 ± 2%) learn significantly better than those overexpressing FoxP2.FL (grey, letter ‘C’; n = 5 birds;~65 d similarity = 44.3 ± 10.1%). Values are mean ±SEM. Data are binned by day (top panel; bold points represent group mean and shifted smaller points are individual birds) or by individuals (bottom panel). Significantly different groups tested by one-way ANOVA (Bin 1:~40d F(2,11) = 6.06, p=0.016; Bin 3:~55d F(2,13) = 6.04, p=0.014; Bin 4:~60d F(2,14) = 9.94, p=0.002; Bin 5:~65d F(2,14) = 4.76, p=0.026) and Tukey HSD post-hoc test (p<0.05) are denoted by capital and lowercase lettering. (E) Exemplar motifs of a tutor and three of his 65d pupils, each of which was injected with a different viral construct at 30d. These examples illustrate the percent similarity depicted in panel D. (F) Summary of the learning and variability phenotypes observed after virus injection.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The raw acoustic feature CVs transformed by the calculation in Figure 2C show the variability relationship between NS-UD and UD-UD paradigms for all measured acoustic features. For most song features, UD singing drives increases in CV in the GFP group. This effect is blocked or reversed in the FoxP2.FL and FoxP2.10+ groups, respectively. Notably, the songs of FoxP2.10+ animals following 2 hr of UD song were significantly less variable than those after 2 hr of non-singing. Asterisks indicate a significant difference (p<0.05) in a paired resampling test within virus construct. See Materials and methods for more information regarding the transformation of raw data to effect size.
+
 Unexpectedly, in animals overexpressing FoxP2.10+, song variability after two hours of UD singing (UD-UD) was significantly less than that after two hours of non-singing (NS-UD) for syllable duration, amplitude modulation, and Wiener entropy (Figure 2C). Rather than increasing song variability (as in the GFP group) or creating a state of equivalent variability (as in the FoxP2.FL group), UD-UD singing led to markedly invariable songs in the FoxP2.10+ birds, suggesting a role for FoxP2.10+ in promoting song stability. We also examined variability in the raw acoustic features of NS-UD and UD-UD song and found that expression of either FoxP2 isoform did not dramatically alter variability, indicating that the viral-driven overexpression specifically affected the modulation of variability (See ‘Acute Modulation of Vocal Variability’ in Materials and methods) and not its overall level (Figure 2—figure supplement 1 and Materials and methods). Despite its suppressive effect on practice-induced song variability, overexpression of FoxP2.10+ did not impair overall vocal learning (Figure 2D and E). As shown by Heston and White (Heston and White, 2015), FoxP2.FL birds were capable of changing their songs over the course of the experiment (data not shown) but were less able to match their tutors’ songs (Figure 2D and E). These results suggest that the ability to modulate between relatively low and high variability states is important for proper vocal learning.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-v3.jpg)
+
+**Figure 3.:** (A) Dendrogram (top) illustrates the topological overlap between genes in the juvenile Area X overall network. Modules delineated by automated tree trimming are shown below and are depicted by arbitrary colors. Beneath the color bar, gene significances to the quantified behaviors (number of motifs sung, tutor similarity, acute variability changes, and overall variability; see Results) are indicated by a heatmap wherein red indicates a positive correlation and blue indicates a negative correlation (see B for scale). (B) Correlations between module eigengenes and each behavior are presented as a heatmap. The Pearson’s ρ and, in parentheses, Student’s asymptotic p-values for modules where p≤0.05 are displayed. P-values are uncorrected for multiple hypothesis testing but those that pass FDR correction at p≤0.05 are denoted by * (See ‘Correlation of behavior to gene expression’ in Materials and methods). (C) For all significant module-trait correlations, the relationship between gene significance and module membership is plotted for each gene in the module. Dashed lines represent the linear regression and the Pearson’s ρ (‘cor’) and p-value as determined by Fisher’s z-transformation are indicated above each plot. (D) The average whole network connectivity (kTotal) within each module reveals that the purple, green, and pink modules are composed of the most strongly connected genes in the network. (E) Term significances for the black, darkred, and green modules are indicated for disease, gene ontology biological process and molecular function, as well as for pathways for categories annotated as ‘neuronal’ in the GeneCards GeneAnalytics software. (F) Network plots of the modules presented in panel E where nodes represent genes scaled by the node’s intramodular connectivity and edge width displays the topological overlap between genes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** A gene coexpression network built only from GFP birds is presented. Significant module-trait correlations are shown in a heatmap, right. Colors are consistent with Figure 3A.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** A gene coexpression network built only from FoxP2.FL birds is presented. Significant module-trait correlations are shown in a heatmap, right. Colors are consistent with Figure 3A.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** A gene coexpression network built only from FoxP2.10 + birds is presented. Significant module-trait correlations are shown in a heatmap, right. Colors are consistent with Figure 3A.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** FL and FoxP2.10+ combined, GFP vs. FoxP2-FL, and GFP vs. FoxP2.10+ networks. Plots depict module preservation vs. module size for each virus construct pair and allow for visual assessment of whether a specific module exists in two conditions. Middle and upper dashed horizontal lines indicate thresholds for low and high preservation, respectively.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** The gene coexpression network is displayed with genes represented as nodes and colors indicating the module assignment of each gene. Nodes are scaled by their degree and edge color is the combination of the module colors of nodes connected by the edge. Poorly connected nodes are excluded (see Methods).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig3-figsupp6-v3.jpg)
+
+**Figure 3—figure supplement 6.:** The intersample correlation for the Area X samples does not clearly delineate clusters by virus construct. Virus construct is indicated in green (GFP), black (FoxP2.FL), and red (FoxP2.10+). Below, time singing is indicated on a blue-red color scale where the samples from birds that sang the most are colored the deepest red.
 
 In sum, our viral manipulations generated groups of animals in distinct states of vocal variability and learning. GFP-injected birds learned well and displayed singing-induced variability in the acoustic features of song. FoxP2.FL birds learned poorly and had no difference in their songs’ acoustic variability following practice. FoxP2.10+ birds learned well but seemed to exist in a state where practice drives invariability in vocal acoustics. As such, a broad degree of both learning and variability induction existed across groups (Figure 2F). Next, we used these behavioral metrics as correlates to gene coexpression patterns to interrogate the transcriptional profiles underlying these traits.
 
-## Gene modules in juvenile Area X that correlate to vocal behavior are enriched for communication and intellectual disability risk genes
+### Gene modules in juvenile Area X that correlate to vocal behavior are enriched for communication and intellectual disability risk genes
 
 We used RNA-seq to quantify gene transcription in Area X of 65d juveniles overexpressing GFP, FoxP2.FL or FoxP2.10+, then used WGCNA to identify gene coexpression modules and link them to song learning. We built an overall network composed from all samples together (Figure 3A and B), as well as construct-specific networks (Figure 3—figure supplements 1–4). In the overall network (see Materials and methods), 7461 genes formed 21 modules (Figure 3A and B, Supplementary file 1). We found significant correlations between module eigengenes and the following behaviors: tutor percentage similarity (i.e. vocal learning: darkred, green, and greenyellow modules), number of motifs sung (i.e. amount of singing: black, orange, darkgreen, royalblue, and blue modules), singing-induced acoustic variability (i.e. variability induction: black, brown, darkgreen, darkgrey, magenta, orange, pink, purple and turquoise modules), and motif identity (i.e. overall vocal variability: darkgrey module) (0.00008 < p < 0.05; Figure 3B). Hereafter, these modules are termed ‘learning-related’, ‘song-production’, ‘variability-induction’ and ‘vocal variability’ modules, respectively. We examined all modules whose p-value was ≤0.05 and calculated the relationship between module membership and gene significance. (For definitions of WGCNA and network terms, see Materials and methods: WGCNA and network terminology. For information about significance levels reported here, see Materials and methods: Correlation of behavior to gene expression). For most modules, strong correlations were observed for each trait, indicating that the genes most representative of the module’s overall expression profile were those most strongly related to the behavior (Figure 3C).
 
@@ -59,29 +107,45 @@ Connectivity is the core gene coexpression network concept and genes with high c
 
 To attribute biological meaning to the modules, we calculated a module significance score for the resulting disease, gene ontology, and pathway annotations returned from GeneAnalytics (Ben-Ari Fuchs et al., 2016) (See Materials and methods). The top five terms for the black song production module (negatively correlated to the amount of singing), the brown variability induction module (positively correlated to variability induction), and green learning-related module (positively correlated to learning) are shown in Figure 3E with comprehensive results presented in Supplementary file 2. Since most modules contain hundreds of genes, prioritizing the ontology terms by the connectivity of their annotated genes allows genes with the greatest network importance (Figure 3F) to emphasize the terms with the greatest biological importance (Figure 3E).
 
-## Juvenile Area X modules for learning, but not singing, are preserved in juvenile VSP
+### Juvenile Area X modules for learning, but not singing, are preserved in juvenile VSP
 
 To validate the specificity of the Area X modules to vocal behavior, we compared the overall Area X network to a network constructed from the adjacent non-song VSP (Hilliard et al., 2012a; Feenders et al., 2008) from the same animals. Area X and VSP networks were constructed using the genes that were common to the two, enabling analysis using module preservation functions. We hypothesized that the genes in the Area X song production modules would have no correlation to behavior in VSP since, despite its close proximity and similar cell type composition, the VSP is not similarly linked into song control circuitry (Person et al., 2008). Moreover, a body of evidence suggests that the song control circuit evolved as a specialization of existing motor circuitry (Pfenning et al., 2014; Feenders et al., 2008; Barrett, 2012; Oakley and Rivera, 2008). As predicted, no module in the VSP network displayed any correlation to any of the singing or learning behaviors as gene significances using Area X and VSP expression data are markedly different (Figure 4A, X vs. V). We calculated module preservation statistics between the two brain regions and observed that the song production modules were among the most poorly preserved (Langfelder et al., 2011) across the two networks (Figure 4B, Supplementary file 3). This result indicates differential connectivity of song production module genes between Area X (Figure 4C, top) and VSP (Figure 4C, bottom), further underscoring that Area X is specialized for song. This lack of preservation was not the product of differential gene expression between the two regions (Figure 4D, top) but instead reflected altered connectivity among similar genes (Figure 4D, bottom). In striking contrast to the song production modules, the green learning-related module was strongly preserved in VSP (Figure 4B, Figure 3B), indicating a generalized learning-related coexpression state exists in the juvenile striatopallidum that is specialized for singing in Area X.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig4-v3.jpg)
 
-**Figure 4.:** (A) Dendrogram (top) displays the topological overlap in Area X between genes common to both juvenile Area X and VSP networks. Beneath, the module assignments and the gene significances for each gene as calculated using expression from VSP (‘V’) or Area X (‘X’) for all behaviors are quantified as in Figure 3A. Module colors are consistent with those presented in Figure 3. (B) Module preservation (Zsummary) for all modules that were present in both Area X and VSP displayed as a function of module eigengene correlation to motifs. Lower and upper dashed horizontal lines indicate thresholds for low and high preservation, respectively. (C) Circle plots display the adjacencies between the 20 most well-connected genes in the Area X black, cyan, green, royalblue, and blue modules. The adjacency between genes is indicated by edge thickness. Genes grouped together in the black, cyan, royalblue, and blue song modules in Area X have numerous and strong connections. Those connections are weakened or nonexistent in VSP such that genes sort into different modules in VSP. In contrast, the green learning-related module genes maintain their common grouping and connections in VSP. (D) Raw gene expression is tightly correlated between Area X and VSP for the genes in the black, cyan, green, royalblue, and blue modules (top). Only the intramodular connectivity of the genes in the green learning-related module is correlated between Area X and VSP (bottom). Dashed lines represent the linear regression.10.7554/eLife.30649.024Figure 4—source data 1.A).10.7554/eLife.30649.025Figure 4—source data 2.A).
+**Figure 4.:** (A) Dendrogram (top) displays the topological overlap in Area X between genes common to both juvenile Area X and VSP networks. Beneath, the module assignments and the gene significances for each gene as calculated using expression from VSP (‘V’) or Area X (‘X’) for all behaviors are quantified as in Figure 3A. Module colors are consistent with those presented in Figure 3. (B) Module preservation (Zsummary) for all modules that were present in both Area X and VSP displayed as a function of module eigengene correlation to motifs. Lower and upper dashed horizontal lines indicate thresholds for low and high preservation, respectively. (C) Circle plots display the adjacencies between the 20 most well-connected genes in the Area X black, cyan, green, royalblue, and blue modules. The adjacency between genes is indicated by edge thickness. Genes grouped together in the black, cyan, royalblue, and blue song modules in Area X have numerous and strong connections. Those connections are weakened or nonexistent in VSP such that genes sort into different modules in VSP. In contrast, the green learning-related module genes maintain their common grouping and connections in VSP. (D) Raw gene expression is tightly correlated between Area X and VSP for the genes in the black, cyan, green, royalblue, and blue modules (top). Only the intramodular connectivity of the genes in the green learning-related module is correlated between Area X and VSP (bottom). Dashed lines represent the linear regression.
 
-## Juvenile Area X modules for singing, but not learning, are preserved in adult Area X
+### Juvenile Area X modules for singing, but not learning, are preserved in adult Area X
 
 To provide further context for the modules observed in our overall network and how they relate to learned vocalization, we compared them with prior data from adult zebra finch Area X (Hilliard et al., 2012a; Hilliard et al., 2012b). Our present network captures a point in zebra finch development when birds are actively learning how to improve their songs whereas in adulthood, the learning process has ended and adult songs are ‘crystallized’. Contrasts between juvenile and adult networks highlight gene coexpression patterns that change between the two learning states, and inform their molecular underpinnings.
 
 Our previous study in adults found multiple modules in Area X that were correlated to singing crystallized songs. We reasoned that if highly similar coexpression patterns were present in juveniles, then they would likely be unrelated to learning. In this case, the capacity to learn a song might be attributable to other genes and/or the relationships between them. To compare across studies, we built two new, age-specific networks composed of genes common to the two original networks, then computed gene significance scores for all genes in both networks. We found a remarkable correlation between gene significances to singing in juveniles and adults (Figure 5A), showing that genes in Area X shared similar relationships to singing, whether it be positive, negative, or nonexistent, independent of the animal’s age and learning state. The replicated discovery of specific sets of song-production genes across studies and ages speaks to the profound effect that singing behavior has on gene transcription profiles within the song-dedicated basal ganglia.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig5-v3.jpg)
+
+**Figure 5.:** (A) Dendrogram (top) displays the topological overlap in juvenile Area X between genes common to both juvenile and adult Area X networks. The module assignments and the gene significances to motifs in juveniles and adults are presented below. Module colors are consistent with those presented in Figure 3. (B) Module preservation (Zsummary) for all modules that were present in both juvenile and adult Area X displayed as a function of ME correlation to motifs. Lower and upper dashed horizontal lines indicate thresholds for low and high preservation, respectively. (C) Circle plots display the adjacencies between the 20 most well-connected genes in the juvenile Area X black, cyan, green, royalblue, and blue modules. The adjacency between genes are indicated by edge thickness. Genes grouped together in the black, cyan, royalblue, and blue song modules in Area X have numerous and strong connections that are mostly maintained in adulthood. The densely interconnected green learning-related module genes found in juveniles do not maintain these relationships in adulthood. (D) Strong positive correlations between gene significance to motifs exist for all modules (top row). Ranked expression values for the genes in each module also show positive correlation (middle row). Intramodular connectivity is more positively correlated between ages for the black, cyan, royalblue, and blue song production modules than for the green learning-related module (bottom row).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Differential connectivity (kTotal.Juvenile - kTotal.Adult) is plotted against green module membership. Points are colored by correlation to tutor percent similarity from low to high on a blue-white-red scale. The genes most differentially connected are among the most strongly learning related and are well-correlated to the green module eigengene. Data points representing genes in the green module have a green stroke.
+
 We next calculated module preservation across the two studies, which assesses how well the coexpression relationships between genes persist across ages (Langfelder et al., 2011). We observed strong to very strong relationships between module preservation and correlation to singing, and genes related to singing clustered together independent of age (Figure 5B and C, Supplementary file 4). These results indicate that not only are the relationships between genes and singing consistent across ages but those genes’ coexpression patterns are preserved as well.
 
 Since singing-driven gene coexpression patterns were similar between juvenile and adult Area X, the capacity to learn vocalizations is not a product of large-scale differences in coexpression of the song production module genes. We therefore looked for any modules that differed between juvenile and adult Area X. We found that the green, greenyellow and darkred learning-related modules that were significantly correlated to tutor similarity in juveniles were poorly preserved in adult Area X (Figure 5B and C, Supplementary file 4). Irrespective of preservation between juvenile and adult Area X, the genes in song production and learning-related modules were similarly activated by singing (Figure 5D, top row) and the ranked gene expression within each module displayed a positive correlation across ages (Figure 5D, middle row). However, only the song production modules showed positive correlations between connectivity in juvenile and adult Area X (Figure 5D, bottom row). These results attribute the difference between juvenile and adult Area X not to differential expression or altered correlation to behavior, but to differential connectivity in adults of modules that are correlated to tutor similarity in juveniles. Our findings suggest that the capacity to alter vocalizations may not reside in the absolute expression level of a given gene but instead the gene’s transcriptional context. For example, FMR1 was poorly connected in the adult network but was positioned as a hub gene in the juvenile network, indicating the gene’s importance during a developmental period when vocalizations are being actively modified but not during their maintenance. In general, genes that were positively correlated with learning and/or had high module membership in the green learning-related module had the greatest decrease in connectivity in adulthood (Figure 5—figure supplement 1).
 
-## A bioinformatics approach indicates MAPK11 as an entry point to neuromolecular networks for vocal learning
+### A bioinformatics approach indicates MAPK11 as an entry point to neuromolecular networks for vocal learning
 
 Above we describe two classes of coexpression modules: (1) learning-related modules that are preserved throughout the striatopallidum but present only in juveniles, (2) song production modules that are preserved across age but specific to Area X. Therefore, song production modules and learning-related modules exist simultaneously only in juveniles, and their co-occurrence within Area X may reflect the capacity to dramatically alter vocalizations during sensorimotor learning. Therefore, we hypothesized that interactions between these two modules may drive the vocal learning process.
 
 To test this idea using bioinformatics, we examined any genes linked to FoxP2, whose overexpression drove the broad range of tutor song copying in our animals. The gene with the greatest gene significance to learning was MAPK11 (Figure 6A and B). Interestingly, in Foxp2 heterozygous knockout mice, MAPK11 levels increase, supporting the interaction we observed here (Enard et al., 2009). To examine whether MAPK11 could be a target of FoxP2 in the zebra finch, we scanned the MAPK11 gene for sequences corresponding to the FoxP2 binding motif from the JASPAR database (see Materials and methods) (Nelson et al., 2013; Mathelier et al., 2016). We found a match with a single base difference beginning 288 base pairs upstream of the zebra finch MAPK11 transcription start site identified in the RefSeq model (Figure 6C). (Note that the RefSeq model may be incomplete; see MAPK11 annotation note in Materials and methods). We then used chromatin immunoprecipitation followed by PCR (ChIP-PCR) to test whether or not FoxP2 binds this predicted MAPK11 regulatory region. Chromatin-immunoprecipitation of FoxP2 enriched a MAPK11 fragment of the predicted size and encompassing the putative FoxP2 binding site. Moreover, the sequenced fragment contains the FoxP2 binding motif (Figure 6D, Figure 6—figure supplement 1). Taken together, these data suggest that birds overexpressing FoxP2.FL may be limited in their capacity to learn due, at least in part, to FoxP2 regulation of MAPK11. In line with this, both the FoxP2.10+ and GFP animals had higher MAPK11 gene significance scores for tutor similarity than did FoxP2.FL animals (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig6-v3.jpg)
+
+**Figure 6.:** (A) The 20 genes with the highest to lowest gene significances to tutor similarity (sorted from top to bottom) are shown. Each column represents a bird and columns are sorted in order of increasing tutor similarity from left to right. Gene expression is scaled such the highest and lowest expression across samples have the brightest shade of red or blue, respectively. (B) Expression of MAPK11 is replotted, here separated by virus group and then sorted by increasing tutor percentage similarity. (C) The FoxP2 binding sequence as annotated by the JASPAR database (top) and a potential binding site found in the MAPK11 ‘promoter’. (D) Amplification of genomic DNA (‘Genomic’) with primers for a region of the MAPK11 ‘promoter’ that contains a putative FoxP2 binding site enrich a fragment of predicted size (red arrowhead) in the pull-down lane (FoxP2) but not the control (IgG) lane. (E) MAPK11 and its 10 closest network neighbors, including green learning-related module members and hub gene ATF2, as defined by topological overlap.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** The MAPK11 NCBI RefSeq sequence (highlighted in grey) contains a potential FoxP2 binding motif (red). Genomic DNA was isolated and subjected to PCR with primers (highlighted in yellow) amplifying the region of interest. The product of each primer was sequenced showing our primers amplify a fragment containing the proposed FoxP2 binding motif.
 
 A strength of WGCNA is the ‘guilt by association’ approach whereby genes in close network proximity to a gene of interest become candidates for a role in the same biological processes. With this in mind, we used MAPK11 as an entry point to pathways related to vocal learning. We first scanned for genes with high topological overlap with MAPK11 (e.g. the closest network neighbors to MAPK11). Many of these genes were well-connected members of the green learning module (Figure 6E). One such gene, ATF2 (formerly known as CREB2), had the fifth highest green intramodular connectivity and third highest whole network connectivity (Supplementary file 1). ATF2 protein is necessary for proper development of the nervous system (Reimold et al., 1996) and serves a dual purpose in affecting transcription by binding to cAMP response elements and also by acetylating histones H2B and H4 (Bruhat et al., 2007; Kawasaki et al., 2000). Like FMR1, ATF2 is poorly connected in the adult network (Hilliard et al., 2012a).
 
@@ -91,11 +155,11 @@ To generalize this strategy, we used the Search Tool for the Retrieval of Intera
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30649/elife-30649-fig7-v3.jpg)
 
-**Figure 7.:** A protein interaction network plot using the STRING database between genes in learning-related (darkred, green, greenyellow) and song production (black, blue, darkgreen, orange, royalblue) modules. Nodes are scaled by number of connections. Edge width is determined by scaling the STRING protein interaction confidence score for the two nodes by the product of each node’s intramodular connectivity. Interactions within learning or song production modules are omitted for clarity.10.7554/eLife.30649.033Figure 7—source data 1.Figure 7.
+**Figure 7.:** A protein interaction network plot using the STRING database between genes in learning-related (darkred, green, greenyellow) and song production (black, blue, darkgreen, orange, royalblue) modules. Nodes are scaled by number of connections. Edge width is determined by scaling the STRING protein interaction confidence score for the two nodes by the product of each node’s intramodular connectivity. Interactions within learning or song production modules are omitted for clarity.
 
 We ranked interactions by four different metrics designed to emphasize or deemphasize gene significance, intramodular connectivity, and differential connectivity in juveniles vs. adults (see Materials and methods). These metrics provide a basis for selecting protein-protein interactions based on the relationship to the genes and their most strongly correlated behavior, the coexpression network importance of the genes, or the change in connectivity between juvenile and adult birds. In using the latter metric, the decreased connectivity of learning-related genes ATF2 and FMR1 in adulthood is accounted for and interactions involving those genes are prioritized. Interactions between ATF2 and IRF2, DUSP5, and FOS are among the highest scoring interactions using this metric. All such interactions are presented in Supplementary file 5.
 
-## Construct-specific networks
+### Construct-specific networks
 
 In addition to the overall Area X network presented above, we built and compared construct-specific networks from birds injected with the FoxP2.FL expressing virus versus those injected with the FoxP2.10+ expressing virus versus those expressing GFP (Figure 3—figure supplements 1–3). This analysis enabled us to assess the level of construct-driven changes in gene coexpression as well as to test for the presence of the learning-related module in the control birds whose FoxP2 levels were unmanipulated. We quantified module preservation between the FoxP2 networks and the GFP network (Figure 3—figure supplement 4). In both FoxP2 networks, a gradient of module preservation was observed versus the GFP network with both overlapping and significantly different modules observed. Birds in these experimental conditions were siblings, and in some cases from the same clutch, suggesting that the driving effect of network differences is the construct-specific manipulation. The green learning-related module was well-preserved across the three networks. The strong correlation of this module to learning passed false discovery rate correction in the GFP cohort comprised of only seven birds, indicating that the learning-related coexpression pattern observed in the overall network is also present without FoxP2 manipulation.
 
@@ -127,11 +191,210 @@ In sum, we have described the Area X transcriptome at a developmentally signific
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Taeniopygia guttata)</td>
+      <td>AAV1-FoxP2.FL</td>
+      <td>Virovek (Hayward, CA, USA), DOI:10.1523/JNEUROSCI.3715-14.2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Taeniopygia guttata)</td>
+      <td>AAV1-FoxP2.10+</td>
+      <td>Virovek (Hayward, CA, USA), this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Taeniopygia guttata)</td>
+      <td>AAV1-GFP</td>
+      <td>Virovek (Hayward, CA, USA), DOI:10.1523/JNEUROSCI.3715-14.2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Taeniopygia guttata)</td>
+      <td>HSV-FoxP2.10+</td>
+      <td>McGovern Institute for Brain Research at the Massachusetts Institute of Technology, this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FoxP2 (goat polyclonal)</td>
+      <td>Abcam (Cambridge, MA, USA)</td>
+      <td>Abcam Cat# ab1307; RRID: AB_1268914</td>
+      <td>ChIP: 4 ug</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FoxP2 (rabbit polyclonal)</td>
+      <td>ThermoFisher (Rockford, IL, USA)</td>
+      <td>Thermo Fisher Scientific Cat# 720031; RRID: AB_2610345</td>
+      <td>ChIP: 4 ug</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FoxP2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology (Dallas, TX, USA)</td>
+      <td>Santa Cruz Biotechnology, Cat# sc-517261; RRID: AB_2721204</td>
+      <td>ChIP: 4 ug</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (rabbit polyclonal)</td>
+      <td>EMD Millipore (Burlington, MA, USA)</td>
+      <td>Millipore Cat# 12-370; RRID: AB_145841</td>
+      <td>ChIP: 4 ug</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Xpress (mouse monoclonal)</td>
+      <td>ThermoFisher (Rockford, IL, USA)</td>
+      <td>ThermoFisher Scientific Cat# R910-25; RRID: AB_2556552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FoxP2.FL F</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideCCTGGCTGTGAAAGCGTTTG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FoxP2.FL R</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideATTTGCACCCGACACTGAGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FoxP2.10+ F</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideCGCGAACGTCTTCAAGCAAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FoxP2.10+ R</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideAAAGCAATATGCACTTACAGGTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH F</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideAACCAGCCAAGTACGATGACAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH R</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideCCATCAGCAGCAGCCTTCA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MapK11 F</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideCCCTTTCCCCAAATGGCAGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MapK11 R</td>
+      <td>Sigma Aldrich</td>
+      <td>OligonucleotideTATGAGCCTTGCCTTGGAGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mid probe</td>
+      <td>DOI:10.1523/jneurosci.1662-06.2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3' probe</td>
+      <td>DOI:10.1523/jneurosci.1662-06.2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP-IT High Sensitivity</td>
+      <td>Active Motif (Carlsbad, CA, USA)</td>
+      <td>Active Motif Cat# 53040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen RNeasy Micro</td>
+      <td>Qiagen (Germantown, MD, USA)</td>
+      <td>Qiagen Cat# 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina TruSeq Stranded Poly-A Prep</td>
+      <td>Illumina (San Diego, CA, USA)</td>
+      <td>Illumina Cat# 20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VoICE</td>
+      <td>DOI:10.1038/srep10237</td>
+      <td>RRID: SCR_016004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>DOI:10.1093/bioinformatics/bts635</td>
+      <td>RRID: SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAP</td>
+      <td>DOI:10.1006/anbe.1999.1416</td>
+      <td>RRID: SCR_016003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WGCNA R Package</td>
+      <td>DOI:10.1186/1471-2105-9-559</td>
+      <td>RRID: SCR_003302</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 All animal use was in accordance with NIH guidelines for experiments involving vertebrate animals and approved by the University of California, Los Angeles Chancellor’s Institutional Animal Care and Use Committee. Birds were selected from breeding pairs in our colony.
 
-## Experimental timeline
+### Experimental timeline
 
 The experimental timeline is schematized in Figure 2A. Breeding cages that contained candidate experimental birds were placed in sound attenuation chambers along with their parents and siblings when juveniles reached ~20 d, as in Heston and White (Heston and White, 2015). Chambers were continuously recorded so as to capture tutor song. At 30d, juvenile males were bilaterally injected with AAV1 into Area X to overexpress either FoxP2.FL, FoxP2.10+, or GFP, then returned to their chambers. At 40d, juvenile males were isolated from all other birds and continuously audio-recorded. At ~60 d, an ‘NS-UD’ experiment was performed according to the methods of Miller et al., Chen et al., and Heston et al. (Heston and White, 2015; Miller et al., 2010; Chen et al., 2013) to assess the induction of vocal variability. On the ‘NS-UD’ day, for the first two hours after lights-on, birds were distracted by gentle ‘shushing’ if they attempted to sing. (Those that sang >10 motifs were excluded from that day’s experiment). On the ‘UD-UD’ day, birds were allowed to sing UD song for the first two hours after lights-on. The level of variability in songs sung subsequent to those two hours was quantified.
 
@@ -139,59 +402,88 @@ At 65d, birds were sacrificed following two hours of UD singing with one excepti
 
 A total of 19 birds received stereotaxic injections with AAV (7 GFP, 6 FoxP2.FL, 6 FoxP2.10+). Sample size was based on numbers used in Heston and White (Heston and White, 2015) where 5–8 animals per group were sufficient to reveal treatment effects. The authors of the WGCNA R package recommend a minimum of 15 samples for building a network (https://labs.genetics.ucla.edu/horvath/CoexpressionNetwork/Rpackages/WGCNA/faq.html), so we ensured at least five animals in each of the three groups.
 
-## Song recording
+### Song recording
 
 Countryman EMW or Shure SM93 omnidirectional lavalier microphones were used to continuously record birds from ~20 d until sacrifice (65d). Sounds were digitized using PreSonus FirePod or PreSonus Audioboxes at a 44.1 kHz sampling rate and 24-bit depth. Recordings were managed by SAP 2011 software (Tchernichovski et al., 2000).
 
-## Stereotaxic surgery and viruses
+### Stereotaxic surgery and viruses
 
-## Behavior and RNA-seq experiments
+#### Behavior and RNA-seq experiments
 
 As described in Heston and White (2015), 30d juvenile males were anesthetized using 2–4% isoflurane in pure oxygen and secured in a custom-built avian stereotaxic apparatus, then injected with virus bilaterally into Area X at the following coordinates: 45° head angle, 5.15 mm rostral of the bifurcation of the midsagittal sinus, 1.60 mm lateral of the midline, and to a depth of 3.3 mm. Virus was injected via a Drummond Nanoject II through a glass microelectrode (~40 µM inner diameter) backfilled with mineral oil. Three 27.6 nL injections were performed with a 15 s wait between injections and a 10 min wait before retraction of the electrode so as to minimize vacuum action pulling the virus away from the injection site. Incisions in the scalp were closed with Vetbond (3M, St. Paul, MN, USA). Birds received oxygen for ~2 min until alert, then returned to their home cages.
 
 AAV1 used in Heston and White (Heston and White, 2015) and produced by Virovek (Hayward, CA) was used here. AAV1s contained zebra finch FoxP2.FL or FoxP2.10+ coding sequences (Teramitsu and White, 2006) (Genbank Accession Number DQ285023), or that for GFP, downstream of the CMV early enhancer/chicken β actin (CAG) promoter. Virus titers were all ~2.24E + 13 vg/ml, thus equivalent volumes were delivered to each bird irrespective of construct. Heston et al. (Heston and White, 2015) estimated that 24 ± 5.5% of neurons at the epicenter of the virus injection are transduced and that 96.7 ± 1.7% of cells that are transduced are neurons. These transduction rates are sufficient to observe a behavioral effect of the virus and were thus used in the present study.
 
-## Histological assessment of FoxP2.10+ overexpression
+#### Histological assessment of FoxP2.10+ overexpression
 
 FoxP2.10+ is a naturally occurring truncated isoform of FoxP2.FL, with a unique 10 amino acid sequence at its C-terminus. There is currently no antibody specific to this truncated isoform, presenting a challenge to its immunological detection. The limited cloning capacity of AAV precluded our ability to express a reporter gene in the viruses that we used for behavioral and RNA-seq experiments. Moreover, we opted not to include an epitope tag on AAV-expressed FoxP2 isoforms in order to avoid any conformational changes that could confound our behavioral or RNA-seq analyses. For histological analysis only, however, we took advantage of the larger cloning capacity of HSV to express FoxP2.10+ tagged with an Xpress epitope at its N-terminus downstream of the IE 4/5 promoter and a GFP transduction reporter downstream of the CMV promoter (McGovern Institute for Brain Research at the Massachusetts Institute of Technology, Cambridge, MA). Surgical procedures were identical to those performed with AAV except that the virus was diluted to 60% in PBS immediately preceding injection, per the manufacturer’s recommendation. HSV reaches peak expression more rapidly than does AAV, thus HSV-injected birds were sacrificed 3–5 days post-injection (Neve et al., 2005).
 
-## In situ hybridization
+#### In situ hybridization
 
 In situ hybridizations were performed as in Jacobs et al. (1999) using two [33P]UTP-labeled riboprobes antisense to distinct regions of zebra finch FoxP2 (Teramitsu et al., 2004). 20 µM thick sections were thaw-mounted onto Superfrost Plus microscope slides (ThermoFisher Scientific, Waltham, MA, USA), then postfixed with 4% paraformaldehyde in PBS, pH 7.4.
 
-## PCR primers
+### PCR primers
 
 To quantify levels of FoxP2.FL, we selected a primer pair previously used to quantify FoxP2 knockdown (Haesler et al., 2007; Olias et al., 2014). The forward sequence was 5’-CCTGGCTGTGAAAGCGTTTG-3’ and the reverse was 5’ATTTGCACCCGACACTGAGC-3’. We designed a primer pair for FoxP2.10+ using the NCBI Primer-BLAST tool (Ye et al., 2012). The input sequence was FoxP2.10+ mRNA CDS (GenBank accession DQ285023.1). The forward primer sequence was 5’-CGCGAACGTCTTCAAGCAAT-3’ and the reverse sequence was 5’-AAAGCAATATGCACTTACAGGTT-3’. Primer specificity was determined by obtaining a single peak in melting curve analysis and obtaining a single amplicon of predicted size following qPCR. GAPDH forward and reverse primers were 5’-AACCAGCCAAGTACGATGACAT-3’ and 5’-CCATCAGCAGCAGCCTTCA-3’, respectively.
 
-## qRT-PCR experiments
+### qRT-PCR experiments
 
 200 ng of RNA from Area X micropunches was reverse transcribed into cDNA using the Bio-Rad iScript cDNA Synthesis Kit (Hercules, CA, USA). 25 µL qPCR reactions were assembled in MicroAmp Optical 96-Well Reaction Plates (ThermoFisher Scientific). Reaction components were 0.5 µL cDNA, 200 nM primers, 12.5 µL PowerUp SYBR Green Master Mix (ThermoFisher Scientific), and 10.75 uL nuclease-free water. Cycling conditions were 50°C for 2 min, 95°C for 2 min, then 40 cycles of 95°C for 15 s and 60°C for 1 min. A dissociation step of 95°C for 15 s, 60°C for 1 min, 95°C for 15 s, and 60°C for 15 s was then performed. All reactions were run in triplicate and all samples for an individual animal were run together on the sample plate. FoxP2 expression was quantified relative to GAPDH and normalized to the GFP-injected animals using the 2-Δ ΔCT method (Livak and Schmittgen, 2001).
 
-## Immunostaining
+### Immunostaining
 
 For histological analyses, animals were sacrificed 3–5 days following HSV injection then perfused with warm saline followed by ice cold 4% paraformaldehyde in 0.1 M phosphate buffer. Tissue was cryosectioned at 20 µM, thaw-mounted onto glass microscope slides, and stored at −80°C until use. Thawed sections were incubated overnight with goat-anti-FoxP2 (1:500; Abcam, Cambridge, UK; [Thompson et al., 2013]) and mouse-anti-Xpress (1:500; ThermoFisher Scientific, Waltham, MA). AlexaFluor 546 donkey-anti-goat (1:500) and AlexaFluor 405 donkey-anti-mouse (1:250) secondary antibodies were used to generate anti-FoxP2 and anti-Xpress signals, respectively. Sections were visualized using a Zeiss (Oberkochen, Germany) LSM 800 confocal microscope and processed using NIH ImageJ (Schneider et al., 2012).
 
-## Song analysis and statistics
+### Song analysis and statistics
 
-## Motif similarity
+#### Motif similarity
 
 The Similarity Batch in SAP was used to quantify the acoustic similarity between pupil and tutor songs (Tchernichovski et al., 2000). Asymmetric comparisons were performed between 10 tutor motifs (obtained from the final day before the pupil was acoustically isolated) and 20 pupil motifs (obtained every ~3 days following viral injection). We used the average percentage similarity from these comparisons as a representative of how well the pupil learned its tutor’s song on a given day of analysis. Statistical significance of motif similarity data was calculated by performing one-way ANOVAs on the average percentage similarity score of each animal across virus groups within each time bin, as depicted in Figure 2D. If the ANOVA yielded a significant result, Tukey’s Honest Significant Difference (HSD) was used as a post-hoc test.
 
-## Overall vocal variability
+#### Overall vocal variability
 
 To broadly assess the amount of variability in the animal’s song preceding sacrifice, asymmetric comparisons between 20 pupil motifs and themselves were conducted. We calculated the motif identity for all motif-motif comparisons as the product of their percentage similarity and accuracy divided by 100. Higher identity scores indicate lower variability within the batch.
 
-## Acute vocal variability modulation
+#### Acute vocal variability modulation
 
 For finer-grained analyses of acoustic variability as presented in Figures 2C and Figure 2—figure supplement 1, we utilized SAP and Vocal Inventory Clustering Engine (VoICE; [Burkett et al., 2015]; https://github.com/zburkett/VoICE). Syllables from the first 20 min following two hours of non-singing or undirected singing on the NS-UD experiment days were hand segmented, had their acoustic features quantified in the SAP Feature Batch, then clustered by VoICE. Data for analyses of acoustic features were taken from the VoICE output. Effect sizes were calculated using the formula (NS-UD)/(NS +UD), where values were the CV of a given acoustic feature following two hours of NS or UD. Thus, negative values indicate increased song variability after UD singing (see below for more information regarding this transformation). Statistical significance for each song feature was assessed by one-way ANOVA on the CV effect size for all syllables from all animals within each group. Tukey’s HSD was used as a post-hoc test in the instance of a significant ANOVA result. For the raw acoustic data, as presented in Figure 2—figure supplement 1, the syllables were considered paired within virus construct and across singing context. Paired T-tests were used to assess whether two hours of non-singing vs. two hours of undirected singing significantly altered the CV for each acoustic feature.
 
-## Song analysis: (NS-UD)/(NS + UD) effect size vs. raw acoustic feature CV
+### Song analysis: (NS-UD)/(NS + UD) effect size vs. raw acoustic feature CV
 
 The calculation of effect size was performed because it allows for comparison across virus groups instead of a series of paired comparisons within group (Miller et al., 2015). The transformation normalizes acoustic features so that any observed changes are viewed in the context of the initial values. We present a hypothetical example in the table below where a change of 50 Hz for two syllables is given a greater weight for a syllable that has an overall lower frequency when using the transformation we applied for our song data:
 
-Syllable ASyllable B NSUDRaw delta(NS-UD)/(NS + UD)NSUDRaw delta(NS-UD)/(NS + UD) 100 Hz150 Hz50 Hz−0.2500 Hz550 Hz50 Hz−0.048
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Syllable A</th>
+      <th colspan="4">Syllable B</th>
+    </tr>
+    <tr>
+      <th>NS</th>
+      <th>UD</th>
+      <th>Raw delta</th>
+      <th>(NS-UD)/(NS + UD)</th>
+      <th>NS</th>
+      <th>UD</th>
+      <th>Raw delta</th>
+      <th>(NS-UD)/(NS + UD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100 Hz</td>
+      <td>150 Hz</td>
+      <td>50 Hz</td>
+      <td>−0.2</td>
+      <td>500 Hz</td>
+      <td>550 Hz</td>
+      <td>50 Hz</td>
+      <td>−0.048</td>
+    </tr>
+  </tbody>
+</table>
 
-## Tissue collection and processing, RNA extraction, cDNA library preparation, and sequencing
+### Tissue collection and processing, RNA extraction, cDNA library preparation, and sequencing
 
 Two hours following lights-on at ~65 d, birds were sacrificed by decapitation. Brains were rapidly extracted and frozen on liquid nitrogen, then stored at −80°C until all brains were collected. As in Hilliard et al. (2012a), tissue micropunches of Area X and VSP were performed. Brains were coronally sectioned on a cryostat at 30 µM until Area X became visible. Area X and outlying VSP were punched using a 20 gauge Luer adapter and stored in RNAlater (Qiagen, Germantown, MD) at −80°C until RNA extraction was performed. 30 µM sections were then collected, thaw mounted, and thionin stained for post-hoc validation of punch accuracy.
 
@@ -199,7 +491,7 @@ Total RNA extraction was performed as in Hilliard et al. (2012a). Samples were p
 
 Total RNA was provided to the UCLA Neuroscience Genomics Core (UNGC; https://www.semel.ucla.edu/ungc) where RNA quality was assessed on an Agilent TapeStation (Agilent Technologies, Santa Clara, California). RNA of sufficient quality (RIN >8) was then used to generate cDNA libraries using the Illumina TruSeq Stranded Poly-A Prep Kit (Illumina, San Diego, CA, USA Cat No 20020594). Libraries for each sample were divided across two lanes and sequenced in a total of 8 lanes using an Illumina HiSeq 2500 in high output mode, generating between 15 and 35 million 50 bp paired-end reads per library.
 
-## RNA-seq preprocessing and WGCNA
+### RNA-seq preprocessing and WGCNA
 
 Raw FASTQ files furnished by UNGC were first quality controlled using FASTQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/). FASTQC returned results indicating high quality across all bases in each read in each sample and no adapter contamination was detected, therefore we did not perform any filtration of the reads before alignment. Reads were aligned to the NCBI zebra finch genome assembly 3.2.4 (http://www.ncbi.nlm.nih.gov/assembly/524908/) and RefSeq annotations using STAR (Dobin et al., 2013). Mismatch tolerance was two base pairs. Only uniquely mapped reads were considered in downstream analyses. The featureCounts() function in the Rsubread R package was used to count all reads mapping within exon features, then all exon counts were summed to the gene level so that each gene had a single value of reads mapped to it (Liao et al., 2014; Liao et al., 2013). Gene expression was then quantified by calculation of transcripts per million (TPM). TPM values were log2 transformed and genes with zero variance across samples were removed. We checked for batch effect on average expression resultant of RNA extraction group, RNA extraction experimenter, and across sequencing lanes. No batch effects were observed. We used an iterative process of removing gene expression data from single samples whose expression was >2.5 SD of that gene’s expression across all samples, repeating until no samples remained with expression >2.5 SD away from the gene’s average expression across all samples. Finally, we calculated the intrasample correlation (ISC) and used a hard cutoff of 2 SD away from the group ISC for removal of samples from the study. No sample in any group (Area X or VSP) was >2 SD from the group ISC. Data were quantile normalized as the last step. Final data input to WGCNA was 13665 and 13781 genes for Area X and VSP networks, respectively, across 19 total samples.
 
@@ -207,11 +499,11 @@ We calculated the soft thresholding power for construction of the WGCNA adjacenc
 
 During network construction, FoxP2 was removed, presumably due to the lack of coexpression with other genes in the network resulting from virus-driven overexpression. Therefore, we added FoxP2’s expression data back into the final overall network and it became the only gene in the grey module. Once coexpression modules were defined, we correlated vocal behavior to the module eigengenes. Since the grey module included only a single gene with no significant behavioral correlations, it was excluded from module-trait analyses.
 
-## WGCNA and network terminology
+### WGCNA and network terminology
 
 WGCNA is a well-established technique for gleaning biologically relevant clusters of coexpressed and functionally related genes from microarray and sequencing data. WGCNA methods and terminology are summarized and defined in numerous manuscripts (Hilliard et al., 2012a; Zhang and Horvath, 2005; Dong and Horvath, 2007; Zhao et al., 2010; Yip and Horvath, 2007; Horvath, 2011). For the sake of convenience, we provide working definitions of network terms that we use throughout the manuscript. Definitions of greater detail are available in the manuscripts cited above.
 
-## Correlation of behavior to gene expression
+### Correlation of behavior to gene expression
 
 Calculation of gene significance to a trait requires the definition of a single value to which the amount of gene expression in each sample is correlated. Gene significances were calculated for the following traits: Motifs, defined as the number of motifs each animal sang in the two hours following lights-on on the day of sacrifice; Tutor similarity, defined as the percentage similarity between the pupil and its tutor on the day of sacrifice; Variability induction, defined by inserting Wiener entropy CV scores into the equation (NS-UD)/(NS + UD) from the first twenty syllable renditions sung during the NS-UD experiment performed at ~60 d; Motif identity, defined as the product of the similarity and accuracy scores divided by 100 of the last 20 motifs sung by each bird before sacrifice. Song variability was assessed on the motif level for the purpose of gene significance calculations so as to obtain a single value for each animal.
 
@@ -219,31 +511,31 @@ Following network construction, modules were summarized by calculating a module 
 
 Our choice of behavioral traits for correlation to the gene network was hypothesis-driven. In addition to the obvious quantification of vocal learning, the comparison for variability induction was planned, as indicated by the fact that we conducted the NS-UD and UD-UD behavioral paradigms (prior to the bird’s sacrifice) that led to it. We originally used these paradigms as a method for naturally regulating FoxP2 levels, before we had identified a virus that was effective in doing so. In that study (Miller et al., 2010), our prediction was that behavioral conditions that lead to low endogenous FoxP2 in Area X (namely 2 hr of UD singing), would be associated with higher levels of variability. This was indeed the case. We replicated this finding in zebra finches (Heston and White, 2015) but did not observe the same phenomenon in Bengalese finches (Chen et al., 2013) as noted in our Discussion. The feature highlighted by those studies was Weiner entropy.
 
-## Gene ontology, module significance, and term significance
+### Gene ontology, module significance, and term significance
 
 At the time of this study, annotation of the zebra finch genome is relatively sparse, thus zebra finch gene symbols were converted to their Human Genome Organisation (HUGO) Gene Nomenclature Committee (HGNC) paralogs, then submitted to GeneAnalytics, a comprehensive tool for the contextualization of gene set data that integrates across multiple databases (Ben-Ari Fuchs et al., 2016). Genes with no known human homolog were excluded. Symbols were submitted to the GeneCards GeneAnalytics suite at http://geneanalytics.genecards.org (Ben-Ari Fuchs et al., 2016). GeneCards enrichment scores were converted into p-values, which were used as the input to module significance calculations. Module significance of a term was defined as the product of the average module membership for each gene annotated with a term, and one minus the p-value for that term such that the genes with the highest module membership and lowest p-value prioritize the terms (Hilliard et al., 2012a). Term significance was defined by weighting the module significance score by the gene significance for a given behavioral metric.
 
-## Transcription factor binding site analysis
+### Transcription factor binding site analysis
 
 The FoxP2 consensus binding sequence from the JASPAR database (Nelson et al., 2013; Mathelier et al., 2016) was converted into a position-weight matrix (PWM) and used to scan the promoter (defined as the first 1000 base pairs upstream of the transcription start site in the RefSeq models) for each gene in the zebra finch genome. Putative FoxP2 binding sites were identified using the matchPWM function in the Biostrings R package (https://bioconductor.org/packages/release/bioc/html/Biostrings.html) with a minimum hit score of 80%.
 
-## MAPK11 annotation note
+### MAPK11 annotation note
 
 The MAPK11 region discussed in this manuscript was identified using methods described above. Upon closer inspection of the MAPK11 RefSeq annotation model, we believe the identified region does not lie within the promoter but instead within an intronic region of MAPK11. There is currently no experimental evidence to verify the RefSeq model’s predicted transcription start site and the Ensembl model for MAPK11 is considerably longer (323 residues vs. 285 residues) due to an expanded N-terminus region. Further, the chicken MAPK11 RefSeq model is 361 residues and contains an N-terminus residue (MSERGGFYRQELNKTVWEVPQRYQNLTPVGSGAYGSVC) that maps ~12 kb upstream of the second exon of chicken MAPK11. This residue does not map to the zebra finch genome, presumably because a gap in the genome exists ~13 kb upstream of zebra finch MAPK11. The MAPK11 N-terminus peptides of other songbird species (Bengalese finch, starling, white-throated sparrow, great tit and Tibetan ground-tit) are highly similar to that in chicken and align to the first exon in chicken MAPK11. This peptide is found in mice and humans, indicating high conservation. We thus posit that the MAPK11 RefSeq annotation in zebra finch is incomplete on the 5’ end and that we are reporting a binding site internal to MAPK11 and not at the promoter.
 
-## Chromatin immunoprecipitation-PCR
+### Chromatin immunoprecipitation-PCR
 
 Chromatin immunoprecipitation (ChIP) was performed using ChIP-IT High Sensitivity (Active Motif, Carlsbad, CA, USA, Cat. No. 53040) following the manufacturer’s protocol. Whole brain was isolated from an adult male zebra finch, minced, and crosslinked in a formaldehyde solution. The tissue was homogenized with a hand-held tissue homogenizer for 45 s at 35,000 rpm. Following homogenization, the sample was sonicated at 25% amplitude 30 s on, 30 s off, for 10 min. A portion of the sonicate was de-crosslinked and quantified. The sample was split evenly into three tubes. A cocktail of anti-FoxP2 primary antibodies were applied to one sample (Millipore, Billerica, MA, USA Cat. No. ABE73, ThermoFisher Scientific Cat. No. 5C11A2, and Abcam ab16046), IgG in another (Millipore 12–370), and the third was input DNA. After an overnight incubation, the samples were washed, de-crosslinked and subjected to PCR.
 
 The ‘promoter’ sequence for MAPK11 was binned into 100 bp regions for primer construction. MAPK11 primers were as follows: forward 5’- CCCTTTCCCCAAATGGCAGA-3’ and reverse 5’-TATGAGCCTTGCCTTGGAGC-3’. PCR protocol was performed using DreamTaq PCR Master Mix per manufacturer’s protocol. A PCR protocol was used as follows: (1) 95°C 1 min, (2) 95°C 30 s, (3) 67°C 30 s, (4) 72°C 1 min, repeat (2-4) for 40 cycles, (5) 72°C 10 min. PCR products were run on a 1.5% agarose gel in the presence of SYBR Safe to allow visualization of DNA. PCR products were purified (QIAQuick Gel Extraction Kit) and sent for sequencing by Laragen, Inc. Reverse primers sent for sequencing are as follows: 5’-TATGAGCCTTGCCTTGGAGC-3’ and 5’-CCTATGAGCCTTGCCTTGGA-3’.
 
-## Protein interaction networks and scaling of interaction confidence scores
+### Protein interaction networks and scaling of interaction confidence scores
 
 STRING is a comprehensive database of known and predicted protein-protein interactions derived from experimental data, coexpression data, automated text mining, and also pulls information from other interaction databases. STRING accepts gene symbols as input, then mines for interactions between those genes and assigns a confidence score between 0 and 1 based on the evidence in the database for the genes’ interaction. We submitted gene symbols for the human homologs of module members to STRING then operated on the highest confidence interactions (≥0.9) in downstream analyses.
 
 Interaction scores were scaled by different metrics to emphasize or deemphasize network position and/or relationship to behavior (Supplementary file 5). Those metrics are:
 
-## Network visualization and interactive figures
+### Network visualization and interactive figures
 
 Network plots presented in this manuscript were constructed using the freely available plotting software, Gephi (https://gephi.org), using edge lists prepared in R and exported in the. GEXF format.
 
@@ -253,6 +545,6 @@ In weighted coexpression networks, each node (i.e. gene) is connected to every o
 
 In this manuscript, we present three types of network plots that look similar but convey different data. The three types are as follows:
 
-## Accession information
+### Accession information
 
 Raw and processed RNA-seq and behavioral data for each bird are available at the Gene Expression Omnibus (GEO; https://www.ncbi.nlm.nih.gov/geo/) at accession number GSE96843.

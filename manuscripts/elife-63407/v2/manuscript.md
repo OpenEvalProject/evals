@@ -15,7 +15,7 @@
 
 ## Abstract
 
-An opioid epidemic is spreading in North America with millions of opioid overdoses annually. Opioid drugs, like fentanyl, target the mu opioid receptor system and induce potentially lethal respiratory depression. The challenge in opioid research is to find a safe pain therapy with analgesic properties but no respiratory depression. Current discoveries are limited by lack of amenable animal models to screen candidate drugs. Zebrafish ( Danio rerio ) is an emerging animal model with high reproduction and fast development, which shares remarkable similarity in their physiology and genome to mammals. However, it is unknown whether zebrafish possesses similar opioid system, respiratory and analgesic responses to opioids than mammals. In freely-behaving larval zebrafish, fentanyl depresses the rate of respiratory mandible movements and induces analgesia, effects reversed by μ-opioid receptor antagonists. Zebrafish presents evolutionary conserved mechanisms of action of opioid drugs, also found in mammals, and constitute amenable models for phenotype-based drug discovery.
+An opioid epidemic is spreading in North America with millions of opioid overdoses annually. Opioid drugs, like fentanyl, target the mu opioid receptor system and induce potentially lethal respiratory depression. The challenge in opioid research is to find a safe pain therapy with analgesic properties but no respiratory depression. Current discoveries are limited by lack of amenable animal models to screen candidate drugs. Zebrafish (Danio rerio) is an emerging animal model with high reproduction and fast development, which shares remarkable similarity in their physiology and genome to mammals. However, it is unknown whether zebrafish possesses similar opioid system, respiratory and analgesic responses to opioids than mammals. In freely-behaving larval zebrafish, fentanyl depresses the rate of respiratory mandible movements and induces analgesia, effects reversed by μ-opioid receptor antagonists. Zebrafish presents evolutionary conserved mechanisms of action of opioid drugs, also found in mammals, and constitute amenable models for phenotype-based drug discovery.
 
 ## Introduction
 
@@ -41,13 +41,13 @@ To determine whether zebrafish can be used as a model of opioid-induced respirat
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative mandible movements in larvae exposed to embryo medium or a solution of fentanyl (1 µM). The rate of mandible movements was significantly decreased by fentanyl. (B) Larvae were exposed to fentanyl over a period of 30 min. Significant respiratory rate depression was observed within 4 min following fentanyl application. Respiratory rate data did not follow a normal distribution and data are presented as medians with bars representing interquartile range. (C) Increasing the concentration of fentanyl induced dose-dependent decreases in respiratory rate. Fentanyl produced significant decreases in respiratory rate at 1 µM (n = 9) and 3 µM (n = 8), but not at 0.2 µM (n = 6) and 0.4 µM (n = 3) compared to controls (n = 17). (D) Rates of mandible movements were not normally distributed due to the high variability in respiratory rates. To present more homogenous data, respiratory rates were normalized according to the baseline rate measured before drugs were applied to better represent how drug exposure changed rate. (E) Fentanyl produced significant decreases in respiratory rate at 1 µM and 3 µM, but not at 0.2 µM and 0.4 µM compared to controls. Shading indicates time periods used to calculate average data in panel C and E. In panels B and C, data were presented as medians ± 75th and 25th percentile. In panels D and E, data were presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. * indicate significantly different medians compared to control with p<0.05. Source data can be found in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) Representative mandible movements in larvae exposed to embryo medium or a solution of fentanyl (1 µM). The rate of mandible movements was significantly decreased by fentanyl. (B) Larvae were exposed to fentanyl over a period of 30 min. Significant respiratory rate depression was observed within 4 min following fentanyl application. Respiratory rate data did not follow a normal distribution and data are presented as medians with bars representing interquartile range. (C) Increasing the concentration of fentanyl induced dose-dependent decreases in respiratory rate. Fentanyl produced significant decreases in respiratory rate at 1 µM (n = 9) and 3 µM (n = 8), but not at 0.2 µM (n = 6) and 0.4 µM (n = 3) compared to controls (n = 17). (D) Rates of mandible movements were not normally distributed due to the high variability in respiratory rates. To present more homogenous data, respiratory rates were normalized according to the baseline rate measured before drugs were applied to better represent how drug exposure changed rate. (E) Fentanyl produced significant decreases in respiratory rate at 1 µM and 3 µM, but not at 0.2 µM and 0.4 µM compared to controls. Shading indicates time periods used to calculate average data in panel C and E. In panels B and C, data were presented as medians ± 75th and 25th percentile. In panels D and E, data were presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. * indicate significantly different medians compared to control with p<0.05. Source data can be found in Figure 2—source data 1.
 
 To determine the pharmacology of opioid receptors in zebrafish, we compared groups of fish exposed to fentanyl with fish exposed to fentanyl and the MOR antagonists naloxone and CTAP (Figure 3). Exposure to fentanyl reduced the rate of mandible movements (Figure 3A). The MOR antagonist naloxone at 10 µM did not significantly reverse respiratory rate depression induced by fentanyl (p=0.178, Figure 3B). However, naloxone (20 µM) significantly reversed respiratory rate depression by fentanyl (p<0.001, Figure 3B). The selective MOR antagonist CTAP (4 µM) did not significantly reverse respiratory rate depression by fentanyl (p=0.077, Figure 3B), although a trend toward significance was observed. To determine whether naloxone or CTAP may increase respiratory rate when administered alone, we compared groups of fish exposed to CTAP (4 µM) or naloxone (5 and 20 µM) to control fish (Figure 3C). Neither CTAP nor naloxone showed effects on respiratory rate when administered alone (one-way ANOVA, p=0.122). In summary, fentanyl induced a significant respiratory rate depression which was blocked by the MOR antagonist naloxone but not CTAP.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig3-v2.jpg)
 
-**Figure 3.:** (A) Representative tracings of mandible movements in larval zebrafish showing fentanyl (1 µM) reducing respiratory rate and reversal by the MOR antagonist naloxone (20 µM). (B) Fentanyl (1 µM) significantly decreased rate of mandible movements (n = 9) compared to the control group (n = 10), an effect significantly reversed by the MOR antagonist naloxone (20 µM, n = 7) but not the highly selective MOR antagonist CTAP (4 µM, n = 9). (C) CTAP and naloxone administered alone did not affect respiratory rate. (D) Fentanyl depressed respiratory rate (n = 7), an effect reversed by subsequent addition of naloxone (9 µM). (E) Respiratory rate depression due to fentanyl was observed in the AB strain (n = 9), but not in TU (n = 9) or crosses between AB x TU (n = 7). (F) Morphine did not induce a dose-dependent decrease in respiratory rate compared to controls but showed a significant decrease at 1 µM. * indicates significantly different medians compared to control with p<0.05. Normalized data are presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. AB, AB zebrafish line. TU, Tübingen zebrafish line. Source data can be found in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** (A) Representative tracings of mandible movements in larval zebrafish showing fentanyl (1 µM) reducing respiratory rate and reversal by the MOR antagonist naloxone (20 µM). (B) Fentanyl (1 µM) significantly decreased rate of mandible movements (n = 9) compared to the control group (n = 10), an effect significantly reversed by the MOR antagonist naloxone (20 µM, n = 7) but not the highly selective MOR antagonist CTAP (4 µM, n = 9). (C) CTAP and naloxone administered alone did not affect respiratory rate. (D) Fentanyl depressed respiratory rate (n = 7), an effect reversed by subsequent addition of naloxone (9 µM). (E) Respiratory rate depression due to fentanyl was observed in the AB strain (n = 9), but not in TU (n = 9) or crosses between AB x TU (n = 7). (F) Morphine did not induce a dose-dependent decrease in respiratory rate compared to controls but showed a significant decrease at 1 µM. * indicates significantly different medians compared to control with p<0.05. Normalized data are presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. AB, AB zebrafish line. TU, Tübingen zebrafish line. Source data can be found in Figure 3—source data 1.
 
 In the previous experiments, naloxone was administered concomitantly with fentanyl and prevented respiratory depression (Figure 3A,B). We then tested whether naloxone can completely reverse respiratory depression by fentanyl (1 µM) when administered after respiratory depression (Figure 3D). As expected, fentanyl significantly depressed respiratory rate (p=0.009), an effect not reversed by naloxone at 9 µM (p=0.111). Although a sequential approach may be of interest due to its repeated measure design, it presented two challenges. First, drugs were pipetted twice in the multi-well plate and affected the fish’s behavior, which may explain the large variability observed with naloxone. Second, due to the low volume of fish water in wells and volumes of stock solution administered, it was challenging to increase naloxone concentration in these experiments without diluting the concentration of fentanyl. We therefore concluded that sequential administration of drugs was not the most consistent and compared drug combinations using separate groups of fish.
 
@@ -59,15 +59,39 @@ To determine whether breathing in zebrafish larvae can be stimulated by specific
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig4-v2.jpg)
 
-**Figure 4.:** (A) The respiratory stimulant BIMU8 (10 µM), a 5-HT4A serotonin receptor agonist, in combination with fentanyl (n = 20) was compared to fentanyl alone (n = 4) or BIMU8 alone (n = 21). BIMU8 was not sufficient to reverse respiratory depression by fentanyl. (B) The AMPA positive allosteric modulator CX614 (5 µM) and fentanyl (n = 6) were also compared to fentanyl alone (n = 7) or control (n = 7). CX614 + fentanyl group showed significantly higher respiratory rate than fentanyl, DMSO, and control. (C) The analgesic lidocaine (n = 4) was compared to DMSO (0.0016%) (n = 5) and control (n = 5) and showed lower respiratory rate than the control group. Normalized data are presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. Black lines and * indicate groups significantly different with p<0.05. Source data can be found in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) The respiratory stimulant BIMU8 (10 µM), a 5-HT4A serotonin receptor agonist, in combination with fentanyl (n = 20) was compared to fentanyl alone (n = 4) or BIMU8 alone (n = 21). BIMU8 was not sufficient to reverse respiratory depression by fentanyl. (B) The AMPA positive allosteric modulator CX614 (5 µM) and fentanyl (n = 6) were also compared to fentanyl alone (n = 7) or control (n = 7). CX614 + fentanyl group showed significantly higher respiratory rate than fentanyl, DMSO, and control. (C) The analgesic lidocaine (n = 4) was compared to DMSO (0.0016%) (n = 5) and control (n = 5) and showed lower respiratory rate than the control group. Normalized data are presented as means ± standard deviations. Circles indicate individual data points for each zebrafish measured. Black lines and * indicate groups significantly different with p<0.05. Source data can be found in Figure 4—source data 1.
 
 The AMPA positive allosteric modulator CX614 significantly reversed respiratory rate depression by fentanyl (p<0.001, Figure 4B). CX614/fentanyl showed higher respiratory rate than fentanyl alone, as well as higher respiratory rate than control (p=0.021), suggesting that CX614 at this dosage reversed respiratory depression by fentanyl. CX614 alone did not present higher respiratory rate when compared to control group (p=0.058) but showed a trend toward significance. Higher dosages of CX614 induced seizure and were not tested. To determine whether the respiratory depression observed with fentanyl was due to a direct effect of fentanyl on respiratory rate rather than an indirect effect on sedation (Montandon and Horner, 2019) or pain circuits (Jiang et al., 2004), we administered lidocaine, an analgesic not acting on MORs (Lopez-Luna et al., 2017). Lidocaine did not significantly change respiratory rate compared to control (p=0.267, Figure 4C). To dissolve drugs, we used DMSO as a solvent which may affect fish respiratory rate. DMSO administered at 0.0016% did not change respiratory rate (p=0.342).
 
 To determine the analgesic properties of opioid drugs in larval zebrafish, we established a simple model of nociception combining exposure to formalin as a nociceptive stimulus and measurements of the subsequent swimming escape response. Using video recordings of larvae positioned in a multi-well plate, we tracked the individual movements of larvae exposed to embryo medium, formalin and a combination of formalin and fentanyl (Figure 5). We quantified two swimming behaviors (Figure 5A): swimming velocity (swimming distance in mm per second) and angular velocity (turn angle in degrees per second, Figure 5—figure supplement 1). In larvae exposed to formalin, swimming velocity was substantially increased by formalin (Figure 5B). Fentanyl combined with formalin showed considerable reduction in velocity compared to formalin alone (Figure 5B). Following exposure to formalin, swimming velocity significantly increased during the initial 3 min (Figure 5C, shaded blue), a response not observed in control larvae or formalin/fentanyl larvae (Figure 5C). We then compared the averaged swimming velocity during the first 3 min following drug exposure for the different groups of larvae. The formalin group presented significantly faster velocity compared to the control group (p<0.001, Figure 5D). Velocity in the formalin/fentanyl group was significantly slower than in the formalin group (p=0.037), suggesting that fentanyl reduced the escape response to formalin, which may indicate an analgesic effect. However, this effect may be due to the effects of fentanyl directly on swimming. Fentanyl administered alone did not decrease velocity when compared to control (p=0.221), showing that it did not affect swimming by itself. We then determined the effects of the µ-opioid receptor antagonists naloxone and CTAP (Figure 5D). In naloxone groups, velocities were not significantly higher than formalin/fentanyl (all p>0.122), suggesting that naloxone did not block the analgesic effects of fentanyl. In CTAP/formalin/fentanyl group, there was no difference compared to formalin/fentanyl or formalin alone (p=1.000 and p=1.000). Naloxone/formalin/fentanyl showed higher velocity than fentanyl or control groups (Figure 5D). These effects may be due to the impact of naloxone alone at 50 µM (Figure 5E). We then looked at the effect of formalin on angular velocity. The formalin group showed reduced angular velocity compared to control (p<0.001, Figure 5—figure supplement 1), an effect not reversed by fentanyl (p=0.151), which suggest angular velocity cannot be used to assess the escape response to formalin.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig5-v2.jpg)
+
+**Figure 5.:** (A) As an index of nociception in larval zebrafish, we measured behavioral responses to the nociceptive stimulus formalin. We quantified swimming velocity in freely-moving larvae. Swimming velocity was quantified as the distance swam per second. (B) Control fish swam at a velocity ranging from 0.1 to 1.3 mm/sec, whereas swimming velocity was increased to 0.7–4.1 mm/sec with formalin. Addition of fentanyl reduced swimming velocity to 0.1–2.3 mm/s. (C) Following exposure to embryo medium only, formalin, or formalin/fentanyl, swimming velocity was strongly increased by formalin within 3 min and was only moderately increased by fentanyl and formalin compared to controls. (D) In separate groups of fish, comparison of averaged velocities for the first 3 min (shaded blue) after baseline (time = 0) showed that formalin (n = 21) significantly increased velocity compared to the control (n = 22), whereas fentanyl (n = 13) reduced the formalin response. Naloxone or CTAP did not block the effect of fentanyl at various concentrations. (E) Naloxone alone increased velocity at 50 µM, but not at 5 and 20 µM. CTAP alone did not increase velocity by itself. Data are presented as medians with error bars showing 25th and 75th percentile or interquartile range. Circles indicate individual data points for each zebrafish. * indicates groups significantly different with p<0.05. Source data can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Angular velocity is calculated as the number of degrees by unit of time. (B) Formalin reduced angular velocity (n = 21, p=0.011) compared to controls (n = 22), an effect not reversed by fentanyl (n = 12, p=0.151). Naloxone at 5, 20 and 50 µM (n = 16, 20, and 23 respectively) or CTAP at 4 and 50 µM (n = 15 and 13) had no effects on fentanyl/formalin combination (p>0.05). (C) Naloxone or CTAP administered alone had no effect on angular velocity. Data are presented as medians ± 75% and 25% percentiles. Black bars represent medians significantly different with p<0.05. Source data can be found in Figure 5—source data 1.
+
 Although naloxone did not prevent or reverse to analgesic effects of fentanyl, it may be due to the large variability in swimming response induced by formalin. In fact, swimming velocity in formalin/fentanyl/naloxone ranged from 0.3 to 4 mm/sec, which is substantially larger than the variability observed in control or fentanyl groups (Figure 5D). To induce more consistent nociceptive response, we administered (allyl)-isothiocyanate (AITC), a chemical acting AITC on transient receptor potential ankyrin 1 channels and transient receptor potential cation channel vanilloid receptor 1 (Oda et al., 2016). We used a similar experimental approach than we used with formalin by combining AITC, fentanyl and/or naloxone. AITC (100 µM) induced a strong increase in velocity compared to controls, an effect reduced by fentanyl (Figure 6A). AITC produced an initial increase in swimming velocity during the first 3 min following drug exposure, which is consistent with the formalin response. Conversely, in fish with a combination of fentanyl (6 µM) and AITC (100 µM), no swimming response was observed compared to AITC alone (Figure 6B), showing that fentanyl reduced the nociceptive response to AITC. Compared to the concentration of fentanyl used in the formalin assay (3 µM), a higher concentration (6 µM) was necessary to eliminate the effects of AITC. This concentration of fentanyl (6 µM) did not decrease velocity when administered alone compared to controls (Figure 6B). Averaged velocities in AITC fish were significantly higher than in controls (p<0.001, Figure 6C), and this increase was significantly lower in fish exposed to fentanyl and AITC (p<0.001). Angular velocity was increased by AITC, but not reversed by fentanyl (Figure 6—figure supplement 1). Interestingly, groups with naloxone at 20 and 50 µM combined with AITC and formalin presented higher swimming velocities than groups exposed to AITC/fentanyl (p=0.003 and p<0.001, respectively), whereas CTAP did not (p=0.342). In summary, AITC produced a fast increase in swimming velocity, an effect significantly reduced by fentanyl, which was reversed by naloxone.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig6-v2.jpg)
+
+**Figure 6.:** (A) As an index of nociception in larval zebrafish, we measured behavioral responses to the nociceptive stimulus AITC. We quantified swimming in freely-moving larvae. Swimming velocity was higher in zebrafish exposed to AITC (100 µM) compared to controls. (B) In fish exposed to fentanyl (6 µM) combined with AITC, swimming velocity was lower than in fish exposed to AITC alone. Larvae exposed to AITC showed an initial increase in velocity during the first 3 min of the recording, whereas larvae with AITC and fentanyl did not show a significant increase during the initial minutes. (C) Comparison of averaged velocities for the first 3 min (shaded blue in Bb) after baseline (time = 0) showed that AITC (n = 26) significantly increased velocity compared to the control (n = 26), whereas fentanyl (n = 9) reduced the formalin response. Fentanyl alone did not significantly affect swimming velocity. Naloxone blocked the effect of fentanyl at 20 µM (n = 12) and 50 µM (n = 17). CTAP did not block the effect of fentanyl on nociception (n = 11). All data are presented as medians with error bars showing 25th and 75th percentile or interquartile range. Circles indicate individual data points for each zebrafish measured. * indicates groups significantly different with p<0.05. Source data can be found in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** AITC fish (n = 26) presented a lower angular velocity compared to controls (n = 25, p=0.002), an effect reversed in fentanyl/AITC group (n = 16, p=0.001). This effect was blocked by naloxone at 20 and 50 µM (n = 12 and 17, p=0.002 and p=0.004), but not by CTAP (n = 11, p=0.812). Angular velocity in fentanyl group (n = 9) was significantly higher than AITC, fentanyl/AITC, naloxone/AITC/fentanyl, and CTAP/AITC/fentanyl (all p>0.05). Data are presented as medians ± 75% and 25% percentiles. Black bars represent medians significantly different with p<0.05. Source data can be found in Figure 6—source data 1.
+
 To determine whether larval zebrafish are sensitive to other types of analgesics, we exposed larvae to lidocaine, a non-opioid anesthetic (Figure 7A). As previously shown, formalin increased velocity compared to control (p<0.001, Figure 7B). In fish exposed to lidocaine and formalin, swimming velocity was significantly reduced compared to formalin group (p=0.002). Swimming velocity in lidocaine group was not different from control (p=0.693). Since we used a relatively high concentration of DMSO (1%) to dissolve lidocaine, we compared whether DMSO (1%) was different from control fish and we did not observed differences between the two groups (p=0.879, Figure 7A). Lidocaine did not affect angular velocity compared to formalin alone (Figure 7—figure supplement 1). In conclusion, two different types of analgesics (fentanyl and lidocaine) reduced the swimming response to formalin, therefore suggesting that these assays may properly assess analgesia.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig7-v2.jpg)
+
+**Figure 7.:** (A) To determine whether the analgesia assay can be replicated with non-opioid analgesics, we used lidocaine, an analgesic widely used in the clinic. Lidocaine with formalin (n = 19) only moderately reduced swimming velocity compared to formalin alone (n = 10). (B) The respiratory stimulant BIMU8 administered with fentanyl and formalin (n = 17) did not significantly affect swimming velocity when compared to formalin/fentanyl (n = 8). On the other hand, CX614/formalin/fentanyl (n = 12) presented significant differences compared to the control (n = 21). (C) We also looked at the analgesic properties of fentanyl in Tübingen zebrafish. As observed with the respiratory assays, fentanyl (n = 10) did not reduce the swimming response compared to formalin alone (n = 9) as it did with AB zebrafish. All data are presented as medians with error bars showing 25th and 75th percentile or interquartile range. Circles indicate individual data points for each zebrafish measured. * indicates groups significantly different with p<0.05. Source data can be found in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63407/elife-63407-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Formalin reduced angular velocity when compared to DMSO (n = 16, all p>0.05), an effect not reversed by lidocaine. (B) BIMU8 (n = 17) and CX614 (n = 12) had no effects on fentanyl/formalin combination (n = 8, all p>0.05). (C) In Tubingen strain, formalin (n = 10) and fentanyl (n = 8) had no effects on angular velocity compared to controls (n = 4, p=0.132). Data are presented as medians ± 75% and 25% percentiles. Black bars represent medians significantly different with p<0.05. Source data can be found in Figure 7—source data 1.
 
 The two stimulants BIMU8 and CX614 were administered to zebrafish to determine whether they can reverse respiratory depression by fentanyl. Only CX614 was able to significantly reverse respiratory depression. We therefore determine whether BIMU8 and CX614 were also reversing the analgesic properties of fentanyl. The combination of BIMU8 (20 µM)/formalin/fentanyl did not significantly change swimming velocity compared to the control (p=1.000) or formalin/fentanyl group (p=1.000, Figure 7B). However, CX614 (5 µM) /formalin/fentanyl group presented higher swimming velocities than the control group (p<0.001) and formalin/fentanyl (p=0.007), therefore showing that the ampakine CX614 reversed both respiratory depression and analgesia by fentanyl. Finally, Tübingen fish did not show respiratory depression by fentanyl. We therefore tested whether this strain is similarly insensitive to fentanyl in our analgesia assay. No difference in swimming velocity was observed between formalin and formalin/fentanyl group in TU fish (p=0.132), (Figure 7C), demonstrating that fentanyl did not reduce nociception elicited by formalin.
 
@@ -85,32 +109,168 @@ Opioid analgesics constitute essential pain therapies that present the lethal si
 
 ## Materials and methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>AB Zebrafish</td>
+      <td>Hospital for Sick Children and the University of Toronto Mississauga (ON, Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tübingen (TU) Zebrafish</td>
+      <td>Hospital for Sick Children and the University of Toronto Mississauga (ON, Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>AB, TU cross zebrafish</td>
+      <td>Crossed at St. Michael’s Hospital (ON, Canada)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fentanyl citrate</td>
+      <td>Sandoz (QC, Canada)</td>
+      <td>Cat. No. 2520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine sulfate</td>
+      <td>Sandoz (QC, Canada)</td>
+      <td>Cat. No. 5642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Naloxone hydrochloride</td>
+      <td>Omega (QC, Canada)</td>
+      <td>Cat. No. L0010224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTAP (D-Phe-Cys-Tyr-D-Trp-Arg-Thr-Pen-Thr-NH2)</td>
+      <td>Tocris (ON, Canada)</td>
+      <td>Cat. No. 1560/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine</td>
+      <td>Tocris (ON, Canada)</td>
+      <td>Cat. No. 3057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CX 614</td>
+      <td>Tocris (ON, Canada)</td>
+      <td>Cat. No. 5149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BIMU 8</td>
+      <td>Tocris (ON, Canada)</td>
+      <td>Cat. No. 4374/5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Allyl isothiocyanate (AITC)</td>
+      <td>Sigma-Aldrich (ON, Canada)</td>
+      <td>Cat. No. 36682</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formalin</td>
+      <td>VWR</td>
+      <td>Cat. No. 89370/094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich (ON, Canada)</td>
+      <td>Cat. No. 472301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sigmaplot</td>
+      <td>Version 14, SAS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Creative Suite 5, Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EthoVision XT</td>
+      <td>v15, Noldus Information Technology, Netherlands</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks, US</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 Animal practices and experiments in adult fish, larvae, and breeding pairs followed laboratory standards (Avdesh et al., 2012), and were carried out according to the procedures outlined by the Canadian Council on Animal Care and were approved by St. Michael’s Hospital animal care committee. Only wildtype AB strain zebrafish larvae at 12–14 days post-fertilization (dpf) were used for experiments, except when comparisons between strains were made. Tübingen (TU) and crosses between TU and AB were used to compare strains. All experiments were performed in AB fish except when TU was specifically mentioned. All fish were housed on a 14/10 hr light/dark cycle and kept at a constant water temperature of 28°C ± 0.5°. Larvae and adults were originally obtained from the Hospital for Sick Children and the University of Toronto Mississauga (Toronto, ON). For breeding, male and female adult fish at 4 months of age were placed in a breeding tank and separated by a divider. The next day the divider was removed, and fish mated within the first half hour of the lights-on period and were returned to the rack (Aquaneering, CA, United States). The eggs were collected and placed in petri-dish filled with E2 embryo medium (NaCl, 15.0 mM; KCl, 0.5 mM; MgSO4, 1.0 mM; CaCl2, 1.0 mM; Na2HPO4, 0.05 mM; KH2PO4, 0.15 mM; NaHCO3, 0.7 mM). Unfertilized eggs were removed.
 
 Beginning at 5 days post-fertilization, larvae were fed with Ziegler AP100 (artificial plankton) dry larval diet (100 microns) and were moved to 0.8 litre tanks filled with system water, with a density of 20 fish/100 mL and were kept there until the experiment. Water quality was kept at a pH of 7.5 ± 0.5 and with a conductivity of 500-1000ppm. Dissolved oxygen was maintained at 6-7ppm. Nitrites and ammonia were kept at <150 ppm. All experiments were undertaken during daylight hours and fish were placed in an incubator at 28.5 ± 0.5°C.
 
-## Drug treatments
+### Drug treatments
 
 All opioid drugs were used with Health Canada approval. Fentanyl citrate and morphine sulfate were obtained from Sandoz (QC, Canada). Naloxone hydrochloride was obtained from Omega (QC, Canada). The MOR antagonist CTAP (D-Phe-Cys-Tyr-D-Trp-Arg-Thr-Pen-Thr-NH2), lidocaine, the Ampakine CX614, and the 5-HT4A receptor agonist BIMU8 were obtained from Tocris (ON, Canada). AITC was obtained from Sigma-Aldrich (ON, Canada).
 
-## Determination of mandibular respiratory movements
+### Determination of mandibular respiratory movements
 
 Respiratory mandible movements were quantified in live zebrafish larvae using a custom-made system including a 4K high-definition camera (Basler 4K, 4096pi x 3000pi, model acA4112-30um, Edmunds Optics) and partially telecentric 7x zoom lens (Edmund Optics). The water was kept at a constant 28.5 ± 0.5°C temperature using a heating pad placed under the multi-well plate. With this system, simultaneous recordings of 12 zebrafish larvae can be performed. As an index of respiratory network activity, mandible movements were measured, and respiratory rate was quantified (Figure 1A). In a custom-made 12-well clear plate, larval zebrafish were placed in wells (diameter 10 mm, depth 4 mm) containing 54 µL of embryo medium. Using our video recording system, a dorsal video was performed for each drug combination. We used two approaches to determine the rate of mandible movement. Rate of mandible movements was visually counted by two independent researchers, blind to the drug combinations. Using this approach, the number of mandible movements per minute was calculated for each condition and each animal. In a subset of zebrafish larvae, mandible movements were also quantified by measuring pixel intensity changes in a defined area around the fish head. Tracings of pixel intensity over time were plotted and the rate of intensity changes was quantified using a custom-made software in Matlab (Mathworks, US). The validity of visual quantification was then compared to software quantification.
 
-## Respiratory depression by opioids in zebrafish
+### Respiratory depression by opioids in zebrafish
 
 Zebrafish larvae were positioned in wells and were left for 10 min to acclimatize to the environment. A video of baseline respiratory movement was then taken for 1 min. Following the baseline recordings, combinations of drugs were applied to each well in a volume of 6 µL per well. VA video was recorded for 30 min following drug administration. To determine whether various drugs induce respiratory rate depression, we compared the rates of mandible movements between several groups of larvae: control group (embryo medium), fentanyl group, fentanyl/naloxone group (combination of fentanyl and naloxone), fentanyl/other drugs (fentanyl and potential drug candidates). When possible, animals from different groups were tested simultaneously in 12-well plates (for example: four larvae per group with three groups were tested). However, several separate recordings of different 12-well plates were necessary to provide the correct number of animals per group. Respiratory rate values collected in larval zebrafish were normalized according to baseline mandible rates acquired before drugs were administered. Normalization considerably reduced the high variability encountered in larval zebrafish. Larval zebrafish may present different growth and behaviors at 12-14dpf due to variable development rates and access to food and nutrients within the tank. To consistently select larvae at similar development stages, we established selection criteria. For respiratory assays, larvae with rates of mandible movements below 60 and above 160 movements/min at baseline (before drugs were administered) were not considered. Such exclusion criteria considerably reduce the inter-group variability observed in zebrafish larvae.
 
-## Swimming behaviour quantification
+### Swimming behaviour quantification
 
 Nociception was assessed by measuring the swimming escape response to nociceptive stimuli. Zebrafish were placed individually into wells of a custom-made 24-well plate containing 90 µL of embryo water. The well plate was made of white acrylic with a back-light to allow video recording. The plate was heated at 28.5 ± 0.5°C. The same custom-made video recording apparatus, as mentioned above, was used to record swimming in larval zebrafish. Swimming experiments were analyzed using a commercial software (EthoVision XT v15, Noldus Information Technology, Netherlands), and swimming velocity (mm/sec) and angular velocity (degrees/sec) were quantified. Before applying drugs to the plate wells containing larvae, we measured a 10 min baseline. Only larvae with velocity between 0.1 and 2 mm/sec during baseline (before drugs were administered) were considered for analysis. Formalin or (allyl)-isothiocyanate (AITC) were then used as nociceptive stimuli. Such stimuli were previously validated in mammalian and adult zebrafish (Magalhães et al., 2017; Oda et al., 2016) studies. AITC directly acts on transient receptor potential A1 which is involved in pain response. We applied formalin or AITC in combination with opioid analgesics to determine opioid analgesia in larval zebrafish.
 
-## Opioid analgesia in larval zebrafish
+### Opioid analgesia in larval zebrafish
 
 Zebrafish larvae (12–14 days post-fertilization) were positioned in wells of a 24-well plate and left 10 min to acclimatize. A video of the baseline movements was taken for 10 min. Following baseline recordings, combinations of drugs were applied to each well in a volume of 10 µL and video was recorded for 15 min. To determine whether various drug combinations induce analgesia, we compared the swimming velocity between several groups of larvae: control group (embryo medium was administered), formalin or AITC group, fentanyl/formalin or fentanyl/AITC group (combination of fentanyl and formalin), formalin/fentanyl/naloxone or AITC/fentanyl/naloxone. CTAP was also used instead of naloxone. When possible, these groups were tested simultaneously in 24-well plates (six larvae per group if four groups were tested). Multiple recordings were needed to provide the correct number of animals per group. The swimming and angular velocities were calculated for the first 3 min following treatment (minutes 0–3) and were used for analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Data in larval zebrafish do not always follow a normal distribution. Therefore, normality was tested using a Shapiro-Wilk method and equality of variances using the Brown-Forsythe test. All respiratory data presented in the Results section followed normal distribution when respiratory rate was normalized according to baseline respiratory rate (before any drugs were administered). When data followed a normal distribution, we compared multiple groups using a one-way ANOVA followed by Holm-Sidak post-hoc tests to compare individual groups. We presented individual data points, group means and standard deviation as error bars. However, data in larval zebrafish are often not normally distributed. For instance, swimming velocity and angular velocity did not follow normal distribution, even when normalized according to baseline. When data distribution was not normal, we compared experimental groups using Wilcoxon rank tests and All Pairwise Multiple Comparison Procedures (Dunn’s method) as post-hoc tests. We presented data as individual data points and medians with error bars showing 25th and 75th percentiles (interquartile range). In some cases, data presented clear outliers. To objectively identify outliers, we selected all data points below and above 1.5 x the interquartile range and eliminated these data points from the data set (Michel et al., 2020). All statistical tests and graphs were done using Sigmaplot (version 14, SAS) and figures were prepared with Adobe Illustrator (Creative Suite 5, Adobe).

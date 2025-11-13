@@ -21,21 +21,21 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Center for Public Health Genomics, School of Medicine, University of Virginia Charlottesville United States
-2. https://ror.org/0153tk833 Department of Biochemistry and Molecular Genetics, School of Medicine, University of Virginia Charlottesville United States
-3. https://ror.org/0153tk833 Department of Radiation Oncology, University of Virginia Charlottesville United States
-4. https://ror.org/0153tk833 Department of Microbiology, Immunology, and Cancer Biology, School of Medicine, University of Virginia Charlottesville United States
-5. https://ror.org/03wmf1y16 Department of Orthopedics, Anschutz Medical Campus, University of Colorado Aurora United States
-6. https://ror.org/0153tk833 Department of Public Health Sciences, School of Medicine, University of Virginia Charlottesville United States
-7. https://ror.org/05qwgg493 Department of Mechanical Engineering, Boston University Boston United States
-8. https://ror.org/02ttsq026 Department of Mechanical Engineering, University of Colorado Boulder Boulder United States
-9. https://ror.org/05qwgg493 Department of Orthopaedic Surgery, Boston University Medical Center Boston United States
+1. Center for Public Health Genomics, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Department of Biochemistry and Molecular Genetics, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+3. Department of Radiation Oncology, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+4. Department of Microbiology, Immunology, and Cancer Biology, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+5. Department of Orthopedics, Anschutz Medical Campus, University of Colorado Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+6. Department of Public Health Sciences, School of Medicine, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+7. Department of Mechanical Engineering, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
+8. Department of Mechanical Engineering, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+9. Department of Orthopaedic Surgery, Boston University Medical Center Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
 
 † Corresponding author
 
 ## Abstract
 
-Genome-wide association studies (GWASs) for bone mineral density (BMD) in humans have identified over 1100 associations to date. However, identifying causal genes implicated by such studies has been challenging. Recent advances in the development of transcriptome reference datasets and computational approaches such as transcriptome-wide association studies (TWASs) and expression quantitative trait loci (eQTL) colocalization have proven to be informative in identifying putatively causal genes underlying GWAS associations. Here, we used TWAS/eQTL colocalization in conjunction with transcriptomic data from the Genotype-Tissue Expression (GTEx) project to identify potentially causal genes for the largest BMD GWAS performed to date. Using this approach, we identified 512 genes as significant using both TWAS and eQTL colocalization. This set of genes was enriched for regulators of BMD and members of bone relevant biological processes. To investigate the significance of our findings, we selected PPP6R3 , the gene with the strongest support from our analysis which was not previously implicated in the regulation of BMD, for further investigation. We observed that Ppp6r3 deletion in mice decreased BMD. In this work, we provide an updated resource of putatively causal BMD genes and demonstrate that PPP6R3 is a putatively causal BMD GWAS gene. These data increase our understanding of the genetics of BMD and provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.
+Genome-wide association studies (GWASs) for bone mineral density (BMD) in humans have identified over 1100 associations to date. However, identifying causal genes implicated by such studies has been challenging. Recent advances in the development of transcriptome reference datasets and computational approaches such as transcriptome-wide association studies (TWASs) and expression quantitative trait loci (eQTL) colocalization have proven to be informative in identifying putatively causal genes underlying GWAS associations. Here, we used TWAS/eQTL colocalization in conjunction with transcriptomic data from the Genotype-Tissue Expression (GTEx) project to identify potentially causal genes for the largest BMD GWAS performed to date. Using this approach, we identified 512 genes as significant using both TWAS and eQTL colocalization. This set of genes was enriched for regulators of BMD and members of bone relevant biological processes. To investigate the significance of our findings, we selected PPP6R3, the gene with the strongest support from our analysis which was not previously implicated in the regulation of BMD, for further investigation. We observed that Ppp6r3 deletion in mice decreased BMD. In this work, we provide an updated resource of putatively causal BMD genes and demonstrate that PPP6R3 is a putatively causal BMD GWAS gene. These data increase our understanding of the genetics of BMD and provide further evidence for the utility of combined TWAS/colocalization approaches in untangling the genetics of complex traits.
 
 ## Introduction
 
@@ -51,17 +51,110 @@ Here, we performed TWAS and eQTL colocalization using the GTEx resource and the 
 
 ## Results
 
-## TWAS and eQTL colocalization identify potentially causal BMD GWAS genes
+### TWAS and eQTL colocalization identify potentially causal BMD GWAS genes
 
 To identify potentially causal genes responsible for BMD GWAS associations, we combined TWAS and eQTL colocalization using GTEx data (Figure 1A). We began by performing a TWAS using reference gene expression predictions from GTEx (Version 8; 49 tissues) and the largest GWAS performed to date for heel estimated BMD (eBMD) (>1100 independent associations) (Morris et al., 2019; Consortium, 2020). The analysis was performed using S-MultiXcan, which allowed us to leverage information across all 49 GTEx tissues (Barbeira et al., 2019). Our analysis focused on protein-coding genes (excluded non-coding genes). A total of 2156 protein-coding genes were significantly (Bonferroni-adjusted p value ≤0.05) associated with eBMD (Supplementary file 1a).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the analysis. The human image was obtained from BioRender.com. TWAS/colocalization plot for genes in the locus around RUNX2 (B) and RERE (C). The −log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel). Genes alternate in color for visual clarity. Triangles represent RUNX2 (B) and RERE (C). (D) Distribution of prioritized genes within estimated BMD (eBMD) GWAS loci.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Transcriptome-wide association study (TWAS)/colocalization plot for genes in the chromosome 20 locus (lead (single nucleotide polymorphism)SNP rs6142137). The −log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel) are shown. Genes alternate in color for visual clarity. Traingles represent the nine prioritized genes in the locus.
+
 Next, we identified colocalizing eQTL from each of the 49 tissues in GTEx using fastENLOC (Pividori et al., 2020; Wen et al., 2017). We identified 1182 colocalizing protein-coding genes with a regional colocalization probability (RCP) of 0.1 or greater (Supplementary file 1b). In total, 512 protein-coding genes were significant in both the TWAS and eQTL colocalization analyses (Table 1 and Supplementary file 1c). Among the identified genes were many with well-known roles in the regulation of BMD, such as RUNX2 (Figure 1B), IGF1, and LRP6, as well as novel genes such as RERE (Figure 1C). Overall, the identified genes had significantly colocalizing eQTL in all 49 GTEx tissues, with eQTL from cultured fibroblasts (132 genes), subcutaneous adipose tissue (117 genes), tibial artery (115 genes), and tibial nerve (114 genes) exhibiting the highest number of significant colocalizations (Supplementary file 1d). TWAS predictors were only generated for genes on autosomes and of the 1103 independent associations identified by Morris et al., 2019, 1097 were autosomal. For each of these, we defined a locus as the region consisting of ±1 Mbp around each association. Of the 1097 loci, almost half (542; 49%) of the loci contained at least one of the 512 prioritized genes. Most loci overlapped one gene (mean = 1.7, median = 1); however, 184 loci overlapped multiple genes, including a locus on Chromosome (Chr.) 20 (lead SNP rs6142137) which contained 9 prioritized genes (Figure 1D and Figure 1—figure supplement 1).
 
-## Characterization of genes identified by TWAS/eQTL colocalization
+**Table 1.**
+ Top 10 protein-coding genes significant by colocalization (RCP ≥0.1) and TWAS, sorted by TWAS p value.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Tissue with greatest RCP</th>
+      <th>Max. RCP</th>
+      <th>TWAS p value (Bonferroni)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPTBN1</td>
+      <td>Cells_Cultured_Fibroblasts</td>
+      <td>0.9469</td>
+      <td>&lt;5 × 10−324</td>
+    </tr>
+    <tr>
+      <td>CCDC170</td>
+      <td>Spleen</td>
+      <td>0.6582</td>
+      <td>&lt;5 × 10−324</td>
+    </tr>
+    <tr>
+      <td>FAM3C</td>
+      <td>Artery_Tibial</td>
+      <td>0.4917</td>
+      <td>&lt;5 × 10−324</td>
+    </tr>
+    <tr>
+      <td>SEPT5</td>
+      <td>Skin_Sun_Exposed</td>
+      <td>0.4868</td>
+      <td>2.26 × 10−286</td>
+    </tr>
+    <tr>
+      <td>FGFRL1</td>
+      <td>Cells_Cultured_Fibroblasts</td>
+      <td>0.1611</td>
+      <td>5.31 × 10−272</td>
+    </tr>
+    <tr>
+      <td>GREM2</td>
+      <td>Cells_Cultured_Fibroblasts</td>
+      <td>0.9998</td>
+      <td>4.31 × 10−257</td>
+    </tr>
+    <tr>
+      <td>GPATCH1</td>
+      <td>Whole_Blood</td>
+      <td>0.3564</td>
+      <td>3.44 × 10−226</td>
+    </tr>
+    <tr>
+      <td>RHPN2</td>
+      <td>Pituitary</td>
+      <td>0.2181</td>
+      <td>8.71 × 10−221</td>
+    </tr>
+    <tr>
+      <td>BMP4</td>
+      <td>Brain_Cortex</td>
+      <td>0.5468</td>
+      <td>5.49 × 10−169</td>
+    </tr>
+    <tr>
+      <td>RUNX2</td>
+      <td>Esophagus_Gastroesophageal_Junction</td>
+      <td>0.2372</td>
+      <td>1.99 × 10−146</td>
+    </tr>
+  </tbody>
+</table>
+
+### Characterization of genes identified by TWAS/eQTL colocalization
 
 To evaluate the ability of the combined TWAS/colocalization approach to identify genes previously implicated in the regulation of BMD, other bone traits, or the activity of bone cells, we queried the presence of ‘known bone genes’ within the list of the 512 prioritized protein-coding genes. To do so, we created a database-curated set of genes previously implicated in the regulation of bone processes (henceforth referred to as our ‘known bone genes’ list, N = 1399, Supplementary file 1e). Of the 512 genes identified above, 66 (12.9%) were known bone genes, representing a significant enrichment (odds ratio [OR] = 1.72; p = 1.0 × 10−4) over what would be expected by chance (Supplementary file 1f).
 
 We also performed a Gene Ontology (GO) enrichment analysis of the 512 prioritized genes. We observed enrichments in several bone-relevant ontologies, such as ‘ossification’ (p = 3.1 × 10−6), ‘skeletal system development’ (p = 2 × 10−5), and ‘regulation of osteoblast differentiation’ (p = 3.9 × 10−5) (Figure 2A and Supplementary file 1g).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig2-v1.jpg)
+
+**Figure 2.:** (A) The top 40 terms from a Gene Ontology analysis of the 512 potentially causal BMD genes identified by our analysis. Terms with clear relevance to bone are highlighted in red. Only terms from the ‘Biological Process’ (BP) subontology are listed, and similar terms were removed for clarity. (B) TWAS/colocalization plot for genes in the locus around GPATCH1 (±1.5 Mbp). The −log10 Bonferroni-adjusted p values from the TWAS analysis (top panel) and the maximum regional colocalization probabilities (RCPs) from the colocalization analyses (bottom panel). Genes alternate in color for visual clarity. Triangles represent GPATCH1. (C) Mirrorplot showing estimated BMD (eBMD) GWAS locus (top panel) and colocalizing GPATCH1 eQTL in whole blood (bottom panel). SNPs are colored by their linkage disequilibrium (LD) with rs11881367 (purple), the most significant GWAS SNP in the locus. (D) Scatterplot of −log10 p values for GPATCH1 eQTL versus eBMD GWAS SNPs. SNPs are colored by their LD with rs11881367 (purple). (E) BMD in Gpatch1 knockdown mice. N = 7 females and N = 4 males for Gpatch1+/− mice, N = 880 females and N = 906 males for Gpatch1+/+ mice. Boxplots indicate the median (middle line), the 25th and 75th percentiles (box) and the whiskers extend to 1.5 * IQR.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Venn diagram showing the overlaps in data in the general gene prioritization pipeline. Overlapping transcriptome-wide association study (TWAS)/colocalization genes are termed ‘prioritized genes’. (B) Venn diagram showing overlap between the significant (p ≤ 0.05) S-MultiXcan TWAS genes and the prioritization datasets. (C) Venn diagram showing overlap between the fastENLOC colocalizing genes and the prioritization datasets.For all data, the black values indicate values obtained when a fastENLOC colocalization threshold of 0.1 is used, while the red values are those that are obtained when a fasENLOC colocalization threshold of 0.5 is used.
 
 To compare our approach with the approach of prioritizing the closest genes to GWAS associations as potentially causal, we quantified the number of genes that were both the closest genes to eBMD GWAS associations and were members of the ‘known bone gene’ list. Of the 863 genes that were the closest genes to eBMD GWAS associations (Supplementary file 1h), 139 were members of the ‘known bone gene list’, representing a more significant enrichment of ‘known bone genes’ than our prioritization approach (OR = 2.56, p = 6.37 × 10−19). Of our 512 prioritized genes, 206 (40%) were also the closest genes to eBMD GWAS associations, with 27 of the remaining 306 prioritized genes (8.8%) being members of the ‘known bone gene’ list.
 
@@ -69,9 +162,97 @@ The International Mouse Phenotype Consortium (IMPC) has recently measured whole 
 
 An example of one of the 64 genes is GPATCH1, located within a GWAS association on human chromosome 19q13.11. GPATCH1 is part of the catalytic step 2 spliceosome, and may be involved in mRNA splicing, and is predicted to enable RNA-binding activity. It is also expressed in bone cells in mouse (Alliance of genome resources, 2022; Lattin et al., 2008). Of all the genes in the region, GPATCH1 had the strongest TWAS association (p = 3.44 × 10−226) (Figure 2B) and the strongest eQTL colocalization (whole blood, RCP = 0.36) (Figure 2B–D). The eQTL and BMD GWAS allele effects for the top SNPs were in the same direction, suggesting that decreasing the expression of GPATCH1 would lead to decreased BMD. BMD data from the IMPC showed that female mice heterozygous for a Gpatch1 null allele had decreased BMD (p = 2.17 × 10−8) (Figure 2E). Together, these data suggest that many of the genes identified by the combined TWAS/colocalization approach are likely causal BMD GWAS genes.
 
-## PPP6R3 is a candidate causal gene for a GWAS association on Chr. 11
+### PPP6R3 is a candidate causal gene for a GWAS association on Chr. 11
 
 To identify novel candidate genes for functional validation, we focused on genes with the strongest evidence of being causal. To do so, we increased the colocalization RCP threshold to 0.5, and then sorted genes based on TWAS Bonferroni-adjusted p values. Furthermore, we constrained the list of candidates for functional validation to genes which were not members of the ‘known bone gene’ list or genes with a nominal (p ≤ 0.05) alteration in whole-body BMD as determined by the IMPC. This yielded 137 putatively causal BMD genes (Table 2, Supplementary file 1i, and Figure 2—figure supplement 1C).
+
+**Table 2.**
+ Top 10 novel protein-coding genes significant by colocalization (RCP ≥0.5) and TWAS, sorted by TWAS p value.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Tissue with greatest RCP</th>
+      <th>Max. RCP</th>
+      <th>TWAS p value (Bonferroni)</th>
+      <th># GTEx tissues with RCP ≥0.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPTBN1</td>
+      <td>Cells_Cultured_fibroblasts</td>
+      <td>0.9469</td>
+      <td>&lt;5 × 10−324</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>PPP6R3</td>
+      <td>Thyroid</td>
+      <td>0.5291</td>
+      <td>5.7 × 10−93</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BARX1</td>
+      <td>Colon_Transverse</td>
+      <td>0.7764</td>
+      <td>6.36 × 10−63</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MEOX2</td>
+      <td>Brain_Nucleus_accumbens_basal_ganglia</td>
+      <td>0.6286</td>
+      <td>3.21 × 10−53</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>RERE</td>
+      <td>Adipose_Subcutaneous</td>
+      <td>0.6431</td>
+      <td>6.95 × 10−46</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SIPA1</td>
+      <td>Nerve_Tibial</td>
+      <td>0.9981</td>
+      <td>4.26 × 10−41</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAPZB</td>
+      <td>Testis</td>
+      <td>0.6716</td>
+      <td>3.64 × 10−33</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B4GALNT3</td>
+      <td>Artery_Aorta</td>
+      <td>0.9241</td>
+      <td>2.67 × 10−33</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>TRPC4AP</td>
+      <td>Breast_Mammary_Tissue</td>
+      <td>0.5577</td>
+      <td>8.62 × 10−31</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>AXL</td>
+      <td>Minor_Salivary_Gland</td>
+      <td>0.6205</td>
+      <td>9.74 × 10−31</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 Though it was not on the ‘known bone gene’ list, the first gene ranked by TWAS p value, SPTBN1, has been demonstrated to play a role in the regulation of BMD (Calabrese et al., 2017). The second, PPP6R3, has not been previously implicated in the regulation of BMD. PPP6R3, a regulatory subunit of protein phosphatase 6, which shows ubiquitous expression across tissues in humans (Cristiano, 2020), is located on human Chr. 11 within 1 Mbp of seven independent eBMD GWAS SNPs identified by Morris et al., 2019 (subsequently referred to as ‘eBMD lead SNPs’) (Figure 3A). Of all the protein-coding genes (N = 29) in the ~1.8 Mbp region surrounding PPP6R3, its expression was the most significantly associated with eBMD by TWAS (Bonferroni = 5.7 × 10−93) (Figure 3B). Furthermore, PPP6R3 was the only gene in the region with eQTL (in four GTEx tissues, thyroid, ovary, brain_putamen_basal_ganglia, and stomach with RCPs = 0.53, 0.50, 0.28, and 0.14, respectively) that colocalized with at least one of the eBMD associations (Figure 3B). Based on these data, we chose to further investigate PPP6R3 as a potentially causal BMD gene.
 
@@ -83,9 +264,37 @@ We first determined which of the seven associations colocalized with the PPP6R3 
 
 A recent fracture GWAS identified 14 significant associations, one of which was located in the PPP6R3 region (rs35989399, Chr. 11, 68.622433 Mbp) (Morris et al., 2019). We analyzed the fracture GWAS in the same manner as we did above for eBMD. We found that PPP6R3 expression when analyzed by TWAS was significant for fracture (TWAS Bonferroni-pval = 6.0 × 10−3) and the same PPP6R3 eQTL colocalized with the fracture association (RCP = 0.49 in ovary, RCP = 0.36 in thyroid) (Figure 3D). Together, these data highlight PPP6R3 as a strong candidate for one of the seven eBMD/fracture associations in this region.
 
-## PPP6R3 is a regulator of femoral geometry, BMD, and vertebral microarchitecture
+### PPP6R3 is a regulator of femoral geometry, BMD, and vertebral microarchitecture
 
 To assess the effects of PPP6R3 expression on bone phenotypes, we characterized mice harboring a gene-trap allele (Ppp6r3tm1a(KOMP)Wtsi) (Figure 4A). We intercrossed mice heterozygous for the mutant allele to generate mice of all three genotypes (wild-type (WT, N = 26 females, 21 males), heterozygous (HET, N = 33 females, 36 males), and mutant (MUT, N = 20 females, 21 males)). The absence of PPP6R3 protein in MUT mice was confirmed through western blotting (Figure 4B). Furthermore, we sequenced RNA extracted from the L5 vertebrae of wild-type and mutant mice, and found that PPP6R3 was differentially expressed between the mutant and wild-type mice (padj = 3.67 × 10−104, log2 fold change = −1.63). We did not observe changes in gene expression for any other gene in the locus, including Lrp5 (padj = 0.99, log2 fold change = −0.068), a well-known regulator of bone mass just upstream of Ppp6r3 (Supplementary file 1j).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the Ppp6r3 gene-trap allele (Ppp6r3tm1a(KOMP)Wtsi). Image obtained from the International Mouse Phenotype Consortium (IMPC). (B) Western blot of Ppp6r3 in experimental mouse spleens. Top left panel shows that PPP6R1 protein (control) levels are not affected by the Ppp6r3 gene-trap allele. Top right panel shows the effect of the gene-trap allele on PPP6R3 protein levels. The two bands are ostensibly due to different PPP6R3 isoforms. Bottom panel shows that PP6C protein (control) levels are not affected by the Ppp6r3 gene-trap allele. For raw blots, refer to Figure 4—source data 1. Least-squares means for spinal (C) and femoral (D) areal BMD (aBMD) dual X-ray absorptiometry (DXA) in Ppp6r3 wild-type (WT), heterozygous (HET), and mutant (MUT) mice. Contrast p values, adjusted for multiple comparisons are presented. *p ≤ 0.05. (E) Representative images of vertebrae for the Ppp6r3 experimental mice. Scale is shown on the bottom right. (F, G) Least-squares means for micro-computed tomography (μCT) measurements in the lumbar spines of Ppp6r3 WT, HET, and MUT mice. Contrast p values, adjusted for multiple comparisons are presented. *p ≤ 0.05. (H, I) Least-squares means for μCT measurements in the femoral midshaft of Ppp6r3 WT, HET, and MUT mice. Contrast p values, adjusted for multiple comparisons are presented. *p ≤ 0.05. Abbreviations: BV/TV – bone volume fraction, vBMD – volumetric bone mineral density, Tot.Ar – total area, Ma.Ar – medullary area. In panels (C, D and F–I), the center points represent the least-square means, and the error bars represent confidence intervals at a confidence level of 0.9. Data presented here are from both male and female mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) GWAS SNPs for LSBMD in the PPP6R3 locus. SNPs in red are significant PPP6R3 expression quantitative trait loci (eQTL) in thyroid tissue. The dashed line represents the genome-wide significance level (p value = 5 × 10−8). (B) GWAS SNPs for FNBMD in the PPP6R3 locus. SNPs in red are significant PPP6R3 eQTLin thyroid tissue. The dashed line represents the genome-wide significance level (p value = 5 × 10−8). (C) Mirroplot of LSBMD SNPs and PPP6R3 eQTL SNPs are colored by their linkage disequilibrium (LD) with rs10047483 (purple), the most significant PPP6R3 eQTL in thyroid. In the LSBMD panel, the most significant SNP is highlighted in purple, as rs10047483 was not assayed. (D) Mirroplot of FNBMD SNPs and PPP6R3 eQTL SNPs are colored by their LD with rs10047483 (purple), the most significant PPP6R3 eQTL in thyroid. In the FNBMD panel, the most significant SNP is highlighted in purple, as rs10047483 was not assayed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Weight. (B) Anterior–posterior (AP) femoral width. (C) Medial–lateral (ML) femoral width. (D) Femoral length (FL). (E) Lumbar spine tissue mineral density (TMD). (F) Lumbar spine trabecular separation (TbSp). (G) Lumbar spine trabecular thickness (TbTh). (H) Lumbar spine trabecular number (TbN). (I) P1NP serum concentration in sex-combined samples. (J) P1NP serum concentration in male samples. (K) P1NP serum concentration in female samples. Panels (E–H) are measured by micro-computed tomography (μCT). In panels A–H, least-square means are plotted. p values are contrast p values, adjusted for multiple comparisons. In panels I–K, p values are calculated by t-test. Asterisks represent significance (p ≤ 0.05).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–C) Least-square means for mean(mineral:matrix) in sex-combined, female, and male samples, respectively. (D–F) Least-square means for mean(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G–I) Least-square means for mean(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A–C) Least-square means for mean(mineral:matrix) in sex-combined, female, and male samples, respectively. (D–F) Least-square means for mean(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G–I) Least-square means for mean(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A–C) Least-square means for sd(mineral:matrix) in sex-combined, female, and male samples, respectively. (D–F) Least-square means for sd(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G–I) Least-square means for sd(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/77285/elife-77285-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A–C) Least-square means for sd(mineral:matrix) in sex-combined, female, and male samples, respectively. (D–F) Least-square means for sd(carbonate:phosphate) in sex-combined, female, and male samples, respectively. (G–I) Least-square means for sd(crystallinity) in sex-combined, female, and male samples, respectively. Contrast p values, adjusted for multiple comparisons, are presented.
 
 The BMD analyses presented above used heel eBMD GWAS data. We used these data because they represent the largest, most well-powered BMD GWAS to date (Estrada et al., 2012). However, to determine whether perturbation of Ppp6r3 would be expected to impact femoral or lumbar spine BMD in a similar manner, we turned to a smaller GWAS to look at both of these traits. In a GWAS by Estrada et al., 2012, a total of 56 loci were identified for femoral neck (FNBMD) and lumbar spine (LSBMD) BMD. One of the 56 loci corresponded to the same SNPs associated with the PPP6R3 eQTL. The locus was significant for LSBMD; however, it did not reach genome-wide significance for FNBMD (Figure 4—figure supplement 1).
 
@@ -115,7 +324,7 @@ In summary, we applied a combined TWAS/colocalization approach using GTEx and id
 
 ## Methods
 
-## fastENLOC colocalization
+### fastENLOC colocalization
 
 For each of the eBMD and fracture GWASs, we performed colocalization using fastENLOC, by following the tutorial and guidelines available at https://github.com/xqwen/fastenloc (Wen, 2022).
 
@@ -123,29 +332,29 @@ Briefly, for each GWAS, we converted variant coordinates to the hg38 human genom
 
 Z-scores were then converted to posterior inclusion probabilities using torus (Wen, 2015). Finally, these data were colocalized with fastENLOC for all 49 GTEx V8 tissues, with the ‘-total_variants’ flag set to 14,000,000. Colocalization was performed using pre-computed GTEx multi-tissue annotations, obtained from https://github.com/xqwen/fastenloc; Wen, 2022. Finally, to identify protein-coding genes in the results, we utilized Ensembl’s ‘hsapiens_gene_ensembl’ dataset using biomaRt (version 2.45.8).
 
-## S-MultiXcan
+### S-MultiXcan
 
 We conducted a TWAS by integrating genome-wide SNP-level association summary statistics from an eBMD GWAS (Morris et al., 2019) with GTEx version 8 gene expression QTL data from 49 tissue types. We used the S-MultiXcan approach for this analysis, to correlate gene expression across tissues to increase power and identify candidate susceptibility genes (Barbeira et al., 2019). Default parameters were used, with the exception of the ‘--cutoff_condition_number’ parameter, which was set to 30. Bonferroni-correction of p values was performed on the resultant gene set (22,337 genes), using R’s ‘p.adjust’ function. This was followed by the removal of non-protein-coding genes. The analysis was also performed in the same manner using summary statistics from a fracture GWAS (Morris et al., 2019). Finally, to identify protein-coding genes in the results, we utilized Ensembl’s ‘hsapiens_gene_ensembl’ dataset using biomaRt (Durinck et al., 2009; Durinck et al., 2005).
 
-## Creation of the ‘known bone gene’ list
+### Creation of the ‘known bone gene’ list
 
 We generated a ‘known bone gene’ set as follows: First, we downloaded Gene Ontology IDs for the following terms: ‘osteo*’, ‘bone’, and ‘ossif*’ from AmiGO2 (version 2.5.13) (Carbon et al., 2009). After removal of non-bone-related terms, we extracted all mouse and human genes related to the GO terms, using biomaRt. From this list, we retained protein-coding genes.
 
 We also used the ‘Human-Mouse: Disease Connection’ database available at the Mouse Genome Informatics website, to download human and mouse genes annotated with the terms ‘osteoporosis’, ‘bone mineral density’, ‘osteoblast’, ‘osteoclast’, and ‘osteocyte’. We used biomaRt to identify the gene biotypes, and retained protein-coding genes. We then used the MGI human-mouse homology table (http://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt) to convert all mouse genes to their human homologs. Finally, we removed genes that were not interrogated in both the colocalization and the TWAS analyses.
 
-## GO enrichment analyses
+### GO enrichment analyses
 
 GO analysis was performed for the set of protein-coding genes passing the colocalization threshold RCP ≥0.1 and S-MultiXcan Bonferroni p value ≤0.05, using the ‘topGO’ package (version 2.46.0) in R (Alexa and Rahnenfuhrer, 2021). Enrichment tests were performed for the ‘Molecular Function’, ‘Biological Process’, and ‘Cellular Component’ ontologies, using all protein-coding genes that were subjected to colocalization and MultiXcan analysis as background. Enrichment was performed using the ‘classic’ algorithm with Fisher’s exact test. p values were not adjusted for multiple testing.
 
-## LD calculations
+### LD calculations
 
 LD between variants was calculated using the LDlinkR (version 1.0.2) R package, using the ‘EUR’ population (Myers et al., 2020).
 
-## Ppp6r3 knockout mouse generation
+### Ppp6r3 knockout mouse generation
 
 The study was carried out in strict accordance with NIH’s Guide for the Care and Use of Laboratory Animals. Additionally, the University of Virginia Institutional Animal Care and Use Committee approved all animal procedures. Ppp6r3 gene-trap mice were generated using targeted embryonic stem cell clones heterozygous for the Ppp6r3tm1a(KOMP)Wtsi gene-trap allele obtained from the International Knockout Mouse Project (KOMP; https://www.komp.org). KOMP ES clones were karyotyped and injected using a XYClone Laser (Hamilton Thorne, Beverly, MA) into B6N-Tyrc-Brd/BrdCrCrl (Charles River, Wilmington, MA) eight-cell stage embryos to create chimeric mice. Resultant chimeras were bred to B6N-Tyrc-Brd/BrdCrCrl mice to obtain germline transmission of the Ppp6r3 gene-trap allele. From a breeding pair of two heterozygous mice, we generated our experimental population through HET × HET matings. Breeder mice were fed a breeder chow diet (Envigo Teklad S-2335 mouse breeder sterilizable diet, irradiated. Product # 7904), and experimental mice were fed a standard chow diet (Envigo Teklad LM-485 irradiated mouse/rat sterilizable diet. Product #7912).
 
-## Genotyping of Ppp6r3 mice
+### Genotyping of Ppp6r3 mice
 
 DNA for genotyping was extracted from tail clips as follows: tail clips were incubated overnight at 55°C in a solution of 200 µl digestion/lysis buffer (Viagen Direct PCR [tail], Los Angeles, CA) and 1 mg/ml proteinase K (Viagen, Los Angeles, CA). After overnight incubation, tails were heated at 85°C for 45 min, and solutions were subsequently stored at 4°C.
 
@@ -157,43 +366,43 @@ The following PCR settings were used:
 
 PCR products were run on a 2% agarose gel for 150 min at 60 V, to distinguish between wild-type, heterozygous and mutant Ppp6r3 mice.
 
-## PPP6R3 western blotting
+### PPP6R3 western blotting
 
 Mouse spleens 20–40 mg in weight were suspended in 1% NP40 buffer (50 mM Tris [pH 8] 100 mM NaCl, 1% NP40, 1 mM EGTA(egtazic acid), 1 mM EDTA(ethylenediaminetetraacetic acid), Protease inhibitor cocktail (04-693-116-001, Roche), 1 mM PMSF(phenylmethylsulfonyl fluoride), 50 mM NaF, 0.2 mM sodium vanadate). The tissue was homogenized by RNase-free disposable pestles (Thermo Fisher #12-141-364) and incubated for 10 min on ice. After brief sonication, the sample was centrifuged for 10 min at 13,000 × rpm at 4°C. The protein concentration in the extract was measured by Bradford assay. 100 µg of sample protein was boiled 5 min in sodium dodecyl sulfate (SDS) sample buffer, loaded in each lane, resolved by gradient SDS–polyacrylamide gel electrophoresis (Bio-Rad #456-1085) and immunoblotted as described in Guergnon et al., 2009. Primary antibodies were diluted 1:1000 (SAPS1 Ab: Thermo Fisher #PA5-44275, SAPS3 Ab: Thermo Fisher #PA5-58405, PP6C Ab: Sigma #HPA050940).
 
-## PPP6R3 functional validation
+### PPP6R3 functional validation
 
 Experimental mice of both sexes were sacrificed at approximately 9 weeks of age (mean age = 61 days). At sacrifice, the right femurs were isolated, and femoral morphology (length and widths in anterior–posterior and medial–lateral orientations) was measured with digital calipers (Mitoyuto American, Aurora, IL).
 
 Femurs were then wrapped in phosphate-buffered saline (PBS)-soaked gauze and stored at −20°C, until analysis. Lumbar vertebrae L3–L5 were also dissected at sacrifice and were wrapped in PBS-soaked gauze and frozen at −20°C. Given our prior experience in measuring bone geometry and microstructure, we used a minimum N = 14 for our analyses, ensuring 80% power to detect a statistically significant effect at an alpha ≤0.05.
 
-## Bulk RNA isolation, sequencing, and quantification
+### Bulk RNA isolation, sequencing, and quantification
 
 We isolated RNA from a randomly chosen subset (n = 16, 4/sex each of WT and MUT) of the available mice.Total RNA was isolated from L5 vertebrae, using the mirVana miRNA Isolation Kit (Life Technologies, Carlsbad, CA). Total RNA-seq libraries were constructed using Illumina TruSeq Stranded mRNA LT sample prep kits. Samples were sequenced to an average of 39 million 2 × 151 bp paired-end reads (total RNA-seq) on an Illumina NextSeq500 sequencer by Psomagen, Inc A custom bioinformatics pipeline was used to quantify RNA-seq data. Briefly, RNA-seq FASTQ files were quality controlled using FASTQC (version 0.11.5) and MultiQC (version 1.11). Reads were trimmed using bbduk (bbmap package version 38.57). Trimmed reads were then aligned to the mm10 genome assembly with HISAT2 (version 2.1), and quantified with Stringtie (version 1.3.3). Read count information was then extracted with a Python script provided by the Stringtie website (prepDE.py).
 
-## Bulk RNA differential expression analyses
+### Bulk RNA differential expression analyses
 
 Using gene count matrices, differential expression was performed using DESeq2 (Love et al., 2014; Version 1.34.0) between wild-type and mutant samples. We used the ‘DESeq’ function from DESeq2, with a design formula of ~sex + genotype. p values were adjusted using the ‘p.value’ function, using the ‘BH’ method.
 
-## Dual X-ray absorptiometry
+### Dual X-ray absorptiometry
 
 Individual right femurs and the lumbar spine (L5 vertebrae) were isolated from surrounding soft tissues and frozen at −20°C in PBS. DXA was performed on the femurs and lumbar vertebrae using the Lunar Piximus II (GE Healthcare) as described previously by Beamer et al., 2011. In short, 10 isolated bones were placed in the detector field at a time and the samples were analyzed one by one, such that the region of interest (ROI) was set for one specimen at a time for data collection. The ROI for the femurs was on the entire isolated femur. For the spine, was on the entire isolated L5. Care was taken to ensure that the sample orientation was identical for all samples.
 
-## μCT and image analysis
+### μCT and image analysis
 
 All μCT analyses were carried out at the μCT Imaging Core Facility at Boston University using a Scanco Medical μCT 40 instrument (Brütisellen, Switzerland). The power, current, and integration time used for all scans were 70 kVp, 113 μA, and 200 ms, respectively. The L5 vertebrae and right femora were scanned at a resolution of 12 μm/voxel. Two volumes of interest (VOIs) in the L5 were selected for analysis: (1) the entire portion of the L5 vertebra extending from 60 μm caudal to the cranial growth plate in the vertebral body to 60 μm cranial to the caudal growth plate; and (2) only the trabecular centrum contained in the first VOI. Semi-automated-edge detection (Scanco Medical) was used to define the boundary between the trabecular centrum and cortical shell to produce the second VOI. Two VOIs were also analyzed for each femur: (1) a 0.3-mm-long segment of the diaphysis, centered at the mid-point of the bone; and (2) a 1.2-mm-long segment of the distal metaphyseal trabecular compartment. To define the location of the latter, the location of the distal femoral growth plate was determined, and the distal end of the VOI was set at 60 μm proximal to that growth plate. Gaussian filtering (sigma = 0.8, support = 1) was used for partial background noise suppression. A scan of a potassium hydroxyapatite phantom allowed conversion of gray values to mineral density. For segmentation of bone tissue, the threshold was set at a 16-bit gray value of 7143 (521 mgHA/ccm), and this global threshold was applied to all of the samples. For each VOI, the following were calculated: total volume (TV), bone volume (BV), bone volume fraction (BV/TV), BMD, and TMD. BMD was defined as the average density of all voxels in the VOI, whereas TMD was defined as the average density of all voxels in the VOI above the threshold (Bouxsein et al., 2010). For the second VOI, the following additional parameters were calculated: trabecular thickness (Tb.Th), trabecular separation (Tb.Sp), trabecular number (Tb.N), connectivity density (Conn.D), and structure model index (SMI) (Bouxsein et al., 2010).
 
 For the femoral VOI, the following additional parameters were calculated instead: cortical thickness (Ct.Th), total area (Tot.Ar), marrow area (Ma.Ar), maximum and minimum moments of inertia, and polar moment of inertia (Bouxsein et al., 2010).
 
-## P1NP collection and quantification
+### P1NP collection and quantification
 
 Plasma was collected via submandibular bleeding from isoflurane anesthetized wild-type and mutant PPP6R3 mice (N = 10/sex/genotype). Plasma P1NP levels were measured using commercially available kits from IDS (Gaithersburg, MD), according to the manufacturer’s instructions. The assay sensitivity was 0.7 ng/ml. The intra-assay variation was 6.3%, and the inter-assay variation was 8.5%. All measurements were performed in duplicate.
 
-## Raman spectroscopy
+### Raman spectroscopy
 
 Raman spectroscopy was performed using a Renishaw inVia Raman Microscope (Gloucestershire, UK) on each bone sample using a 785-nm-edge red incident laser. A rectangular filled map was created with 3 points in the x-axis and 20 points in the y-axis, for a total of 60 collected points. Each point was exposed 10 times for 6 s per exposure. A custom MATLAB script was used to evaluate the peak position, maximum intensity, peak width, full width at half maximum (FWHM), and the area under each peak. Peak area ratios were calculated for mineral:matrix, carbonate:phosphate, and crystallinity. Furthermore, the standard deviations of peak area ratios were calculated for each mouse, and were further used to evaluate the material heterogeneity in groups.
 
-## Statistical analyses
+### Statistical analyses
 
 To calculate the enrichment of bone genes in prioritized genes, we performed Fisher’s exact test, using R’s ‘fisher.test’ function, with the alternative hypothesis set as ‘greater’.
 
@@ -201,22 +410,22 @@ For the statistical analysis of the phenotyping results, we calculated least-squ
 
 We used Tukey’s HSD(honest significance test) test to test for significant differences in lsmeans, for each pair of genotype levels. Tukey’s HSD also controls the family-wise error rate. We performed Welch two-sample t-test’s, using R’s ‘t.test’ function, to quantify differences in P1NP levels between mutant and wild-type mice.
 
-## Analyses involving data from the International Mouse Phenotyping Consortium
+### Analyses involving data from the International Mouse Phenotyping Consortium
 
 For the IMPC data, we obtained data using their ‘statistical-result’ SOLR database, using the ‘solrium’ R package (version 1.1.4) (Chamberlain, 2019). We obtained experimental results using the ‘Bone*Mineral*Density’ parameter. We then pruned the resulting data to only include ‘Successful’ analyses, and removed experiments that included the skull. To generate the Gpatch1 boxplot, we obtained raw data using from IMPC’s ‘statistical-raw-data’ SOLR database for Gpatch1, and analyzed the data in the same manner as IMPC, using the ‘OpenStats’ R package (version 1.0.2), using the method = ‘MM’ and MM_BodyWeightIncluded = TRUE arguments (Haselimashhadi et al., 2020). Finally, mouse genes were converted to their human syntenic counterparts using Ensembl’s ‘hsapiens_gene_ensembl’ and ‘mmusculus_gene_ensembl’ datasets through biomaRt.
 
-## PhenomeXcan data analysis
+### PhenomeXcan data analysis
 
 We obtained all significant PhenomeXcan gene–trait associations from their paper (https://advances.sciencemag.org/content/6/37/eaba2083), and used data for the ‘3148_raw-Heel_bone_mineral_density_BMD’ phenotype (Pividori et al., 2020). Furthermore, we constrained our search to only include genes that were annotated by the authors as ‘protein_coding’.
 
-## LSBMD/FNBMD GWAS analysis
+### LSBMD/FNBMD GWAS analysis
 
 We obtained sex-combined LSBMD and FNBMD GWAS summary statistics from GEFOS (http://www.gefos.org/?q=content/data-release-2012), and then used a custom script that utilized the biomaRt R package to convert variants to their GRCh38 coordinates.
 
-## Data availability
+### Data availability
 
 eBMD and fracture GWAS summary statistics were obtained from GEFOS, as were the LSBMD and FNBMD GWAS summary statistics. GTEx eQTL data were obtained from the GTEx web portal. Data from the PhenomeXcan project were obtained from Pividori et al., 2020. Statistical data from the IMPC were obtained using an R interface to their SOLR database. Ppp6r3 experimental data are provided on our GitHub (https://github.com/basel-maher/BMD_TWAS_colocalization; Al-Barghouthi, 2022). Mouse-Human homologs were obtained from MGI (http://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt). We also obtained data from the MGI Human-Mouse:Disease Connection database (http://www.informatics.jax.org/diseasePortal). Gene Ontologies were obtained from AmiGO2 (http://amigo.geneontology.org/amigo).
 
-## Code availability
+### Code availability
 
 Analysis code and the raw data for our Ppp6r3 functional validation analyses are available on GitHub (https://github.com/basel-maher/BMD_TWAS_colocalization, copy archived at swh:1:rev:6aaa8819c2e335013a665e76318dc98aeb9a52ce; Al-Barghouthi, 2022).

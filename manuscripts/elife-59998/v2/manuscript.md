@@ -31,7 +31,7 @@ Of course, single-unit recording is correlative and cannot demonstrate that OFC 
 
 ## Results
 
-## Orbitofrontal cortex activity is necessary for forming sensory associations
+### Orbitofrontal cortex activity is necessary for forming sensory associations
 
 We tested whether the OFC has a causal role in learning about value-neutral associations acquired during sensory preconditioning. For this, we used a sensory preconditioning task largely identical to that used in previous work (Figure 1A) and optogenetic inhibition (Figure 1A–C) to test whether this activity during preconditioning is necessary for proper value inference during later probe testing.
 
@@ -41,35 +41,35 @@ We tested whether the OFC has a causal role in learning about value-neutral asso
 
 Prior to any training, two groups of rats underwent surgery in which virus was infused into the lateral area of OFC, where recordings were obtained in our prior experiment (Sadacca et al., 2018). One group, the NpHR experimental group (N = 21), received AAV5 containing halorhodopsin (NpHR) linked to a CamKIIα promoter. NpHR is a light gated chloride pump that induces neuronal hyperpolarization to allow real-time neuronal inactivation (Gradinaru et al., 2008). The other group of rats, the eYFP control group (N = 22), received the same virus but without the opsin. Both viruses contained eYFP for histological verification of successful transfection. All rats also had fiberoptic probes implanted bilaterally overlying the injection site to allow light delivery. After recovery from surgery and a brief period of food deprivation, training began.
 
-## Preconditioning
+#### Preconditioning
 
 Training began with a preconditioning phase, which involved two sessions in which the rats were presented with neutral cue pairs (A→B; C→D; six pairings of each per session), in a blocked and counterbalanced fashion. Laser light was delivered into OFC in both eYFP controls and NpHR rats, starting 500 ms prior to presentation of the first cue in each pair and lasting for the duration of both cues. No reward was presented, so responding to the food cup during this phase was negligible, and there were no differences between cues or groups (Figure 2A). A two-way ANOVA with cue as a within subjects factor and group as a between subjects factor revealed no main effects of cue (F(3,123)=0.43, p=0.73) or group (F(1,41)=1.99, p=0.17) and no group x cue interaction (F(3,123)=0.86, p=0.46).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59998/elife-59998-fig2-v2.jpg)
 
-**Figure 2.:** (A) All rats showed low levels of responding during preconditioning when neutral cue pairs were presented. There was no effect of cue or group. (B) During reward conditioning, all rats (grey, eYFP; green, NpHR) showed higher responding to the rewarded cue B (solid lines) than to the non-rewarded cue D (dotted lines). (C) During the probe test, responding to A was higher than to C in control rats (eYFP, left, grey), but not in OFC inhibition rats (NpHR, right, green). (D) Scatter plot of A versus C responding during the probe test. To the extent that responding to A and C are equal, points should congregate along the diagonal. Points below the diagonal indicate A>C responding and therefore evidence of preconditioning.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) All rats showed low levels of responding during preconditioning when neutral cue pairs were presented. There was no effect of cue or group. (B) During reward conditioning, all rats (grey, eYFP; green, NpHR) showed higher responding to the rewarded cue B (solid lines) than to the non-rewarded cue D (dotted lines). (C) During the probe test, responding to A was higher than to C in control rats (eYFP, left, grey), but not in OFC inhibition rats (NpHR, right, green). (D) Scatter plot of A versus C responding during the probe test. To the extent that responding to A and C are equal, points should congregate along the diagonal. Points below the diagonal indicate A>C responding and therefore evidence of preconditioning.
 
-## Conditioning
+#### Conditioning
 
 Following preconditioning, rats underwent six sessions of Pavlovian conditioning in which they received cue B paired with reward and cue D without reward (B→US; D; six pairings of each per session, interleaved in a counterbalanced fashion). As expected, rats developed a conditioned response to B with training, responding more at the food cup during cue B than during cue D, and there was no difference between groups (Figure 2B). A three-way mixed-design (cue, session within subjects factors; group between subjects factor) ANOVA revealed significant main effects of cue (F(1,41)=143.00, p<0.0001) and session (F(5,205)=36.23, p<0.0001), and a significant session x cue interaction (F(5,205)=9.76, p<0.0001). Critically, there were no main effects of, nor any interactions with, group (main: F(1,41)=0.02, p=0.90; session x group: F(5,205)=1.72, p=0.13; group x cue interaction: F(1,41)=0.53, p=0.47).
 
-## Probe test
+#### Probe test
 
 Finally, the rats underwent a single probe test in which cues A and C were presented alone and without reward, counterbalanced across subjects. We found that control rats responded more to A than C, and NpHR rats did not (Figure 2C–D). A two-way mixed-design ANOVA revealed no main effects of cue (F(1,41)=1.33, p=0.26) or group (F(1,41)=0.00, p=0.99). There was a significant cue x group interaction (F(1,41)=4.57, p=0.04); ergo, the effect of cue during the probe test (A-C) did depend on group (eYFP control – NpHR OFC inhibition). Posthoc comparisons revealed responding to A was significantly higher than C in controls (p=0.046), but not in NpHR rats (p=0.75).
 
-## Preconditioned responding in controls is sensitive to outcome devaluation
+### Preconditioned responding in controls is sensitive to outcome devaluation
 
-## Taste aversion training
+#### Taste aversion training
 
 To confirm the associative basis of responding to the preconditioned cue observed in controls, a subset of the eYFP rats (n = 13) were split into two groups (paired and unpaired) with equal responding to A and C (no main effect of group (F(1,11)=0.06, p=0.81) or group x cue interaction (F(1,11)=2.60, p=0.13)). All rats consumed all pellets during the first free exposure session. Following this, the paired group immediately received lithium chloride injections, while the unpaired group received the same injections 24 hr following sucrose pellet exposure. Subsequently, during the second free exposure session, the paired group demonstrated a conditioned taste aversion, consuming significantly fewer pellets than in the first test (t(5) = 4.95, p=0.001, second exposure mean = 2.25 g, range = 0.6–3.0 g); to equalize exposure, rats in the unpaired group were given sucrose pellets yoked to the amount that the paired group consumed in this second session, then rats in both groups underwent probe testing.
 
-## Devaluation probe
+#### Devaluation probe
 
 For the devaluation probe test, rats in both the paired and unpaired groups were presented with cue A six times, alone and without reward, after which they were given a final consumption test to confirm devaluation. On probe, responding extinguished quickly in both groups, however it was much higher in the unpaired group on the initial trials (Figure 3A). A two-way ANOVA revealed a significant main effect of trial block (F(2,22)=4.91, p=0.02) and significant trial block x group interaction (F(2,22)=4.58, p=0.02). Post hoc comparisons revealed responding was significantly higher to A in the unpaired group than the paired group during the first trial block (p=0.02; Figure 3B). This change in responding was accompanied by reduced consumption of the outcome by rats in the paired group (t(11) = 4.95, p=0.0004; Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59998/elife-59998-fig3-v2.jpg)
 
-**Figure 3.:** (A) Rats that received LiCl and pellets unpaired (black) showed higher levels of responding to A during the first 2-trial block than rats that received them paired (grey). All rats quickly extinguished. (B) Average responses during the first 2-trial block. (C) Rats that received paired LiCl and pellets (left) consumed fewer pellets than rats that received them unpaired (right) during the consumption test.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Rats that received LiCl and pellets unpaired (black) showed higher levels of responding to A during the first 2-trial block than rats that received them paired (grey). All rats quickly extinguished. (B) Average responses during the first 2-trial block. (C) Rats that received paired LiCl and pellets (left) consumed fewer pellets than rats that received them unpaired (right) during the consumption test.
 
 ## Discussion
 
@@ -89,46 +89,46 @@ Lastly we would note that while preconditioned responding has been shown as sens
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Fifty-four adult male (n = 31) and female (n = 23) Long-Evans rats age three to four months weighing between 270–320 g during the time of experiments were individually housed and given ad libitum food and water except during behavioral training and testing. The effect of cue during the critical probe test did not depend on sex (main: F(1,39)=0.54, p=0.47; sex x cue: F(1,39)=0.19, p=0.66; sex x cue x group interaction: F(1,39)=2.66, p=0.11), so male and female rats were pooled for all analyses presented in the results. One day prior to behavioral training rats were food restricted to 12 g (males) or 10 g (females) of standard rat chow per day, following each session. Rats were maintained on a 12 hr/12 hr light/dark cycle and tested during the light phase between 8:00 am and 12:00 pm five days per week. Experiments were performed at the National Institute on Drug Abuse Intramural Research Program, in accordance with NIH guidelines. Eleven subjects were not included in the final analyses due to loss of a headcap (n = 1), target miss and/or lack of viral expression (n = 7), and failure to acquire greater rewarded cue than non-rewarded cue responding during the conditioning phase (n = 3).
 
-## Apparatus
+### Apparatus
 
 All chambers and cue devices were commercially available equipment (Coulbourn Instruments, Allentown, PA). A recessed food port was placed in the center of the right wall of each chamber and was attached to a pellet dispenser that dispensed three 45 mg sucrose pellets (Bioserv F0023) during each rewarded cue presentation. Auditory cues consisted of a pure tone, siren, 2 Hz clicker, and white noise, each calibrated to 70 dB. Cues A and C were white noise or clicker; cues B and D were tone or siren; all cues were counterbalanced across rats, sexes, and groups such that every possible permutation of cue identities, sex, and group was equally present.
 
-## Surgical procedures
+### Surgical procedures
 
 Rats were anesthetized with isoflurane (3% induction, 1–2% maintenance in 2 L/m O2) and placed in a standard stereotaxic device. Burr holes were drilled bilaterally on the skull for insertion of fiber optics and 33-gauge injectors (PlasticsOne, Roanoke, VA). Rats were infused with 1.0 μL of virus at a flow rate of 0.2 μL/minute, and injectors were subsequently left in place for five additional minutes to allow for diffusion of solution. Halorhodopsin (NpHR), a light gated chloride pump that induces neuronal hyperpolarization (Gradinaru et al., 2008), was used for OFC inhibition. Enhanced yellow fluorescent protein (eYFP) was used as the control virus. eYFP rats received AAV5-CaMKIIα-eYFP (titer ~ 1012). NpHR rats received AAV5-CaMKIIα-eNpHR-eYFP (titer ~ 1012) (Gene Therapy Center, University of North Carolina Chapel Hill). The coordinates used for targeting OFC in male rats were: AP = +3.0 mm, ML=±3.2 mm, DV = −5.3 mm from Bregma. Female rats received infusions at: AP = +2.85 mm, ML=±3.04 mm, DV = −5.09 mm from Bregma. Optic fibers (200 μm core diameter, Thorlabs, Newton, NJ) were implanted bilaterally at 10 degrees away from the midline at the following target: AP = +3.0 mm, ML=±3.2 mm, DV = −4.90 mm from Bregma (males) or AP = +2.85 mm, ML=±3.04 mm, DV = −4.66 mm from Bregma (females). Headcaps were secured with 0–80 1/8’ machine screws and dental acrylic. Rats received 5 mg/kg carprofen s.c. on the day of surgery and 60 mg/kg p.o. cephalexin for ten days following surgery to prevent infection. Rats were given three weeks to allow viral expression prior to testing.
 
-## Behavioral training
+### Behavioral training
 
 The task used was nearly identical to those from previous studies (Jones et al., 2012; Sharpe et al., 2017; Sadacca et al., 2018).
 
-## Preconditioning
+#### Preconditioning
 
 On the day following the beginning of food restriction, rats were shaped to retrieve pellets from the food port in one session. During this session, twenty pellets were delivered, with each single pellet delivery occurring on a 3–6 m variable time schedule. After this shaping, rats underwent two days of preconditioning. In each day of preconditioning, rats received trials in which two pairs of auditory cues (A→B and C→D) were presented in blocks of six trials, and the order was counterbalanced across rats. Cues were each 10 s long, the inter-trial intervals varied from 3 to 6 m, and the order of the blocks was alternated across the two days. 532 nm laser light was calibrated to between 16 and 18 mW at patch cord output. Constant laser light began 500 ms prior to presentation of each cue pair and ended with cue termination. Cues A and C were a white noise or a clicker, counterbalanced. Cues B and D were a siren or a constant tone, counterbalanced. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.
 
-## Conditioning
+#### Conditioning
 
 Rats underwent conditioning following preconditioning. No laser light occurred during this phase. Each day, rats received a single training session, consisting of six trials of cue B paired with pellet delivery and six trials of D paired with no reward. The pellets were presented three times during cue B at 3, 6.5, and 9 s into the 10 s presentation. Cue D was presented for 10 s without reward. The two cues were presented in 3-trial blocks, counterbalanced across subjects, and with the order of blocks alternating across days. The inter-trial intervals varied between 3 and 6 min. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.
 
-## Probe test
+#### Probe test
 
 After conditioning, the rats underwent probe testing. Rats were given blocked or alternating presentation of cues A and C alone, six times each, without reward. The order of the cues/blocks was counterbalanced across subjects. Inter-trial intervals were variable 3–6 m. Behavioral responses reported are the percentage of time spent during each 10 s cue in the food port, minus the 10 s preceding each cue.
 
-## Taste aversion
+#### Taste aversion
 
 Procedures followed those of previous studies (Pickens et al., 2003; Singh et al., 2011). Rats in the eYFP group were matched for performance and divided into paired and unpaired groups. Taste aversion training lasted four days during which both groups received two ten-m sessions of access to sucrose pellets and two injections of 0.3 M LiCl, 5 mL/kg, i.p. On days 1 and 3, rats in the paired group were given 10 m free access to 4.5 g pellets in the testing chambers, immediately followed by injections. Rats in the unpaired group were given injections with no pellet exposure. On Days 2 and 4, rats in the unpaired group were given 10 m free pellet exposure in the chambers. All rats therefore received equal free exposure to pellets, the chambers, and injections; the groups only differed in contiguity between pellets and injections. Behavioral responses reported are the percentage of time spent during each 10 s cue presentation in the food port.
 
-## Devaluation probe
+#### Devaluation probe
 
 Following taste aversion training, rats were given a devaluation probe test during which cue A was presented six times. The intertrial interval varied between 3 and 6 m. Immediately following this, rats were presented with 10 g free pellets in the testing chambers for 10 m. Behavioral responses reported are the percentage of time spent during each 10 s cue presentation in the food port.
 
-## Histology
+#### Histology
 
 Rats were sacrificed by carbon dioxide and perfused with PBS followed by 4% formaldehyde in PBS. 0.05 mm coronal slices were visualized for confirmation of fiber tip placements and eYFP expression by a blind experimenter.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were collected using Graphic State three software (Coulbourn Instruments, Allentown, PA). Raw data were processed in Matlab 2018b (Mathworks, Natick, MA) to extract percentage of time spent in the food port during and preceding cue presentation. These behavioral data were analyzed in Matlab and Graphpad Prism (La Jolla, CA). Responses during preconditioning and probe testing were compared by two-way (group, cue) ANOVA. Responses during conditioning were compared by three-way (group, cue, session) ANOVA. Posthoc comparisons using Šidák’s correction for familywise error (Sidak, 1967) were conducted on probe test and devaluation probe test data. Adjusted p values are reported.

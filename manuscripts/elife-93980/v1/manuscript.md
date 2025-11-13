@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00n3w3b69 Hunter Centre for Entrepreneurship, University of Strathclyde Glasgow United Kingdom
-2. https://ror.org/02der9h97 Department of Civil and Environmental Engineering, University of Connecticut Storrs United States
-3. https://ror.org/041kmwe10 National Heart & Lung Institute, Faculty of Medicine, Imperial College London London United Kingdom
+1. Hunter Centre for Entrepreneurship, University of Strathclyde Glasgow United Kingdom ([ROR:00n3w3b69](https://ror.org/00n3w3b69))
+2. Department of Civil and Environmental Engineering, University of Connecticut Storrs United States ([ROR:02der9h97](https://ror.org/02der9h97))
+3. National Heart & Lung Institute, Faculty of Medicine, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
@@ -29,6 +29,47 @@ Indeed, the learning difficulties associated with dyslexia may not reflect the w
 ## Attainment levels in schools
 
 Students with dyslexia and other specific learning differences have tended to underperform at school relative to their peers (Table 1). In England, for example, students sit exams, called GCSEs, when they are 16 years old: around a fifth of students who have a special educational needs support (but not a education and healthcare plan) receive grade 5 or above for English and maths in these exams, compared with around half for students who do not have this support (Table 1). Similar attainment gaps have been seen in other studies (see, for example, Nunes et al., 2017).
+
+**Table 1.**
+ GCSE results from state schools in England between 2018/19 and 2022/23.Percentage of pupils achieving grade 5 or above in English and maths for pupils with no special educational needs (SEN) and pupils with SEN support. (UK Government, 2023).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Percentage of pupils achieving grade 5 or above in English and Mathematics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>2018/19</td>
+      <td>2019/20</td>
+      <td>2020/21</td>
+      <td>2021/22</td>
+      <td>2022/23</td>
+    </tr>
+    <tr>
+      <td>Pupils with no SEN</td>
+      <td>48.2</td>
+      <td>55.8</td>
+      <td>58.0</td>
+      <td>55.9</td>
+      <td>50.7</td>
+    </tr>
+    <tr>
+      <td>Pupils withSEN support</td>
+      <td>16.8</td>
+      <td>20.5</td>
+      <td>22.2</td>
+      <td>22.5</td>
+      <td>20.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_GCSE results for state schools in England._
 
 Consistent with low attainment levels in schools, data from a report commissioned by the Royal Society in 2019 indicates that only 5% of students studying a STEM (science, technology, engineering and mathematics) subject at university in the UK have a specific learning difference, with this number dropping to 0.9% for academics working in STEM subjects (Joice and Tetlow, 2021). We contend that the low percentage of students with specific learning differences studying STEM subjects at UK universities is due to low attainment levels in national exams (such as GCSEs), which deters or prevents them from studying STEM subjects at university. The even lower percentage of STEM academics with a specific learning difference is likely due to a combination of low absolute numbers and low rates of disclosure. The latter may be due to the negative stigma associated with having a specific learning difference, or the fact that many individuals have never had a formal diagnosis. Dyslexic academics are not generally offered support in the context of their academic careers, so for most there is no point in either getting a late diagnosis or disclosing a diagnosis.
 

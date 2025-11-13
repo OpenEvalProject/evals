@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Center for Translational Immunology, University Medical Centre Utrecht, Utrecht University Utrecht Netherlands
-2. https://ror.org/01n92vv28 Oncode Institute Utrecht Netherlands
-3. https://ror.org/04pp8hn57 Department of Hematology, University Medical Center Utrecht, Utrecht University Urecht Netherlands
-4. https://ror.org/05a28rw58 Department of Biosystems Science and Engineering, ETH Zurich Zurich Switzerland
-5. https://ror.org/04pp8hn57 Theoretical Biology and Bioinformatics, Department of Biology, Utrecht University Utrecht Netherlands
+1. Center for Translational Immunology, University Medical Centre Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Oncode Institute Utrecht Netherlands ([ROR:01n92vv28](https://ror.org/01n92vv28))
+3. Department of Hematology, University Medical Center Utrecht, Utrecht University Urecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+4. Department of Biosystems Science and Engineering, ETH Zurich Zurich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+5. Theoretical Biology and Bioinformatics, Department of Biology, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 
 † Corresponding author
 
@@ -42,15 +42,109 @@ More specific selection of potential drug targets out of this large collection o
 
 ## Results
 
-## Putative ITIM/ITSM-bearing immune inhibitory receptors can be found in the human genome
+### Putative ITIM/ITSM-bearing immune inhibitory receptors can be found in the human genome
 
 To identify putative novel inhibitory receptors, we first retrieved the protein sequences of all 96,457 protein-coding transcripts, corresponding to 19,353 individual human genes, annotated in the Ensembl database (release 105, December 2021) (Cunningham et al., 2022). We retrieved all deposited isoforms, as certain proteins might only contain an ITIM in a specific isoform. We then screened the entire protein sequence for the presence of an ITIM or ITSM, based on the consensus sequence (V|L|I|S|T)xYxx(I|L|V), resulting in 40,063 protein sequences from the initial 96,457. We next used the TOPCONS server, which is based on a consensus of several prediction tools (Tsirigos et al., 2015), to determine the membrane topology of all proteins with an ITIM/ITSM motif. TOPCONS predicted 12,576 out of the 40,056 input proteins to be integral membrane proteins, of which 7445 contained multiple transmembrane domains and the remaining 5131 are single-pass membrane proteins.
 
 We next filtered proteins for the presence of the ITIM or ITSM sequence in an intracellular domain of the protein based on the predicted topology. This yielded with 4613 protein sequences bearing one or more intracellular ITIMs or ITSMs, which correspond to 1562 genes (Figure 1A, Supplementary file 1). To assess how well our pipeline reflects previously documented inhibitory receptors, we confirmed that all the 52 proteins known for their ITIM-mediated immune inhibitory effects, such as PD-1 or leukocyte-associated immunoglobulin-like receptor 1 (LAIR-1) (Table 1; Rumpret et al., 2020), were recalled successfully, with the exception of MPIG6B, encoding for the inhibitory receptor G6B on platelets and megakaryocytes (de Vet et al., 2001), due to an incorrect prediction of its transmembrane domain.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic overview of the bioinformatics pipeline with the number of unique genes and corresponding proteins remaining at every step. All amino acid sequences corresponding to a protein-coding transcript were retrieved from Ensembl. (B) Intracellular domains of identified proteins were permutated 10,000 times, and the number of immunoreceptor tyrosine-based inhibitory motif (ITIM) or immunoreceptor tyrosine-based switch motif (ITSM) occurrences were compared to the number of ITIMs in the original sequence to determine the likelihood of a specific intracellular domain containing an ITIM or ITSM. Threshold was determined based on known inhibitory receptors, and set at 0.25+ε, with ε being a random number between 0 and 0.01 to better predict the borderline predictions. The black line indicates 0.25 likelihood, the grey dotted line indicates 0.25+ε and the solid grey line indicates 0.05 likelihood. (C) Three-dimensional structure for all proteins was predicted using AlphaFold, and the average model prediction score (pLDDT) was determined for each individual ITIM or ITSM in the protein. Proteins with all ITIMs above 80 pLDDT were excluded. The black line indicates 80 pLDDT threshold and the solid grey line indicates 50 pLDDT. For B and C, one protein is plotted for every unique gene symbol for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The overall likelihood of finding an immunoreceptor tyrosine-based inhibitory motif (ITIM) in the intracellular domain based on the permutation method was plotted as function of total intracellular domain length for known and predicted single-spanner and multi-spanner proteins. (B) The average size of the intracellular domain of proteins that were excluded by the likelihood filter was significantly higher than of those that were included. Boxplot indicates median, 25th percentile, 75th percentile and 1.5 times inter-quartile range. N(included) = 764 unique genes, N(excluded) = 798 unique genes. Significance was determined by Wilcoxon signed-rank test. (C) Examples of three-dimensional structure predictions by AlphaFold. Colouring indicates high (red) and low (blue) confidence residues in the protein, ITIMs for PDCD1 (left) and BMP1RB (right) are depicted as purple spheres.
+
+**Table 1.**
+ Genes encoding previously described immunoreceptor tyrosine-based inhibitory motif (ITIM)-bearing inhibitory receptors.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>BTLA</td>
+      <td>CLEC4A</td>
+      <td>KIR3DL2</td>
+      <td>NCR2</td>
+      <td>SIGLEC11</td>
+    </tr>
+    <tr>
+      <td>CD22</td>
+      <td>FCGR2B</td>
+      <td>KIR3DL3</td>
+      <td>PDCD1</td>
+      <td>SIRPA</td>
+    </tr>
+    <tr>
+      <td>CD244</td>
+      <td>FCRL2</td>
+      <td>KLRC1</td>
+      <td>PECAM1</td>
+      <td>SIT1</td>
+    </tr>
+    <tr>
+      <td>CD300A</td>
+      <td>FCRL3</td>
+      <td>KLRG1</td>
+      <td>PILRA</td>
+      <td>SLAMF6</td>
+    </tr>
+    <tr>
+      <td>CD300LF</td>
+      <td>FCRL4</td>
+      <td>LAIR1</td>
+      <td>PVR</td>
+      <td>TIGIT</td>
+    </tr>
+    <tr>
+      <td>CD33</td>
+      <td>FCRL5</td>
+      <td>LILRB1</td>
+      <td>SIGLEC5</td>
+      <td>TREML1</td>
+    </tr>
+    <tr>
+      <td>CD5</td>
+      <td>KIR2DL1</td>
+      <td>LILRB2</td>
+      <td>SIGLEC6</td>
+      <td>VSIG4</td>
+    </tr>
+    <tr>
+      <td>CD72</td>
+      <td>KIR2DL2</td>
+      <td>LILRB3</td>
+      <td>SIGLEC7</td>
+      <td>VSTM1</td>
+    </tr>
+    <tr>
+      <td>CEACAM1</td>
+      <td>KIR2DL3</td>
+      <td>LILRB4</td>
+      <td>SIGLEC8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CLEC12A</td>
+      <td>KIR2DL4</td>
+      <td>LILRB5</td>
+      <td>SIGLEC9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CLEC12B</td>
+      <td>KIR3DL1</td>
+      <td>MPIG6B</td>
+      <td>SIGLEC10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The composition of an ITIM/ITSM sequence is highly variable, as only three out of six amino acids positions are limited to specific amino acids. As a result of this, large proteins or proteins containing many tyrosines and hydrophobic residues are more likely to contain an ITIM/ITSM by chance (Figure 1—figure supplement 1A). We therefore determined the likelihood of encountering an ITIM/ITSM by chance in the intracellular region of the putative targets. To this end, we randomly permutated the amino acid sequences of the intracellular domains by shuffling their order using the Fisher-Yates algorithm. We did this 10,000 times for each receptor and assessed how often the permutated sequence contained more or an equal amount of ITIM/ITSMs compared to the original sequence. For 41 out of 51 known receptors, these odds were low (<5%). However, for 10 out of 51, we observed ITIM/ITSM sequences in the permutated sequence between 5% and ~25% of the time. Based on these findings, we decided to exclude novel targets when they were above this threshold of 25% (Figure 1B). Due to the nature of permutation testing, there is some variation in the individual likelihood values for each protein sequence. However, as they were generally below 0.25 in any given iteration, we decided to define this value as a threshold for inclusion. After this statistical filtering, we were left with 837 inhibitory receptor genes. As expected, the average length of the intracellular domains of the excluded proteins was much higher than that of the remaining targets (Figure 1—figure supplement 1B).
 
-## AlphaFold structure predictions can assist in identifying likely functional ITIM/ITSMs
+### AlphaFold structure predictions can assist in identifying likely functional ITIM/ITSMs
 
 Protein interaction motifs are most commonly found in intrinsically disordered regions within proteins (Tompa et al., 2014), as structured regions are less accessible to binding with interacting partners. We therefore hypothesised that ITIM/ITSM sequences locate in disordered regions to allow for interaction with phosphatases and kinases. We therefore leveraged AlphaFold to infer three-dimensional structure predictions of the remaining inhibitory receptor candidates to determine where the ITIM/ITSM sequences were located in three-dimensional space (Jumper et al., 2021).
 
@@ -60,19 +154,161 @@ We found that 99 out of 101 ITIM/ITSMs of the 51 known receptors had low confide
 
 Based on the known receptors, we determined a threshold of 80 pLDDT and were left with 390 out of 832 putative ITIM-bearing inhibitory receptor genes likely to contain a functional ITIM/ITSM. Among these genes, 54.6% consisted of multi-spanning proteins, while the remaining 177 single transmembrane domain targets consisted of 145 (37.2%) type I and 32 (8.2%) type II receptors. In some cases, a single gene was predicted to have both single-spanning and multi-spanning isoforms. Most putative inhibitory receptors (275) were based on the canonical transcript, as annotated by Ensembl, while 115 were identified as a non-canonical isoform of the gene.
 
-## Putative inhibitory receptors are expressed across immune cell subsets
+### Putative inhibitory receptors are expressed across immune cell subsets
 
 To better characterise these receptors, we studied the expression patterns of the retrieved known and putative inhibitory receptor genes in various immune cells. We collected publicly available bulk RNA sequencing data of various immune cell subsets, both at resting state and after in vitro stimulation (West et al., 2016; Calderon et al., 2019; Table 2). We included all putative inhibitory receptors, including those that were identified in a non-canonical transcript of the gene. For this analysis, we considered a receptor as expressed when the expression was above the median overall gene expression in the sample, in either resting or activated state. From our set of inhibitory receptor genes, 2/51 known and 41/390 predicted genes were not detected in these datasets.
 
+**Table 2.**
+ Number of samples for different resting and activated immune cell subsets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Subsets</th>
+      <th>Resting</th>
+      <th>Activated</th>
+      <th>Stimulation</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neutrophils</td>
+      <td></td>
+      <td>3</td>
+      <td>10</td>
+      <td>TSLP/Staphylococcus aureus</td>
+      <td>4 hr/24 hr</td>
+    </tr>
+    <tr>
+      <td>Monocytes</td>
+      <td></td>
+      <td>4</td>
+      <td>8</td>
+      <td>LPS</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>NK cells</td>
+      <td></td>
+      <td>6</td>
+      <td>6</td>
+      <td>IL-2</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>B cells</td>
+      <td>Naïve, memory, plasmablast</td>
+      <td>13</td>
+      <td>10</td>
+      <td>Anti-IgG/M+IL-4</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>CD4 T cells</td>
+      <td>Naïve, effector, memory, regulatory, Tfh</td>
+      <td>37</td>
+      <td>40</td>
+      <td>Dynabeads +IL-2</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>CD8 T cells</td>
+      <td>Naïve, effector, memory</td>
+      <td>15</td>
+      <td>16</td>
+      <td>Dynabeads +IL-2</td>
+      <td>24 hr</td>
+    </tr>
+  </tbody>
+</table>
+
 Almost all functionally characterised immune inhibitory receptors are type I transmembrane proteins, while only six are type II single spanners. So far, no multi-spanning receptors have been described to have an inhibitory function in the immune system. Also, many genes encoding multi-spanning proteins only showed very limited expression across immune cell subsets in the datasets we used for our analysis. Therefore, we analysed the multi-spanning targets (Figure 2—figure supplement 1) separately from the single-spanning novel targets (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap with normalised expression data for known and predicted single-spanning inhibitory receptor genes in different cell types, in the resting state or after activation. Receptors were considered not expressed (black) when expression was below median overall gene expression in the sample. Data for neutrophils was retrieved from a different source than the other cell types. (B) Novel and known receptors were classified into different functional categories based on changes, or lack thereof, in expression after stimulation. Threshold receptors were expressed at resting state, and did not change after activation (i.e. change in expression <0.5 log2 fold change). Threshold-negative feedback and threshold-disinhibition receptors were defined by >0.5 log2 fold change up- or downregulation, respectively, in expression after activation. Negative feedback receptors were absent in the resting state, but were expressed after activation. (C) Upset plot showing the number of single-spanning receptors that are expressed uniquely by individual immune cell subsets, or shared between subsets as indicated by connected circles. Sixty-four genes are expressed in all cell types (not depicted).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap with normalised expression data for known and predicted multi-spanning inhibitory receptor genes in different cell types, in the resting state or after activation. Receptors were considered not expressed (black) when expression was below median overall gene expression in the sample. Data for neutrophils was retrieved from a different source than the other cell types. (B) Known and predicted multi-spanning receptors were classified into different functional categories based on changes, or lack thereof, in expression after stimulation. Threshold receptors were expressed at resting state, and did not change after activation (i.e. change in expression <0.5 log2 fold change). Threshold-negative feedback and threshold-disinhibition receptors were defined by >0.5 log2 fold change up- or downregulation, respectively, in expression after activation. Negative feedback receptors were absent in the resting state, but expressed after activation. (C) Upset plot showing the number of multi-spanning receptors that are expressed uniquely by individual immune cell subsets, or shared between subsets as indicated by connected circles. Seventy-five genes are expressed in all cell types (not depicted). All receptors shown are shared with at least one other immune cell subset or are uniquely expressed by a cell subset. Cell subsets without uniquely expressed putative inhibitory receptors, i.e., B cells and T cells, were excluded from the panel for clarity.
 
 We investigated the expression of 215 single-spanning receptor genes in these immune cell subsets and found that neutrophils (137 genes) and monocytes (120 genes) expressed the highest number of inhibitory receptor genes. Lymphoid cells expressed fewer inhibitory receptor genes compared to myeloid cells, with B and NK cells expressing 111 genes, followed by CD8+ (106 genes) and CD4+ (99 genes) T cells (Figure 2B). The relative contribution of known and novel targets in each subset varied between different immune cells. We found more novel targets being expressed in CD4+ (86/99 genes, 86.9%) and CD8+ T cells (88/106 genes, 84.3%), compared to neutrophils (98/137 genes, 71.5%). Neutrophils and monocytes uniquely expressed nine and three inhibitory receptor genes respectively, but the vast majority were shared between two or more immune cell subsets (Figure 2C).
 
 Compared to the single spanners, we found slightly fewer multi-spanning inhibitory receptor genes expressed in the different immune cell subsets. Out of 197 predicted genes, neutrophils expressed the most multi-spanning inhibitory receptor genes (118 genes), while the other subsets expressed a similar number: Monocytes expressed 100 inhibitory receptor genes, followed by B cells (95 genes), CD4+ (90 genes) and CD8+ (90 genes) T cells, and NK cells (89 genes) (Figure 2—figure supplement 1A and B). Neutrophils (14 genes) expressed the most unique set of multi-spanning inhibitory receptors, while most other genes were shared between all subsets (Figure 2—figure supplement 1C).
 
-## Known and novel immune inhibitory receptors of different functional categories can be identified in immune cells
+### Known and novel immune inhibitory receptors of different functional categories can be identified in immune cells
 
 We next assigned the putative inhibitory receptor into the previously described functional categories by comparing the expression in the resting state versus after activation in the available data from different cell types (Rumpret et al., 2020; Table 3, Supplementary file 2). We defined negative feedback receptors as below median expression in the resting state, but expressed after activation. Threshold receptors were defined as being expressed in the resting state and having less than 0.5 log2 fold change after activation, while threshold-disinhibition and threshold-negative feedback receptors were defined by more than 0.5 log2 fold decrease or increase in expression upon activation, respectively. Using this functional classification system, we found that all immune cell subsets, except B cells, expressed receptors of all four categories, although all subsets primarily expressed threshold receptors.
+
+**Table 3.**
+ Number of single-spanning receptors in different functional categories for each immune cell subset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Not expressed</th>
+      <th>Negative feedback</th>
+      <th>Threshold-negative feedback</th>
+      <th>Threshold-disinhibition</th>
+      <th>Threshold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neutrophils</td>
+      <td>78</td>
+      <td>6</td>
+      <td>3</td>
+      <td>4</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>Monocytes</td>
+      <td>95</td>
+      <td>26</td>
+      <td>1</td>
+      <td>21</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>NK cells</td>
+      <td>104</td>
+      <td>17</td>
+      <td>2</td>
+      <td>11</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>B cells</td>
+      <td>104</td>
+      <td>10</td>
+      <td>0</td>
+      <td>16</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>CD4 T cells</td>
+      <td>116</td>
+      <td>8</td>
+      <td>2</td>
+      <td>16</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td>CD8 T cells</td>
+      <td>109</td>
+      <td>9</td>
+      <td>4</td>
+      <td>15</td>
+      <td>78</td>
+    </tr>
+  </tbody>
+</table>
 
 We did not observe many changes in inhibitory receptor gene expression after activation in neutrophils. Six receptor genes, such as SLAMF1, were absent on resting neutrophils, but expression was induced after stimulation, categorising them as negative feedback receptors. We identified 124 receptors as threshold receptors, while four and three genes were identified as threshold-disinhibition and threshold-negative feedback receptors, respectively (Figure 2B).
 
@@ -88,9 +324,25 @@ All immune cell subsets expressed fewer multi-membrane spanning inhibitory recep
 
 In summary, we identified 398 known and putative inhibitory receptors being expressed across a variety of immune cell subsets, with mostly overlapping expression patterns. We classified these receptors into different functional categories based on their expression in the resting and activated states. We found that all immune cells expressed mostly threshold receptors. Among the receptors that changed expression after activation, monocytes and NK cells mainly expressed negative feedback receptors, while the T cells and B cells expressed more threshold-disinhibition receptors. Neutrophils did not have very dynamic gene expression patterns.
 
-## Known and putative inhibitory receptors are expressed on tumour infiltrating T cells
+### Known and putative inhibitory receptors are expressed on tumour infiltrating T cells
 
 To further translate our findings to a disease context, we explored the expression of putative inhibitory receptor genes in tumour infiltrating lymphocytes. We used publicly available single-cell RNA sequencing data of CD4+ and CD8+ T cells from 21 types of cancer and determined inhibitory receptor gene expression in the different T cell subsets identified by Zheng et al., 2021b; Figure 3A. After quality control and filtering, the expression of 133/215 single spanners and 111/197 of the multi-spanners could be assessed in this dataset.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heatmap with row-normalised expression data for known and predicted single-spanning inhibitory receptor genes in different tumour infiltrating T cell subsets. Receptors were considered not expressed in a T cell subset (black) when expression was below median across all subsets. (B) Number of inhibitory receptor genes expressed by different CD4+ T cell subsets (upper graph) and CD8+ T cell subsets (lower graph).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmap with row-normalised expression data for known and predicted multi-spanning inhibitory receptor genes in different tumour infiltrating T cell subsets. Receptors were considered not expressed in a T cell subset (black) when expression was below median across all subsets. (B) Number of inhibitory receptor genes expressed by different CD4+ T cell subsets (upper graph) and CD8+ T cell subsets (lower graph).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Functional categories of known and novel single-spanning inhibitory receptors across tumour infiltrating T cell subsets. (B) Functional categories of known and novel multi-spanning inhibitory receptors across tumour infiltrating T cell subsets. For A and B, the functional categorisation was based on the in vitro RNA sequencing datasets, and was applied to the tumour infiltrating T cell subset expression.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/92870/elife-92870-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Heatmap with row-normalised expression data for known inhibitory receptor genes in different tumour infiltrating T cell subsets of melanoma patients. Receptors were considered not expressed in a T cell subset (black) when expression was below median across all subsets.
 
 Among T cell subsets, expression of single-spanning inhibitory receptor genes was variable (Figure 3A). We found 27 and 46 inhibitory receptor genes in naïve CD4+ and CD8+ T cells, respectively, while T cells with a more differentiated phenotype, e.g., regulatory CD4+ T cells (68 genes) and exhausted CD8+ T cells (83 genes), expressed a wider array of known and predicted inhibitory receptor genes (Figure 3B and C).
 
@@ -130,22 +382,22 @@ Taken together, we have designed a bioinformatic pipeline to identify a key list
 
 ## Methods
 
-## Identification of putative inhibitory receptors in the human genome
+### Identification of putative inhibitory receptors in the human genome
 
 To identify putative inhibitory receptors in the human genome, amino acid sequences for 96,457 protein coding, as annotated by Ensembl, transcripts were retrieved from Ensembl (release 105, December 2021) (Cunningham et al., 2022) using the biomaRt package (Durinck et al., 2009) in R. Amino acid sequences were then filtered based on the presence of an ITIM or ITSM sequence, (V|L|I|S|T)xYxx(I|L|V). Seven out of 40,063 ITIM-containing proteins were larger than 10,000 amino acids, and were excluded because they are not feasible for membrane topology prediction using the TOPCONS method (Tsirigos et al., 2015). Topology results for the remaining 40,056 proteins were then retrieved, and proteins were further filtered based on the presence of a predicted transmembrane domain (12,576 out of 40,056 proteins). For the remaining proteins, we determined whether the identified ITIM or ITSM sequence corresponded to an intracellular section of the protein, which resulted in 4613 protein sequences remaining, corresponding to 1562 individual genes (Figure 1A). A further 61 protein sequences were excluded as they could not be matched to a HUGO Gene Nomenclature Committee (HGNC) gene symbol (Seal et al., 2023).
 
-## Determining the likelihood of intracellular protein domain containing an ITIM by chance
+### Determining the likelihood of intracellular protein domain containing an ITIM by chance
 
 To determine the odds of finding an intracellular ITIM or ITSM sequence in a specific protein, all intracellular domains of the proteins were retrieved based on the TOPCONS predictions. For each protein, the amino acids in the intracellular domain were then shuffled randomly, using the stringi package (Gagolewski, 2022), and the number of identified ITIM or ITSM sequences in the permutated sequences was compared to the actual number of intracellular ITIM or ITSM sequences in the original protein. Each protein was permutated 10,000 times, and the number of occurrences of a permutated protein containing more or equal ITIM/ITSMs to the original sequence was counted and used as measure for the likelihood of finding an ITIM or ITSM by chance. A threshold was defined based on likelihood scores for the proteins corresponding to known inhibitory receptors, and was set at 0.25+ε, with ε being a random number determined error between 0 and 0.01.
 
-## Determining AlphaFold model confidence scores for individual ITIMs
+### Determining AlphaFold model confidence scores for individual ITIMs
 
 Three-dimensional structure of protein sequences that passed the likelihood threshold were next determined using AlphaFold (v2.2.0) under default parameters with amber minimisation (run_relax = True) using the pdb70, uniref90, mgnify (mgy_clusters_2018_12), uniclust30 (uniclust30_2018_08), and bfd (bfd_metaclust_clu_complete_id30_c90_final_seq) databases on a high-performance cluster (Jumper et al., 2021; Varadi et al., 2022). AlphaFold was not able to determine the structure for 46 of these proteins, of which 6 were too long and 40 returned a run time error involving HHblits and the hh-suite. The three-dimensional prediction of 37 of these proteins was instead determined using ColabFold (Mirdita et al., 2022) (v1.5.2) using MMseqs2 and HHsearch under default parameters without using template information (template_mode = none) and using mmseq2_uniref_env as MSA mode. The top ranked prediction files were retrieved for each protein, and loaded into R using the bio3d package (Grant et al., 2021). Prediction confidence scores (pLDDT) were retrieved, and the average pLDDT for all six amino acids encompassing the ITIM or ITSM sequence was used as the AlphaFold confidence score for that ITIM or ITSM. Proteins that had no ITIM or ITSM sequences with an average confidence score below 80 were not used in further analysis.
 
-## Classification of receptor functional categories
+### Classification of receptor functional categories
 
 Based on the in vitro RNA sequencing dataset of immune cells in the resting state and after activation, functional categories were defined based on expression patterns as outlined previously (Rumpret et al., 2020). Data was retrieved from Calderon et al., 2019, and West et al., 2016. Gene symbols were matched to Ensembl Gene IDs using biomaRt and Ensembl (release 108, October 2022) (Cunningham et al., 2022). For the neutrophil data (West et al., 2016), TPM values were retrieved and log2 scaled. For other immune cells, count matrix was normalised using the DESeq2 package (Love et al., 2014). Culture conditions for all immune cells were simplified to major immune cell subsets, and to resting and stimulated (Table 2). Average expression for each inhibitory receptor gene was determined for each sample. An inhibitory receptor gene was considered expressed when it was above the median expression of all genes within the sample. Genes that were not expressed in the resting state, but were expressed in the stimulated state, were considered negative feedback receptors. Genes expressed in the resting state were considered threshold, threshold-disinhibition, or threshold-negative feedback receptors if the log2 fold change in expression was between –0.5 and 0.5, below –0.5, or above 0.5, respectively. Genes expressed in the resting state, but not after activation, were also considered threshold-disinhibition receptors.
 
-## Collection and normalisation of immune cell RNA sequencing data
+### Collection and normalisation of immune cell RNA sequencing data
 
 For the analysis of tumour infiltrating T cells, a normalised expression matrix was retrieved from Zheng et al., 2021b; Zheng and Qin, 2021a. The average Z score of all cells in a T cell subset was determined, weighted by the relative contribution of different subclusters identified in the study. Inhibitory receptor genes were considered expressed in a T cell subset if the average Z score was above 0.

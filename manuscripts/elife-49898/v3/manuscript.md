@@ -92,7 +92,7 @@
 
 ## Abstract
 
-The human face represents a combined set of highly heritable phenotypes, but knowledge on its genetic architecture remains limited, despite the relevance for various fields. A series of genome-wide association studies on 78 facial shape phenotypes quantified from 3-dimensional facial images of 10,115 Europeans identified 24 genetic loci reaching study-wide suggestive association (p < 5 × 10 −8 ), among which 17 were previously unreported. A follow-up multi-ethnic study in additional 7917 individuals confirmed 10 loci including six unreported ones (p adjusted < 2.1 × 10 −3 ). A global map of derived polygenic face scores assembled facial features in major continental groups consistent with anthropological knowledge. Analyses of epigenomic datasets from cranial neural crest cells revealed abundant cis -regulatory activities at the face-associated genetic loci. Luciferase reporter assays in neural crest progenitor cells highlighted enhancer activities of several face-associated DNA variants. These results substantially advance our understanding of the genetic basis underlying human facial variation and provide candidates for future in-vivo functional studies.
+The human face represents a combined set of highly heritable phenotypes, but knowledge on its genetic architecture remains limited, despite the relevance for various fields. A series of genome-wide association studies on 78 facial shape phenotypes quantified from 3-dimensional facial images of 10,115 Europeans identified 24 genetic loci reaching study-wide suggestive association (p < 5 × 10−8), among which 17 were previously unreported. A follow-up multi-ethnic study in additional 7917 individuals confirmed 10 loci including six unreported ones (padjusted < 2.1 × 10−3). A global map of derived polygenic face scores assembled facial features in major continental groups consistent with anthropological knowledge. Analyses of epigenomic datasets from cranial neural crest cells revealed abundant cis-regulatory activities at the face-associated genetic loci. Luciferase reporter assays in neural crest progenitor cells highlighted enhancer activities of several face-associated DNA variants. These results substantially advance our understanding of the genetic basis underlying human facial variation and provide candidates for future in-vivo functional studies.
 
 ## Introduction
 
@@ -108,47 +108,501 @@ Led by the International Visible Trait Genetics (VisiGen) Consortium and togethe
 
 ## Results
 
-## Facial phenotypes
+### Facial phenotypes
 
 The current study included seven cohorts, totaling 18,032 individuals. Demographic characteristics and phenotyping details for all cohorts are provided in Materials and methods and Supplementary file 1 - Table 1. A variety of different phenotyping methods are available for 3D facial image data, where some approaches (Claes et al., 2018) require access to the underlying raw image datasets, which often cannot be shared between different research groups. In order to maximize sample size via a collaborative study, we focused on linear distance measures of facial features that can be accurately derived from facial image datasets. In our cohorts with 3D facial surface images, we focused on distances between a common set of thirteen well-defined facial landmarks (Figure 1). In the Rotterdam Study (RS) and the TwinsUK study (TwinsUK), we used the same ensemble method for automated 3D face landmarking that was specifically designed for large cohort studies with the flexibility of landmark choice and high robustness in dealing with various image qualities (de Jong et al., 2018; de Jong et al., 2016). Facial landmarking in Avon Longitudinal Study of Parents and their Children (ALSPAC) and Pittsburgh 3D Facial Norms study (PITT) was done manually. Generalized Procrustes Analysis (GPA) was used to remove affine variations due to shifting, rotation and scaling (Figure 1—figure supplement 1). A total of 78 Euclidean distances involving all combinatorial pairs of the 13 facial landmarks were considered as facial phenotypes.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-v3.jpg)
+
+**Figure 1.:** Results from meta-analysis of four GWASs in Europeans (N = 10,115), which were separately conducted in RS, TwinsUK, ALSPAC, and PITT for 78 facial shape phenotypes that are displayed in a signal ‘composite’ Manhattan plot at the bottom of the figure. All loci consisting of SNPs reaching study-wide suggestive significance (p<5 × 10−8, red line) were nominated according to the nearby candidate genes in the associated loci, and the top 10 loci were highlighted in colors. The black line indicates study-wide significance after multiple trait correction (p<1.2×10−9). Novel and previously established face-associated genetic loci were differentiated using colored and gray text, respectively. Annotation of the 13 facial landmarks used to derive the 78 facial phenotypes and the associated facial phenotypes are illustrated in the upper part of the figure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) All raw landmarks before GPA process; (B) after GPA process.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sex difference (RS, N = 3,193); (B) Aging effect (RS, N = 3,193); (C) Variance explained by sex and age (RS, N = 3,193); (D) Unsupervised hierarchical clustering of phenotype correlation matrix resulted in 4 clusters of phenotypes (RS, N = 3,193); (E) Twins heritability estimates in QIMR (N = 1,101) using 2D frontal photographs; (F) Twins heritability estimates in TwinsUK (N = 1,020) using 3D images.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Positive correlations are shown as brown squares; Negative correlations are shown as blue squares. Phenotypic correlation is shown above the diagonal and SNP-based genetic correlation is shown below the diagonal. The matrix was organized according to the involvement of intra- and inter- organ landmarks.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-figsupp4-v3.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** The power of association tests under a variety of sample sizes (N = 3,000, 6,000, 10,000 and 15,000) with varied proportions of explained phenotypic variance (R2), absolute effect size (|ES|) and minor allele frequency (MAF) are investigated at (A) our study-wide significant level (1.2 × 10−9; and (B) our study-wide suggestive significance level (5 × 10−8). Power and R2 are indicated by different colors. The dashed line represents the distribution of 90% power value. For example, under the sample size of 10,000, our study has 90% power to detect suggestive significant SNP explaining at least 0.43% of the phenotypic variance (R2).
 
 Detailed phenotype analyses were conducted in RS. In RS, almost all (72 out of 78, 92%,) of the facial phenotypes followed the normal distribution as formally investigated by applying the Shapiro-Wilk normality test and obtaining non-significant results (Supplementary file 1 - Table 2). For only six phenotypes, this test revealed significant results; however, their histogram looked largely normal. A highly significant sex effect (min p=2.1 × 10−151) and aging effect (min p=8.0 × 10−44) were noted, together explained up to 21% of the variance per facial phenotype (e.g. between alares and Ls; Figure 1—figure supplement 2A–2C, Supplementary file 1 - Table 3). Intra-organ facial phenotypes (e.g. within nose or within eyes) showed on average higher correlations than inter-organ ones (e.g. between nose and eyes), and symmetric facial phenotypes showed higher correlations than non-symmetric ones. Genetic correlations (Zhou and Stephens, 2014) estimated using genome-wide data were similar to correlations obtained directly from phenotype data, with on average higher absolute values seen based on genotypes (Figure 1—figure supplement 3, Supplementary file 1 - Tables 4 and 5).
 
 Unsupervised hierarchical clustering analysis identified four distinct clusters of facial shape phenotypes, for example many distances related to pronasale were clustered together (Figure 1—figure supplement 2D). Twin heritability of all facial phenotypes was estimated in TwinsUK as h2 mean(sd)=0.52 (0.15), max = 0.86 and in Queensland Institute of Medical Research study (QIMR) as h2 mean(sd)=0.55 (0.19), max = 0.91 (Supplementary file 1 - Table 6). The most heritable features were linked to the central face (i.e., the outer- and inter- orbital distances, the nose breadth, and the distance between the subnasion and the inner eye corners; Figure 1—figure supplement 2E and F). These twin-derived heritability estimates were generally higher than those obtained from genome-wide SNPs in the same cohorts (Supplementary file 1 - Table 6). These results were overall consistent with expectations and suggest that the phenotype correlation within the human face may be explained in part by sets of shared genetic components.
 
-## GWASs and replications
+### GWASs and replications
 
 We conducted a series of GWASs and meta-analyses to test the genetic association of 7,029,494 autosomal SNPs with 78 face phenotypes in RS, TwinsUK, ALSPAC, and PITT, totaling 10,115 subjects of European descent, used as the discovery dataset. Inflation factors were in an acceptable range in all meta-analyses (average λ = 1.015, sd = 0.006; Figure 1—figure supplement 4), and were thus not further considered. A matrix spectral decomposition analysis estimated the effective number of independent facial traits as 43, which corresponds to a Bonferroni corrected study-wide significant threshold of 1.2 × 10−9. A power analysis showed that under this threshold, our discovery data had over 90% power to detect an allelic effect explaining 0.54% variance for individual phenotypes (Figure 1—figure supplement 5A). In the discovery GWAS meta-analysis, a total of 221 SNPs from six distinct loci showed study-wide significant association (p<1.2 × 10−9) with facial phenotypes, among which two have not been previously reported: 4q28.1 INTU (top SNP rs1250495 p=3.03 × 10−10), and 12q24.21 TBX3 (rs1863716 p=1.47 × 10−10). The other four have been described in previous GWASs of facial variation, including 2q36.1 PAX3, 4q31.3 SFRP2, 17q24.3 CASC17, and 20p11.22 PAX1 (Figure 1 and Supplementary file 1 - Table 7) (Liu et al., 2012; Paternoster et al., 2012; Adhikari et al., 2016; Shaffer et al., 2016; Claes et al., 2018). Considering the traditional genome-wide significant threshold of 5 × 10−8 as our study-wide suggestive significance threshold for replication studies, the power analysis showed that under this threshold, our discovery data had over 90% power to detect an allelic effect explaining 0.43% variance for individual phenotypes (Figure 1—figure supplement 5B). In addition to the study-wide significant ones, 273 SNPs from 18 distinct loci passed the 5 × 10−8 threshold (Supplementary file 1 - Table 7), of which 15 were novel and 3 (1p12 TBX15, 9q22.31 ROR2 and 17q24.3 SOX9) have been reported in previous studies (Cha et al., 2018; Claes et al., 2018; Pickrell et al., 2016). Thus, in total, we identified 24 face-associated genetic loci, of which 17 were not reported in previous face GWASs, that we followed-up via a multi-ethnic replication analysis (see below). In general, no significant heterogeneity was observed for the 24 top SNPs of the study-wide significant and suggestive associated loci, that is only one SNP (rs3403289 at 2q36.1 PAX3) showed nominally significant (Cochran's Q test p=0.04, Table 1) heterogeneity between the discovery cohorts, but was not significant after multiple testing correction.
+
+**Table 1.**
+ SNPs significantly associated (p<5×10−8) with facial shape phenotypes from European discovery GWAS meta-analysis (RS, TwinksUK, ALSPAC, and PITT), and their multi-ethnic replication (UYG, CANDELA and QIMR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Discovery meta-analysis</th>
+      <th>Replication</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">(N = 10,115)</th>
+      <th>(N = 7,917)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td>SNP</td>
+      <td>Nearest Gene</td>
+      <td>EA</td>
+      <td>OA</td>
+      <td>Trait</td>
+      <td>Beta</td>
+      <td>P</td>
+      <td>Q</td>
+      <td>Com. P</td>
+    </tr>
+    <tr>
+      <td colspan="2">Novel face-associated loci</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1p36.22</td>
+      <td>rs143353512</td>
+      <td>CASZ1</td>
+      <td>A</td>
+      <td>G</td>
+      <td>Prn-AlL</td>
+      <td>−0.29</td>
+      <td>6.44 × 10−9</td>
+      <td>0.73</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>1p36.13</td>
+      <td>rs200243292</td>
+      <td>ARHGEF19</td>
+      <td>I</td>
+      <td>T</td>
+      <td>EnR-ChL</td>
+      <td>−0.11</td>
+      <td>1.46 × 10−8</td>
+      <td>0.54</td>
+      <td>0.0640</td>
+    </tr>
+    <tr>
+      <td>1p31.2</td>
+      <td>rs77142479</td>
+      <td>RPE65</td>
+      <td>C</td>
+      <td>A</td>
+      <td>EnL-Sn</td>
+      <td>−0.08</td>
+      <td>7.65 × 10−9</td>
+      <td>0.90</td>
+      <td>0.0121</td>
+    </tr>
+    <tr>
+      <td>2p12</td>
+      <td>rs10202675</td>
+      <td>LRRTM4</td>
+      <td>T</td>
+      <td>C</td>
+      <td>EnR-AlR</td>
+      <td>−0.26</td>
+      <td>4.43 × 10−8</td>
+      <td>0.40</td>
+      <td>0.0226</td>
+    </tr>
+    <tr>
+      <td>2q31.1</td>
+      <td>rs2884836</td>
+      <td>KIAA1715</td>
+      <td>T</td>
+      <td>C</td>
+      <td>ExR-ChR</td>
+      <td>−0.09</td>
+      <td>3.04 × 10−8</td>
+      <td>0.52</td>
+      <td>0.1096</td>
+    </tr>
+    <tr>
+      <td>3q12.1</td>
+      <td>rs113663609</td>
+      <td>CMSS1</td>
+      <td>A</td>
+      <td>G</td>
+      <td>EnR-ChR</td>
+      <td>−0.12</td>
+      <td>3.46 × 10−8</td>
+      <td>0.96</td>
+      <td>0.0782</td>
+    </tr>
+    <tr>
+      <td>4q28.1</td>
+      <td>rs12504954</td>
+      <td>INTU</td>
+      <td>A</td>
+      <td>G</td>
+      <td>Prn-AlL</td>
+      <td>−0.09</td>
+      <td>3.03 × 10−10</td>
+      <td>0.52</td>
+      <td>0.0015</td>
+    </tr>
+    <tr>
+      <td>6p22.3</td>
+      <td>rs2225718</td>
+      <td>RNF144B</td>
+      <td>C</td>
+      <td>T</td>
+      <td>EnR-AlR</td>
+      <td>−0.09</td>
+      <td>2.97 × 10−8</td>
+      <td>0.60</td>
+      <td>0.0071</td>
+    </tr>
+    <tr>
+      <td>6p21.2</td>
+      <td>rs7738892</td>
+      <td>KIF6</td>
+      <td>T</td>
+      <td>C</td>
+      <td>EnR-N</td>
+      <td>0.11</td>
+      <td>1.34 × 10−8</td>
+      <td>0.09</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>8p23.2</td>
+      <td>rs1700048</td>
+      <td>CSMD1</td>
+      <td>C</td>
+      <td>A</td>
+      <td>ExR-ChL</td>
+      <td>−0.22</td>
+      <td>3.94 × 10−8</td>
+      <td>0.73</td>
+      <td>0.1131</td>
+    </tr>
+    <tr>
+      <td>8q21.3</td>
+      <td>rs9642796</td>
+      <td>DCAF4L2</td>
+      <td>A</td>
+      <td>G</td>
+      <td>AlL-Ls</td>
+      <td>−0.11</td>
+      <td>4.52 × 10−8</td>
+      <td>0.07</td>
+      <td>0.3090</td>
+    </tr>
+    <tr>
+      <td>10q22.1</td>
+      <td>rs201719697</td>
+      <td>SUPV3L1</td>
+      <td>A</td>
+      <td>D</td>
+      <td>ExL-AlL</td>
+      <td>−0.28</td>
+      <td>3.42 × 10−8</td>
+      <td>0.66</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>12q24.21</td>
+      <td>rs1863716</td>
+      <td>TBX3</td>
+      <td>A</td>
+      <td>C</td>
+      <td>Prn-AlR</td>
+      <td>−0.09</td>
+      <td>1.47 × 10−10</td>
+      <td>0.53</td>
+      <td>2.45 × 10−5</td>
+    </tr>
+    <tr>
+      <td>13q14.3</td>
+      <td>rs7325564</td>
+      <td>LINC00371</td>
+      <td>T</td>
+      <td>C</td>
+      <td>N-Prn</td>
+      <td>0.09</td>
+      <td>1.34 × 10−8</td>
+      <td>0.16</td>
+      <td>0.3519</td>
+    </tr>
+    <tr>
+      <td>14q32.2</td>
+      <td>rs1989285</td>
+      <td>C14orf64</td>
+      <td>G</td>
+      <td>C</td>
+      <td>N-Prn</td>
+      <td>−0.10</td>
+      <td>4.54 × 10−8</td>
+      <td>0.82</td>
+      <td>0.0019</td>
+    </tr>
+    <tr>
+      <td>16q12.1</td>
+      <td>rs16949899</td>
+      <td>SALL1</td>
+      <td>T</td>
+      <td>G</td>
+      <td>ExR-ChL</td>
+      <td>−0.13</td>
+      <td>3.35 × 10−8</td>
+      <td>0.76</td>
+      <td>0.8912</td>
+    </tr>
+    <tr>
+      <td>16q12.2</td>
+      <td>rs7404301</td>
+      <td>RPGRIP1L</td>
+      <td>G</td>
+      <td>A</td>
+      <td>AlL-Ls</td>
+      <td>−0.09</td>
+      <td>3.49 × 10−9</td>
+      <td>0.43</td>
+      <td>2.87 × 10−7</td>
+    </tr>
+    <tr>
+      <td colspan="3">Previously reported face-associated loci</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1p12</td>
+      <td>rs1229119</td>
+      <td>TBX15</td>
+      <td>T</td>
+      <td>C</td>
+      <td>ExR-ChR</td>
+      <td>0.08</td>
+      <td>2.25 × 10−8</td>
+      <td>0.26</td>
+      <td>0.1219</td>
+    </tr>
+    <tr>
+      <td>2q36.1</td>
+      <td>rs34032897</td>
+      <td>PAX3</td>
+      <td>G</td>
+      <td>A</td>
+      <td>EnR-N</td>
+      <td>0.14</td>
+      <td>1.96 × 10−17</td>
+      <td>0.04</td>
+      <td>0.0020</td>
+    </tr>
+    <tr>
+      <td>4q31.3</td>
+      <td>rs6535972</td>
+      <td>SFRP2</td>
+      <td>C</td>
+      <td>G</td>
+      <td>EnL-AlL</td>
+      <td>0.12</td>
+      <td>3.51 × 10−12</td>
+      <td>0.12</td>
+      <td>5.89 × 10−12</td>
+    </tr>
+    <tr>
+      <td>9q22.31</td>
+      <td>rs2230578</td>
+      <td>ROR2</td>
+      <td>C</td>
+      <td>T</td>
+      <td>EnL-Sn</td>
+      <td>0.09</td>
+      <td>9.02 × 10−9</td>
+      <td>0.66</td>
+      <td>1.09 × 10−6</td>
+    </tr>
+    <tr>
+      <td>17q24.3</td>
+      <td>rs8077906</td>
+      <td>CASC17</td>
+      <td>A</td>
+      <td>G</td>
+      <td>Prn-EnL</td>
+      <td>−0.09</td>
+      <td>3.00 × 10−11</td>
+      <td>0.24</td>
+      <td>0.0505</td>
+    </tr>
+    <tr>
+      <td>17q24.3</td>
+      <td>rs35473710</td>
+      <td>SOX9</td>
+      <td>G</td>
+      <td>A</td>
+      <td>AlR-ChL</td>
+      <td>0.19</td>
+      <td>3.95 × 10−8</td>
+      <td>0.37</td>
+      <td>0.2634</td>
+    </tr>
+    <tr>
+      <td>20p11.22</td>
+      <td>rs4813454</td>
+      <td>PAX1</td>
+      <td>T</td>
+      <td>C</td>
+      <td>AlL-AlR</td>
+      <td>−0.10</td>
+      <td>2.32 × 10−11</td>
+      <td>0.58</td>
+      <td>0.0002</td>
+    </tr>
+  </tbody>
+</table>
+
+_Except rs2230578 (3'-UTR of ROR2) and rs7738892 (a synonymous variant of KIF6), all SNPs are intronic or intergenic. Gene symbols in bold indicate successful replication after Bonferroni correction of 24 loci (p<2.1×10−3). Meta P in bold indicates study-wide significance in the discovery analysis after multiple trait correction (p<1.2×10−9). Replication P in bold means significant after Bonferroni correction for multiple tests (p<2.1×10−3). Q: p-value from the Cochran's Q test for testing heterogeneity between discovery cohorts. EA and OA, the effect allele and the another allele. Com. P: p-values from a combined test of dependent tests. NA, not available._
 
 The association signals at the 24 genetic loci involved multiple facial phenotypes clustered to the central region of the face above the upper lip (Figure 1), and closely resembled the twins-based face heritability map (Figure 1—figure supplement 2E and F). All seven previously reported loci showed largely consistent allele effects on the same or similar sets of facial phenotypes as described in previous GWASs (Supplementary file 1 - Table 8). Four (2q36.1 PAX3, 9q22.31 ROR2, 17q24.3 CASC17, and 20p11.22 PAX1) out of the 24 face-associated loci have been noted in the GWAS catalog for face morphology or related phenotypes that is nose size, chin dimples, monobrow thickness, and male pattern baldness (Supplementary file 1 - Table 9). Five out of the 24 loci showed genome-wide significant association (p<5e-8) with non-facial phenotypes and/or diseases in the GeneATLAS database (Canela-Xandri et al., 2018) (Supplementary file 1 - Table 10), suggesting pleiotropic effects. Six out of the 24 loci showed a high degree of diversity among the major continental groups in terms of both allele frequency differences (>0.2) and Fst values (empirical p<0.05), including 1p31.2 RPE65, 2q36.1 PAX3, 4q28.1 INTU, 16q12.1 SALL1, 16q12.2 RPGRIP1L and 17q24.3 CASC17 (Supplementary file 1 - Tables 11 and 12). Three out of the 24 face-associated loci showed signals of positive selection in terms of the integrated haplotype scores (iHS, empirical p<0.01), including RPE65, RPGRIP1L and CASC17 (Supplementary file 1 - Table 12). None of the 24 loci overlapped with the previously reported signals of singleton density score (SDS, empirical p<0.01) in Europeans (Field et al., 2016), which may indicate that the observed selection signals are unlikely the consequences from the recent selective pressures detectable via SDS analysis.
 
 We selected the 24 top-associated SNPs (Table 1), one SNP per for each of the identified 24 genetic loci passing the study-wide suggestive significance threshold (p<5×10−8), for replication studies in a total of 7917 multi-ethnic subjects from three additional cohorts that is the Consortium for the Analysis of the Diversity and Evolution of Latin America (CANDELA) study involving Latin Americans known to be of admixed Native American and European ancestry, the Xinjiang Uyghur (UYG) study from China known to be of admixed East Asian and European ancestry, and the Queensland Institute of Medical Research (QIMR) study from Australia involving Europeans. We used a ‘combined test of dependent tests’ (Kost and McDermott, 2002) to account for the incompatibility among facial traits from the three replication cohorts, which tests for H0: no association for all facial phenotypes in all replication cohorts vs. H1: associated with at least one facial phenotypes in at least one replication cohorts. After Bonferroni correction of multiple testing of 24 SNPs, significant evidence of replication (p<2.1×10−3) was obtained for 10 SNPs, among which six were novel loci: 1p36.22 CASZ1, 4q28.1 INTU, 6p21.2 KIF6, 12q24.21 TBX3, 14q32.2 C14orf64, and 16q12.2 RPGRIP1L (Figure 2), and four have been described in previous face GWASs: 2q36.1 PAX3, 4q31.3 SFRP2, 9q22.31 ROR2, and 20p11.22 PAX1 (Adhikari et al., 2016; Claes et al., 2018; Paternoster et al., 2012; Pickrell et al., 2016; Shaffer et al., 2016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-v3.jpg)
+
+**Figure 2.:** The figure is composed by six parts, (A) 1p36.22 CASZ1 region, (B) 4q28.1 INTU region, (C) 6p21.2 KIF6 region, (D) 12q24.21 TBX3 region, (E) 14q32.2 C14orf64 region, and (F) 16q12.2 RPGRIP1L region. Each part includes two figures, Face map (left) denoting all of the top-SNP-associated phenotypes weighted by the statistical significance (-log10P). The dashed line means that the P value was nominally significant (p<0.01) but did not reach study-wide suggestive significance (p>5e-8). LocusZoom (right) shows regional association plots for the top-associated facial phenotypes with candidate genes aligned below according to the chromosomal positions (GRCh37.p13) followed by linkage disequilibrium (LD) patterns (r2) of EUR in the corresponding regions. Similar figures for all 24 study-wide suggestively significant loci are provided in Figure 2—figure supplements 1–24.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (Figure 2—figure supplements 1–6 show six novel replicated loci, Figure 2—figure supplements 7–17 show 11 novel non-replicated loci, Figure 2—figure supplements 18–24 show seven previously reported loci) (A) From up to down, the 1st panel shows regional association plots (LocusZoom) for the top-associated facial phenotypes with candidate genes aligned below according to the chromosomal positions (GRCh37.p13). The 2nd panel shows signals of local positive selection using diversity (FST) and conservation (|iHS|) statistics between and within EUR, AFR, and EAS population samples from the 1000 Genomes Project. The 3rd panel denotes the linkage disequilibrium (LD) patterns (r2) in the associated region. The 4th panel shows epigenetic annotation of CNCC’s regulatory elements in corresponding regions using WashU Epigenome Browser. Chip-seq profiles display histone modifications associated with active enhancers (H3K27ac, H3K4me1) or promoters (H3K4me3), and binding of general coactivator p300 and transcription factor TFAP2A. The ATAC-seq track shows chromatin accessibility. The PhyloP track indicates cross-species conservation. (B) Shows a face map denoting the significance (-log10P) for the associations between the top SNP and facial phenotypes. The dashed line means that the P value was nominally significant (p<0.01) but did not reach study-wide suggestive significance (p>5e-8). (C) Effect sizes for the derived allele at index SNPs. Blue, red, and green boxes represent effect sizes estimated in the participating discovery cohort, combined meta-analysis, and in the replication UYG cohort, respectively. Box sizes are proportional to sample size. Horizontal bars indicate a 95% confidence interval of width equal to 1.96 standard errors. (D) All SNPs in LD (r2 > 0.25) with the top-associated SNP and all base-pairs in vicinity (within 20 kb, p<0.05) are displayed according to their log scaled quantile rank (-log10p, axis scale) in the circular figure below, where the rank is calculated using the Chip-seq values in the whole genome. In addition, SNPs associated with facial phenotypes in our meta-analysis of GWASs were highlighted according to their association p values (PMeta, color scale) and their LD (r2) with the top-associated SNP in the region (points size). Association, selection, LD and regulation patterns for rs143353512 located around CASZ1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp2-v3.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp3-v3.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp4-v3.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp5-v3.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp6-v3.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp7-v3.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp8-v3.jpg)
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp9-v3.jpg)
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp10-v3.jpg)
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp11-v3.jpg)
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp12-v3.jpg)
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp13-v3.jpg)
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp14-v3.jpg)
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp15-v3.jpg)
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp16-v3.jpg)
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp17-v3.jpg)
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp18-v3.jpg)
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp19-v3.jpg)
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp20-v3.jpg)
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp21-v3.jpg)
+
+![Figure 2—figure supplement 22.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp22-v3.jpg)
+
+![Figure 2—figure supplement 23.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp23-v3.jpg)
+
+![Figure 2—figure supplement 24.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig2-figsupp24-v3.jpg)
+
 The allelic effects of the replicated SNPs were highly consistent across all participating cohorts, while the individual cohorts were underpowered (Figure 2—figure supplements 1–6), further emphasizing on the merit of our collaborative study. The associated phenotypes of the replicated SNPs demonstrated a clear pattern of facial symmetry that is the same association was observed on both sides of the face, while such a symmetric pattern was less clear for most phenotypes involved in the non-replicated loci (Figure 2—figure supplements 7–17). Several novel replicated loci showed effects on the similar sets of facial shape phenotypes; for example, 1p36.22 CASZ1 and 4q28.1 INTU (Figure 2A and C) both affected the distances between pronasion and alares. Moreover, several novel replicated loci affected phenotypes in multiple facial regions for example 4q32.1 C14orf64 and 12q24.1 TBX3 (Figure 2D and E) both affected many distances among eyes, alares and mouth. It should be noted however, that the discovery dataset is of European ancestry while the replication dataset is multi-ethnic and the facial phenotypes could not be obtained in the same way as in the discovery set; hence, the replication results were rather conservative, that is the possibility of false negatives in this replication study cannot be excluded. This was evident from the results of the replication attempts of the seven known loci (1p12 TBX15, 2q36.1 PAX3, 4q31.3 SFRP2, 9q22.31 ROR2, 17q24.3 CASC17, 17q24.3 SOX9, 20p11.22 PAX1) (Figure 2—figure supplements 18–24). Out of these 7, only four were replicated (PAX3, SFRP2, ROR2 and PAX1, Table 1). For this reason, we considered all of the 494 SNPs from the 24 loci passing the study-wide suggestive threshold in the subsequent polygenic score analyses and in the functional annotation analyses.
 
-## Integration with previous literature knowledge
+### Integration with previous literature knowledge
 
 In our discovery GWAS dataset, we also investigated 122 face-associated SNPs reported in previously published facial GWASs (Adhikari et al., 2016; Cha et al., 2018; Claes et al., 2018; Cole et al., 2016; Lee et al., 2017; Liu et al., 2012; Paternoster et al., 2012; Pickrell et al., 2016; Shaffer et al., 2016). Out of those, a total of 44 (36%) SNPs showed significant association on either the same set of facial phenotypes or at least one facial phenotypes in a combined test, after Bonferroni correction for the number of SNPs (adjusted p<0.05) (Supplementary file 1 - Table 8). Notably, none of the 5 SNPs reported in a previous African GWAS (Cole et al., 2016) was replicated in our European dataset. This is unlikely explained by the allele frequency differences between Sub-Saharan African (AFR) and Europeans (EUR) (absolute frequency differences between AFR and EUR were less than 0.1 in the 1000 Genomes project) but more likely due to different phenotypes, that is in the previous study these loci were primarily associated with facial size, which was not tested on our study.
 
 We also investigated the potential links between facial phenotypes and 60 SNPs in 38 loci previously implicated in non-syndromic cleft lip and palate (NSCL/P) phenotype, which is linked with normal variation of facial morphology as suggested previously (Beaty et al., 2010; Beaty et al., 2011; Birnbaum et al., 2009; Grant et al., 2009; Leslie et al., 2017; Ludwig et al., 2017; Ludwig et al., 2012; Mangold et al., 2010; Sun et al., 2015; Yu et al., 2017). Among these, 17 SNPs in 13 loci showed significant face-associations in the discovery cohorts after Bonferroni correction for the number of SNPs and phenotypes, and many (11 SNPs in eight loci) involving cleft related facial landmarks as expected, for example subnasale, labliale superius, and labiale inferius (Supplementary file 1 - Table 13).
 
-## Multivariable model fitting and polygenic face scores
+### Multivariable model fitting and polygenic face scores
 
 In the RS cohort, a multiple-regression conditioning on the effects of the 24 lead SNPs identified 31 SNPs showing significant (adjusted p<0.05) independent effects on sex- and age-adjusted face phenotypes (Supplementary file 1 - Table 14). These 31 SNPs individually explain less than 1%, and together explain up to 4.62%, of the variance for individual phenotypes (Figure 3A and B). The top-explained phenotypes clustered to the central region of the face, that is the distances between nasion, subnasale, pronasale, left endocanthion and right endocanthion. The variance explained was potentially overestimated in RS cohort since the SNP selection and model building were conducted using the same dataset. However, potential overfitting is unexpected to have a drastic effect, given that some of the selected SNPs showed weaker effects in RS than in other cohorts used (Supplementary file 1 - Table 7). We then used the fitted models to derive a set of polygenetic face scores for EUR, AFR and East Asian (EAS) subjects (total N = 1,668) from the 1000-Genomes Project. The polygenic face scores based on the 31 SNPs were largely reversely distributed between EUR and AFR, with EAS situated in between (Figure 3C). EUR showed the longest distances among the vertical phenotypes, while AFR had the widest of the horizontal phenotypes. EAS was consistently in-between with the most differential phenotype scores observed for nose wing breadth (AFR > EAS > EUR) and the nose length (EUR > EAS > AFR). An exception was for mouth phenotypes, where AFR had the largest values in both mouth width and lip thickness (Figure 3D). The nose-related score distribution, for example nose breadth and length, thus largely assembled the facial features in major continental groups, consistent with the hypotheses regarding adaptive evolution of human facial morphology (Noback et al., 2011; Weiner, 1954), for example nose width and nose length have been found to correlate with temperature and humidity. It should be noted, however, that the possibility of potential bias cannot be excluded due to the fact that the discovery GWAS was conducted in only Europeans. Notably, the polygenic scores of the NSCL/P-associated SNPs explained up to 1.2% of the age- and sex- adjusted phenotypic variance for phenotypes mostly between nose and mouth, for example right alare – right cheilion and pronasale – right cheilion (Figure 3—figure supplement 1).
 
-## Gene ontology of face-associated genetic loci
+![Figure 3.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig3-v3.jpg)
+
+**Figure 3.:** (A) Facial phenotype variance is explained by a multivariable model consisting of 31 face-associated SNPs with independent effects. (B) Unsupervised clustering reveals the details on the explained phenotype variance, where the SNPs were attributed to the candidate genes in the associated regions. All phenotypes with the total explained variance > 2% are shown. SNPs were colored according to their raw p-values and those passing FDR < 0.05 were indicated in squares. (C) Mean standardized polygenic scores calculated by applying the multivariable model trained in the RS discovery sample to Sub-Saharan Africans (AFR), East Asians (EAS) and Europeans (EUR) in the 1000 Genomes Project data. (D) Examples of the distributions of the face scores in samples of different ancestry origin/country.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Facial phenotype variance is explained by polygenic scores of 47 NSCL/P-associated SNPs after LD prune (r2 > 0.5).
+
+### Gene ontology of face-associated genetic loci
 
 A gene ontology enrichment analysis for the 24 face-associated genetic loci (Table 1) highlighted a total of 67 biological process terms and seven molecular function terms significantly enriched with different genes group (FDR < 0.01 or q value < 0.01, Supplementary file 1 - Table 15), with the top significant terms being ‘embryonic digit morphogenesis’ and ‘embryonic appendage morphogenesis’ (FDR < 1 × 10−8, Figure 4—figure supplement 1). Biological process terms were categorized in four broader categories, ‘morphogenesis’, ‘differentiation’, ‘development’ and ‘regulation’. These results underlined the important role of embryonic developmental and regulatory processes in shaping human facial morphology. Furthermore, cis-eQTL effects of the 494 face-associated SNPs at the 24 loci (Supplementary file 1 - Table 7) were investigated using the GTEx data. Significant multi-tissue cis-eQTL effects (adjusted p<0.05) were found around three genes, ARHGEF19, RPE65, and TBX15 (Supplementary file 1 - Table 16). No significant tissue-specific eQTL effects were observed, likely due to the lack of cell types indexed within the GTEx database that are directly involved in craniofacial morphology.
 
-## Expression of face-associated genetic loci in embryonic cranial neural crest cells
+### Expression of face-associated genetic loci in embryonic cranial neural crest cells
 
 Embryonic cranial neural crest cells (CNCCs) arise during weeks 3–6 of human gestation from the dorsal part of the neural tube ectoderm and migrate into the branchial arches. They later form the embryonic face, consequently establishing the central plan of facial morphology and determining species-specific and individual facial variation (Bronner and LeDouarin, 2012; Cordero et al., 2011). Recently, CNCCs have been successfully derived in-vitro from human embryonic stem cells or induced pluripotent stem cells (Prescott et al., 2015). Taking advantage of the available CNCC RNA-seq data (Prescott et al., 2015) and other public RNA-seq datasets compiled from GTEx (Lonsdale et al., 2013) and ENCODE (ENCODE Project Consortium, 2012), we compared 24 genes, which were nearest to the top-associated SNPs at the 24 face-associated genetic loci identified in our discovery GWAS meta-analysis, with the background genes over the genome for their expression in CNCCs and 49 other cell types. In 89% of 9 embryonic stem cells, 65% of 20 different tissue cells, and 15% of 20 primary cells these 24 genes showed significantly higher expression in all cell types (p<0.05) after multiple testing correction compared to the background genes (Figure 4A), and the most significant difference was observed in CNCCs (p=3.8 × 10−6). Furthermore, these 24 genes also showed preferential expression in CNCCs compared to their expression in other cell types, that is in 65% of 20 different tissue cells, in 60% of 20 primary cells, and in 22% of 9 embryonic stem cells (Figure 4A). Specifically, 16 (66.7%) of these 24 genes showed preferential expression in CNCCs compared to 49 other cell types. The top-ranked three preferentially expressed genes were PAX3 (p=1.3 × 10−29), INTU (p=8.3 × 10−25), and ROR2 (p=4.5 × 10−23, Figure 4B). Furthermore, some mid-preferentially expressed genes like DCAF4L2 and non-preferentially expressed genes like RPE65 became top-ranked preferentially expressed genes when testing sub-groups of cell types (Figure 4B). Although not necessarily is the nearest gene the causative gene and not necessarily is there only one causative gene per locus, the observation of significant preferential expression of the nearby genes considered in this analysis does support the hypothesis that variation of facial shape may indeed originate during early embryogenesis (Claes et al., 2018), and provide a priority list in different stages of cell differentiation with genes likely involved in embryo ectoderm derived phenotypes such as facial variation for future in-vivo functional studies.
 
-## Cis-regulatory signals in face-associated genetic loci
+![Figure 4.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig4-v3.jpg)
+
+**Figure 4.:** Expression levels of the genes nearest to the 24 top-associated SNPs (see Table 1) in 50 cell types were displayed in boxplots based on published data from the study of Prescott et al. (2015), the GTEx database (Lonsdale et al., 2013) and the ENCODE database (ENCODE Project Consortium, 2012). The cell types included CNCC, 20 other tissue cells, 20 primary cells and nine embryonic stem cells. (A) Boxplots of normalized RNA-seq VST values for the 24 genes (in orange) and all genome background genes (~50,000 genes, in blue). Expression difference between the genome background genes and the 24 genes was tested in each cell type using the unpaired Wilcoxon rank-sum test. Distribution of the expression levels in CNCC showed smaller variation than those of several embryonic stem cells which showed higher median. The expression of the 24 genes in CNCCs was also iteratively compared with that in other cell types using paired Wilcoxon rank-sum test. Statistical significance was indicated: *p<0.05 after multiple correcting test of cell lines amount. (B) Difference significance of normalized RNA-seq VST values in each of 24 genes were displayed using barplots between CNCCs and all 49 types of cells (purple), CNCCs and 20 tissue cells (blue), CNCCs and 20 primary cells (green), CNCCs and nine embryonic stem cells (orange). The difference between the value of CNCCs and other cell type groups was tested using the one-sample Student’s t test. Dotted line represents Bonferroni corrected significant threshold (p<0.0021). Significant gene labels were in color compared to non-significant gene labels in black.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Enrichment of the genes annotating the 24 identified face-associated genes. Enriched terms (FDR < 0.01 and n > 2, x-axis) are indicated by corrected P-value (FDR, different color), candidate genes contained by the terms (n, sizes of dots) and ratio of enrichment between test genes and background genes (y-axis).
+
+### Cis-regulatory signals in face-associated genetic loci
 
 It is becoming increasingly clear that cis-regulatory changes play a central role in determining human complex phenotypes (Carroll, 2008; Wray, 2007). In our study, apart from those at KIF6 and ROR2, all identified face-associated DNA variants were non-exonic. With preferential expression pattern validated in CNCCs, we explored the potential cis-regulatory activity of the face-associated DNA variants using the CNCC epigenomic mapping datasets (Prescott et al., 2015). This includes ChIP-seq data on transcription factor (TFAP2A and NR2F1) binding, general coactivator (p300) binding, or histone modifications associated with active regulatory elements (H3K4me1, H3K4me3, and H3K27ac), as well as ATAC-seq data on chromatin accessibility. Abundant entries of cis-regulatory signals were detected surrounding the face-associated loci. In particular, 6 (25%) of the 24 face-associated loci, that is 1p36.13 ARHGEF19, 2q36.1 PAX3, CMSS1, 4q28.1 INTU, 16q12.1 SALL1, and 16q12.2 RPGRIP1L, showed significant enrichment of cis-regulatory entries at the top 0.1% of the genome level in at least one epigenomic tracks after Bonferroni correction (adjusted p<0.05, Figure 5—figure supplement 1). We selected 5 SNPs as candidate regulatory SNPs (Figure 5A and B, Supplementary file 1 - Table 17) as they not only overlapped with the putative enhancers defined in CNCCs (Prescott et al., 2015) and penis foreskin melanocyte primary cells (Chadwick, 2012; ENCODE Project Consortium, 2012), but also showed high LD (r2 > 0.7) with at least one of the face-associated SNPs at the study-wide suggestive significance level. These five candidate regulatory SNPs were further studied via functional experiments as described in the following section.
 
-## Confirmation of cis-regulatory enhancer effects in neural crest progenitor cells
+![Figure 5.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig5-v3.jpg)
+
+**Figure 5.:** Three examples of facial shape associated loci we discovered are depicted in details, including two novel loci (INTU; RPGRIP1L) and one (PAX3) that overlaps with previous face GWAS findings. The figure is composed by three layers (A–C) organized from the top to the bottom. (A) Denotes the linkage disequilibrium (LD) patterns (r2) of EUR in the corresponding regions and epigenetic annotation of CNCC’s regulatory elements in corresponding regions using WashU Epigenome Browser. Chip-seq profiles display histone modifications associated with active enhancers (H3K27ac, H3K4me1) or promoters (H3K4me3), and binding of general coactivator p300 and transcription factor TFAP2A. The ATAC-seq track shows chromatin accessibility. The PhyloP track indicates cross-species conservation. (B) SNPs in LD (r2 > 0.25) with the top-associated SNP and all base-pairs in vicinity (within 20 kb, p<0.05) are displayed according to their log scaled quantile rank (-log10p, axis scale) in the circular figure, where the rank is calculated using the Chip-seq values in the whole genome. In addition, SNPs associated with facial phenotypes in our meta-analysis of GWASs were highlighted according to their association p values (PMeta, color scale) and their LD (r2) with the top-associated SNP in the region (points size). (C) Shows results of luciferase reporter assays in CD271+ neural crest progenitor cells by which we tested allele-specific enhancer activity of putative enhancers surrounding the selected SNPs using the Student´s t-test. Data are presented as relative luciferase activity (firefly/renilla activity ratio) fold change compared to the construct containing less active allele. Similar figures for layers A and B are provided for all face associated loci in Figure 2—figure supplements 1–24.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49898/elife-49898-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** For the top-associated SNPs at the 24 face associated loci, their base-pairs in vicinity within 20 kb (red bar) and LD (r2 > 0.25) SNPs (blue bar) were examined for cis-regulatory entries in six epigenomic tracks in CNCCs at three thresholds (top 1%, top 0.5%, top 0.1% of the genome). The proportions of the base-pairs or LD SNPs at each locus passing the set thresholds were displayed using bars (left y-axis), and the folds of the increase over the set thresholds were displayed using dashed lines (right y-axis). Statistical significance was derived using the Fisher’s exact test (*adjust.p<0.05).
+
+### Confirmation of cis-regulatory enhancer effects in neural crest progenitor cells
 
 We performed in-vitro luciferase reporter assays to quantify the potential regulatory effect of the five face-associated SNPs suggested by the in-silico analyses outlined above as regulatory candidates that is rs13410020 and rs2855266 from the 2q36.1 PAX3 region, rs17210317 and rs6828035 from the 4q28.1 INTU region, and rs4783818 from the 16q12.2 RPGRIP1L region (Supplementary file 1 - Table 17). Luciferase reporter assays in CD271+ neural crest progenitor cells demonstrated that both SNPs in 2q36.1 and 4q28.1, respectively, showed statistically significant allele-specific effects on enhancer activity (Figure 5C). In the 4q28.1 region, the derived SNP alleles were associated with decreased luciferase expression (33.5 ×~ 10.4 × , Supplementary file 1 - Table 18) as well as a reduced length of some nose features (−0.087 < beta < −0.078, Supplementary file 1 - Table 7). In the 2q36.1 region, the derived SNP alleles were associated with increased luciferase expression (1.5 ×~ 3.7 × , Supplementary file 1 - Table 18) as well as an increased length of some nasion-related features (0.131 < beta < 0.149, Supplementary file 1 - Table 7). Using a luciferase assay for rs4783818 from the 16q12.2 region in CD271+ neural crest progenitor cells, we obtained an allele-specific effect on enhancer activity, although it was not statistically significant (Figure 5C). Additional luciferase reporter assays using G361 melanoma cells provided similar results, indicating that the regulatory activity associated with the DNA variants is conserved across the neural crest cell lineage (Supplementary file 1 - Table 18). These results provide evidence that the tested face-associated SNPs impact the activity of enhancer elements and thus have regulatory function.
 
@@ -170,76 +624,80 @@ In summary, this study identified multiple novel and confirmed several previousl
 
 ## Materials and methods
 
-## Cohort details
+### Cohort details
 
 The four discovery cohorts, totaling 10,115 individuals, were Rotterdam Study (RS, N = 3,193, North-Western Europeans from the Netherlands), TwinsUK (N = 1,020, North-Western Europeans from the UK), ALSPAC (N = 3,707, North-Western Europeans from the UK), and Pittsburgh 3D Facial Norms study (PITT, N = 2,195, European ancestry from the United States). The three replication cohorts, totaling 7917 individuals, were CANDELA Study (N = 5,958, Latin Americans with ancestry admixture estimated at 48% European, 46% Native American and 6% African), Xinjiang Uyghur Study (UYG, N = 858, Uyghurs from China with ancestry admixture estimated at 50% East Asian and 50% European), and Queensland Institute of Medical Research Study (QIMR, N = 1,101, North-Western European ancestry from Australia). Three-dimensional facial surface images were acquired in all discovery cohorts and UYG, while frontal 2-dimensional photographs were used in CANDELA and QIMR.
 
-## Rotterdam Study (RS)
+### Rotterdam Study (RS)
 
 The RS is a population based cohort study of 14,926 participants aged 45 years and older, living in the same suburb of Rotterdam, the Netherlands (Hofman et al., 2013). The present study includes 3193 participants of Dutch European ancestry, for whom high-resolution 3dMDface digital photographs were taken. Genotyping was carried out using the Infinium II HumanHap 550K Genotyping BeadChip version 3 (Illumina, San Diego, California USA). Collection and purification of DNA have been described previously (Kayser et al., 2008). All SNPs were imputed using MACH software (www.sph.umich.edu/csg/abecasis/MaCH/) based on the 1000-Genomes Project reference population information (Abecasis et al., 2012). Genotype and individual quality controls have been described in detail previously (Lango Allen et al., 2010). After all quality controls, the current study included a total of 6,886,439 autosomal SNPs (MAF > 0.01, imputation R2 > 0.8, SNP call rate > 0.97, HWE > 1e-4). The Rotterdam Study has been approved by the Medical Ethics Committee of the Erasmus MC (registration number MEC 02.1015) and by the Dutch Ministry of Health, Welfare and Sport (Population Screening Act WBO, license number 1071272–159521 PG). The Rotterdam Study has been entered into the Netherlands National Trial Register (NTR; R; www.trialregister.nl) an) and into the WHO International Clinical Trials Registry Platform (ICTRP; P; www.who.int/ictrp/network/primary/en/) und under shared catalogue number NTR6831. All participants provided written informed consent to participate in the study and to have their information obtained from treating physicians.
 
-## TwinsUK study
+### TwinsUK study
 
 The TwinsUK study included 1020 phenotyped participants (all female and all of Caucasian ancestry) within the TwinsUK adult twin registry based at St. Thomas’ Hospital in London. All participants provided fully informed consent under a protocol reviewed by the St. Thomas’ Hosptal Local Research Ethics Committee. Genotyping of the TwinsUK cohort was done with a combination of Illumina HumanHap300 and HumanHap610Q chips. Intensity data for each of the arrays were pooled separately and genotypes were called with the Illuminus32 calling algorithm, thresholding on a maximum posterior probability of 0.95 as previously described (The MuTHER Consortium, 2011). Imputation was performed using the IMPUTE 2.0 software package using haplotype information from the 1000 Genomes Project (Phase 1, integrated variant set across 1092 individuals, v2, March 2012). After all quality controls, the current study included a total of 4,699,858 autosomal SNPs (MAF > 0.01, imputation R2 > 0.8, SNP call rate > 0.97, HWE > 1e-4) and 1020 individuals.
 
-## ALSPAC study
+### ALSPAC study
 
 The Avon Longitudinal Study of Parents and Children (ALSPAC) is a longitudinal study that recruited pregnant women living in the former county of Avon in the United Kingdom, with expected delivery dates between 1st April 1991 and 31st December 1992. The initial number of enrolled pregnancies was 14,541 resulting in 14,062 live births and 13,988 children alive at the age of 1. When the oldest children were approximately 7 years of age, additional eligible cases who had failed to join the study originally were added to the study. Full details of study enrolment have been described in detail previously (Boyd et al., 2013; Fraser et al., 2013; Golding et al., 2001). A total of 9,912 ALSPAC children were genotyped using the Illumina HumanHap550 quad genome-wide SNP genotyping platform. Individuals were excluded from further analysis based on incorrect sex assignments; heterozygosity (0.345 for the Sanger data and 0.330 for the LabCorp data); individual missingness (>3%); cryptic relatedness (>10% IBD) and non-European ancestry (detected by a multidimensional scaling analysis seeded with HapMap two individuals). The resulting post-quality control dataset contained 8237 individuals. The post-quality control ALSPAC children were combined with the ALSPAC mothers cohort (Fraser et al., 2013) and imputed together using a subset of markers common to both the mothers and the children. The combined sample was pre-phased using ShapeIT (v2.r644) (Delaneau et al., 2012) and imputed to the 1000 Genomes reference panel (Phase 1, Version3) (Auton et al., 2015) using IMPUTE3 V2.2.2 (Howie et al., 2009). The present study sample included 3707 individuals with 3D facial images, genotype and covariate data. Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Please note that the study website contains details of all the data that is available through a fully searchable data dictionary and variable search tool: http://www.bristol.ac.uk/alspac/researchers/our-data/.
 
-## Pittsburgh 3D Facial Norms (PITT) sample, United States
+### Pittsburgh 3D Facial Norms (PITT) sample, United States
 
 The current study included 2195 individuals from the 3D Facial Norms dataset (Weinberg et al., 2016). These individuals were recruited at four US sites (Pittsburgh, Seattle, Houston, and Iowa City), were of self-identified European ancestry, and ranged in age from 3 to 49 years. Exclusion criteria included any individuals with a history of significant facial trauma, congenital defects of the face, surgical alteration of the face, or any medical conditions affecting the facial posture. DNA was extracted from saliva samples and genotyped along with 72 HapMap control samples for 964,193 SNPs on the Illumina (San Diego, CA) HumanOmniEx- press+Exome v1.2 array plus 4,322 SNPs of custom content by the Center for Inherited Disease Research (CIDR). Samples were interrogated for genetic sex, chromosomal aberrations, relatedness, genotype call rate, and batch effects. SNPs were interrogated for call rate, discordance among duplicate samples, Mendelian errors among HapMap controls (parent-offspring trios), deviations from Hardy-Weinberg equilibrium, and sex differences in allele frequencies and heterozygosity. To assess population structure, we performed principal component analysis (PCA) using subsets of uncorrelated SNPs. Based on the scatterplots of the principal components (PCs) and scree plots of the eigenvalues, we determined that population structure was captured in four PCs of ancestry. Imputation of unobserved variants was performed using haplotypes from the 1000 Genomes Project Phase three as the reference. Imputation was performed using IMPUTE2. We used an info score of > 0.5 at the SNP level and a genotype probability of > 0.9 at the SNP-per-participant level as filters for imputed SNPs. Masked variant analysis, in which genotyped SNPs were imputed in order to assess imputation quality, indicated high accuracy of imputation. Institutional Review Board (IRB) approval was obtained at each recruitment center and all subjects gave written informed consent prior to participation: University of Pittsburgh IRB #PRO09060553 and IRB0405013; Seattle Children’s IRB #12107; University of Iowa Human Subjects Office/IRB #200912764 and #200710721; UT Health Committee for the Protection of Human Subjects #HSC-DB-09–0508 and #HSC-MS-03–090.
 
-## Xinjiang uyghur (UYG) study
+### Xinjiang uyghur (UYG) study
 
 The UYG samples were collected at Xinjiang Medical University in 2013–2014. In total, 858 individuals (including 333 males and 525 females, with an age range of 17–25) were enrolled. The research was conducted with the official approval from the Ethics Committee of the Shanghai Institutes for Biological Sciences, Shanghai, China. All participants had provided written consent. All samples were genotyped using the Illumina HumanOmniZhongHua-8 chips, which interrogates 894,517 SNPs. Individuals with more than 5% missing data, related individuals, and the ones that failed the X-chromosome sex concordance check or had ethnic information incompatible with their genetic information were excluded. SNPs with more than 2% missing data, with a minor allele frequency smaller than 1%, and the ones that failed the Hardy–Weinberg deviation test (p<1e-5) were also excluded. After applying these filters, we obtained a dataset of 709 samples with 810,648 SNPs for the Uyghurs. The chip genotype data were firstly phased using SHAPEIT (O'Connell et al., 2014). IMPUTE2 (Howie et al., 2009) was then used to impute genotypes at un-genotyped SNPs using the 1000 Genomes Phase three data as reference. Finally, a total of 6,414,304 imputed SNPs passed quality control and were combined with 810,648 genotyped SNPs for further analyses.
 
-## CANDELA study
+### CANDELA study
 
 CANDELA samples (Ruiz-Linares et al., 2014) consist of 6630 volunteers recruited in five Latin American countries (Brazil, Colombia, Chile, México and Perú). Ethics approval was obtained from: The Universidad Nacional Autónoma de México (México), the Universidad de Antioquia (Colombia), the Universidad Peruana Cayetano Heredia (Perú), the Universidad de Tarapacá (Chile), the Universidade Federal do Rio Grande do Sul (Brazil), and the University College London (UK). All participants provided written informed consent. Individuals with dysmorphologies, a history of facial surgery or trauma, or with BMI over 33 were excluded (due to the effect of obesity on facial features). DNA samples were genotyped on Illumina’s Omni Express BeadChip. After applying quality control filters 669,462 SNPs and 6357 individuals were retained for further analyses (2922 males, 3435 females). Average admixture proportions for this sample were estimated as: 48% European, 46% Native American and 6% African, but with substantial inter-individual variation. After all genomic and phenotypic quality controls this study included 5958 individuals. The genetic PCs were obtained from the LD-pruned dataset of 93,328 SNPs using PLINK 1.9. These PCs were selected by inspecting the proportion of variance explained and checking scatter and scree plots. The final imputed dataset used in the GWAS analyses included genotypes for 9,143,600 SNPs using the 1000 Genomes Phase I reference panel. Association analysis on the imputed dataset were performed using the best-guess imputed genotypes in PLINK 1.9 using linear regression with an additive genetic model incorporating age, sex and five genetic PCs as covariates.
 
-## Queensland Institute of Medical Research (QIMR) study
+### Queensland Institute of Medical Research (QIMR) study
 
 After phenotype and genotype quality control, data were available for 1101 participants who were mainly twins aged 16 years. All participants, and where appropriate their parent or guardian, gave informed consent, and all studies were approved by the QIMR Berghofer Human Research Ethics Committee. Participants were genotyped on the Illumina Human610-Quad and Core+Exome SNP chips. Genotype data were screened for genotyping quality (GenCall < 0.7), SNP and individual call rates (<0.95), HWE failure (p<1e-6) and MAF (<0.01). Data were checked for pedigree, sex and Mendelian errors and for non-European ancestry. Imputation was performed on the Michigan Imputation Server using the SHAPEIT/minimac Pipeline according to the standard protocols.
 
-## Facial shape phenotyping
+### Facial shape phenotyping
 
 In our study, we focused on 13 facial landmarks available in all cohorts with 3-dimensional digital photographs. These included right (ExR) and left (ExL) exocanthion: points of bilateral outer canthus; right (EnR) and left (EnL) endocanthion: points of bilateral inner canthus; nasion (Nsn): the point where the bridge of the nose meets the forehead; pronasale (Prn): the point of the nose tip; subnasale (Sbn): the point where the base of the nasal septum meets the philtrum; right (AlR) and left (AlL) alare: points of bilateral nose wing; labliale superius (Ls): the point of labial superius; labiale inferius (Li): the point of labial inferius; right (ChR) and left (ChL) cheilion: points of bilateral angulus oris. Slightly different image processing algorithms were applied to 3dMD images to capture facial landmarks in the participating cohorts. In RS and TwinsUK, the raw 3D facial images were acquired using a 3D photographic scanning system manufactured by 3dMD (http://www.3dmd.com/). Participants were asked to keep their mouths closed and adopt a neutral expression during the acquisition of the 3D scans. Ensemble methods for automated 3D face landmarking were then used to derived 21 landmarks (de Jong et al., 2018; de Jong et al., 2016). In short, 3D surface model of participants’ face obtained with commercial photogrammetry systems for faces called 3dMDface were input to the algorithm. Then a map projection of these face surfaces transformed the 3D data set into 3D relief maps and 2D images were generated from these 3D relief maps. These images were subjected to a 2D landmarking method like Elastic Bunch Graph Matching. Finally, registered 2D landmarks are mapped back into 3D, inverting the projection. 13 shared facial landmarks coordinate data were processed using GPA to remove variations due to scaling, shifting and rotation. Euclidean distances were calculated between all landmarks. Outliers (>3 sd) were removed before the subsequent analysis. Shapiro-Wilk test (Royston, 1995) was used to test the normality of phenotype distribution. At 15 years of age, the ALSPAC children were recalled (5253 attended) and 3D facial scans where taken using two high-resolution Konica Minolta VI-900 laser scanners (lenses with a focal length 14.5 mm). The set of left and right facial scans of each individual were processed, registered, and merged using a locally developed algorithm implemented as a macro in Rapidform 2006 (Kau et al., 2004; Paternoster et al., 2012; Toma et al., 2009). 22 landmarks were recorded manually. GPA was used to remove affine variations due to shifting, rotation and scaling. 4747 individuals had usable images (506 individuals did not complete the assessment or facial scans were removed due to poor quality). The coordinates of 22 facial landmarks were derived from the scans, of which 13 were shared across all other studies. 3D Euclidean distances were calculated between the facial landmarks. 3D facial models from PITT were obtained with 3dMD digital stereo-photogrammetry systems. Facial landmarks were collected on the facial surfaces by trained raters and assessed for common placement errors during subsequent quality control. A set of 78 linear distance variables was then calculated from a subset of 13 of these landmarks, chosen because they were shared among all of the discovery cohorts in this study. These distances were screened for outliers. In UYG, the 3DMDface system (www.3dmd.com/3dMDface) was used to collect high-resolution 3D facial images from participants. A dense registration was applied to align all the 3D images as described elsewhere (Guo et al., 2013). In brief, 15 salient facial landmarks were first automatically annotated based on the PCA projection of texture and shape information. Afterwards, a facial image of high quality and smooth shape surface was chosen as the reference, and its mesh was re-sampled to achieve an even density of one vertex in each 1mm × 1 mm grid. The reference face was then warped to register every sample face by matching all the 15 landmarks, via a non-rigid thin-plate spline (TPS) transformation. The mesh points of the reference face were then projected to the sample surface to find their one-to-one correspondents. The resulting points of projection were used to define the mesh of the sample facial surface. After the alignment, each sample face was represented by a set of 32,251 3D points and 15 target points were ready to be analyzed. A set of 78 linear distance variables was calculated from a subset of 13 of these 15 landmarks. In CANDELA, ordinal phenotyping was described in prior GWAS (Adhikari et al., 2016). In short, right side and frontal 2D photographs of participants were used to score 14 facial traits, Intra-class correlation coefficients (ICCs) were calculated to indicate a moderate-to-high intra-rater reliability of the trait scores. All photographs were scored by the same rater. In QIMR, two independent researchers manually evaluated all 2D portrait photos and located the coordinates for 36 facial landmarks. Satisfactory inter-rater concordance was obtained (Pearson’s correlation coefficient, mean r = 0.76). The average landmark coordinates between the two researchers were used for Euclidian distance calculation.
 
-## Phenotype characteristics
+### Phenotype characteristics
 
-Phenotype characteristics were explored for gender and aging effect, phenotypic and genetic correlations, clustering, and twins-heritability. Gender and aging effects were estimated using beta, p, and R2 values from linear models. Phenotypic correlations were estimated using Pearson’s correlation coefficients. Genetic correlations were estimated using genome-wide SNPs and the multivariate linear mixed model algorithm implemented in the GEMMA software package (Zhou & Stephens, 2014). Manual clustering was according to the involvement of intra- and inter- organ landmarks. Unsupervised hierarchical clustering was conducted using the 1-abs(correlation) as the dissimilarity matrix and each iteration was updated using the Lance - Williams formula (Ward, 1963). we calculated twins heritability for TwinsUK and QIMR twins using the phenotypic correlation derived from monozygotic twins (MZ) and dizygotic twins (DZ), that is h2=2[corMZ-cor(DZ)]. SNP-based heritability was estimated for twins cohorts using the restricted estimated maximum likelihood method implemented in the GCTA software package (Yang et al., 2011).
+Phenotype characteristics were explored for gender and aging effect, phenotypic and genetic correlations, clustering, and twins-heritability. Gender and aging effects were estimated using beta, p, and R2 values from linear models. Phenotypic correlations were estimated using Pearson’s correlation coefficients. Genetic correlations were estimated using genome-wide SNPs and the multivariate linear mixed model algorithm implemented in the GEMMA software package (Zhou & Stephens, 2014). Manual clustering was according to the involvement of intra- and inter- organ landmarks. Unsupervised hierarchical clustering was conducted using the 1-abs(correlation) as the dissimilarity matrix and each iteration was updated using the Lance - Williams formula (Ward, 1963). we calculated twins heritability for TwinsUK and QIMR twins using the phenotypic correlation derived from monozygotic twins (MZ) and dizygotic twins (DZ), that is $h^{2}=2[corMZ-cor(DZ)]$. SNP-based heritability was estimated for twins cohorts using the restricted estimated maximum likelihood method implemented in the GCTA software package (Yang et al., 2011).
 
-## GWAS, meta-analysis, and replication studies
+### GWAS, meta-analysis, and replication studies
 
 GWASs for face phenotypes were independently carried out in RS, TwinsUK, ALSPAC, PITT, CANDELA, UYG, and QIMR based on linear or logistic models assuming an additive allele effect adjusted for potential confounders in each cohorts, such as family relationships, sex, age, BMI and genetic PCs using software packages including PLINK (Purcell et al., 2007), GEMMA (Zhou and Stephens, 2012), and Rare Metal Worker (Feng et al., 2014). It should be noted that we used the scaled General Procrustes Analysis (GPA) to eliminate potential confounding effect of BMI although in some cohorts BMI was additionally included as a covariate, which shouldn’t have affected the results of our meta-analysis. For RS, association tests were run between the 78 3D facial distance measurements (after scaled GPA) and 6,886,439 genotyped and imputed SNPs with MAF > 0.01, imputation R2 > 0.8, SNP call rate > 0.97 and HWE > 0.0001. GWAS was performed using linear regression under the additive genetic model while adjusting for sex, age, and the first four genomic PCs derived using GCTA (Yang et al., 2011). For TwinsUK, quality control was performed on SNPs (MAF > 0.01, imputation R2 > 0.8, SNP call rate > 0.99). One of each pair of monozygotic twins (MZ) were excluded from association tests to reduce relatedness. The final sample included 1020 individuals and 4,699,859 autosomal genotyped and imputed variants. GWAS was performed between the 78 3D facial distance measurements (after scaled GPA) and genotyped and imputed SNPs using linear regression under the additive genetic model while adjusting for age and the first four genomic PCs. For ALSPAC, 3941 study participants had both genotype and 3D facial phenotype data. GCTA was used to remove individuals with excessive relatedness (GRM > 0.05) and quality control was performed on SNPs (MAF > 0.01, imputation R2 > 0.8, SNP call rate > 0.99). The final sample included 3707 individuals and 4,627,882 autosomal genotyped and imputed SNPs. GWAS was performed between the 78 3D facial distance measurements (after scaled GPA) and genotyped and imputed SNPs using linear regression under the additive genetic model while adjusting for age, sex, and the first four genomic PCs using PLINK 1.9 (Purcell et al., 2007). For PITT, association tests were run between the 78 3D facial distance measurements (after scaled GPA) and 9,478,231 genotyped and imputed SNPs with MAF > 1% and HWE > 0.0001. GWAS was performed using linear regression under the additive genetic model while adjusting for sex, age, age2, height, weight and the first four genomic PCs using PLINK 1.9. For the analysis of the X-chromosome, genotypes were coded 0, 1, and two as per the additive genetic model for females, and coded 0, two for males in order to maintain the same scale between sexes. Note that in the meta-analysis of all cohorts, the X-chromosome was not included. For CANDELA, PLINK 1.9 was used to perform the primary genome-wide association tests for each phenotype using multiple linear regression with an additive genetic model incorporating age, sex, BMI and five genetic PCs as covariates. Association analyses were performed on the imputed dataset with two approaches: using the best-guess imputed genotypes in PLINK, and using the IMPUTE2 genotype probabilities in SNPTEST v2.5. Both were consistent with each other and with the results from the chip genotype data. GWAS results with using best-guess genotypes were used in the subsequent meta-analysis. For UYG, GWAS were carried out using PLINK 1.9 and a linear regression model with additive SNP effects was used. Details was described in prior GWAS (Qiao et al., 2018). For QIMR, the GWAS was conducted using Rare Metal Worker with linear regression adjusted for sex, age, BMI and the first five genomic PCs.
 
-Inverse variance fixed-effect meta-analysis were carried out using PLINK to combine GWAS results for samples of European origin and having 3dMDface data, that is RS, TwinsUK, ALSPAC, and PITT, which included 7,029,494 autosomal SNPs overlapping between the 4 discovery cohorts with physical positions aligned according to NCBI human genome sequence build GRCh37.p13. X chromosome was not included in meta-analyses. Summary statistics of all SNPs and all facial phenotypes from the GWAS meta-analysis from the four cohorts of European descent (RS, TwinsUK, ALSPAC and PITT) are available via figshare https://doi.org/10.6084/m9.figshare.10298396 and will be made available through the NHGRI-EBI GWAS Catalog https://www.ebi.ac.uk/gwas/downloads/summary-statistics. Meta-analysis results were visualized using superposed Manhattan plots and Q-Q plots. All genomic inflation factors were close to 1 and not further considered. Because many of the 78 facial phenotypes were correlated, we applied the matrix decomposition method described by Li and Ji (2005) to determine the effective number of independent phenotypes as 43. We then set our study-wide significant threshold at p<1.2×10−9 using Bonferroni correction of 43 phenotypes, considering significant threshold for single phenotype GWAS as P<5×10−8). We considered the threshold of 5×10−8 as the threshold for replication studies in CANDELA, UYG, and QIMR. Since the 3dMDface data were available in UYG, exact replications were conducted, that is the genetic association was tested for the corresponding phenotypes in the meta-analysis. Since only 2D photos were available in CANDELA and QIMR, trait-wise replications were conducted to test H0: no association for all face phenotypes vs. H1: associated with at least one face phenotypes. We used a combined test of dependent tests to combine genetic association tests involving highly correlated face phenotypes (Kost and McDermott, 2002). In short, the test statistic of the combined test follows a scaled chi-squared distribution when tests are dependent. The mean of the χ2 values is:
+Inverse variance fixed-effect meta-analysis were carried out using PLINK to combine GWAS results for samples of European origin and having 3dMDface data, that is RS, TwinsUK, ALSPAC, and PITT, which included 7,029,494 autosomal SNPs overlapping between the 4 discovery cohorts with physical positions aligned according to NCBI human genome sequence build GRCh37.p13. X chromosome was not included in meta-analyses. Summary statistics of all SNPs and all facial phenotypes from the GWAS meta-analysis from the four cohorts of European descent (RS, TwinsUK, ALSPAC and PITT) are available via figshare https://doi.org/10.6084/m9.figshare.10298396 and will be made available through the NHGRI-EBI GWAS Catalog https://www.ebi.ac.uk/gwas/downloads/summary-statistics. Meta-analysis results were visualized using superposed Manhattan plots and Q-Q plots. All genomic inflation factors were close to 1 and not further considered. Because many of the 78 facial phenotypes were correlated, we applied the matrix decomposition method described by Li and Ji (2005) to determine the effective number of independent phenotypes as 43. We then set our study-wide significant threshold at p<1.2×10−9 using Bonferroni correction of 43 phenotypes, considering significant threshold for single phenotype GWAS as P<5×10−8). We considered the threshold of 5×10−8 as the threshold for replication studies in CANDELA, UYG, and QIMR. Since the 3dMDface data were available in UYG, exact replications were conducted, that is the genetic association was tested for the corresponding phenotypes in the meta-analysis. Since only 2D photos were available in CANDELA and QIMR, trait-wise replications were conducted to test H0: no association for all face phenotypes vs. H1: associated with at least one face phenotypes. We used a combined test of dependent tests to combine genetic association tests involving highly correlated face phenotypes (Kost and McDermott, 2002). In short, the test statistic of the combined test follows a scaled chi-squared distribution when tests are dependent. The mean of the $χ^{2}$ values is:
 
-E(χ2)=2k, and the variance can be estimated as
+$E(χ^{2})=2k$, and the variance can be estimated as
 
-var(χ2)=4k+2∑1≤i<j≤kcov(−2logPi, −2logPj), where
+$var(χ^{2})=4k+2\sum1\leqi<j\leqkcov(−2logP_{i}, −2logP_{j})$, where
 
-k is the number of phenotypes, Pi is the p value of the ith test. The covariance term cov(-2logPi, -2logPj)  can be approximated by the following formula using the phenotype correlation matrix:cov-2logPi, -2logPj≈3.263rij+0.71rij2+0.027rij3
+$k$ is the number of phenotypes, $P_{i}$ is the $p$ value of the $i$th test. The covariance term $cov(-2logP_{i},-2logP_{j})$ can be approximated by the following formula using the phenotype correlation matrix:
+
+$$
+cov-2logP_{i},-2logP_{j}≈3.263r_{ij}+0.71r_{ij}^{2}+0.027r_{ij}^{3}
+$$
 
 This approximation has been shown nearly identical to the exact value with difference less than 0.0002 for −0.98 <rij < 0.98 (Kost and McDermott, 2002). We then again used the combined test of dependent tests to combine replication evidence from all three cohorts. Multiple testing was corrected for the number of selected SNPs using the Bonferroni method. Regional linkage disequilibrium r2 values were calculated in PLINK and visualized using R scripting. Regional association plots were produced using LocusZoom (Pruim et al., 2010).
 
-## Genetic diversity and positive selection signal analysis
+### Genetic diversity and positive selection signal analysis
 
 To test for signals of allele frequency diversity and positive selection in the face associated genomic regions, we derived two commonly used statistics in population genetics, that is the fixation index (FST) and the integrated haplotype score (iHS) for all SNPs in the associated regions. The FST is a parameter in population genetics for quantifying the differentiation due to genetic structure between a pair of groups by measuring the proportion of genetic diversity due to allele frequency differences among populations potentially as a result of divergent natural selection (Holsinger and Weir, 2009). We performed a genome-wide FST analysis for three pairs of populations (AFR-EAS, EAS-EUR, and EUR-AFR) in the samples from the 1000 Genome Project using the PLINK software. The empirical significance cutoff for each of the three population pairs was set to the value corresponding to the top 1% FST values in the genome. The iHS is the integrate of the extended haplotype homozygosity (EHH) statistic to highlight recent positive selected variants that have not yet reached fixation, and large values suggest the adaption to the selective pressures in the most recent stage of evolution (Sabeti et al., 2002; Voight et al., 2006). The EHH statistic was calculated for all SNPs in AFR, EAS and EUR samples. Then the iHS statistic, integral of the decay of EHH away from each SNP until EHH reaches 0.05, was calculated for all SNPs, in which an allele frequency bin of 0.05 was used to standardize iHS scores against other SNPs of the same frequency class. Finally, we calculated empirical significance threshold over the genome assuming a Gaussian distribution of iHS scores under the neutral model. The cutoff was based on the top 1% absolute iHS scores calculated in three samples respectively as the absolute score indicate the selection intensity.
 
-## Multivariable and polygenic score (PS) analysis
+### Multivariable and polygenic score (PS) analysis
 
-Multivariable and polygenic score analyses were conducted in the RS cohort. For all SNPs showing study-wide suggestively significant association with face phenotypes (p<5x10−8), we performed a multivariable regression analysis aiming to select SNPs that still be significant after regressing out the effects of the 24 lead SNPs by including them as covariates in the model, which resulted in 31 SNPs for the subsequent modeling. A forward step-wise regression was conducted to access the independent effects of the selected SNPs on sex- and age- adjusted face phenotypes, where the R2 contribution of each SNP was estimated by comparing the current model fitting R2 with the R2 in a previous iteration. Next, we calculated PS for AFR, EUR, EAS individuals of the 1000 Genomes Project using the selected SNPs and the effect sizes estimated from the multivariable analysis, that is PS=∑i=1nβiAi. The mean values and distributions of the standardized PS values for all face phenotypes in each continental group was visualized using a face map and multiple boxplots, in which the differences between groups were highlighted according to the p-values from the ANOVA test, which tests H0: PS values are the same in all continental groups and H1: PS values are different in at least one of the groups.
+Multivariable and polygenic score analyses were conducted in the RS cohort. For all SNPs showing study-wide suggestively significant association with face phenotypes (p<5x10−8), we performed a multivariable regression analysis aiming to select SNPs that still be significant after regressing out the effects of the 24 lead SNPs by including them as covariates in the model, which resulted in 31 SNPs for the subsequent modeling. A forward step-wise regression was conducted to access the independent effects of the selected SNPs on sex- and age- adjusted face phenotypes, where the R2 contribution of each SNP was estimated by comparing the current model fitting R2 with the R2 in a previous iteration. Next, we calculated PS for AFR, EUR, EAS individuals of the 1000 Genomes Project using the selected SNPs and the effect sizes estimated from the multivariable analysis, that is $PS=\sum_{i=1}^{n}\beta_{i}A_{i}$. The mean values and distributions of the standardized PS values for all face phenotypes in each continental group was visualized using a face map and multiple boxplots, in which the differences between groups were highlighted according to the p-values from the ANOVA test, which tests H0: PS values are the same in all continental groups and H1: PS values are different in at least one of the groups.
 
-## Gene ontology analysis, expression analysis and SNP functional annotation
+### Gene ontology analysis, expression analysis and SNP functional annotation
 
 To further study the involved functions and regulation relationships of the genome-wide significantly associated SNP markers and candidate genes nearby, the genes located within 100 kb up- and down-stream of the SNPs were selected to perform biological process enrichment analysis based on the Gene Ontology (GO) database. The enrichment analysis was performed using the R package ‘clusterProfiler’ (Yu et al., 2012). RNA-seq data from the study of Prescott et al. (2015), GTEx (Lonsdale et al., 2013) and ENCODE (ENCODE Project Consortium, 2012) were used to compare the differences in gene expression levels between our face-associated genes and all genes over the genome in CNCCs. We examined entries in GWAS catalog (Welter et al., 2014) to explore the potential pleotropic effects in our face associated regions. The GTEx (Lonsdale et al., 2013) dataset was used to annotate our face associated SNPs for significant single-tissue cis-eQTL effects in all 48 available tissues. We used the CNCC data from Prescott et al. and UCSC (Aken et al., 2016) to perform a variety of functional annotations for the face associated SNPs in non-coding regions using the WashU Epigenome Browser, including histone modifications (H3K27ac, H3K4me1 and H3K4me3 tracks), chromatin modifier (p300 tracks), transcription factors (TFAP2A tracks), chromatin accessibility (ATACseq tracks) and conserved regions (PhyloP (Siepel et al., 2005) tracks) from UCSC. To investigate the pattern of regulation within each association region in details, we calculated the log scaled quantile rank and variation of all LD SNP (r2 > 0.25) in three replicated measurements from 6 types of Chip-seq data, and for all significant base-pair in vicinity (within 20 kb) of all top-associated SNPs. All analyses were conducted using R Environment for Statistical Computing (version 3.3.1) unless otherwise specified.
 
-## Cell culture
+### Cell culture
 
 Neural progenitors were derived from human induced pluripotent stem cells as described previously (male, age 57 years, derived from primary skin fibroblasts) (Gunhanlar et al., 2018). Written informed consent was obtained in accordance with the Medical Ethical Committee of the Erasmus University Medical Center. Neural progenitors contain a subpopulation of neural crest progenitor cells that were enriched by fluorescence-activated cell sorting for CD271 (BD Bioscience 560927, BD FACSAria III) (Dupin and Coelho-Aguiar, 2013; Lee et al., 2007). CD271 (p75) is a surface antigen marking neural crest progenitor cells which give rise to craniofacial tissues as well as melanocyte primary cells (Morrison et al., 1999). CD271+ cells were grown in DMEM:F12, 1% N2 supplement, 2% B27 supplement, 1% P/S, 20 ng/ml FGF at 37°C/5% CO2. G361 cells were cultured in DMEM/10% FCS at 37°C/5% CO2. The cell line was tested negative for mycoplasma contamination and its identity was authenticated by STR profiling using PowerPlex 16 System (Promega).
 
-## In vitro functional experiments: Luciferase reporter assay
+### In vitro functional experiments: Luciferase reporter assay
 
 We explored the effect of the five selected SNPs on gene expression in CD271+ and G361 melanoma cells by a luciferase reporter assay. Custom 500 bp gBlocks Gene fragments (IDT) containing putative enhancers surrounding each of the five selected SNPs were cloned into a modified pGL3 firefly luciferase reporter vector (SV40 promoter and 3´UTR replaced by HSP promoter and 3´UTR). For each SNP, constructs containing both ancestral and derived alleles were tested. Equimolar amount of constructs (measured by qPCR detecting the firefly luciferase gene using GoTaq qPCR Master Mix (Promega) were co-transfected with renilla luciferase control vector into CD271+ and G361 cells using Lipofectamine LTX (Invitrogen). Luciferase activity was measured 48 hr after transfection using the Dual-Glo Luciferase Assay System (Promega). Data are presented as relative luciferase activity (firefly/renilla activity ratio) fold change compared to the construct containing the less active allele and represent at least three independent replicates. Student´s t-test was performed to test differences in gene expression. The Key Resources Table summarizing reagents and resources used in the in-vitro functional experiments is included in the Supplementary file 1 - Table 19 (see Supplementary file 1).

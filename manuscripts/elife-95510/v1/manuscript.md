@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03a1kwz48 Plant Evolutionary Ecology, Institute of Evolution and Ecology, University of Tübingen Tübingen Germany
-2. https://ror.org/00ynnr806 Royal Botanic Gardens, Kew Richmond upon Thames United Kingdom
-3. https://ror.org/02hpadn98 Chemical Ecology, Bielefeld University Bielefeld Germany
+1. Plant Evolutionary Ecology, Institute of Evolution and Ecology, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+2. Royal Botanic Gardens, Kew Richmond upon Thames United Kingdom ([ROR:00ynnr806](https://ror.org/00ynnr806))
+3. Chemical Ecology, Bielefeld University Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding the genomic basis of natural variation in plant pest resistance is an important goal in plant science, but it usually requires large and labor-intensive phenotyping experiments. Here, we explored the possibility that non-target reads from plant DNA sequencing can serve as phenotyping proxies for addressing such questions. We used data from a whole-genome and -epigenome sequencing study of 207 natural lines of field pennycress ( Thlaspi arvense ) that were grown in a common environment and spontaneously colonized by aphids, mildew, and other microbes. We found that the numbers of non-target reads assigned to the pest species differed between populations, had significant SNP-based heritability, and were associated with climate of origin and baseline glucosinolate contents. Specifically, pennycress lines from cold and thermally fluctuating habitats, presumably less favorable to aphids, showed higher aphid DNA load, i.e., decreased aphid resistance. Genome-wide association analyses identified genetic variants at known defense genes but also novel genomic regions associated with variation in aphid and mildew DNA load. Moreover, we found several differentially methylated regions associated with pathogen loads, in particular differential methylation at transposons and hypomethylation in the promoter of a gene involved in stomatal closure, likely induced by pathogens. Our study provides first insights into the defense mechanisms of Thlaspi arvense , a rising crop and model species, and demonstrates that non-target whole-genome sequencing reads, usually discarded, can be leveraged to estimate intensities of plant biotic interactions. With rapidly increasing numbers of large sequencing datasets worldwide, this approach should have broad application in fundamental and applied research.
+Understanding the genomic basis of natural variation in plant pest resistance is an important goal in plant science, but it usually requires large and labor-intensive phenotyping experiments. Here, we explored the possibility that non-target reads from plant DNA sequencing can serve as phenotyping proxies for addressing such questions. We used data from a whole-genome and -epigenome sequencing study of 207 natural lines of field pennycress (Thlaspi arvense) that were grown in a common environment and spontaneously colonized by aphids, mildew, and other microbes. We found that the numbers of non-target reads assigned to the pest species differed between populations, had significant SNP-based heritability, and were associated with climate of origin and baseline glucosinolate contents. Specifically, pennycress lines from cold and thermally fluctuating habitats, presumably less favorable to aphids, showed higher aphid DNA load, i.e., decreased aphid resistance. Genome-wide association analyses identified genetic variants at known defense genes but also novel genomic regions associated with variation in aphid and mildew DNA load. Moreover, we found several differentially methylated regions associated with pathogen loads, in particular differential methylation at transposons and hypomethylation in the promoter of a gene involved in stomatal closure, likely induced by pathogens. Our study provides first insights into the defense mechanisms of Thlaspi arvense, a rising crop and model species, and demonstrates that non-target whole-genome sequencing reads, usually discarded, can be leveraged to estimate intensities of plant biotic interactions. With rapidly increasing numbers of large sequencing datasets worldwide, this approach should have broad application in fundamental and applied research.
 
 ## Introduction
 
@@ -35,9 +35,17 @@ The goals of our study were thus twofold: (i) to contribute to a mechanistic und
 
 ## Results
 
-## Reads classification and species identification
+### Reads classification and species identification
 
 Starting from our previously published sequencing data (Galanti et al., 2022), the first step of our analysis was to separate the WGS reads of each sample into the ~99.5% mapping to the T. arvense reference genome (Nunn et al., 2022) and the ~0.5% that did not, hereafter called ‘exogenous reads’ (Figure 1A). Initially, we used all mapped reads for calling variants in Thlaspi, but after some difficulties with genome-wide association (GWA) analyses (see below) we suspected that some plant reads were false and mapped to the T. arvense genome only because of the high cross-taxa similarity of some genomic regions. We therefore remapped all reads to the genomes of the aphid Acyrthosiphon pisum, its endosymbiont Buchnera aphidicola and the powdery mildew Blumeria graminis, and found that, on average, 7.4% of the reads mapped to both T. arvense and at least one of the pests. We removed these ambiguous reads from our analyses and used only the T. arvense target reads, 92.1% on average, for variant calling (Figure 1A, Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig1-v1.jpg)
+
+**Figure 1.:** (A) Workflow of the analyses, including reads classification (orange nodes) into target, ambiguous, and exogenous reads, and downstream analysis (dark blue nodes) (see Materials and methods). (B) Fractions of exogenous reads assigned to different taxonomic groups by MG-RAST (Meyer et al., 2008; Keegan et al., 2016). (C) Read counts assigned to nine selected groups in our 207 T. arvense samples from different European regions. (D) Aphids and mildew occurring on T. arvense leaves during our experiment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Offspring from plants with or without pathogens in the field did not differ (n.s.) in pathogen loads in the glasshouse, suggesting the pathogens were not carried with the seeds. A single outlier (TA_NL_03_04) with aphids in the field also showed high levels of aphid load in the glasshouse and was excluded from the analysis.
 
 We next attempted a taxonomic classification of the exogenous reads, in multiple steps. First, we used MG-RAST (Meyer et al., 2008; Keegan et al., 2016) to assign reads to taxonomic groups based on public sequencing databases. Out of the 78% of the exogenous reads that passed the MG-RAST quality control (Supplementary file 1) the majority belonged to bacteria and smaller fractions to fungi, plants, and animals (Figure 1B and Supplementary file 2). For subsequent group-level analyses, we then focused on nine taxonomic groups that occurred consistently within our samples (Figure 1C), and that were particularly abundant or relevant: Erysiphales (fungi), Peronosporales (oomycetes), Aphididae, and Culicidae (both insects), and five bacterial families.
 
@@ -45,7 +53,90 @@ Visual inspection (Figure 1D) and other sources of information narrowed down the
 
 Finally, to compare the power of a large database approach (MG-RAST) vs. using specific reference genomes, we also remapped all exogenous reads to the M. persicae and B. aphidicola genome assemblies (Singh et al., 2021) (https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001939165.1) and used the counts from these two mappings as additional phenotypes, besides the nine taxonomic groups selected through MG-RAST (Table 1, Supplementary file 6).
 
-## Exogenous read counts are a heritable Thlaspi phenotype
+**Table 1.**
+ Population differences and SNP-based heritability for different types of exogenous read counts.Population differences were tested with a linear model, SNP-based heritabilities (and their confidence intervals) estimated with the R package heritability (Kruijer and White, 2019).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxonomic group</th>
+      <th>Data type</th>
+      <th>Population differences (R2 and p-value)</th>
+      <th>SNP-based heritability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Myzus persicae</td>
+      <td>Mapping to reference genome</td>
+      <td>0.245 (p=0.029)</td>
+      <td>0.190 (0.055–0.488)</td>
+    </tr>
+    <tr>
+      <td>Buchnera aphidicola</td>
+      <td>Mapping to reference genome</td>
+      <td>0.256 (p=0.016)</td>
+      <td>0.169 (0.042–0.490)</td>
+    </tr>
+    <tr>
+      <td>Buchnera</td>
+      <td>MG-RAST - genus</td>
+      <td>0.223 (p=0.090)</td>
+      <td>0.115 (0.016–0.505)</td>
+    </tr>
+    <tr>
+      <td>Aphididae</td>
+      <td>MG-RAST - family</td>
+      <td>0.226 (p=0.082)</td>
+      <td>0.189 (0.052–0.496)</td>
+    </tr>
+    <tr>
+      <td>Culicidae</td>
+      <td>MG-RAST - family</td>
+      <td>0.166 (p=0.519)</td>
+      <td>0.183 (0.055–0.465)</td>
+    </tr>
+    <tr>
+      <td>Erysiphales</td>
+      <td>MG-RAST - order</td>
+      <td>0.326 (p&lt;0.001)</td>
+      <td>0.468 (0.238–0.712)</td>
+    </tr>
+    <tr>
+      <td>Peronosporales</td>
+      <td>MG-RAST - family</td>
+      <td>0.253 (p=0.020)</td>
+      <td>0.266 (0.096–0.553)</td>
+    </tr>
+    <tr>
+      <td>Staphylococcaceae</td>
+      <td>MG-RAST - family</td>
+      <td>0.390 (p&lt;0.001)</td>
+      <td>0.301 (0.124–0.567)</td>
+    </tr>
+    <tr>
+      <td>Burkholderiaceae</td>
+      <td>MG-RAST - family</td>
+      <td>0.275 (p=0.005)</td>
+      <td>0.256 (0.092–0.538)</td>
+    </tr>
+    <tr>
+      <td>Mycobacteriaceae</td>
+      <td>MG-RAST - family</td>
+      <td>0.362 (p&lt;0.001)</td>
+      <td>0.294 (0.120–0.560)</td>
+    </tr>
+    <tr>
+      <td>Pseudomonadaceae</td>
+      <td>MG-RAST - family</td>
+      <td>0.273 (p=0.006)</td>
+      <td>0.192 (0.052–0.505)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Exogenous read counts are a heritable Thlaspi phenotype
 
 As we had observed that aphid and mildew infections in the glasshouse were not random, but prevalent on plants from some origins than others, i.e., possibly reflecting heritable variation in plant resistance, we next tested for population differences and SNP-based heritability in pest and microbiome read counts. Prior to these analyses, to avoid biases caused by different sequencing depths, we corrected the read counts for the total numbers of deduplicated reads in each library and used the residuals as unbiased estimates of aphid, mildew, and microbe loads (see Materials and methods).
 
@@ -53,7 +144,7 @@ For most of the nine taxonomic groups, there were significant population effects
 
 An alternative explanation for different aphid and mildew loads in the greenhouse could be that variation in enemy densities in the field was transmitted to the greenhouse, through maternal carry-over effects, or even as seed contamination. However, we had recorded aphid and mildew occurrence during seed sampling in the field and found no significant differences in the glasshouse between the offspring of plants that had been attacked in the field vs. those that had not (Figure 1—figure supplement 1).
 
-## Aphid and mildew loads correlate with climate of origin and glucosinolates content of plants
+### Aphid and mildew loads correlate with climate of origin and glucosinolates content of plants
 
 Having established that our method most likely captured variation in plant resistance, we were interested in the ecological drivers of this variation. As climate is known to be a major influence on many biotic interactions as well as plant defenses (Züst et al., 2012; Gao et al., 2019), we correlated the observed read counts with the climates of origin of the plants. We found negative correlations between aphid read counts and several temperature variables, in particular annual minimum temperature (Figure 2A). Aphid read counts were also positively correlated with temperature variability, i.e., the diurnal and annual ranges of temperature (Figure 2A). In other words, plants from warmer and more stable climates had consistently lower levels of aphid infestation in our glasshouse, possibly because these plants had evolved greater resistance under such benign climatic conditions where aphids thrive. We found similar, although weaker patterns, for the number of Erysiphales reads. The other analyzed taxonomic groups showed different and often weaker patterns of correlation with climate, except that the read counts of several bacterial groups were positively correlated with annual maximum temperature and in particular diurnal temperature range.
 
@@ -63,17 +154,45 @@ Having established that our method most likely captured variation in plant resis
 
 Since glucosinolates are major defense metabolites of Brassicaceae, and their variation could thus be an explanation for variance in plant resistance, we also tested for correlations between the baseline amounts of these metabolites and the frequencies of aphid and mildew reads. Glucosinolate levels were measured on the same T. arvense lines in a separate experiment not affected by pests (Supplementary file 7). We found positive correlations of aphid read counts with allyl glucosinolate (sinigrin), an aliphatic glucosinolate which is by far the most abundant in the leaves of T. arvense, and a stronger negative correlation with benzyl glucosinolates (glucotropaeolin) (Figure 2B). Although the baseline levels of benzyl glucosinolates were very low and probably sometimes below the detection level, plant lines where benzyl glucosinolate was detected had significantly lower aphid loads in the glasshouse (Figure 2C). We also detected three indole glucosinolates, but these did not show any significant correlations with aphid loads.
 
-## GWA identifies peaks near defense genes
+### GWA identifies peaks near defense genes
 
 To further investigate the genetic basis of variation in aphid, mildew, and microbe loads, we next employed GWA and tested for associations between exogenous read counts and biallelic genetic variants (SNPs and short INDELs). We corrected for population structure using an isolation by state (IBS) matrix and only tested variants with minor allele frequency (MAF)>0.04 (see Materials and methods). Initially, we called genetic variants using all reads that mapped to the T. arvense genome and found massive peaks in some highly conserved regions of the genome, which had very high mapping coverage. We suspected that this might be because some non-Thlaspi reads were very similar to these highly conserved regions and, by mapping there, generated false variants only in samples containing many non-Thlaspi reads. We therefore identified and removed ambiguous reads prior to variant calling, which eliminated the observed massive GWA peaks, indicating that they had indeed reflected false associations (Figure 3—figure supplement 1).
 
 After excluding the ambiguous reads, we still found significant GWA peaks for Erysiphales but not for other types of exogenous reads (excluding isolated, unreliable variants) (Figure 3A, Figure 3—figure supplements 2 and 3). Nevertheless, when clear peaks were visible, regardless of their significance, they were usually located close to genes involved in plant defense response. An enrichment analysis (Atwell et al., 2010) confirmed that stronger variants were indeed enriched close to these defense genes (Supplementary file 8) for some exogenous read counts (Figure 3B, Figure 3—figure supplements 2 and 3). For M. persicae load there was a peak in the proximity of Tarvense_01930, encoding a predicted pathogenesis-related peptide. The top variant in this peak had a slight but clear allelic effect on M. persicae load (Figure 3C). For Erysiphales load we detected a more persistent enrichment, with a highly significant peak in Scaffold 1, located in a region with several defense genes, including MAJOR LATEX PROTEINS (MLP) and two genes similar to Arabidopsis thaliana SALICYLATE METHYLTRANSFERASE 1 (BSMT1) (Figure 3D and E). This region is wide due to ancient TE colonization, but the top variants are clearly neighboring candidate genes involved in defense (Figure 3E). Other significant peaks for Erysiphales load were close to other genes that possibly contribute to resistance such as PBL7, involved in signaling and stomatal closure or SRF3, reinforcing cell walls by callose deposition.
 
-## Aphid and mildew loads correlate with differential methylation at genes and transposons
+![Figure 3.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig3-v1.jpg)
+
+**Figure 3.:** We show only the results for M. persicae and MG-RAST Erysiphales read counts; for full results see Figure 3—figure supplements 2 and 3. (A) Manhattan plots, annotated with genes potentially affecting aphid/mildew colonization. The genome-wide significance (horizontal red line) was calculated based on unlinked variants (Sobota et al., 2015), the blue line corresponds to -log(p)=5. (B) Corresponding to the Manhattan plots on the left, enrichment of a priori candidates and expected false discovery rates (as in Atwell et al., 2010) for increasing significance thresholds. (C) Allelic effects of the red-marked variants in the corresponding Manhattan plots, with genotypes on the x-axes and the read count residuals on the y-axes. (D) The candidate genes marked in panel A, their putative functions and distances to the top variant of the neighboring peak. Candidates in dark blue are the a priori candidates included in the enrichment analyses and involved in defense response (GO:0006952). GS: glucosinolates. (E) Zoom-in for the Manhattan plot of Erysiphales load, around the first peak in Scaffold 1, with gene and transposable element (TE) models below, and a priori candidates in blue.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Manhattan plot of GWA with aphid load, without removing ambiguous reads prior to variant calling. The genome-wide significance (horizontal red line) was calculated based on unlinked variants (Sobota et al., 2015), the suggestive line (blue) corresponds to -log(p)=5. (B) Zoomed-in peak on Scaffold 6 with coverage before and after removal of ambiguous reads.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Manhattan plots, enrichment of a priori candidate variants, and QQplots for all exogenous reads. The genome-wide significance (horizontal red lines) was calculated based on unlinked variants (Sobota et al., 2015), the blue line corresponds to -log(p)=5. The top variants are labeled with the neighboring genes potentially affecting exogenous reads load.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Manhattan plots, enrichment of a priori candidate variants, and QQplots for all exogenous reads. The genome-wide significance (horizontal red lines) was calculated based on unlinked variants (Sobota et al., 2015), the blue line corresponds to -log(p)=5. The top variants are labeled with the neighboring genes potentially affecting exogenous reads load.
+
+### Aphid and mildew loads correlate with differential methylation at genes and transposons
 
 Variation in phenotypes, such as our indirect estimates of pest resistance, may not only be associated with DNA sequence but also with epigenetic changes like DNA methylation. This phenotype-associated epigenetic variation can include both heritable and plastic components. The whole-genome bisulfite sequencing (WGBS) data from our previous study (Galanti et al., 2022) allowed us to also explore these questions and to test for associations between DNA methylation variation and pest attack. For simplicity, we limited this analysis to M. persicae and Erysiphales loads.
 
 Our analysis had two steps: First we called differentially methylated regions (DMRs) between the 20 samples with the most and 20 samples with the least M. persicae or Erysiphales loads, and then we conducted epigenome-wide association (EWA) analyses on individual positions located within these DMRs, using the complete dataset (188 lines - see Materials and methods). This approach allowed us to target genomic regions of interest, while strongly reducing the multiple-testing problem of millions of cytosines in the whole genome and correcting for population structure. Using a relaxed false discovery rate (FDR) of 20%, we identified 162 DMRs for M. persicae load and 548 DMRs for Erysiphales load (Figure 4—figure supplement 1, Supplementary file 9 and 10). The majority of these were in the CG context, especially for M. persicae-related DMRs (Figure 4A, Figure 4—figure supplement 1). As observed previously (Galanti et al., 2022), DMRs in CHH were generally shorter than in the other sequence contexts (Figure 4—figure supplement 1). Since the genome of T. arvense is rich in TEs and intergenic regions, the majority of DMRs were located in those features (Figure 4—figure supplement 1). However, the DMR density was higher in proximity of genes and particularly in coding sequences (Figure 4A), and even DMRs assigned as intergenic (Figure 4A) were often located close to genes or promoters. In accordance with previous studies (Geng et al., 2019; Annacondia et al., 2021), most DMRs were hypomethylated in the infested samples (higher pathogen load), indicating that genes needed for defense might be activated through demethylation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig4-v1.jpg)
+
+**Figure 4.:** (A) Differentially methylated region (DMR) densities in different genomic features when comparing the 20 samples with the most vs. the least M. persicae (top) or Erysiphales (bottom) load. CDS: coding sequences. (B) Manhattan plots from epigenome-wide association (EWA) analyses based on individual cytosines within DMRs, with sequence contexts in different colors and annotation of genes close to low p-value cytosines. The genome-wide Bonferroni significance thresholds (dashed red lines) were calculated based on the number of DMRs. (C) Candidate genes and transposable elements (TEs) marked in panel B, their putative functions, genomic locations of associated DMRs, and whether infested samples were hyper- or hypomethylated. (D) Zoomed-in Manhattan plot for Erysiphales load around the peak in Scaffold 4, with gene and TE models given below. The CG methylation in the 20 most and least infested samples was calculated over 50 bp bins (see Figure 4—figure supplement 2 for methylation in other contexts).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) DMRs length distributions in different sequence contexts. (B) Numbers of hypermethylated and hypomethylated DMRs in each genomic feature.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95510/elife-95510-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Enrichment of associations in different genomic features for increasing -log(p) thresholds, compared to expectations from all cytosines. (B) p-Value distributions of EWA. (C) Complement to Figure 4D showing CHG and CHH methylation upstream and above the gene MPKKK20.
 
 For a more detailed investigation, we turned to EWA, leveraging the power of the entire Thlaspi collection. We tested for associations between M. persicae or Erysiphales loads and the methylation at individual cytosines located within the DMRs. As in GWA, we corrected for population structure using an IBS matrix. For both types of pest loads, we found associations in the proximity of genes and especially within TEs, but no genomic feature was particularly enriched for low p-value associations (Figure 4—figure supplement 2). M. persicae load was associated with methylation at several genomic locations, especially TEs (Figure 4B), but these associations had strongly inflated p-values (Figure 4—figure supplement 2). For Erysiphales load the p-value distribution was more well-behaved, and we found a clear association with hypomethylation of Copia family 202 TEs upstream of MAPKK KINASE 20 (MAPKKK20), a gene involved in abscisic acid (ABA) stress response and stomatal closure (Figure 4B, C, and D). A coverage analysis confirmed that none of the T. arvense lines carries insertions or deletions of the TEs upstream of MAPKKK20.
 
@@ -95,19 +214,19 @@ In summary, our study offers first insights into the defense mechanisms of T. ar
 
 ## Materials and methods
 
-## Plant growth and sequencing
+### Plant growth and sequencing
 
 The WGS data used in this study were already published in Galanti et al., 2022. Please refer to this publication for details on data generation and methods. Briefly, we collected 207 T. arvense accessions from 36 European populations in July 2018, and we grew their offspring in a completely randomized design, in a glasshouse at the University of Tübingen (48°32'21.3"N, 9°02'04.2"E) between August and October 2019. The glasshouse was located in biodiverse surroundings, and insects and pests could enter when the windows opened for temperature regulation. A few weeks after germination, we noticed aphid and mildew infestations. After 46 days we sampled the third or fourth true leaf of each plant and snap-froze it in liquid nitrogen. We extracted DNA using the DNeasy Plant Mini Kit (QIAGEN, Hilden, DE), sonicated (Covaris) 300 ng of genomic DNA and used the NEBNext Ultra II DNA Library Prep Kit for Illumina (New England Biolabs) to prepare the libraries. Half way through the protocol we split the DNA into 1/3 for genomic libraries and 2/3 for bisulfite libraries. For the bisulfite conversion we used the EZ-96 DNA Methylation-Gold MagPrep (ZYMO) kit. We sequenced paired-end for 150 cycles using Illumina NovaSeq 6000 (Illumina, San Diego, CA, USA) for genomic libraries and HiSeq X Ten (Illumina, San Diego, CA, USA) for bisulfite libraries.
 
-## Reads mapping and classification
+### Reads mapping and classification
 
 Upon demultiplexing the raw reads, we used cutadapt (Martin, 2011) for quality (minimum quality of 20) and adaptor trimming, excluding reads shorter than 35 bp. We used FastQC and MultiQC (Andrews, 2010; Ewels et al., 2016) to estimate the duplication rate, and calculated the total deduplicated reads, which we later used for correcting the number of exogenous reads. We then classified the reads based on their mapping behavior. First we aligned reads to the T. arvense reference genome (Nunn et al., 2022) with BWA-MEM v0.7.17 (Li and Durbin, 2009), excluding multimapping reads (-c 1) and marking duplicates with MarkDuplicatesSpark (Van der Auwera et al., 2013; Poplin et al., 2018). We then mapped all samples again (Li and Durbin, 2009) to the three putative exogenous genomes of pea aphid (Acrophyson pisum), the aphid symbiont B. aphidicola and powdery mildew (B. graminis), using available resources (https://www.ncbi.nlm.nih.gov/assembly/GCF_005508785.2, https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001939165.1) (Frantzeskakis et al., 2018). After this, we used a custom script to collect all read IDs within a sample mapping to any of the three exogenous genomes, and removed any of these reads from the T. arvense alignment bam files. We thus removed all ambiguous reads before proceeding with variant calling. To compare coverage of specific regions with and without ambiguous reads, we used samtools bedcov (Danecek et al., 2021). The numbers of reads classified by their mapping behavior are reported in Supplementary file 1.
 
-## Variant calling
+### Variant calling
 
 For variant calling we used GATK4 v4.1.8.1 (Van der Auwera et al., 2013; Poplin et al., 2018), following the best practices for germline short variant discovery (https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-) with few adjustments for large datasets (Galanti et al., 2022). Briefly, starting from the bam files generated after the removal of ambiguous reads, we (i) ran HaplotypeCaller, (ii) combined the resulting GVCF files with GenomicsDBImport and GenotypeGVCFs, and (iii) filtered out low-quality variants with VariantFiltration (see Galanti et al., 2022 for more details). Finally, we used vcftools v0.1.16 (Danecek et al., 2011) to retain biallelic variants with MAF>0.01 and a maximum of 10% missing genotype calls. We imputed these missing calls with BEAGLE 5.1 (Browning et al., 2018) to obtain a complete multisample vcf file.
 
-## Identification and classification of exogenous reads
+### Identification and classification of exogenous reads
 
 To identify exogenous reads, we extracted all unmapped reads from the bam files created aligning WGS reads to the T. arvense genome (Nunn et al., 2022). We selected reads with both mates unmapped (SAM flag 12) and excluded supplementary alignments (SAM flag 256 after running MarkDuplicatesSpark) with samtools (Danecek et al., 2021). We then recovered these reads from the trimmed fastq files with seqtk subset (https://github.com/lh3/seqtk; Li, 2024) to obtain fastq files of unmapped reads only. We used these as input for MG-RAST (Meyer et al., 2008; Keegan et al., 2016), a web-based tool for phylogenetic analysis of metagenomes.
 
@@ -117,7 +236,7 @@ In addition to the nine read groups selected from MG-RAST results, we also perfo
 
 Finally, we log transformed all read counts to approximate normality, and corrected for the total number of deduplicated reads by extracting residuals from the following linear model, log(read_count +1)~log(deduplicated_reads), which allowed us to quantify non-Thlaspi loads, correcting for the sequencing depth of each sample.
 
-## Exogenous reads heritability and species identification
+### Exogenous reads heritability and species identification
 
 To exclude the possibility that aphid and mildew infestation patterns were carried over from the field, through seed contamination or maternal effects, we used aphid and mildew presence/absence data collected in the field. We found no difference in aphid or mildew loads between samples with and without aphids or mildew on the original parental plant in the field (Figure 1—figure supplement 1). Nevertheless, to exclude a possible bias, we excluded one outlier sample with particularly high aphid load and aphids observed in the field (Figure 1—figure supplement 1) from the analyses.
 
@@ -125,25 +244,25 @@ To test for variation between populations we used a general linear model with po
 
 Even though MG-RAST classifies reads based on all taxonomic ranks, the accuracy of species identification of course strongly depends on the sequences available in the query databases. MG-RAST assigned our aphid reads to A. pisum, but this did not fit with our visual observations and with the poor performance of this species on Brassicaceae (Prince et al., 2014). We therefore selected three plausible aphid species and test which of these had mostly likely attacked our experiment. In addition to A. pisum, we tested two other aphid species commonly attacking Brassicaceae: B. brassicae and M. persicae. While not all three species have reference genomes available, all mitochondrial genomes are available on NCBI (NCBI, 1988) under accession numbers MN232006, NC_011594, and NC_056270. We downloaded these sequences, aligned them to each other (Sievers et al., 2011), removed INDELs to retain only SNPs, and combined them into a single pseudo-reference fasta file (Supplementary file 3). We then mapped the exogenous reads from 40 randomly selected samples to this pseudo-reference, allowing for unique mappings only and counted the reads mapping to either of the three aphid species. We used the same approach for mildew except that we included only two possible species: B. graminis, as suggested by MG-RAST, and E. cruciferarum which is known to attack Brassicaceae but was not in the MG-RAST query database and seemed plausible from visual inspection (Figure 2B). For the mildew pseudo-reference (Supplementary file 4) we used the internal transcribed spacer, which is publicly available for both species on NCBI (NCBI, 1988) under accession numbers MT644878 and AF031283.
 
-## Quantification of glucosinolates
+### Quantification of glucosinolates
 
 Using seed material collected from the sequenced plants, we conducted a follow-up experiment to estimate the glucosinolate contents of all 207 lines in the absence of pathogens. Briefly, we sowed the seeds in Petri dishes, stratified them at 4°C in the dark for 2 weeks and transplanted the germinated seedlings to individual 9×9 cm2 pots. We grew the plants in a growth chamber with a 14/10 hr light/dark cycle at 21/17°C and a relative humidity of ~45%. Two weeks after germination the plants were vernalized at 4°C for 2 more weeks in order to minimize phenological and developmental differences between winter and summer annuals. Ten days after vernalization, we collected the third or fourth true leaf and snap-froze it in liquid nitrogen. After freeze-drying, we weighed all samples and extracted the material threefold in 80% methanol, adding p-hydroxybenzl glucosinolate (Phytoplan, Heidelberg, Germany) as internal standard. After centrifugation, we applied the supernatants onto ion-exchange columns with diethylaminoethyl Sephadex A25 (Sigma-Aldrich, St. Louis, MO, USA) in 0.5 M acetic acid buffer, pH 5. We added purified sulfatase, converting glucosinolates to desulfo glucosinolates. After 1 day, we eluted desulfo glucosinolates in water and analyzed them on a HPLC coupled to a DAD detector (HPLC-1200 Series, Agilent Technologies, Inc, Santa Clara, CA, USA) equipped with a Supelcosil LC 18 column (3 μm, 150×3 mm, Supelco, Bellefonte, PA, USA). We analyzed the samples with a gradient from water to methanol starting at 5% methanol for 6 min and then increased from 5% to 95% within 13 min with a hold at 95% for 2 min, followed by a column equilibration cycle. We identified different glucosinolates based on their retention times and UV spectra in comparison to respective standards and an in-house database. We integrated peaks at 229 nm and calculated respective glucosinolate concentrations in relation to the internal standard and sample dry mass, using response factors as reported by Agerbirk et al., 2015.
 
-## Drivers of exogenous reads variation
+### Drivers of exogenous reads variation
 
 To test for associations between glucosinolate variation, as well as climate of origin, and the observed pest loads, we extracted average bioclimatic variables for the 25 years predating our experiment for our 36 study populations from the Copernicus website (ECMWF, 2020), as described in Galanti et al., 2022. We then used the R package lme4qtl (Ziyatdinov et al., 2018) to run mixed models that included either bioclimatic variables or glucosinolate contents as explanatory variables, and the exogenous read counts as dependent variables, while correcting for population structure with the same IBS matrix as in GWA and EWA analyses (see below).
 
-## GWA analysis
+### GWA analysis
 
 We conducted GWA with mixed models that corrected for population structure with a genetic IBS matrix as a random factor, as implemented in GEMMA (Zhou and Stephens, 2012). To obtain the IBS matrix we used PLINK v1.90b6.12 (Purcell et al., 2007). Starting from the imputed multisample vcf file obtained from variant calling, we pruned variants with LD>0.8 in 50 variants windows, sliding by five. To produce the genetic variants used for GWAS, we also started from the imputed multisample vcf file from variant calling and filtered out variants with MAF<0.04. As phenotypes we used the number of exogenous reads corrected for the total number of deduplicated reads, as described above.
 
 To validate our results and test for overlap with existing gene functional annotations, we performed an enrichment analysis of variants neighboring a priori candidate genes as described in Atwell et al., 2010. Briefly, we attributed a priori candidate status to all variants located within 20 kb from orthologs (Emms and Kelly, 2019) of A. thaliana genes annotated with the GO term ‘defense response’ (GO:0006952), including nine genes similar to AtBSMT1 (Supplementary file 8). We then calculated enrichment for incremental -log(p) thresholds as the ratio between observed frequency (significant a priori candidate/significant variants) and background frequency (total a priori candidate/total variants), and an upper bound for the FDR (Galanti et al., 2022; Atwell et al., 2010). We further assessed the significance of the enrichment through a previously established genome rotation scheme (Nordborg et al., 2005). Briefly, we calculated a null distribution of enrichments by randomly rotating the p-values and a priori candidate status of the genetic variants within each chromosome for 1 M permutations. We then assessed significance by comparing the observed enrichment at the Bonferroni threshold to the null distribution. The code for these analyses is available on https://github.com/Dario-Galanti/multipheno_GWAS/tree/main/gemmaGWAS (copy archived at Galanti, 2024d).
 
-## Methylation and DMR calling
+### Methylation and DMR calling
 
 For the methylome analyses we used the EpiDiverse toolkit (Nunn et al., 2021), specifically designed for large WGBS datasets. We used the WGBS pipeline (https://github.com/EpiDiverse/wgbs; Nunn, 2022) for read mapping and methylation calling, retained only uniquely mapping reads longer than 30 bp, and obtained individual-sample bedGraph files for each sequence context. We then called DMRs using the DMR pipeline (Nunn et al., 2021), with a minimum coverage of 4×. We compared the 20 samples with the most and the least M. persicae and Eriysiphales loads, resulting in two sets of DMRs for each sequence context. Since this was only the first step of our methylation analysis, meant to identify potential regions of interest, we retained all DMRs with an FDR<20%. To understand the genomic preferences of DMRs, we intersected them with genomic features and calculated their densities in each by dividing their number by the total Mb covered by each genomic feature in the genome.
 
-## EWA analysis
+### EWA analysis
 
 Following the DMR calling, we investigated methylation-phenotype relationships in more detail, using EWA. We ran EWA similarly to GWA, enabling the ‘-notsnp’ option available in GEMMA (Zhou and Stephens, 2012), and correcting for population structure with the same IBS matrix. To exclude possible biases, we excluded all samples with a bisulfite non-conversion rate >1 (Galanti et al., 2022), which left 188 samples for analysis. To generate the methylation input files we first used custom scripts (https://github.com/Dario-Galanti/WGBS_downstream/tree/main/WGBS_simpleworkflow, copy archived at Galanti, 2024c; Galanti et al., 2022) to unite individual-sample bedGraph files into unionbed files and retain positions with coverage>3 in at least 95% of the samples and a methylation difference of at least 5% in at least two samples. We then intersected the unionbed files with the DMRs of the corresponding sequence context using bedtools (Quinlan and Hall, 2010) and converted unionbed to BIMBAM format as input for GEMMA.
 

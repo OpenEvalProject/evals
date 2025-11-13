@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02tyrky19 Global Brain Health Institute and Institute of Neuroscience, Trinity College Dublin Dublin Ireland
-2. https://ror.org/0405mnx93 School of Medicine, Texas Tech School of Medicine Lubbock United States
-3. https://ror.org/04a9tmd77 Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States
+1. Global Brain Health Institute and Institute of Neuroscience, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+2. School of Medicine, Texas Tech School of Medicine Lubbock United States ([ROR:0405mnx93](https://ror.org/0405mnx93))
+3. Department of Psychiatry, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ The present study tests the above hypothesis questioning if NITESGON induces a l
 
 ## Results
 
-## Experiment 1. NITESGON during or immediately after training
+### Experiment 1. NITESGON during or immediately after training
 
 The idea behind behavioral tagging suggests that weak memories that are regularly unstable and likely to be forgotten will solidify following a novel experience (Moncada et al., 2015; Viola et al., 2014; Dunsmoor et al., 2022). That is, consolidation is facilitated by applying a strong stimulus alongside a weak stimulus within a critical time window. Recent research revealed a direct link between the LC and behavioral tagging, attributable to the pivotal role the LC plays during the presentation of a salient or arousing event (i.e., strong stimulus) (Sara, 2009; Poe et al., 2020), as well as being at the helm of regulating the synthesis of new proteins required for memory consolidation in the hippocampus (Moncada, 2017). Furthermore, studies have shown modulation of memory consolidation with increases in stress and arousal that are mediated via the LC pathway (McGaugh, 2004; Cahill and McGaugh, 1998). Moreover, animal research has indicated that direct electrical stimulation of the LC modulates hippocampal synaptic transmission fundamental for memory consolidation (Lemon and Manahan-Vaughan, 2012).
 
@@ -42,7 +42,15 @@ To further explore the effect of NITESGON, resting-state EEG (rsEEG) and salivar
 
 On visit 1, no difference was observed regarding the number of word associations learned between the three condition groups (i.e., sham NITESGON during learning and after learning, active NITESGON during learning and sham NITESGON after learning, or sham NITESGON during learning and active NITESGON after learning) (F = 0.24, p = 0.79; see Figure 1a), thus indicating that NITESGON had no effect on learning the word-association task. Results revealed a significant difference in memory recall 7 days after NITESGON was applied either during learning (46.09 ± 15.06%, p = 0.012) or after learning the task (47.65 ± 13.27%, p = 0.005) relative to the sham condition employed during both learning and immediately after learning the task (33.38 ± 12.57%) (F = 5.24, p = 0.009; see Figure 1b). However, no difference was attained on recall 7 days later between the conditions of NITESGON applied during learning the task or immediately after learning the task (p = 0.75). A significant increase in sAA (F = 7.69, p = 0.010; see Figure 1c) was revealed during learning (before: 88.79 ± 50.48 vs. after: 149.82.6 ± 82.67; p < 0.001) and after learning in comparison to the sham group (before: 100.28 ± 41.95 vs. after: 114.30 ± 41.02; p = 0.14). Memory recall 7 days later correlated with the difference in sAA levels on visit 1 (pre vs. post) (r = 0.59, p < 0.001; Figure 1d; rs = 0.62, p < 0.001; Figure 1—figure supplement 1). Looking at the individual correlations for each group separately, we found a significant correlation for the active groups (i.e., NITESGON during learning r = 0.47, p = 0.09 and after learning [r = 0.78, p < 0.001]) between memory recall 7 days later and sAA levels on visit 1 (pre vs. post). No significant correlation was obtained for the sham group (r = 0.27, p = 0.31). Memory recollection 7 days after stimulation was associated with increased gamma power in the medial temporal cortex as well as the precuneus and dorsal lateral prefrontal cortex immediately after stimulation (r = 0.42, p = 0.011; see Figure 1e).
 
-## Experiment 2. NITESGON during second task – retroactive strengthening of memories
+![Figure 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig1-v2.jpg)
+
+**Figure 1.:** (a) No difference was observed in the cumulative learning rate between active and sham NITESGON during or immediately after the study phase of the word-association memory task. (b) NITESGON during or immediately after the word-association memory task can improve memory recall 7 days after the study phase for the active relative to the sham group. (c) After NITESGON salivary α-amylase (sAA) levels increase for both active groups, but not for sham NITESGON. (d) Memory recall 7 days later correlates with the difference in sAA levels during the first visit (pre vs. post study phase). (e) Improved memory recall 7 days after stimulation is associated with increased activity in the medial temporal lobe as well as anterior and posterior cingulate cortex immediately after NITESGON for the gamma frequency band. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01; *** p < 0.001), ΔsAA levels are the subtraction of sAA levels before NITESGON from sAA levels immediately after NITESGON.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Spearman correlation for Experiment 1 the rank of the difference of sAA levels and the rank for memory recall 7 days after learning the task. Asterisks represent significant differences (*p < 0.05; **p < 0.01; ***p < 0.001), ΔsAA levels are the subtraction of sAA levels before non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) from sAA levels immediately after NITESGON.
+
+### Experiment 2. NITESGON during second task – retroactive strengthening of memories
 
 Experiment 1 suggests that NITESGON generates an effect during the consolidation phase as opposed to the learning-encoding phase due to no effect of NITESGON being exhibited during learning between the different groups, but both stimulating during and after learning the task induced a long-term memory effect. Bearing in mind the definition of behavioral tagging that indicates that the pairing of a strong stimulus and a weak stimulus within a critical time window can induce memory stabilization of the weak stimulus, NITESGON can be seen as the mechanism that induces a similar action as a strong stimulus, and through the mechanism of behavioral tagging strengthen the weak stimulus (i.e., the word-association task).
 
@@ -52,13 +60,29 @@ To test the hypothesis, Experiment 2 had participants take part in a word-associ
 
 On visit 1, no difference in learning (F = 0.32, p = 0.73; see Figure 2a) was observed for both the first (F = 0.09, p = 0.98) and second (F = 0.64, p = 0.43) tasks between the active and sham NITESGON groups. On visit 2, 7 days after initial learning, a significant effect was obtained for recall (F = 0.6.82, p = 0.007; see Figure 2b) for both the first (F = 6.28, p = 0.022) and second tasks (F = 7.51, p = 0.013), revealing an increase in word recall (46.26 ± 3.76% vs. 37.88 ± 9.88%), as well as object-location recall (51.82 ± 7.75% vs. 44.39 ± 3.68%) for the active group in comparison to the sham group. Furthermore, a significant increase in sAA (F = 7.44, p = 0.014; see Figure 2c) was revealed in the active group (before: 74.01 ± 26.58 vs. after: 107.01 ± 25.98; p < 0.001) in comparison to the sham group (before: 60.61 ± 37.93 vs. after: 69.61 ± 35.07; p = 0.18). This increase in sAA correlated with how many items they recalled 7 days after the learning phase for both the word-association task (r = 0.52, p = 0.019; see Figure 2d; rs = 0.62, p = 0.002; Figure 2—figure supplement 1) and the object-location task (r = 0.57, p = 0.008; see Figure 2e; rs = 0.49, p = 0.03 Figure 2—figure supplement 1). Looking at each group separately, we found no significant correlation for the active groups (first task: r = 0.43, p = 0.21; second task: r = 0.42, p = 0.22) between memory recall 7 days later and sAA levels on visit 1 (pre vs. post). For the sham group a significant effect was obtained between memory recall 7 days later and sAA levels on visit 1 (pre vs. post) for the first task (r = 0.67, p = 0.036). No significant correlation was obtained for the sham group for the second task (r = 0.20, p = 0.58). Memory recollection 7 days after stimulation was associated with increased gamma power in the medial temporal cortex immediately after stimulation for both the first (r = 0.41, p = 0.009; see Figure 2f) and second memory tasks (r = 0.35, p = 0.018; see Figure 2g).
 
-## Experiment 3. NITESGON during first task – proactive strengthening of memories
+![Figure 2.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig2-v2.jpg)
+
+**Figure 2.:** (a) No difference was observed in the cumulative learning rate between active and sham NITESGON after the study phase for the first task (i.e., word-association task) or second task (i.e., object-location task). (b) NITESGON can improve memory recall 7 days after the study phase for the active relative to the sham group for both the first and second tasks. (c) After NITESGON salivary α-amylase (sAA) levels increase for active group, but not for sham NITESGON. (d, e) Memory recall 7 days later correlates with the difference in sAA levels during the first visit (pre vs. post study phase) for the first and second tasks. (f, g) Improved memory recall 7 days after stimulation is associated with increased activity in the medial temporal lobe immediately after NITESGON for the gamma frequency band. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01). ΔsAA levels are the subtraction of sAA levels before NITESGON from sAA levels immediately after NITESGON.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Spearman correlation for Experiment 2 the rank of the difference of sAA levels and the rank for memory recall 7 days after learning the task. Asterisks represent significant differences (*p < 0.05; **p < 0.01). ΔsAA levels are the subtraction of sAA levels before non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) from sAA levels immediately after NITESGON.
+
+### Experiment 3. NITESGON during first task – proactive strengthening of memories
 
 Experiment 2 revealed a retroactive memory effect 7 days after initial learning for the active NITESGON group compared to the sham NITESGON group, fitting well with the behavioral tagging hypothesis. In addition to a retroactive memory effect, previous research on behavioral tagging also revealed that items paired with an electric shock had a proactive memory effect, whereby items learned after the fear conditioning task were remembered (Dunsmoor et al., 2015). Here, we conducted the exact same experiment as in Experiment 2 but applied NITESGON during the first task and not during the second task to test the hypothesis that NITESGON can induce a proactive memory effect on the second task although we stimulate during the first task. This would further support the hypothesis that NITESGON induces a long-term memory effect via the mechanism of behavioral tagging through activation of the LC pathway.
 
 On visit 1, no significant difference (F = 2.26, p = 0.13; see Figure 3a) was found between the active and sham groups in regard to how many words or objects participants learned for both the first task (i.e., word-association task) (F = 1.60, p = 0.22) and the second task (i.e., object-location task) (F = 3.30, p = 0.08). During the second visit, 7 days after learning the tasks, participants that received active NITESGON (F = 4.66, p = 0.021; see Figure 3b) recalled more words for the first task (i.e., word-association task) (F = 6.32, p = 0.020) and the second task (i.e., object-location task) (F = 4.87, p = 0.038) than those who received sham NITESGON, indicating that the active NITESGON group (44.27 ± 10.97) showed significant improvement in comparison to the sham NITESGON group (30.46 ± 15.13) for the word-association task. For the object-location task, the active NITESGON group (53.33 ± 11.29) demonstrated a significant increase in the number of correctly recalled objects-locations than the sham NITESGON group (44.17 ± 7.75). Our data revealed that there was a significant interaction effect for sAA (F = 4.66, p = 0.021; see Figure 3c), denoted by the active group’s increase in sAA (123.10 ± 43.63) in comparison to the sham group (91.38 ± 44.67) (F = 4.53, p = 0.039) immediately after learning. No significant difference (F = 0.012, p = 0.91) was obtained in sAA for the active group (78.72 ± 47.67) in comparison to the sham group (76.77 ± 39.87) before learning the association tasks. This increase in sAA seen in the active group correlated with how many items they recalled 7 days after the learning phase for both the word-association task (r = 0.42, p = 0.039; see Figure 3d; rs = 0.34, p = 0.10 Figure 3—figure supplement 1; a correlation analysis for each group separately) and the object-location task (r = 0.51, p = 0.012; see Figure 3e; rs = 0.54, p = 0.007 Figure 3—figure supplement 1). Looking at each group separately, we found no significant correlation for both the active (first task: r = 0.42, p = 0.20; second task: r = 0.38, p = 0.25) and sham groups (first task: r = 0.13, p = 0.21; second task: r = 0.37, p = 0.22) between memory recall 7 days later and sAA levels on visit 1 (pre vs. post). Memory recollection 7 days after stimulation was associated with increased gamma power in the medial temporal cortex immediately after stimulation for both the first (r = 0.32, p = 0.037; see Figure 3f) and second memory tasks (r = 0.52, p = 0.012; see Figure 3g).
 
-## Experiment 4. NITESGON during first task – reduced interference effect
+![Figure 3.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig3-v2.jpg)
+
+**Figure 3.:** (a) No difference was observed in the cumulative learning rate between active and sham NITESGON after the study phase for the first task (i.e., word-association task) or second task (i.e., object-location task). (b) NITESGON can improve memory recall 7 days after the study phase for the active relative to the sham group for both the first and second tasks. (c) After NITESGON salivary α-amylase (sAA) levels increase for active group, but not for sham NITESGON. (d, e) Memory recall 7 days later correlates with the difference in sAA levels during the first visit (pre vs. post study phase) for the first and second tasks. (f, g) Improved memory recall 7 days after stimulation is associated with increased activity in the medial temporal lobe immediately after NITESGON for the gamma frequency band. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01), ΔsAA levels are the subtraction of sAA levels before NITESGON from sAA levels immediately after NITESGON.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Spearman correlation for Experiment 3 the rank of the difference of sAA levels and the rank for memory recall 7 days after learning the task. Asterisks represent significant differences († p < 0.10; **p < 0.01), ΔsAA levels are the subtraction of sAA levels before non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) from sAA levels immediately after NITESGON.
+
+### Experiment 4. NITESGON during first task – reduced interference effect
 
 Experiments 2 and 3 revealed both retroactive and proactive memory effects 7 days after initial learning of the two tasks. To further explore if NITESGON is linked to behavioral tagging and evaluate if interference impacts NITESGON as the strong stimulus, Experiment 4 removed the object-location task used in Experiments 2 and 3 and replaced it with a Japanese–English verbal associative learning task similar to the Swahili–English verbal associative task. Considering that memory formation and persistence are susceptible to interference occurring pre- and post-encoding (Crossley et al., 2019; McGaugh, 1966; Zeithamova and Preston, 2017) and are heavily influenced by commonality among the learned and intervening stimuli (Varma et al., 2017) it is believed that conducting two consecutive, like-minded word-association (i.e., Swahili–English and Japanese–English) tasks will result in one’s consolidation process interfering with that of the other (Robertson, 2012). Furthermore, research on the synaptic tag-and-capture hypothesis suggests that memory interference is the result of synaptic competition, a proposed ‘fight for proteins’ that arises between tagged synapses among limited proteins that leads to one memory converting to long-term memory at the expense of the other (Okuda et al., 2021). Considering how our previous experiments suggest the effect obtained by NITESGON improves the consolidation of information via behavioral tagging, it is possible that NITESGON on the first task might help reduce the overall interference effect on the second task.
 
@@ -66,13 +90,21 @@ To test the hypothesis, participants participated in two separate word-associati
 
 On visit 1, no significant difference (F = 0.84, p = 0.37; see Figure 4a) was detected for learning during the first (F = 0.27, p = 0.61) and second tasks (F = 0.01, p = 0.94) between the active and sham NITESGON groups. Seven days later, during the recall phase, we found a significant interaction effect for recall (F = 4.97, p = 0.034; see Figure 4b). For both the first (F = 3.67, p = 0.048) and the second tasks (F = 7.89, p = 0.009), a significant increase in number of words correctly recalled was observed in the active (first task: 35.51 ± 8.68; second task: 34.76 ± 11.74) compared to the sham group (first task: 29.80 ± 9.72; second task: 24.64 ± 8.10).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig4-v2.jpg)
+
+**Figure 4.:** (a) No difference was observed in the cumulative learning rate between active and sham NITESGON after the study phase for the first task (i.e., word-association task) or second task (i.e., word-association task). (b) NITESGON can improve memory recall 7 days after the study phase revealing improve in memory for the active relative to the sham group for both the first and second tasks. (c) The interference effect is less present for the active relative to the sham group. (d) After NITESGON salivary α-amylase (sAA) levels increase for the active group, but not for sham NITESGON. (e, f) Memory recall 7 days later correlates with the difference in sAA levels during the first visit (pre vs. post study phase) for the first and second tasks. (g, h) Improved memory recall 7 days after stimulation is associated with increased activity in the medial temporal lobe immediately after NITESGON for the gamma frequency band. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01), ΔsAA levels are the subtraction of salivary α-amylase levels before NITESGON from salivary α-amylase levels immediately after NITESGON.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Spearman correlation for Experiment 4 the rank of the difference of sAA levels and the rank for memory recall 7 days after learning the task. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01). ΔsAA levels are the subtraction of sAA levels before non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) from sAA levels immediately after NITESGON.
+
 Upon assessment for a potential interference effect, the active group displayed a significant difference in how many words participants were able to recall between the first and the second tasks (18.31 ± 7.03%) (F = 4.68, p = 0.039) in comparison to the sham (13.00 ± 6.65%), indicating that the interference effect plays less of a role in the active group.
 
 Our data revealed that there was a significant interaction effect for sAA (F = 4.60, p = 0.041; see Figure 4d). An increase in sAA was observed for the active group (123.10 ± 43.63) in comparison to the sham group (91.38 ± 44.67) (F = 4.53, p = 0.039) immediately after the learning. However, no significant difference (F = 0.012, p = 0.91) was obtained in sAA for the active group (78.72 ± 47.67) in comparison to the sham group (76.77 ± 39.87) before learning the word-association tasks. This increase in sAA correlates with how many words they recalled 7 days after the learning phase for both the first word-association task (r = 0.44, p = 0.014; see Figure 4e; rs = 0.35, p = 0.049 Figure 4—figure supplement 1) and the second word-association task (r = 0.58, p = 0.001; see Figure 4f; rs = 0.53, p = 0.002 Figure 4—figure supplement 1). Looking at each group separately, we found no significant correlation for either the active (r = 0.27, p = 0.34) or sham group (r = 0.42, p = 0.11) between memory recall 7 days later and sAA levels on visit 1 (pre vs. post) for the first task. For the second task, we found a significant correlation for both the active (r = 0.43, p = 0.098) and sham groups (r = 0.62, p = 0.010) was obtained between memory recall 7 days later and sAA levels on visit 1 (pre vs. post) for the first task.
 
 Memory recollection 7 days after stimulation was also associated with increased gamma power in the medial temporal cortex immediately after stimulation for both the first (r = 0.25, p = 0.042; see Figure 4g) and second memory tasks (r = 0.34, p = 0.032; see Figure 4h).
 
-## Experiment 5. The effect of NITESGON is not sleep dependent
+### Experiment 5. The effect of NITESGON is not sleep dependent
 
 Our behavioral experiments suggest that NITESGON targeting the LC is involved in synaptic consolidation via the behavioral tagging mechanism. It is assumed that synaptic consolidation occurs over a timespan of minutes to hours after encoding the information, thus this effect is time dependent (Park, 2005). Furthermore, prior research has revealed that retroactive memory enhancement (i.e., evidence for behavioral tagging) emerges within 6 hr and is not dependent on sleep (Dunsmoor et al., 2015). Based on these previous findings and the assumption that NITESGON modulates synaptic consolidation via the mechanism of behavioral tagging, we hypothesize that sleep would not mediate the memory effect induced by NITESGON.
 
@@ -82,7 +114,7 @@ Experiment 5 compared two groups of participants undertaking a word-association 
 
 **Figure 5.:** (a) No difference was observed in the cumulative learning rate between participants who had slept versus those who had not slept after NITESGON applied during the study phase. (b) Sleep has no effect on memory recall 12 hr after the study phase. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01).
 
-## Experiment 6. LC – hippocampus activity and connectivity
+### Experiment 6. LC – hippocampus activity and connectivity
 
 In addition to our behavioral experiments confirming the hypothesis that NITESGON targeting the LC is involved in memory consolidation via the behavioral tagging mechanism, Experiment 5 revealed that sleep does not mediate the effect generated by NITESGON. Here, in the second set of experiments, we explored the brain network modulated by NITESGON and investigated the potential underlying neural mechanism.
 
@@ -92,9 +124,17 @@ We conducted a resting-state functional connectivity magnetic resonance imaging 
 
 The regional amplitude of low-frequency fluctuations (rALFF) was inspected to verify if NITESGON evoked activity changes in the LC, VTA, and hippocampus. Our findings showed a significant effect for the LC (F = 4.34, p = 0.023), VTA (F = 3.42, p = 0.047) and hippocampus (F = 3.52, p = 0.044) when comparing the active and control groups (see Figure 6a–c). For both the LC and hippocampus, a significant increase was obtained during (LC: 13.18 ± 4.18 vs. 8.77 ± 2.88; F = 11.30, p = 0.002; hippocampus: 6.30 ± 3.55 vs. 4.50 ± 2.88; p = 0.045) and after (LC: 13.78 ± 6.21 vs. 6.71 ± 2.79; p < 0.001; hippocampus: 7.17 ± 4.61 vs. 4.33 ± 1.44; p = 0.031) stimulation for the active group in comparison to the sham group. Before stimulation, no significant difference was obtained between the active and sham groups (LC: 9.40 ± 4.50 vs. 8.98 ± 1.92; p = 0.76; hippocampus: 5.26 ± 2.20 vs. 5.50 ± 1.64; p = 0.75). For the VTA, a significant increase was obtained during (20.01 ± 5.90 vs. 14.12 ± 5.34; p = 0.008) stimulation for the active group in comparison to the sham group. Before (14.96 ± 4.50 vs. 14.96 ± 1.92; p = 0.99) or after (15.33 ± 4.98 vs. 15.46 ± 13.86; p = 0.97) stimulation, no significant difference was obtained between the active and sham groups. To further confirm our data, we replicated our analysis by not including a smoothing kernel, showing similar results for the LC, VTA, and hippocampus. Furthermore, we included two control areas, the left inferior parietal cortex, where we do not expect to see any changes (see Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig6-v2.jpg)
+
+**Figure 6.:** (a, b) The locus coeruleus and hippocampus revealed increased activity during stimulation as well as after stimulation for the active non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) group in comparison to the sham NITESGON group. (c) The ventral tegmental area revealed increased activity during stimulation, but not after stimulation for the active NITESGON group in comparison to the sham NITESGON group. (d) Increased connectivity between the locus coeruleus and hippocampus was observed during and after stimulation for the active NITESGON group in comparison to the sham NITESGON group. (e) No significant difference in connectivity between the ventral tegmental area and hippocampus was observed when comparing the active and sham NITEGSON groups during or after stimulation. (f, g) A significant increase in spontaneous eye blink rate and salivary α-amylase (sAA) was observed after active NITESGON in comparison to sham NITESGON. (h) A significant increase in peak-to-peak amplitude over the left parietal electrode side was observed for the active group in comparison to the sham group for the deviant after stimulation. (i–l) A significant difference when subtracting pupil size, eyeblink rates, α-amylase, and the visual analogues scale for stress before NITESGON from immediately after NITESGON showed a significant increase for pupil size, eyeblink rates, α-amylase, but not for the VAS. (m,n, j) A positive correlation was observed between the difference (post–pre) in spontaneous eye blink rate and the difference in sAA as well as between the difference in spontaneous eye blink rate and the difference in peak-to-peak amplitude for the deviant. (o) No significant correlation was observed between the difference in spontaneous eye blink rate and the difference in peak-to-peak amplitude for the standard. (p) A positive correlation was observed between the difference in sAA and the difference in peak-to-peak amplitude for the deviant. (q) No correlation was observed between the difference in sAA and the difference in peak-to-peak amplitude for the standard. (r, s) A positive correlation was observed between the difference (post–pre) in spontaneous eye blink rate and the difference in pupil sizeas well as between the difference in sAA and the difference pupil size. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01; ***p < 0.001). Δ the subtraction of rate/levels before NITESGON from sAA levels immediately after NITESGON.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75586/elife-75586-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Our findings replicated our previous findings (see Figure 6) and demonstrated a significant effect for the LC (F = 7.02, p = 0.003), VTA (F = 3.42, p = 0.047) and hippocampus (F = 4.18, p = 0.026) when comparing the active and control groups. For both the LC and hippocampus, a significant increase was obtained during and after (stimulation for the active group in comparison to the sham group). Before stimulation, no significant difference was obtained between the active and sham groups. For the VTA, a significant increase was obtained during stimulation for the active group in comparison to the sham group. Before or after stimulation, no significant difference was obtained between the active and sham groups. To further confirm our data, we included two control areas, the left inferior parietal cortex, where we do not expect to see any changes. Our analysis showed indeed no significant effect (F = 1.66, p = 0.21). Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01; ***p < 0.001).
+
 Furthermore, a regions of interest (ROI)-to-ROI analysis demonstrated an effect between the right hippocampus and LC (F = 3.67, p = 0.039), but not between the right hippocampus and VTA (F = 0.27, p = 0.76) (see Figure 1d,e). Additionally, an increase in LC connectivity strength with the right hippocampus was seen for the active group relative to the sham group during (0.052 ± 0.03 vs. 0.018 ± 0.06; F = 4.34, p = 0.047) and after stimulation (0.06 ± .05 vs. −0.011 ± 0.05; F = 15.25, p = 0.001). However, no significant effect was obtained between the LC and right hippocampus for the active group relative to the sham group before stimulation (0.008 ± 0.08 vs. 0.015 ± 0.03; F = 0.09, p = 0.76).
 
-## Experiment 7. Potential relationship between NITESGON-LC and dopamine
+### Experiment 7. Potential relationship between NITESGON-LC and dopamine
 
 The previous experiment revealed activity changes in both the LC and hippocampus as well as increased connectivity between the LC and hippocampus both during and after NITESGON. Conversely, the VTA did not show changes in activity after stimulation or connectivity changes between the VTA and hippocampus during or after stimulation. However, activity changes in the VTA during NITEGSON were detected. Previous animal research has identified selective neuronal connections between the LC and VTA, implying an interaction between the LC and VTA during NITESGON may exist (Sara, 2009).
 
@@ -110,7 +150,7 @@ Results showed a significant interaction effect for sEBR by condition (F = 11.61
 
 As previous research already showed that pupil size is an important proxy for LC mediate activity, we also look at pupil size. Our data show that a significant difference in pupil size after stimulation with baseline correction for active stimulation (2.28 ± 1.90) in comparison to sham (−3.59 ± 4.80) stimulation (F = 16.95, p = 0.001; see Figure 6i). Furthermore, a significant positive correlation was between pupil size and sEBR (overall: r = 0.65, p = 0.002; active group: r = −0.78, p = 0.008; sham group: r = 0.69, p = 0.029; see Figure 6r) and between pupil size and sAA (overall: r = 0.46, p = 0.042; active group: r = 0.003, p = 0.99; sham group: r = 0.27, p = 0.45; see Figure 6s).
 
-## Experiment 8. Dopamine
+### Experiment 8. Dopamine
 
 Seeing that previous research identifies DA’s vital role in memory consolidation, and NITESGON generates its effect during memory consolidation, it would be expected that blocking the DA receptor with a DA antagonist would have a direct impact on memory consolidation. To test this hypothesis, and confirm previous findings, Experiment 8 conducted the recall-only memory test 3–4 days after initial learning of the word-association task. We used the same setup as Experiment 1, whereby NITESGON was applied immediately after learning the word-association task during visit 1.
 
@@ -120,7 +160,7 @@ No significant effect (F = 0.04, p = 0.85; see Figure 7a) was obtained between t
 
 **Figure 7.:** (a) No difference was observed in the cumulative learning rate after non-invasive transcutaneous electrical stimulation of the greater occipital nerve (NITESGON) for participants who were taking a dopamine (DA) antagonist in comparison to participants who were not taking a DA antagonist. (b) A significant difference was observed in the number of recalled words after 3 or 4 days for participants who were taking a DA antagonist in comparison to participants who were not taking a DA antagonist. Error bars, standard error of the mean (s.e.m.). Asterisks represent significant differences (*p < 0.05; **p < 0.01).
 
-## Blinding
+### Blinding
 
 To determine if the stimulation was well blinded, all participants in Experiments 1–7 were asked to guess if they thought they were placed in the active or control group (i.e., what stimulation participants received compared to what participants expected). Our findings demonstrated that participants could not accurately determine if they were assigned to the active or sham NITESGON group in each experiment, suggesting that our sham protocol is reliable and well blinded (see Figure 8).
 
@@ -156,209 +196,209 @@ In all experiments, direct current was transmitted via a saline-soaked (1.3% sal
 
 To minimize skin sensations and to acclimate participants to the stimulation types, the current intensity was ramped-up (gradually increasing) until it reached its programmed maximum output (1.5 mA). After stimulating for the desired duration per group (active or sham), the current was ramped-down (gradually decreased) denoting the end of the stimulation. The impedance under each electrode was maintained under 10 kΩ. The ramp-up, ramp-down, and stimulation times were different depending on condition (active vs. sham) and experimental needs.
 
-## Experiment 1. NITESGON during or immediately after training
+### Experiment 1. NITESGON during or immediately after training
 
-## Participants
+#### Participants
 
 Participants were 48 healthy, right-handed, native-English speaking adults (24 males, 24 females; mean age was 20.02 years, standard deviation [Sd] = 1.75 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas) with normal to corrected vision, who all had the maximum score on the Mini Mental State Examination. Participants were screened (e.g., tES contraindications, neurological impairments, not participated in a tES study) prior to enrolling into the study. None of the participants had a history of major psychiatric or neurological disorders, or any tES contraindications, including previous history of brain injuries or epileptic insults, cardiovascular abnormalities, implanted devices, taking neuropsychiatric medications, prescribed stimulants use, or chronic use of illicit drugs (i.e., marijuana and cocaine).
 
 Participants were excluded from the study if screening discovered they were familiar with Swahili/Arabic language or Swahili culture due to the nature of the stimuli. Furthermore, participants received instructions advising them to abstain from the following products for the associated time window prior to their study session: dental work for 48 hr, alcohol for 24 hr, caffeine and nicotine for 16 hr, and hair styling products the day of. Participants provided written, informed consent on the day of the study session.
 
-## Word-association task
+#### Word-association task
 
 Associative memory performance was measured using a computerized Swahili–English verbal paired-associative learning task. This task was adapted from a well-established study design published in Science by Karpicke and Roediger, 2008. Using an SDTN paradigm (S: study phase, D: distraction phase, TN: test phase with non-recalled word pairs), participants were instructed to read and remember 75-sequentially presented Swahili–English (e.g., Swahili: bustani, English: garden) word pairs made up of common day-to-day words. The Swahili–English word pairs were taken from the study by Nelson and Dunlosky, 1994. Participants had the opportunity to learn the list of 75-word pairs repetitively across a total of four alternating study and test periods each. During the study period, the word pairs were presented together on a computer screen for 5 s with the Swahili word on top and the English translation at the bottom (5 × 75 = 375 s). The study period was followed by a cued-recall test period: Swahili cue words were presented for 8 s each during which participants had to type-in the correct English translation remembered from the study period. Correctly recalled word pairs were dropped from further testing but remained to be studied in each subsequent learning period (i.e., 4 blocks of studying 75-word pairs). The order of the words being studied or tested was randomized. Previous research has demonstrated the critical role of retrieval practice in learning of a new foreign language; therefore, the paradigm ensures that all participants were well exposed to the stimuli and avoided a ceiling effect (Karpicke and Roediger, 2008).
 
-## NITESGON
+#### NITESGON
 
 There were three groups – active NITESGON during learning (i.e., study phases of the word-association task) and sham NITESGON immediately after the word-association task; sham NITESGON during learning and active NITESGON immediately the word-association task in the memory consolidation period and sham NITESGON both during and after learning of the word-association task – with 16 participants each. Active NITESGON consisted of ramp-up time of 30 s followed by a constant current of 1.5 mA (current density 0.4285 A/m2) during each of the 4 study blocks, resulting in a total stimulation time of 25 min (i.e., 375 s × 4 blocks) and ramp-down time of 30 s. For the sham NITESGON group, the current intensity was ramped-up to 1.5 mA over 30 s and immediately ramped-down over 30 s. Hence, sham NITESGON only lasted 60 s per study period, resulting in a total time of 240 s (60 s × 4 blocks) of stimulation when delivered during the study phase. For the group that received active NITESGON after the word-association task, this consisted of 30 s ramp-up and ramp-down time with 25 min of constant current stimulation at 1.5 mA. The sham NITESGON delivered after the word-association task only consisted of 30 s of ramp-up and ramp-down time resulting in 60 s of stimulation. The rationale behind the sham procedure was to mimic the transient skin sensation at the beginning of active NITESGON without producing any conditioning effects on the brain.
 
-## Resting-state EEG
+#### Resting-state EEG
 
 Continuous EEG data were collected from each participant pre- and post-NITESGON procedures. The data were collected using a 64-channel Neuroscan Synamps2 Quick Cap configured per the International 10–20 placement system with the midline reference located at the vertex and the ground electrode located at AFZ using the Neuroscan Scan 4.5 software (Neuroscan, http://compumedicsneuroscan.com). The impedance on each electrode was maintained at less than 5 kΩ. The data were sampled using the Neuroscan Synamps2 amplifier at 500 Hz with online band-pass filtering at 0.1–100 Hz.
 
 Eyes-closed recordings (sampling rate = 1 kHz, band passed DC–200 Hz) were obtained in a dark room which was dimly lit with a small lamp with each participant sitting upright in a comfortable chair; data collection lasted approximately 5 min. Participants were instructed not to drink alcohol 24 hr prior to EEG recording or caffeinated beverages 1 hr before recording to avoid alcohol- or caffeine-induced changes in the EEG stream. The alertness of participants was checked by monitoring both slowing of the alpha rhythm and appearance of spindles in the EEG stream to prevent possible enhancement of the theta power due to drowsiness during recording (Moazami-Goudarzi et al., 2010). No participants included in the current study showed such EEG changes during measurements.
 
-## Saliva collection
+#### Saliva collection
 
 Saliva was collected twice during each experiment: once immediately prior to NITESGON stimulation and once immediately after NITESGON stimulation. When the participants were ready to collect saliva, they were requested to gently tip their head backwards and collect saliva on the floor of their mouth and when ready, passively drool into the collection aid mouthpiece provided by Salimetrics laboratory (Salimetrics, LLC, USA; https://salimetrics.com). The participants were requested to collect 2 ml of saliva in one straight flow and avoid breaks between drool as much as possible. The length of time to collect 2 ml of saliva was noted and the timer was started only when participants began to passively drool into the tube. All saliva samples were stored in 2 ml cryovials, and immediately stored in an −80°C laboratory freezer. Prior to saliva collections, all participants were instructed to avoid food, sugary drinks, excess caffeine, nicotine, and acidic drinks for at least 1 hr before collecting the saliva samples. Participants were also instructed to avoid alcohol and vigorous exercise 24 hr prior to and avoid dental work 48 hr prior to their appointment. In addition, participants were instructed not to brush their teeth within 45 min of sample collection in order to avoid any risk of lowering pH levels and influencing bacterial growth. If the study was scheduled for the afternoon, participants were requested to avoid taking naps during the day. Upon completion of the collection procedures, all saliva samples were packed in dry ice and sent to the Salimetrics laboratory for analysis. We chose to use sAA as a biomarker for norepinephrine as it provided a non-invasive yet valid indicator of central sympathetic nervous system activation (Nater and Rohleder, 2009). sAA levels have been shown to co-vary significantly with circulating NA levels, with human fMRI showing LC activity rising simultaneously with sAA levels during viewing of emotionally arousing slides; these increases were then significantly reduced by the beta-adrenergic antagonist propranolol (van Stegeren et al., 2007).
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of the word-association task and administration of NITESGON. Participants were randomly assigned to one of three groups during the study period. The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol. rsEEG and saliva were collected twice for all participants, once immediately before and once immediately after NITESGON application. Participants were asked to refrain from studying or searching for the learned word pairs throughout the week. Participants returned 7 days after their first visit for memory testing to measure possible (long-term) effects on associative memory performance, but did not receive NITESGON, nor were they able to review word pairs. A third researcher who was not responsible for the task or NITESGON conducted the second visit.
 
-## EEG preprocessing
+#### EEG preprocessing
 
 For the EEG preprocessing, the data were resampled to 128 Hz, band-pass filtered (Finite Impulse Response filter) to 2–44 Hz, and re-referenced to the average reference using EEGLAB 14_1_1b (Delorme and Makeig, 2004). The EEG data were then plotted for a careful inspection for artifacts. All episodic artifacts suggestive of eye blinks, eye movements, jaw tension, teeth clenching, or body movements were manually removed from the EEG stream. In addition, an independent component analysis was conducted to further verify whether all artifacts were excluded.
 
-## EEG source localization
+#### EEG source localization
 
 Standardized low-resolution brain electromagnetic tomography (sLORETA) was used to estimate the intracerebral electrical sources that generated the scalp-recorded activity in each of the gamma frequency bands (30.5–44 Hz) (Pascual-Marqui, 2002). sLORETA computes neuronal activity as current density (A/m2) without assuming a predefined number of active sources. The sLORETA solution space consists of 6239 voxels (voxel size: 5 × 5 × 5 mm) and is restricted to cortical gray matter and hippocampi, as defined by the digitized Montreal Neurological Institute (MNI) 152 template (Fuchs et al., 2002). Scalpbtained in a darkes on the MNI brain are derived from the international 10–20 system (Jurcak et al., 2007).
 
 The tomography of sLORETA has received considerable validation from studies combining sLORETA with other more established spatial localization methods such as fMRI (Mulert et al., 2004; Vitacco et al., 2002), structural MRI (Worrell et al., 2000), and positron emission tomographyon (PET) (Dierks et al., 2000; Pizzagalli et al., 2004; Zumsteg et al., 2005). Further sLORETA validation is based on accepting as ground truth that the localization findings obtained from invasive, implanted depth electrodes, of which there are several studies in epilepsy (Zumsteg et al., 2006a; Zumsteg et al., 2006b) and cognitive ERPs (Volpe et al., 2007).
 
-## Statistics task
+#### Statistics task
 
 For visit 1 learning, a one-way analysis of variance (ANOVA) was conducted with the cumulative learning rate over the different study periods as the dependent variable and three groups as the between-subjects variable. To look at the memory effect (recall) 7 days after learning, we applied a one-way ANOVA with the group as the between-subjects variable and correctly recalled words as the dependent variable.
 
-## Statistics saliva
+#### Statistics saliva
 
 Using the saliva collected via the passive drool method, sAA levels were measured. We conducted a repeated measures ANOVA with groups as between-subjects variable and sAA as within-subjects variable. A simple contrast analysis was applied to compare the different conditions using a Bonferroni correction.
 
-## Statistics EEG – whole brain analysis
+#### Statistics EEG – whole brain analysis
 
 A whole brain analysis was used to compare gamma activity before and after NITESGON. These activity changes were then correlated with the number of words recalled during visit 2, 7 days after the learning task, using a Pearson correlation. Non-parametric statistical analyses of functional sLORETA images (statistical non-parametric mapping) were performed for each contrast employing a t-statistic for paired groups and corrected for multiple comparisons (p < 0.05). The significance threshold for all tests was based on a permutation test with 5000 permutations and corrected for multiple comparisons (Nichols and Holmes, 2002).
 
-## Experiment 2. NITESGON during second task – retroactive strengthening of memories
+### Experiment 2. NITESGON during second task – retroactive strengthening of memories
 
-## Participants
+#### Participants
 
 Participants were 20 healthy, right-handed, native-English speaking adults (9 males, 11 females; mean age was 21.11 years, Sd = 2.03 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas). Participants were screened and enrolled similar to Experiment 1.
 
-## Word-association task (task 1)
+#### Word-association task (task 1)
 
 Associative memory performance was measured using the same computerized Swahili–English verbal paired-associative learning task used in Experiment 1, however, the task consisted of three study periods in which participants were asked to read and remember 50 Swahili–English word pairs in each study period (50 × 5 = 250 s).
 
-## Object-location task (task 2)
+#### Object-location task (task 2)
 
 Participants partook in a second memory performance task immediately after the word-association task. The second memory task consisted of a spatial-navigation object-location association task that was based on previous research (Nilakantan et al., 2017). Using the same SDTN paradigm, participants were instructed to view and remember 50-sequentially presented objects locations on a blue–red–gray background grid with an eye-to-screen distance of ~24 inches across three study-test blocks. The objects consisted of black and white line drawings from the Boston Naming Test; 10 objects from each of the following categories were used: animals, foods, modes of transportation, tools, and household objects. Each image appeared in a randomized order at a randomized location. Objects were presented one at a time for 5 s each (1-s interstimulus interval). Objects were presented within a white-box background (4.88 × 4.88 cm) and had a red dot superimposed at the object center to mark the precise location. Participants were instructed to study and remember the object-locations as accurately and precisely as possible. After each study phase, a cued-recall test was administered. During the test period, the studied objects were presented one at a time in the center of the screen (in a randomized order), and participants were required to recall the studied locations. At the beginning of every trial, a 2-s fixation cross at the center of the screen was presented. After this 2-s period, participants were able to use the mouse to move the object from the center of the screen to its recalled location and click a button on the mouse to indicate its final location.
 
 The Swahili–English verbal associative task was used as task 1 and the spatial-navigation object-location task was used as task 2 for all participants.
 
-## NITESGON
+#### NITESGON
 
 All participants received sham NITESGON during each study period of task 1 using the following parameters: a 5-s ramp-up period, followed by a constant current of 1.5 mA for 15 s, ending with a ramp-down period of 5 s, allowing for an emulated sensation of the active NITESGON. For task 2, 10 participants received active NITESGON and 10 participants received sham NITESGON. Sham stimulation parameters were the same as used in task 1 and stayed consistent in each of the three study periods of task 2. Participants given active NITESGON received a 5-s ramp-up period, followed by a constant current of 1.5 mA for 250 s, and finished with a 5-s ramp-down period during each of the three study periods of task 2 on the first day. Thus, the total simulation time for the active group was 750 s (i.e., 250-s × 3 study periods) and the sham group was 45 s (i.e., 15-s × 3 study periods). Just before the first study period of the first task participants NITESGON was delivered for 15 s to help participants habituate to the sensation and to check if they were comfortable with the sensation.
 
-## Resting-state EEG
+#### Resting-state EEG
 
 Continuous EEG data were collected from each participant pre- and post-NITESGON procedures as detailed in Experiment 1.
 
-## Saliva collection
+#### Saliva collection
 
 Saliva was collected twice during each experiment: once immediately prior to NITESGON stimulation and once immediately after NITESGON stimulation as detailed in Experiment 1.
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of the word-association task (i.e., task 1) paired with sham stimulation, and then were randomly assigned to either the active or sham NITESGON condition for the spatial-navigation task (i.e., task 2). The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol. rsEEG and saliva were collected twice for all participants, once immediately before and once immediately after NITESGON application. Participants were asked to refrain from studying or searching for the learned word pairs throughout the week. Participants returned 7 days after their first visit for memory testing on both tasks 1 and 2 to measure possible (long-term) effects on associative memory performance, but did not receive NITESGON, nor were they able to review word pairs or objects’ locations. A third researcher who was not responsible for the task or NITESGON conducted the second visit.
 
-## EEG preprocessing and source localization
+#### EEG preprocessing and source localization
 
 The continuous EEG data were preprocessed and the source-level gamma activity pre- and post-NITESGON procedures for the two groups was determined as detailed in Experiment 1.
 
-## Statistics task
+#### Statistics task
 
 For visit 1 learning, a multivariate analysis of variance (MANOVA) was conducted with the cumulative learning rate over the different study periods for both tasks as the dependent variable and group as the between-subjects variable. To look at the memory effect (recall) 7 days after learning, we applied an MANOVA with groups as the between-subjects variable and correctly recalled words on both tasks as the dependent variable. For both analyses, if significant, two separate one-way ANOVAs were applied with groups as the between-subjects variable and correctly recalled words as dependent variable for task 1 or 2, respectively.
 
-## Statistics saliva
+#### Statistics saliva
 
 Using the saliva collected via the passive drool method, sAA levels were measured which were compared between the groups as detailed in Experiment 1.
 
-## Statistics EEG – whole brain analysis
+#### Statistics EEG – whole brain analysis
 
 A whole brain analysis was used to compare gamma activity before and after NITESGON. This activity was correlated with the number of correctly recalled items (words/locations) 7 days later as detailed in Experiment 1.
 
-## Experiment 3. NITESGON during first task – proactive strengthening of memories
+### Experiment 3. NITESGON during first task – proactive strengthening of memories
 
-## Participants
+#### Participants
 
 Participants were 24 healthy, right-handed, native-English speaking adults (13 males, 11 females; mean age was 20.83 years, Sd = 2.21 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas). Participants were screened and enrolled similar to Experiment 1.
 
-## Word-association task (task 1)
+#### Word-association task (task 1)
 
 Associative memory performance was measured using the same computerized Swahili–English verbal paired-associative learning task used in Experiment 2.
 
-## Object-location task (task 2)
+#### Object-location task (task 2)
 
 Participants partook in a second memory performance task immediately after the word-association task consisting of a spatial-navigation object-location association task used in Experiment 2.
 
-## NITESGON
+#### NITESGON
 
 The same device, electrode placement, and active and sham NITESGON parameters described in Experiment 2 were used. Differing from Experiment 2, Experiment 3 had all participants receive active NITESGON during each study period of task 1 as opposed to task 2. Twelve participants received active NITESGON and 12 participants received sham NITESGON during the first task.
 
-## Resting-state EEG
+#### Resting-state EEG
 
 Continuous EEG data were collected from each participant pre- and post-NITESGON procedures as detailed in Experiment 1.
 
-## Saliva collection
+#### Saliva collection
 
 Saliva was collected twice during each experiment: once immediately prior to NITESGON stimulation and once immediately after NITESGON stimulation as detailed in Experiment 1.
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of the word-association task (i.e., task 1) paired with either active or sham NITESGON, and spatial-navigation task (i.e., task 2) paired with sham NITESGON. The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol. rsEEG and saliva were collected twice for all participants, once immediately before and once immediately after NITESGON application. Participants were asked to refrain from studying or searching for the learned word pairs throughout the week. Participants returned 7 days after their first visit for memory testing on both tasks 1 and 2 to measure possible (long-term) effects on associative memory performance, but did not receive NITESGON, nor were they able to review word pairs or objects’ locations. A third researcher who was not responsible for the task or NITESGON conducted the second visit.
 
-## EEG preprocessing and source localization
+#### EEG preprocessing and source localization
 
 The continuous EEG data were preprocessed and the source-level gamma activity pre- and post-NITESGON procedures for the two groups was determined as detailed in Experiment 1.
 
-## Statistics task
+#### Statistics task
 
 The learning in visit 1 and memory performance in visit 2 was compared between the groups as detailed in Experiment 2.
 
-## Statistics saliva
+#### Statistics saliva
 
 Using the saliva collected via the passive drool method, sAA levels were measured which were compared between the groups as detailed in Experiment 1.
 
-## Statistics EEG – whole brain analysis
+#### Statistics EEG – whole brain analysis
 
 A whole brain analysis was used to compare gamma activity before and after NITESGON. This activity was correlated with the number of correctly recalled items (words/locations) 7 days later as detailed in Experiment 1.
 
-## Experiment 4. NITESGON during interference task
+### Experiment 4. NITESGON during interference task
 
-## Participants
+#### Participants
 
 Participants were 32 healthy, right-handed, native-English speaking adults (15 males, 17 females; mean age was 21.36 years, Sd = 2.42 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas). Participants were screened and enrolled similar to Experiment 1. Experiment 4 added familiarity of Japanese language or culture to the participant screening procedure, if indicated, the participant was excluded from the study due to the nature of the stimuli.
 
-## Word-association tasks
+#### Word-association tasks
 
 Associative memory performance was measured using two computerized verbal paired-associate learning tasks. Similar to Experiments 2 and 3, one task comprised of the Swahili–English vocabulary learning, and the second task consisted of a newly introduced Japanese–English (e.g., Japanese: Kumo, English: cloud) word-association task. The Japanese–English word-association task used the same Swahili–English word pairs, however, the Swahili words were replaced by Japanese words.
 
-## NITESGON
+#### NITESGON
 
 The same device, electrode placement, and active and sham NITESGON parameters described in Experiment 2 was used. Sixteen participants received active NITESGON and 16 participants received sham NITESGON during the first task, where everyone received sham NITESGON during the second task.
 
-## Resting-state EEG
+#### Resting-state EEG
 
 Continuous EEG data were collected from each participant pre- and post-NITESGON procedures as detailed in Experiment 1.
 
-## Saliva collection
+#### Saliva collection
 
 Saliva was collected twice during each experiment: once immediately prior to NITESGON stimulation and once immediately after NITESGON stimulation as detailed in Experiment 1.
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of two word-association tasks, whereby task 1was paired with either active or sham NITESGON followed by a second word-association task (i.e., task 2) paired with sham NITESGON. The order of the two word-association tasks was randomized over the participants in a 1:1 ratio to remove a possible order effect. The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol. rsEEG and saliva were collected twice for all participants, once immediately before and once immediately after NITESGON application. Participants were asked to refrain from studying or searching for the learned word pairs throughout the week. Participants returned 7 days after their first visit for memory testing on both tasks 1 and 2 to measure possible (long-term) effects on associative memory performance, but did not receive NITEGSON, nor were they able to review word pairs. A third researcher who was not responsible for the task or NITESGON conducted the second visit. As during the first visit, the two word-association tasks were randomized over the participants in a 1:1 ratio to remove a possible order effect.
 
-## EEG preprocessing and source localization
+#### EEG preprocessing and source localization
 
 The continuous EEG data were preprocessed and the source-level gamma activity pre- and post-NITESGON procedures for the two groups was determined as detailed in Experiment 1.
 
-## Statistics task
+#### Statistics task
 
 For visit 1 learning, a repeated measures ANOVA was applied with the cumulative learning rate over the different study periods for both tasks as within-subjects variable and group (active vs. sham) as between-subjects variable. A similar analysis was applied for the memory effect (recall) 7 days after learning. A simple contrast analysis was applied to compare the difference conditions using a Bonferroni correction. In addition, an interference effect was determined by calculating how many words recalled during memory task 2 had an overlap from memory task 1. The higher percentage the more overlap in remembering the English translation for both exact word in tasks 1 and 2, the lesser the interference effect. A one-way ANOVA was applied with the interference effect as dependent variable and group (active vs. sham) as between-subjects variable.
 
-## Statistics saliva
+#### Statistics saliva
 
 Using the saliva collected via the passive drool method, sAA levels were measured which were compared between the groups as detailed in Experiment 1.
 
-## Statistics EEG – whole brain analysis
+#### Statistics EEG – whole brain analysis
 
 A whole brain analysis was used to compare gamma activity before and after NITESGON. This activity was correlated with the number of correctly recalled items (words/locations) 7 days later as detailed in Experiment 1.
 
-## Experiment 5. Effect of NITESGON is not sleep dependent
+### Experiment 5. Effect of NITESGON is not sleep dependent
 
-## Participants
+#### Participants
 
 Participants were 20 healthy, right-handed, native-English speaking adults (11 males, 9 females; mean age was 21.18 years, Sd = 1.951 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas). Participants were screened and enrolled similar to Experiment 1.
 
-## Word-association task
+#### Word-association task
 
 Associative memory performance was measured using the same computerized Swahili–English verbal paired-associative learning task used in Experiment 1.
 
-## NITESGON
+#### NITESGON
 
 All participants received active NITESGON during each of the four study periods on visit 1 using the following parameters: a 5-s ramp-up period, followed by a constant current of 1.5 mA for 375 s (75-word pairs × 5 s), and finished with a 5-s ramp-down period. The total stimulation time was 25 min (i.e., 375 s × 4 blocks). Before the start of the first study period, an additional 15-s habituation period was added to make sure the participants got used to the sensation.
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of the word-association task paired with active NITESGON. Participants were randomly assigned to one of the two groups (sleep vs. no sleep).
 
@@ -366,17 +406,17 @@ As Experiment 4 reveals that NITESGON is involved in synaptic consolidation that
 
 Ten participants learned the word-association task at 8:00 a.m. and were tested the same day at 8:00 p.m., while the other 10 participants learned the word-association task at 8:00 p.m. and were tested the next day at 8:00 a.m. after a night of sleep. Participants were asked to refrain from studying or searching for the learned word pairs for at least the next 12 hr. The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol. A third researcher who was not responsible for the task or NITESGON conducted the second visit (12 hr later).
 
-## Statistics task
+#### Statistics task
 
 A one-way ANOVA with group (sleep vs. no sleep) as between-subjects variable and number of words correctly recalled as dependent variable was performed.
 
-## Experiment 6. LC – hippocampus activity and connectivity
+### Experiment 6. LC – hippocampus activity and connectivity
 
-## Participants
+#### Participants
 
 Participants were 32 healthy, right-handed, native-English speaking adults (16 males, 16 females; mean age was 25.32 years, Sd = 2.65 years) with a similar educational background (i.e., enrolled as undergraduate students at UT Dallas). Participants were screened and enrolled similar to Experiment 1. Experiment 6 added the exclusion of those participants who had any contraindication for MRI (i.e., metallic implants, pregnancy, claustrophobia).
 
-## Resting-state fMRI
+#### Resting-state fMRI
 
 The resting-state fMRI data were collected on a 3T MR scanner (Achieva, Philips, Netherlands) using a 32-channel SENSE phased-array head coil. The dimensions of the coil was 38 (height) × 46 (width) × 59 (length) cm3. During scanning, foam padding and earplugs were used to minimize the head movement and scanner noise. An MR-compatible, battery powered NITESGON system manufactured by MR NeuroConn Co (Germany) was applied to each participant inside the MR scanner. All the operating parts and devices that go into the scanner room were MR compatible and everything else was in the control room, connected via the waveguide. The NITESGON system was fully charged before each session and its impedance level was measured regularly to test if it was maintained at approximately 5 kΩ on each end (i.e., 10 kΩ total).
 
@@ -390,15 +430,15 @@ MR images were preprocessed using Statistical Parametric Mapping (SPM12b, Wellco
 
 After preprocessing, the images were processed to account for motion-related and physiological noises using an independent component analysis. Confounding factors of signals from white matter and cerebrospinal fluid were linearly regressed out from the global average brain signal using CompCor. Global signal regression was performed using the grand averaged signal from the gray matter volume. When removing confounding effect, the signal was simultaneously filtered from 0.01 to 0.17 Hz, where the maximum detectable frequency of the signal is 0.167 Hz (TR = 3 s).
 
-## NITESGON
+#### NITESGON
 
 Shielded cables connected the MR-compatible box and electrodes, and the stimulation data were transferred via the CAT.6 LAN cable that runs throughout the MR scanner room to the non-MR-compatible stimulation devices in the control room. For the active NITESGON group, the current was ramped-up for 30 s followed by a constant current of 1.5 mA for 20 min and a 10-s ramp-down period. For sham NITESGON, the current was ramped-up over 30 s to reach the intensity of 1.5 mA followed by 15-s of constant current stimulation at 1.5 mA and 10 s ramp-down. Hence, sham NITESGON only lasted 15 s (as opposed to 20 min in the active group).
 
-## Procedure
+#### Procedure
 
 Participants were scanned immediately before, during, and immediately after the NITESGON stimulation. The researcher who controlled the NITESGON device was not blinded to the stimulation group, but the participant was blinded to which stimulation group they were placed in. Sixteen participants received active NITESGON and 16 received sham NITESGON.
 
-## Statistics rsfMRI
+#### Statistics rsfMRI
 
 A functional connectivity analysis was performed using the CONN toolbox. The ROI considered in the analysis were the right hippocampus (based on previous findings [Vanneste et al., 2020]), LC, and VTA. Both the LC and VTA were selected using probabilistic atlas (as conducted in a study across 44 adults by localizing its peak signal level in high-resolution T1 turbo spin-echo images and verified the location using post-mortem brains) (Tona et al., 2017). The probabilistic templates were created using processing steps specifically designed to address these difficulties (Tona et al., 2017). To remove potential artifacts such as head motion, respiration, and other global imaging artifacts including potential stimulation effects, we regressed out the global average brain signal.
 
@@ -406,84 +446,84 @@ We conducted an rALFF analysis for the LC, VTA, and hippocampus. The time series
 
 In addition, the average BOLD time series across all voxels within the ROIs were extracted from the smoothed functional images. A partial correlation analysis was performed, and the resulting r-value converted to Fisher’s Z-transformed coefficients were used for further statistical analyses. The Z-transformed connectivity weights were compared between the active and sham groups for the LC and hippocampus, LC and VTA, and VTA and hippocampus, respectively, using a repeated measures ANOVA. A simple contrast analysis was applied to compare the different in active and sham condition using a Bonferroni correction.
 
-## Experiment 7. Potential relationship between NITESGON-LC and DA
+### Experiment 7. Potential relationship between NITESGON-LC and DA
 
-## Participants
+#### Participants
 
 Participants were 24 healthy, right-handed, native-English speaking adults (12 males, 12 females; mean age was 23.83 years, Sd = 2.88 years) with a similar educational background. Participants were screened and enrolled similar to Experiment 1.
 
-## NITESGON
+#### NITESGON
 
 Active NITESGON stimulation consisted of a ramp-up period of 5 s, followed by constant current of 1.5 mA for 20 min and ramp-down period of 5 s. Sham NITESGON only consisted of a ramp-up period of 5 s to reach the intensity of 1.5 mA and an immediate ramp-down period of 5 s. Twelve participants received active NITESGON and 12 participants received sham NITESGON.
 
-## Electrophysiological recordings
+#### Electrophysiological recordings
 
 Continuous EEG data were collected from each participant in response to the auditory oddball paradigm, before and after the application of NITESGON. The auditory oddball task is a simple and well-established paradigm for the investigation of the robust P3b component which has a predictable standard tone and an unpredictable deviant tone (Murphy et al., 2011). The data were collected using a 64-channel Neuroscan Synamps2 Quick Cap configured per the International 10–20 placement system with the midline reference located at the vertex and the ground electrode located at AFZ using the Neuroscan Scan 4.5 software. The impedance on each electrode was maintained at less than 5 kΩ. The data were sampled using the Neuroscan Synamps2 amplifier at 500 Hz with online band-pass filtering at 0.1–100 Hz. Data were preprocessed using Matlab and EEGLAB in a manner similar to the original paper that showed a relationship between ERP and LC–noradrenergic arousal function (Murphy et al., 2011).
 
-## Peak-to-peak P3b amplitude
+#### Peak-to-peak P3b amplitude
 
 Peak-to-peak amplitude was defined as the amplitude difference between the N200 peak and the P300 peak for the P3 electrode. The N200 component was identified as the most negative peak between 200 and 375 ms after the stimulus onset. The P300 component was identified as the most positive peak between 250 and 600 ms after the stimulus onset.
 
-## Spontaneous eyeblink rate
+#### Spontaneous eyeblink rate
 
 To retain the eyeblinks, the eyeblink rate was calculated using the data before cleaning the artifacts using an independent component analysis. Furthermore, the continuous dataset before epoching was used to visualize the entire temporal profile of the eyeblink potential to avoid any cutting-off of the potential due to epoching. An eyeblink was determined to be a sharp negative peak followed immediately by a positive peak located in the frontal electrodes such as FP1, FP2, and FPz. In some cases, the negative peak was not prominent, but the positive peak was a signatory. The topography of this potential was observed to have a clear dipole covering the frontal and frontotemporal electrodes. This potential was marked manually by a researcher, who scanned the entire EEG recording manually for all the participants in the active and sham groups, in the pre- and post-stimulation conditions. The number of eyeblinks in the length of recording was obtained and the eyeblink rate was calculated as the number of eyeblinks/minute. The same procedure was performed by a second researcher who was blinded to the conditions and the inter-rater validity was calculated. The average score was calculated from both independent researchers.
 
-## Saliva collection
+#### Saliva collection
 
 Saliva was collected twice during each experiment: once immediately prior to NITESGON stimulation and once immediately after NITESGON stimulation as detailed in Experiment 1.
 
-## Pupil dilation
+#### Pupil dilation
 
 The response of the pupil to three types of light stimulation (blue, 470 nm; white 8000k color temperature; and red, 624 nm) was recorded in real time using a binocular Basler Dart Near Infrared (NIR) cameras. The lenses have a fixed focal length of 8 mm with an M12x0.5 body. The images were recorded at a frame rate of 120 Hz. There is a constant NIR illumination of the eye (850 nm) and the cameras are equipped with a ‘daylight cut filter’ which passes NIR and blocks any wavelengths below ~800 nm. Surface-mounted LEDs were used for light stimulation and the cameras were all mounted on a single eyepiece, which communicated with a Windows laptop through a USB 3.0 cable. Each color was shown for 200 ms first in the left eye and then in the right eye with an ISI of 8 s. This left–right trial was repeated three times for each color. The average total duration of the procedure was 2 min per participant. The participant was requested to focus on a point inside the eyepiece and open their eyes as wide as possible. They were asked to avoid rapid and frequent blinking of eyes, movement of eyes, and specifically to avoid blinking during stimulus presentation. The videos were then post-processed to obtain the dilation of the pupil. The pupil was extracted as an ellipse from each frame with a segmentation algorithm and the diameter was calculated from the average of the major and minor axes of the resulting pupil ellipse. The difference between the maximum dilation and maximum constriction of both pupils in response to each color for every trial was calculated for each person immediately before and after NITESGON. The pupil size was measured as a direct response to the NITESGON and did not include a specific task.
 
-## Procedure
+#### Procedure
 
 Participants performed the auditory oddball task twice, once immediately before and once immediately after the NITESGON session. In addition, saliva and pupil dilation were also collected immediately before and immediately after the NITESGON session. The reason why we collected auditory oddball task and pupil size before and after NITESGON is to avoid a direct effect of the learning taks or inference of the current sent to the scalp. Participants were randomly assigned to the active or sham NITESGON group. The researcher who controlled the NITESGON device was not involved in instructing the participant; this was performed by a second researcher who was blind to the stimulation protocol.
 
-## Statistics peak-to-peak P3b amplitude
+#### Statistics peak-to-peak P3b amplitude
 
 EEG data were compared using a repeated measures ANOVA with groups (active vs. sham) and condition (deviant vs. standard) as the between-subjects variable, and the peak-to-peak amplitude before and after stimulation as the within-subjects variable. A simple contrast analysis was applied to compare specific effects using a Bonferroni correction.
 
-## Statistics sEBR
+#### Statistics sEBR
 
 We conducted a repeated measures ANOVA with group (active vs. sham) as between-subjects variable, and the average eye blink rate before and after stimulation as within-subjects variable. A simple contrast analysis was applied to compare specific contrasts using a Bonferroni correction.
 
-## Statistics pupil size
+#### Statistics pupil size
 
 Using the pupil size, we conducted a one-way ANOVA with groups as group variable and difference in pupil size before and after NITESGON as the dependent variable.
 
-## Statistics saliva
+#### Statistics saliva
 
 Using the saliva collected via the passive drool method, sAA levels were measured which were compared between the groups as detailed in Experiment 1.
 
-## Statistics correlation
+#### Statistics correlation
 
 Pearson correlations were calculated between the difference in sAA, peak-to-peak P3b amplitude and sEBR, pupil size before and after NITESGON stimulation.
 
-## Experiment 8. Dopamine
+### Experiment 8. Dopamine
 
-## Participants
+#### Participants
 
 Participants were 20 right-handed adults (8 males, 12 females; mean age was 35.23 years, Sd = 2.63 years), half of who were selected due to their medical record indicating they were taking flupentixol (0.5 mg)/melitracen (10 mg) (Deanxit), a DA antagonist (i.e., D1 and D2) (Hyttel, 1981), for their tinnitus at least 2 weeks prior to the onset of the study. The remaining participants were of matching age and gender with a similar educational background. Participants were screened and enrolled similar to Experiment 1.
 
-## Word-association task
+#### Word-association task
 
 Associative memory performance was measured using the same computerized Swahili–English verbal paired-associative learning task used in Experiment 1, however, the English words were replaced by Dutch words.
 
-## NITESGON
+#### NITESGON
 
 All participants received active NITESGON immediately following the word-association task on visit 1 using the following parameters: a 5-s ramp-up period, followed by a constant current of 1.5 mA for 25 min, and finished with a 5-s ramp-down period.
 
 As experiment suggests DA plays a vital role in memory consolidation, Experiment 8 is a follow-up experiment to cross validate these findings. We opted for the parallel design not including a control condition, as the aim of this study is to see if DA antagonist mediates the memory effect induced by NITESGON, rather than the effect of NITESGON or the interaction between sleep and NITESGON on memory.
 
-## Procedure
+#### Procedure
 
 Eligible participants were scheduled for two visits to complete the study. Visit 1 consisted of the word-association task followed by active NITESGON stimulation. Participants were asked to refrain from studying or searching for the learned word pairs throughout the week. Participants returned 3–4 days after their first visit for memory testing to measure possible (long-term) effects on associative memory performance, but did not receive NITESGON, nor were they able to review word pairs.
 
-## Statistics task
+#### Statistics task
 
 For visit 1 learning, a one-way ANOVA was conducted with the cumulative learning rate over the different study periods as the dependent variable and two groups (antagonist or no antagonist) as between-subjects variable. To look at the memory effect (recall) 7 days after learning, we applied a one-way ANOVA with group as the between-subjects variable and correctly recalled words as dependent variable.
 
-## Blinding
+#### Blinding
 
 To determine if the stimulation for all experiments was well blinded, all participants who participated in Experiments 1–7 were asked to complete a single-response questionnaire after the conclusion of the NITESGON procedure. Here, participants were asked to guess if they thought they were placed in the active or control group. A χ2 analysis was used to determine if there was a difference between what stimulation participants received compared to what participants expected.

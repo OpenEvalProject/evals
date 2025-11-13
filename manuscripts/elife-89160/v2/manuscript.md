@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Ophthalmology, Duke University Medical Center Durham United States
-2. https://ror.org/0168r3w48 National Center for Microscopy and Imaging Research, School of Medicine, University of California, San Diego La Jolla United States
+1. Department of Ophthalmology, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. National Center for Microscopy and Imaging Research, School of Medicine, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 3. Eugene Bell Center for Regenerative Biology and Tissue Engineering and National Xenopus Resource Woods Hole United States
-4. https://ror.org/00py81415 Department of Pharmacology and Cancer Biology, Duke University Medical Center Durham United States
+4. Department of Pharmacology and Cancer Biology, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -47,7 +47,7 @@ Taken together, our findings suggest that rods express a modest excess of periph
 
 ## Results
 
-## Incisure formation follows the completion of disc enclosure
+### Incisure formation follows the completion of disc enclosure
 
 We first sought to determine the spatiotemporal relationship between incisure formation and enclosure in newly forming discs. Our initial approach was to use traditional TEM to image longitudinally sectioned mouse rod outer segments that had been contrasted with a combination of tannic acid and uranyl acetate. This contrasting technique (Ding et al., 2015) allows for the discrimination between newly forming ‘open’ discs that are stained darker than fully enclosed discs. Several examples shown in Figure 2 reveal that incisures are never found in the newly forming, open discs at the base of the outer segment, but become evident as soon as discs become enclosed. These observations suggest that incisure formation is a process that only occurs after complete disc enclosure.
 
@@ -61,23 +61,90 @@ Using STEM tomography, we imaged ~750 nm plastic sections of mouse retinas cut t
 
 First and consistent with TEM data, no incisures were observed in the newly forming discs. Second, the newly forming discs are surprisingly lamellipodia-like in shape. While traditionally illustrated as round evaginations of the ciliary plasma membrane (such as in Steinberg et al., 1980 or Spencer et al., 2020), the newly forming discs are actually irregular in shape, oftentimes with multiple protrusions. This observation, best appreciated in the individual z-sections shown in the left panels of Figure 4, is consistent with the notion that new discs are formed in a process akin to lamellipodia formation mediated by polymerization of a branched actin network (Spencer et al., 2019).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig3-v2.jpg)
+
+**Figure 3.:** The retina was contrasted with tannic acid/uranyl acetate. Full tomogram is shown in Figure 3—video 1. Because individual rods in the mouse retina are not perfectly aligned, adjacent cells are sectioned at different compartments, including the inner segment (1), outer segment base (2) and mature outer segment (3). Shown on the right is an example of a longitudinally sectioned rod, in which these three locations are depicted by dashed lines. Surfaces of fully enclosed discs are pseudo-colored in magenta to highlight the structure of incisures. Yellow arrowhead points to an incisure in a fully enclosed disc. Tomogram pixel size is 3 nm; scale bars: 2.5 µm (left) or 0.5 µm (right).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative z-sections at the depths of 0 (left),+168 (middle) and +244 nm (right) from a reconstructed electron tomogram of a 750 nm-thick WT mouse retinal section. Full tomogram is shown in Figure 4—video 1. To guide the reader, the surfaces of newly forming discs are pseudo-colored in orange and a mature disc in magenta. Pseudo-coloring was used only in this example as it masks some fine morphological features of the images. (B) Representative z-sections at the depths of 0 (left),+107 (middle) and +343 nm (right) from the reconstructed electron tomogram shown in Figure 4—video 2. (C) Representative z-sections at the depths of 0 (left),+65 (middle) and +186 nm (right) from the reconstructed electron tomogram shown in Figure 4—video 3. (D) Representative z-sections at the depths of 0 (left),+19 (middle) and +208 nm from the reconstructed electron tomogram shown in Figure 4—video 4. Yellow asterisks indicate the ciliary axoneme; yellow arrows point to newly forming, unenclosed discs; yellow arrowheads point to incisures in fully enclosed discs. Tomogram pixel size is 4.2 nm (A) or 2.1 nm (B–D); scale bar: 0.5 µm.
+
 Another interesting observation from these tomograms is that incisures always originate from a spot adjacent to the ciliary axoneme. The axoneme itself, being perfectly cylindrical when it emanates from the basal body (Video 1), adopts a triangular shape at the spot where incisures are first formed (Figure 4 and Figure 4—videos 1–4). Comparable observations have been previously reported for a variety of species (e.g. Cohen, 1960; Young, 1971; Steinberg and Wood, 1975; Wen et al., 1982; Roof et al., 1991; Eckmiller, 2000). This suggests that microtubules of the ciliary axoneme establish the initial orientation of incisures, although it is unclear whether the transition in axonemal shape may be a part of the mechanism or a consequence of incisure formation.
+
+![Video 1.](https://cdn.elifesciences.org/articles/89160/elife-89160-video1.mp4.jpg)
+
+**Video 1.:** Shown is a 420 nm fragment of a 750-nm-thick retinal section. Tomogram pixel size is 0.7 nm. Field of view: 0.80 µm x 0.80 µm.
 
 In another experiment, we performed high-magnification STEM tomography on a part of an outer segment containing mature discs with fully formed incisures (Figure 5A and Figure 5—video 1). We observed several structural elements (Figure 5B), including some that appeared to emanate from a microtubule of the ciliary axoneme and connect to the disc rim at the origin point of an incisure. The regulation of the spacing between discs has been proposed to involve microtubules (Gilliam et al., 2012), suggesting that the physical connections that we observed between microtubules and the disc rim could be involved in this process. We also observed structures that appear to connect the two apposing sides of an incisure, which are comparable to structures previously observed in toads (Roof and Heuser, 1982). Lastly, we frequently observed electron-dense structures at the incisure ends. Highlighting the power of STEM tomography, we were able to resolve incisures across a span of over 20 discs (Figure 5C and Figure 5—video 1). Despite always originating from the ciliary axoneme, incisures in adjacent discs were not well-aligned along their entire lengths.
 
-## Incisure size and shape are determined by the relative outer segment contents of peripherin-2 and rhodopsin
+![Figure 5.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative z-section from a reconstructed electron tomogram of a 750-nm-thick WT mouse retinal section. Full tomogram of the boxed area is shown in Figure 5—video 1. (B) Representative maximum intensity projections of 3 (left) or 4 (right) z-sections highlighting various structures observed in a mature incisure. Green arrows point to structures spanning between microtubules and the disc rim; purple arrows point to connectors between apposing sides of the incisure; blue arrow points to the electron-dense structure at the incisure end. Yellow asterisk indicates the microtubule adjacent to the incisure. (C) Representative z-sections at the depths of 0 (Disc 1),+31.5 (Disc 2) and +63 nm (Disc 3) illustrating an imperfect alignment of incisures in three adjacent discs. Yellow arrowheads point to the incisure end in Disc 1 and the same x,y-coordinates in subsequent discs. Tomogram pixel size is 2.1 nm; scale bars: 0.25 µm (A, C) or 25 nm (B).
+
+### Incisure size and shape are determined by the relative outer segment contents of peripherin-2 and rhodopsin
 
 In the second part of this study, we explored the role of peripherin-2 in incisure formation. As described above, peripherin-2 plays an essential role in the formation of disc rims and transgenic overexpression of some peripherin-2 mutants in frogs disrupts the structure of incisures. The role of peripherin-2 in incisure formation should be considered in the context of its relative abundance with rhodopsin. Whereas rhodopsin serves as an essential structural element of the disc lamella, peripherin-2 (along with its homologous partner ROM1) form the disc rim. Together, rhodopsin and peripherin-2/ROM1 comprise ~99% of the total transmembrane protein material in normal discs (Skiba et al., 2023). Therefore, we sought to investigate whether the relationship between the surface area of a disc and the length of its rim, including both circumference and incisure, is determined by the molar ratio between rhodopsin and peripherin-2/ROM1.
 
 The knockout of peripherin-2 (which occurs in homozygous rds mice Connell et al., 1991; Travis et al., 1991) is not a useful model to study incisure formation because it completely abolishes outer segment morphogenesis (Cohen, 1983; Jansen and Sanyal, 1984). However, outer segments are still formed in heterozygous rds (rds/+) mice despite a reduction in the level of peripherin-2 (Hawkins et al., 1985; Cheng et al., 1997). Whereas some of these outer segments are dysmorphic due to abnormal disc outgrowths (Figure 6—figure supplement 1), others retain their cylindrical shape, at least in young mice. We analyzed the ultrastructure of these relatively normal rds/+ outer segments in tangential sections using TEM and found a near complete ablation of incisure formation in their discs (Figure 6A). In fact, short incisures were present in only two out of 75 analyzed rds/+ discs, whereas in WT discs, incisures spanned ~50% of the disc diameter in all analyzed outer segments (Figure 6B). These observations suggest that a decrease in relative peripherin-2 content in discs suppresses incisure formation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative TEM images of tangentially sectioned WT outer segments and rds/+ outer segments preserving their cylindrical shape. Yellow asterisks indicate the ciliary axoneme; yellow arrowheads point to incisures in WT discs. Scale bar: 1 µm. (B) Quantification of incisure length as a percent of the total disc diameter. Each data point represents a single outer segment. For each genotype, three mice were analyzed (labeled as 1, 2, and 3), with 25 outer segments analyzed in each mouse. Only 2 out of 75 analyzed rds/+ rods contained discernible incisures. Error bars represent mean ± s.d.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Representative TEM images of longitudinally sectioned WT, rds/+ and Rho+/- mouse retinas. Scale bar: +/- µm.
+
 We next analyzed hemizygous rhodopsin (Rho+/-) mice, in which the molar fraction of peripherin-2 in discs is increased due to a reduction in rhodopsin expression. Rho+/- outer segments were previously shown to lack major morphological abnormalities apart from a reduced disc diameter ( +/-), increased incisure length Makino et al., 2012; Price et al., 2012 and somewhat reduced outer segment length (Liang et al., 2004; Price et al., 2012; see also Figure 6—figure supplement 1). Interestingly, we found that disc incisures in these mice were not just longer but also had significant variability in shape. Some of them were mostly straight, as in WT mice, but extended the entire disc diameter (Figure 7A). Others were bifurcated or twisted along their length (Figure 7B). A subset of outer segments contained tubular structures aligned along the incisure (Figure 7C), which are strikingly similar to structures observed in rhodopsin knockout (Rho-/-) mice (Figure 7D) thought to be formed by peripherin-2 in the absence of normal disc formation (Chakraborty et al., 2014). They are also similar to the tubular structures forming in cultured cells expressing recombinant peripherin-2 (Milstein et al., 2017; Salinas et al., 2017; Milstein et al., 2020). Therefore, the tubules observed in some Rho+/- outer segments are likely to be formed by the excess of peripherin-2 not incorporated into the incisure. These observations suggest that an increase in relative peripherin-2 content in discs causes an increase in incisure size and complexity.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig7-v2.jpg)
 
-**Figure 7.:** (A–C) Representative TEM images of tangentially sectioned Rho mouse retinas. Incisures can be relatively straight and extend nearly the entire disc diameter (+/-A) or be bifurcated or twisted (B). In some cells, incisures are associated with tubular structures (C). (D) Representative TEM image of a tangentially sectioned Rho retina. While lacking discs, the outer segment cilium contains a large number of tubular structures. Yellow arrowheads point to incisure ends; orange arrows point to tubular structures. Scale bar: +/- µm.-/-
+**Figure 7.:** (A–C) Representative TEM images of tangentially sectioned Rho+/- mouse retinas. Incisures can be relatively straight and extend nearly the entire disc diameter (A) or be bifurcated or twisted (B). In some cells, incisures are associated with tubular structures (C). (D) Representative TEM image of a tangentially sectioned Rho-/- retina. While lacking discs, the outer segment cilium contains a large number of tubular structures. Yellow arrowheads point to incisure ends; orange arrows point to tubular structures. Scale bar: +/- µm.
 
 To further explore the idea that the sizes of discs and incisures are defined by the molar ratio between rhodopsin and peripherin-2, we measured this ratio in outer segments obtained from mice of all three genotypes. We also analyzed the levels of ROM1 because it is another tetraspanin contributing to disc rim formation by oligomerizing with peripherin-2. We used a quantitative mass spectrometry approach that we have recently applied to determine the molar ratio amongst multiple outer segment proteins, including these three proteins (Skiba et al., 2023). Our measurements are summarized in Table 1 (see for raw data).
+
+**Table 1.**
+ Quantification of molar ratios between rhodopsin, peripherin-2 and ROM1 in mouse outer segments.Table 1—source data 1.Quantification of molar ratios between rhodopsin, peripherin-2 and ROM1 in mouse outer segments – raw data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein molar ratio*</th>
+      <th>WT</th>
+      <th>rds/+</th>
+      <th>Rho+/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rhodopsin: peripherin-2</td>
+      <td>18.2±0.6</td>
+      <td>30.9±6.0</td>
+      <td>8.5±1.5</td>
+    </tr>
+    <tr>
+      <td>Rhodopsin: ROM1</td>
+      <td>42.2±0.6</td>
+      <td>29.9±2.0</td>
+      <td>21.6±3.7</td>
+    </tr>
+    <tr>
+      <td>Peripherin-2: ROM1</td>
+      <td>2.3±0.1</td>
+      <td>1.0±0.2</td>
+      <td>2.6±0.6</td>
+    </tr>
+    <tr>
+      <td>Rhodopsin: (Peripherin-2 +ROM1)</td>
+      <td>12.7±0.4</td>
+      <td>15.1±1.8</td>
+      <td>6.0±0.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values are shown as mean ± s.d. Three outer segment preparations from mice of each genotype were analyzed._
 
 In WT outer segments, the molar ratios of rhodopsin to peripherin-2 and ROM1 were ~18:1 and ~42:1, respectively, as in Skiba et al., 2023. In rds/+ outer segments, the rhodopsin to peripherin-2 ratio was increased by ~1.7 fold (~31:1), whereas in Rho+/- outer segments it was decreased by +/-2 fold (~9:1). Both changes are consistent with these mouse lines expressing single copies of the corresponding gene (see also Lem et al., 1999; Chakraborty et al., 2014). Considering ROM1, rds/+ outer segments contained relatively more ROM1 than WT outer segments (rhodopsin to ROM1 ratios of ~30:1 and ~42:1, respectively), suggesting that more ROM1 is incorporated into disc rims when there is a deficiency in peripherin-2. Accordingly, the molar ratio between peripherin-2 and ROM1 shifted from ~2.3:1 in WT rods to ~1:1 in rds/+ rods. In contrast, the molar ratio between peripherin-2 and ROM1 was essentially unaffected in Rho+/- +/- (~2.6:1 vs. ~2.3:1 in WT rods), indicating that rhodopsin deficiency does not disrupt the balance between these two tetraspanins.
 
@@ -89,13 +156,69 @@ We measured disc diameters in WT and Rho+/- +/- to be ~1.5 and~1.1 µm, respecti
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig8-v2.jpg)
 
-**Figure 8.:** Rho mouse rods.+/-Each data point represents a single outer segment. For each genotype, three mice were analyzed (labeled as 1, 2, and 3), with 25 outer segments analyzed in each mouse. Error bars represent mean ± s.d. Unpaired t-test was performed using the average disc diameter in each mouse to determine that the difference in diameters of WT and Rho +/- was statistically significant (p=0.0075).+/-
+**Figure 8.:** Each data point represents a single outer segment. For each genotype, three mice were analyzed (labeled as 1, 2, and 3), with 25 outer segments analyzed in each mouse. Error bars represent mean ± s.d. Unpaired t-test was performed using the average disc diameter in each mouse to determine that the difference in diameters of WT and Rho+/- +/- was statistically significant (p=0.0075).
+
+**Table 2.**
+ Summary of quantitative parameters determined for mouse discs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Calculated parameter</th>
+      <th>WT</th>
+      <th>Rho+/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Disc surface area (both lamellae)</td>
+      <td>3.53 µm2</td>
+      <td>1.80 µm2</td>
+    </tr>
+    <tr>
+      <td>Rhodopsin molecules per disc</td>
+      <td>75,000</td>
+      <td>38,200</td>
+    </tr>
+    <tr>
+      <td>Peripherin-2+ROM1 molecules per disc</td>
+      <td>5,910</td>
+      <td>6,360</td>
+    </tr>
+    <tr>
+      <td>Total rim length</td>
+      <td>6.21 µm</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Measured incisure length as % of disc diameter</td>
+      <td>50%†</td>
+      <td>N/A*</td>
+    </tr>
+    <tr>
+      <td>Theoretical incisure length as % of disc diameter</td>
+      <td>-</td>
+      <td>155%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Incisure and total rim lengths in Rho +/- discs cannot be readily measured due to incisure complexity.†The value is taken from the measurements shown in Figure 6._
 
 Next, we measured the total disc rim length in WT discs, including the incisure, and found it to be 6.21 µm. Assuming that all tetraspanin molecules in fully enclosed discs are located at the rims, we estimated that there are ~950 tetraspanin molecules per 1 µm of disc rim in WT rods. Assuming that this tetraspanin density is not changed in disc rims of Rho+/- +/-, we calculated that the total rim length in Rho+/- +/- is predicted to be ~6.69 µm. Given that the circumference of Rho+/- +/- is~3.36 µm, the predicted incisure length is ~1.66 µm, or ~155% of the disc diameter. The fact that this value exceeds 100% is consistent with the observed abnormalities in incisure length and shape, including bifurcated or twisted incisures and adjacent tubular structures. Of note, the outer segment length does not affect this analysis because the molar ratio between rhodopsin and tetraspanins in each disc is invariant across the entire disc stack.
 
-## Peripherin-2 knockout frogs form outer segments with greatly reduced incisures
+### Peripherin-2 knockout frogs form outer segments with greatly reduced incisures
 
 In the last set of experiments, we explored the role of peripherin-2 in controlling incisure formation in frog photoreceptors, as their discs contain more than a single incisure (Figure 1). We generated a peripherin-2 knockout (prph2-/-) Xenopus tropicalis frog using CRISPR-Cas9 to create mutations within exon 1 of prph2 (see Materials and methods for additional details). Ultrastructural analysis of their retinas revealed a relatively normal outer segment morphology, except for occasional overgrowth of disc membranes sometimes shaped as whorls (Figure 9).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig9-v2.jpg)
+
+**Figure 9.:** (A–D) Representative TEM images of longitudinally sectioned WT and prph2-/- frog retinas. (E,F) Representative TEM images of tangentially sectioned WT and prph2-/- frog retinas. Magenta arrows point to defects in outer segment morphology; yellow arrowheads point to incisures; asterisks indicate cones, as evident by the presence of an oil droplet in their inner segments. OS: outer segment; IS: inner segment. Scale bars: 5 µm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/89160/elife-89160-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Representative TEM image of a tangentially sectioned WT frog retina. Yellow asterisks indicate the ciliary axoneme; yellow arrowheads point to incisures. Scale bar: 1 µm.
 
 The formation of outer segments in these frogs was surprising considering the complete lack of outer segments in peripherin-2 knockout mice. This cross-species difference could be explained by Xenopus expressing multiple peripherin-2 homologs. It was reported that Xenopus laevis expresses three peripherin-2 homologs termed xrds38, xrds36, and xrds35 (Kedzierski et al., 1996). The current annotations of the Xenopus tropicalis and Xenopus laevis genomes suggest that xrds38 (knocked out in our current study) is the frog peripherin-2 homolog (XenBase: XB-GENEPAGE-985593) while xrds36 and xrds35 are isoforms of ROM1 (XenBase: XB-GENEPAGE-962405). In addition, these genomes contain another peripherin-2-like gene, termed prph2l (XenBase: XB-GENEPAGE-5759091). Therefore, it is plausible that peripherin-2-like protein and/or ROM1 isoforms are sufficient or even play a primary role in supporting outer segment morphogenesis in frog photoreceptors.
 
@@ -117,34 +240,86 @@ Another unanswered question is how the number of incisures in a disc is determin
 
 ## Materials and methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Labs</td>
+      <td>Jax#:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Mus musculus)</td>
+      <td>Rho</td>
+      <td>Lem et al., 1999</td>
+      <td>MGI:2680822</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Mus musculus)</td>
+      <td>rds</td>
+      <td>van Nie et al., 1978</td>
+      <td>MGI:1856523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Xenopus tropicalis)</td>
+      <td>Nigerian</td>
+      <td>National Xenopus Resource</td>
+      <td>RRID:NXR_1018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Xenopus tropicalis)</td>
+      <td>prph2</td>
+      <td>This paper</td>
+      <td>RRID:NXR_3003</td>
+      <td>National Xenopus Resource</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 Animal maintenance and experiments were approved by the Institutional Animal Care and Use Committees at Duke (Durham, NC; protocol #A184-22-10) and the Marine Biological Laboratory (Woods Hole, MA; protocol #22–29). WT mice (Mus musculus) were C57BL/6 J (Jackson Labs stock #000664). rds mice are described in van Nie et al., 1978. Rho-/- mice are described in Lem et al., 1999. Mice were genotyped to ensure that they did not contain either the rd8 (Mattapallil et al., 2012) or rd1 (Pittler et al., 1993) mutations commonly found in inbred mouse strains. prph2 mutant frogs (Xenopus tropicalis) are described below. Mice were used at 1 month of age. Frogs were used at either 7- or 14 days post fertilization. All experiments were performed with animals of randomized sex and, for each experiment, at least three biological replicates were analyzed.
 
-## Generation of prph2 knockout Xenopus tropicalis
+### Generation of prph2 knockout Xenopus tropicalis
 
 The prph2 knockout line (RRID:NXR_3003) was generated using CRISPR-Cas9. CRISPRScan Moreno-Mateos et al., 2015 was used to design two sgRNAs within the first exon of prph2 (sgRNA1: GGGGTCTGCTTCTTGGCCAG; sgRNA2: GGGATACTGACACCCCCGGC) with 5’ dinucleotides converted to GG for increased mutagenic activity (Gagnon et al., 2014). sgRNAs were synthesized using the SP6 MEGAscript SP6 Transcription Kit (Invitrogen, Waltham, MA). F0 injections were performed by injecting one-cell stage embryos from the X. tropicalis Nigerian strain (RRID: NXR_1018). Each embryo was injected with 500 pg each of sgRNA1/sgRNA3 and 1000 pg Cas9. Founders were raised to sexual maturity and screened for germline transmission of mutations. A –20 bp mutation, which results in a frameshift mutation at amino acid 183 and a stop codon 7 amino acids downstream, was selected for generating the prph2 line. Intercrosses were done on –20 bp heterozygotes to generate prph2 mutants.
 
-## Tissue fixation
+### Tissue fixation
 
 For mice, tissue fixation was performed as described previously (Ding et al., 2015). In the morning after lights were turned on, anesthetized mice were transcardially perfused with 2% paraformaldehyde, 2% glutaraldehyde and 0.05% calcium chloride in 50 mM MOPS (pH 7.4) resulting in exsanguination. Enucleated eyes were fixed for an additional 2 hr in the same fixation solution at room temperature prior to processing. For frog tadpoles, tissues were fixed with 2% paraformaldehyde, 2% glutaraldehyde in 0.1 M sodium cacodylate buffer (pH 7.2) overnight at 4 °C.
 
-## Tissue processing
+### Tissue processing
 
 For processing of longitudinal sections of mouse retinas, eyecups were dissected from fixed eyes, embedded in 2.5% low-melt agarose (Precisionary, Greenville, NC) and cut into 200-µm-thick slices on a Vibratome (VT1200S; Leica, Buffalo Grove, IL). Agarose sections were treated with 1% tannic acid (Electron Microscopy Sciences, Hartfield, PA) and 1% uranyl acetate (Electron Microscopy Sciences), gradually dehydrated with ethanol and infiltrated and embedded in Spurr’s resin (Electron Microscopy Sciences). For processing of tangential sections of mouse retinas, dissected retinas were treated with 1% tannic acid (Electron Microscopy Sciences) and 1% uranyl acetate (Electron Microscopy Sciences), gradually dehydrated with ethanol and infiltrated and embedded in Spurr’s resin (Electron Microscopy Sciences). For processing of frog samples, tadpoles were treated with 1% tannic acid (Electron Microscopy Sciences) and 1% uranyl acetate (Electron Microscopy Sciences), gradually dehydrated with ethanol and infiltrated and embedded in Spurr’s resin (Electron Microscopy Sciences).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 A total of 70 nm sections were cut from resin-embedded samples, placed on copper grids and counterstained with 2% uranyl acetate and 3.5% lead citrate (Ted Pella, Redding, CA). Samples were imaged on a JEM-1400 electron microscope (JEOL, Peabody, MA) at 60 kV with a digital camera (BioSprint; AMT, Woburn, MA). Image analysis and processing was performed with ImageJ.
 
-## Electron tomography
+### Electron tomography
 
 Of the central retina, 750 nm sections were cut from resin-embedded samples and placed on 50 nm Luxel film slot grids. The grids were glow-discharged on both sides, and a mixture of 10 nm, 20 nm, and 60 nm gold particles were deposited on the sample surfaces to serve as fiducial markers. Electron tomography was conducted on a Titan Halo (FEI, Hillsboro, OR) operating at 300 kV in STEM mode. A 4-tilt series data acquisition scheme previously described (Phan et al., 2017) was followed in which the specimen was tilted from −60° to +60° every 0.25° at 4 evenly distributed azimuthal angle positions. The micrographs were collected with a high-angle annular dark field (HAADF) detector. The final volumes were generated using an iterative reconstruction procedure (Phan et al., 2017). Image analysis and processing was performed with 3dmod and ImageJ.
 
-## Quantitative mass spectrometry
+### Quantitative mass spectrometry
 
 A crude preparation of rod outer segments was obtained from dissected mouse retinas that had been vortexed in 8% OptiPrep in mouse Ringer’s solution (containing 130 mM NaCl, 3.6 mM KCl, 2.4 mM MgCl2, 1.2 mM CaCl2, and 10 mM HEPES, pH 7.4) that was adjusted to 314 mOsm. The preparation was briefly left on ice to allow the remaining retinal tissue to settle. The supernatant was removed and centrifuged at 20,000 x g. Pelleted outer segments were gently washed with mouse Ringer’s solution before lysis with 2% SDS in PBS. Protein concentration was measured with the Bio-Rad Protein Assay kit (Bio-Rad, Hercules, CA). Samples containing 20 µg of protein were mixed with 0.5 µg BSA (used as an internal standard in this analysis) and cleaved with 1 µg trypsin/LysC mix (Promega, Madison, WI) using the SP3 beads protocol described in Hughes et al., 2014. The combined digest of outer segments and BSA was mixed with the digest of a chimeric protein consisting of concatenated tryptic peptides of outer segment proteins, including rhodopsin, peripherin-2 and ROM1, which is described in Skiba et al., 2023. Mass spectrometry, data processing and data analysis were also performed as described in Skiba et al., 2023. For each genotype, a total of three biological replicates were analyzed.
 
-## Materials availability statement
+### Materials availability statement
 
 The prph2 knockout frog (RRID:NXR_3003) is available at the National Xenopus Resource.

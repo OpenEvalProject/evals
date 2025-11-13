@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/012a77v79 Division of Molecular Hematology, Department of Laboratory Medicine, Lund Stem Cell Center, Faculty of Medical, Lund University Lund Sweden
+1. Division of Molecular Hematology, Department of Laboratory Medicine, Lund Stem Cell Center, Faculty of Medical, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
 
 † Corresponding author
 
@@ -32,17 +32,33 @@ Here, we provide molecular and functional details on HSC differentiation and sel
 
 ## Results
 
-## In vivo HSC activity is restricted to cells expressing high levels of EPCR
+### In vivo HSC activity is restricted to cells expressing high levels of EPCR
 
 We first assessed the in vivo reconstituting activity of cHSCs with different phenotypes. The endothelial protein C receptor (EPCR or PROCR/CD201) is highly expressed on HSCs (Balazs et al., 2006), while CD41 (ITGA2B) was suggested to be functionally relevant for HSC maintenance and homeostasis (Gekas and Graf, 2013). Based on expression of EPCR and CD41, we isolated four subfractions within BM SLAM LSK cells (Lin-Sca1+cKit+CD150+CD48-/low) (Figure 1A) and competitively transplanted them at equal numbers into lethally irradiated recipients (Figure 1B). The reconstitution from the three EPCRhigh fractions was restricted to the peripheral blood (PB) myeloid lineages 4 weeks post-transplantation (Figure 1C), and most of these recipients displayed robust long-term (beyond 16 weeks) multilineage reconstitution with equivalent cHSC chimerism in the BM (Figure 1C–D). EPCRhighCD41- cells produced slightly more lymphoid cells than the EPCRhighCD41+ cells at the endpoint (Figure 1—figure supplement 1A), but the cHSC chimerism in the BM was very similar to other tested EPCRhigh fractions (Figure 1D). In contrast to Gekas and Graf, 2013, we failed to observe that staining with the CD41 antibody (MWreg30 clone) compromises HSC engraftment. Transplantation of EPCR negative cells failed to associate with either long-term PB or BM-cHSC chimerism, demonstrating lack of HSC activity within this fraction (Figure 1C–D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig1-v1.jpg)
+
+**Figure 1.:** (A) Expression patterns of EPCR and CD41 within the BM LSK SLAM fraction. Gates depict the assessed cell fractions. (B) Strategy used to assess the correlation of EPCR and CD41 expression to the in vivo HSC activity. (C) Test cell-derived chimerism in peripheral blood (PB) 4 and 16 weeks post-transplantation. n=5 per group. (D) Test cell-derived chimerism in BM EPCR+ SLAM LSKs 16 weeks post-transplantation. n=5 per group. (E) Correlation between duration of radioprotection and EPCR expression levels. BM LSK SLAM cells were co-stained with EPCR and index-sorted at one cell per well, cultured for 21 days, and the content of each well transplanted to individual recipients (n=22). Correlation to mortality of individual mice was made by assessing which well was transplanted into which mouse and coupling this to the index-sorting information. The gray dash line indicated the separation of EPCR higher (>4900) or lower expression (<4900) cHSCs. (F) Donor contribution in PB myeloid cells. Mice were transplanted with ex vivo expanded cells from either 50 SLAM LSK EPCRlow (n=5) or 50 SLAM LSK EPCRhigh cells (n=5) and assessments made 16 weeks after transplantation. All data points depict values in individual recipients. Error bars denote SEM. The asterisks indicate significant differences. *, p<0.05; **, p<0.01. In (E) a regression line was generated based on an endpoint survival of 150 days (the time at which the experiment was terminated).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The distribution of lymphoid (pooled B and T cells) and myeloid cells out of the test cell-derived reconstitution 16 weeks post-transplantation. n=5 for each group. (B) Index-sorting strategy for single-cell cultures. (C) Overall cell expansion from one index-sorted SLAM LSKs after 8 (EPCRlow, n=10; EPCRhigh, n=14) or 25 days (EPCRlow, n=10; EPCRhigh, n=15) of ex vivo culture. Cultures were separated into two groups based on endothelial protein C receptor (EPCR) expression level. (D) Strategy to assess repopulating and radioprotection ability of ex vivo expanded cells from index-sorted single SLAM LSKs. (E) Strategy to assess repopulating and radioprotection ability of cells ex vivo expanded from 50 EPCRhigh or EPCRlow SLAM LSKs. Data points depict values in individual recipients or individual cultures. Error bars denote SEM. The asterisks indicate significant differences. *, p<0.05; **, p<0.01; ****, p<0.0001.
 
 Next, single EPCR+ SLAM LSKs were index-sorted (Figure 1—figure supplement 1B) and expanded ex vivo in an F12-polyvinyl alcohol (PVA)-based culture media (Wilkinson et al., 2020b). At an early stage (8 days, Figure 1—figure supplement 1C), cultures initiated with SLAM LSK cells with higher EPCR expression proliferated less compared to those with lower EPCR expression. However, after longer expansion (25 days, Figure 1—figure supplement 1C), the EPCR higher cells generated on average a larger amount of progeny. To evaluate the HSC activity following ex vivo expansion and to correlate this directly to EPCR expression levels, the expanded cells from index-sorted cultures of cHSCs were collected and transplanted into individual lethally irradiated mice (Figure 1—figure supplement 1D). While freshly and stringently isolated HSCs normally fail to rescue mice from lethal irradiation (Nakauchi et al., 1999), we here entertained that culturing of HSCs in addition to inducing self-renewal would also generate progenitors that could radioprotect the hosts. If so, survival could be used as a proxy for combined hematopoietic stem and progenitor cell (HSPC) activity. Indeed, mice receiving progeny from SLAM LSK EPCR higher cells were more efficiently radioprotected (Figure 1E). Thereafter, we initiated cultures with EPCRhigh or EPCRlower SLAM LSK cells fractions (Figure 1—figure supplement 1E). Mice transplanted with cells expanded from EPCRhigh cells radioprotected 5/5 recipients, while only two out of five animals receiving the progeny of EPCRlow cells survived long term. As expected, these surviving mice displayed exclusive test cell-derived myelopoiesis long term after transplantation (Figure 1F).
 
 Taken together, these experiments established that HSC activity was restricted to EPCRhigh HSCs, and such cells could effectively generate progeny in vitro that rescue mice from lethal irradiation. Therefore, we operationally defined our input cHSCs by their EPCRhigh SLAM phenotype.
 
-## Phenotypic heterogeneity from ex vivo expanded cHSCs
+### Phenotypic heterogeneity from ex vivo expanded cHSCs
 
 The PVA-dependent cell culture system was reported to efficiently support HSC activity ex vivo over several weeks (Wilkinson et al., 2019). However, the functional HSC frequency did not appear on par with the total amount of cells generated by the end of the culture period, suggesting the generation also of many differentiated cells (Wilkinson et al., 2019). To detail this, we expanded aliquots of cHSCs ex vivo for 14–21 days, followed by multicolor phenotyping. From 50 cHSCs, an average of 0.5 million (14 days) and 13.6 million cells (21 days) were generated (Figure 2—figure supplement 1A) and which associated with a phenotypic heterogeneity that increased over time (Figure 2—figure supplement 1B). With the assumption that HSCs might retain their cell surface phenotype in cultures, we quantified EPCRhigh SLAM cells and observed a decrease in their frequency over time, although this was numerically counteracted by the overall proliferation in cultures (Figure 2A). Thus, quantification of cHSCs translated into an average expansion of 54-fold (26- to 85-fold) and 291-fold (86- to 1273-fold) at 14 and 21 days, respectively (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig2-v1.jpg)
+
+**Figure 2.:** (A) Frequency and fold change of phenotypic candidate HSCs (cHSCs) (EPCRhigh SLAM LSKs) in ex vivo cultures after 14 or 21 days of culture (n=12 per group). Data points depict values from individual cultures initiated from 50 cHSCs. Error bars denote SEM. The asterisks indicate significant differences. ****, p<0.0001. (B) UMAP (based on SAILERX dimensionality reduction) of single-cell multiome profiling of cells expanded ex vivo for 21 days. Cell-type annotations were derived using marker gene signatures and distal motif identities. (C) Trajectory analysis of lineage differentiation for cells expanded ex vivo (left), with the top 3 scoring TF motifs of each cluster (right). (D) Expression of HSC signature on whole culture. (E) Expression of HSC signature of EPCR+ cells sorted from ex vivo cultures. (F) Cell cycle phase classification of EPCR+ cells sorted from ex vivo cultures.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Overall cell expansion from 50 EPCRhigh SLAM LSKs after 14 or 21 days of ex vivo culture (n=12 per group). (B) Frequency of cells expressing different stem cell markers in ex vivo cultures following 14 or 21 days of culture (n=12 per group). Data points depict values from individual cultures initiated from 50 cHSCs. (C) List of signatures used to define cHSCs. (D) and (E) Expression of endothelial protein C receptor (EPCR) on whole culture and EPCR+ cells. (F) and (G) Representative FACS plots of cells expanded 14 or 21 days in ex vivo cultures using Fgd5-ZsGreen reporter cells, respectively. Mean values demonstrate the frequency of Fgd5+Lin-Fcer1a- or Fgd5+EPCR+CD150+Fcer1a-LSK cells, respectively. Mean ± SEM value was calculated from 15 individual cultures initiated from 50 cHSCs. Error bars denote SEM. The asterisks indicate significant differences. **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
 To gain a deeper understanding of the cells generated in our ex vivo cultures, we collected cells from the entire culture expanded from 500 cHSCs and isolated nuclei for single-cell multiome sequencing using a commercial platform from 10x Genomics. This approach combines single-cell RNA sequencing and single-cell ATAC sequencing, allowing for integrated analysis of these modalities.
 
@@ -54,19 +70,138 @@ To explore if other markers could provide additional phenotypic information for 
 
 Collectively, these results demonstrated robust expansion of cHSCs using the PVA-based culture system, albeit with additional parallel generation of a large number of more differentiated cells. While the identities of most of the cells in cultures could be clearly deduced by their combined gene expression and chromatin accessibility profiles, this approach failed to inform on the heterogeneous expression pattern of CD48 on cHSCs (Figure 2—figure supplement 1).
 
-## Functional HSC activity associates to a minor LSK SLAM EPCRhigh fraction within ex vivo cultures
+### Functional HSC activity associates to a minor LSK SLAM EPCRhigh fraction within ex vivo cultures
 
 Given our inability to distinctly identify cHSCs by their molecular profiles, we next explored the possibility to prospectively isolate HSCs from the cHSC cultures and instead rely on their functional ability to long-term repopulate lethally irradiated hosts for readout. cHSCs were isolated and cultured ex vivo for 21 days and the expanded cells were separated into two equal portions: one portion was kept unfractionated, while three subpopulations of CD150+LSKs: EPCRhighCD48-/low, EPCRhighCD48+, and EPCR- were sorted from the other portion. The fractions were competitively transplanted into lethally irradiated mice, such that each recipient received fractions equivalent to the expansion from 50 cHSCs (EE50) along with 500,000 competitor WBM cells (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig3-v1.jpg)
+
+**Figure 3.:** (A) Strategy to assess the in vivo HSC activity of subfractions from ex vivo cultures. (B) Test cell-derived chimerism in peripheral blood (PB) myeloid lineages over 24 weeks post-transplantation. Data represent mean values ± SEM (n=5 per group). A one-way ANOVA test was applied, with the asterisks indicating significant differences among the four groups. ****, p<0.0001. (C) Test cell-derived chimerism in bone marrow (BM) progenitor subsets 24 weeks post-transplantation (n=5 per group). Numbers indicate fold differences between the EPCR+ CD48-/low and EPCR+CD48+ fractions, and data points depict chimerism levels in individual recipients.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Test cell-derived chimerism in PB B cells over 24 weeks post-transplantation (n=5 per group). (B) Test cell-derived chimerism in PB T cells over 24 weeks post-transplantation. Data represent mean values (n=5 per group). Error bars denote SEM. A one-way ANOVA test was applied, with the asterisks indicating significant differences among the four groups. ****, p<0.0001.
 
 Stable and very high long-term multilineage reconstitution was observed in all recipients of unfractionated cultured cells. By contrast, test cell-derived reconstitution was not recovered from EPCR- cells (Figure 3B and Figure 3—figure supplement 1). EPCRhighCD48+ cells produced very high reconstitution levels short term after transplantation, but the chimerism provided by these cells dropped considerably over time (Figure 3B and Figure 3—figure supplement 1). This differed strikingly from recipients receiving the minor fraction of EPCRhighCD48-/low cells, which presented with robust long-term multilineage reconstitution (Figure 3B and Figure 3—figure supplement 1). While almost no BM-cHSC chimerism was observed from EPCRhighCD48+ cells, EPCRhighCD48-/low cells produced very high chimerism in all evaluated progenitor fractions, including for cHSCs (Figure 3C).
 
 These data established that functional in vivo HSC activity following culture is restricted to the minor fraction of SLAM LSK EPCRhigh cells.
 
-## Quantification of HSC activity in ex vivo expansion cultures
+### Quantification of HSC activity in ex vivo expansion cultures
 
 Expanded cHSCs presented with a vastly higher reconstitution activity compared to freshly isolated cHSCs, and mostly fell out of range for accurate quantification (Figure 3B). We therefore assessed the impact of lowering the amount of input cHSCs and enhancing the amount of competitor cells. Aliquots of 10 cHSCs were cultured and expanded for 21 days. Cells from each culture (EE10) were next mixed with 2 or 20 million (2M or 20M) competitor WBM cells, followed by transplantation (Figure 4A, ‘individual’). In parallel, we also included a group in which EE50 cHSCs were mixed with 10 million WBM cells and split among five lethally irradiated recipients (Figure 4A, ‘pooled’). This allowed us to assess the variability among input cHSCs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig4-v1.jpg)
+
+**Figure 4.:** (A) Competitive transplantation strategies used to assess the repopulation of ex vivo expanded cHSCs. (B) Test cell-derived peripheral blood (PB) reconstitution 16 weeks post-transplantation (n=5 per group). Symbols denote individual mice and means ± SEM. (C) Bone marrow (BM) cHSCs chimerism 16 weeks post-transplantation (n=5 per group). Symbols denote individual mice, and means ± SEM. (D) Barcode approaches used to assess the clonal HSC contribution of ex vivo expanded HSCs before (i) or after (ii) ex vivo expansion. (E) Clone sizes of unique barcodes in ‘parental’ recipients and their appearance in ‘daughter’ recipients, demonstrating extensive variation in expansion capacity among individual HSCs. Red lines indicate the median clone size in ‘parental’ recipients. (F) Clone sizes of unique barcodes detected in BM myeloid cells of ‘parental’ recipients and their corresponding contribution in ‘daughter’ recipients. The red line denotes the correlation/linear regression. (G) Clone sizes in ‘parental’ recipients transplanted with ‘pre-culture’ barcoded cells, or in recipients of ‘post-culture’ barcoded cells. Median clone sizes are shown with interquartile ranges. (H) Frequency of barcodes and their clone sizes in recipients of pre- or post-cultured barcoded HSCs. BCs, barcodes. All data points depict values in individual recipients or barcodes. Asterisks indicate significant differences. *, p<0.05; ****, p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Percentage of test cell-derived cells in peripheral blood (PB) to each of the assessed lineages 16 weeks post-transplantation (n=5 per group). Mice were transplanted with CD45.2+ EE10 BM-cHSCs together with 2 or 20 million CD45.1+ WBM cells. (B) Test cell-derived chimerism in BM-cHSCs 16 weeks post-transplantation (n=5 per group). Mice were transplanted with CD45.2+ EE10 BM-cHSCs together with 2 or 20 million CD45.1+ WBM cells. (C) Outline of the competitive transplantation strategy to assess the repopulation ability of ex vivo expanded FL-cHSCs. (D) Phenotypic analysis of ex vivo expanded BM-HSCs and FL-HSCs (n=8 per group). (i) Overall cell expansion from 50 BM- or FL-EPCRhigh SLAM LSKs after 21 days of ex vivo culture. (ii) Frequency and fold change of phenotypic cHSCs (EPCRhigh SLAM LSKs) in ex vivo cultures after 21 days of culture from BM- or FL-cHSCs. (E) Test cell-derived chimerism in PB myeloid cells 16 weeks post-transplantation (n=5 per group). (F) Test-derived HSCs chimerism in the BM of the recipients received ex vivo expanded cells from BM- or FL-cHSCs 16 weeks post transplantation (n=5 per group). (G) Repopulating units (RUs) equivalent to one initial cHSC within PB myeloid cells and BM-cHSCs in the recipients of 50 BM-cHSCs (n=15) or ex vivo expanded cells from 10 BM- (n=5) or FL-cHSCs (n=5) 16 weeks post-transplantation. Fold changes of EE10 BM-cHSCs versus 50 fresh BM-cHSCs or EE10 FL-cHSCs are indicated. Median values are shown with interquartile ranges. All data points depict values in individual recipients or culture wells. Error bars denote SEM. The asterisks indicate significant differences. *, p<0.05; **, p<0.01; ***, p<0.001.
+
 Although robust reconstitution was observed in most recipients of ‘individual’ cultures (Table 1, Figure 4B–C, and Figure 4—figure supplement 1A–B), the levels of test cell-derived cells varied extensively among these recipients. To quantify the HSC activity in each recipient, we calculated the repopulating units (RUs) (Harrison et al., 1993) for each lineage and recipient separately at the experimental endpoint (Table 1). Short-lived myeloid cells have been proposed as a better indicator of ongoing HSC activity (Domen et al., 2000), and in agreement with this, we observed a high correlation between the RUmyeloid and RUs for cHSCs in the BM (Table 1). A much more consistent HSC activity was observed in-between recipients of ‘pooled’ cells (Table 1, Figure 4B–C). This confirmed that the differential chimerism in recipients of limited cHSC numbers relates to an unresolved cellular heterogeneity of input cHSCs. RUs per initial cHSC were calculated for freshly isolated BM-cHSCs (the three EPCRhigh groups from Figure 1B) and following 3-week culture (‘pooled’ group). This revealed 461- and 70-fold increases in PB myeloid and BM-cHSC chimerism in recipients of ex vivo expanded cells, respectively. This is an estimate of the increase of functional HSC activity following ex vivo culture (Figure 4B–C and Figure 4—figure supplement 1G).
+
+**Table 1.**
+ Repopulating units (RUs) for each lineage in peripheral blood (PB) and for bone marrow (BM) candidate hematopoietic stem cells (cHSCs) of each recipient.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Recipients</th>
+      <th>PB</th>
+      <th>B cells</th>
+      <th>T cells</th>
+      <th>Myeloid cells</th>
+      <th>BM-cHSCs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">IndividualBM EE10+2M</td>
+      <td>#1</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>#2</td>
+      <td>31</td>
+      <td>35</td>
+      <td>19</td>
+      <td>27</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>#3</td>
+      <td>21</td>
+      <td>23</td>
+      <td>17</td>
+      <td>35</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>#4</td>
+      <td>98</td>
+      <td>144</td>
+      <td>46</td>
+      <td>57</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>#5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.03</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td rowspan="5">PooledBM EE10+2M</td>
+      <td>#1</td>
+      <td>101</td>
+      <td>78</td>
+      <td>173</td>
+      <td>583</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>#2</td>
+      <td>110</td>
+      <td>84</td>
+      <td>120</td>
+      <td>516</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>#3</td>
+      <td>87</td>
+      <td>68</td>
+      <td>103</td>
+      <td>248</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>#4</td>
+      <td>101</td>
+      <td>70</td>
+      <td>149</td>
+      <td>384</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>#5</td>
+      <td>65</td>
+      <td>127</td>
+      <td>186</td>
+      <td>331</td>
+      <td>112</td>
+    </tr>
+  </tbody>
+</table>
+
+_1 RU equals to the average reconstitution activity of 1×105 WBM cells._
 
 We next assessed HSC clonality using a lentiviral barcoding approach. Five aliquots of 1000 cHSCs were transduced with a barcode library (Biddy et al., 2018) 48 hr after culture and then expanded for 19 days. Half of the expanded cells from each well were transplanted into one ‘parental’ recipient, respectively, while the other half was mixed with each other, with each ‘daughter’ recipient receiving 1/5 of the mixed cells (Figure 4D-i). As a proxy for the HSC activity, barcodes were extracted from BM test-derived myeloid cells 16 weeks post-transplantation. Following stringent filtering, we retrieved 223 unique barcodes in the ‘parental’ recipients, with a highly variable contribution (0.1–26.0%, Figure 4E–G). Representation of the same barcode in ‘parental’ and ‘daughter’ recipients demonstrates a shared clonal/HSC origin, where more robustly expanding HSCs should have a higher chance of reconstituting more ‘daughter’ recipients. Our data agreed well with this presumption (Figure 4E), and the most actively shared clones also associated with larger outputs in ‘daughter’ recipients (Figure 4F).
 
@@ -76,9 +211,17 @@ Finally, we assessed how the culture system supports the in vivo activity of fet
 
 Taken together, these experiments demonstrated robust increases in HSC activity following culture of cHSCs, albeit slightly less for FL-cHSCs. However, clonal barcode assessments revealed substantial variation in ex vivo expansion potential of even stringently purified input cHSCs.
 
-## Ex vivo expanded cHSCs returns to a quiescent state following engraftment in unconditioned recipients
+### Ex vivo expanded cHSCs returns to a quiescent state following engraftment in unconditioned recipients
 
 Successful engraftment in an unconditioned setting requires large numbers of HSCs/HSPCs (Brecher et al., 1982), which reportedly can be accommodated by PVA-cultured HSCs (Wilkinson et al., 2019). To test this, we transplanted EE100 CD45.1+ cHSCs into lethally irradiated or unconditioned CD45.2+ recipients (Figure 5—figure supplement 1A). In lethally irradiated hosts, cultured cells reconstituted >90% of PB cells, including with robust contribution of donor cells to the myeloid lineages. By contrast, most of the unconditioned recipients lacked long-term reconstitution (Figure 5—figure supplement 1B). Given that CD45 mismatching might be a sufficient immunological barrier to prevent HSPC reconstitution (van Os et al., 2001), we instead transplanted expanded cells into unconditioned F1 CD45.1+/CD45.2+ hosts (Figure 5A). Clear long-term multilineage engraftment was observed in all these hosts (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig5-v1.jpg)
+
+**Figure 5.:** (A) Strategy to assess the ability of ex vivo expanded cHSCs to engraft unconditioned recipients. (B) Test cell-derived peripheral blood (PB) reconstitution 24 weeks post-transplantation (n=5 per group). Symbols denote individual mice and means ± SEM. (C) Strategy used to assess the in vivo proliferation of ex vivo expanded cHSCs. (D) Bone marrow (BM) cHSC chimerism 2–8 weeks post-transplantation. n=2 per group for 2, 4 or 6 weeks post-transplantation. n=1 per group for 8 weeks post-transplantation. (E) Representative CellTrace Violet (CTV) label profiles of donor EPCR+ cHSCs compared to negative control signal (host EPCR+ cHSCs) and positive signal (donor CD4+ spleen cells) at 2 or 8 weeks post-transplantation. (F) Donor EPCR+ cHSCs were evaluated for the number of cell divisions they had undergone through 8 weeks post-transplantation. n=2 per group for 2, 4 or 6 weeks post-transplantation. n=1 per group for 8 weeks post-transplantation. All data points depict values in individual recipients.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91826/elife-91826-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Strategy to assess the repopulation of ex vivo expanded cHSCs into lethally irradiated or unconditioned recipients. (B) Test cell-derived peripheral blood (PB) reconstitution 16 weeks post-transplantation (n=5 per group). All data points depict values in individual recipients. Error bars denote SEM. (C) CellTrace Violet (CTV) signal from cHSCs in ex vivo cultures. The cultures were initiated with 100,000 CTV-labeled cKit-enriched cells per well (n=5). Unstained cKit-enriched cultures were used as negative control. CTV signal was traced by analyzing half of the expanded cells after each split until 13 days after culture. (D) CTV signal from transplanted CD4+ spleen cells, used to define undivided cells. (E) Investigation of cell divisions based on CTV signals. (F) Correlation of endothelial protein C receptor (EPCR) expression levels and the proliferative activity of cHSCs. (G) Number of undivided donor EPCRhigh HSCs. n=2 per group for 2, 4 or 6 weeks post-transplantation. n=1 per group for 8 weeks post-transplantation. All data points depict values in individual recipients.
 
 In the BM, cHSCs exist for the most part in a quiescent state, which contrasts the situation in cultures (Figure 5—figure supplement 1). To investigate to what extent ex vivo expanded cHSCs could return to quiescence following transplantation, we expanded 100 CD45.2+ cHSCs for 21 days and stained all their progeny with the proliferation-tracking dye CellTrace Violet (CTV) prior to transplantation into CD45.1+/CD45.2+ hosts. As a control, we transplanted CTV-labeled unmanipulated CD45.2+ cKit-enriched BM cells (Figure 5C). In these animals, splenic CD4+-enriched cells were co-transplanted as a control for non-dividing cells (Figure 5—figure supplement 1D). Reconstitution and cHSC fates were monitored biweekly for up to 8 weeks post-transplantation. Although the phenotypic cHSC contribution in recipients receiving ex vivo expanded cells outnumbered the contribution from unmanipulated cells 2 weeks post-transplantation, the levels became comparable later (Figure 5D). Recipients from both groups showed high levels of CTV signal 2 weeks post-transplantation, with the majority of donor EPCR+ cHSCs having undergone fewer than three cell divisions. Over time, increasing numbers of cHSCs had proliferated within both groups and with similar patterns (Figure 5E–F and Figure 5—figure supplement 1E), with a slightly higher number of undivided cHSCs retrieved from ex vivo expanded HSCs at all time points (Figure 5E). The most quiescent cHSCs associated with higher EPCR levels (Figure 5—figure supplement 1F–G), again attesting to the usefulness of EPCR to predict robust HSC activity.
 
@@ -102,19 +245,19 @@ In summary, we here characterized and detailed murine HSCs as they self-renew an
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Adult (8- to 10-week-old) C57Bl/6N (CD45.2+) female mice were purchased from Taconic. Transgenic Fgd5-ZsGreen-2A-CreERT2 mice (Gazit et al., 2014) (JAX:027789) was a kind gift from Derrick Rossi. Mice were maintained in the animal facilities at the Biomedical Center of Lund University and kept in environment-enriched conditions with 12 hr light-dark cycles and water and food provided ad libitum. All experimental procedures were approved by a local ethical committee (permits M186-15 and 16468/2020). All efforts were made to reduce the number of experimental animals and suffering.
 
-## BM transplantation
+### BM transplantation
 
 All mice used as recipients were 8–12 weeks of age. For conditioned recipients, mice were lethally irradiated (950 cGy) at least 4 hr prior to transplantation. The conditioned mice received prophylactic ciprofloxacin (HEXAL, 125 mg/l in drinking water) for 2 weeks beginning on the day of irradiation. All transplantations were performed through intravenous tail vein injection. The amount of transplanted test cells and competitor/support cells is described in the Results section.
 
-## In vitro HSC culture
+### In vitro HSC culture
 
 In vitro HSC cultures were performed using F12-PVA-based culture conditions as previously described (Wilkinson et al., 2019). In brief, cHSCs (EPCRhighCD150+CD48-/low LSKs) were sorted into 96-well flat-bottom plates (Thermo Scientific) coated with 100 ng/ml fibronectin (Sigma) for >1 hr at 37°C prior to sorting. HSCs were sorted into 200 µl HSC media (Supplementary file 1a) and expanded at 37°C with 5% CO2 for up to 21 days. The first media changes were performed 5 days (for ≥50 initial HSCs), 10 days (for 10 initial HSCs), or 15 days (for single-cell cultures) after initiation of cultures and then every 2 days. For pre-cultures associated with lentiviral transduction, the first media change was performed 24 hr after transduction and then as above. Cells were split at a 1:2–1:4 ratio into new fibronectin-coated plates when reaching 80–90% confluency (normally every 4 days after the first split). In order to expand cHSCs to reach a workable number as well as avoiding vast numbers of differentiated cells generated after very long term of culture (for example up to 4 weeks), the cHSCs were kept expanding ex vivo for 3 weeks as a standard protocol. Following 14- and/or 21-day expansion, cellularity was assessed using an Automated Cell Counter (TC20, Bio-Rad) and used for flow cytometric analyses and/or transplantation. BM cells collected from wild-type animals were pooled together for sorting to initiate HSC cultures. Each initial well was considered as a technical replicate and treated/analyzed separately.
 
-## Cell preparation
+### Cell preparation
 
 Mice were euthanized by cervical dislocation after which bones (both right and left tibias, femurs, and pelvis) or spleens were extracted. Fetal cells were extracted from livers at E14.5. Bones were crushed using a mortar and pestle and BM cells were collected in ice-cold phosphate-buffered saline (PBS, Gibco) with 1% fetal bovine serum (Sigma-Aldrich) (FACS buffer), filtered (100 µm mesh) and washed. FL or spleen cells were brought into single-cell suspension by grinding through a 100 µm mesh. BM or FL cells were cKit-enriched by anti-cKit-APCeFluor780 (eBioscience) staining and spleen cells were CD4-enrihced by anti-CD4-APC-Cy7 staining, followed by incubation with anti-APC-conjugated beads (Miltenyi Biotec). Magnetic separation was performed using LS columns according to the manufacturer’s instructions (Miltenyi Biotec). cKit-enriched BM or FL cells were washed and stained with fluorescently labeled antibodies for analysis or sorting.
 
@@ -122,47 +265,47 @@ PB chimerism analysis after transplantation was done as previously described (S�
 
 For analysis and/or sorting after ex vivo expansion, cultured cells were resuspended by pipetting and collected using FACS buffer. An aliquot was taken for cell counting using an Automated Cell Counter (TC20, Bio-Rad).
 
-## Flow cytometry analysis and FACS
+### Flow cytometry analysis and FACS
 
 Cells were kept on ice when possible, with the FACS buffer kept ice-cold. Staining, analysis, and sorting were performed as previously described (Säwén et al., 2016). In brief, cells were resuspended in Fc-block (1:50, 5×106 cells/50 µl, InVivoMab) for 10 min and then for 20 min with a twice concentrated antibody staining mixture (Supplementary file 1b-j) at 4°C in dark. In case biotinylated lineage markers were included, a secondary staining with streptavidin BV605 was performed for 20 min (1:400, 5×106 cells/100 µl, Sony) at 4°C in dark. After a final wash, the cells were resuspended in FACS buffer containing propidium iodide (1:1000, Invitrogen).
 
 All FACS experiments were performed at the Lund Stem Cell Center FACS Core Facility (Lund University) on Aria III and Fortessa X20 instruments (BD). Bulk populations were sorted using a 70 µm nozzle, 0.32.0 precision mask, and a flow rate of 2–3K events/s. HSCs for single-cell culture were index-sorted. FACS analysis was performed using FlowJo v10.8.0 (Tree Star Inc).
 
-## Multiome single-cell sequencing
+### Multiome single-cell sequencing
 
-## Library preparation
+#### Library preparation
 
 Multiome sequencing experiments were performed at the Center for Translational Genomics (Lund University) using the Chromium Next GEM Single Cell Multiome ATAC+Gene Expression Reagent Bundle kit according to the manufacturer’s instructions (10x Genomics). 40,000 viable cells or EPCR+ viable cells were sorted from ex vivo expanded cultures for multiome single-cell sequencing. Data has been uploaded to GEO under accession number GSE234906.
 
-## Bioinformatic analysis
+#### Bioinformatic analysis
 
 Data was mainly analyzed with the Seurat (Hao et al., 2021) and Signac (Stuart et al., 2021; R Development Core Team, 2022) packages, as well as the SAILERX Python package (Cao et al., 2022) for the joint-modality dimensionality reduction. All accompanying code for the single-cell multiome analysis post Cell Ranger can be found at this GitHub repository (https://github.com/razofz/DB_QZ_multiome, copy archived at Olofzon, 2023), including conda specifications for the environments used with exact versions of all packages.
 
-## Preprocessing
+##### Preprocessing
 
 The count matrices were generated with the Cell Ranger ARC tool (v2.0.0), aligned to the reference genome mm10. The aggregated dataset (containing data for both samples) were then loaded into Signac/Seurat in R where non-standard chromosomes were removed and the Seurat object split into the two samples, here named Diverse and Immature, which corresponds to whole culture or sorted EPCR+ cells, respectively. The data were then filtered on UMI, gene and peak counts, as well as nucleosome signal and transcription start site (TSS) enrichment, with separate thresholds for the two samples. The ATAC features were classified as either distal or proximal peaks, and split accordingly. Proximal peaks were defined as a±2 kbp region around the TSS. The TSS positions were retrieved from GREAT’s website, and GREAT v4 mm10 version was used. All peaks not classified as proximal received the classification ‘distal’. Motifs were then identified for distal and proximal peaks separately (Fornes et al., 2020).
 
-## Downstream processing and joint-modality dimensionality reduction
+##### Downstream processing and joint-modality dimensionality reduction
 
 The samples were processed separately. Since SAILERX uses pre-existing dimensionality reduction and clusters for the RNA modality, the RNA data was normalized and scaled, highly variable genes (HVGs) were found, principal component analysis (PCA) was run, and clustering was performed, all with the Seurat standard functions with default parameters. After that, relevant data was extracted (metadata including RNA clusters, PCA embeddings, a whitelist of non-filtered out cell barcodes, ATAC peak count matrix) and with it an hdf5 file similar to the example files provided by the SAILERX repository was created (https://github.com/uci-cbcl/SAILERX; Cao, 2022). A SAILERX model was then trained on the generated hdf5 files (still sample-wise) according to their provided instructions. The resulting embeddings from the SAILERX joint-modality dimensionality were then exported and imported into the respective Seurat objects. In Seurat, the embeddings were used for graph construction, clustering, and constructing UMAPs. Scores for cell cycle gene signatures were calculated and visualized (Figure 2E for the Immature sample) using Seurat’s corresponding standard functions with default parameters.
 
-## Differential gene expression
+##### Differential gene expression
 
 Differential gene expression testing was performed on the resulting clusters using Seurat’s FindAllMarkers function with the HVGs found above. This analysis was used to calculate HSC signature score as described below (section ‘HSC signature’).
 
-## ATAC processing and cluster annotation
+##### ATAC processing and cluster annotation
 
 Motif activity scores were identified with chromVAR (Schep et al., 2017) for distal and proximal peaks, respectively, still sample-wise. Differentially active motifs (DAMs) were then identified for each cluster. Annotation of clusters in terms of cell type was then performed manually with the help of DEGs and DAMs (Figure 2B), guided by pre-existing data on the expression profiles of cell types using the Enrichr platform (https://maayanlab.cloud/Enrichr/).
 
-## HSC signature
+##### HSC signature
 
 A 13 gene condensed HSC signature list (Figure 2—figure supplement 1C) was obtained by mining genes associated to cluster 5 with publicly available gene expression data of HSCs from the ImmGen consortia and Bloodspot (https://servers.binf.ku.dk/bloodspot/). This signature was then used to calculate a score with Seurat’s AddModuleScore function. A classification for expression of this gene signature was performed with a slightly modified version of Seurat’s CellCycleScoring function, where instead of three classifications (S, G2M, or Undecided/G1) two classifications were used (expressed or not expressed). This classification was then used to create the contours used in Figure 2D–E, and the signature score used for coloring the points in the same plots.
 
-## Trajectory inference in the Diverse sample
+##### Trajectory inference in the Diverse sample
 
 Trajectory inference was performed for the Diverse sample with the slingshot package (Street et al., 2018). As initiating cluster, the cluster 5 was assigned (the earliest cluster), and end clusters chosen were clusters 4, 1, 6, and 7. The slingshot function of slingshot was used with otherwise default parameters. A joint UMAP with the four resulting trajectories was constructed (Figure 2C). To circumvent the problem of interfering color scales, only the top 20% expressing cells for each marker were chosen for coloring, and overlapping cells between these sets were excluded.
 
-## Assessment of HSC heterogeneity via DNA barcoding
+### Assessment of HSC heterogeneity via DNA barcoding
 
 Lentiviral barcode libraries were purchased from AddGene (No. 115645 and No. 83993) and amplified according to instructions (Biddy et al., 2018; Horlbeck et al., 2016). AddGene 83993 is a Crispri gRNA library that was repurposed here for the purpose of lentiviral barcoding (e.g. no Cas9 was co-expressed). These libraries were kind gifts from Samantha Morris and Jonathan Weissman.
 
@@ -172,10 +315,10 @@ RNA was isolated according to the protocol of Single Cell RNA Purification Kit (
 
 After extracting the reads of each barcode, the frequency in each recipient was calculated and barcodes with a frequency less than 0.1% were considered background reads. This is an arbitrary cut-off. Barcodes present in more than one ‘parental’ recipient were excluded from analysis (7% and 2% of barcodes pre- and post-culture, respectively) to avoid the possibility of including HSCs transduced independently with the same barcode or potential over-represented barcodes. Reads were normalized to 106 total reads per recipient followed by statistical analyses.
 
-## CTV labeling for in vitro and in vivo HSC proliferation tracing
+### CTV labeling for in vitro and in vivo HSC proliferation tracing
 
 CD45.2+-cultured cells, cKit-enriched BM cells, or CD4-enriched spleen cells were collected, washed, and pelleted. Cells were resuspended to a final concentration of 5×106 cells/ml and labeled with 1 µM CTV (Invitrogen) in PBS for 10 min at 37°C. The reaction was stopped by adding same volume of ice-cold FACS buffer and washing again with FACS buffer. For in vitro proliferation tracing, 105 CTV-labeled cKit-enriched BM cells were plated into each well containing F12-PVA culture media (Supplementary file 1a). At each time point, half of the cultured cells were collected and stained for evaluating cHSC CTV signals (Supplementary file 1h) while the remaining cells were kept in culture for continuous expansion. For in vivo proliferation tracing, CTV-labeled EE100-cultured cells or 5×106 cKit-enriched BM cells were mixed with 2×106 CTV-labeled CD4-enriched spleen cells and transplanted into one CD45.1+/CD45.2+ unconditioned recipients. For analysis, BM cells were cKit-enriched and stained accordingly (Supplementary file 1i). CD4 positive spleen cells were collected from the same recipient as a control for positive signal/undivided cells (Supplementary file 1j).
 
-## Statistical test
+### Statistical test
 
 Statistical analyses were performed using Microsoft Excel and GraphPad Prism 9. Significance was calculated by Mann-Whitney tests if not otherwise specified. Statistical significances are described in figure legends for the relevant graphs. In all legends, n denotes biological replicates.

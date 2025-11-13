@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02wn5qz54 SUPA, School of Physics and Astronomy, University of St Andrews St Andrews United Kingdom
-2. https://ror.org/00rcxh774 Humboldt Centre for Nano- and Biophotonics, Department of Chemistry, University of Cologne Cologne Germany
-3. https://ror.org/02wn5qz54 School of Psychology and Neuroscience, University of St Andrews St Andrews United Kingdom
-4. https://ror.org/02wn5qz54 Centre of Biophotonics, University of St Andrews St Andrews United Kingdom
+1. SUPA, School of Physics and Astronomy, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
+2. Humboldt Centre for Nano- and Biophotonics, Department of Chemistry, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+3. School of Psychology and Neuroscience, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
+4. Centre of Biophotonics, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ Here, we develop ERISM- and WARP-based approaches to measure GRFs exerted by fre
 
 ## Results
 
-## Kinematic tracking of substrate-interfacing features
+### Kinematic tracking of substrate-interfacing features
 
 As a first step in understanding how larvae interact with substrates, we confined third-instar larvae to glass pipettes lined with soft agarose (0.1% w/v) (Figure 1a). This allowed us to laterally image the animals and the lateral edges of denticle rows at the substrate interface (Figure 1b, Video 1) while animals crawled towards an appetitive odour source. Animals interact with the substrate by large, soft, segmentally repeating cuticular features that contain rows of denticles and to which we refer as ‘protopodia' in the following. Protopodia in each segment engaged in ‘swing’ periods (moving, SwP) and ‘stance’ periods (planted on substrate, StP) as waves propagated through the body. During SwPs, protopodia detached from the substrate, with the posterior row of denticles moving to meet the anterior row of denticles, thereby inverting the cuticle and sequestering the whole protopodia into a travelling pocket (Figure 1c). When protopodia ended their SwP, they unfolded from the sequestration pocket and then protruded into the substrate during the StP.
 
@@ -45,21 +45,69 @@ As a first step in understanding how larvae interact with substrates, we confine
 
 **Figure 1.:** (a) Schematic of setup for lateral imaging of larvae, using confinement in Pasteur pipette pre-filled with 0.1% (w/v) agarose. To encourage forward crawling, 10 µL of 15 mM ethyl butanoate (EB) was placed as attractive odour at the end of the pipette. (b) Lateral brightfield image of third-instar larva showing convex areas of denticle bands (open arrowheads) protruding into the substrate, interdigitated by concave areas of naked cuticle (black line) not interacting with the substrate. Scale bar = 750 µm. (c) Time lapse of area marked by dotted box in (b) showing the swing periods and stance periods of protopodia (coloured open arrowheads and dotted lines) during a forward wave. Red and blue dots at 0 s denote anterior and posterior rows of denticles, respectively. As the posterior-most denticle row moved to meet the anterior row of the band, the medial row detached from the substrate via invagination (white arrows). The invaginated pocket is then moved forwards (black arrow) and subsequently replanted. This action repeats as the wave propagates. Scale bar = 500 µm. Images representative of three third-instar larvae.
 
+![Video 1.](https://cdn.elifesciences.org/articles/87746/elife-87746-video1.mp4.jpg)
+
+**Video 1.:** Video showing the sequestration and planting of protopodia during locomotion from a lateral view.
+
 To further investigate the dynamics of protopodia placements, we performed detailed kinematic tracking of the morphometry of protopodia, denticle bands, and inter-protopodial spaces during peristaltic waves. By tracking the movement of defined points on bands relative to each other, we monitored intersegmental and intra-segmental movements during peristaltic waves (Figure 2a, Video 2). In addition to moving relative to each other, denticle bands changed their shape during the sub-phases of a peristaltic wave. During forward waves (peristaltic contractions travelling in an anterograde direction), the anterior-most row of each denticle started to move after the corresponding posterior-most row (Figure 2b) and completed its movement after the posterior-most row stopped moving (Figure 2c), that is, there was an anteroposterior (AP) latency for both swing initiation (SI) (when movement begins) and for swing termination (ST) (when movement ends). Such a ‘rolling’ progression pattern is analogous to the ‘heel-to-toe' footfalls of limbed animals (Federle and Labonte, 2019). To analyse this pattern further, we quantified the percentage of the wave duration spent in AP latency during SI and ST. For forward waves, this relative latency was generally consistent across the denticle bands on large protrusive protopodia but less pronounced for the smaller and less protruding protopodia at the extreme posterior and anterior abdomen and the thorax (Figure 2d). In backward waves, the heel-toe-like latency was reversed, with anterior-led latencies observed in SI and posterior-led latencies observed in ST (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig2-v1.jpg)
+
+**Figure 2.:** (a) (i) Brightfield image and (ii) schematic of second-instar larvae showing ventral side denticle belts which reside upon the protopodia and (iii) schematic of the imaging setup used for kinematic tracking. Scale bar = 200 µm. (b) (i) As a forward wave travels through the animal, the distance between denticle bands decreases. Scale bar = 200 µm. (ii) At higher frame rate and magnification, changes in distance between the posterior and anterior-most denticle rows are resolved. The posterior-most row (P, blue) initiates movement first and moves until nearly reaching the anterior-most row (A, red) at 0.544 s, after which point, they move together (0.561 s). Scale bar = 100 µm. (c) Velocity of anterior- and posterior-most denticles rows (A2d A/P, A4d A/P, A6d A/P) and the left/right end of denticle bands (A2 L/R, A4 L/R, A6 L/R, and A8 L/R) over three representative forward waves, showing how the strategy observed in (b) is maintained across body segments. Background colours indicate swing initiation (SI, blue), swing period (SwP, light grey), swing termination (ST, pink), and stance period (StP, dark grey). (d) Forward wave latency for different animals and body segments. Positive values denote posterior row led latency. n = 10 animals, 30 waves. (e) SI latency scales with wave duration in the posterior abdomen (A6: R2 = 0.61, purple; A4: R2 = 0.78, red) but less so for the anterior abdomen (A2: R2 = 0.35, yellow). n = 12 animals with three latency periods per segment. (f) ST latencies do not scale with wave duration (A6: R2 = 0.26, A4: R2 = 0.26, A2: R2 = 0.03). n = 12 animals with three latency periods per segment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Backward waves are characterised by sequential contractions moving from anterior to posterior, the reverse of forward waves (i). We observed that the anterior row of each denticle band moved to meet the posterior row before the whole protopodia began to move (ii). (B) We tracked the velocity of the lateral edge of each denticle band (A6, A4, A2) and the anterior and posterior rows of each denticle band (A6d, A4d, A2d). Similar to forward waves in Figure 2, we observed an anteroposterior latency between when each row moved relative to the other. However, this was the reverse of forward waves, with the swing initiation period being characterised by an anterior-led latency and the swing termination period being characterised by a posterior-led latency. (C) We found that this was relatively consistent across segments, where negative numbers represent anterior led latency, within a sample of four waves across four different animals.
+
+![Video 2.](https://cdn.elifesciences.org/articles/87746/elife-87746-video2.mp4.jpg)
+
+**Video 2.:** Manual tracking of 33 points across the body during forward and backward peristalses.
 
 In summary, each segment-wise denticle action event is composed of four distinct periods: SI, SwP, ST, and StP. For forward waves and posterior segments, the latencies during the SI period are largely determined by wave duration (R2 range: 0.46–0.78, A7-A4) but this is less the case for anterior abdomen and thorax (R2 range: 0.12–0.35, A3-A1 and T3, Figure 2e). The magnitudes of ST-related latencies are not strongly determined by wave duration (R2 range: 0.01–0.26, Figure 2f).
 
-## Developing stress microscopy for Drosophila
+### Developing stress microscopy for Drosophila
 
 Kinematic analysis of protopodia movements revealed a previously uncharacterised complexity in the dynamics of larval movement, but it cannot quantify the mechanical forces impacting the substrate and is therefore limited to making inferences regarding substrate interaction. To achieve quantitative observations, we therefore adapted ERISM-WARP (Figure 3a, Figure 3—figure supplement 1) to map the vertically directed GRFs exerted by larvae rather than the forces exerted by single cells. First, we developed optical microcavities with mechanical stiffnesses in the range found in hydrogel substrates commonly used for studying Drosophila larval behaviour, that is, Young’s modulus (E) of 10–30 kPa (Ahearne et al., 2005; Salerno et al., 2010; Apostolopoulou et al., 2014). These microcavities consisted of two semi-transparent, flexible gold mirrors sandwiching a transparent polymer rubber that was made from a mixture of siloxanes with discrete Young’s moduli to adjust the resulting stiffness (Palchesko et al., 2012). The microcavities were characterised using AFM and the resulting force distance curves (Figure 3b) were fitted to a height-corrected Hertz model to determine the Young’s modulus of each cavity (Dimitriadis et al., 2002). This procedure allowed us to fabricate microcavities with a wide range of well-defined Young’s moduli (Figure 3c, Supplementary file 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig3-v1.jpg)
+
+**Figure 3.:** (a) Schematic of setup for ERISM with Drosophila larva on an optical microcavity. Maps of local cavity deformation (displacement) due to indentation forces are generated by analysing cavity resonances. (b) Force distance relationship measured by atomic force microscopy (AFM) and (c) mechanical stiffnesses (Young’s moduli) for microcavities produced by mixing different elastomers at different ratios and applying different plasma conditions. (d, g, j) Brightfield images of anaesthetised second-instar larvae recorded at low, medium, and high magnification. (e, h, k) Corresponding maps of microcavity displacement. (* denotes contamination on cavity surface from handling the larva.) (f, i, l) Corresponding maps of mechanical stress obtained by finite element analysis of displacement maps, showing the stress on the substrate due to passive interaction between larvae and substrate. Scale bar = 500 µm (d), 250 µm (g), and 50 µm (j). Images representative of four separate second-instar larvae. Microcavities in (d–i) used 30 W O2 10% Sylgard184 design, and (j–l) used a 30 W O2 5% Sylgard184 design.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Optical light path used to record resonance from incident light on elastic resonators. For ERISM (blue), light originates from a halogen lamp (Lamp) and is spectrally scanned by a monochromator (MC) before being collimated by an achromatic doublet lens (AC1) and focused by another achromatic doublet lens (AC2) through a pinhole (PH). Light emerging from PH is then recollimated by AC3 into a kinematic mirror (KM1), directing it to KM2 which then directs the light under the nosewheel of a Nikon Ti2 inverted microscope. Under the nosewheel, the light is focused by an achromatic doublet lens (AC5) to a 50:50 RT beamsplitter plate (BS1), which directs the focused light to the back aperture of the objective (Obj). Light is then introduced onto the elastic resonator via Obj, whereupon it either enters the cavity, should it meet the resonance condition for the given cavity thickness, or is reflected, should it not meet this condition. Reflected light is then collected by Obj, focused by the tube lens (TL) and directed by the microscope turning mirror (TM2) then recorded by a camera (Camera). Though depicted as blue, ERISM typically scans through a spectral band from 550 to 750 nm. For WARP (red), light is generated by two 625 nm red LEDs (LEDλ and LEDλθ). For both LEDs, the light is collimated by aspheric condenser lenses (AsC1 and AsC2) and is then filtered by 633 nm bandpass filters (BPλ and BPλθ). BPλθ, is rotated roughly 15° such that the filter pass band is blue-shifted and the resultant transmitted light is approximately 90° out of phase (in terms of the resonances of the elastic cavity) relative to light passing through BPλ. These light paths are combined by a beamsplitter cube (BS2) and collimated using AC4 into the KM2, BS1, AC5, Obj common light path by a dielectric turning mirror (TM1) only present when using WARP. The LEDs are then triggered in an alternating pattern by a trigger circuit decade counter (TC) which is controlled by the trigger out of the sCMOS camera. (B) Working principle within the elastic cavity. When under stress (σ), the elastic cavity deforms from its resting length (L) to its strained length (ΔL). The change in cavity length causes a change in the wavelengths that fulfil the resonance condition of the cavity. The amount of strain under a given stress is a direct consequence of the Young’s modulus (E) of the elastic material.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Using atomic force microscopy (AFM), we indented into an elastic resonator made within the same batch as those used for videorate stress mapping. (i) False colour map and (ii) 3D projection of displacement smoothed by 10 points. (iii) Profile along blue dotted line in (i) showed that a 111 nN indentation force resulted in a roughly 32 nm peak indentation; data averaged by 10 points, raw data shown in a lighter colour. (B) Using FEM, we calculated a stress map from the displacement map, using the Young’s modulus of the bulk material, previously recorded as 16,450 Pa by AFM. (i) False colour and (ii) 3D projection of stress experienced by the resonator smoothed by 10 points (ii). Profile along red dotted line in (i) showing the peak stress produced by 111 nN of force approximately 320 Pa; data averaged by 10 points, raw data shown in a lighter colour. (C) We thresholded the resultant simulation to remove all cavity displacements >0 nm. (D) Integration of stress in (C) gives a prediction of the total applied force as determined from displacement map and FEM model, without prior knowledge of the indentation force. Comparing this simulated force to the applied force of 111 nN, we found the relative difference to be only 3.4%, with our simulation estimating a total applied force of 114.8 nN. Scale bar in (B) denotes 50 µm.
+
 As an initial test, we placed cold-anaesthetised second-instar larvae onto a microcavity (E = 28 kPa) and performed ERISM force mapping at different magnifications to record substrate indentations generated by larval body features (Figure 3d–l). Indentation maps were computed from the images of optical interference by pixelwise solving of the resonance condition with an optical model. Stress maps were then computed from the indentation maps via a finite element method (FEM) simulation of the stress distribution required to produce the observed indentation profile (‘Materials and methods’; the accuracy of our calculations was confirmed applying a known force with an AFM, Figure 3—figure supplement 2). With this approach, we were able to resolve indentations from rows of denticle bands interdigitated by naked cuticle (Figure 3g–i). At higher magnification and when using slightly softer microcavities (E = 19 kPa), even indentations from individual denticles within these bands were resolved (Figure 3j–l). The median force exerted by individual denticles was 11.51 nN (1.4–47.5 nN; n = 130 denticles) across a median area of 2.81 µm (1.15–9.13 µm; n = 130 denticles).
 
-## Videorate force mapping in freely behaving animals
+### Videorate force mapping in freely behaving animals
 
 Next, we moved to force mapping of freely behaving animals. First, we confirmed that ordinary larval behaviour is maintained on collagen-treated microcavity substrates (Figure 4—figure supplement 1). We then adapted WARP (Meek et al., 2021) to image substrate interactions at high temporal resolution (Figure 4—figure supplement 2). For forward peristaltic waves, we observed posterior to anterior progressions of indentations into the cavity, corresponding to protopodial placements (Figure 4A, Video 3). We also observed upward deflections of the substrate (i.e. increase in microcavity thickness, positive stress), associated with the displacement of elastomer because of Poisson’s ratio governing elastic materials (Pritchard et al., 2013). We also observed that the animals travel surrounded by a relatively large water droplet. During StP, protopodia displaced the substrate, and during SwP, protopodia local to the contraction were completely removed from the substrate while travelling to their new resting position.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig4-v1.jpg)
+
+**Figure 4.:** (a) WARP image sequence of displacement and stress maps (top) for a freely behaving second-instar larva during forward locomotion. (* denotes dust artefact.) Lateral projections of stress maps (bottom) showing individual protopodia interdigitated by naked cuticle. As a contractile wave (grey box) progressed through the animal, protopodia were lifted off the substrate. Scale bar = 100 µm. (b) WARP image sequence of larva prior to (–1.5 s to –0.5 s) and engaging in (0 s) a headsweep (representative of two animals and three turns). Note the large posterior displacement (blue arrow; images cropped around the animal). Scale bar = 200 µm. (c) Profiles of cavity displacement along anteroposterior (A-P) axis in resting state (black dotted line at –1.5 s in b) and pre-headsweep (red dotted line at –0.5 s in b), showing that peak displacement decreased across all segments from the resting state (grey box) to pre-headsweep (pink box). (d) Bilateral displacement profile across the mediolateral (ML) axis of the A4 protopodium (solid lines in b) at different times prior to the headsweep, showing that the width of the contact increases from the resting state (–1.5 s) to the pre-headsweep state (–0.5 s) and partially reduces again immediately after head movement. (e, i) Brightfield image (third-instar larva) and (ii) displacement map (second-instar larva) of the posterior-most body segment, showing how two cuticular protrusions (white arrowheads) and the terminal protopodium (A8) generate a tripod-shaped substrate displacement. (iii) Profiles along blue and red dotted lines in (ii). Scale bar = 200 µm (i) and 100 µm (ii). (f) Sequence of displacement maps of tripod structure before the start of a forward wave (<0.24 s) and the removal of tripods upon beginning of peristalsis (>0.48 s). Scale bar = 100 µm. (g) Percentage of forward waves (FW), bilateralisms (BL), backward waves (BW) preceded by tripod contact, and tripod deployments without any observed locomotor behaviour (unrelated). (h) Time delay between tripod deployment and initiation of movement at A7. Points colour-coded by animal, n = 6. Line = mean, box = ±1 standard error of the mean, whiskers = ±1 standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Total number of behaviours per second is not significantly different between agarose substrates and elastic cavities with collagen coating according to a two-sample t-test (t(18) = -1.24, p=0.23). Data for forward waves, backward waves, and headsweep bilateralisms are shown. (B) Distance travelled as % of body length was not significantly different between the two substrates according to a two-sample t-test (t(18) = 1.34, p=0.20). Each data point represents the mean of five waves from a single animal. (C) The mean duration of five forward waves was not significantly different on microcavities compared to agarose according to a two-sample t-test (t(18) = 0.62, p=0.54). Data taken from 10 animals. Colour of data point indicates data from an individual animal. All tested data were found to be normally distributed according to a Shapiro–Wilk test (p>0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Interference images were taken at 633 nm (i) and 628 nm (ii) in quick alternation. Profile plot (iii) across the lines in (i) and (ii). Note that interference pattern is approximately 90° out of phase relative to the other as a result of the specific wavelength difference and total cavity thickness chosen here. (B) Images were then added together (i) with a background correction (2B) and then divided by the same two images subtracted from each other (ii). (C) The resultant images are referred to as cotangent images as pixel intensity changes approximately as the cotangent of the cavity thickness in these (i). A cotangent lookup table was then used to convert 16-bit greyscale values in the cotangent images to local cavity length. Raw and uncorrected displacement map computed by subtracting a linear plane of mean cavity thickness (ii). Profile plot (iii) along the thin dashed line in (ii), clearly showing discontinuity artefacts (indicated by blue and red double arrows). These linear artefacts correspond to step heights amounting to jumps by one free spectral range, which was 112 nm in this instance. (D) Corrected displacement map where the linear artefacts across the image were corrected by applying a continuity condition. (E) Profile plots of cotangent signal and corrected displacement along the thick lines in (Ci and D). (F) Stress maps were calculated from the displacement map by finite element method (FEM) using the known mechanical properties of the substrate. Scale bar = 200 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/87746/elife-87746-video3.mp4.jpg)
+
+**Video 3.:** Video showing high frame rate displacement maps produced by a freely behaving Drosophila larva. Displacement maps were high-pass Fourier filtered to make denticulated cuticle more readily visible and projected in 3D to show the effects of substrate interaction. Details of the Fourier filtering procedure are described in a previous study (Kronenberg et al., 2017b).
+
 We also used WARP to investigate the bilaterally asymmetric headsweeps generated by Drosophila larvae to sample odours and direct navigation. During headsweeps, anterior segments and mouth hooks detached or dragged across the substrate before replanting (Figure 4b, Video 4). 0.5–1 s prior to headsweep initiation, the contact area in posterior segments increased, spreading outwards laterally, employing both the protopodia and the naked cuticle along the midline (Figure 4c). This broad but shallow anchoring quickly returned to the ordinary resting phase profile after the mouth hooks were replanted onto the substrate (Figure 4d).
+
+![Video 4.](https://cdn.elifesciences.org/articles/87746/elife-87746-video4.mp4.jpg)
+
+**Video 4.:** Video showing the raw reflection data during the preparatory phase of bilateral behaviours.
 
 Before forward waves and headsweeps, larvae produced large indentations posterior to their terminal segment. Anatomical examination revealed accessory structures located at the terminus of the posterior abdomen. Together with the terminal denticle band, these cuticular processes generated tripod-shaped indentation patterns (Figure 4e). The left and right sides of the tripod deployed and detached simultaneously (Figure 4f). Tripod formation was seen before all observed forward waves (n = 28 across six animals) and bilateral thoracic activity (n = 3 across two animals), but not all tripod contacts resulted in further behaviour (Figure 4g). To investigate the relationship between tripod placement and locomotion further, we recorded the delay between tripod contact and protopodial detachment in A7. The mean delay was 0.66 s ± 0.21 s (Figure 4h, n = 20 waves across six animals).
 
@@ -71,7 +119,7 @@ Next, to estimate the GRF associated with the indentation of each protopodium, w
 
 The contact area of each protopodium showed a pronounced peak during SI and ST. The maximum contact area during ST was significantly greater than that during SI for the posterior abdomen (p≤0.05 for A8/9-A3) but not for the anterior abdominal protopodium (p>0.05 for A2) (Figure 5D). The peak of the displaced volumes during SI was largely determined by wave duration (R2 range: 0.48–0.69, A7-A4, Figure 5E), again except for the anterior abdomen (A3: R2 = 0.15; A2: R2 = 0.24). However, the peak of the displaced volumes during ST did not scale with wave duration (R2 range: 0.03–0.05, A7-A2). This suggests that protopodia push off from the substrate harder during faster waves, but that varying wave speed does not strongly influence forces exerted onto the substrate during protopodia placement. This observation is consistent with our morphometric data, which showed that wave duration is associated with SI latencies but not with ST latencies.
 
-## Sub-protopodial force dynamics
+### Sub-protopodial force dynamics
 
 Lastly, to investigate how forces are translated into the substrate within a single protopodium during a ‘footfall’ cycle, we examined the spatiotemporal substrate interaction during the ST (Figure 6a). This showed how protopodia expand their indentive contact across both the AP and mediolateral (ML) axes when being replanted. Kymographs along the AP midline of animals and profiles running up the AP axis extracted from these revealed a delay between when the most posterior and the most anterior part of the protopodium contacts the substrate (Figure 6b). The mean contact delay relative to the most posterior part of the protopodium was 0.035 s ± 0.007 s at 6 µm away from the most posterior part and increased to 0.062 s ± 0.021 s and 0.253 ± 0.115 s in the middle and at the most anterior part of the protopodium, respectively (Figure 6c).
 
@@ -83,17 +131,17 @@ To examine how protopodia expand along the ML axis, we performed a similar analy
 
 ## Discussion
 
-## Drosophila larvae, though legless, have protopodia
+### Drosophila larvae, though legless, have protopodia
 
 The cuticle of larvae shows distinct patterns of denticulation (denticle bands) and the developmental processes which give rise to these features have been well studied (Payre, 2004), though their role in locomotion has long been unclear (Fitzpatrick and Szewczyk, 2005). Here, we show that denticle bands are situated upon larger articulated foot-like cuticular processes, which act as locomotory appendages. Protopodia dynamically change shape during locomotion, allowing sequestration and presentation of denticles. Individual protopodia and individual denticles exert GRFs in the 1–7 µN and 1–48 nN ranges, respectively. Superficially, protopodia resemble the much smaller pseudopodia in cells – transient structures, similarly covered with actin protrusions, used by cells to facilitate movement (Burnette et al., 2014). The same function and principles of protopodia may underlie ‘creeping welts’ noted in larger dipteran larvae (Friesen et al., 2015) and show similarities to soft prolegs of Manduca sexta caterpillars but are approximately 30 times smaller (Lin and Trimmer, 2010).
 
-## Insights from morphometric kinematic tracking of denticle band movements
+### Insights from morphometric kinematic tracking of denticle band movements
 
 Our study provides, to our knowledge, the first detailed description of the morphometry of denticle bands during movement, showing how denticle bands are deployed onto and removed from the substrate. Posterior denticle rows hit the substrate before anterior rows during deployment (ST) and left the substrate before anterior rows during removal (SI). This suggests that both deployment and removal involved rolling ‘heal-toe’ like movements, similar to footfalls in limbed animals, including terrestrial arthropods (Federle and Labonte, 2019). Removal but not deployment correlated with wave duration. In Manduca caterpillars, it has been noted that SwPs scale positively with wave duration (Simon et al., 2010); however, to our knowledge, there is no measurement for SI and ST in these animals.
 
 SI latencies scaled positively with wave duration across most segments whereas ST latencies did not show this trend. SIs scale with SwP, and this could be mediated by proprioceptor activity in the periphery (Vaadia et al., 2019). Fine sensorimotor control of musculature during this process would allow for precisely tuned propulsion during peristalsis. In contrast, the more random nature of the ST suggests the process is less finely controlled. This could be a consequence of fluid inertia within the animal and/or the release of elastic energy from cuticle (Sun et al., 2022) or relaxation of muscles (Simon et al., 2010; Ormerod et al., 2022).
 
-## ERISM-WARP allows computation of GRFs in Drosophila larvae
+### ERISM-WARP allows computation of GRFs in Drosophila larvae
 
 We adapted state-of-the-art mechanobiological force measuring techniques to enable measurement of substrate interaction dynamics of a freely behaving soft-bodied animal with micrometre spatial resolution, millisecond temporal resolution, and nanonewton force resolution. Previously, high-resolution force mapping was limited to cellular mechanobiology. Specifically, we developed microcavity resonators tuned to the vertical forces generated by larvae and employed ERISM and WARP to perform direct measurements of substrate interactions in anaesthetised and behaving animals. GRFs produced by individual denticles in anaesthetised animals were in the ~11 nN range. The measured vertical GRFs produced by the individual protopodia of each segment were in the 1–7 µN range, roughly three orders of magnitude less than the 17 mN recorded from an entire 1.72 g M. sexta caterpillar (Lin and Trimmer, 2010). Our measurements provide fundamental constraints for future biomechanical modelling studies seeking to incorporate these structures.
 
@@ -105,39 +153,259 @@ We also observed transient tripod-shaped substrate interactions in posterior ter
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/87746/elife-87746-fig7-v1.jpg)
 
-**Figure 7.:** Drosophila larval locomotion.(a) Schematic illustration of forward wave propagating from posterior (blue) to anterior (yellow). (b) At the start of a forward wave, animals contract the posterior-most abdominal segment (A8), producing an anterograde horizontal force Fh (A8). Due to Newton’s third law, there is an equal but opposite reaction force -Fh (A8). To counteract this force, tripod processes (TPs) deploy onto the substrate and generate a temporary anchor, allowing the A8 protopodium to swing forward. (c) During swing termination (ST) at the end of the swing period (SwP) of segment n, the corresponding sequestered protopodium (Sq. n) strikes the substrate with its posterior most denticle row, then gradually unfolds into the substrate along its entire anteroposterior extent. During the stance period (StP), this planted segment n (Ptd. n) forms an anchor to mitigate the retrograde reaction force due to the subsequent contraction of segment n-1. (d) In time with anchoring of protopodium n, protopodium n-1 performs swing initiation (SI) by removing denticles from the substrate and sequestering into an invagination pocket, which reduces friction during the subsequent SwP. The contraction of segment n-1 then leads to an anterograde force (Fh) that is balanced by the anchoring of protopodium n as illustrated in (c).
+**Figure 7.:** (a) Schematic illustration of forward wave propagating from posterior (blue) to anterior (yellow). (b) At the start of a forward wave, animals contract the posterior-most abdominal segment (A8), producing an anterograde horizontal force Fh (A8). Due to Newton’s third law, there is an equal but opposite reaction force -Fh (A8). To counteract this force, tripod processes (TPs) deploy onto the substrate and generate a temporary anchor, allowing the A8 protopodium to swing forward. (c) During swing termination (ST) at the end of the swing period (SwP) of segment n, the corresponding sequestered protopodium (Sq. n) strikes the substrate with its posterior most denticle row, then gradually unfolds into the substrate along its entire anteroposterior extent. During the stance period (StP), this planted segment n (Ptd. n) forms an anchor to mitigate the retrograde reaction force due to the subsequent contraction of segment n-1. (d) In time with anchoring of protopodium n, protopodium n-1 performs swing initiation (SI) by removing denticles from the substrate and sequestering into an invagination pocket, which reduces friction during the subsequent SwP. The contraction of segment n-1 then leads to an anterograde force (Fh) that is balanced by the anchoring of protopodium n as illustrated in (c).
 
-## Evidence for functional subdivisions within protopodia
+### Evidence for functional subdivisions within protopodia
 
 By examining the dynamics of individual footfalls, we found that protopodia exhibited characteristic spatiotemporal force patterns across the footfall cycle. This shows parallels to the regional specificity of function in a vertebrate foot. Specifically, the posterior medial region of the protopodia makes a large contribution to peak GRFs exerted during ST (Figure 7b), similar in nature to a vertebrate heel strike impacting the surface prior to the rest of the foot. We propose that this zone of the protopodia acts as a vaulting point for the protopodia, functioning as a ‘point d’appui’ (point of support) as proposed in other soft-bodied animals (Trueman, 1975; Valentine, 1989). The transience of this vaulting point suggests it may be critical for locomotion, but dispensable for postural control during StP. The distal area of protopodia exhibited a similar transience. This increased force transmitted into the substrate is unexpected as the forces generated for the initiation of movement should arise from the contraction of the somatic muscles. We propose that the contraction of the musculature responsible for sequestration acts to move haemolymph into the protopodia, thus exerting an increased pressure onto the substrate while the contact area decreases as a consequence of the initiation of sequestration. Immediately after the posterior and medial protopodia impact during ST, the contact area of the outer region of the protopodia grew across both the AP and the ML axes. However, throughout the StP, this outer region then slowly retracted, suggesting it too was not critically important for maintaining posture during StP. This may reflect a transient anchoring mechanism – specifically, this anchor region deploys to provide greater friction for the subsequent segments (Figure 7c). This would allow the contractile wave to progress unimpeded by resultant reaction forces. Previously, such a function was thought to be provided mainly by mucoid adhesion (Trueman, 1975). However, Drosophila larvae are proficient at crawling over wet surfaces where mucoid adhesion is reduced or impossible (Apostolopoulou et al., 2014). Larvae can adhere to dry surfaces but have difficulty moving over these, although mucoid adhesion would provide optimal anchorage in this context. Water surface films appear to facilitate larval locomotion in general, but the biomechanical mechanisms by which this occurs remain unclear. We propose that protopodia act to provide an optimal balance between anchorage and adhesion depending on the environmental context. Overall, our work suggests that Drosophila larvae use a sophisticated process of articulating, positioning, and sequestering protopodia to enable movement over terrain. Future work will be needed to determine the extent to which these processes are conserved across other soft-bodied crawlers.
 
-## Conclusions and outlook for future work
+### Conclusions and outlook for future work
 
 Combining ERISM-WARP with a genetically tractable model organism opens new avenues for understanding the biomechanical basis of animal behaviour, as well as the operation of miniaturised machines. Here we have provided new insights into the relatively well-studied behaviour of Drosophila larval locomotion. We have provided new quantitative details regarding the GRFs produced by locomoting larvae with high spatiotemporal resolution. This mapping allowed the first detailed observations of how these animals mitigate friction at the substrate interface and thus provide new insights into how locomotion is achieved in soft animals. Further, we have ascribed new locomotor function to appendages not previously implicated in locomotion in the form of tripod papillae, providing a new working hypothesis for how these animals initiate movement. It is our hope that these new principles underlying locomotion outlined here serve as useful biomechanical constraints as called for by the wider modelling community (Tytell et al., 2011). We used Drosophila larvae as a test case, but our methods now allow elastic optical resonators to be tuned to a wide range of animal sizes and thus create new possibilities for studying principles of neuro-biomechanics across an array of animals. In parallel, roboticists are increasingly moving to create miniaturised soft robots for a variety of applications. Our approach is well suited to provide ground truth, constraints, and inspiration for the development of such miniaturised machines. It also provides a potentially powerful new resource for evaluating the performance of these devices as our methodology will also allow scientists to measure GRFs during the operation of miniaturised soft machines. Importantly, while we have focused here on the movement of soft animals, our sensors could also be tuned to measure forces produced by small-limbed animals or miniaturised machines with rigid internal or external skeletons. Overall, this work therefore establishes a flexible platform for future investigations aimed at integrating knowledge across genetics, neuroethology, biomechanics, and robotics.
 
 ## Materials and methods
 
-## Animal rearing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Drosophila melanogaster)</td>
+      <td>Canton S (wildtype)</td>
+      <td>Bloomingtons Stock Center</td>
+      <td>FBsn0000274 ID 64349</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro 2019b</td>
+      <td>OriginLab Corporation</td>
+      <td></td>
+      <td>Statistical analysis and plotting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COMSOL Multiphysics</td>
+      <td>COMSOL Inc</td>
+      <td></td>
+      <td>Finite element method simulation resolving stress maps</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.0 and 2.0</td>
+      <td>Anaconda Inc</td>
+      <td></td>
+      <td>Cavity length map computation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inkscape v.1.01</td>
+      <td>Inkscape Organisation</td>
+      <td></td>
+      <td>Vector figure making</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>National Institutes of Health/SciJava</td>
+      <td>1.52p</td>
+      <td>Image analysis and manual tracking</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate-buffered saline</td>
+      <td>Gibco</td>
+      <td>10010023</td>
+      <td>Collagen coating</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrochloric acid 5 M</td>
+      <td>Sigma-Aldrich</td>
+      <td>10605882</td>
+      <td>Collagen coating</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetic acid 95%</td>
+      <td>VWR</td>
+      <td>84528.290</td>
+      <td>Collagen coating</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagen-I</td>
+      <td>Millipore</td>
+      <td>L7220</td>
+      <td>Collagen coating</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold grains (99.99%)</td>
+      <td>Kurt J. Lesker Company</td>
+      <td>EVMAU40SHOT</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chromium 99.95%</td>
+      <td>Kurt J. Lesker Company</td>
+      <td>EVMCR35 EJTCRXX351</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silicon Dioxide Fused quartz target</td>
+      <td>Kurt J. Lesker Company</td>
+      <td>EJUSIO2451</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NusilGel8100</td>
+      <td>Nusil</td>
+      <td>GEL-8100</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sygard527</td>
+      <td>Dowsil</td>
+      <td>2270030</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sylgard184</td>
+      <td>Dowsil</td>
+      <td>1673921</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl butanoate</td>
+      <td>VWR</td>
+      <td>ACRO118182500</td>
+      <td>Retaining animals within field of view</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mineral (Paraffin) oil</td>
+      <td>VWR</td>
+      <td>31911.D9</td>
+      <td>Suspension of ethyl butanoate</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>24 mm2 glass substrate</td>
+      <td>ORSAtec</td>
+      <td>2.01.03.0167.59.16.1</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FlexAFM</td>
+      <td>Nanosurf</td>
+      <td></td>
+      <td>Atomic force microscope</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>uniqprobe Cantilevers</td>
+      <td>Nanosensors</td>
+      <td>qp-CONT</td>
+      <td>Stiffness calibration by atomic force microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CM110 Monochromator</td>
+      <td>Spectral Products</td>
+      <td></td>
+      <td>Monochromator for scanning wavelength ERISM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical cage system components</td>
+      <td>Thorlabs</td>
+      <td></td>
+      <td>Cage system for ERISM and WARP, see supplementary information</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EMS 6000 Photoresist Spincoater</td>
+      <td>Electronic Microsystems</td>
+      <td>EMS 6000</td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ultra high vacuum deposition chamber</td>
+      <td>Ångstrom Engineering</td>
+      <td></td>
+      <td>Microcavity fabrication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Andor Zyla 4.2 10-Tap</td>
+      <td>Andor Technology</td>
+      <td></td>
+      <td>WARP and ERISM image acquisition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>iCube CMOS</td>
+      <td>NET GmbH</td>
+      <td>NS4203BU</td>
+      <td>Brightfield image acquisition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XIMEA CMOS</td>
+      <td>XIMEA GmbH</td>
+      <td>MQ013MG-E2</td>
+      <td>Behavioural image acquisition</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHAPS, 3-[(3-cholamidopropyl)dimethyl ammonio]–1-propane sulfonate</td>
+      <td>Acros Organics</td>
+      <td>10834531</td>
+      <td>Electrostatic buffer for atomic force microscopy measurements</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal rearing
 
 Animals were raised on standard cornmeal and yeast medium (17.4 g/L yeast, 73.1 g/L cornmeal, 5.8 g/L agar, 4.8 ml/L propionate) at 25°C with a 12 hr light-dark cycle except where explicitly stated otherwise. Animals were given at least 1 hr to acclimate to room temperature prior to all experiments. Canton S (CS) wildtype larvae were used for all experiments (Fly Base Identifier: FBsn0000274). Immediately prior to experiments, samples of media containing larvae were taken using a spatula before being placed into a columnar stacked sieve with 40, 60, and 100 meshes from top to bottom, respectively. Media samples were run under gentle flowing tap water to separate adult debris, second-instar larvae, and first-instar larvae with embryos on each mesh. Larvae from the 60-mesh fraction of the sieve were observed under a microscope, and animals around 1 mm were selected and washed before being placed on 1% (w/v) agarose-lined dishes.
 
-## Microcavity fabrication
+### Microcavity fabrication
 
 The fabrication protocol of elastic microcavities was adapted from Kronenberg et al., 2017a. 24 mm2 borosilicate glass substrates of No.5 thickness were cleaned via ultrasonication in acetone followed by propan-2-ol for 3 min. After cleaning, substrates were dried using N2 and baked at 125°C for 10 min to clear any residual solvent. Cleaned glass substrates were then plasma treated with oxygen plasma for 3 min at 20 SCCM O2 flow rate to clear any residual organics and activate the surface of the glass. Cleaned and activated glass substrates were then sputter coated with 0.5 nm of Cr, which acted as an adhesion layer for the subsequent 10 nm Au layer that was deposited by thermal vapour deposition. 50 nm of SiO2 was then deposited by sputter coating to improve stability of the resultant bottom mirrors. Roughly 100 µL of pre-mixed and degassed polydimethylsiloxane gels was spincoated onto the bottom mirrors at 3000 RPM, 1500 RPM acceleration, for 60 s and then quickly transferred to a pre-heated metal plate at 150°C for 1.5 hr to cure the elastomer. After curing, elastomer-coated bottom mirrors were O2 plasma treated with the desired plasma power at 20 SCCM O2 flow rate for 10 s. 15 nm of Au was then deposited onto the oxidised elastomer, thus completing the microcavity.
 
-## Microcavity characterisation
+### Microcavity characterisation
 
 Microcavities were characterised using a NanoSurf Flex Atomic Force Microscope (Nanosurf, Liestal, Switzerland). 15–18-µm-diameter glass beads were glued to the tip of uniqprobe QPCont cantilevers (Nanosensors AG, Neuchatel, Switzerland) using a UV-polymer glue after thermal calibration of the spring constant at 21°C. Sphere-tipped cantilevers were then indented into microcavity samples at 1 µm/s with up to 30 nN of force. This process was repeated across the surface of the microcavity at least five times, with each measurement being roughly 2 mm apart to get a measure of the variation across the cavity surface. Force–distance profiles recorded by the AFM were then fitted to the Hertz model to compute the Young’s modulus at each point of each sample. Mean cavity lengths were measured by taking four ERISM images at ×4 magnification from each corner of the cavity, and then taking the mean of four regions of interest per image.
 
 Prior to use in experiments, a 12-well silicone chamber (ibidi GmbH, Munich, Germany) was cut such that only one large square-well, originally comprised of four smaller wells cut off from the rest of the chamber, remained and was placed onto a microcavity. A low pH Collagen-I (1 mg/ml; Millipore L7220) solution was then prepared at a 1:1 (v/v) ratio with pH3 phosphate-buffered saline (PBS). pH3 PBS was prepared with either hydrochloric acid or acetic acid, mixing until pH3 was recorded using an electronic pH meter. Collagen-I mixtures were then dosed onto microcavities in silicone wells (1 mL per microcavity) and allowed to coat the surface overnight at 4°C. Immediately before the experiment, microcavities were washed with deionised water at least five times, taking care not to remove all liquid to prevent damage to the top gold surface.
 
-## Denticle band kinematic imaging
+### Denticle band kinematic imaging
 
 All animals were raised in ambient light conditions at room temperature. Between 48 and 72 hr after flies were introduced to fresh media, feeding second-instar Canton S wildtype animals were selected with a size-exclusion criterion – any animals below 0.8 mm or above 1.5 mm were rejected. Animals were then washed and allowed to acclimate to 0.5% (w/v) agarose.
 
 Immediately before experiments, a single animal was transferred to a freshly set dish containing 0.5% (w/v) agarose while still transparent. These dishes were then quickly placed onto the 3D-printed stage of a custom-built inverted Bresser Advance ICD stereomicroscope (Bresser GmbH, Rhede, Germany). Denticle band images were acquired, through the still transparent agarose substrate, at 60 frames per second for at least 1 min while the larva was freely behaving. All images were acquired using a XIMEA CMOS camera (XIMEA GmBH, Münster, Germany) through MicroManager 1.4 (Edelstein et al., 2010). The velocity of 33 individual identifiable points across the animal’s body during peristaltic waves whilst imaging from the ventral side of second-instar larvae Denticle bands were tracked manually using the Manual Tracking plugin of ImageJ (Schindelin et al., 2012). Analysis of tracking data was performed using OriginPro 2019 (OriginLab Corporation, MA).
 
-## ERISM and WARP imaging
+### ERISM and WARP imaging
 
 ERISM was used to record high-resolution maps of substrate indentations by monitoring local changes in the resonances of a soft and deformable optical microcavity. ERISM has been used to quantify cellular forces down to the piconewton range. The static thickness of microcavities was measured adapting our previously published ERISM method as described in Liehm et al., 2018 and Kronenberg et al., 2017a. In brief, images of the cavity were taken under epi-illumination with a series of 201 different wavelengths (550–750 nm in 1 nm steps). From these images, the minima in the spectral reflection for each pixel were correlated with theoretical values obtained from optical modelling for cavities of different thicknesses to determine the actual thickness at each position across the image (cavities were between 8 and 12 µm in static thickness). Thickness maps were converted into maps of local displacement by subtracting a linear plane using the mean thickness of the cavity in each corner.
 
@@ -147,18 +415,18 @@ Displacement maps were obtained from these stacks using a series of image transf
 
 Stress maps were calculated from the ERISM and WARP displacement maps as described previously (Kronenberg et al., 2017b) using an FEM simulation via COMSOL multiphysics (COMSOL Ltd, Cambridge, UK) and the known mechanical properties of the microcavity.
 
-## Polydimethylsiloxane gel preparation
+### Polydimethylsiloxane gel preparation
 
 Polydimethylsiloxane elastomers were prepared according to the manufacturer’s guidelines for all gels. The two component precursors of different gels were mixed together in separate glass bottles using an equal mass ratio of the two components for Sylgard 527 and NulSil Gel8100 but a 1:10 volumetric ratio for Sylgard 184. Mixing was performed by 10 min of magnetic stirring (Sylgard 527 and NuSil GEL8100) or by 10 min of mechanical stirring (Sylgard 184). The elastomer mixtures were then combined in a fresh bottle in the desired mass ratio using a syringe following the same method as a previous study (Palchesko et al., 2012). Combined elastomers were mixed for a further 10 min. Mixtures containing Sylgard184 were initially mixed by high-speed vortexing to coarsely disperse the gel to allow for the magnetic stir bar to overcome the high viscosity of the gel. After mixing, all preparations were degassed under vacuum for around 5 min, prior to fabrication of microcavities.
 
-## Anaesthetised animal force imaging
+### Anaesthetised animal force imaging
 
 Animals were selected, cleaned, and placed in a fridge at 4°C for 2–3 hr to anaesthetise them. Immediately prior to experiments, anaesthetised animals were gently placed onto a collagen-coated microcavity in a Petri dish on ice. The microcavities were then placed, using a moistened paint brush, on the ERISM-WARP microscope and the animals were observed carefully. As soon as mouthhook movement was observed, an ERISM measurement was taken. Animals often had to be placed back onto ice to anaesthetise them once more as they rapidly regained motility. As the complete ERISM scan requires ca. 5 s, animals were required to be completely stationary in order to obtain reliable stress map images.
 
-## Freely behaving animals force imaging
+### Freely behaving animals force imaging
 
 Animals were selected according to the previously outlined criteria and cleaned before being placed onto a 1% (w/v) agarose-lined Petri dish. Elastic resonators were prepared according to the coating criteria mentioned above. 10% NusilGEL8100, 180 W O2 plasma-treated microcavities were used for all freely behaving experiments. Once calibration images of the microcavity were acquired, excess water was removed from the cavity and animals were gently placed onto the cavity surface with a paintbrush, taking care to ensure there was enough moisture on the animal to prevent drying by wetting the paintbrush prior to transferring the animal. In order to keep animals on the sensor surface, a 50 µL drop of 15 mM ethyl butanoate (Sigma-Aldrich Inc, MO), suspended in paraffin oil, was dropped onto a 24 mm2 glass coverslip before being inverted and placed on top of the silicone well (ibidi GmbH) such that the attractive odorant faced towards the animal but perpetually out of its reach. Animal substrate interaction was then imaged by WARP, using alternating wavelengths to generate a series of interleaved cavity resonance images, and displacement and stress maps were generated as described earlier. All WARP videos were recorded at 120 FPS, producing displacement maps with an effective frame rate of 60 FPS, using a ×4 magnification objective. Due to the high frame rate, we were limited to the use of ¼ of the total camera sensor, thus higher magnifications would prevent mapping of the whole animal.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using OriginPro 2019 (OriginLab Corporation). Coefficients of determination (R2) for all but GRF vs. contact area analysis were determined using a linear fit. The rarity of backward waves during normal larval behaviour precluded analysis of latencies as used in Figure 2. Adjusted coefficients of determination (Adj. R2) for the GRF vs. contact area analysis were performed using a second-order polynomial fit instead as this describes the data better than a linear fit. Two-way repeated-measures ANOVA was used in segmentwise peak contact area analysis as data were normally distributed according to a Shapiro–Wilk test. However, Levene’s test for homogeneity of variances was significant for SI (p<0.05) but not for ST (p=0.092), we urge caution when interpreting the within-subjects' effects. Mauchly’s test showed sphericity of segment (W = 0.082, p=0.063) and the segment * SI-ST interaction (W = 0.27428, p=0.62463), where the SI-ST factor was not tested due to insufficient degrees of freedom. Independent-samples t-test was performed to show no significant difference between larval behaviour on elastic resonators and standard agarose substrates as data were normally distributed according to a Shapiro–Wilk test. Pairwise comparisons between segments all used Tukey-corrected t-tests. Force–distance curves were fitted using a height-corrected Hertz model; all force–distance curves were fitted with an R2 > 0.9.

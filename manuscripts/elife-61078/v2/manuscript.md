@@ -25,19 +25,103 @@ Actin filaments are central to numerous biological processes in all domains of l
 
 The IQGAP family of proteins plays a key role in actin cytoskeleton regulation including the assembly and function of the contractile actomyosin ring in budding and fission yeasts (Briggs and Sacks, 2003; Eng et al., 1998; Epp and Chant, 1997; Lippincott and Li, 1998; Tebbs and Pollard, 2013). To study the mechanism and role of actin binding by the fission yeast IQGAP (encoded by the rng2 gene), we utilized a strategy to investigate its function when immobilized on supported lipid bilayers. We chose this approach, since during cytokinesis Rng2, which binds several actomyosin ring proteins, is tethered to the plasma membrane via Mid1, ensuring the formation and anchoring of the cytokinetic ring (Laplante et al., 2016; Laporte et al., 2011; Padmanabhan et al., 2011). We linked hexa-histidine tagged Rng2(1-189) to supported lipid bilayers containing nickel-chelating lipids (DOGS-NTA(Ni2+)) and observed the binding of fluorescently labeled actin filaments using live total internal reflection fluorescence (TIRF) microscopy as described earlier (Köster et al., 2016; Figure 1A; Figure 1—figure supplement 1A). Remarkably, actin filaments landing onto His6-Rng2(1-189) decorated SLBs formed highly bent arcs and full rings with curvatures of Ccurly = 1.7 ± 0.5 µm−1 (Figure 1B,C; Figure 1—figure supplement 1D–G; Videos 1 and 2). Binding of other membrane tethering actin binding proteins in the same geometry, such as the CHD of α-actinin or the actin binding domain of Ezrin, did not appreciably bend actin filaments (Figure 1—figure supplement 2A–D). Membrane anchored fimbrin has also been shown not to bend actin (Murrell and Gardel, 2012). To our knowledge, the bending of individual actin filaments into rings is an unprecedented phenomenon among the known actin binding proteins and we will refer in the following to His6-Rng2(1-189) as ‘curly’.
 
+![Video 1.](https://cdn.elifesciences.org/articles/61078/elife-61078-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/61078/elife-61078-video2.mp4.jpg)
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of (top) the IQGAP proteins Rng2 (yeast, S. pombe) and IQGAP1 (mammals, H. Sapiens) and (bottom) the experimental setup used in this study; CHD - Calponin Homology Domain, USR – Unstructured Region, GRD - GAP Related Domain, RasGAP – Ras GTPase Activating Protein, WW – tryptophan containing protein domain. (B) TIRF microscopy image of actin filaments (Alexa488, Cactin = 100 nM) bound to SLB tethered His6-curly (Ccurly = 10 nM); shown is 1/9 field of view (FoV), scale bar 5 µm. (C) Curvature measurements of actin filament rings and curved segments; shown are the individual data points and their mean ± s.d.; N = 425 obtained from five field of views from each of four independent experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coomassie stained SDS-PAGE of the different constructs used in this study; MW indicates molecular weight markers. (B) TIRF microscopy image (1 FoV = Field of View) of actin filaments (Alexa488) bound to SLB tethered His6- curly; yellow circles/ellipses show curvature measurements; scale bar 10 µm. (C) Box plot of actin filament curvatures induced by SLB tethered His6- curly (same as in Figure 1C but with linear scale). (D) Box plot depicting the number of full actin rings per field of view (FoV) induced by SLB tethered His6-Rng2(1-189); N = 15 FoVs from three independent samples.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) TIRF microscopy image of actin filaments (Alexa488, Cactin = 100 nM) bound to SLB tethered α-actinin-His6 (Cα-act = 10 nM); scale bar 5 µm. (B) TIRF microscopy image of actin filaments (Alexa488, Cactin = 100 nM) bound to SLB tethered His10-EzrinABD (CEzrABD = 10 nM); scale bar 5 µm. (C) Curvature measurements of actin filament rings and curved segments; α-actinin-His6: N = 85 obtained from 10 field of views from four individual experiments; His10-EzrinABD: N = 127 obtained from nine field of views from three individual experiments. (D) Same data as (C) but in linear scale.
+
 To understand the mechanism leading to actin filament bending and ring formation by curly, we tested the role of curly anchoring to lipid membranes and its orientation. Curly mobility within planar lipid membranes was important for actin bending as glass adsorbed, immobilized His6-Curly led to reduced actin binding and bending (Cglass = 0.6 ± 0.3 µm−1) (Figure 2A). However, placing the hexa-histidine tag to the C-terminus, Rng2(1-189)-His6, did not affect actin filament bending (Ccurly-his = 1.5 ± 0.5 µm−1) (Figure 2B–D, Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig2-v2.jpg)
+
+**Figure 2.:** TIRF microscopy images of actin filaments (Alexa488, Cactin = 100 nM) bound to. (A) Glass adsorbed His6-curly (Ccurly = 10 nM); N = 138 from nine field of views from each of three independent experiments. (B) SLB bound Rng2(1-189)-His6(CCurly-His = 10 nM); N = 658 from 13 field of views from each of four experiments; images show 1/9 field of view (FoV); scale bars: 5 µm. (C) Number of full actin rings per field of view induced by SLB tethered Rng2(1-189)-His6; N = 16 FoVs from three independent samples. (D) Comparison of curvature measurements of actin filament rings and curved segments; diamonds represent individual measurements, lines the median ± standard deviation and the circle the mean value.
+
+![Figure 2—figure supplement 1,](https://cdn.elifesciences.org/articles/61078/elife-61078-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1,:** (A) Statistical comparison of average actin filament curvatures induced by Rng2 constructs as shown in Figure 2D; plotted are the mean value ± standard deviation of independent experiments, comparison of mean values with Anova one-way test; **: p < 0.005, N.S.: non-significant difference between the mean values.
 
 Next, we studied whether actin bending by curly depended on the orientation of actin filaments by following the landing of already polymerized actin filaments decorated with labeled capping protein as a plus end marker (Bieling et al., 2016). We found that the bending was oriented anti-clockwise with respect to the plus end in all instances, wherein the plus end was clearly labeled to identify the orientation of filament bending (Figure 3A,B; Figure 3—figure supplement 1A,B). This was observed using both, the N-terminal and C-terminal hexa-histidine tagged curly, indicating that the internal sequence of the two actin binding sites within curly sets the chirality of actin bending and not the position of the membrane linker (Figure 3A,B; Figure 3—figure supplement 1A,B; Videos 3 and 4). Actin filaments appeared to bend concomitant with their landing on the supported lipid bilayer, which indicates that the bending did not require the full actin filament to be tethered to the SLB and underlined the earlier observation that the bending occurred locally.
 
+![Video 3.](https://cdn.elifesciences.org/articles/61078/elife-61078-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/61078/elife-61078-video4.mp4.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-v2.jpg)
+
+**Figure 3.:** (A) TIRF microscopy images of actin filaments (Alexa488) (Cactin = 100 nM) with the plus end marked with SNAP647-tagged capping protein (CCP = 2 nM) binding to His6-curly (top) and curly-His6 (bottom) (Ccurly = 10 nM); scale bar: 1 µm. (B) Count of actin filament bending orientations with respect to the capping protein where individual actin filaments could be identified. (C) TIRF microscopy images of a polymerizing actin filament (Alexa488) driven by membrane tethered His6-formin in the presence of His6-curly; scale bar: 1 µm. (D) Curvature measurements of actin filament rings (light blue) and curved short actin filaments (< 2 µm; gray-blue); shown are the individual data points and their mean ± s.d.; Nrings = 477, Nshort = 125 from nine field of views of three independent experiments. (E) TIRF microscopy images of actin filament (Alexa488) ring contraction after addition of rabbit muscle myosin II filaments on His6-curly containing SLBs; scale bar: 1 µm. (F) Average contraction rates of actin filament rings after addition of rabbit muscle myosin II filaments; shown are the individual data points and their mean ± s.d.; N = 18 from two individual experiments. (G) Curvature measurements of actin filament rings and curved segments 20 min after addition of rabbit muscle myosin II filaments; shown are the individual data points and their mean ± s.d.; N = 342 from 10 field of views of two individual experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) TIRF microscopy images of actin filaments (Alexa488) with the plus end marked with SNAP647-tagged capping protein binding to His6-Rng2(1-189); scale bar: 1 µm. (B) TIRF microscopy images of actin filaments (Alexa488) with the plus end marked with SNAP647-tagged capping protein binding to Rng2(1-189)-His6; scale bar: 1 µm. Arrows indicate the actin bending orientation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) TIRF microscopy image (full field of view) of actin filaments (Alexa488) polymerized by membrane tethered His6-formin in the presence of His6-Rng2(1-189); scale bar: 10 µm. (B) Zoom of (A) showing 1/9 of the field of view; scale bar: 5 µm. (C) Data from Figure 3D plotted in linear scale. (D) Comparison of mean actin ring curvatures of independent experiments with formin induced actin polymerization on curly containing membranes (data from Figure 3D) and with actin filaments landing on curly decorated membranes (data from Figure 1C) indicating that the curly induced ring curvature is independent of the type of actin polymerization. (E) Number of full actin rings per field of view when actin filaments are polymerized by membrane tethered His6-formin in the presence of His6-Rng2(1-189); N = 17 FoVs from three independent samples. (F) TIRF microscopy image (full field of view) of actin filaments (Alexa488) polymerized by membrane tethered His6-formin in the presence of His10-EzrinABD; scale bar: 10 µm. (G) Zoom of (F) showing 1/9 of the field of view; scale bar: 5 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) TIRF microscopy image (one field of view) of actin filaments (Alexa488) pre-incubated with tropomyosin (Cdc8) bound to membrane tethered His6- Rng2(1-189); scale bar: 10 µm. (B) TIRF microscopy image (1/9 field of view) of actin filaments (Alexa488) pre-incubated with tropomyosin (Cdc8) bound to membrane tethered His6-Rng2(1-189); scale bar: 5 µm. (C) TIRF microscopy image (representing one field of view) of actin filaments (Alexa488) pre-incubated with fimbrin bound to membrane tethered His6- Rng2(1-189); scale bar: 10 µm. (D) TIRF microscopy image (representing 1/9 field of view) of actin filaments (Alexa488) pre-incubated with fimbrin bound to membrane tethered His6-Rng2(1-189); scale bar: 5 µm. (E) Curvature measurements of actin filament rings and curved segments; Cdc8 (blue): N = 204 from nine field of views of three individual experiments; fimbrin (red): N = 407 from 20 field of views of three independent experiments. (F) Data from (E) plotted in linear scale. (G) Number of full actin rings per field of view, N(Cdc8) = 16, N(fimbrin) = 14 from three independent experiments.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Left: TIRF microscopy image overlay showing multiple ring formation of a tropomyosin coated actin filament (Alexa488) during binding to membrane tethered His6-Rng2(1-189); the first ring formed is colored in cyan, the second ring (in orange) was highlighted by subtracting the image of the first ring from the image stack; scale bar: 1 µm. Right: Intensity line scan (three pixels width) along the white dashed line and corresponding Gaussian peak fits (colored dashed lines). (B) Left: TIRF microscopy image overlay showing multiple ring formation of a polymerizing actin filament (Alexa488) by membrane tethered His6-formin in presence of membrane tethered His6-Rng2(1-189); the first ring formed is colored in cyan, the second ring (in orange) was highlighted by subtracting the image of the first ring from the image stack; scale bar: 1 µm. Right: Intensity line scans (three pixels width) along the white dashed line and corresponding Gaussian peak fits (colored dashed lines).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) TIRF microscopy image time series showing rabbit muscle myosin II filament driven ring formation, sliding and contraction of actin filaments (Alexa488) bound to membrane tethered His6-Rng2(1-189); scale bar: 1 µm. (B) TIRF microscopy image (representing one field of view) of actin filaments (Alexa488) 20 min after addition of rabbit muscle myosin II filaments on His6-curly containing SLBs; scale bar: 10 µm. (C) Zoom of (B) showing 1/9 field of view; scale bar: 5 µm. (D) Data from Figure 3G plotted in linear scale. (E) Comparison of mean actin ring curvatures of individual experiments induced by His6-Rng2(1-189) alone (data from Figure 1C) and in presence of rabbit muscle myosin II filament after 20 min of incubation (data from Figure 3G). (F) Number of full actin rings per field of view of actin filaments 20 min after addition of rabbit muscle myosin II filaments on His6-Rng2(1-189) containing SLBs; N = 15 from three independent experiments. (G) Two-color TIRF microscopy image of actin filaments (Alexa488, magenta) bound to membrane tethered fluorescently labeled His6-SNAP-Rng2(1-189) (Surface549, cyan) before, and (H) 20 min after addition of rabbit muscle myosin II filaments; scale bar 5 µm. (I) Box plot of His6-SNAP-Rng2(1-189) (Surface549) intensities under curved actin filaments before and after addition of rabbit muscle myosin II filaments; intensities were normalized to the average intensity of the entire field of view.
+
 To decouple the actin filament bending from the landing of actin filaments, we induced the polymerization of new actin filaments on planar lipid membranes by membrane tethered formin (His6-SpCdc12(FH1-FH2)), profilin-actin and ATP in the presence of membrane tethered His6-Curly. Strikingly, actin filaments displayed characteristic bending shortly after the onset of polymerization (Cformin, short = 1.1 ± 0.3 µm−1) and often grew into full rings (Cformin rings = 1.7 ± 0.4 µm−1) (Figure 3C,D; Figure 3—figure supplement 2A–E; Video 5). By contrast, polymerization of actin filaments along SLBs decorated with His10-SNAP-EzrinABD did not result in the formation of arcs or rings, establishing that actin filament bending was due to curly and not due to formin (Figure 3—figure supplement 2F,G). These observations show that actin bending occurs continuously due to the binding of membrane tethered curly and did not require the cross-linking of adjacent ends of the same filament as was observed with the actin cross-linker anillin (Kučera et al., 2020). Importantly, the uni-directional bending supports the hypothesis that the binding site of curly with actin filaments defines an orientation with the propagation of an established curved trajectory.
 
+![Video 5.](https://cdn.elifesciences.org/articles/61078/elife-61078-video5.mp4.jpg)
+
 Actin filaments forming the cytokinetic ring in S. pombe are tightly associated with tropomyosin (Cdc8). By contrast, the actin cross-linker fimbrin is present outside the cytokinetic ring region in Arp2/3 generated actin patches and prevents tropomyosin binding to these patches (Skau and Kovar, 2010). To determine whether the actin bending effect of curly is conserved in tropomyosin-wrapped actin filaments, we incubated actin filaments with tropomyosin before adding them to His6-Curly containing SLBs. Strikingly, addition of tropomyosin to actin filaments increased the frequency of actin ring formation without affecting actin filament curvature, while actin filaments incubated with the actin cross-linker fimbrin displayed reduced bending and ring formation (Figure 3—figure supplement 3; Video 6). Thus, the tropomyosin Cdc8 and curly cooperate to enhance actin filament bending and ring formation.
+
+![Video 6.](https://cdn.elifesciences.org/articles/61078/elife-61078-video6.mp4.jpg)
 
 Interestingly, we could observe that long actin filaments coated with tropomyosin would trace consecutive rings around the same center while landing on curly decorated lipid membranes. Subtraction of the image after completion of the first round of actin filament landing into a ring from the image after the second round revealed that the second ring occupied the interior space of the first ring. In line with that, a comparison of the intensity profiles perpendicular to the actin filament of the first and second round of ring formation revealed a widening of the profile toward the ring’s interior (Figure 3—figure supplement 4A,B). A similar effect could be observed in examples of actin filaments polymerized by membrane tethered formin in the presence of membrane tethered curly (Figure 3—figure supplement 4C,D). This would suggest that curly can arrange long actin filaments into an inward-oriented spiral.
 
 To test whether the curly induced actin rings can contract, we added rabbit skeletal muscle myosin II filaments and ATP to actin filaments bound to SLB tethered His6-curly and followed actin filament dynamics over time. Shortly after myosin II addition, actin filaments (curved and straight ones) were propelled by myosin action leading to increased bending, rotation and finally to ring formation and contraction (Figure 3E–G, Figure 3—figure supplement 5A–D, Video 7). Interestingly, most actin rings displayed a counter-clockwise rotation (34/36 cases) and a slow contraction speed of 3 ± 2 nm s−1 (Figure 3F; Video 8). The density of actin rings was strongly increased after myosin II addition (Figure 3—figure supplement 5E), indicating that actin sliding leads to more recruitment of curly. In line with this, actin filament rings displayed increased localization of fluorescently labeled curly after addition of myosin II filaments (Figure 3—figure supplement 5F–H). Despite reaching very high actin curvatures (up to 6.3 µm−1) no breaking of actin filaments during the contraction process could be observed suggesting that binding of curly reduces the rigidity of actin filaments.
 
+![Video 7.](https://cdn.elifesciences.org/articles/61078/elife-61078-video7.mp4.jpg)
+
+![Video 8.](https://cdn.elifesciences.org/articles/61078/elife-61078-video8.mp4.jpg)
+
 Since Rng2 belongs to the IQGAP protein family, we tested the N-terminal hexa-histidine tagged fragments of the IQGAP proteins Iqg1(1-330) (S. cerevisiae) and IQGAP1(1–678) (H. sapiens) and found that the bending of actin filaments was conserved (CS.C. = 1.1 ± 0.4 µm−1; CH.S. = 1.0 ± 0.2 µm−1) (Figure 4A–C; Figure 4—figure supplement 1A). Comparison of the available crystal structures of H. sapiens IQGAP1(28–190) with S. pombe Rng2(32-190) indicates high similarity between the two (Figure 4—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-v2.jpg)
+
+**Figure 4.:** (A) TIRF microscopy image of actin filaments (Alexa488) bound to membrane tethered His6-Iqg1(1-330) (S. cerevisiae); image shows 1/9 of the field of view, scale bar: 5 µm. (B) TIRF microscopy image of actin filaments (Alexa488) bound to membrane tethered His6-IQGAP1(1–678) (H. sapiens); image shows 1/9 of the field of view, scale bar: 5 µm. (C) Curvature measurements of actin filament rings and curved segments; shown are the individual data points and their mean ± s.d.; Iqg1(1-330) (orange): N = 110 from three field of views of each of three individual experiments; IQGAP1(1–678) (green): N = 407 from 20 field of views of three individual experiments. (D) Confocal microscopy image (maximum intensity projection of the basal cell section) of a HEK293T cell transfected with EGFP-Rng2(1-189), inlet shows zoom of dashed box; scale bar: 5 µm. (E) Confocal microscopy image (maximum intensity projection of the basal cell section) of a RPE-1 cell transfected with EGFP-Rng2(1-189), inlet shows zoom of dashed box; scale bar: 5 µm. (F) Curvature measurements of actin filament rings and curved segments found in EGFP-Rng2(1-189) expressing cells; shown are the individual data points and their mean ± s.d.; HEK293T (teal): N 91 from 14 cells of two independent experiments; REP-1 (fuchsia): N = 113 from 11 cells of two independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparison of mean actin ring curvatures of individual experiments induced by His6-Rng2(1-189) (data from Figure 1C), His6-Iqg1(1-330) and His6-IQGAP1(1–678) (data from Figure 4C). (B) Depiction of structure predictions and overlay of H. sapiens IQGAP1(28–190) and S. pombe Rng2(32-190) indicating the strong similarity between the linker regions of both proteins that are thought to be important for actin bending.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Confocal microscopy images of HEK293T cells transfected with LifeAct-mCherry (magenta) and EGFP-Rng2(1-189) (cyan); inlet shows a ring structure showing both LifeAct and curly labeling; green stars indicate location of ring structures; images show maximum intensity projection of the basal cell section of ~2 μm; scale bar 5 μm. (B) Line scan of the ring in (A) depicting the intensity profile of LifeAct-mCherry and EGFP-Rng2(1-189). (C) Confocal microscopy images of RPE-1 cells transfected with EGFP-Rng2(1-189); green stars indicate location of ring structures; images show maximum intensity projection of the basal cell section of ~2 μm; scale bar 5 μm. (D) Quantification of actin rings found in the basal section of cells expressing EGFP-Rng2(1-189), EGFP-Rng2(1-189)-CaaX or LifeAct-mCherry only; each data point corresponds to one cell.
+
+![Figure 4—figure supplement 3, Curly induces highly curved actin filaments inside cells.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Confocal microscopy images of HEK293T cells transfected with EGFPRng2(1-189)-CaaX; images show maximum intensity projection of the basal cell section (~2 μm); scale bar 5 μm. (B) Confocal microscopy images of HEK293T cells transfected with EGFP-Rng2(144-189)-CaaX; images show maximum intensity projection of the basal cell section (~2 μm); scale bar 5 μm. (C) Confocal microscopy Example images of HEK293T cells transfected with EGFP-Rng2(44-189); images show maximum intensity projection of the basal cell section (~2 μm); scale bar 5 μm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/61078/elife-61078-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Lattice-light-sheet microscopy images (maximum intensity projection) of HEK293T cells transfected with LifeAct-mCherry (magenta) and EGFP-IQGAP1 (cyan); scale bar: 5 µm. (B) Quantification of actin rings found in HEK293T cell expressing EGFP-IQGAP1.
+
+![Video 9.](https://cdn.elifesciences.org/articles/61078/elife-61078-video9.mp4.jpg)
 
 Finally, to test the effect of curly on the actin cortex in cells, we expressed GFP -tagged curly in the mammalian cell lines HEK293T and RPE-1, which resulted in striking changes of the actin cortex architecture with the prominent occurrence of curved and ring-shaped actin filaments and bundles with curvatures of CHEK293T = 2.3 ± 0.4 µm−1 and CRPE-1 = 1.9 ± 0.6 µm−1 (Figure 4D–F, Figure 4—figure supplement 2A–D, Figure 4—figure supplement 3). Co-expression with LifeAct-mCherry confirmed EGFP-Rng2(1-189) bound to actin filaments in cells (Figure 4—figure supplement 2A,B). To our surprise, addition of a CaaX domain to tether curly to cellular membranes did not enhance the actin bending effect but located curly mainly to structures resembling the endoplasmic reticulum (Figure 4—figure supplement 4A). The EGFP-Rng2(144-189) and EGFP-Rng2(144-189)-CaaX constructs showed only cytoplasmic localization (Figure 4—figure supplement 4B,C). To test whether the actin bending effect is conserved in the mammalian full-length protein, we imaged HEK293T cells expressing full-length EGFP-IQGAP1 and LifeAct-mCherry using lattice light sheet microscopy and indeed observed curved and ring-shaped actin structures inside the cell as well at its surface (Figure 4—figure supplement 5; Video 9). These experiments established that curly could instructively reorganize actin filaments into curved structures and rings and that this capacity is conserved in full-length IQGAP1.
 
@@ -51,7 +135,7 @@ Highly bent actin filament structures are most likely important for many cellula
 
 ## Materials and methods
 
-## Cloning and protein purification
+### Cloning and protein purification
 
 S. pombe Rng2 fragments, Fim1, Cdc12 (FH1-FH2) and S. cerevisiae Iqg1 were amplified from cDNA library and genomic DNA, respectively. Amplified fragments were cloned into pET (His6) and pGEX (GST)-based vectors using Gibson cloning method (NEB builder, E5520S). The plasmids used in this study are listed in Supplementary file 2.
 
@@ -65,11 +149,11 @@ Acetylation mimicking version of tropomyosin (ASCdc8) was expressed in BL21-DE3 
 
 SNAP labeling (SNAP-Surface 549, S9112S, NEB) of capping protein-beta and Rng2 1–189 was performed as per the manufactures protocol.
 
-## SDS-PAGE
+### SDS-PAGE
 
 Purity of protein constructs was checked by running them on a 12% SDS-PAGE gel followed by staining with Coomassie blue (SimplyBlueStain, Invitrogen, cat. no. LC6060) and imaging on a ChemiDoc MP (BioRad).
 
-## Mammalian cell expression and imaging
+### Mammalian cell expression and imaging
 
 We used the mammalian cell lines HEK293T and RPE-1 obtained from ATCC which were tested negative for mycoplasma contamination. S pombe Rng2 fragments were cloned into pCDNA3.1-eGFP using the Gibson cloning method. HEK293T and RPE-1 cells were transiently transfected with pCDNA3 containing SpRng2(1-189), SpRng2(1-189)-CAAX, SpRng2(144-189) or SpRng2(144-189)-CAAX using Lipofectamine 2000 (cat. no. 11668019, Life Technologies) following manufacturer’s instructions. Cells were transfected at ∼70% confluency for 24 hr before the experiments.
 
@@ -77,15 +161,15 @@ For confocal microscopy imaging, 500,000 cells were transfected with 0.5–1 µg
 
 For lattice light sheet microscopy, 1 M cells were seeded in six well plates containing 5 mm cover glasses (#1.5 thickness) and transfected with either 0.1 μg pCDNA3.1-eGFP- SpRng2(1-189) or with 0.5 μg pEGFP-IQGAP1 (#30112, Addgene) and 0.5 μg pTK93 Lifeact-mCherry. Cells were imaged 16–22 hr post transfection. Cover glasses were mounted on the imaging chamber and DMEM medium was replaced by pre-warmed L-15 imaging medium (cat. no. 11415049, Gibco, Fisher scientific). Imaging was done at 37°C on a 3i second generation lattice-light-sheet microscope with a 0.71 NA LWD WI objective for excitation and a 1.1 NA WI objective for imaging providing a 62.5x magnification and equipped with 2 Hamamatsu ORCA-Flash 4.0v3 sCMOS cameras, resulting in a 104 nm pixel size. The sheet pattern was a Bessel lattice of 50 beams, with an inner and outer numerical aperture of 0.493 and 0.55 respectively. Sequential dual color imaging was performed using 488 nm and 561 nm lasers for excitation. 3D volumes were recorded with 0.57 μm step size (0.308 µm deskewed) for 150 planes with 100 ms exposure per plane.
 
-## In vitro assay and total internal reflection fluorescence (TIRF) microscopy
+### In vitro assay and total internal reflection fluorescence (TIRF) microscopy
 
-## Supported lipid bilayer and experimental chamber preparation
+#### Supported lipid bilayer and experimental chamber preparation
 
 The sample preparation, experimental conditions and lipid composition were similar to the ones described in previous work (Köster et al., 2016). Glass coverslips (#1.5 borosilicate, Menzel, cat. no. 11348503, Fisher Scientific) for SLB formation were cleaned with Hellmanex III (Hellma Analytics, cat. No. Z805939, Merck) following the manufacturer's instructions followed by thorough rinses with EtOH and MilliQ water and blow dried with N2 gas. For the experimental chamber, 0.2 ml PCR tubes (cat. no. I1402-8100, Starlab) were cut to remove the lid and conical bottom part. The remaining ring was stuck to the cleaned glass using UV glue (cat. no. NOA88, Norland Products) and 3 min curing by intense UV light at 265 nm (UV Stratalinker 2400, Stratagene). Freshly cleaned and assembled chambers were directly used for experiments.
 
 Supported lipid bilayers (SLB) containing 98% DOPC (cat. no. 850375, Avanti Polar Lipids) and 2% DGS-NTA(Ni2+) (cat. no. 790404, Avanti Polar Lipids) lipids were formed by fusion of small uni-lamellar vesicles (SUV) that were prepared by lipid extrusion using a membrane with 100 nm pore size (cat. no. 610000, Avanti Polar Lipids). SLBs were formed by addition of 10 µl of SUV mix (at 4 mM lipid concentration) to chambers filled with 90 µl KMEH (50 mM KCl, 2 mM MgCl2, 1 mM EGTA, 20 mM HEPES, pH 7.2) and incubation for 30 min. Prior to addition of other proteins, the SLBs were washed 10 times by buffer exchange (always leaving 20 µl on top of the SLB to avoid damage by drying). We tested the formation of lipid bilayers and the mobility of lipids in control samples by following the recovery of fluorescence signal after photobleaching of hexa-histidine tagged GFP (His6-GFP) as described in Köster et al., 2016.
 
-## Actin filament polymerization and tethering to SLBs
+#### Actin filament polymerization and tethering to SLBs
 
 Actin was purified from muscle acetone powder form rabbit (cat. no. M6890, Merck) and labeled with Alexa488-maleimide (cat. no. A10254, Thermo Fisher) following standard protocols (Pardee and Spudich, 1982).
 
@@ -97,11 +181,11 @@ In experiments with tropomyosin or fimbrin, actin filaments (CG-actin = 1 µM) w
 
 In experiments with rabbit muscle myosin II filaments, we prepared muscle myosin II filaments by diluting the stock of muscle myosin II proteins (rabbit, m. psoas, cat. no. 8326–01, Hypermol) (CmyoII = 20 µM; 500 mM KCl, 1 mM EDTA, 1 mM DTT, 10 mM HEPES, pH 7.0) 10-times with MilliQ water to drop the KCl concentration to 50 mM and incubated for 5 min to ensure myosin filament formation. Myosin II filaments were further diluted in KMEH to 200 nM and added to the actin filaments bound to the SLB by His6-Curly by replacing 1/10 of the sample buffer with the myosin II filament solution and supplemented with 0.1 mM Mg-ATP as well as a mix of 1 mM Trolox (cat. no. 648471, Merck), 2 mM protocatechuic acid (cat. no. 03930590, Merck), and 0.1 µM protocatechuate 3,4-dioxygenase (cat. no. P8279, Merck) to minimize photobleaching. To summarize, the final buffer composition was 50 mM KCl, 2 mM MgCl2, 1 mM EGTA, 20 mM HEPES, 0.1 mM ATP, 1 mM Trolox, 2 mM protocatechuic acid and 0.1 µM protocatechuate 3,4-dioxygenase at pH 7.2 containing actin filaments (CG-actin = 100 nM) and myosin II filaments (CmyoII = 20 nM). It was important to keep the pH at 7.2, as changes in pH would affect motor activity. As reported earlier, myosin filaments started to show actin network remodeling activity after about 10–15 min of incubation (Köster et al., 2016; Mosby et al., 2020).
 
-## TIRF microscopy
+#### TIRF microscopy
 
 Images were acquired using a Nikon Eclipse Ti-E/B microscope equipped with perfect focus system, a Ti-E TIRF illuminator (CW laser lines: 488 nm, 561 nm, and 640 nm) and a Zyla sCMOS 4.2 camera (Andor, Oxford Instruments, UK) controlled by Andor iQ3 software.
 
-## Image analysis
+### Image analysis
 
 Images were analyzed using ImageJ (http://imagej.nih.gov/ij).
 
@@ -111,6 +195,6 @@ The actin ring contraction rate upon myosin II filament action was measured by g
 
 The 3D projection animation of HEK293 cells expressing EGFP-IQGAP1 and mRuby-LifeAct was generated with the 3Dscript plugin for ImageJ (Schmid et al., 2019).
 
-## Data plotting and statistics
+### Data plotting and statistics
 
 Graphs were generated using OriginPro (version 2019b, OriginLab, USA). All box plots depict individual data points, mean (circle), median (central line) and standard deviation (top and bottom lines).

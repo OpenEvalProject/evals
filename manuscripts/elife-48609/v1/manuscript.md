@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.48609.001 Inflammation is an essential aspect of innate immunity but also contributes to diverse human diseases. Although much is known about the kinases that control inflammatory signaling, less is known about the opposing phosphatases. Here we report that deletion of the gene encoding PH domain Leucine-rich repeat Protein Phosphatase 1 (PHLPP1) protects mice from lethal lipopolysaccharide (LPS) challenge and live Escherichia coli infection. Investigation of PHLPP1 function in macrophages reveals that it controls the magnitude and duration of inflammatory signaling by dephosphorylating the transcription factor STAT1 on Ser727 to inhibit its activity, reduce its promoter residency, and reduce the expression of target genes involved in innate immunity and cytokine signaling. This previously undescribed function of PHLPP1 depends on a bipartite nuclear localization signal in its unique N-terminal extension. Our data support a model in which nuclear PHLPP1 dephosphorylates STAT1 to control the magnitude and duration of inflammatory signaling in macrophages.
+Inflammation is an essential aspect of innate immunity but also contributes to diverse human diseases. Although much is known about the kinases that control inflammatory signaling, less is known about the opposing phosphatases. Here we report that deletion of the gene encoding PH domain Leucine-rich repeat Protein Phosphatase 1 (PHLPP1) protects mice from lethal lipopolysaccharide (LPS) challenge and live Escherichia coli infection. Investigation of PHLPP1 function in macrophages reveals that it controls the magnitude and duration of inflammatory signaling by dephosphorylating the transcription factor STAT1 on Ser727 to inhibit its activity, reduce its promoter residency, and reduce the expression of target genes involved in innate immunity and cytokine signaling. This previously undescribed function of PHLPP1 depends on a bipartite nuclear localization signal in its unique N-terminal extension. Our data support a model in which nuclear PHLPP1 dephosphorylates STAT1 to control the magnitude and duration of inflammatory signaling in macrophages.
 
 ## Introduction
 
@@ -41,21 +41,21 @@ Here we report that nuclear-localized PHLPP1 opposes STAT1 Ser727 phosphorylatio
 
 ## Results
 
-## PHLPP1 regulates the innate immune response
+### PHLPP1 regulates the innate immune response
 
 To explore the role of PHLPP1 in acute inflammation, we examined the kinetics and outcome of sepsis-induced death caused by intraperitoneal (i.p.) injection of Gram-negative E. coli bacteria in WT and Phlpp1-/- mice. Surprisingly, absence of PHLPP1 provided a strong protective effect; at a dose where more than 50% of WT mice died within 12 hr of E. coli challenge, 50% of the Phlpp1-/- mice remained alive after 10 days (Figure 1A). Similarly, Phlpp1-/- mice were protected from toxicity induced by the purified Gram-negative bacterial cell wall component LPS, with nearly half of the Phlpp1-/- mice alive after 10 days compared to only 1 out of 16 of the WT mice (Figure 1B). To understand the lower mortality rates in Phlpp1-/- mice, we measured levels of different cytokines in the serum of mice across a time course following LPS injection (Figure 1C–E). Serum levels of pro-inflammatory cytokine interleukin 6 (IL-6) were significantly increased in WT mice within 5 hr of LPS injection, returning to baseline within 12 hr (Figure 1C). In contrast, the Phlpp1-/- mice had 2-fold lower IL-6 levels at 5 hr post-infection, but these levels were sustained for up to 24 hr, suggestive of improper resolution of inflammation. Levels of another pro-inflammatory cytokine, IL-1β, were likewise consistently higher in Phlpp1-/- mice compared with WT mice (Figure 1D). By contrast, levels of the anti-inflammatory cytokine IL-10 did not differ significantly between the WT and Phlpp1-/- mice (Figure 1E). Note that cytokine levels were measured up to 24 hr post LPS injection, when the protective effect of PHLPP1 loss was not yet apparent. These findings indicate an essential role for PHLPP1 in regulation of the innate immune response at the whole organism level.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig1-v1.jpg)
 
-**Figure 1.:** (A) Survival curve of WT and Phlpp1 mice i.p. infected with 1 × 10-/-7 cfu of E. coli. Values are expressed as percent survival of 15 mice for each genotype. **p<0.01 by log-rank test. (B) Survival curve of WT and Phlpp1 mice i.p. injected with 15 mg/kg LPS. Values are expressed as percent survival of 16 mice for each genotype. *p<0.05 by log-rank test. (-/-C–E) ELISA showing IL-6 (C), IL-1β (D) and IL-10 (E) levels in serum at the indicated times after i.p. injection of 10 mg/kg LPS. Data represent mean ± SEM. Statistics analyzed by Student’s t-test *p<0.05, **p<0.01.
+**Figure 1.:** (A) Survival curve of WT and Phlpp1-/- mice i.p. infected with 1 × 107 cfu of E. coli. Values are expressed as percent survival of 15 mice for each genotype. **p<0.01 by log-rank test. (B) Survival curve of WT and Phlpp1-/- mice i.p. injected with 15 mg/kg LPS. Values are expressed as percent survival of 16 mice for each genotype. *p<0.05 by log-rank test. (C–E) ELISA showing IL-6 (C), IL-1β (D) and IL-10 (E) levels in serum at the indicated times after i.p. injection of 10 mg/kg LPS. Data represent mean ± SEM. Statistics analyzed by Student’s t-test *p<0.05, **p<0.01.
 
-## Loss of PHLPP1 results in increased STAT1-dependent transcription in macrophages
+### Loss of PHLPP1 results in increased STAT1-dependent transcription in macrophages
 
 Since macrophages are a key cell type involved in the initial response to E. coli infection and LPS challenge, we analyzed the transcriptome of BMDMs isolated from WT or Phlpp1-/- mice before and after stimulation by the major LPS component, Kdo2-Lipid A (KLA), for 1, 6, or 24 hr (Figure 2A). RNA-Seq analysis identified 1,654 mRNA transcripts induced more than two-fold by KLA treatment, with a false discovery rate (FDR) less than 0.05 at any of the time points. Expression of approximately 12% of these genes (199 genes; Supplementary file 1) was increased in macrophages from Phlpp1-/- mice compared to those from littermate control WT mice 6 hr following KLA treatment; transcript levels of these genes remained significantly elevated (>two fold) 24 hr later. Another set of genes exhibited reduced expression 24 hr following KLA treatment (144 genes; Supplementary file 2). Gene ontology analysis revealed that many of the genes whose expression was elevated in the Phlpp1-/- macrophages are associated with inflammatory signaling: these included genes annotated for their involvement in the innate immune response, cytokine-cytokine receptor interactions, LPS signaling, interferon-β response, and tumor necrosis factor (TNF) signaling-dependent pathways (Figure 2B). Genes significantly decreased in Phlpp1-/- compared to WT macrophages were enriched most significantly in nodes related to central carbon metabolism, and to a lesser extent, chronic inflammatory responses and LPS signaling (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig2-v1.jpg)
 
-**Figure 2.:** (A) Heat map for mRNA-Seq expression of the 1,654 mRNA transcripts regulated greater than two-fold with a FDR < 0.05 in BMDMs isolated from WT or Phlpp1 animals treated with 100 ng/ml KLA for 1, 6 or 24 hr. Data represent the log-/-2 difference between the mRNA expression in Phlpp1 macrophages compared to wild-type macrophages. (-/-B) Gene ontology analysis for the 199 elevated (red arrow) or 144 decreased (blue arrow) transcripts in Phlpp1 macrophages compared to wild-type macrophages. (-/-C) De novo motif analysis using HOMER (Hypergeometric Optimization of Motif EnRichment) for the 199 promoters corresponding to the genes elevated in the Phlpp1 macrophages. (-/-D) Pie graph showing the percentage of promoters of elevated genes that contain STAT or IRF binding motifs. (E–G) Normalized mRNA-Seq values for (E) Cd69 (F) Ifit2 and (G) Gbp5 mRNA in BMDMs isolated from WT or Phlpp1 animals treated with 100 ng/ml KLA for 0, 1, 6, or 24 hr. RPKM – Reads Per Kilobase Million. Values are expressed as mean ± SEM. *p<0.05 (Student’s -/-t-test) compared to WT cells. See also Supplementary file 1 and Supplementary file 2.
+**Figure 2.:** (A) Heat map for mRNA-Seq expression of the 1,654 mRNA transcripts regulated greater than two-fold with a FDR < 0.05 in BMDMs isolated from WT or Phlpp1-/- animals treated with 100 ng/ml KLA for 1, 6 or 24 hr. Data represent the log2 difference between the mRNA expression in Phlpp1-/- macrophages compared to wild-type macrophages. (B) Gene ontology analysis for the 199 elevated (red arrow) or 144 decreased (blue arrow) transcripts in Phlpp1-/- macrophages compared to wild-type macrophages. (C) De novo motif analysis using HOMER (Hypergeometric Optimization of Motif EnRichment) for the 199 promoters corresponding to the genes elevated in the Phlpp1-/- macrophages. (D) Pie graph showing the percentage of promoters of elevated genes that contain STAT or IRF binding motifs. (E–G) Normalized mRNA-Seq values for (E) Cd69 (F) Ifit2 and (G) Gbp5 mRNA in BMDMs isolated from WT or Phlpp1-/- animals treated with 100 ng/ml KLA for 0, 1, 6, or 24 hr. RPKM – Reads Per Kilobase Million. Values are expressed as mean ± SEM. *p<0.05 (Student’s t-test) compared to WT cells. See also Supplementary file 1 and Supplementary file 2.
 
 To gain insight into gene regulatory mechanisms affected by loss of PHLPP1, we performed de novo motif analysis of the promoters of upregulated genes in Phlpp1-/- macrophages using Hypergeometric Optimization of Motif EnRichment (HOMER), a suite of tools for motif discovery and Next Generation Sequencing (NGS) analysis (Heinz et al., 2010). This algorithm defines motifs that are statistically enriched in a targeted promoter list compared to random promoter sequences with comparable GC content. The analysis revealed significant enrichment of STAT (p<10−18) and IRF (p<10−9) motifs (Figure 2C) in the promoters of genes whose expression was statistically increased in Phlpp1-/- macrophages compared to WT macrophages. Of the 199 genes with elevated expression, 46% of the genes had promoters with a consensus STAT binding motif, 51% had promoters with a potential binding site for IRF family of transcription factors, and 26% had promoters with predicted binding sites for both STAT and IRF (Figure 2D). We selected for further analysis three genes whose expression was elevated in the Phlpp1-/- compared to WT macrophages and which had proximal STAT1 binding motifs in their promoters: Cd69, Ifit2, and Gbp5. Normalized mRNA-Seq data for each of these three genes confirmed elevated mRNA levels in Phlpp1-/- macrophages compared to WT macrophages (Figure 2E–G). Thus, loss of PHLPP1 leads to sustained KLA-induced expression of genes involved in inflammation, of which 46% have predicted STAT motifs in their proximal regulatory regions.
 
@@ -63,27 +63,47 @@ If PHLPP1 suppresses STAT-regulated gene transcription, we reasoned that 1] knoc
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) Quantitative PCR analysis for (A) Cd69 (B) Ifit2 and (C) Gbp5 mRNA isolated from thioglycollate-elicited peritoneal macrophages treated with control siRNA (siCtl) or siRNA specifically targeting Stat1 (siStat1) and subsequently treated with vehicle or 100 ng/ml KLA for 6 or 24 hr. Values are expressed as mean ± SEM from replicate experiments. *p<0.05 (Student’s t-test) compared to siCtl treated cells. (D–F) Quantitative PCR analysis of ChIPs for STAT1 at the (D) Cd69 (E) Ifit2 and (F) Gbp5 promoter in BMDMs isolated from WT or Phlpp1 animals and treated with 100 ng/ml KLA for 0, 1, 6 or 24 hr. Values are expressed as mean ± SEM. *p<0.05 (Student’s -/-t-test) compared to WT cells.
+**Figure 3.:** (A–C) Quantitative PCR analysis for (A) Cd69 (B) Ifit2 and (C) Gbp5 mRNA isolated from thioglycollate-elicited peritoneal macrophages treated with control siRNA (siCtl) or siRNA specifically targeting Stat1 (siStat1) and subsequently treated with vehicle or 100 ng/ml KLA for 6 or 24 hr. Values are expressed as mean ± SEM from replicate experiments. *p<0.05 (Student’s t-test) compared to siCtl treated cells. (D–F) Quantitative PCR analysis of ChIPs for STAT1 at the (D) Cd69 (E) Ifit2 and (F) Gbp5 promoter in BMDMs isolated from WT or Phlpp1-/- animals and treated with 100 ng/ml KLA for 0, 1, 6 or 24 hr. Values are expressed as mean ± SEM. *p<0.05 (Student’s t-test) compared to WT cells.
 
-## PHLPP1 binds to STAT1 and dephosphorylates Ser727
+### PHLPP1 binds to STAT1 and dephosphorylates Ser727
 
 We next examined whether PHLPP1 affects the phosphorylation state of the two regulatory STAT1 phosphorylation sites, Ser727 and Tyr701. Primary BMDMs were isolated from WT and Phlpp1 -/- mice and the kinetics and magnitude of KLA-triggered phosphorylation at each of the two STAT1 sites were compared. Loss of PHLPP1 in BMDMs led to a robust increase in STAT1 phosphorylation on the regulatory site Ser727 but did not affect Tyr701 phosphorylation (Figure 4A–B). PHLPP1 loss also resulted in an increase in Erk phosphorylation at its activation loop sites, as previously reported (Reyes et al., 2014). Incubation of in vitro phosphorylated STAT1 with immunoprecipitated FLAG-tagged PHLPP1 resulted in dephosphorylation at Ser727, suggesting that PHLPP1 directly dephosphorylates STAT1 (Figure 4C). Furthermore, overexpression of PHLPP1 in HEK-293T cells reduced IFNγ-dependent phosphorylation of STAT1 on Ser727 but not on Tyr701 (Figure 4D–E). Thus, PHLPP1 selectively dephosphorylates the Ser727 regulatory phosphorylation on STAT1 in vitro and in cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig4-v1.jpg)
 
-**Figure 4.:** (A) Western blot analysis of primary BMDM from WT or Phlpp1 mice treated with 100 ng/ml KLA for the indicated times and probed with the indicated antibodies. (-/-B) Ratio of pSTAT1 (S727):total STAT1, pSTAT1 (Y701):total STAT1 or phosphoERK (T202/Y204):total ERK normalized to the highest value; data represent the mean ± SEM of five independent experiments as in (A). **p<0.01 (Student’s t-test) compared to WT cells. (C) Western blot analysis of an in vitro phosphatase assay of purified and phosphorylated STAT1 and immunoprecipitated FLAG-PHLPP1, incubated for 0 or 120 min at 30°C (on the left). On the right, quantification of pSTAT1 (S727) divided by total STAT1 and normalized to 0 time point. Values are expressed as mean ± SEM of three independent experiments. **p<0.01 (Student’s t-test). (D) Western blot analysis of HEK-293T cells over-expressing vector control (Vector) or HA-tagged PHLPP1 and treated with 10 ng/ml IFNγ for 0, 1, 6, or 24 hr. (E) Graphs represent the quantification of three independent experiments as presented in (D). Values are expressed as mean relative units of pSTAT1 (S727) or (Y701) divided by β-Actin and normalized to vector 0 hr ± SEM. *p<0.05 (Student’s t-test) compared to vector control expressing cells. See also Figure 6—figure supplement 1.
+**Figure 4.:** (A) Western blot analysis of primary BMDM from WT or Phlpp1-/- mice treated with 100 ng/ml KLA for the indicated times and probed with the indicated antibodies. (B) Ratio of pSTAT1 (S727):total STAT1, pSTAT1 (Y701):total STAT1 or phosphoERK (T202/Y204):total ERK normalized to the highest value; data represent the mean ± SEM of five independent experiments as in (A). **p<0.01 (Student’s t-test) compared to WT cells. (C) Western blot analysis of an in vitro phosphatase assay of purified and phosphorylated STAT1 and immunoprecipitated FLAG-PHLPP1, incubated for 0 or 120 min at 30°C (on the left). On the right, quantification of pSTAT1 (S727) divided by total STAT1 and normalized to 0 time point. Values are expressed as mean ± SEM of three independent experiments. **p<0.01 (Student’s t-test). (D) Western blot analysis of HEK-293T cells over-expressing vector control (Vector) or HA-tagged PHLPP1 and treated with 10 ng/ml IFNγ for 0, 1, 6, or 24 hr. (E) Graphs represent the quantification of three independent experiments as presented in (D). Values are expressed as mean relative units of pSTAT1 (S727) or (Y701) divided by β-Actin and normalized to vector 0 hr ± SEM. *p<0.05 (Student’s t-test) compared to vector control expressing cells. See also Figure 6—figure supplement 1.
 
 Because the abundance of PHLPP1 in the cell is much lower than other phosphatases such as PP2A (Hein et al., 2015), we next sought to determine whether regulation of STAT1 promoter activity was solely due to PHLPP1 phosphatase activity or occurred in combination with other phosphatases. Taking advantage of the insensitivity of PHLPP phosphatases to the PP1/PP2A inhibitor okadaic acid (OA) (Gao et al., 2005), we examined whether OA treatment affected KLA-dependent changes on Ser727 phosphorylation in primary BMDMs from WT mice. Figure 5A–B shows that the KLA-induced increase in Ser727 phosphorylation was relatively insensitive to OA, under conditions where the phosphorylation of Erk (at Thr202/Tyr204) and Akt (at Thr308) was significantly increased upon OA addition. These data are consistent with PHLPP1, a PP2C family member, being the primary regulator of phosphorylation on the activity-tuning Ser727 site of STAT1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig5-v1.jpg)
 
-**Figure 5.:** (A) Western blot analysis of primary BMDMs from WT or Phlpp1 mice treated with 100 ng/ml KLA for 0 or 30 min followed by treatment with 1 µM OA or DMSO control for an additional 15 min and probed with the indicated antibodies; pAkt antibody recognizes phosphorylated Thr308. (-/-B) Graphs represent the quantification of three independent experiments as presented in (A). Values are expressed as the mean ± SEM of the ratio of pSTAT1 (S727) to total STAT1 normalized to the highest value; *p<0.05, **p<0.01 and n.s.- non-significant (Student’s t-test).
+**Figure 5.:** (A) Western blot analysis of primary BMDMs from WT or Phlpp1-/- mice treated with 100 ng/ml KLA for 0 or 30 min followed by treatment with 1 µM OA or DMSO control for an additional 15 min and probed with the indicated antibodies; pAkt antibody recognizes phosphorylated Thr308. (B) Graphs represent the quantification of three independent experiments as presented in (A). Values are expressed as the mean ± SEM of the ratio of pSTAT1 (S727) to total STAT1 normalized to the highest value; *p<0.05, **p<0.01 and n.s.- non-significant (Student’s t-test).
 
 We next addressed whether enhanced promoter binding of STAT1 upon loss of PHLPP1 resulted in enhanced transcriptional activation using a luciferase reporter assay. WT or Phlpp1-/- mouse embryonic fibroblasts (MEFs) were co-transfected with a firefly luciferase reporter construct containing GAS promoter elements, as well as a renilla luciferase controlled by a constitutive CMV promoter as an internal control. STAT1 promoter activity was assessed by monitoring luminescence following IFNγ stimulation. Figure 6A shows that STAT1 promoter activity was significantly higher in Phlpp1-/- MEFs compared to WT MEFs at both 6 hr and 24 hr. Pre-treatment of cells with okadaic acid, under conditions that increased the phosphorylation of PP2A-sensitive substrates (see Figure 5A and Figure 6—figure supplement 1), had no effect on STAT1 promoter activity (Figure 6A); note that treatment with a PKC inhibitor also had no effect on STAT1 promoter activity (Figure 6—figure supplement 2). Because STAT1 functions in the nucleus, we next asked whether PHLPP1 regulation of STAT1 occurs in the cytoplasm or nucleus. To this end, we assessed the effect of expressing either the PP2C domain of PHLPP1 or a nuclear-targeted (NLS) PP2C domain of PHLPP1 (Figure 6B) on IFNγ-induced STAT1 promoter activity via the GAS luciferase assay. The overexpressed PP2C domain of PHLPP1 (Figure 6C, blue) was considerably less effective in inhibiting STAT1 promoter activity compared to full-length PHLPP1 (Figure 6C, red). However, forcing the PP2C domain into the nucleus by attaching an NLS to its N-terminus inhibited STAT1 promoter activity as effectively as overexpression of full-length PHLPP1 (Figure 6C, orange). Analysis of the subcellular localization of the constructs used in this experiment revealed that full-length PHLPP1 was primarily cytosolic, the isolated PP2C domain had increased nuclear localization, and the NLS-PP2C was enriched in the nucleus (Figure 6—figure supplement 3). To address whether PHLPP1 catalytic activity is required for STAT1 regulation, we utilized a phosphatase-dead PP2C domain in which two active site residues, Asp1210 and Asp1413 (Sierecki and Newton, 2014) were mutated to Ala (DDAA). The catalytically-inactive NLS-PP2C was no longer able to suppress STAT1 activity (Figure 6C, purple); immunofluorescence confirmed its nuclear localization (Figure 6—figure supplement 3). Thus, both the catalytic activity and nuclear localization of PHLPP1 are necessary for it to regulate STAT1 transcriptional activity.
 
-## PHLPP1 has a bipartite nuclear localization signal in its N-Terminal extension
+### PHLPP1 has a bipartite nuclear localization signal in its N-Terminal extension
 
 Bioinformatics analysis of the sequence of PHLPP1 using SeqNLS (Lin and Hu, 2013) revealed a potential Arg-rich bipartite NLS (92RRRRR-X-122RRGRLKR) in the N-terminal extension unique to the PHLPP1 isozyme (Figure 6D). To test whether these basic segments function as an NLS, we examined the subcellular localization in HeLa cells of the NTE alone or NTE in which the basic residues in each or both halves of the potential bipartite NLS were mutated to Ala (Figure 6E). Immunofluorescence revealed that the NTE localizes to the nucleus. Mutation of the first NLS or the second NLS increased the distribution of the NTE to the cytosol, and mutation of both decreased the nuclear:cytoplasmic ratio to be comparable to that of a construct of the NTE with a strong Nuclear Export Signal (NES) (LALKLAGLDI from PKI; see Wen et al., 1995a) (Figure 6F). Full-length PHLPP1 was primarily cytosolic, leading us to ask whether there may also be an NES. Bioinformatics analysis of the primary sequence identified a potential Leu-rich NES (Xu et al., 2015) immediately following the last LRR and preceding the phosphatase domain (Figure 6—figure supplement 4). Attachment of this 14-residue sequence to the N-terminus of the NTE resulted in distribution of the NTE to the cytosol (Figure 6—figure supplement 4). Thus, PHLPP1 nuclear localization is controlled by a bipartite NLS in the NTE and is opposed by an NES following the LRR. Lastly, we examined the effect of mutating the NLS on the ability of full-length PHLPP1 to reduce STAT1 transcriptional activity as assessed using the GAS promoter assay. The reduction in IFNγ-induced STAT1 activity resulting from PHLPP1 overexpression (Figure 6G, red) was abolished upon mutation of NLS2 (Figure 6G, brown) or both halves of the NLS (NLS1/2) (Figure 6G, purple). Mutation of NLS1 had an intermediate effect (Figure 6G, blue). These data reveal that a bipartite NLS in the NTE of PHLPP1 localizes PHLPP1 to the nucleus, where it suppresses the transcriptional activity of STAT1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig6-v1.jpg)
+
+**Figure 6.:** (A) Luciferase reporter assay in WT (+/+) and Phlpp1-/- (-/-) MEFs over-expressing GAS luciferase reporter and treated with 10 ng/ml IFNγ for 0, 1, 6, or 24 hr in combination with 1 µM OA or DMSO control treatment for 15 min. Values are expressed as mean of relative light units (RLU) ± SEM of three independent experiments. *p<0.05 (Student’s t-test). See also Figure 6—figure supplement 1. (B) Schematic of HA-tagged PHLPP1 constructs used in this study: the PP2C domain of PHLPP1 (PP2C), nuclear targeted PP2C with NLS (NLS- PP2C), NLS-PP2C with active site residues Asp1210 and Asp1413 mutated to Ala (NLS-PP2C DDAA), and full-length PHLPP1 (PHLPP1). (C) Luciferase reporter assay in HEK-293T cells over-expressing GAS luciferase reporter in combination with either vector control (vector, black) or the constructs described in (B) and treated with 10 ng/ml IFNγ for 0, 1, 6, or 24 hr. Values are expressed as mean RLU ± SEM of four independent experiments. All data points at 24 hr were significant against each other except for vector to PP2C, vector to NLS-PP2C DDAA, P1 to NLS-PP2C, and PP2C to NLS-PP2C DDAA. *p<0.05, **p<0.01 (Student’s t-test). (D) Schematic showing position and sequence of bipartite NLS in the NTE, and NLS mutants used in this study. (E) HeLa cells over-expressing the constructs used in Figure 6D were stained for HA (green), α-Tubulin (red), and DAPI (blue). Scale bar indicates 15 µm. (F) The Nuclear to Cytoplasmic ratio was calculated for each construct (300 cells per construct) and values are expressed as mean ± SEM. All data points were significant against each other except for NLS1 to NLS2, and NLS2 to NLS1/2. **p<0.01, n.s. – non-significant (Student’s t-test). (G) Luciferase reporter assay in HEK-293T cells over-expressing a GAS luciferase reporter in combination with either vector control (vector, black) or the constructs described in (D) however in the context of a full-length PHLPP1 and treated with 10 ng/ml IFNγ for 0, 1, 6, or 24 hr. Values are expressed as mean RLU ± SEM of eight independent experiments. *p<0.05, **p<0.01, n.s. - non-significant (Student’s t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Western blot analysis of extracts used in the luciferase reporter assay in WT (+/+) and Phlpp1-/- (-/-) MEFs over-expressing GAS luciferase reporter and treated with 10 ng/ml IFNγ for 0 or 24 hr in combination with 1 μM OA or DMSO control treatment for 15 min. Phosphorylation of the PP2A target site on Akt (Thr308) was increased upon OA treatment.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Values are expressed as mean of RLU ± SEM of three independent experiments.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) HeLa cells over-expressing the HA-tagged constructs used in Figure 6B were stained for HA (green), α-Tubulin (red), and DAPI (blue). Scale bar indicates 15 µm. (B) The Nuclear to Cytoplasmic ratio was calculated for each construct and values are expressed as mean ± SEM of: 169 cells for P1, 101 cells for PP2C, 100 cells for NLS-PP2C, and 101 cells for NLS-PP2C DDAA.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48609/elife-48609-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Schematic showing position of NES (residues 1125–1134) immediately following the last LRR. (B) HeLa cells over-expressing PHLPP1, the NTE from WT PHLPP1 (NTE-WT) or the NTE-WT in which the PHLPP1 NES was fused to the N-terminus (PHLPP1NES-NTE) were stained for HA (green), α-Tubulin (red), and DAPI (blue). Scale bar indicates 15 µm.
 
 We next assessed which domain of PHLPP1 contributes to the observed regulation of STAT1 activity on the GAS promoter. Overexpression of full-length PHLPP1 in HEK-293T cells markedly reduced GAS promoter activity (Figure 7A, red) compared to the vector only control (Figure 7A, black). A construct of PHLPP1 lacking the NTE (deletion of first 512 amino acids of its N-terminus; PHLPP1ΔNTE, blue) was less effective than full-length PHLPP1 in reducing STAT1 activity, whereas a construct comprised of just the NTE (amino acids 1–512, green) caused a significant increase in GAS promoter activity, suggesting a dominant-negative function of this segment. Co-immunoprecipitation assays revealed a robust interaction of STAT1 with the immunoprecipitated NTE of PHLPP1, in contrast to barely detectable binding of STAT1 to PHLPP1 lacking the NTE (Figure 7B). Intermediate binding was observed between STAT1 and full-length PHLPP1. Quantification of three independent experiments revealed that the isolated NTE of PHLPP1 binds STAT1 approximately five times more strongly than full-length PHLPP1 and 26 times more strongly than PHLPP1 lacking the NTE (Figure 7C). These data reveal that the NTE of PHLPP1 interacts with STAT1 and reduces its promoter activity.
 
@@ -111,50 +131,438 @@ Germline mutations that impair STAT1 function, by reducing either Tyr701 phospho
 
 ## Materials and methods
 
-## Materials and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Primary Bone Marrow Derived Macrophage Cells from Phlpp1+/+ mice</td>
+      <td>This paper</td>
+      <td>WT BMDM</td>
+      <td>male, 6–8 week old C57BL/6 mice, Charles River Laboratories</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Primary Bone Marrow Derived Macrophage Cells from Phlpp1-/- mice</td>
+      <td>This paper</td>
+      <td>Phlpp1-/- BMDM</td>
+      <td>male, 6–8 week old C57BL/6 mice, Charles River Laboratories</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Immortalized MEFs from Phlpp1+/+ mice</td>
+      <td>Lloyd Trotman Lab, CSHL, PMID: 21840483</td>
+      <td></td>
+      <td>stably expressing shp53 and GFP</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Immortalized MEFs from Phlpp1-/- mice</td>
+      <td>Lloyd Trotman Lab, CSHL, PMID: 21840483</td>
+      <td></td>
+      <td>stably expressing shp53 and GFP</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NCTC clone L929</td>
+      <td>ATCC</td>
+      <td>CCL-1</td>
+      <td>L cell, L-929, derivative of Strain L</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli K1 strain RS218</td>
+      <td>PMID: 6995336</td>
+      <td></td>
+      <td>Victor Nizet Lab, University of California San Diego</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>WT and littermate control Phlpp1-/- mice</td>
+      <td>PMID: 20080691</td>
+      <td></td>
+      <td>female, 10 to 14 week old, C57BL/6, for mouse infection studies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (rat, monoclonal)</td>
+      <td>Roche</td>
+      <td>11867425001</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2555</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT1 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9172</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT1 pSer727 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9177</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT1 pTyr701 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>7649</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Erk1/2 pThr202/pTyr204 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9101</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Erk1/2 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9102</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Akt pThr308 (rabbit, polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9275</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Akt (rabbit, polyclonal)</td>
+      <td>AbCam</td>
+      <td>126811</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PHLPP1 (rabbit, polyclonal)</td>
+      <td>Proteintech</td>
+      <td>22789–1-AP</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Actin (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2228</td>
+      <td>Western Blot (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-tubulin (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6074</td>
+      <td>Western Blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT1 (rabbit, polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-345</td>
+      <td>Chromatin Immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (mouse, monoclonal)</td>
+      <td>BioLegend</td>
+      <td>901503</td>
+      <td>Immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-tubulin (rabbit, monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2125</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Alexa647 (goat anti-Mouse IgG)</td>
+      <td>Life Technologies</td>
+      <td>A21235</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Alexa477 (goat anti-Rabbit IgG)</td>
+      <td>Life Technologies</td>
+      <td>A11034</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV 3XFLAG-PHLPP1 WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–1717 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-NLS-PHLPP1 PP2C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 653–906 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-NLS-PHLPP1 PP2C D1210/1413A</td>
+      <td>This paper</td>
+      <td>DDAA</td>
+      <td>Aspartate at residues 1210 and 1413 mutated to Alanine</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA PHLPP1 NTE-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-PHLPP1 NTE-NLS1 mut.</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-PHLPP1 NTE-NLS2 mut.</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-PHLPP1 NTE-NLS1/2 mut.</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-NES-PHLPP1 NTE</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-PHLPP1 ΔNTE</td>
+      <td>PMID: 15808505</td>
+      <td>Addgene: 22404</td>
+      <td>residues 513–1717 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3 HA-PHLPP1NES-PHLPP1 NTE</td>
+      <td>This paper</td>
+      <td></td>
+      <td>residues 1–512 of PHLPP1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stat1 SMART siRNA pools</td>
+      <td>Dharmacon</td>
+      <td>L-058881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Control SMART siRNA pools</td>
+      <td>Dharmacon</td>
+      <td>D-001810-10-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>murine IFNγ</td>
+      <td>PeproTech</td>
+      <td>315–05</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>human IFNγ</td>
+      <td>PeproTech</td>
+      <td>300–02</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant STAT1</td>
+      <td>Biosource</td>
+      <td>PHF0011</td>
+      <td>0.3 uM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human Cdk1/CyclinB</td>
+      <td>Millipore</td>
+      <td>14–450</td>
+      <td>0.2 uM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>E. coli O111:B4 LPS</td>
+      <td>Sigma-Aldrich</td>
+      <td>L4391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Okadaic Acid (OA)</td>
+      <td>Millipore</td>
+      <td>459616</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gö6983</td>
+      <td>Calbiochem</td>
+      <td>365251</td>
+      <td>250 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>Calbiochem</td>
+      <td>569397</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KLA</td>
+      <td>Avanti Polar Lipids</td>
+      <td>699500</td>
+      <td>100 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RO-3306</td>
+      <td>Enzo</td>
+      <td>ALX-270–463</td>
+      <td>144 uM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>E2940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-6 ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>DY406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-1β ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>DY401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-10 ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>DY417</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials and antibodies
 
 OA (459616) was purchased from Millipore. Gö6983 (365251) and staurosporine (569397) were purchased from Calbiochem. Antibody against HA (11867425001) was purchased from Roche; antibodies against GFP (2555), STAT1 (9172), phosphorylated Ser727 on STAT1 (9177), phosphorylated Tyr701 on STAT1 (7649), phosphorylated Thr202/Tyr204 on Erk1/2 (9101), total Erk1/2 (9102), and phosphorylated Thr308 on Akt (9275) were purchased from Cell Signaling. Antibody against total Akt (126811) was obtained from AbCam. Antibodies against PHLPP1 were purchased from Cosmo (KIAA0606) and Proteintech (22789–1-AP); antibodies against FLAG (F3165), β-Actin (A2228), and α-tubulin (T6074) were purchased from Sigma-Aldrich. The pcDNA3 HA-tagged PHLPP1 and PHLPP2 constructs for mammalian cell expression were described previously (Brognard et al., 2007; Gao et al., 2008; Gao et al., 2005). Full-length PHLPP1 was cloned into pCMV 3xFLAG vector (Sigma-Aldrich, E4401). An NLS was cloned to the N-terminus of the PP2C domain of PHLPP1. A double mutant of NLS-PP2C at residues D1210A and D1413A was cloned by site-directed mutagenesis. The HA-tagged PHLPP1 N-terminal extension (PHLPP1 NTE), residues 1–512, was cloned into pcDNA3 vector (Invitrogen). The NLS1 and NLS2 mutations were cloned by site-directed mutagenesis into HA-PHLPP1 NTE. The NES from PKI (LALKLALDI) was cloned into the N-terminus of HA-PHLPP1 NTE. The PHLPP1 NES (residues 1125–1134, LPPKLQELDL) was subcloned directly downstream of the HA-tag in HA-PHLPP1 NTE, to generate HA-PHLPP1NES-NTE.
 
-## Isolation and treatment of macrophages
+### Isolation and treatment of macrophages
 
 Primary BMDM cells were isolated from male 6- to 8-week-old C57BL/6 mice (Charles River Laboratories). BMDMs were obtained by PBS flush of femurs and tibias (Weischenfeldt and Porse, 2008), red blood cells lysed, and remaining cells plated in RPMI 1640 supplemented with 20% fetal bovine serum (FBS, Gibco, cat. 12657–029), 30% L-cell conditioned medium, 100 U/ml penicillin, 100 µg/ml streptomycin, and 2 mM L-glutamine. Cells were seeded in non-tissue culture treated Optilux Petri dishes (BD Biosciences), incubated at 37°C in a 5% CO2 atmosphere for 7 days, then treated with 100 ng/ml KLA (699500, Avanti Polar Lipids) for noted times. Peritoneal macrophages were collected by flushing mouse peritoneal cavities with PBS following 48 hr post peritoneal injection with 3 ml of thioglycolate (Ray and Dittel, 2010).
 
-## Cell culture
+### Cell culture
 
 MEFs from WT or Phlpp1-/- mice stably expressing shp53 were a kind gift from Lloyd Trotman (CSHL) and have been described previously (Chen et al., 2011); MEFs, HEK-293T, and HeLa (ATCC) cells were grown in Dulbecco’s modified Eagle medium (DMEM, 10–013-CV, Corning) supplemented with 10% fetal bovine serum (S11150, Atlanta biologicals) and 1% penicillin/streptomycin (15140–122, Gibco) at 37°C in 5% (vol/vol) CO2. Cells used were periodically tested for Mycoplasma contamination using a PCR-based protocol (Uphoff and Drexler, 2011) and showed no evidence of contamination.
 
-## mRNA isolation and qPCR analysis
+### mRNA isolation and qPCR analysis
 
 RNA was purified using Direct-zol RNA Miniprep Kits (Zymo Research) from triplicate experiments and quantified using a NanoDrop Spectrophotometer (ThermoFisher Scientific). RNA was either reverse transcribed into cDNA for quantitative real-time PCR using gene-specific primers or used for next-generation library preparation. For cDNA generation, one μg of total mRNA was reverse transcribed using the SuperScript III Reverse Transcriptase (ThermoFisher Scientific). The resulting cDNA (25 ng) was used to perform real-time PCR using SYBR Green Master Mix (ThermoFisher Scientific) and 50 nM mix of forward and reverse primers. The real-time PCR values for individual genes were normalized to the house keeping gene, 36B4, using the ΔΔCT method (Livak and Schmittgen, 2001). The primer sequences used in this study are:
 
-## Next-generation sequence library preparation and analysis
+### Next-generation sequence library preparation and analysis
 
 Libraries were prepared from two biological replicates per condition. RNA-Seq libraries were prepared as previously described (Kaikkonen et al., 2013). Sequencing libraries were prepared using magnetic beads similar to described previously using barcoded adapters (NextFlex, Bioo Scientific) (Garber et al., 2012). Libraries were sequenced for 36 or 50 cycles on an Illumina Genome Analyzer II or HiSeq 2000, respectively, according to the manufacturer’s instructions. mRNA-Seq results were trimmed to remove A-stretches originating from the library preparation. Each sequence tag returned by the Illumina Pipeline was aligned to the mm10 assembly using ELAND allowing up to two mismatches. Only tags that mapped uniquely to the genome were considered for further analysis. Peak finding, MOTIF discovery, and downstream analysis was performed using HOMER, a software suite created for analysis of high-throughput sequencing data (Heinz et al., 2010). Detailed instructions for analysis can be found at http://homer.ucsd.edu/homer/. Data visualization was performed using Microsoft Excel, JavaTreeGraph and software packages available in R.
 
-## RNA interference experiments
+### RNA interference experiments
 
 SMART siRNA pools for examined genes were purchased from Dharmacon (Control: D-001810-10-05, Stat1: L-058881). Thioglycollate-elicited peritoneal macrophages were transfected with 30 nM siRNA for 48 hr using Deliver X (Affymetrix) according to the manufacturer’s instructions prior to being stimulated with KLA for designated times.
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 ChIP assays were performed as described before (Stender et al., 2017). Cells were crosslinked with 2 mM disuccinimidyl glutarate for 30 min prior to 10 min treatment with 1% formaldehyde. The antibodies used in these studies were: STAT1 (sc-345, Santa Cruz Biotechnology). For the precipitations protein A Dynabeads (10003D, Invitrogen) were coated with antibody prior to pulldown and excess antibody was washed away. Pulldowns occurred while rotating for 16 hr at 4°C. Beads were then washed with TSE I (20 mMTris/HCl pH 7.4 at 20°C, 150 mM NaCl, 0.1% SDS, 1% Triton X-100, 2 mM EDTA), twice with TSE III (10 mM Tris/HCl pH 7.4 at 20°C, 250 mM LiCl, 1% IGEPAL CA-630, 0.7% Deoxycholate, 1 mM EDTA), and twice with TE followed by elution from the beads using elution buffer (0.1 M NaHCO3, 1% SDS). Elutions were subsequently de-crosslinked overnight at 65°C and DNA was purified using ChIP DNA Clean and Concentrator (Zymo Research) and DNA was used for qPCR. The primer sequences used in this study are:
 
-## Luciferase assay
+### Luciferase assay
 
 Cells were plated in a 96-well plate and transfected when approximately 80% confluent. Transfections of pRL-CMV encoding Renilla luciferase (Heinz et al., 2010), together with a firefly luciferase promoter-reporter construct containing eight GAS consensus sequences (Horvai et al., 1997), control vector, or the indicated PHLPP constructs, were performed using Lipofectamine 3000 reagent (Invitrogen, L3000) for MEFs or Fugene six reagent (Promega, E269A) for HEK-293T cells. Cells were treated with murine or human IFNγ (PeproTech, 315–05, 300–02, respectively) for the indicated times at 37°C and activity was measured using the Dual-Glo Luciferase Assay System (Promega, E2940) in a Tecan Infinite M200 Pro multi-well plate reader. Promoter activity was corrected for the luciferase activity of the internal control plasmid, pRL-CMV, and Relative Response Ratios (RRR) were calculated.
 
-## Immunoprecipitation and western blot
+### Immunoprecipitation and western blot
 
 DNA was transfected into HEK-293T cells using FuGene 6. Cells were collected 24 hr post-transfection and then lysed in a buffer containing 50 mM Na2HPO4 (pH 7.5), 1 mM sodium pyrophosphate, 20 mM NaF, 2 mM EDTA, 2 mM EGTA, 1% SDS, 1 mM DTT, 1 µM microcystin, 20 µM benzamidine, 40 µg/ml leupeptin, and 1 mM PMSF and then were sonicated briefly. For co-immunoprecipitation, cells were lysed and the detergent-solubilized cell lysates were incubated with an anti-HA antibody (BioLegend, 901503) at 4°C overnight. Samples were incubated with protein A/G PLUS-Agarose (Santa Cruz Cat sc-2003) for 1 hr at 4°C and washed three times in lysis buffer containing 0.3 M NaCl and 0.1% Triton X 100. Bound proteins and lysates were separated by SDS/PAGE gel and analyzed by western blot.
 
-## Immunofluorescence
+### Immunofluorescence
 
 HeLa cells were plated on glass coverslips and transfected using FuGene 6. 24 hr after transfection, cells were fixed with 4% paraformaldehyde for 20 min at room temperature, followed by fixation with 100% methanol for 3 min at −20°C. Cells were permeabilized and blocked in 0.3% Triton X 100% and 3% BSA for 30 min at room temperature, followed by three 5 min washes in PBS-T. Primary antibodies were diluted at the following dilutions: mouse anti-HA, 1:500; rabbit anti-α-tubulin (Cell Signaling, 2125), 1:200. Secondary antibodies were diluted at the following dilutions: Alexa647 anti-mouse (Life Technologies, A21235), 1:500; Alexa488 anti-rabbit (Life Technologies, A11034), 1:500. Coverslips were mounted onto slides with ProLong Diamond Antifade Mountant with DAPI (ThermoFisher, P36966). Images were acquired on a Zeiss Axiovert 200M microscope (Carl Zeiss Microimaging Inc) using an iXon Ultra 888 EMCCD camera (ANDOR) controlled by MetaFluor software (Molecular Devices) and analyzed on ImageJ (NIH). The Nuclear to Cytoplasmic ratio was calculated as follows: the mean signal intensity was measured for a region of the nucleus and cytoplasm for each cell, and the mean signal intensity of the background was subtracted from these values. Then the Nuclear to Cytoplasmic ratio was calculated by dividing the background subtracted mean signal intensity for the nuclear signal by the background subtracted value for the cytoplasmic signal.
 
-## In vitro phosphatase assay
+### In vitro phosphatase assay
 
 pCMV 3xFLAG PHLPP1 was transfected into HEK-293T cells plated in four 10 cm plates (approximately 9 × 106 cells per plate, 80% transfection efficiency) using Fugene 6. Cells were collected 48 hr post-transfection and lysed in a buffer containing 20 mM Tris (pH 7.5), 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton X 100, 2.5 mM sodium pyrophosphate, 1 mM Na3VO4, 1 mM DTT, 1 mM PMSF, 1 µM microcystin, 20 µM benzamidine, and 40 µg/ml leupeptin. The detergent-solubilized cell lysates were incubated with anti-FLAG M2 affinity gel (30 µl per plate, Sigma-Aldrich, A2220) for 1 hr at 4°C, washed four times in lysis buffer and the beads were resuspended in 40 µl 200 mM Tris, 4 mM DTT, 20 mM MnCl2 for use in in vitro phosphatase assay. STAT1 (0.3 µM) (Biosource, PHF0011) was phosphorylated in vitro by incubation with recombinant human cdk1/cyclinB (0.2 µM) (Millipore, 14–450) at 30°C for 90 min in the presence of 1 mM ATP, and 1 X PK buffer (NEB, B6022) containing 50 mM Tris, 10 mM MgCl2, 0.1 mM EDTA, 2 mM DTT, 0.01% Brij, pH 7.5, and the reaction was quenched by addition of 144 µM CDK1 inhibitor RO3306 (Enzo, ALX-270–463). Phosphorylated STAT1 substrate was added to 1/4 vol of beads with bound PHLPP1 (or to lysis buffer control) and reactions were allowed to proceed for an additional 120 min at 30°C. For the zero minute time point, beads were added after the 120 min incubation and all reactions were immediately quenched with 4xSB (sample buffer). Samples were analyzed by western blot.
 
-## Mouse infection and endotoxin challenge
+### Mouse infection and endotoxin challenge
 
 Bacterial sepsis in mice was induced by injection of E. coli K1 strain RS218 and LPS endotoxemia was induced by injection of purified E. coli O111:B4 LPS (Sigma-Aldrich). The E. coli culture was grown overnight in Luria broth (LB) medium (Hardy Diagnostics) at 37°C with shaking. The bacterial culture was diluted 1:50 in fresh LB, grown to mid-log phase, washed twice with PBS and reconstituted in PBS to yield the appropriate inoculum. For survival experiments, 10 to 14 week-old female C57BL/6 WT and littermate control Phlpp1-/- mice were injected i.p. with 5 × 107 colony forming units (cfu) E. coli or 15 mg/kg LPS and mouse survival recorded for 10 days following injection. For measurement of serum IL-6, IL-10 and IL-1β levels, mice were injected with 10 mg/kg LPS, and at 4, 8, 12 and 24 hr after injection, 80 µl of blood was collected by submandibular bleeding using a lancet into a serum separating blood collection tubes (BD) that were spun at 1500 × g for 10 min to separate serum. Serum cytokines were quantified by specific ELISA (R and D) following the manufacturer’s protocol. All protocols for mouse experiments were conducted in accordance with the institutional guidelines and were approved by the Institutional Animal Care and Usage Committee (IACUC) at the University of California, San Diego.

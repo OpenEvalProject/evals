@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The pathogenesis of Helicobacter pylori -associated gastric cancer is dependent on delivery of CagA into host cells through a type IV secretion system (T4SS). The H. pylori Cag T4SS includes a large membrane-spanning core complex containing five proteins, organized into an outer membrane cap (OMC), a periplasmic ring (PR) and a stalk. Here, we report cryo-EM reconstructions of a core complex lacking Cag3 and an improved map of the wild-type complex. We define the structures of two unique species-specific components (Cag3 and CagM) and show that Cag3 is structurally similar to CagT. Unexpectedly, components of the OMC are organized in a 1:1:2:2:5 molar ratio (CagY:CagX:CagT:CagM:Cag3). CagX and CagY are components of both the OMC and the PR and bridge the symmetry mismatch between these regions. These results reveal that assembly of the H. pylori T4SS core complex is dependent on incorporation of interwoven species-specific components.
+The pathogenesis of Helicobacter pylori-associated gastric cancer is dependent on delivery of CagA into host cells through a type IV secretion system (T4SS). The H. pylori Cag T4SS includes a large membrane-spanning core complex containing five proteins, organized into an outer membrane cap (OMC), a periplasmic ring (PR) and a stalk. Here, we report cryo-EM reconstructions of a core complex lacking Cag3 and an improved map of the wild-type complex. We define the structures of two unique species-specific components (Cag3 and CagM) and show that Cag3 is structurally similar to CagT. Unexpectedly, components of the OMC are organized in a 1:1:2:2:5 molar ratio (CagY:CagX:CagT:CagM:Cag3). CagX and CagY are components of both the OMC and the PR and bridge the symmetry mismatch between these regions. These results reveal that assembly of the H. pylori T4SS core complex is dependent on incorporation of interwoven species-specific components.
 
 ## Introduction
 
@@ -32,15 +32,79 @@ Bacterial T4SSs are versatile molecular machines that can mediate a wide variety
 
 Structural studies of minimized T4SSs have revealed a core complex (typically ~250 Å in width and ~150 Å in height) that contains three proteins (VirB7, VirB9, and VirB10) (Chandran et al., 2009; Fronzes et al., 2009; Low et al., 2014; Sgro et al., 2018). The H. pylori Cag T4SS core complex is a much larger mushroom-shaped assembly (~400 Å in width and ~250 Å in height) that contains structural homologs of the proteins found in minimized systems [CagT (VirB7), CagX (VirB9), and CagY (VirB10)] along with additional proteins (Cag3 and CagM) that lack homologs in other bacterial species (Chung et al., 2019; Frick-Cheng et al., 2016). The Cag T4SS core complex has been described as consisting of three distinct structural features: the outer membrane cap (OMC) consisting of an outer-layer (O-layer) and inner-layer (I-layer), a periplasmic ring (PR), and a stalk (Chang et al., 2018; Chung et al., 2019; Hu et al., 2019). There is an apparent symmetry mismatch between the 14-fold-symmetric OMC and the 17-fold symmetric PR (Figure 1a; Chung et al., 2019). Our recent sub-4Å structure of the Cag T4SS revealed that central portions of the OMC are composed of CagT, CagX, and CagY (VirB7, VirB9, and VirB10 homologs), but the resolution of the map did not allow us to build molecular models for the entire complex (Chung et al., 2019). Specifically, we could not determine the molecular composition of the PR or define the locations of Cag3 or CagM. In the current study, we undertook a further analysis of single particle cryo-EM data for the wild-type Cag T4SS core complex as well as analysis of a mutant form of the core complex. These efforts allow us to define the locations of Cag3 and CagM within the core complex, determine the molecular composition of the PR, and determine the stoichiometry of components within the OMC.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig1-v2.jpg)
+
+**Figure 1.:** (a) The Cag T4SS spans the inner membrane and outer membrane and consists of distinct features with differing symmetry: the OMC (C14 symmetry), the PR (C17 symmetry), an inner-membrane complex (IMC, C6 symmetry), and the stalk and collar with unknown symmetries. (b) In the reconstruction of the WT Cag T4SS, we observe the O-layer of the OMC (shown in blue), the I-layer of the OMC (shown in gray), and the PR (shown in green). Left panel, WT Cag T4SS density map; Right panel, central slice of the WT density map. (c) All of these features are observed in the ΔCag3 Cag T4SS map (shown in the same colors as panel b), but peripheral regions of the OMC are missing in the ΔCag3 Cag T4SS map (shown in white). Left panel, ΔCag3 Cag T4SS density map; middle panel, central slice of ΔCag3 Cag T4SS density map; right panel, overlaid central slices of WT (grey) and ΔCag3 (blue and green) Cag T4SS density maps.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The processing steps for WT Cag T4SS data are on a gray background and the processing steps for ΔCag3 Cag T4SS data are on a green background. All the raw micrographs used in the WT Cag T4SS 3D reconstructions were identical to the datasets used in our previous study (Chung et al., 2019). Approximately 6000 high quality images were selected from ~20,000 images.~361,000 particles were selected by template picking in CryoSPARC. After 2D and 3D classification, the best class (~67,000 particles) was chosen for further refinement, without symmetry (C1). All the particles used in the 3D refinement of CryoSPARC were exported into RELION for further steps and the 4.7 Å 3D model with C1 symmetry was filtered to 60 Å resolution and used as an initial model for 3D structure determination in RELION. Focused 3D classification and 3D refinement were used to determine higher resolution maps of the WT OMC (with 14-fold symmetry), resulting in a 3D map of the OMC (14-fold symmetry) at 3.4 Å. Similar steps were applied to ΔCag3 Cag T4SS data. Approximately 3400 micrographs were collected and ~108,000 particles were selected by template picking in CryoSPARC. After the 2D/3D filtration and further refinement (3D map at 7.1 Å with C1 symmetry),~12,000 particles were exported into RELION for further steps. Focused 3D classification (without alignment) was used to determine higher resolution maps of the ΔCag3 OMC (with 14-fold symmetry) and the PR (with 17-fold symmetry). The maps of the OMC and PR were further refined using focused 3D refinement (with local refinement), resulting in 3D maps of the OMC (14-fold symmetry) and the PR (17-fold symmetry) at 3.1 Å and 3.0 Å, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Sub-area of a motion-corrected image of vitrified ΔCag3 Cag T4SS particles. Scale bar, 50 nm. (b) Selected 2D class averages. Scale bar, 10 nm. (c) Rotated views of the 3D reconstructed model with no applied symmetry (C1, 7.1 Å resolution). (d) A comparison between maps of the ΔCag3 (gray) and WT (green) OMC. (e) FSC of C1 refinement after applying a tight mask in cryoSPARC. Dotted red line, Fourier Shell Correlation (FSC) = 0.143. (f) Heat map showing local resolution of C1 3D reconstruction. The heat map scales are exponential. (g) Views of the focused refined 3D model of the ΔCag3 OMC with C14 symmetry applied (3.1 Å resolution) and (h) ΔCag3 PR with C17 symmetry applied (3.0 Å resolution). (i) FSC of focused ΔCag3 C14 OMC and (j) ΔCag3 C17 PR refinements. Dotted red line, FSC = 0.143. (k) Map of local resolution of focused ΔCag3 C14 OMC and ΔCag3 C17 PR refinement. The heat map scales are exponential.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Sub-area of a motion-corrected image of vitrified WT Cag T4SS particles. Scale bar, 50 nm. (b) Selected 2D class averages. Scale bar, 10 nm. (c) Rotated views of the 3D reconstructed model of the WT Cag T4SS with no applied symmetry (C1, 4.7 Å resolution). (d) FSC of C1 refinement after applying a tight mask in cryoSPARC. Dotted red line, Fourier Shell Correlation (FSC) = 0.143. (e) Heat map showing local resolution of C1 3D reconstruction. The heat map scales are exponential. (f) Views of the focused refined 3D model of the WT OMC with C14 symmetry applied (3.4 Å resolution). (g) FSC of focused C14 OMC refinement. Dotted red line, FSC = 0.143. (h) Map of local resolution of focused WT OMC refinement. The heat map scales are exponential.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) SDS-PAGE analysis of core complexes purified from wild-type and Δcag3 H. pylori strains, each producing HA-tagged CagF (first and second lanes). The same purification methods were applied to a ΔcagY mutant strain producing HA-tagged CagF (defective in core complex assembly) or a control wild-type strain with no modification of CagF. Dominant bands visible in the first lane have molecular masses consistent with CagY (219 kDa), CagA (132 kDa), CagX (61 kDa), Cag3 (55 kDa), CagM (44 kDa), CagT (32 kDa), and CagF (32 kDa). LC-MS/MS analysis of excised bands confirmed these identifications. The 55 kDa band (indicated in red) is absent from the ΔCag3 mutant core complex preparation. (b) Mass spectrometric analysis of core complex samples purified from the WT and ΔCag3 H. pylori strains.
+
 ## Results
 
 To build a more complete model of Cag T4SS organization and determine how the OMC and PR interact, we expanded our cryo-EM studies to analyze the core complex from a Cag3-deficient H. pylori strain (Δcag3) (Frick-Cheng et al., 2016). We also implemented new data analysis techniques for processing previously collected cryo-EM data for wild-type (WT) core complexes (including per-particle defocus refinement and beam tilt estimation), which resulted in higher resolution maps (Figure 1—figure supplements 1, 2 and 3, Appendix 1—table 1). When comparing the maps reconstructed from the WT and Δcag3 strains, peripheral components of the O-layer of the OMC are missing in the Δcag3 map. At least a portion of this peripheral density is likely composed of Cag3, since it is the component most notably absent in core complex preparations from the Δcag3 mutant [based on SDS-PAGE and mass spectrometry analyses (Figure 1—figure supplement 4)]. Notably, the PR remained intact in the Δcag3 map, and weak density was still observed within the I-layer (Figure 1b,c).
 
 As described previously, CagT and the C-terminal portions of CagX (residues 349–514) and CagY (residues 1677–1909) are localized to central regions of the O-layer of the OMC (Chung et al., 2019). The increased resolution of the new maps allowed us to define the OMC asymmetric unit and determine the molecular composition of regions that were previously undefined (Figure 1—figure supplement 2d, Figure 2a, Figure 2—figure supplements 1–6, Video 1). Positioned adjacent and peripheral to the previously described CagT (CagT-1), we identified another copy of CagT which we call CagT-2 (Figures 2a,b and 3a). We found that the two copies of CagT differ significantly in the conformations of both their N- and C-termini (Figure 4a). In CagT-1, the N-terminus is an extended loop that is nestled against a portion of CagT-1 and CagX from the neighboring asymmetric unit, resulting in an interface similar to what was described for X. citri VirB7 and VirB9 (Sgro et al., 2018). Within CagT-2, the N-terminus adopts a different conformation, one in which it is wrapped back around the central, globular VirB7-like fold, forming a β-strand that completes a β-sheet within an adjacent protein that we designate as Cag3-1 (Figure 4c–f, Video 2). This rearrangement likely occurs due to changes in a stretch of amino acids (I44-I50) within the center of this loop (Figure 4—figure supplement 1a–c). While it is currently not clear what drives these conformational differences, it is possible that this rearrangement results from the different repertoire of binding partners mediated by this loop (Figure 4—figure supplement 1d–f). Despite the structural differences between CagT-1 and CagT-2, a putative lipidation site (C21) in both proteins (McClain et al., 2020) is placed in close proximity to the outer membrane (Figure 4g). The C-termini of both CagT molecules adopt extended conformations that differ in their overall direction and organization. In CagT-1, the C-terminal α-helices extend outward from the center of the map, forming contacts with CagT-1 Cag3-1, Cag3-2, and Cag3-4 within the OMC (Figure 4h; Chung et al., 2019). Conversely, the C-terminal α-helices of CagT-2 are connected by an apparently dynamic linker and are arranged such that they contact a distinct repertoire of OMC proteins, including Cag3-1, Cag3-2, and CagM-1 (Figure 4i). In both cases, the arrangement of these helical extensions deviates significantly from corresponding regions in the X. citri VirB7 structure, where the domain terminates shortly after the core VirB7 fold (Sgro et al., 2018; Figure 4—figure supplement 2a). Because of this, we suggest that the addition of these C-terminal α-helices is critical to maintaining the expanded architecture of the Cag T4SS OMC, as it has been previously shown that Cag3 cannot be effectively incorporated into core complexes lacking CagT (Frick-Cheng et al., 2016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-v2.jpg)
+
+**Figure 2.:** (a) A cross-section model of the mapped portions of CagY (yellow), CagX (orange), CagT (red and salmon), CagM (brown and tan), and Cag3 (various shades of green and blue) in the OMC from the WT Cag T4SS. Portions of CagX and CagY are present in both the OMC and the PR (denoted by the gray box). (b) A cartoon representation of the WT Cag T4SS core complex proteins, colored as in panel a. The dotted lines represent densities that were not clearly seen in the density maps. (c) A cross-section model of the mapped portions of CagY (yellow), CagX (orange), and CagT (red) from the ΔCag3 Cag T4SS core complex. (d) A cartoon representation of the ΔCag3 Cag T4SS core complex proteins with CagY (yellow), CagX (orange), CagT-1 (red). The red rectangles represent the alternate conformation of the C-terminal helices of CagT-1. CagT-2 and Cag-3 were not observed within this map. The dashed lines represent densities that were not clearly seen in the density map.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) The correlation coefficient of each residue is plotted on the structure of the entire WT Cag T4SS as a heat map. The asymmetric units of the OMC (b) and the PR (c) depict the relative quality of the models in each portion of the structure.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) The correlation coefficient of each residue is plotted on the structure of the entire ΔCag3 Cag T4SS as a heat map. The OMC is rotated to show ‘top’ and ‘bottom’ views. The asymmetric units of the OMC (b) and the PR (c) depict the relative quality of the models in each portion of the structure.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Statistics for each of the constructed models indicate their relative quality. (b) A model-map correlation curve for the entire WT OMC is shown, with the unmasked data in green and the masked data in black. (c–h). The model-map correlation was also determined for each of the individual protein structures within the OMC.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) The correlation coefficient for each protein within the OMC is depicted as a heat map on the corresponding structure and is plotted against the residue number.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Statistical analysis for each of the models constructed within the OMC of the ΔCag3 T4SS. (b) A model-map FSC curve is shown for the OMC of the ΔCag3 T4SS. The green line indicates data derived using an unmasked map and the black line indicates data derived using a masked map. (c–e) A model-map FSC curve is shown for all models constructed in the ΔCag3 OMC map. (f–h) Per-residue correlation coefficients are plotted against residue number (left) and are depicted as a heat map on the corresponding structures (right).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a) Statistical analysis of all models constructed within the PR of the WT T4SS. (b) A model-map FSC curve is shown for the PR of the WT T4SS. The green line indicates data derived using an unmasked map and the black line indicates data derived using a masked map. (c, d) A model-map FSC curve is shown for CagY and CagX. (e, f) Per-residue correlation coefficients are plotted against residue number (left) and are depicted as a heat map on the corresponding structure (right). (g) Statistical analysis of all models constructed within the PR of the ΔCag3 T4SS. (h) A model-map FSC curve is shown for the PR of the ΔCag3 T4SS. The green line indicates data derived using an unmasked map and the black line indicates data derived using a masked map. (i) A model-map FSC curve is shown for CagY and CagX. (j, k) Per-residue correlation coefficients are plotted against residue number (left) and are depicted as a heat map on the corresponding structures (right).
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig3-v2.jpg)
 
 **Figure 3.:** (a) The O-layer of the OMC contains two copies of CagT (CagT-1 and CagT-2) (shown in red and salmon). The two copies are localized within the center of the asymmetric unit (inset) as shown in red and salmon. (b) Cag3 comprises a significant portion of the O-layer of the Cag T4SS, as shown in blue and green. Within the asymmetric unit (inset), we observe five copies of Cag3 (denoted Cag3-1 through Cag3-5, shown in various shades of blue and green). (c) Within the I-layer of the OMC, there are two similar folds, each defined as CagM. Within the asymmetric unit, we observe two copies (inset) that are colored in brown and tan.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig4-v2.jpg)
+
+**Figure 4.:** (a–c) The N-terminus of CagT-1 extends inward toward the center of the map and interacts with CagX from the next asymmetric unit. The residues that contribute to this interaction are largely hydrophobic, as indicated in the inset panel. CagT-2 differs from CagT-1 in that the N-terminus of the protein extends outward toward the periphery of the map, forming the last strand of a β-sheet with Cag3-1. (d) The three proteins (CagT-1, CagT-2 and Cag3-1) have an interwoven architecture. (e) The interface that is formed between the three proteins consists of two β-sheets that include strands from all three molecules. (f) The interface of CagT-2 and Cag3-1 is a pair of α-helices that bury hydrophobic residues within the interface. (g) The position of the N-terminal loops of CagT-1 (red) and CagT-2 (salmon) are such that the putative lipidation sites are near the outer membrane. (h) The C-terminal α-helices of CagT-1 adopt an extended conformation (left) and interact with Cag3-1, Cag3-2, and Cag3-4 within the same asymmetric unit and Cag3-1 and CagT-1 in neighboring asymmetric units (right). (i) The C-terminal α-helices of CagT-2 are connected by an apparently flexible linker (left) and interact with Cag3-1, Cag3-2, and CagM-1 (right).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The dihedral angles of residues within the N-terminal loop of CagT-1 and CagT-2 are plotted. The difference between the angles was used to determine where the largest change occurred. Residues in which both the φ and ψ angles changed by >1° are highlighted in yellow. (b) The N-terminal loop of CagT-1 (red) and CagT-2 (salmon) is highlighted in yellow. (c) The residues of CagT-1 and CagT-2 that exhibited the most striking change are depicted. (d) Residues within these loops engage in protein-protein interactions with different subsets of proteins. The table lists relevant residues along with the type of interaction mediated and the interacting protein. Arrows indicate residues with different interacting partners. (e) The orientations of the N-terminal loops are shown. A loop of CagT-1 interacts with CagX and a loop of CagT-2 completes a β-sheet formed by Cag3. (f) The interactions mediated by the N-terminal loops are shown here. The top row depicts interactions mediated by the N-terminal loop of CagT-1, and the bottom row depicts interactions mediated by the N-terminal loop of CagT-2. Proteins are colored as they appear in panel (e), with proteins from adjacent asymmetric units depicted with gray density.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Domain diagrams of H. pylori CagT and X. citri VirB7. The two proteins have similar N-terminal domains that mediate interactions with other components in the respective T4SSs. CagT contains three additional helices within the C-terminus of the protein that mediate interactions with adjacent asymmetric units. (b) The three C-terminal helices of CagT-1 and CagT-2 observed within the WT map are shown with experimental density displayed as a mesh (top). Landmark residues demonstrating the accuracy of the register are shown. The two C-terminal helices of CagT-1 that were observed within the ΔCag3 map are shown with experimental density displayed as a mesh (bottom). Landmark residues demonstrating the accuracy of the register are shown.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/59495/elife-59495-video2.mp4.jpg)
 
 The orientation of the CagT-1 C-terminal α-helices differs significantly in the Δcag3 OMC reconstruction compared to their orientation in the wild-type OMC reconstruction. In contrast to the extended conformation of the CagT-1 α-helices in the WT OMC, in the Δcag3 OMC these helices are folded inward and pack against α-helices of CagX and CagY within the central chamber (Figures 2c,d and 5a, Figure 4—figure supplement 2b). Notably, the second α-helix of the C-terminal extension is not observed within the Δcag3 OMC map and may be flexible. We suspect that the C-terminal α-helices of CagT-1 adopt multiple conformations in the Δcag3 OMC, since additional components that would otherwise lock them into a single conformation are not present. In addition to the loss of peripheral density corresponding to Cag3 within the Δcag3 map, we observe no density for CagT-2 in the Δcag3 map. One possible explanation for the loss of CagT-2 is that it cannot effectively fold when Cag3 is absent, leading to dissociation of the complex or unfolding of the protein. These results are largely in agreement with previous cryo-electron tomography (Cryo-ET) studies, which noted the loss of most of the O-layer of the OMC in the Δcag3 strain (Hu et al., 2019). CagX and CagY adopt nearly identical conformations in the ∆Cag3 mutant core complex when compared to the WT structure (RMSDs of 0.5 Å and 0.3 Å, respectively) (Figure 5b,c). This is consistent with a proposal that assembly of the Cag T4SS is initiated by positioning CagX and CagY in association with the outer membrane (Hu et al., 2019).
 
@@ -49,6 +113,14 @@ The orientation of the CagT-1 C-terminal α-helices differs significantly in the
 **Figure 5.:** (a) Despite global differences between the overall WT and Δcag3 maps, the structure of CagT-1 shares a similar core VirB7-like fold in both maps. (b–c) Similarly, CagX and CagY adopt nearly identical orientations within both maps. The illustrated portions of CagX and CagY are the domains localized to the OMC.
 
 Further analysis revealed five copies of Cag3 within each asymmetric unit (named Cag3-1 through Cag3-5, based on their proximity to the central channel) (Figure 2a,b Figure 3b). All five copies of Cag3 are found within the periphery of the OMC and adopt similar core folds (with RMSDs of 0.5–1.3 Å) that are connected via a highly interwoven architecture (Figure 6a–c). Although the resolution is lower towards the periphery of the map than near the center, we note that several Cag3 structural features are recognizable in all five copies of Cag3 within the cryo-EM density map (Figure 6d–f, Figure 6—figure supplement 1). The first copy of Cag3 (Cag3-1) contains the longest uninterrupted span of density (corresponding to residues 62–308) and consists of two globular domains (proximal and distal) connected by a long loop, without an intramolecular interface (Figure 6a,b). The proximal domain of Cag3-1 is positioned adjacent to CagT-2 within the center of the map and contains a loop (residues 181–204) that interacts with adjacent asymmetric units (Figure 6g). We predict that this loop may act as a lynchpin during assembly, since it forms the most extensive network of contacts within the center of the complex. Notably, the proximal domain of Cag3-1 consists of a ‘core’ fold that is similar to a corresponding fold in CagT and the related VirB7 homolog from X. citri (Figure 6h; Sgro et al., 2018). The distal domain of Cag3-1 is linked to the proximal domain through a linker that runs along a second copy of Cag3 (Cag3-2) and resides within the periphery of the map,~50 Å away from the proximal domain, tucked up next to another copy of Cag3 (Cag3-3) (Figure 2a,b). A distal domain was not seen in any of the other copies of Cag3, possibly due to the lower resolution at the periphery of the map or to inherent heterogeneity associated with this domain.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig6-v2.jpg)
+
+**Figure 6.:** (a) Five different molecules of Cag3 are present within the asymmetric unit. The general architecture of Cag3 can be described as two domains, the proximal domain (residues 62–232) and the distal domain (residues 252–309). (b) All five of the Cag3 proteins share a heavily interwoven architecture in which β-sheets are formed between adjacent molecules within the asymmetric unit. (c) A topology diagram showing the general architecture of all copies of Cag3 within the asymmetric unit. (d) The interface of Cag3-2 (cyan) and Cag3-3 (light blue) is formed predominantly by two helices with contact mediated by Y114 and R128 of each molecule. (e) The interface of Cag3-3 (light blue) and Cag3-4 (blue) is dramatically different from the other Cag3 interfaces and includes an extensive hydrophobic interaction that is formed by two adjacent beta sheets. (f) Cag3-4 (blue) and Cag3-5 (navy blue) share a similar interface as Cag3-2 and Cag3-3, as shown above. (g) A view of the Cag T4SS is shown from the top-down (left) and indicates the position of a loop within the Cag3-1 proximal domain (amino acids 181–204, black box) that mediates contacts between asymmetric units. (h) The proximal domain of Cag3 contains a fold that is structurally similar to folds within CagT-1 (shown in red), CagT-2 (shown in salmon) and X. citri VirB7 (PDB 6GYB, shown in purple).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The table lists residues that contribute to six β-sheets formed by copies of CagT and Cag3 within the OMC. The location of these six β-sheets is indicated in panel (b). (c–e) Representative density for all β-sheets with landmark residues noted for each. (f) Representative density for β-sheet strand exchange is shown for β-sheet 3 (top, left), β-sheet 4 (top, right), β-sheet 5 (bottom, left), and β-sheet 6 (bottom, right).
 
 While the local resolution of the I-layer is lower than that of the O-layer, we observe several key features of the I-layer that are consistent with the sequence of CagM (Figures 3c and 7a). We modeled a portion of CagM (residues 187–366) into peripheral density within the I-layer and observe an α-helical fold with two sub-domains: a 3-helix bundle at the N-terminus connected by a short loop to a 5-helix fold at the C-terminus. We also observe a second helical fold containing 9 α-helices, arranged in a nearly identical fashion as in CagM-1 within the center of the I-layer, albeit at lower resolution (Figure 7b). We fit the CagM sequence into this density and note that the refined structure (designated CagM-2) again contains two subdomains connected via a flexible hinge (Figure 7c). When aligning each subdomain of CagM-1 with the corresponding subdomain of CagM-2, the RMSD for each is ~1.1 Å, supporting our assignment of this portion of the map as a second copy of CagM (Figure 7d,e). The difference in the orientation of the subdomains in CagM-1 and CagM-2 is the result of unique contacts mediated by the C-terminal subdomains (Figure 7f,g).
 
@@ -64,6 +136,8 @@ The resolution of the PR within the Δcag3 map is higher than what was previousl
 
 **Figure 8.:** (a) The PR is comprised of N-terminal portions of CagX and a fragment of CagY. Both proteins start from the inner membrane side of the PR, form small globular folds, and extend upward toward the outer membrane. A portion of CagY within the PR wraps around CagX, starting from the periplasm and winding into the lumen of the PR. (b) The N-terminal domain of CagX (residues 41–310) is similar to that of VirB9 (c) from X. citri in both structure and sequence (d). The C-terminal domain of CagX (e) is similar to that of the C-terminal domain of VirB9 from X. citri (f). (g) The periplasmic and outer membrane domains (PD and OMD, respectively) are similar in structurally characterized VirB9 homologs, though they are separated by a periplasmic linker (PL) that is variable in length. CagX contains an additional insertion (residues 102–153, periplasmic insertion or PI) that is unique when compared to other homologs. The structure corresponding to the PI was not observed within any of our cryo-EM reconstructions. (h) The spacing of the two CagX/VirB9 domains varies depending on the organism and appears to be highly dependent on the length of the periplasmic linker (CagX and VirB9 are shown in orange). (i) The segment of CagY within the PR (residues 1469–1603) adopts a highly elongated fold that consists of four α-helices (left). The periplasmic portion of CagY (as shown on the left) starts within the periplasm and wraps around the globular domain of CagX (shown in orange), eventually ending in the lumen of the PR (gray, right). (j) The periplasmic segment of CagY, which we call the periplasmic domain (PD, brown), is unique to CagY and is not present in other VirB10 homologs such as VirB10 from X. citri (yellow indicates a VirB10 like domain, and red represents the unstructured linker). (k) The N-terminus of CagY was not observed within any of these cryo-EM reconstructions. The N-terminal portion of CagY in the model that was constructed (about residue 1469) is positioned so that it might continue outward into the periplasmic space, possibly contributing to the structural feature known as the collar, as well as the stalk.
 
+![Video 3.](https://cdn.elifesciences.org/articles/59495/elife-59495-video3.mp4.jpg)
+
 Wrapped around the PR portion of CagX is a segment of CagY that starts from the cytoplasm-facing side of the PR and forms four α-helices that are connected by loops that vary in length (ranging from 3 to 41 residues) (Figure 8i). This is similar to a described interaction between a corresponding part of VirB10 and the N-terminal domain of VirB9 in the X. citri T4SS (Sgro et al., 2018). In both cases, a segment of CagY/VirB10 in this region is linked to the C-terminal portion of the protein through a linker which is not directly observed in the data. Both CagY and X. citri VirB10 start with the N-terminus of this portion positioned near the periplasmic space and pass ‘below’ two protomers of CagX/VirB9. Both proteins then extend upward toward the outer membrane through the interior of the ring formed by the N-terminal domain of CagX/VirB9. The CagX-CagY interface in H. pylori is much larger than the corresponding VirB9-VirB10 interface, likely due to an expansion of CagY compared to VirB10 homologs in minimized systems (Figure 8j). The position of CagY within the PR could potentially allow the unresolved segment (residues 1604–1676) to span the inner chamber of the OMC to connect with a C-terminal domain of CagY in the OMC. We note that the portion of CagY visible in the PR is positioned so that the remaining N-terminal 1468 residues (not observed) likely extend into the periplasm, possibly contributing to the low resolution ‘collar’ and stalk densities (Figure 8k; Hu et al., 2019).
 
 The identification of CagX and CagY within the PR was unexpected, as it suggests that each protein exists within both the OMC and PR, two distinct regions of the T4SS that differ in overall symmetry (Figure 9a). Although we cannot specifically trace either component across the symmetry mismatch, we note that the long helical expansion within CagX appears to bridge the OMC and PR. This model is supported by focused refinement of the connecting region between the OMC and PR in the WT map without imposition of symmetry, which shows 14 tubes of helical density connecting the OMC and PR (Figure 9b). Notably, only 14 copies of CagX within the PR appear to traverse the symmetry mismatch, leaving three domains within the PR without an obvious connection to the OMC (Figure 9c, Video 4). It is not clear if the density corresponding to these copies of CagX and CagY cannot be traced due to inherent flexibility within the respective C-terminal domains, if these additional protomers represent truncated versions of CagX and CagY, or if they represent uncharacterized structural homologs.
@@ -71,6 +145,8 @@ The identification of CagX and CagY within the PR was unexpected, as it suggests
 ![Figure 9.](https://cdn.elifesciences.org/articles/59495/elife-59495-fig9-v2.jpg)
 
 **Figure 9.:** (a) Models of CagX and CagY within the OMC and PR asymmetric units. (b) In the asymmetric reconstruction from a focused refinement of the interface between the OMC and PR of the WT map, we note the presence of helical density predicted to be a portion of CagX (top). We have modeled 14 copies of CagX into density within the OMC (bottom, left) and 17 copies of CagX into the PR (bottom, right). (c) Though we observe clear connections between 14 subunits of the OMC and 14 subunits of the PR, three copies of CagX in the PR do not show any obvious connection to the OMC.
+
+![Video 4.](https://cdn.elifesciences.org/articles/59495/elife-59495-video4.mp4.jpg)
 
 ## Discussion
 
@@ -82,11 +158,105 @@ When comparing the H. pylori Cag T4SS core complex to corresponding T4SS subasse
 
 ## Materials and methods
 
-## Core complex purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori 26695)</td>
+      <td>HA-CagF</td>
+      <td>PMID:26758182</td>
+      <td></td>
+      <td>produces HA epitope-tagged CagF</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Helicobacter pylori 26695)</td>
+      <td>Δcag3; HA-CagF</td>
+      <td>PMID:26758182</td>
+      <td></td>
+      <td>Δcag3 mutant, produces HA epitope-tagged CagF</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leginon</td>
+      <td>PMID:15890530</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID:28250466</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFind4</td>
+      <td>PMID:26278980</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>PMID:28165473</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID:27685097 PMID:30412051</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:20383002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID:15264254 PMID:29340616</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID:29872004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DALI server</td>
+      <td>PMID:31263867</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Core complex purification
 
 Cag T4SS complexes were purified from either a wild-type H. pylori strain or a ∆cag3 mutant strain, each engineered to produce an epitope-tagged form of CagF, as described previously (Chung et al., 2019; Frick-Cheng et al., 2016). The resulting preparations were analyzed by SDS-PAGE and colloidal Coomassie blue staining, and the composition of the preparations was determined by LC-MS/MS analysis (Frick-Cheng et al., 2016; Lin et al., 2020).
 
-## Cryo-EM data collection and map reconstruction
+### Cryo-EM data collection and map reconstruction
 
 For cryo-EM, Cag T4SS core complex preparations purified from wild-type or Δcag3 mutant strains were applied to glow discharged Lacey 400 mesh copper grids (TED PELLA) coated with home-made ultra-thin (~2 nm) continuous carbon film or Quantifoil 2/2 200 mesh copper grids with ultra-thin (2 nm) continuous carbon film (Electron Microscopy Services), respectively. To increase particle density in suspended vitreous ice, 5 μL aliquots of the samples were applied three times, incubated for ~60 s after each application, and the grids were then washed with water to remove detergent (Cheng et al., 2015). The grids were vitrified by plunge-freezing in a slurry of liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific) at 4°C and 100% humidity.
 
@@ -100,6 +270,6 @@ For focused refinement of the WT OMC, signal subtraction for each individual par
 
 Similar steps were used for focused refinement of the ΔCag3 OMC and PR, starting with signal subtraction of the sub-complex for each particle. The subtracted particles were subjected to alignment-free focused 3D classification, and this produced one highly populated 3D class for each dataset (~7000 particles for the ΔCag3 OMC and ~10,000 particles for the ΔCag3 PR). The best 3D class was then subjected to a masked 3D refinement with C14 (ΔCag3 OMC) or C17 (ΔCag3 PR) symmetry, resulting in resolutions of 3.1 Å (OMC) and 3.0 Å (PR) (Figure 1—figure supplement 2). All resolutions described above were calculated using the gold-standard 0.143 FSC and visualized using UCSF Chimera and ChimeraX (Goddard et al., 2018; Pettersen et al., 2004).
 
-## Model building and refinement
+### Model building and refinement
 
 Models of the OMC were constructed within either the WT or the ∆Cag3 Cag T4SS cryo-EM OMC maps using PDB-6OEE, PDB-6OEF, and PDB-6ODI as starting models (Chung et al., 2019). Each model was first docked into either the WT or the ΔCag3 Cag T4SS map using UCSF Chimera (Pettersen et al., 2004). The models were then iteratively built and refined within COOT (Emsley et al., 2010). After successive rounds of building, the models were subjected to real space refinement in Phenix with secondary structure and Ramachandran restraints applied (Adams et al., 2010; Afonine et al., 2018). The nonbonded weight applied during refinement was tuned to reduce steric clashing. Models of the PR were constructed de novo based on density reconstructed from the Δcag3 sample using COOT. These models were then iteratively refined in Phenix real space with secondary structure and Ramachandran restraints applied. Similarly, the nonbonded weight applied during refinement of the PR was tuned to reduce steric clashing. After refinement, this model was docked into a previously reported map corresponding to the PR of the WT Cag T4SS (EMD-20021) (Chung et al., 2019). This model was refined using a protocol similar to that which was described above. The quality of each model was determined by assessing how well the model fit the map using model-map FSC calculations as well as per-residue correlation coefficients (CCs). All model building and refinement software was accessed through the SBGrid Consortium (Morin et al., 2013).

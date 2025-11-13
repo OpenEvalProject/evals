@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Department of Neuroscience, Karolinska Institutet Stockholm Sweden
-2. https://ror.org/0190ak572 Center for Neural Science and Department of Psychology, New York University New York United States
+1. Department of Neuroscience, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Center for Neural Science and Department of Psychology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -37,35 +37,192 @@ Our behavioral and modeling results support the predictions made for the three m
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 In this study, participants performed a detection-like task on the ownership they felt toward a rubber hand; the tactile stimulation they felt on their hidden real hand (taps) was synchronized with the taps applied to the rubber hand that they saw or systematically delayed (negative asynchronies) or advanced (positive asynchronies) by 150, 300, or 500 ms. Participants were instructed to report if ‘yes or no (the rubber hand felt like it was my hand)’. For each degree of asynchrony, the percentage of trials in which the participants felt like the rubber hand was theirs was determined (Figure 1A). Three different noise conditions were tested, corresponding to 0, 30, and 50% of visual noise being displayed via augmented reality glasses (see Materials and methods). The rubber hand illusion was successfully induced in the synchronous condition; indeed, the participants reported perceiving the rubber hand as their own hand in 94 ± 2% (mean ± SEM) of the 12 trials when the visual and tactile stimulations were synchronous; more precisely, 93 ± 3%, 96 ± 2%, and 95 ± 2% of responses were ‘yes’ responses for the conditions with 0, 30, and 50% visual noise, respectively. Moreover, for every participant, increasing the asynchrony between the seen and felt taps decreased the prevalence of the illusion. When the rubber hand was touched 500 ms before the real hand, the illusion was reported in only 20 ± 5% of the 12 trials (noise level 0: 13 ± 4%, noise level 30: 21 ± 5%, and noise level 50: 26 ± 7%); when the rubber hand was touched 500 ms after the real hand, the illusion was reported in only 19 ± 6% of the 12 trials (noise level 0: 10 ± 3%, noise level 30: 18 ± 5%, and noise level 50: 29 ± 6%; main effect of asynchrony: F[6, 84]=5.97, p<0.001; for the individuals’ response plots, see Figure 2—figure supplements 1–4). Moreover, regardless of asynchrony, the participants perceived the illusion more often when the level of visual noise increased (F[2, 28]=22.35, p<0.001; Holmes’ post hoc test: noise level 0 versus noise level 30: p=0.018, davg = 0.4; noise level 30 versus noise level 50: p=0.005, davg = 0.5; noise level 0 versus noise level 50: p<0.001, davg = 1; Figure 1B). The next step was to examine whether these behavioral results can be accounted for by the BCI principles, including the increased emergence of the rubber hand illusion with visual noise.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig1-v2.jpg)
 
-**Figure 1.:** (A) Colored dots represent the mean reported proportion of elicited rubber hand illusions (± SEM) for each asynchrony for the 0 (black), 30 (orange), and 50% (red) noise conditions. (B) Bars represent how many times in the 84 trials the participants answered ‘yes (the rubber hand felt like my own hand)’ under the 0 (black), 30 (orange), and 50% (red) noise conditions; gray dots are individual data points. There was a significant increase in the number of ‘yes’ answers when the visual noise increased * p<0.001.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Colored dots represent the mean reported proportion of elicited rubber hand illusions (± SEM) for each asynchrony for the 0 (black), 30 (orange), and 50% (red) noise conditions. (B) Bars represent how many times in the 84 trials the participants answered ‘yes (the rubber hand felt like my own hand)’ under the 0 (black), 30 (orange), and 50% (red) noise conditions; gray dots are individual data points. There was a significant increase in the number of ‘yes’ answers when the visual noise increased * p<0.001.
 
-## BCI model fit to body ownership
+### BCI model fit to body ownership
 
-Our main causal inference model, the BCI model, assumes that the observer infers the causal structure of the visual and tactile signal to decide to what extent they should be merged into one coherent percept. In this model, the inference depends on the prior probability of the common cause and the trial-to-trial sensory uncertainty. Thus, this model has five free parameters: psame is the prior probability of a common cause for vision and touch, independent of any sensory stimulation, σ0, σ30, σ50 correspond to the noise impacting the measured visuotactile asynchrony in each of the three noise conditions, and λ is the lapse rate to account for random guesses and unintended responses (see Materials and methods and Appendix 1 for more details). This BCI model fits the observed data well (Figure 2A). This finding supports our hypothesis that the sense of body ownership is based on an uncertainty-based inference of a common cause. Three further observations can be noted. First, the probability of a common cause for the visual and tactile stimuli psame exceeded 0.5 (mean ± SEM: 0.80±0.05), meaning that in the context of body ownership, observers seemed to assume that vision and touch were more likely to come from one source than from different sources. This result broadly corroborates previous behavioral observations that the rubber hand illusion can emerge despite considerable sensory conflicts, for example, visuotactile asynchrony of up to 300 ms (Shimada et al., 2009). Second, the estimates for the sensory noise σ increased with the level of visual white noise: 116±13 ms, 141±25 ms, and 178±33 ms for the 0, 30, and 50% visual noise conditions, respectively (mean ± SEM); this result echoes the increased sensory uncertainty induced by our experimental manipulation. Finally, the averaged lapse rate estimate λ was rather low, 0.08±0.04, as expected for this sort of detection-like task, when participants were performing the task according to the instructions (see Figure 2—figure supplement 1 for individual fit results).
+Our main causal inference model, the BCI model, assumes that the observer infers the causal structure of the visual and tactile signal to decide to what extent they should be merged into one coherent percept. In this model, the inference depends on the prior probability of the common cause and the trial-to-trial sensory uncertainty. Thus, this model has five free parameters: $p_{same}$ is the prior probability of a common cause for vision and touch, independent of any sensory stimulation, $\sigma_{0}, \sigma_{30}, \sigma_{50}$ correspond to the noise impacting the measured visuotactile asynchrony in each of the three noise conditions, and $\lambda$ is the lapse rate to account for random guesses and unintended responses (see Materials and methods and Appendix 1 for more details). This BCI model fits the observed data well (Figure 2A). This finding supports our hypothesis that the sense of body ownership is based on an uncertainty-based inference of a common cause. Three further observations can be noted. First, the probability of a common cause for the visual and tactile stimuli $p_{same}$ exceeded 0.5 (mean ± SEM: 0.80±0.05), meaning that in the context of body ownership, observers seemed to assume that vision and touch were more likely to come from one source than from different sources. This result broadly corroborates previous behavioral observations that the rubber hand illusion can emerge despite considerable sensory conflicts, for example, visuotactile asynchrony of up to 300 ms (Shimada et al., 2009). Second, the estimates for the sensory noise $\sigma$ increased with the level of visual white noise: 116±13 ms, 141±25 ms, and 178±33 ms for the 0, 30, and 50% visual noise conditions, respectively (mean ± SEM); this result echoes the increased sensory uncertainty induced by our experimental manipulation. Finally, the averaged lapse rate estimate $\lambda$ was rather low, 0.08±0.04, as expected for this sort of detection-like task, when participants were performing the task according to the instructions (see Figure 2—figure supplement 1 for individual fit results).
 
-## Comparing the BCI model to Bayesian and non-Bayesian alternative models
+![Figure 2.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-v2.jpg)
 
-Next, we compared our BCI model to alternative models (see Materials and methods and Appendix 1). First, we observed that adding an additional parameter to account for observer-specific stimulation uncertainty in the BCI* model did not improve the fit of the BCI model (Table 1, Figure 2—figure supplement 3). This observation suggests that assuming the observer’s assumed stimulus distribution has the same SD as the true stimulus distribution was reasonable, i.e., allowing a participant-specific value for σS did not improve the fit of our model enough to compensate for the loss of parsimony.
+**Figure 2.:** Bars represent how many times across the 84 trials participants answered ‘yes’ in the 0 (black), 30 (orange), and 50% (red) noise conditions (mean ± SEM). Lighter polygons denote the Bayesian causal inference (BCI) model predictions (A) and fixed-criterion (FC) model predictions (C) for the different noise conditions. Observed data refer to 0 (black dots), 30 (orange dots), and 50% (red dots) visual noise and corresponding predictions (mean ± SEM; gray, yellow, and red shaded areas, respectively) for the BCI model (B) and FC model (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The figure display two plots per participant, the "yes [the rubber hand felt like my own hand]" answers as a function of visuotactile asynchrony (dots) and corresponding BCI model fit (curves) are plotted on the left; the right plot represents the evolution of the BCI decision criteria with sensory noise and the 3 dots highlight the decision criteria for the conditions tested in the present study. As in the main text, black, orange, and red correspond to the 0%, 30%, and 50% noise levels, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The figure display one plot per participant, the "yes [the rubber hand felt like my own hand]" answers as a function of visuo-tactile asynchrony (dots) and corresponding FC (non Baysesian) model t (curves) are plotted. As in the main figure, black, orange, and red correspond to the 0%, 30%, and 50% noise levels, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The figure display two plots per participant, the "yes [the rubber hand felt like my own hand]" answers as a function of visuo-tactile asynchrony (dots) and corresponding BCI* model fit (curves) are plotted on the left; the right plot represents the evolution of the BCI decision criteria with sensory noise and the 3 dots highlight the decision criteria for the conditions tested in the present study. As in the main figure, black, orange, and red correspond to the 0%, 30%, and 50% noise levels, respectively. This model shares the generative model and decision rule of the BCI model. However, the level of noise impacting the stimulation s is considered as a free parameter instead of being fixed. Thus, six parameters need to be fitted.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The figure display two plots per participant, the "yes [the rubber hand felt like my own hand]" answers as a function of visuotactile asynchrony (dots) and corresponding BCIbias model fit (curves) are plotted on the left; the right plot represents the evolution of the BCI decision criteria with sensory noise and the 3 dots highlight the decision criteria for the conditions tested in the present study. As in the main figure, black, orange, and red correspond to the 0%, 30%, and 50% noise levels, respectively. This model did not assume that the observer treats an asynchrony of 0 as minimal. In this alternative model, the decision criterion is the same as in the BCI model; however, a parameter (representing the mean of the distribution of asynchrony) is taken into account when computing the predicted answer. A negative means that the RHI is most likely to emerge when the rubber hand is touched first, a positive means that the RHI is most likely to emerge when the participant's hand is touched first. The estimated bias is modest (<50 ms) for most of our participants (11 out of 15). 5 participants showed a positive bias and 10 a negative, and thus no clear systematic bias was observed. Notably, on the group level, the bias did not significantly differ from 0 (t(14)=-1.61, p = 0.13), and the BIC analysis did not show a clear improvement in the goodness-of-fit compared to our main BCI model (lower bound: -32; raw sum of difference: 22; upper bound: 85). In light of these results, we did not discuss this additional model further.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig2-figsupp5-v2.jpg)
+
+### Comparing the BCI model to Bayesian and non-Bayesian alternative models
+
+Next, we compared our BCI model to alternative models (see Materials and methods and Appendix 1). First, we observed that adding an additional parameter to account for observer-specific stimulation uncertainty in the BCI* model did not improve the fit of the BCI model (Table 1, Figure 2—figure supplement 3). This observation suggests that assuming the observer’s assumed stimulus distribution has the same SD as the true stimulus distribution was reasonable, i.e., allowing a participant-specific value for $\sigma_{S}$ did not improve the fit of our model enough to compensate for the loss of parsimony.
+
+**Table 1.**
+ Bootstrapped CIs (95% CI) of the Akaike information criterion (AIC) and Bayesian information criterion (BIC) differences between our main model Bayesian causal inference (BCI) and the BCI* (first line) and fixed criterion (FC; second line) models.A negative value means that the BCI model is a better fit. Thus, the BCI model outperformed the other two.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model comparison</th>
+      <th colspan="3">AIC (95% CI)</th>
+      <th colspan="3">BIC (95% CI)</th>
+    </tr>
+    <tr>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BCI – BCI*</td>
+      <td>–28</td>
+      <td>–25</td>
+      <td>–21</td>
+      <td>–81</td>
+      <td>–77</td>
+      <td>–74</td>
+    </tr>
+    <tr>
+      <td>BCI – FC</td>
+      <td>–116</td>
+      <td>–65</td>
+      <td>–17</td>
+      <td>–116</td>
+      <td>–65</td>
+      <td>–17</td>
+    </tr>
+  </tbody>
+</table>
+
+_Finally, the pseudo-R2 were of the same magnitude for each model (mean ± SEM: BCI = 0.62 ± 0.04, BCI* = 0.62 ± 0.04, FC = 0.60 ± 0.05). However, the exceedance probability analysis confirmed the superiority of the Bayesian models over the fixed criterian one for the ownership data (family exceedance probability [EP]: Bayesian: 0.99, FC: 0.0006; when comparing our main model to the FC: protected-EPFC = 0.13, protected-EPBCI = 0.87, posterior probabilities: RFX: p[H1|y] = 0.740, null: p[H0|y] = 0.260)._
 
 Second, an important alternative to the Bayesian model is a model that ignores variations in sensory uncertainty when judging if the rubber hand is one’s own, for example, because the observer incorrectly assumes that sensory noise does not change. This second alternative model based on a fixed decisional criterion is the FC model. The goodness of fit of the BCI model was found to be higher than that of the FC model (Figure 2, Table 1, and Figure 2—figure supplement 2). This result shows that the BCI model provides a better explanation for the ownership data than the simpler FC model that does not take into account the sensory uncertainty in the decision process.
 
-## Comparison of the body ownership and synchrony tasks
+### Comparison of the body ownership and synchrony tasks
 
 The final part of our study focused on the comparison of causal inferences of body ownership and visuotactile synchrony detection. In an additional task, participants were asked to decide whether the visual and tactile stimulation they received happened at the same time, i.e., whether the felt and seen touches were synchronous or not. The procedure was identical to the body ownership detection task apart from a critical difference in the instructions, which was now to detect if the visual and tactile stimulations were synchronous (instead of judging illusory rubber hand ownership).
 
-## Extension analysis results (Table 2 and Figure 3 and Figure 3—figure supplement 1)
+### Extension analysis results (Table 2 and Figure 3 and Figure 3—figure supplement 1)
 
-The BCI model fits the combined dataset from both ownership and synchrony tasks well (Figure 3B and C and Figure 3—figure supplement 1). Since the model used identical parameters (or identical parameters except for one), this observation supports the hypothesis that both the rubber hand illusion and visuotactile synchrony perception are determined by similar multisensory causal inference processes. However, in agreement with one of our other hypotheses, the goodness of fit of the model improved greatly when the probability of a common cause (psame) differed between the two tasks (Table 2). Importantly, psame was significantly lower for the synchrony judgment task (mean ± SEM: 0.65±0.04) than for the ownership judgment task (mean ± SEM: 0.83±0.04, paired t-test: t=5.9141, df = 14, and p<0.001). This relatively stronger a priori probability for a common cause for body ownership compared to visuotactile synchrony judgments supports the notion that body ownership and visuotactile event synchrony correspond to distinct multisensory perceptions, albeit being determined by similar causal probabilistic causal inference principles. Finally, in line with our hypothesis, we found that the psame values estimated separately for the two tasks were correlated (Pearson correlation: p=0.002, cor = 0.71; Figure 3A). That is, individuals who displayed a higher prior probability of combining the basic tactile and visual signals and perceiving the visuotactile synchrony of the events also showed a greater likelihood of combining multisensory signals in the ownership task and experiencing the rubber hand illusion. This observation corroborates the link between visuotactile synchrony detection and body ownership perception and provides a new computational understanding of how individual differences in multisensory integration can explain individual differences in the rubber hand illusion.
+**Table 2.**
+ Bootstrapped CIs (95% CI) for the Akaike information criterion (AIC) and Bayesian information criterion (BIC) differences between shared and different $p_{same}$ values for the Bayesian causal inference (BCI) model in the extension analysis.A negative value means that the model with different $p_{same}$ values is a better fit.
 
-## Transfer analysis results (Table 3, Figure 3—figure supplement 2)
 
-Finally, we compared the body ownership and synchrony tasks using what we call a transfer analysis. We used the parameters estimated for the ownership task to fit the synchrony task data (O to S) or the parameters estimated for the synchrony task to fit the ownership task data (S to O). Leaving psame as a free parameter always led to a much better fit of the data, as displayed in Table 3 (see also Figure 3—figure supplement 2). Thus, this analysis leads us to the same conclusion as that of the extension analysis. The body ownership task and synchrony task involved different processing of the visual and somatosensory signals for the participants, and this difference in behavioral responses was well captured when two different a priori probabilities for a common cause were used to model each task.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model comparison</th>
+      <th colspan="3">AIC (95% CI)</th>
+      <th colspan="3">BIC (95% CI)</th>
+    </tr>
+    <tr>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Different psame –shared parameters</td>
+      <td>–597</td>
+      <td>–352</td>
+      <td>–147</td>
+      <td>–534</td>
+      <td>–289</td>
+      <td>–83</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig3-v2.jpg)
+
+**Figure 3.:** (A) Correlation between the prior probability of a common cause $p_{same}$ estimated for the ownership and synchrony tasks in the extension analysis. The $p_{same}$ estimate is significantly lower for the synchrony task than for the ownership task. The solid line represents the linear regression between the two estimates, and the dashed line represents the identity. Numbers denote the participants’ numbers. (B and C) Colored dots represent the mean reported proportion of perceived synchrony for visual and tactile stimulation for each asynchrony under the 0 (purple), 30 (blue), and 50% (light blue) noise conditions (±SEM). Lighter shaded areas show the corresponding Bayesian causal inference (BCI) model predictions made when all parameters are shared between the ownership and synchrony data (B) and when $p_{same}$ is estimated separately for each dataset (C) for the different noise conditions (see also Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The BCI model is fitted to the body ownership and synchrony data combined. Observed data for the 0% (black/purple dots), 30% (orange/dark blue dots), and 50% (red/light blue dots) of visual noise (body ownership/synchrony) and the corresponding predictions for the BCI model with a shared psame (A & B) and with distinct psame for each task (C & D). Below are the corresponding estimated parameters and negative log likelihood.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** In this analysis, the body ownership task and the synchrony judgment task are compared by using the BCI model parameters estimated for one perception (ownership or synchrony) to predict the data from the other perception (synchrony or ownership). Observed data for the 0% (black/purple dots), 30% (orange/dark blue dots), and 50% (red/light blue dots) of visual noise (body ownership/synchrony) and the corresponding predictions for the BCI model with the same psame (full transfer; A & B) and with distinct psame for each task (partial transfer C & D). Below are the corresponding estimated parameters and negative log likelihood. "O to S" corresponds to the tting of synchrony data by the BCI model estimates from ownership data and "S to O" corresponds to the tting of ownership data by the BCI model estimates from synchrony data.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Colored dots represent the mean reported proportion of stimulation perceived as synchronous (+/-SEM) for each asynchrony for the 0% (dark blue), 30% (light blue), and 50% (cyan) noise conditions. (B) Bars represent how many times in the 84 trials the participants answered "yes [the touches I felt and the ones I saw were synchronous]' under the 0% (dark blue), 30% (light blue), and 50% (cyan) noise conditions. There was a significant increase in the number of `yes' answers when the visual noise increased * p < .05. The participants reported perceiving synchronous visuotactile taps in 89+/- 5% (mean +/- SEM) of the 12 trials when the visual and tactile stimulations were synchronous; more precisely, 85 +/- 4%, 90+/- 2%, and 93+/- 2% of responses were "yes" responses for the conditions with 0, 30, and 50% visual noise, respectively. When the rubber hand was touched 300 ms before the real hand, the taps were perceived as synchronous in 18+/- 5% of the 12 trials (noise level 0: 15+/- 4% noise level 30: 18+/- 5%, and noise level 50: 22+/- 5%); when the rubber hand was touched 300 ms after the real hand, visuotactile synchrony was reported in only 22+/- 5% of the 12 trials (noise level 0: 19+/- 4%, noise level 30: 20+/- 4%, and noise level 50: 26+/- 5%, main effect of asynchrony: F(6, 84) = 21.5, p <.001). Moreover, regardless of asynchrony, the participants perceived visuotactile synchrony more often when the level of visual noise increased but post-hoc tests showed that this di erence was only signi cant between the most extreme conditions of noise (F(2, 28) = 5.78, p = .008; Holmes' post hoc test: noise level 0 versus noise level 30: p = .30 davg = 0.2; noise level 30 versus noise level 50: p = .34, davg = 0.2; noise level 0 versus noise level 50: p = .01 davg = 0.4). The table below summa- rizes the mean (+/-SEM) the number of trials perceived as synchronous by the participants.
+
+The BCI model fits the combined dataset from both ownership and synchrony tasks well (Figure 3B and C and Figure 3—figure supplement 1). Since the model used identical parameters (or identical parameters except for one), this observation supports the hypothesis that both the rubber hand illusion and visuotactile synchrony perception are determined by similar multisensory causal inference processes. However, in agreement with one of our other hypotheses, the goodness of fit of the model improved greatly when the probability of a common cause ($p_{same}$) differed between the two tasks (Table 2). Importantly, $p_{same}$ was significantly lower for the synchrony judgment task (mean ± SEM: 0.65±0.04) than for the ownership judgment task (mean ± SEM: 0.83±0.04, paired t-test: t=5.9141, df = 14, and p<0.001). This relatively stronger a priori probability for a common cause for body ownership compared to visuotactile synchrony judgments supports the notion that body ownership and visuotactile event synchrony correspond to distinct multisensory perceptions, albeit being determined by similar causal probabilistic causal inference principles. Finally, in line with our hypothesis, we found that the $p_{same}$ values estimated separately for the two tasks were correlated (Pearson correlation: p=0.002, cor = 0.71; Figure 3A). That is, individuals who displayed a higher prior probability of combining the basic tactile and visual signals and perceiving the visuotactile synchrony of the events also showed a greater likelihood of combining multisensory signals in the ownership task and experiencing the rubber hand illusion. This observation corroborates the link between visuotactile synchrony detection and body ownership perception and provides a new computational understanding of how individual differences in multisensory integration can explain individual differences in the rubber hand illusion.
+
+### Transfer analysis results (Table 3, Figure 3—figure supplement 2)
+
+**Table 3.**
+ Bootstrapped CIs (95% CIs) of the Akaike information criterion (AIC) and Bayesian information criterion (BIC) differences between the partial and full transfer analyses for the Bayesian causal inference (BCI) model.‘O to S’ corresponds to the fitting of synchrony data by the BCI model estimates from ownership data. ‘S to O’ corresponds to the fitting of ownership data by the BCI model estimates from synchrony data. A negative value means that the partial transfer model is a better fit.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Transfer direction</th>
+      <th colspan="3">AIC (partial – full transfer, 95% CI)</th>
+      <th colspan="3">BIC (partial – full transfer, 95% CI)</th>
+    </tr>
+    <tr>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+      <th>Lower bound</th>
+      <th>Raw sum</th>
+      <th>Upper bound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O to S</td>
+      <td>–1837</td>
+      <td>–1051</td>
+      <td>–441</td>
+      <td>–1784</td>
+      <td>–998</td>
+      <td>–388</td>
+    </tr>
+    <tr>
+      <td>S to O</td>
+      <td>–1903</td>
+      <td>–1110</td>
+      <td>–448</td>
+      <td>–1851</td>
+      <td>–1057</td>
+      <td>–394</td>
+    </tr>
+  </tbody>
+</table>
+
+Finally, we compared the body ownership and synchrony tasks using what we call a transfer analysis. We used the parameters estimated for the ownership task to fit the synchrony task data (O to S) or the parameters estimated for the synchrony task to fit the ownership task data (S to O). Leaving $p_{same}$ as a free parameter always led to a much better fit of the data, as displayed in Table 3 (see also Figure 3—figure supplement 2). Thus, this analysis leads us to the same conclusion as that of the extension analysis. The body ownership task and synchrony task involved different processing of the visual and somatosensory signals for the participants, and this difference in behavioral responses was well captured when two different a priori probabilities for a common cause were used to model each task.
 
 Note that the exceedance probability analysis also confirmed the superiority of the Bayesian models over the FC one for the synchrony data when analyzed separately from the ownership data (family exceedance probability: Bayesian: 0.71, FC: 0.29; when comparing our main model to the FC: protected-EPFC=0.46, protected-EPBCI=0.54, posterior probabilities: RFX (random-effect analysis): p[H1|y]=0.860, null: p[H0|y]=0.140). Further details about the behavioral results for the synchrony judgment task can be found in the Figure 3—figure supplement 3.
 
@@ -73,7 +230,7 @@ Note that the exceedance probability analysis also confirmed the superiority of 
 
 The main finding of the present study is that body ownership perception can be described as a causal inference process that takes into account sensory uncertainty when determining whether an object is a part of one’s own body or not. Participants performed a detection-like task on the ownership they felt over a rubber hand placed in full view in front of them in our version of the rubber hand illusion paradigm that involved the use of psychophysics, robotically controlled sensory stimulation, and augmented reality glasses (to manipulate visual noise); the tactile stimulation that the participants felt on their own hidden hand was synchronized with the taps applied to the rubber hand that they saw or systematically delayed or advanced. For each degree of asynchrony, the percentage of trials for which the participants felt like the rubber hand was theirs was determined. We found that the probability of the emergence of the rubber hand illusion was better predicted by a Bayesian model that takes into account the trial-by-trial level of sensory uncertainty to calculate the probability of a common cause for vision and touch given their relative onset time than by a non-Bayesian (FC) model that does not take into account sensory uncertainty. Furthermore, in comparing body ownership and visuotactile synchrony detection, we found interesting differences and similarities that advance our understanding of how the perception of multisensory synchrony and body ownership is related at the computational level and how individual differences in the rubber hand illusion can be explained as individual differences causal inference. Specifically, the prior probability of a common cause was found to be higher for ownership than for synchrony detection, and the two prior probabilities were found to be correlated across individuals. We conclude that body ownership is a multisensory perception of one’s own body determined by an uncertainty-based probabilistic inference of a common cause.
 
-## Body ownership perception predicted by inference of a common cause
+### Body ownership perception predicted by inference of a common cause
 
 One of the strengths of the present study lies in its direct, individual-level testing of a causal inference model on body ownership perceptual data. This novel means to quantify the rubber hand illusion based on psychophysics is more appropriate for computational studies focused on body ownership than traditional measures such as questionnaires or changes in perceived hand position (proprioceptive drift). Previous attempts made to apply BCI to body ownership were conducted at the group level by the categorical comparison of experimental conditions (Samad et al., 2015); however, such a group-level approach does not properly challenge the proposed models as required according to standards in the field of computational behavioral studies. The only previous study that used quantitative Bayesian model testing analyzed target-reaching error in a virtual reality version of the rubber hand illusion (Fang et al., 2019), but reaching errors tend to be relatively small, and it is unclear how well the reaching errors correlate with the subjective perception of the illusion (Heed et al., 2011; Kammers et al., 2009; Newport et al., 2010; Newport and Preston, 2011; Rossi Sebastiano et al., 2022; Zopf et al., 2011). Thus, the present study contributes to our computational understanding of body ownership as the first direct fit of the BCI model to individual-level ownership sensations judged under the rubber hand illusion.
 
@@ -81,13 +238,13 @@ Computational approaches to body ownership can lead to a better understanding of
 
 From a broader cognitive neuroscience perspective, causal inference models of body ownership can be used in future neuroimaging and neurophysiological studies to investigate the underlying neural mechanisms of the computational processes. For example, instead of simply identifying frontal, parietal, and subcortical structures that show higher activity in the illusion condition compared to control conditions that violate temporal and spatial congruence rules (Ehrsson et al., 2004; Ehrsson et al., 2005; Guterstam et al., 2013; Limanowski and Blankenburg, 2016; Guterstam et al., 2019a; Rao and Kayser, 2017), one can test the hypothesis that activity in key multisensory areas closely follows the predictions of the BCI model and correlates with specific parameters of this model. Such a model-based imaging approach, recently successfully used in audiovisual paradigms (Cao et al., 2019; Rohe and Noppeney, 2015; Rohe and Noppeney, 2016; Rohe et al., 2019), can thus afford us a deeper understanding of the neural implementation of the causal inference for body ownership. From previous neuroimaging work (Ehrsson et al., 2004; Guterstam et al., 2013; Limanowski and Blankenburg, 2016; Guterstam et al., 2019a), anatomical and physiological considerations based on nonhuman primate studies (Avillac et al., 2007; Graziano et al., 1997; Graziano et al., 2000; Fang et al., 2019), and a recent model-based fMRI study on body ownership judgments (Chancel et al., 2022), we theorize that neuronal populations in the posterior parietal cortex and premotor cortex could implement the computational processes of the uncertainty-based inference of a common cause of body ownership.
 
-## Observers take trial-to-trial sensory uncertainty into account in judging body ownership
+### Observers take trial-to-trial sensory uncertainty into account in judging body ownership
 
 The current study highlights the contribution of sensory uncertainty to body ownership by showing the superiority of a Bayesian model in predicting the emergence of the rubber hand illusion relative to a non-Bayesian model. Although BCI is an often-used model to describe multisensory processing from the behavioral to cerebral levels (Badde et al., 2020; Cao et al., 2019; Dokka et al., 2019; Kayser and Shams, 2015; Körding et al., 2007; Rohe et al., 2019; Rohe and Noppeney, 2015; Wozny et al., 2010), it is not uncommon to observe behaviors induced by sensory stimulation that diverge from strict Bayesian-optimal predictions (Beck et al., 2012). Some of these deviations from optimality can be explained by a contribution of sensory uncertainty to the perception that differs from that assumed under a Bayesian-optimal inference (Drugowitsch et al., 2016). Challenging the Bayesian-optimal assumption is thus a necessary good practice in computational studies (Jones and Love, 2011), and this is often done in studies of the perception of external sensory events, such as visual stimuli (Qamar et al., 2013; Stengård and van den Berg, 2019; Zhou et al., 2020). However, very few studies have investigated the role of sensory uncertainty in perceiving one’s own limbs from a computational perspective. Such studies explore the perception of limb movement trajectory (Reuschel et al., 2010), limb movement illusion (Chancel et al., 2016), or perceived static limb position (van Beers et al., 1999; van Beers et al., 2002) but not the sense of body ownership or similar aspects of the embodiment of an object. These studies assume the full integration of visual and somatosensory signals and describe how sensory uncertainty is taken into account when computing a single-fused estimate of limb movement or limb position. However, none of these previous studies investigate inferences about a common cause. A comparison between Bayesian and non-Bayesian models was also missing from the above-described studies of the rubber hand illusion and causal inference (Fang et al., 2019; Samad et al., 2015). Thus, the current results reveal how uncertainty influences the automatic perceptual decision to combine or segregate bodily related signals from different sensory modalities and that this inference process better follows Bayesian principles than non-Bayesian principles. While we have argued that people take into account trial-to-trial uncertainty when making their body ownership and synchrony judgments, it is also possible that they learn a criterion at each noise level (Ma and Jazayeri, 2014), as one might predict in standard signal detection theory. However, we believe this is unlikely because we used multiple interleaved levels of noise while withholding any form of experimental feedback. Thus, more broadly, our results advance our understanding of the multisensory processes that support the perception of one’s own body, as they serve as the first conclusive empirical demonstration of BCI in a bodily illusion. Such successful modeling of the multisensory information processing in body ownership is relevant for future computational work into bodily illusions and bodily self-awareness, for example, more extended frameworks that also include contributions of interoception (Azzalini et al., 2019; Park and Blanke, 2019), motor processes (Burin et al., 2015; Burin et al., 2017), pre-existing stored representations about what kind of objects that may or may not be part of one’s body (Tsakiris et al., 2010), expectations (Chancel et al., 2021; Guterstam et al., 2019b Ferri et al., 2013), and high-level cognition (Lush et al., 2020; Slater and Ehrsson, 2022). Future quantitative computational studies like the present one are needed to formally compare these different theories of body ownership and advance the corresponding theoretical framework.
 
 In the present study, we compared the Bayesian hypothesis to a FC model. FC strategies are simple heuristics that could arise from limited sensory processing resources. Our body plays such a dominant and critical role in our experience of the world that one could easily imagine the benefits of an easy-to-implement heuristic strategy for detecting what belongs to our body and what does not. Our body is more stable than our ever-changing environment, so in principle, a resource-effective and straightforward strategy for an observer could be to disregard, or not optimally compute, sensory uncertainty to determine whether an object in view is part of one’s own body or not. However, our analysis shows that the BCI model outperforms such a model. Thus, observers seem to take into account trial-to-trial sensory uncertainty to respond regarding their body ownership perception. More visual noise, i.e., increased visual uncertainty, increases the probability of the rubber hand illusion, consistent with the predictions of Bayesian probabilistic theory. Intuitively, this makes sense, as it is easier to mistake one partner’s hand for one’s own under poor viewing conditions (e.g. in semidarkness) than when viewing conditions are excellent. However, this basic effect of sensory uncertainty on own-body perception is not explained by classical descriptive models of the rubber hand illusion (Botvinick and Cohen, 1998; Tsakiris et al., 2010; Ehrsson, 2012; Makin et al., 2008). Thus, the significant impact of sensory uncertainty on the rubber hand illusion revealed here advances our understanding of the computational principles of body ownership and of bodily illusions and multisensory bodily perception more generally.
 
-## Relationship between body ownership and synchrony perception
+### Relationship between body ownership and synchrony perception
 
 The final part of our study focused on the comparison of causal inferences of body ownership and visuotactile synchrony detection. Previous studies have already demonstrated that audiovisual synchrony detection can be explained by BCI (Adam and Noppeney, 2014; Magnotti et al., 2013; Noel et al., 2018; Noppeney and Lee, 2018; Shams et al., 2005). We successfully extend this principle to visuotactile synchrony detection in the context of a rubber hand illusion paradigm. The results of our extension analysis using both ownership and synchrony data suggest that both multisensory perceptions follow similar computational principles in line with our expectations and previous literature. Whether the rubber hand illusion influences synchrony perception was not investigated in the present study, as the goal was to design ownership and synchrony tasks to be as identical as possible for the modeling. However, the results from the previous literature diverge regarding the potential influence of body ownership on synchrony judgment (Ide and Hidaka, 2013; Maselli et al., 2016; Smit et al., 2019), so this issue deserves further investigation in future studies.
 
@@ -97,31 +254,39 @@ How the a priori probabilities of a common cause under different perceptive cont
 
 The finding that prior probabilities for a common cause were correlated for the ownership and synchrony data suggests a shared probabilistic computational process between the two multisensory tasks. This result could account for the previously observed correlation at the behavioral level between individual susceptibility to the rubber hand illusion and individual temporal resolution (‘temporal window of integration’) in visuotactile synchrony perception (Costantini et al., 2016). It is not that having a narrower temporal window of integration makes one more prone to detect visuotactile temporal mismatches leading to a weaker rubber hand illusion as the traditional interpretation assumes. Instead, our behavioral modeling suggests that the individual differences in synchrony detection and the rubber hand illusion can be explained by individual differences in how prior information on the likelihood of a common cause is used in multisensory causal inference. This probabilistic computational explanation for individual differences in the rubber hand illusion emphasizes differences in how information from prior knowledge, bottom-up sensory correspondence, and sensory uncertainty is combined in a perceptual inferential process rather than there being ‘hard-wired’ differences in temporal windows of integration or trait differences in top-down cognitive processing (Eshkevari et al., 2012; Germine et al., 2013; Marotta et al., 2016). It should be noted that other multisensory factors not studied in the present study can also contribute to individual differences in the rubber hand illusion, notably as the relative reliability of proprioceptive signals from the upper limb (Horváth et al., 2020). The latter could be considered in future extensions of the current model that also consider the degree of spatial disparity between vision and proprioception and the role of visuoproprioceptive integration (Samad et al., 2015; Fang et al., 2019; Kilteni et al., 2015).
 
-## Conclusion
+### Conclusion
 
 BCI models have successfully described many aspects of perception, decision making, and motor control, including sensory and multisensory perception of external objects and events. The present study extends this probabilistic computational framework to the sense of body ownership, a core aspect of self-representation and self-consciousness. Specifically, the study presents direct and quantitative evidence that body ownership detection can be described at the individual level by the inference of a common cause for vision and somatosensation, taking into account trial-to-trial sensory uncertainty. The fact that the brain seems to use the same probabilistic approach to interpret the external world and the self is of interest to Bayesian theories of the human mind (Ma and Jazayeri, 2014; Rahnev, 2019) and suggests that even our core sense of conscious bodily self (Blanke et al., 2015; Ehrsson, 2020; Tsakiris, 2017; de Vignemont, 2018) is the result of an active inferential process making ‘educated guesses’ about what we are.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 18 healthy participants naïve to the conditions of the study were recruited for this experiment (six males, aged 25.2±4 years, right-handed; they were recruited from outside the department, never having taken part in a bodily illusion experiment before). Note that in computational studies such as the current one, the focus is on fitting and comparing models within participants, i.e., to rigorously quantify perception at the single-subject level, and not only rely on statistical results at the group level. All volunteers provided written informed consent prior to their participation. All participants received 600 SEK (Swedish krona) as compensation for their participation (150 SEK per hr). All experiments were approved by the Swedish Ethics Review Authority (Ethics number 2018/471-31/2).
 
-## Inclusion test
+### Inclusion test
 
 In the main experiment, participants were asked to judge the ownership they felt toward the rubber hand. It was therefore necessary for them to be able to experience the basic rubber hand illusion. However, we know that approximately 20–25% of healthy participants do not report a clear and reliable rubber hand illusion (Kalckert and Ehrsson, 2014), and such participants are not able to make reliable ownership discriminations in psychophysics tasks (Chancel and Ehrsson, 2020), which were required for the current modeling study (they tended to respond randomly). Thus, all participants were first tested on a classical rubber hand illusion paradigm to ensure that they could experience the illusion. For this test, each participant sat with their right hand resting on a support beneath a small table. On this table, 15 cm above the hidden real hand, the participant viewed a life-sized cosmetic prosthetic male right hand (model 30,916 R, Fillauer, filled with plaster; a ‘rubber hand’) placed in the same position as the real hand. The participant kept their eyes fixed on the rubber hand while the experimenter used two small probes (firm plastic tubes, diameter: 7 mm) to stroke the rubber hand and the participant’s hidden hand for 12 s, synchronizing the timing of the stroking as much as possible. Each stroke lasted 1 s and extended approximately 1 cm; the strokes were applied to five different points along the real and rubber index fingers at a frequency of 0.5 Hz. The characteristics of the strokes and the duration of the stimulation were designed to resemble the stimulation later applied by the robot during the discrimination task (see below). Then, the participant completed a questionnaire adapted from that used by Botvinick and Cohen, 1998, see also Chancel and Ehrsson, 2020 and Figure 4—figure supplement 1. This questionnaire includes three items assessing the illusion and four control items to be rated with values between –3 (‘I completely disagree with this item’) and 3 (‘I completely agree with this item’). Our inclusion criteria for a rubber hand illusion strong enough for participation in the main psychophysics experiment were as follows: (1) a mean score for the illusion statements (Q1, Q2, and Q3) of greater than 1 and (2) a difference between the mean score for the illusion items and the mean score for the control items of greater than 1. Three participants (two females) did not reach this threshold; therefore, 15 subjects participated in the main experiment (five males, aged 26.3±4 years, Figure 4—figure supplement 2). The inclusion test session lasted 30 min in total. After this inclusion phase, the participants were introduced to the setup used in the main experiment.
 
-## Experimental setup
+### Experimental setup
 
 During the main experiment, the participant’s right hand lay hidden, palm down, on a flat support surface beneath a table (30 cm lateral to the body midline), while on this table (15 cm above the real hand), a right rubber hand was placed in the same orientation as the real hand aligned with the participants’ arm (Figure 4A). The participant’s left hand rested on their lap. A chin rest and elbow rest (Ergorest Oy, Finland) ensured that the participant’s head and arm remained in a steady and relaxed position throughout the experiments. Two robot arms (designed in our laboratory by Martti Mercurio and Marie Chancel, see Chancel and Ehrsson, 2020 for more details) applied tactile stimuli (taps) to the index finger of the rubber hand and to the participant’s hidden real index finger. Each robot arm was composed of three parts: two 17-cm-long, 3-cm-wide metal pieces and a metal slab (10×20 cm) as a support. The joint between the two metal pieces and that between the proximal piece and the support was powered by two HS-7950TH Ultra Torque servos that included 7.4 V optimized coreless motors (Hitec Multiplex, USA). The distal metal piece ended with a ring containing a plastic tube (diameter: 7 mm) that was used to touch the rubber hand and the participant’s real hand.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig4-v2.jpg)
+
+**Figure 4.:** A participant’s real right hand is hidden under a table while they see a life-sized cosmetic prosthetic right hand (rubber hand) on the table (A). The rubber hand and real hand are touched by robots for periods of 12 s, either synchronously or with the rubber hand touched slightly earlier or later at a degree of asynchrony that is systematically manipulated (±150 ms, ±300 ms, or ± 500ms). The participant is then required to state whether the rubber hand felt like their own hand or not (‘yes’ or ‘no’ forced choice task) (B). Using the Meta2 headset, three noise conditions are tested: 0 (top picture), 30 (middle picture), and 50% (bottom picture) visual noise (C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig4-figsupp2-v2.jpg)
+
 During the experiment, the participants wore augmented reality glasses: a Meta2 VR headset with a 90° field of view, 2560×1440 high-dpi display, and 60 Hz refresh rate (Meta View Inc). Via this headset, the uncertainty of the visual scene could be manipulated: The probability of a pixel of the scene observed by the participant turning white from one frame to the other varied (frame rate: 30 images/s); when turning white, a pixel became opaque, losing its meaningful information (information on the rubber hand and robot arm touching the rubber hand) and therefore becoming irrelevant to the participant. The higher the probability of the pixels turning white becomes, the more uncertain the visual information becomes. During the experiment, the participants wore earphones playing white noise to cancel out any auditory information from the robots’ movements that might have otherwise interfered with the behavioral task and with illusion induction (Radziun and Ehrsson, 2018).
 
-## Procedure
+### Procedure
 
 The main experiment involved two tasks conducted in two different sessions: a body ownership judgment task and a synchrony judgment task. Both tasks were yes/no psychophysical detection tasks (Figure 4B).
 
-## Body ownership judgment task
+### Body ownership judgment task
 
 In each trial, the participant was asked to decide whether the rubber hand felt like their own hand, i.e., to determine whether they felt the key phenomenological aspect of the rubber hand illusion (Botvinick and Cohen, 1998; Ehrsson et al., 2004; Longo et al., 2008). Each trial followed the same sequence. The robots repeatedly tapped the index fingers of the rubber hand and the actual hand six times each for a total period of 12 s in five different locations in randomized order (‘stimulation period’): immediately proximal to the nail on the distal phalanx, on the distal interphalangeal joint, on the middle phalanx, on the proximal interphalangeal joint, and on the proximal phalanx. All five locations were stimulated at least once in each 12 s trial, and the order of stimulation sites randomly varied from trial to trial. The participant was instructed to focus their gaze on the rubber hand. Then, the robots stopped while the participant heard a tone instructing them to verbally report whether the rubber hand felt like their own hand by saying ‘yes’ (the rubber hand felt like it was my hand) or ‘no’ (the rubber hand did not feel like it was my hand). This answer was registered by the experimenter. A period of 12 s was chosen in line with a previous rubber hand illusion psychophysics study (Chancel and Ehrsson, 2020), and because earlier studies with individuals susceptible to the illusion have shown that the illusion is reliably elicited in approximately 10 s (Ehrsson et al., 2004; Guterstam et al., 2013; Lloyd, 2007), different locations on the finger were chosen to prevent the irritation of the skin during the long psychophysics session and in line with earlier studies stimulating different parts of the hand and fingers to elicit the rubber hand illusion (e.g. Guterstam et al., 2011). During this period of stimulation, the participant was instructed to look at and focus on the rubber hand.
 
@@ -129,80 +294,134 @@ After the stimulation period and the body ownership judgment answer, the partici
 
 Two variables were manipulated in this experiment: (1) the synchronicity between the taps that seen and those felt by the participants (asynchrony condition) and (2) the level of visual white noise added to the visual scene (noise condition). Seven different asynchrony conditions were tested. The taps on the rubber hand could be synchronized with the taps on the participant’s real hand (synchronous condition) or could be delayed or advanced by 150, 300, or 500 ms. In the rest of this article, negative values of asynchrony (−150,–300, and –500 ms) mean that the rubber hand was touched first, and positive values of asynchrony (+150,+300, and +500 ms) mean that the participant’s hand was touched first. The seven levels of asynchrony appeared with equal frequencies in pseudorandom order so that no condition was repeated more than twice in a row. The participants did not know how many different asynchrony levels were tested (as revealed in unformal post-experiment interviews) and that no feedback was given on their task performance. Three different noise conditions were tested, corresponding to 0, 30, and 50% of visual noise being displayed, i.e., the pixels of the Meta2 headset screen could turn white from one frame to another with a probability of 0, 30, or 50% (Figure 4C). The three levels of noise also appeared with equal frequencies in pseudorandom order. During the experiment, the experimenter was blind to the noise level presented to the participants, and the experimenter sat out of the participants’ sight.
 
-## Visuotactile synchrony judgment task
+### Visuotactile synchrony judgment task
 
 During this task, the participant was asked to decide whether the visual and tactile stimulation they received happened at the same time, i.e., whether the felt and seen touches were synchronous or not. The procedure was identical to the body ownership detection task apart from a critical difference in the instructions, which was now to determine if the visual and tactile stimulations were synchronous (instead of judging illusory rubber hand ownership). In each trial, a 12 s visuotactile stimulation period was followed by the yes/no verbal answer given by the participant and a 4 s break. The same two variables were manipulated in this experiment: the synchronicity between the seen and felt taps (asynchrony condition) and the level of visual white noise (noise condition). The asynchronies used in this synchrony judgment task were lesser than those of the ownership judgment task (±50, ±150, or ±300 ms instead of ±150, ±300, or ±500 ms) to maintain an equivalent difficulty level between the two tasks; this decision was made based on a pilot study involving 10 participants (three males, aged 27.0±4 years, different than the main experiment sample) who performed the ownership and synchrony tasks under 11 different levels of asynchrony (Appendix 1—table 3 and Figure 2). The noise conditions were identical to those used for the ownership judgment task.
 
 The ordering of the tasks was counterbalanced across the participants. Each condition was repeated 12 times, leading to a total of 252 judgments made per participant and task. The trials were randomly divided into three experimental blocks per task, each lasting 13 min.
 
-## Modeling
+### Modeling
 
 As explained in the introduction, we assumed that the rubber hand illusion is driven by the integration of visual and tactile signals in the current paradigm. To describe this integration, we designed a model in which the observer performs BCI; we compare this model to a non-Bayesian model. We then extended the same models of the synchrony judgment task and examined whether the same model with the same parameters could describe a participant’s behavior in both tasks.
 
-## BCI model for body ownership
+### BCI model for body ownership
 
 We first specify the BCI model for body ownership. A more detailed and step-by-step description of the modeling can be found in Appendix 1.
 
-## Generative model
+### Generative model
 
-Bayesian inference is based on a generative model, which is a statistical model of the world that the observer believes to give rise to observations. By ‘inverting’ this model for a given set of observations, the observer can make an ‘educated guess’ about a hidden state. Therefore, we first must specify the generative model that captures both the statistical structure of the task as assumed by the observer and an assumption about measurement noise. In our case, the model contains three variables: the causal structure category C, the tested asynchrony s, and the measurement of this asynchrony by the participant x. Even though the true frequency of synchronous stimulation (C=1) is 1/7=0.14, we allow it to be a free parameter, which we denote as psame. One can view this parameter as an incorrect belief, but it can equivalently be interpreted as a perceptual or decisional bias. Next, when C=1, the asynchrony s is always 0; we assume that the observer knows this. When C=2, the true asynchrony takes one of several discrete values; we do not assume that the observer knows these values or their probabilities and instead assume that the observer assumes that asynchrony is normally distributed with the correct SD σS of 348 ms (i.e. the true SD of the stimuli used in this experiment). In other words, p(s|C=2)= N(s;0, σs2). Next, we assume that the observer makes a noisy measurement x of the asynchrony. We make the standard assumption (inspired by the central limit theorem) that this noise follows the below a normal distribution:p(x|s)= N(x;s, σ2)
+Bayesian inference is based on a generative model, which is a statistical model of the world that the observer believes to give rise to observations. By ‘inverting’ this model for a given set of observations, the observer can make an ‘educated guess’ about a hidden state. Therefore, we first must specify the generative model that captures both the statistical structure of the task as assumed by the observer and an assumption about measurement noise. In our case, the model contains three variables: the causal structure category $C$, the tested asynchrony $s$, and the measurement of this asynchrony by the participant $x$. Even though the true frequency of synchronous stimulation (C=1) is 1/7=0.14, we allow it to be a free parameter, which we denote as psame. One can view this parameter as an incorrect belief, but it can equivalently be interpreted as a perceptual or decisional bias. Next, when C=1, the asynchrony s is always 0; we assume that the observer knows this. When C=2, the true asynchrony takes one of several discrete values; we do not assume that the observer knows these values or their probabilities and instead assume that the observer assumes that asynchrony is normally distributed with the correct SD $\sigma_{S}$ of 348 ms (i.e. the true SD of the stimuli used in this experiment). In other words, $p(s|C=2)= N(s;0, \sigma_{s}^{2})$. Next, we assume that the observer makes a noisy measurement x of the asynchrony. We make the standard assumption (inspired by the central limit theorem) that this noise follows the below a normal distribution:
+
+$$
+p(x|s)= N(x;s, \sigma^{2})
+$$
 
 where the variance depends on the sensory noise for a given trial. Finally, we assume that the observer has accurate knowledge of this part of the generative model.
 
-## Inference
+### Inference
 
-Now that we have specified the generative model, we can turn to inference. Visual and tactile inputs are to be integrated, leading to the emergence of the rubber hand illusion if the observer infers a common cause (C=1) for both sensory inputs. On a given trial, the model observer uses x to infer the category C. Specifically, the model observer computes the posterior probabilities of both categories, pC=1|x and pC=2|x, i.e., the belief that the category was C. Then, the observer would report ‘yes, it felt like the rubber hand was my own hand’ if the former probability were higher, or in other words, when d>0, whered=logpC=1|xpC=2|x .
+Now that we have specified the generative model, we can turn to inference. Visual and tactile inputs are to be integrated, leading to the emergence of the rubber hand illusion if the observer infers a common cause ($C=1$) for both sensory inputs. On a given trial, the model observer uses $x$ to infer the category $C$. Specifically, the model observer computes the posterior probabilities of both categories, $pC=1|x$ and $pC=2|x$, i.e., the belief that the category was $C$. Then, the observer would report ‘yes, it felt like the rubber hand was my own hand’ if the former probability were higher, or in other words, when $d>0$, where
 
-This equation can be written as a sum of the log prior ratio and the log-likelihood ratio:d=logpsame1-psame+logpxtrialC=1pxtrialC=2 #
+$$
+d=log\frac{pC=1|x}{pC=2|x} .
+$$
 
-The decision rule d>0 is thus equivalent to (see the Appendix 1)|x|<k
+This equation can be written as a sum of the log prior ratio and the log-likelihood ratio:
 
-wherek= K
+$$
+d=log\frac{p_{same}}{1-p_{same}}+log\frac{px_{trial}C=1}{px_{trial}C=2} #
+$$
 
-andK=σ2 (σs2+ σ2)σs2 2log psame1-psame  +log σs2+ σ2σ2
+The decision rule d>0 is thus equivalent to (see the Appendix 1)
 
-where σ is the sensory noise level of the trial under consideration. As a consequence, the decision criterion changes as a function of the sensory noise affecting the observer’s measurement (Figure 5). This is a crucial property of BCI and indeed a property shared by Bayesian models used in previous work on multisensory synchrony judgments (Magnotti et al., 2013), audiavisual spatial localization (Körding et al., 2007), visual searching (Stengård and van den Berg, 2019), change detection (Keshvari et al., 2012), collinearity judgment (Zhou et al., 2020), and categorization (Qamar et al., 2013). The output of the BCI model is the probability of the observer reporting the visual and tactile inputs as emerging from the same source when presented with a specific asynchrony value s:p(C^=1|s)= 0.5λ+(1−λ)(Φ(s; k, σ2)− Φ(s;−k, σ2))
+$$
+|x|<k
+$$
 
-Here, the additional parameter λ reflects the probability of the observer lapsing, i.e., randomly guessing. This equation is a prediction of the observer’s response probabilities and can thus be fit to a participant’s behavioral responses.
+where
+
+$$
+k= \sqrt{K}
+$$
+
+and
+
+$$
+K=\frac{\sigma^{2} (\sigma_{s}^{2}+ \sigma^{2})}{\sigma_{s}^{2}} 2log \frac{p_{same}}{1-p_{same}}  +log \frac{\sigma_{s}^{2}+ \sigma^{2}}{\sigma^{2}} 
+$$
+
+where $\sigma$ is the sensory noise level of the trial under consideration. As a consequence, the decision criterion changes as a function of the sensory noise affecting the observer’s measurement (Figure 5). This is a crucial property of BCI and indeed a property shared by Bayesian models used in previous work on multisensory synchrony judgments (Magnotti et al., 2013), audiavisual spatial localization (Körding et al., 2007), visual searching (Stengård and van den Berg, 2019), change detection (Keshvari et al., 2012), collinearity judgment (Zhou et al., 2020), and categorization (Qamar et al., 2013). The output of the BCI model is the probability of the observer reporting the visual and tactile inputs as emerging from the same source when presented with a specific asynchrony value $s$:
+
+$$
+p(C^=1|s)= 0.5\lambda+(1−\lambda)(Φ(s; k, \sigma^{2})− Φ(s;−k, \sigma^{2}))
+$$
+
+Here, the additional parameter $\lambda$ reflects the probability of the observer lapsing, i.e., randomly guessing. This equation is a prediction of the observer’s response probabilities and can thus be fit to a participant’s behavioral responses.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/77221/elife-77221-fig5-v2.jpg)
 
-**Figure 5.:** (A) The measured asynchrony between the visual and tactile events for the low (orange) or high (red) noise level conditions and the probability of the different causal scenarios: the visual and tactile events come from one source, the observer’s body, or from two different sources. The probability of a common source is a narrow distribution (full curves), and the probability of two distinct sources is a broader distribution (dashed curve), both centered on synchronous stimulation (0 ms) such that when the stimuli are almost synchronous, it is likely that they come from the same source. When the variance of the measured stimulation increases from trial to trial, decision criteria may adjust optimally (Bayesian – light blue) or stay fixed (fixed – dark blue). The first assumption corresponds to the Bayesian causal inference (BCI) model, and the second corresponds to the fixed criterion (FC) model (see next paragraph for details). The displayed distributions are theoretical, and the BCI model’s psame is arbitrarily set at 0.5. (B) The decision criterion changes from trial to trial as a function of sensory uncertainty according to the optimal decision rule from the BCI model. Black curves represent this relationship for different psame values of 0.4–0.9 (from lightest to darkest). (C) From left to right, these last plots illustrate how the BCI model-predicted outcome is shaped by  , psame, and σ, respectively. Left: λ = 0.8 (black), 0.6 (green), and 0.9 (blue). Middle: psame = 150 ms (black), 100 ms (green), and 200 ms (blue). Right: σ = 0.05 (black), 0.005 (green), and 0.2 (blue). (λD) Finally, this last plot shows simulated outcomes predicted by the BCI model (in full lines and bars) and the FC model (in dashed lines and shredded bars). In this theoretical simulation, both models predict the same outcome distribution for one given level of sensory noise (0%); however, since the decision criterion of the BCI model is adjusted to the level of sensory uncertainty, an overall increase of the probability of emergence of the RHI is predicted by this Bayesian model. On the contrary, the FC model, which is a non-Bayesian model, predicts a neglectable effect of sensory uncertainty on the overall probability of emergence of the RHI.
+**Figure 5.:** (A) The measured asynchrony between the visual and tactile events for the low (orange) or high (red) noise level conditions and the probability of the different causal scenarios: the visual and tactile events come from one source, the observer’s body, or from two different sources. The probability of a common source is a narrow distribution (full curves), and the probability of two distinct sources is a broader distribution (dashed curve), both centered on synchronous stimulation (0 ms) such that when the stimuli are almost synchronous, it is likely that they come from the same source. When the variance of the measured stimulation increases from trial to trial, decision criteria may adjust optimally (Bayesian – light blue) or stay fixed (fixed – dark blue). The first assumption corresponds to the Bayesian causal inference (BCI) model, and the second corresponds to the fixed criterion (FC) model (see next paragraph for details). The displayed distributions are theoretical, and the BCI model’s psame is arbitrarily set at 0.5. (B) The decision criterion changes from trial to trial as a function of sensory uncertainty according to the optimal decision rule from the BCI model. Black curves represent this relationship for different psame values of 0.4–0.9 (from lightest to darkest). (C) From left to right, these last plots illustrate how the BCI model-predicted outcome is shaped by $p_{same}$ , $\sigma$, and $\lambda$, respectively. Left: $p_{same}$ = 0.8 (black), 0.6 (green), and 0.9 (blue). Middle: $\sigma$ = 150 ms (black), 100 ms (green), and 200 ms (blue). Right: $\lambda$ = 0.05 (black), 0.005 (green), and 0.2 (blue). (D) Finally, this last plot shows simulated outcomes predicted by the BCI model (in full lines and bars) and the FC model (in dashed lines and shredded bars). In this theoretical simulation, both models predict the same outcome distribution for one given level of sensory noise (0%); however, since the decision criterion of the BCI model is adjusted to the level of sensory uncertainty, an overall increase of the probability of emergence of the RHI is predicted by this Bayesian model. On the contrary, the FC model, which is a non-Bayesian model, predicts a neglectable effect of sensory uncertainty on the overall probability of emergence of the RHI.
 
-The BCI model has five free parameters: psame: the prior probability of a common cause for vision and touch, independent of any sensory stimulation, σ0, σ30, σ50 : the noise impacting the measurement x specific to each noise condition, and λ: a lapse rate to account for random guesses and unintended responses. We assumed a value of 348 ms for σS , i.e., σS is equal to the actual SD of the asynchronies used in the experiment, but we challenged this assumption later. Moreover, in our experiment, the spatial parameters and the proprioceptive state of our participants are not manipulated or altered from one condition to the other. Thus, our model focuses on the temporal aspects of the visuotactile integration in the context of body ownership. In this, it differs from the model proposed by Samad et al., 2015 in which both spatial and temporal aspects were modeled separately and then averaged to obtain an estimate of body ownership (that they then compared with questionnaire ratings of rubber hand illusion).
+The BCI model has five free parameters: $p_{same}$: the prior probability of a common cause for vision and touch, independent of any sensory stimulation, $\sigma_{0}, \sigma_{30}, \sigma_{50}$ : the noise impacting the measurement $x$ specific to each noise condition, and $\lambda$: a lapse rate to account for random guesses and unintended responses. We assumed a value of 348 ms for $\sigma_{S}$ , i.e., $\sigma_{S}$ is equal to the actual SD of the asynchronies used in the experiment, but we challenged this assumption later. Moreover, in our experiment, the spatial parameters and the proprioceptive state of our participants are not manipulated or altered from one condition to the other. Thus, our model focuses on the temporal aspects of the visuotactile integration in the context of body ownership. In this, it differs from the model proposed by Samad et al., 2015 in which both spatial and temporal aspects were modeled separately and then averaged to obtain an estimate of body ownership (that they then compared with questionnaire ratings of rubber hand illusion).
 
-## Alternative models
+### Alternative models
 
-## BCI model for body ownership with a free level of uncertainty impacting the stimulation (BCI*)
+#### BCI model for body ownership with a free level of uncertainty impacting the stimulation (BCI*)
 
-For the BCI model, we assumed that the observer’s assumed stimulus distribution has the same SD σS as the true stimulus distribution. We also tested a variant in which the assumed SD σS is a free parameter. As a result, this model is less parsimonious than the BCI model. The model has six free parameters (psame, σ0, σ30, σ50, σS, and λ). Nevertheless, the decision rule remains the same as that of the BCI model.
+For the BCI model, we assumed that the observer’s assumed stimulus distribution has the same SD $\sigma_{S}$ as the true stimulus distribution. We also tested a variant in which the assumed SD $\sigma_{S}$ is a free parameter. As a result, this model is less parsimonious than the BCI model. The model has six free parameters $(p_{same}, \sigma_{0}, \sigma_{30}, \sigma_{50}, \sigma_{S}, and \lambda)$. Nevertheless, the decision rule remains the same as that of the BCI model.
 
-## FC (non-Bayesian) model
+#### FC (non-Bayesian) model
 
-An important alternative to the Bayesian model is a model that ignores variations in sensory uncertainty when judging if the rubber hand is one’s own, for example, because the observer incorrectly assumes that sensory noise does not change. We refer to this as the FC model. The decision rule for the FC model then becomes the following:|x|<k0,
+An important alternative to the Bayesian model is a model that ignores variations in sensory uncertainty when judging if the rubber hand is one’s own, for example, because the observer incorrectly assumes that sensory noise does not change. We refer to this as the FC model. The decision rule for the FC model then becomes the following:
 
-where k0 corresponds to an FC for each participant, which does not vary with trial-to-trial sensory uncertainty. If the decisional stage is independent of the trial-to-trial sensory uncertainty, the encoding stage is still influenced by the level of sensory noise. Thus, the output of the FC model is the probability of the observer reporting the illusion when presented with a specific asynchrony value s:p(illusion|s)= 0.5λ+(1−λ)(Φ(s; k0, σ2)− Φ(s;−k0, σ2))
+$$
+|x|<k_{0},
+$$
 
-Again, the additional parameter λ reflects the probability of the observer lapsing, i.e., randomly guessing. This equation is a prediction of the observer’s response probabilities and can thus be fitted to a participant’s behavioral responses.
+where $k_{0}$ corresponds to an FC for each participant, which does not vary with trial-to-trial sensory uncertainty. If the decisional stage is independent of the trial-to-trial sensory uncertainty, the encoding stage is still influenced by the level of sensory noise. Thus, the output of the FC model is the probability of the observer reporting the illusion when presented with a specific asynchrony value $s$:
 
-## Parameter estimation
+$$
+p(illusion|s)= 0.5\lambda+(1−\lambda)(Φ(s; k_{0}, \sigma^{2})− Φ(s;−k_{0}, \sigma^{2}))
+$$
+
+Again, the additional parameter $\lambda$ reflects the probability of the observer lapsing, i.e., randomly guessing. This equation is a prediction of the observer’s response probabilities and can thus be fitted to a participant’s behavioral responses.
+
+### Parameter estimation
 
 All model fitting was performed using maximum-likelihood estimation implemented in MATLAB (MathWorks). We used both the built-in MATLAB function fmincon and the Bayesian adaptive directed search (BADS) algorithm (Acerbi and Ma, 2017), each using 100 different initial parameter combinations per participant. Fmincon is gradient based, while BADS is not. The best estimate from either of these two procedures was kept, i.e., the set of estimated parameters that corresponded to the maximal log-likelihood for the models. Fmincon and BADS produced the same log-likelihood for the BCI, BCI*, and FC models for 12, 13, and 14 of the 15 participants, respectively. For the remaining participants, the BADS algorithm performed better. Moreover, the fitting procedure run 100 times (with different initial parameter combinations) led to the same set of estimated parameters at least 31 times for all participants and models. To validate our procedure, we performed parameter recovery. For this procedure, data simulated from random parameters were fitted using the models we designed. Because the generating random parameters were recovered, i.e., are similar to the estimated parameters, we are confident that the parameter estimation applied for the fitting procedure used in the current study is reliable (Appendix 1—figure 1 & Appendix 1—table 2).
 
-## Model comparison
+### Model comparison
 
-The Akaike information criterion (AIC; Akaike, 1973) and Bayesian information criterion (BIC; Schwarz, 1978) were used as measures of goodness of model fit. The lower the AIC or BIC, the better the fit. The BIC penalizes the number of free parameters more heavily than the AIC. We calculated AIC and BIC values for each model and participant according to the following equations:AIC=2npar−2logL∗BIC=nparlog⁡ntrials−2log⁡L∗
+The Akaike information criterion (AIC; Akaike, 1973) and Bayesian information criterion (BIC; Schwarz, 1978) were used as measures of goodness of model fit. The lower the AIC or BIC, the better the fit. The BIC penalizes the number of free parameters more heavily than the AIC. We calculated AIC and BIC values for each model and participant according to the following equations:
 
-where L* is the maximized value of the likelihood, npar the number of free parameters, and ntrial the number of trials. We then calculated the AIC and BIC difference between models and summed across the participants. We estimated a CI using bootstrapping: 15 random AIC/BIC differences were drawn with replacement from the actual participants’ AIC/BIC differences and summed; this procedure was repeated 10,000 times to compute the 95% CI.
+$$
+AIC=2n_{par}−2logL^{∗}
+$$
 
-As an additional assessment of the models, we compute the coefficient of determination R2 (Nagelkerke, 1991) defined asR2=1−exp(−2n(logL(M)−logL(M0)))
 
-where logL(M) and logL(M0) denote the log-likelihoods of the fitted and the null model, respectively, and n is the number of data points. For the null model, we assumed that an observer randomly chooses one of the two response options, i.e., we assumed a discrete uniform distribution with a probability of 0.5. As in our case the models’ responses were discretized to relate them to the two discrete response options, the coefficient of determination was divided by the maximum coefficient (Nagelkerke, 1991) defined as.max(R2)=1−exp⁡(2nlogL(M0))
+
+$$
+BIC=n_{par}log⁡n_{trials}−2log⁡L^{∗}
+$$
+
+where $L^{*}$ is the maximized value of the likelihood, $n_{par}$ the number of free parameters, and $n_{trial}$ the number of trials. We then calculated the AIC and BIC difference between models and summed across the participants. We estimated a CI using bootstrapping: 15 random AIC/BIC differences were drawn with replacement from the actual participants’ AIC/BIC differences and summed; this procedure was repeated 10,000 times to compute the 95% CI.
+
+As an additional assessment of the models, we compute the coefficient of determination $R^{2}$ (Nagelkerke, 1991) defined as
+
+$$
+R^{2}=1−exp(−\frac{2}{n}(logL(M)−logL(M_{0})))
+$$
+
+where $logL(M)$ and $logL(M_{0})$ denote the log-likelihoods of the fitted and the null model, respectively, and n is the number of data points. For the null model, we assumed that an observer randomly chooses one of the two response options, i.e., we assumed a discrete uniform distribution with a probability of 0.5. As in our case the models’ responses were discretized to relate them to the two discrete response options, the coefficient of determination was divided by the maximum coefficient (Nagelkerke, 1991) defined as
+
+$$
+max(R^{2})=1−exp⁡(\frac{2}{n}logL(M_{0}))
+$$
 
 We also performed Bayesian model selection (Rigoux et al., 2014) at the group level to obtain the exceedance probability for the candidate models (i.e. the probability that a given model is more likely than any other model given the data) using the VBA (Variational Bayesian Analysis) toolbox (Rigoux et al., 2014). With this analysis, we consider a certain degree of heterogeneity in the population instead of assuming that all participants follow the same model and assess the a posteriori probability of each model.
 
-## Ownership and synchrony tasks
+### Ownership and synchrony tasks
 
-The experimental contexts of the ownership and synchrony judgment tasks only differed in the instructions given to the participants regarding which perceptual feature they were to detect (rubber hand ownership or visuotactile synchrony). Thus, the bottom-up processing of the sensory information is assumed to be the same. In particular, the uncertainty impacting each sensory signal is likely to be the same between the two tasks, since the sensory stimulation delivered to the observer is identical. The difference in the participants’ synchrony and ownership perceptions should be reflected in the a priori probability of the causal structure. For our BCI model, this means that the σ0,  σ30,  and σ50 parameters are assumed to be the same for the two tasks. The same applies for the lapse rate λ that depends on the observer and not on the task. In contrast, the prior probability for a common cause psame could change when a different judgment (ownership or synchrony) is assessed.
+The experimental contexts of the ownership and synchrony judgment tasks only differed in the instructions given to the participants regarding which perceptual feature they were to detect (rubber hand ownership or visuotactile synchrony). Thus, the bottom-up processing of the sensory information is assumed to be the same. In particular, the uncertainty impacting each sensory signal is likely to be the same between the two tasks, since the sensory stimulation delivered to the observer is identical. The difference in the participants’ synchrony and ownership perceptions should be reflected in the a priori probability of the causal structure. For our BCI model, this means that the $\sigma_{0},  \sigma_{30},  and \sigma_{50}$ parameters are assumed to be the same for the two tasks. The same applies for the lapse rate $\lambda$ that depends on the observer and not on the task. In contrast, the prior probability for a common cause $p_{same}$ could change when a different judgment (ownership or synchrony) is assessed.
 
-We used two complementary approaches to test whether people show different prior probabilities of a common cause for body ownership and synchrony perceptions: an extension analysis and a transfer analysis. In the extension analysis, we applied our BCI model to both sets of data and compared the fit of the model with all parameters (psame, σ0, σ30, σ50, σS, and λ) shared between tasks to a version of the model with one probability of a common cause psame,  ownership for the body ownership task only and one probability of a common cause psame,  synchrony for the synchrony task only. In the transfer analysis, we used the estimated parameters for one task (ownership or synchrony) to predict the data from the other task (synchrony or ownership). We compared a full transfer, in which all previously estimated parameters were used, to a partial transfer, in which psame was left as a free parameter. We again used the AIC and BIC to compare the different models.
+We used two complementary approaches to test whether people show different prior probabilities of a common cause for body ownership and synchrony perceptions: an extension analysis and a transfer analysis. In the extension analysis, we applied our BCI model to both sets of data and compared the fit of the model with all parameters $(p_{same}, \sigma_{0}, \sigma_{30}, \sigma_{50}, \sigma_{S}, and \lambda)$ shared between tasks to a version of the model with one probability of a common cause $p_{same,  ownership}$ for the body ownership task only and one probability of a common cause $p_{same,  synchrony}$ for the synchrony task only. In the transfer analysis, we used the estimated parameters for one task (ownership or synchrony) to predict the data from the other task (synchrony or ownership). We compared a full transfer, in which all previously estimated parameters were used, to a partial transfer, in which $p_{same}$ was left as a free parameter. We again used the AIC and BIC to compare the different models.

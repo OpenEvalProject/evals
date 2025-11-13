@@ -31,13 +31,25 @@ The regulation of THPO production has been extensively investigated, but the in 
 
 ## Results
 
-## Myeloablation induced by 5-FU drives THPO-dependent hematopoietic recovery and HSC expansion
+### Myeloablation induced by 5-FU drives THPO-dependent hematopoietic recovery and HSC expansion
 
 5-FU is a commonly used chemotherapy agent that leads to myeloablation. To test whether THPO is required for hematopoietic recovery after 5-FU treatment, we administrated 5-FU to Thpo knockout (Thpogfp/gfp) (Decker et al., 2018) and wild-type control mice at 150 mg/kg via a single intraperitoneal injection. Because Thpogfp/gfp mice have hematopoietic phenotypes compared with wild-type controls without any treatment (Decker et al., 2018), we also normalized hematopoietic parameters with baseline mice of the same genotype without any treatment. Ten days after the 5-FU administration, treated wild-type mice showed normal leukocyte and neutrophil counts, normal reticulocyte frequency, but significantly increased platelet counts, while treated Thpogfp/gfp mice had no platelet expansion (Figure 1—figure supplement 1A-H). When normalized to baseline levels, Thpogfp/gfp mice had a significant reduction of leukocyte, neutrophil, and platelet counts as well as reticulocyte frequency compared with wild-type controls (Figure 1—figure supplement 1A-H), suggesting that Thpo is required for hematopoietic recovery. Normalized post-treatment bone marrow and spleen cellularity did not differ significantly in Thpogfp/gfp mice compared with wild-type controls (Figure 1—figure supplement 1I-L). The frequencies of bone marrow and spleen HSCs (Lineage- Sca-1+ c-kit+ CD150+CD48-, LSKCD150+CD48-) were increased by more than 12 fold in 5-FU-treated wild-type mice compared with baseline controls, while 5-FU-treated Thpogfp/gfp mice showed no change from the baseline (Figure 1—figure supplement 1M-P). Overall, 5-FU stimulated a 3.4-fold increase of total HSC number in wild-type mice, but no significant effects were observed in Thpogfp/gfp mice (Figure 1—figure supplement 1Q). Compared with wild-type controls, the HSC increase in response to 5-FU in Thpogfp/gfp mice was reduced by 6 fold (Figure 1—figure supplement 1R). The effects of 5-FU on bone marrow and spleen hematopoietic progenitor cells (LSK) were also blunted in Thpogfp/gfp mice (Figure 1—figure supplement 1S-V). These data confirm that hematopoietic recovery, expansion of HSCs, and hematopoietic progenitors following chemoablation mediated by 5-FU are THPO-dependent.
 
-## Hepatic but not bone marrow THPO is required for HSC and hematopoietic recovery after 5-FU-mediated myeloablation
+### Hepatic but not bone marrow THPO is required for HSC and hematopoietic recovery after 5-FU-mediated myeloablation
 
 To identify the source of THPO, we investigated Thpo expression following 5-FU treatment. It has been reported that the bone marrow upregulates Thpo mRNA in stress conditions (Sungaran et al., 1997). Although bone marrow stromal cells (CD45- Ter119-) express Thpo transcripts, we did not observe a significant upregulation of Thpo transcripts 14 days after 5-FU injection compared with baseline levels (Figure 1—figure supplement 2A). THPO protein production is under strong translational controls (Ghilardi et al., 1998). To assess the translation of THPO protein following 5-FU treatment, ThpocreER; Rosa26LSL-ZsGreen translational reporter mice (Decker et al., 2018) were injected with 5-FU and immediately started on a 10-day course of tamoxifen treatment. Although robust expression of ZsGreen was observed in the liver (Figure 1A), no ZsGreen fluorescence was appreciated in the bone marrow (Figure 1B). Within the liver, ZsGreen were from HNF4a+ hepatocytes (Figure 1C and D). These data suggest that hepatocytes but not the bone marrow are the major source of THPO after 5-FU treatment.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal images of liver sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after 5-FU injection. (B) Confocal images of femur sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after 5-FU injection. (C and D) Confocal images showing immunostaining of HNF4α on liver sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after 5-FU injection. (D) Enlarged image of the region denoted in C. Arrows point to individual HNF4α+ hepatocytes. (E–H) Blood counts of mice with Thpo conditionally deleted from osteoblasts (Col1a1-cre), bone marrow stromal cells (Lepr-cre), or both (Prrx1-cre), and controls after 5-FU challenge. n = 3–10 mice. (I–L) Cellularity and frequencies of HSCs in the bone marrow and spleens from mice with Thpo conditionally deleted from osteoblasts, bone marrow stromal cells, or both, and controls after 5-FU challenge. n = 3–11 mice. (M) Total numbers of HSCs in the bone marrow and spleens from mice with Thpo conditionally deleted from osteoblasts, bone marrow stromal cells, or both, and controls after 5-FU challenge. n = 3–10 mice. Con: Thpogfp/+ control mice. Col1a1-cre: Col1a1-cre; Thpofl/gfp mice. Lepr-cre: Leprcre; Thpofl/gfp mice. Prrx1-cre: Prrx1-cre; Thpofl/gfp mice. Data represent mean ± SEM. Statistical significance was calculated with one-way ANOVA with Dunnett’s test. Each dot represents one independent mouse in E–M.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–H) Blood cell counts of wild-type and Thpogfp/gfp mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 4–11 mice.(I–L) Bone marrow and spleen cellularity of wild-type and Thpogfp/gfp mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 6–11 mice. (M–P) Frequencies of HSCs (LSKCD150+CD48-) in the bone marrow and spleens of wild-type and Thpogfp/gfp mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 6–11 mice. (Q and R) Total numbers of HSCs in the bone marrow and spleens of wild-type and Thpogfp/gfp mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 6–11 mice. (S–V) Frequency of hematopoietic progenitors (LSK) in the bone marrow and spleens of wild-type and Thpogfp/gfp mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 6–11 mice. Data represent mean ± SEM. *p < 0.05, **p < 0.01, ****p < 0.0001. Statistical significance was assessed with two-way ANOVA with Turkey’s test or Student’s t-test. Dots represent independent mice.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Relative expression of Thpo transcripts in bone marrow stromal cells 14 days after 5-FU treatment or irradiation. n = 3 mice for each condition. (B and C) Frequencies of LSKs in the bone marrow and spleens from mice with Thpo conditionally deleted from osteoblasts, bone marrow stromal cells, or both, as well as controls after 5-FU challenge. n = 3–10 mice for each genotype. (D–G) Blood cell counts of Prrx1-cre; Thpofl/gfp (Δ/gfp) mice and Prrx1-cre; Thpo+/gfp (+/gfp) littermate controls. n = 3 mice for each genotype. (H–M) Cellularity and frequencies of LSKs and HSCs from the bone marrow and spleens of Prrx1-cre; Thpofl/gfp (Δ/gfp) mice and Prrx1-cre; Thpo+/gfp (+/gfp) littermate controls. n = 3 mice for each genotype. (N) Total HSC numbers from the bone marrow and spleens of Prrx1-cre; Thpofl/gfp (Δ/gfp) mice and Prrx1-cre; Thpo+/gfp (+/gfp) littermate controls. n = 3 mice for each genotype. Con: Thpogfp/+ control mice. Col1a1-cre: Col1a1-cre; Thpofl/gfp mice. Lepr-cre: Leprcre; Thpofl/gfp mice. Prrx1-cre: Prrx1-cre; Thpofl/gfp mice. Data represent mean ± SEM. Dots represent independent mice analyzed.
 
 Although we did not detect appreciable Thpo translation in the bone marrow after 5-FU treatment (Figure 1B), osteoblasts and LepR+ mesenchymal stromal cells are the major bone marrow cells expressing Thpo transcripts (Decker et al., 2018; Guerriero et al., 1997; Sungaran et al., 1997), and based on antibody staining, it has been reported that osteoblasts express THPO protein after 5-FU treatment (Yoshihara et al., 2007). To formally test the function of THPO from these cells, we conditionally deleted Thpo from osteoblasts (Col1a1-cre; Thpofl/gfp) or bone marrow mesenchymal stromal cells (Leprcre; Thpofl/gfp). Deletion of Thpo from osteoblasts or LepR+ stromal cells had no significant effects on leukocytes, neutrophils, platelets, reticulocytes, bone marrow and spleen cellularity, HSCs, or LSKs after 5-FU treatment (Figure 1E–M, Figure 1—figure supplement 2B and C). These results show that hematopoietic recovery and HSC regeneration from 5-FU treatment do not require THPO production by bone marrow osteoblasts or mesenchymal stromal cells.
 
@@ -45,17 +57,45 @@ It is possible that osteoblasts and mesenchymal stromal cells serve as redundant
 
 Hepatic THPO is required for steady-state bone marrow HSC maintenance as conditional deletion of Thpo from hepatocytes leads to HSC depletion (Decker et al., 2018). We found that hepatocytes are also the major source of THPO after 5-FU treatment (Figure 1A–D). To address whether hepatic THPO is required for hematopoietic recovery and HSC regeneration after 5-FU-mediated stress, we treated adult Thpofl/fl mice with replication incompetent hepatotropic AAV8-TBG-cre viral vector (AAV) concurrently with 5-FU injection. A single dose of this cre-bearing viral vector drives efficient and specific recombination in hepatocytes (Figure 2—figure supplement 1A and Decker et al., 2018). Ten days after the treatment, AAV-treated mice showed a trend to reduction of platelet and reticulocyte expansion, with normal leukocyte and neutrophil responses to 5-FU relative to controls (Figure 2—figure supplement 1B-I). Although the response of spleen HSC frequency to 5-FU was not significantly impacted by AAV treatment (Figure 2G and H), the responses of bone marrow HSC frequency and the total number of HSCs were significantly decreased in AAV-treated mice compared to controls (Figure 2A–J), indicating a compromised HSC recovery after 5-FU treatment. Of note, we observed a significant increase of the responses of spleen cellularity to 5-FU by AAV treatment (Figure 2E and F), indicating possible enhanced extramedullary hematopoiesis. Consistent with reduced HSC regeneration, bone marrow cells from these AAV-treated mice after 5-FU administration showed a significant reduction in reconstituting irradiated recipient mice compared with controls (Figure 2K). The responses of bone marrow and spleen LSK frequencies to 5-FU were largely normal in AAV-treated mice compared with controls (Figure 2—figure supplement 1J-M), suggesting that the effects of acutely disrupted THPO signaling are most pronounced on HSCs, rather than restricted hematopoietic progenitors. Altogether, these data suggest that hepatic but not bone marrow-derived THPO is required for hematopoietic and HSC recovery after 5-FU treatment.
 
-## Hematopoiesis from THPO-deficient mice are sensitive to ionizing radiation
+![Figure 2.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig2-v2.jpg)
+
+**Figure 2.:** (A–H) Cellularity and frequencies of HSCs (A, C, E, G) in the bone marrow and spleens from mice with Thpo conditionally deleted from hepatocytes (AAV) and controls, with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) (B, D, F, H) are also shown. n = 4–11 mice. (I and J) Total numbers of HSCs (I) in the bone marrow and spleens from mice with Thpo conditionally deleted from hepatocytes and controls, with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) (J) are also shown. n = 4–11 mice. (K) Numbers of total recipients and long-term multilineage reconstituted recipients after transplantation of 50,000 bone marrow cells from PBS- or AAV-treated Thpofl/fl and 5-FU challenged mice along with 500,000 unchallenged competitor bone marrow cells. Recipients were scored as reconstituted if they showed donor-derived myeloid, B and T cells in the peripheral blood 16 weeks after transplantation. Data were from recipients of three independent donor pairs from two independent experiments. PBS: PBS-treated Thpofl/fl or wild-type control mice. AAV: AAV8-TBG-cre-treated Thpofl/fl mice. Data represent mean ± SEM. *p < 0.05, **p < 0.01, ****p < 0.0001. Statistical significance was assessed with two-way ANOVA with Turkey’s test (A, C, E, G, I), Student’s t-test (B, D, F, H, J), or Fisher’s exact test (K). Each dot represents one independent mouse in A–J.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Relative expression of Thpo transcripts in the liver from Thpofl/fl mice treated with PBS or AAV8-TBG-cre. n = 3 mice for each condition. (B–I) Blood cell counts in mice with Thpo conditionally deleted from hepatocytes and controls with and without 5-FU challenge. Normalized fold changes (relative to no treatment baseline) are also shown. n = 4–11 mice. (J–M) Frequencies of bone marrow and spleen hematopoietic progenitors (LSK) in AAV8-TBG-cre-treated and control mice with and without 5-FU challenge. Normalized fold changes (relative to no 5-FU challenge baseline) are also shown. n = 4–11 mice. PBS: PBS-treated Thpofl/fl or wild-type control mice. AAV: AAV8-TBG-cre-treated Thpofl/fl mice. Data represent mean ± SEM. **p < 0.01, ***p < 0.001. Statistical significance was assessed with two-way ANOVA with Turkey’s test or Student’s t-test.
+
+### Hematopoiesis from THPO-deficient mice are sensitive to ionizing radiation
 
 Ionizing radiation is another common myeloablative treatment. To test whether THPO is required for hematopoietic recovery in this condition, we exposed mice to a single 5.5 Gy dose of radiation. Four weeks after the irradiation, Thpogfp/gfp mice had significant reduction of leukocyte and neutrophil recovery with normal platelet and reticulocyte responses compared with wild-type controls (Figure 3—figure supplement 1A-H). Thpogfp/gfp mice also had significantly decreased responses to irradiation in bone marrow cellularity, LSK and HSC frequencies relative to wild-type controls (Figure 3—figure supplement 1I-N). The functional impact of these differences was demonstrated by a significant increase in mortality among Thpogfp/gfp mice following irradiation (Figure 3—figure supplement 1O). Compared with baseline levels, neither wild-type nor Thpogfp/gfp mice had notable differences in spleen cellularity, or spleen LSK frequency in response to irradiation (Figure 3—figure supplement 1P and R). However, Thpogfp/gfp mice had diminished regeneration of spleen HSC frequency and total HSC number compared with controls (Figure 3—figure supplement 1P-W). Thus, Thpo is required for hematopoietic and HSC recovery after irradiation.
 
-## Hepatic but not bone marrow THPO is required for HSC regeneration after ionizing radiation
+### Hepatic but not bone marrow THPO is required for HSC regeneration after ionizing radiation
 
 It is not clear what cells are the major source of THPO after irradiation. Bone marrow stromal cells (CD45- Ter119-) did not have significantly upregulated Thpo transcripts 14 days after irradiation (Figure 1—figure supplement 2A). To assess the translation of THPO protein following irradiation, ThpocreER; Rosa26LSL-ZsGreen translational reporter mice were irradiated and immediately dosed with a 10-day course of tamoxifen treatment. Although robust recombination of the Rosa26LSL-ZsGreen allele was observed in the liver (Figure 3A), no ZsGreen was observed in the bone marrow (Figure 3B). Hepatocytes were the major cell type that expressed THPO in the liver after irradiation (Figure 3C and D). This finding suggests that hepatocytes are the major source of THPO with no appreciable THPO expression in the bone marrow following radioablation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig3-v2.jpg)
+
+**Figure 3.:** (A) Confocal images of liver sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after irradiation. (B) Confocal images of femur sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after irradiation. (C and D) Confocal images showing immunostaining of HNF4α on liver sections from tamoxifen-treated ThpocreER; Rosa26LSL-ZsGreen mice 10 days after irradiation. (D) Enlarged image of the region denoted in C. Arrows point to individual HNF4α+ hepatocytes. (E–H) Blood counts of mice with Thpo conditionally deleted from osteoblasts (Col1a1-cre), bone marrow stromal cells (Lepr-cre), or both (Prrx1-cre), and controls after irradiation. n = 3–10 mice. (I–L) Cellularity and frequencies of hematopoietic stem cells (HSCs) in the bone marrow and spleens from mice with Thpo conditionally deleted from osteoblasts, bone marrow stromal cells, or both, and controls after irradiation. n = 3–11 mice. (M) Total numbers of HSCs in the bone marrow and spleens from mice with Thpo conditionally deleted from osteoblasts, bone marrow stromal cells, or both, and controls after irradiation. n = 3–11 mice. Con: Thpogfp/+ control mice. Col1a1-cre: Col1a1-cre; Thpofl/gfp mice. Lepr-cre: Leprcre; Thpofl/gfp mice. Prrx1-cre: Prrx1-cre; Thpofl/gfp mice. Data represent mean ± SEM. Statistical significance was assessed with one-way ANOVA with Dunnett’s test. Each dot represents one independent mouse in E–M.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–H) Blood cell counts of Thpo+/+ (+/+) and Thpogfp/gfp (gfp/gfp) mice with and without irradiation treatment. Normalized fold changes (relative to no irradiation baseline) are also shown. n = 4–7 mice for each genotype at each condition. (I and J) Bone marrow cellularity of +/+ and gfp/gfp mice with and without irradiation treatment. Normalized fold changes (relative to no irradiation baseline) are also shown. n = 4–7 mice for each genotype at each condition. (K–N) Frequencies of LSKs and hematopoietic stem cells (HSCs) in the bone marrow of +/+ and gfp/gfp mice with and without irradiation treatment. Normalized fold changes (relative to no irradiation baseline) are also shown. n = 4–7 mice for each genotype at each condition. (O) Survival curve of +/+ and gfp/gfp mice followed for 4 weeks after irradiation. n = 5–6 mice for each genotype. (P–U) Cellularity, frequencies of LSKs and HSCs of +/+ and gfp/gfp mice with and without irradiation treatment. Normalized fold changes (relative to no irradiation baseline) are shown as well. n = 4–7 mice. (V and W) Total HSC numbers in the bone marrow and spleens of +/+ and gfp/gfp mice with and without irradiation. Normalized fold changes (relative to no irradiation baseline) are shown as well. n = 4–7 mice. Data represent mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001. Each dot represents one independent mouse. Statistical significance was assessed with two-way ANOVA with Turkey’s test, Log-rank (Mantel-Cox) test, or Student’s t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) LSK frequencies in the bone marrow from mice with Thpo deleted from osteoblasts (Col1a1-cre), mesenchymal stromal cells (Lepr-cre), or both (Prrx1-cre), as well as controls after irradiation. n = 3–10 mice for each genotype. (B) LSK frequencies in the spleens from mice with Thpo deleted from osteoblasts (Col1a1-cre), mesenchymal stromal cells (Lepr-cre) or both (Prrx1-cre), as well as controls after irradiation. n = 3–10 mice for each genotype. Con: Thpogfp/+ control mice. Col1a1-cre: Col1a1-cre; Thpofl/gfp mice. Lepr-cre: Leprcre; Thpofl/gfp mice. Prrx1-cre: Prrx1-cre; Thpofl/gfp mice. Data represent mean ± SEM. Statistical significance was assessed with one-way ANOVA with Dunnett’s test. Each dot represents one independent mouse.
 
 To functionally test whether osteoblasts and bone marrow mesenchymal cells are sources of THPO for hematopoietic recovery and HSC regeneration after irradiation, we gave Col1a1-cre; Thpofl/gfp, Leprcre; Thpofl/gfp or Prrx1-cre; Thpofl/gfp mice, along with littermate controls, a single 5.5 Gy dose of radiation and analyzed them 4 weeks later. Compared with irradiated controls, Col1a1-cre; Thpofl/gfp, Leprcre; Thpofl/gfp or Prrx1-cre; Thpofl/gfp mice showed no significant differences in leukocyte, neutrophil, and platelet counts, as well as reticulocyte frequency (Figure 3E–H). Bone marrow cellularity, LSK and HSC frequencies were also normal (Figure 3I and J, Figure 3—figure supplement 2A). These mice also had normal spleen cellularity, LSK and HSC frequencies, as well as total HSC numbers (Figure 3K–M and Figure 3—figure supplement 2B). These data suggest that osteoblasts and bone marrow mesenchymal stromal cells are dispensable sources of THPO for HSC and hematopoietic recovery from radioablative challenges.
 
 To test the role of hepatocyte-derived THPO, we then irradiated Thpofl/fl mice treated with AAV8-TBG-cre virus vector. Compared to controls, these mice showed normal responses to irradiation in leukocyte, neutrophil, and platelet counts as well as reticulocyte frequency (Figure 4—figure supplement 1A–H). Although the bone marrow cellularity response to irradiation was similar between Thpofl/fl mice treated with AAV and control, there was a significant reduction in bone marrow HSC but not LSK frequency recovery in AAV-treated Thpofl/fl mice relative to controls after irradiation (Figure 4A–D and Figure 4—figure supplement 1I and J). Compared with controls, spleen cellularity, LSK and HSC frequencies from Thpofl/fl mice treated with AAV had normal responses after irradiation (Figure 4E–H and Figure 4—figure supplement 1K and L). Overall, Thpofl/fl mice treated with AAV had a significant reduction in total HSC number recovery after irradiation (Figure 4I and J). Importantly, bone marrow cells from these irradiated AAV-treated mice showed functional defects in reconstituting irradiated recipients (Figure 4K). These data suggest that hepatic THPO is required for proper functional recovery of HSCs following irradiation-mediated myeloablation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig4-v2.jpg)
+
+**Figure 4.:** (A–H) Cellularity and frequencies of HSCs in the bone marrow and spleens from mice with Thpo conditionally deleted from hepatocytes (AAV) and controls with and without irradiation. Normalized fold changes after irradiation (relative to no irradiation baseline) are also shown. n = 6–7 mice. (I and J) Total numbers of HSCs in the bone marrow and spleens from mice with Thpo conditionally deleted from hepatocytes (AAV) and controls with and without irradiation. Normalized fold changes after irradiation (relative to no irradiation baseline) are also shown. n = 6–7 mice. (K) Numbers of total recipients and long-term multilineage reconstituted recipients after transplantation of 1,000,000 bone marrow cells from PBS- or AAV-treated Thpofl/fl and irradiated donor mice along with 1,000,000 irradiated competitor bone marrow cells. Recipients were scored as reconstituted if they showed donor-derived myeloid, B and T cells in the peripheral blood 16 weeks after transplantation. Data were from recipients of two donor pairs from two independent experiments. PBS: PBS-treated Thpofl/fl or wild-type control mice. AAV: AAV8-TBG-cre-treated Thpofl/fl mice. Data represent mean ± SEM. *p < 0.05, **p < 0.01, ****p < 0.0001. Statistical significance was assessed with two-way ANOVA with Turkey’s test (A, C, E, G, I), Student’s t-test (B, D, F, H, J), or Fisher’s exact test (K). Each dot represents one independent mouse in A–J.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69894/elife-69894-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–H) Blood cell counts of mice with Thpo deleted from hepatocytes (AAV) as well as controls with and without irradiation. Normalized fold changes (relative to baseline) are also shown. n = 5–7 mice. (I–L) LSK frequencies in bone marrow and spleens from mice with Thpo deleted from hepatocytes and controls with and without irradiation. Normalized fold changes (relative to baseline) are also shown. n = 6–7 mice. PBS: PBS-treated Thpofl/fl or wild-type control mice. AAV: AAV8-TBG-cre-treated Thpofl/fl mice. Data represent mean ± SEM. *p < 0.05, **p < 0.01, ***p < 0.001. Each dot represents one independent mouse. Statistical significance was assessed with two-way ANOVA with Turkey’s test or Student’s t-test.
 
 ## Discussion
 
@@ -65,11 +105,392 @@ Numerous connections between hepatic and hematopoietic pathophysiology have long
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Prrx1-cre</td>
+      <td>PMID:12112875</td>
+      <td></td>
+      <td>JAX stock (005584)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Leprcre</td>
+      <td>PMID:11283374</td>
+      <td></td>
+      <td>JAX stock (008320)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Rosa26LSL-ZsGreen</td>
+      <td>PMID:20023653</td>
+      <td></td>
+      <td>JAX stock (007906)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Col1a1-cre</td>
+      <td>PMID:15470637</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Thpogfp</td>
+      <td>PMID:29622652</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>ThpocreER</td>
+      <td>PMID:29622652</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Thpofl</td>
+      <td>PMID:29622652</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV8-TBG-cre</td>
+      <td>Penn Vector core or Addgene</td>
+      <td>Cat# 107787-AAV8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluorouracil</td>
+      <td>FreseniusKabi</td>
+      <td>Cat# 101,710</td>
+      <td>150 mg/kg IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Cat# T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase, Type IV</td>
+      <td>Worthington</td>
+      <td>Cat# LS004188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Sigma</td>
+      <td>Cat# D4527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD2 (RM2-5)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD3 (17A2)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD5 (53–7.3)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD8a (53–6.7)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-B220 (6B2)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-Gr1 (8C5)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-Ter119</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-Sca1 (E13-161.7)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-cKit (2B8)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Armenian (Hamster monoclonal) anti-CD48 (HM48-1)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD150 (TC15-12F12.2)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD45.2 (104)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD45.1 (A20)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-Mac1 (M1/70)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rat monoclonal) anti-CD45 (30 F-11)</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>Flow cytometry (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit monoclonal) anti-HNF4α (EPR16885-99)</td>
+      <td>AbCam</td>
+      <td>Cat# Ab201460</td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD815</td>
+      <td>IDT DNA</td>
+      <td>CCACCACCATGCCTAACTCT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD816</td>
+      <td>IDT DNA</td>
+      <td>GTTCTCCTCCACGTCTCCAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD817</td>
+      <td>IDT DNA</td>
+      <td>TCGCTAGCTGCTCTGATGAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZsGreen F</td>
+      <td>IDT DNA</td>
+      <td>GGCATTAAAGCAGCGTATCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZsGreen R</td>
+      <td>IDT DNA</td>
+      <td>AACCAGAAGTGGCACCTGAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD581</td>
+      <td>IDT DNA</td>
+      <td>CATCTCGCTGCTCTTAGCAGGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD582</td>
+      <td>IDT DNA</td>
+      <td>GAGCTGTTTGTGTTCCAACTGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD292</td>
+      <td>IDT DNA</td>
+      <td>CGGACACGCTGAACTTGTGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD528</td>
+      <td>IDT DNA</td>
+      <td>ACTTATTCTCAGGTGGTGACTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD653</td>
+      <td>IDT DNA</td>
+      <td>AGGGAGCCACTTCAGTTAGAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD434</td>
+      <td>IDT DNA</td>
+      <td>CATTGTATGGGATCTGATCTGG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD435</td>
+      <td>IDT DNA</td>
+      <td>GGCAAATTTTGGTGTACGGTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD338</td>
+      <td>IDT DNA</td>
+      <td>GCATTTCTGGGGATTGCTTA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD339</td>
+      <td>IDT DNA</td>
+      <td>ATTCTCCCACCGTCAGTACG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD390</td>
+      <td>IDT DNA</td>
+      <td>CCTTTGTCTATCCCTGTTCTGC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD391</td>
+      <td>IDT DNA</td>
+      <td>ACTGCCCCTAGAATGTCCTGT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD27</td>
+      <td>IDT DNA</td>
+      <td>GCTCTTTTCCAGCCTTCCTT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>OLD28</td>
+      <td>IDT DNA</td>
+      <td>CTTCTGCATCCTGTCAGCAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FacsDiva</td>
+      <td>BD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperScript III</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProtoScript II</td>
+      <td>NEB</td>
+      <td>Cat# M0368S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PELCO Cryo-Embedding compound</td>
+      <td>Ted Pella, Inc</td>
+      <td>Cat# 27,300</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice were 8–16 weeks of age and maintained on a C57BL/6 background. Prrx1-cre (stock # 005584) recombining in bone marrow mesenchymal cells of the long bones, Leprcre (stock # 008320) recombining in bone marrow mesenchymal stromal cells, and Rosa26LSL-ZsGreen (stock # 007906) mice were obtained from the Jackson Laboratory. Col1a1-cre mice (with 2.3 kb promoter), recombining in mature osteoblasts, were described previously (Liu et al., 2004). The generation of Thpogfp, ThpocreER, and Thpofl mice was described previously (Decker et al., 2018). Thpogfp is a null allele of Thpo. ThpocreER knockin mice allows tracing of cells that translate THPO protein. All mice were housed in specific pathogen-free, Association for the Assessment and Accreditation of Laboratory Animal Care (AAALAC)-approved facilities at the Columbia University Medical Center. All protocols were approved by the Institute Animal Care and Use Committee of Columbia University.
 
-## Genotyping PCR
+### Genotyping PCR
 
 Primers for genotyping ThpocreER: OLD815, 5’-CCACCACCATGCCTAACTCT-3’; OLD816, 5’-GTTCTCCTCCACGTCTCCAG-3’; and OLD817, 5’-TCGCTAGCTGCTCTGATGAA-3’.
 
@@ -83,44 +504,44 @@ Primers for genotyping Leprcre: OLD434 5’-CATTGTATGGGATCTGATCTGG-3’ and OLD4
 
 Primers for genotyping cre: OLD338, 5’-GCATTTCTGGGGATTGCTTA-3’ and OLD339, 5’-ATTCTCCCACCGTCAGTACG-3’.
 
-## Chemoablative challenge
+### Chemoablative challenge
 
 5-FU (150 mg/kg) was administered to mice via a single intraperitoneal injection. Ten days post-injection, mice were euthanized for analysis.
 
-## Radioablative challenge
+### Radioablative challenge
 
 Mice were irradiated by a Cesium 137 Irradiator (JL Shepherd and Associates) at 300 rad/min with one dose of 550 rad. Four weeks after irradiation, mice were euthanized for analysis.
 
-## Tamoxifen administration
+### Tamoxifen administration
 
 Tamoxifen (Sigma) was dissolved in corn oil for a final concentration of 20 mg/mL. Every other day for 10 days, 50 µL of the solution was administered by oral gavage. Mice were analyzed 2–4 days after the final tamoxifen administration.
 
-## Viral vector infections
+### Viral vector infections
 
 Replication-incompetent AAV8-TBG-cre was obtained from the Penn Vector Core or Addgene. AAV8-TBG-cre vector carries cre recombinase gene under the regulatory control of hepatocyte-specific thyroid-binding globulin (TBG) promoter. Efficient recombination was achieved at a dose of 2.5 × 1011 viral particles diluted in sterile 1× PBS. AAV8-TBG-cre was administered to mice via retro-orbital venous sinus injection.
 
-## Complete blood count
+### Complete blood count
 
 Peripheral blood was collected to EDTA tubes (Microvette CB300, Sarstedt) to prevent clogging. Blood samples were then run on a complete blood count analyzer (Genesis, Oxford Science).
 
-## Flow cytometry
+### Flow cytometry
 
 Bone marrow cells were isolated by flushing the long bones or by crushing the long bones, pelvis, and vertebrae with mortar and pestle in Ca2+- and Mg2+-free HBSS with 2% heat-inactivated bovine serum. Spleen cells were obtained by crushing the spleens between two glass slides. The cells were passed through a 25 G needle several times and filtered with a 70 μm nylon mesh. The following antibodies were used to perform HSC staining: lineage markers (anti-CD2 [RM2-5], anti-CD3 [17A2], anti-CD5 [53–7.3], anti-CD8a [53–6.7], anti-B220 [6B2], anti-Gr-1 [8C5], anti-Ter119), anti-Sca-1 (E13-161.7), anti-c-kit (2B8), anti-CD48 (HM48-1), anti-CD150 (TC15-12F12.2).
 
 For flow cytometric sorting of bone marrow stromal cells, bone marrow plugs were flushed as described above, then digested with collagenase IV (200 U/mL) and DNase1 (200 U/mL) at 37°C for 20 min. Samples were then stained with anti-CD45 (30 F-11) and anti-Ter119 antibodies and sorted on a flow cytometer.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Cells were lysed in Trizol. Total RNA was extracted according to manufacturer’s instructions. Total RNA was subjected to reverse transcription using SuperScript III (Invitrogen) or ProtoScript II (NEB). Quantitative real-time PCR was run using SYBR green on a CFX Connect system (Biorad). β-Actin (Actb) was used to normalize the RNA content of samples. Primers used were: Thpo: OLD390, CCTTTGTCTATCCCTGTTCTGC and OLD391, ACTGCCCCTAGAATGTCCTGT; β-actin: OLD27, 5’-GCTCTTTTCCAGCCTTCCTT-3’ and OLD28, 5’-CTTCTGCATCCTGTCAGCAA-3’.
 
-## Bone and liver sectioning
+### Bone and liver sectioning
 
 Freshly disassociated long bones were fixed for 3 hr in a solution of 4% paraformaldehyde, 7% picric acid, and 10% sucrose (W/V). The bones were then embedded in 8% gelatin, immediately snap-frozen in liquid N2, and stored at –80°C. Bones were sectioned using a CryoJane system (Instrumedics). For liver, cardiac perfusion with formalin was performed immediately after mouse sacrifice, and perfused liver tissue was dehydrated in a 30% sucrose solution overnight at 4°C. Liver tissue was then placed in PELCO Cryo-Embedding compound (Ted Pella, Inc), frozen on dry ice, and stored at –80°C. Liver tissue was sectioned and directly transferred onto microscope slides. Both bone and liver sections were dried overnight at room temperature and stored at –80°C. Sections were rehydrated in PBS for 5 min, stained with DAPI for 15 min, then mounted with Vectashield Hardset Antifade Mounting Medium (Vector Laboratories). An rabbit anti-HNF4α antibody (AbCam, ab201460) was used to stain hepatocytes. Images were acquired on a Nikon Eclipse Ti confocal microscope (Nikon Instruments) or a Leica SP8 confocal microscope (Leica Microsystems).
 
-## Long-term competitive reconstitution assay
+### Long-term competitive reconstitution assay
 
 Adult recipient mice were lethally irradiated by a Cesium 137 Irradiator (JL Shepherd and Associates) at 300 rad/min with two doses of 550 rad (total 1100 rad) delivered at least 2 hr apart. Cells were transplanted by retro-orbital venous sinus injection of anesthetized mice. Donor bone marrow cells were transplanted along with recipient bone marrow cells into lethally irradiated recipient mice. For irradiation-induced myeloablation, the competing recipient bone marrow cells were from mice that were irradiated similarly as the donor mice. Mice were maintained on antibiotic water (Baytril 0.17 g/L) for 14 days, then switched to regular water. Recipient mice were periodically bled to assess the level of donor-derived blood lineages, including myeloid, B, and T cells for at least 16 weeks. Blood was subjected to ammonium chloride potassium red cell lysis before antibody staining. Antibodies including anti-CD45.2 (104), anti-CD45.1 (A20), anti-CD3 (17A2), anti-B220 (6B2), anti-Gr-1 (8C5), and anti-Mac-1 (M1/70) were used to stain cells. Mice with presence of donor-derived myeloid, B, and T cells for 16 weeks were considered as long-term multilineage reconstituted.
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were done using GraphPad Prism 7.0. In any comparison between a pooled control cohort and multiple experimental conditions, we used one-way ANOVA with Dunnett’s test. In any comparison between control and mutant in multiple experimental conditions, we used two-way ANOVA with Turkey’s test. For surviving curve comparison, we used Log-rank (Mantel-Cox) test. For transplantation experiments, we used Fisher’s exact test. For all other comparisons, we used unpaired t-test. In all figures, error bars represent standard error of mean.

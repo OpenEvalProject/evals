@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases & National Clinical Research Center for Oral Diseases, West China Hospital of Stomatology, Sichuan University Chengdu China
-2. https://ror.org/011ashp19 Department of Endodontics, West China Hospital of Stomatology, Sichuan University Chengdu China
-3. https://ror.org/05qbk4x57 Center for Excellence in Molecular Cell Science, University of Chinese Academy of Sciences Shanghai China
-4. https://ror.org/011ashp19 Department of Pediatric Dentistry, West China Hospital of Stomatology, Sichuan University Chengdu China
+1. State Key Laboratory of Oral Diseases & National Clinical Research Center for Oral Diseases, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+2. Department of Endodontics, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+3. Center for Excellence in Molecular Cell Science, University of Chinese Academy of Sciences Shanghai China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+4. Department of Pediatric Dentistry, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
 
 † Corresponding author
 
 ## Abstract
 
-Platelet-derived growth factor receptor alpha (PDGFR-α) activity is crucial in the process of dental and periodontal mesenchyme regeneration facilitated by autologous platelet concentrates (APCs), such as platelet-rich fibrin (PRF), platelet-rich plasma (PRP) and concentrated growth factors (CGF), as well as by recombinant PDGF drugs. However, it is largely unclear about the physiological patterns and cellular fate determinations of PDGFR-α + cells in the homeostasis maintaining of adult dental and periodontal mesenchyme. We previously identified NFATc1 expressing PDGFR-α + cells as a subtype of skeletal stem cells (SSCs) in limb bone in mice, but their roles in dental and periodontal remain unexplored. To this end, in the present study we investigated the spatiotemporal atlas of NFATc1 + and PDGFR-α + cells residing in dental and periodontal mesenchyme in mice, their capacity for progeny cell generation, and their inclusive, exclusive and hierarchical relations in homeostasis. We utilized CRISPR/Cas9-mediated gene editing to generate two dual recombination systems, which were Cre -loxP and Dre -rox combined intersectional and exclusive reporters respectively, to concurrently demonstrate the inclusive, exclusive, and hierarchical distributions of NFATc1 + and PDGFR-α + cells and their lineage commitment. By employing the state-of-the-art transgenic lineage tracing techniques in cooperating with tissue clearing-based advanced imaging and three-dimensional slices reconstruction, we systematically mapped the distribution atlas of NFATc1 + and PDGFR-α + cells in dental and periodontal mesenchyme and tracked their in vivo fate trajectories in mice. Our findings extend current understanding of NFATc1 + and PDGFR-α + cells in dental and periodontal mesenchyme homeostasis, and furthermore enhance our comprehension of their sustained therapeutic impact for future clinical investigations.
+Platelet-derived growth factor receptor alpha (PDGFR-α) activity is crucial in the process of dental and periodontal mesenchyme regeneration facilitated by autologous platelet concentrates (APCs), such as platelet-rich fibrin (PRF), platelet-rich plasma (PRP) and concentrated growth factors (CGF), as well as by recombinant PDGF drugs. However, it is largely unclear about the physiological patterns and cellular fate determinations of PDGFR-α+ cells in the homeostasis maintaining of adult dental and periodontal mesenchyme. We previously identified NFATc1 expressing PDGFR-α+ cells as a subtype of skeletal stem cells (SSCs) in limb bone in mice, but their roles in dental and periodontal remain unexplored. To this end, in the present study we investigated the spatiotemporal atlas of NFATc1+ and PDGFR-α+ cells residing in dental and periodontal mesenchyme in mice, their capacity for progeny cell generation, and their inclusive, exclusive and hierarchical relations in homeostasis. We utilized CRISPR/Cas9-mediated gene editing to generate two dual recombination systems, which were Cre-loxP and Dre-rox combined intersectional and exclusive reporters respectively, to concurrently demonstrate the inclusive, exclusive, and hierarchical distributions of NFATc1+ and PDGFR-α+ cells and their lineage commitment. By employing the state-of-the-art transgenic lineage tracing techniques in cooperating with tissue clearing-based advanced imaging and three-dimensional slices reconstruction, we systematically mapped the distribution atlas of NFATc1+ and PDGFR-α+ cells in dental and periodontal mesenchyme and tracked their in vivo fate trajectories in mice. Our findings extend current understanding of NFATc1+ and PDGFR-α+ cells in dental and periodontal mesenchyme homeostasis, and furthermore enhance our comprehension of their sustained therapeutic impact for future clinical investigations.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ In summary, we utilized the advanced Cre-loxP and Dre-rox combined intersectiona
 
 ## Results
 
-## Establishment of multiple genetic recombination systems and advanced imaging technology
+### Establishment of multiple genetic recombination systems and advanced imaging technology
 
 To understand the cell fate, behaviors, and their spatiotemporal correlation of PDGFR-α+ and NFATc1+ cells in dental and periodontal mesenchyme, systematic genetic fate atlas were established by lineage tracing based on genetic DNA recombination technology. In conventional single recombinase-mediated genetic readouts, the Cre-loxP system is widely used for mammalian gene editing with Cre recombinase catalyzing recombination between loxP sites. This system, often activated by a ubiquitous promoter like Rosa26 and H11, removes a transcription stop cassette post-recombination to allow for reporter gene expression (Figure 1A). However, the drawback of the conventional approach is that it is impossible to observe the genetic lineage and spatial relationship of two specific cell type at the same time, also, targeting two gene promoters in one cell population could be more precise than relying on a single promoter as commonly employed in the conventional reporter system. Given that, diverse dual recombinase–mediated genetic labeling systems have been developed to enhance the specificity and the number of cell types being labeled simultaneously. Cre-loxP, Flp-frt, Dre-rox, and Nigri-nox have been respectively used for designing dual system. Using reporter as an entry site can categorize these systems into three different types for multiple recombinase–mediated fate mapping studies, including intersectional reporters, exclusive reporters, and nested reporters (Figure 1A–b and c). In this work, the most advanced transgenic technology, dual recombinase–mediated genetic labeling systems, including intersectional reporters and exclusive reporters, were constructed to simultaneously show the inclusive, exclusive and hierarchical distribution of PDGFR-α+/NFATc1+ cells in dental and periodontal mesenchyme. Specifically, multichromatic crossover intersectional reporters (MCIR) systems, which structured as H11-CAG-LSL-ZsGreen-CAG-RSR-tdTomato (LGRT), enabled the tracing of three cell types: Cre+&Dre-, Cre-&Dre+, and Cre+&Dre+, corresponding to the colors ZsGreen, tdTomato, and yellow, respectively. This technology guaranteed us to precisely understand the respective and inclusive distribution of Pdgfr-α+, NFATc1+ cells and their progeny cells. In addition, IR1 system is an exclusive reporter expressed as CAG-loxP-rox-Stop-loxP-ZsGreen-Stop-rox-tdTomato (Figure 1A–c). The first Cre-loxP recombination results in ZsGreen expression and the removal of a rox site, preventing subsequent Dre-rox recombination in the same cell. This means that once a recombination event occurs, the expression of the corresponding reporter gene eliminates a recognition site for the other recombination system, which could provide generous information of the hierarchical distribution of PDGFR-α+ and NFATc1+ cells in dental and periodontal mesenchyme.
 
@@ -45,11 +45,19 @@ To understand the cell fate, behaviors, and their spatiotemporal correlation of 
 
 Due to the peculiarity of dental/periodontal tissues, including pulp and periodontal of maxillary and mandibular first molars (small volume, complex structure and uneven spatial distribution of SSCs in mesenchyme), single-slice images based on traditional frozen section and confocal microscope imaging were insufficient to accurately presume the practical situation of the organization. Therefore, the advanced tissue deep clearance using SUMIC procedure and 3D reconstruction was exploited to observe the overall spatial distribution of PDGFR-α+ and NFATc1+ cells in dental and periodontal mesenchyme of transgenic mice with multiple DNA recombinases-based genetic lineage tracing system (Figure 1C–a). Simultaneously, as an irreplaceable imaging technology, traditional sectioning combined confocal imaging and procedure was also estimated (Figure 1C–b). These two 3D-reconstruction and imaging technologies complement each other to jointly address the spatial positioning and hierarchical relationships of PDGFR-α+, NFATc1+, and PDGFR-α+ NFATc1+ cells from multiple perspectives.
 
-## Exploration of NFATc1+/PDGFR-α+ cells and their progeny cells in MCIR system
+### Exploration of NFATc1+/PDGFR-α+ cells and their progeny cells in MCIR system
 
 First, we established Cre-loxP and Dre-rox reporter lineage-tracking model of PDGFR-α and NFATc1 in adult mice to observe the spatial location of PDGFR-α+ and NFATc1+ cells in pulp and periodontal of maxilla & mandible M1. The pulse timing point we set was tamoxifen treated twice at day 1 and day 3, and then the mice were sacrifice to obtain maxilla and mandible on day 5 (Figure 2A and B).
 
-## Dental and periodontal region of maxilla M1 and mandible M1
+![Figure 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig2-v1.jpg)
+
+**Figure 2.:** The whole-mount and high-speed imaging of (A) mouse molar with a tiling light-sheet microscope. (B) Schematic illustration of lineaging tracing in PdgfraCreER×Nfatc1DreER× LGRT mice. The mice were administrated with tamoxifen at D1 and D3, and sacrificed at D5. (C) The contoured M1 of maxilla, including pulp and PDL with virtual dentin shell (white) in buccal view (scale bar = 300 μm). (D) Image stack was displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively (scale bar = 300 μm). (E) An optical slice was acquired on the X-Z (scale bar = 300 μm) and X-Y direction (scale bar = 400 μm) to display the pulp and PDL.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The tissue-clearing (TC) and whole-mount imaging procedure of mice maxilla. (B) The images before & after the TC procedure of mice maxilla. (C) The distribution of PDGFR-a+ and NFATc1+ cells from the section of XZ axis after 3D reconstruction of TC imaging. The image was from PdgfraCreER×Nfatc1DreER× LGRT mice (pulse). Box 1: alveolar bone. Scale bar = 300 μm for top row, 100 μm for bottom row.
+
+### Dental and periodontal region of maxilla M1 and mandible M1
 
 As one of the most advanced imaging technologies currently available, tissue clearing/imaging allows for direct observation of the spatial location and relationships of fluorescently labeled cells within the intact tissue. Therefore, according to the existing SUMIC tissue deep clearing (TC) methods (Antila et al., 2024; Biswas et al., 2023), we modified and improved a rapid and efficient procedure, which enable rapid single-cell resolution and quantitative panoptic 3D light-sheet imaging. This procedure not only rapidly clear maxillary hard tissue, but also directly penetrate the dentin to visualize the dental pulp. The total time of this procedure was only 2 days including tissue fixation and decalcification, this ultrafast clearing technique could minimize the impact on transgenic mice. As shown in Figure 2—figure supplement 1A–B, we recorded bright-field images of the maxilla before and after clearing, and our procedure achieved high transparency of the whole tissue. On this basis, whole-tissue imaging can be achieved, with the observation of different cell type distribution in spatial 3D structure. As such, dental pulp and periodontal ligament (PDL) region of M1 were representatively delineated for 3D reconstruction and analysis. Figure 2 and Figure 2—video 1 showed the contoured maxilla M1, including pulp and periodontal ligament (PDL) with virtual dentin shell (white). The buccal view, coronal view, and radicular view of pulp and PDL showed that PDGFR-α+ cells were equidistributional in the whole area of M1 pulp (including crown pulp and root pulp) and PDL area, almost constitute the whole dental and periodontal tissue, while NFATc1+ cells were almost exclusively distributed in crown pulp and scattered existence in PDL. Across the board, the distribution of NFATc1+ cells were significantly less than that of PDGFR-α+ cells in both pulp and PDL area, indicated that the expansive range of PDGFR-α+ cells which may contain NFATc1+ population. As mentioned above, studies have shown that with not all PDGFR-α+ cells within long bones exhibiting mesenchymal stem cell characteristics, and only certain specific subpopulations of PDGFR-α+ cells can be considered as ‘real’ stem cells. In addition, our previous study has evidenced NFATc1+PDGFR-α+ cells as skeletal stem cells (SSCs) within long bones, played an indispensable role in bone homeostasis and regeneration. As such, these phenomena we observed from the results of TC preliminarily indicate a similar situation in dental and periodontal tissue, and the biological role of NFATc1+PDGFR-α+ cells in homeostasis and regeneration situation is our major focus in the future research.
 
@@ -57,31 +65,147 @@ In addition, from the section of XZ axis after 3D reconstruction, NFATc1+ cells 
 
 Therefore, in order to obtain high-resolution image to understand more detailed information, we still need to rely on the traditional serial section technology (Figure 3A). A total of 121 slices were collected in this maxilla of PdgfraCreER×Nfatc1DreER× LGRT mice sample, from the jaw root PDL just appeared, to the buccal root PDL completely disappeared (10 μm/slice; Figure 3—figure supplement 1). As shown in Figure 3B, Figure 3—figure supplement 2, although time consuming, the images obtained by confocal imaging can clearly obtain the distribution of PDGFR-α+ and NFATc1+ cells from the single cell level. However, it is difficult to determine the presence of PDGFR-α+&NFATc1+ cells spatiotemporally. So, we also used Imaris to 3D-reconstruct these 121 images. Figure 3C and Figure 3—video 1 showed the contoured M1 of maxilla, including pulp and PDL with virtual dentin shell (white). Figure 3D was the buccal view, coronal view, and radicular view of pulp and PDL, respectively. Different from the whole imaging obtained by TC and light-sheet, the td-tomato signal reconstructed by traditional serial section-based confocal imaging method was very conspicuous, even in root pulp, which were hardly obtained by TC imaging (Figure 3—figure supplement 3). Same as TC-based reconstructed results, PDGFR-α+ cells almost constituted the whole structure of pulp and PDL, with NFATc1+ cells as subpopulation. However, due to the stratification of slices, the sample integrity was poor, leading to discontinuities in the z-axis. (Figure 3—figure supplement 4), which may render some biases in the results. To enhance the comprehensive and accurate display of the reconstruction results and to mitigate the potential errors that may arise from relying on single reconstruction method, we employed an alternative 3D reconstruction method—DICOM-3D (Popescu et al., 2021). This method is based on sequential 2D DICOM images and utilizes 3D reconstruction and visualization technology to generate a stereoscopic 3D image with intuitive effects, which was a comparatively straightforward and highly efficient approach. We transformed the serial IF images into DICOM format and subsequently reconstruct it, and the same conclusion can be drawn, namely, PDGFR-α+ cells almost constituted the whole structure of pulp and PDL, with NFATc1+ cells as subpopulation (Figure 3—figure supplement 5).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-v1.jpg)
+
+**Figure 3.:** (A) Operation process of frozen section. Using this procedure, a total of 121 slices were collected in this sample. (B) Representative images acquired by confocal microscopy (scale bar = 200 μm). Box 1: coronal pulp, Box 2: root pulp, Box 3: PDL, scale bar = 100 μm. (C) Maxilla M1 after 3D reconstruction by imaris, including pulp and PDL with virtual dentin shell (white) in buccal view (scale bar = 300 μm). (D) Image stack was displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively (scale bar = 300 μm).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The images were acquired by confocal microscope, ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The images were acquired by confocal microscope.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The sample was from PdgfraCreER×Nfatc1DreER× LGRT mice (pulse).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The image was reconstructed by serial sections of maxilla M1 of PdgfraCreER×Nfatc1DreER× LGRT mice sample (pulse).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The image stack was also displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively.
+
 The previous sequencing analyses have reported the expression of NFATc1 in mandible and periodontal tissues (Nassif et al., 2022). However, this evidence is limited to RNA-level sequencing, lacking in vivo data support. Therefore, with assistance of multiple genetic recombination systems, we next examined the expression pattern of NFATc1 in dental and PDL region of mandible M1, simultaneously observed the distribution atlas of PDGFR-α+ cells. As shown in Figure 4A, the pulse timing points were same as above. Figure 4C and Figure 4—video 1 showed the contoured mandible M1, including pulp and PDL with virtual dentin shell (white) in the buccal view, coronal view, and radicular view of pulp and PDL, respectively. According to the 3D-reconstruction results of 88 consecutive slices, it can be concluded that PDGFR-α+ cells almost constituted the whole structure of dental pulp and periodontal ligament, while NFATc1+ cells most distributed in the pulp angle in the dental pulp tissue, and also scattered distributed in PDL region (Figure 4C,D, Figure 4—figure supplement 1). As shown in Figure 4C, Figure 4—figure supplement 2, the images obtained by confocal imaging can clearly obtain the distribution of PDGFR-α+ and NFATc1+ cells from the single cell level.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic illustration of lineaging tracing in PdgfraCreER×Nfatc1DreER× LGRT mice. (B) Operation process of frozen section. Using this procedure, a total of 88 slices were collected in this sample. (C) Mandible M1 after 3D reconstruction by Imaris, including pulp and PDL with virtual dentin shell (white) in buccal view, coronal view and radicular view (scale bar = 200 μm). (D) 3D reconstruction of mandible M1 by DICOM-3D; in PDL, ZsGreen+ cells in green, tdTomato+ cells in rose red; in pulp, ZsGreen+ cells in purple, tdTomato+ cells in blue. The image stack was also displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively (D-b), scale bar = 200 μm. (D-a): The legend of (D-b).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The images were acquired by confocal microscope, ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The images were acquired by confocal microscope (Scale bar = 100 μm).
 
 To further understand the presence of PDGFR-α+ cells and NFATc1+ cells and their progeny cells after long-term tracking, we set a tracing timing points (Figure 5A). The results showed that nearly the whole pulp and PDL were composed of PDGFR-α+ cells, and NFATc1+ cells were also scattered present in the root pulp and PDL region of maxilla M1 (Figure 5B–D, Figure 5—video 1). Statistical data quantitatively showed that after 11 days of tracing, the number of PDGFR-α+ cells, NFATc1+ cells, PDGFR-α+NFATc1+ cells, and their progeny cells increased in both dental pulp and PDL (Figure 5—figure supplement 1). Specifically, the number of NFATc1+ cells in PDL area after tracing 11 days was 2.19-fold that of pulse NFATc1+ cells. Further, we also conducted cross-sectional analysis of the 3D reconstructed data, and selected the maximum cross-section of XZ axis which containing the whole pulp and PDL and the XY axis of the root pulp, respectively (Figure 5DD). The results were similar to Figure 2E. From the cross section, only the Zs-Green fluorescence signal of PDGFR-α+ cells can be observed and analyze while the td-tomato signal was illegible in target area, which was unable to distinguish from background interference signal. In the process of sample preparation, the soft tissue on the surface needs to be removed as much as possible before fixation, otherwise a similar situation will occur. However, for periosteum and other membranous structures that needed to be studied, the method of TC seems not suitable.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig5-v1.jpg)
+
+**Figure 5.:** (A) The flowchart of tracing. The mice were administrated with tamoxifen at D1 and D3, and sacrificed at D11. (B) The 3D images of contoured M1 of maxilla, including pulp and PDL with virtual dentin shell (white) in buccal view (scale bar = 300 μm). (D) Image stack was displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively. (E) An optical slice was acquired on the X-Z (scale bar = 400 μm) and X-Y direction to display the pulp and PDL (scale bar = 300 μm).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The quantification was done on a z stack of images in Imaris using the automatic spot detection feature.
+
 The tracing samples were also serially sliced and 3D reconstructed (Figures 6 and 7). A total of 117 slices were collected in maxilla of tracing sample (Figure 6—figure supplement 1) and a total of 120 slices were collected in mandible (Figure 7—figure supplement 1) from the jaw root PDL just appeared, to the buccal root PDL completely disappeared (10 μm/slice). As shown in Figure 6B, Figure 4—figure supplement 2 and Figure 7B, Figure 7—figure supplement 2, the images obtained by confocal imaging can clearly obtain the distribution of PDGFR-α+ and NFATc1+ cells from the single cell level. Consistent with the quantification of TC-based imaging results (Figure 5—figure supplement 1), the number of PDGFR-α+ cells and NFATc1+ cells were significantly higher than that in pulse group, which indicated that there were a large number of PDGFR-α+ & NFATc1+ cells and their progeny cells in crown pulp, root pulp and PDL after 11 days of tracing. In order to determine the existence of PDGFR-α+NFATc1+ cells spatiotemporally, we also used software to 3D- reconstruct these 117 images. Figure 6C–D and Figure 6—video 1 showed the contoured M1 of maxilla, including pulp and PDL, at buccal view, coronal view, and radicular view. Figure 7C–D and Figure 7—video 1 showed the contoured mandible M1. Consistent with TC imaging and following quantitative results (Figure 5—figure supplement 1), the number of PDGFR-α+NFATc1+ cells increased significantly in both dental pulp and periodontal ligament, similar to the phenomenon previously observed in long bone, which further encouraged us to follow up with this cell population, explore whether it is a specific mesenchymal stem cell population in periodontal tissue, and explore the indispensable role in periodontal homeostasis and regeneration. Worth notably, different from the whole imaging obtained by TC and light-sheet, the tdTomato signal reconstructed by traditional serial section-based confocal imaging method was very conspicuous, no matter in coronal pulp, root pulp, or PDL (Figure 6—figure supplement 3). We hypothesize that the current light-sheet systems for intact tissue-imaging have inherent limitations in capturing tdTomato signals, which become more evident in tissues with inherently low fluorescence strengths (in this work, due to the limitations of editing efficiency in DNA recombinase mediated lineage-tracing system, which guaranteed weaker tdTomato signal compared to ZsGreen). In contrast, traditional confocal imaging techniques do not encounter such issues.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-v1.jpg)
+
+**Figure 6.:** (A) Using this procedure, a total of 117 slices were collected in this sample. (B) Representative images acquired by confocal microscopy (scale bar = 200 μm). Box 1: coronal pulp; Box 2: root pulp; Box 3: PDL (scale bar = 50 μm). (C) Maxilla M1 after 3D reconstruction by imaris, including pulp and PDL with virtual dentin shell (white) in buccal view (scale bar = 300 μm). (D) Image stack was displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively (scale bar = 300 μm).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The images were acquired by confocal microscope, ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The images were acquired by confocal microscope (scale bar = 50 μm).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-figsupp3-v1.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The image was reconstructed by serial sections of maxilla M1 of PdgfraCreER×Nfatc1DreER× LGRT mice sample (tracing) using Imaris. ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** The image stack was also displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic illustration of pulse in PdgfraCreER×Nfatc1DreER× LGRT mice. (B) Operation process of frozen section. Using this procedure, a total of 120 slices were collected in this sample. (C) 3D reconstruction of mandible M1 using Imaris, including pulp and PDL with virtual dentin shell (white) (scale bar = 200 μm). The image stack was displayed in buccal view, coronal view, and radicular view of pulp and PDL, respectively. (D) 3D reconstruction of mandible M1 using DICOM-3D, in which the distribution of NFATc1+ cells in pulp and PDL tissues can be more precisely perceived (D-b), scale bar = 200 μm. (D-a): The legend of (D-b).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The images were acquired by confocal microscope, ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Scale bar = 100 μm.
 
 However, due to the stratification of slices, the sample integrity was poor, leading to discontinuities in the z-axis. (Figure 6—figure supplement 4), which may render some biases in the results. We also utilized 3D reconstruction of mandible M1 by DICOM-3D (Figure 6—figure supplement 5). After 11 days tracing, the number of PDGFR-α+ & NFATc1+ cells and PDGFR-α+NFATc1+ cells increased significantly (Figure 7), which further supported our above conjecture that NFATc1+ cells were a subset of PDGFR-α+ cells, and PDGFR-α+NFATc1+ cells may contribute to mesenchymal stem cell population in dental and PDL regions.
 
-## Cranium and cranial sutures region
+### Cranium and cranial sutures region
 
 As a part of craniomaxillofacial hard tissue, we also intended to explore whether the presence of NFATc1+ and PDGFR-α+ cells in cranial bone tissue/suture is different from dental and periodontal tissue (our previous study has identified the presence of NFATc1+ cells in the cranium by single-cell sequencing [Yu et al., 2022]), therefore, we also obtained the cranium of PdgfraCreER×Nfatc1DreER× LGRT mice (pulse) for advanced TC imaging to familiarize NFATc1+/PDGFR-α+ cells in cranium and cranial sutures region. As shown in Video 1; Video 2; Video 3, PDGFR-α+ cells were widely distributed, including cranial sutures and bone interstitium, while NFATc1+ cells are mainly distributed in cranial sutures, partially coincided with the spatial location of PDGFR-α+ cells. The PDGFR-α+NFATc1+ cells located in the cranial suture were likely to participate in the physiological function of the cranial suture as a mesenchymal stem cell population.
 
+![Video 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/100173/elife-100173-video3.mp4.jpg)
+
 The improved TC technology and following 3D imaging can deepen the understanding of specific cell populations in craniomaxillofacial tissues to a certain extent, and also lay a foundation for our future researches. However, it seemed not suitable for the study of periosteum, due to the strong auto-fluorescence under the light film system of soft tissues, which will affect the observation of target cells.
 
-## The hierarchical distribution of NFATc1+/PDGFR-α+ cells in IR1 lineage tracing system
+### The hierarchical distribution of NFATc1+/PDGFR-α+ cells in IR1 lineage tracing system
 
 From the above MCIR system, the wider range of PDGFR-α+ cells than NFATc1+ cells were observed, the wider range of PDGFR-α+ cells than NFATc1+ cells were observed, we speculate that there may be a hierarchical relationship between the two. To further explore the relationship between PDGFR-α+ and NFATc1+ cells in pulp and PDL and their hierarchical presence, respectively, we established the IR1 lineage tracing model in adult mice to assess the existence of these cells in the dental pulp and PDL. The structure of IR1 is CAG-loxP-rox-Stop-loxP-ZsGreen-Stop-rox-tdTomato, and the first Cre-loxP recombination would result in ZsGreen expression that removes a rox site, preventing the subsequent Dre-rox recombination in the same cell. The genotypes used were PdgfraCreER× IR1, Nfatc1DreER× IR1 and PdgfraCreER×Nfatc1DreER× IR1 (Figure 8A–B) in which NFATc1+ cells expressed tdTomato and PDGFR-α+ cells were marked by ZsGreen. Tracing timing was set based on preliminary experimental outcomes. To comprehensively and accurately observe the distribution of NFATc1+ and PDGFR-α+ cells in the pulp and PDL, we employed 3D reconstruction technology based on serial sections (Figure 8C–E, Figure 8—videos 1–3 and Figure 8—figure supplements 1–3, and Figure 8—figure supplement 5). As shown in Figure 8C-E, Figure 8—figure supplement 4, the images obtained by confocal imaging can clearly obtain the distribution of ZsGreen+ and tdTomato+ cells from the single cell level. In Nfatc1DreER× IR1 group, most tdTomato+ cells distributed in PDL region, while only sparse and punctate distribution in dental pulp, mostly in coronal pulp. These results were consistent with PdgfraCreER×Nfatc1DreER× LGRT mice. Moreover, since the recombinase recognition sites are interleaved (loxP–rox–loxP–rox), recombination by one system will naturally remove a recognition site of the other system, rendering its reporter gene inactive for further recombination. The results showed no tdTomato+ cells or ZsGreen+ cells were detected in the PdgfraCreER× IR1 or Nfatc1DreER× IR1 group respectively demonstrating the feasibility and accuracy of the IR1 system. In the PdgfraCreER×Nfatc1DreER× IR1 group, the distribution of Nfact1+ cells in PDL were significantly fewer in number than in the Nfatc1DreER× IR1 group, while no significant difference in pulp area. In addition, PDGFR-α+ cells were noted in both the dental pulp and PDL, with a wider distribution than NFATc1+ cells, predominantly in the odontoblastic layer of the pulp and also present in the pulp core. In the PDL, they were distributed from the gingival direction down to the root apex. These phenomena illustrated that PDGFR-α+ cells were the precursor cell of NFATc1+ cells in PDL region. By contrast, there was almost no difference in the number of NFATc1+ cells between Nfatc1DreER× IR1 group and PdgfraCreER×Nfatc1DreER× IR1 group in dental pulp tissue, which was insufficient to certificate the hierarchical relationship of PDGFR-α+ and NFATc1+ cells in pulp area.
 
-## Identification of PDGFR-α+ and NFATc1+ population in pulp and PDL
+![Figure 8.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-v1.jpg)
 
-## Ablation of PDGFR-a+ cells disrupt the morphology of dental pulp and periodontal mesenchymal tissues
+**Figure 8.:** (A) Schematic illustration of lineaging tracing in PdgfraCreER× IR1, Nfatc1DreER× IR1 and PdgfraCreER×Nfatc1DreER× IR1 mice. (B) Schematic diagram of the IR1 working principle. (C) 3D reconstruction of maxilla M1 using Imaris, including pulp and PDL with virtual dentin shell (white) (scale bar = 200 μm). The image stack was displayed in buccal view, coronal view, and radicular view of PDL (D) and pulp (E), respectively.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The images were acquired by confocal microscope, ZsGreen+ cells in green and DAPI in blue.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** The images were acquired by confocal microscope, tdTomato+ cells in red and DAPI in blue.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** The images were acquired by confocal microscope, ZsGreen+ cells in green, tdTomato+ cells in red, DAPI in blue.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** Scale bar = 100 μm.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** (A) Schematic illustration of lineaging tracing in Nfatc1DreER× IR1 and PdgfraCreER×Nfatc1DreER× IR1 mice. (B) Schematic diagram of the IR1 working principle. (C-D) 3D reconstruction of maxilla M1 using DICOM-3D in Nfatc1DreER× IR1 (C) and PdgfraCreER×Nfatc1DreER× IR1 (D) mice, including pulp and PDL (scale bar = 200 μm). The image stack was displayed in buccal view, coronal view, andradicular view of PDL and pulp , respectively. In PDL, ZsGreen+ cells in green, tdTomato+ cells in rose red; in pulp, ZsGreen+ cells in purple, tdTomato+ cells in blue.The image stack was displayed in buccal view, coronal view, and radicular view. Scale bar: 200 μm.
+
+### Identification of PDGFR-α+ and NFATc1+ population in pulp and PDL
+
+#### Ablation of PDGFR-a+ cells disrupt the morphology of dental pulp and periodontal mesenchymal tissues
 
 The results from the aforementioned lineage tracing experiments showed that PDGFR-α+ cells constitute a significant component of both dental pulp and periodontal tissues. Additionally, the hierarchical relationship experiments revealed that a portion of NFATc1+ cells in the periodontal ligament derives from PDGFR-α+ progenitor cells. Therefore, investigating the role of PDGFR-α+ cells in dental pulp and periodontal tissues has become more urgent. To explore the role of PDGFR-α+ cells in dental pulp and PDL tissues, we performed the cell ablation assay using PdgfraCreER×DTA mice with tamoxifen administered for 12 weeks (Figure 9A). The PdgfraCreER×DTA mice strain harbors a loxP-flanked termination cassette within the ubiquitous ROSA26 locus, controlling the expression of DTA. Tamoxifen administration was employed for in vivo toxin-mediated cell ablation (Figure 9B). Through H&E staining and Masson trichrome staining, we observed that in the control group, the odontoblast cell layer adjacent to the dentin consisted of densely arranged columnar cells both in the coronal or radicular pulp. However, this layer of odontoblasts was disrupted and nearly disappeared after ablation. Additionally, ablation of PDGFR-α+ cells in adult DTA mice also showed significant shrinkage in the central area of dental pulp tissue, specifically within the region of the pulp core, along with a substantial reduction in cell numbers (Figure 9C–D). H&E staining confirmed a decrease in periodontal composition following PDGFR-α+ cell clearance (Figure 9E). Furthermore, Masson’s staining results revealed that the diminished portion primarily comprised periodontal fibrous tissue (Figure 9F). Therefore, it can be inferred that PDGFR-α+ cells predominantly constitute the interstitial components of both the periodontium and dental pulp. PDGFR-α+ cells within the dental pulp play a crucial role in the formation of the odontoblast cell layer and contribute significantly to most of the core tissue, while PDGFR-α is primarily involved in shaping periodontal components, particularly fibrous tissue.
 
-## PDGFR-α+ and NFATc1+ cells including MSCs and hematopoietic population in pulp and PDL
+![Figure 9.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig9-v1.jpg)
+
+**Figure 9.:** (A) Schematics of tamoxifen induction. (B) Schematic diagram of the DTA working principle. (C, E) Representative H&E images of pulp (C) and PDL (E) of mandible M1 in PdgfraCreER ×DTA and control mice. (D, F) Masson trichrome staining of pulp (D) and PDL (F) of mandible M1 in PdgfraCreER ×DTA and control mice. Arrows in (C, D) indicate the odontoblast cell layer. Dotted lines in (E, F) outline ROI of the PDL. D: dentin; AB: alveolar bone. Scale bar: 50 μm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/100173/elife-100173-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) a1: Schematic illustration of lineaging tracing in PdgfraCreER×Nfatc1DreER× LRTD mice. a2: The mice were administrated with tamoxifen at D1 and D3, and sacrificed at D14. (B, C) Representative IF images of PDL (B) and pulp (C) of mandible M1 in PdgfraCreER×Nfatc1DreER× LRTD mice showing the MSCs marker AlphaV (left) and hematopoietic marker CD45 (right). Arrows in (B, C) indicate the co-localization of AlphaV/CD45 and tdTomato. D: dentin; AB: alveolar bone. P: PDL (B), pulp (C). Scale bar: 100 μm.
+
+### PDGFR-α+ and NFATc1+ cells including MSCs and hematopoietic population in pulp and PDL
 
 To identify the population of PDGFR-α+ and NFATc1+ co-expressing cells in the pulp and periodontal ligament (PDL), we generated PdgfraCreER×Nfatc1DreER× LRTD mice. In these mice, Dre-rox and Cre-loxP recombination events enable the simultaneous expression of tdTomato and DTR specifically in pulp and PDL cells. In this experiment, we utilized the R26-CAG-LSL-RSR-tdTomato-2A-DTR (LRTD) mice solely to label double-positive cells, so DTX was not administered to ablate the cells. To achieve high labeling efficiency, we treated the mice with tamoxifen twice (Figure 9—figure supplement 1A). Strong tdTomato signals were detected in both the PDL (Figure 9—figure supplement 1B) and pulp (Figure 9—figure supplement 1C). With respect to the MSC-specific marker AlphaV, we observed AlphaV+tdTomato+ cells in both regions. Additionally, CD45+ (hematopoietic marker) tdTomato+ cells were also present in these areas (Figure 9—figure supplement 1B,C). These findings suggest that the population of PDGFR-α+ and NFATc1+ co-expressing cells is heterogeneous.
 
@@ -107,44 +231,44 @@ In conclusion, our study developed multiple DNA recombinases based on genetic li
 
 ## Materials and methods
 
-## Ethics statement and animals
+### Ethics statement and animals
 
 All animal procedures were reviewed and approved by Ethical Committees of West China School of Stomatology, Sichuan University (WCHSIRB-D-2017–041). Relative surgical models were conducted according to approved guidelines set by State Key Laboratory of Oral Diseases, West China Hospital of Stomatology.
 
 Nfatc1DreER and IR1 strain were kindly provided by Prof. Bin Zhou (Chinese Academy of Sciences), which were also reported in our previous study (Yu et al., 2022). PdgfraCreER (Stock 018280) was purchased from the JAX Lab, H11-CAG-LSL-ZsGreen-CAG-RSR-tdTomato and R26-CAG-LSL-RSR-tdTomato-2A-DTR was purchased from Shanghai Model Organisms Center (Strain# NM-KI-200319 and NM-KI-190086 respectively), and DTA mice were purchased from JAX Lab (Stock# 009669).
 
-## In vivo mouse studies
+### In vivo mouse studies
 
 All the transgenic mice discussed in this work are adults around 12–14 weeks, which were intraperitoneally injected with tamoxifen (TAM) according to our previous report (Yu et al., 2022).
 
-## RT-qPCR
+### RT-qPCR
 
 For RT-qPCR total RNA was extracted using the TRIzolTM (Invitrogen) according to the manufacturer’s protocol. Complementary DNA was synthesized by using the HiScript III RT SuperMix for qPCR (Vazyme) in accordance to user manuals. Then quantitative real-time PCR was performed in triplicate by using AceQ Universal SYBR qPCR Master Mix (Vazyme) for PCR reactions on an iCycler Real-Time Detection System (BioRad, USA).
 
-## Maxillae and cranium collection, fixation, and decalcification for light sheet imaging
+### Maxillae and cranium collection, fixation, and decalcification for light sheet imaging
 
 Fresh dissected tissues were washed with PBS (Solarbio), and then rapidly transferred to 4% PFA (Sigma-Aldrich) for 4 hr. Before fixation, the muscle and fat attached to the tissue surface should be removed as much as possible, otherwise there will be strong interference signal during imaging. The tissues were then washed three times with PBS at 4 °C on a rocker platform for 15 min each time. For decalcification, tissues were incubated with 0.5 M EDTA solution (pH 7.4) at 4 °C for 24 hr. After decalcification, the samples were washed three times with PBS on the rocker (15 mi each time). The tissues were then submersed in 50%, 80% and 100% ethanol gradient for 30 min each to dehydrated. 100% ethanol was changed twice after every 20 min. Then the samples were immersed in 5% (V/V) H2O2 for 2 hr (Sigma-Aldrich, H1009) for bleaching (Biswas et al., 2023).
 
-## Clearing of maxillae and cranium
+### Clearing of maxillae and cranium
 
 After bleaching, the samples were rinsed three times with Ethyl cinnamate (ECi) (Sigma-Aldrich, 112372) for 5 min each at room temperature.
 
-## Histological preparation and staining
+### Histological preparation and staining
 
 Specifically, the tissues were fixed in 4% PFA at 4℃ for 24 hr. After fixation, the maxilla was immersed in 30% sucrose solution at 4 °C overnight. Then the samples were embedded in OCT tissue freezing medium (Leica) and placed on liquid nitrogen to conduct non-decalcified frozen sectioning at 7–10 μm thickness. The slices were blocked with 5% BSA in PBST for 20 min. The microspheres were then incubated with the appropriate primary antibodies (Mouse monoclonal anti-AlphaV, Santa Cruz, Cat#sc-376156; CD45 Rabbit mAb, Cell Signaling Technology, Cat#70257) overnight at 4 °C. On the following day, the microspheres were washed three times with fresh PBS and incubated with the specific secondary antibody, with or without DAPI, for 2 hr at room temperature. Finally, the microspheres underwent three washes with PBS, each lasting 10 min, were mounted with anti-fade fluorescence mounting medium, and were then sealed for detection. For H&E staining and Masson trichrome staining, decalcified samples were dehydrated in graded ethanol and embedded in paraffin. Mandibles were sectioned into 6 μm slices using the microtome (Leica RM2255). H&E staining was performed according to the manufacturer’s instruction (Biosharp). Masson trichrome staining was performed according to the manufacturer’s instruction (Solarbio).
 
-## Imaging and 3D reconstruction of maxillae and mandible sections
+### Imaging and 3D reconstruction of maxillae and mandible sections
 
 Digital pathological system (Olympus FV3000) was used to scan all the stained sections and reconstructed by following the previously described protocol (Wu et al. 2020). The light sheet fluorescence microscopy-Zeiss Lightsheet Z.7 was used to acquire clearing samples microscopic image stacks.
 
-## Image analysis and quantifications
+### Image analysis and quantifications
 
 Slices/Z-stacks of images acquired on the light sheet and confocal microscope were processed and reconstructed in three dimensions with Imaris software (version 10.0.1). Imaris, Adobe Photoshop 25.0, and ImageJ were used for image processing and analysis in line with the journal’s guidance for image processing. Quantification of cell numbers was done on a z stack of images in Imaris using the automatic spot detection feature.
 
-## 3D surface reconstruction
+### 3D surface reconstruction
 
 3D surface rendering in images was applied using the surface module in Imaris.
 
-## Statistical analysis
+### Statistical analysis
 
 All data were presented as the mean ± SEM. A two-tailed Student’s t-test was used for comparison between groups. p<0.05 was considered statistically significant. N.S. stands for not significant.

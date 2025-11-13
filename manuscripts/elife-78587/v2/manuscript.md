@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02feahw73 Unité de Service et de Recherche USR 3388, CNRS-Pierre Fabre, Epigenetic Targeting of Cancer (ETaC) Toulouse France
-2. https://ror.org/00btzwk36 Cancer Epigenetics Group, Josep Carreras Leukemia Research Institute (IJC) Barcelona Spain
-3. https://ror.org/02feahw73 CNRS UMR 7196, INSERM U1154, Sorbone university- National museum of natural history (NMNH) Paris France
-4. https://ror.org/003412r28 Cancer Research Center of Toulouse, UMR 1037, INSERM, Université Toulouse III Paul Sabatier Toulouse France
-5. https://ror.org/01gcc9p15 Department of Translational Molecular Medicine, Saint John’s Cancer Institute, Providence Saint John's Health Center Santa Monica United States
-6. https://ror.org/00r7b5b77 Cancer Biology and Epigenetics Group, Research Center (CI-IPOP)/P.CCC Porto Comprehensive Cancer Center, Portuguese Oncology Institute of Porto (IPO Porto) Porto Portugal
-7. https://ror.org/00r7b5b77 Department of Pathology, Portuguese Oncology Institute of Porto (IPO Porto)/P.CCC Porto Comprehensive Cancer Center Porto Portugal
-8. https://ror.org/043pwc612 Department of Pathology and Molecular Immunology, Biomedical Sciences Institute (ICBAS), University of Porto Porto Portugal
-9. https://ror.org/02vr0ne26 Department of Experimental Oncology, Instituto Europeo di Oncologia Milan Italy
-10. https://ror.org/01rje3r53 Laboratory for Functional Genomics, Fondation Jean Dausset-CEPH Paris France
-11. https://ror.org/004yvsb77 Laboratory for Epigenetics and Environment, Centre National de Recherche en Génomique Humaine, CEA-Institut de Biologie François Jacob Evry France
-12. https://ror.org/02feahw73 EpiCBio, Epigenetic Chemical Biology, Department Structural Biology and Chemistry, Institut Pasteur, CNRS UMR 3523 Paris France
+1. Unité de Service et de Recherche USR 3388, CNRS-Pierre Fabre, Epigenetic Targeting of Cancer (ETaC) Toulouse France ([ROR:02feahw73](https://ror.org/02feahw73))
+2. Cancer Epigenetics Group, Josep Carreras Leukemia Research Institute (IJC) Barcelona Spain ([ROR:00btzwk36](https://ror.org/00btzwk36))
+3. CNRS UMR 7196, INSERM U1154, Sorbone university- National museum of natural history (NMNH) Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+4. Cancer Research Center of Toulouse, UMR 1037, INSERM, Université Toulouse III Paul Sabatier Toulouse France ([ROR:003412r28](https://ror.org/003412r28))
+5. Department of Translational Molecular Medicine, Saint John’s Cancer Institute, Providence Saint John's Health Center Santa Monica United States ([ROR:01gcc9p15](https://ror.org/01gcc9p15))
+6. Cancer Biology and Epigenetics Group, Research Center (CI-IPOP)/P.CCC Porto Comprehensive Cancer Center, Portuguese Oncology Institute of Porto (IPO Porto) Porto Portugal ([ROR:00r7b5b77](https://ror.org/00r7b5b77))
+7. Department of Pathology, Portuguese Oncology Institute of Porto (IPO Porto)/P.CCC Porto Comprehensive Cancer Center Porto Portugal ([ROR:00r7b5b77](https://ror.org/00r7b5b77))
+8. Department of Pathology and Molecular Immunology, Biomedical Sciences Institute (ICBAS), University of Porto Porto Portugal ([ROR:043pwc612](https://ror.org/043pwc612))
+9. Department of Experimental Oncology, Instituto Europeo di Oncologia Milan Italy ([ROR:02vr0ne26](https://ror.org/02vr0ne26))
+10. Laboratory for Functional Genomics, Fondation Jean Dausset-CEPH Paris France ([ROR:01rje3r53](https://ror.org/01rje3r53))
+11. Laboratory for Epigenetics and Environment, Centre National de Recherche en Génomique Humaine, CEA-Institut de Biologie François Jacob Evry France ([ROR:004yvsb77](https://ror.org/004yvsb77))
+12. EpiCBio, Epigenetic Chemical Biology, Department Structural Biology and Chemistry, Institut Pasteur, CNRS UMR 3523 Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
@@ -52,27 +52,71 @@ Here, we developed a strategy that leverages the DNA methylome from different pa
 
 ## Results
 
-## A three-step strategy identifies differentially methylated genes that identify melanoma aggressiveness
+### A three-step strategy identifies differentially methylated genes that identify melanoma aggressiveness
 
 To identify genes whose DNA methylation state is related to the metastatic melanoma aggressiveness, we designed a strategy to compare the DNA methylome of three pairs of melanoma cell lines. Each pair was derived from the same patient melanoma cell lines that differed in aggressiveness and microenvironmental exposure with respect to their clinical origin or subsequent in vivo experimental processing (Figure 1). The first pair consisted of the WM115 and WM266-4 cell lines, derived from a vertical growth phase (VGP) primary melanoma and a cutaneous metastasis from the same patient, respectively, thus comparing a less and more aggressive pair of human melanoma cells. The second and the third pairs include a cell line established from a human lymph node metastasis (M4Be) and two metastatic variants selected for their increased metastatic potential in xenograft experiments either in mouse (M4BeS2) or in rat (TW12) (Figure 1A, step 1). It is important to note that in each pair, the aggressive cell line is derived from the same genetic background, but the most aggressive lines emerged in different in vivo contexts: human, mouse, and rat, respectively. We hypothesized that common aggressive DNA hypermethylation signatures should emerge early in tumorigenesis and should be shared in aggressive cells, independent of the physiological context under which this trait arises. Careful cell culture practice was applied to limit cell culture process-related divergence of DNA methylation between the cell lines to be compared.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig1-v2.jpg)
+
+**Figure 1.:** The strategy is based on the analysis of three pairs of human melanoma cell lines with an aggressive variant derived under different physiological contexts: human, mouse, and rat. In each pair, the cell line defined as more aggressive is indicated in bold characters. (A) Step 1: the methylation status of more than 480,000 CpG positions was compared in each cell line pair using the Illumina Infinium Human Methylation 450 K BeadChip technology. 229 common genes showing at least three CpGs positions with methylation levels increased by 20% in the aggressive cell line were retained (hypermethylated genes). (B) Step 2: two strategies for data analysis were used: the oriented strategy is based on a statistical analysis of the distribution of the hypermethylated genes across the genome, and the non-oriented strategy uses Ingenuity Pathway Analysis software to identify potential links to described networks and functions. (C) Step 3: experimental validation of the selected genes, by bisulfite pyrosequencing for DNA methylation and RT-PCR for gene expression, was performed in the WM115 and WM266-4 cell lines prior to analysis in patient samples. After applying this differential threshold to at least three CpG positions for each gene, we found that 2783, 1645, and 1641 genes were hypermethylated in WM266-4 vs WM115, M4BeS2 vs M4Be, and TW12 vs M4Be, respectively (A). 229 genes, comprising 5590 CpG sites, were common to all three pairs of cell lines. These 229 genes were further analysed using the human WM115/WM266-4 pair. 1287 (23%) CpGs were hypermethylated (>20%) in WM266-4 cells of which 788 (61%) were located in promoter regions (TSS1500-TSS200-5’UTR-first exon), 452 (35%) in gene bodies and 47 (4%) in 3’UTR regions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Among the 229 genes, 116 were associated to IPA canonical functions. Column 1 indicates the top functions. Column 2 shows the −log(p-value) as horizontal histogram relative to the Fisher exact test p<0.05: −log (0.05=1.3 = threshold) used by IPA to classify the most representative functions. The score in column 3 corresponds to the number of genes among the 229 belonging to the associated function.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig1-figsupp2-v2.jpg)
+
 The DNA methylation profiles of each cell line was analysed using the Human Methylation 450 K array BeadChip technology to identify the hypermethylated genes in the more aggressive variants. A first global analysis showed that nearly half of the analysed genes displayed at least one CpG position, where methylation levels are increased over 20% in the aggressive cell line compared to its respective counterpart. We made the choice to restrict the analysis to CpGs in promoters or first exons to consider correlations to key biological processes associated to DNA methylation changes in cutaneous melanoma. Following this first step of selection, we adopted two complementary approaches (Figure 1B). An oriented strategy, based on the genomic mapping of the 229 hypermethylated genes common to the aggressive melanoma cell lines, allowed us to identify clusters of hypermethylation. Clusters consisted of at least two hypermethylated genes that are either direct neighbours or separated within 3 megabases (Mb) of one another (Figure 2). Sex chromosomes were excluded from this analysis because they are subject to parental imprinting (Barlow, 2011).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig2-v2.jpg)
+
+**Figure 2.:** The Ensembl genome browser (http://www.ensembl.org, view on karyotype) was used to map the 229 hypermethylated genes to the human genome. Sex chromosomes were excluded from the analysis. Each arrowhead could correspond to several genes. Methylation clusters are indicated by dotted line circles. Chromosome 5 and 6 circles correspond to two clusters that are too close to be separated on this scale.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Promoter methylation scores correspond to the average methylation values at CpG positions located in the promoter regions showing an increased methylation above 20% in WM266-4 compared to WM115 cells. The genes are indicated on the ‘band giemsa-related’ representation (arrows). The graph shows genes with at least two CpGs in the promoter region with DNA methylation differences over 40% between WM266-4 and WM115 cells (grey squares). (A) Localization and promoter methylation score of nine hypermethylated genes found on chromosome 5. The PCDHB genes cluster is magnified in the insert. (B) Localization and promoter methylation score of 15 hypermethylated genes found on chromosome 17; five of them belong to the MYH1 cluster (insert).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Nine methylation clusters containing 29 genes on six chromosomes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig2-figsupp3-v2.jpg)
 
 Bootstrap analysis of the repartition of the 229 genes along the chromosomes confirmed a non-random distribution, and hypermethylated genes enriched in short chromosomal regions (Figure 2 and Figure 2—figure supplement 1). Nine methylation clusters were identified on chromosomes 5, 6, 10, 15, 16, and 17 (dotted line circles in Figure 2 and list in Figure 2—figure supplement 2), containing a total of 74 genes (Figure 2—figure supplement 3). Among these genes, 34 were further selected because they displayed at least two hypermethylated CpGs located in the promoter region (TSS1500-TSS200-5’UTR-first exon) and a 40% difference in methylation when comparing human WM266-4 to WM115 cells. Chromosomes 5 and 17 are of particular interest as the methylation clusters contain large multigenic families (Figure 2—figure supplement 1). On chromosome 5, nine genes were identified as hypermethylated with a methylation cluster containing six genes belonging to the protocadherin beta (PCDHB) family (Figure 2—figure supplement 1A and insert). SPAG7, SOCS3, and RAC3 displayed the strongest hypermethylation values (over 90%) among the 10 hypermethylated genes found on chromosome 17 that had at least two CpGs in the promoter region with a >40% difference methylation in WM266-4 cells. Interestingly, this methylation cluster included five members of the multigenic myosin heavy chain (MYH) family (insert in Figure 2—figure supplement 1B).
 
 We then reasoned that even if not associated to gene expression, this specific high difference in DNA methylation common to different aggressive melanoma should play a role in cancer. Thus, the second strategy was non-oriented and consisted of analysing the functional pathways in which the 229 hypermethylated genes were involved. Using QIAGEN Ingenuity Pathway Analysis (IPA, QIAGEN Redwood City, https://digitalinsights.qiagen.com/) software, we found 116 genes highly associated with known functions (p<0.05, Figure 1—figure supplement 1). In the top 15 functions, which might play a role in aggressiveness and carcinogenesis of the melanoma cells, were cell-to-cell signalling and interactions, cellular assembly and organization, and cancer and cellular movement. Finally, when cross-checking the 34 genes from the oriented strategy and the 116 genes from the non-oriented strategy, we identified 19 common genes (Figure 1B). Notably, all of 19 genes were associated with one or two of the top functional networks from the IPA (Figure 1—figure supplement 1 and Supplementary file 1).
 
-## Gene selection and validation
+### Gene selection and validation
 
 The third part of our approach consisted of validating the methylation status of a subset of these candidate genes in melanoma cell lines and patient’s tissues samples. Combining the cluster analysis and the IPA results, 19 overlapped and we chose in total eight genes because: (Moran et al., 2018) distributed on four different chromosomes, bearing hypermethylation clusters (Luke et al., 2017), represent hypermethylation peaks, showing a strong methylation difference between the aggressive and non-aggressive cell lines, and Teterycz et al., 2019 have a potential role in aggressiveness suggested by the literature (Figure 1—figure supplement 2). On chromosome 17, we chose the following four genes. MYH1 was selected because it forms a highly differentially methylated cluster (Figure 2—figure supplement 1B) and is known to show aberrant expression levels in aggressive cells in head and neck squamous and lung carcinoma tumours (Vachani et al., 2007). SOCS3 and RAC3 displayed among the highest hypermethylation peaks in our aggressive melanoma lines (92 and 96%, respectively), with a very high differential methylation score, above 70%, between WM266-4 and WM115 cells. In addition, SOCS3 has previously been reported to be hypermethylated in melanoma (Tokita et al., 2007), while loss of RAC3 expression has been associated with impaired invasion in glioma and breast carcinoma cells (Chan et al., 2005; Baugher et al., 2005). HOXB2 was chosen for its lower methylation score (69%) and differential methylation score (45%). It has previously been associated with progression of bladder cancer when silenced by promoter hypermethylation, and it can be re-expressed upon demethylation treatment with 5-azacitidine (5AzadC) (Marsit et al., 2010). On chromosome 5, two genes were chosen from the PCDHB hypermethylation cluster: PCDHB15 and PCDHB16 that are CIMP-associated with bad prognosis in neuroblastoma (Abe et al., 2005; Banelli et al., 2012). Of note, neurons and melanocytes originate from the same germ layer during embryogenesis. Furthermore, BCL2L10 (B cell lymphoma 2 like 10) located on chromosome 15 was selected because it bears the highest methylation score (73%) on this chromosome, it is implicated in apoptosis, it was previously described as hypermethylated in gastric cancer cell lines (Mikata et al., 2010), and associated with poor prognosis in gastric cancer patients (Xu et al., 2011; Voso et al., 2011). Finally, MIR155HG, located on chromosome 21, encodes a microRNA, miR-155, was chosen because linked to cell proliferation and cancer (Elton et al., 2013), including in melanoma where it is downregulated (Levati et al., 2009; Wang et al., 2020).
 
 The methylation status of these eight genes (MYH1, RAC3, SOCS3, HOXB2, PCDHB15, PCDHB16, BCL2L10, and MIR155HG) was further validated in WM115 vs WM266-4 cell lines by DNA pyrosequencing after bisulfite conversion and PCR amplification on 100 bp regions containing the CpGs identified in step 2 (Figure 1C). Seven genes pass the threshold of validation, 20% DNA methylation difference between the cell lines (Figure 3—figure supplement 1).
 
-## Validation in patient samples and identification of a methylation signature
+### Validation in patient samples and identification of a methylation signature
 
 Next, we assessed the methylation profile of the eight selected genes in 20 tumour tissues from melanoma patients of which 10 were from metastatic melanomas and 10 were from primary melanomas (Figure 1C). Four genes (MYH1, PCDHB16, PCDHB15, and BCL2L10) showed a differential methylation profile between metastatic and primary tumour tissue samples (data not shown). For further validation, CpG sites in these four genes were individually analysed using bisulfite conversion followed by pyrosequencing in reference pair of cell lines (WM115/WM266-4) as well as two melanoma cell lines derived from the same patient: WM983A (primary site) and WM983B (lymph node metastatic site, Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig3-v2.jpg)
+
+**Figure 3.:** (A) Shown is the localization of all the CpGs analysed (lollipops) on the four selected genes (MYH1, PCDHB15, PCDHB16, and BCL2L10). The CpGs present on the 450 k array are in bold type (black lollipops). The heatmap indicates the DNA methylation percentage (red = 100 and green = 0) of the indicated CpGs in each gene and each cell line. WM115 and WM983A are primary cell lines derived from two patients. WM266-4 and WM983B are the cutaneous and lymph node metastasis counterpart. WM266-4 cells were treated with daily doses of 5AzadC (32, 100, and 320 nM) 72 hr before genomic DNA extraction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Hypermethylation (methylation difference ≥20%: dotted line) for all candidate genes analysed by bisulfite-pyrosequencing.
+
 DNA methylation levels at each CpG site were analysed by bisulfite pyrosequencing, confirming a clear difference in methylation for the four genes in the aggressive tumour cells compared to less aggressive forms. Interestingly, this DNA methylation could be reversed in WM266-4 cells using a low dose of 5AzadC treatment (32, 100, and 320 nM). The median methylation of these individual CpGs was determined on the first set of patient samples, 10 metastatic and 10 primary tumours, and on additional 10 primary tumour samples (Figure 4—figure supplement 1). Remarkably, the median of DNA methylation within primary samples appeared to be inversely correlated with patient OS. Thus, we defined patients with primary tumours diagnosis and long survival (LS) with an OS >1 year and patients with short survival (SS) with an OS (median survival = 6 months) ≤1 year (median survival = 51 months) after diagnosed. 1 year was chosen because, at the time of the sampling and the beginning of the study, it was the average OS of diagnosticated cutaneous melanoma. In addition, the delay of 1 year well distinguished the two group of LS and SS. The DNA methylation profile in primary tumours with SS similar to that observed in metastatic patients (top, in red, Figure 4—figure supplement 1). The analysis showed that MYH1 was globally hypomethylated in SS patients, whereas PCDHB16, PCDHB15, and BCL2L10 were hypermethylated. Data from 29 additional primary tumours samples were then analysed. The extended cohort of patient with primary melanoma primary (n = 49) confirmed that these four differentially methylated genes represent specific markers of more aggressive SS primary and metastatic melanoma tumours (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig4-v2.jpg)
+
+**Figure 4.:** (A) The heatmap shows the median DNA methylation of analysed CpGs for each gene in metastatic (n = 10) and primary (n = 49) patient samples. Primary samples are divided by a black line indicating the cut-off at 1 year between the short survival and long survival (SS [left] and LS [right]). (B) DNA methylation changes in selected CpGs between SS (left box) and LS (right box) patients, respectively (n = 49). Fisher test to analyse variances and t-test were performed, *p<0.05. (C) Kaplan–Meier curve of patients’ survival based on the methylation score calculated for the five CpGs reported in panel B. The methylation score = 2 corresponds to at least two CpGs that showed a methylation difference >15% when compared to the DNA methylation median of the primary metastasis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The median DNA methylation of the analysed CpG for each gene is indicated as percentage and overall survival in months. Primary samples are divided by a small black line indicating the cut-off at 1 year between the short survival and long overall survival (SS and LS).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78587/elife-78587-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Kaplan–Meier curve of patients based on the methylation score in the 49 primary melanoma samples. (B) Hazard ratio plot calculated from our methylation score on the 49 primary melanoma samples. (C) Kaplan–Meier curve of patients according to the primary tumour grade defined by the American Joint Committee on Cancer (AJCC) staging system of melanoma from Breslow index (primary tumour T1=less than 1 mm, T2=less than 2 mm, T3=between 2 and 4 mm, and T4=more than 4 mm). (D) Kaplan–Meier curve of patients based on the Breslow index in the 49 primary melanoma samples (less than 2 in blue: T1 and T2 grade; more than 2 in red: T3 and T4 grades). (E) Hazard ratio plot calculated from Breslow index on the 49 primary melanoma samples. Hazard ratio plot calculated from the interaction between our methylation score and the Breslow index on the 49 primary melanoma samples.
 
 To determine the combination of CpGs that might predict melanoma aggressiveness and thus survival outcome in patients with primary tumours, DNA methylation at individual CpG sites was analysed using bisulfite pyrosequencing (CpG positions are illustrated in Figure 3 and detailed in Supplementary file 2). One CpG showed significantly differential methylated in primary samples from SS patients (median SS = 6 months) when compared to LS patients (median LS = 51 months) for PCDHB15, PCDBH16, and MYH1, and two CpGs for BCL2L10 (Figure 4B). DNA methylation MYH1 CpG was inversely correlated with survival duration and was significantly hypomethylated in primary samples from SS patients; whereas PCDHB16, PCDHB15, and BCL2L10 CpGs were hypermethylated in SS patients. To validate the robustness of this signature, a score was calculated as follows: a score of 1 was given to each gene when the median DNA methylation of the CpG met conditions for hypomethylation (>15%, seen for MYH1) and hypermethylation (>15%, for PCDHB16, PCDHB15, and BCL2L10). CpGs not meeting these criteria were given a score of 0. The mean of the two CpGs was considered for BCL2L10 as they are close to each other and correspond to a methylation peak. The final score was obtained by summing points attributed to each gene so that scores range from 0 to 4 (Supplementary file 3). A threshold of 2 (i.e. with at least two genes matching this condition) was used to include patients with a methylation score ≥2. The methylation score was represented as a function of survival in months (Figure 4C and Figure 4—figure supplement 2A). Patients with a methylation score ≥2 (red line) had a shorter life expectancy (≤1 year) than those with a methylation score value <2 (blue line). This analysis demonstrated that a methylation score of at least 2 in primary melanoma samples is predictive of patient outcome (log-rank test, p=0.0008) with a significant hazard ratio of 3.4 (p=0.001, concordance index = 0.62; Figure 4—figure supplement 2B). Then, we compared the methylation score to the clinical parameter used in clinic, the Breslow index. Based on the melanoma American Joint Committee on Cancer (AJCC) staging (T1, T2, T3, and T4), we confirmed that on our 49 patient samples, an increased Breslow depth of the primary tumour is a prognostic factor for survival probability (Kaplan–Meier plot in Figure 4—figure supplement 2C). As our cohort contained only one sample of T1 grade (primary tumour’s depth less than 1 mm), we then compared the survival probability between two groups: Breslow index below 2 mm (T1 and T2) or above 2 mm (T3 and T4). We obtained no statistical difference between the two groups (Figure 4—figure supplement 2D and E) in contrast to what obtain upon use of the methylation signature (Figure 4—figure supplement 2A and B). Most interestingly, the interaction between the methylation score and the Breslow index gave a significant increase of the hazard ratio from 3.4 to 6.3 (p<0,001, concordance index = 0.63, Figure 4—figure supplement 2F). This result support that the methylation score could improve the clinical prognostic utility of the Breslow index.
 
@@ -88,25 +132,295 @@ Recently, a DNA methylation signature based on four CpGs was shown to prognostic
 
 In parallel, the DNA methylation analysis allowed us to identify that miR199-3p is silenced by promoter hypermethylation promoting metastasis formation (Desjobert et al., 2019) and that PCDHB15 plays a role in inhibiting invasion, aggregation, and lung metastasis formation in vivo when stably overexpressed in metastatic melanoma cells (study ongoing).
 
-## Conclusions
+### Conclusions
 
 We developed a novel multistep approach that allowed us to identify a methylation signature of five CpGs in primary melanoma tissues that has the potential to predict survival outcomes in cutaneous melanoma patients. Importantly, the five CpGs are located on four different genes, and it is not the expression of the genes that is monitored. Our method was based on two main concepts; the first one being that aggressive traits marked by DNA hypermethylation appear early in the disease and are independent of physiological context. The second concept is that hypermethylated sites in metastatic forms of melanoma are gathered in genomic clusters. On the methodological side, we combined analysis of the DNA methylome with chromosomal location. Following these general concepts, this integrated approach can be applied not only to other cancer types but also to other diseases or biological processes where DNA methylation changes are identified.
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WM115</td>
+      <td>ATCC</td>
+      <td>CRL-1676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WM-266–4</td>
+      <td>ATCC</td>
+      <td>CRL-1675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WM983A</td>
+      <td>Coriell Institute</td>
+      <td>WC00048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>WM983B</td>
+      <td>Coriell Institute</td>
+      <td>WC00066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>M4Be</td>
+      <td>Bailly and Doré, 1991</td>
+      <td>Not applicable</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TW12</td>
+      <td>Bailly and Doré, 1991; Bertucci et al., 2007; Thomas et al., 1995</td>
+      <td>Not applicable</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>M4BeS2</td>
+      <td>Clark et al., 2000</td>
+      <td>Not applicable</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Department of Pathology, IUCT-O Toulouse Hospital (France)</td>
+      <td></td>
+      <td>Primary melanomas (n=12), lymph node metastases (n = 7), and cutaneous metastases (n=3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Department of Experimental Oncology, European Institute of Oncology, Milan (Italy)</td>
+      <td></td>
+      <td>Primary melanoma (n = 5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Saint John’s Cancer Institute (formerly John Wayne Cancer institute [USA])</td>
+      <td></td>
+      <td>Primary melanomas (n=12)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Department of Pathology of the Portuguese Oncology Institute of Porto (IPO-Porto)</td>
+      <td></td>
+      <td>Primary melanomas (n=20)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Tissue kit</td>
+      <td>Qiagen</td>
+      <td>69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QiaAmp kit</td>
+      <td>Qiagen</td>
+      <td>965672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FFPE RNA/DNA Purification Plus Kit</td>
+      <td>FFPE RNA/DNA Purification Plus Kit</td>
+      <td>54300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EpiTect 96 Bisulfite Kit</td>
+      <td>Qiagen</td>
+      <td>59104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Infinium Human Methylation 450 K BeadChips</td>
+      <td>Illumina</td>
+      <td>WG-310–1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PyroGold SQA reagent kit</td>
+      <td>Qiagen</td>
+      <td>972824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HotStarTaq DNA polymerase</td>
+      <td>Qiagen</td>
+      <td>203207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GenomeStudio</td>
+      <td>Illumina</td>
+      <td>Version 2011.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>R studio</td>
+      <td>RStudio, Inc</td>
+      <td>RStudio 2021.09.2 382 ‘Ghost Orchid’ Release. R version 4.1.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>PyroMark software</td>
+      <td>Qiagen</td>
+      <td>V1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GraphPad Prims8</td>
+      <td>Dotmatics</td>
+      <td>Version 8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>QIAGEN’s Ingenuity Pathway Analysis</td>
+      <td>Qiagen</td>
+      <td>836508</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The WM115 and WM266-4 cell lines were obtained from the American Type Culture Collection. The WM-115 cell line was derived from a human primary melanoma in early stages of the VGP. The WM266-4 cell line was derived from a cutaneous metastatic melanoma tumour of the same patient. These two cell lines were derived from the same female patient, with a similar sampling age (55 years old).The WM983A and WM983B cell lines were obtained from the Coriell Institute (USA). The WM983A was derived from a human primary melanoma in VGP, and the WM983B is the cutaneous lymph node metastasis in same male patient (both sampled at 54 years old). The M4Be cell line was established from a human cutaneous lymph node metastasis (Jacubovich and Doré, 1979). The TW12 cell line is a human aggressive variant of the parental M4Be cell line that was obtained in vivo after two serial transplantations (subcutaneous xenografts in new-born immuno-deprived rats). A subclone (TW12) was selected after limiting dilution for its high ability to form lung metastasis (Bailly and Doré, 1991; Bertucci et al., 2007; Thomas et al., 1995). The M4BeS2 cell line was obtained in the L Lamant’s laboratory according to the in vivo selection scheme described by Clark et al., 2000. Briefly, M4Be cells were xenografted intravenously in nude mice. Lung metastases were collected, grown briefly in vitro, and used for a second cycle of intravenous injection. Lung metastases were collected and established in vitro as the M4BeS2 human cell line. WM983A and WM983B cell lines were grown in 20% Leibovitz L-15 medium (v/v), 2% foetal bovine serum (FBS) heat inactivated (v/v), 5 μg/mL insulin, and 1.68 mM CaCl2. All other cell lines were grown in Dulbecco's Modified Eagle Medium (DMEM) (Invitrogen, France) supplemented with 10% FBS (Sigma, France), 2 mM glutamine, 100 IU/mL penicillin-streptomycin, and 1.25 µg/mL fungizone (Invitrogen) in 5% CO2. Quantitation of viable cells was performed using an automated Cell Viability Analyzer (Beckman Coulter Vi-Cell). All cell lines were stored in ampoules in liquid nitrogen after receipt. All cell lines were regularly verified for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza, Switzerland) and kept for a limited number of passages in culture. Careful cell culture practice and experimental planning were applied to limit the number of passages and cell culture process-related divergence of DNA methylation between the cell lines to be compared.
 
-## Tumour samples
+### Tumour samples
 
 Tumour samples from melanoma patients were obtained from the tumour tissue bank at the Department of Pathology, IUCT-O Toulouse Hospital (France). The study was carried out in accordance with the institutional review board-approved protocols (CRB, AC-2013–1955), and the procedures followed were in accordance with the Helsinki Declaration. Pathological specimens consisted of primary melanomas (n=12), lymph node metastases (n = 7), and cutaneous metastases (n = 3). Only four patients have primary and metastasis associate; all others are independents. Additional primary melanoma (n = 5) frozen samples were provided by the Department of Experimental Oncology, European Institute of Oncology, Milan (Italy). The Saint John’s Cancer Institute (formerly John Wayne Cancer institute [USA]) Formalin-fixed paraffin-embedded (FFPE) specimen cohort included tissues including primary melanomas (n = 12). A total of 20 FFPE tissues samples from patients diagnosed with cutaneous melanoma between 2007 and 2017 at the Portuguese Oncology Institute of Porto (IPO-Porto) without any neoadjuvant treatment was included in this study. All samples were archived at the Department of Pathology of IPO-Porto. All cases were reviewed by an experienced pathologist and staged according to the eighth edition AJCC system (Gershenwald et al., 2017). Relevant clinical data was collected from medical charts. For DNA extraction, a 4 μm section was cut from a representative tissue block and stained with hematoxylin-eosin. Tumour areas containing >70% transformed cells were delimited, enabling macrodissection in eight consecutive 8 μm sections. This study was approved by the institutional ethics committee of IPO Porto (CES-IPOP-FG13/2016). Anonymized clinical information for all the melanoma patients analysed is available, and the clinical pathological features of primary melanoma patients are indicated below (Table 1).
 
-## Genomic DNA isolation
+**Table 1.**
+ Clinical pathological features of primary melanoma patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>n (%)</th>
+    </tr>
+    <tr>
+      <th>Mean age (SD)</th>
+      <th>66.40 (15.88)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Male</td>
+      <td>26 (53)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>23 (47)</td>
+    </tr>
+    <tr>
+      <td colspan="2">American Joint Committee on Cancer eighth stages</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>12 (24)</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>12 (24)</td>
+    </tr>
+    <tr>
+      <td>IIIA</td>
+      <td>1 (2)</td>
+    </tr>
+    <tr>
+      <td>IIIB</td>
+      <td>2 (4)</td>
+    </tr>
+    <tr>
+      <td>IIIC</td>
+      <td>2 (4)</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>2 (4)</td>
+    </tr>
+    <tr>
+      <td>IIA</td>
+      <td>3 (6)</td>
+    </tr>
+    <tr>
+      <td>IIB</td>
+      <td>6 (12)</td>
+    </tr>
+    <tr>
+      <td>IIC</td>
+      <td>6 (12)</td>
+    </tr>
+    <tr>
+      <td>IB</td>
+      <td>2 (4)</td>
+    </tr>
+    <tr>
+      <td>unknown</td>
+      <td>1 (2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Mutations</td>
+    </tr>
+    <tr>
+      <td>NRAS</td>
+      <td>1 (2)</td>
+    </tr>
+    <tr>
+      <td>BRAF</td>
+      <td>6 (12)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>42 (86)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genomic DNA isolation
 
 Genomic DNA from cell lines was performed using the DNeasy Tissue kit (Qiagen, France). Genomic DNA from frozen patient samples was isolated using the QiaAmp kit (Qiagen, France). DNA extraction from FFPE sections was performed using the FFPE RNA/DNA Purification Plus Kit (Norgen Biotek, Thorold, Canada) in accordance with manufacturer’s instructions. DNA concentration and purity were determined using the NanoDrop Lite spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA).
 
-## Illumina methylation 450K microarray analysis
+### Illumina methylation 450K microarray analysis
 
 Genome-wide DNA methylation analysis was performed on three independent samples from each cell line. 1 µg of DNA was bisulfite-treated using the EpiTect 96 Bisulfite Kit (Qiagen GmbH, Germany). 200 ng of bisulfite-treated DNA was analysed using Infinium Human Methylation 450 K BeadChips (Illumina Inc, CA, USA). The array allows the interrogation of more than 485,000 methylation CpG sites per sample covering 99% of RefSeq genes, with an average of 17 CpG sites per gene region distributed across the promoter, 5’-UTR, first exon, gene body, and 3’-UTR.
 
@@ -120,20 +434,20 @@ The corresponding genes were obtained from a list of differentially methylated p
 
 The promoter methylation scores (%) reported in Figure 2—figure supplement 1 were defined as follows: mean (probe 1 ß-value to probe n ß-value) ×100, where probe 1 to probe n are probes that are differentially methylated between WM266 and WM115 cells (with a difference threshold 0.2 on a scale from 0 to 1) and located in the promoter region (TSS1500-TSS200-5’UTR-first exon).
 
-## Bisulfite pyrosequencing
+### Bisulfite pyrosequencing
 
 Quantitative DNA methylation analysis was performed by pyrosequencing of bisulfite-treated DNA as described in Tost and Gut, 2007. CpGs for validation were amplified using 20 ng of bisulfite-treated human genomic DNA and 5–7.5 pmol of forward and reverse primer, one of them being biotinylated. Oligonucleotide sequences for PCR amplification and pyrosequencing are given in the supplementary data (Supplementary file 2). Reaction conditions were 1×HotStar Taq buffer (Qiagen) supplemented with 1.6 mM MgCl2, 100 μM dNTPs, and 2.0 U HotStar Taq polymerase (Qiagen) in a 25 μL volume. The PCR program consisted of a denaturing step of 15 min at 95°C, followed by 50 cycles of 30 s at 95°C, 30 s at the respective annealing temperature and 20 s at 72°C, with a final extension of 5 min at 72°C. A total of 10 μL of PCR product was rendered single-stranded as previously described, and 4 pmol of the respective sequencing primers were used for analysis. Quantitative DNA methylation analysis was carried out on a PSQ 96MD system with the PyroGold SQA Reagent Kit (Qiagen) and results were analysed using the PyroMark software (V.1.0, Qiagen).
 
 Percentages of methylation (% CpG) were measured for each individual CpG present in the regions analysed by pyrosequencing. The regions chosen were around the CpGs identified by the Illumina methylation 450 K analysis and include other CpGs. DNA methylation heatmaps were obtained using Prism8 software. The heatmaps in Figure 3 refer to the median of the median of the methylation percentages of the n CpG analysed by pyrosequencing (median [CpG1:%,…CpGn:%]). For each analysed gene, the difference of methylation percentages of gene promoter regions comparing WM266-4 and WM155, reported in Figure 3—figure supplement 1A, was calculated as follows: median ([CpG1:%,…CpGn:%] in WM266-4 cells) − median ([CpG1:%,…CpGn:%] in WM115 cells).
 
-## Definition of the signature score
+### Definition of the signature score
 
 The signature score considered the individual methylation values (percentages) of the selected single CpGs associated with MYH1, PCDHB16, PCDHB15, and the mean methylation values for the two CpGs selected for BCL2L10. For each gene, these methylation values were compared to the methylation median calculated from all the primary samples. A score of 1 was attributed to the gene when the methylation values differed by at least 15%. For MYH1, for which hypomethylation was associated with aggressiveness, this score was attributed when the methylation value was inferior to the median. Conversely, a score of 1 indicated a methylation value superior to the median for the three other genes (PCDHB16, PCDHB15, and BCL2L10). The signature score was the sum of the scores attributed individually to the four genes and fell between 0 and 4. Signature score and survival information were reported in Supplementary file 3. This score was evaluated for each gene to assess potential correlation between individual gene scores. A random simulation using R software and based on a Chi-square test indicate that the methylation of these genes was independent from one another p<0.01. Kaplan–Meier plots were created using GraphPad Prims8 software. The survival in months was indicated depending whether the score was under vs equal or superior than 2. Survival analysis was performed using a log-rank and the Gehan-Breslow-Wilcoxon test with a p-value<0.001 for each considered significant. Hazard ratio was estimated on R software using survival, survminer, and ggplot2 packages.
 
-## Methylation cluster identification through statistical analysis of the distribution of the hypermethylated genes
+### Methylation cluster identification through statistical analysis of the distribution of the hypermethylated genes
 
 Identified methylation clusters highlight regions where the methylation distribution on the chromosome is not random. Maps of the 229 hypermethylated genes were visualized on the Ensembl website using the tool view on karyotype (http://www.ensembl.org). Sex chromosomes were excluded from the analysis. The clusters were defined as a group of at least two methylated genes in close proximity separated by non-methylated genes. The statistical relevance of the number of observed clusters on each chromosome was addressed using bootstrapping. For each simulation, methylated and non-methylated genes were randomly repositioned (shuffled) along each chromosome before recomputing the number of clusters. 1000 simulations were performed to estimate the probability of obtaining the number of observed clusters. All analyses were performed using custom-written scripts implemented in the statistical programming language R (http://cran.r-project.org/). All R-scripts are available from the authors upon request.
 
-## Functional annotation and pathway analysis
+### Functional annotation and pathway analysis
 
 The list of hypermethylated genes was imported into QIAGEN’s IPA (QIAGEN Redwood City, https://digitalinsights.qiagen.com/). In IPA, hypermethylated genes were mapped to molecular and cellular functions and to networks available in the ingenuity database and then ranked by score or p-value (p<0.05).

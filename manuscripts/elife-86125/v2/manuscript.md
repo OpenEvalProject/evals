@@ -21,10 +21,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Institute of Immunology and Immunotherapy, College of Medical and Dental Sciences, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/03angcq70 Centre for Computational Biology, University of Birmingham Birmingham United Kingdom
-3. https://ror.org/04tnbqb63 Cancer Research Horizons, The Francis Crick Institute London United Kingdom
-4. https://ror.org/048emj907 University Hospitals Birmingham NHS Foundation Trust, Queen Elizabeth Hospital Birmingham Birmingham United Kingdom
+1. Institute of Immunology and Immunotherapy, College of Medical and Dental Sciences, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. Centre for Computational Biology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+3. Cancer Research Horizons, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+4. University Hospitals Birmingham NHS Foundation Trust, Queen Elizabeth Hospital Birmingham Birmingham United Kingdom ([ROR:048emj907](https://ror.org/048emj907))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Immunotherapy trials in PDAC indicate that multi-modal approaches may be require
 
 ## Results
 
-## Spatially defined stromal and immune regions can be characterized within the PDAC microenvironment
+### Spatially defined stromal and immune regions can be characterized within the PDAC microenvironment
 
 Histological slide sections were obtained from tumor biopsies of 24 patients with pancreatic ductal adenocarcinoma (PDAC) who had undergone surgical resection for localized disease. Thirteen patients had died of PDAC within 12 months of diagnosis (subsequently referred to as ‘poor response’) whilst 11 had survived for at least 36 months (‘good response’).
 
@@ -58,17 +58,49 @@ Ninety-four RNA hybridization probes (Supplementary file 1, Figure 2—figure su
 
 Hierarchical clustering of transcriptional datasets delineated immune and stromal regions with two immune profiles clustering separately due to differential expression of activatory and inhibitory immune genes. Cell-type expression profiles were consistent with immune or stromal origin (Figure 2A). UMAP analysis broadly separated tumor, proximal stroma, distal stroma, and immune regions (Figure 2B), although overlay of clinical outcome data did not reveal significant clustering.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-v2.jpg)
+
+**Figure 2.:** (A) Expression profile of all endogenous probes across regions of interest (ROI) with hierarchical clustering of ROIs. (B) UMAP embedding from normalized count data showing all ROIs overlaid with ROI-specific annotations of Region (Immune/Stroma/Tumor type) and Survival (1 yr/3 yr). (C) Mean normalized count of cell type marker genes within regions. Lines indicate regions from the same patient; dashed line represents mean background threshold from negative probes; Mean +/-SE of mean shown in red. (D) Differential expression analysis to identift genes expressed differentially between Immune and Stroma ROIs. Colored points indicate differentially expressed genes (DEG) (BH adjusted p<0.05 and absolute log2FC >0.25). (E) Immune and Stroma expression signatures from DEGs identified in D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of raw expression profile for the complete probeset (colour scale = raw count). (B) Per patient (scan) expression distributions for PanCK+ (tumor) and PanCK- (non-tumor) regions of interest. (C) Per patient (scan) expression profiles (mean +/-SE) for Endogenous, Housekeeping and Negative control probesets.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Pairwise correlation scatter plots for 6 housekeeping control probes. Raw housekeeping gene counts from all regions of interest (ROIs) were correlated against each other. Plots display the scatter, distribution histogram and Pearson correlation coefficient and significance (***p<0.001). (B) Relative log expression plots of raw count data and post normalization with the top two most-correlated housekeeping genes (H3F3A and UBB) to remove unwanted variation (RUV method).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Pairwise correlations of normalized gene count data represented as a matrix of Pearson correlation coefficients.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** UMAP embedding generated from normalized count data of all probes in all REIs overlaid with ROI-specific normalized gene count.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) (left), UMAP embedding of transcriptional data for 17,958 cells in the tumor microenvironment of 3 x PDAC patient tissue samples overlaid with high level cell type identified from unsupervised clustering. A (right), UMAP embedding overlaid with source sample identifier. (B) UMAP embedding overlaid with the expression profile of canonical high level cell type marker genes. (C) Average scRNA expression profile of spatial profiling defined Immune and Stroma ROI type-associated genes within high level cell types defined by scRNA-seq (n=3 PDAC samples).
+
 Expression of cell lineage marker genes was then used to determine the relative localization of cell subsets within proximal-stromal, distal-stromal, immune or tumor regions of interest (Figure 2C). These confirmed localization of epithelial, fibroblast and lymphoid cells within the tumor, stromal and immune regions respectively whilst monocyte representation was equivalent within stromal and immune regions, consistent with broad infiltration within PDAC microenvironment. CD3E and MS4A1 expression indicated that stromal regions also contained smaller populations of infiltrating T and B cells (Figure 2C). Distinct modules of genes co-expressed with lineage markers could also be identified and were consistent with cell type (Figure 2—figure supplement 3). Stromal regions expressed canonical fibroblast markers such as THY1, PDPN, and FAP whilst immune-specific genes such as PTPRC, CD3E and MS4A1 were present within Immune regions (Figure 2D and E, Figure 2—figure supplement 4).
 
 To align the regional transcriptional landscape to specific cell subsets, RNA expression profiles defined by NanoString DSP analysis were mapped onto an additional scRNA-Seq dataset derived from three additional patients (Figure 2—figure supplement 5; Pearce et al., 2023). This revealed that, whilst the great majority of stromal-associated genes were expressed from fibroblasts, the expression of CSF1R within stroma was largely derived from myeloid cells, CTNNB1 localized to endothelial cells and expression of KRT was identified as KRT18 within epithelial cells (Figure 2—figure supplement 5C).
 
-## The transcriptional profile of stromal regions is strongly determined by proximity to tumor
+### The transcriptional profile of stromal regions is strongly determined by proximity to tumor
 
 We next went on to assess gene expression within stroma in relation to proximity to tumor (Figure 3). Transcriptional profiles were seen to vary markedly between tumor-proximal or tumor-distal ROI. In particular, expression of DKK3 and PDPN was markedly increased in stroma-proximal regions (Figure 3A, B and C) and both are established markers of cancer-associated fibroblasts implicated in support of tumor growth (Zhou et al., 2018; Hirayama et al., 2018; Shindo et al., 2013). In contrast, expression of C3, SFRP2, STAT3, IL-6 and THY1 was increased in tumor-distal stroma. C3 and SFRP2 expression were particularly elevated (Figure 3C) and localization of C3 expression to fibroblasts was further suggested by correlation with fibroblast, but not monocyte, marker genes (Figure 3—figure supplement 1). This is noteworthy given the emerging importance for intracellular complement expression and the action of SFRP2 as a Wnt inhibitor. STAT3 and IL-6 expression could be explained by their presence within inflammatory CAFs whilst THY1 is commonly expressed on stem-like populations of fibroblasts (Shi et al., 2019). The stem cell marker CD34 was also expressed in this region (Figure 3A, B and C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig3-v2.jpg)
+
+**Figure 3.:** (A) Differentially expressed genes (DEGs) between stroma regions proximal (P) or distal (D) from tumor. Colored points indicate differentially expressed genes (BH adjusted P<0.05 & absolute log2FC >0.25). (B) Stroma proximity-to-tumor expression signature from DEGs identified in A. (C) Relative expression of genes within four PDAC regions: Tumor (T), proximal-tumor stroma (PS), distal-tumor stromal (DS) and immune (I). Lines indicate paired regions from the same patient; dashed line represents mean background threshold from negative probes; Mean +/-SE of mean shown in red. Shown as within patient mean normalized count vs region type for DEG identified in A. (D) Representative immunohistochemical staining of podoplanin, DKK3 and C3 proteins in relation to tumor cells (T) in PDAC tissue.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Pairwise Pearson correlations of tumor-proximity specific markers C3 and DKK3 against marker genes for Lymphocytes, Monocytes and Fibroblast cells. Coefficients are highlighted where there are significant correlations of either DKK3 or C3 within Proximal (green) or Distant (orange) Stroma ROIs.
+
 Immunohistochemical staining confirmed extreme polarization of podoplanin, DKK3 and C3 expression in relation to tumor proximity. Podoplanin was expressed on stroma that encased tumor whilst DKK3 expression was present both within tumor and tumor-proximal stroma. In contrast, expression of C3 was localized to distal stroma regions (Figure 3D).
 
-## Mapping of spatial transcriptional profiles on to scRNA-Seq reveals key biochemical pathways associated with proximal and distant fibroblasts
+### Mapping of spatial transcriptional profiles on to scRNA-Seq reveals key biochemical pathways associated with proximal and distant fibroblasts
 
 Given the profound influence of tumor apposition on the NanoString profile of fibroblasts we were interested to explore global fibroblast transcriptome in relation to spatial localization. The minimal NanoString gene set defining proximal and distant fibroblast subsets was therefore explored within the scRNA-Seq dataset from three additional donors (Figure 4A). Two fibroblast clusters were observed from scRNA-Seq unsupervised clustering analysis and defined as sc-proximal and sc-distal populations due to their distinct proximal and distant gene expression signatures (Figure 4B and C). Transcriptional profiles were highly divergent between proximal compared to distal clusters with 47 genes differentially upregulated in the distal cluster and 36 genes differentially upregulated in the proximal cluster (Figure 4D). The sc-proximal clusters showed high expression of myofibroblast (myCAF) marker genes including MMP11 and HOPX whilst the distal population was enriched for expression of genes associated with inflammatory CAF (iCAF) such as CXCL12 and CFD (Figure 4E).
 
@@ -80,9 +112,17 @@ To investigate the likely functions and master transcription factor regulators t
 
 Enrichments of transcription factor target gene sets (regulons) showed considerable divergence and reveals how spatially determined activity of transcription factors could underpin differential fibroblast programming.
 
-## Podoplanin and hypoxia predict poor outcome whilst high level expression of immune regulatory genes associates with superior clinical outcome
+### Podoplanin and hypoxia predict poor outcome whilst high level expression of immune regulatory genes associates with superior clinical outcome
 
 The study cohort had been selected to comprise patients with poor or good clinical outcome to allow potential identification of spatial transcriptional correlates of disease progression. Poor outcome was defined as death within 1 year whilst patients with good outcome exhibited survival beyond 3 years (Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig5-v2.jpg)
+
+**Figure 5.:** (A) Differential gene expression from all regions in relation to poor (<1 year) or good (3+year) survival. Coloured points indicate differentially expressed genes (BH adjusted p<0.05 and absolute log2FC >0.25). (B) Regional expression of survival-associated genes identified in A. Mean +/-SE of mean. PS = Proximal Stroma; DS = Distant Stroma; I=Immune. (C) 3 yr/1 yr fold change in expression of survival-associated genes within Immune and Stroma regions. (BH adjusted p<0.05 and absolute log2FC >0.25). (D) 3 yr/1 yr fold change in expression of survival-associated genes within Tumor-Proximal and Tumor-Distal regions. (BH adjusted p<0.05 and absolute log2FC >0.25). (E) Venn displaying overlaps of 3 yr vs 1 yr survival DEGs (BH adjusted p<0.05 and absolute log2FC >0.25) within tumor-proximal stroma (PS), tumor-distal stroma (DS) and Immune (I) regions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86125/elife-86125-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average scRNA expression profile of Survival associated genes within high level cell types of scRNA-seq dataset (n=3). (B) Expression profile of Survival associated genes identified by 3 yr vs 1 yr differential expression analysis. (C) Proximal Stroma (PS): Distant Stroma (DS) ratios stratified by survival outcome for selected genes with significant difference in ratio when stratified by survival.
 
 Overall gene expression profiles were initially compared between these two groups to define spatially unaware prognostic transcriptional signatures. High level transcriptional expression of PDPN, HIF1A, PDL1 (CD274), and VEGFA were associated with poor clinical outcome (Figure 5A, Figure 5—figure supplement 1). Ten genes were upregulated in patients with survival beyond 3 years and were characterized predominantly by immune activation with increased expression of MHC class I and class II, complement C3 and chemokines CCL5 and CXCL9. The integrin ITGB2 (CD18) and STAT1 also showed increased expression in this group.
 
@@ -122,19 +162,75 @@ In conclusion, we find that transcriptional activity of stromal subsets is stron
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 FFPE tissue from 25 treatment-naïve patients undergoing pylorus-preserving pancreatico-duodenectomy (PPPD) who presented with localized disease were selected for this study. Samples were obtained from the Birmingham Human Biomaterials Resource Centre HBRC (HTA Licence 12358) ethically approved North West - Haydock Research Ethics Committee; Ref 20/NW/0001, local ethics number 18–304.
 
-## Sample processing
+### Sample processing
 
 FFPE tissue blocks were sectioned at 5 μm thickness, deparaffinized and rehydrated using conventional methods. The slides were profiled using NanoString GeoMx Digital Spatial RNA Profiling (DSP) platform through the Technology Access Program (TAP) by NanoString (Seattle, WA, USA). Briefly, immunofluorescent antibody staining was performed with tissue morphology markers α-SMA, Syto83, Pan-CK ,and CD45 (Table 1).
+
+**Table 1.**
+ Morphology marker antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Channel</th>
+      <th>Host</th>
+      <th>Company</th>
+      <th>Clone #</th>
+      <th>Catalog #</th>
+      <th>Concentration used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SMA</td>
+      <td>488</td>
+      <td>Mouse</td>
+      <td>Invitrogen</td>
+      <td>1A4</td>
+      <td>53-9760-82</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Syto83</td>
+      <td>532</td>
+      <td></td>
+      <td>Thermo fisher</td>
+      <td></td>
+      <td></td>
+      <td>400 nM</td>
+    </tr>
+    <tr>
+      <td>PanCk</td>
+      <td>594</td>
+      <td>Mouse</td>
+      <td>Novus</td>
+      <td>AE1/AE3</td>
+      <td>NBP2-33200DL594</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>647</td>
+      <td>Mouse</td>
+      <td>Novus</td>
+      <td>2B11+PD7/26</td>
+      <td>NBP2-34528AF647</td>
+      <td>1:200</td>
+    </tr>
+  </tbody>
+</table>
 
 In parallel, slides were stained with a panel of photocleavable RNA probes. Custom regions of interest (ROI) were selected based on these markers to generate specific domains including ‘tumor-proximal stroma’, tumor-distal stroma’ and ‘immune enriched’ areas. ‘Tumor-proximal stroma’ refers to regions within the tumor that are surrounded by tumor epithelium, while "tumor-distal stroma" refers to regions that are located as far away as possible from malignant ducts and lack surrounding epithelium.
 
 To minimise the confounding effect of tumor heterogeneity, four ROI were selected for each domain per slide. UV-cleavable probes within each ROI were liberated by UV light, hybridized to optical fluorescent barcodes then counted on the nCounter to determine the absolute number of mRNA transcripts.
 
-## NanoString nCounter data analysis
+### NanoString nCounter data analysis
 
 Raw NanoString nCounter data expression matrix (Source data 1) was processed following the normalization and quality control procedures as described elsewhere (Bhattacharya et al., 2021). Due to a redundancy in the tags used for both IFNG and ACTA2, data from these probes had to be removed from further analysis. Correlations of housekeeping gene expression across all ROIs were assessed to select the most correlated housekeeping probes H3F3A and UBB to use for downstream normalization (Supp. Figure S2A). Unwanted variation was removed using the R package RUVSeq (Risso et al., 2014). Firstly, distributional differences were scaled between lanes using upper-quartile normalization then unwanted technical factors were estimated in the resulting gene expression data with the RUVg function selecting H3F3A and UBB as the negative control genes and the number of dimensions of unwanted variation to remove set to 1. A variance stabilizing transformation of the original count data was computed using DESeq2 (Love et al., 2014) and estimated unwanted variation was removed using the removeBatchEffects function from limma (Ritchie et al., 2015). RLE plots were used to detect any potential outliers before and after normalization (Supp. Figure S2B).
 
@@ -142,21 +238,21 @@ Differential expression analysis was conducted to compare Immune vs stromal regi
 
 Dimensionality reduction by Uniform Manifold Approximation and Projection (UMAP) was performed on the normalized counts matrix with the umap R package and ggplot2 utilized for plotting. Heatmap visualizations were generated using the ComplexHeatmap package. Pearson correlation was calculated and plots generated using ggpairs and ggcorr functions from the R package GGally.
 
-## scRNA-Seq data analysis
+### scRNA-Seq data analysis
 
 Genes of interest identified from nCounter data analysis were further explored for their expression profiles in single-cell RNA sequencing data (GEO accession GSE210199) of cells within the tumor microenvironment of 3 PDAC patients (Pearce et al., 2023).
 
-## Raw read data processing
+### Raw read data processing
 
 Raw reads were processed using CellRanger (10X Genomics, v3) functions mkfastq and count. Raw bcl files were converted to fastq and aligned to the human reference genome GRCh38. Gene expression matrices for each patient were analyzed by R software (v3.6). Data pre-processing, QC, dimensionality reduction, clustering and subsequent downstream analysis was performed using the Seurat package (v3.1.1).
 
-## Data integration and clustering
+### Data integration and clustering
 
 Data from 3 PDAC patient samples was integrated following Seurat SCTransform Integrate Data workflow using the top 3000 most variable genes as integration features. Principal Component Analysis (PCA) was applied and Uniform Manifold Approximation and Projection (UMAP) embedding determined using PCs 1:20. For unsupervised clustering, a shared nearest neighbour graph based on Euclidean distance in PCA space was constructed using Seurat FindNeighbours function and the modules within this graph representing clusters were identified using the Louvain algorithm with Seurat FindClusters.
 
 To annotate clusters with high-level cell type, canonical cell type marker gene expression level was assessed.
 
-## scRNA-Seq Fibroblast data analysis
+### scRNA-Seq Fibroblast data analysis
 
 Transcriptome data was subset taking Fibroblast cells only and unsupervised clustering re-applied on Fibroblasts alone. Expression profile of stromal expressed genes identified from the nCounter dataset to be associated with tumor proximal or tumor-distant regions was assessed within the Fibroblast scRNA-Seq data. These tumor-proximal and tumor-distant gene signatures were scored using GSVA to assess likely tumor-proximal and tumor-distant fibroblasts. Expression profiling and GSVA signature scoring were used to annotate fibroblast subpopulations identified through clustering as ‘Proximal-like’ and ‘Distant-like’.
 

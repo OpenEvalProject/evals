@@ -44,25 +44,41 @@ Here, we report that the circulating counterparts of GC-Tfh cells are diminished
 
 ## Results
 
-## Circulating Tfh cells are reduced in older persons after vaccination
+### Circulating Tfh cells are reduced in older persons after vaccination
 
 Circulating Tfh-like (cTfh) cells can be used in humans as a biomarker of concomitant GC reactions after vaccination (Bentebibel et al., 2013). In our cohort of 18–36 year-old and 65–75 year-old individuals vaccinated with the 2014–2015 trivalent seasonal influenza vaccine (Figure 1A), there was a five-fold reduction in the production of vaccine-specific antibodies in the serum of older persons compared to younger participants (Figure 1B), consistent with previous reports (Govaert et al., 1994; Goodwin et al., 2006; Sasaki et al., 2011; Nakaya et al., 2015). This diminished antibody production with age was associated with reduced formation of cTfh cells that are transcriptionally and clonally related to bona fide GC Tfh cells found in secondary lymphoid organs (Heit et al., 2017; Brenna et al., 2020; Hill et al., 2019). Prior to vaccination, the frequency of CXCR5+PD-1+++ CD4+CD45RA- cTfh cells was similar in the two age groups (Figure 1C,D). Seven days after vaccination there were significantly fewer circulating Tfh-like cells in older persons compared to the younger individuals (Figure 1C,E), representing an impaired induction after vaccination when normalised to an individual’s day 0 baseline (Figure 1F). Together, these data indicate that the GC-Tfh cell response to vaccination is impaired in older persons.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig1-v1.jpg)
 
-**Figure 1.:** (A) Vaccination and venepuncture schedule for the seasonal influenza vaccination study, 18-36yo n = 16, 65-75yo n = 18. (B) Change in antibody titre of anti-A.Tex12 IgG, an influenza A haemagglutinin (HA), from baseline 42 days after vaccination. Flow cytometric contour plots (C) and quantification of the frequency of CXCR5+PD-1+++ cells amongst CD45RA-CD4+CD3+ cells in the peripheral blood of healthy UK donors at days zero (D) and seven (E) relative to seasonal influenza vaccination. (F) Fold change of cTfh-like cells in the peripheral blood seven days after vaccination over day zero (% CXCR5+PD-1+++CD45RA-CD4+CD3+ on day 7 divided by % CXCR5+PD-1+++CD45RA-CD4+CD3+ on day 0). Bar height corresponds to the median, and each circle represents one biological replicate. P-values generated with a Mann-Whitney test. Data are from one seasonal influenza vaccination cohort from the northern hemisphere in winter 2014–2015.Figure 1—source data 1.
+**Figure 1.:** (A) Vaccination and venepuncture schedule for the seasonal influenza vaccination study, 18-36yo n = 16, 65-75yo n = 18. (B) Change in antibody titre of anti-A.Tex12 IgG, an influenza A haemagglutinin (HA), from baseline 42 days after vaccination. Flow cytometric contour plots (C) and quantification of the frequency of CXCR5+PD-1+++ cells amongst CD45RA-CD4+CD3+ cells in the peripheral blood of healthy UK donors at days zero (D) and seven (E) relative to seasonal influenza vaccination. (F) Fold change of cTfh-like cells in the peripheral blood seven days after vaccination over day zero (% CXCR5+PD-1+++CD45RA-CD4+CD3+ on day 7 divided by % CXCR5+PD-1+++CD45RA-CD4+CD3+ on day 0). Bar height corresponds to the median, and each circle represents one biological replicate. P-values generated with a Mann-Whitney test. Data are from one seasonal influenza vaccination cohort from the northern hemisphere in winter 2014–2015.
 
-## Tfh cell and GC responses are impaired in ageing
+### Tfh cell and GC responses are impaired in ageing
 
 A major limitation of human vaccination studies is the difficulty of sampling secondary lymphoid organs after vaccination in large cohorts of people, and thus animal models are invaluable to understand the underlying biology. After vaccination there is an increase in the number of Ki67+Bcl6+B220+ GC B cells in the draining inguinal LN in both younger 2–3 month-old adult and aged 22–24 month-old mice (Figure 2A–C, gating strategy in Figure 2—figure supplement 1). However, the number of GC B cells was ten-fold lower in the aged mice ten days after immunisation, compared to younger adult mice (Figure 2C). This corresponded to a reduction in GC size (Figure 2D) and reduced levels of antigen-specific antibodies in the serum of aged mice (Figure 2E–G), consistent with previous reports that GC and antibody responses are reduced in magnitude in aged mice (Kosco et al., 1989; Szakal et al., 1990; Yang et al., 1996; van Dijk-Härd et al., 1997; Eaton et al., 2004; Linterman, 2014). This deficiency in the GC response was coupled with reduced numbers of total CXCR5hiPD-1hiFoxp3-CD4+ Tfh cells prior to, and ten days after immunisation, as well as significantly fewer antigen-specific Tfh cells, as assessed using 1W1K-loaded MHC-II tetramers (Figure 2H–M; gating strategy in Figure 2—figure supplement 1; key resources are listed in Supplementary file 1). This demonstrates that aged mice have impaired Tfh cell formation after immunisation, which recapitulates the age-associated defect in Tfh cell formation observed in humans (Figure 1).
 
-## T cell priming is impaired in aged mice
+![Figure 2.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig2-v1.jpg)
+
+**Figure 2.:** 2–3 month-old adult and 22–24 month-old aged C57BL/6 mice were subcutaneously immunised with NP-1W1K (A-C, E-M) or NP-KLH (D) in Alum. Their draining inguinal lymph nodes (LNs) were analysed by flow cytometry without immunisation (B, J, L), ten days after immunisation (A, C, E-G, H-I, K, M), or after 14 days by confocal imaging (D). (A-C) Representative flow cytometric plots (A) and quantitation (B-C) of B220+Ki67+Bcl6+ GC B cells. (D) Confocal images of draining LNs from 2 to 3 month-old and 22–24 month-old mice, taken 14 days after subcutaneous immunisation with NP-KLH. 10 µm LN sections were stained with anti-IgD (orange), anti-CD3 (green), anti-Ki67 (blue) and anti-Foxp3 (pink) antibodies (n = 3–6). (E-G) Levels of NP-specific IgG1 antibodies in the serum of 2–3 month-old and 22–24 month-old mice 10 days after immunisation with NP-1W1K in Alum as determined by ELISA. (E) Serum levels of NP20-specific IgG1 antibodies. (F) Serum levels of high-affinity NP7-specific IgG1 antibodies. (G) Ratio of NP20/NP7-specific IgG1 antibodies in the serum as a measure of antibody affinity maturation. (H-M) Representative flow cytometric plots (H-I) and quantitation (J-M) of CXCR5hiPD-1hiFoxp3-CD4+ T follicular helper (Tfh) cells (H, J-K) and antigen-specific 1W1K-I-Ab+ Tfh cells (I, L-M). Bar graphs show the results of one of two independent experiments (n = 8–12 per group/experiment). Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using Mann-Whitney testing. The gating strategy is shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** 2–3 month-old adult and 22–24 month-old aged C57BL/6 mice were immunised subcutaneously with NP-1W1K in Alum. Their draining inguinal lymph node cells were analysed by flow cytometry ten days later. GC B cells were defined as Bcl6+Ki67+B220+, T follicular helper (Tfh) cells as CXCR5hiPD-1hiFoxp3-CD4+ and antigen-specific Tfh cells as 1W1K-I-Ab+CXCR5hiPD-1hiFoxp3-CD4+.
+
+### T cell priming is impaired in aged mice
 
 The age-associated deficit in Tfh cells upon immunisation could be due to T cell-intrinsic changes with age, or due to the age of the microenvironment in which the T cells reside. After adoptive transfer of either TCR-transgenic TCR7 or OTII CD4 T cells from 2 to 3 month-old mice into young adult hosts, more than 80% of all transgenic CD4+ T cells had undergone one or more cell divisions after immunisation (Figure 3A–D). In contrast, when cells from the same pool of TCR-transgenic T cells were transferred into 22–24 month-old recipient mice, significantly fewer T cells had completed more than one cell division (Figure 3A–D). In addition to defects in T cell priming, Tfh cell differentiation of OTII CD4+ T cells isolated from 2 to 3 month-old mice was reduced three-fold ten days after immunisation in aged mice compared to younger recipients (Figure 3E–F), which was associated with reduced levels of antigen-specific antibodies in the serum of these mice (Figure 3—figure supplement 1A–C). These observations indicate that the aged microenvironment causes impaired early T cell activation and reduced Tfh cell development. These data prompt the hypothesis that the reduced number of Tfh cells induced by immunisation in aged mice may be caused by defective T cell priming.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) 1–5 × 106 CellTrace-labelled hen egg lysozyme (HEL)-specific TCR7 (CTV+TCRVβ3+CD45.1+CD4+) cells or (C-D) 5 × 105 ovalbumin (OVA)-specific (CTV+TCRVα2+CD45.1+CD4+) OTII cells were adoptively transferred into 2–3 month-old and 22–24 month-old C57BL/6 recipients, which were subsequently immunised subcutaneously with HEL or OVA in Alum. Cell proliferation of transferred cells was assessed in draining lymph nodes (LNs) by flow cytometry as defined by the serial dilution of CellTrace (CTV) three days after immunisation (n = 3–6 per group/experiment). (A, C) Representative flow cytometric plot of CTV levels in CD45.1+CD4+ cells in 2–3 month-old (white) and 22–24 month-old (grey) C57BL/6 recipients. The gate indicates cells that have undergone one or more divisions. (B, D) Percentage of divided CTV+CD45.1+CD4+ cells in 2–3 month-old and 22–24 month-old C57BL/6 recipients. (E-F) 5 × 104 OVA-specific (CD45.1+TCRVα2+CD4+) OTII cells were adoptively transferred into 2–3 month-old and 22–24 month-old C57BL/6 recipients, which were subsequently immunised subcutaneously with NP-OVA in Alum in the hind flank to assess T follicular helper (Tfh) cell formation ten days after immunisation (n = 5–6 per group/experiment). Representative flow cytometric plot (E) and quantitation (F) of CXCR5hiPD-1hi Tfh cells formed from CD45.1+CD4+ OTII cells in 2–3 month-old and 22–24 month-old C57BL/6 recipients. (G-P) 2–3 month-old mice and 22–24 month-old were immunised subcutaneously with Eα-GFP in IFA. Antigen-bearing GFP+ and antigen-presenting Y-Ae+dendritic cells (DCs) in draining LNs were analysed 22 hr after immunisation (n = 7–10 per group/experiment). (G-H) Quantitation of total (G) and GFP+ (H) CD11b+ type 2 conventional DCs (cDC2s). (I-P) Representative histograms (I, K, M, O) and quantitation of median fluorescence intensity (MFI) levels (J, L, N, P) of Y-Ae (I-J), CD86 (K-L), CD80 (M-N) and CD40 (O-P) on the surface of GFP+ CD11b+ cDC2s from 2 to 3 month-old and 22–24 month-old mice. Bar graphs show the results of one of at least two independent experiments. Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test. Supporting data is shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) 5 × 104 OVA-specific (CD45.1+TCRVα2+CD4+) OTII cells were adoptively transferred into 2–3 month-old and 22–24 month-old C57BL/6 recipients, which were subsequently immunised subcutaneously with NP-OVA in Alum in the hind flank. Ten days later, NP-specific IgG1 antibody response were quantified by ELISA in the serum of these mice (n = 4–6 per group/experiment). (A) Serum levels of NP20-specific IgG1 antibodies. (B) Serum levels of high-affinity NP7-specific IgG1 antibodies. (C) Ratio of NP20/NP7-specific IgG1 antibodies in the serum as a measure of antibody affinity maturation. (D) Gating strategy for dendritic cell (DC) subsets in the LNs of mice immunised subcutaneously with Eα-GFP in IFA 22 hr previously. Antigen-carrying DCs were defined as GFP+CD11chiMHC-IIhiLineage-(CD3-B220-CD19-)CD64-F4/80- events. Type 1 conventional DCs (cDC1s) were defined as Xcr1+CD172a- DCs and were subdivided into CD103+ and CD103- cDC1s. Langerhans cells were defined as CD24+CD172a+Xcr1- DCs. Type 2 conventional DCs (cDC2s) were defined as CD24-CD172a+Xcr1- DCs and were subdivided into CD11b+ and CD11b- cDC2s. (E–F) Quantitation of GFP+ cells from different DC subsets in the draining LNs of 2–3 month-old mice 22 hr after subcutaneous immunisation with Eα-GFP in IFA, without (E) or with (F) intraperitoneal pertussis toxin treatment twice prior to, and once at the time of immunisation (n = 5 per group/experiment). (G) Quantitation of median fluorescence intensity (MFI) levels of I-Ab (C57BL/6 MHC-II) on the surface of GFP+CD11b+ cDC2s in adult and aged mice. (H) Quantitation of Eα-peptide presentation on CD11b+ cDC2s from H2+/+ and H2+/- mice as determined by Y-Ae surface staining 22 hr after immunisation with Eα-GFP/IFA. In (I–L), CellTrace violet (CTV)-labelled TCRVβ3+CD45.1+CD4+ TCR7 cells were adoptively transferred into recipient mice which were immunised subcutaneously with HEL in Alum. (I–J) Representative histogram (I) and quantitation (J) of CTV in CD45.1+CD4+ cells three days after adoptive transfer of these cells into H2+/+ or H2+/- mice subcutaneous immunised with HEL in Alum (n = 8–10 per group/experiment). The gate indicates cells that have undergone one or more divisions. In (K–L), TCRVβ3+CD45.1+CD4+ cells were adoptively transferred into C57BL/6 mice, which were immunised subcutaneously with HEL in Alum and also received intraperitoneal injections of 10, 50 or 100 µg CTLA4-Ig or PBS. On day 3, proliferation of CD45.1+CD4+ T cells was analysed by flow cytometry (n = 2–3 per group/experiment). Representative histogram (K) and quantitation (L) of divided CTV+CD45.1+CD4+ cells in mice treated with CTLA4-Ig or PBS. Graphs show the results of one of two independent experiments (A–C, E–J) or the combined results of two experiments (L). Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test (A–C, E–J) or Kruskal-Wallis (L) test.
+
 Several DC subtypes, including LN-resident or migratory type 1 conventional DCs (cDC1s), cDC2s and Langerhans cells, have been implicated in T cell priming (Chakarov and Fazilleau, 2014; Woodruff et al., 2014; Yao et al., 2015; Levin et al., 2017; Barbet et al., 2018; Krishnaswamy et al., 2018). Of these, the migratory cDC2 subset has been suggested as the dominant Tfh cell-priming DC subset early after immunisation (Krishnaswamy et al., 2017; Krishnaswamy et al., 2018; Durand et al., 2019). Consistent with these reports, after subcutaneous immunisation with Eα-GFP the majority of GFP+ antigen-bearing cells in the draining LN were CD11b+ cDC2s (Figure 3—figure supplement 1D–E; gating strategy from Guilliams et al. (2016). These cells likely belong to the migratory cDC2s subset, as pertussis toxin treatment, which disrupts G-protein coupled receptor-dependent cell migration, resulted in a reduced number of these antigen-presenting cells in the draining LN (Figure 3—figure supplement 1F). One day after immunisation, aged mice had half the number of total and GFP+ CD11b+ cDC2s compared to younger controls (Figure 3G–H). This was coupled with the reduced presentation of Eα peptide-MHC-II, despite normal total MHC-II expression on the cell surface (Figure 3I–J, Figure 3—figure supplement 1G). The expression of the costimulatory ligands CD86, CD80 and the receptor CD40 on the surface of GFP+ CD11b+ cDC2s was also diminished, indicating impaired activation of cDC2s with age (Figure 3K–P). Taken together, these data suggest that defective T cell priming in draining LNs of aged mice may be due to impaired antigen presentation and/or co-stimulation from the cDC2 subset.
 
-## The cDC2 response to IFN-I is reduced in aged mice
+### The cDC2 response to IFN-I is reduced in aged mice
 
 To determine whether impaired T cell priming in aged mice could be due to reduced antigen presentation by cDC2, we used mice that are haploinsufficient for MHC-II (H2+/- ), to mimic this age-associated phenotype in younger mice. cDC2s from H2+/- mice present less peptide:MHC-II on their surface 22 hr after immunisation (Figure 3—figure supplement 1H), but do not have an impaired capacity to prime CD4+ T cells three days after immunisation (Figure 3—figure supplement 1I–J). This indicates that a reduction in antigen-presentation alone does not phenocopy the defect in T cell priming seen in aged mice, suggesting other age-dependent changes drive impaired T cell activation. CD80/CD86 co-stimulation is critical for both T cell priming and Tfh cell differentiation (Platt et al., 2010; Wang et al., 2015b). By partially blocking these co-stimulatory ligands using a CTLA4-Ig fusion protein in vivo, we observed a dose-dependent decrease in early T cell proliferation (Figure 3—figure supplement 1K–L). Moreover, Wang et al. had previously demonstrated that reducing the magnitude of CD28 signalling in vivo impairs Tfh cell differentiation (Wang et al., 2015a). This implicates the age-associated reduction in the expression of CD80/CD86 on cDC2s as a likely factor that contributes to impaired T cell priming and Tfh cell formation in aged mice.
 
@@ -70,7 +86,7 @@ To understand the molecular mechanism that underpins the age-associated cellular
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig4-v1.jpg)
 
-**Figure 4.:** (A) Principal component analysis (PCA) of the 1000 genes with the largest variance in sorted GFP+CD11b+ cDC2s cells from adult 2-month-old (blue) and aged 23-month-old (pink) mice (n = 6 per group). (B) Functional categories significantly affected by age as determined by Gene Ontology Analysis using Seqmonk. From a publicly available list of gene sets (Merico et al., 2010), significantly different gene ontology terms are shown (Kolmogorov-Smirnov test, p<0.05, average absolute z-score >1, multiple testing correction). Bars are labelled with the number of genes in each set (inside) and the adjusted p-value (outside). (C) Average RPKM (read per kilobase million) expression of IFN-I-responsive genes in GFP+ CD11b+ cDC2s as determined by RNA sequencing. RPKM expression values of the same IFN-I stimulated gene in cDC2s from 2-month-old and 23-month-old mice are connected by lines. (D-E) 2–3 month-old and 22–24 month-old C57BL/6 mice were subcutaneously immunised with Eα-GFP in IFA. 22 hr later, Ifit1 (D) and Mx1 (E) mRNA levels were determined in sorted GFP+ CD11b+ cDC2s by RT-qPCR (n = 4–6 per group/experiment). (F) 2–3 month-old and 22–24 month-old C57BL/6 mice were subcutaneously immunised with Eα-GFP in IFA. 6 hr later, Ifnb1 mRNA levels were determined in cells isolated from the draining lymph nodes (LN) by RT-qPCR (n = 5 per group/experiment). (G-H) Representative flow cytometric plot (G) and quantitation (H) of STAT1 phosphorylation in CD11b+ cDC2s (CD11b+CD11c+MHCII+CD172a+CD8-CD4-B220- cells) from 2 to 3 month-old and 22–24 month-old C57BL/6 mice upon ex vivo treatment of LN cells with 50 U murine IFNα for 30 min, or no cytokine controls (n = 4–7 per group/experiment). (I-J) Ifit1 (I) and Mx1 (J) mRNA levels were determined in sorted GFP+ CD11b+ cDC2s by RT-qPCR upon ex vivo treatment of LN cells with 50 U murine IFNα for 3 hr. Expression levels were normalised to age-matched no cytokine controls (n = 5 per group/experiment). (K-M) Bone marrow (BM) cells from 3-month-old adult or 23-month-old aged mice were transferred into 2-month-old irradiated CD45.1+ C57BL/6 recipient mice. 8 weeks later, these BM chimeras were immunised subcutaneously with Eα-GFP in IFA. 22 hr later, DC populations were analysed by flow cytometry (n = 3–8 per group/experiment). (K) Quantitation of GFP+CD11b+ cDC2 cells in the draining LNs of BM chimeras. (L-M) Quantitation of median fluorescence intensity (MFI) levels of CD86 (L) and CD80 (M) on the surface of GFP+CD11b+ cDC2s in BM chimeras. (N) Ifnb1 expression in different cell populations FACS-sorted from the draining LNs of unimmunised adult mice or mice immunised with EαGFP 16 hr earlier as determined by RT-qPCR. Cell populations were defined as follows: CD3+ T cells, CD19+ B cells, macrophages (CD11c+CD64+F4/80+), pDC (CD3-CD19-B220+CD11c+PDCA1+), cDC1 (CD3-CD19-CD64-F4/80-MHC-II+CD11c+Xcr1+) and a population including cDC2s and Langerhans (Lhs) cells (CD3-CD19-CD64-F4/80-MHC-II+CD11c+Xcr1-). (O) Flow cytometric quantitation of the number of plasmacytoid DCs (pDCs; defined as B220+CD11c+CD11b-PDCA1+ cells) in the draining LNs of 2–3 month-old and 22–24 month-old C57BL/6 mice 22 hr after immunisation with Eα-GFP/IFA (n = 5–6 per group/experiment). (P-S) Bone marrow (BM) cells from 2-month-old CD45.1+ C57BL/6 SJL mice were transferred into 2-month-old or 21-month-old irradiated C57BL/6 recipient mice. 8 weeks later, these BM chimeras were immunised subcutaneously with Eα-GFP in IFA. 22 hr later, DC populations were analysed by flow cytometry (n = 2–5 per group/experiment). (P-Q) Quantitation of CD45.1+ pDCs (P) and GFP+CD11b+ cDC2s (Q) in the draining LNs of BM chimeras. (R-S) Quantitation of median fluorescence intensity (MFI) levels of CD86 (R) and CD80 (S) on the surface of CD45.1+GFP+CD11b+cDC2s in BM chimeras. Bar graphs show the pooled results from at least two experiments except in (I-J), which show the results of one of two experimental repeats. Bar heights correspond to the median, and each circle represents one biological replicate. In (N) bar heights correspond to the mean and error bars represent standard deviation. P-values were determined using the Mann-Whitney test.Figure 4—source data 1.
+**Figure 4.:** (A) Principal component analysis (PCA) of the 1000 genes with the largest variance in sorted GFP+CD11b+ cDC2s cells from adult 2-month-old (blue) and aged 23-month-old (pink) mice (n = 6 per group). (B) Functional categories significantly affected by age as determined by Gene Ontology Analysis using Seqmonk. From a publicly available list of gene sets (Merico et al., 2010), significantly different gene ontology terms are shown (Kolmogorov-Smirnov test, p<0.05, average absolute z-score >1, multiple testing correction). Bars are labelled with the number of genes in each set (inside) and the adjusted p-value (outside). (C) Average RPKM (read per kilobase million) expression of IFN-I-responsive genes in GFP+ CD11b+ cDC2s as determined by RNA sequencing. RPKM expression values of the same IFN-I stimulated gene in cDC2s from 2-month-old and 23-month-old mice are connected by lines. (D-E) 2–3 month-old and 22–24 month-old C57BL/6 mice were subcutaneously immunised with Eα-GFP in IFA. 22 hr later, Ifit1 (D) and Mx1 (E) mRNA levels were determined in sorted GFP+ CD11b+ cDC2s by RT-qPCR (n = 4–6 per group/experiment). (F) 2–3 month-old and 22–24 month-old C57BL/6 mice were subcutaneously immunised with Eα-GFP in IFA. 6 hr later, Ifnb1 mRNA levels were determined in cells isolated from the draining lymph nodes (LN) by RT-qPCR (n = 5 per group/experiment). (G-H) Representative flow cytometric plot (G) and quantitation (H) of STAT1 phosphorylation in CD11b+ cDC2s (CD11b+CD11c+MHCII+CD172a+CD8-CD4-B220- cells) from 2 to 3 month-old and 22–24 month-old C57BL/6 mice upon ex vivo treatment of LN cells with 50 U murine IFNα for 30 min, or no cytokine controls (n = 4–7 per group/experiment). (I-J) Ifit1 (I) and Mx1 (J) mRNA levels were determined in sorted GFP+ CD11b+ cDC2s by RT-qPCR upon ex vivo treatment of LN cells with 50 U murine IFNα for 3 hr. Expression levels were normalised to age-matched no cytokine controls (n = 5 per group/experiment). (K-M) Bone marrow (BM) cells from 3-month-old adult or 23-month-old aged mice were transferred into 2-month-old irradiated CD45.1+ C57BL/6 recipient mice. 8 weeks later, these BM chimeras were immunised subcutaneously with Eα-GFP in IFA. 22 hr later, DC populations were analysed by flow cytometry (n = 3–8 per group/experiment). (K) Quantitation of GFP+CD11b+ cDC2 cells in the draining LNs of BM chimeras. (L-M) Quantitation of median fluorescence intensity (MFI) levels of CD86 (L) and CD80 (M) on the surface of GFP+CD11b+ cDC2s in BM chimeras. (N) Ifnb1 expression in different cell populations FACS-sorted from the draining LNs of unimmunised adult mice or mice immunised with EαGFP 16 hr earlier as determined by RT-qPCR. Cell populations were defined as follows: CD3+ T cells, CD19+ B cells, macrophages (CD11c+CD64+F4/80+), pDC (CD3-CD19-B220+CD11c+PDCA1+), cDC1 (CD3-CD19-CD64-F4/80-MHC-II+CD11c+Xcr1+) and a population including cDC2s and Langerhans (Lhs) cells (CD3-CD19-CD64-F4/80-MHC-II+CD11c+Xcr1-). (O) Flow cytometric quantitation of the number of plasmacytoid DCs (pDCs; defined as B220+CD11c+CD11b-PDCA1+ cells) in the draining LNs of 2–3 month-old and 22–24 month-old C57BL/6 mice 22 hr after immunisation with Eα-GFP/IFA (n = 5–6 per group/experiment). (P-S) Bone marrow (BM) cells from 2-month-old CD45.1+ C57BL/6 SJL mice were transferred into 2-month-old or 21-month-old irradiated C57BL/6 recipient mice. 8 weeks later, these BM chimeras were immunised subcutaneously with Eα-GFP in IFA. 22 hr later, DC populations were analysed by flow cytometry (n = 2–5 per group/experiment). (P-Q) Quantitation of CD45.1+ pDCs (P) and GFP+CD11b+ cDC2s (Q) in the draining LNs of BM chimeras. (R-S) Quantitation of median fluorescence intensity (MFI) levels of CD86 (R) and CD80 (S) on the surface of CD45.1+GFP+CD11b+cDC2s in BM chimeras. Bar graphs show the pooled results from at least two experiments except in (I-J), which show the results of one of two experimental repeats. Bar heights correspond to the median, and each circle represents one biological replicate. In (N) bar heights correspond to the mean and error bars represent standard deviation. P-values were determined using the Mann-Whitney test.
 
 IFN-I responses are induced by IFNα and IFNβ cytokines which bind the interferon alpha receptor (IFNαR), a heterodimeric complex of IFNAR1 and IFNAR2 chains. Upon ligation of the IFNαR, the Signal Transducer and Activator of Transcription 1 (STAT1) and STAT2 transcription factors are phosphorylated and, in association with the interferon regulatory factor 9 (IRF9), move into the nucleus to promote the expression of ISGs (Hoffmann et al., 2015). STAT1 phosphorylation levels and the upregulation of the ISGs Ifit1 and Mx1 in cDC2s were intact in aged mice upon ex vivo treatment with low levels of IFNα (Figure 4G–J). This indicates that aged cDC2s are capable of responding to IFN-I and do not exhibit cell-intrinsic defects in IFN signalling. Consistent with this, cDC2s derived from bone marrow (BM) stem cells from an aged, 23-month-old mouse transferred into an adult recipient mouse, do not exhibit age-associated defects in number and activation after immunisation when they develop and reside in the microenvironment of the younger host (Figure 4K–M). Together, these data suggest that the poor activation of cDC2s in aged animals is not linked with cell-intrinsic defects in their IFN-I response, but rather with impaired early induction of IFN-I in their microenvironment.
 
@@ -78,23 +94,47 @@ Many different cell types can produce IFN-I upon infection or immunisation (Swie
 
 Previous reports have described an age-associated decline in IFN-I production by pDCs in both humans and mice (Stout-Delgado et al., 2008; Panda et al., 2010; Sridharan et al., 2011; Agrawal, 2013; Agrawal et al., 2017). In line with this, we found that age-associated defects in cDC2 activation coincided with reduced numbers of pDCs in aged, 22–24 month-old mice compared to adult controls upon immunisation (Figure 4O). To understand whether the reduction in pDCs was due to the aged microenvironment, we irradiated aged mice and reconstituted these mice with BM cells from 2 to 3 month-old animals. This revealed that the reduced number of pDCs in ageing is not an intrinsic feature of aged stem cells, but is driven by age-associated changes in their microenvironment (Figure 4P). In these chimeras GFP+ CD11b+cDC2 cell numbers and the expression of CD80/86 on GFP+ CD11b+ cDC2 cells derived from young stem cells were reduced in aged BM recipients (Figure 4Q–S). Together, this suggests that the poor activation of cDC2s in the LNs of aged animals could be driven by reduced numbers of IFN-I-producing pDCs due to age-related changes in their microenvironment.
 
-## Older persons have impaired IFN-I responses after vaccination
+### Older persons have impaired IFN-I responses after vaccination
 
 As observed in mice, the expression of IFN-I inducible genes is increased in the blood of people in the first few days following vaccination (Nakaya et al., 2011; Athale et al., 2017). Using data from Henn and colleagues (Henn et al., 2013), an early IFN-I gene signature was identified after seasonal influenza vaccination in humans. This response peaks in the blood one day after vaccination (Figure 5A). We further curated this list of IFN-I responsive genes to identify those that are robustly induced in human blood one day after vaccination. Application of this curated IFN-I vaccination signature to another dataset (Franco et al., 2013; Nakaya et al., 2015) showed that these genes were induced in older persons after influenza vaccination, but to a lesser extent than in younger people (Figure 5B), similar to our findings in aged mice (Figure 4). We performed PCA of the curated vaccine-induced IFN-I genes to determine how much an individual’s IFN-I gene signature had changed one day after vaccination compared to the baseline expression before vaccination (‘IFN-I distance’) (Figure 5C). Day one samples from young people clustered distinctly from their pre-vaccination samples, whereas older persons showed a diminished early IFN-I response, as shown by a shorter IFN distance between day 0 and day 1 samples on the PCA plot. The IFN-I distance was reduced by half in older compared to younger individuals (p<0.001). Increased IFN distances correlated positively with an increased neutralising antibody titre 28 days after vaccination (Figure 5D–F), demonstrating a correlation between the early IFN-I response and antibody titres upon vaccination in people.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig5-v1.jpg)
 
-**Figure 5.:** (A) Time course of the expression of IFN-I-stimulated genes in whole PBMC after influenza vaccination. Median expression of IFN-I-stimulated genes were calculated for each sample at each day and normalised by the day 0 value. The mean and range for five individuals are shown. (B) Heatmap of expression values of a curated list of significant probe sets for IFN-I-stimulated genes (ISGs) induced with a log2-fold change of >0.5 determined using the dataset in (A), and applied to days 0 and 1 in 18–36 year-old (18–36 yo; n = 19) or 65–86 year-old (65–85 yo; n = 39) individuals. (C) Principal component analysis (PCA) of the differentially expressed ISGs from (B) with data from younger and older individuals plotted in blue and pink, respectively. Open circles represent data from day 0, closed circles represent data from day 1 after vaccination, and boxplots represent the distribution of PC1 coordinates for each group. (D-F) The distance from baseline to day 1 after vaccination on the PCA plot in (C) (‘IFN-I distance’) correlates with log2 fold-changes (day 28/day 0) of HAI titres for A/Perth 2009 (D), B/Brisbane 2008 (E) and A/California 2009 (F). In (F-H), Spearman’s correlation coefficients (rho) and their p-values are shown and younger and older individuals are plotted in blue or pink, respectively. Data are reanalysed from publicly available datasets (Franco et al., 2013; Henn et al., 2013; Nakaya et al., 2015).Figure 5—source data 1.
+**Figure 5.:** (A) Time course of the expression of IFN-I-stimulated genes in whole PBMC after influenza vaccination. Median expression of IFN-I-stimulated genes were calculated for each sample at each day and normalised by the day 0 value. The mean and range for five individuals are shown. (B) Heatmap of expression values of a curated list of significant probe sets for IFN-I-stimulated genes (ISGs) induced with a log2-fold change of >0.5 determined using the dataset in (A), and applied to days 0 and 1 in 18–36 year-old (18–36 yo; n = 19) or 65–86 year-old (65–85 yo; n = 39) individuals. (C) Principal component analysis (PCA) of the differentially expressed ISGs from (B) with data from younger and older individuals plotted in blue and pink, respectively. Open circles represent data from day 0, closed circles represent data from day 1 after vaccination, and boxplots represent the distribution of PC1 coordinates for each group. (D-F) The distance from baseline to day 1 after vaccination on the PCA plot in (C) (‘IFN-I distance’) correlates with log2 fold-changes (day 28/day 0) of HAI titres for A/Perth 2009 (D), B/Brisbane 2008 (E) and A/California 2009 (F). In (F-H), Spearman’s correlation coefficients (rho) and their p-values are shown and younger and older individuals are plotted in blue or pink, respectively. Data are reanalysed from publicly available datasets (Franco et al., 2013; Henn et al., 2013; Nakaya et al., 2015).
 
-## Lack of IFN-I signalling in DCs results in impaired Tfh cell formation
+### Lack of IFN-I signalling in DCs results in impaired Tfh cell formation
 
 IFN-I signalling has previously been implicated in Tfh cell priming and protective immune responses to vaccination in mice (Proietti et al., 2002; Cucak et al., 2009). Hence, we hypothesised that reduced IFN-I signalling in cDC2s of aged mice could be linked with defective T cell priming. Blockade of IFN-I signalling prior to immunisation significantly reduced the expression of the co-stimulatory ligands CD80 and CD86 on cDC2s (Figure 6A–B), showing that a reduction of IFN-I signalling can partly recapitulate the ageing cDC2 phenotype. Furthermore, absence of IFNαR in recipient mice results in reduced T cell proliferation of adoptively transferred IFNαR-sufficient ovalbumin-specific OTII cells three days after immunisation (Figure 6C–D), similar to what had been observed in aged mice (Figure 3C–D). To formally test the link between IFNαR signalling in DCs and Tfh cell formation, Ifnar1fl/fI:Itgaxcre/+ mice, that lack IFNαR on CD11c+ cells such as DCs, and their IFNαR-sufficient Ifnar1fl/fl:Itgax+/+ littermates were immunised with NP-1W1K in Alum. In the absence of IFNAR1 on DCs, there was a defect in Tfh cell formation seven days after immunisation (Figure 6E–H), without affecting serum levels of antigen-specific antibody at this early time-point (Figure 6—figure supplement 1A–C). This indicates that the lack of IFN-I signalling in DCs can mimic the age-associated impairment of Tfh cell differentiation.
 
-## The TLR7 agonist imiquimod boosts cDC2s and tfh cell numbers
+![Figure 6.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Quantitation of median fluorescence intensity (MFI) levels of CD80 and CD86 on GFP+ CD11b+ cDC2s in mice treated with anti-IFNAR1 blocking or isotype control antibodies (n = 7 per group/experiment). (C-D) Representative flow cytometric histograms (C) and quantitation (D) of divided CTV+CD45.1+CD4+, which had been transferred into Ifnar1-/- and Ifnar1+/+ mice and immunised with ovalbumin (OVA) in Alum three days earlier (n = 6 per group/experiment). (E-H) Flow cytometric analysis (E, G) and quantitation (F, H) of total (E-F) and 1W1K-I-Ab+ (G-H) CXCR5hiPD-1hiFoxp3-CD4+ T follicular helper (Tfh) cells isolated from Ifnar1fl/fl:Itgaxcre/+ or Ifnar1fl/fl:Itgax+/+ control mice seven days after immunisation with NP-1W1K in Alum (n = 8–9 per group/experiment). Bar graphs show the results of one of two experimental repeats. Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test. Supporting data is shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Quantitation of NP-specific IgG1 antibody responses in the serum of Ifnar1fl/fl:Itgaxcre/+ or Ifnar1fl/fl:Itgax+/+ control mice seven days after immunisation with NP-1W1K in Alum by ELISA (n = 4–9 per group/experiment). (A) Serum levels of NP20-specific IgG1 antibodies. (B) Serum levels of high-affinity NP7-specific IgG1 antibodies. (C) Ratio of NP20/NP7-specific IgG1 antibodies in the serum as a measure of antibody affinity maturation. Bar graphs show the results of one of two experimental repeats. Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test.
+
+### The TLR7 agonist imiquimod boosts cDC2s and tfh cell numbers
 
 Our data demonstrate that cDC2 and Tfh cells from aged mice have impaired responses to vaccination. In an attempt to boost the response of these cell types upon vaccination we applied a cream containing the TLR7-agonist imiquimod (Reiter et al., 1994; Moore et al., 2001) to the skin over the immunisation sites (experimental set-up shown in Figure 7A). Imiquimod treatment is known to induce IFN-I along with other cytokines and chemokines (Chen, 1988; Bottrel et al., 1999; Sauder, 2003; Schön and Schön, 2007). Imiquimod treatment increased expression of the ISGs Ifit1 and Mx1 in antigen-bearing cDC2s from both 2–3- and 22–24 month-old mice compared to age-matched no-imiquimod controls one day after immunisation (Figure 7B–C; Figure 7—figure supplement 1A–B). This was associated with a two- to three-fold increase in the number of total and GFP+ CD11b+ cDC2s in draining LNs (Figure 7D–E; Figure 7—figure supplement 1C–D) and with a two-fold increase in CD80 and CD86 on their surfaces (Figure 7F–G, Figure 7—figure supplement 1E–F). Topical imiquimod treatment of Ifnar1-/- and Ifnar1+/+ mice revealed that the enhancing effects of imiquimod on cDC2 numbers and activation were largely, but not completely, dependent on IFN-I signalling (Figure 7H–J). This demonstrates that imiquimod treatment can boost the reduced IFN-I response, and revert the numerical and co-stimulatory defects observed in cDC2s from aged mice.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic representation of the experimental set-up. (B-G) 22–24 month-old mice were immunised subcutaneously with Eα-GFP in IFA. Half of the mice were topically treated with imiquimod cream over their immunisation sites. 22 hr after immunisation with Eα-GFP in IFA, Ifit1 (B) and Mx1 (C) mRNA expression in sorted GFP+ CD11b+ cDC2s was analysed by RT-qPCR. (D-E) Flow cytometric quantitation of total (D) and GFP+(E) CD11b+ cDC2 cells in the draining lymph nodes (LNs) of 22–24 month-old mice with or without imiquimod treatment. (F-G) Quantitation of median fluorescence intensity (MFI) levels of CD86 (F) and CD80 (G) on the surface of GFP+ CD11b+ cDC2s in 23-month-old mice with or without imiquimod treatment. (H-J) 2 month old Ifnar1-/- and Ifnar1+/+ mice were immunised subcutaneously with Eα-GFP in IFA and some of the mice were additionally treated with imiquimod cream over their immunisation sites. (H) 22 hr later the number of GFP+ CD11b+ cDC2 cells in the draining lymph nodes (LNs) were quantified. (I-J) Quantitation of median fluorescence intensity (MFI) levels of CD86 (I) and CD80 (J) on the surface of these GFP+ CD11b+ cDC2s. Bar graphs show the results of one of two independent experiments (B-G; n = 6 per group/experiment) or the pooled results from two experiments (H-J; n = 3–11 per group). Bar height corresponds to the median, and each circle represents one biological replicate. In (B-G) p-values were determined using the Mann-Whitney test. In (H-J) p-values were determined by comparing each group to the ‘Ifnar1+/+ no imiquimod control’ group using the Kruskal Wallis test with Dunn’s multiple testing correction. Supporting data is shown in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** 2–3 month-old mice were immunised subcutaneously with either Eα-GFP in IFA. Half of the mice were topically treated with imiquimod cream over their immunisation sites. 22 hr after immunisation with Eα-GFP in IFA Ifit1 (A) and Mx1 (B) mRNA expression in sorted GFP+ CD11b+ cDC2s was analysed by RT-qPCR. (C–D) Flow cytometric quantitation of total (C) and GFP+(D) CD11b+ cDC2 cells in the draining lymph nodes (LNs) of 2–3 month-old mice with or without imiquimod treatment. (E–F) Quantitation of median fluorescence intensity (MFI) levels of CD86 (E) and CD80 (F) on the surface of GFP+ CD11b+ cDC2s in 2–3 month-old mice with or without imiquimod treatment. Bar graphs show the pooled results of two experiments (A–F); n = 3–4 per group/experiment). Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test.
+
 Topical imiquimod treatment potently enhanced total and 1W1K-specific Tfh cell numbers in both 2–3- and 22–24 month-old mice seven days after immunisation (Figure 8A–F). This boost in Tfh cell numbers was not dependent on intact IFN-I signalling in CD11c+ cells, as topical imiquimod treatment enhanced total and 1W1K-specific Tfh cell numbers in Ifnar1fl/fl:Itgaxcre/+mice to the same extent as in Ifnar1fl/fl:Itgax+/+ control mice seven days after immunisation (Figure 8G–H). That imiquimod can enhance Tfh cells independently of IFN-I signalling in DCs indicates TLR7 stimulation has multi-faceted roles in enhancing Tfh responses. Together, these results show that imiquimod treatment can restore cDC2 activation and Tfh cell differentiation in aged mice. This was linked with a doubling of GC B cell numbers in aged mice, but not in younger animals (Figure 8I–K). Imiquimod treatment did not affect serum levels of antigen-specific antibodies at this early time-point when most antibodies come from the extrafollicular plasmablast response (Figure 8—figure supplement 1A–C; MacLennan et al., 2003).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig8-v1.jpg)
+
+**Figure 8.:** 2–3 month-old and 22–24 month-old C57BL/6 mice (A-F, I-K) or 2 month old Ifnar1fl/fl:Itgaxcre/+ and Ifnar1fl/fl:Itgax+/+ littermate controls (G-H) were all subcutaneously immunised with NP-1W1K in Alum and then either topically treated with imiquimod cream over their immunisation sites (‘Imiquimod’, Ifnar1fl/fl:Itgaxcre/+ and Ifnar1fl/fl:Itgax+/+ mice) or left untreated (‘Untreated’). Seven days later, draining LN cells were analysed by flow cytometry. (A-F) Representative flow cytometric plots and quantitation of CXCR5hiPD-1hiCD4+ T follicular helper (Tfh) cells (A-C) as well as antigen-specific 1W1K-I-Ab+ Tfh cells (D-F) in 22–24 month-old (A-B, D-E) and 2–3 month-old (C, F) mice. (G-H) Quantitation of CXCR5hiPD-1hiCD4+ T follicular helper (Tfh) cells (G) as well as antigen-specific 1W1K-I-Ab+ Tfh cells (H) in two month old Ifnar1fl/fl:Itgaxcre/+ and Ifnar1fl/fl:Itgax+/+ littermate controls seven days after immunisation with NP-1W1K in Alum and imiquimod treatment. (I-K) Representative flow cytometric plots and quantitation of B220+Ki67+Bcl6+germinal centre (GC) B cells in 22–24 month-old (I-J) and 2–3 month-old (K) mice seven days after immunisation with NP-1W1K in Alum with or without topical imiquimod treatment. Bar graphs show the results of one of three independent experiments (G-H; n = 6–10 per group/experiment), or the pooled results of three independent experiments (A-F, I-K; n = 4–7 per group/experiment). Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test. Supporting data is shown in Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52473/elife-52473-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) 22–24 month-old mice were immunised subcutaneously with NP-1W1K in Alum. Half of the mice were topically treated with imiquimod cream over their immunisation sites. Seven days later, serum levels of antigen-specific IgG1 antibodies were determined by ELISA. (A) Serum levels of NP20-specific antibodies. (B) Serum levels of high-affinity NP7-specific antibodies. (C) Ratio of NP20/NP7-specific antibodies in the serum as a measure of antibody affinity maturation. Bar graphs show the pooled results of two experiments (n = 6 per group/experiment). Bar height corresponds to the median, and each circle represents one biological replicate. P-values were determined using the Mann-Whitney test.
 
 ## Discussion
 
@@ -110,19 +150,80 @@ Several strategies are currently being used to enhance the response to vaccinati
 
 ## Materials and methods
 
-## Human seasonal influenza vaccination cohort
+### Human seasonal influenza vaccination cohort
 
 The main research objective of the human seasonal influenza vaccination study was to characterise the cTfh and antibody response against seasonal influenza vaccination in humans in different age groups. To that end, peripheral blood was tested from 34 healthy UK adults (18–75 years of age), who were vaccinated with the trivalent influenza vaccine (2014/2015). Researchers remained blinded to sample age throughout sample processing and data acquisition, and samples were selected at random to be thawed and stained (2–10 samples per experiment). All human blood and tissue was collected in accordance with the latest revision of the Declaration of Helsinki and the Guidelines for Good Clinical Practice (ICH-GCP). The seasonal UK influenza vaccination cohort was collected with UK local research ethics committee approval (REC reference 14/SC/1077), using the facilities of the Cambridge Bioresource (REC reference 04/Q0108/44). Written informed consent was received from all volunteers.
 
 Peripheral blood was tested from 34 healthy UK adults (18–36 years of age n = 16, 65–75 years of age n = 18) who were vaccinated with the trivalent influenza vaccine (northern hemisphere winter 2014–15). Blood samples were collected into silica-coated tubes (for serum) and EDTA-coated tubes (for cells) on the day of vaccination (prior to administration of the vaccine), day 7 and day 42 after vaccination, with approval from the UK local research ethics committee (REC reference 14/SC/1077), and using the facilities of the Cambridge Bioresource (REC reference 04/Q0108/44). Peripheral blood mononuclear cells (PBMCs) were isolated by density centrifugation on Histopaque-1077 (Sigma), and then cryopreserved in freezing medium (10% dimethyl sulfoxide, 90% FCS, both Sigma) and kept in liquid nitrogen prior to analysis by flow cytometry. Cryopreserved PBMC were thawed and rested in complete medium (RPMI-1640 with 10% FCS, 100 U/ml penicillin and 100 μg/ml streptomycin, all Invitrogen) for 1 hr at 37°C. Cells were resuspended at 4 × 107 per ml, then Fc receptors were blocked using human IgG (Sigma), followed by staining with antibodies outlined in Table 1 and analysis on a BD Aria Fusion cell sorter. A dump channel consisting of viability dye and antibodies to CD14, CD16, and CD19 was used to exclude unwanted cell types from the analysis of circulating Tfh cells (CD3+CD4+CD45RA-CXCR5+PD1+++), as previously described (Hill et al., 2019). The IgG response was measured by Luminex using magnetic beads coated with full length recombinant haemagglutinin proteins from influenza strain A/Texas/50/2012 (A/Tex12), as previously reported (Wang et al., 2015b).
 
-## Mouse housing and husbandry
+**Table 1.**
+ Antibodies used for flow cytometry of human PBMC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Company and clone</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eFluor780 Viability dye</td>
+      <td>eBioscience</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>APC-eFluor780-coupled anti-human CD14</td>
+      <td>eBioscience (61D3)</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>APC-eFluor780-coupled anti-human CD16</td>
+      <td>eBioscience (eBioCB16)</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>APC-eFluor780-coupled anti-human CD19</td>
+      <td>eBioscience (HIB19)</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>BUV395-coupled anti-human CD3</td>
+      <td>BD (UCHT1)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PerCp-Cy5.5-coupled anti-human CD4</td>
+      <td>BD (RPA-T4)</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>BUV737-coupled anti-human CD45RA</td>
+      <td>BD (HI100)</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7-coupled anti-human PD1</td>
+      <td>eBioscience (eBioJ105)</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>BB515-coupled anti-human CXCR5</td>
+      <td>BD (RF8B2)</td>
+      <td>1:25</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse housing and husbandry
 
 C57BL/6, Ifnar1-/- (Skarnes et al., 2011), Ifnar1flox/flox (Le Bon et al., 2006),: Itgaxcre/+ (Caton et al., 2007), OTII TCR-Tg (Barnden et al., 1998) and TCR7 TCR-Tg (Neighbors et al., 2006) mice were bred and maintained in the Babraham Institute Biological Support Unit (BSU), where C57BL/6Babr mice were also aged. No primary pathogens or additional agents listed in the FELASA recommendations (Mähler et al., 2014) were detected during health monitoring surveys of the stock holding rooms. Ambient temperature was ~19–21°C and relative humidity 52%. Lighting was provided on a 12 hr light: 12 hr dark cycle including 15 min ‘dawn’ and ‘dusk’ periods of subdued lighting. After weaning, mice were transferred to individually ventilated cages with 1–5 mice per cage. Mice were fed CRM (P) VP diet (Special Diet Services) ad libitum and received seeds (e.g. sunflower, millet) at the time of cage-cleaning as part of their environmental enrichment. All mouse experimentation was approved by the Babraham Institute Animal Welfare and Ethical Review Body. Animal husbandry and experimentation complied with existing European Union and United Kingdom Home Office legislation and local standards (PPL: P4D4AF812). Young mice were 6–14 weeks old, and aged C57BL/6 mice 90–105 weeks old when experiments were started. All experimental mice were housed in the same room. H2+/- mice (Madsen et al., 1999) and their wildtype littermates were maintained in specific pathogen–free facilities at the University of Leuven. All experiments were approved by the University of Leuven ethics committee.
 
 Mice were randomly allocated into age- and sex-matched experimental groups by staff of the Babraham Institute Experimental Support Unit or on the online mouse colony management system. Blinding was not always possible due to visible phenotypic differences between aged and young mice. For ageing experiments, a minimum of 5 mice per group were chosen based on previous experience in the lab comparing GC responses in young and aged mice. Limited availability of aged mice was a restricting factor in our study design. A minimum of 3 mice per group were chosen for mechanistic studies, based on a literature-based assessment of the expected effect size between study groups. Due to limited availability of aged female mice, all experiments with aged mice were conducted with males. Other experiments were conducted with both male and female mice. All experiments were repeated 2–4 times. Significant changes were reproducible between experimental repeats. Some of the aged mice carried lymphomas or solid tumours which affected their immune system, these mice were excluded from the analysis based on the following criteria: Mice with visible lymphomas or large expansions of Ki67+ proliferating lymphocytes (as determined by Tukey's outlier test) were excluded. These criteria were in place prior to initiation of the study, as part of normal practice for the use of ageing mice at the Babraham Institute.
 
-## Subcutaneous immunisations
+### Subcutaneous immunisations
 
 Mice were immunised with either 1W1K-conjugate, OVA (ovalbumin), HEL (Hen Egg Lysozyme), NP-OVA (4-hydroxy-3-nitrophenylacetyl-ovalbumin) or NP-KLH (4-hydroxy-3-nitrophenylacetyl-KLH) in Alum, or Eα-GFP in Incomplete Freund’s Adjuvant (IFA). IFA (#F5506), HEL (Lysozyme from chicken egg white, #62970) and OVA (Albumin from chicken egg white; #A5503) were purchased from Sigma-Aldrich, Imject Alum (#77161) was purchased from Thermo Fisher Scientific. NP-KLH (#N-5060–25) and NP-OVA (#N-5051–100) were purchased from Biosearch Technologies. Eα-GFP fusion protein was isolated in-house from XL-1 blue E. coli carrying the pTRCHis-Eα-GFP vector using a protocol adapted from Rush and Brewer (2010). Briefly, E. coli carrying the pTRCHis-Eα-GFP vector were plated from glycerol stock onto LB/ampicillin agar and incubated overnight at 37 °C. The next day, a single colony was transferred into 5 ml LB and incubated at 37 °C while shaking. The next day, these 5 ml were used to inoculate 1L LB. When the culture was growing in log phase, IPTG was added to a final volume of 1 mM. The culture was left to shake overnight at 37 °C, then the bacteria were pelleted at 5000 g for 15 min. After discarding the supernatant, the bacterial pellet was resuspended in 20 ml lysis buffer (50 mM NaH2PO4, 300 mM NaCl, 10 mM Imidazole at pH 8.0) by vortexing and incubated on ice for 15 min in ice. After five repeated sonication steps on ice at 30 W for 60 s, the lysate was cleared by centrifugation at 10,000 g for 30 min. This step was repeated until all Eα-GFP was released and the bacterial pellet did not appear green anymore. The clear, green lysate was filtered first through a 0.45 µm syringe filter, then through a 0.22 µm syringe filter. Next, 200 ml of lysate were mixed with 4 ml of Ni-NTA agarose (QIAGEN #30210) and incubated at 4 °C. After one hour, the lysate/agarose mix was loaded onto 5 ml columns (QIAGEN #34964) and left to set. The columns were then washed twice with 25 ml of wash buffer (50 mM NaH2PO4, 300 mM NaCl, 20 mM Imidazole at pH 8.0). The protein was eluted by four repeated additions of 2 ml elution buffer (50 mM NaH2PO4, 300 mM NaCl, 250 mM Imidazole at pH 8.0) to the column. The eluate was dialysed against PBS overnight in a D-Tube Dialyzer Mega 3.5 kDa tube (Millipore # 71743–4) at 4 °C. On the next day, the eluate was concentrated using Centriprep centrifugal filters with an Ultracel 10K membrane (Millipore #4304) by centrifugation at 3000 g for 30 min. The concentrated protein was collected, filtered through a 0.22 µm syringe filter and stored at −80 °C until use.
 
@@ -134,15 +235,221 @@ Where indicated, mice were treated with IFNAR1-blocking antibodies (BioXCell #BE
 
 For pertussis toxin experiments, mice were subcutaneously injected into their hind flanks with 100 µl of 5 µg/ml pertussis toxin (Sigma #P7208) in PBS on days 0 and 1. On day 2, they received subcutaneous immunisations with 200 µl of 1 mg/ml Eα-GFP combined with 2.5 µg/ml pertussis toxin in IFA. 22 hr later, mice were euthanised and their draining inguinal LNs were collected for flow cytometry. Control mice were injected with 100 µl PBS on day 0 and 1 and were immunised with Eα-GFP in IFA on day 2.
 
-## Adoptive T cell transfers
+### Adoptive T cell transfers
 
 To perform adoptive HEL- or OVA-specific T cell transfers, total lymphocytes were isolated from the spleen and peripheral LNs (brachial, axial, superficial cervical, inguinal and mesenteric LNs) of TCR7 or OTII transgenic mice, respectively. These mice also expressed CD45.1+. All cells were stained using the CellTrace Violet (CTV) Cell Proliferation Kit (Invitrogen #C34557; 1:1000 in PBS) for 15 min at 37 °C, followed by two washes with PBS containing 2 %FBS at 1800 rpm for 5 min at 4 °C. The percentage of TCR-transgenic CD4+ CTV+ T cells was determined by flow cytometry, detecting TCR7 T cells using anti-TCRVβ3 antibodies and OTII T cells with anti-TCRVα2 antibodies. An equivalent of 1–5 × 106 TCR7 T cells or 5 × 105 OTII T cells was transferred intravenously into C57BL/6, H2+/- or Ifnar1-/- recipient mice in 100 µl 2% FBS/PBS. The mice were subsequently immunized subcutaneously into their hind flanks with 100 µl of 5–10 µg HEL or 50 µg OVA in Alum. An equivalent of unstained 5 × 104 OTII T cells in 100 µl 2% FBS/PBS was transferred intravenously into adult and aged C57BL/6 mice for the assessment of Tfh cell differentiation on day 10 after immunisation with 50 µg NP-OVA in Alum. Where indicated, mice were pre-treated intraperitoneally with 1, 50 or 100 µg CTLA4-Ig (Orencia Abatacept) in 100 µl PBS at the time of T cell transfer to block CD86 and CD80 co-stimulation. After three days, the inguinal LNs of each recipient mouse were harvested and pooled. They were mashed through 70 µm filters to obtain single cells which were then stained for flow cytometry. The antibodies used are listed in Table 2.
 
-## Bone marrow chimeras
+**Table 2.**
+ Antibodies and conjugated probes used for flow cytometry and FACS of mouse tissues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Supplier (Clone)</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PE/PE-Cy7-coupled anti-mouse Bcl6</td>
+      <td>BD Biosciences (K112-91)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7-coupled anti-mouse CD95</td>
+      <td>BD Biosciences (Jo2)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>BV605-coupled anti-mouse IgG1</td>
+      <td>BD Biosciences (A85-1)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7/BUV395-coupled anti-mouse CD3</td>
+      <td>BD Biosciences (145–2 C11)</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7/BUV395-coupled anti-mouse CD19</td>
+      <td>BD Biosciences (1D3)</td>
+      <td>1:200-1:300</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7/BUV395-coupled anti-mouse B220</td>
+      <td>BD Biosciences (RA3-6B2)</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>BUV395-coupled anti-mouse CD8a</td>
+      <td>BD Biosciences (53–6.7)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>AF647-coupled anti-mouse CD64</td>
+      <td>BD Biosciences (X54-5/71)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PE-Cf594-coupled anti-mouse CD11b</td>
+      <td>BD Biosciences (M1/70)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>BV786-coupled anti-mouse CD103</td>
+      <td>BD Biosciences (M290)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PE/BV510-coupled anti-mouse CD86</td>
+      <td>BD Biosciences (GL1)</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>APC-AF780-coupled anti-mouse PD1</td>
+      <td>eBioscience (J43)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>APC/Foxp3-coupled anti-mouse Foxp3</td>
+      <td>eBioscience (FJK-16S)</td>
+      <td>1:100-1:200</td>
+    </tr>
+    <tr>
+      <td>AF488/AF700-coupled anti-mouse Ki67</td>
+      <td>eBioscience (SolA15)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Biotin-coupled anti-mouse Gr1</td>
+      <td>eBioscience (RB6-8C5)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>eF450-coupled anti-mouse CD38</td>
+      <td>eBioscience (90)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>PerCp-Cy5.5-coupled anti-mouse CD172a</td>
+      <td>eBioscience (P84)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>eF450-coupled anti-mouse CD24</td>
+      <td>eBioscience (M1/69)</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>APC/APC-AF870-coupled anti-mouse CD11c</td>
+      <td>eBioscience (N418)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PE-Cy5/APC-coupled anti-mouse CD80</td>
+      <td>eBioscience (16-10A1)</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>PerCp-Cy5.5-coupled anti-mouse CD45.2</td>
+      <td>eBioscience (104)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>AF700-coupled anti-mouse MHC-II</td>
+      <td>eBioscience (M5/114.12.2)</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>BV421-coupled anti-mouse CXCR5</td>
+      <td>Biolegend (L138D7)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>V500/PE/BV605-coupled anti-mouse CD4</td>
+      <td>Biolegend (RM4-5)</td>
+      <td>1:400-1:800</td>
+    </tr>
+    <tr>
+      <td>BV510/BV785-coupled anti-mouse B220</td>
+      <td>Biolegend (RA3-6B2)</td>
+      <td>1:200-1:400</td>
+    </tr>
+    <tr>
+      <td>PerCp-Cy5.5-coupled anti-mouse CD44</td>
+      <td>Biolegend (IM7)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>AF488-coupled anti-mouse GL7</td>
+      <td>Biolegend (GL7)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>BV605/PE-coupled anti-mouse F4/80</td>
+      <td>Biolegend (BM8)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>BV650-coupled anti-mouse XCR1</td>
+      <td>Biolegend (ZET)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PE-Cy7-coupled anti-mouse CD40</td>
+      <td>Biolegend (3/23)</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>AF700-coupled anti-mouse CD45.1</td>
+      <td>Biolegend (A20)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PerCp-Cy5.5-coupled anti-mouse PDCA-1</td>
+      <td>Biolegend (927)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PE-coupled anti-mouse TCR Vβ3</td>
+      <td>BD Biosciences (KJ25)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>APC-coupled anti-mouse TCR Vα2</td>
+      <td>eBioscience (B20.1)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>APC/PE-Cy7/BV510-coupled Streptavidin StrepavidinStreptavidin</td>
+      <td>Biolegend, eBioscience</td>
+      <td>1:600</td>
+    </tr>
+    <tr>
+      <td>Biotin-coupled anti-mouse Eα 52–68 peptide</td>
+      <td>eBioscience (eBioY-Ae)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PE-coupled 1W1K-IAb tetramer</td>
+      <td>NIH Tetramer core facility</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>PE-coupled anti-mouse pSTAT1</td>
+      <td>BD Biosciences Phosflow (pY701)</td>
+      <td>1:10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bone marrow chimeras
 
 Recipient mice (2-month-old CD45.1+ C57BL/6 SJL or 2-month-old and 21-month-old C57BL/6 mice) were irradiated with 800–1000 rad in two doses and reconstituted via intravenous injection with 2–4 × 106 BM cells isolated from donor mice (2–3 month-old CD45.1+ C57BL/6 SJL, 3-month-old or 23-month-old C57BL/6 mice). BM chimeras were administered neomycin in their drinking water for the first four weeks after BM transfers and were used for experiments eight weeks after successful reconstitution.
 
-## Flow cytometry
+### Flow cytometry
 
 For T and B cell stains a single cell suspension from inguinal LNs was generated by pressing the tissues through a 70 µm mesh in 2% FBS in PBS. Cell numbers and viability were determined using a CASY TT Cell Counter (Roche). 1–3 × 106 cells were transferred to FACS tubes or 96-well plates for subsequent antibody staining. To stain for 1W1K-specific CD4 T cells, cell suspensions were first pre-treated with Dasatinib (BioVision #1568–100, 1:20,000 in DMEM (Dulbecco’s modified eagle medium, Gibco #41965–039) containing 10% FBS, 100 U/ml penicillin and 100 μg/ml streptomycin) for 10 min at 37 °C. Then, a PE-conjugated MHC class II tetramer containing the 1W1K peptide (obtained through the NIH Tetramer Core Facility; PE-coupled ‘I-A(b) EAWGALANKAVDKA’) was added to each sample at a final concentration of 1:100 and incubated for 2 hr at room temperature. Cells were stained with LIVE/DEAD Fixable Blue Dead Cell Stain (Invitrogen #L23105; diluted 1:1000 in PBS) and incubated with FcR block for 15 min (anti-mouse CD16/32; eBioscience #14-0161-82; diluted 1:50 in 2% FBS in PBS). Surface antibody stains were performed for 1 hr at 4 °C in 100 µl Brilliant Stain Buffer (BD Biosciences #563794). For intranuclear staining, cells were fixed with the eBioscience Foxp3/Transcription Factor Staining Buffer (#00-5323-00). Antibody staining with anti-Foxp3, anti-Ki67 and anti-Bcl6 antibodies was performed for 1–2 hr at 4 °C in 1 × Permeabilization buffer (eBioscience #00-8333-56). Samples were acquired on an LSRFortessa (BD Biosciences) with stained UltraComp eBeads Compensation Beads (Invitrogen #01-2222-41) as compensation controls. Flow cytometry data were analysed using FlowJo v10 software (Tree Star). The antibodies used are listed in Table 2.
 
@@ -150,7 +457,7 @@ For DC analysis, inguinal LNs were harvested and incubated with 10 mg/ml Collage
 
 To stain for pSTAT1,~2×106 cells isolated from the inguinal LNs of naïve mice were seeded into sterile round-bottom 96-well plates in 200 µl complete RPMI (RPMI medium (Gibco #11875093) containing 10% FBS (Sigma #F9665), 100 U/ml penicillin/streptomycin (Thermo Fisher Scientific #15140–122) and 55 µM 2-mercaptoethanol (Thermo Fisher Scientific #21985023)). After a 45 min resting period, they were treated with 50 U/well recombinant murine IFNα (PBL assay science #12105–1) for 30 min and simultaneously stained with fluorochrome-coupled anti-mouse CD8a, B220 and CD11b antibodies. The cells were then washed and fixed with Cytofix (BD Biosciences #554655) for 30 min, followed by a 30 min fixation and permeabilisation step in ice-cold 90% methanol. After three washes in PBS, the cells were stained with anti-mouse pSTAT1 antibodies as well as anti-mouse CD4, CD11c, MHCII, CD172a antibodies for one hour. Samples were acquired on a LSRFortessa 5 and the flow data were analysed using FlowJo v10 software (Tree Star). The antibodies used are listed in Table 2.
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 For RT-qPCR of GFP+ CD11b+ cDC2, cells from total draining LNs were isolated and stained as described above. 800–4000 GFP+ CD11b+ cDC2 were sorted into PCR tubes containing 20 µl of RLT lysis buffer supplied with the RNeasy Micro Kit (Qiagen #74004) using a BD FACSAria or FACS Aria Fusion. For RNA sequencing, we sorted 800 cells into PCR tubes containing 8.5 µl of 1 × lysis buffer provided with the SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing (Clontech # 634890).
 
@@ -158,11 +465,11 @@ To determine the IFN-I responsiveness of cDC2s ex vivo,~2×106 cells isolated fr
 
 To investigate Ifnb1 expression of different LN cell subsets we sorted different cell populations based on a gating strategy proposed by Guilliams et al. (2016): T cells (CD3+), B cells (CD19+), macrophages (CD11c+F4/80+CD64+), pDCs (CD3-CD19-CD11c+B220+PDCA1+), cDC1s (CD3-CD19-F4/80-CD64-MHC-II+CD11c+Xcr1+) and a population containing both cDC2s and Langerhans cells (CD3-CD19-F4/80-CD64-MHC-II+CD11c+Xcr1-) from the pooled draining LNs of 4–5 mice 16 hr after immunisation with Eα-GFP in IFA. To sort DCs and macrophages, LN were digested as described above and Miltenyi’s pan dendritic cell isolation kit (#130-100-875), LS columns (Miltenyi #130-042-401) and a MidiMACS separator (Miltenyi) were used to magnetically enrichment for CD11c+ cells, by following the manufacturer’s instructions. The DC-enriched cell fraction was stained as described above. All cell types were sorted into separate 5 ml tubes containing 300 µl FBS using a BD FACSAria Fusion. RNA for RT-qPCR was isolated from cell pellets using Qiagen’s RNeasy Mini or Micro Kit (#74104 and #74004).
 
-## Confocal imaging of germinal centres
+### Confocal imaging of germinal centres
 
 Draining inguinal LNs were fixed in periodate-lysine-paraformaldehyde (PLP) containing 1% (v/v) PFA (Sigma #P6148), 0.075 M L-Lysine (Sigma #L5501), 0.37 M Na3PO4 (pH 7.4) (Sigma #342483) and 0.01 M NaIO4 (Sigma #210048), for 4 hr at 4 °C. After fixation, the samples were dehydrated in 30% sucrose (Sigma #S0389) overnight, embedded in Optimum Cutting Temperature (OCT) medium (VWR #25608–930) on dry ice and stored at −80 °C. The frozen tissues were cut into 10 μm sections using a cryostat (Leica Biosystems) at −20 °C and again stored at −80°C. For antibody stains, the slides were first air-dried and then hydrated in 0.5% Tween 20 in PBS (PBS-T). Slides were blocked in 200 μl blocking buffer (PBS containing 2% BSA and 10% goat serum), then permeabilised with 200 μl PBS containing 2% Triton X (Sigma #X100). After three wash steps in PBS-T, the slides were incubated with 200 μl of a primary antibody mix in PBS-T containing 1% BSA at 4 °C overnight. Sections were stained with eF450-conjugated rat anti-mouse Foxp3 (clone FJK16S, Thermo Fisher Scientific; 1:50), hamster anti-mouse CD3ε (clone 500A2, Thermo Fisher Scientific; 1:200), rabbit anti-mouse Ki67 (#15580, Abcam; 1:100) and AF647-conjugated rat anti-mouse IgD (clone 11–26 c.2a, Biolegend; 1:100). The next day, the slides were washed in PBS-T three times, then they were incubated with secondary antibodies in 200 μl PBS-T containing 2% goat serum for 2 hr at room temperature. The secondary antibodies used were AF568-conjugated goat anti-hamster IgG (#A-21112, Life Technologies; 1:500) and AF488-conjugated goat anti-rabbit (#150077, Abcam; 1:400). Hydromount mounting medium (National diagnostics #HS-106) was used to mount slides and coverslips were gently placed on top of the slides. Slides were dried overnight for the mounting medium to set. Images were acquired using a Zeiss 780 microscope using 10×, 20 × and 40 × objectives. Image analysis was performed using ImageJ.
 
-## RNA isolation and quantitative Real-Time PCR (RT-qPCR)
+### RNA isolation and quantitative Real-Time PCR (RT-qPCR)
 
 RNA isolation from ex vivo isolated cells was performed using Qiagen’s RNeasy Mini or Micro Kit (#74104 and #74004) following the manufacturer’s instructions. Homogenisation of the samples was achieved by vortexing for 1 min or by using QIAshredders (Qiagen #79654). RNA concentrations obtained from the RNA isolation were measured using the NanoDrop system (Thermo Fisher Scientific).
 
@@ -170,22 +477,22 @@ The TaqMan Gene Expression Assay (Thermo Fisher Scientific #4331182) for Ifnb1 (
 
 All samples were run in duplicates or triplicates on a BioRad CFX96 or CFX384 Real-Time System. The 2-ΔΔCt-method was applied for relative quantification of mRNA levels. Samples from young mice were used as calibrators. As above, Cq values were exported from the CFX Manager software (Bio-rad).
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 ELISA plates (Thermo Fisher Scientific 96F Maxisorp #456537) were coated overnight at 4 °C with 10 µg/ml NP20-BSA (Biosearch Technologies #N-5050H-100) or 2.5 µg/ml NP7-BSA (Biosearch Technologies #N-5050L-100) in PBS. The next day, plates were washed 4 times in wash buffer containing 0.05% Tween 20 in PBS and blocked with 1% BSA in PBS for 1 hr at room temperature. After an additional wash step, sera were loaded onto the plates. The starting dilution for sera was 1:50–200 in 1% BSA in PBS. This initial dilution was titrated down the plate at a 1:3 or 1:4 ratio. The plates were incubated for 2–3 hr at room temperature and after another wash step 50 µl of polyclonal goat anti-mouse IgG1 HRP-conjugated antibodies (Abcam #ab97240; 1:10,000 in PBS) were added for 2 hr at room temperature. The plates were developed with 100 µl/well TMB (Biolegend #421101) for up to 20 min, when the reaction was stopped with 50 µl/well 0.5M H2SO4. A PHERAstar FS microplate reader (BMG Labtech) was used to measure absorption at 450 nm. Absorbance values from serially diluted samples were plotted and values which fell into the linear range of the curve were selected to calculate endpoint titres.
 
-## RNA sequencing
+### RNA sequencing
 
 Samples for RNA sequencing were obtained from 16 mice in one FACS sort. cDNA was prepared from sorted cells using the SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing (Clontech # 634890) on the day of the sort following the manufacturer’s protocol. 400 pg of cDNA per sample were used as input for the preparation of sequencing libraries with the Illumina Nextera XT kit (#FC-131–1096) following the manufacturer’s instructions. The quality of the cDNA and libraries was assessed using Agilent Bioanalyser High Sensitivity DNA Chips (#5067–4626), and Qubit dsDNA High Sensitivity Assay Kit (Invitrogen #Q32854) on a Qubit 4 Fluorometer (Invitrogen). Six samples from young mice and six samples from aged mice passed all quality controls, were pooled onto two HiSeq sequencing lanes and sequenced as 100 bp single-end reads. RNA sequencing analysis was performed using the SeqMonk software package (Babraham Institute, https://www.bioinformatics.babraham.ac.uk/projects/seqmonk/) after trimming (Trim Galore v0.4.2) and alignment of reads to the reference mouse genome GRCm38 using HISAT2 (Kim et al., 2015). Reads were quantitated over exons and library size was standardized to 1 million reads, and then read counts were log2 transformed. Differentially expressed genes were determined by DESeq2 analysis using raw counts (adjusted p-value cut-off p≤0.05) (Love et al., 2014). Principal component analysis was performed using 1000 genes with the largest variances, after normalisation for batch effects with RUVSeq (Risso et al., 2014).
 
 To test for the differential expression of functionally related gene sets, a publicly available list of gene sets (Mouse_GO_AllPathways_with_GO_iea_December_24_2014_symbol.gmt.txt of Bader Lab EM_Genesets Merico et al., 2010) was filtered for categories containing less than 20 or more than 500 genes. Resulting gene sets were tested for differential expression between young and aged samples using Seqmonk Subgroup Statistics (Kolmogorov-Smirnov test, p<0.05, average absolute z-score >1, multiple testing correction). Genes in the Responsiveness to IFN-I pathway: Stat1, Aim2, Pyhin1, Ifi204, Ifi203, Ifi202b, Ifi205, Gbp3, Gbp2, Ifnb1, Gbp6, Htra2, Ndufa13, Trex1, Pnpt1, Tgtp1, Irf1, Igtp, Ddx41, Tmem173, Gm4951, Iigp1, Ifit3, Ifit1.
 
-## Publicly available datasets
+### Publicly available datasets
 
 PBMC RNA-Seq data from GSE45735 were used to assess an individual’s IFN response over time (Henn et al., 2013). Corresponding fastq files were obtained from SRA using the sratoolkit (https://www.ncbi.nlm.nih.gov/sra/) and aligned to GRCh38 using HISAT2 (Kim et al., 2015). Counting, at gene level, was performed with Rsubread (Liao et al., 2019). Variance stabilised normalisation (VSN, as implemented in DESeq2 Huber et al., 2002; Love et al., 2014) was applied to the counts to give an expression value per gene. To analyse the IFN-I response in these datasets we used the ‘HALLMARKS’ IFN alpha response, which is a gene set curated by MSigDB at the Broad Institute based on experimentally derived expression data (Subramanian et al., 2005; Liberzon et al., 2015), and which we have used previously to identify and validate a role for IFN-I in the formation of ectopic lymphoid structures (Denton et al., 2019).
 
 Microarray data from GSE74813 (Franco et al., 2013; Nakaya et al., 2015) were re-analysed as follows: Raw. CEL files were downloaded from GEO with the corresponding annotation data. CEL files were read into R via readAffy (Gautier et al., 2004) and were normalised using VSN (Huber et al., 2002). The dataset was then subsetted to select only individuals with paired day 0 and day 1 samples. Genes were selected as described in the results section. Antibody titres were made available upon request (Nakaya et al., 2015).
 
-## Statistics
+### Statistics
 
 All mouse experiments were performed twice or more with 3–10 mice per group. Differences between experimental groups were assessed using the non-parametric Mann–Whitney or Kruskal-Wallis test combined with Dunn’s multiple testing correction within the Prism v6 and v7 software (GraphPad). Outliers as determined by Tukey's outlier test within the Prism software were excluded from the analysis. Test Rank correlations were determined using Spearman’s correlation coefficients (rho). p-values≤0.05 were considered statistically significant. For RNA sequencing analysis, sequencing reads were quantitated over exons and library size was standardized to 1 million reads, and then read counts were log2 transformed. Differentially expressed genes were determined by DESeq2 analysis using raw counts (adjusted p-value cut-off p≤0.05).

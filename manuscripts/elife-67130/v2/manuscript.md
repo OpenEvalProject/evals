@@ -44,25 +44,25 @@ We and several others have documented the applicability of CRISPR diagnostics (C
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The study was designed to evaluate the efficacy of RAY on left-over patient samples. The intent of the study was to develop a robust CRISPR diagnostic that can perform with high accuracy for variant detection at significantly low cost and time taken for detection as compared to sequencing. For the N501Y detection using RAY, SARS-CoV-2 and control RNA samples were received from the diagnostic laboratory at CSIR-Institute of Genomics and Integrative Biology.
 
-## Oligos
+### Oligos
 
 A list of all oligos (Merck) used in the study can be found in Supplementary file 4.
 
-## Protein purification
+### Protein purification
 
 Plasmids containing FnCas9-WT and dFnCas9 (catalytically-inactive, dead) (Acharya et al., 2019) sequences were transformed and expressed in Escherichia coli Rosetta 2 (DE3) (Novagen). Rosetta 2 (DE3) cells were cultured at 37°C in LB medium (with 50 mg/ml Kanamycin) and induced when OD600 reached 0.6, using 0.5 mM isopropyl β-D-thiogalactopyranoside (IPTG). After an overnight culture at 18°C, E. coli cells were harvested by centrifugation and resuspended in a lysis buffer (20 mM HEPES, pH 7.5, 500 mM NaCl, 5%) glycerol supplemented with 1X PIC (Roche) containing 100 µg/ml lysozyme. Subsequent cell lysis by sonication, the lysate was put through to Ni-NTA beads (Roche). The eluted protein was further purified by size-exclusion chromatography on HiLoad Superdex 200 16/60 column (GE Healthcare) in a buffer solution with 20 mM HEPES pH 7.5, 150 mM KCl, 10% glycerol, 1 mM DTT. The purified proteins were quantified by Pierce BCA protein assay kit (Thermo Fisher Scientific) and stored at −80°C until further use.
 
-## RAY crRNA and primer design
+### RAY crRNA and primer design
 
 All 48 VOCs/VOIs within 12 emerging SARS-CoV-2 lineages till May 2021 were taken from the Centers for Disease Control and Prevention report (CDC, 2021; Rambaut et al., 2020; Hadfield et al., 2018). Further, by having these mutations at 2nd/6th/16th/19th bp upstream to PAM (NGG) in the SARS-CoV2- genome, a total of 19 among 48 variants could be targeted with the RAY strategy. Next, within the variant nucleotide containing crRNA sequence, a second synthetic mismatch nucleotide at the corresponding 6th/2nd/19th/16th position was added. Primers required for IVC assays flanking these crRNAs were designed using Primer3plus python library (Untergasser et al., 2012). Finally, the crRNAs/primers were checked for off-targets on a representative bacterial genome database (NCBI), virus genome database (NCBI) (Brister et al., 2015), and human genome/transcriptome (GENCODE GRCh38) (Frankish et al., 2019).
 
 For the benefit of end users with quick design and implementation of the RAY for any targetable SNV/VOC/VOI, we now have also optimized our previously developed web tool JATAYU (Junction for Analysis and Target Design for Your FELUDA assay) (Azhar et al., 2021), which functions by incorporating mismatches in the sequence provided by the user. The server generates sgRNA and flanking primer sequences ready for synthesis (http://jatayu.igib.res.in).
 
-## In vitro cleavage assay for 2 and 6 or 16 and 19 mismatched positions
+### In vitro cleavage assay for 2 and 6 or 16 and 19 mismatched positions
 
 Purified PCR 228 bp amplicon from HBB gene was used as substrate in in vitro cleavage assays, as optimized in our previous studies (Acharya et al., 2019). Substrate amplicons were treated with reconstituted dFnCas9 RNP complex (100 nM) in a reaction buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) at 37°C for 10 min, the cleaved products were visualized on a 2% agarose gel and densitometric quantification of images were done (Figure 1A).
 
@@ -70,37 +70,37 @@ Purified PCR 228 bp amplicon from HBB gene was used as substrate in in vitro cle
 
 **Figure 1.:** (A) FnCas9 is unable to bind or cleave targets having two mismatches at the PAM proximal 2nd and 6th or PAM distal 16th and 19th positions as shown (left panel). The quantification of cleavage with a substrate with mismatches at indicated positions is shown (right panel, n = 3 independent experiments, errors s.e.m, student’s paired T-test p values ***<0.001 are shown). (B) Dot plot showing the major SNVs (y-axis) present in the emerging SARS-CoV-2 lineages (x-axis). The status of each SNV as being targetable by RAY is indicated as dots.
 
-## RAY detection assays
+### RAY detection assays
 
 Sequences containing WT and Mutant were reverse transcribed, and amplified using primers with/without 5’ biotinylation from SARS-CoV-2 Viral RNA-enriched samples.
 
-## Detection via In vitro Cleavage (IVC)
+### Detection via In vitro Cleavage (IVC)
 
 Purified PCR amplicons containing WT and Mutant sequences were used as substrates in in vitro cleavage assays, as optimized in our previous studies (Azhar et al., 2021). Substrate amplicons were treated with reconstituted RNP complex (100 nM) in a reaction buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) at 37°C for 10 min, and cleaved products were visualized on a 2% agarose gel.
 
-## RAY via lateral flow assay (RT-PCR)
+### RAY via lateral flow assay (RT-PCR)
 
 A region from the SARS-CoV-2 S gene containing N501Y/T716I/E484K mutations was reverse transcribed and amplified using a single end 5’ biotin-labeled primer. In vitro transcription of sgRNAs/crRNAs was done using MegaScript T7 Transcription kit (ThermoFisher Scientific) following manufacturer’s protocol and purified by NucAway spin column (ThermoFisher Scientific). Chimeric gRNA (crRNA:TracrRNA) was prepared by equally (crRNA:TracrRNA molar ratio,1:1) combining respective crRNAs and synthetic 3'-FAM-labeled TracrRNA in an annealing buffer (100 mM NaCl, 50 mM Tris-HCl pH8 and 1 mM MgCl2) by heating at 95°C for 2–5 min and then allowed to cool at room temperature for 15–20 min. RNP complex was prepared by equally mixing (Protein:sgRNA molar ratio,1:1) Chimeric gRNA and dead FnCas9 in a buffer (20 mM HEPES, pH7.5, 150 mM KCl, 1 mM DTT, 10% glycerol, 10 mM MgCl2) and rested for 10 min at RT. Target biotinylated amplicons were then treated with the RNP complexes for 10 min at 37°C. Finally, 80 µl of Dipstick buffer was added to the mix along with Milenia HybriDetect one lateral flow strip. The strips were allowed to stand in the solution for 2–5 min at room temperature and the result was observed. The strip images can be processed using the TOPSE application that generates background corrected values from the smart phone acquired images of the strip. This application has been previously trained on a large number of CoV-2 samples (Azhar et al., 2021). In vitro synthesized crRNAs used for double amplicon RAY were a gift from TATA Medical and Diagnostics. Detailed description of the protocol can be found in Appendix 1.
 
-## qRT-PCR SARS-CoV-2 detection
+### qRT-PCR SARS-CoV-2 detection
 
 qRT-PCR was performed using STANDARD M nCoV Real-Time Detection kit (SD Biosensor) as per manufacturer’s protocol. Briefly, per reaction 3 µl of RTase mix and 0.25 µl of Internal Control A was added to 7 µl of the reaction solution. Five µl of each of the negative control, positive control, and patient sample nucleic acid extract was added to the PCR mixture dispensed in each reaction tube. The cycling conditions on the instrument were as follows: Reverse transcription 50°C for 15 min, Initial denaturation 95°C for 1 min, 5 Pre-amplification cycles of 95°C for 5 s; 60°C for 40 s followed by 40 amplification cycles of 95°C for 5 s; 60°C for 40 s. Signal was captured in the FAM channel for the qualitative detection of the new coronavirus (SARS-CoV-2) ORF1ab (RdRp) gene, JOE (VIC or HEX) channel for E gene, and CY5 channel for internal reference.
 
-## Sequencing of patient samples
+### Sequencing of patient samples
 
 Individuals who were found to be RT-PCR positive for SARS-CoV-2, were sequenced to determine whether it was a UK variant (20I/501Y.V1) or non-UK variant. With a low number of samples arriving each day in the lab and with quick turnaround time for reporting, Nanopore sequencing was undertaken for most of the samples.
 
-## SARS-CoV-2 whole genome sequencing using nanopore platform
+### SARS-CoV-2 whole genome sequencing using nanopore platform
 
 In brief, 100 ng total RNA was used for double-stranded cDNA synthesis by using Superscript IV (ThermoFisher Scientific, Cat.No. 18091050) for first strand cDNA synthesis followed by RNase H digestion of ssRNA and second strand synthesis by DNA polymerase-I large (Klenow) fragment (New England Biolabs, Cat. No. M0210S). Double stranded cDNA thus obtained was purified using AMPure XP beads (Beckman Coulter, Cat. No. A63881). The SARS-CoV-2 genome was then amplified from 100 ng of the purified cDNA following the ARTIC V3 primer protocol. Sequencing library preparation consisting of End Repair/dA tailing, Native Barcode Ligation, and Adapter Ligation was performed with 200 ng of the multiplexed PCR amplicons according to Oxford Nanopore Technology (ONT) library preparation protocol-PCR tiling of COVID-19 virus (Version: PTC_9096_v109revE_06Feb2020). Sequencing in sets of 24 barcoded samples was performed on MinION Mk1B platform by ONT.
 
-## Nanopore sequencing analysis
+### Nanopore sequencing analysis
 
 The ARTIC end-to-end pipeline was used for the analysis of MinION raw fast5 files up to the variant calling. Raw fast5 files of samples were basecalled and demultiplexed using Guppy basecaller that uses the base calling algorithms of Oxford Nanopore Technologies (https://community.nanoporetech.com) with phred quality cut-off score >7 on GPU-linux accelerated computing machine. Reads having phred quality scores less than seven were discarded to filter the low-quality reads. The resulting demultiplexed fastq were normalized by read length of 300–500 (approximate size of amplicons) for further downstream analysis and aligned to the SARS-CoV-2 reference (MN908947.3) using the aligner Minimap2 v2.17 (Li, 2018). Nanopolish (Loman et al., 2015) was used to index raw fast5 files for variant calling from the minimap output files. To create consensus fasta, bcftools v1.8 was used over normalized minimap2 output.
 
 ## Results
 
-## RAY is able to target at least one SNV in every emerging lineage of SARS-CoV-2
+### RAY is able to target at least one SNV in every emerging lineage of SARS-CoV-2
 
 In an earlier study, we had successfully established that FnCas9 is unable to bind or cleave targets having two mismatches at the 2nd and 6th position (PAM proximal) of the sgRNA with respect to the target (Azhar et al., 2021; Figure 1A). Through in vitro cleavage studies of a double-stranded DNA substrate, we identified that the same outcome is also observed when mismatches are present at the 16th and 19th position (PAM distal) (Figure 1A, Materials and methods). This implies that if a mismatch exists in any of these position combinations, placing an additional synthetic mutation in the sgRNA at the other positions makes FnCas9 unable to bind or cleave the target (Figure 1A). Thus, mutations at any of these positions relative to a NGG PAM site in the SARS CoV-2 variants could be potentially distinguished from the parent strain.
 
@@ -108,7 +108,7 @@ To develop RAY for identifying SARS-CoV-2 variants, we first analyzed the mutati
 
 We designed primer pairs surrounding the N501Y mutation after analyzing the mutational spectrum in SARS-CoV-2 strains obtained from the publicly available sequencing database, GISAID (Shu and McCauley, 2017). Additionally, we ensured that no regions from human or non-human genome as well as transcriptome shared significant homology to the sites to prevent any non-specific amplification during the reverse transcription PCR (RT-PCR) reaction (Materials and methods). In our earlier study, we have validated two FnCas9 sgRNAs in the N and S gene of SARS-CoV-2 which could detect positive cases with high sensitivity and specificity (Azhar et al., 2021). We reasoned that including the S-gene sgRNA which lies in the vicinity of the N501Y variant would serve as an internal positive control both for the presence of the SARS-CoV-2 virus in the sample as well as quality control for the amplicons generated in the RT PCR step of the assay.
 
-## RAY can successfully discriminate N501Y and WT nCoV2 substrates
+### RAY can successfully discriminate N501Y and WT nCoV2 substrates
 
 We tested the N501Y sgRNA containing the variant mismatch at PAM proximal 2nd position to selectively bind and cleave the mutant substrate, while not affecting the WT substrate due to mismatch at PAM proximal 2nd and 6th positions. We found that catalytically active FnCas9 was able to successfully cleave the dsDNA substrate containing the N501Y mutation while leaving the WT sequence intact (Figure 2A). Importantly, this leads to a distinct pattern on agarose gel that can distinguish the two variants. We established that this approach for variant identification can be performed using a stand-alone or portable electrophoresis apparatus leading to a turnaround time of about 1.5 hr from RNA to read-out (Figure 2A).
 
@@ -120,7 +120,7 @@ The electrophoresis based identification of the N501Y(A23063T) mutation can be a
 
 We reasoned that in order to enable RAY to distinguish two samples different by a single mismatch on a paper strip, the intensity of the one mismatched sgRNA (as the other mismatch corresponds to N501Y SNV) should be several folds higher than wild-type samples (having two mismatches with the sgRNA, one at the SNV position and another synthetic mismatch). To generate a visually distinctive signal between WT and mutant sample, we performed a single-step reverse transcription PCR to generate a biotin-labeled amplified product that can be detected by a single sgRNA (called SWT) if the sample is WT and by both sgRNAs (SWT and SN501Y) if the sample contains the N501Y variant (Figure 2B,C). The presence of the SWT band also serves as a validation for the sample to be SARS-CoV-2 positive.
 
-## Single Amplicon RAY can discriminate N501Y and WT nCoV-2 substrates from patient samples with high viral load
+### Single Amplicon RAY can discriminate N501Y and WT nCoV-2 substrates from patient samples with high viral load
 
 We first generated a single amplicon labeled with biotin at one end and performed RAY with both sgRNAs (SWT and SN501Y) (Figure 3A). We reasoned that labeling biotin in the reverse primer would reduce possible background signal due to non-specific interactions of the unused biotin primers with the streptavidin line on the strip and increase the signal resolution between the mutant and WT samples. Among the four amplicon sizes that we investigated, an amplicon of 580 bp gave a clear discernible signal distinguishing the N501Y mutation over the WT sample (Figure 3A, Materials and methods). To validate the reproducibility of this method, we took mutant and WT substrates, and performed RAY 10 times, and were able to successfully distinguish them on every occasion (Figure 3B).
 
@@ -130,7 +130,7 @@ We first generated a single amplicon labeled with biotin at one end and performe
 
 Next, we tested RAY on RNA extracted from samples of eight qRT-PCR-positive SARS-CoV-2-infected individuals who harbored the N501Y mutation (along with other mutations). The samples were sequenced in parallel to detect the presence of N501Y mutation. RAY was able to correctly identify the variant signature in all eight samples that harbored the mutation (Figure 3C). However, we observed variability of signal intensities across the different samples. In particular, samples with low viral load (qRT-PCR Ct >25) showed a comparatively faint band (Figure 3C). This suggested that the RAY protocol required further optimization to increase the signal intensity, especially for low viral titres. Importantly, RAY correctly classified all eight WT samples where neither the N501Y mutation nor any other lineage variants were present as seen by either an absence of a distinct band or an extremely faint band in the test line (Figure 3C). In addition, RAY identified all confirmed COVID-19-negative samples (12) tested simultaneously (Figure 3C). Taken together, the single amplicon RAY assay showed good specificity in identifying WT and SARS-CoV-2-negative samples but required improvements to increase the sensitivity for samples with low viral load.
 
-## Double Amplicon RAY can successfully achieves high specificity and sensitivity with patient samples
+### Double Amplicon RAY can successfully achieves high specificity and sensitivity with patient samples
 
 To improve the performance of the assay for patient samples across a wide range of viral titres, we modified several aspects of the RAY assay. Firstly, we used TOPSE (True Outcome Predicted via Strip Evaluation), a smartphone-based application to generate a band intensity score from a lateral flow strip to eliminate bias that can result from visual estimation (Appendix 1). Secondly, we labeled both forward and reverse primers in the assay with 5' Biotin to increase the signal intensity and reduced the amplicon length of the substrate to get a consistent amplification at the end of each PCR run (Figure 4A,B).
 

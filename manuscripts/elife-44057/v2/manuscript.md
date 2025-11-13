@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.44057.001 During early mammalian development, the chromatin landscape undergoes profound transitions. The Zdbf2 gene—involved in growth control—provides a valuable model to study this window: upon exit from naïve pluripotency and prior to tissue differentiation, it undergoes a switch from a distal to a proximal promoter usage, accompanied by a switch from polycomb to DNA methylation occupancy. Using a mouse embryonic stem cell (ESC) system to mimic this period, we show here that four enhancers contribute to the Zdbf2 promoter switch, concomitantly with dynamic changes in chromatin architecture. In ESCs, the locus is partitioned to facilitate enhancer contacts with the distal Zdbf2 promoter. Relieving the partition enhances proximal Zdbf2 promoter activity, as observed during differentiation or with genetic mutants. Importantly, we show that 3D regulation occurs upstream of the polycomb and DNA methylation pathways. Our study reveals the importance of multi-layered regulatory frameworks to ensure proper spatio-temporal activation of developmentally important genes.
+During early mammalian development, the chromatin landscape undergoes profound transitions. The Zdbf2 gene—involved in growth control—provides a valuable model to study this window: upon exit from naïve pluripotency and prior to tissue differentiation, it undergoes a switch from a distal to a proximal promoter usage, accompanied by a switch from polycomb to DNA methylation occupancy. Using a mouse embryonic stem cell (ESC) system to mimic this period, we show here that four enhancers contribute to the Zdbf2 promoter switch, concomitantly with dynamic changes in chromatin architecture. In ESCs, the locus is partitioned to facilitate enhancer contacts with the distal Zdbf2 promoter. Relieving the partition enhances proximal Zdbf2 promoter activity, as observed during differentiation or with genetic mutants. Importantly, we show that 3D regulation occurs upstream of the polycomb and DNA methylation pathways. Our study reveals the importance of multi-layered regulatory frameworks to ensure proper spatio-temporal activation of developmentally important genes.
 
 ## Introduction
 
@@ -31,13 +31,29 @@ We show here using a cell-based approach that several enhancers cooperate to reg
 
 ## Results
 
-## Two classes of putative enhancers lie in the Zdbf2 locus
+### Two classes of putative enhancers lie in the Zdbf2 locus
 
 To discover functional genetic elements that regulate Zdbf2 alternative promoter usage during de novo DNA methylation, we performed an assay for transposase-accessible chromatin followed by sequencing (ATAC-Seq) (Buenrostro et al., 2013) on DNA hypomethylated naïve ESCs (cultured in 2i/LIF + vitC) and on primed, highly DNA methylated epiblast-like cells (EpiLCs) at day 7 (D7) of differentiation (Figure 1A). A protracted differentiation protocol is necessary to observe the promoter-switch dynamics (Figure 1—figure supplement 1B) (Greenberg et al., 2017), which distinguishes this protocol from typical short-term EpiLC differentiation methods that generally last two or three days. As such, the transcriptome at later time-points of differentiation is more in line with primed epiblast stem cells (EpiSCs) in culture, as opposed to ‘formative’ EpiLCs (Figure 1—figure supplement 1C,D) (Bao et al., 2018; Kalkan and Smith, 2014). For clarification, we therefore refer to these cells as D7 EpiLCs. In this cellular system, the imprinted status of the locus is lost, but it biallelically recapitulates all events occurring in vivo on the paternal allele, including the pLiz to pZdbf2 promoter usage switch and sDMR methylation (Greenberg et al., 2017). As expected, the ATAC-Seq peak for pLiz diminished as it became repressed and DNA methylated from ESCs to D7 EpiLCs. An ATAC-Seq peak was present at pZdbf2 in ESCs and further enhanced in D7 EpiLCs; this is correlated with our previous data indicating that pZdbf2 is bivalent and poised in ESCs (Greenberg et al., 2017; Mas et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig1-v2.jpg)
+
+**Figure 1.:** (A) Chromatin and expression landscape at the Zdbf2 locus in ESCs (top) and D7 EpiLCs (bottom). In hypomethylated naïve ESCs, Zdbf2 initiates from the pLiz promoter while a ~ 25 kb block of H3K27me3 extends through pZdbf2. Upon EpiLC differentiation, the H3K27me3 signal depletes while DNA methylation is gained; the pLiz ATAC-seq peak decreases concomitantly with decreased expression, while pZdbf2 becomes the main promoter. Four prominent ATAC-seq peaks of accessible chromatin (E1 to E4) lie between pLiz and pZdbf2 promoters. WGBS: Whole genome bisulfite sequencing. H3K27me3 ChIP-seq data is from Greenberg et al. (2017). All other genomics data were generated for this study. One representative biological replicate is displayed for each RNA-seq track. (B) H3K27ac ChIP-qPCR shows enrichment for this mark at E1 to E3 in ESCs and D7 EpiLCs, while E4 only becomes enriched in EpiLCs. Data shown as ±s.e.m. from three biological replicates. (C) 4C-seq tracks from the pLiz (top) and pZdbf2 (bottom) viewpoints (VPs) in ESCs and D7 EpiLCs. ESC/EpiLC ratio between 4C-seq signals is indicated. pLiz interactions with E1-3 are more frequent in ESCS, but remain high in EpiLCs, likely due to proximity. pLiz seems less restricted in EpiLCs, with interactions spreading on the ‘right’ side of the locus. pZdbf2 exhibits increased interactions at E1 to E4 in EpiLCs over ESCs. Data from one representative biological replicate (two total). Statistical analyses were performed by two-tailed unpaired t-test: n.s = not significant, **p≤0.01, ***p≤0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Imprinted regulation of Liz and Zdbf2 in vivo. The Liz promoter is DNA methylated and silent on the maternal allele. Conversely, the paternal allele is expressed, leading to de novo DNA methylation at the paternal sDMR, and Zdbf2 activation. The epigenetic setting is programmed around the time of implantation in embryogenesis, but is then stably maintained throughout life. (B) Expression dynamics of promoter switch during protracted EpiLC differentiation. The pLiz-to-pZdbf2 promoter switch occurs at roughly D4. pLiz is shut down and pZdbf2 is active by D7. (C) Hierarchical clustering using correlation-based distance of WT RNA-seq data during EpiLC differentiation. Samples generated in this study are highlighted in bold and italic type. In comparison with publicly available data (Bao et al., 2018), D4 and D7 EpiLCs cluster more closely with EpiSCs, indicating a primed pluripotency state. (D) Plots of reads per kilobase million (RPKM) from RNA-seq of WT cells during EpiLC differentiation for selected markers. Upregulation of markers of primed pluripotency indicate that D7 EpiLCs have entered a primed pluripotency state.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) H3K27ac ChIP-qPCR at control loci. The Jarid2 enhancer (E Jarid2) is active in ESCs and EpiLCs, whereas E Fgf5 is a poised enhancer (Buecker et al., 2014). pPax5 is a negative control. Data shown as ±s.e.m. from three biological replicates. (B) In vivo and in cellula chromatin landscape of the Zdbf2 locus. Top panel: in the in vivo ICM, the chromatin accessibility (Wu et al., 2016) and H3K27me3 (Liu et al., 2016) patterns resemble the in cellula system. Bottom panels: published data (Buecker et al., 2014) showing that active and poised enhancers are bound by P300 and OCT4. E1-3 are marked by H3K4me1, but not E4. E4 exhibits higher vertebrate conservation (PhastCons) than other local enhancer elements. Statistical analyses were performed by two-tailed unpaired t-test: *p≤0.05, **p≤0.01.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Hi-C data from mouse ESCs (Bonev et al., 2017) overlaid with 4C-seq data from ESCs and EpiLCs (this study). The Zdbf2 locus is located in an inter-TAD, and 4C-seq shows that local interactions are restricted to the inter-TAD. (B) Top: Zoom-in of inter-TAD indicates that the region can be further subdivided, with pZdbf2 primarily interacting in a compartment within the inter-TAD. Bottom: Summaries of the interaction frequencies (unnormalized reads) of pZdbf2 and Adam23 VPs in ESCs and EpiLCs. In both cell types, the interactions mainly occur in respective subdomains of the inter-TAD. The boundary was defined as a CTCF binding site.
+
 In between the two promoters, four significant peaks were present in both ESCs and D7 EpiLCs, three proximal to pLiz (E1-3), and one adjacent to a CpG island (CGI) that is an apparent border to the polycomb H3K27me3 block in ESCs (E4) (Figure 1A). Given that these regions of accessible chromatin were not lying on obvious active promoters, we reasoned that they were potential enhancer elements and named them E1 to E4, from the closest to the most distal to pLiz. Therefore we assayed for enrichment of H3K27 acetylation (H3K27ac), a mark of active enhancer elements (Creyghton et al., 2010). E1-3 appeared enriched for the H3K27ac mark in both cell types, while E4 was enriched for the mark only in D7 EpiLCs (Figure 1B). Thus, while E1-3 can be classified as active in ESCs and EpiLCs, the chromatin accessibility and H3K27ac dynamics at E4 are reminiscent of so-called ‘poised’ enhancers (Figure 1—figure supplement 2A) (Buecker et al., 2014; Rada-Iglesias et al., 2011). Moreover, publicly available data indicate that E4 is marked by P300 in ESCs and shows high levels of vertebrate conservation (Figure 1—figure supplement 2B), two more features of poised enhancers (Rada-Iglesias et al., 2011). OCT4 is enriched at all of the putative enhancers in both naïve ESCs and D7 EpiLCs (two pluripotent cell types), indicating that both classes of enhancers are likely regulated in a pluripotency-dependent manner (Buecker et al., 2014). Importantly, publicly available in vivo data from the naïve pluripotent inner cell mass (ICM) of the blastocyst exhibit a chromatin accessibility and H3K27me3 pattern akin to what we observed in ESCs for the Zdbf2 locus, suggesting that the in vivo and in cellula regulation are coherent (Figure 1—figure supplement 2B) (Liu et al., 2016; Wu et al., 2016).
 
-## High resolution 4C reveals enhancer-promoter dynamic interactions
+### High resolution 4C reveals enhancer-promoter dynamic interactions
 
 Given that E1-4 exhibit the chromatin signature of enhancer elements, it is possible that the Liz and Zdbf2 promoters undergo dynamic interactions with these regulatory elements during the ESC to EpiLC transition. To test this, we performed high-resolution circular chromosome conformation capture followed by sequencing (4C-seq) during differentiation (Noordermeer et al., 2011; van de Werken et al., 2012). Mammalian genomes are physically subdivided into ‘regulatory neighborhoods’ known as topologically associated domains (TADs), which average roughly one megabase in size (Dixon et al., 2012; Nora et al., 2012); available Hi-C data from mouse ESCs indicates that the Zdbf2 locus exists within an ‘inter-TAD’ that spans ~650 kb (Figure 1—figure supplement 3A) (Bonev et al., 2017). Our 4C-seq data further allowed us to subdivide this inter-TAD, with intra-Zdbf2 locus and intra-Adam23 locus interactions occurring in relatively mutually exclusive domains (Figure 1—figure supplement 3B).
 
@@ -45,9 +61,17 @@ Using the pLiz as a 4C-seq viewpoint (VP), we did not observe distal looping tha
 
 A clear picture emerged from the analysis for the Zdbf2 promoter (pZdbf2), which is active in D7 EpiLCs while E1-4 are all marked by H3K27ac. Our 4C-seq revealed that pZdbf2 exhibited increased contacts with all four of the putative enhancers in D7 EpiLCs (Figure 1C). This indicates a potential cooperative role for E1-4 in activating pZdbf2.
 
-## Determination of enhancer function and regulation
+### Determination of enhancer function and regulation
 
 From our 4C-seq analyses we reasoned that E1-3 potentially regulate pLiz in ESCs, while E4 is inactive (Figure 2A). To test this, we generated homozygous deletions of combinations of putative enhancer elements (Figure 2—figure supplement 1A). The E3 element also serves as the promoter of the Gpr1 gene, which is lowly expressed in our system and we previously showed plays no role in Zdbf2 regulation (Greenberg et al., 2017). As such, deleting the element had no impact on expression or DNA methylation at the Zdbf2 locus (Figure 2—figure supplement 1B,C). If E3 is an enhancer element, it may be redundant with E1 and/or E2. Therefore, we generated a ~ 13 kb deletion that encompassed E1-3 (Figure 2B, Figure 2—figure supplement 1A). In the absence of these elements, the Liz transcript was markedly repressed, and the canonical Zdbf2 isoform failed to properly activate (Figure 2C). As Liz transcription is required to activate pZdbf2, it should be noted that this deletion does not confirm E1-3 elements regulate pZdbf2 directly. However, the data provide a strong indication that E1-3 are indeed enhancers of pLiz.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig2-v2.jpg)
+
+**Figure 2.:** (A) Model for enhancer regulation based on 4C-seq data. (B) Model for deletion of E1-3.. (C) RT-qPCR of Liz (left) and Zdbf2 (right) during EpiLC differentiation in WT and the ∆E1-3 mutant. The ∆E1-3 mutation significantly reduces both transcripts. Data are shown as ±s.e.m. from five and three biological replicates for WT and mutant, respectively. (D) DNA methylation of pLiz (left) and the sDMR (right) during EpiLC differentiation as measured by bisulfite conversion followed by pyrosequencing (BS-pyro) in WT and the ∆E1-3 mutant. When Liz fails to activate, DNA methylation is acquired faster at pLiz, and fails to properly accumulate at the sDMR. Data shown as ±s.e.m. from five and three biological replicates for WT and mutant, respectively. (E) Model for deletion of E4. (F) RT-qPCR of Liz (left) and Zdbf2 (right) during EpiLC differentiation in WT and the ∆E4 mutant. There is no effect on Liz expression dynamics, but Zdbf2 does not properly activate. Data shown as ±s.e.m. from four biological replicates for each genotype. (G) DNA methylation of pLiz (left) and the sDMR (right) during EpiLC differentiation as measured by BS-pyro in WT and the ∆E4 mutant. DNA methylation is unperturbed in the ∆E4 mutant. Data are shown as ±s.e.m. from four biological replicates for each genotype. (H) H3K27me3 ChIP-qPCR in ESCs (left) and EpiLCs (right). There is no significant effect on polycomb dynamics in ∆E4 mutation, except mild ectopic spreading upstream of the sDMR region. pPax5 and pOct4 are positive and negative controls, respectively. Data shown as ±s.e.m. from three biological replicates for each genotype. Statistical analyses were performed by two-tailed unpaired t-test: n.s = not significant, *p≤0.05, **p≤0.01, ***p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Alleles generated by CRISPR/Cas9 mediated deletions of enhancer elements. (B) RT-qPCR of Liz (left) and Zdbf2 (right) during EpiLC differentiation in WT and the ∆E3 mutant. There is no effect on Liz or Zdbf2 expression. Data shown as ±s.e.m. from at least four biological replicates for each genotype. (C) DNA methylation of pLiz (left) and the sDMR (right) during EpiLC differentiation as measured by BS-pyro in WT and the ∆E3 mutant. DNA methylation is unperturbed. Data shown as ±s.e.m. from four biological replicates for each genotype. (D) H3K27me2 ChIP-qPCR at E4 in WT ESCs and EpiLCs. E4 is depleted for the mark in both cell types. Data shown as ±s.e.m. from three biological replicates. Ctsh and Oct4 are positive and negative controls, respectively.
 
 We previously showed that DNA methylation accumulates at pLiz after Liz transcription ablates (Greenberg et al., 2017). Interestingly, in the absence of E1-3, DNA methylation accumulated faster at pLiz, perhaps indicating less protection from de novo DNA methyltransferases due to reduced transcription factor occupancy (Figure 2D). Liz transcription is required for cis DNA methylation establishment at the sDMR region in cellula and in vivo (Greenberg et al., 2017). In the absence of E1-3, DNA methylation failed to properly accumulate at the sDMR region, reaching 67% by D7 (Figure 2D). This was likely as a consequence of reduced Liz expression, in agreement with the 45% sDMR methylation we previously reported upon complete deletion of pLiz (∆Liz) (Greenberg et al., 2017).
 
@@ -57,21 +81,45 @@ The E4 enhancer element bears the hallmark of a poised enhancer in that it is en
 
 We previously showed that in ESCs containing loss-of-function mutations in the Embryonic ectoderm development (Eed) gene (Schoeftner et al., 2006)—a core component of PRC2—there was precocious activation of pZdbf2 (Greenberg et al., 2017). Therefore, we wanted to observe if a PRC2 mutant would result in a change in the chromatin status of E4. Indeed, both E4 and pZdbf2 became enriched for H3K27ac in the absence of polycomb-mediated repression in ESCs (Figure 3A). Incidentally, pLiz and E1-3, which are already active in ESCs, exhibited no significant change. In ∆Liz mutants, pZdbf2 remains polycomb repressed (Greenberg et al., 2017). As such, in the ∆Liz mutant, the E4 enhancer did not attain complete levels of H3K27ac during EpiLC differentiation (Figure 3B). Thus, while E4 does not display the signatures of direct polycomb regulation, per se, its activity is controlled in a polycomb-dependent manner.
 
-## Liz transcription and polycomb play a minor role in 3D organization of the locus
+![Figure 3.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig3-v2.jpg)
+
+**Figure 3.:** (A) H3K27ac ChIP-qPCR in WT and Eed-/- ESCs. H3K27ac levels are unaffected at pLiz and E1-3, but E4 and pZdbf2 become aberrantly activated in Eed-/- ESCs. Data shown as ±s.e.m. from two biological replicates for both genotypes. (B) H3K27ac ChIP-qPCR in WT and ∆Liz EpiLCs. In ∆Liz mutants, when the sDMR remains enriched for H3K27me3, E4 remains diminished for H3K27ac. Data shown as ±s.e.m. from three biological replicates for both genotypes. (C) 4C-seq tracks from the pZdbf2 VP in WT and Eed-/- ESCs. Ratios between 4C-seq signals is indicated in between the samples. In Eed mutants, pZdbf2 exhibits increased interactions at E4, but not E1-3. Statistical analyses were performed by two-tailed unpaired t-test: n.s = not significant, *p≤0.05, **p≤0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Ratios between 4C-seq signals is indicated in between the samples. While pZdbf2 interacts with E1-4 at greater frequencies in ∆Liz EpiLCs compared to ∆ Liz ESCs, it is not to the same extent as WT EpiLCs. Data from one representative biological replicate (two total).
+
+### Liz transcription and polycomb play a minor role in 3D organization of the locus
 
 During differentiation, the transcription initiated from pLiz and traversing the locus is required for polycomb-to-DNA methylation switch, and pZdbf2 activation (Greenberg et al., 2017). However, our 4C-seq analysis revealed that in the absence of Liz transcription, there is only a minor effect on the distal interaction landscape of pZdbf2 (Figure 3—figure supplement 1). Moreover, in ∆Liz EpiLCs, pZdbf2 exhibited increased interactions with E1-4, but not to the same extent as WT EpiLCs. It should be noted that the ∆Liz DNA methylation phenotype is only partial in the cell-based system, which may account for the intermediate chromosome conformation phenotype.
 
 The polycomb region that regulates pZdbf2 spans ~ 25 kb, from E4 and into the body of Zdbf2 (Figure 1A). Consistent with previous reports, in ESCs this region forms a tightly packed domain (Kundu et al., 2017) (Figure 1C). We performed 4C-seq in Eed mutant ESCs in order to determine if polycomb impacts the chromosome conformation (Figure 3C). In fact, in a PRC2 mutant, pZdbf2 interacted even more frequently within the domain normally defined by a polycomb block in WT cells. This is likely due to the activation of E4, and increased promoter-enhancer interactions. It has recently been shown that active promoters exhibit increased agitation in the nucleus, leading to a potential increase of promoter-enhancer contacts (Gu et al., 2018). Given that pZdbf2 becomes preciously active in Eed mutant ESCs, logic would dictate that it would interact more frequently with E1-3, which are also active. However, our 4C-seq in the polycomb mutant showed that this was not the case (Figure 3C). To summarize, Liz transcription and the polycomb status play a limited role in the regulation of the pZdbf2 interaction landscape in ESCs, and there must be other mechanisms in place.
 
-## CTCF partitions the Zdbf2 locus in ESCs
+### CTCF partitions the Zdbf2 locus in ESCs
 
 Given that pZdbf2 does not interact with E1-3 in polycomb mutant ESCs, those enhancers must be restricted from forming long-range loops. The most likely candidate to contribute to locus organization is CTCF (Ong and Corces, 2014). We analyzed the 4C-seq patterns of four CTCF binding sites (Stadler et al., 2011) present throughout the locus (data available upon request). In ESCs, a CTCF-binding site proximal to the Gpr1 promoter formed a looping structure with two CTCF sites downstream of the Gpr1 gene (Figure 4A). Incidentally, pLiz and E1-3 co-reside within this genomic segment. During differentiation to EpiLCs, we found that the pLiz/E1-3 interactions are reduced. In accordance, CTCF binding at this site depleted, whereas CTCF remained bound at the sites downstream of Gpr1 (Figure 4B). Therefore, we referred to this binding platform as the ‘CTCF_partition site’ (CTCF_PS), which physically separates the active pLiz/E1-3 region from the silent pZdbf2/E4 region in ESCs (Figure 4C). In EpiLCs, disappearance of CTCF at the partition site would then allow for pZdbf2 to interact with E1-3, while pLiz is silenced.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig4-v2.jpg)
+
+**Figure 4.:** (A) 4C-seq tracks from the CTCF_PS VP in WT ESCs and EpiLCs. Ratios between 4C-seq signals is indicated between the samples, and gene and CTCF binding tracks (Stadler et al., 2011) are below. The CTCF_PS forms a loop with two CTCF sites downstream of the Gpr1 gene. The looping diminishes in EpiLCs. (B) CTCF ChIP-qPCR in WT ESCs and EpiLCs and Eed-/- ESCs. CTCF binding remains unchanged in all conditions on the two sites downstream of Gpr1 (termed CTCF Left_1 and Left_2). At the CTCF_PS, CTCF binding reduces from WT ESCs to EpiLCs, which is correlated with decreased interactions between CTCF_PS and the two upstream CTCF sites. CTCF binding remains enriched in Eed-/- ESCs, consistent with the maintained loop structure. Data shown as ±s.e.m. from three biological replicates. (C) CTCF ChIP-qPCR in WT, Dnmt tKO and ∆Liz ESCs and EpiLCs. CTCF binding is depleted at the CTCF_PS in EpiLCs in all three contexts. Data shown as ±s.e.m. from three biological replicates. (D) Model for CTCF-mediated partitioning of the locus. In ESCs, pLiz and E1-3 are active, and physically separated from the silent E4 and pZdbf2. During differentiation, the partition is diminished, allowing E1-3 to bolster pZdbf2 activation, while pLiz has become silent. (E) RT-qPCR of Liz (left) and Zdbf2 (right) during EpiLC differentiation in WT and the ∆CTCF_PS mutant. Liz is less expressed in mutant ESCs, but reaches WT levels of expression during differentiation. Nevertheless, Zdbf2 does not properly activate in the mutant. Data are shown as ±s.e.m. from four biological replicates for each genotype. (F) DNA methylation of pLiz (left) and the sDMR (right) during EpiLC differentiation as measured by BS-pyro in WT and the ∆ mutant. DNA methylation is unperturbed in the mutant at pLiz, but is reduced at the sDMR. Data shown as ±s.e.m. from four biological replicates for each genotype. (G) RT-qPCR of Zdbf2 in ESCs in absence of CTCF partition and/or PRC2. While Zdbf2 is already upregulated in the Eed mutant, this effect is exacerbated in the absence of the partition, likely because pZdbf2 is less restrained from interacting with E1-3. Data shown as ±s.e.m. from three biological replicates for each genotype. Statistical analyses were performed by two-tailed unpaired t-test: n.s. = not significant, *p≤0.05, **p≤0.01, ***p≤0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 4C-seq tracks from the CTCF_PS VP in WT and Eed-/- ESCs. Ratios between 4C-seq signals is indicated between the samples. The partition loop still persists in Eed-/- ESCs, even though Zdbf2 is active. Data from one representative biological replicate (two total). (B) CTCF ChIP-qPCR in WT, Dnmt tKO and ∆Liz ESCs and EpiLCs at control loci. Statistical analyses were performed by two-tailed unpaired t-test: *p≤0.05, **p≤0.01.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Alleles generated by CRISPR/Cas9-mediated deletions of CTCF_PS. (B) 4C-seq tracks for WT and ∆ ESCs. Top: pLiz VP exhibits less interactions with E1-3 in absence of CTCF partition (high-lighted in pink). Bottom: pZdbf2 VP exhibits less restricted looping with E2 and E3, although no increase with E1 (highlighted in pink). (C) RT-qPCR of genes flanking Zdbf2 locus in WT and the ∆CTCF_PS mutant. No significant alteration of the expression pattern is observed. Note: The gene model at top of figure is not to scale. (D) Western blot showing decrease and loss of CTCF in CTCF-eGFP-AID and CTCF-eGFP-AID+Auxin treated cells, respectively (E) RT-qPCR of Liz (left) and Zdbf2 (right) in CTCF-eGFP-AID line ESCs. Liz is downregulated even in the absence of auxin, but the decrease is not greatly exacerbated with complete loss of CTCF. Zdbf2 is upregulated when CTCF is globally depleted and lost, indicating CTCF-based regulation, either directly or indirectly, in ESCs. Statistical analyses were performed by two-tailed unpaired t-test: *p≤0.05.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44057/elife-44057-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) H3K27me3 ChIP-qPCR in ESCs (Left) and EpiLCs (Middle) in WT and the ∆ mutant. There is no significant effect on polycomb dynamics in ESCs. In EpiLCs, the ∆ mutant retains residual H3K27me3 relative to WT. H3K27me3 ChIP-qPCR in WT and ∆ ESCs and EpiLCs at control loci are displayed in right panel. Data shown as ±s.e.m. from three biological replicates for each genotype. (B) Alleles generated by CRISPR/Cas9-mediated mutagenesis of Eed in WT and ∆ contexts. (C) Western blot confirming loss of EED protein and H3K27me3 in Eed-/- cell lines. (D) Western blot showing no detection of H3K27me3 loss after four days of incubation with PRC2 inhibitor. Negative control exhibited strong H3K27me3 signal. (E) RT-qPCR of Zdbf2 in absence of CTCF partition with EZH2 inhibitor. In ∆CTCF_PS mutants, there is a further increase of Zdbf2 de-repression when H3K27me3 is depleted. Data shown as ±s.e.m. from three biological replicates for each genotype. Statistical analyses were performed by two-tailed unpaired t-test: *p≤0.05, **≤0.01, ***p≤0.001.
 
 Using the CTCF_PS as a VP in our Eed mutant ESCs, we observed that the partition loop still formed in absence of polycomb (Figure 4—figure supplement 1A). Furthermore, CTCF still remained enriched at the CTCF_PS in PRC2 mutant ESCs (Figure 4B). The continued formation of the partition in the absence of polycomb-mediated regulation would explain why pZdbf2 failed to exhibit increased interactions with E1-3, even though the promoter has adopted an active state.
 
 Given that CTCF is DNA methylation sensitive at a subset of binding sites (Wang et al., 2012), we reasoned that perhaps de novo DNA methylation is required for evicting CTCF from the CTCF_PS during the ESC to EpiLC transition. We tested this by differentiating Dnmt tKO ESCs, which are able to differentiate to a state akin to WT D7 EpiLCs despite a total lack of DNA methylation (Greenberg et al., 2017; Hassan-Zadeh et al., 2017). However, even in the absence of DNA methylation, CTCF depleted at the partition site (Figure 4D, Figure 4—figure supplement 1B). A recent study reported that transcription can disrupt CTCF binding and chromatin architecture (Heinz et al., 2018), yet we observed reduced CTCF enrichment even in the absence of the Liz transcript (Figure 4D, Figure 4—figure supplement 1B). Therefore, the CTCF depletion at the CTCF_PS in EpiLCs is differentiation-dependent, but independent of DNA methylation- or Liz transcription-based regulation.
 
-## CTCF partitioning fine-tunes pLiz programming of pZdbf2
+### CTCF partitioning fine-tunes pLiz programming of pZdbf2
 
 To assess the regulatory impact of CTCF partitioning, we generated a deletion of CTCF_PS (Figure 4—figure supplement 2A). 4C-seq in ∆CTCF_PS cells revealed that pLiz interacts less frequently with E1-3 in ESCs (Figure 4—figure supplement 2B), perhaps as the promoter is less constrained without the CTCF partition. As such, Liz failed to properly express (Figure 4E). In contrast, the deletion did not perturb expression of Gpr1 nor the genes flanking the Zdbf2 locus (Figure 4—figure supplement 2C), suggesting that insulation from neighboring regulatory domains was intact. Consistently, using a CTCF degron line where CTCF is globally depleted (Nora et al., 2017), Liz was also downregulated, although it should be noted that both moderate and complete reduction of CTCF resulted in a comparable reduction of Liz levels (Figure 4—figure supplement 2D,E). During differentiation of the ∆CTCF_PS line, the Liz transcript was still able to attain WT levels, nevertheless Zdbf2 failed to properly activate (Figure 4E). Moreover, while DNA methylation occurred normally at pLiz, the sDMR remained relatively hypomethylated compared to WT (Figure 4F), likely due to the delayed kinetics of Liz upregulation. Furthermore, the relative reduction of DNA methylation at the sDMR in ∆CTCF_PS mutant EpiLCs was correlated with a slight retention of H3K27me3 in comparison with WT, which may contribute to the failure of pZdbf2 to properly activate (Figure 4D, Figure 4—figure supplement 3A).
 
@@ -93,11 +141,329 @@ Promoter switching is a widespread and developmentally important phenomenon (Dav
 
 ## Materials and methods
 
-## ESC lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a (WT)</td>
+      <td>ATCC</td>
+      <td>CRL-1821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a_∆Liz</td>
+      <td>Bourc’his Lab</td>
+      <td></td>
+      <td>Greenberg et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a_∆E1</td>
+      <td>Bourc’his Lab</td>
+      <td></td>
+      <td>Greenberg et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a_∆E1-3</td>
+      <td>This study</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated mutant, sgRNA oligos are listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a_∆E4</td>
+      <td>This study</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated mutant, sgRNA oligos are listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>E14TG2a_CTCF-AID-eGFP, Tir1</td>
+      <td>Gift from E Nora</td>
+      <td></td>
+      <td>Nora et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1 (WT)</td>
+      <td>ATCC</td>
+      <td>SCRC-1010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1_Dnmt tKO</td>
+      <td>Gift from M Okano</td>
+      <td></td>
+      <td>Tsumura et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1_Eed-/-</td>
+      <td>This study</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated mutant, sgRNA oligos are listed inSupplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1_∆CTCF_PS</td>
+      <td>This study</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated mutant, sgRNA oligos are listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1_Eed-/-; ∆CTCF_PS</td>
+      <td>This study</td>
+      <td></td>
+      <td>CRISPR/Cas9 generated mutant, sgRNA oligos are listed in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1 Clone 36 (WT)</td>
+      <td>Gift from A Wutz</td>
+      <td></td>
+      <td>Wutz and Jaenisch, 2000</td>
+    </tr>
+    <tr>
+      <td>Cell Line (M. musculus)</td>
+      <td>J1 Clone 36_Eed-/-</td>
+      <td>Gift from A Wutz</td>
+      <td></td>
+      <td>Schoeftner et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27me2, mouse monoclonal</td>
+      <td>Active Motif</td>
+      <td>61435</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27me3, rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>C36B11</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K27ac, rabbit polyclonal</td>
+      <td>Active Motif</td>
+      <td>39133</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CTCF, rabbit polyclonal</td>
+      <td>Millipore</td>
+      <td>07–729</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, mix of two mouse monoclonal</td>
+      <td>Roche</td>
+      <td>11814460001</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA, mouse monoclonal</td>
+      <td>Dako</td>
+      <td>M0879</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EED, rabbit polyclonal</td>
+      <td>Other</td>
+      <td></td>
+      <td>Gift from R Margueron (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lamin B1, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Ab16048</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Ab1791</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>L-Absorbic Acid</td>
+      <td>Sigma</td>
+      <td>A4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>Gsk3 inhibitor</td>
+      <td>Other</td>
+      <td>CT-99021</td>
+      <td>Gift from E Heard</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>MEK inhibitor</td>
+      <td>Other</td>
+      <td>PD0325901</td>
+      <td>Gift from E Heard</td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>FGF2</td>
+      <td>R and D Systems</td>
+      <td>233-FB-025/CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>Activin A</td>
+      <td>R and D Systems</td>
+      <td>338-AC-050/CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>EZH2 Inhibitor</td>
+      <td>Tocris Bioscience</td>
+      <td>UNC 1999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>EZH2 Inhibitor Negative Control</td>
+      <td>Tocris Bioscience</td>
+      <td>UNC 2400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, Drug</td>
+      <td>Indole-3-acetic acid sodium salt (auxin analog)</td>
+      <td>Sigma</td>
+      <td>I5148-2G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pX459</td>
+      <td>Addgene</td>
+      <td>62988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or Kit</td>
+      <td>EpiTect Bisulfite Kit</td>
+      <td>Qiagen</td>
+      <td>59104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>BWA v0.7.5a</td>
+      <td>Li and Durbin, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Picard v1.130</td>
+      <td>Broad Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>HOMER v4.7</td>
+      <td>Heinz et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>FASTX-Toolkit v0.0.13</td>
+      <td>Greg Hannon Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Cutadapt</td>
+      <td>Martin, 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Bismark v0.12.5</td>
+      <td>Krueger and Andrews, 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Bowtie2 v2.1.0</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>STAR v2.5.0a</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Trim Galore v0.4.0</td>
+      <td>Babraham Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>FourCSeq v1.12.0</td>
+      <td>Klein et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>HTSeq v0.9.1</td>
+      <td>Anders et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### ESC lines
 
 All cell lines are listed in the Key Resource Table. For all experiments, the parental WT line was used as a control for mutant lines generated in that background (E14 or J1). 4C-Seq was performed using clone 36 Eed-/- cells (J1 background). Therefore, when generating an in-house Eed-/- line, we used the same genetic background for consistency.
 
-## Cell culture and differentiation
+### Cell culture and differentiation
 
 Feeder-free ESCs were grown on gelatin-coated flasks. Serum culture conditions were as follows: Glasgow medium (Sigma) supplemented with 2 mM L-Glutamine (Gibco), 0.1 mM MEM non-essential amino acids (Gibco), 1 mM sodium pyruvate (Gibco), 15% FBS, 0.1 mM β-mercaptoethanol and 1000 U/ml leukemia inhibitory factor (LIF, Chemicon). Cells were passaged with trypsin replacement enzyme (Gibco) every two days. 2i culture conditions were as follows: N2B27 medium (50% neurobasal medium (Gibco), 50% DMEM/F12 (Gibco), 2 mM L-glutamine (Gibco), 0.1 mM β- mercaptoethanol, NDiff Neuro2 supplement (Millipore), B27 serum-free supplement (Gibco)) supplemented with 1000 U/ml LIF and 2i (3 μM Gsk3 inhibitor CT-99021, 1 μM MEK inhibitor PD0325901). Cells were passaged every 2–4 days with Accutase (Gibco). Vitamin C (Sigma) was added at a final concentration of 100 µg/ml. For EZH2 inhibition experiments, the EZH2 incubator UNC 1999 (or its negative control UNC 2400, Tocris Bioscience) was added to media at a 1 µM final concentration for four days. To induce degradation of CTCF in the E14TG2a_CTCF-AID-eGFP, Tir1 cell line (with Tir1 targeted to the Tigre locus), the auxin analog indole-3-acetic acid (IAA) was added to the media at a final concentration of 500 µM from a 1000x stock, and incubated with the cells for two days.
 
@@ -105,60 +471,60 @@ To induce EpiLC differentiation, cells were gently washed with PBS, dissociated,
 
 Cells were regularly tested for presence of mycoplasma by sending used media to GATC/Eurofins for analysis.
 
-## Generation of edited ESCs
+### Generation of edited ESCs
 
 All deletions in this study were generated with two CRISPR single guide RNAs (sgRNAs) specific to the target sequences followed by Cas9 nuclease activity and screening for non-homologous end joining. sgRNAs were designed using the online CRISPOR online program (crispor.tefor.net) and cloned into the pX459 plasmid harboring the Cas9 gene. All sgRNA sequences are listed in Supplementary file 1. Around five million WT serum-grown ESCs were transfected with 1–3 μg of plasmid(s) using Amaxa 4d Nucleofector (Lonza) and plated at a low density. Ninety-six individual clones were picked and screened by PCR. Mutated alleles were confirmed by Sanger sequencing of cloned PCR amplicons. In the case of the Eed mutation, loss-of-function was further confirmed by immunoblotting.
 
-## DNA methylation analyses
+### DNA methylation analyses
 
 Genomic DNA from cells was isolated using the GenElute Mammalian Genomic DNA Miniprep Kit (Sigma), with RNase treatment. Bisulfite conversion was performed on 500–1000 ng of DNA using the EpiTect Bisulfite Kit (Qiagen). Bisulfite-treated DNA was PCR amplified and analyzed by pyrosequencing. Pyrosequencing was performed on the PyroMark Q24 (Qiagen) according to the manufacturer’s instructions, and results were analyzed with the associated software. All bisulfite primers are listed in Supplementary file 1. Statistical analyses were performed by a two-tailed unpaired t-test using GraphPad Prism6 software.
 
 WGBS data from ESCs were previously generated (Walter et al., 2016) and EpiLCs were prepared from 50 ng of bisulfite-converted genomic DNA using the EpiGnome/Truseq DNA Methylation Kit (Illumina) following the manufacturer instructions. Sequencing was performed in 100pb paired-end reads at a 30X coverage using the Illumina HiSeq2000 platform.
 
-## ATAC-seq
+### ATAC-seq
 
 ATAC-Seq was performed as described in Buenrostro et al. (2015) with minor modifications. Briefly, 50,000 cells were washed, but not lysed. Cells were transposed using the Nextera DNA library prep kit (Illumina) for 30 min at 37°. DNA was immediately purified using Qiagen MinElute Kit (Qiagen). qPCR was used to determine the optimal cycle number for library amplification. The libraries were sequenced on the Illumina HiSeq2500 platform to obtain 2 × 100 paired-end reads.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP was performed exactly as described in Walter et al. (2016). Briefly, cells were cross-linked directly in 15 cm culture plates with 1% formaldehyde. After quenching with 0.125 M glycine, cells were washed in PBS and pelleted. After a three-step lysis, chromatin was sonicated with a Bioruptor (Diagenode) to reach a fragment size averaging 200 bp. Chromatin corresponding to 10 μg of DNA was incubated rotating overnight at 4°C with 3–5 μg of antibody. A fraction of chromatin extracts (5%) were taken aside for inputs. Antibody-bound chromatin was recovered using Protein G Agarose Columns (Active Motif). The antibody-chromatin mix was incubated on column for 4 hr, washed eight times with modified RIPA buffer and chromatin eluted with pre-warmed TE-SDS (50 mM Tris pH 8.0, 10 mM EDTA, 1% SDS). ChIP-enriched and input samples were reverse cross-linked (65°C overnight) and treated with RNase A and proteinase K. DNA was extracted with phenol/chloroform/isoamyl alcohol, precipitated with glycogen in sodium acetate and ethanol and resuspended in tris-buffered water. Enrichment compared to input was analyzed by qPCR (Viia7 thermal cycling system, Applied Biosystems). Primers are listed in Supplementary file 1.
 
-## 4C-seq
+### 4C-seq
 
 The design of VPs and preparation of 4C-seq libraries was performed as described by Matelot and Noordermeer (2016), with only minor modifications. DpnII or its isoschiszomer MboII (New England Biolabs) were chosen as the primary restriction enzyme, and NlaIII (New England Biolabs) as the secondary restriction enzyme. ESC and EpiLC material were harvested from 150 cm2 culture flasks (TPP Techno Plastic Products AG), which provided ample material for up to four technical replicates presuming cells were healthy and near confluency. To avoid technical artifacts, crosslinking and library preparation were performed in parallel for each experiment. For each VP, approximately 1 µg of library material was amplified using 16 individual PCR reactions with inverse primers containing indexed Illumina TruSeq adapters (primer sequences are listed in Supplementary file 1). PCR products were originally purified using the MinElute PCR purification kit (Qiagen) to remove unincorporated primer, but we found that purification was more efficiently performed using Agencourt AMPure XP beads (Beckman Coulter). Sequencing was performed on the Illumina NextSeq 500 system, using 75 bp single-end reads with up to 14 VPs multiplexed per run.
 
-## RNA expression
+### RNA expression
 
 Total RNA was extracted using Trizol (Life Technologies), then DNase-treated and column purified (Qiagen RNeasy Kit). To generate cDNA, RNA was reverse transcribed with SuperscriptIII (Life Technologies) primed with random hexamers. RT-qPCR was performed using the SYBR Green Master Mix on the Viia7 thermal cycling system (Applied Biosystems). Relative expression levels were normalized to the geometric mean of the Ct for housekeeping genes Rrm2 and Rplp0 with the ΔΔCt method. Primers are listed in Supplementary file 1. Statistical analyses were performed by a two-tailed unpaired t-test using GraphPad Prism6 software.
 
 RNA-seq libraries were prepared from 500 ng of DNase-treated RNA with the TruSeq Stranded mRNA kit (Illumina). Sequencing was performed in 100pb paired-end reads using the Illumina HiSeq2500 platform.
 
-## Immunoblotting
+### Immunoblotting
 
 Western blots were visualized using the ChemiDoc MP (Biorad). The antibodies are listed in the Key Resource Table.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## ATAC-seq analysis
+#### ATAC-seq analysis
 
 2 × 100 bp paired-end reads were aligned onto the Mouse reference genome (mm10) using Bwa mem v0.7.5a (Li and Durbin, 2009) with default parameters. Duplicate reads were removed using Picard v1.130 (http://broadinstitute.github.io/picard/). Tracks were created using HOMER software v4.7 (Heinz et al., 2010).
 
-## WGBS analysis
+#### WGBS analysis
 
 Whole-genome bisulfite sequencing data were analyzed as described in Walter et al. (2016). Briefly, the first eight base pairs of the reads were trimmed using FASTX-Toolkit v0.0.13:
 
 (http://hannonlab.cshl.edu/fastx_toolkit/index.html). Adapter sequences were removed with Cutadapt v1.3 (Martin, 2011) and reads shorter than 16 bp were discarded. Cleaned sequences were aligned onto the mouse reference genome (mm10) using Bismark v0.12.5 (Krueger and Andrews, 2011) with Bowtie2-2.1.0 (Langmead and Salzberg, 2012) and default parameters. Only reads mapping uniquely on the genome were conserved. Methylation calls were extracted after duplicate removal. Only CG dinucleotides covered by a minimum of 5 reads were conserved.
 
-## RNA-seq analysis
+#### RNA-seq analysis
 
 2 × 100 bp paired-end reads were mapped onto the mouse reference genome (mm10) using STAR v2.5.0a (Dobin et al., 2013) reporting unique alignments and allowing at most six mismatches per fragment. Tracks were created using HOMER software v4.7 (Heinz et al., 2010). Gene-scaled quantification was performed with HTSeq v0.9.1 (Anders et al., 2015).
 
-## 4C-seq analysis
+#### 4C-seq analysis
 
 Adapters were first trimmed using Trim Galore: v0.4.0, https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/.
 
 Samples were demultiplexed using the script provided with the FourCSeq R package (v1.12.0) (Klein et al., 2015). Inverse primer sequences were removed on the 3' end of the reads using Cutadapt v1.12 (Martin, 2011). Reads shorter than 15 bp were discarded. Cleaned sequences were aligned onto the mouse reference genome (mm10) using Bowtie2 v2.1.0 (Langmead and Salzberg, 2012) allowing one mismatch in the seed (22 bp) and an end-to-end alignment. Subsequent steps were performed using the FourCSeq R package (v1.12.0). The mouse reference genome was in-silico digested using the two restriction enzymes. Restriction fragments that did not contain a cutting site of the second restriction enzyme or are smaller than 20 bp were filtered out. Fragments 2.5 kb up- and downstream from the viewpoint were excluded during the procedure. Intrachromosomal contacts were kept. Valid fragments were quantified. The fragment counts were then normalized per one million reads. Data were smoothed using a running mean function with five informative fragments.
 
-## Data resources
+### Data resources
 
 Raw and processed sequencing data reported in this paper have been submitted to GEO, accession number GSE121405.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.39497.001 Cognitive control proactively configures information processing to suit expected task demands. Predictions of forthcoming demand can be driven by explicit external cues or be generated internally, based on past experience (cognitive history). However, it is not known whether and how the brain reconciles these two sources of information to guide control. Pairing a probabilistic task-switching paradigm with computational modeling, we found that external and internally generated predictions jointly guide task preparation, with a bias for internal predictions. Using model-based neuroimaging, we then show that the two sources of task prediction are integrated in dorsolateral prefrontal cortex, and jointly inform a representation of the likelihood of a change in task demand, encoded in frontoparietal cortex. Upon task-stimulus onset, dorsomedial prefrontal cortex encoded the need for reactive task-set adjustment. These data reveal how the human brain integrates external cues and cognitive history to prepare for an upcoming task.
+Cognitive control proactively configures information processing to suit expected task demands. Predictions of forthcoming demand can be driven by explicit external cues or be generated internally, based on past experience (cognitive history). However, it is not known whether and how the brain reconciles these two sources of information to guide control. Pairing a probabilistic task-switching paradigm with computational modeling, we found that external and internally generated predictions jointly guide task preparation, with a bias for internal predictions. Using model-based neuroimaging, we then show that the two sources of task prediction are integrated in dorsolateral prefrontal cortex, and jointly inform a representation of the likelihood of a change in task demand, encoded in frontoparietal cortex. Upon task-stimulus onset, dorsomedial prefrontal cortex encoded the need for reactive task-set adjustment. These data reveal how the human brain integrates external cues and cognitive history to prepare for an upcoming task.
 
 ## Introduction
 
@@ -41,7 +41,7 @@ To preview the results, task-switching behavior was jointly driven by internally
 
 ## Results
 
-## Behavioral data – Effects of external cues and cognitive history
+### Behavioral data – Effects of external cues and cognitive history
 
 Participants (N = 22) performed a cued task switching protocol involving two perceptual decision-making tasks (Figure 1) that required reporting either the predominant color or motion direction of a noisy dot cloud stimulus. Which task to perform was indicated by the color of a simultaneously presented frame that surrounded the dot cloud. Crucially, the task stimulus was preceded by a predictive pie chart cue (i.e., the pre-cue) that accurately indicated the probability that the forthcoming task would be the color (or motion) task (five probability levels: 0.2, 0.4, 0.5, 0.6 and 0.8), and thus, whether the forthcoming trial would likely involve the same task as the previous trial (i.e., a task-repeat trial) or the other task (i.e., a task-switch trial). The task sequence itself was pseudo-random, with an equal number of switch and repeat trials occurring within each run. Participants were not told anything about the statistical properties of the task sequence, allowing us to study how subjects mix external and internal predictions without explicit knowledge of the validity of the internal prediction.
 
@@ -57,13 +57,174 @@ Participants performed with high accuracy (color task: 0.87 ± 0.02 [mean ±S
 
 To examine the effect of the probabilistic pre-cue on behavior, we performed repeated-measures ANOVAs (5 task prediction levels × current task) on accuracy and RT data (Figure 2C,D, see Table 1 for summary statistics). No significant effects were detected for accuracy. Responses were again faster for motion judgments than color judgments (F1,21=24.3, p<0.001; Figure 2D). Most importantly, there was a significant effect of the explicit pre-cue, as reflected by a main effect of task prediction on RT (F4,84=4.3, p<0.005; Figure 2D), with response speed scaling with predictive pre-cue information. No interaction between pre-cue information and current task was observed (F4,84 < 1), indicating that the effects of predictive cues on RT were similar in the motion and color tasks.
 
+**Table 1.**
+ Descriptive statistics (group mean ± MSE) of behavioral data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Task prediction</th>
+      <th>0.2</th>
+      <th>0.4</th>
+      <th>0.5</th>
+      <th>0.6</th>
+      <th>0.8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Color trial accuracy</td>
+      <td>0.88 ± 0.02</td>
+      <td>0.87 ± 0.02</td>
+      <td>0.87 ± 0.02</td>
+      <td>0.88 ± 0.02</td>
+      <td>0.90 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Color trial RT (s)</td>
+      <td>1.00 ± 0.02</td>
+      <td>0.97 ± 0.02</td>
+      <td>0.98 ± 0.02</td>
+      <td>0.97 ± 0.02</td>
+      <td>0.96 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Motion trial accuracy</td>
+      <td>0.86 ± 0.03</td>
+      <td>0.86 ± 0.03</td>
+      <td>0.88 ± 0.02</td>
+      <td>0.88 ± 0.02</td>
+      <td>0.88 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Motion trial RT (s)</td>
+      <td>0.85 ± 0.03</td>
+      <td>0.85 ± 0.02</td>
+      <td>0.86 ± 0.02</td>
+      <td>0.84 ± 0.02</td>
+      <td>0.84 ± 0.02</td>
+    </tr>
+  </tbody>
+</table>
+
 To assess trial-history effects beyond the immediately preceding trial, we tested whether performance was influenced by task-sets that had occurred in recent prior trials (from trials i-2 to i-4) by conducting repeated measures ANOVAs (task at prior trial × current task) on accuracy and RT. The interaction between the prior trial task-sets and the current task was significant in both accuracy (F1,21=6.2, p=0.02; Figure 2E) and RT (F1,21=73.2, p<0.001; Figure 2F) for trial i-2. For trial i-3, the interaction was not significant in accuracy (F1,21<1, n.s.; Figure 2G), but was significant in RT (F1,21=8.4, p=0.008; Figure 2H). Trial i-4 did not show a modulation effect in either accuracy or RT (both F1,21<1, n.s). Since the modulation effect decayed as the distance from previous trial to current trial increased (Figure 2A–B and E–H), trials beyond i-4 were not tested. These results provide strong evidence that trial-history based task predictions –– stemming from learning over the last three trials –– impact behavior, biasing participants towards expecting task repetitions.
 
-## Behavioral data – Model comparison
+### Behavioral data – Model comparison
 
 To formally compare how well the joint-guidance and max-benefit hypotheses explain the behavioral data, we constructed a quantitative model for each hypothesis and compared the two using trial-wise RTs. Accuracy was not modeled due to its insensitivity to external task prediction induced by the pre-cue (Figure 2C). We first defined three variables to represent task switching, cue-induced predictions, and internally generated predictions, respectively, with the latter two being continuous variables, ranging from 0 to 1, that represent task-set weighting (i.e., the relative activation of color vs. motion task-sets). Without loss of generality, a value greater than 0.5 means a prediction favoring the color task; and a value less than 0.5 indicates a prediction favoring the motion task. In particular, after the task cue was presented, the task-set became deterministic. Therefore, motion and color tasks were then represented by 0 and 1, respectively. All model variables used in this study are summarized in Table 2.
 
-To capture the task switch effect, we define Tprev as the task required on the previous trial. A task switch/repetition can thus be defined by comparing the current task to Tprev. We then denote Pcue as the probability of encountering a color task trial based on the pre-cue. To formally model the internally generated, trial-history based task prediction, we employed a reinforcement learning model:(1)Pint(i)=(1−α)Pint(i−1)+αTprev
+**Table 2.**
+ Summary of model variables used in this study.Abbreviations: T = task; cur = current trial; prev = previous trial; p=prediction; int = internal.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Meaning</th>
+      <th>Definition/range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tcur</td>
+      <td>Task required on the current trial</td>
+      <td>0 if motion task; 1 if color task.</td>
+    </tr>
+    <tr>
+      <td>Tprev</td>
+      <td>Task required on the previous trial</td>
+      <td>Same as above</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>Trial index</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pcue</td>
+      <td>Probability of encountering a color task indicated by the pre-cue</td>
+      <td>0.2, 0.4, 0.5, 0.6 or 0.8, depending on pre-cue</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>Learning rate</td>
+      <td>[0, 1]</td>
+    </tr>
+    <tr>
+      <td>Pint</td>
+      <td>Internally generated task prediction</td>
+      <td>(1 - α)Pint(i-1) + αTprev</td>
+    </tr>
+    <tr>
+      <td>Pjoint</td>
+      <td>Joint task prediction</td>
+      <td>(1-β)Pint +βPcue</td>
+    </tr>
+    <tr>
+      <td>PEcue</td>
+      <td>Prediction error of Pcue</td>
+      <td>|Tcur - Pcue|</td>
+    </tr>
+    <tr>
+      <td>PEint</td>
+      <td>Prediction error of Pint</td>
+      <td>|Tcur - Pint|</td>
+    </tr>
+    <tr>
+      <td>PEprev</td>
+      <td>Task switch effect</td>
+      <td>|Tcur - Tprev|</td>
+    </tr>
+    <tr>
+      <td>PEjoint</td>
+      <td>Prediction error Pjoint</td>
+      <td>|Tcur - Pjoint|</td>
+    </tr>
+    <tr>
+      <td>Ccue</td>
+      <td>Modulation of PEcue on RT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cint</td>
+      <td>Modulation of PEint on RT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>scaled reliance on the pre-cue</td>
+      <td>CcueCcue+Cint</td>
+    </tr>
+    <tr>
+      <td>β~</td>
+      <td>Randomly sampled reliance on the pre-cue</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Proactive switch demand</td>
+      <td>|Tprev - Pjoint|</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Confidence of joint task prediction</td>
+      <td>|Pjoint – 0.5|</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Proactive interference effect</td>
+      <td>|Pint-Pcue|</td>
+    </tr>
+  </tbody>
+</table>
+
+To capture the task switch effect, we define Tprev as the task required on the previous trial. A task switch/repetition can thus be defined by comparing the current task to Tprev. We then denote Pcue as the probability of encountering a color task trial based on the pre-cue. To formally model the internally generated, trial-history based task prediction, we employed a reinforcement learning model:
+
+$$
+P_{int}(i)=(1−\alpha)P_{int}(i−1)+\alphaT_{prev}
+$$
 
 Where Pint(i) encodes the internally generated prediction of the task on trial i; α represents the learning rate (Figure 3A), which is a free parameter ranging from 0 to 1 and denotes how much this prediction relies on the previous trial (Tprev) in relation to older trials (integrated in Pint(i-1)). Pint(0) was initially set to 0.5 to reflect an unbiased initial belief of task-set. After each trial, Pint was updated based on Tprev and Equation 1 and was then used as the internal prediction for the next trial.
 
@@ -75,21 +236,37 @@ To link these variables to RTs, the unsigned prediction error (discrepancy betwe
 
 Model comparison was conducted using cross-validation to prevent over-fitting and to control for different numbers of free parameters used in the candidate models (Chiu et al., 2017) (see Materials and methods: Modeling and model comparison). The performance of the different models was then submitted to Bayesian model comparison (Stephan et al., 2009), which calculated protected model exceedance probabilities (i.e., the likelihood of a given model providing the best explanation of the behavioral data) for each candidate model. The joint-guidance model clearly outperformed all other models, with a protected exceedance probability of 0.997, indicating that behavior was best explained by a collective contribution to proactive task-set updating from cue-induced and internally generated task predictions. The joint-guidance model was hence used for all subsequent behavioral and neuroimaging analyses.
 
-## Behavioral data – Quantifying respective contributions of cue-based and trial history-based task predictions
+### Behavioral data – Quantifying respective contributions of cue-based and trial history-based task predictions
 
 We next sought to more closely characterize how participants combined internally generated and external contributions to task predictions. We began by asking to what degree individual participants relied on an extended trial-history in generating a task prediction, as captured by the RL model’s learning rate. The learning rates estimated from individual participants displayed substantial inter-subject variance (range: 0.02–0.93, Figure 3C). The mean learning rate was 0.52, indicating that, on average, participants weighted the i-1 trial about as much as the prior trial history in determining the internally generated task prediction.
 
-To quantify participants’ relative weighting of trial history-based versus explicit cue-based predictions, we calculated the scaled reliance on the pre-cue (denoted as β, range: 0 to 1) for each participant by CcueCcue+Cint, where Ccue and Cint are the coefficients of PEcue and PEint, respectively, after fitting the joint-guidance model to RTs. Thus, a higher β indicates stronger reliance on the pre-cue and hence weaker dependence on internally generated task prediction; a β of 0.5 indicates equal reliance on Pcue and Pint. Strikingly, we found that even though trial history was not predictive of the forthcoming task, its effect on behavior was on average 3 times as strong as that of the cue-induced task prediction (group mean β: 0.26; range: 0-0.61; one sample t-test against 0.5: t21 = 5.42, P < 0.001; Figure 3C). Notably, five participants showed either no (β = 0, four subjects) or very little (β = 0.02, one subject) reliance on cue-induced task prediction. Even after excluding these participants (to rule out the possibility that the differential reliance on trial history was due to a failure to understand the associations between the pictorial pre-cue and the task-set prediction), the mean β of the remaining 17 participants remained significantly lower than 0.5 (t16=3.96, P = 0.001), again indicating stronger reliance on the internally generated task prediction. To test the robustness of the β estimates, we computed β separately using the first and last 3 runs. Across subjects, β estimates were significantly correlated between these two task phases (r = 0.63, p = 0.002), suggesting reliable β estimation within participants. Also, there was no significant difference in β estimates between the first and last 3 runs (t21=1.32, p = 0.20), suggesting that the reliance on Pcue relative to Pint remained unchanged throughout the 9 runs in the fMRI session.
+To quantify participants’ relative weighting of trial history-based versus explicit cue-based predictions, we calculated the scaled reliance on the pre-cue (denoted as β, range: 0 to 1) for each participant by $\frac{C_{cue}}{C_{cue}+C_{int}}$, where $C_{cue}$ and $C_{int}$ are the coefficients of PEcue and PEint, respectively, after fitting the joint-guidance model to RTs. Thus, a higher β indicates stronger reliance on the pre-cue and hence weaker dependence on internally generated task prediction; a β of 0.5 indicates equal reliance on Pcue and Pint. Strikingly, we found that even though trial history was not predictive of the forthcoming task, its effect on behavior was on average 3 times as strong as that of the cue-induced task prediction (group mean β: 0.26; range: 0-0.61; one sample t-test against 0.5: t21 = 5.42, P < 0.001; Figure 3C). Notably, five participants showed either no (β = 0, four subjects) or very little (β = 0.02, one subject) reliance on cue-induced task prediction. Even after excluding these participants (to rule out the possibility that the differential reliance on trial history was due to a failure to understand the associations between the pictorial pre-cue and the task-set prediction), the mean β of the remaining 17 participants remained significantly lower than 0.5 (t16=3.96, P = 0.001), again indicating stronger reliance on the internally generated task prediction. To test the robustness of the β estimates, we computed β separately using the first and last 3 runs. Across subjects, β estimates were significantly correlated between these two task phases (r = 0.63, p = 0.002), suggesting reliable β estimation within participants. Also, there was no significant difference in β estimates between the first and last 3 runs (t21=1.32, p = 0.20), suggesting that the reliance on Pcue relative to Pint remained unchanged throughout the 9 runs in the fMRI session.
 
 We have cast the joint-guidance approach to control predictions as sub-optimal, due to the fact that trial-history was not predictive of task transitions. To corroborate this assumption, we quantitatively assessed whether relying more on the internally generated, trial-history based predictions than on explicit, cue-induced task predictions incurs a performance cost. We first estimated the acceleration in responding due to utilizing the pre-cue for each participant and each task. Specifically, the 0.5 (uninformative) prediction level condition was used as a baseline. Then, for each pre-cue/task (motion task vs. color task) combination, we calculated the respective probabilistic expectation of acceleration in RT relative to the 0.5 prediction level (i.e., the probability of encountering this pre-cue/task combination x the RT difference between this combination and the baseline). Across participants, the mean estimated gain of RT was positively correlated with β estimates in both the motion (r = 0.74, p<0.001; Figure 3E) and color (r = 0.46, p=0.03; Figure 3F) tasks, indicating a clear behavioral benefit for relying on the external cue. This analysis underlines the sub-optimal nature of relying on internally generated, trial history-based task prediction in the present context. We speculate that this seemingly irrational reliance on internally generated task prediction may be attributable to a relatively lower cost (e.g., due to high automaticity) of using internally generated control predictions compared to using cue-based predictions (cf. Shenhav et al., 2013; Shenhav et al., 2017; see Discussion).
 
 In sum, the behavioral and modeling results clearly demonstrate that task demand predictions were jointly informed by internally generated and externally provided information. Moreover, in spite of being sub-optimal in terms of potential performance benefits, task performance depended more on trial history-based task predictions than on the explicit informative pre-cues. To characterize the brain mechanisms by which internally generated and cue-induced task predictions guide cognitive control, we next turned to interrogating the concurrently acquired fMRI data.
 
-## fMRI data – analysis strategy
+### fMRI data – analysis strategy
 
-The joint guidance model holds that cognitive control is guided both by internally generated and externally cued task prediction:(2)Pjoint=(1−β)Pint+βPcue
+The joint guidance model holds that cognitive control is guided both by internally generated and externally cued task prediction:
+
+$$
+P_{joint}=(1−\beta)P_{int}+\betaP_{cue}
+$$
 
 We here sought to characterize how this joint influence is instantiated at the neural level. The initial major question we sought to answer was whether cue-based and history-based expectations influence control in parallel or whether these predictions are in fact integrated in a single brain region. Moreover, we sought to characterize two additional key computations that are required for translating Pjoint into successful task-set updating (Figure 4A): first, after the onset of the pre-cue, the task-set needs to be proactively shifted from Tprev to Pjoint in anticipation of the predicted task demand. The demand for preparatory task-set updating (proactive switch demand) can thus be quantified as |Tprev - Pjoint|. Second, following the presentation of the actual task cue and stimulus, the task-set weighting (if not perfectly corresponding with the cued task) needs to be updated reactively from Pjoint to the actual task demand. The reactive switch demand can thus be quantified as the prediction error of Pjoint, or PEjoint. Hence, we conducted fMRI analyses to locate brain regions carrying significant information about trial-by-trial variations in these three key variables: the joint task prediction (Pjoint), the proactive switch demand (|Tprev - Pjoint|), and the reactive switch demand (PEjoint).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig4-v3.jpg)
+
+**Figure 4.:** (A) Illustration of how Pjoint is translated into proactive and reactive switch demand in relation to previous and forthcoming task demand. (B) Left: An MFG region showing significantly above-chance encoding of the joint task prediction. Right: Individual ROI-mean encoding strength (in z-score). (C) The dlPFC ROI (in red) defined by any linear combination of Pcue and Pintrepresentation. (D) Histogram showing the encoding strength of pseudo-Pjoint based on randomly sampled β parameters using fMRI data in (B). (E) Encoding strength shown in (D), plotted as a function of the distance from Pjoint.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) This analysis revealed significant decoding of task transition (p<0.05, corrected) in bilateral dmPFC, caudal right inferior frontal gyrus, and right anterior insula. These regions have been consistently implicated in task switching in previous fMRI studies (for review, see Ruge et al., 2013). We next sought to identify brain regions that encoded cue-induced and internally generated task predictions at the time of the pre-cue onset. MVPA revealed reliable encoding (p<0.05, corrected) of Pcue in frontal and visual cortex. (B) Specifically, task predictions based on the explicit cue were represented left superior frontal gyrus (BA 9), as well as in bilateral anterior calcarine fissure and lingual gyrus (LG, Figure 4—figure supplement 1B). (C) By contrast, encoding of the internally generated task predictions (Pint) was found in a wider set of regions, including bilateral superior parietal cortex, precuneus and middle cingulate cortex, the left caudate head, left middle frontal gyrus, and motor/somatosensory cortex. These regions were spatially distinct from the regions representing explicit cue-induced task prediction. (D) The encoding of the externally generated task predictions using univariate analysis revealed a different pattern from (B), suggesting that the MVPA findings in (B) are not purely driven by univariate effects.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** We can therefore quantify task prediction confidence as |Pjoint – 0.5|. Searchlight activity patterns at the onset of the pre-cue displayed above-chance encoding of the confidence of task prediction in left IPL/IPS, left lingual gyrus, right superior frontal gyrus and right FPC.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig5-v3.jpg)
 
@@ -97,31 +274,37 @@ We here sought to characterize how this joint influence is instantiated at the n
 
 Given that the motion and color task-sets contain multiple dimensions of task information (e.g., whether the goal was to identify motion direction or color, which color/motion direction was mapped onto which key, frame color, etc.), their neural representations may differ with respect to both mean activity levels and multivariate activity patterns in local voxel clusters. Therefore, in examining the neural representations of the key variables above, we employed searchlight multivoxel pattern analysis (MVPA; see Methods: MVPA procedure) that relies on both multi-voxel activity patterns and univariate activity levels. As a validation, we replicated the classic task-switch effect using this approach (Figure 4—figure supplement 1A).
 
-## fMRI data – Encoding of joint task predictions at pre-cue onset
+### fMRI data – Encoding of joint task predictions at pre-cue onset
 
 We started by probing for a possible integrated neural representation of the joint externally and internally guided task prediction. Because Pjoint is a weighted sum of Pint and Pcue, it is inherently correlated with both variables. To ensure that we identify regions that are specifically representing the integrated prediction only, we filtered out searchlights that showed significant encoding of either cue-induced or internally generated predictions (Figure 4—figure supplement 1B–D). This analysis produced a map of the spatial distribution of the representation strength of Pjoint, exclusively revealing a left dorsolateral prefrontal cortex (dlPFC) region centered on the middle frontal gyrus (MFG) (Figure 4B). To rule out the possibility that the MVPA encoding of Pjoint in dlPFC merely reflected a univariate task effect (e.g., the color task evoking stronger mean activity due to being more difficult than the motion task), we performed a univariate control analysis. Specifically, within each fold of 3 runs, the searchlight-means of trial-wise t-maps were correlated with the corresponding trial-wise Pjoint estimates to obtain the z-score of their linear correlation. The mean z-scores averaged across the 3 folds were then used as the estimate of the univariate encoding strength of Pjoint. This approach ensured maximal similarity with the MVPA. Importantly, this whole-brain univariate analysis did not reveal any regional encoding of Pjoint after correcting for multiple comparisons (voxel-wise threshold p<0.001 and cluster size >62 searchlights). Moreover, an ROI-based analysis focusing on the dlPFC region shown in Figure 4B showed that the mean univariate encoding strength of Pjoint did not significantly differ from 0 (z-score = −0.006 ± 0.03, one sample t-test: t21 = −0.20, p=0.85). Thus, the dlPFC results were not driven by univariate effects of task difficulty.
 
-By definition, Pjoint is also inherently correlated with any linear combination of Pint and Pcue. Therefore, the left dlPFC region identified above may in principle encode a different mixture of Pint and Pcue than Pjoint. To rule out this possibility, we conducted a permutation test using randomly sampled βs for each subject (denoted as β~). To ensure this analysis was not biased towards obtaining selective Pjoint effects, it was based on a search space in a left dlPFC area generated from an F-statistical map that measured the effect caused by any linear combination of Pcue and Pint. The search space was then defined as left dlPFC searchlights with uncorrected P value less than 0.01 in the resulting F-map (244 searchlights in total, Figure 4C). Then, β~ was randomly sampled for each participant and was applied to the same MVPA procedure, in order to gauge the encoding strength of its corresponding pseudo-Pjoint. Group-level analysis was then conducted to determine the largest cluster size that showed significant (P < 0.001 uncorrected) encoding of the pseudo-Pjoint. This procedure was repeated 100,000 times, resulting in a null distribution of the largest cluster size. The mean of this null distribution was significantly smaller than the largest cluster size obtained using behaviorally derived βs (P = 0.02), suggesting that Pjoint better accounted for dlPFC fMRI activity patterns than other mixtures of Pint and Pcue.
+By definition, Pjoint is also inherently correlated with any linear combination of Pint and Pcue. Therefore, the left dlPFC region identified above may in principle encode a different mixture of Pint and Pcue than Pjoint. To rule out this possibility, we conducted a permutation test using randomly sampled βs for each subject (denoted as $\beta~$). To ensure this analysis was not biased towards obtaining selective Pjoint effects, it was based on a search space in a left dlPFC area generated from an F-statistical map that measured the effect caused by any linear combination of Pcue and Pint. The search space was then defined as left dlPFC searchlights with uncorrected P value less than 0.01 in the resulting F-map (244 searchlights in total, Figure 4C). Then, $\beta~$ was randomly sampled for each participant and was applied to the same MVPA procedure, in order to gauge the encoding strength of its corresponding pseudo-Pjoint. Group-level analysis was then conducted to determine the largest cluster size that showed significant (P < 0.001 uncorrected) encoding of the pseudo-Pjoint. This procedure was repeated 100,000 times, resulting in a null distribution of the largest cluster size. The mean of this null distribution was significantly smaller than the largest cluster size obtained using behaviorally derived βs (P = 0.02), suggesting that Pjoint better accounted for dlPFC fMRI activity patterns than other mixtures of Pint and Pcue.
 
-As a post-hoc analysis, we further examined the selectivity of Pjoint encoding, relative to other randomly sampled β~ s within the dlPFC cluster shown in Figure 4B. To this end, we compared the encoding strength of Pjoint to the encoding strength of arbitrarily mixed values of Pcue and Pint. Similar to the previous analysis, MVPA was conducted to measure the encoding strength of the pseudo-Pjoint. This procedure was repeated 100,000 times in order to ensure a robust estimation of the underlying null distribution. The group mean encoding strength (i.e., how well the fMRI data in the searchlights fit the model variable in a cross-validation procedure) of Pjoint was significantly stronger than the chance level derived from this random sampling procedure (P = 0.02, Figure 4D).
+As a post-hoc analysis, we further examined the selectivity of Pjoint encoding, relative to other randomly sampled $\beta~$ s within the dlPFC cluster shown in Figure 4B. To this end, we compared the encoding strength of Pjoint to the encoding strength of arbitrarily mixed values of Pcue and Pint. Similar to the previous analysis, MVPA was conducted to measure the encoding strength of the pseudo-Pjoint. This procedure was repeated 100,000 times in order to ensure a robust estimation of the underlying null distribution. The group mean encoding strength (i.e., how well the fMRI data in the searchlights fit the model variable in a cross-validation procedure) of Pjoint was significantly stronger than the chance level derived from this random sampling procedure (P = 0.02, Figure 4D).
 
-Moreover, we examined whether the behaviorally derived βs represent a local maximum state in the space of all possible βs. A maximum state implies that, given a set of β~, the encoding strength of its corresponding pseudo-Pjoint should steadily decay as β~ becomes more distinct from β (measured by the Euclidean distance across subjects in the present analysis). On the contrary, if there exist other maxima, this decay would not be present, because distant β~s would also achieve high encoding strength if they lie close to other maxima. Supporting the idea of β representing a local maximum, we observed a significant negative correlation between β~s’ distance from β and its encoding strength of how well the fMRI data fit the pseudo-Pjoint (r = -0.37, P < 0.001; Figure 4F). Thus, these results offer strong evidence for a specific role of this dlPFC region in integrating joint predictions of forthcoming task demand, and against the alternative possibility that explicit externally and (likely implicit) internally generated predictions might drive task-set updating independently, without being integrated. We also probed for the neural encoding of the relative strength, or confidence, of task prediction (inverse of prediction uncertainty, |Pjoint – 0.5|), which was represented in frontal and parietal regions (Figure 4—figure supplement 2).
+Moreover, we examined whether the behaviorally derived βs represent a local maximum state in the space of all possible βs. A maximum state implies that, given a set of $\beta~$, the encoding strength of its corresponding pseudo-Pjoint should steadily decay as $\beta~$ becomes more distinct from β (measured by the Euclidean distance across subjects in the present analysis). On the contrary, if there exist other maxima, this decay would not be present, because distant $\beta~s$ would also achieve high encoding strength if they lie close to other maxima. Supporting the idea of β representing a local maximum, we observed a significant negative correlation between $\beta~s$’ distance from β and its encoding strength of how well the fMRI data fit the pseudo-Pjoint (r = -0.37, P < 0.001; Figure 4F). Thus, these results offer strong evidence for a specific role of this dlPFC region in integrating joint predictions of forthcoming task demand, and against the alternative possibility that explicit externally and (likely implicit) internally generated predictions might drive task-set updating independently, without being integrated. We also probed for the neural encoding of the relative strength, or confidence, of task prediction (inverse of prediction uncertainty, |Pjoint – 0.5|), which was represented in frontal and parietal regions (Figure 4—figure supplement 2).
 
-## fMRI data – Encoding of proactive switch demand at pre-cue onset
+### fMRI data – Encoding of proactive switch demand at pre-cue onset
 
 While Pjoint provides predictions about the forthcoming task, the degree to which accommodating this prediction requires proactive task-set updating depends on its relationship to the previous trial (|Tprev - Pjoint|). We here searched for brain regions that encoded this distance between the expected and prior task-set, and thus, the relative need to engage in preparatory task-set updating, or proactive switch demand. Regions encoding this demand are likely responsible for the actual reconfiguration of the task-set. We found encoding of proactive switch demand to be supported by a wide network of regions centered in frontal and parietal cortex (Figure 5A). Areas encoding switch demand included right frontopolar cortex (FPC, BA 10), left inferior frontal gyrus (IFG, pars opercularis), left precentral gyrus, bilateral supplementary motor area (SMA), left inferior parietal lobule/intraparietal sulcus (IPL/IPS), bilateral superior parietal lobule (SPL), precuneus, bilateral insula and the bilateral putamen of the dorsal striatum. This network extended well into visual cortex, including bilateral lingual gyrus and bilateral middle occipital gyrus, suggesting that participants also used task predictions to adjust visual processing of forthcoming information.
 
 A core set of these regions (lateral PFC, SMA, and lateral posterior parietal cortex, Figure 5B) are responsive to multiple and changing task demands (Cole et al., 2013; Ruge et al., 2013), are functionally connected to each other (Yeo et al., 2011), and have been conceptualized as a frontoparietal cognitive control network (e.g., Duncan, 2013), while the dorsal striatum has long been proposed to contribute to updating of working memory content (Frank et al., 2001). A subset of these regions was also found to represent the confidence of task predictions (Figure 4—figure supplement 2). The current results suggest that the frontoparietal control network is not only involved in exerting control during task execution but also in the anticipatory updating of task-set representations driven by joint internally and externally generated predictions about forthcoming tasks.
 
-## fMRI data – proactive interference
+### fMRI data – proactive interference
 
 An alternative interpretation regarding model variable Pint (and associated findings) is that they may reflect, or be confounded by, proactive interference from previously activated task-sets. In the current modeling framework, at the time of pre-cue onset the degree of proactive interference that would be exerted from prior trials’ task-sets can be quantified as the discrepancy between the internal and external predictions, or |Pint-Pcue|. Using this metric to test whether there are any regions that encoded proactive interference, we performed the equivalent analyses on |Pint-Pcue| that we had previously performed for Pint and Pcue. This failed to reveal any above-chance encoding of |Pint-Pcue| in whole-brain MVPA, which suggests that proactive interference is unlikely to have played a major role in contributing to our data. In fact, this observation seems to fit with prior studies of proactive interference effects. For instance, using computational modeling and behavioral data, Badre and Wagner, 2006 showed that proactive interference effects decreased exponentially as a function of cue-task stimulus interval over a time range from 250 ms to 1150 ms. As the intervals in the current study were substantially longer (ranging from 1750 ms to 2500 ms), we speculate that any proactive interference effects may have decayed too much to be a major contributor in modulating proactive task switch preparations in this protocol.
 
-## fMRI data – encoding reactive switch demand at task stimulus onset
+### fMRI data – encoding reactive switch demand at task stimulus onset
 
 We next sought to characterize the neural substrates of reactive switch demand, that is, the need for additional task-set reweighting once the task cue and stimulus are presented, as represented by the prediction error of the joint task prediction (PEjoint). To control for the influence of the actual task demand, PEjoint encoding strength was computed separately for motion and color trials, and the statistical analysis was then performed on data collapsed across the two tasks. This analysis revealed encoding of PEjoint in a set of regions consisting of left dmPFC (including the ACC), bilateral precentral and postcentral gyrus, precuneus, right SPL, left inferior occipital gyrus, and IFG (Figure 6A).
 
-We also tested the encoding strength of Pjoint on both color and motion trials at the time of task-stimulus onset and did not find any brain areas passing the correction for multiple comparisons. In conjunction with the encoding of Pjoint at the onset of the pre-cue, this result corroborates the expectation that the representation of Pjoint and PEjoint should be temporally separated. We next compared the degree to which PEjoint was selectively represented based on behaviorally derived βs among the regions showing strong encoding of PEjoint. Compared to randomly sampled βs, the dmPFC (Figure 6B), right precentral and postcentral gyrus, and precuneus showed significantly above-chance encoding strength for PEjoint, with the dmPFC exhibiting the strongest effect. The effects remained above chance in the dmPFC when tested separately using motion (P < 0.001;Figure 6C) and color trials (P = 0.03; Figure 6D). Furthermore, for a given set of β~s, the encoding strength of its corresponding pseudo-PEjoint decreased as a function of its Euclidean distance from βs for both motion (r = -0.51, P < 0.001; Figure 6E) and color trials (r = -0.29, P < 0.001; Figure 6F). Thus, we obtained strong evidence for an involvement of the dmPFC/ACC in the reactive updating of task demand predictions based on the joint-guidance of internally generated and externally provided cue information.
+![Figure 6.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig6-v3.jpg)
+
+**Figure 6.:** (A) T-statistics maps of brain regions showing significantly above-chance encoding of PEjoint. (B) Encoding strength (z-score) of PEjoint in the dmPFC/ACC cluster, plotted as a function of task. Each line represents one subject. (C,D) Histogram showing the encoding strength of pseudo-PEjoint based on randomly sampled β parameters and fMRI data in the dmPFC/ACC cluster in motion (C) and color (D) trials. (E) Encoding strength shown in (C), plotted as a function of the distance from PEjoint. (F) Encoding strength shown in (D), plotted as a function of the distance from PEjoint.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39497/elife-39497-fig6-figsupp1-v3.jpg)
+
+We also tested the encoding strength of Pjoint on both color and motion trials at the time of task-stimulus onset and did not find any brain areas passing the correction for multiple comparisons. In conjunction with the encoding of Pjoint at the onset of the pre-cue, this result corroborates the expectation that the representation of Pjoint and PEjoint should be temporally separated. We next compared the degree to which PEjoint was selectively represented based on behaviorally derived βs among the regions showing strong encoding of PEjoint. Compared to randomly sampled βs, the dmPFC (Figure 6B), right precentral and postcentral gyrus, and precuneus showed significantly above-chance encoding strength for PEjoint, with the dmPFC exhibiting the strongest effect. The effects remained above chance in the dmPFC when tested separately using motion (P < 0.001;Figure 6C) and color trials (P = 0.03; Figure 6D). Furthermore, for a given set of$\beta~$s, the encoding strength of its corresponding pseudo-PEjoint decreased as a function of its Euclidean distance from βs for both motion (r = -0.51, P < 0.001; Figure 6E) and color trials (r = -0.29, P < 0.001; Figure 6F). Thus, we obtained strong evidence for an involvement of the dmPFC/ACC in the reactive updating of task demand predictions based on the joint-guidance of internally generated and externally provided cue information.
 
 Finally, we sought to relate the current data set to findings from a recent study that traced neural substrates of (unsigned) PE of internally generated task predictions in a similar task-switching paradigm, but where internal predictions were driven by varying the likelihood of each task being cued over blocks of trials (Waskom et al., 2017). The corresponding analysis in the current data set is to search for regions that encode PEint at task-stimulus onset. In close correspondence to the results of Waskom et al., 2017, we observed robust encoding of PEint in the frontoparietal control network and the adjacent parietal portion of the dorsal attention network (Figure 6—figure supplement 1) (Yeo et al., 2011). These data show that the updating of internally generated task predictions derived from a non-predictive trial sequence (in the current study) recruits the same neural substrates as updating of task predictions in response to predictive trial sequences (Waskom et al., 2017).
 
@@ -153,11 +336,11 @@ In conclusion, we combined a probabilistic cued task switching with computationa
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Twenty-eight volunteers gave informed written consent, in accordance with institutional guidelines. All subjects had normal or corrected-to-normal vision. Data from six subjects were excluded from further analysis due to low (<50%) accuracy in at least one of the cells in the experimental design (see below). The final sample consisted of 22 subjects (15 females; 22–35 years old, mean age = 27 years). This study was approved by the Duke University Health System Institutional Review Board.
 
-## Experimental procedures
+### Experimental procedures
 
 Visual stimuli were presented on a back projection screen viewed via a mirror attached to the scanner head coil. Tasks and response collection were programmed using Psychtoolbox 3 (Brainard, 1997) in Matlab (Mathworks, inc.). All visual stimuli were presented in the center of the screen over a grey background. Each trial started with a presentation of a pie chart (radius ≈ 2.2° of visual angle) for 0.5 s. The relative areas of black vs. white regions indicated the probability of a black vs. white frame surrounding the imperative dot cloud later in the trial (see below). Five probability levels were used in this study: 20%, 40%, 50%, 60% and 80% (applied to both black and white colors). The probability of seeing a black vs. white frame always summed up to 1, as the black and white area always occupied the whole pie chart. To make the perceptual appearance of the predictive cue different across trials, the pie chart rotated by a random degree on each trial. Following the pie chart, a fixation crosshair was presented for an exponentially jittered duration between 1.75 and 2.5 s (step size = 0.25 s). The fixation crosshair was followed by a cloud of 60 colored (either purple or green, radius ≈ 0.15°) moving (speed randomly drawn from a uniform distribution from 13°/s to 15°/s) dots. The dot cloud spanned approximately 6° of visual angle both vertically and horizontally and lasted for 1.5 s. For each trial, the colors and motion directions of the dots were defined by their respective noise levels (ranging from 0.1 to 0.9, determined by a stair-case procedure described below), a dominant motion direction (left or right) and a dominant color (green or purple). For example, a combination of color noise level of 0.8 and motion noise level of 0.4 means that: (1) 20% (i.e., 1–0.8) of all dots were randomly selected to have the dominant color; (2) the remaining 80% of dots were randomly colored in green or purple with equal probability; (3) 60% (i.e, 1–0.4) of all dots were randomly chosen to move in the dominant direction; (4) the remaining 40% of dots had random motion directions; and (5) the dots with the dominant color were selected independently from the dots with the dominant motion direction.
 
@@ -165,19 +348,19 @@ The dot cloud was surrounded by a frame, whose color (either black or white) was
 
 Prior to fMRI scanning, participants performed a practice session of 20 trials (ITI = 2 s for all trials) to ensure that they comprehended the task instructions. The practice session was followed by a stair-case procedure (4 runs of 50 trials each) that adaptively and separately adjusted the noise levels for color and motion to achieve accuracy of ~87.5% for both color and motion trials (cf. Waskom et al., 2017). The trial structure and counterbalancing were identical to the main task. The noise levels for color and motion both started at 0.5 and were re-evaluated respectively at every 5th color and motion trial (check points) based on two rules: (1) If at most one error was made since the last check point, the noise level for the check point’s corresponding target feature increased by 0.025; and (2) if the noise level for a feature did not change at any of the past 4 check points, its corresponding noise level decreased by 0.1.
 
-## Behavioral analysis
+### Behavioral analysis
 
 Error trials and outlier trials (RTs outside subject mean ±3 SDs) were removed from further analyses. Two repeated measures ANOVAs were conducted on both accuracy and RT data. The first ANOVA concerned the effect of the task at the previous trial (previous task: color or motion ×current task: color or motion). The second ANOVA focused on the effect of predictive cues (task prediction: 20%, 40%, 50%, 60% or 80% × current task: color or motion). Similar repeated measure ANOVAs were also conducted by replacing the previous trial with trials i-2 and i-3, in order to test the modulation of older trials on behavior. Note that a 3-way ANOVA (previous task ×task prediction×current task) was not performed due to low trial counts for unexpected task conditions (e.g., only 9 trials for the condition of a motion trial following a color trial and having wrong prediction of 80% chance of encountering a color trial).
 
-## Modeling and model comparison
+### Modeling and model comparison
 
 Rival models in model comparison were GLMs with a subset of trial-wise estimates of PEprev, PEcue, and PEint. Based on the observation that larger PE slows down responses (Waskom et al., 2017), a nonnegative constraint was applied to the coefficients (Chiu et al., 2017). Each model also included a constant regressor. To compare models, behavioral data were divided into 3 folds, each of which consisted of data from 3 runs. Two folds were used as training data to fit GLMs to RTs. To account for the main effect of task in RT, fitting was performed separately for trials with color and motion tasks. The resulting fitting coefficients were then applied to the same GLMs to predict trial-wise RTs in the remaining fold (test data). This procedure was repeated until each fold served as test data once. Model performance was measured by the product of trial number and the logged average squared trial-wise PE of RTs from all 3 test folds and was calculated for each model and each subject.
 
-## MRI acquisition and preprocessing
+### MRI acquisition and preprocessing
 
 Images were acquired parallel to the AC–PC line on a 3T GE scanner. Structural images were scanned using a T1-weighted SPGR axial scan sequence (146 slices, slice thickness = 1 mm, TR = 8.124 ms, FoV = 256 mm * 256 mm, in-plane resolution = 1 mm * 1 mm). Functional images were scanned using a T2*-weighted single-shot gradient EPI sequence of 42 contiguous axial slices (slice thickness = 3 mm, TR = 2 s, TE = 28 ms, flip angle = 90°, FoV = 192 mm * 192 mm, in-plane resolution = 3 mm * 3 mm). Preprocessing was done using SPM8 http://www.fil.ion.ucl.ac.uk/spm/. After discarding the first five scans of each run, the remaining images underwent spatial realignment, slice-time correction, and spatial normalization, resulting in normalized functional images in their native resolution. Normalized images were then smoothed using a Gaussian kernel with 5 mm full-width-half-maximum to increase signal (Xue et al., 2010). Single trial fMRI activity levels at the onset of the pre-cue were estimated separately following Mumford et al. (2012) by regressing the fMRI signals against a GLM consisting of HRF–convolved onsets of the pre-cue at the trial, the onsets of all other pre-cues, and the onsets of all task stimuli. Other regressors of no-interest, such as the estimated motion parameters, mean white matter (WM) BOLD signal, mean cerebrospinal fluid BOLD signal were also included in the GLM. Single trial fMRI activity levels at the onset of the task stimulus were calculated similarly. For each trial, the resulting t-maps were subtracted by their respective mean in the WM mask, in order to reduce non-neural noise in t estimates across individual t-maps, such as the noise introduced by the different GLMs with partially overlapping regressors of varying co-linearity in the estimation of trial-level t-maps. The adjusted t-maps were then used in MVPA.
 
-## MVPA procedures
+### MVPA procedures
 
 We conducted searchlight-based (r = 2 voxels) MVPAs to quantify the representation strength of a given variable (e.g., Pcue). MVPAs were conducted on a grey matter (GM) mask that was generated by dilating GM voxels (GM value >0.01) in the segmented T1 template by 1 voxel (Jiang et al., 2015a). For each searchlight, data from the 9 runs and the trial-wise variable time course were chronologically divided into 3 folds (3 runs per fold), based on which a 3-fold cross-validation was performed. For the training folds, trial-wise fMRI activity levels from all masked GM voxels within the searchlight were fit to the variable time course, resulting in one weight for each voxel. The fitting took the form of a ridge regression (Xue et al., 2010) to control for over-fitting. These weights were then applied to the fMRI data in the test fold to produce a predicted variable time course (Figure 7). High linear correlation between predicted and actual variable time courses indicated that the variable was represented in the neural data. No correlation (i.e., a correlation coefficient of 0) would indicate no representation of the variable of interest. Since each fold was used as test data once, three correlation coefficients were obtained. We Fisher-transformed these 3 correlation coefficients and used their mean as a quantification of representation strength for the searchlight. After searchlight analyses were performed across the whole brain (using each GM voxel as searchlight center once), a representation strength map was generated, with the center voxel of each searchlight encoding the degree to which each searchlight represents the variable in question.
 

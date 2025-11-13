@@ -42,15 +42,33 @@ In this study, we screened 361 SLC members using localization profiling and iden
 
 ## Results
 
-## Identification of a subset of SLC35 proteins as putative vesicular transporters using localization screening of SLC transporters
+### Identification of a subset of SLC35 proteins as putative vesicular transporters using localization screening of SLC transporters
 
 To identify new candidate vesicular transporters, we performed localization screening of SLC transporters (Figure 1). First, we created a cloning library containing 361 human SLC family members fused in-frame with the red fluorescent protein mCherry; we then systematically co-expressed individual SLC-mCherry construct with EGFP-tagged synaptophysin (SYP-EGFP) to label SVs in cultured rat cortical and hippocampal neurons, revealing the localization of SLC transporters (Figure 1A,B). Of the 223 SLC transporters that trafficked to neurites, 134 showed overlap with SYP-EGFP and were analyzed further by quantifying the co-localization ratio between the red and green fluorescent signals (Figure 1A,E). As expected, known synaptic vesicular transporters such as VGLUT and the vesicular acetylcholine transporter (VAChT) had relatively high co-localization ratio with SYP-EGFP (50–80% co-localization) (Figure 1C,E), whereas markers of non-vesicular organelles such as the Golgi apparatus, endoplasmic reticulum, and mitochondria had relatively low co-localization ratio (10–20%) (Figure 1D,E). Setting a threshold at the co-localization ratio for VGLUT3 – a well-known vesicular transporter – revealed a total of 40 candidate vesicular transporters (Figure 1E and Supplementary file 1). Among these candidates, a subset of SLC35 transporters, including SLC35D3, SLC35F1, and SLC35G2, had a co-localization ratio of approximately 70% with SYP-EGFP (Figure 1E,F). In contrast, other members of the same subfamily, such as SLC35A1, SLC35E1, and SLC35E2, localized primarily to organelles in the soma and had relatively low co-localization ratio (10–20%) (Figure 1E,G). Together, these results indicate that putative vesicular transporters, including a subset of SLC35 family members, likely localize to neuronal SVs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top: Schematic diagram of the localization profiling strategy. Red and green fluorescent signals were collected using confocal microscopy imaging of cultured rat neurons co-expressing mCherry-tagged SLC proteins and EGFP-tagged synaptophysin (SYP-EGFP). Bottom: Sequential steps used for the localization profiling. Two rounds of screening revealed a total of 40 of 361 screened SLC transporters as candidate vesicular transporters. (B) Representative images of neurons expressing SLC X-mCherry transporters (red) and SYP-EGFP (green). Scale bars: 10 μm. (C) Representative images of neurons expressing three known vesicular SLC transporters (red) and SYP-EGFP (green), with magnified views. White arrowheads indicate co-localization. Scale bars: 10 μm. (D) Representative images of neurons expressing three non-vesicular organelle markers (red) and SYP-EGFP (green), with magnified views. Scale bars: 10 μm. (E) Summary of the co-localization ratio between 134 proteins and SYP-EGFP. Dark gray bars represent known vesicular transporters, magenta bars represent SLC35 transporters, light gray bars represent non-vesicular organelle markers, and white bars represent the SLC transporters screened in this study. The threshold indicated by the vertical dashed line was defined as the co-localization ratio between VGLUT3 and SYP-EGFP. n = at least three neurons each. Data are mean ± s.e.m. (F, G) Representative images of neurons expressing vesicular (F) and non-vesicular (G) SLC35 transporters (red) and SYP-EGFP (green), with magnified views. White arrowheads indicate co-localization. Scale bars: 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic diagram of the epitope-tagged SLC35D3. (B) Left: Representative images of cultured neurons overexpressing SLC35D3-EGFP (green) by: plasmid transfection, lentivirus infection, and AAV-PhP.eB infection with two different tilters (7 × 1010 and 1.4 × 1011 vg per coverslip containing ~8 × 104 cells). NeuN (red) is immunostained as an internal control. Scale bars: 25 μm. Right: quantifications of the relative level of EGFP and NeuN. n = 12–20 neurons each. Data are mean ± s.e.m. (C) The localization of SLC35D3 in cultured neurons. Representative images showing cultured neurons expressing SLC35D3-EGFP by lentivirus infection immunostained with anti-SYP (red), anti-Chg A (magenta), and anti-EGFP (green) antibodies. Arrows: SLC35D3 positive puncta. Arrowheads: Chg A-only puncta. Scale bar: 25 μm. Inset: quantification of the co-localization ratio by N (puncta in colocalized channel)/N (puncta in organelle marker channel) among indicated groups. Dark gray: SYP vs SLC35D3 (plasmid transfection, replotted from Figure 1E); Red: SYP vs SLC35D3 (lentivirus); Magenta: Chg A vs SLC35D3 (lentivirus). n = at least three neurons each. Data are mean ± s.e.m.
+
 To avoid mis-localization caused by overexpression, we tested different delivery strategies for a low expression level on one candidate SLC35D3. The lowest expression level of epitope-tagged SLC35D3 was achieved using lentivirus, which was ~40% compared with plasmid transfection (Figure 1—figure supplement 1A,B). Then we focused on the localization of SLC35D3 in the lentivirus infected neurons (Figure 1—figure supplement 1C). The co-localization ratio between SLC35D3 and SYP (SV marker) was ~60%, which is similar to that in the plasmid transfected neurons (~70%). Given SYP may also be localized to secretory granules, we co-immunostained a secretory granule marker Chg A and found that the co-localization ratio between SLC35D3 and Chg A was ~30%. Taken together, SLC35D3 with relatively low expression level has a higher possibility to localize to synaptic vesicles than to secretory granules.
 
-## Proteomics analysis of SVs reveals novel vesicular transporters
+### Proteomics analysis of SVs reveals novel vesicular transporters
 
 To probe the proteome including the vesicular transporters presented in SVs, we immunoisolated intact SVs from fractionated mouse brain samples and used western blot analysis and high-performance liquid chromatography (HPLC)–MS to analyze the proteome (Figure 2A). Using a specific antibody against SYP to isolate SVs, we found a number of SV markers present in the anti-SYP samples, but not in samples obtained using a control IgG (Figure 2B); as an additional control, the postsynaptic marker PSD-95 was not detected in either the anti-SYP sample or the control IgG sample in western blotting. Moreover, using EM, we directly observed SVs on the surface of anti-SYP beads, but not control IgG beads (Figure 2C), confirming that the anti-SYP beads selectively isolate SVs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram depicting the strategy for proteomics profiling of SVs immunoisolated from fractionated mouse brain homogenates. (B) Top: western blot analysis of the indicated protein markers for SVs and the postsynaptic marker PSD-95 in the input fraction (supernatant after centrifugation of whole brain lysates), the anti-SYP immunoisolated sample, and the control IgG sample. Bottom: Ponceau staining of the membrane, showing the total proteins. (C) Electron microscopy images of anti-SYP beads (top) and control IgG beads (bottom), with magnified views. Arrowheads indicate immunoisolated SVs. Scale bars: 500 nm and 100 nm (magnified views). The bottom-left panel shows the quantification of the number of SVs attached to the indicated beads. (D) Left: volcano plot depicting the proteins detected using SV proteomics. The blue dashed box indicates anti-SYP-enriched proteins using thresholds set at p<0.05 and LFQ intensity > 220. n = 3 independently prepared protein samples. p-values by two-sided Student’s t-test. Right: magnified view of the anti-SYP‒enriched proteins. Representative SV markers are shown in black, V-ATPase subunits are shown in purple, and known vesicular transporters are shown in red. (E) Venn diagram showing the overlap between anti-SYP‒enriched proteins (blue) and the known SV proteome based on the SynGO database (red). (F) Summary of the percentage of overlap between anti-SYP‒enriched proteins and the SV proteome (from the SynGO database), Golgi apparatus proteins (from UniProt), mitochondrial proteins (from UniProt), and the entire mouse proteome (from UniProt). (G) Summary of the SLC transporters identified using SV proteomics. Classic VNTs are shown in red, and SLC35 transporters are shown in magenta. p-values by two-sided Student’s t-test. The horizontal dashed line indicates the threshold at p=0.05. (H) Venn diagram showing the overlap between the vesicular transporters identified using localization profiling (yellow) and the vesicular transporters identified using proteomics profiling of SVs (blue). The three candidate SLC35 transporters are shown in magenta.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic diagram depicting the strategy for subcellular fractionation of SVs from mouse brain homogenates. (B) Top: western blot analysis of SLC35D3-EGFP-3xFlag and the indicated protein markers for SVs from mouse brain homogenates. Bottom: Ponceau staining showing the total proteins. AAV-PhP.eB was delivered by retro-orbital injection to 6 week mice at 5 × 1011 genome copy (gc) and western blot analysis was conducted 3 weeks after injection. (C) Top: western blot analysis of SLC35D3-EGFP-3xFlag, the indicated protein markers for SVs, the postsynaptic marker PSD-95, and other organelle markers from differential centrifugation fractions. Bottom: Ponceau staining showing the total proteins. The dashed square indicates fractions from crude synaptosome to SVs.
 
 Next, we performed HPLC–MS analysis and found high reproducibility among repeated trials in both the anti-SYP and control IgG samples (Figure 2—figure supplement 1). We further analyzed the relatively abundant proteins (LFQ intensity > 220, without immunoglobin) that were significantly enriched in the anti-SYP sample compared to the control sample (Figure 2D). The proteins enriched in the anti-SYP sample covered more than 60% of the 110 proteins in the SV proteome listed in the SynGO database (Koopmans et al., 2019), including known VNTs, vesicular ATPase subunits, and a number of other SV markers (Figure 2D–F). Conversely, only 8.0% and 2.2% of the proteins in the mitochondrial and Golgi apparatus proteome, respectively, were present in the anti-SYP sample (Figure 2F), indicating minimal contamination by these organelles; as an additional control, we found very little overlap between the proteins in the anti-SYP sample and the entire mouse proteome in the UniProt database (UniProt Consortium et al., 2019).
 
@@ -58,21 +76,37 @@ We then focused on SLC transporters and identified 20 SLC transporters, includin
 
 To further dissect the subcellular distribution of one novel vesicular transporter candidate, SLC35D3, in different organelles, we performed differential centrifugation to fractionate the mouse brain (Huttner et al., 1983; Figure 2—figure supplement 2A). Firstly, we conducted retro-orbital injection of AAV-PhP.eB virus to infect the mouse brain (Challis et al., 2019). The expression of epitope-tagged SLC35D3 was detected 3 weeks after AAV injection (Figure 2—figure supplement 2B). With the progress of differential centrifugation, we observed enrichment of SLC35D3 from P2’ (crude synaptosome) to LP2 (crude SVs) fraction, which is similar to known SV markers VGLUT1 and SYP. In contrast, the secretory granule marker Chg A, organelle markers of ER and Golgi are majorly enriched before P2’ (Figure 2—figure supplement 2C). SLC35D3 and VGLUT1 also appeared in P1 and S1 fractions, likely due to the reason that these membrane proteins are being produced and processed through the secretory pathway. In summary, these data corroborate the view that SLC35D3 is less likely to be a classic ER/Golgi transporter and tends to localize to SVs.
 
-## Localization of SLC35D3 to SVs revealed by EM
+### Localization of SLC35D3 to SVs revealed by EM
 
 To further verify the vesicular localization of one of the three SLC35 candidates, SLC35D3, we used APEX2-based labeling (Lam et al., 2015) coupled with EM (Figure 3A). We first validated this strategy by transfecting cultured rat neurons with Mito-APEX2 to label mitochondria and found two distinct populations based on electron density (Figure 3B); as an additional control, we found only one population of SVs in non-transfected neurons (Figure 3C). Importantly, neurons transfected with either VGLUT1-APEX2 (Figure 3D) or SLC35D3-APEX2 (Figure 3E) had two distinct populations of SVs based on electron density, demonstrating that SLC35D3 could localize to SVs in cultured neurons.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic diagram depicting the APEX2-based labeling strategy for studying ultrastructural localization. (B–E) Representative EM images (left) and distribution of organelle darkness (right) of mitochondria in cultured rat neurons transfected with Mito-APEX2 (B), SVs in non-transfected neurons (C), and SVs in neurons transfected with either VGLUT1-APEX2 (D) or SLC35D3-APEX2 (E), with magnified views of the dashed boxes from (E). The blue arrows and red arrowheads indicate organelles with low (light) and high (dark) electron density, respectively. Scale bars: 500 nm.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic diagram depicting the APEX2-based labeling strategy for studying ultrastructural localization. (B–E) Representative EM images (left) and distribution of organelle darkness (right) of mitochondria in cultured rat neurons transfected with Mito-APEX2 (B), SVs in non-transfected neurons (C), and SVs in neurons transfected with either VGLUT1-APEX2 (D) or SLC35D3-APEX2 (E), with magnified views of the dashed boxes from (E). The blue arrows and red arrowheads indicate organelles with low (light) and high (dark) electron density, respectively. Scale bars: 500 nm.
 
-## Deorphanization of SLC35D3 using metabolite profiling combined with a radiolabeled substrate transport assay
+### Deorphanization of SLC35D3 using metabolite profiling combined with a radiolabeled substrate transport assay
 
 To search for the cognate substrate corresponding to the orphan vesicular transporter SLC35D3, we used metabolite profiling, based on the assumption that overexpressing the transporter will enrich its cognate substrate in organelles. In our analysis, we intentionally focused on nucleotide sugars present in mammals as possible substrates, as the SLC35 transporter family has been reported to transport these molecules (Figure 4A; Caffaro and Hirschberg, 2006; Ishida and Kawakita, 2004; Song, 2013). By optimizing a hyperPGC column‒based HPLC strategy coupled with selected reaction monitoring in MS (Garcia et al., 2013), we successfully detected a range of nucleotide sugars (Figure 4B). Next, we used the deorphanization strategy shown in Figure 4C. Firstly, we measured nucleotide sugars in untransfected control cells, finding all known nucleotide-sugars (Figure 4D,E). To test the sensitivity of this deorphanization strategy, we generated a stable cell line overexpressing EGFP-tagged SLC35A2 (Figure 4—figure supplement 1A), which is known to transport the nucleotide sugars including UDP-galactose and UDP-N-acetyl-galactosamine (Ishida et al., 1996; Segawa et al., 2002; Sun-Wada et al., 1998). Profiling the relative abundance of specific nucleotide sugars in organelles prepared from control cells and SLC35A2-overexpressing (SLC35A2OE) cells revealed a >100% increase in the substrate UDP-galactose in SLC35A2OE organelles (Figure 4F,G, Figure 4—figure supplement 1B). Interestingly, we also detected 60% higher levels of UDP-glucose in SLC35A2OE cells, indicating a previously unknown substrate of the SLC35A2 transporter; in contrast, we found that the SLC35A2 substrate UDP-N-acetyl-galactosamine did not appear to be enriched in SLC35A2OE cells, possibly due to limitations in separating UDP-N-acetyl-glucosamine and UDP-N-acetyl-galactosamine in our HPLC–MS setup (Figure 4F,G). We then used this same strategy to search for substrates of the orphan vesicular transporter SLC35D3 using SLC35D3-overexpressing (SLC35D3OE) cells (Figure 4—figure supplement 1A). Our analysis revealed a 40% increase in UDP-glucose and a 30% increase in CMP-sialic acid in SLC35D3OE organelles compared to control organelles (Figure 4H,I, Figure 4—figure supplement 1B), suggesting that these two nucleotide sugars might be substrates of the SLC35D3 transporter.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig4-v2.jpg)
+
+**Figure 4.:** (A) Phylogenic tree of the SLC35 transporter family and known corresponding substrates. SLC35A2 and SLC35D3 are shown in blue and green, respectively. O: orphan transporters. (B) Left: representative HPLC-MS trace showing 5 μM of the indicated nucleotide sugars. The inset shows the linear correlation between the UDP-glc standard and MS ion intensity (R2 = 0.997, Pearson’s r). Right: molecular structures of the UDP-sugars UDP-glc, UDP-gal, UDP-glcNAc, and UDP-galNAc, with differences shown in the gray dashed boxes. (C) Schematic diagram depicting the strategy for detecting metabolites in organelles and in whole cells. (D) Representative traces of the indicated nucleotide sugars detected in control (SLC35A2KO) cells, with a magnified view at the right. (E) Summary of the relative abundance of the indicated nucleotide sugars measured in control cells and cells overexpressing SLC35D3. n = 5 and 3 independently prepared metabolite extracts, respectively. (F–G) Representative extracted ion chromatograms of specific nucleotide sugars (F) and summary of their relative abundance (G) in organelles isolated from control cells (gray) and cells overexpressing SLC35A2 (blue). n = 3 independently prepared metabolite extracts. p-values by two-sided Student’s t-test. p=0.0049 for UDP-gal and p=0.0099 for UDP-glc abundance, respectively. N.D.: not detectable. (H–I) Representative extracted ion chromatograms of specific nucleotide sugars (F) and summary of their relative abundance (G) in organelles isolated from control cells (gray) and cells overexpressing SLC35D3 (green). n = three independently prepared metabolite extracts. p-values by two-sided Student’s t-test. p=0.00196 for UDP-glc and p=0.01006 for CMP-SA abundance, respectively. N.D.: not detectable. Data are mean ± s.e.m.; two-sided Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative brightfield (BF) and fluorescence (GFP) images of control (SLC35A2KO) cells and cells overexpressing EGFP-tagged SLC35A2 (SLC35A2-EGFP) or SLC35D3 (SLC35D3-EGFP). Scale bar: 10 μm. (B) Representative full traces (left) and expanded views (right) of nucleotide sugars detected in organelles isolated from control cells (top) and from cells overexpressing SLC35A2-EGFP (SLC35A2OE) or SLC35D3-EGFP (SLC35D3OE).
+
 Metabolite profiling can detect the effects of both direct transport activity and indirect changes in the abundance of metabolites due to the overexpression of transporters; thus, we also conducted an uptake assay with radiolabeled nucleotide sugars in order to measure the transport activity (Figure 5A). We found that cells expressing the SLC35A2 transporter had significantly increased uptake of both the previously known substrate UDP-galactose and the newly identified substrate UDP-glucose compared to control cells (Figure 5B), validating our deorphanization strategy combining metabolite profiling and the radiolabeled transport assay. Importantly, cells expressing human SLC35D3 had a nearly onefold increase in UDP-glucose transport, but no significant change in the transport of UDP-galactose or UDP-N-acetyl-glucosamine; similar results were obtained from the cells expressed the mouse SLC35D3 (Figure 5B). Thus, UDP-glucose is a promising substrate of SLC35D3.
 
-## Characterization of the transport properties of SLC35D3
+![Figure 5.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic diagram depicting the transport assay using organelles isolated from HEK293T cells. (B) Summary of the transport of [3H]-UDP-glc, [3H]-UDP-gal, and [3H]-UDP-glcNAc (500 nM each) in control (SLC35A2KO) cells and in cells overexpressing mouse SLC35D3 (mSLC35D3), human SLC35D3 (hSLC35D3), or human SLC35A2 (hSLC35A2); n = 3 experiments each. p=0.04953 for mSLC35D3, hSLC35D3, and hSLC35A2 in UDP-glc transport; p=0.04953 for hSLC35A2 in UDP-gal transport. (C) Competition assay measuring [3H]-UDP-glc (500 nM) transport in the presence of the indicated non-labeled compounds (at 50 μM) in cells expressing SLC35D3; the data are expressed relative to mock cells, in which solvent was applied instead of a non-labeled compound; n = 3 experiments each. p=0.04953 for cold UDP-glc, GDP-Man, UDP-glcA, UDP-gal, UDP-xyl, and GDP-fuc competition. (D) Time course of [3H]-UDP-glc transport measured in cells expressing SLC35D3, relative to corresponding baseline values. The data were fitted to a single-exponential function. (E) Dose–response curve for [3H]-UDP-glc transport in cells expressing SLC35D3, relative to the corresponding baseline values. The data were fitted to Michaelis–Menten kinetics equation. (F) Schematic diagram depicting the proton gradient driving vesicular transporters, with specific inhibitors shown. (G) Summary of [3H]-UDP-glc transport measured in cells expressing SLC35D3, expressed relative to mock cells, in which solvent was applied; n = 3 experiments each. NEM, N-ethylmaleimide (0.2 mM); FCCP, carbonyl cyanide-4-(trifluoromethoxy) phenylhydrazone (50 μM); Nig, Nigericin (5 μM); Baf, bafilomycin A1 (100 nM); Val, valinomycin (20 μM). p=0.04953 for NEM, FCCP, and Nig inhibition. Data are mean ± s.e.m.; p-values by Kruskal–Wallis ANOVA test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65417/elife-65417-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Summary of the transport of [3H]-UDP-glc and [3H]-UDP-glcNAc (500 nM each) in control (HEK293T) cells and in cells overexpressing human SLC35A3 (hSLC35A3), n = 3 experiments each. p=2.62E-5 in UDP-glcNAc transport by two-sided Student’s t-test. (B) Summary of [3H]-UDP-glcNAc transport measured in cells expressing SLC35A3, expressed relative to mock cells, in which solvent was applied; NEM, N-ethylmaleimide (0.2 mM); FCCP, carbonyl cyanide-4-(trifluoromethoxy) phenylhydrazone (50 μM); Nig, Nigericin (5 μM); Baf A1, bafilomycin A1 (100 nM); Val, valinomycin (20 μM). n = 3 experiments each. n.s., not significant. p-values by Kruskal–Wallis ANOVA test. Data are mean ± s.e.m.
+
+### Characterization of the transport properties of SLC35D3
 
 Next, we characterized the transport of UDP-glucose by SLC35D3. To study the substrate specificity of SLC35D3, we performed a competition assay in which we applied a 100-fold higher concentration of non-radiolabeled substrate together with radiolabeled UDP-glucose in the transport assay. We found that non-radiolabeled UDP-glucose – but not the structurally similar UDP-N-acetyl-galactosamine – virtually eliminated the transport of radiolabeled UDP-glucose (Figure 5C). In addition, several other UDP-sugars partially inhibited transport activity but were not enriched in the metabolite profiling, possibly by competing with UDP-glucose on the transporter’s substrate-binding pocket. Interestingly, CMP-sialic acid did not reduce the transport of UDP-glucose (Figure 5C), even though this nucleotide sugar was increased – albeit to a lesser extent than UDP-glucose – in the organelles of cells expressing SLC35D3 (see Figure 4I), indicating that CMP-sialic acid may not be a direct substrate of SLC35D3 but may have been indirectly increased on its abundance as shown by metabolite profiling.
 
@@ -106,19 +140,386 @@ In addition to function in the central nervous system, it is possible that SLC35
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>SYP</td>
+      <td>GenBank</td>
+      <td>NM_009305.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC35A2</td>
+      <td>GenBank</td>
+      <td>NM_005660.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>SLC35D3</td>
+      <td>GenBank</td>
+      <td>BC139194.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC35D3</td>
+      <td>GenBank</td>
+      <td>KJ896073.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type</td>
+      <td>Charles River</td>
+      <td>C57BL6/J, RRID:MGI:5650797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV-PhP.eB hSyn-SLC35D3-EGFP-3xFlag</td>
+      <td>Vigene</td>
+      <td></td>
+      <td>Titer: 7.68 × 1013 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SLC35A2KO cell line</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘KO cell line establishment and validation’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-VGLUT1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 135302 RRID:AB_887877</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-VGLUT2</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 135402 RRID:AB_2187539</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-SYP</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 101011 RRID:AB_887824</td>
+      <td>WB and IF dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-SYP</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 5461 RRID:AB_10698743</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-VAMP2</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 104211 RRID:AB_887811</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-PSD95</td>
+      <td>NeuroMab</td>
+      <td>Cat. #: 75–028 RRID:AB_2292909</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal mouse anti-Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: F9291 RRID:AB_439698</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal chicken anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat. #: Ab13970 RRID:AB_300798</td>
+      <td>IF dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal rabbit anti-CALR</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 12238 RRID:AB_2688013</td>
+      <td>WB dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-GM130</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 12480 RRID:AB_2797933</td>
+      <td>WB dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-Chg A</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 259003 RRID:AB_2619972</td>
+      <td>WB and IF dilution 1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-human SLC35D3-mCherry (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-mouse SYP-EGFP (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-rat VGLUT1-APEX2 (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-OMM-APEX2 (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-human SLC35D3-APEX2 (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPacific-mouse SLC35D3-EGFP (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPacific-human SLC35D3-EGFP (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPacific-human SLC35A2-EGFP (Plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-human SLC35D3-EGFP-3xFlag (AAV vector)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti hSyn-human SLC35D3-EGFP-3xFlag (lenti vector)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods section, ‘Molecular biology’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human ORFeome 8.1</td>
+      <td>Center for Cancer Systems Biology</td>
+      <td>http://horfdb.dfci.harvard.edu/</td>
+      <td>Full-length human cDNAs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DNASU</td>
+      <td>NIGMS-funded Protein Structure Initiative (PSI)</td>
+      <td>https://dnasu.org/DNASU/Home.do</td>
+      <td>Full-length human cDNAs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>The PlasmID Repository</td>
+      <td>DF/HCC DNA Resource Core at Harvard Medical School</td>
+      <td>https://plasmid.med.harvard.edu/PLASMID/Home.xhtml</td>
+      <td>Full-length human cDNAs</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-glucose</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-296687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-galactose</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-286849A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-N-acetylgalactosamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: U5252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-N-acetylglucosamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: U4375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-xylose</td>
+      <td>SugarsTech</td>
+      <td>Cat. #: SN02004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UDP-glucuronic acid</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-216043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CMP-sialic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C8271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDP-fucose</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-221696A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDP-mannose</td>
+      <td>Santa Cruz</td>
+      <td>Cat. #: sc-285856A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine diphosphate glucose [6–3H]</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: NET1163250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine diphosphate galactose [1–3H]</td>
+      <td>ARC</td>
+      <td>Cat. #: ART0737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uridine diphosphate N-acetylglucosamine [6–3H]</td>
+      <td>ARC</td>
+      <td>Cat. #: ART0128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valinomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: V0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nigericin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: N7143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Ethylmaleimide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: E3876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>abcam</td>
+      <td>Cat. #: ab120497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G dynabeads</td>
+      <td>Thermo</td>
+      <td>Cat. #: 10004D</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Postnatal 0-day-old (P0) Sprague-Dawley rats (Beijing Vital River Laboratory) and adult (P42-56) wild-type C57BL/6J (Beijing Vital River Laboratory) were used in this study. All animals were raised in a temperature-controlled room with a 12 hr/12 hr light–dark cycle, and all animal procedures were performed using protocols approved by the Animal Care and Use Committees at Peking University.
 
-## Molecular biology
+### Molecular biology
 
 DNA fragments were cloned using PCR amplification with primers (TsingKe Biological Technology) containing 30 bp of overlap. The fragments were then assembled into plasmids using Gibson assembly (Gibson et al., 2009). All plasmid sequences were verified using Sanger sequencing (TsingKe Biological Technology). For the localization studies in cultured neurons, the open-reading frames (e.g., SLC-mCherry, SLC-APEX2, SYP-EGFP, organelle marker-EGFP, etc.) were cloned into the N3 vector under the control of the CAG promoter. To generate stable cell lines expressing various SLC35 transporters, we generated the pPacific vector containing a 3’ terminal repeat, the CAG promoter, a P2A sequence, the puroR gene, and a 5’ terminal repeat; the genes of interest were then cloned into a modified pPiggyBac (namely pPacific) vector using Gibson assembly. Two mutations (S103P and S509G) were introduced in pCS7-PiggyBAC (ViewSolid Biotech) to generate a hyperactive piggyBac transposase for generating the stable cell lines. For the AAV and lentivirus, hSyn-hSLC35D3-EGFP-3xFlag was cloned into pLenti and pAAV vectors independently.
 
-## Lentiviral production
+### Lentiviral production
 
 The lentivirus was produced by transfection of HEK-293T cells with the pLenti-hSyn-hSLC35D3-EGFP-3xFlag in combination with the VSV-G envelope and packaging plasmids. Twenty-four hours after transfection, the media was changed to fresh DMEM (Gibico) with 10% (v/v) fetal bovine serum (Gibco) and 1% penicillin-streptomycin (Gibco). Forty-eight hours after transfection, the virus containing supernatant was collected from the cells and centrifuged at 1000 g for 5 min to remove cells and debris. Supernatants were aliquoted and stored in −80°C.
 
-## Preparation and fluorescence imaging of cultured cells
+### Preparation and fluorescence imaging of cultured cells
 
 The HEK293T cell line is from ATCC. No mycoplasma contamination was detected. HEK293T cells were cultured at 37°C in 5% CO2 in DMEM (Gibco) supplemented with 10% (v/v) fetal bovine serum (Gibco) and 1% penicillin-streptomycin (Gibco). For transfection, cells in six-well plates were incubated in a mixture containing 1 μg DNA and 3 μg PEI for 6 hr, and fluorescence imaging was performed after the generation of a stable cell line.
 
@@ -128,11 +529,11 @@ Cultured cells were imaged using an inverted Ti-E A1 confocal microscope (Nikon)
 
 Localization imaging data of SLC-mCherry fluorescence overlapping with SYP-EGFP puncta were firstly manually selected by three researchers in a double-blind fashion. The selected SLC-mCherry images were further quantified to obtain a co-localization ratio with SYP-EGFP using the modified in silica Puncta Analyzer tool (see Source code file: in silica Puncta Analyzer tool), as described previously (Kimura et al., 2007). By using the plugin based on Image J software:
 
-## Immunostaining
+### Immunostaining
 
 Cells were firstly washed two times with PBS, followed by fixation in 4% PFA in PBS for 15 min, and then washed three times with PBS for 10 min each. Later, cells were permeabilized in 0.2% TritonX-100 in PBS for 20 min and were washed three times with PBS for 10 min each. After that, cells were blocked in 5% BSA in PBS for 1 hr. Primary antibodies were added to each coverslip: monoclonal mouse anti-SYP (101011; Synaptic Systems), polyclonal chicken anti-GFP (ab13970; Abcam), and polyclonal rabbit anti-Chg A (259003, Synaptic Systems). Cells were incubated overnight at 4°C. Following this, cells were washed three times with PBS for 10 min each. Secondary antibodies were then added: goat anti-chicken Alexa Fluor 488, goat anti-mouse iFluor 555, and goat anti-rabbit iFluor 647. Cells were incubated at room temperature for 2 hr and washed three times with PBS for 10 min each. Cells were imaged by confocal microscopy as described above.
 
-## Proteomics analysis of SVs
+### Proteomics analysis of SVs
 
 Thirty minutes prior to use, 5 μg of antibody was conjugated to 50 μl Protein G M-280 dynabeads at room temperature in KPBS buffer containing (in mM): 136 KCl and 10 KH2PO4 (pH 7.25). The brain was removed from an adult (P42-56) C57BL/6J mouse, homogenized using a ball-bearing homogenizer (10 μm clearance) in 3 ml ice-cold KPBS, and centrifuged at 30,000 g for 20 min. The supernatant (input) containing the SVs was collected and incubated with antibody-conjugated dynabeads for 1 hr at 0°C for immunoisolation. Dynabead-bound SVs were washed three times with KPBS and eluted by incubating the samples with SDS–PAGE sample loading buffer. The SV samples were heated for 10 min at 70°C and centrifuged for 2 min at 14,000 rpm, and the supernatants were transferred to clean tubes. The protein samples were then subjected to SDS–PAGE for western blotting and HPLC–MS, respectively.
 
@@ -142,15 +543,15 @@ Using an Easy-nLC 1200 system, 5 μl of sample was loaded at a rate of 0.3 μl/m
 
 The peptides were directly injected into an Orbitrap Fusion Lumos (Thermo Fisher Scientific) using a nano-electrospray ion source with an electrospray voltage of 2.2 kV. Full-scan MS spectra were acquired using the Orbitrap mass analyzer (m/z range: 300–1500 Da), with the resolution set to 60,000 (full width at half maximum or FWHM) at m/z = 200 Da. Full-scan target was 5e5 with a maximum fill time of 50 ms. All data were acquired in profile mode using positive polarity. MS/MS spectra data were acquired using Orbitrap with a resolution of 15,000 (FWHM) at m/z = 200 Da and higher-collisional dissociation (HCD) MS/MS fragmentation. The isolation width was 1.6 m/z.
 
-## Intravenous injection
+### Intravenous injection
 
 The procedure was adapted from previous study (Challis et al., 2019). Briefly, WT female adult (P42–48) C57BL/6N mice were anesthetized by an intraperitoneal (i.p.) injection of 2,2,2-tribromoethanol (Avertin, 500 mg/kg body weight, Sigma-Aldrich). AAV-PhP.eB was delivered by retro-orbital injection to the mice at 5 × 1011 genome copy (gc), and western blot analysis was conducted 3 weeks after injection.
 
-## Western blot
+### Western blot
 
 Protein lysates were denatured by the addition of 2× sample buffer followed by 70°C treatment for 10 min. Samples were resolved by 10% SDS–PAGE, transferred for 1 hr at room temperature at 25 V to NC membranes, and analyzed by immunoblotting. Membranes were firstly stained by Ponceau S staining followed by washing with TBST and blocking with 5% non-fat milk prepared in TBST for 1 hr at room temperature. Membranes were then incubated with primary antibodies in 5% non-fat milk TBST overnight at 4°C, followed by washing with TBST three times, 10 min each. Membranes were incubated with the corresponding secondary antibodies in 5% non-fat milk for 2 hr at room temperature. Membranes were then washed three more times, 10 min each, with TBST before being visualized using chemiluminescence. Antibodies used were polyclonal rabbit anti-VGLUT1 (135302; Synaptic Systems), polyclonal rabbit anti-VGLUT2 (135402; Synaptic Systems), monoclonal mouse anti-SYP (101011; Synaptic Systems), polyclonal rabbit anti-SYP (5461; Cell Signaling Technology), monoclonal mouse anti-VAMP2 (104211; Synaptic Systems), monoclonal mouse anti-PSD95 (75-028; NeuroMab), monoclonal mouse anti-Flag (F9291; Sigma-Aldrich), monoclonal rabbit anti-CALR (12238, Cell Signaling Technology), polyclonal rabbit anti-GM130 (12480, Cell Signaling Technology), and polyclonal rabbit anti-Chg A (259003, Synaptic Systems).
 
-## Electron microscopy
+### Electron microscopy
 
 Antibody-conjugated dynabeads were pelleted by centrifugation and subsequently resuspended in 1.5% agarose in 0.1 M phosphate buffer (PB, pH 7.4). Small agarose blocks were cut out, fixed overnight at 4°C using 4% glutaraldehyde in 0.1 M PB at pH 7.4, followed by post-fixation of 1% osmium tetroxide for 1 hr and treatment of 0.25% uranyl acetate overnight at 4°C. The samples were then dehydrated in a graded ethanol series (20%, 50%, 70%, 80%, 90%, 95%, 100%, 100%) at 8 min per step and then changed to propylene oxide for 10 min. The cells were then infiltrated in Epon 812 resin using a 1:1 ratio of propylene oxide and resin for 4 hr, followed by 100% resin twice at 4 hr each; finally, the beads were placed in fresh resin and polymerized in a vacuum oven at 65°C for 24 hr. After polymerization, ultrathin sections were cut and stained with lead citrate.
 
@@ -158,24 +559,24 @@ For APEX2-based EM labeling, the procedure was adapted from previous study (Mart
 
 The embedded cells were cut into 60 nm ultrathin sections using a diamond knife and imaged using a FEI-Tecnai G2 20 TWIN transmission electron microscope operated at 120 kV.
 
-## KO cell line establishment and validation
+### KO cell line establishment and validation
 
 The SLC35A2KO cell line was constructed by transient co-transfection of plasmids expressing mCherry and sgRNAs targeting the SLC35A2 gene, and a plasmid expressing spCas9. The sgRNA sequences were as follows: atgccaacatggcagcggtt, ggtggttccaccgcggcgcc, ggcggtttccgcgggtgcat, and gactgtctcacccgcactgg. Single cells with high mCherry signal were sorted and seeded in 96-well plates 1 week after transfection. After cell expansion, the SLC35A2KO DNA fragments of target loci were independently amplified by PCR with a primer pair (SLC35A2seqF: tttaggagcggaggagaaaag; SLC35A2seqR: ctctcagaatgttctcttcccc). The purified PCR products were sequenced, and the insertions and deletions (indels) within the SLC35A2 gene caused by sgRNA/Cas9 were analyzed with an online tool (http://crispid.gbiomed.kuleuven.be/) (Dehairs et al., 2016). Functional validation was done by radioactive transport assay.
 
-## Organelle fractionation
+### Organelle fractionation
 
 Stable cell lines grown in two 15 cm dishes were washed twice with either ice-cold KPBS (for metabolite detection) or sucrose buffer containing 0.32 M sucrose and 4 mM HEPES-NaOH (pH 7.4) (for the uptake assay), and then gently scraped and collected into 1 ml of the corresponding buffer. The cells were then homogenized using a ball-bearing homogenizer (10 μm clearance). The homogenate was centrifuged at 13,000 g for 10 min to remove the nuclei and cellular debris. The resulting supernatant was centrifuged at 200,000 g for 25 min. For metabolite profiling, the pellet was washed three times in ice-cold KPBS, and the metabolites were extracted in 80% methanol, freeze-dried, and stored at −80°C. For the transport assay, the pellet was resuspended in uptake assay buffer containing 0.32 M sucrose, 2 mM KCl, 2 mM NaCl, 4 mM MgSO4, and 10 mM HEPES-KOH (pH 7.4), aliquoted, and stored at −80°C.
 
 For SV fractionation, the procedure was adapted from previous study (Huttner et al., 1983) (see also Figure 2—figure supplement 2). Briefly, mouse brains were gently homogenized in sucrose buffer containing 0.32 M sucrose and 4 mM HEPES-NaOH (pH 7.4) on ice. The homogenate was centrifuged at 800 g for 10 min to remove the nuclei and cellular debris. The resulting supernatant (S1) was collected and centrifuged at 9200 g for 15 min. The pellet (P2) was resuspended in sucrose buffer and recentrifuged at 10,200 g for 15 min. The resulting pellet (P2’) was resuspended in 1 ml sucrose buffer and then added with 9 ml ice-cold water. After three strokes, the lysate was immediately added with 80 μl 1M HEPES-NaOH buffer (pH 7.4) and kept on ice for 30 min. The lysate was then centrifuged at 25,000 g for 20 min. The resulting supernatant (LS1) was further centrifuged at 165,000 g for 2 hr to get a pellet (LP2) of crude SVs.
 
-## Targeted metabolite profiling
+### Targeted metabolite profiling
 
 Samples were analyzed using a TSQ Quantiva Ultra triple-quadrupole mass spectrometer coupled with an Ultimate 3000 UPLC system (Thermo Fisher Scientific) equipped with a heated electrospray ionization probe. Chromatographic separation was achieved using gradient elution on a Hypercarb PGC column (2.1 × 100 mm, 1.7 μm, Thermo Fisher Scientific). Mobile phase A consisted of 5 mM ammonium bicarbonate dissolved in pure water, and mobile phase B consisted of 100% acetonitrile. A 25 min gradient with a flow rate of 250 μl/min was applied as follows: 0–1.2 min, 4% B; 1.2–19 min, 4–35% B; 19–20 min, 35–98% B; 20–22 min, 98% B; 22–25 min 4% B. The column chamber and sample tray were kept at 45°C and 10°C, respectively. Data were acquired using selected reaction monitoring in negative switch ion mode, and optimal transitions are reported as the reference. Both the precursor and fragment ion fractions were collected at a resolution of 0.7 FWHM. The source parameters were as follows: spray voltage: 3000 V; ion transfer tube temperature: 350°C; vaporizer temperature: 300°C; sheath gas flow rate: 35 arbitrary units; auxiliary gas flow rate: 12 arbitrary units; collision-induced dissociation gas pressure: 1.5 mTorr.
 
-## Uptake assay
+### Uptake assay
 
 For the radiolabeled substrate transport assay, 20 μg of the membrane fraction was incubated with the indicated concentration of radiolabeled substrate at 37°C for 5 min (unless otherwise). The reaction was terminated using the same volume of ice-cold assay buffer. The samples were then trapped on a 0.7 μm GF/F glass fiber filter (Whatman) and washed twice. The radioactivity retained on the filter was measured using liquid scintillation.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Imaging data from cultured cells were processed using ImageJ software (NIH). SV proteomics data were analyzed using MaxQuant_1.6.10.43 (MPI). The metabolite profiling data were analyzed and quantified using Xcalibur version 3.0.63 (Thermo Fisher Scientific). Sequence data for generating the phylogenic tree of were analyzed by MEGA-X. Cartoons created using BioRender (http://www.biorender.com). All summary data are presented as the mean ± s.e.m., and group data were compared using the Student’s t-test or the Kruskal–Wallis ANOVA test; *p<0.05, **p<0.01, ***p<0.001, and n.s., not significant (p>0.05).

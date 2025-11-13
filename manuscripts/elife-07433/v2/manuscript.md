@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.07433.001 Most life forms on Earth are supported by solar energy harnessed by oxygenic photosynthesis. In eukaryotes, photosynthesis is achieved by large membrane-embedded super-complexes, containing reaction centers and connected antennae. Here, we report the structure of the higher plant PSI-LHCI super-complex determined at 2.8 Å resolution. The structure includes 16 subunits and more than 200 prosthetic groups, which are mostly light harvesting pigments. The complete structures of the four LhcA subunits of LHCI include 52 chlorophyll a and 9 chlorophyll b molecules, as well as 10 carotenoids and 4 lipids. The structure of PSI-LHCI includes detailed protein pigments and pigment–pigment interactions, essential for the mechanism of excitation energy transfer and its modulation in one of nature's most efficient photochemical machines. DOI: http://dx.doi.org/10.7554/eLife.07433.001
+Most life forms on Earth are supported by solar energy harnessed by oxygenic photosynthesis. In eukaryotes, photosynthesis is achieved by large membrane-embedded super-complexes, containing reaction centers and connected antennae. Here, we report the structure of the higher plant PSI-LHCI super-complex determined at 2.8 Å resolution. The structure includes 16 subunits and more than 200 prosthetic groups, which are mostly light harvesting pigments. The complete structures of the four LhcA subunits of LHCI include 52 chlorophyll a and 9 chlorophyll b molecules, as well as 10 carotenoids and 4 lipids. The structure of PSI-LHCI includes detailed protein pigments and pigment–pigment interactions, essential for the mechanism of excitation energy transfer and its modulation in one of nature's most efficient photochemical machines.
 
 ## Introduction
 
@@ -24,37 +24,37 @@ Oxygenic photosynthesis evolved over 3 billion years ago in cyanobacteria (Blank
 
 ## Results and discussion
 
-## Structure determination
+### Structure determination
 
-The crystal structure of plant PSI was first reported at 4.4 Å resolution (
+The crystal structure of plant PSI was first reported at 4.4 Å resolution (Ben-Shem et al., 2003) and has been improved up to 3.3 Å resolution in the last decade (PDB 2WSC). This PSI preparation was limited to pea plants from the variety Alaska, and good crystals were hard to come by (Amunts et al., 2007, 2010). Therefore, we screened for new robust crystals that are abundant, stable, and much more uniform. The new crystals could be obtained from several pea plants varieties, a large proportion of them diffracted to 3 Å with several yielding higher resolutions. In contrast to the P21 symmetry of the previous crystal, the current crystal belonged to higher symmetry space group P212121. The organization of the PSI unit within the new crystal was also markedly different. In the P21 crystal the PSI-LHCI complex was organized as parallel layers in which the iron-sulfur clusters FX, FA and FB face the adjacent P700 (Figure 1A). The complexes inside the new crystal lattice were serially arranged in a crissed-crossed manner in which the polarity of each PSI unit contrasts another (Figure 1B). Consequently, the current crystals generated no net voltage (data not shown), whereas a voltage of up to 50 V was recorded (Toporik et al., 2012) upon illumination of dried P21 crystals placed on electron conductive material.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig1-v2.jpg)
 
-**Figure 1.:** (A) The previous PSI-LHCI crystal in the P21 space group with a layered arrangement of the complex. This arrangement is capable of generating extremely high voltages upon illumination. (B) The new crystal lattice in the P212121 space group. Iron sulfur clusters are colored in red and the pigments of the internal electron transport chain in magenta (chlorophylls) and blue (quinones). PSI-LHCI complexes are arranged in a crissed-crossed manner from left to right.DOI: http://dx.doi.org/10.7554/eLife.07433.003
+**Figure 1.:** (A) The previous PSI-LHCI crystal in the P21 space group with a layered arrangement of the complex. This arrangement is capable of generating extremely high voltages upon illumination. (B) The new crystal lattice in the P212121 space group. Iron sulfur clusters are colored in red and the pigments of the internal electron transport chain in magenta (chlorophylls) and blue (quinones). PSI-LHCI complexes are arranged in a crissed-crossed manner from left to right.
 
-The extreme size and complexity of the PSI assembly was a major obstacle for accurate and bias-free modeling. The best way to eliminate model bias in X-ray crystallography is to utilize experimentally measured phase information. Using the new, highly stable crystal form of PSI we were able to measure the weak native anomalous signal from the iron, sulfur, and phosphate atoms in the complex. Starting with a minimal model containing only the three natively bound iron-sulfur clusters, the entire structure was eventually re-built with more than 35,000 atoms (
+The extreme size and complexity of the PSI assembly was a major obstacle for accurate and bias-free modeling. The best way to eliminate model bias in X-ray crystallography is to utilize experimentally measured phase information. Using the new, highly stable crystal form of PSI we were able to measure the weak native anomalous signal from the iron, sulfur, and phosphate atoms in the complex. Starting with a minimal model containing only the three natively bound iron-sulfur clusters, the entire structure was eventually re-built with more than 35,000 atoms (Figure 2 and Figure 2—figure supplement 1, see ‘Material and methods’ section for details).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig2-v2.jpg)
 
-**Figure 2.:** (A) A view from the stromal side of the membrane of PSI-LHCI with the PsaL subunit pointing up. The PsaF and PsaJ subunits connecting in the middle of LHCI are colored in magenta and green, respectively. The three subunits of the stromal ridge, PsaC, PsaD, and PsaE, can be seen in the middle of the complex, colored cyan, pink, and blue, respectively. The two iron-sulfur clusters of PsaC can be distinguished as yellow and orange clusters in the middle of the complex. (B) Pigment organization in PSI-LHCI. The central pigments of the internal electron transport chain are colored red, chlorophylls of the core antenna green, chlorophyll a in LHCI in cyan, and chlorophyll b in magenta. Carotenoids, which are distributed throughout the complex, are colored in blue and lipids in key connecting points and conserved positions in the core, in orange.DOI: http://dx.doi.org/10.7554/eLife.07433.004
+**Figure 2.:** (A) A view from the stromal side of the membrane of PSI-LHCI with the PsaL subunit pointing up. The PsaF and PsaJ subunits connecting in the middle of LHCI are colored in magenta and green, respectively. The three subunits of the stromal ridge, PsaC, PsaD, and PsaE, can be seen in the middle of the complex, colored cyan, pink, and blue, respectively. The two iron-sulfur clusters of PsaC can be distinguished as yellow and orange clusters in the middle of the complex. (B) Pigment organization in PSI-LHCI. The central pigments of the internal electron transport chain are colored red, chlorophylls of the core antenna green, chlorophyll a in LHCI in cyan, and chlorophyll b in magenta. Carotenoids, which are distributed throughout the complex, are colored in blue and lipids in key connecting points and conserved positions in the core, in orange.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Positions of the native sulfurs, phosphates (both in yellow), and iron atoms (orange) identified in the PSI-LHCI complex based on the measured anomalous signal. (B) Electron density maps. The 2F − Fc map in blue, contoured at 1.3 rmsd, and an anomalous difference map in red, contoured at 2 rmsd around the phosphate atom of lipid 7001 bound by PsaA. Residues 577:580 from PsaA are also shown.DOI: http://dx.doi.org/10.7554/eLife.07433.005
+**Figure 2—figure supplement 1.:** (A) Positions of the native sulfurs, phosphates (both in yellow), and iron atoms (orange) identified in the PSI-LHCI complex based on the measured anomalous signal. (B) Electron density maps. The 2F − Fc map in blue, contoured at 1.3 rmsd, and an anomalous difference map in red, contoured at 2 rmsd around the phosphate atom of lipid 7001 bound by PsaA. Residues 577:580 from PsaA are also shown.
 
-## Core subunits: PC binding site and implications for the state II PSI complex
+### Core subunits: PC binding site and implications for the state II PSI complex
 
 The structure of plant PSI includes 12 core subunits bound with four light-harvesting proteins comprising the LHCI antenna complex. The entire complex contains 214 prosthetic groups, including 156 chlorophylls (nine assigned as chlorophyll b), 32 carotenes, and 14 lipids, many of them located at key contact points of the complex.
 
-The core photosynthetic reaction centers have remained virtually unchanged over the entire 2 billion years of their evolution (
+The core photosynthetic reaction centers have remained virtually unchanged over the entire 2 billion years of their evolution (Jordan et al., 2001; Ben-Shem et al., 2003; Amunts et al., 2010). Instead, the evolution of PSI is marked by the loss and gain of whole subunits from the complex (Scheller et al., 2001; Nelson, 2011; Nelson and Junge, 2015). Compared to our previous model (PDB 2WSC), the root-mean-square deviation (rmsd) between the plant and cyanobacterial core (PDB 1JB0) decreased from 1.1 Å to 0.55 Å. The majority of the changes made in the core subunits involved the configuration of extramembrane loops, which now closely resemble the cyanobacterial configuration. The exceptions to this role are found at the anchor points of LHCI to the core (discussed below) and at the interfaces between plant-specific subunits, such as the PsaH–PsaL interaction (Figure 3A). The dramatic change from trimer to monomeric organization that occurred in eukaryotes, was triggered by the addition of the PsaH subunit (Ben-Shem et al., 2003). A new configuration for PsaH shows that this subunit binds four other core subunits. Starting from the stromal side of the membrane, the N-terminus is tightly tucked between the N-terminus of PsaD and a eukaryotic-specific loop in the PsaL subunit. PsaH then enters the membrane surrounding PsaL to prevent PSI trimerization and associates with PsaI and PsaB via mostly hydrophobic interactions (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig3-v2.jpg)
 
-**Figure 3.:** (A) PsaL is presented in blue, and the path of the PsaH subunit (red) travels through its extended, eukaryotic specific, loop. The new PsaH chlorophyll (green, marked as H1) connects to the PsaL-coordinated chlorophyll and carotenoid (green and pink), as well as an additional chlorophyll trimer (middle left, marked as PsaA trimer), which is proposed to connect PSI to LHCII in state II. (B) A luminal view of the PSI surface at the PC binding site. The two hydrophobic helices are colored in grey (PsaA) and light blue (PsaB). The luminal PsaA loop is highlighted on the background of the entire PsaA subunit. All the ligands (with the exception of P700) are not shown. (C and D) Side by side view of the cyanobacterial (C) and plant (D) PC binding sites showing the extended PsaF helices that limit access from the membrane plane and the N terminus of PsaH (red), which parallels the configuration of the PsaA luminal loop. The approximate location of PC is indicated in blue.DOI: http://dx.doi.org/10.7554/eLife.07433.006
+**Figure 3.:** (A) PsaL is presented in blue, and the path of the PsaH subunit (red) travels through its extended, eukaryotic specific, loop. The new PsaH chlorophyll (green, marked as H1) connects to the PsaL-coordinated chlorophyll and carotenoid (green and pink), as well as an additional chlorophyll trimer (middle left, marked as PsaA trimer), which is proposed to connect PSI to LHCII in state II. (B) A luminal view of the PSI surface at the PC binding site. The two hydrophobic helices are colored in grey (PsaA) and light blue (PsaB). The luminal PsaA loop is highlighted on the background of the entire PsaA subunit. All the ligands (with the exception of P700) are not shown. (C and D) Side by side view of the cyanobacterial (C) and plant (D) PC binding sites showing the extended PsaF helices that limit access from the membrane plane and the N terminus of PsaH (red), which parallels the configuration of the PsaA luminal loop. The approximate location of PC is indicated in blue.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) monomeric LHCII is shown in magenta near the PsaL subunit, juxtaposed to PsaK. The region blown up in B is circled black. (B) This arrangement brings sites 5 and 12 from Lhcb next to the PsaA-coordinated chlorophyll trimer.DOI: http://dx.doi.org/10.7554/eLife.07433.007
+**Figure 3—figure supplement 1.:** (A) monomeric LHCII is shown in magenta near the PsaL subunit, juxtaposed to PsaK. The region blown up in B is circled black. (B) This arrangement brings sites 5 and 12 from Lhcb next to the PsaA-coordinated chlorophyll trimer.
 
 Eukaryotes can modulate the distribution of excitation energy transfer between their two photosystems via a mechanism called state transitions (Lunde et al., 2000; Bellafiore et al., 2005; Rochaix, 2011; Rochaix et al., 2012). Under state II conditions, PSI associates with a mobile pool of the LHCII antennae, which increases its absorbance cross-section (Kargul et al., 2005; de Bianchi et al., 2010). Genetic studies suggest that PsaH, PsaL, and PsaK play important roles in this process (Scheller et al., 2001; Zhang and Scheller, 2004). Electron microscopy studies have identified the binding site of the additional antennae complexes along the PsaL/PsaH-PsaK side (Kargul et al., 2005; Kouril et al., 2005). A new chlorophyll bound by PsaH was identified at the current resolution. This new chlorophyll, together with pigments bound by PsaL, probably participates in energy transfer into the core (Figure 3A), suggesting that PsaH is not simply a ‘landing pad’ for LHCII, but is also important for energy transfer into the core during state II. Additional pigments bound by PsaA in close proximity to subunit PsaK (the structure of which is now almost completely defined) provided the first accurate description of this binding site and suggest a mechanism for energy transfer into the core antenna through the PsaK side (Figure 3—figure supplement 1).
 
@@ -62,47 +62,47 @@ On the luminal side of the membrane, the new position of the N-terminus of PsaH 
 
 Three elements make up the PC binding site: the first is a positive patch located along the helix-turn-helix N-terminal domain of PsaF (Hippler et al., 1997, 1998; Ben-Shem et al., 2003). The second element is a hydrophobic patch composed of two parallel helices in PsaA and PsaB (Figure 2B) (Sommer et al., 2006; Kuhlgert et al., 2012). The third conserved feature of the PC binding site is a PsaA luminal loop protruding from the generally flat luminal surface of PSI. This loop is found in both plants and cyanobacteria PSI; the only exception being sequences from marine Prochlorococcus and their phages (Mazor et al., 2012). As seen in Figure 3C,D, the binding site of the cyanobacterial and plant complexes are similar. However, it is clear that the plant binding site is buried deeper in the complex, this is achieved by the extension of the PsaF N-terminal and by the new position of the N-terminus of PsaH, which forms a loop mirroring the conformation of the conserved luminal PsaA loop, suggesting a direct role for PsaH in PC binding.
 
-## Core antenna, red pigments, and excitation energy transfer
+### Core antenna, red pigments, and excitation energy transfer
 
-The PSI core is a highly efficient hub onto which diverse antennae systems connect such as phycobilisomes and IsiA-like assemblies in cyanobacteria and red algae and LHC type antennae in eukaryotes (
+The PSI core is a highly efficient hub onto which diverse antennae systems connect such as phycobilisomes and IsiA-like assemblies in cyanobacteria and red algae and LHC type antennae in eukaryotes (Berera et al., 2009; Engelken et al., 2010; Nelson and Junge, 2015; Wahadoszamen et al., 2015). Remarkably, the core pigment organization is conserved across kingdoms despite this diversity in connected antenna (Amunts et al., 2007; Busch and Hippler, 2011; Croce and van Amerongen, 2013), which suggests that the connection points between the core and the antennae are conserved. The existence of red-absorbing pigments (or ‘red traps’) is a general property of PSI (Morosinotto et al., 2005; Wientjes et al., 2012). These pigments affect the rate of trapping in PSI and can affect the path of excitation migration in the complex. Most of the eukaryotic red pigments have been shown to reside at LHCI. However, red pigments may be lost from the core complex during the isolation of LHCI. The first high-resolution PSI structure from thermophilic cyanobacteria revealed the organization of the core antenna (Jordan et al., 2001). A stacked chlorophyll trimer supported by an extended loop in PsaB was the best candidate for one of the strong red absorbers in this complex (Jordan et al., 2001). PsaB sequences from eukaryotes and many cyanobacteria lack this extended loop, resulting in this chlorophyll trimer being lost, as has been shown in the plant and mesophilic PSI structures (Amunts et al., 2010; Mazor et al., 2014). At the current resolution, we observed new core chlorophyll bound between PsaG and Lhca1 and a newly discovered lipid (Figure 4A). This new chlorophyll restores the stacked chlorophyll trimer independent of the shortened PsaB loop and is responsible for one of the connection points between the core complex and the LHCI antenna, with a Mg–Mg distance of 12.5 Å between it and chlorophyll 1010 in Lhca1 (the nomenclature for LHCII is used to describe Lhcas [Standfuss et al., 2005]). On the stromal side of the membrane, an additional chlorophyll trimer first discovered in Synechocystis is also responsible for an antenna attachment point with a Mg–Mg distance of 13.7 Å between the core chlorophyll A40 and chlorophyll 1005 in Lhca1 (Figure 4—figure supplement 1). We suggest that chlorophyll trimers located at the periphery of the core antenna are extremely important for antenna attachment and are probably general attachment points to the core that are utilized not only by eukaryotes, but also by other antenna systems in cyanobacteria.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig4-v2.jpg)
 
-**Figure 4.:** (A) The configuration of the PsaG-Lhca1 pigment connection shown from the luminal side of the membrane. The new stacked chlorophyll trimer (numbered B1231, B1232 and G1003) is shown. The N-terminus of PsaG (dark red) supports one of the chlorophylls making up this trimer. The entire trimer is connected with chlorophyll 10 (numbered 1010) in Lhca1 (blue). (B) The second LHCI-PSI connection between Lhca1 and PsaF (magenta) on the luminal side of the membrane is bound by a lipid (orange). (C) The Lhca3 (red) -PsaA connection. Two chlorophyll pairs mediate this interaction. At the lumen face, 13.7 Å separate chlorophyll 3010 from chlorophyll 1114. On the stromal side, chlorophyll 3005 and chlorophyll 1108 are 16.5 Å apart. (D) Lhca2 (blue)—PsaJ (green) connecting chlorophylls.DOI: http://dx.doi.org/10.7554/eLife.07433.008
+**Figure 4.:** (A) The configuration of the PsaG-Lhca1 pigment connection shown from the luminal side of the membrane. The new stacked chlorophyll trimer (numbered B1231, B1232 and G1003) is shown. The N-terminus of PsaG (dark red) supports one of the chlorophylls making up this trimer. The entire trimer is connected with chlorophyll 10 (numbered 1010) in Lhca1 (blue). (B) The second LHCI-PSI connection between Lhca1 and PsaF (magenta) on the luminal side of the membrane is bound by a lipid (orange). (C) The Lhca3 (red) -PsaA connection. Two chlorophyll pairs mediate this interaction. At the lumen face, 13.7 Å separate chlorophyll 3010 from chlorophyll 1114. On the stromal side, chlorophyll 3005 and chlorophyll 1108 are 16.5 Å apart. (D) Lhca2 (blue)—PsaJ (green) connecting chlorophylls.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** The second chlorophyll trimer connecting Lhca1 to the core on the stromal side of the membrane bound by a short PsaB helix (teal).DOI: http://dx.doi.org/10.7554/eLife.07433.009
+**Figure 4—figure supplement 1.:** The second chlorophyll trimer connecting Lhca1 to the core on the stromal side of the membrane bound by a short PsaB helix (teal).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** However the polarity of the transmembrane helices is reversed, as a result the N-terminus which was protruding outward from the complex now faces LHCI. Three chlorophylls, a carotene and a lipid are coordinated by this subunit in the current structure.DOI: http://dx.doi.org/10.7554/eLife.07433.010
+**Figure 4—figure supplement 2.:** However the polarity of the transmembrane helices is reversed, as a result the N-terminus which was protruding outward from the complex now faces LHCI. Three chlorophylls, a carotene and a lipid are coordinated by this subunit in the current structure.
 
 In contrast to the previous plant structures, which included a small pool of ‘Gap chlorophylls’, only six pigment pairs connect LHCI to the core antenna in the current structure. Lhca1 is the main connector for excitation transfer, harboring three chlorophylls that are within 14 Å of reaction center pigments (Figure 4A,B and Figure 4—figure supplement 1). This close proximity ensures efficient and fast energy transfer. Surprisingly, Lhca3 is also one of the main connection points with two such pairs (Figure 4C). The final excitonic connection between PSI to LHCI is located between chlorophyll J1302 bound by PsaJ and chlorophyll 2010 (A chlorophyll b molecule). The Mg–Mg distance of this pair is quite large (17.6 Å) however, since the gap between LHCI and PSI allows for some movement, this distance can change to provide an efficient link between the core and LHCI (Figure 4D). To summarize, the extremely fast and efficient energy transfer processes that typify PSI-LHCI occurs through only six pairs of pigment molecules located at three sites. These sites connect to the core antennae at the PsaG and PsaK poles through Lhca1 and Lhca3, with Lhca2 playing a relatively minor role.
 
-## The structure of the LHCI complex
+### The structure of the LHCI complex
 
 Our structure includes the fully modeled LHCI belt with nearly complete structures of all four Lhca proteins. These structures reveal the essential features of the specific interactions between: each Lhca protein and the core; the red chlorophyll assembly present in Lhca4 and Lhca3; and a previously unknown pigment binding site, which is the probable site for the recently discovered non-photochemical quenching (NPQ) at the luminal gap region of LHCI (de Bianchi et al., 2010; Ballottari et al., 2014).
 
-## Overall view
+### Overall view
 
-The LHCI belt is located on the PsaF side of the PSI core. On the stromal face of the membrane, the four conserved N-terminal domains connect each Lhca subunit to its neighbor through interaction with an Lhca-specific loop (loop 23) (
+The LHCI belt is located on the PsaF side of the PSI core. On the stromal face of the membrane, the four conserved N-terminal domains connect each Lhca subunit to its neighbor through interaction with an Lhca-specific loop (loop 23) (Figure 5A) that follows immediately after the second transmembrane helix and supports a new chlorophyll site (numbered 16) in Lhca4 and Lhca2 (Figure 6A,B). Lhca1, which interacts with PsaG in the core complex, completely lacks this loop and instead contains a short, positively charged linker in this region (Figure 5A). One of the major changes in the structure of LHCI is the reversal in the polarity of PsaG. While PsaG occupies roughly an equivalent position compared to previous PSI-LHCI structures, the first transmembrane helix contacts Lhca1 while the second one contacts PsaB (Figure 4—figure supplement 2). Connections between each Lhca and the core are mediated by small regions immediately preceding the first transmembrane helix and are stabilized by salt bridges between negatively charged residues positioned at the membrane entrance point and a conserved arginine located at a helix turn below them (Figure 5A). Additional Lhca–Lhca interactions are provided by a short C-terminal segment on the luminal side that binds helix 2 as it exits the membrane, mainly via hydrophobic interactions (Figure 5—figure supplement 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig5-v2.jpg)
 
-**Figure 5.:** (A) A view from the stromal side of the membrane of LHCI. Each Lhca connects to the next one through its conserved N-terminal domain (marked N). All connections to the core are mediated by the short region preceding the entrance of the first transmembrane helix into the membrane (marked by a circle). The extended loop (L23) is conserved in all Lhcas except Lhca1. (B) Electrostatic interactions determine the specificity of the Lhca4/5 binding site to PsaF. The conserved E84-R209 interaction occurs within the PsaF (magenta) domain, which is partially membrane-buried, and Lhca4 (raspberry). (C) Superposition of Lhca3 (red) and LHCII (cyan). Lhca3 interacts with the core via contacts with PsaA and PsaK through short extension (red circle) or deletion (green circle) in the otherwise highly conserved N terminus. The extension of loop 23 is also seen at the bottom left corner of the image.DOI: http://dx.doi.org/10.7554/eLife.07433.011
+**Figure 5.:** (A) A view from the stromal side of the membrane of LHCI. Each Lhca connects to the next one through its conserved N-terminal domain (marked N). All connections to the core are mediated by the short region preceding the entrance of the first transmembrane helix into the membrane (marked by a circle). The extended loop (L23) is conserved in all Lhcas except Lhca1. (B) Electrostatic interactions determine the specificity of the Lhca4/5 binding site to PsaF. The conserved E84-R209 interaction occurs within the PsaF (magenta) domain, which is partially membrane-buried, and Lhca4 (raspberry). (C) Superposition of Lhca3 (red) and LHCII (cyan). Lhca3 interacts with the core via contacts with PsaA and PsaK through short extension (red circle) or deletion (green circle) in the otherwise highly conserved N terminus. The extension of loop 23 is also seen at the bottom left corner of the image.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Short sequences immediately preceding the insertion point of the second transmembrane helix in the LHC fold (marked by a red spot) interact with the C-terminal sequences of the adjacent subunit (marked with a blue spot). Numbers indicate the sequence range shown in bold for the respective Lhca subunit.DOI: http://dx.doi.org/10.7554/eLife.07433.012
+**Figure 5—figure supplement 1.:** Short sequences immediately preceding the insertion point of the second transmembrane helix in the LHC fold (marked by a red spot) interact with the C-terminal sequences of the adjacent subunit (marked with a blue spot). Numbers indicate the sequence range shown in bold for the respective Lhca subunit.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig6-v2.jpg)
 
-**Figure 6.:** (A and B) Structure of the Lhca1/4 (A) and Lhca2/3 (B) heterodimer as viewed from the membrane plane extrinsic to the PSI-LHCI complex. The conserved connecting carotenoid in position L3 (pink) serves a structural role, connecting the two subunits of the dimer by linking chlorophyll 6 (bottom right) to chlorophyll 9 (upper left corner). The position of the new chlorophyll site bound by loop 23 of Lhca2 (numbered 2016) is also shown. (C and D) A new chlorophyll site connects the pigments of the heterodimer. Chlorophyll 17 (numbered 4017 or 3017) is shown as viewed from the luminal side of the membrane. The connections between the red pigment cluster on the right and position 9 in the adjacent subunit are marked with grey lines. The new carotenoid site, L5, is shown in C. This site lines the gap between LHCI and PSI and is therefore easily interchangeable. The distance between L5 and of chlorophylls 17 π systems is 3.7 Å. (E) Lhca3 is colored in red. A short helix segment from the first transmembrane helix is shown as sticks. Chlorophyll 3005 is part of the red-absorbing dimer. LHCII (PDB: 2BHW) was superimposed on the structure and shown in faint grey. Chlorophyll 612 is shown as a ring. The coordinating side chain was changed from histidine 68 in LHCII to asparagine 109 in Lhca3. Another important change is the leucine to glycine modification at position 105, which allows chlorophyll 3005 to alter its ring orientation by approximately 12°. (F) The same site in Lhca4 shown in a similar fashion with Lhca4 colored in raspberry. The same basic coordination is observed, though the ring tilt is smaller because of the alanine occupying position 95.DOI: http://dx.doi.org/10.7554/eLife.07433.013
+**Figure 6.:** (A and B) Structure of the Lhca1/4 (A) and Lhca2/3 (B) heterodimer as viewed from the membrane plane extrinsic to the PSI-LHCI complex. The conserved connecting carotenoid in position L3 (pink) serves a structural role, connecting the two subunits of the dimer by linking chlorophyll 6 (bottom right) to chlorophyll 9 (upper left corner). The position of the new chlorophyll site bound by loop 23 of Lhca2 (numbered 2016) is also shown. (C and D) A new chlorophyll site connects the pigments of the heterodimer. Chlorophyll 17 (numbered 4017 or 3017) is shown as viewed from the luminal side of the membrane. The connections between the red pigment cluster on the right and position 9 in the adjacent subunit are marked with grey lines. The new carotenoid site, L5, is shown in C. This site lines the gap between LHCI and PSI and is therefore easily interchangeable. The distance between L5 and of chlorophylls 17 π systems is 3.7 Å. (E) Lhca3 is colored in red. A short helix segment from the first transmembrane helix is shown as sticks. Chlorophyll 3005 is part of the red-absorbing dimer. LHCII (PDB: 2BHW) was superimposed on the structure and shown in faint grey. Chlorophyll 612 is shown as a ring. The coordinating side chain was changed from histidine 68 in LHCII to asparagine 109 in Lhca3. Another important change is the leucine to glycine modification at position 105, which allows chlorophyll 3005 to alter its ring orientation by approximately 12°. (F) The same site in Lhca4 shown in a similar fashion with Lhca4 colored in raspberry. The same basic coordination is observed, though the ring tilt is smaller because of the alanine occupying position 95.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Shown is the chlorophyll b occupying position 10 from Lhca2. Simulated annealing omit maps were calculated on a model which lacked the formyl-7 group (shown in the image). All b factors of the model were reset to the Wilson B factor, followed by a single round of simulated annealing and refinement using phenix.refine. The difference map (green) is contoured at 2.5 rmsd and the 2Fo − Fc map (blue) is contoured at 1.2 rmsd.DOI: http://dx.doi.org/10.7554/eLife.07433.014
+**Figure 6—figure supplement 1.:** Shown is the chlorophyll b occupying position 10 from Lhca2. Simulated annealing omit maps were calculated on a model which lacked the formyl-7 group (shown in the image). All b factors of the model were reset to the Wilson B factor, followed by a single round of simulated annealing and refinement using phenix.refine. The difference map (green) is contoured at 2.5 rmsd and the 2Fo − Fc map (blue) is contoured at 1.2 rmsd.
 
 Genetic analysis in plants has revealed that each subunit has a specific binding site and, with the exception of the Lhca4-Lhca5 pair, the various Lhcas are not interchangeable (Lucinski et al., 2006; Wientjes et al., 2009). The specific binding sites are identified in the current structure. At the PsaG pole of LHCI, helix C of Lhca1 interacts with the first transmembrane helix of PsaG. Additional protein–protein interactions occurred between a stromal loop of PsaB (aa 307–320) and the N-terminus of Lhca1 (Figure 5A).
 
@@ -110,7 +110,7 @@ The next contact point between LHCI and the core occurs between the N-terminus o
 
 The main contact point of Lhca3 is in the N-terminus of PsaA, which contacts a small patch just before helix 1 enters the membrane as in all other Lhcas (Figure 5C). The structure shows that this site is the main determinant of Lhca binding to the core. In contrast to the previous PSI-LHCI model, Lhca3 follows the general fold of LHCII (rmsd 0.8 Å between the two apoproteins). Departures from the LHCII fold are seen in key contact points where small loops were extended or deleted from the otherwise conserved N-terminus domain to facilitate protein–protein interactions with the core (Figure 5C).
 
-## Energy transfer and photo-protection mechanisms in Lhca1/4 Lhca2/3 heterodimers
+### Energy transfer and photo-protection mechanisms in Lhca1/4 Lhca2/3 heterodimers
 
 All four Lhcas are remarkably similar to each other and to LHCII. Most of the differences between them can be explained by their interaction partner, such as the loss of loop 23 in Lhca1 due to its binding to PsaG.
 
@@ -124,11 +124,11 @@ Photosynthetic eukaryotes respond to high light conditions by decreasing the eff
 
 The main excitonic connections in the two Lhca dimers appear to be intimately linked to NPQ. A new chlorophyll site (numbered 17) coordinated by a histidine residue (histidine 150 in Lhca4 and histidine 170 in lhca3) is located at the heterodimer interface of both Lhca1/4 and Lhca2/3. Site 17 links the putative red chlorophyll pair with site 9 of the adjacent complex. In the Lhca1/4 interface, a new carotenoid site (numbered 4505 or L5) forms co-planar π systems (plane to plane distance 3.7 Å) with the ring of chlorophyll 4017, positioning it in a configuration that should provide efficient photo-protection from chlorophyll triplets (Figure 6C,D). We propose that this is also the site of NPQ in LHCI, and this fits well with the experimental observation (Standfuss et al., 2005) that the zeaxanthin responsible for NPQ is located near the red pair in the PSI-LHCI luminal gap region.
 
-In response to lumen acidification, zeaxanthin is synthesized from violaxanthin by violaxanthin deepoxidase (VDE) as part of the xanthophyll cycle. Both the activity and location of VDE are regulated by pH changes (
+In response to lumen acidification, zeaxanthin is synthesized from violaxanthin by violaxanthin deepoxidase (VDE) as part of the xanthophyll cycle. Both the activity and location of VDE are regulated by pH changes (Ballottari et al., 2014). At low pH, VDE is activated and binds the luminal side of the membrane, gaining access to its substrate. On the luminal side, a large gap (25 Å) separates LHCI from the core. This gap stems from the fact that most of the connections between LHCI and PSI are located at the stromal side (seen in Figure 7C, also compare Figure 5A and Figure 5—figure supplement 1), leaving the luminal side open.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/07433/elife-07433-fig7-v2.jpg)
 
-**Figure 7.:** (A) Luminal view of the electrostatic potential (red for negative and blue for positive charges) generated from PSI-LHCI apoproteins. The gap region is shown as an open cavity (the ligands occupying this cavity were omitted from the calculation) lined with negative patches. The plastocyanin binding site can be distinguished as a blue patch generated by the positively charged luminal double helix domain of PsaF. (B) The stromal electrostatic surface of PSI-LHCI showing the putative ferredoxin binding site as a basic patch on the left side of the stromal ridge. (C) A side view of the stromal gap shows the large opening facing the lumen. Lhca1 and PsaG are omitted to reveal the internal cavity. This surface was drown around all ligands identified in the gap with only chlorophyll 4017 and carotene 4505 omitted. (D) We propose that the negative patches lining the gap play a role in preventing the accessibility of VDE to gap pigments during regular growth. While at high light conditions, lumen acidification partially neutralizes these negative charges, allowing VDE activity on gap xanthophylls.DOI: http://dx.doi.org/10.7554/eLife.07433.015
+**Figure 7.:** (A) Luminal view of the electrostatic potential (red for negative and blue for positive charges) generated from PSI-LHCI apoproteins. The gap region is shown as an open cavity (the ligands occupying this cavity were omitted from the calculation) lined with negative patches. The plastocyanin binding site can be distinguished as a blue patch generated by the positively charged luminal double helix domain of PsaF. (B) The stromal electrostatic surface of PSI-LHCI showing the putative ferredoxin binding site as a basic patch on the left side of the stromal ridge. (C) A side view of the stromal gap shows the large opening facing the lumen. Lhca1 and PsaG are omitted to reveal the internal cavity. This surface was drown around all ligands identified in the gap with only chlorophyll 4017 and carotene 4505 omitted. (D) We propose that the negative patches lining the gap play a role in preventing the accessibility of VDE to gap pigments during regular growth. While at high light conditions, lumen acidification partially neutralizes these negative charges, allowing VDE activity on gap xanthophylls.
 
 The complete modeling of LHCI side chains shows that the luminal side of PSI-LHCI contains patches of negative potential distributed on both sides of the PSI-LHCI gap (Figure 7). We suggest that the negative charge characteristic of the luminal side of PSI-LHCI is an important feature regulating the accessibility of VDE to the PSI-LHCI gap. Under low light conditions, the relatively high luminal pH will result in strong repulsive forces between these negative patches and the acidic domain of VDE, preventing VDE from binding to PSI. Under high light, acidification of lumen, which is known to trigger VDE activity, will result in partial neutralization of these patches and allow VDE access to the PSI-LHCI gap regions (Arnoux et al., 2009) (Figure 7D). Carotene L4505 is ideally positioned to be exchanged easily via this mechanism (Figure 7C). Ligands, which are easily exchangeable, are particularly labile and may disassociate from the complex during its purification, accounting for a lack of a second carotene bound at the analogous position in Lhca3. In the current structure, position L5 is occupied with zeaxanthin; however, the pigment assignment cannot be definite, even at the current resolution.
 
@@ -136,22 +136,190 @@ In this work we presented the most complete plant PSI-LHCI structure obtained th
 
 ## Materials and methods
 
-## Purification of plant PSI
+### Purification of plant PSI
 
 Pea seeds (Pisum sativum var. Kalvadon) were washed with running water for 6–8 hr and seeded in a vermiculite tray. Plants were germinated in the dark at 22°C for 5 days in shaded sunlight or the dark. After germination, the plants were grown for an additional 10 days under cool-white fluorescent light at a photon flux density of 90–130 μE m−2 s−1 in a 14 hr light/10 hr dark cycle at 22°C. Approximately 200 g of leaves were ground for 25 s in a blender with 1000 ml of ice-cold solution containing 0.3 M sucrose, 15 mM NaCl, 30 mM Tricine-NaOH (pH 8), 1 mM PMSF, 15 μM leupeptin, and 1 μM pepstatin A. The slurry was filtered through eight layers of cheesecloth and chloroplasts pelleted by centrifugation at 1000 g for 9 min. The pellet was suspended in 500 ml of hypotonic medium (10 mM Tricine-NaOH, pH 8) to disrupt the chloroplasts. Thylakoids were collected by centrifugation at 12,000 g for 10 min and resuspended in 500 ml of buffer containing 10 mM Tricine-NaOH (pH 8) and 150 mM NaCl. The thylakoid membranes were then pelleted at 8,000 g for 10 min and resuspended in a minimal volume of STN2 buffer (0.4 M sucrose, 20 mM Tricine-NaOH, pH 8). The thylakoid concentration was adjusted to 3 mg of chlorophyll per ml and 0.4% n-dodecyl-α-D-maltoside (DDM) added. This concentration of detergent selectively extracts the ATP synthase, b6f, and PSII complexes. After 5 min incubation on ice, the detergent- treated thylakoid membranes were collected by ultra-centrifugation at 200,000 g for 30 min. The pellet was resuspended in a minimal volume of STN2 buffer, adjusted to 3 mg chlorophyll per ml, and stored at −80°C.
 
 Frozen thylakoid membranes (20–25 ml) containing 3.0 mg of chl/ml were thawed in cold water and solubilized with 1.5% DDM. Insolubilized material was removed by ultracentrifugation at 120,000 g for 15 min. The supernatant was applied to a DEAE-cellulose column (DE-52, Whatman, Inc., 1.5 × 18 cm) pre-equilibrated with 15 mM Tricine-Tris (pH 8.0) containing 0.25% DDM. The column was washed with the same buffer and PSI eluted with a 0–230 mM tetraethylammonium chloride linear gradient (75 ml in each chamber) in 15 mM Tricine-Tris (pH 8.0) containing 0.25% DDM. Dark green fractions containing PSI were precipitated by 10% PEG6000 (Hampton Research, Aliso Viejo, CA), followed by centrifugation at 5,000 g for 6 min. The pellet was dissolved in 15 mM Tricine-Tris (pH 8.0) and 0.05% DDM. The green solution was applied to a 10–35% sucrose gradient containing the same buffer and centrifuged using the SW-40 rotor (Beckman Coulter, Fullerton, CA) at 37,000 rpm (170,000 g) for 16 hr. The wide green band containing PSI was collected and loaded onto a second DEAE-cellulose column (0.5 × 4 cm) pre-equilibrated with 15 mM Tricine-Tris (pH 8.0) and 0.05% DDM, mainly to concentrate it for a second sucrose gradient. PSI was eluted with 230 mM tetraethylammonium chloride. The collected dark green fraction was applied to a 10–35% sucrose gradient and centrifuged at 57,000 rpm (330,000 g) for 4 hr using an SW-60 rotor (Beckman Coulter). Purified PSI appeared as a dark band in the middle of the tube, but only the central part of the band was collected. The material was precipitated with 15% PEG1500 and 100 mM tetraethylammonium chloride and centrifuged at 10,000 g for 4 min. The pellet was dissolved in a solution containing 2 mM Tricine (pH 8.75) and 0.02% n-dodecyl-β-D-thiomaltoside (DTM, Glycon Biochemicals, Luckenwalde, Germany) and adjusted to a chlorophyll concentration of 2.5 mg/ml.
 
-## PSI crystallization and cryogenic protection
+### PSI crystallization and cryogenic protection
 
 Crystallization was performed manually in 24-well plates using the sitting drop variant of the vapor-diffusion technique at 4°C (Charles Super Company, Natick, MA). Aliquots (6–8 μl) of PSI solution were mixed with equal volumes of reservoir solution (50 mM di-potassium phosphate, 50 mM Tris [pH 8], 12–17% PEG400, 1% glycerol, 2 mM L-glutathione, and 0.03% octyl glucose neopentyl glycol) and equilibrated against 0.5 ml of reservoir solution. Dark green rectangular crystals appeared after 3 days at the higher PEG concentrations, but the best diffracting crystals appeared after 1 month at the lower PEG concentrations.
 
 For cryogenic protection, the crystals were moved to a solution containing 50 mM di-potassium phosphate, 50 mM Tris (pH 8), 20% PEG400, 2% glycerol, and 2 mM L-glutathione. After a brief incubation the crystals were soaked sequentially in the same buffer containing 5% and 10% glycerol and immediately frozen in liquid nitrogen. X-ray diffraction data were collected at the European Synchrotron Radiation Facility (ID23- 2, ID23-1, ID-29 and MASSIF-3), the Swiss Light Source (PXI, PXII, and PXIII), and BESSYII.
 
-## Data collection and processing
+### Data collection and processing
 
-Images were collected at 0.1° oscillation using full beam at exposures of 0.1–0.05 s. The large size of the crystals helped mitigate the effect of radiation damage, yet only 60°–90° of data were collected from each crystal using constant translation of the crystal in the beam. Images were integrated using XDS (Kabsch, 2010) and scaled with XSCALE or AIMLESS (Evans and Murshudov, 2013). Measurements were carried out at the peak of the iron fluorescence scan. Individual datasets generally had I/SIGMA values of ∼1 at 3.1 Å with CC1/2 values of ∼0.5 calculated by XDS. To obtain a more accurate measure of weak reflections, we combined several datasets measured under similar conditions. This combination was possible because of the consistency of the new crystals. The most effective method for combining datasets was to simply choose the sets with the strongest statistics at lower resolutions, and these crystals were also very similar to each other in terms of their unit cell dimensions. The unified datasets contained 40–100 independent measurements of each reflection with I/SIGMA of ∼1.5 at 2.8 Å and CC1/2 of ∼0.4 at the same resolution (Table 1). The CCanomalous calculated by XDS or AIMLESS was ∼0.3 at 6 Å. Some individual datasets had measurable anomalous signals (CCanomalous > 0.3) to 4.5 Å, but the final quality of phases was similar, as judged by the figure of merit for substructures from PHASER runs (typically ∼0.6 [McCoy et al., 2007]) and visual inspection of the maps.10.7554/eLife.07433.016Table 1.Data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.07433.016Data collectionBeamlineBESSY PX14.1SLS PXI−X06SAESRF ID 23-2Wavelength (Å)1.731.740.873Resolution (Å)40−2.8 (2.85–2.8)40−2.8 (2.85−2.8)50−3 (3.1−3)Space groupP212121P212121P21Unit cell dimensionsa, b, c (Å)188.7, 200.8, 212.4188.6, 201.3, 212.7120.6, 189.2, 129.7α, β, γ90, 90, 9090, 90, 9090, 91.1, 90Measured reflections7,831,30214,841,310724,010Unique reflections198,911200,218116,039Rpim (%)0.051 (1.276)0.030 (0.180)0.099 (0.812)<I/σ(I)>10.5 (1.2)13.4 (1.4)5.8 (1.3)Completeness (%)99.9 (98.4)99.9 (98.4)99.9 (99.2)Redundancy39.9 (37)74.1 (33.4)6.2 (5.4)Refinement statisticsResolution (Å)40−2.840−2.850−3Rwork/Rfree25.6/26.524/25.225.8/29.3No. of chains161617No. of ligands214214197Average B-factor (Å2)98.711296.6R.M.S deviationsBond angles1.922.4Bond lengths0.0040.0050.011Ramachandran statisticsFavoured region %90.290.286.6Allowed region %7.17.18.7Outlier region %2.72.74.7Data collection, scaling and merging statistics were calculated using XDS, AIMLESS and PHENIX XTRIAGE. Refinement statistics are from PHENIX.
+Images were collected at 0.1° oscillation using full beam at exposures of 0.1–0.05 s. The large size of the crystals helped mitigate the effect of radiation damage, yet only 60°–90° of data were collected from each crystal using constant translation of the crystal in the beam. Images were integrated using XDS (Kabsch, 2010) and scaled with XSCALE or AIMLESS (Evans and Murshudov, 2013). Measurements were carried out at the peak of the iron fluorescence scan. Individual datasets generally had I/SIGMA values of ∼1 at 3.1 Å with CC1/2 values of ∼0.5 calculated by XDS. To obtain a more accurate measure of weak reflections, we combined several datasets measured under similar conditions. This combination was possible because of the consistency of the new crystals. The most effective method for combining datasets was to simply choose the sets with the strongest statistics at lower resolutions, and these crystals were also very similar to each other in terms of their unit cell dimensions. The unified datasets contained 40–100 independent measurements of each reflection with I/SIGMA of ∼1.5 at 2.8 Å and CC1/2 of ∼0.4 at the same resolution (Table 1). The CCanomalous calculated by XDS or AIMLESS was ∼0.3 at 6 Å. Some individual datasets had measurable anomalous signals (CCanomalous > 0.3) to 4.5 Å, but the final quality of phases was similar, as judged by the figure of merit for substructures from PHASER runs (typically ∼0.6 [McCoy et al., 2007]) and visual inspection of the maps.
 
-## Phasing and refinement
+**Table 1.**
+ Data collection and refinement statistics
 
-The crystals were initially solved by molecular replacement (MR) with a partial model containing only the reaction center subunits with chlorophylls modeled as rings using PHASER. This solution was used to place the three iron-sulfur clusters, which were subsequently used as the initial substructure for locating additional sites. These initial runs located approximately 40 sites of the 100 that were eventually modeled. Phases were improved using DM (Cowtan, 1994), and the resulting maps showed most of the transmembrane helices of the reaction center with 11 transmembrane helices of LHCI (missing helix 2 of Lhca3). To improve the phases, information from the visible parts of the reaction center was incorporated as a partial MR solution. This model included the 22 transmembrane helices of PsaA and PsaB, the PsaC subunit, and chlorophyll rings, omitting all of the loops from the proteins. From the maps generated in this step, we proceeded to build the model using Coot (Emsley et al., 2010) and used the modified phases as restraints during refinement in either PHENIX (Adams et al., 2010) or REFMAC (Murshudov et al., 1997). At various points during the refinement process, the phases were recalculated with the newly modeled sites using PHASER and including the improved model (Read and McCoy, 2011). Final runs identified 99 sites, 89 of them present in the model. The final model refined to an R-free of 25.2% with 3% Ramachandran outliers, a considerable decrease from previous values (Table 1). A complete model for the lhca subunits of LHCI was obtained, as well as extensions and modifications to some of the other PSI subunits (Table 2). Images were created using Pymol and electrostatic surfaces calculated using APBS (Baker et al., 2001).10.7554/eLife.07433.017Table 2.Amino acid changes between PSI-LHCI structuresDOI: http://dx.doi.org/10.7554/eLife.07433.017SubunitNumber of amino acidsModeled amino acidsNumber of changes4Y282WSCPsaA7587417291PsaB7347327321PsaC8180811PsaD*1561401355PsaE*9268659PsaF*15415015418PsaG*98959515PsaH*95846911PsaJ*4241425PsaK*134798510PsaL*16816016121Lhca1*20419316512Lhca22562061763Lhca324221016216Lhca42521971663The number of modeled amino acids in each subunit is shown and compared to the most recent PSI-LHCI structure (2WSC). Insertions, deletions and extensions are counted as a single change. Since the genome sequence of Pisum Sativum is not completely known (genes with no DNA data are marked with an *) we relied on high-throughput mRNA sequence data for verification (Franssen et al., 2011).
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Data collection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>BESSY PX14.1</td>
+      <td>SLS PXI−X06SA</td>
+      <td>ESRF ID 23-2</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.73</td>
+      <td>1.74</td>
+      <td>0.873</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>40−2.8 (2.85–2.8)</td>
+      <td>40−2.8 (2.85−2.8)</td>
+      <td>50−3 (3.1−3)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P21</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data collection, scaling and merging statistics were calculated using XDS, AIMLESS and PHENIX XTRIAGE. Refinement statistics are from PHENIX._
+
+### Phasing and refinement
+
+The crystals were initially solved by molecular replacement (MR) with a partial model containing only the reaction center subunits with chlorophylls modeled as rings using PHASER. This solution was used to place the three iron-sulfur clusters, which were subsequently used as the initial substructure for locating additional sites. These initial runs located approximately 40 sites of the 100 that were eventually modeled. Phases were improved using DM (Cowtan, 1994), and the resulting maps showed most of the transmembrane helices of the reaction center with 11 transmembrane helices of LHCI (missing helix 2 of Lhca3). To improve the phases, information from the visible parts of the reaction center was incorporated as a partial MR solution. This model included the 22 transmembrane helices of PsaA and PsaB, the PsaC subunit, and chlorophyll rings, omitting all of the loops from the proteins. From the maps generated in this step, we proceeded to build the model using Coot (Emsley et al., 2010) and used the modified phases as restraints during refinement in either PHENIX (Adams et al., 2010) or REFMAC (Murshudov et al., 1997). At various points during the refinement process, the phases were recalculated with the newly modeled sites using PHASER and including the improved model (Read and McCoy, 2011). Final runs identified 99 sites, 89 of them present in the model. The final model refined to an R-free of 25.2% with 3% Ramachandran outliers, a considerable decrease from previous values (Table 1). A complete model for the lhca subunits of LHCI was obtained, as well as extensions and modifications to some of the other PSI subunits (Table 2). Images were created using Pymol and electrostatic surfaces calculated using APBS (Baker et al., 2001).
+
+**Table 2.**
+ Amino acid changes between PSI-LHCI structures
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Subunit</th>
+      <th rowspan="2">Number of amino acids</th>
+      <th colspan="2">Modeled amino acids</th>
+      <th rowspan="2">Number of changes</th>
+    </tr>
+    <tr>
+      <th>4Y28</th>
+      <th>2WSC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PsaA</td>
+      <td>758</td>
+      <td>741</td>
+      <td>729</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PsaB</td>
+      <td>734</td>
+      <td>732</td>
+      <td>732</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PsaC</td>
+      <td>81</td>
+      <td>80</td>
+      <td>81</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>PsaD*</td>
+      <td>156</td>
+      <td>140</td>
+      <td>135</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>PsaE*</td>
+      <td>92</td>
+      <td>68</td>
+      <td>65</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>PsaF*</td>
+      <td>154</td>
+      <td>150</td>
+      <td>154</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>PsaG*</td>
+      <td>98</td>
+      <td>95</td>
+      <td>95</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>PsaH*</td>
+      <td>95</td>
+      <td>84</td>
+      <td>69</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>PsaJ*</td>
+      <td>42</td>
+      <td>41</td>
+      <td>42</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>PsaK*</td>
+      <td>134</td>
+      <td>79</td>
+      <td>85</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>PsaL*</td>
+      <td>168</td>
+      <td>160</td>
+      <td>161</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Lhca1*</td>
+      <td>204</td>
+      <td>193</td>
+      <td>165</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Lhca2</td>
+      <td>256</td>
+      <td>206</td>
+      <td>176</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Lhca3</td>
+      <td>242</td>
+      <td>210</td>
+      <td>162</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Lhca4</td>
+      <td>252</td>
+      <td>197</td>
+      <td>166</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of modeled amino acids in each subunit is shown and compared to the most recent PSI-LHCI structure (2WSC). Insertions, deletions and extensions are counted as a single change. Since the genome sequence of Pisum Sativum is not completely known (genes with no DNA data are marked with an *) we relied on high-throughput mRNA sequence data for verification (Franssen et al., 2011)._

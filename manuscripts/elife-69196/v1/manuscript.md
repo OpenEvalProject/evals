@@ -15,7 +15,7 @@
 
 ## Abstract
 
-In many species, within-group conflict leads to immediate avoidance of potential aggressors or increases in affiliation, but no studies have investigated delayed post-conflict management behaviour. Here, we experimentally test that possibility using a wild but habituated population of dwarf mongooses ( Helogale parvula ). First, we used natural and playback-simulated foraging displacements to demonstrate that bystanders take notice of the vocalisations produced during such within-group conflict events but that they do not engage in any immediate post-conflict affiliative behaviour with the protagonists or other bystanders. We then used another playback experiment to assess delayed effects of within-group conflict on grooming interactions: we examined affiliative behaviour at the evening sleeping burrow, 30–60 min after the most recent simulated foraging displacement. Overall, fewer individuals groomed on evenings following an afternoon of simulated conflict, but those that did groomed more than on control evenings. Subordinate bystanders groomed with the simulated aggressor significantly less, and groomed more with one another, on conflict compared to control evenings. Our study provides experimental evidence that dwarf mongooses acoustically obtain information about within-group contests (including protagonist identity), retain that information, and use it to inform conflict-management decisions with a temporal delay.
+In many species, within-group conflict leads to immediate avoidance of potential aggressors or increases in affiliation, but no studies have investigated delayed post-conflict management behaviour. Here, we experimentally test that possibility using a wild but habituated population of dwarf mongooses (Helogale parvula). First, we used natural and playback-simulated foraging displacements to demonstrate that bystanders take notice of the vocalisations produced during such within-group conflict events but that they do not engage in any immediate post-conflict affiliative behaviour with the protagonists or other bystanders. We then used another playback experiment to assess delayed effects of within-group conflict on grooming interactions: we examined affiliative behaviour at the evening sleeping burrow, 30–60 min after the most recent simulated foraging displacement. Overall, fewer individuals groomed on evenings following an afternoon of simulated conflict, but those that did groomed more than on control evenings. Subordinate bystanders groomed with the simulated aggressor significantly less, and groomed more with one another, on conflict compared to control evenings. Our study provides experimental evidence that dwarf mongooses acoustically obtain information about within-group contests (including protagonist identity), retain that information, and use it to inform conflict-management decisions with a temporal delay.
 
 ## Introduction
 
@@ -29,21 +29,21 @@ Here, we investigate post-conflict management behaviour, including the possibili
 
 ## Results
 
-## Immediate behavioural responses of bystanders to within-group conflict
+### Immediate behavioural responses of bystanders to within-group conflict
 
 We initially used both observational data and a playback experiment to investigate whether bystanders take notice of conflict between groupmates (evidenced by an increase in vigilance) and if they engage in affiliative interactions (grooming) as post-conflict management behaviour in the immediate aftermath (full details in ‘Materials and methods’). To collect data relating to natural foraging displacements (which occur at a mean ± SE observer-detected rate of 2.6 ± 0.2 events per 3-hr observation session, range = 0–10, N = 127 observation sessions across eight groups), we conducted focal watches on foraging subordinates in two situations: immediately after the human observer heard a foraging displacement (conflict situation) and on a matched occasion when there had been no foraging displacement for at least 10 min (control situation). Paired data were collected from 16 subordinates in six groups, with conflict and control focal watches counterbalanced in order between individuals. To test experimentally the immediate responses of bystanders, and to isolate the importance of foraging-displacement vocalisations as a cue to conflict occurrence, we presented 17 foraging subordinates in eight groups with two playback treatments in a matched, counterbalanced design (Experiment 1). The conflict treatment entailed an initial playback of close calls from a dominant individual and a subordinate individual from the same group as the focal individual, followed by a playback of the dominant growling and the subordinate squealing (simulating a foraging displacement); the control treatment entailed the playback of close calls from the same two individuals for the same duration as a full conflict-treatment playback track (Figure 1). Foraging dwarf mongooses produce continuous low-amplitude close calls, which likely enable groupmates to stay in contact; there is no evidence that they have an aggressive function (Kern and Radford, 2013; Sharpe et al., 2013). We chose for the playback the combination of a dominant individual as the aggressor and a subordinate individual as a target because this is the most common dyadic pairing observed in natural foraging displacements (74.3% of 740 events in 12 groups).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69196/elife-69196-fig1-v1.jpg)
 
-**Figure 1.:** a) conflict and (b) control playback tracks.A conflict track concluded with three growls from a dominant aggressor followed by a squeal from a subordinate target, whilst a control track concluded with three close calls from the same dominant individual followed by one close call from the same subordinate individual as in the matched conflict track. Spectrograms were created in Raven Pro 1.5 using a 1024 point fast Fourier Transform (Hamming window, 75% overlap, 2.70 ms time resolution, 43 Hz frequency resolution).
+**Figure 1.:** A conflict track concluded with three growls from a dominant aggressor followed by a squeal from a subordinate target, whilst a control track concluded with three close calls from the same dominant individual followed by one close call from the same subordinate individual as in the matched conflict track. Spectrograms were created in Raven Pro 1.5 using a 1024 point fast Fourier Transform (Hamming window, 75% overlap, 2.70 ms time resolution, 43 Hz frequency resolution).
 
 In 2–3 min following both natural foraging displacements (Wilcoxon signed-rank test: Z = 3.154, N = 16, Monte Carlo p<0.001; Figure 2a) and those simulated by playbacks (Z = 3.527, N = 17, p<0.001; Figure 2b), focal foragers spent a significantly greater proportion of time vigilant than in matched-control, non-conflict situations. The increased vigilance following foraging displacements indicates that bystanders take notice of conflict between groupmates; the experimental results demonstrate that the vocal cues are sufficient to trigger this reaction. However, the focal individual did not engage in any post-conflict grooming in the 5 min following either natural or simulated foraging displacements; grooming is generally rare (ca 10% of bouts) during foraging periods in dwarf mongooses (Kern and Radford, 2018). Thus, dwarf mongoose bystanders do not appear to engage in post-conflict affiliative behaviour in the immediate aftermath of hearing a within-group contest.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69196/elife-69196-fig2-v1.jpg)
 
-**Figure 2.:** Compared to control situations, (a) natural foraging displacements (observational; N = 16 individuals in six groups) and (b) simulated foraging displacements (experimental; N = 17 individuals in eight groups) both resulted in a greater proportion of time spent vigilant by foragers in the subsequent 2–3 min. Shown in both panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each individual are given as circles, with lines connecting data from the same individual; in some instances, more than one individual has the same value, hence the number of lines can appear less than the stated sample size.Figure 2—source data 1.
+**Figure 2.:** Compared to control situations, (a) natural foraging displacements (observational; N = 16 individuals in six groups) and (b) simulated foraging displacements (experimental; N = 17 individuals in eight groups) both resulted in a greater proportion of time spent vigilant by foragers in the subsequent 2–3 min. Shown in both panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each individual are given as circles, with lines connecting data from the same individual; in some instances, more than one individual has the same value, hence the number of lines can appear less than the stated sample size.
 
-## Delayed behavioural responses of bystanders to within-group conflict
+### Delayed behavioural responses of bystanders to within-group conflict
 
 To test if there were delayed effects of within-group conflict on affiliative behaviour (grooming), we conducted a second repeated-measures playback experiment on eight groups (Experiment 2, Figure 3; full details in ‘Materials and methods’). The general experimental design followed Kern and Radford, 2018. In each trial session, we either simulated an increase in the conflict between a dominant (aggressor) and a subordinate (target) group member through playback of their foraging-displacement vocalisations (conflict treatment) or played back just the close calls of those individuals for an equivalent period (control treatment). Trials were on separate days with treatment order counterbalanced between groups. In each trial, six to nine playbacks (mean ± SE: 8.5 ± 0.2, N = 16 trials) were carried out over the course of 3 hr in the afternoon whilst the group were foraging and before they moved towards their evening sleeping refuge (mean ± SE period between the final playback and first grooming bout at the sleeping refuge: 37 ± 5 min, N = 16 trials); individual playbacks were as in Experiment 1 with different tracks played each time. At the refuge, we collected data ad libitum on all adult grooming interactions, including the identity of those involved and bout duration; each bout was always between just two individuals and generally mutual (both parties approaching each other and grooming, without an obvious initiator). If within-group conflict does have delayed effects on affiliative behaviour, we expected an increase in the occurrence of foraging displacements to result in changes in evening grooming levels; 90% of grooming bouts occur at the sleeping refuge (N = 6376 bouts, 174 individuals; Kern and Radford, 2018).
 
@@ -55,19 +55,217 @@ Overall, we found that group members were significantly less likely to be involv
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69196/elife-69196-fig4-v1.jpg)
 
-**Figure 4.:** Compared to control afternoons, those with simulated additional foraging displacements resulted in (a) a smaller proportion of adult group members engaged in evening grooming behaviour (N = 8 groups) but (b) a greater proportion of time engaged in grooming by those individuals that did any grooming (N = 63 individuals in eight groups). Shown in both panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group or individual are given as circles, with lines connecting data from the same group or individual; orphan points, where an individual only groomed in one treatment, are also plotted. In some instances, more than one group or individual has the same value, hence the number of lines can appear less than the stated sample size.Figure 4—source data 1.
+**Figure 4.:** Compared to control afternoons, those with simulated additional foraging displacements resulted in (a) a smaller proportion of adult group members engaged in evening grooming behaviour (N = 8 groups) but (b) a greater proportion of time engaged in grooming by those individuals that did any grooming (N = 63 individuals in eight groups). Shown in both panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group or individual are given as circles, with lines connecting data from the same group or individual; orphan points, where an individual only groomed in one treatment, are also plotted. In some instances, more than one group or individual has the same value, hence the number of lines can appear less than the stated sample size.
+
+**Table 1.**
+ Output from mixed models investigating the grooming behaviour of adult dwarf mongooses at the evening refuge.All models contained treatment (conflict, control) as a fixed effect (the reference level in the table is ‘conflict’), with Individual ID nested within Group ID as random effects. The first model (generalised linear mixed model (GLMM) with a binomial error distribution and logit-link function) examined (a) whether an individual was involved in a grooming bout (Yes or No). Subsequent models focussed on those individuals that did participate in grooming, examining (b) the proportion of time spent grooming (GLMM with a beta error distribution and logit-link function), (c) the rate of grooming interactions (GLMM with a Poisson error distribution, log-link function, and log(duration) as an offset term to account for differences in the time available for grooming), and (d) the log-transformed mean grooming-bout duration (linear mixed model (LMM) with a Gaussian error distribution). Significant fixed effects shown in bold; variance ± SD reported for random effects is shown in italics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Effects</th>
+      <th>Estimate ± SE</th>
+      <th>df</th>
+      <th>χ2</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">(a) Individual involvement in grooming</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>Group ID</td>
+      <td>0.919 ± 0.959</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Individual ID in Group</td>
+      <td>&lt;0.001 ± &lt;0.001</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimal model</td>
+      <td>(Intercept)</td>
+      <td>1.267 ± 0.497</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Treatment (Conflict)</td>
+      <td>1.106 ± 0.488</td>
+      <td>1</td>
+      <td>5.401</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">(b) Proportion of time spent grooming</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>Group ID</td>
+      <td>0.187 ± 0.433</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Individual ID in Group</td>
+      <td>0.065 ± 0.255</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimal model</td>
+      <td>(Intercept)</td>
+      <td>–1.544 ± 0.190</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Treatment (Conflict)</td>
+      <td>–0.697 ± 0.164</td>
+      <td>1</td>
+      <td>15.873</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">(c) Rate of grooming bouts</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>Group ID</td>
+      <td>&lt;0.001 ± 0.018</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Individual ID in Group</td>
+      <td>0.195 ± 0.442</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimal model</td>
+      <td>(Intercept)</td>
+      <td>–1.317 ± 0.102</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Treatment (Conflict)</td>
+      <td>–0.296 ± 0.105</td>
+      <td>1</td>
+      <td>8.010</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">(d) Mean grooming-bout duration</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>Group ID</td>
+      <td>0.047 ± 0.217</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Individual ID in Group</td>
+      <td>0.067 ± 0.258</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimal model</td>
+      <td>(Intercept)</td>
+      <td>3.257 ± 0.104</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Treatment (Conflict)</td>
+      <td>–0.167 ± 0.083</td>
+      <td>1</td>
+      <td>3.958</td>
+      <td>0.047</td>
+    </tr>
+  </tbody>
+</table>
 
 We found evidence that simulating aggressive behaviour by a dominant individual during the afternoon resulted in subordinates engaging in less grooming with it at the sleeping refuge that evening. Following conflict trials, subordinates groomed with the dominant pair for a smaller proportion of time than after control trials (Wilcoxon signed-rank test: Z = 2.240, N = 8, p = 0.021). The reduced affiliative engagement by subordinates was driven by a change in behaviour towards the simulated aggressor specifically: subordinates engaged in significantly less grooming with the simulated aggressor on conflict evenings compared to control evenings (proportion of time: Z = 2.521, N = 8, p = 0.008; Figure 5a; proportion of subordinates: Z = 2.201, N = 8, p = 0.033; Figure 5c), but there was no such treatment difference in the grooming of subordinates with the dominant whose calls were not played back (proportion of time: Z = 0.105, N = 8, p = 1; Figure 5b; proportion of subordinates: Z = 0.813, N = 8, p = 0.499; Figure 5d). Moreover, on those occasions where individuals did groom, bout durations were somewhat shorter on conflict evenings compared to control evenings for grooming involving simulated aggressors (mean ± SE duration, post-control: 34 ± 11 s; post-conflict: 23 ± 5 s; N = 4 pairs of trials), while the reverse was true for grooming involving the matched dominant (post-control: 28 ± 8 s; post-conflict: 34 ± 8 s; N = 4 pairs of trials); small sample sizes precluded statistical analysis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69196/elife-69196-fig5-v1.jpg)
 
-**Figure 5.:** Compared to control afternoons, those with simulated additional foraging displacements between a dominant aggressor and a subordinate target resulted in (a) a smaller proportion of time engaged in evening grooming by subordinate bystanders with the dominant aggressor but (b) no such treatment difference in the proportion of time that subordinate bystanders groomed with a non-playback dominant. At least in part, this was because (c) a smaller proportion of subordinate bystanders groomed with the dominant aggressor in the evening of conflict afternoons compared with control ones, but (d) there was no such treatment difference in the proportion of subordinates involved in grooming with a non-playback dominant. Shown in all panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group are plotted separately (N = 8), with lines connecting data from the same group; in some instances, more than one group has the same value, hence the number of lines can appear less than eight.Figure 5—source data 1.
+**Figure 5.:** Compared to control afternoons, those with simulated additional foraging displacements between a dominant aggressor and a subordinate target resulted in (a) a smaller proportion of time engaged in evening grooming by subordinate bystanders with the dominant aggressor but (b) no such treatment difference in the proportion of time that subordinate bystanders groomed with a non-playback dominant. At least in part, this was because (c) a smaller proportion of subordinate bystanders groomed with the dominant aggressor in the evening of conflict afternoons compared with control ones, but (d) there was no such treatment difference in the proportion of subordinates involved in grooming with a non-playback dominant. Shown in all panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group are plotted separately (N = 8), with lines connecting data from the same group; in some instances, more than one group has the same value, hence the number of lines can appear less than eight.
 
 We also found some evidence that increasing within-group conflict during the afternoon resulted in more evening grooming between subordinates. When considering all bouts between subordinate group members, there was no significant treatment difference in the proportion of time spent grooming (Wilcoxon signed-rank test: Z = 1.540, N = 8, p = 0.146), but subordinate–subordinate grooming bouts were, on average, significantly longer on conflict evenings compared to control evenings (Z = 2.366, N = 7, p = 0.015; Figure 6a). Considering bouts involving particular individuals, there were indications that targets might receive a conflict-driven increase in grooming from other subordinates not seen for preselected control subordinates (those whose squeals had not been played back), but no statistically significant differences. The proportion of time grooming that involved the simulated target was doubled on conflict evenings (mean ± SE: 0.31 ± 0.09) compared to control evenings (0.15 ± 0.06; Z = 1.572, N = 8, p = 0.156; Figure 6b), whereas there was, if anything, a decrease for the preselected control subordinate (control: 0.37 ± 0.12; conflict: 0.28 ± 0.09; Z = 0.280, N = 8, p = 0.843; Figure 6c). The treatment difference in mean bout duration was also greater for grooming involving simulated targets (36 ± 14 s, N = 3 pairs of trials) than that involving preselected control subordinates (22 ± 24 s, N = 3 pairs of trials), but too few matched evenings involved the relevant individuals to allow statistical testing.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69196/elife-69196-fig6-v1.jpg)
 
-**Figure 6.:** Compared to control afternoons, those with simulated additional foraging displacements between a dominant aggressor and a subordinate target resulted in (a) a greater mean duration of grooming bouts (s) between subordinate group members. There was (b) an indication that subordinate bystanders and simulated targets groomed for a greater proportion of time on conflict evenings compared to control ones, although the result was not statistically significant; (c) there was no equivalent treatment difference in the proportion of time that subordinates groomed with non-target subordinates. Shown in all panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group are plotted separately (N = 8), with lines connecting data from the same group; in some instances, more than one group has the same value, hence the number of dashed lines can appear less than eight.Figure 6—source data 1.
+**Figure 6.:** Compared to control afternoons, those with simulated additional foraging displacements between a dominant aggressor and a subordinate target resulted in (a) a greater mean duration of grooming bouts (s) between subordinate group members. There was (b) an indication that subordinate bystanders and simulated targets groomed for a greater proportion of time on conflict evenings compared to control ones, although the result was not statistically significant; (c) there was no equivalent treatment difference in the proportion of time that subordinates groomed with non-target subordinates. Shown in all panels are boxplots with the median and quartiles; whiskers represent data within quartiles ± 1.5 times the interquartile range. Values for each group are plotted separately (N = 8), with lines connecting data from the same group; in some instances, more than one group has the same value, hence the number of dashed lines can appear less than eight.
 
 ## Discussion
 
@@ -85,11 +283,11 @@ In summary, our results demonstrate that dwarf mongooses can obtain information 
 
 ## Materials and methods
 
-## Study site and population
+### Study site and population
 
 We conducted our study on Sorabi Rock Lodge (24° 11′S, 30° 46′E), a private game reserve in the Limpopo Province, South Africa; full details are available in Kern and Radford, 2013. This is the site of the Dwarf Mongoose Research Project (DMRP), which has been studying a wild population of dwarf mongooses since 2011. At the time of the study (June to October 2019; non-breeding season), eight dwarf mongoose groups (mean ± SE group size: 12.3 ± 1.7, range: 5–16) were fully habituated to the close presence (<5 m) of human observers on foot. All the individuals in the population were identifiable, either through dye marks on their fur (blond hair dye applied using an elongated paintbrush) or natural features, such as scars. Individuals older than 1 year were classified as adults (Kern et al., 2016) data collection was focussed on adults as younger individuals are seldom involved in foraging displacements. Adults were sexed by observing ano-genital grooming (Kern et al., 2016) and classified as being either dominant (the male and female breeding pair) or subordinate; dominance status was established through observation of targeted aggression, scent marking, and reproductive behaviour (Kern and Radford, 2013; Rasa, 1977).
 
-## Observational data collection
+### Observational data collection
 
 To determine the natural frequency of foraging displacements in our experimental period, we recorded all observer-detected occurrences of such behaviour during observation sessions; this included displacements that were seen and heard. The calculated rate is likely a conservative estimate as an observer could have missed a foraging displacement (particularly when the group was relatively widely scattered). We used data collected ad libitum as part of the long-term DMRP to assess the likelihood of particular dyads of individuals (aggressor–target: dominant–dominant, dominant–subordinate, subordinate–subordinate, subordinate–dominant) being involved in a foraging displacement.
 
@@ -97,7 +295,7 @@ To collect data on responses to natural foraging displacements, we conducted pai
 
 During each focal watch, we recorded behavioural data to a Dictaphone (ICD-PX312, Sony; Sony Europe Limited, Surrey, UK). Dwarf mongooses have two types of vigilance behaviour: vigilance scans, where individuals temporarily stop foraging in a head-down position to scan their surroundings (Kern et al., 2016), and sentinel behaviour, where individuals cease foraging to scan from a raised position (minimum 10 cm above the ground level; Kern and Radford, 2013). Throughout each focal watch, we dictated the start and end point of each vigilance scan and sentinel bout, along with the occurrence of any grooming interaction with a groupmate. These data were used to calculate the proportion of time spent vigilant; no grooming occurred during these focal watches. No individual acted as a sentinel during the observational focal watches, and therefore the vigilance response measure was based on scan data only. We used a Wilcoxon signed-rank test to analyse the proportion of time vigilant in SPSS 24 (IBM Corp, 2016). Due to small sample sizes, we used the Monte Carlo repeated sampling method (based on 10,000 samples) to calculate an unbiased estimate of the exact p-value (Mehta and Patel, 2011).
 
-## Experimental stimuli
+### Experimental stimuli
 
 We conducted two field-based repeated-measures experiments using playbacks to simulate the occurrence of conflict between group members. Each experiment involved the playback of ‘conflict’ and ‘control’ tracks. We recorded all calls for track creation when weather conditions were calm using a Marantz PMD660 professional solid-state recorder (Marantz America, Mahwah, NJ) connected to a handheld Sennheiser ME66 directional microphone (Sennheiser UK, High Wycombe, Buckinghamshire, UK; frequency response: 40–20,000 Hz) with a Rycote softie windshield (Rycote Microphone Windshields, Stroud, Gloucestershire, UK). The Marantz was set to record at 48 kHz with a 16-bit resolution, and files were saved in wav format. For conflict tracks, we recorded aggressive growls and submissive squeals opportunistically from natural foraging displacements or from conflicts induced by the presentation of a small amount of hard-boiled egg. Growls were recorded from either the dominant male or the dominant female in each group and squeals were recorded from a subordinate male or female in each group; all recorded calls came from foraging displacements where the dominant was the aggressor and the subordinate was the target. We recorded close calls, for use in both control and conflict tracks, from the same dominant and subordinate individuals whilst they were foraging. Recordings of all vocalisations were made 0.5–5 m from the relevant individual.
 
@@ -107,7 +305,7 @@ We created nine unique conflict and control tracks for each group. Given that th
 
 We played back tracks from an iPhone (Apple, Cupertino, CA), connected to a Rokono B10 (London, UK) portable loudspeaker (frequency response: 90–20,000 Hz) concealed in vegetation. We set the amplitude to a sound-pressure level of 55 dB(A) at 1 m for close calls and growls, and 65 dB(A) at 1 m for squeals. This was the relevant amplitude of these vocalisations as determined by measurement of natural calls with a HandyMAN TEK 1345 sound-level meter (Metrel UK Ltd, Normanton, UK).
 
-## Experiment 1 protocol
+### Experiment 1 protocol
 
 Experiment 1 was a complement to the observational focal watches (see ‘Observational data collection’), aiming to test whether bystanders might garner information about within-group conflict solely from vocalisations and then adjust their immediate affiliative behaviour. We randomly selected 17 subordinate individuals (excluding those whose calls were used in the playback tracks) to receive the two treatments (conflict and control) on separate days and in a counterbalanced order. Each treatment was repeated two to three times per individual during the same observation session, using a different playback track each time, with a minimum of 10 min between repeats; for one individual, it was possible to run one of the treatments only once. We completed the two treatments for the same individual within 2 weeks of each other (mean ± SE: 2.8 ± 0.7 days apart, range: 1–11 days) and at the same time of day (either between 07:00 and 12:00 or between 12:30 and 17:30). The 17 focal individuals were from eight groups; for groups where there was more than one focal individual (N = 4 groups), we completed both treatments on one individual before moving on to the next.
 
@@ -115,7 +313,7 @@ We conducted playbacks when the focal individual was foraging in a medium habita
 
 As for the natural foraging displacements (see 'Observational data collection'), we analysed the proportion of time spent vigilant; no grooming occurred in any focal watches. Since each treatment was repeated two to three times on an individual, we analysed the mean proportion of time spent vigilant with a Wilcoxon signed-ranks test. In 5 out of 94 trials, an individual acted as a sentinel. We therefore ran the vigilance response measures including and excluding this sentinel behaviour. The data reported in the ‘Results’ section are those excluding sentinel bouts, but qualitatively similar results were found for those including this behaviour.
 
-## Experiment 2 protocol
+### Experiment 2 protocol
 
 Experiment 2 aimed to test whether there was a delayed effect of within-group conflict on affiliation between group members. We gave eight groups two treatments each on separate days, with treatment order counterbalanced between the groups. On conflict days, the perceived level of within-group conflict was increased during the afternoon by a playback of up to nine conflict tracks. On control days, perceived levels of within-group conflict were unmanipulated; up to nine control tracks were played back during the afternoon instead. There was no treatment difference in the number of natural foraging displacements that occurred throughout the afternoon (Wilcoxon signed-rank test: Z = 1.725, N = 8, p = 0.158). We completed the two treatments for the same group within 2 weeks of each other (mean ± SE: 3.3 ± 1.0 days apart, range: 1–9 days). Trials were only attempted when the weather conditions were suitable (not too windy or cold) and were abandoned if any major disturbances occurred during the afternoon (eg, predation attempts, inter-group interactions, multiple latrine events).
 
@@ -125,6 +323,6 @@ To analyse the overall grooming data at the refuge (including grooming bouts >5 
 
 We first ran a GLMM to assess whether there was a difference in the likelihood that adult individuals participated in grooming behaviour; our response measure was a binary term—whether the individual engage in any grooming (Yes or No) For those individuals that did participate in grooming, we ran additional models to understand this behaviour further. We first analysed in a GLMM the proportion of time that individuals spent grooming (summed grooming durations for each individual divided by the time available for grooming at the refuge, with the latter defined as the duration between the first and last grooming bout). We then considered whether the increase in proportion of time grooming was driven by a greater frequency (GLMM analysing the number of grooming interactions each individual was involved in, with log(duration) as an offset term to account for differences in the time available for grooming) or an increase in mean bout duration (LMM). We subsequently ran Wilcoxon signed-rank tests in SPSS 24 (as in ‘Observational data collection’ and ‘Experiment 1 protocol’) to consider the grooming behaviour between specific categories of group members (see ‘Results’).
 
-## STRANGE framework
+### STRANGE framework
 
 We have evaluated the STRANGEness of our test sample (Webster and Rutz, 2020) and believe that for the research topic in question there was minimal introduced bias. We worked with free-living animals from a wild population of dwarf mongooses, so no trapping or housing was involved in the study; all members of the study groups were habituated to close observer presence, and so no bias in random selection occurred due to variation in the ability to approach potential subjects. Focal individuals for observational data collection and Experiment 1 were randomly selected subordinate adults of both sexes from the study groups. Subordinates were chosen since the majority of foraging displacements occur between a dominant individual and a subordinate, and in Experiment 2, we were interested in comparing how bystanders groomed a perceived aggressor (one of the dominant pair) and the other dominant individual. For Experiment 2, we recorded all instances of adult grooming behaviour in the study groups. The population had not been exposed to these experiments previously.

@@ -31,15 +31,27 @@ Given these effects, in this study, we investigated the role of CIM6P/IGF2R in m
 
 ## Results
 
-## CIM6P/IGF2R is highly expressed in neurons of all hippocampal subregions
+### CIM6P/IGF2R is highly expressed in neurons of all hippocampal subregions
 
 Given our interest in investigating the role of CIM6P/IGF2R in hippocampus-dependent memories, we first determined the cellular localization of CIM6P/IGF2R in the rat hippocampus. To this end, we co-immunostained coronal brain sections with antibodies specific for CIM6P/IGF2R and markers selective for neurons, astrocytes, or microglia. The anti-CIM6P/IGF2R antibody was validated by a gene knockdown approach, as described below.
 
 As depicted in Figure 1a, CIM6P/IGF2R immunostaining co-localized with the neuronal marker MAP2, but not with the astrocytic marker GFAP or the microglial marker Iba1, indicating that the receptor was mainly expressed in neurons. The expression was found throughout all hippocampal subregions, CA1, CA2, CA3 and dentate gyrus (DG) and also largely co-localized with calcium/calmodulin-dependent kinase II α (CaMKIIα; Figure 1—figure supplement 1), a marker of excitatory neurons (Liu and Murray, 2012). In neurons, the highest levels of CIM6P/IGF2R staining were concentrated in the cell body and particularly in the soma and proximal dendrites.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig1-v1.jpg)
+
+**Figure 1.:** (a) Immunofluorescence co-staining of CIM6P/IGF2R and GFAP, Iba1, or MAP2. Upper panels: representative composite tile scans of whole hippocampus (scale bar, 500 μm). Lower panels: CA1, CA2, CA3, and DG (scale bar, 50 μm). Far right panels: zoomed images showing co-localization of MAP2 with CIM6P/IGF2R (scale bar, 1 μm). (b) Rats were trained on IA (Tr) or remained in their home cages (untrained, Un) and euthanized 1 hr after training. Igf2r mRNA levels (n = 5, two independent experiments). (c) Western blot analyses comparing total and synaptoneurosomal extracts (n = 8, two independent experiments). (d) Total extracts from rats euthanized at various time points after training (30 min, 2 days, 1 week, and 2 weeks) (n = 6–8, four independent experiments). Two-tailed Student t-test or one-way ANOVA followed by Tukey’s post-hoc tests. **p<0.01 and ***p<0.001; see Source data one for detailed statistical information.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunofluorescence co-staining of CIM6P/IGF2R and CaMKIIα. Upper panels: representative composite tile scans of whole hippocampus (scale bar, 500 μm). Lower panels: CA1, CA2, CA3, and DG (scale bar, 50 μm).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Cohorts of rats were trained on IA, and euthanized 30 min, 2 days, 1 week, or 2 weeks later. Total homogenates were analyzed by western blot for Egr1 protein levels. Egr1 was induced at 30 min after training (Tr), as compared to untrained controls (Un) (n = 6–8, four independent experiments). One-way ANOVA followed by Tukey’s post hoc test. ****p<0.0001; see Source data one for detailed statistical information.
+
 Next, we investigated whether learning regulates the expression levels of the CIM6P/IGF2R. Using the contextual fear conditioning-based inhibitory avoidance (IA) task in rats, which models aversive hippocampus-dependent episodic memories, we found that levels of neither Igf2r mRNA, measured with quantitative polymerase chain reaction (qPCR), nor CIM6P/IGF2R protein, measured by western blot analyses, changed 1 hour (hr) after training, relative to those of untrained controls (Figure 1b and c). In agreement with the immunofluorescence data showing the highest expression in the perinuclear area, western blot analyses comparing total with synaptoneurosomal extracts revealed that levels of CIM6P/IGF2R are significantly higher in the total protein homogenate (Figure 1c). Again, the level of CIM6P/IGF2R was unchanged 1 hr after training in both fractions. A more extended time course of CIM6P/IGF2R protein levels following IA training (30 min, 2 days, 1 week, and 2 weeks) measured with western blot analysis, also revealed no changes compared to untrained controls (Figure 1d). The hippocampal protein extracts were validated by assessing the rapid and transient training-dependent induction of the immediate early gene (IEG) Egr1 with western blot analysis (Lonergan et al., 2010; Veyrac et al., 2014). As expected, Egr1 protein level was significantly induced at 30 min after training and returned to baseline at the later timepoints (Figure 1—figure supplement 2).
 
-## Hippocampal CIM6P/IGF2R is rapidly recruited by learning to form long-term memory
+### Hippocampal CIM6P/IGF2R is rapidly recruited by learning to form long-term memory
 
 Using a specific CIM6P/IGF2R-blocking antibody (Chen et al., 2011; Martin-Montañez et al., 2014), we determined the temporal window during which CIM6P/IGF2R is functionally required in the dorsal hippocampus of rats following IA learning.
 
@@ -53,7 +65,7 @@ To determine whether single injection lacked an effect due to insufficient block
 
 To better frame the temporal window of CIM6P/IGF2R functional requirement and establish whether the receptor is needed for the learning (encoding) phase, we bilaterally injected anti-CIM6P/IGF2R 15 min before training, and then tested memory retention 1 day and 1 week later. Memory was completely disrupted by the pre-training injection of anti-CIM6P/IGF2R (Figure 2f), leading us to conclude that learning rapidly recruits CIM6P/IGF2R for memory formation, and that, once engaged by learning, the receptor remains functionally involved for several hours.
 
-## Hippocampal CIM6P/IGF2R is required for memory consolidation but not for learning, memory retrieval, or reconsolidation
+### Hippocampal CIM6P/IGF2R is required for memory consolidation but not for learning, memory retrieval, or reconsolidation
 
 To further confirm that the receptor plays a fundamental role in memory formation, we next examined the effect of blocking CIM6P/IGF2R in the hippocampus before training by bilaterally injecting anti-CIM6P/IGF2R prior to a stronger IA training protocol (0.9 mA footshock, as opposed to 0.6 mA). Memory was also completely disrupted by this regimen (Figure 3a), confirming that CIM6P/IGF2R is recruited by learning and essential for long-term memory formation. However, using independent cohorts of rats, in order to avoid confounds of multiple testing, we found that pre-training injection of anti-CIM6P/IGF2R did not impact learning, as memory retention was intact when tested 5 min after training (Figure 3b). Memory impairment was however already significant at 1 hr after training (Figure 3c), indicating that CIM6P/IGF2R is controlling a rapid post-training function that is key for memory consolidation.
 
@@ -65,7 +77,7 @@ To determine whether the effect of anti-CIM6P/IGF2R injections was on memory and
 
 Together, these results indicate that hippocampal CIM6P/IGF2R is essential for memory consolidation, but not for learning, memory retrieval, or reconsolidation.
 
-## Neuronal CIM6P/IGF2R is required for the formation of hippocampus-dependent memories
+### Neuronal CIM6P/IGF2R is required for the formation of hippocampus-dependent memories
 
 Given that CIM6P/IGF2R was mostly expressed by neurons in the hippocampus, we examined the effect of neuronal knockdown of CIM6P/IGF2R on memory processes using homozygous Igf2r-floxed mice. These experiments also allowed us to determine whether the function of CIM6P/IGF2R in long-term memory formation is conserved across different species. In these transgenic mice, exon 10 of the Igf2r gene is flanked by loxP sites, ready for excision and subsequent knockdown upon expression of Cre recombinase (Wylie et al., 2003). AAV-hSyn-Cre-GFP (Cre) or control AAV-hSyn-GFP (GFP) virus was bilaterally injected into dorsal hippocampi of Igf2r-floxed mice, and the viruses were allowed to express for 2 weeks before behavioral assessment.
 
@@ -85,23 +97,31 @@ Thus, in agreement with the experiments in rats, these data indicated that when 
 
 Western blot (Figure 4g) and immunofluorescence analyses (Figure 4h) showed that Cre-recombinase expression via viral injection led to 40–50% CIM6P/IGF2R knockdown relative to GFP-injected controls. Immunofluorescence analyses confirmed that CIM6P/IGF2R was knocked down selectively where the GFP reporter was expressed, proving the specificity of both viral-mediated knockdown and antibody reactivity (Figure 4i).
 
-## CIM6P/IGF2R controls the training-induced upregulation of IEG proteins, but not mRNAs
+### CIM6P/IGF2R controls the training-induced upregulation of IEG proteins, but not mRNAs
 
 Immediate early genes (IEGs) such as Arc, Fos, and Egr1 (also known as Zif268) are rapidly induced at both the transcriptional and translational levels in response to learning, and their induction is required for memory formation (Gallo et al., 2018; Minatohara et al., 2016; Tischmeyer and Grimm, 1999). Given the essential role of CIM6P/IGF2R on memory consolidation, we asked whether blocking the receptor would affect the induction of IEGs at the mRNA and protein levels. To achieve precise temporal control, we injected anti-CIM6P/IGF2R or IgG control into hippocampi of rats 15 min prior to IA training. Hippocampi from half of the rats were dissected and flash-frozen 1 hr after training to examine mRNA levels, whereas the other rats were perfused, and their coronal sections subjected to immunostaining. As expected, qPCR revealed that Arc, Egr1, and c-Fos mRNA levels were all significantly elevated following training in IgG-injected rats relative to untrained controls. Notably, equivalent inductions were also seen in trained rats that received bilateral hippocampal injection of anti-CIM6P/IGF2R (Figure 5a), indicating that CIM6P/IGF2R is not required for the mRNA induction of these three IEGs. By contrast, immunostaining revealed that the intensity of Arc, Egr1, and c-Fos proteins was increased in response to training, and completely abolished by anti-CIM6P/IGF2R (Figure 5b,c,d). Specifically, these immunohistochemical analyses quantified two measures in both hippocampal subregions CA1 and DG: i) the total immunostaining intensity and ii) the number of cells positive for each IEG. Both parameters were normalized for the number of total cells assessed with DAPI staining (see Methods).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig5-v1.jpg)
+
+**Figure 5.:** Rats were injected with IgG or anti-CIM6P/IGF2R, and then were either trained on IA 15 min later (Tr) or remained Untrained (Un). To examine mRNA levels, rats were euthanized 1 hr after training and hippocampi flash-frozen. (a) qPCR of Arc, Egr1, and c-Fos performed on dorsal hippocampal extracts obtained from rats injected with either IgG or anti-CIM6P/IGF2R and euthanized 1 hr after IA training (n = 5, two independent experiments). (b–d) Rats underwent IA training and were perfused 1 hr later; coronal brain sections were immunostained for Arc (b), Egr1 (c), and c-Fos (d). Upper panels: representative composite tile scan of dorsal hippocampus (scale bar, 500 μm). Middle and lower panels: CA1 and DG (scale bar, 10 μm). Bar graphs shown at right show quantifications for normalized intensity and percentage of cells positive for IEGs, for each sub-region (n = 4, two independent experiments). Two-way ANOVA followed by Tukey’s post hoc tests. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001; see Source data one for detailed statistical information.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The number of total cells detected in our fields of analyses (DAPI-positive cells) used for (a) Arc, (b) Egr1, and (c) c-Fos, for each sub-region (n = 4, two independent experiments). Two-way ANOVA followed by Tukey’s post hoc tests. See Source data one for detailed statistical information.
 
 We found that training significantly increased the intensity of all three IEGs in both CA1 and DG (Figure 5—figure supplement 1). Furthermore, training significantly increased the number of Arc-positive cells in both CA1 and DG and the number Egr1- and c-Fos-positive cells in DG. In contrast, although their intensity significantly increased with training, the number of Egr1- or c-Fos-positive cells did not change in CA1. In sum, training led to a significant upregulation of IEG protein levels in both CA1 and DG hippocampal subregions, but with distinctive IEG expression modalities in CA1 where either the number of cells expressing the IEG increased (i.e. Arc) or cells already expressing the IEG (Erg1 and c-Fos) increased their levels. In DG, training led to a significant increase in the number of positive cells for all three IEGs. All these changes required CIM6P/IGF2R, as they were abolished by anti-CIM6P/IGF2R.
 
 We concluded that the training-induced increase in Arc, c-Fos and Egr1 proteins, but not the corresponding mRNAs, requires CIM6P/IGF2R.
 
-## CIM6P/IGF2R is required for the training-induced increase in de novo protein synthesis
+### CIM6P/IGF2R is required for the training-induced increase in de novo protein synthesis
 
 De novo protein synthesis is rapidly induced in response to learning and is required for long-term memory formation (Costa-Mattioli et al., 2009; Richter and Klann, 2009; Sutton and Schuman, 2006; Wang et al., 2009). Given that the training-induced increase in proteins, but not mRNAs, of all three IEGs was affected by CIM6P/IGF2R, we asked whether the receptor controls the learning-dependent increase in de novo protein synthesis in general. To this end, we employed in vivo SUrface SEnsing of Translation (SUnSET), which measures incorporation of puromycin into elongating peptide chains (Schmidt et al., 2009), thus assessing active translation (Descalzi et al., 2019; Goodman et al., 2011; Santini et al., 2013). Puromycin was co-injected with anti-CIM6P/IGF2R or IgG bilaterally into rat hippocampi 15 min prior to IA training or in untrained control rats. All animals were perfused 2 hr after injection, and coronal brain sections were subjected to immunostaining to measure the puromycin signal. As expected, training led to significant induction of puromycin incorporation throughout the dorsal hippocampus, which was especially prominent in neuronal populations, but this induction was completely abolished by anti-CIM6P/IGF2R (Figure 6a). Together, these data indicate that CIM6P/IGF2R controls the training-dependent increase in de novo protein synthesis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54781/elife-54781-fig6-v1.jpg)
 
-**Figure 6.:** de novo protein synthesis in rats.SUnSET was employed to quantify de novo protein synthesis in the rat hippocampus. Puromycin was co-injected with IgG or anti-CIM6P/IGF2R prior to training, and rats were perfused 2 hr later. Upper panels: representative images of anti-puromycin immunostaining, composite tile scans of whole hippocampus (scale bar, 500 μm). Middle and lower panels: CA1 and DG (scale bar 10 μm). Bar graphs at right show immunostaining intensity quantifications for each sub-region (n = 4, two independent experiments). Two-way ANOVA followed by Tukey’s post hoc tests. **p<0.01, ***p<0.001; see Source data one for detailed statistical information.
+**Figure 6.:** SUnSET was employed to quantify de novo protein synthesis in the rat hippocampus. Puromycin was co-injected with IgG or anti-CIM6P/IGF2R prior to training, and rats were perfused 2 hr later. Upper panels: representative images of anti-puromycin immunostaining, composite tile scans of whole hippocampus (scale bar, 500 μm). Middle and lower panels: CA1 and DG (scale bar 10 μm). Bar graphs at right show immunostaining intensity quantifications for each sub-region (n = 4, two independent experiments). Two-way ANOVA followed by Tukey’s post hoc tests. **p<0.01, ***p<0.001; see Source data one for detailed statistical information.
 
-## Neuronal CIM6P/IGF2R is a target mechanism for memory enhancement
+### Neuronal CIM6P/IGF2R is a target mechanism for memory enhancement
 
 Previous studies showed that both hippocampal and systemic administration of IGF2 significantly enhances memory retention and persistence (Chen et al., 2011; Stern et al., 2014), and this effect requires hippocampal CIM6P/IGF2R (Chen et al., 2011; Stern et al., 2014). To determine whether the memory-enhancing effect of IGF2 is a function of the receptor, rather than IGF2 per se, we investigated a distinct CIM6P/IGF2R ligand, M6P. Vehicle or varying doses of M6P (0.005, 5, 25 and 150 mM) were injected bilaterally into the rat dorsal hippocampus immediately after IA training to obtain a dose-response curve. We found that 5 mM and 25 mM, but not the other doses, significantly enhanced memory retention (Figure 7a). The effect was long-lasting, and the memory enhancement persisted 1 week after training. These data indicated that CIM6P/IGF2R ligands, as opposed to IGF2, have memory-enhancing effects.
 
@@ -147,55 +167,275 @@ CIM6P/IGF2R has been implicated in several aspects of Alzheimer’s disease (AD)
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (R. norvegicus, male)</td>
+      <td>BluHsd:LE Long-Evans (blue spruce)</td>
+      <td>Envigo</td>
+      <td>RRID:RGD_5508398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Igf2r-floxed mice</td>
+      <td>Dr. David Skaar (NC State University</td>
+      <td>MGI Cat# 3795370, RRID:MGI:3795370</td>
+      <td>C57Bl/6J background, homozygotes used in experiments</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Human IGF-II R (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF2447, RRID:AB_442153</td>
+      <td>5 ng/µL or 50 ng/µL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFAP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab4674, RRID:AB_304558</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Iba1 (rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>Cat# 019–19741, RRID:AB_839504</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CaMKIIα (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 05–532, RRID:AB_309787</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IGF2R (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab124767, RRID:AB_10974087</td>
+      <td>IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1020, RRID:AB_10000240</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Arc (rabbit polyclonal)</td>
+      <td>Synaptic systems</td>
+      <td>Cat# 156 003, RRID:AB_887694</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Egr1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4153, RRID:AB_2097038</td>
+      <td>IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Fos (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2250, RRID:AB_2247211</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cre (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 15036, RRID:AB_2798694</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-47778 HRP, RRID:AB_2714189</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Igf2r forward</td>
+      <td>NM_012756.2</td>
+      <td>Primers</td>
+      <td>TTGCCCTCCAGAAACGGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Igf2r reverse</td>
+      <td>NM_012756.2</td>
+      <td>Primers</td>
+      <td>TACACCACAGTTTCGCTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arc forward</td>
+      <td>NM_019361.1</td>
+      <td>Primers</td>
+      <td>CCCTGCAGCCCAAGTTCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Arc reverse</td>
+      <td>NM_019361.1</td>
+      <td>Primers</td>
+      <td>GAAGGCTCAGCTGCCTGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Fos forward</td>
+      <td>NM_022197.2</td>
+      <td>Primers</td>
+      <td>CCCTGCAGCCCAAGTTCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Fos reverse</td>
+      <td>NM_022197.2</td>
+      <td>Primers</td>
+      <td>GAAGGCTCAGCTGCCTGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egr1 forward</td>
+      <td>NM_012551.2</td>
+      <td>Primers</td>
+      <td>ACCTACCAGTCCCAACTCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egr1 reverse</td>
+      <td>NM_012551.2</td>
+      <td>Primers</td>
+      <td>GACTCAACAGGGCAAGCATAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh forward</td>
+      <td>NM_017008.4</td>
+      <td>Primers</td>
+      <td>GAACATCATCCCTGCATCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh reverse</td>
+      <td>NM_017008.4</td>
+      <td>Primers</td>
+      <td>CCAGTGAGCTTCCCGTTCA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse IGF-II</td>
+      <td>R and D Systems</td>
+      <td>Cat# 792 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Universal Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 73404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 205311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 107–8882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institutes of Health</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X</td>
+      <td>Leica</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult male Long-Evans rats weighing between 200 and 250 g at the beginning of experiments were used in this study. Rats were housed individually after cannulation surgeries. Homozygous male and female Igf2r-floxed mice (a generous gift from Dr. David Skaar, NC State University) were bred in house. Mice, which were 8 weeks old at the beginning of experiments were group housed. All animals were maintained on a 12 hr light/dark cycle, and all experiments were performed during the light cycle. Animals were provided with ad libitum access to food and water and were handled for 3 min per day for 5 days prior to any behavioral procedure. Animals were randomly assigned to treatment or behavioral groups for all experiments. All protocols complied with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee at New York University.
 
-## Cannula implants and hippocampal injections in rats
+### Cannula implants and hippocampal injections in rats
 
 Cannula implants targeting the dorsal hippocampus were performed as described previously (Chen et al., 2011; Ye et al., 2017). Rats were anesthetized with ketamine (75 mg/kg, intraperitoneally [i.p.]) and xylazine (10 mg/kg, i.p.), and stainless-steel guide cannulae (22-gauge) were implanted to bilaterally target the dorsal hippocampus (dHC, 4.0 mm posterior to bregma, 2.6 mm lateral to midline, 2 mm ventral to skull surface) using a stereotaxic apparatus. Rats were administered meloxicam (3 mg/kg, subcutaneously, once pre-surgery), and allowed to recover from surgery in their home cage for at least 7 days before undergoing behavioral experiments. At the indicated time points before or after training or retrieval, rats received bilateral injections of compounds as specified. All injections were delivered in a volume of 1.0 μL over 3 min using a 28-gauge needle (extending 1.5 mm beyond the guide cannula) attached to polyethylene tubing (PE50) connected to 10 μL Hamilton syringes controlled by a micro-infusion pump. Infusions were delivered at a rate of 0.33 μL/min, and the injection needle was left in place for 2 min after the injection to allow complete dispersion of the solution. Cannula placement was verified at the end of the behavioral experiments. To this end, brains were snap-frozen, and 40 μm coronal sections were cut through the hippocampus, and examined under a light microscope. Twelve (out of 235) rats were excluded due to incorrect cannula placement. Anti-CIM6P/IGF2R antibody (R and D Systems # AF2447, Minneapolis, MN, USA) or IgG control was dissolved in PBS and injected at the indicated times at 5 or 50 ng/µL as described. At a concentration of 5 ng/µL, the antibody blocked 95% of CIM6P/IGF2R in an in vitro binding assay (R and D Systems). Puromycin (Sigma, St. Louis, MO, USA) was dissolved in PBS and co-injected (10 µg/side) with anti- CIM6P/IGF2R antibody or IgG, 15 min before IA training. Mannose-6-phosphate (Sigma) was dissolved in PBS and injected immediately after IA training at 5 μM, 5 mM, 25 mM, or 150 mM to generate a dose-response curve.
 
-## Viral injections in mice
+### Viral injections in mice
 
 Mice were anesthetized with ketamine (75 mg/kg, i.p.) and xylazine (10 mg/kg, i.p.). The skull was exposed, and holes were drilled in the skull bilaterally above dHC. A Hamilton syringe with a 32-gauge needle mounted on a nanopump (KD Scientific, Holliston, MA) was stereotactically inserted into dHC (1.7 mm posterior to bregma, 1.5 mm lateral from midline, and 1.55 mm ventral from dura). AAV-DJ-hSyn-Cre-GFP or AAV-DJ-GFP (5.8 × 1012 genomic copies/mL, 1 µL per side; Gene Vector and Virus Core, Stanford University) was microinjected at a rate of 0.2 µL/min. The needle was left in place for an additional 5 min following microinjection to ensure complete diffusion of the AAV, and then slowly retracted. The scalp was sutured, and meloxicam (3 mg/kg, s.c.) was administered as an analgesic treatment. Mice were returned to their home cage for 2 weeks to recover from the surgery and to allow viral expression.
 
-## Subcutaneous injections in mice
+### Subcutaneous injections in mice
 
 Recombinant mouse IGF2 (R and D Systems, # 792 MG) was dissolved in 0.1% bovine serum albumin in PBS (BSA-PBS), and 30 μg/kg was injected subcutaneously. Mannose-6-phosphate (M6P) (Sigma, #M3655) was dissolved in PBS and 850 μg/kg was injected subcutaneously. Vehicle injections consisted of 0.1% BSA-PBS.
 
-## Rat inhibitory avoidance (IA)
+### Rat inhibitory avoidance (IA)
 
 IA experiments were carried out as described previously (Chen et al., 2011; Ye et al., 2017). The IA chamber (Med Associates, St. Albans, VT, USA) consisted of a rectangular Plexiglas box divided into a safe compartment and a shock compartment. The safe compartment was white and illuminated by a light fixture on the compartment wall. The shock compartment was black and unilluminated. Footshock was delivered to the grid floor of this chamber via a constant-current scrambler circuit. The two compartments were separated by an automatically operated sliding door. During training sessions, each rat was placed in the safe compartment with its head facing away from the door. After 10 s (s) the door automatically opened, allowing the rat access to the shock chamber. The door closed 1 s after the rat entered the shock chamber, and a brief, 2 s footshock (0.6 mA or 0.9 mA, as indicated) was administered. Latency to enter the shock compartment was taken as a measure of acquisition. The rat was then returned to its home cage. Retention tests were performed at the indicated times by placing the rat back into the safe compartment and measuring the latency to enter the shock compartment. Footshock was not administered on the retention test, and testing was terminated at 900 s and performed by an experimenter blinded to the treatments given. The reminder shock (RS) procedure was used to test whether impaired memory could be reinstated. RS consisted of giving the animals a 2 s footshock of the same intensity as that received during training in a different context, which consisted of a square chamber (Med Associates) with three transparent walls, one opaque Plexiglas wall, and a floor grid with narrower spacing in a separate, well-lit room. Untrained control rats were handled, but otherwise remained in their home cage.
 
-## Rat open field
+### Rat open field
 
 Rats were allowed to freely explore an open field arena (75 × 75 × 20 cm3) for 10 min, and their movements automatically tracked using EthoVision-XT (Noldus Information Technology, Wageningen, Netherlands). Locomotion was assessed using measures of total distance travelled (cm), as well as average velocity (cm/s). The arena was divided into 16 quadrants, and the time spent (s) in the four center quadrants were taken as time spent in the center, which is generally used as a measure of anxiety.
 
-## Mouse open field
+### Mouse open field
 
 Mice were allowed to freely explore an open field arena (21 × 21 × 15 cm) for 5 min, and their movements automatically tracked using EthoVision-XT software. Locomotion was assessed using measures of total distance travelled (cm), as well as average velocity (cm/s). The arena was divided into 16 quadrants, and the time spent (s) in the four center quadrants were taken as time spent in the center, which is generally used as a measure of anxiety.
 
-## Mouse novel object location (nOL)
+### Mouse novel object location (nOL)
 
 Mice were trained on novel object location (nOL) by placing them into the arena that contained two identical objects (Mega Bloks 120, Quebec, Canada), and were permitted to freely explore for 5 min. Four hours later, mice were placed back into the area after one object had been moved to an alternate location. The other object remained in a constant location for both training and testing. Memory was measured as the percentage of time spent interacting with the object in the new location over the 5 min session. Animal behavior was video-recorded and analyzed off-line by an experimenter blind to the viral treatment.
 
-## Mouse Pavlovian fear conditioning
+### Mouse Pavlovian fear conditioning
 
 The conditioning chamber consisted of a rectangular Perspex box (30.5 × 24.1 × 21.0 cm) with a metal grid floor (Med Associates) through which footshocks were delivered via a constant-current scrambler circuit. Freezing, defined as lack of movement besides heartbeat and respiration, was recorded every tenth second by a trained experimenter blind to the experimental conditions. The percentage of time spent frozen across the total number of observations was calculated (Schrick et al., 2007). The Pavlovian fear conditioning procedure was modified from previous studies (Lovett-Barron et al., 2014; Stern et al., 2014; Zhang et al., 2005). Mice were placed in the conditioning chamber; after 2 min they received one tone–shock pairing (30 s tone co-terminating with a 2 s, 1 mA footshock), and 30 s later they were returned to the home cage. Memory for the training context was tested by placing the mouse back into the conditioning chamber (1 or 7 days after training) for 3 min, in the absence of a footshock. Memory for the tone was tested in an alternate context (2 or 8 days after training). During tone testing, after 1 min in the new context (pre-tone), the tone was played for 2 min. Videos acquired during the 3 min context test, 1 min pre-tone, and 2 min tone were scored by an experimenter blind to the experimental procedures.
 
 Mouse contextual fear conditioning Contextual fear conditioning was conducted similarly to Pavlovian fear conditioning. The procedure only differed in that the 2 s footshock during training was not signaled by a tone. Memory testing was carried out in the training context as described above, at the indicated timepoints after training. In experiments studying memory enhancement, contextual fear conditioning training was carried out using a lower footshock intensity, 0.7 mA, to prevent a ceiling effect in the freezing response.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Rats or mice were anesthetized with chloral hydrate (750 mg/kg) and transcardially perfused with ice-cold PBS (pH 7.4) followed by 4% paraformaldehyde (PFA) in PBS. Brains were isolated and post-fixed overnight in 4% PFA at 4°C, and then submerged in 30% sucrose in PBS for 72 hr. Brain sections (20 um) were cut using a cryostat for free-floating immunofluorescence staining. Sections were subjected to heat-mediated antigen retrieval in nanopure H2O for 2 min at 100°C. The sections were blocked with 10% normal goat serum, 3% bovine serum albumin, and 0.25% Triton X-100 in PBS for 2 hr at room temperature, and then incubated with primary antibodies in 0.25% Triton X-100 in PBS overnight at 4°C. The following primary antibodies were used: chicken anti-GFAP (1:5000, Abcam, #ab4674, Cambridge, MA, USA), rabbit anti-Iba1 (1:5000, Wako, #019–19741, Osaka, Japan), mouse anti-MAP2 (1:5000, Millipore, #MAB3418, Billerica, MA), mouse anti-CaMKIIα (1:1000, Millipore, #05–532), rabbit anti-IGF2R (1:1000, Abcam, #ab124767), chicken anti-GFP (1:1000, Aves Labs, #GFP-1020, Tigard, OR), rabbit anti-Arc (1:2000, Synaptic systems #156 003, Göttingen, Germany), rabbit anti-Egr1 (1:1000, Cell Signaling Technology, #4153, Danvers, MA, USA), and rabbit anti-c-Fos (1:500, Cell Signaling Technology, #2250). Sections were then washed with PBS three times for 10 min, and then incubated in secondary antibody for 2 hr at room temperature. Secondary antibodies used were goat anti-mouse, anti-rabbit, or anti-chicken conjugated to Alexa Fluor 488 or 568 (1:1000, Invitrogen, Waltham, MA, USA). Brain sections were washed with PBS three times for 10 min, and then mounted with Prolong Diamond antifade mounting medium with 4’,6-diamidino-2-phenylindole (DAPI, Invitrogen). Two brain sections from each animal (one section per bregma, at approximately bregma −3.6 mm and −4.0 mm for rats, and −1.7 mm and −2.2 mm for mice from dorsal hippocampus) were used for each set of staining. Image acquisition and quantification analysis were conducted by an experimenter blinded to the experimental conditions. Four images per sub-region (CA1 and DG) were imaged per hemisphere for each animal, yielding a total of 16 images for each sub-region, per animal. Images were captured as 1 µm z-stacks using 10 steps on a TCS SP8 confocal microscope (Leica, Wetzlar, Germany) at 63X magnification. Images were processed and quantified using the ImageJ software (US National Institutes of Health). All images for each independent experiment were processed in the same manner: first, background was subtracted and a maximum projection image was rendered using ImageJ. To quantify the intensity and number of immunopositive cells, images were subjected to thresholding, fill holes, watershed, and analyze particles (Hartig, 2013; Jedlicka et al., 2015; Roy et al., 2016; Vasileiou et al., 2016). For each hippocampal subregion, sixteen images were analysed, and their values normalized against their total number of cells determined using DAPI (4′,6-diamidino-2-phenylindole) staining, a marker commonly used to visualize nuclei. The values per sub-region per each animal were averaged. The data per group of animals in each experimental condition were expressed as intensity or number of positive cells (in %), both normalized against the total number of cells (DAPI staining). For co-localization analysis, single z planes were extracted from the z-stack. To visualize dorsal hippocampus, multiple overlapping images (10% overlap) were captured at 20 × magnification, and a composite image was constructed using the LAS X software (Leica).
 
-## RNA extraction and RT-PCR analyses
+### RNA extraction and RT-PCR analyses
 
 Rats were euthanized by decapitation. Their brains were quickly extracted; dorsal hippocampi from bregma −1.6 mm to −5.4 mm were rapidly dissected on ice using a brain matrix, and then submerged in Qiazol (Qiagen, Hilden, Germany). Total RNA was isolated using the RNeasy Plus Universal Mini Kit (Qiagen, #73404), and 250 ng of RNA was reverse transcribed using QuantiTect Reverse Transcription Kit (Qiagen, #205311). PCR amplification consisted of: initial denaturation at 95°C for 5 min, followed by 40 cycles of 94°C for 30 s, 60°C for 30 s, 72°C for 20 s, and a final extension step at 72°C for 10 min. Quantitative real-time PCR analysis was done using CFX96 Touch Real-Time PCR Detection System (Bio-Rad, Hercules, CA, USA) with iQ SYBR Green Supermix (Bio-Rad, #107–8882). See Key Resources Table for primer sequences.
 
 Three technical replicates were run for each sample, and the average cycle threshold (Ct) value was used for quantification using the relative quantification method. Ct values for genes of interest were normalized against the corresponding values for Gapdh. Values for each animal were expressed as percentage of the value for the control group (as specified in each experiment untrained, or IgG-injected-untrained).
 
-## Whole and synaptoneurosomal protein extracts and western blot analysis
+### Whole and synaptoneurosomal protein extracts and western blot analysis
 
 Rats were euthanized by decapitation. Their brains were quickly extracted and dorsal hippocampi from bregma −1.6 mm to −5.4 mm were rapidly dissected on ice using a brain matrix. The tissue was snap-frozen on dry ice for total extracts. Tissue was homogenized in radioimmunoprecipitation assay (RIPA) buffer (150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS, 5 mM EDTA, 10% glycerol, 50 mM Tris, pH 8.0) supplemented with 0.5 mM PMSF, 2 mM DTT, 1 mM EGTA, 1 μM microcystin LR, 10 mM NaF, 1 mM Na3VO4, benzamidine, protease inhibitor cocktail, and phosphatase inhibitor cocktails (Sigma). Homogenates were centrifuged at 21,300 g at 4°C for 30 min, and the supernatant was retained. Synaptoneurosomal extracts (SN) were prepared as previously described (Chen et al., 2011; Steinmetz et al., 2018). Freshly dissected hippocampi were homogenized with a glass–Teflon homogenizer in ice-cold buffer (10 mM HEPES, 2 mM EDTA, 2 mM EGTA, 0.5 mM DTT, phosphatase and protease inhibitor cocktails [Sigma]). Homogenates were then sequentially filtered through a 100 μm nylon mesh filter and a 5 μm nitrocellulose filter. To obtain SN fractions, the samples were centrifuged at 1000 g at 4°C for 10 min, and the pellets were resuspended in RIPA buffer.
 
@@ -203,10 +443,10 @@ Protein concentrations were determined using the Bio-Rad protein assay (Bio-Rad)
 
 The following primary antibodies were used: rabbit anti-IGF2R (1:1000, Abcam, #ab124767), rabbit anti-Egr1 (1:1000, Cell Signaling Technology, #4153), rabbit anti-Cre (1:1000, Cell Signaling Technology, #15036), and mouse anti-actin (1:10000, Santa Cruz Biotechnology, #sc-47778, Dallas, TX, USA). The membranes were washed three times in TBST for 10 min and incubated in secondary antibodies for 1 hr at room temperature. The following secondary antibodies were used: anti-rabbit IRDye800CW and anti-mouse IRDye680 (1:10000, Li-Cor, Lincoln, NE, USA). After three additional 10 min TBST washes, membranes were scanned on the Li-Cor Odyssey imager under non-saturating conditions. Data were quantified using pixel intensities with the Odyssey software (Li-Cor). Intensities were normalized against the corresponding intensities of actin immunoreactivity and expressed as percentages relative to the control group.
 
-## In vivo SUnSET
+### In vivo SUnSET
 
 Fifteen minutes prior to IA training, puromycin (10 μg) was co-injected with IgG or anti-CIM6P/IGF2R bilaterally into the hippocampus of rats as described above. We used a protocol previously established in the laboratory that showed reliable detection of puromycin incorporation 2 hr after IA training (Descalzi et al., 2019). Rats were transcardially perfused as describe above, and brains were cryosectioned. Similar to the staining procedure described above, coronal sections underwent incubation with a blocking solution for 2 hr at room temperature, and then incubated with mouse anti-puromycin conjugated to Alexa Fluor 647 (1:1000, Millipore #MABE343) for 2 hr at room temperature. After washing three times with PBS for 10 min, the sections were mounted with Prolong Diamond antifade mounting medium with DAPI (Invitrogen), and imaged as described above.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were analyzed using Prism 6 (GraphPad Software, San Diego, CA). The number of independent experiments carried out and the numbers of biological replicates [i.e., animals (n)] are indicated in each figure legend. Data are expressed as means ± standard error of the mean (S.E.M.). No statistical method was used to predetermine sample size. P values were generated using Student’s t-tests, one- or two-way analysis of variance (ANOVA), or repeated measure (RM) ANOVA followed by Sidak or Tukey post hoc tests. All analyses were two-tailed, and data were considered significant when p<0.05. The numbers of subjects used in our experiments were the minimum required to obtain statistical significance, based on our experience with the behavioral paradigm and in agreement with standard literature. Both male and female transgenic mice were used for our experiments. Preliminary statistical analyses comparing males and females (n = 2–4) showed no significant difference in value distribution (unpaired two-tailed Student’s t-test, p>0.05), therefore, males and females were combined into a single group for between group comparisons. Although these values of n are too low for any robust statistical analysis, we decided to group the subjects and to refrain from pursuing sex-related questions.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.28362.001 Sensory preconditioning has been used to implicate midbrain dopamine in model-based learning, contradicting the view that dopamine transients reflect model-free value. However, it has been suggested that model-free value might accrue directly to the preconditioned cue through mediated learning. Here, building on previous work (Sadacca et al., 2016), we address this question by testing whether a preconditioned cue will support conditioned reinforcement in rats. We found that while both directly conditioned and second-order conditioned cues supported robust conditioned reinforcement, a preconditioned cue did not. These data show that the preconditioned cue in our procedure does not directly accrue model-free value and further suggest that the cue may not necessarily access value even indirectly in a model-based manner. If so, then phasic response of dopamine neurons to cues in this setting cannot be described as signaling errors in predicting value.
+Sensory preconditioning has been used to implicate midbrain dopamine in model-based learning, contradicting the view that dopamine transients reflect model-free value. However, it has been suggested that model-free value might accrue directly to the preconditioned cue through mediated learning. Here, building on previous work (Sadacca et al., 2016), we address this question by testing whether a preconditioned cue will support conditioned reinforcement in rats. We found that while both directly conditioned and second-order conditioned cues supported robust conditioned reinforcement, a preconditioned cue did not. These data show that the preconditioned cue in our procedure does not directly accrue model-free value and further suggest that the cue may not necessarily access value even indirectly in a model-based manner. If so, then phasic response of dopamine neurons to cues in this setting cannot be described as signaling errors in predicting value.
 
 ## Introduction
 
@@ -33,9 +33,9 @@ Here we directly addressed this question by assessing the ability of a precondit
 
 ## Results
 
-## Preconditioned cues do not support conditioned reinforcement
+### Preconditioned cues do not support conditioned reinforcement
 
-## Preconditioning
+#### Preconditioning
 
 Rats were first presented with the neutral cues (A→B; C→D) in close succession 12 times each to promote the development of a relationship between them. As expected, since training did not involve presentation of reward, the rats spent little time in the magazine during this phase, and there were no differences between cues (Figure 1A). ANOVA revealed no main effect of cue (F(3,63)=2.12, p>0.05).
 
@@ -43,11 +43,11 @@ Rats were first presented with the neutral cues (A→B; C→D) in close successi
 
 **Figure 1.:** Rates of responding are represented as percent time spent in the magazine during cue presentation (Figures A, B, and D) or number of lever presses (±SEM). Graphs show preconditioning (A), conditioning (B), conditioned reinforcement (C), and Pavlovian probe tests (D).
 
-## Conditioning
+#### Conditioning
 
 Following preconditioning, rats underwent conditioning for 4 days. Each day, rats received 12 presentations of cue B followed by the delivery of two sucrose pellets (B→2US) and 12 presentation of cue D without reward (D→ no US). As training progressed, all rats acquired a conditioned response to cue B as indexed by a greater time spent in the magazine during presentation of this cue as training progressed (Figure 1B). A two-factor ANOVA (cue ×day) showed main effects of cue (F(1,21)=87.47, p<0.05) and day (F(3,63)=4.45, p<0.05) and an interaction between these factors (F(3,63)=21.42, p<0.05).
 
-## Conditioned reinforcement tests
+#### Conditioned reinforcement tests
 
 Following Pavlovian training, we next gave rats two conditioned reinforcement sessions. In the first test, pressing one lever led to a 2 s presentation of cue A (R1→A), and pressing the other lever led to a 2 s presentation of cue C (R2→C). Here, we found that rats made a small number of lever presses on each lever and did not show any difference in the number of lever presses made for presentation of either cue (Figure 1C; left).
 
@@ -55,15 +55,15 @@ To ensure that we could obtain conditioned reinforcement in this cohort of rats,
 
 The difference in the pattern of results seen across the first and second session of the conditioned reinforcement tests was confirmed with statistical analyses. A two-factor ANOVA [cue type (preconditioned vs. conditioned)×reinforcement (rewarded or non-rewarded)] showed no effects of cue type (AC vs BD; F(1,21)=0.82, p>0.05) or reinforcement (AB vs. CD; F(1,21)=1.44, p>0.05), however there was a significant interaction between these factors (F(1,21)=10.92, p<0.05). Simple-main effects analyses showed that the source of this interaction was due to a significant elevation in lever pressing for B that was not observed for the other cues (vs A: F(1,21)=7.64, p<0.05; vs D: F(1,21)=7.38, p<0.05; C vs. D: F(1,21)=3.08, p>0.05; A vs. C: F < 1). Thus, preconditioned cues did not support conditioned reinforcement in the same rats that readily showed conditioned reinforcement for the cue directly paired with reward.
 
-## Pavlovian probe tests
+#### Pavlovian probe tests
 
 It is plausible that the reason we failed to see effective conditioned reinforcement with the preconditioned cue A was because rats failed to learn the relationship between A and B. In this case, they would be failing to press the lever because they were failing to generate the normal expectation, after conditioning, that A might lead to reward. In order to test this hypothesis, we next gave rats two Pavlovian probe tests to assess learning. In the first session, we gave rats unrewarded presentations of A and C; in the second session, we gave rats unrewarded presentations of B and D. We found that rats made more entries into the food port during presentation of either cue A or B, demonstrating effective conditioning and sensory preconditioning (Figure 1D). A two-factor ANOVA [cue type (preconditioned vs. conditioned)×reinforcement (rewarded or non-rewarded)] revealed a main effect of reinforcement (AB vs CD; F(1,21)=15.11, p<0.05). There was also a main effect of cue type (AC vs BD; F(1,21)=9.39, p<0.05), likely reflecting that the A vs. C extinction tests were given prior to the B vs D tests since the A vs. C test is the critical comparison. Importantly, however, there was no interaction with cue type (F < 1). Thus, rats spent a greater amount of time in the food port during presentation of cues A and B relative to cues C and D, and there was no difference in the magnitude of this difference. In order to full rule out any possibility that the lack of conditioned reinforcement observed to the preconditioned cue A was due to a failure of sensory preconditioning, we also separately tested the difference between A and C. This analysis revealed a significant difference between responding to A and C (F(1,21)=5.35, p<0.05).
 
-## Second-order conditioned cues do support conditioned reinforcement
+### Second-order conditioned cues do support conditioned reinforcement
 
 Our first experiment showed that a preconditioned cue is insufficient for conditioned reinforcement, whereas a cue directly paired with a valuable reward was sufficient. To confirm that this effect was not simply the result of the introduction of an additional cue between the preconditioned cue and the reward, we conducted a second experiment in which we tested the ability of a second-order conditioned cue to support conditioned reinforcement. Importantly, the second-order cue is trained exactly like the preconditioned cue except that the pairing of the neutral cues (A→B; C→D) occurs after rather than before training with reward (B→2US; D→ no US).
 
-## Conditioning
+#### Conditioning
 
 Conditioning lasted for 4 days. Each day, the rats received 12 presentations of cue B followed by delivery of two sucrose pellets and 12 unrewarded presentations of cue D. As training progressed, all rats acquired a conditioned response to cue B (Figure 2A). A two-factor ANOVA (cue ×day) revealed a main effect of cue (F(1,14)=37.13, p<0.05), a main effect of day (F(1,14)=6.32, p<0.05), and a significant interaction between these factors (F(1,14)=8.47, p<0.05).
 
@@ -71,15 +71,15 @@ Conditioning lasted for 4 days. Each day, the rats received 12 presentations of 
 
 **Figure 2.:** Rates of responding are represented as percent time spent in the magazine during cue presentation (Figures A, B, and D) or number of lever presses (±SEM). Graphs show preconditioning (A), conditioning (B), conditioned reinforcement (C), and Pavlovian probe tests (D).
 
-## Second-order conditioning
+#### Second-order conditioning
 
 Following conditioning, rats were presented with the neutral cues (A→B; C→D) in close succession 12 times each to promote the development of a relationship between them. Rats spent more time in the magazine during cues A and B relative to cues C and D (Figure 2B). This was confirmed with statistical analyses. A two-factor ANOVA [cue type (second-order conditioned vs. conditioned)×reinforcement (rewarded or non-rewarded)] a main effect of reinforcement (AB vs CD; F(1,14)=17.13, p<0.05), but no interaction (F(1,14)=2.19, p>0.05) nor main effect of cue type (AC vs BD; F(1,14)=4.04, p>0.05). Thus, rats spent a greater amount of time in the food port during presentation of cues A and B relative to cues C and D, and there was no difference in the magnitude of this difference.
 
-## Conditioned reinforcement tests
+#### Conditioned reinforcement tests
 
 Following second-order conditioning, we again gave rats two conditioned reinforcement tests. In the first, rats could press either lever for a 2 s presentation of cue A or C (R1→A; R2→C). In the second, rats could press these levers for either a 2 s presentation of cue B or D (R1→ B; R2→D). In both tests, we found that rats would press the lever more for the cue paired either directly or indirectly with reward (i.e. A and B relative to C and D; Figure 2D). A two-factor ANOVA [cue type (second-order conditioned vs. conditioned)×reinforcement (rewarded or non-rewarded)] showed a significant main effect of reinforcement (AB vs.CD; F(1,14)=5.07, p<0.05), but no main effect nor any interaction with cue type (AC vs BD; F < 1). Thus A and B both supported conditioned reinforcement and did so to a similar degree.
 
-## Pavlovian probe tests
+#### Pavlovian probe tests
 
 Following the conditioned reinforcement tests, we gave rats two probe test to assess the ability of the cues A and B to promote entry into the food port. In the first, we gave rats unrewarded presentations of cue A and C. In the second, we gave rats unrewarded presentations of cue B and D. Rats spent a larger proportion of time in the magazine during presentation of cues A and B relative to cues C and D, confirming the second-order conditioning effect. A two-factor ANOVA [cue type (preconditioned vs. conditioned)×reinforcement (rewarded or non-rewarded)] revealed a main effect of reinforcement (AB vs CD; F(1,14)=14.07, p<0.05) but no main effect nor any interaction with cue type (AC vs BD; F < 1). Thus, rats spent a greater amount of time in the food port during presentation of cues A and B relative to cues C and D and there was no difference in the magnitude of this difference.
 
@@ -95,26 +95,26 @@ Our data also raise questions as to whether preconditioned cues access, at least
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Thirty-seven experimentally-naïve male Long-Evans rats (NIDA breeding program) were used in these experiments. Rats were maintained on a 12 hr light-dark cycle, where all behavioural experiments were conducted during the light cycle. Prior to behavioural testing, rats were placed on food restriction and maintained on ~85% of their free-feeding body weight. All experimental procedures were conducted in accordance with Institutional Animal Care and Use Committee of the US National Institute of Health guidelines.
 
-## Apparatus, cues, and general procedures
+### Apparatus, cues, and general procedures
 
 Training was conducted in eight standard behavioural chambers (Coulbourn Instruments; Allentown, PA) individually housed in light- and sound-attenuating chambers. Each chamber was equipped with a pellet dispenser that delivered one 45 mg pellet into a recessed magazine when activated. Access to, and duration spent in, the magazine was detected by means of infrared detectors mounted across the mouth of the recess. The chambers contained an auditory stimulus generator, which delivered the tone and siren stimulus through a common speaker on the top right-hand side of the front chamber wall when activated. A second speaker on the back wall of the chamber, connected to another auditory stimulus generator, delivered the white noise stimulus. Finally, a heavy-duty relay delivering a 5 kHz clicker stimulus was located on the top left-hand side of the front chamber wall. During conditioned reinforcement tests, two levers were placed in the behavioural chamber, on the left or right side of the front wall, and the magazine and pellet dispenser were removed. A computer equipped with Coulbourn Instruments software (Allentown, PA) controlled the equipment and recorded the responses. Cues A and C were either a white noise or clicker, and cues B and D were either a tone or siren (counterbalanced across rats). During Pavlovian training, stimuli were 10 s in length, and the order of trials was randomly intermixed and counterbalanced, with inter-trial intervals (ITI) averaging 6 min. During conditioned reinforcement testing, lever pressing produced 2 s of the relevant cue. Prior to training, all rats were shaped to enter the magazine to retrieve reward (two 45 mg sucrose pellets; 5TUT, Test Diet, MO), receiving 30 pellets in the magazine across a one hour period. Subsequently, rats received 2 sessions of training each day, one in the morning and one in the afternoon.
 
-## Sensory preconditioning
+### Sensory preconditioning
 
 Rats began with 2 sessions of compound cue training. In each session, rats received 6 presentations of serial compounds A→ B and C→ D, where cues A or C were immediately followed by presentation of cue B or D. Subsequently, rats underwent conditioning where cue B was followed by presentation of sucrose pellets while D was presented without reward. Rats received a total of 8 conditioning sessions with each consisting of six reinforced presentations of B and six non-reinforced presentation of D.
 
-## Second-order conditioning
+### Second-order conditioning
 
 Rats began with 8 sessions of conditioning. In each session, rats received six reinforced presentations of B and six non-reinforced presentation of D. Subsequently, rats underwent 2 sessions of compound cue training, consisting of 6 presentations of serial compounds A→ B and C→ D, where cues A or C were immediately followed by presentation of cue B or D.
 
-## Conditioned reinforcement and pavlovian probe tests
+### Conditioned reinforcement and pavlovian probe tests
 
 Following Pavlovian training, rats received two conditioned reinforcement tests each lasting 30 min. For these tests, levers were inserted in the chamber and the food magazine was removed (Burke et al., 2008). In the first test session, pressing one lever resulted in immediate 2 s presentation of cue A, while pressing the other lever resulted in a 2 s presentation of cue C (counterbalanced). In the second, the lever presses resulted in an immediate 2 s presentation of either cue B or D. To ensure that all animals learnt the associations promoted by sensory preconditioning, we also conducted two probe tests following conditioned reinforcement. In these tests, the levers were removed, and the food magazine was put back into the chamber. In the first probe test, rats received 6 presentation of cue A and C and magazine entries were measured. In the second, rats received six presentations each of cue B and D. No reward was presented during either the conditioned reinforcement or probe tests.
 
-## Statistical analyses
+### Statistical analyses
 
 Conditioned responding was measured as the fraction of time that the rats spent in the food magazine during cue presentation. This was restricted to the last five seconds when cues led to reward or a reward-paired cue, reflecting the normal escalation of responding towards the end of the cue when the reward is more likely to be delivered (i.e. inhibition of delay). Analyses on data from the final Pavlovian probe tests were conducted on the first two trials of each cue in the test session. Conditioned reinforcement was measured as the sum of the lever presses made across the full 30 min of each test session. All statistics were conducted using SPSS 24 IBM statistics package (Sharpe and Killcross, 2014). Generally, analyses were conducted using a mixed-design repeated-measures analysis of variance (ANOVA). All analyses of simple main effects were planned and orthogonal and therefore did not necessitate controlling for multiple comparisons.

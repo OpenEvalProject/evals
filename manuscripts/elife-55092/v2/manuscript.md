@@ -53,21 +53,175 @@ In the present study, we assessed if 1/f spectral dynamics, in particular in the
 
 We tested if non-oscillatory brain activity as quantified by the spectral slope of the electrophysiological power spectrum could discriminate different states of arousal in four independent studies: We obtained both (1) scalp EEG (n = 9) and (2) intracranial EEG (n = 12) under general anesthesia with propofol. Furthermore, we recorded (3) scalp EEG (n = 20) as well as (4) scalp EEG combined with intracranial EEG (n = 10) during a full night of sleep. We utilized both extra- and intracranial recordings to assess the precise spatial extent of the observed effects. In line with previous reports, the spectral slope was defined by a linear fit to the power spectrum in log-log space between 30 and 45 Hz (Gao et al., 2017). Critically, we carefully validated the chosen parameters in a series of control analyses as indicated below.
 
-## 1/f spectral dynamics during propofol anesthesia
+### 1/f spectral dynamics during propofol anesthesia
 
 We first tested if the spectral slope discriminates wakefulness and propofol anesthesia in humans in two experiments. In the first study, we recorded scalp EEG during general anesthesia for orthopedic surgery in otherwise healthy adults (Study 1, n = 9). In the second study, we obtained intracranial EEG in epilepsy patients who were implanted with intracranial electrodes for seizure onset localization while they underwent general anesthesia for electrode explantation (Study 2, n = 12; subdural grid electrodes (electrocorticography; ECoG) and stereotactically placed depth electrodes (SEEG; coverage see Figure 1—figure supplement 1a).
 
 In Study 1 (n = 9), we found that the time-resolved spectral slope closely tracked changes in arousal levels while subjects underwent propofol anesthesia (Figure 1a). Specifically, we observed a significant decrease of the spectral slope from wakefulness (−1.84 ± 0.30; mean ± SEM) to anesthesia (−3.10 ± 0.20) when averaged across all electrodes (Figure 1b; permutation t-test: p<0.0001, obs. t8 = 7.09, dWake-Anesthesia = 1.65).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig1-v2.jpg)
+
+**Figure 1.:** (a) Time-resolved average of three frontal EEG channels (F3, Fz, F4) during anesthesia. Upper panel: Time-frequency decomposition. Dotted white line: Induction with propofol. Middle: Spectral slope (black; mean ± SEM). Lower panel: Slow frequency (<1.25 Hz; gray) and alpha (8–12 Hz; purple) baseline-corrected power (mean ± SEM). Note, elevated slow frequency activity is already present during wakefulness. While alpha frequency activity is steadily increasing in the first minutes of anesthesia, slow frequency activity exhibits a waxing and waning pattern which may reflect the premedication with a sedative. (b) Anesthesia in scalp EEG (n = 9). Upper panel: Spatial extent of spectral slope difference. Cluster permutation test: *p<0.05. Lower panel: Left - Power spectra (mean ± SEM); Right – Spectral slope. Wakefulness (red), anesthesia (blue) and grand average (black; all mean ± SEM). Permutation t-test: ***p<0.001. (c) Anesthesia in intracranial recordings (n = 12). Upper panel: Left – coronal, right – axial view of intracranial channels that followed (magenta) or did not follow (white) the EEG pattern of a lower slope during anesthesia compared to wakefulness. Lower panel: Left – Power spectra; Right – Spectral slope. Wakefulness (red), anesthesia (blue) and grand average (black; mean ± SEM). Permutation t-test: ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Anesthesia intracranial EEG – Grid, strip and SEEG contacts of all subjects (n = 12) plotted on a Montreal Neurological Institute (MNI) brain. Right (R), left (L), ventral (V), dorsal (D). (b) Sleep intracranial EEG – Grid and SEEG contacts of all subjects (n = 10) plotted on MNI brain. Right (R), left (L), ventral (V), dorsal (D).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a), All grid and strip contacts of 4 patients plotted on MNI brain. Electrodes that followed the pattern of a more negative slope under anesthesia than in waking are colored in purple to magenta. Electrodes that did not show the pattern are depicted in white. Right (R), left (L), ventral (V), dorsal (D). (b) All grid and strip contacts of 3 patients plotted on MNI brain. Electrodes that followed the pattern of a more negative slope in NREM stage three sleep than in waking are colored purple to magenta. Electrodes that did not show the pattern are depicted in white. Ventral (V), dorsal (D). (c) All grid and strip contacts of 3 patients plotted on MNI brain. Electrodes that followed the pattern of a more negative slope in REM sleep than in waking are colored in purple to magenta. Electrodes that did not show the pattern are depicted in white. Ventral (V), dorsal (D).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Single subject example at EEG electrode Fz during induction of propofol anesthesia. Left panels – Original observation: 10 s segments (nine discrete prolate spheroidal sequences (dpss) tapers). Right panels – New observation: 30 s segments (29 dpss tapers). Upper panels - Multitapered (MT) time-frequency decomposition. Middle panels – Time-resolved spectral slope (gray; mean ± SEM). Lower panels – Slow oscillation (<1.25 Hz; gray) and alpha power (8–12 Hz; purple; mean ± SEM). Dotted lines: Induction with propofol. Note the temporal smoothing with 30 s compared to 10 s segments. MT power spectra in log-log space (left panels; mean ± SEM) and 1/f slope (right panels; black - mean ± SEM) in wakefulness (Wake - red) and under general anesthesia with propofol (Ana - blue) in scalp EEG (n = 9; averaged across all channels). (b) Original observation: Power spectra and slopes calculated in 10 s segments (blue; nine dpss tapers). ***p<0.001. (c) New observation: Power spectra and slopes calculated in 30 s segments (orange; 29 dpss tapers). ***p<0.001. (d) At electrode Fz, the 1/f slope values derived from 10 and 30 s segments in anesthesia scalp EEG are strongly correlated (n = 9; r = 1.00, p<0.0001).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Spectral slopes were calculated using either the original (30 to 45 Hz; panels a - c) or a wider frequency range (1 to 40 Hz; panels d - f). (a) 1/f spectral slopes in wakefulness (Wake, red) and under anesthesia (Ana, blue) using the original polyfit (Orig., orange), FOOOF (blue) or eBOSC (purple) algorithm between 30 and 45 Hz (n = 9, averaged across electrodes). Paired t-tests (uncorrected): Orig.-FOOOF: p=0.082, t8 = 1.99, d = 0.18; Orig.- eBOSC: p=0.369, t8 = −0.95, d = −0.03, FOOOF - eBOSC: p=0.118, t8 = −1.75, d = −0.21. n.s. – not significant. (b) At Fz, 1/f slopes from original polyfit (Orig., orange) and FOOOF (blue; left panel: r = 0.98, p<0.001) and original and eBOSC (purple; right panel: r = 1.00, p<0.001) between 30 and 45 Hz are strongly correlated. (c) 1/f spectral slopes in wakefulness (Wake, red) and under anesthesia (Ana, blue) using the original polyfit (Orig., orange), FOOOF (blue) or eBOSC (purple) algorithm between 1 and 40 Hz (n = 9, averaged across electrodes). Paired t-tests (uncorrected): Orig.-FOOOF: p=0.003, t8 = −4.29, d = −0.49; Orig.- eBOSC: p=0.007, t8 = −3.60, d = −0.29, FOOOF - eBOSC: p=0.112, t8 = 1.78, d = 0.21. n.s. – not significant. **p<0.01. (d) At Fz, 1/f slopes from original polyfit (Orig., orange) and FOOOF (blue, left panel: r = 0.97, p<0.001) and from original and eBOSC (purple, right panel: r = 0.97, p<0.001) between 1 and 40 Hz are strongly correlated. (e) Comparison of effect size (Cohen’s d) between spectral slopes in wakefulness and anesthesia (n = 9) result in no significant difference between fits in all three fitting algorithms (original – orange, FOOOF – blue, eBOSC – purple). Permutation t-tests: Orig.30-45 - Orig.1-40: p=0.773, obs. t8 = −0.84, d = −0.37; fooof30-45 – fooof1-40: p=0.737, obs. t8 = −0.63, d = −0.28; eBOSC30-45 – eBOSC1-40: p=0.672, obs. t8 = −0.47, d = −0.20; Orig.30-45 -fooof30-45: p=0.242, obs. t8 = 0.72, d = 0.03; Orig.30-45-eBOSC30-45: p=0.098, obs. t8 = −1.40, d = −0.01; fooof30-45- eBOSC30-45: p=0.173, obs. t8 = −1.01, d = −0.04. n.s. – not significant. (f) Linear Discriminant Analysis (LDA) using either the spectral slope between 30 and 45 or 1 and 40 Hz (n = 9). Performances were logit-transformed and averaged across channels before comparison. The 1 to 40 Hz performed better than 30 to 45 Hz (Slope30-45: 76.56 ± 3.56% (mean ± SEM), Slope1-40: 83.75 ± 2.31%; permutation t-test: p=0.023, obs. t8 = -2.49, d = -0.83) possibly by including the strong alpha oscillation that occurs under propofol anesthesia (compare Figure 1). *p<0.05.
+
 A cluster-based permutation test assessing the spatial extent of this effect on the scalp level resulted in a single large cluster that spanned all 25 electrodes without a clear peak (p<0.001; Figure 1b). To further examine the spatial distribution of the observed scalp EEG pattern and to assess subcortical contributions, we utilized intracranial recordings in Study 2 (n = 12). Again, we observed that the spectral slope was higher during wakefulness (−2.75 ± 0.15) than during anesthesia (−4.34 ± 0.11) when averaged across all electrodes (Figure 1c; permutation t-test: p<0.0001, obs. t11 = 9.93, dWake-Anesthesia = 3.57). This effect was present at the majority of recording sites (470 of 485 SEEG (96.9%); Figure 1c, Table 1). Notably, recordings from subdural grid electrodes (n = 4) showed the same pattern: The spectral slope decreased from wakefulness to anesthesia in the majority of recording sites (129 of 147 ECoG (87.75%); Figure 1—figure supplement 2a).
+
+**Table 1.**
+ Anatomical distribution of stereotactically placed intracranial depth electrodes in Study 2 – Intracranial anesthesia (n = 12).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain region</th>
+      <th>Total number of electrodes</th>
+      <th>Electrodes with state-dependent slope modulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALL</td>
+      <td>485</td>
+      <td>470 (96.9 %)</td>
+    </tr>
+    <tr>
+      <td>Prefrontal Cortex (PFC)</td>
+      <td>179</td>
+      <td>175 (97.8 %)</td>
+    </tr>
+    <tr>
+      <td>medial Prefrontal Cortex (mPFC)</td>
+      <td>27</td>
+      <td>27 (100 %)</td>
+    </tr>
+    <tr>
+      <td>lateral Prefrontal Cortex (lPFC)</td>
+      <td>147</td>
+      <td>143 (97.3 %)</td>
+    </tr>
+    <tr>
+      <td>Orbito-frontal Cortex (OFC)</td>
+      <td>5</td>
+      <td>5 (100 %)</td>
+    </tr>
+    <tr>
+      <td>Medial temporal Lobe (MTL)</td>
+      <td>40</td>
+      <td>1 (95.0 %)</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>26</td>
+      <td>24 (92.3 %)</td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>13</td>
+      <td>13 (100 %)</td>
+    </tr>
+    <tr>
+      <td>Cingulate Cortex</td>
+      <td>22</td>
+      <td>22 (100 %)</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>13</td>
+      <td>13 (100 %)</td>
+    </tr>
+    <tr>
+      <td>M1/Premotor</td>
+      <td>48</td>
+      <td>47 (97.9 %)</td>
+    </tr>
+    <tr>
+      <td>Lateral Temporal Cortex (LTC)</td>
+      <td>50</td>
+      <td>50 (100 %)</td>
+    </tr>
+    <tr>
+      <td>Parietal Cortex</td>
+      <td>84</td>
+      <td>78 (92.9 %)</td>
+    </tr>
+    <tr>
+      <td>Visual Cortex</td>
+      <td>49</td>
+      <td>47 (95.9 %)</td>
+    </tr>
+  </tbody>
+</table>
 
 Taken together, we observed a more negative spectral slope under anesthesia compared to wakefulness in both scalp as well as intracranial EEG (Figure 1b,c). Our results indicate that the spectral slope differentiates between wakefulness and general anesthesia in humans. This effect spanned all scalp and the majority of intracranial electrodes, hence, supporting the notion that propofol anesthesia induces a global, brain-wide state change (Brown et al., 2010).
 
-## 1/f spectral dynamics discriminate wakefulness, NREM and REM sleep
+### 1/f spectral dynamics discriminate wakefulness, NREM and REM sleep
 
 Having established that the spectral slope differs significantly between wakefulness and propofol anesthesia, we next examined if this state-dependent modulation generalized to other forms of decreased arousal, such as sleep. We specifically sought to determine if the spectral slope could discern wakefulness from different sleep stages. We analyzed two datasets obtained during a full night of sleep. In Study 3, we obtained polysomnography recordings from 20 healthy subjects, which included scalp EEG, as well as electrocardiography (ECG), electromyography (EMG) and electrooculography (EOG). To determine the precise spatial extent and subcortical contributions, we again recorded intracranial EEG in a separate cohort for Study 4 (n = 10; electrode coverage see Figure 1—figure supplement 1b). Critically, we combined intracranial EEG with polysomnography (scalp EEG, ECG, EMG, EOG) to enable comparable sleep staging across both the scalp and intracranial studies.
 
 We observed that the time-resolved spectral slope closely tracked the technician-scored hypnogram (Figure 2a). To quantify this effect, we compared spectral slope estimates across wakefulness, N3 and REM sleep. In Study 3, we obtained a separate baseline eyes-closed recording during rest in 14 out of 20 subjects. In this subset, we observed prominent slope differences between quiescent rest (−1.87 ± 0.18; mean ± SEM), N3 sleep (−3.46 ± 0.16) and REM sleep (−4.73 ± 0.23; Figure 2b). These differences were significant when averaged across all scalp EEG channels (repeated-measures ANOVA permutation test: p<0.0001, obs. F1.94, 25.17 = 56.05, dRest-Sleep = 3.07). Notably, N2 sleep exhibited an average slope of −3.67 ± 0.10 that was also significantly below rest (Figure 2—figure supplement 1a; permutation t-test: pRest-N2 <0.0001; obs. t13 = 7.97; dRest-N2 = 3.31). Permutation t-tests revealed a significant difference between rest and N3 (pRest-N3 <0.0001, obs. t13 = 5.69, dRest-N3 = 2.49), between rest and REM (pRest-REM <0.0001, obs. t13 = 11.67, dRest-REM = 3.71) and between N3 and REM sleep (pN3-REM = 0.0001, obs. t13 = 4.44, dN3-REM = 1.70). Importantly, while some overlap of absolute spectral slope values between rest and sleep existed when comparing across individuals (Figure 2—figure supplement 1a), we observed a consistent individual decrease of – 2.06 ± 0.21 (mean ± SEM) between rest and all sleep stages (Figure 2—figure supplement 1b; Rest-N1 = −1.95 ± 0.26, Rest-N2 = −1.81 ± 0.23, Rest-N3 = −1.59 ± 0.28, Rest-REM = −2.86 ± 0.25).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-v2.jpg)
+
+**Figure 2.:** (a) Time-resolved average of three frontal EEG channels (F3, Fz, F4) during a night of sleep. Upper panel: Expert-scored hypnogram (black), wake (pink), REM (light green). Upper middle: Time-frequency decomposition. Lower middle: Spectral slope (black; mean ± SEM). Lower panel: Slow frequency (<1.25 Hz) power (gray; mean ± SEM). (b) Sleep in scalp EEG. Upper panel: Left: Slope difference between sleep and rest (n = 14). Cluster permutation test: *p<0.05. Right: Mutual Information (MI) between the time-resolved slope and hypnogram (n = 20). Cluster permutation test against surrogate distribution created by random block swapping: *p<0.05. Lower panel: Left - Power spectra (n = 14; mean ± SEM); Right – Spectral slope (n = 14). Rest (magenta), NREM stage 3 (blue), REM sleep (green) and grand average (black; mean ± SEM). Repeated measures ANOVA permutation test: ***p<0.001. (c) Sleep in intracranial EEG (n = 10). Upper panel: Left – coronal, right – axial view of intracranial channels that followed (magenta) or did not follow (white) the EEG pattern of a lower slope during sleep (REM/N3). Lower panel: Left – Power spectra (mean ± SEM); Right – Spectral slope of simultaneous EEG recordings (Fz, Cz, C3, C4, Oz). Wakefulness (red), NREM stage 3 (N3; blue), REM sleep (green) and grand average (black; mean ± SEM). Repeated measures ANOVA permutation test: ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Left – Mean power spectra (± SEM) averaged across all channels and subjects (n = 14) during rest recording of 5 min eyes closed recorded before sleep compared to all sleep stages. Right – Slope values. Mean ± SEM in black. Repeated measures ANOVA: ***p<0.001, F2.54, 33.02 = 38.02, dRest-Sleep = 3.52. Post-hoc t-tests: pRest-N2 <0.001; t13 = 7.97; d = 3.31; pRest-N3 <0.001; t13 = 5.69; d = 2.49; pRest-REM <0.001; t13 = 11.67; d = 3.71; pN3-REM < 0.0001; t13 = 4.44; d = 1.70. (b) Slope differences of all sleep stages to rest (n = 14). Mean ± SEM in black. (c) Left - Mean power spectra (± SEM) averaged across all channel and subjects (n = 20) during wakefulness and all sleep stages. Right - Slope values. Mean ± SEM in black. Repeated measures ANOVA: ***p<0.001, F1.86, 33.49 = 13.39, dWake-Sleep = 0.79. Post-hoc t-tests: pWake-N2 = 0.029, t18 = 2.36, d = 0.69; pWake-N3 = 0.19; t18 = 1.34; d = 0.48; pWake-REM <0.0001; t18 = 6.83; d = 1.58; pN3-REM < 0.0001; t19 = 5.12; d = 1.66. (d) Slope difference of all sleep stages to all wake trials (n = 20) and anesthesia to wake trials before anesthesia (n = 8). Mean ± SEM in black. (e) Histogram of slope values pooled across all participants (n = 20). Wakefulness (red), N3 (blue), REM (green). Left: Separated values of each sleep stage. Right: All three sleep stages within one plot.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Laplacian reference (n = 20). Upper topoplot: Cluster permutation test of Spearman rank correlation between hypnogram and time-resolved slope: *p<0.05. Lower topoplot: Mututal Information between slope and hypnogram. Statistics with random block swapping: *p<0.05. (b) Cluster permutation test of Spearman rank correlation between hypnogram and time-resolved slope with electromyography (EMG) slope partialled out (n = 20): *p<0.05. (c) Hypnogram of a single subject (upper panel), time-resolved slope averaged over EEG channels F3, Fz and F4 (middle panel), time-resolved slope of EMG signal averaged over three EMG channels (lower panel). (d) EMG signal on group level across a full night (n = 20). Left: Power spectra of EMG (mean ± SEM). Right: Slope of EMG in wakefulness (red), NREM stage 3 (N3; blue), REM (green), grand average (black, mean ± SEM). (e) R2 of Spearman rank correlations averaged across all channels between hypnogram and slope (magenta), EMG slope (cyan) and the slope with the EMG slope partialled out (yellow, all mean ± SEM). The correlation of hypnogram - slope and hypnogram - EMG slope is significantly different (paired t-test: p=0.0059, t19 = 3.10). Furthermore, we utilized the LDA classification approach to test if the spectral slope outperforms the EMG slope for state discrimination (n = 19; one patient excluded due to noisy wake trials). We found that the spectral slope performed significantly better at distinguishing all three states (slope: 58.09 ± 2.35%, EMG slope: 46.03 ± 2.12%; chance 33%; paired t-test: p<0.001, t18 = 4.19, d = 1.24). Likewise, the slope was better at discriminating only wake and REM (slope: 76.32 ± 3.61%, EMG slope: 64.89 ± 2.24%; chance 50%; paired t-test: p=0.008, t18 = 3.03, d = 0.89).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Sleep in intracranial study (n = 10). Upper panel: Left – coronal, right – axial view of intracranial channels that followed the EEG pattern of a lower slope during sleep (REM/NREM 3) compared to wakefulness. Color coded from black – no difference to yellow – strong difference. Note the lighter colored electrodes in medial prefrontal and medial temporal lobe areas. (b) Delta (Δ) slope between wakefulness and sleep source-interpolated on a standard template brain in MNI space with an LCMV beamformer (n = 19; one patient had to be excluded due to insufficient wake trials). Upper row – Sagittal views of right, lower row – sagittal view of left hemisphere. Color coded from black – no difference to yellow – strong difference. Note the lighter colored areas in medial prefrontal areas. V – ventral, D – dorsal. (c) Upper row - Regions of interest (ROI) source-interpolated on to a template brain in MNI space. Medial prefrontal cortex (mPFC) in red, dorso-lateral prefrontal cortex (dlPFC) in blue. Lower row - Delta (Δ) slope between wakefulness and sleep in mPFC and dlPFC. Only mPFC shows a significant sleep-dependent slope modulation (permutation t-test vs. zero: pmPFC = 0.018, pdlPFC = 0.074; permutation t-test between ROIs: pmPFC-dlPFC: p=0.036). *p<0.05. n.s. – not significant.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Left – coronal, right – axial view of electrodes that followed the observed EEG pattern with a more negative slope in NREM sleep stage three than waking (magenta). Electrodes that did not show the pattern are depicted in white. Right (R), left (L). (b) Left – coronal, right – axial view of electrodes that followed observed EEG pattern with a more negative slope for REM sleep than in waking (magenta). Electrodes that did not show the pattern are depicted in white. Right (R), left (L).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Fit center: Spearman rank correlation (blue, left panels) and Mutual Information (MI; green, right panels) between slope and hypnogram with different slope fits with center frequencies from 20 to 150 ± 10 Hz with SEM in intracranial data during sleep (n = 10). Upper left panel – R2 and lower left panel – p-value of Spearman rank correlation (blue). Upper right panel – MI and lower right panel – p-value of original MI observation tested against a surrogate MI distribution created by random block swapping (green). Red dotted lines for a p-value of 0.05. Black arrow indicates used center frequency of 40 Hz (30 to 50 Hz). (b) Fit length: Spearman rank correlation (blue, left panels) and Mutual Information (MI; green, right panels) with different slope fit lengths from 30 to 40 Hz up to 30 to 130 Hz (10 to 100 Hz fit length) with SEM in intracranial data during sleep (n = 10). Upper left panel – R2 and lower left panel – p-value of Spearman rank correlation (blue). Upper right panel – MI and lower right panel – p-value of original MI observation tested against a surrogate MI distribution created by random block swapping (green). Red dotted line for a p value of 0.05. Black arrow indicates used fit length for this study (20 Hz; 30 to 50 Hz). (c) Mixed (left) and fractal component (right) of power spectra in scalp EEG (n = 20) after IRASA. (d) Z-value of surrogate distribution (random block swapping) of Mutual Information (MI) between slope and hypnogram using the original (blue, 30 to 45 Hz) and different slope fits to fractal component (obtained by IRASA) in lower frequencies (scalp EEG, n = 20). Note that a z = 1.96 reflects an uncorrected two-tailed p-value of 0.05, while a z-score of >2.8 indicates a Bonferroni-corrected significant p-value (p<0.05/19 channels=0.0026).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (a) Single subject example of time-resolved average of three frontal EEG channels (F3, Fz, F4) during a night of sleep. Upper panel: Expert-scored hypnogram (black), wake (pink), REM (light green). Upper middle panel – Time-frequency decomposition using the original Multitaper approach (orange) with 29 discrete prolate spheroidal sequences (dpss) tapers. Middle panel - Time-frequency decomposition using a single Hanning taper (blue). Lower middle panel - Time-frequency decomposition using a Periodogram (green). Lower panel - Time-frequency decomposition using Welch’s method with no overlap and a single taper (purple). Note, the visually smoother resolution of the multi-taper approach in comparison to the other time-frequency decompositions. (b) The Multitaper approach (MT, orange) had a significantly better signal-to-noise ratio (mean divided by standard deviation) at electrode Fz than the other approaches (single taper (ST, blue), Periodogram (green) and Welch’s method (purple); n = 20). This was true for all frequencies tested (0.5 to 45 Hz; cluster permutation test p<0.001). *p<0.05.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (a) Single subject example at EEG electrode Fz during a full night of sleep. Upper panel – Technician scored hypnogram. Wake periods highlighted in pink, REM in green. Middle Panel - Original observation: Multitapered (MT) time-frequency decomposition with 30 s segments (29 dpss tapers). Lower panel – New observation: MT time-frequency decomposition with 10 s segments (nine dpss tapers). MT Power spectra in log-log space (left panels; mean ± SEM) and 1/f slope (right panels; black - mean ± SEM) during baseline rest (BL - magenta), in NREM sleep stage 3 (N3 - blue) and REM sleep (REM - green) in scalp EEG (n = 14; averaged across all channels). (b) Original observation: Power spectra and slopes calculated in 30 s segments (orange; 29 dpss tapers). ***p<0.001. (c) New observation: Power spectra and slopes calculated in 10 s segments (blue; nine dpss tapers). ***p<0.001. (d) At electrode Fz, the 1/f slopes derived from 30 and 10 s segments in sleep scalp EEG are strongly correlated (n = 14; r = 0.95, p<0.0001).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (a) Single subject example of time-resolved average at EEG electrode Fz during a full night of sleep. Upper panel: Expert-scored hypnogram (black), wake (pink), REM (light green). Multitapered time-frequency decomposition using: Upper middle panel – the original reference of linked bilateral mastoids (orange). Middle panel - common average reference (CAR, light blue). Middle lower panel - clinical bipolar reference (‘double banana’ (DB), purple). Lower panel - Laplacian reference (LP, green). (b) 1/f spectral slope in baseline rest (BL, magenta), NREM sleep stage 3 (N3, blue) and REM sleep (REM, green) using the original (Orig., orange), a CAR (light blue), DB (purple) or LP (green) reference in scalp EEG during sleep (n = 14, averaged across electrodes). Paired t-tests (uncorrected): Orig.-CAR: p=0.065, t13 = 2.02, d = 0.36; Orig.-DB: p=0.0875, t13 = −1.85, d = −0.32, Orig.-LP: p=0.005, t13 = −3.35, d = −0.64. n.s. – not significant. **p<0.01. (c) At electrode Fz, 1/f slope values derived from the original (Orig., orange) and the other reference schemes are strongly correlated (n = 14). Upper panel - CAR reference (light blue; r = 0.90, p>0.001), middle panel - DB reference (purple; r = 0.77, p<0.001), lower panel – LP reference (green; r = 0.80, p<0.001). (d) Mutual Information (MI) between hypnogram and 1/f slope derived from power spectra obtained by different reference schemes at electrode Fz (n = 14): Orig. (orange): 0.22 ± 0.04 (black - mean ± SEM), CAR (light blue): 0.22 ± 0.03, DB (purple): 0.15 ± 0.03, LP (green): 0.18 ± 0.03. Paired t-tests (uncorrected): MI Orig.-CAR: p=0.94, t13 = −0.08, d = −0.01; Orig.-DB: p=0.007, t13 = 3.23, d = 0.62, Orig.-LP: p=0.109, t13 = 1.72, d = 0.33. n.s. – not significant. **p<0.01.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** (a) 1/f spectral slope in baseline rest (BL, magenta), NREM sleep stage 3 (N3, blue) and REM sleep (REM, green) using the original polyfit (Orig., orange), the FOOOF (light blue) or eBOSC (purple) algorithm in scalp EEG during sleep (n = 14, averaged across electrodes). Paired t-tests (uncorrected): Orig.-FOOOF: p=0.070, t13 = 1.98, d = 0.11; Orig.- eBOSC: p=0.024, t13 = −2.55, d = −0.06. n.s. – not significant. (b) At electrode Fz, 1/f slope values derived from the original polyfit (Orig., orange) and FOOOF (light blue) are strongly correlated (n = 14; r = 0.99, p<0.0001). (c) At electrode Fz, 1/f slope values derived from the original polyfit (Orig., orange) and eBOSC (purple) are strongly correlated (n = 14; r = 1.00, p<0.0001). (d) Goodness of fit (R2) of the different slope estimates (Orig. - original polyfit (orange); FOOOF (light blue); eBOSC (purple)) to the power spectra in baseline rest, NREM three and REM sleep at electrode Fz (n = 14). Paired t-tests (uncorrected): Orig.-FOOOF p=0.752; Orig.- eBOSC: p=0.117. n.s. – not significant.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** (a) Single subject example: Upper panel – hypnogram. Middle panels – Fz-Pz coherence (Coh), Fz-Pz connectivity measured by orthogonalized power correlation (r) and imaginary phase-locking value (iPLV) between 0.1 and 30 Hz. Right subpanels - Accompanying Mutual Information between the hypnogram and all frequencies; theta (θ; 4–10 Hz) highlighted in gray. Lower panel – spectral slope (30 to 45 Hz) of Fz. Right subpanel – Mutual Information of the Fz slope. (b) Group level (n = 20) analysis of Mutual Information for Fz-Pz coherence and connectivity measured by orthogonalized power correlation (r) or imaginary phase-locking value (iPLV). Left panel – Across all frequencies. Right panel – Comparison of Mutual Information between Fz slope, theta (θ) coherence and connectivity measured by power correlation (uncorrected and orthogonalized) as well as phase-locking value (uncorrected and imaginary). Paired t-test: ***p<0.001. (c) Group level (n = 20) comparison of Fz-Pz theta (θ) coherence, orthogonalized power correlation (r) and weighted phase-locking value (iPLV) between wakefulness, N3 and REM sleep, showing that these metrics do not reliably distinguish between N3and REM sleep. Paired t-test: n.s. – not significant, *p<0.05.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/55092/elife-55092-fig2-figsupp11-v2.jpg)
+
+**Figure 2—figure supplement 11.:** (a) Scalp EEG (n = 20). Left: Topography of slope difference, Right: Cluster permutation test between slope of N3 and REM. *p<0.05. (b) Depth electrodes (n = 10). Left – Coronal view. Right – Axial view on an MNI brain containing all intracranial electrodes of all patients. Colored – contacts that showed a more negative slope in REM compared to N3 sleep. White – contacts that did not show the pattern.
 
 Including all available wake periods (before, during and after the night of sleep in all 20 subjects) increased the variance (Figure 2—figure supplement 1c), which can be explained by the fact that subjects were still drowsy and data during state transitions was included. However, the overall pattern was remarkably similar (Figure 2—figure supplement 1b,d). As this approach increased the available amount of data, we utilized all wake trials (referred to as wake) for subsequent analyses.
 
@@ -75,7 +229,7 @@ Next, we assessed the spatial topography of where the slope tracks the hypnogram
 
 We observed that the spectral slope closely tracked the hypnogram at all electrodes as indicated by a permutation test (n = 20; average z score = 4.14 ± 0.41 (mean ± SEM); all z > 2.8 correspond to a Bonferroni-corrected p<0.01; Figure 2b). This effect peaked over frontal electrodes F3, Fz and F4 (z = 4.90 ± 0.37; Figure 2b). Since frequencies of cranial muscle activity overlap with the frequency range used for spectral slope estimation, we controlled for possible muscle artifacts by repeating the analysis after local referencing (Laplacian; Fitzgibbon et al., 2013). In addition, we utilized partial correlations that considered the slope of the EMG as a confounding variable. These control analyses indicated that excluding these confounds strengthened the observed relationship between the hypnogram and the spectral slope (Laplacian: pSpearman <0.001, pMI <0.0001; partial correlation: pSpearman <0.001; Figure 2—figure supplement 2).
 
-## Spatial characteristics of sleep state-dependent spectral slope modulations
+### Spatial characteristics of sleep state-dependent spectral slope modulations
 
 We established that the spectral slope closely tracks the hypnogram. However, we observed pronounced differences between scalp electrodes (Figure 2b), thus, raising the question, which brain regions contribute most to the observed effects at the scalp level. In a source level analysis using an LCMV beamformer, prefrontal areas exhibited the strongest sleepstate-dependent modulation (Figure 2—figure supplement 3). To further investigate the contribution of cortical and subcortical regions, we obtained intracranial EEG recordings (Study 4, n = 10), which were combined with simultaneous scalp EEG recordings.
 
@@ -83,15 +237,106 @@ First, we aimed to replicate the results from Study 3. Again, we found that the 
 
 Second, we directly tested which intracranial SEEG contacts mirrored the observed scalp EEG pattern. We observed the same pattern - a more negative spectral slope in N3 and REM sleep as compared to wakefulness - in 155 of 352 SEEG (44.03%; chi-squared test against chance-level (33%): X2 = 8.20, p=0.0042; Figure 2c, Figure 2—figure supplement 3). Importantly, this analysis revealed that medial prefrontal cortex (mPFC) and medial temporal lobe structures (MTL; details see Table 2, Figure 2—figure supplement 3) exhibit a significantly larger fraction of electrodes showing sleep state-dependent slope modulation compared to their lateral counterparts (chi-squared tests: mPFC - lateral PFC: p<0.0001, X2 = 33.56, MTL – lateral temporal cortex: p<0.0001, X2 = 33.12), hence, converging on the same brain regions known to be the most relevant for sleep-dependent memory consolidation (Dang-Vu et al., 2008; Helfrich et al., 2018; Mander et al., 2013; Murphy et al., 2009).
 
+**Table 2.**
+ Anatomical distribution of stereotactically placed intracranial depth electrodes in Study 4 – Intracranial sleep (n = 10).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain region</th>
+      <th>Total number of electrodes</th>
+      <th>Electrodes with state-dependent slope modulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALL</td>
+      <td>352</td>
+      <td>155 (44.0 %)</td>
+    </tr>
+    <tr>
+      <td>Prefrontal Cortex (PFC)</td>
+      <td>132</td>
+      <td>49 (37.1 %)</td>
+    </tr>
+    <tr>
+      <td>medial Prefrontal Cortex (mPFC)</td>
+      <td>28</td>
+      <td>24 (85.7 %)</td>
+    </tr>
+    <tr>
+      <td>lateral Prefrontal Cortex (lPFC)</td>
+      <td>73</td>
+      <td>15 (20.6 %)</td>
+    </tr>
+    <tr>
+      <td>Orbito-frontal Cortex (OFC)</td>
+      <td>30</td>
+      <td>10 (33.3 %)</td>
+    </tr>
+    <tr>
+      <td>Medial Temporal Lobe (MTL)</td>
+      <td>48</td>
+      <td>33 (68.8 %)</td>
+    </tr>
+    <tr>
+      <td>Hippocampus</td>
+      <td>27</td>
+      <td>19 (70.4 %)</td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>18</td>
+      <td>14 (77.8 %)</td>
+    </tr>
+    <tr>
+      <td>Cingulate Cortex</td>
+      <td>40</td>
+      <td>31 (77.5 %)</td>
+    </tr>
+    <tr>
+      <td>Insula</td>
+      <td>41</td>
+      <td>21 (51.2 %)</td>
+    </tr>
+    <tr>
+      <td>M1/Premotor</td>
+      <td>7</td>
+      <td>7 (100 %)</td>
+    </tr>
+    <tr>
+      <td>Lateral Temporal Cortex (LTC)</td>
+      <td>79</td>
+      <td>13 (16.5 %)</td>
+    </tr>
+    <tr>
+      <td>Parietal Cortex</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Visual Cortex</td>
+      <td>3</td>
+      <td>1 (33.3 %)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Note that we did not specifically target any brain regions and in contrast to previous studies using subdural grid electrodes (Gao et al., 2017; He et al., 2010), the majority of our probes were stereotactically placed depth electrodes (for Wake - N3 and Wake - REM see Figure 2—figure supplement 4; subdural grid electrodes see Figure 1—figure supplement 2b,c). Given the spatial heterogeneity of intracranial responses (Parvizi and Kastner, 2018), there was a remarkable convergence on medial PFC that resembled the pattern observed at source level (Figure 2—figure supplement 3) and the overlying scalp EEG electrode Fz (Figure 2).
 
-## The spectral slope discriminates wakefulness from states of reduced arousal
+### The spectral slope discriminates wakefulness from states of reduced arousal
 
 Our findings provide evidence that the spectral slope reliably discriminates wakefulness from sleep. Multiple prior reports indicated that slow waves are a hallmark of decreased arousal states (Brown et al., 2010; Franks and Zecharia, 2011; Murphy et al., 2011). We directly compared how well slow wave activity and spectral slopes estimates differentiate arousal states using both a linear discriminant analysis (LDA) and a multivariate general linear Model (GLM) to discriminate different sleep states based on either the spectral slope or slow wave activity in 18 subjects (two subjects had to be excluded due to insufficient wake trials).
 
 Note that both the LDA classifier and the GLM were trained on the same values that were used in the univariate testing. Both the LDA classifier as well as the GLM output provide a quantitative metric, namely the accuracy of correctly classified trials for LDA and the unique explained variance quantified by eta squared for the GLM enabling a direct comparison between different conditions. The GLM offers the additional advantage of facilitating the assessment of the multivariate interaction of the spectral slope and slow wave power. Data were z-scored before modeling with GLM and LDA outputs were logit-transformed before comparison.
 
-## Linear Discriminant Analysis
+### Linear Discriminant Analysis
 
 First, we directly tested if the spectral slope is superior in discriminating REM sleep from wakefulness. We found that classifier performance was enhanced using the spectral slope compared to slow wave power (spectral slope: 76.31 ± 3.61% (mean ± SEM), slow wave power: 61.50 ± 1.93%; permutation t-test: p<0.001, obs. t17 = 3.73, d = 1.25; Figure 3a). This finding indicates that the spectral slope constitutes a marker that successfully discriminates REM sleep from wakefulness solely from the electrophysiological brain state. Note that classification performance is bound by the accuracy of the underlying sleep scoring as a ground truth. Since the inter-rater reliability between sleep scoring experts is typically about 80% (Danker-Hopfe et al., 2009), the classifier accurately predicts the experts' ratings in 80% of the time.
 
@@ -103,7 +348,7 @@ Second, we repeated this analysis to discriminate wakefulness from N3 sleep. Cla
 
 We repeated this analysis to discriminate anesthesia from wakefulness (n = 9). We found that classification based on the spectral slope performed better than the one based on slow wave power (spectral slope: 76.56 ± 3.56%, slow wave power: 52.43 ± 1.04%; permutation t-test: p<0.001, obs. t8 = 6.10, d = 2.63; Figure 3c). Note, that slow wave power was already elevated during wakefulness, which may reflect a premedication with a sedative (see Figure 1a and Materials and Methods).
 
-## General Linear Model
+### General Linear Model
 
 When discerning wakefulness from REM sleep, information (as quantified by unique explained variance eta squared) about the underlying arousal state was significantly different between the spectral slope, SO power and their interaction (repeated-measures ANOVA permutation test: p<0.001, F1.16, 19.74 = 19.69). Post hoc t-tests (p-values were Bonferroni-corrected for multiple testing) revealed that this effect was predominantly driven by the spectral slope (slope: 0.29 ± 0.05 (mean ± SEM), SO: 0.05 ± 0.01; interaction: 0.06 ± 0.03; post hoc permutation t-tests (Bonferroni-corrected): Slope-SO: p<0.001, obs. t17 = 4.29, d = 1.50, Slope-Int.: p<0.001, obs. t17 = 4.84, d = 1.62; SO-Int.: p=0.63, obs. t17 = 0.82, d = 0.29).
 
@@ -113,7 +358,7 @@ Between anesthesia and wakefulness, information about the state was again signif
 
 Taken together, the results from the GLM mirrored the findings from the LDA approach: The spectral slope enabled an improved classification and contained more unique information about arousal state compared to slow wave power when differentiating wakefulness from both propofol anesthesia and REM sleep and was comparable when discerning wakefulness from N3 sleep.
 
-## The relationship of slow waves and the spectral slope
+### The relationship of slow waves and the spectral slope
 
 N3 sleep and propofol anesthesia are both characterized by the occurrence of prominent slow oscillations (Murphy et al., 2011). Previous reports indicated that low frequency activity might serve as a marker to disentangle different arousal states (Brown et al., 2010; Franks and Zecharia, 2011; Murphy et al., 2011). Our results confirm and extend this observation. However, while slow wave activity (<1.25 Hz) discriminated wakefulness from N3, it was less robust in separating wakefulness from REM sleep or propofol anesthesia Figure 3). We conducted several control analyses to investigate the relationship of slow wave activity and the spectral slope.
 
@@ -131,15 +376,15 @@ Interestingly, the averaged slope at the trough of the slow waves was significan
 
 Taken together, our control analyses indicate that slow wave activity and the spectral slope may index two distinct processes.
 
-## Control analyses
+### Control analyses
 
-## Evaluation of parameters for 1/f spectral slope estimation
+#### Evaluation of parameters for 1/f spectral slope estimation
 
 Non-oscillatory background activity decays exponentially following a power law with a 1/f shape: PSD(f)~1/fα. The spectral slope (α) of this decay, sometimes also referred to as spectral exponent (β = - α), can be estimated by a linear regression of the PSD in log-log space (both x- and y-axis are logarithms). In this study, we examined the spectral slope in three distinct states of reduced arousal, namely general anesthesia, NREM three and REM sleep, and in both scalp EEG and intracranial EEG recordings. We estimated the spectral slope from a linear fit to the power spectrum in log-log space from 30 to 45 Hz as suggested previously (Gao et al., 2017). There is no consensus on parameters for spectral slope estimation and a variety of settings have been employed. To address this issue, we systematically evaluated the influence of the following parameters:
 
 Taken together, the pattern of a more negative slope during sleep and anesthesia compared to wakefulness was robustly observed across a wide spectrum of parameters. A Multitaper approach (Prerau et al., 2017) to calculate the power spectral density was characterized by a higher signal-to-noise ratio in comparison to other methods (Figure 2—figure supplement 6). The choice of segment length depends on the cortical state where quasi-stationarity can be assumed (Figure 1—figure supplement 3, Figure 2—figure supplement 7). Here, we observed slope effects on very different timescales ranging from milliseconds (Figure 4) to full night recordings (Figure 2). The reference scheme did not have a significant effect on the overall observed pattern (Figure 2—figure supplement 8) and can be selected depending on the precise research question: e.g. a bipolar or Laplacian reference might be more suited to examine local phenomena. In sleep, center frequencies from 20 Hz up to 40 Hz (±10 Hz) and fit length of 20 Hz or more (from 30 Hz onwards) exhibited a significant relationship with the hypnogram (Figure 2—figure supplement 5a,b). Spectral slope estimated from fits to lower frequencies e.g. 1 to 20 Hz, on the other hand, had a significantly lower MI with the hypnogram than the 30 to 45 Hz frequency range (Figure 2—figure supplement 5d). Under anesthesia, both fits to 1 to 40 and 30 to 45 Hz led to a comparable slope pattern with more negative slopes under anesthesia compared to wakefulness (Figure 1—figure supplement 4). Thus, while the 30 to 45 Hz frequency range is well suited to differentiate wakefulness from both sleep and anesthesia, other frequency ranges might be advantageous when examining only one state (e.g. lower frequency fits under anesthesia than in sleep). The use of different slope fitting algorithms (polyfit, robustfit (eBOSC), FOOOF) did not impact the overall observed slope pattern in both sleep and under anesthesia and the derived slope values were strongly correlated (Figure 1—figure supplement 4, Figure 2—figure supplement 9). Hence, all three algorithms can be used interchangeably in the examined states and frequency ranges. A model fit via e.g. the FOOOF algorithm (Haller et al., 2018) might be the preferred choice when a bend in the PSD (also called ‘knee’) is observed.
 
-## The relationship of connectivity and the spectral slope
+### The relationship of connectivity and the spectral slope
 
 Rodent studies suggest that fronto-parietal theta and high-gamma network connectivity correlates with arousal levels in both sleep and general anesthesia (Pal et al., 2018; Pal et al., 2016). We tested this notion and directly compared connectivity estimates to the spectral slope metric: We found that the spectral slope was superior to fronto-parietal theta connectivity in tracking sleep stages and in reliably differentiating REM and N3 sleep (Figure 2—figure supplement 10). Note that our dataset did not have a sufficient number of intracranial electrodes in the parietal lobe to analyze fronto-parietal connectivity since the parietal lobe is an infrequent site for clinical exploration for epilepsy. Hence, we restricted our analyses to theta-band connectivity in scalp EEG. Future studies will be needed to address the relationship of high gamma-band connectivity and the spectral slope.
 
@@ -147,7 +392,7 @@ Rodent studies suggest that fronto-parietal theta and high-gamma network connect
 
 Our results demonstrate that the spectral slope, which reflects one parameter describing the aperiodic component of the electrophysiological power spectrum, facilitates the reliable discrimination of wakefulness from propofol anesthesia, NREM and REM sleep. Here, we present results from four independent studies providing converging evidence that the spectral slope constitutes a marker that tracks arousal levels in humans.
 
-## Neurophysiological markers of arousal states
+### Neurophysiological markers of arousal states
 
 Consciousness is commonly assessed on two axes – content (e.g. the experience) and level (e.g. vigilance; Boly et al., 2013; Laureys, 2005). While conscious content is thought to fluctuate during sleep, mostly in the form of dreams during REM (Siclari et al., 2017), the arousal level is generally reduced as compared to wakefulness. Both components are typically judged by verbal report of the research subject or patient leading to the approximation that content is equivalent to conscious experience as related by the subject whereas the arousal level corresponds to the subject’s ability to respond. Notably, there are some obvious restrictions to these definitions (e.g. the reduced arousal level in REM sleep prevents the subject from relating his experience to the experimenter unless awakened), which make more objective electrophysiological measures desirable.
 
@@ -157,7 +402,7 @@ The overall slowing of EEG activity and the occurrence of oscillations in lower 
 
 Here, we demonstrate that the non-oscillatory, aperiodic part of the power spectrum, which is devoid of prominent low-frequency oscillatory components and can be approximated by the 1/f decay of the power spectrum estimated from the 30 to 45 Hz frequency range, reliably differentiates wakefulness from all three states of reduced arousal level, namely REM, N3 sleep and general anesthesia with propofol.
 
-## The neurophysiologic basis of 1/f dynamics
+### The neurophysiologic basis of 1/f dynamics
 
 1/f dynamics are observed across a variety of tasks (He et al., 2010; Miller et al., 2009a; Miller et al., 2009b; Voytek et al., 2015), change with lifespan (Voytek et al., 2015), and exhibit state-dependent variations during sleep (Freeman and Zhai, 2009; Leemburg et al., 2018; Miskovic et al., 2019; Robinson et al., 2011) and anesthesia (Colombo et al., 2019; Gao et al., 2017). Critically, these dynamics can be observed irrespective of the employed recording modality and species (Colombo et al., 2019; Freeman and Zhai, 2009; Gao et al., 2017; He et al., 2010; Leemburg et al., 2018; Miskovic et al., 2019). However, to date, the underlying neural mechanisms giving rise to the prominent 1/f decay of the electrophysiological power spectrum are not well understood (Buzsáki et al., 2012; He et al., 2010; Miller et al., 2009a; Pesaran et al., 2018).
 
@@ -169,13 +414,13 @@ A recent study proposed that the shape of the power spectrum of human intracrani
 
 Future studies involving single neuron recordings and optogenetic manipulation will be needed to unravel the precise relationship between population firing statistics and changes in the spectral slope. Comparative studies in rodents (Gao et al., 2017; Leemburg et al., 2018), non-human primates (Gao et al., 2017) and humans (Colombo et al., 2019; He et al., 2010; Miller et al., 2009a; Miller et al., 2009b; Miskovic et al., 2019) combined with modeling work (Chaudhuri et al., 2018; Robinson et al., 2011; Robinson et al., 2001) has the potential to integrate the divergent findings into a coherent framework, which is critical to further elucidate the neurophysiologic basis of 1/f dynamics and their relationship to arousal levels.
 
-## Functional significance of 1/f dynamics in arousal states
+### Functional significance of 1/f dynamics in arousal states
 
 Here, we found a decreased 1/f slope in N3 sleep, REM sleep and under general anesthesia compared to wakefulness in four independent studies. If the spectral slope reflects the local E/I-balance (Gao et al., 2017), then our results would indicate that decreased arousal states are characterized by increased inhibition. In support of this consideration, several previous studies reported that propofol anesthesia and N3 sleep are associated with increased inhibition (Brown et al., 2011; Gao et al., 2017; Timofeev et al., 2001) as well as prominent changes in neuronal firing rates (Lewis et al., 2012; Timofeev et al., 2001; Vyazovskiy et al., 2009; Watson et al., 2016). Notably, there is little evidence supporting a similar association for REM sleep. However, a recent two-photon calcium imaging study in rodents reported a reduction of the overall cortical firing rate during slow-wave and even further during REM sleep (Niethard et al., 2016). Critically, this study also demonstrated that reduced firing rates during REM sleep were accompanied by a selective increase of inhibitory parvalbumin interneuron activity, thus, reflecting a relative shift towards inhibition (Niethard et al., 2016). These results parallel the pattern as observed in this present study (Figure 2—figure supplement 11) where the steepest decay of the power spectrum (the most negative PSD slope) occurred during REM sleep.
 
 Jointly, these findings imply that REM sleep could be associated with the highest level of cortical inhibition, thus, resulting in a steeper decay of the power spectrum. This notion of increased inhibition during REM sleep offers a likely mechanistic explanation for certain REM-defining phenomena, such as muscle atonia (Scammell et al., 2017) or the clinical observation that epileptic seizures during the night predominantly occur out of more excitable, highly synchronized NREM sleep and only rarely out of less excitable, desynchronized REM sleep (Ng and Pavlova, 2013).
 
-## Practical considerations for analyzing 1/f dynamics
+### Practical considerations for analyzing 1/f dynamics
 
 A wide array of settings has been employed to examine 1/f features in electrophysiological recordings. Practical guidelines on how to select parameters for spectral slope estimation remain scare. Here, we explored a range of different settings for a series of parameters to reliably estimate 1/f activity in arousal states.
 
@@ -189,7 +434,7 @@ Incorporating frequencies below 20 Hz resulted in a better separation between wa
 
 Taken together, a fit to the 30 to 45 frequency range reliably differentiated wakefulness from anesthesia, NREM three and REM sleep.
 
-## Conclusions
+### Conclusions
 
 Collectively, our results from four independent studies provide five main advances: First, the spectral slope tracks changes in arousal levels in both propofol anesthesia and sleep in humans with high temporal precision and is observable on a wide range of timescales from sub-second epochs to full night recordings.
 
@@ -203,61 +448,201 @@ Fifth, the spectral slope can be reliably estimated from scalp EEG recordings, t
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB Release 2015a and 2018a; Signal Processing Toolbox, Curve Fitting Toolbox, Statistics and Machine Learning Toolbox</td>
+      <td>The MathWorks Inc, 2020, Natick, Massachusetts, USA</td>
+      <td>ID_source:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6 and CC 2018</td>
+      <td>Adobe Inc, 2020, Dublin, Republic of Ireland</td>
+      <td>ID_source:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FieldTrip 20170829</td>
+      <td>Oostenveld et al., 2011; Stolk et al., 2018</td>
+      <td>ID_source:SCR_004849</td>
+      <td>http://www.fieldtriptoolbox.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EEGLAB_14_0_0b</td>
+      <td>Delorme and Makeig, 2004</td>
+      <td>ID_source:SCR_007292</td>
+      <td>https://sccn.ucsd.edu/eeglab/index.php</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeSurfer 5.3.0</td>
+      <td>Dale et al., 1999; Fischl, 2012</td>
+      <td>ID_source:SCR_001847</td>
+      <td>https://surfer.nmr.mgh.harvard.edu/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LCMV Beamformer</td>
+      <td>Van Veen et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IRASA (Irregular Resampling Auto-Spectral Analysis)</td>
+      <td>Wen and Liu, 2016b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Multitaper Spectral Analysis</td>
+      <td>Prerau et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FOOOF (Fitting Oscillations and One Over F)</td>
+      <td>Haller et al., 2018</td>
+      <td></td>
+      <td>https://pypi.org/project/fooof/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>eBOSC (extended Better OSCillation detection)</td>
+      <td>Kosciessa et al., 2020b</td>
+      <td></td>
+      <td>https://github.com/jkosciessa/eBOSC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mutual Information</td>
+      <td>Quian Quiroga and Panzeri, 2009</td>
+      <td></td>
+      <td>http://prerau.bwh.harvard.edu/multitaper/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioSig Toolbox - Logit transformation</td>
+      <td>Schlogl and Brunner, 2008</td>
+      <td>ID_source:SCR_008428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>General Linear Model</td>
+      <td>Siegel et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slow wave detection</td>
+      <td>Helfrich et al., 2018; Staresina et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Random Block Swapping (statistics)</td>
+      <td>Canolty et al., 2006; Aru et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Connectivity</td>
+      <td>iPLV (imaginary Phase Lock Value) - Nolte et al., 2004; rhoortho (orhtogonalized power correlation) - Hipp et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td></td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 We collected four independent datasets for this study to assess the neurophysiological basis of states of reduced arousal, namely general anesthesia and sleep. We recorded either non-invasive scalp electroencephalography (EEG) or intracranial EEG (electrocorticography; ECoG) using subdural grid and strip electrodes and stereotactically placed depth electrodes (SEEG; for coverage see Figure 1—figure supplement 1).
 
-## Anesthesia
+### Anesthesia
 
 The EEG and intracranial anesthesia studies were conducted at the University Hospital of Oslo. All participants or their parents provided informed written consent according to the local ethics committee guidelines (Regional Committees for Medical and Health Research Ethics in Oslo case number 2012/2015 and extension 2012/2015–8) and the Declaration of Helsinki.
 
-## Study 1 - Anesthesia scalp EEG
+#### Study 1 - Anesthesia scalp EEG
 
 Ten patients (two female) undergoing anterior cervical discectomy and fusion participated in Study one and received a total intravenous anesthesia with remifentanil and propofol. They had an American Society of Anesthesia status of I - III, were between 46 and 64 years old (53.3 ± 5.7 years; mean ± SD) and otherwise healthy. Data were recorded from the induction of anesthesia to the recovery from 25 channel EEG according to the 10–20 layout (EEG Amplifier, Pleasanton, California, USA) with an additional row of electrodes (F9, F10, T9, T10, P9, P10) at a digitization rate of 512 Hz, or in the case of one patient at 256 Hz. The electrode for referencing was placed at CP1. Three patients were not recorded for the planned entire time span – one recording was only started after induction, while two were stopped before recovery (Juel et al., 2018).
 
-## Study 2 - Anesthesia intracranial EEG
+#### Study 2 - Anesthesia intracranial EEG
 
 A total of 12 patients (three female) with intractable epilepsy participated in Study 2. They were between 8 and 52 years old (26.6 ± 13.2 years; mean ± SD). Data were collected during the explantation of the intracranial electrodes from induction of anesthesia up to the point of their removal. All patients received total intravenous anesthesia with propofol and remifentanil at the University Hospital of Oslo. All patients were placed back on their usual antiepileptic medication before the procedure. Data were recorded on a Natus NicoletOne system with a 128-channel capacity and a digitization rate of 1024 Hz for up to 64 or 512 Hz for up to 128 channels.
 
-## Anesthetic management
+### Anesthetic management
 
 All patients received a premedication with 3.75 to 7.5 mg midazolam (Dormicum, Basel, Switzerland); the anesthesia scalp EEG group (Study 1) received additional 1 g oral paracetamol (Paracet, Weifa, Oslo, Norway) as well as 10 mg oxycodone sustained release tablet (OxyContin, Dublin, Ireland) for postoperative pain management. Propofol (Propolipid, Fresenius Kabi, Uppsala, Sweden) and remifentanil (Ultiva, GlaxoSmithKline, Parma, Italy) were administered by computer-controlled infusion pumps (B Braun Perfusor Space, Melsungen, Germany) using a target-controlled infusion (TCI) program (Schnider for propofol and Minto for remifentanil) in order to achieve plasma concentrations sufficient for anesthesia and analgesia. Prior to start of anesthesia all patients received an infusion of Ringer’s-Acetate (5 ml /kg) to prevent hypotension during anesthesia induction, as well as 3–5 ml 1% lidocaine intravenously to prevent pain during propofol injection. All patients were pre-oxygenated with 100% oxygen and received the non-depolarizing muscle relaxant cisatracurium for intubation (Nimbex, GlaxoSmithKline, Oslo, Norway). After intubation the inspiratory oxygen fraction was reduced to 40%; nitric oxide was not used.
 
-## Sleep
+### Sleep
 
-## Study 3 - Sleep scalp EEG
+#### Study 3 - Sleep scalp EEG
 
 Study three was conducted at the University of California at Berkeley. All participants were informed and provided written consent in accordance with the local ethics committee (Berkeley Committee for Protection of Human Subjects Protocol Number 2010-01-595). We analyzed recordings from 20 young healthy participants (20.4 ± 2.0 years, mean ± SD; 12 females). Polysomnography was recorded during an 8 hour period as well as during 5 min quiescent rest with eyes closed before and after sleep. Data were recorded on a Grass Technologies Comet XL system (Astro-Med, Inc, West Warwick, RI) with a 19-channel EEG using the standard 10–20 setup as well as three electromyography (EMG) and four electro-oculography (EOG) electrodes at the outer canthi. The EEG was referenced to the bilateral linked mastoids and digitized at 400 Hz (0.1 to 100 Hz; Helfrich et al., 2018; Mander et al., 2015; Mander et al., 2014; Mander et al., 2013). Sleep staging was carried out by trained personnel (B.A.M.) and according to recent guidelines (Iber et al., 2007).
 
-## Study 4 - Sleep intracranial EEG
+#### Study 4 - Sleep intracranial EEG
 
 Study four was conducted at the University of California at Irvine, Medical Center. Ten epilepsy patients (six females) undergoing invasive pre-surgical localization of their seizure focus were included in this study. All patients provided informed consent according to the local ethics committees of the University of California at Berkeley and at Irvine (University of California at Berkeley Committee for the Protection of Human Subjects Protocol Number 2010-01-520; University of California at Irvine Institutional Review Board Protocol Number 2014–1522, UCB relies on UCI Reliance Number 1817) and gave their written consent before data collection. They were between 22 and 55 years old (33.1 ± 11.5 years; mean ± SD). Electrode placement was solely dictated by clinical criteria (Ad-Tech, SEEG: 5 mm inter-electrode spacing; Integra, Grids: 1 cm, 5 or 4 mm spacing). Data were recorded with a Nihon Kohden recording system (256 channel amplifier, model JE120A), analogue-filtered above 0.01 Hz and digitally sampled at 5 kHz. To facilitate gold-standard sleep staging, simultaneous EOG, electrocardiography (ECG) from five leads and EEG was recorded by exemplary electrodes of the 10–20 setup depending on the localization of the intracranial electrodes but mostly consisting of Fz, Cz, C3, C4 and Oz. A surrogate EMG signal was derived from the ECG and EEG by high-pass filtering above 40 Hz. Sleep staging was carried out by trained personnel (B.A.M.) according to recent guidelines (Iber et al., 2007).
 
-## Data preprocessing
+### Data preprocessing
 
-## Study 1 - Anesthesia scalp EEG
+#### Study 1 - Anesthesia scalp EEG
 
 Data were imported into FieldTrip (Oostenveld et al., 2011) and epoched in 10 s segments. An Independent Component Analysis (fastica; Hyvärinen, 1999) was used to clean the data from systematic artifacts such as the ECG. Further data cleaning was done manually after inspection by a neurologist (R.T.K.) and an anesthesiologist (J.D.L). On average, the patients had 1183 ± 81.42 ten-second epochs of which 196 ± 103.19 were marked as noisy (15.81 ± 3.15%). No channels were excluded or interpolated. Data were referenced using the common average, demeaned and detrended. Wake periods were defined as time before induction and after anesthesia when the patients responded reliably to verbal commands of the study personnel. Anesthesia periods were defined as time after induction until the termination of propofol application.
 
-## Study 2 – Anesthesia intracranial EEG
+#### Study 2 – Anesthesia intracranial EEG
 
 Data were recorded with a 512 Hz digitization rate in eight patients. Four additional patients were recorded with a digitization rate of 1024 Hz and these datasets were down-sampled to 512 Hz. Data were then imported to FieldTrip (Oostenveld et al., 2011), epoched into ten-second segments and inspected by a neurologist (R.T.K.) for epileptic activity and then manually cleaned of epileptic and other non-neural artifacts. The awake state was defined as time before start of propofol, anesthesia was defined as time after loss of consciousness (unresponsiveness to verbal commands assessed by study personnel and attending anesthetist). After fusing the pre-implantation T1-weighted MRI and the post-implantation Computer Tomography (CT) scans, electrodes were automatically localized by an openly available brain atlas (Freesurfer; Fischl, 2012) using the FieldTrip toolbox (Stolk et al., 2018) and cross-validated by independent manual inspection by two neurologists (R.T.K.; R.F.H.). Contacts in white matter or lesions were discarded. The remaining signals were then bipolar referenced to their lateral neighbor, demeaned and detrended.
 
-## Study 3 - Sleep scalp EEG
+#### Study 3 - Sleep scalp EEG
 
 The EEG was referenced to bilateral linked mastoids and data were imported to EEGLAB (Delorme and Makeig, 2004) and epoched into 5 s segments. Epochs that contained artifacts (e.g. eye blinks or movement) were manually inspected and rejected by a trained scorer (B.A.M.). None of the channels were discarded or interpolated. On average, the participants had 5748.9 ± 10.01 of these five second epochs and 946.95 ± 542.68 of them were rejected (16.44 ± 2.98%), comparable to the anesthesia scalp EEG recordings. The data from the healthy sleep participants have been reported before and were cleaned in a comparable approach (Helfrich et al., 2018; Mander et al., 2015; Mander et al., 2014; Mander et al., 2013). For further analysis in MATLAB (MATLAB Release R2018b, The MathWorks, Inc, Natick, Massachusetts, United States), the data were then imported into FieldTrip (Oostenveld et al., 2011).
 
-## Study 4 – Sleep intracranial EEG
+#### Study 4 – Sleep intracranial EEG
 
 Data were imported to FieldTrip (Oostenveld et al., 2011), downsampled to 500 Hz and segmented into 30 s segments for subsequent data analysis. Anatomical localization was carried out by fusing pre-implantation T1-weighted Magnetic Resonance Imaging (MRI) scans with post-implantation MRI and both automatic and manual labeling of the electrode position (Stolk et al., 2018). As above, epileptic, white matter and channels with other artifacts were discarded. The data were bipolar referenced, demeaned and detrended.
 
-## Spectral analysis
+### Spectral analysis
 
 (1)To obtain average power spectra, after artifact removal the data were epoched into ten-second segments for anesthesia and 30 s segments for sleep. (2) Time-frequency decomposition was accomplished using a Fast Fourier Transformation (mtmfft, FieldTrip (Oostenveld et al., 2011) from 0.5 Hz to 45 Hz in 0.5 Hz steps. The analysis was limited to 45 Hz due to line noise at 50 Hz in the Oslo recordings and then adopted to all consecutive studies for consistency. To obtain reliable spectral estimates we utilized a Multitaper approach (Prerau et al., 2017) based on discrete prolate slepian sequences (dpss; anesthesia: 9 tapers for 10 s segments, no overlap, frequency smoothing of ± 0.5 Hz; sleep: 29 tapers for 30 s segments, no overlap, frequency smoothing of ± 0.5 Hz). (3) The power spectrum of each state was averaged over all samples of the state (wake and anesthesia or rest, wake, non-rapid eye movement sleep stage 3 (N3) and rapid eye movement sleep (REM)), channels and subjects (Figure 1b,c and Figure 2b,c). For better comparison, we visualized the effect at the scalp level. For Study 2 simultaneous EEG recordings were not available.
 
-For the control analysis of the influence of segment length and number of tapers on the spectral slope estimate, anesthesia EEG recordings were epoched into 30 s segments, while sleep was epoched into 10 s segments. Time frequency decomposition was again done with FieldTrip’s mtmfft with a frequency smoothing of ± 0.5 Hz and dpss tapers resulting in 29 for anesthesia and nine for sleep. Note that the number of tapers is a direct result of the choice of segment length and frequency smoothing (Prerau et al., 2017):Numberofdpsstapers=(2∗(Segment length (sec)∗frequency smoothing (Hz)2))−1
+For the control analysis of the influence of segment length and number of tapers on the spectral slope estimate, anesthesia EEG recordings were epoched into 30 s segments, while sleep was epoched into 10 s segments. Time frequency decomposition was again done with FieldTrip’s mtmfft with a frequency smoothing of ± 0.5 Hz and dpss tapers resulting in 29 for anesthesia and nine for sleep. Note that the number of tapers is a direct result of the choice of segment length and frequency smoothing (Prerau et al., 2017):
 
-## Comparison of Multitaper, Single-taper, Periodogram and Welch’s Method
+$$
+Numberofdpsstapers=(2∗(\frac{Segment length (sec)∗frequency smoothing (Hz)}{2}))−1
+$$
+
+### Comparison of Multitaper, Single-taper, Periodogram and Welch’s Method
 
 For the comparison of the signal-to-noise ratios of different power calculations (Figure 2—figure supplement 6), the Multitaper spectral decomposition (Prerau et al., 2017) was calculated as outlined above. For all further computations, sleep data were epoched into 30 s segments.
 
@@ -269,13 +654,13 @@ For the Welch's method, power was calculated with a 30 s window size and no over
 
 SNR was calculated by dividing the average power of each frequency at every channel by the standard deviation of this frequency and channel.
 
-## Spectral slope estimation
+### Spectral slope estimation
 
 We calculated the spectral slope by fitting a linear regression line to the power spectrum in log-log space between 30 and 45 Hz, since it had been shown previously that this range correlates best with changes in arousal in rodents and monkeys, as well as with different excitation-inhibition ratios in simulations (Gao et al., 2017). In line with previous reports, we excluded the low frequencies that contain strong oscillatory activity, which may distort the linear fit as well as the range over 50 Hz, which is confounded by both line noise (50 Hz in Europe, 60 Hz in the US) as well as broad-band muscle artifacts.
 
 We then adapted this range to the calculation of the slope in the other studies for consistency reasons. To compute a time resolved estimate of the spectral slope, we calculated the best line fit to the 10 (anesthesia) or 30 (sleep) second segments of the Multitapered power spectra (see above) in log-log space using polynomial curve fitting (polyfit.m, MATLAB and Curve Fitting Toolbox Release R2015a, The MathWorks, Inc, Natick, Massachusetts, United States). One subject in Study 3 (sleep EEG) exhibited an excessive noise level during wakefulness; therefore, his data had to be excluded from all slope comparisons to wakefulness.
 
-## Control analyses of spectral slope estimation
+### Control analyses of spectral slope estimation
 
 For the evaluation of different center frequencies for the linear regression, the spectral slope was estimated from intracranial sleep recordings (Study 4) as a function of different center frequencies (±10 Hz around center frequency starting from 20 up to 150 Hz) and different fit lengths (from 30 Hz onward with a 10 Hz increase of fit length up to 100 Hz) using the same procedure as outlined above (Figure 2—figure supplement 5).
 
@@ -283,39 +668,49 @@ Moreover, the spectral slope was estimated from low frequencies in different rec
 
 Furthermore, we estimated the spectral slope from the 30 to45 Hz range using two additional algorithms, the FOOOF package (Haller et al., 2018) and the eBOSC algorithm (Kosciessa et al., 2020a) in both anesthesia and sleep scalp EEG (Study 1 and 3). While eBOSC performs a linear regression in log-log space using MATLAB’s robustfit.m, FOOOF estimates both the oscillatory and aperiodical part of the power spectrum with a model fit: First an exponential fit is performed to the power spectrum in semi-log space, then this fit is subtracted from the power spectral density (PSD). The residual signal is treated as a combination of oscillations and noise and is repeatedly fit with multiple Gaussian fits to detect possible oscillatory peaks until the noise floor is reached. The detected peaks are then validated against the mixed oscillatory/noise signal and subtracted from the original PSD. The new residual signal is then fit again for a better estimate of the aperiodic signal. Both, the Multi-Gaussian fits and the improved aperiodic fit are then combined into a model (compare to Figure 3 (Haller et al., 2018). When the PSD does not contain a bend, also called knee, in the aperiodic signal, then the algorithm is equivalent to fitting a line in log-log space (Haller et al., 2018).
 
-## Mutual Information
+### Mutual Information
 
-Mutual Information (MI) is an information theoretical metric, which quantifies the mutual dependence of the two signals, specifically the amount of information gained about one variable when observing the other (Quian Quiroga and Panzeri, 2009). This is particularly useful for non-linear, binned signals. Mutual information between the two signals X and Y was defined asMIX;Y= ∑x ∈X∑y ∈ Ypx,y*log2⁡(px,ypx*p(y))where p(x,y) depicts the joint probability function and p(x) and p(y) indicate the class probabilities. Probabilities were normalized by their sum. For MI analysis (Figure 2b, Figure 2—figure supplements 2, 5, 8 and 10), we epoched the time-resolved slope into 30 s segments (the hypnogram was staged in 30 s epochs) and discretized it into five bins (Wake, REM, N1, N2, N3) using the discretize.m function of MATLAB Signal Processing Toolbox Release R2015a (MathWorks Inc, USA). Mutual Information was calculated using the MutualInformation.m function from MATLAB Central File Exchange (Dwinell, 2010).
+Mutual Information (MI) is an information theoretical metric, which quantifies the mutual dependence of the two signals, specifically the amount of information gained about one variable when observing the other (Quian Quiroga and Panzeri, 2009). This is particularly useful for non-linear, binned signals. Mutual information between the two signals X and Y was defined as
 
-## Beamformer analysis
+$$
+MIX;Y=\sumx\inX\sumy\inYpx,y*log_{2}⁡(\frac{px,y}{px*p(y)})
+$$
+
+where p(x,y) depicts the joint probability function and p(x) and p(y) indicate the class probabilities. Probabilities were normalized by their sum. For MI analysis (Figure 2b, Figure 2—figure supplements 2, 5, 8 and 10), we epoched the time-resolved slope into 30 s segments (the hypnogram was staged in 30 s epochs) and discretized it into five bins (Wake, REM, N1, N2, N3) using the discretize.m function of MATLAB Signal Processing Toolbox Release R2015a (MathWorks Inc, USA). Mutual Information was calculated using the MutualInformation.m function from MATLAB Central File Exchange (Dwinell, 2010).
+
+### Beamformer analysis
 
 We source-localized the slope difference between wakefulness and sleep in scalp EEG (Study 3, n = 19; one patient had to be excluded due to insufficient wake trials; Figure 2—figure supplement 3). Cortical sources of the sensor-level EEG data were reconstructed by using a LCMV (linearly constraint minimum variance) beamforming approach (Van Veen et al., 1997) to estimate the time series for every voxel on the grid. A standard T1 MRI template and a BEM (boundary element method) headmodel from the FieldTrip toolbox (Oostenveld et al., 2011) were used to construct a 3D template grid at 1 cm spacing in standard MNI space. Electrode location was derived from a standard 10/20 template from the FieldTrip toolbox (Oostenveld et al., 2011). Prior to source projection, sensor level data were common average referenced and epoched into 30 s segments. To minimize computational load, we selected a two second data segment from the center of every epoch to construct the covariance matrix. The LCMV spatial filter was then calculated using the covariance matrix of the sensor-level EEG data with 5% regularization. Spatial filters were constructed for each of the grid positions separately to maximally suppress activity from all other sources. The resulting time courses in source space then underwent spectral analysis using a Fourier transform after applying a Hanning window. The PSD slope of every segment was then estimated using linear regression in the range from 30 to 45 Hz as outlined before. Mean slope values during sleep were subtracted from the mean slope during wakefulness at every voxel in source space and then source-interpolated onto a standard template brain in MNI space.
 
 We employed a regions-of-interest (ROI) based approach focusing on prefrontal cortex (PFC) subregions since a reliable source localization of medial temporal lobe (MTL) activity using 19-channel EEG remains challenging. In line with our results from the intracranial sleep study (Study 4, Figure 2C and Figure 2—figure supplement 4), we defined the mPFC and dorsolateral PFC (dlPFC) as ROI. To identify ROI at source level, we used the Automated Anatomical Labeling (AAL) atlas as implemented in FieldTrip (Oostenveld et al., 2011). The ROI mPFC encompassed the following regions: 23 and 24 – ‘Frontal_Sup_Medial_L and R’, 25 and 26 – ‘Frontal_Med_Orb_L and R’, 27 and 28 – ‘Rectus_L and R’, 31 and 32 – Cingulum_Ant_L and R’. The ROI dlPFC consisted of the following atlas tissue labels: 3 and 4 – ‘Frontal_Sup_L and R’, 7 and 8 – ‘Frontal_Mid_L and R’, 11 and 12 – ‘Frontal_Inf_Oper_L and R’, 13 and 14 – ‘Frontal_Inf_Tri_L and R’ and 15 and 16 ‘Frontal_Inf_Orb_L and R’.
 
-## Classification analysis
+### Classification analysis
 
 We employed a linear discriminant analysis (LDA) to assess if slow wave power or the spectral slope were a better predictor of wakefulness or sleep (Figure 1—figure supplement 4, Figure 3a–c). We utilized a leave-one-exemplar-out cross-validation approach that was repeated 50 times after randomly sampling an equal number of sleep and REM trials to equate the number of samples (classify.m, MATLAB and Statistics and Machine Learning Toolbox Release R2015a, MathWorks Inc, USA). Then every sample of the subsampled distribution was held out of the training dataset once. The LDA classifier was trained on the remaining samples and tested on the held-out test sample. The classifier performance was then assessed as percent correct. Two of the 20 sleep EEG participants had to be excluded due to insufficient number of wake trials. LDA performances were logit-transformed (logit.m from the BioSig toolbox (Schlogl and Brunner, 2008) and averaged across channels prior to statistical comparison.
 
-## Multivariate General Linear Model
+### Multivariate General Linear Model
 
 In order to model the unique contributions as well as the interaction between slow wave power (<1.25 Hz) and spectral slope in the prediction of arousal states, we first scaled both parameters by means of a z-score and then calculated a general linear model using the MATLAB fitlm.m function (MATLAB and Statistics and Machine Learning Toolbox Release R2018b, MathWorks Inc, USA). This method offered the possibility to model both the main effects as well as the interaction between the two predictors (Figure 3d–f). Critically, we utilized an unbalanced design, which implicitly orthogonalizes the contribution of different factors and hence, distills non-overlapping unique explained variance (Siegel et al., 2015), which was subsequently quantified by means of the effect size (eta squared).
 
-## Spectral slope estimation during a slow wave
+### Spectral slope estimation during a slow wave
 
 Slow wave events (Figure 4, Figure 2—figure supplement 10) were detected for each channel based on established algorithms (Helfrich et al., 2018; Staresina et al., 2015): The raw signal was bandpass-filtered between 0.16 and 1.25 Hz and zero crossings were detected. Events were then selected using a time (0.8 to 2 s duration) and an amplitude criterion (75% percentile). The raw data were then epoched relative to the trough of the slow wave (±2.5 s). Time-frequency decomposition was computed in 500 ms time windows with a 250 ms overlap using FieldTrip (Oostenveld et al., 2011) (mtmfft, frequency smoothing of ±2 Hz and one dpss taper). The spectral slope was calculated by the best line fit in these time windows in log-log space between 30 and45 Hz using polynomial curve fitting (polyfit.m, MATLAB and Curve Fitting Toolbox Release R2015a, MathWorks Inc, USA).
 
-## Statistical testing
+### Statistical testing
 
 The spectral slope of the awake and anesthetized state was compared using Student’s t-test for paired samples (Figure 1b,c). The observed t-values were then compared against a surrogate distribution after re-calculating the test statistic 10,000 times with randomly shuffled labels (called permutation t-test in the manuscript). Post hoc t-tests were Bonferroni-corrected for multiple comparisons.
 
 To compare three states (awake, NREM and REM), we utilized Greenhouse-Geisser corrected 1-way repeated measures analysis of variance (Figure 2b and c; RM-ANOVA). We adopted an approach similar to the permutation t-test, where the original RM-ANOVA output was compared to a shuffled distribution after randomly flipping condition labels 10,000 times (repeated-measures ANOVA permutation test). Effect size was calculated using Cohen’s d.
 
-To assess the spatial extent of the observed effects in EEG, we calculated cluster-based permutation tests to correct for multiple comparisons as implemented in FieldTrip (Oostenveld et al., 2011) (Monte-Carlo method; maxsize criterion; 1000 iterations). A permutation distribution was obtained by randomly shuffling condition labels and then compared to the actual distribution to obtain an estimate of significance. Spatial clusters are formed by thresholding independent t-tests of slope differences between wake and anesthesia (Figure 1b) or wake and sleep (Figure 2b) at a p value < 0.05. All results were Bonferroni-corrected for multiple comparisons. In order to control for EMG as a potential confound in the sleep EEG (Study 3), we utilized a partial correlation (Spearman) that partialled the slope of the EMG out of the correlation before computing the cluster-based permutation test (Figure 2—figure supplement 2b). Correlation coefficients (r-values) were transformed into t-values using the following formula (N = number of subjects):t=r*sqrt(N-2)sqrt(1-r2)
+To assess the spatial extent of the observed effects in EEG, we calculated cluster-based permutation tests to correct for multiple comparisons as implemented in FieldTrip (Oostenveld et al., 2011) (Monte-Carlo method; maxsize criterion; 1000 iterations). A permutation distribution was obtained by randomly shuffling condition labels and then compared to the actual distribution to obtain an estimate of significance. Spatial clusters are formed by thresholding independent t-tests of slope differences between wake and anesthesia (Figure 1b) or wake and sleep (Figure 2b) at a p value < 0.05. All results were Bonferroni-corrected for multiple comparisons. In order to control for EMG as a potential confound in the sleep EEG (Study 3), we utilized a partial correlation (Spearman) that partialled the slope of the EMG out of the correlation before computing the cluster-based permutation test (Figure 2—figure supplement 2b). Correlation coefficients (r-values) were transformed into t-values using the following formula (N = number of subjects):
+
+$$
+t=\frac{r*sqrt(N-2)}{sqrt(1-r^{2})}
+$$
 
 For statistical assessment of the Mutual Information (MI), we employed surrogate testing (Figure 2b, Figure 2—figure supplement 2a). To obtain a surrogate distribution from the observed data, we utilized a random block swapping procedure (Aru et al., 2015; Canolty et al., 2006). The number of repetitions was equal to the number of available sleep stages. On every iteration, we re-calculated the MI of these block swapped hypnograms with the discretized time-resolved slope to create a surrogate distribution against which we could compare our original observation. To compare the results across subjects, we z-scored the values by subtracting the mean of the surrogate distribution from the observed MI and dividing by the standard deviation of the surrogate distribution. Note that a z = 1.96 reflects an uncorrected two-tailed p-value of 0.05, while a z-score of >2.8 indicates a Bonferroni-corrected significant p-value (p<0.05/19 channels=0.0026). The z-values were transformed into p-values for topographic depiction (Figure 2b; Figure 2—figure supplement 2a) based on a normal cumulative distribution function (two-tailed).
 
-## Connectivity
+### Connectivity
 
 For the analysis of fronto-parietal connectivity (Figure 2—figure supplement 10), we choose electrode Fz and Pz in our sleep EEG recordings (Study 3; n = 20) to calculate the magnitude squared coherence from frequencies of 0.1 to 64 Hz in 0.1 Hz steps using the mscohere.m function from the MATLAB Signal Processing Toolbox (Release R2015a, MathWorks, Inc, USA) as described previously (Pal et al., 2016; Pal et al., 2015). Note that coherence estimates reflect both power changes as well as changes in phase synchrony. Therefore, we also calculated the Phase-Locking Value (PLV) and amplitude correlations (rho) to disentangle the effects of phase and power, respectively. To discount the effects of volume spread, we calculated the imaginary PLV (Nolte et al., 2004) (iPLV) and orthogonalized power correlations (Hipp et al., 2012) (rhoortho).
 

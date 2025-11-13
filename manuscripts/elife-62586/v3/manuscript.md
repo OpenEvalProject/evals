@@ -42,25 +42,91 @@ In this study, we characterize the transcriptomic profiles of five different LCL
 
 ## Results
 
-## LCL generation and data provenance
+### LCL generation and data provenance
 
 Three LCLs were prepared in-house by infection of PBMCs from two donors (sample numbers 461 and 777) with one of two different EBV strains (B95-8 or M81). Each of these three samples (LCL 461 B95-8, LCL 777 B95-8, and LCL 777 M81) was prepared and processed using standard single-cell RNA sequencing workflows (see Materials and methods). Two additional, publicly available data sets were obtained for commercially available samples of the GM12878 and GM18502 LCLs, which were generated as previously reported by Osorio and colleagues (Osorio et al., 2019). These five samples yielded single-cell RNA count matrices for subsequent analysis.
 
-## LCL sample quality control (QC)
+### LCL sample quality control (QC)
 
 Count matrices for the five samples exhibited similar feature, total RNA count, and mitochondrial gene distributions (Figure 1—figure supplements 1 and 2) and were subjected to standardized QC thresholding (see Materials and methods). Cell cycle marker expression (Figure 1—figure supplement 3) was scored and regressed out during selection of highly variable genes as features to avoid clusters arising solely from cell cycle phase. Selected features were used to derive principal components which were evaluated (Figure 1—figure supplement 4) and subsequently used for dimensional reduction (see Materials and methods). Separate analysis of the merged sample data set indicated that inter-donor variability is the predominant source of heterogeneity (Figure 1—figure supplement 5).
 
-## Immunoglobulin isotype heterogeneity within and across LCL samples
+### Immunoglobulin isotype heterogeneity within and across LCL samples
 
 The five LCL populations exhibit distinct immunoglobulin (Ig) profiles with respect to both gene expression levels and isotype frequencies (Figure 1). Three of the five samples (LCL 777 B95-8, LCL 777 M81, and GM12878) contain IgM+ and class-switched IgA+ and IgG+ subpopulations, whereas two samples (LCL 461 B95-8 and GM18502) almost exclusively expressed IgG (IGHG1-4; Figure 1A). Additionally, cells within each isotype class exhibit a wide range of Ig transcript levels across all samples in an apparent class-independent fashion. No significant expression of IGHE was observed in any of the five samples, consistent with the isotype’s rarity in the peripheral blood (He et al., 2017; Saunders et al., 2019). The immunoglobulin compositions observed for each LCL were confirmed subsequently by RT-PCR and sequencing, which revealed that each isotype represents a distinct clone within the culture (Figure 1—figure supplement 6). Significant IGHD transcript levels were observed in one sample (LCL 777 B95-8), where the gene’s expression was constrained to (and varied inversely with expression levels of) IgM+ cells (Figure 1—figure supplement 7).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-v3.jpg)
+
+**Figure 1.:** (A) Relative expression of immunoglobulin heavy chain genes (IGHM, IGHA1, and IGHG1) in five LCLs analyzed by single-cell RNA sequencing. Data are represented by dimensional reduction (t-distributed stochastic neighbor embedding) of principal components generated from feature selection following out-regression of cell cycle markers (see Experimental methods). (B) Percentage of cells in LCL population within each isotype class. Null classification represents cells exhibiting negligible immunoglobulin heavy chain expression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Cell lines were cultured in R10 media with 5% CO2, and all samples were prepared using the 10× Genomics Chromium Controller with v2 chemistry (see Materials and methods).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp3-v3.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp4-v3.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Elbow plot showing variation captured by the first 20 principal components for the five lymphoblastoid cell line (LCL) merged data sets. (B) t-distributed stochastic neighbor embedding (tSNE) plot of the merged data set. Inter-donor diversity is the predominant source of variance within the merged data set, as evidenced by low-resolution clustering. The two clusters corresponding to samples derived from the same donor (LCL 777) and infected with different viral strains exhibit proximity. (C and D) Expression of lytic genes and other genes of interest in the merged data set. The merged data set indicates hierarchical diversity across LCLs, with similar intra-donor patterns of expression manifesting in clusters distinguished by inter-donor heterogeneity.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Heavy and light chain isotype targeted PCR products in each of the five LCLs are consistent with the Ig composition captured by single-cell sequencing. (B) IMGT sequence alignment of two LCLs demonstrate that cells expressing a given heavy chain isotype are largely monoclonal.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp7-v3.jpg)
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp8-v3.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp9-v3.jpg)
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp10-v3.jpg)
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp11-v3.jpg)
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp12-v3.jpg)
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp13-v3.jpg)
+
+![Figure 1—figure supplement 14.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp14-v3.jpg)
+
+![Figure 1—figure supplement 15.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp15-v3.jpg)
+
+![Figure 1—figure supplement 16.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig1-figsupp16-v3.jpg)
 
 The proportion of cells expressing each isotype varied substantially among LCLs (Figure 1B). IgG was the only isotype observed in LCL 461 B95-8. Cells in the GM18502 sample were also homogenous for IGHG1, although low levels of IGHM transcripts are observed in up to half of the population. The proportion of IgM+, IgA+, and IgG+ subpopulations in LCL 777 B95-8 were 69%, 7%, and 24%; in LCL 777 M81 were 1%, 35%, and 64%; and in GM12878 were 6%, 73%, and 18%. Abundance of Ig light chain gene (kappa or lambda) and heavy chain isoform expression are generally correlated with variable heavy chain expression in each of the five samples (Figure 1—figure supplements 7–16). The isotype and clonal frequency differences between LCL 777 B95-8 and LCL 777 M81 are notable, given that these samples originated from the same donor and were transformed at the same time with different viral strains.
 
 Differential Ig isotype expression is a significant source of variation in LCLs, as captured by the loadings from principal component analysis (PCA), typically within the first four PCs. Consequently, differences in Ig isotype are effectively captured in dimensionally reduced data sets generated from PCs using t-distributed stochastic neighbor embedding (tSNE) even at low clustering resolution. In samples with more homogenous isotype expression (LCL 461 B95-8 and GM18502), the relative Ig expression level is a significant factor in distinguishing clusters.
 
-## Genes involved in B cell activation and differentiation exhibit inverse expression gradients
+### Genes involved in B cell activation and differentiation exhibit inverse expression gradients
 
 Across all samples, LCL populations display variable mRNA transcript levels for genes involved in cell activation, inhibition of apoptosis, response to oxidative stress, and differentiation (Figure 2). Gradients in Ig expression exhibit strong anticorrelation with expression of NFκB pathway transcripts (e.g., NFKB2, NFKBIA, and EBI3) central to B cell activation and survival (Figure 2A, Figure 2—figure supplement 1A). Similar gradients are observed for metabolic and oxidative stress response transcripts (e.g., TXN, PRDX1, PKM, LDHA, ENO1, and HSP90AB1); however, these transcripts are present more broadly (>80% of cells) and at higher levels than NFκB-related genes (20–30% of cells) in each sample (Figure 2—figure supplement 2). While NFκB family gene expression is consistently anticorrelated with that of B cell differentiation factors, significant diversity exists in NFκB-high cells with respect to specific subunits including REL, RELA, and RELB (Figure 2—figure supplement 3). This implies differential intercellular NFκB dimer composition and, consequently, intra-sample variation in NFκB-mediated transcriptional programs. Expression of NFκB regulated BCL2 family members (e.g., BCL2L1/Bcl-xL and BCL2A1/BFL1) displays strong anticorrelation with Ig expression level. However, MCL1 and BCL2 mRNAs are more broadly expressed across cells within each LCL, while BCL2L2/BCL-W is only modestly expressed in LCLs (Figure 2—figure supplement 4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-v3.jpg)
+
+**Figure 2.:** (A) Inverse expression gradients of immunoglobulin genes (IGHM, IGHA1, and IGHG1) in magenta and NFκB targets (NFKB2, NFKBIA, EBI3, ICAM1, and BCL2A1) and TXN in green. (B) Similar inverse gradients of NFκB targets in green and B cell differentiation markers (TNFRSF17, XBP1, MZB1, CD27, and CD38) in orange. (C) Pearson correlation maps and hierarchical clustering reveal negative correlation of differentiation (orange) and activation (green) gene sets and positive correlations between genes within each set. (D) In LCLs comprising multiple immunoglobulin isotypes, heavy chain class and differentiation/activation gradients constitute orthogonal (independent) axes of phenotypic variance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression of genes involved in activation/pro-survival of B cells. (B) Expression of genes involved in B cell differentiation. (C) Correlation of each activation and differentiation gene with IgG1 expression for GM18502 (a sample with a single isotype class).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp2-v3.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp3-v3.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp4-v3.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp5-v3.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp6-v3.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp7-v3.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Averaged (top-left panel) and individual lymphoblastoid cell line (LCL) growth rates in sorted ICAM-hi (teal) and ICAM-lo (sienna) fractions. (B) Metabolic profiling of ICAM-hi and ICAM-lo fractions of LCLs.
 
 Ig gradients are closely related to expression of differentiation and maturation markers (e.g., CD27, TNFRSF17/BCMA, XBP1, MZB1, and PRDM1) (Bhende et al., 2007; Hatzoglou et al., 2000; Rosenbaum et al., 2014), which are likewise anticorrelated with NFκB pathway markers (Figure 2B and C, Figure 2—figure supplement 1B). The apparent inverse relationship between these gene sets defines a major axis of phenotypic variance within LCL samples comprising multiple Ig isotypes (Figure 2D). The orthogonality of the pro-survival/differentiation and isotype class diversity axes implies that these two aspects of phenotypic variance are decoupled. Continuity between phenotypes resembling activated B cells (ABC) and antibody-secreting cells (ASC) is also captured in the expression profiles of key genes involved in the mutually antagonistic control of B cell state (Figure 2—figure supplement 5; Nutt et al., 2015). In this model, genes including PAX5 and IRF8 promote the ABC state; IRF4 and MKI67 (a G2/M cell cycle marker) are markers of a transitional phenotype; and PRDM1 (BLIMP1) and XBP1 promote the ASC state. As cell cycle marker expression was regressed out, mitotic phase has negligible influence on the observed trends.
 
@@ -70,23 +136,47 @@ Finally, the viral EBNA2 and EBNA3 proteins are responsible for transcriptional 
 
 Differential expression of genes involved in cell activation could affect rates of cell proliferation within an LCL population. To explore this possibility, we sorted three additional LCLs by ICAM-1 expression and evaluated the growth and metabolic profiles of the sorted fractions. On average, ICAM-1hi cells (consistent with the ABC phenotype) exhibited modestly faster growth in culture than ICAM-1lo cells (ASC phenotype) between 1 and 4 days post-sorting. Notably, metabolic activity was elevated in ICAM-1hi cells than ICAM-1lo cells across all three LCLs, as indicated by higher rates of glycolysis and oxygen consumption (Figure 2—figure supplement 8).
 
-## Viral state heterogeneity affects host expression profile distributions in LCLs
+### Viral state heterogeneity affects host expression profile distributions in LCLs
 
 Clusters with high EBV lytic gene expression are observed in two of the three data sets (LCL 777 B95-8 and LCL 777 M81) aligned against the human reference genome containing the viral genome as an extra chromosome (see Materials and methods; Figure 3). Lytic cluster cells are small, accounting for 2.2% and 0.9% of the LCL 777 B95-8 and LCL 777 M81 cell populations, respectively (Figure 3A). The higher rate of lytic cell capture in the B95-8 sample relative to the M81 sample is somewhat surprising, as the M81 strain is known for increased frequency of lytic reactivation; however, this disparity may originate from the nature of single-cell sample preparation method (see Discussion; Zheng et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig3-v3.jpg)
+
+**Figure 3.:** (A) Clustering of dimensionally reduced data sets for LCL 777 B95-8 and LCL 777 M81. (B) Grouping of cell clusters into latent (red) and lytic (cyan) cells based on viral and host gene expression signatures of principal components. (C) Relative expression of four representative Epstein–Barr virus (EBV) lytic genes (BHRF1, BLRF1, BALF1, and BARF1) is elevated in lytic cell subpopulations. (D) Lytic cell clusters exhibit elevated expression of several host cell genes (SGK1, NHLH1, NFATC1, MIER2, and SFN) relative to latently infected cells. While under-sampled due to subpopulation size, immunoglobulin class frequencies in lytic cells roughly reflect the population-wide frequencies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig3-figsupp1-v3.jpg)
 
 The presence or absence of viral lytic transcripts is a significant source of phenotypic variance in these samples, as reflected in population groupings by viral state (Figure 3B) and principal component loadings (Figure 1—figure supplements 15 and 16, PC_3 and PC_7, respectively). Lytic cells can be identified confidently from high expression of EBV genes including BLRF1, BALF1, and BARF1, among others (Figure 3C). BHRF1 expression is also elevated in lytic cells, although BHRF1 transcripts are ubiquitous at low levels sample wide. This is likely because BHRF1 can be expressed during both latent and lytic phases of EBV infection from different promoters (Xing and Kieff, 2007). Cells identified as lytic exhibit lytic gene expression ranging from approximately 3–15% of total measured transcripts per cell (Figure 3—figure supplement 1). Thus, it is possible that this cluster represents both truly lytic cells (>10% lytic transcripts) and abortive lytic cells (Chiu and Sugden, 2016). Alternatively, the cells with lower lytic transcript expression may have been at earlier stages of lytic reactivation at the time of sample preparation.
 
 While the absolute number of lytic cells in each sample is low, the data indicate that the lytic cells are polyclonal with respect to Ig heavy chain expression, display upregulation of several host genes including NFATC1, MIER2, SFN, and SGK1, and exhibit heterogeneous NFκB expression (Figure 3D, Figure 1—figure supplements 5 and 6). Ig isotype distributions in lytic cell clusters appear roughly proportional to the whole-sample distributions. NFATC1, MIER2, SFN, and SGK1 transcript levels were queried for GM12878 and GM18502 samples to test whether the presence of lytic cell subpopulations might be inferred from host gene expression. A sub-cluster representing a small percentage of cells in GM12878 (<0.5%) were found to co-express MIER2 and NFATC1. Negligible expression of either gene was observed in GM18502 (Figure 1—figure supplements 8 and 9).
 
-## Loss of mitochondrial and Ig expression in subpopulations under oxidative stress
+### Loss of mitochondrial and Ig expression in subpopulations under oxidative stress
 
 Three of the five samples (LCL 461 B95-8, GM12878, and GM18502) contain clusters that exhibit metabolic transcriptional profiles in stark contrast with typical expression in each population (Figure 4). Cells within these clusters account for 1–4% of the three samples after QC (Figure 4A) and are most notable for their low expression of mitochondrial genes (Figure 4B). In the case of LCL 461 B95-8 and GM18502, these cells are the first to partition from the rest of the sample at low clustering resolution (Figure 4—figure supplements 1–5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-v3.jpg)
+
+**Figure 4.:** (A) Clustering of dimensionally reduced data sets for LCL 461 B95-8, GM12878, and GM18502. (B) Distinct clusters within each of these samples are defined by uncharacteristically low mitochondrial gene expression. (C) Grouping of cell clusters to partition ‘mito-low’ cells (cyan) for differential expression comparison. (D) Mito-low cells exhibit reduced expression of cytochrome oxidase (MT-CO1 and MT-CO2), NADH-ubiquinone oxidoreductase (MT-ND1 and MT-ND2), MALAT1, and numerous lymphoid and B-cell lineage markers (CD19, MS4A1/CD20, PTPRC/CD45, CD74, and HLA-A). Mito-low cells exhibit increased expression of genes associated with cytoskeletal rearrangements (ACTB and TUBB), metabolic stress (PKM, ENO1, and LDHA), protein folding/degradation (HSP90AB1, PSMA1, and PPIA), and oxidative stress (TXN and PRDX1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp1-v3.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp2-v3.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp3-v3.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp4-v3.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp5-v3.jpg)
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp6-v3.jpg)
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/62586/elife-62586-fig4-figsupp7-v3.jpg)
 
 Compared to the rest of each sample, these atypical cells exhibit significantly depleted levels of cytochrome c oxidase (MT-CO1 and 2, complex IV) and NADH-ubiquinone oxidoreductase subunits (MT-ND1 and 2, complex I) as well as a lack of canonical markers of lymphoid (e.g., PTPRC/CD45, CD74), B cell-specific lineage (e.g., CD19, MS4A1/CD20), and in some cases, MHC class I and II antigen presentation (e.g., HLA-A, HLA-B, HLA-C, and HLA-DR; Figure 4C and D, Figure 1—figure supplements 7 and 9, Figure 4—figure supplement 6).
 
 Expression of genes involved in oxidative stress (TXN and PRDX1), unfolded protein responses (PPIA and HSP90AB1), metabolic shunt pathways (PKM, ENO1, and LDHA), and cytoskeletal rearrangements (ACTB and TUBB) is enriched consistently in this subset relative to the bulk population in each of the three LCLs (Figure 4D, Figure 2—figure supplement 2). Ig heavy chain transcripts are notably absent from these subpopulations, although some degree of light-chain expression is observed (Figure 1—figure supplements 7–9). While these cells are on the low end of the population distribution with respect to total RNA counts and unique feature RNAs (Figure 4—figure supplement 7), the measured values are consistent with intact, viable cells.
 
-## A stochastic model for LCL phenotypic heterogeneity
+### A stochastic model for LCL phenotypic heterogeneity
 
 A simple stochastic simulation based on a discrete-time Markov chain model (Škulj, 2006) was developed to understand better the factors that may influence phenotypic heterogeneity observed in LCLs, using Ig isotype frequencies as an example (Figure 5). In principle, the simulation may be adapted to any set of phenotypes within a sample. For additional details regarding model parameters and assumptions, please see the Materials and methods (Stochastic simulations) and refer to the source code (Source code 2).
 
@@ -106,7 +196,7 @@ Cluster simulation was implemented by random sampling from four arbitrary, isoty
 
 ## Discussion
 
-## Ig isotype heterogeneity in LCLs
+### Ig isotype heterogeneity in LCLs
 
 LCL clonality is known to change over time, although the factors involved in this evolution are not fully characterized (Ryan et al., 2006). PBMC derivation from multiple donors is an obvious source of cellular heterogeneity in the analyzed samples presented herein. B cells from peripheral blood (≈5–10% of all lymphocytes) comprise wide ranges of naïve (≈50–80%, mean ≈ 65%) and memory (≈15–45%, mean ≈ 30%) cells, with immature/transitional and plasmablasts accounting for smaller proportions (≈1–10%, mean ≈ 5% and ≈0.5–4.5%, mean ≈ 2%, respectively; Perez-Andres et al., 2010). Within the memory cell compartment, proportions of non-switched (IgM) and switched memory (IgA, IgG, and technically, IgE) are also likely donor-specific. The negligible number of IgE+ cells present across the samples can be explained by the isotype’s low frequency in the peripheral blood (He et al., 2017). A notable limitation of this study is the lack of access to (GM12878 and GM18502) or retention of (LCL_461 and LCL_777) original donor primary B cells and longitudinal sampling, which would have provided direct insights into donor-dependent cellular heterogeneity.
 
@@ -116,7 +206,7 @@ The polyclonality exhibited within LCL 777 B95-8 and LCL 777 M81 contrast with t
 
 Multiple isotypes within an LCL sample guarantee clonal diversity, but the presence of a single isotype does not necessarily ensure the inverse (intra-sample homogeneity). While not in the scope of the present study, B cell receptor (BCR) 5’ single cell sequencing of LCL samples could provide insights into variable regions and whether subpopulations of a given isotype are the progeny of one or multiple founder cells (and whether this changes over time).
 
-## Viral origins of LCL phenotypic variance
+### Viral origins of LCL phenotypic variance
 
 NFκB pathway signaling is constitutively activated by viral LMP-1 in EBV-transformed B cells (Devergne et al., 1996). LMP-1 induction of the NFκB pathway is necessary for LCL survival (Cahir-McFarland et al., 2000; Kaye et al., 1993; Dirmeier et al., 2003); however, the observed intra- and inter-LCL variance in transcript levels of NFκB and several of its transcriptional targets add nuance to this picture. Similar profiles of NFκB pathway transcript levels across samples may constitute a snapshot of the most probable distribution arising from stochastic NFκB target expression induced by EBV infection. This may arise from a transcriptional bursting mechanism in which mRNA transcript levels in each cell fluctuate over time (as a Poisson process) while the proportion of cells containing n transcripts in a population at any given time is roughly constant (Raj et al., 2006; Raj and van Oudenaarden, 2008; Weinberger et al., 2005; Behar and Hoffmann, 2010; O'Dea et al., 2007). Alternatively, or perhaps additionally, variation in NFκB pathway activity may be a manifestation of the different viral latency states present within each sample, as indicated by correlation with host markers of latency IIb and III.
 
@@ -128,11 +218,11 @@ Host genes upregulated within lytic cluster cells (e.g., NFATC1, MIER2, SFN, an
 
 Although PC loadings reveal substantial upregulation of more than a dozen EBV lytic genes, cells within the lytic clusters curiously lack expression of BZLF1, which plays a role in the latent-to-lytic transition (Bhende et al., 2004). The absence of BZLF1 reads (and low mRNA counts generally) ostensibly may result from factors including naturally low transcript abundance, reduced transcript capture efficiency, and/or reduced efficiency of reverse transcription to cDNA owing to RNA secondary structural motifs (Ozsolak and Milos, 2011).
 
-## ‘Marker-less’ subpopulations
+### ‘Marker-less’ subpopulations
 
 The small populations of cells in LCL 461 B95-8, GM12878, and GM18502 characterized by low mitochondrial gene expression and a dearth of canonical B cell markers are curiosities. These cells share similarities with exhausted plasma cells, most notably an apparent loss of Ig heavy chain expression while retaining moderate kappa and light chain expression (Köhler, 1980; Haas and Wabl, 1984), and hallmarks of oxidative stress including upregulated thioredoxin expression (Fernando et al., 1992; Lu and Holmgren, 2014; Muri et al., 2018; Muri et al., 2020). Low levels of NFκB pathway transcripts in these clusters most closely resemble expression profiles of cells with a plasma-like phenotype in the same samples. It is unlikely that these cells are immature, naïve, or transitional B cells, given that neither IGHM nor IGHD expression is observed. Loss of lineage marker expression is suggestive of a tumor-like phenotype (Schwering et al., 2003).
 
-## Factors in the evolution of subclonal heterogeneity
+### Factors in the evolution of subclonal heterogeneity
 
 Cellular diversity abounds even within presumptive clonal lines. For LCLs generated from EBV-transformed primary B cells, the list of parameters affecting the cell population’s phenotypic profile includes donor-specific frequencies of non-switched and switched memory B cells, heterogeneous states of viral infection, phenotype-specific differential fitness in culture, stochasticity, and time. By definition, some degree of differential fitness exists among cells in each sample as a consequence of the variability in pro-survival, proliferation, and anti-apoptotic genes. Mechanistically, a portion of this variance is expected to arise from heritable yet transient epigenetic signatures (Shaffer et al., 2020). Indeed, epigenetic diversity affecting chromatic architecture across LCL subclones from a single donor was recently demonstrated through ChIP-Seq analysis (Ozgyin et al., 2019). Lastly, as a principle of evolution, phenotypic differences do not necessarily have to be selected directly; they may simply be carried over in cells possessing other selected features. With respect to the stochastic model presented herein, the simulated phenotype advantage of class-switched memory vs. non-switched memory cells need not be construed as originating from heavy chain isotype expression.
 
@@ -140,29 +230,277 @@ Experimental procedures including cell passaging and the initial transformation 
 
 Additional studies that utilize time-resolved single-cell sampling from original B cells through early infection and long-term LCL outgrowth in culture will be essential to explore further the factors contributing to longitudinal stability and variation in transcriptional profiles of B cells immortalized by EBV infection. Moreover, while the transcriptomic profiles we report provide a valuable resource, additional molecular layers must be interrogated through parallel -omics techniques (e.g., ATAC-seq and DNA methylation) across individual cells to understand deeply the mechanistic underpinnings of transcriptional heterogeneity.
 
-## Conclusion
+### Conclusion
 
 Single-cell RNA sequencing reveals that LCLs including widely used commercial lines exhibit substantial phenotypic diversity. During the early stages of LCL generation, EBV infection drives cell proliferation by mimicking the process of B cell activation. After successful LCL outgrowth, infected B cells occupy a range of phenotypic states along a continuum between activation and plasma cell differentiation and, in some cases, exhibit signs of lytic reactivation. The diversity observed within LCLs (and cultured lines generally) can originate from intrinsic heterogeneity within primary cells, transcriptional programs of the viral transformant, and the realization of inherently stochastic processes (including certain gene expression programs) over time. The data reported herein enable extensive hypothesis generation and interrogation of aspects of B cell biology, EBV pathogenesis, and host–virus interactions. Moreover, this work highlights the importance of considering the possible sources and experimental consequences of cell population heterogeneity when using cultured cell lines.
 
 ## Materials and methods
 
-## PBMC isolation and transformation with EBV
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Whole blood</td>
+      <td>Gulf Coast Regional Blood Center</td>
+      <td></td>
+      <td>Multiple donors; sources of PBMCs for LCL_461 and LCL_777 preparation</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>B95-8 Z-HT</td>
+      <td>This paper; Price et al., 2017</td>
+      <td></td>
+      <td>Stimulated to obtain B95-8 strain (Type 1 EBV) viral supernatants</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>M81</td>
+      <td>This paper; Tsai et al., 2013</td>
+      <td></td>
+      <td>Stimulated to obtain M81 strain (Type 1 EBV) viral supernatants</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>LCL_461</td>
+      <td>This paper; Price et al., 2017</td>
+      <td></td>
+      <td>Prepared from donor PBMCs</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>LCL_777</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Prepared from donor PBMCs</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>GM12878</td>
+      <td>Coriell Institute</td>
+      <td>RRID:CVCL_7526</td>
+      <td>White female donor</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>GM18502</td>
+      <td>Coriell Institute</td>
+      <td>RRID:CVCL_P459</td>
+      <td>Yoruba female donor</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD54 (ICAM-1), PE-conjugated (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #353106</td>
+      <td>Clone #HA58</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-VH 1</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>ACAGGTGCCCACTCCCAGGTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-VH 3</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>AAGGTGTCCAGTGTGATGTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-VH 4/6</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>CCCAGATGGGTCCTGTCCCAGGTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-VH 5</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>CAAGGAGTCTGTTCCGAGGTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vκ 1/2</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>ATGAGGATCCCTGCTCAGCTGCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vκ 3</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>CTCTTCCTCCTGCTACTCTGGCTCCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vκ 4</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>ATTTCTCTGTTGCTCTGGATCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 1</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGTCCTGGGCCCAGTCTGTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 2</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGTCCTGGGCCCAGTCTGCCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 3</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GCTCTGTGACCTCCTATGAGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 4/5</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGTCTCTCTCACAGCTTGTGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 6</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GTTCTTGGGCCAATTTTATGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 7</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGTCCAATTCTCAGGCTGTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’ L-Vλ 8</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GAGTGGATTCTCAGACTGTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ Cγ CH1 (IgG)</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGAAGGTGTGCACGCCGCTGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ Cμ CH1 (IgM)</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GGGAATTCTCACAGGAGACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′Cα CH1 (IgA)</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>TGGGAAGTTTCTGGCGGTCACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ Cκ 543 (Kappa Light Chain)</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>GTTTCTCGTAGTCTGCTTTGCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3′ Cλ (Lambda Light Chain)</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td>PCR primers</td>
+      <td>CACCAGTGTGGCCTTGTTGGCTTG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SV96 Total RNA Isolation Kit</td>
+      <td>Promega</td>
+      <td>Cat #Z3500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Thermo</td>
+      <td>Cat #4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Single Cell 3’ Reagent Kit Protocol, v2 chemistry</td>
+      <td>10× Genomics</td>
+      <td>Cat #CG00052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iMag Negative Isolation Kit</td>
+      <td>BD Biosciences</td>
+      <td>Cat #558007</td>
+      <td>CD19+ B cell isolation from PBMCs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellRanger</td>
+      <td>10× Genomics</td>
+      <td>v.2.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (R package)</td>
+      <td>Satija et al., 2015; Stuart et al., 2019</td>
+      <td>v.3.1.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### PBMC isolation and transformation with EBV
 
 Whole blood samples from two normal donors (777 and 461) were obtained from the Gulf Coast Regional Blood Center. PBMCs were isolated from each sample by Ficoll gradient (Sigma, # H8889). CD19+ B cells were extracted from each PBMC sample through magnetic separation (BD iMag Negative Isolation Kit, BD, # 558007). Purified B cells were cultured in RPMI 1640 media supplemented with 15% fetal calf serum (FCS, vol./vol., Corning), 2 mM L-glutamine, penicillin (100 units/mL), streptomycin (100 μg/mL, Invitrogen), and cyclosporine A (0.5 μg/mL).
 
 B95-8 and M81 strains of EBV were generated from the B95-8 Z-HT and M81 cell lines, respectively, as described previously (Johannsen et al., 2004). Separate bulk infections of B cells were performed by incubating donor B cells with B95-8 Z-HT or M81 supernatants for 1 hr at 37°C, 5% CO2 to produce the following cultures: 777_B95-8, 777_M81, and 461_B95-8. After virus incubation, cells were rinsed in 1× PBS and resuspended in R15 media. LCL outgrowth was achieved from each of these three samples, resulting in LCL_777_B95-8, LCL_777_M81, and LCL_461_B95-8.
 
-## Cell lines and culture
+### Cell lines and culture
 
 LCL 777_B95-8, 777_M81, and 461_B95-8 were generated in our laboratory by infection of primary human B cells obtained from the Gulf Coast Regional Blood Center with EBV strains B95-8 and M81. These lines were confirmed to be mycoplasma negative using the Sigma Lookout PCR kit.
 
 All three in-house LCL samples were cultured in supplemented RPMI media as described above, substituting 10% FCS instead of 15% FCS. Prior to single-cell sample preparation, LCL_777_B95-8 and LCL_777_M81 were maintained in culture for approximately 1 month, whereas LCL_461_B95-8 was cultured for longer than 6 months. Immediately prior to single-cell sample preparation, LCLs were resuspended and disaggregated.
 
-## LCL samples and data
+### LCL samples and data
 
 LCL_777_B95-8, LCL_777_M81, and LCL_461_B95-8 were created as described above. LCLs GM_12878 and GM_18502 were obtained, prepared, sequenced, and aligned as described by Osorio and colleagues (Osorio et al., 2019). Briefly, these samples were obtained from the Coriell Institute for Medical Research, cultured for several days, and then prepared as single-cell GEMs (Gel bead in Emulsions) with the 10× Genomics Chromium system using version 2 chemistry for total RNA. Single-cell sequencing libraries were generated using established 10× Genomics protocols, and sequencing was performed with a Novaseq 6000 (Illumina, San Diego). Unique Molecular Identifier (UMI) count matrices were generated from these samples by using CellRanger v.2.1.0 with alignment to the hg38 version of the human reference genome. Additional information about the experimental handling and acquisition of data for GM12878 and GM18502 is provided in the original reference (Osorio et al., 2019). Gene-barcode matrix files for each sample were downloaded from the Gene Expression Omnibus (accession ID: GSE126321) and subsequently analyzed along with data from LCL_777_B95-8, LCL_777_M81, and LCL_461_B95-8 samples, while the LCL_461_B95-8 sample was run in a separate experimental batch.
 
-## Single-cell RNA sample preparation and sequencing
+### Single-cell RNA sample preparation and sequencing
 
 Single-cell RNA samples for LCL_777_B95-8, LCL_777_M81, and LCL_461_B95-8 were prepared using the General Sample Preparation demonstrated protocol from 10× Genomics (10×, Manual Part #CG00053) adapted from the original published methods (Zheng et al., 2017). Briefly, disaggregated LCLs were resuspended in fresh 1× PBS supplemented with 0.04% BSA, stained with trypan blue to assess viability, and counted using a hemocytometer for preparation to target concentration.
 
@@ -170,22 +508,22 @@ Single-cell libraries for sequencing were prepared from each sample using the me
 
 Raw base call files (*bcl.gz) from sequencing runs were processed using CellRanger v.2.0.0 to generate fastq files (*fastq.gz) via CellRanger’s ‘mkfastq’ command. CellRanger’s ‘count’ command was then used to align reads from the three in-house LCL samples to the human reference genome (hg38) with the Type 1 EBV reference genome (NC_007605) concatenated as an extra chromosome (reflecting the episomal nature of the EBV genome within infected B cells). This process yielded gene-barcode matrices (UMI count matrices) for subsequent analysis.
 
-## Sample QC, analysis, and visualization
+### Sample QC, analysis, and visualization
 
 UMI count matrices for all five LCL samples were analyzed using the Seurat single-cell analysis package for R (Seurat v.3.1.5; Satija et al., 2015; Stuart et al., 2019). Filtered barcode matrices were loaded into Seurat, after which genes present in fewer than three cells and cells expressing fewer than 200 unique RNA molecules (features) and more than 65,000 unique features were filtered out. Additionally, cells in which mitochondrial genes accounted for greater than 5% of all transcripts were excluded from analysis. Beyond the uniform application of QC steps, we did not investigate the potential for batch-specific effects across the five samples run in four experiments. After QC thresholding, feature data were normalized and scored for cell cycle markers. Cell cycle scoring was used to regress out S and G2M gene features to remove variance (and unwanted effects on clustering) in the data sets arising from cell cycle phase. Cell cycle-corrected data were then scaled, and selection was performed to find the highest-variance features. PCA was performed on selected (n = 2000) variable features, and PCs were subsequently used to define distinct subpopulations within each of the five samples. For visualization, PCs were used to generate clusters at various resolutions and dimensionally reduced using tSNE. The R code used to process data and produce figures presented in this manuscript is provided as a supporting file (Source code 1), and the Python code used for simulations is provided as a supporting file (Source code 2) and is also available on GitHub (https://github.com/esorelle/ig-evo-sim; copy archived at https://archive.softwareheritage.org/swh:1:dir:8c47b2c0202aa8f255380c742a3cda3ff777abc7/).
 
-## PCR validation experiments
+### PCR validation experiments
 
 Cell pellets were collected for each of the five LCLs, and total mRNA was extracted from each pellet using the Promega SV96 Total RNA Isolation Kit (Promega, cat # Z3500) and quantified using a NanoDrop 2000 spectrophotometer (Thermo). Total mRNA was then used to create cDNA pools for each sample using a High-Capacity cDNA Reverse Transcription Kit (Thermo, cat # 4368814). Previously reported primer sequences flanking each heavy (IgM, IgA, and IgG) and light chain (Ig kappa and Ig lambda) gene of interest (Tiller et al., 2008; listed below) were purchased from Integrated DNA Technologies (IDT) and used to amplify each cDNA pool using standard procedures across a temperature gradient. PCR products and loading dye (Gel Loading Dye, Purple [6×], NEB, cat # B7025) were run on 2% agarose gels with SYBR Safe at 120 V for 45 min with a 100 base pair ladder (NEB, N3231S) and subsequently visualized using a LI-COR Odyssey Fc Imaging System (LI-COR Biosciences). For LCL_777_B95-8 and GM12878, PCR products were sequenced (GeneWiz) and aligned to assess clonality (imgt.org).
 
-## ICAM-1 cell sorting, proliferation, and metabolic assays
+### ICAM-1 cell sorting, proliferation, and metabolic assays
 
 LCLs were stained with CD54 (ICAM-1) antibody (PE, Biolegend #HA58) according to the supplier’s manual. Then, cells were sorted on a Beckman Coulter Astrios cell sorter by anti-CD54 fluorescence, with ICAM-1-high and ICAM-1-low being defined as the top 15% and bottom 15%, respectively. 24 hr after sorting of ICAM-1-high and ICAM-1-low LCLs, extracellular acidification rate (ECAR) and oxygen consumption rate (OCR) were measured using the Seahorse XF24 extracellular flux analyzer (Agilent Technologies) Cell Energy Phenotype Test. Suspension LCLs were attached to culture plates by using Cell-Tak (BD Bioscience). ECAR and OCR were measured in Seahorse XF Base Medium supplemented with 1 mM pyruvate, 2 mM glutamine, and 10 mM glucose (Sigma Aldrich). ECAR and OCR values were normalized to cell number. For stress measurements, ECAR and OCR were measured over time after injection of oligomycin and FCCP. Metabolic potential measures the ability of cells to meet energetic demands under conditions of stress and is the percentage increase of stressed over baseline ECAR or OCR.
 
-## Stochastic simulations
+### Stochastic simulations
 
 The concept of a discrete-time Markov chain was adapted to simulate the evolution of phenotype frequencies, using immunoglobulin heavy chain isotype distributions within LCLs as an example. Briefly, the simulation takes as input a cell population of size n comprising B cells of different Ig heavy chain isotype classes at user-defined initial frequencies, fixed probabilities of proliferation in synchronous rounds of cell division, and a constant cell death rate assumption (also user-defined). Within the scope of computational feasibility, users can specify the number of rounds of cell division to simulate and the number of simulation trials to run. Additionally, users may choose to generate simulated cluster data modeled from distinct 2D normal distributions for each isotype for a specified number of trials at fixed intervals (i.e., every nth cell division round). The simulation was implemented in Python, and the code used to generate the simulated data is provided as a supporting file. The code is also available at (add as public GitHub repo) and may be freely implemented and modified.
 
-## Source data files
+### Source data files
 
 Raw sequencing data for the three previously unpublished samples (LCL_777_B95-8, LCL_777_M81, and LCL_461_B95-8) are deposited in the NCBI Sequence Read Archive (SRA) and can be accessed along with processed data from the NCBI Gene Expression Omnibus (GEO, Series Accession: GSE158275).

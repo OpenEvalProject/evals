@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Several human B cell subpopulations are recognised in the peripheral blood, which play distinct roles in the humoral immune response. These cells undergo developmental and maturational changes involving VDJ recombination, somatic hypermutation and class switch recombination, altogether shaping their immunoglobulin heavy chain (IgH) repertoire. Here, we sequenced the IgH repertoire of naïve, marginal zone, switched and plasma cells from 10 healthy adults along with matched unsorted and in silico separated CD19 + bulk B cells. Using advanced bioinformatic analysis and machine learning, we show that sorted B cell subpopulations are characterised by distinct repertoire characteristics on both the individual sequence and the repertoire level. Sorted subpopulations shared similar repertoire characteristics with their corresponding in silico separated subsets. Furthermore, certain IgH repertoire characteristics correlated with the position of the constant region on the IgH locus. Overall, this study provides unprecedented insight over mechanisms of B cell repertoire control in peripherally circulating B cell subpopulations.
+Several human B cell subpopulations are recognised in the peripheral blood, which play distinct roles in the humoral immune response. These cells undergo developmental and maturational changes involving VDJ recombination, somatic hypermutation and class switch recombination, altogether shaping their immunoglobulin heavy chain (IgH) repertoire. Here, we sequenced the IgH repertoire of naïve, marginal zone, switched and plasma cells from 10 healthy adults along with matched unsorted and in silico separated CD19+ bulk B cells. Using advanced bioinformatic analysis and machine learning, we show that sorted B cell subpopulations are characterised by distinct repertoire characteristics on both the individual sequence and the repertoire level. Sorted subpopulations shared similar repertoire characteristics with their corresponding in silico separated subsets. Furthermore, certain IgH repertoire characteristics correlated with the position of the constant region on the IgH locus. Overall, this study provides unprecedented insight over mechanisms of B cell repertoire control in peripherally circulating B cell subpopulations.
 
 ## Introduction
 
@@ -35,13 +35,25 @@ Here, we used an established AIRR-seq workflow that captures the diversity of th
 
 ## Results
 
-## Physically sorted B cell subpopulations and their corresponding subsets in the bulk share similar repertoire characteristics
+### Physically sorted B cell subpopulations and their corresponding subsets in the bulk share similar repertoire characteristics
 
 We compared IgH repertoire characteristics between the following B cell subpopulations: Bnaive, BMZ, BPC_MD, BPC_AG and Bswitched and their corresponding subsets that we obtained in silico from Bbulk: Bbulk_naïve, Bbulk_MD and Bbulk_switched. We identified three separate clusters: one made of predominantly BMZ, Bbulk_MD and BPC_MD; another with only Bnaive and Bbulk_naïve; and a third cluster with predominantly Bbulk_switched, BPC_AG and Bswitched (Figure 1A) by combining all repertoire characteristics in a PCA and applying k-means clustering. To test whether this clustering pattern was driven by VJ gene usage, complementarity-determining region (CDR) 3 physiochemical properties or the general repertoire metrics, we analysed these variables separately. Using V family and J gene usage, there was a clear separation between naïve and memory cells mostly driven by differences in V1/3 and J4/6 usage (Figure 1—figure supplement 1). However, no separation between BMZ/BPC_MD/ Bbulk_MD and Bswitched/BPC_AG/Bbulk_switched was observed (Figure 1B). The CDR3 physiochemical properties alone created similar clusters as when combined together with the other metrics (Figure 1C). This separation was mostly driven by a lower basic and a higher aromatic content in addition to a higher gravy index and a lower polarity in Bnaive/Bbulk_naïve compared to memory subpopulations (Figure 1—figure supplement 2). Global repertoire metrics also created a clear separation between Bnaive/Bbulk_naïve, Bswitched/BPC_AG/Bbulk_switched and BMZ/BPC_MD/Bbulk_MD subpopulations mostly driven by higher mutation counts, NP length and selection pressure in the CDR and lower junction length and diversity in Bswitched compared to Bnaive (Figure 1—figure supplement 3).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig1-v2.jpg)
+
+**Figure 1.:** Principal component analysis (PCA) (left) and composition of the clusters formed using k-means clustering with k = 3 (right) applied on (A) all repertoire characteristics, (B) V family and J gene usage (see Figure 1—figure supplement 1), (C) physiochemical properties of CDR3 junction (see Figure 1—figure supplement 2) and (D) global repertoire metrics (see Figure 1—figure supplement 3). The percentage of all variation in the data that is explained by PC1 and PC2 is shown on the x and y axis, respectively, between brackets. In the PCA plots, areas are the convex hulls of the subsets, and the largest point of one colour represents the centre of that hull.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) V family and (B) J gene usage by B cell subpopulation representing data underlying PCA in Figure 1B. Bar plots indicate the proportion of sequences with a certain gene. Error bars represent the standard error of the mean. Underlying source data can be accessed under Figure 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig1-figsupp3-v2.jpg)
+
 In summary, we found that V family and J gene usage, the physiochemical properties of the CDR3 and global repertoire metrics similarly distinguish between B cell subpopulations. Bnaive, BMZ/BPC_MD and Bswitched/BPC_AG were divergent but shared properties with their relative corresponding subsets in the bulk.
 
-## Accurate prediction of cell type based on repertoire features on a single-cell level
+### Accurate prediction of cell type based on repertoire features on a single-cell level
 
 We constructed a sequence classifier that predicts the cell type of a sequence using sequence attributes and different repertoire metrics. Since we subsampled our data making our datasets perfectly balanced, we used only accuracy as a performance metric. Logistic regression, decision tree and random forest classifiers all performed satisfactorily (Figure 2A). However, logistic regression performed poorly on correctly classifying Bswitched and BPC_AG, for which accuracy was almost equal to chance. The performance of all three classifiers was highest in distinguishing between Bnaive and other cell types.
 
@@ -51,7 +63,7 @@ We constructed a sequence classifier that predicts the cell type of a sequence u
 
 The random forest classifier was the most successful compared to the other two and the most accurate in predicting the cell type of a sequence. We assessed the relevance of specific predictors in properly classifying cell types by calculating feature importance scores for each cell pair (Figure 2B). The number of mutations was the highest scoring feature for all cell pairs except for distinguishing between Bswitched and BPC_AG and between BMZ and BPC_MD for which CDR3 amino acid characteristics had higher scores. Within the CDR3 physiochemical properties, average bulkiness, average polarity and the gravy hydrophobicity index were the most differentiating between cell types, whereas the basic and acidic content of the CDR3 chain seemed to be less important. R/S ratio in CDR and FWR and the junction length appeared to have similar scores and were more important in cases where Bnaive were not one of the two cell types. V family and J gene appeared to have low importance in distinguishing between all cell pairs.
 
-## Within class-switched subsets, sequences with same constant region from different cell types show similar features
+### Within class-switched subsets, sequences with same constant region from different cell types show similar features
 
 When comparing class-switched transcripts originating from Bbulk_switched, Bswitched and BPC_AG, isotype subclasses were similarly distributed. IgA1 was the dominant subclass in IgA transcripts, whereas IgA2 was less frequently used. All cell subpopulations showed a dominant use of IgG1 and IgG2 with little IgG3 and negligible IgG4 (Figure 3A). Usage of IgA1 in BPC_AG was similar to Bswitched and Bbulk_switched (p=0.28 and p=0.25, Kruskal–Wallis). IgG3 usage was significantly lower in BPC_AG compared to Bbulk_switched and Bswitched (p=0.01, p=0.01, Kruskal–Wallis) while IgG1 usage tended to be lower (p=0.13 and p=0.11, Kruskal–Wallis) and IgG2 usage higher in BPC_AG compared to the other two B cell subpopulations (p=0.11 and p=0.11, Kruskal–Wallis).
 
@@ -61,9 +73,17 @@ When comparing class-switched transcripts originating from Bbulk_switched, Bswit
 
 When combining repertoire characteristics by isotype subclass and cell type for class-switched transcripts resulting from Bbulk_switched, Bswitched and BPC_AG, we found that samples with the same constant region originating from different cell types overlapped (Figure 3B). We identified two clusters: one mainly composed of IgG1 and IgG3 samples from all cell types and another with IgA1, IgA2 and IgG2 samples by applying k-means clustering with k = 2 (Figure 3C). By further dividing the data and with increasing k, we observed that newly formed clusters were mainly composed of distinct isotype subclasses, while the cell type itself was not a defining factor for cluster formation. Interestingly, we could not see a clear separation between IgG2 and IgA2 samples with increasing number of clusters.
 
-## B cell repertoire metrics correlate with constant region positioning on the IgH locus in class-switched subsets
+### B cell repertoire metrics correlate with constant region positioning on the IgH locus in class-switched subsets
 
 The IgH locus contains nine constant genes. The genes encoding for IgM and IgD are the closest to the V-D-J recombination sites while those for IgG3, IgG1 and IgA1 are further downstream but still close to IgM/IgD, whereas more distant on the locus are the genes that encode for IgG2, IgG4, IgE and IgA2 (Figure 4A). We determined and compared B cell repertoire metrics between different subclasses in BPC and Bswitched and compared those to Bnaive and BMZ. Bnaive showed the lowest number of mutations and R/S ratio and longest CDR3 junction. Memory subsets had a high number of mutations, with BMZ and BPC_MD having fewer mutations than class-switched transcripts (Figure 4B). IgM-distal subclasses IgG2 and IgA2 in both Bswitched and BPC_AG showed the highest R/S ratio, indicating high selection pressure (Figure 4C). All antigen-experienced subsets had a lower junction length compared to Bnaive except for IgM-proximal transcripts IgG3 and IgG1 (Figure 4E). The proportion of IGHV4-34, the gene associated with self-reactivity (Bashford-Rogers et al., 2018), was lower in memory subsets compared to Bnaive except for IgG3 from Bswitched for which the proportion of IGHV4-34 was similar to naïve subsets (Figure 4F). Within IgG and IgA sequences, genomic distance from IgM correlated with a higher R/S ratio, shorter junction and lower usage of IGHV4-34. BPC had a significantly lower diversity compared to all other cell types (Figure 4G). Interestingly, transcripts from Bswitched showed a similar diversity to Bnaive, whereas BMZ were less diverse. Within BPC_AG, IgM-distal subclasses showed a lower diversity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overview of the IgH constant region locus. Comparison of (B) mutation counts, (C) R/S ratio, (D) selection pressure, (E) junction length, (F) proportion of IGHV4-34 and (G) diversity between different B cell subpopulations. Linear discriminant analysis (LDA) fitted on (H) V family and J gene usage (see Figure 4—figure supplement 1) and (I) CDR3 amino acid physiochemical properties.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73111/elife-73111-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) V family and (B) J gene usage in different B cell subpopulations and isotype subclasses representing data underlying LDA in Figure 4H. Bar plots indicate the proportion of sequences with a certain gene. Error bars represent the standard error of the mean.
 
 IGHV family and IGHJ gene usage also showed a discrepancy between different subsets. IGHV family usage in IgM-proximal subclasses IgG3 and IgG1 was similar to BNaive. BMZ and IgM-distal subclasses were enriched in IGHJ4 at the expense of IGHJ6 compared to naïve cells and IgG1-3 B cell subsets (Figure 4—figure supplement 1). To reduce the dimensionality of all data points into a single one-dimensional axis, we performed LDA fitted on the relative gene frequencies (Figure 4H). This showed a clear distinction between Bnaive, IgG1-3 and BMZ, IgG2 and IgA1-2. An LDA fitted on the physiochemical properties of the CDR3 junction also showed a clear distinction between naïve and memory subsets, with IgG3 and IgG1 being closest to Bnaive and IgG2 and IgA2 overlapping and furthest away (Figure 4I).
 
@@ -89,32 +109,84 @@ In summary, in this study we took an extensive look at the IgH repertoire of dif
 
 ## Materials and methods
 
-## Sample collection and cell sorting
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD19-PE (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 363003; RRID:AB_2564125</td>
+      <td>FACS (5 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27-FITC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 302806; RRID:AB_314298</td>
+      <td>FACS (5 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD38-APC/Fire 750 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 356626; RRID:AB_2616713</td>
+      <td>FACS (5 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgD-APC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 348222; RRID:AB_2561595</td>
+      <td>FACS (5 μl per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM-Pacific Blue (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 314513; RRID:AB_10574306</td>
+      <td>FACS (5 μl per test)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection and cell sorting
 
 This was a descriptive study, hence no formal sample size calculation was performed. Buffy coat samples were obtained from 10 anonymous healthy adults, hence no approval from the local ethics committee was necessary. B cells were first isolated by magnetic cell sorting using the human CD19 MicroBeads (Miltenyi Biotec, San Diego, CA) and the AutoMACS magnetic cell separator. From 9 out of the 10 samples, 3 × 106 bulk CD19+ B cells (Bbulk) were lysed and stored at –80°C. The remaining cells were sorted by flow cytometry into four subpopulations using cell surface markers characteristic for naïve (Bnaive), MZ (BMZ), PCs (BPC) and switched memory B cells (Bswitched). Cells were then lysed and stored at –80°C. Surface markers, demographics, number of cells and purity of each sample are outlined in Supplementary file 1.
 
-## RNA extraction and library preparation
+### RNA extraction and library preparation
 
 RNA extraction was performed on the lysate using the RNeasy Mini Kit (Qiagen, Hilden, Germany). Libraries were prepared as previously described (Ghraichy et al., 2020). Briefly, two reverse transcription (RT) reactions were carried out for each RNA sample resulting from Bbulk or BPC: one with equal concentrations of IgM and IgD-specific primers and another with IgA, IgG and IgE-specific primers. Only one RT reaction with IgM and IgD-specific primers was performed on Bnaive and BMZ samples; similarly, we applied one RT reaction with IgA, IgG and IgE primers on samples obtained from Bswitched. IgH cDNA rearrangements were then amplified in a two-round multiplex PCR using a mix of IGHV region forward primers and Illumina adapter primers, followed by gel extraction for purification and size selection. The final concentration of PCR products was measured using Qubit prior to library preparation and combined with a total of 12 equally concentrated samples. Final libraries barcoded with individual i7 and i5 adapters were sequenced in each run on the Illumina MiSeq platform (2 × 300 bp protocol).
 
-## Data preprocessing
+### Data preprocessing
 
 Preprocessing of raw sequences was carried out using the Immcantation toolkit and as per Ghraichy et al., 2020; Vander Heiden et al., 2014; Gupta et al., 2015. Briefly, samples were demultiplexed based on their Illumina tags. A quality filter was applied, paired reads were joined and then collapsed according to their unique molecular identifier (UMI). Identical reads with different UMI were further collapsed, resulting in a dataset of unique sequences. VDJ gene assignment was carried out using IgBlast (Ye et al., 2013). Isotype subclass annotation was carried out by mapping constant regions to germline sequences using stampy (Lunter and Goodson, 2011). The number and type of V gene mutations was determined as the number of mismatches with the germline sequence using the R package shazam (Gupta et al., 2015). The R package alakazam was also used to calculate the physicochemical properties of the CDR3 amino acid sequences (Gupta et al., 2015). Selection pressure was calculated using BASELINe and the statistical framework used to test for selection was CDR_R/(CDR_R + CDR_S) (Yaari et al., 2012).
 
-## In silico grouping of sequences
+### In silico grouping of sequences
 
 For Bbulk samples, we used the constant region information combined with the mutation counts to classify individual sequences into different subsets. IgD and IgM sequences with up to 2 nt mutations across the entire V gene were considered ‘unmutated’ (Bbulk_naïve) to account for remaining PCR and sequencing bias. The remaining mutated IgD and IgM sequences were labelled as IgD/IgM memory (Bbulk_MD). All class-switched sequences were defined as antigen-experienced regardless of their V gene mutation count (Bbulk_switched). We split the sequences originating from BPC into two categories: IgM/IgD BPC (BPC_MD) and switched IgG/IgA PCs (BPC_AG) according to the constant region of the sequences.
 
-## Summarising repertoire characteristics
+### Summarising repertoire characteristics
 
 V family and J gene usage was calculated in proportions for each individual and cell type. We summarised the mean of the following CDR3 physiochemical characteristics: hydrophobicity, bulkiness, polarity, normalised aliphatic index, normalised net charge, acidic side chain residue content, basic side chain residue content, aromatic side chain content by individual and cell type.
 
 Mean junction length, number of mutations and numbers of non-template (N) and palindromic (P) nucleotide added at the junction were calculated by individual and cell type. Selection pressure was summarised separately in CDR and framework region (FWR). Diversity was calculated as the proportion of unique junctions out of total transcripts. The preceding characteristics are referred to as global repertoire metrics.
 
-## Dimensionality reduction and clustering
+### Dimensionality reduction and clustering
 
 PCA and k-means clustering were applied to the different repertoire characteristics to explore and find associations in the data. They were applied using the internal R functions prcomp() and kmeans() (R Development Core Team, 2018). LDA was performed using the R function lda() from the package MASS (Venables and Ripley, 2002).
 
-## Sequence classifier
+### Sequence classifier
 
 We constructed the sequence classifier using the sklearn package in Python (Pedregosa, 2015). Because we have the constant region information and to avoid error accumulation, we performed a pairwise classification, thereby transforming the multiclass problem into a binary classification. Within every participant and for every pair of cells, we subsampled to the lower sequence number to avoid bias and dataset imbalance. We used the number of mutations, the physiochemical properties and the junction length as numerical input features. The V gene family and J gene were one-hot encoded. In the case where the naïve cells were not one of the two classes, the replacement/silent (R/S) mutation ratios in CDR and FWR were included as features. We split the data into training and testing set using the default test size of 0.2. We used logistic regression, decision tree and random forest classifiers for prediction. The accuracy was recorded to judge the overall performance of the models. For every pair of classes, the mean accuracy of the 10 samples was calculated.

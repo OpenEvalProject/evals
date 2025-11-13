@@ -49,9 +49,17 @@ In this study, we searched for broad determinants of mRNA storage and decay in u
 
 ## Results
 
-## PBs mostly accumulate AU-rich mRNAs
+### PBs mostly accumulate AU-rich mRNAs
 
 We have previously shown that PBs store one third of the coding transcriptome in human epithelial HEK293 cells (Hubstenberger et al., 2017). Such a large transcript number led us to search for general distinctive sequence features that could be involved in PB targeting. We first analyzed transcript length, as it was reported to be key for mRNA accumulation in stress granules (Khong et al., 2017). When mRNAs were subdivided into six classes ranging from <1.5 kb to >10 kb, longer mRNAs appeared more enriched in PBs than shorter ones, with a moderate correlation between length and PB enrichment (Spearman r (rs) = 0.39, p<0.0001) (Figure 1A, Figure 1—figure supplement 1A,B). However, their increased length in PBs was less striking than previously observed for stress granule mRNAs (Khong et al., 2017) (Figure 1—figure supplement 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig1-v2.jpg)
+
+**Figure 1.:** (A) Long mRNAs are particularly enriched in PBs. Transcripts were subdivided into six classes depending on their length (from <1.5 kb to >10 kb). The boxplots represent the distribution of their respective enrichment in PBs. The boxes represent the 25–75 percentiles and the whiskers the 10–90 percentiles. rs, Spearman correlation coefficient. (B) AU-rich mRNAs are particularly enriched in PBs. Transcripts were subdivided into six classes depending on their GC content (from <40 to >60%) and analyzed as in (A). (C) PBs mostly contain the AU-rich fraction of the transcriptome. The human transcriptome was binned depending on its GC content (0.7% GC increments). The graph represents the number of PB-enriched (PB-in, p<0.05, n = 5200) and PB-excluded (PB-out, p<0.05, n = 4669) transcripts in each bin. The distribution of all transcripts is shown for comparison (n = 14443). The median GC value is indicated below for each group. (D) mRNA localization in PBs mostly depends on the GC content of their CDS and 3’UTR. The analysis was repeated as in (B) using the GC content of the 5’UTR, CDS or 3’UTR, as indicated. For 5’UTRs, the >60% class was subdivided into three classes to take into account their higher GC content compared to CDSs and 3’UTRs. −0.57 and −0.55 are not significantly different (p=0.17), while −0.22 and −0.55 are (p<0.0001) (E) GC content is lower in PB-enriched mRNAs than PB-excluded ones independently of their length. The GC content distribution of PB-enriched (PB-in, p<0.05) and PB-excluded (PB-out, p<0.05) mRNAs was analyzed as in (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The transcripts enriched in PBs tend to be long. The mRNA length was expressed as a function of PB enrichment. rs, Spearman correlation coefficient.(B) Number of transcripts in the different classes analyzed in Figure 1A,E. (C) PB mRNAs are longer than PB-excluded ones, but shorter than SG mRNAs. The boxplot represents the distribution of length of PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs, and SG-enriched (SG-in) and SG-depleted (SG-out) mRNAs, as taken from Wells et al. (2017). The length of PB-enriched and SG-enriched mRNAs was statistically different using a two-tail Mann-Whitney test. **, p<0.0001. (D) The transcripts enriched in PBs tend to be AU-rich. The mRNA GC content was expressed as a function of PB enrichment. rs, Spearman correlation coefficient. (E) Number of transcripts in the different classes analyzed in Figure 1B,D and Figure 1—figure supplement 1. (F) PBs mostly contain transcripts from AU-rich genes. The graph was constructed as in Figure 1C using the GC content of the genes. The median value is indicated below for each group. (G) Partial correlations between PB localization (PBs), mRNA GC content (GC.mRNA), mRNA expression (RPKM) and sequence conservation (dN/dS). For each line, individual cells represent the correlation between the two corresponding variables, controlling for the effects of all other variables. dN/dS is the ratio of non-synonymous (dN) to synonymous (dS) changes between two organisms, here computed between human and mouse. It is used as a measure of natural selection strength in coding sequence. (H) PB-enriched mRNAs are longer than PB-excluded ones independently of their GC content. The distribution of length of PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs was analyzed as in Figure 1E.
 
 Most remarkably, mRNA accumulation in PBs was dependent on their global nucleotide composition, with a strong correlation between GC content and PB localization (rs = −0.64, p<0.0001). When transcripts were subdivided into six classes ranging from <40% to >60% GC, PB enrichment was predominant for those <45% GC (Figure 1B, Figure 1—figure supplement 1D,E). While reminiscent of the low GC content reported for stress granule mRNAs in HEK293 cells (Khong et al., 2017), our reanalysis of the published dataset indicated that stress granule localization correlated weakly with the gene GC content (rs = −0.12, p<0.0001) and almost not at all with the mRNA GC content (rs = −0.06, p<0.0001). Indeed, comparing the GC content distribution of the transcripts that are enriched or excluded from PBs with all HEK293 cell transcripts, revealed that mRNA storage in PBs is confined to the AU-rich fraction of the transcriptome (Figure 1C).
 
@@ -61,27 +69,63 @@ To refine the link between mRNA accumulation in PBs and their GC content, we ana
 
 In conclusion, while PB mRNAs tend to be longer than average, their most striking feature is that they correspond to an AU-rich subset of the transcriptome.
 
-## GC bias in PBs impacts codon usage and protein yield
+### GC bias in PBs impacts codon usage and protein yield
 
 The strong GC bias in the CDS of PB mRNAs prompted us to compare the coding properties of PB-stored and PB-excluded mRNAs. Consistently, we found that the frequency of amino acids encoded by GC-rich codons (Ala, Gly, Pro) was lower in PB-stored than in PB-excluded mRNAs, while the frequency of those encoded by AU-rich codons (Lys, Asn) was higher (Figure 2A). The difference could be striking, as illustrated by Lys, whose median frequency in PB-excluded mRNAs was 32% lower than in PB-enriched mRNAs, thus ranging within the lower 17th centile of their distribution (Figure 2—figure supplement 1A). In addition to different amino acid usage, we observed dramatic variation in codon usage between the two mRNA subsets. For all amino acids encoded by synonymous codons, the relative codon usage in PBs versus out of PBs was systematically biased towards AU-rich codons (log2 of the ratio >0, Figure 2B). For example, among the six Leu codons, AAU was used 4-fold more frequently in PB-enriched than in PB-excluded mRNAs, whereas CUG was used 2-fold less frequently. This systematic trend also applied to Stop codons. Some additional codon bias independent of base composition (NNA/U or NNG/C) was also observed for 4 and 6-fold degenerated codons (Figure 2—figure supplement 1B,C). For instance, Leu was encoded twice more often by CUU than CUA in PB-enriched mRNAs, whereas the use of both codons was low in PB-excluded mRNAs. Similarly, Gly was encoded more often by GGG than GGC in PB mRNAs, whereas the use of both codons was similar in PB-excluded mRNAs (Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig2-v2.jpg)
+
+**Figure 2.:** (A) PB mRNAs and PB-excluded mRNAs encode proteins with different amino acid usage. The graph represents the frequency of each amino acid in the proteins encoded by mRNAs enriched or excluded from PBs, using the indicated PB enrichment thresholds. (B) Codon usage bias in and out of PBs follows their GC content. The relative codon usage for each amino acid was calculated in PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs, using a PB enrichment threshold of +/- 1 (in log2). The graph represents the log2 of their ratio (PB-in/PB-out) and was ranked by decreasing values for each amino acid. The GC content of each codon is gray-coded below, using the scale indicated on the right. (C) The usage of some codons is biased independently of their GC content. Two examples are shown encoding Leucine (L) and Glycine (G). (D) The frequency of low usage codons strongly correlates with the GC content of the CDS, independently of their PB localization. The frequency of low usage codons was calculated for mRNAs excluded (PB-out) and enriched (PB-in) in PBs using a PB enrichment threshold of +/- 1 (in log2). It was expressed as a function of the CDS GC content at position 3 (GC3). Note that the slopes of the tendency curves are similar for PB-enriched and PB-excluded transcripts. The difference between the Spearman correlation coefficients (rs) are nevertheless statistically significant (p<0.0001). (E) PB mRNAs have longer CDS than PB-excluded mRNAs. The analysis was performed as in Figure 1E. (F) The number of low usage codons per CDS is a good determinant of both protein yield and PB localization. The protein yield was expressed as a function of the number of low usage codons for PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs. rs, Spearman correlation coefficient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PB mRNAs and PB-excluded mRNAs encode proteins with different amino acid usage. The boxplots represent the distribution of the frequency of each amino acid in the proteins encoded by mRNAs enriched (PB-in, n = 5500) or excluded from PBs (PB-out, n = 5104). The boxes represent the 25–75 percentiles and the whiskers the 10–90 percentiles. (B,C) Codon usage biases independent on the GC content. For each amino acid with 4 or six synonymous codons, the ratio of usage of NNU to NNA (B) or NNC to NNG (C) was calculated. The boxplots represent the distribution of these ratios in PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs using a PB enrichment threshold of +/- 1(log2). All differences were statistically significant (*, p<0.05) except for the Serine NNT/NNA ratio. Note the change of scale between (B) and (C). (D) Low usage codons are more frequent in PB mRNAs. The ratio between the relative codon usage in PB-enriched and PB-excluded (PB-in/PB-out) mRNAs was expressed as a function of their global relative usage, after normalization by the number of synonymous codons. (E) The frequency of low usage codons correlates weakly with protein yield. The protein yield was expressed as a function of the frequency of low usage codons for PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs. rs, Spearman correlation coefficient.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Codon usage in PB-excluded mRNAs does not closely follow amino-acylated tRNA abundance. The abundance of charged tRNA isodecoders in HEK293 cells was taken from Evans et al. (24) and aggregated for each codon (gray bars). Codons with no cognate tRNA are indicated with a star, and their possible decoding by near-cognate tRNAs with arrows. Normalized codon usage in PB-enriched and PB-excluded mRNAs is on the right y axis.
 
 In human, 22 out of the 29 synonymous codons that are less frequently used (normalized relative usage <1) end with an A or U, and were therefore overrepresented in PB mRNAs (Figure 2—figure supplement 1D). Considering for each amino acid the codon with the lowest usage (called low usage codon thereafter), 14 out of 18 are NNA or NNU, with the exception of Thr, Ser, Pro, Ala. We calculated the frequency of low usage codons for each CDS, and plotted it as a function of the GC content at the third position (GC3) to avoid any confounding effects of the amino acid bias. As expected, the frequency of low usage codons correlated strongly and negatively with GC3, with AU-rich CDS having a higher frequency of low usage codons than GC-rich CDS (Figure 2D). According to their distinct GC content, PB mRNAs had a higher frequency of low usage codons than PB-excluded mRNAs. However, the correlation coefficient between frequency of low usage codons and GC3 was very close for both mRNA subsets (rs = −0.88 for PB-enriched; −0.80 for PB-excluded mRNAs, p<0.0001 for both), meaning that their different frequency of low usage codons could be largely explained by their GC bias alone.
 
 We previously reported that protein yield, defined as the ratio between protein and mRNA abundance in HEK293 cells, was 20-times lower for PB-enriched than PB-excluded mRNAs. This was not due to translational repression within PBs, as the proportion of a given mRNA in PBs hardly exceeded 15%, but rather to some intrinsic mRNA property (Hubstenberger et al., 2017). In this respect, the frequency of low usage codons correlated more with PB localization (rs = 0.59, p<0.0001) than with protein yield (rs = −0.21, p<0.0001, significantly different from 0.59, p<0.0001) (Figure 2—figure supplement 1E). Conversely, the CDS length correlated more with protein yield (rs = −0.43, p<0.0001) than with PB localization (rs = 0.26, p<0.0001, significantly different from −0.43, p<0.0001). Nevertheless, the length of the CDS and its GC content contributed independently to PB localization (Figure 2E). Finally, combining the frequency of low usage codons with the CDS length, that is, considering the absolute number of low usage codons per CDS, was a shared parameter of both protein yield (rs = −0.46, p<0.0001, Figure 2F) and PB localization (rs = 0.49, p<0.0001). Strikingly, CDS with more than 100 low usage codons were particularly enriched in PBs, while those under 100 were mostly excluded (Figure 2F). One of the mechanisms linking codon usage to translation yield could be the abundance of cognate tRNAs (Novoa and Ribas de Pouplana, 2012). However, codon usage in PB-excluded mRNAs was not more adapted to the abundance of amino-acylated tRNAs (Evans et al., 2017) than codon usage in PB-enriched mRNAs (Figure 2—figure supplement 2). In conclusion, the strong GC bias in PB mRNAs results in both a biased amino acid usage in encoded proteins and a biased codon usage. Furthermore, the high number of low usage codons in PB mRNAs is a likely determinant of their low protein yield.
 
-## The PB assembly factor DDX6 has opposite effects on mRNA stability and translation rate depending on their GC content
+### The PB assembly factor DDX6 has opposite effects on mRNA stability and translation rate depending on their GC content
 
 In human, the DDX6 RNA helicase is key for PB assembly (Minshall et al., 2009). It associates with a variety of proteins involved in mRNA translation repression and decapping (Ayache et al., 2015; Bish et al., 2015), suggesting that it plays a role in both processes. To investigate how DDX6 activity is affected by mRNA GC content, we conducted a polysome profiling experiment in HEK293 cells transfected with DDX6 or control β-globin siRNAs for 48 hr. In these conditions, DDX6 expression decreased by 90% compared to control cells (Figure 3—figure supplement 1A). The polysome profile was largely unaffected by DDX6 silencing, implying that DDX6 depletion did not grossly disturb global translation (Figure 3—figure supplement 1B). Polysomal RNA isolated from the sucrose gradient fractions (Figure 3—figure supplement 1B) and total RNA were used to generate libraries using random hexamers to allow for poly(A) tail-independent amplification. As expected, both total and polysomal DDX6 mRNA was markedly decreased (by 72%) following DDX6 silencing (Figure 3—figure supplement 1C–E; Supplementary file 1, sheet1). Since DDX6 is cytoplasmic (Ernoult-Lange et al., 2009) and has a role in mRNA decay, we assumed that changes in total mRNA accumulation generally reflected an increased stability of the transcripts, though we cannot exclude altered transcription levels for some of them. As polysomal accumulation can result from both regulated translation and a change in total RNA without altered translation, we then used the polysomal to total mRNA ratio as a proxy measurement of translation rate. Nevertheless, for few transcripts, polysomal enrichment may reflect an elongation block rather than an increased rate of initiation. Analysis of the whole transcriptome showed a link between mRNA fate following DDX6 depletion and their GC content, but, intriguingly, the correlation was positive for changes in total RNA (rs = 0.45, p<0.0001; Figure 3—figure supplement 1F) and negative for changes in polysomal RNA (rs = −0.32, p<0.0001; Figure 3—figure supplement 1G). Therefore, DDX6 depletion affected different mRNA subsets in total and polysomal RNA.
 
 The extent of mRNA stabilization steadily increased with the GC content and became predominant for transcripts with >50% GC (Figure 3A, left panel, Figure 3—figure supplement 2A). This analysis was repeated on an independent dataset available from the ENCODE project (ENCODE Project Consortium, 2012), obtained in a human erythroid cell line, K562, following induction of a stably transfected DDX6 shRNA, and using an oligo(dT)-primed library. Despite the differences in cell type, depletion procedure and sequencing methods, again, mRNA stabilization preferentially concerned those with high GC content (rs = 0.59, p<0.0001; Figure 3A, right panel, Figure 3—figure supplement 2A; Supplementary file 1, sheet2). In contrast, following DDX6 silencing in HEK293 cells, the translation rate predominantly increased for transcripts with less than 45% GC (rs = −0.53, p<0.0001; Figure 3B, Figure 3—figure supplement 2A). As a result, mRNAs with the most upregulated translation rate were the least stabilized, and conversely (Figure 3—figure supplement 2B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig3-v2.jpg)
+
+**Figure 3.:** (A) mRNA stabilization after DDX6 silencing in HEK293 and K562 cells applies to GC-rich mRNAs. The fold-changes (FC) in mRNA accumulation were analyzed as in Figure 1B. (B) mRNA translation derepression after DDX6 silencing in HEK293 cells applies to AU-rich mRNAs. The fold-changes in translation rate (polysomal/total mRNA ratio) were analyzed as in (A). (C) GC-rich mRNAs are particularly enriched in the DDX6 CLIP experiment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot analysis of DDX6 in siRNA-transfected HEK293 cells. The DDX6 signal, normalized using the ribosomal protein S6, is indicated on the right panel (n = 3; p<0.001; t-test). Error bars, SD. (B) Representative polysome profiles of siRNA-transfected cells. (C,D) MA plots of mRNA fold changes between siRNA-transfected and control cells in total (C) and polysomal (D) mRNA. (E) Correlation between fold changes (FC) of randomly selected mRNAs measured by qPCR and calculated from RNA-Seq data, in total and polysomal fractions (n = 3). Error bars, SD. (F,G) Correlation between total (F) and polysomal (G) mRNA fold-changes and mRNA GC content. Note that correlation is positive for total mRNAs and negative for polysomal mRNAs. rs, Spearman correlation coefficient.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Number of transcripts in the different classes analyzed in Figures 3 and 4A,B. (B) Dot plot representation of the changes in translation rate (Polysome/Total FC) as a function of changes in mRNA stability (Total FC) after DDX6 silencing. (C,D) DDX6-clipped targets tend to be particularly stabilized after DDX6 silencing in both HEK293 and K562 cells (C), but less affected than other mRNAs in terms of translation rate (D). The difference between DDX6-clipped mRNAs and all mRNAs was statistically different using a two-tail Mann-Whitney test. **, p<0.0001. (E) Number of transcripts in the different classes analyzed in (F) and (G). (F) Transcript length has a weak impact on mRNA abundance following DDX6 silencing. Transcripts were subdivided into six classes depending on their full length (from <1.5 to 10 kb, left panel), the length of their CDS (from <0.5 to 6 kb, middle panel) or 3’UTR (from <0.5 to 6 kb, right panel). The boxplots represent the distribution of their respective fold-changes in total mRNA. The difference between class 1 and 6 was statistically significant using a two tail Mann-Whitney test: p<0.0001 in all panels. rs, Spearman correlation coefficient. (G) The 3’UTR length has an impact on mRNA translation derepression following DDX6 silencing. The polysomal/total mRNA ratio was used as a proxy measurement of translation rate.The data are represented as in (F). Note that the difference between class 1 and 6 was statistically significant in left and right panels only.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Number of transcripts in the different classes analyzed in (B) and (C). (B,C) mRNA abundance (B) and translation derepression (C) following DDX6 silencing in HEK293 cells mostly depends on the GC content of their CDS and 3’ UTR. The analysis was performed as in Figure 1D, using the polysomal/total mRNA ratio as a proxy measurement of translation rate. In (B), the Spearman correlation coefficients (rs) 0.40, 0.42 and 0.18 are significantly different from each other (p<0.0001). In (C), −0.52 and −0.15 are significantly different (p<0.0001), while 0.53 and 0.52 are not (p=0.37).
+
 To investigate how DDX6 activity was related to its binding to RNA, we used the CLIP dataset of K562 cells, also available from the ENCODE project. In both HEK293 and K562 cells, the mRNAs clipped to DDX6 were particularly stabilized after DDX6 knockdown, as compared to all mRNAs (Figure 3—figure supplement 2C; Supplementary file 1, sheet3), while they were not translationally derepressed in HEK293 cells (Figure 3—figure supplement 2D). In agreement, mRNAs with a high GC content were preferentially enriched in the DDX6 CLIP experiment (rs = 0.41, p<0.0001; Figure 3C, Figure 3—figure supplement 2A). Then, as we previously showed that DDX6 can oligomerize along repressed transcripts (Ernoult-Lange et al., 2012), we also considered mRNA length. While DDX6-dependent decay had a marginal preference for short transcripts (rs = −0.09, p<0.0001), as a combined effect of CDS and 3’UTR length (Figure 3—figure supplement 2E,F), DDX6-dependent translation repression was independent of the CDS length but higher on mRNAs with long 3’UTRs (rs = 0.16, p<0.0001; Figure 3—figure supplement 2E,G). Interestingly, the GC content of the CDS and the 3’UTR were similarly predictive of DDX6 sensitivity, whether for mRNA stability (rs = 0.42 and 0.40 for CDS and 3’UTR, respectively, p<0.0001 for both) or for translation repression (rs = −0.53 and −0.52, respectively, p<0.0001 for both), while the 5’UTR was less significant (rs = 0.18 and −0.15 for stability and translation repression, respectively, p<0.0001 for both; Figure 3—figure supplement 3A–C).
 
 Altogether, we showed that DDX6 knockdown affected differentially the mRNAs depending on the GC content of both their CDS and 3’UTR, with the most GC-rich mRNAs being preferentially regulated at the level of stability and the most AU-rich mRNAs at the level of translation.
 
-## DDX6/XRN1 and PAT1B decrease the stability of separate sub-classes of mRNAs with distinct GC content
+### DDX6/XRN1 and PAT1B decrease the stability of separate sub-classes of mRNAs with distinct GC content
 
 DDX6 acts as an enhancer of decapping to stimulate mRNA decay, upstream of RNA degradation by the XRN1 5’−3’ exonuclease. To investigate whether XRN1 targets are similarly GC-rich, we performed XRN1 silencing experiments in two cell lines. HeLa cells were transfected with XRN1 siRNA (Figure 4—figure supplement 1A; Supplementary file 1, sheet4), while HCT116 cells stably transfected with an inducible XRN1 shRNA were induced with doxycyclin (Figure 4—figure supplement 1B; Supplementary file 1, sheet5), both for 48 hr. In both cell lines, XRN1-dependent decay preferentially acted on mRNAs which were GC-rich (rs = 0.41 for HeLa and 0.49 for HCT116, p<0.0001 for both; Figure 4A, Figure 4—figure supplement 1A) and localized out of PBs (rs = −0.35, p<0.0001; Figure 4—figure supplement 1C), as observed for DDX6.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig4-v2.jpg)
+
+**Figure 4.:** (A) mRNA stabilization after XRN1 silencing in HeLa and HCT116 cells applies to GC-rich mRNAs. The analysis was performed as in Figure 1B. The GC content distribution for all mRNAs is presented for comparison (in gray). (B) mRNA stabilization after PAT1B silencing in HEK293 cells applies to AU-rich mRNAs. The analysis was performed as in (A). (C) Read coverage of PAT1B targets (FC >0.7, n = 330, solid lines) and all mRNAs (n = 16000, dashed lines) in the siPAT1B dataset. The read coverage was analyzed in each duplicate experiment and normalized as described in Materials and methods. The average value in control cells (gray lines) and after PAT1B silencing (peach lines) was plotted, with the bars representing the duplicate values. An expanded view of the dashed box is presented on the right panel. (D) Read coverage of XRN1 targets (FC >0.8, n = 199, solid lines) and all mRNAs (n = 13760, dashed lines) in the siXRN1 dataset. The data were analyzed as in (C). (E) Clustering analysis of mRNAs depending on their GC content, their differential expression after silencing DDX6, XRN1 or PAT1B, and their enrichment in PBs. Raw GC content and log2 transformed ratio of the other datasets were used for the clustering of both transcripts (lines) and datasets (columns). The values were color-coded as indicated on the right scale, and the Spearman correlation matrix is presented below (all p<10−48). The heatmap highlights the distinct fate of GC-rich and AU-rich mRNAs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot analysis of XRN1 in siRNA-transfected HeLa cells. The XRN1 signal, normalized using tubulin, is indicated below. (B) Western blot analysis of XRN1 in shRNA-transfected HCT116 cells. Cells transfected with the XRN1 or control shRNA were induced for 0 to 72 hr with Doxycycline (DOX). The XRN1 signal, normalized using RNA Pol II, is indicated below. The time point 48 hr was chosen for library preparation. (C) XRN1 targets tend to be excluded from PBs. The fold-changes after XRN1 silencing in HeLa cells were expressed as a function of PB enrichment. (D, E) PAT1B targets are regulated by DDX6 at the level of translation but not decay. The total (D) and polysomal/total (E) mRNA fold-changes (FC) after DDX6 silencing were expressed as a function of fold-changes after PAT1B silencing. (F) PAT1B targets are enriched in PBs. The fold-changes of total RNA after PAT1B silencing were expressed as a function of PB enrichment. rs, Spearman correlation coefficients.
 
 PAT1B is a well-characterized direct DDX6 partner known for its involvement in mRNA decay (Vindry et al., 2017; Braun et al., 2010; Ozgur et al., 2010; Vindry et al., 2019). As for DDX6, we assume that changes in steady-state mRNAs following PAT1B silencing generally reflect their increased stability (though, again, we cannot exclude some changes at the transcription level). However, using our previous PAT1B silencing experiment in HEK293 cells (Vindry et al., 2017), we surprisingly found a negative correlation between mRNA stabilization after PAT1B and after DDX6 silencing (rs = −0.31, p<0.0001; Figure 4—figure supplement 1D; Supplementary file 1, sheet6), suggesting that they largely target separate sets of mRNAs. Unexpectedly, the correlation was however positive with translational derepression after DDX6 silencing (rs = 0.45, p<0.0001; Figure 4—figure supplement 1E), indicating that PAT1B preferentially targets mRNAs that are translationally repressed by DDX6. Accordingly, these transcripts are prone to PB storage (rs = 0.49, p<0.0001; Figure 4—figure supplement 1F), as reported previously (Vindry et al., 2017). Indeed, in contrast to DDX6 and XRN1 decay targets, PAT1B targets tended to be AU-rich (rs = −0.50, p<0.0001; Figure 4B, Figure 4—figure supplement 1A). To gain insight into the mechanism of regulation by PAT1B, we analyzed the read coverage in the PAT1B silencing experiment (Figure 4C) and found it to be unchanged over the whole transcriptome. In contrast, following XRN1 silencing, the 5’ coverage was higher, confirming that such an analysis can reveal 5’ decay (Figure 4D). Of note, in control cells PAT1B target mRNAs had a higher 5’ coverage than average (Figure 4C), while XRN1 targets had a lower 5’ coverage than average (Figure 4D). These results suggest that mRNA accumulation in the absence of PAT1B does not result from their 5’ end protection.
 
@@ -89,13 +133,37 @@ In conclusion, DDX6 and PAT1B decrease the stability of distinct mRNA subsets, w
 
 To obtain a global visualization of the results we conducted a clustering analysis of the various datasets (Figure 4E). Note that to avoid clustering interdependent datasets, we included the changes in polysomal RNA after DDX6 silencing rather than in the polysomal/total RNA ratio. Altogether, the heatmap shows that GC-rich mRNAs are excluded from PBs and tend to be decayed by a mechanism involving DDX6 and XRN1, while AU-rich mRNAs are recruited in PBs, they undergo DDX6-dependent translation repression and their stability depends on PAT1B.
 
-## Specific mRNA decay factors and translation regulators target mRNAs with distinct GC content
+### Specific mRNA decay factors and translation regulators target mRNAs with distinct GC content
 
 Having shown that GC content is a distinctive feature of DDX6 and XRN1 versus PAT1B targets, we investigated the link between this global sequence determinant and a variety of sequence-specific post-transcriptional regulators for which relevant genome-wide datasets are available (Figure 5—figure supplement 1A).
 
 On the mRNA decay side (group I lists), we considered the Nonsense Mediated Decay (NMD) pathway, taking as targets the mRNAs cleaved by SMG6 (Schmidt et al., 2015), and the m6A-associated decay pathways, using the targets of the YTHDF2 reader defined by CLIP (Wang et al., 2014; Yang et al., 2015). We also analyzed mRNAs with a 5’UTR-located G4 motif, which have been shown to be preferential substrates of murine XRN1 in vitro (Bashkirov et al., 1997). On the translation regulation side (group II lists), we analyzed the TOP mRNAs, whose translation is controlled by a TOP motif at the 5’ extremity (Thoreen et al., 2012), and targets of various PB proteins and/or DDX6 partners (Hubstenberger et al., 2017; Ayache et al., 2015): FXR1-2, FMR1, PUM1-2, IGF2BP1-3, the helicase MOV10, ATXN2, 4E-T, ARE-containing mRNAs and the targets of the two ARE-binding proteins HuR and TTP. We also included mRNAs with a CPE motif, since DDX6 is a component of the CPEB complex that binds CPEs (Minshall et al., 2007). Of note, among the group II factors, some are known to also affect mRNA half-life, as exemplified by the ARE-binding proteins (Wells et al., 2017). G4, ARE and CPE motifs have been defined in silico, while the targets of the various factors originate from RIP and CLIP approaches in human cells or mouse studies in the case of TOP mRNAs (see Materials and methods).
 
 Intriguingly, compared to all mRNAs, group I list mRNAs were GC-rich, as well as TOP mRNAs and ATXN2 targets, whereas all other group II lists were AU-rich (Figure 5A). Furthermore, they shared common behavior in the various experiments. This is summarized in Figure 5B in a heatmap representing their median value in each dataset, while Figure 5—figure supplements 1 and 2 provide detailed analysis, as described below.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-v2.jpg)
+
+**Figure 5.:** (A) GC content biases in the targets of various RBPs. The targets of the indicated factors were defined using CLIP experiments or motif analysis (see Materials and methods). The boxplots represent the distribution of the GC content of their gene. The distribution for all mRNAs is presented for comparison (in gray) and the red dashed line indicates its median value. (B) Heatmap representation of the different factors depending on the behavior of their mRNA targets in the different datasets. The lines were ordered by increasing GC content, and the columns as in Figure 4E. (C) GC content biases in the targets of various AGO proteins and miRNAs. The AGO targets (in yellow) were defined using CLIP experiments and the miRNAs targets (in violet) using miRTarbase. The data are represented as in (A). (D) Heatmap representation of AGO and miRNAs depending on the behavior of their mRNA targets in the different datasets. The data were represented as in (B), using the same color code.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Number of transcripts in the mRNA subsets analyzed in (B–D) and in Figure 5A,B, Figure 5—figure supplement 2A–D and Figure 5—figure supplement 4. (B) Sensitivity of the different mRNA subsets to DDX6 silencing in HEK293 (upper panel) and K562 cells (lower panel). The behavior of all mRNAs is shown for comparison (in gray). Only the targets of group I factorsaccumulated following DDX6 depletion. While the presented analysis uses the YTHDF2 targets reported in Vindry et al. (2019), the same pattern was observed using the targets reported in Ozgur et al. (2010). (C) Sensitivity of the different mRNA subsets to XRN1 silencing in HeLa (upper panel) and HCT116 cells (lower panel). Only the targets of group I factors accumulated following XRN1 depletion in HCT116 cells, and only SMG6 targets did so in HeLa cells. (D) Sensitivity of the different mRNA subsets to PAT1B silencing in HEK293 cells. Only the targets of group II factors accumulated following PAT1B depletion, except ATXN2. Two-tail Mann-Whitney test was performed with respect to all mRNAs. **, p<0.0001; ns, non-significant.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) PB localization of the different mRNA subsets. Only the targets of group II factors were enriched in PBs, except ATXN2. Note also that SMG6 targets and TOP mRNAs were particularly excluded from PBs. (B) Sensitivity of the different mRNA subsets to DDX6 silencing in HEK293 in terms of translation rate(polysomal/total mRNA ratio). Only the targets of group II factors were translationally derepressed, except ATXN2. Two-tail Mann-Whitney test was performed with respect to all mRNAs. **, p<0.0001. (C, D) The targets of group I regulators were stabilized after DDX6 (C) and XRN1 (D) silencing mostly like other PB-excluded mRNAs. The same analysis as in Figure 5—figure supplement 1B and C was conducted separately on PB-excluded (PB-out) and PB-enriched (PB-in) mRNAs. The distribution of all mRNAs (in gray), all PB-out and all PB-in mRNAs (dashed boxes) are shown for comparison. Two-tail Mann-Whitney test was performed with respect to cognate PB-out or PB-in mRNAs. **, p<0.0001; *, p=0.006 for (C) and 0.02 for (D); ns, non-significant. (E) DDX6-dependent mRNA decay does not correlate with polysome engagement. The fraction of mRNAs in polysomes (polysomal/total cpm) was calculated using the RNA-Seq data from control HEK293 cells. Transcripts were subdivided into 15 bins (1000 transcripts each) of increasing value. The boxplot represents their fold-change (FC) distribution in total RNA following DDX6 silencing.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A,B) Number of AGO targets (A) and miRNA targets (B) analyzed in (C–H) and in Figure 5C,D. (C–E) AGO targets are enriched in PBs (C), translationally derepressed (D) and little or not stabilized (E) following DDX6 silencing. Two-tail Mann-Whitney test was performed with respect to all mRNAs. **, p<0.0001; *, p=0.002, x, p=0.04; ns, non-significant. (F) AGO targets excluded from PBs accumulate following DDX6 silencing like other PB-excluded transcripts. The analysis was performed as in Figure 5—figure supplement 2C. Two-tail Mann-Whitney test was performed with respect to cognate PB-out or PB-in mRNAs. x, p=0.04; ns, non-significant. (G) AGO targets accumulate following PAT1B silencing. Two-tail Mann-Whitney test was performed with respect to all mRNAs. **, p<0.0001; x, p=0.04. (H) The extent of PB enrichment of miRNA targets depends on the miRNA. Two-tail Mann-Whitney test was performed with respect to all mRNAs. **, p<0.0001; ns, non-significant.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A–E) The whole transcriptome was binned depending on its GC content (bin size of 500 mRNAs). The median GC content of each bin was represented as a function of its median fold-change in the various datasets (in gray). The same analysis was performed for the targets of group I (in green) and II (in orange) regulators, and superimposed to the graphs. The dashed line indicates the median GC content for all mRNAs. Overall, in all datasets, the targets of the different regulators behave similarly to mRNAs of same GC content. For figure clarity, only the few regulators leading to distinct behaviors were indicated.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A–E) The analysis was conducted as in Figure 5—figure supplement 4. Overall, the targets of the different miRNAs behave similarly to mRNAs of same GC content. (F) The GC content of miRNA targets correlates with the GC content of the miRNA itself. rp, Pearson correlation coefficient.
 
 Group I list mRNAs tended to be dependent on DDX6 and XRN1 but not on PAT1B for stability (Figure 5—figure supplement 1B–D), with nevertheless some variation between cell lines, as only SMG6 targets were sensitive to XRN1 depletion in HeLa cells (Figure 5—figure supplement 1C, upper panel). They did not accumulate in PBs and their translation rate was independent of DDX6 (Figure 5—figure supplement 2A,B). These results were consistent with their high GC content and our global analysis above. However, surprisingly, within PB-excluded mRNAs, there was little or no additional effect of being a SMG6 target, an YTHDF2 target or containing a G4 motif, neither for DDX6- nor for XRN1-dependent decay (Figure 5—figure supplement 2C,D).
 
@@ -107,7 +175,7 @@ Our analysis is also informative on the link between DDX6-dependent decay and co
 
 In conclusion, we observed that mRNA decay regulators preferentially target GC-rich mRNAs, which undergo DDX6- and XRN1-dependant decay, whereas most translation regulators preferentially target AU-rich mRNAs, which are subjected to storage in PBs and have a PAT1B-dependent stability .
 
-## Targets of the miRNA pathway have a biased GC content
+### Targets of the miRNA pathway have a biased GC content
 
 The miRNA pathway, which leads to translation repression and mRNA decay, has been previously associated with DDX6 activity and PB localization (Bhattacharyya et al., 2006; Chu and Rana, 2006). To study this pathway, we used the list of AGO1-4 targets, as identified in CLIP experiments (Yang et al., 2015) (Figure 5—figure supplement 3A). In addition, we analyzed the experimentally documented targets of the 22 most abundant miRNAs in HEK293 cells (19 from Hafner et al., 2010, and three additional ones from our own quantitation, Figure 5—figure supplement 3B), as described in miRTarBase (Hsu et al., 2014). The mRNA targets of AGO proteins were AU-rich, as observed for most group II RBPs, and this was also true for the targets of most miRNAs when analyzed separately (Figure 5C). Overall, they also shared common behavior in the various silencing experiments and PB dataset, with nevertheless some differences. This is summarized in Figure 5D in a heatmap representing their median value in each dataset, while Figure 5—figure supplement 3 provides detailed analysis, as described below.
 
@@ -117,7 +185,7 @@ The targets of the 22 miRNAs had a behavior overall similar to the targets of AG
 
 In conclusion, miRNA targets generally tend to be AU-rich, like the targets of most translation regulators, and accumulate in PBs. While their translation depends on DDX6, their stability is not markedly affected following DDX6 or XRN1 silencing, but is dependent on PAT1B.
 
-## The GC content of mRNAs shapes post-transcriptional regulation
+### The GC content of mRNAs shapes post-transcriptional regulation
 
 As the global GC content appeared closely linked to mRNA fate, but also to RBP and miRNA binding, as well as to translation activity, our analyses then aimed at ranking the importance of these various features.
 
@@ -129,11 +197,23 @@ Next, the strong correlation observed between GC content and PB localization rai
 
 Interestingly, these PB-excluded AU-rich mRNAs were strongly enriched in mRNAs encoding secreted proteins and proteins associated with membranous organelles, with GO categories related to mitochondria, intracellular organelles and extracellular matrix proteins representing up to 36% of the transcripts (Figure 6—figure supplement 1C). Thus, while mRNA localization in PBs is highly influenced by their GC content, it may also be outcompeted by retention on membranous organelles and plasma membrane.
 
-## Contribution of both the CDS and 3’UTR GC content to PB localization
+### Contribution of both the CDS and 3’UTR GC content to PB localization
 
 The next major issue was to distinguish which of the CDS or 3’UTR is more important for PB localization, since they have very similar GC contents (rs = 0.72, p<0.0001).
 
 As a first approach, we analyzed PB localization of long non-coding RNAs (lncRNAs) (Hubstenberger et al., 2017). The correlation between their GC content and PB accumulation was significant (rs = −0.20, p<0.0001), but much weaker than that observed for mRNAs (−0.64, Figure 1B) or 3’UTRs (−0.55, Figure 1D) (−0.20 and −0.55 are significantly different, p<0.0001). In fact, AU-rich lncRNAs poorly accumulated in PBs, while GC-rich lncRNAs were excluded (Figure 6—figure supplement 1D,E). This suggested that the coding capacity of mRNAs was important for PB localization. As a second approach, we directly analyzed the respective contribution of the GC content of CDS and 3’UTR to PB localization. On one side, we analyzed transcripts by groups of similar 3’UTR GC content. Their GC3 was systematically much lower in PB mRNAs than in PB-excluded mRNAs, with differences ranging between 9% and 13% GC (Figure 6A, Figure 6—figure supplement 1E). In a mirror analysis, we analyzed groups of transcripts with similar GC3. The importance of the 3’UTR GC content became visible only for GC3 higher than 50% GC (note that GC3 median value is 59% GC), with AU-rich 3’UTR allowing for their accumulation in PBs despite a GC-rich CDS (Figure 6B, Figure 6—figure supplement 1E). We concluded that both the CDS and the 3’UTR GC content are important for PB localization, with the CDS being the primary feature.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig6-v2.jpg)
+
+**Figure 6.:** (A) General importance of the CDS. Transcripts were subdivided into six classes depending on the GC content of their 3’UTR (from <40 to >55%). The boxplots represent the distribution of their CDS GC content at position 3 (GC3) in PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs. (B) Importance of the 3’UTR for GC-rich CDSs. Transcripts were subdivided into eight classes depending on their GC3 (from <40 to >70%). The boxplots represent the distribution of their 3’UTR GC content in PB-enriched (PB-in) and PB-excluded (PB-out) mRNAs. (C) The transcripts of haplo-insufficiency genes are enriched in PBs. The haplo-insufficiency score is the probability that a gene is haplo-insufficient, as taken from the Huang et al. (2010) study. The analysis was performed for PB-enriched (PB-in, n = 4646, median score 0.26) and PB-excluded (PB-out, n = 4205, median score 0.17) mRNAs. The difference of distribution of haplo-insufficiency scores was statistically significant using a two tail Mann-Whitney test: p<0.0001. The results were similar using Steinberg et al. (2015) scores. (D) Protein yield is higher from a GC-rich than an AU-rich CDS. HEK293 cells were transfected with Rluc reporters differing by the GC content of their CDS, along with a control Fluc plasmid. After 24 hr, mRNA levels were measured by qPCR and protein levels by luciferase activity. The Rluc to Fluc ratio for the GC-rich reporter was set to 100 (n = 3). Error bars, SD. (E, F) Preferential localization of AU-rich transcripts in PBs. HEK293 cells expressing GFP-LSM14A were transfected with the AU-rich and GC-rich Rluc reporters and the localization of the Rluc transcripts (in red) was analyzed by smiFISH. Representative cells are shown in (E). Bar, 5 µm. Arrows indicate the PBs enlarged above. The experiment was performed in duplicate (exp. 1 and 2) and repeated in HEK293 cells where PBs were immunostained using DDX6 antibodies (exp. 3 and 4). The percentage of PBs containing clusters of Rluc transcripts in the four experiments is represented in (F). Exp.1: 56/75 PBs from 21/27 cells; exp.2: 87/75 PBs from 38/35 cells; exp.3: 31/32 PBs from 15/19 cells; exp.4: 72/83 PBs from 34/41 cells (G) Assembly of PB-like granules in cell-free extracts from HEK293 cells expressing GFP-LSM14A. The scheme recapitulates the main steps of the assay. Fluorescence microscopy images show that PBs in cells, PBs after cell lysis, and reconstituted PB-like granules have similar size. Bar, 10 µm. (H) AU-rich RNA favors the formation of PB-like granules. PB-like granules were assembled in cell-free extracts in the presence of AU-rich or GC-rich RNA, and counted by flow cytometry. Their number in the absence of added RNA was set to 100 (n = 3 experiments in duplicate, using two independent cell-free extracts and RNA preparations). Error bars, SD.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) AU-rich mRNAs are better XRN1 targets when excluded from PBs than when enriched in PBs. The analysis was conducted as in Figure 5—figure supplement 4B for all mRNAs (in gray) and for PB-excluded mRNAs (PB-out, in dark blue), except that mRNAs with GC values under 50% were binned by 200 to account for their low number. (B) AU-rich mRNAs are not better DDX6 decay targets when they are excluded from PBs. The dataset after DDX6 silencing in HEK293 cells was analyzed as in (A). (C) AU-rich mRNAs excluded from PBs preferentially encode proteins associated with membranous organelles or secreted. GO analysis was performed using the SLIM categories of cellular components to compare PB-excluded AU-rich mRNAs (GC <49.1%, 556 annotated) to all AU-rich mRNAs (GC <49.1%, 3896 annotated). The Volcano plot (left panel) represents the most enriched categories (FDR < 0.01). Both size and color of the dots are proportional to the size of the category within the query database. Transcripts corresponding to the mitochondria-related categories (green), other membranous organelles (red), secreted proteins (blue) and ribosomal proteins (yellow) were further subjected to a Venn diagram analysis (right panel). (D) LncRNAs poorly accumulate in PBs even when they are AU-rich. LncRNAs (n = 2589) were subdivided into 6 classes of increasing GC content and their accumulation in PBs was represented as for mRNAs in Figure 1B. rs, Spearman correlation coefficient. (E) Number of transcripts in the different classes analyzed in (D) and in Figure 6A,B.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Specificity of the GC-rich and AU-rich Rluc probes. HEK293 cells were transfected or not with the GC-rich and AU-rich Rluc reporter constructs. After 24 hr, cells were analyzed by smiFISH using the GC-rich or AU-rich probes set, as indicated. Bar, 5 µm. (B) AU-rich transcripts localize preferentially in PBs. HEK293 cells transfected with the AU-rich or GC-rich Rluc reporters were subjected to smiFISH analysis, using specific AU-rich or GC-rich probes set to localize the Rluc transcripts (in red), and anti-DDX6 antibody to localize PBs (in blue). Representative cells are shown. Arrows indicate PBs enlarged above. Bar, 5 µm. (C) Recombinant DDX6 protein used in the cell-free assay. The double purified CBP-DDX6-HIS protein was migrated on a polyacrylamide gel along with a molecular weight marker (MW) before Coomassie staining. (D) PB-like granules formed in a cell-free extract can be counted by flow cytometry. The cell-free extract was prepared from HEK293 cells expressing GFP-LSM14A. Without introducing a trigger threshold, the detector was saturated with electronic noise, as illustrated using buffer only (upper panel), and the machine could not be used in the counting mode. After gating as indicated by the red lines (lower panel), PBs were readily detected in the resuspended lysate pellet (pelleted PBs), while almost absent in the supernatant corresponding to the cell free extract. Upon DDX6 addition to the cell-free extract, PB-like granules were detected at a size similar to PBs. Their fluorescence intensity was slightly lower, which likely reflected the limited amount of soluble GFP-LSM14A in the cell-free extract. (E) PB-like granules form in a DDX6-dependent manner. Increasing amount of recombinant DDX6 protein was added to the cell-free extract, and granules were counted by flow cytometry, as described in (D). (F) GC-rich and AU-rich mRNAs used in the cell-free extract. After in vitro transcription from GC-rich and AU-rich plasmids, the RNAs were migrated in an agarose gel to compare their size and concentration. Note that the conditions do not allow for an absolute size estimation, as the gel is non-denaturing and the molecular weight marker (MW) is DNA.
 
 We speculate that suboptimal translation of AU-rich CDS makes mRNAs optimal targets for translation regulation, since any control mechanism has to rely on a limiting step. Conversely, optimally translated transcripts would be better controlled at the level of stability. One prediction is that proteins produced in limiting amounts, such as those encoded by haplo-insufficiency genes, are more likely to be encoded by PB mRNAs. Genome-wide haplo-insufficiency prediction scores have been defined for human genes, using diverse genomic, evolutionary, and functional properties trained on known haplo-insufficient and haplo-sufficient genes (Huang et al., 2010; Steinberg et al., 2015). Using these scores, we found that haplo-insufficient mRNAs were indeed significantly enriched in PBs (Figure 6C).
 
@@ -145,19 +225,25 @@ We conclude from these experimental data and our previous analyses that both the
 
 ## Discussion
 
-## An integrated model of post-transcriptional regulation
+### An integrated model of post-transcriptional regulation
 
 Our combined analysis of the transcriptome of purified PBs together with transcriptomes following the silencing of broadly-acting storage and decay factors, including DDX6, XRN1 and PAT1B, provided a general landscape of post-transcriptional regulation in human cells, where mRNA GC content plays a central role. As schematized in Figure 7, GC-rich mRNAs are excluded from PBs and mostly controlled at the mRNA level by a mechanism involving the helicase DDX6 and the 5’−3’ exonuclease XRN1. In contrast, AU-rich mRNAs are enriched in PBs and rather controlled at the level of translation by a mechanism also involving DDX6, while their accumulation tend to depend on a mechanism involving the DDX6 partner PAT1B and most likely 3’ decay. Accordingly, NMD and m6A-associated mRNA decay pathways tend to target GC-rich mRNAs, while most sequence-specific translation regulators and miRNAs tend to target AU-rich mRNAs. The distinct fate of GC-rich and AU-rich mRNAs correlates with a contrasting protein yield resulting from both different codon usage and CDS length. Thus, 5’ mRNA decay appears to control preferentially mRNAs with optimal translation, which are mostly GC-rich, whereas translation regulation is mostly used to control mRNAs with limiting translational efficiency, which are AU-rich.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig7-v2.jpg)
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49708/elife-49708-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The graphs were constructed as in Figure 1—figure supplement 1F. The median value for each genome is indicated below.
+
 It should be stressed that this model only applies to post-transcriptional regulation pathways that involve PBs, XRN1, DDX6 and PAT1B. Moreover, while the analysis was consistent in proliferating cells of various origins, giving rise to a general model, it is possible that changes in cell physiology, for instance at particular developmental stages or during differentiation, rely on a different mechanism. In addition, our analysis focused on trends common to most transcripts, which does not preclude that particular mRNAs could be exceptions to the general model, being GC-rich and translationally controlled, or AU-rich and regulated by 5’ decay. In terms of translation yield and PB localization, this model is strongly supported by our experiments using AU-rich and GC-rich RNAs: AU-rich reporter mRNAs have a low protein yield compared to GC-rich ones, they preferentially localize in PBs in cells, and they enhance the formation of PB-like granules in a cell free extract.
 
-## GC content and codon usage
+### GC content and codon usage
 
 While the redundancy of the genetic code should enable amino acids to be encoded by synonymous codons of different base composition, the wide GC content variation between PB-enriched and PB-excluded mRNAs has consequences on the amino acid composition of encoded proteins. It also strongly impacts the identity of the wobble base: in PB mRNAs, the increased frequency of A/U at position 3 of the codon mechanically results in an increased use of low usage codons. As CDS are also longer in PB mRNAs, it further increases the number of low usage codons per CDS in these mRNAs. Interestingly, we showed that the absolute number of low usage codons per CDS best correlates with low protein yield. Thus, these results provide a molecular mechanism to a previously unexplained feature of PB mRNAs, that is, their particularly low protein yield, which we reported was an intrinsic property of these mRNAs and not simply the result of their sequestration in PBs (Hubstenberger et al., 2017). Interestingly, the mRNAs of haplo-insufficiency genes, which by definition are expected to have a limited protein yield, are indeed enriched in PBs (Figure 6C).
 
 In addition to the GC-dependent codon bias, we also observed some GC-independent codon bias in PB-enriched mRNAs. Interestingly, some important post-transcriptional regulation programs involve codon usage. This was shown for proliferation- versus differentiation-specific transcripts in human cells (Gingold et al., 2014) and for maternal mRNA clearance during the maternal-to-zygotic transition in zebrafish, Xenopus, mouse, and Drosophila (Bazzini et al., 2016). Codon usage could also enable the regulation of small subsets of mRNAs, depending on cellular requirements. In man, half of GO sets show more variability in codon usage than expected by chance (Rudolph et al., 2016). Based on GO analysis, we previously demonstrated that PB mRNAs tend to encode regulatory proteins, while PB-excluded mRNAs encode basic functions. Furthermore, proteins of the same complexes tended to be encoded by mRNAs co-regulated in or out of PBs, in so-called post-transcriptional regulons (Hubstenberger et al., 2017; Standart and Weil, 2018). We speculate that specific codon usage could also underlie these post-transcriptional regulons.
 
-## Distinct mechanisms of mRNA stability control
+### Distinct mechanisms of mRNA stability control
 
 Our analysis distinguished separate modes of stability control, depending on mRNA GC content. Interestingly, our previous analysis of the read coverage of PB and non-PB RNAs alsosuggested the existence of distinct decay pathways related to 3’ and 5’ extremities, respectively (Hubstenberger et al., 2017). Part of the triage towards the PAT1B versus the DDX6/XRN1-dependent pathway could be somehow associated with the capacity of the transcripts to condense in PBs, since, among the AU-rich mRNAs, only the ones enriched in PBs were affected by PAT1B silencing (not shown). Nevertheless, PBs do not directly mediate the triage, since (i) TOP mRNAs were strongly excluded from PBs, but unaffected by either DDX6 or XRN1 silencing, and (ii) while PBs disappeared after DDX6 silencing (Minshall et al., 2009), causing the release of AU-rich mRNAs into the cytosol, only GC-rich mRNAs were stabilized.
 
@@ -169,7 +255,7 @@ Turning to PAT1B, we showed that its silencing did not affect the same mRNAs as 
 
 PAT1B showed a strong preference for AU-rich targets, including those containing AREs. Many studies have demonstrated a link between AREs and mRNA stability, and its striking importance for processes such as inflammation (Wells et al., 2017). Most ARE-BPs promote mRNA destabilization while some ARE-BPs, such as HuR (Lebedeva et al., 2011; Mukherjee et al., 2011) and AUF1 for a subset of mRNAs (Yoon et al., 2014), can stabilize mRNAs. Altogether, these observations raise the possibility that ARE-BPs behave either as enhancers or inhibitors of PAT1B activity in mRNA decay. Similarly, the miRNA pathway could activate this PAT1B activity.
 
-## Translation repression and PB accumulation
+### Translation repression and PB accumulation
 
 DDX6 activity in translation repression has been documented in a variety of biological contexts. In Xenopus oocytes, DDX6 contributes to the repression of maternal mRNAs, as a component of the well characterized CPEB complex (Minshall et al., 2007). In Drosophila, Me31B/DDX6 represses the translation of thousands of mRNAs during the early stages of the maternal to zygotic transition (Wang et al., 2017). It also collaborates with FMRP and AGO proteins for translation repression in fly neurons (Barbee et al., 2006). In mammals, DDX6 is a general co-factor of the miRNA pathway (Chen et al., 2014; Mathys et al., 2014; Kamenska et al., 2016; Chu and Rana, 2006). The intriguing finding of our analysis was that the targets of most tested translation regulators (FRX1-2, FMR1, PUM1-2, most miRNAs…) were AU-rich and had a median behavior in all datasets similar to other mRNAs of same GC content. While the GC bias of the targets of the various RBPs and miRNAs are likely to reflect their sequence preference, some RBPs may not reach sufficient concentration to occupy a significant number of binding sites. Moreover binding does not mean activity, and these factors could require cofactors or post-translational modifications to become ‘productive’ in terms of mRNA regulation. Of note, while TOP mRNAs clearly constituted an exception in terms of GC content, they are particular too in terms of their translation repression mechanism, with a regulatory sequence located at the 5’ end.
 
@@ -177,7 +263,7 @@ PBs add another layer to translation regulation, by storing translationally repr
 
 In addition to their high AU content, we observed that PB mRNAs were longer than mRNAs excluded from PBs. Long CDS could favor mRNA recruitment in PBs by decreasing translation efficiency, and hence increasing the fraction of polysome-free mRNAs. Long 3’UTR should increase the probability of binding translation regulators, contributing also to PB recruitment. In agreement, it is interesting that DDX6 preferentially repressed the translation of mRNAs with long 3’UTR, while the CDS length was irrelevant (Figure 3—figure supplement 2G). It is also possible that protein binding over the entire length of mRNA may contribute to PB recruitment. This would explain why the GC content of the 5’UTR has little impact as it is considerably shorter than CDS and 3’UTR. In this regard, it is interesting to note that we and others have previously proposed from biochemical experiments and electron microscopy imaging that DDX6 and its partner LSM14A coat repressed mRNAs at multiple positions, according to their length (Ernoult-Lange et al., 2012; Götze et al., 2017).
 
-## Evolutionary issues
+### Evolutionary issues
 
 Our results raise intriguing issues in terms of evolution. While PBs have been observed in very diverse eukaryotes, animal and vegetal, the GC-rich part of the human genome only emerged in amniotes (the ancestor of birds and mammals) (Duret et al., 2002). In more distant organisms, such as yeast, C. elegans, Drosophila or Xenopus, genes have a narrow GC content distribution, most often AU-rich (Figure 7—figure supplement 1). Thus, despite the conservation of the DDX6, XRN1 and to a lesser extent PAT1B proteins in eukaryotes, distinct modes of mRNA stability control depending on GC content may have evolved more recently. Moreover, the enzymatic properties of DDX6 could have adapted to the higher GC content of human transcripts.
 
@@ -185,7 +271,332 @@ The GC-rich part of the human genome was acquired through GC-biased gene convers
 
 ## Materials and methods
 
-## Cell culture and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th colspan="2">Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td colspan="2">ATCC</td>
+      <td>Cat# PTA-4488, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td colspan="2">ATCC</td>
+      <td>Cat# CCL-2, RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116</td>
+      <td colspan="2">ATCC</td>
+      <td>Cat# CCL-247, RRID:CVCL_0291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 expressing GFP-LSM14A</td>
+      <td colspan="2">Hubstenberger et al., 2017</td>
+      <td>PMID:28965817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rabbit)</td>
+      <td>siβ-Globin</td>
+      <td colspan="2">Serman et al., 2007</td>
+      <td>PMID:17604308</td>
+      <td>GGUGAAUGUGGAAGAAGUUdTdT siRNA used as negative control for the siDDX6 expt.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siDDX6</td>
+      <td colspan="2">Minshall et al., 2009</td>
+      <td>PMID:19297524</td>
+      <td>GGAACUAUGAAGACUUAAAdTdT</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siXRN1</td>
+      <td colspan="2">Thermofisher</td>
+      <td>Cat# AM16708A</td>
+      <td>ID125199</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA negative control</td>
+      <td colspan="2">Thermofisher</td>
+      <td>Cat# 4390843</td>
+      <td>siRNA used as a negative control for the siXRN1 expt.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>shXRN1</td>
+      <td colspan="2">Thermofisher</td>
+      <td>Cat# RHS4696–99704634</td>
+      <td>Lentiviral ‘TRIPZ’ construct to transfect and express the XRN1 shRNA.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Non-silencing shRNA</td>
+      <td colspan="2">Thermofisher</td>
+      <td>Cat# RHS 4743</td>
+      <td>Lentiviral ‘TRIPZ’ construct to transfect and express the control shRNA.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti DDX6 (rabbit polyclonal)</td>
+      <td colspan="2">Novus biological</td>
+      <td>Cat# NB200-191, RRID:AB_10003156</td>
+      <td>WB (1:15000), IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti XRN1 (rabbit polyclonal)</td>
+      <td colspan="2">Novus Biosciences</td>
+      <td>Cat# NB 500–191, RRID:AB_527572</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti XRN1 (rabbit polyclonal)</td>
+      <td colspan="2">Bethyl</td>
+      <td>Cat# A300-443A, RRID:AB_2219047</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti ribosomal S6 (rabbit monoclonal)</td>
+      <td colspan="2">Cell signalling technologies</td>
+      <td>Cat# 2217, RRID:AB_331355</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti Pol II (rabbit polyclonal)</td>
+      <td colspan="2">Santa Cruz</td>
+      <td>Cat# sc-899, RRID:AB_632359</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti tubulin (mouse monoclonal)</td>
+      <td colspan="2">Sigma-Aldrich</td>
+      <td>Cat# T9026, RRID:AB_477593</td>
+      <td>WB (1:30000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRluc-GFP-GC-rich</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>phRL-CMV vector bearing an Rluc-GFP GC-rich insert, used in PB-like reconstitution, smiFISH and luciferase reporter expts.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Rluc-GFP-AU-rich</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>phRL-CMV vector bearing an Rluc-GFP GC-rich insert, used in PB-like reconstitution, smiFISH and luciferase reporter expts.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ACTB qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: TCCCTGGAGAAGAGCTACGA Rev: AGCACTGTGTTGGCGTACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>APP qPCR primers</td>
+      <td colspan="2">Gift from R. Blaise</td>
+      <td></td>
+      <td>Fwd: acttgcatgactacggc Rev: actcttcagtgtcaaagttgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BACE1 qPCR primers</td>
+      <td colspan="2">Gift from R. Blaise</td>
+      <td></td>
+      <td>Fwd: ctttgtggagatggtggac Rev: aaagttactgctgcctgtat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LSM14A qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: AGCAGTTTGGTGCTGTTGGT Rev: AACCGCACTACTTTGGGGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LSM14B qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: CGACAACATCTCTTCTGAACTCAA Rev: GTGTTGAGCTTCCTCTCTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: GAACCTGGAGCAGGAAATTG Rev: AACCAACCGGCTTTATTCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PNRC1 qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: CCCCCTCAGGAAAGAGGTTTT Rev: ACAAGTGTATACCATGAACAAGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TIMP2 qPCR primers</td>
+      <td colspan="2">Blaise et al., 2012</td>
+      <td>PMID:22260497</td>
+      <td>Fwd: gaagagcctgaaccacaggt Rev: cggggaggagatgtagcac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRIB1 qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: ACCTGAAGCTTAGGAAGTTCGT Rev: CTGACAAAGCATCATCTTCCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HPRT1 qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: TAATTGACACTGGCAAAACAATGCAGACT Rev: GGGCATATCCTACAACAAACTTGTCTGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>REN-lowGC qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: CCAGGATTCTTTTCCAATGC Rev: CTTGCGAAAAATGAAGACCTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>REN-highGC qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: CGAGAACGCCGTGATTTT Rev: GACGTGCCTCCACAGGTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FIREfly qPCR primers</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Fwd: TGAGTACTTCGAAATGTCCGTTC Rev: GTATTCAGCCCATATCGTTTCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RenGFP-lowGC-24 DNA probe</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Set of 24 primary probes specific of the RenGFP lowGC mRNA used in smiFISH expts. (See Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RenGFP-highGC-24 DNA probe</td>
+      <td colspan="2">This paper</td>
+      <td></td>
+      <td>Set of 24 primary probes specific of the RenGFP highGC mRNA used in smiFISH expts. (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FLAP-Y-Cy3 DNA probe</td>
+      <td colspan="2">Tsanov et al., 2016</td>
+      <td>PMID:27599845</td>
+      <td>AA TGC ATG TCG ACG AGG TCC GAG TGT AA Secondary probe conjugated to two Cy3 moieties at the 5’ and 3’ termini. Used in smiFISH expts.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CBP-DDX6-HIS</td>
+      <td colspan="2">Ernoult-Lange et al., 2012</td>
+      <td>PMID:22836354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNeasy Mini kit</td>
+      <td colspan="2">Qiagen</td>
+      <td>Cat# 217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded Total RNA kit</td>
+      <td colspan="2">Illumina</td>
+      <td>Cat# RS-122–2201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase assay system</td>
+      <td colspan="2">Promega</td>
+      <td>Cat# E2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Micrococcal Nuclease</td>
+      <td colspan="2">Thermo Scientific</td>
+      <td>Cat# 88216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cluster 3.0</td>
+      <td colspan="2">http://www.eisenlab.org/eisen/?page_id=42</td>
+      <td>RRID:SCR_013505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Java Treeview</td>
+      <td colspan="2">https://sourceforge.net/projects/jtreeview/</td>
+      <td>RRID:SCR_016916)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morpheus</td>
+      <td colspan="2">https://software.broadinstitute.org/morpheus</td>
+      <td>RRID: SCR_017386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Icy</td>
+      <td colspan="2">http://icy.bioimageanalysis.org/</td>
+      <td>RRID:SCR_010587</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WebGestalt</td>
+      <td colspan="2">http://www.webgestalt.org/</td>
+      <td>RRID:SCR_006786</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and transfection
 
 Human embryonic kidney HEK293 cells, epithelioid carcinoma HeLa cells and colorectal carcinoma HCT116 cells were obtained from ATCC. All cells were tested negative for mycoplasma contamination. HEK293 and HeLa cells were maintained in DMEM supplemented with 10% (v/v) fetal calf serum. HCT116 cells were grown in McCoy’s 5A modified medium supplemented with 10% (v/v) fetal bovine serum, 5% (v/v) sodium pyruvate and 5% (v/v) non-essential amino acids. The HEK293 cell line stably expressing GFP-LSM14A (Hubstenberger et al., 2017) was maintained under selection using 500 μg/ml Geneticin (Gibco, Life Technology).
 
@@ -197,37 +608,37 @@ For XRN1 silencing with shRNA, a doxycycline inducible construct provided by The
 
 For smiFISH experiments and luciferase reporter expression, 2.105 cells were plated in 35 mm diameter dish and transfected 24 hr later with 100 ng of hRluc-GFP-GC-rich or Rluc-GFP-AU-rich plasmids using GenJet Plus DNA (SignaGen Laboratories). For luciferase reporter assay, a Firefly luciferase plasmid (150 ng) was added for normalization. All transfection mixes were made up to 1 µg with pUC19. Cells were processed 24 hr after transfection.
 
-## Construction of DNA plasmids
+### Construction of DNA plasmids
 
 All plasmids were obtained using the InFusion Advantage PCR cloning kit (Clontech). To obtain medium-size CDS, we cloned the Rluc CDS in frame with the one of GFP. An AU-rich CDS of GFP was amplified from the pUC57-GFP(opt) plasmid (generous gift from N. Campo, Martin et al., 2010) and cloned in place of GFP into the BamHI/NotI sites of the pEGFP-N1 plasmid (Clontech) to generate the pGFP(opt)-N1 plasmid. The AU-rich CDS of Rluc was taken from the pRL-TK vector (Promega) and cloned in frame into the pGFP(opt)-N1 plasmid to obtain pRL-GFP(opt) plasmid. The GC-rich CDS of Rluc (hRluc) was taken from the phRL-CMV vector (Promega) and cloned in-frame into the pEGFP-N1 to obtain the phRL-EGFP plasmid. Finally, hRluc-EGFP-GC-rich and Rluc-GFP-AU-rich CDS were cloned into the NheI/NotI sites of the T7 promotor-containing phRL-CMV vector to generate hRluc-GFP-GC-rich and Rluc-GFP-AU-rich plasmids, respectively. The resulting plasmids differ by their AU-rich or GC-rich CDS but encode the same Rluc-GFP fusion protein.
 
-## CBP-DDX6-HIS protein purification
+### CBP-DDX6-HIS protein purification
 
 E.E. coli BL21-CodonPlus (Novagen) transformed with the CBP-p54-His expression vector (Ernoult-Lange et al., 2012) were induced in MagicMedia (Invitrogen) at 16°C during 72 hr to produce the CBP-DDX6-HIS protein. Crude protein extract was prepared and sequentially purified as described previously (Ernoult-Lange et al., 2012).
 
-## In vitro transcription and RNA purification
+### In vitro transcription and RNA purification
 
 GC-rich and AU-rich RNAs (1707 and 1714 bp, respectively) were transcribed with T7 RNA polymerase (Promega) from linearized (NotI) hRluc-GFP-GC-rich and Rluc-GFP-AU-rich plasmids, purified using the Nucleospin RNA clean-up XS (Macherey-Nagel), quantified with Quantus Fluorometer (Promega) and visualized on 1% agarose gel in 1XTAE buffer containing ethidium bromide.
 
-## Cell-free extract preparation
+### Cell-free extract preparation
 
 Stable GFP-LSM14A HEK293 cells grown to 80–90% confluency in 15 cm plates were collected in PBS, cell pellets were frozen in liquid nitrogen and stored at −80°C. Pellets were resuspended in lysis buffer (50 mM Tris, pH 7.4, 1 mM EDTA, 150 mM NaCl, 0,2% Triton X-100) containing 65 U/mL RNaseOut ribonuclease inhibitor (Promega) and EDTA-free protease inhibitor cocktail (Roche Diagnostics), incubated 20 min on ice and centrifuged at 500 xg for 5 min at 4°C to deplete nuclei. The cytoplasmic lysate was half diluted to 75 mM NaCl with buffer containing 50 mM Tris, pH 7.4, 1 mM EDTA, 10 mM CaCl2, 0,2% Triton X-100, and treated with 1000 u/ml of micrococcal nuclease (Thermo Scientific) for 15 min at 37°C. The micrococcal nuclease was inactived by adding EGTA, pH 8.0 to a final concentration of 20 mM. The cytoplasmic lysate was further spun at 11000 xg for 7 min at 4°C to obtain a surpernatant depleted of endogenous P-bodies. This supernatant containing the GFP-LSM14A soluble protein, called cell free extract, was quantified by the Coomassie protein assay (Thermo Scientific).
 
-## In vitro reconstitution assay of P-body like granules
+### In vitro reconstitution assay of P-body like granules
 
 To reconstitute P-body like granules, 1 µg of purified CBP-DDX6-HIS protein was added to 200 µg of cell free extract, mixed or not with RNA, in a 100 µL reaction volume. After 2 hr on ice, 90 µL of the reactions were run through a MACSQuant analyzer (Miltenyi Biotec). Particles were detected according to their Forward-scattered light (FSC) and their green fluorescence using the 488 nm excitation laser and counted in the total volume. We have previously reported that in HeLa cells, 15 µg proteins (corresponding to 53,000 cells) contain 8.6 ng DDX6, and that DDX6 concentration is 0.56 mM in PBs and 3.3 µM in cells (170-fold less) (Ernoult-Lange et al., 2012). In the assay, CBP-DDX6-HIS concentration is 0.17 µM (1 µg in 100 µl, 61 kDa), and therefore about 20 fold less concentrated than in a cell, while the cell content (15 µg/53000 cells, 1000 µm3/cell, leading to 200 µg/0.7 µl) is diluted about 100 fold (200 µg in 100 µl).
 
 For imaging experiments, the reactions were centrifuged at 11000 xg for 7 min at 4°C, resuspended in 5 µL of Mowiol (PolySciences) mounting medium, mixed by vortexing and mounted between glass slide and coverslip. Microscopy was performed on a Leica DMR microscope (Leica) using a 63 × 1.32 oil-immersion objective. Photographs were taken using a Micromax CCD camera (Princeton Scientific Instruments) driven by MetaMorph software (Molecular Devices). Images were processed with NIH ImageJ software.
 
-## smiFISH experiments
+### smiFISH experiments
 
 Cells transfected for 24 hr with hRluc-GFP-GC-rich or Rluc-GFP-AU-rich plasmids were fixed with 4% paraformaldehyde for 20 min at RT and permeabilized in 70% ethanol overnight at 4°C. The sets of transcript-specific probes (Supplementary file 2) and the secondary Cy3 FLAP probe were designed, purchased and hybridized as previously described (Tsanov et al., 2016). Of note, none of the AU-rich probes and only 7 out of the 24 GC-rich probes hybridize to the GFP-LSM14A transcripts, resulting in either no signal or a faint signal which was easy to discriminate from the Rluc-GFP mRNA signal. Cells were further processed for immunostaining using rabbit polyclonal anti-DDX6 (1:2000; Novus Biological) and goat anti-rabbit Alexa Fluor 350 (1:300, Thermofisher) antibodies. Epifluorescence microscopy was performed on an inverted Zeiss Z1 microscope equipped with a motorized stage using a 63 × 1.32 oil immersion objective. Images were processed with Icy software.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 Cells transfected for 24 hr with Firefly control plasmid and hRluc-GFP-GC-rich or Rluc-GFP-AU-rich plasmids were harvested and processed for RNA (4/5) and protein (1/5) luciferase quantification. Total RNA was purified using Trizol (Invitrogen) and DNAse-treated (Turbo DNAse, Invitrogen). qRT-PCR was carried out as described in the corresponding section, and Renilla mRNA levels were normalized to the Firefly control. Luciferase protein assay was performed with the Dual Glo Luciferase assay kit (Promega) according to the manufacturer’s instructions. Relative light determinations were measured in a Lumat LB 9507 luminometer (Berthold).
 
-## Western blot analysis
+### Western blot analysis
 
 Total cell lysates were obtained as described previously (Courel et al., 2006). Proteins were separated on SDS-PAGE on 4–12% polyacrylamide gel (NuPage, Invitrogen) and transferred onto nitrocellulose membrane (PerkinElmer, France). After blocking in 5% (w/v) nonfat dry milk in PBS for 30 min at RT, the membrane was incubated for 1 hr at 37°C with primary antibodies. After washing in PBS containing 0.05% (v/v) tween-20, blots were incubated for 40 min at RT with horseradish peroxidase-conjugated secondary anti-rabbit antibody (1:10000; Jackson Immunoresearch Laboratories). Immunoreactive bands were visualized by chemiluminescence detection of peroxidase activity (SuperSignal West Pico, Pierce) and exposure to CL-XPosure film (Pierce). Protein expression was evaluated by densitometry (NIH ImageJ).
 
@@ -235,7 +646,7 @@ For the shRNA XRN1 experiment, proteins were isolated using RIPA buffer with Hal
 
 Primary antibodies were: rabbit polyclonal anti-DDX6 (1:15000; Novus Biological), rabbit polyclonal anti-ribosomal S6 (1:5000; Cell Signaling Technology), rabbit polyclonal anti-XRN1 (1:1000, Bethyl Laboratories, and 1:5000 Novus Bioscience), rabbit polyclonal anti-Pol II (1:100, Santa Cruz), mouse monoclonal anti-tubulin (1:30000, Sigma-Aldrich). q-RT-PCR analysis Total RNA (1 μg) was reverse transcribed for 1 hr at 50°C using the SuperScript II First-Strand Synthesis System for RT-PCR (Invitrogen) with 1 μg random primers (Promega). Reverse primers for Firefly and Renilla luciferases were also added for the luciferase reporter assay. No amplification was detected in negative controls omitting the reverse transcriptase. qPCR amplifications (12 μl) were done in duplicates using 1 μl of cDNA and the GoTaq Probe 2X Master Mix (Promega) on a LightCycler 480 (Roche), programmed as follows: 5 min, 95°C; 40 cycles [10 s, 95°C; 15 s, 60°C; 10 s, 72°C]. A last step (5 min progressive 95°C to 72°C) calculating the qPCR product Tm allowed for reaction specificity check. Primers for ACTB, APP, BACE1, LSM14A, LSM14B, MFN2, PNRC1, TIMP2, TRIB1, HPRT1, REN-low-GC, REN-high-GC and FIREfly were either gifts from R. Blaise or designed using the Primer three software (Untergasser et al., 2012). The results were normalized using either HPRT1 or FIREfly.
 
-## Library preparation and RNA-Seq data processing
+### Library preparation and RNA-Seq data processing
 
 For polysome profiling after DDX6 silencing and transcriptome after PAT1B silencing in HEK293 cells, rRNA was depleted using the Ribo-Zero kit Human/Mouse/Rat (Epicentre), and libraries were prepared using random priming. Triplicate and duplicate libraries were generated from three and two independent experiments, respectively, and processed as detailed previously (Hubstenberger et al., 2017; Vindry et al., 2017).
 
@@ -249,7 +660,7 @@ For the transcriptome after induction of a stably transfected DDX6 shRNA for 48 
 
 The ENCODE dataset of mRNAs clipped to DDX6 in K562 cells was generated using ENCODE .bam files aligned on the hg19 genome corresponding to (i) the DDX6 eClip experiment ENCSR893EFU, and (ii) the total RNA-seq of K562 experiment ENCSR109IQO. The enrichment in the CLIP dataset compared to the total RNA sample was calculated as in the DDX6 shRNA experiment.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Briefly, the read coverage was computed as follows. Raw reads were processed using trimmomatics. Alignment was performed on the longest transcript isoforms of Ensembl annotated genes with bowtie2 aligner. Isoforms shorter than 500 nucleotides were not considered. Only unique mapped reads were qualified for counting. Each transcript was subdivided in 20 bins from transcription start site (TSS) to transcript end site (TES) and the proportion of reads for each bin was computed. For the metagene analysis, the average distribution of reads along transcript length was computed so that each gene had the same weight independently of it expression level.
 
@@ -263,7 +674,7 @@ Gene meiotic recombination rates were computed as crossover rates between gene s
 
 The enrichment of the GO SLIM categories of cellular component in AU-rich mRNA excluded from PB (Input database: 881 gene IDs, 558 annotated in GO categories) was assessed using the WebGestalt enrichment analysis web tool (Liao et al., 2019).
 
-## Datasets used in the bioinformatics analysis
+### Datasets used in the bioinformatics analysis
 
 The following datasets were downloaded from the supplementary material of the corresponding papers: 1) For mRNAs containing cis-regulatory motifs: (i) in silico identification: AREs (Halees et al., 2008); (ii) experimental determination: CPEs (Piqué et al., 2008), G4-containing (Huppert et al., 2008) and TOP mRNAs (Thoreen et al., 2012). G4-containing genes were restricted to those harboring a G4 in 5’UTR. 2) For RBP targets: (i) PARE in HeLa cells: SMG6 (mRNAs actually cleaved by SMG6) (Schmidt et al., 2015) (ii) CLIP in HEK293 cells: HuR and TTP (Mukherjee et al., 2011; Mukherjee et al., 2014); (iii) CLIP in HeLa cells: YTHDF2 (Wang et al., 2014); (iv) RIP-CHIP in HeLa cells: PUM1 (Galgano et al., 2008); (v) RIP-CHIP in mouse neurons: 4E-T (Yang et al., 2014). In the case of HuR, the transcripts clipped only in 5’UTR/CDS/introns were removed, and the target list was restricted to transcripts clipped more than once. In the case of TTP, the transcripts clipped only in introns were removed.
 

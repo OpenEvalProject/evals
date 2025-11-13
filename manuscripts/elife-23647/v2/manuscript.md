@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.23647.001 Tool use has allowed humans to become one of the most successful species. However, tool-assisted foraging has also pushed many of our prey species to extinction or endangerment, a technology-driven process thought to be uniquely human. Here, we demonstrate that tool-assisted foraging on shellfish by long-tailed macaques ( Macaca fascicularis ) in Khao Sam Roi Yot National Park, Thailand, reduces prey size and prey abundance, with more pronounced effects where the macaque population size is larger. We compared availability, sizes and maturation stages of shellfish between two adjacent islands inhabited by different-sized macaque populations and demonstrate potential effects on the prey reproductive biology. We provide evidence that once technological macaques reach a large enough group size, they enter a feedback loop – driving shellfish prey size down with attendant changes in the tool sizes used by the monkeys. If this pattern continues, prey populations could be reduced to a point where tool-assisted foraging is no longer beneficial to the macaques, which in return may lessen or extinguish the remarkable foraging technology employed by these primates.
+Tool use has allowed humans to become one of the most successful species. However, tool-assisted foraging has also pushed many of our prey species to extinction or endangerment, a technology-driven process thought to be uniquely human. Here, we demonstrate that tool-assisted foraging on shellfish by long-tailed macaques (Macaca fascicularis) in Khao Sam Roi Yot National Park, Thailand, reduces prey size and prey abundance, with more pronounced effects where the macaque population size is larger. We compared availability, sizes and maturation stages of shellfish between two adjacent islands inhabited by different-sized macaque populations and demonstrate potential effects on the prey reproductive biology. We provide evidence that once technological macaques reach a large enough group size, they enter a feedback loop – driving shellfish prey size down with attendant changes in the tool sizes used by the monkeys. If this pattern continues, prey populations could be reduced to a point where tool-assisted foraging is no longer beneficial to the macaques, which in return may lessen or extinguish the remarkable foraging technology employed by these primates.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ During the observation period for this study, 26 long-tailed macaques on Koram I
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23647/elife-23647-fig1-v2.jpg)
 
-**Figure 1.:** (A) Comparison between weights of stones used by macaques on Koram and NomSao Islands to open oysters. The plot shows all quantiles and the CIs (grey). (B) Comparison between weights of stones used by macaques on Koram and NomSao Islands to open snails. The plot shows all quantiles and the Cis (grey).10.7554/eLife.23647.004Figure 1—source data 1.Shellfish foraging stone tools collected on Koram and NomSao Islands, Thailand.
+**Figure 1.:** (A) Comparison between weights of stones used by macaques on Koram and NomSao Islands to open oysters. The plot shows all quantiles and the CIs (grey). (B) Comparison between weights of stones used by macaques on Koram and NomSao Islands to open snails. The plot shows all quantiles and the Cis (grey).
 
 To investigate potential drivers for the observed difference in tool selection between the two islands, we compared environmental factors that may influence macaque tool selection. Shellfish foraging occurred mainly along the northwest coasts on both islands (Figure 2). The length of accessible shoreline suitable for shellfish foraging, however, differed between the two islands. On Koram Island, three independent rocky areas, separated by sandy patches, were suitable for shellfish foraging along a total shoreline distance of 1551 m. On average, this resulted in 55.4 m accessible shoreline per tool-using macaque (N = 26). On NomSao Island two rocky foraging zones covered a total of 653 m averaging 163.3 m suitable shoreline per tool user (N = 4). The length of available coastline for foraging is therefore almost three times larger on NomSao island per tool-using macaque.
 
@@ -59,17 +59,15 @@ The availability of stones suitable to use as tools did not differ between the i
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23647/elife-23647-fig3-v2.jpg)
 
-**Figure 3.:** (A) Weight of stones (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands, separated for oyster bed and tidal. (B) Average stone availability per island, separated for oyster bed and tidal (with bootstrapped 95% confidence intervals over observed plots).10.7554/eLife.23647.007Figure 3—source data 1.The number and weight of stones located in 20 × 20 cm plots on Koram and NomSao Islands, Thailand.
+**Figure 3.:** (A) Weight of stones (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands, separated for oyster bed and tidal. (B) Average stone availability per island, separated for oyster bed and tidal (with bootstrapped 95% confidence intervals over observed plots).
 
 The availability of marine gastropods between the two islands differed significantly for two species, with a higher number of periwinkles and tooth-lipped snails on NomSao (Figure 4, Figure 4—source data 1; t-tests: P. sulcatus: N = 749 individuals, t(18) = 2.885, p=0.010, M. labio:: N = 72 individuals, t(13)= 2.912, p=0.012). For bifasciated cerith, we found no difference between the two islands (C. bifasciatus: N = 72 individuals, t(16)= −1.090, p=0.292). Oyster beds were abundant along the lengths of rocky shores of both islands and therefore were not considered a potential limiting foraging factor. However, we found that rock oysters were significantly larger on NomSao than on Koram island (Figure 5A, Figure 5—source data 1; two sample t-test: N = 1018 individuals, t(563) = 9.873, p<0.001). We found a similar result for two of the investigated marine gastropod species, the periwinkle and the cerith. Both prey species were significantly larger on NomSao (Figure 5B, Figure 5—source data 2; two sample t-tests: P. sulcatus: N = 223 individuals, t(150) = 19.929, p<0.001; C. bifasciatus: N = 218 individuals, t(206)= 9.762, p<0.001). We did not find enough tooth-lipped snails on Koram (N = 4, versus N = 68 on NomSao) to do a size comparison between the two islands (see Figure 6B for size differences).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23647/elife-23647-fig4-v2.jpg)
 
-**Figure 4.:** 10.7554/eLife.23647.009Figure 4—source data 1.The number of snails located in point transects along the shore of Koram and NomSao Islands, Thailand.
-
 ![Figure 5.](https://cdn.elifesciences.org/articles/23647/elife-23647-fig5-v2.jpg)
 
-**Figure 5.:** (A) Average size of oysters (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands. (B) Average snail size (volume) (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands.10.7554/eLife.23647.011Figure 5—source data 1.The size of rock oysters measured in width and length on Koram and NomSao Islands, Thailand.10.7554/eLife.23647.012Figure 5—source data 2.The size (length) of three marine snails (N = 100 each) on Koram and NomSao Islands, Thailand.
+**Figure 5.:** (A) Average size of oysters (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands. (B) Average snail size (volume) (with bootstrapped 95% confidence intervals) found on Koram and NomSao Islands.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23647/elife-23647-fig6-v2.jpg)
 
@@ -80,6 +78,47 @@ Sizes of snails between both islands correlated with the maturation stage of the
 We assessed macaque predation pressure using observations of prey consumption on Koram Island. On average, one tool-using macaque on Koram Island consumes 46.5 shellfish items per day (36 rock oysters, 1.6 tropical periwinkle and 8.9 other species, Source data 2). In total, the studied monkey group on Koram Island (N = 26) consumes approximately 441,000 prey items per year, of which almost 61,000 are periwinkles (foraging items consumed per individual multiplied by the number of tool users per island multiplied by 4 hr foraging time per day for 365 days per year). Focusing on periwinkles, the four tool-using macaques on NomSao Island would in theory consume some 9344 periwinkles per year. Shellfish foraging areas were estimated to be 4653 m2 on Koram Island and 1959 m2 on NomSao Island. Availability per square meter gives estimates for the current total number of periwinkles as 60,163 on Koram and 79,477 on NomSao Island. Extrapolating from the consumption data, and without prey population replenishment, then within a year the macaque group foraging on Koram hypothetically would consume more than the estimated current number of periwinkles on the island. On NomSao Island, however, each year the inhabitants hypothetically eat just over a tenth of the current periwinkle population on their island.
 
 To assess the vulnerability of macaque prey species to foraging pressure, we merged predictions on prey resilience from published agent based models with available life history data on the two main prey species (oysters and periwinkles). The results are summarized in Table 1, and show that both species are easily harvested (they are clustered) but they also have planktonic dispersal, reducing reliance on local populations for replenishment. In addition, when comparing published reproductive sizes of periwinkles located in our point transects we found that 62% (N = 123) of individuals located in Koram plots were smaller than reported reproductive sizes (Moore, 1937). On NomSao Island on the other hand, none of the periwinkles in the plots (N = 100) were smaller than the reported reproductive size. Koram is therefore missing around a third of the expected larger and more mature periwinkles. This suggests that macaques preferably harvest larger prey individuals.
+
+**Table 1.**
+ Life history information of main prey species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factors influencing population resilience</th>
+      <th>Prediction</th>
+      <th>Rock oyster</th>
+      <th>Tropical periwinkle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resource Aggregation/Clustering</td>
+      <td>High aggregation → slow recovery</td>
+      <td>High aggregation</td>
+      <td>High aggregation</td>
+    </tr>
+    <tr>
+      <td>Size and age at sexual reproductive maturity</td>
+      <td>Large size at sexual maturity → slow recovery</td>
+      <td>Large: first year grows 25 mm Able to reproduce in the first year</td>
+      <td>Small: first year grows 14 mm (17.44 mm second year). Reproduced in second year</td>
+    </tr>
+    <tr>
+      <td>Reproductive output (per individual)</td>
+      <td>High reproductive output → fast recovery</td>
+      <td>High (50 to 200 million)</td>
+      <td>Low (10.000–100.000) Only 2% survive until sexual maturity</td>
+    </tr>
+    <tr>
+      <td>Larvae stage</td>
+      <td>Attached → slow recovery</td>
+      <td>Unattached: Planctonic larvae</td>
+      <td>Unattached: Planctonic larvae</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -103,13 +142,13 @@ Similar to the effects posited for human coastal exploitation, our results sugge
 
 ## Materials and methods
 
-## Field site
+### Field site
 
 Koram (N12°14'32", E100°0'34") and Nom Sao (N12°13'51", E100°0'17") Islands are located in Khao Sam Roi Yot National Park (KSRY), Prachuap Khiri Khan province, Thailand. Both islands are arid and contain no freshwater bodies, with limestone karst interiors that are covered with dwarf evergreens and deciduous scrub flora (Figure 1). Koram Island is located about 1 km offshore from Sam Roi Yot beach on the Thai eastern mainland. It is approximately 0.45 km2, with 3.5 km of coastline comprising of limestone cliff shore on the side of the island facing the open gulf, and rocky shores and sandy beaches on the side of the coast facing the mainland. NomSao Island is 0.37 km southwest of Koram, with an area of 0.10 km2, including 1.32 km of coastline. The shoreline is not completely accessible for the monkeys as steep overhanging cliffs make some parts unsuitable for foraging. We measured the accessible shoreline on which the monkeys were able to forage by taking GPS points at the furthest edge of suitable foraging zones, and we calculated the total length of suitable shoreline using Google Earth.
 
 The macaque groups on Koram and NomSao Islands are habituated to the presence of humans as a result of provisioning by locals and tourists with food and water. However, they also forage naturally using percussive stone technology. The macaques process predominantly sessile rock oysters (Saccostrea cucullata), and the main gastropod species processed are the tropical periwinkle (Planaxis sulcatus). They also harvest bifasciated cerith (Clypeomorus bifasciatus), and tooth-lipped snail (Monodonta labio). Other less commonly processed food species are conches, various bivalves and crabs, as well as coconuts that occasionally wash ashore, and the dried seeds of provisioned mangoes. At the end of our first data collection period in December 2014, the studied Koram macaque group contained 64 individuals (about 178 ind/km2). Twenty-five (12 ♂; 13 ♀) of 36 adult and adolescent macaques (i.e. > 4 years) were tool users, or 69.4% of the group, and 3 of the 14 (21.4%) juveniles (i.e. 1–4 years) were observed using tools. A smaller group of about 10 individuals is usually excluded from the coast by the larger group and less easily observed, but they also forage on shellfish with tools when they are able to access the shores. On NomSao, there are at least nine adult males that have been observed and individually identified (approximately 90 ind/km2) with at least four being tool users. There are no females or juveniles on NomSao, and it is likely that the males there were disperced from Koram. Macaques live in multi-male multi-female groups where males emigrate from the natal group when they are mature (so-called male dispersal), which is believed to reduce the inbreeding depression in the populations.
 
-## Data collection
+### Data collection
 
 We collected data over two field seasons, from May to December 2014, and from September to October 2015. During the first season, we collected tools from the Koram group directly after observing individuals using them as either oyster or snail foraging tools. In the second field session, we focused on behavioral observations and tool collection on the NomSao group, as well as the sampling of prey size, and food and stone availability on both islands.
 
@@ -127,9 +166,9 @@ To investigate the sustainability of the marine prey consumption, we combined pu
 
 Observational data were collected on the proportions of foraging time that the macaques engaged in tool-aided foraging, and on their rates of tool use. During focal sampling, all individuals were sampled in random order on continuous rotation, for a five minute duration each time. During foraging, we recorded the type of food item processed, noting whether the subject was cracking a sessile oyster or unattached gastropod, and recording the species whenever possible. We counted the number of prey items consumed per focal observation time of 5 min and conservatively estimated an average foraging time of 4 h (during low tide) per individual to extrapolate the number of shellfish items eaten per day (and per year) on Koram Island. We used the amount of daily prey consumption on Koram Island to estimate the total foraging pressure that one tool-using macaque can place on the prey population. We used this same value to estimate foraging pressure for the neighbouring NomSao population, for which long-term focal observations were not available (Tan and Luncz, personal communication). We then used our data on snail abundance per island to extrapolate the potential time needed to deplete the existing prey population. For that calculation we multiplied the length of suitable coastal foraging areas per island with an average width of foraging grounds of 3 m. We used the resulting area and the number of snails found per surveyed square meter to estimate the total number of snails available on each island.
 
-## Statistical analyses
+### Statistical analyses
 
-## Tool choice
+#### Tool choice
 
 To analyze whether the weights of tools selected to crack open oysters differed between the two observed populations we used a linear mixed model (LMM) (Baayen, 2008). In this model, we included the population as fixed effect and individual ID as random effect. As response we used the weight of the stone tools. Prior to running the model, we square root transformed the response variable to achieve a more symmetrical distribution.
 
@@ -147,7 +186,7 @@ The p-values for the fixed effects were based on a likelihood ratio test (LRT), 
 
 The models were implemented in R (version 3.2.3) (R Developing Core Team, 2010). The LMM was fitted using the function lmer of the R package lme4 (Bates and Maechler, 2010) and the LM using the function lm.
 
-## Impact on prey
+### Impact on prey
 
 To compare oyster size between the two islands, we bootstrapped the measured oyster sizes for each island 1000 times and compared the confidence intervals at the level of 95% to each other. To test for differences in snail size between the islands, we conducted the same procedure for two snail species (C. bifasciatus (NNamSao = 101, NKoram = 119); P. sulcatus (NNamSao = 100, NKoram = 123)). To compare the availability of the different snail species between islands for each species individually, we bootstrapped the number of snails we found on each transect 1000 times and compared the confidence intervals at the level of 95% between the islands.
 

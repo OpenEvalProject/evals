@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/021wm7p51 CSIR-Institute of Genomics and Integrative Biology New Delhi India
-2. https://ror.org/053rcsq61 Academy of Scientific and Innovative Research (AcSIR) Ghaziabad India
-3. https://ror.org/01j4v3x97 Department of Biotechnology, Indian Institute of Technology Hyderabad Hyderabad India
-4. https://ror.org/01tgyzw49 Cancer Science Institute of Singapore, National University of Singapore Singapore Singapore
+1. CSIR-Institute of Genomics and Integrative Biology New Delhi India ([ROR:021wm7p51](https://ror.org/021wm7p51))
+2. Academy of Scientific and Innovative Research (AcSIR) Ghaziabad India ([ROR:053rcsq61](https://ror.org/053rcsq61))
+3. Department of Biotechnology, Indian Institute of Technology Hyderabad Hyderabad India ([ROR:01j4v3x97](https://ror.org/01j4v3x97))
+4. Cancer Science Institute of Singapore, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
 
 † Corresponding author
 
@@ -34,27 +34,67 @@ Although these studies implicate the role of G4s in long-range interactions and/
 
 ## Results
 
-## Insertion of an array of G4s in an isolated locus
+### Insertion of an array of G4s in an isolated locus
 
 First, we sought to insert an array of G4s in a relatively isolated locus. We looked into Hi-C data from Rao et al., 2014 and identified a region that was markedly isolated with little or no interaction with its surrounding regions (as shown by snapshots of Hi-C interaction matrices obtained using the 3D genome browser Wang et al., 2018 in Figure 1—figure supplement 1). In addition, this region was devoid of any G4s in the vicinity (no G4 forming motifs in a±2.5 kb window). Thereafter, we artificially inserted an array of G4 forming sequences (275 bp long) at this region near the 79 millionth position of chromosome 12 (79M in following text, chr12:79872423–79872424, hg19 genome assembly) using CRISPR-Cas9 genome editing (Figure 1A, Figure 1—figure supplement 2). To study specific effects due to G4s, if any, a control sequence of identical length was inserted in HEK293T cells at the same locus where specific G/Cs necessary for G4 formation were substituted so that G4s are not formed by this sequence (G4-mutated control, Figure 1A, Figure 1—figure supplement 2); we also ensured that the GC content was minimally affected by the substitutions (72.4% from 76.73%). Homozygous insertion was confirmed by PCR using primers adjacent to the insertion site followed by Sanger sequencing (Figure 1B, Figure 1—figure supplement 3). The array of G4-forming sequences used for insertion was previously reported to form stable G4s in human cells (Lim et al., 2010; Monsen et al., 2020; Palumbo et al., 2009; Sharma et al., 2021).
 
-## Chromatin epigenetic landscape upon insertion of G4s
+![Figure 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic showing the insertion of the G4-array and the G4-mutated control at chr12:79,872,423–79,872,424 (hg19). (B) PCR of the insertion locus showing the successful insertion of the 275 bp long insert sequence.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 3D Genome Browser (Wang et al., 2018) snapshots showing the Hi-C interaction matrices from four cell lines (NHEK, IMR90, HUVEC and HMEC) of a section of chromosome 12 with chr12:79,870,000–79,875,000 (hg19) locus in the middle (marked by arrows); the chr12:79,870,000–79,875,000 locus has very low interaction with its surrounding loci, indicated by the lack of red dots or very faint red dots.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Sequences of the G4 array and the G4-mutated array that were inserted; three or more runs of G/Cs (stem of a potential G4) are shown in bold and the G/Cs (marked in blue) that were changed to T/As (marked in red) in the G4-mutated array are marked.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative snapshots of the Sanger sequencing chromatogram of the reverse strand of the insertion locus PCR product showing some of the specific G/C to T/A substitutions in the insert.
+
+### Chromatin epigenetic landscape upon insertion of G4s
 
 To understand how the formation of G4s altered the local chromatin, chromatin immunoprecipitation (ChIP) of different chromatin-modifying histone marks was done followed by qRT-PCR using primers spanning the inserted locus. PCR primers were designed such that none of the primers bind to any site of G/C alteration in the mutated control insert; either the forward/reverse primer is from the adjacent region for specificity; covers adjacent regions for studying any effects on chromatin; and, PCRs optimized keeping in mind the repeats within the inserted sequence. Given these, primer pairs R1-R4 were chosen for further work following optimizations (Figure 2, top panel). For G4 formation within cells by the G4-array insert sequence we used the reported G4 antibody BG4 (Hänsel-Hertsch et al., 2016). Using primer pairs R2, covering >100 bases of the inserted G4-array, or the G4-mutated control, BG4 ChIP followed by qPCR was performed. Significant BG4 binding was clear in the G4-array insert, and not in the G4-mutated insert, demonstrating formation of G4s by the inserted G4-array (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig2-v1.jpg)
+
+**Figure 2.:** The top panel shows the positions of the PCR amplicons used in the Histone ChIP experiments. Changes in chromatin-modifying histone modifications in the insert region represented by calculating the ratio of occupancy of different histone marks in the G4-array insert cells over the G4-mutated insert (control) cells- enhancer mark, H3K4Me1 (A); active enhancer/promoter mark, H3K27Ac (B); facultative repressor mark, H3K27Me3 (C); constitutive repressor mark, H3K9Me3 (D) and active promoter mark, H3K4Me3 (E). Mean ± SD (n=3); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** BG4 antibody enrichment at the 79 M insertion locus in the G4-array and the G4-mutated (control) insert cells. Mean ± SD (n=2); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Primer R2, covers >100 bp of the respective inserted regions, as shown in Figure 2 top panel.
+
 We observed significant increase in H3K4Me1 and H3K27Ac enhancer marks in the G4-array when compared to the G4-mutated control (Figure 2A and B). However, there was no G4-specific change in the presence of chromatin compaction marks, H3K27Me3 and H3K9Me3, or the promoter activation mark H3K4Me3 (Figure 2C, D and E). The G4-dependent recruitment of H3K4Me1 (associated with enhancers Heintzman et al., 2009; Heintzman et al., 2007) and H3K27Ac (associated with active enhancers and promoters Creyghton et al., 2010; Heintzman et al., 2009; Heintzman et al., 2007) indicated enhancer-like characteristics of the inserted G4s.
 
-## Enhancer-like features emerged upon insertion of G4s
+### Enhancer-like features emerged upon insertion of G4s
 
 We next asked how the insertion of the G4-array influenced the expression of surrounding genes. To understand the distance-dependent gene regulatory impacts of the inserted G4-array, the mRNA expression of the nearest three genes and then some arbitrarily chosen genes further away up to 5 megabases (Mb) both up and downstream from the insertion site was quantified. Notably, the expression of four of the tested genes (PAWR, PPP1R12A, NAV3, and SLC6A15) increased in the G4-array insert compared to the mutated insert control cells (Figure 3A). Based on this enhanced expression, we further tested and observed a somewhat concomitant increase in the recruitment of Ser5 phosphorylated RNA Pol II in the surrounding gene promoters (Figure 3B). Next, we tested if chromosomal looping interactions between the insertion site and the gene promoters were involved in these long-distance effects by using chromosome conformation capture (3C). The 3C assay between the insertion locus and the gene promoters could only be performed till the NAV3 promoter 1.6 Mb away. Beyond this distance, there was not any significantly detectable PCR amplification of 3C interaction products. The 3C assays revealed that there was a G4-dependent increase in chromosomal looping interactions of the insertion locus with the gene promoters (Figure 3C). These results suggested that the inserted G4-array sequence was acting like an enhancer element.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig3-v1.jpg)
+
+**Figure 3.:** (A) Long-range G4-dependent changes in mRNA expression are represented by calculating the ratio of expression of surrounding genes in the G4-array insert cells over the G4-mutated insert (control) cells. Top panel shows the positions of the gene promoters with respect to the insertion site. (B) Ratio of Pol2 Phospho-Ser5 Occupancy at the promoters of the surrounding genes in the G4-array insert cells over the G4-mutated insert (control) cells. (C) Fold change in 3C looping interactions between the insertion and the surrounding gene promoters in the G4-array insert cells over the G4-mutated insert (control) cells. The UCSC genome browser snapshot above shows the 3C looping interactions between the insertion and the surrounding gene promoters. The ratio of occupancy of p300 (D) and Ac p300/CBP (E) in the G4-array insert cells over the G4-mutated insert (control) cells. The panel above shows the positions of the PCR amplicons used in the ChIP experiments. Mean ± SD (n=3); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** −400 to +100 (w.r.t. TSS) promoter region of the genes whose expression increased upon insertion of the G4-array with the pG4 motifs highlighted in yellow and the TSS highlighted in green. C-rich motifs indicate G4 formation on the complementary strand.
+
 To understand the mechanism behind the enhancer-like property of the inserted G4-array we analyzed the recruitment of transcriptional coactivator p300 (Kalkhoven, 2004). There was a relatively modest increase in the recruitment of p300, and a more substantial increase in the recruitment of the more functionally active acetylated p300/CBP, was seen within the G4-array when compared against the mutated control (Figure 3D and E). Together, these results supported the enhancer-like function of the inserted G4-array.
 
-## LNA-mediated disruption of the inserted G4s reverses enhancer phenotype
+### LNA-mediated disruption of the inserted G4s reverses enhancer phenotype
 
 To further establish that the enhancer effects upon the G4 array insertion are due to the formation of G4s, we wanted to see if some of the effects observed could be reversed upon disrupting the inserted structures. Specific Locked Nucleic Acid (LNA) probes were designed to target and disrupt the G4 using a similar approach as shown by others (Cadoni et al., 2021; Chowdhury et al., 2022; Kumar et al., 2008). Three probes were designed with stretches of mostly cytosines (Cs) as LNAs which would hybridize with stretches of guanines (Gs) in the G4-array insert important for the structure formation (Figure 4A; see Methods). We observed that there was a significant decrease in the expression of PPP1R12A and NAV3, two of the genes initially observed to have G4-dependent enhanced expression (Figure 3A), when the G4 array inserted cells were treated with the G4 targeting LNAs (Figure 4B). As expected, although modest, a decrease in the H3K4Me1 and H3K27Ac enhancer histone modifications was evident within the insert upon the LNAs treatment (Figure 4C and D). As a control experiment, we next tested whether the LNA probes affected surrounding gene expression in the G4-mutated insert cells. Changes in the expression of the genes were not significant across replicates in case of G4-mutated insert cells (Figure 4—figure supplement 1). Together these confirmed the decrease in the expression of PPP1R12A and NAV3 in the G4-array insert upon LNA treatment was likely specific to G4 disruption. These indicate that the disruption of the inserted G4s can reverse the enhancer functions observed upon G4 insertion, further supporting the role of the G4 structure in enhancer functions.
 
-## Domain-wide increase in looping interactions by G4s
+![Figure 4.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic showing the inserted G4 structures disrupted using LNA probes (details in methods). (B) Effects of LNA treatment in the G4-array insert cells on the expression of surrounding genes which showed enhanced expression when compared against the G4-mutated insert (control) cells in Figure 3A- represented by the ratio of expression of surrounding genes in the LNA-treated over the vehicle-treated (control) cells. Effects of LNA treatment in the G4-array insert cells on the levels of H3K4Me1 (C) and H3K27Ac (D) histone modifications at the insert locus represented by the ratio of occupancy of the histone marks in the LNA-treated over the vehicle-treated (control) cells. The top panel shows the positions of the PCR amplicons used in the Histone ChIP experiments. Mean ± SD (n=3); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Mean ± SD (n=3); unpaired, two-tailed t-test showed differences were insignificant.
+
+### Domain-wide increase in looping interactions by G4s
 
 For in-depth analysis of the long-range changes in chromatin architecture upon G4 insertion, we performed genome-wide interaction by Hi-C. First, we compared all the Hi-C contacts originating within a±10 kb window comprising the G4-array insert, or the G4-mutated control insert. Compared to the mutated control, the G4-inserted locus had more than twice as many genome-wide Hi-C interactions (6390 vs 3133; Figure 5A and B, Supplementary file 1). To rule out the possibility of artifacts due to the insertion we independently analyzed Hi-C data in HEK293T cells reported earlier (taken from GSE44267, Zuin and Dixon, 2014). After normalizing for sequencing depth, the number of Hi-C contacts from the same window in HEK293T was relatively similar to the G4-mutated insert control (3968 and 3133 respectively, Figure 5C, Supplementary file 1). Together, these showed that a significant number of new long-range interactions were induced throughout the genome due to the inserted G4s, but not from the inserted control sequence.
 
@@ -64,6 +104,14 @@ For in-depth analysis of the long-range changes in chromatin architecture upon G
 
 For closer analysis, we focused on intrachromosomal Hi-C interaction matrices of the G4-array insert, or the mutated control insert. This was centered on the insertion locus on chromosome 12 (chr12:7,80,72,423–8,16,72,423; insertion site marked with arrows in Figure 6A and B). The number of Hi-C interactions in the G4-array insert was clearly enriched compared to the G4-mutated insert control, as expected from the global Hi-C contacts noted above. We noted that while the interactions from the G4-array insert were significantly more, the insertion per se did not affect the overall domain architecture, which was largely similar between G4 or G4-mutated inserts as clear from Figure 6A and B. Further, we asked if the domain architecture was retained from that seen in HEK293T cells (with no insertion): Comparison using reported HiC data for the same region from HEK293T cells showed this to be the case confirming that the chromatin domain architecture remained relatively unchanged on introducing the G-array or G4-mutated regions (Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig6-v1.jpg)
+
+**Figure 6.:** Juicebox Hi-C matrices showing Hi-C contacts in the (A) G4-array insert cells, (B) G4-mutated insert (control) cells in a 3.6 Mb region of chromosome 12 with the insertion site at the middle of the matrices. The arrows at the top of the Hi-C matrices indicate the site of insertion. (C) Juicebox Hi-C matrix showing normalized Hi-C contacts in the G4-array insert cells over the G4-mutated insert (control) cells as a heatmap. The region of interest (i.e. interactions associated with the immediate vicinity of the insert) is marked with a box. The arrow at the top of the Hi-C matrix indicates the site of insertion. (D) A line histogram displaying the differences in interaction frequency across G4-array insert cells and G4-mutated insert (control) cells in regions up to 100 kb away from the insertion site. As seen interactions downstream of the insertion site are more enriched than upstream in the G4-array insert cells as compared to the G4-mutated control. (E) Circos plot showing differential interactions (fold enrichment ≥ 2) originating from a±100 kb window with the insertion site at the middle, in the G4-array insert cells over the G4-mutated insert (control) cells. (F) UCSC genome browser snapshot showing the more significant differential interactions (fold enrichment ≥ 2, interaction reads >20) originating from a±50 kb window with the insertion site at the middle, in the G4-array insert cells over the G4-mutated insert (control) cells. The color intensity of the arcs indicating the interacting bins is proportional to the fold enrichment. Density of potential G4 motifs (per 10 kb) shown in lower panel; G4-forming sequences identified using pqsfinder (Hon et al., 2017); interaction regions marked in red at the bottom of lower panel.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Comparison of Hi-C contact matrices around the insertion site in the G4-array insert cells (A) and the HEK293T control cells (taken from GSE44267) (B) shows that the broad chromatin organization is conserved. The TADs appear to be otherwise unaltered upon insertion.
+
 To evaluate the effect of G4s in more detail, we plotted a Hi-C heatmap to show the enhanced or reduced (differential) contacts in the G4-array insert compared to the G4-mutated insert control cells (Figure 6C; relatively enriched/reduced contacts in the G4-array insert w.r.t. the G4-mutated insert plotted in red or blue, respectively; using Juicebox for analysis). This clearly showed that the G4-array induced significantly more Hi-C interactions; interestingly this was particularly evident in the downstream regions. For a closer analysis, we mapped the interaction frequency in a±100 kb window centered on the insertion site. This clearly showed the difference in the number of interactions between the upstream region vis-a-vis the region downstream of the insertion (Figure 6D).
 
 To further confirm we used an independent HiC analysis method, HOMER (Hypergeometric Optimization of Motif EnRichment, Heinz et al., 2018) to compute the enhanced/reduced long-range interactions in the G4-array insert, compared to the control G4-mutated insert. Differential analysis using HOMER showed that the inserted locus induced significantly higher number of interactions in the case of G4-array insert relative to the control G4-mutated case (Figure 6E). When we plotted the significantly different chromosomal interactions with minimum 20 interaction reads, it was again clear that the number of interactions with the G4-array insertion region was significantly enhanced in the downstream region relative to the upstream (Figure 6F).
@@ -72,9 +120,21 @@ Together these show a clear role of G4s in inducing long-range interactions. A s
 
 A second significant feature was notable at the insertion locus. The number of induced long-range interactions was more significant downstream of the insertion site, compared to the upstream region (Figure 6C, D and F). A close look at the Hi-C contact matrices indicated that the site of insertion was very close and downstream to the TAD boundary (Figure 6A–C). We reasoned that the G4-dependent long-range interactions were largely within the TAD, and limited in the upstream region due to the TAD boundary. This is clearly seen in Figure 6C, akin to an ‘architectural stripe’ displaying that the inserted G4 array had enhanced Hi-C interactions across the domain, thus prominently featured in the downstream regions.
 
-## G4-array insertion at a second locus gives enhancer-like functions
+### G4-array insertion at a second locus gives enhancer-like functions
 
 Finally, we checked if enhancer-like effects were observed upon insertion of G4 array at another locus. Like the first site of insertion, we first identified an isolated locus devoid of G4s in the vicinity and with low interactions with surrounding regions near the 10 millionth position of chromosome 12 (10M hereafter, chr12:10588429–10588430, hg19; Figure 7—figure supplement 1). The G4-array, or its G4-mutated (control) sequences were inserted at the 10 M locus (Figure 7A and B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic showing the insertion of the G4-array and the G4-mutated control at chr12:10,588,429–10,588,430 (hg19). (B) PCR of the insertion locus showing the successful insertion of the 275 bp long insert sequence. The top panel shows the positions of the PCR amplicons used in the Histone ChIP experiments. Changes in chromatin-modifying histone modifications in the insert region represented by calculating the ratio of occupancy of different histone marks in the G4-array insert cells over the G4-mutated insert (control) cells- enhancer mark, H3K4Me1 (C); active enhancer/promoter mark, H3K27Ac (D); facultative repressor mark, H3K27Me3 (E); constitutive repressor mark, H3K9Me3 (F) and active promoter mark, H3K4Me3 (G). (H) Long-range G4-dependent changes in mRNA expression are represented by calculating the ratio of expression of surrounding genes in the G4-array insert cells over the G4-mutated insert (control) cells. The panel above shows the positions of the gene promoters with respect to the insertion site. Mean ± SD (n=3); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) 3D Genome Browser (Wang et al., 2018) snapshots showing the Hi-C interaction matrices from four cell lines (NHEK, IMR90, HUVEC and HMEC) of a section of chromosome 12 with chr12:10585000–10590000 (hg19) locus in the middle (marked by arrows); the chr12:10585000–10590000 locus has low interaction with its surrounding loci, indicated by the lack of red dots or very faint red dots.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/96216/elife-96216-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** BG4 antibody enrichment at the 10 M insertion locus in the G4-array and the G4-mutated (control) insert cells. Mean ± SD (n=2); unpaired, two-tailed t-test (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Primer R2, covers >100 bp of the respective inserted regions, as shown in Figure 7 top panel.
 
 As for the 79 M locus, to validate intracellular G4 formation and study the chromatin state at the inserted locus, PCR primers were designed keeping multiple points in mind (as described above). Here, for testing formation of G4 at the 10 M insertion, we used primer pairs R2 (scheme for 10 M shown in Figure 7 top panel), covering >100 bases of the inserted G4-array, or the G4-mutated control. BG4 ChIP-qPCR validated formation of intracellular G4s within the G4 array, and not the G4-mutated control sequence (Figure 7—figure supplement 2). Next, we checked for changes in chromatin and the surrounding gene expression due to G4 formation. A relative increase in the H3K4Me1 and H3K27Ac enhancer marks in the G4-array was evident compared to the G4-mutated control (Figure 7C and D), consistent with earlier observations following G4 insertion at the 79 M locus (Figure 2A and B). We noticed, however, that the enhanced levels of H3K27Ac were not as marked as the 79 M locus. On the other hand, interestingly, relative increase in the H3K27Me3 repressor mark compared to the control mutated-G4 insert, particularly at the downstream end of the insertion locus was seen (Figure 7E). There was no G4-specific change in the presence of the chromatin compaction mark H3K9Me3, or the promoter activation mark H3K4Me3 (Figure 7F and G). As expected from earlier observations and the enhancer histone marks, there was a G4-dependent increase in the expression of surrounding genes KLRC2, KLRC1 and NTF3; except for PTPRO, which had reduced expression (Figure 7H). Taken together, G4-specific chromatin changes were evident at the 10 M locus consistent with the 79 M locus. Notable variations however must be pointed out: like the presence of the H3K27Me3 repressor histone mark, along with H3K27Ac/H3K4Me1 enhancer histone marks, indicating a poised enhancer-like state as described earlier (Calo and Wysocka, 2013). These suggest the impact of G4 formation on chromatin is likely context-specific, that is, dependent on the chromatin state of the adjacent regions.
 
@@ -100,44 +160,173 @@ In summary, our findings here demonstrate a causal role of G4s in inducing both 
 
 ## Materials and methods
 
-## Cell lines and cell culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>NCCS Cell Repository</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. pyogenes)</td>
+      <td>pX459 v2.0</td>
+      <td>Addgene</td>
+      <td>#62988</td>
+      <td>Construct to co-express cas9 protein and the gRNAs</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Histone H3 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab1791, RRID:AB_302613</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4Me1 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab8895, RRID:AB_306847</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27Ac rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab4729, RRID:AB_2118291</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4Me3 mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab1012, RRID:AB_442796</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27Me3 mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab6002, RRID:AB_305237</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9Me3 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab8898, RRID:AB_306848</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p300 rabbit monoclonal</td>
+      <td>CST</td>
+      <td>#54062, RRID:AB_2799450</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ac-p300/CBP rabbit polyclonal</td>
+      <td>CST</td>
+      <td>#4771, RRID:AB_2262406</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BG4 antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>MABE917, RRID:AB_2750936</td>
+      <td>(5 μg)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Arima-HiC Kit</td>
+      <td>Arima Genomics</td>
+      <td>A510008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Juicer</td>
+      <td>https://github.com/aidenlab/juicer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Juicebox</td>
+      <td>https://github.com/aidenlab/Juicebox/wiki/Download</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools</td>
+      <td>https://bedtools.readthedocs.io/en/latest/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>http://homer.ucsd.edu/homer/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture conditions
 
 HEK293T cells were procured from the NCCS cell repository, the cell identity was authenticated using STR profiling, and the cells were tested negative for mycoplasma contamination. The cells were cultured in Dulbecco’s Modified Eagle’s Medium- High Glucose (DMEM-HG) supplemented with 10% FBS and 1XAnti-Anti (Gibco).
 
-## Primary antibodies
+### Primary antibodies
 
 Histone H3 rabbit polyclonal (Abcam ab1791), H3K4Me1 rabbit polyclonal (Abcam ab8895), H3K27Ac rabbit polyclonal (Abcam ab4729), H3K4Me3 mouse monoclonal (Abcam ab1012), H3K27Me3 mouse monoclonal (Abcam ab6002), H3K9Me3 rabbit polyclonal (Abcam ab8898), p300 rabbit monoclonal (CST 54062), Ac-p300/CBP rabbit polyclonal (CST 4771), BG4 antibody (Sigma-Aldrich MABE917).
 
-## Genomic insertions using CRISPR-Cas9 genome editing
+### Genomic insertions using CRISPR-Cas9 genome editing
 
 For the genomic insertions CRISPR-Cas9 genome editing technique was used (Ran et al., 2013). For the G4 array insertion, 275 bp long hTERT promoter region was PCR amplified from HEK 293T genomic DNA. For the insertion of the mutated G4s, a synthetic DNA template was synthesized and cloned into pUC57 vector by Genscript Biotech Corp, where 12 Gs were substituted with Ts (see Supplementary file 2 for detailed sequences). Both the G4 array and the G4 mutated insertion templates were PCR amplified using longer primers where the short homology arms were introduced as overhangs of the primer for the accurate insertion at the 79 M locus via homologous recombination (see Supplementary file 2 for primer sequences) (Paix et al., 2017). For cleavage at the 79 M locus (chr12:79,872,423–79,872,424 (hg19)), the gRNA sequence, 5’-ACTATGTATGTACATCCAGG-3’, was cloned into the pX459 v2.0, a gift from Feng Zhang, that co-expresses cas9 protein and the gRNA. For cleavage at the 10 M locus (chr12:10,588,429–10,588,430 (hg19)), the gRNA sequence, 5’-ATCCTTCCCTGAATCATCAA-3’, was used. Guide RNAs (gRNAs) were designed using the CRISPOR tool (Haeussler et al., 2016). Once the gRNA cloned vector and the insertion donor templates were ready, they were transfected into HEK293T cells and the transfected cells were selected using puromycin, whose resistance gene was present in the pX459 vector. Then these selected cells were serially diluted to isolate clones originating from single cells. Many such clones were screened to detect cells with homozygous/heterozygous insertion of the G4 array or mutated G4 insert by performing locus-specific PCR. Either primers adjacent to the insertion site or cross primers, i.e., one primer within the insert and another from the adjacent region, were used to screen and identify insertions. While using adjacent primers, a shift in PCR product with an increase in amplicon size by 275 bp (size of the insert) indicated successful insertion (see Supplementary file 2 for primer sequences).
 
-## ChIP (chromatin immunoprecipitation)
+### ChIP (chromatin immunoprecipitation)
 
 ChIP assays were performed as per the protocol previously reported in Mukherjee et al., 2018. Immunoprecipitation was done using relevant primary antibodies. IgG was used for isotype control. Total histone H3 was used as a control for the histone modifications ChIP. Three million cells were harvested and crosslinked with ~1% formaldehyde for 10 min and lysed. Chromatin was sheared to an average size of ∼250–500 bp using Biorupter (Diagenode). Ten percent of sonicated fraction was processed as input using phenol–chloroform and ethanol precipitation. ChIP was performed using 3 μg of the respective antibody incubated overnight at 4 °C. Immune complexes were collected using salmon sperm DNA-saturated magnetic protein G Dynabeads (Anti-FLAG M2 magnetic beads for BG4 ChIP) and washed extensively using a series of low salt, high salt and LiCl Buffers. The Dynabeads were then resuspended in TE (Tris- EDTA pH 8.1) buffer and treated with proteinase K at 65 ° C for ~5 hrs. Then, phenol-chloroform-isoamyl alcohol was utilized to extract DNA. Extracted DNA was precipitated by centrifugation after incubating overnight at –20 ° C with isopropanol, 0.3 M sodium acetate and glycogen. The precipitated pellet was washed with freshly prepared 70% ethanol and resuspended in TE buffer. ChIP DNA was analyzed by qRT-PCR method. See Supplementary file 2 for primer sequences.
 
-## Real-time PCR for gene (mRNA) expression
+### Real-time PCR for gene (mRNA) expression
 
 Total RNA was isolated using TRIzol Reagent (Invitrogen, Life Technologies) according to the manufacturer’s instructions. RNA was quantified and cDNA was synthesized using iScript cDNA Synthesis Kits. A relative transcript expression level for genes was measured by quantitative real-time PCR using a SYBR Green based method (see Supplementary file 2 for primer sequences). Average fold change was calculated by the difference in threshold cycles (Ct) between test and control samples. GAPDH gene was used as internal control for normalizing the cDNA concentration of each sample.
 
-## Chromosome conformation capture (3C)
+### Chromosome conformation capture (3C)
 
 Chromosome Conformation Capture (3 C) assay was done as per the protocol reported in Cope and Fraser, 2009 with certain modifications. Briefly, about 5–6 million cells were crosslinked using 1% formaldehyde for 10 min and then lysed to isolate the nuclei. Nuclei were digested overnight by HindIII and then ligated in a diluted reaction so that intramolecular ligation is favored. After ligation, the reaction mixture was treated with proteinase K at 65 °C to de-crosslink the DNA, followed by RNase A treatment. Then, phenol-chloroform-isoamyl alcohol was utilized to extract DNA. Extracted DNA was precipitated by centrifugation after incubating overnight at –80 °C with 70% ethanol, 0.1 M sodium acetate and glycogen. The precipitated pellet was washed with freshly prepared 70% ethanol and resuspended in TE buffer. 3C looping interactions were analyzed by TaqMan qRT-PCR method. For comparison, each interaction frequency was normalized to the interaction between exons 2 and 8 of the human α-actin (ACTA2)(Hadjur et al., 2009). See Supplementary file 2 for primer sequences.
 
-## G4 disruption using LNA probes
+### G4 disruption using LNA probes
 
 Probes were designed to specifically bind to regions of genomic DNA containing G repeats which would form the G stems of the G4 structure. The probes containing LNA nucleotides should hybridize with the target with higher stability than the stability of the G4 structure thus destabilizing the G4. The probes used to target the G4 array insert were: 5’-c*ccgacccctcc*c-3’, 5’-c*cagccccctcc*g-3’, 5’-c*ccctccccttc*c-3’. Stretches of three or more Cs are shown in bold, LNA nucleotides within the probes are underlined, the ends of the probes were protected using phosphorothioate bonds, shown as *. Approximately 0.8 μg of LNA probes (all three mixed in equimolar amounts) were transfected per million cells. Cells were treated with the LNA probes for 108 hr by transfecting thrice with a gap of 36 hr in between. Scheme 1 shows the LNA probes designed to disrupt the inserted G4 structures along with the inserted G4 array sequence to show the specific sites of hybridization by the LNA probes.
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/96216/elife-96216-scheme1-v1.jpg)
 
-## Hi-C
+### Hi-C
 
 Hi-C was performed using the Arima-HiC Kit as per the manufacturer’s protocol. After the proximally-ligated Hi-C templates were generated, sequencing libraries were prepared using NEBNext Ultra II DNA Library Prep Kit as per the Arima-HiC Kit’s protocol. The quality of the sequencing libraries was cross-checked using TapeStation (Agilent Technologies) and the KAPA Library Quantification Kit (Roche) before proceeding with sequencing using NovaSeq 6000 (Illumina).
 
-## Hi-C data analysis
+### Hi-C data analysis
 
 Hi-C reads were mapped to the hg19 human genome and processed using default parameters using Juicer (https://github.com/aidenlab/juicer, Aiden Lab, 2023a; Durand et al., 2016b). Hi-C count matrices were generated at 5 kb, 10 kb, 25 kb, 50 kb, 100 kb, and 250 kb using Juicer. Hi-C heatmap figures were rendered using Juicebox (https://github.com/aidenlab/Juicebox/wiki/Download, Aiden Lab, 2023b; Durand et al., 2016a). Hi-C contacts originating in the loci flanking the G4 insertion site were generated using bedtools (https://bedtools.readthedocs.io/en/latest/, Quinlan, 2023). The circos plots were rendered using Circos (https://circos.ca/, Krzywinski, 2009). To identify significant interaction the data was processed using HOMER (http://homer.ucsd.edu/homer/, Benner, 2024) using analyzeHiC function. The bins showing 2-fold enrichment in G4 WT over G4 Mut and vice-versa were retained for filtering contacts for representation on circos plots.
 
-## Materials availability
+### Materials availability
 
 HEK 293T cells with the hTERT promoter G4 array or the G4-mutated control insertions are available upon request. Such requests can be directed to the corresponding author.

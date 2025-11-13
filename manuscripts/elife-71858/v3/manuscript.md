@@ -29,11 +29,23 @@
 
 ## Abstract
 
-Color and polarization provide complementary information about the world and are detected by specialized photoreceptors. However, the downstream neural circuits that process these distinct modalities are incompletely understood in any animal. Using electron microscopy, we have systematically reconstructed the synaptic targets of the photoreceptors specialized to detect color and skylight polarization in Drosophila , and we have used light microscopy to confirm many of our findings. We identified known and novel downstream targets that are selective for different wavelengths or polarized light, and followed their projections to other areas in the optic lobes and the central brain. Our results revealed many synapses along the photoreceptor axons between brain regions, new pathways in the optic lobes, and spatially segregated projections to central brain regions. Strikingly, photoreceptors in the polarization-sensitive dorsal rim area target fewer cell types, and lack strong connections to the lobula, a neuropil involved in color processing. Our reconstruction identifies shared wiring and modality-specific specializations for color and polarization vision, and provides a comprehensive view of the first steps of the pathways processing color and polarized light inputs.
+Color and polarization provide complementary information about the world and are detected by specialized photoreceptors. However, the downstream neural circuits that process these distinct modalities are incompletely understood in any animal. Using electron microscopy, we have systematically reconstructed the synaptic targets of the photoreceptors specialized to detect color and skylight polarization in Drosophila, and we have used light microscopy to confirm many of our findings. We identified known and novel downstream targets that are selective for different wavelengths or polarized light, and followed their projections to other areas in the optic lobes and the central brain. Our results revealed many synapses along the photoreceptor axons between brain regions, new pathways in the optic lobes, and spatially segregated projections to central brain regions. Strikingly, photoreceptors in the polarization-sensitive dorsal rim area target fewer cell types, and lack strong connections to the lobula, a neuropil involved in color processing. Our reconstruction identifies shared wiring and modality-specific specializations for color and polarization vision, and provides a comprehensive view of the first steps of the pathways processing color and polarized light inputs.
 
 ## Introduction
 
 Both the wavelength and the polarization angle of light contain valuable information that can be exploited by many visual animals. For instance, color gradients across the sky can serve as navigational cues, and skylight’s characteristic pattern of linear polarization can also inform navigation by indicating the orientation relative to the sun (Heinze, 2017; Figure 1A). The spectral content of light is detected by groups of photoreceptor cells containing rhodopsin molecules with different sensitivities, often organized in stochastic retinal mosaics (Rister and Desplan, 2011), and specialized, polarization-sensitive photoreceptors have been characterized in many species, both vertebrates and invertebrates (Nilsson and Warrant, 1999). These two visual modalities, color and polarization vision, require the processing of signals over a wide range of spatial and temporal scales, and many questions remain about how the signals from functionally specialized photoreceptors are integrated in downstream neurons. Are color and polarization signals mixed at an early stage, or are they processed by different, modality-specific cell types? Do separate pathways exist that selectively process and convey information from photoreceptor types in the retinal mosaic to targets in the central brain? The full scope of the early synaptic stages of color and polarization circuitry is unknown in any animal, and the analysis of electron microscopy (EM) connectomes is ideally suited to exhaustively answer these questions, especially when corroborated with genetic labeling of cell types and circuit elements imaged with light microscopy. We make significant progress on the questions by mapping the neuronal connections of specialized, identified photoreceptors within the Drosophila full adult fly brain data set (Zheng et al., 2018) and validate many of these results by using the powerful genetic tools available in Drosophila.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig1-v3.jpg)
+
+**Figure 1.:** (A) Simplified schematic summarizing some of the most salient visual stimuli of a fly (center): celestial cues (sun), color gradients (distribution of green versus UV wavelengths) and skylight polarization (as defined by degree of polarization and angle of polarization) can be used for navigation, as well as more or less colorful landmarks (tree). (B) Schematic representation of the fly visual system. Left: In the retina, inner photoreceptor R7 (distal) and R8 (proximal) rhodopsin expression differs across three functionally specialized subtypes pale (p), yellow (y), and DRA (d). Rh3 and Rh4 opsins are both UV-sensitive, whereas Rh5 and Rh6 are more sensitive to blue and green wavelengths, respectively. R1-6 express Rh1 and are broadly sensitive to green and UV wavelengths. Only in the DRA, both R7 and R8 axons terminate in the same layer of the medulla neuropil (M6), which is the target layer of R7 cells outside the DRA, and non-DRA R8 cells terminate in layer M3. Right: Overview of the main four optic lobe neuropils. Only the lamina and medulla receive direct photoreceptor input. (C) Distribution of medulla columns downstream of either p (light blue), y (yellow), and DRA (red) photoreceptors reconstructed from the Zheng et al., 2018 data set. Pale columns were assigned via presence of aMe12 long vertical projections (see below). Seven seed columns used for systematic reconstruction are highlighted with black circles. The colored axes indicate the orientation of the displayed view: green for lateral, magenta for dorsal, and blue for posterior axes. Scale bar: 20 μm. (D) Double labeling of aMe12 vertical processes and yellow R8 cells. See Materials and methods and Supplementary file 4 for fly genotypes and other details of this and other light microscopy panels. Left (Di) Confocal image showing the array of medulla columns with labeling of aMe12 neurons (purple) and yellow R8 axons (green). Note that the two patterns appear near-mutually exclusive. Right (Dii) Side view of aMe12 vertical projections and pale R7 axons (green). (Di–ii) Scale bars: 20 μm. (E) Left (Ei) Skeleton of the optic lobe part of a fully reconstructed aMe12 neuron (gray), with processes leaving the medulla through the accessory medulla (pink). (Eii) Across the four central seed columns (darker shading), synaptic input from R7 (purple dots) and R8 photoreceptors (green dots) to aMe12 is specific to the designated pale columns. (Eiii) Left: Sideview depicting the distribution of R7 and R8 inputs into aMe12 across medulla layers (color code of pale and yellow columns as before). Right: Same distribution plotted as synapses/μm, for both pale and yellow columns (color code as before). (Ei–iii) Scale bars: 10 μm. (F) Reconstructed pale R7 and R8, yellow R7 and R8, and R7-DRA and R8-DRA terminals with R7 presynapses in purple and R8 presynapses in green. Note the termination of R8-DRA in the R7 target layer M6 (arrow). Scale bars: 10 μm. (G) Illustrations of examples of cell types from reconstructed neuron classes, including lamina monopolar (L3), distal medulla (Dm9), medulla intrinsic (Mi15), transmedulla (Tm20), medulla tangential intrinsic (Mti), visual projection neurons targeting the central brain (e.g. aMe12), and medulla-to-tubercle (MeTu) cells projecting to the anterior optic tubercle (AOTU). (H) For the synapses from seed column inner photoreceptors to cells with ≥3 synapses, we identified the cell type or cell class of 99.5% (3803/3821 synapses). Overview of the relative strength of these connections with different neuron classes (color code as before), including with the unidentified cells (Table 2, Table 3, Table 4, Table 5), across pale, yellow, and DRA columns (pre- and postsynaptic). Area of circles corresponds to the number of synapses per R7 and R8 cell.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example EM images of photoreceptor synapses in medulla layer 6. Top: R7 synapse (T-bar labeled) with postsynaptic Dm2, Dm8, Dm9, and Tm5b cells. Bottom: R8-DRA synapse, with postsynaptic Dm9 and Dm-DRA2 cells. R8 synapses in layer 6 were diagnostic of DRA columns (see Materials and methods). (B) Images of synapses outside the medulla in the central (top) and DRA (bottom) seed columns. (C) Two examples of photoreceptor synapses with glia, with the arrows indicating the postsynaptic density in the glial cell. Scale bars: 500 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Left: Comparison of total numbers of synaptic inputs to R7 (purple, circles) and R8 (green, squares) in our data set (filled symbols) and a medulla-7-column connectome (open symbols), with mean values are indicated by black symbols. These plotting conventions are used throughout the figure. We used the six columns identified as pale and yellow in the medulla-7-column connectome (Takemura et al., 2015) by Menon et al., 2019, made available in Clements et al., 2020, see Materials and methods. Right: The R7-8 photoreceptors and Dm9 inputs dominate the synaptic input to R7 (purple, circles) and to R8 (green, squares); the increased number of synapses outside medulla (see panel G) likely accounts for the higher number of inputs to our R7-8 cells. (B) Comparison of the total number of output synapses from R7 and R8. We reconstructed more output synapses, per cell, than in medulla-7-column connectome. (C) Comparison of total numbers of R7-8 output synapses disaggregated by cell classes. To enable like-for-like comparisons, we used only cell classes and cell types annotated in both data sets, with the cell types shown in D. To quantify the completeness of cell type identification, we counted all other identified cell types found each data set in the ‘Other’ category. Our reconstruction found a large increase in R7 synapses to multicolumnar Dm cells, and increases in R8 synapses to multicolumnar cell classes, such as Tm cells and cells like aMe12 in the ‘Other’ class. (D) Comparison of total numbers of R7 (top) and R8 (bottom) output synapses disaggregated by cell type, with cell types grouped from left to right by their cell class categories in C. For R7, there were increases in synapses to R8 and L3, which receive synapses outside the medulla, and Dm8 cells, which are multicolumnar. For R8, there were increases in synapses to R7 and Mi15, which receive synapses outside the medulla, and multicolumnar Tm5c and ‘Other’ cell types, and also Tm20 cells, which may be surprising because this cell type is columnar. (E) Comparison of R7-8 synapses to (medulla-7-column connectome) Dm7 and (current study) MeTu cells. These two cell types were the only cell type discrepancies between the data sets: Dm7 cells were major targets of R7 in the medulla-7-column connectome, but not in ours, while MeTu cells were major targets in our data but not in the medulla-7-column connectome. (F) Example Tm cell (brown, Tm #11770) in the medulla-7-column connectome whose dendritic morphology matched MeTu cell. Two R7 cells (green, left, and purple, right) are also shown, along with R7 synapses (green circles) and Mi15 synapses (purple). We propose that some MeTu cells are included in the medulla-7-column connectome but are currently annotated as unidentified Tm or Dm7 cells. (G) Percentages of synapses outside the medulla for R7 (left) and R8 (right) with cell types in the central (top) and DRA (bottom) seed columns. L3 in particular is almost exclusively innervated outside the medulla. Tables of synapses outside the medulla are listed for each cell type in Supplementary file 3.
 
 While studies in many insects have contributed to the understanding of polarized light and color vision (Homberg, 2015; Dacke and El Jundi, 2018; Heinze, 2017; Hempel de Ibarra et al., 2014), the visual system of Drosophila offers many advantages for the exploration of neural circuits (Wernet et al., 2014). Anatomical studies are facilitated by the stereotyped, repetitive structure of the optic lobes, with many cell types, the so-called columnar neurons, found in repeated circuit units, called visual columns, that are retinotopically arranged and each correspond to one of the ~800 unit eyes (ommatidia) of the compound eye. Over 100 optic lobe cell types have been described in classical Golgi work (Fischbach and Dittrich, 1989), by more recent studies combining genetic labeling with light microscopy (Morante and Desplan, 2008; Otsuna and Ito, 2006; Wu et al., 2016; Nern et al., 2015) and, for some cell types, through EM reconstructions that have revealed not only cell morphologies but also detailed synaptic connectivity (Takemura et al., 2008; Takemura et al., 2013; Takemura et al., 2015; Meinertzhagen and O’Neil, 1991; Rivera-Alba et al., 2011; Shinomiya et al., 2014). Furthermore, genetic tools (Jenett et al., 2012; Pfeiffer et al., 2008; Kvon et al., 2014; Dionne et al., 2018; Tirian and Dickson, 2017), and, most recently, gene expression data (Davis et al., 2020; Konstantinides et al., 2018; Özel et al., 2021; Kurmangaliyev et al., 2020) are available for many optic lobe cell types. An enabling feature of this emerging body of work is that in nearly all cases, distinct cell types can be reliably identified across data sets, such that new studies often directly enrich prior ones.
 
@@ -45,7 +57,7 @@ Here, we present a comprehensive reconstruction of all inner photoreceptor synap
 
 ## Results
 
-## Systematic reconstruction of all synaptic targets of inner photoreceptor subtypes
+### Systematic reconstruction of all synaptic targets of inner photoreceptor subtypes
 
 We reconstructed R7 and R8 photoreceptor axons in the central region of the right optic lobe, as well as inner photoreceptors from 27 DRA columns from the Zheng et al., 2018 data set (Figure 1C). From these, we selected seven ‘seed columns’ (four central, three DRA), for which all pre- and postsynaptic sites of the photoreceptor axons were identified and manually reconstructed, which is annotated and assembled across EM images (Figure 1F; Material and methods). There were 422 skeletons, corresponding to individual cells, contacted by the seed column photoreceptors, and we focused our analysis on the 245 individual cells with >2 synapses to or from the photoreceptors. We reconstructed the morphology of these cells with a sufficient degree of completeness to ascribe a unique cell type to 92% (225/245) or to identify a cell class (Dm, Mi, Tm, or TmY cell class) for an additional 6.5% (16/245), so that 98% (241/245) of these cells were identified. We also traced and uniquely identified the cell type of all 30 cells that provided >2 synaptic inputs to the photoreceptors. In total, we identified 4043 synaptic connections from the seed column R7 and R8 photoreceptors, and 970 synaptic inputs to them, summarized in Figure 1H.
 
@@ -59,15 +71,1010 @@ This report is a comprehensive reconstruction of all inner photoreceptor synapti
 
 We have endeavored to make this comprehensive data set as accessible and navigable as possible. In the following sections we first describe the connections of the central column R7 and R8 cells (Figures 2–5), following the sequence of cell classes in Figure 1G–H, before presenting the connections of the DRA (Figures 6–9). For brevity, we refer to the region of the medulla innervated by DRA inner photoreceptors as the DRA region, and for clarity we refer to the central column inner photoreceptors as R7 and R8, and the DRA inner photoreceptors as R7-DRA and R8-DRA. The synaptic outputs from and inputs to the central pale and yellow R7–8 cells are summarized in Table 2, Table 3, for R7-DRA and R8-DRA in Table 4, Table 5, and presentations of individual cell types include summaries of total photoreceptor synapse counts (e.g. Figure 1Eiii for aMe12). The text highlights downstream cell types that are selective for inputs from either R7 or R8 or are preferentially found in pale or yellow columns. We used 65% as the threshold to consider an input selective and tables of connectivities of the individual cells are arranged by cell type and collected together in Supplementary file 1. The main figures show the morphology of reconstructed exemplars, with the many full reconstructions noted (and listed in Materials and methods), while the morphologies of individual cells are collected together in Supplementary file 2. The numbers of synapses outside the medulla are summarized in Supplementary file 3. For the cell types for which we are unaware of published, detailed descriptions, we endeavored to produce light microscopic images of single cell clones which were matched largely based on the cell body location, neuropil-layer-specific branching patterns, and comparisons to any other known cell types (see Materials and methods). In a few cases, we also use light microscopy to illustrate specific features of known neurons or to explore additional properties (such as direct co-labeling with markers for pale and yellow columns) that are not readily accessible by EM. A key prior EM data set for comparison with our results is the medulla connectome of Takemura et al., 2017; Takemura et al., 2015, fully released in Clements et al., 2020. We refer to this connectome as the ‘medulla-7-column connectome’. For ease of reference, all abbreviations used, including anatomical abbreviations, are listed in Table 1.
 
-## Synapses between R7 and R8, and with lamina cell types
+**Table 1.**
+ Abbreviations used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Abbreviations used:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>EM</td>
+      <td>Electron microscopy</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FAFB</td>
+      <td>Drosophila Full Adult Fly Brain data set (Zheng et al., 2018)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FIB-SEM</td>
+      <td>Focused ion-bean serial electron microscopy</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Medulla-7-column connectome</td>
+      <td>FIB-SEM data set of Takemura et al., 2017; Takemura et al., 2015. Connectivity accessible through Clements et al., 2020.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UV</td>
+      <td>Ultraviolet</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P</td>
+      <td>Pale, for example, pR7 are R7 photoreceptors of pale ommatidia</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y</td>
+      <td>Yellow, for example, yR8 are R8 photoreceptors of yellow ommatidia</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Brain regions:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AME</td>
+      <td>Accessory medulla</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AOTU</td>
+      <td>Anterior optic tubercle</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DRA</td>
+      <td>Dorsal rim area</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FLA</td>
+      <td>Flange</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LO</td>
+      <td>Lobula</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IPS</td>
+      <td>Inferior posterior slope</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LOP</td>
+      <td>Lobula plate</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SPS</td>
+      <td>Superior posterior slope</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PLP</td>
+      <td>Posterior lateral protocerebrum</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L1-6</td>
+      <td>Lobula layers 1–6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1-10</td>
+      <td>Medulla layers 1–10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ME</td>
+      <td>Medulla</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CA</td>
+      <td>Mushroom body calyx</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Cell type names or part of cell type names:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>aMe12</td>
+      <td>Accessory medulla 12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C2-3</td>
+      <td>Lamina centrifugal cell types</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dm</td>
+      <td>Distal medulla cell class</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>-DRA</td>
+      <td>Suffix indicating the cell type is located in the DRA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L1-5</td>
+      <td>Lamina monopolar cell types</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MeMe-DRA</td>
+      <td>Cell type connecting ipsilateral medulla and contralateral medulla</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MeTu</td>
+      <td>Medulla to anterior optic tubercle cell class</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mi</td>
+      <td>Medulla intrinsic cell class</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ML</td>
+      <td>Medulla to lobula cell class</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ML-VPN</td>
+      <td>Medulla to lobula visual projection neuron (named for similarity to ML cells)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mti</td>
+      <td>Medulla tangential intrinsic cell class</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mt-VPN</td>
+      <td>Medulla tangential visual projection neuron</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>OA-AL2i3</td>
+      <td>Octopaminergic neuron named by Busch et al. (2007)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R1-8</td>
+      <td>Photoreceptor cell types</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tm</td>
+      <td>Transmedullary cell class (neurons connecting medulla and lobula)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TmY</td>
+      <td>Transmedullary Y cell class (neurons connecting medulla, lobula, lobula plate)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VPN</td>
+      <td>Visual projection neuron (cell connecting optic lobe and central brain)</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig2-v3.jpg)
+
+**Figure 2.:** (A) Synapses between central R7 and R8 cells. Left: Side view of R7 (purple) and R8 (green), with R7→R8 synapses (purple points) and R8→R7 synapses (green points). Note synapses outside the medulla neuropil (distal to layer M1). Scale bar: 10 μm. Right: Synapse distribution (in synapses/μm) in the yellow and pale seed columns. (B) Synapses between R7 and R8 and Dm9 cells. (Bi) Top view of a fully reconstructed Dm9 skeleton (gray) covering all four central seed columns (darker shading) with all R7 (purple) and R8 (green) inputs. (Bii) Left: Side view of R7 (purple) and R8 synapses (green) to the same Dm9 cell across medulla layers. Right: Layer distribution of photoreceptor inputs to six Dm9 cells. (Biii) Left: Side view of Dm9→ R7 (purple) and Dm9→R8 (green) feedback synapses from the same Dm9 cell. Right: Layer distribution of feedback synapses from six Dm9 occupying the seed columns. Most of these synapses are from the illustrated Dm9 cell with other Dm9 cells contributing a small number of connections in M1 and M6. (C) Synapses between R7 and Dm8 cells. (Ci): Left: Side view of R7 synapses (purple) to a fully reconstructed Dm8 cell, with one pale R7 cell is shown in purple. Note the characteristic vertical projections of Dm8 in its ‘home column’ (arrow; yellow R7 cell not shown). Right: Layer distribution of R7 inputs from 14 Dm8 cells innervating the four seed columns. (Cii) Full reconstructions of three Dm8 cells (labeled 1, 2, 3) innervating the four seed columns, with all R7 synapses (purple), including inputs beyond the seed columns. Individual Dm8 home columns (h) are marked. (Ci–ii) Scale bars: 10 μm. (Ciii) R7→Dm8 synapses/μm as a function of their distance from the home column, for the three Dm8 cells (1, 2, 3 above). The cells receive dense innervation in their home column and weaker inputs from both pale and yellow R7 cells in their periphery. (D) Synapses between R7 and Dm11 cells with R7 (purple) and R8 (green) synapses from seed columns. (Di) Top view of a reconstructed Dm11 skeleton. (Dii) Left: Side view of the layer distribution of photoreceptor synapses, including synapses outside the medulla (arrow). (Di–ii) Scale bars: 10 μm. Right: Layer distribution of R7 and R8 inputs to three Dm11 cells. (Diii) Rendering of a confocal image of MultiColor FlpOut (MCFO) labeled Dm11 cells. Note the characteristic vertical projections leaving the medulla neuropil (arrow). The dashed line marks the approximate boundary of the medulla neuropil. Scale bar: 20 μm. (E) Synapses between R7 and R8 and Dm2 cells. (Ei) Top view of a Dm2 skeleton, with R7 (purple) and R8 (green) synapses. (Eii) Left: Side view of layer distribution of photoreceptor synapses onto the same Dm2 cell. (Ei–ii) Scale bars: 10 μm. Right: Layer distribution of R7 and R8 inputs to four Dm2 cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Left: Side view of a reconstructed L1 cell (gray) with R8→L1 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to four L1 cells. (B) Left: Side view of a reconstructed L3 cell (gray), with R7→L3 (purple) and R8→L3 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to four L3 cells.( C) Left: Side view of a reconstructed C2 cell (gray), with R7→C2 (purple) and R8→C2 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to two C2 cells. (A–C) All scale bars: 10 μm.
+
+### Synapses between R7 and R8, and with lamina cell types
 
 The inner photoreceptors inhibit each other via histaminergic synapses, a key mechanism for converting their sensitivity to specific wavelengths into presynaptic color opponency (Schnaitmann et al., 2018). We annotated a large proportion of the synapses between R7 and R8 along the axons between the lamina and the medulla (Figure 2A, Figure 1—figure supplement 2G). For R8, ~80% of the synaptic input from R7 was found outside the medulla (mean 11.5 synapses per cell, range 9–17), and the R8 inputs to R7 in this region were as frequent (mean 10.3 synapses per cell, range 5–13). These results were not anticipated by prior EM reconstructions of individual neuropils, and our counts are substantial increases in the numbers of inter-photoreceptor synapses (Figure 1—figure supplement 2D; Takemura et al., 2015; Meinertzhagen and O’Neil, 1991).
 
 R7–8 pass through the lamina without forming synapses (Meinertzhagen and O’Neil, 1991), and instead form synapses with lamina cell types in the medulla (Takemura et al., 2008; Takemura et al., 2013). Our reconstructions revealed that 58% of R7–8 inputs to the lamina cells L1 and L3 were also located within the optic chiasm (Figure 1—figure supplement 1B, Figure 1—figure supplement 2G, Figure 2—figure supplement 1A, B).
 
-## R7–8 synapses with distal medulla cell types
+### R7–8 synapses with distal medulla cell types
 
 The distal medulla (Dm) neurons included the strongest targets of R7–8 (Table 2). Dm9 is glutamatergic and provides excitatory feedback to R7 and R8, regulating their gain and augmenting their color opponency (Davis et al., 2020; Uhlhorn and Wernet, 2020; Gao et al., 2008; Heath et al., 2020). It accounted for more than 90% o all the synaptic inputs to R7–8 that were not from photoreceptors (333/369 synapses, Table 3). Dm9 cells span multiple columns and tile the medulla (Nern et al., 2015; Takemura et al., 2015; Figure 2B). We reconstructed six Dm9 cells that were contacted by our seed column R7–8s, which received 16% of all R7–8 synapses, and provided 57% of the total seed column photoreceptor synaptic input (Table 2, Table 3). Of the six Dm9 cells, one cell occupied our seed columns and formed the bulk of the synapses between R7–8 and Dm9 in these columns. The other five cells received far fewer connections and only in medulla layers M1 and M6. The well-connected Dm9 cell that we fully reconstructed received 92 synapses per seed column (mean, range 78–102), and provided 70 synapses per seed column (mean, range 64–78) offering the most detailed picture of Dm9 connectivity yet (Supplementary file 1 – Dm9 outgoing). While its R7–8 inputs were biased toward R8 (31% R7 versus 69% R8), the output synapses were balanced (55% R7 versus 45% R8), and pale and yellow columns were equally contacted (outputs from R7 and R8: 54% pale versus 46% yellow; inputs from R7 and R8: 53% pale versus 47% yellow). In total, 8% of the synapses from R7–8 to Dm9 were outside the medulla (34/445 of all R7–8 synapses onto Dm9), on processes following the photoreceptor axons (Figure 2Bii, arrow).
+
+**Table 2.**
+ Synaptic targets of seed columns R7 and R8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>No.</th>
+      <th>pR7</th>
+      <th>yR7</th>
+      <th>pR8</th>
+      <th>yR8</th>
+      <th>Sum</th>
+      <th>%R7</th>
+      <th>%R8</th>
+      <th>%p</th>
+      <th>%y</th>
+      <th>%Total</th>
+      <th>%Total_R7</th>
+      <th>%Total_R8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dm9</td>
+      <td>6</td>
+      <td>94</td>
+      <td>66</td>
+      <td>142</td>
+      <td>143</td>
+      <td>445</td>
+      <td>36.0</td>
+      <td>64.0</td>
+      <td>53.0</td>
+      <td>47.0</td>
+      <td>16.4</td>
+      <td>13.5</td>
+      <td>18.8</td>
+    </tr>
+    <tr>
+      <td>Dm8</td>
+      <td>15</td>
+      <td>235</td>
+      <td>161</td>
+      <td>0</td>
+      <td>0</td>
+      <td>396</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>59.3</td>
+      <td>40.7</td>
+      <td>14.6</td>
+      <td>33.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>MeTu</td>
+      <td>7</td>
+      <td>82</td>
+      <td>93</td>
+      <td>0</td>
+      <td>0</td>
+      <td>175</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>46.9</td>
+      <td>53.1</td>
+      <td>6.5</td>
+      <td>14.7</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>R7</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>75</td>
+      <td>82</td>
+      <td>160</td>
+      <td>1.9</td>
+      <td>98.1</td>
+      <td>46.9</td>
+      <td>53.1</td>
+      <td>5.9</td>
+      <td>0.3</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>Tm5c</td>
+      <td>6</td>
+      <td>8</td>
+      <td>9</td>
+      <td>20</td>
+      <td>103</td>
+      <td>140</td>
+      <td>12.1</td>
+      <td>87.9</td>
+      <td>20.0</td>
+      <td>80.0</td>
+      <td>5.2</td>
+      <td>1.4</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>Tm20</td>
+      <td>4</td>
+      <td>5</td>
+      <td>3</td>
+      <td>67</td>
+      <td>65</td>
+      <td>140</td>
+      <td>5.7</td>
+      <td>94.3</td>
+      <td>51.4</td>
+      <td>48.6</td>
+      <td>5.2</td>
+      <td>0.7</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>Mi15</td>
+      <td>4</td>
+      <td>6</td>
+      <td>7</td>
+      <td>38</td>
+      <td>81</td>
+      <td>132</td>
+      <td>9.8</td>
+      <td>90.2</td>
+      <td>33.3</td>
+      <td>66.7</td>
+      <td>4.9</td>
+      <td>1.1</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>Mi4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58</td>
+      <td>58</td>
+      <td>116</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>4.3</td>
+      <td>0.0</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>ML1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>58</td>
+      <td>41</td>
+      <td>99</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>58.6</td>
+      <td>41.4</td>
+      <td>3.7</td>
+      <td>0.0</td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td>Dm2</td>
+      <td>4</td>
+      <td>18</td>
+      <td>3</td>
+      <td>60</td>
+      <td>15</td>
+      <td>96</td>
+      <td>21.9</td>
+      <td>78.1</td>
+      <td>81.2</td>
+      <td>18.8</td>
+      <td>3.5</td>
+      <td>1.8</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <td>Dm11</td>
+      <td>2</td>
+      <td>28</td>
+      <td>27</td>
+      <td>4</td>
+      <td>4</td>
+      <td>63</td>
+      <td>87.3</td>
+      <td>12.7</td>
+      <td>50.8</td>
+      <td>49.2</td>
+      <td>2.3</td>
+      <td>4.6</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>4</td>
+      <td>19</td>
+      <td>17</td>
+      <td>12</td>
+      <td>13</td>
+      <td>61</td>
+      <td>59.0</td>
+      <td>41.0</td>
+      <td>50.8</td>
+      <td>49.2</td>
+      <td>2.3</td>
+      <td>3.0</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Mi1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31</td>
+      <td>28</td>
+      <td>59</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>52.5</td>
+      <td>47.5</td>
+      <td>2.2</td>
+      <td>0.0</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>4</td>
+      <td>31</td>
+      <td>26</td>
+      <td>1</td>
+      <td>0</td>
+      <td>58</td>
+      <td>98.3</td>
+      <td>1.7</td>
+      <td>55.2</td>
+      <td>44.8</td>
+      <td>2.1</td>
+      <td>4.8</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Tm5a</td>
+      <td>2</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0</td>
+      <td>0</td>
+      <td>53</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>2.0</td>
+      <td>4.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Tm5b</td>
+      <td>2</td>
+      <td>39</td>
+      <td>0</td>
+      <td>3</td>
+      <td>6</td>
+      <td>48</td>
+      <td>81.2</td>
+      <td>18.8</td>
+      <td>87.5</td>
+      <td>12.5</td>
+      <td>1.8</td>
+      <td>3.3</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Tm</td>
+      <td>9</td>
+      <td>17</td>
+      <td>4</td>
+      <td>7</td>
+      <td>16</td>
+      <td>44</td>
+      <td>47.7</td>
+      <td>52.3</td>
+      <td>54.5</td>
+      <td>45.5</td>
+      <td>1.6</td>
+      <td>1.8</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Tm5b-like</td>
+      <td>3</td>
+      <td>0</td>
+      <td>14</td>
+      <td>0</td>
+      <td>27</td>
+      <td>41</td>
+      <td>34.1</td>
+      <td>65.9</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>1.5</td>
+      <td>1.2</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Mi9</td>
+      <td>4</td>
+      <td>3</td>
+      <td>9</td>
+      <td>26</td>
+      <td>1</td>
+      <td>39</td>
+      <td>30.8</td>
+      <td>69.2</td>
+      <td>74.4</td>
+      <td>25.6</td>
+      <td>1.4</td>
+      <td>1.0</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>L1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>21</td>
+      <td>14</td>
+      <td>38</td>
+      <td>7.9</td>
+      <td>92.1</td>
+      <td>60.5</td>
+      <td>39.5</td>
+      <td>1.4</td>
+      <td>0.3</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>aMe12</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>26</td>
+      <td>0</td>
+      <td>30</td>
+      <td>13.3</td>
+      <td>86.7</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>0.3</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Dm</td>
+      <td>5</td>
+      <td>11</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>29</td>
+      <td>62.1</td>
+      <td>37.9</td>
+      <td>58.6</td>
+      <td>41.4</td>
+      <td>1.1</td>
+      <td>1.5</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>ML_VPN1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>26</td>
+      <td>1</td>
+      <td>27</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>96.3</td>
+      <td>3.7</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>2</td>
+      <td>7</td>
+      <td>13</td>
+      <td>6</td>
+      <td>0</td>
+      <td>26</td>
+      <td>76.9</td>
+      <td>23.1</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>1.0</td>
+      <td>1.7</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Mt_VPN</td>
+      <td>4</td>
+      <td>0</td>
+      <td>12</td>
+      <td>3</td>
+      <td>8</td>
+      <td>23</td>
+      <td>52.2</td>
+      <td>47.8</td>
+      <td>13.0</td>
+      <td>87.0</td>
+      <td>0.8</td>
+      <td>1.0</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Mti</td>
+      <td>3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>10</td>
+      <td>7</td>
+      <td>19</td>
+      <td>10.5</td>
+      <td>89.5</td>
+      <td>63.2</td>
+      <td>36.8</td>
+      <td>0.7</td>
+      <td>0.2</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Tm5a-like</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>16</td>
+      <td>17</td>
+      <td>5.9</td>
+      <td>94.1</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.6</td>
+      <td>0.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>TmY10</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>7</td>
+      <td>14.3</td>
+      <td>85.7</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>0.1</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Mi10</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Mi</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>66.7</td>
+      <td>33.3</td>
+      <td>0.1</td>
+      <td>0.3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.1</td>
+      <td>0.0</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Identified_ &lt; 3</td>
+      <td>26</td>
+      <td>5</td>
+      <td>14</td>
+      <td>14</td>
+      <td>4</td>
+      <td>37</td>
+      <td>51.4</td>
+      <td>48.6</td>
+      <td>51.4</td>
+      <td>48.6</td>
+      <td>1.4</td>
+      <td>1.6</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ ≥ 3</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>3</td>
+      <td>8</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>62.5</td>
+      <td>37.5</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ &lt; 3</td>
+      <td>62</td>
+      <td>9</td>
+      <td>15</td>
+      <td>22</td>
+      <td>24</td>
+      <td>70</td>
+      <td>34.3</td>
+      <td>65.7</td>
+      <td>44.3</td>
+      <td>55.7</td>
+      <td>2.6</td>
+      <td>2.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>211</td>
+      <td>628</td>
+      <td>559</td>
+      <td>747</td>
+      <td>773</td>
+      <td>2,707</td>
+      <td>43.8</td>
+      <td>56.2</td>
+      <td>50.8</td>
+      <td>49.2</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Cells that synapse onto seed columns R7 and R8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>No.</th>
+      <th>pR7</th>
+      <th>yR7</th>
+      <th>pR8</th>
+      <th>yR8</th>
+      <th>Sum</th>
+      <th>%R7</th>
+      <th>%R8</th>
+      <th>%p</th>
+      <th>%y</th>
+      <th>%Total</th>
+      <th>%Total_R7</th>
+      <th>%Total_R8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dm9</td>
+      <td>6</td>
+      <td>90</td>
+      <td>92</td>
+      <td>79</td>
+      <td>72</td>
+      <td>333</td>
+      <td>54.7</td>
+      <td>45.3</td>
+      <td>50.8</td>
+      <td>49.2</td>
+      <td>57.0</td>
+      <td>51.3</td>
+      <td>65.9</td>
+    </tr>
+    <tr>
+      <td>R8</td>
+      <td>4</td>
+      <td>75</td>
+      <td>82</td>
+      <td>1</td>
+      <td>0</td>
+      <td>158</td>
+      <td>99.4</td>
+      <td>0.6</td>
+      <td>48.1</td>
+      <td>51.9</td>
+      <td>27.1</td>
+      <td>44.2</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>R7</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31</td>
+      <td>26</td>
+      <td>57</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>54.4</td>
+      <td>45.6</td>
+      <td>9.8</td>
+      <td>0.0</td>
+      <td>24.9</td>
+    </tr>
+    <tr>
+      <td>Mt_VPN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>3</td>
+      <td>5</td>
+      <td>40.0</td>
+      <td>60.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.9</td>
+      <td>0.6</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>40.0</td>
+      <td>60.0</td>
+      <td>0.9</td>
+      <td>1.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Identified_ &lt; 3</td>
+      <td>11</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>8</td>
+      <td>18</td>
+      <td>33.3</td>
+      <td>66.7</td>
+      <td>44.4</td>
+      <td>55.6</td>
+      <td>3.1</td>
+      <td>1.7</td>
+      <td>5.2</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ ≥ 3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ &lt; 3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>75.0</td>
+      <td>25.0</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>0.7</td>
+      <td>0.8</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>32</td>
+      <td>172</td>
+      <td>183</td>
+      <td>120</td>
+      <td>109</td>
+      <td>584</td>
+      <td>60.8</td>
+      <td>39.2</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
 
 The most strongly connected R7 target cell type was Dm8, a central component of Drosophila’s circuitry mediating color vision and wavelength-specific phototaxis (Gao et al., 2008; Melnattur et al., 2014; Pagni et al., 2021). Individual Dm8 cells cover multiple columns in medulla layer M6 (Gao et al., 2008; Nern et al., 2015; Luo et al., 2020), and extend processes vertically, with one characteristic process usually reaching higher than the others, up to layer M3, defining a so-called ‘home’ column (Figure 2Ci, arrow). In our reconstructions, we analyzed the connectivity of each Dm8 cell with the surrounding pale and yellow R7 photoreceptors in relation to its home column.
 
@@ -79,17 +1086,37 @@ Two additional Dm cell types, Dm11 and Dm2, were prominent inner photoreceptor t
 
 Dm2 is a columnar cell type that spans one to two columns and has processes that reach from layer M6 up to layer M3 to receive synaptic input from R8 cells (Figure 2Ei, Eii; Takemura et al., 2013; Nern et al., 2015). We reconstructed four Dm2s that received 77% of their seed column photoreceptor input from R8 (Figure 2Eii) and 81% from pale cells. Three of the Dm2 cells were centered on seed columns, with two in the pale seed columns receiving 36 and 35 synapses, and the cell in a yellow seed column receiving 18; the fourth cell was centered on a neighboring yellow column and innervated one of the pale seed columns (Supplementary file 2 – Dm2). In the columns of the medulla-7-column connectome that have been identified as pale and yellow (Menon et al., 2019; see Materials and methods), Dm2 was also R8-selective (70% of photoreceptor input from R8; Takemura et al., 2015; Clements et al., 2020). The cell was missing from one of the pale columns in that data set (Takemura et al., 2015), but in the columns where it was present, the cells received ~50% more synapses per column in the pale columns (18 mean, range 16–20 in pale columns, versus 12, mean, range 10–15 in yellow columns).
 
-## R7–8 synapses with medulla intrinsic and medulla tangential intrinsic cell types
+### R7–8 synapses with medulla intrinsic and medulla tangential intrinsic cell types
 
 The medulla intrinsic (Mi) cells connect the distal with the proximal medulla (Fischbach and Dittrich, 1989). These two medulla zones are separated by the serpentine layer M7, containing the processes of large medulla tangential cells, including those intrinsic to the medulla which we refer to as medulla tangential intrinsic (Mti) cells. There were three Mti cells contacted by our seed column R7–8, and we matched these cells to light microscopy images of two separate, previously undescribed cell types using the locations of cell bodies, sizes of arbors and layer expression (Figure 3; Figure 3A and B). Both cell types received a modest number of synapses from our seed column R7–8 (Mti1: 7 synapses; Mti2: 10 and 2 synapses, respectively; Supplementary file 1 – Mti outgoing), yet were likely to be substantial targets overall since their processes covered large sections of the medulla (Figure 3A and B). The first cell type, which we refer to as Mti1, had a cell body located distally to the medulla, in the cell body layer, similar to most medulla neurons. Its processes were asymmetrically oriented mainly along the dorsoventral axis, with dendrites that occupied layers M3–M6, and axonal processes oriented dorsoventrally that spread laterally in layers M7–M8 (Figure 3A). The second cell type, here named Mti2 (Figure 3B), had cell bodies located at the anterior ventral edge of the medulla, adjacent to where its processes entered and coursed through layer M7 going on to make elaborations in layer 6 and small, further vertical processes that reach vertically up to layers M3 and M4 (Figure 3Biii and 3Bvi, arrows). In our EM reconstructions, two cells shared these properties and overlapped around our seed columns (Figure 3Bv). From light microscopy, we estimate there are ~50 Mti2 cells. However, we note that the driver line used for this estimate may include related but distinct cell types with a similar cell body location or might not label all Mti2 cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig3-v3.jpg)
+
+**Figure 3.:** (A) Synapses of central R7 and R8 with Mti1 cells. (Ai) Top view of an Mti1 skeleton with synapses from seed column R8 cells (green). Scale bar: 10 μm. (Aii) Top view of an MCFO-labeled cell matching overall Mti1 morphology. Light microscopy images (Aii, Aiv, Bii, Biv, Ciii) were manually segmented to focus on the cells of interest. Scale bar: 20 μm. (Aiii) Side view of the same Mti1 cell as in Ai with R8 (green) synapses. Scale bar: 10 μm. (Aiv) Side view rendering of the same light microscopy Mti1 image (green). Scale bar: 20 μm. (B) Synapses from R7 and R8 to Mti2. (Bi) Top view of a reconstructed Mti2 cell, with R7 (purple) and R8 (green) synapses. Scale bar: 10 μm. (Bii) Top view of an MCFO-labeled cell matching overall Mti2 morphology. Scale bar: 20 μm. (Biii) Side view of the same Mti2 skeleton as in Bi with R7 (purple) and R8 (green) synapses on characteristic vertical projections (arrow). Scale bar: 10 μm. (Biv) Side view of the cell shown in Bii. Arrow indicates vertical projections. Scale bar: 20 μm. (Bv) Top view of a second reconstructed Mti2 cell (dark gray) overlayed on the first (light gray), with R8 (green) synapses. Bvi: Side view of the second Mti2 skeleton, with R8 (green) synapses again located on vertical projections (arrow). (Bv–vi) Scale bars: 10 μm. (C) Synapses of R7 and R8 with Mi15 cells. (Ci) Top view of a fully reconstructed Mi15 skeleton, with R7 (purple) and R8 (green) synapses. (Cii) Left: Side view depicting the layer distribution of photoreceptor synapses (same color code) onto the same Mi15 skeleton, with synapses outside the medulla (arrow). (Ci–ii) Scale bars: 10 μm. Right: Layer distribution of R7 and R8 inputs to four Mi15 cells. (Ciii) Side view rendering of a light microscopy image (MCFO) of an Mi15 cell. Note the long process leaving the medulla (arrow). Scale bar: 10 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Colocalization of R8→Mi15 synapses with R8→R7 synapses. (Ai) Example electron microscopy (EM) image of Mi15 and R7 cells as postsynaptic partners of the same R8 presynapse. Scale bar: 1 μm. (Aii) Magnified view of skeletons of R8, Mi15, and R7 cells in the optic chiasm, illustrating the colocalization of R8→Mi15 synapses with R8→R7 synapses at five successive locations. Scale bar: 1 μm.(B) Left: Side view of a reconstructed Mi1 cell (gray) with R7→Mi1 (purple) and R8→Mi1 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to four Mi1 cells.(C) Left: Side view of a reconstructed Mi4 cell (gray) with R7→Mi4 (purple) and R8→Mi4 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to four Mi4 cells.(D ) Left: Side view of a reconstructed Mi9 cell (gray) with R7→Mi9 (purple) and R8→Mi9 synapses (green). Right: Layer distribution (in synapses/μm) of all R7 and R8 inputs to four Mi9 cells. In the pale seed columns, Mi9 cells received many R8 synapses, but only received one R8 synapse in the yellow seed columns.( B–D) Scale bars: 10 μm.
 
 Mi15 is the only local dopaminergic medulla cell type identified in Drosophila so far (Meissner et al., 2019; Davis et al., 2020). Its morphology and connectivity in the medulla have been described previously (Takemura et al., 2013; Takemura et al., 2015), and it has a long process that extends into the optic chiasm and tracks photoreceptor axons. Our reconstructions revealed that this process was a locus of photoreceptor input (Figure 3Cii, black arrow), and that Mi15 cells were R8-selective, with 91% of their seed column photoreceptor input drawn from R8. The Mi15 cells received 47% of their seed column photoreceptor input outside the medulla (mean of 15/32 synapses per column; Figure 1—figure supplement 2G), and R8s characteristically formed synapses with Mi15 cells at locations where they also made synapses with R7 (Figure 3—figure supplement 1A).
 
 The columnar cell types Mi1, Mi4, and Mi9 are integral components of the ON-motion pathway (Strother et al., 2017); prior EM reconstructions have found they receive significant input from R7 and R8, a result confirmed by our data (Takemura et al., 2013; Takemura et al., 2015; Figure 3—figure supplement 1B-D). In the identified pale and yellow columns of the medulla-7-column connectome, Mi9 was selective for R8 (65% R8 versus 35% R7 input), and 53% of its photoreceptor input originated from pale R8 (Takemura et al., 2015). Our data reinforced the observation that Mi9 show a bias for R8 input: 68% of our reconstructed Mi9 input originated from pale seed column R8; the cells in pale columns received 15 and 14 R7–8 synapses, while those in yellow columns received 6 and 4 (Figure 3—figure supplement 1D).
 
-## R7–8 synapses with cell types projecting to the lobula
+### R7–8 synapses with cell types projecting to the lobula
 
 The lobula receives diverse inputs from the medulla, including from cell types required for wavelength-specific phototaxis and learned color discrimination (Gao et al., 2008; Karuppudurai et al., 2014; Melnattur et al., 2014; Otsuna et al., 2014). Many of these cell types express the histamine receptor ort, notably the transmedulla (Tm) cell types Tm5a, Tm5b, Tm5c, and Tm20 (Gao et al., 2008), indicating they receive direct input from the histaminergic R7 or R8 (Pantazis et al., 2008). We found all of these Tm cell types and they were highly connected with the seed column R7–8, with a mean of 35 seed column photoreceptor inputs per cell for Tm20, 27 for Tm5a, 23 for Tm5c, and 24 for Tm5b (Figure 4, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig4-v3.jpg)
+
+**Figure 4.:** (A–D) Synapses between R7 and R8 and Tm5a (A), Tm5b (B), Tm5c, (C) and ML1 (D) cell types. R7 synapses are indicated in purple, R8 synapses in green. Scale bars: 10 µm. Panels i–iii: Anatomy of fully reconstructed cells. (i) Side view. (ii) Top view. (iii) Side view of axon terminals in the lobula. (iv) Left: Side view of medulla branches. Right: Layer distribution of R7 and R8 inputs. (A) Tm5a. Two Tm5a cells were exclusively targeted by yellow R7 cells.( B) Tm5b. The two Tm5b cells were highly biased to pale R7 inputs. (C) Tm5c. The five Tm5c cells were highly biased to yellow R8 inputs. (D) ML1. Scale bars: 20 µm. (Dv) Side view of a single MCFO-labeled ML1 cell (light microscopy). Note this cell has terminals both at the base of the deepest lobula layer and in the central brain; not all examined ML1 cells have terminals in the central brain. (Dvi) Side view showing the distribution of a membrane marker (green) and presynaptic marker (synaptotagmin-HA, purple) in ML1 cells imaged as a population. The combined patterns (left) and the presynaptic marker alone (right) are shown. Arrow indicates central brain terminals.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Synapses between R7 and R8 and Tm5a-like (A), Tm5b-like (B), and Tm20 (C) cell types. R7 synapses are indicated in purple, R8 synapses in green. Scale bars: 10 µm. Panels i–iii: Anatomy of fully reconstructed cells. (i) Side view. (ii) Top view. (iii) Side view of axon terminals in the lobula. (iv) Left: Side view of medulla branches. Right: Layer distribution of R7 and R8 inputs. (A) R7 and R8 connections with the Tm5a-like cell, which has a morphology similar to a Tm5a cell, but a different pattern of connectivity. The same reconstructed cell is shown in Ai–iii. (B) R7 and R8 connections with three Tm5b-like cells, that each have a morphology similar to a Tm5b cell, but a different, shared pattern of connectivity. The same reconstructed Tm5b-like cell is shown in Bi–iii. (C) R7 and R8 connections with Tm20 cells. The same reconstructed Tm20 cell is shown in Ci–iii.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Scale bars in (Ai,Aii) represent 20 µm. The other panels are shown at a similar scale. Images show views generated from image stacks (see Materials and methods). Images show a top view of the array of column in the lobula (top panels, lower part of each image) or the medulla (lower panels), respectively. (A) As a population, ML1 cells appear not to cover all visual columns in the lobula (Ai) but do cover the entire medulla (Aii). Note absence of the green ML1 membrane label near the dorsal and ventral margin of the lobula but not the medulla. (B,C) Lobula (Bi,Ci) and medulla (Bii,Cii) arbors of two groups of MCFO-labeled ML1 cells. The retinotopic array of ML1 cells in the medulla (Bii,Cii) is only partly reflected in the positions of their axon terminals (Bi,Ci) in or near the lobula. For example, cells near the medulla edge have terminals away from the margin of the lobula.
 
 The cholinergic Tm5a cell type was the first cell type described to show yellow versus pale selectivity, being preferentially innervated by yellow R7, as revealed by genetic methods and light microscopy (Karuppudurai et al., 2014). It was identified in the medulla-7-column connectome (Menon et al., 2019) and used for identifying putative yellow columns therein (see Materials and methods). Its medulla processes are centered on one yellow column, with a single main dendrite from which branches spread laterally reaching some of the neighboring columns in M3, M6, and M8, and an axon terminating in lobula layer 5B manifesting a characteristically hooked final reversal of direction (Gao et al., 2008; Figure 4A). In both our yellow seed columns there was a Tm5a cell, whose seed column photoreceptor input was exclusively from the R7 in the home column (Figure 4Aiv). Reassuringly, there were also no Tm5a cells centered on pale columns or innervated by pale photoreceptors. Thus, the Tm5a cells supported the designation of our seed columns as pale or yellow, which was based on the presence or absence of aMe12 vertical processes. One more cell that we refer to as a Tm5a-like had the morphological features of a Tm5a cell, and was selective for yellow seed column input, but from R8 (Figure 4—figure supplement 1A). There was no cell with a similar morphology or connectivity in the medulla-7-column connectome, as explored using NeuPrint (Clements et al., 2020). The cell received its R8 input on three different dendritic branches, indicating that they were unlikely to have resulted from a reconstruction error (Figure 4—figure supplement 1A iv). Overall, our results confirmed the selectivity of Tm5a cells for yellow columns and the reliability of finding R7-selective Tm5a cells in yellow columns.
 
@@ -101,9 +1128,21 @@ The Tm20 cell type is a known columnar target of R8 (Takemura et al., 2013; Take
 
 We found one more prominent cell type projecting to the lobula, which we refer to as the medulla-to-lobula cell type ML1 (Figure 4D). We completely reconstructed one cell and used light microscopy data to explore the anatomy of the population (Figure 4Dv-–vi), and we estimate that there are ~45 cells per optic lobe (counts of 44, 44, 45, and 47 from four optic lobes). These cells projected to the deepest layer of the lobula and also to the adjacent central brain, with cell bodies in the anterior medulla cell body rind (Figure 4Dv). They were morphologically similar to a putative ort-expressing cell identified by Gao et al., 2008; (see their Figure S6). ML1 dendrites covered ~20 medulla columns with overlap, and the population covered the medulla (Figure 4Dii,vi), ramifying from vertical processes in layers M1-4, and also in M8 (Figure 4Diii,v). Unlike the Tm cells, the ML1 axons exited the distal surface of the medulla and traveled anteriorly to enter and terminate in or near lobula layer 6 (Figure 4Diii, v, vi), providing an alternate pathway connecting the medulla to the lobula. Light microscopy suggests that a fraction of the cells also formed synapses in the central brain, in the posterior lateral protocerebrum (PLP) (Figure 4Dvi, arrow). The input to the lobula was non-columnar, and although it was not strictly retinotopically organized, it was spatially organized, with two axon bundles originating in the dorsal and ventral medulla terminated in two general locations, incompletely covering the lobula (Figure 4—figure supplement 2). Our seed columns contacted four ML1 cells, making an average of 25 synapses per ML1 cell. The cell was exclusively targeted by R8s from both pale and yellow columns (Figure 4Div).
 
-## Visual projection neurons connecting R7–8 with the central brain
+### Visual projection neurons connecting R7–8 with the central brain
 
 Nearly 10% of the synapses made by the central seed column R7–8 were with cells projecting directly to the central brain (Table 2). Of these, the strongest targets were the MeTu cells, which resemble Tm cells, but instead of sending axons to the lobula, projected to the AOTU via the anterior optic tract (Fischbach and Lyly-Hünerberg, 1983; Otsuna et al., 2014; Otsuna and Ito, 2006; Omoto et al., 2017; Timaeus et al., 2020; Tai et al., 2021; Figure 5A). Our reconstructions confirmed that MeTu cells were targets of R7 (Timaeus et al., 2020), and that their photoreceptor input was exclusively from R7 (Figure 5Aiv). In total MeTu cells received 15% of all the seed column R7 synapses (Table 2). We found seven such neurons and reconstructed the complete morphology of one. Their dendrites overlapped and covered ~20–30 columns (Figure 5Aii), while the axons all targeted the lateral tip of the AOTU (Timaeus et al., 2020; Omoto et al., 2017; Tai et al., 2021; Figure 5Ai).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig5-v3.jpg)
+
+**Figure 5.:** (A,B,E) Synapses between R7 and R8 and MeTu (A), ML-VPN1 (B), and Mt-VPN1 (E) cells. Panels i–iii: Anatomy of reconstructed cells. (i) Side view. (ii) Top view. (iii) Side view of medulla branches. R7 synapses are indicated in purple, R8 synapses in green in ii, iii. (iv) Layer distribution of R7 and R8 inputs. Scale bars: 10 µm. (A) The MeTu cell shown was fully reconstructed. (Ai) Inset shows a magnified view of axon projections to the anterior optic tubercle (AOTU). (Aiv) All seven MeTu cells were exclusively R7 targets. (B) The ML-VPN1 cell shown was fully reconstructed. (Bi) ML-VPN1 cells project to the PLP. (Biv) Both ML-VPN1 cells were pale R8 targets. (Ci–vi) Light microscopy of ML-VPN1 anatomy. (Ci,Cii) Side view (Ci) and top view (Cii) of the population of ML-VPN1 cells. (Ciii) Side view of a single MCFO-labeled ML-VPN1 cells. (Civ) Top view of multiple MCFO-labeled ML-VPN1 cells. (Cv) Overlay of arbors of a single cell ML-VPN1 cell with L2 terminals (gray) indicating medulla columns. Images in Ci–Cv show overlays of aligned confocal images with the standard brain used for registration (Ci–iv) or a second registered image showing L2 terminals (Cv). (Cvi) Confocal substack projection showing medulla columns at approximately the level of R8 terminals. ML-VPN1 (red) and photoreceptor axons (blue) are shown without (top) and with (bottom) labeling of yellow R8 axons (Rh6> green). Overlap between ML1 and photoreceptors is largely limited to pale columns (i.e. columns without the Rh6 marker). (Ci–vi) Scale bars: 20 µm. (D) Reconstructions of three aMe12 cells (orange, turquoise, purple) covering the entire medulla, with axons leaving via the accessory medulla and innervating the mushroom body calyces (CA) and the PLP and accessory medulla (AME) of both hemispheres. (Di) Frontal view. (Dii) Dorsal view. (E) Mt-VPN1 cells. (Eiv) Tracing of Mt-VPN1 photoreceptor synapses in 16 additional columns did not confirm yellow specificity found in the seed columns.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Side view of R7 and R8 photoreceptors (blue) and ML-VPN1 cells (red), without (Ai) and with (Aii) Rh5 expression (green), from confocal microscopy. (Ai) Four vertical processes that traverse layers 1–3 are labeled by arrows; in our electron microscopy (EM) reconstructions the photoreceptor synapses were largely located on such characteristic processes (Figure 5Biii). Most vertical processes that followed photoreceptors (long arrows, left) were in pale (Rh5-positive) columns; vertical processes that did not follow photoreceptors (short arrows, right) were frequently found in yellow (Rh5-negative) columns or could not be readily assigned to a column. (B) Projection through a few adjacent confocal slices showing ML-VPN1 and photoreceptor axons at approximately the level of R8 terminals, with color-coded image channels as in A, without (Bi) and with (Bii) pale R8 columns labeled by the Rh5 marker. Overlap between ML1 and R-cells is largely limited to pale columns. For example, out of 43 putative overlaps circled (Biii), only four did not overlap with pale R8 expression (Biv, yellow thick circles), indicating that 93% of putative innervated columns were pale in this image. (A–B) Scale bars: 20 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) R7 and R8 connections with a neuron matching the anatomy of a known octopaminergic cell type (OA-AL2i3, skid 14286406). The same reconstructed cell is shown in Ai–iii. (Ai) Side view, showing the projections to the flange (Fla), inferior posterior slope (IPS), and superior posterior slope (SPS). (Aii) Top view with R7 (purple) and R8 (green) synapses. (Aiii) Side view with R7 (purple) and R8 (green) synapses. The cell has processes leaving the medulla that track the photoreceptors, where it received synaptic input in our seed columns. Synapse totals: one yellow R7, three yellow R8. (B) R8 connections with the reconstructed Mt-VPN cell with skid 11453464. (Bi) Side view, showing the projection to the SPS. (Bii) Top view with R8 (green) synapses. (Biii) Side view with R8 (green) synapses. Synapse totals: 11 yellow R7. (C) R8 connections with the reconstructed Mt-VPN cell with skid 11469481l. (Ci) Side view, showing the projections to the lobula (Lob) and accessory medulla (aMe). (Cii) Top view with R8 (green) synapses. (Ciii) Side view with R8 (green) synapses. Synapse totals: five yellow R8. (D) R8 connections with the reconstructed Mt-VPN cell with skid 3509520, which is also a heterolateral lobula late tangential cell. (Di) Side view, showing the projections to the lobula plate (LP) and IPS in both hemispheres. (Dii) Top view with R8 (green) synapses. (Diii) Side view with R8 (green) synapses. Synapse totals: three pale R8. (A–D) Scale bars: 10 μm.
 
 The presence of MeTu cells was the largest discrepancy by synapse count between our list of R7 targets and those of the medulla-7-column connectome (Clements et al., 2020; Takemura et al., 2015; Figure 1—figure supplement 2E), which was focused on columnar cell types and did not identify MeTu cells. In the medulla-7-column connectome, we identified a partially reconstructed Tm cell (Figure 1—figure supplement 2F) and several cells annotated as Dm7 as potential matches to MeTu cells. We did not identify any Dm7 cells postsynaptic to R7 in our data. We confirmed details of the connectivity of our MeTu neurons that were found for the medulla-7-column connectome putative Dm7 neurons (including strong inputs from Dm2 and Mi15 neurons), and we propose that the partially reconstructed Tm cells and also Dm7 cells in the 7-column data set were most likely MeTu cells, resolving the largest (numerical) discrepancy between the data sets, and underscoring the benefit of reconstructing small circuits in whole-brain EM volumes.
 
@@ -113,13 +1152,559 @@ The aMe12 cells were also R8 targets, and the two contacted cells received 15 an
 
 There were five additional tangential cells projecting to the central brain (medulla tangential [Mt]-VPNs) targeted by seed column R7–8, collectively receiving 25 synapses (one neuron in Figure 5E, others in Figure 5—figure supplement 2). The most targeted cell, which we refer to as Mt-VPN1, had processes in layer M7, with branches reaching up into layers M5–M6, where it received inputs from both seed column yellow R7s, and projected an axon to the PLP (Figure 5E). Despite the exclusive seed connections with yellow R7, Mt-VPN1 was not specific for yellow R7: we traced Mt-VPN1 in 20 columns, in which it received input from 13 yellow R7, and 7 pale R7 cells. The remaining tangential cells included a match to an octopaminergic neuron (OA-AL2i3; Busch et al., 2009; Figure 5—figure supplement 2A). This cell had processes in the distal medulla in layers M1–M2 as well as processes reaching out into the chiasm which received photoreceptor input (Figure 5—figure supplement 2A ii-iii), and an axon that ipsilaterally innervated the inferior and superior posterior slope, and the flange (Figure 5—figure supplement 2A i). This cell was one of the rare cell types that formed synapses onto photoreceptors, making 5 synapses onto the R7-R8, but only in one yellow column (Supplementary file 1 – Mt-VPN). The remaining Mt-VPN cells were very lightly innervated by the seed column photoreceptors in multiple (Figure 5—figure supplement 2C ii) and single columns (Figure 5—figure supplement 2Bii, Dii), but may integrate large numbers of photoreceptor inputs as they covered many columns. Collectively they innervated the ipsilateral superior posterior slope, accessory medulla, and lobula, and in both hemispheres the inferior posterior slope and lobula plate (Figure 5—figure supplement 2B-D), revealing multiple pathways for transmitting direct photoreceptor signals into the central brain.
 
-## Synapses between R7-DRA and R8-DRA, and with medulla cell types
+### Synapses between R7-DRA and R8-DRA, and with medulla cell types
 
 The following four sections present the first EM connectomic data for targets of the polarization-sensitive photoreceptors in the DRA of Drosophila. We first describe the cell types targeted by photoreceptors in the DRA region that were also found in the central columns (Figure 6), followed by modality-specific Dm cell types connected exclusively to DRA inner photoreceptors (Figure 7), VPNs connecting the DRA region and central brain (Figure 8), and finally cell types only found in the DRA region (Figure 9).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig6-v3.jpg)
+
+**Figure 6.:** (A) Reciprocal synapses between R7-DRA and R8-DRA. Left: Side view of an R7- and R8-DRA cell with R7-DRA→R8-DRA (purple points) and R8-DRA→R7-DRA (green points). Right: Layer distribution of R7-DRA and R8-DRA reciprocal synapses in three columns. (B) Reciprocal synapses between Dm9 in the DRA region and R7-DRA and R8-DRA. (Bi) Left: Side view of a reconstructed Dm9 skeleton (gray) in the DRA region, with R7-DRA→Dm9 synapses (purple) and R8-DRA→Dm9 synapses (green). Right: Layer distribution of DRA photoreceptor inputs into Dm9. (Bii) Top view of Dm9 cell that connects to photoreceptors in both DRA (light red) and non-DRA columns (gray). (Biii) Left: Feedback synapses from Dm9 to R7-DRA (purple) and R8-DRA (green). Right: Layer distribution of Dm9 inputs into R7-DRA and R8-DRA. (Biv) DRA and non-DRA R7 (purple) and R8 (green) synapses to the same Dm9 cell. (C) Synapses between R7-DRA, R8-DRA, and Dm2. (Ci) Left: Side view of a Dm2 cell with synapses from R7-DRA (purple) and R8-DRA (green). Right: Layer distribution of R7-DRA and R8-DRA synapses onto four Dm2 cells. (Cii) Top view of Dm2 skeleton in the DRA region. (D) Synapses between R7-DRA, R8-DRA, and Mi15. (Di) Left: Side view of a reconstructed Mi15 cell with R7-DRA→Mi15 synapses (purple) and R8-DRA→Mi15 synapses (green). Right: Layer distribution of R7-DRA and R8-DRA synapses to four Mi15 cells. (Dii) Top view of Mi15 skeleton in the DRA region. (E) Synapses between R7-DRA, R8-DRA, and Tm20. (Ei) Left: Side view of a reconstructed Tm20 cell with R8-DRA→Tm20 synapses in green. Right: Layer distribution of R8-DRA input to three Tm20 cells. (Eii) Top view of Tm20 skeleton in the DRA region (all scale bars: 10 µm).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Total number of R7 synapses onto R8 for all full reconstructed cells in the central columns (4) and R7-DRA onto R8-DRA in the DRA columns (3). (B) Total number of R8 synapses onto R7 for all full reconstructed cells in the central columns (4) and R8-DRA onto R7-DRA in the DRA columns (3). (C) Fraction of photoreceptor-to-photoreceptor synapses of the total output of R7 and R8 in the central columns, and of R7-DRA and R8-DRA in the DRA columns. Individual counts in colored circles mean for each group in black circle.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Synapses between R7-DRA, R8-DRA, and L1. (Ai) Left: Side view of a reconstructed L1 skeleton (dark gray), together with R7-DRA (purple) and R8-DRA (green) from the same column plus R7-DRA→L1 synapses (purple) and R8-DRA→L1 synapses (green). Right: Synapse distribution (in synapses/μm) of all three reconstructed L1 cells from the three DRA seed columns across medulla layers. (Aii) Top view of the same L1 cell with R7-DRA→L1 synapses (purple) and R8-DRA→L1 synapses (green). (B) Synapses between R7-DRA, R8-DRA, and L3. (Bi) Left: Side view of a reconstructed L3 skeleton (dark gray), together with R7-DRA (purple) and R8-DRA (green) from the same column plus R7-DRA→L3 synapses (purple) and R8-DRA→L3 synapses (green). Right: Synapse distribution (in synapses/μm) of all three reconstructed L3 cells from the three DRA seed columns across medulla layers. (Bii) Top view of the same L3 cell with R7-DRA→L3 synapses (purple) and R8-DRA→L3 synapses (green). (C) Synapses between R7-DRA, R8-DRA, and Mi1. (Ci) Left: Side view of a reconstructed Mi1 skeleton (dark gray), together with R7-DRA (purple) and R8-DRA (green) from the same column plus R7-DRA→Mi1 synapses (purple) and R8-DRA→Mi1 synapses (green). Right: Synapse distribution (in synapses/μm) of all three reconstructed Mi1 cells from the three DRA seed columns across medulla layers. (Cii) Top view of the same Mi1 cell with R7-DRA→Mi1 synapses (purple) and R8-DRA→Mi1 synapses (green). (D) Synapses between R7-DRA, R8-DRA, and Dm11. (Di) Left: Side view of a reconstructed Dm11 skeleton (dark gray), together with R7-DRA (purple) and R8-DRA (green) plus R7-DRA→Dm11 synapses (purple) and R8-DRA→Dm11 synapses (green). Right: Synapse distribution (in synapses/μm) of one reconstructed Dm11 cell across medulla layers. Note that synapses between R7-DRA and R8-DRA→Dm11 were only found in one of the three DRA seed columns. (Dii) Top view of the same Dm11 cell with R7-DRA→Dm11 synapses (purple) and R8-DRA→Dm11 synapses (green). (E) Synapses between R8-DRA and Mi9. (Ei) Left: Side view of a reconstructed Mi9 skeleton (dark gray), together with R8-DRA (green) from the same column plus R8-DRA→Mi9 synapses (green). Right: Synapse distribution (in synapses/μm) of two reconstructed Mi9 cells across medulla layers. Note that only in two of the three DRA seed columns R8-DRA→Mi9 synapses were found. (Eii) Top view of the same Mi9 cell with R8-DRA→Mi9 synapses (green). (F) Synapses between R8-DRA and a Tm5-like cell. (Fi) Left: Side view of a reconstructed Tm5-like skeleton (dark gray), together with R8-DRA (green) plus R8-DRA→ Tm5-like synapses (green). Right: Synapse distribution (in synapses/μm) of one Tm5-like cell across medulla layers. Note that in only one of the three DRA seed columns was such a cell found. (Fii) Top view of the same Tm5-like cell with R8-DRA→Tm5-like synapses (green). (Fiii) Lobula innervation of the Tm5-like cell.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig7-v3.jpg)
+
+**Figure 7.:** (A) Synapses between photoreceptors and Dm-DRA1 cells. (Ai) Left: Side view of a reconstructed Dm-DRA1 (gray) innervated by R7-DRA (purple). Right: Distribution of R7-DRA synapses (purple) onto 20 Dm-DRA1 cells, plotted across medulla layers. (Aii) Top view of the same fully reconstructed Dm-DRA1 skeleton and R7-DRA inputs from the (polar) seed column. (Aiii) Top view of a light microscopic Dm-DRA1 single cell clone with processes leaving the DRA region. (B) R7-DRA inputs into Dm-DRA1 cells. (Bi–iii) Three skeletons of fully reconstructed Dm-DRA1 cells (gray) at different positions along the DRA (posterior, polar, and anterior) with all R7-DRA synapses (purple) originating from an average of 11 columns. (Biv) Distribution of R7-DRA synapses onto the three Dm-DRA1 cells from Bi–iii along the DRA region. (C) Synapses between photoreceptors and Dm-DRA2 cells. (Ci) Left: Side view of one reconstructed Dm-DRA2 skeleton (gray) innervated by R8-DRA (green). Right: Layer distribution of DRA photoreceptor synapses onto 9 Dm-DRA2 cells. (Cii) Top view of the same fully reconstructed Dm-DRA2 skeleton and photoreceptor inputs from the (polar) seed column. (Ciii) Side view of a light microscopic Dm-DRA2 single cell clone with vertical processes (arrows in Ci and Ciii indicate vertical projections). (D) Photoreceptor inputs to Dm-DRA2 cells. (Di–iii) Three skeletons of fully reconstructed Dm-DRA2 cells (gray) at different positions along the DRA (posterior, polar, and anterior) with all R8-DRA (green) synapses originating from an average of 11 columns. (Div) Distribution of R8-DRA (and few R7-DRA) synapses onto the three Dm-DRA2 cells from Di–iii along the DRA region. (E) Comparison of Dm-DRA1 and Dm-DRA2 connectivity. All reconstructed Dm-DRA1 skeletons connected to R7-DRA in the polar seed column (circled column, arrow). The saturation of blue color indicates strength of connectivity (from 3 to 15 synapses). (Eii) All Dm-DRA2 skeletons connected to R8-DRA in the polar seed column (circled column, arrow), blue color indicates the strength of connectivity (from 2 to 19 synapses). (Eiii) Side views of overlapping Dm-DRA1 and Dm-DRA2 cell skeletons with all R7-DRA and R8-DRA synapses (same cells as in Bii and Dii) (all scale bars: 10 µm).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Top view (Ai–Aiii) of three fully reconstructed Dm-DRA1 cells (same as in Figure 7B) with all non-DRA R7 inputs marked (purple dots), as well as distribution of synapses along the DRA region (Aiv). Note the strong inputs into the posterior Dm-DRA1 cell, originating from an R7 cell at the DRA/non-DRA boundary, with a putative ‘mixed’ fate (Ai). (B) Top view (Bi–Bii) of two fully reconstructed Dm-DRA2 cells (same as in Figure 7D) with all non-DRA R7 inputs marked (purple dots), as well as distribution of synapses along the DRA region (Biii). Note that no non-DRA R7 synapses were found for the posterior Dm-DRA2.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Top view (Ai–Aiii) of three fully traced Dm-DRA1 cells (same as in Figure 7B) with pale and yellow fates of all non-DRA columns indicated. Deep projections of Dm-DRA1 cells do not seem to show any obvious preference for pale or yellow columns (all scale bars: 10 µm).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (Ai) The lateral locations of the 42 DRA columns (pink circles) were used to fit an ellipse (black line) along the DRA, where the lateral x- and y-coordinates are points in a plane that is approximately parallel to the medulla layers, and this plane does not take into account the curvature of the medulla. At the dorsal pole, there are DRA columns in two rows, and the ellipse passes between these. (Aii) The alignment of R7 (purple) synapses to Dm-DRA1 cells and R8 (green) synapses to Dm-DRA2 vary along an axis that is approximately perpendicular to the ellipse, partly due to differences in the locations of the synapses, and partly an effect of the curvature of the medulla. For all the synapses, the projection onto the fitted DRA ellipse provides a good description of the location along the DRA region. (Aiii) Synapses from R7 (purple) to Dm-DRA1 cells shown with the Mi1 columns (pink circles) to appreciate their locations in the columns. The synapses are concentrated around layer 6, and this narrow depth profile generates tightly clustered synaptic locations in columns. (Aiv) Synapses from R8 (green) to Dm-DRA2 cells shown with the DRA columns (pink circles) to appreciate their locations in the columns. The synapses are spread between the chiasm and layer 6, and this diffuse depth profile contributes to the wide, linear clusters of synapses as the medulla curves away from the plane containing the fitted DRA ellipse.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig8-v3.jpg)
+
+**Figure 8.:** (A) Synapses of R7-DRA onto MeTu-DRA cells. (Ai) The complete skeleton of a fully reconstructed MeTu-DRA cell with an axon projecting to the anterior optic tubercle (AOTU). (Aii) Light microscopic single cell clone of an MeTu-DRA cell. (Aiii) Left: Side view of the same MeTu-DRA skeleton (gray) as in Ai innervated by R7-DRA (purple). Right: Layer distribution of R7-DRA synapses (purple) onto 30 MeTu-DRA cells. (Aiv) Top view of the MeTu-DRA skeleton depicting its medulla processes innervating both DRA (red circles) and non-DRA columns. (Avi) Light microscopic side view of an MeTu-DRA single cell clone (green) with exclusive contacts to DRA photoreceptor terminals (white arrowhead). (Avi) All MeTu-DRA skeletons connected to R7-DRA in the polar seed column (circled column, arrow). The saturation of blue color indicates the strength of connectivity (from 3 to 14 synapses). Inset: MeTu-DRA axon terminations in the AOTU in orange and reconstructed MeTu cells from the central columns in cyan. (B) Synapses between R7-DRA and VPN-DRA. (Bi) The entire skeleton of a reconstructed VPN-DRA cell with its axon projecting to the PLP. (Bii) Light microscopic image of a VPN-DRA single cell clone shown in green and neuropil reference in gray (Nc82). (Biii) Left: Side view of one VPN-DRA skeleton (gray) innervated by R7-DRA (purple). Right: Layer distribution of R7-DRA synapses onto fiveVPN-DRA cells. (Biv) Top view of medulla processes formed by one reconstructed VPN-DRA skeleton (gray) with all R7-DRA synapses from the seed column (purple). (Bv) Double labeling of several VPN-DRA cells (green) with R7 and R8 photoreceptors (purple, anti-Chaoptin). VPN-DRA processes overlap with DRA photoreceptors (white arrowhead) but also appear to show some contacts to non-DRA photoreceptors. (Bvi) Skeletons of all reconstructed VPN-DRA cells covering the dorsal medulla (all scale bars: 10 µm).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Top view of the fully traced MeTu-DRA cell (same as in Figure 7A) with pale and yellow fates of all non-DRA ommatidia indicated. Medulla processes of MeTu-DRA do not seem to show any obvious preference for pale or yellow columns. Scale bar: 10 µm. (B) Reconstructed skeleton (Bi) of an unusual VPN-DRA cell with additional processes in the central brain (putative VPN-DRA2). Light microscopic image of a cell with similar morphology (Bii).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig9-v3.jpg)
+
+**Figure 9.:** (A) Synapses from R7-DRA to bilaterally projecting MeMe-DRA neurons. (Ai) A reconstructed MeMe-DRA cell with projections to the dorsal periphery of the contralateral medulla. (Aii) Left: Side view of one MeMe-DRA skeleton (gray) innervated by R7-DRA (purple). Right: Layer distribution of R7-DRA synapses onto two MeMe-DRA cells. (Aiii) Top view of medulla processes of the MeMe-DRA skeleton (gray) with all R7-DRA synapses from the seed columns (purple). (Aiv) Light microscopic image of a MeMe-DRA single cell clone shown (in green) with processes to the contralateral medulla (neuropil reference in gray, Nc82). Inset: Medulla cross section showing branches of a MeMe-DRA cell. Note that the most dorsal arbors innervate the distal medulla (arrowhead). (Av) Two reconstructed MeMe-DRA skeletons, both with cell bodies on the left side (cyan and orange), connecting both medullas in a reciprocal manner, innervating opposite DRA regions along the anterior-posterior axis. (B) Synapses from R7-DRA onto Mti-DRA-1. (Bi) A reconstructed Mti-DRA-1 cell with processes covering the dorsal periphery of the medulla. (Bii) Left: Side view of one Mti-DRA-1 skeleton (gray) innervated by R7-DRA (purple). Right: Layer distribution of R7-DRA synapses onto six Mti-DRA-1 cells. (Biii) Top view of medulla processes of one reconstructed Mti-DRA-1 cell (gray) with all R7-DRA synapses from the (polar) seed column (purple). (Biv) Light microscopic image of a putative morphological single cell match of Mti-DRA-1 shown in green. (C) Synapses from R7-DRA onto Mti-DRA-2. (Ci) A reconstructed Mti-DRA-2 cell with processes covering dorsal parts of the medulla. (Cii) Left: Side view of one Mti-DRA-2 skeleton (gray) innervated by R7-DRA (purple). Right: Layer distribution of R7-DRA synapses onto four Mti-DRA-2 cells. (Ciii) Top view of medulla processes formed by one reconstructed Mti-DRA-2 cell (gray) with all R7-DRA synapses from the (polar) seed columns (purple). (Cv) Light microscopic image of a putative morphological single cell match of Mti-DRA-2 shown in green (all scale bars: 10 µm).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/71858/elife-71858-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** (A) All Mti-DRA-1 skeletons (6×) covering the dorsal medulla. (B) All Mti-DRA-2 skeletons (4×) covering the dorsal medulla. (C) Separation of putative Mti-DRA subtypes. One population with cell bodies located ventrally (putative cell type Mti-DRA-1, cyan, arrow), and several cells with dorsally located cell bodies (putative Mti-DRA-2, orange, arrow) (all scale bars: 10 µm).
+
 The anatomical arrangement of synapses between R7-DRA and R8-DRA strikingly resembled that of central R7 and R8. The number of R7-DRA synapses onto R8-DRA was similar (13.7 mean, range 10–16), accounting for 4.9% (41/837) of the total R7-DRA output (Figure 6—figure supplement 1A, Table 4), and the number of R8-DRA synapses onto R7-DRA was also similar (36.0 mean, range 33–38; Figure 6—figure supplement 1B, Table 4). Many of the synapses between the inner photoreceptors were also located outside the medulla (15% of R8-DRA synapses to R7-DRA, 16/108, mean 5.3 synapses per cell, range 3–8; and 48% of R7-DRA synapses to R8-DRA, 19/41, mean 6.3 synapses per cell, range 4–8; Figure 6Ai, arrow, Supplementary file 3).
 
+**Table 4.**
+ Synaptic targets of seed column R7-dorsal rim area (DRA) and R8-DRA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>No.</th>
+      <th>DRAR7</th>
+      <th>DRAR8</th>
+      <th>Sum</th>
+      <th>%R7</th>
+      <th>%R8</th>
+      <th>%Total</th>
+      <th>%Total_R7</th>
+      <th>%Total_R8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dm-DRA1</td>
+      <td>20</td>
+      <td>212</td>
+      <td>0</td>
+      <td>212</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>15.9</td>
+      <td>25.3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Dm9</td>
+      <td>6</td>
+      <td>95</td>
+      <td>115</td>
+      <td>210</td>
+      <td>45.2</td>
+      <td>54.8</td>
+      <td>15.7</td>
+      <td>11.3</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <td>MeTu_DRA</td>
+      <td>29</td>
+      <td>181</td>
+      <td>0</td>
+      <td>181</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>13.5</td>
+      <td>21.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>R7_DRA</td>
+      <td>3</td>
+      <td>1</td>
+      <td>108</td>
+      <td>109</td>
+      <td>0.9</td>
+      <td>99.1</td>
+      <td>8.2</td>
+      <td>0.1</td>
+      <td>21.6</td>
+    </tr>
+    <tr>
+      <td>Dm-DRA2</td>
+      <td>9</td>
+      <td>3</td>
+      <td>103</td>
+      <td>106</td>
+      <td>2.8</td>
+      <td>97.2</td>
+      <td>7.9</td>
+      <td>0.4</td>
+      <td>20.6</td>
+    </tr>
+    <tr>
+      <td>Dm2</td>
+      <td>4</td>
+      <td>21</td>
+      <td>27</td>
+      <td>48</td>
+      <td>43.8</td>
+      <td>56.2</td>
+      <td>3.6</td>
+      <td>2.5</td>
+      <td>5.4</td>
+    </tr>
+    <tr>
+      <td>R8_DRA</td>
+      <td>3</td>
+      <td>41</td>
+      <td>1</td>
+      <td>42</td>
+      <td>97.6</td>
+      <td>2.4</td>
+      <td>3.1</td>
+      <td>4.9</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Mi15</td>
+      <td>4</td>
+      <td>21</td>
+      <td>18</td>
+      <td>39</td>
+      <td>53.8</td>
+      <td>46.2</td>
+      <td>2.9</td>
+      <td>2.5</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Mti_DRA_1</td>
+      <td>6</td>
+      <td>37</td>
+      <td>0</td>
+      <td>37</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>2.8</td>
+      <td>4.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>MeMe_DRA</td>
+      <td>2</td>
+      <td>36</td>
+      <td>0</td>
+      <td>36</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>2.7</td>
+      <td>4.3</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>3</td>
+      <td>16</td>
+      <td>16</td>
+      <td>32</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>2.4</td>
+      <td>1.9</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>VPN_DRA</td>
+      <td>6</td>
+      <td>30</td>
+      <td>0</td>
+      <td>30</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>2.2</td>
+      <td>3.6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>L1</td>
+      <td>3</td>
+      <td>9</td>
+      <td>9</td>
+      <td>18</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>1.3</td>
+      <td>1.1</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Tm20</td>
+      <td>3</td>
+      <td>0</td>
+      <td>16</td>
+      <td>16</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>1.2</td>
+      <td>0.0</td>
+      <td>3.2</td>
+    </tr>
+    <tr>
+      <td>Mti_DRA_2</td>
+      <td>4</td>
+      <td>15</td>
+      <td>0</td>
+      <td>15</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>1.1</td>
+      <td>1.8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Mi1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>9</td>
+      <td>15</td>
+      <td>40.0</td>
+      <td>60.0</td>
+      <td>1.1</td>
+      <td>0.7</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>Tm5-like</td>
+      <td>1</td>
+      <td>0</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Mi9</td>
+      <td>2</td>
+      <td>0</td>
+      <td>12</td>
+      <td>12</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.9</td>
+      <td>0.0</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>MeTu</td>
+      <td>2</td>
+      <td>12</td>
+      <td>0</td>
+      <td>12</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.9</td>
+      <td>1.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Dm11</td>
+      <td>1</td>
+      <td>4</td>
+      <td>8</td>
+      <td>12</td>
+      <td>33.3</td>
+      <td>66.7</td>
+      <td>0.9</td>
+      <td>0.5</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>MeTu_unknown</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.3</td>
+      <td>0.5</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>aMe12</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>75.0</td>
+      <td>25.0</td>
+      <td>0.3</td>
+      <td>0.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>TmY</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>0.2</td>
+      <td>0.0</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>ML_VPN2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>66.7</td>
+      <td>33.3</td>
+      <td>0.2</td>
+      <td>0.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Identified_ &lt; 3</td>
+      <td>33</td>
+      <td>34</td>
+      <td>14</td>
+      <td>48</td>
+      <td>70.8</td>
+      <td>29.2</td>
+      <td>3.6</td>
+      <td>4.1</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ ≥ 3</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>10</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>0.7</td>
+      <td>0.6</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ &lt; 3</td>
+      <td>57</td>
+      <td>46</td>
+      <td>21</td>
+      <td>67</td>
+      <td>68.7</td>
+      <td>31.3</td>
+      <td>5.0</td>
+      <td>5.5</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>211</td>
+      <td>837</td>
+      <td>499</td>
+      <td>1,336</td>
+      <td>62.6</td>
+      <td>37.4</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+
 The Dm9 cells in the DRA region were prominent synaptic targets of both inner photoreceptors, and provided strong synaptic feedback onto them (Figure 6B, Table 4, Table 5). They received 31.7 R7-DRA synapses per column (mean, range 26–38), corresponding to 11.3% (95/837) of the total R7-DRA output (Table 4), and R8-DRA was more strongly connected with 38.3 synapses (mean, range 36–43), corresponding to 23% (115/499) of the total R8-DRA output. Although the total number of inner photoreceptor inputs to Dm9 per seed column was fewer in the DRA region compared to central seed columns (70 mean, range 62–81), their relative strength was similar to central columns (Supplementary file 1). The distribution of R8 and R8-DRA synapses onto Dm9 was also different, with the greatest density of R8-DRA synapses in layer M6, reflecting the characteristic morphology of R8-DRA (Figure 6Bi). Our prior light microscopic study suggested that marginal Dm9 cells might receive both DRA and non-DRA inputs (Sancer et al., 2020). We therefore reconstructed R7 and R8 in three non-DRA columns innervating the same DRA Dm9, and found that cell indeed received input from both color and polarized light-sensitive photoreceptors (Figure 6Biv).
+
+**Table 5.**
+ Cells that synapse onto seed column R7-dorsal rim area (DRA) and R8-DRA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>No.</th>
+      <th>DRAR7</th>
+      <th>DRAR8</th>
+      <th>Sum</th>
+      <th>%R7</th>
+      <th>%R8</th>
+      <th>%Total</th>
+      <th>%Total_R7</th>
+      <th>%Total_R8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dm9</td>
+      <td>4</td>
+      <td>105</td>
+      <td>106</td>
+      <td>211</td>
+      <td>49.8</td>
+      <td>50.2</td>
+      <td>54.7</td>
+      <td>46.1</td>
+      <td>67.1</td>
+    </tr>
+    <tr>
+      <td>R8_DRA</td>
+      <td>3</td>
+      <td>108</td>
+      <td>1</td>
+      <td>109</td>
+      <td>99.1</td>
+      <td>0.9</td>
+      <td>28.2</td>
+      <td>47.4</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>R7_DRA</td>
+      <td>3</td>
+      <td>1</td>
+      <td>41</td>
+      <td>42</td>
+      <td>2.4</td>
+      <td>97.6</td>
+      <td>10.9</td>
+      <td>0.4</td>
+      <td>25.9</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>2.1</td>
+      <td>1.8</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>Mi15</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>50.0</td>
+      <td>50.0</td>
+      <td>1.0</td>
+      <td>0.9</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Identified_ &lt; 3</td>
+      <td>9</td>
+      <td>6</td>
+      <td>3</td>
+      <td>9</td>
+      <td>66.7</td>
+      <td>33.3</td>
+      <td>2.3</td>
+      <td>2.6</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ ≥ 3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Unidentified_ &lt; 3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>66.7</td>
+      <td>33.3</td>
+      <td>0.8</td>
+      <td>0.9</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>24</td>
+      <td>228</td>
+      <td>158</td>
+      <td>386</td>
+      <td>59.1</td>
+      <td>40.9</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
 
 Dm2 was an R8 target in the central columns, but in the DRA region there were drastically fewer R8-DRA inputs, with equal contacts from R7-DRA and R8-DRA (7.0 mean, range 5–10 for R7-DRA, 9.0 mean, range 5–15 for R8-DRA synapses per column; Figure 6Ci–ii, Table 4; Sancer et al., 2020). The Dm11 cell type was an R7 target in central columns, but in the DRA region it received minor, balanced input from both R7-DRA and R8-DRA and was only found in one of the three DRA seed columns (four from R7-DRA and eight from R8-DRA; Figure 6—figure supplement 2D, Table 4). Thus, while a reduction in R8-DRA input to cells targeted by R8 in the central columns was a repeated feature of the DRA region, as exemplified by Dm2, it was also seen in cells targeted by R7, such as Dm11.
 
@@ -127,7 +1712,7 @@ The connectivity of inner photoreceptors with lamina cells was maintained in the
 
 Only one Tm cell type, Tm20, was connected to inner photoreceptors with more than two synapses throughout all three DRA seed columns. This cell type was selective for R8-DRA, but was much more weakly connected (5.3 mean, range 4–8 for R8-DRA; Table 4, Supplementary file 1) than it was to R8 in the central columns. There was only one other strongly connected Tm cell, which we refer to as Tm5-like, that had 12 synaptic inputs from both R7-DRA and R8-DRA inputs in one of the three DRA columns (Figure 6—figure supplement 2F). Together, these four cells highlight the absence of projections to the lobula, as compared to the central columns with 27 identified Tm cells (Table 2).
 
-## Dm8-like photoreceptor targets in the DRA region
+### Dm8-like photoreceptor targets in the DRA region
 
 The strongest target of R7-DRA cells was Dm-DRA1 (Sancer et al., 2019). Together, 20 Dm-DRA1 cells received 70.1 (mean, range 66–77) synapses per DRA seed column, corresponding to 25.3% (212/837) of total R7-DRA output (Table 4, Supplementary file 1). There were no synaptic inputs from R8-DRA, and synapses from R7-DRA to Dm-DRA1 were consistently restricted to the proximal edge of layer M6 where R8-DRA are not present (Figure 7Ai, Aii). There were few synapses in neighboring non-DRA columns (Figure 7—figure supplement 1A), and only one of the contacting R7 cells made a substantial number (11) of synapses. The inner photoreceptors choose their DRA fates independently, and therefore this photoreceptor could be an R7-DRA, even though the R8 in the same column terminated in M3; low numbers of such mixed ommatidia consistently occur at the DRA boundary (Wernet et al., 2003; Wada, 1974b). Dm-DRA1 cells have deep projections that leave the DRA region and stratify below layer M6, and these did not receive strong photoreceptor input (Figure 7Aii, compare light microscopy of clone in 7Aiii), nor did they preferentially occupy either pale or yellow columns (Figure 7—figure supplement 2).
 
@@ -137,7 +1722,7 @@ The Dm-DRA2 cell type was the strongest R8-DRA target after Dm9 and R7-DRA (Tabl
 
 The reconstructed Dm-DRA1 cells highly overlapped along the DRA region, as did the Dm-DRA2 cells (Figure 7Ei, Eii; Sancer et al., 2019). The population of all Dm-DRA1 cells connected to the same R7-DRA seed photoreceptor (8.3 mean, range 6–11) spanned 17 DRA columns (mean, range 13–19), corresponding to just under half the length of the DRA region. In comparison, the number of Dm-DRA2 targets of one R8-DRA was fewer (3.3 mean, range 2–5 Dm-DRA2 cells per column), and the length of the DRA region covered was also shorter at 10.7 columns (mean, range 10–12). These differences in connectivity may have implications for how the two Dm-DRA cell types differently compute skylight polarization information originating from the same visual field. Finally, comparison of inputs to Dm-DRA1 and Dm-DRA2 from the same location along the DRA revealed a separation of R7-DRA and R8-DRA synapses into different sublayers of M6 (Figure 7Eiii), confirming prior observations from light microscopy (Sancer et al., 2019).
 
-## Visual projection neurons connecting R7-DRA with the central brain
+### Visual projection neurons connecting R7-DRA with the central brain
 
 The second most prominent R7-DRA target was a cell type that we refer to as MeTu-DRA (Figure 8A). These cells exclusively received R7-DRA synapses, with no input from R8-DRA, and are modality-specific. Both the reconstructed cells and the matching light microscopy MeTu-DRA clones projected long axons to the small unit of the AOTU (Figure 8Aii), identifying them as specialized MeTu cells (Omoto et al., 2017; Panser et al., 2016; Otsuna et al., 2014; Tai et al., 2021). They closely resemble cells described in the DRA region of optic lobes from larger insects (Pfeiffer and Kinoshita, 2012; el Jundi et al., 2011). All 30 reconstructed MeTu-DRA cells received 61.3 (mean, range 49–85) R7-DRA synapses per seed column, corresponding to 22.0% (184/837) of the total R7-DRA output (Figure 8Aiii, Table 4, Supplementary file 1). Synapses from R7-DRA to MeTu-DRA were restricted to the photoreceptor tips at the proximal edge of layer M6, as we found for Dm-DRA1 (Figure 8Aiv). MeTu-DRA cells also innervated the dorsal medulla outside the DRA region (Figure 8Av), but avoided non-DRA photoreceptors by stratifying below M6, and showed no obvious pale or yellow preference (Figure 8—figure supplement 1A). We visualized single MeTu-DRA cell clones in the DRA and found their photoreceptor contacts were always restricted to the DRA region (Figure 8Av, arrow). The medulla branches of all MeTu-DRA skeletons connected to R7-DRA from the same DRA seed column (11.3 mean, range 8–16) widely overlapped, covering 15 DRA columns (mean, range 12–17; Figure 8Avi). Thus, the MeTu-DRA cells receive skylight polarization information from R7-DRA over similar portions of the sky as Dm-DRA1 cells.
 
@@ -147,13 +1732,13 @@ We identified one additional, previously uncharacterized VPN type connecting the
 
 VPN-DRA cells form an overlapping group of neurons covering the entire DRA region of a given hemisphere (Figure 8Bvi). There was morphological heterogeneity within the population, with some cells having additional processes, both in the medulla and in the central brain and a different cell body position (Figure 8—figure supplement 1B). Therefore, there exist different subtypes of VPN-DRA.
 
-## Other newly identified photoreceptor targets in the DRA region
+### Other newly identified photoreceptor targets in the DRA region
 
 Two more previously uncharacterized cell types received photoreceptor input in the DRA seed columns. The first, which we refer to as MeMe-DRA, were large heterolateral medulla cells that connected the DRA regions of both hemispheres, crossing the central brain without forming synapses there (Figure 9A). We reconstructed two MeMe-DRA cells, and could not find additional ones, and we matched the morphology of the cell type using light microscopy (Figure 9Aiv). Morphologically, these cells resemble the polarization-sensitive MeMe1 cells characterized in locusts (el Jundi et al., 2011; El Jundi and Homberg, 2010). They were exclusively innervated by R7-DRA, receiving 12.0 (mean, range 0–21) synapses per seed column, corresponding to 4.9% of total R7-DRA output (Figure 9Aii, Aiii, Table 4, Supplementary file 1). The MeMe-DRA processes in the ipsilateral hemisphere appear to be primarily dendritic, whereas the contralateral processes appear to be axonic (Figure 9Aiii, Aiv). The putative dendritic processes appeared to contact DRA photoreceptors, based on light microscopy labeling, with processes reaching layer M6 exclusively in the DRA region (Figure 9Aiv). Intriguingly, the area of medulla columns innervated by a given cell is flipped along the anterior-posterior axis between the two hemispheres, so that the anterior half of the ipsilateral medulla is connected, via the MeMe-DRA cell, with the posterior half of the contralateral medulla and vice versa (Figure 9Av).
 
 Another newly identified set of DRA photoreceptor targets were morphologically diverse Mti cells that covered the dorsal medulla (Figure 9B and C, Figure 9—figure supplement 1), for which we also found putative light microscopy matches. All 10 of these Mti-DRA cells were innervated exclusively by R7-DRA, but there were two distinct morphological populations, which we refer to as Mti-DRA1 (Figure 9Bi-Biv) and Mti-DRA2 (Figure 9Ci-Civ). There were six Mti-DRA1 cells with ventral cell bodies (Figure 9Bi) that received together 12.3 (mean, range 10–14) synapses per seed column, corresponding to 4.4% of total R7-DRA output (Figure 9Bii, Supplementary file 1). Individual reconstructed Mti-DRA1 cells had main processes along the DRA region with short processes innervating non-DRA columns (Figure 9Biii, Biv). Mti-DRA2 cells had dorsally located cell bodies (Figure 9Ci) and were more weakly connected to R7-DRA, with four Mti-DRA2 neurons making 5 (mean, range 3–8) synapses per seed column, corresponding to 1.8% of R7-DRA total output (Figure 9—figure supplement 1, Table 4, Supplementary file 1). The main processes of Mti-DRA2 skeletons also innervated the DRA region but these cells formed longer processes extending further ventrally into non-DRA columns (Figure 9Ciii, Civ).
 
-## Comparison of inner photoreceptor connectivity of central and the DRA columns
+### Comparison of inner photoreceptor connectivity of central and the DRA columns
 
 Taken together, our reconstructions of the synapses of the inner photoreceptors specialized for color and polarization vision revealed specific stereotypical similarities, as well as striking differences. The pattern of connectivity between photoreceptor terminals from the same ommatidium, and with Dm9, was highly consistent in columns processing color and polarization, indicating that the mechanisms of lateral inhibition between photoreceptors and gain modulation by Dm9 can serve both modalities (Schnaitmann et al., 2018; Weir et al., 2016; Figure 10A).
 
@@ -173,7 +1758,7 @@ R7 and R7-DRA cells are strongly connected to respectively different classes of 
 
 **Figure 11.:** (A) Graphical comparison of central and DRA synaptic pathways. In all panels, the arrow widths are proportional to the numbers of synapses per seed column, and weak connections were excluded for clarity by a threshold of >4 synapses per column. (Ai) Arrows indicating the relative weight of R7 connections (cell types postsynaptic to pale and yellow R7) and R7-DRA. (Aii) Arrows indicating the relative weight of R8 connections (sum of pale and yellow R8) and R8-DRA region. Connections to the lobula neuropil are dominated by R8 targets in the central columns. Lobula connections are virtually absent in the DRA region (synapse numbers below 1% of total synapse count), where connectivity of R8-DRA is dramatically reduced, limited to local computations in the medulla. The projections to the central brain that are not to the anterior optic tubercle (AOTU) are driven by R8 in the central columns, but by R7-DRA in the DRA region. (B) Graphical comparison of central pale and yellow-specific synaptic pathways. (Bi) Arrows indicating the relative weight of pale R7 versus yellow R7 connections in central seed columns. Columnar cell types such as lamina cells have the capacity to preserve pale and yellow information, and Dm8 cells are most densely innervated by their home column input. Tm5a cells were selective for yellow R7, Tm5b cells were selective for pale R7, and the Tm5a-like and Tm5b-like cells were selective for yellow R8, but also received yellow R7 synapses. These diagrams omit cells such as the MeTu neurons since they receive nearly balanced input from pale and yellow R7s. (Bii) Arrows indicating the relative weight of pale R8 versus yellow R8 connections in central seed columns. Columnar medulla cells that have the capacity to preserve pale and yellow information were targets of R8 cells. The aMe12 and ML-VPN1 cell types were specific for pale R8 input, while Tm5c had a strong bias for yellow R8, along with the Tm5a-like and Tm5b-like cells. ML1s are omitted from these diagrams since they received nearly balanced input from pale and yellow R8s.
 
-## Cell types distinguishing between pale and yellow inputs
+### Cell types distinguishing between pale and yellow inputs
 
 The fly’s retinal mosaic can support circuits with different chromatic sensitivities by selective sampling of pale and yellow photoreceptors. For example, cells contrasting pale and yellow R7 input would be expected to have high chromatic sensitivity around ~350 nm, where the spectral sensitivity of Rh3 and Rh4 overlap (Salcedo et al., 1999). Our reconstructions revealed several cases of connectivity patterns that could support such selective sampling. For R7, these included two cell types previously reported to be pale- or yellow-selective: Tm5a for yellow R7 (Karuppudurai et al., 2014), and Tm5b for pale R7 (Menon et al., 2019; Figure 11Bi). By completely reconstructing several Dm8 cells for the first time (Figure 2C), we found that Dm8 neurons were most highly innervated by R7 in their home columns, with approximately equal sampling of pale and yellow R7 input in the surrounding columns. Examining the encoding of chromatic signals in Tm5a/b and Dm8 cells, and their other synaptic partners, is therefore a promising avenue for addressing the open question of how, or if, UV information from yellow ommatidia is processed differently from UV signals downstream of pale R7 cells.
 
@@ -185,13 +1770,13 @@ While near-perfect specificity for pale versus yellow inputs appears to be limit
 
 Our systematic reconstruction of all synaptic inputs and outputs of identified, functionally specialized Drosophila photoreceptors (pale and yellow R7–8, R7-DRA, and R8-DRA) provides a comprehensive inventory of the first steps of the color and polarization pathways, from which all the computations of the dependent behaviors stem. These data revealed core connectomic motifs shared across column types (Figure 10A–C), multiple new photoreceptor targets, and uncovered additional cell types as being connected to specific photoreceptor subtypes conveying specific color and polarization information to the central brain (Figure 10E and F).
 
-## Inner photoreceptor connections outside the medulla neuropil
+### Inner photoreceptor connections outside the medulla neuropil
 
 We confirmed previously reported synaptic partners of the inner photoreceptors in the non-DRA medulla (Figure 1—figure supplement 2) and identified new photoreceptor targets. As prior reconstructions were incomplete (Takemura et al., 2015), it was unclear whether the unidentified connections were mainly onto new target neurons or represented more connections onto known cell types; our reconstructions revealed both types of omissions. One functionally important set of missed connections are the synapses between inner photoreceptors from the same central and DRA ommatidia, which we found to be stronger than previously reported (Takemura et al., 2008; Takemura et al., 2015), due to significant numbers of synapses outside the medulla. These synapses likely contribute to color-opponent responses seen in central R7 and R8 terminals (Schnaitmann et al., 2018) and the polarization-opponent signals measured from DRA photoreceptors (Weir et al., 2016). Our reconstructions also support a larger-scale opponent process mediated by multicolumnar Dm9 cells (Heath et al., 2020), which also formed some synapses outside the medulla neuropil.
 
 Other cell types also received inner photoreceptor input outside the medulla, notably the lamina monopolar cells L1 and L3. These lamina connections indicate that chromatic comparisons arising from R7 and R8 may feed into the motion vision pathway, and identifies a new site for interplay between the ‘color’ and ‘motion’ pathways (Wardill et al., 2012; Schnaitmann et al., 2013; Pagni et al., 2021; Li et al., 2021). Together, these observations suggest that synapses in an unexpected location, outside the main synaptic layers of the medulla, could play a significant role in early visual processing.
 
-## Newly identified targets of central versus DRA inner photoreceptors
+### Newly identified targets of central versus DRA inner photoreceptors
 
 In the non-DRA medulla, we found, for the first time in an EM study, strong synaptic connections between R7s and MeTu cells that project to the AOTU (Figure 11Ai), confirming previous claims based on light microscopy (Timaeus et al., 2020). This finding may reconcile disparate observations, such as a role in wavelength-specific phototaxis for cells matching MeTu morphology (Otsuna et al., 2014), as well as measurements of color-sensitive signals in the AOTU of bees (Mota et al., 2013). Previous anatomical studies partitioned MeTu cells into distinct subclasses that terminate in discrete subdomains of the AOTU (Omoto et al., 2017; Timaeus et al., 2020; Tai et al., 2021). Here, we identified modality-specific MeTu-DRA cells that only integrate from the polarization-sensitive R7-DRA photoreceptors, while avoiding synaptic contacts with color-sensitive pale or yellow R7s. Our MeTu and MeTu-DRA cells target adjacent subdomains within the small unit of the AOTU (Figure 10E), in agreement with proposals that parallel channels convey different forms of visual information from the eye to the central complex via the AOTU (Hardcastle et al., 2021; Hulse et al., 2021; Timaeus et al., 2020; Omoto et al., 2017).
 
@@ -201,11 +1786,11 @@ The reconstruction of DRA photoreceptor targets confirmed the modality-specific 
 
 For color vision, we have confirmed the pale-yellow specificity of Tm5a and Tm5b cells (Figure 11Bi). We have additionally identified as pale-specific the aMe12 and ML-VPN1 cell types, and the yellow bias of Tm5c and the pale bias of Mi9 (Figure 11Bii). Our detailed analysis of Dm8 inputs confirmed that these neurons receive most of their photoreceptor input in a central home column, consistent with pale and yellow subtypes of Dm8 cells having distinct chromatic properties (Courgeon and Desplan, 2019; Menon et al., 2019; Li et al., 2021; Pagni et al., 2021). The selective photoreceptor input to these cell types, combined with input to columnar cells from a single photoreceptor subtype, indicates that wavelength-specific information is maintained in the medulla and lobula (Figure 11Bi). The projections of aMe12 and ML-VPN1 to the central brain indicate the possibility that wavelength-specific photoreceptor responses are directly conveyed into the central brain by these cells, although they likely integrate input from other chromatically sensitive cell types (Figure 11Bii).
 
-## Limitations of our approach
+### Limitations of our approach
 
 By focusing on a small number of columns, we have delivered a near-complete picture of local connectivity, but we cannot rule out the possibility that certain cell types may have been overlooked. For instance, we chose an arbitrary threshold of two to three synapses below which we did not endeavor to reconstruct synaptic targets to the extent required to uniquely identify them. As a result we may, in principle, have missed large cells that receive small, but significant inputs across many columns. Furthermore, we cannot rule out regional specializations in the optic lobes, such that specific cell types might be found outside of our seed columns. For example, some MeTu cells are only found in the dorsal third of the medulla (Omoto et al., 2017; Otsuna et al., 2014), where incoming R7 cells are known to co-express Rh3 and Rh4 rhodopsins (Mazzoni et al., 2008).
 
-## Complementary usage of multiple connectomic data sets and outlook
+### Complementary usage of multiple connectomic data sets and outlook
 
 Taken together, the data presented here provides access to the full complement of R7 and R8 photoreceptor targets from functionally specialized optical units. By reconstructing these local circuits within a full-brain EM volume, we were able to establish the complete morphology of large, multicolumnar cell types, that are strongly connected to photoreceptors, but had eluded previous connectomic reconstruction efforts (Takemura et al., 2013; Takemura et al., 2015). The sparse tracing approach we have implemented and described here enabled efficient identification of the complete set of upstream and downstream partners of the inner photoreceptors, in a manner that is complementary to the dense connectomes generated from smaller-scale medulla volumes. As an example of this synergistic usage of complementary data sets, we have returned to the 7-column data (Takemura et al., 2015; Clements et al., 2020) and used our whole-cell morphologies to match the bodies of previously unidentified photoreceptor targets. In that process we have established strong candidates for MeTu, ML1, and perhaps for aMe12 (see Materials and methods) and confirmed several aspects of their connectivity in the Zheng et al., 2018, data set. In so doing, we now have access to the additional connectivity data provided by the 7-column dense reconstruction. While full exploration and follow-up analyses of these combined data is beyond the scope of this work, the combined analysis of the Zheng et al., 2018, and the medulla-7-column connectome revealed several intriguing connectivity patterns, including new candidate paths for the integration of output from different photoreceptor types. For example, the MeTu cells that are postsynaptic to R7 also receive indirect R8 input via the R8 target Mi15, and ML1 combines direct R8 input with indirect input from outer photoreceptors via lamina neurons. As further connectome data sets are completed, this comparative interplay between data sets with unique advantages and limitations will be an important step in both cross-validating and extending the applicability of all related data sets.
 
@@ -213,7 +1798,339 @@ Our reconstruction of the DRA photoreceptor targets provides the first EM-based 
 
 ## Materials and methods
 
-## EM reconstruction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>MCFO-1; ”pBPhsFlp2::PEST in attP3;;pJFRC201-10XUAS-FRT&gt; STOP &gt; FRT-myr::smGFP-HA in VK0005, pJFRC240-10X-UAS-FRT&gt; STOP &gt; FRT-myr::smGFP-V5-THS-10XUAS-FRT&gt; STOP &gt; FRT-myr::smGFP-FLAG in su(Hw)attP1”</td>
+      <td>https://doi.org/10.1073/pnas.1506763112</td>
+      <td>RRID:BDSC_64085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1, pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005</td>
+      <td>https://doi.org/10.1073/pnas.1506763112</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>SS02978(w; 42E06-p65ADZp in attP40; VT064564-ZpGdbd in attP2/TM6B)</td>
+      <td>This study</td>
+      <td>SS02978</td>
+      <td>Split-GAL4 lines are available via https://www.janelia.org/split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>SS01015(w; 21B12-p65ADZp in attP40; 20E07-ZpGdbd in attP2)</td>
+      <td>This study</td>
+      <td>SS01015</td>
+      <td>Split-GAL4 lines are available via https://splitgal4.janelia.org/cgi-bin/splitgal4.cgi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>SS28175 (w; 51E06-p65ADZp in attP40/CyO,Tb; 15D05-ZpGdbd in attP2/TM6B)</td>
+      <td>This study</td>
+      <td>SS28175</td>
+      <td>Split-GAL4 lines are available via https://www.janelia.org/split-GAL4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>R56F07</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_39160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>ortc2b-Gal4</td>
+      <td>https://doi.org/10.1016/j.neuron.2013.12.010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(Drosophila melanogaster)</td>
+      <td>20XUAS-CsChrimson-mVenus in attP18</td>
+      <td>https://doi.org/10.1038/nmeth.2836</td>
+      <td>RRID:BDSC_55134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chaoptin mouse monoclonal 24B10</td>
+      <td>DSHB</td>
+      <td>RRID:AB_528161</td>
+      <td>(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Brp mouse monoclonal nc82</td>
+      <td>DSHB</td>
+      <td>RRID:AB_2314866</td>
+      <td>(1:30)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed rabbit polyclonal</td>
+      <td>Clontech Laboratories, Inc: 632,496</td>
+      <td>RRID:AB_10013483</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat cadherin, DN-Ex #8 (extracellular domain)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528121</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA rabbit monoclonal C29F4</td>
+      <td>Cell Signaling Technologies: 3724S</td>
+      <td>RRID:AB_1549585</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG rat monoclonal DYKDDDDK Epitope Tag Antibody [L5],</td>
+      <td>Novus Biologicals: NBP1-06712</td>
+      <td>RRID:AB_1625981</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 550 conjugated anti-V5 mouse monoclonal</td>
+      <td>AbD Serotec: MCA1360D550GA</td>
+      <td>RRID:AB_2687576</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 549 conjugated anti-V5 mouse monoclonal</td>
+      <td>AbD Serotec: MCA1360D549GA</td>
+      <td>RRID:AB_10850329</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP rabbit polyclonal</td>
+      <td>ThermoFisher: A-11122</td>
+      <td>RRID:AB_221569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP mouse monoclonal 3E6</td>
+      <td>ThermoFisher: A-11120</td>
+      <td>RRID:AB_221568</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>FluoRender</td>
+      <td>http://www.sci.utah.edu/software/fluorender.html</td>
+      <td>RRID:SCR_014303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>VVDviewer</td>
+      <td>https://github.com/takashi310/VVD_Viewer (Kawase, 2021)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3</td>
+      <td>http://www.python.org</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pymaid</td>
+      <td>https://github.com/schlegelp/PyMaid (Neuron Analysis &amp; Visualization, 2021a)</td>
+      <td>DOI https://doi.org/10.5281/zenodo.4724558</td>
+      <td>Python library</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FAFBseg</td>
+      <td>https://github.com/flyconnectome/fafbseg-py (Neuron Analysis &amp; Visualization, 2021b)</td>
+      <td>DOI https://doi.org/10.5281/zenodo.496660</td>
+      <td>Python library</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Studio</td>
+      <td>https://www.rstudio.com/</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Natverse</td>
+      <td>https://natverse.org</td>
+      <td>DOI:10.7554/eLife.53350</td>
+      <td>Collection of R packages for neuroanatomical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tidyverse</td>
+      <td>https://www.tidyverse.org/</td>
+      <td>RRID:SCR_019186</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>knitr</td>
+      <td>https://cran.r-project.org/package=knitr</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kableExtra</td>
+      <td>https://cran.r-project.org/package=kableExtra</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gridExtra</td>
+      <td>https://cran.r-project.org/package=gridExtra</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>png</td>
+      <td>https://cran.r-project.org/package=png</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RColorBrewer</td>
+      <td>https://cran.r-project.org/package=RColorBrewer</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>alphashape3d</td>
+      <td>https://CRAN.R-project.org/package=alphashape3d</td>
+      <td></td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td></td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATMAID</td>
+      <td>http://www.catmaid.org/</td>
+      <td></td>
+      <td>Neuron reconstruction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FAFB</td>
+      <td>Zheng et al., 2018; https://v2.virtualflybrain.org/</td>
+      <td></td>
+      <td>EM data set</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FAFB-FFN1</td>
+      <td>Li et al., 2020; http://fafb-ffn1.storage.googleapis.com/data.html</td>
+      <td></td>
+      <td>EM auto-segmentation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FlyWire</td>
+      <td>Dorkenwald et al., 2020; https://flywire.ai/</td>
+      <td></td>
+      <td>EM auto-segmentation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh3 F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CACC GGT ACG CTT ATG ATA ACC TTC G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh3 R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCT CCG GTC TGC GGG CCA AGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh5 F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CACC GGT GAT TAA TGC GAA TGT AGC TGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh5 R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ACT GCT TGA TCC GCT CCA AAA TC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh6 F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CA CCA ACA TGA TGG CGG ACA TCA C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rh6 R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TTC GAA TGG CTG GTA CTG GTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### EM reconstruction
 
 The Zheng et al., 2018, data set is a serial section transmission EM volume of a female Drosophila melanogaster brain. We manually reconstructed neurons in this volume in the CATMAID environment, which includes a browser-based annotation interface and a server hosting a copy of the data (Saalfeld et al., 2009). We also searched for neurons using two recent auto-segmentations FAFB-FFN1 (Li et al., 2020) and FlyWire (Dorkenwald et al., 2020), importing some of the FAFB-FFN1 auto-segmentation fragments afterward into the CATMAID environment, a process that facilitated the identification of a small number of neurons. We followed established guidelines for manually tracing neuron skeletons, annotating synaptic connections, and reviewing reconstructed cells (Schneider-Mizell et al., 2016). We completely reconstructed the morphology of pairs of R7 and R8 cells in seven ‘seed’ columns, four adjacent columns chosen to be near the center of the retinal mosaic, and three columns in the DRA (Figure 1C). On the R7 and R8 cells, we annotated as a ‘pre-synapse’ all the locations where there was a T-bar (Figure 1—figure supplement 1A). Associated with each pre-synapse we annotated a ‘post-synapse’ connection with every synaptic partner. These seed neurons and their pre-synapses were completely proofread by independent team members, a process that amounted in small (<10%) amendments to the connectivity data presented here.
 
@@ -225,7 +2142,7 @@ We additionally identified 970 incoming synapses to the seed column R7–8 cells
 
 This report was focused on identifying the synaptic inputs and outputs of the R7 and R8 cells of the central and DRA columns, and it was not feasible to also detail the circuit connectivity for the cells targeted by these photoreceptors. For exceptional cell types, however, we traced more than the cells’ connections to the seed column R7 and R8 cells. (1) We traced three aMe12 cells to near completion, to determine the columns that contained the cell type’s characteristic vertical processes that we used to determine whether a column was pale or not (see below). (2) We traced all the photoreceptor inputs to three Dm8 cells in the central columns (Figure 2Cii–iii). (3) For the Mt-VPN1 cell, we reconstructed the photoreceptor inputs in 20 medulla columns to discount the possibility that this was a pale-specific neuronal target in the central columns. (4) For three fully reconstructed Dm-DRA1 cells and three fully reconstructed Dm-DRA2 cells, we traced all their R7-DRA and R8-DRA inputs (Figure 6E and F). (5) For one Dm9 cell innervated by R7-DRA and R8-DRA, we traced in non-DRA columns to confirm that Dm9 cells in the DRA also receive non-DRA photoreceptor input (Figure 6Cvi).
 
-## Defining pale, yellow, and DRA medulla columns
+### Defining pale, yellow, and DRA medulla columns
 
 To identify medulla columns, we used a map of Mi1 neurons. This Mi1 map, which we have generated for a separate, ongoing study, includes nearly all Mi1 neurons in the medulla of the right hemisphere of the Zheng et al., 2018, data set. The Mi1 cell type is columnar, with one cell per column and unambiguous arborizations in medulla layers 1, 5, 9, and 10 (Fischbach and Dittrich, 1989). We defined the location of a column in the medulla as the center-of-mass of the Mi1 dendrite in layer 5 (Figures 1C and 2A).
 
@@ -233,7 +2150,7 @@ We traced the vertical dendritic branches of all three aMe12 cells in the data s
 
 To identify the DRA columns, we reconstructed the R7 and R8 cells in 27 columns along the dorsal-rim-corresponding margin of the medulla and ascertained whether the R8 cell terminated in the same layer as the R7 cell (Figure 1E, arrow; Figure 1—figure supplement 1A). The R8-DRA cells terminate before the R7-DRA cells in this layer, allowing the two cell types to be distinguished. By careful visual inspection of the M6 layer of all medulla columns located close to the dorsal edge of the medulla, we identified 15 additional DRA columns resulting in a total of 42 DRA columns which is in good agreement with the previously reported average number of 39 DRA columns (Weir et al., 2016; Figure 1C).
 
-## Analysis of synapse locations
+### Analysis of synapse locations
 
 To define the medulla and lobula layers, we first used the R package collection ‘natverse’ (Bates et al., 2020) to transform pre-defined neuropil meshes (Jenett et al., 2012; Bogovic et al., 2020) into the Zheng et al., 2018, data set space. Our meshes for the medulla and lobula computed in this way defined the top and bottom layers of these neuropils. We then interpolated the initial internal layer boundaries using demarcations established in prior studies (Takemura et al., 2015; Wu et al., 2016). Finally, we refined the layer boundaries using the characteristic arborizations patterns of the Mi1, C2, Tm5, and Tm20 cell types (Gao et al., 2008; Fischbach and Dittrich, 1989). For the medulla, the demarcations were: 0%, 8.2%, 26.2%, 36.1%, 45.9%, 54.1%, 62.3%, 67.2%, 76.2%, 91.0%, 100%. For the lobula the layer demarcations were: 0%, 4.2%, 11.3%, 22.4%, 37.4%, 49.4%, 64.7%, 100%. The layer designations are therefore guides to aid interpretations and comparisons, and not measurements of the neuropils themselves.
 
@@ -243,27 +2160,27 @@ For the histograms of distances of R7 synapses to each Dm8 cell’s home column 
 
 For the histograms of the distances along the DRA of photoreceptor synapses to Dm-DRA1 and Dm-DRA2 cells (Figure 7B and D), we first fitted an ellipse to the centers of DRA columns, using least squares regression (Figure 7—figure supplement 3Ai). We then calculated the location of the perpendicular projection of every synapse along the fitted ellipse (Figure 7—figure supplement 3Aii-iv). Finally, these distances were filtered with a zero-phase Gaussian filter with a standard deviation of 0.6 μm.
 
-## Comparison with medulla-7-column connectome
+### Comparison with medulla-7-column connectome
 
 To compare the connectivity of R7 and R8 of our central column reconstructions with the connectivity identified in the medulla-7-column connectome (Takemura et al., 2013; Takemura et al., 2015; Takemura et al., 2017), we took advantage of the identification of pale and yellow columns in that data set used by Menon et al., 2019. That study used the presence or absence of Tm5a to indicate yellow and pale columns, respectively, and excluded columns that contained Tm5 neurons that were ambiguous for being Tm5a or Tm5b neurons. Using this scheme, columns B, D, and H are pale, and columns A, E, and F are yellow (here using the column references used for the 7-column data set). The medulla-7-column data set is now publicly available and accessible with the release of NeuPrint (Clements et al., 2020), and we used NeuPrint to compile the connectivity of cells with pale and yellow R7 and R8 cells from the data set (Figure 1—figure supplement 2). The unidentified cells including cells annotated as output (‘out’) and fragments of putative tangential cells (‘tan’) in the six pale and yellow columns are 38.1% for R7 (518/1342 synapses over six columns) and 38.9% for R8 (726/1854 synapses over six columns).
 
 We also searched the medulla-7-column connectome for neurons with shapes and patterns of connectivity similar to aMe12, ML1, and MeTu neurons and identified the following putative matches (NeuPrint medulla-7-column identifiers in parenthesis): aMe12 (54028), ML1(16666), MeTu (11770; annotated as an unknown Tm; 35,751, and other reconstructions annotated as ‘Dm7’). The ML1 and MeTu matches are further supported by multiple inputs other than R-cells (e.g. L3, L4, and Dm9 to ML1 and Mi15 to MeTu) that are present in both data sets. These matches provide examples of how the combination of our complete but focused reconstructions and the dense but strongly volume-limited medulla-7-column connectome can together enable insights that go beyond each individual data set.
 
-## Genetics and molecular biology
+### Genetics and molecular biology
 
-## Fly genotypes
+#### Fly genotypes
 
 Fly genotypes used throughout the manuscript are listed organized by figure panel in Supplementary file 4.
 
-## Driver lines
+### Driver lines
 
 Split-GAL4 lines were constructed and characterized as in previous work (Wu et al., 2016). Briefly, we tested candidate AD and DBD hemidriver pairs (Tirian and Dickson, 2017; Dionne et al., 2018) for expression in cell types of interest and assembled successful combinations into stable fly strains that were then used for subsequent experiments. Split-GAL4 lines generated in this study and images of their expression patterns are available online (https://www.janelia.org/split-GAL4). aMe12, ML1, and ML-VPN1 were initially identified by light microscopy, allowing us to generate split-GAL4 driver lines targeting these previously undescribed cell types. Images of cells labeled by these driver lines were subsequently matched to the EM reconstructions. Split-GAL4 lines labeling Dm11, Mi15, L2, and VPN-DRA were from prior work (Davis et al., 2020; Tuthill et al., 2013; Wu et al., 2016). The candidate VPN-DRA driver (OL0007B) was originally described as a split-GAL4 driver for a different cell type (LC12; Wu et al., 2016) but also labels neurons highly similar or identical to VPN-DRA. We also used GAL4 driver lines from the Janelia and Vienna Tiles collections (Jenett et al., 2012; Tirian and Dickson, 2017).
 
-## Rhodopsin-LexA reporter constructs
+### Rhodopsin-LexA reporter constructs
 
 To construct Rh3-, Rh5-, and Rh6-LexA driver lines, we amplified previously characterized promoter regions (Mollereau et al., 2000; Pichaud and Desplan, 2001; Tahayato et al., 2003; Chou et al., 1996; Papatsenko et al., 1997; Huber et al., 1997) by PCR from genomic DNA. Primer sequences are listed in the Key resources table. The PCR products were TOPO-cloned into pENTR-D-TOPO (Invitrogen) and transferred to pBPnlsLexA::GADflUw (addgene #26232) using standard Gateway cloning. Transgenic flies were generated by phiC31-mediated integration into the attP40 landing site (injections were done by Genetic Services, Inc).
 
-## Histology
+### Histology
 
 To characterize the neurons labeled by split-GAL4 lines, we visualized both overall expression patterns and individual cells. For the former, we used pJFRC51-3XUAS-IVS-Syt::smHA in su(Hw)attP1 and pJFRC225-5XUAS-IVS-myr::smFLAG in VK00005 (Nern et al., 2015) or 20XUAS-CsChrimson-mVenus in attP18 (Klapoetke et al., 2014) as reporters; the latter was achieved by stochastic labeling of individual cells with MCFO (Nern et al., 2015). Specimens were processed and imaged by the Janelia FlyLight Project team following protocols that are available online (https://www.janelia.org/project-team/flylight/protocols under ‘IHC – Anti-GFP’, ‘IHC – Polarity Sequential’, ‘IHC – MCFO’, and ‘DPX mounting”’). Additional MCFO images of cells labeled by GAL4 (instead of split-GAL4) driver lines were generated in the same way. Images were acquired on Zeiss LSM 710 or 780 confocal microscope using 20 × 0.8 NA or 63 × 1.4 NA objectives.
 
@@ -273,10 +2190,10 @@ For the combined labeling of aMe12, ML-VPN1, and VPN-DRA with photoreceptor mark
 
 Primary antibodies were anti-GFP rabbit polyclonal (ThermoFisher: A-11122, RRID:AB_221569; used at 1:1000 dilution), anti-GFP mouse monoclonal 3E6 (ThermoFisher: A-11120, RRID:AB_221568; dilution 1:100), anti-dsRed rabbit polyclonal (Clontech Laboratories, Inc: 632496, RRID:AB_10013483; dilution 1:1000), anti-chaoptin mouse monoclonal 24B10 (Fujita et al., 1982; DSHB: RRID:AB_528161, dilution 1:20), and anti-Brp mouse monoclonal nc82 (Wagh et al., 2006; DSHB:RRID:AB_2314866; dilution 1:30). Secondary antibodies were from Jackson ImmunoResearch Laboratories, Inc Images were acquired on a Zeiss LSM 880 confocal microscope using a 40 × 1.3 NA objective.
 
-## Image processing
+### Image processing
 
 Most anatomy figures show reconstructed views of cells of interest generated from confocal stack using FluoRender (http://www.sci.utah.edu/software/fluorender.html) or the related VVDviewer (https://github.com/takashi310/VVD_Viewer). Some images were manually edited to only show the cell relevant for the comparison to the EM reconstructions or to exclude parts of the image stacks that would occlude the illustrated views. Some panels in Figure 5 are overlays of registered images with either the template brain used for registration (Bogovic et al., 2020) or the pattern of a second registered expression pattern (L2 lamina neuron terminals in Figure 5Cv). Images with rhodopsin reporter (Rh3-, Rh5, or Rh6-LexA) labeling show single sections or maximum intensity projections through a small number of adjacent slices. For these images, other processing was limited to adjustments of brightness and contrast across the entire field of view for each channel. Manual cell counts were performed using Fiji (http://fiji.sc).
 
-## Data availability statement
+### Data availability statement
 
 All data generated or analyzed during this study are included in the manuscript and supporting files. Supplementary files 1 and 3 contain all connectivity data. Supplementary file 2 provides images of all EM skeletons. All code and necessary data to perform the analysis and generate the figures of this manuscript is available from https://github.com/reiserlab/FAFB-photoreceptor-connectivity (Reiser Lab, 2022; copy archived at swh:1:rev:f8e6732868c4afa184a379abfbc5042eef920321). All reconstructed neurons described in the manuscript will be made available at https://fafb.catmaid.virtualflybrain.org/.

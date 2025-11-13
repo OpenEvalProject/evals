@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03q8dnn23 Department of Neuroscience, City University of Hong Kong Hong Kong SAR China
-2. https://ror.org/03q8dnn23 Department of Biomedical Sciences, City University of Hong Kong Hong Kong SAR China
-3. https://ror.org/034t30j35 Centre for Regenerative Medicine and Health, Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences Hong Kong SAR China
-4. https://ror.org/02zhqgq86 Centre for Biosystems, Neuroscience, and Nanotechnology, City University of Hong Kong Hong Kong SAR China
+1. Department of Neuroscience, City University of Hong Kong Hong Kong SAR China ([ROR:03q8dnn23](https://ror.org/03q8dnn23))
+2. Department of Biomedical Sciences, City University of Hong Kong Hong Kong SAR China ([ROR:03q8dnn23](https://ror.org/03q8dnn23))
+3. Centre for Regenerative Medicine and Health, Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences Hong Kong SAR China ([ROR:034t30j35](https://ror.org/034t30j35))
+4. Centre for Biosystems, Neuroscience, and Nanotechnology, City University of Hong Kong Hong Kong SAR China ([ROR:02zhqgq86](https://ror.org/02zhqgq86))
 
 † Corresponding author
 
 ## Abstract
 
-Astrocyte-derived L-lactate was shown to confer beneficial effects on synaptic plasticity and cognitive functions. However, how astrocytic G i signaling in the anterior cingulate cortex (ACC) modulates L-lactate levels and schema memory is not clear. Here, using chemogenetic approach and well-established behavioral paradigm, we demonstrate that astrocytic G i pathway activation in the ACC causes significant impairments in flavor-place paired associates (PAs) learning, schema formation, and PA memory retrieval in rats. It also impairs new PA learning even if a prior associative schema exists. These impairments are mediated by decreased L-lactate in the ACC due to astrocytic G i activation. Concurrent exogenous L-lactate administration bilaterally into the ACC rescues these impairments. Furthermore, we show that the impaired schema memory formation is associated with a decreased neuronal mitochondrial biogenesis caused by decreased L-lactate level in the ACC upon astrocytic G i activation. Our study also reveals that L-lactate-mediated mitochondrial biogenesis is dependent on monocarboxylate transporter 2 (MCT2) and NMDA receptor activity – discovering a previously unrecognized signaling role of L-lactate. These findings expand our understanding of the role of astrocytes and L-lactate in the brain functions.
+Astrocyte-derived L-lactate was shown to confer beneficial effects on synaptic plasticity and cognitive functions. However, how astrocytic Gi signaling in the anterior cingulate cortex (ACC) modulates L-lactate levels and schema memory is not clear. Here, using chemogenetic approach and well-established behavioral paradigm, we demonstrate that astrocytic Gi pathway activation in the ACC causes significant impairments in flavor-place paired associates (PAs) learning, schema formation, and PA memory retrieval in rats. It also impairs new PA learning even if a prior associative schema exists. These impairments are mediated by decreased L-lactate in the ACC due to astrocytic Gi activation. Concurrent exogenous L-lactate administration bilaterally into the ACC rescues these impairments. Furthermore, we show that the impaired schema memory formation is associated with a decreased neuronal mitochondrial biogenesis caused by decreased L-lactate level in the ACC upon astrocytic Gi activation. Our study also reveals that L-lactate-mediated mitochondrial biogenesis is dependent on monocarboxylate transporter 2 (MCT2) and NMDA receptor activity – discovering a previously unrecognized signaling role of L-lactate. These findings expand our understanding of the role of astrocytes and L-lactate in the brain functions.
 
 ## Introduction
 
@@ -35,33 +35,57 @@ Using a behavioral paradigm, Tse et al. showed that learning of multiple flavor-
 
 ## Results
 
-## Expression of hM4Di in the ACC astrocytes
+### Expression of hM4Di in the ACC astrocytes
 
 The ACC of both sides were injected with adeno-associated virus serotype 8 (AAV8) vector encoding mCherry-tagged hM4Di under the control of glial fibrillary acidic protein (GFAP) promoter to drive hM4Di expression in the ACC astrocytes (AAV8-GFAP-hM4Di-mCherry). The hM4Di is a modified human muscarinic receptor M4 that has been engineered to be insensitive to the endogenous ligand acetylcholine but can be activated by its selective ligand clozapine-N-oxide (CNO) (Armbruster et al., 2007). Injection of AAV8-GFAP-hM4Di-mCherry into the ACC resulted in expression of hM4Di in the ACC astrocytes (Figure 1A) with high penetrance (91.1 ± 2.4%, Figure 1B) and specificity (96.3 ± 0.9%, Figure 1C). Penetrance in NeuN-positive cells was low (3.6 ± 0.8%, Figure 1D).
 
-## Gi pathway activation in the ACC astrocytes impairs PA learning
+![Figure 1.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig1-v1.jpg)
+
+**Figure 1.:** Injection of AAV8-GFAP-hM4Di-mCherry into the ACC resulted in expression of hM4Di (A) in 91.1 ± 2.4% of GFAP-positive cells (B) with 96.3 ± 0.9% specificity (C), whereas 3.6 ± 0.8% of NeuN-positive cells expressed hM4Di (D). n=5 rats (3 sections/rat). Scale bars: 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative sections 3.24 mm and 2.52 mm anterior to bregma showing hM4Di-mCherry expression (arrowheads) in the ACC. The arrow shows the site of microinjection and cannula placement into the ACC. Scale bars: 200 µm. (B) Representative sections 3.24 mm, 2.72 mm, and 2.52 mm anterior to bregma under light microscopy. The rat was injected with 1 μl of Chicago sky blue (1%) into the ACC and sacrificed 1 hr following the injection. Scale bars: 200 µm.
+
+### Gi pathway activation in the ACC astrocytes impairs PA learning
 
 PA learning is hippocampus-dependent. Training rats with several PAs leads to schema formation, which is stored in the ACC, and the learned PAs gradually become hippocampus-independent (Tse et al., 2007; Tse et al., 2011; Hasan et al., 2019; Liu et al., 2022). Astrocytic Gi pathway activation has been shown to modulate different cognitive functions (Jones et al., 2018; Kol et al., 2020; Liu et al., 2022). However, the effect of the ACC astrocytic Gi activation on schema memory is yet unknown. To investigate this, bilateral injection of AAV8-GFAP-hM4Di-mCherry into the ACC of rats (n=15) was done to express hM4Di-mCherry in the astrocytes. This group of rats received intraperitoneal (IP) CNO (3 mg/kg body weight) 30 min before the start of each session and 30 min after the end of each session. Hereafter, this group will be referred to as the ‘hM4Di-CNO group’. Another group of rats (n=8) was used as control which did not receive AAV8-GFAP-hM4Di-mCherry injection or CNO.
 
 After habituation and pretraining, we trained both groups of rats with six PAs (sessions 1, 2, 4–8, 10–17) (Figure 2A). Control group showed a gradual increase in performance index (PI) throughout the PA sessions (Figure 2A). At S6, the PI was significantly increased above the chance level (62.5 ± 5.3%, one-sample t-test with hypothetical value of 50%, t=6.71, df = 7, p<0.001) and it remained above the chance level throughout the following PA sessions. At S17, the PI reached the maximum level (77.6 ± 4.6%). This result is consistent with previous reports (Tse et al., 2007; Hasan et al., 2019; Liu et al., 2022). However, the hM4Di-CNO group consistently had lower PI (Figure 2A) compared to the control group in all PA training sessions from S6 to S17 (statistical data is given in Supplementary file 1). At S6, the PI of this group was 49.1 ± 5.4% and at S17 it was 61.3 ± 5%. Consistently, the PI of this group was 50.2 ± 7.4% when two NPAs (NPAs 7 and 8) were introduced at S19, whereas it was significantly higher (69.5 ± 7.1%) in the control group (p<0.001, unpaired t-test, t ratio = 6.1, df = 21). These findings indicated that Gi pathway activation in the ACC astrocytes during and immediately after PA training sessions impaired PA learning. Next, we substituted CNO with IP saline and continued the training of the hM4Di-CNO group (n=8) using the six original PAs (OPAs) (Figure 2B). The PI gradually increased and reached 77.5 ± 3.2% after 10 training sessions (S32 in Figure 2B). At S34, when two NPAs (NPAs 9 and 8) were introduced, the PI was 69.6 ± 5.1%. These results suggest that, when CNO is withdrawn, the rats in the hM4Di-CNO group can learn PAs, like the control group.
 
-## Gi pathway activation in the ACC astrocytes reduces cAMP and L-lactate levels in the ACC
+![Figure 2.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig2-v1.jpg)
+
+**Figure 2.:** (A) Performance index (PI) (mean ± SD) during the acquisition of the six original PAs (OPAs) (S1–2, 4–8, 10–17) and NPAs (S19) of the control (n=8), hM4Di-CNO (n=15), and rescue (hM4Di-CNO+L-lactate) (n=7) groups. From S6 onward, hM4Di-CNO group consistently showed lower PI compared to control. However, concurrent L-lactate administration into the ACC (rescue group) can rescue this impairment. (B) PI (mean ± SD) of hM4Di-CNO group (n=8) from S21 onward showing gradual increase in PI when CNO was withdrawn. (C, D, and E) Non-rewarded PTs (PT1, PT2, and PT3 conducted on S3, S9, and S18, respectively) to test memory retrieval of OPAs for the control, hM4Di-CNO, and rescue groups. The percentage of digging time at the cued location relative to that at the non-cued locations are shown (mean ± SD). In both PT2 and PT3, the control group spent significantly more time digging the cued sand well above the chance level, indicating that the rats learned OPAs and could retrieve it. Contrasting to this, hM4Di-CNO group did not spend more time digging the cued sand well above the chance level irrespective of CNO administration before the PTs. The rescue group showed results similar to the hM4Di-CNO group if CNO is given without L-lactate. On the other hand, they showed results similar to the control group if L-lactate is concurrently given with CNO, indicating that this group learned OPAs and could retrieve it. *p<0.05, **p<0.01, ***p<0.001, one-sample t-test comparing the proportion of digging time at the cued sand well with the chance level of 16.67%. Non-rewarded PT4 (S20) which was conducted after replacing two OPAs with two NPAs (NPAs 7 and 8) in S19 for the control, hM4Di-CNO, and rescue groups. Results show that the control group spent significantly more time digging the new cued sand well above the chance level indicating that the rats learned the NPAs from S19 and could retrieve it in this PT. Contrasting to this, hM4Di-CNO group did not spend more time digging the new cued sand well above the chance level irrespective of CNO administration before the PT. The rescue group showed results similar to the hM4Di-CNO group if CNO is given without L-lactate. On the other hand, they showed results similar to the control group if L-lactate is concurrently given with CNO indicating that this group learned NPAs from S19 and could retrieve it. ***p<0.001, one-sample t-test comparing the proportion of digging time at the new cued sand well with the chance level of 16.67%. (G, H, and I) Non-rewarded PTs (PT5, PT6, and PT7 conducted on S23, S27, and S33, respectively) to test memory retrieval of OPAs for the hM4Di-CNO group. In both PT6 and PT7, the rats spent significantly more time digging the cued sand well above the chance level if the tests are done without CNO, indicating that the rats learned the OPAs and could retrieve it. However, CNO prevented memory retrieval during these PTs. ***p<0.001, one-sample t-test comparing the proportion of digging time at the cued sand well with the chance level of 16.67%. Non-rewarded PT4 (S35) which was conducted after replacing two OPAs with two NPAs (NPAs 9 and 10) in S34 for the hM4Di-CNO group. Results show that the rats spent significantly more time digging the new cued sand well above the chance level if CNO was not given before the PT, indicating that the rats learned the NPAs from S34 and could retrieve it in this PT. However, if CNO is given before the PT, the retrieval is impaired. ***p<0.001, one-sample t-test comparing the proportion of digging time at the new cued sand well with the chance level of 16.67%. (K and L) Latency (in seconds) before commencing digging at the correct well. Data shown as mean ± SD. (M, N, and O) Continuation study (S21–34) with the rescue group (n=5). The PI (mean ± SD) is shown in (M). PT5 and PT6 (conducted at S23 and S28, respectively) are shown in (N). PT7, which was conducted twice, is shown in (O). In S21, PI was 75.3 ± 4.5% for the six OPAs without CNO or L-lactate. For S22–28, two OPAs were replaced with two NPAs (NPAs 9 and 10). In S22, which was conducted with CNO only, PI dropped to 63.3 ± 5.6%. PT5 (N) confirms that the rats did not learn the NPAs 9 and 10 from S21. In S24–26, which were conducted with CNO only, PI remained similarly low (69.3 ± 4.9%, 66 ± 7.7%, and 66 ± 5.7%, respectively), indicating that the rats were not learning the NPAs 9 and 10 despite multiple sessions. In S27, which was conducted with CNO+L-lactate, PI raised to 74 ± 5.7%, suggesting that they have learned the NPAs in this session. This was confirmed by PT6 (N) which showed that they spent significantly more time in digging the new cued sand well above the chance level. In S29–34, the six OPAs were restored. Studies in these sessions showed that PI drops from ∼77% to ∼64% even for the OPAs if L-lactate is not given concurrently with CNO. Furthermore, PT7 (S34) (O) shows that CNO administration before PT impairs memory retrieval of existing associative schema which can be rescued by administering L-lactate concurrently. *p<0.05, **p<0.01, one-sample t-test comparing the proportion of digging time at the cued sand well with the chance level of 16.67%.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Event arena for multiple flavor-place paired associate training. (B) Timeline for schema experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Performance index (PI) (mean ± SD) during the acquisition of the six original PAs (OPAs) (S1–2, 4–8, 10–17) and new PAs (NPAs) (S19) of the control (n=6) and control-CNO (n=4) groups. The control group data is the same data as shown in Figure 2A. (B) Non-rewarded PTs (PT1, PT2, and PT3 conducted on S3, S9, and S18, respectively) to test memory retrieval of OPAs for the control-CNO group. (C) Non-rewarded PT4 (S20) which was conducted after replacing two OPAs with two NPAs (NPAs 7 and 8) in S19 for the control-CNO group. (D) Latency (in seconds) before commencing digging at the correct well for the control and control-CNO groups. Data shown as mean ± SD. The control group data is the same data as shown in Figure 2K.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Timeline for the experiments. OFT was conducted for all groups (hM4Di-saline, hM4Di-CNO, and hM4Di-CNO+L-lactate; n=8 in each group) after two paired associate (PA) training sessions. Additionally, OFT was conducted after S8 and S17 of PA training sessions for the hM4Di-CNO group. (B–D) Representative track plots (300 s) of hM4Di-saline, hM4Di-CNO, and hM4Di-CNO+L-lactate groups. The inner square within the plots marks the central zone. (E–G) Figures showing the distance traveled (in meters), time spent in the central zone (in seconds), and number of entries into the central zone in 300 s, respectively.
+
+### Gi pathway activation in the ACC astrocytes reduces cAMP and L-lactate levels in the ACC
 
 Astrocyte-derived L-lactate or exogenous L-lactate has been shown to confer beneficial effects in cognitive functions in several studies (Newman et al., 2011; Suzuki et al., 2011; Wang et al., 2017; Harris et al., 2019; Vezzoli et al., 2020; Iqbal et al., 2022). As hM4Di is a Gi-coupled receptor, its activation by CNO could lead to inhibition of adenylyl cyclase, resulting in a decreased level of cyclic adenosine monophosphate (cAMP) (Jones et al., 2018). cAMP in astrocytes acts as a trigger for L-lactate production (Choi et al., 2012; Horvat et al., 2021a; Horvat et al., 2021b; Zhou et al., 2021). We hypothesized that hM4Di activation in ACC astrocytes could lead to a decrease in cAMP with a consequent decrease in L-lactate level in the ACC. To confirm this, we prepared a cohort of eight rats by habituation and pretraining for PA experiments (Figure 3A). Then, bilateral injection of AAV8-GFAP-hM4Di-mCherry into the ACC was done in these rats. After 3 weeks, all rats were trained for two PA training sessions with six PAs. In S3, rats were given IP CNO (3 mg/kg body weight, n=4 rats) or saline (n=4 rats). After 30 min, PA training was started, and the rats were sacrificed at 60 min of CNO or saline administration. The brain was collected, and immunohistochemistry (IHC) was done to assess the cAMP level. As shown in Figure 3B and Figure 3C, cAMP was reduced in the hM4Di-expressed cells in the CNO-treated rats compared to the saline-treated rats. Colocalization analysis (Figure 3C) of hM4Di-mCherry with cAMP showed decreased Mander’s coefficient M1 (ratio of cAMP intensity colocalized with hM4Di-mCherry to total cAMP intensity) in the CNO-treated rats compared to the saline-treated rats (25.1±1.6 vs 32.6±1.9, respectively; t=6.01, df = 6, p=0.001, unpaired Student’s t-test).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig3-v1.jpg)
 
-**Figure 3.:** i activation on cyclic adenosine monophosphate (cAMP) and L-lactate levels in the ACC.(A) Experimental design to investigate the effect of Gi activation of ACC astrocytes on cAMP and L-lactate levels. (B and C) CNO decreases cAMP in the hM4Di-expressed cells. (B) Confocal micrograph of ACC 60 min after intraperitoneal administration of saline or CNO in hM4Di-expressed rats. Scale bars: 20 μm. (C) Colocalization analysis showing decreased Mander’s coefficient M1 (ratio of cAMP intensity colocalized with hM4Di-mCherry to total cAMP intensity) in CNO administered rats (n=4 rats in each group; 3 sections/rat). **p=0.001, unpaired Student’s t-test, t=6.01, df = 6. (D and E) Microdialysis measurement of cAMP (D) and L-lactate (E) levels in the extracellular fluid (ECF) of ACC before, 20 min, 40 min, and 60 min after intraperitoneal saline or CNO administration in hM4Di-expressed rats (n=4 rats in each group). ns = not significant, ***p<0.001, unpaired Student’s t-test.Figure 3—source data 1.Figure 3C–E in GraphPad Prism file format.
+**Figure 3.:** (A) Experimental design to investigate the effect of Gi activation of ACC astrocytes on cAMP and L-lactate levels. (B and C) CNO decreases cAMP in the hM4Di-expressed cells. (B) Confocal micrograph of ACC 60 min after intraperitoneal administration of saline or CNO in hM4Di-expressed rats. Scale bars: 20 μm. (C) Colocalization analysis showing decreased Mander’s coefficient M1 (ratio of cAMP intensity colocalized with hM4Di-mCherry to total cAMP intensity) in CNO administered rats (n=4 rats in each group; 3 sections/rat). **p=0.001, unpaired Student’s t-test, t=6.01, df = 6. (D and E) Microdialysis measurement of cAMP (D) and L-lactate (E) levels in the extracellular fluid (ECF) of ACC before, 20 min, 40 min, and 60 min after intraperitoneal saline or CNO administration in hM4Di-expressed rats (n=4 rats in each group). ns = not significant, ***p<0.001, unpaired Student’s t-test.
 
 Most cells that generate cAMP, including astrocytes, can export a portion of it into the extracellular fluid (ECF) (Stone and John, 1990; Rosenberg, 1992). Extracellular cAMP levels correlate with the intracellular cAMP levels and could be used to indirectly assess the intracellular cAMP levels and therefore the activity of adenylyl cyclase in the awake, freely moving animals (Stone and John, 1990; Nomikos et al., 2000; Klamer et al., 2005). To detect the effect of Gi activation of the ACC astrocytes on the ECF cAMP levels at different timepoints, another cohort of eight rats was prepared similarly and was given CNO (n=4) or saline (n=4) IP at S3 (Figure 3A). We collected ECF from the ACC by microdialysis before, 20, 40, and 60 min after the CNO or saline administration. As shown in Figure 3D, we observed a significant reduction in cAMP from baseline in the ACC ECF at these timepoints after CNO injection. These results indicated that the reduction in cAMP due to astrocytic Gi activation could be observed as early as 20 min after IP administration of CNO in hM4Di-expressed rats and the decrease is sustained at least until 60 min after CNO administration. We also measured the L-lactate levels in these microdialysate samples of the ACC. As shown in Figure 3E, we observed a significant decrease in the L-lactate level in the ACC at 20, 40, and 60 min after CNO injection compared to saline, suggesting a decreased L-lactate production from astrocytes due to Gi activation.
 
-## Administration of exogenous L-lactate can rescue the astrocytic Gi pathway activation-mediated impairment in PA learning
+### Administration of exogenous L-lactate can rescue the astrocytic Gi pathway activation-mediated impairment in PA learning
 
 Given that the Gi activation in the ACC astrocytes decreases L-lactate levels in the ACC, we reasoned that the impaired PA learning observed in the astrocytic Gi pathway-activated rats could be rescued by exogenous L-lactate administration if, indeed, the impairment was due to a decreased L-lactate level. To investigate this, we prepared another group of rats (n=7). These rats received bilateral injections of AAV8-GFAP-hM4Di-mCherry into the ACC to express hM4Di-mCherry in the astrocytes. They also received CNO 30 min before the start and 30 min after the end of each PA training session (similar to the hM4Di-CNO group). Moreover, they received exogenous L-lactate bilaterally (10 nmol, 1 μl per ACC) into the ACC 15 min after receiving CNO injections. Hereafter, this group of rats will be referred to as the ‘rescue group’.
 
 As shown in Figure 2A, the rescue group showed consistently higher PI than the hM4Di-CNO group. Interestingly, their PI was even higher than the control group in the middle stage (especially in S10–12) of PA learning (statistical data is given in Supplementary file 2). In S10–12, the PIs of the rescue group were >77%, which was achieved by the control group only at the late stage of PA training (S16–17). Overall, the findings suggested that the impaired PA learning observed in the hM4Di-CNO group was due to decreased L-lactate levels in the ACC upon astrocytic Gi pathway activation, and that exogenous L-lactate not only rescues this impairment but may also reduce the number of required PA training sessions to learn the six OPAs.
 
-## Gi pathway activation in the ACC astrocytes impairs memory retrieval whereas concurrent exogenous L-lactate administration rescues the impairment
+### Gi pathway activation in the ACC astrocytes impairs memory retrieval whereas concurrent exogenous L-lactate administration rescues the impairment
 
 Non-rewarded probe tests (PTs) were performed at S3, S9, and S18 to test the PA memory retrieval. Figure 2C–E shows the results of PT1–3, respectively. In PT1 (Figure 2C), no rat group spent significantly more time digging the cued sand well above the chance level. In both PT2 (Figure 2D) and PT3 (Figure 2E), the control group spent significantly more time digging the cued sand well above the chance level, indicating that they learned the PAs from the previous PA training sessions and were able to retrieve it during the non-rewarded PTs (PT2: 24.1 ± 5.8%, one-sample t-test, t=3.39, df = 6, p=0.015; PT3: 38.4 ± 9.7%, one-sample t-test, t=6.34, df = 7, p<0.001).
 
@@ -69,7 +93,7 @@ For PT1–3 in hM4Di-CNO group (n=15), eight rats received IP saline, whereas se
 
 In the rescue group, both PT2 and PT3 were conducted twice (Figure 2D and E). One test was done with only CNO in the morning and another test was done with CNO+L-lactate in the afternoon. We found that the rescue group could not retrieve PA memory if only CNO was given. However, they could retrieve PA memory if L-lactate was given concurrently with CNO as evidenced by the significantly more digging time spent in the cued sand well above the chance level (PT2: 27.8 ± 6.6%, one-sample t-test, t=4.45, df = 6, p=0.004; PT3: 32.1 ± 5%, one-sample t-test, t=8.24, df = 6, p<0.001). Taken together, these PT results suggested that Gi pathway activation in the ACC astrocytes can impair retrieval of already learned PAs, and concurrent exogenous L-lactate administration can rescue the impairment in memory retrieval.
 
-## Gi pathway activation in the ACC astrocytes impairs NPA learning despite the existence of prior associative schema whereas exogenous L-lactate administration rescues the impairment
+### Gi pathway activation in the ACC astrocytes impairs NPA learning despite the existence of prior associative schema whereas exogenous L-lactate administration rescues the impairment
 
 Rats that have prior associative schema showed rapid acquisition of NPAs in a single trial (Tse et al., 2007; Hasan et al., 2019; Liu et al., 2022). We replaced two of the six OPAs with two NPAs (NPAs 7 and 8) at S19 (Figure 2A) and conducted non-rewarded PT4 (PT4) after 24 hr (Figure 2F). Consistent with other reports (Tse et al., 2007; Hasan et al., 2019; Liu et al., 2022), the control group was able to learn the NPAs from the single PA training session (PI 69.5 ± 7.1%) and retrieve it during the PT4 as evidenced by the significantly more digging time spent at the correct new cued location (percent digging time in new cued sand well 42.9 ± 12.2%, one-sample t-test, t=6.1, df = 7, p<0.001). Similarly, the hM4Di-CNO group, which did not learn the NPAs at S19 (Figure 2A) and showed no retrieval of these NPAs in PT4 (Figure 2F), was able to learn the NPAs (NPAs 9 and 8) in a single PA training session at S34 (Figure 2B) and retrieved the NPAs in PT8 (Figure 2J) when the PT was done without CNO (percent digging time in the new cued sand well 35.4±8.7, one-sample t-test, t=6.11, df = 7, p<0.001). The rescue group also learned the NPAs from the single PA training session (PI 68.1 ± 7.1%) (Figure 2A) and retrieve it during the PT4 (Figure 2F) when the test was done with CNO+L-lactate (percent digging time in the new cued sand well 36.5 ± 5%, one-sample t-test, t=10.41, df = 6, p<0.001). This result confirmed that the rescue group developed the associative schema like control group and can assimilate the NPAs into the existing schema in a single PA training session if CNO+L-lactate is given during the PA training session (S19). However, PT4 without concurrent L-lactate administration (i.e., with only CNO) showed impaired memory retrieval in the rescue group, which, together with the result of PT8 of the hM4Di-CNO group, suggested that astrocytic Gi activation in the ACC impairs NPA memory retrieval and exogenous L-lactate administration can rescue the retrieval impairment.
 
@@ -79,25 +103,33 @@ Next, we examined whether these rats can learn the NPAs if we increase the numbe
 
 Next, we investigated whether these rats can recall OPAs if ACC astrocytic Gi pathway is activated, and no exogenous L-lactate is given. In S29 and S30, we checked the PI of rats by injecting both CNO and L-lactate (Figure 2M). Similar to the PIs in S8–17, the PIs in these two sessions were 77.3 ± 2.5% and 76.7 ± 3.7%, respectively. S31–33 were done with CNO only. In these sessions, the PIs dropped to 65.3 ± 2.7%, 63.3 ± 3%, and 64.7 ± 4%, respectively, indicating poorer performance without exogenous L-lactate, which is similar to the PIs of the hM4Di-CNO group. In S34, PT7 was conducted twice: once with only CNO and once with CNO+L-lactate (Figure 2O). The rats could not retrieve the existing associative schema memory if L-lactate was not given in addition to CNO, suggesting impaired memory retrieval if astrocytic Gi pathway is activated.
 
-## CNO application itself has no effect on PA learning and memory retrieval
+### CNO application itself has no effect on PA learning and memory retrieval
 
 Although CNO had long been considered biologically inert, studies showed that it is converted to clozapine. CNO was implicated in reduced startle response to loud acoustic stimuli and clozapine-like interoceptive stimulus effects in rodents (MacLaren et al., 2016; Manvich et al., 2018). Therefore, we investigated whether CNO itself had an effect on PA learning, schema formation, and memory retrieval. Rats (n=4) were bilaterally injected with AAV8-GFAP-mCherry into the ACC. After habituation and pretraining, these rats were similarly trained for PA learning. Before 30 min and after 30 min of each PA training session, they received IP CNO. As shown in Figure 2—figure supplement 2, CNO did not affect PA learning, schema formation, memory retrieval, NPA learning and retrieval, or latency (time needed to commence digging at the correct well). They behaved similarly to the control group. This result is consistent with our recent study, where CNO did not affect PA learning and schema formation in rats bilaterally injected with AAV8-GFAP-mCherry into the CA1 of the hippocampus (Liu et al., 2022).
 
-## Administration of CNO or CNO+L-lactate in rats expressing hM4Di in the ACC astrocytes does not induce abnormalities in an open field test
+### Administration of CNO or CNO+L-lactate in rats expressing hM4Di in the ACC astrocytes does not induce abnormalities in an open field test
 
 To test whether the ACC astrocytic Gi activation by CNO, or the combination of Gi activation and exogenous L-lactate administration, causes abnormalities in locomotion, we conducted an open field test (OFT). Rats (three groups: hM4Di-saline, hM4Di-CNO, and hM4Di-CNO+L-lactate; n=8 in each group) were prepared by injecting AAV8-GFAP-hM4Di-mCherry bilaterally into the ACC (Figure 2—figure supplement 3). After habituation, pretraining, and two PA training sessions, the OFT was conducted for all groups. No differences were observed in terms of the distance traveled, time spent in the central zone, or number of entries into the central zone. OFT was also performed after S8 and S17 for the hM4Di-CNO group (n=8), which showed no significant changes in these parameters.
 
-## Gi pathway activation in the ACC astrocytes reduces neuronal mitochondrial biogenesis whereas concurrent exogenous L-lactate administration rescues it
+### Gi pathway activation in the ACC astrocytes reduces neuronal mitochondrial biogenesis whereas concurrent exogenous L-lactate administration rescues it
 
 Mitochondrial dysfunction is a hallmark of numerous diseases that cause cognitive decline, for example, neurodegenerative diseases, genetic mitochondrial diseases, and aging (Golpich et al., 2017; Khacho et al., 2017). Multiple recent studies have provided striking evidence of the role of mitochondrial biogenesis in hippocampus-dependent cognitive functions (Khacho et al., 2017; Liu et al., 2018; Han et al., 2020; Jacobs et al., 2021). A recent study has demonstrated that exercise-induced L-lactate release from skeletal muscle or IP injection of L-lactate can induce hippocampal PGC-1α (peroxisome proliferator-activated receptor-gamma coactivator 1-alpha) expression and mitochondrial biogenesis in mice (Park et al., 2021). Recently, we observed increased expression of SIRT3, PGC-1α, and mitochondrial markers in the hippocampal neurons, along with an elevated mtDNA copy number, in anesthetized rats 1 hr after bilateral administration of exogenous L-lactate into the hippocampus (Akter et al., 2023). SIRT3 is known to promote mitochondrial biogenesis, reduce reactive oxygen species (ROS) production, and plays important role in learning and memory (Fu et al., 2012; Ansari et al., 2017; Satoh et al., 2017; Kim et al., 2019; Liu et al., 2019; Liu et al., 2021; Sun et al., 2021). PGC-1α was shown to activate SIRT3 promoter (Sun et al., 2021). On the other hand, SIRT3 was shown to promote PGC-1α expression (Fu et al., 2012), suggesting a positive feedback loop between SIRT3 and PGC-1α. As we have shown that ACC astrocytic Gi activation decreases L-lactate in the ACC ECF, we hypothesized that the PGC-1α/SIRT3/mitochondrial biogenesis axis could have been downregulated in the ACC neurons in the hM4Di-CNO group of rats. Figure 4 shows the results from the control, hM4Di-CNO, and rescue groups of rats used for schema experiments in the current study. The control rats did not receive CNO or L-lactate before being sacrificed. hM4Di-CNO group received IP CNO 1 hr before being sacrificed. Rescue group received IP CNO 75 min before and bilateral exogenous L-lactate into the ACC 60 min before being sacrificed. We observed a significantly decreased expression of PGC-1α, SIRT3, and ATPB (a component of mitochondrial membrane ATP synthase) in the ACC neurons of hM4Di-CNO group compared to the control group. The relative mtDNA copy number in ACC was also decreased in the hM4Di-CNO group (Figure 4G). On the other hand, the rescue group showed increased expression of PGC-1α, SIRT3, and ATPB in the ACC neurons as well as increased relative mtDNA copy number in the ACC, even higher than the control group, which is consistent with their faster PA learning than the control group. Together, these results revealed that the ACC astrocytic Gi activation impairs neuronal mitochondrial biogenesis by decreasing ECF L-lactate levels in the ACC and that exogenous L-lactate administration rescues the impaired mitochondrial biogenesis.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig4-v1.jpg)
 
-**Figure 4.:** i activation in anterior cingulate cortex (ACC) astrocytes reduces neuronal mitochondrial biogenesis whereas concurrent exogenous L-lactate administration rescues the impairment.(A–C) Representative confocal micrograph of PGC-1α (A)/SIRT3 (B)/ATPB (C) co-labeled with NeuN, glial fibrillary acidic protein (GFAP), and DAPI (4′,6-diamidino-2-phenylindole) in the ACC of the control, hM4Di-CNO, and rescue groups from schema experiments. Astrocytic Gi pathway activation (hM4Di-CNO group) in the ACC resulted in decreased PGC-1α/SIRT3/ATPB expression in the ACC, whereas concurrent exogenous L-lactate (rescue group) administration resulted in increased PGC-1α/SIRT3/ATPB expression. Scale bars: 20 µm. (D–F) Fluorescence intensity of PGC-1α (D)/SIRT3 (E)/ATPB (F) stained sections in the ACC of hM4Di-CNO and rescue groups were assessed and normalized to the control group of rats. Data shown as mean ± SD (n=4 rats per group, 3 sections/rat). **p<0.01, ***p<0.001, unpaired Student’s t-test. (G) mtDNA copy number abundance in the ACC of control, hM4Di-CNO, and rescue groups relative to nDNA. Relative mtDNA copy number was significantly decreased in the hM4Di-CNO group, whereas it was increased in the rescue group compared to control. Data shown as mean ± SD (n=4 rats per group). **p<0.01, unpaired Student’s t-test.Figure 4—source data 1.Figure 4D–G in GraphPad Prism file format.
+**Figure 4.:** (A–C) Representative confocal micrograph of PGC-1α (A)/SIRT3 (B)/ATPB (C) co-labeled with NeuN, glial fibrillary acidic protein (GFAP), and DAPI (4′,6-diamidino-2-phenylindole) in the ACC of the control, hM4Di-CNO, and rescue groups from schema experiments. Astrocytic Gi pathway activation (hM4Di-CNO group) in the ACC resulted in decreased PGC-1α/SIRT3/ATPB expression in the ACC, whereas concurrent exogenous L-lactate (rescue group) administration resulted in increased PGC-1α/SIRT3/ATPB expression. Scale bars: 20 µm. (D–F) Fluorescence intensity of PGC-1α (D)/SIRT3 (E)/ATPB (F) stained sections in the ACC of hM4Di-CNO and rescue groups were assessed and normalized to the control group of rats. Data shown as mean ± SD (n=4 rats per group, 3 sections/rat). **p<0.01, ***p<0.001, unpaired Student’s t-test. (G) mtDNA copy number abundance in the ACC of control, hM4Di-CNO, and rescue groups relative to nDNA. Relative mtDNA copy number was significantly decreased in the hM4Di-CNO group, whereas it was increased in the rescue group compared to control. Data shown as mean ± SD (n=4 rats per group). **p<0.01, unpaired Student’s t-test.
 
-## Mitochondrial biogenesis by L-lactate is dependent on MCT2 and NMDAR activity
+### Mitochondrial biogenesis by L-lactate is dependent on MCT2 and NMDAR activity
 
 Previous studies demonstrated that L-lactate entry into neurons is needed for its beneficial effect (Newman et al., 2011; Suzuki et al., 2011; Wang et al., 2017). After entry, L-lactate promotes plasticity gene expression by potentiating NMDA signaling (Yang et al., 2014; Magistretti and Allaman, 2018). We investigated whether entry into the neuron and NMDA receptor (NMDAR) activity are required for L-lactate-induced mitochondrial biogenesis (Figure 5). After habituation and pretraining, cannula placement was done bilaterally into the ACC of rats. After 1 week of recovery, two PA training sessions (S1 and S2) with six OPAs were conducted. To test whether L-lactate-induced neuronal mitochondrial biogenesis is dependent on MCT2, we bilaterally injected MCT2 antisense oligodeoxynucleotide (MCT2-ODN, n=8 rats, 2 nmol in 1 μl PBS per ACC) or scrambled ODN (SC-ODN, n=8 rats, 2 nmol in 1 μl PBS per ACC) into the ACC. After 11 hr, bilateral infusion of L-lactate (10 nmol, 1 μl) or ACSF (1 μl) was given into the ACC, and the rats were kept in the PA event arena. After 60 min (12 hr from MCT2-ODN or SC-ODN administration), the rats were sacrificed. As shown in Figure 5B, SC-ODN+L-lactate group showed a significantly increased relative mtDNA copy number compared to the SC-ODN+ACSF group (p<0.001, ANOVA followed by Tukey’s multiple comparisons test). However, this effect was completely abolished in MCT2-ODN+L-lactate group, suggesting that MCT2 is required for the L-lactate-induced mitochondrial biogenesis in the ACC.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design to investigate whether MCT2 and NMDAR activity are required for L-lactate-induced mitochondrial biogenesis. (B and C) mtDNA copy number abundance in the anterior cingulate cortex (ACC) of different rat groups relative to nDNA. Data shown as mean ± SD (n=4 rats in each group). ***p<0.001, ANOVA followed by Tukey’s multiple comparisons test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot showing decreased expression of MCT2 in the anterior cingulate cortex (ACC) 12 hr after injection of MCT2 antisense oligodeoxynucleotide. (B) Intensity of MCT2 was quantified and normalized with β-actin. Data shown as mean ± SD (n = 3 rats per group). **p < 0.01, unpaired Student’s t-test.
 
 To test whether L-lactate-induced mitochondrial biogenesis is NMDAR-dependent, we used D-(-)-2-amino-5-phosphonopentanoic acid (D-APV), which is a competitive inhibitor of the glutamate binding site of NMDAR. Four groups of rats were used for this experiment: the ACSF group, which received bilateral infusion of ACSF (1 µl) into the ACC; the L-Lactate group, which received bilateral infusion of L-lactate (10 nmol, 1 μl); the D-APV group, which received D-APV (30 mM, 0.5 μl); and the D-APV+L-Lactate group, which received L-lactate infusion 15 min after D-APV. After infusion, rats were kept in the PA event arena for 60 min and then sacrificed. While the relative mtDNA copy number was significantly increased in the L-lactate group (p<0.001, ANOVA followed by Tukey’s multiple comparisons test), this effect was not observed in the D-APV+L-lactate group, suggesting that NMDAR activity is required for L-lactate-induced mitochondrial biogenesis in the ACC.
 
@@ -107,7 +139,7 @@ There has been a paradigm shift in neuroscience in which animal behavior is now 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85751/elife-85751-fig6-v1.jpg)
 
-**Figure 6.:** i signaling and L-lactate modulating schema memory and mitochondrial biogenesis.L-lactate in the anterior cingulate cortex (ACC) is required for schema memory formation and neuronal mitochondrial biogenesis. Astrocytic Gi activation results in decreased L-lactate in the ACC with consequent impairments in schema memory and neuronal mitochondrial biogenesis which could be rescued by exogenous L-lactate administration directly into the ACC. Further research is needed to establish the mechanism and the extent of the contribution of mitochondrial biogenesis in schema memory formation (dotted arrow). MCT2: monocarboxylate transporter 2.
+**Figure 6.:** L-lactate in the anterior cingulate cortex (ACC) is required for schema memory formation and neuronal mitochondrial biogenesis. Astrocytic Gi activation results in decreased L-lactate in the ACC with consequent impairments in schema memory and neuronal mitochondrial biogenesis which could be rescued by exogenous L-lactate administration directly into the ACC. Further research is needed to establish the mechanism and the extent of the contribution of mitochondrial biogenesis in schema memory formation (dotted arrow). MCT2: monocarboxylate transporter 2.
 
 Schema is defined as a framework of knowledge. New learning occurs rapidly if it occurs against a background of established relevant schema. Rats trained with multiple flavor-place PAs develop schema that enables rapid assimilation of NPA learning (Tse et al., 2007; Tse et al., 2011; Hasan et al., 2019; Liu et al., 2022). Previous studies suggested that PA learning is hippocampus-dependent and the associative schema is stored in the ACC (Tse et al., 2007; Tse et al., 2011). In this study, we have demonstrated that ACC astrocytic Gi activation impairs PA learning and schema formation, PA memory retrieval, and NPA learning and retrieval by decreasing L-lactate level in the ACC. Although we have shown that these impairments are associated with diminished expression of proteins of mitochondrial biogenesis, the precise mechanisms of how astrocytic Gi activation affects neuronal functions and schema memory remain to be elucidated. We previously demonstrated that neuronal inhibition in either the hippocampus or the ACC impairs PA learning and schema formation (Hasan et al., 2019). In another recent study (Liu et al., 2022), we showed that astrocytic Gi activation in the CA1 impaired PA training-associated CA1-ACC projecting neuronal activation. Yao et al., 2023 recently showed that reduction of astrocytic lactate dehydrogenase A (an enzyme that reversibly catalyze L-lactate production from pyruvate) in the dorsomedial prefrontal cortex reduces L-lactate levels and neuronal firing frequencies, promoting depressive-like behaviors in mice. These impairments could be rescued by L-lactate infusion. It is possible that the impairment in PA learning and schema observed in our study might have involved a similar functional consequence of reduced neuronal activity in the ACC neurons upon astrocytic Gi activation.
 
@@ -125,74 +157,448 @@ In summary, the present study illustrates that ACC astrocytic Gi pathway activat
 
 ## Materials and methods
 
-## Animal use and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, male)</td>
+      <td>Adult Sprague- Dawley rats (250–300 g)</td>
+      <td>Laboratory Animal Services Centre, Chinese University of Hong Kong, SAR, China</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>AAV8-GFAP-hM4Di-mCherry</td>
+      <td>Shanghai Taitool Bioscience Co. Ltd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>AAV8-GFAP-mCherry</td>
+      <td>Shanghai Taitool Bioscience Co. Ltd</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rat MCT2 antisense oligodeoxynucleotide (ODN), 200 nmol (HPLC purified)</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td>Cat #: 107968967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rat Relative scrambled ODN, 200 nmol (HPLC purified)</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td>Cat #: 107969138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rat D-loop Forward and Reverse Primer</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td>Cat #: 107056074 and Cat #: 107056075</td>
+      <td>Used to measure mtDNA by real-time PCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rat β-actin Forward and Reverse Primer</td>
+      <td>Integrated DNA Technologies (IDT)</td>
+      <td>Cat #: 107056076 and Cat #: 107056077</td>
+      <td>Used to measure nDNA by real-time PCR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (Mouse Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab4648</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (Rabbit Polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat #: AB978</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (Chicken Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab205402</td>
+      <td>1:1000 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cAMP (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab134901</td>
+      <td>1:500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SIRT3 (Rabbit Polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: SAB5700222</td>
+      <td>1: 250 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGC-1α (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab191838</td>
+      <td>1: 500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATPB (Mouse Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab14730</td>
+      <td>1: 500 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MCT2 (Rabbit Polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat #: AB3542</td>
+      <td>1: 500 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (Mouse Monoclonal)</td>
+      <td>Immunoway</td>
+      <td>Cat #: YM3028</td>
+      <td>1: 5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 (Goat Anti-Mouse Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A11001</td>
+      <td>1:300 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 594 (Goat Anti-Mouse Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A11032</td>
+      <td>1:300 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 (Goat Anti-Rabbit Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A11034</td>
+      <td>1:300 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 594 (Goat Anti-Mouse Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A11037</td>
+      <td>1:300 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit Secondary Antibody, HRP, Polyclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat #: 31460</td>
+      <td>1: 5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse Secondary Antibody, HRP, Polyclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat #: 62–6520</td>
+      <td>1: 5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lactate Fluorescence Assay kit</td>
+      <td>Abcam</td>
+      <td>Cat #: ab65331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cAMP complete ELISA kit</td>
+      <td>Abcam</td>
+      <td>Cat #: ab133051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Mini Kits</td>
+      <td>QIAGEN</td>
+      <td>Cat #: 1725270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanced Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat #: 1725270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RIPA Buffer</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: 20-188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phosphatase and protease inhibitor cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bradford assay</td>
+      <td>Bio-Rad</td>
+      <td>Cat #: 5000205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Western Bright ECL HRP substrate</td>
+      <td>Advansta</td>
+      <td>Cat #: K12045-D20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-oxide (CNO) dihydrochloride</td>
+      <td>Hello Bio</td>
+      <td>Cat #: HB6149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: S3014-1kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-lactate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: L-7022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(-)-2-Amino-5-Phosphonopentanoic acid (D-APV)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: A8054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Artificial cerebrospinal fluid (ACSF)</td>
+      <td>Harvard Apparatus</td>
+      <td>Cat #: 597316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dorminal 20%</td>
+      <td>Alfasan International BV</td>
+      <td>Cat #: 013003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: U2500-500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI ImageJ</td>
+      <td>National Institutes of Health, Bethesda, MD, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism GraphPad</td>
+      <td>GraphPad Software, San Diego, CA, USA</td>
+      <td></td>
+      <td>Version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microdialysis guide cannula (CMA 11 elite) and probe (3 mm membrane)</td>
+      <td>CMA Inc</td>
+      <td></td>
+      <td>Used to collect ECF from ACC for L-lactate and cAMP assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stainless steel guide cannulae, OD 0.41 mm-27G/C</td>
+      <td>RWD Life Science</td>
+      <td>Cat #: 62069</td>
+      <td>Used in drug and ODN delivery into ACC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dummy cannulae</td>
+      <td>RWD Life Science</td>
+      <td>Cat #: 62169</td>
+      <td>Used in drug and ODN delivery into ACC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Brain slicer</td>
+      <td>Braintree Scientific, Braintree, MA, USA</td>
+      <td></td>
+      <td>Used to collect ACC from whole brain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereotaxic frame</td>
+      <td>RWD</td>
+      <td></td>
+      <td>Used to fix head of rats during surgeries</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>33-Gauge metal needle, 10 μl micro-syringe</td>
+      <td>Hamilton, NV, USA</td>
+      <td></td>
+      <td>Used in AAV and drug delivery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microinjection pump</td>
+      <td>World Precision Instruments, USA</td>
+      <td></td>
+      <td>Used in AAV delivery</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal use and care
 
 Adult male Sprague-Dawley rats weighting about 250–300 g were used in this study. All rats were housed in a standard laboratory facility (25°C, 50% humidity, 12 hr light/dark cycle with light on at 7:00 AM). All animals were supplied by the Laboratory Animal Services Centre, Chinese University of Hong Kong. The animal experimentation procedures were carried out according to the guidelines created by the Committee on Use and Care of Animals, Department of Health, Hong Kong SAR. The following are the license numbers to conduct experiments: (22-2) in DH/HT&A/8/2/5 Pt.8 and (22-3) in DH/HT&A/8/2/5 Pt.8. The approval for ‘Ethical Review of Research Experiments Involving Animal Subjects’ were taken by Animal Research Ethics Sub-Committee, City University of Hong Kong (References: A-0417 and A-0513). Rats were provided with food and water ad libitum except for the period of schema experiments when food restriction was applied.
 
-## PA behavioral protocol
+### PA behavioral protocol
 
-## PA experiment design
+#### PA experiment design
 
 We used a behavioral paradigm of multiple flavor-place PAs learning as described previously (Tse et al., 2007). The event arena, as shown in Figure 2—figure supplement 1A, contains four start boxes and multiple sand wells. A flavored food pellet (flavor cue) is given in the start box, and a specific sand well (place cue) contains three more of that flavored food pellet at the bottom of it. There are multiple specific flavor-place PAs, for example beef flavor is paired with sand well number 1, strawberry flavor is paired with sand well number 2, and so on. When a rat is placed in a start box that contains a specific flavor cue, they need to use spatial memory to find out the correct sand well that contains that specific flavored food.
 
 Our experimental setup and timeline is illustrated in Figure 2—figure supplement 1B. We habituated rats for 5 days (sessions –7 to –3) so that they become familiar with the event arena and learn digging sand wells. Then, we conducted pretraining for 2 days (sessions –2 and –1) to introduce them to the six original flavor-place PAs (OPAs). After that, sessions 1–18 were conducted as 4–5 sessions/week. In each of the sessions (S) of 1, 2, 4–8, 10–17, each rat was trained with six PAs, and the normal control rats are expected to learn the flavor-place associations so that if a flavor cue is given in the start box, they should be able to find out the correct cued sand well to get more of that flavored food. S3, S9, S18 were non-rewarded PTs where rats were given a flavor cue at the start box, but the cued sand well did not contain any food pellet. After getting the flavor cue at the start box, rats were given 120 s to find out the cued sand well. PTs reflect memory retrieval. If a rat can retrieve PAs memory well, it will spend more time in digging the cued sand well. In S19, two NPAs (NPAs 7 and 8) were introduced by replacing two old PAs (PA1 and PA6, respectively). The normal control rats, using the existing schema developed from the previous sessions, are expected to learn the NPAs in this single session. This session was followed by S20 which is a non-rewarded PT, where the learning and memory retrieval of the NPAs learned from S19 were tested. If a rat learns the NPAs introduced in S19 well, it will spend more time digging the new cued sand well.
 
-## Performance measures in PA training sessions
+#### Performance measures in PA training sessions
 
-PI: It was calculated for each rat with the following formula:PI=[ 100 − (Total number of errors for all 6 PAs in a session for a rat ÷6) 5 ×100 ] %
+PI: It was calculated for each rat with the following formula:
+
+$$
+PI=[ 100 − \frac{(Total number of errors for all 6 PAs in a session for a rat \div6) }{5} \times100 ] %
+$$
 
 Errors is the number of incorrect (non-cued) sand well(s) the rat dug before digging the correct well (cued). Digging was defined as displacement of sand around sand well by rat.
 
-## Performance measures in PT1 (S3), PT2 (S9), and PT3 (S18)
+#### Performance measures in PT1 (S3), PT2 (S9), and PT3 (S18)
 
 Digging time (out of 120 s) in the cued and non-cued sand wells were measured. Then proportion of time spent in digging the cued and non-cued wells in respect to the total digging time was calculated as follows:
 
-Percentage of digging time in cued well =Total time spent in digging the cued wellTotal digging time ×100%
+Percentage of digging time in cued well =
 
-Percentage of digging time in non-cued well =Total time spent in digging the noncued wells÷5Total digging time ×100%
+$$
+\frac{Total time spent in digging the cued well}{Total digging time} \times100%
+$$
 
-## Performance measures in PT4 (S20)
+Percentage of digging time in non-cued well =
 
-Percentage of digging time in new cued well =Total time spent in digging the new cued wellTotal digging time ×100%
+$$
+\frac{Total time spent in digging the noncued wells\div5}{Total digging time} \times100%
+$$
 
-Percentage of digging time in new non-cued well =Total time spent in digging the new noncued wellTotal digging time ×100%
+#### Performance measures in PT4 (S20)
 
-Percentage of digging time in original non-cued wells =Total time spent in digging the original noncued wells÷4Total digging time ×100%
+Percentage of digging time in new cued well =
 
-## Open field test
+$$
+\frac{Total time spent in digging the new cued well}{Total digging time} \times100%
+$$
+
+Percentage of digging time in new non-cued well =
+
+$$
+\frac{Total time spent in digging the new noncued well}{Total digging time} \times100%
+$$
+
+Percentage of digging time in original non-cued wells =
+
+$$
+\frac{Total time spent in digging the original noncued wells\div4}{Total digging time} \times100%
+$$
+
+### Open field test
 
 OFT was performed in a square-shaped apparatus (80×80×40 cm3) to evaluate the animals’ locomotor activity and anxiety-like behaviors. The rats were familiarized with the open field testing room over a period of 30–60 min for 2 consecutive days. After habituation, pretraining, and 2 PA training sessions, the OFT was conducted for three groups of rats (hM4Di-saline, hM4Di-CNO, and hM4Di-CNO+L-lactate). OFT was also performed after S8 and S17 for the hM4Di-CNO group. Thirty minutes after CNO or saline and 15 min after L-lactate injection, the rats were placed in the OFT for 5 min. Total distance (m) traveled, time (s) spent in the central zone, and the numbers of entries into the central zone for each rat were measured using Any-maze (Stoelting Co., Wood Dale, IL, USA) tracking software. The open field was cleaned with 75% ethanol between each trial. The central zone of the open field was defined by sketching a square (40×40 cm2) at the center of the apparatus.
 
-## Stereotactic surgical procedures, viral vector injection, and CNO administration
+### Stereotactic surgical procedures, viral vector injection, and CNO administration
 
 To express hM4Di in the ACC astrocytes, AAV8-GFAP-hM4Di-mCherry was used (original viral titer 3×10¹² vg/ml diluted in 1:10 in PBS, Shanghai Taitool Bioscience Co. Ltd). Rats were anesthetized with 50 mg/kg sodium pentobarbital (Dorminal 20%, Alfasan International BV, Woerden, Holland) administered IP and placed in a stereotaxic frame. After exposing the skull, bilateral craniotomy was done (0.5–0.8 mm holes, 2.2–3.8 mm anterior to bregma, 0.5–1.0 mm lateral from midline). A 10 μl micro-syringe (Hamilton, NV, USA) with a 33-gauge metal needle was used to perform the microinjections. We injected 400 nl of viral vector bilaterally into the ACC regions (2–3 mm ventral from the surface of the skull at the craniotomy site) with injection flow rate of 0.1 μl/min (controlled by microinjection pump, World Precision Instruments, USA) (Figure 1—figure supplement 1). The needle was left in place for an additional 5 min after the injection was completed. Then it was slowly withdrawn. After withdrawing the needle, the scalp was sutured, and immediate postoperative care was provided with local anesthetic (xylocaine, 2%) applied to the incision site for analgesia and allowing the rats to recover from anesthesia under a heat pad. The rats were returned to their home cage after awaking. All rats were allowed 3 weeks of rest to ensure hM4Di expression.
 
 CNO dihydrochloride (Hello Bio, Avonmouth, UK, cat. HB6149), a synthetic ligand to activate hM4Di, was dissolved in 0.9% NaCl and was injected IP at a dose of 3 mg/kg body weight. This dose did not produce any seizure in rats.
 
-## Chronic ACC cannulation
+### Chronic ACC cannulation
 
 Rats were anesthetized with 50 mg/kg IP sodium pentobarbital administration. Stainless steel guide cannulae (double/OD 0.41 mm-27G/C, Cat #: 62069, RWD Life Science) were bilaterally positioned into the ACC region (2.2–3.8 mm anterior to bregma and 0.5–1.0 mm lateral from midline, 2 mm dorso-ventral from skull surface) (Figure 1—figure supplement 1). The guide cannulae were fixed to the skull with dental cement (mega PRESSNV+JET-X, megadental GmbH, Budingen, Germany). Dummy cannulae (Cat #: 62169, RWD Life Science) 0.5 mm longer than the guide cannulae were inserted into the guide cannulae to prevent blockage and reduce the risk of infection. The rats were provided with a minimum recovery period of 1 week before other experimental procedures.
 
 Drugs were administered bilaterally into the ACC at a flow rate of 0.333 μl/min using a 33-gauge internal injecting needle. Drugs and their doses per ACC: 10 nmol L-lactate (Sigma-Aldrich, Cat #: L7022) in 1 μl ACSF (Wang et al., 2017); 0.5 μl of 30 mM D-APV (Sigma-Aldrich, Cat #: A8054) dissolved in ACSF (Wang et al., 2012). MCT2 antisense oligodeoxynucleotide (ODN) (MCT2-ODN; 5′-GACTCTGATGGCATTTCTGAG-3′) or relative scrambled ODN (SC-ODN; 5′-GGTTTACGAGTCGTCCGTAAT-3′) were dissolved in PBS pH 7.4, as described previously (Suzuki et al., 2011). ODNs were phosphorothioated on the three terminal bases at each end to protect against nuclease degradation. ODNs were HPLC-purified and purchased from Integrated DNA Technologies (IDT). Two nmol in 1 μl of ODNs were injected per ACC. The needle was kept in place for an additional 5 min to allow proper diffusion.
 
-## Measurement of cAMP and L-lactate levels
+### Measurement of cAMP and L-lactate levels
 
 To investigate the effect of ACC astrocytic Gi pathway activation on cAMP and L-lactate levels in the ACC, 16 rats were habituated and pretrained for PA experiment as shown in Figure 3A. Then bilateral AAV8-GFAP-hM4Di-mCherry injection into the ACC was done as described before in all rats. In addition, a micro-dialysis guide cannula (CMA Inc) was inserted into the right sided ACC (2.5 mm ventral from the surface of the skull at the craniotomy site) in the rats that was used for microdialysis later (eight rats). After 3 weeks, all rats were trained for two sessions with six OPAs. For microdialysis in the next session (S3), rats were given IP CNO (3 mg/kg body weight) (n=4 rats) or saline (n=4 rats) and placed in the PA even arena. ECF from the ACC was collected before, 20, 40, and 60 min after CNO or saline administration. For collecting ECF, a microdialysis probe which is a Y-shaped catheter containing an inlet and outlet port with a fibrous, semi-permeable membrane at the bottom tip (CMA 11 elite, 3 mm membrane) was inserted into guide cannula. One fluorinated ethylene propylene (FEP) tube (ID 0.12 mm, CMA Inc) was connected to the inlet port and another FEP tube was connected to outlet port. Through inlet FEP tube, artificial cerebrospinal fluid (ACSF, Harvard Apparatus, Cat #: 597316) was infused into the ACC to maintain artificial neurotransmitter concentration gradient. Through the outlet tube, ECF from the ACC was collected by micro-infusion pump (WPI). For IHC staining of cAMP in S3, rats were given IP CNO (3 mg/kg body weight) (n=4 rats) or saline (n=4 rats). After 30 min, PA training was started, and the rats were sacrificed at 60 min of CNO or saline administration.
 
 The dialysate collected from the ACC were kept at –80°C until further use. cAMP complete ELISA kit (Abcam, USA, Cat #: ab133051) was used to determine the cAMP concentration in ACC dialysate according to the manufacturer’s protocol. Lactate Fluorescence Assay kit (Abcam, USA, Cat #: ab65331) was used to determine the L-lactate concentration from the same ACC dialysate according to the manufacturer’s protocol.
 
-## IHC and confocal microscopy
+### IHC and confocal microscopy
 
 After completing experiments, rats were anesthetized by urethane (1.5 g/kg, IP) and perfused transcardially with ice-cold PBS for approximately 5 min and then perfused with 4% paraformaldehyde (PFA). The whole brain was taken out and postfixed in 4% PFA overnight at 4°C and cryoprotected in 30% sucrose dissolved in 1× PBS for an additional 3 days at 4°C. The brains were then stored in OCT medium at –80°C until further use. For IHC, each brain was sectioned at 40 μm using cryostat (Leica, USA) and processed as free-floating sections. Six to eight sections were selected for staining per rat. Sections were incubated with blocking solution of Triton X-100 (0.3% [vol/vol]) and 10% normal goat serum in 0.01 M PBS for 1 hr at room temperature after a brief wash. Then sections were incubated with primary antibodies in blocking solution for overnight at 4°C. In the following day, slices were washed three times (5 min each) and incubated with targeted Alexa Flour secondary antibodies (1: 300) in DAPI (4′,6-diamidino-2-phenylindole) for 2 hr at room temperature. Then the sections were mounted into microscopic slides (Epredia SuperFrost Plus Adhesion Microscopic Slides) and covered with coverslips (Eprdia Cover Slip) along with fluorescent mounting medium (DAKO). The imaging was done by inverted laser scanning confocal microscope (LSM 880; Carl Zeiss, Oberkochen, Germany). The confocal images for quantitative analysis were acquired under 20× or 40× oil-immersion objectives. The ratio between the intensity of fluorescence and area of analysis (mm2) was calculated using FIJI ImageJ software and taken as quantitative expression of targeted immunofluorescence.
 
-## Relative mitochondrial DNA content quantification
+### Relative mitochondrial DNA content quantification
 
-After completing experiments, rats were anesthetized by urethane (1.5 g/kg, IP) followed by decapitation. Brain was sectioned on an anodized aluminum brain slicer (Braintree Scientific, Braintree, MA, USA) and the ACC were dissected from the sections and kept at –80°C. Total genomic DNA was extracted from ACC using QIAamp DNA Mini Kits (Cat #: 51304) according to the manufacturer’s protocol. Genomic DNA quality and quantity were checked with NanoDrop 1000 Spectrophotometer (Thermo Scientific). The DNA sample was stored at –20°C until further use. Quantitative real-time PCR was performed with the SsoAdvanced Universal SYBR Green Supermix (Cat #: 1725270) using Applied Biosystems QuantStudio 3 Real-Time PCR Systems. β-Actin gene and mitochondrial D-loop were used as nuclear DNA (nDNA) and mtDNA, respectively, to investigate the abundance of mtDNA relative to nDNA, as described previously (Akter et al., 2023). The primer sequences (Branda et al., 2002; Chou et al., 2007) and reaction mixture protocol are given in Supplementary file 3. Thermal cycling was done according to the SsoAdvanced Universal SYBR Green Supermix protocol. DNA from each rat was amplified as triplicate. After obtaining both mtDNA and nDNA Ct values from Real Time PCR software, Ct values were averaged from triplicates of each rat. To determine the mtDNA content relative to the nDNA, the following equation (Rooney et al., 2015) was used:RelativemitochondrialDNAcontent=2×2(nDNACt–mtDNACt)
+After completing experiments, rats were anesthetized by urethane (1.5 g/kg, IP) followed by decapitation. Brain was sectioned on an anodized aluminum brain slicer (Braintree Scientific, Braintree, MA, USA) and the ACC were dissected from the sections and kept at –80°C. Total genomic DNA was extracted from ACC using QIAamp DNA Mini Kits (Cat #: 51304) according to the manufacturer’s protocol. Genomic DNA quality and quantity were checked with NanoDrop 1000 Spectrophotometer (Thermo Scientific). The DNA sample was stored at –20°C until further use. Quantitative real-time PCR was performed with the SsoAdvanced Universal SYBR Green Supermix (Cat #: 1725270) using Applied Biosystems QuantStudio 3 Real-Time PCR Systems. β-Actin gene and mitochondrial D-loop were used as nuclear DNA (nDNA) and mtDNA, respectively, to investigate the abundance of mtDNA relative to nDNA, as described previously (Akter et al., 2023). The primer sequences (Branda et al., 2002; Chou et al., 2007) and reaction mixture protocol are given in Supplementary file 3. Thermal cycling was done according to the SsoAdvanced Universal SYBR Green Supermix protocol. DNA from each rat was amplified as triplicate. After obtaining both mtDNA and nDNA Ct values from Real Time PCR software, Ct values were averaged from triplicates of each rat. To determine the mtDNA content relative to the nDNA, the following equation (Rooney et al., 2015) was used:
 
-## Western blot analysis
+$$
+RelativemitochondrialDNAcontent=2\times2^{(nDNACt–mtDNACt)}
+$$
+
+### Western blot analysis
 
 The samples were homogenized in mixture (100:1) of RIPA buffer (150 mM NaCl, 50 mM Tris pH 7.4, 1% Triton X-100, 0.1% SDS, 1% sodium deoxycholate) and phosphatase and protease inhibitor cocktail (Sigma-Aldrich). Homogenates were then centrifuged at 14,000 × g for 30 min at 4°C. The supernatants were collected carefully as total protein and then Bradford assay (Bio-Rad, Cat #: 5000205) was used to determine the protein concentration. Using sodium dodecyl sulphate-polyacrylamide gel electrophoresis, 20 µg of proteins were separated, and then transferred to a polyvinylidene fluoride membrane. Then the membrane was incubated with 5% non-fat milk in TBST (containing 0.1% Tween 20) for 1 hr followed by incubation with primary antibodies with reference concentration for overnight at 4°C. Next day, membranes were washed for three times (5 min each) with TBST and incubated for 2 hr with horseradish peroxidase coupled secondary goat anti-rabbit or anti-mouse IgG (1:5000, Invitrogen) in TBST. Then membranes were washed three times (5 min each). Western Bright ECL HRP substrate (Advansta, Inc, Cat #: K12045-D20) was used to visualize the blot. Images were captured and processed by Chemidoc Touch Imaging System (Bio-Rad) and quantified by FIJI ImageJ software (National Institutes of Health, Bethesda, MD, USA). Expression of target proteins were normalized with that of β-actin level.
 
-## Data analysis
+### Data analysis
 
 Data analyses were done with Prism v.10 (GraphPad Software, La Jolla, CA, USA) or MS Excel. Data are presented as mean ± SD as appropriate. Comparisons of continuous data were done with two-tailed Student’s t-test where appropriate. Image analysis was done with ImageJ. Figures were generated with Prism v.10 and Inkscape.

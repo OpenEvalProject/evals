@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Cecil H. and Ida Green Center for Reproductive Biology Sciences, University of Texas Southwestern Medical Center Dallas United States
-2. https://ror.org/05byvp690 Department of Internal Medicine, University of Texas Southwestern Medical Center Dallas United States
-3. https://ror.org/05byvp690 Division of Cardiology, Department of Molecular Biology, McDermott Center for Human Growth and Development, University of Texas Southwestern Medical Center Dallas United States
-4. https://ror.org/05byvp690 Hamon Center for Regenerative Science and Medicine, University of Texas Southwestern Medical Center Dallas United States
-5. https://ror.org/05byvp690 Lyda Hill Department of Bioinformatics, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center Dallas United States
+1. Cecil H. and Ida Green Center for Reproductive Biology Sciences, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+2. Department of Internal Medicine, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+3. Division of Cardiology, Department of Molecular Biology, McDermott Center for Human Growth and Development, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+4. Hamon Center for Regenerative Science and Medicine, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+5. Lyda Hill Department of Bioinformatics, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
@@ -39,33 +39,65 @@ Here, we apply a single-cell CRISPRi screen for 25 CHD-associated enhancers in a
 
 ## Results
 
-## Single-cell screens of CHD-associated enhancers during CM differentiation
+### Single-cell screens of CHD-associated enhancers during CM differentiation
 
 Whole genome sequencing has identified >50,000 de novo variants in 749 CHD patients (Richter et al., 2020). Some of these variants may contribute to CHD by modulating the activity of transcriptional enhancers that are active in cardiac development. To identify these enhancers for functional study, we overlapped variants with published epigenetic datasets of active enhancers including open chromatin (ATAC-Seq) and histone acetylation (H3K27ac) (Liu et al., 2017; Zhang et al., 2019). We prioritized a diverse set of CHDs from atrial and septal defects to tetralogy of Fallot (Supplementary file 1). We also filtered for enhancers within 100 kb of genes with known roles in heart development. Overall, we prioritized 25 enhancers, including those in proximity to known cardiac regulators, with many exhibiting high predicted sequence conservation (Siepel et al., 2005; van den Hoogenhof et al., 2018; Figure 1A). Epigenetic evidence indicates that many of these enhancers and their putative downstream genes become active at early time points of cardiac differentiation (Tompkins et al., 2016; Figure 1B–C). Overall, these data suggest that the prioritized CHD-associated enhancers may have roles in early cardiac lineage commitment, and we hypothesize that perturbations of these enhancers may impact cell fate.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genome browser snapshot emphasizing features of a targeted enhancer about 15 kb upstream of the RBM20 gene. Yellow highlights enhancer region. (B) H3K27ac and open chromatin (ATAC-Seq) enrichment for targeted enhancers across multiple time points of CM differentiation (Liu et al., 2017; Tompkins et al., 2016; Zhang et al., 2019). (C) Expression of putative target genes across multiple stages of CM differentiation. Expression defined as fold change over the day 0 expression of a target gene (Tompkins et al., 2016). (D) Schematic of single-cell CRISPRi screen. H9-dCas9-KRAB cells are infected with a lentiviral sgRNA library and differentiated over 8 days into CMs followed by scRNA-seq. Individual cells are linked to sgRNA perturbations and changes in transcriptional cell state. (E) UMAP visualization of H9-derived cells after 8 days of differentiation. Seven Louvain clusters indicated. (F) Expression of the top 100 cluster defining genes for each Louvain cluster cell type. (G) MALAT1 expression in control (non-targeting) and sgMALAT1 cells (*p<0.05 by Mann-Whitney U). (H) Distribution of cells receiving sgNT, sgTBX5 PROM1, sgTBX5 ENH6 that differentiate into CM and mesoderm states (*p<0.05 and **p<0.001 by hypergeometric test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Brightfield images of H9-dCas9-KRAB cells receiving sgRNAs targeting OCT4 or NT control (Scale bar = 200μm). (B) (Top) OCT4 expression in cells receiving sgRNAs targeting OCT4 or NT control. For both, qPCR quantification normalized to reference gene (RPLP0) and then compared with control cells. (Bottom) MALAT1 expression in cells receiving sgRNAs targeting MALAT1 or NT control (n = 3 technical replicates). (C) Distribution of sgRNA counts in cells with sgRNAs detected. (D) Distribution of cell counts for each sgRNA. (E) Distribution of cell counts for each targeted region. (F) Feature plots of marker genes for neuronal (+SOX2), cardiomyocyte (+TNNT2), mesoderm (+FN1), epithelial (+EPCAM), cardiac fibroblast (+COL3A1), and endoderm cells (+TTR). (G) NGFRAP1 expression in cells receiving sgRNA targeting NGFRAP1 or NT controls (*p<0.05 by Mann-Whitney U). (H) Distribution of cells receiving sgRNAs targeting ZIC2 promoter or NT controls after differentiation (*p<0.05 by hypergeometric test). (I) TBX5 expression in cells receiving sgRNAs targeting TBX5 enhancer 3, enhancer 5, or non-targeting NT control (n = 3 technical replicates).
 
 To test this hypothesis, we used CRISPRi-mediated single-cell perturbation screens to assess the functions of CHD-associated enhancers during early cardiac lineage commitment (Figure 1—figure supplement 1A–B). We modeled this process by differentiating hESCs toward CMs through WNT modulation. Notably, to preserve cellular heterogeneity, we performed CM differentiation without metabolic selection (Tohyama et al., 2013). To capture the early events of lineage commitment, we examined cells at day 8 of differentiation (Figure 1D). Overall, we targeted 397 sgRNAs spanning 25 enhancers, 19 promoters of their putative target genes, and non-genome targeting (NT) controls (Supplementary file 1). After single-cell RNA sequencing (RNA-seq) and stringent filtering to remove low-quality cells and doublets, we retained 80,343 high-quality cells for downstream analysis. On average, we detected one sgRNA in each cell (Figure 1—figure supplement 1C–E and Supplementary file 2).
 
 To define the cell populations during early differentiation, we clustered cells to identify seven distinct cell populations across all three germ layers (Figure 1E and Supplementary file 3). We focused on the three mesoderm-derived clusters due to their relevance to cardiac development. These clusters included TNNT2+ CMs, FN1+ mesodermal cells (Cheng et al., 2013), and COL3A1+ cardiac fibroblasts (van Nieuwenhoven et al., 2013; Figure 1F and Figure 1—figure supplement 1F). Verifying the efficiency of CRISPRi-mediated repression, we observed robust depletion of control genes for positive control sgRNAs (pMalat1 <2.2e-308, Mann-Whitney U) (Figure 1G and Figure 1—figure supplement 1G).
 
-## CRISPRi of CHD-associated enhancers delays CM differentiation
+### CRISPRi of CHD-associated enhancers delays CM differentiation
 
 To test the ability of our approach to detect changes in cell state from CRISPRi perturbations, we included positive control sgRNAs targeting the promoter of well-known cardiac genes as an internal quality control measure. We first examined sgRNAs targeting the promoter of ZIC2, a known regulator of both neuronal and cardiac lineages necessary for the successful differentiation of both (Luo et al., 2015; Xu et al., 2020). Compared to cells with non-target sgRNAs, the cells containing sgRNAs for ZIC2 promoter were significantly depleted for neuronal and cardiac populations (pneuronal = 4.7e-61; pcardiomyocytes = 1.9e-5, hypergeometric test). Consistent with a stalled differentiation state, these cells exhibit enrichment for an early mesodermal state (Figure 1—figure supplement 1H). Second, based on published knockout studies showing that TBX5 repression prevents proper CM specification (Kathiriya et al., 2021), we also included sgRNAs targeting the promoter of TBX5. We observed that loss of TBX5 expression led to a depletion in CMs (pTBX5 promoter = 2.0e-5; pTBX5 enhancer 6 = 0.025, hypergeometric test) and a corresponding increase in early mesoderm cells (pTBX5 promoter = 3.4e-11; pTBX5 Enhancer 6 = 4.1e-4, hypergeometric test) (Figure 1H). Interestingly, perturbation of a CHD-associated enhancer of TBX5 phenocopies perturbation of the promoter in terms of cell state changes. Bulk qPCR analysis confirms that CRISPRi of TBX5 enhancers results in loss of TBX5 expression (Figure 1—figure supplement 1I). Taken together, this analysis demonstrates that CRISPRi repression at the TBX5 promoter functions as expected during CM differentiation and suggests further that repression of TBX5 expression through enhancer perturbation similarly depletes CM lineage commitment through loss of downstream target expression.
 
 Next, to gain higher resolution insights on how enhancer perturbation influences lineage commitment, we focused on cells in the cardiac lineage (CM, mesoderm). We identified a trajectory of differentiating CMs composed of four distinct subpopulations including SOX4+ progenitors (Paul et al., 2014), FN1+ early-stage CMs, ACTA2+ mid-stage CMs (Potta et al., 2010), and NPPA+ atrial-like late-stage CMs (Figure 2A and Figure 2—figure supplement 1A). Consistent with the established process of CM commitment, pseudotime analysis orders these cell states with increasing expression of cardiac maturation genes such as TNNT2 (Figure 2B–C). Further validating this trajectory, we observe consistency with published bulk RNA-seq datasets of CM differentiation (Tompkins et al., 2016; Figure 2D). Thus, our single-cell dataset recapitulates the expected patterns of CM cell fate commitment.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig2-v2.jpg)
+
+**Figure 2.:** (A) PHATE visualization of CM cells with four Louvain clusters. (B) Feature plot of pseudotime ranking of cells across PHATE trajectory. (C) Feature plot of TNNT2 expression. We defined the top 100 genes for each of the four CM subtypes. Shown is the expression of these gene sets in bulk RNA-seq experiments of CM differentiation (Tompkins et al., 2016). Expression defined as fold change over day 0. (E) Enrichment (right) and depletion (left) of cells with distinct perturbations across CM subpopulations (p-values: hypergeometric test). Top: Targeted promoters; middle: targeted enhancers; bottom: non-targeting sgRNAs. (F) Genome browser tracks of chromatin and sequence conservation at two putative TNNT2 enhancers (ENH2 and ENH3). Yellow region denotes enhancer boundaries. (G) Distribution of states for cells receiving sgRNAs targeting TNNT2 promoter and enhancers (*p<0.05 by hypergeometric test). (H) Distribution of pseudotime rank for cells receiving sgRNAs targeting TNNT2 promoter and enhancers (*p<0.05 by Mann-Whitney U) (nNT = 983 cells, nP1 = 145 cells, nE2 = 86 cells, nE3 = 311 cells). (I) Differentially expressed genes in CM cells receiving sgRNAs targeting TNNT2 promoter or enhancers. In this Manhattan plot, the horizontal axis indicates genomic coordinates, with the dotted line indicating the targeted TNNT2 promoter. The vertical axis indicates differential expression (p-value), with positive values representing increased expression and negative values representing decreased expression. (J) Genome browser track of fetal human heart H3K27ac for CHD ENH5. Yellow region denotes enhancer boundaries. (K) Distribution of states for cells receiving sgRNAs targeting CHD ENH5 (*p<0.05 by hypergeometric test). (L) Distribution of pseudotime rank for cells receiving sgRNAs targeting CHD ENH5 (*p<0.05 by Mann-Whitney U) (nNT = 983 cells, nE5 = 281 cells). (M) Distribution of states for cells receiving sgRNAs targeting TBX5 promoters and enhancers (*p<0.05 by hypergeometric test). (N) Distribution of pseudotime rank for cells receiving sgRNAs targeting TBX5 promoter and enhancers (*p<0.05 by Mann-Whitney U) (nNT = 983 cells, nP1 = 179 cells, nP2 = 271 cells, nE1 = 348 cells, nE2 = 466 cells, nE3 = 437 cells, nE4 = 166 cells, nE5 = 205 cells, nE6 = 127 cells). (O) Differentially expressed genes in CM cells receiving sgRNAs targeting a TBX5 enhancer (as described in 2I).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Feature plots of marker genes for SOX4+ progenitors, FN1+ early-stage CMs, ACTA2+ mid-stage CMs, and NPPA+ atrial-like late-stage CMs. (B) Example of sgRNA filtering approach. (Top) p-Values (hypergeometric test) for late-CM depletion for all combinations of eight sgRNA targeting TNNT2 PROM1. (Middle) As above, but sgRNA combinations with TNNT2 PROM1 sgRNA 1 in red. This sgRNA does not bias p-value in either direction and is therefore kept for downstream analysis. (Bottom) As above, but sgRNA combinations with TNNT2 PROM1 sgRNA 7 in red. This sgRNA does bias p-values directionally, and is therefore excluded from downstream analysis. (C) To verify that multiple sgRNAs support the same CM differentiation phenotype, we performed n-1 analysis by removing each sgRNA in turn. In this heatmap, the left column represents cells with all sgRNAs targeting an enhancer or promoter. The right columns indicate p-values after removal of cells with individual sgRNAs (p-values: hypergeometric test). (D) (Top) Dotplot shows expression of cardiac genes across CM subpopulations. (Bottom) Expression of cardiac genes across CM subpopulations after targeted transcript amplification. (E) Expression of TGFB1 in late-CM cells receiving sgRNAs targeting TGFB1 promoter, enhancer, or non-genome targeting (NT) controls (*p<0.05 by Mann-Whitney U) (nNT = 967 cells, nP1 = 175 cells, nE1 = 111 cells).
+
 A previous study established that loss of cardiogenic TFs deviates cells from a WT trajectory (Kathiriya et al., 2021). To examine the effect of enhancers, we compared the cell state distribution in perturbed cells. Surprisingly, we observed that perturbation of 16 enhancers led to a depletion of late-stage CMs. In contrast, only two enhancers were depleted in earlier CM states. This depletion of late-stage CMs coincides with an enrichment in progenitor, early-CM, and mid-CM states (Figure 2E and Figure 2—figure supplement 1B–C). Since connecting enhancers with their cognate promoters can be challenging, we only considered enhancer perturbations that produced phenotypes similar to paired promoter perturbation. Using this stringent approach, we detected 14 out of 25 enhancer perturbations that caused changes in cell state distribution, although this likely represents an underestimate of the true hit rate. To account for the low expression of many cardiac genes which makes differential gene expression analysis underpowered, we performed targeted sequencing to measure the expression of key cardiac gene targets (Figure 2—figure supplement 1D). This analysis showed further consistency between promoter-targeting and enhancer-targeting sgRNAs (Figure 2—figure supplement 1E).
 
 Next, we illustrate several examples. First, we targeted two evolutionarily conserved enhancers near the CM structural protein TNNT2 that exhibit active enhancer chromatin during CM differentiation (Figure 2F). We observed that CRISPRi repression of either the TNNT2 promoter or one of the two targeted nearby enhancers resulted in a depletion of late-CM cells (pTNNT2 P1 = 0.0005; pTNNT2 E2 = 0.03; pTNNT2 E3 = 0.001, hypergeometric test) (Figure 2G). These perturbations also yielded similar changes in pseudotime cell state along with reduced expression of TNNT2 and other cardiac genes within the CM populations (pTNNT2 P1 = 0.0004; pTNNT2 E2 = 0.07; pTNNT2 E3 = 1.2e-6, Mann-Whitney U) (Figure 2H–I and Supplementary file 4). Second, we also targeted a CHD-associated enhancer with a variant characterized by reporter assay analysis (Gilsbach et al., 2018; Richter et al., 2020; Figure 2J). Repression of this enhancer also impacted lineage specification, depleting cells in the late-CM state (p=2.5e-5, hypergeometric test) (p=3.6e-5,Mann-Whitney U) (Figure 2K–L). Third, we examined how perturbation of six distinct TBX5 enhancers affected CM trajectory. CRISPRi-mediated repression of any of the six TBX5 enhancers led to a depletion of late-CM (penhancers1–6 between 3.7e-2 and 1.9e-8, hypergeometric test) (penhancers1–6 between 2.5e-2 and 6.8e-9, Mann-Whitney U) (Figure 2E and M–N). Cells with sgRNAs targeting TBX5 enhancers showed reduced expression TBX5 downstream targets, including NPPA and NPPB (Figure 2O and Supplementary file 4; Ang et al., 2016; Houweling et al., 2005; Luna-Zurita et al., 2016). Consistently, we also observed changes in cell state upon repression of TBX5 promoters. In sum, we observe that perturbation of CHD-associated enhancers, particularly for TBX5, results in deficient CM differentiation. These results suggest that these enhancers have roles in CM lineage commitment.
 
-## A focused validation screen demonstrates that TBX5 enhancers modulate CM cell fate
+### A focused validation screen demonstrates that TBX5 enhancers modulate CM cell fate
 
 To validate the results of the large screen above, we performed a smaller single-cell CRISPRi screen focused on TBX5 regulatory elements. Three of the enhancers (Enh4, Enh5, and Enh6) were previously identified through sequence conservation and exhibited reporter activity (Smemo et al., 2012). The remaining three enhancers (Enh1, Enh2, Enh3) were identified in this study based on epigenetic hallmarks of active enhancers (Figure 3A). After transduction of control and targeting sgRNAs, CM differentiation, and sequencing, we identified three primary clusters comprising all germ layers (Figure 3B, Figure 3—figure supplement 1A, and Supplementary file 3), with 3102 cells corresponding to CMs based on TNNT2 expression (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig3-v2.jpg)
+
+**Figure 3.:** (A) (Top) Schematic of validation CRISPRi screen. H9-dCas9-KRAB cells are infected with lentiviral sgRNA library targeting TBX5 enhancers and differentiated over 8 days into CMs followed by scRNA-seq. (Bottom) Genome browser tracks of chromatin status and sequence conservation for TBX5 enhancers. Yellow regions denote enhancers. (B) UMAP visualization of H9-derived cells after 8 days of differentiation. Four Louvain clusters indicated. (C) Expression of the top 100 cluster-defining genes for each Louvain cluster. (D) Feature plots of cells receiving sgRNAs targeting TBX5 enhancers (red) or non-targeting (NT) control (gray). (E) Distribution of cells receiving sgNT and sgTBX5 enhancers that differentiate into CMs (*p<0.05 by hypergeometric test). (F) Expression of ACTA2 (left) and NPPA (right) in sgTBX5 enhancer and control sgNT CMs (*p<0.05 by Mann-Whitney U).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Feature plots of marker genes for neuronal (+SOX2), cardiomyocytes (+TNNT2), endoderm (+TTR). (B) Feature plots of cells receiving sgRNAs targeting TBX5 enhancers (red) or non-genome targeting (NT) control (gray). (C) Differentially expressed genes in cells receiving sgRNAs targeting TBX5 enhancers. Please see description of Manhattan plot in Figure 2I.
 
 Consistent with our initial screen, we observed that cells with TBX5 enhancer repression were significantly depleted in the late-CM state (penhancers1–6 between 1.3e-5 and 1.3e-19, hypergeometric test) (Figure 3D–E and Figure 3—figure supplement 1B). We also observed activation of ACTA2 and repression of NPPA in cells with perturbed TBX5 enhancers (pACTA2=3.1e-7; pNPPA = 8.2e-24, Mann-Whitney U) (Figure 3F, Figure 3—figure supplement 1C, and Supplementary file 4), consistent with a previous study that knocked out TBX5 (Kathiriya et al., 2021).
 
 Next, we performed focused analysis on CM populations to identify three clusters of cell subpopulations: CM progenitors (FN1+), mid-CM (ACTA2+), and late CM (NPPA+) (Figure 4A and Figure 4—figure supplement 1A). Pseudotime analysis orders these cell populations by increasing expression of known cardiac maturation genes including NPPA and TNNT2 (Figure 4B–D). Overall, our focused screen contains 122 cells balanced across TBX5 enhancer perturbations that attain CM states. Since this number is relatively small, we pooled these cells for downstream analyses. Consistent with our larger screen, we observe a significant depletion of late CMs when TBX5 enhancers are repressed, with an increase in mid-CMs (Figure 4E–F and Figure 4—figure supplement 1B) and a significant decrease in pseudotime rank (plate CM = 3.8e-18; pmid-CM = 7.8e-13, hypergeometric test) (p=2.2e-5, Mann-Whitney U) (Figure 4G). This coincided with downregulation of known targets of TBX5 (Figure 4—figure supplement 1C and Supplementary file 4). Cell label transfer of initial screen CM annotations onto focus screen CMs showed consistent clustering and retention of late-CM depletion under TBX5 enhancer knockdown conditions (Figure 4—figure supplement 1D–E). Overall, results from our focused validation screen are consistent with the observation that TBX5 enhancer repression causes deficient CM lineage commitment.
 
-## TBX5 enhancer repression alters CM molecular signatures
+![Figure 4.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig4-v2.jpg)
+
+**Figure 4.:** PHATE visualization of CMs in the focused screen with three Louvain clusters. (B) Feature plot of pseudotime ranking of cells across PHATE trajectory. (C) Feature plot of NPPA expression. (D) Single-cell expression of TNNT2 (top) and NPPA (bottom) across pseudotime ordered CMs. (E) Feature plots of cells receiving sgRNAs targeting TBX5 enhancers or non-targeting non-genome targeting (NT) control. (F) Distribution of states for cells receiving sgRNAs targeting TBX5 enhancers or non-targeting NT control (*p<0.05 by hypergeometric test). (G) Distribution of pseudotime rank for cells receiving sgRNAs targeting TBX5 enhancers and NCs (*p<0.05 by Mann-Whitney U) (nNT = 558 cells, nTBX5 Enh = 122 cells). (H) (Top) We defined late-CM genes as those more expressed in late-CM cells. Shown is the average expression of late-CM genes in cells across pseudotime. Cells receiving sgRNAs targeting TBX5 enhancers (red) or non-targeting NT control (gray). (Bottom) Boxplots of CM subpopulation pseudotime ranks across pseudotime. (I) Average expression of late-CM genes across cells receiving sgRNAs targeting TBX5 enhancers (red) and 1000 random samplings of non-targeting control (sgNT) late-CM cells (gray) (*p<0.05 by Z-test). (J) (Top) For late-CM genes, shown is the relative expression in cells receiving sgRNAs targeting TBX5 enhancers compared with non-targeting NT control, across pseudotime. (Bottom) Boxplots of CM subpopulation pseudotime ranks across pseudotime. (K) NPPA expression in cells receiving sgRNAs targeting TBX5 enhancers and NC. (L) (Top) We defined mid-CM genes as those more expressed in mid-CM cells. Shown is the average expression of mid-CM genes in cells across pseudotime. Cells receiving sgRNAs targeting TBX5 enhancers (red) or non-targeting NT control (gray). (Bottom) Boxplots of CM subpopulation pseudotime ranks across pseudotime. (M) Averaged expression of mid-CM genes across cells receiving sgRNAs targeting TBX5 enhancers (red) and 1000 random samplings of non-targeting control (sgNT) late-CM cells (gray) (*p<0.05 by Z-test). (N) (Top) For mid-CM genes, shown is the relative expression in cells receiving sgRNAs targeting TBX5 enhancers compared with non-targeting NT control, across pseudotime. (Bottom) Boxplots of CM subpopulation pseudotime ranks across pseudotime. (O) HAS2 expression in cells receiving sgRNAs targeting TBX5 enhancers and non-targeting NT control.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Feature plots of marker genes for CM progenitors (FN1+), mid-CM (ACTA2+), and late-CM (NPPA+). (B) Feature plots of cells receiving sgRNAs targeting TBX5 enhancers (red) or non-genome targeting (NT) control (gray). (C) Differentially expressed genes in CM cells receiving sgRNAs targeting TBX5 enhancers. Please see description of Manhattan plot in Figure 2I. (D) Reclustering of focused screen CM cells through cell label transfer using initial screen as reference. (E) Distribution of cells receiving sgRNAs targeting TBX5 enhancers across label transferred CM subpopulations (*p<0.05 by hypergeometric test).
+
+### TBX5 enhancer repression alters CM molecular signatures
 
 While TBX5 enhancer perturbation results in a reduction of late-CM cells, we observe that a small number of cells still reach the state. We next asked whether these cells exhibit altered molecular signatures. First, focusing on the late-CM state, we defined 80 genes that are specifically expressed in NT control cells. These genes coincide with expected CM markers, such as NPPA and TTN, which continuously increase in expression throughout CM differentiation. Interestingly, we find that this set of late-CM genes is depleted in the subset of cells with perturbed TBX5 enhancers (denoted as sgTBX5enh) that reach the late-CM state (p=1.7e-3, Z-test) (Figure 4H–I and Supplementary file 5). Several notable cardiac genes including NPPA and NPPB exhibit pronounced repression in perturbed cells (Figure 4J–K). These observations suggest that, although some sgTBX5Enh cells can reach a late-CM cell state, these cells have deficient activation of late-CM genes. We next asked if these cells also harbored aberrant expression of mid-CM cell signatures.
 
@@ -73,15 +105,31 @@ We identified a set of 18 genes that define the mid-CM state, which includes the
 
 In summary, we observe that perturbed cells express late-CM genes at lower levels and mid-CM genes at higher levels than NT control cells in the late-CM state. This suggests that although a subset of sgTBX5Enh cells can reach the late-CM cell state, these cells are in a delayed differentiation state that reflects mid-CM gene signatures. Taken together with previous observations, misregulation of TBX5 through enhancer modulation leads to deficient induction of CM transcriptional signatures that are associated with CM fate commitment.
 
-## TBX5 enhancer knockouts recapitulate cardiac phenotypes
+### TBX5 enhancer knockouts recapitulate cardiac phenotypes
 
 Next, to confirm the results from the CRISPRi experiments above, we used a CRISPR/Cas9 strategy to genetically delete enhancers. We focused on the two TBX5 enhancers (Enh3 and Enh5) that harbor CHD-associated variants and exhibit the strongest cellular phenotypes in the CRISPRi screens. To compare enhancer deletion to gene deletion, we also knocked out TBX5 exon 3 (Kathiriya et al., 2021). We screened, isolated, and confirmed clones with biallelic deletion of either Enh3 (TBX5Enh3-/-), Enh5 (TBX5Enh5-/-), or Exon 3 (TBX5Exon-/-)(Figure 5A–B). Consistent with the CRISPRi analysis, we find that all three knockouts can differentiate to CMs (Figure 5—figure supplement 1A). We observe that deletion of TBX5 enhancers phenocopies TBX5 gene deletion, with all knockout clones exhibiting reduced RNA expression by qPCR and protein expression by immunocytochemistry (Figure 5C–E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig5-v2.jpg)
+
+**Figure 5.:** (A) (Top) TBX5 enhancer knockout strategy. (Bottom) Genome browser snapshots of chromatin status and sequence conservation. Dotted lines denote sgRNA target sites. (B) Genotyping PCR to verify TBX5 knockouts of exon 3 (top), enhancer 3 (middle), and enhancer 5 (bottom). Red asterisk indicates clones used in downstream analysis. (C) NPPA transcript expression in exon and enhancer knockout cells after 8 days of cardiomyocyte (CM) differentiation. qPCR quantification normalized to reference gene (RPLP0) and then compared with WT cells (n = 3 technical replicates and 2 biological replicates). (D) ICC for TBX5 (left) and NPPA (right) in WT and TBX5 exon 3, enhancer 3, and enhancer 5 knockout cells (Scale bar = 100μm). (E) Quantification of TBX5 ICC (mean intensity) across TBX5 genotyping (*p<0.05 by Mann-Whitney U) (nWT = 2003 cells, nEXON -/- = 780 cells, nENH3 -/- = 1357 cells, nENH5 -/- = 1592 cells). (F) Distribution of WT, TBX5 enhancer KO, or exon KO cells that differentiate into CMs relative to endoderm population (*p<0.05 by hypergeometric test) (nWT = 2 biological replicates, nEXON -/- = 2 biological replicates, nENH3 -/- = 2 biological replicates, nENH5 -/- = 2 biological replicates). (G) (Top left) PHATE visualization of CMs with three Louvain clusters. (Other quadrants) Feature plots of FN1, ACTA2, and NPPA expression. (H) (Top left) Feature plot of pseudotime ranking of CM cells across PHATE trajectory. (Other quadrants) Distribution of TBX5 exon KO and enhancer KO cells across CM trajectory. WT: gray. (I) Distribution of WT, TBX5 exon KO, and enhancer KO cells across three CM subpopulations (*p<0.05 by hypergeometric test) (nWT = 2 biological replicates, nEXON -/- = 2 biological replicates, nENH3 -/- = 2 biological replicates, nENH5 -/- = 2 biological replicates). (J) Averaged expression of mid-CM genes across TBX5 exon and enhancer KO cells (red) and 1000 random samplings of WT mid-CM cells (gray) (*p<0.05 by Z-test). (K) Differentially expressed genes in enhancer 3 KO cells in CM states. Please see description of Manhattan plot in Figure 2I. (L) FN1 transcript expression in exon and enhancer knockout cells after 8 days of CM differentiation. qPCR quantification normalized to reference gene (RPLP0) and then compared with WT cells (n = 3 technical replicates). (M) (Left) Overview of FlowFISH experiment. (Right) Flow cytometry of FN1 RNA FISH intensity normalized by control RPL13A intensity in TBX5 WT and KO lines (*p<0.05 by Mann-Whitney U) (nWT = 4312 cells, nEXON -/- = 4034 cells, nENH3 -/- = 11166 cells, nENH5 -/- = 12286 cells). (N) (Top) FN1 and ACTB (bottom) protein expression in WT, TBX5 exon, and enhancer KO cells after 8 days of CM differentiation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) UMAP visualization of H9-derived cells after 8 days of differentiation. Five Louvain clusters indicated. (B) UMAP distribution of TBX5 exon KO and enhancer KO cells after cardiomyocyte (CM) differentiation. Shown are two biological replicates per genotype. (C) PHATE distribution of TBX5 exon and enhancer KO cells after CM differentiation. Shown are two biological replicates per genotype. (D) Differentially expressed genes in (left) TBX5 exon KO CM cells and (right) TBX5 enhancer 5 KO CM cells. (E) HAS2 transcript expression in exon and enhancer knockout cells after 8 days of CM differentiation. qPCR quantification normalized to reference gene (RPLP0) and then compared with WT cells (n = 3 technical replicates).
 
 Next, to test if genetic deletion of enhancers contributes to deficient CM specification, we repeated our scRNA-seq analysis at day 8 of CM differentiation (Figure 5—figure supplement 1A and Supplementary file 3). Mirroring the CRISPRi results, analysis of all cell populations shows a strong depletion of CM states in perturbed cells (Figure 5F and Figure 5—figure supplement 1B). TBX5Enh5-/- cells exhibited the strongest depletion (~9% CMs, p>2.2e-308, hypergeometric test) relative to WT control cells (~57% CMs), followed by TBX5Enh3-/- cells (~24% CMs, p=5.2e-263, hypergeometric test), and TBX5Exon-/- cells (~33% CMs, p=5.9e–166, hypergeometric test). Importantly, we observed consistent results over multiple biological replicates.
 
 To examine if enhancer deletion also contributes to deficient CM differentiation, we focused our analysis on a cluster of TNNT2+ cells. Sub-clustering revealed three CM states: FN1+ early CMs, ACTA2+ mid-CMs, and NPPA+ late CMs (Figure 5G). While cells derived from each genetic background were represented across all three states (Figure 5H and Figure 5—figure supplement 1C), we observed notable differences. Notably, perturbed cells were on average 10.6-fold less likely to reach the mature late-CM state (~27% WTLate_CM,~5% Enh3-/-Late_CM,~11% Enh5-/-Late_CM,~1% Exon-/-Late_CM) and this observation was statistically significant (pEnh3=1.8e-24, pEnh5=1.6e-7, pExon = 5.8e-83) (Figure 5I). Next, we repeated our previous analysis to confirm that cells with TBX5 enhancer or exon deletion exhibit elevated expression of mid-CM genes (Figure 5J). Importantly, deletion of either TBX5 enhancer or exon 3 resulted in the repression of key genes of cardiac development including the TBX5 target gene NPPA (Figure 5K, Figure 5—figure supplement 1D, and Supplementary file 4; Houweling et al., 2005). To confirm this result using an orthogonal assay, we performed RNA fluorescence in situ hybridization coupled to a flow cytometry readout (FlowFISH) (Fulco et al., 2019; Reilly et al., 2021). Consistent with an increase in earlier stage CMs, we find that TBX5 gene and enhancer knockouts have increased RNA and protein expression of early CM markers such as FN1 (Figure 5L–N and Figure 5—figure supplement 1E). Also, consistent with depletion in later stage CMs, we observe that TBX5 gene and enhancer deletions have decreased RNA and protein expression of the late-CM marker NPPA (Figure 5C–D).
 
 Finally, since our analyses also generated clones with heterozygous TBX5 enhancer deletion (Figure 5B), we performed further analysis of one clone: TBX5Enh5+/- (Figure 6A–B). Confirming that these genetic modifications alter TBX5 expression, we observed that clones with enhancer deletions exhibit significantly decreased RNA expression during CM differentiation (Figure 6C). After CM differentiation and scRNA-seq (Figure 6D and Figure 6—figure supplement 1A), TBX5 Enh5 heterozygous knockouts also exhibited significant depletion of CM states (~24% CMs, p=5.2e-125, hypergeometric test) relative to WT cells (~45% CMs) (Figure 6E and Figure 6—figure supplement 1B). Sub-clustering of a TNNT2+ cluster revealed four CM states: FN1+ early CMs, ACTA2+ mid-CMs, HAND1+ late CMs, and IRX2+ ventricular CMs (Figure 6F and Figure 6—figure supplement 1C). Consistently, focused pseudotime analysis of CMs also showed significant depletion of Enh5+/- cells in the mature ventricular CM state (~39% WTVen_CM,~6% Enh5+/-Ven_CM, p=1.5e-75) (Figure 6G–H). Importantly, heterozygous deletion of TBX5 Enh5 results in a weaker differentiation defect than homozygous deletion of TBX5 Enh3 (which has a weaker phenotype compared to homozygous deletion of TBX5 Enh5) (Figure 6G–H). These observations are consistent with those observed for the TBX5 gene deletions previously published (Kathiriya et al., 2021). Next, we repeated our previous analysis to confirm that cells with TBX5 enhancer knockout exhibit delayed activation of late-CM genes (Figure 6I) and delayed repression of mid-CM genes (Figure 6J). Our analysis also revealed a depletion of cardiac related genes in perturbed late-CM cells compared to controls (Figure 6K and Supplementary file 6). Cell label transfer onto all previous datasets showed expected clustering consistent deficiencies to achieve later CM states (Figure 6—figure supplement 1D–G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig6-v2.jpg)
+
+**Figure 6.:** (A) TBX5 enhancer 5 heterozygous KO strategy. (B) (Top) Position of primers used to validate TBX5 enhancer 5 heterozygous clone. Red: KO enhancer-spanning primers; blue: left junction primers; orange: enhancer internal primers; and yellow: right junction primers. (Bottom) Genotyping PCR to verify TBX5 enhancer 5 heterozygous deletion. Like the WT, the heterozygous clone retains left, internal, and right fragments, consistent with retaining a copy of enhancer 5. Unlike the WT, the heterozygous clone yields a small fragment when amplified with the KO enhancer-spanning primers. PCR conditions were not optimized for amplification of the WT large 3-kb+ fragment. WT: wild-type; HET: TBX5 enhancer 5 heterozygous clone; B: blank. (C) TBX5 transcript expression in enhancer KO cells after 8 days of cardiomyocyte (CM) differentiation. qPCR quantification normalized to reference gene (RPLP0) and then compared with control cells (n = 3 technical replicates). (D) (Left) UMAP visualization of H9-derived cells after 8 days of differentiation. Four Louvain clusters indicated. (Right) Feature plot of TNNT2 expression. (E) Distribution of WT and TBX5 enhancer KO cells after differentiation (*p<0.05 by hypergeometric test). (F) (Top left) PHATE visualization of CM trajectory cells with four distinct Louvain clusters. (Other quadrants) Feature plot of FN1, ACTA2, and IRX2 expression. (G) Distribution of TBX5 enhancer KO cells across CM trajectory. WT: gray. (H) Cell distribution of TBX5 enhancer KO cells across four CM subpopulations (*p<0.05 by hypergeometric test). (I) Averaged expression of late-CM genes across TBX5 enhancer KO cells (red) and 1000 random samplings of WT late-CM cells (gray) (*p<0.05 by Z-test). (J) Averaged expression of mid-CM genes across TBX5 enhancer KO cells (red) and 1000 random samplings of WT late-CM cells (gray) (*p<0.05 by Z-test). (K) Dotplot shows the expression of cardiac genes in WT and KO cells belonging to the late-CM cluster.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86206/elife-86206-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Feature plots of marker genes for neuronal (+SOX2), cardiomyocytes (CMs) (+TNNT2), endoderm (+TTR). (B) Feature plots of TBX5 enhancer 3 (orange), enhancer 5 (yellow), and WT (gray) CMs. (C) Feature plots of HAND1 expression. (D) Reclustering of CM cells from previous datasets through cell label transfer using sequencing exp (Figure 6) as reference. (E) PHATE distribution of CM cells clustered using four CM label transfer subpopulations. (F) Distribution of TBX5 enhancer perturbation cells across label transferred CM subpopulations (*p<0.05 by hypergeometric test). (G) Overlap of early-CM enriched (left) and late/ven-CM depleted (right) hits from original and label transfer clustering of initial screen CMs.
 
 In sum, these observations with TBX5 enhancer deletion cells are consistent with our CRISPRi studies, and support the conclusion that loss of TBX5 enhancer function results in deficient transcriptional specification of CMs.
 
@@ -101,71 +149,438 @@ In summary, we have applied single-cell screening technology to functionally cha
 
 ## Materials and methods
 
-## Materials availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#13884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>RPI</td>
+      <td>Cat#3513-03-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiazovivin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#SML1045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TrypLE Select</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#12563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Tocris</td>
+      <td>Cat#4423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wnt-C59</td>
+      <td>Cayman</td>
+      <td>Cat#16644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Accutase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#SCR005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Gibco</td>
+      <td>Cat#12585014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Molecular Probes Fura-2</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#F1221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic F-127</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#P6867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human-FN1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#PA5-29578</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST #7074</td>
+      <td>WB(1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KAPA HiFi HS</td>
+      <td>KAPA</td>
+      <td>Cat#KK2502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PrimeFlow RNA Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#88-18005-210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NEBNext High-Fidelity</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0541L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mTeSR Plus</td>
+      <td>Stemcell Technologies</td>
+      <td>Cat#100–0276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>Cat#354277</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>P3 Primary Cell 4D-Nucleofector X Kit</td>
+      <td>Lonza</td>
+      <td>Cat#V4XP-3024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>10× genomics Chromium Single Cell 3′ Kit V3.1</td>
+      <td>10× Genomics</td>
+      <td>Cat#PN-1000147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>10× CellPlex</td>
+      <td>10× Genomics</td>
+      <td>Cat#PN-1000261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>10× Target Hybridization Kit</td>
+      <td>10× Genomics</td>
+      <td>Cat#PN-1000248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI 1640</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#11875093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KnockOut Serum</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#10828028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HHBSS</td>
+      <td>Corning</td>
+      <td>Cat#21-023-CM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Endura)</td>
+      <td>Endura ElectroCompetent Cells</td>
+      <td>Lucigen</td>
+      <td>Cat#60242–2</td>
+      <td>Electrocompetent Cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Stellar Competent Cells</td>
+      <td>Clontech</td>
+      <td>Cat#636766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Single-cell RNA-seq Data</td>
+      <td>This paper</td>
+      <td>GEO: GSE190475</td>
+      <td>Sequencing data located at GEO</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T cells</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Mycoplasma free; ATCC STR authenticated as CRL-3216</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H9 cells</td>
+      <td>WiCell</td>
+      <td>WA09</td>
+      <td>Mycoplasma free; ATCC STR authenticated as WAe009-A-18</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pMD2.G</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: psPAX2</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: lenti-dCas9-KRAB-Blast</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_89567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: CROPseq-Guide-puro</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_86708</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA oligos</td>
+      <td>This paper</td>
+      <td>sgRNA oligos</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Star</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td>Broad Institute</td>
+      <td>RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowCal</td>
+      <td>PMID:27110723</td>
+      <td>RRID:SCR_018140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>DOI:10.1093/bioinformatics/btt656</td>
+      <td>RRID:SCR_012919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>10× Genomics Cellranger</td>
+      <td>10× Genomics</td>
+      <td>RRID:SCR_023221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scanpy</td>
+      <td>PMID:29409532</td>
+      <td>RRID:SCR_018139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV</td>
+      <td>Broad Institute</td>
+      <td>RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina NextSeq 500 instrument</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Next-generation sequencer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina NextSeq 2000 instrument</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Next-generation sequencer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina NovaSeq 6000 instrument</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Next-generation sequencer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Agilent 2200 TapeStation instrument</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>Automated electrophoresis instrument</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Qubit Fluorometric Quantitation instrument</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>Flurometer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EVOS FL Auto Imaging System</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>Microscope</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability statement
 
 Data and codes required to reproduce the findings of this manuscript are freely available and are referenced below. Further information and requests for resources and reagents should be directed to and will be fulfilled by Gary Hon (Gary.Hon@utsouthwestern.edu).
 
-## Generation of PiggyBac dCas9-KRAB plasmid
+### Generation of PiggyBac dCas9-KRAB plasmid
 
 The NheI/SalI dCas9-KRAB fragment from Lenti-dCas9-KRAB-blast (Addgene ID: 89567) was ligated into PiggyBac vector 5’-PTK-3’ (Cadiñanos and Bradley, 2007) replacing the NheI/SalI insert. A bovine growth hormone polyadenylation signal was PCR amplified (Kapa HiFi DNA polymerase) (5’-GCC TCC CCG CAT CGA TAC CGC TGT GCC TTC TAG TTG CCA G, 3’-GTA ACA AAA CTT TTA ACT AGC CAT AGA GCC CAC CGC ATC C) and assembled (NEB HiFi Assembly) replacing the remaining SalI/SpeI fragment. A 647 bp ubiquitous chromatin opening element derived from the human HNRPA2B1-CBX3 locus was PCR amplified (5’-TAT AGA TAT CAA CTA GAA TGG GGA GGT GGT CCC TGC AG, 3’-AAC TTT ATC CAT CTT TGC AGG GCC CTC CGC GCC TAC AG) and assembled into the NheI site.
 
-## Target selection
+### Target selection
 
 Fourteen enhancers were selected using publicly available ATAC-seq and H3K27ac ChIP-seq datasets collected at various time points throughout CM differentiation. ATAC-seq peaks across all time points were merged and extended to a total size of 500 bp. We then applied FeatureCounts for H3K27ac ChIP-seq signal at these 500 bp ATAC-seq boundaries. H3K27ac counts were normalized to RPKM then to input followed by log2 transformation. We selected for ATAC-seq regions in which the max ChIP enrichment across all time points was greater than log2(1.5), identifying 43,536 enhancers across CM differentiation. We then selected enhancers which were within 1 kb of a CHD-associated variant which left 2300 CHD-associated enhancers. Using gene ontology, we identified enhancers which were within 100 kb of a heart development-associated gene. After manually filtering for genes based on prior literature, we were left with 14 enhancers. We also included the 18 nearby promoters for heart development genes. Our library also consisted of six TBX5 enhancers, three we identified in house using the same criteria above with the expectation of CHD variant overlap, and three from literature (Smemo et al., 2012). From an MPRA study, we also selected five enhancers in which CHD-associated variants have been shown to perturb activity (Richter et al., 2020).
 
-## Generation of sgRNA library
+### Generation of sgRNA library
 
 We used CROPseq-Guide-Puro plasmid for sgRNA expression (Addgene ID: 86708). For large-screen sgRNA library construction, a single-strand sgRNA oligo library containing 397 sgRNAs (Supplementary file 1) was synthesized by IDT. The library was amplified by NEBNext High-Fidelity 2× PCR master mix (New England Biolabs) to make it double-stranded and then was inserted into the BsmBI digested CROPseq-Guide-Puro plasmid through Gibson Assembly (New England Biolabs). The circulized product was purified and electroporated into Endura ElectroCompetent cells (Lucigen) following the manufacturer’s protocol. The cells were then cultured in LB medium with 100 μg/ml ampicillin at 30°C overnight and the plasmid extracted using the ZymoPURE plasmid maxiprep kit (Zymo Research). We amplified the spacer sequences of the sgRNA library and verified the complexity of the library by Illumina sequencing. See our previous publication for a full protocol including primer sequences (Xie et al., 2019). Our focused screen consisted of 49 sgRNA which were packaged using a golden gate strategy previously published. In brief, single-strand sgRNA oligos were ordered from IDT and annealed using T4 ligase. Annealed oligos for sgRNA targeting the same region were then pooled for a golden gate reaction using BsmBI and T7 ligase to insert the sgRNA into the CROPseq backbone. Individual sgRNA were packaged in a similar approach.
 
-## Cell line
+### Cell line
 
 H9 ESCs were maintained feeder-free in mTeSR Plus (Stemcell Technologies 100-0276) according to the suggested manufacturer’s instructions on Matrigel (Corning 354277) coated plates, passaged every 3–4 days with DPBS/0.5 mM EDTA and plated in 2 µM thiazovivin (Sigma SML1045) supplemented mTeSR Plus overnight. H9 ESCs and HEK293Ts were authenticated with ATCC using STR (short tandem repeat) profiling. Both lines were verified as mycoplasma free through PCR detection (Bulldog Bio 25234).
 
-## Generation of dCas9-KRAB-hESC line
+### Generation of dCas9-KRAB-hESC line
 
 H9 ESCs were washed with DPBS and dissociated to single cells with TrypLE Select. Transfection of 1×106 cells with 5 µg PiggyBac transposon plasmid and 1 µg HA-mPB (Cadiñanos and Bradley, 2007) transposase plasmid in 100 µl was performed using P3 Primary Cell 4D-Nucleofector X Kit (V4XP-3024) with program CB-150 according to the suggested manufacturer’s instructions. At confluency cells were passaged and maintained in the presence of 5 µg/ml blasticidin S until emerging colonies were ~1 mm in diameter. Individual colonies were isolated, expanded, and tested for stable expression.
 
-## CM differentiation
+### CM differentiation
 
 At 80–90% confluency, media was replaced with 3 µM CHIR99021 supplemented CDM3 (RPMI 1640; 0.5 mg/ml human albumin, ScienCell OsrHSA; 211 µg/ml L-ascorbic acid 2-phosphate) for 48 hr followed by 2 µM Wnt-C59 supplemented CDM3 for 48 hr with subsequent media changes every 2 days with CDM3 alone. On day 8 post-differentiation, samples were washed with DPBS and dissociated to single cells with Accutase and resuspended in CDM3.
 
-## Virus packaging
+### Virus packaging
 
 Lentiviral plasmid was packaged as previously described (Xie et al., 2019). Briefly, the lentivirus packaging plasmids PMD2.G and psPAX2 (Addgene ID: 12259 and 12260) were co-transfected with the carrier plasmid to HEK293T cells with linear polyethylenimine (Polysciences). Supernatant was collected 72 hr after transfection and filtered with a 0.45 μm filter. The virus was further purified by using Lenti-X lentivirus concentrator (Clontech).
 
-## sgRNA transduction
+### sgRNA transduction
 
 Single-cell dissociated H9 ESCs (1×106 cells) were incubated in 2 ml medium supplemented with thiazovivin and lentiviral supernatant (MOI ~ 0.3) in a single well of an ultra-low attachment plate (Corning 3471) for 3 hr, diluted in 2 ml medium and then plated onto three wells of a Matrigel-coated six-well plate. At 72 hr post-transduction cells were fed with 5 µg/ml blasticidin S and 1 µg/ml puromycin supplemented medium for 7 days.
 
-## Knockout line generation
+### Knockout line generation
 
 Transfection of 10 µg Cas9/sgRNA plasmids (left and right flanking at 1:1) was performed as described in stable line generation. At 48 hr post-transfection, single GFP-positive cells were sorted, expanded, and isolated for knockout validation. For validation, genomic DNA was extracted with QuickExtract (Lucigen) and PCR was performed to verify deleted regions.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells were differentiated or passaged on Matrigel coated #1.5 12 mm cover glass. Cells were washed with DPBS, fixed with 4% PFA in DPBS for 20 min at room temperature, and washed with DPBS. Samples were blocked for 1 hr with PBS supplemented with 5% normal donkey serum and 0.3% Triton X-100. Primary antibodies in PBS supplemented with 1% BSA and 0.3% Triton X-100 were incubated overnight at 4°C. After 3×5 min washes with PBS, secondary antibodies at 1:400 were incubated at room temperature for 2 hr, washed, mounted with Prolong Glass (Invitrogen P36981), and imaged with an EVOS FL Auto Imaging System (Thermo Fisher).
 
-## Western blotting
+### Western blotting
 
 Whole-cell protein lysate was collected using RIPA buffer in the presence of protease inhibitors and PMSF. After protein concentration was determined, the lysate was denatured in 2× Laemmli Sample Buffer, separated by electrophoresis, and transferred to nitrocellulose membrane. Membranes were blocked with 5% non-fat dry milk in TRIS buffer containing 0.1% Tween-20 (TBST) for 1 hr followed by incubation with primary antibody overnight at 4°C. The membranes were then washed with TBST followed by application of appropriate HRP-conjugated secondary antibody for 1 hr at room temperature. After washing with TBST, membranes were incubated with Pierce SuperSignal West Femto and images with a Bio-Rad ChemiDoc Imager.
 
-## FlowFISH
+### FlowFISH
 
 TBX5 exon 3, enhancer 3, enhancer 5, and WT H9 hESC were differentiated into CMs over 8 days followed by PrimeFlow following the commercial protocol. Each sample was multiplexed for FN1 (Alexa 647) and RPL13A (Alexa 488) probes followed by flow cytometry. Data was analyzed using the FlowCal python package (Castillo-Hair et al., 2016). Gating was performed using the density function along the forward scatter and side scatter axes. Briefly, the function takes in the percentage of events to retain as an input. Then, the plot is divided into grids and events in those grids are counted. A histogram is plotted, and the curve is smoothened using Gaussian blur. For this analysis, 45% of events were retained and further analysis was done using gated data. To normalize FN1, FN1 probe intensity was divided with RPL13A probe intensity at a single-cell level for all the samples.
 
-## Single-cell RNA-seq
+### Single-cell RNA-seq
 
 For the focus screen, dissociated CMs were resuspended in 0.08% BSA in PBS and passed through a 70 µm filter before diluting to 1000 cells/µL. Two 10× lanes were run at an expected recovery of 10,000 cells. For the initial screen, dissociated CMs were divided into 10 samples consisting of 5*105 cells and each sample stained with 1 of 10 cell hashing bodies. Cells were processed as described in cell hashing publication (Stoeckius et al., 2018). After processing, cells were resuspended in 0.04% BSA in PBS and diluted to 4800 cells/µL. Eight 10× lanes were run at expected recovery of 45,000 cells. For sequencing exp (Figure 5 and Figure 6), divided knockout and control dissociated CMs into 12 samples of 1*106 cells and stained each using a unique CellPlex oligo. Samples were processed as in 10× Genomics Chromium 3’ V3.1 with Cell Multiplexing kit and pooled together evenly for a final concentration of 1500 cells/µL in 0.04% BSA in PBS. For sequencing exp (Figure 5), two 10× lanes were run at an expected recovery of 30,000 cells. Single-cell RNA-seq libraries were prepared using 10× Genomics Chromium 3′ V3.1 kit, following the standard protocol. For sequencing exp (Figure 6), two 10× lanes were run at an expected recovery of 60,000 cells. Single-cell RNA-seq libraries were prepared using 10× Genomics Chromium 3′ V3.1 HT kit, following the standard protocol. To construct the sgRNA enrichment libraries, 50 ng of cDNA product was used to perform an enrichment PCR using SI-PCR primer and sgRNA enrichment primers. The PCR product was purified using a 1.6× SPRI beads cleanup followed by a final index PCR using SI-PCR primer and Nextera primers. A final 1.6× SPRI beads cleanup was then performed with a final expected library size of 500 bp. To construct cell hashing libraries, 20 µL of supernatant fraction cDNA was used for hashtag amplification PCR using SI-PCR primer and Nextera Hashtag primers. For a more detailed protocol, see cell hashing publication (Stoeckius et al., 2018). To construct CellPlex libraries, followed 10× Genomics Chromium 3’ V3.1 and V3.1 HT kit with Cell Multiplexing. To construct targeted gene expression libraries for initial screen, amplified transcriptome libraries following the 10× Genomics library re-amplification protocol. Following re-amplification, libraries were pooled and targeted gene expression libraries constructed as in the 10× Genomics protocol. List of probes and primers used in Supplementary file 1. The genomic datasets presented here span 13 independent biological samples: the initial screen in Figures 1 and 2 represents one biological sample, the focused screen in Figures 3 and 4 represents another independent biological sample, the TBX5 enhancer deletion studies in Figure 5 represent eight independent biological samples (four genotypes with two independently cultured biological replicates each), and Figure 6 contains three more biological samples (three genotypes with one biological replicate each).
 
-## Sequencing
+### Sequencing
 
 Libraries were sequenced through a combination of Illumina NovaseqS4, NextSeq 500/550, and NextSeq 2000. We used paired-end sequencing using the following settings: R1-151bp R2-151bp idx1-10bp idx2-10bp on Novaseq; R1-28bp R2-54bp idx1-10bp and R1-28bp R2-56bp idx1-8bp on NextSeq 500/550; and R1-28bp R2-90bp idx1-10bp idx2-10bp on NextSeq 2000. All sequencing data is available on GEO: GSE190475.
 
-## Mapping
+### Mapping
 
 For the initial screen and focus screens, scRNA-seq libraries were demultiplexed and mapped to the human reference genome (hg38) using the Cellranger software (ver 3.1.0, 10× Genomics). Focus screen experiments were mapped using Cellranger count with the following flags; --expect-cells=10000, and --chemistry=SC3Pv3. Initial screen experiments were mapped using Cellranger count with the following flags; --feature-ref (cell hashing library), --expect-cells=45000, and --chemistry=SC3Pv3. Cell hashing antibody assignments were included as a feature barcode. scRNA-seq mapped libraries for each experiment were combined using Cellranger aggr and normalized for sequencing depth using the flag --normalization=mapped. Sequencing exp (Figure 5) was mapped to the human reference genome (hg38) using the Cellranger software (ver 6.0.0, 10× Genomics) with Cellranger multi using the following parameters; --expect-cells=30,000 and --chemistry SC3Pv3. Sequencing exp (Figure 6) was mapped to the human reference genome (hg38) using Cellranger software (ver 6.1.2, 10× Genomics) with Cellranger multi using the following parameters: --expect-cells=60,000 and --chemistry SC3Pv3HT. Cellplex oligo assignments were included as a feature barcode. Cellplex demultiplexed libraries were aggregated using Cellranger aggr and normalized for sequencing depth using the flag --normalization=mapped. sgRNA libraries were mapped using FBA (Duan et al., 2021). FBA extract was run using a mismatch of 1 with --r1_coords 0,16 and --r2_coords 19,38. Following sgRNA sequence extraction, FBA count was run. Initial screen targeted gene expression libraries were mapped to the human reference genome (hg38) using Cellranger (ver 6.1.2, 10× Genomics) count with the following flags; --expect-cells=45,000, and --chemistry=SC3Pv3. Initial screen targeted gene expression libraries were aggregated using Cellranger aggr and normalized for sequencing depth using the flag --normalization=mapped.
 
-## Single-cell processing
+### Single-cell processing
 
 We assigned sgRNA to cells using the saturation curve method described in Drop-seq (Macosko et al., 2015). For a given sgRNA, we calculated the cumulative distribution of the UMIs from all cells. By identifying the inflection point of the curve, we adjusted the UMIs from cells after the inflection point to be zero. The sgRNAs with the adjusted UMI count greater than 0 are considered as true sgRNAs in this cell. To process cell hashing antibodies, we applied a saturation curve in a similar method as with the sgRNA processing.
 
@@ -173,32 +588,32 @@ We filtered for only singlets using Scrublet in the focused screen. In our initi
 
 We applied the rank_gene_groups function of scanpy to identify cluster defining genes using the Wilcoxon rank-sum method. In our initial screen, we identified the following populations: two neuronal (+SOX2), CMs (+TNNT2), mesoderm (+FN1), epithelial (+EPCAM), cardiac fibroblast (+COL3A1), and endoderm (+TTR). In our focus screen, we grouped similar clusters together and defined the following cell types: neuronal (+SOX2), CMs (+TNNT2), endoderm (+TTR), and endothelial (+PECAM1). Similar clusters were observed in sequencing exp (Figure 5 and Figure 6). For all experiments, we identified the enriched genes defining each Louvain cluster by applying the Scanpy rank_gene_groups function using the Wilcoxon rank-sums method.
 
-## Single-cell trajectory clustering
+### Single-cell trajectory clustering
 
 To identify CM trajectory, clusters were filtered to retain cell populations relevant to cardiac differentiation. We isolated Louvain clusters corresponding to CMs in the focus screen and initial screen. The mesoderm cluster was included in the initial screen due to its involvement in CM differentiation. We then clustered these cells using PCA and PHATE with k=10/a=20 for the focus screen, k=30/a=100 in the initial screen, k=10/a=100 in sequencing exp (Figure 5), and k=10/a=50 in sequencing experiment (Figure 6). Neighborhood calculation and Louvain clustering at resolution 0.83 for the focus screen, 0.3 for the initial screen, 0.6 in sequencing experiment (Figure 5), and 0.7 in sequencing experiment (Figure 6) were applied to generate new clusters. We selected the clusters corresponding to CM and smooth muscle markers resulting in 1832 focus screen, 17,716 initial screen, 4717 sequencing experiment (Figure 5), and 4871 sequencing experiment (Figure 6) CM cells. The above clustering process was then repeated using k=10/a=20 for the focus screen, k=60/a=100 for the initial screen, k=10/a=100 in sequencing exp (Figure 5), and k=20/a=100 for sequencing experiment (Figure 6). We applied the Louvain algorithm to the initial screen, focus screen, and sequencing experiment (Figure 5) at resolution 0.3. For sequencing exp (Figure 6), an initial broad Louvain clustering was identified using resolution 1.2. This was used to identify the root mesoderm-like cluster for pseudotime calling. Following, a final resolution of 0.4 was applied. Louvain clustering identified SOX4+ progenitor, FN1+ early CMs, ACTA2+ mid-CMs, and NPPA+ atrial-like late CMs in our initial screen. Our focus screen identified three clusters comprising progenitor, mid- and late CMs. Sequencing exp (Figure 5) consisted of three clusters comprising early, mid-, and late CMs. Sequencing exp (Figure 6) consisted of four clusters comprising early, mid-, late, and IRX2+ ventricular CMs. To verify the integrity of the PHATE projected trajectory, we ran diffusion pseudotime as implemented in Scanpy dpt. Clusters reminiscent of mesoderm-like cells were selected as the roots for all projections.
 
 We applied the ingest module of Scanpy to transfer CM cluster labels across datasets as validation. We assigned the initial screen as reference and transferred labels onto focus screen CMs. Sequencing exp (Figure 6) was also assigned as reference and labels transferred onto other CM datasets. Perturbation CM distribution analysis was repeated across all label transfer re-assignments.
 
-## sgRNA filtering
+### sgRNA filtering
 
 We designed multiple sgRNA for each candidate enhancer and promoter to account for potential off-targets. To identify sgRNA with off-target effects or that were non-functional, we applied a filtration approach using the identified CM trajectory in the large experiment. First we filtered our five non-target sgRNA to create a background. This was done by using a hypergeometric test for each CM cluster to compare the distribution of cells with each individual NT to the background of cells with any NT. We performed the hypergeometric test five times, in each iteration removing one of the NT. Through this we identified one NT which, if included, produced bias in the background distribution. After removing this NT, we were left with four similarly distributed controls which served to define our control cells for downstream analysis.
 
 Second, for each target, we filtered to remove sgRNA that deviated in distribution to the majority. For each possible combination of sgRNA cells for each target, we performed a hypergeometric test for each CM cluster comparing the distribution of these sgRNA cells to the filtered NT cells background. For each of four CM clusters, we had two lists of p-values, one for depletion of sgRNA cells and one for enrichment. This resulted in a total of eight p-value lists. We then ordered each resulting p-value list for all sgRNA combinations in descending order of significance. A cutoff was drawn corresponding to the number of times each sgRNA is found in a given combination. We then asked whether any given sgRNA for this target was found at a significant rate to the left of this cutoff by using a hypergeometric test. If an sgRNA was found to be uniquely biased in this direction, it was removed. This was repeated for all eight p-value lists. If more than half of the sgRNA for a given target would be removed by this approach, all sgRNA were kept. This was repeated for sgRNA targeting every enhancer and promoter. All analysis, including validation experiment, used this filtered sgRNA set.
 
-## Bulk validation of CM trajectory
+### Bulk validation of CM trajectory
 
 Previously published RNA-seq data from an hESC to CM differentiation time course was mapped to the hg38 reference genome by STAR. For each sample, counts were normalized to RPKM. Replicate counts for each sample were then averaged together. We identified the top 100 uniquely enriched genes for each of our CM subpopulations in the initial screen from the Scanpy rank_gene_groups function using the Wilcoxon rank-sums method. For each enriched cluster gene set, fold change over day 0 was calculated for every time point. The fold changes of each gene from a gene set were then averaged by time point.
 
-## Comparison of sgRNA distribution
+### Comparison of sgRNA distribution
 
 Clustering bias was performed in a similar manner for every dataset. We compared the distribution of sgRNA for a given target to NT sgRNA across cell clusters using a hypergeometric test. Depletion of sgRNA was calculated using the hypergeometric cumulative distribution function and enrichment by using the survival function.
 
 To compare the distribution of sgRNA across CM trajectory pseudotimes, we applied a Mann-Whitney U test which identified whether the median pseudotime for a given target was significantly shifted from NT control.
 
-## Differential expression of cell type defining gene sets
+### Differential expression of cell type defining gene sets
 
 We applied a Wilcoxon rank-sum test using Scanpy integration to compare gene expression of late CMs and mid-CMs from our focused screen. This approach identified 18 genes significantly enriched in mid-CMs and 80 genes enriched in late CMs. To assess the expression of these gene sets in NT control vs sgTBX5 ENH cells within the late-CM population, we calculated the average expression of this gene set within all our sgTBX5 ENH cells in late CM. As significantly more NT cells (558) achieved a late-CM fate in comparison to sgTBX5 ENH cells (122), we obtained a control expression distribution by sampling 122 NT cells through 1000 iterations and recording the average expression of genes sets each time. We applied a Z-test comparing perturbed to control expression and converted to p-value using scipy.stats.norm.cdf for enrichment and scipy.stats.norm.sf for depletion of gene set expression in perturbed cells. The same Z-test methodology was applied to our knockout screen in late CMs comparing focused screen differential gene sets between knockout and WT cells.
 
-## Differential expression
+### Differential expression
 
 Differential expression of individual genes was calculated by applying a Mann-Whitney U test through scipy.stats.mannwhitneyu to the expression distribution of a given gene in perturbed to NT control cells.

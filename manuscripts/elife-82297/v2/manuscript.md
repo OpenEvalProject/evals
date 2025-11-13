@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/05wg1m734 Department of Internal Medicine, Radboudumc Center for Infectious Diseases, Radboudumc Research Institute for Medical innovation (RIMI), Radboud University Medical Center Nijmegen Netherlands
-2. https://ror.org/04knhza04 Department of Medical Biochemistry and Molecular Biology, Kilimanjaro Christian Medical University College Moshi United Republic of Tanzania
-3. https://ror.org/04knhza04 Kilimanjaro Clinical Research Institute, Kilimanjaro Christian Medical Center Moshi United Republic of Tanzania
-4. https://ror.org/041nas322 Department for Genomics and Immunoregulation, Life & Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany
-5. https://ror.org/043j0f473 Systems Medicine, German Center for Neurodegenerative Diseases (DZNE) Bonn Germany
-6. https://ror.org/01n2xwm51 Departement NEUROFARBA, University of Florence – Gastroenterology and Nutrition Unit, Meyer Children's Hospital Florence Italy
-7. https://ror.org/04jr1s763 Department of Biology, University of Florence Florence Italy
-8. https://ror.org/041nas322 PRECISE Platform for Single Cell Genomics and Epigenomics, German Center for Neurodegenerative Diseases (DZNE) and University of Bonn Bonn Germany
-9. https://ror.org/051h0cw83 Department of Medical Genetics, Iuliu Hatieganu University of Medicine and Pharmacy Cluj-Napoca Romania
-10. https://ror.org/04knhza04 Department of Paediatrics, Kilimanjaro Christian Medical University College Moshi United Republic of Tanzania
-11. https://ror.org/041nas322 Department of Immunology and Metabolism, Life & Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany
+1. Department of Internal Medicine, Radboudumc Center for Infectious Diseases, Radboudumc Research Institute for Medical innovation (RIMI), Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+2. Department of Medical Biochemistry and Molecular Biology, Kilimanjaro Christian Medical University College Moshi United Republic of Tanzania ([ROR:04knhza04](https://ror.org/04knhza04))
+3. Kilimanjaro Clinical Research Institute, Kilimanjaro Christian Medical Center Moshi United Republic of Tanzania ([ROR:04knhza04](https://ror.org/04knhza04))
+4. Department for Genomics and Immunoregulation, Life & Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+5. Systems Medicine, German Center for Neurodegenerative Diseases (DZNE) Bonn Germany ([ROR:043j0f473](https://ror.org/043j0f473))
+6. Departement NEUROFARBA, University of Florence – Gastroenterology and Nutrition Unit, Meyer Children's Hospital Florence Italy ([ROR:01n2xwm51](https://ror.org/01n2xwm51))
+7. Department of Biology, University of Florence Florence Italy ([ROR:04jr1s763](https://ror.org/04jr1s763))
+8. PRECISE Platform for Single Cell Genomics and Epigenomics, German Center for Neurodegenerative Diseases (DZNE) and University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+9. Department of Medical Genetics, Iuliu Hatieganu University of Medicine and Pharmacy Cluj-Napoca Romania ([ROR:051h0cw83](https://ror.org/051h0cw83))
+10. Department of Paediatrics, Kilimanjaro Christian Medical University College Moshi United Republic of Tanzania ([ROR:04knhza04](https://ror.org/04knhza04))
+11. Department of Immunology and Metabolism, Life & Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
 
 † Corresponding author
 
@@ -46,13 +46,361 @@ Studies on non-Western populations outside historically wealthy countries are un
 
 ## Results
 
-## Demographics
+### Demographics
 
 Data from plasma samples of 318 Tanzanian and 416 Dutch individuals were included in this study. Characteristics of study participants are summarized in Table 1, Figure 1—figure supplement 1. The Tanzanians had a significantly higher median (IQR) age (30.2 years; 23.4–39.9) than the Dutch (23.0 years; 21.0–26.0; p-value <0.0001) (Figure 1—figure supplement 1A). Tanzanian females also had a higher BMI than Dutch females (25.7; 22.6–29.9 vs. 21.5; 20.4–23.1; p-value <0.0001) (Figure 1—figure supplement 1B).
 
-## Differences in inflammatory proteome between Tanzanians and Dutch
+**Table 1.**
+ Descriptive characteristics of study participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Tanzanians</th>
+      <th>Dutch</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number</td>
+      <td>318</td>
+      <td>416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex, females</td>
+      <td>163 (51.3)</td>
+      <td>214 (51.4)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Age, years</td>
+      <td>30 (23–40)</td>
+      <td>23 (21–26)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Age category</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>18–30 years</td>
+      <td>155 (48.7)</td>
+      <td>351 (85.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>31–40 years</td>
+      <td>84 (26.4)</td>
+      <td>15 (3.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>41–50 years</td>
+      <td>50 (15.7)</td>
+      <td>4 (1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50–60 years</td>
+      <td>25 (7.9)</td>
+      <td>13 (3.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥60 years</td>
+      <td>4 (1.3)</td>
+      <td>26 (6.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>23.8 (21.4–27.3)</td>
+      <td>22.3 (20.7–24.3)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>BMI category</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>≤24.9</td>
+      <td>194 (61.0)</td>
+      <td>337 (84.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥25–29.9</td>
+      <td>76 (23.9)</td>
+      <td>57 (14.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥30</td>
+      <td>48 (15.1)</td>
+      <td>7 (1.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI by sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>22.8 (20.8–24.9)</td>
+      <td>23 (21.7–24.6)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>25.7 (22.6–29.9)</td>
+      <td>21.5 (20.4–23.1)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Smoking (N, %)</td>
+      <td>50 (15.7)</td>
+      <td>57 (13.7)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Study characteristics only relevant for the Tanzanian cohort</td>
+    </tr>
+    <tr>
+      <td>Residency (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urban</td>
+      <td>250 (78.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rural</td>
+      <td>68 (21.4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Highest level of education (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary</td>
+      <td>119 (37.4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Secondary</td>
+      <td>69 (21.7)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>College</td>
+      <td>61 (19.2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>University</td>
+      <td>25 (7.9)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>In training</td>
+      <td>44 (13.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Occupational status (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Student</td>
+      <td>57 (17.9)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Employed with qualification</td>
+      <td>66 (20.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Service or shop sales worker</td>
+      <td>133 (41.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Elementary occupation</td>
+      <td>62 (19.5)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Toilet facility (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pit latrine</td>
+      <td>75 (23.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Water closet</td>
+      <td>243 (76.4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cooking fuel (N, %)*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoky</td>
+      <td>113 (35.5)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-smoky</td>
+      <td>205 (64.5)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Exposure to animals, yes (N, %)</td>
+      <td>138 (43.4)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>The course of antibiotics in the past year (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1–3 courses</td>
+      <td>164 (50.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&gt;3 courses</td>
+      <td>28 (8.7)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>131 (40.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Last time antibiotic use (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3–6 months ago</td>
+      <td>44 (13.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6–12 months ago</td>
+      <td>65 (20.1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12 months ago,</td>
+      <td>83 (25.7)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>131 (40.6)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Access to clean water (N, %)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tap water</td>
+      <td>314 (97.2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Well, canal or river water</td>
+      <td>9 (2.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Comparison between characteristics of the Tanzanian and the Dutch participants was done using Chi-square and, Mann-Whitney U tests; for categorical and continuous variables respectively.*categories of cooking fuel include firewood, charcoal or kerosene (smoky), or gas and electrical (non-smoky)._
+
+### Differences in inflammatory proteome between Tanzanians and Dutch
 
 The inflammatory proteome was measured simultaneously in samples from the Tanzanian and Dutch participants using the Olink ‘inflammation’ panel, which targets 92 cytokines, chemokines and other inflammation and metabolism-related proteins (Olink Proteomics AB, Uppsala, Sweden). Relative protein concentrations are reported as normalized protein expression (NPX) units, which are on a Log2 scale. Eighteen proteins were excluded from further analysis because their value was below the lower limit of detection in more than 25% of samples in both cohorts (Figure 1—figure supplement 2). Principal component analysis (PCA) of the remaining 74 proteins revealed a clear separation between Tanzanian and Dutch samples (Figure 1A). A volcano plot of differentially expressed proteins (Figure 1B) showed that 35 (47%) proteins were significantly higher in the Tanzanians and 20 (27%) lower at an FDR p<0.05, with correction for age and sex and BMI. The most prominently (fold change (FC)) upregulated proteins were two regulators of metabolism: the mTOR substrate and translational repressor 4E-BP1 (log2 FC 1.9; FDR p=1.3 × 10–60) and FGF21 (fibroblast growth factor 21; log2 FC 1.3; p=1.3 × 10–30), a hormone produced by the liver that functions as a major regulator of glucose and lipid homeostasis. Obesity and excess carbohydrate and/or insufficient protein intake were reported to increase FGF21 concentrations (Hill et al., 2018). Other prominently upregulated proteins in the Tanzanians were interleukin (IL)–17 A (log2 FC 0.7; p=9.6 × 10–34) and IL-17C (log2 FC 0.7; p=1.1 × 10–74), and the CC-chemokine family members CCL11/eotaxin (eosinophil chemoattractant; log2 FC 0.7; p=7.3 × 10–63), CCL3/MIP-1α (macrophage inflammatory protein-1α; log2 FC 0.6; p=5.6 × 10–10), CCL7/MCP3 (monocyte chemotactic protein 3; log2 FC 0.6; p=7.4 × 10–42) and CCL8/MCP2 (log2 FC 0.5; p=8.4 × 10–23). The cytokines Tumour Necrosis Factor (TNF), IL-6, IL-10, and IL-18, as well as oncostatin-M (OSM) and adenosine deaminase (ADA) were also significantly higher in the Tanzanians.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig1-v2.jpg)
+
+**Figure 1.:** (A) Principal component analysis depicting the sample distribution of Dutch (N=416) vs. Tanzanian (N=318) healthy individuals across PC1 and PC2, indicating significant differences in the inflammatory protein profiles of the two cohorts. (B) Volcano plot showing differentially expressed proteins (DEPs) between the Dutch and Tanzanian cohorts (Dutch cohort; N=74 and Tanzanian cohort; N=72 inflammatory proteins; analyzed by Limma, linear models for microarray data, R package). The x-axis shows the Log2 fold change (Log2 FC) of the normalized protein expression (NPX), while the y-axis shows the -Log10 of the adjusted p-values (FDR <0.05); dotted lines represent the cut-off value Log2FC < 0.5 and> 0.5. (C) Violin plots showing concentrations of circulating adipokines and inflammatory cytokines in the Dutch and Tanzanian participants (data previously reported (Temba et al., 2022); differences analyzed by linear regression with age, sex and BMI as covariates). Results were declared significant after correcting for multiple testing using False discovered rate (FDR). AAT; alpha-1 antitrypsin; BMI; Body Mass Index.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Histograms (A) and (B) show the age and BMI distributions of Tanzanians and Dutch subjects, respectively A pie chart comparing the gender distributions of Tanzanians and the Dutch cohort. This figure is related to the data displayed on Table 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The comparison was performed using linear regression (unadjusted) on the inversed ranked based values of leptin concentration.
 
 The most prominently downregulated proteins in Tanzanians were ST1A1 (sulfotransferase 1A1; log2 FC –0.8; p=2.2 × 10–16) and AXIN1 (axis inhibition protein 1; log2 FC –0.7; p=6.5 × 10–18). ST1A1 is a cytosolic sulfotransferase that catalyzes the sulfonation of endogenous and exogenous compounds (Wang et al., 2016). AXIN1 is a negative regulator of the Wnt/β-catenin signaling pathway (Kikuchi, 1999). This pathway is increasingly recognized to play an important role in inflammatory diseases, diabetes and cancer (Jridi et al., 2020; Das et al., 2021). Conversely, CDCP1 (CUB domain-containing protein 1), a transmembrane receptor that is a Wnt signaling promoter (He et al., 2020) was significantly up-regulated (log2 FC 0.7; p=1.8 × 10–61) in the Tanzanian cohort, suggesting enhanced activity of the Wnt/β-catenin signaling pathway in the Tanzanian participants. Finally, Tanzanians had lower levels of the CXC chemokine family members CXCL1, CXCL5, CXCL6, and CXCL8 (IL8). These chemokines mediate among others neutrophil trafficking (Palomino and Marti, 2015).
 
@@ -60,7 +408,7 @@ The Olink platform used in this study does not contain adipocytokines and provid
 
 In a previous study in the same cohort, we identified different genetic loci that were associated with whole-blood cytokine responses to a variety of microbial and synthetic ligands (Boahen et al., 2022). We assessed whether these genetic variants were also associated with plasma protein levels. We utilized the top six independent SNP-cytokine response loci and performed matrix pQTL analysis. Different associations were identified, but none reached genome-wide (p=5 × 10–8) or suggestive (p=5 × 10–6) significance (Supplementary file 1; P-value unadjusted).
 
-## Associations between inflammation-related proteins and intrinsic and environmental factors
+### Associations between inflammation-related proteins and intrinsic and environmental factors
 
 Next, we investigated associations between the inflammation-related proteins with host intrinsic factors such as age and sex, BMI and environmental exposures relevant to the Tanzanian setting. The analyses were variously corrected for age, sex and BMI to assess the impact of one specific factor. In high-income countries, age is a potent driver of immune variation with a shift toward a pro-inflammatory state (Brüünsgaard and Pedersen, 2003, Ferrucci et al., 2005). In the Dutch participants, advancing age was indeed associated with an increase in inflammation-related proteins, including inflammatory cytokines (IL-6, IL-7, IL-18), IL-15RA, monocyte chemoattractant proteins (MCP2-4), matrix metalloprotease1 (MMP1), the chemokine IL-8 and hepatocyte growth factor (HGF). In contrast, these significant associations were largely absent in the Tanzanians (Figure 2A, B, Supplementary file 2). An exception was a strong significant positive association of advancing age with CDCP1, CCL11, and CCL25, which was also observed in the Dutch cohort. Overall, these results show that the association between advancing age and inflammatory markers is much weaker in Tanzanians.
 
@@ -72,9 +420,17 @@ Females in both cohorts overall had lower concentrations of inflammatory protein
 
 Finally, since environmental exposures are potential drivers of inflammation, we determined the relationship between relevant exposures for Tanzanians and the proteome. Such exposures included type of toilet, exposure to wood smoke for cooking, farm-animal exposure, access to clean water, previous infections and prior use of antibiotics (Table 1). Our results did not show a significant association between inflammatory proteins with one of these exposures.
 
-## Associations with food-derived metabolites and dietary habits
+### Associations with food-derived metabolites and dietary habits
 
 We recently reported that diet, and especially the transition between a rural traditional diet to an urban Western-type diet, had a major influence on ex vivo cytokine immune responses in the Tanzanian cohort (Temba et al., 2021). We postulated that diet also explained part of the variation in inflammatory proteins. To test this hypothesis, we selected food-derived metabolites (n=288) from an untargeted plasma metabolome, as previously described (Temba et al., 2021). Using these metabolites, we first performed unsupervised hierarchical clustering, which yielded two different clusters (food-metabolome clusters one and two) (Figure 3—figure supplement 1A). Weekly food consumption was associated with these food-metabolome clusters: participants in cluster one more frequently consumed ugali (a traditional porridge made from maize), plantain (cooking banana) and green vegetables, and less frequently rice and fried potato chips (Figure 3—figure supplement 1B). Next, we performed unsupervised clustering of the inflammatory proteome with age, sex, BMI, geolocation (i.e. rural vs. urban living), seasonality and the food-metabolome clusters as input variables. This analysis revealed two significant inflammatory proteome clusters: one with lower and one with higher expressed inflammatory proteins (Figure 3). Participants belonging to food-metabolome cluster one (i.e. more ‘traditional’ Tanzanian diet) were overrepresented in the cluster with lower-expressed inflammatory proteins, whereas participants belonging to cluster two were overrepresented in the cluster of higher-expressed inflammatory proteins (Supplementary file 3). Other factors such as age, sex or season were not associated with the inflammatory clustering.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig3-v2.jpg)
+
+**Figure 3.:** Unsupervised k-means clustering of individuals from the Tanzanian cohort (N=318) according to the inflammatory proteins (N=72 inflammatory proteins). Data are shown as normalized protein expression (NPX). The color code indicates the relative expression of the inflammatory protein across the samples of the two compared groups. Dark red and turquoise colors indicate higher and lower expression, respectively. Presented are annotations for age, sex, BMI, seasonality, geographical location (i.e. rural vs. urban) and food-derived metabolite cluster. Abbreviations: NXP; normalized protein expression; BMI; body mass index.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82297/elife-82297-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heat map displaying unsupervised k-means clustering of individuals from the Tanzanian cohort (N=318) based on food-derived metabolites (N=298 food-derived metabolites). Food-derived metabolites from the untargeted plasma metabolome were clustered, which yielded two clusters (traditional Tanzanian food cluster and Western diet food cluster). Red and blue colors indicate higher and lower metabolite intensity, respectively. Presented are annotations for age, sex, BMI, and seasonality. (B) Weekly food consumption of various foods across both metabolic clusters. Differences in food consumption frequency categories were tested using the chi-squared test. The colors red and blue represent higher and lower weekly consumption frequencies of specific foods, respectively; p-values <0.05 (*), <0.005 (**). BMI, body mass index.
 
 Next, we performed a correlation analysis to assess the relationship between diet-related metabolites and inflammatory proteins. Results show different negative associations between plant-derived polyphenols (apigenin, naringenin, cyanidin 3-(6-caffeoyl glucoside) 5-glucoside, licoagrodin, shoyuflavone C and phenolic acids such as gallic acid) and inflammatory proteins, particularly the MCP and CXCL families (Figure 4). In contrast, positive associations were observed between inflammatory proteins, and especially members of the MCP and CXCL families, with plasma metabolites belonging to the following classes: carboxylic acids and derivatives (e.g. aminobutanoic acid-ABA), organooxygen compounds (for example, triose), and prenol lipids such as resveratrol 4"-(6-) galloylglucoside (Figure 4, Supplementary file 4). The detailed classifications of various diet-derived metabolites and their correlations with various inflammatory proteins are presented in Supplementary file 4. Overall, these findings support the notion that a traditional plant-based Tanzanian diet in healthy Tanzanians has an important impact on circulating inflammatory proteins.
 
@@ -104,27 +460,27 @@ To summarize, our findings reveal significant differences in inflammatory and me
 
 ## Materials and methods
 
-## Study design and population
+### Study design and population
 
 The present study used samples from two cross-sectional cohorts of healthy volunteers: the 300-Tanzania-FG (300TZFG) and the Dutch 500FG. Both cohorts were enrolled within the Human Functional Genomics Project (https://www.humanfunctionalgenomics.org). The demographic characteristics of both cohorts have been described previously (Temba et al., 2021; Ter Horst et al., 2016). Briefly, the 300TZFG cohort consists of 323 healthy Tanzanian individuals aged between 18 and 65 years residing in the Kilimanjaro region in Northern Tanzania. The cohort was enrolled between March and December 2017. Exclusion criteria were participants with any acute or chronic disease, use of antibiotics or anti-malaria medication in the three months before blood sampling, tuberculosis in the past year, a blood pressure ≤90/60 mmHg or ≥140/90 mmHg, or random blood glucose >8.0 mmol/L. Pregnant, postpartum, or breastfeeding females were excluded. The 500FG cohort consists of 534 Dutch individuals of Western-European background, aged 18 years and older. Data was collected between August 2013 and December 2014 at the Radboud university medical center (Radboudumc) in the Netherlands. Exclusion criteria were: the use of any medication in the past month and acute or chronic diseases at the time of blood sampling. Pregnant, postpartum, or breastfeeding females were excluded.
 
-## Sample collection and preparation
+### Sample collection and preparation
 
 The current study is part of the Human Functional Genomics Project (HFGP; humanfunctionalgenomics.org), which employs standardized procedures for sample collection, handling, and pre-processing. Blood was obtained in the morning via antecubital puncture into ethylenediaminetetraacetic acid (EDTA) tubes (Monoject; Covidien, Ireland). Within two to three hours after blood collection, plasma was collected by centrifugation at 3800 rpm for 8 min at room temperature. The obtained plasma were stored at −80 °C, as recommended by the ISBER biobanking organization (Garcia et al., 2014). Plasma samples for the Tanzania cohort were shipped to the Netherlands on dry ice.
 
-## Inflammatory proteome
+### Inflammatory proteome
 
 Plasma proteins were measured with the Olink 92 Inflammation panel using proximity extension technology (Olink Proteomics AB, Uppsala, Sweden) (Assarsson et al., 2014). This panel includes 92 inflammation-related proteins. This assay utilizes the binding of target proteins by paired oligonucleotide antibody probes, followed by hybridization and amplification. Data are reported as normalized protein expression values (NPX), which is an arbitrary unit in a Log2 scale that is calculated from normalized Ct values. Validation data of the assay are available on the Olink website (https://www.olink.com). All samples were measured in the same batch in a single run. Proteins were excluded from analysis when values were both below the detection limit in more than 25% of all samples. Plasma samples from the Tanzanian and Dutch cohorts were on their first and second freeze-thawed cycles, respectively. Pre-analytical processing such as freeze-thawed cycles and storage time has limited influence on the measured proteins reported in this study (Shen et al., 2018; Enroth et al., 2016; Lee et al., 2015).
 
-## Measurement of the circulating inflammatory mediators
+### Measurement of the circulating inflammatory mediators
 
 Plasma concentrations of the cytokines IL-6, IL-1β, IL-1 receptor antagonist (IL-1Ra) and IL-18 (lot number Bio-Tech/R&D; SPCKC-PS-001559) and IL-18 binding protein (IL-18BPa) (lot number Bio-Tech/R&D; SPCKB-PS-000502) were measured in EDTA plasma using the Simple Plex cartridges run on the Ella platform (Protein Simple, San Jose, USA) following the manufacturer’s instructions.
 
-## Plasma metabolome
+### Plasma metabolome
 
 Plasma samples of the Tanzanian cohort were measured using the untargeted metabolomics workflow by General Metabolics (Boston, MA) with procedures as previously described (Fuhrer et al., 2011). In short, metabolites were measured by a high throughput mass spectrometry technique using the Agilent Series 1100 LC pump coupled to a Gerstel MPS2 autosampler and the Agilent 6520 Series Quadrupole Time-of-flight mass spectrometer (Agilent, Santa Clara, CA). Our non-targeted high-throughput method relies on flow injection and does not involve separation of compounds based on an LC gradient. This is because many different species would be fragmented simultaneously. Historically, the decision to collect high-accuracy flow injection has been a technological trade-off to enable efficient analysis of large cohorts. Therefore, metabolites detected in the high-throughput non-targeted metabolomics screening method, which enables the screening of these large cohorts for metabolomic feature patterns, are based on accurate mass (approximately 1 ppm accuracy) and natural isotope detection consistent with the assigned formulae; final assignments are pending validation with LC-MS/MS. For this study, the MS spectra files (accessible at http://www.ebi.ac.uk/metaboLights/MTBLS2267) contain 70 scans, each of which contains the full MS1 profile data from m/z 50–1050 for two subsequent injections from the same needle draw of any given sample. The analytical method and approach to data processing and annotation were previously described (Fuhrer et al., 2011). The selection of food-derived metabolites was performed based on the ontology given in the HMDB (https://www.hmdb.ca/) as described previously (Temba et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 The proteomic data from the Dutch and Tanzanian cohorts were normalized using inter-plate controls for batch variation correction and presented in the log2 scale. Normalizing for batch effects was done using pooled plasma standards on all plates. Eight samples of plasma pool controls were measured in each cohort (two per plate, a total of 4 plates per cohort). We performed bridging normalization based on median differences between plasma pool controls in the 300TZFG and 500FG cohorts. The following steps were applied for each protein: (1) Determine the median value from the eight bridging samples for each protein in the 300TZFG and 500FG cohort. (2) Calculate the median differences (300TZFG-500FG) as median differences X. (3) Take the NXP values of each protein in the 300TZFG cohort and subtract the median difference (the X value). This created a normalized data set for the 300TZFG cohort.
 

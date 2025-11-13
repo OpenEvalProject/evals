@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0160cpw27 University of Alberta Edmonton Canada
-2. https://ror.org/03czfpz43 Emory University Atlanta United States
+1. University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
+2. Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
 
 † Corresponding author
 
@@ -36,55 +36,71 @@ In this study, we used a cold-blooded teleost vertebrate model to gain additiona
 
 ## Results
 
-## High-resolution motion tracking identifies a predictable fever programme in an outbred population of fish
+### High-resolution motion tracking identifies a predictable fever programme in an outbred population of fish
 
 Conventional shuttle box approaches for examination of fish behaviour are well established to produce significant variability between individual animals, driven by differences in their preference for cover, swim depth and activity level, in addition to social behaviours associated with schooling, territorial grouping or avoidance based on dominance (Brown et al., 2011). In an effort to decrease this heterogeneity and offer greater analytical depth to our behavioural outputs, we customized an annular temperature preference tank (ATPT) (Myrick et al., 2004) which takes advantage of fluid dynamics instead of physical barriers to establish distinct temperature environments (Figure 1). Under this setup, aquatic animals were free to choose environmental temperatures independent of other variables such as lighting, perceived cover, edge effects, water depth, or current that impact positional behaviour. Distinct temperature set points (16, 19, 21, 23, and 26°C) were chosen and used to create a barrier-free environmental housing temperature gradient that spanned a 10°C range (Figure 1A–C). Water inputs and flow rates were optimized to yield a gradient that was stable through 14 days of continuous evaluation (Figure 1C). Directional flow rates across the swim chamber were also adjusted to create smaller consistent temperature gradients between each of the primary thermal zones (Figure 1B). Our goal was to avoid abrupt housing water temperature boundaries, which could affect an animal’s choice to transition between adjacent thermal zones. Next, we coupled this updated ATPT to an automated monitoring system with per-second temporal resolution for effective tracking of fish through day and night cycles (Figure 1D). This offered greater analytical robustness and temporal resolution than previously possible in behavioural fever analyses. We then challenged individual teleost fish (Carassius auratus; goldfish) with an Aeromonas cutaneous infection in vivo. As eurythermal ectotherms, goldfish offered an opportunity to examine absolute changes to thermopreference to an immune challenge, while minimizing the potential for thermal stress. This is because the natural range of tolerated environmental temperatures for these fish (1.3–34.5°C) was broader than those temperatures expected in a febrile response. Our choice also provided access to a previously optimized in vivo self-resolving animal model where changes during induction and resolution phases of acute inflammation could be examined (Havixbeck et al., 2017; Havixbeck et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig1-v1.jpg)
 
-**Figure 1.:** (A) The ATPT established a continuous ring-shaped swim chamber that offered distinct temperature environments separated by fluid dynamics instead of physical barriers. (B) Dye flow test highlights eight distinct thermal zones created using concentric flow directed towards the centre of the apparatus. (C) Analysis of temperature stability for established thermal zones. Single lines correspond to highest (26°C) and lowest (16°C) temperatures. Double lines denote values from equivalent zones on opposing sides of the apparatus for 19, 21, and 23°C target temperatures. Raw data included as Figure 1—source data 1. (D) Representative images of a fish (blue arrows) in raw infrared and processed video, under simulated daylight and night (full dark) conditions. Yellow identifier denotes strong tracking signal achieved for experimental setup. Red dot denotes centre point used to set coordinates for raw behavioural data.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) The ATPT established a continuous ring-shaped swim chamber that offered distinct temperature environments separated by fluid dynamics instead of physical barriers. (B) Dye flow test highlights eight distinct thermal zones created using concentric flow directed towards the centre of the apparatus. (C) Analysis of temperature stability for established thermal zones. Single lines correspond to highest (26°C) and lowest (16°C) temperatures. Double lines denote values from equivalent zones on opposing sides of the apparatus for 19, 21, and 23°C target temperatures. Raw data included as Figure 1—source data 1. (D) Representative images of a fish (blue arrows) in raw infrared and processed video, under simulated daylight and night (full dark) conditions. Yellow identifier denotes strong tracking signal achieved for experimental setup. Red dot denotes centre point used to set coordinates for raw behavioural data.
 
 Behavioural examination identified four distinct phases of the fever response among groups of fish challenged in vivo with Aeromonas veronii (Figure 2A). Thermal selection patterns across challenged fish were remarkably reproducible, even when fish were placed individually in the annular swim chamber (Figure 2B). A distinct period from 1 to 8 days post-infection (dpi) emerged, where Aeromonas-challenged fish displayed a 2–3°C increase in thermal preference compared to mock-infected (saline) controls (Figure 2B). Variance analysis confirmed the consistency in environmental temperature selected by individual animals within this 1–8 dpi time window (Figure 2B). Outside of this window, we found no significant difference in thermal selection between challenged and control individuals, with both Aeromonas and saline-treated groups also shifting to large fluctuations both temporally and among individual fish (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig2-v1.jpg)
 
-**Figure 2.:** (A) Fish infected with Aeromonas veronii were free to select a range of environmental temperatures within the annular temperature preference tank (ATPT). Video still images show collective positioning of fish during distinct phases of fever response. Labels correspond to mean temperature for each ATPT thermal zone. (B) Temperature preference, (C) velocity, and (D) total transitions across thermal zones for fish infected with Aeromonas (n = 5) or mock infected with saline (n = 5). Fish were placed separately in the ATPT and individually monitored for 2 weeks. Evaluation of behavioural variance shows distinct periods of marked consistency in temperature preference, swimming velocity, and thermal zone transitions across Aeromonas-infected fish. Solid lines represent mean hourly values and vertical grey bars correspond to standard deviation at each time point. Results were analyzed by an ordinary two-way analysis of variance (ANOVA) and Šídák’s multiple comparisons test. *p < 0.05, p < 0.01, ***p < 0.001, ****p < 0.0001. (E) Simultaneous three-parameter representation of behaviour hourly data points for Aeromonas-infected and saline control fish (n = 5 fish and 168 data points per group; mean values for 5 fish shown). 3D plots correspond to 1–8 dpi febrile period. Merged graph highlights segregation of behavioural responses. Figure produced using R (version 3.3). Raw data and open-source code included as Figure 2—source data 1–5.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.Figure 2—source data 3.Figure 2.Figure 2—source data 4.Figure 2.Figure 2—source data 5.Figure 2.
+**Figure 2.:** (A) Fish infected with Aeromonas veronii were free to select a range of environmental temperatures within the annular temperature preference tank (ATPT). Video still images show collective positioning of fish during distinct phases of fever response. Labels correspond to mean temperature for each ATPT thermal zone. (B) Temperature preference, (C) velocity, and (D) total transitions across thermal zones for fish infected with Aeromonas (n = 5) or mock infected with saline (n = 5). Fish were placed separately in the ATPT and individually monitored for 2 weeks. Evaluation of behavioural variance shows distinct periods of marked consistency in temperature preference, swimming velocity, and thermal zone transitions across Aeromonas-infected fish. Solid lines represent mean hourly values and vertical grey bars correspond to standard deviation at each time point. Results were analyzed by an ordinary two-way analysis of variance (ANOVA) and Šídák’s multiple comparisons test. *p < 0.05, p < 0.01, ***p < 0.001, ****p < 0.0001. (E) Simultaneous three-parameter representation of behaviour hourly data points for Aeromonas-infected and saline control fish (n = 5 fish and 168 data points per group; mean values for 5 fish shown). 3D plots correspond to 1–8 dpi febrile period. Merged graph highlights segregation of behavioural responses. Figure produced using R (version 3.3). Raw data and open-source code included as Figure 2—source data 1–5.
 
 Our behaviour analyses further identified two new measurable lethargy-associated outcomes in teleost fish, which add to the similarities between ectotherm and endotherm fever. The first was defined by a decrease in swimming velocity (V) among Aeromonas-challenged fish (1–8 dpi; Figure 2C). In contrast, velocity among control fish remained high and variable across individuals during the same timeframe (Figure 2C). The second lethargy parameter was based on changes to temperature seeking behaviour, defined by the rate of transitions that a fish made between distinct ATPT thermal zones. Whereas control saline injected fish continued to show one hundred or more zone transitions (ZT) per hour, Aeromonas-treated fish displayed a dramatic decrease in the number of ZT during the same 1–8 dpi window (Figure 2D). As with temperature preference and velocity measurements, ZT values within this fever behavioural window were remarkably consistent across individual Aeromonas-challenged fish, increasing in variance after 8 dpi (Figure 2D). In sharp contrast, control fish displayed significant heterogeneity throughout the entire observation period. These two new lethargy-associated metrics are consistent with established sickness behaviours of metabolic fever in humans and other endotherms (immobility, fatigue, and malaise) (Harden et al., 2015) and help to further define the behavioural fever response of teleost fish.
 
 Hourly values for Aeromonas-challenged and saline control groups were evaluated simultaneously during the established fever window (1–8 dpi) and across the broader 14-day observation period. Between 1 and 8 dpi, we identified marked segregation in the responses elicited by fish in these two groups (Figure 2E). For Aeromonas-challenged fish, V and ZT values remained exclusively low during the febrile period (Figure 2E). In contrast, saline control fish exhibited a wider range of movement profiles, dominated by high V and ZT values (Figure 2E).
 
-## Activation of CNS and systemic febrile programmes following Aeromonas infection
+### Activation of CNS and systemic febrile programmes following Aeromonas infection
 
 To confirm classic engagement of the CNS via fever and assess potential differences with mechanical FRH, hypothalamic tissue was isolated from Aeromonas-challenged fish and examined for local expression of pyrogenic cytokines. The selected genes, il1b, tnfa, and il6, showed more robust local induction of gene expression under dynamic fever conditions (TD group), where fish had been allowed to swim freely through the established 10°C temperature gradient within the ATPT (Figure 3A). Two cytoprotective elements (hsp70 and hsp90) further displayed the highest levels of expression in the hypothalamus under these dynamic thermal conditions. Evaluation of PGE2 concentrations in systemic circulation showed an early peak at 24 hr post-infection (hpi) for TD fish, consistent with its role as a major pyrogenic mediator of fever (Evans et al., 2015; Figure 3B). These responses were distinct from those fish placed under 26°C (TS26; mechanical FRH) or 16°C static thermal conditions (TS16; basal acclimated temperature) following infection. TS26 FRH promoted upregulation of cytokine and cytoprotective genes in our panel, but to lower levels than those fish allowed to exert dynamic fever (Figure 3A). Circulating PGE2 concentrations remained near basal levels for both TS26 FRH and TS16 groups (Figure 3B). Hyperthermia alone without pathogen stimulus was not sufficient to activate these cytokines and cytoprotective genes in the CNS (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig3-v1.jpg)
+
+**Figure 3.:** Fish were inoculated and placed in static 16°C (basal acclimated temperature), static 26°C (mechanical hyperthermia; maximum temp. that fish selected during behavioural fever), or dynamic fever (where fish could move freely between thermal zones). (A) Quantitative PCR (qPCR) evaluation of hypothalamic responses following infection (n = 5 per group per time point; 3 technical replicates per fish per time point). Symbols correspond to individual samples; lines represent the mean ± standard error of the mean (SEM); actinb served as reference gene. Results analyzed by an ordinary two-way analysis of variance (ANOVA) using Tukey post hoc test. (B) Plasma collected at 0, 12, 24, 48 and 72 hr post-infection (n = 6 per group per time point) and prostaglandin E2 (PGE2) concentrations determined via ELISA. Results analyzed by an ordinary one-way ANOVA followed by a Tukey’s post hoc test. Error bars represent + SEM. (C) Confirmation that an antipyretic inhibits fish fever. Video still images illustrate disruption of high thermal preference collective positioning following treatment of Aeromonas-infected fish with ketorolac tromethamine. Quantitation of thermal preference shows differences between fish infected with Aeromonas, those infected with Aeromonas and treated with ketorolac (AVK), and those mock infected with saline (n = 5 fish per group per time point). Observation period began 2 hr after start of peak febrile response (26 hr) and continued for 8-hr duration of ketorolac action. One way ANOVA followed by Tukey’s multiple comparisons test compared Aeromonas, AVK, and saline groups. Changes were further evaluated within AVK group before and after ketorolac administration. Welch’s t-tests compared behavioural parameters. For all, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ‡ denotes significant difference from time 0, p < 0.05. Raw data included as Figure 3—source data 1–3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Aeromonas- or mock-infected fish were placed in 26°C static thermal conditions following inoculation. Quantitative real-time PCR evaluated gene expression in the hypothalamus following infection (n = 5 per group per time point; 3 technical replicates per fish per time point; actinb served as reference gene). Symbols correspond to individual samples and lines represent the mean ± standard error of the mean (SEM). Results were analyzed by an ordinary two-way analysis of variance (ANOVA) using Tukey post hoc test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ‡ denotes significant difference from time 0, p<0.05. Raw data included as Figure 3—figure supplement 1—source data 1.
+
 Administration of an antipyretic offered added support for the shared biochemical pathways directing fever in ectotherms and endotherms. We chose ketorolac as an NSAID with the capacity to inhibit COX-1 and COX-2 (Vadivelu et al., 2015). This drug has been successfully used in a range of animal species (Rooks, 1990) and can be injected (Vadivelu et al., 2015; Baevsky et al., 2004), thereby ensuring consistent dosing. In humans, a dose of 0.5 mg/kg is effective, and results in a 15- to 20-min onset with a 6- to 8-hr duration of action (Vadivelu et al., 2015). Similarly, injection of ketorolac to Aeromonas-infected fish inhibited fever at a dose of 0.5 mg/kg (Aeromonas vs. AVK experimental group; Figure 3C). Examination of changes within the AVK group before and after ketorolac administration further showed that this NSAID inhibited fever-associated increases in thermal preference and lethargy behaviours (Figure 3C).
 
-## Fever markedly improves Aeromonas clearance while showing selectivity in the induction of reactive oxygen species and nitric oxide antimicrobial defenses
+### Fever markedly improves Aeromonas clearance while showing selectivity in the induction of reactive oxygen species and nitric oxide antimicrobial defenses
 
 During the course of infection, furuncles caused by Aeromonas species can shed up to 107 bacteria per hour in fish (Rose et al., 1989). Thus, we assessed the presence of A. veronii on the furuncle surface as a measure of pathogen load and shedding potential. Infected fish held at 16°C static thermal conditions (TS16) displayed heavy bacterial loads through the first 4 days after infection, reducing to 70 ± 23 and 28 ± 10 CFU at 7 and 10 dpi, respectively, and subsequently progressing below detectable levels by 14 dpi (Figure 4A). Fish in the dynamic fever group (TD) also showed heavy initial bacterial burden, but these decreased markedly faster compared to TS16 fish (40 ± 27 CFU at 4 dpi, and below detectable levels by 7 dpi). Mechanical hyperthermia (TS26) yielded an intermediate response, achieving Aeromonas clearance 10 days following infection (Figure 4A). Thus, fish allowed to exert dynamic fever cleared A. veronii in half the time than fish maintained in static 16°C conditions. Notably, this enhancement in clearance could not be explained by the current thermal restriction model since A. veronii showed faster growth as incubation temperatures increased from 16 to 26°C (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig4-v1.jpg)
+
+**Figure 4.:** Fish were infected with Aeromonas and placed under 16°C static, 26°C static (mechanical hyperthermia), or dynamic host-driven fever conditions. (A) Bacterial loads and pathogen shedding potential assessed following surface sampling of infection site. Mean values ± standard error of the mean (SEM) shown (n = 5 per group per time point; 3 technical replicates per fish per time point). (B) Effect of temperature on Aeromonas growth assessed in vitro (n = 3 per group per time point). Results analyzed by an ordinary two-way analysis of variance (ANOVA) using Tukey post hoc test. Differences correspond to statistical significance of p < 0.05 between 16 vs. 26°C (•), 16 vs. 21°C (♦), and 21°C vs. 26°C (■); ‡ denotes significant difference from time 0, p < 0.05. (C) Hematoxylin and eosin were used to stain infected wounds. ImageJ analysis assessed differential cell recruitment (n = 3 per group per time point); refer to Figure 4—figure supplement 1 for source data. Results analyzed by an ordinary two-way ANOVA using Tukey post hoc test. § corresponds to statistical significance of p < 0.01 when dynamic and static 26°C groups were compared to 16°C static conditions. No significant differences found between dynamic and static 26°C groups at any time point. Following Aeromonas challenge, cutaneous leukocytes were isolated from fish held at 16°C static, 26°C static, or fever dynamic thermal conditions. Imaging flow cytometry evaluated leukocyte production of (D) ROS via CellROX, and (E) nitric oxide production via DAF-FM-DA (n = 5 per group per time point). (F) qPCR analysis of wound tissue shows kinetics gene encoding inducible nitric oxide synthase (iNOS; n = 5 per group per time point; 3 technical replicates per fish per time point; actinb served as reference gene). (G) ImageStream MKII flow cytometer images show positive and negative cells after CellROX and DAF-FM-DA staining. Results analyzed using a two-way ANOVA followed by Tukey’s post hoc test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ‡ denotes significant difference from time 0, p < 0.05. Raw data included as Figure 4—source data 1–4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Hematoxylin and eosin were used to stain tissues sectioned from the skin infection site after housing of fish at 16°C static, 26°C static, or dynamic host-driven fever conditions. Time points capture initial 0–72 hr of acute inflammation (n = 3 per group per time point). Scale bar: 100 μm.
 
 To assess the contributions of fever to immune cell function, we first quantitated their recruitment into the mucosal infection site. Both TD and TS26 fish showed equivalent accelerated infiltration kinetics compared to Aeromonas-infected fish held at 16°C static thermal conditions (Figure 4C and Figure 4—figure supplement 1). To determine if this enhancement was paired with activation of antimicrobial pathogen killing mechanisms, we then examined the production of reactive oxygen species (ROS) by infiltrating leukocytes, as a prominent, effective, and evolutionarily conserved innate defense mechanism (Fang, 2004; Neumann et al., 2001). As previously shown by us and others (Havixbeck et al., 2017; Havixbeck et al., 2016; Neumann et al., 2001), leukocytes derived from fish housed under thermally static conditions (TS16 fish for this study) display strong capacity for generation of ROS; over 75% of peritoneal leukocytes were positive for ROS production in the A. veronii in vivo cutaneous challenge model (Figure 4D). Mechanical hyperthermia (TS26) yielded a similar response, with prominent ROS production peaking at 36 hpi (Figure 4D). Surprisingly, the number and proportion of ROS-producing leukocytes were greatly reduced under host-driven dynamic thermoregulatory conditions (TD; Figure 4D) despite the enhanced kinetics in leukocyte recruitment outlined above (Figure 4C).
 
 Given the long-established contributions of fever to host survival (Evans et al., 2015; Kluger et al., 1975; Earn et al., 2014), we hypothesized that fever may promote an innate antimicrobial response that does not include a strong ROS production component. Thus, we also evaluated leukocyte nitric oxide (NO) production, as an alternative evolutionarily conserved innate response to pathogen attack (Neumann et al., 2001; Bogdan, 2015). Contrary to results for ROS, we identified greater overall levels as well as accelerated kinetics of NO production under fever conditions (Figure 4E). Leukocytes infiltrating the furuncle of TD fish showed significant upregulation, with peak NO production observed at 24 hpi (Figure 4E). This was further supported by a marked, earlier upregulation of the gene encoding inducible nitric oxide synthase (iNOS; nos2), which is necessary for production of immune NO (Figure 4F; Neumann et al., 2001; Bogdan, 2015). In sharp contrast, both TS16 and TS26 fish displayed lower levels of nos2 expression and lower overall capacity to produce NO (Figure 4E–G). Thus, fever differentially regulated ROS and NO leukocyte antimicrobial mechanisms in Aeromonas-challenged fish.
 
-## Fever promotes earlier resolution of acute inflammation
+### Fever promotes earlier resolution of acute inflammation
 
 To date, studies looking at the basis for host survival due to fever have focussed on the activation of immune defense mechanisms. The self-resolving nature of our teleost model allowed us to also characterize immunological changes during the transition between induction and resolution phases of acute inflammation. Indeed, comparison of cellular responses following Aeromonas infection showed differences in the control of leukocyte recruitment to the infection site. TD and TS26 fish reached the peak of infiltration at 24 hpi, subsequently decreasing and nearing basal levels by 48 hpi (Figure 4C). This was consistent with faster kinetics of induction and control of local tnfa, il1b, and cxcl8 gene expression among these fish (Figure 5A). In contrast, TS16 fish showed slower kinetics of leukocyte recruitment with a delayed peak at 48 hpi that was further sustained beyond 72 hpi (Figure 4C). These fish also showed delayed upregulation and control of local tnfa, il1b, and cxcl8 gene expression; the latter two pro-inflammatory cytokines further displayed markedly higher levels of expression (Figure 5A). Finally, we identified earlier and more pronounced expression of the anti-inflammatory cytokine (tgfb) and the pro-reparative vascular endothelial growth factor (vegf) among TD and TS26 fish (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig5-v1.jpg)
 
-**Figure 5.:** Aeromonas infection.(A) Cutaneous wounds were evaluated for expression of genes encoding pyrogenic cytokines tumor necrosis factor alpha (TNFA) and interleukin-1 beta (IL1B), CXCL8 chemokine, and pro-resolution cytokines VEGF, TGFB, and IL10 via qPCR (n = 5 per group per time point; 3 technical replicates per fish per time point; actinb served as reference gene). Data were analyzed with an ordinary two-way analysis of variance (ANOVA) using a Tukey post hoc test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ‡ denotes significant difference from time 0, p < 0.05. Raw data included as Figure 5—source data 1. (B) Histopathological assessment highlights inflammation, skin barrier damage, and repair at mid and late stages of the infection process. Hematoxylin and eosin (H&E)-stained tissues sectioned from fish inoculated with Aeromonas and allowed to exert fever (dynamic) or placed under 16°C static conditions. H&E-stained tissues sectioned from healthy controls (day 0; non-inoculated) or mock-infected fish (day 0 saline) are provided as controls. n = 3 for each group. Scale bar: 100 μm.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Cutaneous wounds were evaluated for expression of genes encoding pyrogenic cytokines tumor necrosis factor alpha (TNFA) and interleukin-1 beta (IL1B), CXCL8 chemokine, and pro-resolution cytokines VEGF, TGFB, and IL10 via qPCR (n = 5 per group per time point; 3 technical replicates per fish per time point; actinb served as reference gene). Data were analyzed with an ordinary two-way analysis of variance (ANOVA) using a Tukey post hoc test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; ‡ denotes significant difference from time 0, p < 0.05. Raw data included as Figure 5—source data 1. (B) Histopathological assessment highlights inflammation, skin barrier damage, and repair at mid and late stages of the infection process. Hematoxylin and eosin (H&E)-stained tissues sectioned from fish inoculated with Aeromonas and allowed to exert fever (dynamic) or placed under 16°C static conditions. H&E-stained tissues sectioned from healthy controls (day 0; non-inoculated) or mock-infected fish (day 0 saline) are provided as controls. n = 3 for each group. Scale bar: 100 μm.
 
 Histological examination of experimental wounds further supported marked differences in the inflammation control process of fish maintained in static (TS16) and dynamic (TD) temperature conditions (Figure 5B). Whereas unwounded controls had normal muscle fibres and no signs of inflammation, large infiltrates of granulocytes and macrophages remained in the subdermal muscle tissue of TS16 fish 7 days after cutaneous infection with Aeromonas (Figure 5B). Groups of inflammatory infiltrates were evident in the extracellular space between muscle fibres as well as over damaged muscle fibres. This was in stark contrast to fish allowed to exert fever. Day 7 wounds from these TD fish showed less tissue damage and only traces of the original leukocyte infiltrates remained (Figure 5B), thereby resembling those found in the uninfected wounded day 0 control fish (Figure 5B). By day 10, infected wounds from fish housed under 16°C static thermal conditions showed prominent necrosis among muscle fibres, edema, and some immune cell infiltrates (Figure 5B). In contrast, wounds from fish allowed to exert fever had no necrotic regions and inflammation had largely resolved (Figure 5B). Thus, fever promoted an earlier pro-inflammatory period, which was further paired with more efficient resolution of inflammation based on inhibition of leukocyte recruitment, control of pro-inflammatory cytokine expression, induction of pro-resolution genes, and management of collateral tissue damage.
 
-## Fever enhances wound repair
+### Fever enhances wound repair
 
 Characterization of pathology at the infection site showed marked differences in the capacity of TD fish to heal A. veronii-associated wounds. Similar levels of inflammation were evident in furuncles of TD, TS26, and TS16 fish 1 day after cutaneous infection (Figure 6). However, consistent with the enhanced kinetics of leukocyte recruitment (Figure 4C), TD and TS26 fish showed accelerated kinetics of purulent exudate formation by 2 dpi. Fish exerting dynamic fever subsequently progressed most rapidly, displaying early signs of tissue repair and scale regeneration by 7 dpi, and advanced stages of wound healing by 14 dpi (Figure 6). Comparatively, TS26 and TS16 furuncles did not reach equivalent stages of wound closure (Figure 6; green boxes).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83644/elife-83644-fig6-v1.jpg)
 
-**Figure 6.:** Aeromonas-infected fish.Representative images show focal gross lesions for fish inoculated with Aeromonas veronii and placed under 16°C static, 26°C static (mechanical fever-range hyperthermia), or dynamic host-driven fever conditions. Fish mock infected with saline are provided as controls. Time points capture progression from initial infection to advanced stages of wound repair. Purple boxes highlight differential kinetics of purulent exudate formation. Green boxes showcase distinct degrees of wound closure achieved across Aeromonas-infected groups by 14 dpi.
+**Figure 6.:** Representative images show focal gross lesions for fish inoculated with Aeromonas veronii and placed under 16°C static, 26°C static (mechanical fever-range hyperthermia), or dynamic host-driven fever conditions. Fish mock infected with saline are provided as controls. Time points capture progression from initial infection to advanced stages of wound repair. Purple boxes highlight differential kinetics of purulent exudate formation. Green boxes showcase distinct degrees of wound closure achieved across Aeromonas-infected groups by 14 dpi.
 
 Thus, fish allowed to exert fever resolved Aeromonas infection and repaired the associated skin barrier damage faster than those maintained under mechanical FRH or static 16°C temperature housing conditions.
 
@@ -106,42 +122,150 @@ To conclude, our results reveal novel features of fever, and demonstrate that it
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Goldfish; Carassius auratus)</td>
+      <td>WT</td>
+      <td>Aquatic Imports</td>
+      <td></td>
+      <td>10–15 cm in length; mix-sex</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aeromonas veronii)</td>
+      <td>WT</td>
+      <td>Field isolated</td>
+      <td>NCBI Taxonomy ID: 114517</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketorolac tromethamine</td>
+      <td>ATNAHS Pharma</td>
+      <td>Cat #: 2162644</td>
+      <td>0.5 mg/kg of body weight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellROX Deep Red Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: C10491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAF-FM DA</td>
+      <td>Invitrogen</td>
+      <td>Cat #: D23844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat #: 1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Prostaglandin E2 ELISA Kit</td>
+      <td>Cayman Chemical</td>
+      <td>Cat #: 514010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IDEAS Image Data Exploration and Analysis Software</td>
+      <td>IDEAS (https://www.luminexcorp.com/imagestreamx-mk-ii/#software)</td>
+      <td>RRID:SCR_019195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT software</td>
+      <td>Ethovision XT (https://www.noldus.com/ethovision)</td>
+      <td>RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R software</td>
+      <td>R (http://www.r-project.org/)</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Goldfish (Carassius auratus auratus), 10–15 cm in length, mix-sex, were purchased from Mt. Parnell Fisheries (Mercersburg, PA) and imported to Canada via Aquatic Imports (Calgary, Canada). They were held in a flow through system with simulated natural photoperiod (12 hr of light: 12 hr of dark) in the Aquatics Facility, Department of Biological Sciences, University of Alberta. Water quality parameters were sustained at 5.5–6.5 PPM dissolved oxygen and pH 7.2–8.0. Fish were fed with floating pellets once daily.
 
-## Design and validation of the annular temperature preference apparatus
+### Design and validation of the annular temperature preference apparatus
 
 The ATPT was constructed from customized precision cut acrylic sheets molded and sealed into three concentric rings: an outer-most inflow ring separated into eight equal segments around the periphery, a middle continuous swim chamber containing no physical barriers, and an inner circle used to control depth. An additional inner compartment contained outflow and drainage. Small equidistantly drilled pores placed high on the outer inflow chambers and low on the inner outflow chamber allowed for water flow from the periphery to the centre of the apparatus. This ring-shaped swim chamber maintained constant water depth, current and perceived cover throughout, which are factors known to impact behaviour of aquatic animals. Eight distinct thermal zones were maintained by fluid dynamics. Temperatures of these zones were monitored on a per second basis over 14 days using a HOBOware U30 data-logger with 12-bit temperature sensors (Onset Computer Corporation, Bourne, MA).
 
-## Quantification of animal behaviours
+### Quantification of animal behaviours
 
 Fish behaviour was recorded by a centrally placed overhead infrared camera (Panasonic CCTV colour Camera, WV-CP620 with a 2X Lens variable focal WV-LZ61/2S) and lighting system. This allowed continuous digital video recording of fish movement through simulated day and night cycles. Videos were analyzed using Ethovision XT, Version 11 (Noldus, Wageningen, Netherlands) to quantify behaviours by automated animal tracking. Dynamic subtraction was used to target and track coordinates of each animal within the ATPT on a per second basis, and finished tracks were manually verified. The field of view was separated into eight zones corresponding to 16°C, 19°C (L, R), 21°C (L, R), 23°C (L, R), or 26°C (Figure 1). This was used to calculate fish preference for each thermal zone, velocity of movement, and migration between thermal zones. Data were compiled and used to calculate mean hourly temperature preference, velocity, and number of transitions across thermal zones.
 
-## In vivo Aeromonas infection model and quantification of pathogen loads on skin wounds
+### In vivo Aeromonas infection model and quantification of pathogen loads on skin wounds
 
 Aeromonas veronii biovar sobria (NCBI Taxonomy ID: 114517) was previously isolated by our lab from goldfish cutaneous lesions (Havixbeck et al., 2017). For culture preparation, bacteria were inoculated into a 5-ml sterile trypticase soy media (BD Biosciences, Franklin Lakes, NJ) and cultured at room temperature on a shaker overnight. Fish were anesthetised in a tricaine methanesulfonate solution (02168510; Syndel, WA), a 4 × 4 patch of scales was removed, and minor abrasions made on the skin. The cutaneous wound was then inoculated with 10 µl of A. veronii log-phase culture broth (4.1 × 108 CFU/ml) before returning the fish to water. This inoculation dose was previously determined to promote a self-resolving acute inflammatory process where initial induction and subsequent resolution phases could be examined (Havixbeck et al., 2017). Infected fish were assigned randomly to different temperature categories, and they were also randomly selected at indicated time points for our experiments. Subsequent assessment of A. veronii numbers at the furuncle surface was used as a measure of pathogen load and shedding potential; surface bacteria were collected and plated onto 2× replicate tryptic soy agar plates. CFUs were quantified after 24-hr incubation at room temperature. Ketorolac (02162644; ATNAHS, Basildon, UK) administered intraperitoneally at 0.5 mg/kg of body weight was used in select experiments.
 
-## Gene expression
+### Gene expression
 
 Samples were collected, immediately frozen in liquid nitrogen, and stored at −80°C until use. Total RNA was extracted using TRIzol (15596026; Thermo Fisher Scientific, Waltham, MA) following the manufacturer’s specifications. RNA concentration and quality were evaluated using a Nanodrop ND-1000 (Thermo Fisher Scientific, Waltham, MA) and Bioanalyser-2100 equipped with an RNA 6000 Nano Kit (5067-1511; Agilent Technologies, Santa Clara, CA). cDNA was synthesized using iScript Kit (1708891; BioRad, Mississauga, Canada) according to the manufacturer’s specifications. qPCR was performed using the QuantStudio 6 Flex Real-Time PCR System (Applied Biosystems, Waltham, MA) where RQ values were normalized against gene expression on day 0 for each replicate time course and β-actin was used as a reference gene. Primers used are listed in Supplementary file 1. Relative quantification was performed according to the 2−∆∆Ct method.
 
-## ROS production
+### ROS production
 
 Leukocyte isolations and ROS production evaluations were performed as previously described (Havixbeck et al., 2016; Soliman et al., 2021). After isolations, 500 µl of cell suspensions were incubated with 0.5 µl of CellROX Deep Red Reagent (C10491; Thermo Fisher Scientific, Waltham, MA) in the dark for 30 min to allow for cellular uptake. Cells were washed twice with 1× PBS−/− and fixed with 1% formaldehyde (47608; Sigma Aldrich, St. Louis, MO). Samples were centrifuged at 350 × g for 5 min at 4°C. Data were acquired using an ImageStream Mk II Imaging Flow Cytometer (Amnis, Seattle, WA), and analyzed via IDEAS Image Data Exploration and Analysis Software (Amnis, Seattle, WA). Cells were gated based on the normalized frequency of a fluorescent minus one sample.
 
-## NO production
+### NO production
 
 The production of NO was evaluated using 4-amino-5-methylamino-2′,7′-difluorofluorescein diacetate (DAF-FM DA; D23844; Invitrogen, Waltham, MA). Following leukocyte isolation, 500 µl of cell suspensions were incubated with DAF-FM DA at a concentration of 1 µM for 30 min in the dark. Cells were washed twice with 1× PBS−/− and fixed with 1% formaldehyde (47608; Sigma Aldrich, St. Louis, MO). Samples were centrifuged at 350 × g for 5 min at 4°C. Data were acquired using an ImageStream Mk II Imaging Flow Cytometer (Amnis, Seattle, WA), and analyzed via IDEAS Image Data Exploration and Analysis Software (Amnis, Seattle, WA). Cells were gated based on the normalized frequency of a fluorescent minus one sample.
 
-## Prostaglandin E2 in goldfish plasma
+### Prostaglandin E2 in goldfish plasma
 
 Following cutaneous infection with A. veronii, fish were placed in either 16°C static, 26°C static, or dynamic fever thermal conditions. At 0, 12, 24, 48, and 72 hr post-infection, heparinized blood was collected from six individuals for each thermal condition and centrifuged at 2000 × g for 10 min at 4°C. The resulting plasma supernatant was collected, aliquoted, and stored at −80°C until use. Using a Prostaglandin E2 ELISA Kit (514010; Cayman Chemical, Ann Arbor, MI), plasma samples were diluted 1:30 and PGE2 protein concentrations were determined following the manufacturer protocol. Plates were read using the SpectraMax M2e plate reader (Molecular Devices, San Jose, CA) at 405 nm. Analysis and quantification of PGE2 protein production were completed as per the manufacturer specifications (Cayman Chemical, Ann Arbor, MI).
 
-## Histopathological analysis
+### Histopathological analysis
 
 Wound tissues were collected and fixed in 10% neutral-buffered formalin (SF98-4; Thermo Fisher Scientific, Waltham, MA). After processing tissues overnight in a series of ethanol, toluene, and wax washes using a Leica TP1020 benchtop tissue processor (Leica Biosystems, Concord, Canada), they were paraffin-embedded and sectioned (7 µm thickness) on slides using a Leica RM2125 RTS microtome (Leica Biosystems, Concord, Canada). Slides were deparaffinized and washed using two rounds of toluene (T324-1; Thermo Fisher Scientific, Waltham, MA) (5 min each) followed by rounds of 100%, 90%, 70%, and 50% ethanol (2 min each). For hematoxylin and eosin (H&E) staining, slides were placed in Surgipath Hematoxylin Gill III (3801542; Leica Biosystems, Concord, Canada) for 2 min, washed with running cold tap water for 15 min followed by 70% ethanol for 2 min, and then in Surgipath Eosin solution (3801602; Leica Biosystems, Concord, Canada) for 30 s. For Masson’s Trichrome stain, slides were placed in hematoxylin Gill III for 1 min and washed with running cold tap water for 15 min. Slides were stained with ponceau-fuchsin (AC400211000; Thermo Fisher Scientific, Waltham, MA) for 2 min, rinsed in distilled water, differentiated in mordant in 1% phosphomolybdic acid (19400; Electron Microscope Sciences, Hatfield, PA) for 5 min. Slides were then stained with Aniline Blue solution (A967-25; Thermo Fisher Scientific, Waltham, MA) for 3 min and incubated in 1% phosphomolybdic acid then acetic acid solution (A38C-212; Thermo Fisher Scientific, Waltham, MA) for 5 and 3 min, respectively. Lastly, for both H&E and Masson’s Trichrome, slides were dehydrated in series of alcohol, cleared in toluene, mounted with DPX Mountant (50-980-370; Thermo Fisher Scientific, Waltham, MA). Images were obtained using an AxioScope A1 microscope (Zeiss, Oberkochen, Germany).
 
-## Statistics
+### Statistics
 
 Data were statistically analyzed and graphed using GraphPad v9.3.1 (San Diego, CA). Fish numbers used in each experiment were determined based on the minimal sample size (n) required to detect statistical significance, while considering animal ethics and care guidelines under the Canadian Council on Animal Care. Welch’s t-test was used to determine if the means of two groups were significantly different. Data of both groups had a normally distributed population, but it was not assumed that they had the same variance. One-way analysis of variance (ANOVA) was used to compare the variance in the means of three or more categorical independent groups, considering a single independent factor or variable in the analysis. Data had a normally distributed population and each sample was drawn independently of the other samples. Additionally, the dependent variable was continuous. Two-way ANOVA was utilized for comparing the effect of two independent categorical factors on a dependent variable such as fold-change. The dependent variable was continuous and each sample was drawn independently of the other samples. Šídák’s multiple comparisons test was used in select cases when a set of means were selected to compare across two groups and each comparison was assumed to be independent of the others. Mean values and correlations for behavioural data were calculated in Excel (Microsoft, Redmond, WA). R (version 3.3, The R Foundation for Statistical Computing, Vienna, Austria) was used to calculate multivariate statistics including principal component analysis (standard R package) and permutational multivariate ANOVA using distance matrices (‘vegan’ community ecology package). R code is included as part of the supplementary material.

@@ -34,11 +34,11 @@ Here we examine physiological kidney function together with mRNA and protein lev
 
 ## Results
 
-## Experimental design
+### Experimental design
 
 We carried out a cross-sectional aging study of ~600 DO mice including equal numbers of male and female mice that were aged to 6, 12, and 18 months. To evaluate kidney function, we successfully collected spot urine from 490 mice (141 at 6 months, 199 at 12 months, and 150 at 18 months) and measured albumin, creatinine, and phosphate levels. We obtained flash frozen tissue from the right kidney of 188 randomly selected mice (30 males and 33 females at 6 months; 31 males and 31 females at 12 months; and 34 males and 29 females at 18 months). We quantified mRNA by RNA-Seq and detected expression of 22,259 genes. We obtained untargeted proteomics data on the same set of 188 kidney samples and quantified 6580 proteins representing 6515 unique genes. Both mRNA and protein data were available for 6449 genes.
 
-## Sources of variation in mRNA and protein expression
+### Sources of variation in mRNA and protein expression
 
 In order to characterize the main sources of variation in mRNA and protein in aging mouse kidney, we computed principle components (PCs) on the common set of 6449 genes. Data were transformed to rank-normal scores to reduce the influence of outliers.
 
@@ -50,11 +50,23 @@ The top four PCs for RNA explain 46.5% of variance (Figure 1A). The first PC exp
 
 The top four PCs for protein explain 39.1% of total variation (Figure 1B). The first PC explains 16.6% and is strongly associated with age (p-value = 5.3 × 10−14) but not with sex (p-value = 0.24). The second PC explains 12.0% of variation. It is associated with sex (p-value < 2.2 × 10−16) and only marginally so with age (p-value = 0.014). Effects of age and sex are apparent in the third and fourth PCs which each explain less than 5% of total variation. In contrast to mRNA, age is a dominant factor in determining protein variation with lesser but still substantial influence due to sex. We also observed that the age-specific variability of the protein PCs (especially PC1 and PC4) is greater in the 18-month animals indicating that there is greater between-animal variation in protein at later ages. In contrast, variation of mRNA is constant across age groups.
 
-## Age-related changes in mRNA expression
+### Age-related changes in mRNA expression
 
 To identify transcripts that change with age, we applied differential expression testing with DESeq2 (Love et al., 2014) (see Materials and methods) (Supplementary file 1). We identified 449 transcripts that showed a trend with age (adjusted p-value < 0.05) of which 426 show increasing expression with age and only 23 are decreasing. It is striking that 95% of the changes are increasing, but this is a stringent family-wise criterion that selects only transcripts with the biggest age-related changes. At a relaxed stringency using a false discovery rate criterion (FDR < 0.1), we identified 4039 transcripts that change with age and 2649 (65%) are increasing. The 426 mRNA species with the largest increase with age, we find 83 immunoglobulin genes (Igh and Igk classes). The 23 decreasing mRNA species include several that encode heat shock proteins (Hsp90aa1, Hsp90ab1, Hsph1, and Hspa4l).
 
 We evaluated the list for functional enrichment of GO categories using ClusterProfiler (Yu et al., 2012; Figure 2). We observed significant overrepresentation of genes associated with adaptive immune response (adjusted p-value = 1.3 × 10−23), leukocyte activation (adjusted p-value = 4.9 × 10−25), and leukocyte cell–cell adhesion (adjusted p-value = 1.4 × 10−16). All of the top 100 enrichment categories were related to immune cell functions. Increased expression of immune and inflammatory response genes in the aging kidney has been shown in previous mRNA expression studies and is likely the result of immune cell infiltration into the kidney (Rodwell et al., 2004; Melk et al., 2005a; Park et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig2-v2.jpg)
+
+**Figure 2.:** (A) Functional enrichment and (B) network analysis, using ClusterProfiler, show overrepresentation of genes involved in immune and inflammatory response and is likely the result of immune cell infiltration into the kidney.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Plots show relative cell proportions in kidneys for B lymphocyte and macrophage subsets as depicted in facets. Each point represents a cell proportion inferred for an individual mouse, and violin plots illustrate the density of points along the vertical axis. Lines depict linear regressions fit separately by sex. All elements of the plot are colored according to sex as illustrated in legend at right. Relative cell proportions were inferred from bulk RNA-Seq data using the CellCODE R package as detailed in Materials and methods.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Increased expression of Cdkn2a, which encodes the senescence marker p16, (B) decreased expression of Hsp90aa1, a heat shock protein, (C) increased expression of Mmp3, a marker of cellular senescence, and (D) increased expression of Lcn2, a marker of proximal tubule damage.
 
 In order to identify the cell types involved in age-related changes, we performed in silico cell type deconvolution of our bulk RNA-Seq data using published transcriptional profiles from single cell RNA-Seq data (Park et al., 2018). We found a significant increase in B cell proportion (adjusted p = 6.75 × 10−6) as well as macrophage proportion (adjusted p-value = 0.0155) with age in both sexes (Figure 2—figure supplement 1).
 
@@ -64,9 +76,17 @@ Other genes of interest with respect to renal aging and decline are Lcn2, encodi
 
 Together these age-related changes in transcripts indicate infiltration of immune cells, increased cytokine activity, and cellular senescence.
 
-## Age-related changes in protein expression
+### Age-related changes in protein expression
 
 We applied a linear mixed model ANOVA to protein abundance data after applying a rank-normal scores transformation and including covariates to account for marginal effects of peptide labeling tags, generation of DO mice, and sex. We identified 876 proteins that change with age (adjusted p-value < 0.05) (Supplementary file 2). Of these, 352 increased with age and 524 decreased. Proteins with the most significant age trends include HIST1H1B and other histones that are decreasing with age; increasing ACTA2 a marker gene for myofibroblasts and indicator of renal fibrosis (Duffield, 2014); decreasing NCLN, which is part of a complex in the endoplasmic reticulum (Haffner et al., 2007); and decreasing CISD2, which is involved in mitochondrial autophagy (Chen et al., 2009; Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig3-v2.jpg)
+
+**Figure 3.:** (A) Decreased expression of HIST1H1B, a histone protein (B) increased expression of ACTA2, a marker of renal fibrosis, (C) decreased expression of NCLN, a part of the endoplasmic reticulum, and (D) decreased expression of CISD2, which is involved in mitochondrial autophagy.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** We evaluated the proteins for functional enrichment of GO categories using ClusterProfiler and observed overrepresentation of genes associated with 186 terms (adjusted p-value < 0.01) representing a wide array of (A) biological processes, (B) cellular compartments, and (C) molecular functions.
 
 We evaluated the proteins for functional enrichment of GO categories using ClusterProfiler and observed overrepresentation of genes associated with 186 terms (adjusted p-value < 0.01) representing a wide array of biological processes, cellular compartments, and molecular functions (Figure 3—figure supplement 1). We observed a general pattern of decrease with age for protein associated with oxidative phosphorylation (adjusted p-value = 1.7 × 10−8) and the mitochondrial membrane (adjusted p-value = 2.2 × 10−12), as well as protein exit from the endoplasmic reticulum (adjusted p-value = 3.8 × 10−5), glycosylation (adjusted p-value = 2.6 × 10−4), and the endoplasmic reticulum membrane (adjusted p-value = 1.1 × 10−19). We observed an overall increase in genes associated with the actin cytoskeleton (adjusted p-value = 4.2 × 10−5).
 
@@ -82,7 +102,7 @@ The second important kidney-specific process that is suggested by the age-relate
 
 Overall, we see that proteomics reveals a highly varied array of both fundamental and kidney-specific changes that are occurring at the cellular level. The picture that emerges is distinct and complementary to age-related changes observed at the transcriptional level.
 
-## Comparison of age-related changes in mRNA and protein
+### Comparison of age-related changes in mRNA and protein
 
 In order to compare age-related trends in mRNA and proteins, we identified 6514 proteins (representing 6449 distinct genes) that had corresponding mRNA data. For purposes of this analysis, we applied a liberal false discovery rate (FDR < 0.1) multiple test correction. To provide a point of reference for interpreting the age comparisons we also compared mRNA and protein difference between the sexes.
 
@@ -120,7 +140,7 @@ In order to further clarify the role of transcriptional regulation in determinin
 
 For many proteins, the level of RNA expression is a major determinant of the amount of its protein product that is present. However, the age-related changes in protein amounts are not driven by a corresponding age-related change in their mRNA. What does change with age is the relative abundance of protein for a given level of mRNA expression. This suggests that the processes that drive age-related change in proteins are post-translational and may involve specific changes in translational efficiency (Anisimova et al., 2020) or rates of mRNA or protein turnover (Cellerino and Ori, 2017).
 
-## Relating mRNA and protein changes to physiology
+### Relating mRNA and protein changes to physiology
 
 Regulation of urinary filtrates is a critical function of the kidney to maintain adequate concentrations in the circulating serum. Here we examine the relations of genes that were identified with significant age-related changes in both mRNA and protein levels with urinary phenotypes in order to draw further insights into the biological mechanisms underlying renal aging.
 
@@ -132,7 +152,7 @@ The protein most strongly correlated with urinary phosphate is Pdzk1ip1 (r = 0
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/62585/elife-62585-fig9-v2.jpg)
 
-**Figure 9.:** Pdzk1 (A), Pdzk1ip1 (B), and Lrp2 (C) are genes with decreased mRNA and increased protein expression with age.Females (dots) and males (triangles) at 6 (red), 12 (green), and 18 months (blue) of age.
+**Figure 9.:** Females (dots) and males (triangles) at 6 (red), 12 (green), and 18 months (blue) of age.
 
 Megalin, the protein encoded by Lrp2, is the receptor that mediates albumin reabsorption in the proximal tubule. It is another Group B gene that shows a decrease in both mRNA expression (p-value = 2.4 × 10−5), an increase in protein level (p-value = 0.0043) with age and a positive correlation between mRNA and protein levels within each age group (Figure 9C). Megalin reabsorbs albumin that has passed through the GBM. The majority of animals in our DO cohort do not show albuminuria – 157 of the 188 animals had albumin levels below 1 mg/dL – and although this limits our ability to draw conclusions regarding the relationship between urinary albumin levels and Megalin expression levels, Megalin is negatively correlated with albumin (p-value = 0.081 after regression adjustment for sex and age) (Figure 8D).
 
@@ -150,49 +170,49 @@ Age-related changes in protein levels are not driven by corresponding changes in
 
 ## Materials and methods
 
-## Study cohort
+### Study cohort
 
 Our initial cohort consisted of 600 DO mice (300 males and 300 females) bred at The Jackson Laboratory (stock no. 009376) in five breeding waves (generations 8, 9, 10, 11, and 12). One hundred males and 100 females were randomly assigned to each of three groups for which tissues were collected at 6, 12, and 18 months of age. Animals were maintained on a standard rodent diet (LabDiet 5K52, St. Louis, MO, USA) in an animal room free of pathogens, at a temperature between 20°C and 22°C, and a 12 hr light:dark cycle. At the selected ages, urine samples were collected, and the right kidney was flash-frozen. Urinary albumin, phosphate, and creatinine were measured on a chemistry analyzer (Beckman Coulter AU680, Brea, CA, USA). For 188 samples, equally distributed by age and sex, flash-frozen kidney samples were pulverized and aliquoted for RNA-seq and shotgun-proteomic analysis. The mouse study was approved by The Jackson Laboratory’s Institutional Animal Care and Use Committee (AUS#06005).
 
-## DNA isolation and whole-genome diplotype probability construction
+### DNA isolation and whole-genome diplotype probability construction
 
 Tail tips were collected and DNA was isolated using standard methods. DNA concentration and purity were measured using a NanoDrop 2000 spectrophotometer (Thermo Fisher Scientific, Waltham, MA, USA). Samples met stringent quality standards of A260/280 ratio between 1.7 and 2.1. Mice were fully genotyped for 78,000 SNPs using the GeneSeek Mega Mouse Universal Genotyping Array (MegaMUGA) (Neogen Genomics, Lincon, NE, USA) (Morgan et al., 2016). Founder haplotype mosaics were reconstructed using a Hidden Markov Model of array intensity data generated from the BeadStudio (Illumina, San Diego, CA, USA) algorithm. To ensure quality of genotype construction, samples with call rates of 90% and over were kept.
 
-## Total RNA isolation and quality control
+### Total RNA isolation and quality control
 
 The pulverized whole kidney samples were lysed and homogenized in Ambion TRIzol reagent (Thermo Fisher Scientific #15596026). Total RNA was isolated using miRNeasy Mini kit (Qiagen Inc #217004, Germantown, MD, USA) according to manufacturer’s protocols, including the optional DNase digest step. Sample concentration and quality were assessed using the Nanodrop 2000 spectrophotometer and RNA 600 Nano LabChip assay (Aligent Technologies, Santa Clara, CA, USA).
 
-## Library construction and high-throughput RNA sequencing
+### Library construction and high-throughput RNA sequencing
 
 Poly(A) RNA-seq libraries were constructed using the TruSeq RNA Library Prep Kit v2 (Illumina), including the addition of unique barcode sequences. Library quality and quantity were assessed using the DNA 1000 LabChip assay (Agilent Technologies) and quantitative PCR (Kapa Biosystems, Wilmington, MA, USA). Eight pools of 24 randomized libraries were sequenced in three lanes at 100 bp single-end on the HiSeq 2500 (Illumina) using TruSeq SBS Kit v4 reagents (Illumina).
 
-## High-throughput proteomics
+### High-throughput proteomics
 
 Samples of the same mice that were used for RNA-seq were homogenized in 1 ml lysis buffer, which consists of 1% SDS, 50 mM Tris, pH 8.8 and Roche complete protease inhibitor cocktail (Roche # 11697498001, Clifton, NJ, USA) and analyzed as previously described (Chick et al., 2016).
 
-## Quantification and testing of RNA-seq data
+### Quantification and testing of RNA-seq data
 
 Genotyping by RNA-Seq software (https://gbrs.readthedocs.io/en/latest/) was used to align the RNA-Seq reads and reconstruct the individual haplotypes of DO mice. GBRS-constructed haplotypes were cross-compared against MegaMUGA-constructed diplotypes as a confirmation step to identify and correct sample mix-ups (Broman et al., 2019). We applied Expectation-Maximization algorithm for Allele Specific Expression (EMASE) (Raghupathy et al., 2018) to quantify gene expression from the individual aligned RNA-seq data. Count data were normalized using DESeq2 (Love et al., 2014) variance stabilizing transformation. Differential expression testing was done with DESeq2 using a likelihood ratio test to evaluate changes with age as a linear trend. The trend test compares two linear predictors, one with terms for sex and sequencing batch and a second with an additional term for age. Age is coded using centered and scaled values (−0.5, 0, 0.5) to obtain effect size estimates in units of log2 fold change per year. We chose to test for a linear trend because the test is more powerful than the general test for age as a three-level categorical variable. The trend test will detect nonlinear changes that have an overall trend, but with only three time points in the data, modeling nonlinear effects is not feasible.
 
-## Quantification and testing of protein expression data
+### Quantification and testing of protein expression data
 
 Tissue from the total (right) kidney samples was homogenized in 1 ml lysis buffer, which consisted of 1% SDS, 50 mM Tris, pH 8.8 and Roche complete protease inhibitor cocktail (Roche # 11697498001, Clifton, NJ, USA), and analyzed as previously described (Chick et al., 2016). Protein abundances were estimated from their component peptides identified through mass spectrometry (MS) followed by a database search of MS spectra. Prior to protein expression estimation, we filtered out peptides that contained polymorphisms relative to the mouse reference genome. We determined the age-related changes for each protein by computing the likelihood ration test for age (as a linear trend) using a mixed model linear regression with random effect terms to account for protein labeling (Tag), DO mouse generation, and a fixed-effect correction for sex. The regression coefficient and p-values generated from this model were used to determine the significant change in direction of the mRNA and proteins.
 
 For both mRNA and protein data, we applied two types of multiple test corrections. We applied a stringent family-wise error correction using Holm’s method (https://www.jstor.org/stable/4615733), indicated as ‘adjusted p’ in the text. We applied a less stringent false discovery rate correction using the Benjamini–Hochberg method (http://www.jstor.org/stable/2346101), indicated as ‘FDR’ in the text.
 
-## In silico cell type deconvolution of bulk RNA-Seq
+### In silico cell type deconvolution of bulk RNA-Seq
 
 In order to examine relative changes in cell composition with age, we used in silico cell type deconvolution as implemented in the CellCODE R package (Chikina et al., 2015). This approach uses marker genes derived from transcriptional profiles ascertained for purified cell types to quantify changes in cell composition in a heterogeneous mixture of RNA (bulk RNA-Seq). For this analysis we used a bulk gene expression matrix that was upper quartile normalized to account for differences in library size. We obtained cell type-specific transcriptional profiles using single cell RNA-Seq data and cell type labels from Park et al., 2018. To obtain markers from single cell transcriptional profiles, we normalized the count matrix by the number of unique molecular identifiers (UMI) per cell per 10,000 UMIs, took the log of counts + 1, and calculated mean expression of each gene in each cell type. We allowed up to 50 markers per cell type and calculated surrogate proportion variables using the ‘raw’ method to ensure that trends in relative cell type proportions were estimated independently of mouse age (Chikina et al., 2015).
 
-## Mediation analysis
+### Mediation analysis
 
 We evaluated the potential for mRNA to act as a mediator of age-related changes in protein. We applied a regression modeling approach to the mediation analysis. We evaluated the significance of the regression of protein on age with and without mRNA as a predictor. If mRNA is a mediator of the effects of age on protein, we expect a substantial drop in the significance of the age term when mRNA is included in the model. There are alternative explanations for a drop in significance, but if mRNA fully or partially mediates the age effect, we should see the drop. To see the mediation effect, we compared −log10 p-values for the age term in linear regression models Protein ~ Age + Sex + Generation and Protein ~ mRNA + Age + Sex + Generation. To evaluate whether mRNA could be mediating the effect of sex on proteins, we repeated the mediation analysis but computed significance of the sex term in the linear regressions.
 
-## Data normalization and statistics
+### Data normalization and statistics
 
 All RNA-seq expression data and proteomics data were transformed to rank-normal scores (Conover, 1999) prior to analysis, unless otherwise stated. Albumin and urinary phosphorus data were log transformed after regression adjustment for urinary creatinine levels. Data analysis and figures were generated using R v4.0.0.
 
-## Sample size determination and allocation of samples to treatments
+### Sample size determination and allocation of samples to treatments
 
 The sample size required to detect a significant age trend is determined by the expected size of the trend (difference in means between the 6- and 18-month age groups) relative to the within age-group variance. Therefore, we define the strength of a trend in units of standard deviation (SD) of the within group variance. Based on standard power calculations (Voorhis and Morgan, 2007), with a sample size of ~64 animals per age group we can expect to achieve power = 0.80 to detect an age trend of 0.5 SD at an unadjusted type I error of 0.05. In practice because of the high precision of the RNA and protein quantification, this enabled us to detect age trends in the majority of genes tested. In order to focus on only the most substantial trends in the data we applied a strong, family-wise error rate correction for multiple testing (https://www.jstor.org/stable/ 4615733).
 
@@ -200,6 +220,6 @@ The experiment was performed once. Both RNA and protein measurements were carrie
 
 Mice were assigned to pens at random with four mice per pen at weaning. The pens were assigned to age groups and tissue collection dates at random at weaning. The full study was populated across six generations of DO breeding spanning a period of 2 years. Assignment of pens to age groups was partially balanced across generations to minimize confounding effects and to ensure that tissue collection dates were spread evenly across the calendar year.
 
-## Data access
+### Data access
 
 Source data and analysis scripts have been deposited with FigShare (10.6084/m9.figshare. 12894146). In addition, the transcript and protein data are available in an online tool that supports genetic mapping analysis (https://churchilllab.jax.org/qtlviewer/JAC/DOKidney). The RNA-seq data have been deposited in NCBI's Gene Expression Omnibus, accession number GSE121330 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121330). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the data set identifier PXD023823.

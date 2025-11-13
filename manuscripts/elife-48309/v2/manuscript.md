@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.48309.001 Anemia is a common complication of malaria that is characterized by the loss of infected and uninfected erythrocytes. In mouse malaria models, clearance of uninfected erythrocytes is promoted by autoimmune anti-phosphatidylserine (PS) antibodies produced by T-bet + B-cells, which bind to exposed PS in erythrocytes, but the mechanism in patients is still unclear. In Plasmodium falciparum patients with anemia, we show that atypical memory FcRL5 + T-bet + B-cells are expanded and associate both with higher levels of anti-PS antibodies in plasma and with the development of anemia in these patients. No association of anti-PS antibodies or anemia with other B-cell subsets and no association of other antibody specificities with FcRL5 + T-bet + B-cells is observed, revealing high specificity in this response. We also identify FcRL5 + T-bet + B-cells as producers of anti-PS antibodies in ex vivo cultures of naïve human peripheral blood mononuclear cells (PBMC) stimulated with P.-falciparum -infected erythrocyte lysates. These data define a crucial role for atypical memory B-cells and anti-PS autoantibodies in human malarial anemia.
+Anemia is a common complication of malaria that is characterized by the loss of infected and uninfected erythrocytes. In mouse malaria models, clearance of uninfected erythrocytes is promoted by autoimmune anti-phosphatidylserine (PS) antibodies produced by T-bet+B-cells, which bind to exposed PS in erythrocytes, but the mechanism in patients is still unclear. In Plasmodium falciparum patients with anemia, we show that atypical memory FcRL5+T-bet+ B-cells are expanded and associate both with higher levels of anti-PS antibodies in plasma and with the development of anemia in these patients. No association of anti-PS antibodies or anemia with other B-cell subsets and no association of other antibody specificities with FcRL5+T-bet+ B-cells is observed, revealing high specificity in this response. We also identify FcRL5+T-bet+ B-cells as producers of anti-PS antibodies in ex vivo cultures of naïve human peripheral blood mononuclear cells (PBMC) stimulated with P.-falciparum-infected erythrocyte lysates. These data define a crucial role for atypical memory B-cells and anti-PS autoantibodies in human malarial anemia.
 
 ## Introduction
 
@@ -35,15 +35,437 @@ In this study, we focused on measuring the levels of atypical FcRL5+T-bet+ B-cel
 
 ## Results
 
-## Specific autoantibodies correlate with malarial anemia and erythrocyte lysis capacity in P.-falciparum-infected patients
+### Specific autoantibodies correlate with malarial anemia and erythrocyte lysis capacity in P.-falciparum-infected patients
 
 In this study, we focused on samples (24 patients, 31 unique samples) from a cohort of P.-falciparum-infected returned travelers from Germany, who acquired malaria while visiting Africa. This cohort suffered from mild anemia with average hemoglobin levels of 12.4 g/dL (males) and 10.2 g/dL (females) (normal range is 13.8 to 17.2 and 12.1 to 15.1 g/dL, respectively) (Table 1).
+
+**Table 1.**
+ Clinical information from P.-falciparum-infected returned German travelers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject ID</th>
+      <th>Day of sampling&amp;</th>
+      <th>Hemoglobin (g/dl)*</th>
+      <th>Hemoglobin (g/dl)**</th>
+      <th>Thrombocyte count (1000/µl)*</th>
+      <th>Parasite count/µl **, #</th>
+      <th>Red blood cell (RBC) count (million/µl)**</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Type of patient$</th>
+      <th>Country of infection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">100</td>
+      <td>3</td>
+      <td>10.3</td>
+      <td>13.4</td>
+      <td>135</td>
+      <td>132,000</td>
+      <td>4.6</td>
+      <td>m</td>
+      <td>51</td>
+      <td>VFR</td>
+      <td>Nigeria</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>ND</td>
+      <td>13.4</td>
+      <td>ND</td>
+      <td>132,000</td>
+      <td>4.6</td>
+      <td>m</td>
+      <td>51</td>
+      <td>VFR</td>
+      <td>Nigeria</td>
+    </tr>
+    <tr>
+      <td rowspan="2">101</td>
+      <td>8</td>
+      <td>7.3</td>
+      <td>12.1</td>
+      <td>270</td>
+      <td>1,860,000</td>
+      <td>3.89</td>
+      <td>f</td>
+      <td>56</td>
+      <td>T</td>
+      <td>Gambia</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>8.3</td>
+      <td>12.1</td>
+      <td>589</td>
+      <td>1,860,000</td>
+      <td>3.89</td>
+      <td>f</td>
+      <td>56</td>
+      <td>T</td>
+      <td>Gambia</td>
+    </tr>
+    <tr>
+      <td rowspan="2">102</td>
+      <td>6</td>
+      <td>13.5</td>
+      <td>16.2</td>
+      <td>140</td>
+      <td>&lt;52,800</td>
+      <td>5.28</td>
+      <td>m</td>
+      <td>63</td>
+      <td>T</td>
+      <td>Uganda</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>ND</td>
+      <td>16.2</td>
+      <td>ND</td>
+      <td>&lt;52,800</td>
+      <td>5.28</td>
+      <td>m</td>
+      <td>63</td>
+      <td>T</td>
+      <td>Uganda</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>2</td>
+      <td>13.8</td>
+      <td>14.4</td>
+      <td>54</td>
+      <td>46,900</td>
+      <td>4.69</td>
+      <td>m</td>
+      <td>38</td>
+      <td>VFR</td>
+      <td>Guinea</td>
+    </tr>
+    <tr>
+      <td rowspan="2">104</td>
+      <td>3</td>
+      <td>12.6</td>
+      <td>13.6</td>
+      <td>130</td>
+      <td>470,000</td>
+      <td>4.7</td>
+      <td>m</td>
+      <td>56</td>
+      <td>T</td>
+      <td>Madagascar</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>13.7</td>
+      <td>13.6</td>
+      <td>321</td>
+      <td>470,000</td>
+      <td>4.7</td>
+      <td>m</td>
+      <td>56</td>
+      <td>T</td>
+      <td>Madagascar</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>5</td>
+      <td>7.8</td>
+      <td>8.1</td>
+      <td>135</td>
+      <td>1,050,000</td>
+      <td>3.5</td>
+      <td>f</td>
+      <td>53</td>
+      <td>VFR</td>
+      <td>Kenya</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>2</td>
+      <td>10.8</td>
+      <td>11.9</td>
+      <td>9</td>
+      <td>63,900</td>
+      <td>4.26</td>
+      <td>m</td>
+      <td>43</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td rowspan="2">107</td>
+      <td>3</td>
+      <td>11.6</td>
+      <td>12.4</td>
+      <td>48</td>
+      <td>&gt;430,000</td>
+      <td>4.3</td>
+      <td>m</td>
+      <td>52</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>11.4</td>
+      <td>12.4</td>
+      <td>475</td>
+      <td>&gt;430,000</td>
+      <td>4.3</td>
+      <td>m</td>
+      <td>52</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>0</td>
+      <td>10.3</td>
+      <td>10.3</td>
+      <td>156</td>
+      <td>176</td>
+      <td>3.83</td>
+      <td>m</td>
+      <td>50</td>
+      <td>VFR</td>
+      <td>Benin</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>2</td>
+      <td>10.5</td>
+      <td>10.8</td>
+      <td>98</td>
+      <td>16</td>
+      <td>3.73</td>
+      <td>m</td>
+      <td>62</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>3</td>
+      <td>12.3</td>
+      <td>13.5</td>
+      <td>128</td>
+      <td>366,800</td>
+      <td>5.24</td>
+      <td>f</td>
+      <td>20</td>
+      <td>VFR</td>
+      <td>Tanzania</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>1</td>
+      <td>13.5</td>
+      <td>14.4</td>
+      <td>23</td>
+      <td>144,600</td>
+      <td>4.82</td>
+      <td>m</td>
+      <td>35</td>
+      <td>T</td>
+      <td>Nigeria</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>3</td>
+      <td>13.1</td>
+      <td>13.7</td>
+      <td>70</td>
+      <td>160,200</td>
+      <td>5.34</td>
+      <td>m</td>
+      <td>26</td>
+      <td>VFR</td>
+      <td>Benin</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>4</td>
+      <td>10.7</td>
+      <td>13.7</td>
+      <td>74</td>
+      <td>340,000</td>
+      <td>4.25</td>
+      <td>m</td>
+      <td>39</td>
+      <td>VFR</td>
+      <td>Unknown</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>3</td>
+      <td>16.6</td>
+      <td>18.7</td>
+      <td>53</td>
+      <td>4840</td>
+      <td>5.96</td>
+      <td>m</td>
+      <td>26</td>
+      <td>T</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>0</td>
+      <td>12.6</td>
+      <td>12.6</td>
+      <td>53</td>
+      <td>14,762</td>
+      <td>4.84</td>
+      <td>m</td>
+      <td>62</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+    <tr>
+      <td rowspan="2">116</td>
+      <td>2</td>
+      <td>12.5</td>
+      <td>12.9</td>
+      <td>80</td>
+      <td>26,917</td>
+      <td>4.58</td>
+      <td>f</td>
+      <td>43</td>
+      <td>VFR</td>
+      <td>Cameroon</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10.4</td>
+      <td>12.9</td>
+      <td>106</td>
+      <td>26,917</td>
+      <td>4.58</td>
+      <td>f</td>
+      <td>43</td>
+      <td>VFR</td>
+      <td>Cameroon</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>4</td>
+      <td>15</td>
+      <td>19.5</td>
+      <td>32</td>
+      <td>492,800</td>
+      <td>6.16</td>
+      <td>m</td>
+      <td>46</td>
+      <td>T</td>
+      <td>Nigeria</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>1</td>
+      <td>11</td>
+      <td>12.1</td>
+      <td>20</td>
+      <td>296,100</td>
+      <td>4.23</td>
+      <td>m</td>
+      <td>39</td>
+      <td>T</td>
+      <td>Uganda</td>
+    </tr>
+    <tr>
+      <td rowspan="2">119</td>
+      <td>1</td>
+      <td>11.9</td>
+      <td>11.9</td>
+      <td>123</td>
+      <td>29,800</td>
+      <td>4.02</td>
+      <td>f</td>
+      <td>25</td>
+      <td>VFR</td>
+      <td>Ivory Coast</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>11.6</td>
+      <td>11.9</td>
+      <td>116</td>
+      <td>29,800</td>
+      <td>4.02</td>
+      <td>f</td>
+      <td>25</td>
+      <td>VFR</td>
+      <td>Ivory Coast</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>0</td>
+      <td>16.1</td>
+      <td>16.1</td>
+      <td>102</td>
+      <td>7896</td>
+      <td>5.36</td>
+      <td>m</td>
+      <td>38</td>
+      <td>VFR</td>
+      <td>Guinea Bissau</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>2</td>
+      <td>14.4</td>
+      <td>15.7</td>
+      <td>119</td>
+      <td>496</td>
+      <td>5.48</td>
+      <td>m</td>
+      <td>34</td>
+      <td>VFR</td>
+      <td>Nigeria</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>2</td>
+      <td>ND</td>
+      <td>13.5</td>
+      <td>ND</td>
+      <td>74</td>
+      <td>5.15</td>
+      <td>m</td>
+      <td>18</td>
+      <td>VFR</td>
+      <td>Togo</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>2</td>
+      <td>12.8</td>
+      <td>14.2</td>
+      <td>60</td>
+      <td>49,800</td>
+      <td>4.98</td>
+      <td>m</td>
+      <td>52</td>
+      <td>VFR</td>
+      <td>Ghana</td>
+    </tr>
+  </tbody>
+</table>
+
+_&Days since treatment start to sampling, *Measurement at day of sampling, **Measurement at day of presentation, #Parasitemia expressed in infected erythrocytes per µl of blood, $Tourist (T), Visiting Friend or Relative (VFR). ND, not determined._
 
 As described before in other cohorts with mild anemia (Fernandes et al., 2008; Sumbele et al., 2016), hemoglobin levels in this cohort do not significantly correlate with parasitemia (Figure 1A), confirming that direct erythrocyte infection by Plasmodium is not a major cause of anemia and indicating that other mechanisms must contribute to this pathology. This is in agreement with previous findings reporting major losses of uninfected erythrocytes and dyserythropoiesis during malaria (White, 2018).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig1-v2.jpg)
 
-**Figure 1.:** P.-falciparum-infected returned travelers.Non-parametric Spearman correlation analysis comparing hemoglobin with (A) parasitemia, (B) anti-PS IgG antibodies, (C) anti-PfEBA IgG antibodies, (D) anti-erythrocyte IgG antibodies and (E) anti-DNA IgG antibodies.10.7554/eLife.48309.004Figure 1—source data 1.Figure 1 .
+**Figure 1.:** Non-parametric Spearman correlation analysis comparing hemoglobin with (A) parasitemia, (B) anti-PS IgG antibodies, (C) anti-PfEBA IgG antibodies, (D) anti-erythrocyte IgG antibodies and (E) anti-DNA IgG antibodies.
 
 As we had previously observed that autoimmune anti-PS antibodies induce anemia during malaria in a mouse model (Fernandez-Arias et al., 2016; Rivera-Correa et al., 2017), we determined whether hemoglobin levels correlated with autoimmune anti-PS IgG antibodies in our cohort. We observed an inverse correlation between anti-PS antibodies and hemoglobin levels (Figure 1B), which was not found for IgG antibodies against the P. falciparum erythrocyte binding antigen (PfEBA) (Figure 1C), suggesting that an autoimmune response contributes to the development of anemia in malaria.
 
@@ -55,33 +477,93 @@ As malarial anemia is characterized by the lysis of uninfected erythrocytes and
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig2-v2.jpg)
 
-**Figure 2.:** P. falciparum patients mediates erythrocyte lysis, which can be partially inhibited by Annexin V.(A,B) Correlation of plasma anti-PS IgG antibodies with the LDH levels (A) or with the erythrocyte lysis capacity (B) of the plasma of P. falciparum patients. (C) Complement-mediated lysis of erythrocytes exposing PS by P. falciparum patient’s plasma compared to plasma from uninfected controls, expressed as percentage of maximal lysis. (D) Complement-mediated lysis of erythrocytes exposing PS, pre-incubated or not with Annexin V, before incubation with the plasma of P. falciparum patients (n = 6). Results show the means and standard deviations of triplicated determinations. Significance was assessed by nonparametric Spearman correlation analysis (A,B) or unpaired Student's t-test (C,D). *p≤0.05, **p≤0.01.10.7554/eLife.48309.006Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A,B) Correlation of plasma anti-PS IgG antibodies with the LDH levels (A) or with the erythrocyte lysis capacity (B) of the plasma of P. falciparum patients. (C) Complement-mediated lysis of erythrocytes exposing PS by P. falciparum patient’s plasma compared to plasma from uninfected controls, expressed as percentage of maximal lysis. (D) Complement-mediated lysis of erythrocytes exposing PS, pre-incubated or not with Annexin V, before incubation with the plasma of P. falciparum patients (n = 6). Results show the means and standard deviations of triplicated determinations. Significance was assessed by nonparametric Spearman correlation analysis (A,B) or unpaired Student's t-test (C,D). *p≤0.05, **p≤0.01.
 
 We then studied the relation of anti-PS IgG levels and the erythrocyte lysis capacity in the patient’s plasma, as determined using the in vitro complement lysis assay. We observed a direct correlation between anti-PS and erythrocyte lysis capacity (Figure 2C), which suggests that anti-PS IgG antibodies may contribute to anemia in malaria by inducing the complement-mediated lysis of uninfected erythrocytes.
 
 To determine the anti-PS specificity of the erythrocyte lysis, we pre-incubated the erythrocytes with annexin V, a protein that specifically binds to PS and inhibits the binding of anti-PS antibodies (Fernandez-Arias et al., 2016; van Engeland et al., 1998), finding a partial reduction of the erythrocyte lysis capacity in the plasma samples (Figure 2D). It is likely that other antibody specificities (Mourão et al., 2018; Mourão et al., 2016) in addition to anti-PS also contribute to erythrocyte lysis in malaria patients. Taken together, these results suggest that anti-PS antibodies mediate the lysis of uninfected erythrocytes that expose PS during malaria.
 
-## Atypical memory FcRL5+T-bet+ B-cells are greatly expanded in P.-falciparum-infected patients
+### Atypical memory FcRL5+T-bet+ B-cells are greatly expanded in P.-falciparum-infected patients
 
 Because our previous studies in mice and previous reports in human malaria patients had shown a large increase in atypical memory B-cell (MBC) population upon infection with Plasmodium (Patgaonkar et al., 2018; Pérez-Mazliah et al., 2018; Portugal et al., 2015; Rivera-Correa et al., 2017; Sullivan et al., 2016; Weiss et al., 2009), we next analyzed the total levels of atypical MBCs in peripheral blood mononuclear cells (PBMC) in the cohort of P.-falciparum-infected returned travelers. We characterized atypical MBCs by the double expression of FcRL5 and T-bet, as both markers are highly expressed and characteristic of this population (Figure 3A). This population is known to be elevated in malaria patients from endemic areas (Obeng-Adjei et al., 2017; Sullivan et al., 2016). After gating out non-B-cells (CD19–), we observed that FcRL5+T-bet+ B-cells are indeed expanded in the PBMC samples from P.-falciparum-infected German returned travelers when compared to samples from uninfected German controls (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig3-v2.jpg)
+
+**Figure 3.:** (A) Gating strategy for the characterization of FcRL5+ T-bet+ B-cells (CD19+) with representative plots of one uninfected control and one P. falciparum patient. (B) Percentage of CD19+ FcRL5+ T-bet+ B-cells in samples from uninfected controls and P. falciparum patients. Significance assessed by unpaired Student's t test. ****p≤0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of the percentage of atypical MBCs in the circulation of P. falciparum patients by background (visiting friends or relatives (VFR) and tourists). Significant assessed by unpaired Student's t test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Comparison of the percentage of atypical MBCs in the circulation of P. falciparum patients by gender. Significant assessed by unpaired Student's t test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Non-parametric Spearman Correlation analysis comparing the days after treatment when samples were collected and levels of (A) atypical MBCs and (B) hemoglobin.
 
 We further analyzed the cohort of P.-falciparum-infected returned travelers by considering two different groups: 1) tourists, who reported to be naïve to malaria, and 2) those visiting friends or relatives (VFR), who reported having at least one previous episode of malaria (Table 1). We did not observe any significant difference in the levels of atypical MBCs in the PBMC between these two groups (Figure 3—figure supplement 1). We also observed no significant gender difference between the levels of FcRL5+T-bet+ B-cells in PBMC (Figure 3—figure supplement 2). Furthermore, we found no significant correlation between the time after treatment at which samples were obtained (ranging from 0 to 31 days, Table 1) and the level of hemoglobin, which indicates that the variations in hemoglobin levels are not just a consequence of time after parasite clearance. We also observed a significant direct correlation between the levels of atypical MBCs and the days after treatment, which suggests that the levels of these cells continue to increase after treatment. This increase is compatible with the activation of atypical MBCs during infection and their continuing proliferation after parasite clearance (Figure 3—figure supplement 3).
 
 Altogether, these initial results suggest an expansion of atypical FcRL5+T-bet+ B-cells in P.-falciparum-infected patients following acute infection.
 
-## Atypical memory FcRL5+T-bet+ B-cells correlate with hemoglobin levels in P.-falciparum-infected returned travelers
+### Atypical memory FcRL5+T-bet+ B-cells correlate with hemoglobin levels in P.-falciparum-infected returned travelers
 
 We next sought to determine whether atypical MBCs correlate with hemoglobin levels in P. falciparum patients. For this purpose, we performed a B-cell sub-population gating analysis in PBMC samples from our cohort. Following classical gating strategies for all relevant B-cell (CD19+) sub-populations from human PBMC (Weiss et al., 2009), we analyzed: (i) naïve B-cells (CD27–CD21+CD10–), (ii) immature B-cells (CD10+), (iii) plasma cells (CD27+CD21–CD20–), (iv) classical MBCs (CD27+CD21+) and (v) atypical MBCs (FcRL5+T-bet+) (Figure 4—figure supplement 1). To define the atypical and classical MBC populations better, we analyzed the expression of T-bet in FcRL5+ cells compared to classical MBCs, finding that the expression of T-bet is significantly higher in FcRL5+ cells (Figure 4—figure supplement 2).
 
 We found a significant inverse correlation between hemoglobin levels and atypical MBCs levels in the PBMC samples from P. falciparum patients (Figure 4A). Atypical MBCs did not significantly correlate with other relevant parameters such as parasitemia (Figure 4—figure supplement 3), but did correlate positively with the age of the patient (Figure 4—figure supplement 4), supporting previous studies that initially denominated these cells as Age-associated B-cells (Phalke and Marrack, 2018). We also analyzed a possible relation of atypical MBCs with thrombocytopenia, another complication that frequently accompanies malaria and has an autoimmune component to its pathology (Lacerda et al., 2011). We did not observe any significant correlation between the levels of atypical MBCs and thrombocyte counts in our cohort of patients (Figure 4—figure supplement 5), suggesting that atypical MBCs specifically correlate with anemia and not with other malaria-associated complications.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-v2.jpg)
+
+**Figure 4.:** Correlation analysis of atypical (A) and classical (B) MBC subsets from the PBMC of P. falciparum patients compared with hemoglobin levels. Significance was assessed by non-parametric Spearman correlation analysis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** B-cell subpopulations of human PBMC (Weiss et al., 2009).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Significance assessed by unpaired Student's t test. **p≤0.01.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Non-parametric Spearman correlation analysis comparing the percentage of atypical MBCs and parasite levels.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Non-parametric Spearman correlation analysis comparing the percentage of atypical MBCs and patient's age.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Non-parametric Spearman correlation analysis comparing the percentage of atypical MBCs and thrombocyte levels in the circulation.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Non-parametric Spearman correlation analysis of relevant B-cells subsets from the PBMC of P. falciparum patients: (A) naïve B-cells (CD27–CD21+CD10–), (B) immature B-cells (CD10+), and (C) plasma cells (CD27+CD21–CD20–) compared with hemoglobin levels.
+
 Interestingly, we observed that classical memory B-cells (CD27+CD21+) had a significant positive correlation with hemoglobin levels (Figure 4B). We did not find any significant correlation between hemoglobin level and percentage of naïve B-cells or immature B-cells, but observed a significant positive correlation with percentage of plasma cells (Figure 4—figure supplement 6).
 
 Taken together, these results suggest that atypical MBCs, but not other B-cell subtypes, are specifically implicated in malaria-induced anemia in patients.
 
-## Atypical memory B-cells correlate with anti-PS IgG antibodies in P.-falciparum-infected patients
+### Atypical memory B-cells correlate with anti-PS IgG antibodies in P.-falciparum-infected patients
 
 During Plasmodium infections in mice, T-bet+ B-cells secrete anti-PS IgG antibodies that induce premature clearance of uninfected erythrocytes, promoting malarial anemia (Fernandez-Arias et al., 2016; Rivera-Correa et al., 2017). The role of anti-PS IgG antibodies and the B-cells that secrete them during malarial anemia in P.-falciparum-infected patients has not been studied before. In this cohort of P.-falciparum-infected German returned travelers, we observed an inverse correlation between anti-PS IgG antibodies and hemoglobin, suggesting a role of these autoantibodies in promoting anemia in this cohort (Figure 1B). As both FcRL5+T-bet+ atypical B-cells and anti-PS IgG antibodies correlate with hemoglobin levels in our cohort, we assessed the relationship between the levels of FcRL5+T-bet+ atypical B-cells and anti-PS IgG antibodies. Our results show a significant positive correlation between FcRL5+T-bet+ atypical MBCs and anti-PS IgG antibodies (Figure 5A), possibly implicating these cells as the major producers of the antibodies. In accordance with the hemoglobin results (Figure 4B), we also found a significant inverse relationship between anti-PS IgG antibodies and classical MBCs (CD27+CD21+) (Figure 5B). As shown before for hemoglobin (Figure 4—figure supplement 6), neither naïve nor immature B-cells presented a significant correlation with the levels of plasma anti-PS IgG antibodies (Figure 5—figure supplement 1). Plasma cells, which previously correlated with hemoglobin levels, did not correlate with anti-PS IgG antibodies, suggesting that their role in anemia may be mediated through the secretion of antibodies that have different specificities. These results establish a relationship between atypical MBCs and anti-PS IgG antibodies.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig5-v2.jpg)
+
+**Figure 5.:** Correlation analysis of levels of (A) atypical and classical (B) MBCs with anti-PS IgG antibody levels from the plasma of P. falciparum patients. (C) Correlation analysis of atypical and classical MBC levels. Significance was assessed by non-parametric Spearman correlation analysis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Non-parametric Spearman Correlation analysis of (A) naïve B-cells (CD27–CD21+CD10–), (B) immature B-cells (CD10+), and (C) plasma cells (CD27+CD21–CD20–) with anti-PS IgG antibody levels from the plasma of P. falciparum patients.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Non-parametric Spearman Correlation analysis of (A) atypical MBCs (CD27–CD21–FcRL5+), (B) classical MBCs (CD27+CD21+), (C) naïve B-cells (CD27–CD21+CD10–), (D) immature B-cells (CD10+), and (E) plasma cells or plasmablasts (CD27+CD21–CD20–) with anti-erythrocyte lysate IgG antibody levels from the plasma of P. falciparum patients.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Non-parametric Spearman correlation of (A) atypical MBCs (CD27–CD21–FcRL5+), (B) classical MBCs (CD27+CD21+), (C) naïve B-cells (CD27–CD21+CD10–), (D) immature B-cells (CD10+), and (E) plasma cells or plasmablasts (CD27+CD21–CD20–) with anti-DNA lysate IgG antibody levels from the plasma of P. falciparum patients.
 
 As an inverse relationship between classical and FcRL5+T-bet+ atypical MBCs was found with hemoglobin and anti-PS antibodies, we analyzed whether there was any correlation between the levels of these two populations. Accordingly, we found a significant negative correlation between the levels of classical and FcRL5+T-bet+ atypical MBCs (Figure 5C). These results suggest a possible relationship between classical and atypical MBC populations, but may also be interpreted as the result of a robust proliferation of atypical MBCs, which would decrease the proportion of classical MBCs among the CD19+ population even if their actual numbers had not decreased.
 
@@ -89,17 +571,29 @@ In addition, we assessed the levels of two other autoantibodies (anti-erythrocy
 
 We also analyzed possible correlations of the levels of plasma anti-DNA antibodies with all of the B-cell subpopulations (Figure 5—figure supplement 3). We did not observe any significant correlation with atypical MBCs, suggesting that anti-DNA antibodies are not predominantly produced by this subpopulation of B-cells. The lack of correlation with other B-cell sub-populations (naïve, immature, plasma cell, and classical memory) does not provide any indications on the B-cell subtype that produces these antibodies. Anti-DNA antibodies do not correlate with hemoglobin levels in our cohort (Figure 1E), so it is likely that they do not play a role in this pathology and therefore are not expected to correlate with relevant B-cells subsets that contribute to anemia.
 
-## Atypical memory B-cells do not correlate with anti-PfEBA antibodies in P.-falciparum-infected patients
+### Atypical memory B-cells do not correlate with anti-PfEBA antibodies in P.-falciparum-infected patients
 
 We also assessed the relationship between plasma anti-parasite antibodies (anti-PfEBA) and the different B-cell subsets in our cohort of P.-falciparum-infected patients. As specific plasma autoantibodies (anti-PS and anti-erythrocyte, but not anti-DNA) correlate distinctly with the atypical MBC subset and with anemia development, we questioned whether there is any correlation between any of the different B-cell subsets and anti-parasite antibodies (anti-PfEBA). This analysis showed no significant correlation between anti-PfEBA IgG antibodies and any of the B-cells subsets assessed (Figure 6). Anti-PfEBA IgG antibodies presented no significant correlation with anemia in patients (Figure 1C), so the lack of correlation with FcRL5+T-bet+ atypical MBCs, which tightly correlate with anemia, is expected and further supports the lack of involvement of anti-parasite antibodies in malarial anemia.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig6-v2.jpg)
 
-**Figure 6.:** PfEBA antibodies with relevant B-cell subsets from P. falciparum patients.Correlation analysis of (A) atypical MBCs, (B) classical MBCs, (C) plasma cells, (D) naïve B-cells, and (E) immature B-cells with anti-P. falciparum (PfEBA) IgG antibody levels from the plasma of P. falciparum patients. Significance was assessed by non-parametric Spearman correlation analysis.10.7554/eLife.48309.037Figure 6—source data 1.Figure 6.
+**Figure 6.:** Correlation analysis of (A) atypical MBCs, (B) classical MBCs, (C) plasma cells, (D) naïve B-cells, and (E) immature B-cells with anti-P. falciparum (PfEBA) IgG antibody levels from the plasma of P. falciparum patients. Significance was assessed by non-parametric Spearman correlation analysis.
 
-## FcRL5+T-bet+ atypical B-cells secrete anti-PS antibodies upon stimulation with P.-falciparum-infected erythrocytes in vitro
+### FcRL5+T-bet+ atypical B-cells secrete anti-PS antibodies upon stimulation with P.-falciparum-infected erythrocytes in vitro
 
 We have observed a strong significant correlation between FcRL5+T-bet+ B-cells, anti-PS antibodies and malarial anemia in a cohort of P.-falciparum-infected patients (Figures 3 and 4). As these data from patient samples are limited to the analysis of correlations between different parameters, we aimed to determine directly whether activation of FcRL5+T-bet+ atypical B-cells can induce the secretion of anti-PS antibodies. Expansion of T-bet+ B-cells and secretion of anti-PS antibodies into the culture medium was observed in vitro after incubation of PBMC from healthy donors with lysates of P.-falciparum-infected erythrocytes (Rivera-Correa et al., 2017). To determine whether the T-bet+ B-cells that are activated in these experiments are also FcRL5+ and, more importantly, whether they specifically secrete anti-PS antibodies, we incubated PBMC from healthy US individuals with P.-falciparum-infected erythrocyte lysates. We observed a robust expansion of FcRL5+T-bet+ B-cells compared to cells incubated with uninfected erythrocyte lysate or with no stimulation (Figure 7A). To investigate specifically whether these in vitro P.-falciparum-induced FcRL5+ T-bet+ atypical B-cells secrete anti-PS antibodies, we first enriched this population by selecting FcRL5+ cells from PBMC stimulated with P.-falciparum-infected erythrocyte lysate. Remarkably, ELISPOT analysis of the antibody specificity of enriched FcRL5+ cells showed significantly increased numbers of anti-PS-specific B-cells in the FcRL5+ population when compared to enriched CD27+ cells, which would represent predominantly classical memory B-cells and plasmablast/plasma cells (Figure 7B). No significant difference is observed between the number of FcRL5+antibody-secreting cells (ASCs) producing anti-PS and the number of anti-PfEBA cells, suggesting that the FcLR5+ subset can efficiently produce both autoimmune and anti-parasite antibodies.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig7-v2.jpg)
+
+**Figure 7.:** (A) Percentage of T-bet+FcRL5+ B-cells that expanded from the PBMCs of a healthy naïve donor after in-vitro exposure to either uninfected erythrocyte lysate (uLysate) or P. -falciparum-infected erythrocyte lysate (iLysate). (B) ELISPOT of enriched populations for either FcRL5 (gray bars) or CD27 (black bars) from PBMCs of healthy naïve US donors after in-vitro exposure to P.-falciparum-infected erythrocyte lysate (iLysate) (N = 3). ASC, antibody-secreting cells. Significance assessed by unpaired Student's t test. **p≤0.01, ***p≤0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Total number of anti-IgM spots of antibody-secreting cells (ASCs) from either CD27+- or FcRL5+-enriched PBMC that were stimulated with P.-falciparum-infected erythrocyte lysate. Significant assessed by unpaired Student's t test, ****p<0.0001.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/48309/elife-48309-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Stimulation in vitro of naïve PBMC from healthy US donors (n = 3) with medium, P. falciparum HRPII, uninfected erythrocyte lysate (uLysate) or P.-falciparum-infected erythrocyte lysate (iLysate). Significance was assessed by one-way Anova. *p<0.05, **p<0.01.
 
 As FcRL5 is upregulated transiently on activated B-cells (Dement-Brown et al., 2012), the population expressing this molecule could include not only atypical B-cells but also any recently activated B-cell. However, we observed that CD27+-enriched cells had higher numbers of total ASCs than FcLR5+ (Figure 7—figure supplement 1), which indicates that activated ASCs are found in both populations (CD27+ and FcLR5+) and that the FcLR5+ population does not include most of the activated B cells. Distinctly, quantification of PS-specific ASCs shows that these cells are more frequent among FcLR5+ cells than amongCD27+ cells, despite having similar numbers of PfEBA-specific and total ASCs. These results indicate that both enriched populations have similar numbers of activated B-cells, but FcLR5+ cells contain more anti-PS-secreting cells than CD27+ cells.
 
@@ -135,31 +629,244 @@ In summary, our results provide the first mechanistic evidence of autoimmune-med
 
 ## Materials and methods
 
-## Study design and sample collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>CPD backed cells</td>
+      <td>Interstate Blood bank</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD20 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>302304</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- T-bet (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>644810</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD11c (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>301604</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>302806</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD21 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>354910 (FITC) 354906 (APC)</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human FcRL5 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>340306</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD10 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>312210</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD19 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>30228</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM- HRP (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>AP114P</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG-HRP (goat polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>NA933</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human FcRL5-biotin (mouse monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-105-993</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM unlabeled (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>314–502</td>
+      <td>15 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM-biotin(mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>411543</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>P. falciparum Erythrocyte Binding Antigen</td>
+      <td>BEI Resources MR-4</td>
+      <td>#MRA-1162</td>
+      <td>15 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>True-Nuclear Transcription Factor Buffer Set</td>
+      <td>Biolegend</td>
+      <td>424401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>LT07-118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMB substrate</td>
+      <td>BD Biosciences</td>
+      <td>555214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD27 Microbeads human</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-051-601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Life technologies</td>
+      <td>I24222</td>
+      <td>2.5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ficoll-Paquee Plus</td>
+      <td>GE Life Sciences</td>
+      <td>17144002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad PRISM</td>
+      <td>GraphPad PRISM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phosphatidylserine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7769</td>
+      <td>20 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Calf Thymus DNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>D4522</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stop buffer</td>
+      <td>Biolegend</td>
+      <td>423001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Annexin V</td>
+      <td>Biolegend</td>
+      <td>640902</td>
+      <td>0.5 µM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>X- VIVO 15 media</td>
+      <td>Lonza</td>
+      <td>04-418Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human AB healthy plasma</td>
+      <td>Sigma-Aldrich</td>
+      <td>H4522</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design and sample collection
 
 Patients were recruited at the University Medical Center Hamburg-Eppendorf. Inclusion criteria were age between 18 and 65 years, hemoglobin >8 g/dl and a diagnosis of P. falciparum malaria by microscopy. All individuals gave written informed consent. The study protocol was approved by the ethics committee of the Hamburg Medical Association (PV4539). Plasma and PBMC were isolated from peripheral venous blood by Ficoll purification and stored at −80°C until temperature-controlled transportation to New York University. The sample size was limited by the number of German patients reporting with P. falciparum infection at University Medical Center Hamburg-Eppendorf during one year. We obtained samples from 24 patients (at two different times after infection for seven of them) and four uninfected controls (Table 1). Spearman analysis of the seven pairs of repeated samples showed no significant correlation in the levels of atypical MBCs between repeated measurements. All patients received anti-malaria treatment on the day of presentation, which is considered day 0. Patients were classified as tourists or VRF. The latter is not a homogeneous group as it encompasses people who were born in their (non-malaria endemic) country of residence as well as people who had arrived in the current country of residence at any time before their current infection.
 
-## P. falciparum culture and isolation
+### P. falciparum culture and isolation
 
 Erythrocyte asexual stage cultures of the P. falciparum strain 3D7 were maintained at 5% hematocrit in RPMI 1640, 25 mM HEPES supplemented with 10 μg/ml gentamycin, 250 μM hypoxanthine, 25 mM sodium bicarbonate, and 0.5% Albumax II (pH 6.75) under atmospheric conditions of 5% oxygen, 5% carbon dioxide, and 90% nitrogen. Magnetic separation of late stages with MACS cell separation columns (Miltenyi Biotec) was used for culture synchronization and to isolate late-stage-infected erythrocytes for use in experiments. For experiments with lysates, late-stage infected erythrocytes were lysed by 10 freeze/thaw cycles. P. falciparum culture supernatants were tested for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza LT07-118) and found to be negative.
 
-## Human PBMC enrichment
+### Human PBMC enrichment
 
 Peripheral venous blood from healthy malaria-naïve donors was obtained on the day of the experiment at the New York University Clinical and Translational Science Institute with sodium citrate as anticoagulant. Institutional Review Board (IRB) approval was obtained at New York University School of Medicine. PBMC were enriched using Ficoll-Paque PLUS (GE Life Sciences). All recruited volunteers provided written informed consent prior to blood donation.
 
-## Flow cytometry
+### Flow cytometry
 
 All flow cytometry was performed on a FACSCalibur (Becton Dickinson, Franklin Lakes, NJ) and analyzed with FlowJo (Tree Star, Ashland, OR). All Abs for FACS were purchased from BioLegend (San Diego, CA). For PBMC assays, PBMC were stained with anti-human: FITC anti-CD20 (2H7), PE anti-T-bet (4B10), FITC anti-CD11c (3.9), FITC anti-CD27 (O323), FITC anti-CD21 (Bu32), APC anti-CD21 (Bu32), APC anti-FcRL5 (509f6), APC anti-CD10 (HI10a), and PRCP anti-CD19 (HIB19). Intracellular T-bet staining was performed using the True-Nuclear Transcription Factor Buffer Set (Biolegend) and following manufacturer’s instructions. Two to three technical replicates (independent labeling of PBMC and FACs analysis) for B-cell subpopulations were performed when the number of PBMC collected from each patient allowed for it (15 samples). The average value of technical replicates for each sample was used for statistical analysis.
 
-## ELISA
+### ELISA
 
 Costar 3590 ELISA plates were coated with PS at 20 μg/ml or human uninfected erythrocytes lysate (109 erythrocytes/ml in PBS) diluted 1:500 in 200 proof molecular biology ethanol or with P. falciparum Erythrocyte Binding Antigen (PfEBA, which was obtained through BEI Resources, MR4, NIAID, NIH) or Calf Thymus DNA (Sigma) at 10 μg/ml in PBS 1X, and allowed to evaporate (PS) at RT for >16 hr of incubation at 4°C. Plates were washed five times with PBS 0.05% Tween 20 and then blocked for 1 hr with PBS 3% BSA. Plasma from patients was diluted at 1:100 in blocking buffer and incubated for 2 hr at 37°C. Plates were washed again five times and incubated with anti-human IgG-HRP (GE Healthcare) for 1 hr at 37°C. Plates were washed five more times and TMB substrate (BD Biosciences) was added until the desired color was obtained. The reaction was stopped by with Stop buffer (Biolegend) and absorbance was read at 450 nm. The mean OD at 450 nm from triplicate wells was compared with the same dilution of a reference positive serum to calculate relative units (RU). For human PBMC ELISAs, a similar process was performed but using human erythrocyte lysates or PS for coating, undiluted PBMC culture supernantants and anti-human IgM-HRP (Millipore) for detection. Three technical replicates for each plasma sample (independent wells in the same plate) were performed for ELISA. The average value of technical replicates for each sample was used for linear regression analysis. Each ELISA was performed at least twice. Only one representative result is shown.
 
-## Erythrocyte lysis
+### Erythrocyte lysis
 
 Assessment of the erythrocyte lysis capacity of plasma was performed following previously described methods with small modifications (Meulenbroek et al., 2014). First, fresh healthy donor erythrocytes were treated with ionomycin at 2.5 µM (Life Technologies) to stress erythrocytes and to induce exposure of PS (Lang et al., 2006). Erythrocytes were then washed twice with PBS and incubated with heat-inactivated plasma from either patients or uninfected controls (8% of total volume) along with 3.5% of AB type healthy plasma (Sigma) as a complement source for 1.5–2 hr. For Annexin V blocking experiments, the same protocol was used but 0.5 µM Annexin V (Biolegend) or its buffer alone were preincubated with the RBCs for 30 min. Plates were then spun down with reduced break and supernatants were carefully collected. Supernatants were read in a spectrophotometer at 414 nm to assess erythrocyte lysis. Results are shown as percentage of maximal lysis (erythrocytes lysed by water).
 
-## ELISPOT assay
+### ELISPOT assay
 
 ELISPOTs were performed as previously reported (Rivera-Correa et al., 2017). PBMC from a healthy US donor were obtained. Human PBMC were seeded in flat 96-wells at a density of 2.5 × 104 per well. P.-falciparum-infected erythrocyte lysates were prepared as mentioned before and added at a ratio of 1:10 (PBMC:erythrocytes) and cultured in serum-free hematopoietic cell X- VIVO 15 medium (Lonza) for 6 days. Specific B-cell populations were enriched through magnetic bead sorting (Miltenyi) by positive selection with a combination of purified biotinylated anti-FcRL5 antibody (atypical)/anti biotin beads or anti-CD27 (plasma/classical memory cell) coated magnetic beads. Enrichment yield was assessed by flow cytometry prior to addition to plate.
 
@@ -167,6 +874,6 @@ For ELISPOT, 5 × 104 cells were added per well and incubated in X- VIVO 15 me
 
 Biological replicates (samples from three different healthy donors in three independent experiments) were used for the ELISPOT assay and the related FACs analysis. Three technical replicates (independent wells in the same plate) were performed for each experiment.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using Prism (GraphPad Software). Unpaired t-tests were used to identify statistical differences between groups of samples. A p-value of <0.05 was considered significant. Correlations were performed using non-parametric Spearman correlation analysis. Error bars represent the standard deviations (SD) of data from all of the patients or donors used in each experiment.

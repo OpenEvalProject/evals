@@ -24,6 +24,14 @@ The microtubule-associated protein, tau, is the major subunit of neurofibrillary
 
 Tau is an intrinsically disordered protein (IDP) that is highly expressed in neurons and plays essential roles in microtubule self-assembly and stability (Mandelkow and Mandelkow, 2012), axonal transport (Gustke et al., 1994), and neurite outgrowth (Biernat and Mandelkow, 1999). Tau binds to microtubules via its central microtubule-binding repeat (MTBR) domain (Figure 1a), an interaction that is modulated by post-translational modifications (PTMs). Aberrant PTMs such as hyperphosphorylation and acetylation (Hanger et al., 2009; Morris et al., 2015; Cook et al., 2014) were suggested to decrease the affinity of tau to microtubules, thus subsequently reducing microtubule stability. In addition, when tau dissociates from microtubules, it can form oligomers with the potential to disrupt cellular membranes, thereby impairing synaptic and mitochondrial functions, before ultimately forming amyloid fibers (Shafiei et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain organization of the longest splice isoform of tau protein (2N4R) and the short variant (4R/K18) containing only the microtubule binding repeats (MBTRs). The location of the two N-terminal inserts (N1 and N2) and the polyproline region (PPR) is indicated. The MTBR region of tau consists of four partially repeated sequences, R1 to R4, with the PHF6* and PHF6 aggregation-driving hexapeptides highlighted in gray. (B, C) ThT-based aggregation assay of 2N4R (B) and 4R (C) tau variants (10 µM) in the presence of 5 µM HSPB1 (green), DNAJA2 (purple), or DNAJB1 (blue) chaperones. The inset shows tau aggregation profiles in the presence of twofold excess (20 µM) of the same chaperones, showing complete inhibition over the course of the experiment. Representative data from three independent experiments is shown. (D) Tau4R binding profiles to HSPB1 (green), DNAJA2 (purple), and DNAJB1 (blue) chaperones, probed by NMR. Changes in NMR intensity ratios (I/I0) upon addition of twofold excess of each chaperone are plotted as a function of tau4R residue number. The gray boxes represent the positions of the tau PHF6* and PHF6 aggregation-prone motifs. Values lower than 0.5 indicate intermolecular interactions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** 1H-15N TROSY-HSQC spectra of full-length tau (2N4R, A) or tau4R (B) alone (black) and upon addition of twofold excess of HSPB1 (green), DNAJA2 (purple), or DNAJB1 (blue) chaperones. Residues from the PHF6 and PHF6* aggregation-prone regions, which interact with HSPB1 and DNAJA2 chaperones, are indicated on the tau spectra.
+
 These abnormal forms of tau are thought to play a key role in the pathogenesis of various human tauopathies, including Alzheimer’s disease (AD), frontotemporal dementias, and progressive supranuclear palsy (Ballatore et al., 2007). In such cases, tau forms large intracellular aggregates, termed neurofibrillary tangles, whose abundance and localization in the brain correlates with cognitive decline (Ballatore et al., 2007; Brunello et al., 2020). It is still unclear, however, if the fibrils themselves are the neurotoxic species or whether prefibrillar soluble aggregates and oligomers of tau promote neuronal death by spreading tau pathogenicity from cell to cell in a prion-like manner.
 
 Chaperone machineries, and in particular members of the Hsp70 and the ATP-independent, small heat shock protein (sHSP) families, engage with tau during these pathogenic events, counteracting its aggregation into amyloids and targeting the misfolded species for degradation (Dou et al., 2003; Voss et al., 2012; Petrucelli et al., 2004; Mok et al., 2018; Caballero et al., 2021). Moreover, in various cellular models, increased chaperone levels were shown to play an important role in tau cellular homeostasis by promoting tau solubility and microtubule binding while reducing the levels of pathological tau species (Dou et al., 2003; Perez et al., 1991; Renkawek et al., 1994; Dabir et al., 2004; Sahara et al., 2007; Jinwal et al., 2013; Shimura et al., 2004). The chaperones do so by specifically recognizing the six-residue aggregation-prone regions located at the start of the second and third repeats in the MTBR domain (Mok et al., 2018; Freilich et al., 2018; Baughman et al., 2018; Weickert et al., 2020; Figure 1A). These two motifs, 275VQIINK280 and 306VQIVYK311 (also called PHF6* and PHF6, respectively), are susceptible to the formation of β-sheet structures that have been found to be a prerequisite for tau aggregation (von Bergen et al., 2000; Mukrasch et al., 2005).
@@ -44,7 +52,7 @@ We therefore used NMR spectroscopy, in combination with kinetic aggregation assa
 
 ## Results
 
-## The chaperones slow down tau aggregation and bind tau
+### The chaperones slow down tau aggregation and bind tau
 
 We first investigated the effect of DNAJA2 and DNAJB1 on the fibril formation of full-length tau (2N4R) and compared it to that of HSPB1, a well-characterized suppressor of tau aggregation. Tau aggregation was monitored using Thioflavin-T (ThT) fluorescence (Biancalana and Koide, 2010). The 3D GXG variant of HSPB1 (22) was used to mimic the fully activated dimeric form of the chaperone. As expected, the addition of HSPB1 significantly inhibited tau fiber formation, in agreement with previous reports (Mok et al., 2018; Freilich et al., 2018; Baughman et al., 2018). Interestingly, addition of DNAJA2 and DNAJB1 chaperones also completely inhibited the formation of tau fibrils for over 16 hr (Figure 1B), with no observable ThT signal being detected over this length of time. Similar results were obtained with the shorter tau construct tau4R (residues 244–372) (Figure 1C), which forms the core of tau filaments and nucleates tau aggregation (Barghorn et al., 2004). Despite the faster aggregation kinetics of tau4R relative to the full-length tau (t½ ≈ 110 min vs. t½ ≈ 340 min), the presence of even a sub-stoichiometric concentration of either of the three molecular chaperones (DNAJB1, HSPB1, or DNAJA2) fully suppressed aggregation for the duration of the experiment (Figure 1C).
 
@@ -52,7 +60,7 @@ As all three chaperones are able to suppress tau aggregation, we next aimed to u
 
 In order to unravel the mechanism of aggregation prevention, we first identified the binding sites for the three chaperones on tau. To this end, we recorded 1H-15N HSQC spectra of either 15N-tau or 15N-tau4R in the absence and presence of each chaperone. Upon addition of HSPB1, we observed significant peak broadening of tau residues 275–280 and 306–311, which correspond to the PHF6* and PHF6 motifs (Figure 1D and Figure 1—figure supplement 1), in agreement with previous reports (Mok et al., 2018; Freilich et al., 2018; Baughman et al., 2018). Notably, the PHF6 motifs, which are the most hydrophobic regions within tau, are also the preferential binding sites for the major ATP-dependent chaperone families, such as Hsp70 and Hsp90 (Mok et al., 2018). A similar preference for the PHF6 and PHF6* motifs was also found for DNAJA2, with residues 275–284 and 306–320 showing significant peak broadening (Figure 1D and Figure 1—figure supplement 1). Surprisingly, however, DNAJB1 showed no significant binding to tau, despite efficiently suppressing amyloid formation (Figure 1D and Figure 1—figure supplement 1).
 
-## Binding to tau fibrils
+### Binding to tau fibrils
 
 As DNAJB1 efficiently prevented tau aggregation in both full-length and tau4R experiments, yet showed no detectable binding to the monomers, we hypothesized that it functions, instead, through association with preformed tau fibers. In fact, a similar behavior was recently reported for DNAJB1 in the case of α-synuclein, where the chaperone displayed a remarkable preference (>300-fold) toward the amyloid state of α-synuclein over the monomer (Wentink et al., 2020).
 
@@ -60,13 +68,13 @@ We therefore checked whether DNAJB1 interacts with preformed tau4R fibrils using
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig2-v2.jpg)
 
-**Figure 2.:** (A) Co-sedimentation of preformed tau amyloid fibrils (10 μM) in the presence of 10 μM DNAJB1, DNAJA2, or HSPB1 chaperones. SDS-PAGE of the supernatant (S) and pellet (P) fractions following ultracentrifugation is shown. (B) Fluorescence anisotropy assays of tau fibers binding to DNAJB1 (blue) or DNAJA2 (purple). Data points represent the means of three independent measurements (with standard deviations), with the KDs for DNAJB1 and DNAJA2 being 1.7 ± 0.2 µM and 7.6 ± 0.6 µM, respectively. (C) Fluorescence anisotropy assays of monomeric tau binding to HSPB1 (green), DNAJB1 (blue), or DNAJA2 (purple). The KDs were calculated as 250 ± 26 µM for HSPB1 and 43 ± 8 µM for DNAJA2. No binding was observed for DNAJB1. Data are mean ± s.e.m. (n = 3). (D) Representative negative stain electron microscopy micrographs of preformed tau fibers alone or upon incubation with 1:1 molar ratio of HSPB1, DNAJA2, or DNAJB1 chaperones. The asterisks show the position of HSPB1 chaperone clusters. White bar is 200 nm.Figure 2—source data 1.
+**Figure 2.:** (A) Co-sedimentation of preformed tau amyloid fibrils (10 μM) in the presence of 10 μM DNAJB1, DNAJA2, or HSPB1 chaperones. SDS-PAGE of the supernatant (S) and pellet (P) fractions following ultracentrifugation is shown. (B) Fluorescence anisotropy assays of tau fibers binding to DNAJB1 (blue) or DNAJA2 (purple). Data points represent the means of three independent measurements (with standard deviations), with the KDs for DNAJB1 and DNAJA2 being 1.7 ± 0.2 µM and 7.6 ± 0.6 µM, respectively. (C) Fluorescence anisotropy assays of monomeric tau binding to HSPB1 (green), DNAJB1 (blue), or DNAJA2 (purple). The KDs were calculated as 250 ± 26 µM for HSPB1 and 43 ± 8 µM for DNAJA2. No binding was observed for DNAJB1. Data are mean ± s.e.m. (n = 3). (D) Representative negative stain electron microscopy micrographs of preformed tau fibers alone or upon incubation with 1:1 molar ratio of HSPB1, DNAJA2, or DNAJB1 chaperones. The asterisks show the position of HSPB1 chaperone clusters. White bar is 200 nm.
 
 The selective interaction of DNAJB1 and DNAJA2 chaperones with tau fibers was also observed by negative stain electron microscopy (EM). Here, tau alone formed characteristic long twisted filaments with a periodicity of 50–100 nm (Figure 2D), consistent with previous observations (Fitzpatrick et al., 2017). Upon addition of HSPB1 chaperone to the fibers, no changes to fiber length or morphology were detected, in agreement with our co-sedimentation assays that showed no binding of HSPB1 chaperone to the preformed fibers. HSPB1 itself, however, generated large protein assemblies that can be seen next to the fibers in the EM images (marked by *).
 
 Addition of DNAJB1 or DNAJA2, on the other hand, caused visible change in the appearance of the fibers, generating straighter, less twisted filaments decorated by periodically bound chaperones (Figure 2D). The overall length of the fibers, however, did not change substantially, and also smaller tau fragments were not observed in our EM images, indicating that DNAJB1 and DNAJA2 do not enhance fiber breakage or fragmentation upon binding. In summary, HSPB1 only binds tau4R monomers, DNAJB1 interacts with tau4R fibrils, whereas DNAJA2 binds both monomers and fibers (Figure 2B, C).
 
-## Each chaperone suppresses a specific subset of microscopic processes in the tau aggregation reaction
+### Each chaperone suppresses a specific subset of microscopic processes in the tau aggregation reaction
 
 We were next interested to see how the different tau binding modes of the three chaperones affect their respective aggregation-prevention mechanisms. We therefore performed a series of aggregation kinetics experiments, varying the concentrations of the chaperones while maintaining a constant concentration of tau4R.
 
@@ -76,13 +84,25 @@ Tau4R aggregation kinetics data in the absence (Figure 3—figure supplement 1B)
 
 All chaperones caused a concentration-dependent retardation of tau aggregation at sub-stoichiometric concentrations (Figure 3). To understand the effect of the chaperones at the microscopic level, we fit the data to the kinetic model of tau aggregation using the kinetic parameters derived in the absence of chaperones. In order to determine which step in the aggregation mechanism is most likely affected by each of the chaperones, we only allowed an individual kinetic rate to vary in each of the analyses (see Materials and methods for detail). As the addition of any of the chaperones to preformed tau fibrils did not change the overall fibril length (Figure 2D), we could further assume that the chaperones have no effect on tau fragmentation rates (km).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig3-v2.jpg)
+
+**Figure 3.:** Kinetic profiles of the aggregation of 10 μM of tau in the absence (black) and presence of increasing concentrations of (A) HSPB1 chaperone (1, 2, 5, and 10 μM; dark to light green), (B) DNAJA2 (0.5, 1, 2.5, 5, 7.5, and 10 μM; dark to light purple), or (C) DNAJB1 (0.5, 1, 2.5, 5, 7.5, and 10 μM; dark to light blue). Open circles represent experimental data, and solid lines represent the fit of the kinetic profiles where only the primary nucleation (kn, left) or elongation (kp, right) pathways are inhibited. Residuals of the fits are shown under each panel. The changes in the aggregation kinetics caused by HSPB1 fit well with the elongation rate being primarily affected by the chaperone (A, right) whereas the changes in tau aggregation kinetics caused by DNAJB1 can be best described by the reduction of primary nucleation rates (C, left). In the case of DNAJA2, the changes in aggregation kinetics cannot be well described by the delay of only primary nucleation (B, left) or only elongation (B, middle) rates. There is good agreement, however, between the experimental data and fits to the integrated rate law of combined seeded and unseeded, in which primary nucleation, elongation, and fragmentation events have been considered simultaneously (B, right). Data points represent the means of 3–5 independent measurements. (D) The changes in microscopic nucleation (top) and elongation (bottom) rate constants as a function of the concentration of the molecular chaperones, relative to tau alone.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A plot of the aggregation reaction half-times versus the initial monomer concentration used to narrow down the aggregation mechanism of tau (Meisl et al., 2016). Half-times were calculated from three independent experiments of unseeded tau aggregation, as shown in (B). To extract the scaling factor (γ), the half-times (t1/2) of the aggregation reaction were plotted versus the tau monomer concentration on a double logarithmic plot with the slope of this plot providing the scaling exponent (log(t1/2) = γlog(m0) + constant). By using the rate laws for the time evolution of aggregate mass, γ can be related to the reaction orders for each of the models. The scaling factor for tau aggregation was calculated to be −0.34 ± 0.04, with −0.5 < γ < 0, indicating primary nucleation and fragmentation as the correct model. Furthermore, the deviation of the points from a straight line shows that γ is dependent on the monomer concentration, with positive curvature indicating the presence of saturating elongation (Meisl et al., 2016). (B, C) Kinetic profiles of the concentration-dependent aggregation of tau4R at concentrations of 2.5, 5, 7.5, 10, 15, 20, and 30 μM, initiated by the addition of 0.5 molar equivalents of heparin (B) or 1% seeds (C), and monitored by Thioflavin-T (ThT) fluorescence (open circles). Continuous lines represent the global fitting of the data to the integrated rate laws (see equations in the Materials and methods section). (D) Schematic of microscopic steps during tau aggregation and their corresponding rate constants as obtained from the fits (see Materials and methods for detail). kn is the rate of nucleation, kp is the rate of elongation, KE is the critical concentration for saturated elongation, and km is the rate of fibril fragmentation. Nucleus size was assumed to be 2 (nc = 2) (Yao et al., 2020; Shammas et al., 2015).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Global fit analysis of tau aggregation (black) in the presence of increasing concentrations of HSPB1 chaperone (1, 2, 5, and 10 μM; dark to light green), constrained such that both the nucleation and elongation rates (kn, kp) were free fit parameters. Open circles represent experimental data, and solid lines represent the fits. The residuals of the fits do not become significantly smaller compared to fits where only elongation rates (kp) were allowed to vary (Figure 3A). Thus, HSPB1 mainly affects the rate of elongation in tau aggregation kinetics and not the rate of nucleation. (B) Global fit analysis of tau aggregation (black) in the presence of increasing concentrations of DNAJB1 chaperone (0.5, 1, 2.5, 5, 7.5, and 10 μM; dark to light blue), constrained similarly as in (A). DNAJB1 mainly affects the rate of nucleation with a minor effect on the elongation rates. (C) Global fit analysis of tau aggregation alone and in the presence of increasing concentrations of DNAJA2 chaperone (0.5, 1, 2.5, 5, 7.5, and 10 μM; dark to light purple) for seeded (left) and unseeded (right) experiments. Seeded experiments were fit globally, only allowing variation in the elongation rates, as the nucleation rates are negligible under seeding conditions. Changes in elongation rates due to the presence of DNAJA2 chaperone (summarized in Figure 3D) were then used as constants in the global fit analysis of the unseeded experiments, while the nucleation rates were allowed to vary. This approach allowed us to derive the changes in both the nucleation and elongation rates.
+
 Upon fitting HSPB1 aggregation-prevention data, only a poor agreement was achieved when allowing the perturbation of primary nucleation rates (kn) (Figure 3A). Given the fact that HSPB1 binds tau monomers, the relatively moderate effect on tau primary nucleation was somewhat surprising as monomer binding should inhibit both nucleation and elongation. In contrast, fitting the fiber elongation rate (kp) provided a significantly better description of the kinetic data (Figure 3A), indicating an order of magnitude reduction of this rate (Figure 3D). Moreover, even when allowing the variation of both the nucleation and elongation rates (kn and kp) in the fit, only the elongation rates were reduced in the presence of HSPB1 chaperone, while the nucleation rates remained unchanged (Figure 3—figure supplement 2A, Figure 3D).
 
 The effect of DNAJA2 on tau aggregation could neither be described by the reduction of nucleation rates nor elongation rates alone (Figure 3B), which is not entirely surprising, given that the chaperone can bind to both monomeric tau and fibrils (Figure 1D, Figure 2B, C). In general, DNAJA2 has at least two distinct pathways to impact aggregation, namely by (i) reducing the amount of monomeric tau accessible for nucleation and elongation and (ii) lowering the potency of fibrils to grow. In order to determine which rates are affected by the chaperone, we recorded an additional set of kinetic measurements in the presence of DNAJA2 chaperone, this time with the aggregation being initiated by tau fiber seeds. In the presence of seeds, tau primary nucleation events are negligible, thus allowing us to estimate the effect of the DNAJA2 chaperone only on rate constants of elongation and fragmentation (Figure 3—figure supplement 2C). Using a global fit of the unseeded and seeded aggregation kinetics, we were then able to determine the effect of DNAJA2 on the nucleation and elongation rates (Figure 3—figure supplement 2C and Figure 3D). Combined, these results show a substantial perturbation of both tau nucleation and elongation rates by the DNAJA2 chaperone (Figure 3D), indicating that this chaperone affects the aggregation process in more intricate ways than HSPB1.
 
 Surprisingly, the effect of DNAJB1 on tau aggregation was best described by its ability to reduce the rates of primary nucleation (Figure 3C, left) and, only to a lesser extent, fiber elongation (Figure 3C, right). This ability of the DNAJB1 chaperone to effectively inhibit the rate of tau4R primary nucleation was unexpected as primary nucleation involves interaction between tau monomers, yet no interaction between DNAJB1 and this species of tau was observed in our NMR experiments.
 
-## Two conformations of monomeric tau
+### Two conformations of monomeric tau
 
 The effect of DNAJB1 on tau4R nucleation, despite its inability to interact with monomeric tau4R, can, however, be reconciled by the recent finding that soluble monomeric tau4R exists in two conformational ensembles – an ensemble that does not spontaneously aggregate (‘inert’ tau monomer) and a seed-competent monomer that triggers the spontaneous aggregation of tau (Mirbaha et al., 2018; Chen et al., 2019). It is therefore possible that DNAJB1 only identifies and interacts with the ‘aggregation-prone’ tau species and not the inert monomers.
 
@@ -92,6 +112,26 @@ Yet, whereas tau4R is inaccessible under conditions at which it rapidly aggregat
 
 We then monitored chaperone binding to this tau species by recording 1H-15N HSQC spectra for 15N-tau-heparin complex alone, and upon addition of DNAJB1, DNAJA2, and HSPB1 chaperones to the mixture (Figure 4). To map the binding sites for the chaperones on this heparin-bound, aggregation-prone tau species, we first had to assign its spectrum. HNCA, CBCA(CO)NH, HN(CA)CO, and HNCO 3D NMR experiments were recorded, and assignments were obtained for 88% of the non-proline residues. Heparin binding resulted in chemical shift perturbations (CSPs) to the NMR spectrum of tau4R, mainly in the R1, R2, and PHF6* regions (Figure 4A and Figure 4—figure supplement 1B). No changes were observed to the overall dispersion of the spectrum, indicating that heparin binding does not induce global folding of tau, in agreement with previous findings (Mukrasch et al., 2005).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overlay of two-dimensional 1H-15N NMR spectra of tau in the absence (black) and presence of heparin (orange). Heparin binds mainly to the R1, R2, and PHF6* regions (see Figure 4—figure supplement 1B), with no changes observed to the overall dispersion of the spectra, indicating that heparin binding does not result in global folding of tau. (B) Residue-resolved NMR signal attenuation (I/I0) of tau in complex with heparin upon addition of one molar equivalent of DNAJB1 (blue), DNAJA2 (purple), or two molar equivalents of HSPB1 (green). Gray boxes represent the positions of tau PHF6* and PHF6 aggregation-prone motifs in tau. Unlike in the case of tau monomer, DNAJB1 interacts strongly with this aggregation-prone species, while HSPB1 chaperone does not. (C) Residue-resolved backbone amide NMR signal attenuation (I/I0) of tau P301S mutant upon addition of two molar equivalents of DNAJB1 (blue), HSPB1 (green), or DNAJA2 (purple) chaperones. Dashed lines represent the same intensity plots for wild-type tau (as in Figure 1D). Compared to the wild-type, P301S mutant shows increased interaction with DNAJB1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Tau aggregation profiles in the presence of increasing concentrations of heparin ranging from 0.1 to 40 μM. Initially, the rate of aggregation increases with the concentration of heparin. At 1 µM heparin, the reaction slows, with higher concentrations (20–40 μM) suppressing aggregation completely for over 2 hr (dark blue to purple curves). (B) Chemical shift perturbation plot of tau upon addition of twofold excess of heparin. Heparin binding occurs mainly in repeat 2 (R2) of tau. The gray boxes represent tau PHF6* and PHF6 aggregation-prone motifs. (C) Secondary structure propensity plot (Marsh et al., 2006) of monomeric tau (black, top) and tau-heparin complex (orange, bottom). (D) Differences between secondary chemical shifts of Cα and Cβ resonances relative to their random coil shift (Wishart and Sykes, 1994) as a function of residue number for tau (gray) or tau-heparin complex (orange).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Residue-resolved NMR signal attenuation plot (I/I0) of tau in buffer supplemented with 0.3 M KCl, upon addition of twofold molar excess of DNAJB1 (blue), DNAJA2 (purple), or HSPB1 (green) chaperones. Values lower than 0.5 indicate intermolecular interactions. The binding profiles are identical to those obtained at low salt conditions (Figure 1D).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A, B) Backbone amide RDCs (1DNH), collected in 5 mg/mL phage pf1 (Hansen et al., 1998) (A) or 4.5% (vol/vol) C12E5/n-hexanol (Otting et al., 2000) (B) alignment media, showing a compaction in the PHF6* and PHF6 repeat regions (highlighted in gray). The 1D 2H spectra, recorded on the 1000 MHz spectrometer (middle, right), show splitting of 5.4 Hz (A) and 17.4 Hz (B), respectively. In both alignment media, large RDCs were observed for residues in the PHF6 aggregation-prone repeats, indicating the presence of a compaction of this region. (C) 1DNH RDCs measured for 1:1 tau:heparin complex aligned with 16 mg/mL phage pf1. The RDCs show highly decreased values in the PHF6* and PHF6 repeat regions compared to tau alone, indicating an expansion in this region. The 1D 2H spectra, recorded on the 1000 MHz spectrometer (middle, right, C), show splitting of 20.3 Hz, indicating a higher degree of alignment compared to tau alone. (D, E) 1DNH RDCs measured for tau4R P301L mutant collected in 5 mg/mL phage pf1 (D) or 4.5% (vov/vol) C12E5/n-hexanol (E) alignment media. Both conditions show lower RDC values in the PHF6* and PHF6 repeat regions compared to wild-type tau4R (differences in RDCs between WT tau and the P301L sample are shown underneath each plot), indicating a slightly increased tendency toward an extended structure in this tauopathy-associated mutant. The degree of alignment for the two samples was slightly higher than that of tau4R, as indicated by the 2H splitting (middle, right) of 6.0 Hz (D) and 17.7 Hz (E).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Residue-resolved NMR signal attenuation (I/I0) of tau P301L mutant upon addition of two equivalents of DNAJB1 (blue), DNAJA2 (purple), or HSPB1 (green) chaperones. The position of the mutation between repeats 1 and 2 is indicated in red on the domain organization (top). Gray boxes represent the positions of the tau PHF6* and PHF6 aggregation-prone motifs. Dashed lines show the intensity changes for wild-type tau upon interaction with same chaperones. (B) Thioflavin-T (ThT)-based aggregation assay of 10 µM tau P301S variant alone (dark red), and in the presence of 5 µM HSPB1 (green), DNAJA2 (purple), or DNAJB1 (blue) chaperones. (C) Comparison of aggregation reaction half-times of tau4R (gray bars) and P301S tau (dark red bars) variants alone, and in the presence of chaperones. HSPB1 chaperone shows a significant reduction in its aggregation-prevention activity toward the P301S mutant tau compared to wild-type protein. In contrast, DNAJB1 is more efficient in preventing tau P301S aggregation than that of wild-type tau4R.
+
 With these assignments in hand, we were able to identify that, despite having negligible affinity toward the tau monomer, the DNAJB1 chaperone indeed interacts strongly with the aggregation-prone tau-heparin mixture (Figure 4B), as we previously predicted. We further mapped this binding to tau residues 275–280 and 305–314 of the PHF6 and PHF6* repeats – the same regions to which both DNAJA2 and HSPB1 bind in the inert, monomeric tau.
 
 We next tested whether DNAJA2 and HSPB1 interact with the heparin-bound tau. DNAJA2 showed strong binding to the R2 and R3 PHF6* repeats of this aggregation-prone form of tau4R, similarly to its interaction with the free monomer (Figure 4B). In contrast, HSPB1 only bound this species weakly, despite previously displaying a strong interaction with free tau4R. The lack of interaction between HSPB1 and aggregation-prone tau species explains our previous observation that HSPB1 does not affect the rate of fiber nucleation (Figure 3A), as such an inhibition would require a direct interaction with the aggregate nucleus or aggregation-prone tau.
@@ -100,7 +140,7 @@ Thus, while interacting with the same regions of tau, the three chaperones each 
 
 It was unclear, however, how the chaperones discriminate between the inert form of tau and the aggregation-prone tau-heparin complex.
 
-## Aggregation-prone tau species
+### Aggregation-prone tau species
 
 Secondary-structure propensity analysis (Marsh et al., 2006) of free and heparin-bound tau demonstrated that the different chaperone binding profiles cannot be explained by heparin-induced formation of extended β-strand structures in the PHF6 repeats (Eschmann et al., 2017) as these regions displayed no increase in secondary-structure propensity upon addition of heparin (Figure 4—figure supplement 1C). Likewise, no notable changes were observed between the Cα and Cβ secondary chemical shifts patterns of heparin-bound and free tau samples (Figure 4—figure supplement 1D).
 
@@ -118,9 +158,17 @@ The interaction of the P301L and P301S familial mutations of tau4R with HSPB1, D
 
 Thus, DNAJB1 binding to monomeric tau indeed appears to depend on the exposure of the PHF6 region, thereby allowing it to distinguish between inert tau and the aggregation-prone species that eventually leads to amyloid formation.
 
-## Changes to tau fibers caused by the chaperones
+### Changes to tau fibers caused by the chaperones
 
 Our results show that all three chaperones efficiently inhibit tau aggregation via interactions with the hydrophobic aggregation-prone PHF6 repeats. Each of the chaperones interacts with a specific set of tau species, thus slowing down different microscopic processes in the aggregation reaction (Figure 5D). However, it remained unclear whether the chaperones also affect the size and/or morphology of tau fibers.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) Representative negative stain electron micrographs of end products of the tau aggregation-prevention assays preformed in the presence of indicated concentrations of DNAJA2 (A), DNAJB1 (B), and HSPB1 (C). White bar is 500 nm. Tau4R forms long fibrils in the absence of chaperones and is still able to form long, fully developed fibrils in the presence of HSPB1 dimer. It forms smaller oligomeric species in the presence of both DNAJA2 and DNAJB1, indicating that these chaperones maintain much of the protein in a non-fibrillary state. (D) Overview of the variety of diverse microscopic mechanisms through which HSPB1, DNAJB1, and DNAJA2 molecular chaperones can suppress tau amyloid formation, as revealed by the binding and kinetic assays in this paper. These results demonstrate that the chaperones have evolved to exploit the different opportunities to modulate tau aggregation by binding to different tau species along the aggregation pathway.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Unnormalized tau aggregation kinetics showing the reduction of tau fibril mass by addition of increasing concentrations of DNAJA2 (A), DNAJB1 (B), and HSPB1 (C) chaperones. All three chaperones cause a decrease in overall fibril mass, which can result from a reduction in the number of fibers or in total fibril length. DNAJA2 and DNAJB1 chaperones, which reduce the rates of tau nucleation and elongation, showed significantly higher degree of fibril mass reduction at 1:1 chaperone:tau ratio (96 and 94%, respectively) compared to HSPB1, which only reduced fibril mass by 47%.
 
 Since ThT fluorescence only reports on total fibril mass, with no differentiation to fibril length or number, we turned to EM in order to image the fibers. When adding DNAJA2 at the start of the aggregation reaction, a clear dose-dependent decrease in the density and length of the tau fibrils was observed (Figure 5A). Similarly to DNAJA2, DNAJB1-containing reactions yielded shorter fibrils that further shortened when repeating the experiment with increasing chaperone concentrations (Figure 5B). This result is not unexpected given that these two chaperones also bind to tau4R fibers (Figure 2), which may contribute to the arrest of tau amyloid elongation.
 
@@ -130,7 +178,7 @@ HSPB1 chaperone, on the other hand, affected fiber formation differently when ad
 
 Thus, DNAJB1 and DNAJA2 chaperones, which bind to both aggregation-prone tau species and fibers, are significantly more efficient in preventing the formation of mature fibers than HSPB1, which can only bind to tau monomers.
 
-## Chaperone interactions with tau
+### Chaperone interactions with tau
 
 Overall it appears that the DNAJB1 and DNAJA2 chaperones, despite being very similar in structure, display distinct differences in their interaction with tau. While DNAJA2 binds to all tau species – monomers, aggregation-prone tau, and fibers – DNAJB1 does not bind at all to inert tau monomers, but interacts strongly with the aggregation-prone species as well as mature fibers.
 
@@ -139,6 +187,14 @@ This disparity between the chaperones could be explained by utilization of diffe
 Both DNAJA2 and DNAJB1 are homodimeric proteins comprising an eponymous N-terminal JD that is essential for Hsp70 activation, two putative substrate binding domains, CTDI and CTDII, and a C-terminal dimerization domain. In addition, DNAJA2, as all class A JDPs, has a ZFLR insertion in CTDI (Kampinga and Craig, 2010; Ayala Mariscal and Kirstein, 2021; Jiang et al., 2019), while DNAJB1 has an autoinhibitory GF region connecting the JD to CTDI and blocking premature interaction of Hsp70 with the JD (Faust et al., 2020).
 
 Due to the large size of the DNAJA2 dimer (90 kDa), which hampers NMR experiments, we used a monomeric version of Ydj1, a DNAJA2 homologue from Saccharomyces cerevisiae, that contains only the substrate binding and ZFLR domains (Li et al., 2003). This construct (27 kDa) of 2H, 15N-labeled DNAJA2(Ydj1)111-351 was far more amenable to NMR and, as previously reported, gave a high-quality 1H-15N HSQC-TROSY spectrum (Jiang et al., 2019; Figure 6—figure supplement 1A). Addition of twofold excess of tau4R caused CSPs in the first DNAJA2 substrate-binding domain (Li et al., 2003), located in CTDI (Figure 6A, C and Figure 6—figure supplement 1A). Specifically, tau4R (most likely via the hydrophobic PHF6 and PHF6* motifs) binds to a hydrophobic pocket located between β-strands 1 and 2 (Figure 6C, colored purple). The binding was in fast exchange, and no reduction in peak intensities to DNAJA2(Ydj1)111-351 residues was observed (Figure 6—figure supplement 1A), in agreement with the relatively low affinity of DNAJA2 for monomeric tau (43 µM, Figure 2C). DNAJB1, despite its CTDI having 56% identity to the CTDI tau-binding region of DNAJA2, showed no interaction with the monomeric tau (Figure 6E and Figure 6—figure supplement 1E, F), as previously seen from the tau side (Figure 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig6-v2.jpg)
+
+**Figure 6.:** (A) Combined amide chemical shift perturbations between free DNAJA2(Ydj1)111-351 and DNAJA2(Ydj1)111-351 bound to unlabeled tau. The domain organization of DNAJA2 is indicated at the bottom. Monomeric tau binds to the C-terminal domain I (CTDI) of DNAJA2, but not to the zinc-finger-like region (ZFLR) insertion. (B) Residue-resolved backbone amide NMR signal-attenuation (I/I0) plot for DNAJA2(Ydj1)111-351 in complex with aggregation-prone tau species, generated by addition of twofold excess heparin. The binding is primarily to the C-terminal domain II (CTDII) of DNAJA2. (C, D) Structural representation of DNAJA2 chaperone, with residues showing significant chemical shift perturbations (CSPs) upon binding to monomeric tau (from panel A) highlighted in purple (C), and residues displaying significant decreases in peak intensities upon binding to aggregation-prone tau species colored pink (D). (E) No changes in signal intensity are detected in the CTDs of DNAJB1 (residues 154–341) upon addition of twofold excess of monomeric tau protein, indicating a lack of interaction. (F) Combined methyl group chemical shift perturbations between free full-length DNAJB1 and DNAJB1 bound to aggregation-prone tau species generated by addition of twofold excess heparin. Binding is observed in the CTDII of DNAJB1. (G) Structural representation of DNAJB1 chaperone, with methyl residues showing significant changes upon binding to aggregation-prone tau species highlighted in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69601/elife-69601-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) 1H-15N TROSY-HSQC of class A J-domain protein Ydj1 (DNAJA2 homolog) residues 111–351 alone (black), and in complex with two molar equivalents of monomeric tau (purple). Residues displaying chemical shift perturbation upon tau binding are indicated. (B) 1H-15N TROSY-HSQC of Ydj1111-351 alone (black), and in complex with two molar equivalents of the aggregation-prone tau species (purple). These tau species were generated by addition of twofold molar excess of heparin to tau. The same amount of heparin was also added to Ydj1111-351 alone (black). Residues displaying broadening upon interaction with tau are indicated. (C) 1H-15N TROSY-HSQC of DNAJA2256-409 alone (black), and in complex with two molar equivalents of monomeric tau (purple). No changes in the spectrum are observed, indicating that DNAJA2 CTDII and dimerization domains do not interact with the monomeric tau species. (D) 1H-15N TROSY-HSQC of DNAJA2256-409 alone (black), and in complex with two molar equivalents of the aggregation-prone tau species (purple). These tau species were generated by addition of twofold molar excess of heparin to tau. The same amount of heparin was also added to DNAJA2256-409 alone (black). The presence of chemical shift perturbations confirms that the aggregation-prone tau-heparin species also bind to the CTDII in the presence of the dimerization domain. (E) 1H-15N TROSY-HSQC of DNAJB1 CTDs (residues 154–341) alone (black), and upon addition of twofold excess of monomeric tau protein (blue). No changes in chemical shift positions or intensities were detected, indicating lack of binding. (F) 1H-13C HMQC spectra of full-length DNAJB1 alone (black), and upon addition of twofold excess of monomeric tau protein (blue). No interaction is visible between the two proteins. (G) Same experiment as in (F) performed with aggregation-prone (heparin-bound) tau species. Residues displaying significant reduction in intensity upon binding to heparin-tau are indicated.
 
 We then repeated the binding experiment using aggregation-prone tau species, generated by the addition of heparin (Eschmann et al., 2017). Interestingly, this tau species, unlike the inert tau monomer, caused significant peak broadening to residues in the second substrate binding region of DNAJA2, located in CTDII (Figure 6B and Figure 6—figure supplement 1B), whereas only small changes were detected in the CTDI region (Figure 6—figure supplement 1B). Hence, the DNAJA2 substrate-binding groove in CTDI interacts predominantly with the inert, monomeric tau, while the aggregation-prone tau species preferentially binds to CTDII (Figure 6C, D). In order to verify that our binding results were not affected by the deletion of the dimerization domain in the DNAJA2(Ydj1)111-351 construct, we then repeated the binding experiments using a construct comprising only CTDII and the Ydj1 dimerization domains, termed DNAJA2(Ydj1)256-409. This DNAJA2 variant, as expected, showed no binding to monomeric tau in our NMR experiments, confirming that tau indeed binds to the CTDI region, which was lacking in this construct (Figure 6—figure supplement 1C). Addition of heparin-bound tau, however, caused significant CSPs to the spectrum of DNAJA2(Ydj1)256-409 (Figure 6—figure supplement 1D), again confirming the binding of this aggregation-prone tau species to CTDII.
 
@@ -178,11 +234,11 @@ Hence, further studies will be required to understand the full role of Hsp40-med
 
 ## Materials and methods
 
-## Construct preparation
+### Construct preparation
 
 Tau4R (residues 244–372, C322A) wt and mutants, HSPB1 (S15D, S78D, S82D, I181G, V183G), DNAJA2, and DNAJB1 (residues 154–341) were expressed in Escherichia coli BL21 (DE3) cells from pET-29b(+) vector with a N-terminal His6 tag followed by a tobacco etch virus (TEV) protease cleavage site. Tau (C322S), DNAJB1, and Ydj1 (yeast orthologue of DNAJA) constructs were expressed from the pET-SUMO vector with an N-terminal His6 purification tag and a Ulp1 cleavage site (DNAJB1 plasmid was a gift from B. Bukau, University of Heidelberg).
 
-## Protein expression
+### Protein expression
 
 Cells were grown in Luria Bertani broth (LB) to OD600 ≈ 0.8 at 37°C, and expression was induced by addition of 1 mM isopropyl-β-D-thiogalactoside (IPTG). Cells expressing HSPB1, DNAJA2, and DNAJB1 chaperone variants were allowed to proceed overnight at 25°C and cells expressing tau constructs at 18°C.
 
@@ -190,53 +246,97 @@ Isotopically labeled tau and tau4R proteins for NMR were grown in M9 H2O media s
 
 Labeled DNAJB1154-341, Ydj1111-351, and Ydj1256-409 were grown at 37°C in M9 D2O media supplemented with [2H,12C]-glucose and 15NH4Cl as the sole source of carbon and nitrogen. In the case of DNAJB1, 2-ketobutyric acid-13C4,3,3-d2 sodium salt (60 mg/L), 2-ketoisovaleric acid-13C4,d3 sodium salt (80 mg/L), and 13C-L-methionine (100 mg/L) (Cambridge Isotope Laboratories) were added 1 hr prior to induction with 1 mM IPTG, following the procedure of Tugarinov et al., 2006 to produce U-2H, 15N, 13CH3-ILVM labeled protein. Proteins were expressed at 25°C overnight.
 
-## Purification of labeled and unlabeled proteins
+### Purification of labeled and unlabeled proteins
 
 Proteins were purified on a Ni-NTA HiTrap HP column (GE Life Sciences). The purification tag was cleaved by the appropriate protease (see Construct preparation), and the cleaved protein was further separated from the uncleaved protein, the tag, and the protease on a Ni-NTA HiTrap HP column. HSPB1, DNAJA2, and DNAJB1 chaperone variants were concentrated on an Amicon Ultra-15 10K molecular weight cutoff (MWCO) filter (Millipore) and further purified on a HiLoad 16/600 Superdex 200 pg gel filtration column (GE Healthcare), equilibrated with 25 mM HEPES pH 7.0, 150 mM KCl, and 2 mM DTT. Tau constructs were concentrated on an Amicon Ultra-15 3.5K MWCO filter (Millipore) and further purified on a HiLoad 16/600 Superdex 75 pg gel filtration column (GE Healthcare) equilibrated with 25 mM HEPES pH 7.0, 300 mM KCl, and 2 mM DTT. Purity of proteins was confirmed by SDS-PAGE.
 
-## Aggregation-prevention assays
+### Aggregation-prevention assays
 
 Aggregation kinetics were measured in Synergy H1 microplate reader (BioTek) in black, flat-bottom, 96-well plates (Nunc). Tau or tau4R variants (10 μM) were pre-incubated in the presence or absence of indicated chaperones for 10 min at 37°C. All proteins in the assay were buffer exchanged into the assay buffer (50 mM HEPES pH 7.4, 50 mM KCl, and 2 mM DTT). ThT (Sigma) at a final concentration of 10 μM was added, and the aggregation was induced by the addition of 2.5 μM freshly prepared heparin salt solution (Sigma). Aggregation reactions were run at 37°C with continuous shaking (567 rpm) and monitored by ThT fluorescence (excitation = 440 nm, emission = 485 nm, bandwidth), using an area scan mode with a 3 × 3 matrix for each well. Black, flat-bottom, 96-well plates (Nunc) sealed with optical adhesive film (Applied Biosystems) were used. For data processing, baseline curves at same conditions but without heparin were subtracted from the data. Samples were run in triplicate, and the experiments were repeated at least four times with similar results.
 
-## Seeded tau aggregation reactions
+### Seeded tau aggregation reactions
 
 Tau seeds were prepared from mature tau fibers generated under similar conditions to these in the aggregation-prevention assays, except that ThT was omitted. The fibers were then sonicated using a probe sonicator (Vibra-Cell, SONICS) with an amplitude of 40%, for 30 s on and 10 s off, for a total of 7 min. The sonicated fibers were immediately added to monomeric tau, ThT, and DTT in a 96-well plate in the ratios described above and ThT fluorescence was measured as a function of time.
 
-## Dynamic light scattering (DLS)
+### Dynamic light scattering (DLS)
 
-The hydrodynamic radius of tau4R seeds was measured by DLS on a DynaPro DLS Plate Reader III (Wyatt Technology). Tau seeds (10 µM) were loaded on a 96-well black, clear-bottom plates (Nunc), and subjected to a 5 min 3000 × g centrifugation to remove air bubbles from the wells. Measurements were carried out 20 times per well before averaging, with 5 s acquisitions at 25°C. Resulting autocorrelation functions were fitted with the equation(1)g2τ=1+βe-2Dq2τwhere β is the coherence factor, D is the translational diffusion coefficient, and q is the scattering wave vector given by(2)q=4πnλ0sin⁡(θ2)where n is the solvent refractive index (n = 1.334 was used), λ0 is the wavelength used by the instrument, and θ is the scattering angle.
+The hydrodynamic radius of tau4R seeds was measured by DLS on a DynaPro DLS Plate Reader III (Wyatt Technology). Tau seeds (10 µM) were loaded on a 96-well black, clear-bottom plates (Nunc), and subjected to a 5 min 3000 × g centrifugation to remove air bubbles from the wells. Measurements were carried out 20 times per well before averaging, with 5 s acquisitions at 25°C. Resulting autocorrelation functions were fitted with the equation
 
-The Stokes radius (Rs) was calculated from the translational diffusion coefficient, D, using the Stokes–Einstein equation(3)D=kBT6πηRswhere kB is Boltzmann coefficient (1.38⋅10−23kgm2s2K), T is the temperature (298 K), and η is the dynamic viscosity of our buffer.
+$$
+g_{2}\tau=1+\betae^{-2Dq^{2}\tau}
+$$
 
-## Aggregation-prevention data fitting
+where $\beta$ is the coherence factor, D is the translational diffusion coefficient, and q is the scattering wave vector given by
 
-All aggregation kinetics were fitted with a saturation-elongation-fragmentation model (Meisl et al., 2016) using a critical nucleus size of nc=2. The differential equation system for this model is(4)P˙(t)=knm(t)nc+kmM(t)M˙(t)=2kpKEm(t)KE+m(t)P(t)
+$$
+q=\frac{4\pin}{\lambda_{0}}sin⁡(\frac{\theta}{2})
+$$
 
-Here, Pt is the number concentration of fibrils, Mt is the mass concentration of a fibril, mt is the monomer concentration, kn is the nucleation rate, km is the fragmentation rate, kp is the elongation rate, and KE is the equilibrium constant for monomer addition to an existing fibril. The effect of heparin was not included explicitly in this model and is implicitly contained in the kinetic rates. For fitting, the ThT fluorescence signal Sit of the ith time trace was converted to the mass concentration of the fibrils Mit according to(5)Mit=mmaxSitSmax∞
+where n is the solvent refractive index (n = 1.334 was used), $\lambda_{0}$ is the wavelength used by the instrument, and $\theta$ is the scattering angle.
 
-Here, mmax is the highest tau4R concentration used in the experiments and Smax∞ is the ThT signal of the long-term plateau for the time trace with the highest tau4R concentration. The resulting mass concentration Mit was then fitted by numerically solving the differential equation system Equation 4 for Mt, using the initial conditions M0=0, P0=0, and m0=mi, where mi is the initial concentration of tau4R monomers for the ith time trace. Prior to fitting, the time traces Mit were smoothed by binning data points to reduce noise and to speed up fitting. The bin size was 2–5 data points. Fitting was performed using the 'differential evolution' method (Storn and Price, 1997) in Mathematica 11.2 (Wolfram). Importantly, kp cannot be independently obtained from unseeded data. We therefore arbitrarily set kp=1 for the global fit of the unseeded data at all monomer concentrations, thus obtaining k'n=knkp and k'm=kmkp. In a second step, we determined kn, km, and kp in a global fit of a data set including aggregation seeds using(6)P˙(t)=km′kpM(t)M˙(t)=2kpKEm(t)KE+m(t)P(t)with the initial conditions M0=M0, P0=M0/L, and m0=m0=10μM. Here, M0 is the mass concentration of the seeds and L is the length of the seeds. We determined L by measuring the Stokes radius Rs=55nm of the seeds using DLS (see above). We then modeled the seeds as an ellipsoid with a long axis a (seed length) and a short axis b (fibril thickness). The friction coefficient for an ellipsoid is given by ξe=6πηa/ln⁡2a/b, which must be identical to that of a sphere with the Stokes radius Rs given by ξs=6πηRs. From the equality, the fibril length a can be determined given that the fibril thickness b is known. Based on existing cryo-EM structures of tau-fibrils (6QJH, 6QJM, 6QJP), we estimated b~10nm, which results in a~200nm. Given the spacing of tau monomers in a fibril of approximately 2 nm, we estimated a seed length of L=100 tau monomers. Error estimates of the kinetic rates were obtained by fitting two independent data sets.
+The Stokes radius (Rs) was calculated from the translational diffusion coefficient, D, using the Stokes–Einstein equation
 
-Fitting of the data in the presence of chaperones was performed for each kinetic trace individually by fixing the kinetic rates to those determined in the absence of chaperone and only allowing one rate to vary at a time. An exception was the data set for DNAJA2 in which we performed a simultaneous global fit of seeded and unseeded experimental traces (Equations 4–6) to identify the simultaneous effect of DNAJA2 on kn, kp, and km. For all fits in which only a single parameter was scanned, we used 'simulated annealing' to optimize the parameters. We would like to note that the amplitude of the aggregation kinetics was not a free-fitting parameter but was determined by the total concentration of tau4R monomers (10 μM) in the experiment. Hence, fitting of the aggregation kinetics in the presence of chaperones assumes that the presence of chaperone does not alter the ThT concentration accessible in solution to stain the fibrils.
+$$
+D=\frac{k_{B}T}{6\piηR_{s}}
+$$
 
-## NMR spectroscopy
+where kB is Boltzmann coefficient $(1.38⋅10^{−23}\frac{kgm^{2}}{s^{2}K}),$ T is the temperature (298 K), and $η$ is the dynamic viscosity of our buffer.
+
+### Aggregation-prevention data fitting
+
+All aggregation kinetics were fitted with a saturation-elongation-fragmentation model (Meisl et al., 2016) using a critical nucleus size of $n_{c}=2$. The differential equation system for this model is
+
+$$
+P˙(t)=k_{n}m(t)^{n_{c}}+k_{m}M(t)
+$$
+
+
+
+$$
+M˙(t)=2k_{p}\frac{K_{E}m(t)}{K_{E}+m(t)}P(t)
+$$
+
+Here, $Pt$ is the number concentration of fibrils, $Mt$ is the mass concentration of a fibril, $mt$ is the monomer concentration, $k_{n}$ is the nucleation rate, $k_{m}$ is the fragmentation rate, $k_{p}$ is the elongation rate, and $K_{E}$ is the equilibrium constant for monomer addition to an existing fibril. The effect of heparin was not included explicitly in this model and is implicitly contained in the kinetic rates. For fitting, the ThT fluorescence signal $S_{i}t$ of the ith time trace was converted to the mass concentration of the fibrils $M_{i}t$ according to
+
+$$
+M_{i}t=m_{max}\frac{S_{i}t}{S_{max}∞}
+$$
+
+Here, $m_{max}$ is the highest tau4R concentration used in the experiments and $S_{max}∞$ is the ThT signal of the long-term plateau for the time trace with the highest tau4R concentration. The resulting mass concentration $M_{i}t$ was then fitted by numerically solving the differential equation system Equation 4 for $Mt$, using the initial conditions $M0=0$, $P0=0$, and $m0=m_{i}$, where $m_{i}$ is the initial concentration of tau4R monomers for the ith time trace. Prior to fitting, the time traces $M_{i}t$ were smoothed by binning data points to reduce noise and to speed up fitting. The bin size was 2–5 data points. Fitting was performed using the 'differential evolution' method (Storn and Price, 1997) in Mathematica 11.2 (Wolfram). Importantly, $k_{p}$ cannot be independently obtained from unseeded data. We therefore arbitrarily set $k_{p}=1$ for the global fit of the unseeded data at all monomer concentrations, thus obtaining $k'_{n}=k_{n}k_{p}$ and $k'_{m}=k_{m}k_{p}$. In a second step, we determined $k_{n}$, $k_{m}$, and $k_{p}$ in a global fit of a data set including aggregation seeds using
+
+$$
+P˙(t)=\frac{k_{m}^{′}}{k_{p}}M(t)
+$$
+
+
+
+$$
+M˙(t)=2k_{p}\frac{K_{E}m(t)}{K_{E}+m(t)}P(t)
+$$
+
+with the initial conditions $M0=M_{0}$, $P0=M_{0}/L$, and $m0=m_{0}=10\muM$. Here, $M_{0}$ is the mass concentration of the seeds and $L$ is the length of the seeds. We determined $L$ by measuring the Stokes radius $R_{s}=55nm$ of the seeds using DLS (see above). We then modeled the seeds as an ellipsoid with a long axis $a$ (seed length) and a short axis $b$ (fibril thickness). The friction coefficient for an ellipsoid is given by $ξ_{e}=6\piηa/ln⁡2a/b$, which must be identical to that of a sphere with the Stokes radius $R_{s}$ given by $ξ_{s}=6\piηR_{s}$. From the equality, the fibril length $a$ can be determined given that the fibril thickness $b$ is known. Based on existing cryo-EM structures of tau-fibrils (6QJH, 6QJM, 6QJP), we estimated $b~10nm$, which results in $a~200nm$. Given the spacing of tau monomers in a fibril of approximately 2 nm, we estimated a seed length of $L=100$ tau monomers. Error estimates of the kinetic rates were obtained by fitting two independent data sets.
+
+Fitting of the data in the presence of chaperones was performed for each kinetic trace individually by fixing the kinetic rates to those determined in the absence of chaperone and only allowing one rate to vary at a time. An exception was the data set for DNAJA2 in which we performed a simultaneous global fit of seeded and unseeded experimental traces (Equations 4–6) to identify the simultaneous effect of DNAJA2 on $k_{n}$, $k_{p}$, and $k_{m}$. For all fits in which only a single parameter was scanned, we used 'simulated annealing' to optimize the parameters. We would like to note that the amplitude of the aggregation kinetics was not a free-fitting parameter but was determined by the total concentration of tau4R monomers (10 μM) in the experiment. Hence, fitting of the aggregation kinetics in the presence of chaperones assumes that the presence of chaperone does not alter the ThT concentration accessible in solution to stain the fibrils.
+
+### NMR spectroscopy
 
 All NMR experiments were carried out at 25°C on 14.1 T (600 MHz), 18.8T (800 MHz), or 23.5 T (1000 MHz) Bruker spectrometers equipped with triple resonance single (z) or triple (x, y, z) gradient cryoprobes. The experiments were processed with NMRPipe (Delaglio et al., 1995) and analyzed with NMRFAM-SPARKY (Goddard and Kneller, 2000) and CCPN (Vranken et al., 2005).
 
-## NMR assignment experiments
+### NMR assignment experiments
 
 Assignments for tau4R were transferred from the BMRB (entry 19253) and corroborated by HNCACB, CBCA(CO)NH, HN(CA)CO, and HNCO experiments on a 4 mM sample of [U- 15N,13C]-labeled tau4R in 50 mM HEPES pH 7.4, 50 mM KCl, 1 mM DTT, 0.03% NaN3, and 10% D2O. The assignment experiments were recorded on an 800 MHz magnet, resulting in the unambiguous assignment of 90% of non-proline residues.
 
 Tau-heparin complex assignments were obtained by recording 3D HNCA, CBCA(CO)NH, and HN(CA)CO on a 2.5 mM [U-13C,15N]-labeled tau4R sample supplemented with 2.5 mM heparin. The experiments were recorded on an 800 MHz magnet and 88% of non-proline residues were assigned.
 
-## Secondary structure propensities
+### Secondary structure propensities
 
 Secondary structure propensities for tau4R and tau4R-heparin complex were calculated from backbone C′, Cα, and Cβ, 1H, 15N chemical shifts following a procedure described in Marsh et al., 2006. Proline and cysteine residues were omitted from this calculation.
 
-## Residual dipolar couplings (RDCs)
+### Residual dipolar couplings (RDCs)
 
 Backbone amide 1DNH RDCs were measured using a 300 μM sample of tau4R, tau P301L, or tau P301S diluted in 50 mM HEPES pH 7.4 buffer with 100 mM KCl. The one-bond N-H RDCs were determined by using inphase-antiphase (IPAP)-HSQC experiments (Ottiger et al., 1998), and 1DNH values were calculated as the difference between splittings measured in the isotropic phase and in a sample in which tau4R, tau4R P301S, or tau4R P301L had been aligned in 5 mg/mL Pf1 bacteriophage (Asla) or in 4.5% (vov/vol) C12E5/n-hexanol alignment medium (Sigma). The experiments were recorded on a 1000 MHz Bruker spectrometer and RDCs ranged from +20 to −10 Hz. The heparin-bound tau sample (1:1 tau:heparin molar ratio) was only aligned in 16 mg/mL bacteriophage pf1 and the measured RDCs ranged from +9 to −7 Hz.
 
-## NMR tau-chaperone binding experiments
+### NMR tau-chaperone binding experiments
 
 Tau interaction with chaperones was assayed for 200 µM samples of [U-15N]-labeled tau, tau4R, or tau4R P301S and P301L mutants. Tau variants were measured alone or upon addition of heparin (200 µM) and/or chaperones (100 or 400 µM; as indicated in spectrum) in 50 mM HEPES pH 7.0, 50 mM KCl, 1 mM DTT, 0.03% NaN3, and 10% D2O. 1H-15N HSQC-TROSY spectra were acquired for each sample, and peak intensities were determined by quantifying peak volumes. Regions of tau4R with signal loss greater than one standard deviation from the average intensity ratio were determined to be the regions of binding.
 
@@ -246,21 +346,27 @@ The binding of DNAJB1 and DNAJA2 chaperones to tau4R was measured by acquiring 1
 
 The interaction of full-length DNAJB1 to tau4R was determined by acquiring 1H-13C HMQC methyl-TROSY spectra (Tugarinov et al., 2003) for 100 μM [2H, 13CH3]-ILVM-labeled DNAJB1 alone or with 200 μM 2H-tau4R (or tau-heparin complex) in 50 mM HEPES pH 7.4, 100 mM KCl, 2 mM DTT and 0.03% NaN3 in 100% D2O. ILVM assignments for full-length DNAJB1 were taken from previous work in our lab (Faust et al., 2020). Binding regions were determined by intensity ratio as described above.
 
-## NMR chemical shift perturbations
+### NMR chemical shift perturbations
 
 The interaction of tau4R with heparin was monitored by 2D 1H–15N HSQC experiments. Heparin (40–400 μM) was titrated into 200 μM of 15N-labeled tau4R in 50 mM HEPES pH 7.0, 50 mM KCl, 1 mM DTT, 0.03% NaN3, and 10% D2O and chemical shifts were recorded.
 
-CSPs were calculated from the relation(7)Δδ=ΔδH2+(ΔδN5)2where ΔδH is the amide proton chemical shift difference, and ΔδN is the 15N backbone chemical shift difference. CSPs greater than one standard deviation from the mean were considered significant.
+CSPs were calculated from the relation
 
-## Negative stain electron microscopy
+$$
+Δ\delta=\sqrt{Δ\delta_{H}^{}2}+(\frac{Δ\delta_{N}}{5})^{2}
+$$
+
+where ΔδH is the amide proton chemical shift difference, and ΔδN is the 15N backbone chemical shift difference. CSPs greater than one standard deviation from the mean were considered significant.
+
+### Negative stain electron microscopy
 
 Tau fibrils or tau fibrils-chaperone mixtures (10 µl) were deposited on glow-discharged carbon-coated copper EM grids (Electron Microscopy Sciences), washed with three consecutive drops of 1% w/v Uranyl-formate, and air-dried. Imaging was performed on an FEI T12 Spirit transmission electron microscope at 120 kV and a magnification of 9300–30,000 times, equipped with a Gatan OneView CMOS 4K × 4K CCD camera.
 
-## Chaperone-fibril co-sedimentation assay
+### Chaperone-fibril co-sedimentation assay
 
 Preformed tau4R fibers (10 μM) were incubated with HSPB1, DNAJB1, and DNAJA2 chaperones (10 μM) for 20 min at 37°C in 50 mM HEPES pH 7.4 and 50 mM KCl. Tau fibers were separated from the unbound chaperones by centrifugation at 16,900 g for 30 min. The pellets were washed, resuspended in 50 μL of buffer with 20% SDS, and sonicated for 10 min. Samples were incubated for 5 min at 95°C and run on a 4–20% gradient SDS-PAGE gel (GenScript).
 
-## Fluorescence anisotropy measurements
+### Fluorescence anisotropy measurements
 
 Steady-state equilibrium binding of DNAJA2, DNAJB1 chaperones to preformed tau fibers was measured by fluorescence polarization using 100 nM of fluorescently tagged chaperones (DNAJB1 G194C-AF488 or DNAJA2-AF488).
 

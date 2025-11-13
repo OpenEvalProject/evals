@@ -22,4 +22,4 @@
 
 ## Abstract
 
-Though the last decade has seen accelerated advances in techniques and technologies to perturb neuronal circuitry in the brain, we are still poorly equipped to adequately dissect endogenous peptide release in vivo . To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.
+Though the last decade has seen accelerated advances in techniques and technologies to perturb neuronal circuitry in the brain, we are still poorly equipped to adequately dissect endogenous peptide release in vivo. To this end we developed a system that combines in vivo optogenetics with microdialysis and a highly sensitive mass spectrometry-based assay to measure opioid peptide release in freely moving rodents.

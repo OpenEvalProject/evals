@@ -49,19 +49,39 @@ We have previously shown that predictive computational models of drug-induced ap
 
 ## Results
 
-## Continuous versus pulsed cisplatin treatment
+### Continuous versus pulsed cisplatin treatment
 
 In order to directly compare the response of lung adenocarcinoma cells to the continuous presence of cisplatin, or a pulse of cisplatin that mimics in vivo pharmacokinetics (2 hr, 5 μg/mL) (Figure 1—figure supplement 1A), we monitored the growth and apoptosis of the innately resistant A549 lung adenocarcinoma cell line (Marini et al., 2018) by both live cell imaging (Figure 1—figure supplement 1B) and a cell viability assay (Figure 1—figure supplement 1C), under both conditions. This analysis demonstrated that while continuous exposure to cisplatin resulted in decreased cell number and increased apoptosis over 72 hr, a pulse of cisplatin only reduced the rate of cell proliferation and did not induce apoptosis.
 
 To further examine the differences between these two models, we used multiplexed, bead-based protein analysis to investigate the DNA damage, apoptotic and signalling response for key pathway components previously implicated in the response to continuous cisplatin exposure (Stewart, 2007; Marini et al., 2018; Supplementary file 1, Figure 1—figure supplement 1D). As might be expected, the continuous exposure model resulted in a significantly elevated and sustained DNA damage response when compared to the pulse model, particularly for the phosphorylation of Chk2 (Ser345), p53 (Ser15 and Ser46), pH2A.X (Ser139 - γH2A.X) and expression of p21 and MDM2 (Figure 1—figure supplement 2). This heightened DNA damage response during the continuous exposure to cisplatin was also reflected in the increased activation of Caspase 3, which was completely absent for the pulse model. Furthermore, while p38 and ERK activation were significantly increased in cells continuously exposed to cisplatin, the expression of MCL-1 and detection of MCL-1/Bak dimers only significantly increased in cells treated with a pulse of cisplatin. This finding demonstrates that not only does the continuous exposure model result in a DNA damage and apoptotic response that is incongruent with that observed following a pulse of cisplatin, the dynamics of key signalling pathways are fundamentally different between these two treatment models. Taken together, this data demonstrates that previous mechanisms of platinum resistance established using a continuous exposure model should be reconsidered in the light of these new findings regarding the response to physiological levels of drug exposure.
 
-## Response to cisplatin is not associated with either TP53 status or drug-efflux
+### Response to cisplatin is not associated with either TP53 status or drug-efflux
 
 To investigate potential mechanisms of platinum resistance using a model consistent with the physiological pharmacokinetics of platinum therapy (Figure 1A), we applied this cisplatin pulse model to a panel of six lung adenocarcinoma cell lines with distinct TP53 mutation backgrounds (two wildtype lines, two mutant TP53 lines and two TP53 null) and measured the apoptotic response at 72 hr (Figure 1B). Based upon this model we observed a range of sensitivity to cisplatin, from the most resistant A549 line (~3% apoptosis) to the most responsive NCI-H1299 line (~32% apoptosis). However, these cell lines could not be stratified simply according to their TP53 mutation status, or other frequently observed genetic alterations (Supplementary file 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the cisplatin pulse model (5 µg/mL, 2 hr) and continuous pulse model (5 μg/mL, 72 hr). (B) Apoptosis measured by propidium iodide staining for the sub-G1 population, performed 72 hr following a cisplatin pulse across a panel of lung adenocarcinoma cell lines, as indicated (n = 3, mean ± SD). Statistical significance was determined by t-test (***p<0.001, **p<0.01, *p<0.05). (C) Representative images of anti-cisplatin antibody staining in A549 cells following a cisplatin pulse, and quantification of nuclear cisplatin-DNA adducts across the cell line panel (n ≥ 100, mean ± SD). Nuclear staining intensity was normalized to background, cytoplasmic staining within each cell line. Statistical significance was determined by one-way ANOVA (***p<0.001, **p<0.01). All treatment conditions (red) are significantly different from control (blue), p<0.001. (D) Multiplexed analysis of DNA damage, apoptosis and signalling pathways following a cisplatin pulse across a panel of lung adenocarcinoma cell lines, as indicated (n = 3, mean).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the cisplatin pulse model (5 µg/mL, 2 hr) and continuous pulse model (5 μg/mL, 72 hr). (B) Live-cell imaging of A549 cells treated either continuously, or with a cisplatin pulse. Apoptotic cells were identified by uptake of propidium iodide (mean ± SD). (C) MTS Proliferation assay performed on A549 cells treated either continuously, or with a cisplatin pulse (mean ± SD, n = 6). (D) Multiplexed analysis of key DNA damage, apoptosis and signalling proteins in A549 cells treated either continuously, or with a cisplatin pulse (n = 3, mean).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Raw data for the timecourse, multiplex analysis of DNA damage response proteins following continuous cisplatin treatment (grey) or a cisplatin pulse (red) (5 μg/mL, 2 hr) in A549 cells. Statistical significance was determined by Student’s t-test (n = 3, mean ± SD. ***p<0.001, **p<0.01, *p<0.05).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images of anti-cisplatin antibody staining across the cell line panel following a cisplatin pulse (5 μg/mL, 2 hr). Scale bar: 40 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Raw data for the timecourse, multiplex analysis of DNA damage response proteins following a cisplatin pulse (5 μg/mL, 2 hr) across a panel of cell lines, as indicated (n = 3, mean ± SD).
+
 As the action of drug-efflux pumps is another commonly proposed mechanism of resistance to platinum therapy (Hoffmann and Lambert, 2014), we performed fluorescence microscopy with an antibody towards cisplatin-induced DNA adducts at multiple time-points following a 2 hr cisplatin pulse (Figure 1C). This analysis demonstrated that within this model, all six cell lines displayed significant nuclear localised cisplatin-DNA adducts following a 2 hr pulse (Figure 1C, Figure 1—figure supplement 3), suggesting that drug efflux is not associated with variations in the apoptotic response to a pulse of cisplatin in these lines. Furthermore, these cisplatin-DNA adducts progressively resolved over a 72 hr period in all cell lines (Figure 1C), confirming that pathways responsible for facilitating the removal of cisplatin adducts are also functional across this panel.
 
-## Multi-dimensional analysis of cisplatin-induced signalling dynamics
+### Multi-dimensional analysis of cisplatin-induced signalling dynamics
 
 To gain an understanding of the wider signalling networks associated with resistance to platinum therapy, we utilised multiplexed, magnetic bead based assays to profile the signalling and DNA damage response at multiple time points following a 2 hr pulse of cisplatin, across all six cell lines (Figure 1D). For this analysis, we tracked the dynamics of 47 different protein analytes (Supplementary file 3) over a 72 hr period, focusing on elements of signalling network structures that we recently implicated in platinum chemoresistance (Marini et al., 2018), including the MAPK, PI3K/mTOR, NF-κB and TGFβ pathways, as well as a number of key apoptotic mediators and DNA damage response proteins (Figure 1D).
 
@@ -69,9 +89,25 @@ From this dataset, a clear correlation can be seen between the TP53 mutation sta
 
 As we had already determined that TP53 status alone was not sufficient to explain resistance to cisplatin (Figure 1B), we further analysed the whole dataset by performing a principal component analysis (PCA) (Figure 2). This form of dimensionality reduction can be used to identify correlative relationships between variables within a large dataset, and here we have used it to create a visual representation of the association between key signalling nodes and the response to cisplatin across the entire cell line panel. Using this multi-dimensional analysis, we were able to capture ~70% of variance in the dataset within the first four principal components (Figure 2—figure supplement 1A). Unsurprisingly, plotting the first two principal components (PC1 and PC2) against each other (Figure 2A) resulted in separation of the cell lines primarily according to their TP53 status. As might be expected, within PC1 and PC2 the TP53 wild-type A549 and SW-1573 lines associated with higher p21 and MDM2 expression, while the TP53 mutant lines separated from the TP53 null lines mostly on the basis of higher p53 expression and phosphorylation levels (Figure 2A,B,C). However, plotting the third and fourth principal components (PC3 and PC4, Figure 2D,E) created a clear delineation between the three most resistant cell lines (A549, NCI-H358 and NCI-H1573), which cluster towards the left hand side of PC3 (x-axis), and the three most sensitive lines (SW-1573, NCI-1975 and NCI-H1299) which move progressively along PC3 over the 72 hr timeframe.
 
-## Validation of model-based observations
+![Figure 2.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig2-v1.jpg)
+
+**Figure 2.:** (A) Visualisation of principal component 1 (PC1) against component 2 (PC2) for the principal component analysis of cisplatin induced signalling across the cell line panel. (B) Distribution of the analytes according to their weighting within PC1 and PC2. (C) Western blotting for selected analytes across the cell panel prior to, and 48 hr post a cisplatin pulse. (D) Visualisation of principal component 3 (PC3) against component 4 (PC4) for the principal component analysis of cisplatin induced signalling across the cell line panel. (E) Distribution of the analytes according to their weighting within PC3 and PC4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The variance captured within each principal component of the principal component analysis (PCA), presented in Figure 2. (B) Live-cell imaging of apoptosis across the cell lines indicated on the Incucyte platform using a fluorescent caspase substrate (1 μM) (n = 3, mean ± SD). (C) Apoptosis measured by propidium iodide staining for the sub-G1 population in SW1573 cells, performed 72 hr following a cisplatin pulse (5 μg/mL, 2 hr) with the addition of a JNK inhibitor (JNK VIII, 20 µM) as indicated (n = 3, mean ± SD).
+
+### Validation of model-based observations
 
 As platinum chemotherapies work by forming covalent DNA adducts, which distort the DNA helix and block replication, the progressive accumulation of single stranded and double stranded breaks is thought to induce apoptosis (Jamieson and Lippard, 1999). This is in line with the movement of cisplatin sensitive cell lines along PC3 (x-axis) towards higher levels of γH2A.X (H2A.XS139), cleaved caspase 3 and a stress associated MAPK signalling axis (pATF2, pJNK, pc-Jun) (Figure 2D,E). The association between this signalling state and increased sensitivity to cisplatin can also be clearly observed by overlaying an orthogonal readout of the apoptotic response onto this PCA plot (Figure 3A). This real-time apoptosis data was generated using live-cell imaging with a fluorescent caspase substrate as an indicator of cell death across the cell line panel for 72 hr following the cisplatin pulse treatment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig3-v1.jpg)
+
+**Figure 3.:** (A) An overlay of real-time imaging of apoptosis following a cisplatin pulse, performed on the Incucyte platform using a fluorescent caspase substrate (1 µM), on top of the PCA plot of component 3 against component 4. (B) Schematic of the cisplatin pulse model, with the addition of small molecule inhibitors, and outline of sample collection for apoptosis assays and western blotting. (C,D) Apoptosis measured by propidium iodide staining for the sub-G1 population in A549 and NCI-H358 cells, performed 72 hr following a cisplatin pulse with the addition of small molecule inhibitors (1 µM) as indicated (n = 3, mean ± SD). Statistical significance was determined by t-test (***p<0.001, **p<0.01). (E) Western blotting on lysates from NCI-H358 and NCI-H1299 cells following a cisplatin pulse, with the addition of dactolisib (1 µM), as indicated. (F) Schematic of the cisplatin pulse model, with the addition of siRNA pre-treatment, and outline of sample collection for apoptosis assays and western blotting. (G) Western blotting on lysates from NCI-H358 cells, treated with P70S6K or control siRNA, as indicated, prior to and following a cisplatin pulse (n = 3, mean ± SD). Statistical significance was determined by one-way ANOVA (**p<0.01, *p<0.05). (H) Apoptosis measured by propidium iodide staining for the sub-G1 population in NCI-H358 cells, treated with P70S6K, control siRNA or dactolisib, as indicated, performed 72 hr following a cisplatin pulse (n = 3, mean ± SD). Statistical significance was determined by one-way ANOVA (***p<0.001, *p<0.05). (I) Tumour growth in nude mice bearing NCI-H358 xenografts with continuous treatment of vehicle control or dactolisib (45 mg/kg) prior to, and following a single dose of carboplatin (60 mg/kg) (n ≥ 4, mean ± SEM). Statistical significance was determined by one-way ANOVA at each time point (***p<0.001, **p<0.01, *p<0.05). (J) Quantification of necrosis in NCI-H358 xenografts following the treatment described in (I) (n ≥ 4, mean ± SD). Statistical significance was determined by one-way ANOVA *p<0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blotting on lysates from NCI-H358 cells, treated with P70S6K or control siRNA, as indicated, prior to and following a cisplatin pulse (5 μg/mL, 2 hr). Quantification was performed on three individual replicates (n = 3, mean ± SD). Statistical significance was determined by one-way ANOVA (**p<0.01, *p<0.05). (B) Western blotting on lysates from NCI-H1299 cells, treated with P70S6K or control siRNA, as indicated, prior to and following a cisplatin pulse (5 μg/mL, 2 hr). Quantification was performed on three individual replicates (n = 3, mean ± SD). Statistical significance was determined by one-way ANOVA (**p<0.01, *p<0.05). (C) Apoptosis measured by propidium iodide staining for the sub-G1 population in NCI-H358 cells, treated with P70S6K or control siRNA, as indicated, performed 72 hr following a cisplatin pulse (n = 3, mean ± SD). Statistical significance was determined by one-way ANOVA (***p<0.001, *p<0.05).
 
 Using this approach, we now created a visual representation that both reflects the variance within the original dataset and demonstrates the key signalling nodes that are associated with differing degrees of platinum-induced apoptosis. While increasing levels of apoptosis are observed over time in the three sensitive cell lines (SW-1573, NCI-1975 and NCI-H1299), the three resistant cell lines display significantly lower levels of apoptosis (Figure 2—figure supplement 1B) and do not move along PC3 towards the region of DNA damage and apoptosis. Instead the NCI-H358 and NCI-1573 lines remain towards the left hand side of PC3, in a region characterised by higher phosphorylation of the mTOR pathway component P70S6K (Thr389), the MAPK components MEK1 (Ser217/221) and P90RSK (S380), NF-κB (S536) and IκBα (Ser32/36) (Figure 2D,E). The resistant A549 line also remains shifted towards the left of PC3, although also moves up PC4 towards a region with higher expression of TGFβRII, cleaved caspase 9, pAkt (Ser473) and pSTAT3 (Ser727) (Figure 2D,E). The association of elevated pMEK (Ser217/221), pNF-κB (S536), pSTAT3 (Ser727) and pP70S6K (Thr389) within these resistant cell lines was also further confirmed by western blotting of independent samples (Figure 2C).
 
@@ -79,7 +115,7 @@ The clear separation of resistant and sensitive cell lines within this multi-dim
 
 Taking the opposite approach, elevated levels of JNK pathway activity (pJNK, pc-Jun) were also observed following cisplatin treatment within the SW-1573 line (Figure 2C,D,E). However, the inclusion of a JNK inhibitor (JNK inhibitor VIII) did not prevent cisplatin induced apoptosis in this cell line (Figure 2—figure supplement 1C), suggesting that JNK activity was not promoting apoptosis in this context.
 
-## P70S6K promotes platinum resistance in lung adenocarcinoma
+### P70S6K promotes platinum resistance in lung adenocarcinoma
 
 Comparing the relative expression levels of phosphorylated P70S6K across our stratified panel of cell lines, higher expression was observed in the resistant NCI-H358 and NCI-H1573 lines (Figure 2C). This expression pattern was also mirrored by the levels of total P70S6K (Figure 2C), which seems to be primarily driving the observed levels of P70S6K phosphorylation. Interestingly, the resistant A549 line did not have elevated P70S6K expression or phosphorylation, although as reflected in the PCA plot (Figure 2E) this cell line did have high expression of the P70S6K substrate, Ribosomal Protein S6, leading to a level of phosphorylation equivalent to that observed in the resistant NCI-H358 line (Figure 2C).
 
@@ -97,9 +133,23 @@ These findings demonstrate that elevated P70S6K activity can specifically mediat
 
 Further analysis with KM plotter (Győrffy et al., 2013) demonstrated that the elevated mRNA expression of both isoforms was also significantly associated with poor overall survival of lung adenocarcinoma patients (Figure 4B). We therefore investigated the association with survival and response to chemotherapy by performing IHC for total P70S6K in a cohort of 52 lung adenocarcinoma patients that all received a neoadjuvant chemotherapy regimen containing platinum-based chemotherapy (Figure 4C, Supplementary file 4). In this cohort, high expression of P70S6K was significantly associated with poor overall survival (Figure 4D), while there was a non-significant trend towards higher P70S6K expression in patients with progressive disease (Figure 4E) and a later disease stage (Figure 4F). In eight patients with matched diagnosis and relapse samples, the levels of P70S6K expression were also significantly increased upon relapse (Figure 4G), further highlighting the functional role of P70S6K in the cellular response to platinum therapy.
 
-## P70S6K promotes cell cycle arrest in response to cisplatin
+### P70S6K promotes cell cycle arrest in response to cisplatin
 
 As P70S6K has a known role in cell cycle progression (Lane et al., 1993), we performed live cell imaging of the FUCCI two-colour sensor of cell cycle progression (Sakaue-Sawano et al., 2008) across the resistant A549, NCI-H1573 and NCI-H358 cell lines. This approach allowed us to track the cell cycle progression and fate of individual cells for 72 hr following treatment with a 2 hr pulse of cisplatin (Figure 5A). In this assay, treatment with a single pulse of cisplatin caused several notable cell cycle responses. First, A549 (TP53 wildtype) and NCI-H358 (TP53 null) cells were significantly more likely to remain arrested in G1, both before (G1 arrest before mitosis; ABM) and after undergoing mitosis (G1 arrest after mitosis; AAM) (Figure 5B,C). In contrast, NCI-H1573 cells did not show any significant increase in G1 transit time, as may be expected from a TP53 mutant cell line.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig5-v1.jpg)
+
+**Figure 5.:** (A) Live-cell imaging of the FUCCI biosensor proteins mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120), stably expressed by the A549, NCI-H1573 and NCI-H358 cell lines. Images were taken every 20 min for 72 hr under control conditions, or following a cisplatin pulse (5 µg/mL, 2 hr) in the presence or absence of dactolisib (1 µM). (B) Quantification of the length of each cell cycle phase under each treatment condition (n = 17–175, mean ± SD). Statistical significance was determined by one-way ANOVA (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (C) Quantification of fate of each cell; including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM) and death after mitosis (DAM). (D) Survival curves indicating the proportion of viable cells over time under each treatment condition.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Western blot confirming specific knockdown of p53 with two different siRNAs. (B) Live-cell imaging of the FUCCI biosensor proteins mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120), stably expressed by the A549 cell line following 48 hr treatment with control or p53 targeting siRNA, as indicated. Images were taken every 20 min for 72 hr under control conditions, or following a cisplatin pulse (5 μg/mL, 2 hr). (C) Quantification of the length of each cell cycle phase under each treatment condition. Statistical significance was determined by one-way ANOVA (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (D) Quantification of fate of each cell; including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM) and death after mitosis (DAM). (E) Survival curves indicating the proportion of viable cells over time under each treatment condition.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Western blot confirming specific knockdown of P70S6K with two different siRNAs. (B) Live-cell imaging of the FUCCI biosensor proteins mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120), stably expressed by the NCI-H358 cell line following 48 hr treatment with control or P70S6K targeting siRNA, as indicated. Images were taken every 20 min for 72 hr under control conditions, or following a cisplatin pulse (5 μg/mL, 2 hr) in the presence or absence of dactolisib (1 μM). (C) Quantification of the length of each cell cycle phase under each treatment condition (n = 17–175, mean ± SD). Statistical significance was determined by one-way ANOVA (****p<0.0001, ***p<0.001, **p<0.01, *p<0.05). (D) Quantification of fate of each cell; including G1 arrest before mitosis (G1 ABM), G1 arrest after mitosis (G1 AAM), death before mitosis (DBM) and death after mitosis (DAM). (E) Survival curves indicating the proportion of viable cells over time under each treatment condition.
 
 For all cell lines, cisplatin pulsing resulted in a significant increase in S/G2 transit time (Figure 5B,C). Notably, the NCI-H1573 (TP53 mutant) and NCI-H358 (TP53 null) cells delayed for more time in G2 (G2 arrest; mean 2443 min and 2555 min respectively) compared to A549 cells (mean 1426 min), after which the mutant and null cells often entered a prolonged aberrant mitosis (Figure 5—figure supplement 1), resulting in a small increase in cells dying during mitosis or in the following G1/S phase (Figure 5C, death after mitosis; DAM). In contrast, A549 cells rarely entered into mitosis, instead many of these S/G2 arrested cells turned from green (S/G2) back to red (G1) without undergoing mitosis (G2-exit) (Figure 5—figure supplement 1). A similar G2-exit, senescence state has been reported to be dependent on p21 (Gire and Dulic, 2015) and likely provides TP53 wildtype cells protection from death by preventing progression through an aberrant mitosis. Therefore, to confirm the specific role of p53 in this context, this assay was repeated with an siRNA-mediated knockdown of p53 in A549 cells (Figure 5—figure supplement 2). In line with this hypothesis, this orthogonal approach revealed a significant increase in G2-arrest in the p53 knockdown cells, along with a decrease in occurrence of G2-exit, effectively pheno-copying the observed difference between the A549 wildtype and NCI-H358 p53 null cell lines (Figure 5C).
 
@@ -109,13 +159,13 @@ In summary, combination therapy with dactolisib sensitised actively cycling cell
 
 To further confirm the specific role of P70S6K in this cell cycle phenotype, this assay was repeated along with siRNA mediated P70S6K knockdown in the resistant NCI-H358 cell line (Figure 5—figure supplement 3). This approach demonstrated that specific ablation of P70S6K in this model resulted in a non-significant trend towards a shortened G2-arrest with both P70S6K siRNAs, and a greatly increased cell death both before (DBM) or after mitosis (DAM). While the non-significant decrease in G2-arrest observed upon siRNA-mediated knockdown of P70S6K may have been limited by potential heterogeneity in the level of knockdown achieved, the increase in cell death further suggests that dactolisib mediated inhibition of P70S6K is responsible for the sensitisation of lung adenocarcinoma cells to cisplatin treatment.
 
-## Response to dactolisib is dependent upon TP53 status
+### Response to dactolisib is dependent upon TP53 status
 
 A notable observation arising from this cell cycle analysis was the ability of dactolisib to increase apoptosis by preventing an unexpected cell cycle arrest in the TP53 null NCI-H358 cell line. Interestingly, this association between cell cycle arrest and cisplatin resistance can also be observed from the original analysis of signalling dynamics (Figure 1D, Figure 1—figure supplement 4). While both the NCI-H1299 and NCI-H358 cell lines are TP53 null, there was an increased expression of p21 following cisplatin treatment in the resistant NCI-H358 line, but not the sensitive NCI-H1299 line. Importantly, the increased p21 expression by NCI-H358 cells was also observed by western blotting of independent samples and was efficiently inhibited by both treatment with dactolisib (Figure 6A,B) and the specific knockdown of P70S6K with siRNA (Figure 6C). Taken together, this data suggests that P70S6K activity is necessary for promoting p21 expression in order to maintain cell cycle arrest following cisplatin treatment. However, in the absence of p53, we observed that this may potentially be mediated by the related transcription factor p63, which is elevated in the NCI-H358 line following treatment with cisplatin, and also inhibited by the addition of dactolisib (Figure 6A,B) or treatment with P70S6K siRNA (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53367/elife-53367-fig6-v1.jpg)
 
-**Figure 6.:** TP53 mutation status.(A) Western blotting on lysates from NCI-H358 and NCI-H1299 cells following a cisplatin pulse, with the addition of dactolisib (1 µM), as indicated. (B) Quantification of effects of dactolisib upon cisplatin induced p63 and p21 expression (n = 3, mean ± SD). (C) Western blotting on lysates from NCI-H358 cells, treated with P70S6K or control siRNA, as indicated, prior to and following a cisplatin pulse (n = 3, mean ± SD). (D) Apoptosis measured by propidium iodide staining for the sub-G1 population performed 72 hr following a cisplatin pulse with the addition of dactolisib (1 µM) as indicated (n = 3, mean ± SD). (E) Western blotting on lysates from A549 and NCI-H1573 cells, 48 hr following a cisplatin pulse, with the addition of dactolisib (1 µM), as indicated (n = 3, mean ± SD). (F) Western blotting across a second panel of lung adenocarcinoma cell lines. (G) Correlation between P70S6K phosphorylation and apoptosis, as measured by propidium iodide staining for the sub-G1 population, performed 72 hr following a cisplatin pulse (n = 3, mean ± SD). For all panels the statistical significance was determined by one-way ANOVA (***p<0.001, **p<0.01, *p<0.05).
+**Figure 6.:** (A) Western blotting on lysates from NCI-H358 and NCI-H1299 cells following a cisplatin pulse, with the addition of dactolisib (1 µM), as indicated. (B) Quantification of effects of dactolisib upon cisplatin induced p63 and p21 expression (n = 3, mean ± SD). (C) Western blotting on lysates from NCI-H358 cells, treated with P70S6K or control siRNA, as indicated, prior to and following a cisplatin pulse (n = 3, mean ± SD). (D) Apoptosis measured by propidium iodide staining for the sub-G1 population performed 72 hr following a cisplatin pulse with the addition of dactolisib (1 µM) as indicated (n = 3, mean ± SD). (E) Western blotting on lysates from A549 and NCI-H1573 cells, 48 hr following a cisplatin pulse, with the addition of dactolisib (1 µM), as indicated (n = 3, mean ± SD). (F) Western blotting across a second panel of lung adenocarcinoma cell lines. (G) Correlation between P70S6K phosphorylation and apoptosis, as measured by propidium iodide staining for the sub-G1 population, performed 72 hr following a cisplatin pulse (n = 3, mean ± SD). For all panels the statistical significance was determined by one-way ANOVA (***p<0.001, **p<0.01, *p<0.05).
 
 Given the potential role for p21 in mediating resistance to cisplatin in the NCI-H358 line, we investigated whether sensitisation by dactolisib would be generalizable across the original panel of 6 lung adenocarcinoma cell lines with differing TP53 status. In accordance with this hypothesis, and in line with the FUCCI single-cell imaging (Figure 5A), both the TP53 wildtype cell lines were significantly sensitised to cisplatin by the addition dactolisib, as was the resistant TP53 null line, NCI-H358 (Figures 2D, H and 6D). The sensitive TP53 null line, NCI-H1299, was not further sensitised and appeared to already be at the upper limit of apoptosis within this model. Also, in line with the FUCCI analysis, dactolisib was not able to increase cisplatin-induced apoptosis in the TP53 mutant line NCI-H1573, whilst it significantly antagonised cisplatin-induced apoptosis in the TP53 mutant NCI-H1975 line.
 
@@ -137,46 +187,490 @@ The combination of cisplatin and dactolisib has also previously been proposed fo
 
 ## Materials and methods
 
-## Antibodies, Plasmids, and Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185, RRID:CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H358</td>
+      <td>ATCC</td>
+      <td>CRL-5807, RRID:CVCL_1559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1299</td>
+      <td>ATCC</td>
+      <td>CRL-5803, RRID:CVCL_0060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1573</td>
+      <td>ATCC</td>
+      <td>CRL-5877, RRID:CVCL_1478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1975</td>
+      <td>ATCC</td>
+      <td>CRL-5908, RRID:CVCL_1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SW1573</td>
+      <td>ATCC</td>
+      <td>CRL-2170, RRID:CVCL_1720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A427</td>
+      <td>ATCC</td>
+      <td>HTB-53, RRID:CVCL_1055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H23</td>
+      <td>ATCC</td>
+      <td>CRL-H5800, RRID:CVCL_1547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H292</td>
+      <td>ATCC</td>
+      <td>CRL-1848, RRID:CVCL_0455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1944</td>
+      <td>ATCC</td>
+      <td>CRL-5907, RRID:CVCL_1508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H2009</td>
+      <td>ATCC</td>
+      <td>CRL-5911, RRID:CVCL_1514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H2122</td>
+      <td>ATCC</td>
+      <td>CRL-5985, RRID:CVCL_1531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cisplatin modified DNA antibody (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab103261, RRID:AB_10715243</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-gamma H2A.X (phospho S139) antibody (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab26350, RRID:AB_470861</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-STAT3 (Ser729) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9134, RRID:AB_331589</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Akt (Ser473) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9271, RRID:AB_329825</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-NF-κB p65 (Ser536) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3033, RRID:AB_331284</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9101, RRID:AB_331646</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ATF-2 (Thr71) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#5112, RRID:AB_560873</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p70 S6 Kinase (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2708, RRID:AB_390722</td>
+      <td>WB (1:1000), IHC (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p70 S6 Kinase (Thr389) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9205, RRID:AB_330945</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21 Waf1/Cip1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2947, RRID:AB_823586</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved Caspase-3 (Asp175) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9661, RRID:AB_2341188</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved Caspase-7 (Asp198) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9491, RRID:AB_2068144</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p53 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-126, RRID:AB_628082</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p63 (mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-691, RRID:AB_10002770</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin (mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>AC-15, RRID:AB_476692</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mVenus-hGeminin(1/110) (plasmid)</td>
+      <td>Sakaue-Sawano et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mCherry-hCdt1(30/120) (plasmid)</td>
+      <td>Sakaue-Sawano et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NVP-BEZ235</td>
+      <td>Selleck Chem</td>
+      <td>S1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-2206 2HCl</td>
+      <td>Selleck Chem</td>
+      <td>S1078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S3I-201</td>
+      <td>Selleck Chem</td>
+      <td>S1155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126-EtOH</td>
+      <td>Selleck Chem</td>
+      <td>S1102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SC75741</td>
+      <td>Selleck Chem</td>
+      <td>S7273</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNaseA</td>
+      <td>Life Technologies</td>
+      <td>AM2270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTiter96 AQueous Non-Radioactive Cell Proliferation Assay</td>
+      <td>Promega</td>
+      <td>G5421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cisplatin</td>
+      <td>Hospira Australia</td>
+      <td>88S035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA Damage/Genotoxicity Magnetic Bead Panel (7-plex)</td>
+      <td>Merck Millipore</td>
+      <td>48-621MAG</td>
+      <td>MAGPIX assay, detects ATR (total), Chk1 (Ser345), Chk2 (Thr68), H2A.X (Ser139), MDM2 (total), p21 (total), p53 (Ser15)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TGFβ Signaling Pathway Magnetic Bead Kit (6-plex)</td>
+      <td>Merck Millipore</td>
+      <td>48-614MAG</td>
+      <td>MAGPIX assay, detects Akt (Ser473), ERK (Thr185/Tyr187), Smad2 (Ser465/Ser467), Smad3 (Ser423/Ser425), Smad4 (total), TGFβRII (total)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Plex Pro Cell Signaling Akt Panel (8-plex)</td>
+      <td>Bio-Rad</td>
+      <td>LQ00006JK0K0RR</td>
+      <td>MAGPIX assay, detects Akt (Ser473), BAD (Ser136), GSK-3α/β (Ser21/Ser9), IRS-1 (Ser636/Ser639), mTOR (Ser2248), p70 S6 kinase (Thr389), PTEN (Ser380), S6 ribosomal protein (Ser235/Ser236)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Plex Pro Cell Signalling MAPK Panel (9-plex)</td>
+      <td>Bio-Rad</td>
+      <td>LQ00000S6KL81S</td>
+      <td>MAGPIX assay, detects ATF-2 (Thr71), ERK (Thr202/Tyr204, Thr185/Tyr187), HSP27 (Ser78), JNK (Thr183/Tyr185), MEK1 (Ser217/Ser221), p38 MAPK (Thr180/Tyr182), p53 (Ser15), p90 RSK (Ser380), Stat3 (Ser727)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Plex Pro RBM Apoptosis Panel 2</td>
+      <td>Bio-Rad</td>
+      <td>171WAR2CK</td>
+      <td>MAGPIX assay, detects Bad, Bax/Bcl-2 dimer, Bcl-xL, Bim, Mcl-1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Plex Pro RBM Apoptosis Panel 3</td>
+      <td>Bio-Rad</td>
+      <td>171WAR3CK</td>
+      <td>MAGPIX assay, detects active caspase-3, Bcl-xL/Bak dimer, Mcl-1/Bak dimer, Survivin</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Total p53 magnetic bead</td>
+      <td>Merck Millipore</td>
+      <td>MP46662MAG</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cleaved PARP Magnetic Bead MAPmate</td>
+      <td>Merck Millipore</td>
+      <td>46-656MAG</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phospho-NF-κB p65 (Ser536) Set</td>
+      <td>Bio-Rad</td>
+      <td>171V50013M</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phospho-IκB-α (Ser32/Ser36)</td>
+      <td>Bio-Rad</td>
+      <td>171V50010M</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phospho-c-Jun (Ser63) Set</td>
+      <td>Bio-Rad</td>
+      <td>171V50003M</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phospho-Stat1 (Tyr701) Set</td>
+      <td>Bio-Rad</td>
+      <td>171V50020M</td>
+      <td>Individual MAGPIX bead kit</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MATLAB and Statistics Toolbox Release 2019a</td>
+      <td>The Mathworks, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucView 488 Caspase-3 Enzyme substrate</td>
+      <td>Biotium</td>
+      <td>#10402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel Basement Membrane</td>
+      <td>Bio-Strategy</td>
+      <td>BDAA354230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>carboplatin</td>
+      <td>Abcam</td>
+      <td>ab120828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki-67 (rabbit monoclonal)</td>
+      <td>ThermoFisher scientific</td>
+      <td>RM-9106, RRID:AB_2335745</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>jetPRIME DNA and siRNA transfection reagent</td>
+      <td>Polyplus transfection</td>
+      <td>114–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SignalSilence p70/85 S6 Kinase siRNA I</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SignalSilence p70/85 S6 Kinase siRNA II</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SignalSilence p53 siRNA I</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>SignalSilence p53 siRNA II</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>SignalSilence Control siRNA (Unconjugated)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#6568</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies, Plasmids, and Reagents
 
 The cisplatin modified DNA (ab103261) and γH2A.X (ab26350) antibodies were from Abcam (Cambridge, USA). The phospho-STAT3 S727 (#9134), phospho-Akt S473 (#9271), phospho-NF-κB S536 (#3033), pERK T202/Y204 (#9101), pATF2 T71 (#5112), (P70S6K (#2708), phospho-P70S6K T389 (#9205), p21 (#2947), cleaved caspase 3 (#9661) and cleaved caspase 7 (#9491) antibodies were from Cell Signaling (MA, United States). The γH2A.X (S139) antibody (AB26350) was from Abcam (MA, USA). The p53 antibody (sc-126) was from Santa Cruz Biotechnology (TX, USA). The p63 antibody (NB100-691) was from Novus Biologicals (CO, USA). The actin monoclonal antibody (AC-15) was from Sigma-Aldrich (MO, United States). The SignalSilence p70/85 S6 Kinase siRNA was from Cell Signaling (MA, United States). The plasmids for FUCCI live cell imaging, mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120), were a kind gift from Dr Atsushi Miyawaki (Riken, Japan). Dactolisib (NZP-BEZ235), MK2206, S3I-201, UO126 and SC75741 were all from Selleck Chem (MA, USA).
 
-## Cell lines
+### Cell lines
 
 All lung adenocarcinoma cell lines have been previously described (Marini et al., 2018). The lines were cultured in Advanced RPMI (12633012, Gibco) containing 1% FCS and 1% GlutaMAX (35050–061, Gibco) under standard tissue culture conditions (5% CO2, 20% O2). All cell lines were authenticated by short tandem repeat polymorphism, single-nucleotide polymorphism, and fingerprint analyses, passaged for less than 6 months. All cell lines were confirmed as negative for mycoplasma contamination using the MycoAlert luminescence detection kit (Lonza, Switzerland).
 
 Stable cell lines expressing the FUCCI biosensor were generated as previously described (Sakaue-Sawano et al., 2008) using mVenus-hGeminin(1/110) and mCherry-hCdt1(30/120) probes. Briefly, cells were first transduced with mVenus-hGeminin(1/110) lentiviral particles. Cells were FACS sorted based upon Venus fluorescence, and the resulting cell population transduced again with mCherry-hCdt1(30/120) lentiviral particles. mCherry positive cells were FACS sorted, resulting in a double positive population used for live cell imaging.
 
-## Flow cytometry
+### Flow cytometry
 
 Samples for flow cytometry were fixed in −20°C ethanol overnight, and then resuspended in a DNA staining solution containing 10 mg/mL RNaseA and 1 mg/mL propidium iodide for 30 min before analysis. Flow cytometry was performed using BD FACS Canto II system.
 
-## Confocal microscopy
+### Confocal microscopy
 
 For the visualisation of cisplatin-DNA adducts following treatment with a pulse of cisplatin (5 μg/mL, 2 hr), cells were grown on Histogrip (Life Technologies) coated glass coverslips. Prior to fixation, cells were treated with 1% Triton X-100 for 1 min, fixed with ice-cold 100% Methanol and stored overnight at −20°C. The cells were then permeabilized with 0.5% Triton X-100 for 10 min, washed twice with PBS and incubated for 30 min with 2M HCl to denature the DNA. Cells were washed again and incubated in 1% H2O2 to quench the endogenous peroxidases, before blocking for 30 min and incubated with primary antibody (1:500) overnight at 4 C in blocking solution. The following day, cells were incubated with Secondary-Biotinylated Ab at RT, before incubating them with ABC solution (Vectastain elite ABC HRP kit, Vector Laboratories). Cells were later incubated with TSA solution (TSA plus Cyanine 3 System, PerkinElmer). DNA was stained with H33342 and images collected using a Leica DMI5500 (40x magnification). Images were quantified using Fiji Software. Briefly, color images were split into separate channels. H33342 channel was used to identify the nucleus and generate a mask that was placed on top of the CisPt-DNA channel to quantify the signal coming from the nuclear area. Cytoplasmic area was manually identified in each cell and signal quantified. Background signal was obtained and subtracted from the nuclear and cytoplasm signal. From this data, a nuclear/cytoplasmic ratio was obtained for between 100 and 200 cells at each time point.
 
-## MAGPIX multiplex assays
+### MAGPIX multiplex assays
 
 Multiplex analysis was performed using a Bio-Plex MAGPIX system (#171015044) and Bio-Plex Pro-Wash Station (Biorad). All cell lysates were prepared using standard cell lysis buffer (50 mM Tris HCl pH7.4, 150 mM NaCl, 1 mM EDTA, 1% (v/v) TritonX-100) supplemented with protease and phosphatase inhibitors. Lysates were analysed on all kits, according to manufacturer’s instructions. Data was generated using Bio-Plex Manager MP and analysed on the Bio-Plex Manager 6.1 software.
 
 Lysates were analysed using the Milliplex map DNA Damage/Genotoxicity Magnetic Bead Panel (7-plex), Milliplex map Early Apoptosis Magnetic Bead (7-plex), Milliplex map TGFβ Signalling Pathway Magnetic Bead kit (6-plex), Bio-Plex Pro Cell Signalling Akt Panel (8-plex), Bio-Plex Pro Cell Signalling MAPK Panel (9-plex), Bio-Plex Pro RBM Apoptosis Panel two and Bio-Plex Pro RBM Apoptosis Panel 3. Individual beads were also used to analyse NF-κB (Ser536), IκBα (Ser32/36), c-Jun (Ser63), total P53 and cleaved PARP (Biorad). The data was normalized to the median value at the 0 hr time point for each analyte and a log transformation was conducted on the resulting dataset. The principal component analysis was performed using MATLAB and Statistics Toolbox Release 2019a (The Mathworks, Inc, Natick, Massachusetts, United States of America).
 
-## Live-cell imaging of apoptosis
+### Live-cell imaging of apoptosis
 
 Live-cell imaging of apoptosis was performed using an Essen Bioscience IncuCyte ZOOM Live-Cell Analysis System and a Thermo Fisher Scientific HERAcell 240i CO2 Incubator. Cells were seeded into Corning Costar TC-treated 96-Well Plates and imaged over a 72 hr period at 2 hr intervals over 4 fields of view per well. Caspase activation was visualised using 1 µM NucView 488 Caspase-3 Enzyme Substrate (Biotium). Cell viability was quantified using propidium iodide (1 μg/mL). The generated images were analysed using IncuCyte ZOOM Software Version 2016B. Accompanying cytotoxicity assays were performed using the CellTiter 96 aqueous non-radioactive cell proliferation assay, according to the manufacturer’s instructions (Promega).
 
-## Western blotting
+### Western blotting
 
 Lysates for western blotting were prepared using standard lysis buffer (50 mM Tris HCl pH7.4, 150 mM NaCl, 1 mM EDTA, 1% (v/v) Triton X-100) containing protease inhibitor (p8340, Sigma) and 0.2 mM sodium orthovanadate. The NuPAGE SDS PAGE Gel System and NuPAGE Bis Tris Precast Gels (4–12% and 12%) (Life Technologies) were used to perform gel electrophoresis. Western Lightning PLUS Enhanced Chemiluminescent Substrate (PerkinElmer) was used for imaging western blots on the Vilber Lourmat Fusion chemiluminescent imaging system. Quantitative western blotting was performed using multistrip western blotting, as performed previously (Kennedy et al., 2019).
 
-## NCI-H358 xenograft model
+### NCI-H358 xenograft model
 
 NCI-H358 cells (2 × 106) resuspended in 100 μL PBS:Matrigel were injected subcutaneously into the flanks of nude mice. Tumour growth was assessed twice weekly by calliper measurement and mice were randomized to treatment arms when tumours reached 150 mm3 (using the formula: width2 x length x 0.5). Carboplatin (60 mg/kg) was delivered by a single tail-vein injection. Dactolisib was prepared in 10% DMSO:90% PEG300 and administered twice-weekly at 45 mg/kg by oral gavage. All in vivo experiments, procedures and endpoints were approved by the Garvan Institute of Medical Research Animal Ethics Committee.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed on formalin fixed paraffin embedded sections using the Leica BOND RX (Leica, Wetzlar, Germany). Slides were first dewaxed and rehydrated, followed by heat induced antigen retrieval performed with Epitope Retrieval Solution 1 BOND (Leica, Wetzlar, Germany). Primary antibodies were diluted 1:600 (P70S6K) and 1:500 (Ki67) in Leica antibody diluent and incubated for 60 min on slides. Antibody staining was completed using the Bond Polymer Refine IHC protocol and reagents (Leica, Wetzlar, Germany). Slides were counterstained on the Leica Autostainer XL (Leica, Wetzlar, Germany). Leica CV5030 Glass Coverslipper (Leica, Wetzlar, Germany) and brightfield images were taken on the Aperio CS2 Slide Scanner (Leica, Wetzlar, Germany). Quantification of Ki67 staining was performed on three fields of view for each tumour section, and quantified using the particle analysis function of Image J (v1.49).
 
-## FUCCI live-cell imaging
+### FUCCI live-cell imaging
 
 For FUCCI live cell imaging, cells were seeded on 12 well plates and imaged using a Leica DMI6000 using a 20x NA 0.4 objective. Images were taken every 20 min for 72 hr. Before adding any drug (cisplatin, dactolisib or both) an image was taken in order to annotate the cell cycle phase before commencing treatment. Individual cells were tracked manually, with the colour of the nucleus annotated at each time point (Red = G1; Yellow = G1/S, Green = S/G2), the cells were also scored for nuclear envelope breakdown (NEBD) and early signs of anaphase. Mitotic length was calculated by the time period from commencement of NEBD to anaphase. Interphase length was calculated from anaphase to the next daughter cell NEBD. Only one daughter was followed and annotated. Tracking graphs were generated using Prism 7.

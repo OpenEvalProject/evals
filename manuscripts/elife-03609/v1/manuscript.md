@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.03609.001 The ability to recognize small organic molecules and chemical modifications of host molecules is an essential capability of the adaptive immune system, which until now was thought to be mediated mainly by B cell antigen receptors. Here we report that small molecules, such as cyanine 3 (Cy3), a synthetic fluorescent molecule, and 4-hydroxy-3-nitrophenylacetyl (NP), one of the most noted haptens, are γδ T cell antigens, recognized directly by specific γδ TCRs. Immunization with Cy3 conjugates induces a rapid Cy3-specific γδ T cell IL-17 response. These results expand the role of small molecules and chemical modifications in immunity and underscore the role of γδ T cells as unique adaptive immune cells that couple B cell-like antigen recognition capability with T cell effector function. DOI: http://dx.doi.org/10.7554/eLife.03609.001
+The ability to recognize small organic molecules and chemical modifications of host molecules is an essential capability of the adaptive immune system, which until now was thought to be mediated mainly by B cell antigen receptors. Here we report that small molecules, such as cyanine 3 (Cy3), a synthetic fluorescent molecule, and 4-hydroxy-3-nitrophenylacetyl (NP), one of the most noted haptens, are γδ T cell antigens, recognized directly by specific γδ TCRs. Immunization with Cy3 conjugates induces a rapid Cy3-specific γδ T cell IL-17 response. These results expand the role of small molecules and chemical modifications in immunity and underscore the role of γδ T cells as unique adaptive immune cells that couple B cell-like antigen recognition capability with T cell effector function.
 
 ## Introduction
 
@@ -35,43 +35,147 @@ Here, we report that Cyanine 3 (Cy3), a synthetic fluorescent molecule, is a γ�
 
 ## Results
 
-## Cyanine 3 (Cy3) is a γδ T cell antigen
+### Cyanine 3 (Cy3) is a γδ T cell antigen
 
-To test whether γδ T cells can recognize small molecules, we chose Cyanine 3 (Cy3) for analysis. Cy3 is a synthetic dye with two modified indole groups joined by a polymethine chain (
+To test whether γδ T cells can recognize small molecules, we chose Cyanine 3 (Cy3) for analysis. Cy3 is a synthetic dye with two modified indole groups joined by a polymethine chain (Figure 1A). It is highly fluorescent and can be used for FACS analysis directly.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03609/elife-03609-fig1-v1.jpg)
 
-**Figure 1.:** (A) Chemical structure of Cyanine 3 (Cy3). FACS analysis of (B) Cy3 tetramer (Cy34-SAv) staining of splenic γδ T cells in the presence of 10-fold molar excess of moth cytochrome c peptide coupled SAv (MCC4-SAv); (C) NX6/58α-β- cells stained with Cy3-MCC-SAv or PE-MCC-SAv; (D) NX6/58α-β- cells stained with Cy3-MCC-SAv in the absence (left), or presence of anti-Cy3 Fab (right). (E) IL-2 production by NX6/58α-β- cells activated by the indicated amount of plate-bound Cy3-OVA, OVA, PE, anti-CD3 for 16 hr. (F) The saturating binding curves of Cy34-SAv and un-conjugated SAv to a soluble form of NX6 as determined by surface plasmon resonance. No detectable binding was observed for 1 mM applications of PE or BSA (not shown). (G) Kinetics of Cy34SAv binding to NX6/58α-β- cells. t1/2 was determined using real time flow cytometry in the presence of anti-Cy3 antibody Fab fragments (left). KD was determined from Scatchard analysis (right). All results are representative of at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.03609.003
+**Figure 1.:** (A) Chemical structure of Cyanine 3 (Cy3). FACS analysis of (B) Cy3 tetramer (Cy34-SAv) staining of splenic γδ T cells in the presence of 10-fold molar excess of moth cytochrome c peptide coupled SAv (MCC4-SAv); (C) NX6/58α-β- cells stained with Cy3-MCC-SAv or PE-MCC-SAv; (D) NX6/58α-β- cells stained with Cy3-MCC-SAv in the absence (left), or presence of anti-Cy3 Fab (right). (E) IL-2 production by NX6/58α-β- cells activated by the indicated amount of plate-bound Cy3-OVA, OVA, PE, anti-CD3 for 16 hr. (F) The saturating binding curves of Cy34-SAv and un-conjugated SAv to a soluble form of NX6 as determined by surface plasmon resonance. No detectable binding was observed for 1 mM applications of PE or BSA (not shown). (G) Kinetics of Cy34SAv binding to NX6/58α-β- cells. t1/2 was determined using real time flow cytometry in the presence of anti-Cy3 antibody Fab fragments (left). KD was determined from Scatchard analysis (right). All results are representative of at least three independent experiments.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03609/elife-03609-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Flow cytometry analysis of NX6/58α-β− cells stained with Cy3- OVA, FITC-OVA and APC-OVA.DOI: http://dx.doi.org/10.7554/eLife.03609.004
+**Figure 1—figure supplement 1.:** Flow cytometry analysis of NX6/58α-β− cells stained with Cy3- OVA, FITC-OVA and APC-OVA.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03609/elife-03609-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** 4SAv on red blood cells.DOI: http://dx.doi.org/10.7554/eLife.03609.005
+Cy3 tetramer (Cy34SAv) (a recombinant mutant of streptavidin (Ramachandiran et al., 2007) labeled with four Cy3 molecules at the C-terminal cysteine in each of the four identical subunits) stained ∼0.05–0.2% of normal splenic γδ T cells, but not G8/Rag2−/− γδ TCR transgenic cells (specific for the nonclassical MHC class I T10 and T22) (Bluestone et al., 1988; Schild et al., 1994; Figure 1B). We then identified Cy3-specific γδ TCRs on a single cell level by sorting these cells and sequencing their TCR genes. 58α-β- cells expressing Cy3-specific γδ TCRs bound Cy3-ovalbumin (Cy3-OVA), Cy3-bovine serum albumin (Cy3-BSA), Cy3-MCC-streptavidin (moth cytochrome C (MCC)-derived peptide, Cy3-labeled at the N-terminus, biotinylated at the C-terminus, and tetramerized with streptavidin), but not FITC or APC labeled OVA, nor PE-MCC peptide/streptavidin (Figure 1C, Figure 1—figure supplement 1; Table 1). Moreover, Cy3-MCC-streptavidin staining of a Cy3-specific γδ TCR NX6/58α-β- was inhibited by the inclusion of Fab fragments of an anti-Cy3 antibody (clone A-6; Santa Cruz Biotechnology) (Figure 1D). In addition, NX6/58α-β- cells were activated by plate-bound Cy3-OVA, but not unmodified OVA (Figure 1E). Binding of the soluble form of a Cy3-specific γδ TCR (NX6) to Cy34SAv can be demonstrated by surface plasmon resonance (Biacore) with an apparent KD of 78.2 nM (Figure 1F). We also examined the affinity of Cy34SAv binding to NX6 expressed on 58α-β- cells. Scatchard analysis showed an apparent nanomolar KD (1.8 nM) with a half-life of ∼26 min (Figure 1G). Taken together, these results indicate that Cy3 is an antigen of γδ T cells, recognized directly by specific γδ TCRs.
 
-Cy3 tetramer (Cy34SAv) (a recombinant mutant of streptavidin (Ramachandiran et al., 2007) labeled with four Cy3 molecules at the C-terminal cysteine in each of the four identical subunits) stained ∼0.05–0.2% of normal splenic γδ T cells, but not G8/Rag2−/− γδ TCR transgenic cells (specific for the nonclassical MHC class I T10 and T22) (Bluestone et al., 1988; Schild et al., 1994; Figure 1B). We then identified Cy3-specific γδ TCRs on a single cell level by sorting these cells and sequencing their TCR genes. 58α-β- cells expressing Cy3-specific γδ TCRs bound Cy3-ovalbumin (Cy3-OVA), Cy3-bovine serum albumin (Cy3-BSA), Cy3-MCC-streptavidin (moth cytochrome C (MCC)-derived peptide, Cy3-labeled at the N-terminus, biotinylated at the C-terminus, and tetramerized with streptavidin), but not FITC or APC labeled OVA, nor PE-MCC peptide/streptavidin (Figure 1C, Figure 1—figure supplement 1; Table 1). Moreover, Cy3-MCC-streptavidin staining of a Cy3-specific γδ TCR NX6/58α-β- was inhibited by the inclusion of Fab fragments of an anti-Cy3 antibody (clone A-6; Santa Cruz Biotechnology) (Figure 1D). In addition, NX6/58α-β- cells were activated by plate-bound Cy3-OVA, but not unmodified OVA (Figure 1E). Binding of the soluble form of a Cy3-specific γδ TCR (NX6) to Cy34SAv can be demonstrated by surface plasmon resonance (Biacore) with an apparent KD of 78.2 nM (Figure 1F). We also examined the affinity of Cy34SAv binding to NX6 expressed on 58α-β- cells. Scatchard analysis showed an apparent nanomolar KD (1.8 nM) with a half-life of ∼26 min (Figure 1G). Taken together, these results indicate that Cy3 is an antigen of γδ T cells, recognized directly by specific γδ TCRs.10.7554/eLife.03609.006Table 1.TCR sequences of Cy3 and NP-specific γδ TCRsDOI: http://dx.doi.org/10.7554/eLife.03609.006VδND1ND2NJδVγNJγCy3NX6Vδ8C A A SAT D KVγ1C A V WS RS G T S W V KC5Vδ6AC A L W E LGG G I RA SD KVγ1C A V WT RG T S W V KNP1G9Vδ4C A L M E RRG YR R D TR AD KVγ4C S Y G SYS S G F H K1E3Vδ6BC A L S E LG GG GS AT D KVγ1C A V WK K TG T S W V K1B2Vδ4C A L M E RVGL YR R D TS L AT D KVγ1C A VFS G T S W V KEach pair of γ and δ chain sequences were identified from a single Cy3 or NP-specific γδ T cell derived from mouse splenocytes and verified by their ability to confer NP- or Cy3-specific binding to 58α-β- cells expressing the TCR.
+**Table 1.**
+ TCR sequences of Cy3 and NP-specific γδ TCRs
 
-## γδ T cells mount a hapten-specific response
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Vδ</th>
+      <th>N</th>
+      <th>D1</th>
+      <th>N</th>
+      <th>D2</th>
+      <th>N</th>
+      <th>Jδ</th>
+      <th></th>
+      <th>Vγ</th>
+      <th>N</th>
+      <th>Jγ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Cy3</td>
+      <td>NX6</td>
+      <td>Vδ8</td>
+      <td>C A A S</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A</td>
+      <td>T D K</td>
+      <td>Vγ1</td>
+      <td>C A V W</td>
+      <td>S R</td>
+      <td>S G T S W V K</td>
+    </tr>
+    <tr>
+      <td>C5</td>
+      <td>Vδ6A</td>
+      <td>C A L W E L</td>
+      <td>G</td>
+      <td></td>
+      <td></td>
+      <td>G G I R</td>
+      <td>A S</td>
+      <td>D K</td>
+      <td>Vγ1</td>
+      <td>C A V W</td>
+      <td>T R</td>
+      <td>G T S W V K</td>
+    </tr>
+    <tr>
+      <td rowspan="3">NP</td>
+      <td>1G9</td>
+      <td>Vδ4</td>
+      <td>C A L M E R</td>
+      <td>R</td>
+      <td></td>
+      <td>G Y</td>
+      <td>R R D T</td>
+      <td>R A</td>
+      <td>D K</td>
+      <td>Vγ4</td>
+      <td>C S Y G S</td>
+      <td>Y</td>
+      <td>S S G F H K</td>
+    </tr>
+    <tr>
+      <td>1E3</td>
+      <td>Vδ6B</td>
+      <td>C A L S E L</td>
+      <td>G G</td>
+      <td></td>
+      <td></td>
+      <td>G G</td>
+      <td>S A</td>
+      <td>T D K</td>
+      <td>Vγ1</td>
+      <td>C A V W</td>
+      <td>K K T</td>
+      <td>G T S W V K</td>
+    </tr>
+    <tr>
+      <td>1B2</td>
+      <td>Vδ4</td>
+      <td>C A L M E R</td>
+      <td>V</td>
+      <td>G</td>
+      <td>L Y</td>
+      <td>R R D T</td>
+      <td>S L A</td>
+      <td>T D K</td>
+      <td>Vγ1</td>
+      <td>C A V</td>
+      <td>F</td>
+      <td>S G T S W V K</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each pair of γ and δ chain sequences were identified from a single Cy3 or NP-specific γδ T cell derived from mouse splenocytes and verified by their ability to confer NP- or Cy3-specific binding to 58α-β- cells expressing the TCR._
+
+### γδ T cells mount a hapten-specific response
 
 To determine whether γδ T cells can mount a hapten-specific response, we immunized mice subcutaneously with Cy3–chicken gamma globulin (Cy3-CGG) in aluminum hydroxide (alum) and analyzed Cy3-specific γδ T cells in the draining lymph nodes with a Cy3-OVA staining reagent. For comparison, we also analyzed Cy3-specific γδ T cells in mice immunized with CGG/alum. Alum was used because it is a non-antigenic adjuvant (Eisenbarth et al., 2008), and we chose subcutaneous immunization because it focuses the immune response to the draining lymph nodes.
 
-We found that prior to immunization, ∼80% of Cy3-specific γδ T cells in the lymph nodes were CD44
+We found that prior to immunization, ∼80% of Cy3-specific γδ T cells in the lymph nodes were CD44lo, a phenotype typical of naïve T cells. Within 24 hr after immunization, Cy3-specific γδ T cells up-regulated CD44 in Cy3-CGG-immunized mice, but not in CGG-immunized mice (Figure 2A). BioMark analysis showed that Cy3-specific γδ T cells express the mRNA coding for RORγt, IL-17A and IL-17F 60 hr after immunization (Figure 2B). Consistent with this observation, analysis of Cy3-specific γδ T cell responses in IL-17F reporter mice (Il-17fThy1.1/Thy1.1) (Lee et al., 2009) and staining showed that 60 hr after Cy3-CGG immunization, activated Cy3-specific γδ T cells expressed the Thy1.1 reporter or IL-17 protein (Figure 2C). In addition, we found that activated Cy3-specific γδ T cells expressed the receptors for IL-1 and IL-23 (Figure 2B), a characteristic similar to our analysis of activated PE-specific γδ T cells in an immune response (Zeng et al., 2012). The expression of inflammatory cytokine receptors allows antigen-activated γδ T cells to integrate signals from antigen receptors and cytokine receptors to mount an enhanced and sustained response (Zeng et al., 2012).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03609/elife-03609-fig2-v1.jpg)
 
-**Figure 2.:** (A) CD44 expression on Cy3-OVA+ (red) and Cy3-OVA− γδ T cells in the draining lymph nodes of mice immunized with Cy3-CGG-alum or CGG-alum 24 hr prior. (B) BioMark analysis of CD62LloCD44hi Cy3+ and CD62LhiCD44lo Cy3− γδ T cells isolated from the draining lymph nodes of C57BL/6 mice immunized with Cy3-CGG 60 hr prior (5 cells/sample). The heatmap, where rows are individual genes and columns are individual samples, indicates the expression or non-expression of a gene/sample pair (relative to the β2m expression). Upper panel shows genes expressing higher (p < 0.001) in Cy3+ cells than that in Cy3− cells. Middle panel shows non-varying genes. Bottom panel shows genes expressing lower (p < 0.001) in Cy3+ cells than that in Cy3− cells. (C) Thy1.1 expression on γδ T cells from IL-17fThy1.1/Thy1.1 mice immunized with Cy3-CGG-alum 60 hr prior, representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.03609.007
+**Figure 2.:** (A) CD44 expression on Cy3-OVA+ (red) and Cy3-OVA− γδ T cells in the draining lymph nodes of mice immunized with Cy3-CGG-alum or CGG-alum 24 hr prior. (B) BioMark analysis of CD62LloCD44hi Cy3+ and CD62LhiCD44lo Cy3− γδ T cells isolated from the draining lymph nodes of C57BL/6 mice immunized with Cy3-CGG 60 hr prior (5 cells/sample). The heatmap, where rows are individual genes and columns are individual samples, indicates the expression or non-expression of a gene/sample pair (relative to the β2m expression). Upper panel shows genes expressing higher (p < 0.001) in Cy3+ cells than that in Cy3− cells. Middle panel shows non-varying genes. Bottom panel shows genes expressing lower (p < 0.001) in Cy3+ cells than that in Cy3− cells. (C) Thy1.1 expression on γδ T cells from IL-17fThy1.1/Thy1.1 mice immunized with Cy3-CGG-alum 60 hr prior, representative of three independent experiments.
 
 Taken together, the observations that Cy3-specific γδ T cells can be activated and produce IL-17 upon Cy3-CGG, but not CGG, immunization indicates that γδ T cells, like B cells, are capable of mounting specific responses to small molecules.
 
-## 4-hydroxy-3-nitrophenyl acetyl (NP) is a γδ T cell antigen
+### 4-hydroxy-3-nitrophenyl acetyl (NP) is a γδ T cell antigen
 
-To test the generality of the observation that γδ T cells can recognize small molecules, we chose 4-hydroxy-3-nitrophenyl acetyl (NP) for analysis. NP is one of the most commonly studied hapten molecules in investigations of antibody responses (
+To test the generality of the observation that γδ T cells can recognize small molecules, we chose 4-hydroxy-3-nitrophenyl acetyl (NP) for analysis. NP is one of the most commonly studied hapten molecules in investigations of antibody responses (Jack et al., 1977; Jacob et al., 1991; McHeyzer-Williams and McHeyzer-Williams, 2005), and NP is structurally unrelated to Cy3 (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03609/elife-03609-fig3-v1.jpg)
 
-**Figure 3.:** (A) Chemical structure of 4-hydroxy-3-nitrophenyl acetyl (NP). Flow cytometry analysis of (B) NP67-PE staining of γδ T cells from C57BL/6 or G8/Rag2 mouse splenocytes and PE staining of γδ T cells from B6 splenocytes; (−/−C) staining of 58α-β- cells expressing an NP-specific γδ TCR, 1G9, with NP43-CGG-Cy5 or CGG-Cy5, showing staining in relation to γδ TCR expression (left) or as a histogram (right); (D) staining of 58α-β- cells expressing an NP-specific γδ TCR, 1E3, with NP43-CGG-Cy5, NP26-BSA-Cy5, or BSA-Cy5 (left) and NP67-PE alone, NP67-PE with a 20-fold molar excess of anti-NP Fab, or PE (right). (E) IL-2 production by 1E3/58α-β- cells activated by the indicated amount of plate-bound NP25-KLH, KLH (light gray bars), or 0.1 μg/ml anti-CD3. (F) Sensorgram and steady state analysis of NP43-CGG (0–7 μM) binding to soluble 1G9 TCR measured by surface plasmon resonance. Apparent KD was determined by steady state analysis of SPR measurements (circles). Equal concentrations of un-modified CGG were tested (squares), as well as NP43-CGG with a PE-specific γδ TCR, MA2 (triangles).DOI: http://dx.doi.org/10.7554/eLife.03609.008
+**Figure 3.:** (A) Chemical structure of 4-hydroxy-3-nitrophenyl acetyl (NP). Flow cytometry analysis of (B) NP67-PE staining of γδ T cells from C57BL/6 or G8/Rag2−/− mouse splenocytes and PE staining of γδ T cells from B6 splenocytes; (C) staining of 58α-β- cells expressing an NP-specific γδ TCR, 1G9, with NP43-CGG-Cy5 or CGG-Cy5, showing staining in relation to γδ TCR expression (left) or as a histogram (right); (D) staining of 58α-β- cells expressing an NP-specific γδ TCR, 1E3, with NP43-CGG-Cy5, NP26-BSA-Cy5, or BSA-Cy5 (left) and NP67-PE alone, NP67-PE with a 20-fold molar excess of anti-NP Fab, or PE (right). (E) IL-2 production by 1E3/58α-β- cells activated by the indicated amount of plate-bound NP25-KLH, KLH (light gray bars), or 0.1 μg/ml anti-CD3. (F) Sensorgram and steady state analysis of NP43-CGG (0–7 μM) binding to soluble 1G9 TCR measured by surface plasmon resonance. Apparent KD was determined by steady state analysis of SPR measurements (circles). Equal concentrations of un-modified CGG were tested (squares), as well as NP43-CGG with a PE-specific γδ TCR, MA2 (triangles).
 
 NP conjugated to a fluorescent protein, phycoerythrin (PE), is routinely used to identify NP-specific B cells in FACS analysis. We found that NP-PE stained ∼0.14% of splenic γδ T cells of normal mice (left panel), but not G8/Rag2−/− γδ TCR transgenic cells (middle panel). Consistent with the observation that PE is a γδ T cell antigen (Zeng et al., 2012), we found ∼0.03% of splenic γδ T cells stained with PE under the same staining conditions (right panel). After accounting for background staining and for PE staining, we estimated that ∼0.1% of total γδ T cells could be NP-specific (Figure 3B).
 
@@ -95,19 +199,19 @@ Although diversity in antigen receptor specificities is the hallmark of the adap
 
 ## Materials and methods
 
-## Reagents, mice, and immunization
+### Reagents, mice, and immunization
 
 Cy3 labeling of biotinylated moth cytochrome c (MCC) peptide (residues 88–103), ovalbumin (OVA) (Sigma, St. Louis, MO), BSA (Sigma), CGG (EMD Millipore, Billerica, MA), and streptavidin (SAv) was carried out with Cy3 maleimide and amine-reactive labeling kits (GE Healthcare, Little Chalfont, UK). NP (4-hydroxy 3-nitrophenylacetyl)-phycoerythrin (PE) was prepared using NP-O succinymidyl ester (NP-OSu) (Biosearch Technologies, Petaluma, CA). NP-chicken gamma globulin (NP-CGG) and NP-bovine serum albumin (NP-BSA) (Biosearch Technologies) were fluorescently labeled with Cyanine 5 (Cy5) on amine groups (Cy5 Mono-Reactive Dye, GE Healthcare).
 
 C57BL/6 mice were purchased from Jackson Laboratories and housed in the Stanford Animal Facility for at least one week before use. IL-17fThy1.1/Thy1.1 mice and G8/Rag2−/− TCR transgenic mice were bred and housed in the pathogen-free Stanford Animal Facility. All experiments were performed in accordance with the Institutional Biosafety Committee and the Institutional Animal Care and Use Committee. 200 μg each of Cy3-CGG and CGG in aluminum hydroxide (Imject Alum; Thermo Scientific, Waltham, MA) per mouse and subcutaneous immunization were used in all studies.
 
-## Antibodies and FACS analysis
+### Antibodies and FACS analysis
 
 Antibodies were purchased from either eBioscience or BD Biosciences unless otherwise stated. All analyses were performed on a BD LSR II flow cytometer. γδ T cells were enriched from mouse splenocytes by positive selection as described (Jensen et al., 2008). For NP experiments, staining of enriched γδ T cells was performed using 15 μg/ml NP43-CGG-Cy5 or 0.02 μg/ml NP67-PE or PE, along with PE or APC conjugated anti-TCRδ (GL-3), APC-Cy7 and Pacific Blue-labeled antibodies to αβ TCR (H57-597), B220 (RA2-6B2), F4/80 (BM8), Gr-1 (RB6-8C5), and CD11b (M1/70), and Aqua Amine live/dead stain (Invitrogen Molecular Probes, Eugene, OR). APC-Cy7, Pacific Blue, and Aqua positive cells were excluded from analysis. Anti-NP antibody (clone H33L γ; G. Kelsoe) Fab fragments were prepared using the Pierce Fab Preparation kit. For Cy3 experiments, enriched γδ T cells were stained with Cy3-conjugated protein (0.5 μM) on ice for 1 hr, along with APC conjugated GL-3, Aqua Amine, FITC conjugated antibodies to αβ TCR, B220, CD11b, CD11c (N418), Gr-1, and F4/80. FITC and Aqua-positive cells were excluded from the analysis.
 
 For the analysis of CD44 expression, enriched γδ T cells were stained with FITC-conjugated antibody to CD44 (IM7), APC conjugated GL-3, and Cy3-OVA. For the analysis of Thy1.1 expression on cells isolated from IL-17fThy1.1/Thy1.1 reporter mice, enriched γδ T cells were stained with FITC conjugated antibody to Thy1.1 (OX-7; Biolegend), Pacific Blue conjugated antibody to CD62L (MEL-14), APC conjugated GL-3, and Cy3-OVA. Both analyses included the addition of Aqua Amine and APC-Cy7 labeled antibodies to αβ TCR, B220, CD11b, CD11c, Gr-1, and F4/80, with Aqua and APC-Cy7-positive cells excluded from analysis.
 
-## Identification of antigen-specific γδ TCRs, in vitro stimulation assays and ligand binding to TCR expressed on cell surface
+### Identification of antigen-specific γδ TCRs, in vitro stimulation assays and ligand binding to TCR expressed on cell surface
 
 TCRs from Cy3- or NP-specific γδ T cells were identified at a single cell level and full length γ and δ TCR chain sequences were cloned and expressed in the 58α-β- cell line as described (Shin et al., 2005; Zeng et al., 2012). 58α-β- cells expressing γδ TCRs were stimulated with plate-bound NP- or Cy3-conjugates, the corresponding unmodified protein, or anti-CD3. The supernatant was collected and assayed for IL-2 production as described (Zeng et al., 2012).
 
@@ -115,13 +219,13 @@ Measurement of the kinetics of antigen binding to cell surface-expressed γδ TC
 
 Scatchard analysis of Cy3 binding to NX6/58α-β- cells was carried out as described in Zeng et al. (2012) with some modifications. 1 × 105 cells were incubated with 27.34–1.71 nM Cy34SAv. To quantify cell surface bound Cy34SAv, we biotinylated red blood cells (RBCs) to generate cells with different surface biotin densities (Huang et al., 2010). The same batch of biotinylated RBCs was stained with either PE-SAv or Cy34SAv. A linear correlation (Figure 1—figure supplement 2) between the mean fluorescence intensities of PE-SAv and Cy34SAv was constructed, so that the Cy34SAv staining intensities could be converted to PE-SAv intensities, which were used to calculate the number of bound ligands by comparing them with the standard PE calibration curve.
 
-## Analysis of soluble TCR and ligand interactions
+### Analysis of soluble TCR and ligand interactions
 
 Soluble γδ TCRs were produced as described (Zeng et al., 2012). Briefly, the extracellular domains of the γ and δ chains (residues 1–273 and 1–242, respectively) were cloned in frame with a gene encoding a rhinovirus protease site, followed by acidic (TCR-δ) or basic (TCR-γ) leucine zippers and a (histidine)6 tag in the pMSCV-P2 and Z4 retroviral expression vectors. These vectors contain an internal ribosome entry site followed by puromycin resistance gene for γ chain or zeocin resistance gene for δ chain and expressed in BHK-21 cells.
 
 Surface plasmon resonance using the Biacore system was used for quantitative measurements of TCR-ligand interactions. All Biacore measurements were performed on a Biacore 3000 instrument using a CM5 chip. 10,000 RU of anti-TCRδ was immobilized using amine linkages; anti-TCRβ was immobilized as a reference surface. Roughly 300 RU of γδ TCR was injected into the system, allowed to stabilize for 1 min, then a range of concentrations of analytes were injected, followed by a 2 min dissociation time. For NP-specific TCRs, NP43-CGG and CGG, were tested; for the Cy3-specific TCR, Cy34-SAv and streptavidin were tested. 10 mM glycine pH 2.5 was used at the end of each cycle to remove bound TCR and ligand. Specific binding was assessed by subtracting a blank buffer injection for each cycle. The dose response curves for NP43-CGG, CGG, Cy34-SAv, and unconjugated SAv for specific binding were measured by averaging signal between 10 and 20 s at the end of each analyte injection, as very slow unbinding was observed.
 
-## BioMark analysis
+### BioMark analysis
 
 Quantitative analysis of transcript expression of Cy3-specific γδ T cells was carried out with the BioMark system as follows: 60 hr after Cy3-CGG immunization, γδ T cells were enriched from the draining lymph nodes of immunized mice, then incubated with Cy3-KLH (0.5 μM) for 6 hr in vitro. CD62LloCD44hi Cy3+ and CD62LhiCD44lo Cy3− γδ T cells were then FACS sorted into a PCR plate with five cells per well for the analysis. The primers for BioMark qPCR were purchased from Applied Biosystems. The sequences are described in Supplementary file 1.
 

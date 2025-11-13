@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03a1kwz48 Center for Plant Molecular Biology, University of Tübingen Tübingen Germany
+1. Center for Plant Molecular Biology, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
 
 † Corresponding author
 

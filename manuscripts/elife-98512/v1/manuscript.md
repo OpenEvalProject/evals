@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 MD/PhD graduate program, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/0464eyp60 Department of Neurobiology, University of Massachusetts Chan Medical School Worcester United States
+1. MD/PhD graduate program, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Neurobiology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 

@@ -35,9 +35,7 @@ The corresponding figure was labeled more clearly, including axis labels and a 3
 
 4) The figures should be modified to specify exactly what is measured, particularly the optical configuration for each experiment. Specific examples are in the individual reviews below.
 
-We thought a lot about introducing xt-plots throughout, but found that it would add too much of space to the figures. As an example, just the experiment shown in Figure 3b would require the symbols below for visualizing the apparent motion sequences (Author response image 1.). We, therefore, decided to introduce the apparent motion stimulus in principle in Figure 1c as an xt-plot, and to be as clear as possible in the text otherwise.10.7554/eLife.17421.010Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.17421.010
-
-DOI: http://dx.doi.org/10.7554/eLife.17421.010
+We thought a lot about introducing xt-plots throughout, but found that it would add too much of space to the figures. As an example, just the experiment shown in Figure 3b would require the symbols below for visualizing the apparent motion sequences (Author response image 1.). We, therefore, decided to introduce the apparent motion stimulus in principle in Figure 1c as an xt-plot, and to be as clear as possible in the text otherwise.10.7554/eLife.17421.010Author response image 1.
 
 Reviewer #1:
 

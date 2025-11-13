@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.15192.001 Socially-conveyed rules and instructions strongly shape expectations and emotions. Yet most neuroscientific studies of learning consider reinforcement history alone, irrespective of knowledge acquired through other means. We examined fear conditioning and reversal in humans to test whether instructed knowledge modulates the neural mechanisms of feedback-driven learning. One group was informed about contingencies and reversals. A second group learned only from reinforcement. We combined quantitative models with functional magnetic resonance imaging and found that instructions induced dissociations in the neural systems of aversive learning. Responses in striatum and orbitofrontal cortex updated with instructions and correlated with prefrontal responses to instructions. Amygdala responses were influenced by reinforcement similarly in both groups and did not update with instructions. Results extend work on instructed reward learning and reveal novel dissociations that have not been observed with punishments or rewards. Findings support theories of specialized threat-detection and may have implications for fear maintenance in anxiety. DOI: http://dx.doi.org/10.7554/eLife.15192.001
+Socially-conveyed rules and instructions strongly shape expectations and emotions. Yet most neuroscientific studies of learning consider reinforcement history alone, irrespective of knowledge acquired through other means. We examined fear conditioning and reversal in humans to test whether instructed knowledge modulates the neural mechanisms of feedback-driven learning. One group was informed about contingencies and reversals. A second group learned only from reinforcement. We combined quantitative models with functional magnetic resonance imaging and found that instructions induced dissociations in the neural systems of aversive learning. Responses in striatum and orbitofrontal cortex updated with instructions and correlated with prefrontal responses to instructions. Amygdala responses were influenced by reinforcement similarly in both groups and did not update with instructions. Results extend work on instructed reward learning and reveal novel dissociations that have not been observed with punishments or rewards. Findings support theories of specialized threat-detection and may have implications for fear maintenance in anxiety.
 
 ## Introduction
 
@@ -34,97 +34,385 @@ We tested whether dynamic feedback-driven aversive learning is modulated when in
 
 Recent studies in the appetitive domain suggest that instructions about rewarding outcomes modulate learning-related responses in the striatum (Doll et al., 2009; 2011; Li et al., 2011a) and ventromedial prefrontal cortex (Li et al., 2011a) and that this modulation might depend on the prefrontal cortex (Doll et al., 2009; 2011; Li et al., 2011a). In the aversive domain, such interactions, by which instructed knowledge might help to overcome learned expectations of threat, are of particular importance due to their relevance for anxiety and post-traumatic stress disorder. However, no studies have tested whether instructions have the same effects on dynamic aversive learning, which is known to depend on the amygdala (Maren, 2001) but also involves the striatum (Seymour et al., 2004; 2005; Delgado et al., 2008b) and ventromedial/orbitofrontal cortex (VMPFC/OFC) (Phelps et al., 2004; Kalisch et al., 2006; Schiller et al., 2008). Instructions might modulate learning in the amygdala as well as the striatum and VMPFC/OFC, or amygdala responses might be insensitive to cognitive instruction (Ohman and Mineka, 2001), as suggested by theories of automatic threat detection in the amygdala (Ohman, 2005).
 
-All participants performed a Pavlovian aversive learning task in which one image, the Original conditioned stimulus (CS+), was paired with mild electric shock (the unconditioned stimulus [US]) on 30% of trials, and a second image, the Original CS-, was not paired with shock. Contingencies reversed three times. Participants assigned to an Instructed Group were informed about initial contingencies and instructed upon reversal (
+All participants performed a Pavlovian aversive learning task in which one image, the Original conditioned stimulus (CS+), was paired with mild electric shock (the unconditioned stimulus [US]) on 30% of trials, and a second image, the Original CS-, was not paired with shock. Contingencies reversed three times. Participants assigned to an Instructed Group were informed about initial contingencies and instructed upon reversal (Figure 1), whereas participants in an Uninstructed Group learned through reinforcement alone. Models were fit to skin conductance responses (SCRs), a traditional measure of the conditioned fear response in humans. We combined quantitative modeling of behavior with functional magnetic resonance imaging (fMRI) to examine how instructions influence brain responses and skin conductance responses (SCRs) during fear conditioning. We evaluated quantitative learning models, fit to SCR, and confirmed model conclusions with task-based fMRI analyses. We focused on responses in the amygdala, striatum, and VMPFC/OFC. We hypothesized that instructions about contingencies would modify learning-related signals and brain responses during fear conditioning, and that, as in the appetitive domain, this modulation would involve the prefrontal cortex.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig1-v2.jpg)
 
-**Figure 1.:** (A) Prior to the conditioning phase of the experiment, participants in the Instructed Group saw each image and were informed about initial probabilities. Participants in the Uninstructed Group also saw the images prior to the experiment, but were not told about contingencies. (B) Participants in both groups underwent a Pavlovian fear conditioning task with serial reversals. There were three reversals across the duration of the task, leading to four continuous blocks of twenty trials. In each block, one image (the conditioned stimulus, or CS+) was paired with a shock (the unconditioned stimulus, or US) 30% of the time, leading to 4 reinforced trials and 8 unreinforced trials, whereas a second image (the CS-) was never paired with a shock. Images were presented for 4 s, followed by a 12-second inter-stimulus interval. (C) Upon each reversal, the Instructed Group was informed that contingencies had reversed. Button presses were included to ensure participants were paying attention to the instructions but had no effect on the task itself or task timing. Instructions were always immediately followed by at least two unreinforced presentations of each CS before the new CS+ was paired with a shock. The figure presents one of two pseudorandom trial orders used during the experiment (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.15192.003
+**Figure 1.:** (A) Prior to the conditioning phase of the experiment, participants in the Instructed Group saw each image and were informed about initial probabilities. Participants in the Uninstructed Group also saw the images prior to the experiment, but were not told about contingencies. (B) Participants in both groups underwent a Pavlovian fear conditioning task with serial reversals. There were three reversals across the duration of the task, leading to four continuous blocks of twenty trials. In each block, one image (the conditioned stimulus, or CS+) was paired with a shock (the unconditioned stimulus, or US) 30% of the time, leading to 4 reinforced trials and 8 unreinforced trials, whereas a second image (the CS-) was never paired with a shock. Images were presented for 4 s, followed by a 12-second inter-stimulus interval. (C) Upon each reversal, the Instructed Group was informed that contingencies had reversed. Button presses were included to ensure participants were paying attention to the instructions but had no effect on the task itself or task timing. Instructions were always immediately followed by at least two unreinforced presentations of each CS before the new CS+ was paired with a shock. The figure presents one of two pseudorandom trial orders used during the experiment (see Materials and methods).
 
 ## Results
 
-## Subjective ratings
+### Subjective ratings
 
 Upon completion of the experiment, participants reported the number of perceived contingency reversals and retrospectively rated shock expectancy and affect in response to each image. Participants recognized that three reversals had occurred (M = 3.22, SD = 0.79), and there was no group difference in the estimated number of reversals (p>0.1). Two-way ANOVAs revealed a main effect of Group on reported affect (F(1,68) = 8.57, p<0.01), such that the Uninstructed Group reported less positive affect for both stimuli. There were no Group differences in shock expectancy ratings, nor were there any main effects of Stimulus (Original CS+ vs Original CS-) or Group x Stimulus interactions on either outcome measure.
 
-## Instructions influence skin conductance responses
+### Instructions influence skin conductance responses
 
-We tested whether participants showed differential SCRs to unreinforced CS presentations during fear acquisition (i.e. larger responses to the Original CS+ than Original CS-), and whether responses were modulated after participants were instructed that contingencies had reversed (Instructed Group) or after they received a shock paired with the new CS+/ previous CS- (Uninstructed Group). As reported in Table 1, both groups showed differential responses that reversed in response to contingency changes throughout the task (CS+ > CS-; ß = 0.04, t = 5.82, p<0.0001). Differential responses were larger in the Instructed Group than the Uninstructed Group (ß = 0.03, t = 3.98, p=0.0002), and SCRs habituated over time (ß = -0.07, t = 10.59, p<0.0001).10.7554/eLife.15192.004Table 1.Group differences in differential SCRa.DOI: http://dx.doi.org/10.7554/eLife.15192.004AnalysisModelInterceptStimulus (Original CS+ > Original CS-)Reversal effect (Original contingencies vs. Reversed contingencies)Stimulus x Reversal Interaction (Current CS+ > Current CS-)TimeAll participants (n = 68)Within-subjects effects, controlling for group (first level)ß = 0.22n.s. (p = 0.06)n.s. (p = 0.445)ß = 0.04ß = -.07t = 12.37t = 5.82t = 10.59p <0.0001p<0.0001p<0.0001Effect of group (second level)n.s. (p = 0.11)n.s. (p = 0.15)n.s. (p = 1.0)ß = 0.03n.s. (p = 0.09)t = 3.98p = 0.0002Learners only (n = 40)Within-subjects effects, controlling for group (first level)ß = 0.27ß = 0.01n.s. (p = 0.95)ß = 0.06ß = -.08t = 11.62t = 2.79t = 6.5t = -11.18p<0.0001p = 0.0082p<0.0001p<0.0001Effect of group (second level)n.s. (p = 0.13)n.s. (p = 0.20)n.s.(p = 0.35)ß = 0.04ß = -.02t = 3.67t = -2.53p = 0.0007p = 0.0157Instructed Group learners (n = 20)Entire taskß = 0.30n.s. (p = 0.30)n.s. (p = 0.55)ß = 0.10ß = -0.09t = 8.93t = 5.35t = -9.26p<0.0001p<0.0001p<0.0001Entire task, second half of each runß = 0.27ß = 0.02ß = 0.04ß = 0.12n.s. (p = 0.69)t = 7.82t = 2.15t = 4.18t = 6.19p<0.0001p = 0.0314p<0.0001p<0.0001Trials following the first reversalß = 0.28n.s. (p = 0.65)ß = -0.16ß = 0.09ß = -0.07t = 6.89t = -2.36t = 4.19t = -5.05p<0.0001p = 0.0184p<0.0001p<0.0001Trials following the first reversal, second half of each runß = 0.22n.s.(p = 0.81)n.s. (p = 0.30)ß = 0.09n.s. (p = 0.09)t = 5.67t = 4.49p<0.0001p<0.0001Uninstructed Group learners (n=20)Entire taskß = 0.23ß = 0.01n.s. (p = 0.54)ß = 0.03ß = -.06t = 7.30t = 2.09t = 4.58t = -6.10p<0.0001p = 0.0368p<0.0001p<0.0001Entire task, second half of each runß = 0.22ß = 0.02ß = 0.02ß = 0.04n.s.(p = 0.678)t = 6.86t = 3.18t = 2.44t = 5.45p<0.0001p = 0.0015p = 0.0149p<0.0001Trials following the first reversalß = 0.21n.s. (p = 0.58)n.s. (p = 0.49)ß = 0.01ß = -.04t = 5.28t = 1.67t = -2.49p<0.0001p = 0.0967p = 0.0127Trials following the first reversal, second half of each runß = 0.19n.s. (p = 0.65)n.s. (p = 0.21)ß = 0.02ß = 0.03t = 5.83t = 2.04t = 2.88p<0.0001p = 0.0413p = 0.004aThis table presents results of linear mixed models that included normalized skin conductance response (SCR) as a dependent measure. In the Instructed Group, contingencies and reversals are coded relative to instructed reversal. In the Uninstructed Group, contingencies and reversals are coded relative to reinforcement (i.e. reversals occur when the previous CS- is paired with a shock). Within groups, we analyzed SCRs across the entire task as well as following the first reversal (without the acquisition phase). We also examined responses within the second half of each run, as well as across all trials (including trials that immediately followed reversals).
+We tested whether participants showed differential SCRs to unreinforced CS presentations during fear acquisition (i.e. larger responses to the Original CS+ than Original CS-), and whether responses were modulated after participants were instructed that contingencies had reversed (Instructed Group) or after they received a shock paired with the new CS+/ previous CS- (Uninstructed Group). As reported in Table 1, both groups showed differential responses that reversed in response to contingency changes throughout the task (CS+ > CS-; ß = 0.04, t = 5.82, p<0.0001). Differential responses were larger in the Instructed Group than the Uninstructed Group (ß = 0.03, t = 3.98, p=0.0002), and SCRs habituated over time (ß = -0.07, t = 10.59, p<0.0001).
 
-These results reflect group-level effects and group differences across all participants. However, a subset of participants did not show differential SCRs prior to the first reversal. As our primary research question concerns the effects of instructions on the neural systems of aversive reversal learning, the strongest tests are in those individuals who learn contingencies prior to the first reversal. Given this, we restricted our analyses to 'learners.' As described in Materials and methods, we defined learners as those individuals who showed greater SCR to the CS+ relative to the CS- in late acquisition (the second half of the first run; 20/30 Instructed Group participants, 20/38 Uninstructed Group participants). In this subset of learners, the main effects and interactions on SCR reported above remained significant and increased in magnitude (
+**Table 1.**
+ Group differences in differential SCRa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Model</th>
+      <th>Intercept</th>
+      <th>Stimulus (Original CS+ &gt; Original CS-)</th>
+      <th>Reversal effect (Original contingencies vs. Reversed contingencies)</th>
+      <th>Stimulus x Reversal Interaction (Current CS+ &gt; Current CS-)</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">All participants (n = 68)</td>
+      <td rowspan="3">Within-subjects effects, controlling for group (first level)</td>
+      <td>ß = 0.22</td>
+      <td rowspan="3">n.s. (p = 0.06)</td>
+      <td rowspan="3">n.s. (p = 0.445)</td>
+      <td>ß = 0.04</td>
+      <td>ß = -.07</td>
+    </tr>
+    <tr>
+      <td>t = 12.37</td>
+      <td>t = 5.82</td>
+      <td>t = 10.59</td>
+    </tr>
+    <tr>
+      <td>p &lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Effect of group (second level)</td>
+      <td rowspan="3">n.s. (p = 0.11)</td>
+      <td rowspan="3">n.s. (p = 0.15)</td>
+      <td rowspan="3">n.s. (p = 1.0)</td>
+      <td>ß = 0.03</td>
+      <td rowspan="3">n.s. (p = 0.09)</td>
+    </tr>
+    <tr>
+      <td>t = 3.98</td>
+    </tr>
+    <tr>
+      <td>p = 0.0002</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Learners only (n = 40)</td>
+      <td rowspan="3">Within-subjects effects, controlling for group (first level)</td>
+      <td>ß = 0.27</td>
+      <td>ß = 0.01</td>
+      <td rowspan="3">n.s. (p = 0.95)</td>
+      <td>ß = 0.06</td>
+      <td>ß = -.08</td>
+    </tr>
+    <tr>
+      <td>t = 11.62</td>
+      <td>t = 2.79</td>
+      <td>t = 6.5</td>
+      <td>t = -11.18</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0082</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Effect of group (second level)</td>
+      <td rowspan="3">n.s. (p = 0.13)</td>
+      <td rowspan="3">n.s. (p = 0.20)</td>
+      <td rowspan="3">n.s.(p = 0.35)</td>
+      <td>ß = 0.04</td>
+      <td>ß = -.02</td>
+    </tr>
+    <tr>
+      <td>t = 3.67</td>
+      <td>t = -2.53</td>
+    </tr>
+    <tr>
+      <td>p = 0.0007</td>
+      <td>p = 0.0157</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Instructed Group learners (n = 20)</td>
+      <td rowspan="3">Entire task</td>
+      <td>ß = 0.30</td>
+      <td rowspan="3">n.s. (p = 0.30)</td>
+      <td rowspan="3">n.s. (p = 0.55)</td>
+      <td>ß = 0.10</td>
+      <td>ß = -0.09</td>
+    </tr>
+    <tr>
+      <td>t = 8.93</td>
+      <td>t = 5.35</td>
+      <td>t = -9.26</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Entire task, second half of each run</td>
+      <td>ß = 0.27</td>
+      <td>ß = 0.02</td>
+      <td>ß = 0.04</td>
+      <td>ß = 0.12</td>
+      <td rowspan="3">n.s. (p = 0.69)</td>
+    </tr>
+    <tr>
+      <td>t = 7.82</td>
+      <td>t = 2.15</td>
+      <td>t = 4.18</td>
+      <td>t = 6.19</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0314</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Trials following the first reversal</td>
+      <td>ß = 0.28</td>
+      <td rowspan="3">n.s. (p = 0.65)</td>
+      <td>ß = -0.16</td>
+      <td>ß = 0.09</td>
+      <td>ß = -0.07</td>
+    </tr>
+    <tr>
+      <td>t = 6.89</td>
+      <td>t = -2.36</td>
+      <td>t = 4.19</td>
+      <td>t = -5.05</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0184</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Trials following the first reversal, second half of each run</td>
+      <td>ß = 0.22</td>
+      <td rowspan="3">n.s.(p = 0.81)</td>
+      <td rowspan="3">n.s. (p = 0.30)</td>
+      <td>ß = 0.09</td>
+      <td rowspan="3">n.s. (p = 0.09)</td>
+    </tr>
+    <tr>
+      <td>t = 5.67</td>
+      <td>t = 4.49</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Uninstructed Group learners (n=20)</td>
+      <td rowspan="3">Entire task</td>
+      <td>ß = 0.23</td>
+      <td>ß = 0.01</td>
+      <td rowspan="3">n.s. (p = 0.54)</td>
+      <td>ß = 0.03</td>
+      <td>ß = -.06</td>
+    </tr>
+    <tr>
+      <td>t = 7.30</td>
+      <td>t = 2.09</td>
+      <td>t = 4.58</td>
+      <td>t = -6.10</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0368</td>
+      <td>p&lt;0.0001</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Entire task, second half of each run</td>
+      <td>ß = 0.22</td>
+      <td>ß = 0.02</td>
+      <td>ß = 0.02</td>
+      <td>ß = 0.04</td>
+      <td rowspan="3">n.s.(p = 0.678)</td>
+    </tr>
+    <tr>
+      <td>t = 6.86</td>
+      <td>t = 3.18</td>
+      <td>t = 2.44</td>
+      <td>t = 5.45</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0015</td>
+      <td>p = 0.0149</td>
+      <td>p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Trials following the first reversal</td>
+      <td>ß = 0.21</td>
+      <td rowspan="3">n.s. (p = 0.58)</td>
+      <td rowspan="3">n.s. (p = 0.49)</td>
+      <td>ß = 0.01</td>
+      <td>ß = -.04</td>
+    </tr>
+    <tr>
+      <td>t = 5.28</td>
+      <td>t = 1.67</td>
+      <td>t = -2.49</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0967</td>
+      <td>p = 0.0127</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Trials following the first reversal, second half of each run</td>
+      <td>ß = 0.19</td>
+      <td rowspan="3">n.s. (p = 0.65)</td>
+      <td rowspan="3">n.s. (p = 0.21)</td>
+      <td>ß = 0.02</td>
+      <td>ß = 0.03</td>
+    </tr>
+    <tr>
+      <td>t = 5.83</td>
+      <td>t = 2.04</td>
+      <td>t = 2.88</td>
+    </tr>
+    <tr>
+      <td>p&lt;0.0001</td>
+      <td>p = 0.0413</td>
+      <td>p = 0.004</td>
+    </tr>
+  </tbody>
+</table>
+
+_aThis table presents results of linear mixed models that included normalized skin conductance response (SCR) as a dependent measure. In the Instructed Group, contingencies and reversals are coded relative to instructed reversal. In the Uninstructed Group, contingencies and reversals are coded relative to reinforcement (i.e. reversals occur when the previous CS- is paired with a shock). Within groups, we analyzed SCRs across the entire task as well as following the first reversal (without the acquisition phase). We also examined responses within the second half of each run, as well as across all trials (including trials that immediately followed reversals)._
+
+These results reflect group-level effects and group differences across all participants. However, a subset of participants did not show differential SCRs prior to the first reversal. As our primary research question concerns the effects of instructions on the neural systems of aversive reversal learning, the strongest tests are in those individuals who learn contingencies prior to the first reversal. Given this, we restricted our analyses to 'learners.' As described in Materials and methods, we defined learners as those individuals who showed greater SCR to the CS+ relative to the CS- in late acquisition (the second half of the first run; 20/30 Instructed Group participants, 20/38 Uninstructed Group participants). In this subset of learners, the main effects and interactions on SCR reported above remained significant and increased in magnitude (Figure 2A,C; Table 1). Importantly, both the Instructed and Uninstructed Groups showed SCRs that were responsive to changing contingencies when we examined each group separately, and when we restricted analyses to trials that followed the first reversal (Table 1), suggesting that effects were not driven entirely by initial learning. The Uninstructed Group showed significant reversals when we analyzed trials from the second half of each block in this post-acquisition analysis, and marginal effects when we included all post-acquisition trials (see Table 1). This is expected given the low reinforcement rate (33%) that we used in this study, and is consistent with somewhat slow learning. The quantitative models and fMRI analyses reported below focus on the 20 learners in each group. Combined fMRI analyses that include data from the full sample are entirely consistent with these findings and are reported in figure supplements and source data.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig2-v2.jpg)
 
-**Figure 2.:** Mean normalized skin conductance responses (SCRs) as a function of group and condition. Both groups showed significant reversals of SCR responses throughout the task (p<0.001; Table 1), and effects were larger in the Instructed Group (see Table 1). Error bars reflect within-subjects error. (A) Mean SCR in the Instructed Group as a function of original contingencies. Runs are defined relative to the delivery of instructions. (B) Dynamics of expected value based on fits of our modified Rescorla-Wagner model, fit to SCR in the Instructed Group. Fitted model parameters were consistent with SCR reversing almost entirely in response to instructions (ρ = 0.943). This timecourse was used in fMRI analyses to isolate regions involved in instruction-based learning. (C) Mean SCR in the Uninstructed Group as a function of original contingencies. A new run is defined when the previous CS- is paired with a shock. (D) Dynamics of expected value based on the model fit to SCR from the Uninstructed Group. This timecourse was used in fMRI analyses to isolate regions involved in feedback-driven learning in both groups.DOI: http://dx.doi.org/10.7554/eLife.15192.005
+**Figure 2.:** Mean normalized skin conductance responses (SCRs) as a function of group and condition. Both groups showed significant reversals of SCR responses throughout the task (p<0.001; Table 1), and effects were larger in the Instructed Group (see Table 1). Error bars reflect within-subjects error. (A) Mean SCR in the Instructed Group as a function of original contingencies. Runs are defined relative to the delivery of instructions. (B) Dynamics of expected value based on fits of our modified Rescorla-Wagner model, fit to SCR in the Instructed Group. Fitted model parameters were consistent with SCR reversing almost entirely in response to instructions (ρ = 0.943). This timecourse was used in fMRI analyses to isolate regions involved in instruction-based learning. (C) Mean SCR in the Uninstructed Group as a function of original contingencies. A new run is defined when the previous CS- is paired with a shock. (D) Dynamics of expected value based on the model fit to SCR from the Uninstructed Group. This timecourse was used in fMRI analyses to isolate regions involved in feedback-driven learning in both groups.
 
 We also tested whether instructions immediately update autonomic responses by examining instructed reversals in Instructed Group learners. Each reversal featured a delay between instruction delivery and reinforcement of instructions (Figure 1C): Following instructions, each CS was presented without reinforcement at least twice before the previous CS- was paired with a US. We compared responses during these post-instruction, pre-reinforcement windows with an equivalent number of trials prior to each instruction (e.g. the last two CS+ and CS- trials in each phase). We found a significant effect of instructions on differential responding (ß = 0.04, t(19) = 3.50, p= 0.0024), such that SCR responses reversed immediately after each instruction, before any actual reinforcement was delivered.
 
-## Feedback-driven learning is modulated by instructions
+### Feedback-driven learning is modulated by instructions
 
 We were interested in understanding how instructions shape error-driven learning and the development of expectations. To this end, we focused on the computation of expected value (EV) and used a simple Rescorla-Wagner model modified to capture flexible effects of instructions and test for dissociations. Our quantitative models assume that SCR at cue onset reflects EV (see Materials and methods). Shocks were incorporated as reinforcements, and thus positive EV corresponds to an expectation for a shock. Consistent with standard Rescorla-Wagner models, EV updates in response to prediction error (PE), and the speed of updating depends on learning rate (α). We focus on correlations with EV in this manuscript, due to concerns of algebraic collinearity when EV, shock, and PE are included in the same model.
 
-Models fit to the Uninstructed Group’s SCRs isolate learning-related processes that respond to reinforcement history alone (i.e. feedback-driven learning), since this group was not informed about cue contingencies or reversals. Models fit to the Instructed Group’s SCRs, however, should capture the immediate effects of instruction reported above. To acknowledge this flexible effect of instructions, we modified the standard Rescorla-Wagner model. We introduced an instructed reversal parameter, ρ, which determines the extent to which EV reverses upon instruction (see Materials and methods). If ρ = 1, the EVs of the two CSs are swapped completely when instructions are delivered, whereas if ρ = 0, each CS maintains its current EV and the model reduces to a standard experiential Rescorla-Wagner model. The best-fitting parameters when fit across Instructed Group subjects revealed that EV reversed almost completely at the time of instructions in the Instructed Group (ρ = 0.943; Table 2), suggesting that instructions immediately influence EV/SCR, as illustrated in Figure 2B. When we fit the same model to SCRs from the Uninstructed Group (for whom the additional effect should not be observed since no instructions were given) estimates were indeed consistent with associations not reversing at the time when the instructions would have been delivered (ρ = 0.0; Table 2). The resulting time course, which captures slower reversals of EV based on purely feedback-driven learning, is depicted in Figure 2D. We also fit the model to individual participants in both groups (see Materials and methods) and found that instructed reversal parameters (i.e. ρ) differed significantly as a function of Group (Instructed Group > Uninstructed Group, t(38) = 6.53, p<0.0001; Table 2).10.7554/eLife.15192.006Table 2.Quantitative model of instructed learning: Rescorla-Wagner modulated with instruction parameter (ρ).DOI: http://dx.doi.org/10.7554/eLife.15192.006GroupAnalysis typeαρDevianceInstructed Group learners (n = 20)Across-subjects analysis0.0610.94360.83Within-subjects analysisM = 0.07, SD = 0.09M = 0.69, SD = 0.32M = 2.73, SD = 0.88Uninstructed Group learners (n = 20)Across-subjects analysis0.042040.86Within-subjects analysisM = 0.11, SD = 0.22M = 0.10, SD = 0.25M = 1.98, SD = 0.93
+Models fit to the Uninstructed Group’s SCRs isolate learning-related processes that respond to reinforcement history alone (i.e. feedback-driven learning), since this group was not informed about cue contingencies or reversals. Models fit to the Instructed Group’s SCRs, however, should capture the immediate effects of instruction reported above. To acknowledge this flexible effect of instructions, we modified the standard Rescorla-Wagner model. We introduced an instructed reversal parameter, ρ, which determines the extent to which EV reverses upon instruction (see Materials and methods). If ρ = 1, the EVs of the two CSs are swapped completely when instructions are delivered, whereas if ρ = 0, each CS maintains its current EV and the model reduces to a standard experiential Rescorla-Wagner model. The best-fitting parameters when fit across Instructed Group subjects revealed that EV reversed almost completely at the time of instructions in the Instructed Group (ρ = 0.943; Table 2), suggesting that instructions immediately influence EV/SCR, as illustrated in Figure 2B. When we fit the same model to SCRs from the Uninstructed Group (for whom the additional effect should not be observed since no instructions were given) estimates were indeed consistent with associations not reversing at the time when the instructions would have been delivered (ρ = 0.0; Table 2). The resulting time course, which captures slower reversals of EV based on purely feedback-driven learning, is depicted in Figure 2D. We also fit the model to individual participants in both groups (see Materials and methods) and found that instructed reversal parameters (i.e. ρ) differed significantly as a function of Group (Instructed Group > Uninstructed Group, t(38) = 6.53, p<0.0001; Table 2).
 
-## Neural correlates of feedback-driven and instructed aversive learning
+**Table 2.**
+ Quantitative model of instructed learning: Rescorla-Wagner modulated with instruction parameter (ρ).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Analysis type</th>
+      <th>α</th>
+      <th>ρ</th>
+      <th>Deviance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Instructed Group learners (n = 20)</td>
+      <td>Across-subjects analysis</td>
+      <td>0.061</td>
+      <td>0.943</td>
+      <td>60.83</td>
+    </tr>
+    <tr>
+      <td>Within-subjects analysis</td>
+      <td>M = 0.07, SD = 0.09</td>
+      <td>M = 0.69, SD = 0.32</td>
+      <td>M = 2.73, SD = 0.88</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Uninstructed Group learners (n = 20)</td>
+      <td>Across-subjects analysis</td>
+      <td>0.042</td>
+      <td>0</td>
+      <td>40.86</td>
+    </tr>
+    <tr>
+      <td>Within-subjects analysis</td>
+      <td>M = 0.11, SD = 0.22</td>
+      <td>M = 0.10, SD = 0.25</td>
+      <td>M = 1.98, SD = 0.93</td>
+    </tr>
+  </tbody>
+</table>
+
+### Neural correlates of feedback-driven and instructed aversive learning
 
 Our goal was to determine whether and how the neural systems that support feedback-driven aversive learning are modulated by instructions. Thus our computational neuroimaging analyses proceeded in two stages, guided by the quantitative models reported above. First, we examined each group separately using the model fit to behavior in that group. Thus we used the model depicted in Figure 2D to isolate neural correlates of feedback-driven learning in the Uninstructed Group, and the model depicted in Figure 2B to isolate neural correlates of instruction-based learning in the Instructed Group. Next, we directly compared the two sources of learning in the Instructed Group, since these participants were exposed to both forms of feedback (i.e. instructions about contingencies and reversals, as well as experiential learning from reinforcement between each reversal). In each analysis, we focused on results in amygdala, striatum, and VMPFC/OFC (see Figure 3—figure supplement 3) to determine whether these a priori regions of interest (ROIs) were sensitive to feedback-driven learning and/or whether they updated with instructions. Finally, we tested the conclusions from quantitative models with task-based analyses that relied strictly on our experimental design, thus eliminating the influence of assumptions derived from our models.
 
-## Neural correlates of feedback-driven aversive learning
+### Neural correlates of feedback-driven aversive learning
 
-We first focused on the neural correlates of experiential learning by examining responses in the Uninstructed Group. Regressors were based on the best-fitting parameters from the model fit to the Uninstructed Group, thus isolating feedback-driven EV (
+We first focused on the neural correlates of experiential learning by examining responses in the Uninstructed Group. Regressors were based on the best-fitting parameters from the model fit to the Uninstructed Group, thus isolating feedback-driven EV (Figure 2D; see Materials and methods). ROI-based analyses within the Uninstructed Group revealed a main effect of Region (F(2,40) = 5.13, p=0.011). Post-hoc t-tests revealed that this was driven by positive correlations between feedback-driven EV and responses in the amygdala (bilateral: t(1,19) = 4.21, p=0.0005; Left: t(1, 19) = 3.94, p=0.001; Right: t(1,19): = 3.72, p=0.001) and striatum (bilateral: t(1,19) = 2.31, p=0.0017; left: t(1, 19) = 2.58, p=p =0.018; right: p=p =0.063). Voxel-wise FDR-corrected results confirmed ROI-based findings, and isolated additional correlations in the VMPFC/mOFC (see Figure 3A, Figure 3—figure supplement 1, and Figure 3—figure supplement 1—source data 1 and 2). The striatum and amygdala both showed positive correlations with EV, associated with increased activation for the stimulus currently predicting an aversive outcome. The VMPFC/mOFC showed negative correlations with EV, consistent with prior work showing increased VMPFC/OFC responses to conditioned stimuli predicting safe, relative to aversive, outcomes (Schiller et al., 2008). Additional regions that correlated with feedback-driven EV are reported in Figure 3—figure supplement 1 and associated source data.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig3-v2.jpg)
 
-**Figure 3.:** (A) Neural correlates of feedback-driven expected value (EV) were isolated by examining correlations between the timecourse depicted in Figure 2D and brain activation in response to cue onset in Uninstructed Group learners (n = 20). Top: ROI-based analyses (see Figure 3—figure supplement 3) revealed significant correlations with feedback-driven EV in the amydala and striatum. Error bars reflect standard error of the mean; ***p<0.001; *p<0.05. Bottom: Voxel-wise FDR-corrected analyses confirmed ROI-based results and revealed additional correlations in the VMPFC/OFC, as well as other regions (see Figure 3—figure supplement 1, Figure 3—figure supplement 1—source data 1, 2). (B) Neural correlates of instruction-based EV were isolated by examining correlations between the timecourse depicted in Figure 2B and brain activation in response to cue onset in Instructed Group learners (n = 20). Top: ROI-based analyses revealed a significant negative correlation with instruction-based EV in the VMPFC/OFC. Bottom: Voxel-wise analyses confirmed these results and revealed strong positive correlations in the bilateral striatum, as well as the dACC, insula, and other regions (see Figure 3—figure supplement 2 and Figure 3—figure supplement 2—source data 1 and 2). We did not observe any correlations between amygdala activation and instruction-based EV.DOI: http://dx.doi.org/10.7554/eLife.15192.007
+**Figure 3.:** (A) Neural correlates of feedback-driven expected value (EV) were isolated by examining correlations between the timecourse depicted in Figure 2D and brain activation in response to cue onset in Uninstructed Group learners (n = 20). Top: ROI-based analyses (see Figure 3—figure supplement 3) revealed significant correlations with feedback-driven EV in the amydala and striatum. Error bars reflect standard error of the mean; ***p<0.001; *p<0.05. Bottom: Voxel-wise FDR-corrected analyses confirmed ROI-based results and revealed additional correlations in the VMPFC/OFC, as well as other regions (see Figure 3—figure supplement 1, Figure 3—figure supplement 1—source data 1, 2). (B) Neural correlates of instruction-based EV were isolated by examining correlations between the timecourse depicted in Figure 2B and brain activation in response to cue onset in Instructed Group learners (n = 20). Top: ROI-based analyses revealed a significant negative correlation with instruction-based EV in the VMPFC/OFC. Bottom: Voxel-wise analyses confirmed these results and revealed strong positive correlations in the bilateral striatum, as well as the dACC, insula, and other regions (see Figure 3—figure supplement 2 and Figure 3—figure supplement 2—source data 1 and 2). We did not observe any correlations between amygdala activation and instruction-based EV.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Voxelwise FDR-corrected results of neural correlates of feedback-driven EV in Uninstructed Group participants, based on the modified learning model fit to learners in the Uninstructed Group (across-subjects fits, see Materials and methods). Warm colors reflect positive correlations with EV, which was coded such that positive EV denotes expected shock. Cool colors reflect negative correlations. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Uninstructed Group (n = 38). For complete results in tabular format, please see 'Figure 3—figure supplement 1—source data 1' and 'Figure 3—figure supplement 1—source data 2'.DOI: http://dx.doi.org/10.7554/eLife.15192.00810.7554/eLife.15192.009Figure 3—figure supplement 1—source data 1.This table presents brain regions that correlate with feedback-driven EV (derived from the across-subjects model fit to Uninstructed Group learners) within Uninstructed Group learners (n = 20). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.00910.7554/eLife.15192.010Figure 3—figure supplement 1—source data 2.This table presents brain regions that correlate with feedback-driven EV (derived from the across-subjects model fit to Uninstructed Group learners) within the entire Uninstructed Group (n = 38). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.010
+**Figure 3—figure supplement 1.:** Voxelwise FDR-corrected results of neural correlates of feedback-driven EV in Uninstructed Group participants, based on the modified learning model fit to learners in the Uninstructed Group (across-subjects fits, see Materials and methods). Warm colors reflect positive correlations with EV, which was coded such that positive EV denotes expected shock. Cool colors reflect negative correlations. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Uninstructed Group (n = 38). For complete results in tabular format, please see 'Figure 3—figure supplement 1—source data 1' and 'Figure 3—figure supplement 1—source data 2'.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Voxelwise FDR-corrected results of neural correlates of instruction-based EV in Instructed Group participants, based on the modified learning model fit to learners in the Instructed Group (across-subjects fits, see Materials and methods). Warm colors reflect positive correlations with EV, which was coded such that positive EV denotes expected shock. Cool colors reflect negative correlations. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 3—figure supplement 2—source data 1' and 'Figure 3—figure supplement 2—source data 2'.DOI: http://dx.doi.org/10.7554/eLife.15192.01110.7554/eLife.15192.012Figure 3—figure supplement 2—source data 1.This table presents brain regions that correlate with instruction-based EV (derived from the across-subjects model fit to Instructed Group learners) within Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q<0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.01210.7554/eLife.15192.013Figure 3—figure supplement 2—source data 2.This table presents brain regions that correlate with instruction-based EV (derived from the across-subjects model fit to Instructed Group learners) within the entire Instructed Group (n = 30). Results are whole-brain FDR-corrected (q<0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.013
+**Figure 3—figure supplement 2.:** Voxelwise FDR-corrected results of neural correlates of instruction-based EV in Instructed Group participants, based on the modified learning model fit to learners in the Instructed Group (across-subjects fits, see Materials and methods). Warm colors reflect positive correlations with EV, which was coded such that positive EV denotes expected shock. Cool colors reflect negative correlations. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 3—figure supplement 2—source data 1' and 'Figure 3—figure supplement 2—source data 2'.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Regions of interest for ROI-based FMRI analyses. See Materials and methods for details of ROI selection.DOI: http://dx.doi.org/10.7554/eLife.15192.014
+**Figure 3—figure supplement 3.:** Regions of interest for ROI-based FMRI analyses. See Materials and methods for details of ROI selection.
 
-## Instructions shape responses in VMPFC/OFC and striatum
+### Instructions shape responses in VMPFC/OFC and striatum
 
 We used parameters from the best-fitting instructed learning model to isolate the neural correlates of aversive learning that updates expected value on the basis of instructions in the Instructed Group. In this model, EV updates immediately with instructions (Figure 2b), consistent with the SCRs measured in the Instructed Group. ROI-based ANOVAs revealed a significant effect of Region (F(2,40) = 6.49, p=0.0038), driven by significant negative correlations with EV in the VMPFC/OFC ROI (t(1,19) = -2.61, p=0.0173; see Figure 3B). Voxelwise FDR-corrected results also revealed robust activation in the bilateral caudate, which showed positive correlations with instructed EV (see Figure 3B, Figure 3—figure supplement 2, Figure 3—figure supplement 2—source data 1, and Figure 3—figure supplement 2—source data 2). Additional regions that tracked instructed EV in whole brain analyses and results across the entire Instructed Group are reported in Figure 3—figure supplements 2, 3 and associated source data.
 
-## Feedback-driven versus instruction-based learning within the Instructed Group
+### Feedback-driven versus instruction-based learning within the Instructed Group
 
 The preceding results, from separate groups using EV signals driven by instructions or feedback, suggest that responses in the amygdala, striatum, and VMPFC/OFC were driven by reinforcement in the Uninstructed Group, while only VMPFC/OFC and striatal responses were sensitive to instructions the Instructed Group. To test for formal dissociations, we directly compared the neural correlates of instructed and feedback-driven aversive learning in Instructed Group participants, who were exposed to both instructions and experiential learning. This within-subjects analysis ensures that potential dissociations indicated above are driven by differences in the computational sources of neural activation, rather than differences in performance between the groups. To isolate brain responses that were sensitive only to reinforcement (despite the presence of instructions about contingencies and reversals), we used the feedback-driven EV regressor generated from the model fit to the Uninstructed Group’s behavior, which takes advantage of the fact that trial sequences were identical for both groups. The instruction-driven EV regressor was generated from the model fit to the Instructed Group’s behavior and reported above.
 
-We included both EV regressors in a within-subjects voxel-wise analysis in the Instructed Group. Between reversals, experiential learning would be somewhat correlated across models. Thus, to remove shared variance, we did not orthogonalize regressors in this analysis (see Materials and Methods). A contrast across the two EV regressors formally tests whether each voxel is more related to feedback-driven or instruction-driven EV. Results from this contrast are presented in
+We included both EV regressors in a within-subjects voxel-wise analysis in the Instructed Group. Between reversals, experiential learning would be somewhat correlated across models. Thus, to remove shared variance, we did not orthogonalize regressors in this analysis (see Materials and Methods). A contrast across the two EV regressors formally tests whether each voxel is more related to feedback-driven or instruction-driven EV. Results from this contrast are presented in Figure 4. Voxelwise FDR-corrected analyses revealed that the bilateral amygdala was preferentially correlated with feedback-driven EV, while the right caudate and left putamen showed preferential correlations with instruction-based EV (see Figure 4B, Figure 4—figure supplement 1, and Figure 4—figure supplement 1—source data 1). ROI-based analyses confirmed voxelwise results, with a main effect of Region (F(2,40) = 3.76, p=0.0324; Figure 4A), driven by amygdala correlations with feedback-driven EV but not instructed EV (t(1,19) = 2.57, p=0.0189), although striatal differences between models were not significant when averaged across the entire ROI. Although these effects were somewhat weak when limited to learners, effects increased in magnitude when we examined the entire Instructed Group, including individuals who did not exhibit measurable SCRs (see Figure 4—figure supplement 1 and Figure 4—figure supplement 1—source data 2). When we included all Instructed Group participants, we also observed negative correlations with instruction-based EV in the VMPFC/OFC. ROI-wise analyses across the entire Instructed Group revealed that the main effect of Region (F(2, 60) = 7.12, p =0.0017) was driven by both bilateral amygdala specificity for feedback-driven EV (t(1,29) = 2.93, p =0.0066) as well as VMPFC/OFC specificity for instructed EV (t(1,29) = 2.29, p =0.0293).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig4-v2.jpg)
 
-**Figure 4.:** (A) ROI-based effects of feedback-driven and instruction based EV signaling within Instructed Group learners from the model including both signals (see Materials and Methods). Direct model comparisons within Instructed Group learners revealed a significant effect of Model in the amygdala (p<0.05). VMPFC differences were marginal within learners (p = 0.11) and were significant when all Instructed Group participants were included in analyses (p<0.05). Error bars reflect standard error of the mean. ***p<0.001; *p<0.05; †p<0.10. (B) Voxelwise direct comparison between feedback-driven and instruction based EV signaling within the Instructed Group. Regions in warm colors, including bilateral amygdala (left), showed preferential correlations with feedback-driven EV. Regions in cool colors, including left caudate (middle), dorsal anterior cingulate and medial prefrontal cortex (right), showed higher correlations with instruction-based EV. Additional regions that showed significant differences as a function of model are presented in Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.15192.015
+**Figure 4.:** (A) ROI-based effects of feedback-driven and instruction based EV signaling within Instructed Group learners from the model including both signals (see Materials and Methods). Direct model comparisons within Instructed Group learners revealed a significant effect of Model in the amygdala (p<0.05). VMPFC differences were marginal within learners (p = 0.11) and were significant when all Instructed Group participants were included in analyses (p<0.05). Error bars reflect standard error of the mean. ***p<0.001; *p<0.05; †p<0.10. (B) Voxelwise direct comparison between feedback-driven and instruction based EV signaling within the Instructed Group. Regions in warm colors, including bilateral amygdala (left), showed preferential correlations with feedback-driven EV. Regions in cool colors, including left caudate (middle), dorsal anterior cingulate and medial prefrontal cortex (right), showed higher correlations with instruction-based EV. Additional regions that showed significant differences as a function of model are presented in Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1 and 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Voxelwise FDR-corrected results of direct comparison between feedback-driven and instruction based EV signaling within the Instructed Group. Feedback-driven EV is based on the model fit to the Uninstructed Group learners, while instruction-based EV is based on fit to the Instructed Group learners. Regions in warm colors showed preferential correlations with feedback-driven EV, while regions in cool colors showed higher correlations with instruction-based EV. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 4—figure supplement 1—source data 1' and 'Figure 4—figure supplement 1—source data 2.'DOI: http://dx.doi.org/10.7554/eLife.15192.01610.7554/eLife.15192.017Figure 4—figure supplement 1—source data 1.This table presents brain regions that show preferential correlations with either feedback-driven or instruction-based EV, based on direct contrasts between the two signals. Analyses are restricted to Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.01710.7554/eLife.15192.018Figure 4—figure supplement 1—source data 2.This table presents brain regions that show preferential correlations with either feedback-driven or instruction-based EV, based on direct contrasts between the two signals. Analyses include the entire Instructed Group (n = 30). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.018
+**Figure 4—figure supplement 1.:** Voxelwise FDR-corrected results of direct comparison between feedback-driven and instruction based EV signaling within the Instructed Group. Feedback-driven EV is based on the model fit to the Uninstructed Group learners, while instruction-based EV is based on fit to the Instructed Group learners. Regions in warm colors showed preferential correlations with feedback-driven EV, while regions in cool colors showed higher correlations with instruction-based EV. Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 4—figure supplement 1—source data 1' and 'Figure 4—figure supplement 1—source data 2.'
 
-## Verifying the models: Dissociable effects of instructed reversals in the instructed group
+### Verifying the models: Dissociable effects of instructed reversals in the instructed group
 
-Quantitative models revealed that the striatum and VMPFC/OFC track aversive learning that updates with instructions, whereas the amygdala learns from aversive feedback irrespective of instruction. To further verify these dissociations with traditional contrast-based analyses that were independent of learning models and observed behavior, we employed a task-based, event-related General Linear Model (GLM). This allowed us to isolate the effects of instructed reversals within the Instructed Group by focusing specifically on the trials surrounding instructions, prior to subsequent reinforcement. The analysis leverages the delay between instruction delivery and US reinforcement (
+Quantitative models revealed that the striatum and VMPFC/OFC track aversive learning that updates with instructions, whereas the amygdala learns from aversive feedback irrespective of instruction. To further verify these dissociations with traditional contrast-based analyses that were independent of learning models and observed behavior, we employed a task-based, event-related General Linear Model (GLM). This allowed us to isolate the effects of instructed reversals within the Instructed Group by focusing specifically on the trials surrounding instructions, prior to subsequent reinforcement. The analysis leverages the delay between instruction delivery and US reinforcement (Figure 5A) and mirrors our behavioral analysis of the immediate effects of instructed reversals on SCR. We compared brain responses pre- and post-instruction by computing a CS ([previous CS+ > previous CS-]) x Phase ([Pre - Post]) interaction analysis. This provided a within-subjects comparison between instructed reversals and feedback-driven reversals. Furthermore, this analysis is entirely independent of the Uninstructed Group, and therefore allows us to ensure that the results and conclusions reported above do not simply reflect a difference in performance or learning rate between the two groups.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig5-v2.jpg)
 
-**Figure 5.:** (A) We examined responses in the Instructed Group surrounding the three instructed reversals to dissociate regions that are sensitive to instructions from those that learn from feedback and seem to be insensitive to instructions. Regions that are sensitive to instructions should show differential responses that reverse immediately upon instruction. The lavender timecourse depicts this pattern with greater activation on CS+ trials (blue) than CS- trials (yellow) prior to instruction, and the opposite pattern after instructions are delivered. Regions that update from aversive feedback and show no effect of instructed reversals would follow the orange timecourse, with greater activation to the previous CS+ than CS- both pre- and post-instruction. This feedback-driven pattern does not update until the new CS+ has been reinforced. (B) A number of regions showed differential responses that reversed upon instruction, including the right VS and VMPFC/OFC (left; see also Figure 5—figure supplement 1, Figure 5—figure supplement 1—source data 1 and 2). The VS showed greater activation to the current CS+ relative to the current CS-, whereas the VMPFC/OFC showed deactivation to the CS+. The right amygdala showed differential activation that did not reverse with instructions (right). Additional regions that did not reverse with instructions are presented in Figure 5—figure supplement 2, Figure 5—figure supplement 2—source data 1 and 2. (C) We conducted brain-behavior correlations to explore the relationship between neural activity in the period surrounding instructions and the magnitude of each individual’s behavioral response to instructions. We tested for correlations between each individual’s ρ parameter (based on within-subjects fits) and the magnitude of the reversal effect using an exploratory threshold of p<0.001, uncorrected. We observed significant correlations between ρ and the magnitude of instructed reversals in dACC (left) and the bilateral caudate tail and thalamus (right), as well as bilateral DLPFC (see Figure 5—figure supplement 3), suggesting that those individuals who showed stronger reversals in SCR also showed stronger reversals in these regions. In addition, we found that the individuals who showed the least evidence for updating with instructions also showed the largest non-reversing differential responses in the right amygdala (right). Full results of brain-behavior correlations are reported in Figure 5—figure supplement 3 and Figure 5—figure supplement 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.15192.019
+**Figure 5.:** (A) We examined responses in the Instructed Group surrounding the three instructed reversals to dissociate regions that are sensitive to instructions from those that learn from feedback and seem to be insensitive to instructions. Regions that are sensitive to instructions should show differential responses that reverse immediately upon instruction. The lavender timecourse depicts this pattern with greater activation on CS+ trials (blue) than CS- trials (yellow) prior to instruction, and the opposite pattern after instructions are delivered. Regions that update from aversive feedback and show no effect of instructed reversals would follow the orange timecourse, with greater activation to the previous CS+ than CS- both pre- and post-instruction. This feedback-driven pattern does not update until the new CS+ has been reinforced. (B) A number of regions showed differential responses that reversed upon instruction, including the right VS and VMPFC/OFC (left; see also Figure 5—figure supplement 1, Figure 5—figure supplement 1—source data 1 and 2). The VS showed greater activation to the current CS+ relative to the current CS-, whereas the VMPFC/OFC showed deactivation to the CS+. The right amygdala showed differential activation that did not reverse with instructions (right). Additional regions that did not reverse with instructions are presented in Figure 5—figure supplement 2, Figure 5—figure supplement 2—source data 1 and 2. (C) We conducted brain-behavior correlations to explore the relationship between neural activity in the period surrounding instructions and the magnitude of each individual’s behavioral response to instructions. We tested for correlations between each individual’s ρ parameter (based on within-subjects fits) and the magnitude of the reversal effect using an exploratory threshold of p<0.001, uncorrected. We observed significant correlations between ρ and the magnitude of instructed reversals in dACC (left) and the bilateral caudate tail and thalamus (right), as well as bilateral DLPFC (see Figure 5—figure supplement 3), suggesting that those individuals who showed stronger reversals in SCR also showed stronger reversals in these regions. In addition, we found that the individuals who showed the least evidence for updating with instructions also showed the largest non-reversing differential responses in the right amygdala (right). Full results of brain-behavior correlations are reported in Figure 5—figure supplement 3 and Figure 5—figure supplement 3—source data 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Regions in warm colors showed greater activation to the current CS+ relative to the current CS-, while regions in cool colors show relatively greater activation to the CS- (or deactivation to the CS+). Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 5—figure supplement 1—source data 1' and 'Figure 5—figure supplement 1—source data 2.'DOI: http://dx.doi.org/10.7554/eLife.15192.02010.7554/eLife.15192.021Figure 5—figure supplement 1—source data 1.This table presents brain regions whose differential responses (CS+ vs CS-) reversed immediately upon instruction. Regions that were positive in this contrast show greater activation with the current CS+ relative to the current CS-, whereas those that are negative show deactivation to the CS+ or increases with the CS-. Analyses are restricted to Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q<0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.02110.7554/eLife.15192.022Figure 5—figure supplement 1—source data 2.This table presents brain regions whose differential responses (CS+ vs CS-) reversed immediately upon instruction. Analyses include the entire Instructed Group (n = 30). Results are whole-brain FDR-corrected (q<0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.022
+**Figure 5—figure supplement 1.:** Regions in warm colors showed greater activation to the current CS+ relative to the current CS-, while regions in cool colors show relatively greater activation to the CS- (or deactivation to the CS+). Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 5—figure supplement 1—source data 1' and 'Figure 5—figure supplement 1—source data 2.'
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** [previous CS+ > previous CS-] ∪ [new CS- > new CS+]) Voxelwise FDR-corrected results of regions that show no evidence for reversal when instructions are delivered, based on continued differential responses pre- and post-instruction (see Materials and Methods). Regions in warm colors showed greater activation to the pre-instruction CS+ relative to the CS- both pre- and post-instruction, while regions in cool colors show relatively greater activation to the CS- (or deactivation to the CS+). Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 5—figure supplement 2—source data 1' and 'Figure 5—figure supplement 2—source data 2.'DOI: http://dx.doi.org/10.7554/eLife.15192.02310.7554/eLife.15192.024Figure 5—figure supplement 2—source data 1.This table presents brain regions whose differential responses (CS+ vs CS-) did not reverse upon instruction in Instructed Group learners (n = 20). Regions that were positive in this contrast show greater activation to the pre-instruction CS+ relative to the CS- both pre- and post-instruction, whereas those that are negative show deactivation to the CS+ or increases with the CS-. Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.02410.7554/eLife.15192.025Figure 5—figure supplement 2—source data 2.This table presents brain regions whose differential responses (CS+ vs CS-) did not reverse upon instruction in the entire Instructed Group (n = 30). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.025
+**Figure 5—figure supplement 2.:** [previous CS+ > previous CS-] ∪ [new CS- > new CS+]) Voxelwise FDR-corrected results of regions that show no evidence for reversal when instructions are delivered, based on continued differential responses pre- and post-instruction (see Materials and Methods). Regions in warm colors showed greater activation to the pre-instruction CS+ relative to the CS- both pre- and post-instruction, while regions in cool colors show relatively greater activation to the CS- (or deactivation to the CS+). Top: Results in learners, or those individuals who showed differential SCR prior to the first reversal (n = 20). Bottom: Results across the entire Instructed Group (n = 30). For complete results in tabular format, please see 'Figure 5—figure supplement 2—source data 1' and 'Figure 5—figure supplement 2—source data 2.'
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** Voxelwise FDR-corrected results of brain-behavior correlations that tested for correlations between each individual’s ρ parameter (based on within-subjects fits) and the magnitude of the reversal effect or absence of reversals using an exploratory threshold of p<0.001, uncorrected. Regions in warm colors show positive correlations between the magnitude of the instructed reversal parameter and the strength of reversal (Top) or sustained differential response (Bottom) in the region, while regions in cool colors show negative correlations. We focused on Instructed Group learners for these analyses. Top: Correlation between the instructed reversal parameter and immediate reversals with instructions (CS x Phase interactions). Bottom: Correlation between the instructed reversal parameter and the absence of instructed reversal (main effect of CS without reversal). For complete results in tabular format, please see 'Figure 5—figure supplement 3—source data 1' and 'Figure 5—figure supplement 3—source data 2.'DOI: http://dx.doi.org/10.7554/eLife.15192.02610.7554/eLife.15192.027Figure 5—figure supplement 3—source data 1.This table presents brain regions in which the ρ parameter correlated positively (warm) or negatively (cool) with the magnitude of the CS x Phase interaction, which indicates differential responses (CS+ vs CS-) that reverse upon instruction in Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.02710.7554/eLife.15192.028Figure 5—figure supplement 3—source data 2.This table presents brain regions in which the ρ parameter correlated positively (warm) or negatively (cool) with the magnitude of the sustained differential response in Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.028
+**Figure 5—figure supplement 3.:** Voxelwise FDR-corrected results of brain-behavior correlations that tested for correlations between each individual’s ρ parameter (based on within-subjects fits) and the magnitude of the reversal effect or absence of reversals using an exploratory threshold of p<0.001, uncorrected. Regions in warm colors show positive correlations between the magnitude of the instructed reversal parameter and the strength of reversal (Top) or sustained differential response (Bottom) in the region, while regions in cool colors show negative correlations. We focused on Instructed Group learners for these analyses. Top: Correlation between the instructed reversal parameter and immediate reversals with instructions (CS x Phase interactions). Bottom: Correlation between the instructed reversal parameter and the absence of instructed reversal (main effect of CS without reversal). For complete results in tabular format, please see 'Figure 5—figure supplement 3—source data 1' and 'Figure 5—figure supplement 3—source data 2.'
 
 We first identified regions that reversed immediately upon instruction (CS x Phase interaction). Such regions should show differential activation to the previous CS+ than CS- prior to instruction, and similar activation to the new CS+ relative to the new CS- after instructions, prior to reinforcement. We observed immediate instructed reversal effects in the ventral striatum and VMPFC/OFC. The VMPFC/OFC was identified in both ROI-based and voxel-wise analyses, while the striatal activation was evident in voxel-wise analyses (see Figure 5B, Figure 5—figure supplement 1, and Figure 5—figure supplement 1—source data 1). Post-hoc analyses revealed that the VS showed greater activation to the current CS+, relative to the corresponding CS-, while VMPFC/OFC showed greater deactivation to the current CS+ (t(1,19) = -4.82, p=p =0.0001). Instructed reversal effects in the striatum and VMPFC/OFC were stronger and more widespread when the entire Instructed Group was included in the analysis (see Figure 5—figure supplement 1 and Figure 5—figure supplement 1—source data 2). Whole-brain exploratory analyses also revealed immediate reversals with greater activation to the current CS+ in the dorsal anterior cingulate cortex (dACC), bilateral insula, thalamus, and midbrain surrounding the periaqueductal gray (PAG), and deactivation in bilateral hippocampus (see Figure 5B, Figure 5—figure supplement 1, Figure 5—figure supplement 1—source data 1, and Figure 5—figure supplement 1—source data 2).
 
@@ -132,17 +420,17 @@ We also identified regions that continued to show differential responses to the 
 
 Finally, we tested whether these task-based effects of instructions on neural activation were related to our quantitative models and effects on behavior. We used each individual’s ρ parameter (based on within-subjects model fitting; see Materials and Methods) to characterize the behavioral effects of instructions on SCR and aversive learning. We tested for correlations between this quantity and the magnitude of the instructed reversal effect (CS x Phase interaction) as well as the main effect without reversal ([previous CS+ > previous CS-] ∪ [new CS- > new CS+]), using an exploratory threshold of p <0.001, uncorrected. We found that the magnitude of the behavioral reversal effect was positively correlated with instructed reversal effects in bilateral dorsolateral prefrontal cortex (DLPFC), bilateral caudate tail and thalamus, dACC, and right anterior insula (see Figure 5C, Figure 5—figure supplement 3, and Figure 5—figure supplement 3—source data 1). Conversely, differential responses in the amygdala (which did not reverse with instructions) were strongest in those individuals whose behavior showed the weakest influence of instructions (see Figure 5C, Figure 5—figure supplement 3, and Figure 5—figure supplement 3—source data 2).
 
-## Relationship between instructed reversal effects and dorsolateral prefrontal cortex response to instructions
+### Relationship between instructed reversal effects and dorsolateral prefrontal cortex response to instructions
 
-The results reported above reveal dissociable effects of instructions on individual brain regions involved in aversive learning, and relate neural effects with observed behavior. Our final question was whether responses to instructions themselves influence subsequent learning-related neural responses. To understand how instructions influence aversive learning, we searched for brain regions that were uniquely sensitive to instructions, i.e. that showed a group difference across trials (CS onset, collapsed across CS+ and CS-). Although no regions survived FDR-correction, the left dorsolateral prefrontal cortex (DLPFC; middle frontal gyrus, peak voxel xyz = [-43 43 21]) showed greater activation across all trials in the Instructed Group at an uncorrected threshold of p<0.001 (
+The results reported above reveal dissociable effects of instructions on individual brain regions involved in aversive learning, and relate neural effects with observed behavior. Our final question was whether responses to instructions themselves influence subsequent learning-related neural responses. To understand how instructions influence aversive learning, we searched for brain regions that were uniquely sensitive to instructions, i.e. that showed a group difference across trials (CS onset, collapsed across CS+ and CS-). Although no regions survived FDR-correction, the left dorsolateral prefrontal cortex (DLPFC; middle frontal gyrus, peak voxel xyz = [-43 43 21]) showed greater activation across all trials in the Instructed Group at an uncorrected threshold of p<0.001 (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig6-v2.jpg)
 
-**Figure 6.:** (A) The left dorsolateral prefrontal cortex (DLPFC) showed group differences across all trials, with greater activation in the Instructed Group than the Uninstructed Group. (B) We extracted the magnitude of the DLPFC response to instructions for each individual within the Instructed Group. C) The magnitude of the DLPFC response to instructions was correlated with the magnitude of instructed reversals in VMPFC/OFC (left) and dorsal putamen (right). High DLPFC responders showed larger reversals, with putamen activation to the new CS+ relative to the new CS-and VMPFC/OFC deactivation to the new CS+ relative to the new CS-. See also Figure Supplement 1 and Figure 6—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.15192.029
+**Figure 6.:** (A) The left dorsolateral prefrontal cortex (DLPFC) showed group differences across all trials, with greater activation in the Instructed Group than the Uninstructed Group. (B) We extracted the magnitude of the DLPFC response to instructions for each individual within the Instructed Group. C) The magnitude of the DLPFC response to instructions was correlated with the magnitude of instructed reversals in VMPFC/OFC (left) and dorsal putamen (right). High DLPFC responders showed larger reversals, with putamen activation to the new CS+ relative to the new CS-and VMPFC/OFC deactivation to the new CS+ relative to the new CS-. See also Figure Supplement 1 and Figure 6—figure supplement 1—source data 1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/15192/elife-15192-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Voxelwise FDR-corrected results of brain-behavior correlations that tested for correlations between each Instructed individual’s DLPFC response to instructions (see Figure 6) and the magnitude of the reversal effect or absence of reversals using an exploratory threshold of p<0.001, uncorrected. Regions in warm colors show positive correlations between the magnitude of the DLPFC response and the strength of reversal, while regions in cool colors show negative correlations. We focused on Instructed Group learners for these analyses (n = 20). For complete results in tabular format, please see 'Figure 6—figure supplement 1—source data 1'.DOI: http://dx.doi.org/10.7554/eLife.15192.03010.7554/eLife.15192.031Figure 6—figure supplement 1—source data 1.This table presents brain regions in which the DLPFC response correlated positively (warm) or negatively (cool) with the magnitude of the CS x Phase interaction, which indicates differential responses (CS+ vs CS-) that reverse upon instruction in Instructed Group learners (n = 20). Results are whole-brain FDR-corrected (q < 0.05) and clusters are defined based on contiguity with voxels at uncorrected p<0.001 and p<0.01.DOI: http://dx.doi.org/10.7554/eLife.15192.031
+**Figure 6—figure supplement 1.:** Voxelwise FDR-corrected results of brain-behavior correlations that tested for correlations between each Instructed individual’s DLPFC response to instructions (see Figure 6) and the magnitude of the reversal effect or absence of reversals using an exploratory threshold of p<0.001, uncorrected. Regions in warm colors show positive correlations between the magnitude of the DLPFC response and the strength of reversal, while regions in cool colors show negative correlations. We focused on Instructed Group learners for these analyses (n = 20). For complete results in tabular format, please see 'Figure 6—figure supplement 1—source data 1'.
 
 We then tested whether responses to instructions in this DLPFC region predicted the extent to which regions reversed immediately with instructions. We extracted DLPFC activation to the presentation of instructions for each Instructed Group participant (Figure 6B), and correlated this quantity with the magnitude of the instructed reversal effect (the CS x Phase interaction reported above) throughout the brain. We observed significant positive correlations in the right putamen (peak voxel xyz = [24 8 11]) and negative correlations in the VMPFC/mOFC (peak voxel xyz = [-5 40 -17]; see Figure 6C), although the VMPFC/mOFC cluster was slightly smaller than our cluster threshold (9 voxels rather than 10). In both cases, individuals who showed greater DLPFC activation during instruction showed stronger reversals, with greater activation to the current CS+ than CS- in the putamen, and greater deactivation to the current CS+ in the VMPFC/mOFC. Whole brain results are reported in Figure 6—figure supplement 1 and Figure 6—figure supplement 1—source data 1.
 
@@ -166,65 +454,85 @@ A critical outstanding question is whether the instruction-based effects and dis
 
 A novel feature of our paradigm was the inclusion of repeated instructed reversals, which enabled us to use within-group comparisons to dissociate instructed and feedback-driven learning in the Instructed Group. We also included an Uninstructed Group as a control group to isolate purely feedback-driven knowledge – this group was not informed during initial learning or upon reversal. Future studies can use a full 2 x 2 design (instructed vs. uninstructed x initial learning vs. reversals) to determine the extent to which initial information influences subsequent learning.
 
-## Summary
+### Summary
 
 We found dissociable effects of instructions on the brain regions involved in aversive learning. Many regions, including the striatum and VMPFC/OFC, updated immediately with instructions. However, responses in the amygdala were not shaped by instructions in our task, as the amygdala required aversive feedback in order to update. These results indicate that the neural mechanisms of dynamic aversive learning include processes that perform the same computations across appetitive and aversive domains (i.e. striatal learning that updates with instructions), as well as unique patterns that may be specific to aversive learning due to evolutionary adaptations and the biological relevance of threat processing.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Eighty right-handed English-speaking participants were enrolled in the experiment. Participants were not enrolled if they were taking any anti-depressant or anti-anxiety medication, had heart or blood pressure problems, were pregnant, or had completed a study that applied electric shocks within the previous six months. All participants provided informed consent as approved by New York University’s Institutional Review Board, the University Committee on Activities Involving Human Subjects (UCAIHS; protocol #12–8965 and #13–9582). Participants were informed that the study was voluntary, and that the goals of the study were to learn about emotional responses to images that predict shock, and to learn more about how physiological responses and the activity of different regions of the brain are related to emotion and learning. Three consented participants did not participate in the experiment because we were unable to measure skin conductance. Data from eight participants were not included in the analyses either because they did not complete the study due to discomfort during the scan (n = 3) or because they slept for an extended period of time during the experiment (n = 5). Finally, intermittent signal loss prevented us from analyzing skin conductance data for one participant, leaving a final sample of sixty-eight participants (46 Female; mean age = 22.1 years (SE = 0.42)).
 
-## Stimuli and apparatus
+### Stimuli and apparatus
 
 Participants received mild electric shocks (200 ms duration, 50 pulses per second) to the right wrist using a magnetically shielded stimulator and electrodes (Grass Medical Instruments, West Warwick, RI) attached by Velcro. We measured skin conductance using shielded silver-silver chloride electrodes (BIOPAC Systems, Inc., Goleta, CA) filled with standard NaCl electrolyte gel, and attached by Velcro to the middle phalanges of the second and third fingers of the left hand. Pupillometry data were also collected, but data were corrupted for the majority of participants and are therefore not included in the current analysis.
 
-## Experimental design
+### Experimental design
 
-## Breath-holding test and shock calibration procedure
+#### Breath-holding test and shock calibration procedure
 
 Upon entering the scanner suite, we affixed skin conductance electrodes to the participants’ left index and middle fingers. We used a 3-second breath-hold test to ensure we could record adequate SCRs from each participant. Three participants did not show any SCR to the breath-hold, and were excluded from the experiment.
 
 Following the breath-hold test, shock electrodes were attached to the participant’s right inner wrist. Shock intensity level was calibrated using a standard work-up procedure prior to the functional portion of the experiment. Intensities started at 15V (200 ms, 50 pulses/s) and increased in 5V increments until the participant identified the maximum level he or she could tolerate without experiencing pain, with a maximum intensity of 60V. Participants were told to identify a level that was “annoying, aversive, and unpleasant but not quite painful.” This intensity was recorded and used during the main experiment. The mean intensity selected across the full sample was 37.3V (SD = 1.1), and the two groups did not significantly differ in the voltage selected (p>0.5; Instructed Group: M = 36.9, SD = 7.84; Uninstructed Group: M = 37.6, SD = 10.3) as calibration was performed prior to random assignment. We performed the work-up procedure while the participant was in the fMRI suite to avoid context shifts between calibration and experimental portion of the study.
 
-## Pavlovian aversive learning with reversals
+#### Pavlovian aversive learning with reversals
 
 During the main experiment, participants went through a Pavlovian fear conditioning procedure with a 33% reinforcement rate (see Figure 1) while we acquired FMRI data. Two images of angry male faces from the Ekman set (Ekman and Oster, 1979) were used as conditioned stimuli (CS; counterbalanced across subjects), modeled after a previous study of aversive reversal learning (Schiller et al., 2008). In addition, angry faces are biologically relevant (i.e. prepared) stimuli, which have been shown to be less sensitive to verbal instructions in the context of instructed extinction (Hugdahl and Ohman, 1977). Thus such stimuli may present a uniquely difficult test of the effects of instructions during aversive reversal learning.
 
 Contingencies reversed every twenty trials during the task. We used two pseudorandom trial orders with the requirement that no two shocks were presented adjacent to one another, and that the same condition never repeated three times in a row. At the end of the task, participants used 5-point Likert scales to report how many reversals they had perceived (0 to >4), to rate their subjective probability of shock for each CS (0–100% in 20% increments) and how they felt about each CS (0 = very negative, 3 = neutral, 5 = very positive).
 
-## Instructed knowledge manipulation
+#### Instructed knowledge manipulation
 
 Individuals were randomly assigned to an Instructed Group or an Uninstructed Group. At the start of the task, participants in the Uninstructed Group saw the two CS images and were simply told “Your job is to pay attention to the relationship between the stimuli you see and the shocks that you feel.” The Instructed Group was informed about shock probabilities at the start of the experiment (see Figure 1A) and upon contingency reversals. Reversal instructions were presented for 10 s. A fixation cross was displayed during the same reversal period for the Uninstructed Group.
 
 Forty participants were randomly assigned to either the Instructed Group or Uninstructed Group. We analyzed the dataset at this point and determined that only a subset of participants had shown differential skin conductance prior to the first reversal. We then collected more data through pseudorandom assignment until we had twenty 'learners' (those who showed greater SCRs, on average, to the CS+ than the CS- in the second half of the first run) in each group. Learners were defined based on mean differences in SCR to the CS+ vs. CS- in late acquisition, but we did not require statistically significant differences due to the small number of trials included in the comparison (4 trials of each condition). In total, 30 participants completed the task in the Instructed Group (20 learners), and 40 participants completed the task in the Uninstructed Group (20 learners). Two Uninstructed participants were excluded from analyses, leading to a final full sample of 68 participants. Results that include all participants are presented in Supplemental Figures and Tables, and are entirely consistent with the analyses reported in the main manuscript, which are limited to learners.
 
-## Physiological data acquisition, processing, and analysis
+#### Physiological data acquisition, processing, and analysis
 
 Skin conductance was recorded with Acqknowledge software (BIOPAC Systems, Inc., Goleta, CA) at 200 Hz. Data were filtered using a 25-Hz low-pass FIR filter and smoothed with a Gaussian kernel of 10 samples. Trained research assistants who were blind to condition processed the trial-by-trial skin conductance data. We estimated base-to-peak amplitude in skin conductance to the first response in the 0.5- to 4.5-s latency window after CS onset. US trials were scored relative to the US presentation. Responses that were less than .02 microSiemens were considered non-responses (i.e. scores of 0). Raw SCR amplitude scores were square-root transformed to account for non-normal distributions (Schlosberg and Stanley, 1953) and normalized relative to the mean of the US response prior to analysis.
 
 Data were analyzed in Matlab (Mathworks, Natick, MA, USA) using custom code for linear mixed models (available at http://wagerlab.colorado.edu/tools), and verified using the lme4 package in R (Bates et al., 2011). We used linear mixed models to test whether participants showed differential responses to the CS+ relative to the CS-, whether these responses reversed, and whether the magnitude of these effects differed across groups. To do this, we created a matrix for each individual (First level analyses in Table 1) that coded each trial as a function of Stimulus (Original CS+ versus Original CS-) and Reversal (Original contingencies versus Reversed contingencies). The Reversal regressor was coded relative to when instructions were delivered in the Instructed Group and relative to when the new context was reinforced in the Uninstructed Group (i.e. when subjects received a shock following the previous CS-). The linear mixed model evaluated trial-by-trial SCRs as a function of these two effects as well as their interaction. The Stimulus x Reversal interaction assesses the extent to which differential responses reverse, i.e. whether participants show greater SCRs to the current CS+ relative to the current CS-, irrespective of the actual stimulus. We also included a linear effect of time in the model to account for habituation, and an intercept for each subject. Group was coded at the second level, and we tested whether the slopes of the individual effects or the intercept varied across groups.
 
-## Quantitative modeling
+### Quantitative modeling
 
 Our learning models assume that SCR correlates with dynamic quantities derived from feedback-driven or instructed learning models. Below we describe the quantitative models we evaluated, followed by our general procedures for model fitting.
 
-## Feedback-driven learning model
+#### Feedback-driven learning model
 
-We fit learning models to trial-by-trial SCRs from the Uninstructed Group to test whether reinforcement learning models can explain fear-conditioning behavior in the context of multiple reversals, and to generate predictors that will isolate the brain mechanisms of feedback-driven learning irrespective of instructed knowledge. The standard Rescorla-Wagner model learns an expected value (EV), denoted as for each CS, and assumes a constant learning rate (α):(1)Vn+1(xn)=Vn(xn)+αδn(2)δn=rn−Vn(xn)
+We fit learning models to trial-by-trial SCRs from the Uninstructed Group to test whether reinforcement learning models can explain fear-conditioning behavior in the context of multiple reversals, and to generate predictors that will isolate the brain mechanisms of feedback-driven learning irrespective of instructed knowledge. The standard Rescorla-Wagner model learns an expected value (EV), denoted as for each CS, and assumes a constant learning rate ($\alpha$):
 
-(where r=1 for shock, r=0 for no shock, n denotes the current trial, and δ = prediction error (PE), and V=EV). To derive the best fits for the Rescorla-Wagner model, we assumed V0=0.5 and set α as a free parameter, and evaluated regressions that assumed trial-by-trial SCRs correlate with EV (see “General procedures for model fitting and model comparison”, below).
+$$
+V_{n+1}(x_{n})=V_{n}(x_{n})+\alpha\delta_{n}
+$$
 
-## Instruction-based learning model
 
-To account for the influence of instructions, we introduced a new model that incorporated an additional reversal parameter (ρ) that determines the extent to which expected value reverses at the time when instructions are delivered. Learning proceeded as in the uninstructed learning model above until instructions were delivered (i.e. immediately following trials 20, 40, and 60). At the time of instructions, for each of the two cues (xa and xb), EV was computed as the sum of the current cue’s value multiplied by 1−ρ, plus the other cue’s value multiplied by ρ:(3)Vn+1(xa)=ρ∗Vn(xb)+(1−ρ)∗Vn(xa)(4)Vn+1(xb)=ρ∗Vn(xa)+(1−ρ)∗Vn(xb)
 
-Thus if ρ=0, each cue retains its value, whereas if ρ=1, cue xa acquires the value of cue xb.
+$$
+\delta_{n}=r_{n}−V_{n}(x_{n})
+$$
 
-Learning then proceeded according to the feedback-driven model until the next instructions were delivered. Because the Instructed Group was informed about the original cue contingencies, we assumed asymmetrical initial expected values (V0(CS+)=0.75,V0(CS−)=0.25). ρ was modeled as an additional free parameter.
+(where $r=1$ for shock, $r=0$ for no shock, $n$ denotes the current trial, and $\delta$ = prediction error (PE), and $V=EV$). To derive the best fits for the Rescorla-Wagner model, we assumed $V_{0}=0.5$ and set $\alpha$ as a free parameter, and evaluated regressions that assumed trial-by-trial SCRs correlate with EV (see “General procedures for model fitting and model comparison”, below).
 
-## General procedures for model fitting and model comparison
+#### Instruction-based learning model
+
+To account for the influence of instructions, we introduced a new model that incorporated an additional reversal parameter ($ρ$) that determines the extent to which expected value reverses at the time when instructions are delivered. Learning proceeded as in the uninstructed learning model above until instructions were delivered (i.e. immediately following trials 20, 40, and 60). At the time of instructions, for each of the two cues ($x_{a}$ and $x_{b}$), EV was computed as the sum of the current cue’s value multiplied by $1−ρ$, plus the other cue’s value multiplied by $ρ$:
+
+$$
+V_{n+1}(x_{a})=ρ^{∗}V_{n}(x_{b})+(1−ρ)^{∗}V_{n}(x_{a})
+$$
+
+
+
+$$
+V_{n+1}(x_{b})=ρ^{∗}V_{n}(x_{a})+(1−ρ)^{∗}V_{n}(x_{b})
+$$
+
+Thus if $ρ=0$, each cue retains its value, whereas if $ρ=1$, cue $x_{a}$ acquires the value of cue $x_{b}$.
+
+Learning then proceeded according to the feedback-driven model until the next instructions were delivered. Because the Instructed Group was informed about the original cue contingencies, we assumed asymmetrical initial expected values $(V_{0}(CS+)=0.75,V_{0}(CS−)=0.25)$. $ρ$ was modeled as an additional free parameter.
+
+#### General procedures for model fitting and model comparison
 
 We performed two types of model fitting, which differ in how flexibly they allow for individual differences between subjects in the model’s free parameters. First, we used a mixed effects model ('Across-subjects analysis'), wherein learning parameters were modeled as fixed parameters constant within each group but we allowed slopes to vary to compensate for variability across participants (Daw et al., 2006). This offers a clear picture of group-level learning effects and provides clean estimates appropriate for modeling fMRI data (Daw, 2011). We focus on these results in the main manuscript, and parameters from these models were used to create regressors for fMRI analyses. Second, we verified that the conclusions from these aggregate fits were consistent those from with more flexible (but noisier) estimates derived from an ensemble of individual fits to each subject’s data separately ('Within-subjects analysis'). Results of within-subjects analyses were entirely consistent with across-subject analyses, and are provided in Table 2. We used maximum likelihood estimation and Matlab’s fminsearch function to determine best-fitting parameters in all models.
 
@@ -232,17 +540,17 @@ Our main analyses focus on fits from the across-subjects / mixed effects analysi
 
 To verify that the conclusions of across-subjects models held at the level of the individual, we also performed within-subjects analyses, which fit models separately for each participant. These proceeded in the same way as the mixed effects models (i.e. minimization of the sum squared error from a linear model that included an intercept and a slope for the parameters of interest) but best-fitting parameters were identified separately for each individual. We used these distributions to statistically compare the magnitude of the estimated ρ parameter across groups, and to examine brain-behavior correlations (Figure 5C, Figure 5—figure supplement 3, Figure 5—figure supplement 3—source data 1 and 2).
 
-## FMRI data acquisition and analysis
+### FMRI data acquisition and analysis
 
-## Data acquisition
+#### Data acquisition
 
 Data were acquired on a 3T Siemens Allegra head-only scanner. Functional images were acquired with a single shot gradient-echo echoplanar imaging sequence (64 x 64 matrix, TR = 2000 ms, TE = 30 ms, FOV = 192 cm, flip angle = 90°). We proscribed 36 continuous oblique angle slices (3 x 3 x 3 mm voxels) using a 30-degree head tilt relative to the plane defined by the anterior commissure-posterior commissure to maximize signal in the OFC / VMPFC (Deichmann et al., 2003). Minimizing dropout in this region reduced parietal cortex coverage for a number of participants; thus findings are agnostic with respect to the contribution of parietal cortex regions to aversive learning. Anatomical images were acquired with a T1-weighted protocol (256 x 256 matrix, 176 1 mm sagittal slices).
 
-## Preprocessing
+#### Preprocessing
 
 We discarded the first five volumes and performed slice time correction, coregistration, and filtering (120 Hz high-pass filter) with SPM8 (Wellcome Center Department of Imaging Neuroscience, London, UK). Functional data were smoothed with a 4mm FWHM Gaussian kernel and coregistered to anatomical data. Data were normalized to MNI space using SPM’s ‘avg152T1.nii’ template.
 
-## General procedures for neuroimaging analyses
+#### General procedures for neuroimaging analyses
 
 We conducted four first-level whole-brain analyses using SPM8: 1) An analysis of feedback-driven aversive learning in all participants, based on EV regressors from the quantitative model fitted to SCRs from the Uninstructed Group; 2) An analysis of instructed aversive learning in the Instructed Group, based on EV regressors from the instructed learning model fitted to SCRs from the Instructed Group; 3) a direct comparison between feedback-driven and instruction-driven EV within the Instructed Group (described in more detail below) and 4) An analysis of the immediate effects of instructed reversals in the Instructed Group. First-level analyses employed the general linear model (GLM) in SPM8 without default implicit thresholding. We modeled cue onset and offset, and each EV regressor was included as a parametric modulator of the CS onset event. All events were convolved with a canonical gamma-variate hemodynamic response function (HRF). To evaluate the direct comparison between feedback-driven and instruction-driven EV within the Instructed Group, we disabled SPM’s orthogonalization (in the functions spm_get_ons.m and spm_fMRI_design.m). This removes any shared variance between the two EV regressors without prioritizing one regressor over the other, which would otherwise be standard in SPM’s default GLM approach when multiple regressors are included. In this analysis, we computed a second-level contrast within subjects to directly compare feedback-driven and instruction-driven EV, and contrast estimates were carried to the group level.
 
@@ -252,12 +560,12 @@ In the main manuscript, we focus on results in our a priori ROIs: amygdala, stri
 
 We used custom Matlab code (available at http://wagerlab.colorado.edu/tools) to extract and average across ROI-wise data, and we report ROI-wise analyses at standard p<0.05. We used false discovery rate (FDR) to correct for multiple comparisons in whole-brain voxel-wise analyses. For all main effects, activation clusters were defined as FDR-corrected voxels (q< 0.05) contiguous with voxels at uncorrected p<0.001 and p<0.01. Figures in the main manuscript display a maximum voxel-wise thresholds p<0.005 for precise localization. Correlations with individual difference measures (i.e. brain-behavior correlations with ρ parameters; connectivity with DLPFC), which are more exploratory, are reported at p<0.001, uncorrected (clusters required to have contiguous voxels at p<0.005 and p<0.01). For all voxelwise analyses, we imposed a minimum cluster extent of 10 voxels. We report coordinates in Montreal Neurological Institute (MNI) space. Anatomical labels were based on the SPM anatomy toolbox (Eickhoff et al., 2005) and verified using the Mai Atlas (Mai et al., 2016).
 
-## Neural correlates of feedback-driven and instructed aversive learning
+#### Neural correlates of feedback-driven and instructed aversive learning
 
 Regressors for fMRI analyses of learning-related signals were derived from the across-subjects fits to SCR, which generated best-fitting parameters. Our design had two trial orders, so we applied the best-fitting parameters to each sequence of stimuli to generate EV regressors for that were specific to each trial order. We used parameters fit across the Uninstructed Group to generate regressors for each trial order that were used to identify neural correlates of feedback-driven EV in all participants. Thus, the feedback-driven learning analyses use identical regressors for both the Uninstructed Group and Instructed Group, varying only as a function of trial order. Analyses focusing on the neural correlates of instructed aversive learning were based on parameters from the instructed learning model fit across participants in the Instructed Group.
 
 Learning model-based neuroimaging analyses modeled cue onset and cue offset as two discrete events. EV regressors were included as parametric modulators of cue onset. Shock occurrence (0 for trials with no shock, 1 for shock trials) and PE were modeled as parametric modulators of cue offset, but are not discussed in this paper due to algebraic collinearity with EV.
 
-## Instructed reversal analysis
+#### Instructed reversal analysis
 
 We analyzed the effects of instructed reversals by examining the trials that occurred in the window between the delivery of instructions and the first time the new CS+ was reinforced with a shock (see Figure 5). We compared responses on these trials (new CS+ and new CS-) with responses with the same number of trials of each condition immediately prior to each reversal (previous CS+ and previous CS-). Thus we assessed a Stimulus ([Previous CS+ - Previous CS-]) x Reversal Phase ([Post – Pre]) interaction analysis. Our analysis collapsed across all three reversals at the first level. Thus regions that were identified as showing greater activation to the previous CS+ than CS- across pre- and post-reversal (i.e. Main Effect without interaction) were required to have updated over the course of the run (i.e. with reinforcement), as they had to show greater activation to the opposite contingencies by the time the next reversal was modeled. This model also coded the instruction events at the first level (10-second boxcar at the time of instructions). Beta estimates from this instruction period estimate were extracted from the DLPFC cluster identified in a between-groups comparison across all CS onset trials and correlated with the magnitude of instructed reversals in a whole-brain search.

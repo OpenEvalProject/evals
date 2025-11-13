@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.21397.001 The success of fMRI places constraints on the nature of the neural code. The fact that researchers can infer similarities between neural representations, despite fMRI’s limitations, implies that certain neural coding schemes are more likely than others. For fMRI to succeed given its low temporal and spatial resolution, the neural code must be smooth at the voxel and functional level such that similar stimuli engender similar internal representations. Through proof and simulation, we determine which coding schemes are plausible given both fMRI’s successes and its limitations in measuring neural activity. Deep neural network approaches, which have been forwarded as computational accounts of the ventral stream, are consistent with the success of fMRI, though functional smoothness breaks down in the later network layers. These results have implications for the nature of the neural code and ventral stream, as well as what can be successfully investigated with fMRI. DOI: http://dx.doi.org/10.7554/eLife.21397.001
+The success of fMRI places constraints on the nature of the neural code. The fact that researchers can infer similarities between neural representations, despite fMRI’s limitations, implies that certain neural coding schemes are more likely than others. For fMRI to succeed given its low temporal and spatial resolution, the neural code must be smooth at the voxel and functional level such that similar stimuli engender similar internal representations. Through proof and simulation, we determine which coding schemes are plausible given both fMRI’s successes and its limitations in measuring neural activity. Deep neural network approaches, which have been forwarded as computational accounts of the ventral stream, are consistent with the success of fMRI, though functional smoothness breaks down in the later network layers. These results have implications for the nature of the neural code and ventral stream, as well as what can be successfully investigated with fMRI.
 
 ## Introduction
 
@@ -40,15 +40,15 @@ Given fMRI’s limitations in measuring neural activity, one might ask how it is
 
 For fMRI to recover neural similarity spaces, the neural code must display certain properties. Firstly, the neural code cannot be so fine-grained that fMRI’s temporal and spatial resolution limitations make it impossible to resolve representational differences. Second, a notion of functional smoothness, which we will introduce and define, must also be partially satisfied.
 
-## Voxel inhomogeneity across space and time
+### Voxel inhomogeneity across space and time
 
-The BOLD response summates neural activity over space and time, which places hard limits on what fMRI can measure. To make an analogy, 3+5 and 6+2 both equal 8 through different routes. If different ‘routes’ of neural activity are consequential to the neural code and are summated in the BOLD response, then fMRI will be blind to representational differences.
+The BOLD response summates neural activity over space and time, which places hard limits on what fMRI can measure. To make an analogy, $3+5$ and $6+2$ both equal $8$ through different routes. If different ‘routes’ of neural activity are consequential to the neural code and are summated in the BOLD response, then fMRI will be blind to representational differences.
 
-To capture representational differences, voxel response must be inhomogeneous both between voxels and within a voxel across time. Consider the fMRI analogues shown in
+To capture representational differences, voxel response must be inhomogeneous both between voxels and within a voxel across time. Consider the fMRI analogues shown in Figure 1; paralleling neurons with pixels and voxels with the squares on the superimposed grid. The top-left image depicts neural activity that smoothly varies such that the transitions from red to yellow occur in progressive increments. Summating within a square, i.e., a voxel, will not dramatically alter the high-level view of a smooth transition from red to yellow (bottom-left image). Voxel response is inhomogeneous, which would allow decoding by fMRI (cf. Kamitani and Tong, 2005; Alink et al., 2013). Altering the grid (i.e., voxel) size will not have a dramatic impact on the results as long as the square does not become so large as to subsume most of the pixels (i.e., neurons). This result is in line with basic concepts from information theory, such as the Nyquist-Shannon sampling theorem. The key is that the red and yellow pixels/neurons are topologically organized: their relationship to each other is for all intents and purposes invariant to the granularity of the squares/voxels (for more details see: Chaimow et al., 2011; Freeman et al., 2011; Swisher et al., 2010).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21397/elife-21397-fig1-v1.jpg)
 
-**Figure 1.:** Each square in the grid represents a voxel which summates activity within its frame as shown in the bottom panels. For the smoother pattern of neural activity, the summation of each voxel (bottom left) captures the changing gradient from left to right depicted in the top-left, whereas for the less smooth representation in the middle panel all voxels sum to the same orange value (bottom middle). Thus, differences in activation of yellow vs. red neurons are detectable using fMRI for the smooth case, but not for the less smooth case because voxel response is homogenous. Improving spatial resolution (right panels) by reducing voxel size overcomes these sampling limits, resulting in voxel inhomogeneity (bottom-right panel).DOI: http://dx.doi.org/10.7554/eLife.21397.003
+**Figure 1.:** Each square in the grid represents a voxel which summates activity within its frame as shown in the bottom panels. For the smoother pattern of neural activity, the summation of each voxel (bottom left) captures the changing gradient from left to right depicted in the top-left, whereas for the less smooth representation in the middle panel all voxels sum to the same orange value (bottom middle). Thus, differences in activation of yellow vs. red neurons are detectable using fMRI for the smooth case, but not for the less smooth case because voxel response is homogenous. Improving spatial resolution (right panels) by reducing voxel size overcomes these sampling limits, resulting in voxel inhomogeneity (bottom-right panel).
 
 In contrast, the center-top image in Figure 1 involves dramatic representational changes within voxel. Each voxel (square in the grid), in this case, will produce a homogenous orange color when its contents are summated. Thus, summating the contents of a voxel in this case obliterates the representational content: red and yellow; returning instead squares/voxels that are all the same uniform color: orange. This failure is due to sampling limits that could be addressed by smaller voxels (see rightmost column). Unfortunately, arbitrarily small voxels with high sampling rates is not a luxury afforded to fMRI.
 
@@ -62,31 +62,136 @@ The success of fMRI does not imply that the brain does not utilize precise timin
 
 These examples make clear that the neural code must be somewhat spatially and temporally smooth with respect to neural activity (which is several orders of magnitude smaller than voxels) for fMRI to be successful. Whatever is happening in the roughly one million neurons within a voxel (Huettel et al., 2009) through time is being partially reflected by the BOLD summation, which would not be the case if each neuron was computing something dramatically different for in-depth discussion, see: (Kriegeskorte et al., 2010).
 
-## Functional smoothness
+### Functional smoothness
 
 One general conclusion is that important aspects of the neural code are spatially and temporally smooth. In a sense, this notion of smoothness is trivial as it merely implies that changes in neural activity must be visible in the BOLD response (i.e., across-voxel inhomogeneity) for fMRI to be successful. In this section, we focus on a more subtle sense of smoothness that must also be satisfied, namely functional smoothness.
 
-Neighboring voxels predominantly contain similar representations (Norman et al., 2006), i.e., they are topologically organized like in Figure 1. However, super-voxel smoothness is neither necessary nor sufficient for fMRI to succeed in recovering similarity structure. Instead, a more general notion of functional smoothness must be satisfied in which similar stimuli map to similar internal representations. Although super-voxel and functional smoothness are both specified at the super-voxel level, these distinct concepts should not be confused. A function f that maps from some input x to output y is functionally smooth if and only if(1)sim(x1,x2)∝sim(y1,y2),
+Neighboring voxels predominantly contain similar representations (Norman et al., 2006), i.e., they are topologically organized like in Figure 1. However, super-voxel smoothness is neither necessary nor sufficient for fMRI to succeed in recovering similarity structure. Instead, a more general notion of functional smoothness must be satisfied in which similar stimuli map to similar internal representations. Although super-voxel and functional smoothness are both specified at the super-voxel level, these distinct concepts should not be confused. A function $f$ that maps from some input $x$ to output $y$ is functionally smooth if and only if
 
-where f⁢(x1)=y1 and f⁢(x2)=y2. For example, x and y could be the beta estimates for voxels in two brain regions and sim could be Pearson correlation. To measure functional smoothness, the degree of proportionality between all possible similarity pairs sim(x1,x2) and sim(y1,y2) also could be assessed by Pearson correlation (i.e., does the similarity between a y1 and y2 pair increase as the similarity increases between the corresponding x1 and x2 pair). By definition, functional smoothness needs to be preserved in the neural code for fMRI to recover similarity correspondences (as in RSA), whether these correspondences are between stimuli (e.g., xs) and neural activity (e.g., ys), multiple brain regions (e.g., xs and ys), or model measure (e.g., xs) and some brain region (e.g., ys).
+$$
+sim(x_{1},x_{2})∝sim(y_{1},y_{2}),
+$$
+
+where $f⁢(x_{1})=y_{1}$ and $f⁢(x_{2})=y_{2}$. For example, $x$ and $y$ could be the beta estimates for voxels in two brain regions and $sim$ could be Pearson correlation. To measure functional smoothness, the degree of proportionality between all possible similarity pairs $sim(x_{1},x_{2})$ and $sim(y_{1},y_{2})$ also could be assessed by Pearson correlation (i.e., does the similarity between a $y_{1}$ and $y_{2}$ pair increase as the similarity increases between the corresponding $x_{1}$ and $x_{2}$ pair). By definition, functional smoothness needs to be preserved in the neural code for fMRI to recover similarity correspondences (as in RSA), whether these correspondences are between stimuli (e.g., $x$s) and neural activity (e.g., $y$s), multiple brain regions (e.g., $x$s and $y$s), or model measure (e.g., $x$s) and some brain region (e.g., $y$s).
 
 From this definition, it should be clear that functional smoothness is distinct from super-voxel smoothness. For example, a brain area that showed smooth activity patterns across voxels for each individual face stimulus but whose activity did not reflect the similarity structure of the stimuli would be super-voxel smooth, but not functionally smooth with respect to the stimulus set. Conversely, a later section of this contribution discusses how neural networks with random weights are functionally but not super-voxel smooth.
 
 To help introduce the concept of functional smoothness, we consider two coding schemes used in engineering applications, factorial and hash coding, which are both inconsistent with the success of fMRI because they do not preserve functional smoothness. In the next section, we consider coding schemes, such as deep learning networks, that are functionally smooth to varying extents and are consistent with the success of fMRI.
 
-## Factorial design coding
+#### Factorial design coding
 
 Factorial design is closely related to the notion of hierarchy. For example, hierarchical approaches to human object recognition (Serre and Poggio, 2010) propose that simple visual features (e.g., a horizontal or vertical line) are combined to form more complex features (e.g., a cross). From a factorial perspective, the simple features can be thought of as main effects and the complex features, which reflect the combination of simple features, as interactions.
 
-In Table 1, a 23 two-level full factorial design is shown with three factors A, B, C, three two-way interactions AB, AC, BC, and a three-way interaction ABC, as well as an intercept term. All columns in the design matrix are pairwise orthogonal.10.7554/eLife.21397.004Table 1.Design matrix for a 23 full factorial design.DOI: http://dx.doi.org/10.7554/eLife.21397.004IABCABACBCABC1-1-1-1111-111-1-1-1-1111-11-1-11-11111-11-1-1-11-1-111-1-1111-11-11-1-11-111-1-11-111111111
+In Table 1, a 23 two-level full factorial design is shown with three factors A, B, C, three two-way interactions AB, AC, BC, and a three-way interaction ABC, as well as an intercept term. All columns in the design matrix are pairwise orthogonal.
+
+**Table 1.**
+ Design matrix for a $2^{3}$ full factorial design.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>I</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>AB</th>
+      <th>AC</th>
+      <th>BC</th>
+      <th>ABC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>-1</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 Applying the concept of factorial design to modeling the neural code involves treating each row in Table 1 as a representation. For example, each entry in a row could correspond to the activity level of a voxel. Interestingly, if any region in the brain solely had such a distribution of voxels, neural similarity would be impossible to recover by fMRI. The reason for this is that every representation (i.e., row in Table 1) is orthogonal to every other row, which means the neural similarity is the same for any pair of items. Thus, this coding scheme cannot uncover that low distortions are more similar to a category prototype than high distortions.
 
-Rather than demonstrate by simulation, we can supply a simple proof to make this case using basic linear algebra. Dividing each item in the n×n design matrix (i.e., Table 1) by n, makes each column orthonormal, i.e., each column will represent a unit vector and be orthogonal to the other columns. This condition means that the design matrix is orthogonal. For an orthogonal matrix, Q, like our design matrix, the following property holds: Q×QT=QT×Q=I; where QT is the transpose of Q (a matrix obtained by swapping columns and rows), and I is the identity matrix. This property of orthogonal matrices implies that rows and columns in the factorial design matrix are interchangeable, and that both rows and columns are orthogonal.
+Rather than demonstrate by simulation, we can supply a simple proof to make this case using basic linear algebra. Dividing each item in the $n\timesn$ design matrix (i.e., Table 1) by $\sqrt{n}$, makes each column orthonormal, i.e., each column will represent a unit vector and be orthogonal to the other columns. This condition means that the design matrix is orthogonal. For an orthogonal matrix, $Q$, like our design matrix, the following property holds: $Q\timesQ^{T}=Q^{T}\timesQ=I$; where $Q^{T}$ is the transpose of $Q$ (a matrix obtained by swapping columns and rows), and $I$ is the identity matrix. This property of orthogonal matrices implies that rows and columns in the factorial design matrix are interchangeable, and that both rows and columns are orthogonal.
 
-The internal representations created using a factorial design matrix do not cluster in ways that meaningfully reflect the categorical structure of the inputs. Due to the fact that each representation is created such that it is orthogonal to every other, there can be no way for information, correlations within and between categories, to emerge. Two inputs varying in just one dimension (i.e., pixel) would have zero similarity; this is inherently not functionally smooth. In terms of Equation 1 and Table 1, an x would be a three dimensional vector consisting of the values of A, B, and C, whereas its y would be the entire corresponding row from the table. Setting aside the degenerate case of self-similarity, there is no proportional relationship between similarity pairs because all y pairs have zero similarity. If the neural code for a region was employing a technique similar to factorial design, neuroimaging studies would never uncover similarity structures by looking at the activity patterns of voxels in that region.
+The internal representations created using a factorial design matrix do not cluster in ways that meaningfully reflect the categorical structure of the inputs. Due to the fact that each representation is created such that it is orthogonal to every other, there can be no way for information, correlations within and between categories, to emerge. Two inputs varying in just one dimension (i.e., pixel) would have zero similarity; this is inherently not functionally smooth. In terms of Equation 1 and Table 1, an $x$ would be a three dimensional vector consisting of the values of A, B, and C, whereas its $y$ would be the entire corresponding row from the table. Setting aside the degenerate case of self-similarity, there is no proportional relationship between similarity pairs because all $y$ pairs have zero similarity. If the neural code for a region was employing a technique similar to factorial design, neuroimaging studies would never uncover similarity structures by looking at the activity patterns of voxels in that region.
 
-## Hash function coding
+#### Hash function coding
 
 Hash functions assign arbitrary unique outputs to unique inputs, which is potentially useful for any memory system be it digital or biological. However, such a coding scheme is not functionally smooth by design. Hashing inputs allow for a memory, a data store known as a hash table, that is content-addressable (Hanlon, 1966; Knott, 1975) — also a property of certain types of artificial neural network (Hopfield, 1982; Kohonen et al., 1987). Using a cryptographic hash function means that the arbitrary location in memory of an input is a function of the input itself.
 
@@ -102,47 +207,47 @@ In this section, we consider whether neural networks with random weights are con
 
 Each simulation is analogous to performing fMRI on the candidate neural code. These simple simulations answer whether in principle neural similarity can be recovered from fMRI data taken from certain neural coding schemes. Stimuli are presented to a model while its internal representations are measured by a simulated fMRI scanner.
 
-The methods were as follows. The stimuli consist of 100-dimensional vectors that were distortions of an underlying prototype. As noise is added to the prototype and the distortion level increases, the neural similarity (measured using Pearson’s correlation coefficient ρ) between the prototype and its member should decrease. The question is whether we can recover this change in neural similarity in our simulated fMRI scanner.
+The methods were as follows. The stimuli consist of 100-dimensional vectors that were distortions of an underlying prototype. As noise is added to the prototype and the distortion level increases, the neural similarity (measured using Pearson’s correlation coefficient $ρ$) between the prototype and its member should decrease. The question is whether we can recover this change in neural similarity in our simulated fMRI scanner.
 
-First, each fully-connected network was initialized to random weights drawn from a Gaussian distribution (μ=0,σ=1). Then, a prototype was created from 100 draws from a Gaussian distribution (μ=0,σ=1). Nineteen distortions of the prototype were created by adding levels of Gaussian noise with increasing standard deviation (σ=σp⁢r⁢e⁢v+0.05) to the prototype. Finally, each item was re-normalized and mean centered, so that μ=0 and σ=1 regardless of the level of distortion. This procedure was repeated for 100 random networks. In the simulations that follow, the models considered involved some portion of the randomly-initialized 8-layer network (8×1002 weights).
+First, each fully-connected network was initialized to random weights drawn from a Gaussian distribution ($\mu=0,\sigma=1$). Then, a prototype was created from 100 draws from a Gaussian distribution ($\mu=0,\sigma=1$). Nineteen distortions of the prototype were created by adding levels of Gaussian noise with increasing standard deviation ($\sigma=\sigma_{p⁢r⁢e⁢v}+0.05$) to the prototype. Finally, each item was re-normalized and mean centered, so that $\mu=0$ and $\sigma=1$ regardless of the level of distortion. This procedure was repeated for 100 random networks. In the simulations that follow, the models considered involved some portion of the randomly-initialized 8-layer network ($8\times100^{2}$ weights).
 
-The coding schemes that follow are important components in artificial neural network models. The order of presentation is from the most basic components to more complex configurations of networks. To foreshadow the results shown in
+The coding schemes that follow are important components in artificial neural network models. The order of presentation is from the most basic components to more complex configurations of networks. To foreshadow the results shown in Figure 2, fMRI can recover the similarity structure for all of these models to varying degrees with the simpler models faring better than the more complex models.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/21397/elife-21397-fig2-v1.jpg)
 
-**Figure 2.:** (A) For the artificial neural network coding schemes, similarity to the prototype falls off with increasing distortion (i.e., noise). The models, numbered 1–11, are (1) vector space coding, (2) gain control coding, (3) matrix multiplication coding, (4), perceptron coding, (5) 2-layer network, (6) 3-layer network, (7) 4-layer network, (8) 5-layer network, (9) 6-layer network (10) 7-layer network, and (11), 8-layer network. The darker a model is, the simpler the model is and the more the model preserves similarity structure under fMRI. (B) A deep artificial neural network and the ventral stream can be seen as performing related computations. As in our simulation results, neural similarity should be more difficult to recover in the more advanced layers.DOI: http://dx.doi.org/10.7554/eLife.21397.005
+**Figure 2.:** (A) For the artificial neural network coding schemes, similarity to the prototype falls off with increasing distortion (i.e., noise). The models, numbered 1–11, are (1) vector space coding, (2) gain control coding, (3) matrix multiplication coding, (4), perceptron coding, (5) 2-layer network, (6) 3-layer network, (7) 4-layer network, (8) 5-layer network, (9) 6-layer network (10) 7-layer network, and (11), 8-layer network. The darker a model is, the simpler the model is and the more the model preserves similarity structure under fMRI. (B) A deep artificial neural network and the ventral stream can be seen as performing related computations. As in our simulation results, neural similarity should be more difficult to recover in the more advanced layers.
 
-## Vector space coding
+### Vector space coding
 
-The first in this line of models considered is vector space coding (i.e., ℝn), in which stimuli are represented as a vector of real-valued features. Representing concepts in multidimensional spaces has a long and successful history in psychology (Shepard, 1987). For example, in a large space, lions and tigers should be closer to each other than lions and robins because they are more similar. The kinds of operations that are naturally done in vector spaces (e.g., additions and multiplications) are particularly well suited to the BOLD response. For example, the haemodynamic response to individual stimuli roughly summates across a range of conditions (Dale and Buckner, 1997) and this linearity seems to extend to representational patterns (Reddy et al., 2009).
+The first in this line of models considered is vector space coding (i.e., $ℝ^{n}$), in which stimuli are represented as a vector of real-valued features. Representing concepts in multidimensional spaces has a long and successful history in psychology (Shepard, 1987). For example, in a large space, lions and tigers should be closer to each other than lions and robins because they are more similar. The kinds of operations that are naturally done in vector spaces (e.g., additions and multiplications) are particularly well suited to the BOLD response. For example, the haemodynamic response to individual stimuli roughly summates across a range of conditions (Dale and Buckner, 1997) and this linearity seems to extend to representational patterns (Reddy et al., 2009).
 
-In this neural coding scheme, each item (e.g., a dog) is represented as the set of values in its input vector (i.e., a set of numbers with range [-1,1]). This means that for a given stimulus, the representation this model produces is identical to the input. In this sense, vector space coding is functionally smooth in a trivial sense as the function is identity. As shown in Figure 2, neural similarity gradually falls off with added distortion (i.e., noise). Therefore, this very simple coding scheme creates representational spaces that would be successfully detected by fMRI.
+In this neural coding scheme, each item (e.g., a dog) is represented as the set of values in its input vector (i.e., a set of numbers with range $[-1,1]$). This means that for a given stimulus, the representation this model produces is identical to the input. In this sense, vector space coding is functionally smooth in a trivial sense as the function is identity. As shown in Figure 2, neural similarity gradually falls off with added distortion (i.e., noise). Therefore, this very simple coding scheme creates representational spaces that would be successfully detected by fMRI.
 
-## Gain control coding
+### Gain control coding
 
-Building on the basic vector space model, this scheme encodes each input vector by passing it through a monotonic non-linear function, the hyperbolic tangent function (tanh), which is functionally smooth. This results in each vector element being transformed, or squashed, to values between [-1,1]. Such functions are required by artificial neural networks (and perhaps the brain) for gain control (Priebe and Ferster, 2002). The practical effect of this model is to push the values in the model’s internal representation toward either -1 or 1. As can be seen in Figure 2, neural similarity is well-captured by the gain control neural coding model.
+Building on the basic vector space model, this scheme encodes each input vector by passing it through a monotonic non-linear function, the hyperbolic tangent function ($tanh$), which is functionally smooth. This results in each vector element being transformed, or squashed, to values between $[-1,1]$. Such functions are required by artificial neural networks (and perhaps the brain) for gain control (Priebe and Ferster, 2002). The practical effect of this model is to push the values in the model’s internal representation toward either $-1$ or $1$. As can be seen in Figure 2, neural similarity is well-captured by the gain control neural coding model.
 
-## Matrix multiplication coding
+### Matrix multiplication coding
 
-This model performs more sophisticated computations on the input stimuli. In line with early connectionism and Rescorla-Wagner modeling of conditioning, this model receives an input vector and performs matrix multiplication on it, i.e., computes the weighted sums of the inputs to pass on to the output layer (Knapp and Anderson, 1984; Rescorla and Wagner, 1972). These simple one-layer neural networks can be surprisingly powerful and account for a range of complex behavioral findings (Ramscar et al., 2013). As we will see in later subsections, when a non-linearity is added (e.g., tanh), one-layer networks can be stacked on one another to build deep networks.
+This model performs more sophisticated computations on the input stimuli. In line with early connectionism and Rescorla-Wagner modeling of conditioning, this model receives an input vector and performs matrix multiplication on it, i.e., computes the weighted sums of the inputs to pass on to the output layer (Knapp and Anderson, 1984; Rescorla and Wagner, 1972). These simple one-layer neural networks can be surprisingly powerful and account for a range of complex behavioral findings (Ramscar et al., 2013). As we will see in later subsections, when a non-linearity is added (e.g., $tanh$), one-layer networks can be stacked on one another to build deep networks.
 
-This neural coding scheme takes an input stimulus (e.g., an image of a dog) and multiplies it by a weight matrix to create an internal representation, as shown in
+This neural coding scheme takes an input stimulus (e.g., an image of a dog) and multiplies it by a weight matrix to create an internal representation, as shown in Figure 3. Interestingly, as shown in Figure 3, the internal representation of this coding scheme is completely nonsensical to the human eye and is not super-voxel smooth, yet it successfully preserves similarity structure (see Figure 2). Matrix multiplication maps similar inputs to similar internal representations. In other words, the result is not super-voxel smooth, but it is functionally smooth which we conjecture is critical for fMRI to succeed.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/21397/elife-21397-fig3-v1.jpg)
 
-**Figure 3.:** function on the input stimulus. tanhThe output of this one-layer network is shown, as well as the outcome of applying a non-linearity to the output of the matrix multiplication. In this example, functional smoothness is preserved whereas super-voxel smoothness is not. The result of applying this non-linearity can serve as the input to the next layer of a multi-layer network.DOI: http://dx.doi.org/10.7554/eLife.21397.006
+**Figure 3.:** The effect of matrix multiplication followed by the $tanh$ function on the input stimulus. The output of this one-layer network is shown, as well as the outcome of applying a non-linearity to the output of the matrix multiplication. In this example, functional smoothness is preserved whereas super-voxel smoothness is not. The result of applying this non-linearity can serve as the input to the next layer of a multi-layer network.
 
-## Perceptron coding
+### Perceptron coding
 
-The preceding coding scheme was a single-layer neural network. To create multi-layer networks, that are potentially more powerful than an equivalent single-layer network, a non-linearity (such as tanh) must be added to each network layer post-synaptically. Here, we consider a single-layer network with the tanh non-linearity included (see Figure 3). As with matrix multiplication previously, this neural coding scheme is successful (see Figure 2) with ‘similar inputs lead[ing] to similar outputs’ (Rummelhart et al., 1995, p. 31).
+The preceding coding scheme was a single-layer neural network. To create multi-layer networks, that are potentially more powerful than an equivalent single-layer network, a non-linearity (such as $tanh$) must be added to each network layer post-synaptically. Here, we consider a single-layer network with the $tanh$ non-linearity included (see Figure 3). As with matrix multiplication previously, this neural coding scheme is successful (see Figure 2) with ‘similar inputs lead[ing] to similar outputs’ (Rummelhart et al., 1995, p. 31).
 
-## Multi-layered neural network coding
+### Multi-layered neural network coding
 
 The basic network considered in the previous section can be combined with other networks, creating a potentially more powerful multi-layered network. These multi-layered models can be used to capture a stream of processing as is thought to occur for visual input to the ventral stream, shown in Figure 2B (DiCarlo and Cox, 2007; Riesenhuber and Poggio, 1999, 2000; Quiroga et al., 2005; Yamins and DiCarlo, 2016).
 
 In this section, we evaluate whether the similarity preserving properties of single-layer networks extend to deeper, yet still untrained, networks. The simulations consider networks with 2 to 8 layers. The models operate in a fashion identical to the perceptron neural coding model considered in the previous section. The perceptrons are stacked such that the output of a layer serves as the input to the next layer. We only perform simulated fMRI on the final layer of each model. These simulations consider whether the representations that emerge in multi-layered networks are plausible given the success of fMRI in uncovering similarity spaces see also: (Cox et al., 2015; Cowell et al., 2009; Edelman et al., 1998; Goldrick, 2008; Laakso and Cottrell, 2000). Such representations, as found in deep artificial neural network architectures, are uncovered by adding layers to discover increasingly more abstract commonalities between inputs (Graves et al., 2013; Hinton et al., 2006; Hinton, 2007; Hinton et al., 2015; LeCun et al., 2015).
 
-As shown in Figure 2, the deeper the network the less clear the similarity structure becomes. However, even the deepest network preserves some level of similarity structure. In effect, as layers are added, functional smoothness declines such that small perturbations to the initial input result in final-layer representations that tend to lie in arbitrary corners of the representational space, as the output takes on values that are +1 or -1 due to tanh. As layers are added, the network becomes potentially more powerful, but less functionally smooth, which makes it less suitable for analysis by fMRI because the similarity space breaks down. In other words, two similar stimuli can engender near orthogonal (i.e., dissimilar) representations at the most advanced layers of these networks. We measured functional smoothness for a large set of random input vectors using Equation 1 with Pearson correlation serving as both the similarity measure and measure of proportionality. Consistent with Figure 2’s results, at layer 1 (equivalent to the perceptron coding model) functional smoothness was 0.86, but declined to 0.22 by the eighth network layer. These values were calculated using all item pairs consisting of a prototype and one of its distortions. In the Discussion section, we consider the theoretical significance of these results in tandem with the deep learning network results (next section).
+As shown in Figure 2, the deeper the network the less clear the similarity structure becomes. However, even the deepest network preserves some level of similarity structure. In effect, as layers are added, functional smoothness declines such that small perturbations to the initial input result in final-layer representations that tend to lie in arbitrary corners of the representational space, as the output takes on values that are $+1$ or $-1$ due to $tanh$. As layers are added, the network becomes potentially more powerful, but less functionally smooth, which makes it less suitable for analysis by fMRI because the similarity space breaks down. In other words, two similar stimuli can engender near orthogonal (i.e., dissimilar) representations at the most advanced layers of these networks. We measured functional smoothness for a large set of random input vectors using Equation 1 with Pearson correlation serving as both the similarity measure and measure of proportionality. Consistent with Figure 2’s results, at layer 1 (equivalent to the perceptron coding model) functional smoothness was $0.86$, but declined to $0.22$ by the eighth network layer. These values were calculated using all item pairs consisting of a prototype and one of its distortions. In the Discussion section, we consider the theoretical significance of these results in tandem with the deep learning network results (next section).
 
 ## Deep learning networks
 
@@ -150,9 +255,9 @@ Deep learning networks (DLNs) have led to a revolution in machine learning and a
 
 In this contribution, one key question is whether functional smoothness breaks down at more advanced layers in DLNs as it did in the untrained random neural networks considered in the previous section. We address this question by presenting natural image stimuli (i.e., novel photographs) to a trained DLN, specifically Inception-v3 GoogLeNet (Szegedy et al., 2015b), and applying RSA to evaluate whether the similarity structure of items would be recoverable using fMRI.
 
-## Architecture
+### Architecture
 
-The DLN we consider, Inception-v3 GoogLeNet, is a convolutional neural network (CNN), which is a type of DLN especially adept at classification and recognition of visual inputs. CNNs excel in computer vision, learning from huge amounts of data. For example, human-like accuracy on test sets has been achieved by: LeNet, a pioneering CNN that identifies handwritten digits (LeCun et al., 1998); HMAX, trained to detect objects, e.g., faces, in cluttered environments (Serre et al., 2007); and AlexNet, which classifies photographs into 1000 categories (Krizhevsky et al., 2012).
+The DLN we consider, Inception-v3 GoogLeNet, is a convolutional neural network (CNN), which is a type of DLN especially adept at classification and recognition of visual inputs. CNNs excel in computer vision, learning from huge amounts of data. For example, human-like accuracy on test sets has been achieved by: LeNet, a pioneering CNN that identifies handwritten digits (LeCun et al., 1998); HMAX, trained to detect objects, e.g., faces, in cluttered environments (Serre et al., 2007); and AlexNet, which classifies photographs into $1000$ categories (Krizhevsky et al., 2012).
 
 The high-level architecture of CNNs consists of many layers (Szegedy et al., 2015a). These are stacked on top of each other, in much the same way as the stacked multilevel perceptrons described previously. A key difference is that CNNs have more variety especially in breadth (number of units) between layers.
 
@@ -160,21 +265,21 @@ In many CNNs, some of the network’s layers are convolutional, which contain co
 
 Convolutional and max-pooling layers provide a structure that is inherently hierarchical. Lower layers perform computations on small localized patches of the input, while deeper layers perform computations on increasingly larger, more global, areas of the stimuli. After such localized processing, it is typical to include layers that are fully-connected, i.e., are more classically connectionist. And finally, a layer with the required output structure, e.g., units that represent classes or a yes/no response as appropriate.
 
-Inception-v3 GoogLeNet uses a specific arrangement of these aforementioned layers, connected both in series and in parallel (Szegedy et al., 2015b, 2015a, 2016). In total it has 26 layers and 25 million parameters inclusive of connection weights (Szegedy et al., 2015b). The final layer is a softmax layer that is trained to activate a single unit per class. These units correspond to labels that have been applied to sets of photographs by humans, e.g., ‘space shuttle’, ‘ice cream’, ‘sock’, within the ImageNet database (Russakovsky et al., 2015).
+Inception-v3 GoogLeNet uses a specific arrangement of these aforementioned layers, connected both in series and in parallel (Szegedy et al., 2015b, 2015a, 2016). In total it has $26$ layers and $25$ million parameters inclusive of connection weights (Szegedy et al., 2015b). The final layer is a softmax layer that is trained to activate a single unit per class. These units correspond to labels that have been applied to sets of photographs by humans, e.g., ‘space shuttle’, ‘ice cream’, ‘sock’, within the ImageNet database (Russakovsky et al., 2015).
 
-Inception-v3 GoogLeNet has been trained on millions of human-labeled photographs from 1000 of ImageNet’s synsets (sets of photographs). The 1000-unit wide output produced by the network when presented with a photograph represents the probabilities of the input belonging to each of those classes. For example, if the network is given a photograph of a moped it may also activate the output unit that corresponds to bicycle with activation 0.03. This is interpreted as the network expressing the belief that there is a 3% probability that the appropriate label for the input is ‘bicycle’. In addition, this interpretation is useful because it allows for multiple classes to co-exist within a single input. For example, a photo with a guillotine and a wig in it will cause it to activate both corresponding output units. Thus the network is held to have learned a distribution of appropriate labels that reflect the most salient items in a scene. Inception-v3 GoogLeNet, achieves human levels of accuracy on test sets, producing the correct label in its five most probable guesses approximately 95% of the time (Szegedy et al., 2015b).
+Inception-v3 GoogLeNet has been trained on millions of human-labeled photographs from $1000$ of ImageNet’s synsets (sets of photographs). The $1000$-unit wide output produced by the network when presented with a photograph represents the probabilities of the input belonging to each of those classes. For example, if the network is given a photograph of a moped it may also activate the output unit that corresponds to bicycle with activation $0.03$. This is interpreted as the network expressing the belief that there is a $3%$ probability that the appropriate label for the input is ‘bicycle’. In addition, this interpretation is useful because it allows for multiple classes to co-exist within a single input. For example, a photo with a guillotine and a wig in it will cause it to activate both corresponding output units. Thus the network is held to have learned a distribution of appropriate labels that reflect the most salient items in a scene. Inception-v3 GoogLeNet, achieves human levels of accuracy on test sets, producing the correct label in its five most probable guesses approximately $95%$ of the time (Szegedy et al., 2015b).
 
-## Deep learning network simulation
+### Deep learning network simulation
 
-We consider whether functional smoothness declines as inputs are processed by the more advanced layers of Inception-v3 GoogLeNet. If so, fMRI should be less successful in brain regions that instantiate computations analogous to the more advanced layers of such networks. Unlike the previous simulations, we present novel photographs of natural categories to these networks. The key question is whether items from related categories (e.g., banjos and guitars) will be similar at various network layers. The 40 photographs (i.e., stimuli) are divided equally amongst 8 subordinate categories: banjos, guitars, mopeds, sportscars, lions, tigers, robins, and partridges, which in turn aggregate into 4 basic-level categories: musical instruments, vehicles, mammals, and birds; which in turn aggregate into 2 superordinates: animate and inanimate.
+We consider whether functional smoothness declines as inputs are processed by the more advanced layers of Inception-v3 GoogLeNet. If so, fMRI should be less successful in brain regions that instantiate computations analogous to the more advanced layers of such networks. Unlike the previous simulations, we present novel photographs of natural categories to these networks. The key question is whether items from related categories (e.g., banjos and guitars) will be similar at various network layers. The $40$ photographs (i.e., stimuli) are divided equally amongst $8$ subordinate categories: banjos, guitars, mopeds, sportscars, lions, tigers, robins, and partridges, which in turn aggregate into $4$ basic-level categories: musical instruments, vehicles, mammals, and birds; which in turn aggregate into $2$ superordinates: animate and inanimate.
 
-We consider how similar the internal network representations are for pairs of stimuli by comparing the resulting network activity, which is analogous to comparing neural activity over voxels in RSA. Correlations for all possible pairings of the
+We consider how similar the internal network representations are for pairs of stimuli by comparing the resulting network activity, which is analogous to comparing neural activity over voxels in RSA. Correlations for all possible pairings of the 40 stimuli were calculated for both a mid and a later network layer (see Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/21397/elife-21397-fig4-v1.jpg)
 
-**Figure 4.:** (A) The similarity structure in a middle layer of a DLN, Inception-v3 GoogLeNet. The mammals (lions and tigers) and birds (robins and partridges) correlate forming a high-level domain, rendering the upper-left quadrant a darker shade of red. Whereas the vehicles (sportscars and mopeds) and musical instruments (guitars and banjos) form two high-level categories. (B) In contrast, at a later layer in this network, the similarity space shows high within-category correlations and weakened correlations between categories. While some structure between categories is preserved, mopeds are no more similar to sportscars than they are to robins.DOI: http://dx.doi.org/10.7554/eLife.21397.007
+**Figure 4.:** (A) The similarity structure in a middle layer of a DLN, Inception-v3 GoogLeNet. The mammals (lions and tigers) and birds (robins and partridges) correlate forming a high-level domain, rendering the upper-left quadrant a darker shade of red. Whereas the vehicles (sportscars and mopeds) and musical instruments (guitars and banjos) form two high-level categories. (B) In contrast, at a later layer in this network, the similarity space shows high within-category correlations and weakened correlations between categories. While some structure between categories is preserved, mopeds are no more similar to sportscars than they are to robins.
 
-The middle layer (Figure 4A) reveals cross-category similarity at both the basic and superordinate level. For example, lions are more like robins than guitars. However, at the later layer (Figure 4B) the similarity structure has broken down such that subordinate category similarity dominates (i.e., a lion is like another lion, but not so much like a tiger). Interestingly, the decline in functional smoothness is not a consequence of sparseness at the later layer as the Gini coefficient, a measure of sparseness (Gini, 1909), is 0.947 for the earlier middle layer (Figure 4A) and 0.579 for the later advanced layer (Figure 4B), indicating that network representations are distributed in general and even more so at the later layer. Thus, the decline in functional smoothness at later layers does not appear to be a straightforward consequence of training these networks to classify stimuli, although it would be interesting to compare to unsupervised approaches that can perform at equivalent accuracy levels (no such network currently exists).
+The middle layer (Figure 4A) reveals cross-category similarity at both the basic and superordinate level. For example, lions are more like robins than guitars. However, at the later layer (Figure 4B) the similarity structure has broken down such that subordinate category similarity dominates (i.e., a lion is like another lion, but not so much like a tiger). Interestingly, the decline in functional smoothness is not a consequence of sparseness at the later layer as the Gini coefficient, a measure of sparseness (Gini, 1909), is $0.947$ for the earlier middle layer (Figure 4A) and $0.579$ for the later advanced layer (Figure 4B), indicating that network representations are distributed in general and even more so at the later layer. Thus, the decline in functional smoothness at later layers does not appear to be a straightforward consequence of training these networks to classify stimuli, although it would be interesting to compare to unsupervised approaches that can perform at equivalent accuracy levels (no such network currently exists).
 
 These DLN results are directly analogous to those with random untrained networks (see Figure 2). In those simulations, similar input patterns mapped to orthogonal (i.e., dissimilar) internal representations in later layers. Likewise, the trained DLN at later layers can only capture similarity structure within subordinate categories (e.g., a tiger is like another tiger) which the network was trained to classify. The effect of training the network was to create equivalence classes based on the training label (e.g., tiger) such that members of that category are mapped to similar network states. Violating functional smoothness, all other similarity structure is discarded such that a tiger is no more similar to a lion than to a banjo from the network’s perspective. Should brain regions operate in a similar fashion, fMRI would not be successful in recovering similarity structure therein. In the Discussion, we consider the implications of these findings on our understanding of the ventral stream and the prospects for fMRI.
 

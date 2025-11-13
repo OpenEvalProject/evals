@@ -24,31 +24,31 @@
 
 ### Affiliations
 
-1. https://ror.org/035t8zc32 Department of Microbiology, Graduate School of Dentistry, The University of Osaka Osaka Japan
-2. https://ror.org/035t8zc32 Bioinformatics Research Unit, Graduate School of Dentistry, The University of Osaka Osaka Japan
-3. https://ror.org/035t8zc32 Bioinformatics Center, Research Institute for Microbial Diseases, The University of Osaka Osaka Japan
-4. https://ror.org/035t8zc32 Center for Infectious Diseases Education and Research, The University of Osaka Osaka Japan
+1. Department of Microbiology, Graduate School of Dentistry, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+2. Bioinformatics Research Unit, Graduate School of Dentistry, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+3. Bioinformatics Center, Research Institute for Microbial Diseases, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. Center for Infectious Diseases Education and Research, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 5. Laboratory of Microbial Informatics, Microbial Research Center for Health and Medicine, National Institutes of Biomedical Innovation, Health and Nutrition Osaka Japan
-6. https://ror.org/035t8zc32 NGS Core Facility, Research Institute for Microbial Diseases, The University of Osaka Osaka Japan
-7. https://ror.org/035t8zc32 Integrated Frontier Research for Medical Science Division, Institute for Open and Transdisciplinary Research Initiatives (OTRI), The University of Osaka Osaka Japan
-8. https://ror.org/044vy1d05 Department of Oral Microbiology, Graduate School of Biomedical Sciences, Tokushima University Tokushima Japan
-9. https://ror.org/00r9w3j27 Pathogenic Microbe Laboratory, Department of Infectious Diseases, National Center for Global Health and Medicine Tokyo Japan
-10. https://ror.org/00r9w3j27 Department of Microbiology, Tokyo Metropolitan Institute of Public Health Tokyo Japan
-11. https://ror.org/01qwa2z73 Department of Bacteriology, Osaka Institute of Public Health Osaka Japan
-12. https://ror.org/04cb5cb57 Department of Public Health Sciences, Yamaguchi Prefectural Institute of Public Health and Environment Yamaguchi Japan
-13. https://ror.org/0495rze17 Department of Infectious Diseases, Kobe Institute of Health Hyogo Japan
+6. NGS Core Facility, Research Institute for Microbial Diseases, The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+7. Integrated Frontier Research for Medical Science Division, Institute for Open and Transdisciplinary Research Initiatives (OTRI), The University of Osaka Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+8. Department of Oral Microbiology, Graduate School of Biomedical Sciences, Tokushima University Tokushima Japan ([ROR:044vy1d05](https://ror.org/044vy1d05))
+9. Pathogenic Microbe Laboratory, Department of Infectious Diseases, National Center for Global Health and Medicine Tokyo Japan ([ROR:00r9w3j27](https://ror.org/00r9w3j27))
+10. Department of Microbiology, Tokyo Metropolitan Institute of Public Health Tokyo Japan ([ROR:00r9w3j27](https://ror.org/00r9w3j27))
+11. Department of Bacteriology, Osaka Institute of Public Health Osaka Japan ([ROR:01qwa2z73](https://ror.org/01qwa2z73))
+12. Department of Public Health Sciences, Yamaguchi Prefectural Institute of Public Health and Environment Yamaguchi Japan ([ROR:04cb5cb57](https://ror.org/04cb5cb57))
+13. Department of Infectious Diseases, Kobe Institute of Health Hyogo Japan ([ROR:0495rze17](https://ror.org/0495rze17))
 14. Fukushima Prefectural Institute for Public Health Ken-chu Branch Office Fukushima Japan
-15. https://ror.org/02ksnjk05 Division of Microbiology, Kyoto City Institute of Health and Environmental Sciences Kyoto Japan
+15. Division of Microbiology, Kyoto City Institute of Health and Environmental Sciences Kyoto Japan ([ROR:02ksnjk05](https://ror.org/02ksnjk05))
 16. Sapporo Public Health Office Hokkaido Japan
-17. https://ror.org/02zgnng91 Niigata City Institute of Public Health and the Environment Niigata Japan
-18. https://ror.org/046jdgp91 Microbiological Testing and Research Division, Yokohama City Institute of Public Health Kanagawa Japan
-19. https://ror.org/001ggbx22 Department of Bacteriology I, National Institute of Infectious Diseases Tokyo Japan
+17. Niigata City Institute of Public Health and the Environment Niigata Japan ([ROR:02zgnng91](https://ror.org/02zgnng91))
+18. Microbiological Testing and Research Division, Yokohama City Institute of Public Health Kanagawa Japan ([ROR:046jdgp91](https://ror.org/046jdgp91))
+19. Department of Bacteriology I, National Institute of Infectious Diseases Tokyo Japan ([ROR:001ggbx22](https://ror.org/001ggbx22))
 
 † Corresponding author
 
 ## Abstract
 
-Streptococcus pyogenes causes mild human infections as well as life-threatening invasive diseases. Since the mutations known to enhance virulence to date account for only half of the severe invasive infections, additional mechanisms/mutations need to be identified. Here, we conducted a genome-wide association study of emm 89 S. pyogenes strains to comprehensively identify pathology-related bacterial genetic factors (single-nucleotide polymorphisms [SNPs], indels, genes, or k-mers). Japanese ( n = 311) and global ( n = 666) cohort studies of strains isolated from invasive or non-invasive infections revealed 17 and 1075 SNPs/indels and 2 and 169 genes, respectively, that displayed associations with invasiveness. We validated one of them, a non-invasiveness-related point mutation, fhuB T218C, by structure predictions and introducing it into a severe invasive strain and confirmed that the mutant showed slower growth in human blood. Thus, we report novel mechanisms that convert emm 89 S. pyogenes to an invasive phenotype and a platform for establishing novel treatments and prevention strategies.
+Streptococcus pyogenes causes mild human infections as well as life-threatening invasive diseases. Since the mutations known to enhance virulence to date account for only half of the severe invasive infections, additional mechanisms/mutations need to be identified. Here, we conducted a genome-wide association study of emm89 S. pyogenes strains to comprehensively identify pathology-related bacterial genetic factors (single-nucleotide polymorphisms [SNPs], indels, genes, or k-mers). Japanese (n = 311) and global (n = 666) cohort studies of strains isolated from invasive or non-invasive infections revealed 17 and 1075 SNPs/indels and 2 and 169 genes, respectively, that displayed associations with invasiveness. We validated one of them, a non-invasiveness-related point mutation, fhuB T218C, by structure predictions and introducing it into a severe invasive strain and confirmed that the mutant showed slower growth in human blood. Thus, we report novel mechanisms that convert emm89 S. pyogenes to an invasive phenotype and a platform for establishing novel treatments and prevention strategies.
 
 ## Introduction
 
@@ -64,33 +64,65 @@ In the present study, we aimed to explore novel hypervirulent mechanisms of S. p
 
 ## Results
 
-## Collection of emm89 S. pyogenes clinical isolates in Japan and construction of cohorts
+### Collection of emm89 S. pyogenes clinical isolates in Japan and construction of cohorts
 
 We collected clinical S. pyogenes strains isolated between 2016 and 2021 from patients with non-invasive and severe invasive infections in Japan. The Ministry of Health, Labour, and Welfare of Japan has defined the clinical criteria of severe invasive β-hemolytic streptococcal infections as STSS, based on the STSS 2010 Case Definition of the Centers for Disease Control and Prevention in the US, with minor modifications, including the addition of encompassing symptoms in the central nervous system (Supplementary file 1, table S1; Ministry of Health, Labour and Welfare, 2025; Centers for Disease Control and Prevention, 2021).
 
 For the emm89 clinical isolates, we collected T serotype TB3264 and untypable strains, in addition to emm genotype-identified strains. T-typing is a serologically based approach that is often used as an alternative or supplement to emm typing. T-antigens are trypsin-resistant surface antigens exhibiting extensive antigenic diversity (Ikebe et al., 2003). Isolates of a given emm type frequently share the same T serotype pattern (Beall et al., 1998; Johnson and Kaplan, 1993). The T serotype TB3264 corresponds to the genotype emm89 or emm94 (Ikebe et al., 2021; Katsukawa et al., 2002). A total of 207 clinical isolates were collected with the cooperation of the National Institute of Infectious Diseases and 10 public health institutes nationwide (Supplementary file 1, tables S2 and S3). We performed draft genome sequencing of the strains and identified their emm types. In total, 150 of these were determined as emm89, followed by 24 and 19 strains as emm4 and emm12, respectively. To focus on the pathogenic mechanisms underlying severe invasive infections in the emm89 cohort, we used 150 emm89 strains for subsequent analyses (Figure 1A, Supplementary file 1, tables S2 and S3). We previously determined the draft genome sequences of 161 emm89 strains isolated in Japan between 2011 and 2019 and determined their phenotypes using the same criteria (Supplementary file 1, table S2; Hirose et al., 2020). We combined these two sets and finally considered a total of 311 emm89 strains, including 135 severe invasive and 176 non-invasive isolates, as the Japanese cohort.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig1-v1.jpg)
+
+**Figure 1.:** (A) emm genotyping of the 207 clinical isolates collected in Japan. (B) Pan-genome analysis of the Japanese and global cohorts. All genes detected in each cohort were classified into four groups, according to prevalence: core, soft-core, shell, and cloud genes. (C) Phylogenetic tree for the global cohort, based on the sequences of the core genes. From the inside, the color bars show clusters, phenotypes, MLSTs, clades, and countries where strains were isolated, and global regions, in the order mentioned. The root of the tree was set as the mid-point. The scale located upper left indicates 0.001 times substitution of the bases on average. Arrowhead indicates strain belonging to the novel clade. MLST, multilocus sequence typing.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** From the inside, color bars show clusters, phenotypes, and multilocus sequence typing (MLSTs), in the order mentioned. The root of the tree was set as the mid-point. The scale located in the upper left indicates 0.001 times substitution of the bases on average.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Sequences of the nga promoter are classified into four major genotypes, according to three key residues (shown as −27,–22, and –18 in the figure) affecting promoter activity. Turner et al. further determined subtypes using mutations other than the key residues. FS24 strain has the same allele A−27G−22T−18 as the type 3 or clade 3 but has a single-nucleotide polymorphism (SNP) highlighted in yellow in the –10 box.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** We developed a pipeline for whole-genome analyses working on the National Institute of Genetics (NIG) Supercomputer and SQUID at the Cybermedia Center, Osaka University.
+
 We also collected public genome sequences of emm89 S. pyogenes strains isolated from nine countries to further characterize the genetic properties of the Japanese cohort (Supplementary file 1, table S2; Beres et al., 2017; Chochua et al., 2017; Davies et al., 2019). In this study, the phenotypes of these strains were considered invasive if the diagnoses included severe infections, STSS, invasive infections, necrotizing fasciitis, bacteremia, or sepsis, and isolation sites were described as normally sterile sites, such as the blood, brain, kidney, muscular tissue, or brain. Consequently, we identified 666 strains in the global cohort, including 420 isolates from invasive cases and 246 from non-invasive ones (Supplementary file 1, table S2).
 
-## Pan-genome and phylogenetic analyses reveal both shared and distinct features in the Japanese and global cohorts
+### Pan-genome and phylogenetic analyses reveal both shared and distinct features in the Japanese and global cohorts
 
 To determine the core genes and gene distribution in both cohorts, we performed pan-genome analyses. In the Japanese cohort, 1417 core genes common to more than 99% of all isolates were determined out of the 3334 different genes detected within the 311 strains. In contrast, the global cohort was more diverse, with 4743 different genes, of which 1327 were core genes (Figure 1B).
 
 Next, we calculated the phylogenetic relationships based on the maximum likelihood of the core gene sequences (Figure 1C, Figure 1—figure supplement 2). The tree for the global cohort branched into four clusters, with clusters A, B1, B2, and B3. Cluster B3 included 640 genetically similar strains isolated mainly from Europe, North America, and Japan, whereas cluster A comprised 19 strains isolated from Oceanian countries, Kenya, Lebanon, the US, and Japan (Figure 1C). The phylogenetic tree for the Japanese cohort could also be clustered as in the case of the global cohort, with no significant difference in the proportions of strains classified into each sub-cluster (chi-square test, p = 0.13; Figure 1—figure supplement 2 and Supplementary file 1, table S4). Thus, we concluded that the overall phylogenetic features of emm89 strains were distributed similarly in Japan and other areas, especially Europe and North America. Within cluster B3, we identified a non-invasive strain from Japan that had no identical pattern to the reported nga promoter variations (Figure 1C; Turner et al., 2019). This pattern is likely a subtype of clade 3 as it shares the haplotype A–27G–22T–18, which is distinctive of clade 3, but has a mutation in the –10 box (Figure 1—figure supplement 2; Turner et al., 2019). Thus, we named this novel nga promoter variation type 3.4 (Turner et al., 2019). Multilocus sequence typing (MLST) analysis revealed that in cluster B3, 522 strains (80.9%) were ST101, and 96 strains (14.8%) were ST646 (Figure 1C). Notably, ST646 was the second most dominant type and a Japan-specific lineage. Moreover, they only differed in the 295th nucleotide in the murI locus, one of the seven loci that determine MLST, suggesting that both lineages have a genetically close relationship. Eight novel MLSTs were determined (ST1450, 1451, 1452, 1454, 1455, 1456, 1461, and 1463) and 15 novel MLST strains were detected in the Japanese cohort (Figure 1—figure supplement 1). Taken together, using phylogenetic approaches, we found that most strains from Japan and countries in Europe and North America share genetically close relationships, with only one unique lineage in Japan, ST646.
 
-## Pan-GWASes detect SNPs/indels associated with invasiveness that are both common and specific to Japan and other countries
+### Pan-GWASes detect SNPs/indels associated with invasiveness that are both common and specific to Japan and other countries
 
 To discover all types of genetic variants in whole genes within emm89 S. pyogenes associated with (severe) invasiveness, we applied pan-genome analysis and performed three types of independent analyses, including pan-GWASes targeting SNPs in core genes and the presence or absence of all genes, and a GWAS targeting other variants located in intergenic regions spanning several nucleotides. The present pan-GWAS of bacteria within a single emm type minimized lineage effects, thus reducing false positives.
 
 We extracted SNPs and single-nucleotide indels from core gene alignments and detected 24,627 and 47,060 SNPs/indels in the Japanese and global cohorts, respectively. Subsequent pan-GWASes identified SNPs/indels associated with severe invasiveness in a Japanese cohort and invasiveness in a global cohort. To control for population bias, we calculated pairwise distance matrices and selected seven and three dimensions for the analyses of the Japanese and global cohorts, respectively (Figure 2—figure supplement 1). For each cohort, we performed a permutation test by conducting 1000 iterations of calculations with randomly permuted penotypes, with the significance level set at the 5th percentile of the 1000 minimal p-values (p = 5.75 × 10–4 and p = 1.05 × 10–4 for the Japanese and global cohorts, respectively). The pan-GWAS of the Japanese cohort detected 17 SNPs/indels in 13 core genes (Figure 2A and Supplementary file 1, table S5). Of the 17 significant variants, there were 7 single-nucleotide deletions (SNDs), 7 SNPs causing non-synonymous amino acid substitutions, and 3 SNPs causing synonymous substitutions. The covS gene (also known as csrS), encoding a sensor kinase of the two-component system CovR/S, contains four SNDs with the lowest p-values (p = 1.16 × 10–7 for the 39th, 40th, and 46th nucleotides, and p = 1.15 × 10–6 for the 125th nucleotide). These four deletions were associated with severe invasive infections.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig2-v1.jpg)
+
+**Figure 2.:** Manhattan plots for the Japanese (A) and global (B) cohorts. The X-axis shows the location of each SNP/indel on the core gene alignment, while the Y-axis indicates the p-value. For each cohort, a permutation test was performed by iterating the calculations 1000 times with randomly permuted phenotypes, with the significance level set at the 5th percentile of the 1000 minimal p-values (p = 5.75 × 10–4 and p = 1.05 × 10–4 for the Japanese and global cohorts, respectively). Plots with lower p-values than genome-wide significant levels are colored magenta and blue, based on the direction of their effect size (positive and negative, respectively). (C) Distribution heatmap for the global cohort, with the strains possessing the significant SNPs/indels colored orange. Only the 20 SNPs with the lowest p-values are shown in this heatmap. Colored bars above indicate countries and phenotypes, and magenta bars represent invasive phenotypes. Using the Roary program, gene names starting with ‘Group_’ were automatically assigned. Position indicates the location of each SNP/indel on the core gene alignment. The full results are shown in Supplementary file 1, table S6. SNP, single-nucleotide polymorphism; indel, insertion/deletion.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scree plot of eigenvalues generated by decomposition of the genetic distance matrix for the Japanese (A) and global (B) cohorts. To determine the number of principal components used as covariates for pan-GWAS, the plot in which the subsequent principal components seem to have relatively small eigenvalues was sought. Consequently, we used seven and three principal components as covariates for the Japanese and global cohorts, respectively. (C) Number of significant SNPs accumulated in single genes found in the pan-GWAS for the global cohort. Only the top 30 genes are shown in this graph.
+
 We also performed a pan-GWAS for the global cohort and detected 1075 SNPs/indels significantly related to invasive infections among the 360 core genes (Figure 2B, C and Supplementary file 1, table S6). Among the significant SNPs/indels, 725 caused synonymous substitutions and 319 caused non-synonymous substitutions or frameshift mutations. Moreover, 19 SNPs induced nonsense mutations, whereas the effects of 12 SNPs/indels were unpredictable because of a lack of reference sequences (Supplementary file 1, table S3). Notably, 96 SNPs/indels accumulated in a single gene, murJ, which is involved in peptidoglycan biosynthesis, whereas 53 and 51 SNPs/indels were detected in murE and group_1008, respectively (Figure 2—figure supplement 1). The SNP with the lowest p-value (p = 1.35 × 10–14) was lacE, which encodes the EIICB component of the lactose-specific phosphotransferase system (Figure 2C). This mutation was found to be associated with an invasive phenotype and mainly observed in strains isolated in the US. Compared with the significant 17 SNPs/indels in the Japanese cohort, 10 SNPs/indels were also detected in the global cohort, including 4 SNDs in covS and 1 SNP each in 6 loci (Figure 2C). Deletions at the covS locus were common among strains from several countries, including Japan. In contrast, SNPs in six loci, gatA, group_1102, group_647, iscS_1, recU, and fhuB, were present exclusively in Japan (Figure 2C and Supplementary file 1, table S6). These results suggest that several bacterial mechanisms cause severe invasive S. pyogenes infections, and some prevail worldwide, such as covS mutations, whereas others are specific to Japan.
 
-## Pan-GWAS on COGs reveals 2 and 109 genes associated with severe invasiveness in the Japanese cohort and invasiveness in the global cohort, respectively
+### Pan-GWAS on COGs reveals 2 and 109 genes associated with severe invasiveness in the Japanese cohort and invasiveness in the global cohort, respectively
 
 Next, we examined the associations of accessory COGs with severe invasiveness and global invasiveness. A permutation test determined significance levels as p-values of 1.09 × 10–4 and 7.72 × 10–5 for the Japanese and global cohorts, respectively. Two significant genes were detected in the pan-GWAS for the Japanese cohort: group_184, which encodes a hypothetical protein, and divIC, which encodes a septum formation initiator protein (p = 8.81 × 10–6 and p = 6.72 × 10–6, respectively; Figure 3A and Supplementary file 1, table S7). Although analysis of the global cohort revealed the presence of 169 genes that were significantly related to invasiveness, no genes were identical or homologous to the two genes detected in the Japanese cohort (Figure 3B, C and Supplementary file 1, table S8). Approximately 90% (152 of 169) of the significant COGs were found to be associated with non-invasiveness. Among the 169 genes, 37 encoded phage-related genes and 11 encoded mobile genetic elements (MGEs) such as transposase, integrase, and recombinase. The gene with the lowest p-value was group_829, which encodes a transposase and is related to the invasive phenotype (Figure 3C and Supplementary file 1, table S8). In addition, group_2689, which encodes a multidrug efflux transporter permease, rhaR_3, which encodes a transcriptional regulator involved in rhamnose metabolism, and group_1829, which encodes a vitamin B12 import transporter permease, were also substantially associated with the invasive phenotype. We identified several gene distribution patterns associated with invasiveness, suggesting that multiple independent genetic factors cause invasive infections (Figure 3C). On the other hand, the present pan-GWAS found no genes encoding known virulence factors significantly associated with invasiveness, thus further analysis of the relationships of detected distribution patterns with prophages and MGEs was performed. For calculating the pairwise correlation of the presence of significant COGs in the 666 strains, the COGs were clustered into eight coexisting groups, seven of which contained phage- and/or MGE-related genes (Figure 3—figure supplement 1). The largest group comprised 65 genes including phage proteins, while the second largest with 42 genes was found to be associated with non-invasive infections and included group_2689, group_1833, and ermA1, encoding TetR/AcrR family transcriptional regulator, multidrug efflux system permease protein, and rRNA adenine N-6-methyltransferase, respectively. Taken together, genes associated with invasiveness were found to encode mobile genetic factors and transporters, whereas major virulence factors were not significantly associated with invasiveness.
 
-## K-mers-based GWAS detects both distinctive and identical variants compared to the SNP- and COG-based pan-GWASes
+![Figure 3.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig3-v1.jpg)
+
+**Figure 3.:** Volcano plots for the Japanese (A) and global (B) cohorts. The X-axis shows the effect size, while the Y-axis indicates the p-value. Plots with a lower p-value than the genome-wide significant levels (p = 1.09 × 10–4 and p = 7.72×10–5 for the Japanese and global cohorts, respectively) have been colored magenta and blue, based on the direction of their effect size (positive and negative, respectively). (C) Distribution heatmap for the global cohort, with the strains possessing the significant genes colored orange. Only the 20 genes with the lowest p-values are shown in this heatmap. Colored bars above indicate countries and phenotypes, and magenta bars represent invasive phenotypes. Using the Roary program, gene names starting with ‘Group_’ were automatically assigned. The full results are shown in Supplementary file 1, table S8.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each cell indicates the correlation coefficient of each significant COG pair on its presence in the global cohort. The COGs are sorted based on hierarchical clustering. Annotations and phenotypes are represented by circles and cells located on the right and bottom of the heatmap. The dotted line on the tree divides the COGs into eight clusters.
+
+### K-mers-based GWAS detects both distinctive and identical variants compared to the SNP- and COG-based pan-GWASes
 
 To detect SNPs/indels and multiple mutations in the entire genome, we extracted 31-nt-length k-mers from whole genomes and performed a GWAS. The k-mers-based GWAS can handle polymorphisms spanning more than one base, such as indels, inversions, and translocations, in both the coding and non-coding regions.
 
@@ -106,7 +138,7 @@ Two significant k-mers were present in Comp_6, which were found to be an interge
 
 Therefore, the k-mer approach identified multiple variants, including the mutation identified in the SNP/indel-based pan-GWAS, fhuB SNP T218C. In addition, while the mutation detected in covS differed from that detected in the SNP/indel-based pan-GWAS, both caused frameshift mutations.
 
-## AlphaFold-based prediction of the impact of the identified mutations on function
+### AlphaFold-based prediction of the impact of the identified mutations on function
 
 To assess the impact of mutations on protein function, we predicted the protein structure using AlphaFold (Jumper et al., 2021). Here, we present structural predictions for three representative proteins: LacE, whose mutation was observed mainly in invasive strains from the US; CovS, whose invasion-related deletions prevailed worldwide; and FhuB, which carries a prominent mutation in the Japanese cohort and is associated with non-invasiveness.
 
@@ -114,9 +146,17 @@ The invasive-related SNP in lacE substitutes the 554th glycine in LacE with vali
 
 Next, we predicted a homodimerized CovS model using AlphaFold, as the CovS of S. pyogenes forms homodimers (Jain et al., 2020). SOSUI predicted that CovS has two transmembrane regions (Figure 5A). Mutations detected in the SNP/indel- and k-mers-based GWASes were predicted to shorten the CovS protein to 35 and 45 amino acids, respectively. As the intracellular domain of CovS is in the C-terminal region and is involved in the phosphorylation of the transcriptional regulator CovR, frameshift mutations leading to CovS truncation would inactivate the protein, and thus, CovR function (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig5-v1.jpg)
+
+**Figure 5.:** (A) Snake-like plot of transmembrane regions of CovS estimated using SOSUI. Frameshift mutations, detected by the single-nucleotide polymorphisms (SNPs)/indel- and k-mer-based GWASes, cause truncation of CovS at the indicated 35th and 45th residues, respectively. (B) Structural model of the CovS homodimer (ipTM + pTM = 0.614). The putative transmembrane regions are colored orange. The upper part is the sensor domain, while the lower is the C-terminal kinase domain involved in the phosphorylation of the transcriptional regulator CovR. (C) Snake-like plot depicting the transmembrane regions of FhuB and FhuG. The 73rd residue of FhuB is indicated by an arrowhead and in magenta. (D) Structural model of the FhuBDCCG complex (ipTM + pTM = 0.791). The putative transmembrane regions of FhuB and FhuG are colored green-yellow and peach, respectively. The upper part of the model is located in the extracellular region, while the lower part is in the cytoplasm. (E) The 73rd valine in FhuB, shown in magenta, was substituted with alanine. The molecular surface is illustrated with a wireframe, and that of the predicted indentation is shown with an arrowhead. ipTM + pTM: Weighted combination of interface-predicted TM and predicted TM scores. ipTM is used to measure structural accuracy in the protein–protein interface, while pTM is a metric for overall topological accuracy.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Snake-like plot of transmembrane regions of LacE estimated using SOSUI. The 554th residue has been indicated with an arrowhead and in magenta. (B) Structure model of LacE generated with AlphaFold (pLDDT = 0.902). The putative transmembrane regions are colored in orange. LacE has two domains: the transmembrane domain EIIC and intracellular domain EIIB. The 554th glycine substituted with valine is colored in magenta. pLDDT: The best predicted local difference distance test indicating local structural accuracy.
+
 As described above, the SNP T218C in the fhuB locus substitutes the 73rd valine of FhuB with alanine. FhuB is a component of an ATP-binding cassette transporter system that utilizes ferrichrome, which is one of the carriers of Fe3+. FhuB is predicted to localize to the cell membrane and form a channel with FhuG (Figure 5C). SOSUI suggested that FhuB and FhuG are 9-transmembrane proteins. The FhuBG complex can bind to one molecule of the extracellular ferrichrome-binding lipoprotein, FhuD, and two molecules of the intracellular ATP-binding protein, FhuC. Therefore, we constructed a structural model of the FhuBCCDG complex (Figure 5D), which implied that the 73rd residue of FhuB exists in a region adjacent to FhuD. The mutation was predicted to induce formation of a small indentation on the molecular surface, thus increasing the surface area accessible to the solvent, and is considered to potentially affect the stability of the hydrophobic bond between FhuB and FhuD, and thus ferrichrome transport (Figure 5E). The SNP G538A in fhuD was Japan-specific, significantly related to severe invasiveness, and caused the V180I mutation in FhuD (Figure 2—figure supplement 1). The prediction suggested that the 180th residue is in an α-helix distant from the active site or the interactive sites with FhuB. Both valine and isoleucine are branched-chain amino acids, and the amino acid residue is located on a rigid structure, the α-helix (Figure 5D). Thus, we believe that this mutation is less likely to cause structural changes than the other non-synonymous mutations.
 
-## The fhuB T218C mutation inhibits the growth of a severe invasive strain in human blood
+### The fhuB T218C mutation inhibits the growth of a severe invasive strain in human blood
 
 Based on the pan-GWAS and GWAS results and predicted protein structures, we focused on the SNP fhuB T218C. We constructed a mutant strain, in which the SNP fhuB T218C was introduced, to further investigate its potential virulence. We selected the strain TK02, which carries the wild-type (WT) allele T218 in fhuB and was originally isolated from a sample obtained from a patient with severe invasive infection in Japan. We used a several times-passaged TK02 strain, TK02′, as a WT strain and introduced the SNP fhuB T218C into it via allelic exchange mutagenesis with a thermo-sensitive shuttle vector. We then confirmed that there were no differences without the introduced mutation between the WT and fhuB T218C strains using whole-genome resequencing.
 
@@ -124,11 +164,11 @@ To reveal the effects of the SNP on invasiveness, we performed a transcriptomic 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig6-v1.jpg)
 
-**Figure 6.:** fhuB T218C mutant strain in THY and human blood.(A) Principal component analysis plot of RNA-seq data. (B) Differentially expressed genes in four comparisons. (C) Plot of gene expression in the WT strain versus fhuB T218C mutant in human blood. Significantly up- and downregulated genes in the WT are colored red and blue, respectively. The shapes of the plots indicate relative transcriptional changes between THY and blood. Genes depicted with upward triangles are either significantly upregulated in the WT or downregulated in the mutant strain, in blood versus THY. The downward triangle plots indicate genes that are either downregulated in the WT or upregulated in the mutant strain, in blood versus THY. WT, wild-type; THY, Todd Hewitt broth supplemented with 0.2% yeast extract.
+**Figure 6.:** (A) Principal component analysis plot of RNA-seq data. (B) Differentially expressed genes in four comparisons. (C) Plot of gene expression in the WT strain versus fhuB T218C mutant in human blood. Significantly up- and downregulated genes in the WT are colored red and blue, respectively. The shapes of the plots indicate relative transcriptional changes between THY and blood. Genes depicted with upward triangles are either significantly upregulated in the WT or downregulated in the mutant strain, in blood versus THY. The downward triangle plots indicate genes that are either downregulated in the WT or upregulated in the mutant strain, in blood versus THY. WT, wild-type; THY, Todd Hewitt broth supplemented with 0.2% yeast extract.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101938/elife-101938-fig7-v1.jpg)
 
-**Figure 7.:** fhuB T218C mutant strain on ferric ion uptake and bacterial survival in human blood.(A) Intracellular ferric ion assay. The wild-type (WT) and fhuB T218C mutant strains were incubated in healthy human blood for 3 hr, following which the intracellular ferric ion concentrations were measured. (B) Bactericidal assay in human blood. The WT and fhuB T218C mutant were mixed with healthy human blood to measure the ratio of bacterial counts at 1, 2, and 3 hr to those at 0 h after infection. Bactericidal assay in human erythrocyte-rich medium (C), polymorphonuclear cell-rich medium (D), plasma (E), and plasma inactivated by heating at 56°C for 30 min (F). (G) Bacterial growth in brain heart infusion broth. The data were pooled from three independent experiments, each performed in sextuplicate. Thick bars and error bars indicate means and quartiles, respectively. Statistical significance was determined using the Mann–Whitney test with Benjamini–Hochberg’s correction.
+**Figure 7.:** (A) Intracellular ferric ion assay. The wild-type (WT) and fhuB T218C mutant strains were incubated in healthy human blood for 3 hr, following which the intracellular ferric ion concentrations were measured. (B) Bactericidal assay in human blood. The WT and fhuB T218C mutant were mixed with healthy human blood to measure the ratio of bacterial counts at 1, 2, and 3 hr to those at 0 h after infection. Bactericidal assay in human erythrocyte-rich medium (C), polymorphonuclear cell-rich medium (D), plasma (E), and plasma inactivated by heating at 56°C for 30 min (F). (G) Bacterial growth in brain heart infusion broth. The data were pooled from three independent experiments, each performed in sextuplicate. Thick bars and error bars indicate means and quartiles, respectively. Statistical significance was determined using the Mann–Whitney test with Benjamini–Hochberg’s correction.
 
 Next, to investigate the effects of SNP on bacterial survival in human blood, we performed a bactericidal assay using human blood. At 2 and 3 hr after incubation, the fhuB T218C mutant strain exhibited a significantly decreased survival rate than that of the WT strain (Figure 7B). To further determine the blood components that the attenuated survival of the mutant can be attributed to, we compared bacterial survival rates in erythrocytes, polymorphonuclear cells, plasma, heat-inactivated plasma, and brain heart infusion broth (Figure 7C–G). Notably, after incubation with erythrocytes, polymorphonuclear cells, or plasma, the fhuB T218C mutant strain exhibited a significantly lower survival index than that of the WT strain, at 2 and 3 hr after incubation, as observed in whole blood (Figure 7C–E, G). However, there were no significant differences between the survival rates of the WT and mutant strains in heat-inactivated plasma, suggesting that the mutant strain is susceptible to complement (Figure 7F). Taken together, the polymorphism T218C in fhuB impaired the survival of severe invasive strains in human blood through interactions with erythrocytes, polymorphonuclear cells, and complement.
 
@@ -156,58 +196,264 @@ In this study, we revealed the genotype–phenotype associations found in not on
 
 ## Materials and methods
 
-## Clinical isolates in Japan
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Streptococcus pyogenes)</td>
+      <td>TK02′</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Clinical isolate from severe invasive infection; wild-type reference for mutagenesis (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Streptococcus pyogenes)</td>
+      <td>TK02′-fhuB T218C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Isogenic mutant strain carrying fhuB T218C point mutation (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Takara Bio</td>
+      <td></td>
+      <td>Host strain for plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenicillin</td>
+      <td>Nacalai Tesque</td>
+      <td></td>
+      <td>Used for selection in E. coli</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spectinomycin</td>
+      <td>Fujifilm Wako Pure Chemical Corporation</td>
+      <td></td>
+      <td>Used for selection in E. coli and S. pyogenes</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mutanolysin</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Used for bacterial lysis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysozyme</td>
+      <td>Fujifilm Wako Pure Chemical Co</td>
+      <td></td>
+      <td>Used for bacterial lysis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Achromopeptidase</td>
+      <td>Fujifilm Wako Pure Chemical Co</td>
+      <td></td>
+      <td>Used for bacterial lysis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNase A</td>
+      <td>Promega</td>
+      <td></td>
+      <td>Used for RNA degradation during DNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxwell RSC instrument</td>
+      <td>Promega</td>
+      <td></td>
+      <td>Automated DNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Kit</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>Library preparation for sequencing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiChrom Iron Assay Kit</td>
+      <td>BioAssay Systems</td>
+      <td></td>
+      <td>Used for intracellular ferric ion measurement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fastp v0.20.1</td>
+      <td>Chen et al., 2018</td>
+      <td>RRID:SCR_016962</td>
+      <td>Used for quality filtering of sequencing reads</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SKESA v2.4.0</td>
+      <td>Souvorov et al., 2018</td>
+      <td></td>
+      <td>Used for de novo genome assembly</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MLST v2.19.0</td>
+      <td></td>
+      <td></td>
+      <td>Used for multi-locus sequence typing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prokka v1.14.5</td>
+      <td>Seemann, 2014</td>
+      <td>RRID:SCR_014732</td>
+      <td>Used for genome annotation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Roary v3.12.0</td>
+      <td>Page et al., 2015</td>
+      <td>RRID:SCR_018172</td>
+      <td>Used for pan-genome analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-tree v1.6.12</td>
+      <td>Nguyen et al., 2015</td>
+      <td>RRID:SCR_017254</td>
+      <td>Used for phylogenetic tree construction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyseer v1.3.4</td>
+      <td>Lees et al., 2018</td>
+      <td></td>
+      <td>Used for pan-GWAS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DBGWAS v0.5.3</td>
+      <td>Jaillard et al., 2018</td>
+      <td></td>
+      <td>Used for k-mer-based GWAS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold v2.2.2</td>
+      <td>Jumper et al., 2021</td>
+      <td>RRID:SCR_025454</td>
+      <td>Used for protein structure prediction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious Prime v2022.0.1</td>
+      <td>Biomatters</td>
+      <td>RRID:SCR_010519</td>
+      <td>Used for sequence visualization and mapping</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR v2.7.0a</td>
+      <td></td>
+      <td>RRID:SCR_004463</td>
+      <td>Used for RNA-seq read mapping</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts v1.5.2</td>
+      <td>Liao et al., 2014</td>
+      <td>RRID:SCR_012919</td>
+      <td>Used for RNA-seq read counting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iDEP v0.96</td>
+      <td>Ge et al., 2018</td>
+      <td></td>
+      <td>Used for transcriptomic data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v7.0c</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Used for statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA Miniprep Kit</td>
+      <td>Zymo Research</td>
+      <td></td>
+      <td>Used for RNA extraction from bacterial samples</td>
+    </tr>
+  </tbody>
+</table>
+
+### Clinical isolates in Japan
 
 Clinical isolates were collected from public health institutions in Tokyo, Osaka, Yamaguchi, Fukushima, Kobe, Kyoto, Amagasaki, Sapporo, and Niigata, Japan. We defined the strains collected as STSS according to the Infectious Diseases Control Law in Japan. Non-invasive strains were defined based on diagnostic names, including asymptomatic, pharyngitis, tonsillitis, or non-invasive infections. Strains with no diagnostic names for the non-STSS strains were defined as non-invasive based on the isolate sites. Information on all the strains included in this study is presented in Supplementary file 1, table S3.
 
 The collected S. pyogenes strains were cultured at 37°C in an atmosphere containing 5% CO2, in Todd Hewitt broth supplemented with 0.2% yeast extract (THY; both from BD Biosciences, Franklin Lakes, NJ, USA) and stored in THY broth with 30% glycerol (Nacalai Tesque, Kyoto, Japan), at –80°C.
 
-## Genomic DNA sequencing of the clinical isolates
+### Genomic DNA sequencing of the clinical isolates
 
 The S. pyogenes strains were cultured until the exponential growth phase (OD600 = 0.3–0.4). Bacterial cells were lysed with T10E1N100 buffer (10 mM Tris-HCl buffer, 1 mM EDTA, and 100 mM sodium chloride), 10 units/ml mutanolysin (Sigma-Aldrich, St. Louis, MO, USA), 10 mg/ml lysozyme (Fujifilm Wako Pure Chemical Co, Osaka, Japan), 0.5 mg/ml achromopeptidase (Fujifilm Wako Pure Chemical Co), and 0.3 mg/ml RNase A (Promega, Madison, WI, USA). Next, genomic DNA was extracted from each lysate using a Maxwell RSC instrument (Promega), according to the manufacturer’s instructions, and 250 bp paired-end libraries were then generated from the extracted DNA using a Nextera XT DNA Kit (Illumina, San Diego, CA, USA). Libraries were sequenced using a NovaSeq 6000 System (Illumina) at the Genome Information Research Center, Research Institute for Microbial Diseases, The University of Osaka, Osaka, Japan. On average, the number of reads was 5,433,301 (range 3,437,124–9,117,301).
 
-## Collection of published genome sequences
+### Collection of published genome sequences
 
 We previously sequenced the draft genomes of 161 emm89 clinical isolates collected in Japan between 2011 and 2019 (Hirose et al., 2020). We defined strains derived from STSS as ‘severe invasive’, and those obtained from pharyngitis, tonsillitis, and superficial skin lesions as ‘non-invasive’ phenotypes.
 
 To obtain public genome sequences of emm89 strains isolated from other countries, we downloaded draft genome sequences in FASTA format from the National Center for Biotechnology Information (NCBI) database, using Fasterq-dump v.2.9.6. The phenotype of each strain, whether invasive or non-invasive, was defined according to the definitions in the respective references that reported the strains (Beres et al., 2017; Chochua et al., 2017; Davies et al., 2019).
 
-## Genomic data processing and pan-genome analysis
+### Genomic data processing and pan-genome analysis
 
 All processes and analyses were performed using the National Institute of Genetics (NIG) supercomputer and SQUID at the D3 center of The University of Osaka (Osaka, Japan). We constructed a workflow for bacterial pan-GWAS and other bioinformatic processes (Figure 1—figure supplement 3). All collected sequences were subjected to quality checks using Fastp v.0.20.1, with a default cutoff value of Q > 15 (Chen et al., 2018). For newly isolated strains in Japan, emm typing was performed using the emm-typing-tool v.0.0.1, and only sequences of strains determined as emm89 were used for the following analyses (Kapatai et al., 2017). All emm89 sequence data were then subjected to de novo assembly using SKESA v.2.4.0, with default parameters (Souvorov et al., 2018). Next, the MLST of each sequence was performed using MLST v.2.19.0 (Jolley and Maiden, 2010, Maiden et al., 2013). Clade typing was performed using BLAST v.2.13.0, with reference to the three nga promoter region sequences (Zhu et al., 2015b). After the genes were annotated with Prokka v.1.14.5, the pan-genome of all sequences was calculated using Roary v.3.12.0, with the parameters ‘-e -mafft -r -qc -cd 99’ (Seemann, 2014, Page et al., 2015). Roary generated a core gene alignment and the distribution of all genes among the strains. To extract SNPs/indels from core genes, including single-nucleotide indels, snp-sites v.2.5.1 with the option ‘-v’ was used. The output files were further processed using BCFtools v.1.9, with the parameter ‘norm -m –’, enabling analysis of multiple alleles in the pan-GWAS. In parallel, k-mers were extracted using DBGWAS v.0.5.3, and the length of k-mers was set as 31 nt using the ‘-k 31’ parameter of DBGWAS (Jaillard et al., 2018).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Phylogenetic relationships were calculated from the core gene alignment, using IQ-tree v.1.16.12 (Nguyen et al., 2015), based on maximum likelihood. The substitution model was automatically selected considering the Akaike’s and Bayesian information criteria by setting the ‘-m MFP’ parameter of IQ-tree (Kalyaanamoorthy et al., 2017). Phylogenetic trees were constructed using iTOL v.6.6 (Letunic and Bork, 2021). The similarity of clustering in the two phylogenetic trees was statistically examined using Pearson’s chi-square test with R v.4.0.3 (R Development Core Team, 2022), followed by post hoc analysis using residual analysis adjusted with the Holm’s method, if p < 0.05.
 
-## GWAS
+### GWAS
 
 To investigate the associations between phenotypes and genotypes, including SNPs/indels and genes, we performed a pan-GWAS using pyseer v.1.3.4 (Lees et al., 2018). The VCF file of SNPs/indels or the gene distribution matrix was designated as the genotype. To remove biases derived from lineages, we added information on the genetic distances between all pairs of strains as covariates using mash v.2.3 (Ondov et al., 2016). Briefly, de novo assemblies were compressed through conversion into minimum hash values using the command ‘mash sketch -s 10000’. Subsequently, the commands ‘mash dist’ and ‘square_mash’ were utilized to generate a genetic distance matrix expressed with Jaccard coefficients (Ondov et al., 2016). The obtained matrix underwent eigenvalue decomposition, and the number of eigenvalues used for multidimensional scaling was visually determined using the plot of the relationships between the eigenvalues and contribution ratios. The number of eigenvalues and the distance matrix were then added as pyseer parameters. The pyseer calculation was iterated 1000 times with randomized phenotypes, and the 5-percentile value of the minimal p-value in each calculation was set at the significance level. Using R and the package ggplot2, the results were visualized as a Manhattan plot for the SNP/indel-based pan-GWAS and a volcano plot for the gene-based pan-GWAS, respectively (Wickham, 2016). Heatmaps of the strains possessing significant variants were generated using Excel (v.16.66.1; Microsoft, Redmond, WA, USA). The correlation of the presence of significant COGs was calculated and visualized using the R program.
 
 The k-mers-based GWAS was carried out using DBGWAS (Jaillard et al., 2018). K-mers were considered significant at a false discovery rate (q-value) of <0.05. DBGWAS-calculated complexes, which are regions encompassing the k-mers, were significantly related to pathology, and de Bruijn graphs were generated based on these complexes. The sequences of the k-mers were outputted and mapped to a reference sequence using Geneious Prime v.2022.0.1 (Biomatters, Auckland, New Zealand) to identify the mutations indicated by the k-mers. For the reference strain, we adopted MGAS27061, which was isolated from an invasive case in the USA and whose complete chromosomal sequence has been used as the reference sequence of emm89 clade 3 (Beres et al., 2016). Promoter sequences in intergenic regions were predicted using web-based tools, MLDSPP and BacPP (Paul et al., 2024, de Avila E Silva et al., 2011). Additionally, BLAST was employed to search the promoter sequences of S. pyogenes strain SF370 registered in the CDBProm database (https://aw.iimas.unam.mx/cdbprom/) (Martinez et al., 2024).
 
-## Protein structure prediction
+### Protein structure prediction
 
 Significant variants found in the pan-GWAS, resulting in non-synonymous substitutions in proteins, were searched by converting nucleotide sequences into amino acid sequences using EMBOSS Transeq v.6.6.0.0 (Rice et al., 2000). To assess whether these mutations affected the protein function, protein structure prediction models were constructed using AlphaFold v.2.2.2 (Jumper et al., 2021). The calculations were performed five times for each model, by setting the option multimer_predictions_per_model = 5. We predicted multimer models using the option --model_preset=“multimer” if a protein is reported or anticipated to form a multimer. For each monomer, we selected the model with the best predicted local difference distance test (an indicator of local structural accuracy) score (Mariani et al., 2013). For each multimer, AlphaFold was calculated and expressed as a weighted combination of the interface-predicted TM and predicted TM scores (ipTM + pTM). pTM is a metric for overall topological accuracy and ipTM is used to measure the structural accuracy of the protein-protein interface (Yin et al., 2022). The transmembrane regions of the proteins were predicted using SOSUI (https://harrier.nagahama-i-bio.ac.jp/sosui/mobile/; Hirokawa et al., 1998). The structures of the obtained model were visualized using PyMOL v.2.5 (Schrödinger, LLC, New York, NY, USA).
 
-## Construction of the fhuB T218C mutant strains
+### Construction of the fhuB T218C mutant strains
 
 We used the several times-passaged S. pyogenes TK02 strain, TK02′, as the WT strain. The TK02 strain was originally isolated from a patient with severe invasive infection (Hirose et al., 2020). The whole genome of TK02′ was sequenced, and the generated fasta file is available in Document S1. A point mutation, fhuB T218C, was introduced using the temperature-sensitive shuttle vector, pSET4s, as reported previously (Takamatsu et al., 2001). Sanger sequencing confirmed the presence of the point mutation. In addition, we resequenced the draft genome to confirm that there were no differences apart from the point mutation, as described above.
 
 The bacterial strains, primers, and plasmids used in this study are listed in Supplementary file 1, tables S15 and S16. Escherichia coli strain DH5α (Takara Bio, Shiga, Japan) was used as a host for the plasmid derivatives. All E. coli strains were cultured in Luria Bertani broth, at 37°C, with agitation. For selection and maintenance of mutants, antibiotics were added to the media at the following concentrations: carbenicillin (Nacalai Tesque), 100 µg/ml for E. coli; and spectinomycin (Fujifilm Wako Pure Chemical Corporation), 100 µg/ml for E. coli and S. pyogenes.
 
-## Transcriptomic analysis
+### Transcriptomic analysis
 
 The fhuB WT and mutant strains were harvested in 30 ml of THY broth, of which 1 ml was dispensed into 10 ml of THY and the remainder was centrifuged and resuspended in 2 ml of heparinized human blood. Bacterial mixtures with THY or blood were dispensed into three aliquots (n = 3 for each condition) and incubated at 37°C for 3 hr. THY samples were centrifuged and resuspended in RNA Shield (Zymo Research, Irvine, CA, USA). For each blood sample, 2 volumes (1 ml) of RNA protection bacteria reagent (QIAGEN, Hilden, Germany) were added. L5, included in the PureLink Total RNA Blood Purification Kit (Thermo Fisher Scientific, Waltham, MA, USA), was added to remove erythrocytes. The bacterial cell wall was mechanically lysed in Lysing Matrix B using a MagNA Lyser (Roche, Basel, Switzerland). After centrifugation, the total bacterial RNA was extracted using a Quick-RNA Miniprep Kit (Zymo Research), according to the manufacturer’s instructions. Full-length cDNA was generated using the SMART-Seq HT Kit (Takara Bio), according to the manufacturer’s instructions. Pair-end libraries were generated using a Nextera XT DNA Kit and sequenced using a NovaSeq 6000 system (both from Illumina, San Diego, CA, USA). Sequenced data were preprocessed using Trimmomatic v.0.33 and FastQC v.0.12.1. The reads were mapped to the complete MGAS27061 genome (NCBI reference sequence: NZ_CP013840.1) using STAR v.2.7.0a. After a second quality check using FastQC, read counting was performed using featureCounts v.1.5.2 (Liao et al., 2014). Differentially expressed genes were identified using iDEP v.0.96 and gene annotations from NCBI and Prokka were combined (Ge et al., 2018). Plots were created using iDEP and the R package ggplot2.
 
-## Intracellular ferric ion assay
+### Intracellular ferric ion assay
 
 Human plasma was obtained through centrifugation of heparinized human blood, after 30 min of incubation at 37°C. The WT and fhuB mutant strains were harvested at the exponential phase, resuspended into 1 ml of THY or serum, and then incubated at 37°C for 3 hr. Viable bacterial cells were counted as colony-forming units (CFUs) by plating the diluted samples onto THY agar plates. Intracellular ferric ions were measured using a QuantiChrom Iron Assay Kit (BioAssay Systems, Hayward, CA, USA), according to the manufacturer’s instructions. Briefly, 50 µl of standards or samples in 96-well plates were mixed with 200 µl QuantiChrom Working Reagent and incubated at 20–24°C for an hour. The optical density at the wavelength of 600 nm was measured using an Infinite 200 Pro F Plex Instrument (TECAN, Männedorf, Switzerland). The assay was repeated three times, and the results of the respective experiments were combined. Statistical analyses were performed using the Mann–Whitney U test.
 
-## Bactericidal assay
+### Bactericidal assay
 
 The bactericidal assay was performed as described previously, with minor modifications (Terao et al., 2008; Lancefield, 1957; Yamaguchi et al., 2019; Takemura et al., 2022). Briefly, whole blood was collected from healthy adults. Human neutrophils and erythrocytes were prepared using PolymorphPrep (Serumwerk Bernburg, Bernburg, Germany), according to the manufacturer’s instructions. Heparinized human blood was centrifuged at 500 × g for 30 min to isolate erythrocytes and polymorphonuclear cells, which were then suspended in Roswell Park Memorial Institute (RPMI)-1640 medium containing L-glutamine and Phenol Red (Fujifilm Wako Pure Chemical Corporation). Heat-inactivated plasma was prepared at 56°C for 30 min. Subsequently, 195 µl of heparinized human whole blood, erythrocytes in RPMI-1640, polymorphonuclear leukocytes in RPMI-1640, plasma, heat-inactivated plasma, or brain heart infusion broth (BD Biosciences), and 5 µl of early exponential phase bacteria with 0.9–2.0 × 104 CFUs/well were mixed in 96-well plates and incubated at 37°C, in an atmosphere containing 5% CO2, for 1, 2, and 3 hr. Viable bacterial cells were counted as CFUs by plating the diluted samples onto THY agar plates. The growth index was calculated as the number of CFUs at a specified time point divided by the number of CFUs in the initial inoculum. The assay was repeated three times, and the results of the respective experiments were combined. Statistical analyses were performed using the Mann–Whitney U test. Differences were considered statistically significant at p < 0.05, using Prism v.7.0c (GraphPad, La Jolla, CA, USA).
 
-## Ethical approval
+### Ethical approval
 
 Studies involving human participants were reviewed and approved by the Institutional Review Board of Osaka University Graduate School of Dentistry (approval nos. H26-E43 and H29-E16-2). The donors provided written informed consent to participate in the human blood bactericidal assay. For the S. pyogenes collection, as we retrospectively obtained clinical isolates of S. pyogenes, we utilized an opt-out consent procedure instead of obtaining written informed consent from the patients.

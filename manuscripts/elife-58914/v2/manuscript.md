@@ -34,29 +34,285 @@ Mendelian randomization (MR) is a technique for causal inference that leverages 
 
 We hypothesized that MR and genetic risk score (GRS) analyses would enable estimation of the causal effects of longstanding exposure to high levels of free testosterone on health outcomes in males. We first conducted a genome-wide association study (GWAS) for calculated free testosterone (CFT) in male participants of the UK Biobank (n = 161,268) cohort to identify genetic determinants of free testosterone levels. Then, using MR, we investigated the causal effects of lifelong genetically-elevated free testosterone levels on a priori health outcomes previously investigated in RCTs of testosterone treatment, encompassing: expected clinical benefits (physical activity, strength, fat-free body mass, body fat, BMD, dementia, depression) and potential adverse effects (androgenic alopecia, heematocrit, T2D, prostate cancer, benign prostate hyperplasia, blood pressure, CVD, heart failure, ischemic stroke) (Figure 1; Bhasin et al., 2018a; Gagliano-Jucá and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018). Finally, we used GRS to investigate the associations of lifelong genetically-elevated free testosterone levels on 439 health outcomes, encompassing diseases (n = 415) and biomarkers of health (n = 24) (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-v2.jpg)
+
+**Figure 1.:** Free testosterone levels were calculated in males from the UK Biobank cohort. Then, genetic variants were tested for association with levels of CFT and carried forward if: genome-wide significant (p<5×10−8) and unassociated with SHBG (p<0.05). In the subset of unrelated males, these genetic variants were used to investigate the effect of genetically-predicted CFT on: (1) 22 a priori outcomes relevant to suspected effects of testosterone treatment using Mendelian randomization, and (2) 439 outcomes in a hypothesis-free approach using a weighted genetic risk score. CFT, calculated free testosterone; MR, Mendelian randomization; SHBG, sex hormone-binding globulin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** In accordance with Mendel’s second law, random and independent inheritance of alleles can be thought of akin to random allocation of treatment vs. placebo in RCT. Therefore, by the same reasoning, if MR finds genetic variants affecting testosterone are associated with a difference in CVD risk, it provides evidence that testosterone causally affects CVD.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Distribution of raw sex hormone-binding globulin levels in males from the UK Biobank cohort (B) Distribution of natural log-transformed sex hormone-binding globulin levels in males from the UK Biobank cohort.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Plot shows observed test statistics (y-axis) relative to expected test statistics under a null model (x-axis), and lambda (λ) represents genomic inflation factor.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp6-v2.jpg)
+
 ## Results
 
-## Genetic determinants of CFT in males
+### Genetic determinants of CFT in males
 
 To calculate free testosterone levels, 187,524 males in the white, British subset of the UK Biobank cohort were excluded if they had missing levels of total testosterone, SHBG and albumin, or self-reported taking androgen medications. After these exclusions, the study population consisted of 161,268 males with an average CFT of 0.210 nmol/L (Supplementary file 1 - Table 1 and Figure 1—figure supplement 2).
 
 There were 13,338 genetic variants associated with CFT that reached genome-wide significance (p<5×10−8). After removing genetic variants associated with natural-log-transformed SHBG, there were 7048 genetic variants that comprised 93 independent signals carried forward for subsequent genetic analyses (Supplementary file 1 - Table 2 and Figure 1—figure supplement 3). Overall, chip-based heritability of CFT was estimated at 15% (95% CI = 14 to 16), while these 93 independent genetic variants associated with CFT explained 3.7% of the total variance of CFT levels in males from the UK Biobank.
 
-## Effect of genetically-predicted free testosterone on 22 a priori health outcomes
+### Effect of genetically-predicted free testosterone on 22 a priori health outcomes
 
 In males from the UK Biobank, sample size for the quantitative risk factors ranged from 30,439 to 156,403, while number of cases for dichotomous outcomes ranged from 1003 to 70,283 (Table 1). After adjusting for the 22 outcomes tested, one-sample MR analysis using IVW regression identified significant effects of CFT on hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, and prostate cancer (Table 1). Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10×10−7), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06×10−18), and decreased body fat percentage (−1.88%; 95% CI = −2.31 to −1.45; p=1.65×10−17), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03×10−27), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1×10−4), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28×10−4) (Figure 3—figure supplements 1–6). Leave-one-out analyses did not identify any outlying individual genetic variants responsible for the observed effects on any significant outcomes.
 
+**Table 1.**
+ Effect of calculated free testosterone on 22 health outcomes from the UK Biobank relevant to effects of testosterone treatment in males.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Effect per 0.1 nmol/L increased CFT (95% CI)</th>
+      <th>P-value</th>
+      <th>Sample Size Cases/Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Outcomes with Expected Clinical Benefits</td>
+    </tr>
+    <tr>
+      <td>Body fat-free percentage*</td>
+      <td>1.91% (1.48 to 2.35)</td>
+      <td>9.06E-18</td>
+      <td>154254</td>
+    </tr>
+    <tr>
+      <td>Body fat percentage*</td>
+      <td>−1.88% (−2.31 to −1.45)</td>
+      <td>1.65E-17</td>
+      <td>153772</td>
+    </tr>
+    <tr>
+      <td>Heel bone mineral density*</td>
+      <td>0.40 SD (0.25 to 0.54)</td>
+      <td>1.10E-07</td>
+      <td>90676</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>OR = 1.45 (1.1 to 1.91)</td>
+      <td>7.77E-03</td>
+      <td>4725/152485</td>
+    </tr>
+    <tr>
+      <td>Accelerometer-based physical activity</td>
+      <td>0.89 milligravity (−0.05 to 1.82)</td>
+      <td>0.06</td>
+      <td>30439</td>
+    </tr>
+    <tr>
+      <td>All fracture</td>
+      <td>OR = 0.89 (0.71 to 1.11)</td>
+      <td>0.30</td>
+      <td>9133/148077</td>
+    </tr>
+    <tr>
+      <td>Handgrip strength</td>
+      <td>0.29 kg (−0.31 to 0.89)</td>
+      <td>0.34</td>
+      <td>156400</td>
+    </tr>
+    <tr>
+      <td>All dementia</td>
+      <td>OR = 1.26 (0.67 to 2.34)</td>
+      <td>0.47</td>
+      <td>1003/156207</td>
+    </tr>
+    <tr>
+      <td colspan="4">Outcomes with Potential Adverse Effects</td>
+    </tr>
+    <tr>
+      <td>Hematocrit percentage*</td>
+      <td>1.37% (1.12 to 1.62)</td>
+      <td>1.03E-27</td>
+      <td>152872</td>
+    </tr>
+    <tr>
+      <td>Prostate cancer*</td>
+      <td>OR = 1.51 (1.21 to 1.88)</td>
+      <td>2.10E-04</td>
+      <td>7586/149624</td>
+    </tr>
+    <tr>
+      <td>Androgenic alopecia*</td>
+      <td>OR = 1.49 (1.19 to 1.86)</td>
+      <td>5.28E-04</td>
+      <td>70283/85756</td>
+    </tr>
+    <tr>
+      <td>Benign prostatic hyperplasia</td>
+      <td>OR = 1.36 (1.10 to 1.67)</td>
+      <td>3.80E-03</td>
+      <td>10894/146316</td>
+    </tr>
+    <tr>
+      <td>Myocardial infarction</td>
+      <td>OR = 1.23 (1 to 1.53)</td>
+      <td>0.05</td>
+      <td>9398/147812</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td>−0.06 mmol/L (−0.14 to 0.02)</td>
+      <td>0.12</td>
+      <td>138307</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin A1c</td>
+      <td>−0.34 mmol/mol (−0.82 to 0.15)</td>
+      <td>0.17</td>
+      <td>149828</td>
+    </tr>
+    <tr>
+      <td>All stroke</td>
+      <td>OR = 1.18 (0.90 to 1.56)</td>
+      <td>0.23</td>
+      <td>4569/152641</td>
+    </tr>
+    <tr>
+      <td>Diastolic blood pressure</td>
+      <td>0.27 mmHg (−0.30 to 0.85)</td>
+      <td>0.35</td>
+      <td>148384</td>
+    </tr>
+    <tr>
+      <td>Ischemic stroke</td>
+      <td>OR = 0.92 (0.61 to 1.37)</td>
+      <td>0.67</td>
+      <td>2122/155088</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure</td>
+      <td>−0.12 mmHg (−1.23 to 1.00)</td>
+      <td>0.84</td>
+      <td>148383</td>
+    </tr>
+    <tr>
+      <td>Type 2 diabetes</td>
+      <td>OR = 1.02 (0.81 to 1.28)</td>
+      <td>0.87</td>
+      <td>11079/146131</td>
+    </tr>
+    <tr>
+      <td>Venous thromboembolism</td>
+      <td>OR = 1.02 (0.74 to 1.4)</td>
+      <td>0.92</td>
+      <td>4127/153083</td>
+    </tr>
+    <tr>
+      <td>Heart failure</td>
+      <td>OR = 1.01 (0.76 to 1.34)</td>
+      <td>0.95</td>
+      <td>4288/152922</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Significant adjusting for Bonferroni correction of 22 outcomes (p<2.27×10−3)﻿.CFT, calculated free testosterone._
+
 Sensitivity analyses were performed to detect violations of MR assumptions. Egger regression did not detect evidence of directional pleiotropy for any outcomes (pintercept <0.05) (Supplementary file 1 - Table 3). Results using MR-RAPS were consistent with IVW regression method for all significant outcomes (Supplementary file 1 – Table 4). However, MR-PRESSO detected evidence of pleiotropic variants for hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, whole body fat-free mass, hemoglobin A1C, glucose, handgrip strength, systolic blood pressure, diastolic blood pressure, T2D, and benign prostate hyperplasia (Supplementary file 1 - Table 5). However, removal of pleiotropic variants made no changes to the significance or interpretation of earlier results using IVW regression (Supplementary file 1 - Table 5).
 
-## Phenome-wide effects of genetically-predicted free testosterone
+### Phenome-wide effects of genetically-predicted free testosterone
 
 To discover novel effects of free testosterone, we tested for the association of a GRS for testosterone with 415 diseases and 24 biomarkers in the same subpopulation of unrelated males from the UK Biobank. Sample size for biomarkers ranged from 118,783 for lipoprotein(a) to 149,940 for total cholesterol, while number of cases for diseases ranged from 876 for ‘localized superficial swelling, mass, or lump’ to 40,960 for ‘hypertension’ (Figure 2—source data 1). After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (β = −0.085 SD; 95% CI = −0.119 to −0.052; p=6.15×10−7) but adverse effects on increased creatinine (β = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78×10−11), lowered apolipoprotein A (β = −0.018 g/L; 95% CI = −0.026 to −0.01; p=1.55×10−5), lowered HDL (β = −0.074 SD; 95% CI = −0.109 to −0.039; p=3.62×10−5), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83×10−5), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82×10−6) (Table 2 and Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig2-v2.jpg)
 
-**Figure 2.:** Logistic or linear regression was used to assess the association of the genetic score for free testosterone against each dichotomous or quantitative outcome, respectively. -log10(p-values) for the association of each outcome on the y-axis are stratified into subcategories on the x-axis. Labelled outcomes were statistically significant adjusting for multiple hypothesis testing (p<1.14×10−4).Figure 2—source data 1.
+**Figure 2.:** Logistic or linear regression was used to assess the association of the genetic score for free testosterone against each dichotomous or quantitative outcome, respectively. -log10(p-values) for the association of each outcome on the y-axis are stratified into subcategories on the x-axis. Labelled outcomes were statistically significant adjusting for multiple hypothesis testing (p<1.14×10−4).
+
+**Table 2.**
+ Effects of calculated free testosterone on 439 health outcomes in males from the UK Biobank significant after adjusting for multiple hypothesis testing using Bonferroni correction (p<1.14×10−4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Effect per 0.1 nmol/L increased CFT (95% CI)</th>
+      <th>P-value</th>
+      <th>Sample Size Cases/Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creatinine</td>
+      <td>0.113 SD (0.079 to 0.146)</td>
+      <td>4.78 × 10−11</td>
+      <td>149849</td>
+    </tr>
+    <tr>
+      <td>C-reactive protein</td>
+      <td>−0.085 SD (−0.119 to −0.052)</td>
+      <td>6.15 × 10−7</td>
+      <td>149547</td>
+    </tr>
+    <tr>
+      <td>Spinal stenosis</td>
+      <td>OR = 2.03 (1.51 to 2.75)</td>
+      <td>3.82 × 10−6</td>
+      <td>1917/150919</td>
+    </tr>
+    <tr>
+      <td>Apolipoprotein A</td>
+      <td>−0.018 g/L (−0.026 to −0.01)</td>
+      <td>1.55 × 10−5</td>
+      <td>138185</td>
+    </tr>
+    <tr>
+      <td>HDL cholesterol</td>
+      <td>−0.074 SD (−0.109 to −0.039)</td>
+      <td>3.62 × 10−5</td>
+      <td>138394</td>
+    </tr>
+    <tr>
+      <td>Essential hypertension</td>
+      <td>OR = 1.17 (1.08 to 1.27)</td>
+      <td>7.53 × 10−5</td>
+      <td>40809/115957</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>OR = 1.17 (1.08 to 1.26)</td>
+      <td>1.05 × 10−4</td>
+      <td>40960/115957</td>
+    </tr>
+  </tbody>
+</table>
+
+_CFT, calculated free testosterone; HDL, high density lipoprotein; GRS, genetic risk score._
 
 As confirmation, we demonstrated the GRS was indeed not associated with natural log-transformed natural log-transformed SHBG levels in males (p=0.12). For all statistically significant outcomes, associations were directionally consistent after removing participants taking blood pressure medication (Supplementary file 1 - Table 6) or cholesterol-lowering medication (Supplementary file 1 - Table 7). Further sensitivity analyses were performed by repeating the one-sample MR analysis using 52 genetic variants associated with total testosterone in males from the UK Biobank (Supplementary file 1 - Table 8). For all statistically significant outcomes, effects observed using total testosterone genetic variants were directionally consistent with CFT, and results for all outcomes are presented in Supplementary file 1 - Tables 9 and 10. Finally, most effect estimates for genetically-predicted testosterone in this stu﻿dy were comparable in magnitude to effect sizes reported in RCTs except bone mineral density (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-v2.jpg)
+
+**Figure 3.:** Error bars indicate 95% confidence intervals around the effect estimate. MR effect estimates are reported in terms of 0.1 nmol/L of CFT to approximate expected effect sizes after initiation of testosterone treatment (Bhasin et al., 2018b).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp5-v2.jpg)
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp6-v2.jpg)
 
 ## Discussion
 
@@ -72,15 +328,15 @@ Taken altogether, the decision to initiate long-term testosterone use warrants c
 
 ## Materials and methods
 
-## Study population - UK Biobank
+### Study population - UK Biobank
 
 The UK Biobank is a large-scale longitudinal cohort study that recruited over 500,000 people between the ages of 37–73 across the United Kingdom from 2006 to 2010 (Sudlow et al., 2015) (RRID:SCR_012815). UK Biobank received ethical approval from the North West Multi-Centre Research Ethics Committee (REC reference: 11/NW/0382). This research was conducted using the UK Biobank under Application Number 15255. For this study, UK Biobank participants were included if white British ancestry, and no self-reported androgen medication at recruitment based on field ID 20003.
 
-## Measurement of testosterone and sex hormone-binding globulin in UK Biobank
+### Measurement of testosterone and sex hormone-binding globulin in UK Biobank
 
 In the UK Biobank, total testosterone and sex hormone-binding globulin (SHBG) were measured on a Beckman Coulter Unicel DXI 800 using a one-step competitive analysis and two-step sandwich immunoassay, respectively. Analytical range for the immunoassays of total testosterone and SHBG were 0.35 to 55.52 and 0.33 to (226-242) nmol/L, respectively. For total testosterone, within-laboratory CV for high, medium, and low concentration quality control samples were 4.15, 3.66, and 8.34%. For SHBG, within-laboratory CV for high, medium, and low concentration quality control samples were 5.22, 5.25, and 5.67%. For each blood sample drawn at recruitment, testosterone, SHBG, and albumin were each measured only once. Testosterone and SHBG measurements were flagged if they fell outside the manufacturer’s observed reportable range, or samples reported high levels of bilirubin, hemoglobin or lipids/turbidity that might interfere with the assay. Testosterone measurements were flagged if levels of total protein (<55 or>85 g/L) or triglycerides (>20 mmol/L) could interfere with the assay measurements. To monitor assay consistency, all samples were run with internal quality control samples between batches and operations used external quality assurance schemes against the ISO 17025:2005 standard.
 
-## Genome-wide association study of CFT
+### Genome-wide association study of CFT
 
 Individual-level genetic data was available for 488,317 participants that consented to blood collection and genotyping. Genotyping was performed with the Applied Biosystems UK Biobank Lung Exome Variant Evaluation (UK BiLEVE) and UK Biobank Axiom arrays (Affymetrix Research Services Laboratory, Santa Clara, California, USA). Description of quality control has been previously described in detail (Bycroft et al., 2017). Genetic variants located in the human leukocyte antigen gene complex were excluded due to extensive pleiotropic effects.
 
@@ -90,27 +346,27 @@ This study was restricted to genetic variants from ‘v3’ release of the UK Bi
 
 Genomic inflation factor (λ) was 1.2 and calculated as the ratio of the median test statistic from the GWAS relative to the expected median test statistic under a null model (Figure 1—figure supplement 5). To distinguish between an inflated λ due to population stratification or polygenic inheritance of the trait, the intercept of an LD score regression line was determined to be 1.03 indicating the observed inflation could be attributed to polygenicity rather than uncontrolled population stratification. LD score regression was performed and intercept was calculated with LDSC software (Bulik-Sullivan et al., 2015) using 1000 Genomes Europeans phase three data as the LD reference panel (Abecasis et al., 2012).
 
-## Definition of health-related UK Biobank outcomes
+### Definition of health-related UK Biobank outcomes
 
-For MR analyses, 22 health outcomes were selected a priori based on relevance with known or suspected effects of testosterone treatment and categorized based on expected beneficial or adverse effects from RCT data. Outcomes with expected beneficial effects were fractures at any site, heel BMD, body fat percentage, body fat-free percentage, dementia, depression, handgrip strength, and physical activity level measured by wrist-worn accelerometer. Outcomes with potential adverse effects were stroke, androgenic alopecia, benign prostate hyperplasia (BPH), blood pressure, glucose, hematocrit percentage, hemoglobin A1c, heart failure, prostate cancer, MI, type 2 diabetes (T2D), and venous thromboembolism. Depression was coded using a ‘broad’ definition as previously described, which included self-reported depressive symptoms with associated impairment, or having sought help for ‘nerves, anxiety, tensions or depression’ (Howard et al., 2018). Androgenic alopecia was defined based on participants’ responses to the question, ‘Which of the following best describes your hair/balding pattern?’ (field ID 2395). Available options were four pictures of hair patterns (Supplementary file 1 – Figure 1). Individuals with pattern 3 or four were cases, pattern 1 and 2 were controls, and ‘do not know’ or ‘prefer not to answer’ responses were excluded. Physical activity was assessed using the overall acceleration average from wrist-worn accelerometer devices over the course of approximately 7 days. Following UK Biobank recommendations, individuals were excluded from the analysis based on poorly calibrated data (field ID: 90016) or having worn the device for insufficient time to get a stable measure of physical activity (field ID: 90015) (Doherty et al., 2017). Blood pressure measures were coded as the average of two automated measurements of blood pressure taken a few moments apart by a registered nurse using an Omron 705 IT electronic blood pressure monitor. Body fat percentage and whole body fat-free mass were estimated based on impedance measurements from a Tanita BC418MA body composition analyser. Heel BMD was estimated as a T-score based on quantitative ultrasound index through the calcaneus relative to that expected in someone of the same sex. Handgrip strength was calculated as the average of right and left hands measured using a Jamar J00105 hydraulic hand dynamometer. hemoglobin A1C was measured using high performance liquid chromatography analysis on a Bio-Rad VARIANT II Turbo. Glucose was measured using hexokinase analysis on a Beckman Coulter AU5800. Hematocrit percentage was measured using a Coulter LH750 and calculated as the relative volume of packed erythrocytes to whole blood, computed by the formula: redbloodcells∗meancorpuscularvolume10. Detailed descriptions of all 22 outcomes are shown in Supplementary file 1 – Table 11.
+For MR analyses, 22 health outcomes were selected a priori based on relevance with known or suspected effects of testosterone treatment and categorized based on expected beneficial or adverse effects from RCT data. Outcomes with expected beneficial effects were fractures at any site, heel BMD, body fat percentage, body fat-free percentage, dementia, depression, handgrip strength, and physical activity level measured by wrist-worn accelerometer. Outcomes with potential adverse effects were stroke, androgenic alopecia, benign prostate hyperplasia (BPH), blood pressure, glucose, hematocrit percentage, hemoglobin A1c, heart failure, prostate cancer, MI, type 2 diabetes (T2D), and venous thromboembolism. Depression was coded using a ‘broad’ definition as previously described, which included self-reported depressive symptoms with associated impairment, or having sought help for ‘nerves, anxiety, tensions or depression’ (Howard et al., 2018). Androgenic alopecia was defined based on participants’ responses to the question, ‘Which of the following best describes your hair/balding pattern?’ (field ID 2395). Available options were four pictures of hair patterns (Supplementary file 1 – Figure 1). Individuals with pattern 3 or four were cases, pattern 1 and 2 were controls, and ‘do not know’ or ‘prefer not to answer’ responses were excluded. Physical activity was assessed using the overall acceleration average from wrist-worn accelerometer devices over the course of approximately 7 days. Following UK Biobank recommendations, individuals were excluded from the analysis based on poorly calibrated data (field ID: 90016) or having worn the device for insufficient time to get a stable measure of physical activity (field ID: 90015) (Doherty et al., 2017). Blood pressure measures were coded as the average of two automated measurements of blood pressure taken a few moments apart by a registered nurse using an Omron 705 IT electronic blood pressure monitor. Body fat percentage and whole body fat-free mass were estimated based on impedance measurements from a Tanita BC418MA body composition analyser. Heel BMD was estimated as a T-score based on quantitative ultrasound index through the calcaneus relative to that expected in someone of the same sex. Handgrip strength was calculated as the average of right and left hands measured using a Jamar J00105 hydraulic hand dynamometer. hemoglobin A1C was measured using high performance liquid chromatography analysis on a Bio-Rad VARIANT II Turbo. Glucose was measured using hexokinase analysis on a Beckman Coulter AU5800. Hematocrit percentage was measured using a Coulter LH750 and calculated as the relative volume of packed erythrocytes to whole blood, computed by the formula: $\frac{redbloodcells∗meancorpuscularvolume}{10}$. Detailed descriptions of all 22 outcomes are shown in Supplementary file 1 – Table 11.
 
 For hypothesis-free GRS analyses, we included 24 blood biomarkers measured at recruitment and 415 diseases derived from linked electronic medical records (Supplementary file 1 - Table 12; Brion et al., 2013; Denny et al., 2013; Wu et al., 2019). Disease outcomes were defined using the previously published ‘PheCode’ scheme to aggregate ICD-10 codes from hospital episodes (field ID 41270), death registry (field ID 40001 and 40002), and cancer registry (field ID 40006) records (Denny et al., 2013; Wu et al., 2019). Given the small number of cases for many disease outcomes, any outcomes with detectable odds ratios less than 0.5 or greater than 2 per 0.1 nmol/L at 80% power were excluded (ncases < 871) based on approximate changes in response to testosterone supplementation (Bhasin et al., 2018b; Brion et al., 2013; Traustadóttir et al., 2018). After these exclusions, there were 415 diseases that remained for subsequent analyses in this study. Furthermore, all blood biomarkers measured by the UK Biobank at recruitment were included except estradiol and rheumatoid factor, which were complicated by majority missing values below the limit of detection of the assay (nbiomarkers = 24). Detailed descriptions of all 439 outcomes (415 diseases and 24 biomarkers) are shown in Supplementary file 1 – Table 12.
 
-## Mendelian randomization analysis
+### Mendelian randomization analysis
 
 In a subset of unrelated males with White British ancestry, the association of all independent genetic variants associated with CFT were determined for each of the 22 a priori outcomes using additive genetic models in BGENIE v1.2 and adjusted for the same covariates as the model for CFT (Bycroft et al., 2017). For each of the 22 outcomes, one-sample MR analysis was used to combine the effect of each independent genetic variant on CFT with its effect on the outcome using the inverse variance-weighted (IVW) method (Burgess et al., 2016). Effect estimates were reported per 0.1 nmol/L increase in CFT levels based on approximate changes in response to testosterone treatment (Bhasin et al., 2018b). For dichotomous outcomes, odds ratios were approximated as previously described (Adams et al., 2018) by converting linear effect estimates from BGENIE to log-odds scale using:
 
-log⁡OR= k(1-k), where k is the proportion of cases for the given outcome.
+$log⁡OR=\frac{}{k(1-k)}$, where k is the proportion of cases for the given outcome.
 
 Given the polygenic nature of testosterone and potential for pleiotropy, for outcomes with statistically significant effects using the IVW method, standard sensitivity analyses were conducted to correct for pleiotropic effects, such as MR-Egger, MR-RAPS, and MR-PRESSO (Bowden et al., 2015; Verbanck et al., 2018). To investigate and correct for directional pleiotropy on each outcome, we performed Egger regression. For outcomes with y-intercept of the regression line significantly different from 0 (p<0.05), there was evidence of directional pleiotropy and the causal estimate from MR Egger was reported to attempt to control for pleiotropic effects (Bowden et al., 2015). As a sensitivity analysis robust to idiosyncratic pleiotropy and weak instrument bias, MR-RAPS (Robust Adjusted Profile Score) was conducted using overdispersion and Tukey’s loss function (Zhao et al., 2018). To detect and correct for potential bias from invalid variants with pleiotropic effects, we performed the MR-PRESSO (Mendelian Randomization Pleiotropy RESidual Sum and Outlier) test with 10,000 simulations (Verbanck et al., 2018). The global test p-value evaluated whether there was any overall horizontal pleiotropy among all genetic variants. For outcomes with significant p-values (p<0.05), outlying genetic variants with predicted pleiotropic effects were removed and MR analysis repeated to correct for horizontal pleiotropy. The distortion test evaluated whether removal of the pleiotropic variants resulted in a significantly different causal estimate (p<0.05). Leave-one-out analysis was performed such that the IVW MR analysis was repeated after each genetic variant was excluded to identify effects on an outcome that are driven by a single outlying genetic variant. Furthermore, the set of genetic variants used in MR analysis were assessed for ‘weak instrument bias’, which can result in biased estimates if genetic variants don’t explain enough variance in exposure (e.g., CFT) levels (Pierce et al., 2011). Lastly, as a sensitivity analysis, all MR and GRS analyses were repeated using genetic variants associated with total testosterone. Finally, for significant outcomes, we compared estimated effect sizes from this MR study with reported effect sizes from random controlled trials of testosterone therapy, where possible, in Figure 3 (Cui et al., 2014; Fernández-Balsells et al., 2010; Ng Tang Fui et al., 2016; Zhang et al., 2020).
 
 In consideration of ‘weak instrument bias’, the F-statistic was 66 for the genetic variants associated with CFT, which was considered a strong instrument based on the recommended threshold of greater than 10 (Davies et al., 2018). MR-PRESSO was performed using the MR-PRESSO package and all other MR analyses were implemented using the TwoSampleMR package (Hemani et al., 2018; Verbanck et al., 2018) (RRID:SCR_019010).
 
-## Genetic risk score analysis
+### Genetic risk score analysis
 
 A genetically-predicted value of CFT was determined for each individual by constructing weighted GRS in the unrelated White British subset of UK Biobank males (n = 157,252). Weighted GRS were calculated by multiplying the effect of each CFT-associated genetic variant by the number of effect-corresponding alleles and summing this value for each individual. The GRS was tested for association with outcomes using logistic or linear regression models for case-control or quantitative outcomes, respectively, and adjusted for the same covariates as the GWAS for CFT. Effect estimates were reported per 0.1 nmol/L increase in CFT levels based on approximate changes in response to testosterone treatment (Bhasin et al., 2018b). As sensitivity analyses, we repeated GRS analyses after excluding males that self-reported taking blood pressure (n = 38,676) or cholesterol medication (n = 35,737) at recruitment based on field ID 6177.
 
-## Genetic determinants and effects of total testosterone in males
+### Genetic determinants and effects of total testosterone in males
 
 As a set of sensitivity checks, we repeated all GWAS, MR, and GRS analyses using total testosterone. In the White British subset of the UK Biobank, there were 175,421 males with total testosterone measured with an average 11.9 nmol/L (Figure 1—figure supplement 6). In this population, a genome-wide association study was conducted for total testosterone as described herein for CFT. After removing genetic variants associated with natural-log-transformed SHBG and LD pruning for independent SNPs (r2 <0.01), there were 52 independent genetic variants associated (p<5×10−8) with total testosterone in males from the UK Biobank (Supplementary file 1 – Table 8).
 

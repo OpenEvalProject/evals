@@ -12,15 +12,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0293rh119 Institute of Ecology and Evolution, University of Oregon Eugene United States
-2. https://ror.org/0293rh119 Knight Campus for Accelerating Scientific Impact, University of Oregon Eugene United States
-3. https://ror.org/0293rh119 School of Computer and Data Science, University of Oregon Eugene United States
+1. Institute of Ecology and Evolution, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+2. Knight Campus for Accelerating Scientific Impact, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+3. School of Computer and Data Science, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
 
 † Corresponding author
 
 ## Abstract
 
-Seahorses, pipefishes, and seadragons are fishes from the family Syngnathidae that have evolved extraordinary traits including male pregnancy, elongated snouts, loss of teeth, and dermal bony armor. The developmental genetic and cellular changes that led to the evolution of these traits are largely unknown. Recent syngnathid genome assemblies revealed suggestive gene content differences and provided the opportunity for detailed genetic analyses. We created a single-cell RNA sequencing atlas of Gulf pipefish embryos to understand the developmental basis of four traits: derived head shape, toothlessness, dermal armor, and male pregnancy. We completed marker gene analyses, built genetic networks, and examined the spatial expression of select genes. We identified osteochondrogenic mesenchymal cells in the elongating face that express regulatory genes bmp4, sfrp1a , and prdm16 . We found no evidence for tooth primordia cells, and we observed re-deployment of osteoblast genetic networks in developing dermal armor. Finally, we found that epidermal cells expressed nutrient processing and environmental sensing genes, potentially relevant for the brooding environment. The examined pipefish evolutionary innovations are composed of recognizable cell types, suggesting that derived features originate from changes within existing gene networks. Future work addressing syngnathid gene networks across multiple stages and species is essential for understanding how the novelties of these fish evolved.
+Seahorses, pipefishes, and seadragons are fishes from the family Syngnathidae that have evolved extraordinary traits including male pregnancy, elongated snouts, loss of teeth, and dermal bony armor. The developmental genetic and cellular changes that led to the evolution of these traits are largely unknown. Recent syngnathid genome assemblies revealed suggestive gene content differences and provided the opportunity for detailed genetic analyses. We created a single-cell RNA sequencing atlas of Gulf pipefish embryos to understand the developmental basis of four traits: derived head shape, toothlessness, dermal armor, and male pregnancy. We completed marker gene analyses, built genetic networks, and examined the spatial expression of select genes. We identified osteochondrogenic mesenchymal cells in the elongating face that express regulatory genes bmp4, sfrp1a, and prdm16. We found no evidence for tooth primordia cells, and we observed re-deployment of osteoblast genetic networks in developing dermal armor. Finally, we found that epidermal cells expressed nutrient processing and environmental sensing genes, potentially relevant for the brooding environment. The examined pipefish evolutionary innovations are composed of recognizable cell types, suggesting that derived features originate from changes within existing gene networks. Future work addressing syngnathid gene networks across multiple stages and species is essential for understanding how the novelties of these fish evolved.
 
 ## Introduction
 
@@ -40,33 +40,365 @@ Here, we report the first developmental scRNAseq atlas for syngnathids from late
 
 ## Results
 
-## Valuable scRNAseq atlas for studying syngnathid development
+### Valuable scRNAseq atlas for studying syngnathid development
 
 We produced the first developmental scRNAseq atlas for a syngnathid from two samples comprising 20 similarly staged embryos from pregnant, wild-caught Gulf pipefish (Syngnathus scovelli) males. The samples represent a late organogenesis developmental stage (Figure 1B–H). These embryos had a primarily cartilaginous skeleton with minimal mineralization, including jaw cartilages that were at the onset of mineralization and ethmoid elongation. The embryos also possessed cartilaginous dorsal fin pterygiophores but had no signs of dermal armor mineralization. This stage is referred to as ‘frontal jaws’ in the literature on syngnathids (Sommer et al., 2012).
 
 The atlas included 35,785 cells (19,892 and 15,893 cells from each sample; Figure 2—figure supplement 1; Figure 2—figure supplement 2), which formed 38 cell clusters (Figure 2A, Supplementary file 1; Supplementary file 2). We classified cells into four different broad tissue types – epithelial, connective, neural, and muscle – using Seurat-identified marker genes and published model organism resources (Figure 2—figure supplements 3–58). We next used Seurat-identified marker genes to pinpoint single marker genes that were most unique to each cluster (Figure 2—figure supplement 59). We completed in situ hybridization using Gulf and bay pipefish embryos for cell clusters for which examining gene expression would help hone and validate cluster annotations (Figure 2—figure supplements 60–72).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-v1.jpg)
+
+**Figure 2.:** The UMAP plot (A) shows all of the cell clusters and their identities reduced to the first two UMAP dimensions. The graph in (B) displays the results of the KEGG pathway analysis in cell clusters identified as connective tissue (excluding blood, pigment, digestive, and immune cells). The number of Seurat-identified marker genes for each cluster that was a part of each pathway is displayed on the y-axis. Bars are colored and labeled by cell cluster.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** This UMAP features cells plotted by sample (sample one in orange and sample two in cyan) in the first two UMAP dimensions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sample quality was assessed using the number of genes identified (nFeatureRNA), the total RNA counts (nCountRNA), the percentage of mitochondrial reads (percent.mt), and the likelihood of being a doublet (doub_values). Gulf pipefish sample data post-filtering is displayed for each of these metrics.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Feature plots of zebrafish muscle cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated muscle cell clusters in pipefish are distinguished by a dashed outline.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Feature plots of zebrafish muscle satellite cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated muscle primordia cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Feature plots of zebrafish cardiac muscle cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated cardiac muscle cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Feature plots of zebrafish retinal cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated retinal cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** Feature plots of zebrafish neuronal cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated neuronal cell clusters in pipefish are distinguished by a dashed outline.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** Feature plots of zebrafish chondroblast cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated chondroblast cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp9-v1.jpg)
+
+**Figure 2—figure supplement 9.:** Feature plots of zebrafish osteoblast cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated osteoblast cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp10-v1.jpg)
+
+**Figure 2—figure supplement 10.:** Feature plots of zebrafish notochord cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated notochord cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp11-v1.jpg)
+
+**Figure 2—figure supplement 11.:** Feature plots of zebrafish fin cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated fin cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp12-v1.jpg)
+
+**Figure 2—figure supplement 12.:** Feature plots of zebrafish mesenchymal cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated mesenchymal cell clusters in pipefish are distinguished by a dashed outline.
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp13-v1.jpg)
+
+**Figure 2—figure supplement 13.:** Feature plots of zebrafish tenocyte cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated tenocyte and ligament cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp14-v1.jpg)
+
+**Figure 2—figure supplement 14.:** Feature plots of zebrafish erythrocyte cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated erythrocyte cell clusters in pipefish are distinguished by a dashed outline.
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp15-v1.jpg)
+
+**Figure 2—figure supplement 15.:** Feature plots of zebrafish endothelial cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated endothelial cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp16-v1.jpg)
+
+**Figure 2—figure supplement 16.:** Feature plots of zebrafish gut and liver cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated gut and liver cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp17-v1.jpg)
+
+**Figure 2—figure supplement 17.:** Feature plots of zebrafish epidermal cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated epidermal cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp18-v1.jpg)
+
+**Figure 2—figure supplement 18.:** Feature plots of zebrafish glial cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated glial cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp19-v1.jpg)
+
+**Figure 2—figure supplement 19.:** Feature plots of zebrafish immune cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated immune cell clusters in pipefish are distinguished by a dashed outline.
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp20-v1.jpg)
+
+**Figure 2—figure supplement 20.:** Feature plots of zebrafish pigment cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated pigment cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp21-v1.jpg)
+
+**Figure 2—figure supplement 21.:** Feature plots of zebrafish fibroblast cell marker genes identified from the Daniocell single-cell RNA sequencing (scRNAseq) database demonstrate Gulf pipefish expression. Annotated fibroblast cell cluster in pipefish is distinguished by a dashed outline.
+
+![Figure 2—figure supplement 22.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp22-v1.jpg)
+
+**Figure 2—figure supplement 22.:** Feature plots of top markers for cluster 0 identified from the marker gene lists.
+
+![Figure 2—figure supplement 23.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp23-v1.jpg)
+
+**Figure 2—figure supplement 23.:** Feature plots of top markers for cluster 1 identified from the marker gene lists.
+
+![Figure 2—figure supplement 24.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp24-v1.jpg)
+
+**Figure 2—figure supplement 24.:** Feature plots of top markers for cluster 2 identified from the marker gene lists.
+
+![Figure 2—figure supplement 25.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp25-v1.jpg)
+
+**Figure 2—figure supplement 25.:** Feature plots of top markers for cluster 3 identified from the marker gene lists.
+
+![Figure 2—figure supplement 26.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp26-v1.jpg)
+
+**Figure 2—figure supplement 26.:** Feature plots of top markers for cluster 4 identified from the marker gene lists.
+
+![Figure 2—figure supplement 27.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp27-v1.jpg)
+
+**Figure 2—figure supplement 27.:** Feature plots of top markers for cluster 5 identified from the marker gene lists.
+
+![Figure 2—figure supplement 28.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp28-v1.jpg)
+
+**Figure 2—figure supplement 28.:** Feature plots of top markers for cluster 6 identified from the marker gene lists.
+
+![Figure 2—figure supplement 29.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp29-v1.jpg)
+
+**Figure 2—figure supplement 29.:** Feature plots of top markers for cluster 7 identified from the marker gene lists.
+
+![Figure 2—figure supplement 30.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp30-v1.jpg)
+
+**Figure 2—figure supplement 30.:** Feature plots of top markers for cluster 8 identified from the marker gene lists.
+
+![Figure 2—figure supplement 31.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp31-v1.jpg)
+
+**Figure 2—figure supplement 31.:** Feature plots of top markers for cluster 9 identified from the marker gene lists.
+
+![Figure 2—figure supplement 32.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp32-v1.jpg)
+
+**Figure 2—figure supplement 32.:** Feature plots of top markers for cluster 10 identified from the marker gene lists.
+
+![Figure 2—figure supplement 33.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp33-v1.jpg)
+
+**Figure 2—figure supplement 33.:** Feature plots of top markers for cluster 12 identified from the marker gene lists.
+
+![Figure 2—figure supplement 34.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp34-v1.jpg)
+
+**Figure 2—figure supplement 34.:** Feature plots of top markers for cluster 13 identified from the marker gene lists.
+
+![Figure 2—figure supplement 35.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp35-v1.jpg)
+
+**Figure 2—figure supplement 35.:** Feature plots of top markers for cluster 14 identified from the marker gene lists.
+
+![Figure 2—figure supplement 36.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp36-v1.jpg)
+
+**Figure 2—figure supplement 36.:** Feature plots of top markers for cluster 15 identified from the marker gene lists.
+
+![Figure 2—figure supplement 37.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp37-v1.jpg)
+
+**Figure 2—figure supplement 37.:** Feature plots of top markers for cluster 16 identified from the marker gene lists.
+
+![Figure 2—figure supplement 38.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp38-v1.jpg)
+
+**Figure 2—figure supplement 38.:** Feature plots of top markers for cluster 17 identified from the marker gene lists.
+
+![Figure 2—figure supplement 39.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp39-v1.jpg)
+
+**Figure 2—figure supplement 39.:** Feature plots of top markers for cluster 18 identified from the marker gene lists.
+
+![Figure 2—figure supplement 40.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp40-v1.jpg)
+
+**Figure 2—figure supplement 40.:** Feature plots of top markers for cluster 19 identified from the marker gene lists.
+
+![Figure 2—figure supplement 41.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp41-v1.jpg)
+
+**Figure 2—figure supplement 41.:** Feature plots of top markers for cluster 20 identified from the marker gene lists.
+
+![Figure 2—figure supplement 42.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp42-v1.jpg)
+
+**Figure 2—figure supplement 42.:** Feature plots of top markers for cluster 21 identified from the marker gene lists.
+
+![Figure 2—figure supplement 43.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp43-v1.jpg)
+
+**Figure 2—figure supplement 43.:** Feature plots of top markers for cluster 22 identified from the marker gene lists.
+
+![Figure 2—figure supplement 44.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp44-v1.jpg)
+
+**Figure 2—figure supplement 44.:** Feature plots of top markers for cluster 23 identified from the marker gene lists.
+
+![Figure 2—figure supplement 45.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp45-v1.jpg)
+
+**Figure 2—figure supplement 45.:** Feature plots of top markers for cluster 24 identified from the marker gene lists.
+
+![Figure 2—figure supplement 46.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp46-v1.jpg)
+
+**Figure 2—figure supplement 46.:** Feature plots of top markers for cluster 25 identified from the marker gene lists.
+
+![Figure 2—figure supplement 47.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp47-v1.jpg)
+
+**Figure 2—figure supplement 47.:** Feature plots of top markers for cluster 26 identified from the marker gene lists.
+
+![Figure 2—figure supplement 48.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp48-v1.jpg)
+
+**Figure 2—figure supplement 48.:** Feature plots of top markers for cluster 27 identified from the marker gene lists.
+
+![Figure 2—figure supplement 49.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp49-v1.jpg)
+
+**Figure 2—figure supplement 49.:** Feature plots of top markers for cluster 28 identified from the marker gene lists.
+
+![Figure 2—figure supplement 50.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp50-v1.jpg)
+
+**Figure 2—figure supplement 50.:** Feature plots of top markers for cluster 29 identified from the marker gene lists.
+
+![Figure 2—figure supplement 51.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp51-v1.jpg)
+
+**Figure 2—figure supplement 51.:** Feature plots of top markers for cluster 30 identified from the marker gene lists.
+
+![Figure 2—figure supplement 52.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp52-v1.jpg)
+
+**Figure 2—figure supplement 52.:** Feature plots of top markers for cluster 31 identified from the marker gene lists.
+
+![Figure 2—figure supplement 53.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp53-v1.jpg)
+
+**Figure 2—figure supplement 53.:** Feature plots of top markers for cluster 32 identified from the marker gene lists.
+
+![Figure 2—figure supplement 54.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp54-v1.jpg)
+
+**Figure 2—figure supplement 54.:** Feature plots of top markers for cluster 33 identified from the marker gene lists.
+
+![Figure 2—figure supplement 55.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp55-v1.jpg)
+
+**Figure 2—figure supplement 55.:** Feature plots of top markers for cluster 34 identified from the marker gene lists.
+
+![Figure 2—figure supplement 56.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp56-v1.jpg)
+
+**Figure 2—figure supplement 56.:** Feature plots of top markers for cluster 35 identified from the marker gene lists.
+
+![Figure 2—figure supplement 57.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp57-v1.jpg)
+
+**Figure 2—figure supplement 57.:** Feature plots of top markers for cluster 36 identified from the marker gene lists.
+
+![Figure 2—figure supplement 58.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp58-v1.jpg)
+
+**Figure 2—figure supplement 58.:** Feature plots of top markers for cluster 37 identified from the marker gene lists.
+
+![Figure 2—figure supplement 59.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp59-v1.jpg)
+
+**Figure 2—figure supplement 59.:** This dotplot shows the marker genes on the x-axis, and the cell cluster on the y-axis. The size of each dot indicates the percentage of cells that express the gene in each cluster. The darkness of each dot represents the average expression of the gene.
+
+![Figure 2—figure supplement 60.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp60-v1.jpg)
+
+**Figure 2—figure supplement 60.:** Atlas expression is limited to cluster 2 (A). In situ hybridization experiments revealed muscle staining of slc25a4 in bay pipefish (B–D). Wild-caught bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally to highlight expression domains.
+
+![Figure 2—figure supplement 61.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp61-v1.jpg)
+
+**Figure 2—figure supplement 61.:** Atlas expression is limited to cluster 3 (A). In situ hybridization experiments revealed brain staining of scg2a in bay pipefish (B–D). Wild-caught bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally to highlight expression domains.
+
+![Figure 2—figure supplement 62.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp62-v1.jpg)
+
+**Figure 2—figure supplement 62.:** Strong expression of prdm16 in cluster 5, osteochondrogenic mesenchyme (A). In situ hybridization experiments revealed mesenchymal staining of prdm16 in the fins and face of bay pipefish (B–D). Wild-caught bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally (B, D, E) and with a dorsal view (C) to highlight expression domains.
+
+![Figure 2—figure supplement 63.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp63-v1.jpg)
+
+**Figure 2—figure supplement 63.:** Strong expression of elnb in cluster 6, osteochondrogenic mesenchyme (A). In situ hybridization experiments revealed mesenchymal staining of elnb in the face of bay pipefish (B–D). Wild-caught bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted dorsally to showcase the craniofacial staining (B) and laterally (C–E) to show the lack of staining in the ceratohyal, dorsal fin, and caudal fin.
+
+![Figure 2—figure supplement 64.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp64-v1.jpg)
+
+**Figure 2—figure supplement 64.:** Expression of fndc9 is limited to cluster 7, brain cells, in the atlas (A). In situ hybridization experiments revealed brain staining of fndc9 in Gulf pipefish (B, C). One day post-spawn Gulf pipefish larvae were used for this experiment. Embryos were mounted to highlight two views of the brain staining, one dorsal (B) and one lateral (C).
+
+![Figure 2—figure supplement 65.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp65-v1.jpg)
+
+**Figure 2—figure supplement 65.:** Strong expression of insm1b is observed in cluster 8, brain progenitor cells, in the atlas (A). In situ hybridization experiments revealed brain staining of insm1b in Gulf pipefish (B). Five-day post-spawn Gulf pipefish larvae were used for this experiment. Embryos were mounted laterally to highlight the brain staining.
+
+![Figure 2—figure supplement 66.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp66-v1.jpg)
+
+**Figure 2—figure supplement 66.:** Strong expression of tnmd is observed in cluster 9, tenocyte and ligament cells, in the atlas (A). In situ hybridization experiments revealed tendon and ligament staining of tnmd in bay pipefish (B–E). Wild-caught embryos from bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally (B, E) and ventrally (C, D) to showcase tendon and ligament staining.
+
+![Figure 2—figure supplement 67.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp67-v1.jpg)
+
+**Figure 2—figure supplement 67.:** Strong expression of myf5 is observed in cluster 10, muscle progenitor cells, in the atlas (A). In situ hybridization experiments revealed muscle staining of myf5 in bay pipefish (B–D). Wild-caught embryos from bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally to highlight muscle staining.
+
+![Figure 2—figure supplement 68.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp68-v1.jpg)
+
+**Figure 2—figure supplement 68.:** Strong expression of hpbd is observed in cluster 13, fibroblasts, in the atlas (A). In situ hybridization experiments revealed somite staining of hpbd in bay pipefish (B). Wild-caught embryos from bay pipefish at the mid-somitogenesis stage were used for the experiment. Embryos were mounted laterally to highlight muscle staining.
+
+![Figure 2—figure supplement 69.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp69-v1.jpg)
+
+**Figure 2—figure supplement 69.:** Specific expression of ifitm5 is observed in cluster 18, osteoblasts, in the atlas (A). In situ hybridization experiments revealed bone staining of ifitm5 in bay pipefish (B–E). Wild-caught embryos from bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally to highlight muscle staining.
+
+![Figure 2—figure supplement 70.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp70-v1.jpg)
+
+**Figure 2—figure supplement 70.:** Specific expression of plaat4 is observed in cluster 23, epidermal cells, in the atlas (A). In situ hybridization experiments revealed epidermal staining of plaat4 in bay pipefish (B–D). Wild caught embryos from bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted ventrally (B) and laterally (C, D) to highlight epidermal staining.
+
+![Figure 2—figure supplement 71.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp71-v1.jpg)
+
+**Figure 2—figure supplement 71.:** Specific expression of hyal6 is observed in cluster 33, hair cells, in the atlas (A). In situ hybridization experiments revealed staining of hyal6 in bay pipefish nares and ears (B, C). Wild-caught embryos from bay pipefish from 1 d post spawn larvae were used for the experiment. Embryos were mounted dorsally (B) and laterally (C) to highlight staining in nares and ears, respectively.
+
+![Figure 2—figure supplement 72.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp72-v1.jpg)
+
+**Figure 2—figure supplement 72.:** Expression of soat2 is observed in cluster 36, muscle cells, in the atlas (A). In situ hybridization experiments revealed staining of soat2 in bay pipefish muscle and fins (B–E). Wild-caught embryos from bay pipefish at the onset of craniofacial elongation were used for the experiment. Embryos were mounted laterally to highlight staining in muscle and fin.
+
+![Figure 2—figure supplement 73.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp73-v1.jpg)
+
+**Figure 2—figure supplement 73.:** KEGG pathways are listed on the x-axis. For each cluster, the number of genes that belong to the specific KEGG pathway is represented by the height of each bar. Cell clusters are labeled by both color and their designated number. For clarity, only cell clusters with more than three annotated genes in each pathway are shown and certain pathways involving infection and metabolism are removed.
+
+![Figure 2—figure supplement 74.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig2-figsupp74-v1.jpg)
+
+**Figure 2—figure supplement 74.:** Differentiation state of cell clusters was measured using CytoTRACE, where an output of 1 indicates an undifferentiated cell and a value of 0 suggests a cell is fully differentiated. Cells are plotted on a violin plot with individual cell predictions shown as dots. Panels show results from muscle (A), neural (B), and connective (C) clusters.
+
 In total, our atlas contained 13,027 connective tissue cells (excluding cells from the blood, immune, and the digestive system) from 14 clusters, 10,112 nervous system cells from 10 clusters, 4,363 muscle cells from five clusters, 4,133 blood cells from three clusters, 650 immune cells from two clusters, 432 pigment cells from one cluster, 370 epidermal cells from one cluster, and 137 gut cells from one cluster. Within the connective tissue cell types, we also identified cartilage (302 cells), developing bone (442 cells), fins (253 cells), and notochord (693 cells). The number of recovered cells per identity may not necessarily represent organismal cellular proportions because of potential variability in dissociation success for different cell types (Denisenko et al., 2020; Uniken Venema et al., 2022).
 
-## Discovery of cell cluster function and state using KEGG analysis
+### Discovery of cell cluster function and state using KEGG analysis
 
 To affirm identities and discover the potential properties of each cluster, we completed a KEGG pathway analysis for each cluster using Seurat’s marker genes (Figure 2—figure supplement 73, Figure 2B). For eight of the clusters (1, 4, 6, 9, 11, 15, 19, and 24), we did not find any significantly enriched pathways, possibly due to similar gene expression profiles across cell types that reduced the number of identified markers. However, we found one or more significantly enriched pathways for the other 29 cell clusters. We observed enriched pathway terms that supported cluster annotations. For example, ‘phototransduction’ in the retina cluster, ‘melanogenesis’ in the pigment cluster, ‘cardiac muscle contraction’ in muscle clusters, and ‘neuroactive ligand-receptor interaction’ in neuronal clusters.
 
 The inferred KEGG pathways demonstrated some commonalities across the different tissue types, including in signaling pathways and cell states. Notably, our identified KEGG terms delineated progenitor and differentiated cell clusters. Based on their KEGG terms, we classified clusters 8, 10, and 16 as possible neural, muscle, and connective tissue progenitor cells, respectively. We also detected expression of pax3a and pax3b, muscle primordia markers, in cluster 10, supporting this annotation. These clusters had enriched KEGG terms associated with cell division (‘cell cycle,’ ‘DNA replication,’ ‘nucleotide excision repair,’ and ‘homologous recombination’), and lacked enrichment for KEGG pathways present with differentiated cell types of their lineage. Specifically, cluster 8 lacked the neural KEGG term ‘neuroactive ligand-receptor interaction,’ cluster 10 lacked muscle KEGG terms ‘adrenergic signaling in cardiomyocytes,’ ‘calcium signaling pathways,’ and ‘cardiac muscle contraction,’ and cluster 16 lacked connective tissue term ‘ECM receptor interaction.’ To complement these findings, we completed a cell differentiation analysis using CytoTRACE for neural, muscle, and connective clusters (Figure 2—figure supplement 74). Clusters 8, 10, and 16 had the lowest scores in each respective comparison, which indicated undifferentiated cell states. Thus, it is likely that clusters 8, 10, and 16 represented undifferentiated cells within the major lineages of neural, muscle, and connective cells.
 
-## Commonalities of cell clusters, unique networks, and elusive cell types identified in network analysis
+### Commonalities of cell clusters, unique networks, and elusive cell types identified in network analysis
 
 We built gene networks/modules from 3000 variable genes using weighted gene network correlation analysis (WGCNA; Langfelder and Horvath, 2008). This produced 43 gene modules in total (Supplementary file 8; Supplementary file 9), assessed for each cluster-module pair for their strength of association (Figure 3A, Supplementary file 10; Supplementary file 11) and every module’s dependence on each cluster for their network connectivity (Figure 3—figure supplement 1, Supplementary file 12; Supplementary file 13). Using the genes from each network, we completed a KEGG pathway analysis to identify whether gene modules indicated specific cellular pathways or states (Figure 3B). We initially explored whether these network-cluster associations could reveal commonalities between cell clusters or identify whether particular clusters contained multiple cell identities.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig3-v1.jpg)
+
+**Figure 3.:** (A) The strength of association between the gene modules and cell clusters is shown in panel A with dendrogram clustering illustrating the distance between modules and cell clusters. Gene modules are represented by rows and cell clusters by columns. The modules and clusters are clustered using the Pearson distance method. The number of genes in each gene module are shown in the right-hand bar plots. Cell clusters are colored based on their identity. The asterisks indicate the module-cluster relationships that have a p-value less than 0.05 from a two-sided permutation test after correction for multiple tests (false discovery rate, FDR). The heatmap is colored by t-statistics in a range of –10 to 10, with highly positive values in yellow and highly negative values in black. (B) The identified gene modules possess genes from KEGG pathways. The bars are labeled with the gene module and the size of each bar corresponds to the number of genes from the KEGG pathway in the module. Since WGCNA modules do not have p-values, only KEGG pathways with more than two genes included in the gene module are shown on the plot. (C) Identified gene modules contain similar KEGG pathways as the cell clusters that correlated with them. These relationships are shown in Upset plots where each row is a cell cluster or gene module, each column represents KEGG pathways shared by the modules and clusters (shared condition is shown filled in black dots connected by lines), the interaction size is the number of pathways in common between the set of modules and clusters, and the set size is the number of pathways that are enriched in each cluster and module. Panel C1 highlights that 'cytokine-cytokine receptor interaction' and 'ECM receptor interaction' are present in module 6 as well as 6 and 4 connective cell clusters, respectively. Panel C2 shows that 'cell cycle' and ’senescence' are present in module 21 as well as clusters 8 and 16, 'Notch signaling' genes are present in clusters 8 and 25 as well as module 21, and 'DNA replication' is present in clusters 8, 10, and 16.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The heatmap shows the change in gene network connectivity when individual cell clusters are removed. Cell clusters are in the columns and gene modules are in rows. The coloration scale is based on the change in connectivity when a cell cluster is removed, with yellow indicating a large change in connectivity. The modules and clusters are clustered using the Pearson distance method. Asterisks indicate cluster-module pairs that are significant using a one-way permutation test and false discovery rate (FDR) correction. The size of the gene modules are shown to the right.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Genes within the network are combined into one feature and then plotted on a feature plot. In this case, UMAP dimensions one and two are the x and y-axis accordingly, dots represent each pigment cell, and the color of the dots represents the expression of the module. Cells that express gene modules are either colored red or green (when modules are plotted on separate plots). When plotted on the same plot, cells that express both gene modules are yellow. A through J show each gene module comparison.
 
 First, we asked whether gene modules that associate with three or more cell clusters signify commonalities between clusters that have similar cell types. We identified seven gene modules (6, 7, 21, 14, 17, 41, and 42) that each associate with three or more cell clusters. These gene modules do connect clusters of similar identities or cell states. For example, Modules 6 and 7 are associate with connective tissue cells. Module 6, the larger of the two modules, contains numerous other KEGG pathways found in most connective cell clusters, such as ‘cytokine-cytokine receptor interaction’ (Figure 3C). Interestingly, module 21, associated with clusters 8, 10, 16, and 25, contains genes from KEGG pathways related to the ‘cell cycle’ and ‘cellular senescence’, supporting the results found in our cluster-based KEGG pathway analysis (Figure 3D). Module 21 also contained ‘Notch signaling’ genes, possibly due to similar correlations with cell cycle genes; however, these were only expressed in the neural cell clusters (8 and 25).
 
 Where one cell cluster is associated with multiple gene networks, we wondered if multiple cell identities existed within the cell cluster. We explored this possibility by examining the pigment cell cluster (cluster #20) and whether the five different correlated gene modules (#34, 35, 36, 37, and 38) are expressed in distinct subgroups of cells within the cluster (Figure 3—figure supplement 1). We found cases of more than one genetic network (modules 35 and 38) expressed in the same cells. Modules 35 and 38 included conserved pigment genes, pmela, mlana, and dct in module 35 and tryp1b and pmel in module 38, that mark melanocytes (Figure 3—figure supplement 2; Du et al., 2003; Johnson et al., 2011; Lamason et al., 2005; Thisse and Thisse, 2004). However, we also found non-overlapping expression of networks, notably modules 36 and 37. We inferred that module 36 is associated with xanthophores and xanthoblasts due to the presence of plin6 and scarb1, genes involved with lipid binding and activity in xanthophores (Ahi et al., 2020). On the other hand, module 37 likely represents iridophores and iridoblasts because it contains pnp4a, which is involved in purine-nucleoside phosphorylase activity in iridoblasts (Kimura et al., 2017).
 
-## Conserved signaling pathways are active during syngnathid craniofacial development
+### Conserved signaling pathways are active during syngnathid craniofacial development
 
 The specialized pipefish feeding apparatus is composed of an elongate, tubular snout, toothless mandible and pharyngeal jaws, large tendons, and associated muscles. Therefore, numerous cell types contribute to their distinct faces: cartilage, bone, tendon, muscle, and connective tissues as well as their progenitors. We sought to identify markers of these cell types and the signaling pathways active in them.
 
 We found marker genes uniquely expressed in the face, genes that mark cell types important to craniofacial development, and markers with potentially relevant functions for craniofacial development using in situ hybridizations of cell cluster marker genes. For instance, we observed the marker for osteochondro-mesenchymal cells (cluster #6), elnb, specifically expressed at the intersection between the ethmoid plate and palatoquadrate as well as on the Meckel’s cartilage (Figure 4B). Although elnb is observed in the zebrafish cranial skeleton, it is primarily studied for its proposed role in teleost heart evolution (Miao et al., 2007; Moriyama et al., 2016).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig4-v1.jpg)
+
+**Figure 4.:** Three main conserved signaling pathways are enriched in connective cell types, MAPK signaling (including Fgf signaling), TGF-beta signaling (including Bmp signaling), and Wnt signaling. Receptors and ligands expression patterns are shown in A heatmap from all cell types with cells present in the head. This heatmap features 100 cells downsampled from each cluster and illustrates that many genes from these families are expressed in these cells. Yellow lines indicate high expression of a gene, while hot pink lines indicate no expression. The pathways are boxed in black. Rows representing fgf22, bmp4, and sfrp1a expression are marked with an asterisk and green box for each respective section of signaling (Fgf, Bmp, and Wnt). Panels B, C, and D are in situ hybridizations of three marker genes, elnb, tnmd, and prdm16. The genes prdm16 and elnb mark osteochondrogenic mesenchyme and tnmd marks tendons and ligaments. Panels E, F, and G, show expression patterns of three pathway representatives fgf22, bmp4, and sfrp1a. All three genes are expressed in the face: fgf22 at the tip of the mandible and bmp4 and sfrp1a above the ethmoid and near the ceratohyal. Staining is circled with dashed lines. The Meckel’s cartilage (M), (mes)Ethmoid cartilage (E), Quadrate (Q), and Ceratohyal (C) are labeled. Panel C is a dorsal view. Panels B, C, E, F, G, H, I are in lateral view. In situ experiments of fgf22 were completed using 10dpf Gulf pipefish. In situ experiments of bmp4, sfrp1a, tnmd, elnb, and prdm16 were completed using wild-caught bay pipefish at the onset of craniofacial elongation. Panels H and I are summary illustrations of our findings, H shows where cells from various clusters were present in the developing head, and I illustrates where bmp4, sfrp1a, and fgf22 were expressed. Panel H is colored according to cell type.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The gene prdm16 expression was probed using in situ hybridization. Embryos used in this assay were similarly staged (9dpf in threespine stickleback and mid-craniofacial elongation in bay pipefish). Stickleback (A–C) expressed prdm16 in the lower jaw, brain, gill arches, and fins. Bay pipefish also have fin staining (F), but craniofacial expression is limited to the mesenchyme above the ethmoid region.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Expression of fgf22 was probed using in situ hybridization. Embryos used in this assay were similarly staged (9dpf threespine stickleback and 10dpf Gulf pipefish). Staining in the jaws (A, E), brain (B, F), gill arches (C, G), and fins (D, H) suggest similar fgf22 expression domains in both species.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Expression of bmp4 was probed using in situ hybridization. Embryos used in this assay were similarly staged (9dpf threespine stickleback and mid-craniofacial elongation staged bay pipefish). Stickleback has bmp4 staining in tooth germs (A), the jaws (A, B), and gill arches (C). However, bmp4 expression is restricted in bay pipefish to mesenchyme above the ethmoid and ceratohyal.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Expression of sfrp1a was probed using in situ hybridization. Embryos used in this assay were similarly staged (9dpf threespine stickleback and mid-craniofacial elongation staged bay pipefish). Both species had sfrp1a staining in the fins (D, H). However, sticklebacks have broad craniofacial expression in lower jaws, A, B, and gill arches, (C) while expression is limited to mesenchyme above the ethmoid (E), the jaw joint (F), and around the ceratohyal (G) in bay pipefish.
 
 Other genes identified here as cell markers were not uniquely craniofacial but provided insights into the cell types that comprise the face. For example, tnmd expression marked tendons and ligaments (cluster #9) throughout the face and body (Figure 4C; Figure 2—figure supplement 67). Our finding is consistent with tnmd’s role in tenocyte development in model systems, namely zebrafish and mouse (Chen and Galloway, 2014; Docheva et al., 2005). Identifying tenocyte cells is particularly relevant in syngnathid fishes where tendons are enlarged and store elastic energy necessary for their specialized feeding (Van Wassenbergh et al., 2008).
 
@@ -76,11 +408,19 @@ We next examined signaling pathways active in craniofacial development. Our KEGG
 
 We observed bmp4 and sfrp1a expressed above the ethmoid plate and along the ceratohyal in pipefish (Figure 4F–G). The gene bmp4 has a conserved role in craniofacial development, particularly important at later stages for driving chondrocyte differentiation (Wang et al., 2024; Zhou et al., 2013). However, the specificity of bmp4 expression to mesenchyme around the ceratohyal and ethmoid was not observed in stickleback fish, which had broad craniofacial expression (including the jaws, tooth germs, and gill arches; Figure 4—figure supplement 3). Interestingly, sfrp1a expression has not been observed in the palate of mice or ethmoid region of zebrafish, but sfrp1a craniofacial expression was identified in stickleback (lower jaw and gill arches; Figure 4—figure supplement 4) and has been observed in other fishes (Ahi et al., 2014; Schneider et al., 2023a; Schilling and Kimmel, 1997; Swartz et al., 2011; Wang et al., 2024).
 
-## Gulf pipefish retain tooth development genes but likely lack onset of tooth development
+### Gulf pipefish retain tooth development genes but likely lack onset of tooth development
 
 Previous papers have identified possible candidate genes for the loss of teeth in syngnathid fishes including those from genes that initiate tooth bud formation (fgf4, eve1), regulate tooth morphogenesis (fgf3, fgf4), and synthesize tooth minerals (scpp4, scpp7, scpp9, odam, and scpp5; Lin et al., 2016; Qu et al., 2021; Small et al., 2016; Small et al., 2022; Zhang et al., 2020). However, it is unknown whether syngnathid tooth development initiates and then halts or whether it never begins. We searched for signs of early tooth primordia within our atlas to ask whether tooth development might initiate in syngnathids. Additionally, we examined whether genes present in mature teeth are still expressed in syngnathids and what types of cells express them.
 
 Our thorough examination of cell clusters for identity annotation did not find a tooth primordium cluster. We therefore searched for tooth primordia by examining the expression of specific odontogenesis marker genes (aldh1a2, bmp4, dlx2a, dlx3b, lef1, lhx6a, lhx8, msx1a, msx2, and wnt10a; Figure 5A). We observed several primordium genes expressed in our atlas. However, there was no cluster with every marker gene expressed in over 10% of cells. Several markers (dlx3b, lef1, msx1a, msx2, and wnt10a) were expressed in cluster #28, a fin cluster distinguished by hoxa13a and hoxa13b expression. Since we previously noted that cluster #16 seems to be a primordial connective tissue cluster, we wondered if it could contain tooth primordial cells. In this cluster, we found the following percentage of expression of each gene in the cells: bmp4 in 46%, aldh1a2 in 29%, lef1 in 24%, dlx2a in 18%, dlx3b in 16.4%, eda in 12.7%, msx1a in 10.6%, pitx2 in 10%, lhx6a in 8%, wnt10a in 4.6%, msx2 in 2.65%, lhx8 in 1.8%, and shha in 1%.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig5-v1.jpg)
+
+**Figure 5.:** Panel A presents a dot-plot of genes classified by the tissue layer in which they are reported to be expressed during tooth development in other vertebrates (Tucker and Sharpe, 2004; Gibert et al., 2019; Kawasaki, 2009). The x-axis contains the assayed genes, with asterisks under the genes that were also examined with in situ hybridizations. The y-axis contains all the cell clusters. The size of the dot is representative of the percentage of cells from the cluster that express the gene. The color of the dots is an average expression of the gene in the cluster (darker purples represent higher expression). Panel B includes in situ hybridizations of selected tooth primordia markers (bmp4, pitx2, lhx6a, dlx2a, and dlx3b) and mature tooth markers (scpp1). In situ experiments of bmp4, pitx2, lhx6a, dlx2a, and dlx3b were completed with wild-caught bay pipefish that had begun craniofacial elongation. In situ experiments of scpp1 were completed using 9dpf Gulf pipefish. The scale bars for all images represent 100 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Denotes the Syngnathoidei lineage which contains syngnathids and blue spotted cornetfish (among other fish) to highlight that this clade contains various tooth alterations. Syngnathids lack teeth completely and cornetfish have small teeth limited to the lower jaw. (B) Denotes solely the syngnathid clade, which completely lacks teeth. The phylogenetic tree was time-calibrated using Hughes et al., 2018 and Stiller et al., 2022. Gene presence is indicated by arrows, dashed arrows denote psuedogenes, and the squiggle shows a gap.
 
 We suggest that, given the low expression of most tooth marker genes, cluster #16 is unlikely to contain tooth primordial cells. To test this hypothesis, we examined spatial gene expression using in situ hybridization of bmp4, pitx2, lhx6a, dlx2a, and dlx3b in pipefish to ask whether the two definitive cell types are present, namely the dental epithelium (marked by pitx2 and bmp4) and dental mesenchyme (distinguished by dlx2a, dlx3b, and lhx6a; Figure 5B–F; Gibert et al., 2019; Tucker and Sharpe, 2004). Tooth-specific expression of dlx2a is observed solely in the dental mesenchyme in zebrafish and mice, however, it is also expressed in the dental epithelium in medaka (Stock et al., 2006). For this study, we labelled dlx2a as a mesenchyme marker, though it could be expressed in both dental tissues in a syngnathid outgroup. We found expression of all genes except dlx2a in the developing jaws. However, bmp4, pitx2, lhx6a, and dlx3b were expressed throughout the face rather than in the punctate pattern observed in tooth primordia development.
 
@@ -88,7 +428,7 @@ We next investigated scpp genes (enam, scpp1, and spp1), which are expressed in 
 
 Exploration of additional tooth maturation genes (col1a1b, col4a1, col5a1, sparc, and mmp20b) similarly found that these genes were expressed in non-tooth derivatives, including connective tissue, smooth muscle, and neural cells.
 
-## Tooth and skeletal genes are expressed during dermal armor development
+### Tooth and skeletal genes are expressed during dermal armor development
 
 Syngnathid dermal armor is mineralized dermal bone underneath the skin (Figure 6D, G and H). It is unknown when syngnathid dermal armor primordia initiate and how they are patterned. Spatial expression analysis of pitx2 and dlx3b in search of tooth primordia instead revealed expression of these genes in possible dermal armor primordia (Figure 6A, B, E and F). We found pitx2 staining localized dorsally to the striated muscle underneath developing dermal armor. The gene dlx3b is expressed in a repeating pattern along the body in the epidermal and dermal tissues. Both staining patterns were in discrete regions of the muscle and epidermal layers rather than being continuously expressed across the tissues. We did not observe the expression of other tooth primordium genes (bmp4, lhx6a, and dlx2a) in this region.
 
@@ -98,11 +438,19 @@ Syngnathid dermal armor is mineralized dermal bone underneath the skin (Figure 6
 
 Because the embryos from our atlas had not begun dermal armor mineralization, the atlas cannot be directly used for the discovery of genes active in dermal armor. However, the atlas contains osteoblasts from craniofacial bones which we used to create osteoblast-specific gene networks. We therefore asked whether these osteoblast genes were present in mineralizing dermal armor at later stages. In situ hybridization expression analysis revealed that scpp1, an osteoblast and tooth mineralization gene, and ifitm5, an osteoblast gene, were expressed in the dermal armor at the onset of mineralization (Figure 6C; Figure 2—figure supplement 70).
 
-## Epithelial expression of immune and nutrient-processing genes may facilitate embryo-paternal interactions in the brood pouch
+### Epithelial expression of immune and nutrient-processing genes may facilitate embryo-paternal interactions in the brood pouch
 
 Within the brood pouch, embryos could interact with male placenta-like tissues, the male brood pouch epithelium, and/or the pouch microbiome. Once the thin chorion is shed, the embryos’ epidermis is directly exposed to the pouch environment. We therefore asked if the embryonic epidermal cells expressed nutrient acquisition and/or immune genes that would indicate an active transfer of nutrients and immune response.
 
 Within our larger KEGG analysis, we asked whether nutrient absorption and immune KEGG terms were among the enriched pathways for the epidermal cells. We identified 106 enriched genes in the ‘endocytosis’ pathway (p-value = 0.036; Figure 7A). Four metabolism pathways (‘galactose,’ ‘glutathione,’ ‘sphingolipid,’ and ‘starch and sucrose’) are also enriched. No immune-related KEGG terms were enriched in the epidermis. For comparison, we investigated whether these KEGG terms are also enriched in the epidermal cells of non-brooding fishes. We completed a KEGG pathway analysis on a comparably staged zebrafish single-cell RNA sequencing atlas (3 d post fertilization; Lange et al., 2024). The 3dpf zebrafish epidermal cells did not have a significant enrichment of the ‘endocytosis’ pathway (23 up-regulated genes, p-value = 0.99) or any metabolism pathway. However, there are 11 endocytosis genes up-regulated in both zebrafish and pipefish epidermal cells, suggesting conserved expression of these genes in pipefish.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig7-v1.jpg)
+
+**Figure 7.:** Epidermal cells (A), with pathways that suggest increased endocytosis and metabolism pathways are in bold text. Pathways, upregulated in 3dpf zebrafish epidermal cells are in italics. Pipefish epidermal cells also express 15 lectin genes not found in other cell types (B). We suggest an epidermal cell model (C), in which we predict pipefish have an enrichment of nutrient processing genes and lectins in comparison with zebrafish cells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/97764/elife-97764-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** This dotplot shows the marker genes on the x-axis and y-axis, organized by cell type. The size of the dot represents the percentage of cells that express the gene in each cluster. The darkness of the dot represents the average expression of the genes.
 
 We next examined pipefish epidermal gene networks for the presence of nutrient absorption or immune genes. We found that the largest epidermal gene network (#16) contained a striking enrichment of C-type lectin genes, carbohydrate-binding proteins that possess antimicrobial properties (Figure 7B). This network contained 14 total lectin genes expressed in the epidermal cells: five galactose-specific lectin nattectin, 2 alpha-N-acetylgalactosamine-specific lectins, one L-rhamnose-binding lectins, four ladder lectin, one C-type lectin 37Dd-like, and one C-type lectin domain family 4 members G-like. Through examining lectin gene expression in the entire dataset, we found that these genes were specific to epidermal cells. Interestingly, previous literature has identified an upregulation of C-type lectins in brood pouch tissues throughout different stages of syngnathid pregnancy (Roth et al., 2020; Small et al., 2013; Whittington et al., 2015).
 
@@ -112,13 +460,13 @@ We did not find any expression of C-type lectin genes in zebrafish epidermal cel
 
 Our study examines the development of syngnathids, with a particular focus on novel and adaptive characters, using single-cell RNA sequencing of Gulf pipefish embryos coupled with in situ experiments of gene expression. Our single-cell atlas represents early craniofacial skeleton development in Gulf pipefish at a stage when the cartilages of the head skeleton were formed but the face has not elongated. We used the atlas to explore craniofacial and dermal armor development and to investigate potential interactions between the embryos and the brood pouch environment. Our dataset is both an opportunity to explore the developmental genetic underpinnings of syngnathid innovations, and a resource for teleost researchers for future studies in this fascinating lineage.
 
-## Our atlas represents a novel resource for Evo-Devo research
+### Our atlas represents a novel resource for Evo-Devo research
 
 Developmental single-cell atlases have elucidated cell identities and genetic pathways active in model organisms such as zebrafish, mice, and chick (Farnsworth et al., 2020; Farrell et al., 2018; Feregrino et al., 2019; Morrison et al., 2017; Soldatov et al., 2019; Wagner et al., 2018; Williams et al., 2019). In less traditional models, the majority of scRNAseq atlases are produced from adult tissues, allowing investigations into cell types, population differences, and genetic networks (Chari et al., 2021; Fuess and Bolnick, 2023; Hain et al., 2022; Hong et al., 2023; Koiwai et al., 2023; Parker et al., 2022; Potts et al., 2022; Royan et al., 2021; Songco-Casey et al., 2022; Vonk et al., 2023; Woych et al., 2022). Creation of developmental scRNAseq atlases in non-model organisms is just beginning to accelerate, but many emerging models still lack such a resource, limiting our understanding of their development (Healey et al., 2022; Salamanca-Díaz et al., 2022; Steger et al., 2022; Ton et al., 2023). Our single-cell atlas is one of the first created to understand the development of derived traits in a non-model organism.
 
 For syngnathids specifically, this atlas represents an important step towards understanding the genetic nature of unique syngnathid traits. Numerous developmental genetic changes can lead to evolutionary innovations, including the evolution of novel genes, gene duplications, gene losses, gene family expansions or contractions, evolution of regulatory elements, co-option of gene regulatory networks, re-wiring of gene networks, assembly of novel gene networks, and/or the emergence of novel cells (Arendt et al., 2016; Cañestro et al., 2007; Teichmann and Babu, 2004; Wagner, 2011; Wagner and Lynch, 2010). Considering these possibilities, we examined select syngnathid traits and speculated on developmental genetic mechanisms influencing their evolution. Continuing to investigate these proposed mechanisms through expanded scRNAseq atlases and other studies will be critical for understanding syngnathid evolution.
 
-## Conserved pathways may contribute to derived syngnathid heads
+### Conserved pathways may contribute to derived syngnathid heads
 
 Syngnathids have highly derived heads including an elongated ethmoid region, uniquely shaped hyoid, and altered muscles and tendons to support specialized ‘pivot feeding.’ The developmental underpinnings of these derived traits have remained underexplored. In our atlas, we identified cell types present in the developing pipefish head and genetic pathways active in those cell types. We identified numerous cells that were present in the developing face: cartilage, bone, tendons, ligaments, osteochondrogenic mesenchyme, fibroblasts, and unclassified connective tissue cells. Overall, we did not find any unrecognizable cell types, suggesting that genetic modifications within conserved cell types may drive craniofacial modifications.
 
@@ -128,7 +476,7 @@ We found fgf22 expressed in the mandible, gill arches, and fins using in situ hy
 
 Our analysis suggests ways in which unique syngnathid craniofacial structures could have evolved through genetic network evolution. Unusual expression location (e.g. fgf22) and specificity (e.g. sfrp1a, bmp4, and prdm16) in pipefish, compared to zebrafish and stickleback, suggests that changes in signaling gene deployment and/or content within craniofacial gene networks, particularly genes from Wnt, Fgf, or TGF-beta families, could underly the exceptionally elongated syngnathid face.
 
-## Early, not late, tooth development is likely at the root of evolutionary tooth loss
+### Early, not late, tooth development is likely at the root of evolutionary tooth loss
 
 Tooth loss has occurred independently in numerous lineages and has often been studied to understand the developmental basis of character loss. For instance, research in birds and turtles found that tooth programs initiate but are subsequently truncated, explaining toothlessness in mature animals (Chen et al., 2000; Tokita et al., 2013). Additional studies in birds have found losses in tooth maturation genes (specifically scpp genes; Sire et al., 2008). Since numerous primordium and maturation genes are lost in syngnathids (Lin et al., 2016; Qu et al., 2021; Small et al., 2016; Small et al., 2022; Zhang et al., 2020), we asked if syngnathids begin tooth development at all.
 
@@ -136,7 +484,7 @@ We found that early tooth development genes were still expressed in pipefish, wh
 
 If our finding of the loss of the earliest stages of tooth development is consistent across developmental stages and syngnathids, why then have syngnathids retained some members of the scpp tooth maturation gene cluster? Since studies in birds propose scpp gene losses can occur from relaxed selection (Sire et al., 2008), we speculated syngnathids lost scpp genes with expression limited to teeth and retained genes with ancestrally pleiotropic expression patterns. In Gulf pipefish, we found the retained genes scpp1, spp1, and enam, are expressed in structures outside of tooth development, suggesting developmental pleiotropic constraint. Specifically, we found spp1 and scpp1 expressed in osteoblasts which is consistent with zebrafish (Bergen et al., 2022; Kawasaki, 2009; Liu et al., 2016) and enam expressed in the epidermis which has not been reported in zebrafish (Goldsmith et al., 2003; Jain et al., 2007; Liu et al., 2016). Through examining the conservation of the scpp genes in close syngnathid relatives, we found that most scpp gene losses (scpp4, scpp7, and scpp9 and a functional scpp5) are shared with a tooth-bearing outgroup to the family, and likely occurred prior to the loss of teeth in syngnathids. Overall, our analysis favors the hypothesis that pleiotropic scpp genes were retained in syngnathids while other, more tooth-specific scpp genes were lost due to relaxed selection.
 
-## Redeployment of the bone gene network to build dermal armor
+### Redeployment of the bone gene network to build dermal armor
 
 The syngnathid dermal armor is a type of evolutionary novelty, which can arise through either differentiation of serially repeated elements or de novo origination, derived from either the redeployment of existing gene networks, rewiring of existing gene networks, or the assemblage of new gene networks (Wagner and Lynch, 2010). Currently, there is no understanding of the developmental genetic underpinnings of the syngnathid dermal armor.
 
@@ -144,7 +492,7 @@ We identified dlx3b and pitx2 expression in tissues where the dermal plates mine
 
 Instead, dermal armor might originate from the co-option of existing bone development gene regulatory networks. Expression of the gene dlx3b has been observed in epithelia and mesenchyme during dermal and perichondral bone development in zebrafish (Verreijdt et al., 2006). In addition to dlx3b, we observed bone development genes scpp1 and ifitm5 expressed in the ossifying dermal armor. Future studies could test our hypothesis that the dermal armor evolved through re-deployed osteoblast networks by examining osteoblast gene network expression over time.
 
-## Signatures of embryonic interactions within the novel pouch environment
+### Signatures of embryonic interactions within the novel pouch environment
 
 Syngnathid embryos are reared within the brood pouch, a novel structure and environment composed of male-derived tissues (epithelium and placental-like tissues that include specialized cell types) that harbors a pouch microbiome (Stölting and Wilson, 2007). During pregnancy, the male brood pouch undergoes numerous changes including increased vascularization and altered expression of immune genes (Harada et al., 2022; Ripley et al., 2010; Roth et al., 2020; Small et al., 2013; Whittington et al., 2015). Researchers predict that these changes relate to nutrient and waste transfer and prevention of embryonic rejection and bacterial infection (Dudley et al., 2021; Whittington and Friesen, 2020). However, there are few studies that examine whether and how embryos interact with the brood pouch environment (Kvarnemo et al., 2011; Ripley and Foran, 2006). To consider whether embryos have specializations for life in this brood pouch environment, we asked about cell type-specific expression of nutrient acquisition and/or immune genes.
 
@@ -154,13 +502,13 @@ During pregnancy, the male brood pouch increases the expression of C-type lectin
 
 Overall, our findings suggest that pipefish embryos have evolved to be specialized for development within the brood pouch by expressing genes related to nutrient acquisition and immunity. Future studies could provide insights into when nutrient acquisition and lectin genes are expressed in development, their functional role, and how their expression varies across syngnathid lineages that have exposed versus enclosed embryos, for example, to examine how embryonic development has been impacted by the brood pouch.
 
-## Conclusions
+### Conclusions
 
 Our study represents the first scRNAseq developmental atlas in syngnathids, and one of the first non-model developmental scRNAseq atlases, providing a major step forward for evo-devo research. We used our atlas to begin addressing questions on the evolution and development of syngnathid innovations including their unique craniofacial structure, loss of teeth, dermal armor, and development within the male brood pouch. By combining scRNAseq analysis with spatial expression data from in situ hybridization, we made important discoveries in cell type identity and distribution as well as spatial expression of marker and signaling genes. We found that syngnathids express genes from conserved signaling pathways during craniofacial development, suggesting that alterations within these pathways may be important for the evolution of their craniofacial skeletons. We did not find evidence for tooth primordia within syngnathids and propose that genetic changes early in tooth development could have led to their loss of teeth. We propose that the re-deployment of bone gene networks, but probably not tooth gene networks, could play a role in the dermal armor development. Finally, we observed an enrichment of endocytosis genes and many C-type lectin genes in epidermal cells, which suggests ways these cells might interact with the brood pouch environment. Our atlas advances our understanding of syngnathid development and evolution and provides resources for developmental genetic analysis in nascent evo-devo model species.
 
 ## Methods
 
-## Single-cell RNA sequencing libraries preparation
+### Single-cell RNA sequencing libraries preparation
 
 We created scRNAseq atlases from embryos of wild-caught Gulf pipefish (Syngnathus scovelli, acquired from collaborator Emily Rose using Florida Fish and Wildlife collection permit SAL-21–0182-E), and all work was performed according to the University of Oregon approved IACUC protocol (AUP-20–23). Details on the fish, reagents, kits, and primer sequences are provided in the Key Resources table (Appendix 1). We harvested 20 embryos per pouch from two wild-caught male pipefish. Embryos from the same pouch were pooled together to provide two biological replicates. The embryos were at a stage before the tubular face was fully elongated, and while the head skeleton was cartilaginous with minimal signs of mineralization of superficial intramembranous bones. This corresponds to a stage termed ‘frontal jaws’ in a recent description of pipefish development (Sommer et al., 2012).
 
@@ -168,7 +516,7 @@ We dissociated the embryos using 460 ul of 0.25% trypsin in water and 40 ul 100 
 
 To turn the scISOrSeq reads into gene models, we followed the pipeline from Healey et al., 2022. We ran the script (scISOr_Seq_processing.py from https://github.com/hopehealey/scISOseq_processing; Healey, 2022) to remove barcodes, identify cell barcodes, and demultiplex with the single-cell flag and appropriate barcodes (5’ CCCATGTACTCTGCGTTGATACCACTGCT and 3’ CTACACGACGCTCTTCCGATCT). We aligned the reads to the 2022 Gulf pipefish genome (GenBank: GCA_024217435.2) using minimap v2.9 (Li, 2018). We filtered the reads using cDNA cupcake to remove duplicate transcripts (Tseng, 2021). We used SQANTI3 to identify gene models and filter them (Tardaguila et al., 2018). We merged the SQANTI3 annotations with the Gulf pipefish genome (NCBI GenBank: GCF_024217435.2) using TAMA merge (Kuo et al., 2017). Since the Gulf pipefish genome does not contain mitochondrial genes, we appended the annotation and fasta files with the Gulf pipefish mitochondrial genome (NCBI RefSeq: NC_065499.1).
 
-## Single-cell atlas construction
+### Single-cell atlas construction
 
 We ran Cell Ranger (10 X Genomics v3.0.2) using our scRNAseq reads, the Gulf pipefish genome assembly with the mitochondrial genome, and the modified gene annotations. Cell Ranger estimated 20,733 cells for sample one, 23,682 genes expressed, and 21,039 mean reads per cell. For sample two, Cell Ranger predicted 17,626 cells, 23,740 genes expressed, and 29,804 mean reads per cell. We analyzed Cell Ranger’s output using Seurat (v4.1.0) on R (v4.0.2; Butler et al., 2018; Hafemeister and Satija, 2019).
 
@@ -176,7 +524,7 @@ To remove extraneous RNA counts from the dataset, we used SoupX (v1.5.2; Young a
 
 We normalized the datasets with SCTransform (v0.3.3). We used Seurat’s integration tools, SelectIntegrationFeatures using 3000 feature genes, FindIntegrationAnchors using SCT normalization, and IntegrateData using SCT normalization, to integrate the two datasets. After integration, our combined atlas had 35,785 cells (Supplementary file 1; Supplementary file 2). We then used the integrated dataset to complete the PCA analysis. We tested using a variety of principle components for further analysis and chose 30 PCs for our analysis based on the clear delineation of major cell types. We next clustered the cells using 30 PCs and plotted the data on a UMAP with Seurat.
 
-## Single-cell atlas cluster identification
+### Single-cell atlas cluster identification
 
 To identify cluster identities, we used the RNA assay of the scRNAseq data to find cluster markers with Seurat’s FindAllMarkers command with the parameters only.pos=TRUE and logfc.threshold=0.25, requiring markers to be upregulated in the cluster and have a log fold change of at least 0.25. We found a second set of cluster markers through our custom function which searched through all genes and identified genes uniquely expressed in greater than 60% of cells in the cluster and in less than 10% of cells in every other cluster using Seurat’s DotPlots. We searched for our identified markers in available zebrafish datasets (Fabian et al., 2022; Farnsworth et al., 2020; Lange et al., 2024), ZFIN (Howe et al., 2013), NCBI, https://medlineplus.gov/, and genecards to give the clusters initial annotations. For each cluster, we examined multiple genes using DotPlots and FeaturePlots to propose the cluster identity.
 
@@ -188,15 +536,15 @@ Round one PCR conditions are as follows: 95 degrees Celsius for 3:00 min, 40 cyc
 
 The round two PCR product was sanger sequenced to confirm identity. All the marker gene primers and successful PCR conditions are in Supplementary file 6. Alignments of the probes to the unpublished Syngnathus leptorhynchus genome assembly are included in Supplementary file 7. The probes were transcribed with T7 polymerase for 2–6 hr then cleaned with Zymo RNA clean and concentrator and eluted into 30 μl of water. For the in situ hybridizations, we selected embryos and newly spawned larvae close to the developmental stage used in the atlas. We completed in situ hybridizations in keeping with (Thisse and Thisse, 2008), leaving the embryos in stain until the background was observed. For spawned larvae, we completed a bleaching step (1% H2O2 and 0.5% KOH for 8 min) prior to the proteinase K digest. After imaging, we used the levels tool in Adobe Photoshop (v23.4.2) to white-balance the pictures.
 
-## Single-cell KEGG analysis
+### Single-cell KEGG analysis
 
 To identify pathways upregulated in cell clusters, we completed a KEGG analysis. We downloaded Gulf pipefish KEGG pathways (https://www.kegg.jp). For the KEGG analysis, we used the marker genes identified from our FindAllMarkers list as the input genes. We converted these gene ids using keggConv to KEGG ids. We used a Wilcoxon enrichment test to ask whether cluster marker genes were enriched for each KEGG pathway.
 
-## Differentiation state analysis
+### Differentiation state analysis
 
 To assess whether proposed primordial cell clusters were composed of undifferentiated cells relative to other clusters from their lineages, we completed a differentiation analysis using CytoTRACE (v0.3.3, Gulati et al., 2020). Clusters from similar lineages (neural: 0, 3, 7, 8, 12, 22, 25, 33, and 35; muscle: 2, 10, 17, and 37; connective: 4, 5, 6, 9, 15, 16, 18, 24, 27, 28, and 29) were isolated using subset. Cell counts were gathered using as.Matrix(GetAssayData), then CytoTRACE was run on these counts. Data was plotted on a VlnPlot to show the variability.
 
-## Single-cell atlas network analysis
+### Single-cell atlas network analysis
 
 To identify genetic networks present in our atlas, we completed a weighted gene network correlation analysis using WGCNA (v1.72–1, Langfelder and Horvath, 2008). We selected 3000 variable features from the integrated assay of the single-cell dataset for the WGCNA. We created an adjacency matrix from the data using bicor with a maxPOutliers of 0.05. To decide on a beta value or the soft threshold power, we created an adjacency matrix plot using pickSoftThreshold and picked the threshold where the scale-free topology model fit leveled off. We selected the value of two and we then raised the adjacency matrix to the power of two.
 
@@ -206,11 +554,11 @@ We next tested the hypothesis that certain cell clusters were strongly associate
 
 Using the module gene lists, we identified the number of genes from each module that were found in each KEGG pathway. Since the KEGG modules do not have p-values associated with the genes, we could not complete a Wilcoxon enrichment test. We instead removed any pathways where there were less than three genes present for any pathway and noted that there was no statistical test run on these KEGG results. We visualized the networks using Cytoscape (v3.10.0).
 
-## Zebrafish data analysis
+### Zebrafish data analysis
 
 We downloaded a 3dpf zebrafish scRNAseq atlas from Lange et al., 2024. Marker genes were identified using FindAllMarkers. In accordance with the pipefish KEGG analysis, we detected enriched KEGG pathways using zebrafish KEGG terms and these marker genes. Zebrafish lectin genes were identified on NCBI, and their expression was visualized via DotPlots.
 
-## In situ hybridization
+### In situ hybridization
 
 For genes chosen for further follow-up analysis, we completed in situ hybridizations in Gulf pipefish (Syngnathus scovelli) or bay pipefish (Syngnathus leptorhynchus). Primer sequences were designed using NCBI Primer Blast with the Gulf Pipefish genome and synthesized using Gulf pipefish embryonic cDNA. The sfrp1a probe was synthesized using the PCR-based probe preparation protocol described in the Single-Cell Identification section. All other probes (bmp4, dlx2a, dlx3b, fgf22, lhx6a, pitx2, and scpp1) were prepared using TOPO cloning. Probe primer sequences as well as the species used for the in situ experiments are described in Supplementary file 6. Pregnant male bay pipefish were caught as described above. These fish were euthanized with MS-222 in accordance with IACUC-approved protocols, then embryos were removed from the brood pouch. For Gulf pipefish embryos, we allowed the fish to mate in our facility and then harvested embryos once they reached the appropriate stages. Fish were reared in 25 °C water with 25–28 ppt salinity.
 
@@ -218,10 +566,10 @@ Select genes with craniofacial expression were additionally probed in threespine
 
 Embryos and larvae were fixed in 4% PFA, dehydrated through a series of PBT/MeOH washes, and stored in MeOH at –20 C. 5–12 embryos were used for each probe. We completed in situ hybridizations in keeping with (Thisse and Thisse, 2008), leaving the embryos in stain until the background was observed. After imaging, we used the levels tool in Adobe Photoshop (v23.4.2) to white-balance the pictures.
 
-## Bone and cartilage staining
+### Bone and cartilage staining
 
 We used alcian and alizarin stains to mark cartilage and bones. Specifically, we assayed cartilage and bone development in siblings of the scRNAseq samples. These embryos were fixed in 4% PFA and then stored at –20 C in MeOH. We followed the protocol from Walker and Kimmel, 2007 with minor alterations. We stored samples in 50% glycerol/0.1% KOH at 4 C and imaged them in 100% glycerol. After imaging, we white-balanced the photographs using Photoshop (v23.4.2) levels tool.
 
-## Gene cluster analysis
+### Gene cluster analysis
 
 To examine close syngnathid outgroups, we downloaded the 2023 mandarin dragonet genome (GenBank assembly accession: GCA_027744825.1) and the 2024 cornetfish genome assembly (GenBank assembly accession: GCA_037954325.1) from NCBI. Since these genomes were unannotated, we manually identified scpp genes. We searched for scpp genes using BLASTN with medaka and additional fish sequences as the query. We also searched for these genes with mVISTA plots across conserved gene synteny regions (LAGAN alignment using translated anchoring) with medaka as the focal species (Frazer et al., 2004; Mayor et al., 2000). To identify scpp genes in additional species, we gathered cluster information from NCBI and ensembl. Additionally, we used mVISTA plots to further search for unannotated scpp genes.

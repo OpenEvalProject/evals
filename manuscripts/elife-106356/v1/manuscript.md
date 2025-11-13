@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00240q980 Department of General Psychology, University of Padua Padova Italy
-2. https://ror.org/00rs6vg23 Department of Psychology, The Ohio State University Columbus United States
+1. Department of General Psychology, University of Padua Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+2. Department of Psychology, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
 
 † Corresponding author
 
@@ -58,11 +58,423 @@ The fronto-parallel test presented the array as oriented from left to right. Thi
 
 These experimental manipulations allow us to test and compare the three models proposed to explain the origin of the MNL (Table 1).
 
+**Table 1.**
+ Models and hypotheses explaining spatial-numerical association (SNA).For each of the three main models, a brief explanation of the hypotheses regarding SNA mechanisms and the predicted outcomes for experiments 1 and 2 is reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Hypothesis</th>
+      <th>Predictions for experiment 1</th>
+      <th>Predictions for experiment 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Right hemisphere dominance</td>
+      <td>Right hemisphere dominance in visuospatial attention.</td>
+      <td>Right hemisphere dominance leads to left-to-right scanning. The left bias should be more pronounced in light-incubated chicks.</td>
+      <td>Absence of spatial cues results in diminished involvement of the right hemisphere, and the left bias is predicted to be less pronounced.</td>
+    </tr>
+    <tr>
+      <td>Emotional valence</td>
+      <td>Left hemisphere dominance in processing positive emotions; right hemisphere dominance in processing negative emotions.</td>
+      <td>Left hemisphere processing of positive rewards (e.g. food) leads to a rightward bias. This should be more pronounced in light-incubated chicks.</td>
+      <td>Lack of spatial cues is not expected to cause differences compared to the predictions of Experiment 1.</td>
+    </tr>
+    <tr>
+      <td>Brain asymmetric frequency tuning (BAFT)</td>
+      <td>Left hemisphere dominance in high-frequency processing; right hemisphere dominance in low-frequency processing.</td>
+      <td>No bias is expected due to the symmetrical array configuration. No difference is expected between light- and dark-incubated chicks.</td>
+      <td>Lack of spatial cues is expected to have no significant impact on the predicted outcomes of experiment 1.</td>
+    </tr>
+  </tbody>
+</table>
+
 In each trial, chicks were allowed a single peck. We recorded the selected item to calculate the percentage of responses at each position and averaged them separately for each group and test. We analyzed the group percentage for choosing the 4th item above chance (10%), using Bonferroni correction for multiple comparisons (data and significant results are reported in Table 2; additional analyses on the selection of each item are reported in Supplementary file 1; Supplementary file 2). To assess side bias in the fronto-parallel tests, we compared correct choices on the left (4L) vs. the right (4R) using a paired t-test, with Cohen’s d as the effect size, and Bonferroni correction (see Table 2). Moreover, we tested whether brain lateralization influenced accuracy by comparing the percentage of correct choices (i.e. the selection of the 4th item in the sagittal test; the 4L or 4R items in the fronto-parallel tests) between Li-chicks and Di-chicks using a two-sample t-test, with Cohen’s d as the effect size, and Bonferroni correction. We conducted both frequentist and Bayesian statistics to ensure reliable interpretations of our results.
 
-## Results in the tests allowing utilization of reliable ordinal and spatial cues (experiment 1)
+**Table 2.**
+ Descriptive statistics.For each test in the two experiments, the accuracy of selecting the 4th item in the sagittal test and the 4L or 4R items in the fronto-parallel (FP) tests is reported.
 
-## Sagittal test conducted under binocular vision condition
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="10">Experiment 1: Ordinal and spatial cue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test</td>
+      <td>Hatchcondition</td>
+      <td>Choice</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>SE</td>
+      <td>n</td>
+      <td>r</td>
+      <td>p</td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Sagittal</td>
+      <td>Di-chicks</td>
+      <td>4</td>
+      <td>28.436</td>
+      <td>9.374</td>
+      <td>1.913</td>
+      <td>24</td>
+      <td>0.878</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4</td>
+      <td>36.382</td>
+      <td>8.164</td>
+      <td>1.666</td>
+      <td>24</td>
+      <td>0.88</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>FP binocular</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>18.958</td>
+      <td>10.527</td>
+      <td>2.149</td>
+      <td>24</td>
+      <td>0.727</td>
+      <td>0.005</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>19.792</td>
+      <td>11.371</td>
+      <td>2.321</td>
+      <td>24</td>
+      <td>0.724</td>
+      <td>0.003</td>
+      <td>188</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>28.851</td>
+      <td>12.598</td>
+      <td>2.572</td>
+      <td>24</td>
+      <td>0.859</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>11.894</td>
+      <td>7.503</td>
+      <td>1.532</td>
+      <td>24</td>
+      <td>0.337</td>
+      <td>0.798</td>
+      <td>0.741</td>
+    </tr>
+    <tr>
+      <td>FP monocular left</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>12.780</td>
+      <td>8.309</td>
+      <td>1.696</td>
+      <td>24</td>
+      <td>0.376</td>
+      <td>0.532</td>
+      <td>1.287</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>3.990</td>
+      <td>6.154</td>
+      <td>1.256</td>
+      <td>24</td>
+      <td>–0.708</td>
+      <td>1.000</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>22.595</td>
+      <td>8.736</td>
+      <td>1.783</td>
+      <td>24</td>
+      <td>0.876</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>6.297</td>
+      <td>6.747</td>
+      <td>1.377</td>
+      <td>24</td>
+      <td>–0.465</td>
+      <td>1.000</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>FP monocular right</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>3.746</td>
+      <td>3.668</td>
+      <td>0.749</td>
+      <td>24</td>
+      <td>–0.798</td>
+      <td>1.000</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>13.417</td>
+      <td>8.781</td>
+      <td>1.792</td>
+      <td>24</td>
+      <td>0.406</td>
+      <td>0.398</td>
+      <td>1.936</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>5.219</td>
+      <td>6.356</td>
+      <td>1.297</td>
+      <td>24</td>
+      <td>–0.594</td>
+      <td>1.000</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>21.484</td>
+      <td>10.734</td>
+      <td>2.191</td>
+      <td>24</td>
+      <td>0.807</td>
+      <td>0.001</td>
+      <td>1843</td>
+    </tr>
+    <tr>
+      <td colspan="10">Experiment 2: Ordinal cue only</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>Hatchcondition</td>
+      <td>Choice</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>SE</td>
+      <td>n</td>
+      <td>r</td>
+      <td>p</td>
+      <td>BF</td>
+    </tr>
+    <tr>
+      <td>Sagittal</td>
+      <td>Di-chicks</td>
+      <td>4</td>
+      <td>31.487</td>
+      <td>15.337</td>
+      <td>3.008</td>
+      <td>26</td>
+      <td>0.863</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4</td>
+      <td>32.275</td>
+      <td>11.232</td>
+      <td>2.203</td>
+      <td>26</td>
+      <td>0.876</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td>FP binocular</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>18.725</td>
+      <td>9.246</td>
+      <td>1.813</td>
+      <td>26</td>
+      <td>0.74</td>
+      <td>0.001</td>
+      <td>836.246</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>19.666</td>
+      <td>10.024</td>
+      <td>1.966</td>
+      <td>26</td>
+      <td>0.786</td>
+      <td>0.002</td>
+      <td>1070.73</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>21.771</td>
+      <td>9.888</td>
+      <td>1.939</td>
+      <td>26</td>
+      <td>0.819</td>
+      <td>&lt;0.001</td>
+      <td>&gt;10,000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>15.800</td>
+      <td>9.239</td>
+      <td>1.812</td>
+      <td>26</td>
+      <td>0.603</td>
+      <td>0.024</td>
+      <td>21.919</td>
+    </tr>
+    <tr>
+      <td>FP monocular left</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>14.835</td>
+      <td>9.878</td>
+      <td>1.937</td>
+      <td>26</td>
+      <td>0.473</td>
+      <td>0.122</td>
+      <td>5.337</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>8.333</td>
+      <td>6.912</td>
+      <td>1.356</td>
+      <td>26</td>
+      <td>–0.316</td>
+      <td>1.000</td>
+      <td>0.102</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>15.011</td>
+      <td>9.344</td>
+      <td>1.832</td>
+      <td>26</td>
+      <td>0.518</td>
+      <td>0.050</td>
+      <td>8.449</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>7.939</td>
+      <td>6.082</td>
+      <td>1.193</td>
+      <td>26</td>
+      <td>–0.302</td>
+      <td>1.000</td>
+      <td>0.084</td>
+    </tr>
+    <tr>
+      <td>FP monocular right</td>
+      <td>Di-chicks</td>
+      <td>4L</td>
+      <td>8.290</td>
+      <td>7.659</td>
+      <td>1.502</td>
+      <td>26</td>
+      <td>–0.269</td>
+      <td>1.000</td>
+      <td>0.102</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>12.457</td>
+      <td>9.255</td>
+      <td>1.815</td>
+      <td>26</td>
+      <td>0.29</td>
+      <td>0.850</td>
+      <td>0.839</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Li-chicks</td>
+      <td>4L</td>
+      <td>6.288</td>
+      <td>6.151</td>
+      <td>1.206</td>
+      <td>26</td>
+      <td>–0.515</td>
+      <td>1.000</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4R</td>
+      <td>17.984</td>
+      <td>9.634</td>
+      <td>1.889</td>
+      <td>26</td>
+      <td>0.78</td>
+      <td>0.001</td>
+      <td>214</td>
+    </tr>
+  </tbody>
+</table>
+
+### Results in the tests allowing utilization of reliable ordinal and spatial cues (experiment 1)
+
+#### Sagittal test conducted under binocular vision condition
 
 In the sagittal test (Figure 2A), Li-chicks selected the 2nd and 4th items above chance; Di-chicks selected the 1st, 2nd, and 4th items above chance (Table 2 and Supplementary file 1). Moreover, Li-chicks showed higher accuracy in selecting the 4th item than Di-chicks (Li-chicks: n=24, mean = 36.38, SE = 1.666; Di-chicks: n=24, mean = 28.44, SE = 1.913; t(45.1)=3.132, p=0.003, d=0.904; BF = 12.588) (Figure 2A).
 
@@ -70,13 +482,13 @@ In the sagittal test (Figure 2A), Li-chicks selected the 2nd and 4th items above
 
 **Figure 2.:** The average percentage of chicks' choices (y-axis) as a function of item positions (x-axis), light exposure modulating brain lateralization, and tests. Error bars indicate ± standard error. Di chicks: n = 24, Li chicks: n = 24 (consistent across all tests). The gray dashed line indicates chance level (10%). Significant deviations from chance level were assessed through Wilcoxon one-sample signed-rank tests with Bonferroni correction (P < 0.001, P < 0.01, P < 0.05). (A) Results of the Sagittal test. (B) Results of the Fronto-Parallel Binocular test. (C) Results of the Fronto-Parallel Monocular Left test. (D) Results of the Fronto-Parallel Monocular Right test.
 
-## Fronto-parallel transfer test conducted under binocular vision condition
+#### Fronto-parallel transfer test conducted under binocular vision condition
 
 In the fronto-parallel binocular test (Figure 2B), Li-chicks successfully transferred what was learned to the rotated series: they selected only the 4th left item above chance (Table 2). Li-chicks showed a left bias, pecking the 4th left item more than the 4th right one (n=24, t(23) = 4.791, p<0.001, d=1.635; BF = 337.124). Di-chicks pecked both 4th left and 4th right items above chance (Table 2) without a difference (n=24, t(23) = 0.218, p=1.000 d=0.076; BF = 0.219). Remarkably, only Li-chicks showed a left bias, indicating a tendency to proto-count from left to right.
 
 Comparing accuracy between the two groups, Li-chicks selected the 4th left item more than Di-chicks did (Li-chicks: n=24, mean = 28.85, SE = 2.572; Di-chicks: n=24, mean = 18.96, SE = 2.149; t(44.6)=2.952, p=0.010, d=0.852; BF = 8.456), while Li-chicks chose the 4th right item less than Di-chicks (Li-chicks: n=24, mean = 11.89, SE = 1.532; Di-chicks: n=24, mean = 19.79, SE = 2.321; t(39.8)=–2.840, p=0.014, d=0.820; BF = 6.657).
 
-## Fronto-parallel transfer test conducted under left monocular vision condition
+#### Fronto-parallel transfer test conducted under left monocular vision condition
 
 In the fronto-parallel monocular left test (Figure 2C), Li-chicks were able to transfer learning to a differently oriented series, correctly selecting the 4th left item above chance, even if they also pecked at the 1st left item (Table 2; Supplementary file 1). Moreover, they selected the 4th left more than the 4th right item (n=24, t(23) = 6.056, p<0.001, d=2.088; BF = 5598.452). Di-chicks failed: they only selected the 1st and 2nd left items above chance (Supplementary file 1).
 
@@ -84,7 +496,7 @@ As for the difference between the two groups, Li-chicks selected the 4th left it
 
 These results suggest that whenever the right hemisphere is processing the information, light exposure affects the left bias and numerical performance. This evidence, on one side, supports the relevance of the right hemisphere in directing SNA directionality (Rugani et al., 2015a; Rugani and de Hevia, 2017). On the other side, it shows how significant experiences that stimulate brain development, although limited to a few hours of exposure to moderate ambient light, can boost cognitive performance.
 
-## Fronto-parallel transfer test conducted under right monocular vision condition
+#### Fronto-parallel transfer test conducted under right monocular vision condition
 
 In the fronto-parallel monocular right test (Figure 2D), Li-chicks succeeded correctly in selecting the 4th right item, which was pecked more than the 4th left item (n=24, t(23) = –6.151, p<0.001, d=1.844; BF = 6887.511), even if they also selected the 1st left item above chance (Table 2 and Supplementary file 1). Di-chicks failed: they did not select the 4th left nor right item above chance; the only item selected above chance was the 1st right one (Supplementary file 1).
 
@@ -94,9 +506,9 @@ Again, only Li-chicks succeeded while Di-chicks failed, corroborating evidence o
 
 Overall, these data showed that prenatal light experience can stimulate brain development and hemispheric specialization, which emphasizes the SNA and enhances performance in a spatial/numerical task. This provides novel evidence of the role of brain lateralization in determining SNA and in boosting proto-numerical counting.
 
-## Results in the tests allowing utilization of reliable ordinal and unreliable spatial cues (experiment 2)
+### Results in the tests allowing utilization of reliable ordinal and unreliable spatial cues (experiment 2)
 
-## Sagittal test conducted under binocular vision condition
+#### Sagittal test conducted under binocular vision condition
 
 In the sagittal test (Figure 3A), both groups succeeded: Li-chicks exclusively selected the correct 4th item above chance (Table 2), while Di-chicks selected the 4th item, but also mistakenly pecked the 2nd item (Table 2 and Supplementary file 2). Yet, accuracy in pecking the 4th item did not differ in the two groups (Li-chicks: n=26, mean = 32.27, SE = 2.203; Di-chicks: n=26, mean = 31.49, SE = 3.008; t(45.8)=0.211, p=1.000, d=0.059; BF = 0.283).
 
@@ -104,35 +516,37 @@ In the sagittal test (Figure 3A), both groups succeeded: Li-chicks exclusively s
 
 **Figure 3.:** The average percentage of chicks' choices (y-axis) as a function of item positions (x-axis), light exposure modulating brain lateralization, and tests. Error bars indicate ± standard error. Di chicks: n = 26, Li chicks: n = 26 (consistent across all tests). The gray dashed line indicates chance level (10%). Significant deviations from chance level were assessed through Wilcoxon one-sample signed-rank tests with Bonferroni correction (P < 0.001, P < 0.01, P < 0.05). (A) Results of the Sagittal test. (B) Results of the Fronto-Parallel Binocular test. (C) Results of the Fronto-Parallel Monocular Left test. (D) Results of the Fronto-Parallel Monocular Right test.
 
-## Fronto-parallel transfer test conducted under binocular vision condition
+#### Fronto-parallel transfer test conducted under binocular vision condition
 
 In the fronto-parallel binocular test (Figure 3B), Li-chicks and Di-chicks selected both 4th left and right items above chance (Table 2). For each group, no differences emerged in selecting the 4th left and 4th right items, indicating a lack of side bias in both groups (Li-chicks: n=26, t(25) = 1.910, p=0.135, d=0.624; BF = 0.997; Di-chicks: n=26, t(25) = –0.218, p=1.000, d=0.098; BF = 0.219). Li-chicks did not differ from Di-chicks in responses to the 4th left (Li-chicks: n=26, mean = 21.77, SE = 1.939; Di-chicks: n=26, mean = 18.73, SE = 1.813; t(49.8)=1.147, p=0.513, d=0.318; BF = 0.478) or 4th right item (Li-chicks: n=26, mean = 15.80, SE = 1.812; Di-chicks: n=26, mean = 19.67, SE = 1.966; t(49.7)=–1.446, p=0.309, d=0.401; BF = 0.655). This confirms that whenever the spatial information is unavailable at the test, the left bias disappears (Rugani et al., 2011), highlighting the role of the right hemisphere in processing spatial information and determining the left-to-right orientation of the SNA.
 
-## Fronto-parallel transfer test conducted under left monocular vision condition
+#### Fronto-parallel transfer test conducted under left monocular vision condition
 
 In the fronto-parallel left monocular test (Figure 3C), Li-and Di-chicks failed: Li-chicks selected the 1st left item (Supplementary file 2); Di-chicks selected the 1st and the 2nd left item above chance (Supplementary file 2). As for the accuracy, the two groups equally selected the 4th left (Li-chicks: n=26, mean = 15.01, SE = 1.832; Di-chicks: n=26, mean = 14.84, SE = 1.937; t(49.8)=0.066, p=1.000, d=0.018; BF = 0.279) and the 4th right items (Li-chicks: n=26, mean = 7.94, SE = 1.193; Di-chicks: n=26, mean = 8.33, SE = 1.356; t(49.2)=–0.218, p=1.000, d=0.060; BF = 0.284).
 
 Whenever spatial information is unavailable, the right hemisphere fails to transfer tasks. This indicates that independent of the hemisphere’s development, unilateral right hemispheric processing is insufficient in dealing with an ordinal task; thus, ordinality does not appear to be lateralized to the right hemisphere.
 
-## Fronto-parallel transfer test conducted under right monocular vision condition
+#### Fronto-parallel transfer test conducted under right monocular vision condition
 
 In the fronto-parallel monocular right test (Figure 3D), only Li-chicks succeeded and selected the 4th right item; even if they also pecked the 1st and the 2nd right items (Table 2 and Supplementary file 2), moreover they selected the 4th right more than the 4th left item (n=26, t(25) = –4.946, p<0.001, d = –1.447; BF = 573.520). Di-chicks failed to select the 4th left or right item; instead, they selected only the 1st right item above chance (Supplementary file 2). As for the difference in accuracy between the two groups, Li-chicks did not select the 4th right item more than Di-chicks (Li-chicks: n=26, mean = 17.98, SE = 1.889; Di-chicks: n=26, mean = 12.46, SE = 1.815; t(49.9)=2.110, p=0.080, d=0.585; BF = 1.678). This suggests that lateralization influences numerical cognition even in the absence of spatial information, and that the left hemisphere plays a significant role in processing ordinal information.
 
 ## Discussion
 
-## General
+### General
 
 Our main findings are that prenatal exposure that can modulate brain lateralization in domestic chicks impacts the left-to-right oriented numerical spatialization and numerical performance (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/106356/elife-106356-video1.mp4.jpg)
 
 In experiment 1, which allowed chicks to reliably use both ordinal and spatial cues in identifying the 4th item, chicks exhibited different behaviors despite identical learning experiences and tasks, either showing or not showing a left bias, depending on their prenatal light exposure. In the fronto-parallel binocular test, when both eyes and hemispheres processed the information, chicks hatched from light-incubated eggs, Li-chicks, selected only the 4th left item; while chicks hatched from dark-incubated eggs, Di-chicks, equally selected the 4th left and the 4th right item. Only Li-chicks (i.e. more strongly lateralized) demonstrated left-to-right proto-counting, indicating that brain lateralization influences MNL directionality. When the two hemispheres engaged in differential processing, as observed in Li-chicks, a unidirectional left-to-right oriented numerical spatialization emerged. Conversely, when prenatal stimulation did not enhance hemispheric specialization, resulting in more homogeneous hemispheric processing, animals (Di-chicks) showed no directional bias. These pioneering findings corroborate all models positing hemispheric specialization as the neural basis for SNA (Felisatti et al., 2020; Rugani et al., 2016; Vallortigara, 2018), while establishing lateralization as an essential prerequisite for numerical spatialization. However, pre-hatching light stimulation did not affect chicks’ performance when spatial information was unavailable (experiment 2). This finding substantiates the relevance of spatial information and highlights that its integration with numerical processing within shared cortical regions is fundamental to the neurobiological underpinning of number spatialization. This integration is coherent with the fact that in the chick’s brain, the right hemisphere is dominant in processing spatial information (Rashid and Andrew, 1989; Regolin et al., 2005), but can also process numerical information (Rugani et al., 2011; Rugani and Regolin, 2020) (consistently with primates and human literature; Piazza and Eger, 2016). The present data align with previous research that used monocular occlusion to disentangle the engagement of the two hemispheres with spatial or ordinal cues (Rugani and Regolin, 2020). In prior research, day-old chicks learned to select the 4th item in an array of 10 identical sagittal-aligned items maintained in fixed positions, so that both spatial and ordinal cues were available during learning. At test, chicks faced a left-to-right oriented series where the inter-item distance was manipulated so that the 3rd item was at the same distance from the beginning of the series as the 4th item had been at training. This forced chicks to choose either spatial or ordinal cues. Chicks tested binocularly selected both the 4th left and right items above chance expectation, confirming that a coherent use of numerical and spatial information is essential in limiting birds’ responses toward the left (Rugani et al., 2011). Chicks tested monocularly chose the 3rd and 4th items on the seeing side, suggesting that birds relied on spatial or ordinal cues to a similar extent in different trials and that each hemisphere can process both cues (Rugani and Regolin, 2020).
 
 Here, in monocular conditions, Li-chicks succeeded in fronto-parallel tests. Even if they directed their pecks to the visible side (Rugani et al., 2016; Rugani and Regolin, 2021), they selected the 4th item above chance expectation. This was the case in experiment 1 when ordinal and spatial cues were available at test. Nevertheless, in experiment 2, when spatial information was available at training but unreliable at test, chicks succeeded in the right eye/left hemisphere, but not in the left eye/right hemisphere condition. This corroborates the hypothesis of the right hemisphere specificity in the analysis of spatial cues and suggests that the left hemisphere is more specialized in processing ordinal information. The left-to-right spatialization of numerosity appears to be based on preferential processing by the right hemisphere when spatial information is available and hemispheric specialization is favored by environmental stimulation.
 
-## Ecological implications and adaptive variability
+### Ecological implications and adaptive variability
 
 Experimental contexts allow for selective manipulation of the environment, enabling changes that are highly improbable in nature. In experiment 2, the item arrangement, that had been experienced as a stable context that provided coherent and reliable numerical and spatial information during training, was manipulated to eliminate spatial information at test. This manipulation resulted in the disappearance of left-to-right oriented directionality in the binocular condition and in a failure in the left eye/right hemisphere condition. We can speculate that in some naturalistic contexts, establishing an anchor point (potentially based on reliable landmarks or beacons) and predetermining a privileged starting position might be advantageous in facilitating processing and reducing conflicts between incompatible responses. Throughout evolution, this may have maximized right hemisphere engagement, specialized for spatial information processing, and triggered an imbalance favoring left space. This left-biased space would serve as an anchor point from which to initiate environmental scanning, avoiding the delay presumably implied if there was not a hemisphere taking control of processing and guiding behavior (Rogers et al., 2013). Such an intrinsic, left oriented bias might be advantageous for other ecological situations requiring number processing, such as quantifying conspecifics or food items. For example, when foraging, a consistent left-to-right scanning pattern could help animals to efficiently locate and quantify food sources without overlooking areas. The tendency to scan items from the preferred left side (Diekamp et al., 2005) might have evolved as an adaptive behavior to maximize fitness. This tendency could then have been assimilated by other cognitive processes that share neural substrates, including numerical cognition. Numerosities relevant for animals (such as the number of conspecifics, food items, or predators) are inherently distributed in space. The right hemisphere specialized in spatial processing incorporated some rudimentary forms of enumeration. This resulted in a right hemispheric dominance for both space and number. This might explain the observed left-to-right bias in numerical cognition tasks. The absence of this bias in conditions where spatial cues are artificially eliminated, as in experiment 2, underscores the spatial nature of numerical processing of objects in the environment. Remarkably, the left-to-right directionality is not reported in weakly lateralized Di-chicks in both experiments, irrespective of spatial cues availability. It should be noted that in some situations, like predator detection, even if a systematic approach to surveying the surroundings could be beneficial for prompt threats detection, it could also lead to more predictability. This could favor predators with a complementary approach directionality. From an evolutionary perspective, lateralization variability within a species can be viewed as an adaptive strategy. This variability may represent a form of evolutionary bet-hedging (Simons, 2011), where different degrees of lateralization confer different adaptive advantages in fluctuating ecological contexts. Bet-hedging strategies maintain population fitness by promoting phenotypic diversity, optimizing adaptation in unpredictable environments (Philippi and Seger, 1989). Lateralization variability might also contribute to the species’ behavioral unpredictability, offering an advantage in predator-prey dynamics (Güntürkün et al., 2020). The persistence of both lateralized and non-lateralized individuals within a population may be an evolutionarily stable strategy (Ghirlanda and Vallortigara, 2004), conferring differential advantages to different individuals, overall maintaining high fitness and making the overall population less predictable (Rogers, 2021).
 
-## Monocular test outcomes support that light-induced lateralization enhances spatial-numerical performance
+### Monocular test outcomes support that light-induced lateralization enhances spatial-numerical performance
 
 Our investigation produced a second major result and showed that prenatal exposure significantly affected performance. In the sagittal test, Li-chicks outperformed Di-chicks, demonstrating that a higher degree of lateralization led to greater accuracy when both spatial and numerical cues were available (experiment 1).
 
@@ -140,7 +554,7 @@ The results of the monocular fronto-parallel tests further support the effect of
 
 Whenever processing was confined to a single hemisphere, either one, only strongly lateralized Li-chicks succeeded, while weakly lateralized Di-chicks failed, corroborating evidence on the importance of light stimulation in favoring the development and specialization of both hemispheres and in boosting cognitive performance. This finding aligns with previous anatomical studies that demonstrated the presence of light-dependent lateralization in bilaterally responsive units of the right visual Wulst (Costalunga et al., 2022; Rogers and Deng, 1999). Nevertheless, in the specific case of Li-chicks tested with the left eye/right hemisphere in use, subjects failed the fronto-parallel test when the use of spatial cues was prevented (experiment 2). This highlights the reliance of the right hemisphere on spatial information.
 
-## Interpreting results through proposed models for the origin of the MNL
+### Interpreting results through proposed models for the origin of the MNL
 
 The present results reveal that brain lateralization influences performance in ordinal tasks involving both spatial and numerical cues, suggesting a joint contribution of hemispheric specialization and environmental stimulation to the spatial organization of numbers. These results allow us to reconsider the models proposed to explain the SNA.
 
@@ -150,7 +564,7 @@ Although all models (Felisatti et al., 2020; Rugani et al., 2016; Vallortigara, 
 
 ## Materials and methods
 
-## Subject
+### Subject
 
 We tested 100 male domestic chicks (G. gallus) of the Aviagen ROSS 308 line (experiment 1, n=48; experiment 2, n=52). Sample size was determined by a power analysis for a multiple regression design involving four groups (test order: right-test-first vs. left-test-first×hatch condition: Di-chicks vs. Li-chicks). To detect a medium effect size (f=0.25) with 80% power at an alpha level of 0.05, a total sample of 48 chicks was required. Although the regression analysis is not reported in the manuscript, the full code and results are available in the article data repository. We chose male chicks because of their superior response to food reinforcement compared to females (Regolin et al., 2005; Vallortigara et al., 1990) and significantly greater degree of lateralization in the thalamofugal pathway (Rajendra and Rogers, 1993). The fertilized eggs were obtained weekly from two local hatcheries (Agricola Berica, Montegalda, Vicenza, Italy, or Società Agricola La Pellegrina Spa, San Pietro in Gù, Padova, Italy). Eggs on the seventh or fourteenth day of incubation were delivered to the lab and placed in a FIEM incubator MG 70/100 (45×58×43 cm3) at a controlled temperature of 36–38°C and 60% humidity. On the eighteenth day of incubation, eggs were moved to a hatching machine (60×32×40 cm3) at controlled temperature and humidity (36–38°C; 60%) until the 21st day of incubation (hatching day). Animals were randomly assigned to experimental conditions. Eggs were incubated under two conditions: in darkness to obtain dark-incubated (weakly lateralized) chicks (Di-chicks, n=24 in experiment 1, n=26 in experiment 2) and under light exposure using an LED 4.8 W lightbulb to obtain light-incubated (strongly lateralized) chicks (Li-chicks, n=24 in experiment 1, n=26 in experiment 2). Only the chicks that completed all four tests were included in the final sample size. A few hours after hatching, chicks were feather-sexed and caged in pairs or triplets in standard metal cages (28×32×40 cm3) with the floor covered with absorbent paper. The rearing room was maintained at a temperature of 28–31°C and humidity of about 60%. The cages were illuminated by neon lights (36 W) placed about 15 cm above each cage, with a standard 24 hr light-dark rearing cycle. Food (chick crumbles) and water were available in transparent glass jars (5×5 cm2) ad libitum. Daily, chicks were familiarized and fed with some mealworms (Tenebrio molitor larvae) that were used as reinforcement during training. These rearing conditions were maintained until the initiation of the experimental protocol on Wednesday (8 a.m.), their third day of life, when food jars were removed from cages and chicks were isolated one per cage. Chicks underwent 2 hr of food deprivation before the start of each experimental session (shaping, training, and tests). Following the last testing session, chicks were rehoused in social groups with water and food ad libitum. On Friday afternoon, their fifth day of life, chicks were donated to local farmers (see Figure 4 for a graphical illustration of the experimental schedule).
 
@@ -158,33 +572,33 @@ We tested 100 male domestic chicks (G. gallus) of the Aviagen ROSS 308 line (exp
 
 **Figure 4.:** During the last 3 days of incubation, eggs were incubated either in darkness (weakly lateralized chicks) or under light exposure (strongly lateralized chicks). When chicks were 3 days of age, the shaping procedure started, followed by pre-training and training. In the following days, chicks were re-trained and then underwent all four tests.
 
-## Apparatus
+### Apparatus
 
 The experimental apparatus was located in the experimental room, near the rearing room, and maintained at constant temperature and humidity (28°C; 70%). The apparatus consisted of a square arena constructed from green polypropylene (100×100×40 cm3) with the floor covered with wood shavings (Figure 1). Inside the arena were 10 identical red plastic caps (3 cm in diameter, 0.9 cm in height), each filled with wood shavings. To minimize the potential use of external cues, the entire setup was elevated and rotated randomly between trials or sessions (Rugani et al., 2007; Rugani et al., 2010). Bottle caps were frequently shuffled to ensure that the choices made by the chicks did not depend on some unique characteristics of the caps (Rugani et al., 2016; Rugani et al., 2011; Rugani and Regolin, 2021). The apparatus comprised two mirrored starting positions (15×15×10 cm3 boxes) outside opposing walls, one of which serves as a starting position (labeled as ‘S.P.’ in Figure 1). The starting boxes were designed to allow consistent visual input of the inner apparatus to the chicks. Access to the arena was provided through an entrance door made of green polypropylene (10×17 cm2), which could be lifted by a nylon thread.
 
-## Shaping
+### Shaping
 
 In both experiments, the shaping, pre-training, and training procedures were conducted in the same setting. Shaping started on Wednesday morning after 2 hr of food deprivation (8:00–10:00 a.m.). This was essential in motivating foraging behavior during training and testing. During shaping, the array made of 10 items was centrally aligned along the median sagittal line, thus sagittally oriented, with respect to either starting point (Figure 1A), with the first cap positioned 28.5 cm from each entrance door. Each cap was positioned 1.44 cm apart from the subsequent one, with the overall array length being 43 cm. The array was situated 48.5 cm from either side wall.
 
 The experimenter first introduced the chick into the arena for habituation, which lasted for about 2 min, allowing the bird to explore until it showed no signs of distress. Subsequently, the experimenter placed the chick into the starting point, and the shaping began. A piece of mealworm was placed and remained visible on the fourth cap to reinforce pecking behavior at that ordinal position. After the chick entered the arena and first pecked at any item, the trial was over, and the chick was immediately placed back into the starting box. If the chick did not peck at any item within 30 s, the experimenter used a metal stick to direct the chick to the fourth cap. After the chick had successfully pecked the fourth cap in 10 trials (whether consecutive or not), in the subsequent trials, the food was gradually covered with wood shavings until it was completely hidden. The shaping lasted for 10–15 min, followed by 30–40 min of rest back in the rearing cage with access to water but not to food.
 
-## Pre-training
+### Pre-training
 
 After the resting period, the pre-training began. From the pre-training, all items looked identical as the food reward in the correct (fourth) cap was completely buried in wood shavings. The chick had to complete three consecutive correct trials to reach the learning criterion and pass the pre-training phase (Rugani et al., 2011; Rugani et al., 2016; Rugani and Regolin, 2020; Rugani and Regolin, 2021). This usually took about 5–10 min. If the chick did not reach the learning criterion, the pre-training was repeated after 30 min of rest. If the chick again did not reach the criterion, it was excluded from the study.
 
-## Training
+### Training
 
 Immediately after completion of the pre-training, chicks underwent training, comprising 20 trials, using the identical sequence employed in the pre-training phase. In each trial, only one choice was allowed, and the trial was terminated as soon as the chick pecked any item, with its choice being recorded. If the chick did not peck any item in 180 s, the trial was considered null and terminated. A choice was considered correct if the chick pecked at the 4th item. The learning criterion for passing the training phase was 8 correct trials out of 20 trials (Rugani et al., 2011; Rugani et al., 2016; Rugani and Regolin, 2020; Rugani and Regolin, 2021). If a subject did not achieve the learning criterion, after 40 min of rest, it underwent another pre-training and, if this was successful, the training began. Each chick had three chances to pass the training criterion. During this phase, five chicks were excluded in experiment 1 and nine in experiment 2 due to motivational or health problems, an exclusion rate that aligns with those of previous studies involving similar procedures (Rugani et al., 2020a; Rugani et al., 2015b). These subjects were subsequently replaced to maintain the predetermined sample size.
 
-## Re-training
+### Re-training
 
 Re-training was conducted prior to every test. The re-training procedure was the same as pre-training and ended with three consecutive correct trials. Test sessions started immediately after re-training was completed.
 
-## Test sessions
+### Test sessions
 
 All chicks participated in all four tests: first the sagittal test, then the fronto-parallel binocular test. Thereafter, monocular tests were administered in counterbalanced order. The fronto-parallel monocular right test was conducted prior to the fronto-parallel monocular left test for n=24 chicks in experiment 1 and n=26 in experiment 2. The remaining chicks (n=24 in experiment 1, n=26 in experiment 2) underwent the fronto-parallel monocular tests in the reversed order. Experimenters and scorers were blinded to study aims during data collection and analysis.
 
-## Sagittal test
+### Sagittal test
 
 The procedure for the sagittal test (Figure 1A) was the same as the training. The sagittal test consisted of 20 trials, and the time limit for each trial was 60 s. During testing, food reinforcement was available only in pre-established trials to prevent the extinction of responses over multiple unrewarded test trials (reinforced trials: 4, 5, 7, 10, 13, 14, 16, and 19; Rugani et al., 2016; Rugani et al., 2011; Rugani and Regolin, 2021; Rugani and Regolin, 2020). Thereafter, subjects rested for at least 60 min before entering the fronto-parallel tests.
 
@@ -192,7 +606,7 @@ In experiment 1, ordinal and spatial cues were available to identify the 4th cor
 
 In experiment 2, to eliminate spatial cues to locate the 4th item, the inter-item distance varied between test trials (1.44 cm, 2.55 cm, 3.11 cm, and 3.66 cm), while remaining equally spaced within each trial, resulting in total array lengths of 43.0, 53.0, 58.0, and 63.0 cm, respectively. The first cap was set at 28.5 cm from the starting position.
 
-## Fronto-parallel tests
+### Fronto-parallel tests
 
 In both experiments, the fronto-parallel test was conducted on each subject in three different conditions of vision (Figure 1). The binocular fronto-parallel test was always administered first. Then half of the chicks underwent the left monocular fronto-parallel test and finally the right monocular fronto-parallel test, while the other half underwent the monocular tests in reverse order.
 
@@ -200,7 +614,7 @@ In the monocular fronto-parallel test, a temporary eye patch was carefully appli
 
 In the three fronto-parallel tests, the array was rotated 90°, fronto-parallel with respect to the starting point (Figure 1B). Inter-item distances matched those in the sagittal test for each experiment. In this rotated array, both the 4th item from left (4L) and right (4R) were considered correct and rewarded during the pre-established trials (as described for the sagittal test). Each fronto-parallel test comprised 20 trials, with 2 hr rest periods between tests.
 
-## Statistical analyses
+### Statistical analyses
 
 In each trial, chicks were allowed a single peck. We recorded the selected item to calculate the percentage of responses at each position as [(number of pecks to a given item ÷ total number valid trials)×100] and averaged them separately for each group and test. We employed both frequentist and Bayesian statistical approaches, conducting corresponding Bayesian analyses for each frequentist test. We analyzed the group percentage for choosing each item above chance (10%), using Wilcoxon one-sample signed-rank tests with Bonferroni correction for multiple comparisons (data and significant results are reported in Supplementary file 1; Supplementary file 2) and one-sample Bayesian t-tests. To assess side bias in the fronto-parallel tests, we compared correct choices on the left (4L) vs. the right (4R) using paired t-tests, with Cohen’s d as the effect size and Bonferroni as the correction method; moreover, we conducted two-sample Bayesian t-tests. Additionally, we tested whether brain lateralization influenced accuracy by comparing the percentage of correct choices (i.e. the selection of the 4th item in the sagittal test and of the 4L or 4R items in the fronto-parallel tests) between Li-chicks and Di-chicks using two-sample t-tests, with Cohen’s d as the effect size and Bonferroni as the correction method; additionally, we conducted two-sample Bayesian t-tests.
 

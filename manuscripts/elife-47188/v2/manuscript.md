@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.47188.001 The advent of high-yield electrophysiology using Neuropixels probes is now enabling researchers to simultaneously record hundreds of neurons with remarkably high signal to noise. However, these probes have not been well-suited to use in freely moving mice. It is critical to study neural activity in unrestricted animals for many reasons, such as leveraging ethological approaches to study neural circuits. We designed and implemented a novel device that allows Neuropixels probes to be customized for chronically implanted experiments in freely moving mice. We demonstrate the ease and utility of this approach in recording hundreds of neurons during an ethological behavior across weeks of experiments. We provide the technical drawings and procedures for other researchers to do the same. Importantly, our approach enables researchers to explant and reuse these valuable probes, a transformative step which has not been established for recordings with any type of chronically-implanted probe.
+The advent of high-yield electrophysiology using Neuropixels probes is now enabling researchers to simultaneously record hundreds of neurons with remarkably high signal to noise. However, these probes have not been well-suited to use in freely moving mice. It is critical to study neural activity in unrestricted animals for many reasons, such as leveraging ethological approaches to study neural circuits. We designed and implemented a novel device that allows Neuropixels probes to be customized for chronically implanted experiments in freely moving mice. We demonstrate the ease and utility of this approach in recording hundreds of neurons during an ethological behavior across weeks of experiments. We provide the technical drawings and procedures for other researchers to do the same. Importantly, our approach enables researchers to explant and reuse these valuable probes, a transformative step which has not been established for recordings with any type of chronically-implanted probe.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ With this design we have successfully recorded ~100 neurons simultaneously from
 
 ## Results
 
-## Design overview
+### Design overview
 
 The entire AMIE device weighs ~1.5 g (with cement:~2.0 g) and is assembled from three parts: the Neuropixels probe, the internal mount (IM), and external casing (EC) (Figure 1A,B; Video 1). The IM attaches directly to the Neuropixels PCB board with adhesive and is the core of the assembly (Figure 1a). On the backside of the IM is a slot for a stereotax adapter (SA) which allows for easy handling of the probe (Figure 1A). The IM attaches to the EC via a rail system (Figure 1B). During the implantation procedure, all adhesive binding the assembly to the rodent’s skull exclusively contacts the EC, which acts as a protective shell (Figure 1D).
 
@@ -44,9 +44,11 @@ The entire AMIE device weighs ~1.5 g (with cement:~2.0 g) and is assembled from
 
 **Figure 1.:** (A) Probe base mounted onto 3D printed internal casing and attached to machined metal stereotax adapter. Inset: Rear view, with screws that attach the internal mount (IM) to the stereotax adapter (SA). (B) Entire assembly in a. within 3D printed external casing. Inset: Rear view. (C) The headstage is positioned on the back of the encasing, with the flex wrapped in an ‘S’ shape. (D) Entire assembly in relation to size of mouse brain and skull. The EC is attached to the skull with cement. Silicon gel is used to as an artificial dura to protect the open craniotomy.
 
+![Video 1.](https://cdn.elifesciences.org/articles/47188/elife-47188-video1.mp4.jpg)
+
 One difficulty in adapting the current Neuropixels design for freely moving experiments in mice is the ~3 cm long flex cable attached to a 1 g headstage (see Jaeyoon et al., 2017) for details). In early testing, we suspended the flex and headstage above the mouse’s head during recording. However, we found that the flex very quickly twisted, potentially damaging it. In addition, the headstage added swinging weight above the mouse’s head. With these observations in mind, we designed the encasing with a space for the headstage to be semi-permanently affixed. The probe flex wraps in an ‘S’ shape behind the implant, and attaches to the bottom (Figure 1C). In this way, the recording cable can be attached to the top of the implant, suspended above the mouse’s head.
 
-## Protocol overview
+### Protocol overview
 
 At least one day prior to implant, we attach the probe to the internal mount (Figure 2A). Silicone is added to further secure the base of the recording shank (Figure 2B). Once this is dry, the internal mount is slid into the rails of the external casing and secured with cement (Figure 2C,D). This cement will be drilled away in order to explant the probe. When the entire AMIE assembly is dry, it is ready to be implanted (Figure 2E). The surgery to implant the probe and encasing typically takes ~3 hr (see Materials and methods for details). During this surgery, a headbar can also be implanted, which does not interfere with the encasing. The external casing is the only part of the assembly that is attached to the skull (Figure 2F). In a typical experiment, we implant the probe and encasing without the headstage attached. We wait ~3–4 days for the mouse to recover, and then add the headstage. The headstage can be removed after each experiment, if desired. After ~1 day of habituation to the additional weight of the headstage (~1 g), we begin recording during behavior.
 
@@ -54,31 +56,35 @@ At least one day prior to implant, we attach the probe to the internal mount (Fi
 
 **Figure 2.:** (A) The internal mount (IM) is attached to the stereotax adapter (SA) with two screws, and probe is attached to the internal mount using an epoxy. (B) Medical-grade silicon is added to the base of the shank to add extra support. (C) The external case (EC) is attached to a breadboard, and the IM+probe assembly is carefully guided into the internal compartment of the EC (top view). (D) After cementing the IM to the EC, the entire assembly is ready to be implanted. (E) During surgery, the the shank is lowered into the brain (here at a ~ 16° angle). The ground wire extends down the side of the implant and is attached to the ground screw. (F) The entire encasing is attached to the headbar and skull using Metabond. Tape is added where necessary to add protection between the encasing and the skull. The stereotax adapter (not shown) is removed after this support structure is dry and secure. (G) Image of a mouse with the implant ~48 hr after surgery. The entire assembly is wrapped in Kapton tape to protect the onboard electronics.
 
-## Mice are mobile with the implant
+### Mice are mobile with the implant
 
 Neuropixels probes were not designed for chronic implants in freely moving mice, and the entire probe assembly is quite bulky in comparison to a mouse’s head (Figure 1D; Jaeyoon et al., 2017). However, we have designed a very slim encasing for the probe, and mice can adjust to the weight and size of the implant (Video 2).
+
+![Video 2.](https://cdn.elifesciences.org/articles/47188/elife-47188-video2.mp4.jpg)
+
+**Video 2.:** Mouse was free to move around a 16”x16’ arena while implanted and tethered. Video is shown at 2x speed.
 
 By approximately 48 hr post-surgery, mice were mobile with the Neuropixels AMIE (Figure 2G). To evaluate the suitability of the AMIE for use during behavior, we assessed the impact of the device on both spontaneous and stimulus-driven movements. For spontaneous behavior, we analyzed video data taken while mice explored an open arena (Figure 3A,B). Even while tethered, implanted mice were typically agile and active (Video 2). To quantify behavior and compare for implanted vs. naive mice, we calculated three metrics from video data: the percentage of time spent moving, the maximum velocity and the maximum acceleration. For all three metrics, considerable overlap was apparent in the distribution of values for implanted and naive mice (Figure 3D). Although implanted mice moved slightly less and were slightly slower, the differences failed to reach significance for any metric. In fact, the mouse with the highest max acceleration was implanted (Figure 3D, middle panel).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig3-v2.jpg)
 
-**Figure 3.:** (A) Behavioral testing arena, with a camera to track the position of the mouse and a monitor on top to present visual stimuli. (B) Snapshot of mouse with implant in arena. (C) Sample tracking of 2 min of open field behavior in an implanted mouse. Color of the line indicates the velocity of the mouse. (D) Open field behavior of implanted vs. naive mice. Random 30–180 s exerpts of behavior (N = 8 videos per group, two videos from each mouse) in the open field were used to calculate a percent time moving (>5 cm/s), max velocity, and max acceleration. (E) Visual-looming evoked behavior of implanted vs. naive mice (N = 10 trials, two videos per mouse). A dark dot of linearly increasing diameter (40 cm/s) was presented over the mouse’s head to evoke an escape response. The mean velocity, max velocity, and max acceleration during these responses is presented here. In all panels, orange line indicates the group mean, blue line indicates the median. p-Values (as computed by a two-sided Wilcoxon Rank Sum test) as well as effect sizes (computed by a Cohen’s d) are reported on each panel. Outliers (defined as 1.5*IQR) are marked as light gray points.10.7554/eLife.47188.007Figure 3—source data 1.
+**Figure 3.:** (A) Behavioral testing arena, with a camera to track the position of the mouse and a monitor on top to present visual stimuli. (B) Snapshot of mouse with implant in arena. (C) Sample tracking of 2 min of open field behavior in an implanted mouse. Color of the line indicates the velocity of the mouse. (D) Open field behavior of implanted vs. naive mice. Random 30–180 s exerpts of behavior (N = 8 videos per group, two videos from each mouse) in the open field were used to calculate a percent time moving (>5 cm/s), max velocity, and max acceleration. (E) Visual-looming evoked behavior of implanted vs. naive mice (N = 10 trials, two videos per mouse). A dark dot of linearly increasing diameter (40 cm/s) was presented over the mouse’s head to evoke an escape response. The mean velocity, max velocity, and max acceleration during these responses is presented here. In all panels, orange line indicates the group mean, blue line indicates the median. p-Values (as computed by a two-sided Wilcoxon Rank Sum test) as well as effect sizes (computed by a Cohen’s d) are reported on each panel. Outliers (defined as 1.5*IQR) are marked as light gray points.
 
 To examine stimulus driven behavior, we measured responses to overhead visual looming stimuli (Figure 3E), which are known to elicit strong escape responses in mice (De Franceschi et al., 2016; Evans et al., 2018; Yilmaz and Meister, 2013). The distribution of values for the metrics tested (mean/max velocity and max acceleration) again overlapped considerably for naïve vs. implanted mice (Figure 3E). Although we observed no significant changes, a few naive mice achieved max acceleration during their escapes at values unobserved in implanted mice (Figure 3E, right). A possible explanation is that naive mice were free from the weight of the device and thus were able to accelerate very quickly when motivated to do so by a threatening stimulus. Taken together, these behavioral observations argue that although the presence of the AMIE may have idiosyncratically slowed mice slightly, they remained active in an open arena and showed species-typical responses to threatening stimuli.
 
-## Neuropixels AMIE allows for 60–100 simultaneously recorded neurons across weeks of freely moving behavior
+### Neuropixels AMIE allows for 60–100 simultaneously recorded neurons across weeks of freely moving behavior
 
 We recorded spiking activity across multiple brain areas during freely moving behavior over the course of 1–2 weeks. Figure 4 illustrates an experiment with the probe implanted in medial visual cortex, subiculum, and midbrain. We isolated ~60–100 units for each session in this experiment (Figure 4D,E), during which the mouse moved freely around the arena and was exposed to looming stimuli. The number of single units we were able to isolate ranged across mice and experiments from ~20 to 145, but these numbers were fairly consistent within each mouse across recording sessions (Figure 4C). This variability is likely dependent on the probe that was used (Phase 3A Option four probes used in mouse #3 and #4 had 270 rather than 374 recordable channels; see Materials and methods and Jun et al., 2017), recording noise, and brain region. The absolute number of isolated units depends on the quality of the sorting and the experimenter’s manual curation of Kilosort output, which does present challenging edge cases and can be difficult to assess with drift in the experiment. Overall, these numbers are less than has been previously reported with acute experiments in mice (Jun et al., 2017), possibly because of the chronic recording environment or inability to completely reduce noise. The longest we left a probe in was 41 days, without any noticeable decay in the signal.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig4-v2.jpg)
 
-**Figure 4.:** (A) Probe location, marked with DiI. Sections from Paxinos and Franklin atlas provided for reference. Mouse #200 was implanted with a probe in visual cortex, hippocampus (subiculum), and the midbrain. (B) Schematic of probe depth in (A). (C) Number of isolated units across recording days for eight different mice. Mouse #3 and #4 were implanted with a probe with fewer recording sites (270 vs. 374). Mouse #2 is featured in the other panels of this figure. Mouse #7 had a probe that was previously implanted in Mouse #5; see Figure 6. (D) Scatter plot of units across days for Mouse #2. Size of circles denotes number of waveforms assigned to that unit. X axis is random for visualization. € Histogram of isolated units across days and brain depth for Mouse #2. (F) Waveforms (n = 200, mean waveform in yellow) recorded from the same four contacts on the probe on day 5 (top) and day 6 (bottom). Units are the same as the yellow filled in circles in (D).10.7554/eLife.47188.009Figure 4—source data 1.
+**Figure 4.:** (A) Probe location, marked with DiI. Sections from Paxinos and Franklin atlas provided for reference. Mouse #200 was implanted with a probe in visual cortex, hippocampus (subiculum), and the midbrain. (B) Schematic of probe depth in (A). (C) Number of isolated units across recording days for eight different mice. Mouse #3 and #4 were implanted with a probe with fewer recording sites (270 vs. 374). Mouse #2 is featured in the other panels of this figure. Mouse #7 had a probe that was previously implanted in Mouse #5; see Figure 6. (D) Scatter plot of units across days for Mouse #2. Size of circles denotes number of waveforms assigned to that unit. X axis is random for visualization. € Histogram of isolated units across days and brain depth for Mouse #2. (F) Waveforms (n = 200, mean waveform in yellow) recorded from the same four contacts on the probe on day 5 (top) and day 6 (bottom). Units are the same as the yellow filled in circles in (D).
 
 To test how automatic unit sorting and classification would compare with our approach, we also sorted one of these freely moving sessions with Kilosort2, which automatically classifies units as ‘good.’ Indeed, for mouse #7, Kilosort2 identified 77 well-isolated units, compared to 69 with Kilosort1 and manual post-Kilosort designations in phy, confirming that our manual criteria were effective.
 
 We elected to be conservative about any claims that the same neurons were recorded across days of the experiment, because demonstrating a stable recording of the same neurons from day-to-day is difficult and often regarded with skepticism. However, we did indeed observe waveforms that were consistent in both shape and depth across recordings, and it is entirely possible that these originate from the same neurons (Figure 4F).
 
-## Researchers can also conduct headfixed recordings to further characterize neurons
+### Researchers can also conduct headfixed recordings to further characterize neurons
 
 A major limitation of many chronic implant designs is that they do not enable researchers to also implant a headbar to restrain the animal. The ability to head-fix animals critical for two reasons. First, it allows the experimenter to easily restrain the mouse during experiments, for example to attach/replace the headstage or fix twisting in the tether. Moreover, it affords the opportunity to measure neural activity in response to traditional psychophysical stimuli after the freely moving recording (Figure 5). This makes it possible to connect the neural responses obtained during an unrestrained, ethological task with those obtained during more traditional sensory electrophysiology context (simple stimuli defined by parameters that are systematically varied). This opportunity could prove invaluable in bridging observations from these two very different contexts which are normally studied in separate laboratories.
 
@@ -88,17 +94,116 @@ A major limitation of many chronic implant designs is that they do not enable re
 
 For example, after six days of recording freely moving behavior, we presented a battery of visual stimuli while the mouse was head-fixed to determine whether cells were visually responsive (Figure 5A). We were able to isolate 60 units (63 with Kilosort2) in the restrained condition, just as in the freely moving condition (Figure 5B). The distribution of units was similar to previous experiments where the mouse was not restrained.
 
-## Implant allows researchers to recover the probe after the experiment
+### Implant allows researchers to recover the probe after the experiment
 
 Beyond providing a stable implant over many days, we also sought to design an implant that would allow for recycling of the Neuropixels probes. As demonstrated in Figure 1, the internal mount is separate from the external casing that is cemented to the mouse. After the completion of the experiment, researchers can drill away the cement and slowly remove the probe (see Materials and methods and Figure 6A). This same probe, still attached to the internal mount, can then be re-secured within an external casing and implanted in another mouse.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47188/elife-47188-fig6-v2.jpg)
 
-**Figure 6.:** (A) Example successful probe explanation. Cement is drilled away from the wings of the internal casing in order to remove the internal mount from the external casing. (B) Outline of experiment timing. The same probe was used in the first implant and re-implant. (C) Sample mean waveforms (n = 200, mean in yellow) from each mouse. (D) Detected event rate of the first implant versus the re-implanted probe across days of recording. (E) Median signal-to-noise ratio (SNR) for first implant and re-implanted probe across days (see Materials and methods.).10.7554/eLife.47188.012Figure 6—source data 1.
+**Figure 6.:** (A) Example successful probe explanation. Cement is drilled away from the wings of the internal casing in order to remove the internal mount from the external casing. (B) Outline of experiment timing. The same probe was used in the first implant and re-implant. (C) Sample mean waveforms (n = 200, mean in yellow) from each mouse. (D) Detected event rate of the first implant versus the re-implanted probe across days of recording. (E) Median signal-to-noise ratio (SNR) for first implant and re-implanted probe across days (see Materials and methods.).
 
 We were able to record from a mouse for over 2 weeks, explant the probe, and re-implant for a second experiment (Figure 6B). We were easily able to isolate clear units in both (Figure 4C and 6C). Although we initially were able to isolate comparable numbers of units to the probe’s first implant, the number of isolated units fell over time (compare mouse #5 and #7 in Figure 4C). Still, the re-implanted probe yielded 43.6 ± 17.8 neurons which is ample for many studies, especially those conducted in labs for which Neuropixels probes are a scarce resource.
 
 In another experiment, were able to explant a probe from a mouse that did not recover from surgery and reimplant it in a second mouse (see Table 1). Although this second mouse ultimately also had complications resulting from a poorly positioned ground wire, one successful session of recording yielded 145 units (Figure 4C; Table 1). Further experiments will determine the unit yields that can be typically expected following reimplantation.
+
+**Table 1.**
+ Overview of experiments, with the Neuropixels probe option used and the outcome of the experiment.For each of these experiments, even the unsuccessful explants, neural data was obtained from the initial implant and recording sessions. For an explanation of the probe options, see Materials and methods. Starred mice are included in the paper; + sign indicates the experiment was sorted with Kilosort2; M = mean; SD = standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Mouse</th>
+      <th colspan="2">Probe option</th>
+      <th>Recordable channels</th>
+      <th>M ± SD Isolated units</th>
+      <th>Silicone on shank</th>
+      <th>Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">NP6* (Figure 4; Mouse #3)</td>
+      <td colspan="2">4</td>
+      <td>276</td>
+      <td>19.8 ± 6.23</td>
+      <td>No</td>
+      <td>Shank broke during explant</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP7* (Figure 4; Mouse #4)</td>
+      <td colspan="2">4</td>
+      <td>276</td>
+      <td>20.0 ± 4.36</td>
+      <td>no</td>
+      <td>Shank broke during freely moving recording</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP8* (Figure 4; Mouse #2)</td>
+      <td colspan="2">1</td>
+      <td>384</td>
+      <td>77.2 ± 13.7</td>
+      <td>no</td>
+      <td>Shank broke during explant</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP9* (Figure 4; Mouse #1)</td>
+      <td colspan="2">1</td>
+      <td>384</td>
+      <td>117.4 ± 16.3</td>
+      <td>no</td>
+      <td>Shank broke during explant</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP11</td>
+      <td colspan="2">1</td>
+      <td>384</td>
+      <td>-</td>
+      <td>no</td>
+      <td>Shank broke during freely moving recording</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP12</td>
+      <td colspan="2">3</td>
+      <td>384</td>
+      <td>-</td>
+      <td>no</td>
+      <td>Mouse didn’t recover from surgery, probe successfully explanted and re-implanted in NP13</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP13 (Figure 4; Mouse #8)</td>
+      <td colspan="2">3</td>
+      <td>384</td>
+      <td>145+</td>
+      <td>yes</td>
+      <td>Ground wire issues after surgery; one session successfully recorded. Successful explant</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP14* (Figure 4 and 6; Mouse #5)</td>
+      <td colspan="2">3</td>
+      <td>384</td>
+      <td>80.6 ± 13.6</td>
+      <td>yes</td>
+      <td>Successful explant, re-implanted in NP16</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP15* (Figure 4; Mouse #6)</td>
+      <td colspan="2">3</td>
+      <td>384</td>
+      <td>64.3 ± 19.1</td>
+      <td>yes</td>
+      <td>Successful explant</td>
+    </tr>
+    <tr>
+      <td colspan="2">NP16* (Figure 4 and 6; Mouse #7)</td>
+      <td colspan="2">3</td>
+      <td>384</td>
+      <td>43.6 ± 17.8</td>
+      <td>yes</td>
+      <td>Successful explant</td>
+    </tr>
+  </tbody>
+</table>
 
 To assess the stability of the probe and our ability to detect spikes, we computed the event rate (sum of temporally coincident spikes on a group of sites for which the maximum amplitude exceeds the threshold) and signal-to-noise (SNR; see Materials and methods) ratio for the first implant of the probe as well as its re-implantation in another animal. There was a drop in the event rate and a small drop in the SNR in the re-implanted probe (Figure 6D,E). However, even with the first implant there was a significant drop in both event rate and SNR on the 12th day of recording, suggesting that this may not be due to the re-implantation itself.
 
@@ -116,17 +221,293 @@ The Neuropixels AMIE can be used to record in both restrained and unrestrained c
 
 ## Materials and methods
 
-## Printing and machining parts
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type/resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Medical-grade clear silicon adhesive</td>
+      <td>Mastersil</td>
+      <td>912MED</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Loctite Instant Adhesive 495</td>
+      <td>ULINE</td>
+      <td>S-7595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Medigel CPF</td>
+      <td>Clear H20</td>
+      <td>74-05-5022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Isoflurane</td>
+      <td>Allivet</td>
+      <td>50562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>C and B Metabond 'B' Quick Base</td>
+      <td>Parkell</td>
+      <td>S398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>C and B Metabond 'C' Quick Base</td>
+      <td>Parkell</td>
+      <td>S371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>C and B Metabond Radiopaque L-Power</td>
+      <td>Parkell</td>
+      <td>S396</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Optibond Solo Plus</td>
+      <td>Kerr</td>
+      <td>31514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Vetbond</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-361931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Charisma A1 Syringe</td>
+      <td>Net32</td>
+      <td>66000085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Eye Ointment</td>
+      <td>Rugby</td>
+      <td>370435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Dental Cement</td>
+      <td>Stoelting</td>
+      <td>5217307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>DiI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>D282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Silicone Gel Kit</td>
+      <td>Dow Coning</td>
+      <td>3–4860.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound/drug</td>
+      <td>Bleach</td>
+      <td>Amazon</td>
+      <td>B01K8HT54G</td>
+      <td>Any brand bleach ok</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neuropixel Probe</td>
+      <td>Neuropixel Stock Center (Neuropixels.org)</td>
+      <td>Neuropixel 1.0 Probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D Printed Internal Mount</td>
+      <td>‘this paper’ - Github repository</td>
+      <td>IM_Neuropixel1.stl</td>
+      <td>Internal mount design file (.stl) can be downloaded from the following github repository: https://github.com/churchlandlab/ChronicNeuropixels</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D Printed External Casing</td>
+      <td>‘this paper’ - Github repository</td>
+      <td>EC_Neuropixel1.stl</td>
+      <td>same as above</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sterotax Adapter</td>
+      <td>‘this paper’ - Github repository</td>
+      <td>stereotax adapter v4.ipt</td>
+      <td>same as above</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2-56A Screws</td>
+      <td>Amazon</td>
+      <td>B00F34U238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silver Wire</td>
+      <td>WPI</td>
+      <td>AGW1010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4’ post holder with thumbscrew</td>
+      <td>Thorlabs</td>
+      <td>PH4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Slim right angle bracket</td>
+      <td>Thorlabs</td>
+      <td>AB90B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aluminum Breadboard</td>
+      <td>Thorlabs</td>
+      <td>MB624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M6 Cap Screw</td>
+      <td>Thorlabs</td>
+      <td>SH6MS20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M6 Nut</td>
+      <td>Thorlabs</td>
+      <td>HW-KIT2/M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kapton Tape</td>
+      <td>ULINE</td>
+      <td>S-7595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kimwipes</td>
+      <td>Kimtech</td>
+      <td>34120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oxygen Cylinders</td>
+      <td>Airgas</td>
+      <td>OX USP300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Anesthesia System with Isoflurance Box</td>
+      <td>Parkland Scientific</td>
+      <td>V3000PK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Small rodent sterotax fitted with anesthesia mask</td>
+      <td>Narishige</td>
+      <td>SG-4N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental Drill</td>
+      <td>Osada</td>
+      <td>EXL-M40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.9 mm burrs for micro drill</td>
+      <td>Fine Science Tools</td>
+      <td>19007–09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T/Pump Warm Water Recirculator</td>
+      <td>Kent Scientific</td>
+      <td>TP-700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Warming Pad for warm water recirculator</td>
+      <td>Kent Scientific</td>
+      <td>TPZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cotton Applicators</td>
+      <td>Fisher Scientific</td>
+      <td>19-062-616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Surgical Spears</td>
+      <td>Braintree Scientific Inc.</td>
+      <td>SP 40815</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Printing and machining parts
 
 To conduct this experiment, researchers will need Neuropixels probes. We recommend performing the entire process of preparing and implanting the probe using a dummy probe for practice. We printed and tested in VeroWhite material using a Stratasys Eden 260VS PolyJet 3D Printer with 16 µm resolution. The stereotax adaptor should be machined from aluminum or stainless steel. The parts featured here were designed for Neuropixels 3A probes, but we have since adapted these for Neuropixels 3B probes (Neuropixels 1.0). All designs can be found on the CSHL repository (http://repository.cshl.edu/36808/) as well as on Github (Juavinett et al., 2019; (copy archived at https://github.com/elifesciences-publications/ChronicNeuropixels).
 
 The probe options for Neuropixels 3A differ based on their probe length (and corresponding site count), as well as whether they are active or passive electrodes. Probe options 1 and 3 are both passive, and contain 384 (5 mm long shank) and 960 sites (10 mm long shank), respectively. Probe options 2 and 4 are both active, and contain 384 (5 mm long shank) and 966 sites (10 mm long shank) respectively. All the options have the option to record from 374 channels, with the exception of Option 4, which only has 270 recording channels. Readers should refer to the Supplementary Information in Jun et al. (2017) for additional details. Neuropixels 3B probes have the Phase 3A Option three shank.
 
-## Mounting the probe
+### Mounting the probe
 
 First, the internal mount is secured to the stereotax adapter (SA) using two 2-56A screws (Amazon, B00F34U238). As depicted in Figure 2A, we then attached the Neuropixels probe to the internal mount (IM) usingLoctite Instant Adhesive 495 (ULINE S-17190). Using a needle, we applied a medical-grade clear silicone adhesive, Mastersil 912MED, to the base of the shank (Figure 2B). The IM and probe was slid into the rails of the external casing (EC), and secured with cement (Figure 2D–F).
 
-## Surgical methods
+### Surgical methods
 
 All surgical and behavioral procedures conformed to the 316 guidelines established by the National Institutes of Health and were approved by the Institutional 317 Animal Care and Use Committee of Cold Spring Harbor Laboratory. We used male 3–4 month old C57/BL6 mice (Jackson Laboratories, 000664). Male mice were used because they are typically larger, and we expected that they would better handle the weight of the implant. Mice were given medicated (carprofen) food cups (MediGel CPF, Clear H20 74-05-5022) 1–2 days prior to surgery.
 
@@ -134,19 +515,19 @@ During surgery, the mouse was anesthetized with isoflurane. We cut away the skin
 
 Once the mouse recovered, we removed the tape and added the headstage to the back of the implant. The entire assembly was re-wrapped with tape. On the next day, we began behavioral testing.
 
-## Behavioral data
+### Behavioral data
 
 To compare the behavior of implanted mice with naïve/unimplanted mice, we tracked mice using a Basler Pylon camera and Ethovision XT13 in a 16’ x 16’ open arena. For open field tests, naïve mice were allowed to explore a bare arena for 15 min. Implanted mice were tested in an arena with an inset nest; the data presented here are random excerpts of the mouse’s activity while outside of the nest. We excerpted the same length time segments from the naive mice for comparison. Our behavioral data were not normally distributed, so a Wilson Rank Sum Test was used to test for differences between naïve and implanted mice. We computed effect sizes using Cohen’s d.
 
-## Visual stimulation
+### Visual stimulation
 
 For visually-evoked responses during freely moving behavior (Figure 4), a linearly expanding dot (40 cm/s) was presented on a monitor directly over the mouse’s head. This stimulus is known to elicit an escape response in mice (De Franceschi et al., 2016; Yilmaz and Meister, 2013). Unimplanted mice could escape into a small nest: a triangular prism with a 13 cm opening. Implanted mice could escape into a nest inset into the wall – this modification was necessary to enable mice to enter the enclosure with the implant. We found that being able to easily enter the nest increased the probability of flight (vs. freezing) responses. For visually evoked responses during head restraint (Figure 5), a set of full contrast, full field drifting gratings in eight different directions (10 repeats) were presented above the mouse’s head while the mouse was free to move on a wheel.
 
-## Electrophysiology data
+### Electrophysiology data
 
 Electrophysiology data was collected with SpikeGLX (Bill Karsh, https://github.com/billkarsh/SpikeGLX). The data were first median subtracted across channels and time (see Jun et al., 2017). Unless otherwise noted, experiments were first sorted with Kilosort spike sorting software (Pachitariu et al., 2016) and manually curated using phy (https://github.com/kwikteam/phy). Numbers of recorded neurons here may be more conservative than previously published reports because we were careful to exclude any units that exhibited drift or had evidence of being more than one neuron. Specific experiments (as noted in the text) were sorted with Kilosort2 for comparison (https://github.com/MouseLand/Kilosort2). Additional analyses and plotting with data were done with MATLAB code modified from N. Steinmetz (https://github.com/cortex-lab/spikes). To assess the quality of our recordings, we computed two metrics. First, we calculated the rate of spikes above the noise floor (‘event rate’). Events are temporally (<1 ms) and spatially (~50 µm radius) consistent events with amplitudes (on any site) that exceed six times the median absolute deviation (MAD, Jun et al., 2017). In addition, we computed the signal-to-noise ratio SNR for each event. As previously described, the event SNR is the ratio of peak amplitude of the site with largest amplitude (negative peak) in the event to 0.6745 × MAD (Jun et al., 2017).
 
-## Probe explantation
+### Probe explantation
 
 To explant the probe, we first anesthetized the mouse with isoflurane and loosely positioned the mouse into the earbars. The SA was placed in the stereotax and aligned with its slot in the IM. We carefully lowered the SA into the IM, and put the two screws back into place. It was important that the SA was properly aligned with the IM so that no unnecessary tension was placed on the implant. We carefully drilled away the cement at the boundary of the IM and EC, unraveled or cut the ground wire, and slowly raised the SA+IM+probe assembly. The mouse was perfused and the brain was fixed in 4% PFA for sectioning. We were able to find DiI signals in the brain even 1 month after implantation (we did not test later time points).
 

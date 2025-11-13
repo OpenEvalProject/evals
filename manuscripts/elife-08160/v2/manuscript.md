@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.08160.001 Organelles are distributed to daughter cells, via inheritance pathways. However, it is unclear whether there are mechanisms beyond inheritance, which ensure that organelles are present in all cells. Here we present the unexpected finding that the yeast vacuole plays a positive essential role in initiation of the cell-cycle. When inheritance fails, a new vacuole is generated. We show that this occurs prior to the next cell-cycle, and gain insight into this alternative pathway. Moreover, we find that a combination of a defect in inheritance with an acute block in the vacuole biogenesis results in the loss of a functional vacuole and a specific arrest of cells in early G1 phase. Furthermore, this role for the vacuole in cell-cycle progression requires an intact TORC1- SCH9 pathway that can only signal from a mature vacuole. These mechanisms may serve as a checkpoint for the presence of the vacuole/lysosome. DOI: http://dx.doi.org/10.7554/eLife.08160.001
+Organelles are distributed to daughter cells, via inheritance pathways. However, it is unclear whether there are mechanisms beyond inheritance, which ensure that organelles are present in all cells. Here we present the unexpected finding that the yeast vacuole plays a positive essential role in initiation of the cell-cycle. When inheritance fails, a new vacuole is generated. We show that this occurs prior to the next cell-cycle, and gain insight into this alternative pathway. Moreover, we find that a combination of a defect in inheritance with an acute block in the vacuole biogenesis results in the loss of a functional vacuole and a specific arrest of cells in early G1 phase. Furthermore, this role for the vacuole in cell-cycle progression requires an intact TORC1-SCH9 pathway that can only signal from a mature vacuole. These mechanisms may serve as a checkpoint for the presence of the vacuole/lysosome.
 
 ## Introduction
 
@@ -25,17 +25,17 @@ Many of the proteins involved in vacuole inheritance are conserved among several
 
 ## Results and discussion
 
-To test when and where a new vacuole is generated in the absence of vacuole inheritance, we monitored for the presence of a vacuole using two markers, Vph1 and FM4-64. Vacuoles were detected using GFP fused to the integral vacuole membrane protein Vph1, a V
+To test when and where a new vacuole is generated in the absence of vacuole inheritance, we monitored for the presence of a vacuole using two markers, Vph1 and FM4-64. Vacuoles were detected using GFP fused to the integral vacuole membrane protein Vph1, a V0 subunit of the vacuolar ATPase (Manolson et al., 1992). The presence of inherited vacuoles or old vacuoles were specifically assessed via pulse chase experiments with the vital fluorophore FM4-64 (Vida and Emr, 1995). Exogenously added FM4-64 binds to the plasma membrane, is internalized by endocytosis and delivered to the vacuole. After a chase of one doubling time, all of the FM4-64 is trapped on the vacuole membrane. In wild-type cells, the vacuole is inherited and FM4-64 is distributed between the mother and daughter vacuole (Wang et al., 1996), and Vph1-GFP and FM4-64 always colocalize (Figure 1A, top panels). In contrast, in the vacuole inheritance mutant vac17Δ, FM4-64 is retained in the mother cell (Ishikawa et al., 2003). Interestingly in vac17Δ, buds contained small Vph1-GFP positive vacuoles that lack FM4-64 (Figure 1A; open white allow heads, see also [Anand et al., 2009]). This observation indicates that there is new vacuole synthesis in the absence of vacuole inheritance, and that the new synthesis initiates in the bud.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig1-v2.jpg)
 
-**Figure 1.:** (A) Wild-type and vac17Δcells which express Vph1-GFP from its endogenous locus, were pulse labeled with the vacuole specific dye FM4-64. Wild-type cells have both FM4-64 and Vph1-GFP signals in both mother and daughter cells. vac17Δ cells have both Vph1-GFP and FM4-64 on the vacuole in old mother cells, however the daughter cells solely have a Vph1-GFP labeled vacuole. White arrowheads; new vacuoles in daughter cells. Yellow arrowheads; new vacuoles in new mother cells. Dashed line; outline of cells. (B) (Left panel) A new cell does not form a bud until its vacuole reaches a specific size. Graph indicates the vacuole diameter of wild-type, vac17Δ old cell and vac17Δ new cells with no bud and mother cells with a small bud (less than 20% of diameter of the mother cell). Cell/vacuole diameter was measured by ImageJ. Each cell/vacuole diameter was normalized to its mother cell diameter. Black arrow; minimum size of mother vacuoles in cells with a bud. Average in each category (red bar). Error bar; standard deviation (SD). Not a significant difference; ns, p-value > 0.10. A statistically significant difference; *** (p-value < 1 × 10−3). (Right panel) The vacuoles of the new mother cells of vac17Δ grow faster than vacuoles in either a wild-type or vac17Δ old mother cell. Scatter plots of bud sizes and mother vacuole sizes.DOI: http://dx.doi.org/10.7554/eLife.08160.003
+**Figure 1.:** (A) Wild-type and vac17Δcells which express Vph1-GFP from its endogenous locus, were pulse labeled with the vacuole specific dye FM4-64. Wild-type cells have both FM4-64 and Vph1-GFP signals in both mother and daughter cells. vac17Δ cells have both Vph1-GFP and FM4-64 on the vacuole in old mother cells, however the daughter cells solely have a Vph1-GFP labeled vacuole. White arrowheads; new vacuoles in daughter cells. Yellow arrowheads; new vacuoles in new mother cells. Dashed line; outline of cells. (B) (Left panel) A new cell does not form a bud until its vacuole reaches a specific size. Graph indicates the vacuole diameter of wild-type, vac17Δ old cell and vac17Δ new cells with no bud and mother cells with a small bud (less than 20% of diameter of the mother cell). Cell/vacuole diameter was measured by ImageJ. Each cell/vacuole diameter was normalized to its mother cell diameter. Black arrow; minimum size of mother vacuoles in cells with a bud. Average in each category (red bar). Error bar; standard deviation (SD). Not a significant difference; ns, p-value > 0.10. A statistically significant difference; *** (p-value < 1 × 10−3). (Right panel) The vacuoles of the new mother cells of vac17Δ grow faster than vacuoles in either a wild-type or vac17Δ old mother cell. Scatter plots of bud sizes and mother vacuole sizes.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Schematic of diameters measured. (B) Vacuole diameter is proportional with the cell diameter. Scatter plot of cell diameter and vacuole diameter in mother and daughter cells. (C) When viewed across the cell-cycle, the increase in vacuole size of vac17Δ new cells is greater than either wild-type or vac17Δ old cells. Trend lines from linear equations of data from wild-type (black line); vac17Δ old mother cells (pink line), and vac17Δ new mother cells (green line) are shown. (D) Vacuole inheritance is important for regulating vacuole size in the mother cell. The vacuole size of vac17Δ old mother cells is larger than that of wild-type. Average in each category (red bar). Error bar; SD. *** (p-value < 1 × 10−4). Middle line in box plot indicates the median of the data set. The upper edge of the box indicates the 75th percentile of the data set, and the lower edge indicates the 25th percentile.DOI: http://dx.doi.org/10.7554/eLife.08160.004
+**Figure 1—figure supplement 1.:** (A) Schematic of diameters measured. (B) Vacuole diameter is proportional with the cell diameter. Scatter plot of cell diameter and vacuole diameter in mother and daughter cells. (C) When viewed across the cell-cycle, the increase in vacuole size of vac17Δ new cells is greater than either wild-type or vac17Δ old cells. Trend lines from linear equations of data from wild-type (black line); vac17Δ old mother cells (pink line), and vac17Δ new mother cells (green line) are shown. (D) Vacuole inheritance is important for regulating vacuole size in the mother cell. The vacuole size of vac17Δ old mother cells is larger than that of wild-type. Average in each category (red bar). Error bar; SD. *** (p-value < 1 × 10−4). Middle line in box plot indicates the median of the data set. The upper edge of the box indicates the 75th percentile of the data set, and the lower edge indicates the 25th percentile.
 
-## Yeast generates vacuoles of a specific size prior to formation of a bud
+### Yeast generates vacuoles of a specific size prior to formation of a bud
 
 The new mother cells of vac17Δ, which lack FM4-64 (Figure 1A; open yellow arrowheads), had larger vacuoles compared to the newly formed vacuoles in the large buds. These findings suggest that the newly generated vacuoles continue to grow. To establish the relationship between the size of the newly formed vacuoles with the size of unbudded cells or mother cells, we measured vacuole size vs cell size in wild-type and vac17Δ cells. In wild-type cells, the vacuole diameter showed a linear relationship with cell diameter (Figure 1—figure supplement 1A,B). This is consistent with a previous study that demonstrated that vacuole volume correlates with cell volume (Chan and Marshall, 2014). Notably, we found that in the vac17Δ mutant, the vacuoles grew prior to the generation of a bud (Figure 1B, black arrow). In unbudded new daughters of the vac17Δ mutant, the vacuole diameter relative to cell diameter was smaller than that of wild-type and vac17Δ unbudded old mother cells (Figure 1B, left panel). Notably, the average diameter of the vacuole was only 5.7(±1.5)% of the cell diameter in new unbudded vac17Δ cells. However, after production of a small bud, the average mother cell vacuole diameter was 10(±3.8)% of the cell diameter. In contrast, there was no significant increase in the relative percent diameter of the vacuoles in wild-type and vac17Δ old mother cells with or without a small bud. These observations show that the vacuoles in the new daughter cells grow to a minimum size prior to producing a bud. This growth occurs either because a minimum vacuole size is required and/or because the vacuole needs to mature prior to the generation of a bud.
 
@@ -43,33 +43,33 @@ Note that the vacuoles in vac17Δ new mothers continued to grow, and grew faster
 
 In addition, the average vacuole diameter relative to cell diameter of all the vac17Δ old mother cells was larger than that of wild-type and vac17Δ new mother cells (Figure 1—figure supplement 1D). This suggests that vacuole inheritance is also important for regulating vacuole size in the mother cell.
 
-## The vacuole is required for cell growth
+### The vacuole is required for cell growth
 
-We observed that all
+We observed that all vac17Δ mother cells and unbudded cells have a vacuole as defined by the presence of Vph1-GFP. This strongly suggests that the vacuole is required for cell growth and viability. If this were true, then a combination of a vacuole inheritance defect with an additional defect in the synthesis of a new vacuole would render the cell inviable. Similarly, an additional defect in vacuole function(s) that are required for bud emergence would result in non-viable cells (Figure 2A). Indeed, a high-throughput screen suggested that over twenty genes might be synthetically lethal with the vac17Δ mutant (Costanzo et al., 2010). We individually tested double mutants of vac17Δ with each of the previously proposed candidates that are not essential genes, and found that the double mutants, vac17Δ pep12Δ and vac17Δ vps45Δ displayed synthetic growth defects (Figure 2B,C). Importantly pep12Δ and vps45Δ were also synthetically lethal with additional mutants defective in vacuole inheritance, vac8Δ and myo2-N1304D mutants (Figure 2—figure supplement 1A–D). The corresponding wild-type genes, PEP12 and VPS45, likely play a critical role in the generation of a new vacuole.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic of pathways predicted to exhibit synthetic lethality with mutations in vacuole inheritance. When vacuole inheritance is defective, the bud generates a new vacuole that is independent of the mother vacuole. If vacuoles play an essential role, then cells with no mechanism to generate a vacuole will not be viable. Furthermore if the new vacuole is defective in its essential function(s), the cell will not be viable. (B) The pep12Δ and vps45Δ mutants exhibit a synthetic growth defect with vac17Δ. Results of tetrad dissection. Haploid colonies from tetrads derived from heterozygous diploids of VAC17/vac17Δ PEP12/pep12Δ and VAC17/vac17Δ VPS45/vps45Δ were arrayed vertically on YPD (rich medium) plates incubated at 24°C for 3 days. vac17Δ = 17Δ; pep12Δ = 12Δ; vps45Δ = 45Δ; vac17Δ pep12Δ or vac17Δ vps45Δ double mutant = ΔΔ are indicated. (C) Quantification of colony size, relative to the average of wild-type colonies. A total of 28 full tetrads and 48 full tetrads were analyzed for vac17Δ pep12Δ and vac17Δ vps45Δ, respectively. Average size in each genotype (red bar). Error bar; SD. (D) Both vacuole inheritance and new synthesis are important to maintain functional vacuoles. In the vac17Δ pep12Δ mutant several cells appear to lack a vacuole. Wild-type cells incubated with 10 μM CMAC for 30 min exhibited a blue fluorescent signal in the vacuole lumen. The limiting membrane of the vacuole is indicated by Vph1-GFP expressed from its endogenous locus. Wild-type and vac17Δ cells show normal localization of Vph1-GFP and CMAC. Single pep12Δ cells show abnormal distribution in Vph1-GFP, but not CMAC. The vac17Δ pep12Δ double mutant cells show defects in the localization of Vph1-GFP and CMAC. (E) Quantification of cells with a CMAC positive subcellular structure. Any CMAC containing structure with or without Vph1-GFP was scored as a structure. Error bars; SD calculated from four independent experiments with at least 100 cells counted in each strain/experiment. (F) New vacuoles are generated from Pep12-positive endosomes. GFP-Pep12/Vph1-CFP expressed in wild-type and vac17Δcells were pulse labeled with FM4-64. GFP-Pep12 and Vph1-CFP were expressed from the endogenous loci in both strains. Open arrowheads; new vacuoles. (G) Quantification of percent daughter cells with Vph1-CFP and/or GFP-Pep12 in vac17Δ cells. Averages from two independent experiments; at least 100 cells counted per experiment. Open circles and triangles indicate each experiment.DOI: http://dx.doi.org/10.7554/eLife.08160.005
+**Figure 2.:** (A) Schematic of pathways predicted to exhibit synthetic lethality with mutations in vacuole inheritance. When vacuole inheritance is defective, the bud generates a new vacuole that is independent of the mother vacuole. If vacuoles play an essential role, then cells with no mechanism to generate a vacuole will not be viable. Furthermore if the new vacuole is defective in its essential function(s), the cell will not be viable. (B) The pep12Δ and vps45Δ mutants exhibit a synthetic growth defect with vac17Δ. Results of tetrad dissection. Haploid colonies from tetrads derived from heterozygous diploids of VAC17/vac17Δ PEP12/pep12Δ and VAC17/vac17Δ VPS45/vps45Δ were arrayed vertically on YPD (rich medium) plates incubated at 24°C for 3 days. vac17Δ = 17Δ; pep12Δ = 12Δ; vps45Δ = 45Δ; vac17Δ pep12Δ or vac17Δ vps45Δ double mutant = ΔΔ are indicated. (C) Quantification of colony size, relative to the average of wild-type colonies. A total of 28 full tetrads and 48 full tetrads were analyzed for vac17Δ pep12Δ and vac17Δ vps45Δ, respectively. Average size in each genotype (red bar). Error bar; SD. (D) Both vacuole inheritance and new synthesis are important to maintain functional vacuoles. In the vac17Δ pep12Δ mutant several cells appear to lack a vacuole. Wild-type cells incubated with 10 μM CMAC for 30 min exhibited a blue fluorescent signal in the vacuole lumen. The limiting membrane of the vacuole is indicated by Vph1-GFP expressed from its endogenous locus. Wild-type and vac17Δ cells show normal localization of Vph1-GFP and CMAC. Single pep12Δ cells show abnormal distribution in Vph1-GFP, but not CMAC. The vac17Δ pep12Δ double mutant cells show defects in the localization of Vph1-GFP and CMAC. (E) Quantification of cells with a CMAC positive subcellular structure. Any CMAC containing structure with or without Vph1-GFP was scored as a structure. Error bars; SD calculated from four independent experiments with at least 100 cells counted in each strain/experiment. (F) New vacuoles are generated from Pep12-positive endosomes. GFP-Pep12/Vph1-CFP expressed in wild-type and vac17Δcells were pulse labeled with FM4-64. GFP-Pep12 and Vph1-CFP were expressed from the endogenous loci in both strains. Open arrowheads; new vacuoles. (G) Quantification of percent daughter cells with Vph1-CFP and/or GFP-Pep12 in vac17Δ cells. Averages from two independent experiments; at least 100 cells counted per experiment. Open circles and triangles indicate each experiment.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) A vac8Δ mutant exhibits a synthetic growth defect with either pep12Δ and vps45Δ. Results of tetrad dissections of heterozygous diploids, VAC8/vac8Δ PEP12/pep12Δ and VAC8/vac8Δ VPS45/vps45Δ. vac8Δ = 8Δ; pep12Δ = 12Δ; vps45Δ = 45Δ; vac8Δ pep12Δ or vac8Δ vps45Δ double mutant = ΔΔ are indicated. (B) Quantification of colony size, relative to average of wild-type colonies. A total 35 tetrads and 37 tetrads were analyzed for vac8Δ pep12Δ and vac8Δ vps45Δ, respectively. (C) The pep12Δ mutant exhibits a synthetic growth defect with myo2-N1304D, which is a vacuole inheritance mutant due to a defect in binding to Vac17. Survival occurs when wild-type MYO2 is expressed in myo2Δ cells, and in the myo2Δ pep12Δ mutant. In addition, the myo2-N1304D mutant expressed in myo2Δ cells is sufficient for survival. In contrast, the myo2-N1304D mutant expressed in myo2Δ pep12Δ cells is lethal. Plasmids were transformed into a myo2Δ strain and a myo2Δ pep12Δ strain containing YCp50 [URA3] MYO2. Plasmids tested were pRS413 [HIS3] (mock), pRS413 MYO2 (pMYO2), or pRS413 myo2-N1304D (pmyo2-N1304D). Transformed colonies were cultured in SC-His-Ura liquid media and serial dilutions spotted onto SC+5-FOA plates to counter select against YCp50 [URA3] MYO2 (middle panel) and the same culture was also tested on SC-His-Ura plate (right panel). (D) A vps45Δ mutant exhibits a synthetic growth defect with the myo2-N1304D mutant. Wild-type MYO2 expressed in myo2Δ cells, or in the myo2Δ vps45Δ mutant, is sufficient for cell viability. In addition, the myo2-N1304D mutant expressed in myo2Δ cells is sufficient for cell viability. In contrast, the myo2-N1304D mutant expressed in myo2Δ vps45Δ cells is lethal.DOI: http://dx.doi.org/10.7554/eLife.08160.006
+**Figure 2—figure supplement 1.:** (A) A vac8Δ mutant exhibits a synthetic growth defect with either pep12Δ and vps45Δ. Results of tetrad dissections of heterozygous diploids, VAC8/vac8Δ PEP12/pep12Δ and VAC8/vac8Δ VPS45/vps45Δ. vac8Δ = 8Δ; pep12Δ = 12Δ; vps45Δ = 45Δ; vac8Δ pep12Δ or vac8Δ vps45Δ double mutant = ΔΔ are indicated. (B) Quantification of colony size, relative to average of wild-type colonies. A total 35 tetrads and 37 tetrads were analyzed for vac8Δ pep12Δ and vac8Δ vps45Δ, respectively. (C) The pep12Δ mutant exhibits a synthetic growth defect with myo2-N1304D, which is a vacuole inheritance mutant due to a defect in binding to Vac17. Survival occurs when wild-type MYO2 is expressed in myo2Δ cells, and in the myo2Δ pep12Δ mutant. In addition, the myo2-N1304D mutant expressed in myo2Δ cells is sufficient for survival. In contrast, the myo2-N1304D mutant expressed in myo2Δ pep12Δ cells is lethal. Plasmids were transformed into a myo2Δ strain and a myo2Δ pep12Δ strain containing YCp50 [URA3] MYO2. Plasmids tested were pRS413 [HIS3] (mock), pRS413 MYO2 (pMYO2), or pRS413 myo2-N1304D (pmyo2-N1304D). Transformed colonies were cultured in SC-His-Ura liquid media and serial dilutions spotted onto SC+5-FOA plates to counter select against YCp50 [URA3] MYO2 (middle panel) and the same culture was also tested on SC-His-Ura plate (right panel). (D) A vps45Δ mutant exhibits a synthetic growth defect with the myo2-N1304D mutant. Wild-type MYO2 expressed in myo2Δ cells, or in the myo2Δ vps45Δ mutant, is sufficient for cell viability. In addition, the myo2-N1304D mutant expressed in myo2Δ cells is sufficient for cell viability. In contrast, the myo2-N1304D mutant expressed in myo2Δ vps45Δ cells is lethal.
 
 PEP12 encodes a t-SNARE, and VPS45 encodes a Sec1/Munc18 protein. These proteins function together in the vacuole-protein-sorting pathway from endosomes to the vacuole (Becherer et al., 1996; Burd et al., 1997). To test whether the growth defects of the vac17Δ pep12Δ double mutant are due to a defect in forming new vacuoles, we monitored vacuoles using two markers, Vph1-GFP and CMAC, a small molecule that is taken into the lumen of the vacuole (Stefan and Blumer, 1999). Wild-type and vac17Δ cells showed normal localization of Vph1-GFP and CMAC (Figure 2D,E). However, single pep12Δ cells, which have a defect in protein sorting to the vacuole, and a partial defect in vacuole inheritance (Raymond et al., 1992), showed an abnormal distribution of Vph1 (Piper et al., 1997), but not CMAC (Figure 2D,E). The vac17Δ pep12Δ double mutant cells showed defects in the localization of Vph1 and CMAC (Figure 2D,E). These findings suggest that the double mutant does not generate normal vacuoles.
 
 PEP12 localization is consistent with its role in the synthesis of a new vacuole. GFP-Pep12 and Vph1-CFP were co-expressed in a vac17Δ mutant labeled with FM4-64. In this strain, 63% of vac17Δ cells had GFP-Pep12 on the newly synthesized vacuole in the bud, which was Vph1-CFP positive but lacked FM4-64 (Figure 2F,G). In 17% of daughter cells, GFP-Pep12 was present in buds without a vacuole, as indicated by the absence of Vph1-CFP (vacuole). This suggests that a Pep12-positive endosome appears first, and subsequently a Vph1-positive vacuole matures from the Pep12-positive endosome. Note that in only 1.6% of cells, Vph1-CFP was present without GFP-Pep12.
 
-## The vacuole is required for cell-cycle progression from early G1
+### The vacuole is required for cell-cycle progression from early G1
 
-That the vacuole in the mother cell must reach a specific size prior to bud emergence (
+That the vacuole in the mother cell must reach a specific size prior to bud emergence (Figure 1B) and that a vacuole is required for cell growth (Figure 2), raised the possibility that the vacuole is required for cell-cycle progression. Thus, we tested whether the vac17 pep12 double mutant arrests at a specific point in the cell-cycle. To perform this analysis, we used the pep12-60tsf mutant, which is temperature sensitive for function (tsf). At elevated temperatures PEP12 function is acutely ablated, but the cells remain viable (Burd et al., 1997). Importantly, the vac17Δ pep12-60tsf double mutant, but not pep12-60tsf single mutant, showed a severe growth defect at 37°C (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig3-v2.jpg)
 
-**Figure 3.:** (A) The vac17Δ pep12-60 double mutant shows synthetic growth defects at the restrictive temperature, 37°C. Wild-type, tsfvac17Δ, pep12-60 and tsfvac17Δ pep12-60 strains were cultured in liquid media and serial dilutions were spotted onto YPD plates. The plates were incubated at 24°C, 30°C and 37°C for 2 days. (tsfB) The vac17Δ pep12-60 double mutant arrests in G1 phase at the restrictive temperature 37°C. Percent cells in G1 phase (solid lines). Yeast strains tested; wild-type, tsfvac17Δ, pep12-60, and tsfvac17Δ pep12-60. Cultures were incubated at 24°C overnight, and then sifted to 37°C for 0, 2, 4, 8, 12, or 24 hr. The percentage of G1 cells (1N DNA) was measured using propidium iodide (PI) staining and assessed by flow cytometry. The same cultures were analyzed for lethality (percent dead cells) (dashed lines). After incubation at 37°C, the number of yeast cells were assessed with a hemocytometer, and their ability to form colonies at 24°C on YPD plates was tested. Lethality was inferred from the number of cells that survived the treatment. Error bars; SD calculated from four independent experiments. *** (p-value < 1 × 10tsf−3). (C) The vac17Δ pep12-60 double mutant arrests in early G1 phase at the restrictive temperature 37°C. Cells were scored for the presence of Whi5-3xGFP in the nucleus. Wild-type, tsfvac17Δ, pep12-60, and tsfvac17Δ pep12-60 cells, which express Whi5-3xGFP from its endogenous locus, were incubated at 24°C overnight, and then sifted to 37°C for 0 or 4 hr. Error bars; SD calculated from three independent experiments with at least 100 cells counted in each strain/experiment. *** (p-value < 1 × 10tsf−3). (D) Arrested cells that have 1N DNA content are unbudded. Wild-type and vac17Δ pep12-60 cells were incubated at 24°C overnight, and then sifted to 37°C for 24 hr. After fixation, yeast were stained with PI, and cells with 1N DNA were sorted by flow cytometry. The sorted cells were observed by microscopy. For both wild-type and the tsfvac17Δ pep12-60 double mutant 99% of the cells with 1N DNA were unbudded. Sorted cells from three individual experiments were counted. At least 400 cells were counted for each experiment.tsfDOI: http://dx.doi.org/10.7554/eLife.08160.007
+**Figure 3.:** (A) The vac17Δ pep12-60tsf double mutant shows synthetic growth defects at the restrictive temperature, 37°C. Wild-type, vac17Δ, pep12-60tsf and vac17Δ pep12-60tsf strains were cultured in liquid media and serial dilutions were spotted onto YPD plates. The plates were incubated at 24°C, 30°C and 37°C for 2 days. (B) The vac17Δ pep12-60tsf double mutant arrests in G1 phase at the restrictive temperature 37°C. Percent cells in G1 phase (solid lines). Yeast strains tested; wild-type, vac17Δ, pep12-60tsf, and vac17Δ pep12-60tsf. Cultures were incubated at 24°C overnight, and then sifted to 37°C for 0, 2, 4, 8, 12, or 24 hr. The percentage of G1 cells (1N DNA) was measured using propidium iodide (PI) staining and assessed by flow cytometry. The same cultures were analyzed for lethality (percent dead cells) (dashed lines). After incubation at 37°C, the number of yeast cells were assessed with a hemocytometer, and their ability to form colonies at 24°C on YPD plates was tested. Lethality was inferred from the number of cells that survived the treatment. Error bars; SD calculated from four independent experiments. *** (p-value < 1 × 10−3). (C) The vac17Δ pep12-60tsf double mutant arrests in early G1 phase at the restrictive temperature 37°C. Cells were scored for the presence of Whi5-3xGFP in the nucleus. Wild-type, vac17Δ, pep12-60tsf, and vac17Δ pep12-60tsf cells, which express Whi5-3xGFP from its endogenous locus, were incubated at 24°C overnight, and then sifted to 37°C for 0 or 4 hr. Error bars; SD calculated from three independent experiments with at least 100 cells counted in each strain/experiment. *** (p-value < 1 × 10−3). (D) Arrested cells that have 1N DNA content are unbudded. Wild-type and vac17Δ pep12-60tsf cells were incubated at 24°C overnight, and then sifted to 37°C for 24 hr. After fixation, yeast were stained with PI, and cells with 1N DNA were sorted by flow cytometry. The sorted cells were observed by microscopy. For both wild-type and the vac17Δ pep12-60tsf double mutant 99% of the cells with 1N DNA were unbudded. Sorted cells from three individual experiments were counted. At least 400 cells were counted for each experiment.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) The vac17Δ pep12-60 double mutant is arrested in G1 phase at the restrictive temperature, 37°C. Percent cells in G1 (1N DNA) and G2 (2N DNA) phase after incubation at 37°C for 0, 2, 4, 8, 12, or 24 hr. Percent cells arrested in G1 are also shown in tsfFigure 3B. Error bars; SD calculated from four independent experiments. (B) vac17Δ pep12Δ and vac17Δ vps45Δ double mutants exhibit an accumulation of cells arrested in G1 phase. Flow cytometry analysis of PI staining of yeast strains; wild-type, vac17Δ, pep12Δ, vps45Δ, vac17Δ pep12Δ, and vac17Δ vps45Δ. (C) Quantification of percent cells in G1 and G2 phase. Error bars; SD calculated from four independent experiments. (D) The vac17Δ pep12-60 double mutant arrests in early G1 phase at the restrictive temperature, 37°C. Wild-type, tsfvac17Δ, pep12-60, and tsfvac17Δ pep12-60 cells which express Whi5-3xGFP from its endogenous locus, were incubated at 24°C overnight, and then sifted to 37°C for 0 or 4 hr. Images of Whi5-3xGFP localization after cells were incubated at 37°C for 4 hr. Quantification is shown in tsfFigure 3C.DOI: http://dx.doi.org/10.7554/eLife.08160.008
+**Figure 3—figure supplement 1.:** (A) The vac17Δ pep12-60tsf double mutant is arrested in G1 phase at the restrictive temperature, 37°C. Percent cells in G1 (1N DNA) and G2 (2N DNA) phase after incubation at 37°C for 0, 2, 4, 8, 12, or 24 hr. Percent cells arrested in G1 are also shown in Figure 3B. Error bars; SD calculated from four independent experiments. (B) vac17Δ pep12Δ and vac17Δ vps45Δ double mutants exhibit an accumulation of cells arrested in G1 phase. Flow cytometry analysis of PI staining of yeast strains; wild-type, vac17Δ, pep12Δ, vps45Δ, vac17Δ pep12Δ, and vac17Δ vps45Δ. (C) Quantification of percent cells in G1 and G2 phase. Error bars; SD calculated from four independent experiments. (D) The vac17Δ pep12-60tsf double mutant arrests in early G1 phase at the restrictive temperature, 37°C. Wild-type, vac17Δ, pep12-60tsf, and vac17Δ pep12-60tsf cells which express Whi5-3xGFP from its endogenous locus, were incubated at 24°C overnight, and then sifted to 37°C for 0 or 4 hr. Images of Whi5-3xGFP localization after cells were incubated at 37°C for 4 hr. Quantification is shown in Figure 3C.
 
 To test cell-cycle progression, we labeled DNA with propidium iodide (PI), and measured DNA content via FACS analysis. Wild-type, vac17Δ, pep12-60tsf, and vac17Δ pep12-60tsf cells were incubated overnight at 24°C, then shifted to 37°C. At 24°C (0 hr of 37°C), the vac17Δ pep12-60tsf double mutant had a normal cell-cycle profile (Figure 3B and Figure 3—figure supplement 1A). After incubation at 37°C for 24 hr, wild-type, vac17Δ and pep12-60tsf showed a similar percent of G1 phase cells (1N DNA); 46(±2)%, 48(±2)%, and 43(±3)%, respectively (Figure 3B and Figure 3—figure supplement 1A). In contrast, after incubation at the restrictive temperature for 24 hr, 80(±3)% of the vac17Δ pep12-60tsf double mutant cells arrested at G1 phase (1N DNA). Importantly, at 8, 12 and 24 hr after the shift to 37°C, the differences between the vac17Δ pep12-60tsf double mutant and the other strains were statistically significant (all p-values < 1 × 10−3). Consistent with these findings, both the vac17Δ pep12Δ and vac17Δ vps45Δ double mutants exhibited an arrest in G1 phase (Figure 3—figure supplements 1B,C). These results strongly suggest that a functional vacuole is important for cell-cycle progression from G1 phase.
 
@@ -79,17 +79,17 @@ Additional evidence for a specific arrest in G1 phase, came from the finding tha
 
 Further evidence that this is a bona fide G1 arrest, came from the finding that the vac17Δ pep12-60tsf mutant with 1N DNA content, arrests as unbudded cells. We collected 1N DNA cells by flow cytometry, and determined their morphology by microscopy. After incubation at 37°C for 24 hr, 99% of the G1 cells were unbudded, in both the wild-type and vac17Δ pep12-60tsf mutant (Figure 3D). Together these results indicate that the vacuole is required for early G1 progression.
 
-## TORC1-SCH9 signaling from the new vacuole is required for cell-cycle progression
+### TORC1-SCH9 signaling from the new vacuole is required for cell-cycle progression
 
-The above findings predict that regulation of the cell-cycle requires signaling from the vacuole. Evidence for a candidate signaling pathway came from studies which showed that deletion of
+The above findings predict that regulation of the cell-cycle requires signaling from the vacuole. Evidence for a candidate signaling pathway came from studies which showed that deletion of Target Of Rapamycin 1 (TOR1) showed synthetic growth defects with vac17Δ and vac8Δ (Zurita-Martinez et al., 2007; Costanzo et al., 2010) (Figure 4—fiugre supplements 1A,B). Similarly, another vacuole inheritance mutant, myo2-N1304D, was synthetic lethal with tor1Δ (Figure 4—figure supplement 1C). Notably, the vac17Δ tor1Δ double mutant showed an increase in cells arrested at G1 phase (Figure 4A,B). This arrest in G1 phase was similar to that observed for the vac17Δ pep12-60tsf and vac17Δ pep12Δ mutants (Figure 3—figure supplements 1A–C). This suggests that TORC1 signaling from the vacuole may account at least in part for the G1 arrest observed in the vac17Δ pep12-60tsf and vac17Δ pep12Δ mutants. Interestingly, the vac17Δ tor1Δ mutants generated a new vacuole in the daughter cells (Figure 4C). This suggests that TOR1 functions after the synthesis of the new vacuole.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig4-v2.jpg)
 
-**Figure 4.:** SCH9 signaling from the new vacuole is required for cell-cycle progression.(A) The vac17Δ tor1Δ double mutant exhibits an accumulation of G1 phase cells. Flow cytometry analysis with PI staining of yeast strains; wild-type, vac17Δ, tor1Δ, and vac17Δ tor1Δ. (B) Quantification of percent cells in G1 and G2 phase. Error bars; SD calculated from four independent experiments. (C) A new vacuole is synthesized in the new daughter cells of the vac17Δ tor1Δ double mutant. Wild-type, vac17Δ, tor1Δ, and vac17Δ tor1Δ cells which express Vph1-GFP from its endogenous locus, were pulse labeled with FM4-64. Arrowheads; new vacuole in daughter cells. (D) The kinase activity of target of rapamycin 1 (Tor1) is required for growth of the vacuole inheritance mutant, vac17Δ. Plasmids were transformed into a vac17Δ tor1Δ mutant containing pRS416 [URA3] TOR1. Plasmids tested were pRS315 [LEU2] (mock), pRS315 HA-TOR1, pRS315 HA-tor1-D2275A, or pRS315 HA-tor1-D2294E. Transformed colonies were cultured in liquid media and serial dilutions spotted onto SC+5-FOA or SC-Leu-Ura plates. Plates were incubated at 24°C for 4 days. (E) TORC1 signals from the new vacuole via Sch9. The phospho-mimetic sch9-2D3E mutant partially rescues the growth defect of the vac17Δ tor1Δ mutant. pRS413 (mock), pRS413 VAC17, pRS413 TOR1, pVT102-H (mock), pVT102-H SCH9, pVT102-H sch9-2D3E, or pVT102-H sch9-5A expressed in vac17Δ tor1Δ with pRS416 TOR1. Transformed colonies were cultured in liquid media and serial dilutions were spotted onto SC-His+5-FOA or SC-His-Ura plates, and incubated at 24°C for 4 days. (F) Sch9 signaling requires a functional vacuole. The phospho-mimetic sch9-2D3E mutant does not rescue the growth defect of the vac17Δ pep12Δ mutant. pRS413 (mock), pRS413 VAC17, pRS413 TOR1, pVT102-H (mock), pVT102-H SCH9, pVT102-H sch9-2D3E, or pVT102-H sch9-5A plasmids were expressed in a vac17Δ pep12Δ strain. Transformed colonies were cultured in liquid media and serial dilutions spotted onto an SC-His plate, and incubated at 24°C for 3 to 4 days.DOI: http://dx.doi.org/10.7554/eLife.08160.009
+**Figure 4.:** (A) The vac17Δ tor1Δ double mutant exhibits an accumulation of G1 phase cells. Flow cytometry analysis with PI staining of yeast strains; wild-type, vac17Δ, tor1Δ, and vac17Δ tor1Δ. (B) Quantification of percent cells in G1 and G2 phase. Error bars; SD calculated from four independent experiments. (C) A new vacuole is synthesized in the new daughter cells of the vac17Δ tor1Δ double mutant. Wild-type, vac17Δ, tor1Δ, and vac17Δ tor1Δ cells which express Vph1-GFP from its endogenous locus, were pulse labeled with FM4-64. Arrowheads; new vacuole in daughter cells. (D) The kinase activity of target of rapamycin 1 (Tor1) is required for growth of the vacuole inheritance mutant, vac17Δ. Plasmids were transformed into a vac17Δ tor1Δ mutant containing pRS416 [URA3] TOR1. Plasmids tested were pRS315 [LEU2] (mock), pRS315 HA-TOR1, pRS315 HA-tor1-D2275A, or pRS315 HA-tor1-D2294E. Transformed colonies were cultured in liquid media and serial dilutions spotted onto SC+5-FOA or SC-Leu-Ura plates. Plates were incubated at 24°C for 4 days. (E) TORC1 signals from the new vacuole via Sch9. The phospho-mimetic sch9-2D3E mutant partially rescues the growth defect of the vac17Δ tor1Δ mutant. pRS413 (mock), pRS413 VAC17, pRS413 TOR1, pVT102-H (mock), pVT102-H SCH9, pVT102-H sch9-2D3E, or pVT102-H sch9-5A expressed in vac17Δ tor1Δ with pRS416 TOR1. Transformed colonies were cultured in liquid media and serial dilutions were spotted onto SC-His+5-FOA or SC-His-Ura plates, and incubated at 24°C for 4 days. (F) Sch9 signaling requires a functional vacuole. The phospho-mimetic sch9-2D3E mutant does not rescue the growth defect of the vac17Δ pep12Δ mutant. pRS413 (mock), pRS413 VAC17, pRS413 TOR1, pVT102-H (mock), pVT102-H SCH9, pVT102-H sch9-2D3E, or pVT102-H sch9-5A plasmids were expressed in a vac17Δ pep12Δ strain. Transformed colonies were cultured in liquid media and serial dilutions spotted onto an SC-His plate, and incubated at 24°C for 3 to 4 days.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** SCH9 is required for the viability of vacuole inheritance mutants.(A) The tor1Δ mutant exhibits a synthetic growth defect with vac17Δ and vac8Δ. Results of tetrad dissection of heterozygous diploids, VAC17/vac17Δ TOR1/tor1Δ and VAC8/vac8Δ TOR1/tor1Δ. vac17Δ = 17Δ; vac8Δ = 8Δ; tor1Δ = 1Δ; vac17Δ tor1Δ or vac8Δ tor1Δ double mutants = ΔΔ are indicated. (B) Quantification of colony size, relative to average of wild-type colonies. A total of 34 tetrads and 39 tetrads were analyzed for vac17Δ tor1Δ and vac8Δ tor1Δ, respectively. (C) The tor1Δ mutant exhibits a synthetic growth defect with the myo2-N1304D mutant. Plasmids were transformed into a myo2Δ and myo2Δ tor1Δ strain containing YCp50 MYO2. Plasmids tested were pRS413 (mock), pRS413 MYO2, or pRS413 myo2-N1304D. Transformed colonies were cultured in liquid media and serial dilutions were spotted onto SC+5-FOA or SC-His-Ura plate, and incubated at 24°C for 4 days. (D) The vac17Δ kog1-105 mutant showed synthetic growth defects. pRS313 (mock) and pRS415 (mock), pRS313 (mock) and pRS415 VAC17, pRS313 KOG1 and pRS415 (mock), pRS313 KOG1 and pRS415 VAC17, pRS313 kog1-105 and pRS415 VAC17, or pRS313 kog1-105 and pRS415 (mock) expressed in vac17Δ kog1Δ with pRS316 KOG1. Transformed colonies were cultured in liquid media and serial dilutions were spotted on SC-His-Leu+5-FOA or SC-His-Leu-Ura plates, and incubated at 24°C for 5 days.DOI: http://dx.doi.org/10.7554/eLife.08160.010
+**Figure 4—figure supplement 1.:** (A) The tor1Δ mutant exhibits a synthetic growth defect with vac17Δ and vac8Δ. Results of tetrad dissection of heterozygous diploids, VAC17/vac17Δ TOR1/tor1Δ and VAC8/vac8Δ TOR1/tor1Δ. vac17Δ = 17Δ; vac8Δ = 8Δ; tor1Δ = 1Δ; vac17Δ tor1Δ or vac8Δ tor1Δ double mutants = ΔΔ are indicated. (B) Quantification of colony size, relative to average of wild-type colonies. A total of 34 tetrads and 39 tetrads were analyzed for vac17Δ tor1Δ and vac8Δ tor1Δ, respectively. (C) The tor1Δ mutant exhibits a synthetic growth defect with the myo2-N1304D mutant. Plasmids were transformed into a myo2Δ and myo2Δ tor1Δ strain containing YCp50 MYO2. Plasmids tested were pRS413 (mock), pRS413 MYO2, or pRS413 myo2-N1304D. Transformed colonies were cultured in liquid media and serial dilutions were spotted onto SC+5-FOA or SC-His-Ura plate, and incubated at 24°C for 4 days. (D) The vac17Δ kog1-105 mutant showed synthetic growth defects. pRS313 (mock) and pRS415 (mock), pRS313 (mock) and pRS415 VAC17, pRS313 KOG1 and pRS415 (mock), pRS313 KOG1 and pRS415 VAC17, pRS313 kog1-105 and pRS415 VAC17, or pRS313 kog1-105 and pRS415 (mock) expressed in vac17Δ kog1Δ with pRS316 KOG1. Transformed colonies were cultured in liquid media and serial dilutions were spotted on SC-His-Leu+5-FOA or SC-His-Leu-Ura plates, and incubated at 24°C for 5 days.
 
 TOR1 encodes a PIK-related protein kinase (Alarcon et al., 1999). In yeast, Tor1 functions in the TORC1 complex, which is composed of Tor1/2, Kog1, Lst8, and Tco89 (Loewith et al., 2002). In yeast, TORC1 localizes on the vacuole membrane (Reinke et al., 2004; Araki et al., 2005; Urban et al., 2007; Sturgill et al., 2008; Binda et al., 2009; Jin et al., 2014), and is a key determinant of nutrient status (Di Como and Arndt, 1996). We found that the kinase activity of Tor1 was required for growth of vac17Δ (Figure 4D), and that the TORC1 specific subunit KOG1 was also required for growth of vac17Δ (Figure 4—figure supplement 1D). In addition, the lst8-15 temperature sensitive mutant is also synthetically lethal with vac17Δ (Costanzo et al., 2010). These results suggest that the kinase activity of the TORC1 complex is required for normal growth of vacuole inheritance mutants.
 
@@ -99,13 +99,13 @@ It was previously shown that Sch9-2D3E localizes on the vacuole membrane (Urban 
 
 While previous studies showed that TORC1 signals from the vacuole/lysosome (Sancak et al., 2010), and that Sch9 is activated in that location (Urban et al., 2007), it was assumed that once Sch9 is activated, it no longer requires the vacuole for its further downstream functions. However our findings strongly suggest that the vacuole is required for Sch9 function(s) after Sch9 is phosphorylated by TORC1. One possible role of the vacuole in Sch9 function, is that target protein(s) of the Sch9 kinase must be present on the vacuole membrane. Alternatively or in addition, the full kinase activity of Sch9 may require other proteins that are on the vacuole membrane.
 
-## The newly synthesized vacuoles initially lack Sch9 and Fab1
+### The newly synthesized vacuoles initially lack Sch9 and Fab1
 
-If a cell does not receive a vacuole from the mother cell, the daughter cell generates a new vacuole. The observation that these new vacuoles grow to a specific size prior to generation of a bud, and that TORC1 signaling is also required, raised the possibility that that there are functional differences between newly synthesized vacuoles and inherited vacuoles. As a first approach, we tested the localization of several proteins that are involved in the TORC1 pathway, Tor1, Kog1 and Sch9. New vacuoles were defined as Vph1-CFP positive structures that failed to inherit FM4-64. Notably, in
+If a cell does not receive a vacuole from the mother cell, the daughter cell generates a new vacuole. The observation that these new vacuoles grow to a specific size prior to generation of a bud, and that TORC1 signaling is also required, raised the possibility that that there are functional differences between newly synthesized vacuoles and inherited vacuoles. As a first approach, we tested the localization of several proteins that are involved in the TORC1 pathway, Tor1, Kog1 and Sch9. New vacuoles were defined as Vph1-CFP positive structures that failed to inherit FM4-64. Notably, in vac17Δ cells, GFP-Sch9 was defective in its localization to the new vacuoles, while the localization of Tor1 and Kog1 were unaffected (Figure 5A,B). To directly address whether Sch9 is eventually recruited to the newly formed vacuole and when this occurs, we correlated the presence of fluorescent signals for Vph1-CFP, Tor1-3xGFP and GFP-Sch9 (Figure 5C,D). These analyses show that Sch9 recruitment to the newly formed vacuole is slower than the recruitment of Vph1 and Tor1. Specifically, small budded cells did not have fluorescent signals for any of the proteins, which indicates that these small buds do not have a vacuole (Figure 5C–F). As the bud increases in size, in most cases, Vph1-CFP and Tor1-3xGFP appeared simultaneously (Figure 5C). This indicates that Tor1-3xGFP is immediately recruited to the newly formed vacuoles. Moreover in some small budded cells, Tor1-3xGFP was present without Vph1-CFP, which suggests that Tor1 may be present at endosomes in these small budded cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08160/elife-08160-fig5-v2.jpg)
 
-**Figure 5.:** (A) Sch9 does not localize to the newly formed vacuole. Indicated plasmids were transformed into wild-type and vac17Δ strains, which express Vph1-CFP from its endogenous locus: pRS416 GFP-SCH9, pRS416 TOR1-3xGFP, or pRS416 (D330)KOG1-3xGFP. Transformed cells were pulse labeled with FM4-64. Open arrowheads indicate a newly formed vacuole (Vph1-CFP) that was not inherited (lack of FM4-64), and is lacking GFP-Sch9. Closed arrowheads indicate a newly formed vacuole (Vph1-CFP) that was not inherited (lack of FM4-64), and with the GFP fusion protein, either Tor1-3xGFP(D330) or Kog1-3xGFP. (B) Quantification of cells with fluorescence (Vph1-CFP and/or GFP) in daughter cells, where the mother has both GFP and FM4-64 signals. Averages from two independent experiments, with n = 69 and n = 104 for GFP-Sch9, n = 166 and n = 110 for Tor1-3xGFP(D330), and n = 106 and n = 126 cells for Kog1-3xGFP, respectively. Open circles and squares indicate results of each experiment. (C) Tor1 is immediately recruited to the newly formed vacuoles. FM4-64 labeled vac17Δ cells that express Vph1-CFP from its endogenous locus, and Tor1-3xGFP expressed from a CEN plasmid with its endogenous promoter were used. Most small budded cells do not have fluorescent signals for any of the proteins, indicating that these small buds do not have a vacuole. In most cases, as the bud increases in size, Vph1-CFP and Tor1-3xGFP appear simultaneously. The middle line in the box plot indicates the median of the data set. The upper edge of the box indicates the 75th percentile of the data set, and the lower edge indicates the 25th percentile. ns; not a significant difference (p-value > 0.10); *** (p-value < 1 × 10−6). (D) Sch9 recruitment is delayed compared to Tor1, but eventually occurs. FM4-64 labeled vac17Δ cells expresses Vph1-CFP from its endogenous locus, and GFP-Sch9 expressed from a CEN plasmid with its endogenous promoter were used. In medium sized buds (0.62(±0.14) daughter size/mother size) only Vph1-CFP is present. The average bud size where both Vph1 and Sch9 are present is 0.79(±0.11). (E) Recruitment of Sch9-2D3E to the new vacuole is similar to the recruitment of wild-type Sch9. FM4-64 labeled vac17Δ cells which express Vph1-CFP from its endogenous locus, and GFP-Sch9-2D3E expressed from a CEN plasmid with its endogenous promoter were used. (F) The timing of the recruitment of Fab1 was similar to that observed for Sch9. FM4-64 labeled vac17Δ cells which express Vph1-CFP from its endogenous locus, and Fab1-3xGFP expressed from a CEN plasmid with its endogenous promoter were used. In medium sized buds (0.57(±0.13) daughter size/mother size) only Vph1-CFP is present. The average bud size where both Vph1 and Fab1 are present is 0.76(±0.10). (G) Model: The vacuole is essential for cell-cycle progression and functions in part through the TORC1 pathway. When the daughter cell receives vacuoles from the mother cell(1), the daughter can progress from G1. If the cell fails to inherit a vacuole(2), the cell generates a new vacuole(3), which is followed by maturation of the new vacuole prior to G1 progression(4). Without a functional vacuole, the daughter cell arrests at G1 phase(5).DOI: http://dx.doi.org/10.7554/eLife.08160.011
+**Figure 5.:** (A) Sch9 does not localize to the newly formed vacuole. Indicated plasmids were transformed into wild-type and vac17Δ strains, which express Vph1-CFP from its endogenous locus: pRS416 GFP-SCH9, pRS416 TOR1-3xGFP(D330), or pRS416 KOG1-3xGFP. Transformed cells were pulse labeled with FM4-64. Open arrowheads indicate a newly formed vacuole (Vph1-CFP) that was not inherited (lack of FM4-64), and is lacking GFP-Sch9. Closed arrowheads indicate a newly formed vacuole (Vph1-CFP) that was not inherited (lack of FM4-64), and with the GFP fusion protein, either Tor1-3xGFP(D330) or Kog1-3xGFP. (B) Quantification of cells with fluorescence (Vph1-CFP and/or GFP) in daughter cells, where the mother has both GFP and FM4-64 signals. Averages from two independent experiments, with n = 69 and n = 104 for GFP-Sch9, n = 166 and n = 110 for Tor1-3xGFP(D330), and n = 106 and n = 126 cells for Kog1-3xGFP, respectively. Open circles and squares indicate results of each experiment. (C) Tor1 is immediately recruited to the newly formed vacuoles. FM4-64 labeled vac17Δ cells that express Vph1-CFP from its endogenous locus, and Tor1-3xGFP expressed from a CEN plasmid with its endogenous promoter were used. Most small budded cells do not have fluorescent signals for any of the proteins, indicating that these small buds do not have a vacuole. In most cases, as the bud increases in size, Vph1-CFP and Tor1-3xGFP appear simultaneously. The middle line in the box plot indicates the median of the data set. The upper edge of the box indicates the 75th percentile of the data set, and the lower edge indicates the 25th percentile. ns; not a significant difference (p-value > 0.10); *** (p-value < 1 × 10−6). (D) Sch9 recruitment is delayed compared to Tor1, but eventually occurs. FM4-64 labeled vac17Δ cells expresses Vph1-CFP from its endogenous locus, and GFP-Sch9 expressed from a CEN plasmid with its endogenous promoter were used. In medium sized buds (0.62(±0.14) daughter size/mother size) only Vph1-CFP is present. The average bud size where both Vph1 and Sch9 are present is 0.79(±0.11). (E) Recruitment of Sch9-2D3E to the new vacuole is similar to the recruitment of wild-type Sch9. FM4-64 labeled vac17Δ cells which express Vph1-CFP from its endogenous locus, and GFP-Sch9-2D3E expressed from a CEN plasmid with its endogenous promoter were used. (F) The timing of the recruitment of Fab1 was similar to that observed for Sch9. FM4-64 labeled vac17Δ cells which express Vph1-CFP from its endogenous locus, and Fab1-3xGFP expressed from a CEN plasmid with its endogenous promoter were used. In medium sized buds (0.57(±0.13) daughter size/mother size) only Vph1-CFP is present. The average bud size where both Vph1 and Fab1 are present is 0.76(±0.10). (G) Model: The vacuole is essential for cell-cycle progression and functions in part through the TORC1 pathway. When the daughter cell receives vacuoles from the mother cell(1), the daughter can progress from G1. If the cell fails to inherit a vacuole(2), the cell generates a new vacuole(3), which is followed by maturation of the new vacuole prior to G1 progression(4). Without a functional vacuole, the daughter cell arrests at G1 phase(5).
 
 In the vac17Δ mutant, although Tor1-3xGFP and Vph1-CFP are both present on the new vacuoles in medium buds (approximately 0.6 daughter size/mother size) (Figure 5C), GFP-Sch9 was generally not present until the bud size was larger (approximately 0.8) (Figure 5D). Thus Sch9 recruitment is delayed compared to Vph1 and Tor1, but eventually occurs. Notably the recruitment of the Sch9-2D3E mutant was similar to the recruitment of wild-type Sch9 (Figure 5E), indicating that the growth suppression of the vac17Δ tor1Δ mutant by sch9-2D3E is not due to a faster recruitment to the vacuole.
 
@@ -115,17 +115,443 @@ Together, these observations demonstrate that a functional vacuole is crucial fo
 
 ## Materials and methods
 
-## Yeast strain and media
+### Yeast strain and media
 
-Yeast strains used are in Table 1. Deletion and fusion strains were constructed as described (Longtine et al., 1998). A vac17Δ pep12-60tsf double mutant strain was made through mating pep12-60tsf (CBY9) (Burd et al., 1997) with vac17Δ (LWY5798) (Ishikawa et al., 2003). To generate a GFP-PEP12::natNT2 strain, a ClaI-ApaI fragment from pBlueScript SK+ (pBS) GFP-PEP12::natNT2 vector was integrated into the PEP12 locus. Yeast cultures were grown at 24°C unless stated otherwise. Yeast extract-peptone-dextrose (1% yeast extract, 2% peptone, 2% dextrose; YEPD), synthetic complete (SC) lacking the appropriate supplement(s), and 5-FOA media were made as described (Kaiser et al., 1994). Unless stated otherwise, SC medium contained 2% dextrose.10.7554/eLife.08160.012Table 1.Yeast strains used in this studyDOI: http://dx.doi.org/10.7554/eLife.08160.012StrainGenotypeSourceFigureLWY7235MATa, ura3-52, leu2-3,-112, his3-Δ200, trp1-Δ901, lys2-801, suc2-Δ9(Bonangelino et al., 1997)–LWY11678MATa, VPH1-GFP::KanMXThis studyFigures 1, 2, 4, Figure 1—figure supplement 1LWY12144MATa, VPH1-GFP::KanMX, vac17Δ::TRP1This studyFigures 1, 2, 4, Figure 1—figure supplement 1LWY15258MATa/α, VAC17/vac17Δ::TRP1, PEP12/pep12Δ::KanMXThis studyFigure 2LWY15612MATa/α, VAC17/vac17Δ::TRP1, VPS45/vps45Δ::KanMXThis studyFigure 2LWY14490MATa, VPH1-GFP::KanMX, pep12Δ::KanMXThis studyFigure 2LWY14493MATa, VPH1-GFP::KanMX, vac17Δ::TRP1, pep12Δ::KanMXThis studyFigure 2LWY15515MATa, GFP-PEP12::natNT2, VPH1-CFP::KanMXThis studyFigure 2LWY15506MATa, GFP-PEP12::natNT2, VPH1-CFP::KanMX, vac17Δ::TRP1This studyFigure 2LWY15263, LWY14462, LWY12369MATaThis studyFigures 3, 4, Figure 3—figure supplement 1LWY5798MATa, vac17Δ::TRP1(Tang et al., 2003)–LWY15244, LWY14468, LWY12366MATa, vac17Δ::TRP1This studyFigures 3, 4, Figure 3—figure supplement 1CBY9MATα, pep12-60tsf, leu2-3,112::pBHY11 CPY-Inv LEU2(Burd et al., 1997)–LWY15250MATa, pep12-60tsfThis studyFigure 3, Figure 3—figure supplement 1LWY15249MATa, vac17Δ::TRP1, pep12-60tsfThis studyFigure 3, Figure 3—figure supplement 1LWY15799MATa, WHI5-3xGFP::His3MXThis studyFigure 3, Figure 3—figure supplement 1LWY15791MATa, WHI5-3xGFP::His3MX, vac17Δ::TRP1This studyFigure 3, Figure 3—figure supplement 1LWY15789MATa, WHI5-3xGFP::His3MX, pep12-60tsfThis studyFigure 3, Figure 3—figure supplement 1LWY15814MATα, WHI5-3xGFP::His3MX, vac17Δ::TRP1, pep12-60tsfThis studyFigure 3, Figure 3—figure supplement 1LWY12364MATa, tor1Δ::KanMXThis studyFigure 4LWY12367MATα, vac17Δ::TRP1, tor1Δ::KanMXThis studyFigure 4LWY12168MATa, VPH1-GFP::KanMX, tor1Δ::KanMXThis studyFigure 4LWY12193MATa, VPH1-GFP::KanMX, vac17Δ::TRP1, tor1Δ::KanMXThis studyFigure 4LWY14142MATa, vac17Δ::TRP1, tor1Δ::KanMX, pRS416 TOR1This studyFigure 4LWY12358, LWY14487MATa, vac17Δ::TRP1, pep12Δ::KanMXThis studyFigure 4, Figure 3—figure supplement 1LWY11657MATa, VPH1-CFP::KanMXThis studyFigure 5LWY13781MATa, VPH1-CFP::KanMX, vac17Δ::TRP1This studyFigure 5LWY15610MATa/α, VAC8/vac8Δ::HIS3, PEP12/pep12Δ::KanMXThis studyFigure 2—figure supplement 1LWY15614MATa/α, VAC8/vac8Δ::HIS3, VPS45/vps45Δ::KanMXThis studyFigure 2—figure supplement 1LWY2947MATα, myo2Δ::TRP1, YCp50-MYO2(Catlett and Weisman, 1998)Figure 2—figure supplement 1, Figure 4—figure supplement 1LWY12443MATα, pep12Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2This studyFigure 2—figure supplement 1LWY15581MATα, vps45Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2This studyFigure 2—figure supplement 1LWY14497MATa, pep12Δ::KanMXThis studyFigure 3—figure supplement 1LWY14475MATa, vps45Δ::KanMXThis studyFigure 3—figure supplement 1LWY14463MATa, vac17Δ::TRP1, vps45Δ::KanMXThis studyFigure 3—figure supplement 1LWY1MATa/α, TOR1/tor1Δ::KanMXThis studyFigure 4—figure supplement 1LWY15616MATa/α, VAC8/vac8Δ::HIS3, TOR1/tor1Δ::KanMXThis studyFigure 4—figure supplement 1LWY12001MATa, tor1Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2This studyFigure 4—figure supplement 1LWY13595MATa, vac17Δ::TRP1, kog1Δ::KanMX, pRS316 KOG1This studyFigure 4—figure supplement 1Each above haploid strain is ura3-52, leu2-3,-112, his3-Δ200, trp1-Δ901, lys2-801, suc2-Δ9, and diploid strain is ura3-52/ura3-52, leu2-3,-112/leu2-3,-112, his3-Δ200/his3-Δ200, trp1-Δ901/trp1-Δ901, lys2-801/lys2-801, suc2-Δ9/suc2-Δ9.
+Yeast strains used are in Table 1. Deletion and fusion strains were constructed as described (Longtine et al., 1998). A vac17Δ pep12-60tsf double mutant strain was made through mating pep12-60tsf (CBY9) (Burd et al., 1997) with vac17Δ (LWY5798) (Ishikawa et al., 2003). To generate a GFP-PEP12::natNT2 strain, a ClaI-ApaI fragment from pBlueScript SK+ (pBS) GFP-PEP12::natNT2 vector was integrated into the PEP12 locus. Yeast cultures were grown at 24°C unless stated otherwise. Yeast extract-peptone-dextrose (1% yeast extract, 2% peptone, 2% dextrose; YEPD), synthetic complete (SC) lacking the appropriate supplement(s), and 5-FOA media were made as described (Kaiser et al., 1994). Unless stated otherwise, SC medium contained 2% dextrose.
 
-## In vivo labeling of vacuoles
+**Table 1.**
+ Yeast strains used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Source</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LWY7235</td>
+      <td>MATa, ura3-52, leu2-3,-112, his3-Δ200, trp1-Δ901, lys2-801, suc2-Δ9</td>
+      <td>(Bonangelino et al., 1997)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LWY11678</td>
+      <td>MATa, VPH1-GFP::KanMX</td>
+      <td>This study</td>
+      <td>Figures 1, 2, 4, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY12144</td>
+      <td>MATa, VPH1-GFP::KanMX, vac17Δ::TRP1</td>
+      <td>This study</td>
+      <td>Figures 1, 2, 4, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15258</td>
+      <td>MATa/α, VAC17/vac17Δ::TRP1, PEP12/pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY15612</td>
+      <td>MATa/α, VAC17/vac17Δ::TRP1, VPS45/vps45Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY14490</td>
+      <td>MATa, VPH1-GFP::KanMX, pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY14493</td>
+      <td>MATa, VPH1-GFP::KanMX, vac17Δ::TRP1, pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY15515</td>
+      <td>MATa, GFP-PEP12::natNT2, VPH1-CFP::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY15506</td>
+      <td>MATa, GFP-PEP12::natNT2, VPH1-CFP::KanMX, vac17Δ::TRP1</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>LWY15263, LWY14462, LWY12369</td>
+      <td>MATa</td>
+      <td>This study</td>
+      <td>Figures 3, 4, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY5798</td>
+      <td>MATa, vac17Δ::TRP1</td>
+      <td>(Tang et al., 2003)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LWY15244, LWY14468, LWY12366</td>
+      <td>MATa, vac17Δ::TRP1</td>
+      <td>This study</td>
+      <td>Figures 3, 4, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>CBY9</td>
+      <td>MATα, pep12-60tsf, leu2-3,112::pBHY11 CPY-Inv LEU2</td>
+      <td>(Burd et al., 1997)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LWY15250</td>
+      <td>MATa, pep12-60tsf</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15249</td>
+      <td>MATa, vac17Δ::TRP1, pep12-60tsf</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15799</td>
+      <td>MATa, WHI5-3xGFP::His3MX</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15791</td>
+      <td>MATa, WHI5-3xGFP::His3MX, vac17Δ::TRP1</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15789</td>
+      <td>MATa, WHI5-3xGFP::His3MX, pep12-60tsf</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15814</td>
+      <td>MATα, WHI5-3xGFP::His3MX, vac17Δ::TRP1, pep12-60tsf</td>
+      <td>This study</td>
+      <td>Figure 3, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY12364</td>
+      <td>MATa, tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>LWY12367</td>
+      <td>MATα, vac17Δ::TRP1, tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>LWY12168</td>
+      <td>MATa, VPH1-GFP::KanMX, tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>LWY12193</td>
+      <td>MATa, VPH1-GFP::KanMX, vac17Δ::TRP1, tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>LWY14142</td>
+      <td>MATa, vac17Δ::TRP1, tor1Δ::KanMX, pRS416 TOR1</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>LWY12358, LWY14487</td>
+      <td>MATa, vac17Δ::TRP1, pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4, Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY11657</td>
+      <td>MATa, VPH1-CFP::KanMX</td>
+      <td>This study</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>LWY13781</td>
+      <td>MATa, VPH1-CFP::KanMX, vac17Δ::TRP1</td>
+      <td>This study</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>LWY15610</td>
+      <td>MATa/α, VAC8/vac8Δ::HIS3, PEP12/pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15614</td>
+      <td>MATa/α, VAC8/vac8Δ::HIS3, VPS45/vps45Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY2947</td>
+      <td>MATα, myo2Δ::TRP1, YCp50-MYO2</td>
+      <td>(Catlett and Weisman, 1998)</td>
+      <td>Figure 2—figure supplement 1, Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY12443</td>
+      <td>MATα, pep12Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2</td>
+      <td>This study</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15581</td>
+      <td>MATα, vps45Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2</td>
+      <td>This study</td>
+      <td>Figure 2—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY14497</td>
+      <td>MATa, pep12Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY14475</td>
+      <td>MATa, vps45Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY14463</td>
+      <td>MATa, vac17Δ::TRP1, vps45Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY1</td>
+      <td>MATa/α, TOR1/tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY15616</td>
+      <td>MATa/α, VAC8/vac8Δ::HIS3, TOR1/tor1Δ::KanMX</td>
+      <td>This study</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY12001</td>
+      <td>MATa, tor1Δ::KanMX, myo2Δ::TRP1, YCp50-MYO2</td>
+      <td>This study</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>LWY13595</td>
+      <td>MATa, vac17Δ::TRP1, kog1Δ::KanMX, pRS316 KOG1</td>
+      <td>This study</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each above haploid strain is ura3-52, leu2-3,-112, his3-Δ200, trp1-Δ901, lys2-801, suc2-Δ9, and diploid strain is ura3-52/ura3-52, leu2-3,-112/leu2-3,-112, his3-Δ200/his3-Δ200, trp1-Δ901/trp1-Δ901, lys2-801/lys2-801, suc2-Δ9/suc2-Δ9._
+
+### In vivo labeling of vacuoles
 
 Vacuoles were labeled in vivo with N-(3-triethelammoniumpropyl)-4-(6 (4-(diethylamino) phenyl) hexatrienyl) pyridinium dibromide (FM4-64 [SynaptoRed C2]; Biotium, Hayward, CA, United States) essentially as described (Ishikawa et al., 2003). In brief, a 2 mg/ml stock solution of FM4-64 in dimethyl sulfoxide was added to early log phase cultures for a final concentration of 80 μM. After 1 hr of labeling, cells were washed and then chased in fresh liquid medium for 3–4 hr.
 
-## Plasmids
+### Plasmids
 
-Plasmids used are in Table 2. To generate an integration vector to express GFP fused to Pep12 from the PEP12 gene locus, pBS GFP-PEP12::natNT2 was made. A 1.4 kb ClaI-BstBI fragment of PEP12 was inserted at the ClaI site of pBS. To insert GFP at the N-terminus of Pep12, an AvrII site was generated at the N-terminus of PEP12 by PCR using primers (5′-CAA TAA TTG TGT TGA GAT Gcc tag gTC GGA AGA CGA ATT TTT TGG-3′) and (5′-CCA AAA AAT TCG TCT TCC GAc cta ggC ATC TCA ACA CAA TTA TTG-3′). The GFP fragment was amplified from pFA6a GFP(S65T)-KanMX (Longtine et al., 1998) by PCR using primers (5′-TGA gct agc AGT AAA GGA GAA GAA CTT TTC ACT GG-3′) and (5′-TGA act agt gtt aat taa ccc ggg gat ccg tcg acc TTT GTA TAG TTC ATC CAT GCC-3′). The NheI-SpeI fragment of GFP was inserted at the AvrII site. The natNT2 maker was amplified from pFA6a natNT2 (Janke et al., 2004) by PCR using primers (5′-CTG tgt aca CAG CGA CAT GGA GGC-3′) and (5′-TCA tgt aca ACA GGT GTT GTC CTC TGA G-3′). A BsrGI fragment of natNT2 was inserted into the BsrGI site at 3′ UTR of the PEP12.10.7554/eLife.08160.013Table 2.Plasmids used in this studyDOI: http://dx.doi.org/10.7554/eLife.08160.013Plasmid nameDescriptionSourceFigurepBlueScript SK+ GFP-PEP12::natNT2AmpThis studyFigure 2pRS416 TOR1CEN, URA3This studyFigure 4pRS413CEN, HIS3(Sikorski and Hieter, 1989)Figure 4pRS315 HA-TOR1CEN, HIS3Gift from Dr Robbie LoewithFigure 4pRS315 HA-tor1-D2275ACEN, HIS3This studyFigure 4pRS315 HA-tor1-D2294ECEN, HIS3This studyFigure 4pRS413 VAC17CEN, HIS3This studyFigure 4pRS413 TOR1CEN, HIS3This studyFigure 4pVT102-H2μ, HIS3(Vernet et al., 1987)Figure 4pVT102-H SCH92μ, HIS3This studyFigure 4pVT102-H sch9-2D3E2μ, HIS3This studyFigure 4pVT102-H sch9-5A2μ, HIS3This studyFigure 4pRS416 GFP-SCH9CEN, URA3(Urban et al., 2007)Figure 5pRS416 GFP-sch9-2D3ECEN, URA3This studyFigure 5pRS416 TOR1-3xGFP(D330)CEN, URA3This studyFigure 5pRS416 KOG1-3xGFPCEN, URA3This studyFigure 5pRS416 FAB1-3xGFPCEN, URA3(Jin et al., 2008)Figure 5pRS413CEN, HIS3(Sikorski and Hieter, 1989)Figure 2—figure supplement 1, Figure 4—figure supplement 1pRS413 MYO2CEN, HIS3(Catlett and Weisman, 1998)Figure 2—figure supplement 1, Figure 4—figure supplement 1pRS413 myo2-N1304DCEN, HIS3(Catlett et al., 2000)Figure 2—figure supplement 1, Figure 4—figure supplement 1pRS416 KOG1CEN, URA3(Jin et al., 2014)Figure 4—figure supplement 1pRS313CEN, HIS3(Sikorski and Hieter, 1989)Figure 4—figure supplement 1pRS415CEN, LEU2(Sikorski and Hieter, 1989)Figure 4—figure supplement 1pRS415 VAC17CEN, LEU2(Jin et al., 2009)Figure 4—figure supplement 1pRS313 KOG1CEN, HIS3(Nakashima et al., 2008)Figure 4—figure supplement 1pRS313 kog1-105CEN, HIS3(Nakashima et al., 2008)Figure 4—figure supplement 1
+Plasmids used are in Table 2. To generate an integration vector to express GFP fused to Pep12 from the PEP12 gene locus, pBS GFP-PEP12::natNT2 was made. A 1.4 kb ClaI-BstBI fragment of PEP12 was inserted at the ClaI site of pBS. To insert GFP at the N-terminus of Pep12, an AvrII site was generated at the N-terminus of PEP12 by PCR using primers (5′-CAA TAA TTG TGT TGA GAT Gcc tag gTC GGA AGA CGA ATT TTT TGG-3′) and (5′-CCA AAA AAT TCG TCT TCC GAc cta ggC ATC TCA ACA CAA TTA TTG-3′). The GFP fragment was amplified from pFA6a GFP(S65T)-KanMX (Longtine et al., 1998) by PCR using primers (5′-TGA gct agc AGT AAA GGA GAA GAA CTT TTC ACT GG-3′) and (5′-TGA act agt gtt aat taa ccc ggg gat ccg tcg acc TTT GTA TAG TTC ATC CAT GCC-3′). The NheI-SpeI fragment of GFP was inserted at the AvrII site. The natNT2 maker was amplified from pFA6a natNT2 (Janke et al., 2004) by PCR using primers (5′-CTG tgt aca CAG CGA CAT GGA GGC-3′) and (5′-TCA tgt aca ACA GGT GTT GTC CTC TGA G-3′). A BsrGI fragment of natNT2 was inserted into the BsrGI site at 3′ UTR of the PEP12.
+
+**Table 2.**
+ Plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid name</th>
+      <th>Description</th>
+      <th>Source</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pBlueScript SK+ GFP-PEP12::natNT2</td>
+      <td>Amp</td>
+      <td>This study</td>
+      <td>Figure 2</td>
+    </tr>
+    <tr>
+      <td>pRS416 TOR1</td>
+      <td>CEN, URA3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS413</td>
+      <td>CEN, HIS3</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS315 HA-TOR1</td>
+      <td>CEN, HIS3</td>
+      <td>Gift from Dr Robbie Loewith</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS315 HA-tor1-D2275A</td>
+      <td>CEN, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS315 HA-tor1-D2294E</td>
+      <td>CEN, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS413 VAC17</td>
+      <td>CEN, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS413 TOR1</td>
+      <td>CEN, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pVT102-H</td>
+      <td>2μ, HIS3</td>
+      <td>(Vernet et al., 1987)</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pVT102-H SCH9</td>
+      <td>2μ, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pVT102-H sch9-2D3E</td>
+      <td>2μ, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pVT102-H sch9-5A</td>
+      <td>2μ, HIS3</td>
+      <td>This study</td>
+      <td>Figure 4</td>
+    </tr>
+    <tr>
+      <td>pRS416 GFP-SCH9</td>
+      <td>CEN, URA3</td>
+      <td>(Urban et al., 2007)</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>pRS416 GFP-sch9-2D3E</td>
+      <td>CEN, URA3</td>
+      <td>This study</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>pRS416 TOR1-3xGFP(D330)</td>
+      <td>CEN, URA3</td>
+      <td>This study</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>pRS416 KOG1-3xGFP</td>
+      <td>CEN, URA3</td>
+      <td>This study</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>pRS416 FAB1-3xGFP</td>
+      <td>CEN, URA3</td>
+      <td>(Jin et al., 2008)</td>
+      <td>Figure 5</td>
+    </tr>
+    <tr>
+      <td>pRS413</td>
+      <td>CEN, HIS3</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+      <td>Figure 2—figure supplement 1, Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS413 MYO2</td>
+      <td>CEN, HIS3</td>
+      <td>(Catlett and Weisman, 1998)</td>
+      <td>Figure 2—figure supplement 1, Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS413 myo2-N1304D</td>
+      <td>CEN, HIS3</td>
+      <td>(Catlett et al., 2000)</td>
+      <td>Figure 2—figure supplement 1, Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS416 KOG1</td>
+      <td>CEN, URA3</td>
+      <td>(Jin et al., 2014)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS313</td>
+      <td>CEN, HIS3</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS415</td>
+      <td>CEN, LEU2</td>
+      <td>(Sikorski and Hieter, 1989)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS415 VAC17</td>
+      <td>CEN, LEU2</td>
+      <td>(Jin et al., 2009)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS313 KOG1</td>
+      <td>CEN, HIS3</td>
+      <td>(Nakashima et al., 2008)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>pRS313 kog1-105</td>
+      <td>CEN, HIS3</td>
+      <td>(Nakashima et al., 2008)</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+  </tbody>
+</table>
 
 pRS416 TOR1 includes 227 bp upstream and 944 bp downstream of the TOR1 gene, the same region as pRS315 HA-TOR1 (gift from Dr Robbie Loewith).
 
@@ -139,6 +565,6 @@ For generation of pRS416 TOR1-3xGFP(D330), an XbaI site was generated at the D33
 
 For generation of pRS416 KOG1-3xGFP, an XbaI site was generated at the C-terminal end of KOG1 by PCR using primers (5′-GAG AAT TGA TTA TTT Ttc tag aTA TGT GCC ATT TCT TTT TTT TTC-3′) and (5′-GAA AAA AAA AGA AAT GGC ACA TAt cta gaA AAA TAA TCA ATT CTC-3′). The 3xGFP fragment was amplified by PCR using primers (5′-TCT AGA GGG TTA ATT tct aga AGC AAG GGC GAG GAG C-3′) and (5′-AAT CTC GAG gct agc GTT AAT TAA CCC GGG GAT CCG TCG ACC-3′). The XbaI-NheI fragment of 3xGFP was inserted at the XbaI site (Jin et al., 2014).
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Quantitation of nuclear DNA was determined as follows: Cells were stained with PI and analyzed by FACS analysis (MACSQuant 1; Miltenyi Biotec, Germany). In most experiments, 10,000 cells were examined. Yeast were incubated at 24°C overnight, and then sifted to 37°C for 0, 2, 4, 8, 12, or 24 hr. At the start of the experiment, yeast were in log phase growth. 1.0 OD600 yeast cultures were collected, washed with 50 mM of Tris-HCl [pH7.5], and fixed with 70% EtOH. Cells were then washed twice with 50 mM of Tris-HCl [pH7.5], followed by sonication. Cells were treated with RNaseA (Sigma–Aldrich R6513; final 2 mg/ml in 50 mM of Tris-HCl [pH7.5]) at 37°C overnight. Cells were then treated with Pepsin (Sigma–Aldrich 7000; final 5 mg/ml) at room temperature for 30 min, and stained with PI (Sigma–Aldrich 4170) 50 mg/ml in 180 mM Tris-HCl [pH7.5], 180 mM NaCl, 70 mM MgCl2 for 1 hr at room temperature. The PI stained cells were analyzed by FACS.

@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00eae9z71 School of Psychology, College of Engineering, Science and the Environment, University of Newcastle Newcastle Australia
-2. https://ror.org/0020x6414 Hunter Medical Research Institute Newcastle Australia
-3. https://ror.org/047272k79 School of Psychological Sciences, University of Western Australia Perth Australia
-4. https://ror.org/03r8z3t63 School of Psychiatry, University of New South Wales Kensington Australia
-5. https://ror.org/00eae9z71 School of Medicine and Public Health, College of Medicine, Health and Wellbeing, University of Newcastle Newcastle Australia
+1. School of Psychology, College of Engineering, Science and the Environment, University of Newcastle Newcastle Australia ([ROR:00eae9z71](https://ror.org/00eae9z71))
+2. Hunter Medical Research Institute Newcastle Australia ([ROR:0020x6414](https://ror.org/0020x6414))
+3. School of Psychological Sciences, University of Western Australia Perth Australia ([ROR:047272k79](https://ror.org/047272k79))
+4. School of Psychiatry, University of New South Wales Kensington Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+5. School of Medicine and Public Health, College of Medicine, Health and Wellbeing, University of Newcastle Newcastle Australia ([ROR:00eae9z71](https://ror.org/00eae9z71))
 
 † Corresponding author
 
@@ -42,33 +42,89 @@ We first analysed dynamic facial expressions from video recordings of 27 partici
 
 From these data, we used the continuous wavelet transform to extract a time-frequency representation of individual action unit time series in each participant. To test whether this time-frequency representation captures high-frequency dynamic content, we first compared the group average of these individual time-frequency representations with the time-frequency representation of the group mean time series. We selected the activity of action unit 12 ‘Lip Corner Puller’ during a positive valence video clip (a ‘talking dog’), as this action unit is conventionally associated with happy affect, and its high-frequency activity denotes smiling or laughing. Compared to the group mean time series, the time series of individuals had significantly greater amplitude (Figure 1b), particularly at higher frequencies (Figure 1f). This demonstrates that the time-frequency representations of individual participants capture high-frequency dynamics that are obscured by characterising group-averaged time courses. This is because stimulus-evoked facial action unit responses have asynchronous alignment across participants, hence cancelling when superimposed. This problem is avoided in the group-level time-frequency representation, whereby the amplitude is first extracted at the individual level, prior to group averaging. Comparable results occurred in all action units (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig1-v2.jpg)
+
+**Figure 1.:** (a) Example participant’s facial reactions at two time points, corresponding to high and low activation of action unit 12. (b) Action unit time series for five example participants (blue). Bold line corresponds to the participant shown in panel (a), and black arrows indicate time points corresponding to the representative pictures. The group mean time course across all participants is shown in red. Red arrows indicate funny moments in the stimulus, evoking sudden facial changes in individual participants. These changes are less prominent in the group mean time course. (c) Time-frequency representation for the same five participants, calculated as the amplitude of the continuous wavelet transform. Intuitively, the heatmap colour indicates how much of each frequency is present at each time point. Shading indicates the cone of influence – the region contaminated by edge effects. (d) Mean of all participants’ time-frequency representations. Red arrows correspond to time points with marked high-frequency activity above 1 Hz (e) Time-frequency representation of the group mean time course. (f) Difference between (d) and (e). Non-significant differences (p>0.05) are shown in greyscale. Common colour scale is used for (d–f).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Vertical lines demarcate video clips described in Supplementary file 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Shading indicates the cone of influence. Vertical lines demarcate video clips described in Supplementary file 1.
+
 Having shown how the time-frequency representation captures dynamic content, we next sought to quantify the joint dynamics of facial action units. To this end, an HMM was inferred from the time course of all facial action units’ time-frequency representations. An HMM infers a set of distinct states from noisy observations, with each state expressed sequentially in time according to state-to-state transition probabilities. Each state has a distinct mapping onto the input space, here the space of frequency bands and action units (see Figure 2 for a visual overview of the entire pipeline, Figure 3a for the HMM states derived from the DISFA dataset).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig2-v2.jpg)
 
 **Figure 2.:** (a) Participant’s facial responses while viewing a naturalistic stimulus. (b) OpenFace extracts the time series for each action unit. (c) The continuous wavelet transform produces a time-frequency representation of the same data. (d) A hidden Markov model infers dynamic facial states common to all participants. Each state has a unique distribution over action units and frequency bands.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig3-v2.jpg)
+
+**Figure 3.:** (a) Mean of the observation model for each state, showing their mapping onto action units and frequency bands. Avatar faces (top row) for each state show the relative contribution of each action unit, whereas their spectral projection (bottom row) shows their corresponding dynamic content. (b) Sequence of most likely states for each participant at each time point. Vertical lines demarcate transition between stimulus clips with different affective annotations. (c) Most common states across participants, using a 4 s sliding temporal window. (d) Proportion of participants expressing the most common state. Blue shading indicates 5–95% bootstrap confidence bands for the estimate. Grey shading indicates the 95th percentile for the null distribution, estimated using time-shifted surrogate data. (e) Transition probabilities displayed as a weighted graph. Each node corresponds to a state. Arrow thickness indicates the transition probability between states. For visualisation clarity, only the top 20% of transition probabilities are shown. States are positioned according to a force-directed layout where edge length is the inverse of the transition probability.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Free energy continues to decrease as the number of states increases (logarithmic scale).
+
 Examples of participants in each state are provided Figure 3—videos 1–19. Their occurrence corresponded strongly with annotated video clip valence (Figure 3b). We found that inferred state sequences had high between-subject consistency, exceeding chance level across the vast majority of time points and reaching 93% during specific movie events (Figure 3d). States were frequency-localised and comprised intuitive combinations of action units which reflected not only distinct emotion categories as defined in previous literature (Friesen and Ekman, 1983), but also stimulus properties such as mixed emotions. State transition probabilities appeared clustered by valence rather than frequency, such that frequent transitions between low- and high-frequency oscillations of the same facial action units were more likely than transitions between different emotions (Figure 3e).
 
-## Facial affect in melancholia
+### Facial affect in melancholia
 
 We next analysed facial video recordings from a cohort of participants with melancholic depression and healthy controls who watched three video clips consecutively – a stand-up comedy, a sad movie clip, and a non-English language video which is initially puzzling but also amusing. These three stimuli were chosen from a database of independently rated videos of high salience (Guo et al., 2016). The stand-up comedy comprises episodic jokes with a deadpan delivery and audience laughter, whereas the weather report depicts someone speaking a foreign language and eventually laughing uncontrollably, although the reason remains unclear to the viewer. Clinical participants with melancholia were recruited from a tertiary mood disorders clinic and met melancholia criteria including psychomotor changes, anhedonia, and diurnal mood variation (see Materials and methods). We conducted analyses based firstly on group-averaged time courses, and then on the time-frequency representation.
 
-## Group time courses in melancholia
+### Group time courses in melancholia
 
 Facial action unit time courses showed clear group differences (see Figure 4 for action units typically implicated in expressing happiness and sadness, and Figure 4—figure supplement 3 for all action units). For each action unit in each participant, we calculated the median action unit activation across each stimulus video. These were compared with a three-way ANOVA, with factors for clinical group, stimulus, and the facial valence. We considered two stimulus videos, one with positive and one with negative valence, and two facial valence states, happiness and sadness, calculated as sums of positively and negatively valenced action unit activations, respectively (Friesen and Ekman, 1983). A significant three-way interaction was found between clinical group, stimulus, and facial valence (p=0.003). Post hoc comparisons with Tukey’s honestly significant difference criterion (Figure 4—figure supplement 1) quantified that during stand-up comedy, participants with melancholia had reduced activation of action unit 12 ‘Lip Corner Puller’ (p<0.0001) and increased activation of action unit 4 ‘Brow Lowerer’ (p<0.0001). Interestingly, facial responses of participants with melancholia during stand-up comedy were similar to those of controls during the sad movie (p>0.05 for both action units). Results were unchanged when using the weather report stimulus instead of the stand-up comedy (p=0.005 for three-way interaction, see Figure 4—figure supplement 2 for post hoc comparisons).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig4-v2.jpg)
+
+**Figure 4.:** Shading indicates 5% and 95% confidence bands based on a bootstrap sample (n=1000). (a) Action units commonly implicated in happiness (top row) and sadness (bottom row). Participants watched stand-up comedy, a sad video, and a funny video in sequence. Vertical lines demarcate transitions between video clips. (b) First principal component of action units, shown during stand-up comedy alone. Vertical lines indicate joke annotations. Avatar face shows the relative contribution of each action unit to this component.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Post hoc comparison intervals using Tukey’s honestly significant difference criterion (p=0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Post hoc comparison intervals using Tukey’s honestly significant difference criterion (p=0.05).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Shaded confidence bands were calculated as the 5th and 95th percentile in a bootstrap sample (n=1000). Participants watched, in sequence, stand-up comedy, a sad video, and a funny video. Vertical lines demarcate transitions between video clips.
+
 To move away from individual action units, we next extracted the first principal component across all action units. The time course of this composite component closely followed joke punch lines during stand-up comedy (Figure 4b). This responsivity of this component to movie events was substantially diminished in the melancholia cohort.
 
-## Time-frequency representation in melancholia
+### Time-frequency representation in melancholia
 
 Time-frequency representations were calculated for all action units in all participants. For each action unit, the mean time-frequency representation for the control group was subtracted from the participants with melancholia (see Figure 5—figure supplement 1 for the mean of the controls). Significant group differences (p<0.05) were found by comparison to a null distribution composed of 1000 resampled surrogate datasets (see Materials and methods). Participants with melancholia had a complex pattern of reduced activity encompassing a broad range of frequencies (Figure 5a). The most prominent differences were in positive valence action units during positive valence stimuli, but significant reductions were seen in most action units. Differences in high-frequency bands occurred during specific movie events such as jokes (Figure 5b). There were sporadic instances of increased activity in melancholia participants during the sad movie involving mainly action units 15 ‘Lip Corner Depressor’ and 20 ‘Lip Stretcher’.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig5-v2.jpg)
+
+**Figure 5.:** (a) Mean time-frequency activity in melancholia benchmarked to the control group. Negative colour values (red-purple) indicate melancholia < controls (p<0.05). Non-significant group differences (p>0.05) are indicated in greyscale. Vertical lines demarcate stimulus videos. (b) Action unit 12 ‘Lip Corner Puller’ during stand-up comedy in controls, participants with melancholia, and difference between groups. Vertical lines indicate joke annotations.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Participants watched, in sequence, stand-up comedy, a sad video, and a funny video. Shading indicates the cone of influence. Vertical lines demarcate video clips.
+
 We next pursued whether the additional time-frequency information would improve the classification accuracy of differentiating participants with melancholia from controls. A support vector machine, using as inputs the mean action unit activation for each stimulus video, achieved 63% accuracy with five-fold cross-validation. In contrast, using as inputs the mean time-frequency amplitude in discrete frequency bands within 0–5 Hz improved average cross-validation accuracy to 71% (p<0.001 for difference between models). As a control for the additional number of input features, we tested a third set of models which naively modelled temporal dynamics using mean action unit activations within shorter time blocks. These models had 63–64% accuracy despite having a greater number of input features than the time-frequency representation (Supplementary file 1).
 
-## Sequential affective states in melancholia
+### Sequential affective states in melancholia
 
 Inverting a HMM from the time-frequency representations of facial action units yielded the sequential expression of eight states across participants (Figure 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig6-v2.jpg)
+
+**Figure 6.:** (a) Contribution of action units and their spectral expression to each state. Avatar faces for each state show the relative contribution of each action unit. (b) State sequence for each participant at each time point, for controls (top) and participants with melancholia (bottom). Vertical lines demarcate stimulus clips. (c) Most common state across participants, using a 4 s sliding temporal window. (d) Proportion of participants expressing the most common state for control (blue) and melancholia cohorts (black). Shading indicates 5% and 95% bootstrap confidence bands. (e) Transition probabilities displayed as a weighted graph, with the top 20% of transition probabilities shown. States are positioned according to a force-directed layout where edge length is the inverse of transition probability. (f) Differences in mean transition probabilities between participants with melancholia and controls. Each row/column represents an HMM state. Colours indicate (melancholia–controls) values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Mean of the observation model for each state. Avatar faces for each state show the relative contribution of each action unit. (b) Most likely state sequence for each participant at each time point, for controls (top) and participants with melancholia (bottom). Vertical lines demarcate stimulus clips. Without standardisation, state transitions are infrequent and transition probabilities less meaningful. (c) Most common state across participants, using a 4 s sliding temporal window. (d) Proportion of participants expressing the most common state for controls (blue) and participants with melancholia (black). Shading indicates 5% and 95% bootstrap confidence bands. (e) Transition probabilities displayed as a weighted graph. Only the top 20% of transition probabilities are shown. States are positioned according to a force-directed layout where edge length is the inverse of transition probability. (f) Differences in mean transition probabilities between participants with melancholia and controls.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/79581/elife-79581-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Contents of (a–f) are otherwise identical to Figure 6—figure supplement 1.
 
 The temporal sequence of the most common state was similar across groups (Figure 6c), but the between-subjects consistency was markedly reduced in the melancholic participants during both funny videos (Figure 6d). Some participants with melancholia – for example participants 2 and 3 (Figure 6b) – had highly anomalous state sequences compared to other participants.
 
@@ -94,23 +150,106 @@ Human emotion and affect are inherently dynamic. Our work demonstrates that mome
 
 ## Materials and methods
 
-## Data
+### Data
 
 The DISFA dataset contains facial videos recorded at 20 frames per second from 27 participants who viewed a 4 min video consisting of short emotive clips from YouTube (Mavadati et al., 2019; Supplementary file 1).
 
 The melancholia dataset comprises 30 participants with major depressive disorder who were recruited from the specialist depression clinic at the Black Dog Institute in Sydney, Australia. These participants met criteria for a current major depressive episode, were diagnosed as having the melancholic subtype by previously detailed criteria (Taylor and Fink, 2006), and did not have lifetime (hypo)mania or psychosis (Table 1). Thirty-eight matched healthy controls were recruited from the community. All participants were screened for psychotic and mood conditions with the Mini International Neuropsychiatric Interview (MINI). Exclusion criteria were current or past substance dependence, recent electroconvulsive therapy, neurological disorder, brain injury, invasive neurosurgery, or an estimated full scale IQ score (WAIS-III) below 80. Participants provided informed consent for the study. Participants watched three video clips consecutively – stand-up comedy (120 s), a sad movie clip (152 s), and a German weather report video depicting a weather reporter laughing uncontrollably (56 s). Facial video was recorded at a resolution of 800×600 pixels at 25 frames per second using an AVT Pike F-100 FireWire camera. The camera was mounted on a tripod, which was placed behind the monitor so as to record the front of the face. The height of the camera was adjusted with respect to the participant’s height when seated.
 
-## Facial action units
+**Table 1.**
+ Demographics and clinical characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Healthy controls</th>
+      <th>Melancholia</th>
+      <th>Group comparison,t or χ2, p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of participants</td>
+      <td>38</td>
+      <td>30</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Age, mean (SD)</td>
+      <td>46.5 (20.0)</td>
+      <td>46.2 (15.5)</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Sex (M:F)</td>
+      <td>13:19</td>
+      <td>17:13</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td colspan="3">Medication, % yes (n)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any psychiatric medication</td>
+      <td>7% (1)</td>
+      <td>85% (23)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Nil medication</td>
+      <td>93% (13)</td>
+      <td>15% (4)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Selective serotonin reuptake inhibitor</td>
+      <td>7% (1)</td>
+      <td>15% (4)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Dual-action antidepressant*</td>
+      <td>0% (0)</td>
+      <td>48% (13)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Tricyclic or monoamine oxidase inhibitor</td>
+      <td>0% (0)</td>
+      <td>19% (5)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Mood stabiliser†</td>
+      <td>0% (0)</td>
+      <td>11% (3)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Antipsychotic</td>
+      <td>0% (0)</td>
+      <td>33% (9)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_*For example, serotonin noradrenaline reuptake inhibitor.†For example, lithium or valproate._
+
+### Facial action units
 
 For the melancholia dataset, facial video recordings of different participants were aligned with FaceSync (Cheong et al., 2006). For both datasets, facial action unit intensities were extracted with OpenFace (Baltrusaitis et al., 2018). OpenFace uses a convolutional neural network architecture, Convolutional Experts Constrained Local Model (CE-CLM), to detect and track facial landmark points. After face images are aligned to a common 112×112 pixel image, histogram of oriented gradients features were extracted and classified with a linear kernel support vector machine. OpenFace was trained on five manually coded spontaneous expression datasets (DISFA, SEMAINE, BP4D, UNBC-McMaster, and Fera 2011) and one posed expression dataset (Bosphorus). AU intensities predicted by OpenFace had an average concordance correlation of +0.73 as compared with human-coded ratings for DISFA out-of-sample data. Per-AU correlations were higher for some AUs (e.g., AU12, +0.85) than others (e.g. AU15, +0.39) (Baltrusaitis et al., 2018).
 
 Action unit time series from OpenFace for each participant were not normalised, as we were interested in between-subjects differences. Recordings with more than 0.5% missing frames were excluded, and any remaining missing frames were linearly interpolated. Action unit 45 ‘Blink’ was not used as it is not directly relevant to emotion. Action units 2 ‘Outer Brow Raiser’ and 5 ‘Upper Lid Raiser’ were not used as they had constant zero value throughout the recording for most participants. Participants with any other action units with zero value through the recording were also excluded, as the time-frequency representation is undefined for these time series. This comprised one control and four participants with melancholia.
 
-## Time-frequency representation
+### Time-frequency representation
 
 For each participant, each facial action unit time series was transformed into a time-frequency representation, using the amplitude of the continuous wavelet transform. An analytic Morse wavelet was used with symmetry parameter 3, time-bandwidth product 60, and 12 voices per octave. Mean time-frequency maps were visualised with a cone of influence – outside which edge effects produce artefact (Figure 1—figure supplement 2 for DISFA, Figure 5—figure supplement 1 for melancholia dataset). To determine information lost by averaging raw time series across participants, the amplitude of the continuous wavelet transform for the group mean time series was calculated. At each point in time-frequency space, the distribution of individual participants’ amplitude was compared with the amplitude of the group mean, with a two-sided t-test (p=0.05) (Figure 1).
 
-## Hidden Markov model
+### Hidden Markov model
 
 An HMM, implemented in the HMM-MAR MATLAB toolbox (https://github.com/OHBA-analysis/HMM-MAR; Vidaurre, 2022; Vidaurre et al., 2016), was used to identify states corresponding to oscillatory activity localised to specific action units and frequency bands. A HMM specifies state switching probabilities which arise from a time-invariant transition matrix. Each state is described by a multivariate Gaussian observation model with distinct mean and covariance in (action unit × frequency) space, because how facial muscle groups covary with each other may differ across similarly valenced states. Input data were 110 frequency bins in 0–5 Hz, for each of 14 facial action units. Individual participants’ time series were standardised to zero mean and unit variance before temporal concatenation to form a single time series. This time series was downsampled to 10 Hz, and the top 10 principal components were used (for DISFA). Other HMM parameters are listed in Supplementary file 1.
 
@@ -118,7 +257,7 @@ The initialisation algorithm used 10 optimisation cycles per repetition. Variati
 
 HMM state observation models were visualised with FACSHuman (Gilbert et al., 2021). The contribution of each action unit to each state was calculated by summing across all frequency bands. For each state, positive contributions were rescaled to the interval [0,1] and visualised on an avatar face (Figure 3a). State sequences for individual subjects were calculated with the Viterbi algorithm (Figure 3). To calculate between-subjects consistency of state sequences over time, we used an 8 s sliding window. Within this window, for each state, we counted the number of participants who expressed this state at least once, and found the most commonly expressed state. Uncertainty in this consistency measure at each time point was estimated from the 5 and 95 percentiles of 1000 bootstrap samples. The null distribution for consistency was obtained by randomly circular shifting the Viterbi time series for each subject independently (n=1000). Consistency values exceeding the 95th percentile (59% consistency) were deemed significant.
 
-## Analysis of melancholia dataset
+### Analysis of melancholia dataset
 
 Mean action unit activations were calculated for each group, and uncertainty visualised with the 5th and 95th percentiles of 1000 bootstrap samples (Figure 4, Figure 4—figure supplement 3). A three-way ANOVA for activation was conducted with group, stimulus video, and facial valence as regressors. To avoid redundancy between the two positive valence videos, we limited the ANOVA to two stimulus videos – the stand-up comedy and sad movie clips. In keeping with previous work (Friesen and Ekman, 1983), we defined happiness as the sum of action units 6 ‘Cheek Raiser’ and 12 ‘Lip Corner Puller’, and sadness as the sum of action units 1 ‘Inner Brow Raiser’, 4 ‘Brow Lowerer’, and 15 ‘Lip Corner Depressor’. Post hoc comparisons used Tukey’s honestly significant difference criterion (Figure 4—figure supplement 1).
 
@@ -130,6 +269,6 @@ The HMM was inferred as described above (Figure 6). Figure 6—figure supplement
 
 Results were consistent across repetitions of HMM inference with different initial random seeds. In addition, all analyses were repeated with time-frequency amplitudes normalised by the standard deviation of the time series, to ensure that results were not solely due to group differences in variance for each action unit time. This was motivated by previous work showing that the square of wavelet transform amplitude increases with variance for white noise sources (Torrence and Compo, 2002). Results were consistent with and without normalisation, including differences between clinical groups, the distributions, and time courses of HMM states.
 
-## Code availability
+### Code availability
 
 Code to replicate the analysis of healthy controls in the DISFA dataset is available at https://github.com/jaysonjeg/FacialDynamicsHMM, (copy archived at swh:1:rev:649ff3afa26624b9962409bb67543197668171ef; Jeg, 2021).

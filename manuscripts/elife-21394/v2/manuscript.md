@@ -47,69 +47,67 @@
 
 ## Abstract
 
-10.7554/eLife.21394.001 When 2 Mha of Amazonian forests are disturbed by selective logging each year, more than 90 Tg of carbon (C) is emitted to the atmosphere. Emissions are then counterbalanced by forest regrowth. With an original modelling approach, calibrated on a network of 133 permanent forest plots (175 ha total) across Amazonia, we link regional differences in climate, soil and initial biomass with survivors’ and recruits’ C fluxes to provide Amazon-wide predictions of post-logging C recovery. We show that net aboveground C recovery over 10 years is higher in the Guiana Shield and in the west (21 3 Mg C ha ± ) than in the south (12 - 1 3 Mg C ha ± ) where environmental stress is high (low rainfall, high seasonality). We highlight the key role of survivors in the forest regrowth and elaborate a comprehensive map of post-disturbance C recovery potential in Amazonia. - 1 DOI: http://dx.doi.org/10.7554/eLife.21394.001
+When 2 Mha of Amazonian forests are disturbed by selective logging each year, more than 90 Tg of carbon (C) is emitted to the atmosphere. Emissions are then counterbalanced by forest regrowth. With an original modelling approach, calibrated on a network of 133 permanent forest plots (175 ha total) across Amazonia, we link regional differences in climate, soil and initial biomass with survivors’ and recruits’ C fluxes to provide Amazon-wide predictions of post-logging C recovery. We show that net aboveground C recovery over 10 years is higher in the Guiana Shield and in the west (21 ±3 Mg C ha-1) than in the south (12 ±3 Mg C ha-1) where environmental stress is high (low rainfall, high seasonality). We highlight the key role of survivors in the forest regrowth and elaborate a comprehensive map of post-disturbance C recovery potential in Amazonia.
 
 ## Introduction
 
-With on-going climate change, attention is increasingly drawn to the impacts of human activities on carbon (C) cycles (Griggs and Noguer, 2002), and in particular to the 2.1 ± 1.1 Pg C yr-1 of C loss caused by various forms and intensities of anthropogenic disturbances in tropical forests (Grace et al., 2014). Among those disturbances, selective logging, i.e. the selective harvest of a few merchantable tree species, is particularly widespread: in the Brazilian Amazon alone, about 2 Mha yr−1 were logged in 1999–2002 (Asner et al., 2005). The extent of selective logging in the Brasilian Amazon was equivalent to annual deforestation in the same period, and resulted in C emissions of 90 Tg C yr-1 (Huang and Asner, 2010) which increased anthropogenic C emissions by almost 25% over deforestation alone (Asner et al., 2005). In contrast to deforested areas that are used for agriculture and grazing, most selectively logged forests remain as forested areas (Asner et al., 2006) and may recover C stocks (West et al., 2014). Previously logged Amazonian forests may thus accumulate large amounts of C (Pan et al., 2011), but this C uptake is difficult to accurately estimate, because while detecting selective logging from space is increasingly feasible (Frolking et al., 2009) (even if very few of the IPCC models effectively account for logging), directly quantifying forest recovery remains challenging (Asner et al., 2009; Houghton et al., 2012; Goetz et al., 2015). Studies based on field measurements (e.g. Sist and Ferreira, 2007; Blanc et al., 2009; West et al., 2014; Vidal et al., 2016), sometimes coupled with modeling approaches (e.g. Gourlet-Fleury et al., 2005; Valle et al., 2007) or airborne light detection and ranging (LiDAR) measurements (e.g. Andersen et al., 2014) have assessed post-logging dynamics at particular sites. Nonetheless, to our knowledge no spatially-explicit investigation of post-logging C dynamics at the Amazon biome scale is available.
+With on-going climate change, attention is increasingly drawn to the impacts of human activities on carbon (C) cycles (Griggs and Noguer, 2002), and in particular to the 2.1 $\pm$ 1.1 Pg C yr$^{-1}$ of C loss caused by various forms and intensities of anthropogenic disturbances in tropical forests (Grace et al., 2014). Among those disturbances, selective logging, i.e. the selective harvest of a few merchantable tree species, is particularly widespread: in the Brazilian Amazon alone, about 2 Mha yr$^{−1}$ were logged in 1999–2002 (Asner et al., 2005). The extent of selective logging in the Brasilian Amazon was equivalent to annual deforestation in the same period, and resulted in C emissions of 90 Tg C yr$^{-1}$ (Huang and Asner, 2010) which increased anthropogenic C emissions by almost 25% over deforestation alone (Asner et al., 2005). In contrast to deforested areas that are used for agriculture and grazing, most selectively logged forests remain as forested areas (Asner et al., 2006) and may recover C stocks (West et al., 2014). Previously logged Amazonian forests may thus accumulate large amounts of C (Pan et al., 2011), but this C uptake is difficult to accurately estimate, because while detecting selective logging from space is increasingly feasible (Frolking et al., 2009) (even if very few of the IPCC models effectively account for logging), directly quantifying forest recovery remains challenging (Asner et al., 2009; Houghton et al., 2012; Goetz et al., 2015). Studies based on field measurements (e.g. Sist and Ferreira, 2007; Blanc et al., 2009; West et al., 2014; Vidal et al., 2016), sometimes coupled with modeling approaches (e.g. Gourlet-Fleury et al., 2005; Valle et al., 2007) or airborne light detection and ranging (LiDAR) measurements (e.g. Andersen et al., 2014) have assessed post-logging dynamics at particular sites. Nonetheless, to our knowledge no spatially-explicit investigation of post-logging C dynamics at the Amazon biome scale is available.
 
 C losses from selective logging are determined by harvest intensity (i.e. number of trees felled or volume of wood extracted) plus the care with which harvest operations are conducted, which affects the amount of collateral damage. After logging, C losses continue for several years due to elevated mortality rates of trees injured during harvesting operations (Shenkin et al., 2015). Logged forests may recover their aboveground carbon stocks (ACS) via enhanced growth of survivors and recruited trees (Blanc et al., 2009). Full recovery of pre-disturbance ACS in logged stands reportedly requires up to 125 years, depending primarily on disturbance intensity (Rutishauser et al., 2015). The underlying recovery processes (i.e. tree mortality, growth and recruitment) are likely to vary with the clear geographical patterns in forest structure and dynamics across the Amazon Basin and Guiana Shield. In particular, northeast-southwest gradients have been reported for ACS (Malhi and Wright, 2004), net primary productivity (Aragão et al., 2009), wood density (Baker et al., 2004), and floristic composition (ter Steege et al., 2006). Such gradients coincide with climate and edaphic conditions that range from nearly a seasonal nutrient-limited in the northeast to seasonally dry and nutrient-rich in the southwest (Quesada et al., 2012). These regional differences in biotic and abiotic conditions largely constrain demographic processes that ultimately shape forest C balances.
 
-Here we partition the contributions to post-disturbance ACS gain (from growth and recruitment of trees
+Here we partition the contributions to post-disturbance ACS gain (from growth and recruitment of trees ≥20 cm DBH) and ACS loss (from mortality) of survivors and recruited trees to detect the main drivers and patterns of ACS recovery in forests disturbed by selective logging across Amazonia sensu lato (that includes the Amazon Basin and the Guiana Shield). Based on long-term (8–30 year) inventory data from 13 experimentally-disturbed sites (Sist et al., 2015) across Amazonia (Figure 1—figure supplement 1), 133 permanent forest plots (175 ha in total) that cover a large gradient of disturbance intensities (ACS losses ranging from 1% to 71%) were used to model the trajectory of those post-disturbance ACS changes (Figure 1) in a comprehensive Bayesian framework. We quantify the effect of pre-disturbance ecosystem characteristics [the site’s average pre-logging ACS (a⁢c⁢s⁢0) and the relative difference between each plot and a⁢c⁢s⁢0 as a proxy of forest maturity (d⁢a⁢c⁢s)], disturbance intensity [percentage of pre-logging ACS lost (l⁢o⁢s⁢s)], and interactions with the environment [annual precipitation (p⁢r⁢e⁢c), seasonality of precipitation (s⁢e⁢a⁢s), and soil bulk density (b⁢d)] (Figure 2) on the rates at which post-disturbance ACS changes converge to a theoretical steady state (as in Figure 1, see Materials and methods for more details). With global maps of ACS (Avitabile et al., 2016), climatic conditions (Hijmans et al., 2005) and soil bulk density (Nachtergaele et al., 2008), we up-scale our results to Amazonia (sensu lato) and elaborate predictive maps of potential ACS changes over 10 years under the hypothesis of a 40% ACS loss, which is a common disturbance intensity after conventional logging in Amazonia (Blanc et al., 2009; Martin et al., 2015; West et al., 2014). Summing these ACS changes over time gives the net post-disturbance rate of ACS accumulation. Disentangling ACS recovery into demographic processes and cohorts is essential to reveal mechanisms underlying ACS responses to disturbance and to make more robust predictions of ACS recovery compared to an all-in-one approach (see Appendix).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig1-v2.jpg)
 
-**Figure 1.:** Data is available between the year of minimum ACS () and t=030 years. ACS changes are: recruits’ ACS growth (orange), recruits’ ACS loss (gold), new recruits’ ACS (red), survivors’ ACS growth (light green) and survivors’ ACS loss (dark green). Thick solid lines are the maximum-likelihood predictions (for an average plot, when all covariates are null), and dashed lines are the model theoretical behaviour. New recruits’ ACS, recruits’ ACS growth, and recruits’ ACS loss converge over time to constant values. A dynamic equilibrium is then reached: ACS gain from recruitment and recruits’ growth compensate ACS loss from recruits’ mortality. Survivors’ ACS growth and loss. decline over time and tend to zero when all initial survivors have died.t=DOI: http://dx.doi.org/10.7554/eLife.21394.003
+**Figure 1.:** Data is available between the year of minimum ACS ($t=0$) and $t=$30 years. ACS changes are: recruits’ ACS growth (orange), recruits’ ACS loss (gold), new recruits’ ACS (red), survivors’ ACS growth (light green) and survivors’ ACS loss (dark green). Thick solid lines are the maximum-likelihood predictions (for an average plot, when all covariates are null), and dashed lines are the model theoretical behaviour. New recruits’ ACS, recruits’ ACS growth, and recruits’ ACS loss converge over time to constant values. A dynamic equilibrium is then reached: ACS gain from recruitment and recruits’ growth compensate ACS loss from recruits’ mortality. Survivors’ ACS growth and loss. decline over time and tend to zero when all initial survivors have died.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.21394.004
-
 ![Figure 2.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig2-v2.jpg)
 
-**Figure 2.:** ).-1Covariates are : disturbance intensity () , i.e. the proportion of initial ACS loss; mean site’s ACS (l⁢o⁢s⁢s), and relative forest maturity, i.e. pre-logging plot ACS as a % of a⁢c⁢s⁢0 (a⁢c⁢s⁢0); annual precipitation (d⁢a⁢c⁢s); seasonality of precipitation (p⁢r⁢e⁢c), soil bulk density (s⁢e⁢a⁢s). Covariates are centred and standardized. Red and black levels are 80% and 95% credible intervals, respectively. The median rate is the prediction of the convergence rate for an average plot (when all covariates are set to zero). Negative covariate values indicate slowing and positive values indicate accelerating rates. (b⁢da) Survivors’ ACS growth. (b) New recruits’ ACS. (c) Recruits’ ACS growth. (d) Survivors’ ACS loss. (e) Recruits’ ACS loss.DOI: http://dx.doi.org/10.7554/eLife.21394.00510.7554/eLife.21394.006Figure 2—source data 1.Columns are the 2.5%, 10%, 50%, 90% and 97.5% quantiles of the posterior distribution of the model parameters (rows).DOI: http://dx.doi.org/10.7554/eLife.21394.006
+**Figure 2.:** Effect of covariates on the rate at which post-disturbance ACS changes converge to a theoretical steady state (in yr$^{-1}$).Covariates are : disturbance intensity ($l⁢o⁢s⁢s$) , i.e. the proportion of initial ACS loss; mean site’s ACS ($a⁢c⁢s⁢0$), and relative forest maturity, i.e. pre-logging plot ACS as a % of $a⁢c⁢s⁢0$ ($d⁢a⁢c⁢s$); annual precipitation ($p⁢r⁢e⁢c$); seasonality of precipitation ($s⁢e⁢a⁢s$), soil bulk density ($b⁢d$). Covariates are centred and standardized. Red and black levels are 80% and 95% credible intervals, respectively. The median rate is the prediction of the convergence rate for an average plot (when all covariates are set to zero). Negative covariate values indicate slowing and positive values indicate accelerating rates. (a) Survivors’ ACS growth. (b) New recruits’ ACS. (c) Recruits’ ACS growth. (d) Survivors’ ACS loss. (e) Recruits’ ACS loss.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** ).-1(a) Survivors’ cumulative ACS growth. (b) New recruits’ cumulative ACS. (c) Recruits’ cumulative ACS growth; (d) Survivors’ cumulative ACS loss; (e) Recruits’ cumulative ACS loss. The closer the dots are to the x=y line, the better the prediction. Dot transparency is proportional to the observation weight: transparent dots are low-weight observations. Because mortality is a stochastic event, ACS loss has poorer predictions than ACS gain which is a more continuous process.DOI: http://dx.doi.org/10.7554/eLife.21394.007
+**Figure 2—figure supplement 1.:** Fitted vs observed values of cumulative ACS changes (Mg C ha$^{-1}$).(a) Survivors’ cumulative ACS growth. (b) New recruits’ cumulative ACS. (c) Recruits’ cumulative ACS growth; (d) Survivors’ cumulative ACS loss; (e) Recruits’ cumulative ACS loss. The closer the dots are to the x=y line, the better the prediction. Dot transparency is proportional to the observation weight: transparent dots are low-weight observations. Because mortality is a stochastic event, ACS loss has poorer predictions than ACS gain which is a more continuous process.
 
 ## Results
 
-## Local variations of ACS changes
+### Local variations of ACS changes
 
-At a given site, variations of post-logging ACS changes are explained with the disturbance intensity (
+At a given site, variations of post-logging ACS changes are explained with the disturbance intensity (l⁢o⁢s⁢s) and the relative forest maturity (d⁢a⁢c⁢s). At high disturbance intensity (positive l⁢o⁢s⁢s) as well as in relatively immature forests (negative d⁢a⁢c⁢s), ACS gain from recruits is high: recruitment decreases slowly (Figure 2b and Figure 3b) and recruits’ growth increases rapidly (Figure 2c and Figure 3c). In the same conditions of high disturbance intensity, survivors’ ACS growth is lower in the first years following logging than for low disturbance intensities, but declines slowly (Figure 2a and Figure 3a). Disturbance intensity and relative forest maturity have a weak effect on ACS loss from both survivors and recruits (Figures 2d,e and 3d,e). Overall, net ACS change stays high longer at high disturbance intensity (Figure 3f).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig3-v2.jpg)
 
-**Figure 3.:** (a) Survivors’ ACS growth. (b) New recruits’ ACS. (c) Recruits’ ACS growth. (d) Survivors’ ACS loss. (e) Recruits’ ACS loss. (f) Net ACS change. The net ACS change is the sum of all five ACS changes. ACS changes were calculated with all parameters set to their maximum-likelihood value and covariates (except standardized disturbance intensity ) set to 0. Time since minimum ACS varies from 0 to 30 year (i.e. the calibration interval) and disturbance intensity ranges between 5% and 60% of initial ACS loss.l⁢o⁢s⁢sDOI: http://dx.doi.org/10.7554/eLife.21394.008
+**Figure 3.:** (a) Survivors’ ACS growth. (b) New recruits’ ACS. (c) Recruits’ ACS growth. (d) Survivors’ ACS loss. (e) Recruits’ ACS loss. (f) Net ACS change. The net ACS change is the sum of all five ACS changes. ACS changes were calculated with all parameters set to their maximum-likelihood value and covariates (except standardized disturbance intensity $l⁢o⁢s⁢s$) set to 0. Time since minimum ACS varies from 0 to 30 year (i.e. the calibration interval) and disturbance intensity ranges between 5% and 60% of initial ACS loss.
 
-## Regional variations of ACS changes
+### Regional variations of ACS changes
 
-Variations of post-logging ACS changes between sites are explained with the mean ACS of each site (a⁢c⁢s⁢0), climatic conditions [annual precipitation (p⁢r⁢e⁢c), seasonality of precipitation (s⁢e⁢a⁢s)] and the soil bulk density (b⁢d). Contribution of survivors’ growth to ACS recovery declined slowly in sites with low a⁢c⁢s⁢0 and high water stress (low precipitation, high seasonality and high bulk density) (Figure 2a). Survivors’ ACS loss showed the opposite pattern (Figure 2d) except in apparent response to high seasonality of precipitation (s⁢e⁢a⁢s) that slowed the post-disturbance rates of decline of both ACS growth and loss. Despite slower recruits’ ACS growth in sites with high pre-logging ACS (a⁢c⁢s⁢0), no other regional covariate had significant effects on recruits’ ACS changes (Figure 2b,c and e).
+Variations of post-logging ACS changes between sites are explained with the mean ACS of each site ($a⁢c⁢s⁢0$), climatic conditions [annual precipitation ($p⁢r⁢e⁢c$), seasonality of precipitation ($s⁢e⁢a⁢s$)] and the soil bulk density ($b⁢d$). Contribution of survivors’ growth to ACS recovery declined slowly in sites with low $a⁢c⁢s⁢0$ and high water stress (low precipitation, high seasonality and high bulk density) (Figure 2a). Survivors’ ACS loss showed the opposite pattern (Figure 2d) except in apparent response to high seasonality of precipitation ($s⁢e⁢a⁢s$) that slowed the post-disturbance rates of decline of both ACS growth and loss. Despite slower recruits’ ACS growth in sites with high pre-logging ACS ($a⁢c⁢s⁢0$), no other regional covariate had significant effects on recruits’ ACS changes (Figure 2b,c and e).
 
-## Prediction maps
+### Prediction maps
 
-While no significant environmental effects were detected for recruits’ ACS changes (
+While no significant environmental effects were detected for recruits’ ACS changes (Figures 2 and 4), the survivors showed a highly structured regional gradient: (i) ACS gain from survivors’ ACS growth is high in the west and in the Guiana Shield, but low in the south (Figure 4a), whereas (ii) survivors’ ACS loss is low in the south and in the Guiana Shield but high in the west (Figure 4d). To illustrate how these regional differences will be critical for future ACS across Amazonia, we developed a map of net ACS recovery over the first 10 years after a 40% ACS loss by integrating the sum of ACS change predictions through time (Figure 5). Across the region, net ACS recovery over the first ten years after a 40% ACS loss is predicted to be 17 ± 7 Mg C ha-1, with higher values in the west and in the Guiana Shield (Figure 5a). The uncertainty in predictions was low to medium (coefficient of variation under 40%) in 82% of the mapped area, and high (coefficient of variation above 50%) in 5% of the mapped area (Figure 5b).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig4-v2.jpg)
 
-**Figure 4.:** ) over the first 10 year after losing 40% of ACS.−1Extrapolation was based on global rasters: topsoil bulk density from the Harmonized global soil database (Nachtergaele et al., 2008), Worldclim precipitation data (Hijmans et al., 2005) and biomass stocks from Avitabile et al. map (Avitabile et al., 2016). Cumulative ACS changes are obtained by integrating annual ACS changes through time. We here show the median of each pixel. Top graphs are ACS gain and bottom graphs are ACS loss. (a) ACS gain from survivors’ growth. (b) ACS gain from new recruits. (c) ACS gain from recruits’ growth. (d) ACS loss from survivors’ mortality. (e) ACS loss from recruits’ mortality. Black dots are the location of our experimental sites. Survivors’ ACS changes (a and d) show strong regional variations unlike to recruits’ ACS changes (b,c and e).DOI: http://dx.doi.org/10.7554/eLife.21394.009
+**Figure 4.:** Predicted cumulative ACS changes (Mg C ha$^{−1}$) over the first 10 year after losing 40% of ACS.Extrapolation was based on global rasters: topsoil bulk density from the Harmonized global soil database (Nachtergaele et al., 2008), Worldclim precipitation data (Hijmans et al., 2005) and biomass stocks from Avitabile et al. map (Avitabile et al., 2016). Cumulative ACS changes are obtained by integrating annual ACS changes through time. We here show the median of each pixel. Top graphs are ACS gain and bottom graphs are ACS loss. (a) ACS gain from survivors’ growth. (b) ACS gain from new recruits. (c) ACS gain from recruits’ growth. (d) ACS loss from survivors’ mortality. (e) ACS loss from recruits’ mortality. Black dots are the location of our experimental sites. Survivors’ ACS changes (a and d) show strong regional variations unlike to recruits’ ACS changes (b,c and e).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig5-v2.jpg)
 
-**Figure 5.:** (a) median predictions. (b) coefficient of variation (per pixel). Four areas were arbitrarily chosen to illustrate four different geographical behaviours: (1) the Guiana Shield and (2) northwestern Amazonia are two areas with high ACS recovery; the Guiana Shield has higher initial ACS and slower ACS dynamics whereas northwestern Amazonia has lower initial ACS and faster ACS dynamics. (3) central Amazonia has intermediate ACS recovery. (4) southern Amazonia has low ACS recovery.DOI: http://dx.doi.org/10.7554/eLife.21394.010
+**Figure 5.:** (a) median predictions. (b) coefficient of variation (per pixel). Four areas were arbitrarily chosen to illustrate four different geographical behaviours: (1) the Guiana Shield and (2) northwestern Amazonia are two areas with high ACS recovery; the Guiana Shield has higher initial ACS and slower ACS dynamics whereas northwestern Amazonia has lower initial ACS and faster ACS dynamics. (3) central Amazonia has intermediate ACS recovery. (4) southern Amazonia has low ACS recovery.
 
-Four areas (
+Four areas (Figure 5a) were selected to represent four contrasted cases of net ACS recovery in time (Figure 6): two areas, northwestern Amazonia and the Guiana Shield, with high ACS accumulation (21 ± 3 Mg C ha-1 over 10 year), one intermediate area, central Amazonia (15 ± 1 Mg C ha-1 over 10 year) and one area with low ACS accumulation, southern Amazonia (12 ± 3 Mg C ha-1 over 10 year). Survivors’ contribution to the sum of ACS gains (recruitment and growth) over the first 10 years after disturbance was 71 ± 4% in the Guiana Shield, 71 ± 2% in the west; 63 ± 4% in central Amazonia and 55 ± 6% in the south. Predicted net ACS recovery (Figure 5) and survivors’ ACS growth (Figure 4a) are highly correlated: ρ=0.90 (Pearson’s correlation coefficient).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/21394/elife-21394-fig6-v2.jpg)
 
-**Figure 6.:** Figure 5).The white line is the net annual ACS recovery, i.e. the sum of all annual ACS changes. Survivors’ (green) and recruits’ (orange) contribution are positive for ACS gains (survivors’ ACS growth, new recruits’ ACS and recruits’ ACS growth) and negative for survivors’ and recruits’ ACS loss. Areas with higher levels of transparency and dotted lines are out of the calibration period (0–30 year). In the Guiana Shield and in nothwestern Amazonia, high levels of net ACS recovery are explained by large ACS gain from survivors’ growth. Extrapolation was based on global rasters: topsoil bulk density from the Harmonized global soil database (Nachtergaele et al., 2008), precipitation data from Worldclim (Hijmans et al., 2005) and biomass stocks from Avitabile et al. (Avitabile et al., 2016) map.DOI: http://dx.doi.org/10.7554/eLife.21394.011
+**Figure 6.:** The white line is the net annual ACS recovery, i.e. the sum of all annual ACS changes. Survivors’ (green) and recruits’ (orange) contribution are positive for ACS gains (survivors’ ACS growth, new recruits’ ACS and recruits’ ACS growth) and negative for survivors’ and recruits’ ACS loss. Areas with higher levels of transparency and dotted lines are out of the calibration period (0–30 year). In the Guiana Shield and in nothwestern Amazonia, high levels of net ACS recovery are explained by large ACS gain from survivors’ growth. Extrapolation was based on global rasters: topsoil bulk density from the Harmonized global soil database (Nachtergaele et al., 2008), precipitation data from Worldclim (Hijmans et al., 2005) and biomass stocks from Avitabile et al. (Avitabile et al., 2016) map.
 
 ## Discussion
 
 Contrasting post-disturbance ACS dynamics were detected among the western Amazon, Guiana Shield, and southern Amazon (Figure 4). (i) In the western Amazon, environmental stress is reduced due to fertile soils and abundant, mostly non-seasonal precipitation, but forests are prone to frequent and sometimes large-scale wind-induced disturbances (Espírito-Santo et al., 2014). Such conditions of low stress and high disturbance tend to favor fast-growing species with rapid life cycles (He et al., 2013), which results in fast ACS gain and loss from survivors even after the logging disturbance (Figures 4a,d and 6). (ii) Forests of the Guiana Shield are generally dense and grow on nutrient-poor soils (Quesada et al., 2012), where wood productivity is highly constrained by competition for key nutrients, especially phosphorus and nitrogen (Santiago, 2015; Mercado et al., 2011). The short duration pulse of nutrients released from readily decomposed stems, twigs and leaves of trees damaged and killed by logging may thus explain the substantial but limited-duration increase in growth of survivors on these nutrient-poor soils (Figure 6). Yet post-disturbance ACS loss from survivors’ mortality decreases slowly in the Guiana Shield (Figure 6). This is consistent with the low mortality rates and the high tree longevity reported in old-growth forests of this region (Phillips et al., 2004). (iii) In the southern Amazon, high seasonal water stress is the main constraint on ACS recovery (Wagner et al., 2016). Stress-tolerant trees are generally poor competitors (He et al., 2013) and this may explain the slow ACS changes of survivors in this region (Figures 4a,d and 6). Finally, Central Amazonia is a transition zone for the main environmental and biotic gradients found in Amazonia: (1) a competition gradient between dense and nutrient-poor northeastern forests and nutrient-rich western forests; (2) an environmental gradient between northern wet forests and southern drier forests (Quesada et al., 2012).
 
-Across Amazonia, survivors contribute most to post-disturbance ACS recovery. In regions where survivors’ ACS gain is high (west and northeast), net ACS recovery is also high: annual ACS recovery is between 1 and 3 Mg C ha-1 yr-1 in the first 10 year after logging (Figure 6), lower than in Amazonian secondary forests (3–5 Mg C ha-1 yr−1 in the first 20 year after abandonment of land use [Poorter et al., 2016]). Recruits, for their part, have very low geographical variations in post-logging ACS changes: 10 years after the disturbance they are predicted to store similar amounts of ACS almost everywhere in Amazonia. Nevertheless, small trees with DBH <20 cm have not been accounted for in our study and may play an important role in post-logging ACS changes. The 10–20 cm DBH size class contains as much as 14% of total ACS and may be highly dynamic in some Amazonian forests (Vieira et al., 2004). Because of the slow tree growth rates in Amazonia (Vieira et al., 2005; Herault et al., 2010), many trees will not reach the 20 cm DBH threshold 10 years after logging: the effects of the 10–20 cm DBH stratum on post-logging ACS changes are likely to be missed in sites with less than 10 years of measurements (e.g. Peteco, Ecosilva, Iracema, Cumaru) and should be studied, together with the natural regeneration, in the future.
+Across Amazonia, survivors contribute most to post-disturbance ACS recovery. In regions where survivors’ ACS gain is high (west and northeast), net ACS recovery is also high: annual ACS recovery is between 1 and 3 Mg C ha$^{-1}$ yr$^{-1}$ in the first 10 year after logging (Figure 6), lower than in Amazonian secondary forests (3–5 Mg C ha$^{-1}$ yr$^{−1}$ in the first 20 year after abandonment of land use [Poorter et al., 2016]). Recruits, for their part, have very low geographical variations in post-logging ACS changes: 10 years after the disturbance they are predicted to store similar amounts of ACS almost everywhere in Amazonia. Nevertheless, small trees with DBH $<$20 cm have not been accounted for in our study and may play an important role in post-logging ACS changes. The 10–20 cm DBH size class contains as much as 14% of total ACS and may be highly dynamic in some Amazonian forests (Vieira et al., 2004). Because of the slow tree growth rates in Amazonia (Vieira et al., 2005; Herault et al., 2010), many trees will not reach the 20 cm DBH threshold 10 years after logging: the effects of the 10–20 cm DBH stratum on post-logging ACS changes are likely to be missed in sites with less than 10 years of measurements (e.g. Peteco, Ecosilva, Iracema, Cumaru) and should be studied, together with the natural regeneration, in the future.
 
 At the stand level, high disturbance intensities reduce survivors’ ACS: survivors’ ACS growth is consequently lower (Figure 3a), resulting in lower net ACS change during the first 10 years of the recovery period (Figure 3f). High disturbance intensities as well as relatively low forest maturity alleviate competition, and this is probably why ACS contributions from recruits remain high for longer (Figure 2b) in such enhanced growth conditions (Herault et al., 2010). In the first years after logging, net ACS recovery depends little on disturbance intensity (Figure 3f), but recovery is predicted to last longer in heavily logged forests. In immature forests, intense self-thinning (Swaine et al., 1987) may explain fast ACS losses from survivors’ mortality (Figure 2d).
 
@@ -119,70 +117,203 @@ In this study, we focus on one type of disturbance: selective logging. Because o
 
 ## Materials and methods
 
-## Site description
+### Site description
 
-Our study includes data from thirteen long-term (8–30 year) experimental forest sites located in the Amazon Basin and the Guiana Shield (Figure 1—figure supplement 1). Sites meet the following criteria: (i) located in tropical forests with mean annual precipitation above 1000 mm; (ii) a total censused area above 1 ha; (iii) at least one pre-logging census and (iv) at least two post-logging censuses. For each site, we extracted annual precipitation and seasonality of precipitation data from WorldClim (RRID:SCR_010244) (Hijmans et al., 2005), topsoil bulk density data from the Harmonized World Soil database (Nachtergaele et al., 2008), and the synthetic climatic index from Chave et al. (Chave et al., 2014), using in all cases the highest resolution data available (30 arc-seconds). For one of our sites (La Chonta, see Figure 1—figure supplement 1), field measurements of precipitation (mean = 1580 mm yr-1) differed substantially from WorldClim data (1032 mm yr-1): in this particular case we used the measured value and adjusted the synthetic climatic index (E) in the allometric equation (Chave et al., 2014) accordingly. Sites' data is available at Dryad Digital Repository (Piponiot et al., 2016).
+Our study includes data from thirteen long-term (8–30 year) experimental forest sites located in the Amazon Basin and the Guiana Shield (Figure 1—figure supplement 1). Sites meet the following criteria: (i) located in tropical forests with mean annual precipitation above 1000 mm; (ii) a total censused area above 1 ha; (iii) at least one pre-logging census and (iv) at least two post-logging censuses. For each site, we extracted annual precipitation and seasonality of precipitation data from WorldClim (RRID:SCR_010244) (Hijmans et al., 2005), topsoil bulk density data from the Harmonized World Soil database (Nachtergaele et al., 2008), and the synthetic climatic index from Chave et al. (Chave et al., 2014), using in all cases the highest resolution data available (30 arc-seconds). For one of our sites (La Chonta, see Figure 1—figure supplement 1), field measurements of precipitation (mean = 1580 mm yr$^{-1}$) differed substantially from WorldClim data (1032 mm yr$^{-1}$): in this particular case we used the measured value and adjusted the synthetic climatic index (E) in the allometric equation (Chave et al., 2014) accordingly. Sites' data is available at Dryad Digital Repository (Piponiot et al., 2016).
 
-## ACS computation
+### ACS computation
 
-In all plots, diameter at breast height (DBH) of trees >20 cm DBH were measured, and trees were identified to the lowest taxonomic level: to the species level (75%) when possible, or to the genus level (15%); 10% of trees were not identified. To get the wood density, we applied the following standardized protocol to all sites: (i) trees identified to the species level were assigned the corresponding wood specific gravity value from the Global Wood Density Database (GWDD, doi:10.5061/dryad.234/1) (Zanne et al., 2009); (ii) trees identified to the genus level were assigned a genus-average wood density; (iii) trees with no botanical identification or that were not in the GWDD were assigned the site-average wood density. The aboveground biomass (AGB) was estimated with the allometric equations from Chave et al. (Chave et al., 2014). Biomass was assumed to be 50% carbon (Penman et al., 2003). The ACS of every tree i was then computed as follows:(1)ACSi^=exp(−1.803−0.976×E+0.976×ln(WDi)++2.673×ln(DBHi)−0.0299×ln(DBHi2))×0.5
+In all plots, diameter at breast height (DBH) of trees $>$20 cm DBH were measured, and trees were identified to the lowest taxonomic level: to the species level (75%) when possible, or to the genus level (15%); 10% of trees were not identified. To get the wood density, we applied the following standardized protocol to all sites: (i) trees identified to the species level were assigned the corresponding wood specific gravity value from the Global Wood Density Database (GWDD, doi:10.5061/dryad.234/1) (Zanne et al., 2009); (ii) trees identified to the genus level were assigned a genus-average wood density; (iii) trees with no botanical identification or that were not in the GWDD were assigned the site-average wood density. The aboveground biomass (AGB) was estimated with the allometric equations from Chave et al. (Chave et al., 2014). Biomass was assumed to be 50% carbon (Penman et al., 2003). The ACS of every tree $i$ was then computed as follows:
 
-where W⁢Di and D⁢B⁢Hi are the specific wood density and diameter at breast height of the tree i and E is the synthetic climatic index (Chave et al., 2014). The ACS changes data that was generated is available at Dryad Digital Repository (Piponiot et al., 2016).
+$$
+ACS_{i}^=exp(−1.803−0.976\timesE+0.976\timesln(WD_{i})++2.673\timesln(DBH_{i})−0.0299\timesln(DBH_{i}^{2}))\times0.5
+$$
 
-## The recovery period
+where $W⁢D_{i}$ and $D⁢B⁢H_{i}$ are the specific wood density and diameter at breast height of the tree $i$ and $E$ is the synthetic climatic index (Chave et al., 2014). The ACS changes data that was generated is available at Dryad Digital Repository (Piponiot et al., 2016).
 
-After logging, plot ACS decreases rapidly until it reaches its minimum value (a⁢c⁢s⁢m⁢i⁢n) a few years later. This transition point determines the beginning tm⁢i⁢n=t0 of the recovery period. a⁢c⁢s⁢m⁢i⁢n was estimated as the minimum ACS in the 4 years following logging activities. Because our focus is on post-logging ACS recovery, we did not include in our analysis plots where the minimum ACS value was not reached within the 4 years after logging, either because the logging activity did not affect the plot or because there were other sources of disturbance long after logging (fire, road opening, silvicultural treatments).
+### The recovery period
 
-## ACS changes computation
+After logging, plot ACS decreases rapidly until it reaches its minimum value ($a⁢c⁢s⁢m⁢i⁢n$) a few years later. This transition point determines the beginning $t_{m⁢i⁢n}=t_{0}$ of the recovery period. $a⁢c⁢s⁢m⁢i⁢n$ was estimated as the minimum ACS in the 4 years following logging activities. Because our focus is on post-logging ACS recovery, we did not include in our analysis plots where the minimum ACS value was not reached within the 4 years after logging, either because the logging activity did not affect the plot or because there were other sources of disturbance long after logging (fire, road opening, silvicultural treatments).
 
-For each plot j and census k, with tk the time since the beginning of the recovery period t0, we define 5 ACS changes : new recruits’ ACS (R⁢rj,k) is the ACS of all trees <20 cm DBH at tk-1 and ≥20 cm DBH at tk; recruits’ ACS growth (R⁢gj,k) is the ACS increment of living recruits between tk-1 and tk ; recruits’ ACS loss (R⁢lj,k) is the C in recruits that die between tk-1 and tk; survivors’ ACS growth (S⁢gj,k) is the ACS increment of living survivors between tk-1 and tk; survivors’ ACS loss (S⁢lj,k) is the ACS of survivors that die between tk-1 and tk. ACS gains (S⁢g, R⁢r, R⁢g) are positive and ACS losses (S⁢l, R⁢l) are negative. Instantaneous ACS changes are subject to stochastic variation over time: because we are less interested in year-to-year variations than in long-term ACS trajectories, we modelled cumulative ACS changes instead of annual ACS changes. Cumulative ACS changes (Mg C ha-1) were defined as follows:(2)c⁢C⁢h⁢a⁢n⁢g⁢ej,k=∑m=0kC⁢h⁢a⁢n⁢g⁢ej,m
+### ACS changes computation
 
-where j is the plot, tk the time since t0 (yr) and C⁢h⁢a⁢n⁢g⁢e is the annual ACS change (Mg C ha-1 yr-1), either recruits’ ACS (R⁢r), recruits’ ACS growth (R⁢g), recruits’ ACS loss (R⁢l), survivors’ ACS growth (S⁢g), or survivors’ ACS loss (S⁢l).
+For each plot $j$ and census $k$, with $t_{k}$ the time since the beginning of the recovery period $t_{0}$, we define 5 ACS changes : new recruits’ ACS ($R⁢r_{j,k}$) is the ACS of all trees $<$20 cm DBH at $t_{k-1}$ and $\geq$20 cm DBH at $t_{k}$; recruits’ ACS growth ($R⁢g_{j,k}$) is the ACS increment of living recruits between $t_{k-1}$ and $t_{k}$ ; recruits’ ACS loss ($R⁢l_{j,k}$) is the C in recruits that die between $t_{k-1}$ and $t_{k}$; survivors’ ACS growth ($S⁢g_{j,k}$) is the ACS increment of living survivors between $t_{k-1}$ and $t_{k}$; survivors’ ACS loss ($S⁢l_{j,k}$) is the ACS of survivors that die between $t_{k-1}$ and $t_{k}$. ACS gains ($S⁢g$, $R⁢r$, $R⁢g$) are positive and ACS losses ($S⁢l$, $R⁢l$) are negative. Instantaneous ACS changes are subject to stochastic variation over time: because we are less interested in year-to-year variations than in long-term ACS trajectories, we modelled cumulative ACS changes instead of annual ACS changes. Cumulative ACS changes (Mg C ha$^{-1}$) were defined as follows:
 
-## Covariates
+$$
+c⁢C⁢h⁢a⁢n⁢g⁢e_{j,k}=\summ=0kC⁢h⁢a⁢n⁢g⁢e_{j,m}
+$$
 
-To model ACS changes, we chose six covariates : (1) l⁢o⁢s⁢s disturbance intensity, i.e. percentage of initial ACS loss; (2) a⁢c⁢s⁢0 mean ACS of the site; (3) d⁢a⁢c⁢s relative ACS of the plot, as a % of a⁢c⁢s⁢0; (4) p⁢r⁢e⁢c annual precipitation; (5) s⁢e⁢a⁢s precipitation seasonality; (6) b⁢d topsoil bulk density. To give equivalent weight to all covariates, we centred and standardized them in order to have a mean of zero and a standard deviation of one over all observations. The uncertainty associated with ACS covariates (l⁢o⁢s⁢s, a⁢c⁢s⁢0, d⁢a⁢c⁢s) is less than 10% (Chave et al., 2014). Climatic covariates (annual precipitation p⁢r⁢e⁢c and precipitation seasonality s⁢e⁢a⁢s) were extracted from Worldclim rasters (RRID:SCR_010244). Error in Worldclim precipitation data was estimated to be <10 mm in Amazonia (Hijmans et al., 2005). There is no information on the uncertainty on topsoil bulk density but we expect it to be higher than the uncertainty on other covariates, due to measurement (De Vos et al., 2005) and interpolation methods (Hendriks et al., 2016).
+where $j$ is the plot, $t_{k}$ the time since $t_{0}$ (yr) and $C⁢h⁢a⁢n⁢g⁢e$ is the annual ACS change (Mg C ha$^{-1}$ yr$^{-1}$), either recruits’ ACS ($R⁢r$), recruits’ ACS growth ($R⁢g$), recruits’ ACS loss ($R⁢l$), survivors’ ACS growth ($S⁢g$), or survivors’ ACS loss ($S⁢l$).
 
-## Survivors’ model
+### Covariates
 
-Survivors’ cumulative ACS changes are null at t=0 (by definition). When all survivors are dead, their ACS changes stop: annual ACS changes become null and cumulative ACS changes reach a constant/finite limit. We decided to model survivors’ cumulative ACS growth c⁢S⁢g and ACS loss c⁢S⁢l as:(3)c⁢Si,j,k∼𝒩⁢(αjS×(1-e⁢x⁢p⁢(-βjS×tk)),(σES)2)
+To model ACS changes, we chose six covariates : (1) $l⁢o⁢s⁢s$ disturbance intensity, i.e. percentage of initial ACS loss; (2) $a⁢c⁢s⁢0$ mean ACS of the site; (3) $d⁢a⁢c⁢s$ relative ACS of the plot, as a % of $a⁢c⁢s⁢0$; (4) $p⁢r⁢e⁢c$ annual precipitation; (5) $s⁢e⁢a⁢s$ precipitation seasonality; (6) $b⁢d$ topsoil bulk density. To give equivalent weight to all covariates, we centred and standardized them in order to have a mean of zero and a standard deviation of one over all observations. The uncertainty associated with ACS covariates ($l⁢o⁢s⁢s$, $a⁢c⁢s⁢0$, $d⁢a⁢c⁢s$) is less than 10% (Chave et al., 2014). Climatic covariates (annual precipitation $p⁢r⁢e⁢c$ and precipitation seasonality $s⁢e⁢a⁢s$) were extracted from Worldclim rasters (RRID:SCR_010244). Error in Worldclim precipitation data was estimated to be $<$10 mm in Amazonia (Hijmans et al., 2005). There is no information on the uncertainty on topsoil bulk density but we expect it to be higher than the uncertainty on other covariates, due to measurement (De Vos et al., 2005) and interpolation methods (Hendriks et al., 2016).
 
-where j is the plot, tk is the time since t0,S is either S⁢g or Sl.αjS is the finite limit of the cumulative ACS change and βjS the rate at which the cumulative ACS change converges to this limit. By choosing an exponential kernel, we assume that survivors’ ACS change at tk is proportional to survivors’ ACS change at tk-1.
+### Survivors’ model
 
-Because αjS values are expected to vary among plots, they are modelled with the following distribution:(4)αjS∼𝒩⁢(α0S,(σαS)2)
+Survivors’ cumulative ACS changes are null at $t=0$ (by definition). When all survivors are dead, their ACS changes stop: annual ACS changes become null and cumulative ACS changes reach a constant/finite limit. We decided to model survivors’ cumulative ACS growth $c⁢S⁢g$ and ACS loss $c⁢S⁢l$ as:
 
-Parameter βjS is the rate at which survivors’ ACS change (from growth or mortality) on plot j converges to a finite limit after the disturbance: it reflects the response rapidity of survivors’ ACS changes to disturbance. Because we are interested in predicting variations in βjS (S is either S⁢g or S⁢l), we expressed βjS as a function of covariates:(5)βjS=β0S+∑l=16(λlS×Vj,l)
+$$
+c⁢S_{i,j,k}∼𝒩⁢(\alpha_{j}^{S}\times(1-e⁢x⁢p⁢(-\beta_{j}^{S}\timest_{k})),(\sigma_{E}^{S})^{2})
+$$
 
-where ∑l=16(λlS×Vj,l), is the effect of covariates (Vj,l) on the post-logging rate βj. Covariates are centred and standardized and are (1) l⁢o⁢s⁢s : disturbance intensity, i.e. percentage of initial ACS loss; (2) a⁢c⁢s⁢0 : mean ACS of the site; (3) d⁢a⁢c⁢s relative ACS of the plot, as a % of a⁢c⁢s⁢0; (4) p⁢r⁢e⁢c annual precipitation; (5) s⁢e⁢a⁢s precipitation seasonality; (6) b⁢d topsoil bulk density.
+where $j$ is the plot, $t_{k}$ is the time since $t_{0},$$S$ is either $S⁢g$ or $Sl.\alpha_{j}^{S}$ is the finite limit of the cumulative ACS change and $\beta_{j}^{S}$ the rate at which the cumulative ACS change converges to this limit. By choosing an exponential kernel, we assume that survivors’ ACS change at $t_{k}$ is proportional to survivors’ ACS change at $t_{k}-1$.
 
-When all survivors in plot j are dead, all the C gained by their growth (c⁢S⁢gj,∞=αjS⁢g) plus their initial ACS (a⁢c⁢s⁢m⁢i⁢nj) will have been lost (c⁢S⁢lj,∞=αjS⁢l). We thus added the following constraint to each plot j:(6)αjS⁢l+αjS⁢g+a⁢c⁢s⁢m⁢i⁢nj=0
+Because $\alpha_{j}^{S}$ values are expected to vary among plots, they are modelled with the following distribution:
 
-with αjS⁢g,αjS⁢l the finite limits of survivors’ cumulative ACS growth and ACS loss respectively, and a⁢c⁢s⁢m⁢i⁢nj the ACS of the plot j at tm⁢i⁢n=t0.
+$$
+\alpha_{j}^{S}∼𝒩⁢(\alpha_{0}^{S},(\sigma_{\alpha}^{S})^{2})
+$$
 
-## Recruits’ model
+Parameter $\beta_{j}^{S}$ is the rate at which survivors’ ACS change (from growth or mortality) on plot $j$ converges to a finite limit after the disturbance: it reflects the response rapidity of survivors’ ACS changes to disturbance. Because we are interested in predicting variations in $\beta_{j}^{S}$ ($S$ is either $S⁢g$ or $S⁢l$), we expressed $\beta_{j}^{S}$ as a function of covariates:
 
-When survivors are all dead, recruits will constitute the new forest. We made the assumption that the ACS of this new forest will reach a dynamic equilibrium: recruits’ annual ACS changes are expected to converge to constant values (that are however prone to small inter-annual variations), with ACS gains compensating ACS losses. Because there are no recruits yet at t0, recruits’ annual ACS growth (R⁢g) and ACS loss (R⁢l) are zero, and progressively increase to reach their asymptotic values. Recruits’ annual ACS growth and ACS loss can be thus modelled with the function:(7)f⁢(t;α,β)=α×(1-e⁢x⁢p⁢(-β×t))
+$$
+\beta_{j}^{S}=\beta_{0}^{S}+\suml=16(\lambda_{l}^{S}\timesV_{j,l})
+$$
 
-where t is the time since the beginning of the recovery period. In the same logic as survivors’ cumulative ACS change, α is the asymptotic value of recruits’ annual ACS change (Mg C ha-1 yr-1), and β is the rate at which this asymptotic value is reached.
+where $\suml=16(\lambda_{l}^{S}\timesV_{j,l})$, is the effect of covariates ($V_{j,l}$) on the post-logging rate $\beta_{j}$. Covariates are centred and standardized and are (1) $l⁢o⁢s⁢s$ : disturbance intensity, i.e. percentage of initial ACS loss; (2) $a⁢c⁢s⁢0$ : mean ACS of the site; (3) $d⁢a⁢c⁢s$ relative ACS of the plot, as a % of $a⁢c⁢s⁢0$; (4) $p⁢r⁢e⁢c$ annual precipitation; (5) $s⁢e⁢a⁢s$ precipitation seasonality; (6) $b⁢d$ topsoil bulk density.
 
-Contrary to recruits’ annual ACS growth and ACS loss, the ACS of new recruits (R⁢r) is high at t0 because of the competition drop induced by logging, but then progressively decreases to reach its asymptotic value. We modelled it with the following function:(8)f⁢(t;α,β,η)=α×(1+η×e⁢x⁢p⁢(-β×t))
+When all survivors in plot $j$ are dead, all the C gained by their growth ($c⁢S⁢g_{j,∞}=\alpha_{j}^{S⁢g}$) plus their initial ACS ($a⁢c⁢s⁢m⁢i⁢n_{j}$) will have been lost ($c⁢S⁢l_{j,∞}=\alpha_{j}^{S⁢l}$). We thus added the following constraint to each plot $j$:
 
-where t is the time since logging. The parameter η was added to allow annual recruited ACS to be higher than α at t0.
+$$
+\alpha_{j}^{S⁢l}+\alpha_{j}^{S⁢g}+a⁢c⁢s⁢m⁢i⁢n_{j}=0
+$$
 
-As stated before, we chose to model cumulative ACS changes instead of annual ACS changes. The general model for recruits’ cumulative ACS changes is deduced by integrating annual ACS changes from t0 to tk:(9)cRi,j,k∼𝒩(αiR×(tk+η×1−exp(−βjR×tk)βjR),(σER)2)
+with $\alpha_{j}^{S⁢g},\alpha_{j}^{S⁢l}$ the finite limits of survivors’ cumulative ACS growth and ACS loss respectively, and $a⁢c⁢s⁢m⁢i⁢n_{j}$ the ACS of the plot $j$ at $t_{m⁢i⁢n}=t_{0}$.
 
-where i is the site, j is the plot, tk is the time since t0 R is either Rr,Rg or R⁢l. When R is R⁢g or R⁢l, η=-1; when R is R⁢r, η>0.
+### Recruits’ model
 
-Once the forest reaches a new dynamic equilibrium, recruits’ annual ACS changes should depend mostly on each site’s characteristics: we expect there to be more inter-site than intra-site variation in recruits’ asymptotic ACS changes αR. This is why we use one value αiR per site i, and model it as follows:(10)αiR∼𝒩⁢(α0R;(σαR)2)
+When survivors are all dead, recruits will constitute the new forest. We made the assumption that the ACS of this new forest will reach a dynamic equilibrium: recruits’ annual ACS changes are expected to converge to constant values (that are however prone to small inter-annual variations), with ACS gains compensating ACS losses. Because there are no recruits yet at $t_{0}$, recruits’ annual ACS growth ($R⁢g$) and ACS loss ($R⁢l$) are zero, and progressively increase to reach their asymptotic values. Recruits’ annual ACS growth and ACS loss can be thus modelled with the function:
 
-When the dynamic equilibrium is reached, annual ACS gain (growth and recruitment) compensates annual ACS loss (mortality). We thus added the following constraint for every site i:(11)αiR⁢r+αiR⁢g+αiR⁢l=0
+$$
+f⁢(t;\alpha,\beta)=\alpha\times(1-e⁢x⁢p⁢(-\beta\timest))
+$$
 
-With the same logic as for survivors, we are interested in predicting variation in βR. Given that we use one value αiR per site i (i.e. all plots in one site i have the same value for αiR), we chose to take into account the inter-plot variability as follows:(12)βjR∼𝒩⁢(β0R+∑l=16(λlR×Vj,l)⁢ , ⁢(σβR)2)
+where $t$ is the time since the beginning of the recovery period. In the same logic as survivors’ cumulative ACS change, $\alpha$ is the asymptotic value of recruits’ annual ACS change (Mg C ha$^{-1}$ yr$^{-1}$), and $\beta$ is the rate at which this asymptotic value is reached.
 
-## Inference
+Contrary to recruits’ annual ACS growth and ACS loss, the ACS of new recruits ($R⁢r$) is high at $t_{0}$ because of the competition drop induced by logging, but then progressively decreases to reach its asymptotic value. We modelled it with the following function:
 
-Bayesian hierarchical models were inferred through MCMC methods using an adaptive form of the Hamiltonian Monte Carlo sampling (Carpenter et al., 2015). Each observation was given a weight proportional to the size of the plot. Codes were developed using the R language (RRID:SCR_001905) (R Developement Core Team, 2015) and the Rstan package (Carpenter et al., 2015). A detailed list of priors is provided in Table 1.10.7554/eLife.21394.012Table 1.List of priors used to infer ACS changes in a Bayesian framework. Models are : (S⁢g) survivors’ ACS growth, (S⁢l) survivors’ ACS loss, (R⁢r) new recruits’ ACS, (R⁢g) recruits’ ACS growth, (R⁢l) recruits’ ACS loss. λl⁢o⁢s⁢s is the parameter relative to the covariate l⁢o⁢s⁢s (logging intensity).DOI: http://dx.doi.org/10.7554/eLife.21394.012ModelParameterPriorJustificationS⁢gαjS⁢g𝒰⁢[25,250]On average 100 survivors/ha storing 0.25 to 2.5 MgC eachS⁢gβjS⁢g𝒰⁢[0.015,0.04]75<t0.95Sg∗<200 yrS⁢lβjS⁢l𝒰⁢[0.006,βS⁢g]t0.95Sg<t0.95Sl∗<500 yrR⁢rαiR⁢r𝒰⁢[0.1,1]Range of observed values in TmFO control plotsR⁢rβjR⁢r𝒰⁢[0.006,0.6]5<t0.95Rr∗<500 yrR⁢rη𝒰⁢[0,3]Rr(t=0)<3×Rr(t=∞)R⁢gαiR⁢g𝒰⁢[0.5,3]Range of observed values in Amazonia (Johnson et al., 2016)R⁢gβjR⁢g𝒰⁢[0.006,0.15]20<t0.95Rg∗<500 yrR⁢lβjR⁢l𝒰⁢[0.003,0.06]50<t0.95Rl∗<1000 yrAll models M† λl⁢o⁢s⁢sM𝒰⁢[-βM,βM]Avoid multicollinearity problemsAll models M† (λlM)l≠l⁢o⁢s⁢s𝒰[−βM4,βM4]Avoid multicollinearity problems∗t0.95=ln(20)β is the time when the ACS change has reached 95% of its asymptotic value.†M is one of the five models: either S⁢g, S⁢l, R⁢r, R⁢g, R⁢l.
+$$
+f⁢(t;\alpha,\beta,η)=\alpha\times(1+η\timese⁢x⁢p⁢(-\beta\timest))
+$$
 
-## Prediction maps
+where $t$ is the time since logging. The parameter $η$ was added to allow annual recruited ACS to be higher than $\alpha$ at $t_{0}$.
 
-Maps were obtained with the following steps: (i) spatially-explicit covariates are extracted at the resolution of 30 arc-second from: the pan-tropical carbon map of Avitabile et al. for pre-disturbance aboveground carbon stocks (Avitabile et al., 2016); WorldClim (RRID:SCR_010244) (Hijmans et al., 2005) for annual precipitation and seasonality of precipitation, and the Harmonized World Soil database (Nachtergaele et al., 2008) for topsoil bulk density; (ii) disturbance intensity is set to 40% of pre-logging ACS loss, which is a common value for disturbance intensity after conventional logging in Amazonia (West et al., 2014; Blanc et al., 2009; Martin et al., 2015) , and the relative forest maturity d⁢a⁢c⁢s is set to zero; (iii) parameters are drawn from their previously calibrated distribution; (iv) to simulate random effects, all five parameters (α) are taken from their distribution 𝒩⁢(α0,σα2); (v) for every pixel, we estimate the five cumulative ACS changes (c⁢S⁢g, c⁢S⁢l, c⁢R⁢r,c⁢R⁢g,c⁢R⁢l) 10 years after the 40% ACS loss, given the parameters value and the pixel covariates values extracted from global rasters. Steps (iii) to (v) are repeated 200 times and summary statistics are calculated for every pixel. Because a significant part of our sites have experiment duration lower than 10 years (Figure 1—figure supplement 1), we are less confident in Amazonian-wide predictions after that 10 year period. Maps were elaborated under the R statistical software (RRID:SCR_001905) (R Developement Core Team, 2015).
+As stated before, we chose to model cumulative ACS changes instead of annual ACS changes. The general model for recruits’ cumulative ACS changes is deduced by integrating annual ACS changes from $t_{0}$ to $t_{k}$:
+
+$$
+cR_{i,j,k}∼𝒩(\alpha_{i}^{R}\times(t_{k}+η\times\frac{1−exp(−\beta_{j}^{R}\timest_{k})}{\beta_{j}^{R}}),(\sigma_{E}^{R})^{2})
+$$
+
+where $i$ is the site, $j$ is the plot, $t_{k}$ is the time since $t_{0}R$ is either $Rr,Rg$ or $R⁢l$. When $R$ is $R⁢g$ or $R⁢l$, $η=-1$; when $R$ is $R⁢r$, $η>0$.
+
+Once the forest reaches a new dynamic equilibrium, recruits’ annual ACS changes should depend mostly on each site’s characteristics: we expect there to be more inter-site than intra-site variation in recruits’ asymptotic ACS changes $\alpha^{R}$. This is why we use one value $\alpha_{i}^{R}$ per site $i$, and model it as follows:
+
+$$
+\alpha_{i}^{R}∼𝒩⁢(\alpha_{0}^{R};(\sigma_{\alpha}^{R})^{2})
+$$
+
+When the dynamic equilibrium is reached, annual ACS gain (growth and recruitment) compensates annual ACS loss (mortality). We thus added the following constraint for every site $i$:
+
+$$
+\alpha_{i}^{R⁢r}+\alpha_{i}^{R⁢g}+\alpha_{i}^{R⁢l}=0
+$$
+
+With the same logic as for survivors, we are interested in predicting variation in $\beta^{R}$. Given that we use one value $\alpha_{i}^{R}$ per site $i$ (i.e. all plots in one site $i$ have the same value for $\alpha_{i}^{R}$), we chose to take into account the inter-plot variability as follows:
+
+$$
+\beta_{j}^{R}∼𝒩⁢(\beta_{0}^{R}+\suml=16(\lambda_{l}^{R}\timesV_{j,l})⁢, ⁢(\sigma_{\beta}^{R})^{2})
+$$
+
+### Inference
+
+Bayesian hierarchical models were inferred through MCMC methods using an adaptive form of the Hamiltonian Monte Carlo sampling (Carpenter et al., 2015). Each observation was given a weight proportional to the size of the plot. Codes were developed using the R language (RRID:SCR_001905) (R Developement Core Team, 2015) and the Rstan package (Carpenter et al., 2015). A detailed list of priors is provided in Table 1.
+
+**Table 1.**
+ List of priors used to infer ACS changes in a Bayesian framework. Models are : ($S⁢g$) survivors’ ACS growth, ($S⁢l$) survivors’ ACS loss, ($R⁢r$) new recruits’ ACS, ($R⁢g$) recruits’ ACS growth, ($R⁢l$) recruits’ ACS loss. $\lambda_{l⁢o⁢s⁢s}$ is the parameter relative to the covariate $l⁢o⁢s⁢s$ (logging intensity).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Parameter</th>
+      <th>Prior</th>
+      <th>Justification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S⁢g</td>
+      <td>αjS⁢g</td>
+      <td>𝒰⁢[25,250]</td>
+      <td>On average 100 survivors/ha storing 0.25 to 2.5 MgC each</td>
+    </tr>
+    <tr>
+      <td>S⁢g</td>
+      <td>βjS⁢g</td>
+      <td>𝒰⁢[0.015,0.04]</td>
+      <td>75&lt;t0.95Sg∗&lt;200 yr</td>
+    </tr>
+    <tr>
+      <td>S⁢l</td>
+      <td>βjS⁢l</td>
+      <td>𝒰⁢[0.006,βS⁢g]</td>
+      <td>t0.95Sg&lt;t0.95Sl∗&lt;500 yr</td>
+    </tr>
+    <tr>
+      <td>R⁢r</td>
+      <td>αiR⁢r</td>
+      <td>𝒰⁢[0.1,1]</td>
+      <td>Range of observed values in TmFO control plots</td>
+    </tr>
+    <tr>
+      <td>R⁢r</td>
+      <td>βjR⁢r</td>
+      <td>𝒰⁢[0.006,0.6]</td>
+      <td>5&lt;t0.95Rr∗&lt;500 yr</td>
+    </tr>
+    <tr>
+      <td>R⁢r</td>
+      <td>η</td>
+      <td>𝒰⁢[0,3]</td>
+      <td>Rr(t=0)&lt;3×Rr(t=∞)</td>
+    </tr>
+    <tr>
+      <td>R⁢g</td>
+      <td>αiR⁢g</td>
+      <td>𝒰⁢[0.5,3]</td>
+      <td>Range of observed values in Amazonia (Johnson et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>R⁢g</td>
+      <td>βjR⁢g</td>
+      <td>𝒰⁢[0.006,0.15]</td>
+      <td>20&lt;t0.95Rg∗&lt;500 yr</td>
+    </tr>
+    <tr>
+      <td>R⁢l</td>
+      <td>βjR⁢l</td>
+      <td>𝒰⁢[0.003,0.06]</td>
+      <td>50&lt;t0.95Rl∗&lt;1000 yr</td>
+    </tr>
+    <tr>
+      <td>All models M†</td>
+      <td>λl⁢o⁢s⁢sM</td>
+      <td>𝒰⁢[-βM,βM]</td>
+      <td>Avoid multicollinearity problems</td>
+    </tr>
+    <tr>
+      <td>All models M†</td>
+      <td>(λlM)l≠l⁢o⁢s⁢s</td>
+      <td>𝒰[−βM4,βM4]</td>
+      <td>Avoid multicollinearity problems</td>
+    </tr>
+  </tbody>
+</table>
+
+_∗t0.95=ln(20)β is the time when the ACS change has reached 95% of its asymptotic value.†M is one of the five models: either S⁢g, S⁢l, R⁢r, R⁢g, R⁢l._
+
+### Prediction maps
+
+Maps were obtained with the following steps: (i) spatially-explicit covariates are extracted at the resolution of 30 arc-second from: the pan-tropical carbon map of Avitabile et al. for pre-disturbance aboveground carbon stocks (Avitabile et al., 2016); WorldClim (RRID:SCR_010244) (Hijmans et al., 2005) for annual precipitation and seasonality of precipitation, and the Harmonized World Soil database (Nachtergaele et al., 2008) for topsoil bulk density; (ii) disturbance intensity is set to 40% of pre-logging ACS loss, which is a common value for disturbance intensity after conventional logging in Amazonia (West et al., 2014; Blanc et al., 2009; Martin et al., 2015) , and the relative forest maturity $d⁢a⁢c⁢s$ is set to zero; (iii) parameters are drawn from their previously calibrated distribution; (iv) to simulate random effects, all five parameters ($\alpha$) are taken from their distribution $𝒩⁢(\alpha_{0},\sigma_{\alpha}^{2})$; (v) for every pixel, we estimate the five cumulative ACS changes ($c⁢S⁢g$, $c⁢S⁢l$, $c⁢R⁢r$,$c⁢R⁢g$,$c⁢R⁢l$) 10 years after the 40% ACS loss, given the parameters value and the pixel covariates values extracted from global rasters. Steps (iii) to (v) are repeated 200 times and summary statistics are calculated for every pixel. Because a significant part of our sites have experiment duration lower than 10 years (Figure 1—figure supplement 1), we are less confident in Amazonian-wide predictions after that 10 year period. Maps were elaborated under the R statistical software (RRID:SCR_001905) (R Developement Core Team, 2015).

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.20041.001 In the mouse retina, three different types of photoreceptors provide input to 14 bipolar cell (BC) types. Classically, most BC types are thought to contact all cones within their dendritic field; ON-BCs would contact cones exclusively via so-called invaginating synapses, while OFF-BCs would form basal synapses. By mining publically available electron microscopy data, we discovered interesting violations of these rules of outer retinal connectivity: ON-BC type X contacted only ~20% of the cones in its dendritic field and made mostly atypical non-invaginating contacts. Types 5T, 5O and 8 also contacted fewer cones than expected. In addition, we found that rod BCs received input from cones, providing anatomical evidence that rod and cone pathways are interconnected in both directions. This suggests that the organization of the outer plexiform layer is more complex than classically thought. DOI: http://dx.doi.org/10.7554/eLife.20041.001
+In the mouse retina, three different types of photoreceptors provide input to 14 bipolar cell (BC) types. Classically, most BC types are thought to contact all cones within their dendritic field; ON-BCs would contact cones exclusively via so-called invaginating synapses, while OFF-BCs would form basal synapses. By mining publically available electron microscopy data, we discovered interesting violations of these rules of outer retinal connectivity: ON-BC type X contacted only ~20% of the cones in its dendritic field and made mostly atypical non-invaginating contacts. Types 5T, 5O and 8 also contacted fewer cones than expected. In addition, we found that rod BCs received input from cones, providing anatomical evidence that rod and cone pathways are interconnected in both directions. This suggests that the organization of the outer plexiform layer is more complex than classically thought.
 
 ## Introduction
 
@@ -34,61 +34,67 @@ Here, we analyzed an existing electron microscopy dataset (Helmstaedter et al., 
 
 ## Results
 
-## Identification of S- and M-cones
+### Identification of S- and M-cones
 
-We used the serial block-face electron microscopy (SBEM) dataset
+We used the serial block-face electron microscopy (SBEM) dataset e2006 published by Helmstaedter et al. (2013) to analyze the connectivity between photoreceptors and bipolar cells in the outer plexiform layer (OPL) of the mouse retina (Figure 1A). To this end, we reconstructed the volume of all cone axon terminals (cone pedicles; n = 163) in the dataset as well as the dendritic trees of all BCs (n = 451; Figure 1B, see Materials and methods).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig1-v2.jpg)
 
-**Figure 1.:** (A) Scheme showing vertical section through the mouse retina. (B) Volume-reconstructed cones and all CBC4 cells. (C) Cone pedicles (grey) with CBC9s. BC soma localization is indicated by colored dots. Dashed outlines indicate incomplete cones. (D) Same as in C, but with putative S-cones (blue) and M-cones (green) highlighted. Unidentified cones are shown in grey. Insets indicate the location of the examples shown below of cone pedicles contacted by CBC9 dendrites. (E) Contact parameters used for S-cone identification. ONL, outer nuclear layer; OPL, outer plexiform layer; INL, inner nuclear layer; IPL, inner plexiform layer; GCL, ganglion cell layer.DOI: http://dx.doi.org/10.7554/eLife.20041.002
+**Figure 1.:** (A) Scheme showing vertical section through the mouse retina. (B) Volume-reconstructed cones and all CBC4 cells. (C) Cone pedicles (grey) with CBC9s. BC soma localization is indicated by colored dots. Dashed outlines indicate incomplete cones. (D) Same as in C, but with putative S-cones (blue) and M-cones (green) highlighted. Unidentified cones are shown in grey. Insets indicate the location of the examples shown below of cone pedicles contacted by CBC9 dendrites. (E) Contact parameters used for S-cone identification. ONL, outer nuclear layer; OPL, outer plexiform layer; INL, inner nuclear layer; IPL, inner plexiform layer; GCL, ganglion cell layer.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Diagram showing workflow for identification of S- and M-cones using connectivity with CBC9 cells. (B–D) Side view and horizontal projection of representative examples of cone pedicles (green, M-cone; blue, S-cone) with CBC9 dendrites (yellow, orange, red) with non-invaginating but peripheral contacts (B), with only one CBC9 contact and other CBC9 dendrites passing by (C) and ‘true’ S-cones (D).DOI: http://dx.doi.org/10.7554/eLife.20041.003
+**Figure 1—figure supplement 1.:** (A) Diagram showing workflow for identification of S- and M-cones using connectivity with CBC9 cells. (B–D) Side view and horizontal projection of representative examples of cone pedicles (green, M-cone; blue, S-cone) with CBC9 dendrites (yellow, orange, red) with non-invaginating but peripheral contacts (B), with only one CBC9 contact and other CBC9 dendrites passing by (C) and ‘true’ S-cones (D).
 
 To identify S- and M-cones, we used the fact that type nine cone bipolar cells selectively target S-cones (Figure 1C,D) (Mariani, 1984; Kouyama and Marshak, 1992; Haverkamp et al., 2005; Breuninger et al., 2011). We found 48 contacts of CBC9s and cones, involving 43 cones (Figure 1—figure supplement 1A). We visually assessed all contacts and found that 29 of these were in the periphery of the cone pedicle, where no synapses are expected (Figure 1—figure supplement 1B) (Dowling and Boycott, 1966; Chun et al., 1996). This left 14 potential S-cones with invaginating contacts from at least one CBC9. It has been shown that S-cones are contacted by the dendrites of all neighboring CBC9s and that these contacts occur mostly at the tip of dendritic branches (Haverkamp et al., 2005). Out of the 14 candidate cones, eight cones had only one CBC9 contact. Some of these cones were contacted by a CBC9 dendritic branch that continued past the contact site. Other cones – although contact by one CBC9 – were not contacted by passing dendrites from other CBC9s. The other six cones had at least two invaginating contacts from CBC9s. These originated from two different CBC9s or – in case they originated only from a single CBC9 – at least one of them was formed by a dendritic branch ending at the cone (Figure 1E). We labeled the eight cones that featured only a single CBC9 contact as M-cones (Figure 1—figure supplement 1C), and defined the remaining six candidate cones as S-cones (Figure 1D and Figure 1—figure supplement 1C and D, see Materials and methods). This corresponds to a fraction of 4.8% S-cones (6/124 cones within the dendritic field of at least one CBC9), matching the 3–5% reported in previous studies (Röhlich et al., 1994; Haverkamp et al., 2005).
 
 An alternative scheme for identifying S-cones would have been to classify all cones with at least one invaginating contact from CBC9 as S-cones. This would have resulted in a total of 14 S-cones out of 124 cones (Figure 3—figure supplement 2A) or a fraction of 11.3%. Because this S-cone percentage is much larger than the 3–5% reported earlier (Haverkamp et al., 2005), we consider this scenario as very unlikely (p=0.0037, binomial test, null hypothesis: 5% S-cones, n = 124).
 
-## Classification of photoreceptor-BC contacts
+### Classification of photoreceptor-BC contacts
 
-We next developed an automatic method to distinguish contacts likely corresponding to synaptic connections from false contacts. As the tissue in the dataset was stained to enhance cell-surface contrast to enable automatic reconstruction, it is not possible to distinguish between synaptic contacts based on explicit ultrastructural synaptic markers, such as vesicles, synaptic ribbons or postsynaptic densities (see also discussion in
+We next developed an automatic method to distinguish contacts likely corresponding to synaptic connections from false contacts. As the tissue in the dataset was stained to enhance cell-surface contrast to enable automatic reconstruction, it is not possible to distinguish between synaptic contacts based on explicit ultrastructural synaptic markers, such as vesicles, synaptic ribbons or postsynaptic densities (see also discussion in Helmstaedter et al., 2013). In contrast to the synaptic contacts in the inner plexiform layer studied by Helmstaedter et al. (Helmstaedter et al., 2013), the highly stereotypical morphology of synapses at photoreceptor axon terminals allowed us to classify the contacts (Haverkamp et al., 2000): The ribbon synapses of the cones are placed exclusively in the presynaptic area at the bottom of the cone pedicles. Here, ON-cone bipolar cells (ON-CBCs) make invaginating contacts, where the dendritic tips reach a few hundred nanometers into the presynaptic area of cone pedicles (Figure 2A) (Dowling and Boycott, 1966). In contrast, OFF-cone BCs (OFF-CBCs) make basal contacts in the same area (Figure 2B). These ‘true’ contacts have to be distinguished from contacts in the periphery or at the (out)sides of the cone pedicle as well as contacts between dendrites and cone telodendria, which can happen, for instance as dendrites pass by (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig2-v2.jpg)
 
-**Figure 2.:** (A) Invaginating ON-CBC contact. Schematic drawing (left), EM side view (center) and top view (right). Red and dark grey, BC dendrites; light grey, horizontal cell dendrites; cyan, cone pedicles. (B) Basal/flat OFF-CBC contact as in A. (C) Peripheral (non-synaptic) BC contact as in A. (D–F) Contact area (D) eccentricity (E) contact height (F) of invaginating/basal and non-synaptic contacts for OFF-/ON-CBCs and rod bipolar cells (RBCs). (G–I) Contact area versus eccentricity for OFF-CBC (G), ON-CBC (H) and RBC (I) contacts indicating correctly and incorrectly classified contacts.DOI: http://dx.doi.org/10.7554/eLife.20041.004
+**Figure 2.:** (A) Invaginating ON-CBC contact. Schematic drawing (left), EM side view (center) and top view (right). Red and dark grey, BC dendrites; light grey, horizontal cell dendrites; cyan, cone pedicles. (B) Basal/flat OFF-CBC contact as in A. (C) Peripheral (non-synaptic) BC contact as in A. (D–F) Contact area (D) eccentricity (E) contact height (F) of invaginating/basal and non-synaptic contacts for OFF-/ON-CBCs and rod bipolar cells (RBCs). (G–I) Contact area versus eccentricity for OFF-CBC (G), ON-CBC (H) and RBC (I) contacts indicating correctly and incorrectly classified contacts.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Cone pedicle schemes showing the parameter used for automated contact classification: Contact area (a), eccentricity (b), contact height (c), distances to branch point (d) and dendritic tip (e), smallest angle between contacting dendrite and optical axis (f) and number of contact points between cone pedicle and BC (g). Example invaginating and peripheral contacts between cone (cyan) and BC dendrite(s) (red) are shown as large and small yellow circles, respectively. The optical axis is defined as a perpendicular through the center of the cone pedicle. BC, bipolar cell.DOI: http://dx.doi.org/10.7554/eLife.20041.005
+**Figure 2—figure supplement 1.:** Cone pedicle schemes showing the parameter used for automated contact classification: Contact area (a), eccentricity (b), contact height (c), distances to branch point (d) and dendritic tip (e), smallest angle between contacting dendrite and optical axis (f) and number of contact points between cone pedicle and BC (g). Example invaginating and peripheral contacts between cone (cyan) and BC dendrite(s) (red) are shown as large and small yellow circles, respectively. The optical axis is defined as a perpendicular through the center of the cone pedicle. BC, bipolar cell.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** EM slices (side view) showing examples of contacts where the automated contact classification did not match the human label. See also animated versions (Video 1 and 2).DOI: http://dx.doi.org/10.7554/eLife.20041.006
+**Figure 2—figure supplement 2.:** EM slices (side view) showing examples of contacts where the automated contact classification did not match the human label. See also animated versions (Video 1 and 2).
 
-In total, we found n = 20,944 contacts in n = 2620 pairs of cones and BCs. We trained a support vector machine (SVM) classifier to distinguish whether or not an individual BC obtains input from a cone (as opposed to classifying each individual contact site, see Materials and methods). To this end, we defined a set of seven features, including contact area, eccentricity and contact height, which allowed distinguishing between potential synaptic contacts and ‘false’ contacts (Figure 2D–F, Figure 2—figure supplement 1). For training of the classifier, we manually labeled a randomly selected set of contacts (n = 50 for OFF-CBCs, n = 108 for ON-CBCs and n = 67 for RBCs). Given the highly stereotypical anatomy of the photoreceptor-BC synapse, labeling performed by an experienced human observer is expected to be very accurate – we here consider therefore the human labels as ‘ground-truth’. We trained separate classifiers for ON-CBCs, OFF-CBCs and RBCs and found that they could reliably distinguish between true and false contacts, with a success rate of ~90% (leave-one-out cross-validation accuracy, Figure 2G–I). Deviations between the labels of the automatic classifier and the human labels did not vary systematically with BC type (see Materials and methods). Such deviations typically occurred when human labels were assigned based on more global structural features of a contact; such more contextual features were not included in the features used for automatic classification (examples of misclassified contacts are shown in Figure 2—figure supplement 2 and Videos 1–3).10.7554/eLife.20041.007Video 1.Animated 3D stack of an ON contact (human: contact, algorithm: no contact).DOI: http://dx.doi.org/10.7554/eLife.20041.00710.7554/eLife.20041.008Video 2.Animated 3D stack of an ON contact (human: no contact, algorithm: contact).DOI: http://dx.doi.org/10.7554/eLife.20041.00810.7554/eLife.20041.009Video 3.Animated 3D stack of a RBC contact (human: no contact, algorithm: contact).DOI: http://dx.doi.org/10.7554/eLife.20041.009
+In total, we found n = 20,944 contacts in n = 2620 pairs of cones and BCs. We trained a support vector machine (SVM) classifier to distinguish whether or not an individual BC obtains input from a cone (as opposed to classifying each individual contact site, see Materials and methods). To this end, we defined a set of seven features, including contact area, eccentricity and contact height, which allowed distinguishing between potential synaptic contacts and ‘false’ contacts (Figure 2D–F, Figure 2—figure supplement 1). For training of the classifier, we manually labeled a randomly selected set of contacts (n = 50 for OFF-CBCs, n = 108 for ON-CBCs and n = 67 for RBCs). Given the highly stereotypical anatomy of the photoreceptor-BC synapse, labeling performed by an experienced human observer is expected to be very accurate – we here consider therefore the human labels as ‘ground-truth’. We trained separate classifiers for ON-CBCs, OFF-CBCs and RBCs and found that they could reliably distinguish between true and false contacts, with a success rate of ~90% (leave-one-out cross-validation accuracy, Figure 2G–I). Deviations between the labels of the automatic classifier and the human labels did not vary systematically with BC type (see Materials and methods). Such deviations typically occurred when human labels were assigned based on more global structural features of a contact; such more contextual features were not included in the features used for automatic classification (examples of misclassified contacts are shown in Figure 2—figure supplement 2 and Videos 1–3).
 
-## Contacts between cones and CBCs
+![Video 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-media1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/20041/elife-20041-media2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/20041/elife-20041-media3.mp4.jpg)
+
+### Contacts between cones and CBCs
 
 We analyzed contacts between CBCs and S- and M-cones in the center of the EM stack where cones were covered by a complete set of all BC types. There was no difference in the number of CBCs contacted by S- and M-cones with 12.2 ± 1.5 CBCs (n = 5 cones, mean ± SEM) for S-cones and 12.2 ± 0.4 CBCs (n = 71 cones) for M-cones, respectively. Similarly, the total number of contact points per cone was almost identical for S- and M-cones with an average of 108 ± 24 per S- and 105 ± 5 per M-cone.
 
-We first studied the convergent connectivity onto the different CBC types and studied how many cones provide input to a single BC of each type (
+We first studied the convergent connectivity onto the different CBC types and studied how many cones provide input to a single BC of each type (Figure 3A and B). To this end, we classified type 5 CBCs, which had not been further subdivided by Helmstaedter et al. (Helmstaedter et al., 2013), into three types (Figure 3—figure supplement 1, see Materials and methods) in agreement with recent reports (Greene et al., 2016).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig3-v2.jpg)
 
-**Figure 3.:** (A) Volume-reconstructed single BC dendrite (red) contacting numerous cone pedicles (cyan). (B) Number of S- and M-cones contacted by different CBC types. (C) Volume-reconstructed single cone (cyan) contacted by multiple BCs (orange/red). (D) Number of CBCs per type contacted by individual S- and M-cones. (E) Example cone array with CBC6 and CBC8 contacting cones. Grey, non-contacted cones; blue, contacted cones. (F) Number of contacted cones and cones within dendritic field for different CBC types. (G) Fraction of contacted cones/cones within the dendritic field. (H) Kernel density estimate of the distribution of contacted cones as function of distance from BC somata. (I) Same as H. but distance normalized by dendritic field size. Bars in B,D,F indicate 95% CI.DOI: http://dx.doi.org/10.7554/eLife.20041.010
+**Figure 3.:** (A) Volume-reconstructed single BC dendrite (red) contacting numerous cone pedicles (cyan). (B) Number of S- and M-cones contacted by different CBC types. (C) Volume-reconstructed single cone (cyan) contacted by multiple BCs (orange/red). (D) Number of CBCs per type contacted by individual S- and M-cones. (E) Example cone array with CBC6 and CBC8 contacting cones. Grey, non-contacted cones; blue, contacted cones. (F) Number of contacted cones and cones within dendritic field for different CBC types. (G) Fraction of contacted cones/cones within the dendritic field. (H) Kernel density estimate of the distribution of contacted cones as function of distance from BC somata. (I) Same as H. but distance normalized by dendritic field size. Bars in B,D,F indicate 95% CI.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) First three PCA components for CBC5 density profiles in the IPL. (B) Stratification depth of CBC5T, 5O and 5I axon terminals in relation to the OFF- and ON-ChAT bands. (C) Dendritic (top) and axonal (bottom) mosaics for CBC5T, 5O and 5I cells.DOI: http://dx.doi.org/10.7554/eLife.20041.011
+**Figure 3—figure supplement 1.:** (A) First three PCA components for CBC5 density profiles in the IPL. (B) Stratification depth of CBC5T, 5O and 5I axon terminals in relation to the OFF- and ON-ChAT bands. (C) Dendritic (top) and axonal (bottom) mosaics for CBC5T, 5O and 5I cells.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Cone pedicle array with CBC9s highlighted showing alternative S-cone classification. CBC9 somata are indicated by black dots, S-cones in blue, M-cones in green and unidentified cones in grey. (B) Number of S- and M-cones contacted by different CBC types. (C) Number of CBC types contacted by individual S- and M-cones.DOI: http://dx.doi.org/10.7554/eLife.20041.012
+**Figure 3—figure supplement 2.:** (A) Cone pedicle array with CBC9s highlighted showing alternative S-cone classification. CBC9 somata are indicated by black dots, S-cones in blue, M-cones in green and unidentified cones in grey. (B) Number of S- and M-cones contacted by different CBC types. (C) Number of CBC types contacted by individual S- and M-cones.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** (A) Side view of four volume-reconstructed cone pedicle (cyan) and CBC8 dendrite (red). (B) Horizontal projection of the neurite structures shown in (A). Arrow indicates the only invaginating ON-CBC contact along the dendrite.DOI: http://dx.doi.org/10.7554/eLife.20041.013
+**Figure 3—figure supplement 3.:** (A) Side view of four volume-reconstructed cone pedicle (cyan) and CBC8 dendrite (red). (B) Horizontal projection of the neurite structures shown in (A). Arrow indicates the only invaginating ON-CBC contact along the dendrite.
 
 Most CBC types were contacted predominantly by M-cones, with an average of 2–6 cones contacting individual CBCs. One exception was the CBC9 that – by our definition of S-cones – received considerable S-cone input. We also detected a few contacts between CBC9s and M-cones; these are a consequence of our restrictive definition of S-cone and originate from those cones for which we found only single CBC9 contacts, such that they were classified as M-cone (see above, Figure 1; see also Figure 3—figure supplement 2).
 
@@ -100,75 +106,75 @@ Finally, we studied the contact density along CBC dendrites (Figure 3H and I). T
 
 As a control, we also ran the connectivity analysis with the set of S-cones from our alternative, more liberal classification (Figure 3—figure supplement 2B,C). In this analysis, CBC9 was the only color specific BC type whereas all other BC types, including CBC1, contacted both S- and M-cones without preferences (Figure 3—figure supplement 2C). This contradicts the result of a previous analysis based on physiology, which implies that CBC1 does not receive S-cone input (Breuninger et al., 2011).
 
-## The CBCX has few and atypical cone contacts
+### The CBCX has few and atypical cone contacts
 
-CBCX had an atypical connectivity pattern compared to other CBC types, so we decided to study its connections in more detail. This BC type has only recently been identified by (
+CBCX had an atypical connectivity pattern compared to other CBC types, so we decided to study its connections in more detail. This BC type has only recently been identified by (Helmstaedter et al., 2013; Shekhar et al., 2016). It has a compact dendritic tree but a relatively wide axonal terminal system that stratifies narrowly at approximately the same depth as CBC5O and 5I do. Interestingly, CBCX seems to sample the cone input very sparsely, with input from only two cones on average, and contacting only about 20% of the cones available in its dendritic field (Figure 3C,D and G). In fact, dendrites of CBCX oftentimes passed underneath cones or even stopped shortly before cone pedicles without making contacts at all (Figure 4A and B). It is unlikely that this resulted from incomplete skeletons for these BCs, as all skeletons were independently verified for this study and corrected where necessary (see Materials and methods).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig4-v2.jpg)
 
-**Figure 4.:** (A) Volume-reconstructed CBCX dendritic arbor (red) contacting few cone pedicles (cyan, invaginating contact; grey, tip contact). (B) Same exemplary cone array as in A. with CBCX dendritic arbor contacting cones. Light grey, non-contacted cones; cyan, invaginating contacts; dark grey, tip contacts. (C) EM image showing tip contact between CBCX (red) and cone pedicles (cyan), top view (left) and side view (right). (D) Invaginating and tip contacts in CBCXs and other ON-CBCs. Bars in D. indicate 95% CI.DOI: http://dx.doi.org/10.7554/eLife.20041.014
+**Figure 4.:** (A) Volume-reconstructed CBCX dendritic arbor (red) contacting few cone pedicles (cyan, invaginating contact; grey, tip contact). (B) Same exemplary cone array as in A. with CBCX dendritic arbor contacting cones. Light grey, non-contacted cones; cyan, invaginating contacts; dark grey, tip contacts. (C) EM image showing tip contact between CBCX (red) and cone pedicles (cyan), top view (left) and side view (right). (D) Invaginating and tip contacts in CBCXs and other ON-CBCs. Bars in D. indicate 95% CI.
 
 We re-examined all detected contacts between CBCXs and cones and found that very few of those were ‘classical’ invaginating ON-CBC contacts (3 out of 19 contacts, n = 7 cells, Figure 4B–D). The vast majority were ‘tip’ contacts (16 out of 19 contacts, n = 7 cells), which were similar to basal contacts made by OFF-CBC dendrites (Figure 4B–D). The available data was not conclusive with regards to the question whether these tip contacts of CBCX are smaller than those of OFF-CBCs (median area: 0.05 µm2 for n = 22 CBCX contacts; 0.10 µm2 for n = 23 OFF-CBC contacts, but p=0.17, Wilcoxon ranksum test).
 
 In contrast to the CBCX, the other ON-CBC types made mostly invaginating contacts (71 out of 81 contacts, n = 12 cells, two cells per BC type, Figure 4D), indicating a significant effect of cell type on contact type (GLM with Poisson output distribution, n = 38, interaction: p=3.6x10−7, see Materials and methods). We checked if CBCX receive rod input instead but did not observe any rod contacts (see below). Thus, the CBCX appears to be an ON-CBC with both very sparse and atypical cone contacts similar to those made by OFF-CBCs. Still, based on the axonal stratification depth (Helmstaedter et al., 2013) and recent electrophysiological and functional recordings (Ichinose et al., 2014; Franke et al., 2016) this BC type is most likely an ON-CBC, supported by its mGluR6 expression (Shekhar et al., 2016).
 
-## RBCs make contacts with cones
+### RBCs make contacts with cones
 
 We next analyzed the connectivity between photoreceptors and rod bipolar cells (RBCs) to test the hypothesis that RBCs may contact cones directly (Pang et al., 2010). Three cells labeled as RBC in Helmstaedter et al. (Helmstaedter et al., 2013) were excluded from this analysis, as they did not contact any rods (Figure 5—figure supplement 1). We also found some rods not contacted by any RBC, which is likely due to incomplete tracing of the fine dendritic tips of some RBCs.
 
-In fact, RBCs did not only contact rod spherules but also cone pedicles (
+In fact, RBCs did not only contact rod spherules but also cone pedicles (Figure 5A,B). These contacts were typical ON-CBC contacts with invaginating dendritic tips into the cone pedicles (Figure 5B). To quantify the cone-to-RBC connectivity in more detail, we counted the number of cones contacted by an individual RBC. While the vast majority (75%) contacted at least one cone, only 25% of all RBCs (n = 141) did not contact any (Figure 5C). However, we did not find a preference of RBCs to connect S- or M-cones (Figure 5D). Conversely, 45% of cones contacted a single RBC, ~35% spread their signal to two to four RBCs, and only 20% of the cones did not make any contact with an RBC (Figure 5E). Our finding provides an anatomical basis to the physiologically postulated direct cone input into a subset of RBCs (Pang et al., 2010). Next, we evaluated whether RBCs contacting only rods or both cone(s) and rods represent two types of RBC, as hypothesized by Pang et al. (2010). However, the two groups of RBCs did not differ regarding the stratification depth of their axonal arbor (Figure 5—figure supplement 2A), number of rod contacts (Figure 5—figure supplement 2B) or potential connectivity to AII amacrine cells (Figure 5—figure supplement 2C), and did not form independent mosaics (Figure 5—figure supplement 2D). In addition, the dendritic field size (116 vs 131 µm², p=0.1, n = 139 RBCs) and the number of dendritic tips (46 vs. 45.5, p=0.8, n = 12 manually counted RBCs) did not differ significantly between the two groups. Therefore, the available anatomical data argue against two types of RBC.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig5-v2.jpg)
 
-**Figure 5.:** (A) Volume-reconstructed RBC (red) contacting both rods (magenta) and cone pedicles (cyan). (B) EM images showing invaginating contact between cone (cyan) and RBC (red), side view (top) and top view (bottom). (C) Number of RBCs contacted by cones. (D). Number of RBCs contacted by S- and M cones. (E) Number of cones contacted by RBCs. Bars in D. indicate 95% CI.DOI: http://dx.doi.org/10.7554/eLife.20041.015
+**Figure 5.:** (A) Volume-reconstructed RBC (red) contacting both rods (magenta) and cone pedicles (cyan). (B) EM images showing invaginating contact between cone (cyan) and RBC (red), side view (top) and top view (bottom). (C) Number of RBCs contacted by cones. (D). Number of RBCs contacted by S- and M cones. (E) Number of cones contacted by RBCs. Bars in D. indicate 95% CI.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A–C) Three BCs classified as RBCs by Helmstaedter et al. (2013) but not contacting rods in the present study, these cells were therefore excluded from the analysis (for each cell two projections from different angles are shown). (D) BC classified as CBC9 but excluded from this study due to lack of complete dendritic tree.DOI: http://dx.doi.org/10.7554/eLife.20041.016
+**Figure 5—figure supplement 1.:** (A–C) Three BCs classified as RBCs by Helmstaedter et al. (2013) but not contacting rods in the present study, these cells were therefore excluded from the analysis (for each cell two projections from different angles are shown). (D) BC classified as CBC9 but excluded from this study due to lack of complete dendritic tree.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Relative density of RBC spherules in the IPL using both dendritic ON and OFF starburst amacrine cell (SAC) bands (top) and only the dendritic ON SAC band (bottom) for depth correction (shading: SEM). (B) Number of rods contacted by RBCs contacting only rods or both rods and cones (95% confidence interval, CI). (C) Contact area with AIIs for RBCs contacting only rods or both rods and cones (95% CI). (D) Dendritic (top) and axonal (bottom) mosaics for RBCs contacting rods or both rods and cones.DOI: http://dx.doi.org/10.7554/eLife.20041.017
+**Figure 5—figure supplement 2.:** (A) Relative density of RBC spherules in the IPL using both dendritic ON and OFF starburst amacrine cell (SAC) bands (top) and only the dendritic ON SAC band (bottom) for depth correction (shading: SEM). (B) Number of rods contacted by RBCs contacting only rods or both rods and cones (95% confidence interval, CI). (C) Contact area with AIIs for RBCs contacting only rods or both rods and cones (95% CI). (D) Dendritic (top) and axonal (bottom) mosaics for RBCs contacting rods or both rods and cones.
 
-## Quantification of rod to OFF-CBC contacts
+### Quantification of rod to OFF-CBC contacts
 
-Analogous to the analysis above, we skeletonized and volume rendered a complete set of over 2000 neighboring rod spherules (about 50% of the EM field,
+Analogous to the analysis above, we skeletonized and volume rendered a complete set of over 2000 neighboring rod spherules (about 50% of the EM field, Figure 6A, Figure 6—figure supplement 1) and identified rod-to-bipolar cell connections. In addition to the well-described invaginating rod-to-RBC connections (Figure 6B), we also found basal contacts between OFF-CBCs and rods close to the invaginating RBC dendrites (Figure 6C), as described earlier (Hack et al., 1999; Mataruga et al., 2007; Haverkamp et al., 2008; Tsukamoto and Omi, 2014). We did not find any contacts between ON-CBCs and rods (in agreement with Tsukamoto and Omi, 2014; but see Tsukamoto et al., 2007).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig6-v2.jpg)
 
-**Figure 6.:** (A) Volume-reconstructed, neighboring rod spherules (right) in one half of the field of the reconstructed cone pedicles (left). (B) Rod spherule (magenta) with invaginating dendrites of two RBCs (orange, red). Schematic drawing (left), EM images side view (middle) and top view (right). (C) Rod spherule (magenta) with basal contacts by OFF-CBCs (yellow). Schematic (left), volume-reconstructed vertical view (middle), EM image with top view (right). The latter also shows an invaginating RBC dendrite (red). (D–F). Number of rods (and fraction) contacted by RBCs (D,E), and OFF-CBC types (D, F). Bars in D. indicate 95% CI.DOI: http://dx.doi.org/10.7554/eLife.20041.018
+**Figure 6.:** (A) Volume-reconstructed, neighboring rod spherules (right) in one half of the field of the reconstructed cone pedicles (left). (B) Rod spherule (magenta) with invaginating dendrites of two RBCs (orange, red). Schematic drawing (left), EM images side view (middle) and top view (right). (C) Rod spherule (magenta) with basal contacts by OFF-CBCs (yellow). Schematic (left), volume-reconstructed vertical view (middle), EM image with top view (right). The latter also shows an invaginating RBC dendrite (red). (D–F). Number of rods (and fraction) contacted by RBCs (D,E), and OFF-CBC types (D, F). Bars in D. indicate 95% CI.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Contact area versus distance to RBC contact point for OFF-CBC-rod contacts (A) and contact area versus eccentricity for RBCs (B) contacts indicating correctly and incorrectly classified contacts.DOI: http://dx.doi.org/10.7554/eLife.20041.019
+**Figure 6—figure supplement 1.:** Contact area versus distance to RBC contact point for OFF-CBC-rod contacts (A) and contact area versus eccentricity for RBCs (B) contacts indicating correctly and incorrectly classified contacts.
 
 A single RBC contacted about 35 rods (Figure 6D), which is slightly more than what was recently reported (~25 rods, Tsukamoto and Omi, 2013). A single rod contacted one or two RBCs, but very rarely no RBC or more than two (Figure 6E). In all cases with two invaginating dendrites, the dendrites belonged to two different RBCs (n = 30 rods). The rods without RBC contacts were mainly located at the border of the reconstructed volume, where we could not recover all RBCs. The number of rods contacting OFF-CBCs was much lower: Whereas CBC1 and CBC2 did not receive considerable rod input, CBC3A, CBC3B and CBC4 were contacted by 5–10 rods, with CBC3B receiving the strongest rod input (Figure 6D).
 
 ## Discussion
 
-We analyzed an existing electron microscopy dataset (
+We analyzed an existing electron microscopy dataset (Helmstaedter et al., 2013) to quantify the connectivity between photoreceptors and bipolar cells. We found interesting violations of established principles of outer retinal connectivity: The newly discovered CBCX (Helmstaedter et al., 2013), likely an ON-CBC (Ichinose et al., 2014; Franke et al., 2016), had unexpectedly few and mostly atypical basal contacts to cones. While CBC types 5T, 5O and 8 also contacted fewer cones than expected from their dendritic field, they exhibited ‘standard’ invaginating synapses. In addition, we provide anatomical evidence that rod and cone pathways are interconnected, showing frequent cone-RBC contacts. The emerging picture of BC types with their input profiles are summarized in Figure 7.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20041/elife-20041-fig7-v2.jpg)
 
-**Figure 7.:** Representative examples of bipolar cell types in the mouse retina are shown. The number of cones in the dendritic field number and contacted photoreceptors are given for each type.DOI: http://dx.doi.org/10.7554/eLife.20041.020
+**Figure 7.:** Representative examples of bipolar cell types in the mouse retina are shown. The number of cones in the dendritic field number and contacted photoreceptors are given for each type.
 
-## Does a ‘contact’ represent a synaptic connection?
+### Does a ‘contact’ represent a synaptic connection?
 
 Since the dataset we used was not labeled for synaptic structures, we used automatic classifiers based on structural criteria to identify putative synaptic contacts between BCs and photoreceptors. Due to the highly stereotypical anatomy of the photoreceptor-BC synapse, these criteria allow unambiguous identification of synaptic sites for trained humans (see also Results). For example, we used the proximity of the closest contact to the center of the cone pedicle region as a feature, where presynaptic ribbons have been reported at the ultrastructural level (Dowling and Boycott, 1966; Chun et al., 1996).
 
 The overall accuracy of the classifiers evaluated with human annotated labels was high (~90%). Nevertheless, it is possible that a few contacts were misclassified. Manual quality control, however, revealed no systematic errors. Therefore it is unlikely that classification errors affected our main conclusions. Mismatches between human and classifier labels usually occurred when the human used the global context for the assessment of a contact, knowledge that is not easily transferred into an algorithm (Figure 2—figure supplement 2). Still, human error cannot be ruled out: For instance, contact points labeled by humans as non-synaptic may feature a gap junction and are therefore functional rather than random. For reference, all data including software for classifying and examining BC-cone contacts is available online.
 
-## Is there an effect of retinal location?
+### Is there an effect of retinal location?
 
 Unfortunately, the retinal location of the EM stack used here is unknown (Helmstaedter et al., 2013); it may originate from the ventral retina, where M-cones co-express S-opsin (Röhlich et al., 1994; Baden et al., 2013) However, as ‘true’ S-cones were shown to be evenly distributed across the retina (Haverkamp et al., 2005), CBC9 connectivity can be used for identification of S-cones independent of location. Nevertheless, it cannot be excluded that opsin co-expression in M-cones in the ventral retina may influence the connectivity patterns between the M-cones and the remaining bipolar cell types.
 
-## Sparse contacts between some ON CBC types and cones
+### Sparse contacts between some ON CBC types and cones
 
 We found that ON-CBCs 5T, 5O, X and 8 contact fewer cones than expected from the size of their dendritic field. We observed that many of their dendrites passed by the cone pedicles with a distance of 1–3 µm or even ended under a cone pedicle without contacting it (Figure 3—figure supplement 1). This is in agreement with a recent study reporting that CBC8 does not contact all cones within its dendritic field (Dunn and Wong, 2012), but in contrast to earlier studies that concluded that different diffuse BC types receive input from all cones within their dendritic field (Boycott and Wässle, 1991; Wässle et al., 2009). However, a crucial difference with the earlier studies and our study is spatial resolution: Conventional light microscopy can resolve depth with a resolution of several hundreds of nanometers, whereas the EM dataset we used has a resolution of 25 nm, allowing us to more accurately assess whether pre- and postsynaptic structures are in contact with each other.
 
 Could diffusion-based synaptic signaling play a role in ON-CBCs with sparse contacts? ‘Diffusion-based’ synaptic contacts have been proposed for OFF-CBCs (DeVries et al., 2006) and between cones (Szmajda and Devries, 2011). However, although diffusion-based transmission may be present in the outer retina, there is no evidence so far that cone signals reach bipolar cells that neither make invaginating or basal contacts (i.e. with dendrites just passing by a cone pedicle).
 
-## CBCX makes atypical contacts with cones
+### CBCX makes atypical contacts with cones
 
 As shown above, the CBCX makes the fewest contacts with cones of all ON CBCs. On average, they contacted only about two cones, representing only 20% of the cones within the area of their dendrites. This finding is in agreement with a recent single-cell RNA-seq study, which found that CBCXs feature lower expression levels for metabotropic glutamate receptor mGluR6 (grm6) – the hallmark of ON-BCs – compared to other ON-CBC types (Shekhar et al., 2016). The mouse CBCX is reminiscent of the giant CBC in macaque retina (Joo et al., 2011, Tsukamoto and Omi, 2016) with respect to several features: Also the latter has a very large and sparsely branched dendritic tree and a relatively large axonal arbor that stratifies in the middle of the IPL and contacts only about 50% of the cones in its dendritic field.
 
@@ -176,7 +182,7 @@ In contrast to all other ON-CBCs, we found that the vast majority of CBCX contac
 
 Interestingly, CBCX contacts in the IPL also appear to be distinct from those of other BC types: First, the majority of cells contacted by CBCX in the IPL are amacrine cells rather than ganglion cells (Helmstaedter et al., 2013). Second, they form sparse contacts relative to their axon terminal size with comparatively few cells. Thus, the CBCX seems to be an exception, an unusual BC type in many respects in addition to its sparse and atypical connectivity properties in the OPL, reminiscent of a recently described dendrite-less interneuron type that expresses BC-specific genes (Shekhar et al., 2016) and was named GluMI (glutamatergic monopolar interneuron) (Della Santina et al., 2016). It is conceivable that – similar to the GluMI – the CBCX is evolutionary on its way to retracting its dendrites. Alternatively, CBCX develops a tad later than other CBC types and most potential synaptic sites at cone ribbons are already occupied, such that the CBCX can only form few connections – reminiscent of the situation in primate (see above).
 
-## May RBCs form an additional photopic ON channel?
+### May RBCs form an additional photopic ON channel?
 
 We found that cones connect to 75% of RBCs; in many cases, one cone contacted multiple RBCs. In turn, 35% of RBCs received converging input from several cones. This massive cone input via invaginating synapses to RBCs suggests a prominent use of the primary rod pathway (Bloomfield and Dacheux, 2001) during photopic conditions. Consistent with our findings, RBCs can be activated under photopic light conditions (Franke et al., 2016). However, since rods recover at high light levels (Blakemore and Rushton, 1965), the functional significance of cone input to RBC remains unclear. In principle, it is possible that the observed cone-RBC synapses are developmental ‘leftovers’ without physiological relevance, but as the cone-RBC contacts look like standard cone-CBC invaginating synapses, we think that it is more likely that they contribute to RBC activation under photopic conditions, especially in mid-range light intensities where cones are active but rods not yet recovering (Tikidji-Hamburyan et al., 2015).
 
@@ -184,17 +190,17 @@ If this was the case, cone activation of RBCs could indirectly inhibit OFF-CBCs 
 
 Based on the physiological finding that only a subset of RBCs receive input from cones, Pang et al. (2010) suggested that there may be two distinct RBC types, with the rod-only one having axon terminals ending closer to the ganglion cell layer. Our data do not provide evidence for two RBC types based on the connectivity in the outer retina. This agrees well with recent findings from single-cell RNA-seq experiments, where all RBCs fell into a single genetic cluster with little heterogeneity (Shekhar et al., 2016).
 
-## OFF CBC types contact different numbers of rods
+### OFF CBC types contact different numbers of rods
 
 We quantified the number of rods contacting the five OFF-CBC types. Whereas CBC1 and 2 received almost no rod input, we observed flat/basal contacts between rods and types CBC3A, 3B and 4, providing a quantitative confirmation of this finding (Mataruga et al., 2007; Haverkamp et al., 2008; Tsukamoto and Omi, 2014). CBC3A and four received input from ~5 rods in addition to the ~5 cones contacted by them. CBC3B sampled from the same number of cones but was contacted by about twice as many rods. Since these basal contacts between rods and OFF CBCs have been shown to express AMPA receptors (Hack et al., 1999), rods likely provide considerable input to OFF-CBCs, possibly representing a distinct scotopic OFF channel complementing the scotopic ON channel via RBCs. Interestingly, the morphologically similar CBC3A and 3B may obtain their (functional) differences not only from the expression of different ionotropic glutamate receptors (Puller et al., 2013) but also from their connectivity with rods.
 
-## Conclusion
+### Conclusion
 
 Here, we performed a systematic quantitative analysis of the photoreceptor-to-bipolar cell synapse. We showed that there are exceptions to several established principles of outer retinal connectivity. In particular, we found several ON-BC types that contacted only a relatively small fraction of the cones in their dendritic field. We also find that rod and cone pathways already interact strongly in the outer plexiform layer. Whether these are general features of mammalian retinas or evolutionary specializations unique to the mouse remains to be seen.
 
 ## Materials and methods
 
-## Dataset and preprocessing
+### Dataset and preprocessing
 
 We used the SBEM dataset e2006 published by (Helmstaedter et al., 2013) for our analysis (http://www.neuro.mpg.de/connectomics). The dataset has a voxel resolution of 16.5×16.5×25 nm with dimensions 114 µm × 80 µm × 132 µm. We performed volume segmentation of the outer plexiform layer (OPL) using the algorithms of (Helmstaedter et al., 2013). The preprocessing of the data consisted of three steps: (i) Segmentation of the image stack, (ii) merging of the segmented regions and (iii) collection of regions into cell volumes based on traced skeletons.
 
@@ -204,34 +210,263 @@ We identified 163 cone pedicles and created skeletons spanning their volume usin
 
 Next, we used the algorithm by (Helmstaedter et al., 2013) to detect and calculate the position and area of 20,944 contact points between cone pedicles and BC dendrites and 7993 contact points between rod spherules and BC dendrites. To simplify the later visual inspection of contacts, we used the reconstructed cell volumes to generate colored overlays for the raw data to highlight the different cells in KNOSSOS.
 
-## Identification of S-cones
+### Identification of S-cones
 
 We detected 169 contacts in 51 pairs of CBC9s and cones. Upon manual inspection, we found a total of 32 invaginating (potentially synaptic) contacts between 6 CBC9s and 14 cone pedicles.
 
 Based on immunocytochemistry, it has been shown that S-cones are contacted by all CBC9 within reach and that CBC9 contacts to S-cones are mostly at the tips of the dendrites (Haverkamp et al., 2005). For all 14 contacted cones, we analyzed the number of invaginating CBC9 contacts, the number of contacting CBC9s, the fraction of CBC9 with dendrites close to the cone that make contact and whether the dendrites end at the cone or continue beyond it (Figure 1E). Based on these criteria, we classified 6 out of these 14 cones as S-cones (see also Figure 1—figure supplement 1). In addition to our main analysis, we present an alternative analysis that considers the case if all 14 cones were counted as S-cones (Figure 3—figure supplement 2).
 
-## CBC5 classification
+### CBC5 classification
 
-CBC5s were classified initially based on their connectivity to ganglion cells and amacrine cells into types 5A and 5R, where 5R was a group containing multiple types (Helmstaedter et al., 2013). In addition, some CBC5s could not be classified due to a lack of axonal overlap with the reconstructed ganglion cells of the types used for classification. Considering the separate coverage factors for dendritic and axonal overlap of all CBC5s together (OPL: 3.14, IPL: 2.89), dividing them into three subtypes is conceivable considering the numbers for other CBC types (Table 1). This has already been suggested by (Greene et al., 2016), who divide CBC5s into three subtypes based on axonal density profiles (using a different EM dataset that includes only the inner retina).10.7554/eLife.20041.021Table 1.OPL hull area: Average area of convex hull of dendritic field in OPL per cell type [µm2], mean ± SEM; OPL cov.: coverage factor derived from convex hulls by computing the sum of convex hull areas divided by area of the union of convex hulls; OPL cov. cones: coverage factor computed from cones by computing the sum of the number of cones in the dendritic field of each cell divided by the number of cones in the joint dendritic field; Wässle: coverage values from Wässle et al. (2009) computed by the same method as OPL cov. cones; IPL hull area: Average area of convex hull of the axonal field in IPL per cell type [µm2], mean ± SD; IPL cov: analogous to OPL cov.DOI: http://dx.doi.org/10.7554/eLife.20041.021TypeNOPL hull area [µm2]OPL cov.OPL cov. conesWässleIPL hull areaIPL cov.CBC126175 ± 161.171.481.48376 ± 161.52CBC234204 ± 191.181.551.5353 ± 231.52CBC3A22273 ± 281.171.371.25308 ± 281.21CBC3B32292 ± 191.411.901.55224 ± 91.24CBC430302 ± 201.321.861.6274 ± 231.33CBC5T22256 ± 301.131.30-402 ± 251.28CBC5O22380 ± 411.351.60-359 ± 231.17CBC5I25459 ± 301.551.95-276 ± 141.22CBCX7433 ± 341.021.12-899 ± 1261.12CBC645125 ± 111.141.58-165 ± 111.17CBC729254 ± 181.221.651.3274 ± 111.16CBC861249 ± 1441.141.21-699 ± 551.02CBC962223 ± 2271.841.45-1605 ± 3351.43RBC141128 ± 32.174.37-65 ± 31.40
+CBC5s were classified initially based on their connectivity to ganglion cells and amacrine cells into types 5A and 5R, where 5R was a group containing multiple types (Helmstaedter et al., 2013). In addition, some CBC5s could not be classified due to a lack of axonal overlap with the reconstructed ganglion cells of the types used for classification. Considering the separate coverage factors for dendritic and axonal overlap of all CBC5s together (OPL: 3.14, IPL: 2.89), dividing them into three subtypes is conceivable considering the numbers for other CBC types (Table 1). This has already been suggested by (Greene et al., 2016), who divide CBC5s into three subtypes based on axonal density profiles (using a different EM dataset that includes only the inner retina).
 
-We followed the classification approach suggested by Greene et al. (Greene et al., 2016): First, we calculated the densities of both ON- and OFF-starburst amacrine cells (SACs) dendrites along the optical axis. We fitted the peak of these profiles with a surface using bivariate B-splines of third order. Next, we corrected the density profiles of CBC5 axonal trees by mapping the SAC surfaces to parallel planes. We then applied principal component analysis (Figure 3—figure supplement 1A) to obtain a first clustering into three groups by fitting a Gaussian mixture model (GMM) (Bishop, 2006) with three components onto the first three principal components of the axon density profiles. The resulting density profiles of the three clusters matches those found by (Greene et al., 2016) (Figure 3—figure supplement 1B). As we noted a few violations of the postulated tiling of the retina by each type (Seung and Sümbül, 2014), we implemented a heuristic to shift cells to a different cluster or swap pairs of cells optimizing a cost function including both overlap in IPL and OPL as well as the GMM clustering (Figure 3—figure supplement 1):ℒ=λ1∑i(xi−μci)TΣci(xi−μci)+λ2∑i,jδci,cjOij,OPL∑iAi,OPL+λ2∑i,jδci,cjOij,IPL∑iAi,IPL
+**Table 1.**
+ OPL hull area: Average area of convex hull of dendritic field in OPL per cell type [µm2], mean ± SEM; OPL cov.: coverage factor derived from convex hulls by computing the sum of convex hull areas divided by area of the union of convex hulls; OPL cov. cones: coverage factor computed from cones by computing the sum of the number of cones in the dendritic field of each cell divided by the number of cones in the joint dendritic field; Wässle: coverage values from Wässle et al. (2009) computed by the same method as OPL cov. cones; IPL hull area: Average area of convex hull of the axonal field in IPL per cell type [µm2], mean ± SD; IPL cov: analogous to OPL cov.
 
-with xi the parameter vector of cell i, ci the mixture component cell i is assigned to, μc the mean of the mixture component c, Σc the covariance matrix of the mixture component c, δij the Kronecker delta, Ai,OPL/IPL the area of the dendritic field/axonal tree of cell i and Oij,OPL/IPL the overlap of cell i and j in the OPL/IPL. The overlap of two cells is calculated as the intersection of the convex hull of the dendritic fields/axonal trees. Likely, our CBCX corresponds to CBC5D from (Shekhar et al., 2016) and CBC5T to CBC5C. Possibly, CBC5I corresponds to CBC5A and CBC5O to CBC5B (see discussion in Greene et al., 2016; Shekhar et al., 2016).
 
-## Automatic contact classification
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>N</th>
+      <th>OPL hull area [µm2]</th>
+      <th>OPL cov.</th>
+      <th>OPL cov. cones</th>
+      <th>Wässle</th>
+      <th>IPL hull area</th>
+      <th>IPL cov.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CBC1</td>
+      <td>26</td>
+      <td>175 ± 16</td>
+      <td>1.17</td>
+      <td>1.48</td>
+      <td>1.48</td>
+      <td>376 ± 16</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <td>CBC2</td>
+      <td>34</td>
+      <td>204 ± 19</td>
+      <td>1.18</td>
+      <td>1.55</td>
+      <td>1.5</td>
+      <td>353 ± 23</td>
+      <td>1.52</td>
+    </tr>
+    <tr>
+      <td>CBC3A</td>
+      <td>22</td>
+      <td>273 ± 28</td>
+      <td>1.17</td>
+      <td>1.37</td>
+      <td>1.25</td>
+      <td>308 ± 28</td>
+      <td>1.21</td>
+    </tr>
+    <tr>
+      <td>CBC3B</td>
+      <td>32</td>
+      <td>292 ± 19</td>
+      <td>1.41</td>
+      <td>1.90</td>
+      <td>1.55</td>
+      <td>224 ± 9</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <td>CBC4</td>
+      <td>30</td>
+      <td>302 ± 20</td>
+      <td>1.32</td>
+      <td>1.86</td>
+      <td>1.6</td>
+      <td>274 ± 23</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>CBC5T</td>
+      <td>22</td>
+      <td>256 ± 30</td>
+      <td>1.13</td>
+      <td>1.30</td>
+      <td>-</td>
+      <td>402 ± 25</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <td>CBC5O</td>
+      <td>22</td>
+      <td>380 ± 41</td>
+      <td>1.35</td>
+      <td>1.60</td>
+      <td>-</td>
+      <td>359 ± 23</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>CBC5I</td>
+      <td>25</td>
+      <td>459 ± 30</td>
+      <td>1.55</td>
+      <td>1.95</td>
+      <td>-</td>
+      <td>276 ± 14</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <td>CBCX</td>
+      <td>7</td>
+      <td>433 ± 34</td>
+      <td>1.02</td>
+      <td>1.12</td>
+      <td>-</td>
+      <td>899 ± 126</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>CBC6</td>
+      <td>45</td>
+      <td>125 ± 11</td>
+      <td>1.14</td>
+      <td>1.58</td>
+      <td>-</td>
+      <td>165 ± 11</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>CBC7</td>
+      <td>29</td>
+      <td>254 ± 18</td>
+      <td>1.22</td>
+      <td>1.65</td>
+      <td>1.3</td>
+      <td>274 ± 11</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td>CBC8</td>
+      <td>6</td>
+      <td>1249 ± 144</td>
+      <td>1.14</td>
+      <td>1.21</td>
+      <td>-</td>
+      <td>699 ± 55</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>CBC9</td>
+      <td>6</td>
+      <td>2223 ± 227</td>
+      <td>1.84</td>
+      <td>1.45</td>
+      <td>-</td>
+      <td>1605 ± 335</td>
+      <td>1.43</td>
+    </tr>
+    <tr>
+      <td>RBC</td>
+      <td>141</td>
+      <td>128 ± 3</td>
+      <td>2.17</td>
+      <td>4.37</td>
+      <td>-</td>
+      <td>65 ± 3</td>
+      <td>1.40</td>
+    </tr>
+  </tbody>
+</table>
+
+We followed the classification approach suggested by Greene et al. (Greene et al., 2016): First, we calculated the densities of both ON- and OFF-starburst amacrine cells (SACs) dendrites along the optical axis. We fitted the peak of these profiles with a surface using bivariate B-splines of third order. Next, we corrected the density profiles of CBC5 axonal trees by mapping the SAC surfaces to parallel planes. We then applied principal component analysis (Figure 3—figure supplement 1A) to obtain a first clustering into three groups by fitting a Gaussian mixture model (GMM) (Bishop, 2006) with three components onto the first three principal components of the axon density profiles. The resulting density profiles of the three clusters matches those found by (Greene et al., 2016) (Figure 3—figure supplement 1B). As we noted a few violations of the postulated tiling of the retina by each type (Seung and Sümbül, 2014), we implemented a heuristic to shift cells to a different cluster or swap pairs of cells optimizing a cost function including both overlap in IPL and OPL as well as the GMM clustering (Figure 3—figure supplement 1):
+
+$$
+ℒ=\lambda_{1}\sumi\sqrt{(x_{i}−\mu_{c_{i}})^{T}Σ_{c_{i}}(x_{i}−\mu_{c_{i}})}+\lambda_{2}\frac{\sumi,j\delta_{c_{i},c_{j}}O_{ij,OPL}}{\sumiA_{i,OPL}}+\lambda_{2}\frac{\sumi,j\delta_{c_{i},c_{j}}O_{ij,IPL}}{\sumiA_{i,IPL}}
+$$
+
+with $x_{i}$ the parameter vector of cell $i$, $c_{i}$ the mixture component cell $i$ is assigned to, $\mu_{c}$ the mean of the mixture component $c$, $Σ_{c}$ the covariance matrix of the mixture component $c$, $\delta_{ij}$ the Kronecker delta, $A_{i,OPL/IPL}$ the area of the dendritic field/axonal tree of cell $i$ and $O_{ij,OPL/IPL}$ the overlap of cell $i$ and $j$ in the OPL/IPL. The overlap of two cells is calculated as the intersection of the convex hull of the dendritic fields/axonal trees. Likely, our CBCX corresponds to CBC5D from (Shekhar et al., 2016) and CBC5T to CBC5C. Possibly, CBC5I corresponds to CBC5A and CBC5O to CBC5B (see discussion in Greene et al., 2016; Shekhar et al., 2016).
+
+### Automatic contact classification
 
 To distinguish potential synaptic contacts between photoreceptors and BCs from accidental contacts, we developed an automatic classification procedure exploiting the stereotypical anatomy of cone-BC synapses (triads, Dowling and Boycott, 1966). First, we grouped all contacts for a specific cone-BC pair, in the following referred to as a contact-set. We obtained a training data set by randomly selecting 10 contact-sets per CBC type and 50 RBC-cone contact-sets. We excluded CBCX from the training data because of their atypical contacts. To increase classifier performance we added 17 additional RBC-cone contact-sets manually classified as invaginating contacts as well as all 48 CBC9-cone contact-sets classified for the S-cone identification. For those contact-sets, we visually inspected each individual contact point in the raw data combined with volume segmentation overlay using KNOSSOS. Then we classified it either as a central basal contact (potentially synaptic) or peripheral contact (e.g. at the side of a cone or contact with telodendria, likely non-synaptic) for OFF-CBCs or as invaginating contact vs. peripheral contact for ON-CBCs and RBCs. Next, we extracted a set of seven parameters for each contact (see Figure 2—figure supplement 1):
 
-Based on those parameters we trained a support vector machine classifier with radial basis functions (C-SVM) for each OFF-CBC, ON-CBC and RBC cone contact using the Python package scikit-learn. Optimal parameters were determined using leave-one-out cross validation (see Table 2 for scores and error rates). Typically, 0–2 errors for 10 labeled training samples occurred per BC type (three in one case, CBC3A; 7/48 for CBC9).10.7554/eLife.20041.022Table 2.Cross validation results of BC-to-cone contact classification.DOI: http://dx.doi.org/10.7554/eLife.20041.022False positiveFalse negativeTotal scoreOFF-CBCs12.5%5.9%0.92ON-CBCs14.0%12.3%0.87RBCs9.3%12.5%0.90
+Based on those parameters we trained a support vector machine classifier with radial basis functions (C-SVM) for each OFF-CBC, ON-CBC and RBC cone contact using the Python package scikit-learn. Optimal parameters were determined using leave-one-out cross validation (see Table 2 for scores and error rates). Typically, 0–2 errors for 10 labeled training samples occurred per BC type (three in one case, CBC3A; 7/48 for CBC9).
 
-## Analysis of rod contacts
+**Table 2.**
+ Cross validation results of BC-to-cone contact classification.
 
-As the reconstructed rod spherules cover only half of the EM dataset, we restricted the analysis to bipolar cells with their soma position inside this area. To automatically classify the contacts to rods, we followed a similar scheme as for the cones. Again, we grouped the contacts for each pair of BC and rod spherule. As training data, we selected all putative contact sites with CBC1s (n = 5) and CBC2s (n = 32), 20 random contacts to CBC types 3A, 3B and four as well as 100 random contacts to RBCs. Again, we classified these contacts by visual inspection in KNOSSOS using the raw data with a colored segmentation overlay. In addition, we manually inspected all 132 contact points between rod spherules and ON-CBCs, but could not identify a single potential synaptic contact. We trained SVM classifiers for contacts between rods and RBCs/OFF-CBCs using the same parameters as for the contacts to cones. As synaptic contacts between OFF-CBCs and rod spherules are basal contacts situated close to the invaginating RBC contacts, we added the minimum distance to the next (synaptic) RBC contact as an additional classification parameter for OFF-CBCs. As a consequence, we restricted the analysis of OFF-CBC-to-rod contacts to those rods were RBC contacts could be identified (n = 1685). See Table 3 for scores and error rates from the leave-one-out cross-validation.10.7554/eLife.20041.023Table 3.Cross validation results of BC-to-rod contact classification.DOI: http://dx.doi.org/10.7554/eLife.20041.023False positiveFalse negativeTotal scoreOFF-CBCs18.3%22.5%0.8RBCs14.3%2.6%0.95
 
-## Statistics
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>False positive</th>
+      <th>False negative</th>
+      <th>Total score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OFF-CBCs</td>
+      <td>12.5%</td>
+      <td>5.9%</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>ON-CBCs</td>
+      <td>14.0%</td>
+      <td>12.3%</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>RBCs</td>
+      <td>9.3%</td>
+      <td>12.5%</td>
+      <td>0.90</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis of rod contacts
+
+As the reconstructed rod spherules cover only half of the EM dataset, we restricted the analysis to bipolar cells with their soma position inside this area. To automatically classify the contacts to rods, we followed a similar scheme as for the cones. Again, we grouped the contacts for each pair of BC and rod spherule. As training data, we selected all putative contact sites with CBC1s (n = 5) and CBC2s (n = 32), 20 random contacts to CBC types 3A, 3B and four as well as 100 random contacts to RBCs. Again, we classified these contacts by visual inspection in KNOSSOS using the raw data with a colored segmentation overlay. In addition, we manually inspected all 132 contact points between rod spherules and ON-CBCs, but could not identify a single potential synaptic contact. We trained SVM classifiers for contacts between rods and RBCs/OFF-CBCs using the same parameters as for the contacts to cones. As synaptic contacts between OFF-CBCs and rod spherules are basal contacts situated close to the invaginating RBC contacts, we added the minimum distance to the next (synaptic) RBC contact as an additional classification parameter for OFF-CBCs. As a consequence, we restricted the analysis of OFF-CBC-to-rod contacts to those rods were RBC contacts could be identified (n = 1685). See Table 3 for scores and error rates from the leave-one-out cross-validation.
+
+**Table 3.**
+ Cross validation results of BC-to-rod contact classification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>False positive</th>
+      <th>False negative</th>
+      <th>Total score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OFF-CBCs</td>
+      <td>18.3%</td>
+      <td>22.5%</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>RBCs</td>
+      <td>14.3%</td>
+      <td>2.6%</td>
+      <td>0.95</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Error bars in all plots are 95% confidence intervals (CI) calculated as percentiles of the bootstrap distribution obtained via case resampling. In Figure 4D, we used a generalized linear mixed model with Poisson output distribution and fixed effects contact type and cell type and random effect cell identity (R package lme4). The model yielded a significant intercept (z = 8.72, p<0.0001), a significant main effect of cell type (z = 4.11, p=4x10−4), a significant main effect of contact type (z = 2.66, p=0.008) and a significant interaction cell x contact type (z = −5.09, p<3.6x10−7).
 
-## Data and code availability
+### Data and code availability
 
 Jupyter notebooks and data for reproducing our analysis and main figures are available online at https://github.com/berenslab/pr_bc_connectivity.

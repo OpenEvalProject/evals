@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02hssy432 Section of Mechanisms Biomarkers and Models, Department of Environment and Health, Istituto Superiore di Sanita Rome Italy
+1. Section of Mechanisms Biomarkers and Models, Department of Environment and Health, Istituto Superiore di Sanita Rome Italy ([ROR:02hssy432](https://ror.org/02hssy432))
 
 † Corresponding author
 
@@ -31,11 +31,23 @@ Here, we reveal that loss of WRNIP1 and the activity of WRNIP1 ubiquitin-binding
 
 ## Results
 
-## Transcription-dependent DNA damage occurs in WRNIP1-deficient and UBZ mutant cells upon MRS
+### Transcription-dependent DNA damage occurs in WRNIP1-deficient and UBZ mutant cells upon MRS
 
 To investigate the contribution of WRNIP1 in maintaining genome integrity, we evaluated DNA damage accumulation in response to mild replication stress (MRS) induced by nanomolar dose of the DNA polymerase inhibitor aphidicolin (Aph). In addition to its ATPase activity, which is involved in fork restart (Leuzzi et al., 2016), WRNIP1 also contains a ubiquitin-binding zinc finger (UBZ) domain. Although this domain has been implicated in fork-related functions (Yoshimura et al., 2017), its function is still poorly defined.
 
 In our experiments, we used the SV40-transformed MRC5 fibroblast cell line (MRC5SV), MRC5SV cells stably expressing WRNIP1-targeting shRNA (shWRNIP1), and isogenic cell lines stably expressing the RNAi-resistant full-length wild-type WRNIP1 (shWRNIP1WT), its ATPase-dead mutant form (shWRNIP1T294A) (Leuzzi et al., 2016), or the UBZ-dead mutant form of WRNIP1 (shWRNIP1D37A) that abolishes the ubiquitin-binding activity (Bish and Myers, 2007; Nomura et al., 2012; Figure 1A). Initially, we measured DNA damage by alkaline Comet assay in WRNIP1-deficient and WRNIP1 mutant cells. Consistent with previous experiments (Marabitti et al., 2020), we found that loss of WRNIP1 resulted in higher spontaneous levels of DNA damage compared to wild-type cells (MRC5SV), and that Aph exacerbated this phenotype (Figure 1B). Interestingly, in WRNIP1 mutant cells, spontaneous genomic damage was similar to that observed in WRNIP1-deficient cells but, after MRS, it was significantly enhanced only in UBZ mutant cells (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of human WRNIP1 protein structure. Western blot analysis shows WRNIP1 protein expression in wild-type cells (shWRNIP1WT), WRNIP1-deficient cells (shWRNIP1) and WRNIP1 ATPase mutant (shWRNIP1T294A) or WRNIP1 UBZ mutant (shWRNIP1D37A) cells. MRC5SV40 fibroblasts were used as a positive control. The membrane was probed with an anti-FLAG or anti-WRNIP1 antibody. GAPDH was used as a loading control. (B) Analysis of DNA damage accumulation evaluated by alkaline Comet assay. MRC5SV, shWRNIP1, shWRNIP1D37A, and shWRNIP1T294A cells were treated or not with 0.4 µM Aph for 24 hr, followed by Comet assay. Data are presented as means from three independent experiments. Horizontal black lines represent the mean (ns, not significant; **, p<0.01; ****, p<0.0001; Mann-Whitney test). Representative images are provided. (C) Analysis of chromosomal aberrations in the indicated cell lines treated according to the experimental scheme. Dot plot displays the number of chromosomal aberrations per cell ±SE from three independent experiments. Horizontal black lines represent the mean (ns, not significant; **, p<0.01; ***, p<0.001; ****, p<0.0001; two-tailed Student’s t test). Representative images, including insets with enlarged metaphases for better visualization of chromosomal aberrations, are included. (D) Evaluation of DNA damage accumulation by alkaline Comet assay. Cells were treated according to the experimental scheme and subjected to Comet assay. Dot plot presents as means from three independent experiments. Horizontal black lines represent the mean (ns, not significant; ****, p<0.0001; Mann-Whitney test). Representative images are provided. Scale bar, 2.5 μm. Fold changes (F. c) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Evaluation of DNA damage accumulation by alkaline Comet assay. MRC5SV, shWRNIP1, shWRNIP1D37A, and shWRNIP1T294A cells were treated according to the experimental scheme (0.4 µM Aph and 50 µM Cordy), and then subjected to Comet assay. Dot plot displays data as means from three independent experiments. Horizontal black lines represent the mean (***, p<0.001; ****, p<0.0001; Mann-Whitney test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** MRC5SV, shWRNIP1, shWRNIP1D37A, and shWRNIP1T294A cells were treated according to the experimental scheme (0.4 µM Aph and 50 µM DRB), and then immunostained for γ-H2AX. The graph displays data presented as percentage of γ-H2AX-positive cells ± SE from three independent experiments (ns, not significant; *, p<0.05; **, p<0.01; ***, p<0.001; two-tailed Student’s t test). Representative images of nuclei showing the different number of foci per nucleus are provided. Scale bar, 2.5 μm.
 
 In parallel experiments, we assessed the presence of chromosomal damage. As shown in Figure 1C, shWRNIP1 and WRNIP1 mutant cells exhibited a greater number of chromosomal aberrations under unperturbed conditions compared to their corrected isogenic counterparts (shWRNIP1WT). However, while loss of WRNIP1 or mutation of its UBZ domain heightened the average number of gaps and breaks after Aph than their corrected counterparts (shWRNIP1WT), that of ATPase activity did not (Figure 1C). Therefore, loss of WRNIP1 or its ubiquitin-binding function renders cells highly sensitive to Aph-induced MRS, affecting genomic integrity.
 
@@ -43,19 +55,27 @@ We next wondered whether DNA damage accumulated in a transcription-dependent man
 
 Altogether these findings suggest that WRNIP1 and the activity of its UBZ domain are required to prevent transcription-dependent DNA damage.
 
-## Enhanced R-loop accumulation is observed in WRNIP1-deficient cells
+#### Enhanced R-loop accumulation is observed in WRNIP1-deficient cells
 
 The main structures associated with transcription that can impede fork movement and result in transcription-replication conflicts (TRCs) are R-loops (Gan et al., 2011; Allison and Wang, 2019; Gaillard and Aguilera, 2016). As WRNIP1 may counteract R-loop-mediated TRCs by reducing transcription-dependent DNA damage accumulation, we first assessed R-loops levels in our cells using the well-established anti-RNA-DNA hybrid S9.6 antibody (Boguslawski et al., 1986; Hamperl et al., 2017; Marabitti et al., 2019). We observed a significant increase in nuclear S9.6 intensity in unperturbed WRNIP1-deficient cells, but not in their corrected counterparts (shWRNIP1WT; Figure 2A). Furthermore, while Aph treatment caused increased R-loop levels in both cell lines, the values were considerably higher in shWRNIP1 cells (Figure 2A). Importantly, the S9.6 staining was strongly suppressed upon overexpression of RNase H1 that removes R-loops (Cerritelli et al., 2003; Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig2-v1.jpg)
 
-**Figure 2.:** (A) Evaluation of R-loop accumulation by immunofluorescence analysis in shWRNIP1WT and shWRNIP1 cells, following treatment as reported in the experimental design post-transfection with GFP-tagged RNase H1 or empty vector. Cells were fixed, stained with anti-RNA-DNA hybrid S9.6 antibody, and DNA counterstained with DAPI. Representative images are provided for each single color channel. Box plot displays nuclear S9.6 fluorescence intensity, with boxes and whiskers representing 20–75 and 10–90 percentiles, respectively. The line represents the median value. Data are presented as means from three independent experiments. Horizontal black lines represent the mean. Error bars represent standard error (***, p<0.001; ****, p<0.0001; two-tailed Student’s t test). Scale bar, 2.5 μm. (B) Dot blot to confirm R-loop accumulation. Genomic DNA isolated from shWRNIP1WT and shWRNIP1 cells, treated as reported in the experimental design, was spotted onto a nitrocellulose membrane. The membranes was probed with anti-RNA-DNA hybrid S9.6 and anti-dsDNA antibodies. Treatment with RNase H was used as a negative control. Representative gel images of at least three replicates are shown (* p<0.05; ** p<0.01; *** p<0.001; two-tailed Student’s t test). Fold changes (F. c) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.Figure 2—source data 1.
+**Figure 2.:** (A) Evaluation of R-loop accumulation by immunofluorescence analysis in shWRNIP1WT and shWRNIP1 cells, following treatment as reported in the experimental design post-transfection with GFP-tagged RNase H1 or empty vector. Cells were fixed, stained with anti-RNA-DNA hybrid S9.6 antibody, and DNA counterstained with DAPI. Representative images are provided for each single color channel. Box plot displays nuclear S9.6 fluorescence intensity, with boxes and whiskers representing 20–75 and 10–90 percentiles, respectively. The line represents the median value. Data are presented as means from three independent experiments. Horizontal black lines represent the mean. Error bars represent standard error (***, p<0.001; ****, p<0.0001; two-tailed Student’s t test). Scale bar, 2.5 μm. (B) Dot blot to confirm R-loop accumulation. Genomic DNA isolated from shWRNIP1WT and shWRNIP1 cells, treated as reported in the experimental design, was spotted onto a nitrocellulose membrane. The membranes was probed with anti-RNA-DNA hybrid S9.6 and anti-dsDNA antibodies. Treatment with RNase H was used as a negative control. Representative gel images of at least three replicates are shown (* p<0.05; ** p<0.01; *** p<0.001; two-tailed Student’s t test). Fold changes (F. c) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.
 
 To further confirm the accumulation of R-loop within nuclear DNA, we isolated genomic DNA from shWRNIP1WT and shWRNIP1 cells and performed a dot blot analysis. Consistent with fluorescence analysis, the S9.6 signal was higher in shWRNIP1 cells than in shWRNIP1WT cells and was abolished by RNase H treatment (Figure 2B; Morales et al., 2016). This result suggest that DNA damage observed in WRNIP1-deficient cells may be correlated with the elevated accumulation of R-loops.
 
-## Loss of WRNIP1 or its UBZ domain results in R-loop-dependent DNA damage upon MRS
+#### Loss of WRNIP1 or its UBZ domain results in R-loop-dependent DNA damage upon MRS
 
 After demonstrating that WRNIP1-deficient cells accumulate high levels of R-loops, we investigated the risks posed to genome integrity by subjecting them to different replication stress conditions. As observed above, loss of WRNIP1 led to a slight increase in spontaneous DNA damage, while Aph enhanced the comet tail moment to a greater extent in shWRNIP1 than in MRC5SV cells (Figure 3A). A similar trend was observed using hydroxyurea (HU) as a replication-perturbing agent (Figure 3A). Overexpression of RNase H1 strongly reduced the tail moment, particularly in shWRNIP1 cells, exhibiting greater efficacy following Aph-induced replication slowdown compared to arrest by HU, where the difference is not significant (Figure 3A). This confirms R-loops as a driver of genome instability in WRNIP1-deficient cells and suggests that R-loop-mediated DNA damage becomes evident following replication stress that does not completely block replication fork progression.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig3-v1.jpg)
+
+**Figure 3.:** (A) Analysis of DNA damage accumulation by alkaline Comet assay. MRC5SV and shWRNIP1 cells, post-transfection with GFP-tagged RNaseH1 or empty vector (-), were treated or not with Aph or HU, following the experimental scheme. Subsequently, they were subjected to Comet assay. Dot plot shows data from three independent experiments (ns, not significant; **, p<0.01; **** p<0.0001; Mann-Whitney test). Representative images are provided. (B) Immunofluorescence analysis to determine R-loop levels in shWRNIP1WT, shWRNIP1, shWRNIP1D37A, and shWRNIP1T294A cells, treated or not with 0.4 µM Aph for 24 hr. After fixing, cells were subjected or not to RNase III digestion and stained with anti-RNA-DNA hybrid S9.6 antibody. Representative images are provided for each single color channel. Nuclei were counterstained with DAPI. Box plot displays nuclear S9.6 fluorescence intensity, with boxes and whiskers representing 20–75 and 10–90 percentiles, respectively. The line represents the median value. Horizontal black lines represent the mean. Error bars represent SE (ns, not significant; **, p<0.01; ****, p<0.0001; two-tailed Student’s t test). Scale bar, 2.5 μm. (C) Analysis of the effect of R-loop resolution on DNA damage accumulation using alkaline Comet assay. Cells, post-transfection with GFP-tagged RNase H1 or empty vector, were treated as reported in the experimental scheme and subjected to Comet assay. Dot plot represents data from three independent experiments. Horizontal black lines represent the mean (ns, not significant; ** p<0.01; *** p<0.001; **** p<0.0001; Mann-Whitney test). Representative images are provided. Fold changes (F.c) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Immunofluorescence analysis to determine dsRNA signal in MRC5SV, shWRNIP1, shWRNIP1D37A, and shWRNIP1T294A cells treated or not with 0.4 µM Aph for 24 hr. Cells were then fixed, subjected or not to RNase III digestion, and stained with anti-dsRNA monoclonal antibody J2. Representative images are provided for each single color channel. Nuclei were counterstained with DAPI. Dot plot shows nuclear dsRNA fluorescence intensity. The line represents the median value. Data are presented as means from three independent experiments. Horizontal black lines represent the mean. Error bars represent SE (ns, not significant; **, p<0.01; ****, p<0.0001; two-tailed Student’s t test). Scale bar, 2.5 μm.
 
 To remove contaminant-free RNA, especially dsRNA that might interfere with the capture of RNA-DNA hybrids by the S9.6 antibody (Hartono et al., 2018), and to enhance the accuracy of R-loop level determination, cells were subjected to RNase III treatment following established protocols (Crossley et al., 2021). We initially verified the specificity of the enzyme under our conditions. RNase III treatment substantially decreased the level of dsRNA, nearly eliminating it, as confirmed by assessing specific antibody staining against dsRNA (Figure 3—figure supplement 1).
 
@@ -63,7 +83,7 @@ Next, through RNase III treatment, we investigated which of the WRNIP1 activitie
 
 Finally, we aimed to determine whether R-loop-mediated DNA damage in WRNIP1-deficient cells was due to loss of the UBZ domain of WRNIP1. Notably, we found that suppression of DNA damage in shWRNIP1D37A cells upon RNase H1 overexpression was similar to that observed in shWRNIP1 cells (Figure 3C), suggesting that the ubiquitin-binding activity of WRNIP1 is necessary to prevent R-loop-mediated DNA damage upon MRS.
 
-## The UBZ domain of WRNIP1 is required to attenuate TRCs upon MRS
+#### The UBZ domain of WRNIP1 is required to attenuate TRCs upon MRS
 
 Since TRCs play a crucial role in promoting R-loop-mediated genomic instability (García-Muse and Aguilera, 2016), we investigated the occurrence of such conflicts under our conditions. We employed a proximity ligation assay (PLA), a well-established method for detecting physical interactions (Söderberg et al., 2008). Antibodies against proliferating cell nuclear antigen (PCNA) and RNA polymerase II (RNA pol II) were utilized to label replication forks and transcription complexes, respectively, as previously described (Hamperl et al., 2017). Our analysis revealed a higher number of spontaneous PLA signals (indicated by red spots) in WRNIP1-deficient and UBZ mutant cells compared to wild-type cells (Figure 4). Importantly, although Aph increased the co-localization of PCNA and RNA pol II in all cell lines, the number of PLA spots was significantly greater in shWRNIP1 and shWRNIP1D37A cells than in shWRNIP1WT cells (Figure 4). This phenotype was substantially reduced by overexpressing RNase H1 (Figure 4), suggesting that the UBZ domain of WRNIP1 may play a role in attenuating R-loop-induced TRCs upon MRS. The unexpected increase in TRCs upon RNase H1 overexpression in Aph-treated wild-type cells may be explained with the disruption of repair proteins, potentially leading to heightened fork stalling and increased conflicts (Shen et al., 2017).
 
@@ -83,17 +103,37 @@ One of the initial steps in resolving R-loops involves the recruitment of RAD51 
 
 Taken together, these findings suggest that WRNIP1 co-localizes with transcription/replication complexes and R-loops following MRS. Additionally, they indicate that the ubiquitin-binding function of WRNIP1 helps mitigate R-loop-mediated TRCs.
 
-## Transcription-mediated R-loop formation can act as a barrier to DNA replication in cells lacking WRNIP1 or its UBZ domain activity
+#### Transcription-mediated R-loop formation can act as a barrier to DNA replication in cells lacking WRNIP1 or its UBZ domain activity
 
 R-loops are transcription-associated structures that can impede the progression of replication forks (Belotserkovskii et al., 2018). To assess the direct impact of R-loops on fork progression, we performed a DNA fiber assay to examine replication fork dynamics at the single molecule level in Aph-treated MRC5SV, shWRNIP1, and shWRNIP1D37A cells. Cells were labeled sequentially with the thymidine analogues 5-chloro-2’-deoxyuridine (CldU) and 5-iodo-2’-deoxyuridine (IdU), as described in the scheme (Figure 5A). Under normal growth conditions, and in agreement with previous data (Leuzzi et al., 2016), MRC5SV and shWRNIP1 cells exhibited nearly identical fork velocities, while WRNIP1 UBZ mutant cells showed a significantly reduced velocity (Figure 6A). Following Aph treatment, fork velocity decreased in all cell lines, but values were markedly lower in cells lacking WRNIP1 or its UBZ domain (Figure 6B). Importantly, RNase H1 overexpression led to a significant increase in the rate of fork progression only in shWRNIP1 and shWRNIP1D37A cells (Figure 6A and B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig6-v1.jpg)
+
+**Figure 6.:** Experimental scheme for dual labeling of DNA fibers in MRC5SV, shWRNIP1 and shWRNIP1D37A cells under unperturbed conditions (A) or upon MRS (B). After transfection with GFP-tagged RNaseH1 or empty vector (-), cells were pulse-labeled with CldU, treated or not with 0.4 µM Aph, then subjected to a pulse-labeling with IdU. Representative DNA fiber images are provided. Graphs display the analysis of replication fork velocity (fork speed) in the cells. The length of the green tracks was measured. Mean values are represented as horizontal black lines (ns, not significant; *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; Mann-Whitney test). Scale bar, 10 μm. (C and D) Graphs represent the percentage of red (CldU) tracts (stalled forks) or green (IdU) tracts (restarting forks) in the cells. Error bars represent standard error (ns, not significant; *, p<0.05; ** p<0.01; *** p<0.001; two-tailed Student t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Experimental scheme of dual labeling of DNA fibers in MRC5SV, shWRNIP1 and shWRNIP1D37A cells under unperturbed conditions (A) or upon MRS (B). After transcription inhibition by DRB, cells were pulse-labeled with CldU, treated or not with 0.4 µM Aph, and then subjected to a pulse-labeling with IdU. The graph displays the analysis of replication fork velocity (fork speed) in the cells. The length of the green tracks was measured. Mean values are represented as horizontal black lines (ns, not significant; **, p<0.01; ***, p<0.001; ****, p<0.0001; Mann-Whitney test). (C and D) The graph shows the percentage of red (CldU) tracts (stalled forks) or green (IdU) tracts (restarting forks) in the cells.
 
 DNA fiber analysis also revealed that loss of WRNIP1 or its UBZ domain resulted in a greater percentage of stalled forks induced by Aph compared to control cells (Figure 6C). Moreover, when comparing the percentage of restarting forks in all cell lines, we observed that the absence of WRNIP1 reduced the ability of cells to resume replication after release from Aph to the same extent as loss of its UBZ domain (Figure 6D). Suppressing R-loop formation lowered the percentage of stalled forks and, consistently, increased that of restarting forks in both shWRNIP1 and shWRNIP1D37A cells (Figure 6C and D). Similar results were obtained by treating cells with DRB (Figure 6—figure supplement 1A–D).
 
 Therefore, we concluded that in cells lacking WRNIP1 or its UBZ domain, R-loops can pose a significant impediment to replication. Additionally, the ubiquitin-binding activity of WRNIP1 may play a crucial role in restarting replication when transcription-induced fork stalling occurs.
 
-## FA pathway is correctly activated in WRNIP1-deficient or UBZ mutant cells
+#### FA pathway is correctly activated in WRNIP1-deficient or UBZ mutant cells
 
 Previous studies have demonstrated that a functional Fanconi anemia (FA) pathway prevents the unscheduled accumulation of transcription-associated R-loops, with FANCD2 monoubiquitination playing a critical role (Liang et al., 2019). Additionally, it has been reported that the FANCD2 protein complex contains WRNIP1, which, under certain conditions, facilitates the binding of the monoubiquitinated FANCD2/FANCI complex to DNA through its UBZ domain (Socha et al., 2020). Hence, to gain insight into defective R-loop resolution, we assessed the functional status of the FA pathway in our cells by examining FANCD2 monoubiquitination, a well-established readout of FA pathway activation (Taniguchi et al., 2002). To this end, we treated MRC5SV, shWRNIP1 and shWRNIP1D37A cells with Aph and/or DRB and performed Western blot analysis (Figure 7A). Our results showed that loss of WRNIP1 or its UBZ domain did not affect FANCD2 ubiquitination after treatments, indicating that the FA pathway was properly activated under our conditions (Figure 6A). Consistently, we observed comparable FANCD2 relocalization during R-loop-associated replication stress in all cell lines tested, and that it was reduced by transcription inhibition, providing further evidence of proper FA pathway activation (Figure 7—figure supplement 1). In agreement with previous findings (Wells et al., 2022), we found that RAD18 plays a role in FANCD2 recruitment upon MRS (Figure 7—figure supplement 2). Moreover, PLA assay demonstrated that, under our conditions, FANCD2 was localized near/at R-loops (anti S9.6) after Aph with a greater number of spots in shWRNIP1 and shWRNIP1D37A cells compared to control cells (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig7-v1.jpg)
+
+**Figure 7.:** (A) Western blot analysis showing FANCD2 ubiquitination in MRC5SV, shWRNIP1 and shWRNIP1D37A cells. The membrane was probed with an anti-FANCD2 antibody. LAMIN B1 was used as a loading control. (B) Detection of the physical interaction between FANCD2 and R-loops by PLA. shWRNIP1WT, shWRNIP1, and shWRNIP1D37A cells were treated or not with 0.4 µM Aph for 24 hr and subjected to RNase III digestion. Cells were stained with antibodies against RNA-DNA hybrid (anti-S9.6) and FANCD2. Representative images are provided. Each red spot represents a single interaction between R-loops and FANCD2. No spots were revealed in cells stained with each single antibody (negative control). Nuclei were counterstained with DAPI. Dot plot shows the number of PLA spots per nucleus. Data are presented as means from three independent experiments. Horizontal black lines represent the mean ±SE (ns, not significant; ***, p<0.001;****, p<0.0001; one-way ANOVA test). Scale bar, 2.5 μm. (C) Evaluation of DNA damage accumulation by alkaline Comet assay in MRC5SV, shWRNIP1 and shWRNIP1D37A transfected with control siRNAs (siCTRL) or siRNAs targeting FANCD2 (siFANCD2). After 48 hr, cells were treated or not with 0.4 µM Aph for 24 hr, then subjected to Comet assay. Dot plot shows data presented as means from three independent experiments. Horizontal black lines represent the mean (ns, not significant; ** p<0.01; *** p<0.001; **** p<0.0001; Mann-Whitney test). Representative images are provided. Western blot shows FANCD2 depletion in the cells. The membrane was probed with an anti-FANCD2, and LAMIN B1 was used as a loading control. Fold changes (F. c) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Evaluation of FANCD2 activation by immunofluorescence analysis in MRC5SV, shWRNIP1 and shWRNIP1D37A cells treated or not with 0.4 µM Aph for 24 hr and 50 µM DRB for 3 hr. The graph displays data presented as the percentage of FANCD2-positive cells ± SE from three independent experiments. Representative images of nuclei showing the different number of foci per nucleus are provided. Scale bar, 2.5 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/89981/elife-89981-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** MRC5SV cells were depleted of RAD18, and 48 hr later, cells were fixed and immunostained for FANCD2. The graph shows data presented as the percentage of FANCD2-positive cells. Representative images of nuclei display the different number of foci per nucleus are provided. Western blot confirms RAD18 depletion in the cells. The membrane was probed with an anti-RAD18 and LAMIN B1 was used as a loading control.
 
 We then conducted an alkaline Comet assay in MRC5SV, shWRNIP1 and shWRNIP1D37A cells depleted of FANCD2 to investigate the potential association between WRNIP1 and the FANCD2 pathway under replication stress. Our results revealed increased spontaneous DNA damage in both the shWRNIP1 and shWRNIP1D37A cells in which FANCD2 has been depleted (Figure 7C). Interestingly, disruption of FANCD2 led to a higher degree of DNA damage upon replication stress induced by Aph in shWRNIP1 and shWRNIP1D37A cells compared to control cells (Figure 7C).
 
@@ -129,7 +169,7 @@ Altogether our findings unveil a previously unappreciated role for WRNIP1 in cou
 
 ## Materials and methods
 
-## Cell lines and culture conditions
+### Cell lines and culture conditions
 
 The SV40-transformed MRC5 fibroblast cell line (MRC5SV) was a generous gift from Patricia Kannouche (IGR, Villejuif, France). MRC5SV cells stably expressing WRNIP1-targeting shRNA (shWRNIP1), and isogenic cell lines stably expressing the RNAi-resistant full-length wild-type WRNIP1 (shWRNIP1WT) and its ATPase-dead mutant form (shWRNIP1T294A) were generated as previously reported (Leuzzi et al., 2016).
 
@@ -139,15 +179,15 @@ All cell lines were cultured in DMEM media supplemented with 10% FBS, 100 U/mL p
 
 Prior to usage, all cell lines underwent mycoplasma contamination testing, with negative results obtained.
 
-## Site-directed mutagenesis and cloning
+### Site-directed mutagenesis and cloning
 
 Site-directed mutagenesis of the WRNIP1 full-lenght cDNA (Open Biosystems) was performed on the pCMV-FLAGWRNIP1 plasmid, which contains the wild-type ORF sequence of WRNIP1. The substitution of Asp37 to Ala in pCMV-FLAGWRNIP1 was introduced using the Quick-change XL kit (Stratagene) with mutagenic primer pairs designed according to the manufacturer’s instructions. Each mutated plasmid was verified by full sequencing of the WRNIP1 ORF.
 
-## Chemicals
+### Chemicals
 
 Chemicals used were commercially obtained for the replication stress-inducing drug: aphidicolin (Aph; Sigma-Aldrich), hydroxyurea (HU; Sigma-Aldrich), and the transcription elongation inhibitor 5,6-dichloro-1-ß-D-ribofurosylbenzimidazole (DRB; Sigma-Aldrich). The final concentrations of the drugs used were 0.4 aphidicolin, 4 mM HU and 50 µM DRB. The transcription elongation inhibitor Cordycepin (Cordy; Sigma-Aldrich) was employed at a final concentration of 50 µM. Stock solutions for all the chemicals were prepared in DMSO at a concentration of ˃1000. The final concentration of DMSO in the culture medium was always ˂ 0.1%.
 
-## Plasmids and RNA interference
+### Plasmids and RNA interference
 
 The construct used for RNase H1 overexpression experiments was generously provided by Prof. R.J. Crouch (National Institutes of Health, Bethesda, USA). As previously described (Cerritelli et al., 2003), the GFP-tagged RNase H1 plasmid was generated by introducing a mutation on Met27 to abrogate mitochondrial localization signal (RNase H1-M27). To express the plasmids, cells were transfected using the Neon Transfection System Kit (Invitrogen), according to the manufacturer’s instructions.
 
@@ -157,21 +197,21 @@ The RAD18 genetic knockdown experiment was performed using Interferin (Polyplus)
 
 Depletions were confirmed by western blot using the relevant antibodies (see below).
 
-## Western blot analysis
+### Western blot analysis
 
 The proteins were separated on polyacrylamide gels and transferred onto a nitrocellulose membrane using the Trans-Blot Turbo Transfer System (Bio-Rad). The membranes were blocked with 5% NFDM in TBST (50 mM Tris/HCl pH 8, 150 mM NaCl, 0.1% Tween-20) and incubated with primary antibodies for 1 hr at RT. The primary antibodies used for WB were rabbit-polyclonal anti-WRNIP1 (Bethyl Laboratories; 1:2500), mouse-monoclonal anti-FLAG (Sigma-Aldrich; 1:1000), mouse-polyclonal anti-GAPDH (Millipore; 1:5000), mouse-monoclonal anti-FANCD2 (Santa Cruz Biotecnology;1:500), rabbit-polyclonal anti-RAD18 (Abcam; 1:2000) and rabbit-polyclonal anti-LAMIN B1 (Abcam; 1:30,000).
 
 The membranes were then incubated with horseradish peroxidase-conjugated secondary antibodies specific to the respective species (Santa Cruz Biotechnology; 1:20,000) for 1 hr at RT. Visualisation of the signal was achieved using Western Bright ECL HRP substrate (Advansta) and imaged with Chemidoc XSR+ (Chemidoc Imaging Systems, Bio-Rad).
 
-## Chromosomal aberrations
+### Chromosomal aberrations
 
 Cells for metaphase preparations were collected following standard procedures, as previously reported (Pirzio et al., 2008). A cell suspension was dropped onto cold, wet slides to make chromosome preparations. After air-drying overnight, the number of breaks and gaps was observed on Giemsa-stained metaphases for each treatment condition. For each time point, a minimum of 50 chromosome metaphases were independently examined by two investigators, and chromosomal damage was scored at 100×magnification using an Olympus fluorescence microscope.
 
-## Alkaline comet assay
+### Alkaline comet assay
 
 DNA breakage induction was examined by alkaline Comet assay (single-cell gel electrophoresis) under denaturing conditions, as described (Pichierri et al., 2001). Cell DNA was stained with a fluorescent dye GelRed (Biotium) and examined at 40×magnification using an Olympus fluorescence microscope. Slides were analysed with a computerized image analysis system (CometScore, Tritek Corp). To assess the extent of DNA damage, computer-generated tail moment values (tail length ×fraction of total DNA in the tail) were used. A minimum of 200 cells were analysed for each experimental point. Apoptotic cells (identified by smaller comet head and extremely larger comet tail) were excluded from the analysis to avoid artificial enhancement of the tail moment.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunostaining for RNA-DNA hybrids was performed as described with minor changes (Marabitti et al., 2019). Cells were fixed in 100% methanol for 10 min at –20 °C, washed three times in PBS, pre-treated with 6 μg/ml of RNase A for 45 min at 37 °C in 10 mM Tris-HCl pH 7.5, supplemented with 0.5 M NaCl. Subsequently, cells were treated for 90 min with a 1:150 dilution of RNase III (New England Biolabs) in low-salt buffer (50 mM Tris-HCl pH 7.6, 75 mM KCl, 3 mM MgCl2, 0.1% BSA) before blocking in 2% BSA/PBS overnight at 4 °C. Cells were then incubated with the anti-DNA-RNA hybrid [S9.6] antibody (Kerafast; 1:100) overnight at 4 °C. Following each primary antibody incubation, cells were washed twice with PBS and incubated with the specific secondary antibody: goat anti-mouse Alexa Fluor-488 or goat anti-rabbit Alexa Fluor-594 (Molecular Probes). Immunostaining for dsRNA was performed as described with minor changes (Crossley et al., 2021). Cells were fixed in 4% PFA for 10 min at RT, washed twice with PBS, and then permeabilized in 0.25% Triton X-100 for 10 min. After two washes in PBS, samples were incubated in low-salt buffer (50 mM Tris-HCl pH 7.6, 75 mM KCl, 3 mM MgCl2, 0.1% BSA) with or without Short Cut RNase III (New England Biolabs; 1:150) for 90 min at 37 °C. Coverslips were then washed twice with PBST, followed by one wash in PBS for 5 min, before blocking in 3% BSA in PBS for 30 min. Cells were then incubated with a 1:200 dilution of anti-dsRNA monoclonal antibody J2 (Sigma-Aldrich) overnight at 4 °C. After the primary antibody, cells were washed twice with PBS and incubated with 1:200 goat anti-mouse Alexa Fluor-488 (Molecular Probes).
 
@@ -185,11 +225,11 @@ Following each primary antibody incubation, cells were washed twice with PBS and
 
 Images were randomly acquired using an Eclipse 80i Nikon Fluorescence Microscope equipped with a Video Confocal (ViCo) system. For each time point, a minimum of 200 nuclei were examined. Nuclear foci were scored at a 40×magnification, and only nuclei showing more than five bright foci were considered positive. Intensity per nucleus was calculated using ImageJ. Parallel samples incubated with either the appropriate normal serum or only the secondary antibody confirmed that the observed fluorescence pattern was not attributable to artefacts.
 
-## Dot blot analysis
+### Dot blot analysis
 
 Dot blot analysis was performed with minor changes according to the protocol reported elsewhere (Morales et al., 2016). Genomic DNA was isolated by standard extraction with Phenol/Clorophorm/Isoamylic Alcohol (pH 8.0) followed by precipitation with 3 M NaOAc and 70% Ethanol. The isolated genomic DNA was randomly fragmented for 4 hr at 37 °C with a cocktail restriction enzymes (BsrgI, EcoRI, HindIII, XbaI, Ssp1) supplemented with 1 M spermidine. After incubation, the digested DNA was cleaned up with Phenol/Clorophorm extraction and standard Ethanol precipitation. After sample quantification, 350 ng of digested DNA was incubated with RNase H overnight at 37 °C as a negative control. The same quantity of each sample was spotted onto a nitrocellulose membrane, blocked in 5% non-fat dry milk, and incubated with the anti-DNA-RNA hybrid [S9.6] antibody (Kerafast; 1:1000) or anti-dsDNA antibody (Abcam; 1:2000) overnight at 4 °C. A horseradish peroxidase-conjugated goat specie-specific secondary antibody (Santa Cruz Biotechnology) was used. Quantification on the scanned image of the blot was performed using Image Lab software with dsDNA as loading control.
 
-## In situ PLA assay
+### In situ PLA assay
 
 The in situ proximity-ligation assay (PLA; Sigma-Aldrich) was performed according to the manufacturer’s instructions. Exponential growing cells were seeded into 8-well chamber slides (Nun Lab-Tek) at a density of 1.5–2.5×104 cells/well. After the indicated treatment, cells were permeabilized with 0.5% Triton X-100 for 10 min at 4 °C, fixed with 3% formaldehyde/ 2% sucrose solution for 10 min, and then blocked in 3% BSA/PBS for 15 min. After washing with PBS, cells were incubated with the two relevant primary antibodies.
 
@@ -199,12 +239,12 @@ The primary antibodies used were as follows: anti-FLAG (mouse-monoclonal, Sigma-
 
 Samples were incubated with secondary antibodies conjugated with PLA probes MINUS and PLUS: the PLA Probe anti-Mouse PLUS and anti-Rabbit Minus (Sigma-Aldrich). The incubation with all antibodies was carried out in a humidified chamber for 1 hr at 37 °C. Next, the PLA probes MINUS and PLUS were ligated using their connecting oligonucleotides to produce a template for rolling-cycle amplification. During amplification, the products were hybridized with a red fluorescence-labeled oligonucleotide. Samples were mounted in Prolong Gold antifade reagent with DAPI (blue). Images were acquired randomly using an Eclipse 80i Nikon Fluorescence Microscope equipped with a Video Confocal (ViCo) system.
 
-## DNA fiber analysis
+### DNA fiber analysis
 
 Cells were pulse-labeled with 50 µM 5-chloro-2’-deoxyuridine (CldU) and 250 µM 5-iodo-2’- deoxyuridine (IdU) at specified times, with or without treatment as outlined in the experimental schemes. DNA fibres were prepared and spread out as previously described (Leuzzi et al., 2016). For the immunodetection of labeled tracks, the following primary antibodies were used: anti-CldU (rat-monoclonal anti-BrdU/CldU, BU1/75 ICR1 Abcam; 1:100) and anti-IdU (mouse-monoclonal anti-BrdU/IdU, clone b44 Becton Dickinson; 1:10). The secondary antibodies were goat anti-mouse Alexa Fluor 488 or goat anti-rabbit Alexa Fluor 594 (Molecular Probes; 1:200). The incubation with antibodies was carried out in a humidified chamber for 1 hr at RT.
 
 Images were randomly acquired from fields with untangled fibres using Eclipse 80i Nikon Fluorescence Microscope, equipped with a Video Confocal (ViCo) system. The length of green-labeled tracks was measured using the Image-J software, and values were converted into kilobases using the conversion factor 1 µm=2.59 kb as reported (Basile et al., 2014). A minimum of 100 individual fibres were analysed for each experiment, and the mean of at least three independent experiments is presented. Statistics were calculated using Graph Pad Prism Software.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Prism 8 (GraphPad Software). Details of the individual statistical tests are indicated in the figure legends and results. Statistical differences in all case were determined by Student’s t-test, Mann-Whitney test, or one-way ANOVA test. In all cases, not significant: p>0.05; * p<0.05; ** p<0.01; *** p<0.001; **** p<0.0001. All the experiments were repeated at least three times unless otherwise noted. Fold changes (F. c.) were calculated as ratio of means between each experimental sample and the relative wild-type untreated.

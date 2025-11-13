@@ -40,13 +40,21 @@ Using volumetric two-photon calcium imaging to map out the feature space along t
 
 ## Results
 
-## Tectal neurons respond to a broad range of visual features
+### Tectal neurons respond to a broad range of visual features
 
 To broadly sample responses to object features, we designed a battery of simplified visual stimuli and controls. We employed two-photon calcium imaging of 5 to 7 dpf old larvae, which received monocular visual stimulation (Figure 1C). At this larval stage, panneuronal expression of the nuclear-localized calcium indicator GCaMP6s (driven by the elavl3 promoter) labels on average 5793 ± 202 cells per tectum (n = 10 fish; mean ± SEM) (Figure 1D). The stimulus set consisted of a moving dot of 5° (‘small’), which approximates the size of prey at the onset of hunting behavior (Bianco and Engert, 2015; Patterson et al., 2013; Semmelhack et al., 2014), a moving dot of 30° ("large"), which is the approximate size of prey directly before the capture strike, and an expanding disc at different velocities, which simulates an approaching object and is able to evoke escape responses (Bhattacharyya et al., 2017; Dunn et al., 2016; Temizer et al., 2015). We further added controls for global luminance changes (dark and bright ramps and flashes), as well moving gratings with high spatial (5°) and temporal frequency as a negative control for small-dot responses (Figure 1E; see Materials and methods). With this battery of visual stimuli, we obtained reproducible calcium responses in up to 30% of all tectal cells per imaging plane. We created 15 regressors for the different stimulus variants and calculated a score value for each tectal cell (Figure 2A). To classify functional response types, we performed hierarchical clustering of representative response vectors obtained by affinity propagation (see Materials and methods). This resulted in a dendrogram for 76 exemplars, which are representative of the 1759 sampled tectal cells in total (Figure 2B–D, and Figure 2—figure supplement 1A). A silhouette analysis to validate the clustering showed that a minimal number of 14 clusters yielded an optimal classification of the data (Figure 2—figure supplement 1B; see Materials and methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig2-v1.jpg)
+
+**Figure 2.:** (A) Analysis of calcium imaging data. Within selected response windows (black rectangles), the ∆F/F traces were correlated to the corresponding regressor and 15 score values were calculated for each cell (CR: coefficient of regression, R2: correlation, response: black trace, model: green trace). (B) Hierarchical clustering of functional cell types in the tectum. Normalized scores for 76 exemplars, obtained by affinity propagation of 1759 cells (of three larvae) in total are shown. Dashed line indicates a chosen distance threshold of 0.25, which results in 14 functional clusters. (C) Normalized calcium transients of all exemplars (gray) and average traces of all cells (colored) for the five largest clusters. (D) Functional cluster distribution. Tectal cluster numbers are indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Normalized calcium transients of all exemplars (gray) and average transients of all cells (colored) for the 14 tectal clusters. (B) Validation of cluster number by the silhouette coefficient. A minimal number of 14 clusters was chosen (dashed blue line). (C) 3D representation of the three main principal components (PCs) for all tectal cells. Data points are colored by their corresponding cluster. (D) The chosen number of three PCs explains 74.9% of the variance in the measured data (black curve). Shuffled data (blue curve) resulted in a lower average explained variance (57.6% for the three main PCs). (E) Functional cluster distribution of superficial interneurons (SINs) and neuropil interneurons (NINs), imaged in the elavl3:nls-GCaMP6s line (n = number of cells from three fish). Cluster numbers are indicated.
+
 To investigate the dimensional structure of the different response profiles, we performed principal component analysis on the scores for all tectal cells. Plotting the three main principal components (PCs), which could explain 74.9% of the variance in the dataset, aligned the scores along three axes for small-dot, large-dot, and looming/luminance- (OFF-) responding cells (Figure 2—figure supplement 1C and D). To show that the measured tectal cell responses were significantly different from chance, we shuffled the scores for each regressor 1000 times and calculated the PCs. Taking the average of the explained variance per shuffling, we consistently found a lower average explained variance, that is 57.6% for the three main PCs (Figure 2—figure supplement 1D), indicating that tectal cells do not respond randomly to our set of stimuli.
 
-## Responses of tectal neurons are enriched for various forms of object motion
+### Responses of tectal neurons are enriched for various forms of object motion
 
 Overall, we found a broad spectrum of different response types in the tectum. Few cells responded to only one of the presented stimuli; most cells we imaged were multi-responsive (Figure 2B). 43.6% of all cells responded to a looming stimulus (with a score >0.2), 41.1% responded to a small dot, and 33.1% responded to a large dot (Figure 2D). Only a small number of cells responded to a bright ramp (2.7%) or a bright flash (2.2%), and these cells were rarely sensitive to other stimuli. Responses to dark ramp and dark flash often coincided with each other and with responses to looming stimuli (fast and slow), but rarely overlapped with responses to small or large moving dots. Responses to a slow-looming stimulus showed a gradual overlap with moving-dot responses; more than half of all cells that were sensitive to a large dot also responded to a slow-looming stimulus. The 5° grating did not trigger significant responses in the tectum, suggesting a selectivity to individual objects rather than to high spatial frequency.
 
@@ -54,27 +62,63 @@ Next, we characterized the tuning properties of tectal cells whose somata reside
 
 Taken together, the majority of tectal cells, both in the periventricular layer and embedded in the neuropil, respond to object motion, that is small, or large, or looming dots, sometimes in combination. A substantial fraction of cells responds to global dimming or looming (OFF cells). Very few cells respond to global brightening (ON cells). OFF and ON cells are largely non-overlapping with object-detecting cells.
 
-## Tectal responses originate from diverse, feature-specific RGC inputs
+### Tectal responses originate from diverse, feature-specific RGC inputs
 
 We next asked to what extent the feature selectivity of tectal neurons is inherited from retinal inputs. In our imaging setup, we applied the same battery of visual stimuli to larvae expressing cytoplasmic GCaMP6s in RGCs (Figure 1D). A pixel-wise regressor and cluster analysis resulted in a dendrogram for 1157 exemplars, which were grouped into ten functional clusters (although four RGC clusters resulted in the highest silhouette coefficient, we chose 10 clusters, for a significantly higher modeling correlation score, as shown below) (Figure 3A–C, and Figure 3—figure supplement 1; see Materials and methods).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig3-v1.jpg)
+
+**Figure 3.:** (A) Hierarchical clustering of functional RGC pixels. Normalized scores for 1157 exemplars, obtained by affinity propagation of 55,153 pixels in total are shown. Dashed line indicates a chosen distance threshold of 0.45, which results in 10 functional clusters. (B) Functional cluster distribution of all analyzed RGC pixels. Cluster numbers are indicated. (C) Spatial distribution of functional RGC pixels in the tectal neuropil. Pixels were cluster-color-coded and overlaid onto single planes of the ath5:Gal4 UAS:GCaMP6s expression pattern. Z indicates plane position as the distance from dorsal skin (z = 0 µm). Last panel in (C) shows quantification of 30° dot-responsive (blue) and 5° dot-responsive (red) pixels in the posterior tectum along different z-planes. Scale bar: 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Normalized calcium transients of all exemplars (gray) and average transients of all pixels (colored) for the 10 RGC clusters. (B) Silhouette plot for cluster validation. A number of 10 RGC clusters was chosen (dashed blue line) as it significantly improves the modeling correlation compared to four clusters (see Figure 4—figure supplement 1A). (C) Comparison of RGC cluster distribution for three independent larvae. Data from the first larva (first bars) are shown in Figure 2 and were used for modeling. (D) Quantification of 30° dot- (light blue), 5° dot- (red), and looming+dark ramp/flash-responsive (dark blue) pixels in the segmented tectal layers, throughout the whole image stack shown in Figure 3C.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Skin is outlined by white-dashed line. Scale bar: 50 µm.
+
 Overall, RGC responses were similar to tectal responses, but less specialized, with only few pixels responding exclusively to a single stimulus. Two thirds (67.2%) of the pixels responded to a large dot with a score greater than 0.2 (Figure 3A and Figure 3—figure supplement 1A). Generalized OFF responses to a dark ramp and a looming stimulus were similarly prominent. Non-intuitively, ON responses were sometimes combined with dark looming stimuli (RGC cluster no. 2 and 9; Figure 3A and Figure 3—figure supplement 1A), a tuning profile we did not observe in tectal cells. Interestingly, direction-selective responses to forward- (nasalward-) moving stimuli, especially to a large dot, were more abundant than for the opposite direction (Figure 3A). These units are expected to be activated when an object approaches from behind or when the fish turns toward an object in its peripheral visual field.
 
-## Tectal neurons linearly combine retinal inputs, but also compute de novo additional features
+### Tectal neurons linearly combine retinal inputs, but also compute de novo additional features
 
 We asked to what extent we could quantitatively explain the sampled tectal responses by using ganglion cell input. This analysis can distinguish between two extreme scenarios: The tectum may either be a passive relay station for RGC inputs. Or, alternatively, it may ‘re-compute’ the image based on unrelated RGC inputs. We used a simple feed-forward, linear modeling approach (L1-regularized, Lasso) with non-negative constraints to predict tectal cell responses by a sum of weighted RGC inputs (Figure 4A; see Materials and methods). Modeling the scores for each of the 1759 tectal cells resulted in a high prediction quality (median correlation R2score = 0.68, median RMSE = 0.06; Figure 4B and Figure 4—figure supplement 1). Similarly, we modeled the calcium transients for all tectal cells and calculated the correlation Rtrace between measured and predicted values (Figure 4C and D). We also tested how a varying score threshold for the RGC responses, and thus a different number of RGC clusters would change the modeling prediction quality. We found that the best prediction of tectal calcium transients (Rtrace) can already be achieved by linear modeling of only four RGC clusters. Correlation for the tectal score values (R2score), however, increases significantly with ten RGC clusters (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig4-v1.jpg)
+
+**Figure 4.:** (A) Modeling workflow. Tectal cluster scores were predicted by a linear combination of weighted RGC cluster scores and finally compared to previously measured tectal scores. For color scale, see (D). (B) Prediction quality for modeling the scores of each sampled tectal cell (n = 1759). Left graph shows the correlation between predicted and measured scores. Right graph shows distribution of root mean squared errors of the cross-validated model (see Materials and methods for details). (C) Example for modeling the calcium response of a single tectal cell from weighted average responses of three RGC clusters. (D) Summary of modeling scores (left), calcium responses (middle), and weights (lower right) for all tectal cells (n = 1759). Functional tectal clusters are indicated by dashed horizontal lines. Color scales are shown on the right. Upper graph on the right shows the distribution of the number of RGC clusters used for modeling tectal responses. Dashed vertical line indicates a median of two RGC clusters.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Modeling prediction quality shown as correlation values R2score and Rtrace, as a function of RGC cluster number. (B) Mean squared error (MSE) of modeling prediction as a function of the regularization parameter λ. See Materials and methods for details. (C) Correlation (R) between predicted and measured scores for modeling data (green) compared to a randomized model (gray). See Materials and methods for details.
+
 Most tectal cell responses could be well explained by a linear combination of on average two RGC input clusters (Figure 4D);~36% of all responses could even be predicted by a single RGC input weight. However, specific tectal response features were modeled poorly: First, nearly all modeled tectal calcium traces showed responses to a large dot, owing to the high abundance of RGC responses to this stimulus (Figure 4D). Second, the weak RGC responses to a moving small dot resulted in a poor prediction of the DS tectal clusters no. 2 and 6 (Figure 4D). Third, modeling tectal calcium responses that are exclusive to ON or OFF stimuli was generally imperfect, and the worst correlation R2score was found for the tectal gradual OFF-selective cluster no. 11. Our modeling results suggest that most visual representations in the tectum are directly inherited from RGC inputs. In addition, non-retinal, presumably intratectal computations add feature specificities, such as information on the direction of small moving objects, and sharpen both object-size and luminance selectivities of tectal neurons.
 
-## Tectal layers process different object features according to their retinal inputs
+### Tectal layers process different object features according to their retinal inputs
 
 We asked if tectal layers are distinct with respect to their feature selectivity. Along the superficial-to-deep axis, in line with previous publications, we found that RGC axons sensitive to small dots enter the tectum in superficial layers (SO to SFGS4) with a peak in SFGS1/2 (Figure 3—figure supplement 1D; Preuss et al., 2014). DS pixels were located most superficially in the posterior half of SFGS1 (Figure 3C; Nikolaou et al., 2012). OFF-responsive axons, on the other hand, arborized in deep SFGS layers, SGC and SAC/SPV, and most extensively in SFGS5/6 (Figure 3—figure supplement 1D; Temizer et al., 2015). To investigate if the dendrite morphologies of functionally identified tectal neurons matched these input layers, we carried out function-guided inducible morphological analysis (FuGIMA) of single tectal neurons (Förster et al., 2018). We used nuclear-localized GCaMP6f (nls-GCaMP6f) and regressor-based analysis to identify tectal cells that belong to the three largest clusters: small-dot responsive, large-dot responsive, and OFF cells. Co-expressed photoactivatable GFP (paGFP) was then used to fluorescently label a cell of interest with a two-photon laser pulse directed at the soma (Figure 5A and B). After allowing some time for diffusion of the activated GFP into the neurites, single cells were traced and registered to a standard brain together with RGC reference markers. This allowed us to quantify the extent of neurite arborization in each layer of the tectum (Figure 5C–E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig5-v1.jpg)
+
+**Figure 5.:** (A) The FuGIMA-f construct, which allows coexpression of nuclear-localized GCaMP6f and photoactivatable GFP (paGFP), was combined with Gal4s1101t for panneuronal expression and elavl3:lyn-tagRFP for image registrations. (B) Workflow of single-cell photoactivation, cell tracing, landmark registrations and layer quantifications (see Materials and methods for details). (C) Morphological barcode for the cell in (B). (D) Sideview of registered FuGIMA cells in the tectum of a standard brain. Tectal neuropil is shaded in gray. (E) Average proportional branch length of neurites in the respective tectal layers, quantified for 30° dot- (blue), 5° dot- (red), and looming- (purple) responsive cells. Statistically significant differences between 5° dot- and looming-responsive cells are indicated by stars. For comparison, the quantification of RGC input in the respective layers is shown in the back (see Figure 3—figure supplement 1D). Error bars are SEM. ***: p < 0.001, **: p < 0.01, and *: p < 0.05. (F) Exemplary tectal cell morphotypes identified for the response groups described above. PVIN: periventricular interneuron; ns: non-stratified; bs: bistratified; ts: tristratified. Scale bar in (B): 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Workflow for combining single-cell data. A common reference marker (elavl3:lyn-tagRFP) allowed co-registration of randomly labeled single cells (BGUG method), functionally selected single cells (FuGIMA method), and RGC expression patterns as landmarks for tectal laminae. (B) Dorsal overview of collected tectal interneurons from BGUG dataset (blue) and FuGIMA dataset (orange). (C) Tectal sideview. Dorsal is up and anterior is left. (D) Average proportional branch length of tectal cell neurites in the respective layers, for randomly labeled (blue) and functionally selected cells (orange). Error bars are SEM. ***: p < 0.001, and *: p < 0.05.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Schematic representation of all identified morphotypes for tectal interneurons. The number of collected BGUG cells for each type is presented below. Red morphotypes have only been identified by the FuGIMA method. Identified functional types are indicated below. L: looming, D: dark ramp, B: bright ramp, 5°: small dot, 30°: big dot, BF: bright flash. PVIN: periventricular interneuron, NIN: neuropil interneuron, SIN: superficial interneuron, ms: monostratified, bs: bistratified, ts: tristratified, 4 s: tetrastratified, ps: partially stratified, ns: non-stratified/diffuse.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Illustration of arbor quantification for a tristratified tectal cell. (B) Average arbor area in different tectal laminae. Error bars are SEM. (C) Ratio of deep vs. superficial arbor area within the same cells, for 5° dot-, Looming-, and Luminance-responsive cell types. Error bars are SEM. **: p < 0.01, and *: p < 0.05. (D) Illustration of columnar-shaped, 5° dot-responsive cells (red) and cone-shaped, looming-responsive cells (purple).
 
 We compared our FuGIMA dataset (n = 91 cells) to a random collection of single tectal cells (n = 188; Figure 5—figure supplement 1), which were stochastically labeled with the BGUG method (Xiao and Baier, 2007). This analysis revealed that the three functional classes sampled branched preferentially in SFGS5/6. In addition, we found that small- and large-dot responsive cells showed significantly denser arborizations in SO, SFGS1/2, and SFGS3/4 compared to OFF cells. OFF cells, on the other hand, were biased to extend neurites in the SGC, the SAC, SAC/SPV and the SM (Figure 5E). SM is a layer at the surface of the tectum, which is innervated by the torus longitudinalis, a higher-order visual area with strong OFF responses (Northmore, 1984; Robles et al., 2020). SGC is a neuropil area abutting SFGS, in which multisensory information is processed. SAC is close to RGC axons that terminate in SAC/SPV and carry ambient luminance information to the tectum (Kölsch et al., 2020). A comprehensive catalog of all identified tectal interneuron morphotypes is shown in Figure 5—figure supplement 2.
 
 We further investigated the extent of tectal cell arborizations by measuring the arbor areas in each layer (Figure 5—figure supplement 3A). We found that single cell arbors were generally small in superficial layers (SM to SFGS3-4) and largest in deeper layers (SFGS5-6 to SAC/SPV; Figure 5—figure supplement 3B). When comparing the ratio of deep vs. superficial arbor size of multi-stratified cells, we found morphological differences between object-motion responsive and OFF cells. While on average, small-dot responsive cells have a columnar shape, OFF cells have extended arbors in deeper layers, rendering them cone-shaped (Figure 5—figure supplement 3C and D). We did not detect a systematic morphological difference between small- and large-dot responsive cells (Figure 5F). Object-motion responsive and OFF cells thus target layers that match their corresponding retinal and, in the case of SM, non-retinal inputs and also differ in more subtle morphological features.
 
-## Retinotectal circuits are differentially tuned for object size and direction along the anterior-posterior axis
+### Retinotectal circuits are differentially tuned for object size and direction along the anterior-posterior axis
 
 Along the anterior-posterior (A-P) axis, we found a separation of size-selective RGC terminals. RGC axons responding to a large dot were mainly located in the anterior-dorsal quadrant of the tectal neuropil, whereas small-dot responsive pixels were found in the medial to posterior part (Figure 3C). This compartmentalization is inherited by the corresponding tectal populations (Figure 6A). Compared to all sampled cells, the large-dot response cluster was shifted to the anterior tectum, while cell bodies responding to small dots were biased to the posterior region. The strongest posterior bias was found for direction-selective cell bodies, responsive to a small, forward moving dot (Figure 6A). We extended this analysis to our FuGIMA dataset, to quantify the extent of neurite arborizations in the neuropil. We found the same effect, that is large-dot responsive cells arborize more extensively in the anterior neuropil, compared to all sampled interneurons, while ~90% of neurites from DS small-dot responsive cells were found in the posterior half (Figure 6B and C). These findings indicate a spatial gradient of sensitivity to object size, which is introduced by the topographic order of RGC inputs and inherited by the retinotopic array of tectal cells.
 
@@ -82,7 +126,7 @@ Along the anterior-posterior (A-P) axis, we found a separation of size-selective
 
 **Figure 6.:** (A) Distribution of tectal cell bodies from 30°-dot (blue), 5°-dot (red) and 5°-dot-forward (yellow) response clusters. Anterior (A), medial (M) and posterior (P) positions of the tectum are indicated. Graph shows probability density function for cell body distribution. Integrals are colored according to their functional cluster with p-values characterizing the difference from the distribution of all sampled cells (gray integral). (B) Tectal sideview of registered FuGIMA neurons showing the distribution of 30°-dot (blue), 5°-dot non-DS (red) and 5°-dot-DS (yellow) cells. (C) Quantification of proportional neurite branch length of tectal cells in the anterior tectum. N equals number of cells. **: p = 0.006,; *:p = 0.014.
 
-## Ablation of small size-tuned RGC inputs removes tectal responses to small objects
+### Ablation of small size-tuned RGC inputs removes tectal responses to small objects
 
 To directly demonstrate that RGCs impose their feature selectivity onto postsynaptic tectal cells, we carried out an ablation experiment. From a previous study, we knew that small-dot responsive RGCs project specifically into SO after forming a collateral arbor in AF7, the neuropil of the parvocellular superficial pretectal nucleus (Semmelhack et al., 2014). By laser ablation of the RGC axon bundle that leaves AF7, we achieved selective disruption of small-object input to the SO layer (Figure 7A–C). Functional calcium imaging before and after the ablations revealed that small-dot responses were significantly diminished in tectal cells (Figure 7D, E and G). In contrast, the number of looming-responsive cells in the affected tectum was not reduced, but even increased in some animals, possibly due to the loss of inhibition by the small-object-processing circuit (see Barker and Baier, 2015; Figure 7D, F and G). These results indicate that RGC projections to SO are essential for tectal cells to assume their tuning to small-object motion.
 
@@ -90,13 +134,21 @@ To directly demonstrate that RGCs impose their feature selectivity onto postsyna
 
 **Figure 7.:** (A) Experimental setup for RGC axon ablations. Larvae are expressing mCherry in RGCs and nulear GCaMP6s panneuronally. The eye contralateral to the ablation site is visually stimulated and the ipsilateral tectal cells are functionally imaged before and after the ablations. As a control, the eye ipsilateral to the ablation site is stimulated and the contralateral tectal cells are imaged in the same fish. (B) Sideview of mCherry expression in RGCs at 6 dpf shows the most lateral axon bundle, which leaves AF7 for the SO layer (arrow). (C) Dorsal view of single image planes showing the axon fibers of interest in the contralateral (control, upper panel) and ipsilateral (ablated, lower panel) pretectum of the same fish. (D) Single functional image planes, projected over time, showing nuclear GCaMP6s expression in the ipsilateral tectum, before (6 dpf, left) and after (7 dpf, right) ablation. Pixels are color-coded by preference for 5° dot (magenta) or looming (cyan) stimuli. (E) Number of cells per image plane (out of two fish), which are responsive to a 5° dot stimulus, before and after ablations in the ipsilateral and the contralateral tectum. (F) Same as (E), showing the number of cells responsive to a looming stimulus. (G) Fraction of 5°-dot- and looming-responsive cells after ablations in the ipsilateral and contralateral tectum. Error bars are SEM. ***: p = 0.0006; n.s.: p = 0.46. N equals number of cells from two independent fish. Scale bars in (B): 30 µm, (C): 20 µm, and (D): 50 µm.
 
-## Tectal representation of large (close) objects in frontal visual field is required for hunting
+### Tectal representation of large (close) objects in frontal visual field is required for hunting
 
 As the fish larva approaches a prey item, such as a paramecium or a rotifer, object size on the retina increases in visual angle. During hunting, the eyes converge and create an area of binocular overlap in the temporal retina. Convergent eye movements are accompanied by specialized turns, known as J-turns, that serve to center the prey in the visual field. Converged eyes and J-turns are characteristic of hunting episodes. We hypothesized that the large-dot responsive cells in the anterior tectum might be relevant for tracking prey at close range. To test this, we ablated between 3 and 15 single cells, which had been classified as large-dot responsive, in the right tectum (Figure 8A). Prey capture behavior was then analyzed in free-swimming larvae (Mearns et al., 2020).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig8-v1.jpg)
+
+**Figure 8.:** (A) 7 dpf old fish panneuronally expressing nuclear-localized GCaMP6s (green) were visually stimulated and imaged. Tectal cells were functionally identified (cluster-colored circles) and selected for ablations (arrowheads). At dpf, hunting behavior was analyzed in free-swimming larvae. (B) Proportion of time larvae spent engaged in hunting behavior, having their eyes converged. Single data points represent individual fish. 'Sham' (gray): control larvae with ablations of non-responsive cells, '5°' (red): unilateral ablations of 5°-dot-responsive cells in the right tectum, '30°' (blue): unilateral ablations of 30°-dot-responsive cells in the right tectum, 'bi-30°': bilateral ablations of 30°-dot-responsive cells. *: p = 0.02, **: p = 0.006, n.s.: p = 0.15. (C) Probability density plots of bout integrals for the initial J-turns, with positive values indicating a rightward and negative values indicating a leftward turn. Color shading indicates accumulated data for individual fish. (D) Direction selectivity index for initial J-turns of individual fish. *: p = 0.029, n.s.: p > 0.05. (E) Ethological relevance for A-P distribution of functionally distinct tectal cells. Before initiation of prey capture behavior, small moving objects are likely spotted in the temporal, monocular visual field. Precise recognition and processing of object movement by posterior DS cells avoids losing the object and enables adapted orientation turns towards the object. During prey pursuit, prey size seemingly increases and is detected by large-dot-responsive cells in the anterior tectum. Eye convergence allows binocular processing of object size and movement.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58596/elife-58596-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) In our free-swimming prey capture assay, 'sham' ablated larvae (gray), in which non-responsive tectal cells have been removed, did not behave differently from untreated ('ctrl', green), or agarose-embedded and released ('embed', purple) larvae, in terms of time spent in prey capture (A), initial J-turn kinematics (B), or direction selectivity index (C). (D) Cluster color-coded functional cell responses in both anterior tecta for the experiment shown in Figure 8A (arrow heads highlighting cells selected for ablations). Midline is indicated by a dashed white line. Note the tectal cell responses in the left, non-stimulated tectum. (E) Enucleated larvae expressing elavl3:nls-GCaMP6s were functionally imaged as described, and the functional cluster distribution of tectal cells was compared to untreated fish. Error bars are SEM. Functional cluster colors are described on the right. Scale bar in (D): 20 µm.
+
 Following removal of large-dot responsive cells, animals spent less time with their eyes converged, indicating less time spent engaged in hunting behavior (Figure 8B). In addition, their J-turns were biased to the right side, indicating defective prey detection by the left eye or right (ablated) tectum, respectively (Figure 8C and D). Control fish, in which entirely non-responsive cells were ablated, showed no effect on prey capture behavior and were indistinguishable from untreated or agarose-embedded larvae (Figure 8A–D and Figure 8—figure supplement 1A–C). Likewise, ablation of small-dot responsive cells, either in the anterior or posterior tectum did not result in significant behavioral changes (Figure 8B–D). This suggests that for cells, which tile the visual field by only 5°, the ablated cell numbers were not sufficient to observe an effect on behavior.
 
-## Both tectal hemispheres cooperate in guiding capture of prey in the frontal visual field
+### Both tectal hemispheres cooperate in guiding capture of prey in the frontal visual field
 
 Intriguingly, we observed in our imaging experiments, that a substantial number of cells in the left tectum were responsive to prey-like stimuli presented to the left (ipsilateral) eye (Figure 8—figure supplement 1D). These cells are probably activated by the right (contralateral) tectum via an intertectal commissure. We hypothesized that these cells help to sharpen responses across both tecta by suppressing background activity in the tectum that is not directly stimulated by RGC inputs. To test this hypothesis, we laser-ablated large-dot responsive cells in the anterior tectum on both sides (Figure 8B–D). (Note that these cells were identified by imaging responses in both tecta to stimulation of only the left eye.) In bilaterally ablated animals, the tendency to increase right J-turns and reduce left J-turns in response to prey was even more pronounced than in right-tectum-only ablated larvae, supporting our hypothesis.
 
@@ -124,35 +176,241 @@ In conclusion, this work has revealed a neural architecture of the tectum that i
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alpha-Bungarotoxin</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:B1601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:MS-222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(elavl3:nls-GCaMP6s)mpn400</td>
+      <td>Förster et al., 2017</td>
+      <td>ZFIN ID: ZDB-ALT-170731-37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(atoh7:Gal4-VP16)s1992t (ath5:Gal4)</td>
+      <td>Del Bene et al., 2010</td>
+      <td>ZFIN ID: ZDB-FISH-150901-27082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:GCaMP6s)mpn101</td>
+      <td>Thiele et al., 2014</td>
+      <td>ZFIN ID: ZDB-FISH-150901-22562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Et(E1b:Gal4-VP16)s1101t</td>
+      <td>Scott et al., 2007</td>
+      <td>ZFIN ID: ZDB-FISH-150901-5255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(elavl3:lyn-tagRFP)mpn404</td>
+      <td>Dal Maschio et al., 2017</td>
+      <td>ZFIN ID: ZDB-ALT-170731-38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(isl2b:Gal4-VP16, myl7:TagRFP)zc65</td>
+      <td>Fujimoto et al., 2011</td>
+      <td>ZFIN ID: ZDB-FISH-150901-13523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(14xUAS:EGFP)mpn100</td>
+      <td>Thiele et al., 2014</td>
+      <td>ZFIN ID: ZDB-GENO-140812-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(Shha:GFP)t10</td>
+      <td>Neumann and Nuesslein-Volhard, 2000</td>
+      <td>ZFIN ID: ZDB-GENO-060207-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:mCherry)s1984t</td>
+      <td>Heap et al., 2013</td>
+      <td>ZFIN ID: ZDB-FISH-150901-14417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(brn3c:GAL4, UAS:gap43-GFP)s318t (BGUG)</td>
+      <td>Xiao and Baier, 2007</td>
+      <td>ZFIN ID: ZDB-ALT-070423-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:paGFP,nlsGCaMP6f)mpn104 (UAS:FuGIMA-f)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Tol2-mediated transgenesis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td>http://www.bitplane.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td>http://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MorphoLibJ (ImageJ plugin)</td>
+      <td>Legland et al., 2016</td>
+      <td></td>
+      <td>http://imagej.net/morpholibj</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PsychoPy2</td>
+      <td>Peirce, 2007</td>
+      <td></td>
+      <td>http://www.psychopy.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 2.7</td>
+      <td>Python.org</td>
+      <td></td>
+      <td>http://www.python.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3</td>
+      <td>Python.org</td>
+      <td></td>
+      <td>http://www.python.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CaImAn (Calcium Imaging Analysis toolbox)</td>
+      <td>Giovannucci et al., 2017</td>
+      <td></td>
+      <td>http://github.com/flatironinstitute/CaImAn</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuTube</td>
+      <td>Feng et al., 2015</td>
+      <td></td>
+      <td>http://www.neutracing.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Advanced Normalization Tools (ANTs)</td>
+      <td>Avants et al., 2010</td>
+      <td></td>
+      <td>http://stnava.github.io/ANTs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio Version 1.0.136</td>
+      <td>RStudio</td>
+      <td></td>
+      <td>http://www.rstudio.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package nat (NeuroAnatomy Toolbox)</td>
+      <td>Bates et al., 2020</td>
+      <td></td>
+      <td>http://jefferis.github.io/nat/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3DSlicer</td>
+      <td>Fedorov et al., 2012</td>
+      <td></td>
+      <td>http://www.slicer.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Plotly Chart Studio</td>
+      <td>Plotly.com</td>
+      <td></td>
+      <td>http://www.plotly.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom tracking and behavior analysis code</td>
+      <td>Mearns et al., 2020</td>
+      <td></td>
+      <td>http://bitbucket.org/mpinbaierlab/mearns_et_al_2019</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All animal procedures conformed to the institutional guidelines set by the Max Planck Society, and were approved by the regional government of Upper Bavaria (Regierung von Oberbayern; approved protocols: ROB-55.2-1-54-2532-101-2012 and ROB-55.2–2532.Vet_02-19-16).
 
-## Transgenic constructs
+### Transgenic constructs
 
 To generate UAS:FuGIMA-f, paGFP (gift from K. Svoboda, addgene no. 18697) and nls-GCaMP6f (Förster et al., 2017) were cloned on either side of a bidirectional 14xUAS in a Tol2 vector, featuring a transgenesis marker (‘bleeding heart’, cmlc2:mCherry). Transgenic fish were generated using the standard Tol2 transposon system, and the highly variegated line Tg(UAS:paGFP,nlsGCaMP6f)mpn104 was used for experiments.
 
-## Transgenic zebrafish lines
+### Transgenic zebrafish lines
 
 For all experiments, we used 5–7 days post fertilization (dpf) larvae carrying mutations in the mitfa gene (nacre), which were raised on a 14 hr light/10 hr dark cycle at 28°C. To record functional responses to visual stimuli of tectal cells, we used Tg(elavl3:nls-GCaMP6s)mpn400 fish and similarly for RGCs, we used Tg(atoh7:Gal4-VP16)s1992t; Tg(UAS:GCaMP6s)mpn101 fish. RGC axon ablation experiments were performed in Tg(atoh7:Gal4-VP16)s1992t; Tg(UAS:mCherry)s1984t; Tg(elavl3:nls-GCaMP6s)mpn400 fish, and tectal cells were ablated in Tg(elavl3:nls-GCaMP6s)mpn400 fish.
 
 FuGIMA experiments were performed in incrossed Et(E1b:Gal4-VP16)s1101t (=Gal4s1101t); Tg(UAS:paGFP,nlsGCaMP6f)mpn104 (=FuGIMA-f); Tg(elavl3:lyn-tagRFP)mpn404 fish. Other single-cell reconstructions were generated using Et(E1b:Gal4-VP16)s1013t (=Gal4s1013t); Tg(brn3c:Gal4, UAS:gap43-GFP)s318t (=BGUG) fish. To define tectal layers, RGC expression in Tg(isl2b:Gal4-VP16)zc65; Tg(14xUAS:EGFP)mpn100 fish and in Tg(Shha:GFP)t10 fish was used. To allow registrations to a standard brain, all fish were crossed to the line Tg(elavl3:lyn-tagRFP)mpn404.
 
-## Tectal cell counts
+### Tectal cell counts
 
 5–7 dpf larvae expressing elavl3:nls-GCaMP6s were embedded in 2% low-melting-point agarose and a lethal dose of tricaine methanesulfonate (MS-222) was applied. After 15 min, the tectal brain regions were imaged on a Zeiss LSM780 microscope (voxel size: 0.27 × 0.27 × 1.5 µm3). Images were manually segmented in Imaris (v8.0, Bitplane) by setting pixel intensities outside of the tectum to 0. Using ImageJ (v1.52n), pixel intensities were inverted, images were Gaussian filtered and a classic watershed segmentation was applied (MorphoLibJ plugin). ROIs smaller than 400 voxels were removed and the number of ROIs was analyzed in 3D.
 
-## Functional imaging and visual stimulation
+### Functional imaging and visual stimulation
 
 In vivo calcium imaging was performed on a previously described two-photon microscope (Förster et al., 2017) on 5–7 dpf transgenic zebrafish larvae expressing either cytoplasmic GCaMP6s in RGCs or nuclear-localized GCaMP6s panneuronally. Larvae were mounted in 2% low-melting-point agarose. The stimulus was projected onto a white diffusive screen using the red channel of a LED projector, in a distance of 4 cm from the larva. The projection was presented monocularly and covered ~120° of the larva’s field of view. GCaMP6 signals were recorded by scanning at 920 nm, at ~2 Hz, at a resolution of ~0.6 µm/pixel. The tectum was covered in depth by acquiring z-planes with a distance of ~7 µm.
 
 Visual stimulation was designed using PsychoPy2 and consisted of a dark ramp (red to black, 3 s), a bright ramp (black to red, 3 s), a dark flash (red to black), and a bright flash (black to red). This was followed by a small horizontally moving dot (5°, 90°/s) in forward (temporal to nasal) and backward (nasal to temporal) directions (two repetitions each), and at two elevations of the screen, first at equatorial plane and then elevated by ~20° (two repetitions each). We chose dark dots on a bright (red) background. Published (Antinucci et al., 2019) and our own unpublished results have shown that these stimuli are efficient at eliciting hunting-like behavior in a dark 2P microscope environment, in the absence of UV stimulation (Yoshimatsu et al., 2020). Subsequently, a big dot was moving horizontally (30°, 90°/s) in forward and backward directions (repeated twice), at an elevation of ~10°, thus covering the two horizontal planes of the small dot. The frequency control consisted of black gratings with a spatial frequency of 5° and a temporal frequency of 90°/s, moving in forward and backward directions (repeated twice). The looming stimuli consisted of a fast (~60°/s, linear expansion) and a slow-looming disc (~20°/s, linear expansion), both ending with a black screen (two repetitions each). This stimulus protocol was repeated twice with a total acquisition length of 515 s.
 
-## Analysis of imaging data
+### Analysis of imaging data
 
 Recorded imaging data were pre-processed as described previously (Helmbrecht et al., 2018). In brief, images were motion-corrected using the CaImAn package, uniformly filtered over three frames and the dF/F was calculated using the 5th percentile of the traces. In total 15 regressors for all stimulus components were created and convolved with a corresponding GCaMP6 kernel. Neuronal activity was analyzed pixel-wise for RGC and ROI-wise for tectal imaging data, by calculating a score of all regressors to the calcium responses of each pixel using a linear regression model of the selected response window with the regressor (Python scikit-learn). For the score, the coefficient of the regression (CR; corresponding to the dF/F) was multiplied by the correlation value R2. All pixels and ROIs were imaged twice using the same stimulus and the final score was calculated via a weighted average of the scores by the corresponding R2.
 
-## Clustering of functional responses
+### Clustering of functional responses
 
 To determine overall response types, the scores were normalized per fish to the 99th percentile of all pixels/ROIs recorded.
 
@@ -162,21 +420,29 @@ Similarly to the clustering of tectal neurons, the responsive RGC pixels of one 
 
 To quantify the number of pixels per RGC cluster in tectal compartments and layers (Figure 3C and Figure 3—figure supplement 1D), we used ImageJ to manually draw ROIs and to count pixels for each compartment/lamina in each image plane.
 
-## Mapping of functional responses from independent experiments onto our clustered datasets
+### Mapping of functional responses from independent experiments onto our clustered datasets
 
 To map response types of SINs, NINs and enucleated fish, functional imaging was performed as described. ROIs were defined semi-automatically to segment only single, separated tectal cell bodies in the tectal neuropil and/or the periventricular layer. Several fish per experiment were analyzed to calculate the scores, and again pixels with maximum scores smaller than 0.2 were removed. A k-nearest neighbor classifier (sklearn.neighbors.KNeighborsClassifier) was trained on the elavl3:nls-GCaMP6s clustered ROIs (1759 ROIs with cluster labels, k = 10) and the scores of every mapped fish were assigned to the cluster dataset using either predicted labels for the ROIs distribution or probability estimates for the population distributions. The classification was cross-validated by splitting the elavl3:nls-GCaMP6s dataset into 70% training and 30% test data, which evaluated to an accuracy of 92%. A similar, pixel-wise approach was used to map the functional RGC data of two additional ath5:Gal4; UAS:GCaMP6s fish onto the ten RGC clusters by choosing k = 100 (Figure 3—figure supplement 1C).
 
-## Modeling of tectal responses using RGC inputs
+### Modeling of tectal responses using RGC inputs
 
-To predict the tectal responses using RGC information, we applied a linear modeling approach using L1-regularized regression (Lasso) (sklearn.linear_model.Lasso) with non-negative constraint. The cost function of the Lasso is defined by:Cost=∑i=0nyi- ∑j=0mwj xij2+λ ∑j=0mwj
+To predict the tectal responses using RGC information, we applied a linear modeling approach using L1-regularized regression (Lasso) (sklearn.linear_model.Lasso) with non-negative constraint. The cost function of the Lasso is defined by:
 
-The regularization parameter (λ) helps to reduce the impact of multicollinearities between the average scores of RGC classes, and the optimal λ was found by minimizing the mean squared error of a grid search on a log scale between 1e−5 and 1e−1 (Figure 4—figure supplement 1B). The modeling of the scores of every single tectal neuron (total 1759) was performed using the 15-dimensional average scores of the 10 defined RGC clusters, so that:PredScore TectalNeuron=b+ ∑j=0m (RGC)wj AvgScoreRGCj
+$$
+Cost=\sum_{i=0}^{n}yi-\sumj=0mwjxij^{2}+\lambda\sumj=0mwj
+$$
 
-The PredScore was evaluated by calculating the R2score of the regression. To predict the calcium traces of the tectal cells, we used the resulting weights of the regression and calculated the dot product of the average RGC responses with the corresponding weights (w) and bias (b) and evaluated the result via the pearson correlation (Rtrace) between the predicted and measured calcium responses.
+The regularization parameter ($\lambda$) helps to reduce the impact of multicollinearities between the average scores of RGC classes, and the optimal $\lambda$ was found by minimizing the mean squared error of a grid search on a log scale between 1e−5 and 1e−1 (Figure 4—figure supplement 1B). The modeling of the scores of every single tectal neuron (total 1759) was performed using the 15-dimensional average scores of the 10 defined RGC clusters, so that:
+
+$$
+PredScoreTectalNeuron=b+\sumj=0m(RGC)wjAvgScoreRGCj
+$$
+
+The $PredScore$ was evaluated by calculating the R2score of the regression. To predict the calcium traces of the tectal cells, we used the resulting weights of the regression and calculated the dot product of the average RGC responses with the corresponding weights (w) and bias (b) and evaluated the result via the pearson correlation (Rtrace) between the predicted and measured calcium responses.
 
 The model was tested by comparing the resulted distribution of response correlations to the distribution of a random model, by choosing for every cell 1000 times random weights (Figure 4—figure supplement 1C). In addition, the model was cross-validated by splitting the data into a training and test set using one of the two trials per cell, and a corresponding RMSE (root mean squared error) of the test dataset was calculated (Figure 4B).
 
-## FuGIMA and other single-cell labeling experiments
+### FuGIMA and other single-cell labeling experiments
 
 Tectal responses in fish expressing elavl3:lyn-tagRFP and UAS:FuGIMA-f under control of Gal4s1101t were functionally imaged as described above. After image acquisition, a custom-written, regressor-based python script was used to overlay a color map of correlated pixels on the mean ∆F/F image to identify cells of functional interest. Single-cell photoactivation of paGFP was performed as previously described (Förster et al., 2018). Typically, 2–3 photoactivation cycles were sufficient to reach the maximal fluorescence intensity in tectal interneurons. After allowing paGFP to diffuse into all neurites of the photoactivated cell for about 30–45 min, a high-resolution z-stack of the whole tectum, including both paGFP and lyn-tagRFP channels, was acquired at a confocal microscope (LSM700 or LSM780, Zeiss; 20x/1.0 NA water-dipping objective).
 
@@ -184,17 +450,17 @@ Other single-cell reconstructions (randomly-labeled tectal neurons) were perform
 
 All individual neurons were traced semi-automatically using the software neuTube (Build1.0z) and SWC files were generated for each cell.
 
-## Image registration
+### Image registration
 
 All image registrations were performed using the Advanced Normalization Tools (ANTs) software (Avants et al., 2010), and live expression of elavl3:lyn-tagRFP served as a reference channel. First, a FuGIMA standard brain was generated by mirroring all FuGIMA cells to one brain half and by subsequent registration to one exemplary lyn-tagRFP channel, which served as a template. ANTs parameters recently determined for live samples were applied (Marquart et al., 2017). Second, this FuGIMA standard brain was registered to the zebrafish single-neuron atlas (Kunst et al., 2019) in three steps: (1) registration of the FuGIMA template to a tectal subvolume of the live lyn-tagRFP standard brain from the atlas, (2) extension to the full live standard brain volume, (3) registration of the live standard brain to the fixed standard brain of the atlas. Similarly, the BGUG dataset was first registered to its own standard brain, which was subsequently registered to the single-neuron atlas. Finally, single-neuron tracings (SWC files) were aligned using the antsApplyTransformToPoints function contained in the ANTsR package. For visualizations and 3D renderings, we used the web interface of the single-neuron atlas (http://fishatlas.neuro.mpg.de/). All single-neuron data from this study are publicly available through this atlas.
 
-## Morphological quantifications
+### Morphological quantifications
 
 To add landmarks for the tectal laminae, we co-registered the expression patterns of isl2b:Gal4 UAS:GFP and shh:GFP into the FuGIMA standard brain. We then used these anatomical labels, together with the software 3D slicer (http://www.slicer.org/), to manually segment the individual tectal layers. For every cell, we measured the fiber lengths in each layer and calculated the percentage of the cell's total neurite length (proportional branch length) using a custom-written python script. Single-cell morphological barcodes (heatmaps) were generated using Plotly Chart Studio (https://plot.ly/).
 
 To quantify the neurite arbor size of tectal cells, we used the 'Oblique slicer' and 'Measurement points' tools in Imaris (v8.02; Bitplane) to define and extract planar coordinates for each laminar stratification (Figure 5—figure supplement 3A). The areas in µm2 were quantified using a custom-written python script.
 
-## Ablation and enucleation experiments
+### Ablation and enucleation experiments
 
 For RGC axon ablations, 6 dpf old larvae expressing mCherry in RGCs and nuclear GCaMP6s panneuronally were mounted in agarose and were intraspinally injected with alpha-bungarotoxin (2 mg/ml, Invitrogen, B1601). Tectal cell responses were functionally imaged as described above. Subsequently, the axon bundle, which leaves AF7 for the tectal SO layer was cut at the same 2P microscope by scanning a 10 µm line (0.01 µm/pixel) at 760 nm for 500 ms transverse to the fascicle. The laser intensity at the objective focal plane was ~30 mW. Afterwards, fish were released from agarose to recover overnight in Danieau's solution. At 7 dpf, fish were re-embedded and functional imaging of tectal cell responses was repeated. Somata signals in the tectal neuropil served as landmarks for approximate reidentification of the same imaging planes obtained at 6 dpf. Regressor analysis was described as above and cluster-color-coded responsive tectal cells were counted manually.
 
@@ -202,12 +468,12 @@ For tectal cell ablations, 7 dpf old larvae expressing nuclear GCaMP6s panneuron
 
 For enucleation experiments, 4 dpf old fish expressing elavl3:nls-GCaMP6s were placed in 2% low-melting agarose with 0.02% tricaine methanesulfonate (MS-222). The right eye was removed using custom-made micro-scalpels. Fish were allowed to recover for two days in Danieau's solution until functional imaging was performed at 6 dpf.
 
-## Free-swimming prey capture assay
+### Free-swimming prey capture assay
 
 Prior to testing prey capture behavior, larvae were allowed to feed ad libitum on paramecia from 5 to 6dpf. At 7 dpf, larvae were embedded in agarose and cells in the tectum were ablated (see above). Larvae were freed from agarose and allowed to recover overnight. Prey capture behavior was tested the following day at 8 dpf. Controls groups were unembedded siblings, siblings embedded but not subject to the ablation protocol, and ‘sham’ ablated siblings.
 
 The free-swimming prey capture assay was performed as described previously (Mearns et al., 2020). Briefly, larvae were introduced individually into an arena (15 × 15 × 5 mm) with 50–100 paramecia (Paramecium multimicronucleatum). Each larva was allowed to feed for 20–30 min while being recorded from above at 500 frames per second using a high-speed camera (PhotonFocus, MV1-D1312-160-CL, Switzerland). In each frame of the recordings, the eyes and tail of the fish were tracked offline using custom-written Python software (https://bitbucket.org/mpinbaierlab/mearns_et_al_2019). Tail tracking was performed using background subtraction and thresholding followed by skeletonization of the largest contour in the image. Swim bouts were identified using a change point algorithm on the derivative of the tail angle with respect to time. Eye tracking was performed similarly using background subtraction, thresholding and contour detection. For each animal independently, we calculated the distribution of eye convergence angles over the experiment and used the local minimum in the resulting bimodal distribution as the prey capture threshold. Since eye convergence is a reliable indicator of prey capture in zebrafish larvae (Bianco et al., 2011; Patterson et al., 2013; Mearns et al., 2020), we defined hunting events as any time the eye convergence angle was above this threshold. Initial orienting J-turns were defined as any bout where the eyes were unconverged before and converged after the bout. The bout integral was calculated by summing the tail tip angle values over the duration of the bout, with positive values indicating a rightward turn and negative values indicating a leftward turn. The direction of the turn was defined by the sign of the bout integral (positive for right, negative for left). The direction selectivity index was computed as [(# right J-turns - # left J-turns) / (total # J-turns)] for each fish, with a value of 1 indicating all J-turns were to the right, −1 indicating all J-turns were to the left, and 0 indicating no overall bias in J-turn direction.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were two-tailed t-tests, if not stated otherwise. For the quantification of prey capture behavior, statistics were performed using the scipy library in Python 3. The proportion of time larvae spent engaged in hunting behavior was compared between treatment groups using a Mann-Whitney U test. Similarly, the direction selectivity index of initial J-turns was compared between treatment groups using a Mann-Whitney U test.

@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04wbzgn90 Programa de Doctorado en Ciencias Ambientales y Sostenibilidad, Universidad de Bogotá Jorge Tadeo Lozano Bogotá Colombia
-2. https://ror.org/03etyjw28 Facultad de Estudios Ambientales y Rurales, Pontificia Universidad Javeriana Bogotá Colombia
+1. Programa de Doctorado en Ciencias Ambientales y Sostenibilidad, Universidad de Bogotá Jorge Tadeo Lozano Bogotá Colombia ([ROR:04wbzgn90](https://ror.org/04wbzgn90))
+2. Facultad de Estudios Ambientales y Rurales, Pontificia Universidad Javeriana Bogotá Colombia ([ROR:03etyjw28](https://ror.org/03etyjw28))
 
 † Corresponding author
 

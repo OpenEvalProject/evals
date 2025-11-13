@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.12047.001 The sensation of breathlessness is the most threatening symptom of respiratory disease. The different subdivisions of the midbrain periaqueductal gray (PAG) are intricately (and differentially) involved in integrating behavioural responses to threat in animals, while the PAG has previously only been considered as a single entity in human research. Here we investigate how these individual PAG columns are differently involved with respiratory threat. Eighteen healthy subjects were conditioned to associate shapes with certain or uncertain impending respiratory load, and scanned the following day during anticipation and application of inspiratory loading using 7 T functional MRI. We showed activity in the ventrolateral PAG (vlPAG) during anticipation of resistive loading, with activity in the lateral PAG (lPAG) during resistive loading, revealing spatially and temporally distinct functions within this structure. We propose that lPAG is involved with sensorimotor responses to breathlessness, while the vlPAG operates within the threat perception network for impending breathlessness. DOI: http://dx.doi.org/10.7554/eLife.12047.001
+The sensation of breathlessness is the most threatening symptom of respiratory disease. The different subdivisions of the midbrain periaqueductal gray (PAG) are intricately (and differentially) involved in integrating behavioural responses to threat in animals, while the PAG has previously only been considered as a single entity in human research. Here we investigate how these individual PAG columns are differently involved with respiratory threat. Eighteen healthy subjects were conditioned to associate shapes with certain or uncertain impending respiratory load, and scanned the following day during anticipation and application of inspiratory loading using 7 T functional MRI. We showed activity in the ventrolateral PAG (vlPAG) during anticipation of resistive loading, with activity in the lateral PAG (lPAG) during resistive loading, revealing spatially and temporally distinct functions within this structure. We propose that lPAG is involved with sensorimotor responses to breathlessness, while the vlPAG operates within the threat perception network for impending breathlessness.
 
 ## Introduction
 
@@ -32,93 +32,190 @@ The aim of this study was to investigate the roles of the individual PAG columns
 
 ## Results
 
-## Behavioural scores
+### Behavioural scores
 
-Mean anxiety and intensity scores for conditioned responses to the respiratory tasks are given in Table 1. Anxiety scores were significantly higher for the certain anticipation cue compared to the uncertain cue, and subsequent resistance was rated at a greater intensity following the certain cue.10.7554/eLife.12047.003Table 1.Mean ( ± SD) anxiety and intensity ratings to the conditioned respiratory tasks.DOI: http://dx.doi.org/10.7554/eLife.12047.003No impending resistanceUncertain impending resistanceCertain impending resistanceAnxiety (%)4.3 (5.1)36.7 (22.3)*48 (26.7)**Intensity (%)4.7 (3.1)55.5 (20.9)*62.9 (21.5)***Significantly (p<0.05) different from ‘no impending resistance’ condition;**Significantly (p<0.05) different from ‘no impending resistance’ and ‘uncertain impending resistance’.
+Mean anxiety and intensity scores for conditioned responses to the respiratory tasks are given in Table 1. Anxiety scores were significantly higher for the certain anticipation cue compared to the uncertain cue, and subsequent resistance was rated at a greater intensity following the certain cue.
 
-## Physiology
+**Table 1.**
+ Mean ( ± SD) anxiety and intensity ratings to the conditioned respiratory tasks.
 
-Group average heart rate ( ± SD) during the brainstem BOLD scanning was 68 ( ± 9) beats per minute. Ventilatory variables during each of the respiratory conditions are given in Table 2. Certain anticipation of resistance was associated with a greater decrease in PETCO2 and increase in PETO2 and respiratory volume per unit of time (RVT) than uncertain, indicating preparatory increases in respiration with more effective conditioning.10.7554/eLife.12047.004Table 2.Mean ( ± SD) physiological variables across conditioned respiratory tasks.DOI: http://dx.doi.org/10.7554/eLife.12047.004AnticipationResistanceNo impending resistanceUncertain impending resistanceCertain impending resistanceAveragePeakPressure (cmH2O)-0.14 (0.11)-0.17 (0.12)-0.18 (0.24)-5.80 (3.64)*-14.67 (8.28)*PETCO2 (%)4.41 (0.71)4.41 (0.67)4.32 (0.68)*4.46 (0.67)4.62 (0.66)*PETO2 (%)18.1 (1.0)18.1 (1.0)18.3 (1.1)*18.5 (1.0)*18.9 (1.0)*Respiratory rate (min-1)12.8 (3.7)12.5 (3.8)12.4 (3.6)11.2 (4.6)13.8 (5.9)RVT increase (%)-4.4 (7.4)7.8 (19.6)*11.0 (23.0)*-16.1 (21.6)*16.6 (28.5)**Significantly (p<0.05) different from ‘no impending resistance’ condition.Abbreviations: Pressure, average mouth pressure across all ventilatory cycles; PETCO2, pressure of end-tidal carbon dioxide; PETO2, pressure of end-tidal oxygen; RVT, respiratory volume per unit time.
 
-## Periaqueductal gray fMRI analysis
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>No impending resistance</th>
+      <th>Uncertain impending resistance</th>
+      <th>Certain impending resistance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anxiety (%)</td>
+      <td>4.3 (5.1)</td>
+      <td>36.7 (22.3)*</td>
+      <td>48 (26.7)**</td>
+    </tr>
+    <tr>
+      <td>Intensity (%)</td>
+      <td>4.7 (3.1)</td>
+      <td>55.5 (20.9)*</td>
+      <td>62.9 (21.5)**</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significantly (p<0.05) different from ‘no impending resistance’ condition;**Significantly (p<0.05) different from ‘no impending resistance’ and ‘uncertain impending resistance’._
+
+### Physiology
+
+Group average heart rate ( ± SD) during the brainstem BOLD scanning was 68 ( ± 9) beats per minute. Ventilatory variables during each of the respiratory conditions are given in Table 2. Certain anticipation of resistance was associated with a greater decrease in PETCO2 and increase in PETO2 and respiratory volume per unit of time (RVT) than uncertain, indicating preparatory increases in respiration with more effective conditioning.
+
+**Table 2.**
+ Mean ( ± SD) physiological variables across conditioned respiratory tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Anticipation</th>
+      <th colspan="2">Resistance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>No impending resistance</td>
+      <td>Uncertain impending resistance</td>
+      <td>Certain impending resistance</td>
+      <td>Average</td>
+      <td>Peak</td>
+    </tr>
+    <tr>
+      <td>Pressure (cmH2O)</td>
+      <td>-0.14 (0.11)</td>
+      <td>-0.17 (0.12)</td>
+      <td>-0.18 (0.24)</td>
+      <td>-5.80 (3.64)*</td>
+      <td>-14.67 (8.28)*</td>
+    </tr>
+    <tr>
+      <td>PETCO2 (%)</td>
+      <td>4.41 (0.71)</td>
+      <td>4.41 (0.67)</td>
+      <td>4.32 (0.68)*</td>
+      <td>4.46 (0.67)</td>
+      <td>4.62 (0.66)*</td>
+    </tr>
+    <tr>
+      <td>PETO2 (%)</td>
+      <td>18.1 (1.0)</td>
+      <td>18.1 (1.0)</td>
+      <td>18.3 (1.1)*</td>
+      <td>18.5 (1.0)*</td>
+      <td>18.9 (1.0)*</td>
+    </tr>
+    <tr>
+      <td>Respiratory rate (min-1)</td>
+      <td>12.8 (3.7)</td>
+      <td>12.5 (3.8)</td>
+      <td>12.4 (3.6)</td>
+      <td>11.2 (4.6)</td>
+      <td>13.8 (5.9)</td>
+    </tr>
+    <tr>
+      <td>RVT increase (%)</td>
+      <td>-4.4 (7.4)</td>
+      <td>7.8 (19.6)*</td>
+      <td>11.0 (23.0)*</td>
+      <td>-16.1 (21.6)*</td>
+      <td>16.6 (28.5)*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significantly (p<0.05) different from ‘no impending resistance’ condition.Abbreviations: Pressure, average mouth pressure across all ventilatory cycles; PETCO2, pressure of end-tidal carbon dioxide; PETO2, pressure of end-tidal oxygen; RVT, respiratory volume per unit time._
+
+### Periaqueductal gray fMRI analysis
 
 The results of the targeted PAG subdivision analyses (in which certain anticipation of resistive loading was contrasted with anticipation of no loading) revealed significant increased BOLD activity in the vlPAG, and decreased BOLD in the lPAG during inspiratory resistance (Figure 1). A further analysis of the whole PAG showed that these activations were isolated to the vlPAG and lPAG in these conditions, although certain anticipation of resistance was now analysed against baseline for adequate statistical power (Figure 2). Furthermore, activity in the lPAG during certain anticipation of resistance was found to scale with intensity ratings across subjects (Figure 3). No areas of the PAG or cortex significantly scaled with intensity or anxiety ratings during inspiratory loading, possibly due to insufficient statistical power necessary to observe these scaled activations across subjects during the noisy stimulus of inspiratory loading.
 
-When comparing uncertain and certain anticipation of breathlessness, no significant difference was found in the PAG between the two conditions, possibly due to insufficient statistical power to detect a difference. However, during uncertain anticipation of resistance, subthreshold PAG activity (p=0.11) was identified in the same area of the right vlPAG as the significant cluster found with certain anticipation of resistance (
+When comparing uncertain and certain anticipation of breathlessness, no significant difference was found in the PAG between the two conditions, possibly due to insufficient statistical power to detect a difference. However, during uncertain anticipation of resistance, subthreshold PAG activity (p=0.11) was identified in the same area of the right vlPAG as the significant cluster found with certain anticipation of resistance (Figure 4). Activity in neither the vlPAG, nor the lPAG scaled with anxiety across subjects.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig1-v3.jpg)
 
-**Figure 1.:** Left: Schematic representation of the columns of the midbrain periaqueductal gray (PAG), which almost surrounds the aqueduct. Middle: Ventrolateral PAG (vlPAG) activation during anticipation of resistance contrasted with anticipation of no resistance. Right: Lateral PAG (lPAG) deactivation during inspiratory resistance. Statistics are small-volume-corrected for multiple comparisons using highlighted PAG column masks, adapted from Ezra et al. (2015), and the images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Line drawing originally published in Ezra et al., 2015.DOI: http://dx.doi.org/10.7554/eLife.12047.005
+**Figure 1.:** Left: Schematic representation of the columns of the midbrain periaqueductal gray (PAG), which almost surrounds the aqueduct. Middle: Ventrolateral PAG (vlPAG) activation during anticipation of resistance contrasted with anticipation of no resistance. Right: Lateral PAG (lPAG) deactivation during inspiratory resistance. Statistics are small-volume-corrected for multiple comparisons using highlighted PAG column masks, adapted from Ezra et al. (2015), and the images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Line drawing originally published in Ezra et al., 2015.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig2-v3.jpg)
 
-**Figure 2.:** Left: 3D representation of the PAG activations on the right. Top row sagittal view, bottom row axial view of activation in the vlPAG during anticipation of certain resistance (against baseline: p=0.021) and deactivation during inspiratory resistance in bilateral lPAG (p=0.007). The key on the right shows location of PAG mask and orientation of displayed slices. Statistics are small-volume-corrected for multiple comparisons using highlighted PAG mask, and the images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain.DOI: http://dx.doi.org/10.7554/eLife.12047.006
+**Figure 2.:** Left: 3D representation of the PAG activations on the right. Top row sagittal view, bottom row axial view of activation in the vlPAG during anticipation of certain resistance (against baseline: p=0.021) and deactivation during inspiratory resistance in bilateral lPAG (p=0.007). The key on the right shows location of PAG mask and orientation of displayed slices. Statistics are small-volume-corrected for multiple comparisons using highlighted PAG mask, and the images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig3-v3.jpg)
 
-**Figure 3.:** Right: Positive correlation in the lPAG with intensity ratings (green uncorrected Z score, red/yellow TFCE-corrected for lPAG activity, PAG displayed in light grey) but not anxiety. Top: Cortical correlations with average intensity score. Bottom: Cortical correlations with anxiety score for certain anticipation. Images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain.DOI: http://dx.doi.org/10.7554/eLife.12047.007
+**Figure 3.:** Right: Positive correlation in the lPAG with intensity ratings (green uncorrected Z score, red/yellow TFCE-corrected for lPAG activity, PAG displayed in light grey) but not anxiety. Top: Cortical correlations with average intensity score. Bottom: Cortical correlations with anxiety score for certain anticipation. Images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig4-v3.jpg)
 
-**Figure 4.:** vlPAG activations during uncertain (A) and certain (B) anticipation of impending breathlessness. Uncertain anticipation produces subthreshold vlPAG activation in a consistent area to the certain condition. PAG mask displayed by light grey region. Images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Orientations marked on the image.DOI: http://dx.doi.org/10.7554/eLife.12047.008
+**Figure 4.:** vlPAG activations during uncertain (A) and certain (B) anticipation of impending breathlessness. Uncertain anticipation produces subthreshold vlPAG activation in a consistent area to the certain condition. PAG mask displayed by light grey region. Images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Orientations marked on the image.
 
-## Cortical and subcortical respiratory results
+### Cortical and subcortical respiratory results
 
-All respiratory tasks: We observed significant BOLD signal increases bilaterally in the motor cortex, supplementary motor cortex, primary sensory cortex, middle and posterior cingulate cortices, operculum, medulla and middle insular cortex, and decreased BOLD signal in the bilateral hippocampus and IX cerebellar lobe, for both certain and uncertain anticipation against baseline, and during inspiratory resistance (
+All respiratory tasks: We observed significant BOLD signal increases bilaterally in the motor cortex, supplementary motor cortex, primary sensory cortex, middle and posterior cingulate cortices, operculum, medulla and middle insular cortex, and decreased BOLD signal in the bilateral hippocampus and IX cerebellar lobe, for both certain and uncertain anticipation against baseline, and during inspiratory resistance (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig5-v3.jpg)
 
-**Figure 5.:** Mean cortical activations and deactivations identified during inspiratory resistance, 100% certain anticipation, 50% uncertain anticipation and finger opposition. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. The bright grey region represents the coverage of the coronal-oblique functional scan. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons). Abbreviations: VPL, ventral posterior lateral nucleus (thalamus); M1, primary motor cortex; S1, primary sensory cortex; CN, caudate nucleus; Put, putamen; Hipp, hippocampus; STN, subthalamic nucleus; PCC, posterior cingulate cortex; MCC, middle cingulate cortex; p-In, posterior insular; m-In, middle insular; OP, operculum; SMC, supplementary motor cortex; PCG, paracingulate gyrus; PN, posterior nuclei of the thalamus; PAG, periaqueductal gray; M, solitary nucleus of the medulla; Cu, cuneate nucleus (medulla); I-IV, I-IV cerebellar lobe; IX, IX cerebellar lobe. Source files providing peak voxel locations are provided (Figure 5—source data 1–3).DOI: http://dx.doi.org/10.7554/eLife.12047.00910.7554/eLife.12047.010Figure 5—source data 1.Values derived from cluster-based analysis. The most significant maximum is listed for each anatomical location. Co-ordinates are in mm in standard space of MNI (1 mm3). x, distance right (+) or left (-) of the mid saggital line; y, distance anterior (+) or posterior (-) from a vertical plane through the anterior commissure; z, distance above (+) or below (-) the intercommisurial plane. Abbreviations: VPL, ventroposterolateral nucleus of the thalamus.DOI: http://dx.doi.org/10.7554/eLife.12047.01010.7554/eLife.12047.011Figure 5—source data 2.Values derived from cluster-based analysis. The most significant maximum is listed for each anatomical location. Co-ordinates are in mm in standard space of MNI (1 mm3). x, distance right (+) or left (-) of the mid saggital line; y, distance anterior (+) or posterior (-) from a vertical plane through the anterior commissure; z, distance above (+) or below(-) the intercommisurial plane.DOI: http://dx.doi.org/10.7554/eLife.12047.01110.7554/eLife.12047.012Figure 5—source data 3.Values derived from cluster-based analysis. The most significant maximum is listed for each anatomical location. Co-ordinates are in mm in standard space of MNI (1 mm3). x, distance right (+) or left (-) of the mid saggital line; y, distance anterior (+) or posterior (-) from a vertical plane through the anterior commissure; z, distance above (+) or below (-) the intercommisurial plane. Abbreviations: VPL, ventroposterolateral nucleus of the thalamus.DOI: http://dx.doi.org/10.7554/eLife.12047.012
+**Figure 5.:** Mean cortical activations and deactivations identified during inspiratory resistance, 100% certain anticipation, 50% uncertain anticipation and finger opposition. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. The bright grey region represents the coverage of the coronal-oblique functional scan. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons). Abbreviations: VPL, ventral posterior lateral nucleus (thalamus); M1, primary motor cortex; S1, primary sensory cortex; CN, caudate nucleus; Put, putamen; Hipp, hippocampus; STN, subthalamic nucleus; PCC, posterior cingulate cortex; MCC, middle cingulate cortex; p-In, posterior insular; m-In, middle insular; OP, operculum; SMC, supplementary motor cortex; PCG, paracingulate gyrus; PN, posterior nuclei of the thalamus; PAG, periaqueductal gray; M, solitary nucleus of the medulla; Cu, cuneate nucleus (medulla); I-IV, I-IV cerebellar lobe; IX, IX cerebellar lobe. Source files providing peak voxel locations are provided (Figure 5—source data 1–3).
 
-## Anticipation
+#### Anticipation
 
 Both certain and uncertain anticipation additionally correlated with bilateral deactivations in the posterior insula. No significant cortical or subcortical differences were seen between certain and uncertain anticipation.
 
-## Resistive loading
+#### Resistive loading
 
 Inspiratory resistance also correlated with activations in the bilateral putamen, caudate, ventral posterior lateral nucleus (thalamus) and subthalamic nucleus, and deactivations in the bilateral amygdala, lPAG and posterior nuclei of the thalamus.
 
-The hypercapnia challenges and the resultant CO
+The hypercapnia challenges and the resultant CO2 regressor produced strong BOLD signal increases throughout the grey matter of the brain. Furthermore, increases in BOLD signal correlating to the CO2 regressor were observed within the PAG, localised to the grey matter and excluding the aqueduct (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig6-v3.jpg)
 
-**Figure 6.:** Global BOLD signal change correlating with changes in end tidal carbon dioxide (PETCO2). The image on the right is a zoom to show signal changes within the PAG (outlined in black). Small hypercapnic challenges were administered during rest periods to dissociate hypercapnic effects from respiratory stimuli, and a carbon dioxide (CO2) trace was created by extrapolating between end-tidal CO2 peaks. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons).DOI: http://dx.doi.org/10.7554/eLife.12047.013
+**Figure 6.:** Global BOLD signal change correlating with changes in end tidal carbon dioxide (PETCO2). The image on the right is a zoom to show signal changes within the PAG (outlined in black). Small hypercapnic challenges were administered during rest periods to dissociate hypercapnic effects from respiratory stimuli, and a carbon dioxide (CO2) trace was created by extrapolating between end-tidal CO2 peaks. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons).
 
-## Finger opposition task
+### Finger opposition task
 
-Finger opposition resulted in consistant significant signal increases in both the brainstem and motor cortex with previous research (
+Finger opposition resulted in consistant significant signal increases in both the brainstem and motor cortex with previous research (Faull et al., 2015; Lee et al., 1999; Pattinson et al., 2009) including bilateral activation in the motor cortex (more extensive activation in the contralateral left motor cortex), supplementary motor cortex, middle cingulate and paracingulate cortices, primary sensory cortex, anterior insula cortex, operculum, caudate nucleus and putamen (Figure 5). Bilateral signal increases were seen in the thalamic VPL nuclei, as well as the left thalamic VPM nucleus. In addition, activations were observed in the left subthalamic and red nuclei, right (ipsilateral) cuneate nucleus of the medulla (Figure 7), and bilateral cerebellum (VI and VIIIa lobules).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig7-v3.jpg)
 
-**Figure 7.:** Demonstration of the use of finger opposition as a functional localiser in brainstem FMRI in the current study compared to previous results, displaying hypothesised activation in the ipsilateral cuneate nucleus of the medulla (z -54). The 7 T 1 mm3 voxel data is derived from previously-published results (Faull et al., 2015) (14 repeats of 15 sec finger opposition, 1 mm3 voxels and TR=5 s), while the 1.5 mm3 voxel data is from the current study (10 repeats of 15 sec finger opposition, 1.5 mm3 voxels and TR=3.11 s). This technique provides confidence in the analysis model and registration accuracy of the current 7 T study. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons). The sagittal image on the right displays the position of slices, for clarity only displayed from the 7 T 1 mm3 acquisition. Abbreviations: R, raphe nuclei; ret, nuclei reticularis; VII, facial nucleus; Amb, nucleus ambiguous; IX, glossopharyngeal nucleus; NTS, nucleus tractus solitaries; GC, gracile (medial) and cuneate (lateral) nuclei (in blue). R (right) and L (left) indicate image orientation. Original line drawings adapted from Duvernoy, 1995.DOI: http://dx.doi.org/10.7554/eLife.12047.014
+**Figure 7.:** Demonstration of the use of finger opposition as a functional localiser in brainstem FMRI in the current study compared to previous results, displaying hypothesised activation in the ipsilateral cuneate nucleus of the medulla (z -54). The 7 T 1 mm3 voxel data is derived from previously-published results (Faull et al., 2015) (14 repeats of 15 sec finger opposition, 1 mm3 voxels and TR=5 s), while the 1.5 mm3 voxel data is from the current study (10 repeats of 15 sec finger opposition, 1.5 mm3 voxels and TR=3.11 s). This technique provides confidence in the analysis model and registration accuracy of the current 7 T study. The images consist of a colour-rendered statistical map superimposed on a standard (MNI 1 mm3) brain. Significant regions are displayed with a threshold Z>2.3, with a cluster probability threshold of p<0.05 (corrected for multiple comparisons). The sagittal image on the right displays the position of slices, for clarity only displayed from the 7 T 1 mm3 acquisition. Abbreviations: R, raphe nuclei; ret, nuclei reticularis; VII, facial nucleus; Amb, nucleus ambiguous; IX, glossopharyngeal nucleus; NTS, nucleus tractus solitaries; GC, gracile (medial) and cuneate (lateral) nuclei (in blue). R (right) and L (left) indicate image orientation. Original line drawings adapted from Duvernoy, 1995.
 
 ## Discussion
 
-## Main findings
+### Main findings
 
 In this study we identified differential activity in the lateral and ventrolateral columns of the PAG relating to different aspects of the aversive stimulus of resistive inspiratory loading. We observed bilateral decreased BOLD activity in the lPAG during resistive inspiratory loading, and during cued anticipation activity in this area correlated with behavioural ratings of breathlessness intensity. Conversely, positive BOLD activity in the right vlPAG was identified during the cued anticipation of certain impending resistance, while uncertain anticipation activity remained subthreshold. Anxiety ratings, intensity scores and the ventilatory response were lower in the uncertain vs. certain condition, indicating a reduction in the conditioned threat response to a 50% (uncertain) predictive cue, compared to the 100% (certain) predictive cue.
 
-## PAG and threat
+### PAG and threat
 
 Significantly, recent work using diffusion tractography has revealed consistent columnar structure to animal models within the human PAG (Ezra et al., 2015). During response to threat, functional organisation of these animal PAG columns has been hypothesised to consist of active and passive coping strategies (Bandler et al., 2000; Hayen et al., 2013a; Herigstad et al., 2011). The lPAG and dlPAG are thought to employ active coping strategies for escapable stressors, consistent with the tachypnea observed in animals on stimulation of these columns (Holstege, 1989), while the vlPAG employs passive coping strategies for inescapable stressors (vlPAG) such as that seen with a range of physical stimuli (Bandler et al., 2000). In the current investigation of the threat response to breathlessness, the aversive resisted breathing stimulus was an upcoming inescapable stressor, activating the vlPAG, while during the active stimulus response we observed lPAG activity. These results are the first in humans to adhere to the current models of distinctive threat perception of the animal PAG columns, although the cytoarchitecture and autonomic functions produced within the rostro-caudal axes of these columns is in humans not yet known. One recent study by Satpute and colleagues used 7 Ttesla functional MRI to identify highly localised activity in areas of the PAG along the rostro-caudal axis during exposure to aversive images in humans [Satpute et al., 2013] however this study was based upon pre-defined divisions within the PAG that neither adhered to its known columnar structure, nor considered the characteristic functions of these columns within threat perception. Therefore, while there is much work to be done to accurately map the cytoarchitecture and functional localisation of autonomic functions within the human PAG columns, we will now discuss each of the activated columns in the current study, as a starting point towards understanding their potential role in the specific threat response to an aversive breathing stimulus as a model of breathlessness.
 
-## lPAG in conditioned breathlessness
+### lPAG in conditioned breathlessness
 
 The decrease in BOLD signal in the lPAG during an inspiratory resistance found in this study is consistent with previous PAG findings. Prior work by our group identified decreased BOLD signal in the human lPAG during the respiratory challenge of breath holds (Faull et al., 2015), and animal studies have proposed the lPAG may play a role in respiratory behaviours such as prolonged inspirations and expirations (Holstege, 1989). Thus, it is possible that the lPAG is an integral nucleus within the somatomotor pathways of respiratory control in the active response to threat, and anatomical evidence exists to support this hypothesis (Ezra et al., 2015). The lPAG has been reported to receive somatotopically organised spinal sensory afferents (Bandler et al., 2000; Craven, 2011), which could provide sensory information from the chest, and it propagates direct efferent connections to the midline medulla (Cowie and Holstege, 1992) for possible descending respiratory motor commands. Diffusion tractography in humans demonstrates preferential connectivity between somatomotor regions, such as between primary sensory and motor cortices and the lPAG, compared to the vlPAG (Ezra et al., 2015). Our findings of activity in the lPAG whilst producing elevated inspiratory pressure supports the idea that this column of the PAG is involved in altered respiratory work, although whether this is in a motor or sensory capacity (or both) is currently unknown.
 
 Interestingly, activity in the lPAG during anticipation was found to scale with perceived stimulus intensity across subjects. Anticipation of a stimulus allows system preparation and response selection, and activity in the lPAG that scales with the perceived intensity of the forthcoming stimulus indicates a possible top-down control during preparation for the threat of inspiratory resistance. The cortical structures that scaled alongside the lPAG with perceived intensity included the premotor cortex and hippocampus, which may indicate increased motor preparatory activity (Grafton et al., 1998; Rizzolatti et al., 2002) and greater working memory of the stimulus between the hippocampus and prefrontal cortex (Laroche et al., 2000). Conversely, lPAG activity during anticipation did not correlate with anxiety scores. This suggests that lPAG activity is less likely to be involved in the emotional component of resistance anticipation (Critchley et al., 2004; Gray et al., 2007). Future work towards understanding whether the role of the lPAG is causative within this anticipatory breathlessness intensity network may be integral to pinpointing perceptual disruptions in chronic sufferers of breathlessness.
 
-## vlPAG in conditioned breathlessness
+### vlPAG in conditioned breathlessness
 
 The increase in BOLD signal identified in the vlPAG implies a role of the vlPAG in the conditioned response to anticipation of breathlessness. Anticipation of resistance also activated a cortical network of motor, sensory and interoceptive areas, indicating the potential position of the vlPAG within a threat detection and passive preparatory network stimulated by a conditioned breathlessness cue. Additionally, although prefrontal cortical areas were not imaged, diffusion tractography has demonstrated that the vlPAG receives the predominant proportion of the input from the prefrontal cortex (Ezra et al., 2015), and animal models report direct connections between the posterior orbital frontal and anterior insula cortices to the vlPAG (An et al., 1998). Therefore, it is possible that communication between the vlPAG and areas of executive function, interoception and motor preparation are vital to the threat detection and response selection that occur during the cued anticipation of breathlessness, which will be investigated in future work. While this study has made inroads into functionally differentiating the columns of the PAG at high resolution, further research into the intricacies of these communications is needed to fully understand the role of the vlPAG within this network.
 
 Interestingly, there did not appear to be any significant differences (both within the vlPAG and superior cortical network) between uncertain and certain anticipation of resistance, but rather subthreshold vlPAG activity with uncertain anticipation. Furthermore, the reduction in vlPAG activity was paralleled by reduced anxiety and intensity scores in uncertain anticipation, indicating a smaller conditioned response to this cue. This supports the idea that the vlPAG is involved within the threat perception network for breathlessness, and the magnitude of this activity reflects greater conditioning and increased anticipatory preparation. Interestingly, it does not appear that the uncertainty induced in this study drives hypersensitivity and resultant increased anxiety or rating scores (Table 1), differing from previous research in pain (Rhudy and Meagher, 2000; Ploghaus et al., 2003). However, previous pain research has often used no anticipation cue in conjunction with an unpredictably intense stimulus, while in this study we used an uncertain prediction of a known stimulus. The current methodology allowed us to manipulate the conditioned response to a cue, permitting investigation into the role of the PAG during reduced perception of threat without changing the intensity of the stimulus.
 
-## Cortical respiratory threat network
+### Cortical respiratory threat network
 
 This study also revealed a cortical and subcortical network of structures that co-activated with PAG columnar activity in these conditions. Anticipation and conscious changes in respiration involve both sensorimotor and affective processing, as adequate ventilation is integral to sustaining life and thus closely monitored by homeostatic mechanisms (Brannan et al., 2001; Dempsey et al., 1985). Within the limited field of view of this study, the cortical network associated with breathing against an inspiratory load covered a network of primary motor and sensory structures, and the subcortical basal ganglia and insula (Figure 5) as well as the lPAG, consistent with previous research using breath holds (Faull et al., 2015; McKay et al., 2008; Pattinson et al., 2009) and hypercapnia-stimulated hyperventilation using PET (Brannan et al., 2001). Conversely, during anticipation, vlPAG activity was paired with less extensive activation of cortical primary motor and sensory structures compared with inspiratory loading, while activity was maintained in preparatory motor structures such as the supplementary motor cortex and basal ganglia (Groenewegen, 2003; Mink, 1996; Alexander et al., 1986). While further research is required to investigate the role of prefrontal brain activity that will be simultaneously occurring within this respiratory threat network during anticipation and inspiratory loading, what will be of great interest is how these distinctly different PAG columnar activations are functionally interacting within this extensive cortical network to influence the perception of respiratory threat during these two conditions.
 
-## Analysis techniques
+### Analysis techniques
 
 It is common practice within the learning literature to contrast the conditioned cue that is paired with the stimulus with a cue that is unpaired with the stimulus (Büchel et al., 1998; Gottfried et al., 2002; Gottfried and Dolan, 2004; LaBar et al., 1998), which in this case would be the contrast of certain anticipation of resistance with the anticipation of no resistance, respectively. However, this contrast is not feasible beyond targeted PAG column analysis in the current study, as the length of the inspiratory resistance stimulus required to amass statistical power limits the number of possible repeats of each condition. Therefore, beyond the targeted analysis of the vlPAG during certain anticipation of resistance greater than anticipation of no resistance, the anticipation conditions have been analysed against baseline. However, the inclusion of three anticipatory cue conditions does allow greater decorrelation of the general ‘cue response’ to each anticipation condition in the model. Further studies in this area may look to include more subjects, or fewer anticipation conditions to allow more repeats, enabling contrasts of anticipation of loading against anticipation of no loading in the whole PAG and wider cortex.
 
@@ -126,69 +223,69 @@ The finger opposition task was used as both a control motor task and a methodolo
 
 Brainstem fMRI is particularly susceptible to low signal to noise when compared to cortical areas. Physiological noise can present a significant problem, due to bulk susceptibility changes with the respiratory cycle, pulsatile movement with the cardiac cycle, and proximity to fluid-filled spaces (Brookes, et al., 2013; Harvey et al., 2008; Hayen et al., 2013b). Special care was taken in this study to address these issues, with ICA denoising used for movement and scanner artefact, and physiological noise modelling and RETROICOR used for slice-wise removal of cardiac and respiratory noise.
 
-## Conclusions
+### Conclusions
 
 The results of this study suggest that the individual columns of the PAG may be differentially involved in the perception of breathlessness. This study corroborates with recent findings that the lPAG may be involved with the sensorimotor aspect of breathing control during the active response to breathlessness, and top-down anticipatory activity may influence intensity perception of breathlessness. Conversely, the vlPAG appears to be only activated during anticipation of breathlessness, consistent with freezing behaviours reported in animals, with decreased anticipatory cue conditioning resulting in reduced vlPAG activity. We propose that the vlPAG is involved with the learned anticipatory threat detection of a breathlessness stimulus, corroborating with the proposed model of the vlPAG in the passive threat response to an inescapable stressor. In this study we have discriminated differential functional activity within the columns of the PAG in response to threat for the first time in humans, demonstrating the key differential roles of individual columns within the perception of breathlessness.
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 The Oxfordshire Clinical Research Ethics Committee approved the study and volunteers gave written, informed consent. Eighteen healthy, right-handed volunteers (12 males, 6 females; mean age ± SD, 28 ± 4 years) undertook one training session, followed by one MRI scanning session within 24 hr. Prior to scanning, all subjects were screened for any contraindications to magnetic resonance imaging at 7 Tesla.
 
-## Breathing system
+### Breathing system
 
-A breathing system was constructed to remotely administer periods of inspiratory resistance during scanning (
+A breathing system was constructed to remotely administer periods of inspiratory resistance during scanning (Figure 8). During rest periods, compressed medical air was delivered to the breathing system and gas flow was maintained at a rate that was adequate to allow free breathing, sufficient that the reservoir bag never collapsed on inspiration. During inspiratory resistance, delivery of compressed air was stopped, and once the reservoir bag collapsed, inspiration was through the resistance arm of the circuit inhaling atmospheric air (see Figure 8 for details).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig8-v3.jpg)
 
-**Figure 8.:** Schematic diagram of breathing system that allows remote administrations of inspiratory resistance. Medical air is supplied to the subject, with a reservoir of 2 L. Excess flow and expiration escapes through the one-way expiratory valve, close to the mouth to minimise rebreathing (inspiratory and expiratory valves: Hans Rudolf, Kansas City, MO, USA). Resistive loading is induced by discontinuing the delivery of medical air, forcing the subject to draw air through the resistor (porous glass disc). A diving mouthpiece (Scubapro UK Ltd, Mitcham, UK) connects to a bacterial and viral filter (GVS, Lancashire, UK), sampling lines (Vygon SA, Ecouen, France), connect to a pressure transducer (MP 45, ± 50 cmH2O, Validyne Corp., Northridge, CA, USA) and amplifier (Pressure transducer indicator, PK Morgan Ltd, Kent, UK) for inspiratory pressure readings, and to a gas analyser (Gas Analyser; ADInstruments Ltd, Oxford, United Kingdom) for respiratory gases. A mildly hyperoxic state was achieved through a constant administration of oxygen at a rate of 0.5 L/min. Periodically throughout scanning carbon dioxide challenges were administered to raise PETCO2 to match the PETCO2 rise during inspiratory loading periods.DOI: http://dx.doi.org/10.7554/eLife.12047.015
+**Figure 8.:** Schematic diagram of breathing system that allows remote administrations of inspiratory resistance. Medical air is supplied to the subject, with a reservoir of 2 L. Excess flow and expiration escapes through the one-way expiratory valve, close to the mouth to minimise rebreathing (inspiratory and expiratory valves: Hans Rudolf, Kansas City, MO, USA). Resistive loading is induced by discontinuing the delivery of medical air, forcing the subject to draw air through the resistor (porous glass disc). A diving mouthpiece (Scubapro UK Ltd, Mitcham, UK) connects to a bacterial and viral filter (GVS, Lancashire, UK), sampling lines (Vygon SA, Ecouen, France), connect to a pressure transducer (MP 45, ± 50 cmH2O, Validyne Corp., Northridge, CA, USA) and amplifier (Pressure transducer indicator, PK Morgan Ltd, Kent, UK) for inspiratory pressure readings, and to a gas analyser (Gas Analyser; ADInstruments Ltd, Oxford, United Kingdom) for respiratory gases. A mildly hyperoxic state was achieved through a constant administration of oxygen at a rate of 0.5 L/min. Periodically throughout scanning carbon dioxide challenges were administered to raise PETCO2 to match the PETCO2 rise during inspiratory loading periods.
 
 To minimise the effect of changing arterial oxygen (O2) and carbon dioxide (CO2) levels upon the BOLD signal, the following steps were employed: additional medical oxygen was delivered, and the flow rate was manually adjusted to minimise fluctuations in pressure of end-tidal oxygen (PETO2), aiming to keep PETO2 at 18 kPa (very slightly above normal). At designated time points during rest periods of the functional scan, CO2 challenges were administered by switching the flow of compressed air for a 10% CO2 mixture (10% CO2; 21% O2; balance nitrogen) at 20 L/min for periods of 5–10 s, aiming to raise PETCO2 an equivalent amount as observed during the inspiratory loading periods. The subject’s nose was blocked using foam earplugs and they were asked to breathe through their mouth for the duration of the experiment.
 
-## Stimuli and tasks
+### Stimuli and tasks
 
 The experimental protocol was completed on two occasions; during the conditioning session and repeated in the scanner the following day. The purpose of the conditioning session was for subjects to learn to associate a different symbol (star, triangle or square; randomised order) to three breathing conditions, and the conditioned response to these symbols was then investigated by repeating the protocol with fMRI. The breathing conditions were as follows:
 
-The certain or uncertain resistance symbol was presented on the screen for 30 sec, which included a 5–15 s anticipation period before the resistance was applied (where applicable). The no resistance symbol was presented for 20 s, and each condition was repeated 10 times in a semi-randomised order (
+The certain or uncertain resistance symbol was presented on the screen for 30 sec, which included a 5–15 s anticipation period before the resistance was applied (where applicable). The no resistance symbol was presented for 20 s, and each condition was repeated 10 times in a semi-randomised order (Figure 9). A finger opposition task was also included in the protocol, as a brainstem functional localiser for confidence in image registration and analysis techniques (Faull et al., 2015; Pattinson et al., 2009), where an opposition movement was conducted with the right hand, with the cue ‘TAP’ presented for 15 s (10 repeats).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/12047/elife-12047-fig9-v3.jpg)
 
-**Figure 9.:** Study overview (top) and example four minutes of the experimental protocol (bottom), repeated throughout the conditioning and fMRI scanning sessions. Anticipation periods were 5–15 s duration, and resistance periods 15–25 s, and there were 10 repeats of each stimulus.DOI: http://dx.doi.org/10.7554/eLife.12047.016
+**Figure 9.:** Study overview (top) and example four minutes of the experimental protocol (bottom), repeated throughout the conditioning and fMRI scanning sessions. Anticipation periods were 5–15 s duration, and resistance periods 15–25 s, and there were 10 repeats of each stimulus.
 
 Rating scores of breathing difficulty were recorded after every symbol and at the beginning and end of the task, using a visual-analogue scale (VAS) with a sliding bar that the subjects moved between ‘Not at all difficult’ (0%) and ‘Extremely difficult’ (100%). Subjects were also asked to rate how anxious each of the symbols made them feel using a VAS between ‘Not at all anxious’ (0%) and ‘Extremely anxious’ (100%) immediately following the experimental protocol.
 
-## Physiological measurements
+### Physiological measurements
 
 Using MRI to investigate respiratory control presents methodological challenges that require consideration, particularly in the brainstem (Brookes, et al., 2013). We used previously-established methods to decorrelate the effects of hypercapnia from the localised BOLD responses associated with breathing against an inspiratory resistance, using additional, repeated CO2 challenges interspersed during rest periods in the fMRI protocols (Faull et al., 2015; Pattinson et al., 2009). Additionally, chest movements were measured using respiratory bellows surrounding the chest at the approximate level of the 10th rib, and heart rate was measured using a pulse oximeter (9500 Multigas Monitor, MR Equipment Corp., NY, USA). PETCO2 and PETO2 were sampled via a port beside the mouth piece of the breathing system. Expired gases were determined using a rapidly-responding gas analyser (Gas Analyzer; ADInstruments Ltd, Oxford, United Kingdom), and pressure at the mouth was measured using a pressure transducer (MP 45, ± 50 cmH2O, Validyne Corp., Northridge, CA, USA) connected to an amplifier (Pressure transducer indicator, PK Morgan Ltd, Kent, UK). All physiological measurement devices were connected to a data acquisition device (Powerlab; ADInstruments Ltd, Oxford, United Kingdom) coupled to a desktop computer with recording software (Labchart 7; ADInstruments Ltd, Oxford, United Kingdom).
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 MRI was performed with a 7T Siemens Magnetom scanner, with 70 mT/m gradient strength and a 32 channel Rx, single channel birdcage Tx head coil (Nova Medical). The fMRI experimental design is illustrated in Figure 9.
 
-## Brainstem BOLD scanning
+#### Brainstem BOLD scanning
 
 A T2*-weighted, gradient echo EPI was used for functional scanning. To allow high resolution scanning, a reduced field of view (FOV) was used, with a coronal-oblique slice centered over the brainstem and superior cortical structures. The FOV comprised 36 slices (sequence parameters: TE, 24 ms; TR, 2.11 s; flip angle, 90 deg; voxel size, 1.5 x 1.5 x 1.5 mm; GRAPPA factor, 3; echo spacing, 1 ms; slice acquisition order, posterior-anterior), with 835 volumes (scan duration, 29 mins 40 s).
 
-## Structural scanning
+#### Structural scanning
 
 A T1-weighted structural scan (MPRAGE, sequence parameters: TE, 2.96 ms; TR, 2200 ms; flip angle, 7 deg; voxel size, 0.7 x 0.7 x 0.7 mm; inversion time, 1050 ms; bandwidth; 240 Hz/Px; slice orientation, oblique-coronal) was acquired. This scan was used for registration of functional images, and anatomical overlay of brain activations.
 
-## Additional scanning
+#### Additional scanning
 
 A single volume whole brain EPI was acquired with 85 slices in the same orientation as the functional scan (matched sequence parameters to the BOLD scan) for registration purposes. Fieldmap scans (sequence parameters: TE1, 4.08 ms; TE2, 5.1 ms; TR, 620 ms; flip angle, 39 deg; voxel size, 2 x 2 x 2 mm) of the B0 field were also acquired in the same orientation to assist distortion-correction of scans.
 
-## Analysis
+### Analysis
 
-## Preprocessing
+#### Preprocessing
 
 Image preprocessing was performed using the Oxford Centre for Functional Magnetic Resonance Imaging of the Brain Software Library (FMRIB, Oxford, UK; FSL version 5.0.8; http://www.fmrib.ox.ac.uk/fsl/). The following processing methods were used prior to statistical analysis: motion correction (MCFLIRT [Jenkinson, 2002a]), removal of the nonbrain structures (skull and surrounding tissue) (BET [Smith, 2002]), spatial smoothing using a full-width half-maximum (FWHM) Gaussian kernel of 2 mm, and high-pass temporal filtering (Gaussian-weighted least-squares straight line fitting; 120 s cut-off period) (Woolrich et al., 2001). The functional scans were corrected for motion, scanner and cerebro-spinal fluid artefacts using ICA denoising (Kelly et al., 2010). Cardiac- and respiratory- related waveforms were used to form voxelwise noise regressors (Physiological noise modelling; FSL version 5.0.8), and the signal associated with these regressors was modelled using retrospective image correction (RETROICOR) (Brookes, et al., 2013; Harvey et al., 2008). The noise signal determined by RETROICOR was adjusted for interactions with the ICA denoising to ensure artefactual signal was not reintroduced through the combination of both noise correction techniques.
 
-## Image registration
+#### Image registration
 
 Careful attention was paid to image registration, as the finer resolution afforded by 7 Tesla MRI requires greater registration accuracy for group statistics to have sufficient power. After preprocessing, the functional scans were registered to the MNI152 (1 mm3) standard space (average T1 brain image constructed from 152 normal subjects at the Montreal Neurological Institute (MNI), Montreal, QC, Canada) using a three-step process.
 
-## Voxelwise analysis
+#### Voxelwise analysis
 
 Functional data processing was performed using FEAT (FMRI Expert Analysis Tool), part of FSL. The first-level analysis in FEAT incorporated a general linear model (Woolrich et al., 2004a), where the finger opposition regressor was derived from the protocol timing values. Inspiratory resistance timings were calculated from the onset to termination of each of the resistance applications from the recorded pressure trace. The anticipation periods were calculated as the time between presentation of the stimulus and onset of inspiratory resistance. Ratings for all respiratory and baseline conditions were included as a rating regressor, that was demeaned against the constant-height inspiratory resistance regressor, to model out variations between the respiratory stimuli. PETCO2 was included as an additional regressor, de-correlating the CO2 –induced BOLD changes from the respiratory stimuli throughout the functional scan. This trace was formed by linearly interpolating between the expired CO2 peaks. Previous research has indicated that variations in the hemodynamic response function (HRF) are apparent throughout the brainstem and cortex (Devonshire et al., 2012; Handwerker et al., 2004), and between subjects (Handwerker et al., 2004). To account for possible changes in the HRF, including slice-timing delays, we used an optimal basis set of three waveforms (FLOBS: FMRIB’s Linear Optimal Basis Sets, default FLOBS supplied in FSL [Woolrich et al., 2004b]), instead of the standard gamma waveform. The second and third FLOBS waveforms, which model the temporal and dispersion derivatives, were orthogonalised to the first waveform, of which the parameter estimate was then passed up to the higher level to be used in group analysis. Time-series statistical analysis was performed using FILM, with local autocorrelation correction (Woolrich et al., 2001).
 

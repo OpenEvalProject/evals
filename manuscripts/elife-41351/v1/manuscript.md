@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.41351.001 Proliferating cells often have increased glucose consumption and lactate excretion relative to the same cells in the quiescent state, a phenomenon known as the Warburg effect. Despite an increase in glycolysis, however, here we show that non-transformed mouse fibroblasts also increase oxidative phosphorylation (OXPHOS) by nearly two-fold and mitochondrial coupling efficiency by ~30% during proliferation. Both increases are supported by mitochondrial fusion. Impairing mitochondrial fusion by knocking down mitofusion-2 (Mfn2) was sufficient to attenuate proliferation, while overexpressing Mfn2 increased proliferation. Interestingly, impairing mitochondrial fusion decreased OXPHOS but did not deplete ATP levels. Instead, inhibition caused cells to transition from excreting aspartate to consuming it. Transforming fibroblasts with the Ras oncogene induced mitochondrial biogenesis, which further elevated OXPHOS. Notably, transformed fibroblasts continued to have elongated mitochondria and their proliferation remained sensitive to inhibition of Mfn2. Our results suggest that cell proliferation requires increased OXPHOS as supported by mitochondrial fusion.
+Proliferating cells often have increased glucose consumption and lactate excretion relative to the same cells in the quiescent state, a phenomenon known as the Warburg effect. Despite an increase in glycolysis, however, here we show that non-transformed mouse fibroblasts also increase oxidative phosphorylation (OXPHOS) by nearly two-fold and mitochondrial coupling efficiency by ~30% during proliferation. Both increases are supported by mitochondrial fusion. Impairing mitochondrial fusion by knocking down mitofusion-2 (Mfn2) was sufficient to attenuate proliferation, while overexpressing Mfn2 increased proliferation. Interestingly, impairing mitochondrial fusion decreased OXPHOS but did not deplete ATP levels. Instead, inhibition caused cells to transition from excreting aspartate to consuming it. Transforming fibroblasts with the Ras oncogene induced mitochondrial biogenesis, which further elevated OXPHOS. Notably, transformed fibroblasts continued to have elongated mitochondria and their proliferation remained sensitive to inhibition of Mfn2. Our results suggest that cell proliferation requires increased OXPHOS as supported by mitochondrial fusion.
 
 ## Introduction
 
@@ -33,39 +33,109 @@ In this study, to directly compare oxidative metabolism in the same cells of the
 
 ## Results
 
-## Proliferation increases oxidative phosphorylation and mitochondrial coupling efficiency
+### Proliferation increases oxidative phosphorylation and mitochondrial coupling efficiency
 
 Mouse 3T3-L1 fibroblasts are immortalized, non-transformed cells that retain sensitivity to contact inhibition (Green and Kehinde, 1975). They provide a simple, well-controlled model to compare metabolism in the proliferative and quiescent states, as has been demonstrated previously (Yao et al., 2016a). The first step in our analysis was to verify that proliferating fibroblasts exhibit the Warburg effect. Relative to quiescent fibroblasts in the contact-inhibited state, proliferating cells had increased glucose consumption and lactate excretion (Figure 1A). As expected, proliferating cells excreted a greater percentage of glucose as lactate (47%) compared to quiescent cells (32%) (Figure 1—source data 1). Of note, the absolute amount of glucose having a non-lactate fate was also increased by over two-fold in the proliferative state (0.38 pmol/cell/hr) relative to the quiescent state (0.16 pmol/cell/hr) (Figure 1—source data 1). Glucose carbon that is not excreted as lactate is potentially available to support an increased rate of oxidative metabolism, which we next aimed to quantify.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig1-v1.jpg)
+
+**Figure 1.:** (A) Glucose consumption and lactate excretion rates for quiescent and proliferating fibroblasts (n = 4). As expected, proliferating cells exhibit an enhanced glycolytic phenotype that is consistent with the Warburg effect. (B) Mitochondrial stress test of quiescent and proliferating fibroblasts. OCR was normalized to protein amount to take into account differences in cell size. Displayed OCR values were corrected for non-mitochondrial respiration (n = 3). (C) Measured and calculated parameters of mitochondrial respiration (using results from Figure 1B). We note that the coupling efficiency is calculated as the ratio of the OCR required for ATP production relative to the basal OCR in the same sample and therefore is independent of the sample normalization method (n = 3). (D) Glutamine consumption and glutamate excretion rates for quiescent and proliferating fibroblasts (n = 4). (E) Palmitate and oleate consumption rates for quiescent and proliferating fibroblasts (n = 4). (F–H) Isotopologue distribution pattern of citrate after cells were labeled with U-13C glucose (F), U-13C palmitate (G), or U-13C glutamine (H) for 6 hr (n = 3). Data are presented as mean ±SEM. **p<0.01, ***p<0.001, n.s. not statistically significant. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Note, Figure 1—figure supplement 1 (normalization by cell number) is different from Figure 1 (normalization by protein amount). (A) When data from the mitochondrial stress test of quiescent and proliferating fibroblasts are normalized by cell number, the trend is consistent with the data shown in Figure 1B. Displayed OCR values were corrected for non-mitochondrial respiration (n = 3). (B) Measured and calculated parameters of mitochondrial respiration (using results in Figure 1—figure supplement 1A). Data are presented as mean ±SEM. **p<0.01, ***p<0.001. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblot analysis of whole-cell lysates for SLC7A11 in quiescent (Q) and proliferating (P) fibroblasts. (B) Relative change in cystine consumption rates for quiescent and proliferating fibroblasts (n = 3). Data are presented as mean ±SEM. *p<0.05.
+
 Strikingly, on a per cell basis, we found that the basal respiration rate was ~81% higher during proliferation compared to quiescence (Figure 1—figure supplement 1). Given that proliferating cells are larger in size relative to quiescent cells, we also independently normalized the oxygen-consumption data by protein content instead of cell number. Even when normalized by protein content, the respiration rate of proliferating cells was ~59% higher than quiescent cells (Figure 1B–C). Intriguingly, proliferating cells also exhibited a decrease in proton leak and a ~ 112% increase in ATP production (Figure 1B–C). Taken together, the coupling efficiency of proliferating cells was determined to be 34% higher than quiescent cells. We note that the coupling efficiency was calculated as the ratio of the ATP production rate and the basal respiration rate, which is therefore independent of sample normalization method. These data suggest that proliferating fibroblasts with Warburg metabolism not only have increased OXPHOS, but also that they respire more efficiently.
 
-## Glutamine is the major carbon source for fueling the TCA cycle and mitochondrial respiration
+### Glutamine is the major carbon source for fueling the TCA cycle and mitochondrial respiration
 
 We next aimed to investigate which carbon sources fuel mitochondrial respiration by analyzing the utilization of glucose, glutamine, and fatty acids. In addition to increasing glucose consumption and lactate excretion (Figure 1A), proliferating fibroblasts take up two-fold more glutamine compared to quiescent fibroblasts (Figure 1D). Since the rate of glutamate excretion was unchanged, more glutamine carbon was being used for anaplerosis. We also found that the consumption rates of palmitate and oleate were increased in proliferation by 194% and 98%, respectively (Figure 1E).
 
 Since proliferating fibroblasts showed increased utilization of all three nutrients we examined, we next applied stable isotope tracing and metabolomics to access the relative contribution of each carbon source to the TCA cycle. In three separate experiments, cells were fed either uniformly 13C-labeled glucose (U-13C glucose), uniformly 13C-labeled glutamine (U-13C glutamine), or uniformly 13C-labeled palmitate (U-13C palmitate) for 6 hr. The isotope enrichments in citrate, a representative TCA cycle intermediate, were evaluated to infer the relative contribution of each carbon source to the TCA cycle and mitochondrial respiration. Even though proliferating cells consumed more glucose and more fatty acids, citrate labeling from these two carbon sources was significantly decreased in the proliferative state (Figure 1F; Figure 1G). In contrast, labeling of citrate by glutamine was substantial and significantly increased in proliferating cells relative to quiescent cells, suggesting that glutamine is a major energy source to fuel mitochondrial respiration (Figure 1H). This result is consistent with reports from other cells (Fan et al., 2013). Given that previous studies have shown that glutamine dependence is correlated with cystine uptake through the cystine/glutamate antiporter SLC7A11 (Muir et al., 2017), we examined whether these metabolite changes were enabled by transporter expression. Even though the level of SLC7A11 protein was unchanged, we observed more than a two-fold increase in cystine comsumption for proliferating fibroblasts compared to quiescent fibroblasts (Figure 1—figure supplement 2). Increased influx of cystine may drive the export of glutamate, thereby depleting the pool of intracellular glutamate/αKG and promoting glutamine anaplerosis (Muir et al., 2017).
 
-## Increased oxidative phosphorylation during proliferation is supported by mitochondrial fusion
+### Increased oxidative phosphorylation during proliferation is supported by mitochondrial fusion
 
 We next sought to understand how fibroblasts support increased OXPHOS during proliferation. We reasoned that one mechanism might be by increasing mitochondrial mass in the proliferative state. We used RT-PCR to determine the relative copy number of mitochondrial DNA (mtDNA) to genomic DNA (gDNA), from which we inferred mitochondrial mass. The mtDNA to gDNA ratio was unchanged between quiescent and proliferating cells (Figure 2A). Consistent with these data, we also observed no change in expression of respiratory enzymes, as determined by immunoblotting of electron transport chain (ETC) subunits (SDHA for complex II, cytochrome c for complex III, COX IV for complex IV, and ATP5A for complex V) (Figure 2B). Our results indicate that proliferating fibroblasts do not support elevated levels of OXPHOS by increasing mitochondrial mass or by increasing the expression of respiratory enzymes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-v1.jpg)
+
+**Figure 2.:** (A) Mitochondrial mass remains the same for quiescent (Q) and proliferating (P) fibroblasts as estimated by the ratio of mtDNA to gDNA (n = 3). (B) Proliferating fibroblasts have similar protein expression levels of ETC subunits as quiescent fibroblasts. (C) Representative EM images of mitochondria in quiescent fibroblasts, proliferating fibroblasts, and proliferating Mfn2 knockdowns show changes in mitochondrial elongation. (D) Statistical analysis of mitochondrial length in quiescent fibroblasts, proliferating fibroblasts, and proliferating Mfn2 knockdowns. For each condition, 100 random mitochondria were measured from EM images. Data are presented as mean ±SD. (E) Mitochondrial stress test of scrambled siRNA control (SSC) cells and Mfn2 knockdown cells (Mfn2KD), both in the proliferating state (n = 3). Data are presented as mean ±SEM. (F) Measured and calculated parameters of mitochondrial respiration (using results from Figure 2E) (n = 3). Data are presented as mean ±SEM. *p<0.05, **p<0.01, ***p<0.001, n.s. not statistically significant. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Mitochondria were stained by Mitotracker red, and nuclei were stained by Hoechst 33342. Cells were subjected to live imaging.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Isolated mitochondrial lysates were immunoblotted for Mfn1, Mfn2, and OPA1. Pyruvate dehydrogenase (PDH) was used as a mitochondrial matrix loading control.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Whole-cell lysates were analyzed after cells were treated with scrambled siRNA control (SSC), DsiRNA duplex #1, or DsiRNA duplex #2 for 48 hr or a mixture of the two duplexes for the indicated time.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Mitochondrial stress test of scrambled siRNA control cells (SSC) and Mfn2 knockdown cells (Mfn2KD), both in the quiescent state (n = 3). (B) Basal respiration rates of SSC and Mfn2 cells (using results from Figure Figure 2—figure supplement 4A). Data are presented as mean ±SEM. *p<0.05, **p<0.01. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Mitochondrial elongation starts as soon as 3 hr after addition of serum. (A) Statistical analysis of mitochondrial length in serum starved HCT116 cells and proliferating HCT116 cells cultured in normal media. (B) Statistical analysis of mitochondrial length in serum starved quiescent 3T3-L1 fibroblasts. After serum was added to the media, mitochondrial length increased in as quick as 3 hr. For each condition, 100 random mitochondria were measured from EM images. Data are presented as mean ±SD.
 
 As an alternative, we then considered the possibility that fibroblasts regulate OXPHOS during proliferation by mitochondrial dynamics. Previous studies have shown that mitochondrial fusion is associated with an increased respiration rate in addition to an improved coupling efficiency (Legros et al., 2002; Westermann, 2012). To assess mitochondrial morphology, we applied electron microscopy (EM) imaging (Figure 2C) and fluorescence imaging (Figure 2—figure supplement 1). Both techniques showed that proliferating cells have elongated mitochondria, while mitochondria in quiescent cells were relatively short and fragmented. Quantitative analysis of 100 random mitochondria in each condition showed a statistically significant increase in the mitochondrial length of proliferating cells compared to quiescent cells (Figure 2D). In addition, we found that mitochondria in proliferating cells had a significantly higher level of mitochondrial fusion proteins (Mfn1, Mfn2, and OPA1) compared to mitochondria in quiescent cells (Figure 2—figure supplement 2). When we inhibited mitochondrial fusion by knocking down Mfn2, a protein required for the fusion of the outer mitochondrial membrane, the elongated mitochondrial phenotype in proliferating fibroblasts was suppressed (Figure 2C–D, Figure 2—figure supplement 3). To determine whether mitochondrial fusion is required for increased OXPHOS during proliferation, we compared the oxygen consumption rates of proliferating scrambled siRNA controls (SSC) to Mfn2 knockdowns (Mfn2KD). We point out that these comparisons were conducted when cells were in the proliferating exponential growth phase. Notably, Mfn2 knockdowns had a statistically significant decrease in respiration rate, ATP production, and mitochondrial coupling efficiency (Figure 2E–F). Given that mitochondria in quiescent fibroblasts are already largely fragmented, as expected, the effect of Mfn2 knockdown on basal mitochondrial respiration was minimal in quiescent cells (Figure 2—figure supplement 4).
 
 Independent of contact inhibition, cellular quiescence can also be achieved by serum starvation (Yao, 2014). By using serum starvation, we sought to extend our comparison of the proliferative and quiescent states to other cells. Consistent with our contact-inhibition results, we found that serum starved 3T3-L1 and HCT116 cells had fragmented mitochondria relative to the same cells in the non-starved state (Figure 2—figure supplement 5). Mitochondrial elongation occurred as soon as 3 hr after reintroducing serum and continued as cells exited the quiescent state (Figure 2—figure supplement 5B).
 
-## Inhibiting mitochondrial fusion decreases proliferation by limiting aspartate synthesis
+### Inhibiting mitochondrial fusion decreases proliferation by limiting aspartate synthesis
 
 Having established that mitochondrial fusion increased in dividing cells, we wished to consider its effects on proliferation. Upon Mfn2 knockdown, we observed a ~ 30% decrease in proliferation rate compared to scrambled siRNA controls (Figure 3A). Re-expressing siRNA-resistant Mfn2 (Mfn2res) in Mfn2 knockdowns restored Mfn2 protein level, mitochondrial respiration, and cellular proliferation (Figure 3—figure supplement 1). When we overexpressed Mfn2 in wildtype 3T3-L1 fibroblasts, we observed a significant increase in both mitochondrial respiration and proliferation (Figure 3—figure supplement 2). These data suggest that promoting mitochondrial fusion is sufficient to drive proliferation. We also observed considerable changes in nutrient utilization between Mfn2 knockdowns and scrambled siRNA controls that were consistent with decreased proliferation and reduced OXPHOS (Figure 3B). Mfn2 knockdowns decreased their glucose uptake by 15% and decreased their lactate excretion by 10%. More notably, knocking down Mfn2 caused cells to decrease glutamine consumption by 40%. Given the reduced rate of OXPHOS in Mfn2 knockdowns, these data are consistent with glutamine serving as a major carbon source for the TCA cycle. Tracing experiments confirmed a significant decrease in labeling of TCA cycle intermediates from U-13C glutamine in Mfn2 knockdowns (Figure 3—figure supplement 3A–C). Consistent with decreased glutamine anaplerosis, Mfn2 knockdowns had a 40% decrease in cystine consumption (Figure 3—figure supplement 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig3-v1.jpg)
+
+**Figure 3.:** (A) Proliferation was assessed by using a CyQUANT assay after cells were treated with scrambled siRNA control (SSC) or Mfn2 siRNA for 72 hr (n = 5). (B) Mfn2 knockdown alters nutrient utilization (n = 4). Glutamine consumption decreases in Mfn2 knockdown cells, which is consistent with a decreased demand for glutamine to fuel a reduced level of OXPHOS. (C) Intracellular ATP levels in scrambled siRNA controls (SSC) were lower relative to Mfn2 knockdowns. ATP luminescence signals were normalized to protein amount (n = 5). (D) The intracellular pool of aspartate remained unchanged upon Mfn2 knockdown (n = 3). Pool sizes were normalized by dry cell mass and internal standard. (E) Scrambled siRNA controls excrete aspartate into the media, while Mfn2 knockdowns uptake aspartate from the media (n = 4). (F) Supplementing the media with 1 mM aspartate partially rescued the proliferation of Mfn2 knockdowns (n = 6). Data are presented as mean ±SEM. *p<0.05, **p<0.01, ***p<0.001, n.s. not statistically significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoblot analysis of Mfn2 in whole-cell lysates of scrambled siRNA controls expressing GFP (SSC + GFP), Mfn2 knockdowns expressing GFP (KD + GFP), and Mfn2 knockdowns expressing siRNA-resistant Mfn2 (KD+Mfn2res). (B) Basal respiration rates of SSC + GFP, KD + GFP, and KD+Mfn2res cells were determined by using a mitochondrial stress test (n = 3). (C) The proliferation of SSC + GFP, KD + GFP, and KD+Mfn2res was assessed by manual cell counting after a 64 hr knockdown and 48 hr overexpression (n = 5). Data are presented as mean ±SEM. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunoblot analysis of Mfn2 in whole-cell lysates of control cells expressing GFP and cells expressing siRNA-resistant wildtype Mfn2 (Mfn2OE). (B) Basal respiration rates of GFP control cells and Mfn2OE cells were determined by using a mitochondrial stress test (n = 3). (C) The proliferation of GFP control cells and Mfn2OE cells was assessed by manual cell counting after a 48 hr overexpression (n = 4). Data are presented as mean ±SEM. *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The relative pool size of TCA cycle intermediates remained unchanged in Mfn2 knockdowns. The pool sizes were normalized by dry cell mass and internal standards (n = 3). (B) The labeling percentages of TCA cycle intermediates were significantly decreased in Mfn2 knockdowns. (C) The isotopologue distribution of citrate shows a similar pattern, but decreased labeling for all isotopologues. These changes imply a change in TCA cycle flux. (D) Relative change in cystine consumption rates for SSC and Mnf2 knockdowns (n = 3). Data are presented as mean ±SEM. *p<0.05, **p<0.01, n.s. not statistically significant.
+
 Our results show that mitochondrial fusion supports a high level of OXPHOS, which is needed to sustain rapid cellular proliferation. We speculated that the decrease in proliferation rate upon Mfn2 knockdown might be due to a shortage of energy from the decreased rate of OXPHOS. Surprisingly, however, we found that intracellular levels of ATP actually increased slightly in Mfn2 knockdowns relative to scrambled siRNA control cells (Figure 3C). This result suggested that cells could compensate for a reduced energy yield from OXPHOS, but that OXPHOS may serve another indispensable function in our knockdowns. Previous studies have shown that an essential role of OXPHOS in proliferating cells is to regenerate reducing equivalents in support of aspartate synthesis (Birsoy et al., 2015; Sullivan et al., 2015). Through reactions in the malate-aspartate shuttle, increased oxygen consumption may support a higher rate of aspartate generation. Although we did not observe a difference in the intracellular pool of aspartate between scrambled siRNA controls and Mfn2 knockdowns (Figure 3D), we did find a striking change in aspartate uptake. While the control cells excreted aspartate, the Mfn2 knockdown cells consumed aspartate from the media (Figure 3E). Moreover, the proliferation of Mfn2 knockdowns could be partially rescued by supplementing cell-culture media with aspartate (Figure 3F).
 
-## H-Ras transformed fibroblasts exhibit higher mitochondrial respiration
+### H-Ras transformed fibroblasts exhibit higher mitochondrial respiration
 
 Although 3T3-L1 fibroblasts are immortalized, unlike transformed cells, they remain sensitive to contact inhibition and retain the ability to differentiate. To evaluate whether transformed cells similarly rely on OXPHOS and mitochondrial fusion, we generated stable transfected 3T3-L1 cells expressing the oncogene H-Ras (G12V), a constitutively active mutant (Figure 4A). H-Ras transfected fibroblasts assumed a transformed morphology and their growth was no longer contact inhibited, with high-density cultures forming multiple layers of cells (Figure 4B–C). It was confirmed that the transformed cells did not undergo oncogene-induced senescence (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunoblotting of whole-cell lysates shows H-Ras expression in transformed fibroblasts, but not in empty vector (EV) controls. (B) Growth curve shows the loss of contact inhibition in H-Ras transformed fibroblasts. The proliferation of EV controls remains cell-density dependent (n = 4). (C) Ras cells exhibit a morphological change and gain the ability to grow on top of each other to form multiple cell layers. (D) Mitochondrial stress test of EV controls and Ras cells (n = 3). The respiration of Ras cells is statistically increased compared to EV controls. (E) Measured and calculated parameters of mitochondrial respiration (using results from Figure 4D) (n = 3). (F) Statistical analysis of mitochondrial length in EV controls and Ras cells. In each condition, 100 random mitochondria were measured from EM images. Data are presented as mean ±SD. (G) RT-PCR shows that Ras cells have over a 20-fold increase in mRNA levels of PGC1α (n = 3). (H) Ras cells have increased mitochondrial mass, as indicated by an increased mtDNA/gDNA compared to EV controls (n = 3). (I) Immunoblotting of whole-cell lysates shows that Ras cells have higher expression levels of ETC subunits compared to EV controls. (J) Mfn2 knockdown decreases cellular proliferation in both EV controls and Ras cells. Proliferation was assessed by manual counting after cells were treated with scrambled siRNA control (SSC) or Mfn2 siRNA (Mfn2KD) for 72 hr. Relative proliferation was normalized to either an EV SSC or a RAS SSC for each condition (n = 4). (K) Mfn2 knockdown decreases cellular proliferation in H460 (lung cancer cells), HeLa (cervical cancer cells), BT549 (breast cancer cells), and MCF7 (breast cancer cells). Proliferation was assessed by using a CyQUANT proliferation assay after cells were treated with scrambled siRNA control (SSC) or Mfn2 siRNA (Mfn2KD) for 72 hr (n = 5). Unless specified, data are presented as mean ±SEM. *p<0.05, **p<0.01, ***p<0.001, n.s. not statistically significant. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Positive staining controls (pH = 5) are shown on top. Negative staining results from H-Ras transformed fibroblasts indicate that the cells are not undergoing senescence.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Mitochondrial stress test of EV controls and Ras cells. OCR was normalized by cell number. Displayed OCR values were corrected for non-mitochondrial respiration (n = 3). Data are presented as mean ±SEM. OCR, oxygen consumption rate; oligo, oligomycin; rot, rotenone; AA, Antimycin A.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/41351/elife-41351-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Ras cells have increased glucose uptake and lactate excretion compared to proliferating EV controls. Ras cells also exhibited altered profiles for glutamine, glutamate, and fatty acid consumption (n = 4). (B) Ras cells have higher intracellular ATP levels than EV controls. ATP luminescence signals were normalized to protein amount (n = 5). (C) Intracellular ROS was measured by using a DCFDA assay and normalized to protein amount. Negative controls (Ras +NAC) were treated with NAC, a ROS scavenger for 48 hr. Positive controls were treated with BrdU to induce oxidative stress for 48 hr (n = 6). (D) DNA damage was determined by measuring the protein amount of phospho-histone H2A.X (Ser139). Data are presented as mean ±SEM. **p<0.01, ***p<0.001.
+
 To study the effect of H-Ras transformation on mitochondrial metabolism, we compared the oxygen consumption rates of proliferating empty vector (EV) control cells in the exponential growth phase to H-Ras transformed (Ras) cells. Surprisingly, we found that Ras cells had a ~ 73% increase in basal respiration and a ~ 72% increase in ATP production compared to EV cells (Figure 4D–E). It is interesting to note that we found no difference in the mitochondrial coupling efficiencies between conditions (Figure 4E). This result is consistent with the observation that mitochondria are not further fused in Ras cells relative to proliferating EV controls (Figure 4F). Given that Ras cell mitochondria remain elongated to the same extent as EV controls, we next evaluated increased mitochondrial mass as a possible mechanism to support elevated levels of OXPHOS. For Ras cells, we observed a > 20-fold increase in the mRNA level of peroxisome proliferator activated receptor coactivator (PGC1α), a master regulator for mitochondrial biogenesis (LeBleu et al., 2014; Scarpulla, 2011) (Figure 4G). Ras cells had more mitochondrial mass and increased protein expression levels of ETC subunits (Figure 4H–I), suggesting that increased OXPHOS in Ras cells is driven by mitochondrial biogenesis. Activation of mitochondrial biogenesis upon Ras transformation did not change protein levels of components in the ERK/AMPK pathway or the KSR1 pathway, as has been previously suggested for other cells (Figure 4—figure supplement 2) (Dard et al., 2018; Weinberg et al., 2010). We wish to emphasize that even though Ras cell mitochondria are not further elongated, they remain fused to the same level as proliferating non-transformed fibroblasts. Therefore, when mitochondrial fusion was inhibited by knocking down Mfn2, the proliferation rates and OXPHOS of both EV cells and Ras cells were significantly attenuated (Figure 4J, Figure 4—figure supplement 3). In addition, the proliferation of various cancer cell lines also proved sensitive to Mfn2 knockdown (Figure 4K). We conclude that mitochondrial fusion is important to sustain cellular proliferation, independent of oncogenic transformation.
 
-## Transformation with H-Ras increases oxidative stress and DNA damage
+### Transformation with H-Ras increases oxidative stress and DNA damage
 
 We speculated that constitute activation of Ras might enhance metabolic phenotypes we associated with proliferation in non-transformed cells. Indeed, in addition to elevated OXPHOS, Ras cells consumed more glucose, glutamine, and fatty acids relative to EV controls (Figure 4—figure supplement 4A). Given that Ras cells do not proliferate faster than EV cells (Figure 4B), the increase in metabolic activity is unlikely due to proliferative demand but rather associated with Ras signaling activation. Consistent with the notion that energy is not limiting during proliferation (Locasale and Cantley, 2011), we found that Ras cells had a higher intracellular level of ATP compared to EV controls (Figure 4—figure supplement 4B). In addition to increased ATP production, elevated OXPHOS activity in Ras cells also contributed to higher levels of reactive oxygen species (ROS) (Figure 4—figure supplement 4C). The associated oxidative stress could be buffered by treating Ras cells with the antioxidant N-acetyl cysteine (NAC). Alternatively, oxidative stress could be further induced by treating Ras cells with bromodeoxyuridine (BrdU), a thymidine analog (Figure 4—figure supplement 4C). We suspected that the elevated levels of ROS in Ras cells may lead to increased DNA damage. We verified this to be the case by showing that Ras cells had increased phosphorylation on histone H2A.X (Ser139), which has been suggested as a sensitive marker for DNA damage (Sharma et al., 2012) (Figure 4—figure supplement 4D). These findings suggest that the increase in OXPHOS upon constitutive Ras activation leads to elevated oxidative stress and DNA damage, while not directly contributing to the anabolic demands of proliferation. Given the pleiotropic effects of Ras and other oncogenes, the generality of these findings to additional cell types will require further investigation.
 
@@ -85,50 +155,302 @@ Despite the association between the Warburg effect and rapid proliferation, a ra
 
 ## Materials and methods
 
-## Cell culture, growth curve, and proliferation assays
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>3T3-L1</td>
+      <td>American Type Culture Collection</td>
+      <td>RRID:CVCL_0123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mfn2res</td>
+      <td>this study</td>
+      <td></td>
+      <td>codon-optimized cDNA of Mfn2 in pcDNA3.1(+) vector (siRNA-resistant)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>pcDNA3.1_N-eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Washington University</td>
+      <td></td>
+      <td>Addgene plasmid # 8454</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMVDR8.2</td>
+      <td>Washington University</td>
+      <td></td>
+      <td>Addgene plasmid # 12263</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-HRasV12- hygromycin</td>
+      <td>Washington University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Mfn2, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 9482, RRID:AB_2716838</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-OPA1, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 80471</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-COXIV, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 4850, RRID:AB_2085424</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Ras (G12V), monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 14412, RRID:AB_2714031</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- phospho-H2A.X, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 9718, RRID:AB_2118009</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-AMPKα, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 5831, RRID:AB_10622186</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-KSR1,, polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 4640</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- p44/42 MAPK (Erk1/2), monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 4695</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Phospho-p44/42 MAPK (Erk1/2), monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 4370</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-EAAT1, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 5684</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-EAAT2, polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 3838</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-EAAT3, monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 14501</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-β-tubulin (HRP conjugated), monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat.#: 5346</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-SDHA, monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat.#: sc-166909, RRID:AB_10611174</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti- Cytochrome c, monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat.#: sc-13156, RRID:AB_627381</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ATP5A, monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat.#: sc-136178</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Mfn1, monoclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat.#: MA5-24789, RRID:AB_2717262</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SLC7A11, polyclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat.#: PA1-16893, RRID:AB_2286208</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PDH, monoclonal</td>
+      <td>Invitrogen</td>
+      <td>Cat.#: 459400, RRID:AB_2532238</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit</td>
+      <td>LiCor</td>
+      <td>Cat.#: 926–80011, RRID:AB_2721264</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse</td>
+      <td>LiCor</td>
+      <td>Cat.#: 926–80010</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfn2 siRNA</td>
+      <td>Intergrated DNA Technologies</td>
+      <td></td>
+      <td>TriFECTa DsiRNA Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CyQUANT proliferation assay</td>
+      <td>Thermo Fisher</td>
+      <td>Cat.#: C7026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay</td>
+      <td>Thermo Fisher</td>
+      <td>Cat.#: 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaQUANT mouse mitochondrial to nuclear DNA ratio kit</td>
+      <td>Millipore Sigma</td>
+      <td>Cat.#: 72621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ATP luminescence detection assay kit</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#: 700410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DCFDA assay</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#: 601520</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, growth curve, and proliferation assays
 
 3T3-L1 cells were obtained from ATCC. H460, Hela, BT549, and MCF7 cells were obtained from Washington University. All cells were found to be negative for mycoplasma contamination. All cells were cultured in high-glucose DMEM (Life Technologies) containing 10% fetal bovine serum (FBS) (Life Technologies) and 1% penicillin/streptomycin (Life Technologies) at 37°C with 5% CO2. To establish a growth curve, cells were collected every 12–24 hr and counted in trypan blue with an automated cell counter (Nexcelom). For assessing proliferation, cells were grown under various experimental conditions for 48–72 hr, and proliferation was determined by manual cell counting or by using a CyQUANT proliferation assay (Thermo) according to the manufacturer’s instructions. For serum starvation, cells were cultured in DMEM (without FBS) for 48 hr. Proliferation was induced by transferring cells to media containing serum (20% FBS).
 
-## Oxygen consumption assays
+### Oxygen consumption assays
 
 The oxygen consumption rate (OCR) of whole cells was determined by using the Seahorse XFp Extracellular Flux Analyzer (Seahorse Bioscience). Cells were trypsinized and plated on a miniplate 24 hr prior to the Seahorse assay. For Mfn2 knockdowns, cells were treated with scrambled siRNA as a control or Mfn2 siRNA for 48 hr prior to seeding. The assay medium consisted of 25 mM glucose, 4 mM glutamine, 50 μM palmitate-BSA, and 50 μM oleate-BSA in Seahorse base medium. The OCR was monitored upon serial injections of oligomycin (oligo, 2 μM), FCCP (1 μM), and a rotenone/antimycin A mixture (rot/AA, 1 μM). A concentration of 1 μM FCCP was determined to be optimal in separate experiments. OCR was normalized to the final cell number or total protein amount as determined by manual cell counting or by using a BCA assay, respectively. Data presented have been corrected for non-mitochondrial respiration.
 
-## Palmitate, glucose, and glutamine labeling experiments and pool-size measurements
+### Palmitate, glucose, and glutamine labeling experiments and pool-size measurements
 
 3T3-L1 fibroblasts were plated at ~20% confluence or 100% confluence to establish the proliferating or quiescent condition, respectively. EV controls and H-Ras transformed fibroblasts were plated at ~40% confluence. Then, 24 hr later, the medium was changed to medium in which natural-abundance glucose was replaced with U-13C glucose or natural-abundance glutamine was replaced with U-13C glutamine. For palmitate labeling, after 24 hr the medium was changed to medium containing 100 μM U-13C palmitate-BSA and 100 μM natural abundance oleate-BSA. After labeling for 6 hr, cells were harvested, extracted, and analyzed as previously described (Yao et al., 2018). The polar portion of the extract was separated by using a Luna aminopropyl column (Phenomenex) coupled to an Agilent 1260 capillary HPLC system. The Luna column was used with the following buffers and linear gradient: A = 95% water, 5% acetonitrile (ACN), 10 mM ammonium hydroxide, 10 mM ammonium acetate; B = 95% ACN, 5% water. Mass spectrometry detection was carried out on an Agilent 6540 or 6545 Q-TOF coupled with an ESI source operated in negative mode. The identity of each metabolite was confirmed by comparing retention times and MS/MS data with standard compounds. The isotopologue distribution pattern was calculated by normalizing the sum of all isotopologues to 100%. The labeling percentages of tracers at the end of the experiments are presented in Figure 1—source data 2. Data shown have been corrected for natural abundance and isotope impurity (see Figure 1—source data 3 for raw data). Pool sizes were calculated as the sum of all isotopologues and normalized to dry cell mass (measured by using an analytical balance) as well as a D8-phenylalanine internal standard.
 
-## Nutrient-uptake analysis
+### Nutrient-uptake analysis
 
-After incubating cells in fresh media for 24 hr, the spent media were collected and analyzed. Known concentrations of isotope-labeled internal standards (glucose, lactate, glutamine, glutamate, palmitate, and aspartic acid; Cambridge Isotopes) were spiked into media samples before extraction. Extraction was performed with glass as previously reported (Yao et al., 2016b). Samples were measured by LC/MS analysis, with the method described above. The absolute concentration of each compound was determined by calculating the ratio between the fully unlabeled peak from samples and the fully labeled peak from standards. The consumption rates (x) were normalized by cell growth over the experimental time period by using the following equation where N0 represents the starting cell number, t represents incubation time, DT represents doubling time, and Y represents nutrient utilization.Y=∫0tx∙N0∙2t/DT∙dt
+After incubating cells in fresh media for 24 hr, the spent media were collected and analyzed. Known concentrations of isotope-labeled internal standards (glucose, lactate, glutamine, glutamate, palmitate, and aspartic acid; Cambridge Isotopes) were spiked into media samples before extraction. Extraction was performed with glass as previously reported (Yao et al., 2016b). Samples were measured by LC/MS analysis, with the method described above. The absolute concentration of each compound was determined by calculating the ratio between the fully unlabeled peak from samples and the fully labeled peak from standards. The consumption rates (x) were normalized by cell growth over the experimental time period by using the following equation where N0 represents the starting cell number, t represents incubation time, DT represents doubling time, and Y represents nutrient utilization.
 
-## Real-time PCR analysis of mtDNA/gDNA and PGC1α−1 expression
+$$
+Y=\int_{0}^{t}x∙N_{0}∙2^{t/DT}∙dt
+$$
+
+### Real-time PCR analysis of mtDNA/gDNA and PGC1α−1 expression
 
 DNA was extracted by using QuickExtract DNA extraction solution (Epicentre) according to the manufacturer’s instructions. The ratio of mitochondrial DNA (mtDNA) to genomic DNA (gDNA) was measured by using a NovaQUANT mouse mitochondrial to nuclear DNA ratio kit (Millipore) with RT-PCR (Applied Biosystems). We applied the following expressions: ΔCT = CTMitochondrial CTNucleic and mtDNA/gDNA = 2-ΔCT. For measuring PGC1α−1 expression levels, RNA was extracted using Trizol (Invitrogen). cDNA was synthesized using Super-Script III First-Strand Synthesis SuperMix (Invitrogen). Amplifications were run with RT-PCR by using premade primers (IDT). The results were normalized to a housekeeping gene, RPL27. The following expressions were applied: ΔΔCT = ΔCTPGC1α-1 – ΔCTRPL27 and fold change = 2-ΔΔCT.
 
-## Knockdown and overexpression of Mfn2
+### Knockdown and overexpression of Mfn2
 
 Mfn2 silencing was achieved by using a validated pool of siRNA duplexes directed against mouse Mfn2 (TriFECTa Kit, IDT) and Lipofectamine RNAiMAX Transfection Reagents (Invitrogen) according to the manufacturer's instructions (see Figure 3—source data 1 for the dicer-substrate short interfering RNA, DsiRNA, sequence). Cells given scrambled siRNA were used as a negative control. To rescue siRNA knockdowns, a siRNA-resistant cDNA that expresses wildtype Mfn2 was cloned in the pcDNA3.1+vector (GenScript) under a constitutive CMV promoter. The codon was optimized to be resistant to the siRNA added (see Figure 3—source data 1 for cDNA sequence). The control vector was pcDNA3.1+N eGFP (GenScript), which expresses GFP instead of Mfn2. For rescue experiments, cells were first knocked down with siRNA for 12 hr and then transfected with plasmids using Lipofectamine 3000 (Invitrogen) for 36–48 hr. For overexpression, wildtype cells were transfected with plasmids for 36–48 hr.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cells or isolated mitochondria were lysed with RIPA buffer (Thermo Fisher Scientific) in the presence of a protease inhibitor and a phosphatase inhibitor cocktail (Thermo Fisher Scientific). Lysates were separated by SDS–PAGE under reducing conditions, transferred to a nitrocellulose membrane, and analyzed by immunoblotting. For primary and secondary antibodies, please refer to the Key Resources Table. β-tubulin was used as a loading control. Signal was detected with a WesternSure premium chemiluminescent substrate and the C-Digit Blot Scanner (LI-COR) according to the manufacturer’s instructions.
 
-## Mitochondrial length measurements with transmission electron microscopy
+### Mitochondrial length measurements with transmission electron microscopy
 
 Samples were fixed in 2% paraformaldehyde/2.5% glutaraldehyde (Polysciences) in 100 mM sodium cacodylate buffer, pH 7.2 for 1 hr at room temperature. Samples were washed in sodium cacodylate buffer and postfixed in 1% osmium tetroxide (Polysciences) for 1 hr. Next, samples were rinsed in dH2O prior to en bloc staining with 1% aqueous uranyl acetate (Ted Pella) for 1 hr. Following several rinses in dH2O, samples were dehydrated in a graded series of ethanol and embedded in Eponate 12 resin (Ted Pella). Sections of 95 nm were cut with a Leica Ultracut UCT ultramicrotome (Leica Microsystems), stained with uranyl acetate and lead citrate, and viewed on a JEOL 1200 EX transmission electron microscope (JEOL USA) equipped with an AMT eight megapixel digital camera and AMT Image Capture Engine V602 software (Advanced Microscopy Techniques). The length of 100 random mitochondria for each condition were measured and plotted.
 
-## Confocal fluorescence microscopy
+### Confocal fluorescence microscopy
 
 After removing the media, cells were incubated with 100 nM MitoTracker Red CMXRos (Thermo Fisher Scientific) dissolved in complete medium at 37°C for 30 min. Nuclei were stained with Hoechst 33342 (Thermo Fisher Scientific). Cells were imaged alive using a Zeiss LSM 880 confocal microscope equipped with Airyscan. Images were acquired with a Zeiss 20x, 40x, 63x/1.4 NA objective by using the ZEN Black acquisition software. Samples were excited with 405 and 543 nm laser lines. Images were processed and prepared with the ZEN Black software.
 
-## Lentivirus production and Ras transformation
+### Lentivirus production and Ras transformation
 
 To generate lentivirus carrying oncogenic Ras (HRASV12), HEK293T cells were co-transfected with pCMV-VSV-G (a gift from Bob Weinberg; Addgene plasmid # 8454), pCMVΔR8.2 (a gift from Didier Trono; Addgene plasmid # 12263), and pLVX-HRasV12-hygromycin (a gift from David Piwnica-Worms) constructs with Lipofectamine 2000 reagent (Invitrogen). Cell media were replaced with fresh growth media 24 hr after transfection. Supernatants with lentivirus were collected after a 24-hr incubation period. Collected lentivirus (5 mL) was used to infect 106 3T3-L1 fibroblast cells in the presence of 10 µg/ml protamine sulfate overnight for ~16 hr. Selection of HRASV12-expressing 3T3-L1 cells was achieved by 100 µg/ml hygromycin. Ras expression was verified by immunoblotting. Senescence was tested by using the β-galactosidase staining kit (Cell Signaling) according to the manufacturer’s instructions.
 
-## Intracellular ATP measurements
+### Intracellular ATP measurements
 
 Intracellular ATP was measured by using an ATP luminescence detection assay kit (Cayman) according to the manufacturer’s instructions. The signal was normalized by protein amount as determined by using a BCA assay (Pierce).
 
-## Intracellular ROS measurements
+### Intracellular ROS measurements
 
 Cells were treated with 5 mM N-acetyl cysteine (NAC) or 5-bromo-2’-deoxyuridine (BrdU) for 48 hr. Intracellular reactive oxygen species (ROS) were measured by using a DCFDA assay (Cayman) according to the manufacturer’s instructions. The signal was normalized by protein amount as determined by using a BCA assay (Pierce).

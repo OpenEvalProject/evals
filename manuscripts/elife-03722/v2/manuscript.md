@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.03722.001 Information processing in the sensory periphery is shaped by natural stimulus statistics. In the periphery, a transmission bottleneck constrains performance; thus efficient coding implies that natural signal components with a predictably wider range should be compressed. In a different regime—when sampling limitations constrain performance—efficient coding implies that more resources should be allocated to informative features that are more variable. We propose that this regime is relevant for sensory cortex when it extracts complex features from limited numbers of sensory samples. To test this prediction, we use central visual processing as a model: we show that visual sensitivity for local multi-point spatial correlations, described by dozens of independently-measured parameters, can be quantitatively predicted from the structure of natural images. This suggests that efficient coding applies centrally, where it extends to higher-order sensory features and operates in a regime in which sensitivity increases with feature variability. DOI: http://dx.doi.org/10.7554/eLife.03722.001
+Information processing in the sensory periphery is shaped by natural stimulus statistics. In the periphery, a transmission bottleneck constrains performance; thus efficient coding implies that natural signal components with a predictably wider range should be compressed. In a different regime—when sampling limitations constrain performance—efficient coding implies that more resources should be allocated to informative features that are more variable. We propose that this regime is relevant for sensory cortex when it extracts complex features from limited numbers of sensory samples. To test this prediction, we use central visual processing as a model: we show that visual sensitivity for local multi-point spatial correlations, described by dozens of independently-measured parameters, can be quantitatively predicted from the structure of natural images. This suggests that efficient coding applies centrally, where it extends to higher-order sensory features and operates in a regime in which sensitivity increases with feature variability.
 
 ## Introduction
 
@@ -37,87 +37,89 @@ To test this hypothesis, we focus on early stages of central visual processing. 
 
 As we recently showed, some informative local correlations of natural scenes are captured by the configurations of luminances seen through a ‘glider’, that is, a window defined by a 2 × 2 square arrangement of pixels (Tkačik et al., 2010). We use this observation first as a framework for analyzing the local statistical structure of natural scenes, then to characterize psychophysical sensitivities via a set of synthetic visual texture stimuli, and finally to compare the two.
 
-## Analyzing local image statistics in natural scenes
+### Analyzing local image statistics in natural scenes
 
-The analysis of natural scenes is schematized in
+The analysis of natural scenes is schematized in Figure 1. We collect an ensemble of image patches from the calibrated Penn natural image database (PIDB) (Tkačik et al., 2011). We preprocess the image patches as shown in Figure 1A. This involves first averaging pixel luminances over a square region of N × N pixels, which converts an image of size L1 × L2 pixels into an image of reduced size L1/N × L2/N pixels. Images are then divided into R × R square patches of these downsampled pixels and whitened (see ‘Materials and methods’, Image preprocessing, for further details). Since the preprocessing depends on a choice of two parameters, the block-average factor N and patch size R, we report results for multiple image analyses performed using the identical preprocessing pipeline but for various choices of N and R. After preprocessing, we binarize each patch to have equal numbers of black and white pixels (black = −1, white = +1). We characterize each patch by the histogram of 16 binary colorings (22×2) seen through a square 2 × 2 pixel glider (Figure 1B). Translation invariance imposes constraints on this histogram, reducing the number of degrees of freedom to 10 (Victor and Conte, 2012). These degrees of freedom can be mapped to a set of image statistic coordinates that separates correlations based on their order: (i) one first-order coordinate, γ, describes overall luminance, (ii) four second-order coordinates, {β|, β−, β/, β\}, describe two-point correlations between pixels arranged vertically, horizontally, or diagonally, (iii) four third-order coordinates, {θ⌞, θ⌜, θ⌝, θ⌟}, describe three-point correlations between pixels arranged into ⌞-shapes of different orientations, and (iv) one fourth-order coordinate, α, describes the single four-point correlation between all four pixels in the glider (Figure 1C). The binarization step of the preprocessing pipeline forces γ to zero, leaving nine coordinates. Each image patch is thus characterized by a vector of coordinate values {β|,β−,β/,β\,θ⌜,θ⌝,θ⌟,θ⌞,α}, that is, a point within the multidimensional space of image statistics. Accumulating these points across patches yields a multidimensional probability distribution that characterizes the local correlations in natural scenes (schematized in Figure 1D). A total of 724 images (up to 249780 patches, depending on the choice of N and R), was used to construct this distribution.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig1-v2.jpg)
 
-**Figure 1.:** (A) We first block-average each image over N × N pixel squares, then divide it into patches of size R × R pixels, then whiten the ensemble of patches by removing the average pairwise structure, and finally binarize each patch about its median intensity value (see ‘Materials and methods’, Image preprocessing). (B) From each binary patch, we measure the occurrence probability of the 16 possible colorings as seen through a two-by-two pixel glider (red). Translation invariance imposes constraints between the probabilities that reduce the number of degrees of freedom to 10. (C) A convenient coordinate basis for these 10° of freedom can be described in terms of correlations between pixels as seen through the glider. These consist of one first-order coordinate (γ), four second-order coordinates (), four third-order coordinates (β|,β−,β/,β\), and one fourth-order coordinate (θ⌞,θ⌜,θ⌝,θ⌟α). Since the images are binary, with black = −1 and white = +1, these correlations are sums and differences of the 16 probabilities that form the histogram in panel B (Victor and Conte, 2012). (D) Each patch is assigned a vector of coordinate values that describes the histogram shown in (B). This coordinate vector defines a specific location in the multidimensional space of image statistics. The ensemble of patches is then described by the probability distribution of coordinate values. We compute the degree of variation (standard deviation) along different directions within this distribution (inset). (E) Along single coordinate axes, we find that the degree of variation is rank-ordered as , shown separately for different choices of the block-average factor {β|,β−}>{β/,β\}>α>{θ⌞,θ⌜,θ⌝,θ⌟}N and patch size R used during image preprocessing.DOI: http://dx.doi.org/10.7554/eLife.03722.003
+**Figure 1.:** (A) We first block-average each image over N × N pixel squares, then divide it into patches of size R × R pixels, then whiten the ensemble of patches by removing the average pairwise structure, and finally binarize each patch about its median intensity value (see ‘Materials and methods’, Image preprocessing). (B) From each binary patch, we measure the occurrence probability of the 16 possible colorings as seen through a two-by-two pixel glider (red). Translation invariance imposes constraints between the probabilities that reduce the number of degrees of freedom to 10. (C) A convenient coordinate basis for these 10° of freedom can be described in terms of correlations between pixels as seen through the glider. These consist of one first-order coordinate (γ), four second-order coordinates ($\beta_{|},\beta_{−},\beta_{/},\beta_{\}$), four third-order coordinates ($\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟}$), and one fourth-order coordinate (α). Since the images are binary, with black = −1 and white = +1, these correlations are sums and differences of the 16 probabilities that form the histogram in panel B (Victor and Conte, 2012). (D) Each patch is assigned a vector of coordinate values that describes the histogram shown in (B). This coordinate vector defines a specific location in the multidimensional space of image statistics. The ensemble of patches is then described by the probability distribution of coordinate values. We compute the degree of variation (standard deviation) along different directions within this distribution (inset). (E) Along single coordinate axes, we find that the degree of variation is rank-ordered as ${\beta_{|},\beta_{−}}>{\beta_{/},\beta_{\}}>\alpha>{\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟}}$, shown separately for different choices of the block-average factor N and patch size R used during image preprocessing.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The 9-dimensional distribution of natural image statistics is shown projected onto the  plane, where each point represents a single image patch. Note that it is not possible to see all points in the distribution due to their overlap. (α−β−B) This distribution is well described by a mixture of two components in which each image patch is assigned to one of the two components. Inspection of the image patches assigned to each component reveals that one component (light gray) contains in-focus patches, while the other component (black) contains blurred patches. Note that the two components are separated in the full 9-dimensional space but appear overlapping when projected onto a single coordinate plane. Insets show semi-transparent versions of the out-of-focus B-1 and in-focus (B-2 components. We highlight the coordinate values of specific images that are C fully in focus, (D) blurred due to variations in field of depth, and (E) blurred due to camera motion. Spatial distributions of patch assignments (left) and original image patches (right) are shown below each distribution. (C) A sharp image is composed of patches that are uniformly assigned to the ‘in-focus’ component. (D) An image that is partially out of focus due to variations in field of depth has patches that are assigned to each of the two components. (E) An image that is blurred due to camera motion is composed of patches that are uniformly assigned to the “blurry” component.DOI: http://dx.doi.org/10.7554/eLife.03722.004
+**Figure 1—figure supplement 1.:** (A) The 9-dimensional distribution of natural image statistics is shown projected onto the $\alpha−\beta_{−}$ plane, where each point represents a single image patch. Note that it is not possible to see all points in the distribution due to their overlap. (B) This distribution is well described by a mixture of two components in which each image patch is assigned to one of the two components. Inspection of the image patches assigned to each component reveals that one component (light gray) contains in-focus patches, while the other component (black) contains blurred patches. Note that the two components are separated in the full 9-dimensional space but appear overlapping when projected onto a single coordinate plane. Insets show semi-transparent versions of the out-of-focus B-1 and in-focus (B-2 components. We highlight the coordinate values of specific images that are C fully in focus, (D) blurred due to variations in field of depth, and (E) blurred due to camera motion. Spatial distributions of patch assignments (left) and original image patches (right) are shown below each distribution. (C) A sharp image is composed of patches that are uniformly assigned to the ‘in-focus’ component. (D) An image that is partially out of focus due to variations in field of depth has patches that are assigned to each of the two components. (E) An image that is blurred due to camera motion is composed of patches that are uniformly assigned to the “blurry” component.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Images can be blurred due to variations in field of depth (upper row) or camera motion (lower row). A mixture of components (MOC) method separates blurry (black) from in-focus (gray) image patches. Patches assigned to the ‘blurry’ component have larger positive coordinate values (red), showing saturated values of second- and fourth-order coordinates. Blurring due to variations in field of depth tends to uniformly increase all second- and fourth-order statistics. In comparison, motion blurring tends to more strongly increase both the fourth-order statistic and the second-order statistic aligned with the direction of motion (here, ). (β|B) The application of a Gaussian blur filter (middle row) or a motion filter (bottom row) to an in-focus image (top row) produces similar effects; with a sufficiently strong filter (Gaussian blur of  pixels or motion of σ=2 pixels), all patches in the original ‘in-focus’ image are reassigned to the ‘blurry’ component. Furthermore, both the Gaussian blur and motion filters alter the distribution of image statistics in a consistent manner. Gaussian blur filters increase the values of all second- and fourth-order coordinates, while motion filters more strongly increase the values of the fourth-order coordinate and the second-order coordinate aligned with the direction of motion.Δh=6DOI: http://dx.doi.org/10.7554/eLife.03722.005
+**Figure 1—figure supplement 2.:** (A) Images can be blurred due to variations in field of depth (upper row) or camera motion (lower row). A mixture of components (MOC) method separates blurry (black) from in-focus (gray) image patches. Patches assigned to the ‘blurry’ component have larger positive coordinate values (red), showing saturated values of second- and fourth-order coordinates. Blurring due to variations in field of depth tends to uniformly increase all second- and fourth-order statistics. In comparison, motion blurring tends to more strongly increase both the fourth-order statistic and the second-order statistic aligned with the direction of motion (here, $\beta_{|}$). (B) The application of a Gaussian blur filter (middle row) or a motion filter (bottom row) to an in-focus image (top row) produces similar effects; with a sufficiently strong filter (Gaussian blur of $\sigma=2$ pixels or motion of $Δh=6$ pixels), all patches in the original ‘in-focus’ image are reassigned to the ‘blurry’ component. Furthermore, both the Gaussian blur and motion filters alter the distribution of image statistics in a consistent manner. Gaussian blur filters increase the values of all second- and fourth-order coordinates, while motion filters more strongly increase the values of the fourth-order coordinate and the second-order coordinate aligned with the direction of motion.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** The robustly observed statistical structure of natural scenes (open circles) is completely absent from the same analysis performed on samples of white noise (shaded circles). The inset shows that this holds across analysis parameters.DOI: http://dx.doi.org/10.7554/eLife.03722.006
+**Figure 1—figure supplement 3.:** The robustly observed statistical structure of natural scenes (open circles) is completely absent from the same analysis performed on samples of white noise (shaded circles). The inset shows that this holds across analysis parameters.
 
-To summarize this distribution, we compute the degree of variation (standard deviation) along each coordinate axis (Figure 1E). As is shown, the degree of variation along different coordinate axes exhibits a characteristic rank-ordering, given by {β|,β−}>{β/,β\}>α>{θ⌞,θ⌜,θ⌝,θ⌟}; that is, the most variable correlations are pairwise correlations in the cardinal directions, followed by pairwise correlations in the oblique directions, followed by fourth-order correlations. Interestingly, third-order correlations are the least variable across image patches. An analogous analysis performed on white noise yields a flat distribution with considerably smaller standard deviation values (See ‘Materials and methods’, Analysis variants for Penn Natural Image Database, and Figure 1—figure supplement 3 for comparison), and performing the analysis on a colored Gaussian noise (e.g. 1/fk spectrum) would also yield a flat distribution because of the whitening stage in the image preprocessing pipeline. These (and subsequent) findings are preserved across different choices of image analysis parameters (shown in Figure 1E for block-average factors N = 2, 4 and patch sizes R = 32, 48, 64; see ‘Materials and methods’, Analysis variants for Penn Natural Image Database, and Figure 3—figure supplement 5A for a larger set of parameters) and also across other collections of natural images (see ‘Materials and methods’, Comparison with van Hateren Database, and Figure 3—figure supplement 5B for a parallel analysis of the van Hateren image dataset (van Hateren and van der Schaaf, 1998), which gives similar results).
+To summarize this distribution, we compute the degree of variation (standard deviation) along each coordinate axis (Figure 1E). As is shown, the degree of variation along different coordinate axes exhibits a characteristic rank-ordering, given by ${\beta_{|},\beta_{−}}>{\beta_{/},\beta_{\}}>\alpha>{\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟}}$; that is, the most variable correlations are pairwise correlations in the cardinal directions, followed by pairwise correlations in the oblique directions, followed by fourth-order correlations. Interestingly, third-order correlations are the least variable across image patches. An analogous analysis performed on white noise yields a flat distribution with considerably smaller standard deviation values (See ‘Materials and methods’, Analysis variants for Penn Natural Image Database, and Figure 1—figure supplement 3 for comparison), and performing the analysis on a colored Gaussian noise (e.g. $1/f^{k}$ spectrum) would also yield a flat distribution because of the whitening stage in the image preprocessing pipeline. These (and subsequent) findings are preserved across different choices of image analysis parameters (shown in Figure 1E for block-average factors N = 2, 4 and patch sizes R = 32, 48, 64; see ‘Materials and methods’, Analysis variants for Penn Natural Image Database, and Figure 3—figure supplement 5A for a larger set of parameters) and also across other collections of natural images (see ‘Materials and methods’, Comparison with van Hateren Database, and Figure 3—figure supplement 5B for a parallel analysis of the van Hateren image dataset (van Hateren and van der Schaaf, 1998), which gives similar results).
 
-## Characterizing visual sensitivity to local image statistics
+### Characterizing visual sensitivity to local image statistics
 
-To characterize perceptual sensitivity to different statistics, we isolated them in synthetic visual images and used a figure/ground segmentation task (
+To characterize perceptual sensitivity to different statistics, we isolated them in synthetic visual images and used a figure/ground segmentation task (Figure 2B). We used a four-alternative forced-choice task in which stimuli consisted of a textured target and a binary noise background (or vice-versa). Each stimulus was presented for 120ms and was followed by a noise mask. Subjects were then asked to identify the spatial location (top, bottom, left, or right) of the target. Experiments were carried out for synthetic stimuli in which the target or background was defined by first varying image statistic coordinates independently (Figure 2A shows examples of gamuts from which stimuli are built). Along each coordinate axis, threshold (1/sensitivity) was defined as the coordinate value required to support a criterion level of performance (Figure 2C, inset). We then performed further experiments in which the target or background was defined by simultaneously varying pairs of coordinates. For measurements involving each coordinate pair (to which we will refer as a ‘coordinate plane’), we traced out an isodiscrimination contour (Figure 2C) that describes the threshold values not only along the cardinal directions, but also along oblique directions. Measurements were collected for four individual subjects in each of 11 distinct coordinate planes (representing all distinct coordinate pairs up to 4-fold rotational symmetry; see ‘Materials and methods’, Psychophysical methods, for further details). Each subject performed 4320 judgements per plane, for a total of 47,520 trials per subject.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig2-v2.jpg)
 
-**Figure 2.:** (A) Synthetic binary images can be created that contain specified values of individual image statistic coordinates (as shown here) or specified values of pairs of coordinates (Victor and Conte, 2012). (B) To measure human sensitivity to image statistics, we generate synthetic textures with prescribed coordinate values but no additional statistical structure, and we use these synthetic textures in a figure/ground segmentation task (See Victor and Conte, 2012 and ‘Materials and methods’, Psychophysical methods). (C) For measurements along coordinate axes, test stimuli are built out of homogeneous samples drawn from the gamuts shown in A (e.g. the target shown in B was generated from the portion of the gamut indicated by the red arrow in A; See ‘Materials and methods’, Psychophysical methods, and Victor et al., 2005; Victor and Conte, 2012; Victor et al., 2013). We assess the discriminability of these stimuli from white noise by measuring the threshold value of a coordinate required to achieve performance halfway between chance and perfect (inset). A similar approach is used to measure sensitivity in oblique directions; here, two coordinate values are specified to create the test stimuli. The threshold values along the axes and in oblique directions define an isodiscrimination contour (red dashed ellipse, main panel) in pairwise coordinate planes. (D) Along individual coordinate axes, we find that sensitivities (1/thresholds) are rank-ordered as , shown separately for four individual subjects. A single set of perceptual sensitivities is shown for {β|,β−}>{β/,β\}>α>{θ⌜,θ⌝,θ⌟,θ⌞}, (β|,β−), and (β/,β\), since human subjects are equally sensitive to rotationally-equivalent pairs of second-order coordinates and to all third-order coordinates ((θ⌞,θ⌜,θ⌝,θ⌟)Victor et al., 2013).DOI: http://dx.doi.org/10.7554/eLife.03722.007
+**Figure 2.:** (A) Synthetic binary images can be created that contain specified values of individual image statistic coordinates (as shown here) or specified values of pairs of coordinates (Victor and Conte, 2012). (B) To measure human sensitivity to image statistics, we generate synthetic textures with prescribed coordinate values but no additional statistical structure, and we use these synthetic textures in a figure/ground segmentation task (See Victor and Conte, 2012 and ‘Materials and methods’, Psychophysical methods). (C) For measurements along coordinate axes, test stimuli are built out of homogeneous samples drawn from the gamuts shown in A (e.g. the target shown in B was generated from the portion of the gamut indicated by the red arrow in A; See ‘Materials and methods’, Psychophysical methods, and Victor et al., 2005; Victor and Conte, 2012; Victor et al., 2013). We assess the discriminability of these stimuli from white noise by measuring the threshold value of a coordinate required to achieve performance halfway between chance and perfect (inset). A similar approach is used to measure sensitivity in oblique directions; here, two coordinate values are specified to create the test stimuli. The threshold values along the axes and in oblique directions define an isodiscrimination contour (red dashed ellipse, main panel) in pairwise coordinate planes. (D) Along individual coordinate axes, we find that sensitivities (1/thresholds) are rank-ordered as ${\beta_{|},\beta_{−}}>{\beta_{/},\beta_{\}}>\alpha>{\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞}}$, shown separately for four individual subjects. A single set of perceptual sensitivities is shown for $(\beta_{|},\beta_{−})$, $(\beta_{/},\beta_{\})$, and $(\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟})$, since human subjects are equally sensitive to rotationally-equivalent pairs of second-order coordinates and to all third-order coordinates (Victor et al., 2013).
 
-Figure 2D shows perceptual sensitivities measured along each coordinate axis. For each of four subjects, a similar pattern emerges for sensitivities as was observed for variation in natural image statistics: sensitivities are rank-ordered as {β|,β−}>{β/,β\}>α>{θ⌜,θ⌝,θ⌟,θ⌞}.
+Figure 2D shows perceptual sensitivities measured along each coordinate axis. For each of four subjects, a similar pattern emerges for sensitivities as was observed for variation in natural image statistics: sensitivities are rank-ordered as ${\beta_{|},\beta_{−}}>{\beta_{/},\beta_{\}}>\alpha>{\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞}}$.
 
-Note that the difference between the sensitivities in the horizontal and vertical directions (β− and β|) vs the diagonal directions (β\ and β/) is not simply an ‘oblique effect’, that is, a greater sensitivity to cardinally- vs obliquely-oriented contours (Campbell et al., 1966). Horizontal and vertical pairwise correlations differ from the diagonal pairwise correlations in more than just orientation: pixels involved in horizontal and vertical pairwise correlations share an edge, while pixels involved in diagonal pairwise correlations only share a corner. Correspondingly, the difference in sensitivities for horizontal and vertical correlations vs diagonal correlations is approximately 50%, which is much larger than the size of the classical oblique effect (10–20%) (Campbell et al., 1966).
+Note that the difference between the sensitivities in the horizontal and vertical directions ($\beta_{−}$ and $\beta_{|}$) vs the diagonal directions ($\beta_{\}$ and $\beta_{/}$) is not simply an ‘oblique effect’, that is, a greater sensitivity to cardinally- vs obliquely-oriented contours (Campbell et al., 1966). Horizontal and vertical pairwise correlations differ from the diagonal pairwise correlations in more than just orientation: pixels involved in horizontal and vertical pairwise correlations share an edge, while pixels involved in diagonal pairwise correlations only share a corner. Correspondingly, the difference in sensitivities for horizontal and vertical correlations vs diagonal correlations is approximately 50%, which is much larger than the size of the classical oblique effect (10–20%) (Campbell et al., 1966).
 
-## Natural scenes predict human sensitivity along single coordinates
+### Natural scenes predict human sensitivity along single coordinates
+
+Figures 1E and 2D show a rank-order correspondence between natural image statistics and perceptual sensitivities. This qualitative comparison can be converted to a quantitative one (Figure 3A), as a single scaling parameter aligns the standard deviation of natural image statistics with the corresponding perceptual sensitivities. In this procedure, each of the six image analyses is scaled by a single multiplicative factor that minimizes the squared error between the set of standard deviations and the set of subject-averaged sensitivities (see ‘Materials and methods’, Image preprocessing, and Figure 3—figure supplement 1 for additional details regarding scaling). The agreement is very good, with the mismatch between image analyses and human psychophysics comparable to the variability from one image analysis to another, or from one human subject to another.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-v2.jpg)
 
-**Figure 3.:** (A) Scaled degree of variation (standard deviation) in natural image statistics along second- (β), third- (θ), and fourth-order (α) coordinate axes (blue circular markers) are shown in comparison to human perceptual sensitivities measured along the same coordinate axes (red square markers). Degree of variation in natural image statistics is separately shown for different choices of the block-average factor (N) and patch size (R) used during image preprocessing. Perceptual sensitivities are separately shown for four individual subjects. As in Figure 2C,A single set of perceptual sensitivities is shown for , {β|,β−}, and {β/,β\}. ({θ⌞,θ⌜,θ⌝,θ⌟}B) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). Coordinate planes are organized into a grid. The set of ellipses in each pairwise plane is scaled to maximally fill each portion of the grid; agreement between the variation along single coordinate axes and the corresponding human sensitivities (shown in A) guarantees that no information is lost by scaling. Across all 36 coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. (C) Quantitative comparison of a single image analysis (N = 2, R = 32) with the subject-averaged psychophysical data. For single coordinates depicted in A, we report the standard deviation in natural image statistics (upper row) and perceptual sensitivities (middle row). For sets of coordinate planes depicted in (B), we report the (average eccentricity, angular tilt) of precision matrix contours from natural scenes (upper row) and isodiscrimination contours from psychophysical measurements (middle row). The degree of correspondence between predictions derived from natural image data and the psychophysical measurements can be conveniently summarized as a scalar product (see text), where 1 indicates a perfect match. In all cases, the correspondence is very high (0.938–0.999) and is highly statistically significant (p ≤ 0.0003 for both single coordinates and pairwise coordinate planes; see ‘Materials and methods’, Permutation tests, for details).DOI: http://dx.doi.org/10.7554/eLife.03722.008
+**Figure 3.:** (A) Scaled degree of variation (standard deviation) in natural image statistics along second- (β), third- (θ), and fourth-order (α) coordinate axes (blue circular markers) are shown in comparison to human perceptual sensitivities measured along the same coordinate axes (red square markers). Degree of variation in natural image statistics is separately shown for different choices of the block-average factor (N) and patch size (R) used during image preprocessing. Perceptual sensitivities are separately shown for four individual subjects. As in Figure 2C,A single set of perceptual sensitivities is shown for ${\beta_{|},\beta_{−}}$, ${\beta_{/},\beta_{\}}$, and ${\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟}}$. (B) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). Coordinate planes are organized into a grid. The set of ellipses in each pairwise plane is scaled to maximally fill each portion of the grid; agreement between the variation along single coordinate axes and the corresponding human sensitivities (shown in A) guarantees that no information is lost by scaling. Across all 36 coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. (C) Quantitative comparison of a single image analysis (N = 2, R = 32) with the subject-averaged psychophysical data. For single coordinates depicted in A, we report the standard deviation in natural image statistics (upper row) and perceptual sensitivities (middle row). For sets of coordinate planes depicted in (B), we report the (average eccentricity, angular tilt) of precision matrix contours from natural scenes (upper row) and isodiscrimination contours from psychophysical measurements (middle row). The degree of correspondence between predictions derived from natural image data and the psychophysical measurements can be conveniently summarized as a scalar product (see text), where 1 indicates a perfect match. In all cases, the correspondence is very high (0.938–0.999) and is highly statistically significant (p ≤ 0.0003 for both single coordinates and pairwise coordinate planes; see ‘Materials and methods’, Permutation tests, for details).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** We scale each image analysis by a single scale factor that minimizes the squared error between the set of nine standard deviations and the set of nine psychophysical sensitivities. The scale factors are shown here as a function of block-average factor N for different choices of the patch size R. We find that the variance of image statistics decreases with increasing values of N, and thus larger values of N require a larger scale factor. Similarly, for a given value of N, the variance of image statistics increases with increasing R, and thus larger values of R require a larger scale factor.DOI: http://dx.doi.org/10.7554/eLife.03722.009
+**Figure 3—figure supplement 1.:** We scale each image analysis by a single scale factor that minimizes the squared error between the set of nine standard deviations and the set of nine psychophysical sensitivities. The scale factors are shown here as a function of block-average factor N for different choices of the patch size R. We find that the variance of image statistics decreases with increasing values of N, and thus larger values of N require a larger scale factor. Similarly, for a given value of N, the variance of image statistics increases with increasing R, and thus larger values of R require a larger scale factor.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N =2, R = 32) to human perceptual isodiscrimination contours (red ellipses). Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the angular tilt (B) and eccentricity (C) of image-statistic contours (blue circular markers; shown for variations in the block-average factor (N) and patch size (R) used during image preprocessing) and of perceptual isodiscrimination contours (red square markers; shown for individual subjects). Since contours are highly similar within subsets of coordinate planes (denoted by blocks in A; e.g. the set of  planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours (except for near-circular contours, for which tilt is poorly-defined, as in the case denoted by an arrow).θαDOI: http://dx.doi.org/10.7554/eLife.03722.010
+**Figure 3—figure supplement 2.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N =2, R = 32) to human perceptual isodiscrimination contours (red ellipses). Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the angular tilt (B) and eccentricity (C) of image-statistic contours (blue circular markers; shown for variations in the block-average factor (N) and patch size (R) used during image preprocessing) and of perceptual isodiscrimination contours (red square markers; shown for individual subjects). Since contours are highly similar within subsets of coordinate planes (denoted by blocks in A; e.g. the set of $\theta\alpha$ planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours (except for near-circular contours, for which tilt is poorly-defined, as in the case denoted by an arrow).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Principal axes  of variation in the distribution of natural image statistics are shown in comparison to the principal axes {ξ→NI} of human sensitivity. Each of the nine principal axes is represented by a vertical gray/white column. Markers (circular = variation in natural image coordinates; square = human perceptual sensitivity) represent the fractional power of the contributions of ({ξ→PP}A) second-order cardinal (), (β|,β−B) second-order oblique (), (β/,β\C) third-order (θ), and (D) fourth-order (α) coordinates to each principal axis; all contributions within each column sum to 1. Principal axes components, and the range of variability observed across image analysis variants or across subjects (see legend), are shown in blue for natural scene statistics and in red for perceptual sensitivities.DOI: http://dx.doi.org/10.7554/eLife.03722.011
+**Figure 3—figure supplement 3.:** Principal axes ${ξ→_{NI}}$ of variation in the distribution of natural image statistics are shown in comparison to the principal axes ${ξ→_{PP}}$ of human sensitivity. Each of the nine principal axes is represented by a vertical gray/white column. Markers (circular = variation in natural image coordinates; square = human perceptual sensitivity) represent the fractional power of the contributions of (A) second-order cardinal ($\beta_{|},\beta_{−}$), (B) second-order oblique ($\beta_{/},\beta_{\}$), (C) third-order (θ), and (D) fourth-order (α) coordinates to each principal axis; all contributions within each column sum to 1. Principal axes components, and the range of variability observed across image analysis variants or across subjects (see legend), are shown in blue for natural scene statistics and in red for perceptual sensitivities.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** We describe an ellipse by the unit vector , where ω→=sin α cos δ x^+sin α sin δ y^+cos α z^ is the eccentricity and ϵ=sin αδ is the angular tilt. In spherical coordinates, the tilt δ is the polar angle defined in the x−y plane, and the angle  is the azimuthal angle measured from the α=sin−1(ϵ)z-direction. In this representation, the unit vector  corresponds to a circle, and the unit vectors z^ and x^ correspond, respectively, to the ellipses that have been maximally elongated (i.e., into lines) in the y^ and x^ directions. Points between the equator (in the y^x−y plane) and the pole correspond to ellipses of intermediate eccentricities.DOI: http://dx.doi.org/10.7554/eLife.03722.012
+**Figure 3—figure supplement 4.:** We describe an ellipse by the unit vector $\omega→=sin \alpha cos \delta x^+sin \alpha sin \delta y^+cos \alpha z^$, where $ϵ=sin \alpha$ is the eccentricity and δ is the angular tilt. In spherical coordinates, the tilt δ is the polar angle defined in the x−y plane, and the angle $\alpha=sin^{−1}(ϵ)$ is the azimuthal angle measured from the z-direction. In this representation, the unit vector $z^$ corresponds to a circle, and the unit vectors $x^$ and $y^$ correspond, respectively, to the ellipses that have been maximally elongated (i.e., into lines) in the $x^$ and $y^$ directions. Points between the equator (in the x−y plane) and the pole correspond to ellipses of intermediate eccentricities.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp5-v2.jpg)
 
-**Figure 3—figure supplement 5.:** Scaled variation in natural image statistics measured along second- (β), third- (θ), and fourth-order (α) coordinate axes (blue circular markers) are shown in comparison to human perceptual sensitivities measured along the same coordinates (red square markers). Natural image statistics are extracted from the Penn natural image database (A) and the van Hateren image database (B). Ranges of variation and human sensitivities are robustly rank-ordered as . When each image analysis is scaled by a single factor, ranges match sensitivities.β|−>β\/>α>θDOI: http://dx.doi.org/10.7554/eLife.03722.013
+**Figure 3—figure supplement 5.:** Scaled variation in natural image statistics measured along second- (β), third- (θ), and fourth-order (α) coordinate axes (blue circular markers) are shown in comparison to human perceptual sensitivities measured along the same coordinates (red square markers). Natural image statistics are extracted from the Penn natural image database (A) and the van Hateren image database (B). Ranges of variation and human sensitivities are robustly rank-ordered as $\beta_{|−}>\beta_{\/}>\alpha>\theta$. When each image analysis is scaled by a single factor, ranges match sensitivities.
 
 ![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp6-v2.jpg)
 
-**Figure 3—figure supplement 6.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x,y) at which  constant. A short distance of the blue contour from the origin thus indicates a large value of Mxxx2+2Mxyxy+Myyy2=M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise. Our prediction is that psychophysical thresholds (red ellipses) should match these contours. Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 pairwise coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the (B) angular tilt and (C) eccentricity of image-statistic contours (circular markers) and of perceptual isodiscrimination contours (square markers). Since contours are highly similar within subsets of pairwise planes (denoted by blocks in A; e.g. the set of  planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours.θαDOI: http://dx.doi.org/10.7554/eLife.03722.014
+**Figure 3—figure supplement 6.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x,y) at which $M_{xx}x^{2}+2M_{xy}xy+M_{yy}y^{2}=$ constant. A short distance of the blue contour from the origin thus indicates a large value of M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise. Our prediction is that psychophysical thresholds (red ellipses) should match these contours. Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 pairwise coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the (B) angular tilt and (C) eccentricity of image-statistic contours (circular markers) and of perceptual isodiscrimination contours (square markers). Since contours are highly similar within subsets of pairwise planes (denoted by blocks in A; e.g. the set of $\theta\alpha$ planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours.
 
 ![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp7-v2.jpg)
 
-**Figure 3—figure supplement 7.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x,y) at which  constant. A short distance of the blue contour from the origin thus indicates a large value of Mxxx2+2Mxyxy+Myyy2=M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise. Our prediction is that psychophysical thresholds (red ellipses) should match these contours. Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 pairwise coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the (B) angular tilt and (C) eccentricity of image-statistic contours (circular markers) and of perceptual isodiscrimination contours (square markers). Since contours are highly similar within subsets of pairwise planes (denoted by blocks in A; e.g. the set of  planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours. Coordinates extracted from the van Hateren database show larger variability in the θα and β|β− planes than those extracted from the Penn Natural Image Database (β\β/Figure 3—figure supplement 6), exhibiting a larger number of low-eccentricity contours for which tilt is poorly defined.DOI: http://dx.doi.org/10.7554/eLife.03722.015
+**Figure 3—figure supplement 7.:** (A) For each pair of coordinates, we compare the precision matrix (blue ellipses) extracted from natural scenes (using N = 2, R = 32) to human perceptual isodiscrimination contours (red ellipses). A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x,y) at which $M_{xx}x^{2}+2M_{xy}xy+M_{yy}y^{2}=$ constant. A short distance of the blue contour from the origin thus indicates a large value of M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise. Our prediction is that psychophysical thresholds (red ellipses) should match these contours. Coordinate planes are organized into a grid, with subject-averaged and subject-specific isodiscrimination contours shown respectively above and below the diagonal of the grid. Across all 36 pairwise coordinate planes, there is a correspondence in the shape, size, and orientation of precision matrix contours and perceptual isodiscrimination contours. The quality of the match is quantified by computing the (B) angular tilt and (C) eccentricity of image-statistic contours (circular markers) and of perceptual isodiscrimination contours (square markers). Since contours are highly similar within subsets of pairwise planes (denoted by blocks in A; e.g. the set of $\theta\alpha$ planes), contour properties have been averaged within such subsets. Angular tilt and eccentricity are highly consistent between precision matrix contours and perceptual isodiscrimination contours. Coordinates extracted from the van Hateren database show larger variability in the $\beta_{|}\beta_{−}$ and $\beta_{\}\beta_{/}$ planes than those extracted from the Penn Natural Image Database (Figure 3—figure supplement 6), exhibiting a larger number of low-eccentricity contours for which tilt is poorly defined.
 
 ![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp8-v2.jpg)
 
-**Figure 3—figure supplement 8.:** Principal axes  of variation in the distribution of natural image statistics are shown in comparison to the principal axes {ξ→NI} of human sensitivity. Each of the nine principal axes is represented by a vertical gray/white column. Markers (circular = variation in natural image coordinates; square = human perceptual sensitivity) represent the fractional power of the contributions of ({ξ→PP}A, E) second-order cardinal (), (β|−B, F) second-order oblique (), C, G third-order (θ), and (β/\D, H) fourth-order (α) coordinates to each principal axis; all contributions within each column sum to 1. Principal axes components, and the range of variability observed across image analysis variants or across subjects (see legend), are shown in blue for natural scene statistics and in red for perceptual sensitivities. There is an excellent match between the blue and red components for both the Penn and van Hateren image databases.DOI: http://dx.doi.org/10.7554/eLife.03722.016
+**Figure 3—figure supplement 8.:** Principal axes ${ξ→_{NI}}$ of variation in the distribution of natural image statistics are shown in comparison to the principal axes ${ξ→_{PP}}$ of human sensitivity. Each of the nine principal axes is represented by a vertical gray/white column. Markers (circular = variation in natural image coordinates; square = human perceptual sensitivity) represent the fractional power of the contributions of (A, E) second-order cardinal ($\beta_{|_{−}}$), (B, F) second-order oblique ($\beta_{/\}$), C, G third-order (θ), and (D, H) fourth-order (α) coordinates to each principal axis; all contributions within each column sum to 1. Principal axes components, and the range of variability observed across image analysis variants or across subjects (see legend), are shown in blue for natural scene statistics and in red for perceptual sensitivities. There is an excellent match between the blue and red components for both the Penn and van Hateren image databases.
 
 ![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig3-figsupp9-v2.jpg)
 
-**Figure 3—figure supplement 9.:** (A) Probability distributions of natural image statistics. Projections of the distribution along second- and fourth-order coordinate axes are asymmetric about the origin, being shifted toward positive values. (B) We compute the ratio of standard deviations measured along positive vs negative coordinate axes (circular markers) to the ratio of human sensitivities measured along positive vs negative coordinate axes (square markers). Natural images show larger asymmetries in second- and fourth-order coordinate values than is observed in human sensitivities. This is particularly notable for the α coordinate, which shows a 2–6 fold asymmetry in natural images variation but at most a 1.2-fold asymmetry in human sensitivity.DOI: http://dx.doi.org/10.7554/eLife.03722.017
+**Figure 3—figure supplement 9.:** (A) Probability distributions of natural image statistics. Projections of the distribution along second- and fourth-order coordinate axes are asymmetric about the origin, being shifted toward positive values. (B) We compute the ratio of standard deviations measured along positive vs negative coordinate axes (circular markers) to the ratio of human sensitivities measured along positive vs negative coordinate axes (square markers). Natural images show larger asymmetries in second- and fourth-order coordinate values than is observed in human sensitivities. This is particularly notable for the α coordinate, which shows a 2–6 fold asymmetry in natural images variation but at most a 1.2-fold asymmetry in human sensitivity.
 
 We quantify the correspondence between image analyses and psychophysical analyses by computing the scalar product between the normalized vector of standard deviations (extracted separately from each image analysis) and the normalized vector of subject-averaged sensitivities (extracted from the set of psychophysical analyses). A value of 1 indicates perfect correspondence, and 0 indicates no correspondence. This value ranges from 0.987 to 0.999 across image analyses and is consistently larger than the value measured under the null hypothesis that the apparent correspondence between statistics and sensitivities is chance (p ≤ .0003 for each image analysis; see Tables 1–2 and ‘Materials and methods’, Permutation tests, for details regarding statistical tests).
 
 These findings support our hypothesis that human perceptual sensitivity measured along single coordinate axes (assessed using synthetic binary textures) is predicted by the degree of variation along the same coordinate axes in natural scenes.
 
-## Natural scenes predict human sensitivity to joint variations of all pairs of coordinates
+### Natural scenes predict human sensitivity to joint variations of all pairs of coordinates
 
 The correspondence shown in Figure 3A considers each image statistic coordinate in isolation. However, it is known that image statistics covary substantially in natural images (as diagrammed in Figure 1D) and also that they interact perceptually (as diagrammed in Figure 2C). When pairs of natural image statistics covary, thus sampling oblique directions not aligned with the coordinate axes in the space of image statistics, our hypothesis predicts that human perceptual sensitivity is matched to both the degree and the direction of that covariation (we are referring here to the orientation of a distribution in the coordinate plane of a pair of image statistics, and not to an orientation in physical space). To test this idea, we proceeded as follows.
 
@@ -125,7 +127,7 @@ First, we fit the distribution of image statistics with a multidimensional Gauss
 
 Results in each coordinate plane are shown in Figure 3B. Across all subjects and all coordinate planes, we find that the shape and orientation of perceptual isodiscrimination contours (red ellipses) are predicted by the distribution of image statistics extracted from natural scenes (blue ellipses). As in Figure 3A, the correspondence is very good, with mismatch that is comparable to the variability observed across image analyses and across subjects.
 
-To quantify the correspondence between natural image and psychophysical analyses, we describe each ellipse by a single vector ω→ that combines information about shape (eccentricity) and orientation (angular tilt), and we compute the scalar product between the image analysis vector ω→NI and the subject-averaged psychophysical vector ω→PP. This value, averaged across coordinate planes, ranges from 0.953 to 0.977 across image analyses. We compared this correspondence to that obtained under the null hypotheses that (i) the apparent correspondence between image statistic covariances and isodiscrimination contours is chance, or (ii) the apparent covariances in image statistics are due to chance. The observed correspondence is much greater than the value measured under either null hypothesis (p ≤.0003 for each image analysis under both hypotheses; see ‘Materials and methods’, Analysis of image statistics in pairwise coordinate planes, and Figure 3—figure supplement 2 for comparisons of eccentricity and tilt, and Tables 1–3 and ‘Materials and methods’, Permutation tests, for statistical tests).
+To quantify the correspondence between natural image and psychophysical analyses, we describe each ellipse by a single vector $\omega→$ that combines information about shape (eccentricity) and orientation (angular tilt), and we compute the scalar product between the image analysis vector $\omega→_{NI}$ and the subject-averaged psychophysical vector $\omega→_{PP}$. This value, averaged across coordinate planes, ranges from 0.953 to 0.977 across image analyses. We compared this correspondence to that obtained under the null hypotheses that (i) the apparent correspondence between image statistic covariances and isodiscrimination contours is chance, or (ii) the apparent covariances in image statistics are due to chance. The observed correspondence is much greater than the value measured under either null hypothesis (p ≤.0003 for each image analysis under both hypotheses; see ‘Materials and methods’, Analysis of image statistics in pairwise coordinate planes, and Figure 3—figure supplement 2 for comparisons of eccentricity and tilt, and Tables 1–3 and ‘Materials and methods’, Permutation tests, for statistical tests).
 
 These findings confirm that the shape and orientation of human isodiscrimination contours, measured across all pairwise combinations of coordinates, can be quantitatively predicted from the covariation of image statistics extracted from natural scenes. The observed correspondence is maintained within the full 9-dimensional coordinate space (see ‘Materials and methods’, Analysis of the full 9-dimensional distribution of image statistics, and Figure 3—figure supplement 3 for principal component analyses, and Tables 1–3 and ‘Materials and methods‘, Permutation tests, for statistical tests), confirming that our hypothesis describes human sensitivity in the full 9-dimensional space of local image statistics extracted from natural scenes.
 
@@ -135,55 +137,55 @@ How should neural mechanisms be distributed to represent a diverse set of inform
 
 In sum, the surprising predictive power and the high statistical significance of our results provide strong support for the proposed application of the efficient coding hypothesis to cortical processing of complex sensory features.
 
-## Perceptual salience of multi-point correlations likely arises in cortex
+### Perceptual salience of multi-point correlations likely arises in cortex
 
 Although we did not record cortical responses directly, several lines of evidence indicate that that the perceptual thresholds we measured are determined by cortical processes. First, the stimuli had high contrast (100%) and consisted of pixels that were readily visible (14 arcmin), so retinal limitations of contrast sensitivity and resolution were eliminated. Second, the task requires pooling of information over wide areas (100–200 pixels, that is, a region whose diameter is 10–15 times the width of an image element; see Figure 7 in Victor and Conte, 2005). Retinal receptive fields are unlikely to do this, as the ratio of their spatial extent (surround size) to their resolution (center size) is typically no more than 4:1 (Croner and Kaplan, 1995; Kremers et al., 1995). Third, to account for the specificity of sensitivity to three- and four-point correlations, a cascade of two linear-nonlinear stages is required (Victor and Conte, 1991); retinal responses are quite well-captured by a single nonlinear stage (Nirenberg and Pandarinath, 2012), and cat retinal populations show no sensitivity to the four-point correlations studied used here (Victor, 1986) while simultaneous cortical field potentials do. Conversely, macaque visual cortical neurons (Purpura et al., 1994), especially those in V2, manifest responses to three- and four-point correlations (Yu et al., 2013).
 
-## Cortex faces a different class of challenges than the sensory periphery
+### Cortex faces a different class of challenges than the sensory periphery
 
 Successive stages of sensory processing share the same broad goals: invest resources in encoding stimulus features that are sufficiently informative, and suppress less-informative ones. In the periphery, this is exemplified by the well-known suppression of very low spatial frequencies; in cortex, this is exemplified by insensitivity to high-order correlations that are predictable from lower-order ones. Previous work has shown that such higher-order correlations can be separated into two groups—informative and uninformative—and only the informative ones are encoded (Tkačik et al., 2010). We used this finding to select an informative subspace for the present study, and we asked how resources should be efficiently allocated amongst features within this informative subspace.
 
-A simple model of efficient coding by neural populations is shown in
+A simple model of efficient coding by neural populations is shown in Figure 4A (details in ‘Materials ans methods’, Two regimes of efficient coding). Here, to enable analytical calculations, we used linear filters of variable gain and subject to Gaussian noise to model a population of neural channels encoding different features. The optimal allocation of resources to maximize information transmitted by the population depends on the amount of input noise, the amount of output noise, the input signal variability, and the total resources available to the system, here quantified as a constraint on the total output power (i.e., sum of response variances) in the neural population. The constrained output power and the output noise together determine the ‘bandwidth’ of the system—that is, the expressive capacity of its outputs. Consider a neural population with input noise, output noise, and a fixed amount of output power. We find that when input signal variability is sufficiently large compared to the input noise, the gain of neurons should decrease with the variance of the input (regions to the right of the peaks in the right-hand panel of Figure 4A). This is a regime where the output bandwidth is low compared to the input range, and efficient coding predicts that signals should be ‘whitened’ by equalizing the variance in different channels. Conversely, consider input signals with a smaller range, which are thus more disrupted by input noise. In this case, the gain of neurons should increase with the variance of the input (regions to the left of the peaks in the right-hand panel of Figure 4A). This is a regime where the input noise dominates, and efficient coding predicts that the system should invest more resources in more variable, and hence more easily detectable, input signals. The relative sizes of input and output noise (controlled by Λ in Figure 4A) determines the input ranges over which the two qualitatively different regimes of efficient coding apply.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig4-v2.jpg)
 
-**Figure 4.:** (A) To analyze different regimes of efficient coding, we consider a set of channels, where the  channel carries an input signal with variability kth. Gaussian noise is added to the input. The result is passed through a linear filter with gain sk, and then Gaussian noise is added to the filter output. We impose a constraint on the total power output of all channels, that is, a constraint on its total resources. With these assumptions, the set of gains that maximizes the transmitted information can be determined (see ‘Materials and methods’|Lk|, Two regimes of efficient coding, and (van Hateren, 1992a; Doi and Lewicki, 2011; Doi and Lewicki, 2014)). This set of gains depends on the relative strengths of input and output noise and on the severity of the power constraint, quantified here by the dimensionless parameter  (right-hand panel). As Λ decreases from 1 to 0, the system moves from a regime in which output noise is limiting to one in which input noise is limiting. (ΛB) The efficient coding model applied to the sensory periphery. Raw luminances from natural images are corrupted with noise (e.g. shot noise resulting from photon incidence) and passed through a linear filter. The resulting signal is carried by the optic nerve, which imposes a strong constraint on output capacity. In the bandwidth limited case where output noise dominates over input noise (e.g., under high light conditions when photon noise is not limiting), the optimal gain decreases as signal variability increases. Since channel input and channel gain vary reciprocally, channel outputs are approximately equalized, resulting in a ‘whitening’, or decorrelation. (C) The efficient coding model applied to cortical processing. Informative image features resulting from early cortical processing, caricatured by our preprocessing pipeline as applied to the retinal output, are sampled from a spatial region of the image. This sampling acts as a kind of input noise, because it only provides limited count-based estimates for the true statistical properties of the image source. When this input noise is limiting, the optimal gain increases as signal variability increases. Rather than whiten, the output signals preserve the correlational structure of the input. Note that in both regimes (B) and (C), there is a range of signals that are not encoded at all. These are the signals that are not sufficiently informative to warrant an allocation of resources.DOI: http://dx.doi.org/10.7554/eLife.03722.018
+**Figure 4.:** (A) To analyze different regimes of efficient coding, we consider a set of channels, where the $k^{th}$ channel carries an input signal with variability $s_{k}$. Gaussian noise is added to the input. The result is passed through a linear filter with gain $|L_{k}|$, and then Gaussian noise is added to the filter output. We impose a constraint on the total power output of all channels, that is, a constraint on its total resources. With these assumptions, the set of gains that maximizes the transmitted information can be determined (see ‘Materials and methods’, Two regimes of efficient coding, and (van Hateren, 1992a; Doi and Lewicki, 2011; Doi and Lewicki, 2014)). This set of gains depends on the relative strengths of input and output noise and on the severity of the power constraint, quantified here by the dimensionless parameter $Λ$ (right-hand panel). As $Λ$ decreases from 1 to 0, the system moves from a regime in which output noise is limiting to one in which input noise is limiting. (B) The efficient coding model applied to the sensory periphery. Raw luminances from natural images are corrupted with noise (e.g. shot noise resulting from photon incidence) and passed through a linear filter. The resulting signal is carried by the optic nerve, which imposes a strong constraint on output capacity. In the bandwidth limited case where output noise dominates over input noise (e.g., under high light conditions when photon noise is not limiting), the optimal gain decreases as signal variability increases. Since channel input and channel gain vary reciprocally, channel outputs are approximately equalized, resulting in a ‘whitening’, or decorrelation. (C) The efficient coding model applied to cortical processing. Informative image features resulting from early cortical processing, caricatured by our preprocessing pipeline as applied to the retinal output, are sampled from a spatial region of the image. This sampling acts as a kind of input noise, because it only provides limited count-based estimates for the true statistical properties of the image source. When this input noise is limiting, the optimal gain increases as signal variability increases. Rather than whiten, the output signals preserve the correlational structure of the input. Note that in both regimes (B) and (C), there is a range of signals that are not encoded at all. These are the signals that are not sufficiently informative to warrant an allocation of resources.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** We consider a set of channels, each of which is dedicated to processing an independent signal . Sampling noise (taken here to be unity) is added to the signal sk, which is then passed through a linear filter sk with gain Lk. Channel noise (taken here to be unity) is added to the output of |Lk|. The total dynamic range of all channels is constrained.LkDOI: http://dx.doi.org/10.7554/eLife.03722.019
+**Figure 4—figure supplement 1.:** We consider a set of channels, each of which is dedicated to processing an independent signal $s_{k}$. Sampling noise (taken here to be unity) is added to the signal $s_{k}$, which is then passed through a linear filter $L_{k}$ with gain $|L_{k}|$. Channel noise (taken here to be unity) is added to the output of $L_{k}$. The total dynamic range of all channels is constrained.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Optimal gain  is shown as a function of signal strength |Lk| for different choices of the output constraint sk. For signals below a critical strength Λ, the optimal gain is zero, and signals are not encoded. The limit Λ/(1−Λ) from below defines the transmission-limited regime, while the limit Λ→1 from above defines the sampling-limited regime. (Λ→0A) Transmission-limited regime. For signal strengths much larger than the critical value, the main constraint is output power, and the optimal gain is inversely proportional to the signal strength (as indicated by the dotted line with negative slope). As , there is an increasingly sharp transition between signals that are not encoded, and signals that are encoded in inverse proportion to their size (‘whitened’). (Λ→1B) Sampling-limited regime. As , there is a broadening of the transition between signals that are not encoded, and signals that are whitened. This broadening results in a regime in which sampling-noise is the dominant constraint, and the optimal gain Λ→0increases with signal strength (as indicated by the dotted line with positive slope).DOI: http://dx.doi.org/10.7554/eLife.03722.020
+**Figure 4—figure supplement 2.:** Optimal gain $|L_{k}|$ is shown as a function of signal strength $s_{k}$ for different choices of the output constraint $Λ$. For signals below a critical strength $\sqrt{Λ/(1−Λ)}$, the optimal gain is zero, and signals are not encoded. The limit $Λ→1$ from below defines the transmission-limited regime, while the limit $Λ→0$ from above defines the sampling-limited regime. (A) Transmission-limited regime. For signal strengths much larger than the critical value, the main constraint is output power, and the optimal gain is inversely proportional to the signal strength (as indicated by the dotted line with negative slope). As $Λ→1$, there is an increasingly sharp transition between signals that are not encoded, and signals that are encoded in inverse proportion to their size (‘whitened’). (B) Sampling-limited regime. As $Λ→0$, there is a broadening of the transition between signals that are not encoded, and signals that are whitened. This broadening results in a regime in which sampling-noise is the dominant constraint, and the optimal gain increases with signal strength (as indicated by the dotted line with positive slope).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Total noise is the sum of sampling noise (x-axis) and channel noise (y-axis). In the case considered here (d = 2), channel noise cannot exceed 0.5, but sampling noise can. For total noise below 0.5, the optimal filter L is antialigned with the signal, and the optimal strategy is decorrelation via whitening (white region, transmission-limited regime). For total noise above 0.5, the optimal filter is aligned with the signal (black region, sampling-limited regime), consistent with our findings that perceptual sensitivity is tuned to the direction and degree of variation in natural image statistics.DOI: http://dx.doi.org/10.7554/eLife.03722.021
+**Figure 4—figure supplement 3.:** Total noise is the sum of sampling noise (x-axis) and channel noise (y-axis). In the case considered here (d = 2), channel noise cannot exceed 0.5, but sampling noise can. For total noise below 0.5, the optimal filter L is antialigned with the signal, and the optimal strategy is decorrelation via whitening (white region, transmission-limited regime). For total noise above 0.5, the optimal filter is aligned with the signal (black region, sampling-limited regime), consistent with our findings that perceptual sensitivity is tuned to the direction and degree of variation in natural image statistics.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/03722/elife-03722-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Tilt and eccentricity of the optimal linear filter  for random choices of the input signal L∗s. As the magnitudes of sampling and channel noises vary, there emerge two regimes of efficient coding: a transmission-limited regime (A–B) and a sampling-limited regime (C–D). In the transmission-limited regime, the maximum filter eigendirection is aligned with the minimum signal eigendirection (and hence there is a difference in tilt of ). In contrast, in the sampling-limited regime, the maximum filter eigendirection is aligned with the π/2maximum signal eigendirection. Note that a direct comparison of eccentricities between these two regimes can be misleading, due to a reversal of the maximal eigendirections. (A) Sampling noise , channel noise Ξ=0. The optimal strategy is decorrelation via whitening using a filter aligned perpendicularly to the input signal (right panel) with an eccentricity that matches that of the input signal (dashed line, left panel). (Σ=0.2B) Sampling noise , channel noise Ξ=0.1. At very low total noise, even with zero channel noise, the optimal strategy is still decorrelation (right panel) using a filter whose eccentricity is less than the eccentricity of the input signal. (Σ=0C) Sampling noise , channel noise Ξ=4 (the low input SNR regime identified in (Σ=0van Hateren, 1992a)). The tilt of the optimal filter is aligned to the tilt of the signal (right panel), and the filter eccentricity is approaching the prediction of the square-root gain relation (curved dotted line, left panel) with decreasing SNR. (D) Sampling noise , channel noise Ξ=0.4 (dominating sampling noise). For increasing sampling noise strength, the filter eccentricities match the signal eccentricities (dashed line, left panel).Σ=0.35DOI: http://dx.doi.org/10.7554/eLife.03722.022
+**Figure 4—figure supplement 4.:** Tilt and eccentricity of the optimal linear filter $L^{∗}$ for random choices of the input signal s. As the magnitudes of sampling and channel noises vary, there emerge two regimes of efficient coding: a transmission-limited regime (A–B) and a sampling-limited regime (C–D). In the transmission-limited regime, the maximum filter eigendirection is aligned with the minimum signal eigendirection (and hence there is a difference in tilt of $\pi/2$). In contrast, in the sampling-limited regime, the maximum filter eigendirection is aligned with the maximum signal eigendirection. Note that a direct comparison of eccentricities between these two regimes can be misleading, due to a reversal of the maximal eigendirections. (A) Sampling noise $Ξ=0$, channel noise $Σ=0.2$. The optimal strategy is decorrelation via whitening using a filter aligned perpendicularly to the input signal (right panel) with an eccentricity that matches that of the input signal (dashed line, left panel). (B) Sampling noise $Ξ=0.1$, channel noise $Σ=0$. At very low total noise, even with zero channel noise, the optimal strategy is still decorrelation (right panel) using a filter whose eccentricity is less than the eccentricity of the input signal. (C) Sampling noise $Ξ=4$, channel noise $Σ=0$ (the low input SNR regime identified in (van Hateren, 1992a)). The tilt of the optimal filter is aligned to the tilt of the signal (right panel), and the filter eccentricity is approaching the prediction of the square-root gain relation (curved dotted line, left panel) with decreasing SNR. (D) Sampling noise $Ξ=0.4$, channel noise $Σ=0.35$ (dominating sampling noise). For increasing sampling noise strength, the filter eccentricities match the signal eccentricities (dashed line, left panel).
 
-To make these abstract considerations concrete, we first considered coding in the sensory periphery. A common strategy employed in the periphery is ‘whitening’, where relatively fewer resources are devoted (yielding lower gain) to features with more variation (Olshausen and Field, 1996). As an example, within the spatial frequency range that the retina captures well, sensitivity is greater for high spatial frequencies than for low ones, that is, sensitivity is inversely related to the degree of variation in natural scenes (the well-known 1/f2 power spectrum [Olshausen and Field, 1996]). Figure 4B illustrates how this strategy can emerge from the simple efficient coding scheme discussed above as applied to peripheral sensory processing. Spatiotemporal correlations of light undergo filtering before passing through the optic nerve bottleneck (a constraint on bandwidth). Such a constraint on bandwidth is equivalently understood as a regime where output noise is relatively large compared to input noise. In this limit, where output noise dominates over input noise, the optimal strategy is whitening (See Srinivasan et al., 1982 and Figure 4A). Of course, real neural systems contend with both input and output noise; indeed recent work has shown that simply whitening to deal with output noise underestimates the optimal performance that the sensory periphery can achieve (Doi and Lewicki, 2014).
+To make these abstract considerations concrete, we first considered coding in the sensory periphery. A common strategy employed in the periphery is ‘whitening’, where relatively fewer resources are devoted (yielding lower gain) to features with more variation (Olshausen and Field, 1996). As an example, within the spatial frequency range that the retina captures well, sensitivity is greater for high spatial frequencies than for low ones, that is, sensitivity is inversely related to the degree of variation in natural scenes (the well-known $1/f^{2}$ power spectrum [Olshausen and Field, 1996]). Figure 4B illustrates how this strategy can emerge from the simple efficient coding scheme discussed above as applied to peripheral sensory processing. Spatiotemporal correlations of light undergo filtering before passing through the optic nerve bottleneck (a constraint on bandwidth). Such a constraint on bandwidth is equivalently understood as a regime where output noise is relatively large compared to input noise. In this limit, where output noise dominates over input noise, the optimal strategy is whitening (See Srinivasan et al., 1982 and Figure 4A). Of course, real neural systems contend with both input and output noise; indeed recent work has shown that simply whitening to deal with output noise underestimates the optimal performance that the sensory periphery can achieve (Doi and Lewicki, 2014).
 
 An alternative regime arises when input noise limits performance. In this regime, relatively more resources are devoted to features with more variation. This regime was discussed in early work of van Hateren, (1992a) and was also recognized in (Doi and Lewicki, 2011, 2014), although it has received much less attention than the ‘whitening’ regime. Our results suggest that this is the regime is relevant to cortex, where it predicts the relative allocation of resources to higher-order image statistics. Figure 4C illustrates the simple efficient coding scheme in this context. We use our image preprocessing pipeline to mimic early visual processing, and we consider the downstream coding of higher-order image features. Because these features must be sampled from a finite patch of an image, they are subject to input noise arising from fluctuations in statistical estimation. When such input noise is limiting, the ability to detect a signal from noise increases with the variability of that signal. In this limit, efficient coding predicts that resources should be allocated in proportion to feature variability (Figure 4C). This captures the intuition that when signal reliability is in question, more reliable signals warrant more resources. Furthermore, if two or more channels have covarying signals, resources should be devoted in relation to the direction and degree of maximum covariance (see ‘Materials and methods’, Two regimes of efficient coding, Figure 4—figure supplement 3, and Figure 4—figure supplement 4).
 
 The difference between these two efficient coding regimes is a consequence of the form of noise—output vs input noise—that is limiting. Our finding that cortex operates in a different regime than the well-known peripheral whitening reflects the fact that different stages and kinds of processing can face different constraints. While information transmission by the visual periphery is limited by a bottleneck in the optic nerve, cortex faces no such transmission constraint. Furthermore, while faithful encoding may be an immediate goal of early visual processing, cortical circuits have to interpret image features from a complex and crowded visual scene and perform statistical inference. For example, to discriminate between various textures, the cortex cannot perform pixel-by-pixel comparisons, but must rely on the estimation of local correlations (image statistics) instead. Because these correlations must be sampled from a finite patch of the visual scene, any estimate will be limited by sampling fluctuations.
 
-## Sampling constraints vs resource constraints
+### Sampling constraints vs resource constraints
 
 Sampling fluctuations constitute a source of input noise, the magnitude of which depends on the size of the sampled region. For natural images, this gives rise to a tradeoff: small regions lead to large fluctuations in the estimated statistics, while large regions blur over local details. This blurring may obscure the boundaries between objects with different surface properties. While the brain must implement such sampling, the size, scale, and potentially dynamic nature of the sampling region is not known. Interestingly, our predictions of human sensitivities do not change substantially over a wide range of spatial scales and image patch sizes, perhaps reflecting a scaling property of natural images (Stephens et al., 2013). An avenue for future research is to determine whether there is an optimal region size, and if so, whether it could be estimated from images themselves.
 
 Sampling limitations alone do not suffice to account for the observed differential sensitivity of the brain to local image statistics. Were sampling limitations the only consideration, perceptual sensitivity would be the same along each coordinate axis, and perceptual isodiscrimination contours would be circular in each coordinate plane. This follows from an ideal observer calculation (See Appendix B of Victor and Conte, 2012). In contrast, we find that human observers have a severalfold variability in sensitivity along different coordinate axes (Figure 3A) and have isodiscrimination contours that are elongated in oblique directions (Figure 3B). The efficient coding principle can account for these findings by taking into consideration the fact that a real observer has finite processing resources. In this context (finite resources and substantial input noise), the efficient coding principle predicts that resources are invested in relation to the range of signal values that are typically present (van Hateren, 1992a), as we find. Interestingly, resource limitations seem to play an important role in the cortex despite the vast expansion in the number of neurons compared to the optic nerve. Presumably, this reflects the large number of complex features that could be computed and the corresponding need for a large overrepresentation of the stimulus space (Olshausen and Field, 1997).
 
-## Clues to neural mechanisms
+### Clues to neural mechanisms
 
 While we find a close match between the variation in natural image statistics and human psychophysical performance, some aspects of the distribution of natural image statistics do not match psychophysical data.
 
-These differences are not readily apparent when we examine the variances and covariances (Figure 3) of the distribution of natural image statistics but emerge only when one considers its detailed shape (see ‘Materials and methods’, Asymmetries in distributions of natural image statistics). For example, the distribution of α-coordinate values has a longer tail in the positive vs negative direction (see Figure 3—figure supplement 9 and (Tkačik et al., 2010)). In contrast, human perceptual sensitivity is symmetric, or very nearly so (within ∼20%), for positive vs negative values of α (Victor et al., 2005; Victor and Conte, 2012; Victor et al., 2013). This suggests that limitations imposed by ‘neural hardware’ force the system to use heuristics instead of matching the natural image distribution exactly. For example, an opponent mechanism responsible for detecting variations along, example, the α coordinate, might be a useful and easy (although imperfect) way to process the asymmetric distribution of four-point correlations found in natural scenes. Such a mechanism could be matched to the variance of the natural image distribution along the α coordinate, but not to its skew or other odd moments. An opponent mechanism would necessarily give rise to equal sensitivities to positive vs negative values of α, as observed in psychophysical results. Further study of deviations from a perfect match to the distribution of natural image statistics might provide additional insight into these or other possible neural mechanisms, and into the goals of the computations. Independently, our results also raise an interesting theoretical question about the optimal representation of non-gaussian, multidimensional signals under resource-limited conditions.
+These differences are not readily apparent when we examine the variances and covariances (Figure 3) of the distribution of natural image statistics but emerge only when one considers its detailed shape (see ‘Materials and methods’, Asymmetries in distributions of natural image statistics). For example, the distribution of α-coordinate values has a longer tail in the positive vs negative direction (see Figure 3—figure supplement 9 and (Tkačik et al., 2010)). In contrast, human perceptual sensitivity is symmetric, or very nearly so (within $∼20%$), for positive vs negative values of α (Victor et al., 2005; Victor and Conte, 2012; Victor et al., 2013). This suggests that limitations imposed by ‘neural hardware’ force the system to use heuristics instead of matching the natural image distribution exactly. For example, an opponent mechanism responsible for detecting variations along, example, the α coordinate, might be a useful and easy (although imperfect) way to process the asymmetric distribution of four-point correlations found in natural scenes. Such a mechanism could be matched to the variance of the natural image distribution along the α coordinate, but not to its skew or other odd moments. An opponent mechanism would necessarily give rise to equal sensitivities to positive vs negative values of α, as observed in psychophysical results. Further study of deviations from a perfect match to the distribution of natural image statistics might provide additional insight into these or other possible neural mechanisms, and into the goals of the computations. Independently, our results also raise an interesting theoretical question about the optimal representation of non-gaussian, multidimensional signals under resource-limited conditions.
 
-## Outlook
+### Outlook
 
 Looking forward, we hypothesize that the principle of efficient coding might apply to cortical processing at higher levels. For example, more complex image features, such as shapes, are represented as conjunctions of contour fragments (Brincat and Connor, 2004), where each contour fragment is a local image object defined by particular multi-point correlations. We might speculate that the joint statistics of contour fragments in natural scenes can predict, through appropriate formulation of the same efficient coding principle used here, the properties of neurons in area IT (Hung et al., 2012; Yau et al., 2012) or the associated perceptual sensitivities of human observers.
 
@@ -191,21 +193,21 @@ Finally, although we have focused on perception of image statistics, we do this 
 
 ## Materials and methods
 
-## Image preprocessing
+### Image preprocessing
 
-## UPenn Natural Image Database
+#### UPenn Natural Image Database
 
 A database of images was collected in the Okavango Delta, a savannah habitat of Botswana (Tkačik et al., 2011). Panoramic, eye-level shots were taken with a Nikon D70 camera during the dry season in midday illumination. Trichromatic images were then converted to equivalent log-luminance images. From this database, we selected a set of 924 images with minimal amounts of sky (see following paragraph).
 
-## Image selection
+#### Image selection
 
 Natural images were taken from two different databases: the UPenn Natural Image Database (shown Figures 1 and 3) and the van Hateren Natural Image Dataset (shown in ‘Materials and methods’, Comparison with van Hateren Database). Images from the UPenn Natural Image Database were selected by hand to ensure that they contained no man-made objects. We required that images contained minimal (less that one-third of the total image area) amounts of sky, as the contribution of sky to the overall power spectrum of natural images is well-documented (Torralba and Oliva, 2003) and is not the focus of the present study. Images from the van Hateren Natural Image Dataset were chosen subject to the additional constraint that scenery which was clearly the result of human landscaping (e.g. trees all in a line) be excluded. The analyses presented here were performed using the logarithms of the pixel intensities, a standard procedure in the study of natural images (Ruderman and Bialek, 1994). However, the results were unchanged if absolute pixel intensities were used instead. For more details about the construction of the images from these sources, see (Tkačik et al., 2011) (UPenn dataset) and http://www.kyb.tuebingen.mpg.de/?id=227 (van Hateren dataset).
 
-## Block averaging
+#### Block averaging
 
 Images of size L1 × L2 are block-averaged by a factor of N, which involves averaging the intensities of pixels arranged into contiguous N × N squares. The resulting image is of size L1/N × L2/N. To the extent that natural images are scale invariant (a well-supported hypothesis (Field, 1987; Ruderman, 1997; Stephens et al., 2013)), this procedure leaves the underlying statistics invariant. In our analyses, we block average images by at least a factor of two (thereby eliminating the Nyquist frequencies) in order to avoid sampling artifacts imposed by the camera matrix during image acquisition. In Figures 1 and 3, we presented two values of N: N = 2, 4. In ‘Materials and methods’, Analysis variants for Penn Natural Image Database, we show that our results are consistent when N is extended to include N = 8, 12, 16, 20.
 
-## Fourier whitening
+#### Fourier whitening
 
 We divide each block-averaged image into square R × R patches. In Figures 1 and 3, we presented results using three values of R: R = 32, 48, 64. In ‘Materials and methods’, Analysis variants for Penn Natural Image Database, we show that our results are consistent when R is extended to include R = 80, 128.
 
@@ -213,7 +215,7 @@ To remove global correlations in natural images, we whiten the set of image patc
 
 Following the whitening procedure, we binarize each image patch about its median pixel intensity. This creates image patches with equal numbers of black and white pixels.
 
-## Removal of blurry images
+#### Removal of blurry images
 
 In any image database, there will be blurring due to camera motion and focus artifacts. Because we are interested in the statistics computed from in-focus image patches, we use a mixture of components (MOC) method to separate blurred from in-focus image patches.
 
@@ -225,168 +227,947 @@ We additionally tested this method by incrementally removing images that were si
 
 Finally, we tested this method by applying motion and Gaussian blur filters to sharp images (Figure 1—figure supplement 2B). With a sufficiently strong blurring transformation, all of the patches within a sharp image changed assignment from the ‘in-focus’ to the ‘blurry’ component. Successive block averaging removes the effects of small blur, such that a larger blurring transformation is required to change the assignment of patches from the ‘in-focus’ to the ‘blurred’ component. Furthermore, the application of motion and blur filters altered the spatial distribution of natural image statistics in a manner consistent with the statistics observed in image patches assigned to the ‘blurry’ component via the MOC method (Figure 1—figure supplement 2A). Both types of blurring increased the values of second- and fourth-order statistics, but they did so in different manners. Camera motion strongly increased both the fourth-order statistic and the second-order statistic aligned parallel to the direction of motion. In comparison, camera focus artifacts (arising, e.g., from variations in field of depth) more uniformly increased all second- and fourth-order statistics.
 
-## Scaling image analyses
+#### Scaling image analyses
 
-To compare between natural image and psychophysical analyses, we scale the set of 9 standard deviations extracted from a given image analysis by a multiplicative factor that minimizes the squared error between the set of nine standard deviations and the set of nine psychophysical sensitivities. Figure 3—figure supplement 1 shows the value of the scale factor for different choices of the block-average factor N and patch size R. This scaling places the greatest weight on the match between statistics with high variation/sensitivity (i.e. β| and β−). Note that a different choice of scaling factor can shift this weight to different statistics; for example, a scaling factor that minimizes the least squares error between inverse standard deviation and thresholds will place larger weight on the match between statistics with low variation/sensitivity (i.e. θ components).
+To compare between natural image and psychophysical analyses, we scale the set of 9 standard deviations extracted from a given image analysis by a multiplicative factor that minimizes the squared error between the set of nine standard deviations and the set of nine psychophysical sensitivities. Figure 3—figure supplement 1 shows the value of the scale factor for different choices of the block-average factor N and patch size R. This scaling places the greatest weight on the match between statistics with high variation/sensitivity (i.e. $\beta_{|}$ and $\beta_{−}$). Note that a different choice of scaling factor can shift this weight to different statistics; for example, a scaling factor that minimizes the least squares error between inverse standard deviation and thresholds will place larger weight on the match between statistics with low variation/sensitivity (i.e. θ components).
 
-## Psychophysical methods
+### Psychophysical methods
 
 We determined perceptual sensitivity to local image statistics via a texture segmentation paradigm adapted from (Chubb et al., 2004), and in standard use in our lab (Victor et al., 2005; Victor and Conte, 2012; Victor et al., 2013); we describe it briefly here. These measurements were carried out in parallel with the natural scene analysis described above. Some of the psychophysical results have been previously reported (Victor and Conte, 2012; Victor et al., 2013); see ‘Subjects’ below.
 
-## Stimuli
+#### Stimuli
 
 The basic stimulus consisted of a 64 × 64 black-and-white array of square image elements (‘checks’), in which a target 16 × 64 rectangle of checks was embedded, positioned eight checks from one of the four edges of the array. The target was distinguished from the rest of the array by its local statistical structure (see Victor and Conte, 2012 for details on the synthesis of these images), which was varied as described below.
 
-Individual experimental sessions consisted of threshold measurements for each of a pair of image statistic coordinates (i.e., two choices from {β|,β−,β\,β/,θ⌜,θ⌝,θ⌟,θ⌞,α}), and their pairwise interactions. For the trials used to determine the sensitivity along a coordinate axis, the coordinate was set to one of five equally spaced values; lower-order coordinates were set to 0, and higher-order coordinates were set to their maximum-entropy values (0 for all cases except the (β,α) pair; see (Victor and Conte, 2012) for further details on this point). The highest coordinate value tested was determined from pilot experiments, and was set at 0.45 for β| and β−, 0.75 for β\ and β/, 1.0 for the θ's, and 0.85 for α. For the trials used to determine the sensitivity to pairwise combinations of coordinates, each coordinate was given a nonzero value; all sign combinations were used. The ratio of the coordinate magnitudes was fixed, and chosen in approximate proportion to the above maximum values. Two values for each sign combination were studied.
+Individual experimental sessions consisted of threshold measurements for each of a pair of image statistic coordinates (i.e., two choices from ${\beta_{|},\beta_{−},\beta_{\},\beta_{/},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$), and their pairwise interactions. For the trials used to determine the sensitivity along a coordinate axis, the coordinate was set to one of five equally spaced values; lower-order coordinates were set to 0, and higher-order coordinates were set to their maximum-entropy values (0 for all cases except the $(\beta,\alpha)$ pair; see (Victor and Conte, 2012) for further details on this point). The highest coordinate value tested was determined from pilot experiments, and was set at 0.45 for $\beta_{|}$ and $\beta_{−}$, 0.75 for $\beta_{\}$ and $\beta_{/}$, 1.0 for the θ's, and 0.85 for α. For the trials used to determine the sensitivity to pairwise combinations of coordinates, each coordinate was given a nonzero value; all sign combinations were used. The ratio of the coordinate magnitudes was fixed, and chosen in approximate proportion to the above maximum values. Two values for each sign combination were studied.
 
-To ensure that the response was driven by figure/ground segmentation (rather than, say, a texture gradient), two kinds of trials were randomly intermixed: (1) trials in which the target contained the nonzero value(s) of the coordinates and the background was random (i.e., all coordinates set to 0), and (2) trials in which the background had the nonzero values, and the target was random. Targets were equally likely to appear in any of the four possible locations. All trials were intermixed. This amounted to a total of 288 trials per block along eight rays. We collected 15 such blocks per subject (4320 trials) for each coordinate pair, and tested 11 pairs, for a total of 47,520 trials per subject: (β−,β|), (β−,β\), (β\,β/), (β−,θ⌟), (β\,θ⌟), (β/,θ⌟), (θ⌟,θ⌞), (θ⌟,θ⌜), (β−,α), (β\,α), (θ⌟,α). These pairs encompass all the distinct coordinate pairs, up to 4-fold rotational symmetry. Since there was no detectable dependence on the orientation of pairwise or third-order correlations related by rotational symmetry in pilot experiments, measurements along coordinate axes and coordinate planes related by rotation are pooled in Figure 3 and in Figure 3—figure supplements 5–8.
+To ensure that the response was driven by figure/ground segmentation (rather than, say, a texture gradient), two kinds of trials were randomly intermixed: (1) trials in which the target contained the nonzero value(s) of the coordinates and the background was random (i.e., all coordinates set to 0), and (2) trials in which the background had the nonzero values, and the target was random. Targets were equally likely to appear in any of the four possible locations. All trials were intermixed. This amounted to a total of 288 trials per block along eight rays. We collected 15 such blocks per subject (4320 trials) for each coordinate pair, and tested 11 pairs, for a total of 47,520 trials per subject: $(\beta_{−},\beta_{|})$, $(\beta_{−},\beta_{\})$, $(\beta_{\},\beta_{/})$, $(\beta_{−},\theta_{⌟})$, $(\beta_{\},\theta_{⌟})$, $(\beta_{/},\theta_{⌟})$, $(\theta_{⌟},\theta_{⌞})$, $(\theta_{⌟},\theta_{⌜})$, $(\beta_{−},\alpha)$, $(\beta_{\},\alpha)$, $(\theta_{⌟},\alpha)$. These pairs encompass all the distinct coordinate pairs, up to 4-fold rotational symmetry. Since there was no detectable dependence on the orientation of pairwise or third-order correlations related by rotational symmetry in pilot experiments, measurements along coordinate axes and coordinate planes related by rotation are pooled in Figure 3 and in Figure 3—figure supplements 5–8.
 
 Stimuli were presented on a mean-gray background, followed by a random mask. The display was an LCD monitor with control signals provided by a Cambridge Research ViSaGe system; mean luminance of 23 cd/m2 and refresh rate was 100 Hz. The stimulus size was 15° × 15° (check size of 14 min), contrast was 1.0, and viewing distance was 1m. Presentation time was 120 ms.
 
-## Subjects
+#### Subjects
 
-Four normal subjects (2 male, 2 female), ages 23 to 54 participated. One subject (MC) was a very experienced observer (several thousand hours); the other three had modest viewing experience (10–100 hr) prior to the experiment. JD and DF were naive to the purposes of the experiment. All subjects had visual acuities (corrected if necessary) of 20/20 or better. For subjects MC and DT, data from all coordinate planes other than the (β\,α)-plane were previously reported (Victor and Conte, 2012; Victor et al., 2013). For subjects JD and DF, data from the seven pairs of coordinates not containing α were previously reported (Victor et al., 2013).
+Four normal subjects (2 male, 2 female), ages 23 to 54 participated. One subject (MC) was a very experienced observer (several thousand hours); the other three had modest viewing experience (10–100 hr) prior to the experiment. JD and DF were naive to the purposes of the experiment. All subjects had visual acuities (corrected if necessary) of 20/20 or better. For subjects MC and DT, data from all coordinate planes other than the $(\beta_{\},\alpha)$-plane were previously reported (Victor and Conte, 2012; Victor et al., 2013). For subjects JD and DF, data from the seven pairs of coordinates not containing α were previously reported (Victor et al., 2013).
 
-## Procedure
+#### Procedure
 
 Subjects were asked to indicate the position of the target (4-alternative forced choice), by pressing one of four buttons. They were informed that the target was equally likely to appear in any of four locations (top, right, bottom, left), and were shown examples of stimuli of both types (target structured/background random and target random/background structured) prior to the experiment. Subjects were instructed to fixate centrally and not scan the stimulus. During training but not data collection, auditory feedback for incorrect responses was given. After performance stabilized (approx. 3 hrs for a new subject), data collection began. Within blocks, trial order was random. Block order was counterbalanced across subjects.
 
-## Determination of sensitivity
+#### Determination of sensitivity
 
-To summarize the psychophysical performance, we fit Weibull functions to the fraction correct (FC) for each subject and each kind of block (i.e., each pair of coordinates). In the first step of the analysis of each dataset, maximum-likelihood fits were obtained separately for each of its eight rays r (the rays consisted of the positive and negative values for the two coordinates, and the four diagonal directions):(0.1)FC(x)=14+34(1−2−(x/ar)br),where x is the Euclidean distance from the coordinate vector to the origin, ar is the distance at which FC = 0.625 (halfway between chance and perfect), and br is a shape parameter, controlling the slope of the psychophysical curve. Since the shape parameter br was usually in the range 2.2–2.7 for each pairwise coordinate plane, we then fit the entire dataset within each plane by a set of Weibull functions constrained to share a common exponent b, but allowing the parameter ar to vary across rays. For each on-axis ray, we averaged the value of 1/ar obtained from all planes that included the ray (these were mutually consistent (Victor et al., 2013)) to obtain a final value for the perceptual sensitivity.
+To summarize the psychophysical performance, we fit Weibull functions to the fraction correct (FC) for each subject and each kind of block (i.e., each pair of coordinates). In the first step of the analysis of each dataset, maximum-likelihood fits were obtained separately for each of its eight rays r (the rays consisted of the positive and negative values for the two coordinates, and the four diagonal directions):
 
-## Determination of isodiscrimination ellipsoids
+$$
+FC(x)=\frac{1}{4}+\frac{3}{4}(1−2^{−(x/a_{r})^{b_{r}}}),
+$$
 
-To determine the isodiscrimination ellipsoids, we first parameterized them by a quadratic ∑i,jQijcicj, where ci and cj each represent one of the local coordinates {β|,β−,β\,β/,θ⌜,θ⌝,θ⌟,θ⌞,α}, and Qij is the symmetric matrix for which criterion performance (FC = 0.625) is reached at ∑i,jQijcicj=1. The values of Qij were obtained by minimizing:(0.2)F=∑r((∑i,j Qijci(Tr)cj(Tr))−1)2,where Tr is the texture along the ray r at which criterion performance is reached (i.e., the texture at a distance ar from the origin, where ar is the sensitivity along the ray r, as determined above), and cij(T) is the value of the ith coordinate for the texture Tr. This minimization is a linear least-squares procedure in the Qij. Deviation of the fitted values of ∑i,jQijci(Tr)cj(Tr) from unity, which corresponds to deviation of the fitted ellipsoidal surface from the measured points of criterion performance, ranged from 7–10% (root-mean-squared) across subjects. The ellipses shown in Figure 3B, Figure 3—figure supplement 6, and Figure 3—figure supplement 7 correspond to loci at which ∑i,jQijcicj is constant, and the eigenvectors described in Figure 3—figure supplements 3 and 8 are the eigenvectors of Q.
+where x is the Euclidean distance from the coordinate vector to the origin, ar is the distance at which FC = 0.625 (halfway between chance and perfect), and $b_{r}$ is a shape parameter, controlling the slope of the psychophysical curve. Since the shape parameter br was usually in the range 2.2–2.7 for each pairwise coordinate plane, we then fit the entire dataset within each plane by a set of Weibull functions constrained to share a common exponent b, but allowing the parameter ar to vary across rays. For each on-axis ray, we averaged the value of $1/a_{r}$ obtained from all planes that included the ray (these were mutually consistent (Victor et al., 2013)) to obtain a final value for the perceptual sensitivity.
 
-## Analysis of image statistics in pairwise coordinate planes
+#### Determination of isodiscrimination ellipsoids
 
-In pairwise coordinate planes, our hypothesis predicts that the inverse covariance matrix, or precision matrix, matches human isodiscrimination contours. A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x, y) at which Mxxx2+2Mxyxy+Myyy2= constant. A short distance of this contour from the origin thus indicates a large value of M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise.
+To determine the isodiscrimination ellipsoids, we first parameterized them by a quadratic $\sum_{i,j}Q_{ij}c_{i}c_{j}$, where ci and cj each represent one of the local coordinates ${\beta_{|},\beta_{−},\beta_{\},\beta_{/},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$, and Qij is the symmetric matrix for which criterion performance (FC = 0.625) is reached at $\sum_{i,j}Q_{ij}c_{i}c_{j}=1$. The values of Qij were obtained by minimizing:
+
+$$
+F=\sumr((\sumi,j Q_{ij}c_{i}(T_{r})c_{j}(T_{r}))−1)^{2},
+$$
+
+where Tr is the texture along the ray r at which criterion performance is reached (i.e., the texture at a distance ar from the origin, where ar is the sensitivity along the ray r, as determined above), and $c_{ij}(T)$ is the value of the ith coordinate for the texture Tr. This minimization is a linear least-squares procedure in the Qij. Deviation of the fitted values of $\sum_{i,j}Q_{ij}c_{i}(T_{r})c_{j}(T_{r})$ from unity, which corresponds to deviation of the fitted ellipsoidal surface from the measured points of criterion performance, ranged from 7–10% (root-mean-squared) across subjects. The ellipses shown in Figure 3B, Figure 3—figure supplement 6, and Figure 3—figure supplement 7 correspond to loci at which $\sum_{i,j}Q_{ij}c_{i}c_{j}$ is constant, and the eigenvectors described in Figure 3—figure supplements 3 and 8 are the eigenvectors of Q.
+
+### Analysis of image statistics in pairwise coordinate planes
+
+In pairwise coordinate planes, our hypothesis predicts that the inverse covariance matrix, or precision matrix, matches human isodiscrimination contours. A precision matrix is represented by the contour lines of its inverse (the covariance matrix M); these are the points (x, y) at which $M_{xx}x^{2}+2M_{xy}xy+M_{yy}y^{2}=$ constant. A short distance of this contour from the origin thus indicates a large value of M and a small value of the precision matrix. This in turn denotes a direction in which prior knowledge of the image statistic is imprecise.
 
 Figure 3B shows a correspondence between contours of the precision matrix (extracted from natural images) and human isodiscrimination contours. This is shown again here in Figure 3—figure supplement 2A for subject-specific (lower half grid) and subject-averaged (upper half grid) isodiscrimination contours. This correspondence can be made quantitative by computing the angular tilt (Figure 3—figure supplement 2B) and eccentricity (Figure 3—figure supplement 2C) of each ellipse. Across all 36 pairwise coordinate planes, we find a detailed quantitative match between the shape and orientation of precision matrix contours and human isodiscrimination contours.
 
-## Analysis of the full 9-dimensional distribution of image statistics
+### Analysis of the full 9-dimensional distribution of image statistics
 
-## Principal component decomposition
+#### Principal component decomposition
 
 Here, we verify our hypothesis within the full 9-dimensional space of image statistics using an approach that does not single out coordinate axes, either individually or in pairs. Just as the projections of the natural image distribution can be fit by a bivariate Gaussian in each coordinate plane, the entire distribution can be fit by a multivariate Gaussian in the full 9-dimensional space. Similarly, the full set of perceptual isodiscrimination contours can be fit by a single 9-dimensional ellipsoid. Our hypothesis predicts that these two 9-dimensional ellipsoids have the corresponding shape and orientation.
 
-To test this, we compare the principal axes {ξ→NI} of variation in natural scenes with the principal axes {ξ→PP} of human sensitivity inferred from the ellipsoidal isodiscrimination surface (Victor et al., 2013). To aid in this comparison, we first align the two sets of principal axes based on eigenvalue rank and symmetry considerations (discussed below). We then compute the fractional contribution f of sets of coordinates to each principal axis ξ→(i), therein grouping coordinates with similar ranges of variation. Figures 3—figure supplement 3A–D respectively show the fractional contributions f{β|,β−}, f{β\,β/}, f{θ⌞,θ⌜,θ⌝,θ⌟}, and fα to {ξ→NI} (blue bars) vs {ξ→PP} (red bars).
+To test this, we compare the principal axes ${ξ→_{NI}}$ of variation in natural scenes with the principal axes ${ξ→_{PP}}$ of human sensitivity inferred from the ellipsoidal isodiscrimination surface (Victor et al., 2013). To aid in this comparison, we first align the two sets of principal axes based on eigenvalue rank and symmetry considerations (discussed below). We then compute the fractional contribution f of sets of coordinates to each principal axis $ξ→^{(i)}$, therein grouping coordinates with similar ranges of variation. Figures 3—figure supplement 3A–D respectively show the fractional contributions $f_{{\beta_{|},\beta_{−}}}$, $f_{{\beta_{\},\beta_{/}}}$, $f_{{\theta_{⌞},\theta_{⌜},\theta_{⌝},\theta_{⌟}}}$, and $f_{\alpha}$ to ${ξ→_{NI}}$ (blue bars) vs ${ξ→_{PP}}$ (red bars).
 
 We find that the principal axes of variation in natural scenes match the principal axes of human sensitivity. As observed in Figure 3, the correspondence is within the range of variability observed across image analyses and human subjects.
 
-We quantify the overlap between each image analysis and the set of psychophysical analyses by computing the scalar product between each principal component vector f→NI(i) extracted from natural images and the corresponding subject-averaged psychophysical vector f→PP(i), where f→={fβ|−,fβ\/,fθ, fα}. This overlap, averaged across principal components, ranges from 0.991 to 0.996 across image analyses and is consistently larger than the overlap measured under null hypotheses in which patch labels and coordinate labels are independently shuffled (p ≤.0004 for each image analysis under both hypotheses; see Appendix 4 for details).
+We quantify the overlap between each image analysis and the set of psychophysical analyses by computing the scalar product between each principal component vector $f→_{NI}^{(i)}$ extracted from natural images and the corresponding subject-averaged psychophysical vector $f→_{PP}^{(i)}$, where $f→={f_{\beta_{|−}},f_{\beta_{\/}},f_{\theta}$, $f_{\alpha}}$. This overlap, averaged across principal components, ranges from 0.991 to 0.996 across image analyses and is consistently larger than the overlap measured under null hypotheses in which patch labels and coordinate labels are independently shuffled (p ≤.0004 for each image analysis under both hypotheses; see Appendix 4 for details).
 
-## Alignment of principal components
+#### Alignment of principal components
 
 As described in the previous subsection, we use principal component analysis for the multivariate comparison of natural image statistics and perceptual sensitivities. In addition to the standard approach of ordering components by percentage of variance explained within each dataset, followed by comparing components of corresponding rank, we use an additional tool: the symmetries in the definitions of the image statistic coordinates. As detailed below, we use these symmetries to group principal components into symmetry classes, and we then rank-order the components within each class. By matching components based on both symmetry and rank order of explained variance, we avoid ambiguities that would otherwise occur if only explained variance was considered. The four symmetry classes are defined as follows:
 
-1. 4-D subspace in which statistics are invariant under 90° rotations in the plane (here, designated ‘SYM’). This is spanned by:(i) β|=β−, all else 0 ([12,12,0,0,0,0,0,0,0])(ii) β\=β/, all else 0 ([0,0,12,12,0,0,0,0,0])(iii) θ⌜=θ⌝=θ⌟=θ⌞, all else 0 ([0,0,0,0,12,12,12,12,0])(iv) α≠0, all else 0 ([0,0,0,0,0,0,0,0,1])
+1. 4-D subspace in which statistics are invariant under 90° rotations in the plane (here, designated ‘SYM’). This is spanned by:(i) $\beta_{|}=\beta_{−}$, all else 0 $([\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0,0,0,0,0,0])$(ii) $\beta_{\}=\beta_{/}$, all else 0 $([0,0,\frac{1}{\sqrt{2}},\frac{1}{\sqrt{2}},0,0,0,0,0])$(iii) $\theta_{⌜}=\theta_{⌝}=\theta_{⌟}=\theta_{⌞}$, all else 0 $([0,0,0,0,\frac{1}{2},\frac{1}{2},\frac{1}{2},\frac{1}{2},0])$(iv) $\alpha\neq0$, all else 0 ([0,0,0,0,0,0,0,0,1])
 
-2. 2-D subspace in which coordinate values are negated after a horizontal or vertical mirror (here, designated ‘HVI’). This is spanned by:(i) β\=−β/, all else 0 ([0,0,12,−12,0,0,0,0,0])(ii) θ⌜=−θ⌝=θ⌟=−θ⌞, all else 0 ([0,0,0,0,12,−12,12,−12,0])
+2. 2-D subspace in which coordinate values are negated after a horizontal or vertical mirror (here, designated ‘HVI’). This is spanned by:(i) $\beta_{\}=−\beta_{/}$, all else 0 $([0,0,\frac{1}{\sqrt{2}},−\frac{1}{\sqrt{2}},0,0,0,0,0])$(ii) $\theta_{⌜}=−\theta_{⌝}=\theta_{⌟}=−\theta_{⌞}$, all else 0 $([0,0,0,0,\frac{1}{2},−\frac{1}{2},\frac{1}{2},−\frac{1}{2},0])$
 
-3. 2-D subspace spanned by two vectors v1 and v2 for which a 90° rotation transforms v1 to v2 and v2 to −v1 (here, designated ‘ROT’). This is spanned by:(i) θ⌜=−θ⌟, all else 0 ([0,0,0,0,12,0,−12,0,0])(ii) θ⌝=−θ⌞, all else 0 ([0,0,0,0,0,12,0,−12,0])
+3. 2-D subspace spanned by two vectors $v_{1}$ and $v_{2}$ for which a 90° rotation transforms $v_{1}$ to $v_{2}$ and $v_{2}$ to $−v_{1}$ (here, designated ‘ROT’). This is spanned by:(i) $\theta_{⌜}=−\theta_{⌟}$, all else 0 $([0,0,0,0,\frac{1}{\sqrt{2}},0,−\frac{1}{\sqrt{2}},0,0])$(ii) $\theta_{⌝}=−\theta_{⌞}$, all else 0 $([0,0,0,0,0,\frac{1}{\sqrt{2}},0,−\frac{1}{\sqrt{2}},0])$
 
-4. 1-D subspace in which a diagonal mirror negates coordinates (here, designated “DII”). This is spanned by:(i) β|=−β−, all else 0 ([12,−12,0,0,0,0,0,0,0])
+4. 1-D subspace in which a diagonal mirror negates coordinates (here, designated “DII”). This is spanned by:(i) $\beta_{|}=−\beta_{−}$, all else 0 $([\frac{1}{\sqrt{2}},−\frac{1}{\sqrt{2}},0,0,0,0,0,0,0])$
 
-We compute the normalized principal axes {ξ→NI} of variability in natural image statistics and principal axes {ξ→PP} of human perceptual sensitivity. We then assign each set of components to the above symmetry classes by maximizing the total overlap between {ξ→} and the above classes. This is accomplished by computing the size of the projection of each individual component ξ→(i) into each of the above subspaces, and then assigning the component into the subspace that contains the largest projection. In one case where two components with nearly degenerate eigenvalues could not clearly be assigned to symmetry classes (analysis N = 20, R = 32 in the PIDB, shown in Figure 3—figure supplement 8A–D below), we force symmetry by performing a 45° rotation in the plane spanned by the degenerate components.
+We compute the normalized principal axes ${ξ→_{NI}}$ of variability in natural image statistics and principal axes ${ξ→_{PP}}$ of human perceptual sensitivity. We then assign each set of components to the above symmetry classes by maximizing the total overlap between ${ξ→}$ and the above classes. This is accomplished by computing the size of the projection of each individual component $ξ→^{(i)}$ into each of the above subspaces, and then assigning the component into the subspace that contains the largest projection. In one case where two components with nearly degenerate eigenvalues could not clearly be assigned to symmetry classes (analysis N = 20, R = 32 in the PIDB, shown in Figure 3—figure supplement 8A–D below), we force symmetry by performing a 45° rotation in the plane spanned by the degenerate components.
 
 Once all components have been assigned to symmetry classes, we rank-order components within each class. This resulted in unambiguous pairing between natural image dataset and psychophysics in all but one pair of components in three image analyses (out of a total of 9 components for each of 31 separate image analyses). In those analyses (image analyses N = 2, R = 48, 64, 128 in the van Hateren database), there were two nearly-degenerate SYM components in the image dataset; we paired these components with the psychophysics data by maximizing their overlap.
 
-To compare between natural image and psychophysics analyses, we compute the fractional contribution f→(i)=[fβ|−(i),fβ\/(i),fθ(i),fα(i)] of sets of coordinates to each principal component, where the components of f→(i) are given by:(0.3)fβ|−(i)=(ξβ|(i))2+(ξβ−(i))2(0.4)fβ\/(i)=(ξβ\(i))2+(ξβ/(i))2(0.5)fθ(i)=(ξθ⌜(i))2+(ξθ⌝(i))2+(ξθ⌟(i))2+(ξθ⌞(i))2(0.6)fα(i)=(ξα(i))2and fβ|−(i)+fβ\/(i)+fθ(i)+fα(i)=1 for each normalized component ξ→(i).
+To compare between natural image and psychophysics analyses, we compute the fractional contribution $f→^{(i)}=[f_{\beta_{|−}}^{(i)},f_{\beta_{\/}}^{(i)},f_{\theta}^{(i)},f_{\alpha}^{(i)}]$ of sets of coordinates to each principal component, where the components of $f→^{(i)}$ are given by:
 
-The principal components shown in Figure 3—figure supplement 3 are rank-ordered within each symmetry class, where the four classes were ordered as follows: SYM (ξ→(1)−ξ→(4)), HVI (ξ→(5), ξ→(6)), ROT (ξ→(7), ξ→(8)), DII (ξ→(9)). Note that while the comparisons between psychophysics and natural images are based on the squares of the principal components coordinates (equations 0.3–0.6) and is insensitive to their signs, the classification of principal components by symmetry classes guarantees that we are only comparing psychophysical and natural-image components for which the signs within each coordinate set ({β|,β−}, {β\,β/}, and {θ⌜,θ⌝,θ⌟,θ⌞}) covary in the same fashion.
+$$
+f_{\beta_{|−}}^{(i)}=(ξ_{\beta_{|}}^{(i)})^{2}+(ξ_{\beta_{−}}^{(i)})^{2}
+$$
 
-## Permutation tests
 
-Our results, shown in Figure 3 for single coordinates and pairwise coordinate planes, and extended to the full 9-dimensional distribution in Figure 3—figure supplement 3, show a consistent match between the variation in natural image statistics and psychophysical sensitivities. We quantify this match by first assigning vectors to the quantities shown in Figure 3 and Figure 3—figure supplement 3, and then computing the overlap between natural image vectors and the corresponding psychophysical vectors. We consider the following vector quantities:Single coordinates: We describe the range of variation in natural image statistics by the normalized 9-component vector of standard deviations σ→NI/||σ→NI||, where ||v→|| denotes the L2 norm 1N∑​i=1Nvi2 of a vector v→. Similarly, we describe the set of perceptual sensitivities by the normalized vector s→PP/||s→PP||. In both cases, the vector components are measured with respect to the coordinates {β|,β−,β\,β/,θ⌜,θ⌝,θ⌟,θ⌞,α}.Pairwise coordinate planes: We describe each ellipse by the unit vector ω→ that is a combined measure of eccentricity (∈) and tilt (δ). We define ω→ on one quarter of the unit sphere: ω→=sin α cos δ x^+sin α sin δ y^+cos α z^, where ϵ=sin α and cos δ are defined on the interval [0,1] (the second follows from the 180° rotational symmetry of ellipses). Note that this definition of ω→ captures the ellipse property that when ϵ=sin α=0 (circular ellipses), δ is not defined. See Figure 3—figure supplement 4 for a schematic of this representation.Principal components: We consider two related measures for describing principal components. As shown in Figure 3—figure supplement 3, we describe each principal component {ξ→(i)} by the normalized vector f→(i)/||f→(i)||, which measures the fractional contribution of sets of statistics to the principal components ξ→(i). For a more detailed comparison, we can similarly describe each principal component by the normalized vector F→(i)/||F→(i)||, where F→(i)=[fβ|(i),fβ−(i),fβ\(i),fβ/(i),fθ⌜(i),fθ⌝(i),fθ⌟(i),fθ⌞(i),fα(i)]. This measures the fractional contribution of individual statistics (rather than sets of statistics) to the principal components ξ→(i).
 
-For each vector quantity (σ→, ω→, f→, and F→), we compute the scalar product between a given image analysis vector and the subject-averaged psychophysical vector. We then report the overlap values (scalar products) measured for the six image analyses considered Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). In computing the scalar product between ω→NI and ω→PP, we report the overlap averaged over all 36 pairwise coordinate planes. Similarly, in computing the overlap between f→NI and f→PP and between F→NI and F→PP, we report the overlap averaged over all 9 principal components. Note that, for each vector σ→, ω→, f→, and F→, the maximum overlap is 1.
+$$
+f_{\beta_{\/}}^{(i)}=(ξ_{\beta_{\}}^{(i)})^{2}+(ξ_{\beta_{/}}^{(i)})^{2}
+$$
 
-We find that natural image analyses show consistently high overlap with the set of psychophysical results (see Tables 1–3). The overlap, as measured across image analyses, ranges from 0.988 to 0.999 for single coordinates (σ→), from 0.953 to 0.977 for pairwise coordinate planes (ω→), from 0.987 to 0.993 for fractional principal axes (f→), and from 0.829 to 0.917 for the full principal axes (F→). We test the significance of this overlap by comparing our results to the following two null models:1A. Shuffled coordinate labels: sets of coordinates. This model (and model 1b) tests the null hypothesis that the apparent correspondence between image statistic covariances and isodiscrimination contours is chance. We examine the 23 permutations of the sets of coordinates {β|−,β\/,θ,α}. We apply these permutations to the psychophysical data, as human subjects are equally sensitive to coordinates within each set ({β|,β−}, {β\,β/} and all θ's). This shuffling creates a new set of subjects whose second-order cardinal, second-order oblique, third-order, and fourth-order coordinate values are randomly permuted (transforming the original vector [β|−,β\/,θ,α] into, example, the shuffled vector [β\/,θ,β|−,α]). If the correspondence between quantities derived from image analysis and psychophysics is statistically significant, we expect that the shuffled vectors σ→, ω→, f→, and F→ will show less overlap with the image analysis vectors than do the original psychophysical vectors (note that the limited number of permutations restricts the minimum p-value to be 0.04).1B. Shuffled coordinate labels: individual coordinates. Here, we expand the test described in 1a to randomly shuffle the full set of coordinate labels {β|,β−,β\, β/,θ⌜,θ⌝,θ⌟,θ⌞,α}. In an analogous manner to that described in 2A, we expect that the shuffled vectors σ→, ω→, f→, and F→ will show less overlap with the image analysis vectors than do the original psychophysical vectors if the correspondence between quantities derived from image analysis and psychophysics is statistically significant.2. Shuffled patch labels. This model tests the null hypothesis that the apparent covariances in image statistics are due to chance. For each coordinate, we randomly shuffle image patch labels. This shuffling creates a new set of null patches whose second-, third-, and fourth-order coordinate values are randomly drawn from a subset of the original image patches (e.g. a given null patch can be described by a β/-value measured from patch m but an α value measured from patch n). This shuffling destroys correlations between coordinate values measured within individual patches. Note that this shuffling does not alter the range of variation measured along single coordinate axes and will therefore not alter the values of precision matrix ellipses measured along coordinate axes. As a result, this test is not applicable to σ→, which measures natural image variation and human sensitivities along individual coordinate axes. However, shuffling will destroy correlations along oblique directions in coordinate planes, thereby aligning each ellipse along a single coordinate axis. Note that the eccentricity of each ellipse (in, e.g., the A-B plane) is then trivially related to the ratio of variances σ2 measured along the corresponding coordinate axes: ϵ=1−σA2/σB2. We therefore expect that this shuffling will most strongly affect the tilt and eccentricity in pairwise planes in which ellipses are oriented along oblique directions (β|β−, β\β/, and θθ planes). Finally, in destroying correlations between pairs of coordinates, this shuffling creates a diagonal covariance matrix, such that principal components are aligned with single coordinate axes. If the correspondence between quantities derived from image analysis and psychophysics is statistically significant, we expect that the shuffled vectors ω→, f→, and F→ will show less overlap with the psychophysical vectors than do the original image analysis vectors.
+
+
+$$
+f_{\theta}^{(i)}=(ξ_{\theta_{⌜}}^{(i)})^{2}+(ξ_{\theta_{⌝}}^{(i)})^{2}+(ξ_{\theta_{⌟}}^{(i)})^{2}+(ξ_{\theta_{⌞}}^{(i)})^{2}
+$$
+
+
+
+$$
+f_{\alpha}^{(i)}=(ξ_{\alpha}^{(i)})^{2}
+$$
+
+and $f_{\beta_{|−}}^{(i)}+f_{\beta_{\/}}^{(i)}+f_{\theta}^{(i)}+f_{\alpha}^{(i)}=1$ for each normalized component $ξ→^{(i)}$.
+
+The principal components shown in Figure 3—figure supplement 3 are rank-ordered within each symmetry class, where the four classes were ordered as follows: SYM ($ξ→^{(1)}−ξ→^{(4)}$), HVI ($ξ→^{(5)}$, $ξ→^{(6)}$), ROT ($ξ→^{(7)}$, $ξ→^{(8)}$), DII ($ξ→^{(9)}$). Note that while the comparisons between psychophysics and natural images are based on the squares of the principal components coordinates (equations 0.3–0.6) and is insensitive to their signs, the classification of principal components by symmetry classes guarantees that we are only comparing psychophysical and natural-image components for which the signs within each coordinate set (${\beta_{|},\beta_{−}}$, ${\beta_{\},\beta_{/}}$, and ${\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞}}$) covary in the same fashion.
+
+### Permutation tests
+
+Our results, shown in Figure 3 for single coordinates and pairwise coordinate planes, and extended to the full 9-dimensional distribution in Figure 3—figure supplement 3, show a consistent match between the variation in natural image statistics and psychophysical sensitivities. We quantify this match by first assigning vectors to the quantities shown in Figure 3 and Figure 3—figure supplement 3, and then computing the overlap between natural image vectors and the corresponding psychophysical vectors. We consider the following vector quantities:Single coordinates: We describe the range of variation in natural image statistics by the normalized 9-component vector of standard deviations $\sigma→_{NI}/||\sigma→_{NI}||$, where $||v→||$ denotes the L2 norm $\frac{1}{N}\sum^{​}_{i=1}^{N}v_{i}^{2}$ of a vector $v→$. Similarly, we describe the set of perceptual sensitivities by the normalized vector $s→_{PP}/||s→_{PP}||$. In both cases, the vector components are measured with respect to the coordinates ${\beta_{|},\beta_{−},\beta_{\},\beta_{/},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$.Pairwise coordinate planes: We describe each ellipse by the unit vector $\omega→$ that is a combined measure of eccentricity (∈) and tilt (δ). We define $\omega→$ on one quarter of the unit sphere: $\omega→=sin \alpha cos \delta x^+sin \alpha sin \delta y^+cos \alpha z^$, where $ϵ=sin \alpha$ and $cos \delta$ are defined on the interval [0,1] (the second follows from the 180° rotational symmetry of ellipses). Note that this definition of $\omega→$ captures the ellipse property that when $ϵ=sin \alpha=0$ (circular ellipses), δ is not defined. See Figure 3—figure supplement 4 for a schematic of this representation.Principal components: We consider two related measures for describing principal components. As shown in Figure 3—figure supplement 3, we describe each principal component ${ξ→^{(i)}}$ by the normalized vector $f→^{(i)}/||f→^{(i)}||$, which measures the fractional contribution of sets of statistics to the principal components $ξ→^{(i)}$. For a more detailed comparison, we can similarly describe each principal component by the normalized vector $F→^{(i)}/||F→^{(i)}||$, where $F→^{(i)}=[f_{\beta_{|}}^{(i)},f_{\beta_{−}}^{(i)},f_{\beta_{\}}^{(i)},f_{\beta_{/}}^{(i)},f_{\theta_{⌜}}^{(i)},f_{\theta_{⌝}}^{(i)},f_{\theta_{⌟}}^{(i)},f_{\theta_{⌞}}^{(i)},f_{\alpha}^{(i)}]$. This measures the fractional contribution of individual statistics (rather than sets of statistics) to the principal components $ξ→^{(i)}$.
+
+For each vector quantity ($\sigma→$, $\omega→$, $f→$, and $F→$), we compute the scalar product between a given image analysis vector and the subject-averaged psychophysical vector. We then report the overlap values (scalar products) measured for the six image analyses considered Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). In computing the scalar product between $\omega→_{NI}$ and $\omega→_{PP}$, we report the overlap averaged over all 36 pairwise coordinate planes. Similarly, in computing the overlap between $f→_{NI}$ and $f→_{PP}$ and between $F→_{NI}$ and $F→_{PP}$, we report the overlap averaged over all 9 principal components. Note that, for each vector $\sigma→$, $\omega→$, $f→$, and $F→$, the maximum overlap is 1.
+
+We find that natural image analyses show consistently high overlap with the set of psychophysical results (see Tables 1–3). The overlap, as measured across image analyses, ranges from 0.988 to 0.999 for single coordinates ($\sigma→$), from 0.953 to 0.977 for pairwise coordinate planes ($\omega→$), from 0.987 to 0.993 for fractional principal axes ($f→$), and from 0.829 to 0.917 for the full principal axes ($F→$). We test the significance of this overlap by comparing our results to the following two null models:1A. Shuffled coordinate labels: sets of coordinates. This model (and model 1b) tests the null hypothesis that the apparent correspondence between image statistic covariances and isodiscrimination contours is chance. We examine the 23 permutations of the sets of coordinates ${\beta_{|−},\beta_{\/},\theta,\alpha}$. We apply these permutations to the psychophysical data, as human subjects are equally sensitive to coordinates within each set (${\beta_{|},\beta_{−}}$, ${\beta_{\},\beta_{/}}$ and all θ's). This shuffling creates a new set of subjects whose second-order cardinal, second-order oblique, third-order, and fourth-order coordinate values are randomly permuted (transforming the original vector $[\beta_{|−},\beta_{\/},\theta,\alpha]$ into, example, the shuffled vector $[\beta_{\/},\theta,\beta_{|−},\alpha]$). If the correspondence between quantities derived from image analysis and psychophysics is statistically significant, we expect that the shuffled vectors $\sigma→$, $\omega→$, $f→$, and $F→$ will show less overlap with the image analysis vectors than do the original psychophysical vectors (note that the limited number of permutations restricts the minimum p-value to be 0.04).1B. Shuffled coordinate labels: individual coordinates. Here, we expand the test described in 1a to randomly shuffle the full set of coordinate labels ${\beta_{|},\beta_{−},\beta_{\},$ $\beta_{/},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$. In an analogous manner to that described in 2A, we expect that the shuffled vectors $\sigma→$, $\omega→$, $f→$, and $F→$ will show less overlap with the image analysis vectors than do the original psychophysical vectors if the correspondence between quantities derived from image analysis and psychophysics is statistically significant.2. Shuffled patch labels. This model tests the null hypothesis that the apparent covariances in image statistics are due to chance. For each coordinate, we randomly shuffle image patch labels. This shuffling creates a new set of null patches whose second-, third-, and fourth-order coordinate values are randomly drawn from a subset of the original image patches (e.g. a given null patch can be described by a $\beta_{/}$-value measured from patch m but an α value measured from patch n). This shuffling destroys correlations between coordinate values measured within individual patches. Note that this shuffling does not alter the range of variation measured along single coordinate axes and will therefore not alter the values of precision matrix ellipses measured along coordinate axes. As a result, this test is not applicable to $\sigma→$, which measures natural image variation and human sensitivities along individual coordinate axes. However, shuffling will destroy correlations along oblique directions in coordinate planes, thereby aligning each ellipse along a single coordinate axis. Note that the eccentricity of each ellipse (in, e.g., the A-B plane) is then trivially related to the ratio of variances $\sigma^{2}$ measured along the corresponding coordinate axes: $ϵ=\sqrt{1−\sigma_{A}^{2}/\sigma_{B}^{2}}$. We therefore expect that this shuffling will most strongly affect the tilt and eccentricity in pairwise planes in which ellipses are oriented along oblique directions ($\beta_{|}\beta_{−}$, $\beta_{\}\beta_{/}$, and $\theta\theta$ planes). Finally, in destroying correlations between pairs of coordinates, this shuffling creates a diagonal covariance matrix, such that principal components are aligned with single coordinate axes. If the correspondence between quantities derived from image analysis and psychophysics is statistically significant, we expect that the shuffled vectors $\omega→$, $f→$, and $F→$ will show less overlap with the psychophysical vectors than do the original image analysis vectors.
 
 Each null model is constructed by randomly selecting permuted indices that independently shuffle coordinate labels for subject-averaged psychophysical data (Null Model 1) and independently shuffle image patch labels for a given statistic (Null Model 2). For null model 1a, we perform the full set of 23 non-identity permutations. For models 1B and 2, we perform 10,000 permutations.
 
-For each permutation, we compute a set of shuffled vectors {σ→,ω→,f→,F→}, and we measure the overlap (defined as the scalar product (*)→NI⋅(*)→PP) between each shuffled vector and the corresponding subject-averaged psychophysical vector. Note that, when assigning shuffled principal components to symmetry classes, no hand-tuning was performed. However, as described previously, such hand-tuning was only applied to a very small fraction of components for select image analyses.
+For each permutation, we compute a set of shuffled vectors ${\sigma→,\omega→,f→,F→}$, and we measure the overlap (defined as the scalar product $(*)→_{NI}⋅(*)→_{PP}$) between each shuffled vector and the corresponding subject-averaged psychophysical vector. Note that, when assigning shuffled principal components to symmetry classes, no hand-tuning was performed. However, as described previously, such hand-tuning was only applied to a very small fraction of components for select image analyses.
 
 When repeated for many permutations, this procedure yields a distribution of shuffled overlap values against which we measure the significance of the true (observed) overlap. Significance values (p-values) are estimated by computing the fraction of permutations for which the shuffled overlap exceeds the true overlap.
 
-We find that the original image analyses show significantly higher overlap with psychophysical data than do the analyses produced by either of the null models. Results are significant for each measure of overlap and for each of the six analyses presented in Figures 1 and 3 (p <0.0005, or as small as possible given the number of possible permutations, in all cases); see Tables 1–3 for full results.10.7554/eLife.03722.023Table 1.Permutation tests for null model 1a: shuffled coordinate labelsDOI: http://dx.doi.org/10.7554/eLife.03722.023Measures of overlapImage analysisObserved overlapShuffled overlap ValuesSignificanceMeanstdminmaxRange/Sensitivity σ→NI⋅s→PPN = 2R = 320.9990.8590.9 × 10−10.7040.983<0.04R = 480.9930.8321.1 × 10−10.6510.978<0.04R = 640.9870.8091.1 × 10−10.6140.974<0.04N = 4R = 320.9980.8251.1 × 10−10.6380.969<0.04R = 480.9940.8121.1 × 10−10.6460.990<0.04R = 640.9910.7941.1 × 10−10.6170.985<0.04Inverse Range/Threshold 〈ω→NI⋅ω→PP〉N = 2R = 320.9710.7091.5 × 10−10.5080.924<0.04R = 480.9690.6921.6 × 10−10.4690.924<0.04R = 640.9530.6851.7 × 10−10.4500.913<0.04N = 4R = 320.9670.6791.7 × 10−10.4470.908<0.04R = 480.9750.6321.5 × 10−10.4000.880<0.04R = 640.9770.6481.6 × 10−10.4110.894<0.04Fractional Principal Components f→NI⋅f→PPN = 2R = 320.9940.3821.5 × 10−10.1600.657<0.04R = 480.9950.4851.2 × 10−10.2870.727<0.04R = 640.9910.4870.7 × 10−10.3720.632<0.04N = 4R = 320.9950.4591.4 × 10−10.2380.732<0.04R = 480.9960.4441.0 × 10−10.2770.601<0.04R = 640.9960.4501.1 × 10−10.2790.614<0.04Full Principal Components 〈F→NI⋅F→PP〉N = 2R = 320.9170.3161.3 × 10−10.1230.578<0.04R = 480.8280.4011.0 × 10−10.2280.611<0.04R = 640.9110.3630.7 × 10−10.2820.532<0.04N = 4R = 320.8820.3761.2 × 10−10.1800.618<0.04R = 480.9170.3621.0 × 10−10.2010.520<0.04R = 640.9190.3571.0 × 10−10.1960.522<0.04We separately permute the sets of coordinate labels {β|−,β\/,θ,α}. We apply these permutations to the psychophysical data, therein examining all 23 non-identity permutations of the four labels. This shuffling significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.04 (the minimum value given 23 permutations) for each image analysis.10.7554/eLife.03722.024Table 2.Permutation Tests for null model 1b: shuffled coordinate labelsDOI: http://dx.doi.org/10.7554/eLife.03722.024Measures of overlapImage analysisObserved overlapShuffled overlap ValuesSignificanceMeanstdminmaxRange/Sensitivity σ→NI⋅s→PPN = 2R = 320.9990.8066.8 × 10−20.6590.9990.0003R = 480.9930.7757.7 × 10−20.6100.993<0.0001R = 640.9870.7628.0 × 10−20.5790.987<0.0001N = 4R = 320.9980.8286.0 × 10−20.7070.998<0.0001R = 480.9940.7987.1 × 10−20.6600.9940.0002R = 640.9910.7807.6 × 10−20.6300.991<0.0001Inverse Range/Threshold 〈ω→NI⋅ω→PP〉N = 2R = 320.9710.6938.1 × 10−20.4990.9720.0002R = 480.9690.6828.4 × 10−20.4760.9690.0003R = 640.9530.6718.5 × 10−20.4460.9540.0002N = 4R = 320.9670.6967.6 × 10−20.5210.964<0.0001R = 480.9750.6928.0 × 10−20.5090.9760.0002R = 640.9770.6898.2 × 10−20.4930.9780.0003Fractional Principal Components 〈f→NI⋅f→PP〉N = 2R = 320.9940.5921.2 × 10−10.2710.9950.0003R = 480.9950.6041.3 × 10−10.2810.9950.0004R = 640.9910.5911.2 × 10−10.2780.9910.0003N = 4R = 320.9950.5901.2 × 10−10.2180.9950.0001R = 480.9960.5771.2 × 10−10.2510.9960.0002R = 640.9960.5811.2 × 10−10.2660.9960.0004Full Principal Components 〈F→NI⋅F→PP〉N = 2R = 320.9170.3911.2 × 10−10.1000.9270.0002R = 480.8280.3911.2 × 10−10.0860.8560.0008R = 640.9110.3961.2 × 10−10.1200.9530.0003N = 4R = 320.8820.3811.2 × 10−10.0660.9890.0003R = 480.9170.3801.2 × 10−10.0900.902<0.0001R = 640.9190.3871.2 × 10−10.0950.9370.0004We separately permute all nine coordinate labels {β|,β−,β\, β/,θ⌜,θ⌝,θ⌟,θ⌞,α}. This shuffling, applied to the psychophysical data, significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.0005 for all image analyses.10.7554/eLife.03722.025Table 3.Permutation tests for null model 2: shuffled patch labelsDOI: http://dx.doi.org/10.7554/eLife.03722.025ComparisonsImage analysisObserved overlapShuffled overlap ValuesSignificanceMeanstdminmaxInverse Range/Threshold 〈ω→NI⋅ω→PP〉N = 2R = 320.9710.9240.70 × 10−30.9210.926<0.0001R = 480.9690.9211.1 × 10−30.9170.925<0.0001R = 640.9530.9121.3 × 10−30.9080.917<0.0001N = 4R = 320.9670.9191.7 × 10−30.9140.926<0.0001R = 480.9750.9221.9 × 10−30.9160.930<0.0001R = 640.9770.9242.8 × 10−30.9160.935<0.0001Fractional Principal Components 〈f→NI⋅f→PP〉N = 2R = 320.9940.8069.1 × 10−60.8060.806<0.0001R = 480.9950.8068.3 × 10−60.8060.806<0.0001R = 640.9910.8063.7 × 10−60.8060.806<0.0001N = 4R = 320.9950.8072.5 × 10−40.8060.809<0.0001R = 480.9960.8074.1 × 10−40.8060.810<0.0001R = 640.9960.8073.5 × 10−40.8060.810<0.0001Full Principal Components 〈F→NI⋅F→PP〉N = 2R = 320.9170.4485.8 × 10−20.4060.596<0.0001R = 480.8280.5025.9 × 10−20.4080.675<0.0001R = 640.9110.4584.8 × 10−20.4070.591<0.0001N = 4R = 320.8810.4894.9 × 10−20.4090.638<0.0001R = 480.9170.4543.0 × 10−20.4080.637<0.0001R = 640.9190.4924.2 × 10−20.4110.648<0.0001Within each image analyses, we separately permute image patch labels along individual coordinate axes. This shuffling does not alter the range of variation observed along individual coordinates; as a result, this test only applies to ω→ ,f→ and F→. We find that this shuffling significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.0001 for each image analysis.
+We find that the original image analyses show significantly higher overlap with psychophysical data than do the analyses produced by either of the null models. Results are significant for each measure of overlap and for each of the six analyses presented in Figures 1 and 3 (p <0.0005, or as small as possible given the number of possible permutations, in all cases); see Tables 1–3 for full results.
 
-## Analysis variants for Penn Natural Image Database
+**Table 1.**
+ Permutation tests for null model 1a: shuffled coordinate labels
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measures of overlap</th>
+      <th rowspan="2" colspan="2">Image analysis</th>
+      <th rowspan="2">Observed overlap</th>
+      <th colspan="4">Shuffled overlap Values</th>
+      <th rowspan="2">Significance</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Range/Sensitivity σ→NI⋅s→PP</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.999</td>
+      <td>0.859</td>
+      <td>0.9 × 10−1</td>
+      <td>0.704</td>
+      <td>0.983</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.993</td>
+      <td>0.832</td>
+      <td>1.1 × 10−1</td>
+      <td>0.651</td>
+      <td>0.978</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.987</td>
+      <td>0.809</td>
+      <td>1.1 × 10−1</td>
+      <td>0.614</td>
+      <td>0.974</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.998</td>
+      <td>0.825</td>
+      <td>1.1 × 10−1</td>
+      <td>0.638</td>
+      <td>0.969</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.994</td>
+      <td>0.812</td>
+      <td>1.1 × 10−1</td>
+      <td>0.646</td>
+      <td>0.990</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.991</td>
+      <td>0.794</td>
+      <td>1.1 × 10−1</td>
+      <td>0.617</td>
+      <td>0.985</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Inverse Range/Threshold 〈ω→NI⋅ω→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.971</td>
+      <td>0.709</td>
+      <td>1.5 × 10−1</td>
+      <td>0.508</td>
+      <td>0.924</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.969</td>
+      <td>0.692</td>
+      <td>1.6 × 10−1</td>
+      <td>0.469</td>
+      <td>0.924</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.953</td>
+      <td>0.685</td>
+      <td>1.7 × 10−1</td>
+      <td>0.450</td>
+      <td>0.913</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.967</td>
+      <td>0.679</td>
+      <td>1.7 × 10−1</td>
+      <td>0.447</td>
+      <td>0.908</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.975</td>
+      <td>0.632</td>
+      <td>1.5 × 10−1</td>
+      <td>0.400</td>
+      <td>0.880</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.977</td>
+      <td>0.648</td>
+      <td>1.6 × 10−1</td>
+      <td>0.411</td>
+      <td>0.894</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Fractional Principal Components f→NI⋅f→PP</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.994</td>
+      <td>0.382</td>
+      <td>1.5 × 10−1</td>
+      <td>0.160</td>
+      <td>0.657</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.995</td>
+      <td>0.485</td>
+      <td>1.2 × 10−1</td>
+      <td>0.287</td>
+      <td>0.727</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.991</td>
+      <td>0.487</td>
+      <td>0.7 × 10−1</td>
+      <td>0.372</td>
+      <td>0.632</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.995</td>
+      <td>0.459</td>
+      <td>1.4 × 10−1</td>
+      <td>0.238</td>
+      <td>0.732</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.996</td>
+      <td>0.444</td>
+      <td>1.0 × 10−1</td>
+      <td>0.277</td>
+      <td>0.601</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.996</td>
+      <td>0.450</td>
+      <td>1.1 × 10−1</td>
+      <td>0.279</td>
+      <td>0.614</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Full Principal Components 〈F→NI⋅F→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.917</td>
+      <td>0.316</td>
+      <td>1.3 × 10−1</td>
+      <td>0.123</td>
+      <td>0.578</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.828</td>
+      <td>0.401</td>
+      <td>1.0 × 10−1</td>
+      <td>0.228</td>
+      <td>0.611</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.911</td>
+      <td>0.363</td>
+      <td>0.7 × 10−1</td>
+      <td>0.282</td>
+      <td>0.532</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.882</td>
+      <td>0.376</td>
+      <td>1.2 × 10−1</td>
+      <td>0.180</td>
+      <td>0.618</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.917</td>
+      <td>0.362</td>
+      <td>1.0 × 10−1</td>
+      <td>0.201</td>
+      <td>0.520</td>
+      <td>&lt;0.04</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.919</td>
+      <td>0.357</td>
+      <td>1.0 × 10−1</td>
+      <td>0.196</td>
+      <td>0.522</td>
+      <td>&lt;0.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_We separately permute the sets of coordinate labels {β|−,β\/,θ,α}. We apply these permutations to the psychophysical data, therein examining all 23 non-identity permutations of the four labels. This shuffling significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.04 (the minimum value given 23 permutations) for each image analysis._
+
+**Table 2.**
+ Permutation Tests for null model 1b: shuffled coordinate labels
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Measures of overlap</th>
+      <th rowspan="2" colspan="2">Image analysis</th>
+      <th rowspan="2">Observed overlap</th>
+      <th colspan="4">Shuffled overlap Values</th>
+      <th rowspan="2">Significance</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Range/Sensitivity σ→NI⋅s→PP</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.999</td>
+      <td>0.806</td>
+      <td>6.8 × 10−2</td>
+      <td>0.659</td>
+      <td>0.999</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.993</td>
+      <td>0.775</td>
+      <td>7.7 × 10−2</td>
+      <td>0.610</td>
+      <td>0.993</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.987</td>
+      <td>0.762</td>
+      <td>8.0 × 10−2</td>
+      <td>0.579</td>
+      <td>0.987</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.998</td>
+      <td>0.828</td>
+      <td>6.0 × 10−2</td>
+      <td>0.707</td>
+      <td>0.998</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.994</td>
+      <td>0.798</td>
+      <td>7.1 × 10−2</td>
+      <td>0.660</td>
+      <td>0.994</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.991</td>
+      <td>0.780</td>
+      <td>7.6 × 10−2</td>
+      <td>0.630</td>
+      <td>0.991</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Inverse Range/Threshold 〈ω→NI⋅ω→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.971</td>
+      <td>0.693</td>
+      <td>8.1 × 10−2</td>
+      <td>0.499</td>
+      <td>0.972</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.969</td>
+      <td>0.682</td>
+      <td>8.4 × 10−2</td>
+      <td>0.476</td>
+      <td>0.969</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.953</td>
+      <td>0.671</td>
+      <td>8.5 × 10−2</td>
+      <td>0.446</td>
+      <td>0.954</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.967</td>
+      <td>0.696</td>
+      <td>7.6 × 10−2</td>
+      <td>0.521</td>
+      <td>0.964</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.975</td>
+      <td>0.692</td>
+      <td>8.0 × 10−2</td>
+      <td>0.509</td>
+      <td>0.976</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.977</td>
+      <td>0.689</td>
+      <td>8.2 × 10−2</td>
+      <td>0.493</td>
+      <td>0.978</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Fractional Principal Components 〈f→NI⋅f→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.994</td>
+      <td>0.592</td>
+      <td>1.2 × 10−1</td>
+      <td>0.271</td>
+      <td>0.995</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.995</td>
+      <td>0.604</td>
+      <td>1.3 × 10−1</td>
+      <td>0.281</td>
+      <td>0.995</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.991</td>
+      <td>0.591</td>
+      <td>1.2 × 10−1</td>
+      <td>0.278</td>
+      <td>0.991</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.995</td>
+      <td>0.590</td>
+      <td>1.2 × 10−1</td>
+      <td>0.218</td>
+      <td>0.995</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.996</td>
+      <td>0.577</td>
+      <td>1.2 × 10−1</td>
+      <td>0.251</td>
+      <td>0.996</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.996</td>
+      <td>0.581</td>
+      <td>1.2 × 10−1</td>
+      <td>0.266</td>
+      <td>0.996</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Full Principal Components 〈F→NI⋅F→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.917</td>
+      <td>0.391</td>
+      <td>1.2 × 10−1</td>
+      <td>0.100</td>
+      <td>0.927</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.828</td>
+      <td>0.391</td>
+      <td>1.2 × 10−1</td>
+      <td>0.086</td>
+      <td>0.856</td>
+      <td>0.0008</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.911</td>
+      <td>0.396</td>
+      <td>1.2 × 10−1</td>
+      <td>0.120</td>
+      <td>0.953</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.882</td>
+      <td>0.381</td>
+      <td>1.2 × 10−1</td>
+      <td>0.066</td>
+      <td>0.989</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.917</td>
+      <td>0.380</td>
+      <td>1.2 × 10−1</td>
+      <td>0.090</td>
+      <td>0.902</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.919</td>
+      <td>0.387</td>
+      <td>1.2 × 10−1</td>
+      <td>0.095</td>
+      <td>0.937</td>
+      <td>0.0004</td>
+    </tr>
+  </tbody>
+</table>
+
+_We separately permute all nine coordinate labels {β|,β−,β\, β/,θ⌜,θ⌝,θ⌟,θ⌞,α}. This shuffling, applied to the psychophysical data, significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.0005 for all image analyses._
+
+**Table 3.**
+ Permutation tests for null model 2: shuffled patch labels
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Comparisons</th>
+      <th rowspan="2" colspan="2">Image analysis</th>
+      <th rowspan="2">Observed overlap</th>
+      <th colspan="4">Shuffled overlap Values</th>
+      <th rowspan="2">Significance</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Inverse Range/Threshold 〈ω→NI⋅ω→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.971</td>
+      <td>0.924</td>
+      <td>0.70 × 10−3</td>
+      <td>0.921</td>
+      <td>0.926</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.969</td>
+      <td>0.921</td>
+      <td>1.1 × 10−3</td>
+      <td>0.917</td>
+      <td>0.925</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.953</td>
+      <td>0.912</td>
+      <td>1.3 × 10−3</td>
+      <td>0.908</td>
+      <td>0.917</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.967</td>
+      <td>0.919</td>
+      <td>1.7 × 10−3</td>
+      <td>0.914</td>
+      <td>0.926</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.975</td>
+      <td>0.922</td>
+      <td>1.9 × 10−3</td>
+      <td>0.916</td>
+      <td>0.930</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.977</td>
+      <td>0.924</td>
+      <td>2.8 × 10−3</td>
+      <td>0.916</td>
+      <td>0.935</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Fractional Principal Components 〈f→NI⋅f→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.994</td>
+      <td>0.806</td>
+      <td>9.1 × 10−6</td>
+      <td>0.806</td>
+      <td>0.806</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.995</td>
+      <td>0.806</td>
+      <td>8.3 × 10−6</td>
+      <td>0.806</td>
+      <td>0.806</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.991</td>
+      <td>0.806</td>
+      <td>3.7 × 10−6</td>
+      <td>0.806</td>
+      <td>0.806</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.995</td>
+      <td>0.807</td>
+      <td>2.5 × 10−4</td>
+      <td>0.806</td>
+      <td>0.809</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.996</td>
+      <td>0.807</td>
+      <td>4.1 × 10−4</td>
+      <td>0.806</td>
+      <td>0.810</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.996</td>
+      <td>0.807</td>
+      <td>3.5 × 10−4</td>
+      <td>0.806</td>
+      <td>0.810</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Full Principal Components 〈F→NI⋅F→PP〉</td>
+      <td rowspan="3">N = 2</td>
+      <td>R = 32</td>
+      <td>0.917</td>
+      <td>0.448</td>
+      <td>5.8 × 10−2</td>
+      <td>0.406</td>
+      <td>0.596</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.828</td>
+      <td>0.502</td>
+      <td>5.9 × 10−2</td>
+      <td>0.408</td>
+      <td>0.675</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.911</td>
+      <td>0.458</td>
+      <td>4.8 × 10−2</td>
+      <td>0.407</td>
+      <td>0.591</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">N = 4</td>
+      <td>R = 32</td>
+      <td>0.881</td>
+      <td>0.489</td>
+      <td>4.9 × 10−2</td>
+      <td>0.409</td>
+      <td>0.638</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 48</td>
+      <td>0.917</td>
+      <td>0.454</td>
+      <td>3.0 × 10−2</td>
+      <td>0.408</td>
+      <td>0.637</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>R = 64</td>
+      <td>0.919</td>
+      <td>0.492</td>
+      <td>4.2 × 10−2</td>
+      <td>0.411</td>
+      <td>0.648</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+_Within each image analyses, we separately permute image patch labels along individual coordinate axes. This shuffling does not alter the range of variation observed along individual coordinates; as a result, this test only applies to ω→ ,f→ and F→. We find that this shuffling significantly decreases the overlap between image analyses and psychophysical data. Results are significant across all six analyses considered in Figures 1 and 3 (N = 2, 4 and R = 32, 48, 64). p-values, estimated as the fraction of permutations for which the shuffled overlap exceeds the true overlap, are less than 0.0001 for each image analysis._
+
+### Analysis variants for Penn Natural Image Database
 
 In Figures 1 and 3, we reported results using image analyses with varying values of the block-average factor N (N = 2, 4) and patch size R (R = 32, 48, 64). In Figure 1—figure supplement 3, we show that the relative variation in different image statistics (first shown in Figure 1E) is not an artifact of our image analysis pipeline, as the pattern of variation is destroyed if white-noise image patches are instead used. In Figures 3–figure supplement 5-3–figure supplement 8, we show that the comparison between natural image and psychophysical analyses is consistent across a wider range of image preprocessing parameters: N = 2, 4, 8, 12, 16, 20 and R = 32, 48, 64, 80, 128. Note that sampling limitations restrict some combinations of N and R (e.g. for sufficiently large N, we must choose sufficiently small R to have a statistically significant number of image patches).
 
-## Comparison with van Hateren Database
+### Comparison with van Hateren Database
 
 All analyses reported in Results and shown in Figures 1 and 3 were performed on a set of images from the UPenn Natural Image Database (Tkačik et al., 2011). Here, we extend our analyses to a set of 2300 images from the van Hateren image database (van Hateren and van der Schaaf, 1998), using the same set of parameters used to analyze images from the UPenn database, with block-average factors N = 2, 4, 8, 12, 16, 20 and patch sizes R = 32, 48, 64, 80, 128. Note that we are able to perform a larger number of analyses (specific combinations of N and R) than was performed using the Penn database, as we have a larger selection of images and therefore do not face the same sampling limitations. Figures 3—figure supplement 5-3–figure supplement 8 confirm that our results are consistent across image databases.
 
-## Asymmetries in distributions of natural image statistics
+### Asymmetries in distributions of natural image statistics
 
 We find systematic asymmetries in the distributions of natural image statistics when examined beyond their second moments. Figure 3—figure supplement 9 shows the distributions of single coordinates for the image analysis N = 2, R = 32. All distributions are shifted toward positive coordinate values, and there is larger variation in positive vs negative coordinate values. We assess this asymmetry in natural image analyses by computing the ratio of the standard deviations measured along positive vs negative coordinate axes. We similarly assess asymmetry in psychophysical analyses by computing the ratio of human sensitivities to positive vs negative deviations of coordinate values. This comparison is shown in Figure 3—figure supplement 9. The mismatch provides potential clues for the neural mechanisms responsible for processing local image statistics (See Discussion).
 
-## Two regimes of efficient coding
+### Two regimes of efficient coding
 
 In this section, we illustrate how two contrasting regimes emerge from the efficient coding principle: (i) the well-known transmission-limited regime, in which ‘whitening’ is optimal, and (ii) the sampling-limited regime, which is the focus of this paper. To enable exact calculations of optimal behavior, we consider a simplified scenario, in which all signals and noises are Gaussian, and all filters are linear.
 
 We consider a set of channels dedicated to processing independent signals of varying sizes. The channels, which are indexed by k, are abstract and general. For example, each k can represent a different spatial or temporal frequency in the input, as in the traditional analysis of visual coding in the periphery. Here, we take the signal on each channel k to represent a complex image feature, that is the result of a specific local nonlinear transformation applied to the input image.
 
-Figure 4—figure supplement 1 shows the setup of a single channel dedicated to processing the signal sk. Sampling noise, which is assumed to be identical for each channel, is added to this signal; without loss of generality, we can take its value to be unity. Note that for the parametrization of local image statistics used here, sampling noise is in fact identical for each parameter at the origin of the parameter space (see Equations B19-B20 in Victor and Conte, 2012).
+Figure 4—figure supplement 1 shows the setup of a single channel dedicated to processing the signal $s_{k}$. Sampling noise, which is assumed to be identical for each channel, is added to this signal; without loss of generality, we can take its value to be unity. Note that for the parametrization of local image statistics used here, sampling noise is in fact identical for each parameter at the origin of the parameter space (see Equations B19-B20 in Victor and Conte, 2012).
 
-The result is passed through a linear filter Lk, characterized by a gain |Lk|. The output of Lk then has intrinsic channel noise added, and the total dynamic range of all channels is constrained. All channels are assumed to have the same intrinsic noise. Again, without loss of generality, we take this value to be unity (as any scale associated with this noise can be absorbed into an overall multiplier for the filters Lk and the constraint on total dynamic range of the channels).
+The result is passed through a linear filter $L_{k}$, characterized by a gain $|L_{k}|$. The output of $L_{k}$ then has intrinsic channel noise added, and the total dynamic range of all channels is constrained. All channels are assumed to have the same intrinsic noise. Again, without loss of generality, we take this value to be unity (as any scale associated with this noise can be absorbed into an overall multiplier for the filters $L_{k}$ and the constraint on total dynamic range of the channels).
 
-We seek to find the optimal set of gains {|Lk|} that maximize the mutual information ∑kHk between the signals {sk} and the channel input, subject to a constraint Q on total output power. Using a Lagrange multiplier Λ for the constraint, the problems translates into extremizing P=∑kHk+ΛQ by setting ∂P/∂Lk=0.
+We seek to find the optimal set of gains ${|L_{k}|}$ that maximize the mutual information $\sum_{k}H_{k}$ between the signals ${s_{k}}$ and the channel input, subject to a constraint Q on total output power. Using a Lagrange multiplier $Λ$ for the constraint, the problems translates into extremizing $P=\sum_{k}H_{k}+ΛQ$ by setting $\partialP/\partialL_{k}=0$.
 
-The solution can be found in Equation 8 of van Hateren, (1992a), noting the following correspondences between the setup of Figure 4—figure supplement 1 and the scenario considered in that paper. Referring to the notation in (van Hateren, 1992a), the input and channel noises, Np and Nc, respectively correspond here to the sampling and channel noises (both taken to be unity). The prefiltered stimulus power Sp corresponds here to signal variance sk2. The power transfer function pn of the neural filter corresponds here to the filter power |Lk|2. Finally, the negative Lagrange multiplier −λ corresponds here to the positive Lagrange multiplier +Λ. With these correspondences, the optimal filter for channel k has a gain |Lk| given by:(0.7)|Lk|2=−(2+sk2)+sk4+4sk2/Λ2(1+sk2)provided that the above quantity is non-negative, and has a gain of zero otherwise. The range of values of sk for which the above quantity is ≤0 corresponds to signals that are not worthwhile to code, because the signal-to-noise is too small given the constraint on the channel dynamic range. More specifically, the above quantity is positive (and hence |Lk| is nonzero) provided that sk>Λ/(1−Λ). Note that this critical value becomes infinite as Λ approaches one from below, indicating that Λ near one is the transmission-limited regime. Conversely, the critical value of sk approaches zero as Λ approaches zero from above, indicating that this is the sampling-limited regime. We further discuss these regimes below.
+The solution can be found in Equation 8 of van Hateren, (1992a), noting the following correspondences between the setup of Figure 4—figure supplement 1 and the scenario considered in that paper. Referring to the notation in (van Hateren, 1992a), the input and channel noises, Np and Nc, respectively correspond here to the sampling and channel noises (both taken to be unity). The prefiltered stimulus power Sp corresponds here to signal variance $s_{k}^{2}$. The power transfer function pn of the neural filter corresponds here to the filter power $|L_{k}|^{2}$. Finally, the negative Lagrange multiplier $−\lambda$ corresponds here to the positive Lagrange multiplier $+Λ$. With these correspondences, the optimal filter for channel k has a gain $|L_{k}|$ given by:
 
-## Transmission-limited regime
+$$
+|L_{k}|^{2}=\frac{−(2+s_{k}^{2})+\sqrt{s_{k}^{4}+4s_{k}^{2}/Λ}}{2(1+s_{k}^{2})}
+$$
 
-As mentioned, the transmission-limited regime corresponds to the limit of Λ→1 from below. For signals below the critical level of Λ/(1−Λ), the optimal gain is zero, and signals are not encoded. For signals that are large compared to this cutoff, the main limitation is output power. In this regime, the optimal gain is inversely proportional to the signal strength (Figure 4—figure supplement 2A), as the asymptotic behavior of Equation 0.7 in the limit of large signal strength sk is:(0.8)|Lk|2∼1/Λ−11+sk2
+provided that the above quantity is non-negative, and has a gain of zero otherwise. The range of values of $s_{k}$ for which the above quantity is $\leq0$ corresponds to signals that are not worthwhile to code, because the signal-to-noise is too small given the constraint on the channel dynamic range. More specifically, the above quantity is positive (and hence $|L_{k}|$ is nonzero) provided that $s_{k}>\sqrt{Λ/(1−Λ)}$. Note that this critical value becomes infinite as $Λ$ approaches one from below, indicating that $Λ$ near one is the transmission-limited regime. Conversely, the critical value of $s_{k}$ approaches zero as $Λ$ approaches zero from above, indicating that this is the sampling-limited regime. We further discuss these regimes below.
 
-This is the classic ‘whitening’ regime, namely small signals are enhanced so that output power is equalized across channels: |Lk| ∼1/sk for large sk.
+#### Transmission-limited regime
 
-Note that when Λ is close to 1, there is an abrupt transition between signals that are encoded in inverse proportion to their size, and signals that are too small to be encoded at all (Figure 4—figure supplement 2A).
+As mentioned, the transmission-limited regime corresponds to the limit of $Λ→1$ from below. For signals below the critical level of $\sqrt{Λ/(1−Λ)}$, the optimal gain is zero, and signals are not encoded. For signals that are large compared to this cutoff, the main limitation is output power. In this regime, the optimal gain is inversely proportional to the signal strength (Figure 4—figure supplement 2A), as the asymptotic behavior of Equation 0.7 in the limit of large signal strength $s_{k}$ is:
 
-## Sampling-limited regime
+$$
+|L_{k}|^{2}∼\frac{1/Λ−1}{1+s_{k}^{2}}
+$$
 
-When Λ→0 from above, the transition between signals that are not encoded at all, and signals that are encoded in inverse proportion to their size, undergoes a broadening. This results in a regime in which the optimal gain increases with signal strength (Figure 4—figure supplement 2B). This regime covers signals that are only modestly above the critical level of Λ/(1−Λ), that is signals for which sampling noise (rather than output capacity) is the dominant constraint. The extent of this regime increases as the relative importance of the output constraint Λ decreases toward 0.
+This is the classic ‘whitening’ regime, namely small signals are enhanced so that output power is equalized across channels: $|L_{k}| ∼1/s_{k}$ for large $s_{k}$.
 
-We determine the limiting dependence of |Lk| on sk from the asymptotic behavior of Equation 0.7 in the limit of small Λ:(0.9)|Lk|2∼sk1+sk21Λ
+Note that when $Λ$ is close to 1, there is an abrupt transition between signals that are encoded in inverse proportion to their size, and signals that are too small to be encoded at all (Figure 4—figure supplement 2A).
 
-For signals that are small compared to the sampling noise (Λ<sk<1), the optimal filter is proportional to the square root of the signal strength, |Lk| ∼sk1/2Λ−1/4.
+#### Sampling-limited regime
 
-## Correspondence with perceptual sensitivity to local image statistics
+When $Λ→0$ from above, the transition between signals that are not encoded at all, and signals that are encoded in inverse proportion to their size, undergoes a broadening. This results in a regime in which the optimal gain increases with signal strength (Figure 4—figure supplement 2B). This regime covers signals that are only modestly above the critical level of $\sqrt{Λ/(1−Λ)}$, that is signals for which sampling noise (rather than output capacity) is the dominant constraint. The extent of this regime increases as the relative importance of the output constraint $Λ$ decreases toward 0.
 
-We interpret the gain |Lk| as representing the amount of resources devoted to a given signal sk. Since it is a direct measure of signal-to-noise for a unit-size input, it therefore corresponds to perceptual sensitivity.
+We determine the limiting dependence of $|L_{k}|$ on $s_{k}$ from the asymptotic behavior of Equation 0.7 in the limit of small $Λ$:
 
-In the psychophysical experiments here, we measure sensitivity for each of the image statistic coordinates {β|,β−,β/,β\,θ⌜,θ⌝,θ⌟,θ⌞,α}, using a highly artificial set of stimuli. As predicted from the sampling-limited regime, we find that gains |Lk| are larger for the channels in which the natural environment provides larger values of the signal sk.
+$$
+|L_{k}|^{2}∼\frac{s_{k}}{1+s_{k}^{2}}\sqrt{\frac{1}{Λ}}
+$$
+
+For signals that are small compared to the sampling noise ($\sqrt{Λ}<s_{k}<1$), the optimal filter is proportional to the square root of the signal strength, $|L_{k}| ∼s_{k}^{1/2}Λ^{−1/4}$.
+
+### Correspondence with perceptual sensitivity to local image statistics
+
+We interpret the gain $|L_{k}|$ as representing the amount of resources devoted to a given signal $s_{k}$. Since it is a direct measure of signal-to-noise for a unit-size input, it therefore corresponds to perceptual sensitivity.
+
+In the psychophysical experiments here, we measure sensitivity for each of the image statistic coordinates ${\beta_{|},\beta_{−},\beta_{/},\beta_{\},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$, using a highly artificial set of stimuli. As predicted from the sampling-limited regime, we find that gains $|L_{k}|$ are larger for the channels in which the natural environment provides larger values of the signal $s_{k}$.
 
 While this analysis provides a rigorous identification of a regime in which gain increases with signal strength, we caution that it is an asymptotic analysis of a simplified model of feature coding. It therefore stops short of making the quantitative prediction that gain (sensitivity) is proportional to the square root of the signal strength of each image statistic.
 
-On the other hand, the analysis does translate into a quantitative prediction about perceptual axes (i.e., about the orientations of the isodiscrimination contours). As shown in Figure 3 (blue contours), the image statistic coordinates {β|,β−,β/,β\,θ⌜,θ⌝,θ⌟,θ⌞,α} have substantial covariances. A rotation of the coordinates will thus yield a new set of coordinates with zero covariance and independent sampling errors. If these new coordinates are independently coded, then the perceptual axes will share the same axes as the image statistics which is what we find (Figure 3B).
+On the other hand, the analysis does translate into a quantitative prediction about perceptual axes (i.e., about the orientations of the isodiscrimination contours). As shown in Figure 3 (blue contours), the image statistic coordinates ${\beta_{|},\beta_{−},\beta_{/},\beta_{\},\theta_{⌜},\theta_{⌝},\theta_{⌟},\theta_{⌞},\alpha}$ have substantial covariances. A rotation of the coordinates will thus yield a new set of coordinates with zero covariance and independent sampling errors. If these new coordinates are independently coded, then the perceptual axes will share the same axes as the image statistics which is what we find (Figure 3B).
 
-## Numerical optimization in two dimensions
+#### Numerical optimization in two dimensions
 
-Here, we numerically show that in the 2-dimensional case, the axes of the optimal encoder will be aligned with the principal axes of the input statistics. As shown in Figure 4—figure supplement 1, the response r is given by:(0.10)r=L(s+ξ)+η,where ξ is the sampling noise, η is the intrinsic channel noise, and s is a d-dimensional signal from natural scenes (each dimension corresponds to one of our image statistic coordinates; for simplicity, let d = 2, that is, we examine one pairwise plane). L is the linear transformation that we are looking for: this is essentially a ‘gain’ plus ‘rotation’ transformation. The axes of perceptual isodiscrimination contours should then be given by the eigenvalues of LLT. The covariance of the stimuli is S=〈ssT〉. Noise is assumed IID, given by 〈ξξT〉=ΞI at the input and 〈ηηT〉=ΣI at the output, where I is a 2 × 2 identity matrix and Ξ and Σ are noise magnitudes. With this notation, the total noise covariance matrix of the output is given by:(0.11)N=ΣI+ΞLLT.
+Here, we numerically show that in the 2-dimensional case, the axes of the optimal encoder will be aligned with the principal axes of the input statistics. As shown in Figure 4—figure supplement 1, the response r is given by:
 
-The total variance at the output is:(0.12)r2=dΣ+Ξ Tr LLT+Tr LSLT.
+$$
+r=L(s+ξ)+η,
+$$
 
-By analogy to the van Hateren derivation, we fix the output power. Without loss of generality, we choose its value to be unity, which sets the unit for all power measures in the system. The information for a Gaussian multivariate channel in a standard form, r=L′s+η is:(0.13)I=12log det(I+S12L′TL′S12),but this is only valid when the noise η is IID unit variance. In the present study, this is not the case: first, the noise, N, is correlated in the two channels, because the sampling noise is mixed by L; second, the variances are not the same in the two channels. We can, however, make a change of variables, r′ = Or, such that the noise for the new output r′ is IID unit variance. To do this, we decompose N=VDVT into its eigensystem, make O=D−12VT, and identify L′=OL=D−12VTL, so that we can use the standard result given in Equation (0.13). The optimal linear filter is given by:(0.14)L*=argmaxL,r2=1 12log det(I+S12L′TL′S12)
+where ξ is the sampling noise, η is the intrinsic channel noise, and s is a d-dimensional signal from natural scenes (each dimension corresponds to one of our image statistic coordinates; for simplicity, let d = 2, that is, we examine one pairwise plane). L is the linear transformation that we are looking for: this is essentially a ‘gain’ plus ‘rotation’ transformation. The axes of perceptual isodiscrimination contours should then be given by the eigenvalues of $LL^{T}$. The covariance of the stimuli is $S=〈ss^{T}〉$. Noise is assumed IID, given by $〈ξξ^{T}〉=ΞI$ at the input and $〈ηη^{T}〉=ΣI$ at the output, where I is a 2 × 2 identity matrix and $Ξ$ and $Σ$ are noise magnitudes. With this notation, the total noise covariance matrix of the output is given by:
 
-Since the output power is limited to 1 and channel noise Σ feeds directly into the output power, there is no solution for L for Σ>0.5 (since d = 2 and Σ is the noise in each of the channels, the total output power is taken up by channel noise at Σ=0.5). The magnitude of the sampling noise can be unbounded, since one can always select the gain in L to be low enough so that the constraint on total output power is satisfied. Because the gain rescales the input, we can fix the total power of the input signal (the trace of S) to be unity. With this choice, the remaining parameters of the problem are the magnitude of the channel noise (Σ) and the magnitude of the sampling noise relative to the input power (i.e. 1/SNR at the input).
+$$
+N=ΣI+ΞLL^{T}.
+$$
 
-Given these two parameters that determine the sampling and channel noise magnitudes, we generate input signal covariances S with total power of unity but with randomly selected ‘tilts’ (angles of the leading eigenvector of S measured relative to the horizontal) and ‘eccentricities’ (=1−gmin2/gmax2, where g are the eigenvalues of S); these quantities can be directly estimated from natural scenes. We then use constrained optimization to numerically identify the optimal transformation L∗. For each such solution for L∗, we compute the eigensystem of L∗L∗T, extract its eccentricity and tilt as describe above, and compare these values to the eccentricity and tilt of the input signal.
+The total variance at the output is:
+
+$$
+r^{2}=dΣ+Ξ Tr LL^{T}+Tr LSL^{T}.
+$$
+
+By analogy to the van Hateren derivation, we fix the output power. Without loss of generality, we choose its value to be unity, which sets the unit for all power measures in the system. The information for a Gaussian multivariate channel in a standard form, $r=L′s+η$ is:
+
+$$
+I=\frac{1}{2}log det(I+S^{\frac{1}{2}}L′^{T}L′S^{\frac{1}{2}}),
+$$
+
+but this is only valid when the noise η is IID unit variance. In the present study, this is not the case: first, the noise, N, is correlated in the two channels, because the sampling noise is mixed by L; second, the variances are not the same in the two channels. We can, however, make a change of variables, r′ = Or, such that the noise for the new output r′ is IID unit variance. To do this, we decompose $N=VDV^{T}$ into its eigensystem, make $O=D^{−\frac{1}{2}}V^{T}$, and identify $L′=OL=D^{−\frac{1}{2}}V^{T}L$, so that we can use the standard result given in Equation (0.13). The optimal linear filter is given by:
+
+$$
+L^{*}=argmaxL,r^{2}=1 \frac{1}{2}log det(I+S^{\frac{1}{2}}L′^{T}L′S^{\frac{1}{2}})
+$$
+
+Since the output power is limited to 1 and channel noise $Σ$ feeds directly into the output power, there is no solution for L for $Σ>0.5$ (since d = 2 and $Σ$ is the noise in each of the channels, the total output power is taken up by channel noise at $Σ=0.5$). The magnitude of the sampling noise can be unbounded, since one can always select the gain in L to be low enough so that the constraint on total output power is satisfied. Because the gain rescales the input, we can fix the total power of the input signal (the trace of S) to be unity. With this choice, the remaining parameters of the problem are the magnitude of the channel noise ($Σ$) and the magnitude of the sampling noise relative to the input power (i.e. 1/SNR at the input).
+
+Given these two parameters that determine the sampling and channel noise magnitudes, we generate input signal covariances S with total power of unity but with randomly selected ‘tilts’ (angles of the leading eigenvector of S measured relative to the horizontal) and ‘eccentricities’ ($=\sqrt{1−g_{min}^{2}/g_{max}^{2}}$, where g are the eigenvalues of S); these quantities can be directly estimated from natural scenes. We then use constrained optimization to numerically identify the optimal transformation $L^{∗}$. For each such solution for $L^{∗}$, we compute the eigensystem of $L^{∗}L^{∗T}$, extract its eccentricity and tilt as describe above, and compare these values to the eccentricity and tilt of the input signal.
 
 We identify the following efficient coding regimes that depend the total noise and on the relative magnitudes of sampling and channel noises (Figure 4—figure supplement 3):
 
-## Transmission-limited regime (total noise <0.5)
+### Transmission-limited regime (total noise <0.5)
 
-0≤Ξ≪Σ (dominating channel noise). The optimal strategy is decorrelation by whitening (Figure 4—figure supplement 4A); the tilt of the filter relative to the signal is π/2, and the eccentricities are equal (i.e., the small eigenvalue of L∗L∗T is proportional to the inverse of the large eigenvalue of S and vice versa, indicating that the gain scales as the inverse of the input power).
+$0\leqΞ≪Σ$ (dominating channel noise). The optimal strategy is decorrelation by whitening (Figure 4—figure supplement 4A); the tilt of the filter relative to the signal is $\pi/2$, and the eccentricities are equal (i.e., the small eigenvalue of $L^{∗}L^{∗T}$ is proportional to the inverse of the large eigenvalue of S and vice versa, indicating that the gain scales as the inverse of the input power).
 
-0<Ξ≪1,Σ=0 (zero channel noise, small sampling noise). The optimal strategy is still decorrelation (Figure 4—figure supplement 4B) with signal components of higher power being suppressed by the gain, but the suppression does not follow the inverse law as above.
+$0<Ξ≪1,Σ=0$ (zero channel noise, small sampling noise). The optimal strategy is still decorrelation (Figure 4—figure supplement 4B) with signal components of higher power being suppressed by the gain, but the suppression does not follow the inverse law as above.
 
-## Sampling-limited regime (total noise >0.5)
+### Sampling-limited regime (total noise >0.5)
 
-Ξ≥1,Σ=0 (zero channel noise, large sampling noise). The tilt of the filter matches the tilt of the signal, and the gain scales with input power. For high sampling noise and zero channel noise, the gain scales as the square-root of the input power (Figure 4—figure supplement 4C).
+$Ξ\geq1,Σ=0$ (zero channel noise, large sampling noise). The tilt of the filter matches the tilt of the signal, and the gain scales with input power. For high sampling noise and zero channel noise, the gain scales as the square-root of the input power (Figure 4—figure supplement 4C).
 
-Ξ>Σ>0 (dominating sampling noise). In a broad regime of noise strengths where sampling noise dominates over non-zero channel noise, the tilt of the gain matches the tilt of the signal, and the gain roughly scales with the input power (Figure 4—figure supplement 4D). This regime is consistent with the correspondence that we observe between the natural scenes statistics and the psychophysical measurements.
+$Ξ>Σ>0$ (dominating sampling noise). In a broad regime of noise strengths where sampling noise dominates over non-zero channel noise, the tilt of the gain matches the tilt of the signal, and the gain roughly scales with the input power (Figure 4—figure supplement 4D). This regime is consistent with the correspondence that we observe between the natural scenes statistics and the psychophysical measurements.

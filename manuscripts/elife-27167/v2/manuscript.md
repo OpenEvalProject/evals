@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.27167.001 Evolution can favor organisms that are more adaptable, provided that genetic variation in adaptability exists. Here, we quantify this variation among 230 offspring of a cross between diverged yeast strains. We measure the adaptability of each offspring genotype, defined as its average rate of adaptation in a specific environmental condition, and analyze the heritability, predictability, and genetic basis of this trait. We find that initial genotype strongly affects adaptability and can alter the genetic basis of future evolution. Initial genotype also affects the pleiotropic consequences of adaptation for fitness in a different environment. This genetic variation in adaptability and pleiotropy is largely determined by initial fitness, according to a rule of declining adaptability with increasing initial fitness, but several individual QTLs also have a significant idiosyncratic role. Our results demonstrate that both adaptability and pleiotropy are complex traits, with extensive heritable differences arising from naturally occurring variation.
+Evolution can favor organisms that are more adaptable, provided that genetic variation in adaptability exists. Here, we quantify this variation among 230 offspring of a cross between diverged yeast strains. We measure the adaptability of each offspring genotype, defined as its average rate of adaptation in a specific environmental condition, and analyze the heritability, predictability, and genetic basis of this trait. We find that initial genotype strongly affects adaptability and can alter the genetic basis of future evolution. Initial genotype also affects the pleiotropic consequences of adaptation for fitness in a different environment. This genetic variation in adaptability and pleiotropy is largely determined by initial fitness, according to a rule of declining adaptability with increasing initial fitness, but several individual QTLs also have a significant idiosyncratic role. Our results demonstrate that both adaptability and pleiotropy are complex traits, with extensive heritable differences arising from naturally occurring variation.
 
 ## Introduction
 
@@ -51,29 +51,112 @@ To measure genetic variation in adaptability in budding yeast, we selected 230 s
 
 **Figure 1.:** (A) Schematic of the experimental design. (B) Fitness of all 230 founders at both OT and HT. (C) Fitness of all evolved lines in both OT and HT environments, after 500 generations of adaptation in one of the environments. Each point represents the fitness of one population; vertical lines connect populations descended from the same founder. Founders are ordered by the fraction of their genome derived from the RM parent.
 
-We established eight replicate lines from each founder (a total of 1840 populations), and evolved half of these replicate populations in our OT environment and half in our HT environment. After 500 generations of evolution, we measured the fitness of each descendant population in both environments (Figure 1). The difference between the initial fitness of the founder, X, and the fitness of a descendant population, X′, is a measure of the rate at which that population adapted.
+We established eight replicate lines from each founder (a total of 1840 populations), and evolved half of these replicate populations in our OT environment and half in our HT environment. After 500 generations of evolution, we measured the fitness of each descendant population in both environments (Figure 1). The difference between the initial fitness of the founder, $X$, and the fitness of a descendant population, $X^{′}$, is a measure of the rate at which that population adapted.
 
 The measured rate of adaptation includes contributions from experimental error (inaccuracies in our fitness measurements lead to apparent differences in the rate of adaptation), from evolutionary stochasticity (some populations are more lucky than others in accumulating beneficial mutations), and from the inherent adaptability of the founder (some founders may tend to adapt faster than others). We are primarily interested in understanding the third component: the effect of founder genotype on adaptability. To disentangle this from evolutionary stochasticity, we can compare the variation in the rate of adaptation between lines descended from the same founder with the variation between lines descended from different founders. Similarly, to disentangle the effects of measurement error, we can compare the variation between lines descended from the same founder with the variation between replicate fitness measurements of the same populations. We could in principle compare these different sources of variation using an analysis of variance (ANOVA) framework, following the approach we used in previous work (Kryazhimskiy et al., 2014). Here, we instead describe this analysis in the language of quantitative genetics. While some of the underlying methods are equivalent, this quantitative genetics framework provides a useful perspective, and makes it possible to address additional questions about the genetic basis of variation in adaptability.
 
-We begin by calculating the broad and narrow sense heritability of founder fitness and adaptability. Here the broad-sense heritability of a phenotype, H2, is the fraction of the variance in that phenotype that can be explained by genotype. The narrow-sense heritability, h2, is the fraction of the total variance in the phenotype which can be explained by an additive model of the individual loci. We calculate both broad and narrow-sense heritability using standard methods (Yang et al., 2010; Zuk et al., 2012; Visscher et al., 2006), which exploit the fact that in an additive model the covariance between founder phenotypes is a linear function of their relatedness (Materials and methods). Since our populations are all haploid, the gap between broad-sense and narrow-sense heritability arises primarily from epistatic interactions between loci and any experimental error in our estimation of these quantities, although it may also carry contributions from untagged rare variants, mitochondrial copy number variation, and any uncontrolled G×E effects (Bloom et al., 2015).
+We begin by calculating the broad and narrow sense heritability of founder fitness and adaptability. Here the broad-sense heritability of a phenotype, $H^{2}$, is the fraction of the variance in that phenotype that can be explained by genotype. The narrow-sense heritability, $h^{2}$, is the fraction of the total variance in the phenotype which can be explained by an additive model of the individual loci. We calculate both broad and narrow-sense heritability using standard methods (Yang et al., 2010; Zuk et al., 2012; Visscher et al., 2006), which exploit the fact that in an additive model the covariance between founder phenotypes is a linear function of their relatedness (Materials and methods). Since our populations are all haploid, the gap between broad-sense and narrow-sense heritability arises primarily from epistatic interactions between loci and any experimental error in our estimation of these quantities, although it may also carry contributions from untagged rare variants, mitochondrial copy number variation, and any uncontrolled $G\timesE$ effects (Bloom et al., 2015).
 
-We first consider the heritability of the founder fitness. We find that this has a broad-sense heritability near 100% (Figure 2, Table 1), indicating that measurement errors are small compared to genuine differences in fitness between founders. Consistent with previous work (Bloom et al., 2013), we find a substantial gap between h2 and H2 (Figure 2, Table 1), indicating the importance of epistasis in determining founder fitness.
+We first consider the heritability of the founder fitness. We find that this has a broad-sense heritability near 100% (Figure 2, Table 1), indicating that measurement errors are small compared to genuine differences in fitness between founders. Consistent with previous work (Bloom et al., 2013), we find a substantial gap between $h^{2}$ and $H^{2}$ (Figure 2, Table 1), indicating the importance of epistasis in determining founder fitness.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig2-v2.jpg)
 
 **Figure 2.:** Tan bars denote broad-sense and narrow sense heritability of (A) founder fitness and (B) fitness gain after evolution in the indicated environment (i.e. adaptability). White bars denote the heritability explained by a linear model based on the QTLs identified as affecting initial fitness or adaptability (Materials and methods). Green bars indicate the heritability of adaptability explained by initial fitness in that condition. Error bars indicate 95% confidence intervals.
 
-We next consider the heritability of adaptability. The broad-sense heritability of adaptability, HΔ⁢X2, is the fraction of variance in ΔX=X′−X that can be attributed to founder genotype, rather than to inherent evolutionary stochasticity or to measurement errors. In contrast to founder fitness, which we expect to be a property of the genotype, there is no reason that the rate of adaptation must be heritable. However, multiple previous studies have found that genotype does affect the rate of adaptation in microbial populations (Burch and Chao, 2000; Barrick et al., 2010; Woods et al., 2011; Perfeito et al., 2014; Kryazhimskiy et al., 2014). Consistent with this earlier work, we find that adaptability is heritable, with HΔ⁢X2≈0.61 in the OT environment and 0.65 in the HT environment (Figure 2, Table 1). The fact that the values of HΔ⁢X2 are lower than those of HX2 is expected because, in addition to measurement errors, our measure of adaptability is affected by the inherent randomness of the evolutionary process.
+**Table 1.**
+ Heritability of fitness, adaptability, and pleiotropy, along with the fraction of variance explained by QTL, fitness, and combined models.Row 5 represents the median added variance explained by the fitness model over the QTL model under a jacknife over segregants (Materials and methods); Row 7 similarly represents the added variance explained by the combined model over the fitness model. Paired numbers in parentheses denote 95% confidence intervals; single numbers in parentheses denote lower bounds (5th percentile) on added variances.
 
-As before, we fit a linear model to estimate the narrow-sense heritability of adaptability hΔ⁢X2. We find hΔ⁢X2=0.46 in the OT environment and hΔ⁢X2=0.44 at HT (Figure 2, Table 1). The difference between HΔ⁢X2 and hΔ⁢X2 indicates that about two thirds of the heritable variation in adaptability can be explained by an additive model of the underlying genotype, showing that epistasis is important to this trait (Figure 2).
 
-## Predicting adaptability from genotype and founder fitness
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fitnessat OT</th>
+      <th>Fitnessat HT</th>
+      <th>Adaptabilityat OT</th>
+      <th>Adaptabilityat HT</th>
+      <th>PleiotropyHT pops at OT</th>
+      <th>PleiotropyOT pops at HT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H2</td>
+      <td>0.995 (0.992, 0.997)</td>
+      <td>0.992 (0.988, 0.994)</td>
+      <td>0.613 (0.541, 0.672)</td>
+      <td>0.654 (0.586, 0.716)</td>
+      <td>0.622 (0.552, 0.680)</td>
+      <td>0.291 (0.193, 0.394)</td>
+    </tr>
+    <tr>
+      <td>h2</td>
+      <td>0.837 (0.639, 0.964)</td>
+      <td>0.805 (0.555, 0.936)</td>
+      <td>0.460 (0.280, 0.582)</td>
+      <td>0.440 (0.173, 0.595)</td>
+      <td>0.477 (0.308, 0.636)</td>
+      <td>0.091 (0, 0.228)</td>
+    </tr>
+    <tr>
+      <td>r2, QTL models</td>
+      <td>0.760 (0.712, 0.820)</td>
+      <td>0.761 (0.707, 0.823)</td>
+      <td>0.303 (0.232, 0.388)</td>
+      <td>0.318 (0.242, 0.340)</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>r2, founder fitness</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.417 (0.352, 0.478)</td>
+      <td>0.522 (0.451, 0.585)</td>
+      <td>0.425 (0.361, 0.492)</td>
+      <td>0.127 (0.082, 0.182)</td>
+    </tr>
+    <tr>
+      <td>Added variance fitness vs. QTLs</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.105 (0.047)</td>
+      <td>0.199 (0.143)</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>r2, combined models</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.501(0.442, 0.561)</td>
+      <td>0.577 (0.510, 0.641)</td>
+      <td>0.467 (0.411, 0.534)</td>
+      <td>0.171 (0.126, 0.235)</td>
+    </tr>
+    <tr>
+      <td>Added variance combined vs. fitness</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.087 (0.060)</td>
+      <td>0.057 (0.035)</td>
+      <td>0.047 (0.021)</td>
+      <td>0.044 (0.022)</td>
+    </tr>
+  </tbody>
+</table>
 
-We next sought to map the genetic basis of the observed variation in founder fitness and adaptability. To do so, we applied a standard iterative procedure to identify QTLs that affect each of these traits in each environment (see Materials and methods). We identified 6 QTLs that affect founder fitness at OT, and 3 QTLs that affect founder fitness at HT. Consistent with the strong correlation between these two phenotypes, 2/3 of the HT QTLs also appear as OT QTLs (Supplementary file 5). In both cases, these QTLs explain 76% of the trait variance. We also found 4 QTLs that significantly affect adaptability, Δ⁢X, at OT and 2 QTLs that affect adaptability at HT. Note that these 2 loci are a subset of the OT adaptability loci (Supplementary file 5). Together these adaptability QTLs explain 30% of the total variance in this trait in the OT environment, and 31% in the HT environment, also consistent with our estimates of narrow-sense heritability (Figure 2 and Figure 3 and Table 1). Due to the limited size of our study we may be missing some QTLs that affect fitness or adaptability. However, the fact that the variance in these traits explained by detected QTLs is similar to our estimates of narrow-sense heritability (Figure 2, Table 1) indicates that any missing QTLs are unlikely to have large additive effects on the traits.
+We next consider the heritability of adaptability. The broad-sense heritability of adaptability, $H_{Δ⁢X}^{2}$, is the fraction of variance in $ΔX=X^{′}−X$ that can be attributed to founder genotype, rather than to inherent evolutionary stochasticity or to measurement errors. In contrast to founder fitness, which we expect to be a property of the genotype, there is no reason that the rate of adaptation must be heritable. However, multiple previous studies have found that genotype does affect the rate of adaptation in microbial populations (Burch and Chao, 2000; Barrick et al., 2010; Woods et al., 2011; Perfeito et al., 2014; Kryazhimskiy et al., 2014). Consistent with this earlier work, we find that adaptability is heritable, with $H_{Δ⁢X}^{2}≈0.61$ in the OT environment and $0.65$ in the HT environment (Figure 2, Table 1). The fact that the values of $H_{Δ⁢X}^{2}$ are lower than those of $H_{X}^{2}$ is expected because, in addition to measurement errors, our measure of adaptability is affected by the inherent randomness of the evolutionary process.
+
+As before, we fit a linear model to estimate the narrow-sense heritability of adaptability $h_{Δ⁢X}^{2}$. We find $h_{Δ⁢X}^{2}=0.46$ in the OT environment and $h_{Δ⁢X}^{2}=0.44$ at HT (Figure 2, Table 1). The difference between $H_{Δ⁢X}^{2}$ and $h_{Δ⁢X}^{2}$ indicates that about two thirds of the heritable variation in adaptability can be explained by an additive model of the underlying genotype, showing that epistasis is important to this trait (Figure 2).
+
+### Predicting adaptability from genotype and founder fitness
+
+We next sought to map the genetic basis of the observed variation in founder fitness and adaptability. To do so, we applied a standard iterative procedure to identify QTLs that affect each of these traits in each environment (see Materials and methods). We identified 6 QTLs that affect founder fitness at OT, and 3 QTLs that affect founder fitness at HT. Consistent with the strong correlation between these two phenotypes, 2/3 of the HT QTLs also appear as OT QTLs (Supplementary file 5). In both cases, these QTLs explain 76% of the trait variance. We also found 4 QTLs that significantly affect adaptability, $Δ⁢X$, at OT and 2 QTLs that affect adaptability at HT. Note that these 2 loci are a subset of the OT adaptability loci (Supplementary file 5). Together these adaptability QTLs explain 30% of the total variance in this trait in the OT environment, and 31% in the HT environment, also consistent with our estimates of narrow-sense heritability (Figure 2 and Figure 3 and Table 1). Due to the limited size of our study we may be missing some QTLs that affect fitness or adaptability. However, the fact that the variance in these traits explained by detected QTLs is similar to our estimates of narrow-sense heritability (Figure 2, Table 1) indicates that any missing QTLs are unlikely to have large additive effects on the traits.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig3-v2.jpg)
 
-**Figure 3.:** Each point represents the average fitness change of four populations descended from the same founder after 500 generations of evolution in the (A–C) OT environment or (D–F) HT environment. Error bars denote  s.e.m. Lines show the predictions of different models; ±1 indicates the fraction of the variance explained, which is similar to the fraction of the broad-sense heritability explained by the model. (r2A,D) Linear QTL model, where the -axis is the linear combination of identified QTLs that best predicts the fitness gains in each environment. (xB,E) Model where founder fitness is used as predictor for fitness gain. (C,F) Combined model, where the -axis is the linear combination of initial fitness and the identified QTLs that best predicts the fitness gains in each environment. Dark and light shades represent BY and RM alleles at the xKRE33 locus respectively. For model parameters, see Figure 3—source data 1.10.7554/eLife.27167.006Figure 3—source data 1.
+**Figure 3.:** Each point represents the average fitness change of four populations descended from the same founder after 500 generations of evolution in the (A–C) OT environment or (D–F) HT environment. Error bars denote $\pm1$ s.e.m. Lines show the predictions of different models; $r^{2}$ indicates the fraction of the variance explained, which is similar to the fraction of the broad-sense heritability explained by the model. (A,D) Linear QTL model, where the $x$-axis is the linear combination of identified QTLs that best predicts the fitness gains in each environment. (B,E) Model where founder fitness is used as predictor for fitness gain. (C,F) Combined model, where the $x$-axis is the linear combination of initial fitness and the identified QTLs that best predicts the fitness gains in each environment. Dark and light shades represent BY and RM alleles at the KRE33 locus respectively. For model parameters, see Figure 3—source data 1.
 
 Interestingly, three of the four adaptability loci were also independently identified as QTLs for founder fitness (Supplementary file 5), suggesting that loci that affect founder fitness also affect adaptability. This is consistent with the conclusions of several recent studies, which show that much of the variation in adaptability between closely related microbial strains can be explained by differences in their initial fitness, according to the rule of declining adaptability (Perfeito et al., 2014; Kryazhimskiy et al., 2014; Couce and Tenaillon, 2015). Motivated by these results, we asked whether a similar effect holds in our system as well, even though our founders are several orders of magnitude more diverged than strains analyzed in earlier studies. We found that indeed founder fitness explains much of the variation in adaptability, and follows the rule of declining adaptability (Figure 3). Specifically, a model where adaptability declines linearly with founder fitness explains 42% of the total variance in adaptability in the OT environment, and 52% of the adaptability at HT, or about 68% and 80% of the heritable variance, respectively (Figure 2). This represents more of the variance explained than the linear QTL models described above, despite the fact that the QTL models have more free parameters. Interestingly, the variance explained by founder fitness is comparable to the narrow-sense heritability, suggesting that founder fitness may be as good of a predictor of adaptability as any linear genetic model.
 
@@ -83,13 +166,21 @@ To address this question, we first asked whether any of the previously identifie
 
 To check for strong effect adaptability QTLs not previously identified, we repeated the QTL discovery procedure described above, taking the trait to be the residual variation in adaptability about the regression line in Figure 3. We recovered a subset of the already-identified adaptability QTLs, without identifying any further loci.
 
-## Adaptability depends on initial fitness in the ‘home’ environment
+### Adaptability depends on initial fitness in the ‘home’ environment
 
 We have seen that the rule of declining adaptability applies in both of our evolution conditions. However, because the initial fitnesses of our founders in the two environments are correlated (Figure 1), it is possible that the two patterns of decline in adaptability are not independent. Instead, they both could be driven by some factor common to both environments, but not by the initial fitnesses in those environments. If this were the case, then we would expect that the rate of adaptation of all the strains would be controlled by this factor, and we would not expect a strain with particularly disparate fitnesses in the two environments (i.e. lying away from the trend in Figure 1B) to adapt faster in the environment where its fitness was lower. Alternatively, the rule of declining adaptability could apply independently in each environment. In this case, we would expect that a strain with low initial fitness at OT and high initial fitness at HT would adapt rapidly at HT and slowly at OT (and vice versa).
 
-To address this question, we first classify each founder according to how disparate its initial fitness is in HT versus OT (Figure 4A). Note that this is the same data as in Figure 1B after an appropriate normalization (see Materials and methods), with color representing distance from the diagonal. In Figure 4B, we show the average fitness gains of descendants of each of these founders after evolution in each environment. Consistent with a rule of declining adaptability that holds independently in each environment, we find that founders with particularly high initial fitness in HT (green) tend to adapt particularly slowly in HT but not in OT, and vice versa for founders with particularly high initial fitness in OT (purple). In Figure 4C, we quantify this trend by plotting the difference in the normalized fitness gains in the two environments as a function of the difference in initial fitnesses in the two environments (see Materials and methods for details). If a common factor drove the patterns of declining adaptability in both environments, then the difference in a founder’s initial fitnesses should be uncorrelated with the difference in its adaptabilities in the two environments. In contrast, we see a negative correlation (r2=0.28, p<10−4), again consistent with a rule of declining adaptability holding independently in both environments. Thus initial fitness in the home environment is a predictor of its adaptability in that environment, above and beyond a possible common factor that might be driving adaptability in both conditions. We note that these results also hold after controlling for the KRE33 allele (Materials and methods, Figure 4—figure supplement 1).
+To address this question, we first classify each founder according to how disparate its initial fitness is in HT versus OT (Figure 4A). Note that this is the same data as in Figure 1B after an appropriate normalization (see Materials and methods), with color representing distance from the diagonal. In Figure 4B, we show the average fitness gains of descendants of each of these founders after evolution in each environment. Consistent with a rule of declining adaptability that holds independently in each environment, we find that founders with particularly high initial fitness in HT (green) tend to adapt particularly slowly in HT but not in OT, and vice versa for founders with particularly high initial fitness in OT (purple). In Figure 4C, we quantify this trend by plotting the difference in the normalized fitness gains in the two environments as a function of the difference in initial fitnesses in the two environments (see Materials and methods for details). If a common factor drove the patterns of declining adaptability in both environments, then the difference in a founder’s initial fitnesses should be uncorrelated with the difference in its adaptabilities in the two environments. In contrast, we see a negative correlation ($r^{2}=0.28, p<10^{−4}$), again consistent with a rule of declining adaptability holding independently in both environments. Thus initial fitness in the home environment is a predictor of its adaptability in that environment, above and beyond a possible common factor that might be driving adaptability in both conditions. We note that these results also hold after controlling for the KRE33 allele (Materials and methods, Figure 4—figure supplement 1).
 
-## The genetic basis of adaptation
+![Figure 4.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig4-v2.jpg)
+
+**Figure 4.:** (A) Normalized fitness of founders at OT and HT (Materials and methods). Each point is colored according to its deviation from the overall correlation in initial fitnesses. Error bars are omitted for clarity. (B) Normalized fitness increments for all founders (Materials and methods). Colors are the same as in (A); note that points above the diagonal in (A) tend to be found below the diagonal in (B), and vice versa. (C) Difference in fitness increments after adaptation in each environment as a function of the difference in normalized initial founder fitness in HT versus OT. Error bars denote $\pm1$ s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Same as Figure 4, except fitnesses and fitness increments are normalized for the two founder groups with different KRE33 alleles separately.
+
+### The genetic basis of adaptation
 
 Our observations of heritable variation in adaptability indicate that macroscopic epistasis is widespread in our system, and can be largely explained by a model involving founder fitness and a small number of QTLs. However, it is not clear whether this is accompanied by microscopic epistasis between alleles in the founders and potential future mutations. In other words, do different founders accumulate different sets of beneficial mutations as they adapt? And if so, can we identify QTLs or other factors (e.g. founder fitness) that modify the spectrum of mutations that accumulate during adaptation?
 
@@ -105,7 +196,7 @@ Beyond variation in the number of mutations, did founder genotype affect the spe
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig6-v2.jpg)
 
-**Figure 6.:** The number of sequenced populations with a de novo mutation in each multi-hit gene, for each environment and founder KRE33 identity. Genes are organized by functional groups. For mutual information metrics, see Figure 6—source data 1.10.7554/eLife.27167.011Figure 6—source data 1.KRE33 allele, the evolution environment, and the genotype.
+**Figure 6.:** The number of sequenced populations with a de novo mutation in each multi-hit gene, for each environment and founder KRE33 identity. Genes are organized by functional groups. For mutual information metrics, see Figure 6—source data 1.
 
 The gene with the second-largest number of identified de novo mutations was KRE33: 31 independent sequenced populations acquired a mutation in this gene (a total of 12% of our 254 sequenced lines; Figure 6). All 31 of these populations are descended from founders that had the less-fit RM allele at the QTL containing the KRE33 gene (i.e. the same QTL that we identified above as affecting adaptability; Figure 6). This observation suggests that genetic variation in the KRE33 gene itself might have caused the observed variation in adaptability. Since the Kre33 protein is a member of the 90 s preribosomal pathway, we reasoned that the deleterious effect of the RM allele could potentially be compensated not only by mutations in KRE33 itself, but also by mutations in genes that code for other members of the ribosome biogenesis pathway. Consistent with this hypothesis, we found 108 putatively functional mutations in our sequenced lines in 10 genes (including KRE33) that were categorized as belonging to this pathway, all of which arose in descendants of founders that carry the RM allele at the KRE33 locus (Figure 6). Thus, compensation for the deleterious effect of the RM allele in the KRE33 gene is likely one of the strongest targets of selection in our experiment, and it likely contributes to the increased adaptability of the founders which carry the RM version of KRE33.
 
@@ -113,33 +204,69 @@ Of the remaining 101 mutations in multi-hit genes, 14 out of 15 mutations in GPB
 
 The effect of the KRE33 allele on the genetic basis of future adaptation suggests that other loci that contribute to fitness or adaptability differences between RM and BY strains might also be targets for adaptive de novo mutations. To test this hypothesis, we asked whether multi-hit genes are preferentially found within the 8 QTLs that we identified as influencing founder fitness or adaptability. We found two additional examples of multi-hit genes that lie within the confidence interval for one of these 8 QTLs: IRA2 and BFR2 (Supplementary file 5). These 2 genes, along with KRE33, represent an enrichment over the expected number of genes in common between the set of multi-hit genes and those within QTL confidence intervals (Materials and methods). Additionally, RAS2, an essential gene which acts as a master regulator in the cAMP pathway that includes 5 multi-hit genes (including IRA2 Figure 6), is found within one of the QTLs affecting fitness. These results suggest that some loci that underlie variation in fitness among founders are also targets of selection during subsequent evolution. They also suggest that the cAMP pathway, which has been implicated as a target of adaptive de novo mutations in several other experimental evolution studies (Venkataram et al., 2016; Kvitek and Sherlock, 2013; Lang et al., 2013), may also explain some of the fitness differences caused by natural genetic variation in this cross, at least in the specific experimental conditions we analyze here.
 
-With the exception of the cases noted above, which all involve QTLs previously identified as affecting fitness or adaptability, we lack power to identify individual loci in the founder genotype that affect the genetic basis of future adaptation. That is, we cannot find specific QTLs that affect whether mutations in any of the 27 multi-hit genes will be observed in the descendants of a given founder. However, we can still ask whether the mutations that occur during adaptation show a nonrandom association with the founder genotype. We can also ask whether the mutations that occur during adaptation depend on the environment in which evolution was conducted. To do so, we calculated the mutual information I⁢(G,E;M) provided by the founder genotype G and evolution environment E about the set of mutations M that accumulate during adaptation (see Materials and methods for details; note in particular that we control for the identity of the KRE33 allele throughout this analysis). Intuitively, the mutual information I⁢(G,E;M) measures the amount of information (in bits) that we gain about M by knowing G and E. Higher values of I indicate that G and E more strongly predict M.
+With the exception of the cases noted above, which all involve QTLs previously identified as affecting fitness or adaptability, we lack power to identify individual loci in the founder genotype that affect the genetic basis of future adaptation. That is, we cannot find specific QTLs that affect whether mutations in any of the 27 multi-hit genes will be observed in the descendants of a given founder. However, we can still ask whether the mutations that occur during adaptation show a nonrandom association with the founder genotype. We can also ask whether the mutations that occur during adaptation depend on the environment in which evolution was conducted. To do so, we calculated the mutual information $I⁢(G,E;M)$ provided by the founder genotype $G$ and evolution environment $E$ about the set of mutations $M$ that accumulate during adaptation (see Materials and methods for details; note in particular that we control for the identity of the KRE33 allele throughout this analysis). Intuitively, the mutual information $I⁢(G,E;M)$ measures the amount of information (in bits) that we gain about $M$ by knowing $G$ and $E$. Higher values of $I$ indicate that $G$ and $E$ more strongly predict $M$.
 
-We used I⁢(G,E;M) as a test statistic to determine whether there were nonrandom associations between founder genotype, evolution environment, and the mutations that underlie adaptation. Controlling for the number of mutations acquired by each population, we detected a significant association between the evolution condition and the mutations that accumulate during adaptation. For example, we found putatively functional mutations in SIR3 and SIR4 in 34 different populations, 30 of which evolved at HT. However, the overall magnitude of this effect of E on M is small, on the order of 0.1 bits. In addition to this effect of environment, we also find that the genotype G affects M. Specifically, controlling for the number of mutations, the KRE33 allele, and the evolution environment, there is a small additional effect of founder on the identities of de novo mutations. This suggests that while founders with the same allele at the KRE33 locus draw many common adaptive mutations from the same pool, there are additional founder-specific epistatic interactions.
+We used $I⁢(G,E;M)$ as a test statistic to determine whether there were nonrandom associations between founder genotype, evolution environment, and the mutations that underlie adaptation. Controlling for the number of mutations acquired by each population, we detected a significant association between the evolution condition and the mutations that accumulate during adaptation. For example, we found putatively functional mutations in SIR3 and SIR4 in 34 different populations, 30 of which evolved at HT. However, the overall magnitude of this effect of $E$ on $M$ is small, on the order of 0.1 bits. In addition to this effect of environment, we also find that the genotype $G$ affects $M$. Specifically, controlling for the number of mutations, the KRE33 allele, and the evolution environment, there is a small additional effect of founder on the identities of de novo mutations. This suggests that while founders with the same allele at the KRE33 locus draw many common adaptive mutations from the same pool, there are additional founder-specific epistatic interactions.
 
-## The pleiotropic consequences of adaptation
+### The pleiotropic consequences of adaptation
 
-Adaptation to one environment can lead to concomitant fitness gains or losses in other environments, an effect we refer to as pleiotropy for fitness. To characterize these pleiotropic effects in our system, we analyzed how evolution in our OT environment affects fitness in the HT environment, and vice versa. We can describe the founder fitnesses in both environments as W→=(X,Y), where X is the initial fitness at OT and Y is the initial fitness at HT. As noted above, the founder fitnesses in the two environments were strongly correlated, especially within each of the two KRE33 allele groups (Figure 7A), suggesting that the alleles that distinguish RM and BY have correlated effects in our environments.
+Adaptation to one environment can lead to concomitant fitness gains or losses in other environments, an effect we refer to as pleiotropy for fitness. To characterize these pleiotropic effects in our system, we analyzed how evolution in our OT environment affects fitness in the HT environment, and vice versa. We can describe the founder fitnesses in both environments as $W→=(X,Y)$, where $X$ is the initial fitness at OT and $Y$ is the initial fitness at HT. As noted above, the founder fitnesses in the two environments were strongly correlated, especially within each of the two KRE33 allele groups (Figure 7A), suggesting that the alleles that distinguish RM and BY have correlated effects in our environments.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig7-v2.jpg)
 
-**Figure 7.:** (A) The fitness of each founder in the OT environment () and HT environment (X). Error bars represent Y s.e.m. over technical replicates. Dark and light points represent strains carrying the BY and RM alleles at the ±1KRE33 locus respectively. (B,C) Average fitness of all populations descended from each founder. Error bars represent  s.e.m. over replicate populations. Orange and blue colors represent strains evolved at HT and OT, respectively; dark and light shades represent BY and RM alleles at the ±1KRE33 locus respectively. (D) Average fitness increment of all populations descended from each founder; error bars omitted for clarity. Arrows point to the centroids of the respective point clouds.
+**Figure 7.:** (A) The fitness of each founder in the OT environment ($X$) and HT environment ($Y$). Error bars represent $\pm1$ s.e.m. over technical replicates. Dark and light points represent strains carrying the BY and RM alleles at the KRE33 locus respectively. (B,C) Average fitness of all populations descended from each founder. Error bars represent $\pm1$ s.e.m. over replicate populations. Orange and blue colors represent strains evolved at HT and OT, respectively; dark and light shades represent BY and RM alleles at the KRE33 locus respectively. (D) Average fitness increment of all populations descended from each founder; error bars omitted for clarity. Arrows point to the centroids of the respective point clouds.
 
-We next calculated the fitness gains for populations adapted to each environment. After evolution in a given environment, a founder with fitness W→=(X,Y) will have adapted, yielding a descendant line with fitness W→′=(X′,Y′). We denote the fitness increments of this population as Δ⁢W→≡(Δ⁢X,Δ⁢Y)=(X′-X,Y′-Y); this vector represents the increase or decrease in fitness of the descendant population in both environments, after evolution in one of the two environments. For clarity, we will use the notation ΔO⁢T to refer to the fitness increments of descendant populations after evolution in the OT environment, and ΔH⁢T to refer to the fitness increments after evolution in the HT environment. We refer to the environment in which a given population evolves as its ‘home’ environment, and the other environment as its ‘away’ environment. Thus ΔO⁢T⁢X and ΔH⁢T⁢Y are fitness increments in the home environments, and ΔO⁢T⁢Y and ΔH⁢T⁢X are fitness increments in the away environments.
+We next calculated the fitness gains for populations adapted to each environment. After evolution in a given environment, a founder with fitness $W→=(X,Y)$ will have adapted, yielding a descendant line with fitness $W→^{′}=(X^{′},Y^{′})$. We denote the fitness increments of this population as $Δ⁢W→≡(Δ⁢X,Δ⁢Y)=(X^{′}-X,Y^{′}-Y)$; this vector represents the increase or decrease in fitness of the descendant population in both environments, after evolution in one of the two environments. For clarity, we will use the notation $Δ_{O⁢T}$ to refer to the fitness increments of descendant populations after evolution in the OT environment, and $Δ_{H⁢T}$ to refer to the fitness increments after evolution in the HT environment. We refer to the environment in which a given population evolves as its ‘home’ environment, and the other environment as its ‘away’ environment. Thus $Δ_{O⁢T}⁢X$ and $Δ_{H⁢T}⁢Y$ are fitness increments in the home environments, and $Δ_{O⁢T}⁢Y$ and $Δ_{H⁢T}⁢X$ are fitness increments in the away environments.
 
 We find that, on average, populations adapting to either of our two environments also gained fitness in the other environment (Table 2), consistent with our observation that the sets of multi-hit genes in the two environments were highly overlapping. Thus as populations adapt, their fitnesses at OT and HT remain positively correlated (Figure 7B,C). Despite this overall pattern of correlated adaptation, we find that the average fitness gain at HT was significantly higher after evolution at HT than after evolution at OT (Table 2), as we might expect. However, the converse was not true: populations increased in fitness at OT by about the same amount after evolving at HT as they did after evolving at OT. Because populations evolved at HT and those evolved at OT made almost identical fitness gains at OT, but different gains at HT, evolution in these two conditions must involve different sets of adaptive mutations, despite the overlap in the targets of selection between the two environments. This is consistent with our mutual information analysis above.
 
-## Predicting pleiotropic effects from genotype and founder fitness
+**Table 2.**
+ Average fitness increments of populations in home and away environments, in percent.Numbers in parentheses denote 95% confidence intervals.
 
-We next used the framework of quantitative genetics to analyze the effects of founder genotype on pleiotropy. We find that the pleiotropic consequences of adaptation to our HT environment are highly heritable, with broad-sense heritability H2 of the fitness increases in the away environment, ΔH⁢T⁢X≈0.62. This is similar to the heritability of adaptability we found above. In contrast, the pleiotropic consequences of adaptation to our OT environment are much less heritable, with broad-sense heritability of ΔO⁢T⁢Y≈0.29, indicating that in this case stochastic evolutionary forces are more important to the outcome than genotype.
 
-As with the adaptability traits analyzed above, we find that the narrow-sense heritability of pleiotropy is substantially lower than the broad-sense heritability (Figure 8). Specifically, we find h2≈0.48 for ΔH⁢T⁢X and h2≈0.09 for ΔO⁢T⁢Y. Thus most of the heritable variation in this trait cannot be explained using an additive QTL model of the underlying founder genotype.
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Kre33 -RM</th>
+      <th colspan="2">Kre33 -BY</th>
+    </tr>
+    <tr>
+      <th>Evolved at OT</th>
+      <th>Evolved at HT</th>
+      <th>Evolved at OT</th>
+      <th>Evolved at HT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fitnessat OT, %</td>
+      <td>8.33(8.27, 8.38)</td>
+      <td>8.86(8.81, 8.92)</td>
+      <td>5.01(4.94, 5.07)</td>
+      <td>4.834.76, 4.90</td>
+    </tr>
+    <tr>
+      <td>Fitnessat HT, %</td>
+      <td>9.57(9.42, 9.77)</td>
+      <td>20.33(20.18, 20.53)</td>
+      <td>6.25(6.12, 6.38)</td>
+      <td>11.51(11.38, 11.64)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Predicting pleiotropic effects from genotype and founder fitness
+
+We next used the framework of quantitative genetics to analyze the effects of founder genotype on pleiotropy. We find that the pleiotropic consequences of adaptation to our HT environment are highly heritable, with broad-sense heritability $H^{2}$ of the fitness increases in the away environment, $Δ_{H⁢T}⁢X≈0.62$. This is similar to the heritability of adaptability we found above. In contrast, the pleiotropic consequences of adaptation to our OT environment are much less heritable, with broad-sense heritability of $Δ_{O⁢T}⁢Y≈0.29$, indicating that in this case stochastic evolutionary forces are more important to the outcome than genotype.
+
+As with the adaptability traits analyzed above, we find that the narrow-sense heritability of pleiotropy is substantially lower than the broad-sense heritability (Figure 8). Specifically, we find $h^{2}≈0.48$ for $Δ_{H⁢T}⁢X$ and $h^{2}≈0.09$ for $Δ_{O⁢T}⁢Y$. Thus most of the heritable variation in this trait cannot be explained using an additive QTL model of the underlying founder genotype.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/27167/elife-27167-fig8-v2.jpg)
 
-**Figure 8.:** (A) Heritability of the fitness gains in the HT environment after evolution at OT, , and the variance explained by fitness and combined fitness/QTL models. The final (grey) bar indicates the median difference in variance explained between the combined fitness/QTL model and the fitness model under jackknife resampling (Materials and methods). (ΔO⁢T⁢YB) Heritability of  and the variance explained by fitness and combined fitness/QTL models. The final (grey) bar is as in A. (ΔH⁢T⁢XC) Predicted and actual values of  based on initial fitness at HT and QTL loci (ΔO⁢T⁢YSupplementary file 5, column 9). Each point shows the mean over populations descended from the same founder. Error bars denote  s.e.m. over technical replicates (±1-axis) or over replicate evolved populations (x-axis). Dark and light points represent strains carrying the BY and RM alleles at the yKRE33 locus respectively. (D) Predicted and actual values of  based on initial fitness at OT and QTL loci (ΔH⁢T⁢XSupplementary file 5, column 10). For model parameters, see Figure 8—source data 1.10.7554/eLife.27167.015Figure 8—source data 1.
+**Figure 8.:** (A) Heritability of the fitness gains in the HT environment after evolution at OT, $Δ_{O⁢T}⁢Y$, and the variance explained by fitness and combined fitness/QTL models. The final (grey) bar indicates the median difference in variance explained between the combined fitness/QTL model and the fitness model under jackknife resampling (Materials and methods). (B) Heritability of $Δ_{H⁢T}⁢X$ and the variance explained by fitness and combined fitness/QTL models. The final (grey) bar is as in A. (C) Predicted and actual values of $Δ_{O⁢T}⁢Y$ based on initial fitness at HT and QTL loci (Supplementary file 5, column 9). Each point shows the mean over populations descended from the same founder. Error bars denote $\pm1$ s.e.m. over technical replicates ($x$-axis) or over replicate evolved populations ($y$-axis). Dark and light points represent strains carrying the BY and RM alleles at the KRE33 locus respectively. (D) Predicted and actual values of $Δ_{H⁢T}⁢X$ based on initial fitness at OT and QTL loci (Supplementary file 5, column 10). For model parameters, see Figure 8—source data 1.
 
-We next sought to understand which factors best explain the heritable variation in pleiotropy. Analogous to our analysis of adaptability, we consider the potential effects of specific QTL loci as well as of founder fitness (now in both home and away environments). We begin by fitting a model in which the fitness increments in the away environment decline linearly with the founder fitness in both the home and the away environments. We find that founder fitness does explain much of the heritable variation in pleiotropy (68% of the heritable variation in ΔH⁢T⁢X and 43% for ΔO⁢T⁢Y). However, we find that it is only the initial fitness in the away environment that is important: once founder fitness in the away environment is included in the model, founder fitness in the home environment adds no further explanatory power, while the converse is not true.
+We next sought to understand which factors best explain the heritable variation in pleiotropy. Analogous to our analysis of adaptability, we consider the potential effects of specific QTL loci as well as of founder fitness (now in both home and away environments). We begin by fitting a model in which the fitness increments in the away environment decline linearly with the founder fitness in both the home and the away environments. We find that founder fitness does explain much of the heritable variation in pleiotropy (68% of the heritable variation in $Δ_{H⁢T}⁢X$ and 43% for $Δ_{O⁢T}⁢Y$). However, we find that it is only the initial fitness in the away environment that is important: once founder fitness in the away environment is included in the model, founder fitness in the home environment adds no further explanatory power, while the converse is not true.
 
 To assess the dependence of pleiotropic outcomes on specific parental alleles, we next looked for QTLs that influence fitness increments in the away environment, over and above founder fitness in that environment. Specifically, we asked whether any of the eight previously-identified QTLs could help predict pleiotropic outcomes over and above founder fitness in the away condition. We find that 6 of these loci, including KRE33, do have a significant effect on pleiotropic outcomes (Supplementary file 5). Together with founder fitness in the away condition, they explain 75% and 58% of the heritable variation in pleiotropy at OT and HT, respectively (Figure 8). To check for strong effect pleiotropy QTLs not previously identified, we also repeated the QTL discovery procedure described above, taking the trait to be the residual variation in fitness increments in the away environment after regression against founder fitness in that environment. We recovered a subset of the previously identified QTLs, without identifying any further loci.
 
@@ -167,91 +294,143 @@ One way to study differences in adaptability would be to take a bottom-up approa
 
 ## Materials and methods
 
-## Founders of evolving populations
+### Founders of evolving populations
 
 We selected the founders of our evolving populations from a panel of haploid segregants constructed by Bloom et al. (2013). Briefly, Bloom et al. mated strains derived from RM11-1a and BY4716, sporulated the resulting diploids, and then isolated and sequenced 1000 haploid offspring (Bloom et al., 2013). We used the first 230 MATa segregants from this cross as our founder strains (Supplementary file 1).
 
-## Experimental evolution
+### Experimental evolution
 
-We established eight populations from each founder. To avoid artifacts arising from shared standing variation, we founded each population from an independent colony. We propagated each of the resulting 1840 lines for 500 generations in batch culture in unshaken flat bottom polypropylene 96-well plates. We maintained half of the lines (four descended from each founder) in 128 μL of rich laboratory media, YPD (1% Bacto yeast extract (VWR #90000–722), 2% Bacto peptone (VWR #90000–368), 2% dextrose (VWR #90000–904)) at 30°C with daily 1:210 dilutions (the OT environment). We maintained the other half of the lines in 128 μL of synthetic complete media (0.67% YNB with nitrogen (Sunrise Science #1501–250), 0.2% SC (Sunrise Science # 1300–030), 2% dextrose) at 37°C with daily 1:29 dilutions (the HT environment). All liquid handling was conducted using a BiomekFX robot (Beckman Coulter). Prior to dilution, cultures were resuspended by shaking at 1200 rpm for 2 min on a Titramax 100 plate shaker.
+We established eight populations from each founder. To avoid artifacts arising from shared standing variation, we founded each population from an independent colony. We propagated each of the resulting 1840 lines for 500 generations in batch culture in unshaken flat bottom polypropylene 96-well plates. We maintained half of the lines (four descended from each founder) in 128 $\mu$L of rich laboratory media, YPD (1% Bacto yeast extract (VWR #90000–722), 2% Bacto peptone (VWR #90000–368), 2% dextrose (VWR #90000–904)) at 30°C with daily $1:2^{10}$ dilutions (the OT environment). We maintained the other half of the lines in 128 $\mu$L of synthetic complete media (0.67% YNB with nitrogen (Sunrise Science #1501–250), 0.2% SC (Sunrise Science # 1300–030), 2% dextrose) at 37°C with daily $1:2^{9}$ dilutions (the HT environment). All liquid handling was conducted using a BiomekFX robot (Beckman Coulter). Prior to dilution, cultures were resuspended by shaking at 1200 rpm for 2 min on a Titramax 100 plate shaker.
 
-As previously described by Lang et al. (2011), this protocol results in approximately ten generations per day (for the OT environment) or nine generations per day (for the HT environment) at an effective population size of Ne≈105. Every 7 days, aliquots from each population were mixed with glycerol to 25% and kept at -80°C for long-term storage. To check for cross-contamination, each plate contained a unique pattern of blank wells. No cross contamination events were observed during the evolution. However, some wells were lost due to pipetting artifacts. These wells were excluded from all analysis, leaving a total of 910 evolved lines in the OT environment and 839 in the HT environment.
+As previously described by Lang et al. (2011), this protocol results in approximately ten generations per day (for the OT environment) or nine generations per day (for the HT environment) at an effective population size of $N_{e}≈10^{5}$. Every 7 days, aliquots from each population were mixed with glycerol to 25% and kept at -80°C for long-term storage. To check for cross-contamination, each plate contained a unique pattern of blank wells. No cross contamination events were observed during the evolution. However, some wells were lost due to pipetting artifacts. These wells were excluded from all analysis, leaving a total of 910 evolved lines in the OT environment and 839 in the HT environment.
 
-## Fitness assays
+### Fitness assays
 
 We conducted fitness assays as described previously (Kryazhimskiy et al., 2014). Briefly, we measured fitness by competing founding clones and evolved populations against a common reference strain. To construct the reference, we selected a segregant with intermediate fitness from the initial RMxBY cross (segregant LK3-B08; see Supplementary file 1 for the genotype). We integrated an mCitrine-KanMX cassette at the ho locus of this segregant. The marker was obtained via a digest of plasmid pEJ03-mCitrine-KanMX-HO (Supplementary file 4) with pMEI and transformed using standard yeast genetic techniques (Adams et al., 1998). Transformants were selected based on growth on G418, and the Citrine + phenotype was confirmed via flow cytometry.
 
-For each fitness assay, we first allowed both the evolved and reference strains to acclimatize in the relevant environment for 24 hr. We then mixed these strains in approximately equal proportions and propagated them for two days using the same protocol as for evolution. We used Fortessa and LSRII flow cytometers (BD Biosciences) to count the ratio of evolved and reference strains 1 and 2 days (approximately 10 generations and 20 generations respectively, or 9 and 18 in the HT environment), counting approximately 30,000 cells in each measurement. We estimated the fitness of the evolved strain relative to the reference as s=1τ⁢ln⁡(ne,fnr,f⁢nr,ine,i), where τ is the time between measurements in generations, ne,i,ne,f are the initial and final counts of the evolved strain, and nr,i,nr,f are the initial and final counts for the reference. In the HT environment (synthetic medium), we found that in a sample of pure reference cells, 98.5% were fluorescent. To account for this, we adjusted the fitness estimates for this environment slightly: s=1τ⁢ln⁡(ne,f-p⁢nr,fnr,f⁢nr,ine,i-p⁢nr,i), where p=0.015 is the non-fluorescent proportion of reference cells. To estimate the error on the founder fitnesses, we measured the fitnesses of the eight founder clones picked from each segregant in their home environment (i.e. four at OT and four at HT). We measured the fitnesses of each final evolved population at both OT and HT. To obtain estimates of the technical error for these measurements, we chose 24 final populations at random and made 8 technical replicate measurements of each in each of the two measurement conditions.
+For each fitness assay, we first allowed both the evolved and reference strains to acclimatize in the relevant environment for 24 hr. We then mixed these strains in approximately equal proportions and propagated them for two days using the same protocol as for evolution. We used Fortessa and LSRII flow cytometers (BD Biosciences) to count the ratio of evolved and reference strains 1 and 2 days (approximately 10 generations and 20 generations respectively, or 9 and 18 in the HT environment), counting approximately 30,000 cells in each measurement. We estimated the fitness of the evolved strain relative to the reference as $s=\frac{1}{\tau}⁢ln⁡(\frac{n_{e,f}}{n_{r,f}}⁢\frac{n_{r,i}}{n_{e,i}})$, where $\tau$ is the time between measurements in generations, $n_{e,i},n_{e,f}$ are the initial and final counts of the evolved strain, and $n_{r,i},n_{r,f}$ are the initial and final counts for the reference. In the HT environment (synthetic medium), we found that in a sample of pure reference cells, 98.5% were fluorescent. To account for this, we adjusted the fitness estimates for this environment slightly: $s=\frac{1}{\tau}⁢ln⁡(\frac{n_{e,f}-p⁢n_{r,f}}{n_{r,f}}⁢\frac{n_{r,i}}{n_{e,i}-p⁢n_{r,i}})$, where $p=0.015$ is the non-fluorescent proportion of reference cells. To estimate the error on the founder fitnesses, we measured the fitnesses of the eight founder clones picked from each segregant in their home environment (i.e. four at OT and four at HT). We measured the fitnesses of each final evolved population at both OT and HT. To obtain estimates of the technical error for these measurements, we chose 24 final populations at random and made 8 technical replicate measurements of each in each of the two measurement conditions.
 
-## Sequencing and mutation calling
+### Sequencing and mutation calling
 
 We sequenced all 273 populations descended from 35 founders in both environments (this excludes 7 populations descended from these founders that were lost due to pipetting artifacts during evolution, as described above). The founders selected for this sequencing were chosen to ensure approximately equal representation of each parental KRE33 allele (see below), but were otherwise random. To focus on common mutations within each population, we sequenced mixed whole-population samples. We prepared libraries for sequencing as described previously (Baym et al., 2015), and performed whole-genome sequencing on an Illumina HiSeq 2500 in rapid run mode. Fastq files have been deposited with the NIH SRA (Sequence Read Archive), under accession number SRP102877.
 
-To process the whole-population sequence data, we first trimmed reads using Trimmomatic function ‘Illuminaclip’, with options Leading:20, Trailing:20 (Bolger et al., 2014). We merged overlapping paired-end reads using the bbmerge function of bbtools (v36.77). We then used Breseq v0.27.1 (Deatherage and Barrick, 2014) with option ‘-p’ (polymorphic mode) to align reads to the S288c public reference genome (version R64-2-1, downloaded 13 January 2015 (Engel et al., 2014)). We did not directly use the SNP and indel calls made by Breseq. Instead, we used the Samtools mpileup function and a custom python script to create an unfiltered list of the calls in each population at each base pair. To call de novo mutations, we first filtered out fixed differences between the parents by removing all sites where the alternate allele is in the majority in at least 6 lines. We then filter error-prone sites by removing sites where the alternate allele is above 10% frequency in 5 or more populations. These errors typically arise from alignment artifacts. We called a mutation in a population when it occurred in more than 50% of the reads, with support for the alternate allele in at least 4 reads. Although we are sequencing mixed-population samples, 57% of the mutations that we called were supported by 100% of the reads for that population, and 68% were at ≥90% frequency.
+To process the whole-population sequence data, we first trimmed reads using Trimmomatic function ‘Illuminaclip’, with options Leading:20, Trailing:20 (Bolger et al., 2014). We merged overlapping paired-end reads using the bbmerge function of bbtools (v36.77). We then used Breseq v0.27.1 (Deatherage and Barrick, 2014) with option ‘-p’ (polymorphic mode) to align reads to the S288c public reference genome (version R64-2-1, downloaded 13 January 2015 (Engel et al., 2014)). We did not directly use the SNP and indel calls made by Breseq. Instead, we used the Samtools mpileup function and a custom python script to create an unfiltered list of the calls in each population at each base pair. To call de novo mutations, we first filtered out fixed differences between the parents by removing all sites where the alternate allele is in the majority in at least 6 lines. We then filter error-prone sites by removing sites where the alternate allele is above 10% frequency in 5 or more populations. These errors typically arise from alignment artifacts. We called a mutation in a population when it occurred in more than 50% of the reads, with support for the alternate allele in at least 4 reads. Although we are sequencing mixed-population samples, 57% of the mutations that we called were supported by 100% of the reads for that population, and 68% were at $\geq$90% frequency.
 
 We discarded 12 sequenced populations due to insufficient coverage and/or library prep failure. We also checked the genotypes of our founding clones at loci where the RM and BY parents differ, to verify that they matched the genotypes reported by Bloom et al. (2013). We found that 254/261 (97%) of genotypes matched those reported by Bloom et al., (2013), but 7 (3%) were incorrect. We attribute this to errors in picking clones to set up the founders for evolution. We discarded these 7 populations from the sequence data analysis.
 
 We detected 3 SNVs that were shared among multiple descendant populations of the same founder (7 populations in total). For two of these cases, the SNV appears in one OT population and one HT population; in the third case, it appears in one OT population and two HT populations. These mutations likely arose prior to picking clones to found populations, and we discarded them from the analysis.
 
-## Broad-sense heritability
+### Broad-sense heritability
 
-Broad-sense heritability H2 is the fraction of observed variance in a phenotype that can be attributed to genetic differences between founders. We find the broad-sense heritability of founder fitness, HX2, by partitioning the total observed variance in fitness, σX,t2, into the component σX,ϵ2 arising from measurement error and the component σX,f2 arising from founder genotype. The broad-sense heritability of initial fitness is thenHX2=σX,f2σX,t2.
+Broad-sense heritability $H^{2}$ is the fraction of observed variance in a phenotype that can be attributed to genetic differences between founders. We find the broad-sense heritability of founder fitness, $H_{X}^{2}$, by partitioning the total observed variance in fitness, $\sigma_{X,t}^{2}$, into the component $\sigma_{X,ϵ}^{2}$ arising from measurement error and the component $\sigma_{X,f}^{2}$ arising from founder genotype. The broad-sense heritability of initial fitness is then
 
-We estimate the components of variance according to the formulas(1)σX,t2=1ng⁢∑i=1ng(Xi-X¯⋅⋅)2,σX,ϵ2=1ng⁢∑i=1ngσX,ϵ,i2,σX,f2=σX,t2-σX,ϵ2.
+$$
+H_{X}^{2}=\frac{\sigma_{X,f}^{2}}{\sigma_{X,t}^{2}}.
+$$
 
-Here ng=230 is the number of founders and we denote the replicate fitness measurement k of founder i by Xi⁢k. We have also defined Xi≡X¯i⁣⋅=1nr,i⁢∑k=1nr,iXi⁢k as the estimate of fitness of founder i is the unbiased estimate of error variance in the fitness measurement of founder i is the number of technical replicate measurements for founder i; and X¯⋅⋅=1ng⁢∑i=1ngXi is the mean fitness across all founders. We calculate confidence intervals for H2 using a leave-n2-out jackknife on genotypes.
+We estimate the components of variance according to the formulas
 
-Similarly, to estimate the broad-sense heritability of the fitness increment after evolution, HΔ⁢X2, we partition the total observed variance in fitness increment, σΔ⁢X,t2, into the component due to measurement error plus evolutionary stochasticity (which arises due to random variation in fitness gains between populations descended from the same founder), σΔ⁢X,p2, and the component σΔ⁢X,f2 due to systematically different fitness gains in populations descended from different founders. The broad-sense heritability in fitness increment is thenHΔ⁢X2=σΔ⁢X,f2σΔ⁢X,t2.
+$$
+\sigma_{X,t}^{2}=\frac{1}{n_{g}}⁢\sumi=1n_{g}(X_{i}-X¯_{⋅⋅})^{2},\sigma_{X,ϵ}^{2}=\frac{1}{n_{g}}⁢\sumi=1n_{g}\sigma_{X,ϵ,i}^{2},\sigma_{X,f}^{2}=\sigma_{X,t}^{2}-\sigma_{X,ϵ}^{2}.
+$$
 
-We estimate the variance components as follows. The estimate of the fitness increment of population j descended from founder i is Δ⁢Xi⁢j=Xi⁢j′-Xi, where Xi is the estimate of fitness of founder i given above and Xi⁢j′ is estimate of final fitness of the focal population. We estimate the variance σΔ⁢X,p2 due to measurement error and evolutionary stochasticity asσΔ⁢X,p2=1n⁢∑i=1ngnp,inp,i-1⁢∑j=1np,i(Δ⁢Xi⁢j-Δ⁢X¯i⁣⋅)2,
+Here $n_{g}=230$ is the number of founders and we denote the replicate fitness measurement $k$ of founder $i$ by $X_{i⁢k}$. We have also defined $X_{i}≡X¯_{i⁣⋅}=\frac{1}{n_{r,i}}⁢\sum_{k=1}^{n_{r,i}}X_{i⁢k}$ as the estimate of fitness of founder i is the unbiased estimate of error variance in the fitness measurement of founder i is the number of technical replicate measurements for founder $i$; and $X¯_{⋅⋅}=\frac{1}{n_{g}}⁢\sum_{i=1}^{n_{g}}X_{i}$ is the mean fitness across all founders. We calculate confidence intervals for $H^{2}$ using a leave-$\frac{n}{2}$-out jackknife on genotypes.
 
-where Δ⁢X¯i⁣⋅=1np,i⁢∑j=1np,iΔ⁢Xi⁢j is the mean fitness increment in populations descended from founder i, and n is the total number of descendant populations. We estimate the total variance in fitness increment asσΔ⁢X,t2=1n⁢∑i=1ng∑j=1np,i(Δ⁢Xi⁢j-Δ⁢X¯⋅⋅)2,
+Similarly, to estimate the broad-sense heritability of the fitness increment after evolution, $H_{Δ⁢X}^{2}$, we partition the total observed variance in fitness increment, $\sigma_{Δ⁢X,t}^{2}$, into the component due to measurement error plus evolutionary stochasticity (which arises due to random variation in fitness gains between populations descended from the same founder), $\sigma_{Δ⁢X,p}^{2}$, and the component $\sigma_{Δ⁢X,f}^{2}$ due to systematically different fitness gains in populations descended from different founders. The broad-sense heritability in fitness increment is then
 
-where Δ⁢X¯⋅⋅=1n⁢∑i=1ng∑j=1np,iΔ⁢Xi⁢j is the mean fitness increment across all populations. Finally, the variance due to founder genotype isσΔ⁢X,f2=σΔ⁢X,t2-σΔ⁢X,p2.
+$$
+H_{Δ⁢X}^{2}=\frac{\sigma_{Δ⁢X,f}^{2}}{\sigma_{Δ⁢X,t}^{2}}.
+$$
 
-As above, we calculate confidence intervals on the estimate of HΔ⁢X2 using a leave-n2-out jackknife on genotypes.
+We estimate the variance components as follows. The estimate of the fitness increment of population $j$ descended from founder $i$ is $Δ⁢X_{i⁢j}=X_{i⁢j}^{′}-X_{i}$, where $X_{i}$ is the estimate of fitness of founder i given above and $X_{i⁢j}^{′}$ is estimate of final fitness of the focal population. We estimate the variance $\sigma_{Δ⁢X,p}^{2}$ due to measurement error and evolutionary stochasticity as
+
+$$
+\sigma_{Δ⁢X,p}^{2}=\frac{1}{n}⁢\sumi=1n_{g}\frac{n_{p,i}}{n_{p,i}-1}⁢\sumj=1n_{p,i}(Δ⁢X_{i⁢j}-Δ⁢X¯_{i⁣⋅})^{2},
+$$
+
+where $Δ⁢X¯_{i⁣⋅}=\frac{1}{n_{p,i}}⁢\sum_{j=1}^{n_{p,i}}Δ⁢X_{i⁢j}$ is the mean fitness increment in populations descended from founder $i$, and $n$ is the total number of descendant populations. We estimate the total variance in fitness increment as
+
+$$
+\sigma_{Δ⁢X,t}^{2}=\frac{1}{n}⁢\sumi=1n_{g}\sumj=1n_{p,i}(Δ⁢X_{i⁢j}-Δ⁢X¯_{⋅⋅})^{2},
+$$
+
+where $Δ⁢X¯_{⋅⋅}=\frac{1}{n}⁢\sum_{i=1}^{n_{g}}\sum_{j=1}^{n_{p,i}}Δ⁢X_{i⁢j}$ is the mean fitness increment across all populations. Finally, the variance due to founder genotype is
+
+$$
+\sigma_{Δ⁢X,f}^{2}=\sigma_{Δ⁢X,t}^{2}-\sigma_{Δ⁢X,p}^{2}.
+$$
+
+As above, we calculate confidence intervals on the estimate of $H_{Δ⁢X}^{2}$ using a leave-$\frac{n}{2}$-out jackknife on genotypes.
 
 Data analysis for this and subsequent sections was performed in Python v. 2.7 using custom scripts, available at: https://github.com/erjerison/adaptability (Jerison and Kryazhimskiy, 2017; a copy is archived at https://github.com/elifesciences-publications/adaptability ).
 
-## Narrow-sense heritability
+### Narrow-sense heritability
 
-We estimate the narrow-sense heritability of two types of traits: the fitness of founding genotypes, Xi, and the fitness increment of population i⁢j, Δ⁢Xi⁢j. Let the trait value of a particular individual be Yi. Without perfect knowledge of which loci affect the trait, we can still estimate the narrow-sense heritability based on how the covariance in trait values between individuals depends on their genetic relatednesses (Yang et al., 2010; Zuk et al., 2012).
+We estimate the narrow-sense heritability of two types of traits: the fitness of founding genotypes, $X_{i}$, and the fitness increment of population $i⁢j$, $Δ⁢X_{i⁢j}$. Let the trait value of a particular individual be $Y_{i}$. Without perfect knowledge of which loci affect the trait, we can still estimate the narrow-sense heritability based on how the covariance in trait values between individuals depends on their genetic relatednesses (Yang et al., 2010; Zuk et al., 2012).
 
-Supposing the trait Yi was a linear combination of contributions from all loci, we have(2)Yi=α+∑k=1mgi⁢k⁢ak+ϵi,
+Supposing the trait $Y_{i}$ was a linear combination of contributions from all loci, we have
 
-where gi⁢k=-pm⁢p⁢(1-p) if individual i carries the RM allele at locus k or gi⁢k=1-pm⁢p⁢(1-p) if it carries the BY allele at locus k, p is the frequency of the BY allele at locus k, and m is the total number of loci. We denote the contribution of allele k to the trait as ak. If we take this to be a random effects model, with a∼N⁢(0,σa2) and ϵ∼N⁢(0,σe2), then the variance-covariance matrix 𝐕 of Yi is 𝐕=𝐑⁢σa2+𝐈⁢σϵ2(Yang et al., 2010), where Ri⁢j=∑kgi⁢k⁢gj⁢k is the relatedness between two segregants. The narrow-sense heritability is then h2=σa2V⁢a⁢r⁢(Y), the ratio of the additive variance to the total phenotypic variance.
+$$
+Y_{i}=\alpha+\sumk=1mg_{i⁢k}⁢a_{k}+ϵ_{i},
+$$
 
-We fit σa2 using standard REML optimization, and estimated h^2=σ^a2V⁢a⁢r⁢(Y). To maintain consistency, we calculated confidence intervals using a leave-n2-out jacknife on segregants.
+where $g_{i⁢k}=-\frac{p}{\sqrt{m⁢p⁢(1-p)}}$ if individual $i$ carries the RM allele at locus $k$ or $g_{i⁢k}=\frac{1-p}{\sqrt{m⁢p⁢(1-p)}}$ if it carries the BY allele at locus $k$, $p$ is the frequency of the BY allele at locus $k$, and $m$ is the total number of loci. We denote the contribution of allele $k$ to the trait as $a_{k}$. If we take this to be a random effects model, with $a∼N⁢(0,\sigma_{a}^{2})$ and $ϵ∼N⁢(0,\sigma_{e}^{2})$, then the variance-covariance matrix $𝐕$ of $Y_{i}$ is $𝐕=𝐑⁢\sigma_{a}^{2}+𝐈⁢\sigma_{ϵ}^{2}$(Yang et al., 2010), where $R_{i⁢j}=\sum_{k}g_{i⁢k}⁢g_{j⁢k}$ is the relatedness between two segregants. The narrow-sense heritability is then $h^{2}=\frac{\sigma_{a}^{2}}{V⁢a⁢r⁢(Y)}$, the ratio of the additive variance to the total phenotypic variance.
 
-## Mapping QTLs
+We fit $\sigma_{a}^{2}$ using standard REML optimization, and estimated $h^^{2}=\frac{\sigma^_{a}^{2}}{V⁢a⁢r⁢(Y)}$. To maintain consistency, we calculated confidence intervals using a leave-$\frac{n}{2}$-out jacknife on segregants.
 
-Following Bloom et al. (2013), we took an iterative approach to identify QTLs for a trait. As before, let Yi be the phenotypic trait value for founder i. At each iteration we detect one QTL, so that after completing iteration k, we will have identified k QTLs. At iteration k+1, we first fit the linear model(3)Yi=α(k)+∑ℓ=1kgi⁢ℓ⁢aℓ(k)+ϵi(k).
+### Mapping QTLs
 
-Here α(k) and all aℓ(k) are fitting parameters and ϵi(k) are noise terms, which are normally distributed random variables with mean 0 and variance σϵ,k2. As before, gi⁢ℓ denotes the genotype of founder i at locus ℓ. Note that, at the first iteration, the second term in equation (3) is absent. We then calculate the residuals yi(k+1)=Yi-(α^(k)+∑ℓ=1kgi⁢ℓ⁢a^ℓ(k)), where the hat symbol denotes the fitted parameters. Next, for each locus ℓ, we calculate the log of the odds (LOD) score as -ng/2⁢log10⁡(1-rk,ℓ2), where rk,ℓ2 is the Pearson correlation coefficient between the allele at locus ℓ and yi(k+1), and ng is the number of founders. For this correlation analysis, we weigh observations by the square root of the number of technical replicate measurements. Next, we perform a permutation test (by permuting yi(k+1) values) to determine whether the QTL with the largest value of the test statistic is significant at the 0.05 level. If it is, it becomes the k+1th QTL, and we proceed to the next iteration. If it is not, QTL detection is terminated. At each round, we calculate a confidence interval for the location of the QTL based on an LOD decline of 1.5.
+Following Bloom et al. (2013), we took an iterative approach to identify QTLs for a trait. As before, let $Y_{i}$ be the phenotypic trait value for founder $i$. At each iteration we detect one QTL, so that after completing iteration $k$, we will have identified $k$ QTLs. At iteration $k+1$, we first fit the linear model
 
-We carry out this QTL detection procedure separately for two traits, initial fitness X and fitness increment Δ⁢X, in each of the two environments, OT and HT.
+$$
+Y_{i}=\alpha^{(k)}+\sumℓ=1kg_{i⁢ℓ}⁢a_{ℓ}^{(k)}+ϵ_{i}^{(k)}.
+$$
 
-## Fitness models for adaptability
+Here $\alpha^{(k)}$ and all $a_{ℓ}^{(k)}$ are fitting parameters and $ϵ_{i}^{(k)}$ are noise terms, which are normally distributed random variables with mean 0 and variance $\sigma_{ϵ,k}^{2}$. As before, $g_{i⁢ℓ}$ denotes the genotype of founder $i$ at locus $ℓ$. Note that, at the first iteration, the second term in equation (3) is absent. We then calculate the residuals $y_{i}^{(k+1)}=Y_{i}-(\alpha^^{(k)}+\sum_{ℓ=1}^{k}g_{i⁢ℓ}⁢a^_{ℓ}^{(k)})$, where the hat symbol denotes the fitted parameters. Next, for each locus $ℓ$, we calculate the log of the odds (LOD) score as $-n_{g}/2⁢log_{10}⁡(1-r_{k,ℓ}^{2})$, where $r_{k,ℓ}^{2}$ is the Pearson correlation coefficient between the allele at locus $ℓ$ and $y_{i}^{(k+1)}$, and $n_{g}$ is the number of founders. For this correlation analysis, we weigh observations by the square root of the number of technical replicate measurements. Next, we perform a permutation test (by permuting $y_{i}^{(k+1)}$ values) to determine whether the QTL with the largest value of the test statistic is significant at the $0.05$ level. If it is, it becomes the $k+1$th QTL, and we proceed to the next iteration. If it is not, QTL detection is terminated. At each round, we calculate a confidence interval for the location of the QTL based on an LOD decline of 1.5.
 
-We model the dependence of adaptability on fitness using the standard linear regression,(4)Δ⁢Xi=α+β⁢Xi+ϵi,
+We carry out this QTL detection procedure separately for two traits, initial fitness $X$ and fitness increment $Δ⁢X$, in each of the two environments, OT and HT.
 
-where Δ⁢Xi=1ni⁢∑j=1niXi⁢j′-Xi is the mean fitness increment of founder i, and Xi is the fitness of founder i.
+### Fitness models for adaptability
 
-Our null model is that the true fitness gains are independent of the founder fitnesses. However, our estimates of Δ⁢Xi also include measurement error, and these errors are not independent of the measurement errors in Xi. These errors could generate spurious correlations between Δ⁢Xi and Xi. Note that we expect this effect to be small, because the error variance in Xi is 0.5% of the total variance in Xi at OT and 0.8% at HT. To assess the influence that these spurious correlations could have had on our results, we also fit the model(5)Δ⁢Xi=α+β⁢X~i+ϵi,
+We model the dependence of adaptability on fitness using the standard linear regression,
 
-where X~i=Xi+δi, δi∼N⁢(σX,ϵ,i2,0), where σX,ϵ,i2 is the error variance in founder fitness i, as defined above. This additional error lowers the correlation from 0.522 to 0.518 at HT and 0.417 to 0.415 at OT.
+$$
+Δ⁢X_{i}=\alpha+\beta⁢X_{i}+ϵ_{i},
+$$
 
-To assess the extent to which fitness in either environment predicts fitness changes in the other condition, we fit the model(6)Δ⁢Xi,a=α+β⁢Xi+γ⁢Yi+ϵi,
+where $Δ⁢X_{i}=\frac{1}{n_{i}}⁢\sum_{j=1}^{n_{i}}X_{i⁢j}^{′}-X_{i}$ is the mean fitness increment of founder $i$, and $X_{i}$ is the fitness of founder $i$.
 
-where Δ⁢Xi,a is the fitness increment of population i⁢j in the ‘away’ environment, in which it did not evolve, Xi is the founder fitness in the away environment, and Yi is the founder fitness in the home environment. As above, to control for spurious correlations due to experimental noise, we also fit(7)Δ⁢Xi⁢j,a=α+β⁢X~i+γ⁢Yi+ϵi.
+Our null model is that the true fitness gains are independent of the founder fitnesses. However, our estimates of $Δ⁢X_{i}$ also include measurement error, and these errors are not independent of the measurement errors in $X_{i}$. These errors could generate spurious correlations between $Δ⁢X_{i}$ and $X_{i}$. Note that we expect this effect to be small, because the error variance in $X_{i}$ is 0.5% of the total variance in $X_{i}$ at OT and 0.8% at HT. To assess the influence that these spurious correlations could have had on our results, we also fit the model
+
+$$
+Δ⁢X_{i}=\alpha+\beta⁢X~_{i}+ϵ_{i},
+$$
+
+where $X~_{i}=X_{i}+\delta_{i}$, $\delta_{i}∼N⁢(\sigma_{X,ϵ,i}^{2},0)$, where $\sigma_{X,ϵ,i}^{2}$ is the error variance in founder fitness $i$, as defined above. This additional error lowers the correlation from $0.522$ to $0.518$ at HT and $0.417$ to $0.415$ at OT.
+
+To assess the extent to which fitness in either environment predicts fitness changes in the other condition, we fit the model
+
+$$
+Δ⁢X_{i,a}=\alpha+\beta⁢X_{i}+\gamma⁢Y_{i}+ϵ_{i},
+$$
+
+where $Δ⁢X_{i,a}$ is the fitness increment of population $i⁢j$ in the ‘away’ environment, in which it did not evolve, $X_{i}$ is the founder fitness in the away environment, and $Y_{i}$ is the founder fitness in the home environment. As above, to control for spurious correlations due to experimental noise, we also fit
+
+$$
+Δ⁢X_{i⁢j,a}=\alpha+\beta⁢X~_{i}+\gamma⁢Y_{i}+ϵ_{i}.
+$$
 
 We assessed the significance of each coefficient in both models.
 
-## Combined QTL and fitness model
+### Combined QTL and fitness model
 
-To determine whether any loci influence adaptability over and above fitness, we created a master list of all distinct QTLs detected for the initial fitness or fitness increment as traits. We tested whether each of these loci significantly improved predictions of delta fitness in both environments. We also included terms for potential pairwise interactions between the largest-effect QTL (KRE33) and the others. Specifically, we fit the model(8)Δ⁢Xi=α+β⁢Xi+γ⁢g*+∑ℓ=1kgi⁢ℓ⁢aℓ+∑ℓ=1kg*⁢gi⁢ℓ⁢bℓ+ϵi,
+To determine whether any loci influence adaptability over and above fitness, we created a master list of all distinct QTLs detected for the initial fitness or fitness increment as traits. We tested whether each of these loci significantly improved predictions of delta fitness in both environments. We also included terms for potential pairwise interactions between the largest-effect QTL (KRE33) and the others. Specifically, we fit the model
 
-where g* is an indicator variable on the KRE33 allele, taking values 0.5 or -0.5; the gi⁢ℓ are indicator variables on the previously identified QTLs, also taking values 0.5 or -0.5, and α, β, γ, aℓ, and bℓ are coefficients.
+$$
+Δ⁢X_{i}=\alpha+\beta⁢X_{i}+\gamma⁢g^{*}+\sumℓ=1kg_{i⁢ℓ}⁢a_{ℓ}+\sumℓ=1kg^{*}⁢g_{i⁢ℓ}⁢b_{ℓ}+ϵ_{i},
+$$
+
+where $g^{*}$ is an indicator variable on the KRE33 allele, taking values $0.5$ or $-0.5$; the $g_{i⁢ℓ}$ are indicator variables on the previously identified QTLs, also taking values $0.5$ or $-0.5$, and $\alpha$, $\beta$, $\gamma$, $a_{ℓ}$, and $b_{ℓ}$ are coefficients.
 
 We fit this model for fitness increment in each environment separately. In each case, we evaluated the significance of the coefficients using a Bonferroni-corrected F-test. We refit the model including only terms with significant coefficients to determine the best predictor of delta fitness in each environment (Figure 3, Figure 3—source data 1).
 
@@ -259,30 +438,50 @@ To check for additional loci that influenced adaptability over and above fitness
 
 We repeated this analysis for fitness increment in the alternative condition (Figure 8, Figure 8—source data 1).
 
-## Testing the effect of fitness in the home environment on adaptability
+### Testing the effect of fitness in the home environment on adaptability
 
-To establish whether the pattern of declining adaptability in our two environments is entirely driven by a common factor, or whether the fitness in the home environment adds additional predictive power, we tested whether the difference in initial fitness between environments of a particular founder was predictive of the difference in fitness increments after adaptation to each environment. To do so, we define the normalized fitness of founder i at OT as(9)X~i=Xi-X¯Std⁢(X),
+To establish whether the pattern of declining adaptability in our two environments is entirely driven by a common factor, or whether the fitness in the home environment adds additional predictive power, we tested whether the difference in initial fitness between environments of a particular founder was predictive of the difference in fitness increments after adaptation to each environment. To do so, we define the normalized fitness of founder $i$ at OT as
 
-where Xi is the fitness of founder i at OT, X¯ is the average fitness of all founders at OT, and Std⁢(X) is the standard deviation of all founder fitnesses at OT. We analogously define Y~i to be the normalized fitness of founder i at HT. We define the normalized fitness increment of founder i at OT as(10)Δ⁢X~i=Δ⁢Xi-Δ⁢X¯Std⁢(Δ⁢X),
+$$
+X~_{i}=\frac{X_{i}-X¯}{Std⁢(X)},
+$$
 
-where Δ⁢Xi is the average fitness increment of populations descended from founder i at OT, Δ⁢X¯ is the average fitness increment at OT over all founders, and Std⁢(Δ⁢X) is the standard deviation of the fitness increment of all founders at OT. We analogously define Δ⁢Y~i to be the normalized fitness increment of founder i at HT. Note that the normalization by the standard deviation is necessary to meaningfully subtract these quantities, because fitnesses in OT and HT are on different scales (as seen in Figure 1B, fitness differences between a typical pair of segregants are almost twice as large in HT as in OT).
+where $X_{i}$ is the fitness of founder $i$ at OT, $X¯$ is the average fitness of all founders at OT, and $Std⁢(X)$ is the standard deviation of all founder fitnesses at OT. We analogously define $Y~_{i}$ to be the normalized fitness of founder $i$ at HT. We define the normalized fitness increment of founder $i$ at OT as
 
-In Figure 4A, we plot X~i versus Y~i, and the line y=x. The points are colored by X~i-Y~i, which is proportional to the distance to the diagonal. In Figure 4B, we plot Δ⁢X~i versus Δ⁢Y~i, and the line y=x, with the colors as in Figure 4A. In Figure 4C, we plot X~i-Y~i versus Δ⁢X~i-Δ⁢Y~i. We calculated the Pearson correlation coefficient for X~i-Y~i versus Δ⁢X~i-Δ⁢Y~i, and tested significance by bootstrapping over segregants. We also repeated this analysis controlling for the effect of the KRE33 allele. Specifically, we defined the same quantities as above, with means and standard deviations taken over segregants with the RM and BY KRE33 alleles separately (Figure 4—figure supplement 1).
+$$
+Δ⁢X~_{i}=\frac{Δ⁢X_{i}-Δ⁢X¯}{Std⁢(Δ⁢X)},
+$$
 
-## Mutual information analysis
+where $Δ⁢X_{i}$ is the average fitness increment of populations descended from founder $i$ at OT, $Δ⁢X¯$ is the average fitness increment at OT over all founders, and $Std⁢(Δ⁢X)$ is the standard deviation of the fitness increment of all founders at OT. We analogously define $Δ⁢Y~_{i}$ to be the normalized fitness increment of founder $i$ at HT. Note that the normalization by the standard deviation is necessary to meaningfully subtract these quantities, because fitnesses in OT and HT are on different scales (as seen in Figure 1B, fitness differences between a typical pair of segregants are almost twice as large in HT as in OT).
 
-To detect associations between the properties of a population and the de novo mutations that occur during adaptation, we used a test statistic based on mutual information. For clarity, we will first define the mutual information between a property and mutations in one gene, and then describe how we combine the information from all the genes. Let W be the property, with groups W1,…⁢Wn (for example, if the property is the evolution condition, then we have W1=HT, W2=OT). Let our gene of interest be gl, and let m be an indicator variable with value 1 when a de novo mutation was called in a population in this gene, 0 otherwise. Then the mutual information between the property W and gene gl is(11)I(W,gl)=∑W=(W1,…⁢Wn)p(W)∑m=(0,1)p(m|W)log2p(m|W)p⁢(m),
+In Figure 4A, we plot $X~_{i}$ versus $Y~_{i}$, and the line $y=x$. The points are colored by $X~_{i}-Y~_{i}$, which is proportional to the distance to the diagonal. In Figure 4B, we plot $Δ⁢X~_{i}$ versus $Δ⁢Y~_{i}$, and the line $y=x$, with the colors as in Figure 4A. In Figure 4C, we plot $X~_{i}-Y~_{i}$ versus $Δ⁢X~_{i}-Δ⁢Y~_{i}$. We calculated the Pearson correlation coefficient for $X~_{i}-Y~_{i}$ versus $Δ⁢X~_{i}-Δ⁢Y~_{i}$, and tested significance by bootstrapping over segregants. We also repeated this analysis controlling for the effect of the KRE33 allele. Specifically, we defined the same quantities as above, with means and standard deviations taken over segregants with the RM and BY KRE33 alleles separately (Figure 4—figure supplement 1).
 
-where we estimate the probabilities based on observed counts: p⁢(m) is the frequency of observing a mutation in gl across all populations, p(m|W=Wj) is the frequency of observing the mutation among populations with property Wj, and p(W=Wj) is the proportion of populations with property Wj.
+### Mutual information analysis
 
-We will also often be interested in the mutual information conditional on a second property Z. This will allow us to determine whether a property carries additional information after we have already taken a known predictor into account. This can be calculated as(12)I(W,gl|Z)=∑Z=(Z1,..Zq)p(Z)∑W=(W1,…⁢Wn)p(W|Z)∑m=(0,1)p(m|W,Z)log2p(m|W,Z)p(m|Z).
+To detect associations between the properties of a population and the de novo mutations that occur during adaptation, we used a test statistic based on mutual information. For clarity, we will first define the mutual information between a property and mutations in one gene, and then describe how we combine the information from all the genes. Let $W$ be the property, with groups $W_{1},…⁢W_{n}$ (for example, if the property is the evolution condition, then we have $W_{1}=HT$, $W_{2}=OT$). Let our gene of interest be $g_{l}$, and let $m$ be an indicator variable with value $1$ when a de novo mutation was called in a population in this gene, $0$ otherwise. Then the mutual information between the property $W$ and gene $g_{l}$ is
 
-As our test statistic, we take the sum of the mutual information across all of the genes(13)M(W|Z)=∑glI(W,gl|Z),
+$$
+I(W,g_{l})=\sumW=(W_{1},…⁢W_{n})p(W)\summ=(0,1)p(m|W)log_{2}\frac{p(m|W)}{p⁢(m)},
+$$
 
-where for generality we have included the possibility of conditioning on one or more factors. Let W=K⁢r be a population’s KRE33 allele, which can be either RM or BY. Let W=E be the evolution environment, and let W=F be the population’s founding genotype. Then we calculate M⁢(K⁢r⁢e), M(E|Kre), and M(F|Kre,E).
+where we estimate the probabilities based on observed counts: $p⁢(m)$ is the frequency of observing a mutation in $g_{l}$ across all populations, $p(m|W=W_{j})$ is the frequency of observing the mutation among populations with property $W_{j}$, and $p(W=W_{j})$ is the proportion of populations with property $W_{j}$.
 
-We calculate the null distributions of these statistics by permuting mutations among populations, holding the number of mutations per population fixed. We report the mutual information as M⁢(K⁢r⁢e)-M¯p⁢(K⁢r⁢e), where M¯p⁢(K⁢r⁢e) is the mean of the null distribution; M(E|Kre)-M¯p(E|Kre), and M(F|Kre,E)-M¯p(F|Kre,E), with 95% confidence intervals calculated from the null distributions (Figure 6—source data 1).
+We will also often be interested in the mutual information conditional on a second property $Z$. This will allow us to determine whether a property carries additional information after we have already taken a known predictor into account. This can be calculated as
 
-## Comparing QTL locations and de novo mutations
+$$
+I(W,g_{l}|Z)=\sumZ=(Z_{1},..Z_{q})p(Z)\sumW=(W_{1},…⁢W_{n})p(W|Z)\summ=(0,1)p(m|W,Z)log_{2}\frac{p(m|W,Z)}{p(m|Z)}.
+$$
 
-To ask whether we see multi-hit mutations near QTL loci more often than we would expect, we determined whether there was an enrichment of common members between the list of 27 multi-hit genes and the list of 99 genes within QTL confidence intervals. Because we excluded dubious ORFs from both lists, we took the number of genes in the yeast genome to be 5858. We computed the expected number of common members to be 0.95.
+As our test statistic, we take the sum of the mutual information across all of the genes
+
+$$
+M(W|Z)=\sumg_{l}I(W,g_{l}|Z),
+$$
+
+where for generality we have included the possibility of conditioning on one or more factors. Let $W=K⁢r$ be a population’s KRE33 allele, which can be either RM or BY. Let $W=E$ be the evolution environment, and let $W=F$ be the population’s founding genotype. Then we calculate $M⁢(K⁢r⁢e)$, $M(E|Kre)$, and $M(F|Kre,E)$.
+
+We calculate the null distributions of these statistics by permuting mutations among populations, holding the number of mutations per population fixed. We report the mutual information as $M⁢(K⁢r⁢e)-M¯_{p}⁢(K⁢r⁢e)$, where $M¯_{p}⁢(K⁢r⁢e)$ is the mean of the null distribution; $M(E|Kre)-M¯_{p}(E|Kre)$, and $M(F|Kre,E)-M¯_{p}(F|Kre,E)$, with 95% confidence intervals calculated from the null distributions (Figure 6—source data 1).
+
+### Comparing QTL locations and de novo mutations
+
+To ask whether we see multi-hit mutations near QTL loci more often than we would expect, we determined whether there was an enrichment of common members between the list of 27 multi-hit genes and the list of 99 genes within QTL confidence intervals. Because we excluded dubious ORFs from both lists, we took the number of genes in the yeast genome to be 5858. We computed the expected number of common members to be $0.95$.

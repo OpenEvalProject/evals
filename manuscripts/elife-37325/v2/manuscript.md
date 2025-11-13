@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.37325.001 Reward contingencies are dynamic: outcomes that were valued at one point may subsequently lose value. Action selection in the face of dynamic reward associations requires several cognitive processes: registering a change in value of the primary reinforcer, adjusting the value of secondary reinforcers to reflect the new value of the primary reinforcer, and guiding action selection to optimal choices. Flexible responding has been evaluated extensively using reinforcer devaluation tasks. Performance on this task relies upon amygdala, Areas 11 and 13 of orbitofrontal cortex (OFC), and mediodorsal thalamus (MD). Differential contributions of amygdala and Areas 11 and 13 of OFC to specific sub-processes have been established, but the role of MD in these sub-processes is unknown. Pharmacological inactivation of the macaque MD during specific phases of this task revealed that MD is required for reward valuation and action selection. This profile is unique, differing from both amygdala and subregions of the OFC.
+Reward contingencies are dynamic: outcomes that were valued at one point may subsequently lose value. Action selection in the face of dynamic reward associations requires several cognitive processes: registering a change in value of the primary reinforcer, adjusting the value of secondary reinforcers to reflect the new value of the primary reinforcer, and guiding action selection to optimal choices. Flexible responding has been evaluated extensively using reinforcer devaluation tasks. Performance on this task relies upon amygdala, Areas 11 and 13 of orbitofrontal cortex (OFC), and mediodorsal thalamus (MD). Differential contributions of amygdala and Areas 11 and 13 of OFC to specific sub-processes have been established, but the role of MD in these sub-processes is unknown. Pharmacological inactivation of the macaque MD during specific phases of this task revealed that MD is required for reward valuation and action selection. This profile is unique, differing from both amygdala and subregions of the OFC.
 
 ## Introduction
 
@@ -45,6 +45,18 @@ In the above probe tests, the animal selected between two objects, each baited w
 A shift in choices between the baseline and sated probe tests is reflected by a positive proportion shifted (see Materials and methods) and indicates successful devaluation. A value of 1 indicates a complete shift away from objects predicting the sated food, a value of 0 indicates no shift in preference. Thus, decreases in proportion shifted after experimental manipulations indicate impaired reinforcer devaluation.
 
 On separate testing weeks, we microinjected the GABAa receptor agonist muscimol (MUS, 9 nmol), the glutamate receptor antagonist kynurenic acid (KYNA, 450 nmol), or saline into the MD, either prior to selective satiation or prior to the sated probe test (Figures 2A1–4). MRI-guided stereotaxic targeting of the MD was performed and confirmed (Figure 2B) as we have described for other regions (Wellman et al., 2005; West et al., 2011). We microinjected drug or vehicle at one of these two points during the task (see Figure 2A), to dissociate potential impairments in value updating (infusion before satiation; Figure 2A1 and A3) from impairments in action selection (infusion prior to probe; 2A2, 2A4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37325/elife-37325-fig2-v2.jpg)
+
+**Figure 2.:** Muscimol (MUS, blue), was infused either before satiation (A1), and was thus present during both satiation and the probe test, or infused 30 min before the probe test, and was thus present only during the probe test (A1). The 30 min interval between infusion and test in (A2) was selected to match the interval between infusion and probe in (A1). Kynurenic acid (KYNA, red) was infused either before satiation (A3) or before the probe test (A4). The 15 min interval between satiation and probe test in (A3) was selected to allow for clearance of KYNA prior to the probe test. (B) Intended infusion sites (top) with representative MRIs showing gadolinium contrast after infusion into the MD of two subjects (bottom). (C–J) Histograms indicate means + SEM with individual subject data points overlaid. *=significant difference from control, p<0.05; ^=significantly greater than chance, p<0.05. Full statistical results are presented in Supplementary file 1c.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37325/elife-37325-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Two animals (EL and LO) were microinjected with a lower dose of KYNA (150 nmol, i.e., one third of the dose we used in the experiments shown in Figure 2). The half-life of KYNA after microinjection into the rodent hippocampus is non-linear with values increasing from a T1/2 of 8 min during the 15 min immediately following drug infusion, to a T1/2 of 16 min in the second 15 min following drug infusion, and further still to a T1/2 of 24 min in the second 30 min following drug infusion (Vécsei and Beal, 1990; Turski and Schwarcz, 1988). Similar studies have not been performed in primates, but these data are consistent with our prior observations of the duration of deficits following KYNA injection (Forcelli et al., 2014). Based on the timing of our experiments (the probe session was conducted 45 min after drug infusion,~3 half-lives), less than 10% of drug is expected to remain during the probe session. However, to take a conservative approach, we selected the dose of 150 nmol to approximate two half-lives. The proportion shifted did not differ after injection of this lower dose of KYNA. These data support the timing of our experiments in Figure 2, and strongly suggest that KYNA infusion prior to satiation does not result in neuroactive levels of drug remaining by the time the probe test is initiated. Thus, deficits we observed following KYNA infusion before satiation in Figure 2 are due to impacts on the MD during satiation per se.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37325/elife-37325-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** We compared the magnitude of devaluation deficits in the present study to those in our prior reports following microinjection of MUS into either the BLA or OFC (Wellman et al., 2005; West et al., 2011). The only other primate study to employ inactivation methods in the reinforcer devaluation task used a different agent (THIP) (Murray et al., 2015) so we were unable to compare those data to experiments conducted using MUS. Moreover, all prior studies of the thalamus in the reinforcer devaluation task have used permanent lesions, rather than inactivation (Izquierdo et al., 2004; Izquierdo and Murray, 2010; Browning et al., 2015), and thus were not compared to the present study. Note that West and colleagues (2011) did not attempt to dissociate between the effects of inactivation of Area 11 and Area 13. Further, note that the Wellman study (2005) only found a deficit after injection before satiation, and not when MUS was injected prior to the probe. Thus, only data from the infusion before satiation condition are included. To compare across these studies, we normalized the proportion shifted after drug infusion to the proportion shifted after control infusions. Normalization was required, as the raw proportion shifted under saline conditions differed substantially across these studies. Proportion shifted values for drug-infused sessions were expressed as a percent of the value during the control session, thus, a value of 100% indicates no deficit. In all cases, a one-tailed, one sample T-test (against a test value of 100, i.e. no change from control) confirmed the presence of deficits compared to control conditions. [Wellman et al., Before Satiation: t = 3.8, df = 5, p=0.006; West et al., Before Satiation: t = 2.47, df = 3, p=0.045; Present Study, Before Satiation: t = 5.73, df = 3, p=0.005; West et al., Before Probe: t = 2.68, df = 3, p=0.0375; Present Study, Before Probe: t = 4.38, df = 3, p=0.011]. We next analyzed the normalized proportion shifted for the three studies when MUS was infused before satiation. Analysis of Variance did not reveal a significant treatment effect (F2,11=2.768, p=0.106), but consistent with visual observation of the data, there was a non-significant trend towards a difference between the effect in the present study and that reported in Wellman et al., p=0.084, Dunnett's test). We next compared the proportion shifted when MUS was infused prior to the probe test in West, et al., to that in the present study. Unpaired t-test showed that the magnitude of devaluation did not differ between these conditions (t=0.4691, df=6, p=0.6555). These data suggest that deficits caused by inactivation of any of these regions are similar in magnitude, although, in the case of infusion before satiation, there is a trend toward more severe deficits after inactivation of BLA. The symbols used for the present study follow the conventions in the other figures. Diamonds show individual animals for the other studies. In all cases, the deficits we observed fell within the range of deficits previously reported after inactivation of the BLA and OFC.
 
 Under baseline conditions, animals displayed a slight, but significant, preference for one type of reward (Figure 2F). This was evident in their choosing a larger proportion of objects predicting that reward (baseline preference ratio). This pattern is similar to what has been previously reported (Mitchell et al., 2007; West et al., 2011). Under saline-infused condition, animals displayed robust devaluation following satiation; the devaluation effect was demonstrated by a shift away from choices of objects associated with the devalued food.
 
@@ -74,7 +86,7 @@ The present data delineate the role of the MD in each of the processes integral 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Four adult, male, rhesus macaque (Macaca mulatta) were subjects in the present study. At the start of the first reinforcer devaluation study they weighed 8.2–9.8 kg. They were housed with visual access to conspecifics in standard home cages (61 × 74×76 cm each).
 
@@ -82,51 +94,63 @@ Water was available ad libitum in the home cage. Meals (LabDiet #5049) were prov
 
 These animals were previously tested on a within-session concurrent discrimination learning task (unpublished) and a previous study using the current reinforcer devaluation task with systemic drug administration (Waguespack et al., 2018).
 
-## Apparatus and materials
+### Apparatus and materials
 
 The monkeys were trained in a Wisconsin General Testing Apparatus located in a darkened sound-shielded room. The test tray, which was located at the level of the floor of the monkey transport cage, contained two food wells spaced 18 cm apart (center to center) on the midline of the tray. The wells were 25 mm in diameter and 5 mm deep. The stimuli were 80 junk objects that differed widely in shape, size, color, and texture.
 
-## Food reinforcers
+### Food reinforcers
 
 We selected two highly palatable foods that are commonly used as reinforcers across laboratories for this task: fruit snacks and peanuts (Málková et al., 1997; Izquierdo and Murray, 2010; Wellman et al., 2005). Food one was a fruit snack (Sharkbites; General Mills) and food two was half of a honey roasted peanut (Planters; Kraft Foods). Animals did not receive these food reinforcers outside of the context of this task (e.g., as enrichment or reinforcers for other tasks).
 
-## Behavioral training and testing
+### Behavioral training and testing
 
 Monkeys were trained on the task, as described previously (Málková et al., 1997).
 
-## Concurrent visual discrimination
+### Concurrent visual discrimination
 
 The animals were first trained on a set of 40 object-discrimination problems. The objects were placed over the food wells; the monkey could only see and retrieve the food by displacing an object. In each of the 40 object pairs, one object (S+) was baited with a food reinforcer and the other was unbaited (S−). Half of the S+ objects were baited with fruit snacks and the other half baited with peanuts, intermixed within a session. The S+ and S− assignment of the objects, the order of the object pairs, and the food reinforcer paired with particular objects remained constant across days; however, the left–right positions of the S+ object was pseudorandomized. The intertrial interval between the presentations of two consecutive pairs was 20 s. The monkeys were trained at a rate of one session per day, 5 d a week, until they reached criterion, which was set at a mean of 90% correct responses or better over five consecutive days (i.e., 180 or more correct responses of 200). During the course of this training animals learned, incidentally, the food-object association.
 
-## Probe sessions
+### Probe sessions
 
 Upon reaching criterion on the concurrent visual discrimination, the animals’ choices of objects were assessed in probe sessions, in which only baited objects (S+) were used. For each probe session, the 40 S+ objects were randomly assigned to create 20 pairs of probe trials, each offering a choice between an object baited with fruit snack and an object baited with peanut. The left-right position of the object-food pairs was randomized within a session and across days.
 
-On each probe trial, the animal was allowed to select one of the two objects and retrieve the food reward. By repeating this for each of the 20 pairs of probe trials, this allowed for the assessment of baseline preference (Figure 2F and Figure 2J) for object-food pairs. Animals typically choose more objects baited with one type of food reward (e.g., Food 1) over those baited with the other type (e.g., Food 2). Those chosen in higher numbers are considered ‘preferred’. Baseline preference ratio was calculated with the following equation:Fpreferred/Ftotalwhere the number of objects chosen with preferred primary reinforcer were divided by the total number of objects chosen.
+On each probe trial, the animal was allowed to select one of the two objects and retrieve the food reward. By repeating this for each of the 20 pairs of probe trials, this allowed for the assessment of baseline preference (Figure 2F and Figure 2J) for object-food pairs. Animals typically choose more objects baited with one type of food reward (e.g., Food 1) over those baited with the other type (e.g., Food 2). Those chosen in higher numbers are considered ‘preferred’. Baseline preference ratio was calculated with the following equation:
+
+$$
+F_{preferred}/F_{total}
+$$
+
+where the number of objects chosen with preferred primary reinforcer were divided by the total number of objects chosen.
 
 Other probe sessions (sated probe; see below) were preceded by a devaluation procedure, in which the monkey was allowed to consume one of the two food rewards to satiation (selective satiation).
 
-## Selective satiation
+### Selective satiation
 
 To experimentally induce ‘devaluation’ of one reinforcer, animals were subjected to selective satiation. Selective satiation sessions were conducted >14 hr after the last feeding. During the satiation procedure, a food box attached to the monkey’s home cage was filled with one of the two food reinforcers (either food 1 or food 2) of a measured quantity. The monkey was allowed to eat the food for 15 min, at which point the experimenter re-entered the room and checked the amount of food eaten. If the monkey consumed all of the initially offered food, the experimenter gave the monkey more food. This was repeated until the animal did not take additional food over a five minute period. At that time, the remaining food was removed and measured. In all cases, 30 min was a sufficient time to complete this procedure. After selective satiation, animals were tested in the probe sessions as described above.
 
 Typically-responding animals will shift behavior such that objects associated with the sated (devalued) food are rejected in favor of the objects associated with the non-sated (non-devalued) food. This results in a clear shift in the preference score toward the objects associated with the non-devalued food. Each object was presented only once during the probe session, so that the assessment was uncontaminated by new learning. Therefore, the rejection of an object associated with the sated food is an indication that the devaluation of the food was cognitively transferred to the object.
 
-In a counterbalanced manner, this procedure was repeated for each of the two foods for each test condition. Data across these two devaluation sessions for each condition were used to evaluate the magnitude of devaluation, which was assessed by measuring the proportion shifted, previously described (Murray et al., 2015). Proportion shifted was calculated according to the formula:Proportionshifted=[(F1N−F1D)+[(F2N−F2D)]/(F1N−F2N)where F1N is the number of objects baited with fruit snacks chosen during the baseline probe, F1D is the number objects baited with fruit snack chosen during the sated probe, F2N is the number of objects baited with peanuts chosen during the baseline probe and F2D is the number of objects baited with peanuts chosen during the sated probe.
+In a counterbalanced manner, this procedure was repeated for each of the two foods for each test condition. Data across these two devaluation sessions for each condition were used to evaluate the magnitude of devaluation, which was assessed by measuring the proportion shifted, previously described (Murray et al., 2015). Proportion shifted was calculated according to the formula:
+
+$$
+Proportionshifted=[(F1_{N}−F1_{D})+[(F2_{N}−F2_{D})]/(F1_{N}−F2_{N})
+$$
+
+where F1N is the number of objects baited with fruit snacks chosen during the baseline probe, F1D is the number objects baited with fruit snack chosen during the sated probe, F2N is the number of objects baited with peanuts chosen during the baseline probe and F2D is the number of objects baited with peanuts chosen during the sated probe.
 
 The amount of food consumed during the selective satiation experiments is shown in Supplementary file 1a.
 
-## Cranial infusion platform
+### Cranial infusion platform
 
 Prior to training on the task, each monkey was implanted with a head post and a stereotaxically positioned infusion chamber. The chamber allowed a removable injector, fitted with an infusion cannula of adjustable length to be inserted into predetermined sites in the brain through the guiding channels of a grid. The rectangular chamber (38 mm length x 51 mm width) was covered with a removable top that was secured with four screws. For drug infusions, the top was removed and a grid was inserted to provide guiding channels for the placement of the injector and cannula. The grid (25 mm length, 41 mm width) contained 2 mm - length guiding channels set 1 mm apart (center to center). Surgery was performed as previously described (Murray et al., 2015).
 
 A custom-built telescoping injector made of polyethylene terephthalate polyester (Elmeco Engineering) was designed to fit snugly into the infusion grid and allowed for sub-millimeter adjustment of infusion cannula (27 ga stainless steel tubing) length (Wellman et al., 2005; West et al., 2011). Thus, our final spatial resolution for infusion targeting was 2 mm in the anteroposterior and mediolateral planes, and 0.25 mm in the dorsal-ventral plane.
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 Postoperatively, each monkey received one or more T1-weighted scans to determine and/or verify the coordinates for the infusion sites. Scans were conducted as previously described (Wellman et al., 2005; West et al., 2011) with an effective resolution of 0.25 × 0.25 × 0.25 mm. To calculate infusion site coordinates, a dilute gadolinium solution was instilled into the chamber. Gadolinium contrast allowed for the detection of the position of each of the guide channels within the infusion grid. To verify the volume of diffusion of the infused solution, we infused 1 ul (5 nmol) of an MRI contrast agent, gadolinium (5 mM solution diluted in sterile saline; Magnevist) as previously described. The resolution of this scan was 1 mm x 1 mm x 1 mm. The range of diffusion visualized in MRI sections was limited to a diameter of 3 mm at 60 min after infusion, in agreement with previous gadolinium imaging in our laboratory and others (Forcelli et al., 2014; Krauze et al., 2005; Fiandaca et al., 2009).
 
-## Experimental procedure
+### Experimental procedure
 
 For each drug, we evaluated performance in the: (Málková et al., 1997) Object Probe [baseline probe, sated probe], (2) Consummatory Probe, (Timbie and Barbas, 2015) Baseline Preference, and (4) Concurrent Visual Discrimination. For Object and Consummatory Probe tests, we compared performance after drug infusion with matched saline (or sham) infusions. For baseline preference and concurrent visual discrimination, performance was compared to non-injected baselines.
 
@@ -134,41 +158,41 @@ In order to minimize penetrations of the brain, animals received one saline infu
 
 Animals AN, TA, EL, and LO were used for experiments with MUS. LO was not included for experiments with KYNA, as he became uncooperative after the completion of experiments with MUS.
 
-## Drug preparation and dose selection
+### Drug preparation and dose selection
 
 The GABAa receptor agonist muscimol (MUS; Sigma Aldrich) was dissolved in sterile saline at a concentration of 9 mM. The broad-spectrum ionotropic glutamate receptor antagonist, kynurenic acid (KYNA; Sigma Aldrich) was dissolved first in a small quantity of NaOH, neutralized with dilute HCl, and adjusted to the final concentration of 300 mM by addition of sterile water. All drug solutions were filter sterilized (0.20 µm pore size, Corning) before being stored in 1 ml frozen aliquots (−20C).
 
 Drug doses and concentrations were selected on the basis of our prior microinfusion studies in macaques. We have previously reported functional effects of muscimol within the range of 4.5 to 9 nmol per infusion (i.e., 0.5 to 1 ul of a 9 mM solution) (Wellman et al., 2005; West et al., 2011). Similarly, we have reported functional effects of KYNA infusion in the range of 300–600 nmol per infusion (Forcelli et al., 2014; Malkova et al., 2015) (i.e., 1–2 ul of a 300 mM solution).
 
-## Timing of drug infusions relative to behavioral testing
+### Timing of drug infusions relative to behavioral testing
 
 As shown in Figure 2A, for MUS, we matched the time between infusion and probe test to ensure an equal diffusion of drug between conditions. To accomplish this, we inserted a 30 min delay between infusion and probe test, when the drug was infused after satiation but before the probe. This strategy is similar to that used in the amygdala and orbitofrontal cortex (Wellman et al., 2005; West et al., 2011). The duration of action of MUS when microinjected into the brain easily exceeds 90 min; in a prior study, we found that effects of MUS infusion increased over the duration of a 90 min infusion period and observed behavioral responses that in some cases lasted for several hours (Dybdal et al., 2013). Thus, it was not possible to allow sufficient time for clearance of MUS prior to the probe test.
 
 In order to determine, what, if any, effect the MD plays exclusively during the period of satiation, we required a compound that would be cleared by the time the probe test occurred. For this reason, we turned to KYNA, which is quickly cleared in the brain and has a relatively short duration of action (Forcelli et al., 2014; Vécsei and Beal, 1990; Turski and Schwarcz, 1988). In rodent studies, the half-life of KYNA in brain has been reported to range from 5 to 30 min (Turski and Schwarcz, 1988). Consistent with this timecourse, in a prior study, we observed normalization of cognitive function within 45 min of infusion of KYNA (Forcelli et al., 2014) (and unpublished observations) in the primate brain. To maximize time for clearance of KYNA when infused prior to satiation, we inserted a 15 min delay following the satiation procedure; thus the total time from the end of the infusion to the start of the probe was ~45 min. Finally, we infused KYNA at a lower dose (150 nmol) in two animals (EL/LO). This dose of KYNA was without effect on the proportion shifted when infused before the probe test (0.71 and 0.72 after KYNA, as compared to 0.73 and 0.85 after control, respectively; see Figure 2—figure supplement 1). Given the half-life of KYNA in brain, even if sparse amounts of KYNA remained when animals were infused before satiation, the concentration of KYNA remaining would not be sufficient to produce the significant deficits observed.
 
-## Intracerebral drug infusions
+### Intracerebral drug infusions
 
 Drug infusions were performed using an aseptic technique while the monkey was seated in a primate chair with its head posted. The chamber was cleaned immediately prior to each infusion. Coordinates for drug infusion were determined based on individual MRI scans for each monkey. Animals were infused, bilaterally, with either MUS, KYNA, or sterile saline (0.9% NaCl). Drugs were infused at a rate of 0.2 ul/min using the removable injector described above, connected by sterile tubing to Hamilton syringe driven by an injection pump (New Era Pumps Systems). Infusion progress was monitored by the displacement of a small air bubble introduced into the tubing.
 
-## Effect of drug infusion on object probe
+### Effect of drug infusion on object probe
 
 Weekly testing occurred per the following schedule (see Figure 1). On Day 1, animals were tested on concurrent visual discrimination. If animals correctly chose >90% baited S+ objects during concurrent visual discrimination, on Day two they were tested on a baseline probe. If animals performed below this criterion, they were re-tested on concurrent visual discrimination until they again met the criterion of >90%. On Day 3, animals were again tested on concurrent visual discrimination. On Day 4, animals were infused with drug or saline before satiation or after satiation period, then tested on the object probe session.
 
-## Effect of drug infusion on consummatory probe
+### Effect of drug infusion on consummatory probe
 
 To determine if drug manipulations impaired the typical change in value of primary reinforcers that occurs after satiation, we evaluated performance in a consummatory probe session. Immediately after the completion of both the baseline and sated object probe sessions (described above), animals were presented with 20 pairs of primary reinforcers (fruit snack and peanut) in the absence of objects. The left-right positions of each reinforcer were pseudorandomized across the 20 trials.
 
-## Effect of drug infusion on baseline preference
+### Effect of drug infusion on baseline preference
 
 Animals typically display a small, but significant preference for objects associated with one of the two food reinforcers. To determine if inactivation of the MD impacted this baseline preference, animals were tested in a weekly sequence consisting of concurrent visual discrimination on Day 1, baseline probe on Day 2, and re-tested on the baseline probe following drug infusion on Day 3.
 
 After infusion of KYNA, animals were immediately transferred into the WGTA; following MUS infusion, animals were returned to the home cage for 30 min prior to transfer to the WGTA and testing. This timing was selected to match the timing used for the sated object probe.
 
-## Effect of drug infusion on concurrent visual discrimination
+### Effect of drug infusion on concurrent visual discrimination
 
 To determine if drug manipulations impaired concurrent visual discrimination performance, animals were tested in a sequence consisting of the concurrent visual discrimination task on Day 1. On Day 2, animals were infused with either MUS or KYNA, transferred to the WGTA, and re-tested on the concurrent visual discrimination task. The timing of drug infusions and testing follows that described above for Baseline Preference testing.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical comparisons were made on a within-subject basis. Results of saline/sham infusions for each animal (both before and after selective satiation) were pooled to generate a cumulative preference shift; in this way, both foods were represented in the control condition.
 
@@ -178,6 +202,6 @@ Concurrent visual discrimination and baseline preference ratio were analyzed by 
 
 All data were analyzed using GraphPad Prism (ver 7, Graph Pad, La Jolla, CA). In all cases, P values less than 0.05 were considered statistically significant. Full statistical results are shown in Supplementary file 1c.
 
-## Data availability statement
+### Data availability statement
 
 The data generated and analyzed during this study are all presented in summary form in the manuscript. Data for object selection during the testing sessions are shown in Supplementary file 1d.

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Micturition requires precise control of bladder and urethral sphincter via parasympathetic, sympathetic and somatic motoneurons. This involves a spino-bulbospinal control circuit incorporating Barrington’s nucleus in the pons (Barr). Ponto-spinal glutamatergic neurons that express corticotrophin-releasing hormone (CRH) form one of the largest Barr cell populations. Barr CRH neurons can generate bladder contractions, but it is unknown whether they act as a simple switch or provide a high-fidelity pre-parasympathetic motor drive and whether their activation can actually trigger voids. Combined opto- and chemo-genetic manipulations along with multisite extracellular recordings in urethane anaesthetised CRH Cre mice show that Barr CRH neurons provide a probabilistic drive that generates co-ordinated voids or non-voiding contractions depending on the phase of the micturition cycle. CRH itself provides negative feedback regulation of this process. These findings inform a new inferential model of autonomous micturition and emphasise the importance of the state of the spinal gating circuit in the generation of voiding.
+Micturition requires precise control of bladder and urethral sphincter via parasympathetic, sympathetic and somatic motoneurons. This involves a spino-bulbospinal control circuit incorporating Barrington’s nucleus in the pons (Barr). Ponto-spinal glutamatergic neurons that express corticotrophin-releasing hormone (CRH) form one of the largest Barr cell populations. BarrCRH neurons can generate bladder contractions, but it is unknown whether they act as a simple switch or provide a high-fidelity pre-parasympathetic motor drive and whether their activation can actually trigger voids. Combined opto- and chemo-genetic manipulations along with multisite extracellular recordings in urethane anaesthetised CRHCre mice show that BarrCRH neurons provide a probabilistic drive that generates co-ordinated voids or non-voiding contractions depending on the phase of the micturition cycle. CRH itself provides negative feedback regulation of this process. These findings inform a new inferential model of autonomous micturition and emphasise the importance of the state of the spinal gating circuit in the generation of voiding.
 
 ## Introduction
 
@@ -37,23 +37,43 @@ Here, we study the role of BarrCRH neurons in the autonomous micturition cycle i
 
 ## Results
 
-## BarrCRH neurons modulate micturition
+### BarrCRH neurons modulate micturition
 
 Recent studies have drawn apparently contrasting conclusions about the role and importance of BarrCRH neurons in the regulation of volitional voiding (Hou et al., 2016; Keller et al., 2018). To further define their role, the light-activated cation channel ChR2 (channelrhodopsin-2) was selectively expressed in BarrCRH neurons of CRHCRE mice (Taniguchi et al., 2011) using a Cre-dependent adeno-associated viral vector (AAV-EF1α-DIO-ChR2-mcherry) (Figure 1A–C, Figure 1—figure supplement 1). Saline infusion to the bladder in urethane anaesthetised mice produced a regular cycle of autonomous micturition (voids at ~5 min intervals, average infusion rate 23 ± 4 µl/min). Tonic unilateral activation of BarrCRH neurons (5–20 Hz x 20 ms, 465 nm light pulses, applied for three completed voiding cycles) produced an increase of micturition frequency (to 153.2 ± 15.6% of basal after 10 Hz stimulation, Figure 1D) manifesting as a significant shortening in inter-void interval associated with a reduction of the threshold pressure for voiding (84.0 ± 4.7% at 10 Hz, Figure 1E). Similar illumination in control mice (CRHCRE mice injected with AAV-DIO-hm4Di-mCherry instead of ChR2) had no effect on voiding frequency.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig1-v2.jpg)
+
+**Figure 1.:** (A) AAV-DIO-ChR2-mCherry injection to dorsal pons in CRHCre mice followed after 3 weeks by opto-activation by light (465 nm) from an optical fibre. (B) In vivo recording in urethane anaesthetized mice with optical fibre positioned above Barrington’s nucleus in the pons with bladder pressure and external urethral sphincter activity monitoring during the micturition cycle (with continuous bladder filling). (C) Post-hoc histology after stereotaxic injection of AAV-DIO-ChR2-mCherry demonstrating transduction of BarrCRH neurons in sections of dorsal pons. Immunohistochemistry for mCherry (Magenta) shows transduced Barr neurons and Tyrosine hydroxylase (Green) marks the adjacent Locus Coeruleus. (D) Periods of maintained unilateral opto-activation of BarrCRH:ChR2 increased the frequency of micturition (light pulsed at 5, 10 and 20 Hz x 20 ms for three micturition cycles). (E) Continuous opto-activation (5, 10 and 20 Hz) reversibly shortened the inter-void interval (n = 7 mice). Similarly, the threshold for voiding was reversibly reduced with 5 and 10 Hz stimulation (Friedman test with Dunn’s multiple comparisons to prior unstimulated state *p<0.05, **p<0.01, Figure 1—source data 1). NVC – Non-voiding contraction. Cystometrogram measures shown on Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Following injection of AAV-EF1α-DIO-ChR2-mcherry to CRHCre mice, expression of mCherry was seen in the dorsal pons (Bregma −5.34 to −5.7) in Barrington’s nucleus (overlaid atlas section from Paxinos and Franklin, 2008). (B) Cell counts of transduced neurons in Barrington’s nucleus from three mice showing mean ± SD. Immuno- for mCherry with Alexa594 conjugated secondary antibody. LC – locus coeruleus, Barr – Barrington’s nucleus.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Typical cystometrogram trace showing two complete voids and the intervening storage phase in response to a continuous infusion of saline to the bladder. The measured variables are indicated on the bladder pressure trace:• Inter-void interval as time between successive voids.• Basal pressure was taken as the lowest bladder pressure reached after a void.• Voiding threshold was the bladder pressure at the point of initiation of voiding.• Micturition pressure was the peak bladder pressure achieved during a void.• Non-voiding contractions (NVCs, open triangles marking some of the events) were identified as discrete increases in bladder pressure (>0.1 mmHg) observed during the filling phase.
 
 Chemogenetic-inhibition of BarrCRH neurons was achieved by expressing an inhibitory DREADD (Figure 2A, bilateral injection of AAV-DIO-hM4Di to CRHCRE mice). Administration of Clozapine N-oxide (CNO, 5 mg/kg i.p) produced a prolonged reduction in the frequency of voids seen during a continuous infusion protocol (reduced to 66.8 ± 6.3% of control at 20 mins, Figure 2B). This was associated with increases of threshold pressure, fill volume and micturition pressure (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig2-v2.jpg)
 
-**Figure 2.:** CRH neurons prolongs the micturition cycle.(A) Transduction of BarrCRH with inhibitory DREADD using AAV-DIO-hM4Di-mCherry demonstrated with immunocytochemistry for mCherry (magenta) and Tyrosine hydroxylase (green) to mark the Locus Coeruleus. (B) Administration of the DREADD ligand CNO (5 mg/kg, i.p) slowed the frequency of micturition seen with continuous saline infusion to the bladder. (C) The chemogenetic inhibition of BarrCRH:hM4Di neurons caused an increase in the voiding threshold (129.7 ± 8.9%), volume infused before void (161.9 ± 16.9%) and micturition pressure (131.7 ± 6.9%) compared to baseline (RM-ANOVA with Holm-Sidak’s post hoc, *p<0.05, **p<0.01) unlike control mice (BarrCRH:ChR2, n = 9 per group) where CNO was without significant effect. In each case this CNO effect peaked around 20 min after administration and reversed slowly. (D) Using an intermittent bladder infusion protocol (to a maximum bladder pressure of 15 mmHg) CNO administration inhibited voiding with (E) a large increase in the latency to void (time after start of infusion) – equivalent to urinary retention (n = 5) (RM-ANOVA with Holm-Sidak’s post hoc, *p<0.05, **p<0.01). Source data in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) Transduction of BarrCRH with inhibitory DREADD using AAV-DIO-hM4Di-mCherry demonstrated with immunocytochemistry for mCherry (magenta) and Tyrosine hydroxylase (green) to mark the Locus Coeruleus. (B) Administration of the DREADD ligand CNO (5 mg/kg, i.p) slowed the frequency of micturition seen with continuous saline infusion to the bladder. (C) The chemogenetic inhibition of BarrCRH:hM4Di neurons caused an increase in the voiding threshold (129.7 ± 8.9%), volume infused before void (161.9 ± 16.9%) and micturition pressure (131.7 ± 6.9%) compared to baseline (RM-ANOVA with Holm-Sidak’s post hoc, *p<0.05, **p<0.01) unlike control mice (BarrCRH:ChR2, n = 9 per group) where CNO was without significant effect. In each case this CNO effect peaked around 20 min after administration and reversed slowly. (D) Using an intermittent bladder infusion protocol (to a maximum bladder pressure of 15 mmHg) CNO administration inhibited voiding with (E) a large increase in the latency to void (time after start of infusion) – equivalent to urinary retention (n = 5) (RM-ANOVA with Holm-Sidak’s post hoc, *p<0.05, **p<0.01). Source data in Figure 2—source data 1.
 
 The chemogenetic inhibition of BarrCRH during this continuous filling protocol caused the bladder to become increasingly distended leading to incomplete voids. To control for this effect a ‘fill and hold’ protocol was employed to fill the bladder to a maximum pressure of 15 mmHg (close to the threshold pressure for voiding). This volume was held for up to 10 min until either the mouse voided spontaneously, or the bladder was manually emptied, and the filling cycle restarted (Figure 2D). Using this protocol, chemogenetic inhibition caused a prolongation of the latency to void (from 207 ± 17 s at baseline to 738 ± 60 s at 20mins after CNO). This effectively produced a period of urinary retention, that persisted for 2 hr (Figure 2E).
 
 These findings indicate that BarrCRH neurons have a potent ability to modulate the autonomous micturition cycle and that their basal level of activity is of functional importance.
 
-## BarrCRH neurons do not simply act as high-fidelity controllers of bladder pressure
+### BarrCRH neurons do not simply act as high-fidelity controllers of bladder pressure
 
 To assess whether BarrCRH neurons act as a tightly-coupled, pre-motor drive to bladder parasympathetic neurons (Fowler et al., 2008; de Groat and Wickens, 2013) bladder pressure was recorded while parametrically opto-activating Barrington’s nucleus unilaterally (9.5 ± 0.3 mW, 465 nm). In initial experiments, unilateral opto-activation of BarrCRH (20 ms x 20 Hz for 5 s) evoked non-voiding contractions of the bladder (eNVC, Figure 3A and B, with the bladder filled to half of its threshold capacity, n = 7 mice). These eNVC were similar to the transient bladder contractions triggered by optoactivation of BarrCRH neurons previously noted by Hou et al. (2016). Varying stimulus frequencies and pulse durations produced modestly graded changes in eNVC with a 20 ms x 20 Hz protocol producing near maximal responses (3.9 ± 0.8 mmHg, Figure 3C and D). The eNVC had a consistent latency to onset of 1.3 ± 0.1 s and a time to peak of 6.0 ± 0.3 s following stimulus onset and an average duration of 8.2 ± 0.6 s. With each of the stimulus parameters there were ‘failures’ where there was no detectable bladder response (Figure 3 and E). The probability of eNVC increased with stimulation frequency (71.4 ± 7.6% at 2.5 Hz and 97.1 ± 2.5% at 20 Hz) with 20 Hz being the most reliable. Single light pulses of longer duration (1–3 s) were also able to reliably generate eNVC. In contrast, illumination in control mice (CRHCRE mice injected with AAV-DIO-hm4Di-mCherry instead of ChR2) had no effect on the bladder pressure (101.4 ± 0.6% compared to the pressure immediately before optoactivation at 20 Hz x 20 ms, n = 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bladder pressure recordings with unilateral opto-activation (B) Phasic opto-activation (20 ms x 20 Hz, 5 s) of BarrCRH neurons evoked non-voiding contractions (eNVCs, with the bladder ~half full, static). These eNVCs had a stereotyped shape and a relatively constant latency. In addition, there were ‘failures’ where no response was evoked by an identical stimulus. (C) Parameters of BarrCRH evoked non-voiding contractions. Threshold calculated at 20% of the amplitude, duration was measured at the threshold pressure. The latency was taken as the time from start of stimulation for the pressure to reach threshold. (D) The amplitude of eNVC increased with stimulation frequency (pulse length 20 ms for 5 s) and pulse duration (at 20 Hz for 5 s) (n = 7 mice). Higher frequencies of stimulation (50 Hz x10ms) did not substantially increase eNVC amplitude. Single longer light pulses (1–3 s) could also generate graded eNVCs. (E) The probability of generating an eNVC increased with stimulation frequency (pulse length 20 ms for 5 s) and pulse duration (frequency 20 Hz for 5 s). Longer light pulses (1–3 s) also reliably generated eNVCs. (RM-ANOVA with Dunnett’s post hoc or Friedman's test, *p<0.05, **p<0.01, ****p<0.0001). Source data in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Simultaneous recording of bladder pressure and rectal pressure with an intraluminal balloon showed no clear relationship between colonic pressure and the micturition cycle during continuous filling cystometry. (C, D) Similarly, although opto-activation (20 ms x 20 Hz for 5 s) of BarrCRH generated bladder eNVCs, there was no corresponding response in the distal colon.
 
 Previous anatomical studies with retrograde tracing using pseudorabies virus have suggested that there is a route for communication between afferent neurons innervating the distal colon and Barrington’s nucleus and further that Barrington’s neurons were activated by distention of the distal colon (Rouzade-Dominguez et al., 2003). This has led to the suggestion that Barrington’s nucleus may control the lower gastrointestinal tract as well as the lower urinary tract. Indeed, defaecation was suggested to occur on occasion (but not quantitated) following opto-activation of BarrCRH neurons in mice implying a role in motor control (Hou et al., 2016). To investigate a possible relationship between BarrCRH and activity in the distal colon, a balloon catheter was inserted to monitor pressure in pilot experiments (n = 2 mice). Distal colonic pressure was not synchronised with bladder pressure during the normal micturition cycle (Figure 3—figure supplement 1B). Furthermore, optogenetic activation of BarrCRH neurons did not alter distal colonic pressure (Figure 3—figure supplement 1C and D), despite the generation of bladder eNVC. This preliminary evidence suggests that this BarrCRH population of Barrington’s neurons is not involved in motor control of the colon.
 
@@ -61,17 +81,29 @@ It was postulated that recruitment of a larger population of BarrCRH neurons in 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig4-v2.jpg)
 
-**Figure 4.:** CRH evokes larger non-voiding contractions than unilateral optoactivation.(A) Bladder pressure recordings with unilateral or bilateral opto-activation following (B) bilateral injection of AAV-DIO-ChR2-mCherry. (C) Confirmation of bilateral BarrCRH:ChR2 transduction and optic fibre targeting (immuno for mCherry – magenta and TH - green). (D) Bladder pressure response showing the effect of unilateral or bilateral phasic opto-activation (20 ms x 20 Hz, 5 s) of BarrCRH neurons evoked non-voiding contractions (eNVCs, with the bladder ~half full, static). A comparison of the effects of unilateral versus bilateral stimulation (E) showed that bilateral stimulation evoked larger events and with an increased reliability than either side alone (each point represents data from a single mouse, n = 7 mice, RM-ANOVA with Dunnett’s post hoc or Friedman's test, *p<0.05, **p<0.01, ****p<0.0001). Source data in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) Bladder pressure recordings with unilateral or bilateral opto-activation following (B) bilateral injection of AAV-DIO-ChR2-mCherry. (C) Confirmation of bilateral BarrCRH:ChR2 transduction and optic fibre targeting (immuno for mCherry – magenta and TH - green). (D) Bladder pressure response showing the effect of unilateral or bilateral phasic opto-activation (20 ms x 20 Hz, 5 s) of BarrCRH neurons evoked non-voiding contractions (eNVCs, with the bladder ~half full, static). A comparison of the effects of unilateral versus bilateral stimulation (E) showed that bilateral stimulation evoked larger events and with an increased reliability than either side alone (each point represents data from a single mouse, n = 7 mice, RM-ANOVA with Dunnett’s post hoc or Friedman's test, *p<0.05, **p<0.01, ****p<0.0001). Source data in Figure 4—source data 1.
 
 These findings support the proposal that BarrCRH neurons can selectively generate bladder contractions and indicate that this is a probabilistic process, with failures, rather than being a simple high-fidelity pre-motor drive to the bladder.
 
-## Bladder pressure responses to BarrCRH drive augments with progress through the micturition cycle
+### Bladder pressure responses to BarrCRH drive augments with progress through the micturition cycle
 
 This raised the question of whether the stage of the micturition cycle influences the bladder pressure response to BarrCRH opto-activation as the cycle phase may modulate BarrCRH neuronal excitability. During continuous bladder filling, it was noted that the amplitude of BarrCRH eNVC increased progressively through the micturition cycle (increase of 17.0 ± 3.9 fold, comparing eNVC obtained during the 2nd versus 5th quintile of micturition cycle, Figure 5A–D). This phenomenon was also observable, albeit not quantitated or commented upon, in the recordings of Hou et al. (2016), see Figure 5B). Similarly, the probability of obtaining a bladder contraction with optoactivation also increased with progressive filling, with most ‘failures’ being seen when the bladder was <40% filled (Figure 5E). The same phase dependence of eNVC was also apparent with bilateral stimulation of BarrCRH (Figure 5—figure supplement 1A and B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental set-up with unilateral opto-activation of BarrCRH neurons. (B) Continuous infusion cystometry with episodic opto-activation (20 Hz x 20 ms for 5 s) applied at different phases of the micturition cycle generates eNVC of incrementing amplitude as the cycle progresses. (C) There is a substantial increase in the amplitude of the eNVC as the micturition cycle progresses (17.0 ± 3.9 fold comparing eNVC from the 2nd and 5th quintiles of the cycle) (RM one-way ANOVA followed by Dunnet’s test, *-P < 0.05, **-P < 0.01). (D) Overlaid bladder pressure responses to the same optogenetic stimulus applied (x3) at different phases of the cycle can trigger either no response or eNVCs or full voiding contractions that show a stereotyped morphology and latency. (E) Analysis of the stage of the voiding cycle where each type of response was triggered showed that voiding contractions were significantly more likely to be evoked later in the voiding cycle (each symbol represents the average position of such events in each mouse, n = 8) (RM one-way ANOVA with Tukey’s test, ##-P < 0.01, ####-P < 0.0001). (F) The bursting pattern of EUS activity was similar with both BarrCRH-evoked and spontaneous voids. Source data in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison of unilateral with bilateral opto-activation of BarrCRH neurons during continuous filling cystometry showing the graded increase in eNVC amplitude with phase of the micturition cycle and the augmented response to bilateral stimulation. (B) Bilateral stimulation evoked larger eNVC, an effect that is more pronounced later in the micturition cycle (n = 7 mice). (* - p<0.05, Related samples Friedman's two way-ANOVA by ranks.). Source data in Figure 5—figure supplement 1—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Using the pithed decerebrate arterially perfused mouse preparation (n = 7), the bladder pressure was monitored while the pelvic nerve was stimulated using a bipolar suction electrode (10V, 4–20 Hz, train 3 s). Pelvic nerve stimulation evoked pressure responses that were dependent on stimulation frequency and on the degree of bladder distension. Source data in Figure 5—figure supplement 2—source data 1.
+
 The phase-dependence of eNVC amplitude may, in part, be a consequence of bladder distension, leading to raised passive detrusor tension and an increase of length-dependent contractions. To test this proposition, the effect of pelvic nerve stimulation was assessed in the pithed decerebrate, arterially-perfused mouse preparation (Ito et al., 2018; Ito et al., 2019). The amplitude of bladder contractions induced by pelvic nerve stimulation (4–20 Hz, 10V, 3 s) increased with bladder filling (Figure 5—figure supplement 2) with a doubling (2.2 ± 0.34 fold at 20 Hz) of the pressure generated between empty bladder and 70 µl fill (close to voiding threshold in an intact mouse). However, this amplitude increase plateaued at a volume of ~50 µl – and showed a much less steep relationship than that observed for BarrCRH eNVC in vivo which increased by 17-fold over the same range of bladder distension. Additionally, this relationship did not account for the observed probabilistic nature of eNVC, as failures were never observed with pelvic nerve stimulation.
 
-## BarrCRH stimulation can conditionally trigger complete voids
+### BarrCRH stimulation can conditionally trigger complete voids
 
 Although tonic stimulation of BarrCRH increased voiding frequency, it was not possible to trigger full voiding contractions with phasic BarrCRH stimulation with the bladder up to 50% filled, even with bilateral stimulation. However, by applying stimuli systematically at points through the micturition cycle it was possible to trigger fully co-ordinated voids by activating BarrCRH neurons later in the cycle (>50% filled, Figure 5B–D). The pattern and amplitude of the evoked bladder contraction was similar to that seen with spontaneous voids and they occurred at a similar latency to eNVC. In addition, voiding was complete and the empty bladder relaxed to the basal pressure level after each void.
 
@@ -79,21 +111,29 @@ The mouse external urethral sphincter (EUS) shows bursting activity during spont
 
 However, when BarrCRH activation evoked a voiding contraction then bursting EUS activity was always found (Figure 5D and F). These BarrCRH induced voids had EUS activity that was indistinguishable from spontaneous voids in terms of burst duration (spontaneous 4.4 ± 0.9 vs opto-induced 4.4 ± 1.0 s, n = 7, paired t-test, ns) and frequency (spontaneous 22.7 ± 2.7 vs opto-induced 21.5 ± 3.0 Hz, n = 7, paired t-test, ns)). These results indicate that the BarrCRH neurons can trigger voids that are in all aspects similar to those seen spontaneously but that can be triggered to occur earlier in the normal micturition cycle.
 
-## Spinal drive from BarrCRH neurons is sufficient to generate eNVC and voids
+### Spinal drive from BarrCRH neurons is sufficient to generate eNVC and voids
 
 The axons from BarrCRH were noted to provide a specific innervation of the sacral parasympathetic neurons but not to the ventral horn at the level of Onuf’s nucleus (Figure 6A, Figure 6—figure supplement 1). To investigate whether optogenetic stimulation of spinal axons of BarrCRH is sufficient to directly generate eNVC, bladder pressure was recorded while light was applied from an optic fibre located above the spinal cord. Optogenetic stimuli (either 20 ms x 20 Hz for 5 s or single 1 s pulse) applied to the spinal cord reliably induced bladder contractions (Figure 6B–D, p=0.025, bladder half filled). These eNVCs tended to occur with a shorter latency than those evoked directly from pontine stimulation (1.0 ± 0.2 s vs 1.26 ± 0.1 s, n = 5). Similarly, during continuous bladder filling, spinal activation could trigger full voids (Figure 6E). These data support the principle that the BarrCRH neurons can evoke both voiding and eNVC through their spinal projections.
 
-## Spinal CRH inhibits the bladder response to BarrCRH activation
+![Figure 6.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig6-v2.jpg)
+
+**Figure 6.:** (A) Unilateral transduction of BarrCRH neurons with AAV-EF1α-DIO-ChR2-mCherry. Spinal L5 section had immunocytochemistry for mCherry (red) and Choline acetyltransferase (green) to label filled BarrCRH axons and somatic and autonomic motoneurons. The BarrCRH axons show a lateralised distribution targeting the territory of parasympathetic preganglionic neurons at L5 (B) The spinal cord was exposed at the vertebral level of T11-12 and illuminated from an optic fibre placed above the cord. (C) Opto-activation (20 Hz x 20 ms for 5 s or single 1 s pulse) generated eNVCs (Related samples Friedman's test by ranks). (D) There was no difference in the eNVC in terms of amplitude or reliability between the two opto-stimulus patterns (n = 5 mice). (E) Opto-stimulation (20 Hz x 20 ms for 5 s) during continuous filling cystometry generated full voiding contractions as well as eNVCs. Source data in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Following unilateral transduction of BarrCRH neurons with AAV-EF1α-DIO-ChR2-mCherry, transverse spinal cord sections (30 µm) were cut from T10-S1 segments. Sections were processed for fluorescence immunocytochemistry for mCherry (red) and Choline acetyltransferase (green) to label filled BarrCRH axons and somatic and autonomic motoneurons, respectively. These are represented as widefield and confocal images of blow-outs. The BarrCRH axons show a lateralised distribution and can be seen to target the territory of parasympathetic preganglionic neurons at L6 as well as in the ventral horn area in S1. Note the absence of labelling close to somatic motoneurons and the sympathetic preganglionics at T10.
+
+### Spinal CRH inhibits the bladder response to BarrCRH activation
 
 It has been proposed that CRH released from Barrington’s neurons at a spinal level augments bladder pressure responses (Klausner and Steers, 2004; Klausner et al., 2005) although others have reported the opposite action (Pavcovich and Valentino, 1995; Kiddoo et al., 2006; Wood et al., 2013) and genetic knock out of CRH expression in Barrington’s neurons was without phenotype (Verstegen et al., 2019). If the release of CRH does increase during the micturition cycle, then this might be predicted to act as a positive feedforward mechanism to augment the parasympathetic and hence bladder pressure responses to BarrCRH drive. To test this hypothesis, the effect of intrathecal Astressin (a broad-spectrum CRH antagonist, 5 µg in 5 µl) on BarrCRH eNVC was assessed through the micturition cycle. Counter to the prediction, Astressin significantly and reversibly increased the amplitude of eNVC, an action that was more pronounced as the bladder filled (333 ± 75%, p=0.008 (n = 7), 20 mins after Astressin, Figure 7). Intrathecal Astressin also decreased the infused volume required to trigger a void (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig7-v2.jpg)
 
-**Figure 7.:** CRH neuronal optoactivation.(A) Assessment of the influence of intrathecal Astressin (CRH antagonist) on the bladder pressure response to bilateral optoactivation of BarrCRH neurons. (B) Intrathecal Astressin (5 µg) reversibly increased the amplitude of BarrCRH eNVC (n = 7 mice). (C) Summary data for the action of intrathecal Astressin on eNVC (versus vehicle control) showing that the augmentation of amplitude was particularly marked towards the end of the micturition cycle (Related samples Friedman's test by ranks, #-P < 0.05, ##-P < 0.01). (D) Even without BarrCRH opto-stimulation Astressin reversibly increased the frequency of voiding compared both to baseline and an intrathecal vehicle control group (n = 9) (vs baseline with related samples Friedman's test by ranks and vs vehicle with Mann-Whitney U test, *-P < 0.05, **-P < 0.01). Source data in Figure 7—source data 1.Figure 7—source data 1.
+**Figure 7.:** (A) Assessment of the influence of intrathecal Astressin (CRH antagonist) on the bladder pressure response to bilateral optoactivation of BarrCRH neurons. (B) Intrathecal Astressin (5 µg) reversibly increased the amplitude of BarrCRH eNVC (n = 7 mice). (C) Summary data for the action of intrathecal Astressin on eNVC (versus vehicle control) showing that the augmentation of amplitude was particularly marked towards the end of the micturition cycle (Related samples Friedman's test by ranks, #-P < 0.05, ##-P < 0.01). (D) Even without BarrCRH opto-stimulation Astressin reversibly increased the frequency of voiding compared both to baseline and an intrathecal vehicle control group (n = 9) (vs baseline with related samples Friedman's test by ranks and vs vehicle with Mann-Whitney U test, *-P < 0.05, **-P < 0.01). Source data in Figure 7—source data 1.
 
 This indicates that CRH is providing a negative feedback signal to limit the extent of the spinal parasympathetic response to BarrCRH neuronal activity (in agreement with Pavcovich and Valentino, 1995; Kiddoo et al., 2006; Wood et al., 2013). Therefore, increased release of CRH cannot account for the augmented responses to BarrCRH activation with progression through the micturition cycle.
 
-## BarrCRH activity anticipates bladder pressure during the micturition cycle
+### BarrCRH activity anticipates bladder pressure during the micturition cycle
 
 Neural recordings from cats (Sasaki, 2005a) and rats (Manohar et al., 2017) indicates that some putative Barrington’s neurons fire intermittently during the storage phase with an increase of firing that occurs around voiding, consistent with a role in mediating the drive to bladder parasympathetic neurons. Recent fibre photometric recordings of BarrCRH neurons, using the genetically encoded calcium indicator GCaMP6, indicate that the activity of these neurons is ‘in phase’ with the micturition cycle (Hou et al., 2016; Keller et al., 2018). However, fibre photometry is unable to resolve the action potential discharge patterns from BarrCRH neurons in vivo. As such it has not previously been possible to directly assess the functional relationship between BarrCRH firing and bladder pressure.
 
@@ -101,15 +141,31 @@ Neuronal activity was recorded in the vicinity of Barrington’s nucleus using a
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig8-v2.jpg)
 
-**Figure 8.:** CRH neurons.(A) Schematic with unilateral stimulation and recording of Barrington’s nucleus with simultaneous bladder and EUS monitoring. (B) Immunohistochemistry (mCherry - magenta and TH - green) confirming the position of the recording electrode (shown to scale and with its tip at the end of the histological track). The spike waveforms of individual units are shown schematically adjacent to their probe recording site. Note that the BarrCRH neurons (yellow) are clustered in sites located within Barrington’s nucleus whereas the non-identified neurons (green) lie above and below the level of Barrington’s nucleus. A third population of non-optoidentified neurons is shown in blue (labelled BarrCRH-like) whose firing pattern closely resembled the BarrCRH neurons (C) BarrCRH neurons were optoidentified by a short latency response to a brief light pulse (20 ms) data shown for a single representative unit top left. The population response of identified BarrCRH neurons shown below (n = 12, smoothed average firing rate curve generated by convolution of spikes with a Gaussian of SD 10 ms). The response to a 1 s light pulse is shown to the right with the same single unit and the population response from all BarrCRH neurons. Note that they showed an initial high frequency response that decayed to a plateau of ~20 Hz likely reflecting the kinetics of ChR2 currents. (D) Auto- and cross-correlations (1 ms bin size) of three opto-identified BarrCRH neurons with their average spike waveforms showing isolation and a degree of cross-correlation at short latency.
+**Figure 8.:** (A) Schematic with unilateral stimulation and recording of Barrington’s nucleus with simultaneous bladder and EUS monitoring. (B) Immunohistochemistry (mCherry - magenta and TH - green) confirming the position of the recording electrode (shown to scale and with its tip at the end of the histological track). The spike waveforms of individual units are shown schematically adjacent to their probe recording site. Note that the BarrCRH neurons (yellow) are clustered in sites located within Barrington’s nucleus whereas the non-identified neurons (green) lie above and below the level of Barrington’s nucleus. A third population of non-optoidentified neurons is shown in blue (labelled BarrCRH-like) whose firing pattern closely resembled the BarrCRH neurons (C) BarrCRH neurons were optoidentified by a short latency response to a brief light pulse (20 ms) data shown for a single representative unit top left. The population response of identified BarrCRH neurons shown below (n = 12, smoothed average firing rate curve generated by convolution of spikes with a Gaussian of SD 10 ms). The response to a 1 s light pulse is shown to the right with the same single unit and the population response from all BarrCRH neurons. Note that they showed an initial high frequency response that decayed to a plateau of ~20 Hz likely reflecting the kinetics of ChR2 currents. (D) Auto- and cross-correlations (1 ms bin size) of three opto-identified BarrCRH neurons with their average spike waveforms showing isolation and a degree of cross-correlation at short latency.
 
 These BarrCRH neurons showed a characteristic pattern of activity during the micturition cycle with bursting at the time of voiding (Figure 9A, 20.5 ± 4.1 Hz peak firing frequency). A second population of neurons was recorded with a similar pattern of activity (but were not activated by light) that are henceforth termed BarrCRH-like (n = 32, Figures 9B and 10A,B) in distinction to the remainder of non-identified neurons (n = 69). These BarrCRH-like neurons had a short-latency synchrony with the BarrCRH neurons that was evident in cross-correlograms (Figure 9—figure supplement 1). Both BarrCRH and BarrCRH-like neurons showed a clear temporal relationship to bladder pressure (Figure 9C) with their firing preceding and ramping up with the pressure during voiding.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig9-v2.jpg)
+
+**Figure 9.:** (A) BarrCRH neurons showed a bursting pattern of discharge that aligned with bladder pressure. The z-scored responses of all BarrCRH neurons in this recording can be seen to have a similar pattern of activity (single representative firing rate plot shown above). (B) Within the same recording (and from adjacent probe sites) a further group of neurons was noted (n = 4) to exhibit a similar pattern of bursting discharge synchronized to the voiding cycle. These neurons were termed BarrCRH-like. Auto and cross-correlations of the BarrCRH-like and BarrCRH neurons (see Figure 9—figure supplement 1) showed them to have similar properties and evidence of a degree of short latency correlation to other BarrCRH-like neurons and also BarrCRH neurons. (C) The increase in firing activity (a) of both BarrCRH-like and BarrCRH neurons (same experiment), preceded and anticipated the change in bladder pressure (b) and occurred before the onset of voiding marked by the sudden increase in EUS-EMG (c).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The cross-correlations show that several of the units have a short latency cross-correlation indicating that they tended to fire together in synchrony and such cross-correlations were noted both within and between the BarrCRH and BarrCRH-like neuronal groups.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig10-v2.jpg)
+
+**Figure 10.:** (A) Firing rate heat maps from probe recordings across mice (n = 3) with opto-identified BarrCRH neurons (n = 12, (respectively 8, 3 and 1 in each mouse)) and BarrCRH-like neurons (n = 32, (respectively 9, 19 and 4 in each mouse)) showed very similar patterns of firing in relation to the voiding cycle (shown below normalized for pressure and time across six cycles). (B) Rose plots of firing activity against phase of micturition cycle showing that both BarrCRH and BarrCRH-like neurons increase their firing in the phase decile leading up to the void unlike the unidentified neurons (**-P < 0.01, one-way ANOVA followed by Tukey-Kramer test). (C) Plotting the relationship between firing rate and normalized bladder pressure showed a graded sigmoid relationship with increased firing rate corresponding to higher bladder pressures. No such relationship was seen for the other neurons in the dorsal pons (dotted lines mark 95% CI of curves, bars SEM of firing rate) (D) The cross correlation between BarrCRH (and BarrCRH-like) neurons and bladder pressure was strongest at a lag of 3 s indicating that the bladder pressure follows the change in neuronal firing (shaded area marks SEM of mean cross correlation) (E) Colour plots of the Pearson’s cross-correlation coefficient between pairs of the population of BarrCRH and BarrCRH-like neurons is consistently strongest in the voiding phase.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Recordings of opto-identified LC neurons showing entrained firing responses to blue light illumination (20 ms) and firing rate increases during the voiding contractions. (B) Firing rate heat maps (zscored) from recordings across mice (n = 3) with opto-identified LC neurons (n = 29) showed an increase in firing during the voiding phase (normalized bladder pressure across 3–6 voiding cycles). (C) Comparison of the increase in firing (zscored and averaged across five central centile bins centred on bladder pressure peak) showing that the BarrCRH and BarrCRH-like neurons have a greater increase in firing than LC neurons which in turn show a greater increase than the non-identified group (ANOVA with Holm-Sidak’s post hoc test, ****p<0.0001, **p<0.01). Source data in Figure 10—figure supplement 1—source data 1.
 
 For both the BarrCRH and BarrCRH-like neurons there was a strong sigmoid relationship between bladder pressure and neuronal firing (Figure 10C), which wasnot seen in the non-identified group of neurons. The directionality of this influence was investigated by examining the cross-correlation between firing rate and bladder pressure – this indicated that the increases in firing frequency (for both BarrCRH and BarrCRH-like neurons) preceded increases in bladder pressure by ~3 s for both sets of neurons (Figure 10D). These data indicated that the pattern of firing of both BarrCRH and BarrCRH-like neurons anticipated changes in bladder pressure as would be expected for a pre-motor population upstream of bladder parasympathetic neurons.
 
 Our recording probe trajectory passes close to the locus coeruleus (LC) on its lateral edge raising the possibility that some of our recorded (non-optoidentified) neurons could be LC neurons, which have been shown in rats to increase their firing in anticipation of a void (Manohar et al., 2017) and as such could fall into the BarrCRH-like group. To examine this possibility, we made recordings from LC neurons under identical recording conditions in mice which had received injections of CAV2-PRS-ChR2-mCherry directly into LC, causing selective expression of ChR2 in LC cells only (Li et al., 2016). A total of 29 opto-identified LC neurons were recorded (n = 3 mice). They showed a characteristic pattern of spontaneous firing and a phasic burst of activity with a paw pinch. LC cells increased their firing around the void – a pattern that was evident in individual firing rate plots and in the z-scored firing heatmap (Figure 10—figure supplement 1A and B). However this peri-void activation was significantly less pronounced than the increase in firing seen in the BarrCRH-like (and BarrCRH) neurons (Figure 10—figure supplement 1C).This suggests that the BarrCRH-like neurons are most likely to be part of the population of BarrCRH neurons, of which only a subset recorded by the probe are exposed to enough light to be formally opto-identified.
 
-## BarrCRH neuronal excitability is not altered during the micturition cycle
+### BarrCRH neuronal excitability is not altered during the micturition cycle
 
 Analysis of spontaneous BarrCRH firing rates over the micturition cycle shows a pattern of activity that is consistent with what would be expected for a high-fidelity controller of bladder pressure. However, this is at odds with our optogenetic activation findings. To resolve this discrepancy the relationship between cycle phase and the light-evoked BarrCRH activity and voiding was examined in more detail.
 
@@ -117,23 +173,31 @@ During all phases of the voiding cycle it was possible to opto-excite BarrCRH ne
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig11-v2.jpg)
 
-**Figure 11.:** CRH neuronal activity conditionally drives bladder pressure.(A) Optogenetic stimulation of BarrCRH neuron showing the transient increases in firing evoked by light pulses (1s × 465nm, pale blue lines) applied at different points of the micturition cycle. (B) Pooled data from BarrCRH neurons (n = 6 across three mice) showing that there was no difference in firing (either the peak firing rate (upper) or the change in firing (lower, blue circles)) evoked by light across the phases of the micturition cycle. In contrast the amplitude of the eNVC (see Figure 3) increases markedly across the micturition cycle. (red squares) (C) Spontaneous NVCs were identified using a peak finding algorithm (amplitude 0.1–4 mmHg, green dotted circles) and were noted to be preceded by a burst of BarrCRH activity. (D) Averaged firing rate plots of BarrCRH and BarrCRH-like neurons triggered off sNVCs (averaged bladder pressure trace at the bottom) showed a consistent burst of firing between 1.5–3 s before the onset of sNVCs (unlike the unidentified population). Note this relationship was not seen in the shuffled data. (Mean firing rates ± S.D, 0.5 s bins). (E) Linear regression showed the number of spikes in each BarrCRH burst only showed a weak correlation (slope 0.03 mmHg/spike) with the amplitude of the following sNVC. This weak relationship was lost if a single outlier point was excluded (ringed). Source data in Figure 11—source data 1.Figure 11—source data 1.
+**Figure 11.:** (A) Optogenetic stimulation of BarrCRH neuron showing the transient increases in firing evoked by light pulses (1s × 465nm, pale blue lines) applied at different points of the micturition cycle. (B) Pooled data from BarrCRH neurons (n = 6 across three mice) showing that there was no difference in firing (either the peak firing rate (upper) or the change in firing (lower, blue circles)) evoked by light across the phases of the micturition cycle. In contrast the amplitude of the eNVC (see Figure 3) increases markedly across the micturition cycle. (red squares) (C) Spontaneous NVCs were identified using a peak finding algorithm (amplitude 0.1–4 mmHg, green dotted circles) and were noted to be preceded by a burst of BarrCRH activity. (D) Averaged firing rate plots of BarrCRH and BarrCRH-like neurons triggered off sNVCs (averaged bladder pressure trace at the bottom) showed a consistent burst of firing between 1.5–3 s before the onset of sNVCs (unlike the unidentified population). Note this relationship was not seen in the shuffled data. (Mean firing rates ± S.D, 0.5 s bins). (E) Linear regression showed the number of spikes in each BarrCRH burst only showed a weak correlation (slope 0.03 mmHg/spike) with the amplitude of the following sNVC. This weak relationship was lost if a single outlier point was excluded (ringed). Source data in Figure 11—source data 1.
 
 To further explore this proposition, the relationship between spontaneous non-voiding contractions (sNVC) and BarrCRH neuronal firing was mapped. sNVC are defined as phasic increases of intravesical pressure seen during ﬁlling cystometry, not associated with passage of urine and have been seen in many studies of murine urodynamics (Pavcovich and Valentino, 1995; Hou et al., 2016; Ito et al., 2017; Keller et al., 2018; Verstegen et al., 2019). A burst of firing in the BarrCRH neurons preceded the sNVC by 1.5–3.0 s – suggesting that they were triggered by a signal from the pons (Figure 11C and D). However, there was only a weak relationship between the magnitude of each BarrCRH burst and the amplitude of the associated sNVC (see Figure 11E). A linear fit of these data indicates that an increase in burst size of 20 spikes (close to the maximum observed range) would only account for 0.5 mmHg difference in sNVC size (less than 20% of the observed range of amplitudes). Even this modest relationship was noted to be dependent upon a single outlier value of a large NVC occurring close to a void (circled). Again, this finding is consistent with BarrCRH providing a trigger signal rather than a pre-motor drive which determines the amplitude of the bladder contraction.
 
-## A spinal gate for the BarrCRH drive is opened by bladder distention
+### A spinal gate for the BarrCRH drive is opened by bladder distention
 
 This indicates a model of autonomous micturition where a spinal circuit gates the output to the bladder (shown schematically in Figure 12A). The BarrCRH – parasympathetic - bladder afferent component of this circuit was modelled in NEURON using an existing preganglionic neuronal model (Briant et al., 2014) and a combination of a fast, excitatory synaptic drive descending from Barrington’s nucleus plus a bladder afferent synaptic drive (based on recordings of pelvic nerve afferents from Ito et al., 2019. The incrementing frequency of afferent drive, as the bladder fills, leads to summation and a maintained membrane depolarisation that increases parasympathetic excitability (Figure 12B).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig12-v2.jpg)
 
-**Figure 12.:** CRH drive to bladder parasympathetic neurons in micturition cycle.(A) Model of a parasympathetic preganglionic neuron (implemented in NEURON) with a synaptic drive from Barrington’s nucleus and a second synaptic input from a bladder afferent neuron. (B) The model PPN is depolarised as the firing of the afferent neuron increases with bladder distension (afferent input from recordings Ito et al., 2019) producing an augmenting synaptic excitation (subthreshold for spike firing). Coincident 20 Hz stimulation of the BarrCRH neuron (blue arrow heads, mimicking opto-activation) evokes no parasympathetic spike output at the start of the cycle but this increases to 8–10 Hz by the end of the cycle (traces shown on expanded timebase above).
+**Figure 12.:** (A) Model of a parasympathetic preganglionic neuron (implemented in NEURON) with a synaptic drive from Barrington’s nucleus and a second synaptic input from a bladder afferent neuron. (B) The model PPN is depolarised as the firing of the afferent neuron increases with bladder distension (afferent input from recordings Ito et al., 2019) producing an augmenting synaptic excitation (subthreshold for spike firing). Coincident 20 Hz stimulation of the BarrCRH neuron (blue arrow heads, mimicking opto-activation) evokes no parasympathetic spike output at the start of the cycle but this increases to 8–10 Hz by the end of the cycle (traces shown on expanded timebase above).
 
 The resulting output from the parasympathetic neuron when driven by BarrCRH (with a mimicked 20 Hz optogenetic drive) was strongly dependent upon the phase of the micturition cycle with a ~ 10 fold increase over the voiding cycle which closely parallels the experimental data. Note also that in the early phase of the voiding cycle the BarrCRH input is unable to evoke action potentials – thus producing ‘failures’.
 
-## An inferential model of autonomous micturition
+### An inferential model of autonomous micturition
 
 The observations described above provided the basis for a new integrated model of the autonomous micturition cycle which incorporates the observed drive from BarrCRH neurons and the known afferent feedback from the bladder (Figure 13A and methods including a summary of the evidence supporting the model). This afferent feedback governs both the excitability of the spinal parasympathetic neurons (demonstrated in the NEURON model above) and the output of a synaptic generator driving BarrCRH activity. The resulting feedback loop (depicted schematically in Figure 13B) closely reproduces characteristic of the observed micturition cycle with graded NVCs, periodic voids and patterns of BarrCRH firing.
+
+![Figure 13.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig13-v2.jpg)
+
+**Figure 13.:** (A) Schematic of the descending input from Barrington’s nucleus to the bladder parasympathetic neurons. The parasympathetic neurons receive excitatory input from bladder afferents – shown as being relayed via a segmental excitatory interneuron. Note that the BarrCRH neuron has both a fast, excitatory transmitter (presumed glutamate) as well as an inhibitory action mediated by spinally released CRH – possibly acting via local inhibitory interneurons (not shown). The inset boxes show the logistic relationships linking activity of BarrCRH neurons and spinal excitability to the current bladder pressure (from model in B). (B) Flow chart showing processing steps in inference model of micturition. (C) Output from the model showing incrementing bladder pressure with NVCs over three micturition cycles with the associated BarrCRH firing that generates the NVCs and the voids.
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/56605/elife-56605-fig13-figsupp1-v2.jpg)
+
+**Figure 13—figure supplement 1.:** (A) Comparison of model outputs under basal conditions (upper panel, three consecutive runs) with a reduction in the variability in the BarrCRH firing (mean rates unchanged, lower panel). This attenuates the amplitude of the NVCs and delays the time to void indicating the importance of the NVCs in the micturition cycle. (B) Simulation of optogenetic activation of BarrCRH neurons (20 Hz x 1 s) at different points in the micturition cycle (all other model parameters as the basal condition in A). This external drive increased micturition frequency by triggering voids (when stimuli fell later in the filling cycle). Note that opto-activation earlier in the filling cycle generated NVCs of varying amplitude and also could lead to ‘failures’ with no bladder contraction. (C) A leftward shift in the mid-point (by 1 hz) of the spinal modulation sigmoid mimicked the effect of CRH antagonist astressin by increasing the excitability of the spinal circuit. This increased the amplitude of NVCs and increased micturition frequency (as compared to the basal condition shown in A).
 
 The varying excitability of spinal parasympathetic neurons is represented in the integrated model by a pressure-modulated logistic relationship which determines the change in bladder pressure generated from a given level of BarrCRH firing. The afferent drive also determines the probability of a high frequency BarrCRH discharge in a given epoch. The bladder pressure-dependent synaptic drive for BarrCRH is represented as a logistic relationship. This synaptic generator is commonly believed to be relayed via the PAG (Drake et al., 2010; de Groat and Wickens, 2013; de Groat et al., 2015) however, there is also evidence for direct spinal inputs to Barrington’s nucleus (in the rat) that could also act as a generator (Ding et al., 1997; Blok and Holstege, 2000). In addition, elegant recent studies indicate there are also direct functional inputs from the cortex and hypothalamus (Hou et al., 2016; Yao et al., 2018; Verstegen et al., 2019).
 
@@ -173,110 +237,251 @@ On this basis we conclude that the BarrCRH neurons form a key component of the m
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Mice
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CRHCre</td>
+      <td>Jax Laboratory (Taniguchi et al., 2011 DOI: 10.1016/j.neuron.2011.07.026)</td>
+      <td>JAX#012704 RRID:IMSR_JAX:012704</td>
+      <td>Male and Female Cre recombinase targeted to CRH locus.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Adeno-associated viral vector)</td>
+      <td>AAV-EF1α-DIO-hChR2(H134R)-mCherry</td>
+      <td>University of North Carolina vector core (Gradinaru et al., 2007 DOI: 10.1523/JNEUROSCI.3578–07.2007)</td>
+      <td></td>
+      <td>Optogenetic transduction</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Adeno-associated viral vector)</td>
+      <td>AAV-hSyn-DIO-hM4Di-mCherry</td>
+      <td>Addgene (Krashes et al., 2011 DOI: 10.1172/JCI46229)</td>
+      <td>Plasmid #44362</td>
+      <td>Chemogenetic transduction</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Canine Adenoviral vector)</td>
+      <td>CAV-PRS-ChR2-mCherry</td>
+      <td>Plateforme de Vectorologie de Montpellier (Li et al., 2016 DOI: 10.1016/j.brainres.2016.02.023)</td>
+      <td>CAV-PRS-ChR2-mCherry</td>
+      <td>www.pvm.cnrs.fr/plateau-igmm/</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (Rabbit polyclonal)</td>
+      <td>Biovision</td>
+      <td>5993, RRID:AB_1975001</td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ChAT (Goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB144P RRID:AB_90650</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TH (Sheep polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB1542 RRID:AB_90755</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane (ethyl carbamate)</td>
+      <td>Sigma</td>
+      <td>#U2500</td>
+      <td>Anaesthetic</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-Oxide</td>
+      <td>Tocris</td>
+      <td>4936</td>
+      <td>DREADD ligand</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Astressin</td>
+      <td>Sigma</td>
+      <td>A4933</td>
+      <td>CRH antagonist</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Parasympathetic preganglionic neuron model</td>
+      <td>NEURON, (based on Briant et al., 2014, DOI: 10.1152/jn.00350.2014)</td>
+      <td></td>
+      <td>Available from data.bris.ac.uk (DOI:10.5523/bris.20l920gl27ufi204brn8ilonsf)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autonomous micturition model</td>
+      <td>MATLAB code</td>
+      <td></td>
+      <td>Available from data.bris.ac.uk (DOI:10.5523/bris.20l920gl27ufi204brn8ilonsf)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis scripts for single cell recordings.</td>
+      <td>MATLAB code</td>
+      <td></td>
+      <td>Available from data.bris.ac.uk (DOI:10.5523/bris.20l920gl27ufi204brn8ilonsf)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustering of multisite probe recordings.</td>
+      <td>Kilosort (Pachitariu et al., 2016)</td>
+      <td></td>
+      <td>papers.nips.cc/paper/6326-fast-and-accurate-spike-sorting-of-high-channel-count-probes-with-kilosort</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cluster curation.</td>
+      <td>Phy (Rossant et al., 2019)</td>
+      <td></td>
+      <td>github.com/kwikteam/phy-contrib</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bladder pressure and EUS dataacquisition/analysis.</td>
+      <td>Spike2 (Cambridge Electronic Design)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Mice
 
 All experiments and procedures conformed to the UK Animals (Scientific Procedures) Act 1986 and were approved by the University of Bristol Animal Welfare and Ethical review body and performed under licence (PPL3003362). Mice were group housed, with food and water available ad libitum and on a 12 hr/12 hr light/dark cycle.
 
 Gene expression was restricted to BarrCRH neurons using knock-in mice (of both sexes aged 3–8 months old) with an internal ribosome entry site (ires)-linked Cre-recombinase gene downstream of the CRH locus (CRHCre mice (Taniguchi et al., 2011; Chen et al., 2015), Jax Laboratory #012704).
 
-## Quantification and statistical analysis
+#### Quantification and statistical analysis
 
 All data are presented as mean ± SEM (unless otherwise specified). Sample size was estimated from experience and is similar to other published studies (Ito et al., 2019; Hou et al., 2016; Verstegen et al., 2019).
 
 Statistical tests used are specified in Figure legends and in the main text (see Results). Differences were considered significant at p<0.05. All experiments contain replications of the same experimental paradigm across different litters of animals and experimental runs. The number of replications (n) equals the number of mice for bladder pressure recordings, and/or the number of cells for electrophysiological experiments (as stated the relevant Figure legends/main text). Mice of either sex were allocated to experiments from the breeding colony as available. Blinding of the experimenter to drug was used for the chemogenetic experiments, however no blinding was possible for the optogenetics/cell recording studies.
 
-## Viral vectors
+### Viral vectors
 
 The serotype two recombinant AAV-EF1α-DIO-hChR2(H134R)-mCherry (Nagel et al., 2005; Gradinaru et al., 2007) (1.6 × 1012 viral genomes/ml) used for optogenetic activation experiments was obtained from University of North Carolina vector core facilities (a gift from Karl Deisseroth). The serotype 2 AAV-hSyn-DIO-hM4Di-mCherry (Krashes et al., 2011) (7 × 1012 vg/ml) used for chemogenetic inhibition experiments was obtained from Addgene (a gift from Brian Roth). To target the locus coeruleus selectively for optogenetic activation we used CAV-PRS-ChR2-mCherry (2 × 1011 pp/ml; Li et al., 2016).
 
-## Stereotaxic intracranial injections to Barrington’s nucleus
+### Stereotaxic intracranial injections to Barrington’s nucleus
 
 To target BarrCRH neurons, homozygous CRHcre mice were anaesthetised with ketamine (70 µg/g) and medetomidine (0.5 µg/g) and placed in a small animal stereotaxic frame (Kopf, USA) with a drill-injection robot attachment (Neurostar, Germany). After exposing the skull under aseptic conditions, a small burr hole was drilled and AAVs were injected (200 nl x three injections per side) unilaterally or bilaterally through a pulled glass pipette at a rate of 100 nl/min. Injection coordinates for Barrington’s nucleus were 5.3 mm posterior to bregma, 0.70 mm lateral and 3.25, 3.5 and 3.75 mm below brain surface. Injections for Locus coeruleus were identical but targeted 0.8 mm lateral. After surgical procedures, all mice were returned to their home cage for at least 21 days for recovery to maximise protein expression.
 
-## Optogenetic activation
+### Optogenetic activation
 
 To target Barrington’s nucleus, adult CRHCre mice had injections of AAV-DIO-ChR2-mCherry (1.6 × 1012 vg/ml) or AAV-DIO-hM4Di-mCherry (as control). To target Locus coeruleus, adult C57Bl/6 mice had injections of CAV-PRS-ChR2-mCherry (2 × 1011 pp/ml). Mice were used in experiments at least 3 weeks after vector injections. They were anaesthetised with urethane and prepared for cystometry as described below. Light from a 465 nm LED (Plexon, Dallas USA) was delivered in pulses with a maximum duty cycle of 50%. The light train was delivered once every 60 s for fixed-interval stimulation, or at randomised intervals between 30 s and 90 s. The light power exiting the fibre tip was set at approximately 10 mW and was measured before and after each experiment. For unilateral opto-activation light was delivered via a tapered optical fibre (Lambda-B, 0.39NA, 17 mm long, 1.2 mm emitting length, Optogenix, Italy) with the fibre lowered down the original vector injection track. For bilateral simultaneous opto-activation a dual fibre implant was used (DFC 200/250–0.66 15 mm DF1.4 C60, Doric, Canada) and coupled via a dual fibre optic cable to two separate LEDs.
 
 For light delivery to the spinal cord, soft tissue was removed between T11 and T12 vertebral spines after skin incision. The exposed spinal cord was illuminated using a 473 nM laser (PhoxX, Omicron, Germany) via a bare ended fibre (Thorlabs, 400 µm) positioned above the cord and delivered in 20 ms pulses at 20 Hz for 5 s or a prolonged pulse of 1000 ms. The light power at the fibre tip was 29 ± 0.3 mW.
 
-## Chemogenetic inhibition
+### Chemogenetic inhibition
 
 To inhibit BarrCRH neurons, CRHcre mice were bilaterally injected with AAV-DIO-hM4Di-mCherry (7.0 × 1010 vg/ml) into Barrington’s nucleus (as described above) and allowed at least 3 weeks of recovery (control mice had AAV-DIO-ChR2-mCherry injected). They were anaesthetised with urethane and prepared for cystometry as described below. Intraperitoneal CNO (5 mg/kg, 1 mg/ml stock) or saline (as control) was applied after obtaining >five baseline micturition cycles. In an initial set of experiments, saline was continuously infused to the bladder around the time of CNO injection to investigate the effects on mice micturition. Subsequently, to determine the CNO effect on threshold for micturition, a cyclical infuse and hold protocol was adopted whereby saline infusion was stopped at the threshold for voiding and then held at that volume for 10 min or until a void occurred before emptying the bladder and restarting the infusion phase.
 
-## Cystometry, Electromyography and distal colonic manometry
+### Cystometry, Electromyography and distal colonic manometry
 
 Mice were anaesthetised with urethane (0.8–1.2 mg/kg) and the bladder was exposed via a 2 cm midline abdominal incision. A flanged catheter (PE50) was secured with a purse-string suture into the bladder and connected to a syringe pump and pressure transducer. The infusion rate was adjusted on an individual mouse basis (10–40 µl/min) to produce an equivalent proportionate speed of fill to threshold for voiding (typically 600 s) taking account of differing bladder volumes of the mice. External urethral sphincter (EUS) was recorded with insulated stainless steel wires, bared at the tip (0.075 mm, AISI316 Advent) inserted through a 30 G needle bilaterally into the EUS just proximal to the pubic symphysis. A balloon catheter (2.5 mm diameter x 12 mm when fully distended, Medtronic Sprinter) was inserted into distal colon and the tip of balloon was placed 40 mm from the anus. To monitor colonic pressure the balloon catheter was filled with distilled water.
 
 Once a regular rhythm of micturition cycles was established (typically ~1 hr after starting saline infusion into the bladder) then the following variables were measured (and averaged over at least three voiding cycles (see Figure 1—figure supplement 2):
 
-## Pithed, Decerebrate Arterially-Perfused mouse (DAPM) preparation
+### Pithed, Decerebrate Arterially-Perfused mouse (DAPM) preparation
 
 The pithed DAPM preparation was used to examine the influence of bladder filling on pelvic nerve stimulation-evoked bladder contractions. The methods were as previously described (Ito et al., 2018; Ito et al., 2019) but in brief, mice were terminally anaesthetised with isoflurane, disembowelled through a laparotomy and the bladder was cannulated. The mouse was then cooled, exsanguinated, decerebrated and its spinal column was pithed to remove all central neuronal control. It was then moved to a recording chamber, perfused through the heart with warm (32 °C) Ringer’s solution (composition (mM): NaCl (125), NaHCO3 (24), KCl (3.0), CaCl2 (2.5), MgSO4 (1.25), KH2PO4 (1.25); glucose (10); pH 7.35–7.4 with 95% O2/5% CO2). Ficoll-70 (1.25%) was added as an oncotic agent to the perfusate. The flow rate was adjusted (from 15 to 20 ml/min) to achieve a perfusion pressure of 50–60 mmHg. The pelvic nerve was identified, traced proximally and cut allowing the distal end to be aspirated into a bipolar stimulating electrode. Stimuli (10V, 1 ms, 4–10 Hz for 3 s) were applied to the nerve. The bladder was filled with saline to perform cystometry as above with filling limited to a ceiling pressure of 15 mmHg. The effect of pelvic stimulation on bladder pressure was examined with different degrees of bladder filling (0–70 µl).
 
-## Extracellular recordings and signal acquisition
+### Extracellular recordings and signal acquisition
 
 Recordings were made from Barrington’s nucleus and the locus coeruleus in urethane anaesthetised mice using a 15 μm thick silicone probe with 32 channels (NeuroNexus, Model: A1 × 32-Poly3-10mm-25 s-177-A32). For recordings in Barrington’s nucleus, the recording probe was lowered down a track using the same co-ordinates as the vector injection. An optical fibre was lowered on an intersecting track to target the nucleus from a caudal vector (bregma –8.8, ML 0.7 or 0.8 and 4.9 mm deep on an angle of 45° to the vertical). For recordings in LC, an identical configuration was used, but with ML coordinate 0.8 mm. Each channel (177 µm2) was spaced from the neighbouring channels by 50 μm. A reference electrode (Ag/AgCl) was inserted into the scalp. The probes were connected to an amplifier-digitising headstage (INTAN, RHD2132). The signals were amplified and filtered (100 Hz-3 kHz) and digitized at 30 kHz before being processed and visualised online within the Open Ephys system.
 
-## Anatomical tracing studies
+### Anatomical tracing studies
 
 To investigate the BarrCRH projection to the spinal cord, Cre-dependent AAV (AAV- EF1α-DIO-ChR2-mcherry) was unilaterally injected to Barrington’s nucleus in CRHCRE mice. After a minimum of four weeks the mice were killed, and perfusion fixed for immunohistochemistry. To examine the BarrCRH projection into spinal cord, 40 µm transverse sections were taken from T11 to S2, processed for mCherry and Choline acetyltransferase immuno- (to demarcate motoneurons) followed by confocal imaging (detailed below).
 
-## Immunohistochemistry of brain and spinal cord
+### Immunohistochemistry of brain and spinal cord
 
 Mice were killed with an overdose of pentobarbital (20 mg per mouse, i.p; Euthetal, Merial Animal Health) and perfused trans-cardially with 4% formaldehyde (Sigma) in phosphate buffer (PB; pH 7.4, 1 ml/g). The brain and spinal cord were removed and post-fixed overnight before cryoprotection in 30% sucrose in phosphate buffer. Coronal tissue sections were cut at 40 µm intervals using a freezing microtome and left free floating for fluorescence immunohistochemistry. Tissue sections were blocked and incubated in phosphate buffer containing 0.3% Triton X-100 (Sigma) and 5% normal donkey serum (Sigma). Incubated on a shaking platform with primary antibodies for 14–18 hr at room temperature. After washing, sections were then incubated for 3 hr with appropriate Alexa Fluor secondary antibodies.
 
 A Leica DMI6000 inverted epifluorescence microscope equipped with Leica DFC365FX monochrome digital camera and Leica LAS-X acquisition software was used for widefield microscopy. For confocal and tile scan confocal imaging, a Leica SP5-II confocal laser-scanning microscope with multi-position scanning stage (Märzhäuser, Germany) was utilized. Primary antibodies used were rabbit anti-mCherry (1:4,000; Biovision), sheep anti-tyrosine-hydroxylase (1:1,000; AB1542, Millipore) and goat anti-ChAT (1:250; AB144P, Millipore). Alexa Fluor 488-conjugated donkey secondary antibodies were used against goat IgG (1:500; Jackson ImmunoResearch) and sheep IgG (1:400; Jackson ImmunoResearch). Alexa Fluor 594-conjugated donkey secondary antibody was used against rabbit IgG (1:1000; Invitrogen).
 
-## Parasympathetic preganglionic model design
+### Parasympathetic preganglionic model design
 
 A model of the integration of the synaptic drive to the bladder parasympathetic preganglionic neurons in the spinal cord was constructed using NEURON (Carnevale and Hines, 2006). The preganglionic neuron was based on using an existing preganglionic neuronal model (Briant et al., 2014) that was modified slightly to have a resting potential of ~−65 mV by altering the leak conductance reversal potential. A synaptic drive from BarrCRH neurons was modelled by adding an EXPSYN to the soma which was driven with trains of action potentials (20 Hz x 1 s) generated from a NETSTIM to mimic an optogenetic stimulus of BarrCRH. The synapse was subthreshold if triggered alone as an input despite a modest degree of summation (~20%) when driven at 20 Hz. A second fast excitatory synaptic drive to model a bladder afferent was added as an EXPSYN to a proximal medial dendrite. This was driven with an incrementing frequency of action potentials (from a NETSTIM based on recordings of pelvic nerve afferents from Ito et al., 2019) to model bladder distension-evoked increase in afferent firing over a period of 5 min to represent a typical micturition cycle. The model files are available from data.bris.ac.uk (DOI:10.5523/bris.20l920gl27ufi204brn8ilonsf).
 
-## Autonomous micturition model design
+### Autonomous micturition model design
 
-## Evidence informing the design of model
+#### Evidence informing the design of model
 
-## Features of the model
+### Features of the model
 
-## Model implementation
+### Model implementation
 
-The model of autonomous micturition employs an iterative algorithm in which bladder pressure and BarrCRH firing rate are updated in each cycle (assumed to last 1 s). At each time point, bladder pressure is incremented by 0.015 mmHg (modelling a continuous infusion). The level of pressure in the bladder is used to determine the maximum level of BarrCRH firing via a logistic function (modelling an afferent input):smax(t)=fmin+( fmax-fmin⁡)1+e-ks(p(t)-ms)
+The model of autonomous micturition employs an iterative algorithm in which bladder pressure and BarrCRH firing rate are updated in each cycle (assumed to last 1 s). At each time point, bladder pressure is incremented by 0.015 mmHg (modelling a continuous infusion). The level of pressure in the bladder is used to determine the maximum level of BarrCRH firing via a logistic function (modelling an afferent input):
 
-Where smax is the maximum spiking rate, and fmax and fmin represent the maximum and minimum levels of firing – here set to 25 and 4.3Hz respectively, based on spiking rates seen in unit data recordings. The gradient and mean were set to ks=4 and ms=4.5. Actual spiking rates were then generated probabilistically by sampling from a random uniform distribution with a maximum level set by smax.
+$$
+s_{max}(t)=f_{min}+\frac{(f_{max}-f_{min⁡})}{1+e^{-k_{s}(p(t)-m_{s})}}
+$$
 
-The change in bladder pressure produced by the firing of BarrCRH neurons was determined by a logistic function modulated by bladder pressure (representing the level of parasympathetic neuron excitability at the level of the spinal cord):ΔP(t)=ΔPmin+(ΔPmax-ΔPmin)1+e-kp(s(t)-mp)
+Where $s_{max}$ is the maximum spiking rate, and $f_{max}$ and $f_{min}$ represent the maximum and minimum levels of firing – here set to 25 and 4.3Hz respectively, based on spiking rates seen in unit data recordings. The gradient and mean were set to $k_{s}=4$ and $m_{s}=4.5$. Actual spiking rates were then generated probabilistically by sampling from a random uniform distribution with a maximum level set by $s_{max}$.
 
-Where s is the BarrCRH firing rate and ΔPmax,ΔPmin⁡ are the maximum and minimum amplitude of bladder contractions, and kp=0.5 and mp=6. The maximum change in pressure depends on the current bladder pressure such that:ΔPmax=6*log⁡pt
+The change in bladder pressure produced by the firing of BarrCRH neurons was determined by a logistic function modulated by bladder pressure (representing the level of parasympathetic neuron excitability at the level of the spinal cord):
 
-The output of these equations is shown in Figure 13 and Figure 13—figure supplement 1. Bladder contractions are modelled with a Gaussian bump function, of amplitude ΔPmax and variance 2s. These had a duration of 6 timepoints (approximating the characteristics of non-voiding contractions observed experimentally). At the beginning of each cycle, the current pressure is calculated by summing the baseline pressure (including incrementing due to constant filling) with increases in pressure caused by BarrCRH triggered bladder contractions generated in the current and past cycles.
+$$
+ΔP(t)=ΔP_{min}+\frac{(ΔP_{max}-ΔP_{min})}{1+e^{-k_{p}(s(t)-m_{p})}}
+$$
+
+Where $s$ is the BarrCRH firing rate and $ΔP_{max},ΔP_{min⁡}$ are the maximum and minimum amplitude of bladder contractions, and $k_{p}=0.5$ and $m_{p}=6$. The maximum change in pressure depends on the current bladder pressure such that:
+
+$$
+ΔP_{max}=6*log⁡pt
+$$
+
+The output of these equations is shown in Figure 13 and Figure 13—figure supplement 1. Bladder contractions are modelled with a Gaussian bump function, of amplitude $ΔP_{max}$ and variance 2s. These had a duration of 6 timepoints (approximating the characteristics of non-voiding contractions observed experimentally). At the beginning of each cycle, the current pressure is calculated by summing the baseline pressure (including incrementing due to constant filling) with increases in pressure caused by BarrCRH triggered bladder contractions generated in the current and past cycles.
 
 Voiding occurs at a pressure of 15 mmHg, at which point bladder pressure is decremented at 2 mmHg per cycle (as the bladder empties) until a baseline pressure of <0.3 mmHg is reached and the cycle restarts. The model is coded in MATLAB.
 
-In cycles where optogenetic activation of BarrCRH firing was simulated, the firing rate s was set to 20Hz. To simulate intrathecal Astressin, the mean of the logistic curve for ΔP(t) was reduced to mp=5 To simulate attenuation of NVCs, the variance in the level of BarrCRH firing was reduced by 80% but without any change in the mean level of firing.
+In cycles where optogenetic activation of BarrCRH firing was simulated, the firing rate $s$ was set to 20Hz. To simulate intrathecal Astressin, the mean of the logistic curve for $ΔP(t)$ was reduced to $m_{p}=5$ To simulate attenuation of NVCs, the variance in the level of BarrCRH firing was reduced by 80% but without any change in the mean level of firing.
 
-## Data analysis
+### Data analysis
 
-## Clustering of multiunit data, waveforms, auto/cross correlations and calculation of firing rates
+#### Clustering of multiunit data, waveforms, auto/cross correlations and calculation of firing rates
 
 Multiunit data were recorded on a 32-channel silicon probe (NeuroNexus, Model: A1 × 32-Poly3-10mm-25 s-177-A32), and clustered using spike sorting framework ‘Kilosort’ (Pachitariu et al., 2016). The sorting analysis was carried out using the facilities of the Advanced Computing Research Centre, University of Bristol - http://www.bristol.ac.uk/acrc/. Manual curation of clusters was performed in ‘Phy’ (https://github.com/kwikteam/phy-contrib; Rossant et al., 2019) in order to select only well isolated units with clear refractory periods, and to remove artefacts. All further analysis of spike trains and cluster characteristics was carried out in MATLAB.
 
 The centre channel of each cluster was defined as the probe channel on which the waveform was recorded with the maximum range. Representative waveforms were extracted on the centre channel for each cluster by sampling 2000 spikes from the group (if the cluster had fewer than 2000 spikes present, all spikes were used (Figure 8B,D). Autocorrelations and cross-correlations were calculated by binning spike trains (1 ms bins) and using the MATLAB function ‘xcorr’ (Figure 8D). Smooth firing rates during laser stimulation events were calculated by convolving the spike train with a normalised Gaussian of standard deviation of 10 ms, using the MATLAB function ‘conv2’. (Figure 8C). Where z-scored firing rates were required, the MATLAB function ‘zscore’ was used in with binned spike counts.
 
-## Analysis of bladder pressure and spike trains
+#### Analysis of bladder pressure and spike trains
 
 Bladder pressure and external urethral sphincter EMG were recorded in Spike2 (CED) and analysed in MATLAB. To compare changes in bladder pressure over multiple recordings, bladder pressure was normalised to between 0 and 1 in each recording, where one represents the maximum pressure recorded during the experiment (Figure 10A). The times of voids were identified using the MATLAB function ‘findpeaks’; correct identification was verified by eye. Where the bladder pressure was split into phases of the voiding cycle, the period between successive voids was split into the required number of equal time intervals (100 phases in Figure 10A, 10 phases in Figure 10B). Spike counts during these phases were converted to firing rates by dividing by the width of the relevant time window. This enabled calculation of the mean firing rate in each phase of the voiding cycle (over multiple cycles and cells). In Figure 10A firing rates were z-scored to enable comparison between multiple voiding cycles recorded in different animals. Where voiding/inter voiding periods were used (Figure 10E), ‘voiding periods’ were defined as a window of 15 s either side of the peak of bladder pressure during a void; ‘intervoid periods’ consisted of all remaining times.
 
-Cross correlograms and Pearson correlation coefficients between spike count and bladder pressure were calculated by downsampling both data to a sampling rate of 1 hz (i.e. 1 s bins for the spike count, 1 hz sampling for the bladder pressure), z-scoring and using the MATLAB function ‘xcorr’ and ‘corr’. (Figure 10D,E). All curve fitting was carried out using the MATLAB curve fitting toolbox. In Figure 10C, data were fitted to the sigmoid relationship fx=a+b1+ec(d-x) where a,b,c and d were constants to be determined. 95% confidence intervals were then calculated in MATLAB using the ‘confint’ function.
+Cross correlograms and Pearson correlation coefficients between spike count and bladder pressure were calculated by downsampling both data to a sampling rate of 1 hz (i.e. 1 s bins for the spike count, 1 hz sampling for the bladder pressure), z-scoring and using the MATLAB function ‘xcorr’ and ‘corr’. (Figure 10D,E). All curve fitting was carried out using the MATLAB curve fitting toolbox. In Figure 10C, data were fitted to the sigmoid relationship $fx=a+\frac{b}{1+e^{c(d-x)}}$ where a,b,c and d were constants to be determined. 95% confidence intervals were then calculated in MATLAB using the ‘confint’ function.
 
-## Analysis of urethral sphincter EMG
+#### Analysis of urethral sphincter EMG
 
 For EMG data shown in Figure 9, artefacts of over 50 times the standard deviation for the recording were removed in MATLAB. The data were then RMS filtered using a 5 s moving window and smoothed using the MATLAB function ‘movmean’ over 1000 samples (a window of 0.32 s).
 
-## Analysis of non-voiding contractions (NVCs)
+#### Analysis of non-voiding contractions (NVCs)
 
 NVCs were identified in the intervoid periods only (Figure 11C). Pressure measurements during these periods were detrended (using the MATLAB function 'detrend') and NVC peaks were detected using the MATLAB function 'findpeaks', using parameters to select only those peaks greater than 0.1 mmHg above the baseline, between 1.5 and 8 s wide, and at least 5 s from any other such peak. These provided well isolated examples of NVCs for analysis. Spike trains for each cell were binned (2 s bin width for the longer timescales shown in Figure 11C; 0.5 s bin width for Figure 11D) to extract estimates of firing rate around each NVC and to examine the difference in spike counts during 1.5 s windows beginning 6 s and 3 s before each NVC. For shuffled data a vector of random times was generated for each recording (taken from intervoid periods only) and examined in the same way. The number of shuffled NVC times and real NVC times was equal in each recording To create the trace of bladder pressure shown in Figure 11D, bladder pressure was extracted during a 10 s window around each identified or shuffled NVC. Values were referenced to the initial value of pressure recorded during the window in order to extract the change in pressure around the NVC. Windowed measurements were then averaged to generate the mean change in bladder pressure around each identified or shuffled NVC.
 
-## Code availability
+### Code availability
 
 Custom MATLAB scripts used to analyse the data are available along with example data are at DOI:10.5523/bris.20l920gl27ufi204brn8ilonsf along with the MATLAB code for the model of autonomous micturition and the Parasympathetic Preganglionic NEURON model.

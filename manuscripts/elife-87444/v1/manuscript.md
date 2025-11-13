@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Obstetrics, Gynecology and Reproductive Sciences, University of California, San Francisco San Francisco United States
+1. Department of Obstetrics, Gynecology and Reproductive Sciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 2. CG Life Chicago United States
-3. https://ror.org/01cwqze88 National Library of Medicine and National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States
-4. https://ror.org/04h699437 University of Leicester Leicester United Kingdom
+3. National Library of Medicine and National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+4. University of Leicester Leicester United Kingdom ([ROR:04h699437](https://ror.org/04h699437))
 
 † Corresponding author
 

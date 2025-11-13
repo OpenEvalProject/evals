@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02k3smh20 Department of Pharmaceutical Sciences, University of Kentucky Lexington United States
+1. Department of Pharmaceutical Sciences, University of Kentucky Lexington United States ([ROR:02k3smh20](https://ror.org/02k3smh20))
 
 † Corresponding author
 

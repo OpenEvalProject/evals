@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.41028.001 In stereotyped neuronal networks, synaptic connectivity is dictated by cell surface proteins, which assign unique identities to neurons, and physically mediate axon guidance and synapse targeting. We recently identified two groups of immunoglobulin superfamily proteins in Drosophila , Dprs and DIPs, as strong candidates for synapse targeting functions. Here, we uncover the molecular basis of specificity in Dpr–DIP mediated cellular adhesions and neuronal connectivity. First, we present five crystal structures of Dpr–DIP and DIP–DIP complexes, highlighting the evolutionary and structural origins of diversification in Dpr and DIP proteins and their interactions. We further show that structures can be used to rationally engineer receptors with novel specificities or modified affinities, which can be used to study specific circuits that require Dpr–DIP interactions to help establish connectivity. We investigate one pair, engineered Dpr10 and DIP-α, for function in the neuromuscular circuit in flies, and reveal roles for homophilic and heterophilic binding in wiring.
+In stereotyped neuronal networks, synaptic connectivity is dictated by cell surface proteins, which assign unique identities to neurons, and physically mediate axon guidance and synapse targeting. We recently identified two groups of immunoglobulin superfamily proteins in Drosophila, Dprs and DIPs, as strong candidates for synapse targeting functions. Here, we uncover the molecular basis of specificity in Dpr–DIP mediated cellular adhesions and neuronal connectivity. First, we present five crystal structures of Dpr–DIP and DIP–DIP complexes, highlighting the evolutionary and structural origins of diversification in Dpr and DIP proteins and their interactions. We further show that structures can be used to rationally engineer receptors with novel specificities or modified affinities, which can be used to study specific circuits that require Dpr–DIP interactions to help establish connectivity. We investigate one pair, engineered Dpr10 and DIP-α, for function in the neuromuscular circuit in flies, and reveal roles for homophilic and heterophilic binding in wiring.
 
 ## Introduction
 
@@ -37,13 +37,21 @@ In this study, we undertook a structural, biophysical and biological characteriz
 
 ## Results
 
-## Sequence relationships of Dpr and DIP subclasses explain the Dpr–DIP interactome
+### Sequence relationships of Dpr and DIP subclasses explain the Dpr–DIP interactome
 
 All 21 Dprs and nine DIPs are predicted to contain two and three immunoglobulin (IG) domains, respectively (Figure 1a). Dpr and DIP sequences can be easily identified across all major arthropod groups; however, there is little to no sequence conservation outside the predicted immunoglobulin domains. Despite the lack of conservation, most Dprs and DIPs contain signal sequences at their N termini, and hydrophobic patches, likely to be transmembrane helices or GPI linkage sites, at or close to their C termini. Therefore, we predict Dprs and DIPs to be cell surface glycoproteins. Our previous work identified the first IG domains, termed IG1, as the domains mediating the Dpr–DIP interaction by the formation of a pseudo-symmetric IG1-IG1 heterocomplex using the GFCC’C’ face of the immunoglobulin fold (Carrillo et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig1-v3.jpg)
+
+**Figure 1.:** (a) Cellular topologies and domain compositions of Dprs and DIPs. (b) Phylogenetic tree of Dprs and DIPs based on sequence alignments covering all IG domains. The colored lines indicate observed interactions mediated by IG1s. The scale bar represents 0.5 substitutions per site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Statistical Coupling values (SCA version 5) between Dpr and DIP positions. Strongest coupling is labeled with a white circle. (b) The role of the coupled residues in the Dpr6–DIP-α complex structure. H94 (Dpr1) and M132 (DIP-η) side chains pack closely. (c) Dpr and DIP amino acids at the strongest coupled sites. His in Dprs and Met in DIPs at this position pair tend to co-exist in productive complexes.
+
 Dpr and DIP sequences covering the IG domains can be aligned within each of the families to create phylogenetic trees, which demonstrate that closely related Dprs interact with the same DIPs, and closely related DIPs interact with the same set of Dprs (Özkan et al., 2013) and Figure 1b): The average sequence identities in IG1 domains for Dprs and DIPs are 44 ± 9% and 53 ± 10%, respectively (±indicates standard deviation). The closely related DIPs-η and -θ, 71% identical in their IG1 domains, commonly interact with Dprs 1, 2 and 3, which are 65% identical in IG1. Based on phylogeny, Dprs and DIPs can both be classified into five subclasses, and each Dpr subclass can be assigned to a DIP subclass as cognates. 31 out of 36 interactions reported in Carrillo et al. (2015) are between the cognate Dpr and DIP subclasses. Therefore, the evolutionary histories of the Dprs and DIPs greatly explain the Dpr–DIP interaction network; however, a molecular and structural basis for specificity of Dpr–DIP interactions has remained elusive.
 
-## Shared and divergent features in the structures of Dpr–DIP heterocomplexes
+### Shared and divergent features in the structures of Dpr–DIP heterocomplexes
 
 Our first structure, Dpr6 IG1 bound to DIP-α IG1 +2, showed highly complementary interaction surfaces (shape complementary value, sc = 0.74), but included one hydrogen bond pair, two marginal hydrogen bonds (at 3.5 Å donor-to-acceptor distance) and no salt bridges between Dpr and DIP side chains, leaving shape complementarity as the major strategy for explaining Dpr6–DIP-α specificity (Özkan et al., 2013). Since there is significant sequence diversity for residues at the Dpr–DIP interface, it was not clear if this explanation would hold for the 35 remaining Dpr–DIP pairs.
 
@@ -53,9 +61,233 @@ For a comparative analysis of Dpr–DIP complexes, we set out to determine struc
 
 **Figure 2.:** (a) Dpr1–DIP-η, Dpr6–DIP-α, and Dpr11–DIP-γ structures overlaid by aligning Dpr IG1 domains. (b) Side-by-side comparison of the structures.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig3-v3.jpg)
+
+**Figure 3.:** (a) Three heterophilic complexes overlaid by aligning the GFCC’C’ sheets of the Dpr subunits. Displacement of the DIP subunits is illustrated with arrows. (Also see Figure 3—figure supplement 1b.) (b) Sequence alignment of parts of the IG1 domains from Dprs 1, 6, 11 and DIPs-η, α, and γ. Amino acids within 4 Å of the heterophilic partner, that is at van der Waals or hydrogen bonding distances at the Dpr–DIP interface, are labeled in red boxes. * indicates core interface positions in Dprs and DIPs. (c) The conserved hydrophobic core at the interface. The coloring scheme in Figure 2 is used to distinguish Dprs and DIPs. Lighter colors present Dprs. Labels for DIP residues are underlined. Labels in light pink and magenta are for Dpr1 and DIP-η, respectively. Schematics in c1 to c3 show the conserved knob-and-hole interactions at the hydrophobic core. (d) The hydrophilic periphery of the interface. Labels for DIP residues are underlined. d1 and d2 show highly variable positions at the Dpr–DIP interface. For additional structural images, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (a) All interface amino acids labeled on an open-book view of the Dpr–DIP interface, based on the Dpr1-DIP-η structure. Core side chains, defined in Figure 3c1–3 are yellow, and the periphery side chains are The three hydrogen bonding side chains in Dpr1–DIP-η complex, are all in the periphery and are marked within black, purple and light green circles. One salt bridge is also labeled. (b) When only the amino acids at the interface of Dprs are aligned, their cognate DIPs are displaced from each other, most significantly for Dpr11-bound DIP-γ. This is most significant in the image above, where DIP-γ pivots away from the interface. At the orthogonal view (below), the displacement of DIP-γ is not noticeable. (c,d) 2mFo–DFc electron density maps from phenix.refine show that rotamers at the interface are well defined by electron density. Maps are contoured at 1.4 σ. Equivalent amino acids Dpr1 I88 (c) and Dpr6 I108 (d) are in different rotameric states, supported by electron density. .
+
+**Table 1.**
+ Data and refinement statistics for x-ray crystallography of Dpr–DIP-η and Dpr11–DIP-γ complexes, and DIP-γ alone.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Dpr1 IG1 + DIP-η IG1</th>
+      <th colspan="3">Dpr11 IG1 + DIP-γ IG1-IG2</th>
+      <th>DIP-γ IG1-IG2</th>
+    </tr>
+    <tr>
+      <th>Data collection</th>
+      <th colspan="3"></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space Group</td>
+      <td colspan="2">P43212</td>
+      <td colspan="3">P43212</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>Cell Dimensions</td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td colspan="2">74.08, 74.08, 235.45</td>
+      <td colspan="3">85.36, 85.36, 103.58</td>
+      <td>29.33, 43.44, 86.14</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td colspan="2">90, 90, 90</td>
+      <td colspan="3">90, 90, 90</td>
+      <td>90, 90.46, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td colspan="2">50–2.40 (2.44–2.40)*</td>
+      <td colspan="3">50–2.50 (2.65–2.50)</td>
+      <td>50–1.85 (1.90–1.85)</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td colspan="2">14.0 (66.4)</td>
+      <td colspan="3">16.1 (181.8)</td>
+      <td>14.6 (71.6)</td>
+    </tr>
+    <tr>
+      <td>&lt;I &gt; /&lt;σ(I)&gt;</td>
+      <td colspan="2">22 (1.8)</td>
+      <td colspan="3">16.5 (1.2)</td>
+      <td>8.8 (1.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td colspan="2">(77.0)†</td>
+      <td colspan="3">99.8 (57.7)</td>
+      <td>99.6 (82.8)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td colspan="2">93.4 (55.7)</td>
+      <td colspan="3">99.7 (98.1)</td>
+      <td>99.9 (99.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td colspan="2">13.6 (4.7)</td>
+      <td colspan="3">13.3 (8.6)</td>
+      <td>6.4 (3.8)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td colspan="2">50–2.40 (2.49–2.40)*</td>
+      <td colspan="3">50–2.50 (2.69–2.50)</td>
+      <td>50–1.85 (1.95–1.85)</td>
+    </tr>
+    <tr>
+      <td>Reflections</td>
+      <td colspan="2">25,031</td>
+      <td colspan="3">13,767</td>
+      <td>18,695</td>
+    </tr>
+    <tr>
+      <td>Rcryst (%)</td>
+      <td colspan="2">21.22 (31.41)</td>
+      <td colspan="3">20.88 (29.94)</td>
+      <td>20.45 (25.71)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)‡</td>
+      <td colspan="2">24.44 (34.15)</td>
+      <td colspan="3">26.29 (35.07)</td>
+      <td>23.46 (30.55)</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td colspan="2">3403</td>
+      <td colspan="3">2312</td>
+      <td>1622</td>
+    </tr>
+    <tr>
+      <td>Ligand/Glycans</td>
+      <td colspan="2">192</td>
+      <td colspan="3">81</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td colspan="2">84</td>
+      <td colspan="3">69</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td colspan="2">Average B-factors (Å2)</td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td colspan="2">55.1</td>
+      <td colspan="3">56.4</td>
+      <td>32.8</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td colspan="2">53.7</td>
+      <td colspan="3">55.7</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <td>Ligand/Glycans</td>
+      <td colspan="2">84.3</td>
+      <td colspan="3">83.4</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td colspan="2">46.3</td>
+      <td colspan="3">47.3</td>
+      <td>38.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations from ideality</td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Bond Lengths (Å)</td>
+      <td colspan="2">0.004</td>
+      <td colspan="3">0.005</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Bond Angles (°)</td>
+      <td colspan="2">0.995</td>
+      <td colspan="3">0.741</td>
+      <td>0.956</td>
+    </tr>
+    <tr>
+      <td colspan="3">Ramachandran statistics</td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td colspan="2">95.91</td>
+      <td colspan="3">96.88</td>
+      <td>98.53</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td colspan="2">0.0</td>
+      <td colspan="3">0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Rotamer Outliers (%)</td>
+      <td colspan="2">0.0</td>
+      <td colspan="3">0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>All-atom Clashscore §</td>
+      <td colspan="2">5.48</td>
+      <td colspan="3">5.64</td>
+      <td>6.60</td>
+    </tr>
+    <tr>
+      <td>Coordinate Error ¶ (Å)</td>
+      <td colspan="2">0.30</td>
+      <td colspan="3">0.41</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The values in parentheses are for reflections in the highest resolution bin.†Data processed by HKL2000, which does not report CC1/2 for the entire resolution range of the data.‡5% of reflections was not used during refinement for cross-validation: 1247, 707 and 933 reflections for the Dpr1–DIP-η, Dpr11–DIP-γ, and DIP-γ-only structures, respectively.§As reported by Molprobity.¶ Maximum-likelihood estimate for coordinate error, reported by phenix.refine._
+
 During our crystallization trials, we also grew crystals and determined the structure of DIP-γ IG1 +2 in a monomeric state. This has allowed us to compare three structures containing DIP IG1 and IG2 domains and the relative orientations of these IG domains (Figure 2a). In all structures, the two IG domains are in an extended conformation. This is unlike many multi-IG domain cell adhesion molecules known to adapt horseshoe-like structures, which require minimally four-amino acid linkers for the U turn (Freigang et al., 2000; Sawaya et al., 2008; Su et al., 1998), but is similar to cadherins (Shapiro and Weis, 2009) and certain classes of immunoglobulin superfamily receptors, such as the Synaptogenesis (SYG) proteins (Özkan et al., 2014). The extended conformation is due to lack of linker sequences between the two IG domains in DIPs, which also holds true at the predicted DIP IG2-IG3 and the Dpr IG1-IG2 boundaries. However, despite the lack of sizeable linker sequences, the DIP IG1-IG2 domain boundary is flexible, allowing for movement of the DIP IG2 with respect to IG1. This is a result of the lack of stabilizing influences such as calcium ions found in cadherin domain boundaries (Shapiro and Weis, 2009) or hydrogen bonds between the domains observed in SYG-1 and SYG-2 (Özkan et al., 2014). In the cases of cadherins and SYGs, rigidity of ectodomains was shown to be necessary for function and signaling. Lack of rigidity in Dprs and DIPs might indicate that they may not serve as signaling receptors directly and may not relay force or connect to cytoskeleton. This is corroborated by the fact that most Dprs and DIPs do not appear to have intracellular regions, supporting a model where Dprs and DIPs function as adhesion and specificity receptors on neuronal surfaces, but rely on co-receptors to relay signal intracellularly.
 
-## Molecular details of Dpr–DIP complex interfaces driving specificity
+### Molecular details of Dpr–DIP complex interfaces driving specificity
 
 We next compared the Dpr–DIP interaction surfaces of the three heterocomplexes of Dpr1, 6 and 11, which belong to different subclasses and should therefore present largest differences among heterocomplexes (Figure 3b–d and Figure 3—figure supplement 1). The centers of the interfaces are highly hydrophobic and conserved in sequence (marked in Figure 3b with *, Figure 3c and Figure 3—figure supplement 1 (yellow side chains)), and likely provide significant energetic contributions to binding while not contributing to Dpr–DIP specificity. Yet, we also observed differences at these conserved positions at the structural level via rotameric changes and by rigid-body movements of DIPs with respect to Dprs (Figure 3c and Figure 3—figure supplement 1c,d), which allow for multiple complexes between Dprs and DIPs to form utilizing the same positions as conserved contact sites.
 
@@ -65,31 +297,258 @@ A second highly variable position, Leu154 in Dpr11 (Lys in Dpr1 and His in Dpr6)
 
 We further looked to understand specificity via co-variation of Dpr and DIP residues in interacting pairs. We hypothesized that if there are sites in Dprs and DIPs that co-evolve, these could correspond to specificity determinants. For an analysis of sequence co-variation, we created artificial sequences where each sequence contained the IG1 from a Dpr, followed by the IG1 from a cognate DIP, resulting in 36 sequences. Covariation analysis by available tools is hindered due to the requirement for larger numbers of sequences. However, one method, the statistical coupling analysis (SCA) version 5 (Lockless and Ranganathan, 1999), identified one pair of amino acids, Dpr His94 (Dpr1) and DIP Met132 (DIP-η) (Figure 1—figure supplement 1a). These two residues directly contact each other and cap the hydrophobic interior of the interface (Figure 1—figure supplement 1b). In DIP-ε and -ζ, the methionine is replaced by an alanine, and ε-/ζ- binders Dprs 14, 18, 19 and 20 have non-histidine amino acids in the statistically coupled Dpr position (Figure 1—figure supplement 1c). It would be of future interest to determine the structures of DIP-ε and -ζ complexes to reveal the nature of the interaction at these positions. Overall, it appears that Dpr–DIP specificity is encoded not only by relationships between pairs of Dpr and DIP residues (e.g., K144 in Dpr1 with T83 in DIP-η, Figure 3d1), but also through coupling of multiple residues, and through shape complementarity, where rotameric changes help create complementary surfaces.
 
-## Energetics of the Dpr–DIP complex interface
+### Energetics of the Dpr–DIP complex interface
 
 While we could demonstrate and explain structural and amino acid differences between the three Dpr–DIP complexes through crystallography, static structures can rarely elucidate energetics of binding. To compare the three complexes from a thermodynamic point-of-view, we analyzed the same set of residues previously mutated in the Dpr6-DIP-α complex (Carrillo et al., 2015) in Dpr1–DIP-η and Dpr11–DIP-γ complexes via alanine mutagenesis, followed by heterophilic affinity measurements using surface plasmon resonance (SPR) (see Figure 4a–d for binding isotherms, and Figure 4—figure supplement 1 to 3 for raw SPR data). The amino acids at the four positions in the three Dpr–DIP complexes (total of 24 positions) are shown in Figure 4e, and the effect of alanine mutagenesis, converted to ΔΔG values and fold-loss of binding, are in Figure 4f and Figure 4—figure supplement 2.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig4-v3.jpg)
+
+**Figure 4.:** (a–d) Corresponding sets of Dpr and DIP interface residues are mutated in Dpr1 (a), DIP-η (b), Dpr11 (c) and Carrillo et al., 2015), DIP-γ (d) and Carrillo et al., 2015), Dpr6 and DIP-α (Carrillo et al., 2015). Binding isotherms for wild-type and mutants tested in this study are plotted with fits to a 1:1 interaction model. (e) The amino acids at the four mutated sites in six Dpr and DIP heterophilic partners. (f) Effects of alanine mutagenesis at the four sites in energy terms (from Figure 4—figure supplement 2a). (g) Comparison of Dpr6 and Dpr11 IG1 sequences. * highlights variable amino acids at the interface. (h,i) Binding of Dpr11 mutants to the native partner DIP-γ and the engineering target DIP-α using ECIA in two cycles. (j) Comparison of the interactions of conversion mutation sites (A165Y and F167Y) between the Dpr6–DIP-α and Dpr11–DIP-γ complexes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a–e) SPR sensorgrams for immobilized DIP-η D1 (ligand) against Dpr1 WT and mutants (analytes). Binding isotherms are depicted in Figure 4a. (f) Table of dissociation constants for heterophilic IG1-IG1 interaction. This set of SPR results are likely to be significantly affected by the competing DIP-η homodimeric interaction on the chip, and the true heterophilic KD values may be much lower (see Figure 4—figure supplement 3 for WT DIP-η-Dpr1 binding.).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Fold loss of affinity for mutants measured here and in Carrillo et al. (2015). * Full ectodomain binding result. † IG1-IG1 binding result. (b) Structural mapping of binding energy contributed by four positions among three Dprs and three DIPs. (c) Positions mutated in Dpr11 to allow it to bind DIP-α in the mutant A165Y F167Y K207V mapped onto the surface of Dpr11 IG1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (a–e) SPR sensorgrams for immobilized Dpr1 D1 (ligand) against DIP-η WT and mutants (analytes). Binding isotherms are depicted in Figure 4b. (f) Table of dissociation constants for heterophilic IG1-IG1 interactions in this figure supplement.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** (a–g) SPR sensorgrams for Dpr11 and DIP-γ WT and mutants not previously measured. Binding isotherms are depicted in Figure 4c–d. (h) Table of dissociation constants for heterophilic IG1-IG1 interactions in this figure supplement.
 
 With these data, we first investigated the His94 (Dpr1) to Glu126 (DIP-η) hydrogen bond (Figure 3d), which appeared to be the only conserved side chain-to-side chain hydrogen bond among the three heterophilic complexes based on sequence conservation. For the Dpr1–DIP-η and Dpr6–DIP-α complexes, His-to-Ala mutation unexpectedly increased affinity despite removing a hydrogen bond and significant packing (Figure 4a–f). However, in Dpr11–DIP-γ, for which our structure unexpectedly shows no hydrogen bond, the His-to-Ala mutation abolished binding by more than five-fold. On the DIP side, the Gln-to-Ala mutation universally decreased or abolished affinity. These results indicate that even relatively conserved side chain-to-side chain hydrogen bonds can be dispensable for binding, and our ability to predict binding energetics based on static structures is limited. Interestingly, the His94 (Dpr1) residue is one of the statistically coupled residues mentioned above.
 
 For hydrophobic side chains at the core of the interface, single-site alanine mutations consistently resulted in loss of affinity, and sometimes almost completely abolished binding (Figure 4a–f). We were not able to observe a rank order, or if a certain position is energetically more important across multiple complexes, that is a conserved hotspot. (Figure 4—figure supplement 2a–b). Therefore, we conclude that while the energetics of the interface shows some variation among the complexes, the hydrophobic conserved core of the interface provides much of the energy of binding, and the periphery is likely responsible for specificity.
 
-## Structure-based alteration of dpr/DIP specificities
+### Structure-based alteration of dpr/DIP specificities
 
 Engineered variants of Dprs and DIPs can be used to study wiring specificity in the Drosophila nervous system. In addition to the mutations described above, which decreased or increased affinities compared to wild-type, mutants with modified specificities can prove especially useful. For this purpose, we took a rational approach to modify Dpr11 to bind DIP-α. As DIP-α binds Dpr6, we substituted every interface amino acid in Dpr11 to its equivalent in Dpr6 (marked by * in Figure 4g), and performed a highly sensitive, high-throughput ELISA-like binding assay, the extracellular interactome assay (ECIA) (Özkan et al., 2013). This method can be used to report interactions with affinities as weak as approximately 1 mM (Özkan et al., 2013), and was used to originally discover Dpr–DIP interactions.
 
 The first round of single-site and some double-site mutagenesis identified Dpr11 A165Y and two double mutants to weakly interact with DIP-α (marked by +, Figure 4h). Further installation of Dpr6 amino acids at the DIP-binding interface of Dpr11 slightly improved DIP-α affinity (Figure 4i). As a result of the second round of mutagenesis, we identified a triple-mutant Dpr11 variant, A165Y F167Y K207V (marked by *), which binds DIP-α and -γ. Interestingly, further non-exhaustive mutagenesis of the Dpr11 interface beyond A165Y F167Y K207V resulted in loss of binding to both DIPs. The identification of these residues is not accidental: two of the mutations are non-conservative changes in the polar periphery of the interface (Figure 4—figure supplement 2c); the K207 position was already highlighted as a specificity determinant above, and in Figure 3d1. The A165Y mutation is expected to create of a hydrogen bond absent in the Dpr11–DIP-γ complex but present in Dpr6–DIP-α and the engineered Dpr11 A165Y F167Y K207V–DIP-α complex (Figure 4j). Overall, this set of experiments demonstrates that Dpr/DIP specificities can be modified through rational design and the use of an inexpensive, high-throughput, fast and sensitive interaction assay.
 
-## DIP homodimers are structurally similar to Dpr–DIP heterodimers
+### DIP homodimers are structurally similar to Dpr–DIP heterodimers
 
 As we purified and crystallized several Dpr–DIP complexes, we were also able to grow crystals of DIP-η IG1 and determined its structure at 1.9 Å resolution, which revealed a homodimer (Table 2). These crystals only grew in the absence of Dpr1, which indicated that the heterodimers are likely more stable than the homodimer under the crystallization conditions used. The homodimeric DIP-η structure closely mimicked the Dpr1–DIP-η heterodimer: When DIP-η monomers were aligned, the other subunits, DIP-η in the homodimer and Dpr1 in the heterodimer, were only displaced by an RMSD of 0.78 Å for 87 out of 102 Cα atoms, excluding the variable DE loop and the mobile half of the A strand (Figure 5a). This is comparable to differences observed between heterophilic complexes. The main chain positions of a DIP-η bound to either another DIP-η or Dpr1 are virtually identical, and surprisingly, most side chains also preserve their rotameric states (Figure 5b and Figure 5—figure supplement 1b). On the other side of the interface, sequence differences between Dpr1 and DIP-η appear to not cause large deviations in the main chain atom positions between the two complexes (Figure 5c).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig5-v3.jpg)
+
+**Figure 5.:** (a) Side-by-side aligned views of the hetero- and homophilic complexes of DIP-η. (b–c) The GFCC’C’ faces involved in the heterophilic (magenta and pink) and homophilic (dark green and green) complexes. (d) DIP-η can accommodate binding both DIP-η and Dpr1 by rearranging the rotameric states of its interface residues. (e) Gel filtration chromatography of DIP-η IG1 at six concentrations. DIP-η is in a fast-exchange dimer-to-monomer equilibrium in the mid-micromolar range. The chromatograms are drawn at different scales shown at both sides of the plot. Path length of the UV flow cell is 0.2 cm. Elution volumes for gel filtration standards are labeled with filled triangles above the chromatograms. DIP-η peak elution positions are plotted against concentration in Figure 5—figure supplement 1c.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Non-conservative differences (red sticks) between Dpr1 and DIP-η residues at the interface (red boxes), which share DIP-η as binding partner. (b) Large structural differences exist between the homo- and heterodimeric complexes, even on the common DIP-η subunit (magenta and dark green) of the two complexes. (c) The effects of DIP-η concentration on its oligomeric state plotted, which can be fit to a binding isotherm as an approximation. Concentration of DIP-η was estimated by calculating the loaded protein amount by the area under the peaks in the chromatograms (Figure 5e), divided by the sample loading volume (0.5 ml), and is therefore an overestimate due to dilution effects in gel filtration chromatography. Dimer fraction was calculated by identifying monomeric and dimeric elution velocities, and calculating monomer and dimer fractions for any given peak position. (d) SPR measurement for homodimeric DIP-η D1-D1 binding. Data were fit in MATLAB using equations that account for DIP-η dimerization in the analyte (in solution). To minimize dimerization of ligand (on chip), biotinylated DIP-η was captured at a low density, yielding a 98 R.U. maximal response.
+
+**Table 2.**
+ Data and refinement statistics for x-ray crystallography of DIP-η–DIP-η and Dpr10–DIP-α complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>DIP-η IG1 + DIP-η IG1</th>
+      <th>Dpr10 IG1 + DIP-α IG1</th>
+    </tr>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space Group</td>
+      <td>C2</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>Cell Dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>88.43, 67.13, 61.01</td>
+      <td>51.01, 53.55, 56.69</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 128.82, 90</td>
+      <td>119.68, 103.77, 92.88</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–1.90 (1.94–1.90)*</td>
+      <td>50–1.80 (1.91–1.80)</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>4.1 (55.9)</td>
+      <td>3.3 (51.5)</td>
+    </tr>
+    <tr>
+      <td>&lt;I &gt; /&lt;σ(I)&gt;</td>
+      <td>12.3 (2.0)</td>
+      <td>11.8 (1.3)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>99.8 (90.1)</td>
+      <td>99.9 (67.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.3 (93.3)</td>
+      <td>86.8 (53.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>3.4 (3.3)</td>
+      <td>1.8 (1.7)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–1.90 (1.98–1.90)*</td>
+      <td>50–1.80 (1.84–1.80)</td>
+    </tr>
+    <tr>
+      <td>Reflections</td>
+      <td>21,783</td>
+      <td>40,105</td>
+    </tr>
+    <tr>
+      <td>Rcryst (%)</td>
+      <td>23.21 (37.57)</td>
+      <td>17.43 (39.51)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)†</td>
+      <td>26.93 (45.88)</td>
+      <td>20.54 (53.17)</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>1690</td>
+      <td>3421</td>
+    </tr>
+    <tr>
+      <td>Ligand/Glycans</td>
+      <td>40</td>
+      <td>282</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>21</td>
+      <td>296</td>
+    </tr>
+    <tr>
+      <td>Average B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td>68.2</td>
+      <td>42.8</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>67.9</td>
+      <td>41.2</td>
+    </tr>
+    <tr>
+      <td>Ligand/Glycans</td>
+      <td>86.4</td>
+      <td>58.5</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>55.2</td>
+      <td>46.1</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations from ideality</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond Lengths (Å)</td>
+      <td>0.003</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Bond Angles (°)</td>
+      <td>0.636</td>
+      <td>0.938</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.60</td>
+      <td>97.85</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Rotamer Outliers (%)</td>
+      <td>1.04</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>All-atom Clashscore ‡</td>
+      <td>1.44</td>
+      <td>3.59</td>
+    </tr>
+    <tr>
+      <td>Coordinate Error § (Å)</td>
+      <td>0.16</td>
+      <td>0.23</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The values in parentheses are for reflections in the highest resolution bin.†5% of reflections was not used during refinement for cross validation: 1247 and 2002 reflections for the DIP-η–DIP-η and Dpr10–DIP-α structures, respectively.‡As reported by Molprobity.§Maximum-likelihood estimate for coordinate error, reported by phenix.refine._
 
 The crystal structures also reveal how DIP-η can accommodate binding to both Dpr1 and itself, with significant differences in sequence at the interface (Figure 5—figure supplement 1a and Figure 5d). For example, Tyr103 in Dpr1 (Y, F, or H in Dprs) is replaced by Ile92 in DIP-η (I or V in DIPs). This results in rotameric differences in close-by residue Ile87 in the common DIP-η subunit, which is further accommodated by other rotameric changes in the common DIP-η subunit, and sequence differences between the heterophilic and homophilic partners (Figure 5d).
 
 The DIP-η homodimers observed in crystals also exist in solution. In size-exclusion chromatography experiments, elution volumes of DIP-η is dependent on the amount of protein loaded on the column (Figure 5e), which is a strong indication of homodimer formation with a dissociation constant on the order of protein concentrations used in the chromatography experiment, that is micromolar, and a monomer-dimer exchange rate much faster than the timescale of the experiment, which is also compatible with micromolar binding. While size-exclusion chromatography is not an equilibrium experiment, a binding isotherm based on elution peak volumes can be calculated (Figure 5—figure supplement 1c), yielding an apparent KD of 11–45 µM, an order of magnitude weaker than the heterodimer. Furthermore, we performed SPR experiments where low density DIP-η surfaces are created to prevent homodimers on chip surface, and data is fit to a binding isotherm while correcting for DIP-η dimerization in solution, yielding a KD of 14 µM (see Figure 5—figure supplement 1d and Materials and methods for details).
 
-## Comparison and engineering of closely related Dpr–DIP heterophilic complexes
+### Comparison and engineering of closely related Dpr–DIP heterophilic complexes
 
 We next set out to compare heterophilic complexes with one common binding partner. We determined the crystal structure of Dpr10 IG1 bound to DIP-α IG1 and compared it to our Dpr6–DIP-α structure (Figure 6). The IG1 of Dpr6 and Dpr10 are 75% identical in sequence, and the interface only has three residues out of 19 that are different between Dpr6 and Dpr10 (Figure 6a). The two complex structures closely match each other (Figure 6b and Figure 6—figure supplement 1a), and unlike the differences among complexes described above, rotamers are nearly all conserved at the two interfaces. The differences in sequence are accommodated by small movements in surrounding side chains and do not propagate further (Figure 6—figure supplement 1b). Overall, these results suggest that Dprs that are highly similar in sequence (≥70% identity) are unlikely to be differentiated in their DIP binding, but in time and place of expression.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig6-v3.jpg)
+
+**Figure 6.:** (a) Comparison of Dpr6 and Dpr10 IG1 sequences. Red boxes indicate Dpr residues within 4 Å of DIP-α in the heterocomplexes. * indicates the three variable residues between Dpr6 and Dpr10 at the interface. (b) Side-by-side view of Dpr6–DIP-α and Dpr10–DIP-α complex structures. RMSD values are reported for Cα atoms only. (c) N-linked glycan involvement at the Dpr10–DIP-α interface. DIP-α is depicted as a surface colored by electrostatic potential, and Dpr10 is in cartoon representation with the Asn82-linked glycan drawn as sticks. (d) Gel filtration chromatography of DIP-α IG1 at three DIP-α concentrations. DIP-α is in a fast-exchange dimer-to-monomer equilibrium in the mid-micromolar range. The chromatograms are drawn at different scales shown to the left of the plot. Path length of the UV flow cell is 0.2 cm. (e) ECIA screening of single-site mutants of DIP-α and Dpr10 with modified homophilic and heterophilic affinities. See main text for descriptions of the red, green and orange boxes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The structures of the GFCC’C’ sheets of the two heterodimers show highly similar main and side chain conformations. (b) Dpr6 to Dpr10 sequence differences have minor effects at the interface. I113 (Dpr6) vs L93 (Dpr10) causes small movements in DIP-α, mostly in side chain conformations, such as that of K81. (c) The effects of DIP-α concentration on its oligomeric state plotted, which can be fit to a binding isotherm accounting for homodimerization. KD is 37 µM. See Figure 5—figure supplement 1 for details on how the dimer fraction and protein concentrations were plotted.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (a) ECIA dilution series of wild-type (WT) DIP-α ectodomain and the DIP-αI83A mutant show stronger Dpr10 binding for the I83A mutant compared to WT, likely as a result of the abolition of the competing DIP-α homodimerization in the mutant. The blue and red fits are for 1:1 Langmuir binding models. The KD for the mutant I83A (red) is 7.8 times lower. The concentrations of WT and mutant DIP-α were normalized before the assay by western blotting for a C-terminal hexahistidine tag. (b) Dpr10 WT and the Y103A mutant bind cDIP with similar efficiency, as assessed by ECIA. The concentrations of WT and mutant Dpr10 were normalized.
 
 The high-resolution Dpr10–DIP-α structure also allowed us to observe an ordered, near-complete N-linked glycan at the interface (Figure 6C). As we use lepidopteran cells to express Dprs and DIPs, the glycan structure and composition in our structure likely match the native insect Dpr/DIP glycans. The structure shows that the first N-acetyl glucosamine (NAG) is fucosylated at both the third and sixth carbon positions – commonly observed in arthropods but not in mammals. The glycan linked to Asn82 in Dpr10, which is present in seven out of 21 Dprs, is ordered as it inserts itself into a groove on the DIP-α surface, and adds a further 440 Å2 area to the buried surface area (total area: 2,240 Å2). While the energetic contribution of the glycan is yet to be determined, biochemical studies of Dprs and DIPs may benefit from over-expression in eukaryotic, and specifically arthropod cell lines, due to native-like glycosylation.
 
@@ -99,15 +558,31 @@ As DIP-α and DIP-η can form homophilic and heterophilic interactions, genetic 
 
 Among the mutants tested in the mutational analysis of the Dpr10–DIP-α interface (Figure 6e), the Dpr10 mutant Y103A abolishes DIP-α binding (orange box), and therefore can be used to study the Dpr10–DIP-α complex function, without effecting DIP-α homodimerization.
 
-## Dpr10 and DIP-α in the establishment of neuromuscular circuitry
+### Dpr10 and DIP-α in the establishment of neuromuscular circuitry
 
 The Drosophila larval neuromuscular system consists of 35 motor neurons, which innervate 30 muscles within each hemisegment, forming an invariant circuit that is ideal for delineating genetic mechanisms underlying synaptic connectivity. Although numerous screens and studies have been conducted to uncover potential connectivity molecules (Aberle et al., 2002; Banovic et al., 2010; Liebl et al., 2003; Mosca et al., 2012; Nose, 2012), we still lack a complete understanding of how a motor neuron chooses its appropriate muscle target(s). This critical gap in knowledge led us to investigate whether Dprs and DIPs have roles in neuromuscular development and specifically in synaptic partner choice. In a prior study, we found that several Dprs and DIPs, including Dpr11 and one of its interacting partners, DIP-γ, were expressed in motor neurons. Importantly, Dpr11 and DIP-γ are required for normal motor neuron terminal growth (Carrillo et al., 2015). Although the process of neuromuscular junction (NMJ) expansion does not reflect initial synaptic connectivity, the same Dpr–DIP pair is also required for connectivity in the optic lobe. Thus, we delved deeper into Dpr and DIP function at the NMJ.
 
 In the fly larval neuromuscular system, muscles are innervated by multiple motor neurons. The majority of these motor neurons are the class one type, and these can be further subdivided into 1b (big) or 1 s (small) indicative of their terminal, or bouton, sizes. Several additional key factors differentiate 1b and 1 s motor neurons: most 1b motor neurons innervate single muscle targets whereas 1 s motor neurons innervate subgroups of muscles (dorsal, lateral and ventral muscles) and the amount of subsynaptic reticulum (SSR) surrounding 1b boutons is much greater than 1 s. Here we focus on one 1 s motor neuron, the MNISN-1s, that innervates the dorsal muscles (Hoang and Chiba, 2001; Landgraf et al., 2003). In a concurrent study, we demonstrate that DIP-α is expressed in MNISN-1s, and a DIP-α binding partner, Dpr10, is expressed postsynaptically in muscles. Importantly, we discovered that these interactors are absolutely required for the proper connectivity between MNISN-1s and the postsynaptic muscle target muscle 4, and partially required for connectivity to muscles 3 and 20 (Ashley et al., 2019). Further analysis of a DIP-α mutant revealed that the remaining MNISN-1s muscle connections were still present; thus, highlighting the specificity inherent in connectivity codes, even within a single neuron, and the potential requirement for combinatorial interactions between cell surface proteins for establishing synaptic partner matching. As the muscle 4 (m4) connection was the most sensitive to loss of DIP-α (Ashley et al., 2019 and Figure 7g), we utilized this phenotype to examine if Dprs and DIPs with altered specificities could provide additional insight into our understanding of circuit wiring.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig7-v3.jpg)
+
+**Figure 7.:** (a) DIP-α is expressed in MNISN-1s (green) neurons. The DIP-α-GAL4 allows for utilization of the UAS/GAL4 system and this gene trap is also a null allele (Ashley et al., 2019). In DIP-α-GAL4 heterozygous (het) larvae, both 1b (arrowhead) and 1 s (arrow) terminals are present on m4. (b) Removal of DIP-α results in loss of MNISN-1s innervation of m4. The MNISN-1s axon is still visible (green) and continues to innervate other dorsal muscles. These hemizygous male larvae retain GAL4 expression under the control of the endogenous DIP-α promoter. (c) Overexpression of UAS-DIP-α-Myc (shortened to UAS-DIP-α) does not affect innervation of m4 in a heterozygous DIP-α-GAL4 background. DIP-α localizes to the 1 s terminals (green in inset; Ashley et al., 2019). Note that DIP-α protein is labeled with anti-Myc. Green signal on muscles represents non-specific labeling of anti-Myc (see Figure 7—figure supplement 1e). (d) The DIP-α loss-of-function phenotype is rescued by reintroducing a UAS-DIP-α transgene in cells that normally express DIP-α. (e) UAS-DIP-αI83A expression does not alter innervation of m4 and DIP-αI83A localizes normally within the 1 s terminals (inset). (f) Expression of UAS-DIP-αI83A fails to rescue the DIP-α loss-of-function phenotype (no 1 s innervation of m4). (g) Quantification of 1 s innervation of m4. Heterozygous background contains a single wild-type copy of DIP-α, while the hemizygous background only contains the loss-of-function allele. Expression of UAS-DIP-α completely rescues the loss-of-function phenotype, while expression of the UAS-DIP-αI83A does not. Control UAS transgene background (no GAL4) does not affect m4 innervation. n: See Figure 7—source data 1. ***p<0.0001. Calibration bar, 10 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Normalized mean intensity of overexpressed UAS-DIP-α and UAS-DIP-αI83A in motor neuron terminals that normally express DIP-α (see Materials and methods). (b) Quantification of 1 s innervation of m4 in male vs female larvae in each of the control transgene genotypes (UAS line crossed to a w1118). Note that there is no statistical difference between males and females. (c) Rescue of the DIP-α loss-of-function phenotype by introducing a UAS-DIP-α (fused to Myc) in cells that normally express DIP-α. In c1), DIP-α (green) properly localizes to the 1 s NMJ at m4. (d) Expression of UAS-DIP-αI83A fails to rescue the DIP-α loss-of-function phenotype at m4 but DIP-αI83A localizes normally at other 1 s synapses such as those on m12 (d1). (e) Labeling with anti-Myc antibody in a control w1118 preparation reveals background cross-reactivity of this antibody. (f) Quantification of 1 s innervation of m4 in flies either expressing UAS-DIP-α or UAS-DIP-αI83A under the control of EveRN2-GAL4 (a GAL4 driver that expresses in the MNISN-1s neurons). Error bars represent S.E.M. n: See Figure 7—source data 1. Also see Figure 7.
+
 In addition to the two DIP-α binding partners, Dpr6 and Dpr10, observed in the first application of the ECIA strategy (Özkan et al., 2013), we have demonstrated here the DIP-α homophilic binding (Figure 6e). This new interaction raised the important question: Is DIP-α homodimerization required for proper wiring of the neuromuscular system? In our concurrent study, we showed that removal of DIP-α leads to the lack of MNISN-1s innervation of m4 (Ashley et al., 2019 and Figure 7a,b,g). We used a DIP-α-GAL4 gene trap which serves the dual purpose of a loss-of-function (LOF) allele and a GAL4 driver in the bipartite GAL4/UAS system. Also, these studies take advantage of DIP-α being an X-linked gene since DIP-α-GAL4 heterozygous females can be used as controls and hemizygous males represent null mutants. Utilizing this approach, we can rescue the LOF DIP-α phenotype by expressing a wild-type UAS-DIP-α in cells which normally express DIP-α, including MNISN-1s (Ashley et al., 2019 and Figure 7d,g). We favor a model whereby transsynaptic Dpr10–DIP-α interactions mediate connectivity, which we set out to demonstrate using single-site mutations that break the interaction. For this purpose and to tease apart roles for homophilic and heterophilic interactions, we constructed a DIP-α mutant I83A (DIP-αI83A) which abolishes homophilic binding but does, at least partly, retain the Dpr10 interaction (Figure 6e and Figure 6—figure supplement 2a). As shown in Figure 7d and g, expression of UAS-DIP-α in cells that normally express DIP-α is able to rescue the loss of DIP-α phenotype confirming our previous finding. However, when the same experiment is repeated with UAS-DIP-αI83A, we no longer observe rescue (Figure 7f,g), suggesting that the DIP-α interaction interface we identified is required for the connectivity of MNISN-1s to m4, and that the connectivity might depend on homodimerization activity of DIP-α. These results are not due to changes in DIP-αI83A expression since the mutant and wild type DIP-α are expressed at similar levels (Figure 7—figure supplement 1a). Also, to confirm that there are no inherent sex differences in the formation of these terminals, we scored female and male heterozygous transgene controls and found no significant differences in m4 innervation (Figure 7—figure supplement 1b). Overall, this suggests a multistep process of m4 innervation requiring both a Dpr10–DIP-α interaction as well as a homomeric DIP-α–DIP-α interaction.
 
 In our concurrent study describing the role of Dpr10–DIP-α interactions in wiring of the neuromuscular circuit, we found that overexpression of UAS-dpr10 in muscles caused the partial loss of MNISN-1s innervation of m4, similar to the dpr10 mutant phenotype (Ashley et al., 2019). We sought to determine if this gain-of-function (GOF) phenotype was a direct consequence of overexpressed Dpr10 interacting with endogenous DIP-α. As discussed above, the Dpr10 mutant Y103A (hereafter denoted Dpr10Y103A) is unable to bind DIP-α (Figure 6e), providing an ideal tool for exploring this GOF phenotype. Unlike muscle overexpression of UAS-Dpr10 (Figure 8a), similar high level expression of UAS-dpr10Y103A in muscles does not affect MNISN-1s innervation of m4 (Figure 8b,c), suggesting that the Dpr10–DIP-α interaction is an integral component of the Dpr10 GOF phenotype. This GOF phenotype is dependent on the levels of UAS-dpr10 overexpression, as mild muscle expression does not reveal the GOF phenotype (Figure 8—figure supplement 1). To address the possibility of an unexpected downstream effect of the Dpr10Y103A mutant, we showed that the Y103A mutation does not affect the interaction of Dpr10 with cDIP (Figure 6—figure supplement 2b); however, we cannot rule out effects mediated by unknown binding partners of Dpr10. Furthermore, we reasoned that if overexpressed Dpr10 is acting through DIP-α, partial loss of DIP-α should exacerbate the GOF UAS-dpr10 phenotype while overexpression of UAS-dpr10Y103A should be insensitive to DIP-α levels. Indeed, only overexpression of UAS-dpr10 is sensitive to DIP-α levels (Figure 8c), supporting a role for endogenous DIP-α interaction with overexpressed Dpr10.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig8-v3.jpg)
+
+**Figure 8.:** (a) Loss of MNISN-1s innervation of m4 due to overexpression of UAS-dpr10-V5 (referred to in the figure as UAS-dpr10) in muscles with the Mef2-GAL4 driver. Dpr10 is localized specifically to the postsynaptic membrane (green) and co-localizes with Dlg, a postsynaptic membrane marker (red). Anti-HRP (blue) labels all neuronal membrane. (a1) and (a2) show the individual Dpr10 and Dlg channels, respectively. Note that only 1b terminals are present. Also, the Dpr10 protein is labeled with anti-V5. (b) Muscle overexpression of a Dpr10 variant (UAS-dpr10Y103A) that is incapable of binding DIP-α does not affect m4 innervation. Both 1b and 1 s (arrow) terminals are present on m4. The 1b and 1 s terminals are easily distinguished by size and staining intensity of Dlg (b2) (see Materials and methods). (c) Quantification of 1 s innervation of m4. Overexpression of wild type UAS-dpr10 transgene results in 25% of m4s innervated by MNISN-1s compared to 89% innervation when overexpressing UAS-dpr10Y103A which is unable to bind DIP-α. n: See Figure 8—source data 1. ***p<0.0001. Calibration bar, 10 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/41028/elife-41028-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** Low level expression of UAS-dpr10 with BG487-GAL4 shows approximately wildtype levels of m4 innervation; however high level expression of UAS-dpr10 with 24B-GAL4 shows a similar phenotype to another strong muscle driver, Mef2-GAL4. See also Figure 8. n: See Figure 8—source data 2.
 
 ## Discussion
 
@@ -127,11 +602,11 @@ One point of difference is in the SPR-measured affinities of heterophilic Dpr–
 
 ## Materials and methods
 
-## Phylogenetics
+### Phylogenetics
 
 The regions containing immunoglobulin domains from the D. melanogaster Dpr and DIP sequences were aligned using MUSCLE (Edgar, 2004). The phylogenetic analysis was performed using PhyML (Guindon et al., 2010) and the phylogenetic trees were drawn with SeaView (Gouy et al., 2010).
 
-## Protein expression and purification
+### Protein expression and purification
 
 All large-scale Dpr and DIP protein expression was done using the baculoviral expression system. Constructs were cloned into the baculoviral transfer vector pAcGP67A (BD Biosciences) and its variants, followed by co-transfection with linearized BestBac 2.0 baculoviral DNA (Expression Systems, 91–002) into Sf9 cells, using Trans-IT Insect (Mirus Bio) or Cellfectin II (Thermo Fisher, 10362–100) as the transfection reagent according to manufacturers’ specifications. For protein expression, High Five cells (BTI-TN-5B1-4) grown in Insect-XPRESS (Lonza, 12-730Q) were infected at 2 × 106 cells/ml density, and conditioned media were collected at 48–66 hr post-infection for purification of secreted proteins. All proteins expressed were designed to have C-terminal hexahistidine tags for purification via immobilized metal affinity chromatography.
 
@@ -139,15 +614,25 @@ Proteins were purified from the media using a protocol that precipitates unknown
 
 Proteins that need to be captured on streptavidin coated SPR chips were produced with C-terminal Avi- and His-tags. The Avi-tagged proteins were biotinylated after protein purification using BirA biotin ligase, followed by a second size-exclusion chromatography step.
 
-## Size-exclusion chromatography of Fast-Exchange DIP homodimers
+### Size-exclusion chromatography of Fast-Exchange DIP homodimers
 
-DIP homodimers can be observed on small-zone size-exclusion (gel filtration) chromatography (SEC) runs. Due to fast kinetics of association and dissociation, homodimerizing DIPs run as single peaks in these chromatography runs, as the timescale of the chromatography experiment (minutes to an hour) is much longer than the timescales of monomer-dimer conversions (1 second or less) as observed in SPR experiments (Stevens, 1989; Wilton et al., 2004). While there is no explicit mathematical model for small-zone SEC for fast-kinetics oligomers (Stevens, 1989), simulations can accurately predict elution profiles. Here, we make simplifications to plot binding isotherms: (1) we ignore diffusion and dispersion terms, (2) and that the elution position is given by the peak’s highest point. Based on observed dimer and monomer elution velocities, measured elution volumes can be converted to dimer fraction: Since the flow rate and the column volume is constant, ‘velocity’ can be thought as (Elution volume)-–1. Therefore, the elution volume of a mixed monomer-dimer sample will be,Velution, mixed−1=fdimer×(Velution, dimer)−1+(1−fdimer)×(Velution, monomer)−1which gives the dimer fraction, fdimer.
+DIP homodimers can be observed on small-zone size-exclusion (gel filtration) chromatography (SEC) runs. Due to fast kinetics of association and dissociation, homodimerizing DIPs run as single peaks in these chromatography runs, as the timescale of the chromatography experiment (minutes to an hour) is much longer than the timescales of monomer-dimer conversions (1 second or less) as observed in SPR experiments (Stevens, 1989; Wilton et al., 2004). While there is no explicit mathematical model for small-zone SEC for fast-kinetics oligomers (Stevens, 1989), simulations can accurately predict elution profiles. Here, we make simplifications to plot binding isotherms: (1) we ignore diffusion and dispersion terms, (2) and that the elution position is given by the peak’s highest point. Based on observed dimer and monomer elution velocities, measured elution volumes can be converted to dimer fraction: Since the flow rate and the column volume is constant, ‘velocity’ can be thought as (Elution volume)-–1. Therefore, the elution volume of a mixed monomer-dimer sample will be,
 
-Protein concentration vs. dimer fraction was fit to a binding isotherm with the following formula in MATLAB:fdimer=2 [Dimer]2 Dimer+[Monomer]=4[DIP]total+KD-KD2+8KD[DIP]total4[DIP]total
+$$
+V_{elution, mixed}^{−1}=f_{dimer}\times(V_{elution, dimer})^{−1}+(1−f_{dimer})\times(V_{elution, monomer})^{−1}
+$$
+
+which gives the dimer fraction, $f_{dimer}$.
+
+Protein concentration vs. dimer fraction was fit to a binding isotherm with the following formula in MATLAB:
+
+$$
+f_{dimer}=\frac{2[Dimer]}{2Dimer+[Monomer]}=\frac{4[DIP]_{total}+K_{D}-\sqrt{K_{D}^{2}+8K_{D}[DIP]_{total}}}{4[DIP]_{total}}
+$$
 
 Due to simplifications and assumptions as mentioned above, and especially uncertainties in pure dimer and monomer elution volumes, we choose to provide a range, rather than a single KD value in the main text. Dissociation constant estimated from gel filtration profiles for DIP-η (23 µM) proved to be within 1.6-fold of the dissociation constant measured with SPR (14 µM) showing the utility of the method (Figure 5—figure supplement 1).
 
-## Protein crystallization and structure determination
+### Protein crystallization and structure determination
 
 Proteins were crystallized using the sitting-drop vapor diffusion method with a Mosquito robot (TTP Labtech) at 21°C, using 100 nl protein +100 nl crystallant drops against 50 µl crystallant reservoir. Proteins used for crystallization were dissolved in HBS, unless noted otherwise.
 
@@ -163,35 +648,176 @@ Dpr10–DIP-α. Crystals were grown from a 1:1 mixture of Dpr10 IG1 and DIP-α I
 
 Analysis of the interaction interfaces were aided by PyMOL (Schrödinger LLC) and PISA (Krissinel and Henrick, 2007). RMSD calculations were done in PyMOL for all Cα atoms in each IG1 domain with zero outlier rejections. Buried surface areas are reported in the text as interface areas from each polypeptide chain combined.
 
-## Surface Plasmon Resonance
+### Surface Plasmon Resonance
 
 Most SPR experiments were performed, as before (Carrillo et al., 2015), on a Biacore T200 using Streptavidin-coated (SA) chips from GE Healthcare. The DIP-η homodimerization experiments were performed with a Biorad ProteOn XPR36 using the low-capacity Neutravidin chips. For mutants with high dissociation constants (usually >100 µM), maximum response (Rmax) values could not be determined. In such cases, estimates of dissociation constants were calculated while constraining Rmax to well-determined values measured on the same channel from wild-type measurements. All buffers included the surfactant 0.05% Polysorbitan-20 to prevent non-specific binding. Fitting to binding isotherms were done in BIAEvaluation (GE Healthcare), Prism 6 (GraphPad) or MATLAB (Mathworks) using 1:1 Langmuir binding models.
 
-Affinity measurement for homodimeric proteins by SPR are complicated by the fact that homodimers form between analyte and ligand (on the chip), between ligand and ligand (on the chip), and between analyte and analyte (in the mobile phase). To avoid ligand-ligand homodimerization on the chip, we created a SPR chip by loading it with dilute (i.e. monomeric) DIP-η and only sparsely populated a low-capacity Neutravidin chips, approximately 100 response units on the ProteOn XPR36 system. To account for homodimerization of DIP-η molecules in the mobile phase, we assumed that free, unbound DIP concentration,[DIP]free=-KD+KD2+8KD[DIP]total/4and we fit the binding isotherm tofbound=ResponseRmax=-KD+KD2+8KD[DIP]total3KD+KD2+8KD[DIP]total
+Affinity measurement for homodimeric proteins by SPR are complicated by the fact that homodimers form between analyte and ligand (on the chip), between ligand and ligand (on the chip), and between analyte and analyte (in the mobile phase). To avoid ligand-ligand homodimerization on the chip, we created a SPR chip by loading it with dilute (i.e. monomeric) DIP-η and only sparsely populated a low-capacity Neutravidin chips, approximately 100 response units on the ProteOn XPR36 system. To account for homodimerization of DIP-η molecules in the mobile phase, we assumed that free, unbound DIP concentration,
+
+$$
+[DIP]_{free}=-K_{D}+\sqrt{K_{D}^{2}+8K_{D}[DIP]_{total}}/4
+$$
+
+and we fit the binding isotherm to
+
+$$
+f_{bound}=\frac{Response}{R_{max}}=\frac{-K_{D}+\sqrt{K_{D}^{2}+8K_{D}[DIP]_{total}}}{3K_{D}+\sqrt{K_{D}^{2}+8K_{D}[DIP]_{total}}}
+$$
 
 In MATLAB, yielding a R2 value of 0.97 for the fit (Figure 5—figure supplement 1d).
 
-## Extracellular interactome assay (ECIA)
+### Extracellular interactome assay (ECIA)
 
 The assay was performed according to Özkan et al. (2013). One modification to the assay was the use of a higher-expressing promoter, the constitutively active Actin5C promoter, in the S2 expression plasmids, which we believe to have resulted in higher sensitivity for the assay, and the detection of the homophilic DIP-α complex. Before performing the assay, proteins, bait and prey, were western blotted and detected using an anti-penta-His antibody coupled to iFluor488 (Genscript, A01800), and protein concentrations for any wild-type +mutant set were normalized via dilution.
 
-## Fly strains
+### Fly strains
 
-## Drosophila genetics
+<table>
+  <thead>
+    <tr>
+      <th>Fly strain</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock center (BDSC)</td>
+    </tr>
+    <tr>
+      <td>Mef2-GAL4</td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>DIP-α-T2A-GAL4</td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>DIP-α1-178</td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>UAS-DIP-α-Myc</td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>UAS-DIP-αI83A-Myc</td>
+      <td>See below</td>
+    </tr>
+    <tr>
+      <td>UAS-dpr10-V5</td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>UAS-dpr10Y103A-V5</td>
+      <td>See below</td>
+    </tr>
+    <tr>
+      <td>UAS-2XEGFP</td>
+      <td>BDSC #6874</td>
+    </tr>
+    <tr>
+      <td>24B-GAL4</td>
+      <td>BDSC #1767</td>
+    </tr>
+    <tr>
+      <td>EveRN2-GAL4</td>
+      <td>BDSC #7470</td>
+    </tr>
+    <tr>
+      <td>BG487-GAL4</td>
+      <td>BDSC #51634</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila genetics
 
 The DIP-α-T2A-GAL4 gene trap line is a null allele for DIP-α. As DIP-α is an X-linked gene, hemizygous males are DIP-α nulls. Female DIP-α-T2A-GAL4 flies were crossed to UAS transgenic male flies, such that all male progeny are hemizygous for DIP-α-T2A-GAL4 and all females are heterozygous. For controls, wildtype females (w1118) were crossed to the same UAS transgenic males. The other GAL4 lines are not located on the X chromosome so the F1 gender had no impact on experimental outcome.
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
 Plasmid constructs were generated by PCR amplification of existing genomic DNA sequences from the UAS-DIP-α-Myc and UAS-dpr10-V5 fly lines (gifts of Lawrence Zipursky). Both were amplified using the common primers: AATAGGGAATTGGGAATTCAGATCTAAAAGGTAGGTTCAACCAC and GAGTTCTGTGTGTATAACAAATGCTG. Using site directed mutagenesis, the point mutations were introduced into DIP-α using the following primers (lowercase represents the primer mismatch): ACCAAGGCCgcTCAAGCCATCCACGAGAACGTA and AAGGCCGACACCAAGGCCgcTCAAGCCAT. The following primers were used to introduce mutations into Dpr10: ACCAAGGCCgcTCAAGCCATCCACGAGAACGTA and AAGGCCGACACCAAGGCCgcTCAAGCCAT. The resulting products were cloned into pUASTattB using Gibson Assembly (New England Biolabs). The resulting plasmids were sent for injection (Genetivision) and inserted into attP2 (DIP-αI83A-Myc) and VK20 (dpr10Y103A-V5). Once established, these lines were then crossed to DIP-α-GAL4 (gift of Hugo Bellen) or Mef2-GAL4 (Bloomington Drosophila Stock Center), respectively.
 
-## Antibodies used
+### Antibodies used
 
-## Larval sample preparation and quantification
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Concentration</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Goat anti-HRP-TRITC</td>
+      <td>1:50</td>
+      <td>Jackson Immunological Research (Jackson) #123-025-021</td>
+    </tr>
+    <tr>
+      <td>Goat anti-HRP-Alexa405</td>
+      <td>1:50</td>
+      <td>Jackson #123-475-021</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-Dlg</td>
+      <td>1:100</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB) #4F3</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-V5</td>
+      <td>1:400</td>
+      <td>ThermoFisher #R960-25</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-GFP</td>
+      <td>1:1000</td>
+      <td>ThermoFisher #A11122</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Dlg</td>
+      <td>1:40,000</td>
+      <td>Gift of Vivian Budnik (Thomas et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Myc</td>
+      <td>1:200</td>
+      <td>Cell Signaling Technology #71D10</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse-Alexa488</td>
+      <td>1:500</td>
+      <td>ThermoFisher #A11029</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse-Alexa568</td>
+      <td>1:500</td>
+      <td>ThermoFisher #A11031</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Mouse-Alexa647</td>
+      <td>1:500</td>
+      <td>ThermoFisher #A21235</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Rabbit-Alexa488</td>
+      <td>1:500</td>
+      <td>ThermoFisher #A11008</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Rabbit-Alexa568</td>
+      <td>1:500</td>
+      <td>ThermoFisher #A11036</td>
+    </tr>
+  </tbody>
+</table>
+
+### Larval sample preparation and quantification
 
 Wandering third instar larvae were dissected as per Menon and Zinn (Menon et al., 2009). Briefly, samples were dissected on Sylgard dishes (Dow) under phosphate buffered saline (PBS: 10 mM phosphate buffer, 150 mM sodium chloride) and fixed for 30 min in 4% paraformaldehyde (1:5 dilution of 20% paraformaldehyde (Electron Microscopy Sciences) in PBS). Samples were permeabilized using PBS containing 0.05% Triton-X100 (PBST), washed three times, 15 min each, with PBST and incubated with primary antibodies overnight. Samples were washed three times, 15 min each, in PBST and then incubated in secondary antibodies (see above) for two hours. Samples were finally washed in PBST and then mounted in vectashield antifade reagent (Vector Laboratories). The presence or absence of 1 s innervation was determined using a Zeiss Axioimager equipped with a 40X plan-neofluar 1.3NA objective. The differential DLG labeling, weaker in type 1 s boutons compared to 1b boutons (Guan et al., 1996), allowed for detection and quantification of 1b and 1 s boutons on muscle 4. Abdominal segments A2-A4 were examined for each animal, and then pooled into the final quantification. Statistical analysis was performed using a student’s T-test for pairwise comparison of genotypes using Prism software (Graphpad). For multiple comparisons, statistics were performed using one-way ANOVA with Dunnett’s post hoc.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Confocal microscopy was performed on a Zeiss LSM800 confocal microscope using either a 40X/1.3NA plan-neofluar objective, or a 63 × 1.4 NA plan-apo objective. Experiments performed on the same day were imaged together using identical settings.
 

@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02n2fzt79 Department of Psychology and Neuroscience, Boston College Chestnut Hill United States
+1. Department of Psychology and Neuroscience, Boston College Chestnut Hill United States ([ROR:02n2fzt79](https://ror.org/02n2fzt79))
 
 † Corresponding author
 
@@ -35,11 +35,23 @@ Twenty-four rats (12 females; Experiment 1) and sixteen rats (8 females, Experim
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
-## Conditioned suppression reveals complete discrimination
+#### Conditioned suppression reveals complete discrimination
 
 Twenty-four Long Evans rats (12 females) were trained to nose poke in a central port for food reward. Nose poking was reinforced on a 60-s variable interval schedule throughout behavioral testing. Independent of the poke-food contingency, auditory cues were played through overhead speakers, and foot shock delivered through the grid floor (Figure 1A). The experimental design consisted of three cues predicting unique foot shock probabilities: danger (p = 1), uncertainty (p = 0.25), and safety (p = 0) (Figure 1B). Behavior chambers were equipped with TTL-triggered cameras capturing 5 frames/s starting 5 s prior to cue presentation and continuing throughout the 10 s cue. TTL-triggered capture yielded 75 frames per trial, and 1200 frames per session. We aimed to capture 28,800 frames each session (1200 frames × 24 rats).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig1-v2.jpg)
+
+**Figure 1.:** (A) Conditioned suppression procedure during which rats nose poke for food, while cues are played overhead and shocks delivered through floor. (B) Fear discrimination consisted of 10 s auditory cues predicting unique foot shock probabilities: danger (red; p = 1), uncertainty (purple; p = 0.25), and safety (blue; p = 0). Five video frames were captured per second, starting 5 s prior to cue onset and continuing through cue presentation. Mean ± standard error of the mean (SEM) suppression ratios for danger (red), uncertainty (purple), and safety (blue) from pre-exposure through discrimination session 16 are shown for (C) females and (D) males. Mean + individual suppression ratios for each cue are shown for (E) session 2, (F) session 8, and (G) session 16. Individuals represented by black (female) and gray (male) dots.+95% bootstrap confidence interval does not contain zero.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Analysis of variance (ANOVA) for body weight (g) [factors: sex and session] revealed significant main effects of session (F(16,352) = 29.58, p = 1.90 × 10−55), sex (F(1,22) = 287.54, p = 4.07 × 10−14), and a significant session × sex interaction (F(16,352) = 2.20, p = 0.005). Mean ± standard error of the mean (SEM) body weights in grams (y-axis) of males (gray) and females (black) from pre-exposure through session 16. (B) Baseline nose poke rates (poke/min) decreased during discrimination sessions 1 and 2, then increased over the remaining sessions. Males poked at higher baseline levels across all sessions. ANOVA for baseline nose poke rate (poke/min) [factors: sex and session] revealed significant main effects of session (F(16,352) = 19.30, p = 4.44 × 10−39) and sex (F(1,22) = 5.10, p = 0.034). Mean baseline pose rate (y-axis) of males and females from sessions 1 to 16. (C) Baseline nose poke rate plotted against body weight for all individuals. There was no relationship between the two measures in either female or male rats. *Paired samples t-test p < 0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Correlations between baseline nose poke rate and differential suppression ratios for (A) danger and uncertainty, and (B) uncertainty and safety are shown. Individuals represented by black (female) and gray (male) circles. R and p values from Pearson’s correlation coefficient reported.
 
 Our laboratory routinely observes complete behavioral discrimination between danger, uncertainty, and safety in female and male rats measuring conditioned suppression (Walker et al., 2018; Wright et al., 2019; Ray et al., 2022). Suppression ratios are calculated using baseline and cue nose poke rates: (baseline − cue)/(baseline + cue). Suppression ratios provide a continuous behavior measure, from no suppression (ratio = 0) to total suppression (ratio = 1). To determine if we observed complete behavioral discrimination in these 24 rats, we performed analysis of variance (ANOVA) for suppression ratios [factors: cue (danger vs. uncertainty vs. safety), session (17 total: 1 pre-exposure and 16 discrimination), and sex (female vs. male)]. Complete behavioral discrimination emerged over testing (Figure 1C, D). ANOVA found a significant main effect of cue and a significant cue × session interaction (Fs > 6, ps < 0.0001; see Supplementary file 1 for specific values). Sex effects were apparent; ANOVA found a significant main effect of sex, as well as a significant cue × sex interaction and a cue × session × sex interaction (Fs > 3, ps < 0.05; Supplementary file 1). Female suppression ratios were higher to each cue across all discrimination sessions: danger (t22 = 3.36, p = 0.003), uncertainty (t22 = 7.14, p = 3.67 × 10−7), and safety (t22 = 4.40, p = 0.0002).
 
@@ -53,27 +65,79 @@ Frames were hand scored for nine discrete behaviors: cup, freezing, grooming, ju
 
 **Figure 2.:** Representatives frames are shown for: (A) background, (B) groom, (C) port, (D) cup, (E) locomote, (F) jump, (G) scale, (H) rear, (I) stretch, and (J) freeze.
 
-## Temporal ethograms reveal shifting behavioral patterns over discrimination
+![Video 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-video1.mp4.jpg)
+
+**Video 1.:** Video shows the 75 sequential frames for a danger trial. Frames 1–25 are background and 26–75 are danger cue presentation. Observer judgment is shown in the top right for each frame. The specific trial is 23_16_12 (female rat 23, session 16, trial 12).
+
+![Video 2.](https://cdn.elifesciences.org/articles/82497/elife-82497-video2.mp4.jpg)
+
+**Video 2.:** Video shows the 75 sequential frames for a danger trial. Frames 1–25 are background and 26–75 are danger cue presentation. Observer judgment is shown in the top right for each frame. The specific trial is 24_16_16 (male rat 24, session 16, trial 16).
+
+![Video 3.](https://cdn.elifesciences.org/articles/82497/elife-82497-video3.mp4.jpg)
+
+**Video 3.:** Video shows the 75 sequential frames for a danger trial. Frames 1–25 are background and 26–75 are danger cue presentation. Observer judgment is shown in the top right for each frame. The specific trial is 5_16_11 (female rat 5, session 16, trial 11).
+
+![Video 4.](https://cdn.elifesciences.org/articles/82497/elife-82497-video4.mp4.jpg)
+
+**Video 4.:** Video shows the 75 sequential frames for a danger trial. Frames 1–25 are background and 26–75 are danger cue presentation. Observer judgment is shown in the top right for each frame. The specific trial is 4_16_3 (male rat 4, session 16, trial 3).
+
+#### Temporal ethograms reveal shifting behavioral patterns over discrimination
 
 The 86,400 scored frames allowed us to construct temporal ethograms for danger (Figure 3A–C), uncertainty (Figure 3D–F), and safety (Figure 3G–I) during sessions 2 (Figure 3, column 1), 8 (Figure 3, column 2), and 16 (Figure 3, column 3). Hand scoring showed high inter-rater reliability even when many behaviors were present in a single trial (Figure 3—figure supplement 1). Shifts in the composition of behavior from baseline to cue presentation were apparent across all ethograms. During session 2 (column 1), behavioral shifts lacked cue specificity. Temporal ethograms revealed danger, uncertainty, and safety to equally suppress grooming, port, and cup behavior, but increase freezing, and locomotion. Generalized cue control of behavior was supported by multiple analysis of variance (MANOVA) for all nine behavior categories [factors: cue (danger vs. uncertainty vs. safety), time (15 1 s bins: 5 s baseline → 10 s cue), and sex (female vs. male)] revealing a significant main effect of time (F(126,2772) = 2.37, p = 5.93 × 10−15), but neither a significant main effect of cue (F(18,74) = 1.00, p = 0.47) nor a significant cue × time interaction (F(252,5544) = 1.12, p = 0.11). Cue-specific shifts in behavior were apparent by session 8 (column 2), and continued to session 16 (column 3). Now, MANOVA revealed significant main effects of cue (session 8, F(18,74) = 3.39, p = 0.0001; session 16, F(18,74) = 4.44, p = 0.000002), and significant cue × time interactions (session 8, F(252,5544) = 1.52, p = 3.31 × 10−8; session 16, F(252,5544) = 1.52, p = 4.74 × 10−7). Female-only ethograms are shown in Figure 3—figure supplement 2; male-only in Figure 3—figure supplement 3.
 
-## Danger orchestrates a suite of behaviors
+![Figure 3.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig3-v2.jpg)
+
+**Figure 3.:** Mean percent behavior from 5 s prior through 10 s cue presentation is shown for the danger cue during sessions (A) 2, (B) 8, and (C) 16; the uncertainty cue during sessions (D) 2, (E) 8, and (F) 16; and the safety cue during sessions (G) 2, (H) 8, and (I) 16. Behaviors are groom (gray), port (dark purple), cup (light purple), locomote (blue), jump (dark green), scale (light green), rear (yellow), stretch (orange), and freeze (red).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Percentage of identical observations between observer–observer pairs. (B) Percentage of identical observations as a function of the number of behaviors present in a trial. (C) Example ethogram from a single uncertainty cue presentation, taken from a female during session 8. Frames were systematically hand scored by five observers blind to rat identity, session number, and trial type (see Materials and methods for hand scoring approach and trial anonymization). A comparison dataset consisting of 12 trials (900 frames) was also scored by each observer. A correlation matrix compared % identical observations for the 900 comparison frames for each observer–observer pair. Mean % identical observation was 82.83%, with a minimum observer–observer pair agreement of 75.89% and a maximum of 90.56%. Previous studies scoring the presence or absence of freezing have reported inter-observer reliability as an R value: 0.93 (Parnas et al., 2005), 0.96 (Pickens et al., 2010), and 0.97 (Jones and Monfils, 2016). Another study simply reported >95% inter-observer agreement (Badrinarayan et al., 2012). These values exceed our mean % identical observation. However, we hand scored nine discrete behaviors. We observed a negative relationship between the number of behavior categories present and % identical observations (R2 = 0.17, p = 2.27 × 10−6). Mean percent identical observation was 95% when two behavior categories were present, and 92.5% when three behavior categories were present. Even when eight behavior categories were present, a mean percent identical observation of 78% was achieved. Our approach yielded high inter-observer reliability across trials with few and many behavior categories present.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mean percent behavior from 5 s prior through 10 s cue presentation is shown for danger (row 1), uncertainty (row 2), and safety (row 3) during sessions (A, Ai, Aii) 2, (B, Bi, Bii) 8, and (C, Ci, Cii) 16. Behaviors quantified are groom (gray), port (dark purple), cup (light purple), locomote (blue), jump (dark green), scale (light green), rear (yellow), stretch (orange), and freeze (red).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Mean percent behavior from 5 s prior through 10 s cue presentation is shown for danger (row 1), uncertainty (row 2), and safety (row 3) during sessions (A, Ai, Aii) 2, (B, Bi, Bii) 8, and (C, Ci, Cii) 16. Behaviors quantified are groom (gray), port (dark purple), cup (light purple), locomote (blue), jump (dark green), scale (light green), rear (yellow), stretch (orange), and freeze (red).
+
+#### Danger orchestrates a suite of behaviors
 
 A central question driving this study is what behaviors come under the specific control of the fear conditioned, danger cue? To determine this, we focused on session 16, when discrimination was at its most complete. We first performed MANOVA for the 5 s baseline period [factors: cue (danger vs. uncertainty vs. safety), time (5, 1 s bins), and sex (female vs. male)]. As expected, MANOVA returned no main effect of cue, time, nor a cue × time interaction (Fs < 1.5, ps > 0.1). Univariate ANOVA results were subjected to Bonferroni correction (p < 0.0055, 0.05/9 = 0.0055) to account for the nine separate analyses. Like for MANOVA, univariate ANOVA for each of the nine behaviors showed no main effect of cue, time, nor a cue × time interaction. In contrast to all other behaviors, univariate ANOVA for baseline freezing showed a main effect of sex (F(1,22) = 10.37, p = 0.004). ANOVA for freezing across the baseline and cue periods revealed a significant sex × cue × time interaction (F(28,616) = 1.94, p = 0.003). Females only froze during early danger presentation while males froze for the duration of danger presentation. The unique freezing pattern warrants separate consideration, which we return to later.
 
 MANOVA was then performed for the 10 s cue period [factors: cue (danger vs. uncertainty vs. safety), time (10, 1 s bins), and sex (female vs. male)]. MANOVA returned significant main effects of cue and time, as well as a significant cue × time interaction (Fs > 1.3, ps < 0.005). Of most interest, univariate ANOVA found a significant main effect of cue for six of the nine behaviors: port (F(2,44) = 32.15, p = 2.47 × 10−9, Figure 4A), cup (F(2,44) = 18.40, p = 0.00002, Figure 4B), locomote (F(2,44) = 6.33, p = 0.004, Figure 4C), jump (F(2,44) = 10.90, p = 0.0001, Figure 4D), rear (F(2,44) = 8.64, p = 0.001, Figure 4E), and freeze (F(2,44) = 13.86, p = 0.00002). Danger suppressed port and cup behavior (Figure 4A, B, line graphs), but promoted locomotion, jumping, and rearing (Figure 4C–E, line graphs). Danger-specific control of behavior was most apparent in the last 5 s of cue presentation (Figure 4, shaded region).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig4-v2.jpg)
+
+**Figure 4.:** Line graphs show mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s cue presentation for danger (red), uncertainty (purple), and safety (blue) for (A) port, (B) cup, (C) locomote, (D) jumping, and (E) rearing. Bar plots show mean change in behavior from baseline (5 s prior to cue) compared to last 5 s of cue. Individuals represented by black (female) and gray (male) dots.+95% bootstrap confidence interval for danger vs. safety (black), danger vs. baseline (red), or safety vs. baseline (blue) comparison does not contain zero (black).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s danger presentation is shown for (A) port, (B) cup, (C) locomote, (D) jump, and (E) rear, for sessions 2 (dark brown) and 16 (red). Adjacent plots show mean % change in behavior from baseline to last 5 s of danger presentation for all rats during sessions 2 (dark brown) and 16 (red). Individual data points shown (females, black and males gray).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s cue presentation is shown for (A) port, (B) cup, (C) locomote, (D) jump, and (E) rear, danger (red), uncertainty (purple), and safety (blue). Adjacent plots show mean % change in behavior from baseline to last 5 s of cue presentation for all rats. Individual data points shown (females, black and males, gray). +95% bootstrap confidence interval does not contain zero.
+
 Claiming danger specificity requires that % behavior during the danger cue differs from baseline as well as the safety cue. To test this, we subtracted mean % behavior during the 5 s baseline from mean % behavior during the last 5 s of cue presentation, giving %∆ danger, %∆ uncertainty, and %∆ safety for each subject. We constructed 95% BCIs for each cue/behavior. 95% BCIs for %∆ danger did not contain zero for each of the five behaviors (Figure 4), meaning that levels of behavior during cue presentation differed from baseline. Danger presentation decreased port and cup behavior below baseline, but increased locomotion, jumping, and rearing over baseline. 95% BCIs for %∆ uncertainty revealed increased locomotion and jumping, while 95% BCIs for %∆ safety revealed only decreased rearing. To demonstrate danger specificity, we subtracted %∆ safety from %∆ danger. We then constructed 95% BCIs for the difference score for each behavior. Confirming danger specificity (greater changes for danger than for safety), 95% BCIs did not contain zero for each of the five behaviors. Thus, danger specifically and selectively suppressed reward-related port and cup behavior, but promoted locomotion, jumping, and rearing.
 
-## Associatively acquired behaviors generalize early
+#### Associatively acquired behaviors generalize early
 
 By the end of session 16 each rat had received 96 total foot shocks. It is possible that danger-specific control of multiple behaviors was only observed in session 16 because rats received far more cue–shock pairings than a typical Pavlovian conditioning procedure employs. Session 2 provided a comparison to numbers of cue–shock pairings more typical of fear conditioning studies; rats had received 12 total foot shocks by session’s end. The key question was whether pattern of danger-elicited behaviors in session 2 resembled the pattern in session 16, or if a fundamentally different pattern was observed. To determine this, we performed univariate ANOVA for danger [factors: session (2 vs. 16) and time (15, 1 s bins)] for each of the five behaviors showing session 16 selectivity (Figure 4—figure supplement 1). Confirming near identical temporal patterns of behavior expression during sessions 2 and 16, ANOVA found no significant session × time interaction for any behavior [port (F(14,322) = 0.45, p = 0.96), cup (F(14,322) = 0.61, p = 0.86), locomote (F(14,322) = 1.09, p = 0.37), jump (F(14,322) = 1.23, p = 0.25), and rear (F(14,322) = 0.92, p = 0.54)]. Thus, danger orchestrated a suite of behaviors even early in discrimination. Recall that early discrimination (session 2) was marked by non-specific cue control of behaviors. This would mean that associatively acquired behaviors initially generalized to uncertainty and safety – and that discrimination consisted of restricting behavior to danger. In support, univariate ANOVA for session 2 [factors: cue (danger vs. uncertainty vs. safety), time (15, 1 s bins), and sex (female vs. male)] found no cue × time interaction for any of the five, danger-specific behaviors (all Fs < 1.2, all ps > 0.3).
 
-## Sex informs the temporal pattern of freezing
+#### Sex informs the temporal pattern of freezing
 
 We return to the case of freezing; the most measured overt fear conditioned behavior. We again focus on session 16 during which discrimination was most complete. Female and male rats differed in the temporal pattern and cue specificity of freezing. Females showed higher baseline freezing levels, a rapid increase in freezing that was specific to danger in the first 5 s, then became non-specific and declined back to baseline levels in the last 5 s (Figure 5A). In contrast, males show little baseline freezing and danger-specific freezing increases that persisted throughout cue presentation (Figure 5B). Baseline freezing differences were confirmed with independent samples t-test (t22 = 3.22, p = 0.0039; Figure 5C). Confirming sex differences in the temporal pattern of freezing, differential freezing to danger and safety was equivalent in females and males during early cue presentation (t22 = 0.02, p = 0.98; Figure 5D, left), but differed during late cue (t22 = 2.80, p = 0.01; Figure 5D, right). Generalized freezing to all cues was observed during session 2, with freezing increases more evident in males (Figure 5—figure supplement 1). Thus, discrimination consisted of restricting freezing to danger in males, and selectively freezing to early danger presentation in females.
 
-## Danger-elicited behaviors are independently expressed
+![Figure 5.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig5-v2.jpg)
+
+**Figure 5.:** Line graphs show mean ± standard error of the mean (SEM) percent freezing from 5 s prior through 10 s cue presentation for danger (red), uncertainty (purple), and safety (blue) for (A) females and (B) males. (C) Percent freezing during baseline (5 s prior to cue) is shown for females (black) and males (gray). (D) Mean differential freezing to danger and safety is shown for females (black, left) and males (gray, right) during early cue (first 5 s of cue, left) and late cue (last 5 s of cue, right). Mean ± SEM percent freezing change from baseline (5 s prior to cue) compared to last 5 s of danger (red), uncertainty (purple), and safety (blue) for (E) females and (F) males.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mean ± standard error of the mean (SEM) percent freezing from 5 s prior through 10 s cue presentation is shown for danger (red), uncertainty (purple), and safety (blue) for (A) females, and (B) males. Analysis of variance (ANOVA) [factors: sex, cue, and interval] found no significant main effect or interaction for cue (Fs < 1.4, ps > 0.1). Instead, ANOVA only revealed a significant main effect of interval and a significant sex × interval interaction (Fs > 2.5, ps < 0.01). Rats increased freezing to all cues over presentation and this increase was greatest in males. (C) Baseline freezing was equivalent in females and males and neither sex showed differential freezing to danger and safety during either early or late cue periods. Mean % differential freezing to danger and safety plotted (D). Individual data points shown (females, black and males, gray).
+
+#### Danger-elicited behaviors are independently expressed
 
 Danger suppression of reward-related port and cup behaviors could simply be the byproduct of danger-elicited freezing. Such a relationship has previously been reported (Bouton and Bolles, 1980; Mast et al., 1982). To examine the relationship between reward-related behaviors and freezing, in addition to other possible behavior–behavior relationships, we calculated %∆ behavior for early (first 5 s) and late (last 5 s) danger presentation for the six danger-elicited behaviors: cup, port, locomote, jump, rear, and freeze. We constructed 12 × 12 matrices containing the R values (Figure 6A) and p values (Figure 6B) for the Pearson’s correlation coefficient for each behavior–behavior comparison during the two danger periods. Surprisingly, only one behavior–behavior relationship was observed during the early danger presentation period (Figure 6A, upper left quadrant). Early rearing and early cup behavior were negatively correlated (R = −0.43, p = 0.03, but note this would not survive Bonferroni correction). Even more, no behavior–behavior relationships were observed during late danger presentation (Figure 6A, lower right quadrant). These results suggest the six behaviors are more or less expressed independently of one another.
 
@@ -83,11 +147,11 @@ Danger suppression of reward-related port and cup behaviors could simply be the 
 
 Maybe our analysis cannot detect behavior–behavior relationships? To test this, we compared behaviors across the early and late danger periods. Now, the correlation matrix revealed a band of positive R values cutting diagonally across the bottom left quadrant. Five of the 6 behaviors showed positive early–late relationships with themselves: cup (R = 0.51, p = 0.01), port (R = 0.87, p = 2.67 × 10−8), locomote (R = 0.48, p = 0.017), rear (R = 0.71, p = 7.92 × 10−5), and freeze (R = 0.48, p = 0.017). In other words, changes in cup behavior evident during early danger presentation persisted to late danger presentation. Jumping was an exception to this trend, as there was no relationship between early and late jumping levels to danger. Overall, danger-elicited behaviors were expressed independently of one another.
 
-## Experiment 2
+### Experiment 2
 
 In Experiment 2, we aimed to answer two questions: (1) were the danger-elicited behaviors during discrimination in Experiment 1 dependent on foot shock delivery, and (2) were these behaviors due to the presence of the reward apparatus? To answer this, rats received danger vs. safety discrimination, then were given extinction tests with reward apparatus absent or present. During extinction testing, we captured and hand scored behavior frames before, during, and following cue presentation.
 
-## Conditioned suppression reveals complete discrimination during extinction with reward apparatus present
+#### Conditioned suppression reveals complete discrimination during extinction with reward apparatus present
 
 Sixteen Long Evans rats (8 females) were trained to nose poke in a central port for food reward as in Experiment 1. Nose poking was reinforced on a 60-s variable interval schedule throughout behavioral testing. Independent of the poke-food contingency, auditory cues were played through overhead speakers, and foot shock delivered through the grid floor (Figure 7A). The experimental design consisted of two cues deterministically predicting foot shock: danger (p = 1) and safety (p = 0) (Figure 7A).
 
@@ -99,19 +163,43 @@ To determine if we observed complete behavioral discrimination, we performed ANO
 
 We captured 25,600 total frames (800 frames/test × 16 rats × 2 tests) during extinction testing. Frames were hand scored for nine discrete behaviors: cup, freezing, grooming, jumping, locomotion, port, rearing, scaling, and stretching, plus ‘background’ as in Experiment 1, with the exception that if a trial did not have the reward apparatus present, then food cup and nose poke were not scored.
 
-## Danger-elicited locomotion peaks when foot shock would have occurred
+#### Danger-elicited locomotion peaks when foot shock would have occurred
 
 The 25,600 scored frames allowed us to construct temporal ethograms for danger (Figure 8A, B) and safety (Figure 8C, D), during the extinction test with reward apparatus absent (Figure 8, column 1), and during the extinction test with the reward apparatus present (Figure 8, column 2). Hand scoring showed high inter-rater reliability even when many behaviors were present in a single trial (Figure 8—figure supplement 1). Cue-specific changes in behavior during and following cue presentation were evident. In support, MANOVA [factors: sex (female vs. male), test type (absent vs. present), order (absent first vs. present first), cue (danger vs. safety), and time (20 1 s bins: 5 s baseline → 10 s cue → 5 s post cue)] for the seven behaviors common to both tests [groom, locomote, jump, scale, rear, stretch, and freeze] revealed a significant main effect of time (F(133,1596) = 2.14, p = 9.44 × 10−12) and a significant cue × time interaction (F(133,1596) = 1.46, p = 0.001).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig8-v2.jpg)
+
+**Figure 8.:** Mean percent behavior from 5 s prior through 5 s following cue offset is shown for the danger cue during extinction with (A) reward apparatus absent and (B) reward apparatus present; and the safety cue during extinction with (C) reward apparatus absent and (D) reward apparatus present. Behaviors are groom (gray), port (dark purple), cup (light purple), locomote (blue), jump (dark green), scale (light green), rear (yellow), stretch (orange), and freeze (red). Note, port and cup are not shown for A and C because the food cup and nose port were absent.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Percentage of identical observations between observer–observer pairs. (B) Percentage of identical observations as a function of the number of behaviors present in a trial. Frames were systematically hand scored by three observers blind to rat identity, session number, and trial type (see Materials and methods for hand scoring approach and trial anonymization). A comparison dataset consisting of 8 trials (800 frames) was also scored by each observer. A correlation matrix compared % identical observations for the 800 comparison frames for each observer–observer pair. Mean % identical observation was 79.25%.
+
 Of the seven behaviors, danger only increased locomotion during both test types (Figure 9A, B). In support, univariate ANOVA for locomotion [Bonferroni-corrected p < 0.007 (0.05/7 = 0.007); factors: sex (female vs. male), test type (absent vs. present), order (absent first vs. present first), cue (danger vs. safety), and time (20 1 s bins: 5 s baseline → 10 s cue → 5 s post cue)] found a significant cue × time interaction (F(19,228) = 3.12, p = 0.000026). Danger-elicited locomotion was most prominent following cue offset, around the time shock would have occurred. 95% BCIs revealed danger-elicited locomotion to exceed baseline and safety cue levels during the 5 s post-cue periods for both the Absent (Figure 9A) and Present tests (Figure 9B). Additionally, the 95% BCI revealed danger-elicited locomotion to exceed safety-elicited locomotion during the late cue period during the Present test, though danger-elicited locomotion did not exceed baseline (Figure 9B). Locomotion never increased during safety trials (all 95% BCIs contain zero). Danger-elicited locomotion occurred regardless of test order, as ANOVA revealed no significant order interactions (Fs < 1.5, ps > 0.2). Sex partially mediated the temporal expression of locomotion, with ANOVA finding a significant sex × cue × time interaction (F(19,228) = 2.34, p = 0.002). Females showed more robust post-cue, danger locomotion during both test types (Figure 9—figure supplement 1). Males showed more robust danger-elicited locomotion during the late cue period during the Present test (Figure 9—figure supplement 2). The results reveal that danger-elicited locomotion transfers to extinction settings when both foot shock and the reward apparatus were absent.
 
-## Freezing is less dangerspecific and is sensitive to time, test type, and order
+![Figure 9.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig9-v2.jpg)
+
+**Figure 9.:** Line graphs show mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s cue presentation for danger (red) and safety (blue) for locomotion during the (A) reward apparatus absent extinction test and (B) reward apparatus present extinction test. Bar plots show mean change in behavior from baseline (5 s prior to cue) compared to early (first 5 s), late (last 5 s), and post (5 s after offset) cue periods. Individuals represented by black (female) and gray (male) dots. The same is shown for freezing (C, D) .+95% bootstrap confidence interval for danger vs. safety (black), danger vs. baseline (red), or safety vs. baseline (blue) comparison does not contain zero (black).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Line graphs show mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s cue presentation for danger (red) and safety (blue) for locomotion during the (A) reward apparatus absent extinction test and (B) reward apparatus present extinction test. Bar plots show mean change in behavior from baseline (5 s prior to cue) compared to early (first 5 s), late (last 5 s), and post (5 s after offset) cue periods. Individual females represented by black dots. The same is shown for freezing (C, D).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Line graphs show mean ± standard error of the mean (SEM) percent behavior from 5 s prior through 10 s cue presentation for danger (red) and safety (blue) for locomotion during the (A) reward apparatus absent extinction test and (B) reward apparatus present extinction test. Bar plots show mean change in behavior from baseline (5 s prior to cue) compared to early (first 5 s), late (last 5 s), and post (5 s after offset) cue periods. Individual males represented by gray dots. The same is shown for freezing (C, D).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/82497/elife-82497-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** Line graphs show mean ± standard error of the mean (SEM) percent freezing from 5 s prior through 10 s cue presentation for danger (red) and safety (blue) for rats receiving the reward apparatus present extinction test (A) first and (B) second. Mean responding is taken from both test types. Bar plots show mean change in behavior from baseline (5 s prior to cue) compared to early (first 5 s), late (last 5 s), and post (5 s after offset) cue periods. Individuals represented by black dots.+95% bootstrap confidence interval for danger vs. safety (black), danger vs. baseline (red), or safety vs. baseline (blue) comparison does not contain zero (black).
+
+#### Freezing is less dangerspecific and is sensitive to time, test type, and order
 
 Unlike locomotion, there was lesser evidence of danger-specific freezing during extinction testing (Figure 9C, D). Most notably, univariate ANOVA [correction and factors identical to locomotion] found that the cue × time interaction failed to achieve significance (F(19,228) = 1.25, p = 0.011). When organizing % freezing by test type, there was no period (early cue, late cue, and post cue) during which freezing increases over baseline were selective to danger (Figure 9C, D). The only period during which freezing to danger exceeded freezing to safety was the early cue period when the reward apparatus was present (Figure 9D, right). Though even during this period increases in freezing to safety were observed. Instead, freezing tended to generalize to safety; meaning it was cue evoked but not cue specific. Additionally, freezing was more prominent during extinction testing with the reward apparatus absent. In support, univariate ANOVA revealed significant main effects of time (F(19,228) = 5.13, p = 3.64 × 10−10) and test (F(1,12) = 21.20, p = 0.001). Like freezing, neither rearing nor jumping showed evidence of danger specificity with univariate ANOVA for each finding no significant cue × time interaction (Fs < 1.5, ps > 0.2).
 
 However, order mediated the specificity of danger-elicited freezing. Rats receiving the Present test first showed selective and differential freezing to danger (Figure 9, Figure 9—figure supplement 3A). Rats receiving the Absent test first showed no evidence of selective and differential freezing to danger (Figure 9, Figure 9—figure supplement 3B). In support, univariate ANOVA returned a significant order × cue × time interaction (F(19,228) = 2.14, p = 0.002). Of note, no significant order × cue × time interaction was observed for locomotion (F(19,228) = 1.03, p = 0.43). The same rats that showed robust danger-elicited locomotion across both test types showed danger-elicited freezing that was sensitive to test order.
 
-## Danger-elicited behaviors are independently expressed during extinction
+#### Danger-elicited behaviors are independently expressed during extinction
 
 We were interested to see if there were relationships between danger-elicited locomotion and freezing during extinction testing. To determine this we calculated Pearson’s correlation coefficients (R value) for individual freezing and locomotion (% behavior over baseline) during early, late, and post-danger cue periods in extinction sessions with reward apparatus absent (Figure 10A, B) and with reward apparatus present (Figure 10C, D). As in Experiment 1, we found no evidence of inhibitory relationships between locomotion and freezing. That is, no comparison found a negative R value. This was true both within and between trial periods. Instead, and like for Experiment 1, correlational analyses reveal significant, positive relationships within behaviors across trial periods. These positive relationships were more prominent during extinction testing with the reward apparatus present. In particular, freezing was positively correlated across all trial periods during the present extinction sessions [early–late R = 0.82, p = 1.05 × 10−4; early–post R = 0.60, p = 0.015; post–late R = 0.68, p = 0.0036]. These results demonstrate that opposing danger-elicited behaviors are independently expressed during extinction.
 
@@ -147,116 +235,116 @@ By comprehensively quantifying behavior and constructing temporal ethograms, we 
 
 All procedures were performed in the Boston College Animal Care Facility in accordance with NIH and Boston College guidelines. The Boston College experimental protocol supporting these procedures is 2024-001.
 
-## Subjects
+### Subjects
 
 For Experiment 1, 24 adult Long Evans rats (12 female) weighing 196–298 g arrived from Charles River Laboratories on postnatal day 55. Rats were single-housed on a 12-hr light cycle (lights off at 6:00 pm) and maintained at their initial body weight with standard laboratory chow (18% Protein Rodent Diet #2018, Harlan Teklad Global Diets, Madison, WI). Water was available ad libitum in the home cage. For Experiment 2, sixteen adult Long Evans rats (eight females) were housed and maintained as described above. All protocols were approved by the Boston College Animal Care and Use Committee and all experiments were carried out in accordance with the NIH guidelines regarding the care and use of rats for experimental procedures.
 
-## Behavior apparatus
+### Behavior apparatus
 
 The apparatus for Pavlovian fear discrimination consisted of four individual chambers with aluminum front and back walls, clear acrylic sides and top, and a grid floor. LED strips emitting 940 nm light were affixed to the acrylic top to illuminate the behavioral chamber for frame capture. 940-nm illumination was chosen because rats do not detect light wavelengths exceeding 930 nm (Nikbakht and Diamond, 2021). Each grid floor bar was electrically connected to an aversive shock generator (Med Associates, St. Albans, VT). An external food cup, and a central port equipped with infrared photocells were present on one wall. Auditory stimuli were generated with an Arduino-based device and presented through two speakers mounted on the ceiling.
 
-## Pellet exposure and nose poke shaping
+### Pellet exposure and nose poke shaping
 
 Rats were food restricted and specifically fed to maintain their body weight throughout behavioral testing. Each rat was given 4 g of experimental pellets in their home cage in order to overcome neophobia. Next, the central port was removed from the experimental chamber, and rats received a 30-min session in which one pellet was delivered every minute. The central port was returned to the experimental chamber for the remainder of behavioral testing. Each rat was then shaped to nose poke in the central port for experimental pellet delivery using a fixed ratio schedule in which one nose poke into the port yielded one pellet. Shaping sessions lasted 30 min or until approximately 50 nose pokes were completed. Each rat then received six sessions during which nose pokes into the port were reinforced on a variable interval schedule. Session 1 used a variable interval 30-s schedule (poking into the port was reinforced every 30 s on average). All remaining sessions used a variable interval 60-s schedule. For the remainder of behavioral testing, nose pokes were reinforced on a variable interval 60-s schedule independent of cue and shock presentation.
 
-## Cue pre-exposure
+### Cue pre-exposure
 
 Each rat was pre-exposed to the three cues to be used in Pavlovian discrimination in one session. Auditory cues consisted of repeating motifs of broadband click, phaser, or trumpet. This 37-min session consisted of four presentations of each cue (12 total presentations) with a mean ITI of 2.5 min. Trial type order was randomly determined by the behavioral program and differed for each rat, each session.
 
-## Pavlovian fear discrimination
+### Pavlovian fear discrimination
 
-## Experiment 1
+#### Experiment 1
 
 Each rat received 16, 48-min sessions of fear discrimination. Each session consisted of 16 trials, with a mean ITI of 2.5 min. Auditory cues were 10 s in duration. Each cue was associated with a unique foot shock probability (0.5 mA, 0.5 s): danger, p = 1.00; uncertainty, p = 0.25; and safety, p = 0.00. Foot shock was administered 2 s following the termination of the auditory cue on danger and uncertainty-shock trials. Auditory identity was counterbalanced across rats. Each session consisted of four danger trials, two uncertainty-shock trials, six uncertainty-omission trials, and four safety trials. Trial type order was randomly determined by the behavioral program and differed for each rat, each session.
 
-## Experiment 2
+#### Experiment 2
 
 Each rat received 12, 48-min sessions of fear discrimination. Each session consisted of eight trials, with a mean ITI of 3.5 min. Auditory cues were 10 s in duration. Each cue was associated with a unique foot shock probability (0.5 mA, 0.5 s): danger, p = 1.00 and safety, p = 0.00. Foot shock was administered 2 s following the termination of the auditory cue on danger trials. Auditory identity was counterbalanced across rats. Each session consisted of four danger trials and four safety trials. Trial type order was randomly determined by the behavioral program and differed for each rat, each session.
 
-## Fear extinction
+### Fear extinction
 
 For Experiment 2, each rat received two types of extinction test: one with the port and food cup present and one with the port and food cup absent. Test type order was counterbalanced across rats with half receiving the port and cup present first. Extinction sessions were 48 min in duration, and consisted of four danger and four safety trials, with a mean ITI of 3.5 min. Auditory cues were 10 s in duration. Foot shocks were not delivered. Auditory identity of danger and safety were maintained from discrimination, which was counterbalanced. Trial type order was randomly determined by the behavioral program and differed for each rat.
 
-## Calculating suppression ratio
+### Calculating suppression ratio
 
 Time stamps for cue presentations, shock delivery, and nose pokes (photobeam break) were automatically recorded by the Med Associates program. Baseline nose poke rate was calculated for each trial by counting the number of pokes during the 20 s pre-cue period and multiplying by 3. Cue nose poke rate was calculated for each trial by counting the number of pokes during the 10 s cue period and multiplying by 6. Nose poke suppression was calculated as a ratio: (baseline poke rate − cue poke rate)/(baseline poke rate + cue poke rate). A suppression ratio of ‘1’ indicated complete suppression of nose poking during cue presentation relative to baseline. A suppression ratio of indicated ‘0’ indicates equivalent nose poke rates during baseline and cue presentation. Gradations in suppression ratio between 1 and 0 indicated intermediate levels of nose poke suppression during cue presentation relative to baseline. Negative suppression ratios indicated increased nose poke rates during cue presentation relative to baseline.
 
-## Frame capture system
+### Frame capture system
 
 Behavior frames were captured using Imaging Source monochrome cameras (DMK 37BUX28; USB 3.1, 1/2.9″ Sony Pregius IMX287, global shutter, resolution 720 × 540, trigger in, digital out, C/CS-mount). Frame capture was triggered by the Med Associates behavior program. The 28 V Med Associates pulse was converted to a 5-V TTL pulse via Adapter (SG-231, Med Associates, St. Albans, VT). The TTL adapter was wired to the camera’s trigger input. Captured frames were saved to a PC (OptiPlex 7470 All-in-One) running IC Capture software (Imaging Source). For Experiment 1, frame capture began precisely 5 s before cue onset and continued throughout 10 s cue presentation. Frames were captured at a rate of 5 per second, with a target of capturing 75 frames per trial (5 frames/s × 15 s = 75 frames), and 1200 frames per session (75 frames/trial × 16 trials = 1200 frames). For Experiment 2, frame capture began 5 s before cue onset and continued throughout 10 s cue presentation and 5 s after cue termination. Frames were captured at a rate of 5 per second, with a target of capturing 100 frames per trial (5 frame/s × 20 s = 100 frames), and 800 frames per session (100 frames/trial × 8 trials = 800 frames).
 
-## Post-acquisition frame processing
+### Post-acquisition frame processing
 
-## Experiment 1
+#### Experiment 1
 
 We aimed to capture 1200 frames per session, and selected sessions 2, 8, and 16 for hand scoring. A Matlab script sorted the 1200 frames into 16 folders, one for each trial, each containing 75 frames. Each 75-frame trial was made into a 75-slide PowerPoint presentation to be used for hand scoring.
 
-## Experiment 2
+#### Experiment 2
 
 We aimed to capture 800 frames per session, and selected extinction sessions 1 and 2 for hand scoring. A Matlab script sorted the 800 frames into 8 folders, one for each trial, each containing 100 frames. Each 100-frame trial was made into a 100-slide PowerPoint presentation to be used for hand scoring.
 
-## Anonymizing trial information
+### Anonymizing trial information
 
 For Experiment 1, a total of 1152 trials of behavior were scored from the 24 rats over the 3 sessions of discrimination (16 trials per session). For Experiment 2, a total of 256 trials were scored from 16 rats over the 2 extinction sessions (8 trials per session). We anonymized trial information in order to score behavior without bias. The numerical information from each trial (session #, rat #, and trial #) was encrypted as a unique number sequence. A unique word was then added to the front of this sequence. The result was that each of the trials was converted into a unique word + number sequence. For example, trial ac01_02_07 (rat #1, session #2, and trial #7) would be encrypted as: abundant28515581. The trials from Experiment 1 were randomly assigned to five observers. 256 trials from Experiment 2 were randomly assigned to seven observers. The result of trial anonymization was that observers were completely blind to subject, trial type, and session number. Furthermore, random assignment meant that the 16 or 8 trials composing a single session were scored by different observers.
 
-## Behavior categories and definitions
+### Behavior categories and definitions
 
 Frames were scored as one of ten mutually exclusive behavior categories, defined as follows:
 
-## Background
+#### Background
 
 Specific behavior cannot be discerned because the rat is turned away from the camera or position of forepaws is not clear, or because the rat is not engaged in any of the other behaviors.
 
-## Cup
+#### Cup
 
 Any part of the nose above the food cup but below the nose port.
 
-## Freeze
+#### Freeze
 
 Arched back and stiff, rigid posture in the absence of movement, all four limbs on the floor (often accompanied by hyperventilation and piloerection). Side-to-side head movements and up and down head movements that do not disturb rigid posture are permitted. Activity such as sniffing or investigation of the bars is not freezing. Freezing, as opposed to pausing, is likely to be 3 or more frames (600+ms) long.
 
-## Groom
+#### Groom
 
 Any scratching, licking, or washing of the body.
 
-## Jump
+#### Jump
 
 All four limbs off the floor. Includes hanging which is distinguished when hind legs are hanging freely.
 
-## Locomote
+#### Locomote
 
 Propelling body across chamber on all four feet, as defined by movement of back feet. Movement of back feet with front feet off the floor is rearing.
 
-## Port
+#### Port
 
 Any part of the nose in the port. Often standing still in front of the port but sometimes tilting head sideways with the body off to the side of the port.
 
-## Rear
+#### Rear
 
 One or two hind legs on the grid floor with both forepaws off the grid floor and not on the food cup. Usually (not always) stretching to full extent, forepaws usually (not always) on top of side walls of the chamber, often pawing walls; may be accompanied by sniffing or slow side-to-side movement of head. Does not include grooming movements or eating, even if performed while standing on hind legs.
 
-## Scale
+#### Scale
 
 All four limbs off the floor but at least two limbs on the side of the chamber. Standing on the food cup counts as scaling.
 
-## Stretch
+#### Stretch
 
 Body is elongated with the back posture ‘flatter’ than normal. Stretching is often accompanied by immobility, like freezing, but is distinguished by the shape of the back.
 
-## Frame scoring system
+### Frame scoring system
 
 Frames were scored using a specific procedure. Frames were first watched in real time in Microsoft PowerPoint by setting the slide duration and transition to 0.19 s, then playing as a slideshow. Behaviors clearly observed were noted. Next, the observer went through all the frames scoring one behavior at a time. A standard scoring sequence was used: port, cup, rear, scale, jump, groom, freeze, locomote, and stretch. When the specific behavior was observed in a frame, that frame was labeled. Once all behaviors had been scored, the video was re-watched for freezing. The unlabeled frames were then labeled ‘background’. Finally, all background frames were checked to ensure they did not contain a defined behavior.
 
-## Inter-observer reliability
+### Inter-observer reliability
 
-## Experiment 1
+#### Experiment 1
 
 To assess inter-observer reliability, we selected 12 trials from outside sessions 2, 8, and 16, six from females and six from males. Each of our five observers scored these 12 trials, interweaving the 12 comparison trials with the primary data trials. As a result, each observer scored 900 comparison frames which were then used to assess inter-observer reliability.
 
-## Experiment 2
+#### Experiment 2
 
 Inter-observer reliability was assessed as described in Experiment 1. Eight trials from outside extinction sessions 1 and 2 were selected for comparison. Each observer scored 800 comparison frames which were then used to assess inter-observer reliability.
 
-## Statistical analyses
+### Statistical analyses
 
 ANOVA was performed for body weight, baseline nose poke rate, suppression ratios, and specific behaviors. Sex was used as a factor for all analyses. Cue, session, and time were used as factors when relevant. Univariate ANOVA following MANOVA used a Bonferroni-corrected p value significance of 0.0055 (0.05/9) to account for the nine quantified behaviors. MANOVA was performed for the nine quantified behaviors with factors of sex, cue, and time. Pearson’s correlation coefficient was used to examine the relationship between baseline nose poke rate and body weight, baseline nose poke rate and cue discrimination, as well as the relationship between danger cue-elicited behaviors during early and late cue presentation in session. Within-subject comparisons were made using 95% BCIs with the Matlab bootci function. Comparisons were said to differ when the 95% BCI did not contain zero. Between subject’s comparisons were made using independent samples t-test.

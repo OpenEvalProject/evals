@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Local actin filament formation is indispensable for development of the dendritic arbor of neurons. We show that, surprisingly, the action of single actin filament-promoting factors was insufficient for powering dendritogenesis. Instead, this required the actin nucleator Cobl and its only evolutionary distant ancestor Cobl-like acting interdependently. This coordination between Cobl-like and Cobl was achieved by physical linkage by syndapins. Syndapin I formed nanodomains at convex plasma membrane areas at the base of protrusive structures and interacted with three motifs in Cobl-like, one of which was Ca 2+ /calmodulin-regulated. Consistently, syndapin I, Cobl-like’s newly identified N terminal calmodulin-binding site and the single Ca 2+ /calmodulin-responsive syndapin-binding motif all were critical for Cobl-like’s functions. In dendritic arbor development, local Ca 2+ /CaM-controlled actin dynamics thus relies on regulated and physically coordinated interactions of different F-actin formation-promoting factors and only together they have the power to bring about the sophisticated neuronal morphologies required for neuronal network formation in mammals.
+Local actin filament formation is indispensable for development of the dendritic arbor of neurons. We show that, surprisingly, the action of single actin filament-promoting factors was insufficient for powering dendritogenesis. Instead, this required the actin nucleator Cobl and its only evolutionary distant ancestor Cobl-like acting interdependently. This coordination between Cobl-like and Cobl was achieved by physical linkage by syndapins. Syndapin I formed nanodomains at convex plasma membrane areas at the base of protrusive structures and interacted with three motifs in Cobl-like, one of which was Ca2+/calmodulin-regulated. Consistently, syndapin I, Cobl-like’s newly identified N terminal calmodulin-binding site and the single Ca2+/calmodulin-responsive syndapin-binding motif all were critical for Cobl-like’s functions. In dendritic arbor development, local Ca2+/CaM-controlled actin dynamics thus relies on regulated and physically coordinated interactions of different F-actin formation-promoting factors and only together they have the power to bring about the sophisticated neuronal morphologies required for neuronal network formation in mammals.
 
 ## Introduction
 
@@ -33,13 +33,25 @@ Our work thereby provides insights into how two actin filament formation-promoti
 
 ## Results
 
-## Cobl-like and the actin nucleator Cobl largely phenocopy each other in their critical role in dendritic arborization and seem to work at the same dendritic branching sites
+### Cobl-like and the actin nucleator Cobl largely phenocopy each other in their critical role in dendritic arborization and seem to work at the same dendritic branching sites
 
 The actin nucleator Cobl and its evolutionary ancestor protein Cobl-like are molecularly quite distinct (Figure 1—figure supplement 1), however, both critical for dendritic arbor formation (Ahuja et al., 2007; Izadi et al., 2018). Side-by-side loss-of-function analysis of both factors in developing primary hippocampal neurons using IMARIS software-based evaluations for detailed analyses of the elaborate morphology of such cells (Izadi et al., 2018) revealed surprisingly similar phenotypes (Figure 1—figure supplement 2A–D). Dendritic branch and terminal point numbers as well as total dendritic length all were severely affected by lack of Cobl-like (Figure 1—figure supplement 2E–G). Corresponding Cobl loss-of-function showed that, while dendritic growth processes seemed largely unaffected by Cobl deficiency, also Cobl deficiency led to a significant reduction of terminal points and in particular to severe loss of dendritic branch points. With −35%, these defects were about as strong as those caused by Cobl-like RNAi (Figure 1—figure supplement 2E–G). Cobl RNAi mostly affected dendritic arborization in proximal areas, as demonstrated by evaluations of morphological intersections with concentric circles of increasing size (Sholl analysis; Sholl, 1953). Cobl-like RNAi led to reduced Sholl intersections throughout the dendritic arbor (Figure 1—figure supplement 2H).
 
 The phenotypical comparison of Cobl and Cobl-like unveiled that both cytoskeletal effectors have somewhat similar functions in dendritic arborization. Colocalization studies showed that Flag-mCherry-Cobl and GFP-Cobl-like did not show any obvious spatial segregation (neither in proximal nor in peripheral dendritic arbor of developing neurons) but largely colocalized. Dendritic accumulations of Cobl usually showed corresponding albeit less pronounced accumulations of Cobl-like (Figure 1A,B; arrows). This suggested that Cobl and Cobl-like are not responsible for distinct branching sites but work at the same sites.
 
-## Cobl-like functions in dendritic arborization strictly depend on Cobl and likewise Cobl functions depend on Cobl-like
+![Figure 1.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig1-v1.jpg)
+
+**Figure 1.:** (A,B) Maximum intensity projections (MIPs) of GFP-Cobl-like and Flag-mCherry-Cobl in dendrites of developing hippocampal neurons (DIV6) in standard colors (A) and as heat map representation (B), respectively. Arrows, examples of putative, nascent dendritic branch induction sites with accumulations of both Cobl and Cobl-like. Bar, 5 µm. (C–F) MIPs of neurons showing the suppression of the Cobl-like gain-of-function phenotype (cotransfection at DIV4; fixation 34 hr thereafter) (D; GFP-Cobl-like+Scr. RNAi) by mCherryF-reported RNAi plasmids directed against Cobl (E; GFP-Cobl-like+Cobl RNAi) in comparison to control neurons (C; GFP+Scr. RNAi) and Cobl RNAi neurons (F; GFP+Cobl RNAi). (G–I) Quantitative determinations of indicated dendritic arborization parameters unveiling a full suppression of all Cobl-like functions in dendritic arbor formation by a lack of Cobl. (J–P) Related images (J–M) and quantitative data (N–P) of experiments revealing a functional dependence of Cobl on Cobl-like. Asterisks, transfected neurons. Bars, 10 µm. Data, mean ± SEM. One-way ANOVA+Tukey. Also see Figure 1—source data 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme of Cobl-like with its domains in comparison to the actin nucleator Cobl with its domains. Abbreviations: PRD, proline-rich domain (PRD next to the Cobl Homology domain is an Abp1- and PRMT2-binding site and therefore colored in light green reminiscent of the RD, that is, the Abp1-binding repeat domain in Cobl-like); WH2, WH2 domain. (B) Amino acid sequence alignment of murine Cobl-like (gi:74201419) and Cobl (gi:162135965) using Clustal Omega (https://www.ebi.ac.uk/Tools/msa/clustalo/). Marked are the Cobl Homology domains of both proteins (boxed in light blue) and the ‘KRAP’ motifs (boxed in red) of both proteins. Furthermore, the single C terminal WH2 domain of Cobl-like and the three WH2 domains of Cobl are marked by orange letters. The CaM-binding region of Cobl in the Cobl Homology domain and in the C terminal CaM-binding regions in Cobl and Cobl-like are boxed in yellow, the Abp1- and PRMT2-binding PRD of Cobl is boxed in light green. The Abp1-binding repeat domain of Cobl-like is boxed in green and the proline-rich region located N terminal of the Abp1-binding area is boxed in purple. Note that although Cobl-like is considered as evolutionary ancestor of Cobl, the sequence conservation between both proteins in general is very low (*, identity; ‘:’, high similarity; ‘.’, moderate similarity). Even in the most-conserved part, the so-called Cobl Homology domain, the similarity is limited to the central core of this proposed domain and to the ‘KRAP’ motifs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Maximum intensity projections (MIPs) of anti-MAP2 immunostained developing primary hippocampal neurons transfected as indicated at DIV4 and fixed 46 hr after transfection (A,C,D) and 2D representative of the 3D reconstruction of the morphology of the example neuron in A using IMARIS software (B). For detailed software parameters, see the Materials and methods section. Shown is the filament representing dendritic tracts (white lines) with branch points (magenta dots placed on the filament) and terminal points (turquoise dots placed on the filament) marked. Asterisks, transfected neurons. Bars, 20 µm. (E–H) Quantitative comparative Cobl-like and Cobl loss-of-function analyses of indicated dendritic parameters. Data, mean ± SEM. One-way ANOVA+Tukey (E–G) and two-way ANOVA+Bonferroni (H).
+
+### Cobl-like functions in dendritic arborization strictly depend on Cobl and likewise Cobl functions depend on Cobl-like
 
 Observations of two powerful molecular components for actin filament formation at the same place may either reflect functional redundancy and/or parallel action to drive cellular processes effectively in response to (putatively different) signaling cues or may even reflect interlinked functions. Functional redundancy and/or parallel action seemed unlikely, because both individual loss-of-function DIV4-to-DIV6 phenotypes were so severe that about a third of the entire arborization normally reached at DIV6 was lacking (Cobl, −33%; Cobl-like, −39%) (Figure 1—figure supplement 2E). Thus, we focused on the remaining hypotheses.
 
@@ -49,13 +61,21 @@ To our surprise, likewise, Cobl-promoted dendritic arbor formation turned out to
 
 Taken together, Cobl and Cobl-like both are cellular factors promoting actin filament formation and significantly differ in their properties, yet, in dendritic branch formation, they do not work independently but surprisingly strongly depend on each other.
 
-## Cobl-like associates with syndapins
+### Cobl-like associates with syndapins
 
 The surprising functional interdependence of Cobl and Cobl-like in dendritic arbor formation raised the question how this may be organized mechanistically with two proteins that seem to employ quite different molecular mechanisms (Ahuja et al., 2007; Izadi et al., 2018).
 
 Using a variety of different methods, we failed to observe any obvious interactions of Cobl and Cobl-like (also see below). Thus, the crosstalk of Cobl-like and Cobl had to be less direct and more sophisticated.
 
 Cobl was demonstrated to use complexly choreographed membrane-binding mechanisms involving its direct binding partner syndapin I (Schwintzer et al., 2011; Hou et al., 2015). Syndapins can self-associate (Kessels and Qualmann, 2006) and could therefore theoretically link Cobl and Cobl-like physically. As a prerequisite, syndapin I would have to associate with Cobl-like. Indeed, GFP-Cobl-like specifically coprecipitated with immobilized syndapin I SH3 domain. The interaction was mediated by N terminal proline-rich regions of Cobl-like (Figure 2A; Figure 2—figure supplement 1A) and was conserved among syndapin I, syndapin II, and syndapin III (Figure 2B; Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig2-v1.jpg)
+
+**Figure 2.:** (A) Coprecipitation analyses of GFP-tagged Cobl-like and deletion mutants thereof with immobilized syndapin I SH3 domain (GST-SdpISH3). (B) Related coprecipitation studies with the SH3 domains of syndapin I, syndapin II (SdpIISH3), and syndapin III (SdpIIISH3), respectively. (C) Reconstitution of the association of TrxHis-Cobl-like1-411 with purified GST-syndapin I and GST-syndapin I SH3 domain but not with GST. (D) Scheme of Cobl-like with its domains (PRD, proline-rich domain; RD, Abp1-binding repeat domain; WH2, WH2 domain) and deletion mutants used (red, not binding syndapins; green, binding). Red in the Cobl Homology domain, ‘KRAP’ motifs (not drawn to scale). (E) Coprecipitation assays with Cobl-like deletion mutants mapping Cobl-like’s syndapin binding sites. (F) Coimmunoprecipitations unveiling a specific association of GFP-Cobl-like1-741 with Flag-syndapin I. (G–I) Reconstitution and visualization of Cobl-like/syndapin I complexes in COS-7 cells using mitochondrially targeted syndapin I (G,H) as well as a mutant lacking the SH3 domain (Mito-mCherry-SdpI∆SH3) (I) with GFP-Cobl-like (G) and GFP-Cobl-like1-741 (H,I). Boxed areas are shown at higher magnification as insets. Line scans of fluorescence intensities of both channels are along the respective line indicated in the merged insets in G–I. Bars, 10 µm. (J) Coprecipitation of endogenous syndapin I from mouse brain lysates by TrxHis-Cobl-like1-411. (K) Endogenous coimmunoprecipitation of Cobl-like and syndapin I from mouse brain lysates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Anti-GFP immunoblotting analyses of supernatants of coprecipitation analyses of GFP-tagged Cobl-like and deletion mutants thereof with immobilized syndapin I SH3 domain (GST-SdpISH3) and GST (control) (A) and of related coprecipitation studies with the SH3 domains of syndapin I, syndapin II (SdpIISH3), and syndapin III (SdpIIISH3), respectively (B). For eluate analyses, see Figure 2A,B. (C) More complete immunoblotting analyses of the reconstitution of the association of TrxHis-Cobl-like1-411 with purified GST-syndapin I and GST-syndapin I SH3 domain but not with GST shown in Figure 2C containing a characterization of the input and both the anti-TrxHis and anti-GST immunoblotting analyses of the eluates. (D) Immunoblot analyses of a reconstitution of the association of TrxHis-Cobl-like1-411 with recombinant, purified GST-syndapin I and GST-syndapin I SH3 domain but not with a mutated syndapin I SH3 domain (P434L; SdpISH3mut). (E) Anti-GFP immunoblotting of the cell lysates and of the GST controls of the syndapin I coprecipitation assays with Cobl-like deletion mutants shown in Figure 2E. (F,G) Immunoblotting analyses of specific coimmunoprecipitations of GFP-Cobl-like1-741 but not GFP with Flag-tagged syndapin II-s (short splice variant, SdpII-s) and syndapin III (SdpIII). (H,I) Maximum intensity projections (MIPs) showing control experiments accompanying the protein complex reconstitutions between GFP-Cobl-like and GFP-Cobl-like1-741 and mitochondrially targeted syndapin I (Mito-mCherry-SdpI) shown in Figure 2G–I. (H) GFP is not recruited to Mito-mCherry-SdpI-enriched sites. (I) GFP-Cobl-like is not recruited to mitochondria when a Mito-mCherry-SdpI lacking the SH3 domain (Mito-mCherry-SdpI∆SH3) is coexpressed. Boxed areas are shown at higher magnification as insets. Line scans of fluorescence intensities of both channels are along the respective line indicated in the merged insets of H and I. Bars, 10 µm.
 
 In vitro reconstitutions with purified components proved that syndapin I/Cobl-like interactions were direct (Figure 2C; Figure 2—figure supplement 1C) and were furthermore based on classical SH3 domain/PxxP motif interactions, as proven by using a P434L-mutated SH3 domain (Figure 2—figure supplement 1D).
 
@@ -67,25 +87,33 @@ It was furthermore possible to directly visualize Cobl-like/syndapin I complex f
 
 Cobl-like/syndapin interactions also are of relevance in the brain, as immobilized, recombinant TrxHis-tagged Cobl-like1-411 specifically precipitated endogenous syndapin I from mouse brain lysates (Figure 2J). Furthermore, endogenous Cobl-like/syndapin I complexes in vivo were demonstrated by coimmunoprecipitation analyses from mouse brain lysates (Figure 2K).
 
-## Syndapin I is crucial for Cobl-like’s ability to promote dendritic arbor extension and branching
+### Syndapin I is crucial for Cobl-like’s ability to promote dendritic arbor extension and branching
 
 We next addressed whether the identified Cobl-like interaction partner syndapin I would indeed be critical for Cobl-like’s functions. GFP-Cobl-like massively promoted dendritic arborization already after very short times (Izadi et al., 2018). Strikingly, all Cobl-like gain-of-function phenotypes in developing primary hippocampal neurons were completely suppressed upon syndapin I RNAi (Figure 3A–C). Cobl-like-overexpressing neurons cotransfected with syndapin I RNAi showed dendritic branch points, dendritic terminal points, and an overall length of the dendritic arbor that were statistically significantly different from Cobl-like-overexpressing neurons and indistinguishable from those of control cells. The syndapin I RNAi-mediated suppression of Cobl-like functions occurred in all dendritic arbor parts affected by Cobl-like gain-of-function (Figure 3D–G).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) Maximum intensity projections (MIPs) of DIV5.5 neurons transfected as indicated. Asterisks, transfected neurons. Bars, 20 µm. (D–G) Quantitative determinations of key dendritic arborization aspects promoted by Cobl-like for their dependence on syndapin I (cotransfection at DIV4; fixation 34 hr thereafter). Data, mean ± SEM. One-way ANOVA+Tukey (D–F) and two-way ANOVA+Bonferroni (G). Also see Figure 3—source data 1 and 2.Figure 3—source data 1.Figure 3D–F.Figure 3—source data 2.Figure 3G.
+**Figure 3.:** (A–C) Maximum intensity projections (MIPs) of DIV5.5 neurons transfected as indicated. Asterisks, transfected neurons. Bars, 20 µm. (D–G) Quantitative determinations of key dendritic arborization aspects promoted by Cobl-like for their dependence on syndapin I (cotransfection at DIV4; fixation 34 hr thereafter). Data, mean ± SEM. One-way ANOVA+Tukey (D–F) and two-way ANOVA+Bonferroni (G). Also see Figure 3—source data 1 and 2.
 
 Cobl-like’s functions in dendritic arbor formation thus are fully dependent on the availability of its direct interaction partner syndapin I.
 
-## Syndapins physically interconnect Cobl-like with Cobl
+### Syndapins physically interconnect Cobl-like with Cobl
 
 In order to unravel molecular mechanisms underlying the strict functional interdependence of Cobl and Cobl-like in dendritic arborization, we asked whether syndapin I may indeed be able to directly bridge the two actin cytoskeletal effectors. To exclude putative indirect interactions via actin, we used immobilized GST-Cobl-like1-411, which comprises the syndapin binding sites (Figure 2). Cobl-like1-411 indeed formed specific protein complexes with GFP-Cobl1-713 when syndapin I was present (Figure 4A). No GFP-Cobl1-713 was precipitated when syndapin I was omitted. Thus, direct interactions between Cobl-like and Cobl did not occur but complex formation required syndapin I acting as a bridge (Figure 4A). Likewise, also syndapin III mediated complex formation of Cobl-like with Cobl (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig4-v1.jpg)
+
+**Figure 4.:** (A,B) Coprecipitation analyses unveiling specific and syndapin-dependent formation of complexes composed of immobilized GST-Cobl-like, syndapin I (A) and syndapin III (B), respectively, as well as GFP-Cobl1-713. White lines indicate omitted blot lanes. (C–E) Reconstitution and visualization of Cobl-like/syndapin I/Cobl protein complexes in COS-7 cells. Mito-GFP-Cobl1-713 (C,D) but not Mito-GFP (E) recruited mCherry-Cobl-like1-741 in the presence of Xpress-syndapin I (C) but not in its absence (D). Boxes in C–E areas presented as magnified insets (C,D, fourfold; E, threefold). Arrows, examples of colocalization of all three channels. Boxed areas are shown at higher magnification as insets. (F–H) Line scans of fluorescence intensities of all three channels are along the respective line indicated in the insets of C–E. Bars, 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Reconstitution and visualization of Cobl/syndapin I protein complexes inside of intact COS-7 cells. Mitochondrially targeted Cobl1-713 (green in merge) recruits Xpress-tagged syndapin I (red in merge; anti-Xpress immunolabeling) to mitochondria (blue in merge; visualized by MitoTracker). Boxes mark the area presented as magnified inset (fourfold enlargement). Colocalization of all three channels appears in whitish colors (white, beige, turquoise, rosé) in the merge. The line scan of fluorescence intensities of all three channels is along the line indicated in the merged inset. Bar, 10 µm.
 
 Complexes of all three components are also formed at membranes and in intact cells. Mito-GFP-Cobl1-713 was successfully targeted to the cytosolic membrane of mitochondria and did not only successfully recruit syndapin I to mitochondrial membranes (Figure 4—figure supplement 1) but was also able to recruit Cobl-like1-741 (Figure 4C–H).
 
 The visualized complex formations (Figure 4C,F) were specific and mediated by syndapin I acting as bridging component between Cobl and Cobl-like, as omitting syndapin I did not lead to any Cobl-like1-741 mitochondrial presence and also Mito-GFP did not lead to any syndapin/Cobl-like colocalization at mitochondria (Figure 4D,E,G,H).
 
-## Syndapin I and Cobl-like colocalize at sites of dendritic branch induction
+### Syndapin I and Cobl-like colocalize at sites of dendritic branch induction
 
 In line with the BAR domain hypothesis (Peter et al., 2004; Qualmann et al., 2011; Daumke et al., 2014; Kessels and Qualmann, 2015; Carman and Dominguez, 2018), syndapin I may sense/induce certain membrane topologies and thereby provide spatial cues for Cobl and Cobl-like functions. Thus, three syndapin I-related aspects needed to be experimentally addressed: (i) Where and when do Cobl-like and syndapin I occur together in developing neurons? (ii) Would a given syndapin I localization indeed reflect specifically membrane-associated syndapin I? (iii) Would putative accumulations of membrane-associated syndapin I then really correspond to convex membrane topologies?
 
@@ -93,7 +121,7 @@ Dual time-lapse imaging of GFP-Cobl-like and syndapin I-mRubyRFP in developing p
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig5-v1.jpg)
 
-**Figure 5.:** (A) Maximum intensity projections (MIPs) of individual frames of a 3D time-lapse recording of a dendrite segment of a DIV7 rat hippocampal neuron coexpressing GFP-Cobl-like and syndapin I (SdpI)-mRubyRFP. Arrows, GFP-Cobl-like and syndapin I enrichments prior to protrusion initiation from these dendritic sites; *, tips of growing dendritic protrusions; (*), abandoned protrusions. (B) Heat map representations. Bars, 2.5 µm. (C) Quantitation of maximal intensities of fluorescent syndapin I, Cobl-like, Cobl and CaM fusion proteins as well as of mCherry as control at dendritic branch induction sites prior to protrusion formation (time frame: the six 10 s frames prior to protrusion start) in relation to a control ROI at the same dendrite at a position neighboring the branch induction site (shown as % above this control ROI). Data, mean ± SEM. Bar/dot plot overlay of individual data points averaged. (D) Temporal analyses of the maximal fluorescence intensities of syndapin I, Cobl-like, Cobl, and CaM occurring at dendritic branch induction sites prior to protrusion formation. Data, mean (black dot) ± SD (light blue) and ± SEM (dark blue). One-way-ANOVA (C). Also see Figure 5—source data 1.Figure 5—source data 1.Figure 5C,D.
+**Figure 5.:** (A) Maximum intensity projections (MIPs) of individual frames of a 3D time-lapse recording of a dendrite segment of a DIV7 rat hippocampal neuron coexpressing GFP-Cobl-like and syndapin I (SdpI)-mRubyRFP. Arrows, GFP-Cobl-like and syndapin I enrichments prior to protrusion initiation from these dendritic sites; *, tips of growing dendritic protrusions; (*), abandoned protrusions. (B) Heat map representations. Bars, 2.5 µm. (C) Quantitation of maximal intensities of fluorescent syndapin I, Cobl-like, Cobl and CaM fusion proteins as well as of mCherry as control at dendritic branch induction sites prior to protrusion formation (time frame: the six 10 s frames prior to protrusion start) in relation to a control ROI at the same dendrite at a position neighboring the branch induction site (shown as % above this control ROI). Data, mean ± SEM. Bar/dot plot overlay of individual data points averaged. (D) Temporal analyses of the maximal fluorescence intensities of syndapin I, Cobl-like, Cobl, and CaM occurring at dendritic branch induction sites prior to protrusion formation. Data, mean (black dot) ± SD (light blue) and ± SEM (dark blue). One-way-ANOVA (C). Also see Figure 5—source data 1.
 
 Afterward, the accumulations of both proteins at the base of newly formed protrusions faded. This suggested a highly mobile subpool of syndapin I and Cobl-like in the dendritic arbor.
 
@@ -103,7 +131,7 @@ Determinations of maximal fluorescence intensities prior to dendritic branch ind
 
 Taken together our observations show that Cobl-like, syndapin I, Cobl, and CaM all accumulate a branch initiation sites prior to dendritic branch induction and show some temporal overlap at these particular sites.
 
-## Membrane-bound syndapin I occurs preferentially at protrusive membrane topologies in developing neurons and forms nanoclusters at such sites
+### Membrane-bound syndapin I occurs preferentially at protrusive membrane topologies in developing neurons and forms nanoclusters at such sites
 
 3D time-lapse studies do not resolve whether the observed syndapin I accumulations at nascent branch sites represent membrane-associated syndapin I or a cytosolic subpool, for example, associated with putative cytoskeletal components at such sites. Immunogold labeling of freeze-fractured plasma membranes is a technique that per se exclusively focuses on membrane-integrated proteins, provides membrane topology information, and can be applied to neuronal networks (e.g. see Tanaka et al., 2005; Holderith et al., 2012; Schneider et al., 2014; Nakamura et al., 2015). We have recently shown that plasma membranes of still developing neurons can in principle be freeze-fractured and immunolabeled, too (Wolf et al., 2019).
 
@@ -111,19 +139,19 @@ Whereas neither Cobl nor Cobl-like seemed to be preservable by the procedure, im
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig6-v1.jpg)
 
-**Figure 6.:** (A,A’,A’’) Transmission electron microscopy (TEM) images of anti-syndapin I immunogold-labeled freeze-fracture replica of developing neurons (DIV7). Red lines highlight membrane topologies protruding from regular cylindrical topology. Arrowheads, abundant and clustered anti-syndapin I immunogold labeling (10 nm) at protrusive sites. Arrows, sparse and rarely clustered anti-syndapin immunogold labeling at regular, cylindrical membrane structures. Bars, 200 nm. (B) Quantitative evaluations of anti-syndapin I labeling densities at protrusive and cylindrical membrane topologies. (C) Quantitative analysis of the relative abundance of differently clustered syndapin I labels (ROIs, 35 nm radius). In total, 335 (protrusive) and 130 (cylindrical) labels were evaluated. (D) Quantitative analysis of the density of anti-syndapin I nanoclusters (≥3 anti-syndapin I immunogold labels/ROI) at regular cylindrical membrane surfaces and at those with protrusive topology. Data (B,D), mean ± SEM. One-way ANOVA (B); two-tailed Student’s t-test (D). Also see Figure 6—source data 1.Figure 6—source data 1.Figure 6B–D.
+**Figure 6.:** (A,A’,A’’) Transmission electron microscopy (TEM) images of anti-syndapin I immunogold-labeled freeze-fracture replica of developing neurons (DIV7). Red lines highlight membrane topologies protruding from regular cylindrical topology. Arrowheads, abundant and clustered anti-syndapin I immunogold labeling (10 nm) at protrusive sites. Arrows, sparse and rarely clustered anti-syndapin immunogold labeling at regular, cylindrical membrane structures. Bars, 200 nm. (B) Quantitative evaluations of anti-syndapin I labeling densities at protrusive and cylindrical membrane topologies. (C) Quantitative analysis of the relative abundance of differently clustered syndapin I labels (ROIs, 35 nm radius). In total, 335 (protrusive) and 130 (cylindrical) labels were evaluated. (D) Quantitative analysis of the density of anti-syndapin I nanoclusters (≥3 anti-syndapin I immunogold labels/ROI) at regular cylindrical membrane surfaces and at those with protrusive topology. Data (B,D), mean ± SEM. One-way ANOVA (B); two-tailed Student’s t-test (D). Also see Figure 6—source data 1.
 
 Protrusive sites also showed a statistically highly significant enrichment of syndapin I nanoclusters (≥3 anti-syndapin I labels in circular ROIs of 35 nm radius) (Figure 6B–D). Interestingly, syndapin I was usually not localized to the tip of the protrusion but preferentially occurred at membrane topology transition zones at the protrusion base (Figure 6A’’).
 
 The accumulation of syndapin I clusters at such sites was in line with a promotion of membrane curvature induction and/or with a stabilization of the complex membrane topologies found at such sites by syndapin I.
 
-## Cobl-like’s N terminus is a target for the Ca2+ sensor CaM and Ca2+ signals increase Cobl-like’s associations with syndapin I
+### Cobl-like’s N terminus is a target for the Ca2+ sensor CaM and Ca2+ signals increase Cobl-like’s associations with syndapin I
 
 The formation of neuronal networks involves local Ca2+ and CaM signals, which coincide with transient F-actin formation at sites of dendritic branch induction (Hou et al., 2015). Cobl-like was identified as Ca2+/CaM target. Yet, this CaM association occurred in the C terminal part of Cobl-like and regulated Cobl-like’s association with the F-actin-binding protein Abp1 (Izadi et al., 2018). Interestingly, also GFP-Cobl-like1-411 showed Ca2+-dependent CaM binding, whereas middle parts, such as Cobl-like376-540 and Cobl-like537-740, did not (Figure 7A,B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig7-v1.jpg)
 
-**Figure 7.:** 2+/CaM associates with the N terminus of Cobl-like and positively regulates Cobl-like’s syndapin I association.(A) Scheme of Cobl-like and deletion mutants used for CaM-binding studies (B) (red, no Ca2+-dependent binding; green, Ca2+-dependent binding). (B) Coprecipitations with immobilized CaM in presence (500 µM) and absence of Ca2+ and different Cobl-like deletion mutants. Green arrowheads, increased CaM interactions in the presence of Ca2+. White lines, lanes omitted from blots. (C) Coprecipitation analyses with immobilized CaM and purified TrxHis-Cobl-like1-411 and GST-syndapin I (GST-SdpI) showing direct and simultaneous interactions of Cobl-like1-411 with both CaM and syndapin I. (D,E) Quantitative coimmunoprecipitation analyses demonstrating that Ca2+/CaM signaling leads to increased syndapin I coimmunoprecipitation with Cobl-like1-741. Blue arrowhead, position of the only faintly detected GFP-Cobl-like1-741 in the lysates (D). Green arrowhead, increase of coimmunoprecipitated syndapin I (D). (E) Anti-syndapin I signal per immunoprecipitated Cobl-like (expressed as change from conditions without Ca2+). Data, bar/dot plot overlays with mean ± SEM. Unpaired Student’s t-test. Also see Figure 7—source data 1.Figure 7—source data 1.Figure 7E.
+**Figure 7.:** (A) Scheme of Cobl-like and deletion mutants used for CaM-binding studies (B) (red, no Ca2+-dependent binding; green, Ca2+-dependent binding). (B) Coprecipitations with immobilized CaM in presence (500 µM) and absence of Ca2+ and different Cobl-like deletion mutants. Green arrowheads, increased CaM interactions in the presence of Ca2+. White lines, lanes omitted from blots. (C) Coprecipitation analyses with immobilized CaM and purified TrxHis-Cobl-like1-411 and GST-syndapin I (GST-SdpI) showing direct and simultaneous interactions of Cobl-like1-411 with both CaM and syndapin I. (D,E) Quantitative coimmunoprecipitation analyses demonstrating that Ca2+/CaM signaling leads to increased syndapin I coimmunoprecipitation with Cobl-like1-741. Blue arrowhead, position of the only faintly detected GFP-Cobl-like1-741 in the lysates (D). Green arrowhead, increase of coimmunoprecipitated syndapin I (D). (E) Anti-syndapin I signal per immunoprecipitated Cobl-like (expressed as change from conditions without Ca2+). Data, bar/dot plot overlays with mean ± SEM. Unpaired Student’s t-test. Also see Figure 7—source data 1.
 
 Surprisingly, further analyses demonstrated that the central parts of the Cobl Homology domain of Cobl-like, that is, Cobl-like111-262 and Cobl-like182-272, both also did not show any Ca2+-dependent CaM binding (Figure 7A,B), although the central Cobl Homology domain corresponds to the CaM-binding area in Cobl (Hou et al., 2015) and represents an area of at least moderately higher sequence conservation between Cobl and Cobl-like (33% identity; Figure 1—figure supplement 1). Instead, it was the most N terminal part of Cobl-like represented by Cobl-like1-111 and Cobl-like1-58 that was targeted by CaM (Figure 7A,B).
 
@@ -131,13 +159,13 @@ Coprecipitation experiments with purified recombinant proteins confirmed that Ca
 
 Thus, the identified N terminal complex formation with syndapin I is Ca2+/CaM-regulated.
 
-## Cobl-like’s N terminal CaM-binding site regulating syndapin I association levels is crucial for dendritic arbor formation
+### Cobl-like’s N terminal CaM-binding site regulating syndapin I association levels is crucial for dendritic arbor formation
 
 The N terminal region of Cobl-like (Figure 1—figure supplement 1) indeed contains putative CaM-binding motifs. Coprecipitation analyses clearly showed that, in contrast to GFP-Cobl-like1-741, a corresponding deletion mutant (GFP-Cobl-like1-741∆CaM NT; GFP-Cobl-like1-741∆11-45) did not show any Ca2+-dependent CaM binding (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig8-v1.jpg)
 
-**Figure 8.:** (A) Coprecipitation analyses of Cobl-like1-741, Cobl-like1-741∆CaM NT (∆11–45), and GFP with immobilized CaM in Ca2+ presence and absence. Arrowhead, increased CaM interaction of Cobl-like1-741 upon Ca2+ (disrupted in Cobl-like1-741∆CaM NT). (B,C) Functional analyses in primary hippocampal neurons (transfection at DIV4; fixation 37 hr thereafter) unveiling that an RNAi-insensitive (*) Cobl-like mutant lacking the N terminal CaM-binding site (GFP-Cobl-like*∆CaM NT) failed to rescue the Cobl-like loss-of-function phenotypes. Red asterisks, transfected neurons (transfection, DIV4; analyses, DIV5.5). Bars, 10 µm. (D–G) Quantitative evaluations of indicated dendritic parameters. Data, mean ± SEM. One-way ANOVA+Tukey (D–F); two-way ANOVA+Bonferroni (G). Also see Figure 8—source data 1 and 2.Figure 8—source data 1.Figure 8D–F.Figure 8—source data 2.Figure 8G.
+**Figure 8.:** (A) Coprecipitation analyses of Cobl-like1-741, Cobl-like1-741∆CaM NT (∆11–45), and GFP with immobilized CaM in Ca2+ presence and absence. Arrowhead, increased CaM interaction of Cobl-like1-741 upon Ca2+ (disrupted in Cobl-like1-741∆CaM NT). (B,C) Functional analyses in primary hippocampal neurons (transfection at DIV4; fixation 37 hr thereafter) unveiling that an RNAi-insensitive (*) Cobl-like mutant lacking the N terminal CaM-binding site (GFP-Cobl-like*∆CaM NT) failed to rescue the Cobl-like loss-of-function phenotypes. Red asterisks, transfected neurons (transfection, DIV4; analyses, DIV5.5). Bars, 10 µm. (D–G) Quantitative evaluations of indicated dendritic parameters. Data, mean ± SEM. One-way ANOVA+Tukey (D–F); two-way ANOVA+Bonferroni (G). Also see Figure 8—source data 1 and 2.
 
 Strikingly, a RNAi-resistant (*) Cobl-like mutant solely lacking the N terminal CaM-binding site (GFP-Cobl-like*∆CaM NT) failed to rescue the Cobl-like loss-of-function phenotypes in dendritic arborization (Figure 8B,C). Quantitative analyses unveiled that reexpression of GFP-Cobl-like*∆CaM NT instead of resupplying the neurons with RNAi-insensitive wild-type (WT) Cobl-like*, which rescued all Cobl-like deficiency phenotypes, was unable to rescue the RNAi-mediated defects in dendritic branch point numbers, terminal point numbers, and total dendritic length. These defects were as severe as those caused by Cobl-like RNAi without rescue attempt (Figure 8D–F).
 
@@ -145,15 +173,23 @@ Also Sholl analyses confirmed that GFP-Cobl-like*∆CaM NT showed a significant 
 
 The identified N terminal CaM-binding site of Cobl-like regulating the syndapin I interactions thus was absolutely indispensable for Cobl-like’s functions in dendritic arbor formation.
 
-## Ca2+/CaM signaling exclusively promotes the syndapin I association with the first of the three ‘KRAP’ motifs
+### Ca2+/CaM signaling exclusively promotes the syndapin I association with the first of the three ‘KRAP’ motifs
 
 The critical N terminal CaM-binding site was adjacent to the most N terminal of the three syndapin binding areas. As a prerequisite for further analyses uncovering the regulatory mechanism, we next confirmed that the interactions with syndapins were indeed solely mediated by the ‘KRAP’ motif-containing regions. Both Cobl-like1-741∆KRAP and Cobl-like∆KRAP indeed were not able to interact with the syndapin I SH3 domain, as shown by coprecipitation studies and by reconstitutions of complex formations with syndapin I in vivo (Figure 9A; Figure 9—figure supplement 1).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig9-v1.jpg)
+
+**Figure 9.:** (A) Coprecipitations with immobilized syndapin I SH3 domain (SdpISH3) and Cobl-like and ∆KRAP mutants thereof. (B,C) Quantitative coimmunoprecipitation analyses with GFP-Cobl-like1-457 (B) in comparison to a corresponding mutant solely lacking the first ‘KRAP’ motif (GFP-Cobl-like1-457∆KRAP1) in the presence and absence of Ca2+, respectively (C). Arrowhead, increase of coimmunoprecipitated Flag-syndapin I with GFP-Cobl-like1-457 upon Ca2+. (D) Quantitation of anti-syndapin I coimmunoprecipitation upon Ca2+ presence normalized to immunoprecipitated GFP-Cobl-like1-457 and GFP-Cobl-like1-457∆KRAP1, respectively (as deviation from conditions without Ca2+). (E,F) Side-by-side comparison of syndapin I coimmunoprecipitations with GFP-Cobl-like1-457 and GFP-Cobl-like1-457∆KRAP1 (E) and quantitative analysis thereof (F). White line, lanes omitted from blot. (G,H) Images of Apotome sections showing the cortical localization of GFP-Cobl-like expressed in Cobl-like-deficient background (Cobl-like RNAi/GFP-Cobl-like*) in primary hippocampal neurons transfected at DIV4 and imaged 37 hr later (G) compared to the subcellular distribution of GFP-Cobl-like*∆KRAP1 in the same background (H). Lines indicate positions of line scans shown. Bars, 10 µm. (I) Quantitative assessment of cortical GFP intensities (marked with arrowheads in the line scans) normalized to the GFP intensity of an internal ROI in the same cell. (J–K) Functional analyses of the importance of Cobl-like’s CaM-regulated syndapin I binding site (KRAP1) by loss-of-function rescue experiments evaluating the indicated dendritic arbor parameters of developing neurons (transfection, DIV4; analysis, DIV5.5). Note that neither a Cobl-like mutant lacking the entire N terminal part (GFP-Cobl-like*∆1-412) nor GFP-Cobl-like*∆KRAP1 was able to rescue Cobl-like’s loss-of-function phenotypes. Data, bar/dot plot overlays with mean ± SEM (D,I) and mean ± absolute error (F) as well as bar plots with mean ± SEM (J–L). Unpaired Student’s t-test (D,F,I); one-way ANOVA+Tukey (J–L). Also see Figure 9—source data 1–4.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/67718/elife-67718-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Anti-GFP immunoblotting of control experiments of the coprecipitation analyses shown in Figure 10A demonstrating that neither Cobl-like nor any of the Cobl-like mutants associated with GST. (B–D) Maximum intensity projections (MIPs) of COS-7 cells transfected with Mito-mCherry-syndapin I and GFP-Cobl-like∆KRAP (B), Mito-mCherry-syndapin I and GFP-Cobl-like1-741 (C), and a GFP-Cobl-like mutant lacking the regions with the three ‘KRAP’ motifs (GFP-Cobl-like1-741∆KRAP) (D), respectively. Note the successful recruitment of GFP-Cobl-like1-741 to syndapin I-decorated mitochondria (C; colocalization of all three channels shown appears white in merge; examples are marked by arrowheads), whereas GFP-Cobl-like∆KRAP and GFP-Cobl-like1-741∆KRAP were not recruited to mitochondria (colocalization of only Mito-mCherry-syndapin I [red in merge] and MitoTracker [blue in merge] appears purple in merge; B,D). Boxed areas are shown at higher magnification as insets. Line scans of fluorescence intensities of all three channels are shown along the respective line indicated in the merged insets of B–D. Bars, 10 µm.
 
 Strikingly, quantitative coimmunoprecipitation analyses unveiled a full abolishment of the about 50% increase of syndapin I interaction with the Cobl Homology domain of Cobl-like (Cobl-like1-457) upon Ca2+ addition when the first ‘KRAP’ motif (KRAP1) was deleted (Cobl-like1-457∆KRAP1; Cobl-like1-457∆59-69) (Figure 9B–D). This insensitivity of Cobl-like1-457∆KRAP1 to Ca2+/CaM signaling revealed that it was exclusively the first ‘KRAP’ motif (aa59-69) that was regulated by Ca2+/CaM signaling.
 
 Side-by-side analyses of GFP-Cobl-like1-457 and Cobl-like1-457∆KRAP1 under Ca2+-free control conditions revealed that without Ca2+ Cobl-like1-457 and the corresponding ∆KRAP1 mutant thereof coimmunoprecipitated the same amount of syndapin I (Figure 9E,F). Thus, without Ca2+ and under the stringency of in vivo conditions, as reflected by coimmunoprecipitations, ‘KRAP’ motif 1 seemed not to contribute to syndapin I complex formation but awaited activation by Ca2+/CaM signaling.
 
-## The single Ca2+/CaM-regulated syndapin I binding site of Cobl-like is crucial for Cobl-like’s function in dendritic arbor formation
+### The single Ca2+/CaM-regulated syndapin I binding site of Cobl-like is crucial for Cobl-like’s function in dendritic arbor formation
 
 A lack of proper syndapin I interaction by deletion of ‘KRAP’ motif 1 resulted in a reduced localization of Cobl-like to the cortex of developing neurons when endogenous Cobl-like was replaced by GFP-Cobl-like*∆KRAP1 (Figure 9G–I).
 
@@ -199,7 +235,7 @@ While these initial observations and the in part apparently conflicting data sho
 
 ## Materials and methods
 
-## DNA constructs
+### DNA constructs
 
 Plasmids encoding for GFP-Cobl-like and parts thereof were described previously (Izadi et al., 2018) and generated by PCR using the EST clone UniProtID Q3UMF0 as template, respectively. GFP-Cobl-like111-262 and Cobl-like1-111 were generated by subcloning with the help of internal restriction sites. Additional Cobl-like deletion mutants were generated by combining the following forward primers, aa1 fw: 5’-AATTAGATCTATGGACCGCAGCGTCCCCGATCC-3’; aa261 fw: 5’-AAAGATCTGATATCAGCAGAGAG-3’; aa537 fw: 5’-AAAGATCTAAGGATCCTGATTCAGC-3’; aa740 fw: 5’-GCCTCAAGAGAATTCAGG-3’; aa376 fw: 5’-TTGAATTCTTAAACCATGATCGCTTC-3’; aa182 fw: 5’- TTAGATCTCCTACACCTATAATC-3’ with the following reverse primers, aa457 rv: 5’- AACTCGAGCCCGGGACCAAGGGAGC-3’; aa741 rv: 5’-TCCTGAATTCTCTTGAGG-3’; aa540 rv: 5’-TTCTCGAGTTAATCAGGATCCTTCTC-3’; aa411 rv: 5’-GCAAGCTTGGTTTTCGAAGGTGG-3’; aa272 rv: 5’-AAGAATTCTCAGTTGTGTGATATTTG-3’; aa380 rv: 5’-TTGAATTCGAAGCGATCATGGTG-3’ using either the introduced or an internal restriction site (1-538; BamH1). Cobl-like1-741 fused to mCherry was generated by subcloning from GFP-Cobl-like1-741 into Cherry-pCMV.
 
@@ -231,7 +267,7 @@ A plasmid encoding for GFP-CaM was generated by subcloning from TrxHis-CaM descr
 
 Correct cloning by PCR was verified by sequencing in all cases.
 
-## Antibodies, reagents, and proteins
+### Antibodies, reagents, and proteins
 
 Rabbit anti-Cobl-like antibodies were raised against a combination of two GST-Cobl-like fusion proteins (GST-Cobl-like537-741 and GST-Cobl-like740-1015) as described previously (Izadi et al., 2018). The antibodies were affinity-purified according to procedures described previously (Qualmann et al., 1999; Kessels et al., 2000). Anti-syndapin I and anti-syndapin III antibodies were described previously (Qualmann et al., 1999; Koch et al., 2011). Anti-GST and anti-TrxHis antibodies from guinea pig and rabbit were described before, too (Qualmann and Kelly, 2000; Braun et al., 2005; Schwintzer et al., 2011).
 
@@ -243,23 +279,23 @@ Sepharose 4B-coupled CaM was from GE Healthcare. GST- and TrxHis-tagged fusion p
 
 Tag-free syndapin I and III were generated by expressing both proteins in the pGEX-6P vector (GE Healthcare) and cutting of the GST tag from purified proteins using PreScission protease (GE Healthcare) in 150 mM NaCl, 2 mM DTT, and 20 mM HEPES pH 7.4 buffer overnight at 4°C (during dialysis after elution). Cleaved off GST and non-cleaved GST fusion proteins were removed with glutathione-sepharose.
 
-## In vitro reconstitutions of direct protein-protein interactions
+### In vitro reconstitutions of direct protein-protein interactions
 
 Direct protein/protein interactions were demonstrated by coprecipitation assays with combinations of recombinant TrxHis- and GST-tagged fusion proteins purified from E. coli and/or immobilized CaM, respectively, in 10 mM HEPES pH 7.4, 300 mM NaCl, 0.1 mM MgCl2, 1% (v/v) Triton X-100 supplemented with EDTA-free protease inhibitor cocktail as well as in some cases with 500 µM Ca2+ added.
 
 Eluted proteins were analyzed by SDS-PAGE, transferred to PVDF membranes by either semi-dry or tank blotting and then subjected to immunodetection with anti-TrxHis and anti-GST antibodies. Primary antibodies were detected with fluorescent secondary antibodies using a Licor Odyssey System.
 
-## Culture and transfection, and immunostaining of cells
+### Culture and transfection, and immunostaining of cells
 
 Culturing of HEK293 (RRID:CVCL_0045) and COS-7 cells (RRID:CVCL_0224) and their transfection using TurboFect (Thermo Fisher Scientific) as well as their immunolabeling was essentially done as described (Kessels et al., 2001; Haag et al., 2012). The cell lines are regularly tested for mycoplasma and were mycoplasma-negative.
 
 In reconstitutions and visualizations of protein complex formations at the surfaces of mitochondria in intact cells, mitochondria of COS-7 cells were stained with 0.2 µM MitoTracker Deep Red 633 in medium at 37°C for 30 min and cells were subsequently fixed with 4% (w/v) paraformaldehyde (PFA) for 7 min.
 
-## Preparation of HEK293 cell lysates
+### Preparation of HEK293 cell lysates
 
 HEK293 cells were washed with PBS 24–48 hr after transfection, harvested and subjected to sonification for 10 s and/or lyzed by incubation in lysis buffer (10 mM HEPES pH 7.4, 0.1 mM MgCl2, 1 mM EGTA, 1% (v/v) Triton X-100) containing 150 mM NaCl and EDTA-free protease inhibitor Complete (Roche) for 20–30 min at 4°C (Kessels and Qualmann, 2006). Cell lysates were obtained as supernatants from centrifugations at 20,000×g (20 min at 4°C).
 
-## Coprecipitation of proteins from HEK293 cell lysates
+### Coprecipitation of proteins from HEK293 cell lysates
 
 Coprecipitation experiments with extracts from HEK293 cells expressing different GFP fusion proteins were essentially performed as described before (Qualmann et al., 1999; Schwintzer et al., 2011). In brief, HEK293 cell lysates were incubated with purified, recombinant GST fusion proteins immobilized on glutathione-sepharose beads for 3 hr at 4°C. The reactions were then washed several times with lysis buffer containing 150 mM NaCl and EDTA-free protease inhibitor Complete. Bound protein complexes were subsequently eluted with 20 mM reduced glutathione, 120 mM NaCl, 50 mM Tris/HCl pH 8.0 (30 min RT) or obtained by boiling the beads in 4×SDS sample buffer.
 
@@ -267,11 +303,11 @@ For coprecipitations with CaM, HEK293 cell lysates were prepared in an EGTA-free
 
 Triple coprecipitations, that is, the examinations of GST-Cobl-like1-411/syndapin/GFP-Cobl1-713 complexes with either syndapin I or syndapin III as bridging component, were essentially performed as described above (lysis buffer containing 150 mM NaCl) except that the extracts from HEK293 cells expressing GFP-Cobl1-713 were not only incubated with immobilized GST-Cobl-like1-411 but also with tag-free syndapin I or syndapin III for 3 hr. Bound proteins were eluted with 20 mM reduced glutathione, 120 mM NaCl, 50 mM Tris/HCl pH 8.0. Eluates and supernatants were separated by SDS-PAGE and analyzed by anti-syndapin I/III, anti-GST, and anti-GFP immunoblotting.
 
-## Coprecipitation of endogenous syndapin I from mouse brain lysates
+### Coprecipitation of endogenous syndapin I from mouse brain lysates
 
 For coprecipitation of endogenous syndapin I, brain lysates were prepared from mice sacrificed by cervical dislocation. Extracts were prepared using an Ultra Turrax homogenizer (Ika Ultra Turrax T5Fu; 20,000 rpm, 10 s) in lysis buffer containing EDTA-free protease inhibitor Complete and supplemented with 100 mM NaCl and 200 µM calpain inhibitor I. After clearing the lysates from cell debris by centrifugation at 1000×g for 20 min, the supernatants were used to precipitate endogenous syndapin I by TrxHis-Cobl-like1-411 fusion proteins immobilized on Talon metal affinity resin. Bound proteins were eluted by boiling in sample buffer, separated by SDS-PAGE, and analyzed by anti-syndapin I immunoblotting.
 
-## Heterologous and quantitative coimmunoprecipitation analyses
+### Heterologous and quantitative coimmunoprecipitation analyses
 
 Heterologous coimmunoprecipitations addressing Cobl-like/syndapin I, syndapin II, and syndapin III interactions were done with lysates of HEK293 cells transfected with GFP-Cobl-like fusion proteins and GFP, respectively, in combination with Flag-tagged syndapins. The cell lysates were incubated with anti-Flag antibodies or non-immune IgGs in lysis buffer containing 100 mM NaCl and EDTA-free protease inhibitor Complete for 3 hr at 4°C. Antibody-associated protein complexes were isolated by 2 hr incubation with protein A agarose (Santa Cruz Biotechnology) at 4°C. The immunoprecipitates were washed with lysis buffer containing 100 mM NaCl, eluted from the matrix by boiling in a mix of 2 M (final) urea and SDS sample buffer and analyzed by immunoblotting.
 
@@ -281,17 +317,17 @@ For quantitative evaluations of the regulation of Cobl-like/syndapin I complexes
 
 The amounts of coimmunoprecipitated Flag-syndapin I were quantified based on the detection of fluorescent antibody signals using a Licor Odyssey System providing a linear, quantitative read-out over several orders of magnitude. Anti-syndapin I coimmunoprecipitation signals were normalized to the amounts of anti-GFP signal representing the immunoprecipitated material. This ensured that similar amounts of GFP-Cobl-like proteins were examined for their extent of Flag-syndapin I coimmunoprecipitation. Both fluorescence signals were detected on the same blot using the two different fluorescence channels of the Licor Odyssey System. Data were expressed as percent difference from Ca2+-free conditions.
 
-## Endogenous coimmunoprecipitations from mouse brain extracts
+### Endogenous coimmunoprecipitations from mouse brain extracts
 
 Mice were sacrificed and the brain was cut into small pieces and homogenized in 10 mM HEPES pH 7.5, 30 mM NaCl, 0.1 mM MgCl2, and 1 mM EGTA with protease inhibitors. Afterward, Triton X-100 was added (0.2% v/v final) and the homogenates were extracted for 1 hr at 4–6°C. The samples were then centrifuged at 100,000×g for 30 min at 4°C and the resulting supernatants (mouse brain lysates) were incubated with affinity-purified rabbit anti-Cobl-like antibodies and non-immune rabbit IgGs, respectively, bound to protein A agarose (preincubation at 4°C and washing with above buffer and 0.2% (v/v) Triton X-100 [CoIP buffer]). After 4 hr of incubation at 6°C, the proteins bound to the protein A agarose were washed with ice-cold CoIP buffer, eluted with SDS sample buffer (100°C, 5 min), and analyzed by immunoblotting using anti-Cobl-like and anti-syndapin I antibodies.
 
-## Microscopy
+### Microscopy
 
 Images were recorded as z-stacks using a Zeiss AxioObserver.Z1 microscope (Zeiss) equipped with an ApoTome, Plan-Apochromat 100×/1.4, 63×/1.4, 40×/1.3, and 20×/0.5 objectives and an AxioCam MRm CCD camera (Zeiss).
 
 Digital images were recorded by ZEN2012 (PRID:SCR_013672). Image processing was done by Adobe Photoshop (RRID:SCR_014199).
 
-## Spinning disk live microscopy of developing neurons
+### Spinning disk live microscopy of developing neurons
 
 Primary rat hippocampal neurons were transiently transfected using Lipofectamine 2000 at DIV6. For imaging, the culture medium was replaced by 20 mM HEPES pH 7.4, 140 mM NaCl, 0.8 mM MgCl2, 1.8 mM CaCl2, 5 mM KCl, 5 mM D-glucose (live imaging buffer) adjusted to isoosmolarity using a freezing point osmometer (Osmomat 3000; Gonotec).
 
@@ -305,7 +341,7 @@ For quantitative determination of the degree of accumulation of Cobl-like, synda
 
 For spatiotemporal analyses, the time points of the frames with the highest accumulation of Cobl-like, syndapin I, Cobl and CaM were averaged. In the rare case that two maxima of equal intensity occurred prior to branch initiation, both time values were considered in the averaging. As above, 3D imaging stacks were recorded every 10 s and six frames prior to protrusion start (defined as t=0) were evaluated.
 
-## Culturing, transfection, and immunostaining of primary rat hippocampal neurons
+### Culturing, transfection, and immunostaining of primary rat hippocampal neurons
 
 Primary rat hippocampal neuronal cultures were prepared, maintained, and transfected as described previously (Qualmann et al., 2004; Pinyol et al., 2007; Schwintzer et al., 2011). In brief, neurons prepared from hippocampi of E18 rats were seeded at densities of about 60,000/well (24-well plate) and 200,000/well (12-well plate), respectively. Cells were cultured in Neurobasal medium containing 2 mM L-glutamine, 1× B27, and 1 µM/ml penicillin/streptomycin. The neurons were maintained at 37°C with 90% humidity and 5% CO2.
 
@@ -313,7 +349,7 @@ Transfections were done in antibiotic-free medium using 2 µl Lipofectamine 200
 
 Fixation was done in 4% (w/v) PFA in PBS pH 7.4 at RT for 5 min. Permeabilization and blocking were done with 10% (v/v) horse serum, 5% (w/v) BSA in PBS with 0.2% (v/v) Triton X-100 (blocking solution). Antibody incubations were done in the same buffer without Triton X-100 according to Kessels et al., 2001 and Pinyol et al., 2007. In brief, neurons were incubated with primary antibodies for 1 hr at RT and washed three times with blocking solution. Afterward, they were incubated with secondary antibodies (1 hr, RT). Finally, the coverslips were washed with blocking solution, PBS and water and mounted onto coverslips using Moviol.
 
-## Quantitative analyses of dendrites of primary hippocampal neurons
+### Quantitative analyses of dendrites of primary hippocampal neurons
 
 Comparative Cobl and Cobl-like loss-of-function analyses were done 46 hr subsequent to transfection at DIV4 to allow for clear development of loss-of-function phenotypes. For Cobl-like loss-of-function analyses and corresponding rescue experiments, 37 hr post-transfection (transfection at DIV4) was sufficient for loss-of-function phenotypes to clearly develop.
 
@@ -325,11 +361,11 @@ Transfected neurons were sampled systematically on each coverslip. Morphometric 
 
 Using IMARIS 7.6 software (RRID:SCR_007370), the number of dendritic branching points, dendritic terminal points, and dendritic filament length was determined and Sholl analyses (Sholl, 1953) were conducted according to procedures established previously (Izadi et al., 2018). For each neuron, a ‘filament’ (morphological trace) was drawn by IMARIS 7.6 software using the following settings: largest diameter, cell body diameter; thinnest diameter, 0.2 µm; start seed point, 1.5× of cell body diameter; disconnected points, 2 µm; minimum segment size, 10 µm. Immunopositive areas that were erroneously spliced by IMARIS or protrusions belonging to different cells as well as filament branch points that the software erroneously placed inside of the cell body were manually removed from the filament. Parameters determined were saved as Excel files and subjected to statistical significance calculations using GraphPad Prism5 and Prism6 software (RRID:SCR_002798).
 
-## Quantitative, visual assessments of subcellular distributions
+### Quantitative, visual assessments of subcellular distributions
 
 Quantitative determinations of the subcellular distribution of Cobl-like and the ∆KRAP1 mutant thereof were done using line scans across Apotome sections of the cell bodies of developing hippocampal neurons similar to methods described before (Schwintzer et al., 2011). The neurons were transfected at DIV4, immunostained for MAP2, and imaged 37 hr later. Cobl-like and the ∆KRAP1 mutant thereof were analyzed in a Cobl-like-deficient background by expressing Cobl-like RNAi vectors that coexpressed RNAi-resistant WT GFP-Cobl-like* and GFP-Cobl-like*∆KRAP1, respectively. As described before (Schwintzer et al., 2011), the fluorescence intensities reached in cortical areas were extracted from the line scans and expressed in relation to the average intensity of an ROI covering a large part of the cytoplasmic area of the neuron.
 
-## Freeze-fracturing and immunogold labeling
+### Freeze-fracturing and immunogold labeling
 
 Hippocampal neurons were grown for 7 days on poly-D-lysine-coated sapphire disks (diameter 4 mm; Rudolf Brügger, Swiss Micro Technology) in 24-well plates, washed with PBS and subjected to ultrarapid freezing (4000 K/s) as well as to freeze-fracturing as described for mature neurons (Schneider et al., 2014).
 
@@ -343,7 +379,7 @@ Membrane areas with parallel membrane orientations (cylindrical) were distinguis
 
 Anti-syndapin I cluster analyses were conducted using circular ROIs of 70 nm diameter. Density of clusters at cylindrical and protrusive membranes were calculated considering ≥3 anti-syndapin I labels per ROI as one cluster. Additionally, anti-syndapin I labeling being single, paired, and clustered in three to eight labels, respectively, was analyzed as percent of total anti-syndapin labeling.
 
-## Statistical analyses and sample size estimation
+### Statistical analyses and sample size estimation
 
 No explicit power analyses were used to compute and predefine required sample sizes. Instead, all neuronal analyses were conducted by systematic sampling of transfected cells across coverslips to avoid any bias. Morphometric analyses were then conducted using IMARIS software.
 
@@ -369,7 +405,7 @@ Anti-syndapin I immunogold labeling densities at different surfaces of freeze-fr
 
 Statistical significances were marked by *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001 throughout. In addition, the numbers of p-values are reported directly in the figures. Note that for p < 0.0001 (****), no values were provided by the software Prism 6, as the p-values are too small.
 
-## Ethics statement
+### Ethics statement
 
 As exclusively cells and tissue samples isolated from postmortem WT animals were used in this study, neither a permission of animal experiments nor a breeding permission for genetically modified animals (Zuchtrahmenantrag) was required.
 

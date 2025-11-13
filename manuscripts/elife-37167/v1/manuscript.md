@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.37167.001 Each taste modality is generally encoded by a single, molecularly defined, population of sensory cells. However, salt stimulates multiple taste pathways in mammals and insects, suggesting a more complex code for salt taste. Here, we examine salt coding in Drosophila . After creating a comprehensive molecular map comprised of five discrete sensory neuron classes across the fly labellum, we find that four are activated by salt: two exhibiting characteristics of ‘low salt’ cells, and two ‘high salt’ classes. Behaviorally, low salt attraction depends primarily on ‘sweet’ neurons, with additional input from neurons expressing the ionotropic receptor IR94e. High salt avoidance is mediated by ‘bitter’ neurons and a population of glutamatergic neurons expressing Ppk23. Interestingly, the impact of these glutamatergic neurons depends on prior salt consumption. These results support a complex model for salt coding in flies that combinatorially integrates inputs from across cell types to afford robust and flexible salt behaviors.
+Each taste modality is generally encoded by a single, molecularly defined, population of sensory cells. However, salt stimulates multiple taste pathways in mammals and insects, suggesting a more complex code for salt taste. Here, we examine salt coding in Drosophila. After creating a comprehensive molecular map comprised of five discrete sensory neuron classes across the fly labellum, we find that four are activated by salt: two exhibiting characteristics of ‘low salt’ cells, and two ‘high salt’ classes. Behaviorally, low salt attraction depends primarily on ‘sweet’ neurons, with additional input from neurons expressing the ionotropic receptor IR94e. High salt avoidance is mediated by ‘bitter’ neurons and a population of glutamatergic neurons expressing Ppk23. Interestingly, the impact of these glutamatergic neurons depends on prior salt consumption. These results support a complex model for salt coding in flies that combinatorially integrates inputs from across cell types to afford robust and flexible salt behaviors.
 
 ## Introduction
 
@@ -31,6 +31,14 @@ Although there is considerable debate about modes of central taste coding, there
 
 The Drosophila labellum contains three types of gustatory sensilla, each of which harbors 2–4 gustatory receptor neurons (GRNs) (Singh, 1997; Stocker, 1994)(Figure 1A). Short (S-type) and long (L-type) sensilla have four molecularly and physiologically distinct GRNs, while intermediate (I-type) sensilla have only two (Freeman and Dahanukar, 2015; Scott, 2018; Stocker, 1994). Extracellular ‘tip-recordings’ of different sensilla have identified four GRN types: a water (W) cell that responds to low osmolarity; a sugar (S) cell that responds to sweet compounds; a low salt (L1) cell that is sodium-specific; and a high salt (L2) cell that responds to high ionic concentrations (>250 mM) (Fujishiro et al., 1984; Hiroi et al., 2002; Ishimoto and Tanimura, 2004). S- and L-type sensilla are thought to have one of each GRN type, with S-type L2 cells responding to bitter compounds in addition to high salt (Meunier et al., 2003)(Figure 1B). I-type sensilla were shown to have an S/L1 hybrid cell that responds to sugars and low salt, and an L2 cell that responds to bitters and high salt (Hiroi et al., 2004)(Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig1-v1.jpg)
+
+**Figure 1.:** (A) A schematic of sensillum identities in the fly labellum. (B) A summary of how GRN identities are currently viewed across the three sensillum types, with each color representing a GRN class with its most notable molecular label (if known) and its ascribed response properties. (C–H) Single labellar palps immunolabelled for VGlut-Gal4 driving UAS-tdTomato (magenta) alone (C) or in combination with LexAop-CD2::GFP (green) under the control of ChAT-LexA (D), Ppk28-LexA (E), Gr64f-LexA (F), Gr66a-LexA (G), or Ppk23-LexA (H). (I) Ppk23-LexA (green) and Gr66a-Gal4 (magenta) label partially overlapping populations. Arrows indicate sensilla where two Ppk23 GRNs exist, one of which co-expresses Gr66a. (J–K) Ppk23 subpopulations displayed by restricting Ppk23-Gal4 expression with VGlut-Gal80 (J), or Gr66a-LexA and LexAop-Gal80 (K). (L–N) IR94e-Gal4 labellum expression (magenta), co-labelled with Ppk28-LexA (L), Gr64f-LexA (M), and Ppk23-LexA (N). (O) Summary of newly defined GRN types following our mapping experiments. (P) Detailed map of each sensillum. Colors of ‘+' in chart indicate cell type. Grey denotes unknown identity. The VGlut +GRNs observed in I-type sensilla were sporadic and small, which is why they are not considered in the summary.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Labellum expression of Ppk23-Gal4 restricted with ChAT-Gal80. Arrow indicates an S-type sensillum with two Ppk23 +GRNs, indicating incomplete elimination of Ppk23chat expression. (B) Ppk23-Gal4 (magenta) and Ppk23-LexA (green) label nearly identical labellar GRN populations. (C–F) IR76b-Gal4 expression (magenta) in labella co-labelled with markers for different GRN populations (green): Ppk28-LexA (C), Gr64f-LexA (D), Gr66a-LexA (E), and Ppk23-LexA (F). (G) IR94e projections to the brain revealed by IR94e-Gal4 driving UAS-CsChrimson (green). Neuropil is labelled with nc82 (magenta).
+
 The early physiological recordings have been mostly borne out by molecular characterization of GRN types (Freeman and Dahanukar, 2015; Scott, 2018)(Figure 1B). S- and L-type sensilla each have a single GRN that expresses the low osmolarity sensor Pickpocket28 (Ppk28) and corresponds to the W cell (Cameron et al., 2010; Chen et al., 2010; Inoshita and Tanimura, 2006). The S cell is labelled by the sugar receptor Gr64f, along with other members of the gustatory receptor (GR) family (Dahanukar et al., 2007; Fujii et al., 2015; Jiao et al., 2007; Slone et al., 2007; Thorne et al., 2004; Wang et al., 2004). Similarly, Gr66a is co-expressed with other Grs in a single bitter responsive neuron per S-type and I-type sensillum, corresponding to the L2 cell (Marella et al., 2006; Thorne et al., 2004; Wang et al., 2004; Weiss et al., 2011). The degenerin/epithelial sodium channel (Deg/ENaC) family member Ppk23, which is required for pheromone detection in leg gustatory sensilla, is known to be expressed in a labellar neuron population that partially overlaps with Gr66a/bitter GRNs (Thistle et al., 2012). Ppk23 neurons are necessary for calcium avoidance, but details of the labellar Ppk23 expression map, as well as the physiology and function of these neurons are largely unknown (Lee et al., 2018).
 
 In contrast to water, sweet, and bitter tastes, the principles of peripheral salt coding in flies remain unclear. Early calcium imaging experiments revealed low salt responses in Gr5a-Gal4 GRNs, suggesting that sweet neurons may mediate low salt attraction (Marella et al., 2006). However, Gr5a-Gal4 was later shown to label additional GRNs outside the sweet class (Fujii et al., 2015), and the Ionotropic receptor (IR) family member IR76b was proposed to specifically mediate low salt taste via a dedicated low salt cell distinct from sweet GRNs (Zhang et al., 2013). This view was challenged by the recent demonstration that IR76b is also required for high salt taste, raising questions about its utility as a marker for one defined GRN population (Lee et al., 2017). Moreover, although Gr66a GRNs showed calcium responses to high salt concentrations and electrophysiology suggested that bitter and high salt are encoded by the same sensory neurons, genetically eliminating these cells left behavioral aversion to high salt largely intact (Marella et al., 2006; Wang et al., 2004).
@@ -39,7 +47,7 @@ Here, we probe the logic of salt coding across the labellum by systematically ch
 
 ## Results
 
-## A comprehensive map of GRN classes in the labellum
+### A comprehensive map of GRN classes in the labellum
 
 Although several studies have mapped the expression of different receptors across the labellum (Freeman and Dahanukar, 2015), a comprehensive map covering all GRN types was still lacking. We began by asking whether the vesicular glutamate transporter (VGlut) may define a functionally distinct population of GRNs. An enhancer trap upstream of VGlut, OK371-Gal4, labels an uncharacterized population of putatively glutamatergic neurons in the labellum, and a subset of pheromone-responsive GRNs in the legs (Kallman et al., 2015; Mahr and Aberle, 2006). VGlutMI04979-Gal4, which is a gene-trap inserted within a VGlut exon, showed expression in a single cell per S-type and L-type sensillum in the labellum (Figure 1C). These cells do not overlap with those expressing a similar gene trap for choline acetyltransferase (ChAT), supporting the idea that VGlutMI04979-Gal4 labels a bona fide population of glutamatergic GRNs (Figure 1D).
 
@@ -47,27 +55,63 @@ Co-labelling of VGlutMI04979-Gal4 with LexA reporters for known sensory neuron p
 
 Our analysis of Ppk23 expression nearly completed the labellar GRN map: s-type sensilla generally have one Ppk28 (water), one Gr64f (sweet), one Gr66a (bitter, some of which are Ppk23chat), and one Ppk23glut GRN; I-type sensilla have one Gr64f and one Gr66a GRN; and L-type sensilla have one Ppk28, one Gr64f, one Ppk23glut, and one unidentified GRN that has been proposed to express IR76b and respond to low salt concentrations (Freeman and Dahanukar, 2015; Zhang et al., 2013). To identify a marker for the last GRN class in L-type sensilla, we first examined IR76b. However, IR76b-Gal4 is expressed in many neurons from all four known classes of labellar GRNs, limiting its utility as a marker (Figure 1—figure supplement 1C–F). We therefore visually screened the Vienna Tile (VT) and Janelia Rubin Gal4 collections for lines that sparsely label GRN projections in the brain, and identified VT046252-Gal4, which drives Gal4 expression under the control of the genomic region upstream of the IR94e locus. Because the labellar projections to the subesophageal zone (SEZ) labeled by VT046252-Gal4 (Figure 1—figure supplement 1G) appear identical to those of a previously published reporter for IR94e expression (Koh et al., 2014), we will henceforth simply refer to it as IR94e-Gal4. IR94e-Gal4 is expressed in one cell per L-type sensillum, and does not overlap with Ppk28, Gr64f, or Ppk23 (Figure 1L–N). This driver is therefore specific for the fourth GRN class found in L-type sensilla and completes our molecular map of the labellum (Figure 1O–P).
 
-## All labellar GRN classes respond to salt
+### All labellar GRN classes respond to salt
 
 With a complete labellar GRN map in hand, we examined the salt responses across all identified GRN classes. We expressed GCaMP6f under the control of each GRN class-specific Gal4 line and performed imaging of GRN axon terminals in the SEZ while stimulating the labellum with a series of tastants (Figure 2A–D). As expected, known GRN classes responded strongly to their cognate modality – Ppk28 to water, Gr64f to sugar (sucrose), and Gr66a to bitter (lobeline) (Figure 2C–D). As previously demonstrated, Ppk28 neurons show dose-dependent inhibition by salt, as with any osmolyte (Cameron et al., 2010). In contrast, Gr64f and Gr66a both showed dose-dependent excitation by salt, with Gr64f GRNs activated at a lower threshold. Moreover, Gr64f responses were sodium-specific, while Gr66a also responded to potassium chloride (Figure 2C–D). These results are consistent with Gr64f operating as a ‘low salt’ cell type, and Gr66a acting as a ‘high salt’ cell type.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of calcium imaging preparation. Taste neurons are stimulated on the proboscis, while GCaMP6f fluorescence is recorded at the synaptic terminals in the SEZ. (B) Representative heat map showing activation of Ppk23 GRNs with 1 M NaCl. (C) GCaMP6f fluorescence changes over time, following stimulation of each GRN class with the indicated tastants. Lines and shaded regions represent mean ±SEM, with stimulation occurring at 5 s. In each case, UAS-GCaMP6f is expressed under the control of the indicated GRN-Gal4, with the exception of Ppk28, which is from Ppk28-LexA and LexAop-GCaMP6f. (D) Peak fluorescence changes during each stimulation. Bars represent mean ±SEM. n = 8 – 37. Open circles indicate values that were higher than the y-axis maximum. Asterisks indicate significant difference from water by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Time curves of GCaMP6f signal in IR94e GRNs following stimulation with indicated tastants. Lines and shaded regions indicate mean ±SEM. (B) Peak changes during stimulation of IR94e neurons with each tastant. Bars represent mean ±SEM, n = 29. Asterisks indicate significant difference from water by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Time curves of GCaMP6f activation in Ppk23 GRNs following stimulation with 1 M solutions of various salts and sucrose. Lines and shaded regions indicate mean ±SEM. (B) Peak changes during stimulation with each tastant. Bars represent mean ±SEM, n = 15. Asterisks indicate significant difference from water by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001. (C) Time curves of GCaMP6f activation in Ppk23 GRNs following stimulation with male or female pheromone mixtures. Lines and shaded regions indicate mean ±SEM. Female pheromone mixture is 7,11 HD plus 7,11 ND; male mixture is 7 T and cVA. (D) Peak changes during stimulation with each pheromone mix. Bars represent mean ±SEM, n = 9–10. Asterisks indicate significant difference from vehicle stimulations by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
 
 Strikingly, we found that the two relatively uncharacterized labellar GRN types – IR94e and Ppk23 – also showed salt-evoked activity (Figure 2C–D). IR94e displayed weak activation by 50 mM NaCl, but no responses to higher concentrations. Further testing of different salts at 100 mM revealed sodium-selective tuning, indicating that IR94e labels a second low salt cell type (Figure 2—figure supplement 1A–B). The weak responses in IR94e neurons suggest a limited role in salt coding, but it is possible that they account for the previously observed peak response to low salt in L-type sensilla (Zhang et al., 2013). On the other hand, Ppk23 neurons showed very strong dose-dependent salt responses that were ion non-selective. In addition to sodium chloride, we observed robust activation by 1 M solutions of potassium chloride, sodium bromide, potassium bromide, cesium chloride, and calcium chloride (Figure 2—figure supplement 2A–B). As confirmation that the observed activity is salt-evoked and not a response to high osmolality, we found that Ppk23 GRNs do not respond to 1 M concentrations of sucrose (Figure 2—figure supplement 2A–B).
 
 Since Ppk23 neurons on the leg are known to sense pheromones, we also tested labellar Ppk23 GRN responses to male and female cuticular hydrocarbons. We observed only very weak activation of Ppk23 neurons in female flies to a mixture of two male pheromones, and no significant responses in male flies (Figure 2—figure supplement 2C–D). Together, these data suggest that a primary function of labellar Ppk23 GRNs is to mediate a high salt response, and position Ppk23 and Gr66a as markers of two high salt GRN classes.
 
-## Functional subdivision of Ppk23 GRNs
+### Functional subdivision of Ppk23 GRNs
 
 Our expression mapping revealed that Ppk23 GRNs encompass two subsets based on neurotransmitter expression: Ppk23chat and Ppk23glut. Given that Ppk23chat GRNs also express Gr66a, we suspected that this subpopulation may confer bitter responses to the Ppk23 population when measured as a whole. Although we did not observe Ppk23 activation in response to 0.3 mM lobeline (Figure 2C–D), we did see strong responses to caffeine (Figure 3A). Interestingly, we observed a marked difference in the synaptic calcium signals in response to salt and bitter stimuli. While salt stimulation of Ppk23 GRNs resulted in predominantly lateral activation of Ppk23 projections, bitter stimulation activated medial ring-like projections characteristic of Gr66a (Figure 3A)(Kwon et al., 2014; Thorne et al., 2004; Wang et al., 2004). These activation patterns matched closely with the projections of the Ppk23glut and Ppk23chat subsets, revealed by restricting Ppk23-Gal4 activity with Gr66a-LexA and LexAop-Gal80 (Ppk23glut) or VGlut-Gal80 (Ppk23chat)(Figure 3B). This suggests that Ppk23glut and Ppk23chat both respond to salt, but that only Ppk23chat responds to bitter compounds.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative heat maps showing the activation Ppk23 GRNs in a single fly stimulated with 1 M NaCl and 100 mM caffeine. Salt primarily results in lateral activation, while bitter activates medial projections. (B) The projections of Ppk23 subsets targeting the SEZ, as revealed by immunofluorescent detection of GFP (green). Neuropil is labeled by nc82 (magenta). The full Ppk23 population targets both medial and lateral regions (left panel). Ppk23glut GRNs, revealed by restriction of Ppk23-Gal4 with Gr66a-LexA and LexAop-Gal80, target only lateral areas (middle panel). Ppk23chat projections, revealed by restriction of Ppk23-Gal4 with VGlut-Gal80, project to medial targets (right panel). (C) GCaMP6f fluorescence changes over time, following stimulation of each Ppk23 subset with the indicated tastants. Each fly has Ppk23-Gal4 driving UAS-GCaMP6f, restricted by either Gr66a-LexA and LexAop-Gal80 (top row) or Vglut-Gal80 (bottom row). Lines and shaded regions represent mean ±SEM, with stimulation occurring at 5 s. (D) Peak fluorescence changes during each stimulation. Bars represent mean ±SEM, n = 10–17. Asterisks indicate significant difference from water by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GCaMP6f expression was primarily restricted to Ppk23glut GRNs using Ppk23-Gal4 in combination with ChAT-Gal80. Lines and shaded regions represent mean ±SEM of responses over time, with stimulation occurring at 5 s. (B) Peak fluorescence changes during each stimulation. Bars represent mean ±SEM, n = 17. Asterisks indicate significant difference from water by one-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
 
 To confirm this and reveal any functional differences in salt coding between the Ppk23 subpopulations, we measured the tuning of Ppk23glut and Ppk23chat using calcium imaging. As expected, Ppk23chat, but not Ppk23glut, GRNs exhibited bitter responses; however, both subpopulations showed strong dose-dependent excitation by salt (Figure 3C–D). The salt responses in Ppk23glut GRNs appeared smaller than those of Ppk23chat, but we suspected this was due to very low GCaMP6f expression in Ppk23glut, which reduced the signal-to-noise in those measurements. We therefore repeated the Ppk23glut imaging by restricting Ppk23-Gal4 expression with ChAT-Gal80. Consistent with the imperfect restriction we observed in the labellum (Figure 1—figure supplement 1A), these flies had small, although insignificant, caffeine responses (Figure 3—figure supplement 1A–B). However, this primarily Ppk23glut population exhibited very strong activation by salt (Figure 3—figure supplement 1A–B).
 
 Taken together, our anatomical and functional studies support a salt coding model with two functionally distinct high salt GRN populations: Gr66a and Ppk23glut. We currently lack evidence of any functional distinctions between Gr66a GRNs that are positive or negative for Ppk23. Therefore, for the purposes of salt coding, we will consider Gr66a GRNs as a uniform population that includes Ppk23chat.
 
-## IR76b is necessary for low and high salt responses
+### IR76b is necessary for low and high salt responses
 
 A previous report suggested that IR76b is specifically required for low salt responses in an L-type GRN class distinct from Gr64f (Zhang et al., 2013). However, more recent evidence points to a role in both high and low salt taste (Lee et al., 2017). Since we observed widespread IR76b-Gal4 expression in many GRN classes, we sought clarity on the role of IR76b in salt taste responses across the labellum.
 
 Calcium imaging in IR76b mutants revealed that IR76b is absolutely required for salt-evoked activity in Gr64f GRNs (Figure 4A–B). By contrast, the salt responses of Gr66a GRNs were only mildly decreased in the mutants, showing that these neurons have a mostly IR76b-independent mechanism for detecting high salt. Ppk23 salt responses had a much stronger dependence on IR76b, with significantly decreased peak values, compared to controls, at all concentrations tested (Figure 4—figure supplement 1A–B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig4-v1.jpg)
+
+**Figure 4.:** (A) GCaMP6f fluorescence changes over time for each indicated GRN type, following stimulation with the denoted tastants. Black lines are for control genotypes (IR76b1/+ background), red lines for IR76b1/IR76b2 mutants. ‘20%’ scale bar refers to all curves except for the Gr66a caffeine curves, which are scaled by the ‘60%’ bar. For Ppk23glut, GCaMP6f was expressed under the control of Ppk23-LexA, but only the lateral regions corresponding to Ppk23glut projections were quantified. The pre-stimulus and post-stimulus periods were truncated in all curves to more clearly illustrate stimulus phase. (B) Peak fluorescence changes during each stimulation. Bars represent mean ±SEM, n = 15 for each stimulus. Filled grey circles (control), open red circles (IR76b mutants), and filled red circles (cell-specific IR76b rescue in imaged GRN population) indicate values for individual replicates. Asterisks indicate significant difference between control and mutant or mutant and rescue responses for each stimulus by two-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001. (C) Representative heat maps of salt-evoked activity in Ppk23 neurons from control (top) and IR76b mutant (bottom) animals. Activation is predominantly lateral in controls and medial in mutants. Dotted line demarks representative area quantified to measure Ppk23glut-specific response (see Materials and methods). (D) Low salt attraction of IR76b mutants, heterozygous controls, and cell-specific rescue of IR76b in Gr64f sweet neurons. Preference measured in binary choice assay with 50 mM NaCl plus 2 mM sucrose versus 2 mM sucrose alone. Bars represent mean ±SEM. n = 30 – 40 groups of 10 flies each, with filled grey circles (controls), open red circles (IR76b mutants), or filled red circles (rescues) indicating values for individual groups. Asterisks denote significance by one-way ANOVA with Bonferroni post hoc test, ***p<0.001. (E) High salt avoidance of IR76b mutants, heterozygous controls, and cell-specific rescue of IR76b in Gr66a bitter neurons or Ppk23 neurons. Preference measured in binary choice assay with 250 mM NaCl plus 25 mM sucrose versus 5 mM sucrose alone. Bars represent mean ±SEM. n = 22 – 52 groups of 10 flies each, with filled grey circles (controls), open red circles (IR76b mutants), or filled red circles (rescues) indicating values for individual groups. Asterisks denote significance by one-way ANOVA with Bonferroni post hoc test, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) GCaMP6f fluorescence changes over time for full Ppk23 projections. Black lines are for control genotypes (IR76b1/+ background), red lines for IR76b1/IR76b2 mutants. (B) Peak fluorescence changes during each stimulation. Bars represent mean ±SEM, n = 15. Filled grey circles (control), open red circles (IR76b mutants), and filled red circles indicate values for individual replicates. Asterisks indicate significant difference between control and mutant responses for each stimulus by two-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Peak values of GCaMP6f fluorescence changes for each GRN type in heterozygous controls (filled grey circles), IR25a mutants (open red circles), and rescues (filled red circles), following stimulation with the indicated tastants. Bars represent mean ±SEM, n = 15. Asterisks indicate significant difference between control and mutant or mutant and rescue responses for each stimulus by two-way ANOVA with Bonferroni post hoc test, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Response curves (A) and peak values (B) for Ppk23 calcium responses in a Ppk23, Ppk29 mutant background. Values represent mean ±SEM, n = 14. Asterisks denote significant different from water stimulus by one-way ANOVA with Bonferroni post hoc test. ***p<0.001.
 
 Given the IR76b-independent salt responses in Gr66a GRNs, it was unsurprising that IR76b mutants showed some Ppk23 GRN activity in the medial region targeted by Ppk23chat (Gr66a-positive) projections (Figure 4C). We therefore reanalyzed the Ppk23 dataset by quantifying fluorescence change in a region-of-interest restricted to the lateral areas characteristic of Ppk23glut projections (Figures 3B and 4C). IR76b mutants exhibited essentially no salt-evoked activity in this target region, suggesting that IR76b is necessary for both the sodium and potassium salt responses of the Ppk23glut population (Figure 4A–B).
 
@@ -75,9 +119,25 @@ Since IR25a is expressed in GRNs and thought to be another broadly acting co-rec
 
 The fact that IR76b mutants lack salt responses in the primary low salt GRN class and one of two high salt GRN classes provides an explanation for observed defects in both low salt attraction and high salt avoidance (Lee et al., 2017; Zhang et al., 2013). Before further dissecting the cellular contributions of different GRN classes to salt behaviors, we wanted to establish behavioral assays that replicated these phenotypes. To test low salt attraction, we used a binary choice assay where flies were given the option to feed on either 50 mM salt mixed with low sugar (2 mM sucrose), or the same concentration of sugar alone (LeDue et al., 2015; Tanimura et al., 1982; Zhang et al., 2013). As previously reported, control flies are strongly attracted to the salt-containing option, while IR76b mutants lose this attraction (Figure 4D). We used a similar assay to probe high salt avoidance. In this case, control flies avoid 250 mM salt mixed with 25 mM sucrose in favor of plain sucrose at a lower concentration (5 mM). Much like their defects in low salt attraction, IR76b mutants are severely impaired in high salt aversion (Figure 4E).
 
-## The cellular basis for salt attraction and avoidance
+### The cellular basis for salt attraction and avoidance
 
 To probe the cellular basis of salt behaviors, we conditionally silenced different GRN populations using Kir2.1 expression temporally restricted with Gal80ts. As expected, both Ppk23glut and Ppk28 GRNs were dispensable for low salt attraction (Figure 5A). Focusing on the two GRN classes with low salt tuning properties, we found that Gr64f GRN activity is necessary for attraction to 50 mM NaCl, but expression of Kir2.1 in IR94e GRNs had no effect (Figure 5A). Further, silencing Gr64f and IR94e neurons together resulted in behavior indistinguishable from Gr64f silencing alone. Puzzled by the apparent lack of a role for IR94e GRNs in salt attraction, we expressed a different effector – tetanus toxin (TNT) – in these neurons without any temporal restriction with Gal80ts, and observed reduced low salt attraction (Figure 5—figure supplement 1). Moreover, attraction was virtually eliminated when TNT was expressed in both Gr64f and IR94e GRNs (Figure 5—figure supplement 1). Thus, we conclude that sweet GRNs likely mediate the bulk of low salt attraction, with additional input from the IR94e class.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig5-v1.jpg)
+
+**Figure 5.:** (A) Low salt attraction in binary choice assay, following silencing of different GRN populations with Kir2.1. Positive values indicate preference for 50 mM NaCl plus 2 mM sucrose; negative values indicate preference for 2 mM sucrose alone. Bars represent mean ±SEM. n = 40 groups of 10 flies each for all genotypes except the UAS-Kir2.1/+ control, where n = 200. Filled grey circles indicate values for individual groups. Asterisks denote significant difference from both UAS-Kir2.1/+ and corresponding Gal4/+ controls by one-way ANOVA with Bonferroni post hoc test, ***p<0.001. (B) Low salt attraction tested in the absence of sugar. Bars represent mean ±SEM. n = 40 groups of 10 flies each. Asterisks denote significant difference from both UAS-Kir2.1/+ and corresponding Gal4/+ controls by one-way ANOVA with Bonferroni post hoc test, ***p<0.001. (C–D) Requirements of aversive GRNs in high salt avoidance under salt fed (C) or salt deprived (D) conditions. Positive values indicate preference for 250 mM NaCl plus 25 mM sucrose; negative values indicate preference for 5 mM sucrose. Bars represent mean ±SEM. n = 25 (C) or 30 (D) groups of 10 flies each for all genotypes except the UAS-Kir2.1/+ control in (D), where n = 60. Filled grey circles indicate values for individual groups. Asterisks denote significant difference from both UAS-Kir2.1/+ and corresponding Gal4/+ controls by one-way ANOVA with Bonferroni post hoc test, ***p<0.001. For all panels, ‘Ppk23glut-Gal4’ indicates Ppk23-Gal4 with Gr66a-LexA and LexAop-Gal80; and ‘>' denotes indicated Gal4 driving UAS-Kir2.1 with temporal restriction by tub-Gal80ts.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Low salt attraction in binary choice assay, following silencing of different GRN populations with Tetanus toxin (TNT). Positive values indicate preference for 50 mM NaCl plus 2 mM sucrose; negative values indicate preference for 2 mM sucrose alone. Bars represent mean ±SEM. n = 40 groups of 10 flies each for all genotypes. Filled grey circles indicate values for individual groups. Asterisks denote significant difference from UAS-TNT/+ and corresponding Gal4/+ and impTNT controls by one-way ANOVA with Bonferroni post hoc test, ***p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) High salt inhibition of PER in salt fed (left) or salt deprived (right) flies following silencing of Ppk23glut (A) or Gr66a (B) GRNs. Labellar PER was measured to 100 mM sucrose plus the indicated salt. Flies were either salt fed or salt deprived prior to the experiment. Values indicate mean ±SEM. n = 4 groups of 10 flies for each genotype. Asterisks denote significance from both control groups by two-way ANOVA with Bonferroni post hoc test, **p<0.01, ***p<0.001. ‘Ppk23glut-Gal4’ indicates Ppk23-Gal4 with Gr66a-LexA and LexAop-Gal80; and ‘>' denotes Gal4 driving UAS-Kir2.1 with temporal restriction by tub-Gal80ts.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** GCaMP imaging of Ppk23glut GRN responses in flies that have been salt fed (filled grey circles) or salt deprived (open grey circles). Bars represent mean ±SEM of peak fluorescence changes during each stimulation, n = 13 – 15. No significant differences were observed between the fed and deprived groups.
 
 Interestingly, Kir2.1 expression in IR76b-Gal4 GRNs had a similar effect to Gr64f silencing, suggesting that Gr64f mediates the bulk of IR76b-dependent low salt attraction. However, this phenotype appears less severe than that of IR76b mutants, which display mild low salt avoidance (Figure 4D). This could reflect incomplete silencing from Kir2.1, as suggested by the lack of observable effects in IR94e GRNs, or weak IR76b-independent low salt responses in Gr66a (bitter/high salt) GRNs that further reduce salt preference in IR76b mutants. In any case, restoring IR76b selectively to Gr64 neurons rescues low salt attraction in IR76b mutants, further supporting the role of sweet neurons in salt attraction (Figure 4D).
 
@@ -85,7 +145,7 @@ Since Gr64f neurons are necessary for sugar detection, we sought verification th
 
 We then tested the role of each high salt GRN class in high salt avoidance and found that Gr66a and Ppk23glut GRNs are both necessary for this behavior (Figure 5C). To confirm the novel role for Ppk23glut in behavioral salt avoidance, we tested its impact on the Proboscis Extension Reflex (PER), which is an acute measure of gustatory palatability. Consistent with our binary choice assay, silencing Ppk23glut GRNs severely impaired the inhibition of PER by high salt (Figure 5—figure supplement 2A). Moreover, rescue of IR76b expression in either Gr66a or Ppk23glut GRNs partially restores high salt avoidance to IR76b mutants (Figure 4E).
 
-## Ppk23glut mediates state-dependent modulation of salt behaviors
+### Ppk23glut mediates state-dependent modulation of salt behaviors
 
 Fly gustatory responses are frequently modulated by need for specific nutrients (Kim et al., 2017). However, modulating salt behaviors presents a complex problem because two of the three GRN classes exhibiting strong salt-evoked activity – Gr64f (sweet) and Gr66a (bitter) – have prominent roles in the detection of other modalities. These are therefore poor candidates for need-dependent modulation of salt responses, unless plasticity is achieved by regulating a salt-specific receptor. We therefore speculated that Ppk23glut GRNs, which to our knowledge specifically respond to salt, may tune the fly’s salt behaviors based on need.
 
@@ -97,7 +157,7 @@ To further explore this idea, we built a closed-loop system for real-time optoge
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37167/elife-37167-fig6-v1.jpg)
 
-**Figure 6.:** glut.(A) Schematic of closed-loop optogentic feeding assay, called the ‘sip triggered optogenetic behavior enclosure’ (STROBE). Each food is presented as a small drop containing 1% agar. Interactions with Food 1 that are recorded as ‘sips’ trigger illumination of an LED in the roof of the enclosure, above Food 1. Light triggering is temporally coupled to sip onset with minimal latency. Sips on Food 2 are recorded, but no light is triggered. (B) STROBE results for optogenetic stimulation of each salt-responsive GRN class. CsChrimson was expressed in each indicated GRN class, and the preference for Food 1 (light triggering) vs Food 2 (no light triggered) is plotted. Food 1 and Food 2 were otherwise the same in each experiment: plain agar (‘water’) for Gr64f and IR94e activation, and 1M sucrose for Gr66a and Ppk23glut activation. 1 M sucrose was used for aversive GRN tests because we observe more robust avoidance in this context. Bars represent mean ±SEM. Colored bars represent flies fed retinal (active CsChrimson) and gray bars represent flies not fed retinal (inactive controls). n = 19 – 24 for Gr64f, IR94e and Gr66a experiments, and n = 34 – 42 for Ppk23glut experiment. Filled (retinal fed) or open (not retinal fed) circles indicate values for individual flies. Asterisks indicate significant differences between retinal and no retinal groups for each condition by two-way ANOVA with Bonferroni post hoc test, ***p<0.001. Asterisks between fed and deprived conditions for Ppk23glut experiment represent a significant interaction between salt feeding and ±retinal conditions, ***p<0.001.10.7554/eLife.37167.023Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schematic of closed-loop optogentic feeding assay, called the ‘sip triggered optogenetic behavior enclosure’ (STROBE). Each food is presented as a small drop containing 1% agar. Interactions with Food 1 that are recorded as ‘sips’ trigger illumination of an LED in the roof of the enclosure, above Food 1. Light triggering is temporally coupled to sip onset with minimal latency. Sips on Food 2 are recorded, but no light is triggered. (B) STROBE results for optogenetic stimulation of each salt-responsive GRN class. CsChrimson was expressed in each indicated GRN class, and the preference for Food 1 (light triggering) vs Food 2 (no light triggered) is plotted. Food 1 and Food 2 were otherwise the same in each experiment: plain agar (‘water’) for Gr64f and IR94e activation, and 1M sucrose for Gr66a and Ppk23glut activation. 1 M sucrose was used for aversive GRN tests because we observe more robust avoidance in this context. Bars represent mean ±SEM. Colored bars represent flies fed retinal (active CsChrimson) and gray bars represent flies not fed retinal (inactive controls). n = 19 – 24 for Gr64f, IR94e and Gr66a experiments, and n = 34 – 42 for Ppk23glut experiment. Filled (retinal fed) or open (not retinal fed) circles indicate values for individual flies. Asterisks indicate significant differences between retinal and no retinal groups for each condition by two-way ANOVA with Bonferroni post hoc test, ***p<0.001. Asterisks between fed and deprived conditions for Ppk23glut experiment represent a significant interaction between salt feeding and ±retinal conditions, ***p<0.001.
 
 As expected, sip-induced triggering of Gr64f GRN activation makes a tasteless food source attractive compared to the same food without light stimulation, and this effect is independent of salt deprivation (Figure 6B). Similarly, Gr66a activation is strongly aversive for both salt fed and salt deprived flies. Consistent with their lack of a strong phenotype when silenced, activation of IR94e neurons did not produce a detectable phenotype in either condition. However, stimulating Ppk23glut GRNs is aversive, but only when flies have been pre-fed on a salt-containing diet (Figure 6B). This supports a model where salt need modulates salt avoidance downstream of Ppk23glut GRN activation.
 
@@ -111,7 +171,7 @@ Our results suggest a complex model for how the fly peripheral gustatory system 
 
 Prior salt coding models have primarily relied on correlations between neural activity and behavioural responses to different salt stimuli, as well as changes to those properties in mutants that may have wide ranging effects (Ishimoto and Tanimura, 2004; Lee et al., 2017; Zhang et al., 2013). These studies led to the important idea that there are distinct low salt and high salt cells present, and that at increasing salt concentrations, the aversive high salt cell progressively dominates over the attractive low salt cell. However, without the molecular tools to identify and manipulate individual GRN classes, the identity and number of salt-responsive cell types were unclear. Our examination of salt coding across a comprehensive set of molecularly defined GRN classes provides new insight into the complexity of salt coding in flies, but is not without limitations. Most notably, we cannot detect possible heterogeneity within defined GRN classes. For example, a Gr64f (sweet) neuron is present in each bristle of all sensillum types. Because we looked at the population as a whole, we cannot confidently conclude that every Gr64f cell acts as a low salt cell; we know only that there are sodium-specific salt responses from the Gr64f population, and that this population drives low salt attraction.
 
-## Ppk23 labels a new high salt cell
+### Ppk23 labels a new high salt cell
 
 Electrophysiological recordings of individual labellar taste sensilla identified high salt responses in the bitter-sensing neurons of S- and I-type sensilla, and previous GRN calcium imaging confirmed that Gr66a neurons respond to 1 M NaCl and KCl (Marella et al., 2006; Meunier et al., 2003). However, two key results suggested that bitter GRNs did not account for all high salt taste. First, high salt neurons have been identified in L-type sensilla (which don’t have Gr66a neurons) via tip recordings, although this has subsequently been debated (Hiroi et al., 2002; Ishimoto and Tanimura, 2004; Zhang et al., 2013). Second, genetically ablating Gr66a GRNs did not block the inhibition of PER by high salt (Wang et al., 2004). The existence of Ppk23glut high salt cells likely explains both of these observations and provides a mechanism by which flies can specifically modulate their salt behavior in response to need.
 
@@ -121,7 +181,7 @@ Although Ppk23glut defines a novel high salt cell, it is important to note that 
 
 In contrast to the strong salt responses in Ppk23glut cells, the other uncharacterized GRN class we identified, IR94e, displayed only weak salt-evoked activity. We therefore expect that this class primarily responds to other, yet unidentified, taste ligands. Given the lack of strong effects we observe upon activation of IR94e GRNs in the STROBE, we also suspect that the behavioral impact of IR94e activation is, like Ppk23glut, state- or context-dependent.
 
-## IR76b has widespread roles in chemosensation
+### IR76b has widespread roles in chemosensation
 
 To date, IR76b has been shown to be necessary for gustatory responses to low salt, high salt, calcium, acids, amino acids, fatty acids, and polyamines (Ahn et al., 2017b; Chen and Amrein, 2017; Hussain et al., 2016b; Lee et al., 2017; Zhang et al., 2013). Consistent with these widespread roles in the taste system, we find expression of IR76b-Gal4 in every GRN type tested. Nonetheless, we felt it important to clarify the role of IR76b in salt taste, given the apparent complexities in salt responses across labellar GRN types, and the previous demonstration that IR76b can function as a sodium leak channel (Zhang et al., 2013).
 
@@ -129,7 +189,7 @@ We find that Gr64f salt responses are completely dependent on IR76b, consistent 
 
 Recently, Ppk23 GRNs were identified as underlying IR76b-dependent calcium taste avoidance (Lee et al., 2018). Although it isn’t clear whether Ppk23glut or Ppk23chat (or both) subpopulations are responsible, our results indicate that this effect is not specific to calcium, but rather a general salt avoidance mechanism. Indeed, Ppk23 GRNs respond to high concentrations of all salts tested. Moreover, we find that IR25a, which was implicated in Ppk23-mediated calcium taste (Lee et al., 2018), is necessary for salt responses in Gr64f and Ppk23glut GRNs, similar to the requirements for IR76b. This stands in contrast to results reported by Zhang et al. (2013), which suggested that IR25a did not play a role in sodium taste. The similar requirements for IR76b and IR25a also suggest that these two receptors may act in a complex to mediate salt taste, which is consistent with previous evidence that IR25a is a broadly expressed coreceptor (Ahn et al., 2017a; Benton et al., 2009; Cameron et al., 2010; Chen and Amrein, 2017; Lee et al., 2018).
 
-## Modulation of salt avoidance by internal state
+### Modulation of salt avoidance by internal state
 
 Changes in gustatory sensitivity based on internal state are a widespread feature of the fly taste system: starvation potentiates sweet GRN sensitivity and suppresses bitter GRN responses; mating increases taste peg GRN sensitivity to polyamines and behavioral sensitivity to low salt in females; and protein deprivation sensitizes taste peg GRNs to yeast and increases behavioral sensitivity to amino acids (Hussain et al., 2016a; Inagaki et al., 2012; Inagaki et al., 2014; LeDue et al., 2016; Steck et al., 2018; Toshima and Tanimura, 2012; Walker et al., 2015). Although modulation of salt taste has not been previously examined in flies, salt depletion in humans increases salt palatability (Beauchamp et al., 1990). In line with all these results, we observe significant modulation of fly salt taste behavior by salt deprivation.
 
@@ -139,19 +199,956 @@ Thus, the fly taste system appears to encode salt as a complex mixture of attrac
 
 ## Materials and methods
 
-## Fly genotype table
+**Key resources table**
 
-Figure panelGenotypeFigure 1C+/+; vGlutMI04979-Gal4/+; UAS-CD8::tdTomato/+Figure 1D+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP ; UAS-CD8::tdTomato/ChATMI04508- LexA::QFADFigure 1E+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk28-LexAFigure 1F+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr64fLexAFigure 1G+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr66a-LexAFigure 1H+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexAFigure 1I+/+; Gr66a-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexAFigure 1J+/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+Figure 1KGr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f;  Ppk23-Gal4/+Figure 1L+/+; UAS-CD8::tdTomato /LexAop-CD2::GFP; IR94e-Gal4/ppk28-LexAFigure 1M+/+; UAS-CD8::tdTomato /LexAop-CD2::GFP; IR94e-Gal4/Gr64fLexAFigure 1N+/+; UAS-CD8::tdTomato/LexAop-CD2::GFP; IR94e-Gal4/ppk23-LexAFigure 1—figure supplement 1A+/+; ChATMI04508-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+Figure 1—figure supplement 1B+/+; UAS-CD8::tdTomato/LexAop-CD2::GFP; Ppk23-Gal4/Ppk23-LexAFigure 1—figure supplement 1C+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk28-LexAFigure 1—figure supplement 1D+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr64fLexAFigure 1—figure supplement 1E+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr66a-LexAFigure 1—figure supplement 1F+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexAFigure 1—figure supplement 1G+/+; UAS-CsChrimson/+; IR94e-Gal4/+Figure 2C and D+/+; LexAop-GCaMP6f/+; Ppk28-LexA/++/+; UAS-GCaMP6f/Gr64f-Gal4; +/++/+; UAS-GCaMP6f/+; IR94e-Gal4/++/+; UAS-GCaMP6f/Gr66a-Gal4; +/++/+; UAS-GCaMP6f/+; Ppk23-Gal4/+Figure 2—figure supplement 1A–D+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+Figure 2—figure supplement 2+/+; UAS-GCaMP6f/+; IR94e-Gal4/+Figure 3A+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+Figure 3B+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+Gr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f; Ppk23-Gal4/++/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+Figure 3C and DGr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f; Ppk23-Gal4/++/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+Figure 3—figure supplement 1A and B+/+; ChATMI04508-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+Figure 4A and B+/+; Gr64f-Gal4/UAS-GCaMP6f; IR76b2/++/+; Gr64f-Gal4/UAS-GCaMP6f; IR76b1/IR76b2+/+; Gr64f-Gal4, UAS-GCaMP6f/UAS-IR76b; IR76b1/IR76b2+/+; Gr66a-Gal4/UAS-GCaMP6f; IR76b2/++/+; Gr66a-Gal4/UAS-GCaMP6f; IR76b1/IR76b2+/+; Gr66a-Gal4, UAS-GCaMP6f/UAS-IR76b; IR76b1/IR76b2+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b2/++/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2+/+; UAS-GCaMP6f/UAS-IR76b; IR76b1, Ppk23-Gal4/IR76b2Figure 4C+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b2/++/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2Figure 4D+/+; +/+; IR76b1/++/+; +/+; IR76b2/++/+; +/UAS-IR76b; IR76b1/IR76b2+/+; Gr64f-Gal4/+; IR76b1/IR76b2+/+; Gr64f-Gal4/UAS-IR76b; IR76b1/IR76b2Figure 4E+/+; +/+; IR76b1/++/+; +/+; IR76b2/++/+; +/UAS-IR76b; IR76b1/IR76b2+/+; Gr66a-Gal4/+; IR76b1/IR76b2+/+; Gr66a-Gal4/UAS-IR76b; IR76b1/IR76b2+/+; +/+; Ppk23-Gal4,  IR76b1/IR76b2+/+; +/UAS-IR76b; Ppk23-Gal4, IR76b1/IR76b2Figure 4—figure supplement 1A and B+/+; Ppk23-LexA/LexAop -GCaMP6f; IR76b2/++/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2+/+; UAS-GCaMP6f/ UAS-IR76b; IR76b1, Ppk23-Gal4/IR76b2Figure 4—figure supplement 2+/+; IR25a1/+; Gr64f- Gal4/UAS-GCaMP6f+/+; IR25a1/IR25a2; Gr64f-Gal4/UAS-GCaMP6f+/+; UAS-IR25a, IR25a1/IR25a2; Gr64f-Gal4/UAS-GCaMP6f+/+; IR25a1/+; Gr66a-Gal4/UAS-GCaMP6f+/+; IR25a1/IR25a2; Gr66a-Gal4/UAS-GCaMP6f+/+; UAS-IR25a, IR25a1/IR25a2; Gr66a-Gal4/UAS-GCaMP6f+/+; IR25a1/+;  Ppk23-Gal4/UAS-GCaMP6f+/+; IR25a1/IR25a2; Ppk23-Gal4/UAS-GCaMP6f+/+; UAS-IR25a, IR25a1/IR25a2;  Ppk23-Gal4/UAS-GCaMP6fFigure 4—figure supplement 3A and BΔPpk23/ΔPpk23; ΔPpk29/ΔPpk29; Ppk23-Gal4/UAS-GCaMP6fFigure 5A+/+; +/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr64f-Gal4/+; +/++/+; Gr64f-Gal4/+; UAS-Kir2.1, tub-Gal80ts/++/+; +/+; IR94e-Gal4/++/+; +/+; IR94e-Gal4/UAS-Kir2.1, tub-Gal80tsGr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+Gr66a-LexA/+;  LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80ts+/+; +/+; Ppk28-Gal4/++/+; +/+; Ppk28-Gal4/ UAS-Kir2.1, tub-Gal80ts+/+; IR76b-Gal4/+; +/++/+; IR76b-Gal4/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr64f-Gal4/+;  IR94e-Gal4/++/+; Gr64f-Gal4/+; IR94e-Gal4/UAS-Kir2.1, tub-Gal80tsFigure 5B+/+; +/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr64f-Gal4/+; +/++/+; Gr64f-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+Figure 5C+/+; +/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr66a-Gal4/+; +/++/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+Gr66a-LexA/+;  LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80tsFigure 5D+/+; +/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr66a-Gal4/+; +/++/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80tsFigure 5—figure supplement 1+/+; UAS-impTNT/+; +/++/+; UAS-TNT/+; +/++/+; +/+; IR94e-Gal4/++/+; UAS-impTNT/+; IR94e-Gal4/++/+; UAS-TNT/+; IR94e-Gal4/++/+; Gr64f-Gal4/+; IR94e-Gal4/++/+; UAS-impTNT/Gr64f-Gal4; IR94e-Gal4/++/+; UAS-TNT/Gr64f-Gal4; IR94e-Gal4/+Figure 5—figure supplement 2AGr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80tsGr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/++/+; +/+; UAS-Kir2.1, tub-Gal80ts/+Figure 5—figure supplement 2B+/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/++/+; Gr66a-Gal4/+; +/++/+; +/+; UAS-Kir2.1, tub-Gal80ts/+Figure 5—figure supplement 3+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+ Figure 6B+/+; UAS-CsChrimson/Gr64f-Gal4; +/++/+; UAS-CsChrimson/+; IR94e-Gal4/++/+; UAS-CsChrimson/Gr66a-Gal4; +/+Gr66a-LexA/+; LexAop-Gal80/UAS-CsChrimson; Ppk23-Gal4/+
 
-## Flies
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vGlutMI04979-Gal4</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60312; RRID:BDSC_60312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ChATMI04508-Gal4</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60317; RRID:BDSC_60317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vGlutMI04979-LexA::QFAD</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60314; RRID:BDSC_60314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ChATMI04508- LexA::QFAD</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60319; RRID:BDSC_60319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vGlutMI04979-Gal80</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60316; RRID:BDSC_60316</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ChATMI04508-Gal80</td>
+      <td>Diao et al. (2015)</td>
+      <td>BDSC: 60321; RRID:BDSC_60321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ΔPpk23</td>
+      <td>Thistle et al. (2012)</td>
+      <td>Flybase: FBal0277047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ΔPpk29</td>
+      <td>Thistle et al. (2012)</td>
+      <td>Flybase: FBal0277049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr66a-LexA</td>
+      <td>Thistle et al. (2012)</td>
+      <td>Flybase: FBal0277069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk28-LexA</td>
+      <td>Thistle et al. (2012)</td>
+      <td>Flybase: FBal0277050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk23-Gal4</td>
+      <td>Thistle et al. (2012)</td>
+      <td>Flybase: FBal0277044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64fLexA</td>
+      <td>Miyamoto et al. (2012)</td>
+      <td>Flybase: FBti0168176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk23-LexA</td>
+      <td>Toda et al. (2012)</td>
+      <td>Flybase: FBst0051311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR76b-Gal4</td>
+      <td>Zhang et al. (2013)</td>
+      <td>Flybase: FBtp0085485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR76b1</td>
+      <td>Zhang et al. (2013)</td>
+      <td>Flybase: FBst0051309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR76b2</td>
+      <td>Zhang et al. (2013)</td>
+      <td>Flybase: FBst0051310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-IR76b</td>
+      <td>Zhang et al. (2013)</td>
+      <td>Flybase: FBtp0085485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR25a1</td>
+      <td>Benton et al. (2009)</td>
+      <td>Flybase: FBst0041736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR25a2</td>
+      <td>Benton et al. (2009)</td>
+      <td>Flybase: FBst0041737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-IR25a</td>
+      <td>Abuin et al., 2011</td>
+      <td>Flybase: FBst0041747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr66a-Gal4</td>
+      <td>Wang et al. (2004)</td>
+      <td>Flybase: FBtp0014660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64f-Gal4</td>
+      <td>Dahanukar et al. (2007)</td>
+      <td>Flybase: FBti0162678</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64f-Gal4</td>
+      <td>Dahanukar et al. (2007)</td>
+      <td>Flybase: FBtp0057275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ppk28-Gal4</td>
+      <td>Cameron et al. (2010)</td>
+      <td>Flybase: FBtp0054514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-CD2::GFP</td>
+      <td>Lai and Lee (2006)</td>
+      <td>Flybase: FBti0186090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>Baines et al. (2001)</td>
+      <td>Flybase: FBti0017552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tub-Gal80ts</td>
+      <td>McGuire et al. (2004)</td>
+      <td>Flybase: FBti0027797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>IR94e-Gal4</td>
+      <td>Tirián and Dickson, 2017</td>
+      <td>VDRC: v207582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 3605; RRID:BDSC_3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-Gal80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 32214; RRID:BDSC_32214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-GCaMP6f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 44277; RRID:BDSC_44277</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 42747; RRID:BDSC_42747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 52869; RRID:BDSC_52869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 55135; RRID:BDSC_55135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 28838; RRID:BDSC_28838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-impTNT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 28840; RRID:BDSC_28840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP</td>
+      <td>Abcam, Cambridge, UK,</td>
+      <td>#13970; RRID:AB_300798</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP</td>
+      <td>Rockland Immunochemicals, Pottstown, PA,</td>
+      <td>#600-401-379; RRID:AB_2209751</td>
+      <td>(1:200 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-chicken Alexa 488</td>
+      <td>Abcam</td>
+      <td>#150169; RRID:AB_2636803</td>
+      <td>(1:200 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa 647</td>
+      <td>Thermo Fisher Scientific, Waltham, MA,</td>
+      <td>#A21245; RRID:AB_2535813</td>
+      <td>(1:200 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-brp</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>#nc82; RRID:AB_2314866</td>
+      <td>(1:50 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa 568</td>
+      <td>Thermo Fisher Scientific, Waltham, MA,</td>
+      <td>#A11036; RRID:AB_10563566</td>
+      <td>(1:200 dilution)</td>
+    </tr>
+    <tr>
+      <td>Chemical  compound, drug</td>
+      <td>All trans-Retinal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#R2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#S7903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>#S7653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>#P9541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaBr</td>
+      <td>Sigma-Aldrich</td>
+      <td>#S4547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KBr</td>
+      <td>Sigma-Aldrich</td>
+      <td>#221864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CsCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>#289329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>BDH chemicals</td>
+      <td>#BDH4524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lobeline hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>#141879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C0750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7,11-heptacosadiene (7,11-HC)</td>
+      <td>Caymen chemical company</td>
+      <td>#10012567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7,11-nonacosadiene (7,11-NC)</td>
+      <td>Caymen chemical company</td>
+      <td>#9000314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-tricosene (7 T)</td>
+      <td>Caymen chemical company</td>
+      <td>#9000313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cis-vaccenyl acetate (c-VA)</td>
+      <td>Caymen chemical company</td>
+      <td>#10010101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Erioglaucine</td>
+      <td>Spectrum chemical</td>
+      <td>#FD110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amaranth</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A1016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STROBE executable</td>
+      <td>Chan, 2018a</td>
+      <td>github: https://github.com/rcwchan/STROBE_software/ (copy archived at https://github.com/elifesciences-publications/STROBE_software)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STROBE post- processing</td>
+      <td>Chan, 2018a</td>
+      <td>github: https://github.com/rcwchan/STROBE_software/ (copy archived at https://github.com/elifesciences-publications/STROBE_software)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STROBE VHDL code</td>
+      <td>Chan, 2018b</td>
+      <td>github: https://github.com/rcwchan/STROBE-fpga (copy archived at https://github.com/elifesciences-publications/STROBE-fpga)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al. (2012)</td>
+      <td>https://imagej.nih.gov/ij; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genotype table
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure panel</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1C</td>
+      <td>+/+; vGlutMI04979-Gal4/+; UAS-CD8::tdTomato/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1D</td>
+      <td>+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP ; UAS-CD8::tdTomato/ChATMI04508- LexA::QFAD</td>
+    </tr>
+    <tr>
+      <td>Figure 1E</td>
+      <td>+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk28-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1F</td>
+      <td>+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr64fLexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1G</td>
+      <td>+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr66a-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1H</td>
+      <td>+/+; vGlutMI04979-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1I</td>
+      <td>+/+; Gr66a-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1J</td>
+      <td>+/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1K</td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f;  Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1L</td>
+      <td>+/+; UAS-CD8::tdTomato /LexAop-CD2::GFP; IR94e-Gal4/ppk28-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1M</td>
+      <td>+/+; UAS-CD8::tdTomato /LexAop-CD2::GFP; IR94e-Gal4/Gr64fLexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1N</td>
+      <td>+/+; UAS-CD8::tdTomato/LexAop-CD2::GFP; IR94e-Gal4/ppk23-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1A</td>
+      <td>+/+; ChATMI04508-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1B</td>
+      <td>+/+; UAS-CD8::tdTomato/LexAop-CD2::GFP; Ppk23-Gal4/Ppk23-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1C</td>
+      <td>+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk28-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1D</td>
+      <td>+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr64fLexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1E</td>
+      <td>+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Gr66a-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1F</td>
+      <td>+/+; IR76b-Gal4/LexAop-CD2::GFP; UAS-CD8::tdTomato/Ppk23-LexA</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1G</td>
+      <td>+/+; UAS-CsChrimson/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2C and D</td>
+      <td>+/+; LexAop-GCaMP6f/+; Ppk28-LexA/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/Gr64f-Gal4; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/Gr66a-Gal4; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1A–D</td>
+      <td>+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 2</td>
+      <td>+/+; UAS-GCaMP6f/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3A</td>
+      <td>+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3B</td>
+      <td>+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3C and D</td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; vGlutMI04979-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1A and B</td>
+      <td>+/+; ChATMI04508-Gal80/UAS-GCaMP6f; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4A and B</td>
+      <td>+/+; Gr64f-Gal4/UAS-GCaMP6f; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/UAS-GCaMP6f; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4, UAS-GCaMP6f/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/UAS-GCaMP6f; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/UAS-GCaMP6f; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4, UAS-GCaMP6f/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/UAS-IR76b; IR76b1, Ppk23-Gal4/IR76b2</td>
+    </tr>
+    <tr>
+      <td>Figure 4C</td>
+      <td>+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td>Figure 4D</td>
+      <td>+/+; +/+; IR76b1/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td>Figure 4E</td>
+      <td>+/+; +/+; IR76b1/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/UAS-IR76b; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; Ppk23-Gal4,  IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/UAS-IR76b; Ppk23-Gal4, IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1A and B</td>
+      <td>+/+; Ppk23-LexA/LexAop -GCaMP6f; IR76b2/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Ppk23-LexA/LexAop-GCaMP6f; IR76b1/IR76b2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-GCaMP6f/ UAS-IR76b; IR76b1, Ppk23-Gal4/IR76b2</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 2</td>
+      <td>+/+; IR25a1/+; Gr64f- Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR25a1/IR25a2; Gr64f-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-IR25a, IR25a1/IR25a2; Gr64f-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR25a1/+; Gr66a-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR25a1/IR25a2; Gr66a-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-IR25a, IR25a1/IR25a2; Gr66a-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR25a1/+;  Ppk23-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR25a1/IR25a2; Ppk23-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-IR25a, IR25a1/IR25a2;  Ppk23-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 3A and B</td>
+      <td>ΔPpk23/ΔPpk23; ΔPpk29/ΔPpk29; Ppk23-Gal4/UAS-GCaMP6f</td>
+    </tr>
+    <tr>
+      <td>Figure 5A</td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; IR94e-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+;  LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; Ppk28-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; Ppk28-Gal4/ UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR76b-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; IR76b-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+;  IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; IR94e-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td>Figure 5B</td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5C</td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+;  LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td>Figure 5D</td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>+/+; UAS-impTNT/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-TNT/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-impTNT/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-TNT/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr64f-Gal4/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-impTNT/Gr64f-Gal4; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-TNT/Gr64f-Gal4; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2A</td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/UAS-Kir2.1, tub-Gal80ts</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2B</td>
+      <td>+/+; Gr66a-Gal4/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; Gr66a-Gal4/+; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; +/+; UAS-Kir2.1, tub-Gal80ts/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 3</td>
+      <td>+/+; UAS-GCaMP6f/+; Ppk23-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6B</td>
+      <td>+/+; UAS-CsChrimson/Gr64f-Gal4; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-CsChrimson/+; IR94e-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+/+; UAS-CsChrimson/Gr66a-Gal4; +/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gr66a-LexA/+; LexAop-Gal80/UAS-CsChrimson; Ppk23-Gal4/+</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flies
 
 Flies were raised on standard cornmeal fly food at 25°C in 70% humidity. The following genotypes were used: vGlutMI04979-Gal4, ChATMI04508-Gal4, vGlutMI04979-LexA::QFAD, ChATMI04508- LexA::QFAD, vGlutMI04979-Gal80, ChATMI04508-Gal80 (Diao et al., 2015); Gr66a-LexA, ppk28-LexA, ppk23-Gal4, UAS-CD8::tdTomato (Thistle et al., 2012); Gr64fLexA (Miyamoto et al., 2012); ppk23-LexA (Toda et al., 2012); IR76b-Gal4, IR76b1, IR76b2, UAS-IR76b (Zhang et al., 2013); IR25a1, IR25a2 (Benton et al., 2009); UAS-IR25a (Abuin et al., 2011); Gr66a-Gal4 (Wang et al., 2004); Gr64f-Gal4 (Dahanukar et al., 2007); Ppk28-Gal4 (Cameron et al., 2010); LexAop-CD2::GFP (Lai and Lee, 2006); UAS-Kir2.1 (Baines et al., 2001); tub-Gal80ts (McGuire et al., 2004); IR94e-Gal4 (Tirián and Dickson, 2017)(Vienna Drosophila Resource Center: v207582); LexAop-Gal80 (32214), LexAop-GCaMP6f (44217), UAS-GCaMP6f (42747 and 52869), UAS-CsChrimson (55135), UAS-TNT (28838), UAS-impTNT (28840) (Bloomington Stock Center).
 
-## Tastants
+### Tastants
 
 The following tastants were used: Sucrose, NaCl, KCl, NaBr, KBr, CsCl, CaCl2, Lobeline hydrochloride, Caffeine (Sigma-Aldrich); 7,11-heptacosadiene (7,11-HC), 7,11-nonacosadiene (7,11-NC), 7-tricosene (7 T), and cis-vaccenyl acetate (c-VA) (Cayman Chemical Company, Ann Arbor, MI). Tastants were mostly kept as 1 M stocks and diluted as needed. Lobeline hydrochloride was kept as a 1.25 mM stock. 7,11-heptacosadiene (7,11-HC), 7,11-nonacosadiene (7,11-NC), and 7-tricosene (7 T) were diluted in water to desired 0.0001 mg/ul. Cis-vaccenyl acetate (c-VA) was diluted to stock solution of 0.01 mg/ul in EtOH, and then diluted in water. All hydrocarbons stocks were kept at −20°C, diluted as needed, and stored at 4°C for up to seven days. 1% of each Ethanol and Hexanol were diluted in a mix with water and kept at 4°C as control solution for pheromone imaging.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunofluorescence on labella was carried out as described (Jeong et al., 2016). Labella were dissected and fixed for 25 min in 4% paraformaldehyde in PBS + 0.2% Triton. After washing with PBS + triton (0.2%; PBST), labella were blocked in 5% NGS diluted with PBST for 40 min. The following primary antibodies were applied and incubated at 4°C overnight: chicken anti-GFP (1:1000, Abcam, Cambridge, UK, #13970) and rabbit anti-RFP (1:200, Rockland Immunochemicals, Pottstown, PA, #600-401-379). After washing for 1 hr, the following secondary antibodies were added for 2 hr: goat anti-chicken Alexa 488 (1:200, Abcam #150169) and goat anti-rabbit Alexa 647 (1:200, Thermo Fisher Scientific, Waltham, MA, #A21245). Labella were washed again for 40 min, placed on slides in SlowFade gold (Thermo Fisher Scientific), with small #1 coverslips as spacers.
 
@@ -159,11 +1156,11 @@ Brain immunofluorescence was carried out as described previously (Chu et al., 20
 
 All images were acquired using a Leica SP5 II Confocal microscope with a 25x water immersion objective. Images were processed in ImageJ (Schneider et al., 2012) and Adobe Photoshop.
 
-## Labellar expression map annotation
+### Labellar expression map annotation
 
 To annotate the expression of different markers in the labellum, each sensillum was analyzed in 4 – 8 labella stained for each combination of markers. Confocal z-stacks were examined to identify how many neurons in each sensillum were positive for the different drivers, and which neurons overlapped with the respective co-labelled population. The most common result for each neuron in each sensillum was reported. Sensilla S0, I0, I9, and I10 were the most difficult to score because of viewing difficulties. At times there were duplications of specific sensilla on a labellum, in which case both sensilla were considered.
 
-## GCaMP imaging
+### GCaMP imaging
 
 For calcium imaging experiments, female or male flies were aged from 2 to 10 days in groups of both sexes. Females were used for all experiments except where indicated (pheromones). Prior to imaging, flies were briefly anesthetized using CO2, legs amputated for full access to the proboscis, and placed in custom chamber suspended from their cervix. To ensure immobilization, a small drop of nail polish was applied to the back of the neck and the proboscis was pulled to extension and waxed out on both sides. A modified dental waxer was used to apply wax on each side of the chamber rim, making little contact with the feeding structure. Flies were left to recover in a humidified chamber for 1 hr. The antenna were removed from the fly and a small window of cuticle was removed from the top of the head, exposing the SEZ. Adult Hymolymph Like (AHL) buffer was immediately applied to the preparation (108 mM NaCl, 5 mM KCl, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM HEPES, 15 mM ribose, pH 7.5). The air sacs, fat, and esophagus were clipped and removed to allow clear visualization on the SEZ. Once ready to image, AHL buffer was added that includes Mg2+ and Ca2+ (108 mM NaCl, 5 mM KCl, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM HEPES, 15 mM ribose, 2 mM Ca2+, and 8.2 mM Mg2+).
 
@@ -175,17 +1172,17 @@ The maximum change in fluorescence (ΔF/F) was calculated using the peak intensi
 
 For quantification of Ppk23glut projections, the caffeine response for each fly was used to create a region of interest starting below the ‘bitter ring’ and extending across to encompass the lateral projections. This same region of interest was applied to the salt responses of that fly to exclude the Ppk23chat population overlapping with Gr66a in this ‘bitter ring’.
 
-## Salt deprivation
+### Salt deprivation
 
 Flies were placed in one of two conditions for 2 – 3 days: 1% agar, 5% sucrose, and 10 mM NaCl (salt fed); or 1% agar and 5% sucrose (salt deprived).
 
-## Behavioral assays
+### Behavioral assays
 
 Binary choice preference tests were similar to those previously described (LeDue et al., 2015). Female flies aged 2–5 days were sorted into groups of 10 and placed in conditions of either salt feeding or salt deprivation (see above) and shifted to 29°C for 48 hr to induce expression of Kir2.1 in the cells of interest. For the low salt assay, salt deprived flies were then tested directly. Flies for the high salt assay were subjected to a subsequent 12 hr on medium without sugar (but with the same salt content) to increase sugar attraction. For both assays, flies were then transferred into testing vials containing six 10 μL dots of agar that alternated in color. For most low salt attraction assays, the food choices were: 1% agar with both 2 mM sucrose and 50 mM NaCl (Food 1), and 1% agar with 2 mM sucrose (Food 2). The experiment in Figure 5B was done without sucrose. For the high salt avoidance assays, the food choices were: 1% agar with both 25 mM sucrose and 250 mM NaCl (Food 1), and 1% agar with 5 mM sucrose (Food 2). Each choice contained either 0.125 mg/mL blue (Erioglaucine, FD and C Blue#1) or 0.5 mg/mL red (Amaranth, FD and C Red#2) dye, and half the replicates for each experiment were done with the dyes swapped to control for any dye preference. Flies were allowed to feed for 2 hr in the dark at 29°C and then frozen and scored for abdomen color. Preference index (PI) was calculated as ((# of flies labeled with Food 1 color) – (# of flies labeled with Food 2 color))/(total number of flies that fed).
 
 For PER, 2 – 5 day old females were collected and treated exactly as described above for salt fed and deprived conditions. Flies were then mounted inside pipette tips that were cut to size so that only the head was exposed. The tubes were sealed at the end with tape, positioned on a glass slide with double-sided tape. After a 1 – 2 hr recovery, flies were stimulated with water and allowed to drink until satiated. Each fly was then stimulated on the labellum with increasing concentrations of salt (0 mM salt, 250 mM NaCl, 500 mM NaCl, 1 M NaCl, and 1 M KCl) mixed with 100 mM sucrose using a 20 μL pipette attached to a 1 mL syringe. Stimuli were presented three times each per fly. Four groups of 10 flies for each genotype were tested over four days. The order of genotypes tested on each day was randomized.
 
-## STROBE system
+### STROBE system
 
 The STROBE builds on the FlyPAD system’s hardware (Itskov et al., 2014) by adding a lighting circuit and opaque curtain (to prevent interference from outside lighting) to each of 16 FlyPAD arenas. Thus, together, a functioning STROBE system consists of a field programmable gate array (FPGA) controller attached to a multiplexor board, adaptor boards, fly arenas equipped with capacitive sensors, and lighting circuits.
 
@@ -203,13 +1200,13 @@ FPGA code: https://github.com/rcwchan/STROBE-fpga
 
 All other code: https://github.com/rcwchan/STROBE_software/
 
-## STROBE experiments
+### STROBE experiments
 
 Flies were place in vials for three days under ‘salt fed’ or ‘salt deprived’ conditions described above. All flies were 5 – 9 days old at the time of the assay. For retinal groups, food was supplemented with all trans-Retinal at a final concentration of 1 mM (Sigma-Aldrich).
 
 Both channels of STROBE chambers were loaded with 4 μl of 1% agar (GR64f and IR94e experiments) or 1M sucrose mixed in 1% agar (Gr66a and Ppk23glut experiments). Acquisition on the STROBE software was started and then single flies were transferred into each arena by mouth aspiration. Experiments were run for 60 min, and the preference index for each fly was calculated as: (sips from Food 1 – sips from Food 2)/(sips from Food 1 + sips from Food 2).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were performed using GraphPad Prism six software. Descriptions and results of each test are provided in the figure legends. Sample sizes are indicated in the figure legends. Sample sizes were determined prior to experimentation based on the variance and effect sizes seen in prior experiments of similar types. Whenever possible, all experimental conditions were run in parallel and therefore have the same or similar sample sizes. However, in some cases this was impossible, due to the concurrent availability of different genotypes or the size of the experiment. These situations account for instances where some control genotypes have very large sample sizes, since they were run in parallel with multiple experimental groups (e.g. Figure 5A).
 

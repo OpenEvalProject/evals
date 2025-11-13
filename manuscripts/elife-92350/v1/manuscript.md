@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Chemistry, University of Cambridge Cambridge United Kingdom
+1. Department of Chemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 2. Cambridge Dementia Research Centre, Clifford Allbutt Building, Cambridge Biomedical Campus Cambridge United Kingdom
-3. https://ror.org/055vbxf86 Department of Medicine, Addenbrooke’s Hospital, Cambridge Biomedical Campus Cambridge United Kingdom
+3. Department of Medicine, Addenbrooke’s Hospital, Cambridge Biomedical Campus Cambridge United Kingdom ([ROR:055vbxf86](https://ror.org/055vbxf86))
 
 † Corresponding author
 
@@ -33,47 +33,91 @@ Here, we combined light sheet microscopy with local agonist delivery, via a nano
 
 ## Results
 
-## IdSPIM captures the precise formation kinetics of all Myddosomes within a cell
+### IdSPIM captures the precise formation kinetics of all Myddosomes within a cell
 
 We used IdSPIM to follow TLR4 activation and quantitatively characterise the formation of the Myddosome as shown schematically in Figure 1. A pipette with a diameter of 200 nm for LPS or 800 nm for sonicated Aβ1–42 fibrils was positioned 3 µm above the cell surface, and a pressure pulse for 5 s was used for delivery of the TLR4 agonist onto the surface of MyD88−/− immortalised bone marrow-derived macrophages (iBMDMs) transduced with MyD88-YFP. The assembly of MyD88 oligomers after TLR4 activation was then visualised in live cells using 3D light sheet scanning.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig1-v1.jpg)
+
+**Figure 1.:** (a, b) Schematic of nanopipette delivered triggering of Toll-like receptor 4 (TLR4) and Myddosome formation with lipopolysaccharide (LPS) or amyloid-beta (Aβ) aggregates. The LPS is delivered by nanopipette to the macrophage surface. When LPS binds to TLR4, it will trigger the dimerisation of TLR4, which activates the recruitment of Mal, MyD88, and IRAK4&2 to form the Myddosome. Unstimulated TLR4 remains monomeric on the cell surface. (c) Schematic of Atomic Force Microscope (AFM) cantilever light sheet 3D scan. The light sheet is reflected by an AFM cantilever to the target cell. Control by a piezo, the sample stage is moving up and down to achieve cell scanning.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Scale bar: 100 nm. Sonicated sample showed large population of sub-100 nm oligomers in background of image (as well as some larger fibrils).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Nanopipette approaches the cell where the tip is 3 µm away from the membrane with an angle to delivery sonicated amyloid-beta (Aβ) fibrils. Scale bar is 8.5 µm. (b) Projected view of tagged sonicated Aβ fibrils (red) after delivery to the cell membrane (green). Scale bar is 5 µm.
 
 Compared with LPS, the sonicated Aβ fibrils consist of larger aggregates, so it is important to ensure that the nanopipette is capable of delivering the fibrils smoothly without blockage. We firstly characterised the Aβ fibrils using electron microscopy, showing that the majority was less than 100 nm in length (Figure 1—figure supplement 1). To test the macromolecule delivery ability of the nanopipette, the sonicated Aβ fibrils (4 μM total monomer concentration) were first tagged with a 1:1000 dilution of Amytracker 680, a small molecule dye which specifically binds to aggregates; this was then delivered to the macrophage surface. Figure 1—figure supplement 2a, b shows the deposition of Amytracker tagged aggregates at the cell membrane demonstrating reliable delivery of sonicated fibrils to the cell membrane.
 
 Macrophages were activated by both LPS and sonicated Aβ fibrils to form Myddosomes (Figure 2). A typical result showed that 450 s after triggering with sonicated Aβ fibrils, the first Myddosome was formed, with continuous assembly of new complexes for the next 1000s. The fibrils are detected on the cell surface immediately after dosing, so time taken to visualise a Myddosome accurately records the kinetics of Myddosome formation. In the reconstructed 3D scan image of the whole cell, any Myddosomes formed in the total cell volume can be seen (Figure 3). The spatial distribution and movement of each individual Myddosome were tracked and shown in 3D volume rendered images, which was projected using the brightest point method (Figure 3). Compared with TIRF, 3D light sheet imaging is able to follow all Myddosomes formed, allowing for the calculation of the lifetime of each individual Myddosome, and the total number of Myddosomes assembled within a certain time period post triggering precisely. Our previous studies have demonstrated that when TLR4 is triggered by various agonists, the response speed and magnitude of response vary; therefore, we measured the structure and dynamics of Myddosome assembly following triggering by LPS and sonicated Aβ fibrils, and analysed the data to determine the following parameters: (1) the first time point when Myddosomes formed, (2) the Myddosome lifetime, (3) the total number of oligomers formed within 30 min of triggering, (4) the size and shape distribution of assembled Myddosomes and (5) the variation of MyD88 oligomer size with stimulation time.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig2-v1.jpg)
+
+**Figure 2.:** (a) PBS (phosphate-buffered saline) control: no Myddosomes formed when PBS buffer is delivered. (b) Amyloid-beta (Aβ) monomer control also showing no Myddosomes formed. (c) Myddosome formation triggered by lipopolysaccharide (LPS). (d) Myddosome formation triggered by sonicated Aβ fibrils. The scale bar is 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** From left to right: z-stacks for each time frame were projected into one frame. ImageJ’s find maxima plugin was used to identify MyD88 puncta which were subsequently tracked using a custom MATLAB code. Analysis was then carried out on identified trajectories.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig3-v1.jpg)
 
 **Figure 3.:** (a) 3D light sheet scanning of a live macrophage forming Myddosomes upon activation. The sheet scanning starts from the bottom surface of the cell and ends at the top surface. Z-stacks were acquired for each cell, consisting of 100 z-slices with 200 nm spacing. (b) Images were rendered by 3D projection (brightest point method). Myddosomes could be visualised in the whole-cell volume by rotating the 3D rendered imaged around the y-axis.
 
-## Aβ triggers delayed Myddosome compared to LPS
+### Aβ triggers delayed Myddosome compared to LPS
 
 First, the time point when the first Myddosome formed was measured. PBS and Aβ monomers were first delivered to macrophages as controls, which resulted in no triggering (Figure 2). Then LPS and sonicated Aβ fibrils were delivered to macrophages for 5 s and imaged by 3D light sheet scan. LPS-triggered Myddosomes started forming within 5 min after local delivery. Myddosomes formed after triggering by sonicated Aβ fibrils first appeared after a significantly longer time, ranging from 200 to 1000s (Figure 4). On average the LPS-triggered Myddosome first formed at 80 s after delivery and the Aβ-triggered Myddosome first formed at 370 s after delivery, with LPS stimulation leading to a significantly faster time to first formation than sonicated Aβ fibrils (unpaired two-sided Student’s t-test, p = 3.33E−8).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig4-v1.jpg)
 
-**Figure 4.:** (a) MyD88-YFP transduced iBMDMs were stimulated with 1 μg/ml lipopolysaccharide (LPS) or 4 µM total monomer of sonicated amyloid-beta (Aβ) fibrils delivered from a nanopipette for 30 min.The time point when the first Myddosome formed was marked (n = 77) across five biological replicates for each stimulation. The p-values are based on unpaired two-sided Student’s t-test.Figure 4—source data 1.
+**Figure 4.:** (a) MyD88-YFP transduced iBMDMs were stimulated with 1 μg/ml lipopolysaccharide (LPS) or 4 µM total monomer of sonicated amyloid-beta (Aβ) fibrils delivered from a nanopipette for 30 min.The time point when the first Myddosome formed was marked (n = 77) across five biological replicates for each stimulation. The p-values are based on unpaired two-sided Student’s t-test.
 
-## The lifetime of Aβ-triggered Myddosomes is extended compared to LPS
+### The lifetime of Aβ-triggered Myddosomes is extended compared to LPS
 
 Myddosome lifetimes were determined after obtaining trajectories for each puncta using a particle tracking algorithm. The lifetime of both LPS and sonicated Aβ fibrils triggered Myddosomes vary significantly and have a large population below 250 s (Figure 5). The cumulative lifetimes plot (Figure 5c) shows that Aβ-triggered Myddosomes had a higher proportion of longer lived Myddosomes than LPS.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig5-v1.jpg)
+
+**Figure 5.:** Histogram and cumulative distribution of MyD88 puncta lifetimes following nanopipette delivery of (a) lipopolysaccharide (LPS) (1 μg/ml) or (b) sonicated amyloid-beta (Aβ) fibrils (4 µM total monomer). (c) Cumulative lifetime distributions after LPS and Aβ stimulation overlaid. The difference between the two lifetime distributions was significant (Kolmogorov–Smirnov test, p < 0.0001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Time lapse of fixed cell following LPS stimulation. (b) Representative intensity trace of one puncta out of 14 in one cell with less than 40% of the puncta intensity lost over 30 min. (c) Loss in spot detection due to photobleaching in fixed cells. Within the first 500 s, there is a 6% loss of detected puncta; in comparison to the live cell stimulation (Figure 5), there was an approximate 90% drop in the detected puncta for newly assembled puncta within the same time period, suggesting that signal loss during live cell imaging was mostly due to MyD88 puncta degradation rather than photobleaching.
+
 To calculate the lifetime accurately, it was important to determine that the YFP fluorescence signal of MyD88 puncta did not bleach during 3D scanning. Macrophages with LPS-triggered Myddosomes were therefore fixed and imaged using the same laser power and same scanning time as used for 3D imaging. The time taken for the fixed puncta to bleach was much longer compared to the timescales that the Myddosomes were degrading in live cells after stimulation (Figure 5—figure supplement 1).
 
-The lifetime distributions also provide information about degradation kinetics (Tinoco and Gonzalez, 2011). The distributions were normalised so that the integral over all positive values equalled 1, and the probability distribution function (Pτ) fit assuming a two-step degradation (Figure 6):P(τ)=k1k2k2−k1(e−k1τ−e−k2τ)
+The lifetime distributions also provide information about degradation kinetics (Tinoco and Gonzalez, 2011). The distributions were normalised so that the integral over all positive values equalled 1, and the probability distribution function ($P\tau$) fit assuming a two-step degradation (Figure 6):
 
-The mean lifetime <τ> can be determined by:<τ>=∫0∞τP(τ)dτ=k1+k2k1k2
+$$
+P(\tau)=\frac{k_{1}k_{2}}{k_{2}−k_{1}}(e^{−k_{1}\tau}−e^{−k_{2}\tau})
+$$
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig6-v1.jpg)
+
+**Figure 6.:** Normalised probability distributions plotted for (a) lipopolysaccharide (LPS) and (b) amyloid-beta (Aβ) stimulated Myddosomes. The histograms were fit assuming a two-step degradation, with the rate constants $k_{1}$ and $k_{2}$ , and mean lifetime $<\tau>$ calculated for each condition.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Optimal fits at both long and short lifetimes (for both lipopolysaccharide [LPS] and amyloid-beta [Aβ]) stimulation were observed assuming that the degradation of Myddosomes was a two-step process, with different rate constants for each step (top row) – less optimal fits were obtained for a two-step process assuming the same rate constants for each step, and a one-step degradation.
+
+The mean lifetime $<\tau>$ can be determined by:
+
+$$
+<\tau>=\int_{0}^{∞}\tauP(\tau)d\tau=\frac{k_{1}+k_{2}}{k_{1}k_{2}}
+$$
 
 The mean Myddosome lifetimes when triggered by LPS or sonicated Aβ fibrils were 162 and 182 s, respectively.
 
-## Myddosomes predominantly remain at the cell membrane
+### Myddosomes predominantly remain at the cell membrane
 
 We examined the number of Myddosomes that stay on the cell surface or are internalised to the cytosol, assuming that signalling competent Myddosomes only form at the membrane after triggering with LPS or Aβ fibrils. By filtering to only include Myddosome trajectories which form at the membrane, any localisations in the cytoplasm are due to Myddosomes which have internalised after assembly (Figure 7). In both LPS- and Aβ-triggered cells, following an initial increase after triggering, the population of membrane localised Myddosomes remained stable, and higher than the number of cytoplasmic Myddosomes, suggesting there most Myddosomes did not undergo internalisation in the first 30 min after stimulation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig7-v1.jpg)
 
-**Figure 7.:** Plots are normalised by cell number. (a) Lipopolysaccharide (LPS) stimulation, (b) amyloid-beta (Aβ) stimulation. (c) Overlay of total number of plasma membrane localised puncta, from membrane initialised trajectories after LPS and Aβ stimulation.Figure 7—source data 1.
+**Figure 7.:** Plots are normalised by cell number. (a) Lipopolysaccharide (LPS) stimulation, (b) amyloid-beta (Aβ) stimulation. (c) Overlay of total number of plasma membrane localised puncta, from membrane initialised trajectories after LPS and Aβ stimulation.
 
-## Larger Myddosomes are formed in response to Aβ than LPS
+### Larger Myddosomes are formed in response to Aβ than LPS
 
 We used direct stochastic optical reconstruction microscopy (dSTORM) to visualise and quantify the size of LPS and sonicated Aβ aggregates triggered Myddosomes after fixation. In this case, the agonists were applied in the bath. As the MyD88-YFP could not be super-resolved directly, an Alexa Fluor 647-conjugated anti-GFP antibody was used to label MyD88-YFP for super-resolution imaging (Figure 8). The merged channel overlaps the 488 and 641 nm images, showing the colocalisation of MyD88-YFP and the super-resolved Myddosomes. The control cells (MyD88-YFP without stimulation) showed no formation of Myddosomes in the 488 nm channel, and no overlapping signal in the merged channel. The LPS and Aβ-triggered cells had punctate signal in the 488 nm channel, with some of these puncta displaying colocalisation with the super-resolved signal in the 641 nm channel. We used co-localisation to identify the real Myddosomes from non-specific signal. The size (calculated from the 1D Full Width Half Maxima) of Myddosome puncta formed at different time points after LPS and sonicated Aβ fibrils stimulation are shown in Figure 9. The Myddosomes formed by sonicated Aβ fibrils stimulation are larger than those formed by LPS stimulation at all times, especially at early times.
 
@@ -83,13 +127,13 @@ We used direct stochastic optical reconstruction microscopy (dSTORM) to visualis
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig9-v1.jpg)
 
-**Figure 9.:** MyD88-YFP transduced iBMDMs were stimulated with LPS (100 ng/ml) or sonicated Aβ fibrils (200 nM) followed by fixation and antibody labelling. Full width at half maximum (FWHM) of puncta was measured by 1D Gaussian fitting. (From 30 min to 24 hr: n = 212, 140, 99, 77, 85 across three biological replicates for each stimulation. The p-values are based on unpaired two-sided Student’s t-test.)Figure 9—source data 1.
+**Figure 9.:** MyD88-YFP transduced iBMDMs were stimulated with LPS (100 ng/ml) or sonicated Aβ fibrils (200 nM) followed by fixation and antibody labelling. Full width at half maximum (FWHM) of puncta was measured by 1D Gaussian fitting. (From 30 min to 24 hr: n = 212, 140, 99, 77, 85 across three biological replicates for each stimulation. The p-values are based on unpaired two-sided Student’s t-test.)
 
-We then analysed our super-resolution data in more detail, looking specifically at the shape factors of each Myddosome (Figure 10). The shape factor, which is calculated using the perimeter and area of a cluster using the ratio 4πAp2 , can take a value between 0 and 1 depending on the circularity of the cluster. We started by measuring the shape factor distributions for LPS and Aβ at an early time point (30 min following stimulation). For both conditions, a bimodal distribution was observed (Figure 10a), consisting of a population of highly circular MyD88 clusters, as well as a more variable population of less circular clusters. By comparing this distribution to the area of the clusters, we observed that this population clusters with a shape factor close to 1 were mostly very small, with an area below 0.01 µm2 (equivalent to a diameter below approximately 100 nm assuming a perfect circular cluster). Plotting the fraction of clusters with shape factor = 1 compared to all clusters revealed a significant drop in this population at later time points after stimulation. At earlier time points (30 min), there was also lower populations of these smaller, circular Myddosomes after Aβ triggering compared to LPS triggering.
+We then analysed our super-resolution data in more detail, looking specifically at the shape factors of each Myddosome (Figure 10). The shape factor, which is calculated using the perimeter and area of a cluster using the ratio $\frac{4\piA}{p^{2}}$ , can take a value between 0 and 1 depending on the circularity of the cluster. We started by measuring the shape factor distributions for LPS and Aβ at an early time point (30 min following stimulation). For both conditions, a bimodal distribution was observed (Figure 10a), consisting of a population of highly circular MyD88 clusters, as well as a more variable population of less circular clusters. By comparing this distribution to the area of the clusters, we observed that this population clusters with a shape factor close to 1 were mostly very small, with an area below 0.01 µm2 (equivalent to a diameter below approximately 100 nm assuming a perfect circular cluster). Plotting the fraction of clusters with shape factor = 1 compared to all clusters revealed a significant drop in this population at later time points after stimulation. At earlier time points (30 min), there was also lower populations of these smaller, circular Myddosomes after Aβ triggering compared to LPS triggering.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/92350/elife-92350-fig10-v1.jpg)
 
-**Figure 10.:** (a) Distribution of super-resolved MyD88 puncta shape factors after 30 min lipopolysaccharide (LPS) stimulation ( , where shapefactor=4πAp2 and A are area and perimeter, respectively), pn = 1086 across three independent experiments. Similar distribution is also observed for 30 min amyloid-beta (Aβ) stimulation. (b) Plot of super-resolved cluster area vs cluster shape factor for 30 min LPS stimulations suggests that this corresponds to a populations of very small, spherical MyD88 clusters. Similar relationship was also observed for 30 min Aβ stimulation. n = 1086 across three independent experiments. (c) Magnified examples of three super-resolved MyD88 clusters with a range of different shape factors. Scale bar is 150 nm. (d) Plotting fractions of spherical clusters (shape factor = 1) compared to total puncta suggest a drop in the population of small, spherical MyD88 clusters after 30 min for both LPS and Aβ stimulation. There is a smaller fraction of these small spherical clusters following Aβ stimulation compared to LPS.Figure 10—source data 1.
+**Figure 10.:** (a) Distribution of super-resolved MyD88 puncta shape factors after 30 min lipopolysaccharide (LPS) stimulation ($shapefactor=\frac{4\piA}{p^{2}}$ , where $A$ and $p$ are area and perimeter, respectively), n = 1086 across three independent experiments. Similar distribution is also observed for 30 min amyloid-beta (Aβ) stimulation. (b) Plot of super-resolved cluster area vs cluster shape factor for 30 min LPS stimulations suggests that this corresponds to a populations of very small, spherical MyD88 clusters. Similar relationship was also observed for 30 min Aβ stimulation. n = 1086 across three independent experiments. (c) Magnified examples of three super-resolved MyD88 clusters with a range of different shape factors. Scale bar is 150 nm. (d) Plotting fractions of spherical clusters (shape factor = 1) compared to total puncta suggest a drop in the population of small, spherical MyD88 clusters after 30 min for both LPS and Aβ stimulation. There is a smaller fraction of these small spherical clusters following Aβ stimulation compared to LPS.
 
 ## Discussion
 
@@ -103,7 +147,7 @@ Overall, we have found that there are clear differences between the Myddosomes f
 
 ## Materials and methods
 
-## Lentiviral transfection and transduction for MyD88-YFP macrophage production
+### Lentiviral transfection and transduction for MyD88-YFP macrophage production
 
 HEK293T cells and immortalised mouse macrophages MyD88−/− (NR-15633) were a gift from Doug Golenbock and Kate Fitzgerald now banked with BEI Resources, USA were grown in complete Dulbecco's Modified Eagle Medium (DMEM, 10% fetal calf serum, 2 mM L-glutamine, 100 U/ml penicillin, 100 μg/ml streptomycin). The media was topped up with fresh L-glutamine every 4 weeks. The lentiviral transfection and transduction needed 9 days:
 
@@ -119,42 +163,46 @@ Day 8: The supernatant containing lentivirus in HEK293T wells were clarified and
 
 Day 9: The viral supernatant in the wells containing the immortalised MyD88−/− macrophages were replaced with fresh complete media. The MyD88−/− YFP macrophages were checked by fluorescent microscopy before use.
 
-## Nanopipette fabrication
+### Nanopipette fabrication
 
 Nanopipettes were fabricated from quartz capillaries, with an outer and inner diameter of 1 and 0.5 mm, respectively. A laser pipette puller (Model P-2000, Sutter Instrument, CA) was used for fabrication, using the following parameters: Line1 Heat = 350, Fil = 3, Vel = 30, Del = 220, Pull = 0; Line2 Heat = 400, Fil = 2, Vel = 20, Del = 180, Pull = 255, resulting in a pipette with an internal diameter of 200 nm (±20 nm), Heat = 400, Fil = 4, Vel = 30, Del = 200, resulting in a pipette with an internal diameter of 800 nm (±200 nm). The size of the nanopipette was calculated from its electric resistance in PBS buffer; a tip size around 100 nm will generate an electronic resistance around 150 MΩ and a tip size around 800 nm will generate an electronic resistance around 20 MΩ. The 800 nm tip size was large enough to prevent blockages during Aβ delivery.
 
-## Amyloid-β fibril preparation
+### Amyloid-β fibril preparation
 
 The amyloid-β fibril preparation was a modification of a method reported by our previous work (Hughes et al., 2020). The Aβ (1–42) peptide (Stratech, A-1163, 0.5 mg) was initially dissolved in 100% hexafluoroisopropanol (Sigma-Aldrich) at a concentration of 4 μM. This solution was incubated at room temperature for 1 hr. Then, the solution was sonicated for 10 min in a water bath sonicator and then dried under a light stream of nitrogen gas. Dimethyl sulfoxide was added to the peptide, which was incubated at room temperature for 10 min with gentle mixing. Finally, this solution was aliquoted and stored at −80°C. For a working solution, D-PBS (Invitrogen, UK) was added to the peptide stock solution and incubated for 2 hr at room temperature for peptide oligomerisation. The amyloid-β fibril was characterised using TEM (Figure 1—figure supplement 1).
 
-## TEM negative staining
+### TEM negative staining
 
 Aβ samples were adsorbed onto glow-discharged 400 mesh copper/carbon film grids (EM Resolutions) for about 1 min. Then, TEM grids were passed over two drops of deionised water to remove any buffer salts and stained in 2% (wt/vol) aqueous uranyl acetate for about 30 s. Uranyl acetate dye was drained off the TEM grid using filter paper and grids were allowed to air dry. Samples were viewed using a Tecnai G20 transmission electron microscope (FEI/Thermo Fisher Scientific) run at an accelerating voltage of 200 keV using a 20 µm objective aperture to improve contrast. Images were acquired using an Orca HR CCD camera (AMT, USA).
 
-## Nanopipette delivery of LPS and sonicated Aβ fibrils
+### Nanopipette delivery of LPS and sonicated Aβ fibrils
 
 LPS and sonicated Aβ fibrils were delivered to the cell surface using nanopipette. 1 μg/ml LPS (Ultrapure LPS from E. coli, 0111:B4, Invivogen) and 4 µM total monomer of sonicated Aβ fibrils were loaded into the nanopipette. The nanopipette was controlled by a 3D manipulator (Scientifica microstar) to move down to the target cell until the nanopipette tip slightly touched the cell membrane. Then the nanopipette was withdrawn back by 3 µm away from the cell surface. At this position, a pressure pulse (3 kPa for 5 s) was used to deliver both the LPS and the sonicated Aβ fibrils to the cell surface (Figure 1—figure supplement 2).
 
-## Live cell scanning and 3D reconstruction
+### Live cell scanning and 3D reconstruction
 
 The optical path of the microscope was fully described in our previous work (Li et al., 2021; Ponjavic et al., 2018). The scanning was achieved by moving the piezo sample stage. Controlled by field-programmable gate array, the movement of sample stage was synchronised with the camera image acquisition. Starting from the coverslip surface, the stage was moved in 200 nm increments. The total scan range was 20 μm, which was enough to cover the whole cell. The camera triggering model was set as edge trigger, in which the camera only acquired a frame when it received a 5 V TTL digital signal. When the sample stage was driven to a new Z slice, the FPGA would generate a digital TTL signal and send it to the camera in order to acquire a frame. This synchronisation enabled Z stack acquisition allowing for 3D reconstruction. The time interval between two scans was 10 s.
 
-## Myddosome live tracking
+### Myddosome live tracking
 
 An overview of the tracking analysis is shown in Figure 2—figure supplement 1. Image analysis was carried out using ImageJ (NIH) and a MATLAB script for particle tracking (Weimann et al., 2013). The raw images were assembled into xyzt hyperstacks, followed by background subtraction using a rolling-ball algorithm (rolling ball radius = 80 pixels) and 3D Gaussian blurring (xyz radius = 1 pixel). The hyperstacks were then 3D projected into the xy plane.
 
 Puncta in the 3D projections were identified using ImageJ’s Find Maxima plugin (prominence over background intensity = 20 counts) and isolated into a new stack for tracking. Particle trajectories were then extracted from the identified localisations, with the following parameters used to minimise the false detection of noise and minimise the number of lost tracks: (1) maximum search range (distance a localisation in a trajectory can move between subsequent frames) = 8 px (0.85 μm); (2) memory (the maximum number of frames where a spot can vanish, reappear and be considered in the same track) = 6 frames (60 s); (3) minimum track length = 2 frames (20 s). From the calculated trajectories, the lifetime of each track was extracted. Trajectories that formed in the first frame were treated as pre-formed MyD88 puncta; these were excluded from further analysis.
 
-## Myddosome spatial localisation
+### Myddosome spatial localisation
 
 Analysis was carried out using custom scripts written in python (https://github.com/p-sur/Myddosome-localisation; copy archived at Suresh, 2024). Cell boundaries and centroid coordinates were extracted from the acquired xyzt hyperstacks. Puncta were localised and tracked using a Python implementation based on the work by Allan et al., 2023; Crocker and Grier, 1996. The cell centroid coordinates at each time point were used to correct for any cell movement during the duration of image acquisition. Following trajectory assembly, the nearest distance of each localisation at each time point to the cell boundary was calculated, and used to segment the puncta as membrane- or cytoplasm-formed; a threshold of 1.4 μm was used to separate these populations. Cytoplasm formed trajectories were excluded from further analysis.
 
-## dSTORM imaging of Myddosome
+### dSTORM imaging of Myddosome
 
 Macrophages were plated in complete media and allowed to sit down on a glass-bottom confocal dish (VWR International) overnight. The media was replaced with fresh media supplemented with either LPS (1 μg/ml) or sonicated Aβ fibrils (monomer concentration 100 nM) and stimulated for five different time periods: 30 min, 3 hr, 6 hr, 12 hr, and 24 hr. Following triggering, the cells were washed three times with PBS and then fixed (0.8% paraformaldehyde, 0.1% glutaraldehyde in PBS) for 15 min at 4°C. Following washing, the cells were stained with 6.7 μg/ml of Alexa Fluor 647-conjugated anti-GFP rabbit polyclonal antibody (Invitrogen) for 20 min at 4°C. The cells were then washed a further three times with PBS prior to imaging. dSTORM imaging was carried out with 50 mM Tris–HCl (pH 8), 0.5 mM glucose, 1.3 μM glucose oxidase, 2.2 µM catalase, and 50 mM mercaptoethylamine. The dSTORM images were acquired by a typical TIRF microscope, with the beam angle set for HILO illumination. Image stacks (2000 frames) were acquired after illumination with a 190-mW 638 laser (Cobolt 06-MLD-638, HÜBNER GmbH & Co KG) and 10 ms camera exposure for each field of view. Image reconstruction was performed using ThunderSTORM.
 
-## Analysis of super-resolved MyD88 puncta
+### Analysis of super-resolved MyD88 puncta
 
-Following dSTORM reconstruction, true MyD88 puncta were identified by looking for co-localisation between the 488 nm (YFP) and 635 nm (antibody) channels. Following identification, the full width at half maximum (FWHM) of the puncta was measured by fitting a 1D Gaussian to the pixel intensities of the super-resolved puncta and recording the standard deviation of the Gaussian profile. The diameter of the super-resolved puncta was calculated using the relationship below:FWHM=22ln2d≈2.355d
+Following dSTORM reconstruction, true MyD88 puncta were identified by looking for co-localisation between the 488 nm (YFP) and 635 nm (antibody) channels. Following identification, the full width at half maximum (FWHM) of the puncta was measured by fitting a 1D Gaussian to the pixel intensities of the super-resolved puncta and recording the standard deviation of the Gaussian profile. The diameter of the super-resolved puncta was calculated using the relationship below:
+
+$$
+FWHM=2\sqrt{2ln2}d≈2.355d
+$$
 
 The intensity of MyD88-YFP images was thresholded to generate a binary mask of Myddosomes. Region of interests were drawn around all filtered Myddosomes. The multiple ROIs generated were saved to a region file. These ROIs were then reloaded to the thresholded dSTORM Myddosomes images. This step ensured that analysis was performed only on the regions where MyD88-YFP was detected. An Integrated Morphometry Analysis (IMA) was then performed through IMA plugin running inside MetaMorph software (Molecular Devices) (Kedia et al., 2021). Parameters like the shape factor were computed for both the LPS and sonicated amyloid-β aggregates triggered Myddosomes.

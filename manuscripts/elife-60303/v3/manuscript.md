@@ -36,39 +36,47 @@ In the present work, we establish that puromycin-based methods, as currently imp
 
 ## Results
 
-## The puromycin analog OPP labels nuclei in live C. elegans germlines in the presence or absence of emetine
+### The puromycin analog OPP labels nuclei in live C. elegans germlines in the presence or absence of emetine
 
 O-propargyl-puromycin (OPP) is a click-reactive cell permeable puromycin analog that is commonly used to localize sites of translation (Liu et al., 2012). When incubated with live cells or tissues, OPP reacts with translating ribosomes and becomes covalently attached to elongating peptides. Post-labeling, OPP is detected by click-reactive chemistry which attaches a fluorescent probe to OPP (Figure 2). Using this method to label translation in live C. elegans gonads, we observed bright labeling of live germlines upon a 5 min incubation with OPP. The OPP signal was most intense in nuclei, specifically in the chromatin-free center where nucleoli reside. A lower signal was also observed in the cytoplasm, which contains the majority of (if not all) functional ribosomes (Klinge and Woolford, 2019). OPP labeling of nuclei was ablated by pre-treatment with anisomycin, a competitive inhibitor of puromycin that stops elongation by binding to the peptidyl-transferase center (Grollman, 1967), thereby preventing puromycin from reacting with the nascent chain. In contrast, OPP labeling was unaffected by pre-treatment with emetine (Figure 2B). Emetine-resistant puromycin labeling of nucleoli has been observed previously in tissue culture cells (David et al., 2012) and may reflect trafficking or diffusion of puromycylated peptides into the nucleolus (Kubota et al., 1999; Schmidt et al., 1995). We conclude that OPP labels translational products but does not necessarily identify sites of active translation even in the presence of emetine.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig2-v3.jpg)
 
-**Figure 2.:** C. elegans in the presence or absence of emetine.(A) Representative photomicrographs of germlines labeled for 5 min with 20 µM OPP, and pre-treated for 15 min with control buffer (top row), 45 µM emetine (second row), or 37 µM anisomycin (bottom row). DAPI labels chromosomes. Post-fixation, click labeling of OPP with Alexa Fluor 488 picolyl azide revealed OPP throughout the cytoplasm and concentrated in nuclei. Scale bar = 10 µm. (B) Quantification of OPP-Alexa 488 signal in distal germlines. Each dot represents the average fluorescence of the mitotic zone of one worm germline. Values are normalized to the average obtained for germlines pre-treated with control buffer (OPP alone). P values were obtained through an unpaired t-test. Experiment performed in duplicate.Figure 2—source data 1.Figure 2B.
+**Figure 2.:** (A) Representative photomicrographs of germlines labeled for 5 min with 20 µM OPP, and pre-treated for 15 min with control buffer (top row), 45 µM emetine (second row), or 37 µM anisomycin (bottom row). DAPI labels chromosomes. Post-fixation, click labeling of OPP with Alexa Fluor 488 picolyl azide revealed OPP throughout the cytoplasm and concentrated in nuclei. Scale bar = 10 µm. (B) Quantification of OPP-Alexa 488 signal in distal germlines. Each dot represents the average fluorescence of the mitotic zone of one worm germline. Values are normalized to the average obtained for germlines pre-treated with control buffer (OPP alone). P values were obtained through an unpaired t-test. Experiment performed in duplicate.
 
-## Emetine does not prevent release of puromycylated peptides in rabbit reticulocyte lysates
+### Emetine does not prevent release of puromycylated peptides in rabbit reticulocyte lysates
 
 To determine whether emetine prevents release of puromycylated nascent peptides in vitro, we made use of a previously established real-time translation monitoring assay in rabbit reticulocyte lysate (RRL). This method relies on the fact that luciferase rapidly folds into an enzymatically active conformation only after release from the ribosome (Kolb et al., 1994; Frydman et al., 1994). By programming RRL with a luciferase mRNA that is truncated (by runoff SP6 transcription of restriction-digested plasmid) just upstream of the stop codon, we accumulate stalled ribosomes at the 3’ end of the mRNA, in which the luciferase nascent peptide remains ribosome-bound and enzymatically inactive (Figure 3A). RRL programmed with the truncated mRNA (yellow trace) displays little luciferase activity compared to RRL translating full-length mRNA (purple trace). Addition of 91 μM puromycin (the same concentration used by David et al., 2012) causes a sharp increase in luminescence output from the truncated mRNA, consistent with release of the stalled peptides.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig3-v3.jpg)
+
+**Figure 3.:** (A) Schematic of the real-time translation monitoring assay in rabbit reticulocyte lysate. (1) (Purple trace) Ribosomes translate the full-length luciferase mRNA and release luciferase which becomes enzymatically active and results in an increase in luminescence. (Yellow trace) Ribosomes stall at the 3’ end of a truncated luciferase mRNA and little to no luminescence is observed as the ribosome-bound luciferase peptides are in an enzymatically inactive conformation. (2) Puromycin (PM) is added to the system, stopping further translation and causing all nascent peptides to release from the ribosomes. (3) (Yellow) The luciferase rapidly folds into an enzymatically active conformation and a substantial increase in luminescence is observed. (B) Either puromycin (yellow), H2O (purple) or a mixture of emetine (EME) and puromycin (blue) was added to a reaction containing truncated luciferase mRNA at t = 21 min. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded. (C) GDPNP was added to a reaction containing truncated luciferase mRNA at t = 16 min for 5 min to inhibit translation across samples. Then, either emetine (blue, purple), anisomycin (ANS) (green) or H2O (yellow) was added to the reaction followed by puromycin (blue, yellow, green) or H2O (purple) 5 min later. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded. Note that the experiments in (A and B), and Figure 3—figure supplement 1B were done in the same batch, and the yellow traces (PM treated) in these panels are the same.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Luminescence measured from translation of full-length luciferase mRNA in rabbit reticulocyte lysate. Either emetine (blue), anisomycin (green) or puromycin (yellow) was added to the reaction at indicated concentrations. Due to experimental restrictions, emetine and anisomycin were added at t = 16 min and puromycin was added at t = 22 min. Experiment performed once. (B) Luminescence measured from translation of truncated luciferase mRNA in rabbit reticulocyte lysate. Either emetine (blue), puromycin (yellow) or anisomycin (green) was added to the reaction at t = 21 min for 5 min to inhibit translation across the samples. Then, either puromycin (blue, green) or H2O (yellow) was added to the reaction. Experiment was performed in duplicate; mean traces shown as solid lines and range of replicates shaded.
 
 We reasoned that if emetine prevents release of puromycylated nascent peptides, then emetine should block the increase in luminescence observed upon puromycin addition. Matching the conditions of David et al., 2012, we treated the RRL with 208 μM emetine and 91 μM puromycin. When added separately, these two drugs effectively inhibit translation of full-length luciferase mRNA encoding a normal stop codon (Figure 3—figure supplement 1A; David et al., 2012). Upon addition of puromycin to lysate programmed with truncated mRNA, we noticed the expected steep increase in luminescence (yellow trace) that was not inhibited by simultaneous addition of emetine (blue trace) (Figure 3B). The luminescence of the no-puromycin control (purple trace) increased slowly over time, likely due to low levels of ribosome rescue activity (Shao et al., 2013) or spontaneous peptidyl-tRNA hydrolysis in the lysate.
 
 We next considered the possibility that blocking peptide release with emetine requires pre-incubation. To test this, we pre-treated the lysate with emetine 5 min before addition of puromycin. Because pre-treatment would decrease the total translation time and overall luminescence of a sample, it was critical to equalize the total uninhibited reaction time of all samples. This was accomplished in two different ways. In a first experiment, we treated all samples with the nonhydrolyzable GTP analog 5'-guanylyl imidodiphosphate (GDPNP) to inhibit the translational GTPases and prevent ongoing translation while leaving the ribosome free to react with emetine and puromycin (Figure 3C). Again, puromycin treatment (yellow trace) caused a sharp increase in luminescence that was not affected by emetine pre-treatment (blue trace) but was inhibited by anisomycin pre-treatment (green trace). The residual slow increase in the anisomycin trace is likely due to incomplete inhibition by anisomycin resulting from its stochastic dissociation during the reaction. In a second experiment, we added puromycin for the puromycin-only control at the same time that we started pretreating the other samples with inhibitors. This effectively inhibited translation in all samples at the same time (Figure 3—figure supplement 1B). While the increase in luminescence for the puromycin-only control (yellow trace) occurred earlier than for the pretreated samples, once the puromycin was added, the luminescence activity of the emetine pretreated sample (blue trace) matched that of the puromycin-only control. Taken together, these results show that pretreating translating ribosomes with emetine does not prevent the release of nascent peptides by puromycin in vitro.
 
-## Emetine does not prevent release of puromycylated peptides in cells
+### Emetine does not prevent release of puromycylated peptides in cells
 
 To directly test whether emetine blocks release of puromycylated nascent chains in vivo, we implemented the SunTag method for monitoring translation on single mRNAs (Pichon et al., 2016; Wu et al., 2016; Morisaki et al., 2016; Wang et al., 2016; Yan et al., 2016). This technique relies on a reporter mRNA encoding tandem repeats of the SunTag epitope near the 5′ end of the coding sequence (Figure 4A). When translated, each SunTag peptide is bound by a single chain variable fragment (scFV) of a GCN4 antibody fused to super folder GFP (scFV-sfGFP). An auxin-inducible degron (AID) near the 3′ end of the coding sequence allows controlled degradation of the fully-synthesized SunTag array, reducing fluorescence background and enabling detection of single fully-synthesized polypeptides. We performed fixed-cell imaging of U-2OS cells stably expressing both the SunTag reporter and scFV-sfGFP, detecting mRNA by fluorescence in-situ hybridization (FISH) and SunTag signal by immunofluorescence (IF). With this single-molecule FISH and IF hybrid assay (smFISH-IF), we quantified the association of SunTag nascent chains with their encoding mRNAs under various treatment conditions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig4-v3.jpg)
 
-**Figure 4.:** (A) SunTag reporter schematic. In addition to the tandem SunTag repeats and the auxin-inducible degron, this reporter encodes nano luciferase and BFP, which are not used in the present experiments. The 3’ UTR also encodes tandem repeats of the MS2 stem loop, which can be used to label the mRNA red. However, since we detect mRNA by FISH, we do not use the MS2 stem loops in the present experiments. (B) Example cells imaged by FISH-IF. Cells were either untreated (top row), treated with 91 μM puromycin for 5 min (second row), pre-treated with 208 μM emetine for 15 min followed by 91 μM puromycin for 5 min (third row), or pre-treated with 37 μM anisomycin for 5 min followed by 91 μM puromycin for 5 min (last row). Yellow arrows: examples of translating mRNAs; White arrows: example of single fully synthesized SunTag polypeptide (released from the ribosome); Blue arrows: examples of untranslating mRNAs. Scale bar in top left image: 10 microns. Scale bar in top right image: two microns. (C) Fraction of mRNAs co-localized with SunTag signal. Each dot represents one cell. Cells are only included in the analysis if they have more than five and fewer than 36 mRNAs. 20–27 cells and 313–513 mRNAs per condition were analyzed. Black lines indicate mean with standard error of the mean. P values were calculated by two-sample t-test. Experiment performed once.Figure 4—source data 1.Figure 4C.
+**Figure 4.:** (A) SunTag reporter schematic. In addition to the tandem SunTag repeats and the auxin-inducible degron, this reporter encodes nano luciferase and BFP, which are not used in the present experiments. The 3’ UTR also encodes tandem repeats of the MS2 stem loop, which can be used to label the mRNA red. However, since we detect mRNA by FISH, we do not use the MS2 stem loops in the present experiments. (B) Example cells imaged by FISH-IF. Cells were either untreated (top row), treated with 91 μM puromycin for 5 min (second row), pre-treated with 208 μM emetine for 15 min followed by 91 μM puromycin for 5 min (third row), or pre-treated with 37 μM anisomycin for 5 min followed by 91 μM puromycin for 5 min (last row). Yellow arrows: examples of translating mRNAs; White arrows: example of single fully synthesized SunTag polypeptide (released from the ribosome); Blue arrows: examples of untranslating mRNAs. Scale bar in top left image: 10 microns. Scale bar in top right image: two microns. (C) Fraction of mRNAs co-localized with SunTag signal. Each dot represents one cell. Cells are only included in the analysis if they have more than five and fewer than 36 mRNAs. 20–27 cells and 313–513 mRNAs per condition were analyzed. Black lines indicate mean with standard error of the mean. P values were calculated by two-sample t-test. Experiment performed once.
 
 In untreated cells, an average of 63% of single mRNAs (red foci) per cell co-localize with bright SunTag signal (green foci) (Figure 4B, top row and 4C); these co-localized spots reflect mRNAs bound by ribosomes synthesizing the SunTag reporter, while weaker isolated green spots reflect single fully synthesized SunTag polypeptides that have been released from the ribosome (Wu et al., 2016). Upon treatment with 91 μM puromycin for 5 min, an average of only 3% of mRNAs per cell colocalize with green signal, consistent with release of nascent chains upon puromycin treatment. Remarkably, pre-treatment with 208 μM emetine for 15 min yielded similar results: only 5% of mRNAs on average colocalized with SunTag signal. Importantly, pre-treatment for 5 min with elongation inhibitor anisomycin (37 μM), resulted in an average of 50% of mRNAs co-localized with green foci, as seen in untreated cells. Together, these data indicate that 5 min of puromycin treatment causes release of nascent polypeptides and diffusion away from ribosomes. Pre-treatment with emetine has no effect on puromycin-induced release.
 
-## Puromycylation treatment times are long compared to protein diffusion rates
+### Puromycylation treatment times are long compared to protein diffusion rates
 
 While initial reports argued that emetine was required to stabilize the interaction of puromycylated peptides with ribosomes, some recent studies of local protein synthesis via the puromycylation method relied on treatment with puromycin alone for ~5–10 min, with the implication that detected nascent proteins do not appreciably diffuse away from their site of synthesis (i.e. ribosome) within the treatment time (Colombo et al., 1965; tom Dieck et al., 2015; Morisaki et al., 2016). To determine how far a nascent protein might diffuse on these timescales (i.e. the spatial resolution of the method), we calculated the expected displacement as a function of time, based on the previously measured diffusion coefficient of GFP in the cytosol (Di Rienzo et al., 2014; Figure 5). This calculation depends on the dimensionality of space in which the molecule is confined. However, even in the most limiting case of one-dimensional diffusion—approximating movement along a very narrow neural projection—a protein is expected to diffuse ~100 µm in less than 1 min. This distance is large compared to both the scale of the relevant structures to which protein synthesis was localized in neurons (tens of microns) (tom Dieck et al., 2015; Biever et al., 2020), and to the diameter of HeLa cells (~20 microns) (Borle, 1969), in which the method was demonstrated (David et al., 2012). Thus, limiting puromycin treatment time to a few minutes does not ensure that nascent proteins remain confined to the subcellular region in which they are synthesized.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/60303/elife-60303-fig5-v3.jpg)
 
-**Figure 5.:** Calculation of expected displacement by diffusion as a function of time, using the equation < x > = 22nDt where n is the dimensionality, D is the diffusion coefficient (126 µm2/s Di Rienzo et al., 2014) and t is time. The calculation is shown for 1, 2 and 3 dimensions.
+**Figure 5.:** Calculation of expected displacement by diffusion as a function of time, using the equation < x2 > = 2nDt where n is the dimensionality, D is the diffusion coefficient (126 µm2/s Di Rienzo et al., 2014) and t is time. The calculation is shown for 1, 2 and 3 dimensions.
 
 ## Discussion
 
@@ -76,23 +84,306 @@ In this work, we have demonstrated that the puromycin method for visualizing loc
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM-luc (plasmid)</td>
+      <td>Promega</td>
+      <td>GenBank X65316.2</td>
+      <td>Firefly luciferase cassette vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSL312 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full-length firefly luciferase template; can be obtained from Green Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>P3.35_pGEM_luc_trunc_kozak_RC (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Truncated firefly luciferase template; can be obtained from Green Lab</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>StuI (restriction enzyme)</td>
+      <td>NEB</td>
+      <td>R0187S</td>
+      <td>Linearization of pSL312 for SP6 transcription</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HpaI (restriction enzyme)</td>
+      <td>NEB</td>
+      <td>R0105S</td>
+      <td>Linearization of P3.35 for SP6 transcription</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Full-length luciferase mRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SP6 transcribed from pSL312</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Truncated luciferase mRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SP6 transcribed from P3.35</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE SP6 transcription kit</td>
+      <td>Invitrogen</td>
+      <td>AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nuclease-treatedrabbit reticulocyte lysate translation reactions</td>
+      <td>Promega</td>
+      <td>L4960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Luciferin</td>
+      <td>PerkinElmer</td>
+      <td>122799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Superase-In RNase Inhibitor</td>
+      <td>Invitrogen</td>
+      <td>AM2696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5'-guanylyl imidodiphosphate (GDPNP)</td>
+      <td>Jena Bioscience</td>
+      <td>NU-401–50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine</td>
+      <td>Cayman Chemical</td>
+      <td>21048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma Aldrich</td>
+      <td>P7255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Sigma</td>
+      <td>A9789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT Plus OPP Alexa Fluor 488 Protein Synthesis Assay kit</td>
+      <td>Invitrogen</td>
+      <td>C10456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U-2OS cells containing Flp-In locus</td>
+      <td>Andrew Holland lab (Johns Hopkins University)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>amino-11–12 ddUTP</td>
+      <td>Lumiprobe</td>
+      <td>A5040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>deoxynucleotidyl transferase</td>
+      <td>Thermo Fisher</td>
+      <td>EP0162</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>doxycycline hyclate</td>
+      <td>Millipore Sigma</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy3-NHS ester</td>
+      <td>Lumiprobe</td>
+      <td>41020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-indole acetic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>I2886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>50-980-492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat tail collagen I</td>
+      <td>Gibco</td>
+      <td>A1048301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BSA</td>
+      <td>VWR</td>
+      <td>VWRV0332-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SSC buffer</td>
+      <td>Corning</td>
+      <td>46–020 CM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>formamide</td>
+      <td>Sigma Aldrich</td>
+      <td>F9037-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>E. coli tRNA</td>
+      <td>Sigma Aldrich</td>
+      <td>10109541001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dextran sulfate</td>
+      <td>Sigma Aldrich</td>
+      <td>D8906-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ribonucleoside vanadyl complex</td>
+      <td>NEB</td>
+      <td>S1402S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP antibody</td>
+      <td>Aves Labs</td>
+      <td>RRID:AB_2307313</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken polyclonal IgY secondary antibody</td>
+      <td>Thermo Fisher</td>
+      <td>RRID:AB_2534096</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Diamond antifade reagent</td>
+      <td>Invitrogen</td>
+      <td>P36962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pubc-OSTIR1-IRES-scFv-sfGFP-NLS (plasmid)</td>
+      <td>Reference 32</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FISH-quant</td>
+      <td>Reference 45</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB scripts for processing FISH-quant output</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Scripts for quantifying number of translating ribosomes per mRNA from FISH-IF data; available asSource code 1 in supplementary files</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucleotides used to generate FISH probes</td>
+      <td>Reference 32</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 A Kozak consensus sequence (GCCACC) was inserted immediately upstream of the start codon of luciferase reporter plasmid pGEM-luc (GenBank X65316.2) to generate pSL312. This was used as the template for full-length firefly luciferase mRNA transcription and was linearized with a StuI restriction digest. For reasons unrelated to the current work, a disabled 2A peptide sequence was fused downstream of the luciferase sequence to generate P3.28_pGEM_ luc_2A_AGP|_kozak_RC, which was further modified by inserting an HpaI restriction site 2 nt 3′ of the final codon of luciferase (TTGtt|aac, where TTG is the final luciferase sense codon) through site-directed mutagenesis to make P3.35_pGEM_luc_trunc_kozak_RC. This plasmid was linearized with an HpaI restriction digest such that transcription of this template would terminate at TTGtt and would exclude the 2A peptide sequence. For SunTag experiments, the plasmid pcDNA_CMV_ST was used to generate a stable cell line using the Flp-In method. pcDNA_CMV_ST contains an open reading frame coding for 23x SunTag repeats, Nano Luciferase, BFP and an auxin-inducible degron, expressed from a pcDNA5 vector.
 
-## OPP-click
+### OPP-click
 
 C. elegans was cultured according to standard methods at 20 °C. N2 adult germlines were dissected into egg buffer with 1 mM levamisole. Germlines were incubated with 45 µM emetine, or 37 µM anisomycin (Bastide et al., 2018), or egg buffer alone for 15 min. OPP was added at a concentration of 20 µM while maintaining concentrations of emetine and anisomycin for the 5 min incubation. Germlines were rinsed once with PBS and fixed in 4% paraformaldehyde. Click reaction was carried out with Click-iT Plus OPP Alexa Fluor 488 Protein Synthesis Assay kit (Thermo Fisher C10456) according to the manufacturer's directions.
 
-## C. elegans imaging
+### C. elegans imaging
 
 Images were taken with a Zeiss Axio Observer equipped with a CSU-W1 SoRA spinning disk scan head (Yokogawa) and Slidebook v6.0 software (Intelligent Imaging Innovations). Germline images are 10 μm z-stacks starting at the bottom of the distal germline with 0.27 μm step size using a 63X objective. Average intensity projections were quantified in ImageJ. An ROI was drawn around the mitotic zone of each germline and fluorescence in the 488 nm channel was measured. Fluorescence intensity of each germline was normalized to the average intensity of the germlines treated with OPP alone.
 
-## Luciferase-based real-time translation monitoring assay
+### Luciferase-based real-time translation monitoring assay
 
 Luciferase plasmids were linearized with a blunt-end restriction enzyme just upstream (truncated) or downstream (full-length) of the stop codon, followed by transcription with the mMESSAGE mMACHINE SP6 transcription kit (Invitrogen AM1340). Synthesized mRNA was quantified using a Nanodrop 1000. Nuclease-treated rabbit reticulocyte lysate translation reactions (Promega L4960) were set up in a 384-well plate (Thermo Scientific 164610) on ice. Luciferin (PerkinElmer 122799) was added to each reaction well to a concentration of 0.5 mM followed by 12 units of Superase-In RNase Inhibitor (Invitrogen AM2696). SP6-transcribed truncated or full-length firefly luciferase mRNA was added to a concentration of 40 µg/mL using a multichannel pipette and the plate was immediately inserted into a luminometer microplate reader (Biotek Synergy H1MD) regulated at 30°C. Luminescence readings were taken every few seconds, depending on the number of reaction wells. 5'-guanylyl imidodiphosphate (GDPNP; Jena Bioscience NU-401–50) was added to the wells 16 min after the start of the reaction for 5 min at a concentration of 100 µM followed by a 5-min pretreatment of either 208 µM emetine (Cayman Chemical 21048) or 9.4 µM anisomycin (Sigma A9789). Puromycin (Sigma Aldrich P7255) was added to wells at a concentration of 91 µM. In experiments where GDPNP was not used, the first translation inhibitors were added to the reaction wells at 21 min following the start of the reaction. Reagents were added to the wells by first ejecting the microplate from the luminometer and pipetting the reagents in using a multichannel pipette. The microplate was then promptly inserted again.
 
-## Stable cell line
+### Stable cell line
 
 U-2OS cells stably expressing the SunTag reporter were generated using the Flp-In system with the pcDNA_CMV_ST plasmid, as described in Goldman et al., 2020. The cell line was a kind gift from Dr. Andrew Holland (Johns Hopkins University). While the cell line's identity has not recently been authenticated via STR profiling, it has frequently been tested for mycoplasma contamination and is mycoplasma free. smFISH Probe Labeling smFISH probes targeting the SunTag region of the mRNA reporter transcript were synthesized as described (Goldman et al., 2020; Gaspar et al., 2017). 20-mer oligonucleotides (Supplementary file 1) were ordered from IDT in an arrayed format, pooled, and labeled on the 3’-end with amino-11–12 ddUTP (Lumiprobe A5040) using deoxynucleotidyl transferase (TdT, Thermo Fisher EP0162). After size exclusion purification on a Spin-X centrifuge column (Corning 8161) with Bio Gel P-4 Beads (Bio Rad 1504124), the oligonucleotide was labeled with Cy3-NHS ester (Lumiprobe 41020). Following the labeling reaction, the probes were again purified over a Spin-X column to remove excessive dyes.
 
@@ -100,6 +391,6 @@ smFISH-IF smFISH-IF was performed similarly as described (Goldman et al., 2020; 
 
 Approximately, 24 hr following induction, cells were treated with either 91 µM puromycin in the medium for 5 min, 208 µM emetine in the medium for 15 min followed by 91 µM puromycin in the medium for 5 min, or 37 µM anisomycin in the medium for 5 min followed by 91 µM puromycin in the medium for 5 min. Control cells were left untreated. Following treatment, samples were prepared for smFISH-IF. All solutions were prepared in nuclease free water (Quality Biological 351-029-131CS). Cells were washed 3x with 1x PBS (Corning 46–013 CM) + 5 mM magnesium chloride (Sigma-Aldrich M2670-500G) (PBSM). Cell were then fixed for 10 min at room temperature in PBSM + 4% paraformaldehyde (Electron Microscopy Sciences 50-980-492). Following fixation, samples were washed for 3 × 5 min in PBSM and permeabilized for 10 min in PBSM + 5 mg/mL BSA (VWR VWRV0332-25G) + 0.1% Triton-X100 (Sigma-Aldrich T8787-100mL). After 3 × 5 min washes in PBSM, cells were incubated for 30 min at room temperature in 2xSSC (Corning 46–020 CM), 10% formamide (Sigma-Aldrich F9037-100ML), and 5 mg/mL BSA (VWR VWRV0332-25G). Following pre-hybridization incubation, samples were incubated for 3 hr at 37°C in 2xSSC (Corning 46–020 CM), 10% formamide (Sigma-Aldrich F9037-100ML), 1 mg/mL competitor E. coli tRNA (Sigma-Aldrich 10109541001), 10% w/v dextran sulfate (Sigma-Aldrich D8906-100G), 2 mM ribonucleoside vanadyl complex (NEB S1402S), 100 units/mL SUPERase In (Thermo Fisher AM2694), 60 nM SunTag_v4-Cy3 smFISH probes, and 1:1000 chicken anti-GFP (Aves Labs GFP-1010). The coverslips were then washed 4x with 2xSSC (Corning 46–020 CM) + 10% formamide (Sigma-Aldrich F9037-100ML). The samples were then incubated with 2 × 20 min with a goat anti-chicken IgY secondary antibody labeled with Alexa Fluor 488 (Thermo Fisher A-11039). After 3x washes in 2xSCC, cells were mounted on pre-cleaned frosted glass cover slides (Fisher 12-552-3) with ProLong Diamond antifade reagent with DAPI (Invitrogen P36962). After curing for 24 hr, the samples were imaged on a custom Nikon Ti-2 wide-field microscope equipped with a 60 × 1.4 NA oil immersion objective lens (Nikon), a Spectra X LED light engine (Lumencor), and an Orca 4.0 v2 scMOS camera (Hamamatsu). The microscope was under automated control by Nikon Elements software. x-y pixel size: 107.5 nm. z-step: 300 nm.
 
-## smFISH Analysis
+### smFISH Analysis
 
 Fixed cell image analysis was performed as described (Goldman et al., 2020) with existing or custom MATLAB software. Spot detection of the mRNA and proteins channels were performed independently in FISH-Quant (Mueller et al., 2013). In the protein channel, all released single peptides in the cytoplasm were detected and thresholded based on their Gaussian fitting parameters (intensity and width) and inspected to ensure accuracy. All released single peptides were then averaged into an idealized point spread function to calculate the integrated intensity of a single SunTag array. In the mRNA channel, only cytoplasmic RNAs were included for analysis. After determining all cytoplasmic mRNA positions, FISH-Quant’s transcription site quantification algorithm was employed to quantify the integrated intensity of the associated translation site. Briefly, a 11 × 11 bounding box was drawn at the position of each mRNA and Gaussian fitting was performed centered on the brightest pixel within this box. The integrated intensity of the translation site was then normalized against the intensity of the idealized single peptide to calculate the number of nascent chains associated with a given mRNA. The translation sites were filtered based on shape, intensity, and distance from the mRNA. Failure to converge on an accurate fit given these parameters resulted in the associated translation site intensity to have an intensity value of 0. Translation sites with an integrated intensity of less than one idealized single peptide were determined to be unassociated with SunTag signal. Only cells with greater than five and fewer than 35 mRNAs were considered.

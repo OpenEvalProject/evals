@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.36399.001 We analyzed 2898 scientific papers published between 1995 and 2017 in which two or more authors shared the first author position. For papers in which the first and second authors made equal contributions, mixed-gender combinations were most frequent, followed by male-male and then female-female author combinations. For mixed-gender combinations, more male authors were in the first position, although the disparity decreased over time. For papers in which three or more authors made equal contributions, there were more male authors than female authors in the first position and more all-male than all-female author combinations. The gender inequalities observed among authors who made equal contributions are not consistent with random or alphabetical ordering of authors. These results raise concerns about female authors not receiving proper credit for publications and suggest a need for journals to request clarity on the method used to decide author order among those who contributed equally.
+We analyzed 2898 scientific papers published between 1995 and 2017 in which two or more authors shared the first author position. For papers in which the first and second authors made equal contributions, mixed-gender combinations were most frequent, followed by male-male and then female-female author combinations. For mixed-gender combinations, more male authors were in the first position, although the disparity decreased over time. For papers in which three or more authors made equal contributions, there were more male authors than female authors in the first position and more all-male than all-female author combinations. The gender inequalities observed among authors who made equal contributions are not consistent with random or alphabetical ordering of authors. These results raise concerns about female authors not receiving proper credit for publications and suggest a need for journals to request clarity on the method used to decide author order among those who contributed equally.
 
 ## Introduction
 
@@ -28,23 +28,356 @@ In this study, we analyzed the gender order of publications where two or more in
 
 We analyzed 3034 scientific publications from 1995 to 2017 where two or more authors stated to have contributed equally. From this set, we identified the gender for each of the authors listed as contributing equally in 2898 publications, which provided our usable dataset (Table 1). Two authors were listed as contributing equally in 2406 (83%) publications, while 492 (17%) listed three or more (Table 1). We identified eight classes of author combinations claiming equal contribution: male-male, male-female, female-male, female-female, more than two all-male, more than two all-female and more than two with mixed gender having either a male or female listed first (Figure 1). For publications where two authors contributed equally, the most common gender pairing involved mixed gender, which was closely followed by male-male author pairings and female only author pairings were least frequent. These 2406 publications included 57 publications identified in an initial search to determine what could be expected in the literature, for which we only recorded gender order data. As such, they were removed from further data analysis, which gave us 2349 publications with two co-authors. Of these, 1377 papers had two authors of the same gender (mm or ff), leaving 972 with mixed gender authors claiming equal contribution, which consisted of 548 (56.38%) where the male author was listed first and 424 (43.62%) where the female author was listed first. Assuming that individuals of both genders contributed equally and that this author order was random, one would have expected roughly equal male-female and female-male author pairings. Comparing the expected and observed gender ratios yielded a Chi-square statistic of 15.8 (df = 1 and p<0.001).
 
+**Table 1.**
+ Summary of data on authors listed a contributing equally.Table 1—source data 1.All data organized by journal, author/gender category, and year.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Article statistics</th>
+      <th colspan="4">Contributed equally = 2</th>
+      <th colspan="4">Contributed equally &gt; 2</th>
+    </tr>
+    <tr>
+      <th>Journal title</th>
+      <th>Total</th>
+      <th>Unknown</th>
+      <th>Usable</th>
+      <th>mm</th>
+      <th>mf</th>
+      <th>ff</th>
+      <th>fm</th>
+      <th>m first</th>
+      <th>f first</th>
+      <th>all M</th>
+      <th>all f</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biophysical J</td>
+      <td>101</td>
+      <td>2</td>
+      <td>99</td>
+      <td>60</td>
+      <td>17</td>
+      <td>5</td>
+      <td>9</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cell Reports</td>
+      <td>105</td>
+      <td>1</td>
+      <td>104</td>
+      <td>41</td>
+      <td>12</td>
+      <td>11</td>
+      <td>15</td>
+      <td>12</td>
+      <td>9</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Curr Biol</td>
+      <td>103</td>
+      <td>4</td>
+      <td>99</td>
+      <td>41</td>
+      <td>23</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>eLife</td>
+      <td>90</td>
+      <td>2</td>
+      <td>88</td>
+      <td>25</td>
+      <td>18</td>
+      <td>15</td>
+      <td>11</td>
+      <td>5</td>
+      <td>6</td>
+      <td>8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>J Biol Chem</td>
+      <td>300</td>
+      <td>28</td>
+      <td>272</td>
+      <td>99</td>
+      <td>52</td>
+      <td>35</td>
+      <td>48</td>
+      <td>15</td>
+      <td>11</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>J Cell Bio</td>
+      <td>101</td>
+      <td>3</td>
+      <td>98</td>
+      <td>22</td>
+      <td>35</td>
+      <td>14</td>
+      <td>17</td>
+      <td>4</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>J Clin Invest</td>
+      <td>121</td>
+      <td>6</td>
+      <td>115</td>
+      <td>42</td>
+      <td>19</td>
+      <td>11</td>
+      <td>19</td>
+      <td>12</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>J Exp Med</td>
+      <td>210</td>
+      <td>13</td>
+      <td>197</td>
+      <td>65</td>
+      <td>40</td>
+      <td>26</td>
+      <td>30</td>
+      <td>10</td>
+      <td>8</td>
+      <td>11</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>J Immunol</td>
+      <td>308</td>
+      <td>10</td>
+      <td>298</td>
+      <td>89</td>
+      <td>76</td>
+      <td>59</td>
+      <td>48</td>
+      <td>16</td>
+      <td>3</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>mBio</td>
+      <td>100</td>
+      <td>2</td>
+      <td>98</td>
+      <td>27</td>
+      <td>26</td>
+      <td>12</td>
+      <td>14</td>
+      <td>8</td>
+      <td>7</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Nature</td>
+      <td>104</td>
+      <td>6</td>
+      <td>98</td>
+      <td>44</td>
+      <td>12</td>
+      <td>7</td>
+      <td>8</td>
+      <td>14</td>
+      <td>3</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PLOS Bio</td>
+      <td>110</td>
+      <td>9</td>
+      <td>101</td>
+      <td>39</td>
+      <td>18</td>
+      <td>13</td>
+      <td>17</td>
+      <td>6</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PLOS Comp Bio</td>
+      <td>95</td>
+      <td>2</td>
+      <td>93</td>
+      <td>45</td>
+      <td>14</td>
+      <td>6</td>
+      <td>11</td>
+      <td>3</td>
+      <td>4</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PLOS Genet</td>
+      <td>186</td>
+      <td>8</td>
+      <td>178</td>
+      <td>52</td>
+      <td>26</td>
+      <td>16</td>
+      <td>23</td>
+      <td>20</td>
+      <td>35</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PLOS Negl Trop Dis</td>
+      <td>105</td>
+      <td>6</td>
+      <td>99</td>
+      <td>32</td>
+      <td>13</td>
+      <td>21</td>
+      <td>19</td>
+      <td>8</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PLOS Pathogen</td>
+      <td>179</td>
+      <td>7</td>
+      <td>172</td>
+      <td>35</td>
+      <td>39</td>
+      <td>33</td>
+      <td>25</td>
+      <td>20</td>
+      <td>9</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>PNAS</td>
+      <td>411</td>
+      <td>14</td>
+      <td>397</td>
+      <td>151</td>
+      <td>66</td>
+      <td>44</td>
+      <td>61</td>
+      <td>30</td>
+      <td>19</td>
+      <td>22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Science</td>
+      <td>128</td>
+      <td>11</td>
+      <td>117</td>
+      <td>34</td>
+      <td>15</td>
+      <td>21</td>
+      <td>25</td>
+      <td>7</td>
+      <td>9</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Initial search*</td>
+      <td>57</td>
+      <td>0</td>
+      <td>57</td>
+      <td>0</td>
+      <td>35</td>
+      <td>0</td>
+      <td>22</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Misc†</td>
+      <td>120</td>
+      <td>2</td>
+      <td>118</td>
+      <td>57</td>
+      <td>27</td>
+      <td>14</td>
+      <td>12</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3034</td>
+      <td>136</td>
+      <td>2898</td>
+      <td>1000</td>
+      <td>583</td>
+      <td>377</td>
+      <td>446</td>
+      <td>201</td>
+      <td>148</td>
+      <td>116</td>
+      <td>27</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These papers are from the early searches used to identify the variables in this study and only mf and fm numbers were recorded. These 57 papers were removed from subsequent analysis.†Miscellaneous includes the following journals; the number of articles in which two or more authors made equal contributions is shown in parenthesis for each journal. American Journal of Pathology (1); Angewandte Chemie (17); Biochemical and Biophysical Research Communications (2); Blood (1); BMC Bioinformatics (1); BMC Proceedings (1); BMC Systems Biology (1); Brain Pathology (1); Cancer Research (2); Cell (6); EMBO Journal (4); European Journal of Immunology (1); FEBS Letters (27); Genes and Development (5); Genome Research (1); Hepatology (1); International Journal of Cancer (2); Journal of Bone and Mineral Research (2); Journal of Cell Science (2); Journal of Molecular Biology (1); Journal of Physiology (2); Memórias do Instituto Oswaldo Cruz (15); Nature Biotechnology (1); Nature Cell Biology (1); Nature Genetics (15); Nature Materials (1); Nature Medicine (4); PLOS One (1); Protein Science (1)._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36399/elife-36399-fig1-v1.jpg)
+
+**Figure 1.:** We studied papers in which two or more authors shared the first author position: ‘fm’, ‘ff’, ‘mf’ and ‘mm’ represent papers in which two authors shared the first author position, with the actual order of the authors being female-male, female-female, male-female and male-male. For papers in which more than two authors shared the first author position, ‘all f’ means that all these authors were female, ‘all m’ means they were all male, and ‘f+’ or 'm+' means that the first author listed in a mixed-gender combination was female or male respectively. The plot shows that the proportion of combinations in which a male author is listed first (various shades of blue) is decreasing over time.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36399/elife-36399-fig1-figsupp1-v1.jpg)
+
 Dividing the mixed gender two author publications into those published 1995–2006 and 2007–2017 yielded 190 and 358 pairings for male-female author order, respectively, and 103 and 321 pairings with female-male author order, respectively. When these ratios were analyzed with the Chi-square statistic the difference between observed and expected ratios was significant in the 1996–2006 group (p<0.001), but not in the 2007–2017 group (p=0.156). Analysis of publications for gender order using a Generalized Linear Population-Average model with Binomial Distribution and Logit-link estimated with Generalized Estimating Equations (GEE) and robust variance provided an estimate for gender bias in first authorship as the dependent variable among papers with two equally contributing authors of different gender (N = 972). The Odds Ratio of Gender Bias in First Authorship (95% Confidence Interval) using year as a continuous variable was 0.958 (0.931–0.986), indicating an estimated 4.2% decrease in odds of preference for males in the first position per year considering all publications from 1995 to 2017, adjusted for country, (95% CI: from 1% to 7% decrease per year, p-value=0.003). The Odds Ratio comparing publications after 2007 to those in years 1995–2007 (95% confidence interval) using the year as a categorical variable and adjusting for country was 0.605 (0.443–0.828) with p=0.002. Hence, the preference for males in the first position was pronounced prior to 2007, but has since decreased (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/36399/elife-36399-fig2-v1.jpg)
 
-**Figure 2.:** Temporal trend in gender bias among two equally contributing authors of different gender: the y-axis is log (p/(1 p)) where p is the probability of bias; the x-axis is publication year. In the absence of bias, log (p/(1 p)) would be zero.10.7554/eLife.36399.009Figure 2—source data 1.Figure 2.10.7554/eLife.36399.010Figure 2—source data 2.10.7554/eLife.36399.011Figure 2—source data 3.
+**Figure 2.:** Temporal trend in gender bias among two equally contributing authors of different gender: the y-axis is log (p/(1 p)) where p is the probability of bias; the x-axis is publication year. In the absence of bias, log (p/(1 p)) would be zero.
 
 For the 492 publications with three or more authors contributing equally, the most common form involved mixed gender contributions (349, 71%). Of these 349 publications, 201 (57.59%) listed a male author first while 148 (42.40%) listed a female author first. Comparing male author first versus female author first ratios observed versus expected values yielded p=0.005. Although lower numbers precluded a decadal analysis these numbers imply a preference for male authors in the first positions of a multi-author byline when three or more individuals contribute equally. Analysis of the frequency of publications with three or more authors as a function of publication year revealed a positive trend line with time, suggesting that these author combinations are becoming more frequent (Figure 3). Analysis of likelihood of male preference in the first author positions when three or more individuals contributed equally did not reveal any statistically significant associations with year of publication or country. The results of the Generalized Linear Population-Average model described above showed a 1% decrease in odds of gender bias per year among publications with more than two equally contributing authors (estimated Odds Ratio = 0.99, 95% confidence interval: 0.933, 1.051).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36399/elife-36399-fig3-v1.jpg)
 
-**Figure 3.:** Points denote the percentage of papers with where more than two authors claimed equal contribution. Trendline R2 value as 0.4857.10.7554/eLife.36399.013Figure 3—source data 1.Figure 3.10.7554/eLife.36399.014Figure 3—source data 2.10.7554/eLife.36399.015Figure 3—source data 3.
+**Figure 3.:** Points denote the percentage of papers with where more than two authors claimed equal contribution. Trendline R2 value as 0.4857.
 
 Analysis of the relative distribution of the eight types of author association as a function of continent from which the publication originated revealed similar patterns for Asia, North America and Europe (Figure 4). Patterns for Africa, Europe, and South America were different from those of Asia, North American and Australia groupings, but some of these categories contain fewer papers, which suggests a need for caution in comparing between these continental groupings. We considered analyzing temporal trends for various countries, but with the exception of the United States had too few per country for a meaningful analysis. Consequently, we divided the publications into three groups of origin, United States, Europe and Other. Analysis of the predicted probabilities of gender bias in first authorship by year and country among papers with two equally contributing authors of different gender showed a declining trend for each of the three world regions (Figure 4). In these analyses, there were no differences in gender bias by country.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36399/elife-36399-fig4-v1.jpg)
 
-**Figure 4.:** Predicted probabilities of male first authorship by year for three geographical regions (USA: blue; Europe: green; Other: red) among papers with two equally contributing authors of different gender (N = 972).10.7554/eLife.36399.017Figure 4—source data 1.Figure 4.10.7554/eLife.36399.018Figure 4—source data 2.10.7554/eLife.36399.019Figure 4—source data 3.
+**Figure 4.:** Predicted probabilities of male first authorship by year for three geographical regions (USA: blue; Europe: green; Other: red) among papers with two equally contributing authors of different gender (N = 972).
 
 We analyzed the frequency of alphabetical ordering for author sequences for all publications examined. Overall, 49.6% of all publications had the authors names ordered alphabetically. The percentages of author associations for which the author sequence was alphabetical were 49%, 49%, 48%, 55%, 22%, 41%, 26%, and 25% for male-male, male-female, female-male, female-female, three or more authors all male, three or more authors all female, three or more authors male author first, and three or more authors female author first, respectively. In comparing male vs, female author first position there was no significant difference between the frequencies of alphabetical versus no-alphabetical ordering. However, among those publications where the authors were ordered alphabetically male-female author combinations were more common than female-male author combinations (Chi-square statistic is 4.359; p=0.037).
 
@@ -82,6 +415,6 @@ One of the two coauthors inspected each article manually. Determination of autho
 
 At the beginning of this study, the Pubmed database had approximately 25,000,000 million entries. However, given that only 0.8% of all papers in PubMed have first authors that contribute equally (Dubnansky and Omary, 2012), this would reduce the size of the database of interest to approximately 200,000 publications. Hence, our database of 2898 usable publications represents about 1.45% of the available publications in this category. Chi-square analysis used the on-line calculator http://www.socscistatistics.com/tests/chisquare/Default2.aspx
 
-## Statistical method
+### Statistical method
 
 Gender bias in first authorship was defined as first male author when all the authors contributed equally. Generalized linear population-average model with binomial distribution and logit link was used to estimate odds ratio of gender bias associated with country of origin and year of publication. The model was estimated using generalized estimating equations (GEE) and robust variance estimates. The analysis accounted for potential correlation among multiple publications by the same journal. The analysis was stratified by the number of authors: two versus more than two. Country of origin was modeled as a categorical variable with two indicator variables in the model and US as the reference category: Europe vs. US and Other vs. US. The publications that included multiple countries, such as European and the US, were classified as US-based. Year of Publication was modeled as a continuous linear term in the model as well as a two-category predictor: 2007–2017 vs 1995–2006. Analysis was performed using STATA version 15, StataCorp. 2017. Stata Statistical Software: Release 15. College Station, Texas: StataCorp LLC.

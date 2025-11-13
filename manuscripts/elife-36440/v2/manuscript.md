@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.36440.001 Ciliary and rhabdomeric photoreceptor cells represent two main lines of photoreceptor-cell evolution in animals. The two cell types coexist in some animals, however how these cells functionally integrate is unknown. We used connectomics to map synaptic paths between ciliary and rhabdomeric photoreceptors in the planktonic larva of the annelid Platynereis and found that ciliary photoreceptors are presynaptic to the rhabdomeric circuit. The behaviors mediated by the ciliary and rhabdomeric cells also interact hierarchically. The ciliary photoreceptors are UV-sensitive and mediate downward swimming in non-directional UV light, a behavior absent in ciliary-opsin knockout larvae. UV avoidance overrides positive phototaxis mediated by the rhabdomeric eyes such that vertical swimming direction is determined by the ratio of blue/UV light. Since this ratio increases with depth, Platynereis larvae may use it as a depth gauge during vertical migration. Our results revealed a functional integration of ciliary and rhabdomeric photoreceptor cells in a zooplankton larva.
+Ciliary and rhabdomeric photoreceptor cells represent two main lines of photoreceptor-cell evolution in animals. The two cell types coexist in some animals, however how these cells functionally integrate is unknown. We used connectomics to map synaptic paths between ciliary and rhabdomeric photoreceptors in the planktonic larva of the annelid Platynereis and found that ciliary photoreceptors are presynaptic to the rhabdomeric circuit. The behaviors mediated by the ciliary and rhabdomeric cells also interact hierarchically. The ciliary photoreceptors are UV-sensitive and mediate downward swimming in non-directional UV light, a behavior absent in ciliary-opsin knockout larvae. UV avoidance overrides positive phototaxis mediated by the rhabdomeric eyes such that vertical swimming direction is determined by the ratio of blue/UV light. Since this ratio increases with depth, Platynereis larvae may use it as a depth gauge during vertical migration. Our results revealed a functional integration of ciliary and rhabdomeric photoreceptor cells in a zooplankton larva.
 
 ## Introduction
 
@@ -43,53 +43,89 @@ The function of cPRCs in Platynereis is much less clear. These and the surroundi
 
 ## Results
 
-## Synaptic pathways between rhabdomeric and ciliary photoreceptors
+### Synaptic pathways between rhabdomeric and ciliary photoreceptors
 
 To identify synaptic connections between the cPRC and rPRC circuits, we used a serial-section transmission electron microscopy (ssTEM) dataset spanning the entire body of a 72 hr post fertilization (hpf) Platynereis larva (Randel et al., 2015). Previously, we reported the synaptic connectome of the rPRCs from the visual eyes and eyespots, (Randel et al., 2015, 2014) and the direct postsynaptic circuit of the four cPRCs with ramified cilia (Williams et al., 2017a). Briefly, the glutamatergic rPRCs of the adult eyes connect through three layers of interneurons to cholinergic motoneurons in the ventral head (vMN) that innervate longitudinal trunk muscles. The main premotor interneurons in this circuit are the Schnörkel interneurons (INsn) (Figure 1C,G) (Randel et al., 2015; Randel et al., 2014). The rPRCs of the eyespot synapse directly on the ciliary band and the vMNs (Figure 1G) (Jékely et al., 2008; Randel et al., 2015, 2013). The four cholinergic cPRCs send axons to the neurosecretory plexus in the anterior nervous system and synapse on four peptidergic/cholinergic RGW interneurons (labelled INRGW, and named after the expression of the RGWamide neuropeptide [Shahidi et al., 2015; Williams et al., 2017]) and four NOS interneurons (labelled INNOS, and named after the expression of the nitric oxide synthase (NOS) gene; unpublished). The cPRCs also synapse on a group of flask-shaped sensory-neurosecretory neurons that are part of the neurosecretory anterior nervous system. These cells express diverse neuropeptides but have no postsynaptic partners (Williams et al., 2017). The RGW cells synapse on two serotonergic cells (Ser-h1) that, together with their postsynaptic partner, the cholinergic MC neuron, are part of the ciliomotor circuitry of the larva (Verasztó et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig1-v2.jpg)
+
+**Figure 1.:** (A) All cells of the cPRC and rPRC circuits in the larva (in color). The body outline is shown in grey. (B) All cells of the cPRC and rPRC circuits (in color), anterior view. All other neurons are shown in grey. Circuits were reconstructed from a whole-body ssTEM volume of a 72 hpf larva. (C) All neurons of the rPRC circuit. (D) The four cPRCs and all neurons directly postsynaptic to them. (E) Connections between the cPRC and rPRC circuits. Top panel: the four RGW interneurons (INRGW) are presynaptic to the INsn cells. Bottom panel: the six INpreMN cells and the two MS cells are presynaptic to the ventral motoneurons. (F) Grouped connectivity matrix of the cPRC and rPRC circuits. The connections from the cPRC to the rPRC circuit are outlined in red. (G) Wiring diagram of the cPRC and rPRC circuits. Nodes represent groups of neurons (number indicated in square brackets), arrows represent synaptic connections. Synaptic connections from the cPRC to the rPRC circuit are in red. Edge width is a function of log synaptic count.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Nodes represent single neurons or groups of neurons (number indicated in []), arrows represent synaptic connections. Synaptic connections from the RGW cells to INSN, MS and INpreMN neurons are in red. Edge width is a function of log synaptic count.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Data are given for groups of cells. The matrix is the same as in Figure 1F.
+
 To analyze the possible synaptic integration of the rPRC and cPRC circuits, we searched for all synaptic connections between neurons of these circuits (Figure 1) in a synapse-level skeleton reconstruction of all cells in the larval head (2359 cells of which approximately 1230 are neurons; unpublished data). We did a systematic network search in Catmaid (Schneider-Mizell et al., 2016) for all possible synaptic paths (two hops) between the rPRC or the cPRC circuit. We identified three sites of contact. First, the RGW interneurons synapse on the Schnörkel premotor interneurons (INsn)(Figure 1E–G and Video 1). Second, we identified six interneurons (INpreMN) that are postsynaptic to the RGW interneurons and presynaptic to the ventral motoneurons (vMNs) of the visual circuit (Figure 1E–G). Third, two putative mechanosensory neurons bearing a sensory cilium and a collar of microvilli and located in the median head (MS1 and MS2)(Bezares-Calderon et al., 2018) are postsynaptic to the RGW cells and presynaptic to the vMNs and INpro interneurons of the visual circuit (Figure 1E–G and Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/36440/elife-36440-video1.mp4.jpg)
+
+**Video 1.:** The anatomy of the reconstructed neurons is shown together with the position of the same cells in the wiring diagram.
 
 Our graph search did not reveal any neurons that were directly postsynaptic to the rPRC circuit (from rPRC to vMN) and presynaptic to any neuron of the cPRC circuit. Thus, the cPRC circuit feeds hierarchically into the visual rPRC circuit (Figure 1G). This suggests that the cPRCs could influence phototaxis, a behavior mediated by the rhabdomeric eyes and eyespots (Gühmann et al., 2015; Jékely et al., 2008; Randel et al., 2014).
 
-## Acute UV-violet sensitivity of the ciliary photoreceptors in Platynereis
+### Acute UV-violet sensitivity of the ciliary photoreceptors in Platynereis
 
 What is the role of cPRCs in larval behavior and how do they influence phototaxis? First, to estimate the light sensitivity of the cPRCs, we reconstructed the morphology with ssTEM and measured the total sensory membrane surface-area of a cPRC (Figure 2A–D). Each cPRC has 12–15 basal bodies each with a root and an extensively branched sensory cilium. The branches are supported by single microtubule doublets (Figure 2—figure supplement 3). Based on the average diameter and total length of all branches in one cPRC we estimated a membrane area of 276 μm2, which is approximately 10 times smaller than the total disk membrane surface area of rat rods (Mayhew and Astle, 1997). This suggests that Platynereis cPRCs are sensitive enough to mediate acute light sensation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig2-v2.jpg)
+
+**Figure 2.:** (A) Acetylated tubulin staining of a 72 hpf larva. The ramified sensory cilia of cPRCs are marked with dashed lines. (B) TEM image of a section with a cPRC. Cell body in green, sensory cilia outlined in dashed white. (C) TEM image of a cPRC with sensory cilia. Yellow arrows mark the basal bodies of a cPRC. (D) Serial TEM reconstruction of the sensory cilia of a cPRC. (E) Absorption spectrum of purified Platynereis c-opsin1. Inset: dark-light difference spectrum. (F) Top: high GCaMP6s signal in the cPRCs during imaging conditions. Asterisks mark cPRC nuclei. Bottom: activation of two sensory neurons (SNearly) upon violet stimulation of cPRCs. (G) Top: representative example of cPRC response to prolonged local 488 nm and 405 nm stimulation. The colored boxes show the duration of the stimulation. Bottom: average cPRC response during continuous 488 nm and 405 nm stimulation. Data show mean and s.d. of mean, 488 nm N = 8, 405 nm N> 30. (H) Responses of a cPRC to repeated 405 nm and 488 nm (duration: 20 s) stimulation. (I) Responses of SNearly and SNlate sensory neurons to cPRC 405 nm stimulation. Correlation images are shown for SNearly and SNlate. Asterisks mark cPRC nuclei. (J) Responses of RGW cells to UV stimulation of a cPRC. Scale bars: (A) 50 μm (B) 10 μm, (F) 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The four cPRCs (arrows) are recognized based on their high GCaMP6s fluorescence. A region of interest used to deliver the 405 nm stimulation with the independent SIM scanner is shown (circle). (B) Distribution of 405 nm light scattered by the sample. (C) Quantification of signal intensity based on the line shown in (B).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) cPRC response to prolonged local 405 nm stimulation. (B) Response of a cPRC, an SNearly and an SNlate sensory neuron to prolonged 405 nm stimulation. (C) Response of a cPRC, two RGW interneurons, and an SNearly sensory neuron to prolonged 405 nm stimulation. (D) Responses of a cPRC and two RGW interneurons to repeated 405 nm stimulation of 20 s duration. (E) Responses of a cPRC, RGW, SNearly and SNlate neuron to alternating 405 and 488 nm light. (F) Responses of an SNearly sensory neuron to repeated 405 and 488 nm stimulation. (G) Responses of an SNlate sensory neuron to repeated 405 and 488 nm stimulation. (H–J) Responses of SNearly and SNlate sensory neurons to repeated 405 and 488 nm stimulation. (K–O) Responses of cPRC, RGW, SNearly and SNlate neurons to repeated 405 and 488 nm stimulation. The stimulation in D-O was 20 s.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) TEM image of the sensory area of a cPRC showing a branching cilium. The sensory dendrite and cilium are highlighted. (B) TEM image showing ciliary roots in a cPRC. The sensory dendrite is highlighted. Arrows point to ciliary roots. (C, D) TEM images showing the curved parallel branches of cPRCs. Each branch is supported by a single microtubule doublet. Scale bars: 1 μm.
 
 Next, we expressed Platynereis c-opsin1 in COS1 cells, reconstituted it with 11-cis-retinal and purified it. The reconstituted pigment absorbed in the UV range with a λ-max of 384 nm in the dark spectrum and a λ-max of 370 nm in the dark-light difference spectrum (Figure 2E), in agreement with a recent report (Tsukamoto et al., 2017).
 
 To investigate how the cPRCs respond to light, we did calcium imaging with larvae ubiquitously expressing the calcium sensor GCaMP6s (Chen et al., 2013; Verasztó et al., 2017). When imaged with a low-intensity 488 nm laser, the cPRCs had a high resting calcium level and the GCaMP6s signal highlighted their sensory cilia. We could thus identify the four cPRCs without stimulation (Figure 2F). When the cPRC cilia were locally stimulated (Figure 2—figure supplement 1) for 5 min with 405 nm light (140–250 times more photons on the sensory cilia than by the imaging laser), the calcium level dropped transiently at the cPRC somata and then increased strongly. This indicates transient cPRC hyperpolarization followed by depolarization. However, when the cPRCs were stimulated with a 488 nm laser of equal photon flux, they showed prolonged hyperpolarization only, without depolarization (Figure 2G). When the 405 nm stimulation was switched off during the hyperpolarization phase (after 20 s), the cPRCs still depolarized afterwards (Figure 2H).
 
-## UV-violet-specific activation of neurons postsynaptic to the ciliary photoreceptors
+### UV-violet-specific activation of neurons postsynaptic to the ciliary photoreceptors
 
 405 nm stimulation of the cPRCs also changed the activity of other neurons in the larval brain. Four neurons followed the activity pattern of the cPRCs (Figure 2J; Figure 2—figure supplement 2). These cells correspond by position to the four RGW interneurons, which together with the four NOS interneurons are direct postsynaptic targets of the cPRCs (Figure 1G)(Williams et al., 2017a). Additionally, two flask-shaped sensory neurons (SNearly) in the middle of the anterior nervous system depolarized upon stimulus onset. Two further sensory cells (SNlate) flanking the SNearly cells depolarized later, in parallel with the rising phase of cPRC activity (Figure 2I). These four SN cells correspond by position to four sensory-neurosecretory neurons that are postsynaptic to the cPRCs in the anterior nervous system (SNMIP1l, SNASTC1r and two SNNS20 cells)(Figure 1D)(Williams et al., 2017a). We next compared the responses of the RGW interneurons and the four SN neurons to 405 and 488 nm stimulation of the cPRCs. The RGW interneurons and the SNearly sensory neurons only responded to 405 nm stimulation (with opposite sign) but not to 488 nm stimulation. The SNlate neurons in some larvae also responded to 488 nm stimulation but these responses were weaker (Figure 2—figure supplement 2). Thus, the cPRCs and their postsynaptic neurons respond differentially to violet and blue stimulation, with only violet light inducing cPRC depolarization and consistent changes in the activity of postsynaptic neurons.
 
-## UV-violet avoidance behavior in Platynereis larvae
+### UV-violet avoidance behavior in Platynereis larvae
 
 To characterize how Platynereis larvae react to UV-violet light, we assayed larval swimming behavior in a vertical column setup. Since Platynereis larvae show strong directional phototaxis to a broad spectrum of light (between 380–540 nm)(Gühmann et al., 2015; Jékely et al., 2008), we illuminated the setup equally from two opposite sides with non-directional UV light so that the larvae could not respond with directional phototaxis (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig3-v2.jpg)
 
-**Figure 3.:** Platynereis larvae.(A) Larval trajectories recorded in a vertical column in the dark (left) and under illumination with UV light from the side (right). (B) Action spectrum of non-directional light avoidance in 48 hpf larvae (n = 20 batches). (C) Developmental onset of UV-avoidance behavior and phototaxis in Platynereis larvae (n > 7 batches for each stage). (D) Time course (30 s bins) of vertical swimming in different larval stages following 380 nm illumination from above (n > 11 batches for each stage). (E) Action spectrum of vertical swimming in early- and late-stage larvae, under stimulus light coming from the top of the column. The responses between 1.5–3.5 min after stimulus onset are shown (n > 7 batches for each stage). (F) Repeated switching between upward and downward swimming in different larval stages under 380 and 520 nm stimulus light coming from above. The responses between 1.5–4.5 min after stimulus onset are shown (n = 4 batches for 53 hpf, >11 for the other stages). (G) Vertical displacement of 3-day-old larvae swimming in a column and stimulated from above with different ratios of 380/480 nm or 380/660 nm monochromatic light (n > 7 batches for each condition). T-tests with Holm-Sidak correction (alpha = 0.05) were used. Significant differences are indicated (*** p-value<0.005).10.7554/eLife.36440.016Figure 3—source data 1.Figure 3B–G.
+**Figure 3.:** (A) Larval trajectories recorded in a vertical column in the dark (left) and under illumination with UV light from the side (right). (B) Action spectrum of non-directional light avoidance in 48 hpf larvae (n = 20 batches). (C) Developmental onset of UV-avoidance behavior and phototaxis in Platynereis larvae (n > 7 batches for each stage). (D) Time course (30 s bins) of vertical swimming in different larval stages following 380 nm illumination from above (n > 11 batches for each stage). (E) Action spectrum of vertical swimming in early- and late-stage larvae, under stimulus light coming from the top of the column. The responses between 1.5–3.5 min after stimulus onset are shown (n > 7 batches for each stage). (F) Repeated switching between upward and downward swimming in different larval stages under 380 and 520 nm stimulus light coming from above. The responses between 1.5–4.5 min after stimulus onset are shown (n = 4 batches for 53 hpf, >11 for the other stages). (G) Vertical displacement of 3-day-old larvae swimming in a column and stimulated from above with different ratios of 380/480 nm or 380/660 nm monochromatic light (n > 7 batches for each condition). T-tests with Holm-Sidak correction (alpha = 0.05) were used. Significant differences are indicated (*** p-value<0.005).
 
 When the larvae were stimulated with non-directional UV light, they started to swim downward. To characterize the wavelength dependence of this behavior, we assayed larvae in a vertical cuvette and stimulated them with monochromatic light of different wavelengths from two sides. The larvae swam down to UV-violet light (between 340–420 nm) but not to longer wavelengths (>420 nm, Figure 3B). This downward swimming UV-avoidance behavior to non-directional UV-violet light has not been previously reported in Platynereis. The observations that UV-avoidance can be triggered by non-directional light and has an action spectrum that closely matches the absorption spectrum of c-opsin1 (Figure 2E) suggest that the response is mediated by the non-pigmented cPRCs.
 
 If the cPRCs indeed mediate UV-avoidance, then the developmental onset of this response should correlate with the morphological differentiation of cPRCs. To test this, we assayed UV-avoidance (395 nm light from the side) as well as phototaxis (480 nm light from the top) at different larval stages (Figure 3C) and correlated the behaviors to photoreceptor differentiation. Phototaxis, but not UV-avoidance was already present at 27 hpf, at a stage when the larval eyespots are already functional (Jékely et al., 2008). UV avoidance appeared at 36 hpf, approximately coinciding with the morphological differentiation of cPRCs (after 32 hpf, as judged by the appearance of the ramified cilia)(Figure 3C), but long before the differentiation of the adult eyes (at 72 hpf)(Fischer et al., 2010; Jékely et al., 2008; Randel et al., 2014). Thus, Platynereis larvae show UV-violet-light avoidance that is independent of phototaxis, can be induced by non-directional stimulus light, and is likely mediated by the UV-violet-responding non-pigmented cPRCs.
 
-## Antagonistic UV avoidance and phototaxis behaviors form a depth-gauge
+### Antagonistic UV avoidance and phototaxis behaviors form a depth-gauge
 
 To study how UV avoidance interacts with rhabdomeric-eye-mediated phototaxis, we stimulated the larvae in the vertical column with directional monochromatic light from above. When we used 380 nm stimulus light, both early- (41 hpf) and late-stage (3 and 4.5 dpf) larvae first swam upward towards the light (for approximately one minute), and then swam downward (Figure 3D, Video 2). This upward phase was not observed when the larvae were illuminated uniformly from the side (data not shown). These results indicate that the upward-swimming phase is phototaxis, which is then overwritten by the UV-avoidance response.
+
+![Video 2.](https://cdn.elifesciences.org/articles/36440/elife-36440-video2.mp4.jpg)
+
+**Video 2.:** The magenta square in the top corner marks when the UV stimulus light was switched on. The tracks are color-coded based on heading direction (red, upward; blue, downward). The Video is sped up 2x.
 
 To test the wavelength-dependence of this effect, we measured larval responses to different wavelengths of directional light coming from the top of the vertical column. We plotted responses 1.5–3.5 min after stimulus onset to focus on the phase when UV-avoidance has potentially overwritten phototaxis (Figure 3D). In response to illumination with 340–400 nm light, larvae swam downward after prolonged stimulation. In response to illumination with 440–540 nm light (early-stage) or 440–600 nm light (late-stage), larvae swam upward (Figure 3E). 420 nm light did not trigger the vertical displacement of the larvae. The swimming direction could be switched several times by changing the wavelength of the light from 380 nm to 520 nm (Figure 3F), demonstrating that this behavioral switch does not habituate even after sustained exposure to light. These results indicate that directional UV-violet light first triggers upward-swimming phototaxis (the pigmented eyes are sensitive in the UV-violet range [Jékely et al., 2008; Gühmann et al., 2015]), which is then overridden by the downward-swimming UV-avoidance response likely mediated by the cPRCs. Directional blue/cyan light only triggers phototaxis. Importantly, the switching in behavioral response cannot be explained as a wavelength-dependent alternation between positive and negative phototaxis, since early-stage larvae are exclusively positively phototactic (Jékely et al., 2008)(until 72 hpf [Randel et al., 2014]), yet already show the behavioral switch in swimming direction (Figure 3E,F).
 
 Next we asked if the antagonistic phototaxis and UV-avoidance behaviors could form a potential mechanism to measure depth by the larvae. Since blue and UV-violet light attenuate differently in seawater, the ratio of blue to UV-violet light increases with depth (field data from the Mediterranean, where our Platynereis strain comes from, were shown before [Gühmann et al., 2015]). Strong UV-violet light at the ocean’s surface is expected to cause larvae to swim downward as an avoidance response, and relatively strong blue light in deeper waters is expected to trigger phototactic upward swimming. Such depth-dependent behavioral switching could form a ratio-chromatic depth-gauge (Nilsson, 2009). To test this, we exposed larvae to mixed wavelength light containing different photon ratios of UV (380 nm) and blue (480 nm) light coming from the top of the vertical column. At high 380/480 ratios, larvae swam downward, while at low ratios larvae swam upward. At a 40% 380/480 ratio, larvae remained at a constant average depth (Figure 3G), despite being exposed to a directional light stimulus. Mixing the same intensity UV light as before with 660 nm red light (a wavelength to which larvae do not respond phototactically at the intensity used (Figure 3E)) did not induce upward swimming at any 380/660 ratio (Figure 3G). This experiment shows that a reduction in UV intensity alone does not cause a switch in swimming direction. These results suggest that UV avoidance and phototaxis act antagonistically and cancel each other out under certain wavelength ratios, resulting in no net vertical swimming. This is consistent with the presence of a ratio-chromatic depth gauge in Platynereis larvae.
 
-## c-opsin1 knockout larvae have defective UV-violet sensation and avoidance behavior
+### c-opsin1 knockout larvae have defective UV-violet sensation and avoidance behavior
 
 To test whether c-opsin1 mediates the UV-violet response in Platynereis larvae, we used a c-opsin1 Platynereis knockout line generated by TALEN-mediated genome editing. The TALENs targeted the third exon of c-opsin1 and induced an 8 bp deletion (Figure 4A). In homozygous c-opsin1Δ8/Δ8 larvae, the cPRCs had low resting calcium level and neither hyperpolarized nor depolarized upon 405 nm stimulation (Figure 4B,C). Thus, c-opsin1 in the Platynereis cPRCs is required for an elevated resting calcium level in the dark state and for hyperpolarization and subsequent depolarization upon 405 nm exposure. The high resting calcium level in the cPRCs indicates a dark current, a characteristic of vertebrate rods and cones (Hagins et al., 1970).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36440/elife-36440-fig4-v2.jpg)
 
-**Figure 4.:** c-opsin1 knockout larvae lack UV-violet responses.(A) Schematic of the Platynereis c-opsin1 gene and the c-opsin1 mutation. (Δ8/Δ8B) Background GCaMP6s signal during calcium imaging in wild type and c-opsin1 mutant larvae. (Δ8/Δ8C) Calcium responses to 70 s 405 nm stimulation in wild type and mutant larvae (n > 28 individual larvae for both genotypes). The stimulus light was switched on at 0 s. (D) Vertical swimming in wild type and mutant trochophore larvae stimulated with blue (480 nm) and UV (395 nm) light from above (n = 19 for both genotypes). The data are shown in 30 s bins. P-values: ***<0.0001; T-test with Sidak-Bonferroni correction.10.7554/eLife.36440.019Figure 4—source data 1.Figure 4C.10.7554/eLife.36440.020Figure 4—source data 2.Figure 4D.
+**Figure 4.:** (A) Schematic of the Platynereis c-opsin1 gene and the c-opsin1Δ8/Δ8 mutation. (B) Background GCaMP6s signal during calcium imaging in wild type and c-opsin1Δ8/Δ8 mutant larvae. (C) Calcium responses to 70 s 405 nm stimulation in wild type and mutant larvae (n > 28 individual larvae for both genotypes). The stimulus light was switched on at 0 s. (D) Vertical swimming in wild type and mutant trochophore larvae stimulated with blue (480 nm) and UV (395 nm) light from above (n = 19 for both genotypes). The data are shown in 30 s bins. P-values: ***<0.0001; T-test with Sidak-Bonferroni correction.
 
 Next, we tested behavioral responses to light in c-opsin1Δ8 mutant larvae. Similar to wild type larvae, homozygous c-opsin1Δ8/Δ8 larvae swim upward (positive phototaxis) in response to 480 nm light. However, c-opsin1Δ8/Δ8 larvae have a defective UV-avoidance response. Whereas wild type larvae swim downward after an initial upward-swimming phase, c-opsin1Δ8/Δ8 larvae continue to swim upward, showing sustained positive phototaxis in response to UV light (Figure 4D). The magnitude of upward swimming diminishes, with close to 0 vertical displacement between 1.5–2 min after UV onset. This indicates that an additional, c-opsin1-independent UV-avoidance mechanism may exist in Platynereis larvae (cf. the last bin under 480 and 395 nm stimulation).
 
@@ -115,64 +151,417 @@ One outstanding question in eye evolution is why did the ciliary and rhabdomeric
 
 ## Materials and methods
 
-## Platynereis dumerilii culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Platynereis dumerilii)</td>
+      <td>c-opsin1Δ8/Δ8 knockout</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Knockout generated by TALEN-induced gene editing</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS1</td>
+      <td></td>
+      <td>RRID:CVCL_0223</td>
+      <td>ATCC® CRL1650™</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Platynereis dumerilii)</td>
+      <td>pMT5-c-opsin1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Platynereis dumerilii)</td>
+      <td>Wild type Tübingen strain</td>
+      <td>Other</td>
+      <td></td>
+      <td>Jékely lab strain (Tübingen, Exeter)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GACCTACCTCCCAAATAAGTGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTGTGGCGGACGAGGCTGGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GACCCGTAGCAGCCACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGTCTGGGAGCCCTGATGACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGCTGGAACTTACCTTTCTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCCTTCATTTGGATATACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CACCTGCTTATTCATGAAGACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGTGGCTAAAACTGGTGGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCTGGCAACTTATGTAAACAAACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTTTTTTCATTGCAGTTCCGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAL_F1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTGGCGTCGGCAAACAGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAL_R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGCGACGAGGTGGTCGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_TAL_R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCCTTCATTTGGATATACTCCCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_TAL_L2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGCTGGAACTTACCTTTCTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8m_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATACTCCCTTGCCTTTACCACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8w_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TATACTCCCTTGCCTTTACTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_com_R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CAAGTTTTGTAAGTGAAATTGCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_ del8_2F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AGCCTTCATTTGGATATACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8_2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTATAAACGATGGAACTTACCTTTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GACCTACCTCCCAAATAAGTGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTGTGGCGGACGAGGCTGGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GACCCGTAGCAGCCACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGTCTGGGAGCCCTGATGACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGCTGGAACTTACCTTTCTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCCTTCATTTGGATATACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CACCTGCTTATTCATGAAGACG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>cops1_R4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGTGGCTAAAACTGGTGGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_F5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCTGGCAACTTATGTAAACAAACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_R5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CTTTTTTCATTGCAGTTCCGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAL_F1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTGGCGTCGGCAAACAGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TAL_R2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGCGACGAGGTGGTCGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_TAL_R1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GCCTTCATTTGGATATACTCCCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_TAL_L2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CGCTGGAACTTACCTTTCTGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8m_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATACTCCCTTGCCTTTACCACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8w_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TATACTCCCTTGCCTTTACTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_com_R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CAAGTTTTGTAAGTGAAATTGCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_ del8_2F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AGCCTTCATTTGGATATACTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_del8_2R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTATAAACGATGGAACTTACCTTTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cops1_nest_seq</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATGAGACCATACGAAACCAC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion Human Specimen Direct PCR Kit</td>
+      <td>Thermofisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE Sp6 kit</td>
+      <td>Thermofisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Golden Gate TAL Effector Kit 2.0,</td>
+      <td>Addgene 1000000024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>perl and Fiji scripts for tracking</td>
+      <td>https://github.com/JekelyLab/Veraszto_et_al_2018 (copy archived at https://github.com/elifesciences-publications/Veraszto_et_al_2018)</td>
+      <td>0000d2a</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Platynereis dumerilii culture
 
 Larvae of Platynereis dumerilii were cultured at 18°C in a 16 hr light 8 hr dark cycle until experiments. Larvae were raised to sexual maturity according to established breeding procedures (Fischer and Dorresteijn, 2004; Hauenschild and Fischer, 1969).
 
-## Estimation of cPRC sensory membrane surface
+### Estimation of cPRC sensory membrane surface
 
 We used serial-sectioning transmission electron microscopy to analyze cPRC sensory morphology (Randel et al., 2015). Each cPRC has 12–15 basal bodies, each basal body gives rise to one cilium that branches close to its base to 3–9 branches. Each branch is supported by at least one microtubule doublet. The branches have an average diameter of 130 nm (st.dev. 19 nm) and a total length of 677 μm (measured in one cPRC). This represents a total membrane surface area of approximately 276 μm2.
 
-## In vitro absorption spectrum of c-opsin1
+### In vitro absorption spectrum of c-opsin1
 
 Recombinant c-opsin1 was purified and analyzed following (Yokoyama, 2000). Full-length Platynereis c-opsin1 was amplified with primers that introduced EcoRI, Kozak and SalI sequences, and cloned into the expression plasmid pMT5. C-opsin1 was expressed in COS1 cells and incubated with 11-cis-retinal (a gift from Dr. Rosalie K. Crouch at Storm Eye Institute) to regenerate the photopigment. The pigment was purified with immobilized 1D4 (The Culture Center, Minneapolis, MN) in buffer W1 (50 mM N-(2-hydroxyethyl) piperazine-N’−2-ethanesulfonic acid (HEPES) (pH 6.6), 140 mM NaCl, 3 mM MgCl2, 20% (w/v) glycerol and 0.1% dodecyl maltoside). The UV/VIS spectrum of the pigment was recorded at 20°C with a Hitachi U-3000 dual beam spectrophotometer. The pigment was bleached for 3 min with a 60 W standard light bulb equipped with a Kodak Wratten #3 filter at a distance of 20 cm. COS1 cells (ATCC CRL1650), established from the kidney cells of the African green monkey (Cercopithecus aethiops), were authenticated by the American Type Culture Collection (Manassas, VA) with the COI assay. The mycoplasma contamination test was negative.
 
-## Photostimulation
+### Photostimulation
 
 We used a variety of light sources for photostimulation, depending on the experimental setup. In the calcium imaging experiments, we used the laser lines available in our Olympus FV1200 confocal microscope (405 and 488 nm; Showa Optronics, Tokyo). The lasers were operating in continuous mode. The power of the lasers was measured with a microscope slide power sensor (S170C; Thorlabs, Newton, USA). The typical power for stimulation was 5.59 µwatts for the 405 nm laser and 4.62 µwatts for the 488 nm laser. These values correspond to 1.1e + 13 photons/sec. For behavioral assays, we used either UV LEDs (395 nm peak wavelength) or a monochromator (Polychrome II, Till Photonics) for which we quantified photon irradiances across the spectrum (3−4 × 1018 photons/sec/m2) (Gühmann et al., 2015). We refer to color according to these wavelength ranges: UV <400 nm, violet 400–450 nm, blue 450–490 nm (450–460 royal blue), cyan 490–520 nm.
 
-## Calcium imaging
+### Calcium imaging
 
 For calcium imaging, 36–52 hpf larvae were used. Experiments were conducted at room temperature in filtered natural seawater. Larvae were immobilized between a slide and a coverslip spaced with adhesive tape. GCaMP6s mRNA (1 mg/μl) was injected into zygotes as described previously (Randel et al., 2014). Larvae were imaged on an Olympus FV1200 microscope (with a UPLSAPO 60X water-immersion objective, NA 1.2) with a frame rate of 1.25/sec and an image size of 254 × 254 pixels. The larvae were stimulated in a region of interest (a circle with 18–24 pixel diameter) with continuous 405 nm or 488 nm lasers controlled by the SIM scanner of the Olympus FV12000 confocal microscope while scanning. The imaging laser had a similar intensity than the stimulus laser but covered an area that was 140–250 times larger than the stimulus ROI.
 
-## Calcium-imaging data analysis and image registration
+### Calcium-imaging data analysis and image registration
 
 The calcium-imaging movies were analyzed with Fiji (Schindelin et al., 2012) (RRID:SCR_002285) and a custom Python script, as described previously (Gühmann et al., 2015), with the following modifications. The movies were motion-corrected in Fiji with moco (Dubbs et al., 2016) and Descriptor-based registration (https://github.com/fiji/Descriptor_based_registration). The data are shown as ΔF/F0. For the calculation of the normalized ΔF/F0 with a time-dependent baseline, F0 was set as the average of an area of the brain with no calcium activity to normalize for the additional lasers (405 nm and 488 nm) and potential artefacts from the microscope's detector. Spatial correlation analyses of neuron activities were done in Fiji and Python as previously described (Verasztó et al., 2017). The ROI was manually defined and was correlated with every pixel of the time series. Finally, a single image was created with the Pearson correlation coefficients and a [−1, 1] heatmap plot with two colors. Scripts are available at (Gühmann and Verasztó, 2018; copy archived at https://github.com/elifesciences-publications/Veraszto_et_al_2018).
 
-## Vertical column setup for measuring photoresponses
+### Vertical column setup for measuring photoresponses
 
 Photoresponses of larvae of different ages were assayed in a vertical Plexiglas column (31 mm x 10 mm x 160 mm water height). The column was illuminated from above with light from a monochromator (Polychrome II, Till Photonics). The monochromator was controlled by AxioVision 4.8.2.0 (Carl Zeiss MicroImaging GmbH) via analog voltage or by a custom written Java program via the serial port. The light passed a collimator lens (LAG-65.0–53.0 C with MgF2 Coating, CVI Melles Griot). The column was illuminated from both sides with light-emitting diodes (LEDs). The LEDs on each side were grouped into two strips. One strip contained UV (395 nm) LEDs (SMB1W-395, Roithner Lasertechnik) and the other infrared (810 nm) LEDs (SMB1W-810NR-I, Roithner Lasertechnik). The UV LEDs were run at 4 V to stimulate the larvae in the column from the side. The infrared LEDs were run at 8 V (overvoltage) to illuminate the larvae for the camera (DMK 22BUC03, The Imaging Source), which recorded videos at 15 frames per second and was controlled by IC Capture (The Imaging Source).
 
-## Non-directional UV-light assay
+### Non-directional UV-light assay
 
 27-hour-old, 36-hour-old, 2-day-old, and 3-day-old Platynereis dumerilii larvae were stimulated in the column with UV (395 nm) light from the LEDs on the side. Afterwards, the larvae were stimulated with monochromatic blue (480 nm) light coming from above to assay for phototaxis. Each stimulus lasted 4 min. The LEDs were controlled manually and the monochromator (Polychrome II, Till Photonics) was controlled via AxioVision.
 
-## Comparing behavior of wildtype and c-opsin1-knockout larvae
+### Comparing behavior of wildtype and c-opsin1-knockout larvae
 
 To compare the behavior of wildtype and c-opsin1-knockout larvae in the vertical column, we tested individual batches of larvae. We distributed the larvae in the vertical column by mixing and dark adapted them for 5 min. The larvae were recorded for 1 min in the dark followed by exposure to collimated blue (480 nm) light from the top of the column for 2 min, then 2 min darkness, and finally collimated UV (395 nm) light from above for 2 min. Stimulus light was provided by a monochromator (Polychrome II, Till Photonics).
 
-## UV-green-light switching assay
+### UV-green-light switching assay
 
 Early and late-stage Platynereis dumerilii larvae were assayed in the vertical columns. The larvae were stimulated six times alternatively with UV (380 nm) and green (520 nm) light. Each stimulus lasted 4.5 min. The last 3 min within each stimulus were analyzed for vertical displacement of the larvae. The light was provided by a monochromator (Polychrome II, Till Photonics), which was controlled by AxioVision.
 
-## Action spectrum of vertical swimming
+### Action spectrum of vertical swimming
 
 2-day-old and 3-day-old Platynereis dumerilii larvae were assayed in vertical columns. The larvae were stimulated with monochromatic light from above between 340 nm and 480 nm in 20 nm steps. Between the stimuli, additional 520 nm stimuli were introduced to avoid the accumulation of the larvae at the bottom after UV treatment. The larvae were also stimulated with monochromatic light from above between 400 nm and 680 nm in 20 nm steps. Between these stimuli, additional 400 nm stimuli were introduced to avoid the accumulation of the larvae at the top due to phototaxis. Each stimulus lasted 3.5 min. The last 2 min of each stimulus were analyzed for vertical displacement of the larvae. The light was provided by a monochromator (Polychrome II, Till Photonics), which was controlled by AxioVision.
 
-## Ratio-metric assay
+### Ratio-metric assay
 
 3-day-old Platynereis dumerilii larvae were stimulated with UV-blue (380 nm, 480 nm) or UV-red (380 nm, 660 nm) mixed light from above. The larvae were mixed to be uniformly distributed in the column and dark adapted for 5 min. In each step, 10% UV-light was replaced by blue or red light. Each step was followed by a blue (480 nm) light stimulus to avoid the accumulation of the larvae at the bottom after UV treatment. Different ratios were created by rapidly switching between wavelengths within 500 ms periods (e.g., for a 10% UV 90% blue ratio we provided UV-light for 50 ms followed by blue light for 450 ms). Each stimulus condition lasted 4 min. The monochromator was controlled by a custom Java program via the serial port.
 
-## Vertical cuvette photoresponse assay
+### Vertical cuvette photoresponse assay
 
 2-day-old Platynereis dumerilii larvae were assayed in a vertical cuvette of 10 mm x 10 mm x 42 mm (L x W x H). The larvae were kept at 18°C and had been exposed to daylight before the experiment. The larvae were illuminated with a monochromator (Polychrome II, Till Photonics) from one side of the cuvette. A mirror (PFSQ20-03-F01, Thorlabs) placed at the opposite side reflected the light to provide near-uniform bilateral illumination. The light passed a diffuser (Ø1’ 20° Circle Pattern Diffuser, ED1-C20; Thorlabs) and a collimating lens (LAG-65.0–53.0 C with MgF2 Coating, CVI Melles Griot) before it hit the cuvette. The cuvette was illuminated with infrared (850 nm) light-emitting diodes (LEDs) (L2 × 2-I3CA, Roithner Lasertechnik) from the side. The LEDs were run at 6.0 V. The larvae were stimulated with light from 340 nm to 560 nm in 20 nm steps. Each step lasted 1 min. The steps were separated by 1 min darkness, so that the larvae could redistribute after each stimulus. The larvae were recorded at 16 frames per second with a DMK 23GP031 camera (The Imaging Source) controlled by IC Capture. The camera was equipped with a macro objective (Macro Zoomatar 1:4/50–125 mm, Zoomar Muenchen). It was mounted with a close-up lens (+2 52 mm, Dörr close-up lens set 368052). The larvae were tracked and their vertical displacement was analyzed during the last 45 s of each stimulus period. Scripts are available at (Gühmann and Verasztó, 2018).
 
-## Generation of c-opsin1 knockouts
+### Generation of c-opsin1 knockouts
 
 The genomic region of c-opsin1 was amplified to screen for putative size-polymorphic alleles or single nucleotide polymorphisms (SNPs) from different Platynereis strains (PIN and VIO strains) with the following screening primers: cops1_F1/R1, cops1_F2/R2, cops1_F3/R3, cops1_F4/R4 and cops1_F5/R5 (For a detailed protocol for SNP screening see: (Bannister et al., 2014).
 
 c-opsin1 TALEN pairs were designed in several non-polymorphic exon regions with the TALE-NT prediction tool (TAL Effector Nucleotide Targeter 2.0; https://tale-nt.cac.cornell.edu/) (Doyle et al., 2012). The in silico predictions were done with customized design conditions - 15 left/right Repeat Variable Diresidue (RVD) length, 15–25 bp spacer length, G substitute by NN RVD and presence of a restriction enzyme site within the spacer region. The predicted c-opsin1 TALENs were constructed in vitro with the Golden Gate assembly protocol (Golden Gate TAL Effector Kit 2.0, Addgene #1000000024) (Cermak et al., 2011). The final TALEN repeats were cloned to heterodimeric FokI expression plasmids pCS2TAL3-DD for left TALEN array and pCS2TAL3-RR for right TALEN array (Dahlem et al., 2012). All cloned TALEN plasmids were sequence-verified with the TAL_F1 and TAL_R2 primers. c-opsin1 TALEN mRNA for each array was generated by linearizing the corresponding plasmid (NotI) and transcribing it in vitro with the mMESSAGE mMACHINE Sp6 kit (Thermofisher). 200 ng/μl/TALEN mRNA was microinjected into Platynereis zygotes (Backfisch et al., 2013) and screened for TALEN-induced mutations (Bannister et al., 2014) with the PCR primers cops1_TAL_R1/cops1_TAL_L2 followed by restriction digest by the BanI enzyme for the TAL_pair3 and MluC1 for the TAL_pair4. The injected embryos were raised to maintain knockout cultures.
 
-## c-opsin1 sequencing and genotyping
+### c-opsin1 sequencing and genotyping
 
 For genotyping of the c-opsin1 locus, genomic DNA was isolated from single larvae, groups of 6–20 larvae, or from the tails of adult worms. The DNA was amplified by PCR with the cops1_del8m_F/cops1_com_R or the cops1_ del8_2F/cops1_ del8_2R primers with the dilution protocol of the Phusion Human Specimen Direct PCR Kit (Thermo Scientific). The PCR product was sequenced directly with a nested sequencing primer cops1_ nest_seq. A mixture of wild-type and deletion alleles in a sample gave double peaks in the sequencing chromatograms, with the relative height of the double peaks reflecting the relative allele ratio in the sample.

@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/041akq887 Departamento de Biologia Celular, Embriologia e Genética, Universidade Federal de Santa Catarina Florianopolis Brazil
-2. https://ror.org/056d84691 Department of Cell and Molecular Biology, Karolinska Institute Stockholm Sweden
-3. https://ror.org/00a0jsq62 Faculty of Infectious and Tropical Diseases, London School of Hygiene and Tropical Medicine London United Kingdom
+1. Departamento de Biologia Celular, Embriologia e Genética, Universidade Federal de Santa Catarina Florianopolis Brazil ([ROR:041akq887](https://ror.org/041akq887))
+2. Department of Cell and Molecular Biology, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+3. Faculty of Infectious and Tropical Diseases, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 4. Institute of Computational Biology, Computational Health Centre, Helmholtz Munich Munich Germany
-5. https://ror.org/041akq887 Departamento de Microbiologia, Imunologia e Parasitologia, Universidade Federal de Santa Catarina Florianopolis Brazil
+5. Departamento de Microbiologia, Imunologia e Parasitologia, Universidade Federal de Santa Catarina Florianopolis Brazil ([ROR:041akq887](https://ror.org/041akq887))
 
 † Corresponding author
 
 ## Abstract
 
-Protozoa and fungi are known to have extraordinarily diverse mechanisms of genetic exchange. However, the presence and epidemiological relevance of genetic exchange in Trypanosoma cruzi , the agent of Chagas disease, has been controversial and debated for many years. Field studies have identified both predominantly clonal and sexually recombining natural populations. Two of six natural T. cruzi lineages (TcV and TcVI) show hybrid mosaicism, using analysis of single-gene locus markers. The formation of hybrid strains in vitro has been achieved and this provides a framework to study the mechanisms and adaptive significance of genetic exchange. Using whole genome sequencing of a set of experimental hybrids strains, we have confirmed that hybrid formation initially results in tetraploid parasites. The hybrid progeny showed novel mutations that were not attributable to either (diploid) parent showing an increase in amino acid changes. In long-term culture, up to 800 generations, there was a variable but gradual erosion of progeny genomes towards triploidy, yet retention of elevated copy number was observed at several core housekeeping loci. Our findings indicate hybrid formation by fusion of diploid T. cruzi , followed by sporadic genome erosion, but with substantial potential for adaptive evolution, as has been described as a genetic feature of other organisms, such as some fungi.
+Protozoa and fungi are known to have extraordinarily diverse mechanisms of genetic exchange. However, the presence and epidemiological relevance of genetic exchange in Trypanosoma cruzi, the agent of Chagas disease, has been controversial and debated for many years. Field studies have identified both predominantly clonal and sexually recombining natural populations. Two of six natural T. cruzi lineages (TcV and TcVI) show hybrid mosaicism, using analysis of single-gene locus markers. The formation of hybrid strains in vitro has been achieved and this provides a framework to study the mechanisms and adaptive significance of genetic exchange. Using whole genome sequencing of a set of experimental hybrids strains, we have confirmed that hybrid formation initially results in tetraploid parasites. The hybrid progeny showed novel mutations that were not attributable to either (diploid) parent showing an increase in amino acid changes. In long-term culture, up to 800 generations, there was a variable but gradual erosion of progeny genomes towards triploidy, yet retention of elevated copy number was observed at several core housekeeping loci. Our findings indicate hybrid formation by fusion of diploid T. cruzi, followed by sporadic genome erosion, but with substantial potential for adaptive evolution, as has been described as a genetic feature of other organisms, such as some fungi.
 
 ## Introduction
 
@@ -35,31 +35,72 @@ Experimental evolution approaches in defined environments have been widely used 
 
 ## Results
 
-## Stability of DNA content during experimental in vitro microevolution
+### Stability of DNA content during experimental in vitro microevolution
 
 To investigate the effects of clonal reproduction and genetic exchange on the T. cruzi genome at the microevolutionary scale, we selected two TcI strains (P1, P2) and three hybrid clones that were generated from a P1 × P2 cross (1C2, 1D12, 2C1) (Gaunt et al., 2003). The two parents and three hybrids were included in an in vitro evolution experiment in which they were continuously cultured as epimastigote forms for 5 years, equivalent to approximately 800 generations of replication by binary fission (Figure 1A). At the end of the experiment, we re-cloned the parasite lines and selected three clones per line for analysis. During this microevolution experiment, we monitored the DNA content of each parasite line at approximately 200-generation intervals to check for evidence of large-scale structural genomic changes. We observed that the DNA content of the two parental lines remained approximately constant (Figure 1B–D). At the start of the experiment, the total DNA content of the hybrid clones was approximately 70% greater than the parentals (Figure 1C, D, Lewis et al., 2009), which equated to slightly below expectations for a tetraploid parasite with one kinetoplast (containing mitochondrial DNA), that is, a 4n1k (4C) genome size. Over the course of the microevolution experiment, in contrast to P1 and P2, we found that the DNA content of the hybrids became progressively lower over time, up to a maximum decrease of 22.5% by generation 800. By extrapolation from the estimated genome sizes of P1 (94.5 Mb) and P2 (92.5 Mb) (Lewis et al., 2009), these data indicate genome erosion in the hybrids occurred at an average rate of 23 kb per generation. There were, however, notable differences in genome erosion patterns between the three hybrid lines. Hybrid 2C1 showed gradual genome erosion at each time point, with all three 800 generation evolved clones approximating a 3C genome size. Hybrid 1C2 showed a more intermittent pattern – most of the erosion occurred between 0–200 and 400–600 generations, reaching a 3C genome size, but interestingly, 2 of the 800 generation clones gained ~10% more DNA than at t=600. Lastly, hybrid 1D12 had an initial 9% loss between t=0 and t=200, but was then quite stable over time between 3C and 4C.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig1-v2.jpg)
 
-**Figure 1.:** Trypanosoma cruzi hybrids.(A) Overview of experimental design. (B) DNA content profiles shown as propidium iodide (PI) staining intensity histograms measured by flow cytometry. PI fluorescence = relative fluorescence units; y-axis shows number of events from the population of parasites at the indicated generation of the in vitro culture experiment from start (t=0) to finish (t=800). Plots of one parent and one hybrid are shown, representative of three biological replicates for each time point. The vertical dashed line marks the position of the G1 fluorescence intensity peak at t=0. (C) Quantitative analysis of DNA content for both parents and three hybrid strains at each time point and for three clones per strain generated after the final time point of 800 generations. Data are the mean + SEM of three biological replicates after normalization against an internal standard and conversion to a ratio of the mean of the two parents at t=0. The predicted total DNA content ranges equating to tetraploid (4n1k) and triploid (3n1k) parasites are indicated, under the assumption that kDNA constitutes between 20% and 30% of total DNA. (D) The same data as shown in C, represented as the % change in DNA content over time compared to t=0. (E) Distinct genomic signatures exclusive to each parental strain were inherited by the hybrid strains. In black are represented SNPs present in both parental strains, in green SNPs exclusive to the P1 strain, in purple SNPs exclusive to the P2 strain, in dark blue SNPs common to all hybrids, and in light blue SNPs exclusive to each hybrid clone.
+**Figure 1.:** (A) Overview of experimental design. (B) DNA content profiles shown as propidium iodide (PI) staining intensity histograms measured by flow cytometry. PI fluorescence = relative fluorescence units; y-axis shows number of events from the population of parasites at the indicated generation of the in vitro culture experiment from start (t=0) to finish (t=800). Plots of one parent and one hybrid are shown, representative of three biological replicates for each time point. The vertical dashed line marks the position of the G1 fluorescence intensity peak at t=0. (C) Quantitative analysis of DNA content for both parents and three hybrid strains at each time point and for three clones per strain generated after the final time point of 800 generations. Data are the mean + SEM of three biological replicates after normalization against an internal standard and conversion to a ratio of the mean of the two parents at t=0. The predicted total DNA content ranges equating to tetraploid (4n1k) and triploid (3n1k) parasites are indicated, under the assumption that kDNA constitutes between 20% and 30% of total DNA. (D) The same data as shown in C, represented as the % change in DNA content over time compared to t=0. (E) Distinct genomic signatures exclusive to each parental strain were inherited by the hybrid strains. In black are represented SNPs present in both parental strains, in green SNPs exclusive to the P1 strain, in purple SNPs exclusive to the P2 strain, in dark blue SNPs common to all hybrids, and in light blue SNPs exclusive to each hybrid clone.
 
 Next, we looked for evidence of instability at specific loci in the hybrid genomes using PCR-based multilocus microsatellite genotyping, which had previously provided some evidence for non-Mendelian inheritance in the hybrids from the original P1 × P2 cross (Gaunt et al., 2003). Specifically, at many loci the hybrids inherited more than one allele per parent. We found that three of the nine evolved hybrid clones had lost at least one microsatellite allele (Supplementary file 1). These data indicated that the enlarged genomes of T. cruzi hybrids were subject to erosion over an extended period of clonal replication. To dissect the underlying mechanisms, we applied a comparative genomics approach based on sequence data for parental and hybrid samples from the beginning and end of the microevolution experiment.
 
-## Parental strains display distinct genomic signatures
+### Parental strains display distinct genomic signatures
 
 The genomes of the two parental strains were characterized using de novo genome assemblies from short Illumina reads. Despite high sequence coverage and the linking information provided by additional long insert size libraries, the final assemblies only reconstructed 77.1% and 74.8% of the P1 and P2 genomes, respectively (Supplementary file 2), due to the high repeat content of the genomes as also observed to other previously sequenced T. cruzi genomes. The haploid estimated genome size of P1 differed from P2 by approximately 2 Mbp, and both parental strains genomes were found to be slightly larger than the 44 Mbp reference TcI-Sylvio X10/1 strain (Talavera-López et al., 2021), in line with flow cytometry-based DNA content measurements (Lewis et al., 2009).
 
 While the parental strains both belong to the TcI clade, with highly conserved synteny in the core regions, they still show significant genetic diversity. Reads from the parental strains were mapped to the reference TcI-Sylvio X10/1 genome, followed by SNP calling and a comparative analysis. The resultant genome-wide average SNP density was 9.28 and 3.71 SNP/kb for P1 and P2, respectively (Table 1). Most SNPs were located within repetitive regions, particularly in areas containing surface molecule gene family members, which can be related to gene expansion in these regions. Indeed, copy number variation (CNV) analysis showed that P1 displays these tandem-repeated and surface molecule-coding regions expanded in comparison to P2. To avoid the influence of low mapping quality in repeated regions, we applied a strict mapping quality filter, removing any SNP in regions with mapping quality below 50. SNP density in the retained high-quality regions was 2.84 and 2.11 SNPs/kb for P1 and P2, respectively (Table 1), and a total of 68,616 and 34,843 SNPs exclusive for each parental strain were catalogued for use in the analysis of the hybrid strains (Figure 1E). This level of differentiation between P1 and P2 provided ample scope to explore the genetic composition and inheritance patterns in the hybrid clones.
 
+**Table 1.**
+ Average SNP density per kilobase in starting generation parental strains and hybrid clones.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SNP/kb genome-wide</th>
+      <th>SNP/kb high-quality mapping regions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1-0</td>
+      <td>9.28</td>
+      <td>2.84</td>
+    </tr>
+    <tr>
+      <td>P2-0</td>
+      <td>3.71</td>
+      <td>2.11</td>
+    </tr>
+    <tr>
+      <td>1C2-0</td>
+      <td>7.63</td>
+      <td>3.48</td>
+    </tr>
+    <tr>
+      <td>1D12-0</td>
+      <td>7.46</td>
+      <td>3.29</td>
+    </tr>
+    <tr>
+      <td>2C1-0</td>
+      <td>8.22</td>
+      <td>3.49</td>
+    </tr>
+  </tbody>
+</table>
+
 Mitochondrial DNA (kDNA) comprises up to 20–30% of the total T. cruzi DNA, consisting of relatively conserved dozens of maxi- and thousands of minicircles (Souza et al., 2011). This range was used to infer 3C and 4C genome sizes (Figure 1E) and the frequency of kDNA-mapping reads was 10.1% for parents and 11.5% for hybrids in average. However, there was substantial variation between samples as expected, and no correlation with the flow cytometric measurement of total DNA content. Despite the large amounts of kDNA maxi- and minicircles/cell, our interpretation is that extraction efficiency of kDNA is lower than for nuclear DNA and more variable between samples, probably due to the highly intercalated molecular network structure of kDNA. All kDNA-mapping reads were removed prior genetic diversity analysis.
 
-## An increase in genetic diversity is observed after hybridization
+### An increase in genetic diversity is observed after hybridization
 
 To evaluate the impact of hybridization on genetic diversity, we compared variant densities in the high-quality mapping regions of the genomes of all hybrid and parental strains. The average SNP density in these regions was higher in all hybrids than in parental strains: 3.48 SNP/kb for 1C2-0, 3.29 SNP/kb for 1D12-0, and 3.49 SNP/kb for 2C1-0 (Table 1), partially due to the presence of alleles from both parental strains. In addition to the SNPs clearly inherited from each parental strain, additional SNPs common to all hybrids and SNPs exclusive to each hybrid clone were identified in both coding and non-coding regions, revealing sample-specific patterns (Figure 1E). Some SNPs that were common to all hybrid strains were not detected in the parental genomes, mainly consisting in mutations that occurred in culture during the approximately 70 generations of parent parasite growth before the cross was set up (Figure 1A). They are unlikely to be attributable to growth of a common progenitor hybrid prior to the cloning step because of differential inheritance of kDNA in 1D12 vs. 2C1 and 1C2 (Gaunt et al., 2003), which suggests they are derived from at least two independent hybridization events. Interestingly, de novo mutations common to all hybrids and exclusive to each hybrid clone were predicted to generate a higher percentage of non-synonymous changes in comparison to the mutations inherited from the parental strains (Supplementary file 3). Indeed, the ratio of non-synonymous changes per synonymous changes was higher in the de novo mutations common to all hybrids (2.36 for 1C2-0, 2.25 for 1D12-0, and 2.19 for 2C1-0), and exclusive to each hybrid clone (2.40 for 1C2-0, 2.23 for 1D12-0, and 2.37 for 2C1-0) than in those inherited from the parental strains (1.41 for 1C2-0, 1.40 for 1D12-0, and 1.42 for 2C1-0) (Supplementary file 3).
 
 To investigate the impact of these mutations on the variable regions of the genome, we compared the ratio of surface protein-coding genes per non-surface protein-coding genes. This ratio is approximately 4-fold higher in SNPs common to all hybrids and in SNPs exclusive to each hybrid clone than in those inherited from the parental strains (Supplementary file 4). In addition, we compared the ratio of non-synonymous mutations in surface protein-coding genes per non-synonymous mutations in other genes. Interestingly, this ratio was approximately 3.3-fold higher in the hybrid clone-specific SNPs in comparison to those inherited from the parental strains (Supplementary file 5).
 
-## CCNV analysis reveals tetraploid hybrids
+### CCNV analysis reveals tetraploid hybrids
 
 Chromosome copy number variation (CCNV) was determined using the combination of read depth coverage (RDC) and allele balance (AB) methods (Reis-Cunha and Bartholomeu, 2019). An increase or decrease in the mean RDC of a chromosome when compared to the overall genome coverage is an indicator of a gain or loss of chromosomal sequences, respectively (Reis-Cunha and Bartholomeu, 2019). If the ratio between the median chromosome coverage and the median genome coverage is approximately one, the chromosome has the same copy number as the genome, while fluctuations in this ratio indicate aneuploidies. Here, the RDC analysis was based on the ratio between the mean coverage of predicted single-copy genes in each chromosome and the mean coverage of all single-copy genes in the genome as described by Reis-Cunha et al., 2015 (Figure 2A). In this CCNV estimation, values of ‘0.5’, ‘1’, and ‘2’ denote that the chromosome has, respectively, ‘0.5’, ‘1’, or ‘2’ copies per haploid genome. This means that, if the studied genome is mainly diploid, a value of ‘1’ in this estimation represents two chromosomal copies (one per haploid genome), whereas a value of ‘1.5’ represents three copies and a value of ‘2’ represents four copies. This methodology was shown to eliminate bias caused by chromosomal repetitive content in T. cruzi (Reis-Cunha et al., 2015), which would otherwise obscure the correct copy numbers. We were unable to estimate CCNV in chromosomes 17, 22, 30, and 47 by this methodology due to the lack of single-copy genes in these chromosomes, and therefore the chromosomal somy prediction presented for them was estimated based on the ratio between the mean RDC of each chromosome position and the mean coverage of all genome positions (Figure 2A). Aneuploidy was observed in the P2 strain, involving trisomy of chromosomes 2 and 21 (Figure 2A, B). The RDC analysis indicated aneuploidy in chromosome 44 in the P1 strain, but due to the lack of regions with high-quality SNPs, it was not possible to confirm this in the AB analysis (Figure 2A, B). The RDC analysis also indicated aneuploidies in chromosome 6 in both parental strains and in chromosome 31 of P1 strain (Figure 2A). However, the AB analysis was not consistent across the entire chromosome (Figure 2B), which may be related to CNV in specific regions of these chromosomes rather than aneuploidy, as observed in other T. cruzi strains (Schwabl et al., 2019; Reis-Cunha et al., 2015).
 
@@ -71,7 +112,21 @@ RDC analysis does not allow differentiation between different levels of euploidy
 
 In order to address chromosome specificities and confirm the somy estimates, the AB analysis was performed independently for each chromosome. The proportion of each allele with heterozygous SNPs per chromosome position was plotted for 46 TcI chromosomes (Figure 3—figure supplements 1–5), thus excluding chromosome 17 due to the absence of coding regions. Clear patterns of somy were observed in 37 chromosomes (chromosomes 1–16, 18–19, 21, 23, 25–29, 31–33, 35–39, 41, 43, 45–46; Figure 3—figure supplements 1–5). Due to a lack of regions containing high-quality heterozygous SNPs generating inconsistent AB, somy estimation was not reliable for chromosomes 17, 20, 22, 24, 30, 34, 40, 42, 44 (Figure 3—figure supplements 1–5). Based on our filtering criteria, all SNPs called in chromosome 47 were removed from further analysis, therefore no AB plot is presented for this chromosome. AB analysis shown to be reliable for estimating aneuploidy in chromosomes with longer core regions that contain housekeeping genes and other genes that are conserved between kinetoplastids, while the presence of large tandemly repeated regions and surface protein-coding gene families made read mapping, and thus copy number estimation difficult for some chromosomes. High resolution representations of the CCNV analysis are shown for six chromosomes (Figure 3). Chromosomes 2, 7, and 13 have longer tandem repeated regions and coding sequences for surface proteins (percentage of surface protein-coding genes: chr2 7.26%, chr7 9.55%, chr13 8.38%), while chromosomes 18, 21, and 37 have longer core regions (percentage of surface protein-coding genes: chr18 1.25%, chr21 1.98%, chr37 3.74%) (Figure 3A). The mapping quality in surface protein-coding sequences was often observed to drop significantly, which affected the inferred proportions of alleles in those regions, and this was found to lead to erroneous somy estimates (Figure 3B). To avoid this, a strict mapping quality filter was applied, and all the allele proportions were plotted by chromosome position. Using this strategy, it was possible to identify specific regions in chromosomes that could be used to infer CCNV with high confidence. Chromosomes 2, 7, and 13 showed longer regions with diverse allele proportions, nonetheless it was still possible to identify the trisomy of chromosome 2 of P2 and tetrasomies in hybrids based on using the smaller core regions (Figure 3C). Chromosomes 18, 21, and 37 showed somy patterns that were clearly consistent with the whole genome CCNV, confirming the trisomy in chromosome 21 of P2 and tetrasomy in the hybrid clones (Figure 3D).
 
-## CCNV reveals sequential loss of chromosomal copy in hybrid clones after culture growth
+![Figure 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-v2.jpg)
+
+**Figure 3.:** (A) Gene distribution and its implication in mapping quality (MQ) and somy estimation of six representative TcI chromosomes with longer surface molecule-encoding regions (chromosomes 2, 7, and 13) and shorter encoding surface molecule-encoding regions (chromosomes 18, 21, and 37). Surface protein-coding genes are represented as cyan blue boxes while other genes are represented as black boxes. (B) Implication of chromosome gene distribution in MQ and somy estimation based on AB in chromosome 2 (longer surface molecule-encoding regions) of parental strain 1 (P1-0). Dark green represents the fluctuation in MQ along chromosome positions. Blue points represent the proportion of the alleles in heterozygous SNP positions along the chromosome. Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele, black lines represent the median value in windows. (C) Proportion of the alleles in heterozygous SNP positions in chromosomes with longer surface molecule-encoding regions. (D) Proportion of the alleles in heterozygous SNP positions in chromosomes with shorter surface molecule-encoding regions. Blue points represent the proportion of the alleles in heterozygous SNP positions along the chromosome. Darker blue represents the frequency of the first allele while lighter blue represents the frequency of the second allele, black lines represent the median value in windows.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig3-figsupp5-v2.jpg)
+
+### CCNV reveals sequential loss of chromosomal copy in hybrid clones after culture growth
 
 CCNV and whole genome ploidy were evaluated in three replicate clones for each parental and hybrid strains after 800 generations in continuous in vitro culture. The trisomies in chromosomes 2 and 21 of P2 (Figure 2A) were no longer observed in any replicate clone after growth in culture (Figure 4A). New aneuploidies were identified in the parental strains, involving trisomy of chromosomes 37 and 45 in all P1 clones and trisomy of chromosomes 32 and 37 in all P2 clones (Figure 4A, B). As observed in the first generation, the RDC and AB analyses in chromosomes 6 and 31 were not consistent throughout the chromosomes (Figure 5—figure supplements 1–15). Whole genome ploidy estimation revealed a shrinking pattern in the hybrids, which was consistent with the prior flow cytometry analysis (Figure 1C). While parental strains remained essentially diploid (apart from the few aforementioned trisomies), a mixture between trisomic and tetrasomic profiles was observed in the hybrids after growth in culture (Figure 4C). Indeed, hybrid 2C1 displayed a clear transition from a tetraploid to a triploid pattern after growth in culture (Figure 4C), suggesting that genome erosion eventually leads to a return towards diploidy after the hybridization event, as observed in the naturally occurring TcV and TcVI hybrids (Lewis et al., 2009). In contrast with the first generation, the RDC analysis indicates putative aneuploidies in hybrid clones after extended culture growth (Figure 4A). Despite the patterns of genome erosion, tetrasomic profiles in chromosomes 19 and 37 were present in all hybrid clones after culture growth (Figure 4A, B). Taken together with previous DNA content analysis of intermediate time points (Figure 1), our results from the different in vitro evolved clones indicate that the genome erosion seems to be gradual phenomena, with sequential losses of chromosome copies and regions rather than coordinated jumps between ploidy levels. The proportion of each allele in heterozygous SNPs per chromosome position was also plotted for the 47 chromosomes in each replicate after culture growth (Figure 5—figure supplements 1–15). As observed in the representative chromosomes, the evolved parental clones still have a clear disomic pattern, while a mixture of trisomic and tetrasomic patterns is observed in evolved hybrid clones (Figure 5; Figure 5—figure supplements 1–15).
 
@@ -79,11 +134,51 @@ CCNV and whole genome ploidy were evaluated in three replicate clones for each p
 
 **Figure 4.:** (A) Aneuploidy analysis based on RDC among the 47 chromosomes in all clones after culture growth. (B) Proportion of the alleles in heterozygous SNP positions in chromosomes showing aneuploidies in all parental or hybrid clones. (C) Comparison of somy estimation based on the proportion of the alleles in heterozygous SNP positions of single-copy genes. First generation is presented in shaded blue, while the 800 generation is presented in orange.
 
-## Patterns of genome erosion after in vitro microevolution
+![Figure 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-v2.jpg)
+
+**Figure 5.:** (A) Proportion of the alleles in heterozygous SNP positions in chromosomes with longer surface molecule-encoding regions. (B) Proportion of the alleles in heterozygous SNP positions in chromosomes with shorter surface molecule-encoding regions. Points represent the proportion of the alleles in heterozygous SNP positions along the chromosome.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp4-v2.jpg)
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp5-v2.jpg)
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp6-v2.jpg)
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp7-v2.jpg)
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp8-v2.jpg)
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp9-v2.jpg)
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp10-v2.jpg)
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp11-v2.jpg)
+
+![Figure 5—figure supplement 12.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp12-v2.jpg)
+
+![Figure 5—figure supplement 13.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp13-v2.jpg)
+
+![Figure 5—figure supplement 14.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp14-v2.jpg)
+
+![Figure 5—figure supplement 15.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig5-figsupp15-v2.jpg)
+
+### Patterns of genome erosion after in vitro microevolution
 
 To investigate the patterns of genome erosion and CCNV in the hybrids, we performed a CNV analysis throughout the whole genome of parental and hybrid clones after extended culture growth. Despite the stability of DNA content in parental clones during our experiment (Figure 1C, D), similar gene categories showed CNV in both parental and hybrid clones after culture growth (Supplementary files 6–12). Gene losses occurred mainly in host-parasite interaction genes such as surface protein-coding genes and genes related to exocytosis and cell secretion, while genes related to macromolecule metabolism, ion transport, and cell division showed an increase in copy numbers (Figure 6; Figure 6—figure supplement 1). Despite the events of genome erosion, chromosomes 19 and 37 remained tetrasomic in all hybrid clones and an extra copy of chromosome 37 is observed in all parental clones after culture growth (Figure 4B and Figure 5B). Chromosomes 19 and 37 contain long core regions with abundant housekeeping genes involved in cellular metabolism, DNA replication and transcription (Supplementary files 10 and 11) which may contribute to fitness in culture. Altogether, these results suggest that the presence or absence of selective pressure from the environment may shape CCNV and genome erosion in T. cruzi, resulting in distinct genome patterns after hybridization events occur.
 
-## Genetic diversity in evolved genomes
+![Figure 6.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig6-v2.jpg)
+
+**Figure 6.:** (A) CNV comparison in parental strain. (B) CNV comparison in hybrid strain. Each dot in the CNV profile chart represents the normalized depth per kb, while lines represent the median ratio (Cingolani et al., 2012). Blue points and lines represent CNV profiles in the first generation, while red points and lines represent CNV profiles after 800 generations of in vitro culture growth. surface protein-coding genes are represented as cyan blue boxes, while other genes are represented as black boxes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75237/elife-75237-fig6-figsupp1-v2.jpg)
+
+### Genetic diversity in evolved genomes
 
 The effect of extended culture growth on genetic diversity was evaluated in all parental and hybrid evolved clones. Regarding the parental strains, all P1 replicates showed a similar SNP density in the retained high-quality regions after culture growth (P1-0: 2.84; P1-1: 2.80; P1-2: 2.77; P1-3: 2.82), while all P2 replicates showed an increase in SNP density after culture growth (P2-0: 2.11; P2-1 2.78; P2-2 2.81; P2-3 2.66, Mann-Whitney, p=0.042) (Figure 7A). The P2 replicates have a reduction in copies of HUS1-like encoding genes, which are involved in DNA repair, after culture growth (Supplementary file 12). Our gene enrichment analysis showed that a number of these genes were located on chromosome 2 (Supplementary file 12), suggesting that the loss of trisomy in this chromosome could possibly have contributed to the higher number of mutations that was found in the P2 clones. New genomic variants were found in both evolved parental clones (Figure 7A). All evolved hybrid replicate clones, with exception of 1D12-3, showed a slight decrease in SNP density (1C2-0: 3.48; 1C2-1: 2.96; 1C2-2: 3.26; 1C2-3: 3.10; 1D12-0: 3.29; 1D12-1: 3.24; 1D12-2: 3.22; 1D12-3: 3.36; 2C1-0: 3.49; 2C1-1: 3.34; 2C1-2: 2.64; 2C1-3: 3.25, Figure 7A), likely caused by the loss of genetic material. Multiple new genomic variants were found in the in vitro evolved hybrid progeny, displaying patterns specific to each clonal isolate (Figure 7A). However, these variants were distinct from the novel mutations that emerged in the period between hybrid formation and the start of the microevolution experiment (t=0) as described above.
 
@@ -111,37 +206,37 @@ In summary, we confirmed that in vitro hybrid formation in T. cruzi happened in 
 
 ## Materials and methods
 
-## Parasites and microevolution experiment
+### Parasites and microevolution experiment
 
 For routine culture, T. cruzi epimastigotes were grown axenically in supplemented RPMI as previously described (Carrasco et al., 1996). Parasites were cloned by limiting dilution. The microevolution experiment comprised continuous in vitro cultures of each parasite line for 5 years. Three experimentally generated hybrid clones (1C2, 1D12, and 2C1) and their two parents (P1 and P2) were seeded in the primary culture at 2 × 105/ml and then allowed to grow for seven generations to stationary phase. The parent and hybrid lines used to initiate the microevolutions experiment (t=0) were estimated to be respectively 70 and 95 generations removed from the hybridization events. Parasites were passaged into fresh media every 2 weeks at a seeding density of 2 × 105/ml, equating typically to 1% of the stationary phase cultures.
 
-## Flow cytometry
+### Flow cytometry
 
 DNA content was determined as previously described (Lewis et al., 2009). In brief, mid-log phase epimastigotes were washed in PBS, then fixed overnight in ice-cold 70% methanol/30% PBS. Fixed cells were washed in PBS, adjusted to 1 × 106cells/ml, and incubated for 45 min with 10 μg/ml propidium iodide and 10 μg/ml RNAse A at 37°C. Fluorescence was detected using a FACSCalibur flow cytometer for a minimum of 10,000 events. FlowJo software (Tree Star Inc, Ashland, OR) was used to plot histograms and identify G1-0 and G2-M peaks. Mean G1-0 values were taken to infer relative DNA content. An internal control T. cruzi strain, Esm cl3, was included in each run. Relative DNA content values were calculated as ratios compared to the internal standard. For experimental hybrids, the ratios relative to each parent (P1 or P2) were also determined using the mean standard:parent ratios derived from 12 independent experiments.
 
-## Microsatellite analysis
+### Microsatellite analysis
 
 Genotyping was done for four microsatellite loci: MCLF10, 10,101(TA), 7,093(TC), and 10,101(TC) as previously described (Lewis et al., 2009). Briefly, microsatellites were PCR amplified from genome DNA samples using fluorescent-labelled primers targeting conserved flanking regions. Amplicon lengths were determined using a 48-capillary 3730 DNA analyzer (Applied Biosystems, UK) and analysed using Genemapper v3.5 software (Applied Biosystems, UK). The size of different PCR products (alleles), visualized as fluorescence peaks, were determined automatically by the software using a size standard to calibrate the calculations. All allele size calls made by the software were checked manually against a library of known TcI alleles (Llewellyn et al., 2009).
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 Total genomic DNA was isolated directly from long-term parasite cultures using the Gentra Puregene Tissue Kit (Qiagen) according to the manufacturers’ instructions. A total of 40 ng of genomic DNA was used as a template to prepare the sequencing libraries with the Rubicon Kit and the Illumina TruPlex kit. For the two parent strains, a 180 and 350 bp insert sizes paired end libraries were produced, plus an additional 8 kb insert size mate paired library. For the hybrid offspring, a single paired end library was produced with an insert size of 350 bp. All libraries were sequenced using the Illumina HiSeq 2500 platform. The library complexity of each parent was analysed using the 17mer distribution of the Illumina libraries using Jellyfish (Llewellyn et al., 2009).
 
-## De novo genome assembly
+### De novo genome assembly
 
 The genomes of the parent strains were assembled using the 180 bp Illumina paired end library and the 8 kb Illumina mate pair library using the ALLPATHS-LG v52488 (https://software.broadinstitute.org/allpaths-lg/blog/) assembler with K=96, using the TcI Sylvio X10/1 reference strain (Talavera-López et al., 2021) for evaluations. The resulting contigs were scaffolded using both Illumina libraries and the BESST scaffolder (Sahlin et al., 2014). Later, gaps in the scaffolded assemblies were filled using the 180 bp with GapFiller (Nadalin et al., 2012) and chromosomes were numbered according to their sizes as for the human genome. Each genome was submitted for annotation, prior removal of repetitive elements using RepeatMasker (https://www.repeatmasker.org/), to the Companion annotation pipeline (Steinbiss et al., 2016).
 
-## Data processing and read mapping
+### Data processing and read mapping
 
 Paired end libraries were quality filtered using Nesoni Clip program (https://github.com/Victorian-Bioinformatics-Consortium/nesoni; Harrison, 2020) removing bases with a Phred quality score below 30 and reads shorter than 64 nucleotides; later, sequencing adaptors were removed. Mate paired libraries were processed as above, plus an additional step to reverse complement the filtered reads. Filtered reads, from all the sequencing libraries produced, were mapped against the TcI Sylvio X10/1 reference genome using Burrows-Wheeler Aligner (Li and Durbin, 2009). The mapping files were sorted, PCR and optical duplicates were removed, and read groups were added using Picard Tools v1.134 (https://broadinstitute.github.io/picard/; Schreiber, 2022). These mapping files were used for downstream analyses.
 
-## Identification of genomic variation
+### Identification of genomic variation
 
 SNPs were called using a mapping-based approach. Mapping files were sorted with Samtools v1.11, PCR-duplicates were marked with Picard v2.22.4 and SNPs were identified with Genome Analysis Toolkit (GATK – https://gatk.broadinstitute.org/hc/en-us) using the HaplotypeCaller algorithm with a minimum quality value of 30 and a minimum depth of coverage of 10. To avoid the influence of low mapping quality in repeated regions, a strict mapping quality filter was applied and any SNP in regions with mapping quality below 50 was removed using BCFtools (Li et al., 2009).
 
 VCFtools package (Li et al., 2009) was used to infer SNP density per 1 kb (option --SNPdensity) and SNPs exclusive to each strain were identified using both VCFtools and BEDtools (Li et al., 2009; Danecek et al., 2011; Quinlan and Hall, 2010). The functional effect of these variants and the ratio of synonymous per non-synonymous mutations was predicted using SNPEff v4.4 (Cingolani et al., 2012).
 
-## CCNV and ploidy estimation
+### CCNV and ploidy estimation
 
 CCNV and ploidy estimation were performed using a combination of RDC and AB methods as previously described (Reis-Cunha and Bartholomeu, 2019; Reis-Cunha et al., 2015). Briefly, the estimation of CCNV was based on the ratio between the mean coverage of predicted single-copy genes in a given chromosome and the mean coverage of all single-copy genes in the genome. This approach was based on the RDC of 2602 1:1 orthologs between the haplotypes of the reference SylvioX10/1 genome and the parental strains assemblies, identified using OrthoVenn2 (https://orthovenn2.bioinfotoolkits.net/home). For chromosomes lacking single-copy genes, CCNV was estimated based on the ratio between the mean RDC of each chromosome position and the mean coverage of all genome positions. If the ratio between the median chromosome coverage and the median genome coverage was approximately one, the chromosome had the same copy as the genome overall, while fluctuations in this ratio (lower than 0.75 or higher than 1.25) were putative aneuploidies.
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.32273.001 Gene expression evolution through gene regulatory network (GRN) changes has gained appreciation as a driver of morphological evolution. However, understanding how GRNs evolve is hampered by finding relevant cis -regulatory element (CRE) mutations, and interpreting the protein-DNA interactions they alter. We investigated evolutionary changes in the duplicated Bric-à-brac (Bab) transcription factors and a key Bab target gene in a GRN underlying the novel dimorphic pigmentation of D. melanogaster and its relatives. It has remained uncertain how Bab was integrated within the pigmentation GRN. Here, we show that the ancestral transcription factor activity of Bab gained a role in sculpting sex-specific pigmentation through the evolution of binding sites in a CRE of the pigment-promoting yellow gene. This work demonstrates how a new trait can evolve by incorporating existing transcription factors into a GRN through CRE evolution, an evolutionary path likely to predominate newly evolved functions of transcription factors.
+Gene expression evolution through gene regulatory network (GRN) changes has gained appreciation as a driver of morphological evolution. However, understanding how GRNs evolve is hampered by finding relevant cis-regulatory element (CRE) mutations, and interpreting the protein-DNA interactions they alter. We investigated evolutionary changes in the duplicated Bric-à-brac (Bab) transcription factors and a key Bab target gene in a GRN underlying the novel dimorphic pigmentation of D. melanogaster and its relatives. It has remained uncertain how Bab was integrated within the pigmentation GRN. Here, we show that the ancestral transcription factor activity of Bab gained a role in sculpting sex-specific pigmentation through the evolution of binding sites in a CRE of the pigment-promoting yellow gene. This work demonstrates how a new trait can evolve by incorporating existing transcription factors into a GRN through CRE evolution, an evolutionary path likely to predominate newly evolved functions of transcription factors.
 
 ## Introduction
 
@@ -28,7 +28,15 @@ One such experimentally tractable trait is the rapidly evolving pigmentation pat
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig1-v1.jpg)
 
-**Figure 1.:** D. melanogaster tergite pigmentation Gene Regulatory Network.Melanic tergite pigmentation requires the specific expression of the pigmentation genes yellow and tan, while blocking the expression of the yellow-pigment promoting ebony gene. (A) Tergite pigmentation pattern for a D. melanogaster male and the regulatory interactions experienced in the non-melanic male A2-A4 segments (top) and the melanic A5 and A6 segments (bottom). Abd-B is not expressed in the anterior A2-A4 segments and resultantly yellow and tan lack the direct and indirect activating input. In these anterior segments, Abd-A acts as a direct repressor of tan in combination with (direct or indirect) repressive effects of exd and hth. Abd-B is expressed in the posterior A5 and A6 segments, where it functions as a direct activator of yellow and an indirect activator of tan. In these segments, Abd-A acts as an indirect activator of tan. (B) Tergite pigmentation pattern of a D. melanogaster female and the key regulatory inputs experienced in the A2-A4 segments (top) and the A5 and A6 segments (bottom). In the female abdomen, Bab acts as a dominant repressor of yellow and tan expression, overriding the presence of Abd-B and Abd-A. In the GRN schematics, inactive genes are indicated in gray coloring, solid lines connecting genes indicate established direct interactions between a transcription factor and a target gene’s CRE, and dashed connections indicate indirect regulatory interactions or interactions not yet shown to be direct. Lines terminating with an arrowhead indicate regulation in which the transcription factor functions as an activator, and lines terminating in a nail-head shape indicate repression.
+**Figure 1.:** Melanic tergite pigmentation requires the specific expression of the pigmentation genes yellow and tan, while blocking the expression of the yellow-pigment promoting ebony gene. (A) Tergite pigmentation pattern for a D. melanogaster male and the regulatory interactions experienced in the non-melanic male A2-A4 segments (top) and the melanic A5 and A6 segments (bottom). Abd-B is not expressed in the anterior A2-A4 segments and resultantly yellow and tan lack the direct and indirect activating input. In these anterior segments, Abd-A acts as a direct repressor of tan in combination with (direct or indirect) repressive effects of exd and hth. Abd-B is expressed in the posterior A5 and A6 segments, where it functions as a direct activator of yellow and an indirect activator of tan. In these segments, Abd-A acts as an indirect activator of tan. (B) Tergite pigmentation pattern of a D. melanogaster female and the key regulatory inputs experienced in the A2-A4 segments (top) and the A5 and A6 segments (bottom). In the female abdomen, Bab acts as a dominant repressor of yellow and tan expression, overriding the presence of Abd-B and Abd-A. In the GRN schematics, inactive genes are indicated in gray coloring, solid lines connecting genes indicate established direct interactions between a transcription factor and a target gene’s CRE, and dashed connections indicate indirect regulatory interactions or interactions not yet shown to be direct. Lines terminating with an arrowhead indicate regulation in which the transcription factor functions as an activator, and lines terminating in a nail-head shape indicate repression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig2-v1.jpg)
+
+**Figure 2.:** (A) An ancestral bab gene was duplicated into the paralogous bab1 and bab2 genes in a Dipteran lineage that includes Drosophila fruit flies. The time scale indicates approximate divergence times in millions of years ago. (B) Male-specific expression of yellow in the abdominal epidermis is under the control of the yBE0.6 CRE that possesses two binding sites for Abd-B that are shown as yellow rectangles. Blue bars delimit the SM4 and SM10 regions required to suppress CRE activity in females. (C and D) The yBE0.6 EGFP reporter transgene is elevated in the male A5 and A6 abdomen segments (C) but is only barely detected females (D). (E–G) Ectopic reporter expression occurs in the female abdomen when either the SM4, SM10, or both regions are mutated. (H) The pnr-GAL4 driver activates dorsal midline expression of the UAS-EGFP gene, demarcating its domain of misexpression. (I) Dorsal midline expression of the yBE0.6 CRE is lost when bab1 is ectopically expressed by pnr-GAL4. (J) When the SM4 and SM10 regions are mutated, the yBE0.6 CRE can activate reporter expression in midline regions in spite of ectopically expressed bab1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Name and location of yBE0.6 scanning mutations. Scanning mutations for which CRE activity in the female abdomen was not noticeably altered are indicated as gray rectangle and those for which ectopic activity occurred are shown as light blue rectangles. The two vertical yellow lines on the illustration of the wild type CRE indicate the position of previously identified Abd-B binding sites that were not mutated in this study. (B–M) The EGFP reporter gene expression pattern in the female abdomen at ~85 hr after puparium formation driven by the non-muntant (yBE0.6) and scan mutant CRE sequences. (M) Scanning mutations 4 and 10 were combined together. Light blue arrowheads indicate abdomen segments with conspicuous ectopic EGFP expression.
 
 In the lineage of D. melanogaster, Bab expression is suspected to have evolved from a monomorphic pan-abdominal pattern to a sexually dimorphic expression pattern in which both paralogs are female-limited, and absent from males during the latter half of pupal development when enzymes of the pigmentation GRN are deployed (Kopp et al., 2000; Salomone et al., 2013). This dimorphic pattern of Bab expression required changes to two CREs controlling Bab’s abdominal epidermis expression (Williams et al., 2008). Although this dimorphic pattern of regulation allows yellow to be expressed in the epidermis underlying the pigmented male A5 and A6 segment tergites, several questions remain unanswered pertaining to how and when Bab was incorporated into the sexually dimorphic pigmentation GRN. Specifically, is yellow a direct target of Bab repression, and was it a target of regulation prior to the evolution of the dimorphic trait (Gompel and Carroll, 2003)? Moreover, to what extent did gene duplication, protein coding sequence, and CRE evolution contribute to this derived trait?
 
@@ -36,13 +44,13 @@ In this study, we sought to characterize the derived functions of Bab1 and Bab2 
 
 ## Results
 
-## Bab1 suppresses yellow expression through cis-regulatory element encodings
+### Bab1 suppresses yellow expression through cis-regulatory element encodings
 
 We sought to characterize how Bab1 exerts its influence on a minimal 0.6 kb body element CRE (yBE0.6) (Camino et al., 2015) (Figure 2B) that drives male-limited GFP reporter transgene expression in the dorsal epidermis of the A5 and A6 abdominal segments (Figure 2C and D). This reporter transgene activity matches the spatial, sex-limited, and temporal pattern of abdominal expression of yellow (Camino et al., 2015). We designed a set of 10 mutant yBE0.6 CREs (Figure 2—source data 2) to localize regions responsible for this element’s sex-limited activity. In each mutant yBE0.6, we introduced a block of ~70–85 base pairs in which every other base pair possessed non-complementary transversion mutations and compared its activity to the wild type CRE in transgenic D. melanogaster (Camino et al., 2015). While 8 of 10 ‘scanning mutant’ CREs showed wild type reporter repression in the female abdomen (Figure 2—figure supplement 1), we observed increased expression in the A5 and A6 segments of the SM4 and SM10 mutants (Figure 2E and F). Moreover, the increased expression was more pronounced when the SM4 and SM10 mutations were combined in the same reporter (Figure 2G). These results identified two CRE sub-regions that are required to suppress yellow expression in the posterior female abdomen, likely through the recruitment of a transcriptional repressor protein.
 
 We speculated that the sequences altered by the SM4 and SM10 mutations normally function to respond either directly or indirectly to the repressive Bab proteins. When Bab1 was ectopically expressed in the dorsal midline of the male abdomen by the GAL4/UAS system (Brand and Perrimon, 1993; Calleja et al., 2000), yBE0.6 reporter expression was largely suppressed (Figure 2H and I). However, a yBE0.6 CRE containing the SM4 and SM10 mutations, was unresponsive to ectopic Bab1 expression (Figure 2J). These data reveal that the SM4 and SM10 CRE regions encode inputs that respond to regulation by Bab proteins.
 
-## Bab1 directly interacts with multiple yellow CRE binding sites
+### Bab1 directly interacts with multiple yellow CRE binding sites
 
 Bab proteins may suppress the yBE0.6 CRE activity through two major routes: indirect or direct regulations. Bab may indirectly regulate the yBE0.6 CRE by controlling the expression of a transcription factor that interacts with binding sites in the SM4 and SM10 regions. On the other hand, Bab may directly interact with binding sites in the yBE0.6 CRE, acting as a transcriptional repressor. To distinguish between these mechanisms, we performed gel shift assays to see whether Bab specifically interacts with sequences within the SM4 and SM10 regions in vitro. Previously, it was shown that the DNA-binding domain (DBD) of Bab1 and Bab2 bound to similar DNA sequences (Lours et al., 2003); therefore, we chose to perform our experiments with the Bab1 DBD.
 
@@ -60,25 +68,291 @@ We performed a similar set of gel shift assays to localize Bab1 binding within t
 
 **Figure 4.:** (A) The wild type DNA sequence of the SM10 region is shown, which was subdivided into three smaller regions annotated below that were used as double stranded probes in gel shift assays with the GST-Bab1 DNA-binding Domain (Bab1-DBD). Red text delimits the inferred Bab binding site. (B) Each probe was tested in gel shift assay reactions for binding with five different amounts of Bab1-DBD. These were from left to right: 0, 500, 1000, 2000, and 4000 ng. (C–E). Gel shift assays using wild type probe sequences. (F–K) Gel shift assays using mutant probe sequences. Lower case purple letters indicate probe mutations that did not noticeably alter protein binding. Probe base pairs in lower case red letters are changes that altered protein binding. Purple and red arrowheads indicate the location of shifted probe, with red arrowheads indicating cases where the quantity of shifted probe was noticeably reduced. Asterisks indicate a situation where binding was non-specific as both the wild type and mutant probes were bound by the Bab1-DBD.
 
-## The biochemical activity of Bab predates its duplication event
+### The biochemical activity of Bab predates its duplication event
 
 While the bab genes have been shown to be sufficient to suppress D. melanogaster tergite pigmentation when ectopically expressed (Couderc et al., 2002; Kopp et al., 2000), the individual necessities of bab1 and bab2 paralogous genes have not been fully resolved. We created two short hairpin/miRNA (shmiR) transgenic lines that can conditionally and specifically target sequences unique to bab1 (Table 1) and separately two lines targeting bab2 (Table 2) for RNA-interference (RNAi). These shmiR transgenes are under the cis-regulatory control of Upstream Activating Sequences (UAS), and thus expression can be induced by the GAL4 transcription factor (Haley et al., 2008). Using a GAL4 insertion into the pannier (pnr) gene, we drove hairpins specific to a negative control gene (targeting the mCherry reporter gene) and to either or both bab1 and bab2 along the dorsal midline of the body. Relative to the control (Figure 5A), the bab1 shmiR transgene containing the siRNA id #3 sequence (Table 1) led to a conspicuous increase in the dorsal medial pigmentation of the female A5 and A6 tergites (Figure 5B), whereas the transgene including the siRNA id #4 sequence (Table 1) resulted in a phenotype not noticeably different from that of the negative control (Figure 5C). For bab2, the individual ectopic expression of the shmiR transgenes containing either the siRNA id #12 or #16 sequences (Table 2) resulted in ectopic dorsal medial tergite pigmentation in females (Figure 5D and E). Hence, these results demonstrate that suppression of tergite pigmentation in D. melanogaster females requires individual contributions from both bab1 and bab2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig5-v1.jpg)
 
-**Figure 5.:** bab1 and bab2 in suppressing female tergite pigmentation.(A–G) Double-stranded (ds) RNA transgenes with UAS binding sites were expressed in the dorsal midline abdomen region driven by GAL4 that was expressed in the midline pattern of the pnr gene. (A) Expression of a negative control dsRNA that targets a gene (mCherry) that does not naturally exist in the D. melanogaster genome resulted in no apparent pigmentation phenotype from RNA-interference (RNAi). (B and C) Two different dsRNAs specific to bab1 and to (D and E) bab2 were tested for pigmentation phenotypes from RNAi. (F and G) Simultaneous RNAi for bab1 and bab2 was accomplished by expressing ‘chained’ transgenes. Red arrowheads indicate tergite regions where RNAi caused the development of ectopic pigmentation. The anterior midline tergite regions (illustrated in panel A by dashed yellow rectangles) were quantified for their darkness percentage for replicate specimens (n = 4). These percentages and their standard error of the mean (±SEM) are provided below a representative image.10.7554/eLife.32273.010Figure 5—source data 1.
+**Figure 5.:** (A–G) Double-stranded (ds) RNA transgenes with UAS binding sites were expressed in the dorsal midline abdomen region driven by GAL4 that was expressed in the midline pattern of the pnr gene. (A) Expression of a negative control dsRNA that targets a gene (mCherry) that does not naturally exist in the D. melanogaster genome resulted in no apparent pigmentation phenotype from RNA-interference (RNAi). (B and C) Two different dsRNAs specific to bab1 and to (D and E) bab2 were tested for pigmentation phenotypes from RNAi. (F and G) Simultaneous RNAi for bab1 and bab2 was accomplished by expressing ‘chained’ transgenes. Red arrowheads indicate tergite regions where RNAi caused the development of ectopic pigmentation. The anterior midline tergite regions (illustrated in panel A by dashed yellow rectangles) were quantified for their darkness percentage for replicate specimens (n = 4). These percentages and their standard error of the mean (±SEM) are provided below a representative image.
+
+**Table 1.**
+ Design of small interfering RNA output for the bab1 ORF.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA id</th>
+      <th>Position</th>
+      <th>SS sequence (Passenger)</th>
+      <th>AS sequence (Guide)</th>
+      <th>Corrected score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>560</td>
+      <td>GGAUAGCUGAGAUGUUGAAAG</td>
+      <td>UUCAACAUCUCAGCUAUCCUG</td>
+      <td>99.7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1442</td>
+      <td>CCGAUGACUUGGAGAUCAAGC</td>
+      <td>UUGAUCUCCAAGUCAUCGGCG</td>
+      <td>85.7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>278</td>
+      <td>GGAACAACUAUCAGACGAACC</td>
+      <td>UUCGUCUGAUAGUUGUUCCAG</td>
+      <td>97.6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>162</td>
+      <td>GAGUCAAGGUCAUGCUGUAGC</td>
+      <td>UACAGCAUGACCUUGACUCUC</td>
+      <td>95.2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1483</td>
+      <td>CGAGAGGAAGAAAGGGUAAGU</td>
+      <td>UUACCCUUUCUUCCUCUCGGA</td>
+      <td>81.8</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>150</td>
+      <td>CGAGGACAAGGAGAGUCAAGG</td>
+      <td>UUGACUCUCCUUGUCCUCGUC</td>
+      <td>94.6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1473</td>
+      <td>CGAGAUGAUCCGAGAGGAAGA</td>
+      <td>UUCCUCUCGGAUCAUCUCGGC</td>
+      <td>78.9</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>219</td>
+      <td>GGGCAGGAGUUCUUCGGUAGC</td>
+      <td>UACCGAAGAACUCCUGCCCUG</td>
+      <td>89.5</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>359</td>
+      <td>GCGAUGGUCGGUCCAUGAAGG</td>
+      <td>UUCAUGGACCGACCAUCGCAU</td>
+      <td>88.2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>664</td>
+      <td>CCCAAGGAGAGCACUUCAACU</td>
+      <td>UUGAAGUGCUCUCCUUGGGCG</td>
+      <td>84.7</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>368</td>
+      <td>GGUCCAUGAAGGCCCACAAGA</td>
+      <td>UUGUGGGCCUUCAUGGACCGA</td>
+      <td>87.5</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Design of small interfering RNA output for the bab2 ORF.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA _id</th>
+      <th>Position</th>
+      <th>SS sequence (Passenger)</th>
+      <th>AS sequence (Guide)</th>
+      <th>Corrected score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>16</td>
+      <td>GAUUGUGGACUUUGAAAUAAA</td>
+      <td>UAUUUCAAAGUCCACAAUCUG</td>
+      <td>98.1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>279</td>
+      <td>CGGAGCUGGUGAAGUCCAAGG</td>
+      <td>UUGGACUUCACCAGCUCCGUU</td>
+      <td>94.5</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>51</td>
+      <td>GCGAAAUCGAUCAGUUCGAGG</td>
+      <td>UCGAACUGAUCGAUUUCGCCG</td>
+      <td>94.4</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>155</td>
+      <td>AGAAAGUACUCACCCGAAAGG</td>
+      <td>UUUCGGGUGAGUACUUUCUGU</td>
+      <td>93.6</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>202</td>
+      <td>AAGUGAGGUGGUUGAUCAAAU</td>
+      <td>UUGAUCAACCACCUCACUUGG</td>
+      <td>92.5</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>241</td>
+      <td>CGUUGGAGAAGUCAAGUCACC</td>
+      <td>UGACUUGACUUCUCCAACGCU</td>
+      <td>92.3</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>1</td>
+      <td>GGACAUGACCAAACAGAUUGU</td>
+      <td>AAUCUGUUUGGUCAUGUCCAU</td>
+      <td>91.7</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>14</td>
+      <td>CAGAUUGUGGACUUUGAAAUA</td>
+      <td>UUUCAAAGUCCACAAUCUGUU</td>
+      <td>91.6</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>63</td>
+      <td>AGUUCGAGGCGAGUGACUACA</td>
+      <td>UAGUCACUCGCCUCGAACUGA</td>
+      <td>91.4</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>154</td>
+      <td>CAGAAAGUACUCACCCGAAAG</td>
+      <td>UUCGGGUGAGUACUUUCUGUU</td>
+      <td>90.7</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>13</td>
+      <td>ACAGAUUGUGGACUUUGAAAU</td>
+      <td>UUCAAAGUCCACAAUCUGUUU</td>
+      <td>90.7</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>306</td>
+      <td>CGAUGAACGACCAAGCUUUGA</td>
+      <td>AAAGCUUGGUCGUUCAUCGGA</td>
+      <td>90.6</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>140</td>
+      <td>CUAGAGGACCAGAACAGAAAG</td>
+      <td>UUCUGUUCUGGUCCUCUAGAU</td>
+      <td>90.4</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>625</td>
+      <td>GACCAAUGUCUUUGACGAACU</td>
+      <td>UUCGUCAAAGACAUUGGUCAG</td>
+      <td>90.3</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>12</td>
+      <td>AACAGAUUGUGGACUUUGAAA</td>
+      <td>UCAAAGUCCACAAUCUGUUUG</td>
+      <td>90.3</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>297</td>
+      <td>AGGCGAGUCCGAUGAACGACC</td>
+      <td>UCGUUCAUCGGACUCGCCUUG</td>
+      <td>89.8</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>443</td>
+      <td>CAGCCUCAACCAAAUCUUAAG</td>
+      <td>UAAGAUUUGGUUGAGGCUGUG</td>
+      <td>89.6</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>822</td>
+      <td>UGGUGGAGUUCAUGUACAAGG</td>
+      <td>UUGUACAUGAACUCCACCAGG</td>
+      <td>88.9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1099</td>
+      <td>GGACUUGAAUCAGCGACAAAG</td>
+      <td>UUGUCGCUGAUUCAAGUCCAA</td>
+      <td>88.8</td>
+    </tr>
+  </tbody>
+</table>
 
 The RNAi knockdown of bab1 and bab2 each increased pigmentation, suggesting that we would obtain a more expressive phenotype if both paralogs’ expression were suppressed. To test this prediction, we created ‘chained’ shmiRs (Haley et al., 2010) to co-express the effective bab1 shmiR (Id #3) separately with each bab2 shmiR (Id #12 and #16). We found that these chained shmiR transgenes, when ectopically expressed in the dorsal midline resulted in more expansive ectopic pigmentation phenotypes (Figure 5F and G). Notably, for one chained combination, ectopic pigmentation included the A4 tergites of males and females (Figure 5F, red arrowheads). These results show that bab1 and bab2 paralog expression are necessary to fully suppress tergite pigmentation, including the A4 segment of males and females.
 
 Not surprisingly, the RNAi phenotypes were most extreme in the female abdomen as the pupal male abdomen lacks significant bab1 and bab2 expression (Salomone et al., 2013). Previous studies have shown that both bab1 and bab2 are sufficient to suppress male tergite pigmentation when ectopically expressed (Couderc et al., 2002; Kopp et al., 2000). However, direct comparisons of the individual paralogs were hampered by the positional effects associated with random insertion of bab paralog open-reading frame (ORF) transgenes into different genomic sites (Couderc et al., 2002; Kopp et al., 2000). Here, we created transgenes with the D. melanogaster bab1 and bab2 ORFs under UAS regulation that were integrated site-specifically into the attP40 site on the second chromosome. In the absence of a GAL4 driver, leaky expression of these transgenes resulted in reduced pigmentation of the male A5 and A6 tergites (Figure 6A and B). When we drove ectopic expression of these ORFs in the dorsal midline by the pnr-GAL4 chromosome, we failed to recover viable adult males which possessed the UAS-bab1 ORF transgene, indicating that the ectopic-expression phenotype was lethal. While we obtained fewer than expected offspring with ectopic expression of the bab2 ORF than expected for independent assortment (Figure 6—figure supplement 1), some adults were identified. For these specimens, tergite pigmentation was eliminated in the dorsal midline of males, and a non-specific split tergite phenotype was seen for both males and females (Figure 6—figure supplement 2). These outcomes show that bab1 and bab2 have a strong pigment-suppressing capability, although in the genetic background tested, bab1 ectopic expression was lethal.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig6-v1.jpg)
+
+**Figure 6.:** (A–L) Ectopic expression assays for various bab protein coding sequences. (A and G) D. melanogaster bab1, (B and H) D. melanogaster bab2, (C and I) a DNA-binding compromised version of D. melanogaster bab1 (bab1 DBM), (D and J) D. willistoni bab1, (E and K) D. mojavensis bab2, and (F and L) A. gambiae bab. (A–F) Leaky expression of transgenes from the attP40 transgene insertion site. (G–L) Ectopic expression of protein coding sequences in the male abdomen under the control of the y-GAL4 transgene. Red arrowheads indicate tergite regions with conspicuously reduced tergite pigmentation. The A5 and A6 tergite regions were quantified for their darkness percentage for replicate specimens (n = 4). These percentages and their standard error of the mean (±SEM) are provided below a representative image.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** UAS-bab open-reading frame transgenes are located in the attP40 site on the D. melanogaster second chromosome. Male flies were crossed to females heterozygous for the third chromosome where the GAL4 gene is inserted into the pnr locus and the TM3 balancer. Fewer offspring were obtained that possessed an ectopic bab expressing genotype than expected by chance, indicating lethality due to bab expression in the spatial and temporal pattern of the pnr gene.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–E) Ectopic expression of bab protein coding sequences in the dorsal midline of male and female abdomens under control of the pnr-GAL4 driver. These coding sequences were (A) D. melanogaster bab2, (B) a DNA-binding compromised version of D. melanogaster bab1 (bab1-DBM), (C) D. willistoni bab1, (D) D. mojavensis bab2, and (E) A. gambiae bab. Red arrowheads indicate tergite regions with conspicuously reduced tergite pigmentation. (A, C, D, and E) Ectopic expression resulted in reduced tergite pigmentation and a non-specific split tergite phenotype. (B) The DNA-binding mutant Bab1 could neither suppress tergite pigmentation nor cause the non-specific split tergite phenotype.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Dorsal midline expression of the UAS-GFP transgene under the control of the pnr-GAL4 driver at ~40–50 hr after puparium formation (hAPF). (B) Dorsal midline expression of the UAS-GFP transgene under the control of the pnr-GAL4 driver at ~80–88 hAPF. (C) The UAS-GFP transgene is not expressed at ~40–50 hAPF when under the regulatory control of the y-GAL4 driver. (D) The pan-abdomen expression of the UAS-GFP transgene under the control of the y-GAL4 driver at ~80–88 hAPF. The highest level expression occurs in the A5 and A6 segments due to the activity of the body element CRE which is included in the y-GAL4 transgene. All specimens shown are males.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Little-to-no endogenous Bab1 protein can be detected in the dorsal abdominal epidermis of D. melanogaster male pupa. (B) In contrast, nuclear-localized expression of the Bab1 DNA-binding mutant protein can be observed when the UAS-transgene was ectopically expressed under the control of the pnr-GAL4 driver. (A’ and B’) Zoomed in view of the expression within the regions outlined by dashed red boxes in panels A and B. Samples shown are at a pupal developmental stage of ~88 hr after puparium formation.
+
 The lethality encountered in the ectopic-expression assays likely stems from expressing the bab ORFs in the spatial and temporal pattern of the pnr gene (Calleja et al., 2000) which drives strong expression from embryonic stages through pupal development. In order to better visualize the specific effects of bab ORF expression on tergite pigmentation, we utilized the y-GAL4 transgene (Hart, 2013) to drive expression in the abdominal epidermis pattern of the yellow gene which begins around 70 hours after puparium formation (hAPF) (Figure 6—figure supplement 3) based on a 100-hour period of pupal development (Rogers and Williams, 2011). Expression of the bab1 and bab2 ORFs driven by the y-GAL4 chromosome eliminated both lethality and tergite developmental defects, resulting in male adults which entirely lacked melanic pigmentation on the A5 and A6 tergites (Figure 6G and H). These data show that Bab1 and Bab2 are both potent suppressors of pigmentation in two very different regimes of ectopic expression.
 
-## Bab1 ectopic-expression phenotypes require DNA-binding capability
+### Bab1 ectopic-expression phenotypes require DNA-binding capability
 
 The Bab1 and Bab2 proteins possess a conserved domain that includes both pipsqueak (psq) and AT-Hook motifs that function as an in vitro DNA-binding domain or DBD (Lours et al., 2003), supporting the notion that these paralogs function as transcription factors in vivo. However, bona fide direct targets of either Bab1 or Bab2 have yet to be discovered. Previously, it was shown that the Bab1 DBD failed to bind DNA in vitro when possessing non-synonymous mutations in the pipsqueak (psq) motif converting Alanine and Isoleucine amino acids to Glycine and Proline, respectively (AI576GP), or when non-synonymous mutations altered a stretch of Arginine, Glycine, and Arginine amino acids in the AT-Hook motif to Aspartic acid, Glycine, and Aspartic acid (RGR627DGD), respectively (Lours et al., 2003). To test whether this compromised ability to bind DNA in vitro has in vivo significance, we created a bab1 ORF transgene that possesses both the psq and AT-Hook mutations (called bab1 DNA-binding mutant or bab1 DBM, Figure 6—source data 1) and incorporated this transgene into the same genomic site as our other UAS transgenes. We found that leaky expression of the bab1 DBM was insufficient to suppress tergite pigmentation (Figure 6C). Moreover, ectopic expression of the Bab1 DBM by the pnr-GAL4 driver resulted in detectable accumulation of nuclear protein (Figure 6—figure supplement 4) which did not induce lethality or a pigmentation phenotype (Figure 6—figure supplements 1 and 2). Similarly, expression of the Bab1 DBM in the y-GAL4 pattern resulted in males with the wild type melanic tergites (Figure 6I). Collectively, these results lend further support to a model in which DNA binding is required for the D. melanogaster Bab paralogs to repress tergite pigmentation.
 
-## Functional equivalence of bab homologs for the suppression of tergite pigmentation
+### Functional equivalence of bab homologs for the suppression of tergite pigmentation
 
 The currently favored model for the origin of the D. melanogaster sexually dimorphic tergite pigmentation posits that it evolved from an ancestor that expressed Bab in a sexually monomorphic manner, and for which melanic pigmentation in males and females was limited (Jeong et al., 2006; Kopp et al., 2000; Salomone et al., 2013). Moreover, CRE evolution has prominently factored into the origin of this dimorphic pigmentation trait, as changes in CREs of bab have been previously identified (Williams et al., 2008). The possibility that Bab protein coding sequence evolution has additionally contributed has largely remained untested. To investigate whether the Bab1 and Bab2 proteins have functionally evolved, we created UAS-regulated transgenes possessing the D. willistoni bab1 and D. mojavensis bab2 ORFs (Figure 6—source data 1). These orthologous protein coding sequences come from fruit fly species presumed to possess the ancestral sexually monomorphic patterns of pigmentation and Bab expression. At the time this study was initiated, the D. willistoni bab2 ORF included far fewer codons than the D. melanogaster ortholog, indicating that the full ORF remained uncharacterized. Thus, we opted to use the ORF for the D. mojavensis ortholog. As seen for the D. melanogaster ORF transgenes, leaky expression from the attP2 genomic site of transgene insertion resulted in a similar reduction in male A5 and A6 tergite pigmentation (Figure 6D D. willistoni bab1; and 6E, D. mojavensis bab2). Pigmentation was dramatically suppressed when these orthologous proteins were ectopically expressed in the dorsal medial midline pattern of pnr-GAL4, (Figure 6—figure supplement 2) and y-GAL4 (Figure 6J D. willistoni bab1; and 6K, D. mojavensis bab2). These results suggest that the ability of the Bab1 and Bab2 proteins to regulate dimorphic pigmentation did not require the evolution of an altogether new biochemical capability.
 
@@ -88,13 +362,21 @@ We sought to determine whether the functional equivalence of the distantly relat
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig7-v1.jpg)
 
-**Figure 7.:** (A) 5’ of yellow exon one resides the wing element and body element CREs, and the position of the D. melanogaster yBE0.6 is shown below the to-scale representation of the partial locus. (B–G) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. melanogaster. (H–M) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. malerkotliana. The levels of EGFP expression are represented as the % of the mean ±SEM for samples in which the Bab1-DBM was expressed. (B and H) Robust EGFP reporter expression in samples ectopically expressing the Bab1-DBM protein in the y-GAL4 pattern. (C and I) Ectopic expression of Bab1 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (D and J) Ectopic expression of Bab2 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (E and K) Ectopic expression of D. willistoni Bab1 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (F and L) Ectopic expression of D. mojavensis Bab2 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (G and M) Ectopic expression of A. gambiae Bab in the y-GAL4 pattern reduced A5 and A6 expression compared to the control.10.7554/eLife.32273.021Figure 7—source data 1.
+**Figure 7.:** (A) 5’ of yellow exon one resides the wing element and body element CREs, and the position of the D. melanogaster yBE0.6 is shown below the to-scale representation of the partial locus. (B–G) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. melanogaster. (H–M) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. malerkotliana. The levels of EGFP expression are represented as the % of the mean ±SEM for samples in which the Bab1-DBM was expressed. (B and H) Robust EGFP reporter expression in samples ectopically expressing the Bab1-DBM protein in the y-GAL4 pattern. (C and I) Ectopic expression of Bab1 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (D and J) Ectopic expression of Bab2 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (E and K) Ectopic expression of D. willistoni Bab1 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (F and L) Ectopic expression of D. mojavensis Bab2 in the y-GAL4 pattern reduced A5 and A6 expression compared to the control. (G and M) Ectopic expression of A. gambiae Bab in the y-GAL4 pattern reduced A5 and A6 expression compared to the control.
 
-## The gain of direct Bab regulation required CRE evolution for yellow
+### The gain of direct Bab regulation required CRE evolution for yellow
 
 The male-specific pigmentation of the A5 and A6 tergites is thought to be a derived state in the lineage of D. melanogaster after it diverged from monomorphic lineages such as that of the willistoni and possibly the obscura species groups (Figure 9). This may have occurred by two distinct possible routes. First, the regulation of yellow expression by Bab might predate the dimorphic pattern of tergite pigmentation, and thus, when Bab expression evolved dimorphism, the yellow gene became restricted to males. Alternately, the regulation of yellow by Bab may have originated contemporaneously with the evolution of dimorphic Bab expression. We compared the D. melanogaster Bab-binding sites from the SM4 and SM10 regions to the orthologous gene regions from species descending from either a dimorphic or monomorphic pigmented ancestor (Figure 9A). This analysis revealed orthologous sequences with several conserved nucleotides among the body elements of species descending from a dimorphic pigmented common ancestor (Figure 9A, node 1). This pattern of sequence conservation is similar to what was found for the derived binding sites for the Hox transcription factor Abd-B that were shown to be a key event in the evolution of male-limited yellow expression (Jeong et al., 2006). However, these orthologous sequences possess numerous divergent nucleotides among species that share a dimorphic pigmented ancestor (Figure 9A, node 1), and a near complete absence of sequence conservation with species possessing the ancestral monomorphic trait. Thus, it is possible that an ancestral regulatory linkage between Bab and yellow is obscured by the turnover and displacement (Hare et al., 2008; Ludwig et al., 2000; Swanson et al., 2011) of Bab-binding sites to other regions of the body element.
 
 To infer the antiquity of Bab-repression at yellow, we compared the capabilities of the D. melanogaster Bab orthologs to affect the CRE activities of yellow 5’ regulatory regions (containing both the wing and body elements) from dimorphic species (D. melanogaster and D. malerkotliana) and ancestrally monomorphic species (D. pseudoobscura and D. willistoni) (Figure 8). For regulatory sequences derived from dimorphic species, reporter expression in A5 and A6 segments was strikingly reduced in the presence of either ectopic Bab1 or Bab2 compared to the Bab1 DBM control (Figure 8A–A’’ and and B–B’’). In contrast, the regulatory sequences from monomorphic species showed modest and no apparent reduction of D. pseudoobscura and D. willistoni CREs, respectively. Two additional observations can be made. One being the even greater level of regulatory-activity repression for the D. malerkotliana yellow regulatory region (33 ± 0% and 33 ± 1% in the presence of ectopic Bab1 or Bab2, respectively) than for D. melanogaster (56 ± 1% and 53 ± 0% in the presence of ectopic Bab1 and Bab2, respectively). Second, the regulatory activity of the D. pseudoobscura CRE was modestly repressed in the presence of Bab (85 ± 2% and 70 ± 1% in the presence of ectopic Bab1 and Bab2, respectively).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig8-v1.jpg)
+
+**Figure 8.:** (A–A’’) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. melanogaster. (B–B’’) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. malerkotliana. (C–C’’) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the Wing Body Element of D. pseudoobscura. (D–D’’) Comparison of the levels of EGFP-reporter expression in the male A5 and A6 segments driven by the 5’ non-coding region of D. willistoni yellow. For each comparison, the level of EGFP expression are expressed as the percentage of the mean ±SEM for samples in which the Bab1-DBM was expressed. (A–D) Ectopic expression of the Bab1-DBM in the y-GAL4 pattern. (A’–D’) Ectopic expression of Bab1 in the y-GAL4 pattern. (A’’–D’’) Ectopic expression of Bab2 in the y-GAL4 pattern.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Scatter plots of the pixel intensity statistics obtained for the EGFP reporter expression occurring in the dorsal abdominal epidermis of the A5 and A6 segments and the A3 segment. For each condition (a reporter transgene with expression driven by a yellow CRE and an ectopically expressed bab open reading frame), expression was measured for five replicate male specimens, except for the D. pseudoobscura y5’ sequence in the presence of ectopic bab1 DBM expression (n = 4), for which the mean is shown as a horizontal black bar. All specimens used were at the developmental stage of ~85 hr after puparium formation for growth at 25°C.
 
 While A5 and A6 yellow expression is largely governed by the body element in males, the wing element does direct moderate levels of expression throughout the abdomen and strong expression in posterior stripes of each segment. To see whether the wing element might also respond to Bab expression and thus harbor Bab-binding sites, we compared the levels of expression for the reporter transgenes in the A3 segment in which expression is driven exclusively by the wing element (Figure 8—figure supplement 1). While the D. melanogaster wing element showed a slight reduction in activity when in the presence of ectopic Bab1 or Bab2 compared to the Bab1 DBM control, no apparent reduction in activity was observed for the transgenes with either the D. malerkotliana, D. pseudoobscura, or D. willistoni yellow regulatory sequences (Figure 8—figure supplement 1). These results can be explained by two evolutionary scenarios. First, the linkage between Bab and yellow could have been present in a common ancestor of D. melanogaster, D. pseudoobscura, and D. willistoni and was subsequently reduced and lost in the latter two species’ lineages, respectively. On the other hand, direct regulation of yellow by Bab evolved specifically within the body element, coincident with the evolution of the dimorphic pigmentation trait. This second scenario is consistent with the favored model of Sophophora pigmentation evolution (Jeong et al., 2006; Rebeiz and Williams, 2017). In the future, deeper taxon sampling in Sophophora may shed light on which of the two scenarios reflects the true evolutionary history for this dimorphic pigmentation trait.
 
@@ -104,15 +386,15 @@ Here, we investigated the functions and evolution of the paralogous D. melanogas
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/32273/elife-32273-fig9-v1.jpg)
 
-**Figure 9.:** yellow expression.(A) An alignment of the Bab-bound sequences in the SM4 (site 1) and SM10 (site 2) regions and for the two previously identified binding sites for Abd-B in the yBE0.6 CRE (Jeong et al., 2006). ‘Node 1’ on the phylogeny indicates the most recent common ancestor suspected to have possessed the derived male-specific pattern of pigmentation. Time scale shown is in millions of years ago. Bold capital letters indicate the bases bound by the transcription factor in the D. melanogaster CRE, and those which are conserved in the orthologous regions for related species. (B) Model for the derivation of a dimorphic pigmentation trait where dimorphic pigmentation required the evolution of a dimorphic Bab expression and the gain of a regulatory linkage between Bab and yellow through gains of binding sites in the body element CRE.
+**Figure 9.:** (A) An alignment of the Bab-bound sequences in the SM4 (site 1) and SM10 (site 2) regions and for the two previously identified binding sites for Abd-B in the yBE0.6 CRE (Jeong et al., 2006). ‘Node 1’ on the phylogeny indicates the most recent common ancestor suspected to have possessed the derived male-specific pattern of pigmentation. Time scale shown is in millions of years ago. Bold capital letters indicate the bases bound by the transcription factor in the D. melanogaster CRE, and those which are conserved in the orthologous regions for related species. (B) Model for the derivation of a dimorphic pigmentation trait where dimorphic pigmentation required the evolution of a dimorphic Bab expression and the gain of a regulatory linkage between Bab and yellow through gains of binding sites in the body element CRE.
 
-## The evolution of the Bab paralogs
+### The evolution of the Bab paralogs
 
 The D. melanogaster bab locus provides an interesting example in which the protein-coding and regulatory divergence of duplicated genes can be compared. The phylogenetic distribution of bab paralogs supports an estimated timing of the duplication event to around 125 million years since the common ancestor of the fruit fly, Tsetse fly, and Hessian fly split from the lineage of the sandfly and mosquitoes (Figure 2A) (Wiegmann et al., 2011). Duplicate genes may sub-functionalize, neo-functionalize, or be lost through pseudogenization (Lynch and Conery, 2000). Since this duplication event, both bab paralogs have been maintained in the genomes of distantly related fruit fly species (Clark et al., 2007; Richards et al., 2005), and in species from related families whose genomes have been sequenced (Giraldo-Calderón et al., 2015; Kriventseva et al., 2015). Here, we showed that both D. melanogaster bab paralogs and orthologs from other fly and mosquito lineages can similarly impact the development of melanic tergite pigmentation when ectopically expressed in D. melanogaster (Figure 6), and each gene can induce a similar non-specific split tergite phenotype (Figure 6—figure supplement 2). These outcomes suggest for at least for body pigment regulation, that their protein coding regions are functionally equivalent.
 
 In contrast to the conserved protein functionality that we observed for the Bab paralogs, some divergent patterns of expression have been found for the paralogs in D. melanogaster, consistent with a role for neo- or sub-functionalization (Couderc et al., 2002). Yet, the majority of bab paralog expression patterns appear to be common to both paralogs (Couderc et al., 2002; Rogers et al., 2013; Salomone et al., 2013), including the pupal abdominal epidermis, for which expression is governed by two shared CREs (Williams et al., 2008). It has been found that heterozygous bab null females express a male-like pattern of tergite pigmentation compared to wild type females, and the homozygous null pigmentation phenotype is more or less equivalent to that of males. (Rogers et al., 2013). Here, we showed that the RNAi reduction of expression for either bab1 or bab2 resulted in more male-like pigmentation pattern on the female abdomen, and RNAi for both paralogs simultaneously resulted in a more pronounced male-like phenotype (Figure 5). While qualitative differences through CRE functional divergence must have occurred to drive the divergent paralog expression in some tissues, the need for a higher overall quantity of expressed Bab protein seems to be key for Bab’s role in the GRN generating the derived dimorphic pattern of abdomen pigmentation.
 
-## Bab and its history in a pigmentation gene regulatory network
+### Bab and its history in a pigmentation gene regulatory network
 
 The stark dimorphism between the melanic pigmentation of D. melanogaster male and female abdominal tergites represents a trait whose origin has now been resolved to the level of its GRN connections. Dimorphic pigmentation is thought to have derived from a monomorphic ancestral state in the lineage of D. melanogaster after it diverged from that for D. willistoni and perhaps even as recently as the D. pseudoobscura split in the Sophophora subgenus (Jeong et al., 2006; Salomone et al., 2013). Assuming this scenario is generally correct, then when and how did Bab become a part of this GRN? One plausible explanation is that Bab regulated the expression of pigmentation genes prior to the emergence of this dimorphic trait, perhaps as a part of an antecedent dimorphic GRN. One study provided data consistent with this scenario, showing that Bab2 expression often, but not always, displayed an anti-correlation to where melanic pigmentation developed on fruit fly tergites, including non-Sophophora species (Gompel and Carroll, 2003). If Bab had an ancient role in regulating the expression of pigmentation genes such as yellow, then dimorphic pigmentation could have evolved by re-deploying a conserved Bab-responsive CRE in the abdomen. Furthermore, it was demonstrated that an abdominal epidermis CRE activity is present in the yellow gene intron of the monomorphic pigmented species such as D. pseudoobscura, D. willistoni, and the non-Sophophoran species D. virilis (Kalay and Wittkopp, 2010). Thus, it is conceivable for the Bab-body element linkage to have been present, while the monomorphic activity of this second yellow CRE masked the dimorphic regulation of the body element.
 
@@ -120,43 +402,474 @@ However, various data are difficult to reconcile with this re-deployment model. 
 
 Based upon the available data, it seems much more likely that Bab was integrated into an antecedent GRN to play a key role in differentiating the expression outcomes between males and females. This integration involved the remodeling of existing CREs controlling Bab expression in the abdominal epidermis (Rogers et al., 2013; Williams et al., 2008), and the acquisition of yellow as a direct target of regulation through the formation of binding sites in the emergent body element (Figure 9). At this point, it is unclear whether dimorphic Bab expression preceded the evolution of Bab sites in the yellow body element CRE or if the Bab sites evolved first. One hint to this puzzle may lie in D. pseudoobscura, a species whose yellow body element CRE is mildly Bab-responsive (Figure 8 and Figure 8—figure supplement 1), but for which Bab expression retains its ancestral monomorphic expression. This might suggest that the capability to respond (albeit weakly) to Bab evolved first, followed by the evolution of dimorphic Bab expression patterns. Further, the evolutionary connections identified here represent a subset of the connections downstream of Bab. While the yellow body CRE contains separable activating and repressing inputs, the gene tan, which is co-expressed with yellow appears to have a very different encoding for dimorphism (Camino et al., 2015). Extensive mutagenesis of the tan MSE failed to find any mutations that relaxed dimorphic expression, suggesting that activating and repressing inputs are overlapping, or are closely situated in this CREs DNA sequence. Future studies of this GRN will illuminate how the network downstream of Bab was elaborated.
 
-## The incorporation of old transcription factors into new networks
+### The incorporation of old transcription factors into new networks
 
 We suggest that the increased complexity of the dimorphic pigmentation GRN through the integration of the Bab transcription factors by CRE evolution will exemplify a common mechanism whereby increasingly sophisticated GRNs have come about to regulate traits throughout the animal kingdom. The vast majority of transcription factor binding specificities remain conserved over long evolutionary periods (Nitta et al., 2015), and many of these factors are functionally equivalent between distantly related taxa. The exceptions to this trend may represent rare examples of transcription factor diversification that occurred in the distant past, and thus are limited to a vanishingly small number of traits, or may represent examples of developmental systems drift in which the molecular mechanisms change, but the outcome remains the same (True and Haag, 2001). Studying more recent trait divergence allows one to more clearly discern phenotypically relevant evolutionary changes from those involving systems drift. Tests of regulatory sequence divergence are particularly hampered by drift, as sequence divergence is rapid and CREs from distantly related taxa often work poorly in heterologous transgenic environments. Thus, further comparisons of genetically tractable traits that arose over similarly recent timescales, in which protein coding and cis-regulatory divergence can be directly compared in vivo are required to unveil the nature of this broader trend.
 
 ## Materials and methods
 
-## Fly stocks and genetic crosses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>bab1</td>
+      <td></td>
+      <td>FLYB:FBgn0004870</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>bab2</td>
+      <td></td>
+      <td>FLYB:FBgn0025525</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>yellow</td>
+      <td></td>
+      <td>FLYB:FBgn0004034</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pnr-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:3039</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:44267; FLYB:FBst0044267; RRID:BDSC_44267</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-GFP-nls</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:4776</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCherry dsRNA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:35785</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 ORF of D. melanogaster</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab2 ORF of D. melanogaster</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 DBM ORF of D. melanogaster</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 ORF of D. willistoni</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab2 ORF of D. mojavensis</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab Anopheles gambiae</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 siRNA id #3</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 siRNA id #4</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab2 siRNA id #12</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab2 siRNA id #16</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 siRNA id #3 + bab2 siRNA id#12</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-bab1 siRNA id #3 + bab2 siRNA id#16</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yBE0.6-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yBE0.6 SM4-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yBE0.6 SM10-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yBE0.6 SM4 + SM10 EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yWing + Body Element (D. melanogaster)-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yWing + Body Element (D. malerkotliana)-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>yWing + Body Element (D. pseudoobscura)-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y5'1 (D. willistoni)-EGFP reporter</td>
+      <td>PMID:25835988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bab1 (rabbit polyclonal)</td>
+      <td>PMID:18724934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 647-secondary</td>
+      <td>Invitrogen</td>
+      <td>A-21244</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-Bab1 DNA Binding Domain (DBD)</td>
+      <td>this paper</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetic crosses
 
 All fly stocks were cultured at 22°C using a sugar food medium (Salomone et al., 2013). The yBE0.6, yBE0.6 SM4, yBE0.6 SM10, and SM4 +10 reporter transgenes utilized in GAL4/UAS experiments were each inserted into the attP40 site (Camino et al., 2015; Markstein et al., 2008). GAL4 expression was driven in the pattern of the pannier (pnr) gene using the pnr-GAL4 chromosome (Calleja et al., 2000) and the pupal abdominal epidermis pattern (Jeong et al., 2006; Wittkopp et al., 2002) of the yellow gene using the y-GAL4 transgene (Hart, 2013). The pnr-GAL4 (BDSC ID#3039) and y-GAL4 (BDSC ID#44267) fly stocks were obtained from the Bloomington Drosophila Stock Center. A UAS-mCherry dsRNA line (BDSC ID#35785) was used as a negative control in the RNA-interference experiments. The reporter transgenes containing orthologous sequences 5’ of the yellow first exon adjacent to a minimal hsp70 promoter and the coding sequence of the EGFP-NLS reporter protein were integrated into the attP2 site on the D. melanogaster third chromosome whose construction was previously described (Camino et al., 2015; Groth et al., 2004).
 
-## Recombinant protein production and gel shift assays
+### Recombinant protein production and gel shift assays
 
 The protein coding sequence for amino acids 490–672 of the D. melanogaster Bab1protein was cloned into the BamHI and NotI sites of the pGEX4T-1 vector in order to express an N-terminal GST-fusion protein that has the AT-Hook and psq domains and that possesses DNA binding capability (Lours et al., 2003). This vector was transformed into the BL21 DE3 E. coli strain (New England Biolabs) and recombinant protein was purified by a standard protocol (Williams et al., 1995) with slight modifications. In brief, an overnight bacterial culture was grown at 37°C in LB media with 200 μg/ml Ampicillin. This culture was added to 225 ml of a rich LB media (2% Tryptone, 1% Yeast Extract, and 1% sodium chloride) and grown at 37°C. After 1 hour (hr) of growth, protein expression was induced by adding IPTG to a final concentration of 0.5 mM, and cultured for an additional 3 hr. Bacteria were then pelleted by centrifugation, media decanted, and bacterial pellets frozen at −74°C. Bacteria pellets were thawed on ice and resuspended in ice cold STE buffer containing protease inhibitors (Thermo Scientific, Waltham MA. After a 15 minute (min) incubation on ice, DTT was added to 5 mM and Sarkosyl to 1.5%. The bacterial suspension was subjected to 4 rounds of sonication on ice at 33 amps for 1 min each round with, and a 1-min rest between rounds. 1 ml of glutathione agarose (Thermo Scientific) was then added to the suspension and allowed to mix for 15 min with nutation at 4°C. The glutathione-agarose was then washed seven times with ice cold PBS. GST-Bab1 DNA-binding domain (DBD) fusion protein was eluted from the glutathione-agarose by seven 1.5 ml aliquots of protein elution buffer (75 mM Hepes pH 7.4, 150 mM NaCl, 20 mM reduced glutathione, 5 mM DTT, and 0.1% Triton X-100). Collected aliquots were combined and concentrated using Vivaspin 20 spin columns with a 100,000 MWCO (Sartorious). The purified GST-Bab1 DBD protein was snap frozen using a dry ice ethanol bath, and stored in aliquots at −74°C.
 
 Reverse complementary oligonucleotides were synthesized (Integrated DNA Technologies) that contain wild type or mutant yBE0.6 sequences (Tables 3 and 4). Gel shift assays were done as previously described (Camino et al., 2015; Rogers et al., 2013). In brief, all oligonucleotides were biotin-labeled on their 3’ end using the DNA 3’ End Biotinylation Kit (Thermo Scientific, Waltham MA) using the manufacture’s protocol. Biotin-labeled complementary oligonucleotides were annealed to form double stranded probes, and labeling efficiency was evaluated by the manufacturer’s quantitative Dot Blot assay. Binding reactions included 25 fmol of probe and GST-Bab1 DBD protein in General Footprint Buffer (working concentration of 50 mM HEPES pH 7.9, 100 mM KCl, 1 mM DTT, 12.5 mM MgCl2, 0.05 mM EDTA, and 17% glycerol). For each probe, separate binding reactions were done that included 4000 ng, 2000 ng, 1000 ng, 500 ng, and 0 ng of the GST-Bab1 DBD protein. Binding reactions were carried out for 30 min at room temperature and then size separated by electrophoresis through a 5% non-denaturing polyacrylamide gel for 60 min at 200 V. Following electrophoresis, the samples were transferred and cross linked to a Hybond-N +membrane (GE Healthcare Amersham) for chemiluminescent detection using the Chemiluminescent Nucleic Acid Detection Module and manufacture’s protocol (Thermo Scientific). Chemiluminescent images were recorded using a BioChemi gel documentation system (UVP).
 
-## bab1 and bab2 shmiR expressing transgenes
+**Table 3.**
+ Oligonucleotides used to make Scan Mutant four region gel shift probes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Probe</th>
+      <th>Sequence (5’ to 3’)</th>
+      <th>Oligo name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">SM4 Region 1</td>
+      <td>ATTCTTTAATTTGTATTTTAATATT</td>
+      <td>yBE 4i1 Top</td>
+    </tr>
+    <tr>
+      <td>AATATTAAAATACAAATTAAAGAAT</td>
+      <td>yBE 4i1 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 2</td>
+      <td>ATATTTTGAGAGGTTTTCCTTATTTAAAGT</td>
+      <td>yBE 4i2 Top</td>
+    </tr>
+    <tr>
+      <td>ACTTTAAATAAGGAAAACCTCTCAAAATAT</td>
+      <td>yBE 4i2 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3</td>
+      <td>AAAGTGTAGATTATTGAGGATTAAT</td>
+      <td>yBE 4i3 Top</td>
+    </tr>
+    <tr>
+      <td>ATTAATCCTCAATAATCTACACTTT</td>
+      <td>yBE 4i3 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3 Scan Mutant</td>
+      <td>cAcGgGgAtAgTcTgGcGtAgTcAg</td>
+      <td>y4i3 T Scrm</td>
+    </tr>
+    <tr>
+      <td>cTgAcTaCgCcAgAcTaTcCcCgTg</td>
+      <td>y4i3 B Scrm</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Region 3 TA &gt; GA</td>
+      <td>AAAGTGgAGATgATTGAGGATgAAT</td>
+      <td>yBE 4i3 TA &gt; GA Top</td>
+    </tr>
+    <tr>
+      <td>ATTcATCCTCAATcATCTcCACTTT</td>
+      <td>yBE 4i3 TA &gt; GA Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3 sub1</td>
+      <td>gggCgggCgATTATTGAGGATTAAT</td>
+      <td>y4i3 sub1 T</td>
+    </tr>
+    <tr>
+      <td>ATTAATCCTCAATAATcGgggGccc</td>
+      <td>y4i3 sub1 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3 sub2</td>
+      <td>AAAGTgggCgggCgTGAGGATTAAT</td>
+      <td>y4i3 sub2 T</td>
+    </tr>
+    <tr>
+      <td>ATTAATCCTCAcGcccGcccACTTT</td>
+      <td>y4i3 sub2 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3 sub3</td>
+      <td>AAAGTGTAGAgggCgggCgATTAAT</td>
+      <td>y4i3 sub3 T</td>
+    </tr>
+    <tr>
+      <td>ATTAATcGcccGcccTCTACACTTT</td>
+      <td>y4i3 sub3 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM4 Region 3 sub4</td>
+      <td>AAAGTGTAGATTATTGgggCgggCg</td>
+      <td>y4i3 sub4 T</td>
+    </tr>
+    <tr>
+      <td>cGcccGcccCAATAATCTACACTTT</td>
+      <td>y4i3 sub4 B</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Oligonucleotides used to make Scan Mutant 10 region gel shift probes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Probe</th>
+      <th>Sequence (5’ to 3’)</th>
+      <th>Oligo name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">SM10 Region 1</td>
+      <td>TCGTCCCTTTTGAAATTTTATGTAACACTC</td>
+      <td>yBE 10i1 Top</td>
+    </tr>
+    <tr>
+      <td>GAGTGTTACATAAAATTTCAAAAGGGACGA</td>
+      <td>yBE 10i1 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 2</td>
+      <td>CACTCAATTATATTTATGTATATGTATGCT</td>
+      <td>yBE 10i2 Top</td>
+    </tr>
+    <tr>
+      <td>AGCATACATATACATAAATATAATTGAGTG</td>
+      <td>yBE 10i2 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 3</td>
+      <td>ATGCTCAAAATCACCTGCCAATAACCCTGCAGG</td>
+      <td>yBE 10i3 Top</td>
+    </tr>
+    <tr>
+      <td>CCTGCAGGGTTATTGGCAGGTGATTTTGAGCAT</td>
+      <td>yBE 10i3 Bottom</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 1 Scan Mutant</td>
+      <td>gCtTaCaTgTgGcAcTgTgAgGgAcCcCgC</td>
+      <td>y10i1 T Scrm</td>
+    </tr>
+    <tr>
+      <td>GcGgGgTcCcTcAcAgTgCcAcAtGtAaGc</td>
+      <td>y10i1 B Scrm</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 3 Scan Mutant</td>
+      <td>cTtCgCcAcAgCcCaTtCaAcTcAaCaTtCcGt</td>
+      <td>y10i3 T Scrm</td>
+    </tr>
+    <tr>
+      <td>aCgGaAtGtTgAgTtGaAtGgGcTgTgGcGaAg</td>
+      <td>y10i3 B Scrm</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 1 sub1</td>
+      <td>gggCgggCgggCAAATTTTATGTAACACTC</td>
+      <td>y10i1 sub1 T</td>
+    </tr>
+    <tr>
+      <td>GAGTGTTACATAAAATTTGcccGcccGccc</td>
+      <td>y10i1 sub1 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 1 sub2</td>
+      <td>TCGTCCgggCgggCgggCTATGTAACACTC</td>
+      <td>y10i1 sub2 T</td>
+    </tr>
+    <tr>
+      <td>GAGTGTTACATAGcccGcccGcccGGACGA</td>
+      <td>y10i1 sub2 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 1 sub3</td>
+      <td>TCGTCCCTTTTGgggCgggCgggCACACTC</td>
+      <td>y10i1 sub3 T</td>
+    </tr>
+    <tr>
+      <td>GAGTGTGcccGcccGcccCAAAAGGGACGA</td>
+      <td>y10i1 sub3 B</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM10 Region 1 sub4</td>
+      <td>TCGTCCCTTTTGAAATTTgggCgggCgggC</td>
+      <td>y10i1 sub4 T</td>
+    </tr>
+    <tr>
+      <td>GcccGcccGcccAAATTTCAAAAGGGACGA</td>
+      <td>y10i1 sub4 B</td>
+    </tr>
+  </tbody>
+</table>
+
+### bab1 and bab2 shmiR expressing transgenes
 
 The ORFs for D. melanogaster bab1 and bab2 were obtained from NCBI accession numbers NM_206229 and NM_079155.3 respectively. From these, nucleotide guide sequences were designed using the Designer of Small Interfering RNA (DSIR) algorithm (Vert et al., 2006) that is accessible at: http://biodev.extra.cea.fr/DSIR/DSIR.html. For bab1, the eleven rows of output were included in Table 1. For bab2, there were 54 rows of output, sorted by descending Corrected Score, and the top 19 rows of output presented in Table 2. To make sure shmiRs lack the same seed residues (nucleotides 2–8) as those present in known miRNAs, we searched candidate guide sequences against a miRNA database (http://mirbase.org/search.shtml). Search sequences were set to ‘Mature miRNAs, E-value cutoff of ‘10’, Maximum hits of 100, and results were shown for ‘fly’.
 
 Previously it was shown that a shmiR can induce phenotypes in transgenic flies when the guide shares at least 16–21 base pairs of contiguous sequence to the target gene (Haley et al., 2010). Thus, we sought the highest scoring ‘Guide’ sequences for which fewer than 16 contiguous bases match a heterologous exon sequence in the D. melanogaster genome. Guide sequences were evaluated in a BLAST search of the D. melanogaster genome (http://flybase.org/blast/) with the word size set to 7. The genomic position of the BLAST hits were identified using the GBrowse feature. An RNAi transgene targeting bab1 was created by the Transgenic RNAi Project (TRiP) at Harvard Medical School that included the sequence identified here as siRNA_id 1 (Table 1) that we have found to be ineffective at suppressing bab1 expression. Thus, this guide sequence was excluded from further consideration here. For bab1, we elected to create shmiRs with the siRNA three and siRNA four sequences which each have a 21 base pair match to a sequence in the bab1 first exon. For bab2, we elected to create shmiRs with the siRNA 16 and siRNA 12 sequences, each which have a 21 base sequence that matches a sequence in the second exon of bab2. The bab1 and bab2 shmiRs were designed to possess two essential mismatches to maintain a miR-1 stem-loop structure (Haley et al., 2010), and oligonucleotides were designed for annealing that have NheI and EcoRI overhangs for cloning into the pattB-NE3 vector (Table 5). The annealed oligonucleotides were cloned into the NheI and EcoRI sites of the pattB-NE3 vector, and successful cloning was verified by Sanger sequencing using the pUASTR1 primer (5’ CCCATTCATCAGTTCCATAGGTTG 3’). pattB-NE3 vectors containing an shmiR guide sequence were site-specifically integrated into the D. melanogaster attP2 landing site (Groth et al., 2004) by standard protocol (Best Gene Inc.).
 
-## Chaining shmiRs to target bab1 and bab2
+**Table 5.**
+ Oligonucleotides for cloning bab1 and bab2 shRNAs into NheI and EcoRI sites of pattB-NE3 vector.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>siRNA name and sequence</th>
+      <th>Oligo name</th>
+      <th>Oligo sequence (5’ – 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>bab1 siRNA 3 TTCGTCTGATAGTTGTTCCAG</td>
+      <td>b1_3 Top b1_3 Bottom</td>
+      <td>ctagcagtCTGGAACAACAATCAGACGTAtagttatattcaagcataTTCGTCTGATAGTTGTTCCAGgcg aattcgcCTGGAACAACTATCAGACGAAtatgcttgaatataactaTACGTCTGATTGTTGTTCCAGactg</td>
+    </tr>
+    <tr>
+      <td>bab1 siRNA 4 TACAGCATGACCTTGACTCTC</td>
+      <td>b1_4 Top b1_4 bottom</td>
+      <td>ctagcagtGAGAGTCAAGCTCATGCTGAAtagttatattcaagcataTACAGCATGACCTTGACTCTCgcg aattcgcGAGAGTCAAGGTCATGCTGTAtatgcttgaatataactaTTCAGCATGAGCTTGACTCTCactg</td>
+    </tr>
+    <tr>
+      <td>bab2 siRNA 16 TATTTCAAAGTCCACAATCTG</td>
+      <td>b2_16 Top b2_16 Bottom</td>
+      <td>ctagcagtCAGATTGTGGTCTTTGAAAAAtagttatattcaagcataTATTTCAAAGTCCACAATCTGgcg aattcgcCAGATTGTGGACTTTGAAATAtatgcttgaatataactaTTTTTCAAAGACCACAATCTGactg</td>
+    </tr>
+    <tr>
+      <td>bab2 siRNA 12 TTGGACTTCACCAGCTCCGTT</td>
+      <td>b2_12 Top b2_12 Bottom</td>
+      <td>ctagcagtAACGGAGCTGCTGAAGTCCTAtagttatattcaagcataTTGGACTTCACCAGCTCCGTTgcg aattcgcAACGGAGCTGGTGAAGTCCAAtatgcttgaatataactaTAGGACTTCAGCAGCTCCGTTactg</td>
+    </tr>
+    <tr>
+      <td>bab2 siRNA 20 TCGAACTGATCGATTTCGCCG</td>
+      <td>b2_20 Top b2_20 Bottom</td>
+      <td>ctagcagtCGGCGAAATCCATCAGTTCCAtagttatattcaagcataTCGAACTGATCGATTTCGCCGgcg aattcgcCGGCGAAATCGATCAGTTCGAtatgcttgaatataactaTGGAACTGATGGATTTCGCCGactg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Chaining shmiRs to target bab1 and bab2
 
 shmiR chains were created in two steps. First, the bab1_3 shmiR was removed from the pattB-NE3 vector by HindIII and BamHI digestion and the excised piece was subcloned into the pHB vector (Haley et al., 2010, 2008). The shmiR piece was then amplified from the pHB vector using the M13F and M13R primers. This PCR product was digested with KpnI and SpeI restriction endonucleases and then cloned into the KpnI and XbaI sites of the pattB-NE3 vectors containing the bab2 siRNA 16 and the vector containing the bab2 siRNA 12 sequence. For each vector, the presence of the tandem shmiR sequences was verified by Sanger sequencing in separate reactions with the PUASTR1 (5’ CCCATTCATCAGTTCCATAGGTTG 3’) and PUASTF1 (5’ ACCAGCAACCAAGTAAATCAACTG3’) primers. These chained shmiR transgenes were injected into D. melanogaster embryos for site-specific integration into the attP2 site on the third chromosome to make transgenic stocks (Groth et al., 2004).
 
-## Bab open-reading frame transgenes
+### Bab open-reading frame transgenes
 
 The ORFs for D. melanogaster bab1 and bab2, D. willistoni bab1 (GK16863-PA), D. mojavensis bab2 (GI12710), and Anopheles (A.) gambiae bab (AGAP006018-RA) were customized for gene synthesis by GenScript Incorporated. We added a Syn21 translational enhancer (Pfeiffer et al., 2012) 5’ of each ORF’s initiator ATG, and an additional nonsense codon was added just 3’ of the endogenous one. The ORFs were flanked by a 5’ EcoRI site and a 3’ NotI site. The A. gambiae ORF had the coding sequence for the V5 epitope tag added after the initiator codon. The DNA sequences were modified with synonymous substitutions as needed in order to optimize for gene synthesis. The synthesized sequences can be found in Figure 6—source data 1 After synthesis, the ORFs were removed from the pUC57 vector backbone and subcloned into the EcoRI and NotI sites of a pUAST vector modified to possess an attB site (called pUMA) for site-specific transgene integration. All ORFs are under the regulatory control of the vector’s upstream activating sequences (UAS sites) to allow for conditional ORF expression by the GAL4/UAS system (Brand and Perrimon, 1993).
 
 A bab1 DNA-binding mutant (DBM) ORF was created that possesses non-synonymous mutations in the Pipsqueak and AT-Hook motifs that results in a protein lacking it’s in vitro DNA-binding capability (Lours et al., 2003). The coding sequence for the bab1 Pipsqueak and AT-Hook motifs are flanked by AscI and BamHI restriction endonuclease sites. We designed a coding sequence within this sequence that includes mutations altering codons with these two protein domains (Figure 6—source data 1). After synthesis, this mutant sequence was removed from the pUC57 vector by BamHI and AscI digestion. The liberated fragment was swapped into the place of the wild type sequence in the pUC57 bab1 ORF vector. The full length bab1 DBM ORF was then removed from the pUC57 vector by EcoRI and NotI digestion and subcloned into the pUMA vector. All ORF transgenes were site-specifically integrated into the D. melanogaster attP40 site (Markstein et al., 2008) on the second chromosome.
 
-## Alignment of nucleotide and protein coding sequences
+### Alignment of nucleotide and protein coding sequences
 
 The nucleotide sequences of the wild-type D. melanogaster yBE0.6 CRE and scan mutant versions were aligned using the CHAOS ad DIALIGN software system (Brudno et al., 2004) (Figure 2—source data 2). The protein coding sequences for Bab homologs were aligned using the Clustal Omega multiple sequence alignment program (Sievers et al., 2011) (Figure 6—source data 1). These homologs were D. melanogaster Bab1 (gbAAF47439.2) and Bab2 (AAF47442.2), D. ananassae Bab1 (GF10081-PB) and Bab2 (XP_001956730.1), D. willistoni Bab1 (GK16863-PB), D. mojavensis Bab2 (XM_002007001.1), Glossina morsitans Bab1 (GMOY011079) and Bab2 (GMOY011080-RA), and A. gambiae Bab (AGAP006018-RA).
 
-## Imaging and analysis of abdomens
+### Imaging and analysis of abdomens
 
 Images of the adult D. melanogaster abdomen pigmentation patterns were taken with an Olympus SZX16 Zoom Stereoscope equipped with an Olympus DP72 digital camera. Specimens were prepared from 2- to 5-day-old adults. To measure the mean darkness of adult tergite pigmentation phenotypes, for each genotype four replicate images were converted to grayscale in Photoshop CS3 (Adobe). These grayscale images were opened in the Image J program (Abràmoff et al., 2004), and with the freehand selection tool tergite regions were specified to obtain the grayscale darkness value from that lies on a 0–255 scale. For each measurement, the % darkness was calculated as: (255-grayscale darkness)/255 × 100 (Rebeiz et al., 2009). From the percent darkness values, standard error of the means (SEM) were determined. Measurements and calculations provided in Figure 5—source data 1 and Figure 6—source data 1.
 

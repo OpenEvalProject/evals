@@ -42,11 +42,55 @@ Here, we used single-molecule tracking to demonstrate that diffusive PBP2 molecu
 
 ## Results
 
-## PBP2 enzymes can be quantitatively separated into diffusive and bound fractions
+### PBP2 enzymes can be quantitatively separated into diffusive and bound fractions
 
 To study the role of PBP2 for the formation of Rod complexes we characterized its different states of motion, which are potentially representative of different states of substrate binding and activity. We imaged a functional, N-terminal protein fusion of the photo-activatable fluorescent protein PAmCherry to PBP2 (Lee et al., 2014). The fusion is expressed from the native mrdA locus at a level similar to the wild-type protein according to quantitative mass spectrometry (Figure 1—figure supplement 1D; Supplementary file 1a) and Bocillin labeling experiments (Figure 1—figure supplement 1A and also Lee et al., 2014). The strain carrying the fusion maintains rod-like cell shape with only slight deviations of average cell diameter and length (Figure 1—figure supplement 1B) and does not show any growth defect (Figure 1—figure supplement 1C; Lee et al., 2014).
 
 We obtained single-molecule tracks by single-particle tracking PhotoActivatable Localization Microscopy (sptPALM) (Manley et al., 2008) in total internal reflection fluorescence (TIRF) mode, which restricts the observation to the bottom part of the cell. We first imaged PBP2 molecules at high frequency (intervals of 60 ms). We found both spatially extended trajectories, corresponding to fast diffusing molecules, and trajectories that appeared as localized, corresponding to immobile or slowly moving molecules (Figure 1A, Figure 1—video 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative trajectories of PAmCherry-PBP2 molecules (TKL130) obtained by high-frequency imaging (time interval 60 ms) reveals diffusive (blue) and bound (orange) molecules. (B) Probability distribution of single-molecule jump lengths (solid lines, colored) and fit (dashed, black) using a three-state-diffusion model for different time intervals. 78% of PBP2 move diffusively with <D> = 0.042 μm2/s while 22% are immobile. The shaded area indicates standard deviation between six biological replicates. (C–E) Low-frequency imaging (3.6 s with 1 s exposure time) reveals that bound PBP2 molecules are either persistently moving (C) or immobile (D), according to the instantaneous PBP2 velocity. PBP2 molecules show transitions between persistent and immobile states (E). (F–G) Persistently moving PBP2 and MreB filaments show similar speeds (F) and orientations of motion (orientation measured with respect to the cell centerline) (G). (H–I) Average fractions of bound, diffusive, persistently moving, and immobile PAmCherry-PBP2 at native levels (TKL130) (H) or if overexpressed (TKL130/pKC128) (I). Dots show biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Bocillin-binding assay to compare expression levels of PBP2 in the wild-type strain (MG1655), the strain expressing PBP2-PAmCherry from the native locus (TKL130), and the strain overexpressing PBP2-PAmCherry (TKL130/pKC128). Quantification in (D). (B) Average cell dimensions obtained by phase-contrast microscopy and computational image segmentation. (C) Average doubling times during steady-state exponential growth in batch culture (from OD600). (D) Different methods to compare PBP2 expression levels in different strains (from left to right): Bocillin labeling (from A), single-cell fluorescence levels measured in epi-fluorescence mode, mass spectrometry [Data Independent Acquisitions (DIA) and Parallel Reaction Monitoring (PRM)]. For the first three methods, PBP2 levels are normalized by the corresponding value in TKL130. For PRM, we obtained absolute numbers of proteins per cell by comparing to reference peptides and colony counting. With both mass spectrometry methods, we observe a higher fold-change than through the other methods. Dots represent biological replicates.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Probability distributions of single-molecule jump lengths (solid lines, colored) and fit (dashed, black) using a two-state (left) or three-state (right) diffusion model for different time intervals for native levels (TKL130) and for over-expression (TKL130/pKC128) of PBP2-PAmCherry. Shaded regions show standard deviations between biological replicates. (B) Comparison of bound fractions and average diffusion constants acquired by fitting two-state and three-state diffusion models shown in (A). Dots represent biological replicates. (C) Normalized sum of residuals found by using multi-state models with Spot-On. Error bars show standard error between biological replicates.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Heat map of sum of squared differences (RSS) between the Deff distributions of single-track effective diffusion constants Deff obtained from experimental data or computational simulations of a two-state model, using different model parameters D (diffusion constant of the diffusive fraction) and σ (localization precision). Parameter sets giving the lowest 5 RSS values are shown with green diamonds. Best fit is given by D = 0.04 μm2/s and σ = 20 nm. (B) We verified that the non-diffusive population was indeed not diffusing, with Dbound = 0 μm2/s (left), while a finite diffusion constant Dbound > 0.002 um2/s gives poor agreement between simulation and experiment. Here, the experimental Deff distribution is the mean of 6 biological replicates. (C) We compared the results of our method with the Spot-On code (2-state model) in TKL130 (native levels) and TKL130/pKC128 (overexpression), respectively.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Example tracks and velocity as a function of time for example tracks that show transitions between persistent and immobile states.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Velocity distribution of all PBP2 tracks measured with 1 s intervals. The velocity of individual tracks was determined by fitting a quadratic function to the MSD. (B) Velocity distributions for directed trajectories of PBP2 and MreB as found by selecting for an increased goodness of fit measured by R2 of a quadratic function to the MSD. (C) The stricter the goodness of fit criterion (minimal R2) the less trajectories contribute to the mean track velocity. (D) The mean velocity increases with increasing minimum R2. The dashed line indicates the value chose for the distributions in Figure 1. (E–F) The same analysis applied on 4-step segments of trajectories measured with 3.6 s intervals delivers smaller mean velocities, likely because fast trajectories reside for a shorter amount of time in the field of view.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Distribution of measured single-step displacements in one dimension. A fit of a normal distribution to the data delivers a standard deviation of 36 nm, which corresponds to a localization error of single localization events of 25 nm. (B) We computationally simulated trajectories such that the length distribution of the simulated trajectories resembles the one from measured trajectories. (C) Fraction of immobile segments measured in simulations of immobile (blue) or persistent (red) molecules and in experimentally measured tracks (yellow) as a function of the moving-average window size and for different velocity thresholds. The red horizontal lines signify 5% and 95% probability thresholds, respectively. Error bars are from bootstrapping. For a window size of 4 steps and a velocity threshold of 8 nm/s the rate of wrong annotation is smaller than 1% both in simulations of purely persistent or immobile molecules. For pairs of w and vthr that lead to high accuracy of the determination of immobile and persistent segments the immobile fraction of the experimental data shows similar results. (D–E) MSD’s of single-track segments (gray lines) classified as (D) immobile or (E) persistent compared to the MSD of all respective segments (blue line). For simulated trajectories that can switch between the immobile and the persistent state (simulated with v = 12 nm/s, kip = 0.015 s−1, kpi = 0.021 s−1) we find a similar behavior of the MSD curves (red line). (F) Distribution of MSD’s of immobile and persistent segments for different numbers of steps N.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A–B) Number of bound PBP2 molecules ($N_{bound}=N_{PBP2}b$) (A) and active PBP2 molecules ($N_{active}=N_{PBP2}bp$) (B) as a function of the number of PBP2 molecules per cell (NPBP2). b and p are the bound and persistent fractions of molecules, respectively. Since DIA, fluorescence, and Western Blot results only gave relative changes of PBP2 numbers, we used PRM values for TKL130 (for PAmCherry-PBP2) or for TU230(attLHC943) with 5 μM IPTG induction (for msfGFP-PBP2), respectively. (C) Density of tracks obtained by slow tracking for TKL130 and TKL130/pKC128, using same photo-activation and imaging conditions. Dots represent single fields of view (40 × 40 um). Despite variations between different fields of view, the fold-change of the median is of the same order as the relative change of bound molecules obtained in (A).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Length (top left), width (bottom left), and growth curves (right) of the strains carrying msfGFP-PBP2 (AV127 or IPTG-inducible) and msfGFP-PBP2(L61R) (labeled 'Mut') for different induction levels in comparison to MG1655. Gray and blue bars show cell dimensions after 6 and 10 hr of growth, respectively (see also Figure 1—figure supplement 9). Doubling times are obtained from exponential fits (dashed lines) to three biological replicates (different colors). (B) PBP2 fold changes acquired from epi-fluorescence images, GFP-Western Blotting, and mass spectrometry measurements (DIA and PRM). The values are normalized by the value acquired from 5 μM IPTG induction except for PRM counts. PRM measurements combined with colony counting yield absolute numbers of proteins per cell. (C) Average diffusion constants and bound fractions. Gray bars show data after 6 hr of growth. Dots represent biological replicates.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Cell length, width, and GFP intensity as a function of time of TU230(attLHC943) cells for two different induction levels of 5 μM IPTG (black) and 25 μM IPTG (red). (B) Bound fractions and average diffusion constants. Red lines in (B) indicate the values measured for 25 μM induction during steady-state growth. Shaded areas and error bars show standard deviation between at least three technical replicates.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig1-figsupp10-v2.jpg)
+
+**Figure 1—figure supplement 10.:** (A) Persistent fractions for different expression levels of msfGFP-PBP2 and msfGFP-PBP2(L61R). (B) Left. Mean velocity as a function of minimal R2, which are obtained from a quadratic fit to single-track MSD’s of the form y = a + bx2. Right. Mean velocity of tracks, which satisfy R2 > 0.9. Dots represent biological replicates.
 
 We confirmed the presence of two distinct fractions of diffusing and localized molecules based on the distributions of jump lengths during different time lags (Figure 1B). Specifically, we fit those distributions to a two-state or a three-state diffusion model using the Spot-On tool (Hansen et al., 2018) (Materials and methods; Supplementary file 2). Both models contain as a special case an immobile population, and they lead to very similar results (Figure 1B; Figure 1—figure supplement 2). We found a diffusive population with average diffusion constant D = 0.04 μm2/s containing 74–78% of all enzymes, and a second population with zero diffusion constant containing 22–26% of all molecules (Supplementary file 1a). The three-state model led to slightly better fits, predicting a larger fast-diffusing and a smaller slow-diffusing population with diffusion constants of D1 = 0.015 ± 0.005 μm2/s and D2 = 0.055 ± 0.006 μm2/s, respectively. Because the true diffusive behavior might be more complex, we report the average diffusion constant in the following. We confirmed our findings using an alternative method that is based on the distribution of single-track effective diffusion constants, yielding a slightly lower bound fraction (Figure 1—figure supplement 3).
 
@@ -54,7 +98,7 @@ Upon overexpression by about three- to six-fold (Figure 1—figure supplement 1D
 
 While diffusing molecules are likely enzymatically inactive and possibly searching for new sites of cell-wall insertion (see further down), localized molecules are likely bound to an immobile substrate or part of slowly moving Rod complexes with anticipated speeds of 10–40 nm/s (Cho et al., 2016; van Teeffelen et al., 2011).
 
-## Bound PBP2 molecules are either persistently moving or immobile
+### Bound PBP2 molecules are either persistently moving or immobile
 
 To test whether all or part of the bound molecules were moving persistently we imaged PBP2 molecules at low frequency, taking images with an exposure time of 1 s and intervals of 3.6 s. The long exposure time effectively smears out the fluorescence of fast diffusing molecules, allowing us to detect the positions of individual bound molecules. Using this protocol, we found molecules that moved persistently, were immobile, or showed transitions between these two states (Figure 1C–E, Figure 1—video 2, and Figure 1—figure supplement 4).
 
@@ -62,9 +106,9 @@ Persistently moving molecules showed similar distributions of speed and orientat
 
 Because PBP2 molecules show transitions between different states in single trajectories, we quantified immobile and persistent states locally in time. Specifically, we classified motion states using a single threshold on the mean velocity during four consecutive time steps in movies acquired with 3.6 s interval (Figure 1C–E). Window size and velocity threshold (8 nm/s) were chosen based on computationally simulated tracks (Figure 1—figure supplement 6A-C). In confirmation of our two-state model, we found good agreement between the average MSD obtained from experiment and simulation for immobile and persistent segments, respectively (Figure 1—figure supplement 6D-F). Other states of motion are therefore likely not present. Using this criterion, we found a persistent fraction of 42.2 ± 1.1% of all bound molecules, while 57.8 ± 1.1% remained immobile (Figure 1H).
 
-Upon overexpression of PAmCherry-PBP2 as above, we found that the persistent fraction remained nearly constant (Figure 1I; Supplementary file 1a), suggesting that the number of active Rod complexes, Nactive=NPBP2bp (with NPBP2 the number of PBP2 molecules, and b and p the bound and persistent fractions, respectively), increased by about two-fold (Figure 1—figure supplement 7B. This finding suggests that PBP2 is an important limiting component for the number of active Rod complexes. This viewpoint is consistent with the recent report that a hyperactive PBP2 point mutant (L61R) increased the overall amount of active Rod complexes (Rohs et al., 2018). We will come back to this mutant in the next section.
+Upon overexpression of PAmCherry-PBP2 as above, we found that the persistent fraction remained nearly constant (Figure 1I; Supplementary file 1a), suggesting that the number of active Rod complexes, $N_{active}=N_{PBP2}bp$ (with $N_{PBP2}$ the number of PBP2 molecules, and b and p the bound and persistent fractions, respectively), increased by about two-fold (Figure 1—figure supplement 7B. This finding suggests that PBP2 is an important limiting component for the number of active Rod complexes. This viewpoint is consistent with the recent report that a hyperactive PBP2 point mutant (L61R) increased the overall amount of active Rod complexes (Rohs et al., 2018). We will come back to this mutant in the next section.
 
-## msfGFP-PBP2 fusion confirms findings and demonstrates increased PBP2 binding upon PBP2 depletion
+### msfGFP-PBP2 fusion confirms findings and demonstrates increased PBP2 binding upon PBP2 depletion
 
 We tested our findings using a strain that carries a functional msfGFP-PBP2 fusion (Cho et al., 2016) expressed at the native mrdA locus (AV127). Surprisingly, PBP2 levels were about four-fold lower than in the wildtype according to quantitative mass spectrometry. Yet, the strain showed normal cell shape and growth (Figure 1—figure supplement 8A). Tracking msfGFP-PBP2 at high frequency after initial pre-bleaching, we found a fraction of bound PBP2 molecules of 36.5 ± 5% (Figure 1—figure supplement 8C, Figure 1—video 3), which is higher than in the case of PAmCherry-PBP2.
 
@@ -82,17 +126,45 @@ We also measured persistent motion in the PBP2(L61R) mutant and found that the p
 
 In summary, these results are compatible with our findings with the PAmCherry fusion.
 
-## PBP2 molecules show long persistent runs
+### PBP2 molecules show long persistent runs
 
 The classification into different motion states at the sub-trajectory level allowed us to extract average transition rates between immobile and persistently moving states, kip and kpi, respectively (Figure 2A–B). Depending on the fluorescent-protein fusion, we found values of kip between 0.014–0.063 s−1, and of kpi between 0.009–0.031 s−1. The msfGFP-PBP2 fusion shows less frequent arrests and faster transitions from immobile to persistently moving states, in agreement with its higher fraction of moving molecules (Figure 1—figure supplement 10A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram illustrating transition rates measured between different motion states. (B) Transition rates between immobile and persistently moving states for different protein fusions and expression levels. Circles: biological replicates. (C) Fluorescence-lifetime distributions of msfGFP-PBP2 trajectories with imaging intervals of 1 s (black solid line) and 12 s (red solid line). Dashed lines represent a joint fit of the two curves to a model of photobleaching and bleaching-independent track termination, the latter comprising unbinding and persistently molecules leaving the TIR field of view (bleaching probability per frame pb = 0.39 ± 0.08, apparent track termination rate ka = 0.035 ± 0.007 s−1). Based on a model for persistent motion, we obtained an upper limit of the unbinding rate of kbd <0.03/s (Figure 2—figure supplement 1). Shaded region: Standard deviation between at least three technical replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Simulations of track-length distributions reveal the apparent track termination rate ka as a function of the unbinding rate kbd for different transition simulated rates kip, kpi. Top: kip = 0.063/s, kpi = 0.0086/s (experimentally measured rates, leading to a bound fraction of 88%); middle and bottom (thin solid lines): kip = 0.063/s, kpi = 0.0158/s; kip = 0.033/s, kpi = 0.0086/s. For the thin solid lines, we adjusted either of the two rates to yield the experimentally measured bound fraction of 80%. Comparison with the experimentally measured apparent unbinding rate (green) allows us to infer an upper bound for the unbinding rate kbd < 0.03/s. Shaded area: 95% confidence interval.
 
 A persistent run of PBP2 terminates either due to an arrest of PBP2 (persistent-to-immobile transition) or due to an unbinding event (persistent-to-diffusive transition). As an upper bound of the unbinding rate, we measured the transition rate from the aggregate bound state (persistent and immobile states) to the diffusive state, kbd (Figure 2A). Specifically, we acquired distributions of track lengths for two different imaging intervals of 1 s and 12 s (Figure 2C), using the inducible msfGFP-PBP2 fusion with 25 μM IPTG for the higher number of tracks obtained. Track length is limited by bleaching, unbinding, and persistent molecules leaving the field of view. The latter two processes are responsible for the shorter track lengths observed for dt = 12 s. Taking all three processes into account in computational simulations, we obtained an upper limit of the unbinding rate of kbd <0.03 s−1, corresponding to a minimum average lifetime of 30 s (Figure 2—figure supplement 1).
 
 The rates kpi and kbd then yield the possible ranges of average run lengths of persistently moving molecules between 0.3–1.6 μm, depending on protein fusion and exact unbinding rate. This range is compatible with long tracks of MreB motion observed previously (van Teeffelen et al., 2011).
 
-## PBP2 spatial pattern and bound fraction are independent of MreB cytoskeleton
+### PBP2 spatial pattern and bound fraction are independent of MreB cytoskeleton
 
 MreB is often regarded as a hub for Rod-complex components (Errington, 2015; Shi et al., 2018; Surovtsev and Jacobs-Wagner, 2018). To determine whether MreB is the substrate of PBP2 binding we treated cells with the putative MreB-polymerization inhibitor A22 (Gitai, 2005). A22 treatment (50 μg/ml) strongly reduced both number and size of MreB-msfGFP spots observed in the cell envelope (Figure 3A–D, Figure 3—figure supplements 1–2) and abolished rotational motion (Figure 3—videos 1–2). We observed the same qualitative behavior for a functional GFP-RodZfusion (Bendezú et al., 2009) expressed as the sole copy of RodZ (Figure 3A–D, Figure 3—figure supplements 1–2 ). On the contrary, the spotty pattern of mCherry-PBP2 did not change during A22 treatment. Since these images were taken with a long exposure time (1 s), each spot likely represents multiple bound PBP2 molecules. Our results thus indicate that MreB filaments are not the binding substrate for PBP2. We will come back to the role of RodZ further down.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) 30 min A22 treatment (50 μg/ml) visibly reduces peak number and intensity of MreB-msfGFP and GFP-RodZ but not of mCherry-PBP2 on cell boundaries, as seen in epi-fluorescence images (A) and in line profiles measured along the cell contour (B), starting from one cell pole at x = 0 as indicated by the green arrow in (A). Image exposure time 1 s. Scale bar 1 μm. (C) Peak density on the cell boundary [1/μm] as function of peak intensity for two A22 concentrations (20, 50 μg/ml). Intensities are normalized by median peak intensity in untreated cells. Gray regions: peaks within noise floor. (D) Density of all peaks above noise floor in (A) for untreated and A22-treated conditions. (E) Left. Bound fraction and diffusion constant of PAmCherry-PBP2 30 min after drug treatment with mecillinam (labeled ‘Mec’, 100 μg/ml) or A22 (20 or 50 μg/ml). Right. Bound fraction and diffusion constant over time after treatment with A22 (20 μg/ml) or mecillinam (100 μg/ml). Dots indicate technical replicates. Red lines and shaded areas: Average values and standard deviations between biological replicates from untreated cells. (F) Persistent fractions corresponding to the 30 min time point in (E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Fluorescence profiles along contours of different cells carrying mCherry-PBP2, MreB-msfGFP, or GFP-RodZ fusions for untreated (left) or A22 treated cells (50 μg/ml) (right), obtained in the same way as in Figure 3A,B. Intensities are normalized by the median value and smoothened with a Gauss filter with standard deviation of 33 nm (0.5 pixel).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sample TIRF images with cell centerline plotted in cyan. Scale bar 1 um. (B–C). In analogy to Figure 3C–D, TIRF microscopy shows that A22 (30 min; 50 μg/ml) visibly reduces peak number and intensity of MreB-msfGFP and GFP-RodZ but not of mCherry-PBP2.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Bound fractions and average diffusion constants for untreated and A22-treated (for 30 min) cells carrying the msfGFP-PBP2 fusion (AV127). Dots represent biological replicates.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A–B) A22-treated cells grow unperturbed for six generations (A), while cells treated with mecillinam show a reduced growth rates after around three generations (B). (C) Cell shape of cells treated with A22 (A) and mecillinam (B). In both cases, cells become wider and shorter. Dots represent technical replicates.
 
 Next, we measured bound and persistent fractions of PBP2 molecules before and after A22 treatment. The bound fraction remained close to the value of untreated cells for both PAmCherry- and msfGFP fusions (Figure 3E; Figure 3—figure supplement 3). Yet, the fraction of persistently moving molecules nearly vanished (Figure 3F). This is consistent with the arrest of MreB rotation (Figure 3—video 2) and with previous bulk measurements of Rod-complex activity (Uehara and Park, 2008). To follow the bound fraction during two mass-doubling times (Figure 3E), we used an intermediate concentration of A22 (20 μg/ml), which did not affect growth (Figure 3—figure supplement 4A). Together, our findings suggest that MreB polymers are neither the substrate of PBP2 binding nor do they affect the rate of PBP2 binding and unbinding.
 
@@ -102,23 +174,47 @@ A22 treatment already demonstrates that PBP2 binding is independent of Rod-compl
 
 At long times of treatment with Mecillinam or A22 (120 min) the bound fraction increased and the diffusion constant decreased (Figure 3E), which coincides and is potentially caused by the loss of normal cell-wall architecture during loss of rod-like cell shape (Figure 3—figure supplement 4C), similar to the increase of the bound fraction at sustained low induction levels of msfGFP-PBP2 (Figure 1—figure supplement 9B).
 
-## PBP2 binds to its substrate at locations that are independent of MreB localization
+### PBP2 binds to its substrate at locations that are independent of MreB localization
 
 To demonstrate that PBP2 binding was indeed independent of MreB filaments or Rod-complex activity as suggested by Figure 3 we still needed to show that PBP2 molecules interchange between diffusive and bound states during A22 treatment. We already found a low upper bound for the transition rate from bound to diffusive states in non-treated cells (kbd <0.03 s−1) (Figure 2C), and we expect inverse transitions to occur even more rarely. We therefore used a variant of Fluorescence Recovery After Photobleaching (FRAP) (Figure 4A) termed Bound-Molecule FRAP: Instead of measuring fluorescence intensity we measure the bound fraction at different time points, after bleaching almost all molecules at the bottom of the TIR field of view. Right after bleaching, the bound fraction dropped significantly (Figure 4B), suggesting that fast diffusing molecules re-entered the observation window within less than half a minute but did not quickly bind their substrate. Within about 2–4 min the bound fraction recovered, yielding a transition rate from diffusive to bound states of kdb = (4.3 ± 2)*10−3 s−1. The same experiment in non-treated cells did not reveal recovery of the bound fraction (Figure 4—figure supplement 1), likely because bound molecules leave the field of view through persistent motion within less than 1 min (Materials and methods).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig4-v2.jpg)
+
+**Figure 4.:** (A) Bound-Molecule-FRAP reveals rate of PAmCherry-PBP2 binding kdb: (i) Diffusive (stars) and bound (hexagons) molecules are activated at bottom of cell through TIR illumination. (ii) Most activated diffusive molecules (purple) leave the field of view. (iii) Remaining molecules are bleached (red). (iv) Activated diffusive molecules partially return into the field of view, where they can bind (black arrow). (v) Measurement of bound fraction. (B) Bound fraction of PAmCherry-PBP2 in A22-treated (20 μg/ml) cells according to (A) at different lag times. Black horizontal line and shaded area: bound fraction without bleaching and standard deviation from technical replicates. An exponential fit in the form b(t) = a1 - a2 exp[-kdb t] (red line) yields binding rate kdb = (4.3 ± 2)*10−3 s−1. Dots represent technical replicates. Shaded area shows standard deviation between six biological replicates. (C) Fluorescence-lifetime distributions of msfGFP-PBP2 tracks in A22-treated cells with imaging intervals of 1 s (black solid line) and 12 s (red solid line) yields unbinding rate kbd = 0.02 ± 0.01 s−1. Shaded area shows standard deviation between at least three technical replicates. (D) Cartoon of suggested Rod-complex initiation: PBP2 (blue) binds to a target site in the cell envelope (white circle) independently of MreB filaments or PBP2 activity. PBP2 or the target site then recruits an MreB filament through diffusion and capture (green) or through nucleation, and also recruits other rod-complex components (magenta).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The horizontal line corresponds to the mean bound fractions obtained from unbleached cells (see Figure 3). Error bars and shaded area show standard deviations between at least three technical replicates.
 
 Since the bound and diffusive fractions did not change by more than 10% after A22 treatment, transition rates from the diffusive into the bound states must be matched by reverse transitions from the bound to the diffusive state with a rate kbd = kdb(1-b)/b = 0.015 ± 0.009 s−1, where b is the bound fraction. We confirmed this expectation through independent lifetime measurements of A22-treated cells, similar to those in Figure 2 (Figure 4C), yielding kbd = 0.018 ± 0.01 s−1. Since bound fractions are almost identical for untreated and A22-treated cells, we reasoned that binding and unbinding rates kbd and kdb are likely also the same in both conditions.
 
 The average lifetime of a bound molecule of about 1 min is 70-fold smaller than the cell doubling time of 70 min (Figure 1—figure supplement 1C). Therefore, almost all bound PBP2 molecules observed at any time have undergone multiple transitions from the diffusive to their current bound state. Together with the previous observation that free diffusion is not constrained by MreB filaments we can thus conclude that PBP2 binds its substrate at locations that are determined independently of MreB filaments.
 
-## PBP2 or an unknown low-abundant substrate determines the location of new rod complexes
+### PBP2 or an unknown low-abundant substrate determines the location of new rod complexes
 
 Two qualitatively different scenarios for the formation of an active Rod complex are conceivable (Figure 4D): First, PBP2 could bind to a location in the cell envelope and then recruit MreB filaments directly (through diffusion and capture or through nucleation). Alternatively, MreB filaments could bind the PBP2-binding site independently of PBP2 (however, without actively influencing the sites of PBP2 binding itself, as shown in the previous paragraph).
 
 The latter scenario would pose a strong constraint on the binding substrate: It would require that a fraction of binding sites at least as high as the persistent fraction of PBP2 molecules was occupied by MreB filaments. This scenario would thus require that the number of binding sites is not much higher than the number of MreB filaments in the cell envelope, but still greater than the number of bound PBP2 molecules. With a conservative estimate of MreB filaments of about 200 per cell (Materials and methods) and bound molecules of about 10–150 depending on expression and measurement method (Figure 1—figure supplement 7A), this constraint would require that the binding substrate is low-abundant. Alternatively, if MreB was recruited through bound PBP2 molecules, binding targets could be highly abundant.
 
-## None of the known Rod-complex components appears as the sole rate-limiting binding substrate for PBP2
+### None of the known Rod-complex components appears as the sole rate-limiting binding substrate for PBP2
 
 To investigate the role of known Rod-complex components different from MreB as potential binding substrates for PBP2, we constructed depletion strains for RodA, RodZ, or MreCD in a background strain expressing either native levels of PAmCherry-PBP2 (for RodZ, MreCD) or overexpressing PAmCherry-PBP2 (for RodA). Without repression, almost all strains showed normal growth rate (Figure 5—figure supplement 1), cell shape (Figure 5A, Figure 5—figure supplement 2A-B), bound fractions (Figure 5C), and persistent fractions (Figure 5D). Only the RodA-depletion strain showed longer cells and grew slightly slower than the wild type, in agreement with the growth rate of the overexpression strain (Figure 1—figure supplement 1C). Furthermore, the RodZ-depletion strain showed slightly higher bound and persistent fractions.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Cell shape upon near-native expression (A) or long-time depletion (B) of RodA, MreCD, RodZ, or PBP1a. RodA was repressed for 9 hr through CRISPRi against mrdAB operon (coding for PBP2 and RodA) in AV48/pKC128 [PmrdA::PAmCherry-PBP2]. Here, PBP2 was 2–5-fold overexpressed from plasmid pKC128 to avoid PBP2 depletion upon mrdAB repression. MreCD was depleted for 6 hr in TKL130 ΔmreCD/pFB121 [Plac::mreCD]. RodZ was depleted for 6 hr in TKL130 ΔrodZ/pFB290 [Plac::rodZ]. PBP1a is not essential and was deleted. In all cases except for PBP1A, cells loose rod-like cell shape. (C–D) Bound fractions (C) and persistent fractions (D) of PAmCherry-PBP2 upon expression or depletion of proteins indicated above (A). Dots represent biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Growth curves for the different depletion strains in induced and depleted conditions as a function of time after initiating protein depletion. The doubling time is obtained from an exponential fit. three biological replicates for each condition. Y-axis is shown in log-scale.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–B) Cell length and width upon repression of RodA, and depletion of MreCD or RodZ at different time points after initiating protein depletion. (C–D) Levels of RodA, MreC, and RodZ (C) and levels of PBP2 (D) acquired by mass spectrometry (DIA). Protein levels are normalized by the mean of the corresponding protein level in MG1655. Dots represent two biological replicates for each condition. (E) Average diffusion constants drop upon repression of potential members of the Rod complex. Dots represent biological replicates. (F) Bound fraction and average diffusion constant of PBP2-PAmCherry at different time points during RodZ depletion. Dots represent biological replicates.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Sample profiles along the cell centerline of different cells carrying MreB-mCherry and GFP-RodZ fusions (ΔrodZ mreB <> mreB mCherry (Plac::gfp-rodZ)) (top) or mCherry-PBP2 and GFP-RodZ fusions (ΔrodZ mrdA <> mCherry mrdA (Plac::gfp-rodZ)) (bottom) acquired by epi-fluorescence microscopy. Intensities are normalized by the median value and then smoothened with a Gauss filter with standard deviation of 33 nm (0.5 pixel). (B) Boxplots of Pearson correlation coefficients between PBP2- and RodZ signals (left) and between MreB-and RodZ signals (right) acquired by epi-fluorescence microscopy. (C) Sample snapshots and corresponding intensity maps of cells carrying mCherry-PBP2 and GFP-RodZ fusions (ΔrodZ mrdA <> mCherry mrdA (Plac::gfp-rodZ)) (left) or MreB-mCherry and GFP-RodZ fusions (ΔrodZ mreB <> mreB mCherry (Plac::gfp-rodZ)) (right) acquired by TIRF microscopy. Intensities are normalized by the median value. x-axis show position along the short axis of the cell where zero corresponds to the centerline (mid-cell). y-axis is then the position along the cell’s long axis. Distances are given in nm. Scale bar shows 1 um. Intensity maps are stretched in x-direction for better visibility. (D) Boxplots of Pearson correlation coefficients between PBP2- and RodZ signals (left) and between MreB-and RodZ signals (right) acquired by TIRF microscopy.
 
 Within 6 hr of depletion, cell shape was perturbed (Figure 5B, Figure 5—figure supplement 2A, B) , and repressed protein levels were reduced below wildtype levels (Figure 5—figure supplement 2C), while PBP2 levels remained close to initial levels (Figure 5—figure supplement 2D, Supplementary file 1b). Furthermore, growth rates were at most weakly reduced with respect to non-repressed conditions (Figure 5—figure supplement 1).
 
@@ -132,11 +228,23 @@ Finally, ponA deletion (PBP1a) (Figure 5) led to a drop of the bound fraction. T
 
 In conclusion, RodA and PBP1a are likely not the substrate for PBP2 binding, and we found evidence that neither MreCD nor RodZ are the sole rate-limiting substrate for PBP2.
 
-## MreB-curvature correlations are likely the result of persistent motion
+### MreB-curvature correlations are likely the result of persistent motion
 
 Previously, Ursell et al. observed that MreB filaments were excluded from regions of positive Gaussian cell-envelope curvature such as found at the cell poles, while MreB was enriched in regions of negative Gaussian curvature as found at the inner sides of bent cells (Ursell et al., 2014). They concluded that the locations of Rod-complex activity are determined by MreB filaments preferentially localizing to sites of negative Gaussian curvature in rod-shaped cells (Ursell et al., 2014). This conclusion is in contradiction to our finding that PBP2 is responsible for the initial localization of new Rod complexes in the cylindrical part of the cell. However, MreB-curvature correlations could also come about indirectly through persistent rotational motion (Hussain et al., 2018; Wong et al., 2017; Wong et al., 2019) or additional mechanisms of polar exclusion (Kawazura et al., 2017), without any curvature-based Rod-complex initiation. To resolve this conflict, we reinvestigated MreB-curvature correlations and their potentially different origin.
 
-We followed a very similar approach to Ursell et al. (2014). Specifically, we measured the spatial pattern of MreB-msfGFP (Ouzounov et al., 2016) on the two-dimensional cell contour (Figure 6A-B) both in filamentous cells, through expression of the division inhibitor SulA (Bi and Lutkenhaus, 1993), and in non-filamentous cells growing on agarose pads under the microscope. We obtained the contour curvature of the cell from phase-contrast images using the Morphometrics cell segmentation tool (Ursell et al., 2017; Ursell et al., 2014). In cylindrical regions of normally growing or filamentous cells with low variations of cell diameter σ, contour curvature κ is a good proxy for Gaussian curvature G, with G=2κ/σ.
+We followed a very similar approach to Ursell et al. (2014). Specifically, we measured the spatial pattern of MreB-msfGFP (Ouzounov et al., 2016) on the two-dimensional cell contour (Figure 6A-B) both in filamentous cells, through expression of the division inhibitor SulA (Bi and Lutkenhaus, 1993), and in non-filamentous cells growing on agarose pads under the microscope. We obtained the contour curvature of the cell from phase-contrast images using the Morphometrics cell segmentation tool (Ursell et al., 2017; Ursell et al., 2014). In cylindrical regions of normally growing or filamentous cells with low variations of cell diameter $\sigma$, contour curvature $κ$ is a good proxy for Gaussian curvature G, with $G=2κ/\sigma$.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Phase-contrast image (A) and fluorescence intensity (B) of a representative filamentous E. coli expressing MreB-msfGFP and SulA (NO53/pDB192). Contours (cyan) are obtained by computational cell segmentation. Positive contour curvature is found at cell poles, bulges, and outer parts of spontaneously bent regions, while negative curvature is found at indentations and inner parts of bent regions. Straight cell segments (yellow) are defined as regions where the curvature of the spatially averaged centerline (magenta) is smaller than 0.05 μm−1. (C–D) Normalized average MreB intensity as a function of local contour curvature. Comparison between correlations obtained from full contours (black) and side walls (green) (C) and from side walls (green) and straight cell segments (magenta) (D). (E–F) Distributions of contour-curvature values corresponding to correlation plots in (C–D). Shaded region: Standard deviation between three biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Left. Normalized average MreB intensity as a function of local contour curvature in strain NO53 (mreB <> mreB msfGFP). Comparison between correlations obtained from full contours (black) and side walls (green). Right. Distributions of contour-curvature values corresponding to correlation plots on the left. Shaded areas show standard deviation between three biological replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50629/elife-50629-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Curvature correction. (A) Average MreB intensity as a function of contour curvature (black) and bending-corrected contour curvature (orange) in NO53/pDB192 (Plac::sulA). (B) Distributions of contour curvature (black) and corrected contour curvature (orange). Curvature correction leads to a narrower distribution while ~ 80% of local curvature values keep their original sign of curvature. (C–E) Intensity correction. (C) Average MreB intensity as a function of bending-corrected MreB-intensity (orange). Intensity is corrected for observed correlations between MreB intensity and centerline curvature in (D) (Materials and methods). (D) Average MreB intensity as a function of smoothened centerline curvature (using a Gauss filter of σ = 80 nm). (E) Centerline-curvature distribution. Shaded areas show standard deviation between three biological replicates.
 
 First, we measured the enrichment of MreB intensity at the cell contour as a function of local contour curvature, just like (Ursell et al., 2014; Figure 6C for filamentous cells; Figure 6—figure supplement 1 for wild-type cells). In quantitative agreement with their data we found enrichment of MreB at negative curvature and depletion at positive curvatures, as present at cell poles.
 
@@ -148,7 +256,7 @@ We confirmed our findings with two alternative approaches: First, we subtracted 
 
 Previously, we demonstrated that a small bending-induced enrichment of MreB can be explained by persistent rotational motion of MreB filaments (Wong et al., 2017), because rotating MreB filaments tend to accumulate at inner regions of bent cells. Our observations are therefore compatible with a model of MreB-independent initiation of Rod complexes through PBP2.
 
-## Diffusing PBP2 molecules do not contribute to Rod-complex activity
+### Diffusing PBP2 molecules do not contribute to Rod-complex activity
 
 It was previously suggested that diffusive PBP2 molecules contribute to cell-wall synthesis (Lee et al., 2014). However, if diffusive PBP2 molecules indeed contributed to processive Rod-complex activity, any cross-linking site of a moving Rod complex would have to be found by independent PBP2 molecules through diffusion at a rate equal to the cross-linking rate of up to 15/s. This rate corresponds to the distance between cross links of 2 nm (Meroueh et al., 2006) and a speed of PBP2 of 30 nm/s frequently observed (Figure 1F).
 
@@ -164,27 +272,27 @@ As an extension of the model we considered the possibility that PBP2 molecules u
 
 In summary, we found an important role of PBP2 for Rod-complex initiation and persistent cell-wall synthetic activity. New Rod complexes are initiated once PBP2 binds to an immobile substrate in the cell envelope that is different from MreB filaments. Furthermore, we found evidence that none of the known Rod-complex components provides the sole rate-limiting binding substrate for PBP2.
 
-## PBP2 might bind directly to the cell wall
+### PBP2 might bind directly to the cell wall
 
 Based on our observations we speculated that PBP2 might bind to the cell wall directly. Support for this viewpoint comes from the diffusive motion of PBP2 molecules. PBP2 diffusion is much slower than diffusion of similar-size membrane proteins (Kumar et al., 2010) or of a truncated version of PBP2 (Lee et al., 2014), suggesting that PBP2 might weakly bind the cell wall even during diffusion (Lee et al., 2014). We found that depletion of RodA, RodZ, and MreCD caused an additional decrease of the diffusion constant (Figure 5—figure supplement 2E), similarly to long-term treatment with A22 or Mecillinam (Figure 3E). In all cases, Rod-complex activity is inhibited or reduced, which changes cell-wall architecture (Wang et al., 2012) and reduces the degree of cross-linking (Uehara and Park, 2008). These observations support the model that diffusion is governed by the physical interactions between PBP2 and the cell wall (Lee et al., 2014). Interestingly, overexpression of PBP2 also led to a reduction of the diffusion constant (Figure 1—figure supplement 2). To determine whether this reduction is due to an alteration of the cell-wall structure or due to a different cause, will require further investigation.
 
-## Cell-wall architecture and not envelope curvature likely provides the signal for Rod-complex initiation
+### Cell-wall architecture and not envelope curvature likely provides the signal for Rod-complex initiation
 
 It has been proposed that Rod complexes are recruited to sites of specific cell-envelope curvature based on mechanical properties of MreB (Ursell et al., 2014). We found that correlations between MreB filaments and cell-envelope curvature in normally growing rods do not require any curvature-dependent initiation of Rod complexes. This observation does not rule out that MreB-curvature correlations in cells of strongly perturbed shape might be influenced by MreB-filament bending or twisting (Bratton et al., 2018; Colavin et al., 2018). Evidence for motion-independent curvature preferences comes from C. crescentus (Harris et al., 2014). However, our study as well as previous studies (Hussain et al., 2018; Wong et al., 2017; Wong et al., 2019) suggest that MreB-filament rotation around the circumference are responsible for MreB-curvature correlations in wild-type and filamentous cells. Therefore, the physical signal underlying the spatial pattern of new Rod complexes is likely found in the local architecture of the cell wall, and not, as previously suggested, in the geometry of the cytoplasmic membrane.
 
-## What is the PBP2-binding substrate?
+### What is the PBP2-binding substrate?
 
 The bound fraction of PBP2 molecules remained nearly constant upon A22 or Mecillinam treatment (Figure 3). We thus reasoned that persistently moving and immobile molecules are likely bound to the same substrate. In Gram-negative E. coli, active Rod complexes are thought to insert nascent glycan strands in between template strands (Höltje, 1998), even if deviations from perfect alignment are reported (Turner et al., 2018). During cell-wall insertion, Rod complexes might therefore stay connected to the local cell wall through associations between PBP2 and a template strand, independently of enzymatic activity. In the future, it will be interesting to study potential interactions at the molecular level. These might then also reveal structural features of the cell wall potentially responsible for stable PBP2 association.
 
-## What determines the rates of binding and unbinding?
+### What determines the rates of binding and unbinding?
 
 PBP2 molecules transition only slowly between bound and diffusive states (Figure 2). Possibly, PBP2 is found in two different molecular states that facilitate stable binding or allow for diffusive motion – either through conformational change or through interaction with an unknown interaction partner. Depletion experiments with RodA through CRISPRi suggest that RodA is not involved in this process, since RodA levels were likely repressed below the levels of bound PBP2. Depletion experiments with MreCD and RodZ suggest that none of these proteins constitutes the sole rate-limiting binding substrate. However, residual protein levels upon depletion were too high to rule out an important and possibly essential role for PBP2 binding. Specifically, RodZ depletion led to a reduction of the bound fraction, suggesting that RodZ directly modulates PBP2 binding or the stability of the bound form of PBP2. This is compatible with previous observations of RodZ-PBP2 interactions (Bendezú et al., 2009; Morgenstein et al., 2015). It will thus be interesting to investigate the role of RodZ for PBP2 binding or unbinding in more detail in the future.
 
-## How do MreB filaments 'find' the binding substrate?
+### How do MreB filaments 'find' the binding substrate?
 
 We reasoned that MreB filaments must either be recruited to bound PBP2 molecules or to an unknown, low-abundant binding substrate. To find its target, MreB filaments could explore the cell envelope through rapid diffusive motion previously overlooked. Alternatively, the binding target could nucleate new MreB filaments. Other Rod-complex components such as RodZ could facilitate this process. This latter hypothesis is supported by the recent observation that the hyperactive PBP2(L61R) mutant described above causes more and shorter MreB filaments (Rohs et al., 2018).
 
-## High residual rod-complex activity upon PBP2 overexpression suggests that PBP2 activates the Rod complex
+### High residual rod-complex activity upon PBP2 overexpression suggests that PBP2 activates the Rod complex
 
 We observed that the fraction of bound PAmCherry-PBP2 molecules decreased by about two-fold upon three-fold increase of enzyme levels. Together with a nearly constant fraction of persistently moving molecules, this suggests that the number of active enzymes increases about two-fold (Supplementary file 1a). Therefore, PBP2 appears to be an important limiting factor for Rod-complex activity. This finding is consistent with the previous observation that PBP2 activates RodA (Rohs et al., 2018).
 
@@ -192,13 +300,163 @@ For the msfGFP-fusion we observed that the decrease of the bound fraction was ro
 
 Both fusions suggest that PBP2 abundance might not be the sole limiting factor for PBP2 binding and Rod-complex activity, and we already found two qualitatively different limiting factors: RodZ has a strong effect on PBP2 binding, possibly by facilitating binding or by stabilizing the bound fraction, while RodA and MreCD have seemingly no effect on binding but an important limiting role for persistent motion.
 
-## Rod-complex activity and cell shape
+### Rod-complex activity and cell shape
 
 Despite the substantial residual degree of persistent motion upon depletion of MreCD, RodA, or RodZ, the presence of all these components is required to stably maintain rod shape. A recent paper suggested that cell diameter in E. coli is partially determined by the spatial density of active Rod complexes (Dion et al., 2019). The model is compatible with the fold-change of persistently moving PBP2 molecules and cell-diameter changes observed during MreCD and RodZ depletion. However, during RodA-depletion this simple model does not apply: Due to overexpression of PBP2, the total number of persistently moving PBP2 molecules per cell is likely as high as in the wildtype – even during RodA depletion. In the future, it will therefore be interesting to study how the stoichiometry of different Rod-complex components affects cell-wall insertion and cell shape.
 
 ## Materials and methods
 
-## Strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>TKL130</td>
+      <td>(Lee et al., 2014)</td>
+      <td>MG1655 mrdA::PAmCherry-mrdA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>EW07</td>
+      <td>This work</td>
+      <td>TKL130 ΔmreCD, pFB121</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>EW49</td>
+      <td>This work</td>
+      <td>TKL130 ΔrodZ, pFB290</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AV48</td>
+      <td>This work</td>
+      <td>186attB::Ptet-dcas9, mrdA::rPAmCherry-mrdA</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>NO53</td>
+      <td>(Ouzounov et al., 2016)</td>
+      <td>MG1655 mreB-msfGFPsw</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>TU230(attLHC943)</td>
+      <td>(Rohs et al., 2018)</td>
+      <td>MG1655 mrdA::aph (Plac::msfgfp-mrdA)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>TU230(attLPR122)</td>
+      <td>(Rohs et al., 2018)</td>
+      <td>MG1655 mrdA::aph (Plac::msfgfp-pbpA(L61R))</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>S352</td>
+      <td>This work</td>
+      <td>MG1655 ΔponA::aph</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>FB83</td>
+      <td>(Bendezú and de Boer, 2008)</td>
+      <td>MG1655, lacIZYA::frt, mreB-mCherrySW yhdE::frt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AV07</td>
+      <td>(Vigouroux et al., 2018)</td>
+      <td>MG1655 mrdA::mcherry-mrdA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>AV127</td>
+      <td>This work</td>
+      <td>186::dCas9, mrdA::sfgfp-mrdA</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>FB60 (iFB273)</td>
+      <td>(Bendezú and de Boer, 2008)</td>
+      <td>MG1655 lacIZYA::frt, rodZ::aph, Plac::gfp-rodZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>S504</td>
+      <td>This work</td>
+      <td>FB83, rodZ::aph, Plac::gfp-rodZ</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>S505</td>
+      <td>This work</td>
+      <td>AV07, rodZ::aph, Plac::gfp-rodZ</td>
+      <td>Materials and methods, Strain construction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mecillinam</td>
+      <td>Sigma-Aldrich, #33447</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A22</td>
+      <td>Cayman Chemical #15870</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trackmate</td>
+      <td>(Tinevez et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Morphometrics</td>
+      <td>(Ursell et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spot-On</td>
+      <td>(Hansen et al., 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain construction
 
 All strains, plasmids, and primers can be found in Supplementary file 3.
 
@@ -218,11 +476,11 @@ S504: To construct a strain expressing both MreB-mCherry and GFP-RodZ fusions, w
 
 S505: To construct a strain carrying both mCherry-PBP2 and GFP-RodZ fusions, we used strain AV07 (mCherry-mrdA) and performed P1 transduction with lysate made from FB60 (iFB273) (ΔrodZ, Plac::gfp-rodZ) (Bendezú et al., 2009) first selecting on ampicillin for Plac::gfp-rodZ then a second transduction with the same phage lysate and selecting on kanamycin for deleting native rodZ.
 
-## Bocillin labelling
+### Bocillin labelling
 
 PBP2 levels of strains MG1655, TKL130 and TKL130/pKC128 were measured by a Bocillin-binding assay as described similarly in Cho et al. (2016) and Kocaoglu et al. (2012). We performed the quantification in parallel on two identical cultures grown from independent colonies of each strain. We grew strains overnight in LB at 37° C. We then washed the cells in LB, diluted them 1/200 in LB and grew them at 37° C until an OD600 of ~0.4. We washed 1.8 ml of the culture in PBS, resuspended in 200 μl PBS and kept cultures on ice. We disrupted cells by sonication (FB120, Fisher Scientific) and centrifuged them for 15 min at 4° C (21,000 g). We subsequently resuspended the pellet corresponding to the membrane fraction in 50 μl PBS containing 15 μM fluorescently labelled Bocillin-FL (Invitrogen). Membranes were incubated at 37° C for 30 min and washed once in 1 ml PBS. We centrifuged the membranes for 15 min (21,000 g) and resuspended them in 50 μl PBS. We measured the protein concentration of each sample with a colorimetric assay based on the Bradford method (#5000006, Bio-Rad) and loaded equal amounts of protein mixed with 4X Laemmli buffer onto a 10% polyacrylamide gel. We visualized the labelled proteins with a Typhoon 9000 fluorescence imager (GE Healthcare): excitation at 488 nm and emission at 530 nm. We quantified the relative amounts of PBP2 in each sample by quantifying the grey values of each lane in ImageJ (Schneider et al., 2012).
 
-## Sample preparation and imaging conditions
+### Sample preparation and imaging conditions
 
 Cells were grown overnight at 37°C in LB medium and then washed and diluted at least 1:500 in M63 minimal medium (Miller, 1972) supplemented with 0.1% casamino acids, thiamine (5·10−5%), glucose (0.2%) and MgSO4 (1 mM) (here referred to as minimal medium) and grown to early exponential phase (maximum OD600 of 0.1) at 30°C. If strains carried antibiotic resistance we added the respective antibiotics to the medium (carbenicillin (100 µg/ml), kanamycin (50 µg/ml), chloramphenicol (30 µg/ml), all Sigma-Aldrich). Inducers were added as indicated below. For microscopy, cells were spotted on 1% agarose pads (UltraPure Agarose, Invitrogen) of minimal medium, without any antibiotics. Drugs targeting MreB or cell-wall synthesis and inducers were added as indicated below.
 
@@ -240,7 +498,7 @@ In experiments where we imaged GFP-RodZ, we used 100 μM IPTG.
 
 For MreB-curvature correlation measurements we grew NO53 or NO53/pDB192 overnight at 37°C in LB medium. We diluted the cultures by 1:500 and grew them at 30°C in LB medium for 2 hr. We then washed the cultures and diluted them 1:200 in MOPS rich medium (MOPS EZ Rich Defined Medium Kit. Cat.No. M2105, TEKnova) and grew them at 30°C for an additional 4 hr, such that the culture density remained below an OD600 of 0.1. The growth media of NO53/pDB192 cells contains carbenicillin at all times until the cells are harvested for microscopy. Cell division is inhibited by adding 1 mM IPTG in liquid culture inducing sulA expression 30 min prior to imaging. Cells were placed on 1% agarose pads of the same media without any antibiotics but containing the same amount of IPTG for filamentation. Images were taken right after placing cells on a pad (NO53) or after maintaining cells for 30 min on the pad at the same 30°C (NO53/pDB192).
 
-## Microscopy
+### Microscopy
 
 Single particle tracking of PAmCherry-PBP2 and msfGFP-PBP2 was performed on a custom-designed fluorescence microscope (here referred to as microscope 1) in TIRF (total internal reflection fluorescence) mode. The microscope was equipped with a 100x TIRF objective (Apo TIRF, 100x, NA 1.49, Nikon), three laser lines: 405 nm (Obis, Coherent), 488 nm (Sapphire, Coherent), 561 nm (Sapphire, Coherent), a dichroic beamsplitter (Di03-R488/561-t3−25 × 36, Semrock), an edge filter for PAmCherry imaging (BLP02-561R-25, Semrock), and a laser-line filter (NF561-18, Thorlabs). Shuttering of the 488 nm laser was controlled with an acusto optic tunable filter (AA Optoelectronics) or with shutters (Uniblitz, LS3 and TS6B, Vincent Associates). The 405 nm laser was controlled directly via an USB interface. Images were acquired with an EMCCD camera (iXon Ultra, Andor). All components were controlled and synchronized using µManager (Edelstein et al., 2010).
 
@@ -256,13 +514,13 @@ For measurements of cell shape, average fluorescence intensity, MreB-curvature c
 
 For measurements of fluorescence on cell boundaries, contour curvature, and MreB-msfGFP tracks, we focused on cells based on the phase-contrast signal. To track MreB-msfGFP spots moving at the bottom of the cell, we moved the focal plane 250 nm below the central plane of cells. Images were taken every 1 s for a duration of 120 s. We generated images of about 100 cells per replicate.
 
-## Cell segmentation
+### Cell segmentation
 
 Cell boundaries were detected from phase contrast microscopy images on microscope 2 or three using the MATLAB based cell segmentation tool Morphometrics (SimTK) (Ursell et al., 2017). The cell poles and the cell centerline were identified using the MicrobeTracker package (Sliusarenko et al., 2011). The spacing of subsequent points along the cell centerline was chosen as 0.5 pixels (32 nm). Cell width was measured as the median of all local widths.
 
 A smoothened centerline (x- and y-coordinates Gauss-filtered, σ = 3.5 steps) was used for a cell-internal orthogonal coordinate system, specifically to determine the local orientation of the cell.
 
-## PBP2 tracking
+### PBP2 tracking
 
 All images taken on microscope one were analyzed using custom Matlab code (available as source code file). First, we segmented bright field images using a semi-automated approach based on standard image processing tools to separate regions containing cells from background regions. For spatially separated cells this also allowed us to obtain a coordinate system for each cell.
 
@@ -276,7 +534,7 @@ Tracking was performed using the same code from Crocker and Grier (1996) with a 
 
 For the comparison between different datasets we used Student’s t-test for bound fractions, persistent fractions, and diffusion constants where appropriate. P-values are indicated in supplemental datasets corresponding to the different figures.
 
-## MreB tracking
+### MreB tracking
 
 Fluorescence images were analyzed using a custom Matlab code: Images were first filtered in both space and time using a three-dimensional Savitzky-Golay filter with a filter size of 3 pixels in xy-directions time three points along the temporal dimension. Images were subsequently de-noised once more using a 2D-Gauss filter (σ = 0.5 pixels).
 
@@ -284,13 +542,27 @@ Images were subsequently rescaled by a factor of 5 using spline interpolation to
 
 The local maxima were connected to construct raw trajectories based on their distance at consecutive time points (van Teeffelen et al., 2011) with a maximal displacement during subsequent time frames of 2 pixels.
 
-## Curvature analysis and MreB-curvature correlations
+### Curvature analysis and MreB-curvature correlations
 
 After obtaining the cell contours and the two poles of each cell we first computed the contour curvature all along the cell boundary by fitting a polygon to every contour point and its two neighboring points (MATLAB function LineCurvature2D, http://www.mathworks.com/matlabcentral/). Negative curvature values correspond to indentations and positive curvature values to bulges and poles. To eliminate the influence of noise the contour curvature c is then obtained by Gauss-filtering the raw curvature values (σ = 2 steps, corresponding to 65 nm).
 
-To obtain MreB-msfGFP intensities along the cell boundary we first smoothened raw MreB-msfGFP images using a 2D-Gauss filter (σ = 0.5 pixels). For interpolation of the GFP images at points close to the cell boundary we then corrected the contour coordinates ri for systematic shifts between the phase-contrast-based cell contours and the GFP-intensity peaks corresponding to MreB filaments. Specifically, we obtained the corrected contour coordinates ric from the Morphometrics-based contour coordinates ri according toric=ri+Δr-r⊥is
+To obtain MreB-msfGFP intensities along the cell boundary we first smoothened raw MreB-msfGFP images using a 2D-Gauss filter (σ = 0.5 pixels). For interpolation of the GFP images at points close to the cell boundary we then corrected the contour coordinates $r_{i}$ for systematic shifts between the phase-contrast-based cell contours and the GFP-intensity peaks corresponding to MreB filaments. Specifically, we obtained the corrected contour coordinates $r_{i}^{c}$ from the Morphometrics-based contour coordinates $r_{i}$ according to
 
-Here, the first term Δr=-0.35,-0.78 pixels is a microscope-dependent displacement vector that accounts for a systematic shift between phase-contrast and GFP images. The second term shifts the contour by an amount s = 140 nm inward (along a vector normal to the cell boundary r⊥i), such that the corrected contour passes through the positions of the GFP intensity peaks that correspond to the positions of MreB filaments on the sides of the cell. By convention, r⊥i always points outward from the cell center. To make sure to take MreB-msfGFP peaks into account even if they are slightly displaced from the corrected boundary, GFP intensity values Ii are then obtained by linear interpolation of the smoothened MreB-msfGFP image at the positions of the corrected contour and at two other points perpendicular to the boundary and spaced 0.5 pixel inward an outward:Ii=13Iric-r⊥iδ+Iric+Iric+r⊥iδ,where δ = 65 nm. Subsequently, intensity values are normalized by the average taken over the full contour, the side walls, or the straight cell segments, respectively, depending on the analysis. To obtain the MreB enrichment as a function of curvature, the curvature values are binned and MreB intensities corresponding to those curvature vales are averaged. Subsequently, intensity values are normalized by the average intensity found close to zero curvature:Iic=Ii/⟨Ii| −0.05/um < ci < 0.05/um⟩.
+$$
+r_{i}^{c}=r_{i}+Δr-r_{⊥i}s
+$$
+
+Here, the first term $Δr=-0.35,-0.78$ pixels is a microscope-dependent displacement vector that accounts for a systematic shift between phase-contrast and GFP images. The second term shifts the contour by an amount s = 140 nm inward (along a vector normal to the cell boundary $r_{⊥i}$), such that the corrected contour passes through the positions of the GFP intensity peaks that correspond to the positions of MreB filaments on the sides of the cell. By convention, $r_{⊥i}$ always points outward from the cell center. To make sure to take MreB-msfGFP peaks into account even if they are slightly displaced from the corrected boundary, GFP intensity values $I_{i}$ are then obtained by linear interpolation of the smoothened MreB-msfGFP image at the positions of the corrected contour and at two other points perpendicular to the boundary and spaced 0.5 pixel inward an outward:
+
+$$
+I_{i}=\frac{1}{3}Ir_{i}^{c}-r_{⊥i}\delta+Ir_{i}^{c}+Ir_{i}^{c}+r_{⊥i}\delta,
+$$
+
+where δ = 65 nm. Subsequently, intensity values are normalized by the average taken over the full contour, the side walls, or the straight cell segments, respectively, depending on the analysis. To obtain the MreB enrichment as a function of curvature, the curvature values are binned and MreB intensities corresponding to those curvature vales are averaged. Subsequently, intensity values are normalized by the average intensity found close to zero curvature:
+
+$$
+I_{i}^{c}=I_{i}/⟨I_{i}| −0.05/um < c_{i} < 0.05/um⟩.
+$$
 
 If a bin contains less than at least 0.1% of the data points per replicate, it is not displayed in the figure.
 
@@ -298,27 +570,39 @@ To remove the cell poles and potential septa from the analysis, we removed 2 um 
 
 To determine correlations between MreB and contour curvature independently of spontaneous cell bending, we either concentrated on regions where the smoothened centerline was straight or we performed two independent normalization approaches:
 
-To constrain our analysis to straight segments of the cell we considered only those boundary points corresponding to centerline curvatures with |κi|<0.05/μm.
+To constrain our analysis to straight segments of the cell we considered only those boundary points corresponding to centerline curvatures with $|κ_{i}|<0.05/\mum$.
 
-In the first normalization approach we renormalized the contour curvature by subtracting the contribution of cell bending according tocicorr=ci±κi/1-κiwi2where κi is the curvature of the smoothened centerline (x- and y-coordinates Gauss-filtered, σ = 3.5 steps), and where wi is the local width of the cell. The centerline was smoothened to consider only the contribution of long-range bending rather than the impact of short-scale oscillations of boundary curvature. Positive/negative centerline-curvature values correspond to cells bent to the right/left along the direction of the centerline. The plus or minus signs correspond to the right or left side of the cell, respectively. The correction only works for segments of the cell with κi <0.5 wi to avoid divergence. For the cell segments excluding poles and potential septa this criterion was always fulfilled.
+In the first normalization approach we renormalized the contour curvature by subtracting the contribution of cell bending according to
 
-In the second normalization approach we renormalized the MreB intensity by the component expected due to cell bending:Iicorr=Ii/1±ακiwiwhere alpha ~ 0.2 is a coefficient that accounts for the correlations observed between MreB intensity and smoothened centerline curvature (Figure 6—figure supplement 2D). As above, the plus/minus signs correspond to the inner/outer face of the bent cell, respectively.
+$$
+c_{i}^{corr}=c_{i}\pmκ_{i}/1-\frac{κ_{i}w_{i}}{2}
+$$
 
-## Spot analysis and colocalization analysis on cell boundaries and in TIRF
+where $κ_{i}$ is the curvature of the smoothened centerline (x- and y-coordinates Gauss-filtered, σ = 3.5 steps), and where $w_{i}$ is the local width of the cell. The centerline was smoothened to consider only the contribution of long-range bending rather than the impact of short-scale oscillations of boundary curvature. Positive/negative centerline-curvature values correspond to cells bent to the right/left along the direction of the centerline. The plus or minus signs correspond to the right or left side of the cell, respectively. The correction only works for segments of the cell with $κ_{i} <0.5 w_{i}$ to avoid divergence. For the cell segments excluding poles and potential septa this criterion was always fulfilled.
+
+In the second normalization approach we renormalized the MreB intensity by the component expected due to cell bending:
+
+$$
+I_{i}^{corr}=I_{i}/1\pm\alphaκ_{i}w_{i}
+$$
+
+where alpha ~ 0.2 is a coefficient that accounts for the correlations observed between MreB intensity and smoothened centerline curvature (Figure 6—figure supplement 2D). As above, the plus/minus signs correspond to the inner/outer face of the bent cell, respectively.
+
+### Spot analysis and colocalization analysis on cell boundaries and in TIRF
 
 To analyse the distribution of fluorescence peaks of cells expressing mCherry-PBP2, MreB-msfGFP, or GFP-RodZ and to perform colocalization measurements we first obtained fluorescence profiles on cell contours from epi-fluorescence images as described in 'Curvature analysis and MreB-curvature correlations'.
 
 Peak analysis: Fluorescence profiles were smoothened with a Gauss filter (σ = 0.5 pixels). Subsequently, we subtracted the median intensity of every cell contour. Peaks were then detected as positive-valued local maxima (Figure 3C).
 
-The intensity-dependent peak density is the number of peaks with intensity p divided by total contour length of all cells ∑iNcellsli . For the total density of all peaks, we considered all peaks with peak height 3 times higher than the estimated intensity noise (gray regions in Figure 3C). The noise was calculated in non-treated conditions. To that end, we filtered the raw fluorescence image with a 2D Gauss filter of σ = 0.5 pixels and σ = 3 pixels separately. The signal on the cell boundaries are then extracted from two sets of images. Next, we took the difference of signals belonging to same cells and calculated the average standard deviation of the differences, which is used as a readout for pixel noise.
+The intensity-dependent peak density is the number of peaks with intensity p divided by total contour length of all cells $\sumiN_{cells}l_{i}$. For the total density of all peaks, we considered all peaks with peak height 3 times higher than the estimated intensity noise (gray regions in Figure 3C). The noise was calculated in non-treated conditions. To that end, we filtered the raw fluorescence image with a 2D Gauss filter of σ = 0.5 pixels and σ = 3 pixels separately. The signal on the cell boundaries are then extracted from two sets of images. Next, we took the difference of signals belonging to same cells and calculated the average standard deviation of the differences, which is used as a readout for pixel noise.
 
 For colocalization analysis, we extracted profiles as described above for two different fusions and calculate the Pearson correlation coefficient in each cell independently.
 
 For the analysis of spots and colocalization with TIRF microscopy, images of mCherry-PBP2, MreB-msfGFP, MreB-mCherry, and GFP-RodZ are taken with Microscope one in TIRF mode. Cells are manually segmented based on the bright-field image by drawing a line along the long axis of the cell, defining a centerline. The raw florescence images are smoothened using a 2D-Gauss filter (σ = 1 pixel). The 2D-intensity map is acquired from the region ± 210 nm around the centerline. For peak analysis, we subtracted the median intensity from every map and detected peaks as positive-valued local maxima. The intensity-dependent peak density and total density of all peaks are calculated in the same way as on the cell boundary. To calculate the levels of noise, the raw fluorescence images are filtered with a 2D Gauss filter of σ = 1 pixel and σ = 3 pixels separately. Next, we took the difference of maps belonging to same cells and calculated the average standard deviation of the differences, which is used as a readout for pixel noise.
 
-For colocalization analysis with TIRF microscopy, we first applied a correction for the systematic shifts between the signals appear in the red- and green- channels. By imaging TetraSpeck beads (Invitrogen) in the two channels and performing peak detection, we found a displacement vector Δp=-1,-0  with a magnitude of 105 nm. Then, we modified the coordinates of the points on the centerline of each cell according to: pic=pi+Δp where pi  and pic show the original and modified centerline coordinates, respectively. Next, we generated 2D intensity maps (Figure 5—figure supplement 3C-D) and calculated the Pearson correlation coefficient between the two different fluorescence channels for each cell.
+For colocalization analysis with TIRF microscopy, we first applied a correction for the systematic shifts between the signals appear in the red- and green- channels. By imaging TetraSpeck beads (Invitrogen) in the two channels and performing peak detection, we found a displacement vector $Δp=-1,-0$ with a magnitude of 105 nm. Then, we modified the coordinates of the points on the centerline of each cell according to: $p_{i}^{c}=p_{i}+Δp$ where $p_{i}$ and $p_{i}^{c}$ show the original and modified centerline coordinates, respectively. Next, we generated 2D intensity maps (Figure 5—figure supplement 3C-D) and calculated the Pearson correlation coefficient between the two different fluorescence channels for each cell.
 
-## Determination of bound fraction and diffusion constant
+### Determination of bound fraction and diffusion constant
 
 We used the Spot-On software (Hansen et al., 2018) to fit 2- and 3-state-diffusion models to high-frequency data (Supplementary file 2). In brief, Spot-On fits the experimental jump-length distributions for different time lags to the analytical solution of a multi-state diffusion model. The code returns fractions and diffusion constants of the different fractions, and the particle-localization precision. We used jump-length distributions from lags between 1 and 5 time intervals (60–300 ms). To that end, we selected tracks with at least 4 or seven localizations, for PAmCherry and GFP fusions respectively. We used a normalized value for the sum of residuals (χ2) acquired by dividing χ2 by the number of bins and by the lag time (in number of time steps) used.
 
@@ -328,9 +612,13 @@ We complemented Spot-On measurements by a different method, which is based on th
 
 We compared the values given by Spot-On with the Deff-based method using a 2-state model and acquired very similar results (Figure 1—figure supplement 3C).
 
-## Velocity and orientation distributions of persistently moving PBP2 and MreB
+### Velocity and orientation distributions of persistently moving PBP2 and MreB
 
-Directed motion of individual trajectories can be inferred from a quadratic dependency of the single-particle mean squared displacement (MSD) on time according to(1)xi2=vi2t2+bi
+Directed motion of individual trajectories can be inferred from a quadratic dependency of the single-particle mean squared displacement (MSD) on time according to
+
+$$
+x_{i}^{2}=v_{i}^{2}t^{2}+b_{i}
+$$
 
 Here, vi denotes the velocity of particle i and bi is an offset reflecting the localization error.
 
@@ -342,21 +630,25 @@ Performing the same analysis on PAmCherry-PBP2 trajectories generated with a tim
 
 To obtain the orientation of persistent PBP2 tracks we calculated the angle between the end-to-end vector of persistent trajectories measured with time interval of 3.6 s (same criteria of R2 > = 0.9 and a minimum length of 4 time points) and the cell orientation. For MreB we calculated the orientation in the same way and on the same data for which we obtained the velocity distribution.
 
-## Localization accuracy in low-frequency imaging
+### Localization accuracy in low-frequency imaging
 
-We determined the experimental localization accuracy from the distribution of displacements from measurements at 3.6 s time intervals for PAmCherry-PBP2 (Figure 1—figure supplement 6A). We restricted our analysis to immobile molecules according to a simple criterion (end-to-end distance less than 200 nm for tracks of at least 7 steps). The standard deviation σd of a Gaussian fit to the distribution of displacements in a single spatial direction is determined by σd2=xi-xi+12=2σ2, where σ is the localization uncertainty. Therefore, σ=σd/2. For PAmCherry-PBP2 σ=25nm.
+We determined the experimental localization accuracy from the distribution of displacements from measurements at 3.6 s time intervals for PAmCherry-PBP2 (Figure 1—figure supplement 6A). We restricted our analysis to immobile molecules according to a simple criterion (end-to-end distance less than 200 nm for tracks of at least 7 steps). The standard deviation $\sigma_{d}$ of a Gaussian fit to the distribution of displacements in a single spatial direction is determined by $\sigma_{d}^{2}=x_{i}-x_{i+1}^{2}=2\sigma^{2}$, where $\sigma$ is the localization uncertainty. Therefore, $\sigma=\sigma_{d}/\sqrt{2}$. For PAmCherry-PBP2 $\sigma=25nm$.
 
-## Simulation of persistent and immobile tracks
+### Simulation of persistent and immobile tracks
 
-To establish a criterion for reliably classifying persistently moving and immobile states in experimental PBP2 trajectories, we computationally simulated tracks of immobile or persistently moving molecules resembling the tracks observed by microscopy using 3.6 s time intervals. To that end we randomly picked a trajectory length (number of steps n) from an exponential distribution with n=3.5 that resembled the experimental length distribution (Figure 1—figure supplement 6B). For the simulation of persistently moving or immobile molecules we imposed a constant step size in the x-direction corresponding to the experimental velocity (v = 14 nm/s for PAmCherry-PBP2) for persistent molecules or to v = 0 nm for immobile molecules. To account for the localization uncertainty we subsequently added to all x- and y-coordinates a random displacement drawn from a normal distribution with a mean of 0 nm and a standard deviation equal to the localization accuracy for low-frequency imaging 25 nm (for PAmCherry-PBP2).
+To establish a criterion for reliably classifying persistently moving and immobile states in experimental PBP2 trajectories, we computationally simulated tracks of immobile or persistently moving molecules resembling the tracks observed by microscopy using 3.6 s time intervals. To that end we randomly picked a trajectory length (number of steps n) from an exponential distribution with $n=3.5$ that resembled the experimental length distribution (Figure 1—figure supplement 6B). For the simulation of persistently moving or immobile molecules we imposed a constant step size in the x-direction corresponding to the experimental velocity (v = 14 nm/s for PAmCherry-PBP2) for persistent molecules or to v = 0 nm for immobile molecules. To account for the localization uncertainty we subsequently added to all x- and y-coordinates a random displacement drawn from a normal distribution with a mean of 0 nm and a standard deviation equal to the localization accuracy for low-frequency imaging 25 nm (for PAmCherry-PBP2).
 
 Trajectories with transitions between immobile and persistent states were obtained by randomly selecting sub-trajectories from a single 1000-step long trajectory containing transitions between persistent and immobile states. Transition rates were obtained from experimental data (see next paragraph).
 
-## Determination of persistent and immobile states and switching rates
+### Determination of persistent and immobile states and switching rates
 
-For each time point we calculated the smoothed local velocity by dividing the displacement during the surrounding w time steps by the time lag wτ:vt=rt+w2-rt-w2/wτ
+For each time point we calculated the smoothed local velocity by dividing the displacement during the surrounding w time steps by the time lag wτ:
 
-Here rt=xt,yt is the position at time t, and τ = 3.6 s is the imaging time interval. We classified the particle as either immobile or persistently moving at time t if v was smaller or bigger than the threshold velocity vthr, respectively.
+$$
+vt=rt+\frac{w}{2}-rt-\frac{w}{2}/w\tau
+$$
+
+Here $rt=xt,yt$ is the position at time t, and τ = 3.6 s is the imaging time interval. We classified the particle as either immobile or persistently moving at time t if v was smaller or bigger than the threshold velocity vthr, respectively.
 
 We applied different values for w and vthr to simulated trajectories of PAmCherry-PBP2 (v = 14 nm/s; sigma = 25 nm) to find the parameter combination that reliably detected dynamic states in simulated tracks with more than 99% success rate (Figure 1—figure supplement 6C). We chose a window size of w = 4 and a velocity threshold of vthr = 8 nm/s (classifying 99.6% of segments of simulated immobile molecules as immobile and 99.6% of simulated persistent molecules as persistent) (Figure 1—figure supplement 6C). Since we found almost identical average velocity for msfGFP-PBP2, we used the same window size and velocity threshold for persistence classification.
 
@@ -364,7 +656,7 @@ We calculated transition rates kip or kpi by counting the number of transitions 
 
 All error bars denote standard errors between replicates.
 
-## Testing the two-state model of immobile and persistent states
+### Testing the two-state model of immobile and persistent states
 
 To test whether the dynamics of PBP2 molecules is compatible with a model of molecules residing in either of two possible states we measured single-particle MSD's of track segments identified as either immobile or persistent (Figure 1—figure supplement 6A). The average MSD of segments classified as persistently moving increased quadratically with time, while the average MSD of segments classified as immobile remained nearly constant (Figure 1—figure supplement 6D-E).
 
@@ -372,33 +664,33 @@ To test whether deviations of single-particle MSDs from the average were due to 
 
 Simulations and experiments showed very similar distributions of single-particle MSD's (Figure 1—figure supplement 6F), suggesting that bound PBP2 molecules are indeed either immobile or persistently moving, but not found in a qualitatively different slowly-moving state.
 
-## Calculation of the unbinding rate based on fluorescence-lifetime measurements
+### Calculation of the unbinding rate based on fluorescence-lifetime measurements
 
-To obtain the unbinding rate kbd in non-treated or A22-treated cells we measured lifetime distributions of tracks fn,τ obtained with 1 s exposure time and different time intervals τ = 1 s or 12 s (Figure 2). Here, n is the number of steps a track is observed corresponding to the lifetime t=nτ. At first, we assume two random processes to contribute to particle loss: GFP bleaching with a probability pb per time frame, and a second process with an apparent track termination rate ka, corresponding to a termination probability pa=1-exp-kaτ.
+To obtain the unbinding rate kbd in non-treated or A22-treated cells we measured lifetime distributions of tracks $fn,\tau$ obtained with 1 s exposure time and different time intervals $\tau$ = 1 s or 12 s (Figure 2). Here, n is the number of steps a track is observed corresponding to the lifetime $t=n\tau$. At first, we assume two random processes to contribute to particle loss: GFP bleaching with a probability pb per time frame, and a second process with an apparent track termination rate ka, corresponding to a termination probability $p_{a}=1-exp-k_{a}\tau$.
 
 For A22-treated cells, ka is caused by unbinding only, that is, kbd = ka. For non-A22-treated cells, ka subsumes unbinding and particles leaving the field of view due to persistent motion. While the probability of molecules leaving the field of view is not independent of track duration, this assumption does not affect our calculation of kbd, as we will see below.
 
 For both conditions (-A22, +A22), we simultaneously fit the two lifetime distributions to the above model, considering tracks between 3 to 7 steps (4–8 localizations). For A22-treated cells we obtained pb = 0.43 ± 0.08 and ka = kbd = 0.021±0.008 s−1. The unbinding rate corresponds to an average lifetime of the bound state of 48 ± 18 s.
 
-For non-A22-treated cells we obtained pb = 0.39 ± 0.08 and ka = 0.035 ± 0.007 s−1. To estimate the contribution of persistent motion to the apparent unbinding rate, we then conducted simulations of bound molecules transitioning between persistent and immobile states: Molecules started from random positions within the field of view (width 600 nm) either moving persistently with speed of v =±14 nm/s perpendicular to the central axis, or resting immobile. Transitions between the two states occurred at experimental rates kip and kpi, respectively. The probability of bleaching was set equal to pb. In a second set of simulations, we changed either of the two rates to maintain the measured persistent fraction of p=80%, that is, either kipcorr=kpip/1-p or kpicorr=kip1-p/p (Figure 2—figure supplement 1). We then measured track-length distributions from simulations with different unbinding rates kbd to infer the range of unbinding rates kbd compatible with the experimentally obtained apparent termination rate ka (Figure 2—figure supplement 1).
+For non-A22-treated cells we obtained pb = 0.39 ± 0.08 and ka = 0.035 ± 0.007 s−1. To estimate the contribution of persistent motion to the apparent unbinding rate, we then conducted simulations of bound molecules transitioning between persistent and immobile states: Molecules started from random positions within the field of view (width 600 nm) either moving persistently with speed of v =±14 nm/s perpendicular to the central axis, or resting immobile. Transitions between the two states occurred at experimental rates kip and kpi, respectively. The probability of bleaching was set equal to pb. In a second set of simulations, we changed either of the two rates to maintain the measured persistent fraction of p=80%, that is, either $k_{ip}^{corr}=k_{pi}p/1-p$ or $k_{pi}^{corr}=k_{ip}1-p/p$ (Figure 2—figure supplement 1). We then measured track-length distributions from simulations with different unbinding rates kbd to infer the range of unbinding rates kbd compatible with the experimentally obtained apparent termination rate ka (Figure 2—figure supplement 1).
 
 In both conditions, experimental lifetime distributions of 1 s data are dominated by bleaching. Therefore, the time-dependent process of persistent molecules leaving the field of view only affects the 12 s distributions. While those distributions are not perfectly exponential, we could still fit them by an exponential function over the window of 3 to 7 steps, considered here.
 
-## Estimate of the number of MreB filaments per cell
+### Estimate of the number of MreB filaments per cell
 
 To estimate the number of MreB filaments we assume for simplicity that all MreB proteins of the cell are part of dimers of MreB protofilaments (Salje et al., 2011). A substantial fraction of proteins is found as cytoplasmic monomers. Our estimate is therefore rather conservative. Previous measurements suggest that there is a broad distribution of filament lengths with many filaments as long as 1 um (Ouzounov et al., 2016). As a conservative estimate we assume that all filaments are 100 nm in length and have a repeat length of 5 nm (Salje et al., 2011). Each of the idealized filaments therefore contains 40 monomers. With an average of 2000 or 11000 proteins per cell in poor or rich growth media, respectively (Li et al., 2014) the cytoplasmic membrane is decorated with up to 50–200 filaments according to this simple model.
 
-## Measuring transitions from diffusive to bound states (Bound-Molecule FRAP)
+### Measuring transitions from diffusive to bound states (Bound-Molecule FRAP)
 
 In order to determine the transition rate from the diffusive to the bound state kdb we measured the bound fraction at different time points after bleaching the field of view, conceptually similarly to classical FRAP (fluorescence recovery after photobleaching) experiments. In a first step we aimed to activate all PAmCherry fluorophores in the TIRF field of view with a 1.5 s exposure of 10-fold increased UV intensity compared to our standard protocol (see above). We introduced a waiting time of 2 s in the dark in order to let diffusive photo activated PBP2 molecules escape the field of view. Then, we photo bleached for 4 s with normal excitation intensity. After a recovery period of 0–10 min in the dark, we acquired images in high-frequency mode without any additional photo activation for a duration of 48 s. In this way, we were able detect PAmCherry-PBP2 molecules, which were activated in the first step, which were able to escape the field of view during the 2 s pause, and which then reentered the field of view, where they either remained diffusive or bound to their substrate.
 
 For finding bound fractions as reported in Figure 4B, we fixed D1 = 0.02 and D2 = 0.06 which are the diffusion constants found in the reference state (A22-treated cells with 20 ug/ml for 30 min) in order to avoid fluctuations in population sizes.
 
-## Estimation of the timescale of molecules leaving the TIR field of view due to persistent motion
+### Estimation of the timescale of molecules leaving the TIR field of view due to persistent motion
 
 To estimate the average time it takes a molecule that bound randomly in the field of view to leave the field of view through persistent motion, we conducted simulations identical to those in 'Calculation of the unbinding rate based on fluorescence-lifetime measurements', ignoring the effect of bleaching. Specifically, bound molecules were initially assigned to be immobile before transitioning between immobile and persistently moving states according to the experimentally determined rates kip and kpi. Persistently moving molecules moved with a the experimentally determined average speed of 14 nm/s in a random direction, while immobile molecules remained at their current locations. According to this model it takes 45 s on average for a molecule to leave the field of view through persistent motion. This time is four times smaller than the time it takes an initially diffusive molecule to bind. We therefore reasoned that the rapid escape of bound molecules through persistent motion is responsible for the FRAP curve of non-A22-treated cells to not show recovery.
 
-## Quantification of expression level from fluorescence
+### Quantification of expression level from fluorescence
 
 For PAmCherry-PBP2 we counted the number of fluorescent spots observed per cell after a single activation pulse of the UV laser. For the comparison between native and overexpression levels see Figure 1—figure supplement 1D.
 
@@ -406,33 +698,51 @@ We quantified the different levels of msfGFP-PBP2 obtained on microscope 2 (see 
 
 For comparing the number of bound molecules: We compared PAmCherry-PBP2 track densities between native and overexpression levels. To collecting tracks, we used same activation power for the two strains and acquired five consecutive images with an exposure time of 1 s. Then, we did peak detection and tracking as described in 'PBP2 tracking'. We selected tracks with at least three localizations to discard any mis-annotations. Density of tracks is than found by dividing the number of tracks by the area in the field of view covered with cells (Figure 1—figure supplement 7C).
 
-## Calculation of the stoichiometry between RodA and bound PBP2 molecules
+### Calculation of the stoichiometry between RodA and bound PBP2 molecules
 
 For the stoichiometry between RodA and PBP2 in wildtype cells, we used literature values obtained by ribosome profiling (Li et al., 2014). In those measurements, the stoichiometry is 1.34 and 1.36 in poor (minimal medium + glucose) and rich growth media (rich defined media), respectively. We thus assume that the mean stoichiometry of 1.35 holds for wildtype cells in our intermediate growth medium (minimal medium+glucose+casamino acids).
 
-In the RodA depletion strain and in the parent PAmCherry-PBP2 overexpression strain, PBP2 levels are about 9-fold higher than in MG1655 according to mass spectrometry, while RodA levels are 1.5-fold above wildtype levels. However, fluorescence measurements suggest that the increase of PAmCherry-PBP2 with respect to TKL130 is only about three-fold, while PAmCherry-PBP2 is expressed between one- to two-fold above wildtype PBP2 (MG1655) in TKL130 depending on the measurement (Bocillin, DIA, PRM). Assuming that functional PAmCherry-PBP2 levels are equal to PBP2 levels in MG1655 as a conservative estimate, we then calculated the stoichiometry of PAmCherry-PBP2 and RodA in the overexpression strain according to NRodA0/N= 1.35/3 = 0.45, where NRodA and N are the numbers of RodA and PBP2 molecules per cell, respectively.
+In the RodA depletion strain and in the parent PAmCherry-PBP2 overexpression strain, PBP2 levels are about 9-fold higher than in MG1655 according to mass spectrometry, while RodA levels are 1.5-fold above wildtype levels. However, fluorescence measurements suggest that the increase of PAmCherry-PBP2 with respect to TKL130 is only about three-fold, while PAmCherry-PBP2 is expressed between one- to two-fold above wildtype PBP2 (MG1655) in TKL130 depending on the measurement (Bocillin, DIA, PRM). Assuming that functional PAmCherry-PBP2 levels are equal to PBP2 levels in MG1655 as a conservative estimate, we then calculated the stoichiometry of PAmCherry-PBP2 and RodA in the overexpression strain according to $N_{RodA}^{0}/N=1.35/3=0.45$, where NRodA and N are the numbers of RodA and PBP2 molecules per cell, respectively.
 
-Upon CRISPRi-based repression, we estimate that RodA levels go down as a function of time t according toNRodA(t)=NRodA01-f2-t/td+f,where td=90 min is the doubling time and f=0.1 is the relative residual expression level of mCherry-PBP2 after CRISPRi-based repression of the mCherry-mrdA-mrdB operon during steady-state growth (Vigouroux et al., 2018). This strain is equal except for the differences between PAmCherry and mCherry and for the overexpression of PBP2 from the pKC128 plasmid. We then made the conservative estimate that RodA only started to drop 4h after inducing dCas9 due to any unanticipated delay of dCas9 activity. 5h after induction we observed a significant increase in cell diameter, suggesting that RodA levels had already fallen well below wildtype levels.
+Upon CRISPRi-based repression, we estimate that RodA levels go down as a function of time t according to
 
-Accordingly, we found that NRodA/N=0.1. With a bound fraction of b=0.19±0.03, we then obtain the ratio between RodA and bound PBP2 molecules of NRodA/(bN)=0.5±0.1. Thus, there is likely less than one RodA molecule for every bound PBP2 molecule.
+$$
+N_{RodA}(t)=N_{RodA}^{0}1-f2^{-t/t_{d}}+f,
+$$
 
-## Model to test the contribution of diffusing PBP2 molecules to rod-complex activity
+where $t_{d}=90min$ is the doubling time and $f=0.1$ is the relative residual expression level of mCherry-PBP2 after CRISPRi-based repression of the mCherry-mrdA-mrdB operon during steady-state growth (Vigouroux et al., 2018). This strain is equal except for the differences between PAmCherry and mCherry and for the overexpression of PBP2 from the pKC128 plasmid. We then made the conservative estimate that RodA only started to drop 4h after inducing dCas9 due to any unanticipated delay of dCas9 activity. 5h after induction we observed a significant increase in cell diameter, suggesting that RodA levels had already fallen well below wildtype levels.
 
-Cross-links with neighboring glycan strands are formed every other di-sugar subunit. Each subunit is about 1 nm long (Boal and Boal, 2012). Thus, the rate of transpeptidation corresponding to a high but common speed of MreB of 30 nm/s is λ = 15/s. Lee et al. argued that after forming one cross link, PBP2 would detach and diffuse in the cell envelope to find a new site for cell-wall cross-linking (Lee et al., 2014).
+Accordingly, we found that $N_{RodA}/N=0.1$. With a bound fraction of $b=0.19\pm0.03$, we then obtain the ratio between RodA and bound PBP2 molecules of $N_{RodA}/(bN)=0.5\pm0.1$. Thus, there is likely less than one RodA molecule for every bound PBP2 molecule.
+
+### Model to test the contribution of diffusing PBP2 molecules to rod-complex activity
+
+Cross-links with neighboring glycan strands are formed every other di-sugar subunit. Each subunit is about 1 nm long (Boal and Boal, 2012). Thus, the rate of transpeptidation corresponding to a high but common speed of MreB of 30 nm/s is $\lambda$ = 15/s. Lee et al. argued that after forming one cross link, PBP2 would detach and diffuse in the cell envelope to find a new site for cell-wall cross-linking (Lee et al., 2014).
 
 The number of PBP2 enzymes in the cell is about between 100–300 in nutrient-rich medium and 60–75 in poor medium according to radiolabeling (Dougherty et al., 1996) or ribosome profiling (Li et al., 2014). We thus wondered whether free diffusion of such a small number of enzymes could account for the experimentally observed rate of cross-link formation, or whether free diffusion would limit this process. Alternatively, we also considered that molecules underwent facilitated diffusion along one-dimensional tracks such as the cytoskeleton MreB (Oswald et al., 2016), similarly to the phenomenon of transcription factors searching their target on chromosomal DNA (Mirny et al., 2009).
 
 We conducted overdamped Brownian-dynamics simulations of N = 100 enzymes [interpolating between measurements made for poor and rich media (Dougherty et al., 1996; Li et al., 2014) in a rectangular domain of 3 × 3 um with periodic boundary conditions in x- and y-directions, thus approximating the cylindrical surface of a rod-like E. coli bacterium of 1 um width and 3 um length (Figure 1—figure supplement 1B) and ignoring the shape of the cell poles.
 
-The overdamped Brownian motion of PBP2 in our model is governed by the Langevin equation for its positionr˙=Dζwhere the dot denotes a time derivative, D = 0.06 um2/s is the experimental diffusion constant, and ζ is the zero mean Gaussian white noise random displacement originating from the solvent. Its variance is given byζ(t)ζ(t′)¯=2δijδ(t−t′), i,j=x,y,where the bar denote a noise average.
+The overdamped Brownian motion of PBP2 in our model is governed by the Langevin equation for its position
 
-A number of n = 10 circular cross-linking sites of diameter a = 10 nm are placed at random locations in the rectangular domain. Once a diffusing molecule hits any of the cross-linking sites, a cross-linking event is registered to occur. Note, that this model is based on the conservative estimate that every encounter between enzyme and cross-linking site leads to a successful reaction. To prevent rapid return of an enzyme to the same site we introduce a deterministic latency time toff after every encounter during which an enzyme can diffuse but not facilitate a reaction. This latency time could reflect the typical time it takes to conduct one reaction or a combination of different microscopic effects. The reaction rate per site γ is then calculated as the mean number of enzyme-site encounters per site per total simulated time.
+$$
+r˙=Dζ
+$$
+
+where the dot denotes a time derivative, D = 0.06 um2/s is the experimental diffusion constant, and $ζ$ is the zero mean Gaussian white noise random displacement originating from the solvent. Its variance is given by
+
+$$
+ζ(t)ζ(t^{′})¯=2\delta_{ij}\delta(t−t^{′}), i,j=x,y,
+$$
+
+where the bar denote a noise average.
+
+A number of n = 10 circular cross-linking sites of diameter a = 10 nm are placed at random locations in the rectangular domain. Once a diffusing molecule hits any of the cross-linking sites, a cross-linking event is registered to occur. Note, that this model is based on the conservative estimate that every encounter between enzyme and cross-linking site leads to a successful reaction. To prevent rapid return of an enzyme to the same site we introduce a deterministic latency time toff after every encounter during which an enzyme can diffuse but not facilitate a reaction. This latency time could reflect the typical time it takes to conduct one reaction or a combination of different microscopic effects. The reaction rate per site $\gamma$ is then calculated as the mean number of enzyme-site encounters per site per total simulated time.
 
 We consider latency times larger than 0.1 ms (Figure 7B), a time that is needed for a PBP2 enzyme to explore an area similar to the size of an enzyme (5 nm). In this regime, the encounter rate depends only weakly on toff (Figure 7B). Thus, only a minor fraction of enzymes re-encounters the same site shortly after leaving it (Figure 7C). Notably, the effect of toff on rebinding is much weaker than in the previously studied cases of finding a membrane receptor from the cytoplasm or of binding a receptor in the 3D bulk (Mugler et al., 2012), where the probability of rebinding decays algebraically with the latency time for short times and exponentially for long times. Results are nearly independent of target numbers n (not shown).
 
 We next considered the possibility that PBP2 undergoes facilitated diffusion along one-dimensional tracks, such as MreB filaments: MreB forms circumferentially oriented filaments of up to 1 um in length (Ouzounov et al., 2016). PBP2 enzymes and other cell-wall proteins interact with MreB filaments (Kruse et al., 2004; Morgenstein et al., 2015), and PBP2 was observed to partially co-localize with MreB filaments (Lee et al., 2014). To test the possible influence of linear tracks on the encounter rate we extended the model introduced above by adding unidirectional filaments of length l to every rod-complex site (filaments are oriented along the y-axis). PBP2 molecules cannot cross filaments. Instead, a PBP2 molecules that encounters a filament, diffuses along the filament with the same diffusion constant D until it either a) hits the reaction site, b) reaches one of the two filament ends and returns to 2D diffusion, or c) is randomly displaced from the filament by an amount ∆x = 2 a with rate koff. Only after hitting the target is an enzyme inactive for the latency time toff.
 
-## Western blotting
+### Western blotting
 
 In order to estimate the relative amount of msfGFP-PBP2 in different strains or with different induction levels, three independent preparations of the membrane protein fraction of AV127 and TU230(attLHC943) were analyzed by western blot using a GFP primary antibody.
 
@@ -440,35 +750,35 @@ Cells were grown overnight in LB at 37°C and diluted 1/400 into 15 ml of M63A w
 
 The protein concentrations were determined using a Bradford-based Protein Assay (5000006, Bio-Rad) according to the instructions. Membrane protein fractions were adjusted to the same concentration with 1X PBS. 75 μl of the membrane protein extract was mixed with 25 μl of Laemmli sample buffer 4X (#1610747, Bio-Rad). Ultimately, approx. 14 μg of proteins for each sample were loaded and separated on 10% SDS-PAGE gels (Miniprotean TGX, Bio-rad). After migration, the proteins were transferred on PVDF membranes. The membranes were incubated for 1 hr in TRIS-buffered saline, 0,1% Tween 20 (TBS-T) with 3% milk at room temperature and incubated in TBS-T milk 3% with anti-GFP antibodies (1/10000 dilution) ON at 4°C. Membranes were then washed three times with TBS-T and incubated for 1 hr with the secondary antibody tagged with horseradish peroxidase (HRP) (Goat anti-rabbit #172 1019, Bio-Rad) at room temperature. Unbound secondary antibodies were again washed out with three TBS-T washes. Signal was revealed using ECL solution (RPN2232, Amersham) and blots were imaged. Relative fold-change in signal intensity was measured in ImageJ.
 
-## PBP2 Mass-spectrometry
+### PBP2 Mass-spectrometry
 
 To quantify relative changes of protein levels between conditions and strains, we used Data Independent Acquisitions (DIA) following Bruderer et al. (2017). For absolute quantification of PBP2 levels, we used a targeted proteomics approach by Parallel Reaction Monitoring (PRM) (Bourmaud et al., 2016; Gallien et al., 2012; Peterson et al., 2012).
 
-## Preparation of E. coli whole protein extracts
+### Preparation of E. coli whole protein extracts
 
 Cells were collected by centrifugation (4000 g, 10 min at 4°C) around OD600 0.15. For absolute quantification of PBP2, an aliquot part was taken from each culture in order to determine cell number by colony counting. Supernatant was removed and cell pellets were flash-freeze in liquid nitrogen and stored at −80°C. Cells were suspended in 250 μl of Urea buffer 8M (Sigma U4883). Cooled cells were lysed by sonication (Fisherbrand FB120) (alternating 3 cycles of 30 s ON with 40% amplitude and 15 s OFF to cool down the sample). Protein concentration was determined using a Bradford-based colorimetric assay (Bio-Rad 5000006; Bradford, 1976) with known concentrations of bovine serum albumin (Sigma) as a standard. Proteins samples were diluted with 2x phosphate buffered saline (PBS) in order to decrease Urea concentration and be compatible with the colorimetric assay. For the quantification of absolute numbers of PBP2 we used colony counting and measured protein concentration led, which resulted in an average of 105 fg of proteins per cell.
 
-## Digestion of proteins
+#### Digestion of proteins
 
 All protein samples were denatured in 8 M urea in Tris HCl 100 mM pH 8.0. Proteins disulfide bonds were reduced with 5 mM tris (2-carboxyethyl)phosphine (TCEP) for 20 min at 23° C and further alkylated with 20 mM iodoacetamide for 30 min at room temperature in the dark. Subsequently, LysC (Promega) was added for the first digestion step (protein to Lys-C ratio = 80:1) for 3 hr at 30° C. Then the sample was diluted to 1 M urea with 100 mM Tris pH 8.0, and trypsin (Promega) was added to the sample at a ratio of 50:1(w/w) of protein to enzyme for 8 hr at 37° C. Proteolysis was stopped by adding 1% formic acid (FA). Resulting peptides were desalted using Sep-Pak SPE cartridge (Waters) according to manufacturer instructions. Peptides elution was done using a 50% acetonitrile (ACN), 0.1% FA buffer. Eluted peptides were lyophilized and then stored until use.
 
 For Data Independent Acquisitions (DIA) and Parallel Reaction Monitoring (PRM) (see below), iRT peptides (Biognosys) were spiked into all samples as recommended by manufacturer.
 
-## Peptide fractionation for spectral library
+#### Peptide fractionation for spectral library
 
 Peptide fractionation was done using poly(styrenedivinylbenzene) reverse phase sulfonate (SDB-RPS) stage-tips method as described in Kulak et al. (2014); Rappsilber et al. (2007). Briefly, 3 SDB-RPS Empore discs were stacked on a P200 tip and used to fractionate 30 µg of peptides. Four serial elutions were applied as following: elution 1 (80mM Ammonium formate, 20% (v/v) ACN, 0.5% (v/v) FA), elution 2 (110mM Ammonium formate, 35% (v/v) ACN, 0.5% (v/v) FA), elution 3 (150mM Ammonium formate, 50% (v/v) ACN, 0.5% (v/v) FA) and elution 4 (80% (v/v) ACN, 5% (v/v) ammonium hydroxide).
 
 All fractions were dried and resuspended in 0.1% formic acid before injection. For all fractions, iRT peptides were spiked as recommended by Biognosys.
 
-## LC-MS data acquisitions
+### LC-MS data acquisitions
 
-## Data Independent Acquisitions (DIA)
+#### Data Independent Acquisitions (DIA)
 
 LC-MS/SM analysis of digested peptides was performed on an Orbitrap Q Exactive HF mass spectrometer (Thermo Fisher Scientific, Bremen) coupled to an EASY-nLC 1200 (Thermo Fisher Scientific). Peptides were loaded and separated at 250 nl/min on a home-made C18 50 cm capillary column picotip silica emitter tip (75 μm diameter filled with 1.9 μm Reprosil-Pur Basic C18-HD resin, (Dr. Maisch GmbH, Ammerbuch-Entringen, Germany)) equilibrated in solvent A (2% ACN, 0.1% FA). Peptides were eluted using a gradient of solvent B (80% ACN, 0.1% FA) from 3% to 6% in 5 min, 6% to 29% in 130 min, 29% to 56% in 26 min, 56% to 90% in 5 min (total length of the chromatographic run was 180 min including high ACN level steps and column regeneration). Mass spectra were acquired in data-independent acquisition mode with the XCalibur 4.1.31.9 software (Thermo Fisher Scientific, Bremen).
 
 Each cycle was built up as follows: one full MS scan at resolution 30 000 (scan range between 400 and 1200 m/z), AGC was set at 3*106, ion trap was set at 50 ms. All MS1 was followed by 40 isolation windows of 20 m/z, covering the MS1 range from 400 m/z to 1200 m/z. The AGC target was 2*105, and NCE was set to 27. All acquisitions were done in positive and profile mode.
 
-## Parallel Reaction Monitoring acquisitions for absolute quantification of PBP2 (PRM)
+#### Parallel Reaction Monitoring acquisitions for absolute quantification of PBP2 (PRM)
 
 Peptides chosen and used for absolute quantification of PBP2 were based on the FASTA sequence obtained from UniprotKB database (UniProt Consortium, 2015) and MS evidence of identification. Peptides sequences are SGTAQVFGLK and VDNVQQTLDALR (Aqua UltimateHeavy, Thermo Fisher Scientific). Targeted peptides and their heavy forms were imported into Skyline (MacLean et al., 2010) to generate precursor ion inclusion list that also contained instrument control parameters for Xcalibur to detect peptides using PRM-MS. Information on iRT peptides (Biognosys) were also generated.
 
@@ -476,9 +786,9 @@ Heavy peptides synthetized from PBP2 sequence were spiked at 16 fmol.µl−1 in 
 
 PRM was performed on an Orbitrap Q Exactive HF mass spectrometer (Thermo Fisher Scientific, Bremen) coupled to an EASY-nLC 1200 (Thermo Fisher Scientific). Peptides were loaded and separated at 250 nl.min−1 on a home-made C18 50 cm capillary column picotip silica emitter tip (75 μm diameter filled with 1.9 μm Reprosil-Pur Basic C18-HD resin, (Dr. Maisch GmbH, Ammerbuch-Entringen, Germany) equilibrated in solvent A (2% ACN, 0.1% FA). Peptides were eluted using a gradient of solvent B (80% ACN, 0.1% FA) from 5% to 10% in 1 min, 10% to 30% in 82 min, 30% to 50% in 5 min, 50% to 95% in 5 min (total length of the chromatographic run was 105 min including high ACN level steps and column regeneration). Mass spectra were acquired XCalibur 4.1.31.9 software (Thermo Fisher Scientific, Bremen). The acquisition method combined a full scan method with a time‐scheduled sequential PRM method. For the full MS, a scan range of 350 to 1500 m/z, an orbitrap resolution of 60000, and an AGC value of a 3*106 were used. An orbitrap resolution of 60000, a maximum IT set at 110 ms, an isolation window selection of 1.2 m/z, AGC target was 2*105 and NCE fixed at 28 were used. Targeted, heavy and retention time peptides (iRT peptides, Biognosys) were listed in an inclusion list and monitored.
 
-## Data analysis
+### Data analysis
 
-## Data analysis for spectrum library building and DDA analysis of Co-IP
+#### Data analysis for spectrum library building and DDA analysis of Co-IP
 
 For spectral library purposes and DDA experiments, MaxQuant (Tyanova et al., 2016a) 1.5.5.3 was used. Raw data were analyzed against an E. coli database (6071 entries, downloaded from Uniprot on 10/03/2016).
 
@@ -486,10 +796,10 @@ The following search parameters were applied: carbamidomethylation of cysteines 
 
 Data analysis was done mainly using Excel and Perseus environment (Tyanova et al., 2016b).
 
-## Data analysis for DIA acquisitions
+#### Data analysis for DIA acquisitions
 
 DIA experiments were analyzed using Spectronaut X (v. 11 Biognosys AG). Dynamic mass tolerance at the MS1 and MS2 levels was employed. The XIC RT Extraction Window was set to Dynamic with a correction factor of 1. Calibration mode was set to automatic with nonlinear iRT calibration and precision iRT enabled. Decoys were generated using the scrambled method and a dynamic limit (default settings). P value estimation was performed using a kernel density estimator. Interference correction was enabled with no proteotypicity filter. Major grouping was by Protein-Group ID, and minor grouping was by stripped sequence. The major group quantity was mean peptide quantity. The major group top N was enabled with a minimum of 1 and a maximum of 3. Minor group quantity was mean precursor quantity. The minor group top N was enabled with a minimum of 1 and a maximum of 3. The quantity MS-Level was MS2, and quantity type was area. Q value was used for data filtering. Cross run normalization was enabled with Q value sparse row selection and local normalization. The default labeling type was label-free with no profiling strategy and unify peptide peaks not enabled. The protein inference workflow was set to automatic.
 
-## PRM data analysis
+#### PRM data analysis
 
 Raw mass spectrometry data were exported to Skyline-daily (version 4.1.1.18179) for identification of transitions and peak area integration. Data were exported in. csv file format and analyzed in Excel.

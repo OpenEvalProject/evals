@@ -32,33 +32,181 @@ Using this method, up to 16 lamellae can be generated in a 10 hr session (Medei
 
 ## Results
 
-## Setup of a sequential automated milling session
+### Setup of a sequential automated milling session
 
 Complementary to efforts from the de Marco and Raunser/Plitzko labs (Buckley et al., 2020; Tacke et al., 2020), here we report an automated sequential FIB milling method aimed at preparing lamellae for subsequent cryoET imaging. Automation was implemented on two separate Zeiss Crossbeam 550 FIB-SEM instruments, using routines that are available in the SmartFIB software package (Zeiss Microscopy GmbH, Oberkochen, Germany). Particularly important are the modules for stage backlash and drift correction, which are critical for reliable targeting of lamella preparation sites. This allows the user to set up all milling targets and then execute milling in an unattended, fully automated manner.
 
 To begin an automated milling session, FIB current alignments are verified to ensure accurate milling (Figure 1A). Grids are then loaded into the FIB-SEM instrument. To simplify navigation and target identification, an overview image of the SEM grid is captured and linked to the stage coordinates as described in the methods. Using the overview image for stage navigation, the first milling site is identified and centered in both the SEM and FIB views (Figure 1B). To ensure accurate targeting of the milling site, mechanical stage movement errors were reduced by implementing backlash correction for all autonomous stage movements. Next, a series of operations is executed before saving the targets final position (Figure 1C–E). First, stage backlash correction is manually executed and the target is re-centered in the FIB image (Figure 1C). Second, the target’s stage coordinates are saved to the stage navigation menu. Third, the stage is manually moved off-target and autonomously returned to the saved target location (Figure 1D). In case the target is not properly centered, the above three steps are repeated (Figure 1E), otherwise the user can proceed.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig1-v2.jpg)
+
+**Figure 1.:** (A) FIB currents are aligned and calibrated, and the sample is loaded into the FIB-SEM instrument. (B) A target cell is identified on the grid with the SEM and FIB. (C) To correct for errors in mechanical stage movements, backlash correction of the stage is performed. The resulting stage location is saved in the stage navigator. (D) The stage is randomly moved out of position by the user. Using the saved coordinates in the stage navigator, the stage is autonomously moved back to the target. (E) The accuracy of this autonomous stage movement is determined by the user. If the target is not centered in the FIB image, backlash correction is repeated until accurate targeting is achieved (C–E). (F/F’) Rough milling, polishing and drift correction patterns are placed onto the image. Rough milling and polishing patterns are saved separately to the queue. The procedure (B–F’) is repeated to select additional targets. (G/H) Rough milling and lamellae polishing are executed automatically. (I) The grids with milled lamellae are removed and stored.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The sample is loaded into the FIB-SEM instrument. (B) A target is centered in the FIB image. (C–E ) The first pair of rough milling patterns is placed on the target and milling is executed (C). Lamellae milling is observed via a live FIB view to determine when a milling step is completed. The same procedure is repeated for the second (D) and third (E) rough milling patterns. After rough milling of the target is completed, additional targets can be milled by repeating steps (B–E). (F) Rough-milled lamellae are polished with a fourth set of milling patterns. Polishing is repeated for all rough-milled lamellae. (G) The grids with milled lamellae are removed and stored.
+
 Next, patterns with specific currents for rough milling (e.g. 700, 300 and 100 pA) and polishing (e.g. 50 pA) are manually placed onto the target’s FIB image (Figure 1F/F’). This is achieved by either generating a new set of patterns with user-defined pattern size, milling depth, milling current and material type; or by choosing a previously designed set of patterns, to reproduce a milling approach and decrease the needed setup time. To further improve the accuracy of targeting, we also incorporated an additional targeting step based on drift correction (Figure 1F/F’) for both rough milling and polishing. To implement this, each set of milling patterns receives a drift correction box, with user-defined dimensions, which is manually placed in a location close to the target. By capturing and saving an image of the area encompassed by the drift correction box, the milling patterns are anchored to their positions on the target.
 
 After separately saving the first target’s rough milling and polishing patterns to the queue, further targets are added by repeating the described procedure. This setup process takes ~9 min per target.
 
-## Processes during a sequential automated milling session
+### Processes during a sequential automated milling session
 
 To begin sequential automation, exposure of rough milling patterns saved in the queue is initiated (Figure 1G). For each set of patterns, the stage automatically moves to the target position and executes stage backlash correction. Next, image shifts are determined between the drift correction image that was recorded during the setup procedure and a drift correction image that is recorded after arriving at the target location. Any existing shifts are compensated for, using FIB beam shifts, to achieve precise milling at the target location. The rough milling patterns are then exposed, from the highest to the lowest current. Previously, manual milling methods used a real-time view in order to visually determine the time that a FIB current needed to cut through the specimen by visual end point detection. In our automated approach, the exposure time is calculated by the software using a user-specified milling depth, milling current, pattern size and material type. After exposing the rough milling patterns for the first target, the procedure is automatically repeated for the remaining targets in the queue.
 
 Subsequently, the user can decide whether to perform polishing for all targets in a manual or automated manner (Figure 1H). The automation of polishing follows the same routine as described above.
 
-## Application of sequential automated milling
+### Application of sequential automated milling
 
 During the development of this method, we tested automated sequential milling on two separate Zeiss Crossbeam 550 instruments using the model organisms Saccharomyces cerevisiae strain SK1 (hereafter ‘yeast’) and the multicellular cyanobacteria Anabaena sp. PCC 7120 (hereafter ‘cyanobacteria’) in nine independent milling sessions (sessions A-I, Table 1). In these sessions, we aimed to generate between 5 and 20 lamellae (Figure 2). Rough milling success, as defined by the presence of an intact lamella at the targeted location after rough milling, was 98% (n = 123). The only failures in lamellae production were the result of user error, when rough milling was accidentally executed on the same target twice and on a grid bar (session F and I, respectively). With sessions B.1 and B.2, we also demonstrated the robustness of the targeting routine by successfully generating 10 lamellae spread across two grids containing two different samples (Table 1).
 
+**Table 1.**
+ Overview and success rates of milling sessions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Session</th>
+      <th>Sample Type</th>
+      <th>Rough Milling</th>
+      <th>Rough Milling Success</th>
+      <th>Polishing</th>
+      <th>Polishing Success</th>
+      <th>Instrument #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>Cyanobacteria</td>
+      <td>Automated</td>
+      <td>10/10</td>
+      <td>Manual</td>
+      <td>10/10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>B.1</td>
+      <td>Yeast</td>
+      <td>Automated</td>
+      <td>5/5</td>
+      <td>Manual</td>
+      <td>5/5*</td>
+      <td rowspan="2">1</td>
+    </tr>
+    <tr>
+      <td>B.2</td>
+      <td>Cyanobacteria</td>
+      <td>Automated</td>
+      <td>5/5</td>
+      <td>Automated</td>
+      <td>5/5*</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Yeast</td>
+      <td>Automated</td>
+      <td>20/20</td>
+      <td>Automated</td>
+      <td>11/20†</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Cyanobacteria</td>
+      <td>Automated</td>
+      <td>7/7</td>
+      <td>Automated</td>
+      <td>7/7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>Cyanobacteria</td>
+      <td>Automated</td>
+      <td>7/7</td>
+      <td>Automated</td>
+      <td>7/7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Cyanobacteria</td>
+      <td>Automated</td>
+      <td>18/19‡</td>
+      <td>Automated</td>
+      <td>16/18</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Yeast</td>
+      <td>Automated</td>
+      <td>10/10</td>
+      <td>Automated</td>
+      <td>10/10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>Yeast</td>
+      <td>Automated</td>
+      <td>20/20</td>
+      <td>Automated</td>
+      <td>18/20</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Yeast</td>
+      <td>Automated</td>
+      <td>19/20§</td>
+      <td>Automated</td>
+      <td>19/19</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Total Automated</td>
+      <td>121/123 (98%)</td>
+      <td>Total Automated</td>
+      <td>93/106 (88%)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Rough milling of both B.1 and B.2 was performed in the same session.† Lamellae were left in the instrument for 10h beore polishing, leading to lamellae bending and a lower success rate.‡ User selected one target twice for rough milling, leading to a failure in rough milling.§ User accidentally milled a target on the grid bar rendering it unusable._
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig2-v2.jpg)
+
+**Figure 2.:** (A) SEM grid overview image including 20 yeast targets (asterisks) on which rough milling was performed in an automated sequential manner (session C). Bars, 200 µm. (B) Representative SEM and FIB images of yeast and cyanobacteria cells captured before and after fully automated sequential rough milling (session B.1 and B.2). Bars, 5 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Images of lamellae from yeast cells at three different stages of the workflow. The left column shows SEM images of five polished lamellae (A–E). The middle column shows TEM images of the same lamellae. The right column shows images of 4.57 nm thick slices through tomogram collected on each lamella. Bars are 10 µm in left/middle columns and 1 µm in right column.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The plot shows the distribution of the thickness values of fully automated sequential FIB-milled lamellae, as determined by cryoET imaging. The final polishing milling patterns were spaced 300 nm apart.
+
 While these results present a significant step forward in TEM lamellae preparation, we next set out to implement automated sequential lamella polishing. In a series of sessions (B.2-I), we milled between 5 and 20 targets. In total, the success rate (intact lamella detected after polishing) of automated sequential polishing was 88% (n = 106 rough lamellae). Importantly, 9 of the 13 failed polishing attempts occurred in session C in which the rough-milled lamellae were left in the FIB-SEM instrument for 10 hr before beginning automated polishing. Prior to polishing, these rough lamellae showed signs of bending, which likely resulted in failure in lamellae polishing. In fact, when we repeated session C without a delay between rough milling and polishing (sessions H and I), we did not observe bending and obtained 95% polishing success. Therefore, we find it advisable to execute rough milling and polishing in quick succession.
 
-## Assessment of sample quality
+### Assessment of sample quality
 
 In order to assess sample quality, we transferred the grids from all sessions to the cryoTEM. Of the lamellae that were generated in a fully automated manner (n = 93), 16% were lost in transfer and 3% exhibited contamination or cracks prohibiting data collection. From the collected tomograms, we determined the lamellae thicknesses to range from 117 to 379 nm when final polishing patterns are placed 300 nm apart (Figure 2—figure supplement 1 and Figure 2—figure supplement 2). A possible contributor to the range of lamellae thicknesses is minute drift during polishing. The average thickness of lamellae generated in a fully automated manner (session B.2-I; 243 nm) is comparable to the thickness of manually polished lamellae (session A/B.1; 258 nm).
 
 CryoET imaging of the lamellae generated during the automated session revealed distinct cellular features and macromolecular complexes (Figure 3). Yeast tomograms contained nuclei, nuclear pore complexes, mitochondria, endoplasmic reticula, cytoplasmic ribosomes and vacuoles. In one particular tomogram (Figure 3B/C), we observed microtubules inside the nucleus and were able to determine the number of protofilaments without averaging. Cyanobacterial tomograms showed thylakoid membranes, phycobilisomes and septal junctions (Figure 3E). To further assess sample and data quality, we performed subtomogram averaging of cyanobacterial septal junctions, which were characterized recently by a manual cryoFIB milling/cryoET approach (Weiss et al., 2019). From nine lamellae, a total of 412 subvolumes were extracted, averaged and classified in order to remove misaligned particles. The 343 remaining subvolumes were then averaged and symmetrized. The resulting structure had the same architecture as previously described, including a cap module with five arches, a plug module and a tube module (Figure 3F). Fourier shell correlation (FSC) analyses indicate that the average had a resolution that is similar to a structure that was calculated using the same number of particles extracted from tomograms generated in a previous study by manual milling (Weiss et al., 2019; Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig3-v2.jpg)
+
+**Figure 3.:** (A) CryoTEM overview image of a lamella (session H) containing three yeast cells. Red mark indicates the area imaged in (B). Bar, 5 µm. (B) A 22.85 nm thick slice through a cryo-tomogram of a yeast cell (session H) [indicated by red mark in (A)]. The tomogram shows a nuclear pore complex (NPC), nuclear envelope (NE), microtubules (MT), cytoplasm (CP), cytoplasmic ribosomes (R), mitochondria (MIT) and a putative vacuole (V). Bar, 200 nm. (C) Top view of the microtubule indicated by dashed red box in (B). From a single slice through the tomogram it is possible to identify 13 protofilaments that make up the microtubule. (D) Cross-section of the tomogram showing the microtubule in (C) inside the generated lamella. From this view, we also determined the lamella thickness to be ~284 nm. (E) Shown is a 14 nm thick slice through a cryo-tomogram of a septum between two cyanobacteria cells (session F). The thickness of the lamella was determined to be ~208 nm. Arrowheads indicate septal junctions. The inset shows a magnified view of the septal junction indicated by a red arrowhead. Other cellular features include cytoplasmic membranes (CM), phycobilisomes (PB), thylakoid membranes (TM) and septal peptidoglycan (PG). Bars, 100 nm and 25 nm (inset). (F) Subtomogram average generated by extracting 343 septal junction particles from nine tomograms and performing fivefold symmetrization. Shown are longitudinal and perpendicular slices (thickness 0.68 nm) and a surface rendering of the symmetrized average. The observed characteristic structural modules were similar to a recent study that applied manual cryoFIB milling (Weiss et al., 2019) (also see Figure 3—figure supplement 1). Bars, 25 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52286/elife-52286-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Shown is a Fourier Shell Correlation (FSC) curve (red) for the septal junction subtomogram average shown in Figure 3F (resulting from automated milling). The second curve (blue) results from a dataset published previously (Weiss et al., 2019) (resulting from manual milling) and was calculated with the same number of randomly selected subvolumes after fivefold symmetrization (n = 1715). Both approaches result in a comparable resolution estimate.
 
 ## Discussion
 
@@ -66,35 +214,64 @@ In conclusion, our automated sequential cryoFIB milling method allows for the pr
 
 ## Materials and methods
 
-## Overview of the equipment and workflow
+### Overview of the equipment and workflow
 
 The method was established and tested on two different Crossbeam 550 FIB-SEM instruments (Carl Zeiss Microscopy) equipped with copper band-cooled mechanical cryo-stages and integrated VCT500 vacuum transfer systems (Leica Microsystems). The detectors used included an InLens secondary electron detector for determining grid topology (Carl Zeiss Microscopy) and a SE2 detector for identifying milling targets and visually assessing the ice thickness (Carl Zeiss Microscopy). In our workflow, EM grids were prepared with the yeast strain Saccharomyces cerevisiae SK1 and the cyanobacterial strain Anabaena sp. PCC 7120, clipped into FIB milling Autogrids (ThermoFisher Scientific, Waltham, MA). These grids were then mounted onto a pre-tilted Autogrid holder (Medeiros et al., 2018) (Leica Microsystems GmbH, Vienna, Austria) using a VCM loading station (Leica Microsystems). With the VCT500 shuttle, the Autogrid holder was transferred to an ACE600 cryo-sputter coater (Leica Microsystems). Under cryogenic conditions the plunge-frozen sample were sputter-coated with a ~4 nm thick layer of tungsten. After sputter coating, the samples were transferred into the Crossbeam 550 using the VCT500 shuttle. In the Crossbeam 550, the gas injection system (GIS) was used to deposit an organometallic platinum precursor layer onto each grid. Automated sequential FIB milling was subsequently set up and executed. Sample preparation, plunge-freezing, Autogrid mounting, holder loading and vacuum cryo-transfer steps were executed similarly to what was described in Medeiros et al. (2018). Any deviations to the previously published protocol are described below.
 
-## Cell culture and plunge freezing
+### Cell culture and plunge freezing
 
 FIB milling tests were performed using the cyanobacterial strain Anabaena sp. PCC 7120 and the yeast strain Saccharomyces cerevisiae SK1 (Table 2). Yeast and cyanobacterial strain identities were determined according to standard microbiological procedures. The cyanobacterial cell line originates from Rippka et al. (1979). The cyanobacterial strain was grown and prepared for FIB milling as previously described in Weiss et al. (2019). The yeast strain was generated in this study. Meiotic yeast cells were cultured as previously described in Wild et al. (2019) and prepared for plunge freezing as described by Medeiros et al. (2018), with minor modifications. Briefly, yeast cells were harvested and 4 µL of cell suspension, OD600 ∼1.5, was applied on glow-discharged copper EM grids (R2/2, Quantifoil, Großlöbichau, Germany). Grids were back-blotted twice for 3–5 s each time, at 4°C with 95% humidity and plunged into liquid ethane/propane using a Vitrobot (ThermoFisher).
 
-## Equipment calibration
+**Table 2.**
+ Strains used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Identifier</th>
+      <th>Genotype</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anabaena sp. PCC7120</td>
+      <td>Cyanobacteria</td>
+      <td>Wild Type</td>
+      <td>Rippka et al. (1979)</td>
+    </tr>
+    <tr>
+      <td>Saccharomyces cerevisiae SK1</td>
+      <td>Yeast</td>
+      <td>diploid, homozygous for ndt80∆::HIS3 ho::LYS2 ura3 leu2::hisG trp1::hisG his3::hisG</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Equipment calibration
 
 To ensure that automated sequential FIB milling was successful, the Crossbeam 550 was properly aligned. While the SEM column alignments are stable and non-essential during automated milling, the FIB alignment between different currents at a given voltage (30 kV for biological cryo-samples) should be checked and optimized. Typically, this calibration is done weekly or when deemed necessary and takes roughly 60 min to complete. In case of deviation, on-the-fly adjustments are possible on a loaded cryo-sample, however, standard calibration procedures are best performed on a silicon wafer due to its structural homogeneity, which allows better evaluation of the FIB beam shape. Once inserted into the chamber, the stage was tilted by 54° to be perpendicular to the FIB beam and then moved to the working distance (i.e. coincidence point). Using the ‘spot’ function in an unexposed sample region, the beam was focused to its spot size allowing it to burn a hole into the silicon. When the current is properly calibrated, the beam will produce a spot that is round with sharp edges. This was best seen when using a mixed signal of the InLens and SE2 detector. If a beam spot had imperfections, like a tailing edge, beam parameters including focus, stigmatism and aperture alignments need to be improved and saved. After optimizing these parameters for each current, all currents were aligned against the reference current. This was best performed by positioning an easily recognizable structure, like a burnt hole, in the middle of the reference current image and then centering this feature in each of the other currents. Finally, to ensure that the currents were properly aligned, a location is imaged by each current. If properly aligned, switching between currents should not lead to focus changes or beam offsets.
 
-## Sample coating
+### Sample coating
 
 To enhance conductivity and decrease the effects of charging, the plunge-frozen sample was coated with a ~4 nm layer of tungsten. This was autonomously executed by an ACE600 sputter coating program in an argon atmosphere (8.0E-3 mbar) and with a current of 90 mA. After inserting the holder into the FIB-SEM, a protection layer of organometallic platinum precursor was deposited onto each grid to minimize the effects of curtaining. For cold deposition of platinum precursor, the holder was moved 3 mm below the coincidence point and tilted to 20°. By positioning the GIS needle above each grid and opening the GIS for 45 s, a layer of platinum precursor was deposited onto the sample. Since the GIS needle was mounted at a similar angle as the FIB column, deposition of platinum occurred preferentially on the side of the cells where the FIB beam hits the sample, ensuring the best protection. For deposition under cryo-conditions, it is essential that the heating element of the GIS needle and reservoir are turned off to keep the system at room temperature (28°C).
 
-## Stage registration
+### Stage registration
 
 To assist in the identification of targets, overview images of an entire EM grid are taken. On the Zeiss Crossbeam 550, these images can be coupled to the stage navigation. To calibrate stage registration a high-resolution (4096 × 3072 pixels, 35x magnification) overview image was taken with the SE2 detector, which provided the best information for identifying targets inside the vitrified ice and determining ice thickness. This overview image was then loaded onto the stage navigation bar and registered by correlating three distinctive points on the image to their specific positions on the stage as observed in the live SEM view. After completion, double clicking on a desired target in the navigation bar automatically moves the stage to the location of interest. In addition, backlash correction was also included for all automated stage movements, using the user preference settings of the software SmartSEM (Carl Zeiss Microscopy).
 
-## Defining milling materials
+### Defining milling materials
 
 To permit unsupervised automation of lamellae production, the Crossbeam 550 was calibrated to mill a cross-section with a specified depth through the sample. To ensure proper milling, the system needs to be calibrated for a distinct ‘material’ so that the correct milling parameters like dose are applied during milling. For cryo-TEM lamella preparation, the material ‘vitrified ice’ was created using a dose calibration of 20 mC/cm² being equivalent to a milling depth of 1 µm in cross-section mode. No attempts were made to make sample specific material types, however, this would also be possible.
 
-## Parameters for imaging and milling
+### Parameters for imaging and milling
 
 For SEM imaging, voltages from 1.9 to 5 kV and a constant current of 28 pA were used. To capture SEM images, we most commonly used the InLens detector to obtain surface information of the sample. During FIB imaging, on the other hand, a fixed voltage of 30 kV and a low current (20 pA) was used. FIB images were usually captured by using the SE2 detector, which is less sensitive to imaging-induced charging. During automated sequential milling a total of four currents were used for rough milling (700 pA, 300 pA and 100 pA) and polishing (50 pA). For milling, we defined the patterns to be executed using bi-directional and cross-section cycle mode with a 10 µm milling depth. It is important to note that the milling parameters (milling current, pattern size, milling depth, etc.) are adjustable on-the-fly to optimize each set of patterns for the target location and desired milling strategy.
 
-## Automated sequential FIB milling protocol
+### Automated sequential FIB milling protocol
 
 To generate high-quality lamellae, it was essential to prepare the FIB-SEM and sample for automated sequential milling. Preparations included checking and calibrating the FIB currents, coating the plunge-frozen sample with a layer of tungsten and organometallic platinum, and performing stage registration. Once these steps were executed, automated sequential milling was initiated by identifying and setting up milling targets.
 
@@ -102,10 +279,45 @@ The grid overview image in the stage navigator was used to identify a milling ta
 
 Once an accurate stage movement was achieved, milling patterns were placed onto a targets FIB image captured using SmartFIB. In SmartFIB, each pattern contains specific milling conditions (i.e. current, milling depth, size, shape, etc.) and a designated FIB milling location. SmartFIB allows the placing of multiple patterns with different conditions onto a single FIB image in order to perform automated milling. Patterns were placed and their properties were changed by using the SmartFIB GUI in the ‘attributes’ tab. When testing this methodology, we placed eight rectangular milling patterns: six rough milling and two polishing patterns (Table 3). The final polishing patterns were spaced 300 nm apart, since we generally expected the generated lamellae to be thinner than the specified value. To make uniform lamellae, it was also possible to save these eight patterns as a recipe, which can be dragged and dropped onto images of other milling targets. To then save these milling patterns, it was essential to separate the rough and polishing patterns. This was accomplished by deleting the polishing patterns from our recipe, saving only the rough milling patterns, undoing the deletion of the polishing patterns (using the SmartFIB ‘undo’ button), deleting all rough milling patterns and then saving only the polishing patterns.
 
+**Table 3.**
+ Dimensions and currents used for each milling pattern during automated sequential lamellae preparation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Milling Pattern #</th>
+      <th>Pattern Attributes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Milling pattern 1 and 2 (Rough Milling 1)</td>
+      <td>30 kV 700 pA 9 × 5 µm rectangle Generates 2 µm thick lamella</td>
+    </tr>
+    <tr>
+      <td>Milling Pattern 3 and 4 (Rough Milling 2)</td>
+      <td>30 kV 300 pA 8 × 2 µm rectangle Generates 1 µm thick lamella</td>
+    </tr>
+    <tr>
+      <td>Milling Pattern 5 and 6 (Rough Milling 3)</td>
+      <td>30 kV 100 pA 7.5 × 1 µm rectangle Generates 500 nm thick lamella</td>
+    </tr>
+    <tr>
+      <td>Milling Pattern 7 and 8 (Lamella Polishing)</td>
+      <td>30 kV 50 pA 7 × 0.5 µm rectangle Generates 300 nm thick lamella</td>
+    </tr>
+    <tr>
+      <td>Drift Correction Pattern (Rough Milling and Polishing)</td>
+      <td>3 × 3 µm rectangle</td>
+    </tr>
+  </tbody>
+</table>
+
 To improve the targeting accuracy of this methodology, a drift correction step was also added to each set of rough milling and polishing patterns immediately before being saved. This was done in the SmartFIB ‘attributes’ tab, by capturing and saving an image of a defined region of the FIB view. During the automated protocol SmartFIB would use this image to perform image recognition before beginning milling and compensate for small shifts (generally between 0 and 2 µm) to ensure the milling patterns are placed correctly on the target. When testing this methodology, it was important to use the same drift correction image for both the rough milling and polishing patterns. This ensured that the same region is exposed during rough milling and polishing.
 
 After saving a set of rough and polishing patterns, the described method can be repeated for further targets. For an automated protocol, about 9 min were needed to set up each target. Once satisfied with the number of targets, all rough milling recipes in the SmartFIB queue were selected and exposed. Exposure of a typical rough milling target took about 12 min. Upon completion, rough milling targets were observed using the SEM and FIB to determine their quality. To then initiate polishing, it is possible to either tick all polishing recipes and expose them, or individually move to each target using SmartFIB, take a FIB image, manually drag polishing patterns into place and expose the lamella. Polishing typically took about 4.75 min. Once all targets are polished, the lamellae are removed from the instrument and stored. Note that instrument 2 (Table 1) suffered from stage drift, which caused issues during polishing. Unfortunately, SmartFIB does not have an integrated wait time, however, using a set of low current (1–5 pA) patterns, we were able to apply a wait time of 3 min to allow the stage to settle before polishing. An overview of all the milling attempts that were performed can be found in Table 1.
 
-## Cryo-electron tomography, tomogram reconstruction and subtomogram averaging
+### Cryo-electron tomography, tomogram reconstruction and subtomogram averaging
 
 Data was collected on a Titan Krios 300kV electron microscope (ThermoFisher) equipped with a field emission gun, imaging filter (Gatan, Pleasanton, U.S.) (slit width 20 eV) and K2 or K3 direct electron detector (Gatan). To generate an overview of each grid, grid montages were collected at 135x magnification using SerialEM (Mastronarde, 2005). Cyanobacteria data was collected with UCSF Tomo (Zheng et al., 2007) at 2° increments between +60° and −60°. Data was collected at a defocus of −8 µm, total accumulated dose of ~140 e- / Å2 and pixel size of 3.38 Å. Yeast tomograms were collected using SerialEM between +60° and −60° at 2° increments with a defocus of −8 µm, total accumulated dose of ~120 e- / Å2 and pixel size of 4.57 Å. Tomogram reconstruction and subtomogram averaging was performed according to Weiss et al. (2019). Briefly, tomograms were reconstructed using the IMOD package (Kremer et al., 1996) and septal junction subtomogram averaging was performed using PEET (Nicastro et al., 2006). A total of 412 particles were extracted and averaged in a box of 44 × 44 × 44 pixels with a pixel size of 6.8 Å. PEET classification was then used to remove misaligned particles (343 final particles). 5-fold symmetry was applied to obtain the final average. The FSC (Fourier Shell Correlation) was generated by using the PEET command calcFSC.

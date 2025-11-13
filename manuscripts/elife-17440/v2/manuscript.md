@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.17440.001 Cell migration requires the cyclical assembly and disassembly of focal adhesions. Adhesion induces phosphorylation of focal adhesion proteins, including Cas (Crk-associated substrate/p130Cas/BCAR1). However, Cas phosphorylation stimulates adhesion turnover. This raises the question of how adhesion assembly occurs against opposition from phospho-Cas. Here we show that suppressor of cytokine signaling 6 (SOCS6) and Cullin 5, two components of the CRL5 SOCS6 ubiquitin ligase, inhibit Cas-dependent focal adhesion turnover at the front but not rear of migrating epithelial cells. The front focal adhesions contain phospho-Cas which recruits SOCS6. If SOCS6 cannot access focal adhesions, or if cullins or the proteasome are inhibited, adhesion disassembly is stimulated. This suggests that the localized targeting of phospho-Cas within adhesions by CRL5 SOCS6 and concurrent cullin and proteasome activity provide a negative feedback loop, ensuring that adhesion assembly predominates over disassembly at the leading edge. By this mechanism, ubiquitination provides a new level of spatio-temporal control over cell migration. DOI: http://dx.doi.org/10.7554/eLife.17440.001
+Cell migration requires the cyclical assembly and disassembly of focal adhesions. Adhesion induces phosphorylation of focal adhesion proteins, including Cas (Crk-associated substrate/p130Cas/BCAR1). However, Cas phosphorylation stimulates adhesion turnover. This raises the question of how adhesion assembly occurs against opposition from phospho-Cas. Here we show that suppressor of cytokine signaling 6 (SOCS6) and Cullin 5, two components of the CRL5SOCS6 ubiquitin ligase, inhibit Cas-dependent focal adhesion turnover at the front but not rear of migrating epithelial cells. The front focal adhesions contain phospho-Cas which recruits SOCS6. If SOCS6 cannot access focal adhesions, or if cullins or the proteasome are inhibited, adhesion disassembly is stimulated. This suggests that the localized targeting of phospho-Cas within adhesions by CRL5SOCS6 and concurrent cullin and proteasome activity provide a negative feedback loop, ensuring that adhesion assembly predominates over disassembly at the leading edge. By this mechanism, ubiquitination provides a new level of spatio-temporal control over cell migration.
 
 ## Introduction
 
@@ -29,115 +29,464 @@ Interestingly, Cas is mechanosensitive. Cytoskeletal tension induces Cas tyrosin
 
 We previously reported that Cul5 inhibits the epidermal growth factor (EGF)-independent migration of MCF10A epithelial cells (Teckchandani et al., 2014). Cul5-depleted cells migrate considerably faster than control cells and have an exaggerated leading lamellipodium bearing tiny FAs, few stress fibers and dynamic membrane ruffles. The increased migration requires Src, suggesting that CRL5 may negatively regulate pY proteins. CRL5 targets pY proteins through the SH2 domains of SOCS substrate receptors. Knock-down experiments suggested that different SOCS proteins regulate different aspects of migration, with SOCS6 targeting pYCas and inhibiting ruffling. We proposed that other SOCS proteins may target additional pY proteins to CRL5 for ubiquitination, and each different target may contribute to a distinct aspect of cell migration (Teckchandani et al., 2014).
 
-## Cul5 inhibits adhesion dynamics at the leading edge
+### Cul5 inhibits adhesion dynamics at the leading edge
 
-To investigate FA dynamics, we wounded monolayers of MCF10A cells that express low levels of EYFP-vinculin and allowed the cells to migrate in the absence of EGF. TIRF microscopy was used to detect EYFP puncta. We previously noted that migrating MCF10A cells contained large FAs and prominent stress fibers along the leading edge, which were lost following Cul5 knockdown (
+To investigate FA dynamics, we wounded monolayers of MCF10A cells that express low levels of EYFP-vinculin and allowed the cells to migrate in the absence of EGF. TIRF microscopy was used to detect EYFP puncta. We previously noted that migrating MCF10A cells contained large FAs and prominent stress fibers along the leading edge, which were lost following Cul5 knockdown (Teckchandani et al., 2014). TIRF microscopy of migrating EYFP-vinculin-expressing cells also revealed large FAs at the cell front, but also detected many much smaller FAs all across the ventral surface (Figure 1a, left). Large FAs were absent from migrating cells that had been treated with Cul5 siRNA (Figure 1a, right, see Figure 1—figure supplement 1a for knockdown efficiency). To quantify FA size, we divided the cell into front and back with a line ~ 6 µm from the leading edge (Figure 1—figure supplement 1b), and quantified the size distribution of front FAs of control and Cul5-deficient cells. While the number of large FAs at the front of control cells was not sufficient to affect the mean or median FA size, approximately 3.6% of FAs at the front of control cells were larger than 200 pixels (5 µm2), but <0.5% of FAs at the front of Cul5-deficient cells were this large (Figure 1b).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig1-v2.jpg)
 
-**Figure 1.:** Focal adhesion dynamics of control and Cul5-deficient MCF10A cells, migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin. (a) FAs visualized using TIRF microscopy of control and Cul5-deficient cells expressing EYFP-vinculin. (b) Histogram of FA sizes at the front of control (gray) and Cul5-deficient (blue) cells. All structures greater than 0.05 μm2 (two pixels) were quantified. The inset shows structures greater than 5 μm2 on an expanded scale. (c) Rainbow color representation of FA appearance and disappearance. FAs are colored according their presence during the time course, from blue to red. Only the front region of the cell is shown. (d) Individual frames from regions boxed in c. Arrowheads and arrows indicate stable and dynamic FAs, respectively. (e) Automated curve fitting to intensity/time plots for representative FAs from the front of control and Cul5-deficient cells. R2: Pearson’s correlation coefficient squared. (f) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and Cul5-deficient (blue) cells. Mean and standard error of median rates from each of 4–6 time-lapse movies are indicated. *p<0.05; ***p<0.001. Student’s t-test, two tailed, unequal variance. (f) Histogram of disassembly rate constants at the front and back of control (gray) and Cul5-deficient (blue) cells. Mean and standard error of biological replicates.DOI: http://dx.doi.org/10.7554/eLife.17440.003
+**Figure 1.:** Focal adhesion dynamics of control and Cul5-deficient MCF10A cells, migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin. (a) FAs visualized using TIRF microscopy of control and Cul5-deficient cells expressing EYFP-vinculin. (b) Histogram of FA sizes at the front of control (gray) and Cul5-deficient (blue) cells. All structures greater than 0.05 μm2 (two pixels) were quantified. The inset shows structures greater than 5 μm2 on an expanded scale. (c) Rainbow color representation of FA appearance and disappearance. FAs are colored according their presence during the time course, from blue to red. Only the front region of the cell is shown. (d) Individual frames from regions boxed in c. Arrowheads and arrows indicate stable and dynamic FAs, respectively. (e) Automated curve fitting to intensity/time plots for representative FAs from the front of control and Cul5-deficient cells. R2: Pearson’s correlation coefficient squared. (f) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and Cul5-deficient (blue) cells. Mean and standard error of median rates from each of 4–6 time-lapse movies are indicated. *p<0.05; ***p<0.001. Student’s t-test, two tailed, unequal variance. (f) Histogram of disassembly rate constants at the front and back of control (gray) and Cul5-deficient (blue) cells. Mean and standard error of biological replicates.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (a) Characterization of cells. Western blot and RT-PCR data showing expression of EYFP-vinculin, Cas and Cul5 in MCF10A cells. (b) Definition of cell front and back. Red line indicates the position of the mask, ~6 µm from the cell front at zero time that was used to define the cell front and back. Note that the area included in the cell front increases over time as the leading edge advances. (c) Automated segmentation of EYFP-vinculin fluorescence into individual FAs. Different colors outline each FA. (d) Time series for a specific FA. Images recorded at 2 min intervals. (e) Plot of FA mean intensity against time, with automated curve fitting to estimate first-order rate constants for assembly and disassembly.DOI: http://dx.doi.org/10.7554/eLife.17440.004
+**Figure 1—figure supplement 1.:** (a) Characterization of cells. Western blot and RT-PCR data showing expression of EYFP-vinculin, Cas and Cul5 in MCF10A cells. (b) Definition of cell front and back. Red line indicates the position of the mask, ~6 µm from the cell front at zero time that was used to define the cell front and back. Note that the area included in the cell front increases over time as the leading edge advances. (c) Automated segmentation of EYFP-vinculin fluorescence into individual FAs. Different colors outline each FA. (d) Time series for a specific FA. Images recorded at 2 min intervals. (e) Plot of FA mean intensity against time, with automated curve fitting to estimate first-order rate constants for assembly and disassembly.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Plots of assembly and disassembly rate constants against mean area (pixels) for FAs at the front and back of control (gray) and Cul5-deficient (blue) cells. There is a slight but insignificant correlation between FA size and disassembly rates for Cul5-deficient cells but complete independence for control cells. Only structures >2 pixels (0.05 um2) were included in the analysis. Note that small FAs in control cells assemble and disassemble much slower than similarly sized FAs in Cul5-deficient cells. R: Pearson’s correlation coefficient.DOI: http://dx.doi.org/10.7554/eLife.17440.005
+**Figure 1—figure supplement 2.:** Plots of assembly and disassembly rate constants against mean area (pixels) for FAs at the front and back of control (gray) and Cul5-deficient (blue) cells. There is a slight but insignificant correlation between FA size and disassembly rates for Cul5-deficient cells but complete independence for control cells. Only structures >2 pixels (0.05 um2) were included in the analysis. Note that small FAs in control cells assemble and disassemble much slower than similarly sized FAs in Cul5-deficient cells. R: Pearson’s correlation coefficient.
 
-To investigate whether different-sized FAs resulted from different dynamics, we recorded time lapse movies. FAs at the front of Cul5-deficient cells were notably more dynamic than those at the front of control cells (Video 1 and 2). To illustrate this difference, FAs were color-coded based on their presence in different frames, starting with blue at time zero and advancing through teal, green, orange, red and crimson by 100 min (Figure 1c). Many FAs at the front of control cells were white, indicating that they were present during the entire movie, while most FAs at the front of Cul5-deficient cells were singly colored, indicating they were short-lived. Blue FAs, present at the start, marked the original leading edge, and red FAs, born at the end, marked the ending leading edge position. The contrast between stable FAs in control cells and transient FAs in Cul5-deficient cells was also apparent from examination of individual frames from the movies (Figure 1d).10.7554/eLife.17440.006Video 1.EYFP-vinculin in migrating MCF10A cells (siCon) imaged every 2 min on a 100× TIRF objective, starting approximately 6 hr after wounding.Length of movie 120 min.DOI: http://dx.doi.org/10.7554/eLife.17440.00610.7554/eLife.17440.007Video 2.EYFP-vinculin in migrating MCF10A cells (siCul5) imaged every 2 min on a 100× TIRF objective, starting approximately 6 hr after wounding.Length of movie 120 min.DOI: http://dx.doi.org/10.7554/eLife.17440.007
+To investigate whether different-sized FAs resulted from different dynamics, we recorded time lapse movies. FAs at the front of Cul5-deficient cells were notably more dynamic than those at the front of control cells (Video 1 and 2). To illustrate this difference, FAs were color-coded based on their presence in different frames, starting with blue at time zero and advancing through teal, green, orange, red and crimson by 100 min (Figure 1c). Many FAs at the front of control cells were white, indicating that they were present during the entire movie, while most FAs at the front of Cul5-deficient cells were singly colored, indicating they were short-lived. Blue FAs, present at the start, marked the original leading edge, and red FAs, born at the end, marked the ending leading edge position. The contrast between stable FAs in control cells and transient FAs in Cul5-deficient cells was also apparent from examination of individual frames from the movies (Figure 1d).
 
-To quantify FA dynamics, movies were analyzed using FA analysis software (FAAS) (Berginski et al., 2011). This software does not distinguish FAs from the smaller focal complexes, so we refer to all EYFP structures larger than 0.05 µm2 (two pixels) as FAs. We extracted first-order rate constants for the assembly and disassembly phases of each FA (Figure 1—figure supplement 1c–e). The rate constants for assembly and disassembly were generally lower for front FAs of control cells than front FAs of Cul5-deficient cells (Figure 1e). However, as expected, individual FAs were very heterogeneous. To control for technical or biological variation between experiments, we determined the median assembly and disassembly rate constants of many FAs in each of four to six experiments and then averaged these parameters across independent experiments. We found that FAs at the front and back of control cells assembled and disassembled with similar rate constants (0.012–0.013 min−1 for assembly; 0.008–0.009 min-1 for disassembly), suggesting that the front FAs were not larger because of increased assembly or decreased disassembly (Figure 1f, Table 1). Indeed, there was no correlation between mean FA area and assembly or disassembly rate constants (Figure 1—figure supplement 2), as expected for first-order reactions. Removing Cul5 had no effect on the assembly or disassembly of back FAs (Figure 1f, Table 1). At the front, however, removing Cul5 stimulated both assembly and disassembly approximately two-fold, to ~0.029 min−1 for assembly and ~0.021 min−1 for disassembly (Figure 1f, Table 1). Similar assembly and disassembly rates were measured in cells in which Cul5 was stably knocked down with shRNA targeting a different sequence, so the effect is unlikely to be off-target (see below, Figure 3—figure supplement 1). The increase in disassembly of leading edge FAs was also apparent from histograms of disassembly rate constants: the percentage of FAs with disassembly rates <0.02 min−1 shifted from >60% to <10% when Cul5 was removed (Figure 1g). While we were unable to directly measure the lifetimes of the large FAs at the front of control cells, most persisted for longer than the 3 hr duration of the movies, suggesting lifetimes exceeding 3 hr. In contrast, front FAs of Cul5-deficient cells had an average 24 min half time for assembly, 36 min stable phase, and 33 min half time for disassembly, for a total 93 min average lifetime. The longer persistence of FAs at the front of control cells may contribute to their increased size.10.7554/eLife.17440.008Table 1.Summary of first-order rate constants for FA assembly and disassembly.DOI: http://dx.doi.org/10.7554/eLife.17440.008Conditions Region Assembly Disassembly # of movies # of FAs (X 10−2 min−1)(X 10−2 min−1)siConfront1.3 (±0.2) 0.8 (±0.03) 464siCul5front2.9 (±0.1) p=0.00022.1 (±0.9) p=0.000046263siConback1.2 (±0.2) 0.9 (±0.1) 4667siCul5back1.3 (±0.05) 1.3 (±0.5) p=0.04 6811siConfront1.1 (±0.1) 0.8 (±0.1) 5142siCul5front3.0 (±0.4) p=0.008 1.9 (±0.08) p=0.00008 4444siCasfront1.6 (±0.3) 0.7 (±0.1) 6151siCul5+siCasfront1.1 (±0.2) 0.8 (±0.07) 5137siConback0.8 (±0.04) 0.7 (±0.09) 5632siCul5back0.9 (±0.08) 0.8 (±0.08) 4505siCasback0.8 (±0.05) 0.6 (±0.08) 6484siCul5+siCasback0.7 (±0.1) 0.5 (±0.05) 5541shConfront1.0 (±0.1) 1.0 (±0.1) 4105shCul5front2.0 (±0.1) p=0.0012 2.0 (±0.09) p=0.0015 4217shCasfront0.9 (±0.1) 1.0 (±0.06) 4126shCul5+shCasfront1.0 (±0.2) 0.8 (±0.07) 4152shConback0.9 (±0.06) 0.7 (±0.8) 4701shCul5back0.8 (±0.04) 0.9 (±0.1) 4497shCasback0.6 (±0.06) 0.9 (±0.1) 4559shCul5+shCasback0.7 (±0.1) 0.8 (±0.4) 4608siConfront1.4 (±0.1) 0.9 (±0.06) 5185siSOCS6front1.7 (±0.2) 1.4 (±0.03) p=0.0004 5201siConback0.9 (±0.09) 0.7 (±0.04) 5620siSOCS6back0.8 (±0.07) 0.8 (±0.01) 5469siConfront1.4 (±0.2) 1.0 (±0.1) 4254siSOCS6 (alternate)front1.7 (±0.08) 1.9 (±0.08) p=0.0007 4179siConback1.1 (±0.02) 1.0 (±0.06) 4640siSOCS6 (alternate)back1.2 (±0.05) 1.2 (±0.1) 4600Confront1.0 (±0.09) 1.0 (±0.06) 476MLN4924front2.0 (±0.08) p=0.00016 1.6 (±0.03) p=0.0004 4111Conback0.6 (±0.07) 0.6 (±0.05) 4182MLN4924back1.0 (±0.2) 0.7 (±0.04) 4293Rate constants are reported as mean ± SEM
+![Video 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-media1.mp4.jpg)
 
-## Cul5 regulates microtubule-dependent FA disassembly
+**Video 1.:** Length of movie 120 min.
 
-Microtubules (MTs) are required for FA disassembly and are observed repeatedly engaging with FAs during disassembly (
+![Video 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-media2.mp4.jpg)
+
+**Video 2.:** Length of movie 120 min.
+
+To quantify FA dynamics, movies were analyzed using FA analysis software (FAAS) (Berginski et al., 2011). This software does not distinguish FAs from the smaller focal complexes, so we refer to all EYFP structures larger than 0.05 µm2 (two pixels) as FAs. We extracted first-order rate constants for the assembly and disassembly phases of each FA (Figure 1—figure supplement 1c–e). The rate constants for assembly and disassembly were generally lower for front FAs of control cells than front FAs of Cul5-deficient cells (Figure 1e). However, as expected, individual FAs were very heterogeneous. To control for technical or biological variation between experiments, we determined the median assembly and disassembly rate constants of many FAs in each of four to six experiments and then averaged these parameters across independent experiments. We found that FAs at the front and back of control cells assembled and disassembled with similar rate constants (0.012–0.013 min−1 for assembly; 0.008–0.009 min-1 for disassembly), suggesting that the front FAs were not larger because of increased assembly or decreased disassembly (Figure 1f, Table 1). Indeed, there was no correlation between mean FA area and assembly or disassembly rate constants (Figure 1—figure supplement 2), as expected for first-order reactions. Removing Cul5 had no effect on the assembly or disassembly of back FAs (Figure 1f, Table 1). At the front, however, removing Cul5 stimulated both assembly and disassembly approximately two-fold, to ~0.029 min−1 for assembly and ~0.021 min−1 for disassembly (Figure 1f, Table 1). Similar assembly and disassembly rates were measured in cells in which Cul5 was stably knocked down with shRNA targeting a different sequence, so the effect is unlikely to be off-target (see below, Figure 3—figure supplement 1). The increase in disassembly of leading edge FAs was also apparent from histograms of disassembly rate constants: the percentage of FAs with disassembly rates <0.02 min−1 shifted from >60% to <10% when Cul5 was removed (Figure 1g). While we were unable to directly measure the lifetimes of the large FAs at the front of control cells, most persisted for longer than the 3 hr duration of the movies, suggesting lifetimes exceeding 3 hr. In contrast, front FAs of Cul5-deficient cells had an average 24 min half time for assembly, 36 min stable phase, and 33 min half time for disassembly, for a total 93 min average lifetime. The longer persistence of FAs at the front of control cells may contribute to their increased size.
+
+**Table 1.**
+ Summary of first-order rate constants for FA assembly and disassembly.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Conditions</th>
+      <th>Region</th>
+      <th>Assembly</th>
+      <th>Disassembly</th>
+      <th># of movies</th>
+      <th># of FAs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>(X 10−2 min−1)</td>
+      <td>(X 10−2 min−1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>front</td>
+      <td>1.3 (±0.2)</td>
+      <td>0.8 (±0.03)</td>
+      <td>4</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>siCul5</td>
+      <td>front</td>
+      <td>2.9 (±0.1) p=0.0002</td>
+      <td>2.1 (±0.9) p=0.00004</td>
+      <td>6</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>back</td>
+      <td>1.2 (±0.2)</td>
+      <td>0.9 (±0.1)</td>
+      <td>4</td>
+      <td>667</td>
+    </tr>
+    <tr>
+      <td>siCul5</td>
+      <td>back</td>
+      <td>1.3 (±0.05)</td>
+      <td>1.3 (±0.5) p=0.04</td>
+      <td>6</td>
+      <td>811</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>front</td>
+      <td>1.1 (±0.1)</td>
+      <td>0.8 (±0.1)</td>
+      <td>5</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>siCul5</td>
+      <td>front</td>
+      <td>3.0 (±0.4) p=0.008</td>
+      <td>1.9 (±0.08) p=0.00008</td>
+      <td>4</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>siCas</td>
+      <td>front</td>
+      <td>1.6 (±0.3)</td>
+      <td>0.7 (±0.1)</td>
+      <td>6</td>
+      <td>151</td>
+    </tr>
+    <tr>
+      <td>siCul5+siCas</td>
+      <td>front</td>
+      <td>1.1 (±0.2)</td>
+      <td>0.8 (±0.07)</td>
+      <td>5</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>back</td>
+      <td>0.8 (±0.04)</td>
+      <td>0.7 (±0.09)</td>
+      <td>5</td>
+      <td>632</td>
+    </tr>
+    <tr>
+      <td>siCul5</td>
+      <td>back</td>
+      <td>0.9 (±0.08)</td>
+      <td>0.8 (±0.08)</td>
+      <td>4</td>
+      <td>505</td>
+    </tr>
+    <tr>
+      <td>siCas</td>
+      <td>back</td>
+      <td>0.8 (±0.05)</td>
+      <td>0.6 (±0.08)</td>
+      <td>6</td>
+      <td>484</td>
+    </tr>
+    <tr>
+      <td>siCul5+siCas</td>
+      <td>back</td>
+      <td>0.7 (±0.1)</td>
+      <td>0.5 (±0.05)</td>
+      <td>5</td>
+      <td>541</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shCon</td>
+      <td>front</td>
+      <td>1.0 (±0.1)</td>
+      <td>1.0 (±0.1)</td>
+      <td>4</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>shCul5</td>
+      <td>front</td>
+      <td>2.0 (±0.1) p=0.0012</td>
+      <td>2.0 (±0.09) p=0.0015</td>
+      <td>4</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <td>shCas</td>
+      <td>front</td>
+      <td>0.9 (±0.1)</td>
+      <td>1.0 (±0.06)</td>
+      <td>4</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <td>shCul5+shCas</td>
+      <td>front</td>
+      <td>1.0 (±0.2)</td>
+      <td>0.8 (±0.07)</td>
+      <td>4</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>shCon</td>
+      <td>back</td>
+      <td>0.9 (±0.06)</td>
+      <td>0.7 (±0.8)</td>
+      <td>4</td>
+      <td>701</td>
+    </tr>
+    <tr>
+      <td>shCul5</td>
+      <td>back</td>
+      <td>0.8 (±0.04)</td>
+      <td>0.9 (±0.1)</td>
+      <td>4</td>
+      <td>497</td>
+    </tr>
+    <tr>
+      <td>shCas</td>
+      <td>back</td>
+      <td>0.6 (±0.06)</td>
+      <td>0.9 (±0.1)</td>
+      <td>4</td>
+      <td>559</td>
+    </tr>
+    <tr>
+      <td>shCul5+shCas</td>
+      <td>back</td>
+      <td>0.7 (±0.1)</td>
+      <td>0.8 (±0.4)</td>
+      <td>4</td>
+      <td>608</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>front</td>
+      <td>1.4 (±0.1)</td>
+      <td>0.9 (±0.06)</td>
+      <td>5</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <td>siSOCS6</td>
+      <td>front</td>
+      <td>1.7 (±0.2)</td>
+      <td>1.4 (±0.03) p=0.0004</td>
+      <td>5</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>back</td>
+      <td>0.9 (±0.09)</td>
+      <td>0.7 (±0.04)</td>
+      <td>5</td>
+      <td>620</td>
+    </tr>
+    <tr>
+      <td>siSOCS6</td>
+      <td>back</td>
+      <td>0.8 (±0.07)</td>
+      <td>0.8 (±0.01)</td>
+      <td>5</td>
+      <td>469</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>front</td>
+      <td>1.4 (±0.2)</td>
+      <td>1.0 (±0.1)</td>
+      <td>4</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>siSOCS6 (alternate)</td>
+      <td>front</td>
+      <td>1.7 (±0.08)</td>
+      <td>1.9 (±0.08) p=0.0007</td>
+      <td>4</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>siCon</td>
+      <td>back</td>
+      <td>1.1 (±0.02)</td>
+      <td>1.0 (±0.06)</td>
+      <td>4</td>
+      <td>640</td>
+    </tr>
+    <tr>
+      <td>siSOCS6 (alternate)</td>
+      <td>back</td>
+      <td>1.2 (±0.05)</td>
+      <td>1.2 (±0.1)</td>
+      <td>4</td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Con</td>
+      <td>front</td>
+      <td>1.0 (±0.09)</td>
+      <td>1.0 (±0.06)</td>
+      <td>4</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>MLN4924</td>
+      <td>front</td>
+      <td>2.0 (±0.08) p=0.00016</td>
+      <td>1.6 (±0.03) p=0.0004</td>
+      <td>4</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>Con</td>
+      <td>back</td>
+      <td>0.6 (±0.07)</td>
+      <td>0.6 (±0.05)</td>
+      <td>4</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <td>MLN4924</td>
+      <td>back</td>
+      <td>1.0 (±0.2)</td>
+      <td>0.7 (±0.04)</td>
+      <td>4</td>
+      <td>293</td>
+    </tr>
+  </tbody>
+</table>
+
+_Rate constants are reported as mean ± SEM_
+
+### Cul5 regulates microtubule-dependent FA disassembly
+
+Microtubules (MTs) are required for FA disassembly and are observed repeatedly engaging with FAs during disassembly (Bershadsky et al., 1996; Kaverina et al., 1999, 1998; Stehbens et al., 2012). We tested whether CRL5-regulated FA disassembly requires MTs. We treated cells with nocodazole to disrupt MTs and then removed nocodazole and assayed adhesion disassembly during MT regrowth (Ezratty et al., 2005). We found that nocodazole stabilized FAs in both control and Cul5-deficient cells (Figure 2a). However, FAs disappeared more rapidly from Cul5-deficient cells than control cells upon nocodazole removal (Figure 2a,b). Stress fibers also disappeared more rapidly from Cul5-deficient cells (Figure 2). Accelerated FA disassembly in Cul5-deficient cells was not due to faster MT regrowth after nocodazole removal because the MT cytoskeleton fully recovered in less than 15 min whether or not Cul5 was present (Figure 2—figure supplement 1a). Indeed, MT plus ends, tracked with fluorescent plus-end binding-protein EB1, reached FAs in the ventral membrane within minutes of removing nocodazole (Figure 2—figure supplement 1b). Therefore, Cul5 slows the disassembly of FAs after MTs have regrown, implying that Cul5 controls the speed of disassembly after MT targeting.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig2-v2.jpg)
 
-**Figure 2.:** Control and Cul5-deficient HeLa cells were plated on collagen IV-coated coverslips, serum-starved overnight, and incubated with nocodazole for 3 hr to induce microtubule disassembly and stabilize FAs. Cells were fixed at various times after nocodazole removal and stained for F-actin and paxillin. (b) Cells lacking large FAs and prominent stress fibers were scored as percent of total cells. Mean and standard deviation of three biologically independent experiments. ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.17440.009
+**Figure 2.:** Control and Cul5-deficient HeLa cells were plated on collagen IV-coated coverslips, serum-starved overnight, and incubated with nocodazole for 3 hr to induce microtubule disassembly and stabilize FAs. Cells were fixed at various times after nocodazole removal and stained for F-actin and paxillin. (b) Cells lacking large FAs and prominent stress fibers were scored as percent of total cells. Mean and standard deviation of three biologically independent experiments. ***p<0.001.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (a) HeLa cells were fixed at 0 or 15 min after reversal of nocodazole block and stained for tyrosinated tubulin. Deconvolution microscopy, ventral section. Cul5 did not affect the complete regrowth of microtubules. (b) HeLa cells expressing EYFP-EB1, a microtubule + end tracking protein, and mChSOCS6, a marker for FAs (see below, Figure 4) were incubated in nocodazole and imaged live by TIRF microscopy. EB1 was diffusely localized when nocodazole was present, but was detected in puncta that approached or co-localized with FAs two minutes after nocodazole washout, suggesting that microtubules regrow within 2 min of nocodazole reversal in cells that contain Cul5.DOI: http://dx.doi.org/10.7554/eLife.17440.010
+**Figure 2—figure supplement 1.:** (a) HeLa cells were fixed at 0 or 15 min after reversal of nocodazole block and stained for tyrosinated tubulin. Deconvolution microscopy, ventral section. Cul5 did not affect the complete regrowth of microtubules. (b) HeLa cells expressing EYFP-EB1, a microtubule + end tracking protein, and mChSOCS6, a marker for FAs (see below, Figure 4) were incubated in nocodazole and imaged live by TIRF microscopy. EB1 was diffusely localized when nocodazole was present, but was detected in puncta that approached or co-localized with FAs two minutes after nocodazole washout, suggesting that microtubules regrow within 2 min of nocodazole reversal in cells that contain Cul5.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (a) HeLa cells were treated with control, Cul5 or clathrin heavy chain (CHC) siRNA and subject to the nocodazole washout assay for FA disassembly as in Figure 2. Mean and standard error of two biologically-independent experiments. CHC was required for the delayed FA disassembly in Cul5-proficient cells but was largely dispensable for the accelerated disassembly in Cul5-deficient cells. (b) Localization of CHC in migrating MCF10A shCul5 cells. Immuofluorescence for CHC (red), F-actin (green) and nucleus (blue) in migrating control and Cul5-deficient MCF10A cells. Deconvolution microscopy, ventral section. Note the low numbers of clathrin-coated structures in the leading lamellipodium of Cul5-deficient cells.DOI: http://dx.doi.org/10.7554/eLife.17440.011
+**Figure 2—figure supplement 2.:** (a) HeLa cells were treated with control, Cul5 or clathrin heavy chain (CHC) siRNA and subject to the nocodazole washout assay for FA disassembly as in Figure 2. Mean and standard error of two biologically-independent experiments. CHC was required for the delayed FA disassembly in Cul5-proficient cells but was largely dispensable for the accelerated disassembly in Cul5-deficient cells. (b) Localization of CHC in migrating MCF10A shCul5 cells. Immuofluorescence for CHC (red), F-actin (green) and nucleus (blue) in migrating control and Cul5-deficient MCF10A cells. Deconvolution microscopy, ventral section. Note the low numbers of clathrin-coated structures in the leading lamellipodium of Cul5-deficient cells.
 
 MT targeting is reported to stimulate FA disassembly by clathrin-dependent integrin endocytosis (Ezratty et al., 2009; Ezratty et al., 2005). Accordingly, depleting clathrin heavy chains (CHC) strongly inhibited FA disassembly in control cells (Figure 2—figure supplement 2a). However, CHC depletion only partly inhibited the more rapid FA disassembly in Cul5-deficient cells (Figure 2—figure supplement 2a), suggesting that Cul5 inhibits a distinct mechanism of disassembly that is clathrin-independent. Consistent with this interpretation, clathrin-coated pits were missing from the leading lamellipodium of migrating Cul5-deficient cells (Figure 2—figure supplement 2b), as recently reported for other cell types (Kural et al., 2015). This suggests that Cul5 regulates FA disassembly through mechanisms unrelated to clathrin-mediated endocytosis.
 
-## Cas and SOCS6 regulate FA disassembly at the leading edge
+### Cas and SOCS6 regulate FA disassembly at the leading edge
 
-Since we previously identified pYCas as a CRL5 substrate (
+Since we previously identified pYCas as a CRL5 substrate (Teckchandani et al., 2014) and since pYCas is required for FA disassembly in migrating fibroblasts (Webb et al., 2004), we tested whether Cul5-stimulated disassembly requires Cas. We found that removing Cas suppressed the increase in FA disassembly at the front of migrating Cul5-deficient MCF10A cells but had no effect on FAs at the back or F control cells (Figure 3a,b). These effects were unlikely to be due to off-target effects of Cas siRNA because similar results were obtained with cells stably knocked down for Cul5 and Cas using shRNA (Figure 3—figure supplement 1). Consistent with a Cul5-Cas pathway, Cas knockdown restored MT-dependent FA disassembly in Cul5-deficient HeLa cells in the nocodazole washout assay, but had no effect on control cells (Figure 3c,d). Therefore, Cas is required for increased FA disassembly when Cul5 is absent.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig3-v2.jpg)
 
-**Figure 3.:** Focal adhesion dynamics of MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. (a) Rainbow color representation of FA appearance and disappearance at the front of control, Cul5-deficient, Cas-deficient, and Cul5-Cas-deficient cells. (b) FA assembly and disassembly rate constants from the front and back. Mean and standard error of median rates from each of 4–6 time-lapse movies are indicated. ***p<0.001. Student’s t-test, two tailed, unequal variance. (c,d) Nocodazole washout assay as in Figure 2. (c) Images (deconvolution microscopy, ventral section) and (d) quantification of FA disassembly in cells depleted for Cul5 and Cas. Cas was required for the accelerated FA disassembly in Cul5-deficient cells. Mean and standard error of three biologically-independent experiments. ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.17440.012
+**Figure 3.:** Focal adhesion dynamics of MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. (a) Rainbow color representation of FA appearance and disappearance at the front of control, Cul5-deficient, Cas-deficient, and Cul5-Cas-deficient cells. (b) FA assembly and disassembly rate constants from the front and back. Mean and standard error of median rates from each of 4–6 time-lapse movies are indicated. ***p<0.001. Student’s t-test, two tailed, unequal variance. (c,d) Nocodazole washout assay as in Figure 2. (c) Images (deconvolution microscopy, ventral section) and (d) quantification of FA disassembly in cells depleted for Cul5 and Cas. Cas was required for the accelerated FA disassembly in Cul5-deficient cells. Mean and standard error of three biologically-independent experiments. ***p<0.001.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Focal adhesion dynamics of stable vector, shCul5, shCas and shCul5/shCas EYFP-vinculin-expressing MCF10A cells migrating into a scratch wound in EGF-deficient medium. FA assembly and disassembly rate constants from the front 6 µm and back of leading cells. Mean and standard error of median rates from each of four time-lapse movies are indicated. **p<0.01. Student’s t-test, two tailed, unequal variance.DOI: http://dx.doi.org/10.7554/eLife.17440.013
+**Figure 3—figure supplement 1.:** Focal adhesion dynamics of stable vector, shCul5, shCas and shCul5/shCas EYFP-vinculin-expressing MCF10A cells migrating into a scratch wound in EGF-deficient medium. FA assembly and disassembly rate constants from the front 6 µm and back of leading cells. Mean and standard error of median rates from each of four time-lapse movies are indicated. **p<0.01. Student’s t-test, two tailed, unequal variance.
 
 Removal of Cas also suppressed the increased FA assembly of Cul5-deficient cells (Figure 3a,b), consistent with the observation that FA and stress fiber assembly is slowed in cas mutant fibroblasts (Antoku et al., 2008; Honda et al., 1998), potentially due to decreased signaling through a Crk/ C3G/Rap1 signaling pathway (Li et al., 2002; Voss et al., 2003).
 
-SOCS6 is the substrate receptor through which CRL5 binds pYCas (
+SOCS6 is the substrate receptor through which CRL5 binds pYCas (Teckchandani et al., 2014). Accordingly, depleting SOCS6 stimulated FA disassembly at the front but not back of migrating MCF10A cells (Figure 4a,b). This was unlikely to be due to an off-target effect, because a different pool of SOCS6 siRNA had the same effect (Figure 4—figure supplement 1). SOCS6 depletion also stimulated FA disassembly in the nocodazole washout assay and Cas knockdown inhibited this effect (Figure 4c–e). Normal rates of FA disassembly were rescued by re-expression of wildtype SOCS6, but not by mutant SOCS6LCQQ that cannot bind elongin B and the rest of the CRL5 complex (Figure 4—figure supplement 2a). Moreover, expression of CasFF, a mutant that does not bind SOCS6 (Teckchandani et al., 2014), stimulated FA disassembly regardless of the presence or absence of Cul5, while wildtype Cas only stimulated FA disassembly when Cul5 was absent and Cas15F, a mutant that cannot signal downstream, did not stimulate FA disassembly even when Cul5 was absent (Figure 4—figure supplement 2b). These results suggest that SOCS6 inhibits FA disassembly dependent on binding to both Cas and CRL5. However, unlike Cul5, SOCS6 did not impact FA assembly rates (Figure 4b), suggesting that, while an increase in pYCas (and other SOCS6 targets) is sufficient to stimulate disassembly, increased pYCas does not accelerate assembly. Other SOCS proteins may target different pY substrates for ubiquitination by CRL5 to regulate FA assembly.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig4-v2.jpg)
 
-**Figure 4.:** Focal adhesion dynamics of MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. (a) Rainbow color representation of FA appearance and disappearance at the front of control and SOCS6-deficient cells. (b) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and SOCS6-deficient (green) cells. Mean and standard error of median rates from each of five time-lapse movies are indicated. ***p<0.001. Student’s t-test, two tailed, unequal variance. (c–e) Nocodazole washout assay as in Figure 2. (c) Staining for paxillin and F-actin in control and SOCS6-deficient HeLa cells 30 min after nocodazole washout reveals accelerated disassembly in SOCS6-deficient cells. Deconvolution microscopy, ventral section. (d) Quantification of FA disassembly in cells depleted for SOCS6. Mean and standard error of three biologically-independent experiments. *p<0.05. (e) Quantification of FA disassembly in cells depleted for SOCS6 and Cas. Cas was required for the accelerated FA disassembly in SOCS6-deficient cells. Mean and standard error of three biologically-independent experiments. ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.17440.014
+**Figure 4.:** Focal adhesion dynamics of MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. (a) Rainbow color representation of FA appearance and disappearance at the front of control and SOCS6-deficient cells. (b) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and SOCS6-deficient (green) cells. Mean and standard error of median rates from each of five time-lapse movies are indicated. ***p<0.001. Student’s t-test, two tailed, unequal variance. (c–e) Nocodazole washout assay as in Figure 2. (c) Staining for paxillin and F-actin in control and SOCS6-deficient HeLa cells 30 min after nocodazole washout reveals accelerated disassembly in SOCS6-deficient cells. Deconvolution microscopy, ventral section. (d) Quantification of FA disassembly in cells depleted for SOCS6. Mean and standard error of three biologically-independent experiments. *p<0.05. (e) Quantification of FA disassembly in cells depleted for SOCS6 and Cas. Cas was required for the accelerated FA disassembly in SOCS6-deficient cells. Mean and standard error of three biologically-independent experiments. ***p<0.001.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** To control for off-target effects, MCF10A cells were treated with an independent pool of siRNAs against SOCS6 before analysis as in Figure 4b. ***p<0.001. Student’s t-test, two tailed, unequal variance.DOI: http://dx.doi.org/10.7554/eLife.17440.015
+**Figure 4—figure supplement 1.:** To control for off-target effects, MCF10A cells were treated with an independent pool of siRNAs against SOCS6 before analysis as in Figure 4b. ***p<0.001. Student’s t-test, two tailed, unequal variance.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Microtubule-dependent FA disassembly was assayed in transfected HeLa cells, scoring the percent of cells lacking FAs at 30 min after nocodazole reversal. (a) Rescue of normal FA disassembly by expression of siRNA-resistant mouse SOCS6 wildtype (WT) but not by SOCS box mutant LCQQ. (b) Expression of CasFF, a mutant that does not bind SOCS6, stimulates FA disassembly independent of Cul5, while wildtype Cas only stimulates disassembly when Cul5 is absent and Cas15F, which is unable to bind downstream signaling molecules, is inactive. Mean and standard deviation of two experiments.DOI: http://dx.doi.org/10.7554/eLife.17440.016
+**Figure 4—figure supplement 2.:** Microtubule-dependent FA disassembly was assayed in transfected HeLa cells, scoring the percent of cells lacking FAs at 30 min after nocodazole reversal. (a) Rescue of normal FA disassembly by expression of siRNA-resistant mouse SOCS6 wildtype (WT) but not by SOCS box mutant LCQQ. (b) Expression of CasFF, a mutant that does not bind SOCS6, stimulates FA disassembly independent of Cul5, while wildtype Cas only stimulates disassembly when Cul5 is absent and Cas15F, which is unable to bind downstream signaling molecules, is inactive. Mean and standard deviation of two experiments.
 
-## SOCS6 localizes to FAs by binding to pYCas
+### SOCS6 localizes to FAs by binding to pYCas
 
 CRL5 may regulate FA dynamics by directly interacting with substrates in FAs or by altering the steady-state concentrations of FA proteins in the cytoplasm. We investigated whether CRL5 localizes to FAs. Available antibodies revealed endogenous Cul5 in the nucleus and throughout the cytosol (data not shown). Cul5 was not detectably enriched in FAs. In addition, none of the available SOCS protein antibodies we tested were sufficiently sensitive or specific to detect endogenous SOCS proteins. However, when we transiently transfected HeLa cells with T7 epitope-tagged SOCS6, the tagged protein was enriched in FAs relative to the rest of the ventral membrane (Figure 5a and Figure 5—figure supplement 1). Enrichment was slight relative to the cytosol, suggesting a low affinity of binding and the potential for rapid exchange.
 
-We investigated the basis for SOCS6 association with FAs. Because FAs contain pYCas and because SOCS6 binds pYCas (
+We investigated the basis for SOCS6 association with FAs. Because FAs contain pYCas and because SOCS6 binds pYCas (Petch et al., 1995; Teckchandani et al., 2014), we tested whether pYCas is required for SOCS6 localization. FA localization of SOCS6 was inhibited in cells treated with Cas siRNA or with the SFK inhibitor SU6656 (Figure 5a). Moreover, a point mutation in the phosphotyrosine-binding SH2 domain of SOCS6 inhibited binding to pYCas (Figure 5—figure supplement 2a) and prevented FA localization (Figure 5a). Therefore, pYCas is required for SOCS6 localization to FAs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig5-v2.jpg)
 
-**Figure 5.:** (a) SOCS6 localization to FAs requires Cas, SFK activity, and a functional SH2 domain. HeLa cells were transiently transfected with T7-tagged wildtype (WT) or SH2 domain mutant (R407K) SOCS6, treated with or without Cas siRNA, and plated on collagen IV, serum-starved, and incubated with nocodazole for 3 hr to stabilize FAs. One sample was treated with SFK inhibitor SU6656 (10 μM) during nocodazole treatment. Fixed cells were stained with antibodies to T7 (green) and FAK (magenta). Images were collected from the ventral plane using TIRF microscopy, and from the entire cell using epifluorescence. (b,c) SOCS6 and pYCas localization in migrating MCF10A cells. (b) MCF10A cells stably expressing mCherry-tagged SOCS6 (mChS6) were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. 5 µM MLN4924 was added at the time of wounding and washed off 6 hr later. Cells were fixed 2 hr later and stained with antibodies against vinculin (magenta). Images were collected using TIRF microscopy. The mean ratio of mCherry to vinculin integrated intensity was calculated for 135 FAs at the front and 528 FAs at the back in ~12 cells in two separate experiments. (c) MCF10A cells were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. Cells were stained with antibodies against vinculin (magenta) and pYCas (green). Images were collected using TIRF microscopy. The mean ratio of pYCas to vinculin integrated intensity was calculated for 153 FAs at the front and 896 FAs at the back in ~16 cells in two separate experiments.DOI: http://dx.doi.org/10.7554/eLife.17440.017
+**Figure 5.:** (a) SOCS6 localization to FAs requires Cas, SFK activity, and a functional SH2 domain. HeLa cells were transiently transfected with T7-tagged wildtype (WT) or SH2 domain mutant (R407K) SOCS6, treated with or without Cas siRNA, and plated on collagen IV, serum-starved, and incubated with nocodazole for 3 hr to stabilize FAs. One sample was treated with SFK inhibitor SU6656 (10 μM) during nocodazole treatment. Fixed cells were stained with antibodies to T7 (green) and FAK (magenta). Images were collected from the ventral plane using TIRF microscopy, and from the entire cell using epifluorescence. (b,c) SOCS6 and pYCas localization in migrating MCF10A cells. (b) MCF10A cells stably expressing mCherry-tagged SOCS6 (mChS6) were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. 5 µM MLN4924 was added at the time of wounding and washed off 6 hr later. Cells were fixed 2 hr later and stained with antibodies against vinculin (magenta). Images were collected using TIRF microscopy. The mean ratio of mCherry to vinculin integrated intensity was calculated for 135 FAs at the front and 528 FAs at the back in ~12 cells in two separate experiments. (c) MCF10A cells were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. Cells were stained with antibodies against vinculin (magenta) and pYCas (green). Images were collected using TIRF microscopy. The mean ratio of pYCas to vinculin integrated intensity was calculated for 153 FAs at the front and 896 FAs at the back in ~16 cells in two separate experiments.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** HeLa cells were transiently transfected to express T7-epitope tagged mouse SOCS6 or vector (truncated GFP), plated on collagen IV, serum-starved, and incubated with nocodazole to stabilize FAs. Fixed cells were stained with antibodies to T7 (green) and FAK (magenta). Images were collected from the ventral plane using TIRF microscopy, and from the entire cell using epifluorescence.DOI: http://dx.doi.org/10.7554/eLife.17440.018
+**Figure 5—figure supplement 1.:** HeLa cells were transiently transfected to express T7-epitope tagged mouse SOCS6 or vector (truncated GFP), plated on collagen IV, serum-starved, and incubated with nocodazole to stabilize FAs. Fixed cells were stained with antibodies to T7 (green) and FAK (magenta). Images were collected from the ventral plane using TIRF microscopy, and from the entire cell using epifluorescence.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (a) Transient expression of T7-tagged wildtype (WT) or mutant SOCS6 in HeLa cells. Anti-T7 antibody immunoprecipitates and cell lysates were analyzed by Western blotting with antibodies to Cas, ElonginB and T7. Mutation of the SOCS box (LC to QQ) prevents binding of SOCS6 to ElonginB (CRL5) but not Cas, whereas mutation of the SH2 domain (R407K) prevents binding of SOCS6 to Cas but not ElonginB. (b,c) Stable expression of mCherry-tagged (WT) or SOCS box mutant (LCQQ) in MCF10A cells. (b) Steady state levels of mChSOCS6 and Cas in two independent cell lines expressing mChSOCS6WT and one line expressing mChSOCS6LCQQ. Note that mChSOCS6WT inhibits expression of endogenous Cas while mChSOCS6LCQQ is poorly expressed. (c) Partial rescue of Cas levels in cells expressing mChSOCS6WT by treatment with MLN4924 for 6 hr and washout for 2 hr.DOI: http://dx.doi.org/10.7554/eLife.17440.019
+**Figure 5—figure supplement 2.:** (a) Transient expression of T7-tagged wildtype (WT) or mutant SOCS6 in HeLa cells. Anti-T7 antibody immunoprecipitates and cell lysates were analyzed by Western blotting with antibodies to Cas, ElonginB and T7. Mutation of the SOCS box (LC to QQ) prevents binding of SOCS6 to ElonginB (CRL5) but not Cas, whereas mutation of the SH2 domain (R407K) prevents binding of SOCS6 to Cas but not ElonginB. (b,c) Stable expression of mCherry-tagged (WT) or SOCS box mutant (LCQQ) in MCF10A cells. (b) Steady state levels of mChSOCS6 and Cas in two independent cell lines expressing mChSOCS6WT and one line expressing mChSOCS6LCQQ. Note that mChSOCS6WT inhibits expression of endogenous Cas while mChSOCS6LCQQ is poorly expressed. (c) Partial rescue of Cas levels in cells expressing mChSOCS6WT by treatment with MLN4924 for 6 hr and washout for 2 hr.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** (a) HeLa cells, stably knocked down for Cul5 with shRNA, were plated on collagen IV, serum-starved, and treated with nocodazole to stabilize FAs. Cells were stained for paxillin (magenta) and pYCas (green). The mean ratio of pYCas to paxillin intensity (integrated) was calculated for 1343 FAs in ~20 control and 1502 FAs in ~20 Cul5-deficient cells. (b) MCF10A cells, stably knocked down for Cul5 with shRNA, were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. Cells were stained for vinculin (magenta) and pYCas (green). The mean ratio of pYCas to vinculin intensity (integrated) was calculated for >700 FAs (front) and >2000 FAs (back) of ~12 cells for each condition.DOI: http://dx.doi.org/10.7554/eLife.17440.020
+**Figure 5—figure supplement 3.:** (a) HeLa cells, stably knocked down for Cul5 with shRNA, were plated on collagen IV, serum-starved, and treated with nocodazole to stabilize FAs. Cells were stained for paxillin (magenta) and pYCas (green). The mean ratio of pYCas to paxillin intensity (integrated) was calculated for 1343 FAs in ~20 control and 1502 FAs in ~20 Cul5-deficient cells. (b) MCF10A cells, stably knocked down for Cul5 with shRNA, were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. Cells were stained for vinculin (magenta) and pYCas (green). The mean ratio of pYCas to vinculin intensity (integrated) was calculated for >700 FAs (front) and >2000 FAs (back) of ~12 cells for each condition.
 
 To test whether SOCS6 also localizes to front FAs in migrating MCF10A cells, we stably expressed wildtype mCherry-tagged SOCS6 (mChSOCS6WT) in MCF10A cells. Unfortunately, stable expression of mChSOCS6WT down-regulated Cas and, perhaps as a consequence, mChSOCS6WT was not detected in FAs (Figure 5—figure supplement 2b and data not shown). We attempted to express the mChSOCS6LCQQ mutant, which does not stimulate Cas degradation. However, this mutant was only expressed at low level in MCF10A cells, perhaps due to instability or toxicity of the mutant (Figure 5—figure supplement 2a,b). Therefore, we tested whether treating mChSOCS6WT-MCF10A cells with MLN4924, which inhibits the neddylation process required for CRL activity (Enchev et al., 2015; Petroski et al., 2005; Soucy et al., 2009), might allow recovery of Cas levels and localize mChSOCS6WT to FAs. We found empirically that incubation with 5 µM MLN4924 for 6 hr followed by normal media for 2 hr allowed Cas levels to recover without disturbing FA stability (Figure 5—figure supplement 2c). Under these conditions, mChSOCS6WT co-localized with vinculin in FAs (Figure 5b). Remarkably, mChSOCS6WT was approximately 1.6-fold more abundant in FAs in the front 6 µm than FAs in the rest of the cell. We tested whether leading edge FAs are also enriched for pYCas. The ratio of pYCas to vinculin was approximately 3-fold higher in FAs in the front 6 µm than back (Fonseca et al., 2004) (Figure 5c). These results suggest that pYCas is enriched in FAs at the front of migrating cells and that SOCS6 preferentially associates with these FAs, as expected if SOCS6 binds to pYCas.
 
-## SOCS6 needs access to FAs to regulate their turnover
+### SOCS6 needs access to FAs to regulate their turnover
 
 Since both Cas and SOCS6 exchange between the cytosol and adhesions, SOCS6 could regulate Cas levels or activity in either location. Inhibition of SOCS6 or Cul5 expression slows Cas turnover, causing a 2–3-fold increase in the steady-state level of Cas (Teckchandani et al., 2014) (Figure 1—figure supplement 1a). Accordingly, phosphorylated Cas levels in FAs increased approximately 3-fold when Cul5 expression was inhibited, especially in FAs in the front 6 µm of the cell (Figure 5—figure supplement 3). Since Cas exchanges rapidly between the cytosol and FAs (Janostiak et al., 2011; Machiyama et al., 2014), the increase in pYCas in FAs could be secondary to the increased Cas in the cytosol. Moreover, the chronic increase in pYCas in adhesions could accelerate adhesion turnover regardless of whether SOCS6 targets Cas in the cytosol or in FAs. We therefore tested whether SOCS6 could regulate FA turnover if it was sequestered away from adhesion sites. To this end, we constructed mChS6mito, a fusion of mCherry, SOCS6 and a sequence that targets the mitochondrial outer membrane (Bear et al., 2000). mChS6mito still bound to Cul5 and to Cas (Figure 6—figure supplement 1a), but localized to mitochondria instead of FAs (Figure 6—figure supplement 1b). In the nocodazole washout assay, mChS6 rescued FA disassembly in SOCS6-depleted cells but mChS6mito did not (Figure 6—figure supplement 1c). These results suggested that SOCS6 needs to access FAs in order to inhibit their disassembly.
 
-We used two approaches to test whether CRL5
+We used two approaches to test whether CRL5SOCS6 represses Cas during FA disassembly. First, we used an optogenetic approach. We used the light-regulated association between the CIBN and CRY2 proteins (Kennedy et al., 2010) to sequester SOCS6 away from adhesion sites during the disassembly process. We introduced two plasmids into HeLa cells from which endogenous SOCS6 had been removed with siRNA. One plasmid encoded CRY2 fused to mCherry-tagged SOCS6 (CRY2mChS6), and the second encoded CIBN fused to GFP and the mitochondrial targeting sequence (CIBNGFPmito) (Figure 6a). In the dark, CRY2mChS6 co-localized with FAK in FAs (Figure 6b left). In the light, however, CRY2mChS6 co-localized with CIBNGFPmito at the mitochondria and was not detected in FAs (Figure 6b right). We then tested whether CRY2mChS6 could rescue FA disassembly using the nocodazole washout assay. Transfected cells were kept in the dark during growth and nocodazole treatment, so that CRY2mChS6 could diffuse and maintain normal levels of Cas. We then subjected the cells to light or dark conditions and removed nocodazole. The results showed that light inhibits FA disassembly (Figure 6c). This implies that SOCS6 must have access to FAs during the disassembly process, and that the steady state level of Cas in the cytoplasm only plays a minor role.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig6-v2.jpg)
 
-**Figure 6.:** (a) Light-regulated localization of SOCS6. (b) Localization of CRY2mChS6 in nocodazole-treated HeLa cells. In the dark, CRY2mChS6 was detected in the cytosol as well as co-localizing with FAK in FAs. However, under blue light illumination, CRY2mChS6 co-localized with CIBNGFPmito at the mitochondria and was not detected in FAs. Entire cell: z-projection, Deconvolution microscopy; ventral section: single plane, TIRF. (c) SOCS6 slows FA disassembly only if it has access to FAs during the disassembly process. Cells were plated on collagen IV-coated coverslips, serum-starved overnight, and incubated with nocodazole for 3 hr to induce microtubule disassembly and stabilize FAs. Cells were either kept in the dark during all steps of the assay or illuminated with blue light for 30 min before and during nocodazole washout (‘light’). Cells expressing both CRY2mChS6 and CIBNGFPmito were identified by epifluorescence and FA disassembly scored by immunofluorescence for FAK. Mean and standard deviation of three biologically independent experiments. *p<0.05; ***p<0.001. (d) Brief treatment with Cullin inhibitor MLN4924 or proteasome inhibitor epoxomicin stimulates FA disassembly. Nocodazole washout assay as in Figure 2. Cells were treated with 5 µM MLN4924 or 10 µM epoxomicin 1 hr before washout. Mean and standard deviation of three biologically independent experiments. ***p<0.001DOI: http://dx.doi.org/10.7554/eLife.17440.021
+**Figure 6.:** (a) Light-regulated localization of SOCS6. (b) Localization of CRY2mChS6 in nocodazole-treated HeLa cells. In the dark, CRY2mChS6 was detected in the cytosol as well as co-localizing with FAK in FAs. However, under blue light illumination, CRY2mChS6 co-localized with CIBNGFPmito at the mitochondria and was not detected in FAs. Entire cell: z-projection, Deconvolution microscopy; ventral section: single plane, TIRF. (c) SOCS6 slows FA disassembly only if it has access to FAs during the disassembly process. Cells were plated on collagen IV-coated coverslips, serum-starved overnight, and incubated with nocodazole for 3 hr to induce microtubule disassembly and stabilize FAs. Cells were either kept in the dark during all steps of the assay or illuminated with blue light for 30 min before and during nocodazole washout (‘light’). Cells expressing both CRY2mChS6 and CIBNGFPmito were identified by epifluorescence and FA disassembly scored by immunofluorescence for FAK. Mean and standard deviation of three biologically independent experiments. *p<0.05; ***p<0.001. (d) Brief treatment with Cullin inhibitor MLN4924 or proteasome inhibitor epoxomicin stimulates FA disassembly. Nocodazole washout assay as in Figure 2. Cells were treated with 5 µM MLN4924 or 10 µM epoxomicin 1 hr before washout. Mean and standard deviation of three biologically independent experiments. ***p<0.001
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (a) Biochemical properties of mitochondrial-targeted SOCS6. Plasmids encoding mCherry-SOCS6 (mChS6), mCherry-SOCS6-mito (mChS6mito) or mCherry-mito (mChXmito) were transiently transfected into HeLa cells together with (left) T7-tagged Cul5KR (mutated to inhibit Cullin activity) or (right) HA-tagged Cas. Following 30 min stimulation with 2 mM pervanadate to inhibit tyrosine phosphatases, cell lysates were analyzed by immunoprecipitation and Western blotting. (b) Cytosolic mChS6 rescues normal rates of FA disassembly but mitochondrion-associated mChS6mito does not rescue. Sample images and quantification from a nocodazole washout assay. Mean and standard error of three biologically-independent experiments. ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.17440.022
+**Figure 6—figure supplement 1.:** (a) Biochemical properties of mitochondrial-targeted SOCS6. Plasmids encoding mCherry-SOCS6 (mChS6), mCherry-SOCS6-mito (mChS6mito) or mCherry-mito (mChXmito) were transiently transfected into HeLa cells together with (left) T7-tagged Cul5KR (mutated to inhibit Cullin activity) or (right) HA-tagged Cas. Following 30 min stimulation with 2 mM pervanadate to inhibit tyrosine phosphatases, cell lysates were analyzed by immunoprecipitation and Western blotting. (b) Cytosolic mChS6 rescues normal rates of FA disassembly but mitochondrion-associated mChS6mito does not rescue. Sample images and quantification from a nocodazole washout assay. Mean and standard error of three biologically-independent experiments. ***p<0.001.
 
-As an independent approach to assess the timing of CRL5
+As an independent approach to assess the timing of CRL5SOCS6 action, we again used the neddylation inhibitor, MLN4924, which inhibits CRL5 and other cullin-RING E3s (Soucy et al., 2009). MT-dependent FA disassembly was stimulated when MLN4924 was added an hour before and during 30 min of nocodazole removal (Figure 6d). A similar result was obtained with epoxomicin, a proteasome inhibitor (Meng et al., 1999) (Figure 6d). The results suggest that one or more CRLs and the proteasome need to be active during the disassembly process. Moreover, two hours of treatment with MLN4924 also increased FA assembly and disassembly rates at front but not back of migrating MCF10A cells (Figure 7a,b). This short exposure to MLN4924 increased pYCas levels in front but not back FAs and had no effect on total Cas levels (Figure 7c). Even though the turnover of many cell proteins is altered by MLN4924 and epoxomicin, the results are consistent with the hypothesis that the activities of Cullins and the proteasome are required during the process of FA disassembly. Combined with the optogenetics results, we suggest that SOCS6 regulates FA turnover locally by direct interaction with pYCas in or near FAs, and not by binding to or altering the steady state concentration of Cas or other proteins in the cytosol.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/17440/elife-17440-fig7-v2.jpg)
 
-**Figure 7.:** (a,b) Focal adhesion dynamics of control and MLN4924-treated MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. 5 µM MLN4924 was added to cells 2 hr before imaging. (a) Rainbow color representation of FA appearance and disappearance at the front of control and MLN4924-treated cells. (b) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and MLN4924-treated (purple) cells. Mean and standard error of median rates from each of four time-lapse movies are indicated. (c,d) MLN4924 increases pYCas locally in FAs at the leading edge but does not increase overall Cas levels. (c) Western blot of total cell lysate. 5 µM MLN4924 was added 4 hr before lysis. Cas was not increased on MLN4924 treatment. (d) MCF10A cells were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. 5 µM MLN4924 was added to cells 4 hr before fixing. Cells were stained with antibodies against vinculin and pYCas. Deconvolution microscopy, ventral section. The mean ratio of pYCas to vinculin intensity (integrated) was calculated for >500 FAs at the front and >1800 FAs at the back in ~16 cells for each condition. (e) Summary model. Cas is phosphorylated specifically in FAs at the front of the cell. SOCS6 binds to pYCas in the FAs and locally inhibits pYCas via CRL5 and the proteasome. In cells lacking SOCS6 or Cul5, or in which SOCS6 cannot access FAs or cullins or the proteasome is inhibited, then pYCas stimulates FA disassembly, dependent on microtubules (MTs). In other parts of the cell, slow FA disassembly may occur by MT and clathrin-dependent mechanisms.DOI: http://dx.doi.org/10.7554/eLife.17440.023
+**Figure 7.:** (a,b) Focal adhesion dynamics of control and MLN4924-treated MCF10A cells migrating into a scratch wound in EGF-deficient medium, monitored using EYFP-vinculin and TIRF microscopy. 5 µM MLN4924 was added to cells 2 hr before imaging. (a) Rainbow color representation of FA appearance and disappearance at the front of control and MLN4924-treated cells. (b) FA assembly and disassembly rate constants from the front (circles) and back (squares) of control (gray) and MLN4924-treated (purple) cells. Mean and standard error of median rates from each of four time-lapse movies are indicated. (c,d) MLN4924 increases pYCas locally in FAs at the leading edge but does not increase overall Cas levels. (c) Western blot of total cell lysate. 5 µM MLN4924 was added 4 hr before lysis. Cas was not increased on MLN4924 treatment. (d) MCF10A cells were allowed to reach confluence, wounded, and allowed to migrate in the absence of EGF. 5 µM MLN4924 was added to cells 4 hr before fixing. Cells were stained with antibodies against vinculin and pYCas. Deconvolution microscopy, ventral section. The mean ratio of pYCas to vinculin intensity (integrated) was calculated for >500 FAs at the front and >1800 FAs at the back in ~16 cells for each condition. (e) Summary model. Cas is phosphorylated specifically in FAs at the front of the cell. SOCS6 binds to pYCas in the FAs and locally inhibits pYCas via CRL5 and the proteasome. In cells lacking SOCS6 or Cul5, or in which SOCS6 cannot access FAs or cullins or the proteasome is inhibited, then pYCas stimulates FA disassembly, dependent on microtubules (MTs). In other parts of the cell, slow FA disassembly may occur by MT and clathrin-dependent mechanisms.
 
 The results suggest a model in which FA disassembly is slowed at the cell front by pYCas-dependent binding of SOCS6. SOCS6 recruits CRL5 and ubiquitinates pYCas, which is then removed through proteasomal degradation (Figure 7d). If SOCS6 or Cul5 is absent, if SOCS6 is held away from FAs, or if cullin or proteasomal inhibitors are present, then pYCas stimulates FA disassembly. A different, clathrin-dependent process prevails under the cell body. SOCS6 traffic thus controls the balance between FA assembly and disassembly in different parts of the cell.
 
@@ -157,7 +506,7 @@ Perhaps our most surprising finding is that SOCS6 needs to be present in FAs, an
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 PCR amplification utilized proof-reading Phusion or Herculase enzymes and PCR amplified regions and junctions were sequenced.
 
@@ -171,7 +520,7 @@ pBabePuromChSOCS6 was made by amplifying mChXS6 with BamHI and EcoRI primers and
 
 pCRY2mChS6 and pCIBNGFPmito were made as follows: pCRY2PHR-mCherryN1 and pCIBN(deltaNLS)-pmGFP were obtained from Addgene (Hughes et al., 2012). pCRY2PHR-mCherryN1 was cut with NheI and BsrGI and CRY2PHR-mCherryN1 cloned into pmChS6 which had been cut similarly, removing mCh but leaving S6 and the pCAG backbone, to create pCRY2mChS6. pCIBN(deltaNLS)-pmGFP was cut with NheI and AgeI and CIBN(deltaNLS) cloned into pGFPXmito (Bear et al., 2000) which had been cut similarly, creating pCIBNGFPmito.
 
-## Cell lines
+### Cell lines
 
 MCF10A cells were cultured in DMEM/F12 (Thermo Fisher Scientific) supplemented with 5% horse serum (Thermo Fisher Scientific), 20 ng/ml EGF (Thermo Fisher Scientific), 0.5 µg/ml hydrocortisone (Sigma-Aldrich, St. Louis, MO), 0.1 µg/ml cholera toxin (EMD Millipore, Billerica, MA), 10 µg/ml insulin, and penicillin/streptomycin both at 100 U/mL (Thermo Fisher Scientific). MCF10A cells stably expressing Cul5 shRNA, Cas shRNA, pMXpuroII or pLXSH empty vectors have been previously described (Teckchandani et al., 2014). MCF10A cells stably expressing EYFP-vinculin from the MSCV promoter were prepared by retrovirus infection with pMSCVpuroEYFP-vinculin and selected with puromycin. MCF10A cells stably knocked down for Cas, Cul5 or both were infected with pLenti-H1_CAG_EYFP_C2_mVinculin and selected by FACS. MCF10A cells stably expressing mCherry-SOCS6 wildtype (WT) or LCQQ were prepared similarly by retrovirus infection with pBabePuromChSOCS6 constructs and selected with puromycin. Recombinant retroviruses were packaged using HEK 293 T cells, and infection carried out by standard protocols.
 
@@ -179,19 +528,77 @@ HeLa cells were cultured in DMEM supplemented with 10% FBS and penicillin/strept
 
 The identities of the MCF10A and HeLa cells were confirmed by STR DNA profiling. Mycoplasma testing showed that the MCF10A cells were mycoplasma free while the HeLa cells had low level contamination that could be reduced with Primocin (100 µg/ml, two weeks, InvivoGen, San Diego, CA). Primocin-treated Hela cells showed the same Cul5-regulated FA disassembly as untreated cells (compare Figure 4—figure supplement 2band Figure 2), suggesting that low level mycoplasma contamination did not affect our results
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: mouse anti-paxillin (BD Biosciences, San Jose, CA), rabbit anti-Cas, rabbit anti-FAK, rabbit anti-GAPDH and mouse anti-tubulin (Santa Cruz Biotechnology, Inc., Santa Cruz, CA), mouse anti-vinculin (Sigma-Aldrich), rabbit anti-phospho-p130 Cas (pTyr165) (Cell Signaling Technology, Beverly, MA); mouse anti-T7 (EMD Millipore), rat anti-tyr-tubulin and mouse anti-clathrin (Abcam, Cambridge, MA), mouse anti-HA (HA.11) (BioLegend, Dedham, MA) and rabbit anti-HA (Bethyl, Montgomery, TX). Mouse monoclonal to mCherry was courtesy of Ben Hoffstrom (FHCRC antibody facility) and Jihong Bai-.
 
-## siRNA and DNA transfections
+### siRNA and DNA transfections
 
-Target sequences and sources of siRNAs and shRNAs are shown in Table 2. For siRNA transfection, EYFP vinculin-expressing MCF10A cells were resuspended in growth media and added directly to wells containing 50 pmol pooled siRNA oligonucleotides and Lipofectamine2000 (Thermo Fisher Scientific) on days 1 and 3 for analysis on day 5. Day three transfections were done in uncoated 35 mm fluorodishes (glass thickness 0.17 mm) (World Precision Instruments, Sarasota, FL).10.7554/eLife.17440.024Table 2.Target sequences and sources of si and shRNA constructs.DOI: http://dx.doi.org/10.7554/eLife.17440.024ReagentTargetSourceCul5 shRNA5'-GCTGCAGACTGAATTAGTAG-3'(Teckchandani et al., 2014)Cul5 siRNA pool5'-GACACGACGTCTTATATTA-3' 5'-CGTCTAATCTGTTAAAGAA-3' 5'-GATGATACGGCTTTGCTAA-3' 5'-GTTCAACTACGAATACTAA-3'GE Dharmacon, Lafayette, COCas shRNA5'-GGTCGACAGTGGTGTGTA-3'(Teckchandani et al., 2014)Cas siRNA pool5'-AAGCAGTTTGAACGACTGGA-3' 5'-CTGGATGGAGGACTATGACTA-3' 5'-CCAGGAATCTGTATATATTTA-3' 5'-CAACCTGACCACACTGACCAA-3'*QiagenSOCS6 siRNA pool5'-CAGCTGCGATATCAACGGTGA-3' 5'-TAGAATCGTGAATTGACATAA-3' 5'-CGGGTACAAATTGGCATAACA-3' 5'-TTGATCTAATTGAGCATTCAA-3'QiagenSOCS6 siRNA pool (alternate)†5'-GAACATGTGCCTGTCGTTA-3' 5'-GAAAGTATGCGCTGTCATT-3' 5'-TTTAAGCTTGAGCTTTCGCTC-3'GE Dharmacon Thermo Fisher ScientificCHC siRNA pool5'-GAAAGAATCTGTAGAGAAATT-3' 5'-GCAATGAGCTGTTTGAAGATT-3' 5'-TGACAAAGGTGGATAAATTTT-3' 5'-GGAAATGGATCTCTTTGAATT-3'GE DharmaconsiConsh Scrm5'-AATTCTCCGAACGTGTCACGT-3' 5'-TCGAGCGAGGGCGACTTAACC-3Qiagen this paper*Also targets mouse Cas. Not used in rescue experiments†Used in Figure 4—figure supplement 1.
+Target sequences and sources of siRNAs and shRNAs are shown in Table 2. For siRNA transfection, EYFP vinculin-expressing MCF10A cells were resuspended in growth media and added directly to wells containing 50 pmol pooled siRNA oligonucleotides and Lipofectamine2000 (Thermo Fisher Scientific) on days 1 and 3 for analysis on day 5. Day three transfections were done in uncoated 35 mm fluorodishes (glass thickness 0.17 mm) (World Precision Instruments, Sarasota, FL).
+
+**Table 2.**
+ Target sequences and sources of si and shRNA constructs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Target</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cul5 shRNA</td>
+      <td>5'-GCTGCAGACTGAATTAGTAG-3'</td>
+      <td>(Teckchandani et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Cul5 siRNA pool</td>
+      <td>5'-GACACGACGTCTTATATTA-3' 5'-CGTCTAATCTGTTAAAGAA-3' 5'-GATGATACGGCTTTGCTAA-3' 5'-GTTCAACTACGAATACTAA-3'</td>
+      <td>GE Dharmacon, Lafayette, CO</td>
+    </tr>
+    <tr>
+      <td>Cas shRNA</td>
+      <td>5'-GGTCGACAGTGGTGTGTA-3'</td>
+      <td>(Teckchandani et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Cas siRNA pool</td>
+      <td>5'-AAGCAGTTTGAACGACTGGA-3' 5'-CTGGATGGAGGACTATGACTA-3' 5'-CCAGGAATCTGTATATATTTA-3' 5'-CAACCTGACCACACTGACCAA-3'*</td>
+      <td>Qiagen</td>
+    </tr>
+    <tr>
+      <td>SOCS6 siRNA pool</td>
+      <td>5'-CAGCTGCGATATCAACGGTGA-3' 5'-TAGAATCGTGAATTGACATAA-3' 5'-CGGGTACAAATTGGCATAACA-3' 5'-TTGATCTAATTGAGCATTCAA-3'</td>
+      <td>Qiagen</td>
+    </tr>
+    <tr>
+      <td>SOCS6 siRNA pool (alternate)†</td>
+      <td>5'-GAACATGTGCCTGTCGTTA-3' 5'-GAAAGTATGCGCTGTCATT-3' 5'-TTTAAGCTTGAGCTTTCGCTC-3'</td>
+      <td>GE Dharmacon Thermo Fisher Scientific</td>
+    </tr>
+    <tr>
+      <td>CHC siRNA pool</td>
+      <td>5'-GAAAGAATCTGTAGAGAAATT-3' 5'-GCAATGAGCTGTTTGAAGATT-3' 5'-TGACAAAGGTGGATAAATTTT-3' 5'-GGAAATGGATCTCTTTGAATT-3'</td>
+      <td>GE Dharmacon</td>
+    </tr>
+    <tr>
+      <td>siConsh Scrm</td>
+      <td>5'-AATTCTCCGAACGTGTCACGT-3' 5'-TCGAGCGAGGGCGACTTAACC-3</td>
+      <td>Qiagen this paper</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Also targets mouse Cas. Not used in rescue experiments†Used in Figure 4—figure supplement 1._
 
 Knockdown experiments in HeLa cells were performed as described (Teckchandani et al., 2014). Briefly, cells were transfected with 50 pmol pooled siRNA oligonucleotides using Oligofectamine (Thermo Fisher Scientific) on days 1 and 3, transferred to collagen IV-coated glass coverslips on day four and analyzed on day 5. For rescue and light-activation experiments, DNA was transfected on day 4, cells were transferred to coated coverslips on day five and analyzed approximately 8 hr later.
 
 HeLa cells were grown in 6-well plates to near confluence and transfected with Lipofectamine 2000 (Thermo Fisher Scientific). Cells were transferred to collagen IV-coated coverslips or fluorodishes the next day and imaged 24 hr later.
 
-## Scratch wound assay
+### Scratch wound assay
 
 MCF10A cells were grown to confluence in uncoated fluorodishes or glass coverslips. Cell monolayers were starved overnight in the assay medium (DMEM/F12 with 2% horse serum, 0.5 µg/ml hydrocortisone, 0.1 µg/ml cholera toxin, 10 µg/ml insulin and 1 ng/ml Mitomycin C (Sigma-Aldrich)), wounded by scratching the surface with a P200 micropipette tip, and the medium replaced with fresh assay medium.
 
@@ -199,7 +606,7 @@ For live cell imaging EYFP vinculin-expressing MCF10A cells were recorded every 
 
 To detect mChSOCS6 in the front of migrating cells, 5 µM MLN4924 was added at the time of wounding, removed after 6 hr and cells were fixed 2 hr later. To detect pYCas in the front of migrating cells, cells were fixed 6 hr after wounding. Fixed cells were visualized using either TIRF or a 100× NA 1.4 oil objective (pixel size 0.064 µm) on a DeltaVision IX71 microscope (Olympus) equipped with an HQ2 CCD camera (Olympus). Images were acquired and deconvolved using SoftWorx (Applied Precision). Deconvolved images from single planes corresponding to the ventral surfaces of the cells or flattened z projections were analyzed using ImageJ (National Institutes of Health).
 
-## Microtubule-dependent focal adhesion disassembly assay
+### Microtubule-dependent focal adhesion disassembly assay
 
 FA disassembly experiments were performed as described by (Ezratty et al., 2005) with the following changes. Serum-starved HeLa cells grown at sub-confluent density (~50%) on glass coverslips or fluorodishes coated with collagen IV (2 µg/ml) were treated with 4 µg/ml nocodazole (Sigma-Aldrich) in DMEM with 0.5% BSA and 20 mM HEPES (pH 7.1) for 3 hr to completely depolymerize MTs. After three washes in PBS, cells were left in DMEM with 0.5% BSA and 20 mM HEPES to allow MT regrowth. 10 µM SU6656 (Sugen, San Francisco, CA) was added with Nocodazole. 5 µM MLN4924 and 10 µM epoxomicin (Sigma-Aldrich) were added 1 hr before and during washout.
 
@@ -207,23 +614,23 @@ To score FA disassembly, cells were visualized using a 100× NA 1.4 oil or 60× 
 
 For live imaging of EYFPEB1 and mChSOCS6 during nocodazole treatment and washout, 100×/1.49 CFI Apo TIRF oil immersion objective, Perfect Focus, and a stage top incubator with temperature and CO2 control were used. Images were acquired using the Nikon NIS Elements software.
 
-## Detection of SOCS proteins in FAs
+### Detection of SOCS proteins in FAs
 
 To detect SOCS proteins in FAs, HeLa cells were transfected with T7-SOCS2, T7-SOCS6 or T7 vector, seeded and serum-starved as described above, treated with 4 µg/ml nocodazole in DMEM with 0.5% FBS and 20 mM HEPES (pH 7.1) for 3 hr, fixed and imaged using a 100×/1.49 CFI Apo TIRF oil immersion objective in both TIRF and wide-field modes. SOCS6 was localized in migrating MCF10A cells using cells stably expressing pBabePuromChSOCS6WT.
 
-## Light activation experiments
+### Light activation experiments
 
 HeLa cells were transfected with siSOCS6 on days 1 and 3 as described above. On day 4, CRY2mChS6 and CIBNGFPmito were transfected using Lipofectamine2000. On day 5, cells were plated on collagen IV-coated fluorodishes. Approximately- 8 hr later they were treated with 4 µg/ml nocodazole for 3 hr in the dark. Washout was either done in the dark or cells were flashed with blue light 30 min before and during nocodazole washout. Blue light illumination was performed using the apparatus described (Hughes et al., 2012), with six, 350 mW Royal Blue LEDs positioned 7 cm above a 6-well plate and a duty cycle of 50 ms on, 12 s off. Cells were fixed in the dark under red LED illumination. To confirm that SOCS6 was removed from FAs after blue light illumination, cells were imaged using a 100×/1.49 CFI Apo TIRF oil immersion objective. To score FA disassembly and image SOCS6 in mitochondria cells were visualized using a 100× NA 1.4 oil oil objective on a DeltaVision IX71 microscope.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed in formalin at 25°C for 20 min or in methanol for 5 min at −20°C and rehydrated in TBS to visualize microtubules. After permeabilizing with 0.1% Triton X-100 in PBS for 5 min at 25°C, cells were washed in PBS and blocked for 1 hr in 5% normal goat serum/2% BSA in PBS before primary antibody was added for either for 3–4 hr at 25°C or overnight at 4°C. Coverslips were rinsed in PBS before the addition of Alexa Fluor 350-, Alexa Fluor 488-, Alexa Fluor 568- or Alexa Fluor 647-conjugated secondary antibodies, diluted 1:1000 (for deconvolution microscopy) or 1:500 (for TIRF microscopy), for 1 hr at 25°C. Alexa Fluor-tagged phalloidin was used to visualize actin. After several PBS rinses, coverslips were mounted in ProLong Gold solution (for deconvolution microscopy) or left in PBS (for TIRF microscopy).
 
-## Image analysis
+### Image analysis
 
 To determine FA assembly and disassembly rates, ‘front’ and ‘back’ time-lapse movies were uploaded on to the focal adhesion analysis server (FAAS) (Berginski et al., 2011) (http:// faas.bme.unc.edu/). The first frame of every movie was used for thresholding. The server returned visualizations showing each frame with every adhesion numbered and outlined (Figure 1—figure supplement 1c), as well as images of individual FAs tracked through time (Figure 1—figure supplement 1d). These visualizations were used to verify that the adhesions were correctly detected and tracked. To qualify for analysis, an adhesion had to be detected in at least five sequential frames (10 min) and had to be larger than 0.05 µm2. Once these parameters were set up, movies were submitted for automated analysis. The server calculated the mean EYFP-vinculin intensity for each FA through time, plotted intensity against time and automatically fitted linear models to the log-transformed time series of intensity values to calculate assembly/disassembly rate constants. FAs with P values less than 0.05 were omitted from the analysis. For each condition, many focal adhesions were measured (Table 1). The median rate constants in each of 4–6 experiments were determined and reported.
 
-## qPCR
+### qPCR
 
 RNA was extracted and cDNA synthesized. The abundance of Cul5 and SOCS6 RNA was measured by qPCR using QuantiTect SYBR green PCR kit (Qiagen), the 7900HT Real Time PCR System and SDS software (Applied Biosystems). The following primers were used:
 
@@ -239,7 +646,7 @@ GusB forward 5’-AGCGTGGAGCAAGA-3’
 
 GusB reverse 5’-ATACAGATAGGCAG-3’
 
-## Biochemistry
+### Biochemistry
 
 pmChS6mito and control plasmids were co-transfected with pSGTSrcYF and pCAGHACas or empty vector, into HeLa cells with Lipofectamine 2000 (Invitrogen). Cells were stimulated with 2 mM pervanadate for 30 min before lysis in TX100 lysis buffer. Samples were immunoprecipitated with rabbit anti-HA antibodies and protein A beads. Western blots were probed with mouse anti-HA or anti-mCherry.
 

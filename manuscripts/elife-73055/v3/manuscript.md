@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03dwxvb85 Department of Biochemistry, School of Chemical and Life Sciences, Jamia Hamdard University Delhi India
-2. https://ror.org/00za53h95 Department of Infectious Diseases, Centre for Tuberculosis Research, Johns Hopkins University Baltimore United States
-3. https://ror.org/01qjqvr92 Translational Health Science and Technology Institute, NCR Biotech Science Cluster Faridabad India
-4. https://ror.org/01dr6c206 4Jerzy Haber Institute of Catalysis and Surface Chemistry, Polish Academy of Sciences Niezapominajek Poland
+1. Department of Biochemistry, School of Chemical and Life Sciences, Jamia Hamdard University Delhi India ([ROR:03dwxvb85](https://ror.org/03dwxvb85))
+2. Department of Infectious Diseases, Centre for Tuberculosis Research, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Translational Health Science and Technology Institute, NCR Biotech Science Cluster Faridabad India ([ROR:01qjqvr92](https://ror.org/01qjqvr92))
+4. 4Jerzy Haber Institute of Catalysis and Surface Chemistry, Polish Academy of Sciences Niezapominajek Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
 
 † Corresponding author
 
 ## Abstract
 
-L,D -transpeptidase function predominates in atypical 3 → 3 transpeptide networking of peptidoglycan (PG) layer in Mycobacterium tuberculosis . Prior studies of L,D -transpeptidases have identified only the catalytic site that binds to peptide moiety of the PG substrate or β-lactam antibiotics. This insight was leveraged to develop mechanism of its activity and inhibition by β-lactams. Here, we report identification of an allosteric site at a distance of 21 Å from the catalytic site that binds the sugar moiety of PG substrates (hereafter referred to as the S-pocket). This site also binds a second β-lactam molecule and influences binding at the catalytic site. We provide evidence that two β-lactam molecules bind co-operatively to this enzyme, one non-covalently at the S-pocket and one covalently at the catalytic site. This dual β-lactam-binding phenomenon is previously unknown and is an observation that may offer novel approaches for the structure-based design of new drugs against M. tuberculosis .
+L,D-transpeptidase function predominates in atypical 3 → 3 transpeptide networking of peptidoglycan (PG) layer in Mycobacterium tuberculosis. Prior studies of L,D-transpeptidases have identified only the catalytic site that binds to peptide moiety of the PG substrate or β-lactam antibiotics. This insight was leveraged to develop mechanism of its activity and inhibition by β-lactams. Here, we report identification of an allosteric site at a distance of 21 Å from the catalytic site that binds the sugar moiety of PG substrates (hereafter referred to as the S-pocket). This site also binds a second β-lactam molecule and influences binding at the catalytic site. We provide evidence that two β-lactam molecules bind co-operatively to this enzyme, one non-covalently at the S-pocket and one covalently at the catalytic site. This dual β-lactam-binding phenomenon is previously unknown and is an observation that may offer novel approaches for the structure-based design of new drugs against M. tuberculosis.
 
 ## Introduction
 
@@ -42,19 +42,303 @@ In the current study, we investigate the interaction of PG substrate and β-lact
 
 ## Results
 
-## A pocket remote from the catalytic site of LdtMt2 binds PG
+### A pocket remote from the catalytic site of LdtMt2 binds PG
 
 The crystal structure of LdtMt2 was solved at 1.57 Å resolution (Table 1). This high-resolution crystal structure is an improvement of our previous efforts (Erdemli et al., 2012; Kumar et al., 2017) that enabled us to identify an electron density in a pocket between the IgD2-YkuD domains, and a glucose molecule could be modelled into the electron density at 1.0 sigma (Figure 1A, Figure 1—figure supplement 1). This glucose molecule is likely to be part of a PG disaccharide moiety originating from the E. coli cell lysate during LdtMt2 purification. The sugar molecule is ensconced at the IgD2-YkuD domain interface in a pocket, which we referred to as the S-pocket, making several electrostatic interactions with residues R209, E207, E168, R371, Y330, and A171. Three residues M157, A171, and L391 stabilize the sugar through hydrophobic interactions. To provide additional evidence for the binding of PG substrates within the S-pocket, we performed ThermoFluor assays with N-acetylmuramyl-L-alanyl-D-isoglutamine hydrate, a precursor of PG. A higher molar concentration of N-acetylmuramyl-L-alanyl-D-isoglutamine gradually shifted the melting curve of LdtMt2 indicative of saturable binding behaviour (Figure 1B, C, Figure 1—source data 1). R209E and E207A mutations in the S-pocket disrupted the binding of N-acetylmuramyl-L-alanyl-D-isoglutamine with LdtMt2. Y330F mutation also affected the binding of PG precursor. This was the order of magnitude of detrimental effect of mutations in the S-pocket on PG precursor binding: R209E ≥ E207A > Y330. As the binding of PG precursor was in mM range, this indicated a weak binding with the S-pocket.
 
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LdtMt2–sugar</th>
+      <th>LdtMt2–T203</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>29.73–1.58 (1.64–1.58)</td>
+      <td>30.0–1.7 (1.73–1.70)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 1 21 1</td>
+      <td>P 1 21 1</td>
+    </tr>
+    <tr>
+      <td>Unit cell (Å)</td>
+      <td>60.906, 93.981, 75.539,90, 92.975, 90</td>
+      <td>60.799 94.278 75.707 90.00 93.14 90.00</td>
+    </tr>
+    <tr>
+      <td>Unique reflectionsa</td>
+      <td>111,390</td>
+      <td>90,418</td>
+    </tr>
+    <tr>
+      <td>Multiplicitya</td>
+      <td>4.3 (4.1)</td>
+      <td>5 (5)</td>
+    </tr>
+    <tr>
+      <td>Completenessa</td>
+      <td>96.0 (98.6)</td>
+      <td>97.4 (95.9)</td>
+    </tr>
+    <tr>
+      <td>Rmergea, b</td>
+      <td>0.048 (0.55)</td>
+      <td>0.073 (0.74)</td>
+    </tr>
+    <tr>
+      <td>Overall I/σ(I)a</td>
+      <td>20.37 (1.8)</td>
+      <td>23.7 (3.3)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork (%)c</td>
+      <td>0.1662</td>
+      <td>0.1666</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)d</td>
+      <td>0.1980</td>
+      <td>0.1853</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.009</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>1.03</td>
+      <td>1.033</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>14.9</td>
+      <td>14.2</td>
+    </tr>
+    <tr>
+      <td>Active-site ligand</td>
+      <td>19.28</td>
+      <td>L01 = 25.71, T20 = 34.1</td>
+    </tr>
+    <tr>
+      <td>Ramachandaran</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favoured</td>
+      <td>98.28%</td>
+      <td>97.99%</td>
+    </tr>
+    <tr>
+      <td>Additional allowed</td>
+      <td>1.72%</td>
+      <td>2.01%</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>7F71</td>
+      <td>7F8P</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parenthesis are for the highest resolution shell._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig1-v3.jpg)
+
+**Figure 1.:** (A) Crystal structure of LdtMt2 in complex with one glucose molecule. The inset shows the 2Fo-Fc omit map (contoured at 1.0σ) of glucose (cyan colour) modelled into the S-pocket of LdtMt2 in the crystal structure. (B) ThermoFluor assay for binding studies with the PG-precursor N-acetylmuramyl-L-alanyl-D-isoglutamine hydrate with wild-type LdtMt2, R209E, E207A, and Y330F mutants. A change in melting temperature (∆Tm) at y-axis was plotted against the ligand concentrations at x-axis in GraphPad Prism software. (C) Differential fluorescence (−dF/dT) graphs of ThermoFluor assay for LdtMt2 and mutants. The dotted line indicates the Tm, and a red arrow indicates the direction of thermal shift. A chemical structure above the ThermoFluor assay graph is N-acetylmuramyl-L-alanyl-D-isoglutamine hydrate. (D) Superposition of LdtMt2 (green) with PG-bound LdtBs, the Bacillus subtilis L,D-transpeptidase (PDB ID: 2MTZ) (pink). YkuD domain of LdtMt2 was superposed with catalytic domain of ldtBS with an RMSD of 1.46 Å. PG chain is shown in cyan colour. (E) Modelling of PG (cyan colour) into the LdtMt2 (green). Electrostatic potential (negative in red, positive in blue) highlights the acidic and positively charge surface and binding of PG chain in L,D-transpeptidases LdtBS and LdtMt2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** S-pocket is represented in surface. Sugar is shown in stick model in pink colour. 2Fo-Fc map is shown in blue colour and contoured at 1.0σ.
+
 An atomic model of the L,D-transpeptidase from B. subtilis (LdtBS) in complex with nascent PG chain was described earlier (PDB ID: 2MTZ) (Schanda et al., 2014). As LdtBS has a LysM domain that LdtMt2 lacks, we superposed the catalytic domain of LdtBS with YkuD domain of LdtMt2 with an RMSD of 1.46 Å. Superposition of the structures of the LdtMt2–sugar complex with the LdtBS–PG complex suggests that longer nascent PG chains thread across the S-pocket in between the IgD1-YkuD domains of LdtMt2 (Figure 1D). In the LdtBS structure, the acidic sugar moieties of PG chain bind in-between the LsyM domain and catalytic domain across a positively charged groove (Figure 1E). Based on the structural details of PG binding in LdtBS (Schanda et al., 2014) and LdtMt2 (Figure 1A), a PG chain was computationally placed over a positively charged surface across the IgD2-YkuD domain interface encompassing the S-pocket. This computational modelling of a longer PG chain spatially aligns one of its tetrapeptide stem across an inner cavity of the catalytic site in YkuD domain in LdtMt2 (Figure 1E), similar to reports of carbapenem and a PG-moiety binding in the same position (Bianchet et al., 2017; Erdemli et al., 2012; Kumar et al., 2017). This inner cavity of the catalytic site is proposed to bind the acceptor tetrapeptide stem, and the outer cavity to bind the donor tetrapeptide stem prior to their 3–3 transpeptide cross-linkage by LdtMt2 (Erdemli et al., 2012). Based on our crystal structure and modelling study, we propose that the S-pocket anchors the disaccharide moiety of one of the nascent PG chains prior to transpeptidation of tetrapeptide stems in the catalytic site.
 
-## The S-pocket modulates β-lactam hydrolysis activity
+### The S-pocket modulates β-lactam hydrolysis activity
 
 Our crystal structure reveals that LdtMt2 is composed of three distinct domains as shown in Figure 2A. As the S-pocket resides within the IgD2-YkuD domain interface, we investigated whether the S-pocket or different LdtMt2 domains play contributing role in the enzyme’s catalytic function. Due to the lack of tractable enzymatic assays with native PG substrates for observing physiological catalytic activity, we choose nitrocefin, a chromogenic β-lactam, as a reporter substrate to assess the β-lactam hydrolysis activity (Kumar et al., 2017). To undertake this study, we expressed and purified fragments of LdtMt2 corresponding to IgD1, IgD2, IgD1–IgD2, IgD2-YkuD, and YkuD domains. The full-length LdtMt2 holoenzyme showed a Vmax of 0.23 µM/min and Km of 16.32 µM in the nitrocefin hydrolysis assay (Table 2). Deletion of the IgD1 domain assessed by the IgD2-YkuD domain fragment resulted in no effect on the β-lactam hydrolysis. However, deletion of IgD2 from the YkuD domain as assessed by the YkuD fragment alone led to a significant adverse effect on the nitrocefin hydrolysis activity with an increase in the Km value to 129 µM (an ~eightfold increase) and a decline in enzyme turn-over by ~tenfold (Figure 2B, Figure 2—source data 1, and Table 2). This suggests an important role of S-pocket which is partly carried by the IgD2 domain in governing the catalytic activity of LdtMt2 enzyme. We further evaluated the role of the S-pocket by generating site-directed mutations at residues R209, Y330, and E207 as they are situated within the S-pocket and interact with the sugar moiety (Figure 2B). R209 makes part of IgD2 domain and Y330 residue comes from the YkuD domain into the S-pocket. Y330F mutation led to a decrease in the nitrocefin hydrolysis with a Vmax 0.15 µM/min and Km of 11.12 µM. R209E mutant hydrolysed nitrocefin with a Km 428 µM that is ~26-fold higher than wild-type, while its Vmax remained almost the same as wild-type. A high Km value is an indicator of weak binding of the substrate with the enzyme, and shows that the enzyme would need a greater number of substrate molecules to achieve a maximum rate of reaction. A E207A mutation also showed a decrease in the β-lactam hydrolysis activity as compared to wild-type (Figure 2—figure supplement 1). It is highly likely that the S-pocket has a role in modulating the catalytic activity of LdtMt2 enzyme allosterically. We ruled out any impact of R209E mutation on the secondary structure content of LdtMt2 enzyme using circular dichroism (CD) spectroscopy (Figure 2C). The recorded difference in CD spectra is not significant to suggest any structural changes or problem in protein folding due to R209E mutation. In fact, an overall good overlapping CD spectrum of the wild-type and the R209E mutant suggests that the proteins maintain an overall similar folds. Moreover, the changes recorded in the CD spectra are gross overall changes in the structural element, so even if there are some minor changes in the CD spectra at 210 nm, it is difficult to correlate the region of change. Our biophysical ThermoFluor assay also suggests no major difference in the thermal melting of R209E and wild-type, indicating no major changes in overall fold of the protein (Figure 1C).
 
-## The S-pocket cross-talks with the catalytic site to modulate β-lactam hydrolysis
+![Figure 2.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig2-v3.jpg)
+
+**Figure 2.:** (A) The structure of LdtMt2 with each domain highlighted: IgD1 (orange), IgD2 (blue), YkuD domain (green), and C-terminal subdomain (CTSD) (cyan). A red dotted line demarcates the 21 Å distance between the S-pocket and the catalytic site. (B) Chromogenic nitrocefin hydrolysis activity of truncated LdtMt2 fragments corresponding to the IgD1, IgD2, IgD1–IgD2, YkuD, IgD2-YkuD domains, R209E, and Y330F mutants. (C) Circular dichroism (CD) spectra of wild-type and R209E mutant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig2-figsupp1-v3.jpg)
+
+**Table 2.**
+ Kinetic parameters of β-lactam hydrolysis by LdtMt2 and mutant proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enzyme</th>
+      <th>Vmax (µM/min)</th>
+      <th>Km (µM)</th>
+      <th>Kcat (s−1)</th>
+      <th>Kcat/Km (M−1 s−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LdtMt2 (∆N55)</td>
+      <td>0.23 ± 0.01</td>
+      <td>16.32 ± 1.78</td>
+      <td>7.7E−4</td>
+      <td>47.18</td>
+    </tr>
+    <tr>
+      <td>IgD1</td>
+      <td>Ambiguous</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IgD2</td>
+      <td>Ambiguous</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IgD1–IgD2</td>
+      <td>Ambiguous</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>IgD2-YkuD</td>
+      <td>0.21 ± 0.01</td>
+      <td>16.18 ± 2.24</td>
+      <td>7.0E−4</td>
+      <td>43.26</td>
+    </tr>
+    <tr>
+      <td>YkuD</td>
+      <td>0.15 ± 0.02</td>
+      <td>129.5 ± 41.80</td>
+      <td>5.0E−4</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>R209E</td>
+      <td>0.25 ± 0.07</td>
+      <td>428.40 ± 195.9</td>
+      <td>8.3E−4</td>
+      <td>1.90</td>
+    </tr>
+    <tr>
+      <td>Y330F</td>
+      <td>0.15 ± 0.01</td>
+      <td>11.12 ± 3.15</td>
+      <td>5.0E−4</td>
+      <td>44.96</td>
+    </tr>
+    <tr>
+      <td>S351A</td>
+      <td>0.11 ± 0.02</td>
+      <td>123.1 ± 56.7</td>
+      <td>3.7E−4</td>
+      <td>3.01</td>
+    </tr>
+    <tr>
+      <td>C354A</td>
+      <td>Ambiguous</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>H352A</td>
+      <td>0.10 ± 0.01</td>
+      <td>21.14 ± 6.11</td>
+      <td>3.3E−4</td>
+      <td>15.61</td>
+    </tr>
+    <tr>
+      <td>H336N</td>
+      <td>0.07 ± 0.01</td>
+      <td>39.13 ± 17.92</td>
+      <td>2.3E−4</td>
+      <td>5.88</td>
+    </tr>
+    <tr>
+      <td>M303A</td>
+      <td>0.14 ± 0.01</td>
+      <td>11.71 ± 2.90</td>
+      <td>4.7E−4</td>
+      <td>40.14</td>
+    </tr>
+    <tr>
+      <td>S337A</td>
+      <td>0.23 ± 0.01</td>
+      <td>23.30 ± 2.51</td>
+      <td>7.6E−4</td>
+      <td>32.62</td>
+    </tr>
+    <tr>
+      <td>K282A</td>
+      <td>0.16 ± 0.01</td>
+      <td>12.06 ± 3.23</td>
+      <td>5.3E−4</td>
+      <td>43.94</td>
+    </tr>
+  </tbody>
+</table>
+
+### The S-pocket cross-talks with the catalytic site to modulate β-lactam hydrolysis
 
 To evaluate the effects of mutations in the S-pocket on catalytic site activity ~21 Å away, we ran molecular dynamic (MD) simulations of the LdtMt2 wild-type and R209E mutant proteins. Changes in the structural features, before and after the R209E mutation were analyzed by calculating α-alpha RMSD (root mean square deviation) over the course of 200-ns simulation. These calculations were performed using GROMACS (Pronk et al., 2013). While the mutant model exhibits slightly higher dynamics after 65 ns, the overall RMSD of the models ranged from 0 to 0.45 Å and showed stable conformation for the entire period. Both models show constant stability after 120 ns (Figure 3—figure supplement 1). After 200 ns of MD simulations, structural and conformational changes were observed in the catalytic center of YkuD domain including the catalytic triad residues C354, H336, and S337 and other residues in the catalytic site, namely, S351, M303, and W340. After the MD simulations in wild-type LdtMt2, H336-NE2 formed a hydrogen bond interaction with side chain hydroxyl group oxygen (OG) of S351 (Figure 3A). A probably density graph calculated a close hydrogen bond distance between H336-NE2 and S351-OG (Figure 3B, Figure 3—source data 1). A hydrogen bond interaction was also observed between H336-ND1 and backbone oxygen (O) of S337 (Figure 3A), and this interaction has been reported to be important for stabilizing the tautomer of H336 protonated at NE2 (Erdemli et al., 2012).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig3-v3.jpg)
+
+**Figure 3.:** (A) Superposition of molecular dynamic (MD) simulated structures of catalytic site of wild-type LdtMt2 (146–408 residues, green) and the R209E mutant (146–408 residues, pink) at 150 ns trajectory along with a trajectory (cyan) at 0 ns. The inset shows a detailed view of the catalytic site of the wild-type protein and R209E mutant at 150 ns trajectory. (B) Dynamic distance analysis of key residue pairs vs. simulation time calculated from 200 ns of MD simulation run. A density function graph is also plotted. (C) Chromogenic nitrocefin hydrolysis activity of wild-type LdtMt2 and different mutants with alterations in both the S-pocket and catalytic site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig3-figsupp1-v3.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Root mean square fluctuation (RMSF) graph of wild-type LdtMt2 (blue) and R209 mutant (orange) over the duration of 200 ns of molecular dynamic (MD) simulations. (B) A density function graph of network analysis of dynamic distance between selected pair of amino acid residues in LdtMt2. (C) Structure of LdtMt2 (green colour) with highlighted residue pairs (shown in stick model and pink colour) that undergo alterations in the dynamics subsequent upon mutation in R209 residue.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Plotted correlation map showing a coupling of dynamic motions between residues. Highlighted white boxes show positive correlation (>0 value) of R209 residue with other residues from the S-pocket and catalytic site. (B) Graph of centrality measure vs. each amino acid residue. The higher the centrality values, the more likely is the residue (node) important for the three-dimensional fold of the protein and network of interactions. (C, D) Network paths computed in cytoscape from the simulation of wild-type and R209E mutant protein from 209 residue towards catalytic site residues. Red arrows indicate edges with >6 threshold of betweenness. (E) Structure of LdtMt2 representing the flow of network of allosteric communications from the S-pocket to catalytic site.
 
 When we assessed the MD simulated structure of the R209E mutant, we found that imidazole ring of H336 was flipped that led to a disruption of hydrogen bond interaction between H336-ND1 and backbone oxygen (O) of S337 (Figure 3A). A probably density graph also revealed no hydrogen bond interaction between H336-ND1 and S337-O in R209E mutant (Figure 3B, Figure 3—source data 1). In addition, no hydrogen bond interaction was found between H336-NE2 and the hydroxyl group oxygen (OG) of the S351 residue and a probably density graph calculated between H336-NE2 and S351-OG pair also computed an increase in their distance during 200 ns of simulations (Figure 3B, Figure 3—source data 1). Another W340 residue that resides outside the catalytic pocket comes closer to M303 and H336 through hydrophobic interactions to block the outer pocket of catalytic core. A close distance between W340-Çα and M303-Çα was also confirmed by probably density graph calculated along 200 ns of MD simulations (Figure 3B, Figure 3—source data 1). Such blockage of outer catalytic pocket by W340 would also hinder the dynamics of the YkuD flap, which has been reported to be important in β-lactam binding (Fakhar et al., 2017).
 
@@ -62,7 +346,7 @@ We further computed the root mean square fluctuation (RMSF) of wild-type and R20
 
 To identify the functional relevance of dynamic distance that were computed in wild-type and R209E mutant, we performed in vitro β-lactam hydrolysis activity with site-directed mutants of the catalytic triad residues C354, H336, and S337, and other important residues namely M303 and S351 that were highlighted in MD simulations. Mutation of catalytic triad residue S337 to alanine did not disrupt the β-lactam hydrolysis activity and this is expected as a S337A mutation should not disrupt the hydrogen bond interaction between H336-ND1 and backbone oxygen of alanine residue. The S337 residue has been reported as an important part of catalytic triad (C354-H336-S337) in LdtMt2 (Erdemli et al., 2012). In L,D-transpeptidase from B. subtilis, cysteine–histidine–glycine makes a catalytic triad where serine (in LdtMt2) corresponds to glycine (in LdtBS) (Lecoq et al., 2012). A hydrogen bond interaction with H336-ND1 should remain conserved even if S337 is replaced by alanine or glycine. Mutation of C354 to alanine and H336 to asparagine disrupted β-lactam hydrolysis as expected. Additionally, mutation of the S351 residue to alanine disrupted β-lactam hydrolysis activity, almost to the same degree as seen in the H336N mutant, with a ~15-fold decrease in enzyme turn-over (Table 2). In MD simulation runs with the wild-type structure, the S351 sidechain hydroxyl group forms hydrogen bond interaction with H336-NE2, and this hydrogen bond interaction is absent in the R209E mutant structure (Figure 3A). H336 is important for deprotonating the C354 sulphur to allow nucleophilic attack on carbonyl group of β-lactam ring (Erdemli et al., 2012). We suggest that, in addition to C354-H336-S337 catalytic triad, S351 residue may also form an important part of catalytic center to stabilize H336 during β-lactam binding and hydrolysis in LdtMt2.
 
-## S-pocket cross-talks with catalytic site through an allosteric communication pathway
+### S-pocket cross-talks with catalytic site through an allosteric communication pathway
 
 We further delved into the pathways of communication signals that propagate between the S-pocket and catalytic site. Network analysis was performed using correlation map, shortest distance paths and centrality analysis between the amino acids of LdtMt2 enzyme (Figure 3—figure supplement 3 and Figure 3—source data 3). A degree of coupled motion in the LdtMt2 was measured by normalizing the cross-correlation matrix of atomic fluctuations over the length of 200-ns simulations. There is a coupling observed between R209 amino acid and distant catalytic site residues showed as white boxes (Figure 3—figure supplement 3A). Degree of nodes as centrality were calculated through which the major traffic of communication signals propagates over the length of 200-ns simulations (Figure 3—figure supplement 3B). This highlighted a number of important residues (nodes here) in the S-pocket (namely R209, Y330, and Q327), YkuD flap (namely I301, D304, S305, D321, V322, Y308, Y318, and M303) and the catalytic center (namely H337, C354, L355, S351, S337, and W340) with high degree of centrality.
 
@@ -70,11 +354,27 @@ Furthermore, an examination of edge betweenness centrality revealed shortest pat
 
 Based on the network analysis, we suggest two major allosteric communication pathways that emanate from the S-pocket: (1) direct-allosteric communication pathway to impact the dynamic motion of the catalytic center; (2) indirect-allosteric communication via the YkuD flap (Figure 3—figure supplement 3E). Direct-allosteric communication emanates through R209 > Y330 > I328 > L355 to impact the dynamic motion of H336 residue. I328 interacts with L355 through the hydrophobic interactions. L355 backbone oxygen makes hydrogen bond interaction with H336-NE2. As H336 forms an important part of catalytic triad (Erdemli et al., 2012), any alteration in the direct-allosteric communication pathway via I328/L355 nodes may impact the catalysis. An indirect-allosteric communication from the S-pocket via YkuD flap involves a number of residues, but role of M303 seems to be most important one as per the network analysis. M303 is the node from where multidirectional communications flow towards catalytic residue H336 and YkuD flap residues Y318, D321, and V322. M303 makes hydrophobic interactions with Y308, Y318, and V322 and these multiple interactions may have a paramount impact on YkuD dynamics and catalytic residue H336 that is stabilized through hydrophobic interaction by V322. We confirmed the importance of M303 residue by site-directed mutagenesis that made a detrimental impact on β-lactam hydrolysis activity by decreasing the Vmax to 0.14 µM/min and Km to 11.7 µM (Figure 3C and Table 2). This is an eye-opening observation that several hydrophobic core nodes relay communications signals to the catalytic center that may couple with catalytically permissive environment. A most remarkable observation in the network analysis is the convergence of most of the communications signals at W340 residue and at H336. A dynamic distance and probability density graph analysis also computed a major dynamic change in W340 residue upon R209E mutation (Figure 3—figure supplement 2) and that may impact the catalytic process. A single R209E mutation disrupts the convergence of communication signals to W340 (Figure 3—figure supplement 3D) and also its dynamic distance with M303 and H336 residues (Figure 3A, B).
 
-## Both the S-pocket and catalytic site participate in β-lactam recognition cooperatively
+### Both the S-pocket and catalytic site participate in β-lactam recognition cooperatively
 
 Among β-lactams, the penicillin and cephalosporin subclasses are readily hydrolysed by LdtMt2, while the carbapenem subclass inhibits LdtMt2 by irreversible acylation of C354 residue in the active site. In the current study, we used the carbapenem molecule, biapenem, to evaluate acylation of LdtMt2 that could be influenced by a relay of of allosteric communications between the S-pocket and catalytic site, as depicted in Figure 3—figure supplement 3E. The rate of acylation by biapenem was measured by monitoring a decrease in biapenem absorbance at 292 nm wavelength. A single R209E mutation in the S-pocket completely disrupted biapenem-mediated acylation of the LdtMt2 enzyme (Figure 4A, B, Figure 4—source data 1). Mutation of catalytic residues C354, H336, and S351 also abrogated acylation with biapenem. These findings suggest that both the S-pocket and the catalytic center play important roles in driving acylation of the C354 catalytic residue by biapenem.
 
-To further understand the role of the S-pocket and catalytic site in biapenem binding to LdtMt2, we performed ThermoFluor assays. Different amounts of biapenem (0–400 µM) were titrated into 5.0 µM of LdtMt2 enzyme, and thermal shifts were measured at different drug concentrations (Figure 4C, D, Figure 4—source data 2). These studies revealed interesting observations: (1) increasing concentrations of biapenem led to a gradual change in melting temperature of LdtMt2 until it was fully saturated, and (2) biapenem binding decreased the melting temperature of protein. In the first observation, we found that LdtMt2–biapenem binding could be saturated only by enzyme:drug ratios as high as 1:80. This strongly suggests that biapenem saturates a surface of LdtMt2 through reversible, non-covalent interactions, as the covalent interactions have to be with a 1:1 molar ratio with rapid turn-over (in fractions of a second, see Figure 4B) and non-reversible. Beyond to its well-known covalent binding at the catalytic site (Kumar et al., 2017), these findings are consistent with non-covalent, saturable binding of biapenem to a second surface on LdtMt2. From the second observation, we conclude that biapenem binding destabilizes the protein possibly through structural changes. This structural destabilization may supersede the well-known structural changes in the YkuD flap at the catalytic site that are known to occur during β-lactam binding and covalent reaction with the SΥ atom of C354 (Bianchet et al., 2017; Fakhar et al., 2017; Kim et al., 2013).
+![Figure 4.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig4-v3.jpg)
+
+**Figure 4.:** (A) Acylation activity of biapenem with LdtMt2 and mutants R209E, H336N, S351A, H352N, and C354A was monitored at 292 nm wavelength using UV–visible spectrophotometry. Maximum absorbance spectra of biapenem were found at 292 nm that was used to monitor decrease in biapenem concentration upon acylation with the LdtMt2. The chemical structure of biapenem is shown above the biapenem acylation graph. (B) Rate of acylation of 50 µM biapenem per second with LdtMt2 and mutants. (C) ThermoFluor assays for binding of biapenem with LdtMt2 and mutants R209E, E207A, Y330F, S351A, H336N, and C354A mutants. A change in melting temperature (∆Tm) was plotted at y-axis verses the ligand concentrations at x-axis in GraphPad Prism software. (D) Differential fluorescence (−dF/dT) graphs of ThetrmoFluor assay for LdtMt2 and mutants. The dotted line indicates the Tm, and a red arrow indicates the direction of thermal shift. (E) Molecular dynamic (MD) simulations of LdtMt2 in complex with biapenem. LdtMt2 is represented in cartoon with green colour at 0 ns and cyan colour after running the MD simulations at 40 ns, and biapenem is represented in stick model with pink colour. The red arrow indicates the movement of biapenem to a second position revealed by the MD simulations after 40 ns trajectory.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** A red arrow indicates the direction of movement of biapenem during an overall 75 ns of MD simulation. LdtMt2 is represented in cartoon in green colour and biapenem in various trajectories is represented in stick model.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** LdtMt2 is represented in cartoon in green colour and biapenem in various trajectories is represented in stick model.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Snapshots of biapenem from both S-pocket and catalytic site. (B) Snapshots of biapenem from catalytic site. LdtMt2 is represented in cartoon in green colour and biapenem in various trajectories is represented in stick model.
+
+To further understand the role of the S-pocket and catalytic site in biapenem binding to LdtMt2, we performed ThermoFluor assays. Different amounts of biapenem (0–400 µM) were titrated into 5.0 µM of LdtMt2 enzyme, and thermal shifts were measured at different drug concentrations (Figure 4C, D, Figure 4—source data 2). These studies revealed interesting observations: (1) increasing concentrations of biapenem led to a gradual change in melting temperature of LdtMt2 until it was fully saturated, and (2) biapenem binding decreased the melting temperature of protein. In the first observation, we found that LdtMt2–biapenem binding could be saturated only by enzyme:drug ratios as high as 1:80. This strongly suggests that biapenem saturates a surface of LdtMt2 through reversible, non-covalent interactions, as the covalent interactions have to be with a 1:1 molar ratio with rapid turn-over (in fractions of a second, see Figure 4B) and non-reversible. Beyond to its well-known covalent binding at the catalytic site (Kumar et al., 2017), these findings are consistent with non-covalent, saturable binding of biapenem to a second surface on LdtMt2. From the second observation, we conclude that biapenem binding destabilizes the protein possibly through structural changes. This structural destabilization may supersede the well-known structural changes in the YkuD flap at the catalytic site that are known to occur during β-lactam binding and covalent reaction with the S$^{Υ}$ atom of C354 (Bianchet et al., 2017; Fakhar et al., 2017; Kim et al., 2013).
 
 As the S-pocket mutant R209E exhibited diminished β-lactam hydrolysis (Figure 3C) and acylation by biapenem (Figure 4A, B), we further analyzed the consequence of mutations in the S-pocket on the physical binding of biapenem. In contrast to a gradual decrease in the thermal stability displayed by wild-type LdtMt2 upon biapenem binding, the R209E mutant showed only a subtle change in Tm, and the saturating property of biapenem was virtually absent even at the highest concentration of 400 µM (Figure 4C, D, Figure 4—source data 2). E207A and Y330F mutations also showed detrimental effect on saturable behaviour of biapenem. This was the order of magnitude of detrimental effect of mutations in the S-pocket on reversible biapenem binding: R209E > E207A > Y330. We conclude that the mutations in the S-pocket hindered both non-covalent (as seen in Figure 4C) as well as covalent interactions with biapenem (as seen in Figure 4A, B). Additionally, as biapenem binds negligibly to the R209E mutant in contrast to wild-type LdtMt2, we did not observe decreases in the melting temperature of the R209E mutant with added biapenem as would be anticipated via structural changes in the YkuD flap (Fakhar et al., 2017). This is further illustrated by our MD simulation results wherein the R209E mutation brings W340 residue closer to the YkuD flap residue M303 and active-site core residue H336 to block access to the outer pocket of the catalytic site (Figure 3A, Figure 3—figure supplement 2). These R209E mutation-driven structural changes in the catalytic site and YkuD flap likely account for the inability of biapenem to bind to the R209E mutant of LdtMt2.
 
@@ -86,27 +386,96 @@ Next, MD simulation experiments were further performed with LdtMt2 structures ha
 
 However, when biapenem molecules were docked in both the S-pocket and catalytic site simultaneously, the pyrazolo[1,2a][1,2,4]triazolium R3 group of biapenem remained ensconced in S-pocket for 0–6 ns, made hydrophobic interactions with Y330 and L391 at 7–15 ns, and its pyrrolidine ring made additional π–π interactions with Y330 at 18–28 ns while remaining in the S-pocket, before finally moving out towards the YkuD flap of the catalytic site after 40 ns (Figure 4E, Figure 4—figure supplement 3A). In the catalytic site over the simulation interval, biapenem movement fluctuated less this time during 0–40 ns (see snapshots of biapenem trajectory in Figure 4—figure supplement 3B). Thus, MD simulations suggest that biapenem binding across the S-pocket surface imposes stability in fluctuations of β-lactam movement in the catalytic site. These MD simulations together with our experimental data support a model in which two biapenem molecules are recognized cooperatively by both the S-pocket and the catalytic site, with non-covalent saturable binding and covalent binding to acylate C354, respectively.
 
-## Binding patterns of various subclasses of β-lactams in the S-pocket
+### Binding patterns of various subclasses of β-lactams in the S-pocket
 
 As LdtMt2 binds various β-lactams with variable affinities (Bianchet et al., 2017), we performed docking studies of various subclasses of β-lactams with the S-pocket. Ampicillin and oxacillin from the penicillin subclass, cefotaxime from the cephalosporin subclass, biapenem from carbapenem subclass and an experimental carbapenem drug, T203, developed by our group (Kumar et al., 2017), were chosen for the study. The different β-lactams showed binding with the S-pocket of LdtMt2 with variable energy scores using Autodock (Table 3). Ampicillin docked into the S-pocket with a docking score of −7.1 kcal/mol with its R1 group tail 2-amino-2-phenylacetyl ensconced in the S-pocket through several electrostatic and hydrophobic interactions with the M157, E207, R209, R371, and Y330 residues (Figure 5A). Another penicillin subclass member, oxacillin (a penicillinase-resistant penicillin), displayed the highest docking score of −8.3 kcal/mol through its R1 group 5-methyl-3-phenyl-1,2-oxazole-4-carbonyl binding in the S-pocket (Figure 5—figure supplement 1A). Cefotaxime docked to the S-pocket with a docking score of −7.8 kcal/mol through R1 group tail thiozol-4yl (Figure 5B), similar to the biapenem R3 group (Figure 4E). The experimental carbapenem T203 docked to the S-pocket with the least −6.9 kcal/mol binding with its R3 group 2-isopropoxy-2-oxoethyl (Figure 5C). The β-lactam ring moieties of all of these β-lactams were found to be free of any interactions with the S-pocket or surrounding residues, similar to biapenem. However, after 18–28 ns of MD simulation trajectory, the pyrrolidine ring of biapenem could make π–π interaction with Y330 (Figure 4E), and it is possible that similar late binding interactions may occur similarly with other β-lactams.
 
+**Table 3.**
+ Docking score of LdtMt2 with β-lactam compounds in kcal mol−1 calculated by Autodock.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>Binding energy (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ampicillin</td>
+      <td>−7.1</td>
+    </tr>
+    <tr>
+      <td>Oxacillin</td>
+      <td>−8.3</td>
+    </tr>
+    <tr>
+      <td>Cefotaxime</td>
+      <td>−7.8</td>
+    </tr>
+    <tr>
+      <td>Biapenem</td>
+      <td>−6.3</td>
+    </tr>
+    <tr>
+      <td>T203</td>
+      <td>−6.9</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig5-v3.jpg)
+
+**Figure 5.:** (A) Top: ampicillin (stick model in green) bound to the S-pocket (cyan) of LdtMt2 through its R1 group side chain, 2-amino-2-phenylacetyl (red oval). Bottom: ThermoFluor assays for binding studies of ampicillin with wild-type LdtMt2 and the R209E mutant. (B) Top: cefotaxime (stick model in green) bound to the S-pocket (cyan) of LdtMt2 through its R1 group side chain, thiozol-4yl (red oval). Bottom: ThermoFluor assays for binding studies of cefotaxime with wild-type LdtMt2 and the R209E mutant. (C) Top: the experimental carbapenem drug T203 (stick model in green) bound to the S-pocket (cyan) of LdtMt2 through its R3 group side chain, 2-isopropoxy-2-oxoethyl (red circle). Bottom: ThermoFluor assays for binding studies of T203 drug with wild-type LdtMt2 and the R209E mutant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Oxacillin (stick model, red colour) bound into the S-pocket (green colour) of LdtMt2 through R1 group side chain 5-methyl-3-phenyl-1,2-oxazole-4-carbonyl. 5-Methyl-3-phenyl-1,2-oxazole-4-carbonyl group is highlighted with red circle in the chemical structure of oxacillin. (B) ThermoFluor assay for binding studies of oxacillin with wild-type LdtMt2.
+
 ThermoFluor assays were also performed to investigate the binding behaviours of these additional ß-lactam class members with LdtMt2 (Figure 5, Figure 5—source data 1). Ampicillin, which has been reported to be readily hydrolysed by LdtMt2 (Bianchet et al., 2017), showed a saturable binding behaviour (Figure 5A), but to a significantly lower degree than biapenem (Figure 4D). Surprisingly, with ampicillin the R209E mutation in the S-pocket completely reversed the gradual thermal shift in LdtMt2 towards a higher Tm indicative of an increase in structural stability in the setting of clearly saturable binding (Figure 5A). We interpret this to be consistent with reversible acylation of the C354 residue by ampicillin in addition to S-pocket binding. In support of this, a reversible acylation of the L,D-transpeptidase (Ldtfm from E. coli) by β-lactams in the catalytic site has been reported recently (Edoo et al., 2017; Zandi and Townsend, 2021). Oxacillin also showed a saturable binding with LdtMt2 (Figure 5—figure supplement 1B). With cefotaxime, the R209E mutation in the S-pocket strongly diminished saturable binding. And lastly, binding of experimental carbapenem drug T203 displayed a large saturable thermal shift with LdtMt2 (Figure 5C), similar to biapenem (Figure 4D). We conclude that many β-lactams (despite being weak or strong inhibitors of LtdMt2 activity) bind through the S-pocket with a saturable binding behaviour; however, the carbapenem subclass brings maximum thermal destabilization in protein structure due to non-hydrolysable covalent binding in catalytic site. Other classes of β-lactam drugs, specifically the penicillins and cephalosporins, are known to be readily hydrolysed by LdtMt2 (Cordillot et al., 2013; Kumar et al., 2017).
 
-## Structural details of allosteric cooperation in dual β-lactam binding
+### Structural details of allosteric cooperation in dual β-lactam binding
 
 To further understand the high-resolution details of structural changes may that occur in LdtMt2 upon covalent binding with β-lactam, the crystal structure of LdtMt2 was solved in complex with the experimental carbapenem drug T203 at a 1.7 Å resolution. Electron densities were observed in both the S-pocket and the outer cavity of catalytic pocket in the LdtMt2. Figure 6—figure supplement 1A, B shows the Fo-Fc omit map (contoured at 3.0σ) in both S-pocket and catalytic site. Consistent with our docking results of T203 drug with LdtMt2 (Figure 5C), the 2-oxoethyl side-chain of R3 group from T203 could be modelled into the electron density of the S-pocket. A second T203 drug was also modelled into the electron density map of the catalytic pocket. Figure 6A, B shows the 2Fo-Fc electron density map (contoured at 1.0σ) of T203 modelled in the S-pocket and catalytic site of the LdtMt2 in the crystal structure.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig6-v3.jpg)
+
+**Figure 6.:** (A) The 2Fo-Fc map (contoured at 1.0σ) of the T203-R3 group side chain, 2-isopropoxy-2-oxoethyl (pink), modelled in the S-pocket of LdtMt2 in the crystal structure. (B) The 2Fo-Fc omit map (contoured at 1.0σ) of the full T203 structure (pink) modelled in the catalytic-site of LdtMt2 where it acylates the C354 residue of LdtMt2. (C) Superposition of the LdtMt2–T203 complex (green) with C354A catalytic mutant structure (PDB ID: 3TX4, blue). The red arrows indicate movements in YkuD flap upon T203 drug binding. (D) Residues that have undergone allosteric alterations upon T203 drug binding are shown with stick models. LdtMt2–T203 complex residues are represented in green and the C354A catalytic mutant in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Fo-Fc omit map calculated in the S-pocket contoured at 3σ. (B) Fo-Fc omit map calculated in the catalytic site and contoured at 3.0σ. (C) T203 drug modelled into the S-pocket of LdtMt2 in the crystal structure. T203 drug is represented in stick model with green colour. (D) T203 drug modelled into the outer cavity of catalytic site of LdtMt2 in the crystal structure. LdtMt2 is represented in surface and T203 drug is represented in stick model with pink colour. (E) Superposition of T203 drug from docking result (green colour) with T203 drug from crystal structure (pink colour).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig6-figsupp2-v3.jpg)
+
 In the S-pocket of LdtMt2, the 2-oxoethyl sidechain of T203 drug is stabilized through hydrophobic interactions with the A171, M157, P169, and L390 residues (Figure 6A, Figure 6—figure supplement 1C). R371 makes an electrostatic interaction with the oxygen of the 2-oxoethyl moiety. No electron density was observed for the pyrrolidine ring of T203, while its carboxylic group fitted into an electron density making electrostatic interactions with backbone nitrogen of S296 and the guanidium side chain of R371. The modelling results of T203 into the electron density of the S-pocket were similar to the docking results of T203 drug that also has R3 group ensconced into the S-pocket with pyrrolidine ring remaining free of any interaction with LdtMt2 (Figure 5C, Figure 6—figure supplement 1E).
 
-In the catalytic site, the T203 carbapenem interacts with the outer cavity (Figure 6—figure supplement 1D) at a covalent distance from the SΥ atom of C354 (Figure 6B). The carbonyl oxygen of T203 makes hydrogen bond interactions with the hydroxyl group of Y318. The electron density for the R1-hydroxy ethyl group was not found, similar to three other related experimental carbapenems T206, T208, and T210 (Kumar et al., 2017). The methyl group of the pyrrolidine ring makes hydrophobic interaction with the phenyl ring of Y318. The amino N4 of the pyrrolidine ring makes electrostatic interactions with NE2 of H336 and the backbone amide nitrogen of H352. The carboxyl group at C3 of the pyrrolidine ring makes hydrogen bond interactions with the side chains of W340 and N356. W340 also forms hydrophobic interactions with the 2-oxoethyl tail of T203.
+In the catalytic site, the T203 carbapenem interacts with the outer cavity (Figure 6—figure supplement 1D) at a covalent distance from the S$^{Υ}$ atom of C354 (Figure 6B). The carbonyl oxygen of T203 makes hydrogen bond interactions with the hydroxyl group of Y318. The electron density for the R1-hydroxy ethyl group was not found, similar to three other related experimental carbapenems T206, T208, and T210 (Kumar et al., 2017). The methyl group of the pyrrolidine ring makes hydrophobic interaction with the phenyl ring of Y318. The amino N4 of the pyrrolidine ring makes electrostatic interactions with NE2 of H336 and the backbone amide nitrogen of H352. The carboxyl group at C3 of the pyrrolidine ring makes hydrogen bond interactions with the side chains of W340 and N356. W340 also forms hydrophobic interactions with the 2-oxoethyl tail of T203.
 
 We compared the structure of the LdtMt2–T203 complex with the C354A catalytic mutant structure (PDB ID: 3TX4) to seek alterations in conformation states of the enzyme around its catalytic site, YkuD flap, and S-pocket upon β-lactam binding. We chose the catalytic mutant structure of LdtMt2 for structural comparison studies only because the wild-type enzyme usually binds ligands and/or substrates from its recombinant bacterial source during the purification steps (Erdemli et al., 2012), including in the current study. We observed that binding of the T203 drug introduces unique allosteric alterations in the salt bridge and hydrogen bond interactions spanning the entire distance from the S-pocket to the YkuD flap of the catalytic site. Upon T203 drug binding, the YkuD flap bends slightly towards the S-pocket (Figure 6C). In the S-pocket, the M157 side chain moves closer to the drug by 1.5 Å to make a hydrophobic interaction with the 2-oxoethyl tail of T203 drug (Figure 6D). The R371 residue that was making salt bridge with E168 moves towards S296 through a hydrogen bond interaction and makes an additional ionic interaction with the carboxyl group of the T203 drug. The Q327 side chain that was previously producing a steric conflict with the carboxyl group of T203 drug moves away by a distance of 1.8 Å to make a water-mediated salt bridge with the hydroxyl group of Y308 that also moves down towards the S-pocket by a distance of 2.1 Å. The T203 drug binding induces an additional alteration in the YkuD flap by breaking the hydrogen bond interactions of H300 with D323 as well as D321 and also the interactions between D304 and S306. Breaking of these hydrogen bond interactions possibly relaxes the YkuD flap, enabling it to tilt towards the S-pocket mediated by new water-mediated salt bridge between Y308 and Q327. Alterations in the dynamics of YkuD flap were also observed in MD simulations subsequent upon R209E mutation in the S-pocket (Figure 3—figure supplement 2). Several of the allosteric changes observed in the crystal structure were matching with the dynamic distance analysis in MD simulation: (1) distance of H300 with D323 and D321 on YkuD flap, (2) distance of S306 with D304 on YkuD flap, and (3) distance of Y308 with Q327 (Figure 3—figure supplement 2B). As these networks of interactions were disrupted by R209E mutation in the S-pocket (Figure 3—figure supplement 2) or C354 mutation in the catalytic residue in the crystal structure (PDB ID: 3TX4), this suggests the pathway of allostery communication to be cooperative between S-pocket and catalytic site, and this is quite supported by the experimental data (Figures 3 and 4).
 
 In the crystal structure study of LdtMt2–T203 complex, 2Fo-Fc map shows low occupancy at S-pocket (Figure 6A). With low occupancy, the modelling of T203 drug could be biased in the S-pocket. To rule out any biasness and also further validate the cooperativity between the S-pocket and catalytic pocket in dual ß-lactam binding, MD were performed for (1) crystal structure of LdtMt2 complexed with T203 drugs at both S-pocket and catalytic site (referred to as LdtMt2–T203S-C), and (2) crystal structure of LdtMt2 complexed with T203 drug at S-pocket alone (referred to as LdtMt2–T203S, and this structure was prepared by removing T203 drug from the catalytic site in the crystal structure). It was observed that T203 drug in LdtMt2–T203S structure left from the S-pocket during the equilibration at 650 ps (Video 1). Production run for LdtMt2–T203S-C was performed for 50 ns (Figure 6—figure supplement 2). During 50 ns of simulations, one T203 drug remained bound to S-pocket, while the other one remained covalently attached to C354 residue in catalytic site (Video 2). This indicates a cooperativity in-between these the two sites in β-lactam binding and this is in agreement with the MD studies of LdtMt2 with biapenem drug (Figure 4E). Mutational changes in the S-pocket or the catalytic pocket nullify all the allosteric communications that are otherwise important in cooperative binding of dual β-lactams. The consequences of these mutational changes were experimentally confirmed by β-lactam hydrolysis assays (Figures 2B and 3C), acylation by biapenem (Figure 4A, B) and ThermoFluor assays (Figures 4 and 5) with different subclasses of β-lactams.
 
+![Video 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-video1.mp4.jpg)
+
+**Video 1.:** Residues in and around the catalytic and S-pocket residues are shown as solvent and transparent for proper visualization of the mechanism of the drug. Protein is shown in surface representation as diffused and grey. Cysteine is shown as stick model in yellow.
+
+![Video 2.](https://cdn.elifesciences.org/articles/73055/elife-73055-video2.mp4.jpg)
+
+**Video 2.:** Protein and ligands are shown in similar representation as in Video 1.
+
 ## Discussion
 
 In addition to the role of L,D-transpeptidases in remodelling the PG in non-replicating M. tb (Lavollay et al., 2008), this enzyme class is responsible for the resistance of M.tb to most β-lactam drugs, except carbapenems (Cordillot et al., 2013; Gupta et al., 2010). The molecular mechanisms and physiological function of L,D-transpeptidases and the basis for their genetic susceptibility to selective β-lactams remains incompletely understood. In this study we reveal important aspects of the physiological function of the M.tb L,D-transpeptidase enzyme, LdtMt2, identify a new PG disaccharide moiety-binding pocket (named the S-pocket), and describe the S-pocket’s role in allosteric modulation of the transpeptidase active site. Additionally, we observe that various β-lactams bind to the S-pocket through their tail regions to bring about allosteric changes which predispose the catalytic site for covalent inactivation by a second β-lactam. Based on our findings, we propose a model of dual β-lactam and/or dual PG substrate binding in the S-pocket and the catalytic site of LdtMt2 and that is allosteric cooperative (Figure 7).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig7-v3.jpg)
+
+**Figure 7.:** Purple dotted arrows indicate pathways of allosteric communication and red arrow indicates movement of YkuD flap during β-lactam and/or PG binding. A small red line in the figure indicates a covalent bond between donor and acceptor stem peptides of PG chain or covalent bond between catalytic residue C354 and β-lactam. β-Lactam molecule indicated in the model is biapenem.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73055/elife-73055-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A–D) Crystal structures of various LDTs, LdtMt1 (PDB ID: 4JMN; orange colour), LdtMt2 (PDB ID: 7F71; green colour), LdtMt3 (PDB ID: 6D4K; cyan colour), and LdtMt5 (PDB ID: 6D5A; pink colour). Highlighted residues in the crystal structures belong to S-pocket and catalytic site. (E) Superposition of various LDTs. Peptidoglycan (PG) sugar moiety bound across the S-pocket is shown in sphere model. (F) Superposition of the conserved residues in the S-pocket. PG sugar moiety is shown in stick model with blue colour.
 
 M.tb contains several paralogs of L,D-transpeptidases, namely LdtMt1, LdtMt2, LdtMt3, LdtMt4, and LdtMt5 (Gupta et al., 2010). Crystal structures of LdtMt1 (Correale et al., 2013), LdtMt2 (Erdemli et al., 2012), LdtMt3 (Libreros-Zúñiga et al., 2019), and LdtMt5 (Brammer Basta et al., 2015) have been solved and reported to date. All of these paralogs contain a pocket similar to the S-pocket found in LdtMt2. Corresponding to the R209 residue position in LdtMt2 S-pocket, LdtMt1 has R25, LdtMt3 has Q66, and LdtMt5 has H219, and each of these putative S-pocket amino acids have similar basic charge properties (Figure 7—figure supplement 1). Moreover, superposition of the crystal structure of these paralogs with LdtMt2–sugar complex places the PG sugar moiety within the S-pocket. We suggest a common S-pocket-mediated allosteric mechanism in all of the L,D-transpeptidases in M.tb; however, the rate of transpeptidation may differ depending upon structural differences in their respective YkuD flaps, S-pockets, and catalytic sites.
 
@@ -118,48 +487,275 @@ We find that various β-lactams bind to the S-pocket of LdtMt2 through their tai
 
 ## Materials and methods
 
-## Cloning and site-directed mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mycobacterium tuberculosis)</td>
+      <td>ldtB/LdtMt2</td>
+      <td>Uniprot</td>
+      <td>I6Y9J2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>NEB</td>
+      <td>Catalog # C2526H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 5-alpha competent</td>
+      <td>NEB</td>
+      <td>Catalog # C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD1-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ATTGCCATATGAAGGCACGCCGTTCGCCGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD1-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAATACTCGAGTTAGGTCTGGAAGGTCAGCTGGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD2-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ATTGCCATATGACCTGACCATGCCCTACGTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD2-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAATACTCGAGTTAGCCGATGGTGAAGTGCGTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD1-IgD2-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ATTGCCATATGAAGGCACGCCGTTCGCCGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>IgD1-IgD2-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAATACTCGAGTTAGCCGATGGTGAAGTGCGTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>YkuD-F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>ATTGCCATATGGGCGACGAGGTGATCGCGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>YkuD- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAATACTCGAGTTACGCCTTGGCGTTACCGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-E207A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CTGAATAACCGTGCAGTGCGTTGGCGCCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-E207A- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TGGGCGCCAACGCACTGCACGGTTATTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-R209A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>TGAATAACCGTGAAGTGGAATGGCGCCCAGAGCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-R209E- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>AATGCTCTGGGCGCCATTCCACTTCACGGTTATTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-S337A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTGTCTTCGTGCACGCAGCGCCGTGGTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-S37A- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CCGACCACGGCGCTGCGTGCACGAAGACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-S351A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGCCACACCAACACCGCCCATGGCTGCCTGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-S351A-R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GTTCAGGCAGCCATGGGCGGTGTTGGTGTGGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-Y330F- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CCACCCAGATCTCCTTTAGCGGTGTCTTCGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-Y330F- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GCACGAAGACACCGCTAAAGGAGATCTGGGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-H336N- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAGCGGTGTCTTCGTGAACTCAGCGCCGTGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-H336N- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GACCACGGCGCTGAGTTCACGAAGACACCGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-C354A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CAACACCAGCCATGGCGCGCTGAACGTCAGCCCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-C354A- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CTCGGGCTGACGTTCAGCGCGCCATGGCTGGTGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-M303A- F</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>GGTACAAGCACATCATCGCGGACTCGTCCACCTACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LdtMt2-M303A- R</td>
+      <td>This paper</td>
+      <td>PCR primer</td>
+      <td>CGTAGGTGGACGAGTCCGCGATGATGTGCTTGTACC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 High-Fidelity DNA Polymerases</td>
+      <td>NEB</td>
+      <td>Catalog # M0491L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYPRO Orange</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # S6650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nitrocefin</td>
+      <td>Millipore-Sigma</td>
+      <td>Catalog #484400-5MG</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and site-directed mutagenesis
 
 DNA sequences encoding LdtMt2-Δ42, LdtMt2-Δ55, IgD1 (50–145 aa residues), IgD2 (150–250 aa), IgD1–IgD2 (50–250 aa), and YkuD domain (250–408) and CTSD deletion mutant LdtMt2 42–384 were cloned in pET28a vector to express the protein with N-terminal His6-tag that is cleavable by Tobacco Etch Virus (TEV) protease. Single amino acid substitutions of LdtMt2-Δ55 were constructed by site-directed mutagenesis for the following mutations: E207A, R209E, Y330F, C354A, H352A, H336A, M303A, S337A, and S351A.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Mutants and different fragments of LdtMt2 were expressed and purified as reported earlier (Kumar et al., 2017). In detail, LdtMt2-ΔN55 was transformed in chemical competent E. coli BL21δɛ3 (NEB labs). A single colony of transformed cells was inoculated in 50 ml of Luria-Bertani (LB) media supplemented with ampicillin (100 µg/ml) before growing overnight (O/N) at 37°C in an incubator shaker. The O/N culture was used to inoculate secondary culture in LB media to grow at 37°C until the optical density at 600 nm reached ~0.6–0.8. At this stage, temperature was lowered to 16°C in the incubator shaker before inducing the protein expression with 0.5 mM of isopropyl-1-thio-β-galactoside. The secondary culture grown O/N. The culture was harvested and the cell pellet was resuspended in lysis buffer (50 mM Tris buffer pH 7.5, 400 mM NaCl, 10% glycerol, 1.0 mM dithiothreitol [DTT], and 1.0 mM phenylmethylsulfonyl fluoride [PMSF]). 0.5 mg/ml lysozyme was added into the resuspended cells to allow cell lysis at 4°C for 30 min. Resuspended cells were further lysed by ultrasonication at 4°C with a pulse rate of 15 s ON/OFF. Whole cell lysate was centrifuged at 10,000 × g for 45 min and the supernatant was loaded onto Ni-NTA column (Qiagen, Germany). The unbound protein was washed with washing buffer (50 mM Tris buffer pH 7.5, 400 mM NaCl, 10% glycerol, 1.0 mM DTT, 0.1 mM PMSF) and the protein was eluted with elution buffer (50 mM Tris buffer pH 8.0, 400 mM NaCl, 1.0 mM DTT, 0.1 mM PMSF, and 500 mM imidazole). The His6-tag of the protein was removed by TEV protease during overnight dialysis against the buffer 50 mM Tris pH 8.0, 150 mM NaCl, and 1.0 mM DTT at 4°C. The dialyzed protein was passed through Ni-NTA column and the His6-tag-removed protein was collected in flow-through. Protein was further purified using superdex 10/300 column on ÄKTA pure 25. The purified protein was concentrated to 20 mg/ml as measured by nanodrop at 280 nm wavelength. The purity of protein was checked by 12% sodium dodecyl sulphate–polyacrylamide gel electrophoresis. All other truncation and mutants of LdtMt2 were also purified by same protocol as above, however their His6-tag was not removed.
 
-## ThermoFluor assays
+### ThermoFluor assays
 
 The proteins LdtMt2-Δ55, R209E, and S351A were with initial stocks of 11.5, 14.0, and 21 µM, respectively, in the 50 mM Tris buffer pH 8.0, 150 mM NaCl, 1 mM DTT. 5000× of SYPRO Orange (Invitrogen) was diluted to 50× in water. 5 µM of proteins and 3× of SYPRO Orange were pipetted into a 96-well PCR plate (BioRad, MicroAmp Fast 96-Well Reaction plate, 0.1 ml) with 50 µl total volume in the well. Fluorescence data were collected on BioRad StepOnePlus Real-Time PCR System using the software StepOne software v2.3. ROX (SYPRO Orange) was selected as a reporter dye and none for passive reference in the software. The temperature was held for 1 min per degree from 25 to 65°C. Melting temperature (Tm) and differential fluorescence (−dF/dT) values were calculated by fitting the data on Sigmoidal dose–response (variable slope) equation in GraphPad Prism software. Experiments were performed in biological triplicates.
 
-## Nitrocefin hydrolysis assays
+### Nitrocefin hydrolysis assays
 
 Nitrocefin (Calbiochem) with a range of 1–400 µM was used as a substrate for quantifying the rate of β-lactam hydrolysis by different ldtMt2 fragments and mutants. A 100 µl reaction mixture containing 5 μM enzyme in 25 mM HEPES (hydroxyethyl piperazineethanesulfonic acid)–MES (morpholinoethanesulfonic acid)–Tris-phosphate buffer, 300 mM NaCl, pH 6.0, was incubated at 25°C. Nitrocefin hydrolysis was measured at 496 nm on BioRad microplate reader and the absorbance data were converted to μM/minute using Beer’s Law (e = 20,500 M−1 cm−1 for hydrolysed nitrocefin; L = 0.5 cm). Nitrocefin hydrolysis assays were performed in experimental duplicates and rate constants, Vmax and Km were calculated by fitting the data on nonlinear regression curve with Michaelis–Menten equation.
 
-## CD spectroscopy
+### CD spectroscopy
 
 Far-UV CD spectra were acquired on a Jasco-815 spectropolarimeter. LdtMt2 and R209E mutant proteins with a concentration of 5.0 µM were used in the study. Cuvette of path length of 0.2 cm was used and spectra were collected from 260 to 190 nm at a rate of 100 nm/min and data pitch of 1 nm, with averaging of 10 scans for noise reduction. Contribution of the buffer to the spectra was electronically subtracted and θobs was plotted.
 
-## Biapenem acylation assays
+### Biapenem acylation assays
 
 The acylation of biapenem with LdtMt2 and mutants was determined by measuring the reduction in absorbance of biapenem at 292 nm wavelength using UV–visible spectrophotometry. A 100 µl reaction mixture containing 50 µM enzyme, 50 µM biapenem, 25 mM Tris buffer pH 7.5 was incubated at 15°C and endpoint absorbance was recorded at 30-s intervals for 8 min. Rate constant (K) of biapenem acylation was calculated by fitting the data on a nonlinear regression curve with one-phase decay. Experiment was performed in biological triplicates to calculate standard deviation and average values.
 
-## Protein crystallization
+### Protein crystallization
 
 Purified LdtMt2 (fragment ΔN55) was crystallized with the same conditions has reported earlier (Kumar et al., 2017). Crystals were grown by hanging drop vapor diffusion method in 20% 5000 MME and 200 mM ammonium sulphate condition. For LdtMt2–T203 complex, crystals were soaked with 2 mM of T203 drug overnight before being cryo-protected in 20% 5000 MME, 30% glycerol, and 120 mM ammonium sulphate before flash freezing in liquid nitrogen.
 
-## Crystal diffraction, data collection, and structure determination
+### Crystal diffraction, data collection, and structure determination
 
 The crystals were diffracted at 100 K temperature at a wavelength of 1.0 Å on beamline 19-ID at the Advanced Photon Source (Argonne National Laboratory). The diffraction data were recorded on an ADSC Quantum 315r CCD detector and processed with the HKL3000 software (Minor et al., 2006). The crystal structures of LdtMt2–sugar complex at a highest resolution of 1.58 Å and LdtMt2–T203 complex at 1.7 Å resolution were solved by molecular replacement method using PHENIX suite of program (Liebschner et al., 2019) using the coordinates of LdtMt2 (PDB ID: 5DU7) as a search model. The initial structures were subjected to crystallographic refinement with phenix.refine (Afonine et al., 2012) from the PHENIX suite of programs. Structures were rebuilt with COOT (Emsley and Cowtan, 2004) to fit the electron density map. Structure validation was done using Molprobity (Williams et al., 2018). The R values of refined structures (Table 1) are well within the range of typical resolution. Omit maps for ligands in the structures were created from map coefficient using PHENIX suite of programs. Figures were prepared using PyMOL Molecular Graphics System, Version 2.4.0 Schrödinger, LLC.
 
-## Docking studies
+### Docking studies
 
 The structural model of LdtMt2 was prepared in Autodock Tools 1.5.7 (Trott and Olson, 2010) by adding hydrogen atoms, noBondOrder method and Gasteiger charges of −13.019. Ligands (namely ampicillin, cefotaxime, oxacillin, biapenem, and T203) were prepared having five rotatable bonds. A grid was assigned with a grid box size 60 Å × 60 Å × 60 Å and grid spacing 0.375 Å. Docking was performed using Genetic Algorithm with number of runs set to 100, a population size of 50, maximum number of evaluations on medium as 1,500,000 and all other default parameters on Autodock4 program.
 
-## MD simulations setup
+### MD simulations setup
 
 MD simulations were performed for (1) crystal structure of LdtMt2 docked with biapenem only at S-pocket (LdtMt2–BiaS), (2) crystal structure of LdtMt2 docked with Biapenem only at catalytic site (LdtMt2–BiaC), and (3) crystal structure of LdtMt2 docked with biapenem at S-pocket and at catalytic site (LdtMt2–BiaS-C). Explicit water (TIP3P) MD simulations of LdtMt2–biapenem docked complexes were carried out with AMBER16 employing ff03 forcefield (Duan et al., 2003) and general AMBER forcefield (gaff) (Wang et al., 2004) for protein and ligands, respectively. The Leap module of AMBER16 was used for setting up initial structures. To prevent any steric clashes between solute and solvent during MD simulation, all the solvated systems were initially minimized in two steps. First, minimization of solvent and ions was performed by applying 50 kcal/mol/Å2 positional restraint on all the atoms of protein and ligand, followed by the second minimization of the whole system without any positional restrain. The system was then heated using Langevin dynamics from 10 to 300 K at NVT ensemble with the positional restraint of 5 kcal/mol/ Å2 on the protein and ligands heavy atoms. Positional restraint was gradually released in the next two steps, that is, 3 kcal/mol/Å2 in first step and then 1 kcal/mol/Å2 in second step. Further, the system was equilibrated for 100 ps at NVT followed by 2400 ps at NPT ensemble. Finally, the production runs (LdtMt2–BiaS = 75 ns, LdtMt2–BiaC = 75 ns, and LdtMt2–BiaS-C = 75 ns) were carried out at NPT ensemble by integrating the Newtonian equation of motion at every 2 fs. Trajectories were analyzed using cpptraj module of AMBER16 (Roe and Cheatham, 2013). Trajectories were analyzed by cpptraj module of AMBER16. Hydrogen bonds were calculated for the donor–acceptor distance cutoff of 3.5 Å and the donor–hydrogen–acceptor angle cutoff of 135°.
 
 Additional MD simulations were performed with (1) LdtMt2 (wild-type); (2) LdtMt2-R209E; (3) crystal structure LdtMt2–T203S-C with T203 drug in both S-pocket and catalytic site; and (4) crystal structure LdtMt2–T203S with T203 drug in S-pocket alone. IgD1 domain was cleaved from all four systems using BIOVIA’s Discovery Studio 2021 software (Dassault Systems). All MD simulations were performed with NAMD 2.14 software using CHARMM36 forcefield (Phillips et al., 2020). Systems were first prepared using CHARMM program and then solvated in a water box of minimum distance 15 Å from any edge in VMD. Neutralization was performed by addition of Na+ and Cl− ions. Stepwise energy minimization performed using the Steepest Descent algorithm for 500,000 steps. The system was heated from 0 to 300 K in 10 K/ps increments with the NAMD program (Phillips et al., 2020). Velocities further were rescaled for the next 200 ps, followed by 2000 ps of unconstrained equilibration. Subsequently, the production runs of 200 ns each was performed for the LdtMt2 wild-type and R209E mutant protein. Production run for the LdtMt2–T203S-C that is in complex with dual T203 drug was performed for 50 ns. Production was not performed for LdtMt2–T203S that in complex with T203 drug only at S-pocket, since T203 drug left the S-pocket during equlibration 2 at 650 ps. All simulations were performed in the NPT ensemble using the periodic boundary conditions. Water was represented by the TIP3P model. A 12 Å cutoff was used for nonbonded interactions and long-range electrostatic interactions were treated with the smooth PME method as implemented in NAMD. All bonds to hydrogen atoms were constrained allowing for a timestep of 2 fs. Analysis was performed using standard GROMACS (Pronk et al., 2013), Visual Molecular Dynamics (VMD) tools (Humphrey et al., 1996). Probability Density Graphs were plotted using R Programming in RStudio.
 
-## Clustering of conformers and network construction
+### Clustering of conformers and network construction
 
 Clustering was performed for each simulation using gromos method from the GROMACS software and a representative structure from the largest cluster was considered to average the distance calculations and also to construct a network of amino acid residues. Network was calculated and constructed using the NAPS webs server (Network analysis of Protein Structures) (Chakrabarty and Parekh, 2016) and visualized using Cytoscape. For network construction each amino acid was considered as a node in the network and an edge was constructed if the distance between a pair of atoms of the residue pair was within the lower threshold of 0 Å and upper threshold of 5 Å. All edges were considered unweighted (equally important). Degree of nodes, node betweenness, edge betweenness, clustering coefficients, closeness, eigen vector centrality, eccentricity, and average neighbour degree were computed as an estimate of centrality. Normalized covariance (correlation) of MD simulation was performed using CARMA (Glykos, 2006). The degree of coupled motion in LdtMt2 was measured by normalizing the cross-correlation matrix of atomic fluctuations over the length of the simulation.

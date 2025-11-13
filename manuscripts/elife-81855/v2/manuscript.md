@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02f009v59 Department of Special Education and the Edmond J. Safra Brain Research Center for the Study of Learning Disabilities, University of Haifa, Abba Khoushy Ave 199 Haifa Israel
-2. https://ror.org/02f009v59 Sagol Department of Neurobiology and the Edmond, J. Safra Brain Research Center for the Study of Learning Disabilities, University of Haifa Haifa Israel
-3. https://ror.org/05x2bcf33 Department of Psychology and Neuroscience Institute, Carnegie Mellon University Pittsburgh United States
+1. Department of Special Education and the Edmond J. Safra Brain Research Center for the Study of Learning Disabilities, University of Haifa, Abba Khoushy Ave 199 Haifa Israel ([ROR:02f009v59](https://ror.org/02f009v59))
+2. Sagol Department of Neurobiology and the Edmond, J. Safra Brain Research Center for the Study of Learning Disabilities, University of Haifa Haifa Israel ([ROR:02f009v59](https://ror.org/02f009v59))
+3. Department of Psychology and Neuroscience Institute, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ We first addressed the contributions of the visuomotor task demands (task practi
 
 ## Results
 
-## Offline gains are evident in a simple visuomotor task
+### Offline gains are evident in a simple visuomotor task
 
 Exp 1 examined performance gains attained with practice with the visuomotor aspects of the SMART task (no acoustic stimuli; Figure 1C). To this end, participants reported the location of an above-threshold visual target as quickly and accurately as possible. Response time (RT) to detect the target was stable across the first 8 blocks of training on Day-1 [F (7, 147)=0.76, p=0.61; ηp²=0.03; Figure 2A], indicating no significant task-driven online learning on Day-1. However, RT to respond to the visual target in the first block of Day-2 (Block 9, M=437.8ms, SE = 11.2ms) was significantly faster compared to the final block of Day-1 (Block 8, M=481.4ms, SE = 14.2ms), indicative of offline learning gains in visuomotor task performance [t(21)=–3.83, p=0.001, Cohen’s d=–0.81]. This facilitation in the speed of reporting the visual target did not come at a cost to accuracy (see Appendix 1) and, moreover, was robustly maintained across a 9-day interval [final block of Day-2, M=449.29ms, SE = 12.06ms, to the first block of Day-10, M=437.15ms, SE = 11.32ms; t(1,)=–1.79, p=0.08; Cohen’s d=-0.38]. This establishes a significant facilitation of RT arising from practice of the visuomotor task, per se, that must be considered in interpreting how incidental auditory category learning proceeds when the auditory stimuli are introduced in the SMART task.
 
@@ -44,7 +44,7 @@ Exp 1 examined performance gains attained with practice with the visuomotor aspe
 
 **Figure 2.:** Across all panels, the leftmost graph shows the mean and standard error of the response time (RT) to respond to the visual target, with individuals' data plotted as light grey dots across blocks in Day-1, Day-2, and Day-10 sessions. The middle graph plots the RT Cost of the Random block (Blocks 7, 10, 13) as a function of the preceding block. The rightmost graph shows the offline gain from the last block of a preceding session to the first block of the next session (Day-1 to Day-2, Day2 to Day-10). (A) Exp 1 (n=22) characterizes putative visuomotor learning, consolidation and retention without sounds preceding visual targets. (B) In Exp 2 (n=24), a consistent category-to-location association is conveyed by a single category exemplar, repeated five times on a trial; different exemplars occurred on different trials. (C) In Exp 3 (n=22), the consistent category-to-location association was conveyed by five unique category exemplars sampled from the category on each trial.
 
-## Incidental auditory-category learning and consolidation gains are dependent on alignment of within-category exemplar variability with visuomotor task demands
+### Incidental auditory-category learning and consolidation gains are dependent on alignment of within-category exemplar variability with visuomotor task demands
 
 We next examined auditory category learning across two variations of the SMART task. Based on prior research, each was expected to lead to robust incidental category learning in a single SMART training session, although to different degrees (Figure 1C; Gabay et al., 2015). This allowed us to examine whether less robust online learning gains achieved in a single training session may nonetheless be robustly expressed after a period of delay (Day-2, Day-10) permitting offline learning gains and consolidation (See Karni, 1996, Karni et al., 1998; Maquet et al., 2003; Stickgold, 2009).
 
@@ -58,7 +58,7 @@ Incidental auditory category learning in Exp 3 was also reflected as a decrease 
 
 Despite shared category exemplars, equivalent exemplar variability at the experiment level and common visuomotor task demands, Exp 2 and Exp 3 led to different single-session outcomes. Single-session category learning was more robust when multiple exemplars of the same category preceded each trial’s visuomotor target (Exp 3) than when a single exemplar was repeatedly presented before the target and thus exemplar variability was experienced only across trials (Exp 2). This differential pattern of results is consistent with the notion of per-trial many-to-one auditory-to-visuomotor correspondence serving as a ‘representational glue’ to (better) bind together acoustically distinct sound exemplars to enhance incidental category learning compared to cross-trial binding.
 
-## Incidental category knowledge emerges by day-2 even when not behaviorally evident on day-1
+### Incidental category knowledge emerges by day-2 even when not behaviorally evident on day-1
 
 Yet, examination of visuomotor task performance on Day-2 suggests that it may not be justified to conclude that no incidental learning took place on Day-1 of Exp 2 (Figure 2B). A significant RT Cost emerged by Day-2 of Exp 2, indicative of incidental auditory category learning [t(23)=2.78, p=0.01; Cohen’s d=0.56]. Disrupting the category-to-location association in Block 10 led to slower visuomotor responses (MBlock10=449.13ms, SEBlock10=14.79ms) than in the preceding Block 9 in which the association was present (MBlock9=426.7ms, SEBlock9=17.2ms). Thus, a significant RT Cost to visual target detection evolved and was incurred when the category-to-location association was disrupted – but only after a post-learning interval.
 
@@ -70,15 +70,15 @@ We conducted an additional analysis to be sure that encountering the random Bloc
 
 We also conducted a control study to examine the possibility that the offline gains in auditory category knowledge observed in Exp 2 may be attributed to the additional practice afforded in the first block on Day-2 (Block 9), rather than attributable to an overnight consolidation process. A new sample of participants performed the SMART task in a single session separated by a 3 hr daytime break between Blocks 1–8 and Blocks 9–11 that did not include sleep. There was no difference in the magnitude of RT Cost in the blocks preceding versus following the break [t(20)=–1.10, p=0.28; Cohen’s d=0.26]. Thus, we conclude that the offline gains in auditory category knowledge observed in Exp 2 are unlikely to be attributable to practice from Day-2 Block 9, and instead point to offline gains.
 
-## Incidental category learning is well-retained on day-10
+### Incidental category learning is well-retained on day-10
 
 Incidental category knowledge, as reflected in the RT Cost incurred by Day-2, remained robust across a 9-day interval. There were significant RT Costs on Day-10 in Exp 2 [t(23)=2.76, p=0.01; Cohen’s d=0.56; Figure 2B] and Exp 3 [t(21)=2.25 p=0.03; Cohen’s d=0.47; Figure 2C] and, moreover, the magnitude of the RT Costs on Day-10 were as large as those attained on Day-2 in both Exp 2 [t(23)=–0.62, p=0.54; Cohen’s d=0.08] and Exp 3 [t(21)=0.20, p=0.83; Cohen’s d=0.03]. (SeeSupplementary file 1 for a full comparison of cross-experiment performance).
 
-## Individual participant’s RT costs across sessions
+### Individual participant’s RT costs across sessions
 
 We examined whether individual participant’s RT Costs were correlated across sessions (Pearson correlations, Bonferroni-corrected p<0.017 significant). In Exp 2, participants’ RT Costs on Day-1 and Day-2 were significantly correlated (r=0.737, p=0.001), as were the RT Costs incurred on Day-2 and Day-10 (r=0.778, p=0.001), and Day-1 and Day-10 (r=0.571, p=0.004). The same pattern was found in Exp 3, with significant correlations between participants’ RT costs incurred on Day-1 and Day 2- (r=0.670, p=0.001), as well as Day-2 and Day-10 RT Costs (r=0.730, p=0.001) and Day-1 and Day-10 (r=0.614, p=0.002).
 
-## Incidental category learning generalizes to novel sound exemplars
+### Incidental category learning generalizes to novel sound exemplars
 
 An explicit labeling task followed the SMART task on Day-10 (Figure 1B) to examine generalization of category knowledge to novel sounds (Figure 3A). Novel sound exemplars were randomly, but equally, drawn from each of the four auditory categories and each exemplar was repeated five times. Participants indicated the expected visual target location (no target appeared). Category knowledge generalized to support placing novel sounds in the appropriate location associated with its category at above-chance levels in Exp 2 for both category types (Figure 1A) [unidimensional categories: t(23) = 2.89, p=0.008; Cohen’s d=0.57; multidimensional: t(23) = 3.104, p=0.005; Cohen’s d=0.60]. Categorization performance was not dependent on whether the category was defined by a unidimensional acoustic cue (rising vs. falling frequency of one component of the complex sound) or by more complex, multidimensional, acoustic regularities, [t(23)=0.73, p=0.47; Cohen’s d=0.07] (Wade and Holt, 2005).
 
@@ -90,7 +90,7 @@ Category knowledge also generalized to novel sounds in Exp 3 [unidimensional: t(
 
 We also compared generalization to novel exemplars across Exp 2 and Exp 3. Overall, generalization to novel exemplars did not differ across experiments, [t(44)=0.54, p=0.58; Cohen’s d=0.18].
 
-## Incidental category learning predicts explicit category labeling and generalization on day-10
+### Incidental category learning predicts explicit category labeling and generalization on day-10
 
 We examined the extent to which the covert RT Cost measure of incidental category learning predicted participants’ ability to subsequently generalize category knowledge by the end of Day-10 (Figure 3B). In both Exp 2 and Exp 3, the magnitude of a participant’s RT Cost on Day-1, Day-2, and Day-10 was highly predictive of the accuracy of category generalization in an explicit category labeling task on Day-10 (Figure 3). This held true also in follow-up analyses based on a median split in explicit labeling accuracy that better accommodates the clustering evident in participants’ performance. Thus, a median split of participants based on their explicit labeling accuracy on Day-10 into two subgroups, high-performing and low-performing showed, in Exp 2, that the high-performing subgroup had a tendency to exhibit greater RT Costs, compared to the low-performing subgroup, on Day-2 [t(22)=–1.79, p=0.08, Cohen’s d=–0.733] and on Day-10 [t(20)=–2.07, p=0.05, Cohen’s d=.-0.846] although the subgroups did not differ on Day-1, t(22) = –1.30, p=0.21, Cohen’s d=–0.533. In Exp 3, the high-performing subgroup exhibited significantly greater RT Costs than the low-performing subgroup on Day-2 [t (20)=–3.82, p=0.001; Cohen’s d=–0.721] and Day-10 [t(20)=–2.68, p=0.014, Cohen’s d=–1.144], although, here too, the subgroups’ RT Costs did not differ on Day-1 [t(20)=–1.69, p=0.106; Cohen’s d=-0.721].
 
@@ -122,17 +122,17 @@ Our results show that incidental learning continues to evolve after the learning
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Eighty-seven healthy young adult participants were recruited from the University of Haifa community. All individuals had normal or corrected-to-normal vision, reported normal hearing, and received payment or course credit for participation. The study was approved by the Institutional Review Board of the University of Haifa and was conducted in accordance with the Declaration of Helsinki. Written informed consent was obtained from all participants, who were compensated for their participation in the study (120 new Israeli shekels, approximately $30). Previous research using the same stimuli, paradigm and cross-participant manipulation of exemplar variability revealed large between-subject effect sizes for RT Cost (i.e. Cohen’s d of 0.76). A power analysis (calculated using Gpower software; Faul et al., 2007) indicates that a one-tailed between-subject effect requires 44 participants to reach statistical power at a 0.80 level (alpha = 0.05). Therefore, with a total sample of 46 participants (across Exp 2 and Exp 3) the study was adequately powered to detect differences arising from the exemplar variability manipulation (Faul et al., 2009).
 
 Twenty-two subjects (12 females; 27.27±5.02, 19 y to 34 y old), twenty-four subjects (12 females 26.62 y±4.75 y, 20–42 y old) and twenty-two subjects (12 females, 24.81 y±2.78 y, 20 y to 32 y old) participated in Exp 1, 2, and 3, respectively. An additional twenty-one participants (18 females; 27.27±5.02, 20 y to 27 y old) participated in the control experiment.
 
-## Stimuli
+### Stimuli
 
 Figure 1A illustrates four novel nonspeech auditory categories, drawn from prior research (Gabay et al., 2015; Leech et al., 2009; Wade and Holt, 2005; Liu and Holt, 2011; Lim et al., 2019; Gabay et al., 2018; Emberson et al., 2013). The sounds defining these categories possess some of the spectrotemporal complexity of speech, but are unequivocally nonspeech owing to their noise and square wave sources (Wade and Holt, 2005). Each category has six exemplars used in training and five exemplars withheld from training to test generalization on Day 10 (not shown in Figure 1A). Exemplars from each category are defined by a steady-state frequency and a transition in each of two spectral peaks (Figure 1A; higher frequency solid colored peak varying across exemplars vs. lower frequency dotted grey peak common across exemplars). Exemplars were acoustically similar within and across categories (Emberson et al., 2013). Two categories (Category A, Category B in Figure 1A) are defined by a unidimensional acoustic cue (up- or down-sweep in frequency of the higher-frequency component). The other two categories are defined in a more complex, multidimensional perceptual space such that no one acoustic cue uniquely defines category membership (Wade and Holt, 2005; Emberson et al., 2013; Category C, Category D in Figure 1A). This multidimensional structure models structures present in phonetic categories, such as categorizing /d/ across syllables ending with various vowels (Wade and Holt, 2005; Liberman et al., 1954), thereby capturing a learning challenge of phonetic acquisition. Prior results demonstrate that the dimensions defining these categories are not easily described verbally and are not well-learned via passive exposure alone (Wade and Holt, 2005; Emberson et al., 2013). Each exemplar was 250ms and exemplars were matched in root-mean-square amplitude.
 
-## Systematic multimodal association time (SMART) task
+### Systematic multimodal association time (SMART) task
 
 In the SMART task, participants rapidly detect the appearance of a visual target in one of four possible screen locations and report its position by pressing a key corresponding to the visual location (Figure 1A). This simple visuomotor task is practiced across three experimental sessions (Figure 1B) in each of the three experiments. In Exp 2 and Exp 3, but not in Exp 1, a brief sequence of ostensibly task-irrelevant sounds precedes each visual target, presented diotically over headphones (Beyer, DT-150) at a comfortable listening level in a sound-attenuated booth with participants seated directly in front of the computer monitor on which the visual target appears. Unknown to participants, the sounds are drawn from one of four distinct categories (Figure 1A). Thus, there is a multimodal (auditory category to visual location) correspondence that relates the acoustically variable sound category exemplars to a consistent visual target location and response. This mapping is many-to-one, such that multiple, acoustically-variable sound category exemplars are associated with a single visual location (and response). Therefore, since auditory categories perfectly predict the location of the upcoming visual detection target and the corresponding response button to be pressed, learning to treat the acoustically variable sounds as functionally equivalent may facilitate visual detection without requiring overt sound categorization decisions or even awareness of category structure. The SMART task makes it possible to investigate whether participants learn auditory categories incidentally, across practice of a visuomotor task that does not involve auditory category decisions, directed attention to the sound exemplars, or feedback.
 
@@ -140,15 +140,15 @@ Participants first completed 8 practice trials to become familiar with the visuo
 
 The control experiment was run using a protocol identical to the one used in Exp 2, except that the two sessions corresponding to Day-1 (Blocks 1–8) and Day-2 (Blocks 9–11) were run on the same day with just 3 hr, and no sleep interval were afforded between the two sessions. The control experiment was not extended to Day-10.
 
-## Explicit labeling task
+### Explicit labeling task
 
 Subsequent to the SMART task blocks (Blocks 12, 13, 14) on Day 10, (and after Block 11 in the single-session control experiment) there was an explicit labeling task in which novel sound exemplars drawn from one of the four auditory categories, and never experienced in the prior sessions, were presented on each of 96 trials and participants selected the location at which the visual target was expected; no target appeared. Generalization of category knowledge was defined as the proportion of trials for which the location selected matched the category-to-location mapping experienced across the training sessions. There was no explicit labeling task for Exp 1 (since there were no sounds).
 
-## Experimental design
+### Experimental design
 
 Three separate groups of participants engaged in visuomotor practice across the three sessions on Day 1, Day 2, and Day 10 (Figure 1C). Participants in Exp 1 practiced the visuomotor SMART task exclusively; no sounds preceded the visual target. This provided a measure of task-related learning and consolidation induced by the visuomotor task, apart from auditory category learning. Participants in Exp 2 and Exp 3 practiced this same visuomotor SMART task, but on each trial five sound exemplars preceded the appearance of the visual target. Exp 2 and Exp 3 differed in how within-category acoustic variability was organized across trials (while remaining equivalent at the experiment level). In Exp 2, a single category exemplar was chosen and presented five times preceding the visual target such that within-category exemplar variability was experienced across but not within trials. In Exp 3, five unique exemplars were randomly selected (without replacement) from the six category exemplars and presented in a random order. In each experiment, the sound categories perfectly predicted the upcoming target location and, across trials, the within-category variability experienced by participants was equivalent at the experiment level across Exp 2 and 3. Prior research (Gabay et al., 2015) suggested that incidental auditory category learning would be less efficient in a single session of Exp 2 compared to Exp 3 and so this manipulation allowed for examination of patterns of consolidation across weaker (Exp 2) versus more robust (Exp 3) single-session learning.
 
-## Data analyses
+### Data analyses
 
 In computing response time (RT), trials for which there was a visual detection error (2.4% Exp 1; 2% Exp 2; 3% Exp 3, 3% control experiment) or RT longer than 1500ms or shorter than 100ms from all trials (1% Exp 1; 1% trials Exp 2; 3% Exp 3; 1.6% control experiment) were excluded from analyses.
 

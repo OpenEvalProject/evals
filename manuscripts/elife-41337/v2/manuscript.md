@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.41337.001 CRISPR/Cas9-based genome editing has yet to be reported in species of the Platyhelminthes. We tested this approach by targeting omega-1 (ω1) of Schistosoma mansoni as proof of principle. This secreted ribonuclease is crucial for Th2 polarization and granuloma formation. Schistosome eggs were exposed to Cas9 complexed with guide RNA complementary to ω1 by electroporation or by transduction with lentiviral particles. Some eggs were also transfected with a single stranded donor template. Sequences of amplicons from gene-edited parasites exhibited Cas9-catalyzed mutations including homology directed repaired alleles, and other analyses revealed depletion of ω1 transcripts and the ribonuclease. Gene-edited eggs failed to polarize Th2 cytokine responses in macrophage/T-cell co-cultures, while the volume of pulmonary granulomas surrounding ω1-mutated eggs following tail-vein injection into mice was vastly reduced. Knock-out of ω1 and the diminished levels of these cytokines following exposure showcase the novel application of programmed gene editing for functional genomics in schistosomes.
+CRISPR/Cas9-based genome editing has yet to be reported in species of the Platyhelminthes. We tested this approach by targeting omega-1 (ω1) of Schistosoma mansoni as proof of principle. This secreted ribonuclease is crucial for Th2 polarization and granuloma formation. Schistosome eggs were exposed to Cas9 complexed with guide RNA complementary to ω1 by electroporation or by transduction with lentiviral particles. Some eggs were also transfected with a single stranded donor template. Sequences of amplicons from gene-edited parasites exhibited Cas9-catalyzed mutations including homology directed repaired alleles, and other analyses revealed depletion of ω1 transcripts and the ribonuclease. Gene-edited eggs failed to polarize Th2 cytokine responses in macrophage/T-cell co-cultures, while the volume of pulmonary granulomas surrounding ω1-mutated eggs following tail-vein injection into mice was vastly reduced. Knock-out of ω1 and the diminished levels of these cytokines following exposure showcase the novel application of programmed gene editing for functional genomics in schistosomes.
 
 ## Introduction
 
@@ -54,21 +54,47 @@ As ω1 drives distinctive immunological phenotypes including Th2 polarization an
 
 ## Results
 
-## Omega-1, a multicopy locus on chromosome 1 of S. mansoni specifically expressed in eggs
+### Omega-1, a multicopy locus on chromosome 1 of S. mansoni specifically expressed in eggs
 
 Five genomic copies of ω1 were identified in the S. mansoni reference genome, version 5 (Figure 1—figure supplement 1), although the repetitive nature of the ω1 locus on chromosome one presents a challenge for genome assembly. A single copy of ω1 selected for genome editing, Smp_193860, included nine exons separated by eight introns and spanned 6,196 nt (Figure 1A). Several other copies shared similar exon/intron structure and conserved coding sequences (Figure 1—figure supplement 1A and B). The predicted coding sequence (CDS) of Smp_193860 encoded a ~27 kDa protein, of similar mass to the 31 kDa reported for ω1 (Murare et al., 1992). The gene encodes a secreted ribonuclease of the T2 family of transferase-type endoribonucleases with conserved catalytic regions (Luhtala and Parker, 2010). We designed a sgRNA targeting residues 3,808 to 3,827 of Smp_193860 within exon 6, adjacent to an AGG protospacer adjacent motif (PAM) and with the predicted Cas9 cleavage site located at three residues upstream of the PAM. Figure 2—figure supplement 1 provides the nucleotide sequence of the Smp_193860 copy, and indicates the UTR, coding exons and introns; 6,196 nt. The AGG and the nucleotide sequence complementary to this sgRNA were also present in the Smp_179960 and Smp_184360 copies of ω1. These three copies shared >99% identity in the 202 bp PCR amplicon region subjected to next generation sequencing (NGS) although they differed by several substitutions (Figure 2—figure supplement 2A,B and C). All three copies of ω1 display a tight profile of developmental stage expression: expression is restricted to the mature egg with expression not apparent elsewhere during the developmental cycle of this schistosome (Figure 1—figure supplement 1C) (Lu et al., 2018).
 
-## Homology directed repair and non-homologous end joining pathways in schistosomes
+![Figure 1.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gene model of ω1 (Smp_193860), showing the position of its nine exons, eight introns and UTRs 6,196 bp on chromosome 1. (B) Nucleotide sequence in exon six indicating location and sequence of gRNA target site, predicted double-stranded break (DSB) (arrow), protospacer adjacent motif (PAM) (AGG, blue box), and 124-nucleotide sequence of the single-stranded DNA donor template provided for DSB repair by homologous recombination. Homology arms of 50 nt flank a central 24 nt of six-stop-codon transgene. (C) Linear map of pLV-ω1X6 showing position of regulatory and coding regions for CRISPR/Cas9 editing; the positions of the human U6 promoter to drive ω1 gRNA, the translational elongation factor EF1-α promoter driving Cas9 from S. pyogenes, and the left and right long terminal repeats of the lentiviral vector derived from HIV-1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** mansoni chromosome 1. (A) The position of several genes coding for ω1, including Smp_179960, Smp_184360, Smp_193860 are shown, to indicate the physical relationship of the copies on the chromosome. Two additional copies of ω1, Smp_158430 and Smp_168300 do not include the cognate sgRNA and PAM motifs. (B) Map of gene structure and size of Smp_179960, Smp_184360, Smp_193860, along with the ω1-specific sgRNA target site. C, Normalized expression of three copies of ω1 as indicated throughout the developmental stages of S. mansoni. The profile of developmental expression of ω1 was established by meta-analysis of RNAseq reads (Lu et al., 2018).
+
+### Homology directed repair and non-homologous end joining pathways in schistosomes
 
 The draft genome of S. mansoni was surveyed for key proteins of the non-homologous end joining (NHEJ) and homology-directed repair (HDR) pathways. Artemis and DNA-PKcs are essential NHEJ factors in vertebrates (Deriano and Roth, 2013; Lee et al., 2014; Pardo et al., 2009). Candidate homologues for six of seven human NHEJ pathway genes and for two key HDR pathway genes were identified by searching for matches to Pfam (Supplementary file 1). A putative homologue of Cernunnos/XLF was not apparent in S. mansoni (Deriano and Roth, 2013) based on searching for the Pfam XLF domain (PF09302) found in human Cernunnos/XLF. The domain appears to be absent from all flatworm species studied by the International Helminth Genomes Consortium (International Helminth Genomes Consortium, 2019).
 
-## Site-specific integration of transgene confirmed CRISPR-Cas9 activity in schistosomes
+### Site-specific integration of transgene confirmed CRISPR-Cas9 activity in schistosomes
 
 The activity and efficiency of CRISPR/Cas9 to edit the schistosome genome, by targeting the ω1 locus, was explored using two approaches. First, a ribonucleoprotein complex (RNP) comprising of sgRNA mixed with recombinant Cas9 endonuclease was delivered into schistosome eggs isolated from livers of experimentally infected mice (eggs termed ‘LE’, for ‘liver eggs’) by electroporation. In addition, homology directed repair (HDR) of CRISPR/Cas9-induced double stranded breaks (DSBs) at ω1 in the presence of a donor DNA template was investigated (Lok et al., 2017; Gang et al., 2017; Chen et al., 2015). A single-stranded oligodeoxynucleotide (ssODN) of 124 nt in length was delivered to some LE as a template for HDR of chromosomal DSBs (Figure 1B). The ssODN included a short transgene encoding six stop codons flanked by 5’- and 3’-homology arms, each arm 50 nt in length, complementary to the genome sequence of exon 6 on the 5´ and 3´ sides of the Cas9 cleavage site (Figure 1A and B). In a second approach, a lentivirus vector (pLV-ω1X6; Figure 1A and B) that included Cas9, driven by the mammalian translational elongation factor one promoter, and the exon 6-targeting sgRNA (20 nt), driven by the human U6 promoter (Duvoisin et al., 2012) was engineered. LE were transduced with pseudotyped lentiviral virions (pLV) by exposure in culture to LE for 24 hr (Rinaldi et al., 2012a; Suttiprapa et al., 2016) and, thereafter, transfected with the ssODN repair template. In both approaches, expression of ω1 in LE after 72 hr in culture was ascertained.
 
 Given that the donor ssODN included a short transgene that facilitates genotyping, PCR was performed using template genomic DNAs from the CRISPR/Cas9-treated LE (Lok et al., 2017) to reveal the site-specific knock-in (KI). A forward primer termed Smω1X6–6 stp-cds-F specific for the ssODN transgene was paired with three discrete reverse primers, termed Smω1-R1, Smω1-R2 and Smω1-R3, at increasing distance from the predicted HDR insertion site in ω1 (Supplementary file 2). Amplicons of the expected sizes of 184, 285 and 321 nt were observed in genome-edited eggs but not in control eggs (Figure 1A and B, Figure 2—figure supplement 3A), a diagnostic pattern indicative of the ssODN transgene insertion into ω1 and, in turn, indicating that the resolution of the DSB at the ω1 locus from CRISPR/Cas9 had been mediated by HDR. Amplification using a control primer pair that spanned the predicted DSB, termed Smω1-control-F/R, yielded control amplicons of the expected 991 nt. Similar findings were observed with genome editing delivered by RNPs and by LV (Figure 2—figure supplement 3). Sanger sequence analysis of the knocked-in amplicons (KI-R1, KI-R2 and KI-R3) confirmed the presence of the transgene inserted into ω1 at the site targeted for programmed cleavage (Figure 2C).
 
-## Programmed mutations in exon 6 of ω1
+![Figure 2.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram to indicate positions of primer binding sites (blue arrows), with the foreign gene cassette as the forward primer (Smω1X6–6 stop codons cassette-F) paired with three discrete reverse primers, Smω1-R1, Smω1-R2 and Smω1-R3 from the ω1 locus and a primer pair for target amplicon NGS library amplification; miSeq-F and miSeq-R. The control PCR amplicon was generated using the Smω1-control-F and –R primers. The green box shows the location of 5’ and 3’ homology arms, the red box and arrow indicate the stop codon bearing transgene. (B) PCR products visualized in ethidium bromide-stained agarose gel demonstrating Cas9-catalyzed target site-specific insertional mutagenesis in exon 6 of the ω1 gene. Evidence for transgene knocked-in into programmed target site revealed by amplicons of the expected sizes in lanes R1, R2 and R3, of 184, 285 and 321 bp, respectively (arrows at left) spanned the mutated site in the genomic DNAs pooled from schistosome eggs, including a positive control flanking the insert site (991 bp). The control DNA result shown in this gel was isolated from heat-inactivated-pLV-ω1X6 virions and ssODN treated LE. Similar findings were obtained when programmed gene editing was executed by lentiviral virion-delivered Cas9 and ω1-gRNA transgenes and by ribonucleoprotein complex (RNP) delivered by square wave electroporation (supporting information). The non-KI control groups (sgRNA only, heat-inactivated pLV-ω1X6 virions only, ssODN only) showed no amplicons by stop cassette-KI primers with R1, R2 or R3. (C) Multiple sequence alignments confirmed the presence of the 24 nt transgene inserted precisely into exon 6 of ω1 locus from KI-R1, -R2 and -R3 fragments compared with ω1 wild type (WT). The white box on ω1-WT indicates the absence of the transgene sequence and white boxes on KI-R1, -R2 and –R3 fragments show locations of substitutions relative to the other ω1 copies (Smp_184360): 2 bp (AT to CC) mismatches at positions 253–254 nt. All three contained the (knock-in) insertion sequence (white box), which confirmed targeted mutation of the ω1 gene. (D–F) Illumina deep sequence analysis of amplicon libraries revealed Cas9 induced on-target repair of programmed gene mutation of the ω1 locus by deletions, insertions, and substitutions by CRISPResso analysis. D; position dependent deletion size (deletion site, X-axis; deletion size, Y-axis); the deletions varied in length from point mutations to >20 bp adjacent to the DSB. The dotted line indicates the predicted position of the programmed double-stranded break. (E), frequency of frameshift versus in-frame mutations reported by CRISPResso. The pie charts show the fraction of all mutations (indels and substitutions) in the coding region (positions 42–179) of the amplicon predicted to induce frameshifts, that is indels of 1–2 bp, or multiples thereof. Top graph corresponds to sample 2 (eggs only control) (Supplementary file 3), bottom graph corresponds to sample 9 (eggs exposed to virions and ssODN, that is CRISPR/Cas9-treated) (Supplementary file 3). Findings for control and treated samples are provided in Supplementary File 3. (F), Frequency distribution of insertions of the knock-in transgene. Number of amplicon reads containing an insertion of the knock-in sequence (with ≥75% identity to it) is shown in the Y-axis, and the position of the insertion relative to the reference amplicon is shown on the X-axis. The programmed Cas9 scission lies between positions 102 and 103. Samples 3, 7 and 9 are independent amplicon libraries (technical replicates) made from the same sample of genomic DNA pooled from six biological replicates exposed to virions and ssODN. The insert shows a sequence logo, created using WebLogo (Crooks et al., 2004), of the sequences of the 3826 sequence reads from samples 3, 7 and 9, with insertions of 24 bp at position 102; most matched the donor template, TAAGTGACTAGGTAACTGAGTAGC.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) An alignment assembled using CLUSTALW (Larkin et al., 2007) of the MiSeq amplicon region in the ω1 genes Smp_179960, Smp_184360, Smp_193860 and Smp_168300 using the sequences from the S. mansoni genome, assembly V5. The MiSeq primers (highlighted in blue) and sgRNA (red) were designed based on Smp_184360. Residues highlighted in green show where Smp_168300 differs from the other three genes. (B) An alignment made using CLUSTALW (Larkin et al., 2007) of the coding region of the amplicon sequence found in the gene Smp_193860 in the S. mansoni V7 assembly, the predicted alternative sequence for the variant having ‘TT’ at position 60–61 and ‘TA’ at 152–153 in the amplicon (‘var’), and the translations of two mDNAs retrieved from NCBI (top BLASTP hits in the NCBI protein database). Note that this corresponds to a part only of the ω1 T2 ribonuclease. The CAS-2 catalytic region is highlighted in red (Fitzsimmons et al., 2005). The mRNA XP_018647488.1 has an alternative splicing event at the start of the exon included in the amplicon (shaded grey), so that it only matches the region from ‘KHEFEK…’ (in the CAS-2 catalytic region) onwards. (C) An alignment of the coding region of the amplicon sequence in schistosome ω1 homologues (family 873078), excluding diverged members from S. japonicum as well as the diverged S. haematobium gene B_00112. The region with sequence similarity to the alternative splice-form is in shaded grey. Note that the Smp_193860 sequence used in this alignment is the version in the S. mansoni draft genome V5 gene set, which has the Q->K substitution at 152–153.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The PCR products visualized in ethidium bromide-stained agarose gel demonstrated Cas9-catalyzed target site-specific insertional mutagenesis in exon 6 of the ω1 gene. The 24 nt transgene knocked-in into target site indicated in lanes R1, R2 and R3 of 321, 285 and 184 bp, respectively (arrows at left) spanning the mutated site in the genomic DNAs pooled from schistosome eggs, including a positive control flanking the insert site (991 bp). Lanes 1–5 show the amplicons from the control groups; medium only, sgRNA only, cas9 only, ssODN only and heat-inactivated pLV-ω1X6 + ssODN. Lanes 6–9 show the amplicons from experiment groups; RNP, RNP and ssODN (KI), pLV-ω1X6 virions, and pLV-ω1X6 virions and ssODN (KI). Programmed knock-in was detected only in the KI experimental groups, as shown in lanes 7 and 9 where the transgene-specific amplicon obtained with the R1, R2 and R3 primers was present. This product was not amplified by PCRs where DNAs from control and other experimental groups served as the template. Amplicons of 991 bp were obtained with all genomic DNAs, confirming the integrity of the genomic DNAs and the control amplicon primer pair.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Copy number estimated by qPCR in genomic DNAs isolated from CRISPR/Cas9-treated eggs or controls. The relative copy number of the LE as calibrator sample = 1. Means ± SD of control (wt LE), LE treated- Cas9 only, LE treated-ssODN only, LE treated-heat-inactivated pLV-ω1X6 virions, LE treated-heat-inactivated pLV-ω1X6 virions and ssODN, LE treated- pLV-ω1X6 virions, LE treated-pLV-ω1X6 virions and ssODN.
+
+### Programmed mutations in exon 6 of ω1
 
 The activity of CRISPR/Cas9 was first evaluated by a quantitative PCR (qPCR) approach that relies on the inefficient binding of a primer overlapping the gRNA target, which is where mutations were expected to have occurred, compared to the binding efficiency of flanking primers, which were outside the mutated region (Shah et al., 2015; Yu et al., 2014). The overlapping (OVR) primer pair shared the reverse primer with OUT primer (Figure 3—figure supplement 1A). Genomic DNA template was used for qPCR to quantify the efficiency of CRISPR-mediated mutagenesis at the target locus; the ratio between the OVR products and OUT products estimate the relative fold amplification reduction in CRISPR/Cas9-manipulated samples compared to controls in the target sequence of the gRNA. Relative fold amplification was reduced by 12.5% in gDNA isolated from eggs treated with pLV-ω1X6 and ssODN, whereas a reduction in relative fold amplification of 2.5, 6.9, and 4.5 were observed in eggs treated with gRNA/Cas9 RNP complex alone, gRNA/Cas9 RNP complex and ssODN, or pLV-ω1X6 alone, respectively. A reduction in relative fold amplification was not apparent among control groups, that is untreated eggs, eggs electroporated in the presence of Opti-MEM only, Cas9 only, eggs transduced with heat-inactivated pLV-ω1X6 with ssODN donor, and eggs transfected with ssODN only (Figure 3—figure supplement 1B).
 
@@ -78,21 +104,37 @@ Many apparent sequence variants common to the control and edited eggs likely ref
 
 Along with the predicted NHEJ-catalyzed mutations, CRISPResso (http://crispresso.rocks/) determined the rate of HDR-mediated ssODN knock-in (Figure 2F and Supplementary file 3). Here, insertion of the 24 bp transgene was confirmed in 0.19% of the reads at the sgRNA programmed CRISPR/Cas9 target site (Figure 2F, sample nine in Supplementary file 3). Some reads containing the knock-in sequence included the ‘CC’ to ‘TA’ substitutions at positions 152–153 and ‘AC’ to ‘TT’ at positions 60–61 (Figure 2—figure supplement 2). This indicates that the indels catalyzed by NHEJ and/or KI by HDR occurred in target DNA sequences which exhibited 99% identity in multiple copies of ω1 including Smp_193860, Smp_184360 and Smp_179960, and possibly also further copies not yet annotated in the reference genome. The qPCR approach estimated a reduction by 12.5% in relative fold amplification in the pLV-ω1X6 with ssODN treatment group (Figure 3—figure supplement 1), whereas CRISPResso analysis of the pooled NGS reads indicated a frequency of indel/substitution mutation of ~4.5% (Supplementary file 3).
 
-## Programmed gene editing markedly diminished the expression of ω1
+### Programmed gene editing markedly diminished the expression of ω1
 
 Liver eggs (LE) transfected with RNP complexes, with or without ssODN, displayed a downregulation of the ω1-specific transcript of ~45% and 81%, respectively, compared to controls (p≤0.05; n = 11 by one way ANOVA). However, LE transduced with pLV-ω1X6 virions, with or without ssODN, showed a reduction of the ω1-specific transcripts of 67% and 83% respectively, when compared to controls (Figure 3A). Similar outcomes were seen in all biological replicates undertaken (n = 11). This outcome indicated that resolution of chromosomal DSB by NHEJ plus HDR provided enhanced programmed gene knockout compared to NHEJ-mediated chromosomal repair alone. Nevertheless, both RNPs and pLV virions efficiently delivered programmed gene editing to schistosomes but lentiviral transduction delivered enhanced performance with stronger gene silencing, in particular when the donor repair template was provided (Figure 3A). When examined at later time points (days 5 and 7 following manipulation of the LE), further reduction in ω1 abundance was not apparent (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig3-v2.jpg)
+
+**Figure 3.:** (A) ω1 mRNA abundance reduction up to ~70% after genome editing by sgRNA/Cas9 complex and lentivirus systems, and markedly reduced >80% with the addition of ssODN as the DNA repair donor. Relative expression of ω1 transcripts at 3 days following CRISPR/Cas9 manipulation; mean ±SD, n = 11 (biological replicates); p≤0.0001 (****) ANOVA statistic significant. (B) Stable reduction of ω1 transcripts at days 5 and 7 after treatment (three biological replicates) in four experimental groups; RNP (black), RNP and ssODN (red), pLV-ω1X6 virions (green), pLV-ω1X6 virions and ssODN (blue) compared to controls. (C–D) Loss of RNase activity as assessed by hydrolysis of yeast RNA. Residual yeast following exposure to SEA, visualized after gel electrophoresis; DW (negative control), RNase A, control SEA (from wt LE), other negative control SEAs; mock, sgRNA only, cas9 only, heated-pLV-ω1X6 + ssODN and the Δω1-SEAs from RNP, RNP with ssODN, pLV-ω1X6 virions, and pLV-ω1X6 virions with ssODN. (D) Intact yeast RNA (nanograms) remaining following incubation with SEA (mean ±SD, n = 6). More RNA remained following incubation with Δω1-SEA in all groups, RNP, RNP and ssODN, pLV-ω1X6 virions, and pLV-ω1X6 virions and ssODN treated SEA) (blue) than in the WT SEA controls (p≤0.0001). Among the gene edited experimental groups, more RNA remained when donor template was introduced at the same time as RNP or pLV-ω1X6 virions (p≤0.01, n = 11 by ANOVA). Significant differences were not apparent among the WT SEA control groups.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The three primers (tri-primer set): Smω1-OVR-F (probe at gRNA, expected DSB and KI sites as red bar and arrow), Smω1-OUT-F and shared Smω1-reverse primer locations used in SYBR green-based PCR to estimate efficiency of on-target, programmed CRISPR/Cas9 gene editing. Estimation of gene-editing efficiency was determined as described (Shah et al., 2015; Yu et al., 2014). (B) Relative fold amplification efficiency; the ratio of OVR:OUT (gray bar) was set at 100% for control DNA sample, and little or no reduction was observed in relative fold amplification compared to other control groups, including groups exposed to culture medium only, sgRNA only, Cas9 only, ssODN only, heat-killed pLV-ω1X6 virions and ssODN. By contrast, there was reduced relative fold amplification of 2.5%, 6.9%, 4.5% and 12.5% in the experimental groups, RNP, RNP and ssODN, pLV-ω 1X6 virions, and pLV-ω 1X6 virions and ssODN, respectively. Percentages of relative fold amplification differed significantly among control and experiment groups. Means ± SE were established from eleven biological replicates.
+
 Large DNA deletions have been associated with CRISPR/Cas9 mutations in another helminth species (Gang et al., 2017). However, using qPCR to estimate relative copy number, as previously described (Suttiprapa et al., 2012a), there were no evidence that silencing of ω1 was associated with the ω1 multiple gene copy numbers (Figure 2—figure supplement 4).
 
-## Diminished ribonuclease activity in CRISPR/Cas9-mutated schistosome eggs
+### Diminished ribonuclease activity in CRISPR/Cas9-mutated schistosome eggs
 
 The ribonuclease activity of the ω1 glycoprotein in SEA is associated with the Th2-polarized immune response that underpins the appearance of schistosome egg granulomata (Everts et al., 2012; Steinfelder et al., 2009; Everts et al., 2009). Ribonuclease activity of SEA from control and experimental groups on substrate yeast RNA was investigated following CRISPR/Cas9 programmed mutation of ω1 mediated by the RNP and the pseudotyped lentiviral approaches with or without ssODN. Intact yeast RNA was evident in the DNase-RNase free condition (negative control), indicating absence of RNase activity in the reagents (200 ng yeast RNA at the outset). There was near complete hydrolysis of yeast RNA following exposure to RNase A (positive control);~1.4 ng of RNA remained intact. Wild type SEA exhibited marked RNase activity against the yeast RNA;~70 ng RNA remained intact after one hour, corresponding to >60% digestion. Incubation of the RNA with Δω1-SEA (i.e. SEA from the gene edited eggs) from the experimental groups, RNP, RNP +ssODN, pLV-ω1X6, and pLV-ω1X6 + ssODN, resulted in ~30% substrate digestion, with 124, 140, 135 and 153 ng of RNA remaining, respectively. All conditions for programmed genome editing resulted in less digestion of the yeast RNA than for wild type SEA (p≤0.0001) (Figure 3C and D). Moreover, the Δω1-SEA with programmed knock-in exhibited less RNase activity than Δω1-SEA prepared without the donor ssODN repair template (p≤0.01, n = 6 by one-way ANOVA).
 
-## Depleting SEA of ω1 downregulated Th2 response
+### Depleting SEA of ω1 downregulated Th2 response
 
 The ω1 ribonuclease alone is capable of conditioning human monocyte-derived dendritic cells to drive Th2 polarization (Everts et al., 2012) and enhanced CD11b+ macrophage modulation of intracellular toll like receptor (TLR) signaling (Ferguson et al., 2015; Ferguson et al., 2016). Ribonuclease ω1 inhibited TLR-induced production of IL-1β and redirected the TLR signaling outcome toward an anti-inflammatory profile via the mannose receptor (MR) and dectin (Everts et al., 2012; Zaccone et al., 2011; Ritter et al., 2010). The human monocytic cell line, THP-1, and the Jurkat human CD4+ T cell line were employed to investigate the interaction of antigen-presenting cells and T cells (Qin, 2012; Fuentes et al., 2002). At the outset, the THP-1 cells were differentiated to macrophages for 48 hr, and subsequently pulsed with SEA or Δω1–SEA for 48 hr. Thereafter, the Jurkat CD4+ T cells were added to the wells, and the co-culture continued for 72 hr. Representative cytokines, including IL-4, IL-5, IL-13, IL-2, IL-6, IL-10, TNF-α and IFN-γ, were quantified in supernatants of the co-cultures (Figure 4). SEA from ω1-mutated eggs reduced levels of Th2 cytokines, including IL-4 and IL-5, in comparison to wild-type SEA (p≤0.01), and a trend toward less IL-13 production was also observed (Figure 4). Reduced levels of IL-6 and TNF-α were also observed (p≤0.01, n = 4 by one-way ANOVA). By contrast, significant differences in IL-10 and IL-2 were not evident between the WT- and mutant-SEA groups. IFN-γ was not detected following pulsing with the WT-SEA or mutant-SEA (Figure 4—figure supplement 1).
 
-## Granulomatous inflammation markedly reduced in lungs of mice injected with Δω1 eggs
+![Figure 4.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig4-v2.jpg)
+
+**Figure 4.:** Reduction in Th2 cytokines IL-4 and IL-5 but not IL-13 following pulsing of Mϕ (PMA induced-THP-1 cells) with Δω1-SEA prior to co-culture with human CD4+ T cells (Jurkat cell line) compared with WT-SEA pulsed-Mϕ (top panels). In addition, levels of IL-6 and TNF-α were reduced where Mϕ were first pulsed with Δω1-SEA but not WT SEA. Differences were not evident for IL-10. The assay was carried out in triplicate; p<0.0001,≤0.0001, 0.0038 and 0.0252 indicated as ****, ***, ** and *, respectively (one-way ANOVA, multiple comparison, n = 4).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41337/elife-41337-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Levels of IL-2 (blue circle) and IL-10 (black square) were not significantly different among groups after pulsing the Mϕ (PMA-induced THP-1 cells) with Δω1-SEA prior to co-culture with CD4+ T cells compared with WT-SEA pulsed-Mϕ. IFN-γ (red triangle) was not detected in any of the three groups.
+
+### Granulomatous inflammation markedly reduced in lungs of mice injected with Δω1 eggs
 
 Following the entrapment of eggs in the intestines, liver and eventually lungs, the glycosylated ω1 ribonuclease represents the principal stimulus that provokes the development of the circumoval granuloma, necessary for extravasation of the eggs (Doenhoff et al., 1986). A long-established model of the schistosome egg granuloma employs tail vein injection of eggs into mice, which leads to formation of circumoval granuloma in the mouse lung (Boros and Warren, 1970; Eltoum et al., 1995; Wynn et al., 1993). The latter approach has been extensively employed for immunopathogenesis-related studies of ω1 (Hagen et al., 2014). Accordingly, to elicit circumoval granulomas, ~3000 WT or Δω1 LE were injected into the lateral vein of the tail of BALB/c mice. The mice were euthanized 10 days after injection, and the entire left lung was removed, fixed, sectioned, and stained for histological analysis (Figure 5). Representative digital microscopic images of the whole mouse lungs acquired through high-resolution 2D digital scans are presented in Figure 5, panels A-G. At low magnification (2×), much more severe and widespread inflammation was visible in lungs exposed to WT eggs compared to Δω1-eggs. In addition, markedly more intense and dense focal inflammation was induced by WT compared to Δω1-eggs (Figure 5B). Granulomas were not seen in control naive mice not exposed to schistosome eggs (Figure 5C). At 20× magnification, vast disparity in volume of the circumoval granulomas was observed for WT versus Δω1 LE (Figure 5A1–A2, D,E and Figure 5B1–B2, F and G). The volume of granulomas surrounding single schistosome eggs was quantified; those surrounding WT eggs in lungs of the mice were 18-fold greater than for Δω1-eggs, 21×10−2 ± 1.61×10−3 mm3 and 0.34 × 10−2 ± 0.12×10−4 mm3 (mean ±S.E., 17–26 granulomas per mouse), respectively (p<0.0001, n = 103–130 by Welch’s t-test) (Figure 5H). The experiment was repeated with 3–4 mice per group with a similar outcome. The findings documented marked deficiency in the induction of pulmonary granulomas by the Δω1 compared to WT eggs of S. mansoni.
 
@@ -124,33 +166,139 @@ To conclude, these findings reported here confirmed that somatic genome editing 
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parasite</td>
+      <td>S. mansoni eggs</td>
+      <td>BEI resources</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Synthetic RNA</td>
+      <td>Guide RNA targeting exon 6 of omega-1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Plasmid construct</td>
+      <td>Lentiviral CRISPR Cas9 construct containing human U6 promoter driving gRNA and human EF1 promoter driving Cas9</td>
+      <td>Sigma</td>
+      <td>All-in-one vector (Custom)</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>single strand oligodeoxynucleotide</td>
+      <td>Eurofin Genomics</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Streptococcus pyogenes, nuclease</td>
+      <td>Cas9 nuclease</td>
+      <td>Dharmacon</td>
+      <td>CAS11201</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens, cell line</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573, RRID:CVCL_0045</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens, cell line</td>
+      <td>THP-1</td>
+      <td>ATCC</td>
+      <td>TIB-202, RRID:CVCL_0006</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens, cell line</td>
+      <td>Jurkat</td>
+      <td>ATCC</td>
+      <td>CRL-2901, RRID:CVCL_U620</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Lentiviral Packaging Mix</td>
+      <td>Sigma-Aldrich</td>
+      <td>SHP001</td>
+    </tr>
+    <tr>
+      <td>Commercial reagent</td>
+      <td>Lentiviral concentrator</td>
+      <td>Takara Bio</td>
+      <td>631231</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Lentiviral quantification</td>
+      <td>Takara Bio</td>
+      <td>631280</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>QIAseq 1-step Amplicon Library kit</td>
+      <td>Qiagen</td>
+      <td>180412</td>
+    </tr>
+    <tr>
+      <td>Commercial reagent</td>
+      <td>GeneRead Adaptor I</td>
+      <td>Qiagen</td>
+      <td>180986</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>QIAseq Library Quant System</td>
+      <td>Qiagen</td>
+      <td>QSIL-003</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Th1/Th2/Th17 ELISA multi-analyte test kit</td>
+      <td>Qiagen</td>
+      <td>336161</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 Mice experimentally infected with S. mansoni, obtained from the Biomedical Research Institute (BRI), Rockville, MD were housed at the Animal Research Facility of the George Washington University Medical School, which is accredited by the American Association for Accreditation of Laboratory Animal Care (AAALAC no. 000347) and has an Animal Welfare Assurance on file with the National Institutes of Health, Office of Laboratory Animal Welfare, OLAW assurance number A3205-01. All procedures employed were consistent with the Guide for the Care and Use of Laboratory Animals. The Institutional Animal Care and Use Committee (IACUC) of the George Washington University approved the protocol used for maintenance of mice and recovery of schistosomes. Studies with BALB/c mice involving tail vein injection of schistosome eggs and subsequent euthanasia using overdose of sodium pentobarbital was approved by the IACUC of BRI, protocol 18–04, AAALAC no. 000779 and OLAW no. A3080-01.
 
 Mice were euthanized 7 weeks after infection with S. mansoni, livers were removed at necropsy, and schistosome eggs recovered from the livers, as described (Dalton et al., 1997). The liver eggs termed ‘LE’ were maintained in DMEM medium supplemented with 10% heat-inactivated fetal bovine serum (FBS), 2% streptomycin/penicillin at 37°C under 5% CO2 in air for 18–24 hr, after which LE was exposed to electroporation with RNP or transduction by LV for programmed gene editing (Mann et al., 2010; Mann et al., 2014). Polymyxin B (10 μg/ml) was added to the cultures twice daily to neutralize lipopolysaccharide (LPS) (Cardoso et al., 2007). Soluble egg antigen (SEA) was prepared from these eggs, as described (Dunne et al., 1991; Boros and Warren, 1970). In brief, the homogenate of eggs in 1× PBS containing protease inhibitor cocktail (Sigma) was frozen and thawed twice, clarified by centrifugation at 13,000 rpm, 15 min, 4°C, the supernatant passed through a 0.22 μm pore size membrane. Protein concentration of the supernatant (SEA) was determined by the Bradford Protein Assay (Bradford, 1976) and aliquots of the SEA stored at −80°C.
 
-## Guide RNAs, Cas9, and single-stranded DNA repair template
+### Guide RNAs, Cas9, and single-stranded DNA repair template
 
 Single guide RNA (sgRNA) was designed using the web-based tools at http://bioinfogp.cnb.csic.es/tools/breakingcas/ (Oliveros et al., 2016) to predict cleavage sites for the Streptococcus pyogenes Cas9 nuclease within the genome of S. mansoni. The sgRNA targeted exon 6 of the ω1 gene, Smp_193860, www.genedb.org, residues 3,808–3,827, adjacent to the protospacer adjacent motif, AGG (Figure 1A). This is a multi-copy gene with at least five copies of ω1 located in tandem on chromosome 1 (Protasio et al., 2012). To infer the gene structure of Smp_193860 in the S. mansoni V5 genome assembly more accurately, the omega-1 mRNA DQ013207.1 sequenced by Fitzsimmons et al. (2005) was used to predict the gene structure with the exonerate software, by aligning it to the assembly using the exonerate options '--model coding2genome' and '--maxintron 1500'. The Smp_193860 copy of ω1 includes nine exons interspersed with eight introns (6196 nt) (Figure 1A).
 
 Synthetic gRNA (sgRNA), ω1-sgRNA was purchased from Thermo Fisher Scientific (Waltham, MA). A double-stranded DNA sequence complementary to the sgRNA was inserted into lentiviral gene editing vector, pLV-U6g-EPCG (Sigma), which encodes Cas9 from S. pyogenes driven by the eukaryotic (human) translation elongation factor 1 alpha 1 (tEF1) promoter and the sgRNA driven by the human U6 promoter (Figure 1C). The pLV-U6g-EPCG vector is tri-cistronic and encodes the reporter genes encoding puroR and GFP, in addition to Cas9 (Fitzsimmons et al., 2005). This gene-editing construct, targeting exon 6 of ω1 Smp_193860, was termed pLV-ω1X6. A single-stranded oligodeoxynucleotide (ssODN) (Lok et al., 2017), which included homology arms of 50 nt each in length at the 3’ (position 3775–3824 nt) and 5’ (3825–3874 nt) flanks and a small transgene (5’-TAAGTGACTAGGTAACTGAGTAGC-3’, encoding stop codons (six) in all open-reading frames) (Figure 1B), was synthesized by Eurofin Genomics (Louisville, KY). An oligonucelotide primer that included this sequence was employed in PCRs to investigate the presence of CRISPR/Cas9-programmed insertion of the transgene (Supplementary file 2).
 
-## Transfection of schistosome eggs with a Cas9/guide RNA complex
+### Transfection of schistosome eggs with a Cas9/guide RNA complex
 
 For the ribonucleoprotein (RNP) complex of the ω1-sgRNA and recombinant Cas9 from Streptococcus pyogenes, 6 μg of ω1-sgRNA and 6 μg of Cas9-NLS nuclease (Dharmacon, Lafayette, CO) were mixed in 100 μl Opti-MEM (Sigma) to provide 1:1 ratio w/w RNP. The mixture was incubated at room temperature for 10 min, pipetted into a 4 mm pre-chilled electroporation cuvette containing ~10,000 LE in ~150 μl Opti-MEM, subjected to square wave electroporation (one pulse of 125 volts, 20 ms) (BTX ElectroSquarePorator, ECM830, San Diego, CA). The electroporated eggs were incubated for 5 min at room temperature, and maintained at 37°C, 5% CO2 in air for 3, 5 and 7 days. To investigate whether homology-directed repair (HDR) could catalyze the insertion of a donor repair template, 6 μg ssODN was mixed with RNP and the LE before electroporation. In a second approach (above), the ssODN was delivered to LE by electroporation at ~24 hr after the lentiviral transduction of the LE. The eggs were collected 3, 5 and 7 days later and genomic DNA recovered from LE. The negative controls included LE subjected to electroporation in the presence of only Opti-MEM, only Cas 9, only sgRNA, and only ssODN.
 
-## Transduction of schistosome eggs with lentiviral particles
+### Transduction of schistosome eggs with lentiviral particles
 
 Escherichia coli Zymo 5α (Zymo Research) cells were transformed with lentiviral plasmid pLV-ω1X6 and cultured in LB broth in 100 μg/ml ampicillin at 37°C, agitated at 225 rpm for ~18 hr, after which plasmid DNA was recovered (GenElute Plasmid purification kit, Invitrogen). A lentiviral (LV) packaging kit (MISSION, Sigma-Aldrich) was used to prepare LV particles in producer cells (human 293T cell line). In brief, 3.5×105 of 293T cells/well were seeded in a six-well tissue culture plate in DMEM supplemented with 10% heat-inactivated fetal bovine serum (FBS), 2 mM L-glutamine, 1% penicillin/streptomycin and cultured at 37°C, 5% CO2 for 18 hr. The producer cells were transfected using FUGENE HD (Promega) with pLV-ω1X6 and LV packaging mix containing two additional plasmids; one plasmid that expressed HIV structural and packaging genes and another that expressed the pseudotyping envelope protein Vesicular Stomatitis Virus Glycoprotein (VSVG). Subsequently, the transfection mixture (50 μl; 500 ng plasmid DNA, 4.6 μl packaging mix, 2.7 μl of FUGENE HD in Opti-MEM) was dispensed drop wise into each well on the plate. Sixteen hours later, the media were removed from the transfected cells, replaced with pre-warmed complete DMEM, and cells cultured for 24 hr. The supernatant, containing VSVG-pseudotyped LV particles was filtered through 22 μm pore size membranes (Suttiprapa et al., 2016), and stored at 4°C. Additional pre-warmed complete DMEM was added to the well, for culture for a further 24 hr. The supernatant was collected as above, combined with the first supernatant and concentrated (Lenti-X concentrator, Takara Bio, Mountain View, CA). Virion titer was estimated by two methods; first, by use of Lenti-X-GoStix (Takara Bio) to establish the presence of functional virions at >105 infectious units (IFU)/ml, and second, by reverse transcriptase assay (Suttiprapa et al., 2016; Marozsan et al., 2004) to quantify levels of active virions. Virions with counts of ~4×106 count per minute (cpm)/ml were aliquoted and stored at −80°C.
 
 To transduce LE with LV,~10,000 eggs were incubated for 24 hr in complete DMEM containing 500 μl of ~4×106 cpm/ml VSVG-LV virions. Thereafter, the LE were washed three times in 1× PBS and transfected with ssODN (6 μg) by square wave electroporation. The further steps (Suttiprapa et al., 2012b) with subsequent transfection with heat-inactivated pLV virions at 70°C for 4 hr with ssODN, transfection with ssODN in the absence of virions or Opti-MEM only served as negative controls.
 
-## PCR amplification of diagnostic transgene to detect knock-in into exon 6 of ω1
+### PCR amplification of diagnostic transgene to detect knock-in into exon 6 of ω1
 
 For each DNA sample, four separate PCR assays using four distinct primer pairs (Supplementary file 2) were carried out. The first ω1 primer pair, to amplify locations 3,751–4,740 nt of Smp_193860, was employed as positive control for the presence of genomic DNA with the Smp_193860 copy of ω1. The other primer pairs shared one forward primer complementary to the knock-in 24 nt transgene with three reverse primers, Sm ω1-R1, -R2 and -R3 at positions 3,966–3,984, 4,066–4,085 and 4,102–4,121 nt, respectively, binding to three sites downstream of the ω1 predicted DSB site (Figure 2A, Supplementary file 2) (Lok et al., 2017). The PCR mix included 10 μl Green GoTaq DNA polymerase mix (Promega) with 200 nM of each primer and 10 ng genomic DNA. Thermal cycling conditions involved denaturation at 95°C, 3 min followed by 30 cycles of 94°C, 30 s, 60°C, 30 s and 72°C, 30 s and a final extension at 72°C for 5 min. Following agarose gel electrophoresis (1.2% agarose/TAE), amplicons of the expected sizes were recovered from gels and ligated into pCR4-TOPO (Thermo Fisher). E. coli Zymo 5α competent cells were transformed with the ligation products, several colonies of each transformant were grown under ampicillin selection, plasmid DNA purified, and the inserts sequenced to confirm the presence and knock-in of the transgene (Figure 1C).
 
-## Estimation of mutation efficiency
+### Estimation of mutation efficiency
 
 We used the egg genomic DNA templates directly for qPCR as described (Yu et al., 2014), with slight modification which enabled estimation of the efficiency of CRISPR-mediated mutagenesis at the target locus without the need to normalize the experimental and control template DNAs. The general approach makes use of the fact that the binding of a primer overlapping the sgRNA site was compromised in programmed mutagenized egg (LE) genome(s), resulting in delayed amplification, whereas binding of a flanking primer pair was unaffected. The ‘OUT’ (flanking) primer pair encompassed at least 50 bp surrounding the sgRNA binding region. The ‘OVR’ (overlapping) primer pair used one of the Smω1-OUT primers and another primer that bound the 20 bp of the sgRNA target sequence. The 3′ side of the Smω1-OVR primers bound immediately upstream of the NGG motif, as the majority of indels would be expected to affect positions −1 to −10 of the binding site (Canver et al., 2018).
 
@@ -164,43 +312,43 @@ A = Ct ratio of OVR:OUT from control group
 
 B = Ct ratio of OVR:OUT from experiment group
 
-## Illumina sequencing
+### Illumina sequencing
 
 Pooled LE DNA samples from six independent KI experiments of pLV-ω1X6 with ssODN were used as the template to amplify the on-target DNA fragment using MiSeq primers (Figure 2A) with High Fidelity Taq DNA polymerase (Thermo Fisher). PCR reactions were set up with 10 ng LE DNA samples from the KI experiment in 25 µl reaction mix using the HiFidelity Taq DNA polymerase (Thermo Fisher) following the PCR program 94°C for 3 min of denaturation followed by 30 cycles of 94°C for 30s, 60°C or 54°C for 30 s, 72°C for 45s and final extension at 72°C for 2 min. The expected size of the amplicon flanking predicted DSB was 202 bp. Amplicons of this size were purified using the Agencourt AMPure XP system (Beckman Coulter). Amplicons generated from four different PCR reactions from each sample were pooled, and 100 ng of amplicons from each sample was used to construct the uniquely indexed paired-end read libraries using the QIAseq 1-step Amplicon Library Kit (Qiagen) and GeneRead Adapter I set A 12-plex (Qiagen). These libraries were pooled, and the library pool was quantified using the QIAseq Library Quant System (Qiagen).
 
 Samples (Supplementary file 3) were multiplexed (10 samples) and each run on four MiSeq lanes. After sequencing, the fastq files for each particular sample were merged. Samples 1–6, 8 and 10 were prepared using an annealing temperature of 54°C. Samples 7 and 9 were prepared using an annealing temperature of 60°C, and included an extra 10 bp at the start of the MiSeq sequences, ‘GTTTTAGGTC’, present upstream of the 5’ primer in the genomic DNA. We trimmed this sequence from the reads using cutadapt v1.13 (Martin, 2011). To detect HDR events, computational software program CRISPResso (http://crispresso.rocks/) (Pinello et al., 2016; Canver et al., 2018) was employed using a window size of 500 bp (-w 500) with the reference amplicon according to gene Smp_193860 in the S. mansoni V7 assembly, and with the --exclude_bp_from_left 25 and --exclude_bp_from_right 25 options in order to disregard the (24 bp) primer regions on each end of the amplicon when indels are being quantified. A window size of 500 nt was employed to include the entire amplicon. In order to search for HDR events, CRISPResso checked for HDR events (using –e and –d options) in treatment groups including controls. To infer frameshifts using CRISPResso the –c option was used, giving CRISPResso the coding sequence from positions 42–179 of the amplicon. To confirm the insertions of the knock-in sequences reported by CRISPResso (right side column in Supplementary file 3), we took all insertions of 20–28 bp reported by CRISPResso, and calculated their percent identity to the expected knock-in sequence using ggsearch v36.3.5e in the fasta package (Pearson and Lipman, 1988). An insertion was considered confirmed if it shared ≥75% identity to the expected donor knock-in sequence.
 
-## GenBank/EMBL/DDBJ
+### GenBank/EMBL/DDBJ
 
-## Database accessions
+#### Database accessions
 
 Sequence reads from the amplicon NGS libraries are available at the European Nucleotide Archive, study accession number ERP110149. Additional information is available at Bioproject PRJNA415471, https://www.ncbi.nlm.nih.gov/bioproject/PRJNA415471 and GenBank accessions SRR6374209, SRR6374210.
 
-## Copy number estimation for ω1
+### Copy number estimation for ω1
 
 A quantitative PCR to estimate the relative copy number of ω1 was performed using Kapa SYBR FAST Universal qPCR mastermix (KK4602) on 1 ng of gDNA templates (pooled genomic DNA samples from six biological replicates) isolated from control and test samples, in 20 μl volumes. A primer pair of OMGgRNA1F and OMGgRNA1R was used to amplify the ω1 gRNA target region and SmGAPDH (Supplementary file 2) as a reference single-copy gene (primers shown in Supplementary file 2). The PCR efficiencies for primer pairs were estimated by titration analysis to be 100% ± 5 (Ginzinger, 2002) and qPCRs were performed in triplicate in 96-well plates, with a denaturation step at 95°C of 3 min followed by 40 cycles of 30 s at 95°C and 30 s at 55°C, in thermal cycler fitted with a real time detector (StepOnePlus, Applied Biosystems). The relative quantification assay 2-ΔΔCt method (Livak and Schmittgen, 2001) was used to ascertain the relative copy number of ω1. Relative copy number of ω1 in the CRISPR/Cas9 treated groups reflects the fold change of ω1 copy number normalized to the reference gene (SmGAPDH-F and -R primers) and relative to the untreated control group (calibrator sample with relative ω1 copy number = 1).
 
-## Gene expression for ω1 mRNA
+### Gene expression for ω1 mRNA
 
 Total RNAs from schistosome eggs were extracted using the RNAzol RT reagent (Molecular Research Center, Inc), which eliminates contaminating DNA (Chomczynski, 1993), and concentration and purity determined using a spectrophotometer (OD260/280 ~2.0). Reverse transcription (RT) of the RNA (500 ng) was performed using iScript Reverse Transcript (Bio-Rad), after which first strand cDNA was employed as template for qPCRs using SsoAdvanced Universal SYBR Green Supermix (Bio-Rad) performed in triplicates in an iQ5 real-time thermal cycler (Bio-Rad). RT-qPCR reaction mixtures included 2 μl first strand cDNA, 5 μl SsoAdvanced Universal SYBR Green Supermix, and 300 nM schistosome gene-specific primers. Supplementary file 2 provides details of the oligonucleotide primers. Thermal cycling included denaturation at 95°C for 30 s, 40 amplification cycles each consisting of denaturation at 95°C for 15 s and annealing/extension at 60°C for 30 s, and a final melting curve. The output was analyzed using the iQ5 software (BioRad). Relative expression was calculated using the 2-ΔΔCt method and normalized to schistosome GAPDH expression (Livak and Schmittgen, 2001); data are presented as transcript levels (three replicates) compared to the wild-type LE (100%), and fold change reported as mean relative expression ±SD (n = 11).
 
-## Nuclease activity of ω1
+### Nuclease activity of ω1
 
 A stock solution of yeast RNA (Omega Bio-tek, Norcross, GA) was prepared at 1.0 μg/μl, 50 mM Tris-HCl, 50 mM NaCl, pH 7.0. Yeast RNA (200 ng) was incubated with 2 μg SEA from control and experimental groups individually at 37°C for 60 min. SEA investigated here, named Δω1-SEA, was extracted from LE transduced with pLV- ω1X6 virions and ssODN, pooled from six biological replicates. RNase A, an endoribonuclease from bovine pancreas (Thermo Fisher) served as a positive control enzyme, whereas yeast RNA in reaction buffer only served as the negative control. The RNase activity of ω1 in wild-type SEA or Δω1-SEA was analyzed by visualizing and quantifying the substrate that remained following enzymolysis by agarose gel electrophoresis and staining with ethidium bromide. The yeast RNA digestion by control SEAs or Δω1-SEA were set up in triplicates, with quantity of residual RNA determined by densitometry (Ke et al., 2017).
 
-## Macrophage polarization by WT or Δω1-SEA and T-cell activation in vitro
+### Macrophage polarization by WT or Δω1-SEA and T-cell activation in vitro
 
 Human monocytic THP-1 cells were maintained in Roswell Park Memorial Institute medium (RPMI) 1640 (Thermo Fisher Scientific) containing 10% (v/v) FBS with 4 mM L-glutamine, 25 mM HEPES, 2.5 g/L D-glucose at 37°C in 5% CO2 in air. THP-1 cells were non-adherent cells. In a 6-well plate, THP-1 monocytes (3×105 cells in each well) were differentiated into macrophages (Mϕ) by incubation in 150 nM phorbol 12-myristate 13-acetate (PMA) (Sigma) for 48 hr (Genin et al., 2015). Mϕ were exposed to SEA (50 ng/ml) or Δω1-SEA (50 ng/ml) (from LE transduced with pLV-ω1X6 virions and ssODN) for 48 hr. To investigate macrophage and T cell interactions, Mϕ cells were pulsed with 50 ng/ml SEA or Δω1-SEA and thereafter co-cultured in direct contact with Jurkat (human CD4+ T) cells. Nine ×105 Jurkat were added to Mϕ with direct contact and were co-cultured for an additional 72 hr. Cell-free supernatants from the co-cultures were collected to quantify secretion of T helper cell cytokines including IL-4, IL-5, IL-13, IL-10, TNF-α, IL-6, IL-2 and IFN-γ by enzyme linked immunosorbent assay (Multiplex Human Cytokine ELISA kit, Qiagen) (Schmid and Varner, 2010). The assay included positive controls for each analyte, which were provided in the kit. Three biological replicates were undertaken.
 
-## Cell lines
+### Cell lines
 
 Human HEK293 cells, Jurkat and THP-1 cell lines were obtained from ATCC. All three cell lines were authenticated by ATCC using STR profiling by PCR and were confirmed in our laboratory to be Mycoplasma-free using the Lookout Mycoplasma PCR detection kit (Sigma-Aldrich).
 
-## Schistosome egg-induced primary pulmonary granulomas
+### Schistosome egg-induced primary pulmonary granulomas
 
 For induction of circumoval, egg-induced granulomas in the lungs of mice, 8 weeks old female (Ashton et al., 2001) BALB/c mice were injected with 3,000 WT eggs or Δω1-eggs (from experiment pLV-ω1X6 with ssODN) or 1× PBS as negative control by tail vein, as described (Wynn et al., 1993). The mice were euthanized 10 days later. Each group included 3 or five mice, two biological replicates were undertaken, totaling 6–10 mice for each treatment group. Before starting the experiment, mice were allocated randomly to the control or experimental treatment groups. For histopathological assessment of granuloma formation, the left lung was removed at necropsy and fixed in 10% formalin in pH 7.4 buffered saline for 24 hr, after which it was dehydrated in 70% ethanol, and clarified in xylene. The fixed lung tissue was embedded in paraffin and sectioned at 4-μm-thickness by microtome. Thin sections of the left lung lobe were mounted on glass slides and fixed at 58–60°C. Subsequently, rehydrated sections were stained with hematoxylin-eosin (H&E) for evaluation of inflammatory infiltrates and cellularity of granulomas. Digital images were captured using a 2D glass slide digital scanner (Aperio Slide Scanner, Leica Biosystems, Vista, CA) and examined at high magnification using the Aperio ImageScope software (Leica) (Eltoum et al., 1995; Cheever et al., 1992). The longest (R) and shortest (r) diameters of each granuloma containing a single egg were measured with an ocular micrometer, and the volume of the granuloma calculated assuming a prolate spheroidal shape, using 4/3πRr2 (Ashton et al., 2001). All granulomas in all slides from the left lung of the mice, 15 slides per treatment group, were measured; in total, >100 granulomas from each treatment group.
 
-## Biological and technical replicates, statistics
+### Biological and technical replicates, statistics
 
 In the assays above, we performed two or more biological replicates. These biological replicates represented parallel measurements of biologically discrete samples in order to capture any random biological variation. Technical replicates were undertaken as well; these represented two or three repeated measurements of the same sample undertaken as independent measurements of the random noise associated with the investigator, equipment or protocol.
 

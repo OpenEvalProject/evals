@@ -43,7 +43,7 @@ Long-read sequencing is an important factor in assembling longer contigs to reso
 
 ## Results and discussion
 
-## Gapless genome assembly
+### Gapless genome assembly
 
 We added to our previously sequenced short-read Illumina data (~30× coverage) by generating 61.8 Gbp of long-read PacBio sequences; relative to a non-sequencing-based estimate of genome size of 3.73 Gbp (Hara et al., 2018), this was an expected coverage of long-read sequences of about 16× coverage, for a total of ~46× coverage. The new whale shark genome assembly represented the best gapless assembly to date for the whale shark (Supplementary file 1). The total length of the new assembly was 2.96 Gbp. The total size of the assembly was very similar to the genome size estimated from the k-mer-based approach GenomeScope of ~2.79 Gbp, suggesting the genome is fairly complete. On the other hand, it was smaller than a non-sequencing-based estimate of the whale shark genome size of 3.73 Gbp by Hara et al., 2018, which suggests that sections of the genome, potentially comprising primarily repetitive elements, are still missing. Repetitive elements were annotated to comprise roughly 50.34% of the genome assembly (Appendix 1).
 
@@ -53,7 +53,7 @@ Based on GenomeScope, the whale shark genome had an estimated level of heterozyg
 
 To assess gene completeness, we first used BUSCO v2 (Simão et al., 2015). Of 2586 orthologs conserved among vertebrates searched by BUSCO (Simão et al., 2015), we found 2033 complete orthologs in the whale shark genome, of which 1967 were single-copy and 66 had duplicates; 323 orthologs were detected as fragments, while 230 were not detected by BUSCO. With 78.7% complete genes, this represents a marked improvement over the previous whale shark genome assembly, which only had 15% complete BUSCO genes (Hara et al., 2018). We also evaluated gene completeness using a rigid one-to-one ortholog core vertebrate gene (CVG) set that is better tuned for finding gene families in elasmobranchs (Hara et al., 2015) implemented in gVolante server (Nishimura et al., 2017; Nishimura et al., 2019), we found that 85% of CVGs were complete and found that 97.4% of CVGs included partial genes, which compares favorably to completeness statistics in other shark assemblies (Hara et al., 2018; Supplementary file 2). The gene content of this whale shark assembly was thus quite complete and informative for questions regarding vertebrate gene evolution.
 
-## Ancestral vertebrate genome evolution
+### Ancestral vertebrate genome evolution
 
 We sought to use the new whale shark genome assembly to infer the evolutionary history of protein-coding gene families (i.e. orthogroups) across vertebrate phylogeny, aiming to provide insight into the evolution of biological innovations during major transitions in vertebrate evolution. Orthogroups are defined as all genes descended from a single gene in the common ancestor of the species considered (Emms and Kelly, 2015); hence, they are dependent to a degree on the phylogenetic breadth of species included in the analysis. Genes from the proteomes for 37 chordate species deriving primarily from Ensembl and RefSeq (O'Leary et al., 2016; Yates et al., 2020; Supplementary file 3), including 35 representative vertebrates, a sea squirt (Ciona), and a lancelet (Branchiostoma) were assigned to 18,435 orthologous gene families using OrthoFinder, which were assigned to a mean of 10,688 orthogroups per genome (Supplementary file 4). We then inferred the history of gene family origin and loss by comparing the presence and absence of gene families across species. Although accurate inference of gene family size evolution in vertebrates may benefit from further taxon sampling among invertebrates, Branchiostoma is notable among animals for retaining a relatively high number of gene families present in the animal stem branch (Richter et al., 2018), hence it is one of the best outgroup species to vertebrates to study the origins of novel genes within the vertebrate clade.
 
@@ -77,19 +77,179 @@ Differences between bony vertebrates and cartilaginous fishes might be due to fu
 
 Our analyses imply a dynamic history of gene family gain and loss across early vertebrate evolution. Of particular importance was the number of gene families gained in the MRCA of jawed vertebrates in establishing the gene families that are present in bony vertebrates and cartilaginous fishes, with these novel gene families being enriched for immune-related functions. The whale shark genome provided an important additional resource to study the origins of gene families in early vertebrate evolution.
 
-## Evolution of jawed vertebrate innate immune receptors
+### Evolution of jawed vertebrate innate immune receptors
 
 Cartilaginous fishes are the most distant human relatives to possess an adaptive immune system based on immunoglobulin antibodies and T-cell receptors (Dooley, 2014; Flajnik and Kasahara, 2010). This has driven extensive functional study of their adaptive immune system and an in-depth, although controversial, analysis of the evolution of adaptive immune genes in the elephant shark genome (Dooley, 2014; Redmond et al., 2018; Venkatesh et al., 2014). By comparison, the cartilaginous fish innate immune system has been overlooked (Krishnaswamy Gopalan et al., 2014), despite its importance to understanding the impact that the emergence of adaptive immunity had on innate immune innovation. For example, some previous analyses of deuterostome invertebrate genomes identified greatly expanded PRR repertoires. Yet, vertebrate PRR repertoires are considered to be highly conserved, leading to the suggestion that the need for vast PRR repertoires in vertebrates was superseded by the presence of adaptive immunity in vertebrates (Huang et al., 2008; Rast et al., 2006; Smith et al., 2013). Notable exceptions to this include an expansion of TLRs in codfishes due to a proposed loss of CD4 and MHC class II (Solbakken et al., 2017), and expansion of fish-specific NLRs in some other teleosts (Howe et al., 2016; Stein et al., 2007). As such, we sought to use the whale shark genome to determine whether cartilaginous fishes have a similar PRR set to bony vertebrates, with which they share an adaptive immune system, and also search for evidence of PRR expansions aiming to better understand vertebrate innate immune evolution. To this end, we used BLAST to identify whale shark sequences corresponding to three major PRR families – NLRs, RLRs, and TLRs – and reconstructed their phylogeny among published, curated vertebrate PRR gene datasets.
 
 NLRs are intracellular receptors that detect a wide array of pathogen- (PAMPs) and damage-associated molecular patterns (DAMPs) (e.g. flagellin, extracellular ATP, glucose) (Fritz and Kufer, 2015). We identified 43 putative NLRs in the whale shark. We found direct orthologs of almost all human NLRs (UFBOOT=100 for all; Supplementary file 12), of which 23 contained a clearly identifiable NACHT domain (a signature of NLRs) (NOD1, NOD2, CIITA, NLRC5, NLRC3) while other putative orthologs did not (NLRX1, NLRC4, BIRC1, NWD1, TEP-1, and NLRP). While inclusion of these sequences lacking an apparent NACHT might seem questionable, the false-negative rate for NACHT domain detection is high, even for some human NLRs. The presence of these orthologs in whale shark indicates the presence of a conserved core NLR repertoire in jawed vertebrates (Supplementary file 12, Figure 2 and Figure 2—figure supplement 1, Appendix 3). Surprisingly, we found three orthologs of NOD1 in the whale shark, which is a key receptor for detection of intracellular bacteria, rather than a single copy as in humans (ultrafast bootstrap support, UFBOOT=100; Figure 2—figure supplement 1 and Figure 2—figure supplement 2). Further analyses intimate that the three NOD1 copies resulted from tandem duplication events in the ancestor of cartilaginous fishes (Appendix 3). Sequence characterization suggests that all three of the whale shark NOD1s possess a canonical NACHT domain and so should retain a NOD1-like binding mechanism, but may have unique recognition specificity (Figure 2—figure supplement 2, Appendix 3). Thus, we hypothesize that the three NOD1s present in cartilaginous fishes potentiate broader bacterial recognition or more nuanced responses to intracellular pathogens. In contrast to the scenario observed for NOD1, we did not find NACHT domain containing orthologs of any of the 14 human NLRP genes, many of which activate inflammatory responses (Schroder and Tschopp, 2010), in whale shark, and only a single sequence lacking a detectable NACHT domain (Supplementary file 12, Figure 2 and Figure 2—figure supplement 1, Appendix 3). However, we did identify an apparently novel jawed vertebrate NLR gene family that appears to be closely related to the NLRPs (UFBOOT=67; Figure 2 and Figure 2—figure supplement 1). This family has undergone significant expansion in the whale shark (UFBOOT=100; Figure 2 and Figure 2—figure supplement 1), and we tentatively suggest that this may compensate for the paucity of true NLRPs in whale shark. Nonetheless, these results imply that the NLR-based inflammasomes in humans and whale sharks are not directly orthologous, and hence that NLR-based induction of inflammation and inflammation-induced programmed cell death (Schroder and Tschopp, 2010) are functionally distinct in human and whale shark. Interestingly, each of the vertebrate species we examined (human, zebrafish, and whale shark) has independently expanded different NLR subfamilies relative to the other species included in the analysis, with NLRP genes expanded in human (clade UFBOOT=99; Figure 2 and Figure 2—figure supplement 1) and the previously identified ‘fish-specific’ FISNA in zebrafish (clade UFBOOT=86; Figure 2 and Figure 2—figure supplement 1). For the latter, we unexpectedly found a whale shark ortholog (UFBOOT=74), suggesting this gene was present in the jawed vertebrate ancestor and is not a teleost novelty. In all, while we found evidence for a core set of NLRs in jawed vertebrates, our analyses also show that multiple, independent NLR repertoire expansions, with probable immunological relevance, have occurred during jawed vertebrate evolution despite the presence of the adaptive immune system.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65394/elife-65394-fig2-v2.jpg)
+
+**Figure 2.:** Nodes supported ≥95% UFBOOT indicated with a dot. For NOD-like receptors, NLRs in whale shark with a NACHT domain are indicated by a dot at the tip. See also Figure 2—figure supplements 1–2. For RIG-like receptors (RLRs), branches are colored by gene, except for RLRs in whale shark which are colored distinctly and labeled by a dot at each tip. See also Figure 2—figure supplement 3. For toll-like receptors (TLRs), each clade represents a separate TLR except families found within TLR13 are also labeled a (TLR13a), b (TLR32), and c (TLR33). TLR families are also labeled by stars indicating whether they were present in the whale shark genome, present in jawed vertebrate ancestor, present in the vertebrate ancestor, and novel to this study. See also Figure 2—figure supplement 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65394/elife-65394-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Branches leading to human sequences are shown in black, to zebrafish in blue-green, and whale shark in red. Whale shark sequences with a detectable NACHT have ‘_NACHT’ at the end of the sequence identifier (except for transcriptome sequence which all contain NACHT domains; all NACHT domain containing sequences are also noted with ‘*’ in Supplementary file 12).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65394/elife-65394-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Phylogenetic analysis of NOD1 focused NOD-like receptor (NLR) dataset. (B) Domain structure of NOD1 duplicates in whale shark. (C) Synteny analysis of jawed vertebrate NOD1s.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65394/elife-65394-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Tree of the RLR and DICER DEAD-Helicase domains. (B) Tree of the RLR and MAVS CARD domains. Whale shark sequences are highlighted in blue.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65394/elife-65394-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The tree is rooted according to the minimal ancestor deviation method (Tria et al., 2017).
+
 RLRs are intracellular receptors that detect viral nucleic acid and initiate immune responses through mitochondrial antiviral signaling (MAVS) protein (Mukherjee et al., 2014). Bony vertebrates have three RLRs: RIG-1 (encoded by DDX58), MDA5 (IFIH1), and LGP2 (DHX58). Structurally, these are all DEAD-Helicase domain-containing family proteins with a viral RNA binding C-terminal RD (RNA recognition domain), and an N-terminal CARD domain pair that mediates interaction with MAVS (Loo and Gale, 2011; Mukherjee et al., 2014). Previous phylogenetic studies either did not include RLRs from cartilaginous fishes or have failed to definitively identify each of the three canonical vertebrate RLRs in this lineage, meaning that the ancestral jawed vertebrate RLR repertoire remained unknown (Krishnaswamy Gopalan et al., 2014; Mukherjee et al., 2014). Our phylogenetic analyses of DEAD-Helicase and CARD domains indicate that orthologs of each of these genes exist in whale shark, revealing that all three RLRs had already diverged in the last common ancestor of extant jawed vertebrates (UFBOOT values all 100; Table 1, Figure 2 and Figure 2—figure supplement 3, Supplementary file 12, Appendix 3). Further, and consistent with past findings (Mukherjee et al., 2014), we found that MDA5 and LGP2 are the result of a vertebrate-specific duplication, while RIG-1 split from these genes much earlier in animal evolution (Figure 2 and Figure 2—figure supplement 3, Appendix 3). We also identified MAVS orthologs in whale shark, elephant shark, and despite difficulties identifying a sequence previously (Boudinot et al., 2014), coelacanth (UFBOOT=100; Figure 2 and Figure 2—figure supplement 3, Supplementary file 12, Appendix 3). These results show that the mammalian RLR repertoire (and MAVS) was established prior to the emergence of extant jawed vertebrates and has been highly conserved since, consistent with a lack of evidence for large RLR expansions in invertebrates.
+
+**Table 1.**
+ Vertebrate and invertebrate pathogen recognition receptor (PRR) repertoires.Superscripts indicate these citations: 1: Chen et al., 2021; 2: Howe et al., 2016; 3: Mukherjee et al., 2014; 4: Kasamatsu et al., 2010; 5: Buckley and Rast, 2015 ; 6: Tassia et al., 2017.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Toll-like receptors (TLRs)</th>
+      <th>NOD-like receptors (NLRs)</th>
+      <th>RIG-like receptors (RLRs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Jawed vertebrates</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens (human)</td>
+      <td>10</td>
+      <td>21</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Danio rerio (zebrafish)</td>
+      <td>201</td>
+      <td>4212</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Rhincodon typus (whale shark)</td>
+      <td>13</td>
+      <td>43</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td colspan="4">Jawless vertebrates</td>
+    </tr>
+    <tr>
+      <td>Petromyzon marinus (lamprey)</td>
+      <td>164 / 195</td>
+      <td>345</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td colspan="4">Invertebrate deuterostomes</td>
+    </tr>
+    <tr>
+      <td>Ciona intestinalis</td>
+      <td>35</td>
+      <td>165</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Branchiostoma floridae</td>
+      <td>196 / 725</td>
+      <td>925</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Strongylocentrotus purpuratus</td>
+      <td>1046 / 2535</td>
+      <td>2035</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Cephalodiscus hodgsoni</td>
+      <td>66</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ptychodera flava</td>
+      <td>146</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Saccoglossus kowalevskii</td>
+      <td>106</td>
+      <td></td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td colspan="4">Protostomes</td>
+    </tr>
+    <tr>
+      <td>Drosophila melanogaster</td>
+      <td>95</td>
+      <td>05</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Daphnia pulex</td>
+      <td>75</td>
+      <td>25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Caenorhabditis elegans</td>
+      <td>15</td>
+      <td>05</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Capitella teleta</td>
+      <td>1055</td>
+      <td>555</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Helobdella robusta</td>
+      <td>165</td>
+      <td>05</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Lottia gigantea</td>
+      <td>605</td>
+      <td>15</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td colspan="4">Non-bilaterian animals</td>
+    </tr>
+    <tr>
+      <td>Nematostella vectensis</td>
+      <td>15</td>
+      <td>425</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Amphimedon queenslandica</td>
+      <td>05</td>
+      <td>1355</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
 
 TLRs recognize a wide variety of PAMPs and are probably the best known of all innate immune receptors. While large expansions have been observed in several invertebrate lineages (Huang et al., 2008; Rast et al., 2006), many studies suggest that the vertebrate TLR repertoire is largely conserved (Boudinot et al., 2014; Braasch et al., 2016; Wang et al., 2016). Some teleosts appear to be an exception to this rule; however, this is likely due to the teleost-specific whole-genome duplication, and loss of CD4 and MHC class II in codfishes (Solbakken et al., 2017). We identified 13 putative TLRs in whale shark (Supplementary file 12; Appendix 3), 11 of which are orthologous to TLR1/6/10, TLR2/28 (x2), TLR3, TLR7, TLR8, TLR9 (x2), TLR21, TLR22/23, and TLR27 (UFBOOT values all ≥99; Figure 2 and Figure 2—figure supplement 4; Appendix 3). The remaining two, along with a coelacanth sequence, represent a novel ancestral jawed vertebrate TLR gene family related to TLR21, for which we propose the name TLR29 (UFBOOT = 99; Figure 2 and Figure 2—figure supplement 4). Thus, the whale shark TLR repertoire is a unique combination when compared to all other vertebrates previously studied, being formed from a mix of classic mammalian and teleost TLRs, supplemented with TLR27 and the new TLR29. Our rooted phylogenies indicate that the ancestor of extant vertebrates possessed at least 15 TLRs, while the ancestor of jawed vertebrates possessed at least 19 TLRs (including three distinct TLR9 lineages), both of which are larger repertoires than possessed by modern 2R species (Figure 2 and Figure 2—figure supplement 4; Appendix 3). Unlike invertebrates, where both loss and expansion of TLRs have been extensive, our data suggest that many jawed vertebrate TLRs existed in the jawed vertebrate ancestor, with lineage-specific diversification of jawed vertebrate TLRs primarily resulting from differential loss (as well as genome duplications), supplemented by occasional gene duplication events.
 
 Overall, our findings imply that the jawed vertebrate ancestor possessed a core set of PRRs that has largely shaped the PRR repertoires of modern jawed vertebrates. We propose the budding adaptive immune system formed alongside this core set of PRRs, with concomitant genome duplication-driven expansion of immunoregulatory genes leading these PRRs to become embedded within new, combined innate-adaptive immunity networks. Our results suggest that the impact of this on the propensity for large expansions is PRR type-specific, with expansion of NLRs being recurrent during jawed vertebrate evolution, and massive expansion of TLRs constrained without degeneration of the adaptive immune system. Although reliance upon innate immune receptors is offset in vertebrates due to the presence of the adaptive immune system, our results suggest that differences in PRR repertoires between vertebrates and invertebrates are driven by specific functional needs on a case-by-case basis. Thus, rather than a simple replacement scenario, the interaction with the adaptive immune system, and associated regulatory complexity, is likely a major factor restraining the proliferation of certain vertebrate PRRs. Although there is clear evidence that PRR expansions can and do occur in jawed vertebrates despite the presence of an adaptive immune system, further in-depth analyses are needed to help better tease out the changes in tempo of PRR diversification across animal phylogeny and whether this associates in any way with the emergence of adaptive immunity.
 
-## Rates of functional genomic evolution and gigantism
+### Rates of functional genomic evolution and gigantism
 
 Rates of genomic evolution vary considerably across vertebrates, either across clades or in relationship to other biological factors, including body size. We compared rates in two different aspects of genomic evolution with potential functional relationship to gigantism in the whale shark, to those of other vertebrates: rates of amino acid substitution in protein-coding genes and rates of evolution in gene family size.
 
@@ -113,13 +273,13 @@ For the 1387 gene families that had a significant rate shift in gene family size
 
 **Figure 4.:** Branch-specific rates of gene family size evolution for branches leading to giant taxa were significantly higher than in branches leading to other taxa, and additionally the rate of gene family size evolution was even greater in cancer-related gene families related to other gene families specifically in branches leading to giant taxa.
 
-## Conclusions
+### Conclusions
 
 As a representative of cartilaginous fishes, a lineage for which only few genomes have thus far been sequenced, the whale shark genome provides an important resource for vertebrate comparative genomics. The new genome assembly based on long reads we reported in this paper represents the best gapless genome assembly thus far among cartilaginous fishes. Comparison of the whale shark to other vertebrates not only expands the number of shared gene families that were ancestral to jawed vertebrates but demonstrates that the early vertebrate genome duplications were also accompanied by a burst in the evolution of novel genes. These early gene families are involved in a diversity of functions including reproduction, metabolism, development, and adaptive immunity. We also find differences in gene families implying functional genomic differences between bony vertebrates and cartilaginous fishes, MAS1 and the NK gene cluster. With specific respect to genes involved in innate immune protection, we found divergent patterns of gene gain and loss between NLRs, RLRs, and TLRs, which provide insight into their repertoires in the jawed vertebrate ancestor. These results rejected a scenario where the importance of PRRs is muted in vertebrates by the presence of adaptive immunity, instead indicating the ongoing necessity of ancient PRRs, which were integrated with the new adaptive immune system in the jawed vertebrate ancestor. Finally, we demonstrated that the relationship between rates of gene family size evolution and rates of substitution to gigantism are decoupled, and that gene families that shifted in gene expansion and contraction rate leading to vertebrate giants were enriched for genes with cancer relevance. The whale shark genome helps to build a foundation in shark and vertebrate comparative genomics, which is useful to answer questions of broader vertebrate evolution and convergent evolution of distinctive traits. Further sequencing of high-quality elasmobranch genomes will continue to enhance research from finding unique, whale shark-specific evolutionary change to illuminating broader patterns of vertebrate evolution.
 
 ## Materials and methods
 
-## Genome sequence assembly and assessment
+### Genome sequence assembly and assessment
 
 To improve on our earlier efforts to sequence and assemble the whale shark genome (Read et al., 2017), we generated PacBio long-read sequences from the same DNA sample. These sequences are available on NCBI SRA under the accession SRX3471980. This resulted in 61.8 Gbp of sequences, equivalent to ~20× fold coverage. The initial assembly was performed using Canu 1.2 (Koren et al., 2017) with adjusted parameters to account for the lower input coverage: canu -p asm -d shark genomeSize=3.5g corMhapSensitivity=high corMinCoverage=two errorRate=0.035.
 
@@ -129,15 +289,15 @@ We performed k-mer analysis using Jellyfish version 2.2.6 on all Illumina reads 
 
 We assessed gene completeness with conserved vertebrate orthologs using BUSCO v2 (Simão et al., 2015) and CVG orthologs using gVolante (version 1.2.1; accessed April 23, 2019) (Hara et al., 2015), and by mapping RNA-seq reads (Appendix 1). The trimmed reads were then re-used to call SNPs to assess heterozygosity using freebayes under default settings (Garrison and Marth, 2012). We then used vcflib packages vcffilter to filter the results for a minimum quality of 20 (-f ‘QUAL >20’) and vcfstats to count the number of SNPs (Garrison et al., 2021).
 
-## Transcriptome sequencing
+### Transcriptome sequencing
 
 Approximately 30 million short-read pairs for whale shark transcripts were obtained with paired-end 127 cycles from blood cells of a male and a female by the Illumina HiSeq 1500, as described previously (Hara et al., 2018). Animal handling and sample collections at Okinawa Churaumi Aquarium were conducted by veterinary staff without restraining the individuals, in accordance with the Husbandry Guidelines approved by the Ethics and Welfare Committee of Japanese Association of Zoos and Aquariums. Downstream handling of nucleic acids was conducted in accordance with the Guideline of the Institutional Animal Care and Use Committee (IACUC) of RIKEN Kobe Branch (Approval ID: H16-11). Transcriptome sequence data are available at NCBI BioProject ID PRJDB8472 and DDBJ DRA ID DRA008572.
 
-## Gene prediction
+### Gene prediction
 
 Genes predictions were provided to us by RefSeq using their genome annotation pipeline version 7.3 (Warren et al., 2017), details of the resulting annotation are publicly available (Rhincodon typus Annotation Report, 2018). This annotation included alignments of RNAseq data from gray bambooshark Chiloscyllium griseum kidney and spleen, nurse shark Ginglymostoma cirratum spleen and thymus, and brownbanded bambooshark C. punctatum retina, as well as protein alignments from Actinopterygii, and RefSeq protein sequences for Asian arowana Scleropages formosus, coelacanth, spotted gar, zebrafish, clawed frog, and human. After preliminary orthology determination, we determined additional genes absent in whale shark conserved among vertebrates, which we annotated by aligning protein sequences from these genes from human, gar, coelacanth, and mouse to whale shark using genBLAST v1.39 (She et al., 2011) with these settings: -p genblastg -e 1e-5 -g T -gff -cdna -pro -pid (Appendix 1, Supplementary file 15), and for elephant shark (Supplementary file 16).
 
-## Orthology inference
+### Orthology inference
 
 We identified orthologs from the whale shark genome by comparison to publicly available chordate genomes. We compiled chordate proteomes for 32 species representing major vertebrate clades, the sea squirt Ciona intestinalis, and lancelet Branchiostoma floridae (Supplementary file 3). In selecting representative vertebrates, we specifically included the ocean sunfish, African elephant, and two baleen whale genomes (minke whale, bowhead whale), and the most closely related genomes available for these taxa (Takifugu rubripes and Dichotomyctere nigroviridis, rock hyrax, and bottlenose dolphin). These ortholog clusters were used for the identification of origins of gene families in chordate evolution and genes that originated in the MRCA of jawed vertebrates, studying enrichment or changes in functional annotation associated with these orthogroups, phylogenomics, estimation of rates of molecular substitution, and estimation of rates of gene duplication and loss.
 
@@ -145,7 +305,7 @@ Ortholog clusters from proteomes were determined using OrthoFinder v2.2.6 with d
 
 All proteins were then annotated for GO and Pfam terms using InterProScan 5.32–71.0 (Jones et al., 2014), and representative annotations were assigned to each chordate orthogroup using KinFin 1.0 with the --infer-singletons option on to interpret gene families absent from clusters as singletons, then running the functional_annotation_of_clusters.py script packaged with KinFin under default settings, which assigns an annotation to a gene family if at least 75% of proteins in the gene family has that annotation, and at least 75% of taxa within the cluster have a protein with that annotation (Laetsch and Blaxter, 2017; Supplementary file 5).
 
-## Gene family origin and loss
+### Gene family origin and loss
 
 A custom R script is provided for analyses run for this section (Source code 1). To infer when gene families (as inferred from OrthoFinder) were gained and lost in vertebrate evolution, we mapped the origins and losses of gene families to the species tree parsimoniously, assuming that gene families have a single origin, but can be lost (Laetsch and Blaxter, 2017). We were then able to count the number of gene families present at the MRCA of nodes, the number of novel gene families that originated along each branch, and the number of gene families lost along each branch (including gene families uniquely lost along each branch). We also determined the number of gene families conserved in all descendants (core genes) and the number of novel gene families conserved in all descendants (novel core genes).
 
@@ -153,9 +313,9 @@ We aimed to confirm that the number of novel gene families in the jawed vertebr
 
 Based on the representative annotations for each orthogroup determined above, we then determined whether groups of gene families that were gained or lost along branches in the vertebrate phylogeny were enriched for certain functions using a Fisher’s exact test. Within each comparison, we adjusted the p-value to correct for multiple hypothesis testing by the Benjamin-Hochberg (BH) method using the p.adjust function in R (Wright, 1992). Corrected p-values under the BH method can be interpreted at a significance threshold that is equivalent to the false discovery rate. We considered functions enriched with an adjusted p-value of 0.05 and false discovery rate of 0.05.
 
-## Innate immunity analyses
+### Innate immunity analyses
 
-## Homology identification
+#### Homology identification
 
 Sequence similarity searches were performed using BLAST+ v2.6.0 to identify putative homologs of TLRs, NLRs, and RLRs (Altschul et al., 1990). An alternative approach using profile hidden Markov models, HMMER (version 3.1) (Eddy, 1998), was also tested for TLRs; the results obtained were identical, except that BLAST returned an additional putative TLR. Due to this, HMMER results were not applied in subsequent analyses, and HMMER was not applied elsewhere (Eddy, 1998). Searches for whale shark TLR and RLR homologs were performed using all other sequences present in the TLR and RLR trees. Retention of sequences for further analyses was reliant on a reciprocal blast hit to a TLR or an RLR in the Swissprot reviewed database or the NCBI non-redundant protein set (Boeckmann et al., 2003).
 
@@ -163,7 +323,7 @@ For NLRs, detection is more complicated, as some NLRs do not contain computation
 
 In cases where a transcript matches the genomic location of a predicted protein, the predicted protein is the sequence reported. Where multiple predicted proteins refer to the same genomic location, only a single sequence is retained for further analysis.
 
-## Phylogenetic datasets
+#### Phylogenetic datasets
 
 For NLRs, we performed phylogenetic analyses of the whale shark putative NLRs to known NLRs from human and zebrafish, both of which are highly phylogenetically relevant and well studied in this regard. Proteins containing the closely related NB-ARC domain were used as an outgroup in NLR analyses, along with human APAF-1 which also harbors an NB-ARC domain (Urbach and Ausubel, 2017).
 
@@ -173,11 +333,11 @@ For the TLR dataset, a large set of TLR nucleotide sequences were taken from a p
 
 For the NLR analysis, the described set of human NLRs and NACHT domain containing proteins, as well as the closely related NB-ARCs as an outgroup (Urbach and Ausubel, 2017), were downloaded from NCBI protein database. Sequences of zebrafish, where NLRs are massively expanded (Howe et al., 2016; Stein et al., 2007), were also included in this analysis, but these were downloaded from the InterPro website (i.e. all Danio rerio proteins containing a NACHT domain) (Hunter et al., 2009). A very large number of zebrafish sequences were obtained, so to reduce the prevalence of pseudo-replicate sequences (that are likely to be uninformative in the context of understanding the whale shark NLR repertoire), CD-HIT (Fu et al., 2012) was used to cluster zebrafish sequences with greater than 75% identity prior to phylogenetic analysis. An additional NLR analysis was performed focusing specifically on NOD1s, this employed NOD2 as an outgroup based on the larger NLR analysis and included NOD1s identified by BLAST in elephant shark. Notably, our NLR analysis relies on poorer taxon sampling compared to that for the RLR and NLR datasets. This is due to a relative paucity of previously characterized NLR repertoires across vertebrate species. Importantly, although this does not lend itself well to understanding the tempo of lineage-specific gene family expansion/contraction, it does not preclude detection of such events along the lineages leading to the species included in the analysis.
 
-## Multiple sequence alignment and phylogenetic analyses
+#### Multiple sequence alignment and phylogenetic analyses
 
 Multiple sequence alignments were generated with MAFFT (version 7.313) (Katoh and Standley, 2013) using default parameters for the larger TLR and NLR datasets, but using the more intensive L-INS-i method for RLRs and the focused NOD1 NLR dataset. trimAl (version 1.2rev59) (Capella-Gutierrez et al., 2009) was applied to remove gap-rich sites, which are often poorly aligned, from the alignments using the ‘gappyout’ algorithm. BMGE (version 1.12) (Criscuolo and Gribaldo, 2010) was then used to help minimize the number of saturated sites in the remaining alignment (as identified using the BLOSUM30 matrix). The RLR analyses were not subjected to this BMGE analysis, as these were derived from conserved domains (meaning that alignments were based on relatively conserved sequence tracts and were already quite short). The NOD1-focused NLR alignments were judged to contain relatively similar sequences and were not subjected to either trimAl or BMGE analyses. Phylogenetic analyses were performed in IQ-TREE (version: omp-1.5.4) (Nguyen et al., 2015) using 1000 ultrafast bootstrap replicates (Minh et al., 2013) and the best-fitting model of amino acid substitution. Best-fitting substitution models were determined according to the Bayesian information criterion with ModelFinder from the IQ-TREE package (Kalyaanamoorthy et al., 2017), and ultrafast bootstrap support was computed to assess branch support (Hoang et al., 2018). The following (best-fitting) models were applied for each dataset: LG+I+G for RLR CARD domains dataset, LG+I+F+G for RLR DEAD-Helicase domains dataset, JTT+I+F+G for the TLR dataset, JTT+F+G for the NLR dataset, and JTT+I+F+G for the NOD1-focused NLR dataset. The trees were rooted either by outgroup, or the TLR tree was rooted minimal ancestor deviation method (Tria et al., 2017). This is unlike many other TLR trees produced in previous studies which are unrooted (Roach et al., 2005; Wang et al., 2016).
 
-## Phylogenomics
+### Phylogenomics
 
 Orthogroups were filtered to single-copy orthologs for phylogenomic analyses. We determined orthologs from orthogroups by reconstructing orthogroup trees and used tree-based orthology determination using the UPhO pipeline (Ballesteros and Hormiga, 2016). The paMATRAX+ pipeline bundled with UPhO was used to perform alignment (mafft version 7.130b), mask gaps (trimAl version 1.2), remove sequences containing too few unambiguous sites, and check that the minimum number of taxa are present (using the Al2Phylo script part of UPhO), and then reconstruct phylogenies (IQ-TREE v1.6.10) (Capella-Gutierrez et al., 2009; Katoh and Standley, 2013; Nguyen et al., 2015). Next, we used UPhO to extract orthologs by identifying all maximum inclusive subtrees from orthogroups with at least five species, with the allowance for in-paralogs (paralogs that arose after all species divergences in the phylogeny, and thus do not affect relative relationships in the phylogeny), and retained the longest in-paralogous sequence for each species within each ortholog. For each single-copy ortholog, we aligned, trimmed, and sanitized sequences using the paMATRAX+ pipeline.
 
@@ -185,13 +345,13 @@ To select the most reliable sequences for inferring a phylogenomic time tree, we
 
 Numerous fossil-based node calibrations were identified from the literature. Most node ages were derived from age ranges published in the Fossil Calibration Database (Benton et al., 2014) and are listed in Supplementary file 18. While previously the age of crown Chondrichthyes (here, the MRCA of Holocephali + Elasmobranchii) has been suggested to range from 333.56 to 422.4 Ma, the minimum age was recently pushed further back to 358 Ma based on multiple holocephalan fossils (Coates et al., 2017). To assess the concordance of the fossil calibrations, we used treePL version 1.0 to estimate divergence times from the ML tree with each fossil calibration using penalized likelihood, then performed cross-validation and evaluated the concordance of the fossils to the time tree to identify and exclude outliers (Near et al., 2005). After excluding fossils that were discordant with the others, we estimated divergence times using treePL with the remaining fossil calibrations. The final treePL config file is provided (Source code 3).
 
-## Tests for rates of substitution
+### Tests for rates of substitution
 
 Based on our aligned matrix from single-copy orthologs used for phylogenomics, we tested for differences in rates of molecular substitution between vertebrates by using the two-cluster test implemented in LINTRE (April 17, 2010 version) (Takezaki et al., 1995), using amino acid p-distances between taxa to estimate branch lengths. The two-cluster test is designed to test if the rates in two clades are significantly different by comparison to an outgroup. We tested rates on the full tree, as well as focused on certain cluster pairs by subsetting the dataset to focus on specific clades for comparison. Sequences were converted to phylip format from fasta format using pxs2phy using phyx v1.01 (Brown et al., 2017). Scripts to implement tests run are provided (Source code 3).
 
 We also compared rates of genomic evolution of four independent instances of vertebrate gigantism (whale shark, elephant, baleen whales, ocean sunfish) relative to the background rate of molecular evolution among vertebrates. To do this, we used PAML 4.9i to compute the likelihoods of the alignment of single-copy orthologs used for phylogenomics under two different models of molecular evolution (Yang, 2007). We computed the likelihood of the data under a strict clock model (single-rate model) and under a local clock model (two-rate model) where the clock rate differed on branches leading to vertebrate giants. We then determined significance using the likelihood ratio test. PAML control files are provided (Source code 3).
 
-## Rates of gene family size evolution
+### Rates of gene family size evolution
 
 We estimated rates of gene family expansion and contraction across vertebrates among gene families. OrthoFinder output includes counts of the size of each orthogroup (i.e. gene families) for each species. We analyzed the evolution of gene family size under a birth-death process using CAFE version 4.2.1 (Han et al., 2013), with the gene family size evolutionary rate parameter λ. We focused on gene families present in the MRCA of vertebrates and filtered these only to gene families present in at least two species, and to exclude gene families that exceed 100 copies in any species, as large gene families have too large variance for consistent rate parameter estimation, resulting in 10,258 gene families. We used the caferror.py script to estimate species-by-species error rates in the annotation to improve the accuracy of rate estimation (Han et al., 2013). We used a time-calibrated phylogeny of vertebrates for this analysis (see above). We provide scripts used for running CAFE (Source code 4).
 

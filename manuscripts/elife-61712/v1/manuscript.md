@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02en5vm52 Motivation, Brain and Behavior lab, Paris Brain Institute (ICM); Sorbonne Université; Inserm U1127; CNRS U7225 Paris France
+1. Motivation, Brain and Behavior lab, Paris Brain Institute (ICM); Sorbonne Université; Inserm U1127; CNRS U7225 Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ Therefore, our research aimed to (1) assess the potential impact of goal value o
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 With this experiment, we intended to measure the impact of goal value onto the anticipated effort cost of an action sequence. We used composite running routes, each consisting of four segments of varying slope and speed, as the action sequences about which participants would make a priori energetic cost judgements. We manipulated the value attached to the completion of each route by offering monetary rewards of varying magnitude (from 0.01€ to 5€). Specifically, in each trial, participants were first presented with the picture of a monetary amount (the incentive, or potential reward) on a computer screen, followed by a short animation depicting a cartoon character running along a computer-generated route (see Figure 1). Next, participants were required to choose between accepting this high-effort high-gain (or HEHG) new offer (namely, running this route on a treadmill in order to earn the displayed incentive) or discarding it in favour of a fixed low-effort 0-gain (or LE0G) reference option (namely, running a default route at participant’s self-set comfort speed and 0% slope, for no reward). Lastly, they were prompted to estimate the energetic cost of this route, which was our main behavioural measure of interest, by placing a cursor along an analogue scale. Although this was not made explicit to the participants, the lower end of the scale corresponded to the energetic cost of a 2-min run at the easiest speed and slope levels used in route composition (110% of comfort speed, 0% slope), while the higher end of the scale corresponded to a 2-min run at the highest slope and speed levels (140% of comfort speed, 8% slope). For obvious ethical reasons, effort levels were thus kept in a limited range, such that participants remained confident that they would cope and not fall off the treadmill (which never happened in practice).
 
@@ -44,27 +44,31 @@ Critically, the reward magnitude and the real energetic cost (REC) of the route 
 
 Twenty-two healthy adults gave their consent to participate in this experiment and were tested one after the other. There was no a priori power calculation as we did not know what effect to expect, so this sample size (N = 22) was roughly deemed appropriate given previous experiments investigating similar phenomena.
 
-## Choice
+### Choice
 
-As illustrated in Figure 2a, participants tended to accept the high-effort option more often as the attached incentive level increased, and as the cost level decreased (with a sigmoid-like nonlinearity in the acceptance rate curve, characteristic of floor and ceiling effects for low and high differences between options, respectively). For a more quantitative yet straightforward assessment of these effects, we fitted a sigmoidal model of choice, including the REC and incentive levels attached to the HEHG option (RECHEHG and IncentiveHEHG) as explanatory variables. Choice data (but not rating data) from four participants were excluded before model fitting due to a total rate of ‘no’ (resp. ‘yes’ for one participant) choices ≤5/108, that is, a percentage of ‘yes’ (resp. ‘nno’) choices >95%. Unsurprisingly, we found a negative effect of RECHEHG (β¯=−1.1, CI=[−1.5;−.62], t(17)=−5.0, p=1.2⋅10−4), and a strong positive effect of IncentiveHEHG (Figure 2a, bottom, β¯=4.1, CI=[3.1 ; 5.1], t(17)=8.8, p=9.4⋅10−8 ), on the probability to accept the HEHG offer.
+As illustrated in Figure 2a, participants tended to accept the high-effort option more often as the attached incentive level increased, and as the cost level decreased (with a sigmoid-like nonlinearity in the acceptance rate curve, characteristic of floor and ceiling effects for low and high differences between options, respectively). For a more quantitative yet straightforward assessment of these effects, we fitted a sigmoidal model of choice, including the REC and incentive levels attached to the HEHG option ($REC_{HEHG}$ and $Incentive_{HEHG}$) as explanatory variables. Choice data (but not rating data) from four participants were excluded before model fitting due to a total rate of ‘no’ (resp. ‘yes’ for one participant) choices ≤5/108, that is, a percentage of ‘yes’ (resp. ‘nno’) choices >95%. Unsurprisingly, we found a negative effect of $REC_{HEHG} (\beta¯=−1.1, CI=[−1.5;−.62], t(17)=−5.0, p=1.2⋅10^{−4})$, and a strong positive effect of $Incentive_{HEHG}$ (Figure 2a, bottom, $\beta¯=4.1, CI=[3.1 ; 5.1], t(17)=8.8, p=9.4⋅10^{−8}$ ), on the probability to accept the HEHG offer.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61712/elife-61712-fig2-v1.jpg)
 
 **Figure 2.:** (a) Rate of acceptance of the high-effort high-gain (HEHG) offer, plotted against incentive level. Top: cross markers indicate acceptance rate averaged across all participants for a given incentive level (x-axis) and a given real energetic cost (REC) level (marker colour). Bottom: purple cross markers indicate acceptance rate, averaged across all REC levels and across all participants for a given incentive level. Black dots indicate averaged predictions of a logistic regression model (see main text). *** Positive effect of incentive level on acceptance rate, p<0.001. (b) Anticipated energetic cost (AEC) rating, plotted against incentive level. Top: cross markers indicate AEC ratings averaged across all participants for a given incentive level (x-axis) and a given REC level (marker colour). Dotted lines indicate the target rating for each REC level. Bottom: purple cross markers indicate AEC rating, averaged across all REC levels and across all participants for a given incentive level. Black dots indicate averaged predictions of a generalized linear model (GLM, see main text). ***Positive effect of incentive level on AEC rating, p<0.001. Solid lines represent a linear interpolation between averaged data points (or model predictions) for illustrative purposes only. Shaded area around curves or error bars across dots represent the standard error to the mean (s.e.m), computed across participants.
 
-## Anticipated energetic cost (AEC)
+### Anticipated energetic cost (AEC)
 
-As expected, anticipated energetic cost (AEC) ratings about routes were strongly influenced by the REC of these routes (β¯=15, CI=[14;17], t(21)=20, p<10−14), whose effect was tested in a generalized linear model (GLM) that included both REC and incentive levels as factors of interest, the latter as a proxy for incentive utility, which is typically a supralinear function of incentive magnitude (Glimcher and Fehr, 2013; Schoemaker, 1982). The effect of the REC was significant despite a ‘regression-to-the-mean’ bias (i.e., overestimation for low levels and underestimation for high levels, apparent on Figure 2b, top). Thus, after training, participants were able to estimate energetic cost of a running route with good accuracy (82% ± 3%), defined as the complement to distance from target (REC-AEC, see ‘Materials and methods').
+As expected, anticipated energetic cost (AEC) ratings about routes were strongly influenced by the REC of these routes ($\beta¯=15, CI=[14;17], t(21)=20, p<10^{−14}$), whose effect was tested in a generalized linear model (GLM) that included both REC and incentive levels as factors of interest, the latter as a proxy for incentive utility, which is typically a supralinear function of incentive magnitude (Glimcher and Fehr, 2013; Schoemaker, 1982). The effect of the REC was significant despite a ‘regression-to-the-mean’ bias (i.e., overestimation for low levels and underestimation for high levels, apparent on Figure 2b, top). Thus, after training, participants were able to estimate energetic cost of a running route with good accuracy (82% ± 3%), defined as the complement to distance from target (REC-AEC, see ‘Materials and methods').
 
-Most interestingly, we found a robust positive effect of incentive level (i.e., ordinal value) on energetic cost rating (Figure 2b, bottom, β¯=2.0, CI=[1.2;2.7], t(21)=5.3, p=2.8⋅10−5). That is, all other things being equal, participants tended to anticipate a higher energetic cost for better-rewarded running sequences. Because the relation between incentive level and energetic cost rating seemed in fact slightly supralinear (see Figure 2b), and in order to test more directly for the effect of the incentive magnitude (i.e., cardinal value, which is the feature primarily relevant to participants), we fitted the following complementary model:AEC=β0+β1⋅REC+β2⋅Imα
+Most interestingly, we found a robust positive effect of incentive level (i.e., ordinal value) on energetic cost rating (Figure 2b, bottom, $\beta¯=2.0, CI=[1.2;2.7], t(21)=5.3, p=2.8⋅10^{−5}$). That is, all other things being equal, participants tended to anticipate a higher energetic cost for better-rewarded running sequences. Because the relation between incentive level and energetic cost rating seemed in fact slightly supralinear (see Figure 2b), and in order to test more directly for the effect of the incentive magnitude (i.e., cardinal value, which is the feature primarily relevant to participants), we fitted the following complementary model:
 
-where Im is the incentive magnitude and α a nonlinearity parameter that we expected to be below 1, in line with the typical observation of a concave magnitude-utility mapping (Glimcher and Fehr, 2013; Schoemaker, 1982).
+$$
+AEC=\beta_{0}+\beta_{1}⋅REC+\beta_{2}⋅I_{m}^{\alpha}
+$$
 
-We found a significant positive impact of the transformed incentive magnitude onto energetic cost rating (β2¯=.32,  CI=[.18;.46], t(21)=4.7, p=1.1⋅10−4), with an average nonlinearity parameter α¯=0.74.
+where $I_{m}$ is the incentive magnitude and $\alpha$ a nonlinearity parameter that we expected to be below 1, in line with the typical observation of a concave magnitude-utility mapping (Glimcher and Fehr, 2013; Schoemaker, 1982).
 
-Given the strong positive relation between incentive magnitude and acceptance rate of the high-effort option, one could hypothesize that the impact of incentive level on energetic cost rating was fully mediated by choice, with ‘yes’ choices leading to higher cost estimates than ‘no’ choices. However, the incentive effect on energetic cost rating remained strongly significant even when the Incentive predictor was orthogonalized to a binary Choice predictor (β¯=1.9,  CI=[1.1;2.8], t(21)=4.9, p=8.0⋅10−5). Moreover, alternative regressors IncentiveHEHG and IncentiveLE0G conditional on the choice made (respectively the HEHG option or the LE0G one) were both significant positive predictors of energetic cost rating (HEHG: β¯=2.4,  CI=[1.4;3.4], t(20)=5.0, p=6.9⋅10−5; LE0G: β¯=2.0  CI=[.70;3.4], t(18)=3.2, p=5.0⋅10−3;), meaning that the effect of Incentive on AEC was present within both ‘yes’ and ‘no’ trials. Therefore, prospective reward inflated AEC over and above choices made by the participants.
+We found a significant positive impact of the transformed incentive magnitude onto energetic cost rating ($\beta_{2}¯=.32,  CI=[.18;.46], t(21)=4.7, p=1.1⋅10^{−4}$), with an average nonlinearity parameter $\alpha¯=0.74$.
 
-## Interim discussion and new hypotheses
+Given the strong positive relation between incentive magnitude and acceptance rate of the high-effort option, one could hypothesize that the impact of incentive level on energetic cost rating was fully mediated by choice, with ‘yes’ choices leading to higher cost estimates than ‘no’ choices. However, the incentive effect on energetic cost rating remained strongly significant even when the $Incentive$ predictor was orthogonalized to a binary $Choice$ predictor ($\beta¯=1.9,  CI=[1.1;2.8], t(21)=4.9, p=8.0⋅10^{−5}$). Moreover, alternative regressors $Incentive_{HEHG}$ and $Incentive_{LE0G}$ conditional on the choice made (respectively the HEHG option or the LE0G one) were both significant positive predictors of energetic cost rating ($HEHG: \beta¯=2.4,  CI=[1.4;3.4], t(20)=5.0, p=6.9⋅10^{−5}$; $LE0G: \beta¯=2.0  CI=[.70;3.4], t(18)=3.2, p=5.0⋅10^{−3};$), meaning that the effect of Incentive on AEC was present within both ‘yes’ and ‘no’ trials. Therefore, prospective reward inflated AEC over and above choices made by the participants.
+
+### Interim discussion and new hypotheses
 
 In experiment 1, we observed an unexpected positive impact of potential reward onto anticipated effort cost. Because it was opposite to our predictions, a replication study was necessary to better establish this finding. We took this opportunity to specify the underlying cognitive mechanisms. Below are described the three types of cognitive mechanisms that we considered, hereafter denoted as the ‘belief’, ‘affect’, and ‘decision’ scenarios.
 
@@ -80,39 +84,87 @@ According to what we hereafter call the ‘maximal budget’ hypothesis, as soon
 
 **Figure 3.:** According to this hypothetical mechanism, information about the monetary incentive attached to the high-effort (HE) option enters a cost–benefit computation. According to the maximal budget variant (left panel), participants compute the maximal energetic cost above which the low-effort (LE) option would bear a higher utility (see Equations 1–3 in main text). According to the optimal expense variant, they compute the energetic cost optimizing the expected utility attached to the HE option (see Equations 7–9 in main text). In both panels, the computation is illustrated for two different reward magnitudes, R1 (small, light colour) and R2 (large, dark colour). Light grey areas correspond to domains outside the energetic cost rating scale. Both variants predict that larger incentives would result in a higher anticipated energetic cost (AEC) computation (see Equations 4 and 10), which also integrates a pre-estimate that is exclusively based on the running animation depicting the multi-segment route, and is thus a noisy reflection of the real energetic cost (REC). Finally, the resulting AEC estimate affects both energetic cost rating and choice between the HE offer and the LE reference option (see Equations 5 and 6 and Equations 11 and 12).
 
-Building on standard decision theory, we modelled choice as a logistic transformation of a decision variable DV that integrates the reward levels R and the effort cost estimates EC associated to the two options. Here, we assume a subtractive parabolic effort–cost discounting of subjective incentive values (Białaszek et al., 2017; Hartmann et al., 2013), such that the decision variable, that is, the difference in utility U between the high-effort (HE) option and the low-effort (LE) one, can be written as(1)DV=UHE−ULE=(Rρ−CE⋅ECα)−(0−CE⋅EC0α)
+Building on standard decision theory, we modelled choice as a logistic transformation of a decision variable DV that integrates the reward levels R and the effort cost estimates EC associated to the two options. Here, we assume a subtractive parabolic effort–cost discounting of subjective incentive values (Białaszek et al., 2017; Hartmann et al., 2013), such that the decision variable, that is, the difference in utility U between the high-effort (HE) option and the low-effort (LE) one, can be written as
 
-where R is the reward obtained upon completion of the high-effort route, ρ is the nonlinearity parameter controlling the curvature of magnitude-to-utility mapping (typically, ρ<1; Glimcher and Fehr, 2013; Schoemaker, 1982), CE is the scaling coefficient of the effort cost discounting variable (EC and EC0 corresponding to the energetic cost of the high-effort and low-effort options, respectively), and α is the nonlinearity parameter controlling the curvature of effort discounting.
+$$
+DV=U_{HE}−U_{LE}=(R^{ρ}−C_{E}⋅EC^{\alpha})−(0−C_{E}⋅EC_{0}^{\alpha})
+$$
 
-Thus:(2)DV=Rρ−CE⋅(ECα−EC0α)
+where $R$ is the reward obtained upon completion of the high-effort route, $ρ$ is the nonlinearity parameter controlling the curvature of magnitude-to-utility mapping (typically, $ρ<1$; Glimcher and Fehr, 2013; Schoemaker, 1982), $C_{E}$ is the scaling coefficient of the effort cost discounting variable (EC and EC0 corresponding to the energetic cost of the high-effort and low-effort options, respectively), and $\alpha$ is the nonlinearity parameter controlling the curvature of effort discounting.
 
-therefore, the maximal energetic cost such that DV = 0 is(3)ECmax=EC0α+RρCE1α
+Thus:
 
-The main proposal of this ‘maximal budget’ model is that participants’ AEC derives from a mixture between the relevant visual information (slope and speed, underlying the REC) and the maximal energetic cost they are willing to expend:(4)AEC=B0+B1⋅(γ⋅REC+(1−γ)⋅ECmax)
+$$
+DV=R^{ρ}−C_{E}⋅(EC^{\alpha}−EC_{0}^{\alpha})
+$$
 
-where γ∈ ]0, 1[ is a linear parameter adjusting the weight of REC, and B0 and B1 are intercept and slope parameters controlling an affine transformation from the REC-ECmax mixture to AEC rating (in order to descriptively account for the regression to the mean observed in the data). As this biased cost judgement likely reflects the cost which participants are planning to invest, it may in turn be incorporated in an updated decision variable:(5)DV′=Rρ−CE⋅(AECα−EC0α)
+therefore, the maximal energetic cost such that DV = 0 is
 
-This updated decision variable then leads to a choice via a logistic transformation:(6)P(Choice=Yes)=sigmo(β0+β1⋅DV′)
+$$
+EC_{max}=EC_{0}^{\alpha}+\frac{R^{ρ}}{C_{E}}^{\frac{1}{\alpha}}
+$$
 
-where sigmox=11+e-x and β0 and β1 correspond respectively to bias and inverse temperature parameters. As evidenced by Equations 3 and 4, this model indeed predicts a positive impact of monetary incentives on AEC.
+The main proposal of this ‘maximal budget’ model is that participants’ AEC derives from a mixture between the relevant visual information (slope and speed, underlying the REC) and the maximal energetic cost they are willing to expend:
+
+$$
+AEC=B_{0}+B_{1}⋅(\gamma⋅REC+(1−\gamma)⋅EC_{max})
+$$
+
+where $\gamma\in ]0, 1[$ is a linear parameter adjusting the weight of REC, and $B_{0}$ and $B_{1}$ are intercept and slope parameters controlling an affine transformation from the REC-$EC_{max}$ mixture to AEC rating (in order to descriptively account for the regression to the mean observed in the data). As this biased cost judgement likely reflects the cost which participants are planning to invest, it may in turn be incorporated in an updated decision variable:
+
+$$
+DV^{′}=R^{ρ}−C_{E}⋅(AEC^{\alpha}−EC_{0}^{\alpha})
+$$
+
+This updated decision variable then leads to a choice via a logistic transformation:
+
+$$
+P(Choice=Yes)=sigmo(\beta_{0}+\beta_{1}⋅DV^{′})
+$$
+
+where $sigmox=\frac{1}{1+e^{-x}}$ and $\beta_{0}$ and $\beta_{1}$ correspond respectively to bias and inverse temperature parameters. As evidenced by Equations 3 and 4, this model indeed predicts a positive impact of monetary incentives on AEC.
 
 In an alternative scenario, which we call the ‘optimal expense’ hypothesis, we propose that it is the output of an optimal expense computation, instead of a maximal budget one, that is subsumed as evidence about the actual cost (see illustration in Figure 3, right). Here, we build upon the intuition that participants might not fully internalize the mapping rule between expended energy and the probability of reaching their goal (obtaining the reward). In our experiment, the effort–reward contingency is deterministic: the participant should be sure to win the full reward if running the high-effort route, and nothing otherwise. Thus, the mapping from effort to reward obtainment probability is a step function with a 0–1 discontinuity when the REC is reached. Indeed, as this discontinuity is due to the fact that energetic expense is strongly constrained in our experimental setting (running on a treadmill at a defined slope and speed), it might not reflect most ecological situations, in which increasing effort would naturally increase the probability of reaching one’s goal in a continuous fashion. Following on this principle, the participant might think that exerting a bit more effort than required would help secure the outcome (in intuitive terms: “For this reward, I should make some extra effort to maximize my chances to get it in the end”).
 
-Therefore, we propose that individuals hold a sigmoidal (rather than step-like) P(Success| Energetic expense) = f(Energetic expense) internal mapping function, whose inflection point abscissa and slope may be adjusted depending on the specifics of the considered task. Here, to make the sigmoid parameter values easier to interpret, we express the energetic expense variable as relative to the REC and normalized by the maximal possible cost Emax :(7)P(Success|EC)=sigmo(κ0+κ1⋅EC−RECEmax)
+Therefore, we propose that individuals hold a sigmoidal (rather than step-like) $P(Success| Energetic expense) = f(Energetic expense)$ internal mapping function, whose inflection point abscissa and slope may be adjusted depending on the specifics of the considered task. Here, to make the sigmoid parameter values easier to interpret, we express the energetic expense variable as relative to the REC and normalized by the maximal possible cost $E_{max}$ :
 
-where PSuccessEC is the subjective probability of succeeding at completing the route given the expended energetic cost EC, κ0 is a bias parameter, and κ1 is an inverse temperature parameter. In line with classical expected utility theory (Friedman and Savage, 1952), this subjective probability of success enters the computation of the decision variable by scaling the utility of prospective outcomes, which is discounted by expected cost:(8)E[UHE(EC)]=P(Success|EC)⋅Rρ−CE⋅ ECα
+$$
+P(Success|EC)=sigmo(κ_{0}+κ_{1}⋅\frac{EC−REC}{E_{max}})
+$$
 
-By definition, the optimal energetic cost to expend is the one maximizing E[UHE(EC)]:(9)EC*=argmaxEC⁡EUHEEC
+where $PSuccessEC$ is the subjective probability of succeeding at completing the route given the expended energetic cost $EC$, $κ_{0}$ is a bias parameter, and $κ_{1}$ is an inverse temperature parameter. In line with classical expected utility theory (Friedman and Savage, 1952), this subjective probability of success enters the computation of the decision variable by scaling the utility of prospective outcomes, which is discounted by expected cost:
 
-As with the ‘maximal budget’ hypothesis, we postulate that participants incorporate this optimal energetic cost (which they intend to pay) as a piece of evidence about the actual energetic cost of the route:(10)AEC=B0+B1⋅(γ⋅REC+(1−γ)⋅EC∗)
+$$
+E[U_{HE}(EC)]=P(Success|EC)⋅R^{ρ}−C_{E}⋅ EC^{\alpha} 
+$$
 
-where parameters B0, B1 , and γ have the same meaning as in Equation 4. The decision variable being the difference between EUHEAEC and ULE , it is written as(11)DV′=P(Success|AEC)⋅Rρ−CE⋅(AECα−EC0α)
+By definition, the optimal energetic cost to expend is the one maximizing $E[U_{HE}(EC)]$:
 
-Finally, this decision variable is incorporated into a softmax rule to determine choice probability:(12)P(Choice=Yes)=sigmo(β0+β1⋅DV′)
+$$
+EC^{*}=argmaxEC⁡EU_{HE}EC
+$$
+
+As with the ‘maximal budget’ hypothesis, we postulate that participants incorporate this optimal energetic cost (which they intend to pay) as a piece of evidence about the actual energetic cost of the route:
+
+$$
+AEC=B_{0}+B_{1}⋅(\gamma⋅REC+(1−\gamma)⋅EC^{∗})
+$$
+
+where parameters $B_{0}, B_{1}$ , and $\gamma$ have the same meaning as in Equation 4. The decision variable being the difference between $EU_{HE}AEC$ and $U_{LE}$ , it is written as
+
+$$
+DV^{′}=P(Success|AEC)⋅R^{ρ}−C_{E}⋅(AEC^{\alpha}−EC_{0}^{\alpha})
+$$
+
+Finally, this decision variable is incorporated into a softmax rule to determine choice probability:
+
+$$
+P(Choice=Yes)=sigmo(\beta_{0}+\beta_{1}⋅DV′)
+$$
 
 We henceforth refer to this couple of models as the ‘decision’ scenario, which comprises a ‘maximal budget’ and an ‘optimal expense’ variant.
 
-## Practical implementation and predictions
+### Practical implementation and predictions
 
 In order to assess the validity of these three alternative — albeit not mutually exclusive — scenarios, we formulated critical modifications of our task design in preparation for a second experiment (see Figure 4). These changes were devised in such a way that each of our hypotheses would make a specific set of predictions about measured behavioural outputs.
 
@@ -126,41 +178,49 @@ Under the ‘affect’ scenario, incidental fluctuations in affective state shou
 
 Finally, under the decision scenario, and given the previously introduced experimental changes, we expected a distinct set of observations: a positive effect of incentive on AEC in both gain and loss conditions (and despite the introduction of a lottery animation), no inter-individual correlation between the magnitude of this effect and the strength of the belief in a reward–effort correlation, and finally, no effect of our music-based arousal manipulation on AEC. To further arbitrate between the ‘maximal budget’ and ‘optimal expense’ variants, we planned to perform group-level Bayesian model selection based on choice and rating data.
 
-## Results: Experiment 2
+### Results: Experiment 2
 
 Twenty-four healthy adults gave their consent to participate in this experiment and were tested one after the other. Given the mean and standard deviation of the main effect size in experiment 1 (effect of gain level on energetic cost rating), this sample (N = 24) was sufficient to get a detection power of 99% with significance threshold set at 0.05.
 
-## Choice
+### Choice
 
-Here, we replicated the observations made in experiment 1, with an extension into the loss domain: participants tended to accept the high-effort (HE) option more often as gain or loss level increased, and as REC level decreased. We fitted a sigmoidal model of choice between high-effort and low-effort options, including gain and loss magnitudes GainHEHG and  LossLEHL,   as well as RECHE, as explanatory variables. Choice data (but not rating data) from 10 participants were excluded before model fitting due to a total rate of ‘no’ choices ≤5/108, thus a percentage of ‘yes’ choices >95%. As expected, we found a strong positive effect of GainHEHG (Figure 5a, bottom, β¯=3.7, CI=[2.8 ; 4.6], t(13)=8.5, p=1.1⋅10−6) and LossLEHL (β¯=3.7, CI=[2.7 ; 4.8], t(13)=7.8, p=2.9⋅10−6), and a negative effect of RECHE (β¯=−1.2, CI=[−1.7;−.76], t(13)=−5.6, p=8.5⋅10−5) on the probability to prefer the high-effort offer over the low-effort one.
+Here, we replicated the observations made in experiment 1, with an extension into the loss domain: participants tended to accept the high-effort (HE) option more often as gain or loss level increased, and as REC level decreased. We fitted a sigmoidal model of choice between high-effort and low-effort options, including gain and loss magnitudes $Gain_{HEHG} and  Loss_{LEHL},  $ as well as $REC_{HE}$, as explanatory variables. Choice data (but not rating data) from 10 participants were excluded before model fitting due to a total rate of ‘no’ choices ≤5/108, thus a percentage of ‘yes’ choices >95%. As expected, we found a strong positive effect of $Gain_{HEHG}$ (Figure 5a, bottom, $\beta¯=3.7, CI=[2.8 ; 4.6], t(13)=8.5, p=1.1⋅10^{−6}$) and $Loss_{LEHL}$ ($\beta¯=3.7, CI=[2.7 ; 4.8], t(13)=7.8, p=2.9⋅10^{−6}$), and a negative effect of $REC_{HE} (\beta¯=−1.2, CI=[−1.7;−.76], t(13)=−5.6, p=8.5⋅10^{−5})$ on the probability to prefer the high-effort offer over the low-effort one.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61712/elife-61712-fig5-v1.jpg)
 
 **Figure 5.:** (a) Rate of acceptance of the high-effort offer, plotted against incentive level. Top: cross markers indicate acceptance rates averaged across all participants for a given incentive level (x-axis) and a given real energetic cost (REC) level (marker colour). Bottom: cross markers indicate acceptance rate, averaged across all REC levels and across all participants for a given incentive level. Black dots indicate averaged predictions of a logistic regression model (see main text). ***Positive effect of loss and gain level on acceptance rate, both p<0.001. (b) Anticipated energetic cost (AEC) rating, plotted against incentive level. Top: cross markers indicate AEC ratings averaged across all participants for a given incentive level (x-axis) and a given REC level (marker colour). Dotted lines indicate the target rating for each REC level. Bottom: cross markers indicate AEC ratings, averaged across all REC levels and across all participants for a given incentive level. Black dots indicate averaged predictions of a generalized linear model (GLM, see main text). **Positive effect of loss level on AEC rating, p<0.005. ***Positive effect of gain level on AEC rating, p<0.001. Solid lines represent a linear interpolation between averaged data points for illustrative purposes only. Shaded area around each curve represents the standard error to the mean (s.e.m), computed across participants.
 
-## Anticipated energetic cost
+### Anticipated energetic cost
 
-In order to evaluate the impact of experimental factors on anticipated effort cost (AEC) rating, and similarly to experiment 1, we fitted a GLM comprising the following regressors: the REC, the prospective gain level (0 in loss condition), and the prospective loss level (0 in gain condition) (Figure 5b). Beyond the unsurprising positive effect of REC on AEC (β¯=15, CI=[14 ; 16], t(23)=24, p<10−14), we replicated the positive effect of prospective gain level (β−=2.8, CI=[1.4 ; 4.3], t(23)=4.0, p=6.3⋅10−4). The effect size was even larger than in experiment 1, but this difference was not significant (β-=-.89, CI=-2.6 ;.78, t44=-1.1, p=.29). The significant impact of gain level, despite the demonstration that reward and effort were independent, thus contradicts one of the predictions of the ‘belief’ scenario. Overall, when pooling participants across both experiments (N = 46), we found a very robust positive effect of prospective gain level on AEC rating (β−=2.4, CI=[1.6 ; 3.2], t(45)=5.8, p=5.7⋅10−7). Importantly, we also found a significant positive effect of prospective loss level on AEC (β-=2.8, CI=1.2 ; 4.4, t23=3.6, p=.0016), which contradicts the main prediction from the valence variant of the ‘affect‘ scenario. These effects were also significant in a model of AEC depending on gain and loss magnitudes rather than levels (gain: β-=1.6, CI=.72 ; 2.5, t23=3.7, p=.0012; loss: β-=1.7, CI=.66 ; 2.8, t23=3.4, p=.0027).
+In order to evaluate the impact of experimental factors on anticipated effort cost (AEC) rating, and similarly to experiment 1, we fitted a GLM comprising the following regressors: the REC, the prospective gain level (0 in loss condition), and the prospective loss level (0 in gain condition) (Figure 5b). Beyond the unsurprising positive effect of REC on AEC ($\beta¯=15, CI=[14 ; 16], t(23)=24, p<10^{−14}$), we replicated the positive effect of prospective gain level ($\beta−=2.8, CI=[1.4 ; 4.3], t(23)=4.0, p=6.3⋅10^{−4}$). The effect size was even larger than in experiment 1, but this difference was not significant ($\beta-=-.89, CI=-2.6 ;.78, t44=-1.1, p=.29$). The significant impact of gain level, despite the demonstration that reward and effort were independent, thus contradicts one of the predictions of the ‘belief’ scenario. Overall, when pooling participants across both experiments (N = 46), we found a very robust positive effect of prospective gain level on AEC rating ($\beta−=2.4, CI=[1.6 ; 3.2], t(45)=5.8, p=5.7⋅10^{−7}$). Importantly, we also found a significant positive effect of prospective loss level on AEC ($\beta-=2.8, CI=1.2 ; 4.4, t23=3.6, p=.0016$), which contradicts the main prediction from the valence variant of the ‘affect‘ scenario. These effects were also significant in a model of AEC depending on gain and loss magnitudes rather than levels (gain: $\beta-=1.6, CI=.72 ; 2.5, t23=3.7, p=.0012$; loss: $\beta-=1.7, CI=.66 ; 2.8, t23=3.4, p=.0027$).
 
-Additionally, as in experiment 1, the effects of both gain and loss levels on AEC remained strongly significant when the Gain and Loss predictors were orthogonalized to a binary Choice predictor (Gain: β¯=0.87, CI=[0.29;1.5], t(23)=3.1, p=5.3⋅10−3; Loss: β¯=2.2, CI=[1.0;3.3], t(23)=3.9,p=6.9⋅10−4). Moreover, alternative regressors GainHEHG and GainLE0G conditional on the choice made (respectively the HEHG option or the LE0G one in gain trials) were both significant positive predictors of AEC rating (HEHG: β¯=3.9,  CI=[1.8;6.1], t(23)=3.9, p=7.7⋅10−4; LE0G: β¯=4.8  CI=[1.9;7.8], t(10)=3.7, p=4.5⋅10−3), as were the regressors LossHE0L and LossLEHL (HE0L: β¯=3.8,  CI=[1.5;6.1], t(23)=3.5, p=2.0⋅10−3; LEHL: β¯=4.9  CI=[2.0;7.8], t(10)=3.7, p=3.9⋅10−3), meaning that the effect of both prospective gain and loss on AEC was present within both ‘yes’ and ‘no’ trials. Therefore, prospective gains and losses inflated anticipated energetic cost over and above choices made by the participants.
+Additionally, as in experiment 1, the effects of both gain and loss levels on AEC remained strongly significant when the $Gain$ and Loss predictors were orthogonalized to a binary $Choice$ predictor ($Gain: \beta¯=0.87, CI=[0.29;1.5], t(23)=3.1, p=5.3⋅10^{−3}$; $Loss: \beta¯=2.2, CI=[1.0;3.3], t(23)=3.9,p=6.9⋅10^{−4}$). Moreover, alternative regressors $Gain_{HEHG}$ and $Gain_{LE0G}$ conditional on the choice made (respectively the HEHG option or the LE0G one in gain trials) were both significant positive predictors of AEC rating ($HEHG: \beta¯=3.9,  CI=[1.8;6.1], t(23)=3.9, p=7.7⋅10^{−4};$ $LE0G: \beta¯=4.8  CI=[1.9;7.8], t(10)=3.7, p=4.5⋅10^{−3}$), as were the regressors $Loss_{HE0L}$ and $Loss_{LEHL}$ ($HE0L: \beta¯=3.8,  CI=[1.5;6.1], t(23)=3.5, p=2.0⋅10^{−3}$; $LEHL: \beta¯=4.9  CI=[2.0;7.8], t(10)=3.7, p=3.9⋅10^{−3}$), meaning that the effect of both prospective gain and loss on AEC was present within both ‘yes’ and ‘no’ trials. Therefore, prospective gains and losses inflated anticipated energetic cost over and above choices made by the participants.
 
-## Pupil dilation and arousal manipulation
+### Pupil dilation and arousal manipulation
 
-Next, we assessed the impact of our arousal manipulation procedure on AEC rating. First, we checked that arousal ratings made about each musical extract were actually reflecting their arousal response to musical extracts. We found that individual arousal ratings for a given musical extract were significantly positively predicted by arousal ratings averaged across all other participants (β−=.56, CI=[.46;.72], t(23)=9.2, p=3.9⋅10−9 ; Figure S1). This finding suggests that ratings were not given randomly but instead were made to reflect participants’ experienced arousal. We also observed that arousal rating was a significant positive predictor of pupil diameter around 2 s after music onset (time window: [1.67–2.55] s post music onset, p=3⋅10−4, corrected for multiple comparisons; Figure S2), suggesting that ratings faithfully reflected the arousal state actually felt by participants while listening to the musical extracts. Second, we incorporated these individual arousal ratings as an additional linear regressor in our model of AEC rating (see above). We found no significant effect of this predictor (β-=.19, CI=-.35 ; .74, t23=.73, p=.47), nor did we find an effect of a binary ‘music/nomusic’ regressor indicating whether music was played during a given trial (β-=-.16, CI=-.93 ; .61, t23=-.43, p=.67). These observations suggest that incidental arousal fluctuations do not affect anticipated energetic cost, and therefore challenge the main prediction of the arousal variant of the ‘affect’ scenario.
+Next, we assessed the impact of our arousal manipulation procedure on AEC rating. First, we checked that arousal ratings made about each musical extract were actually reflecting their arousal response to musical extracts. We found that individual arousal ratings for a given musical extract were significantly positively predicted by arousal ratings averaged across all other participants ($\beta−=.56, CI=[.46;.72], t(23)=9.2, p=3.9⋅10^{−9}$ ; Figure S1). This finding suggests that ratings were not given randomly but instead were made to reflect participants’ experienced arousal. We also observed that arousal rating was a significant positive predictor of pupil diameter around 2 s after music onset (time window: [1.67–2.55] s post music onset, $p=3⋅10^{−4},$ corrected for multiple comparisons; Figure S2), suggesting that ratings faithfully reflected the arousal state actually felt by participants while listening to the musical extracts. Second, we incorporated these individual arousal ratings as an additional linear regressor in our model of AEC rating (see above). We found no significant effect of this predictor ($\beta-=.19, CI=-.35 ; .74, t23=.73, p=.47$), nor did we find an effect of a binary ‘music/nomusic’ regressor indicating whether music was played during a given trial ($\beta-=-.16, CI=-.93 ; .61, t23=-.43, p=.67$). These observations suggest that incidental arousal fluctuations do not affect anticipated energetic cost, and therefore challenge the main prediction of the arousal variant of the ‘affect’ scenario.
 
-## Belief in an effort => reward implication
+### Belief in an effort => reward implication
 
-We measured the individual strength of belief in an effort–reward correlation by asking the following question (via the computer), once all trials were completed: “Do you believe that in life, the less effort one makes, the less reward one gets?”. Participants answered on a 4-point Likert scale ranging from “Not at all” to “Absolutely” (average reported belief strength = 2.9, standard deviation = 0.80). We found no correlation between the strength of their belief and the magnitude of the effect of gain or loss, or both gain and loss combined, on anticipated effort cost rating (resp. r=-.18, p=.39; r=-.049, p=.82; r=-.12, p=.59). This finding is in contradiction with one of the predictions of the ‘belief’ scenario.
+We measured the individual strength of belief in an effort–reward correlation by asking the following question (via the computer), once all trials were completed: “Do you believe that in life, the less effort one makes, the less reward one gets?”. Participants answered on a 4-point Likert scale ranging from “Not at all” to “Absolutely” (average reported belief strength = 2.9, standard deviation = 0.80). We found no correlation between the strength of their belief and the magnitude of the effect of gain or loss, or both gain and loss combined, on anticipated effort cost rating (resp. $r=-.18, p=.39; r=-.049, p=.82; r=-.12, p=.59$). This finding is in contradiction with one of the predictions of the ‘belief’ scenario.
 
-## Exploring the decision scenario: Computational modelling
+### Exploring the decision scenario: Computational modelling
 
 As introduced in the interim discussion, we propose two computational models which could explain the positive effect of goal value on anticipated energetic cost from high-level, decision-related cognitive processes. Specifically, the ‘maximum budget’ hypothesis proposes that, as soon as the goal value is known, individuals compute the corresponding maximal effort they are willing to invest to attain it. Subsequently, they (partly) intermingle what they are willing to invest with what they must invest. As an alternative, the ‘optimal expense’ scenario proposes that individuals compute the optimal amount of effort they should invest to maximize the expected utility of their action, that is, to secure the outcome, assuming the effort–outcome contingency is uncertain. This ‘optimal effort’ variable is then (partly) confused with the objective effort which is demanded from them.
 
 In order to assess the significance of these hypotheses, and to arbitrate between them based on the relevant data (AEC ratings and yes/no choices), we fitted each of these two models (both accounting for rating and choice simultaneously) to the datasets from experiments 1 and 2. Within each model family, two variants were inverted. First was a ‘standard’ variant described in the interim discussion (with an additional loss term when fitting data from experiment 2, see ‘Materials and methods’), in which the probability of choosing the high-effort option is a sigmoidal function of the AEC estimate (also derived from the model; see (Equations 4 and 6) in interim discussion and (Equation 23) in ‘Materials and methods’ for the ‘maximal budget’ model, and (Equations 10 and 12) in interim discussion and (Equation 25) in ‘Materials and mmethods’ for the ‘optimal expense’ model). Second was a ‘null choice’ variant in which choices did not depend on AEC estimates, but directly on the REC (i.e., the subjective distortions of effort cost were not incorporated into decision-making). This variant was obtained simply by replacing AEC with REC in (Equation 23) and (Equation 25).
 
-Additionally, we fitted purely descriptive models featuring linear terms which accounted for the influence of prospective gain or loss on AEC rating. The first variant of these descriptive models – hereafter labelled ‘linear’ – only included main effects:AEC=β0+β1⋅REC+β2⋅R+β3⋅L
+Additionally, we fitted purely descriptive models featuring linear terms which accounted for the influence of prospective gain or loss on AEC rating. The first variant of these descriptive models – hereafter labelled ‘linear’ – only included main effects:
 
-where βi are the linear coefficients of the independent variables, while the second one, ‘LinearInterac’, further comprised terms of interaction with REC:AEC=β0+β1⋅REC+β2⋅R+β3⋅L+β4⋅REC⋅G+β5⋅REC⋅L
+$$
+AEC=\beta_{0}+\beta_{1}⋅REC+\beta_{2}⋅R+\beta_{3}⋅L
+$$
+
+where $\beta_{i}$ are the linear coefficients of the independent variables, while the second one, ‘LinearInterac’, further comprised terms of interaction with REC:
+
+$$
+AEC=\beta_{0}+\beta_{1}⋅REC+\beta_{2}⋅R+\beta_{3}⋅L+\beta_{4}⋅REC⋅G+\beta_{5}⋅REC⋅L
+$$
 
 We used the same equations to account for choice-making under these descriptive models as with the ‘maximal budget’ and ‘optimal expense’ models, either under the ‘standard’ or ‘null choice’ variant.
 
@@ -170,11 +230,11 @@ We first fitted each of our models to data from experiment 1 (with agnostic prio
 
 **Figure 6.:** Left column: rate of acceptance of the high-effort offer, plotted against incentive levels. Right column: anticipated effort cost (AEC) rating, plotted against incentive level. Cross markers indicate observed responses averaged across all real energetic cost (REC) levels and across all participants in experiment 1 or 2 (top or bottom line, respectively) for a given incentive level. Triangles and circles indicate averaged responses generated by the ‘maximal budget’ and ‘optimal expense’ models, respectively, with parameters fitted to individual data (both ratings and choices in both experiments). Solid lines represent a linear interpolation between averaged observed or modelled responses for illustrative purposes only. Shaded area around each line represents the standard error to the mean (s.e.m), computed across participants.
 
-In order to arbitrate between model families from a quantitative standpoint, we pooled free-energy approximations of model evidence across the two groups of participants (experiments 1 and 2) and performed several group-level random-effects Bayesian model family comparisons. First, we compared ‘standard’ models, wherein choice probability is a function of the model’s AEC estimate, to ‘null choice’ models, wherein choice probability is a function of REC (see Figure 7, right part, top row). The protected exceedance probability (PEP>0.99) strongly favoured the ‘standard’ family, providing support for the fact that AEC estimate, which incorporated several distortions of the REC, including those relating to gain or loss influences, was a better predictor of choice than REC itself. Second, we compared a ‘cost–benefit’ family (comprising both variants of ‘maximal budget’ or ‘optimal expense’ models) to a ‘linear’ family (comprising both variants of ‘Linear’ and ‘LinearInterac’ models). This revealed a very likely dominance of the ‘cost–benefit’ family (again, PEP>0.99), suggesting that most participants are indeed incorporating the output of a cost–benefit computation into their prospective cost judgement. However, a third comparison between ‘maximal budget’ and ‘optimal expense’ families did not reveal any likely dominance between the two (PEP=0.52).
+In order to arbitrate between model families from a quantitative standpoint, we pooled free-energy approximations of model evidence across the two groups of participants (experiments 1 and 2) and performed several group-level random-effects Bayesian model family comparisons. First, we compared ‘standard’ models, wherein choice probability is a function of the model’s AEC estimate, to ‘null choice’ models, wherein choice probability is a function of REC (see Figure 7, right part, top row). The protected exceedance probability ($PEP>0.99$) strongly favoured the ‘standard’ family, providing support for the fact that AEC estimate, which incorporated several distortions of the REC, including those relating to gain or loss influences, was a better predictor of choice than REC itself. Second, we compared a ‘cost–benefit’ family (comprising both variants of ‘maximal budget’ or ‘optimal expense’ models) to a ‘linear’ family (comprising both variants of ‘Linear’ and ‘LinearInterac’ models). This revealed a very likely dominance of the ‘cost–benefit’ family (again, $PEP>0.99$), suggesting that most participants are indeed incorporating the output of a cost–benefit computation into their prospective cost judgement. However, a third comparison between ‘maximal budget’ and ‘optimal expense’ families did not reveal any likely dominance between the two ($PEP=0.52$).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/61712/elife-61712-fig7-v1.jpg)
 
-**Figure 7.:** Left: model attribution probability for each participant in experiments 1 and 2 (x-axis) and each model variant (y-axis). First four models from top correspond to the ‘standard’ variant, wherein the probability of choosing the high-effort option depends on the anticipated effort cost (AEC), while last four models correspond to the ‘null choice’ variant, wherein this probability depends on the real energetic cost (REC). Right: estimated frequency and protected exceedance probability (PEP) of each model family. PEP is the probability that a given model family is more frequent than any other one in the population, corrected for chance fluctuations of observed individual model evidences. Here, ,  P(freq Choice=f(AEC)>freqChoice=f(REC))>0.99 and P(freq Cost−benefit>freqLinear)>0.99.P(freqMaxBudget>freq OptimExpense)=0.52
+**Figure 7.:** Left: model attribution probability for each participant in experiments 1 and 2 (x-axis) and each model variant (y-axis). First four models from top correspond to the ‘standard’ variant, wherein the probability of choosing the high-effort option depends on the anticipated effort cost (AEC), while last four models correspond to the ‘null choice’ variant, wherein this probability depends on the real energetic cost (REC). Right: estimated frequency and protected exceedance probability (PEP) of each model family. PEP is the probability that a given model family is more frequent than any other one in the population, corrected for chance fluctuations of observed individual model evidences. Here, $ P(freq_{ Choice=f(AEC)}>freq_{Choice=f(REC)})>0.99$, $P(freq_{ Cost−benefit}>freq_{Linear})>0.99$ and $P(freq_{MaxBudget}>freq_{ OptimExpense})=0.52$.
 
 ## Discussion
 
@@ -200,13 +260,13 @@ We acknowledge that, even if it provides a well-controlled proof of concept, the
 
 The study was approved under reference C15-59 (ID RCB 2015-A01445-44) by the Ethics Committee for Biomedical Research of the Pitié-Salpêtrière Hospital, where both experiments were conducted.
 
-## Participants
+### Participants
 
 Participants were recruited via the Relais d’Information en Sciences Cognitives (RISC) website and screened for exclusion criteria: age below 18 or above 39; less than 1 hr physical exercise (and/or less than 30 min of cardiorespiratory training) per week; regular use of drugs or medications; history of psychiatric, neurological, cardiac, or respiratory disorders.
 
 All participants gave informed consent prior to partaking in the study.
 
-## Experiment 1
+### Experiment 1
 
 We aimed to test a novel hypothesis, and no corresponding effect size had been previously reported in the literature. We therefore decided to use a sample size of N = 22, which typically allows to detect reasonably large behavioural effects.
 
@@ -214,7 +274,7 @@ Twenty-two participants (10 females, 12 males; mean age = 25.6 ± 4.7 years) wer
 
 Participants received an initial endowment of 18€ and earned financial bonuses during the session, leading to a final payment of 30.7€ on average (SD = 4.5€).
 
-## Experiment 2
+### Experiment 2
 
 We used a sample size of N = 24, similar to that of experiment 1, with marginally increased statistical power.
 
@@ -222,25 +282,25 @@ Twenty-four participants (12 females, 12 males; mean age = 26.0 ± 5.0 years) we
 
 Because participants incurred a risk of monetary loss during this experiment, they received an initial endowment of 30€, which ensured a non-negative final payment. This final payment was 41.8€ on average (SD = 4.4€).
 
-## Apparatus
+### Apparatus
 
 We programmed all tasks and data analyses with MATLAB (MathWorks ) and used the Psychophysics Toolbox 3.0 (Kleiner et al., 2007) for stimuli presentation. Participants ran on a Tech med Cardio 270 treadmill, whose speed and inclination were controlled by the computer. In experiment 2, pupil dilation was measured with a The Eye Tribe ET1000 eye-tracker (60 Hz sampling frequency) attached below the computer screen, and participants’ head position was stabilized with a chin-rest placed 70 cm away from the 23″ screen. Choices and ratings were made using a standard keyboard.
 
-## Task design
+### Task design
 
 In this study, we designed a novel behavioural task aimed at measuring the influence of goal value on the anticipated energetic cost of reaching this goal.
 
-## Experiment 1
+### Experiment 1
 
 The general idea of our experimental paradigm was as follows: each participant was shown short on-screen animations depicting a cartoon character running various routes, each associated to a varying amount of reward, and was asked to estimate a priori the energetic cost of each given route. The participant was additionally asked whether she would agree to run each given route in reality (on a treadmill) in order to earn the associated reward.
 
 More specifically, after giving their consent, each participant completed a single 3 hr session comprising these steps:
 
-## 1. Training
+#### 1. Training
 
 Participants went through an extensive training in order to familiarize themselves with the task.
 
-## 2. Testing
+#### 2. Testing
 
 The testing phase was composed of six blocks, each comprising 18 trials. Each trial went as follows:
 
@@ -254,7 +314,7 @@ Since our experimental design involved 6 energetic cost levels * 6 incentive lev
 
 Finally, they completed a written survey and a subsequent oral debriefing with the experimenter. This allowed us to gather their general thoughts about the experiment, enquire about the heuristics or strategies they may have used to perform the task, or the influences they may have felt from the various experimental variables, and lastly, make sure that they had not guessed the real purpose of the experiment or explicitly assumed a correlation by design between the incentive and energetic cost factors of the task.
 
-## Experiment 2
+### Experiment 2
 
 We adapted the design of experiment 2 from that of experiment 1, such that the various mechanisms we proposed to explain the effect of interest observed in experiment 1 (see interim discussion) would each make a distinct set of predictions about the behavioural outputs measured in experiment 2. We therefore introduced the following modifications to the design:
 
@@ -264,7 +324,7 @@ We pre-selected 128 extracts (each 17 s long) from moderately familiar to little
 
 Pupil dilation was recorded during each arousal rating trial. In order to mitigate motion-related noise in the data, participants laid their head on a chin-rest. The luminance of all visual stimuli was roughly equalized before data acquisition and was subsequently measured with a Dr Meter LX1010B digital luxmeter, which we placed at the same position as participant’s eyes in front of the computer screen, and exposed to all stimuli combinations.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed with MATLAB and its Statistics and Machine Learning Toolbox, as well as the Variational Bayesian Analysis (VBA) toolbox (Daunizeau et al., 2014).
 
@@ -274,78 +334,136 @@ We subsequently tested for group-level random effects of the regressors in our m
 
 Non-linear models were inverted using a variational Bayes approach under the Laplace approximation, implemented in the VBA toolbox. The algorithm used in VBA not only inverts nonlinear models but also estimates their evidence, which represents a trade-off between accuracy (goodness of fit) and complexity (degrees of freedom).
 
-## Experiment 1
+### Experiment 1
 
-## Choice
+#### Choice
 
-To assess the impact of our main experimental factors on preference for the HEHG option, we fitted a simple logistic model to binary choices made by each participant, formalized as follows:(13)P(ChoiceYes)=11+e−(B0+kREC⋅REC+kI⋅I)
+To assess the impact of our main experimental factors on preference for the HEHG option, we fitted a simple logistic model to binary choices made by each participant, formalized as follows:
 
-where B0 is a bias parameter, REC is the real energetic cost of the HEHG route, I is the incentive (or potential reward) level of the HEHG option, and kREC and kI are the linear coefficients scaling the energetic cost and the incentive level, respectively.
+$$
+P(ChoiceYes)=\frac{1}{1+e^{−(B_{0}+k_{REC}⋅REC+k_{I}⋅I)}}
+$$
 
-## Anticipated energetic cost
+where $B_{0}$ is a bias parameter, $REC$ is the real energetic cost of the HEHG route, $I$ is the incentive (or potential reward) level of the HEHG option, and $k_{REC}$ and $k_{I}$ are the linear coefficients scaling the energetic cost and the incentive level, respectively.
+
+#### Anticipated energetic cost
 
 We fitted several GLMs to the AEC ratings made by each participant.
 
-In order to evaluate the impact of our two main experimental factors, we started with a very simple model:(14)AEC=β0+βREC⋅REC+βI⋅I
+In order to evaluate the impact of our two main experimental factors, we started with a very simple model:
 
-where REC is the real energetic cost of the route, I is the incentive level, and βs are the linear coefficients of our model.
+$$
+AEC=\beta_{0}+\beta_{REC}⋅REC+\beta_{I}⋅I
+$$
 
-Next, we tested whether the incentive level factor had an impact on AEC over and above choices made by the participant. For this, we orthogonalized our factor of interest to the potentially confounding factor:(15)AEC=β0+βREC⋅REC+βC⋅Choice∗+ βI⋅I∗
+where $REC$ is the real energetic cost of the route, $I$ is the incentive level, and βs are the linear coefficients of our model.
 
-where Choice* is the choice made by the participant (encoded as 1 for yes, 0 for no, and subsequently orthogonalized to the REC vector), and I* is the incentive level, orthogonalized to REC and Choice* .
+Next, we tested whether the incentive level factor had an impact on AEC over and above choices made by the participant. For this, we orthogonalized our factor of interest to the potentially confounding factor:
 
-## Experiment 2
+$$
+AEC=\beta_{0}+\beta_{REC}⋅REC+\beta_{C}⋅Choice^{∗}+ \beta_{I}⋅I^{∗}
+$$
 
-## Choice
+where $Choice^{*}$ is the choice made by the participant (encoded as 1 for yes, 0 for no, and subsequently orthogonalized to the REC vector), and $I^{*}$ is the incentive level, orthogonalized to $REC$ and $Choice^{*}$ .
 
-We performed a similar analysis to that in experiment 1 by inverting the following logistic model (adapted from Equation 1 to include a loss factor):(16)P(ChoiceYes)=sigmo(B0+kREC⋅REC+kG⋅G+kL⋅L)
+### Experiment 2
 
-where sigmo:x→11+e-x ,B0 is a bias parameter, REC is the real energetic cost of the high-effort route, G is the gain level of the high-effort option (0 in loss blocks), L is the loss level of the low-effort option (0 in gain blocks), and kREC , kG and kL are the linear coefficients scaling the energetic cost, gain level, and loss level, respectively.
+#### Choice
 
-## Anticipated energetic cost
+We performed a similar analysis to that in experiment 1 by inverting the following logistic model (adapted from Equation 1 to include a loss factor):
+
+$$
+P(ChoiceYes)=sigmo(B_{0}+k_{REC}⋅REC+k_{G}⋅G+k_{L}⋅L)
+$$
+
+where $sigmo:x→\frac{1}{1+e^{-x}} ,B_{0}$ is a bias parameter, $REC$ is the real energetic cost of the high-effort route, $G$ is the gain level of the high-effort option (0 in loss blocks), $L$ is the loss level of the low-effort option (0 in gain blocks), and $k_{REC}$ , $k_{G}$ and $k_{L}$ are the linear coefficients scaling the energetic cost, gain level, and loss level, respectively.
+
+#### Anticipated energetic cost
 
 Again, we fitted several GLMs to the AEC ratings made by each participant.
 
-We started with a very simple model, extended from (Equation 2), to include a loss factor:(17)AEC=β0+βREC⋅REC+βG⋅G+βL⋅L
+We started with a very simple model, extended from (Equation 2), to include a loss factor:
 
-where REC is the real energetic cost of the route, G is the gain level, L is the loss level, and βs are the linear coefficients of our model.
+$$
+AEC=\beta_{0}+\beta_{REC}⋅REC+\beta_{G}⋅G+\beta_{L}⋅L
+$$
 
-Next, in order to assess the effect of the arousal evoked by the musical extracts onto AEC ratings, we fitted the following GLM:(18)AEC=β0+βREC⋅REC+βG⋅G+βL⋅L+βA⋅A
+where $REC$ is the real energetic cost of the route, $G$ is the gain level, $L$ is the loss level, and βs are the linear coefficients of our model.
 
-where A is the arousal rating made by the participant about the musical extract, and βA is the corresponding coefficient.
+Next, in order to assess the effect of the arousal evoked by the musical extracts onto AEC ratings, we fitted the following GLM:
 
-## Pupil dilation
+$$
+AEC=\beta_{0}+\beta_{REC}⋅REC+\beta_{G}⋅G+\beta_{L}⋅L+\beta_{A}⋅A
+$$
+
+where $A$ is the arousal rating made by the participant about the musical extract, and $\beta_{A}$ is the corresponding coefficient.
+
+#### Pupil dilation
 
 Pupil diameter time series recorded during the arousal rating task were preprocessed as follows:
 
-Next, in order to assess the effect of music-related arousal on pupil diameter, we fitted the following minimal GLM to each time point in arousal rating time series:(19)PupilDiam=β0+βA⋅A
+Next, in order to assess the effect of music-related arousal on pupil diameter, we fitted the following minimal GLM to each time point in arousal rating time series:
 
-where A is the arousal rating made by the participant about the musical extract being played.
+$$
+PupilDiam=\beta_{0}+\beta_{A}⋅A
+$$
 
-Finally, we smoothed the t-statistic time series derived from fitting this GLM by convolving them with a Gaussian kernel (σ=50 ms) in order to ensure that the assumptions of the Random Field theory were met, and we applied the RFT_GLM_contrast function (from the VBA toolbox) to our smoothed time series. This allowed us to test the significance (in a random-effects approach) of each regressor at each time point while correcting for multiple comparison at cluster level.
+where $A$ is the arousal rating made by the participant about the musical extract being played.
 
-## Inversion of nonlinear cost–benefit models of choice and rating
+Finally, we smoothed the t-statistic time series derived from fitting this GLM by convolving them with a Gaussian kernel $(\sigma=50 ms)$ in order to ensure that the assumptions of the Random Field theory were met, and we applied the RFT_GLM_contrast function (from the VBA toolbox) to our smoothed time series. This allowed us to test the significance (in a random-effects approach) of each regressor at each time point while correcting for multiple comparison at cluster level.
+
+#### Inversion of nonlinear cost–benefit models of choice and rating
 
 We inverted nonlinear models predicting both anticipated effort cost (AEC) rating and high-effort acceptance rate as a function of the REC, the nominal gain magnitude (G), and the nominal loss magnitude (L).
 
 The models applied to experiment 1 data are explained in the interim discussion.
 
-In experiment 2, the ‘maximal budget’ model was extended from that presented in the interim discussion to account for the presence of a loss condition. The decision variable can now be written as(20)DV=UHE−ULE=(Gρ−CE⋅ECα)−(−λ⋅Lρ−CE⋅EC0α)
+In experiment 2, the ‘maximal budget’ model was extended from that presented in the interim discussion to account for the presence of a loss condition. The decision variable can now be written as
 
-where G and L are the prospective gain and loss magnitudes attached to the high-effort (HE) and low-effort (LE) options, respectively, ρ is the nonlinearity parameter controlling the magnitude-to-utility mapping (typically, ρ<1; Glimcher and Fehr, 2013; Schoemaker, 1982), λ is a loss aversion parameter (typically, λ>1; Kahneman and Tversky, 1984; Tom et al., 2007), CE is the scaling coefficient of the effort cost discounting variable, and α is the nonlinearity parameter controlling the curvature of effort discounting.
+$$
+DV=U_{HE}−U_{LE}=(G^{ρ}−C_{E}⋅EC^{\alpha})−(−\lambda⋅L^{ρ}−C_{E}⋅EC_{0}^{\alpha})
+$$
 
-Thus:(21)DV=Gρ+λ⋅Lρ−CE⋅(ECα−EC0α)
+where $G$ and $L$ are the prospective gain and loss magnitudes attached to the high-effort (HE) and low-effort (LE) options, respectively, $ρ$ is the nonlinearity parameter controlling the magnitude-to-utility mapping (typically, $ρ<1$; Glimcher and Fehr, 2013; Schoemaker, 1982), $\lambda$ is a loss aversion parameter (typically, $\lambda>1$; Kahneman and Tversky, 1984; Tom et al., 2007), $C_{E}$ is the scaling coefficient of the effort cost discounting variable, and $\alpha$ is the nonlinearity parameter controlling the curvature of effort discounting.
 
-therefore, the maximal energetic cost such that DV = 0 is(22)ECmax=(EC0α+Gρ+λ⋅LρCE)1α
+Thus:
 
-And the updated decision variable can be written as(23)DV′=Gρ+λ⋅Lρ−CE⋅(AECα−EC0α)
+$$
+DV=G^{ρ}+\lambda⋅L^{ρ}−C_{E}⋅(EC^{\alpha}−EC_{0}^{\alpha})
+$$
 
-The ‘optimal expense’ model was extended in a similar fashion. The expected utility from the high- and low-effort option can now be written (respectively) asE[UHE(EC)]=P(Success|EC)⋅Gρ−(1−P(Success|EC))⋅λ⋅Lρ−CE⋅ ECα (24)E[ULE(EC)]=−λ⋅Lρ−CE⋅ EC0α
+therefore, the maximal energetic cost such that DV = 0 is
 
-Such that the updated decision variable is(25)DV′=P(Success|AEC)⋅(Gρ+λ⋅Lρ)−CE⋅((AEC)α−EC0α)
+$$
+EC_{max}=(EC_{0}^{\alpha}+\frac{G^{ρ}+\lambda⋅L^{ρ}}{C_{E}})^{\frac{1}{\alpha}}
+$$
 
-As befits a Bayesian approach, we set non-trivial prior probability distributions over model parameters. We set agnostic distributions (centred on ‘null’ values, e.g., ρ and α were centred on 1) before fitting models to our first dataset (experiment 1), and used the posterior distributions derived from this first inversion stage as the prior distribution in our second inversion (experiment 2, except for the λ parameter, which was absent from the models in experiment 1 and was attributed an agnostic prior distribution centred on 1).
+And the updated decision variable can be written as
 
-## Model comparison
+$$
+DV^{′}=G^{ρ}+\lambda⋅L^{ρ}−C_{E}⋅(AEC^{\alpha}−EC_{0}^{\alpha})
+$$
+
+The ‘optimal expense’ model was extended in a similar fashion. The expected utility from the high- and low-effort option can now be written (respectively) as
+
+$$
+E[U_{HE}(EC)]=P(Success|EC)⋅G^{ρ}−(1−P(Success|EC))⋅\lambda⋅L^{ρ}−C_{E}⋅ EC^{\alpha}
+$$
+
+
+
+$$
+E[U_{LE}(EC)]=−\lambda⋅L^{ρ}−C_{E}⋅ EC_{0}^{\alpha}
+$$
+
+Such that the updated decision variable is
+
+$$
+DV^{′}=P(Success|AEC)⋅(G^{ρ}+\lambda⋅L^{ρ})−C_{E}⋅((AEC)^{\alpha}−EC_{0}^{\alpha})
+$$
+
+As befits a Bayesian approach, we set non-trivial prior probability distributions over model parameters. We set agnostic distributions (centred on ‘null’ values, e.g., $ρ$ and $\alpha$ were centred on 1) before fitting models to our first dataset (experiment 1), and used the posterior distributions derived from this first inversion stage as the prior distribution in our second inversion (experiment 2, except for the $\lambda$ parameter, which was absent from the models in experiment 1 and was attributed an agnostic prior distribution centred on 1).
+
+#### Model comparison
 
 The log evidences, estimated for each participant in each experiment and each model via the VBA scheme, were submitted to a group-level random-effect analysis (Rigoux et al., 2014). This analysis was used to generate family-level protected exceedance probabilities, which quantify the likelihood that a given family of models is more frequently implemented by the population than any other family in the comparison set. This allowed us to compare the evidence for ‘standard’ versus ‘null choice’, ‘cost–benefit’ versus ‘linear’, and ‘maximal budget’ versus ‘optimal expense’ families, over and above the variants tested within each family.

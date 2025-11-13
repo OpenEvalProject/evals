@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03xez1567 Integrative Biology Laboratory, Salk Institute for Biological Studies La Jolla United States
-2. https://ror.org/03v76x132 Department of Laboratory Medicine, Yale University New Haven United States
-3. https://ror.org/03j7sze86 Yale Cancer Center, Yale School of Medicine New Haven United States
+1. Integrative Biology Laboratory, Salk Institute for Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
+2. Department of Laboratory Medicine, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Yale Cancer Center, Yale School of Medicine New Haven United States ([ROR:03j7sze86](https://ror.org/03j7sze86))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ Here, we report our mathematical analysis of RAF PA. We developed a mathematical
 
 ## Results
 
-## Analytical modeling of RAF autoinhibition
+### Analytical modeling of RAF autoinhibition
 
 The regulation of RAF kinase activation is complex with multiple regulatory steps (Hu et al., 2013; Karoulia et al., 2016; Lavoie and Therrien, 2015; Wellbrock et al., 2004, Brummer and McInnes, 2020), and several of these processes have been described to play a role in PA (Cho et al., 2012; Heidorn et al., 2010; Holderfield et al., 2013; Kondo et al., 2019; McKay et al., 2011). Conformational changes of the RAF monomer contribute significantly to RAF kinase activation (Jin et al., 2017; Lavoie and Therrien, 2015; Martinez Fiesco et al., 2022; Wellbrock et al., 2004; Zhang et al., 2021). In the ‘autoinhibited’ form, associations between its N-terminus and its kinase domain maintain RAF in an inactive form that does not dimerize (Cutler et al., 1998; Lavoie and Therrien, 2015). In the ‘non-autoinhibited’ form, the kinase domain is no longer occluded, and other regulatory mechanisms contribute to full RAF kinase activation, such as kinase domain conformational changes and dimerization (Lavoie and Therrien, 2015; Lavoie et al., 2013). Recent experimental work reports that RAF inhibitors tend to promote a net transition to the non-autoinhibited conformation that is bound to RAS-GTP (Jin et al., 2017; Karoulia et al., 2017). It has previously been suggested that this biasing to the non-autoinhibited state may contribute to PA (Figure 1B; Jin et al., 2017). However, conformational autoinhibition (CA) has not previously received a theoretical analysis to evaluate whether, and how, it may contribute to PA.
 
@@ -45,27 +45,129 @@ We therefore developed a series of mathematical models that include CA of RAF, N
 
 Our first mathematical model focuses on RAF CA and RAF dimerization (Figure 2A). The model allows RAF to adopt two different conformations: one is autoinhibited and can neither dimerize nor bind drug, and the other is non-autoinhibited and can bind drug and/or dimerize (Lavoie et al., 2013). Drug-bound RAF is assumed to only be able to transition back to an autoinhibited state only after the bound drug has dissociated. Within the model, wild-type RAF is implicitly assumed to be activated by RAS-GTP as binding to RAS-GTP is an essential step to wild-type RAF activation (Lavoie and Therrien, 2015). We define active RAF as the RAF protomers that are not bound to a drug and are part of a RAF dimer.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the RAF autoinhibition and dimerization model. RAF autoinhibition and the stabilization of the non-autoinhibited, dimerization, and signaling competent form of RAF by inhibitor is our first focus as a mechanism that may create PA. (B) Representative plot demonstrating that this model is sufficient to generate PA. Plotted quantity is the number of active RAF protomers (within a dimer, not bound to drug) normalized to the maximum as a function of RAF inhibitor abundance. (C) Schematic definitions of PA fold change, PA range, KA, and Kdim. (D) Predicted PA fold change and range presented as a function of two key parameters of the autoinhibition model (KA and [RAF]). Panels (B) and (D) are numerical examples with specific parameter values of otherwise global, analytic results of the conformational autoinhibition (CA) model that are shown in Table 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Predicted PA fold change (left) and PA range (right) presented as a function of two key parameters of the autoinhibition model: the dissociation constant for RAF inhibitor binding with a RAF monomer (Kd) and cellular abundance of RAF ([RAF]). (B) Predicted PA fold change (left) and PA range (right) presented as a function of two key parameters of the autoinhibition model: the dissociation constant for RAF dimerization (Kdim) and cellular abundance of RAF ([RAF]). All panels are numerical examples with specific parameter values of otherwise global, analytic results of the conformational autoinhibition (CA) model that are shown in Table 1. (C) Predicted PA fold change presented as a function of the CA equilibrium constant (KA) and also Kd (above) or Kdim (below). (D) Predicted PA range presented as a function of the CA equilibrium constant (KA) and also Kd (above) or Kdim (below).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative plots portraying the proportion of total RAF in its different states to illuminate the signaling state changes underlying PA in this mechanism. Only a RAF protomer that is within a dimer and that is also not bound inhibitor is considered active.
+
 The mechanism shown in Figure 2A and its conversion to a set of equations that provide the system’s equilibrium solutions is detailed in Appendix 1. We use the principle of detailed balance (Kholodenko, 2015; Wofsy et al., 1992) and total protein and drug conservation equations to derive closed-form, analytic expressions for the steady-state solution for this system (Table 1, with derivations in Appendix 1). We focus on steady-state solutions because PA is a steady-state phenomenon, as is reflected in the long-term outgrowth of secondary tumors with RAS mutations from patients treated with a RAF inhibitor (Su et al., 2012).
 
-## Paradoxical activation is a robust outcome of conformational autoinhibition
+**Table 1.**
+ Analytic conclusions in equation form for the different DP, NC, CA, and unified mechanisms models described in our work.Predicted expressions for active RAF at baseline (no drug), active RAF, total RAF dimers, and analytic conditions for PA to occur are shown in the rows for each of the mechanism associated models. The columns show models corresponding to the PA mechanisms of drug-modulated conformational autoinhibition (CA model), drug-induced dimerization potentiation mechanism (DP model), negative cooperativity toward second drug binding (NC model), and a model that combines all these mechanisms (unified model). The lower part of the table is a key that presents the abbreviated expressions, which allow presentation into similar functional forms for corresponding model results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model type</th>
+      <th>Conformational autoinhibition (CA)</th>
+      <th>Dimer potentiation (DP)</th>
+      <th>Negative cooperativity (NC)</th>
+      <th>Unified model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Core model assumptions</td>
+      <td>Monomeric RAF autoinhibitsNon-autoinhibited RAF can dimerize and bind drugRAF dimers signal downstream</td>
+      <td>RAF can dimerize and bind drugDrug binding reduces dissociation constant of RAF dimers.RAF dimers signal downstream</td>
+      <td>RAF can dimerize and bind drugSingly bound RAF dimers resist drug binding at second siteRAF dimers signal downstream</td>
+      <td>CA model assumptionsDP model assumptionsNC model assumptions</td>
+    </tr>
+    <tr>
+      <td>Baseline active RAF (relative to total)</td>
+      <td>(−1 +(1 +E3))2E3</td>
+      <td>(−1 +(1 + 8 RAFrel))28RAFrel</td>
+      <td>(−1 +(1 + 8 RAFrel))28RAFrel</td>
+      <td>(−1 +(1 +E3))2E3</td>
+    </tr>
+    <tr>
+      <td>Active RAF (relative to total)</td>
+      <td>(E1−E12+E2c)2E2c(1+drel)</td>
+      <td>(E1d−E1d2+E2d)2f (E1d+(−1+f)f)E2d (E1d2+(−1+f)f2)</td>
+      <td>E1n(E1n−E1n2+E2n)2g2E2n(g+2gdrel+drel2)</td>
+      <td>(E1−E12+E2u)2g(f+drel)E2u(fg+2gdrel+drel2)</td>
+    </tr>
+    <tr>
+      <td>Total RAF dimers (relative to active RAF)</td>
+      <td>12(1+drel)</td>
+      <td>f+drel(2+drel)2(f+drel)</td>
+      <td>g2g(1+drel)+drel</td>
+      <td>fg+drel(2g+drel)2g(f+drel)</td>
+    </tr>
+    <tr>
+      <td>RAF PA conditions</td>
+      <td>RAFrel&lt;18(1+3KA)×(KA−1)(** necessary and sufficient)</td>
+      <td>drel&lt;1−2f8×RAFrel&lt;(3−8f+4f2)f&lt;1/2(* sufficient)</td>
+      <td>No PA possible</td>
+      <td>g≥12f≥1+KA8×RAFrel&lt;4f2−8f(1+KA)+3(1+KA)2(*sufficient)</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Key</td>
+      <td colspan="2">E1d=(drel+1)f</td>
+      <td colspan="2">E1=(drel+1+KA)</td>
+    </tr>
+    <tr>
+      <td colspan="2">E2d=8f×RAFrel(f+2drel+drel2)</td>
+      <td colspan="2">E2c=8RAFrel(1+2drel+drel2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">E1n=(drel+1)</td>
+      <td colspan="2">E3=(8RAFrel)/(1+KA)2</td>
+    </tr>
+    <tr>
+      <td colspan="2">E2n=8RAFrel(g+2gdrel+drel2)</td>
+      <td colspan="2">E2u=8RAFrel(fg+2gdrel+drel2)/(fg)</td>
+    </tr>
+    <tr>
+      <td colspan="2">*Sufficient: conditions that allow PA</td>
+      <td colspan="2">**Necessary and sufficient: The only conditions that allow PA.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Paradoxical activation is a robust outcome of conformational autoinhibition
 
 One benefit of an analytic expression is that it can be utilized to determine the generality of a result and/or to identify specific criteria required for a given behavior to occur. Along these lines, we investigated whether and under what conditions the mechanisms in our CA base model are sufficient to create PA. We can demonstrate analytically that the presence of both CA and stabilization of the active form by RAF inhibitors is sufficient to create PA for some, but not all, parameter values (Figure 2B, Table 1, Appendix 1). Additionally, our analysis yields algebraic expressions that define the conditions necessary for PA to occur by this mechanism (Table 1). One condition we find is that RAF states must favor the autoinhibited form of RAF at equilibrium and in the absence of a drug for PA to occur. In other words, PA does not always happen when CA is present. By substituting biophysical parameter values into these expressions, we can predict PA for a wide range of RAF concentration values and visualize the range of system parameters for which CA promotes PA (Figure 2C and D, Figure 2—figure supplement 1). In our investigations, we also analytically show that PA is not generated by simpler mechanisms such as one without the autoinhibitory conformational changes and one without dimerization (Appendix 1).
 
-## Paradoxical activation reflects a shifting balance of signaling complexes
+### Paradoxical activation reflects a shifting balance of signaling complexes
 
 To communicate how PA arises from this mechanism, we describe the proportion of RAF in each of its possible states: (i) autoinhibited RAF monomer, (ii) non-autoinhibited RAF monomer that is not bound to drug, (iii) non-autoinhibited monomer that is bound to drug, (iv) RAF dimer with no drug bound, (v) RAF dimer with one of two kinase domains bound to drug, and (vi) RAF dimer with both kinase domains bound to drug. We considered the total amount of kinase activity to be the number of RAF protomers within a dimer that are not bound to drug (Figure 2—figure supplement 2).
 
 Before a drug is given, a significant fraction of RAF is autoinhibited and there are low levels of non-autoinhibited RAF and RAF dimers. As RAF inhibitor levels increase, the level of autoinhibited RAF progressively declines. Non-autoinhibited RAF distributes between drug-bound monomeric and dimeric forms while the unbound monomeric form maintains equilibrium with the autoinhibited RAF. The increased quantity of RAF dimers reflects the increased pool of RAF proteins that are non-autoinhibited and therefore capable of dimerization. This results in a drug-dependent increase in RAF dimers bound to drug in one site and thereby the increase in total RAF kinase activation that accounts for PA. The quantity of drug-bound RAF monomer and doubly drug-bound RAF dimer progressively increases to saturation as a function of the drug amount, resulting in the eventual reduction in RAF kinase activity that is associated with PA dose–responses.
 
-## Evaluation of distinct mechanisms that promote paradoxical activation
+### Evaluation of distinct mechanisms that promote paradoxical activation
 
 There is evidence that NC and RAF inhibitor-driven DP also contribute to PA. Previous theoretical work on PA has focused on the contribution of DP and NC (Kholodenko, 2015; Rukhlenko et al., 2018). We were curious how CA might interact with these other processes that contribute to PA. We developed a mathematical model that combined the mechanisms studied in these previous studies with our model of CA; the complete mechanism that is modeled is shown in Figure 3A, and we adapt the same nomenclature for parameters (Kholodenko, 2015). Analysis of our model with CA, NC, and inhibitor-driven DP finds that these three mechanisms are mathematically distinct, in that one cannot translate or rescale variables to interchange between the mechanisms (Table 1). Further, each mechanism brings a qualitatively distinct feature to the dose–response of active RAF protomers (Figure 3—figure supplement 1A and B) and widely diverging capacity to potentiate the fold change in PA (Figure 3—figure supplement 1A) and the width of PA (Figure 3—figure supplement 1B). Because of these differences, we reasoned that a mathematical model that includes these biochemically, mathematically, and qualitatively distinct mechanisms may enable the underlying mechanisms of PA to be inferred, as in an inverse problem, through computationally fitting our model to data that characterizes the PA response of RAF inhibitors.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the modeled mechanism of conformational autoinhibition extended to include dimer potentiation (characterized by parameter ‘f’) and negative cooperativity (characterized by parameter ‘g’). (B) Plot of normalized dose–response curves for nine RAF inhibitors based on model fits to the available data (Karoulia et al., 2016). The solid lines represent mean values over N = 259 best fits for each of the 28 parameters varied. The standard deviation is highlighted in corresponding colored highlight. (C) The parameter ‘f’ and drug dissociation constant Kd values from best-fit parameter sets of the unified model (N = 259) fit to nine RAF inhibitors are shown (best-fit KA = 2.914 ± 0.009). The outcomes of best fits for type I, II, and I.5 inhibitors are marked in black, blue, and green, ovals respectively. Dashed line at f = 1 marks the absence of dimer potentiation mechanism. For each drug, we show all obtained best-fit parameter sets that were within 10% of best-fit metric. (D) Mean percentage error per input data for best-fit parameter sets in the unified model compared to models with one mechanism excluded and two mechanisms excluded. The panel on the right presents the parameters included in the corresponding model in light green (and those that are not in dark green). Subscript ‘i’ represents each of the nine drugs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Maximum fold change allowed in the different mechanisms is shown with varying RAF concentrations ([RAF]) and dimerization dissociation rate constant (Kdim). CA1 represents CA mechanism with KA = 10 (10% of RAF is active at baseline and equilibrium) and CA2 represents CA mechanism with KA = 100 (1% of RAF is active at baseline and equilibrium). Extremal values of parameters for DP and NC mechanisms are used to derive maximal respective PA in DP, NC, and unified models (f = 10–5, g = 100). Dashed vertical line shows a physiological estimate of RAF concentration (0.04 μM). The parameters f and g are set to 1 where the respective mechanism of DP, NC is not present. (B) NC mechanism is shown within DP + NC sub-model. NC tweaks PA by extending the PA range of drug concentrations but has no impact on maximum fold change. (C) Plot of normalized dose–response curves for nine RAF inhibitors based on the unified model with all 30 parameters varied fit to the available data (Karoulia et al., 2016). The solid lines represent mean values and highlights represent the standard deviations. (D) Parameter regions predicted when all 30 parameters of the unified model are varied, cover the same regions as in Figure 3C, and distribute the different types of drugs in a similar fashion. However, the best-fit range of parameter values are much wider (on a log-10 scale) than in Figure 3. For each drug, we show all obtained best-fit parameter sets that were within 10% of best-fit metric. (E) With all parameters of the unified model varied, the best-fit correlations between KA values and the RAF dimerization dissociation constant (Kdim) are shown. Direct, monotonic correlation implies choosing Kdim also specifies best-fit KA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Normalized dose–response curves for nine RAF inhibitors based on fitting the unified model and all sub-models to the available data (Karoulia et al., 2016). The solid lines represent mean values over best fits for each of the parameters varied. The standard deviation is highlighted in corresponding colored highlight. Unified model is shown when fit with absolute error fitting metric used to compare across different models and with the chi-square-like metric that was used to identify best-fit parameter values.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82739/elife-82739-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Box and whisker plots showing the range of parameter values from our best-fit sets (i.e., parameter sets with an error no more than 10% higher than the parameter set with the least error). Best-fit parameter values for the unified model (28 parameters varied) and all sub-models are shown. Unified model bar charts are copied on each page for reference. The ‘x’ marks represent parameters that were not varied. The axes ranges represent boundaries of the parameter fits. Within the box plots, the boxes indicate quartiles, and the whiskers specify the 95% confidence interval.
 
 We developed a computational process for obtaining sets of parameters that fit our model to published experimental data (Karoulia et al., 2016). Our approach finds multiple parameter sets for the same drug that are within 10% of the error for the parameter set with the least error. These published data characterize the PA response of SK-MEL-2 cells to nine different RAF inhibitors, each at seven different concentrations of inhibitor (Figure 3B). We reasoned that some parameters should be specific to the individual drugs (i.e., the dissociation constant for the drug binding to RAF, and the drug-induced DP and NC parameters) and that some parameters should be the same no matter which drug was used in the experiment (i.e., the abundance of RAF, the equilibrium constant of RAF dimerization when no drug is bound, and the CA equilibrium constant). We set values for two key parameters, RAF abundance and RAF dimerization equilibrium constant, based on estimates and do not fit them. A table listing the best-fit parameters of each of the sub-models is provided in Supplementary file 1. Of note, we have 1 global parameter (the autoinhibition equilibrium constant) and 27 drug-specific parameters. Our 28 total parameter estimates yield a model that matches the experimental data well (Figure 3B). Details of our approach for identifying model parameters are provided in the ‘Materials and methods’ section, and our code is provided in the supplement. We obtain similar quality overall fits if we do not pre-specify the RAF abundance and the RAF dimerization constant and add these two parameters to the other 28 parameters and then perform the same parameter estimation procedure (Figure 3—figure supplement 1C–E). We observed that some parameters could be constrained to a narrow region through this procedure, while other parameters could vary widely and still match the same data (Figure 3—figure supplements 2 and 3).
 
 Intriguingly, when we considered the collection of best-fit parameters we found the different RAF inhibitors appeared to separate in a manner reflective of their known identity as type I, I.5, and II inhibitors (Figure 3C, Supplementary file 1). This is notable as only the RAF inhibitor dose–response data was examined to completely characterize the drug-dependent parameters, whereas the classification of kinase inhibitors is typically made by consideration of the structure of each kinase inhibitor complex (Dar and Shokat, 2011). We also plot alternative parameter estimates that are within 10% error of the considered parameter set with the least error, and this helps demonstrate the robustness of this observation. Thus, our model finds that the different mechanisms result in qualitatively distinct features and our fit parameters suggest that these differences enable RAF inhibitors to be grouped based on respective mechanisms of action.
 
-## Conformational autoinhibition and dimer potentiation together best explain PA
+### Conformational autoinhibition and dimer potentiation together best explain PA
 
 We next evaluated how essential all three processes are to explain the PA data. We considered the accuracy of model fits for our full model with all three mechanisms, as well as models that only included one or two of these processes. We found that the unified model (i.e., the version that includes all three mechanisms) fits the data much better than any of these sub-models (Figure 3D). Only the simpler model that included both CA and DP (but not NC) could fit the data nearly as well.
 
@@ -91,7 +193,7 @@ Our analysis was motivated by RAF inhibitors and PA in RAS mutant cells treated 
 
 ## Materials and methods
 
-## Mathematical models and analysis
+### Mathematical models and analysis
 
 We focus on steady-state levels of the different states in which RAF can exist, as portrayed in the diagrams for each model. Between any two states, an equilibrium relationship can be expressed as the ratio of abundances in the two states. Conservation of total protein quantities and zero value of total Gibbs free energy change at equilibrium both provide mechanisms to algebraically combine these expressions. We thereby derive expressions that relate the relative abundance of the RAF within its different monomeric and dimeric states. We perform algebraic manipulations and derive analytic solutions which we cross-check using Mathematica software v 12.0 (Wolfram Research). We perform numerical evaluations of these relationships and generate plots of these equations using Python packages, including numpy, scipy, and matplotlib.
 
@@ -99,18 +201,26 @@ Where applicable, parameters not varied in descriptive numerical plots are set a
 
 KA = 10.0, Kd = 0.1 μM, Kdim = 0.1 μM, [RAF] = 0.04 μM. We utilize mathematical models to clarify specific mechanisms that contribute to RAF activation and drug response. The models were driven by specific hypotheses that cannot be generalized to include all the features of RAF activation simultaneously due to limitations of available experimental data that does not cover all the required conditions and variations thereof. Moreover, our analytic approach allows a parameter-independent prediction for components of canonical RAF activation cycle that would not be accessible if we attempted to include every potential feature independent of a focused hypothesis. This is similar to differences in complexity between in vitro and in vivo systems – the former often forms a more versatile and precise method of establishing mechanisms while not including most of the complexities present in vivo, thereby providing a precise testing ground for focused hypotheses.
 
-## Model fitting to dose–response data
+### Model fitting to dose–response data
 
 We reasoned that some parameters (such as the abundance of the RAF kinases, their dimerization rate constant [Kdim], and the equilibrium constant for RAF conformational changes [KA]) are intrinsic to a cell and should not vary between different RAF inhibitors. The values of RAF concentrations and dimerization constant are also effective parameters since all three types of RAF are implicitly included when we fit to in vitro data. In contrast, some properties will vary between RAF inhibitors. Specifically, these would be the affinity of a drug for binding to RAF (Kd), the drug-induced change in RAF dimer affinity, or “f” to use the nomenclature of Kholodenko, 2015, and NC, or “g” to again use the nomenclature of Kholodenko, 2015.
 
-Numerical fitting for unified model of PA mechanisms was performed using SLSQP algorithm from scipy library in Python language. Sixty-three experimental dose–response points from the PDF publication (Karoulia et al., 2016) were quantified using LI-COR software (Image Studio V5.2) and used as raw data to fit 28 (Figure 3, Supplementary file 1) or all 30 parameters (Figure 3—figure supplement 1C–E, Supplementary file 1) in our model for the nine drugs included. A total of 1500 random initial states were chosen from a log-uniform search domain for each of the parameters. The boundaries of the fitting search were identified in the units of μM (where applicable) as follows: ‘f,’ [10–5,100]; ‘g,’ [1,104]; ‘KA,’ [0.001,102]; ‘Kd,’ [10–4,104]; ‘Kdim,’ [10–4,104]; ‘RAF,’ [10–4,103]. Best fits were defined as within 10% of the lowest value of the fitting metric. Several fitting algorithms and metrics were evaluated to finally identify SLSQP with a chi-square-like fit metric leading to convergence with higher likelihood across different initial conditions. This metric identified deviation across all data points relative to the model prediction as follows:fitmetric=1Ndrugs*Ndoses∑i=0Ndrugs∑j=0Ndosesyi.jpredicted-Yi,jobserved Yi,jobserved2
+Numerical fitting for unified model of PA mechanisms was performed using SLSQP algorithm from scipy library in Python language. Sixty-three experimental dose–response points from the PDF publication (Karoulia et al., 2016) were quantified using LI-COR software (Image Studio V5.2) and used as raw data to fit 28 (Figure 3, Supplementary file 1) or all 30 parameters (Figure 3—figure supplement 1C–E, Supplementary file 1) in our model for the nine drugs included. A total of 1500 random initial states were chosen from a log-uniform search domain for each of the parameters. The boundaries of the fitting search were identified in the units of μM (where applicable) as follows: ‘f,’ [10–5,100]; ‘g,’ [1,104]; ‘KA,’ [0.001,102]; ‘Kd,’ [10–4,104]; ‘Kdim,’ [10–4,104]; ‘RAF,’ [10–4,103]. Best fits were defined as within 10% of the lowest value of the fitting metric. Several fitting algorithms and metrics were evaluated to finally identify SLSQP with a chi-square-like fit metric leading to convergence with higher likelihood across different initial conditions. This metric identified deviation across all data points relative to the model prediction as follows:
 
-To compare how well each of the sub-models fit the data relative to one another, we optimized over the absolute error relative to the data as this metric has a straightforward interpretation of average proportionate deviation.fitmetric=1Ndrugs∗Ndoses∑i=0Ndrugs∑j=0Ndoses|yi.jpredicted−Yi,jobserved Yi,jobserved|
+$$
+fitmetric=\frac{1}{Ndrugs*Ndoses}\sqrt{\sumi=0Ndrugs\sumj=0Ndoses\frac{y_{i.j}^{predicted}-Y_{i,j}^{observed} }{Y_{i,j}^{observed}}^{2}}
+$$
+
+To compare how well each of the sub-models fit the data relative to one another, we optimized over the absolute error relative to the data as this metric has a straightforward interpretation of average proportionate deviation.
+
+$$
+fitmetric=\frac{1}{Ndrugs∗Ndoses}\sumi=0Ndrugs\sumj=0Ndoses|\frac{y_{i.j}^{predicted}−Y_{i,j}^{observed} }{Y_{i,j}^{observed}}|
+$$
 
 In 30 parameter fits that varied all the parameters in our models, the value for RAF concentration was best fit to be 0.033 ± 0.005 μM for SKMEL2 cells (Supplementary file 1). In these fits, we also found that the dimerization equilibrium constant of RAF is monotonically correlated to autoinhibition constant KA creating a non-identifiability problem (Figure 3—figure supplement 1E). Hence, other than Figure 3—figure supplement 1C–E, the model fits were performed with a representative choice of RAF concentration fixed at 0.04 μM and RAF intrinsic equilibrium dimerization dissociation rate fixed at 0.1 μM. These parameters vary with cellular context, and the chosen values are within the range of values observed in the literature (Fujioka et al., 2006; Lavoie et al., 2013; Sadaie et al., 2014).
 
 Mathematica and Python files that allow for the reproduction of both our analytic and numerical analyses respectively are provided as supplementary data files and are made public on GitHub link (https://github.com/GMendiratta/RAF-PA copy archived at Mendiratta, 2023).
 
-## Code availability
+### Code availability
 
 All codes needed to reproduce the work presented in the article are presented in the supplementary code. The codes are also available on GitHub (https://github.com/GMendiratta/RAF-PA).

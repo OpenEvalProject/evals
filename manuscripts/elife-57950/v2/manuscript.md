@@ -47,6 +47,30 @@ Taken together, the data show: (a) autophagic flux varies little within one indi
 
 Published human studies so far have limited their analysis of TCR-induced autophagy to non-specific stimulation in vitro such as anti-CD3/CD28. Here, we took advantage of an existing cohort of healthy human donors that were vaccinated with a candidate HCV vaccine encoding HCV non-structural proteins (NSmut). Healthy volunteers received an adenoviral vector prime vaccination (ChAd3-NSmut or Ad6-NSmut) followed by a heterologous adenoviral boost vaccination (ChAd3-NSmut or Ad6-NSmut) or an MVA-NSmut boost vaccination (Figure 1a and Figure 1—figure supplement 3; Swadling et al., 2016; Barnes et al., 2012).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-v2.jpg)
+
+**Figure 1.:** PBMCs were isolated from blood samples of vaccinated healthy donors. LC3-II was measured in CD8+ cells using flow cytometry after 2 hr treatment with 10 nM bafilomycin A1 (BafA1) or vehicle. Autophagic flux was calculated as LC3-II mean fluorescence intensity (BafA1-Vehicle)/Vehicle. (a) Vaccine regimen for HCV and RSV trials. (b) Representative plots showing BafA1 in light blue and vehicle pink. (c) Quantification in HCV non-specific CD8+ T cells and HCV-specific CD8+ T cells detected by HCV pentamers from 10 vaccinees (includling duplicates) using different HCV vaccine regimens, priming with ChimAd and boosting with MVA or AD6 vectors. Autophagy was measured at the peak of the T cell response post prime vaccination, peak of the T cell response post boost vaccination and at the end of the study. (d) Autophagic flux was measured in CD8+ cells from young donors (N = 12,<65 years) and old donors (N = 21,>65 years) vaccinated with respiratory syncytial virus (RSV) 7 days after last boost, quantification calculated as mentioned above. Data represented as mean ± SEM. (e, f) Correlation of autophagic flux with total response to peptide pools specific T cell IFNγ response to RSV exposure measured by ELISpot in CD8+ cells from old donors (e) and young donors (f), donors as in (d). Linear regression with 95% confidence intervals from old and young donors. The goodness of fit was assessed by R2. The p value of the slope is calculated by F test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–b) Human Jurkat T cell line was cultured for 24 hr and treated with or without Bafilomycin A1 for the last 2 hr. Cells were split into two aliquots, representative flow cytometry-based assay (a), representative western blot for LC3-II and GAPDH for the same sample (b). (c–d) PBMCs from young human donors were cultured with anti-CD3/CD28 for 3 days in the absence/presence of Bafilomycin A1 for the last 2 hr. Cells were split into two aliquots, representative flow cytometry-based assay (c), representative western blot for LC3-II and GAPDH for the same sample (d).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** PBMCs were generated from blood taken at 3 weeks intervals (samples 1, 2, 3) from young human donors and were cultured for 24 hr, in the abence/presence of Bafilomycin A1 for the last 2 hr. Here basal autophagic flux was calculated as LC3-II mean fluorescence intensity (treatment-basal)/basal. Monocytes gated on CD14+ treated with IFNγ or LPS (a), B cells gated on CD19+ treated with anti-CD40L and anti-IgM (b), CD4+ T cells gated on CD3+CD4+ treated with anti-CD3/CD28 (c), CD8+ T cells gated on CD3+ CD8+ treated with anti-CD3/CD28 (d).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** HCV = Hepatitis C virus, ChAd = Chimpanzee Adenoviral Vector, MVA = Modified Ankara Virus vector.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** RSV = respiratory syncitial virus, ChAd = Chimpanzee Adenoviral Vector, MVA = Modified Ankara Virus vector, Unlike for HCV, the adults in the RSV study will have prior immune responses that have been boosted by natural exposure throughout life. In the context of RSV, we still use the term ‘prime’ to mean the first dose of vaccine. Similarly, the term ‘boost’ means the second dose of vaccine and not exposure.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Linear regression with 95% confidence intervals from old and young donors. The goodness of fit was assessed by R2. The p value of the slope is calculated by F test.
+
 To identify HCV-specific CD8+ T cells, PBMCs were co-stained with an MHC class I pentamer (HLA-A*02:01, HCV peptide KLSGLGINAV) and anti-LC3-II (Figure 1b). When measured at the peak magnitude of the T cell response to vaccination (2–4 weeks post Ad, 1 week post MVA) HCV-specific CD8+ T cells show a significant increase in autophagic flux that is not observed in HCV non-specific CD8+ T cells (Figure 1c). In antigen-specific T cells, autophagic flux is highest shortly after vaccination but had declined to levels equivalent to antigen-non-specific T cells cells by the end of the study (week 36 or 52). Together, these data show that antigen exposure induces autophagic flux in the antigen-reactive CD8+ T cell subset in humans in vivo. In previous work, we found that autophagic flux was reduced in CD8+ T cells from 24-month-old mice 12. To test whether this is true in human CD8+ T cells from human individuals, and whether this correlates with vaccine immunogenicity, we measured autophagic flux in vaccinees of various ages that were given an experimental RSV vaccine (Figure 1a and Figure 1—figure supplement 4).
 
 As older adults are particularly susceptible to severe disease from RSV infection, the vaccine was given to two age groups (18–50 years and 60–75 years of age). As expected, the naturally derived population of RSV-specific IFNγ-producing CD8+ T cells in peripheral circulation in response to the infection declines with age (Figure 1—figure supplement 5).
@@ -55,9 +79,21 @@ No MHC class I pentamers were available for RSV to identify antigen-specific T c
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig2-v2.jpg)
 
-**Figure 2.:** + T cell function.(a–c) Splenocytes from control mice (Ctrl: CD4-cre;Atg7+/+) and Atg7 knockout mice (Atg7Δcd4: CD4-cre;Atg7-/-) were cultured with anti-CD3/CD28 for 4 days and IFNγ assessed by ELISA in tissue culture supernatant (a), intracellular IFNγ by flow cytometry (b), intracellular perforin by flow cytometry (c), all gated on CD8+ T cells. (d–i) PBMCs from human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM Hydroxychloroquine (HcQ), 10 µM BSI-0206965 (SbI), 10 µM Resveratrol (Res) and IFNγ assessed by ELISA in tissue culture supernatant (d, g), intracellular IFNγ by flow cytometry (e, h), intracellular perforin by flow cytometry (f, i), all gated on CD8+ cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. Statistics by paired t-test for (d–i).Figure 2—source data 1.+ T cell function.
+**Figure 2.:** (a–c) Splenocytes from control mice (Ctrl: CD4-cre;Atg7+/+) and Atg7 knockout mice (Atg7Δcd4: CD4-cre;Atg7-/-) were cultured with anti-CD3/CD28 for 4 days and IFNγ assessed by ELISA in tissue culture supernatant (a), intracellular IFNγ by flow cytometry (b), intracellular perforin by flow cytometry (c), all gated on CD8+ T cells. (d–i) PBMCs from human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM Hydroxychloroquine (HcQ), 10 µM BSI-0206965 (SbI), 10 µM Resveratrol (Res) and IFNγ assessed by ELISA in tissue culture supernatant (d, g), intracellular IFNγ by flow cytometry (e, h), intracellular perforin by flow cytometry (f, i), all gated on CD8+ cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. Statistics by paired t-test for (d–i).
 
 We have recently shown that treating old but not young mice with the metabolite spermidine improves autophagy levels in B lymphocytes due to an age-related decline of endogenous spermidine (Zhang et al., 2019). Here, we sought to confirm this in human lymphocytes. Thus, we determined spermidine, spermine and putrescine levels in PBMCs by gas chromatography-mass spectrometry (GC-MS), and found an inverse correlation between age and spermidine but not with spermine or putrescine (Figure 3a). We hypothesized that low levels of spermidine are responsible for low levels of autophagy and poor T cell function in PBMCs from old donors. We therefore tested whether supplementation with spermidine recovers T cell autophagy and function. As activation of PBMCs with anti-CD3/CD28 optimally induces autophagy levels on day 4 (Watanabe et al., 2014), we activated PBMCs from old donors in the presence of spermidine for 4 days and tested their autophagic flux and function by flow cytometry. Both autophagic flux and the secretion of IFNγ measured by ELISA was improved significantly in T cells from older vaccinees (Figure 3b and c). Similarly, increased IFNγ can be detected after spermidine treatment by intracellular staining for flow cytometry (Figure 3d). Interestingly, spermidine supplementation also increases the expression of perforin (Figure 3e) but not of Granzyme B (Figure 3f). Moreover, to investigate whether spermidine acts through autophagy to improve CD8+ T cell function, we added spermidine together with pharmacological autophagy inhibitors. Indeed, HcQ or Sbl ablates the rejuvenating effects of spermidine supplementation in old donor cells (Figure 3c–f). In contrast, spermine, another polyamine from the same pathway, which is not significantly reduced with age (Figure 3a) and does not serve as a direct substrate for eIF5A hypusination (Lee and Park, 2000), does not rescue CD8+ T cell function from old donors (Figure 3—figure supplement 1a–c). These data underline the importance of cellular spermidine levels in aged CD8+ T cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig3-v2.jpg)
+
+**Figure 3.:** (a) Spermidine (Spd), spermine (Spm), and putrescine (Put) content of PBMCs collected from healthy donors were measured by GC-MS. Linear regression with 95% confidence intervals. The goodness of fit was assessed by R (Lurie et al., 2020). The p value of the slope is calculated by F test. (b–f) PBMCs from old human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM spermidine alone or with 10 µM Hydroxychloroquine (HcQ), 10 µM SBI-0206965 (SbI), and autophagic flux measured by flow cytometry (b), IFNγ assessed by ELISA in tissue culture supernatant (c), intracellular IFNγ by flow cytometry (d), intracellular perforin by flow cytometry (e), intracellular granzyme B (f), all gated on CD8+ cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. Statistics by paired t-test for (b–f).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** PBMCs from old human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM spermidine or 10 µM spermine and intracellular IFNγ assessed by flow cytometry (a), intracellular perforin by flow cytometry (b), intracellular granzyme B (d), all gated on CD8+ cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. Statistics by paired t-test for (a–c).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** PBMCs from old human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM spermidine and quantified for mitochondrial mass by flow cytometry using MitoTracker Green (MTG) (a) or nonylacridine orange (NAO) (b). Mitochondrial membrane potential was assessed by flow cytometry using TMRM dye (c) and mitochondrial ROS (mtROS) by mitoSOX staining (d). All gated on CD8+ cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. MFI normalized to Old untreated group. Statistics by paired t-test for (a–d).
 
 Polyamine biosynthesis has previously been shown to increase mitochondrial protein synthesis (Madeo et al., 2018; Puleston et al., 2019; Wang et al., 2020). Moreover, autophagy can ensure mitochondrial quality by selective degradation of damaged or dysfunctional mitochondria, a process called mitophagy, which is critical for maintaining cellular function (Palikaras et al., 2018; Vara-Perez et al., 2019). Since autophagy levels decline with age and damaged mitochondria accumulate in aged T cells (Bektas et al., 2019; Callender et al., 2020), we hypothesized that spermidine-induced autophagy may improve mitochondrial function in aged T cells. To test this, we measured mitochondrial function in CD8+ T cells isolated from old donors after spermidine treatment. We indeed show that mitochondrial mass was reduced after spermidine treatment as assessed by MitoTracker Green (MTG) and nonylacridine orange (NAO) staining, two fluorescent probes which have been commonly used to assess mitochondrial mass (Doherty and Perl, 2017; Figure 3—figure supplement 2a and b). The reduction of mitochondrial mass during spermidine treatment could be related to improved clearance of damaged mitochondria by mitophagy or decreased biogenesis. Damaged or dysfunctional mitochondria often show altered membrane potential and increased ROS) production (Puleston et al., 2014); however, we did not observe any changes in these parameters after spermidine treatment (Figure 3—figure supplement 2c and d). Our data suggest that spermidine treatment lowers mitochondrial content, presumably by mitophagy, but does not improve mitochondrial health. Mitochondria are not the only type of autophagic cargo and other cargos need to be investigated to understand exactly how autophagy induction improves T cell function.
 
@@ -65,9 +101,21 @@ Next, we investigated whether endogenous polyamine maintains autophagy levels in
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig4-v2.jpg)
 
-**Figure 4.:** (a–d) PBMCs cells from young human donors (<65 years) were activated with anti-CD3/CD28 for 7 days and treated with spermidine synthesis inhibitor 1 mM DFMO alone or together with 10 µM spermidine (Spd). Autophagic flux (a) was assessed each day and IFNγ (b), Perforin (c), Granzyme B (d) were measured by flow cytometry in CD8+ cells on day 4. (e–f) PBMCs cells from young human donors (<65 years) were cultured with anti-CD3/CD28 for 4 days and streated with 10 µM spermidine. (e) Intracellular IFNγ, (f) intracellular perforin, (g) and intracellular granzyme B were measured in CD8+ cells by flow cytometry. Data represented as mean ± SEM.Figure 4—source data 1.
+**Figure 4.:** (a–d) PBMCs cells from young human donors (<65 years) were activated with anti-CD3/CD28 for 7 days and treated with spermidine synthesis inhibitor 1 mM DFMO alone or together with 10 µM spermidine (Spd). Autophagic flux (a) was assessed each day and IFNγ (b), Perforin (c), Granzyme B (d) were measured by flow cytometry in CD8+ cells on day 4. (e–f) PBMCs cells from young human donors (<65 years) were cultured with anti-CD3/CD28 for 4 days and streated with 10 µM spermidine. (e) Intracellular IFNγ, (f) intracellular perforin, (g) and intracellular granzyme B were measured in CD8+ cells by flow cytometry. Data represented as mean ± SEM.
 
 We previously found that spermidine maintains autophagic flux via hypusination of eIF5A which regulates TFEB expression (Zhang et al., 2019), and we sought to test this pathway in human T cells. Spermidine provides a moiety to the translation factor eIF5A, which in addition to its role in initiation and termination also promotes the translation of polyproline-rich domains, which are difficult to translate (Gutierrez et al., 2013). One such triproline motif-containing protein is TFEB, with mouse TFEB containing one triproline motif while human TFEB contains two. TFEB is the key master transcription factor of autophagosomal and lysosomal gene expression (Napolitano and Ballabio, 2016; Lapierre et al., 2015; Settembre et al., 2011). Here, we addressed whether this pathway operates in human T cells and accounts for the loss of autophagy and T cell function. We first verified in the human lymphocyte line Jurkat that the inhibitor GC7 inhibits the hypusinated/activated form of eIF5A (Figure 5a) and also confirmed that it decreases LC3-II expression in a dose-dependent manner (Figure 5b). GC7 reduces TFEB and hypusinated eIF5A in CD8+ T cells activated for 4 days (Figure 5c). It also diminishes the autophagic flux in activated CD8+ T cells over a time course of 7 days (Figure 5d). We then tested whether spermidine maintains eIF5A hypusination and TFEB levels in CD8+ T cells from young donors by depleting endogenous spermidine with DFMO. While anti-CD3/CD28 increases expression levels of TFEB and eIF5A, a reduction of hypusinated eIF5A and TFEB levels in PBMCs treated with DFMO was observed, which is rescued with spermidine (Figure 5e). As expected, spermidine treatment of PBMCs from young donors demonstrated to have high levels of spermidine does not induce this pathway (Figure 5—figure supplement 1) nor T cell function (Figure 3e–g). Finally, we sought to address whether naturally low endogenous spermidine levels can be rescued in PBMCs from old donors activated with anti-CD3/CD28. Again, we observed that activation induces levels of protein expression of both hypusinated eIF5A and TFEB, and spermidine further improves both eIF5A and TFEB two-fold (Figure 5f).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig5-v2.jpg)
+
+**Figure 5.:** (a–d) Human T cell line Jurkat was cultured for 24 hr with 100 µM GC7, then eIF5A and hypusinated eIF5A were measured by WB (a). Jurkat cell line was stimulated with increasing concentrations of GC7 and cell lysates blotted for LC3B (b). (c–d) PBMCs from young human donors were cultured with anti-CD3/CD28 for 7 days and treated with GC7. The protein levels of TFEB and eIF5A hypusination were measured in CD8+ cells by Western blot on day 4 (c) and autophagic flux was determined as in Figure 1 (d). PBMCs from young human donors were cultured with anti-CD3/CD28 for 4 days and treated with spermidine synthesis inhibitor DFMO alone or together with 10 µM spermidine and the protein levels of TFEB and eIF5A hypusination were measured in CD8+ cells by wWestern blot (e), representative images (left) and quantified (right). PBMCs from old human donors (>65 years) were cultured with anti-CD3/CD28 for 4 days and where indicated treated with 10 µM spermidine and the protein levels of TFEB and eIF5A hypusination were measured in CD8+ cells by wWestern blot (f), representative images (left) and quantified (right). Target band intensity was normalized to eIF5A (for Hyp) or GAPDH (for TFEB). Data represented as mean ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** PBMCs from young human donors were cultured with anti-CD3/CD28 for 4 days and treated with 10 µM spermidine for 4 days. The protein levels of TFEB and eIF5A hypusination were measured in sorted CD8+ cells by wWestern blot, representative images (left) and quantified (right). Target band intensity was normalized to eIF5A (for Hyp) or GAPDH (for TFEB). Data represented as mean ± SEM.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57950/elife-57950-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Splenic T cells from wildtype C57BL/6 mice (WT) or tamoxifen-inducible Tfeb knockout mice (KO: CAG-Cre;Esr1+;Tfeb-/-) were cultured with anti-CD3/CD28 and 4-Hydroxytamoxifen (4-OHT) for 4 days. The protein levels of TFEB and GAPDH were measured in sorted CD8+ cells by wWestern blot (a) representative images (left) and quantified (right). Target band intensity was normalized to GAPDH. Intracellular IFNγ by flow cytometry (b), intracellular perforin by flow cytometry (c), intracellular granzyme B (d). All cells were gated on CD8+ T cells. Data represented as mean ± SEM, MFI = mean fluorescence intensity. Statistics by unpaired t-test.
 
 To investigate if TFEB is required for T cell function, we knocked out Tfeb in cultured mouse T cells ex vivo (Figure 5—figure supplement 2a). Interestingly, both intracellular IFNγ and perforin expression were significantly decreased in Tfeb KO CD8+ T cells upon stimulation (Figure 5—figure supplement 2b and c). Moreover, Tfeb KO CD8+ T cells failed to upregulate IFNγ and perforin in the presence of spermidine (Figure 5—figure supplement 2b and c). Analogous to previous observation, loss of TFEB had no impact on granzyme B expression (Figure 5—figure supplement 2d). Taken together, these data suggest that TFEB itself is essential for T cell function and that spermidine was unable to improve T cell function when TFEB was knocked out.
 
@@ -89,56 +137,472 @@ In conclusion, we validated a novel anti-immune senescence pathway in humans wit
 
 ## Materials and methods
 
-## Human samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Atg7flox</td>
+      <td>PMID:15866887</td>
+      <td>MGI:3587769</td>
+      <td>Dr. Masaaki Komatsu (Juntendo University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>TFEBflox</td>
+      <td>PMID:23604321</td>
+      <td></td>
+      <td>Prof. Andrea Ballabio (Telethon Institute of Genetics and Medicine (TIGEM)).</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Jurkat E6.1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GAPDH</td>
+      <td>Millipore</td>
+      <td>MAB374, RRID:AB_2107445</td>
+      <td>WB (1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-LC3</td>
+      <td>Sigma</td>
+      <td>L8918, RRID:AB_1079382</td>
+      <td>WB (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-eIFA5</td>
+      <td>BD Biosciences</td>
+      <td>611976, RRID:AB_399397</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-hypusine</td>
+      <td>Millipore</td>
+      <td>ABS1064, RRID:AB_2631138</td>
+      <td>WB (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TFEB</td>
+      <td>Bethyl</td>
+      <td>A303-673A, RID:AB_11204751</td>
+      <td>WB (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Actin</td>
+      <td>Cell Signaling</td>
+      <td>3700, RRID:AB_2242334</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Donkey Anti-Rabbit IgG (H+L)</td>
+      <td>LI-COR</td>
+      <td>926–32213, RRID:AB_621848</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD Donkey Anti-Mouse IgG (H+L)</td>
+      <td>LI-COR</td>
+      <td>926–68022, RRID:AB_10715072</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-human CD14</td>
+      <td>BioLegend</td>
+      <td>301834, Clone: M5E2</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human Granzyme B</td>
+      <td>eBioscience</td>
+      <td>12-8899-41, Clone: GB11</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 anti-human CD8a</td>
+      <td>BioLegend</td>
+      <td>344712, Clone: SK1</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy5 anti-human CD19</td>
+      <td>BioLegend</td>
+      <td>302210, Clone:HIB19</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV711anti-human CD19</td>
+      <td>BioLegend</td>
+      <td>302245, Clone:HIB19</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD3</td>
+      <td>BioLegend</td>
+      <td>300312, Clone:HIT3a</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human Perforin</td>
+      <td>BioLegend</td>
+      <td>353311, Clone:B-D48</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD4</td>
+      <td>BioLegend</td>
+      <td>317416, Clone:OKT4</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-human IFNγ</td>
+      <td>BioLegend</td>
+      <td>506515, Clone:B27</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 anti-mouse CD8a Antibody</td>
+      <td>BioLegend</td>
+      <td>100722, RRID:AB_312761</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV605 anti-mouse CD4 Antibody</td>
+      <td>BioLegend</td>
+      <td>100451, Clone: GK1.5</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-mouse IFNγ</td>
+      <td>BioLegend</td>
+      <td>505823, Clone: XMG1.2</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse Perforin</td>
+      <td>BioLegend</td>
+      <td>154303, Clone: S16009A</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse Granzyme B</td>
+      <td>BioLegend</td>
+      <td>372207, Clone: QA16A02</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD19</td>
+      <td>BioLegend</td>
+      <td>302212, RRID:AB_314242</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 anti-mouse CD8a</td>
+      <td>BioLegend</td>
+      <td>100730, RRID:AB_493703</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-labeled MHC class I pentamer (HLA-A*02:01, HCV peptide KLSGLGINAV)</td>
+      <td>ProImmune</td>
+      <td>(HLA-A*02:01, HCV peptide KLSGLGINAV)</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FlowCellect Autophagy LC3 Antibody-based Detection Kit</td>
+      <td>Merck Millipore</td>
+      <td>FCCH100171</td>
+      <td>FACS (1:20)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Fixable Near-IR Dead Cell Stain Kit</td>
+      <td>Invitrogen ThermoFisher</td>
+      <td>L10119</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Fixable Aqua Dead Cell Stain Kit</td>
+      <td>Invitrogen ThermoFisher</td>
+      <td>L34957</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet Cell Proliferation Kit</td>
+      <td>Invitrogen,ThermoFisher</td>
+      <td>C34557</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoTracker Green</td>
+      <td>Invitrogen,ThermoFisher</td>
+      <td>M7514</td>
+      <td>FACS (150 nM)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoSox</td>
+      <td>Invitrogen,ThermoFisher</td>
+      <td>M36008</td>
+      <td>FACS (5 uM)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD3/CD28 activation Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>11161D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IFN-γ ELISpotPLUS kit (ALP)</td>
+      <td>Mabtech</td>
+      <td>3420-4APT-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IFNγ ELISA Kit</td>
+      <td>Life Technologies Ltd</td>
+      <td>88-7316-22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human CD8+ T Cell Isolation Kit</td>
+      <td>Stemcell</td>
+      <td>17953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Assay</td>
+      <td>Thermo Fisher</td>
+      <td>23227</td>
+      <td>100 μl/sample</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spermidine</td>
+      <td>Cayman Chemical</td>
+      <td>14918</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spermine</td>
+      <td>Cayman Chemical</td>
+      <td>18041</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxychloroquine Sulfate</td>
+      <td>Stratech Scientific Ltd</td>
+      <td>B4874-APE-10mM</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin A1</td>
+      <td>Cayman Chemical</td>
+      <td>11038</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Resveratrol</td>
+      <td>Stratech Scientific Ltd</td>
+      <td>A4182-APE</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSI-0206965</td>
+      <td>Stratech Scientific Ltd</td>
+      <td>A8715-APE</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AICR</td>
+      <td>Stratech Scientific Ltd</td>
+      <td>A8184-APE</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAO</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A1372</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRMR</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>T668</td>
+      <td>FACS (100 nM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Difluoromethylornithine (DFMO)</td>
+      <td>Enzo Life Sciences</td>
+      <td>ALX-270–283 M010</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GC7</td>
+      <td>Millipore</td>
+      <td>259545–10 MG</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma</td>
+      <td>H7904</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>Santa Cruz</td>
+      <td>sc-3535</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aanti-IgM</td>
+      <td>Jackson Immuno Research</td>
+      <td>109-005-043</td>
+      <td>5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aanti-CD40L</td>
+      <td>Enzo Life science</td>
+      <td>ALX-522–015 C010</td>
+      <td>100 ng/ml,</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IFNγ</td>
+      <td>Enzo Life science</td>
+      <td>ENZ-PRT141-0100</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human samples
 
 Human peripheral blood mononuclear cells (PBMCs) were obtained under the ethics reference NRES Berkshire 13/SC/0023, from phase I clinical trials of novel viral-vectored vaccines for hepatitis-C virus (HCV; NCT0100407 and NCT01296451) or respiratory syncytial virus (RSV), described in more detail elsewhere (Swadling et al., 2016; Barnes et al., 2012; Green et al., 2015a; Green et al., 2015b; Green et al., 2019). Volunteers were self-selected adults who provided written informed consent and who were carefully screened for being healthy before vaccination. The vaccine schedules are described in Diagrams (Figure 1—figure supplements 3 and 4). Blood samples were collected in heparinized tubes for assays that required PBMCs. PBMCs were isolated within 6 hr of sample collection. An aliquot of PBMCs was immediately used for fresh ELISpot assays and the remainder cryopreserved in RecoveryTM Cell Freezing Medium. Serum samples were obtained by centrifugation of whole blood collected in clotted tubes, and then cryopreserved.
 
-## Control PBMCs
+### Control PBMCs
 
 Control PDBMCs were isolated from blood or blood cones of healthy donors using Ficoll-Paque density gradient separation. All volunteers provided written informed consent. The study was approved by the Local Ethics Committee Oxford and Birmingham. Freshly isolated PBMCs were cultured directly or were frozen in 90% FBS and 10% DMSO in liquid nitrogen. Fresh or thawed PBMCs were cultured with RPMI 1640, 10% FCS, 2 mM L-Glutamine, 100 U/mL Penicillin (Invitrogen).
 
-## ELISpot assay
+### ELISpot assay
 
 Ex vivo IFNγ ELISpot assays were performed according to manufacturers’ instructions (Mabtech) on freshly isolated PBMCs plated in triplicates at 2 × 105 PBMCs per well. In brief, peptide pools consisted of mainly 15-mer sequences with 11 amino acid overlaps and covering the sequence of proteins F, N, and M2- 1. Peptides were dissolved in 100% DMSO and arranged in four pools. DMSO (the peptide diluent) and Concanavalin A (ConA) were used as negative and positive controls, respectively. The mean + 4 StDev of the DMSO response from all samples identified a cut off whereby individual samples with background DMSO values ≥ 50 spot forming cells per million PBMCs were excluded from analysis. Calculation of triplicate well variance was performed as described previously (Green et al., 2019).
 
-## Human T cell assays
+### Human T cell assays
 
 The mean age of young donors was 40.7 ± 11.3 years and the mean age of old donors was 77.6 ± 6.6. PBMCs were activated with either soluble anti-CD3 (1 μg/mL, Jackson Immuno Research) and anti-CD28 (1 μg/mL, Jackson Immuno Research) with or without 10 μM spermidine, 10 μM spermine or 1 mM difluoromethylornithine (DFMO, Enzo Life Sciences) or 10 µM GC7 (or as indicated, Millipore), 10 µM hydroxychloroquine (Stratech Scientific Ltd), 10 µM SBI-0206965 (Stratech Scientific Ltd) 10 µM Resveratrol (Stratech Scientific Ltd) for 4 days. After MACS sorting of CD8+ T cell using a negative selection kit (CD8+ T Cell Isolation Kit II, human, Miltenyi Biotec), cells were lysed for western blotting or stained for Autophagy flux assay as described below. IFNγ release in culture supernatants was measured by heterologous two-site sandwich ELISA, according to the manufacturer’s protocol (Invitrogen).
 
-## Cell line
+### Cell line
 
 Human Jurkat T cell line was cultured with increasing concentrations of GC7 (10 µM, 30 µM, 100 µM, Millipore) for 24 hr and then treated with or without Bafilomycin A1 for the last 2 hr. The cell line was mycoplasma negative.
 
-## Mice T cell assays
+### Mice T cell assays
 
 Splenocytes from: CD4-cre;Atg7-/- (Atg7Δcd4) or CD4-cre;Atg7+/+ mice were cultured with anti-CD3/CD28 for 4 days. For 4-Hydroxytamoxifen (4-OHT) 4-OHT-inducible Tfeb knockout splenic T cells (CAG-Cre/Esr1+,Tfebf/f), cells were stimulated were anti-CD3/CD28 and 100 nM 4-Hydroxytamoxifen (4-OHT) for 4 days. Animal experiments were approved by the local ethical review committee and performed under UK project licenses PPL 30/3388.
 
-## Autophagy flux assay for flow cytometry
+### Autophagy flux assay for flow cytometry
 
 PBMCs from healthy donors, activate for T cells with CD3/CD28 beads (Dynabeads Thermo Fisher) (1:1), for B cells with anti-IgM (5 µg/mL, Jackson Immuno Research) and CD40L (100 ng/mL, Enzo Life science) and for monocytes activated with IFNγ (20 ng/mL, Enzo Life science) and/or LPS (10 µg/mL, Santa Cruz) (all 24 hr except for T cells which were stimulated overnight). Autophagy levels were measured after 2 hr treatment with bafilomycin A1 (10 nM BafA1) or vehicle. We adapted the FlowCellect Autophagy LC3 antibody-based assay kit (FCCH100171, Millipore) as follows: In brief, cells were stained with surface markers (as above) and washed with Assay Buffer in 96 well U bottom plates. 0.05% Saponin was added to each well and spun immediately, followed by anti-LC3 (FITC) at 1:20 in Assay Buffer, (30–50 µL/ well) at 4°C for 30 min, and washed once with 150 µL Assay Buffer. Stained cells were fixed with 2% PFA before FACS analysis. Autophagic flux was calculated as LC3-II mean fluorescence intensity of (BafA1-Vehicle)/Vehicle.
 
-## Surface staining for flow cytometry
+### Surface staining for flow cytometry
 
 For CellTrace staining, CellTrace Violet (C34557, Thermo Fisher) was used according to the manufacturer’s protocol. Cells were transferred to a round bottom 96 well plate and centrifuged (300xg, 5 min). The pellet was resuspended in PBS containing the viability dye Live/Dead (Life Technologies) or fixable Zombie Aqua Live/Dead (423102, Biolegend) for 10 min in the dark at room temperature (RT) to exclude dead cells during analysis. After washing with PBS/5% FCS, cells were resuspended in PBS/2% FCS/5 mM EDTA (FACS buffer) containing a cocktail of antibodies relevant to the desired cell surface markers. Fc block was typically added to the antibody mix to minimize non-specific staining. Surface antibody staining was performed at 4°C for 20 mins in the dark. A list of all surface antibodies utilized and their working concentrations are in Key resources table. Following incubation cells were washed with FACS buffer and immediately analyzed on a four-laser LSR Fortessa X-20 flow cytometer. Acquired data were analyzed using FlowJo 10.2.
 
 Mitochondrial staining was performed after Live/Dead and surface marker staining by incubating cells at 37°C for 15 min with 5 µM MitoSOX red, 37°C for 25 min with 150 nM MitoTracker Green, 37°C for 25 min with 100 nM nonylacridine orange (NAO) or at 37°C for 15 min with 100 nM tetramethylrhodamine methyl ester (TMRM) (all from Thermo Fisher Scientific).
 
-## Intracellular staining for flow cytometry
+### Intracellular staining for flow cytometry
 
 For intracellular staining, PBMCs were stimulated in R10 with anti-CD3 (1 μg/ml, Jackson Immuno Research) and anti-CD28 (1 μg/mL, Jackson Immuno Research) with or without 10 μM spermidine for 4 days. On day 4, cells were re-stimulated with the same concentrations of anti-CD3/CD28 for 6 hr at 37°C in the presence of 1 μg/mL brefeldin-A (Sigma-Aldrich). As a control, cells were left unstimulated. Following surface marker staining as described above, cells were fixed with 100 μL Fixation buffer (eBioscience) for 20 min at RT in the dark. Next, cells were permeabilized with 100 μL of 1x Permeabilization buffer (eBioscience) for 15 min in the dark at RT. Then, cells were resuspended in the intracellular antibody mix (anti-IFN-γ, anti-Granzyme B, anti-Perforin) and incubated for 30 min in the dark at RT. After being washed twice with Permeabilization buffer the cells were resuspended in 200 μL of FACS buffer for analysis.
 
-## MHC class I pentamer staining to identify antigen-specific T cells
+### MHC class I pentamer staining to identify antigen-specific T cells
 
 An HCV-specific HLA-A*02-restricted pentamer, peptide sequence KLSGLGINAV (Proimmune) was used to identify HCV-specific CD8+ T cells ex vivo. PBMCs were washed in PBS and were stained with pentamers at room temperature (20 min) in PBS, washed twice in PBS before further mAb staining as described above. During analysis, stringent gating criteria were applied with doublet and dead cell exclusion to minimize nonspecific binding contamination.
 
-## Western blot
+### Western blot
 
 Cells in suspension were washed with PBS and lysed using NP-40 lysis buffer containing proteinase inhibitors (Sigma) and phosphatase inhibitors (Sigma) on ice. After spinning down the debris, protein concentration in the supernatant was quantified by BCA Assay (23227, Thermo Fisher). Reducing Laemmli Sample Buffer was then added to the supernatant and heated at 100°C for 5 min. 5–20 µg protein was loaded for SDS-PAGE analysis. NuPAGE Novex 4–12% Bis-Tris gradient gel (Thermo Fisher) with MES running buffer (Thermo Fisher) was used. Proteins were transferred to a PVDF membrane (IPFL00010, Millipore) and blocked with 5% skimmed milk-TBST. Membranes were incubated with primary antibodies dissolved in 1% milk overnight and secondary antibodies dissolved in 1% milk with 0.01% SDS for imaging using the Odyssey CLx Imaging System. Data were analyzed using Image Studio Lite.
 
-## Spermidine measurement in cell lysates by GC-MS
+### Spermidine measurement in cell lysates by GC-MS
 
 This protocol was used as published previously (Yu et al., 2017). Briefly, cells were washed with PBS and the pellet resuspended in lysis buffer (80% methanol + 5% Trifluoroacetic acid) spiked with 2.5 µM 1,7-diaminoheptane (Sigma). The cell suspension, together with acid-washed glass beads (G8772, Sigma), was transferred to a bead beater tube and homogenized in a bead beater (Precellys 24, Bertin Technologies) for four cycles (6500 Hz, 45 s) with 1 min of ice incubation between each cycle. The homogenized samples were centrifuged at 13,000 g for 20 min at 4°C. The supernatant was collected and dried overnight. For chemical derivatization, 200 µL trifluoroacetic anhydride was added to the dried pellet and incubated at 60°C for 1 hr, shaking at 1200 rpm. The derivatization product was dried, re-suspended in 30 µL isopropanol and transferred to glass loading-vials. The samples were analyzed using a GCxGC-MS system as described (Yu et al., 2017). The following parameters were used for quantification of the 1D-GC-qMS data: Slope: 1000/min, width: 0.04 s, drift 0/min and T. DBL: 1000 min without any smoothing methods used.
 
-## Statistical analyses
+### Statistical analyses
 
 Prism software (GraphPad) was used for statistical analyses. Data are represented as mean ± SEM. All comparative statistics were post-hoc analyses. Paired or unpaired two-tailed Student’s t-test was used for comparisons between two normally distributed data sets with equal variances. Linear regression with a 95% confidence interval was used to assess the relationships between age and the expression of target proteins or spermidine levels, in which R (Lurie et al., 2020) was used to assess the goodness of fit and the p value calculated from F test was used to assess if the slope was significantly non-zero. p Values were used to quantify the statistical significance of the null hypothesis testing. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001, ns, not significant.

@@ -21,24 +21,24 @@
 
 ### Affiliations
 
-1. https://ror.org/03m96p165 Laboratory of Animal Behaviour and Conservation, College of Biology and the Environment, Nanjing Forestry University Nanjing China
-2. https://ror.org/053fp5c05 Department of Life Sciences and Division of EcoScience, Ewha Womans University Seoul Republic of Korea
-3. https://ror.org/05qrfxd25 Institute of Cytology, Russian Academy of Sciences St. Petersburg Russian Federation
-4. https://ror.org/05qrfxd25 Federal Scientific Center of the East Asia Terrestrial Biodiversity Far Eastern Branch of Russian Academy of Sciences Vladivostok Russian Federation
-5. https://ror.org/03dbr7087 Department of Ecology and Evolutionary Biology, University of Toronto Toronto Canada
-6. https://ror.org/03m96p165 Herpetology and Applied Conservation Laboratory, College of Biology and the Environment, Nanjing Forestry University Nanjing China
-7. https://ror.org/043pwc612 CIBIO/InBIO (Centro de Investigação em Biodiversidade e Recursos Genéticos), Universidade do Porto Vairão Portugal
-8. https://ror.org/02kpeqv85 Graduate School of Human and Environmental Studies, Kyoto University Kyoto Japan
-9. https://ror.org/00qg0kr10 Tokyo University of Agriculture and Technology Tokyo Japan
-10. https://ror.org/05vn3ca78 Department of Life Sciences and Research Center for Global Change Biology, National Chung Hsing University Taichung Taiwan
-11. https://ror.org/04shepe48 Department of Life Science, Chinese Culture University Taipei Taiwan
-12. https://ror.org/048tbm396 Department of Life Sciences and Systems Biology, University of Turin Turin Italy
+1. Laboratory of Animal Behaviour and Conservation, College of Biology and the Environment, Nanjing Forestry University Nanjing China ([ROR:03m96p165](https://ror.org/03m96p165))
+2. Department of Life Sciences and Division of EcoScience, Ewha Womans University Seoul Republic of Korea ([ROR:053fp5c05](https://ror.org/053fp5c05))
+3. Institute of Cytology, Russian Academy of Sciences St. Petersburg Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
+4. Federal Scientific Center of the East Asia Terrestrial Biodiversity Far Eastern Branch of Russian Academy of Sciences Vladivostok Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
+5. Department of Ecology and Evolutionary Biology, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+6. Herpetology and Applied Conservation Laboratory, College of Biology and the Environment, Nanjing Forestry University Nanjing China ([ROR:03m96p165](https://ror.org/03m96p165))
+7. CIBIO/InBIO (Centro de Investigação em Biodiversidade e Recursos Genéticos), Universidade do Porto Vairão Portugal ([ROR:043pwc612](https://ror.org/043pwc612))
+8. Graduate School of Human and Environmental Studies, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+9. Tokyo University of Agriculture and Technology Tokyo Japan ([ROR:00qg0kr10](https://ror.org/00qg0kr10))
+10. Department of Life Sciences and Research Center for Global Change Biology, National Chung Hsing University Taichung Taiwan ([ROR:05vn3ca78](https://ror.org/05vn3ca78))
+11. Department of Life Science, Chinese Culture University Taipei Taiwan ([ROR:04shepe48](https://ror.org/04shepe48))
+12. Department of Life Sciences and Systems Biology, University of Turin Turin Italy ([ROR:048tbm396](https://ror.org/048tbm396))
 
 † Corresponding author
 
 ## Abstract
 
-Taxa with vast distribution ranges often display unresolved phylogeographic structures and unclear taxonomic boundaries resulting in hidden diversity. This hypothesis-driven study reveals the evolutionary history of Bufonidae, covering the phylogeographic patterns found in Holarctic bufonids from the West Gondwana to the phylogenetic taxonomy of Asiatic true toads in the Eastern Palearctic. We used an integrative approach relying on fossilized birth-death calibrations, population dynamics, gene-flow, species distribution, and species delimitation modeling to resolve the biogeography of the clade and highlight cryptic lineages. We verified the near-simultaneous Miocene radiations within Western and Eastern Palearctic Bufo , c. 14.49–10.00 Mya, temporally matching with the maximum dust outflows in Central Asian deserts. Contrary to earlier studies, we demonstrated that the combined impacts of long dispersal and ice-age refugia equally contributed to the current genetic structure of Bufo in East Asia. Our findings reveal a climate-driven adaptation in septentrional Eastern Asian Bufo , explaining its range shifts toward northern latitudes. We resolve species boundaries within the Eastern Palearctic Bufo , and redefine the taxonomic and conservation units of the northeastern species: B. sachalinensis and its subspecies.
+Taxa with vast distribution ranges often display unresolved phylogeographic structures and unclear taxonomic boundaries resulting in hidden diversity. This hypothesis-driven study reveals the evolutionary history of Bufonidae, covering the phylogeographic patterns found in Holarctic bufonids from the West Gondwana to the phylogenetic taxonomy of Asiatic true toads in the Eastern Palearctic. We used an integrative approach relying on fossilized birth-death calibrations, population dynamics, gene-flow, species distribution, and species delimitation modeling to resolve the biogeography of the clade and highlight cryptic lineages. We verified the near-simultaneous Miocene radiations within Western and Eastern Palearctic Bufo, c. 14.49–10.00 Mya, temporally matching with the maximum dust outflows in Central Asian deserts. Contrary to earlier studies, we demonstrated that the combined impacts of long dispersal and ice-age refugia equally contributed to the current genetic structure of Bufo in East Asia. Our findings reveal a climate-driven adaptation in septentrional Eastern Asian Bufo, explaining its range shifts toward northern latitudes. We resolve species boundaries within the Eastern Palearctic Bufo, and redefine the taxonomic and conservation units of the northeastern species: B. sachalinensis and its subspecies.
 
 ## Introduction
 
@@ -60,91 +60,437 @@ The issues related to the taxonomic groupings in the B. gargarizans complex are 
 
 The spatiotemporal origin of the East Asian Bufo lineage is uncertain and characterized by a limited understanding of the evolutionary processes involved. In addition, species delimitations present a serious taxonomic discrepancy within the B. gargarizans complex, resulting in repeated calls for taxonomic clarification at a fine scale. This manuscript is structured into two sections, with different taxonomic and geographic scales (Figure 1). The first section focuses on resolving the biogeography of Holarctic bufonid species, following the Bufonidae lineage since the breakdown of the West Gondwana. We use a combination of fossilized birth-death calibrations and multi-locus coalescent-based species tree methods to estimate the most probable time and routes of colonization of bufonids into the Palearctic (Figure 1). In the second section, we elucidate the biogeographic pattern of the East Palearctic Bufo and resolve the taxonomy of the B. gargarizans complex. Here, we evaluate the best species tree topology by testing five alternative hypotheses to recover the taxonomic relationship between Asian species of Bufo. We rely on an intensive and widespread sampling, integrated biogeographical analyses, niche differentiation between divergent clades, and model-based species delimitation approach to resolve the taxonomic boundaries of the B. gargarizans species complex, including the recently expanded septentrional East Asian clade (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig1-v2.jpg)
+
+**Figure 1.:** (A) Dating of the species tree of Holarctic bufonids, refined using the fossilized birth-death method. Here, the box plots represent the age range of fossils for each focal species. (B) Hypothesized dispersal pathways of genus Bufo in the Palearctic based on the Gondwana origin and central Asia desertification hypotheses. The map displays the range of the bufonids genera used in the dating analyses. (C) Molecular dating estimates and ancestral range reconstruction addressing three phylogeographic hypotheses derived from Macey et al., 1998, Fu et al., 2005 and Borzée et al., 2017 to elucidate the evolutionary history of East Asian Bufo. (D) Retracing the hidden diversity in the Bufo gargarizans species complex in East Asia and determining taxonomic and conservation units.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The map indicates the location of the type locality for each described Bufo taxa in East Asia since the 18th century. (B) The timeline of taxonomic revisions recorded in the literature using various approaches on East Asian Bufo since 1980.
+
 ## Results
 
 Our study addresses biogeographic scenarios explained in two different sections: (1) the biogeography of Holarctic bufonids and (2) the biogeography of Eastern Palearctic Bufo and the taxonomic revision of the species complexes.
 
-## Biogeography of Holarctic bufonids
+### Biogeography of Holarctic bufonids
 
 The goal was to refine the time estimates of the split between clades of Holarctic bufonids, in coherence with fossil data (Figure 2, Figure 2—figure supplement 1 and Supplementary file 1B).
 
-## Fossilized birth death dating
+![Figure 2.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fossilized birth-death species trees for 39 Holarctic bufonids characterized from the unlinked multi-locus CR-16S-ND2-CXCR4-POMC-RAG1-Rho with an abundance of fossils representative of the six genera of Bufonidae used as source of primary calibrations. The captions (i) and (ii) on the tree are geographically explained in (B), representing the hypothesized dispersal pathways of Holarctic bufonids and Bufo spp. in the Palearctic. Similarly, the letter-coded branches of the trees are marked on the map. The map displays the range of bufonids genera with relevant natural features in Central Asia. Black, red, and yellow arrows in dated trees and maps indicate the dispersal pathways predicted for neotropic bufonids, Bufotes, and Bufo in the Palearctic, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The record of fossil distribution is retrieved from the open database FosFARbase (Böhme and Ilg, 2003) and the distribution of bufonids fossil embedded with the global paleomap of Early Miocene to Pleistocene modeled by Cao et al., 2019, (Matthews et al., 2016) and Ray et al., 2001 for molecular dating using fossilized birth-death method. The species with fossil records in the bar chart are represented by different colors and match with the color of fossils site in the maps.
+
+#### Fossilized birth death dating
 
 The dated species tree using fossilized birth-death showed that following the split of West Gondwana, bufonids first diverged into American clades and African-Eurasian clades. The subsequent splits of genera of both ancestors followed a contemporary timeline, with the first divergence dating from the Early Oligocene to Middle Miocene (Figure 2).
 
 In Eurasia, radiations between the Oligocene and Early Miocene resulted in the segregation of the clades of North African origin c. 26.08 Mya (95% highest posterior density [HPD 95%]/Mya for all dating estimates in Table 1; Figure 2). The emergence of the main extant clade was dated from the Early to Middle Miocene. The monophyletic Bufotes emerged c. 21.72 Mya (Table 1; Figure 2) with the North African-Eurasian group diverging from the Western Himalayan Bufotes c. 19.81 Mya (Table 1; Figure 2). Later, the Iberian Epidalea and its sister genus the Eurasian Strauchbufo emerged c. 10.88 Mya (Table 1; Figure 2). The Palearctic Bufo split into two clades, the Western and the Eastern Palearctic Bufo between the Early and the Middle Miocene c. 14.49 Mya (Table 1; Figure 2). The credible interval showed a considerable overlap in the timing of radiations within Bufo during the Middle Miocene (10.00–15.00 Mya), indicated by the isolation of the European Bufo clade c. 11.03 Mya (Table 1; Figure 2), and a subsequent emergence of the Asian Bufo clade c. 9.99 Mya (Table 1; Figure 2).
 
+**Table 1.**
+ Timeframe estimate from the coalescent species tree for Holarctic bufonids following the Gondwanan origin hypothesis.The key nodes represent the speciation events based on six internal calibrations of the minimum age range obtained from 102 fossils records under a log-normal distribution as priors. Dating analyses of the bufonids species tree shows the comparable datation estimated under a relaxed clock with the fossilized birth-death and Yule speciation models. The label for each clade is matched with the species tree in Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Clade</th>
+      <th rowspan="2">Key nodes</th>
+      <th colspan="2">Dating analysis methods</th>
+    </tr>
+    <tr>
+      <th>Fossilized birth-death (median [HPD 95%]/Mya)</th>
+      <th>Yule (median [HPD 95%]/Mya)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>North Africa-Eurasia origin</td>
+      <td>26.08 [22.54‒32.51]</td>
+      <td>25.88 [22.55‒31.81]</td>
+    </tr>
+    <tr>
+      <td>ii</td>
+      <td>Neotropical origin</td>
+      <td>24.25 [13.21–39.07]</td>
+      <td>23.40 [13.10–35.61]</td>
+    </tr>
+    <tr>
+      <td>a (1)</td>
+      <td>Emergence of Bufotes (West Himalaya)</td>
+      <td>21.72 [18.90–25.25]</td>
+      <td>21.67 [19.63–27.68]</td>
+    </tr>
+    <tr>
+      <td>a (2)</td>
+      <td>Emergence of Bufotes (North Africa-Eurasia)</td>
+      <td>20.42 [18.10‒23.28]</td>
+      <td>20.37 [18.79–25.02]</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Emergence of Palearctic Bufo</td>
+      <td>14.49 [9.76‒22.70]</td>
+      <td>14.52 [9.83‒22.58]</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>Radiation of western Palearctic Bufo</td>
+      <td>11.03 [9.14‒15.42]</td>
+      <td>11.04 [9.12–15.37]</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Emergence and early radiation of eastern Palearctic Bufo</td>
+      <td>9.99 [4.66‒16.57]</td>
+      <td>10.11 [4.58–6.34]</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>Emergence of Epidalea and Strauchbufo (Eurasia)</td>
+      <td>10.88 [7.11‒17.78]</td>
+      <td>10.87 [7.03‒17.51]</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>Emergence of Rhinella (South America)</td>
+      <td>14.16 [11.16‒22.24]</td>
+      <td>14.00 [11.15–21.54]</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>Emergence of Incilius (Central America)</td>
+      <td>11.90 [7.15‒22.40]</td>
+      <td>11.80 [7.16–21.52]</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>Emergence of Anaxyrus (Nearctic)</td>
+      <td>9.56 [6.16‒18.14]</td>
+      <td>9.53 [6.13–17.58]</td>
+    </tr>
+  </tbody>
+</table>
+
 The earliest split among the American bufonids segregated the Neotropical clades predominantly during the Early Miocene c. 24.25 Mya (Table 1; Figure 2). The most basal divergence was Rhinella in the southern continent c. 14.16 Mya (Table 1; Figure 2), from which the younger Central American Incilius c. 11.90 Mya (Table 1; Figure 2), and Nearctic Anaxyrus may have diverged c. 9.56 Mya (Table 1; Figure 2). The alternative calibrated time tree analysis under a Yule speciation model resulted in a topology and time estimates that generally corresponded to that of the fossilized birth-death analysis (Table 1).
 
-## Evolutionary diversification of Eastern Palearctic Bufo
+### Evolutionary diversification of Eastern Palearctic Bufo
 
 Here, we focused on reconstructing the historical biogeography of Eastern Palearctic Bufo and resolving the taxonomic boundaries of the species complex within the genus. The vast distribution and taxonomic inconsistencies in Eastern Palearctic Bufo warrant a careful examination of the hypotheses proposed by previous studies.
 
-## Optimum species tree topology for Palearctic Bufo
+#### Optimum species tree topology for Palearctic Bufo
 
 The vast distribution range of the Bufo genus in the Eastern Palearctic resulted in cryptic diversity. Hence, we aimed to resolve the topology of Palearctic Bufo lineages (N species =26) following five hypotheses (Figure 3 and Figure 3—figure supplement 1). We derived these hypotheses from ranges, life histories, geological events, and the likelihood of single or multiple origins. Here, our focal taxa included the Palearctic Bufo species and three group members of the ‘Torrentophryne’ genus, a clade paraphyletic to Bufo, to elucidate the validity of the genus and determine its relationship with Asian Bufo (Figure 3 and Figure 3—figure supplement 1). The nested sampling analyses supported an optimum tree topology for the Eastern Palearctic Bufo linked to Miocene geological events with the highest Marginal Likelihood estimation (MLE; Model C: Supplementary file 1C, Figure 3), followed in likelihood by the topology of a single origin for the East Asian Bufo clade (Model E: Supplementary file 1C, Figure 3). Whereas, the topologies structured by life history and morphological trait recovered the lowest likelihoods, and did not favor the monophyly of ‘Torrentophryne’ (Model B: Supplementary file 1C, Figure 3). The best-fit topology of Model C supported three well-resolved monophyletic clades, a Bufotes (PP: 1.0; Figure 3), a Western Palearctic Bufo clade (PP: 0.90; Figure 3), and an Eastern Palearctic Bufo clade (PP: 1.0; Figure 3). Despite weakly recovering the East Asian mainland Bufo clade, the species tree strongly supported the distinction of the Japanese Bufo subclades (PP: 1.0; Figure 3). The alternative topologies from the four suboptimum models (Models A, B, D, and E) were qualified by lower MLE values than that of Model C (details in Supplementary file 1C and Figure 3—figure supplement 1).
 
-## Phylogeny and population structure of East Asian Bufo
+![Figure 3.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig3-v2.jpg)
+
+**Figure 3.:** (A) Geographic range of the Palearctic Bufo genus and related ‘Torrentophryne’ species included in the reconstruction of the species tree. (B) Ranking of the topology models for the species tree examined using nested sampling analyses. (C) Best-supported topology on dated species trees reconstructed from the unlinked multilocus data (CR-16S-ND2-CXCR4-POMC-RAG1-Rho) under a relaxed clock and Yule prior. Each model tree (models A–E) represents the hypothesis tested for the tree topology with the rank of its likelihood based on the marginal likelihood estimation (MLE) values. The geology driven factor (model C) was selected to be the most accurate scenario for the species tree topology due to the highest value of MLE.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Each model is tested with nested sampling analyses and support is based on the MLE values. (A) Rank of support for tree topologies tested on different hypotheses. (B) The four suboptimal models here have lower MLE values than the best-supported model C in Figure 3. MLE. marginal likelihood estimation.
+
+#### Phylogeny and population structure of East Asian Bufo
 
 We first inferred the haplotype network of both mtDNA and nuclear data using the median-joining method. The haplotype of the concatenated mtDNA resulted in 98 haplotypes (see genetic diversity and neutrality tests in Supplementary file 1D; Figure 4A). The AMOVA based on the six monophyletic clades (N populations =8) recovered from the mtDNA phylogenetic analyses supported the population structure and showed that 55.48% of the molecular variance was attributed to differences among clades (df =5). We found 22.08% of the molecular variance among populations within clades (df =7) and 22.44% of the variance was found within individuals (df =213; Supplementary file 1E). The average fixation index over all the loci tested showed that FSC =0.50, FST =0.78, and FCT =0.55, and that there was a negative correlation between geographical distance and genetic differentiations (N populations =13; Pearson’ r=–0.059, Figure 4—figure supplement 1). The analysis of the nuclear data (POMC-RAG-1-Rho) from eight populations resulted in a single group of haplotypes (N=54) with a haplotype diversity (Hd) of 0.972 (Figure 4B), an average pairwise difference of 7.667 (±4.533), and a nucleotide diversity of 0.007 (±0.005). Additionally, the Mantel test for nuclear data revealed a low correlation between the geographic distance and genetic variation for the diploid populations of the East Asian Bufo (N population=8; Pearson’s r=0.072, Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig4-v2.jpg)
+
+**Figure 4.:** (A) Median joining network based on mtDNA CR-ND2 (894 bp) obtained from 221 individuals. (B) Phylogenetic relationships inferred from the same data set of concatenated mtDNA CR-ND2. (C) Haplotype relationship of 44 individuals of East Asian Bufo derived from diploid data (nuclear POMC-RAG-1-Rho; 1030 bp). The discordance in topology between the mitochondrial and nuclear trees is detailed in Table 2. (D) Phylogenetic relationship and population clustering inferred from SNP of the nuclear protein coding analyzed in STRUCTURE and CLUMPP (see Supplementary file 1F for details about the populations). The color code used in the map of East Asia matches with the colors coded for each particular clade and haplotype group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mantel test for mitochondrial CR-ND2 (N individual =224, N population =13). (B) Mantel test for nuclear POMC-RAG-1-Rho (N=49, N population =9).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The gray shaded box highlights the paraphyletic of the placement of Bufo gargarizans sampled in Vietnam (Clade C) in a different subclade segregated from the low-elevated B. gargarizans clades from Eastern Mainland (Clade A) and the septentrional East Asia (Clade B). The name of each taxon in tree represents the names of sampled individuals.
+
 To increase the phylogenetic resolution of Bufo across East Asia, we enlarged the sampling range to septentrional Eastern Asia where it covered the distributions of B. sachalinensis sachalinensis in the Amur River Basin and the B. sachalinensis cf. sachalinensis subclade restricted to the Korean Peninsula (currently ‘B. gargarizans’). We also conducted two independent molecular phylogenetic analyses using concatenated mtDNA fragments of the control region (CR) and NADH dehydrogenase 2 (ND2); and concatenated the nuDNA of the gene fragments proopiomelanocortin (POMC), recombination activating gene 1 (RAG-1) and rhodopsin (Rho). The phylogenetic trees derived from the mtDNA (N taxa =221) and nuDNA data (N=44) inferred six monophyletic clades, respectively. The mtDNA and nuDNA trees recovered discordant topologies, and they resulted in different composition of clades (Figure 4C and D). We found B. gargarizans from the Asian mainland to be segregated into multiple clades scattered across the nuDNA tree (see details in Table 2, Figure 4). We highlighted other discordance found between the monophyletic B. j. formosus and B. j. japonicus in the mtDNA tree (Clades 1 and 2; Figure 4C), in which both Japanese B. japonicus clustered in a clade based on the nuDNA tree (Clade 4; Figure 4D). In addition, nuDNA resolved B. bankorensis and the septentrional East Asia clades of B. sachalinensis as monophyletic (Figure 4D). Despite these inconsistencies, we found both mtDNA and nuDNA trees to similarly manifest a segregation between the septentrional East Asian clades of B. sachalinensis and B. gargarizans (Figure 4).
+
+**Table 2.**
+ Comparison of the cladistic characteristics between the mitochondrial and nuclear trees of East Asian Bufo.The comparison between concatenated mtDNA and nuDNA trees demonstrated the discordances between the recovered clades of Bufo gargarizans distributed in East Asia and showed identical patterns of divergence in the septentrional East Asian Bufo sachalinensis clades. The number of clades in the description is matching the phylogenetic trees in Figure 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Distribution range</th>
+      <th rowspan="2">Clade</th>
+      <th colspan="2">Description of cladistics</th>
+    </tr>
+    <tr>
+      <th>Concatenated mtDNA (CR-ND2)</th>
+      <th>Concatenated nuDNA (POMC-RAG1-Rho)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Japanese Archipelago</td>
+      <td>Bufo japonicus formosus</td>
+      <td>Monophyletic (Clade 1)</td>
+      <td rowspan="2">Grouped together in a clade of Japanese Bufo</td>
+    </tr>
+    <tr>
+      <td>Japanese Archipelago</td>
+      <td>Bufo japonicus japonicus</td>
+      <td>Monophyletic (Clade 2)</td>
+    </tr>
+    <tr>
+      <td>Korean Peninsula</td>
+      <td>Bufo stejnegeri</td>
+      <td>Monophyletic (Clade 3)</td>
+      <td>B. stejnegeri were grouped with Korean B. gargarizans in a nested clade of southeastern mainland and septentrional East Asian B. gargarizans (Clade 3)</td>
+    </tr>
+    <tr>
+      <td>Northeastern Mainland Asia</td>
+      <td>Bufo gargarizans</td>
+      <td>Monophyletic (Clade)</td>
+      <td>Contained multiple clades of B. gargarizans restricted to the southeastern and northeastern Asian mainland</td>
+    </tr>
+    <tr>
+      <td>Eastern Mainland</td>
+      <td>Bufo gargarizans</td>
+      <td rowspan="2">Polyphyletic with a clade of B. bankorensis distributed in Taiwan Island(Clade 5)</td>
+      <td rowspan="2">Formed multiple clades across Eastern Asian Bufo lineages. A clade grouped with northeastern B. gargarizans. Another clade is polyphyletic with of B. bankorensis of Taiwan Island and B. gargarizans distributed in septentrional East Asia (Clade 3).</td>
+    </tr>
+    <tr>
+      <td>Taiwan Island</td>
+      <td>Bufo bankorensis</td>
+    </tr>
+    <tr>
+      <td>Central Mainland</td>
+      <td>Bufo gargarizans</td>
+      <td></td>
+      <td>Formed two distinctive clades:A clade that restricted to western Mainland (Clade 2).Belonged to monophyletic groups of southeastern, western, and northeastern Mainland B. gargarizans</td>
+    </tr>
+    <tr>
+      <td>Septentrional East Asia (Korean Peninsula)</td>
+      <td>Bufo sachalinensis cf. sachalinensis</td>
+      <td>Monophyletic (Clade 6)</td>
+      <td>Monophyletic (Clade 3)</td>
+    </tr>
+    <tr>
+      <td>Septentrional East Asia (Amur River Basin)</td>
+      <td>Bufo sachalinensis sachalinensis</td>
+      <td>Monophyletic (Clade 6)</td>
+      <td>Monophyletic (Clade 3)</td>
+    </tr>
+  </tbody>
+</table>
 
 Additionally, we reconstructed a 16S rRNA only tree to include an individual B. gargarizans from Vietnam. The individual did not cluster with East Asian lowlands B. gargarizans, rather it was nested inside a clade of high elevation-restricted species including B. andrewsi and B. tibetanus (Clade C: Figure 4—figure supplement 2).
 
-## Diploid genotype clusters
+#### Diploid genotype clusters
 
 The structure analysis based on the 1030 bp of multilocus POMC-RAG-1-Rho supported two clusters (K=2) within East Asian Bufo, with Mean (LnProb) equal to –827.838 and mean (similarity score) among 10 runs equal to 0.974 (Figure 4D). The first cluster included the populations of Bufo in the western, central, southeastern, and northeastern Asian mainland along with the Japanese Bufo (Figure 4D). We recorded a negligible amount of admixture between population clusters of B. gargarizans in the western mainland, eastern mainland, and the Japanese Archipelago (see admixture portions in Supplementary file 1F and Figure 4D). However, we found significant amounts of admixture in the central and southeastern mainland Asia (Supplementary file 1F, Figure 4D). The second cluster was restricted to B. sachalinensis of septentrional East Asia with significant admixture, ranging from the Korean Peninsula to the Amur River Basin and Sakhalin Island (Supplementary file 1F, Figure 4D). This cluster also included the population of B. bankorensis distributed in Taiwan Island (Figure 4D).
 
-## The effect of introgression
+#### The effect of introgression
 
 The cytonuclear discrepancy (Figure 4) may be the result of introgression or/and incomplete lineage sorting. Thus, we further evaluated the pattern of introgression in our nuclear data (POMC-RAG1-Rho, N=44, nucleotide length =1030 bp) using ABBA or BABA test. To do so, we employed Patterson’s D-statistic to compare the number of allelic ABBA and BABA sites. Here, the D-statistic value we obtained was equal to 1, with the ABBA-BABA pattern calculated among the sites failing to reach equal frequencies (50:50). The probability of specific sites carring the allelic patterns of ABBA or BABA was equivalent to 1, and the number of segregating sites that fit the pattern of ABBA or BABA in at least one population was equivalent to 0. The unsymmetrical frequencies violate the assumption that only incomplete lineage sorting affects the Bufo nuclear tree, and showed the possibility of introgression as a significant factor in shaping the nuclear genetic structure.
 
-## Molecular dating and ancestral range
+#### Molecular dating and ancestral range
 
 Despite topological discordance, all nuDNA and mtDNA trees consistently revealed a distinction between the clades of Eastern Central Asia and septentrional East Asia in the B. gargarizans complex. Thus, we also provided dating estimates using the nuDNA data set as an alternative to the mtDNA estimates (Table 3). In the context of dating estimates, we considered mtDNA estimates more informative than nuclear estimates based on two factors: (1) the higher number of taxa in the mtDNA tree than in the nuDNA tree resulting to a clearer phylogeographic structure with higher support values for the clades recovered and (2) the clades recovered from the mtDNA tree highly matched the best-supported topology of species tree of Eastern Palearctic Bufo (Figure 2). Overall dating for the major B. gargarizans clades from the nuDNA data set (especially the 95% HPD ranges) were in agreement with the mitochondrial estimates, with nuDNA ingroup nodes slightly younger than mtDNA (Table 3).
+
+**Table 3.**
+ Molecular dating analyses for the East Asian Bufo.This analysis is based on linked mtDNA genes (CR-ND2) and unlinked multiple nuclear protein-coding genes (POMC-RAG-1-Rho) under a relaxed molecular clock with different tree priors. The node numbers are matching the clades in the dated phylogenetic tree and hypothesized dispersal pathways in Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Key events (node number)</th>
+      <th colspan="2">mtDNA (CR-ND2)</th>
+      <th></th>
+      <th>nuDNA (POMC-RAG-1-Rho)</th>
+    </tr>
+    <tr>
+      <th colspan="2">Relaxed molecular clock</th>
+      <th></th>
+      <th>Strict molecular clock</th>
+    </tr>
+    <tr>
+      <th>Yule prior (median [HPD 95%]/Mya)</th>
+      <th>Birth-death prior (median [HPD 95%]/Mya)</th>
+      <th>Mean(median [HPD 95%]/Mya)</th>
+      <th>Birth-death prior(median [HPD 95%]/Mya)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Root age of East Asian Bufo</td>
+      <td>10.47 [7.88‒13.40]</td>
+      <td>17.93 [11.81‒26.63]</td>
+      <td>14.20 [9.46‒20.02]</td>
+      <td>10.12 [6.60‒12.77]</td>
+    </tr>
+    <tr>
+      <td>Emergence of Japanese Bufo (A1)</td>
+      <td>7.75 [5.98‒9.52]</td>
+      <td>8.70 [6.97‒10.44]</td>
+      <td>8.23 [6.48‒9.98]</td>
+      <td>7.64 [4.99‒8.92]</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. j. formosus</td>
+      <td>3.71 [1.71‒5.92]</td>
+      <td>4.15 [2.38‒6.13]</td>
+      <td>3.93 [2.05‒6.03]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. j. japonicus</td>
+      <td>2.24 [0.72‒4.33]</td>
+      <td>1.58 [0.57‒2.84]</td>
+      <td>1.91 [0.65‒3.59]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. stejnegeri</td>
+      <td>3.32 [1.54‒5.24]</td>
+      <td>2.22 [0.72‒4.12]</td>
+      <td>2.77 [1.13‒4.68]</td>
+      <td>4.09 [1.46‒5.43]</td>
+    </tr>
+    <tr>
+      <td>MRCA of East Asian mainland Bufo (A2)</td>
+      <td>8.38 [6.13‒10.88]</td>
+      <td>14.25 [9.67‒19.44]</td>
+      <td>11.32 [7.90‒15.16]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. tibetanus ‒ B. andrewsi</td>
+      <td>5.21 [3.25‒7.45]</td>
+      <td>5.26 [3.01–7.66]</td>
+      <td>5.24 [3.13‒7.55]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Stem node of B. gargarizans complex (A3)</td>
+      <td>6.85 [4.70‒9.32]</td>
+      <td>11.25 [7.28‒16.08]</td>
+      <td>9.04 [5.99‒12.70]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Stem clade of Chinese mainland of B. gargarizans</td>
+      <td>5.19 [3.16‒6.72]</td>
+      <td>5.34 [3.45‒7.83]</td>
+      <td>5.27 [3.31‒7.28]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Segregation between B. gargarizans inhabiting high (B. minshanicus) and low elevation (B. g. gargarizans)</td>
+      <td>4.70 [3.23‒6.53]</td>
+      <td>2.68 [1.82‒3.26]</td>
+      <td>3.69 [2.53‒4.90]</td>
+      <td>3.77 [2.39‒3.83]</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. andrewsi and B. gargarizans inhabiting high elevated range (B. minshanicus)</td>
+      <td>2.89 [2.18‒3.54]</td>
+      <td>2.55 [1.86‒3.28]</td>
+      <td>2.72 [2.02‒3.41]</td>
+      <td>2.79 [1.18‒3.10]</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. g. gargarizans in the southeastern Mainland</td>
+      <td>3.14 [1.92‒4.49]</td>
+      <td>2.56 [1.48‒3.86]</td>
+      <td>2.85 [1.70‒4.18]</td>
+      <td>3.05 [1.04‒3.45]</td>
+    </tr>
+    <tr>
+      <td>Nested clades of B. gargarizans popei and B. g. gargarizans in the Central, southeastern and northeastern Mainland</td>
+      <td>2.21 [1.37‒3.20]</td>
+      <td>1.28 [0.71‒1.95]</td>
+      <td>1.85 [1.04‒2.58]</td>
+      <td>3.65 [1.18‒5.28]</td>
+    </tr>
+    <tr>
+      <td>Crown clade of B. bankorensis</td>
+      <td>1.34 [0.74‒1.94]</td>
+      <td>1.28 [0.72‒1.84]</td>
+      <td>1.31 [0.73‒1.89]</td>
+      <td>1.80 [0.50‒1.80]</td>
+    </tr>
+    <tr>
+      <td>Stem clade of septentrional East Asian B. sachalinensis</td>
+      <td>1.95 [1.55‒2.34]</td>
+      <td>1.81 [1.38‒2.28]</td>
+      <td>1.88 [1.47‒2.31]</td>
+      <td>2.21 [0.93‒2.16]</td>
+    </tr>
+    <tr>
+      <td>Crown clade of Korean B. sachalinensis cf. sachalinensis</td>
+      <td>1.58 [1.18‒1.93]</td>
+      <td>1.22 [0.82‒1.61]</td>
+      <td>1.40 [1.00‒1.77]</td>
+      <td>‒</td>
+    </tr>
+    <tr>
+      <td>Crown clade of Russian B. sachalinensis sachalinensis</td>
+      <td>1.06 [0.62‒1.53]</td>
+      <td>0.46 [0.19‒0.79]</td>
+      <td>0.76 [0.41‒1.16]</td>
+      <td>‒</td>
+    </tr>
+  </tbody>
+</table>
 
 Here, we compared the three hypotheses related to the phylogeography of the B. gargarizans complex, explained by: QTP vicariance and dispersal (Macey et al., 1998), dominance of long dispersals (Fu et al., 2005), and ice-age refugia (Borzée et al., 2017). Our dating and ancestral range estimates supported the contribution of vicariance and dispersal to the earliest diversification of the East Asian Bufo. We dated the events concerning the basal clade of Eastern Asian Bufo from the Early to Late Miocene c. 14.20 Mya (see HPD 95% in Table 3; Figure 5). The events were subsequently followed by the emergence and isolation of the Japanese Bufo from the Eastern Asian lineage in Late Miocene (Figure 5A1), the Japanese Bufo group then splitting into two distinct species, B. j. formosus and B. j. japonicus, c. 8.23 Mya (Table 3, Figure 5). These events were followed by the radiations within the East Asian Bufo lineage resulting in the independent divergence of B. stejnegeri in the Korean Peninsula, c. 8.90 Mya (Table 3, Figure 5) and a split between the high altitudes East Asian clades: B. tibetanus, B. andrewsi, and B. gargarizans c. 11.32 Mya (Table 3, Figure 5). These East Asian clades are present in the areas of the QTP and likely to have dispersed from high elevation areas (Figure 5A2), resulting in the divergence between B. tibetanus and B. andrewsi, dated between the Pliocene and the Late Miocene c. 5.24 Mya (Table 3, Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig5-v2.jpg)
 
-**Figure 5.:** Bufo in the Eastern Palearctic.(A) Hypothesized dispersal pathways for Bufo in the Eastern Palearctic. (B) Dated Maximum Clade Credibility (MCC) tree, ancestral ranges reconstruction, and colonization history for Palearctic bufonids inferred from the linked mtDNA CR-ND2 (N individuals =132). The dispersal pathways illustrated indicate two Miocene vicariance events for the MRCA of East Asian Bufo (A1–A2) and the routes hypothesized to have been followed by the B. gargarizans complex for dispersion through the Asian mainland (A3). The Miocene tectonic plates models and the Tibetan-Himalayan mapping were both retrieved from established data sets (refer to Supplementary file 1O) and projected to this paleomap.
+**Figure 5.:** (A) Hypothesized dispersal pathways for Bufo in the Eastern Palearctic. (B) Dated Maximum Clade Credibility (MCC) tree, ancestral ranges reconstruction, and colonization history for Palearctic bufonids inferred from the linked mtDNA CR-ND2 (N individuals =132). The dispersal pathways illustrated indicate two Miocene vicariance events for the MRCA of East Asian Bufo (A1–A2) and the routes hypothesized to have been followed by the B. gargarizans complex for dispersion through the Asian mainland (A3). The Miocene tectonic plates models and the Tibetan-Himalayan mapping were both retrieved from established data sets (refer to Supplementary file 1O) and projected to this paleomap.
 
 We found the combined effects of long dispersal and ice-age refugia to contribute equally to the radiation of the B. gargarizans complex in the Plio-Pleistocene, although the trade of the species over the last millennium has muddled the genetic signature (Figure 5A3). The deepest split within the B. gargarizans complex is estimated to have occurred around the same timeframe and at high elevation, delineating the B. minshanicus clade (B. gargarizans subspecies) in the southwestern to central mainland Asia (i.e., Sichuan and Shaanxi) c. 5.27 Mya (Table 3; Figure 5). Later, B. gargarizans may have dispersed to lower latitudes with the splitting from the monophyletic clade of B. gargarizans gargarizans ranging from southeastern to northeastern mainland Asia (i.e., Shanghai, Zhejiang, Hubei, Jinan, and Shenyang) c. 2.85 Mya (Table 3; Figure 5). A widely dispersed B. gargarizans clade further diverged in the central, southeastern, and northeastern mainland Asia (i.e., Sichuan, Shaanxi, Hubei, and Jiangsu, Dalian) c. 1.85 Mya (Table 3; Figure 5), nested within the B. g. popei clade (Figure 5). The B. bankorensis clade is a more recent divergence c. 1.31 Mya (Table 3; Figure 5), sharing a common ancestor with the southeastern B. g. gargarizans (Table 3, Supplementary file 1G, Figure 5).
 
 We estimate the emergence of B. j. formosus in Japan to have occurred between the Early Pleistocene and the Late Miocene c.3.93 Mya (Table 3, Figure 5), followed by a recent divergence of B. j. japonicus between the Pleistocene and the Pliocene c. 1.91 Mya (Table 3, Figure 5). In Northeast Asia, the B. stejnegeri clade may have independently emerged at the Plio-Pleistocene boundary c. 2.77 Mya (Table 3, Figure 5). Finally, the B. gargarizans clade dispersed and diverged eastward of the Yellow Sea during the Pleistocene c. 1.88 Mya (Table 3, Figure 5), established a population on the Korean Peninsula c. 1.40 Mya (Table 3, Figure 5) and expanded further to the Amur River Basin c. 0.76 Mya (Table 3, Figure 5).
 
-## LGM population expansion
+#### LGM population expansion
 
 We tested the ice-age refugia hypothesis to infer the impact of past Yellow Sea fluctuations on the East septentrional Bufo clades. We demonstrated that the rise in the past Yellow Sea level resulted in population expansions for the Korean and Russian Bufo clades, as showed by significantly negative values of Tajima’s D and Fu’s Fs (refer to Clade 6; Supplementary file 1D). The results were consistent with the Bayesian Skyline Plot, which indicated a recent population expansion in the Amur River Basin clade c. 0.48 Mya (effective population size trajectory (mean [HPD]/Ne) 1.18 [0.30–2.94]) until present (Ne =3.73 [0.23–20.64]) with a mean likelihood: –1930.53 [HPD: −1942.89, –1918.43], Figure 6. In comparison, the populations of the Bufo distributed on the southwestern margin of Yellow Sea consistently declined since the Late Pleistocene c. 0.55 Mya (Ne =5.34 [13.46–1.124]) until present (Ne =3.43 [0.48–11.84]) with a mean of likelihood: –2954.63 [HPD: −2969.60, –2941.08], Figure 6.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig6-v2.jpg)
 
-**Figure 6.:** Bufo in East Asia.(A) Past population dynamics of Bufo sachalinensis show an increase in effective population size (Ne). (B) Variability in past sea levels of the Yellow Sea since the Last Glacial Maxima (LGM). The maps represent present-day distribution of Eastern Asia Bufo and the LGM condition in East Asia with the projection of continental shelves during the ice ages (refer to Supplementary file 1O). The variation of the Yellow Sea level during LGM to present day was extracted from literature (Li et al., 2016). All maps were produced using QGIS v10.1 (ESRI, CA, USA).
+**Figure 6.:** (A) Past population dynamics of Bufo sachalinensis show an increase in effective population size (Ne). (B) Variability in past sea levels of the Yellow Sea since the Last Glacial Maxima (LGM). The maps represent present-day distribution of Eastern Asia Bufo and the LGM condition in East Asia with the projection of continental shelves during the ice ages (refer to Supplementary file 1O). The variation of the Yellow Sea level during LGM to present day was extracted from literature (Li et al., 2016). All maps were produced using QGIS v10.1 (ESRI, CA, USA).
 
-## Ecological niche modeling
+#### Ecological niche modeling
 
 To clarify the divergence in ecological requirements between B. gargarizans and B. sachalinensis, we examined the niche overlap between the two clades (Figure 7). The habitat suitability model for B. gargarizans (Figure 7A) was characterized by an AUC of 0.9239±0.0185 and a TSS of 0.6741±0.0408, while the model for the B. sachalinensis (Figure 7B) was characterized by an AUC of 0.9632±0.0043 and a TSS of 0.8723±0.0115. The ‘I’ niche overlap statistic between the two models was 0.4198, while the ‘D’ statistic was 0.1566. These values were significantly lower than the average values of the null distribution, with the mean of ‘I’ in the null distribution being 0.9788 (p<0.0001) and the mean of ‘D’ in the null distribution being 0.8546 (p<0.0001). Here, our result showed the overlap to be significantly less than expected, and therefore supporting the segregation in environmental requirements between the two East Asian Bufo clades.
 
-## Population migration in septentrional East Asia
+![Figure 7.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig7-v2.jpg)
+
+**Figure 7.:** (A) The niche suitability of the southwestern clade of B. gargarizans. (B) The divergence in niche suitability of the septentrional East Asian clade of B. sachalinensis. The colors represent the climate suitability of the populations with the red area indicating the highest suitability, the gray area represents unsuitable habitats, and black lines represent the maximum sensitivity plus specificity threshold. The white dots represent the occurrence based on the phylogenetic relationship data, and the black dots represent the occurrence recorded from the Global Biodiversity Information Facility (GBIF).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig7-figsupp1-v2.jpg)
+
+#### Population migration in septentrional East Asia
 
 We then examined the impact of gene flows and migration on local adaptation of the focal B. sachalinensis clades. Along the latitudinal gradient, our results suggested a weak gene flow outwards from the Amur River Basin and B. s. sachalinensis, in comparison with the symmetrical gene flow between the subspecies of B. sachalinensis restricted to the Korean Peninsula and B. gargarizans (Figure 8). This limited gene flow did not hinder the local adaptation of B. sachalinensis clade distributed at northern latitudes.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig8-v2.jpg)
 
-**Figure 8.:** Bufo characterized by mtDNA and nuDNA data.(A) Predicted migration pattern of Bufo in the Northeast Asia, the Korean Peninsula, and the Amur River Basin. We detected an asymmetric flow from and toward the Amur River Basin, indicating a weak gene flow from B. s. sachalinensis and reflecting a potential local adaptation to the climatic condition of the area. (B) The symmetrical pattern of migration between the north and south populations of B. stejnegeri in the Republic of Korea. Bold arrows indicate higher rate and thin-dashed arrows indicate lower rate in one asymmetric migration between two regions.
+**Figure 8.:** (A) Predicted migration pattern of Bufo in the Northeast Asia, the Korean Peninsula, and the Amur River Basin. We detected an asymmetric flow from and toward the Amur River Basin, indicating a weak gene flow from B. s. sachalinensis and reflecting a potential local adaptation to the climatic condition of the area. (B) The symmetrical pattern of migration between the north and south populations of B. stejnegeri in the Republic of Korea. Bold arrows indicate higher rate and thin-dashed arrows indicate lower rate in one asymmetric migration between two regions.
 
 In particular, the migration trajectory obtained from the unlinked multi-locus data showed a lack of gene flow with a symmetrical pattern of gene exchange between the populations of Bufo distributed on the northeastern mainland and populations distributed on the Korean Peninsula (refer to migration rates and theta (Θ) estimates: Supplementary file 1H, Figure 8). We demonstrated a comparable and moderate gene flow when focused on the average population migration rate (M) of haploids (2 N m) and diploids (4 N m) of the two populations. The gene flow rate from the northeastern mainland toward the Korean Peninsula (M1–M3; Figure 8) was 0.106, and in the opposite direction (M3–M1; Figure 8) was 0.214 (Supplementary file 1H). Contrary to the symmetrical migration patterns between the northeastern mainland and Korean Peninsula, we estimated an asymmetrical migration pattern toward septentrional Eastern Asian B. s. sachalinensis in the Amur River Basin (Supplementary file 1H, Figure 8). We detected a higher rate of gene flow into the Amur River Basin, transferred from the eastern mainland and from the Korean Peninsula (Supplementary file 1H, Figure 8). However, we found a lower rate of gene flow from the Amur River Basin toward the northeastern mainland and the Korean Peninsula (Supplementary file 1H, Figure 8).
 
 Additionally, the migration pattern between the two subpopulations of B. stejnegeri in Korea was also symmetrical, with a negligibly low rate of gene flow from the northern toward the southern population, and vice-versa (Supplementary file 1H, Figure 8).
 
-## Species boundaries and taxonomy updates
+#### Species boundaries and taxonomy updates
 
 Here, we provided support to delimit the cryptic B. s. sachalinensis distributed in septentrional Eastern Asia (Amur River Basin). The path sampling and Bayes factor analyses generally supported lineage-splitting as the best speciation pattern as opposed to the lumping of the clades of East Asian Bufo (Supplementary file 1I, Figure 9). Out of the eight species delimitation models tested (models A–H; Supplementary file 1I, Figure 9), Bayes factors determined Model A to be the most favorable alternative, receiving the highest support out of all scenarios determined by the path sampling analyses (Supplementary file 1I, Figure 9). Our model supported the split of the East Asian Bufo genus into seven independent taxonomic units (Model A; MLE: –502.801, Bayes factor: 3.198; Supplementary file 1I, Figure 9). These correspond to B. j. japonicus, B. j. formosus, B. andrewsi, B. gargarizans, B. stejnegeri, B. bankorensis, and the clade we refer to as B. sachalinensis (see justification below). Model A also supported a species-level boundary between the two subspecies of B. japonicus: B. j. japonicus and B. j. formosus. The species delimitation model suggested the taxonomic merging of B. sachalinensis cf. sachalinensis clade in the Korean Peninsula with the B. s. sachalinensis clade in the Amur River Basin (Supplementary file 1I, Figure 9). Moreover, Model A validated the split between the clades distributed in septentrional East Asia from B. g. gargarizans clades in East Asia (Model A; Supplementary file 1I, Figure 9).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/70494/elife-70494-fig9-v2.jpg)
 
-**Figure 9.:** RAG-1- POMC-Rho).(A) Geographic range for Eastern Asia Bufo based on best-supported species delimitation model. The range of each valid species is colored following the species color codes in the map. The marking for sympatric and intergradation range (the overlapped range between two subspecies in a broad species complex range) are indicated in the legend. (B) Topology of species delimitation Model A, followed by Model B as the best-supported scenarios among the eight alternative models tested. The ranking is supported through the highest Marginal likelihood estimate (MLE) and positive Bayes factor values. The comparison of all alternative models is explained in Supplementary file 1I.
+**Figure 9.:** (A) Geographic range for Eastern Asia Bufo based on best-supported species delimitation model. The range of each valid species is colored following the species color codes in the map. The marking for sympatric and intergradation range (the overlapped range between two subspecies in a broad species complex range) are indicated in the legend. (B) Topology of species delimitation Model A, followed by Model B as the best-supported scenarios among the eight alternative models tested. The ranking is supported through the highest Marginal likelihood estimate (MLE) and positive Bayes factor values. The comparison of all alternative models is explained in Supplementary file 1I.
 
 Following multiple calls for a taxonomic revision and the various species descriptions and synonimization (Matsui, 1986; Igawa et al., 2006; Borzée et al., 2017; Lee et al., 2021), we suggest the following updates to the taxonomy. It is to be noted that we do not describe any new species as a long list of valid former names is available (Supplementary file 1I, Figure 1—figure supplement 1). We provided the taxonomy updates on the basis of species delimitation analysis (Figure 9), and the following recommendations were corroborated by the allopatric distribution of the delineated clades (Figure 9) and the differentiation in niche requirements (Figure 8). Thus, we presented the most robust taxonomic framework applied to this group since the description of B. gargarizans.
 
@@ -158,41 +504,41 @@ Our reconstruction of the Holarctic bufonids biogeography using species tree wit
 
 Our revisit of the three phylogeography hypotheses did not favor any specific hypothesis explaining the present geographic distribution of eastern Palearctic Bufo, in disagreement with the long colonization hypothesis (Zhan and Fu, 2011). Instead, our results provided support to the combination of the three elements: vicariance of the western mainland clade, followed by long dispersal, and possible refugia in northeastern Asia during the last ice age. We detected a loss of genetic structure within B. gargarizans clades, possibly due to introgression resulting from the trade of the species over a millennium (Lee et al., 2021). The recent segregation around the Yellow Sea, as shown by the species distribution models and migration pattern, also provides support to the delineation of a septentrional Asian Bufo clade associated with range shift toward northern latitudes. We therefore resurrect the previously described B. sachalinensis and elevate it to the species level. Our findings resolved the taxonomic boundaries in the B. gargarizans complex, and redefine the taxonomic and conservation units: B. g. gargarizans, B. s. sachalinensis, and B. sachalinensis cf. sachalinensis, with the latter waiting for a subspecies description.
 
-## Radiation of Holarctic bufonids
+### Radiation of Holarctic bufonids
 
 Fossil calibration estimates refined the known divergence time for Neotropical and Eurasian Bufonid lineages and rejected the hypothesis of shared origin (Sanchiz, 1997). Although we could not confirm the African biogeographic origin of the Western Palearctic bufonids (Figure 2), our time estimates show that the emergence of bufonids into Europe was subsequent to the landmass connection of Eurasia and Africa (Frazão et al., 2015). In addition, our ancestral range analysis rejected the hypothesis that bufonids dispersed out of East Asia and into Europe (Sanchiz, 1997; Roček and Rage, 2003). Instead, we confirm the dispersion of bufonids from Europe and into East Asia, in agreement with the Central Asian desertification (Garcia-Porta et al., 2012) as the factor of segregation between the Western and Eastern Palearctic bufonids. The Miocene radiations within the Western Palearctic Bufo clade (c. 14.49‒11.03 Mya; Table 1, Figure 2) are consistent with estimates of the highest dusting outflow in the deserts of Central Asia (c. 15.00‒13.00 Mya; Guo et al., 2002). The desertification may have triggered an early colonization of Asian Bufo in central Eastern Asia (c. 9.99 Mya; Figure 2), a process that may have taken place prior to the second period of maximum dusting emission in Central Asia (c. 8.00‒7.00 Mya; Guo et al., 2002).
 
-## Mitonuclear discordance
+### Mitonuclear discordance
 
 The phylogenetic trees of East Asian Bufo reveal a conspicuous discordance between the topologies of the mtDNA and nuDNA, especially in the placement of regional populations of the B. gargarizans complex and the inconsistency in positioning B. bankorensis and B. andrewsi (Figure 4). For instance, the mtDNA phylogeny placed the B. gargarizans complex within a nested monophyletic clade, with B. gargarizans in the East Asia, the Korean Peninsula, and the Amur River Basin as sister groups to each other (mtDNA tree: Clades 5 and 6; Figure 4). Conversely, the nuclear tree did not recover a clear geographic structure for the B. gargarizans complex (Figure 4). This discordance might reflect the dissimilarity in the evolutionary rates of nuclear and mitochondrial markers as RAG-1 in amphibians is known to have a slower rate of evolution in comparison to mtDNA (San Mauro et al., 2004).
 
 Introgression and incomplete lineage sorting could have contributed to the discordance between mitochondrial and nuclear trees. Here, the D-statistical analysis provides support to the occurrence of introgression resulting in mitonuclear disequilibrium among populations of B. gargarizans in the Central East Asian mainland (Patterson’s D Statistic =1.0). Introgression is a common occurrence in amphibians, and may be naturally and anthropogenically occurring along contact zones (Bell and Irian, 2019). Ancestral polymorphism may have contributed to the incomplete lineage sorting, a point already discussed between B. gargarizans and B. bankorensis (Yu et al., 2014). We recommend testing the possibility of incomplete lineage sorting in contact zones between the parapatric members of the B. gargarizans complex: B. tibetanus, B. andrewsi, and B. gargarizans (Figure 7).
 
-## Geologically driven divergence in Asia
+### Geologically driven divergence in Asia
 
 Past geological events such as the central Asian desertification, the orogeny of the Tibetan plateau, and the Eastern Pacific drift had a more important impact than geographical distribution and selection in shaping the genetic structure of the Eastern Palearctic Bufo (Supplementary file 1C, Figure 3). Selection is a crucial aspect in evolution, however, our model indicates that selection based on life-history strategies had a peripheral role in influencing the evolutionary pathways of Asian bufonids. While the relationship between Asian Bufo and the species previously assigned to ‘Torrentophryne’ remains uncertain (low support of p=0.03; Figure 3), the most accurate species tree topology rejects the monophyly of the lotic breeders ‘Torrentophryne’ (Model C vs. Model E; Supplementary file 1C, Figure 3). The paraphyletic nature of ‘Torrentophryne’ is also corroborated by previous taxonomy studies (Liu et al., 2000; Pyron and Wiens, 2011). Nevertheless, our topology models validate the convergence among semi-aquatic members of Asian Bufo (B. andrewsi, B. stejnegeri, and B. torrenticola) and the homoplasy between Torrentophryne and Bufo (Supplementary file 1C, Figure 3).
 
-## Miocene to Pleistocene diversifications in Asia
+### Miocene to Pleistocene diversifications in Asia
 
 Subsequent to the early radiation in association with the Central Asian dust events at the end of the Middle Miocene, we confirmed a single origin of Asian Bufo from Eurasia through Central Asia during the Late Miocene (Supplementary file 1G, Figure 5). The Asian Bufo shared an ancestor before the divergence between the East Asian mainland and Japanese Archipelago lineages took place (Figure 5) as a result of the two most important vicariance events that occurred contemporarily during the Miocene (Figure 5A1-A2). Our dating estimates, previous hypotheses (Igawa et al., 2006; Macey et al., 1998) and paleogeological events are consistent for two main points: (i) an early radiation of the Asian continental Bufo triggered by the QTP vicariance (Miocene; c. 8.36 Mya; Table 3, Supplementary file 1G, Figure 5A2) and (ii) the isolation of Bufo clades on the Japanese archipelago (Late Miocene; c. 7.71 Mya; Table 3, Supplementary file 1G, Figure 5A1). The early radiation of the Asian continental Bufo occurred in high elevation-restricted clades: B. tibetanus and B. andrewsi (Figure 5) and coincides with the pre-completion of the orogenesis of the Hengduan Mountain (Late Miocene; c 8.0–10.0 Mya; Xing and Ree, 2017). The estimated time of isolation of the Japanese Bufo from the Asian continental clades (c. 7.71 Mya; Table 3, Supplementary file 1G, Figure 5) is pertinent, as the event may have occurred before the complete separation of the Japanese Archipelago from the Eurasian landmass (c. 5.00 Mya; Barnes, 2003).
 
 The major radiations within the primary clades of East Asian mainland Bufo took place predominantly between the Pliocene and Pleistocene (Figure 5A3), with dispersals principally driving the diversifications of the B. gargarizans complex clades in the lowlands (Figure 5). In comparison, divergence in the insular and septentrional East Asia clades was mostly driven by vicariance and dispersals (clades of Japanese Bufo and B. sachalinensis; Figure 5). In the case of B. stejnegeri, although the estimated timing is more recent (Pliocene; c. 3.31 Mya; Table 3, Supplementary file 1G, Figure 5) relative to the estimates in the literature (Pliocene; c. 4.30 Mya; Fong et al., 2020), our results are in agreement on the independent rise of this clade on the Korean Peninsula prior to complete formation of the Baekdu Mountains shields (2.80–1.50 Mya; Kim et al., 2017).
 
-## The Yellow Sea as a biogeographic boundary
+### The Yellow Sea as a biogeographic boundary
 
 Previous studies estimated the isolation of Bufo populations on the Korean Peninsula to date from the Pleistocene (Borzée et al., 2017; Lee et al., 2021), and our results confirm this pattern. However, additional samples from further east demonstrated the presence of a deeper segregation between the clades around the Yellow Sea, with B. gargarizans to the southwest and B. sachalinensis in septentrional Eastern Asia (Figure 6). This pattern is visible through both mtDNA and nuDNA. A late colonization of the septentrional East Asia regions has also been supported by an increase in population size in relation to the LGM, a pattern not visible for the B. gargarizans clades (Figure 6). The isolation of B. sachalinensis clade on the Korean Peninsula is in synchrony with the final stage of the Sanduo Event that triggered the widening of the Yellow Sea basin (Neogene-Quaternary; Lei et al., 2018). Most probably, the drift between clades was subsequently induced by variations in water depth, temperature, and the tidal circulation of the Yellow Sea (Li et al., 2016). This pattern is also visible in other amphibian clades that became isolated during the quaternary (Borzée et al., 2020).
 
-## Delineation of climatic niche selection
+### Delineation of climatic niche selection
 
 In congruence with the best species delimitation model (Figure 9), the niche overlap statistics demonstrated the segregation of the two clades tested: B. sachalinensis in septentrional East Asia and B. gargarizans in eastern central Asia (or southwestern margin of the Yellow Sea; Figure 7). The response curves of the Maxent Jackknife test indicated that the two clades have different temperature-related environmental requirements (Figure 7—figure supplement 1) with the monthly and quarterly minimum temperatures being the key factors segregating the niche of the septentrional Eastern B. sachalinensis from B. gargarizans (see BIO 6 and 11; Figure 7—figure supplement 1). The spatial heterogeneity demonstrated by both clades may have led the species to adapt locally, resulting in specific niches, as exemplified in closely related bufonids: B. bufo from the Western Palearctic (Luquet et al., 2015). Local adaptation may also derive from the apomorphic trait related to behavioral and phenotypic plasticity, as seen in the case of bufogenin production in B. gargarizans along a latitudinal gradient with different climates (Cao et al., 2019).
 
-## Ineffective gene flow on the septentrional East Asia
+### Ineffective gene flow on the septentrional East Asia
 
 Low gene flow rates among the septentrional East Asian clades (Figure 8) indicate a strong effect of genetic drift, especially in the isolated clade of B. s. cf. sachalinensis in the Korean Peninsula. The latest glaciations may not have induced range shifts as the clade was already isolated on the peninsula following the rising level of the Yellow Sea. In addition, low migration rates support the natural selection and gradual adaptation of the B. s. sachalinensis clade to the cold climate of the northern latitudes. Long-distance dispersal had a weak impact on B. s. sachalinensis population in the Amur River Basin (Figure 8), probably due to the reduced capacity for dispersal to compensate for the energy investment on low-temperature tolerance (Kolbe et al., 2010).
 
 This pattern of unidirectional gene flow may however need to be seen from a different perspective. The lack of gene flow here may also highlight that the Bufo trade may not have been as widespread on the Amur River Basin and Korean Peninsula as it was in China, a pattern correlated with the size of human settlements. The presence of two individuals within the range of B. gargarizans showing 95% and 87% admixtures with the B. sachalinensis clade (Supplementary file 1F, Figure 4D) is likely the result of human-led translocations. Bufo toads have been used for traditional Chinese medicine for more than a millennium (Zhan et al., 2020; Lee et al., 2021) and gene flow toward the regions relying on the genus for medicine may actually reveal the directionality of the trade, and escape of individuals at markets, rather than natural dispersal.
 
-## Taxonomic recommendations
+### Taxonomic recommendations
 
 The distinction among B. tibetanus, B. minshanicus, and B. andrewsi cannot be assessed in detail here due to the scarcity of samples. However, B. tibetanus and B. andrewsi are genetically meaningful as species, each clade being monophyletic and part of a sister clade to B. gargarizans (Fu et al., 2005). We however note the possible presence of B. andrewsi in Zhongdian, the type locality of B. tibetanus. Here, we resolve the long-standing question about the relationship between the B. gargarizans complex, B. andrewsi, and B. bankorensis (Chen et al., 2013; Fu et al., 2005). Despite synonimization between B. andrewsi and B. gargarizans through mtDNA phylogeny and allozymes data (Fu et al., 2005), the coalescent perspective on delimiting the species in the present study supports the taxonomy validity of B. andrewsi as a distinct species, a point strongly supported by morphometric data (Liao et al., 2016). Here, we demonstrated the impact of the QTP orogenesis on the divergence of B. andrewsi from B. tibetanus during the Late Miocene (Table 3, Figure 5). Both paleogeography and species delimitation patterns justify the species epithet, and the clade should be referred to as B. andrewsi Schmidt, 1925 in later studies. We recommend further research on the relationship with the clade described as B. tibetanus in light of the Late Miocene divergence between these two clades (Figure 5).
 
@@ -208,13 +554,13 @@ In summary, ever since the Miocene and throughout the ice ages, past paleogeolog
 
 ## Materials and methods
 
-## Taxa sampling and data set design
+### Taxa sampling and data set design
 
 We sampled 274 Bufo individuals across East Asia. We supplemented our data set with Genbank sequences to cover the totality of the described range of the species, from the northern distribution in Sakhalin Island to the southern distribution limit in Vietnam. The specimens collected represent four recognized species and two subspecies: B. andrewsi, B. gargarizans, B. stejnegeri, B. bankorensis, B. japonicus japonicus, and B. j. formosus (Supplementary file 1J). In addition, we used sequences from Genbank (N=158; Supplementary file 1J), notably adding samples listed as B. tibetanus and B. minshanicus from western China and a sample of B. gargarizans from Vietnam (Supplementary file 1J). We selected five loci from the CR, mitochondrial protein-coding ND2, and nuclear protein-coding markers POMC, RAG-1, and Rho. To amplify these targeted gene fragments, we adapted universal primers used in closely related studies (Supplementary file 1K). In addition, we designed primer pairs for several gene fragments (Supplementary file 1K), modified from the most homologous sequences in Genbank using Primer 3web v.4.1.0 (Untergasser et al., 2012). Details on the molecular works such as the isolation of gene fragments and the polymerase chain reaction (PCR) amplifications are explained (Appendix 1) with the final primers used and the PCR conditions (Supplementary file 1K).
 
 From these samples, we designated three data sets varying in number of taxa and geographical scale (Figure 1), with considerable overlap of samples. We described the methodology and the data sets as follows: (1) estimates of divergence dates in the Holarctic bufonids species tree using a fossilized birth-death model (Heath et al., 2014) and estimating divergences to a time frame coherent with the minimum fossils age. For the species tree reconstruction, we included additional sequence data from two loci, a mitochondrial ribosomal large subunit 16S rDNA (16S) and a nuclear protein-coding C-X-C chemokine receptor type 4 (CXCR4) available in Genbank. Here, the final data set comprised seven unlinked molecular loci obtained from gene fragments of CR-16S-ND2-CXCR4-POMC-RAG-1-Rho (2666 bp) and included 313 sequences belonging to 39 taxa distributed across South and Central America, Nearctic, and Eurasia (Supplementary file 1J). (2) Evaluation of the best species tree topology for the Palearctic Bufo species under a hypothesis testing approach derived from geographical, geological, ecological, and life-history variables. In this second data set, we assembled 2959 bp of unlinked multi-locus gene fragments (CR-16S-ND2-CXCR4-POMC-RAG1-Rho) from 267 individuals of 24 recognized taxa (Supplementary file 1J). (3) Estimation of the divergence dates and reconstruction of the ancestral ranges of the Eastern Palearctic Bufo genus from mtDNA and nuDNA sequences data. Here, we refer to the unlinked mtDNA (CR-ND2: 894 bp; N=221) as data set 3a and the unlinked nuDNA data (POMC-RAG-1-Rho: 1030 bp; N=44) as data set 3b. We based the time tree calibrations on primary and secondary calibrations, using a combination of fossil-based estimates, paleogeological events, and literature data under various combinations of molecular clocks and tree priors (see detailed calibration points in Appendix 1).
 
-## Reconstruction of Holarctic bufonids biogeography
+### Reconstruction of Holarctic bufonids biogeography
 
 We calibrated the species tree under the fossilized birth-death process for 39 recognized species of Holarctic bufonids. To do so, we included species groups with documented fossils or close fossils relatives. To estimate the divergence date, we employed a relaxed molecular clock model with the fossilized birth-death and Yule as tree priors. We then determined the best site model for each unlinked marker (Supplementary file 1K) using jModelTest v.2.1.10 (Darriba et al., 2015). We relied on six calibration points based on the age ranges of the fossil records, and assumed the age as minimum constraint (Donoghue and Yang, 2016).
 
@@ -222,9 +568,9 @@ We retrieved the documented fossil record for all Holarctic bufonids from the da
 
 We performed four independent analyses using the Markov Chain Monte-Carlo (MCMC) procedure for 200 million iterations using StarBEAST with the Relaxed Clock (*BEASTRLC) package installed through BEAST v.2.6.3 (Bouckaert et al., 2019). We ensured the adequacy of the MCMC samplings by assessing the effective sample size (ESS) values of each parameter (ESS>200) using Tracer v.1.7 (Rambaut et al., 2018). We assembled all the generated trees in LogCombiner v.2.6.1 (Bouckaert et al., 2019) and summarized the trees with a Maximum Clade Credibility (MCC) tree after discarding 25% of the trees with a posterior probability limit of 0.5 using Tree Annotator v2.6.3 (Bouckaert et al., 2019).
 
-## Inferring patterns of diversification of Eastern Palearctic Bufo
+### Inferring patterns of diversification of Eastern Palearctic Bufo
 
-## Species tree topology estimation for Palearctic Bufo
+#### Species tree topology estimation for Palearctic Bufo
 
 We estimated the most probable topology of the species tree for the Palearctic Bufo. We emphasized the inclusion of all optimum factors that control the topology of the tree, we also included species from the former genus Torrentophryne, which is currently synonymized with East Asian Bufo in our data sets.
 
@@ -232,7 +578,7 @@ We tested five alternative scenarios for the species tree topology, derived from
 
 Here, we set Bufotes as our external calibration point. Four internal calibration dates for ingroup taxa (Bufo genus) were adapted from the time frame we determined during the previous step for the Holarctic bufonids data set using the fossilized birth-death method. We employed a relaxed molecular clock and Yule prior for each designated species tree data set. We ran two independent analyses with MCMC samplings for 30 million iterations using the *BEASTRLC package (Heled and Drummond, 2010) implemented in BEAST v.2.6.3 (Bouckaert et al., 2019). The convergence of the MCMC runs of each analysis were assessed by the ESS values obtained for each parameter (ESS>200) using Tracer v.1.7 (Rambaut et al., 2018). Finally, we evaluated all the supports for species tree topology models with the nested sampling analyses using the nested sampling (NS) package (Russel et al., 2019) installed through BEAST v.2.6.3 (Bouckaert et al., 2019). We set the sampling parameters as follows: particle count = 20, the length of MCMC subchains = 20,000, and epsilon = 10–6.
 
-## Phylogenetics and divergence dating of Asian Bufo
+#### Phylogenetics and divergence dating of Asian Bufo
 
 To reconstruct the phylogenetic relationship, we searched for the best-fit evolutionary model and partitioning scheme for each gene data set (Supplementary file 1M) using PartitionFinder v.2.1.1 (Lanfear et al., 2017). We evaluated six partitions for the concatenated mtDNA data set, considering three partitions represented a CR fragment and two partial introns of ND2, and three codon reading frames for exon of ND2 (Supplementary file 1M). We adjusted the setting to suit ‘Mr. Bayes’ mode, using the greedy algorithm. We selected optimal partitioning schemes, and the best-fit substitution models using the Bayesian Information Criterion (BIC). We implemented the best-fit model for each sequence data based on the suggested partitions.
 
@@ -244,13 +590,13 @@ Then, we estimated the divergence dates of the East Asian Bufo clades on the unl
 
 To reduce bias in prior choice, we tested the mtDNA time tree using the same seven internal calibration points and different combinations of relaxed clocks and tree priors such as Yule and birth-death. We performed all divergence dating analyses in BEAST v.2.5.2 (Bouckaert et al., 2019). To maintain consistency, each MCMC analysis was run for 30 million generations, with two independent runs. We diagnosed the stationary states of all parameters using Tracer v.1.7 (Rambaut et al., 2018). We then used tree annotator (Rambaut et al., 2018) to sort a MCC tree to summarise all trees generated with a median height, after 25% burn-in and 0.5 as minimum posterior probability. We further inferred the historical biogeography of the genus to test possible ancestral areas for each clade using the Bayesian dispersal-vicariance (BBM-DIVA) in RASP v.3.1 (Yu et al., 2015).
 
-## Past population dynamics
+#### Past population dynamics
 
 We tested the hypothesis of an ice age refugia (Borzée et al., 2017) against the earlier hypotheses of vicariance during the QTP followed by dispersal (Macey et al., 1998) and the hypothesis of dispersion through long dispersal (Fu et al., 2005). We assessed support for these hypotheses by examining past population dynamics for the two distinct mtDNA B. gargarizans clades across a major biogeography barrier, the Yellow Sea. By doing so, we also gained a phylogeographic insight into the impact of the Yellow Sea on the demographic history of B. gargarizans during the ice age.
 
 We divided our data into two sets following the clades identified by the mtDNA phylogenetic tree. These clades, hereafter referred to as the southwestern (N=75) and the septentrional East Asia (N=123) clades, were also geographically segregated by the Yellow Sea margins. To estimate the past population dynamics since the LGM period, we constructed for each clade a Bayesian Skyline Plot (Drummond et al., 2005) inferred from the 819 bp of concatenated CR-ND2 using BEAST v.2.5.2 (Bouckaert et al., 2019). We calibrated the data sets with a combination of strict molecular clock and the Coalescent Bayesian Skyline as prior, under a lognormal distribution. To calibrate the southwestern clade, we set the mean in the real space to 2.5, SD to 0.5, and offset to 0.0, creating an interval of HPD 5%–95% that ranged between 0.96 Mya and 5.02 Mya. For the calibration of the septentrional East Asian clade, we set the mean in the real space to 0.8, SD to 0.5, and offset to 0.0, creating an interval of HPD 5%: 0.30 Mya to 95%: 1.84 Mya. We ran two independent analyses on each data set with 5 million MCMC iterations and a burn-in of 1000 samples. We looked for the stationary state of the runs and evaluated the ESS values obtained for all the parameters with Tracer v.1.7 (Rambaut et al., 2018), before plotting the Bayesian Skyline Plot with the same program.
 
-## Ecological niche modeling
+#### Ecological niche modeling
 
 Given the support for two clades within the B. gargarizans complex, here named B. gargarizans and B. sachalinensis, we determined the boundaries of each clade through ecological niche modeling. First, we determined the niche overlap between the two clades, and computed habitat suitability models for each clade using maximum entropy (MaxEnt) modeling (Phillips et al., 2017). To build our model, we combined the geographic information linked to the genetic data and occurrence data downloaded from GBIF (GBIF.org, accessed August 27, 2020; DOI: https://doi.org/10.15468/dl.ugtsma). We used only data points from the Asian mainland, and manually checked each datapoint. We then assigned each point to either B. gargarizans or B. sachalinensis based on the geographic distance to the nearest locality with genetic data, resulting in 404 occurrences for B. gargarizans (375 GBIF, 29 genetics) and 1076 occurrences for B. sachalinensis (1053 GBIF, 23 genetics). Three genetic data points belonging to the septentrional East Asian clade were located within range of the western mainland clade. These geographically discordant datapoints are likely the result of human introduction, only the data point assigned to the nominal clade was used for modeling.
 
@@ -258,13 +604,13 @@ To build the models, we used 19 bioclimatic variables (Supplementary file 1O) an
 
 To determine whether niche overlap of the two Bufo clades was significantly different than expected if the two clades had the same environmental requirement, we created a null distribution using MaxEnt modeling. To simulate randomized occurrences, we pooled occurrences from both clades and then randomly assigned individuals to B. gargarizans (404 points) or B. sachalinensis (1076 points). We then ran MaxEnt using the same parameters as described above for 20 runs and calculated ‘I’ and ‘D’ overlap statistics between corresponding pairs of suitability outputs. This created a null distribution that we then tested against the niche overlap values calculated from the initial run separating the two clades using a one-sample Student’s t-test. Finally, we reconstructed maps in ArcMap 10.6 (ESRI, Redlands, CA).
 
-## Estimation of migration patterns
+#### Estimation of migration patterns
 
 Finally, we estimated the impact of evolutionary forces such as gene flow on the population structure of the septentrional East Asian clades. In order to measure the magnitude and direction of gene flow, we carried out a migration test on a total of 60 Bufo individuals representing three subpopulations in the northern latitudes herein defined as: northeastern mainland (N=12), Korean Peninsula (N=24), and Amur River Basin (N=24). Following the assumption that the mutation rate varies among loci and migration is asymmetrical between population, we computed the migration pattern from the following unlinked loci CR (894 bp), ND2 (536 bp), POMC (496 bp), and RAG-1 (308 bp). We set the mutation rate to vary among the loci and standardized the migration rate as 4 N m =1.0.
 
 In addition, we estimated the migration pattern of B. stejnegeri on the Korean Peninsula, between the northern and southern populations. This analysis was based on 12 individuals sampled north (N=9) and south (N=3) of the Republic of Korea and aimed at testing whether migration is significantly higher in one direction than the other. We conducted this analysis using a full migration matrix model in MIGRATE v.4.4.3 (Beerli et al., 2019). We computed two independent analyses for each locus following the MCMC method for 10 million iterations, with four parallel chains and a burn-in of 1000. We evaluated the ESS value of all parameters sampled for each analysis with Tracers v.1.7 (Rambaut et al., 2018).
 
-## Species delimitation modeling
+#### Species delimitation modeling
 
 Due to the uncertainty in the taxonomic placement of many East Asian Bufonids, we examined the species boundaries of the Asian Bufo, with emphasis on the five putative species within the B. gargarizans species complex. We tested different species delimitation scenarios such as sympatric ranges and intergradation zone between subspecies. To account for human-led population displacements, we excluded B. gargarizans popei from the species delimitation model itself, and lumped it with B. gargarizans gargarizans under B. gargarizans. We relied on synonymized subspecies clades to define geographic areas (Pyron and Wiens, 2011); hence, the designated models included all clades of the B. gargarizans complex in the mainland with unresolved taxonomy: B. andrewsi, B. bankorensis, B. gargarizans from the central East Asian mainland of its range, and septentrional East Asian B. gargarizans. We also included the two Japanese Bufo subspecies, B. j. formosus and B. j. japonicus, as indicated by the two distinct clades in our phylogeny, and the Korean water toad, B. stejnegeri. We used previously named clades that are now synonymized to test all models possible and reintroduced synonymized names for the purpose of referring to these clades in our models.
 

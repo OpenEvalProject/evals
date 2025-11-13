@@ -39,17 +39,214 @@ Here, we report that we detected BCAR3 in a screen for pY proteins that are down
 
 ## Results
 
-## CRL5 regulates BCAR3 protein turnover
+### CRL5 regulates BCAR3 protein turnover
 
 We previously reported that CRL5 inhibits Src activity and Src-dependent transformation of MCF10A epithelial cells, in part by targeting pY proteins such as pY-Cas for degradation by the ubiquitin-proteasome system (Teckchandani et al., 2014). Because overexpression of Cas alone did not phenocopy CRL5 inhibition (Teckchandani et al., 2014), we infer that CRL5 down-regulates additional pY proteins that become limiting when Cas is over-expressed. We sought to identify such pY proteins by screening for pY peptides whose abundance increases when Cul5 is inhibited. To this end, control and Cul5-deficient MCF10A cells were lysed under denaturing conditions, proteins were digested with trypsin, and peptides were labeled with isobaric TMT tags for quantitative pY proteomics (Zhang et al., 2007). In one experiment, samples were prepared from control and Cul5-deficient cells that were starved for epidermal growth factor (EGF) for 0, 24, or 72 hr. Starvation time had no systematic effect on peptide abundance, so, in a second experiment, we prepared biological triplicate samples from growing control and Cul5-deficient cells. Sixteen pY peptides increased significantly in Cul5-deficient cells in both experiments, including pY128 from Cas and pY117 and pY266 from BCAR3 (Figure 1b, Table 1, Supplementary File 1). We decided to focus on BCAR3 because Cul5 regulates Cas and Cas binds BCAR3 (Wallez et al., 2012).
 
+**Table 1.**
+ Phosphotyrosine peptides increased in Cul5-deficient cells.Protein names, tyrosine positions, Uniprot accession numbers, peptide sequences, and quantification of phosphotyrosine peptides that were significantly increased in two independent experiments, each performed in triplicate, comparing Cul5-deficient and control MCF10A cells. In Experiment 1, the triplicate samples were obtained from cells starved for EGF for 0, 24, or 72 hr. In Experiment 2, the triplicate samples were all from unstarved cells. a Ratio shCul5/Ctrl. b p value, t-test (two-tailed, paired); n=3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Position</th>
+      <th>Uniprot</th>
+      <th>Sequence</th>
+      <th colspan="2">Experiment 1</th>
+      <th colspan="2">Experiment 2</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Folda</th>
+      <th>pb</th>
+      <th>Folda</th>
+      <th>pb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KRT6A</td>
+      <td>Y62</td>
+      <td>Q92625</td>
+      <td>sLyGLGGSk</td>
+      <td>3.21</td>
+      <td>0.012</td>
+      <td>1.85</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>ABL1</td>
+      <td>Y393</td>
+      <td>P00519</td>
+      <td>lMTGDTyTAHAGAk</td>
+      <td>2.90</td>
+      <td>0.010</td>
+      <td>1.77</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>ANKS1A</td>
+      <td>Y455</td>
+      <td>Q92625</td>
+      <td>eEDEHPyELLLTAETk</td>
+      <td>2.58</td>
+      <td>0.004</td>
+      <td>1.41</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>ARHGAP35</td>
+      <td>Y1105</td>
+      <td>Q9NRY4</td>
+      <td>nEEENIYsVPHDSTQGk</td>
+      <td>2.49</td>
+      <td>0.008</td>
+      <td>1.67</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>RIN1</td>
+      <td>Y36</td>
+      <td>Q13671</td>
+      <td>ekPAQDPLyDVPNASGGQAGGPQRPGR</td>
+      <td>2.02</td>
+      <td>0.018</td>
+      <td>1.45</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>BCAR3</td>
+      <td>Y117</td>
+      <td>O75815</td>
+      <td>dPHLLDPTVEyVk</td>
+      <td>1.96</td>
+      <td>0.011</td>
+      <td>1.34</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>MPZL1</td>
+      <td>Y263</td>
+      <td>O95297</td>
+      <td>sESVVyADIR</td>
+      <td>1.90</td>
+      <td>0.026</td>
+      <td>1.54</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>BCAR3</td>
+      <td>Y266</td>
+      <td>O75815</td>
+      <td>cLEEHyGTSPGQAR</td>
+      <td>1.81</td>
+      <td>0.000</td>
+      <td>1.50</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>BCAR1</td>
+      <td>Y128</td>
+      <td>P56945</td>
+      <td>aQQGLyQVPGPSPQFQSPPAk</td>
+      <td>1.80</td>
+      <td>0.003</td>
+      <td>1.28</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>SGK223</td>
+      <td>Y413</td>
+      <td>Q86YV5</td>
+      <td>eATQPEPIyAESTk</td>
+      <td>1.74</td>
+      <td>0.024</td>
+      <td>1.26</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>ENO1</td>
+      <td>Y44</td>
+      <td>P06733</td>
+      <td>aAVPSGASTGIyEALELR</td>
+      <td>1.64</td>
+      <td>0.004</td>
+      <td>1.18</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>ITGB4</td>
+      <td>Y1207</td>
+      <td>P16144</td>
+      <td>vcAYGAQGEGPySSLVScR</td>
+      <td>1.59</td>
+      <td>0.010</td>
+      <td>1.19</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>ANXA2</td>
+      <td>Y30</td>
+      <td>A6NMY6</td>
+      <td>ayTNFDAER</td>
+      <td>1.58</td>
+      <td>0.018</td>
+      <td>1.31</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>IGF1R</td>
+      <td>Y1165</td>
+      <td>P08069</td>
+      <td>dIYETDyYR</td>
+      <td>1.53</td>
+      <td>0.030</td>
+      <td>1.69</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>PTPRA</td>
+      <td>Y798</td>
+      <td>P18433</td>
+      <td>vVQEYIDAFSDyANFk</td>
+      <td>1.50</td>
+      <td>0.006</td>
+      <td>1.23</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>TLN1</td>
+      <td>Y26</td>
+      <td>Q9Y480</td>
+      <td>tMQFEPSTMVyDAcR</td>
+      <td>1.22</td>
+      <td>0.022</td>
+      <td>1.25</td>
+      <td>0.014</td>
+    </tr>
+  </tbody>
+</table>
+
 The increased quantity of BCAR3 pY peptides in Cul5-deficient cells could result from increased phosphorylation, increased protein level, or both. We used immunoblotting to test whether BCAR3 protein level is regulated by Cul5. BCAR3 protein level increased approximately fourfold in Cul5-deficient cells, under two different media conditions (Figure 1c). However, RNA levels were unaltered (Figure 1c), consistent with altered protein synthesis or degradation. To measure degradation, we inhibited new protein synthesis with cycloheximide and monitored BCAR3 protein level. BCAR3 half-life was approximately 4 hr in control cells but greater than 8 hr in Cul5-deficient cells (Figure 1d). BCAR3 degradation was inhibited by Cullin neddylation inhibitor MLN4924 or proteasome inhibitor MG132, but not by lysosome inhibitor Bafilomycin (Figure 1e). These results suggest that CRL5 regulates BCAR3 turnover by the ubiquitin-proteasome system and that the increase in BCAR3 pY117 and pY266 in Cul5-deficient cells is likely due to an increased availability of BCAR3 protein for phosphorylation rather than, or in addition to, an increase in kinase activity.
 
-## BCAR3 regulates epithelial cell migration
+### BCAR3 regulates epithelial cell migration
 
 BCAR3 is required for the migration of cancer cells and fibroblasts in single-cell assays (Cross et al., 2016; Schrecengost et al., 2007; Sun et al., 2012) but its importance in single and collective epithelial cell migration is unknown. We inhibited BCAR3 expression in MCF10A cells using siRNA or BCAR3 gene disruption (Figure 2a, Figure 2—figure supplement 1a). BCAR3-deficient cells migrated slower than control cells in single-cell migration and invasion assays, regardless of Cul5, suggesting that BCAR3 and CRL5 regulate single-cell migration independently (Figure 2b,c, Figure 2—figure supplement 1b and c). In contrast, in a collective migration scratch wound assay, BCAR3 was not required unless Cul5 was depleted (Figure 2d). Moreover, inspection of the wound edge revealed that BCAR3 is also needed for the increased lamellipodia length and ruffling in Cul5-depleted cells (Figure 2e–g). This epistatic relationship is consistent with CRL5 inhibiting BCAR3-dependent migration and lamellipodia under collective conditions, as found before for Cas (Teckchandani et al., 2014). We do not understand the differences between single-cell and collective migration, but can make use of single-cell assays to test the role of BCAR3 in normal cells and collective assays to test the role of BCAR3 when it is over-expressed or activated by Cul5 depletion.
 
-## CRL5 directly targets BCAR3 through SOCS6
+![Figure 2.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig2-v2.jpg)
+
+**Figure 2.:** MCF10A cells were transfected with control, BCAR3, or Cul5 siRNA. (a) Representative immunoblot showing BCAR3, Cul5, and vinculin protein levels. (b) Single cell migration using Boyden chamber assay. Mean ± SEM; n=3 biological replicates, each with five technical replicates. ***p<0.0005 and ****p<0.0001 (One-way ANOVA). (c) Invasion using Boyden chamber containing Matrigel. Mean ± SEM; n=3 biological replicates, each with five technical replicates. ****p<0.0001 (One-way ANOVA). (d–g) Collective migration. Confluent monolayers were placed in assay media and wounded. (d) Relative migration after 12 hr. Mean ± SEM; n=3 biological replicates each with 8–12 technical replicates. *p<0.05 (One-way ANOVA). (e) Representative images of scratch wounds after 6 hr of migration. Arrows indicate cells with membrane ruffles and lines indicate lamellipodia length measurements. Scale bar: 100 μm. (f) Percentage of ruffling cells. Mean ± SEM of >250 cells per condition from n=3 biological replicates. *p<0.05 and **p<0.005 (One-way ANOVA). (g) Lamellipodia length. Mean ± SEM of 50 cells per condition from n=3 biological replicates. *p<0.05 (One-way ANOVA).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) MCF10A subclone J8, selected for its epithelial morphology, was infected with an all-in-one CRISPR plasmid lacking or containing guide RNA against BCAR3 (guide 30 or 31). Potential knockouts were isolated through single cell expansion. Levels of BCAR3 and Cas in control clonal cell lines, 8.00.3 and 8.00.4, were similar to those in J8 or uncloned MCF10A cells. BCAR3-/- (KO) cell lines, 8.30.3, 8.30.4, and 8.31.4, express Cas but not BCAR3. These clones were confirmed by PCR and sequencing (Materials and methods). (b) Single-cell migration using a Boyden chamber assay. Mean ± SEM; n=3. **p<0.005 (unpaired t-test). (c) Invasion through Matrigel. Mean ± SEM; n=3. **p<0.005 (unpaired t-test).
+
+### CRL5 directly targets BCAR3 through SOCS6
 
 CRL5 promotes ubiquitination and degradation of substrate proteins bound to adaptor proteins (Okumura et al., 2016). CRL5 adaptors include SOCS family proteins, which contain SH2 domains for binding to pY. To test whether SOCS proteins bind BCAR3, we transiently expressed T7-tagged SOCS proteins and assayed binding to endogenous BCAR3 by immunoprecipitation and immunoblotting. BCAR3 specifically co-precipitated with SOCS6, the same adaptor that binds Cas (Figure 3a; Teckchandani et al., 2014). Accordingly, SOCS6 depletion increased BCAR3 steady-state protein levels and decreased the rate of BCAR3 turnover (Figure 3b,c). Together, these results suggest that CRL5SOCS6 mediates BCAR3 turnover.
 
@@ -59,7 +256,7 @@ CRL5 promotes ubiquitination and degradation of substrate proteins bound to adap
 
 Since BCAR3 and Cas bind each other and both are bound and regulated by SOCS6, it is possible that SOCS6 binds BCAR3 indirectly, through Cas. We tested this possibility by two strategies (Figure 3d). First, we used a BCAR3 mutant, L744E/R748E, called here BCAR3EE, that does not bind Cas (Wallez et al., 2014). This mutation inhibited binding to Cas but not SOCS6 (Figure 3e). Second, we found that BCAR3-SOCS6 binding occurred in cells from which Cas had been depleted with siRNA (Figure 3f). Collectively, these data suggest that SOCS6 binds to BCAR3 independently of Cas.
 
-## SOCS6 binds BCAR3 pY117
+### SOCS6 binds BCAR3 pY117
 
 We considered that SOCS6 might bind BCAR3 through pY-dependent or -independent interactions. Pervanadate, a cell-permeable phosphotyrosine phosphatase inhibitor, increased BCAR3-SOCS6 association, suggesting pY dependence (Figure 4a). In addition, disrupting the SOCS6 SH2 domain by deletion (ΔC) or point mutation (R407K) inhibited binding to BCAR3 (Figure 4b). This suggests that the SOCS6 SH2 domain binds pY-BCAR3. Serum or adhesion stimulates tyrosine phosphorylation of BCAR3 in mouse fibroblasts (Cai et al., 1999), but the specific sites have not been identified. High-throughput pY proteomics surveys have identified phosphorylation of BCAR3 at tyrosine residues 42, 117, 212, 266, and 429 in over 25 mouse and human cell lines (Hornbeck et al., 2019). We tested whether these sites were required for binding SOCS6 using site-directed mutagenesis (Figure 4c). BCAR3F5, in which all five tyrosines were changed to phenylalanines, was unable to bind SOCS6 (Figure 4d). By mutating each pY site individually, we found that Y117 is necessary to bind SOCS6 (Figure 4d). Furthermore, mutating all sites except Y117 (42, 212, 266, and 429) had little effect on SOCS6 binding (BCAR3F4 mutant, Figure 4e). These results support a model in which phosphorylation of BCAR3 at Y117 is both necessary and sufficient to bind the SOCS6 SH2 domain.
 
@@ -67,15 +264,23 @@ We considered that SOCS6 might bind BCAR3 through pY-dependent or -independent i
 
 **Figure 4.:** (a) Phosphatase inhibition increases SOCS6-BCAR3 binding. HeLa cells were transfected with T7-GFP or T7-SOCS6 and 3xFLAG-BCAR3 and treated with pervanadate or vehicle. Lysates were immunoprecipitated with T7 antibody and immunoprecipitates and lysates were immunoblotted with T7 and FLAG antibodies. (b) SOCS6-BCAR3 binding requires the SOCS6 SH2 domain. Cells were transfected with control vector and T7-tagged SOCS constructs, treated with pervanadate and lysed. Immunoprecipitation and immunoblotting as in (a). (c) BCAR3WT and phenylalanine (F) mutants. Residues Y42, Y117, Y212, Y266, and Y429 phosphorylation sites have been detected across a range of cell lines (http://www.PhosphoSite.org). (d, e) BCAR3 Y117 is necessary and sufficient for SOCS6 binding. HeLa cells were transfected with T7-GFP or T7-SOCS6 and SNAP-V5-BCAR3WT or YF mutants. Transfected cells were treated with pervanadate and lysed. Immunoprecipitation and immunoblotting as in (a).
 
-## CRL5-dependent BCAR3 turnover requires Y117 and Cas association, but not the SH2 domain or other tyrosine residues
+### CRL5-dependent BCAR3 turnover requires Y117 and Cas association, but not the SH2 domain or other tyrosine residues
 
 To test whether Y117 or other domains of BCAR3 are required for CRL5-dependent BCAR3 protein turnover, we measured the effect of various mutations on the level of tagged BCAR3 protein in control and Cul5-deficient cells. To avoid possible artifacts due to over-expression, we used a doxycycline-inducible promoter (Baron et al., 1997). MCF10A cells were first transduced to express the reverse tet transactivator (rtTA), and then transduced to express SNAP-V5-tagged wildtype or mutant BCAR3 under control of the tet operator. Cells were treated with doxycycline (dox) to induce wildtype or mutant BCAR3 expression, with or without knocking down endogenous BCAR3 with an siRNA targeting the 3’ UTR.
 
 We first examined the role of Y117 in BCAR3 turnover. BCAR3Y117F was expressed at approximately twofold higher level than BCAR3WT at the same concentration of dox (Figure 5a). Moreover, depleting Cul5 increased the level of BCAR3WT more than twofold while the level of BCAR3Y117F was unchanged (Figure 5b). This suggests that CRL5 regulates BCAR3 protein level dependent on Y117. BCAR3F4, which contains Y117 but not four other tyrosine phosphorylation sites, was also regulated by CRL5 (Figure 5c). These results are consistent with SOCS6 binding to pY117 and targeting BCAR3 for CRL5-dependent degradation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig5-v2.jpg)
+
+**Figure 5.:** (a) Y117F mutation increases BCAR3 protein level. SNAP-V5-BCAR3WT and Y117F MCF10A cells were induced with various dox concentrations (ng/mL). Lysates were immunoblotted with BCAR3 antibody to detect endogenous and induced SNAP-V5-BCAR3. (b) Cul5 regulates BCAR3 protein level through Y117. Representative immunoblot and quantification of BCAR3 protein in siRNA-treated, dox-induced SNAP-V5-BCAR3WT and Y117F cells. Mean ± SEM; n=3 biological replicates. ***p<0.001 by t-test. (c) Cul5 does not regulate SNAP-V5-BCAR3 F4. Mean ± SEM; n=3. ns, not significant. (d) Cul5 regulates SNAP-V5-BCAR3R177K but not EE. Mean ± SEM; n=3. **p<0.005 by t-test. Vertical lines indicate different immunoblots, each run with its own wild-type control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** SNAP-V5-BCAR3WT and mutants were induced in MCF10A cells with 10 ng/mL dox for 48 hr. Lysates were immunoprecipitated with V5 antibody and lysates and immunoprecipitates immunoblotted with Cas and V5 antibodies.
+
 We extended this approach to test the importance of the BCAR3 SH2 domain and Cas binding site for degradation. To inactivate the BCAR3 SH2 domain, we created an arginine to lysine at residue 177 (R177K), which lies in the consensus FLVRES motif and is required to bind the pY phosphate (Jaber Chehayeb and Boggon, 2020; Marengere and Pawson, 1994). Cul5-depletion increased the level of BCAR3R177K (Figure 5d), suggesting this mutant is still phosphorylated at Y117 and targeted by CRL5. In contrast, BCAR3EE, which binds SOCS6 (Figure 3e) but not Cas (Figure 3e and Figure 5—figure supplement 1), was not regulated by CRL5. Taken together, these results suggest that pY117 and Cas association are required for CRL5-dependent turnover of BCAR3 expressed at near endogenous level.
 
-## Lamellipodial ruffling and cell migration require BCAR3 Y117, SH2 domain, and Cas association
+### Lamellipodial ruffling and cell migration require BCAR3 Y117, SH2 domain, and Cas association
 
 Over-expression of BCAR3 in fibroblasts and breast cancer cells stimulates Cas-dependent functions, such as lamellipodia ruffling (Cai et al., 2003; Wallez et al., 2014; Wilson et al., 2013). Similarly, BCAR3WT increased membrane ruffling when over-expressed in MCF10A cells (Figure 6a). Since BCAR3Y117F accumulates to higher levels, we suspected it may be more active in biological assays. However, contrary to expectations, ruffling was induced by over-expressing BCAR3F4 but not BCAR3Y117F, BCAR3R177K or BCAR3EE (Figure 6a). Similarly, when endogenous BCAR3 is depleted, BCAR3WT and BCAR3F4, but not BCAR3Y117F, BCAR3R177K or BCAR3EE, were able to rescue single-cell migration (Figure 6b) and increase collective migration and lamellipodia ruffling of Cul5-deficient cells (Figure 6c). This suggests that Y117 has two roles. First, Y117 is the main phosphorylation site for BCAR3 down-regulation. Second, it is also the main phosphorylation site for BCAR3 function, cooperating with the SH2 domain and Cas to promote single-cell and collective migration and lamellipodial dynamics in the presence and absence of Cul5.
 
@@ -83,7 +288,7 @@ Over-expression of BCAR3 in fibroblasts and breast cancer cells stimulates Cas-d
 
 **Figure 6.:** (a) Over-expression induced ruffling. MCF10A cells transduced with wildtype or mutant SNAP-V5-BCAR3 viruses were induced with various dox concentrations (ng/mL). Confluent monolayers were starved for EGF and wounded. The percentage of ruffling cells was calculated after 6 hr. Mean ± SEM; n=3–6. ***p=0.0001 and ****p<0.0001 (One-way ANOVA). (b) Rescue of single-cell migration. Cells were treated with control or BCAR3 siRNA and expression of wildtype or mutant SNAP-V5-BCAR3 induced with 10 ng/mL dox. Boyden chamber assay. Mean ± SEM; n=3 biological replicates, each with five technical replicates. ***p<0.0005 (One-way ANOVA). (c) Rescue of Cul5-regulated ruffling and collective cell migration. Cells were treated with BCAR3 siRNA and control or Cul5 siRNA and expression of wildtype or mutant SNAP-V5-BCAR3 induced with 10 ng/mL dox. Scratch wound assay. (Left) Percentage of ruffling cells. Mean ± SEM of >250 cells per condition from n=3–6 experiments. ****p<0.0001 (One-way ANOVA). (Right) Relative migration. Mean ± SEM; n=3–6 biological replicates, each with 8–12 technical replicates. ****p<0.0001 (One-way ANOVA).
 
-## Cas recruits BCAR3 to integrin adhesions
+### Cas recruits BCAR3 to integrin adhesions
 
 These findings raise the question of how BCAR3 Y117, SH2 domain, and Cas binding cooperate to regulate MCF10A cell motility. Previous studies in cancer cells and fibroblasts found that BCAR3 localizes to integrin adhesions (Cross et al., 2016; Sun et al., 2012) and that BCAR3 over-expression can increase Cas in membrane ruffles (Riggins et al., 2003). Increased Cas could then activate lamellipodia dynamics through the established Cas/Crk/DOCK180/Rac pathway (Klemke et al., 1998; Sakai et al., 1994; Sanders and Basson, 2005; Sharma and Mayer, 2008). These findings suggest that BCAR3’s Y117 and SH2 domain may be needed for BCAR3 to correctly localize Cas. To explore this possibility, we monitored the effect of depleting BCAR3 on Cas localization and the effect of depleting Cas on BCAR3 localization. We were unable to detect endogenous BCAR3 by immunofluorescence with available antibodies, so we expressed SNAP-V5-BCAR3 at near endogenous levels and detected the fusion protein with SNAP ligand (Grimm et al., 2015; Keppler et al., 2003). Both Cas and BCAR3WT localized to adhesions in the leading edge of collectively migrating cells. Cas remained in adhesions when BCAR3 was depleted (Figure 7a). In contrast, BCAR3 was absent from adhesions when Cas was depleted (Figure 7b). Thus, BCAR3 requires Cas to localize in adhesions, and not vice versa. Consistently, all BCAR3 mutants that bound Cas were present in adhesions (Figure 8a,b, Figure 5—figure supplement 1). Together, these results suggest that Cas localizes to adhesions independent of BCAR3 and that Cas brings BCAR3 to adhesions by direct binding.
 
@@ -91,7 +296,23 @@ These findings raise the question of how BCAR3 Y117, SH2 domain, and Cas binding
 
 **Figure 7.:** (a) Cas localization does not require BCAR3. MCF10A cells were treated with control or BCAR3 siRNA. Scratch wounds were stained for Cas and paxillin. (Left) Maximum intensity projection images. Arrowheads: adhesion sites at the leading edge. Scale bar: 10 µm. (Center) Mean fluorescence intensity of Cas relative to paxillin in adhesion sites at the leading edge. Mean ± SEM; n=10 cells from two biologically independent experiments. ns, not significant. (Right) Immunoblot. (b) BCAR3 localization requires Cas. SNAP-V5-BCAR3WT MCF10A cells were treated with control or Cas siRNA and induced with 10 ng/mL dox. Scratch wounds were stained for SNAP and paxillin. (Left) Maximum intensity projection images. (Center) Mean fluorescence intensity of SNAP-BCAR3 relative to paxillin in adhesion sites at the leading edge. Mean ± SEM; n=11–14 cells from two biologically independent experiments. ****p<0.0001 by unpaired t-test. (Right) Immunoblot.
 
-## BCAR3 activates Cas, dependent on BCAR3 Y117 and SH2 domain
+![Figure 8.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig8-v2.jpg)
+
+**Figure 8.:** (a) Wildtype or mutant SNAP-V5-BCAR3 MCF10A cells were treated with control or BCAR3 siRNA and induced with 10 ng/mL dox. Scratch wound were stained for SNAP, pY165-Cas and paxillin. Maximum intensity projection. Scale bar = 10 µm. (b) Mean fluorescence intensity of SNAP-V5-BCAR3 relative to paxillin in adhesion sites at the leading edge. Mean ± SEM. ****p<0.0001 (One-way ANOVA). (c) Mean fluorescence intensity of pY165-Cas relative to paxillin in adhesion sites at the leading edge. Mean ± SEM. ****p<0.0001 (One-way ANOVA).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** MCF10A scratch wounds were stained for pY165-Cas and paxillin. (a) Cas siRNA inhibits pY165-Cas immunofluorescence. (b) Dasatinib inhibits pY-165-Cas immunofluorescence. (Left) Maximum intensity projection images. Scale bar = 10 µm. (Right) Mean fluorescence intensity of pY165-Cas relative to paxillin in adhesion sites at the leading edge. Mean ± SEM; n=8–9 cells from one experiment. ****p<0.0001 unpaired t-test.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Control or BCAR3-depleted MCF10A scratch wounds were stained for paxillin and (a) pY165-Cas, (b) pY397-FAK or (c) pY861-FAK. (Left) Maximum intensity projection images. Scale bar = 10 µm. (Right) Mean fluorescence intensity of (a) pY165-Cas, (b) pY397-FAK or (c) pY861-FAK relative to paxillin in adhesion sites at the leading edge. Mean ± SEM; n=10 cells from one experiment. **p<0.01, ****p<0.0001 and p>0.05 by unpaired t-test.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/67078/elife-67078-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (a) Wildtype or mutant SNAP-V5-BCAR3 MCF10A cell scratch wounds were stained for Cas and paxillin. Maximum intensity projection. Scale bar = 10 μm. (b) Mean fluorescence intensity of Cas relative to paxillin in adhesion sites at the leading edge. Mean ± SEM. P>0.05 (One-way ANOVA). (c) Immunoblot of Cas and BCAR3 in siRNA-treated, dox-induced SNAP-V5-BCAR3WT and mutant cells.
+
+### BCAR3 activates Cas, dependent on BCAR3 Y117 and SH2 domain
 
 Since BCAR3 does not regulate Cas localization, what is the function of Y117 and the SH2 domain? We considered that BCAR3 may activate Cas. To monitor Cas activity, we used antibodies to pY165, one of the repeated YxxP motifs in Cas that recruit Crk (Fonseca et al., 2004; Sakai et al., 1994; Songyang et al., 1993). Cas pY165 in leading edge adhesions was abolished by SFK inhibition or Cas depletion, consistent with Cas activity (Figure 8—figure supplement 1). Notably, Cas activity was inhibited when BCAR3 was depleted (Figure 8—figure supplement 2a). As expected, BCAR3WT and BCAR3F4 rescued Cas activity in BCAR3-depleted cells (Figure 8a,c). However, Cas activity was not rescued by BCAR3Y117F, BCAR3R177K, or BCAR3EE, even though Cas was still present (Figure 8a,c, Figure 8—figure supplement 3). Cas activation in adhesions correlated with the rescue of ruffling and migration (Figures 6b and 8). This suggests that BCAR3 not only has to be bound to Cas but also needs Y117 and its SH2 domain to activate Cas and promote downstream signaling. To test whether BCAR3 activates Cas specifically or phosphorylation more generally, we also stained for FAK pY397 and pY861. The former is a FAK autophosphorylation site and the latter is phosphorylated by SFKs (Mitra and Schlaepfer, 2006). We found that BCAR3 depletion did not inhibit FAK autophosphorylation at pY397 but did inhibit FAK pY861 (Figure 8—figure supplement 2b and c), consistent with a general role of BCAR3 in stimulating SFKs in adhesions. Taken together, these results suggest that BCAR3 is brought to integrin adhesions by binding to Cas, where it uses its Y117 and SH2 domain to activate SFKs, Cas and downstream signaling, leading to lamellipodial ruffling and migration.
 
@@ -107,13 +328,104 @@ Our results support a multi-step model (Figure 9). First, Cas associates with ac
 
 Where is Y117 phosphorylated and how does it activate SFKs? We have been unable to generate a phospho-specific antibody with the sensitivity and specificity to localize pY117 BCAR3 in cells. However, we suspect that phosphorylation may occur in adhesions, because BCAR3EE, which does not localize to adhesions, is not subject to pY117-dependent turnover by CRL5. After Y117 is phosphorylated, we infer that BCAR3 activates SFKs in adhesions to phosphorylate Cas and FAK. Indeed, previous studies reported SFK activation by BCAR3 (Riggins et al., 2003; Schuh et al., 2010; Sun et al., 2012). One potential mechanism involves pY-PTPRA binding to the BCAR3 SH2 domain and bringing the BCAR3-Cas complex to adhesions where Cas is phosphorylated by SFKs (Sun et al., 2012). Since PTPRA is able to activate SFKs (Ponniah et al., 1999; Su et al., 1999; Zheng et al., 2000), this is an attractive model. However, in our studies, the BCAR3 SH2 domain is not needed to localize either BCAR3 or Cas, suggesting that Cas-BCAR3 would bring PTPRA to adhesions rather than vice versa. In addition, PTPRA depletion does not inhibit Cas Y165 phosphorylation (data not shown). An alternative is that pY117 binds the SH2 domain of an SFK or an unidentified protein that activates SFKs. The Y117 sequence is conserved across vertebrates and a homologous residue is present in Shep1, a second NSP family protein that activates Cas (Roselli et al., 2010). However, the sequence does not suggest which SH2 domain may bind other than SOCS6 (Krebs et al., 2002; Simó and Cooper, 2013; Teckchandani et al., 2014; Zadjali et al., 2011; Table 2). The presence of a positively charged residue two residues after the phosphosite is predicted to inhibit binding to SFKs (Songyang et al., 1993). Therefore, pY117 may bind another SH2 protein that activates SFKs, or may stimulate Cas phosphorylation by an allosteric mechanism or by altering binding to other charged molecules, such as membrane phospholipids.
 
+**Table 2.**
+ Sequence alignment of SOCS6-binding sites.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Residue</th>
+      <th>Sequence*</th>
+      <th colspan="3">Evidence (reference)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>peptide†</th>
+      <th>mutant‡</th>
+      <th>biology§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kit</td>
+      <td>pY568</td>
+      <td>gnnYVYIdptq</td>
+      <td>(1,2)</td>
+      <td>(1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PDGFR</td>
+      <td>pY579</td>
+      <td>gheYIYVdpmq</td>
+      <td>(2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flt3</td>
+      <td>pY591</td>
+      <td>eyfYVdFreye</td>
+      <td>(3)</td>
+      <td>(3)</td>
+      <td>(3)</td>
+    </tr>
+    <tr>
+      <td>Flt3</td>
+      <td>pY919</td>
+      <td>eeiYIiMqscw</td>
+      <td>(3)</td>
+      <td>(3)</td>
+      <td>(3)</td>
+    </tr>
+    <tr>
+      <td>Cas</td>
+      <td>pY664</td>
+      <td>medYdYVhlqg</td>
+      <td></td>
+      <td>(4)</td>
+      <td>(4)</td>
+    </tr>
+    <tr>
+      <td>Dab1</td>
+      <td>pY198</td>
+      <td>dpvYqYIvfea</td>
+      <td></td>
+      <td>(5)</td>
+      <td>(5-6)</td>
+    </tr>
+    <tr>
+      <td>BCAR3</td>
+      <td>pY117</td>
+      <td>tveYVkFsker</td>
+      <td></td>
+      <td>(7)</td>
+      <td>(7)</td>
+    </tr>
+    <tr>
+      <td>Spot array¶</td>
+      <td></td>
+      <td>xxxYVYIxxxx xxxYIFFxxxx xxxYMWMxxxx xxxYWVVxxxx</td>
+      <td>(8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Local sequence aligned to phosphotyrosine (Y). Capital letters indicate residues at +1 to +3 positions that fit the consensus from the spot array.† Phosphopeptide binds to SH2 domain in vitro.‡ Decreased binding of Y to F mutant protein in cells.§ Y to F mutant is stabilized or gains function in cells.¶ A library of phosphopeptides randomized at positions +one to +three was selected by binding to the SOCS6 SH2 domain. Bound peptides were sequenced. Residues selected at each position are shown in decreasing order of preference. References: (1) (Bayle et al., 2004) (2) (Zadjali et al., 2011) (3) (Kazi et al., 2012) (4) (Teckchandani et al., 2014) (5) (Feng and Cooper, 2009) (6) (Simó and Cooper, 2013) (7) this work, (8) (Krebs et al., 2002)._
+
 Our results reveal that BCAR3 Y117 is required for both signaling and degradation. This means that BCAR3 activation triggers BCAR3 degradation in a negative feedback loop. The dual use of a single site for activation and degradation resembles Y198 of the neuron migration protein Dab1, which binds downstream signaling molecules and also recruits SOCS6/7 for CRL5-dependent degradation (Simó and Cooper, 2013). Mutating the SOCS-binding site in BCAR3 or Dab1 generates a non-functional protein that accumulates at higher level. In contrast, the SOCS6-binding site in Cas is not needed for downstream signaling, so mutating the site causes increased levels of an active protein and a dominant gain-of-function phenotype (Teckchandani et al., 2014).
 
 Our finding that BCAR3 is subject to complex post-translational regulation may be helpful in reconciling the observation that BCAR3 over-expression in cell culture is oncogenic whereas increased BCAR3 RNA expression correlates with favorable outcomes in patients (Guo et al., 2014; Wallez et al., 2012; Zhang et al., 2018). Post-translational regulation of protein degradation means that BCAR3 protein levels may not correlate with RNA levels in patient samples. In addition to the phosphorylation-dependent mechanism investigated here, a previous study showed that TGFβ stimulates proteasomal degradation of BCAR3 (Guo et al., 2014), and over-expressed BCAR3 and Cas appear to stabilize each other in breast cancer cells, dependent on their mutual binding (Wallez et al., 2014). Changes in BCAR3 protein stability or phosphorylation state might influence BCAR3 activity in patients, but such regulation at the protein level might not be accounted for when correlating patient outcomes with gene expression. Thus, further study is required to understand mechanisms of BCAR3 regulation and how mis-regulation may contribute to disease progression.
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 pMXpuroII and pMXpuroII-shCul5 plasmids were made as previously described (Teckchandani et al., 2014). pLKO.1-nontarget small hairpin RNA (shRNA) control vector (SHC002) and pLKO.1-shSOCS6 (TRCN0000284351) were purchased (Sigma Aldrich). pCAG-T7-mSOCS1, pCAG-T7-mSOCS2, pCAG-T7-mSOCS3, pCAG-T7-mSOCS4, pCAG-T7-mSOCS5, pCAG-T7-mSOCS6, pCAG-T7-mSOCS7, and pCAG-T7-mCisH were made as previously described (Simó and Cooper, 2013; Teckchandani et al., 2014). All pCAG-T7-SOCS plasmids used in this work have LC-QQ mutations in the SOCS box to prevent binding to CRL5, and were made using PfuTurbo DNA polymerase to perform site-directed mutagenesis followed by DpnI digestion. pCAG-T7-mSOCS6 R407K was made as previously described (Teckchandani and Cooper, 2016). pCAG-T7-mSOCS6 ΔC was made by PCR amplifying codons 1–381 of mSOCS6 using a 5’ primer complementary to the T7 tag and a 3’ primer that inserts a stop codon and a NotI site after codon 381. The PCR product was inserted into pCAG-T7-SOCS6 by BamH1/NotI restriction digest and ligation.
 
@@ -121,7 +433,7 @@ pCMV-SPORT6-mBCAR3 was purchased from the Harvard Plasmid Database (MmCD00318547
 
 rtTA-N144 was a gift from Andrew Yoo (Addgene plasmid # 66810). pLTRE3G-SNAP-V5-hBCAR3 was made as follows. A gBlock containing sequence for SNAP-V5 tags was inserted into pLenti CMVTRE3G eGFP Blast (w818-1) (gift of Eric Campenau, Addgene #27568) at the AgeI restriction site using Gibson Assembly to make pLTRE3G-SNAP-V5-eGFP. hBCAR3 was PCR amplified with flanking AgeI and XbaI sites and inserted into AgeI and XbaI-digested pLTRE3G-SNAP-V5-eGFP to make pLTRE3G-SNAP-V5-hBCAR3. pLTRE3G-SNAP-V5-hBCAR3 mutants were made as follows. Single mutants Y42F, Y212F, Y266F, Y429F, R177K, and double mutant EE (L744E/R748E) were made by site-directed mutagenesis with Q5 polymerase (New England Biolabs) and Dpn1 digestion. The Y117F mutant was made by Gibson Assembly. A gBlock containing the BCAR3 Y117F mutation was assembled into pLTRE3G-SNAP-V5-hBCAR3 WT. pLTRE3G-SNAP-V5-hBCAR3 F5 was made by BamHI restriction digest of pLTRE3G-SNAP-V5-hBCAR3 Y42F, discarding the region between codon 107 and 763 and inserting the corresponding region from pLX304-hBCAR3-F5-V5. pLTRE3G-SNAP-V5-hBCAR3 F4 was made by PshAI restriction digest of pLTRE3G-SNAP-V5-hBCAR3 F5, discarding the region between codon 67 and 163 inserting the corresponding region from pLTRE3G-SNAP-V5-hBCAR3 WT.
 
-## Cell lines
+### Cell lines
 
 Parental cell lines were originally obtained from ATCC and confirmed by DNA fingerprinting using short tandem repeat, or STR, typing. Cell lines were screened periodically for mycoplasma using the MycoProbe kit from R and D Systems.
 
@@ -133,13 +445,139 @@ BCAR3-/- MCF10A cells were made as follows. Early passage MCF10A cells were seri
 
 MCF10A dox-inducible SNAP-V5 BCAR3 cells were made as follows. Viruses containing rtTA-N144 were packaged using 293 T cells and used to infect MCF10A cells. A stable line was selected using 50 µg/mL hygromycin. The MCF10A cell line stably expressing rtTA was then infected with viruses containing one of the pLTRE3G-SNAP-V5 constructs (pLTRE3G-SNAP-V5-eGFP, pLTRE3G-SNAP-V5-BCAR3 WT, Y42F, Y117F, Y212F, Y266F, Y429F, F5, F4, R177K, or EE). Stable lines were selected using 10 µg/mL blasticidin. Each cell line was hygromycin resistant and blasticidin resistant; however, not all cells within each line expressed the SNAP-V5-containing construct following induction with 50–100 ng/mL dox for 48–72 hr. To remove non-inducible cells, dox-treated cells were treated with 100 nM JaneliaFluor cp646JF-SNAP-ligand (Lavis Lab, Janelia Farms) (Grimm et al., 2015) for 1 hr, washed three times with PBS, incubated in ligand-free growth media for an hour and positive cells were sorted and harvested by FACS using the APC channel to detect cp646JF.
 
-## Antibodies and reagents
+### Antibodies and reagents
 
-AntibodySupplierCatalogDilutionRabbit anti-BCAR3BethylA301-671A-MWestern (1:2000)Rabbit anti-Cas (C-20)Santa Cruzsc-860Western (1:1000)Mouse anti-CasBD Biosciences610271Western (1:5000)Mouse anti-CasSanta Cruzsc-20029IF (1:100)Rabbit anti-pY165 CasCell Signaling4015SIF (1:200)Rabbit anti-Cullin5Abcamab184177Western (1:1000)Rabbit anti-pY397 FAKFisher44–624GIF (1:200)Rabbit anti-pY861 FAKFisher Scientific44–626GIF (1:200)Rabbit anti-GAPDH (0411)Santa Cruzsc-47724Western (1:1000)Mouse anti-vinculinSigmaV9131Western (1:10000)Mouse anti-paxillinBD Biosciences610051IF (1:200)Sheep anti-paxillinR and D SystemsAF4259IF (1:200)Mouse anti-FLAGSigmaF1804Western (1:1000)Mouse anti-T7EMB Biosciences69522–4Western (1:5000) IPRabbit anti-V5BethylA190-120AWestern (1:5000) IPAlexaFluor 488 goat anti-rabbit IgG (H+L)InvitrogenA11008IF (1:1000)AlexaFluor 647 goat anti-mouse IgG (H+L)InvitrogenA28181IF (1:1000)AlexaFluor 647 goat anti-sheep IgG (H+L)InvitrogenA21448IF (1:1000)
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th colspan="2">Supplier</th>
+      <th>Catalog</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rabbit anti-BCAR3</td>
+      <td>Bethyl</td>
+      <td colspan="2">A301-671A-M</td>
+      <td>Western (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Cas (C-20)</td>
+      <td>Santa Cruz</td>
+      <td colspan="2">sc-860</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-Cas</td>
+      <td>BD Biosciences</td>
+      <td colspan="2">610271</td>
+      <td>Western (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-Cas</td>
+      <td>Santa Cruz</td>
+      <td colspan="2">sc-20029</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-pY165 Cas</td>
+      <td>Cell Signaling</td>
+      <td colspan="2">4015S</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Cullin5</td>
+      <td>Abcam</td>
+      <td colspan="2">ab184177</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-pY397 FAK</td>
+      <td>Fisher</td>
+      <td colspan="2">44–624G</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-pY861 FAK</td>
+      <td>Fisher Scientific</td>
+      <td colspan="2">44–626G</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-GAPDH (0411)</td>
+      <td>Santa Cruz</td>
+      <td colspan="2">sc-47724</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-vinculin</td>
+      <td>Sigma</td>
+      <td colspan="2">V9131</td>
+      <td>Western (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-paxillin</td>
+      <td>BD Biosciences</td>
+      <td colspan="2">610051</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Sheep anti-paxillin</td>
+      <td>R and D Systems</td>
+      <td colspan="2">AF4259</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-FLAG</td>
+      <td>Sigma</td>
+      <td colspan="2">F1804</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-T7</td>
+      <td>EMB Biosciences</td>
+      <td colspan="2">69522–4</td>
+      <td>Western (1:5000) IP</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-V5</td>
+      <td>Bethyl</td>
+      <td colspan="2">A190-120A</td>
+      <td>Western (1:5000) IP</td>
+    </tr>
+    <tr>
+      <td>AlexaFluor 488 goat anti-rabbit IgG (H+L)</td>
+      <td>Invitrogen</td>
+      <td colspan="2">A11008</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>AlexaFluor 647 goat anti-mouse IgG (H+L)</td>
+      <td>Invitrogen</td>
+      <td colspan="2">A28181</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>AlexaFluor 647 goat anti-sheep IgG (H+L)</td>
+      <td>Invitrogen</td>
+      <td colspan="2">A21448</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Reagents used: cycloheximide (Sigma), epidermal growth factor (Invitrogen), MLN4924 (Active Biochem), MG132 (Fisher Scientific), bafilomycin A, doxycycline (Fisher Scientific).
 
-## Mass spectrometry
+### Mass spectrometry
 
 MCF10A EV and shCul5 cells were grown in 15 cm plates, two plates per condition, to approximately 80% confluence, washed in PBS, and lysed in 3 mL per plate of ice-cold 8 M urea containing 1 mM sodium orthovanadate. Proteins were reduced, alkylated and digested with trypsin as described (Zhang et al., 2005). Peptide labeling with iTRAQ reagents (TMT 6plex, Themo Fisher Scientific) was performed according to the manufacturer’s instructions, using 400 μg of each sample. After reaction, the six samples were combined and concentrated under vacuum. For immunoprecipitation, protein G agrarose (60 μl, Millipore) was incubated with anti-phosphotyrosine antibodies (12 μg 4G10 [Millipore], 12 μg PT66 [Sigma] and 12 μg PY100 [Cell Signaling Technology] for 8 hr at 4°C with rotation, then washed with 400 μl IP buffer [100 mM Tris HCl, 100 mM NaCl, and 1% Nonidet P-40, pH 7.4]). The TMT-labeled peptides were resuspended in 400 μl IP buffer and pH adjusted to 7.4, then mixed with the antibody-conjugated protein G agarose overnight at 4°C with rotation. The antibody beads were spun down and the supernatant saved. The beads were washed with 400 μl IP buffer then four rinses with 100 mM Tris HCl pH 7.4 before elution with 70 μl of 100 mM glycine, pH 2.0 for 30 min at 25°C. Offline immobilized metal affinity chromatography (IMAC) was used to further enrich for phosphotyrosine peptides (Zhang et al., 2005).
 
@@ -147,45 +585,132 @@ Peptides were loaded on a precolumn and separated by reverse phase HPLC using an
 
 MCF10A cells were trypsinized and seeded in growth medium into a 12-well plate so as to be 50% confluent after attaching. A mixture of 50 pmol siRNA, 1.25 μl Lipofectamine 2000 (Invitrogen) in Optimem medium (Invitrogen) was added to the newly plated MCF10A cells and left for the cells to attach overnight. The next day the media was changed to fresh growth media. A second siRNA transfection was done 48 hr after the first transfection using the same protocol scaled up to use a six-well plate (125 pmol siRNA) or scaled down to use a 96-well plate (for migration assays). One day later, cells from the six-well dish were transferred to 4-well plates containing 12 mm coverslips for microscopy, or 12-well plates for protein analysis. Doxycline was added as needed at 10 ng/mL for 2–3 days before analysis. Cells were either lysed 48 hr after the second transfection or assays were performed as described.
 
-siRNATarget sequenceSourceNotesCatalogControl siRNA5’-AATTCTCCCGAACGTGTCACGT-3’Qiagen1027310SOCS6 siRNA Pool5’-TAGAATCGTGAATTGACATAA-3’ 5’-CAGCTGCGATATCAACGGTGA-3’ 5’-TTGATCTAATTGAGCATTCAA-3’ 5’-CGGGTACAAATTGGCATAACA-3’QiagenSI00061383 SI03068359 SI00061369 SI00061376Cul5 siRNA Pool5’-GACACGACGTCTTATATTA-3’ 5’-CGTCTAATCTGTTAAAGAA-3’ 5’-GATGATACGGCTTTGCTAA-3’ 5’-GTTCAACTACGAATACTAA-3’GE DharmaconM-019553-01-0005BCAR1 siRNA Pool5’-AAGCAGTTTGAACGACTGGAA-3’ 5’-CTGGATGGAGGACTATGACTA-3’ 5’-CAGCATCACGCGGCAGGGCAA-3’ 5’-CAACCTGACCACACTGACCAA-3’QiagenSI02757741 SI02757734 SI04438280 SI04438273BCAR3 siRNA Pool5’-CCGGAACTCTGGCGTCAACTA-3’ 5’-CCGAGCGGCCACTCTGAGTAA-3’ 5’-GCCCAACGAGTTTGAGTCAAA-3’ 5’-AAGGTATCAGTTATATGATAT-3’QiagenSI03081603 SI03080196 SI00053102 SI00053095BCAR3 siRNA5’-GGUAACUACUGCUAAUGUUTT-3’Life TechnologiesTargets 3’UTRAM16708
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Target sequence</th>
+      <th>Source</th>
+      <th>Notes</th>
+      <th>Catalog</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control siRNA</td>
+      <td>5’-AATTCTCCCGAACGTGTCACGT-3’</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>1027310</td>
+    </tr>
+    <tr>
+      <td>SOCS6 siRNA Pool</td>
+      <td>5’-TAGAATCGTGAATTGACATAA-3’ 5’-CAGCTGCGATATCAACGGTGA-3’ 5’-TTGATCTAATTGAGCATTCAA-3’ 5’-CGGGTACAAATTGGCATAACA-3’</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>SI00061383 SI03068359 SI00061369 SI00061376</td>
+    </tr>
+    <tr>
+      <td>Cul5 siRNA Pool</td>
+      <td>5’-GACACGACGTCTTATATTA-3’ 5’-CGTCTAATCTGTTAAAGAA-3’ 5’-GATGATACGGCTTTGCTAA-3’ 5’-GTTCAACTACGAATACTAA-3’</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>M-019553-01-0005</td>
+    </tr>
+    <tr>
+      <td>BCAR1 siRNA Pool</td>
+      <td>5’-AAGCAGTTTGAACGACTGGAA-3’ 5’-CTGGATGGAGGACTATGACTA-3’ 5’-CAGCATCACGCGGCAGGGCAA-3’ 5’-CAACCTGACCACACTGACCAA-3’</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>SI02757741 SI02757734 SI04438280 SI04438273</td>
+    </tr>
+    <tr>
+      <td>BCAR3 siRNA Pool</td>
+      <td>5’-CCGGAACTCTGGCGTCAACTA-3’ 5’-CCGAGCGGCCACTCTGAGTAA-3’ 5’-GCCCAACGAGTTTGAGTCAAA-3’ 5’-AAGGTATCAGTTATATGATAT-3’</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>SI03081603 SI03080196 SI00053102 SI00053095</td>
+    </tr>
+    <tr>
+      <td>BCAR3 siRNA</td>
+      <td>5’-GGUAACUACUGCUAAUGUUTT-3’</td>
+      <td>Life Technologies</td>
+      <td>Targets 3’UTR</td>
+      <td>AM16708</td>
+    </tr>
+  </tbody>
+</table>
 
-## qPCR
+### qPCR
 
 An RNeasy Plus Mini kit (Qiagen) was used to extract RNA and an iScript reverse transcription supermix (BioRad) was used to make cDNA. Control reactions lacked reverse transcriptase. cDNA abundance was measured using an iTaq Universal SYBR Green Supermix kit (BioRad). Samples were run on the QuantStudio 5 Real-Time PCR System.
 
-PrimerSequenceBCAR3 forward5’ – AATCGCTTCTCCAAACAGAGC – 3’BCAR3 reverse5’ – ATTCACCGGCATGTTTCTGG – 3’Cul5 forward5’ – TTTTATGCGCCCGATTGTTTTG – 3’Cul5 reverse5’ – TTGCTGGGCCTTTATCATCCC – 3’GAPDH forward5’ – CAGCCTCAAGATCATCAGCA – 3’GAPDH reverse5’ – TGTGGTCATGAGTCCTTCCA – 3’
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BCAR3 forward</td>
+      <td>5’ – AATCGCTTCTCCAAACAGAGC – 3’</td>
+    </tr>
+    <tr>
+      <td>BCAR3 reverse</td>
+      <td>5’ – ATTCACCGGCATGTTTCTGG – 3’</td>
+    </tr>
+    <tr>
+      <td>Cul5 forward</td>
+      <td>5’ – TTTTATGCGCCCGATTGTTTTG – 3’</td>
+    </tr>
+    <tr>
+      <td>Cul5 reverse</td>
+      <td>5’ – TTGCTGGGCCTTTATCATCCC – 3’</td>
+    </tr>
+    <tr>
+      <td>GAPDH forward</td>
+      <td>5’ – CAGCCTCAAGATCATCAGCA – 3’</td>
+    </tr>
+    <tr>
+      <td>GAPDH reverse</td>
+      <td>5’ – TGTGGTCATGAGTCCTTCCA – 3’</td>
+    </tr>
+  </tbody>
+</table>
 
-## Cell lysis and immunoblotting
+### Cell lysis and immunoblotting
 
 Cells were washed three times in phosphate-buffered saline (PBS) before lysis. Cells were lysed in X-100 buffer (1% Triton X-100, 150 mM NaCl, 10 mM HEPES pH 7.4, 2 mM EDTA, 50 mM NaF) or RIPA buffer (1% Triton X-100, 1% sodium deoxycholate, 0.1% SDS, 20 mM Tris-HCl pH 7.4, 150 mM NaCl, 5 mM EDTA, 5 mM EGTA) with fresh protease and phosphatase inhibitors (10 μg/mL Aprotinin, 1 mM PMSF, 1 mM sodium vanadate) added before use.
 
 Lysates were adjusted to SDS sample buffer, heated to 95°C, resolved by SDS-PAGE using 10% polyacrylamide/0.133% bis-acrylamide gels, and transferred onto nitrocellulose membrane. The membrane was blocked in Odyssey blocking buffer (TBS) (LI-COR Biosciences) with 5% BSA for phosphotyrosine antibodies or 5% non-fat dry milk for all other antibodies. Following blocking, the membrane was probed with a primary antibody followed by IRDye 800CW goat anti-rabbit or 680RD goat anti-mouse conjugated secondary antibodies. Membranes were visualized using the Odyssey Infrared Imaging System (LI-COR Biosciences). Bands were quantified using ImageJ.
 
-## DNA transfections and immunoprecipitation
+### DNA transfections and immunoprecipitation
 
 HeLa cells were plated in six-well plates the day before transfection such that cells were 50% confluent on the day of transfection. A mixture of DNA, Lipofectamine 2000 (Thermo Fisher Scientific) and Optimem (Invitrogen) was made according to manufacturer’s protocol, added to the cells and removed after 5 hr.
 
 Immunoprecipitation experiments were conducted 24–48 hr after transfection. For indicated experiments, cells were incubated with 1 mM sodium pervanadate for 30 min. Cells were lysed on ice in X-100 buffer with fresh protease and phosphatase inhibitors (see above). Lysates were cleared by centrifugation for 10 min at 14,000 g. Lysates were rotated with 1 μg antibody at 4°C for 3 hr, after which Protein A/G plus agarose beads (Santa Cruz Biotechnology) were added for 1 hr at 4°C. Beads were collected by centrifugation and washed three times with X-100 buffer. The beads were resuspended in SDS sample buffer, boiled, lightly mixed to release bound protein and centrifuged. Immunoprecipitation samples were resolved by SDS-PAGE using 10% polyacrylamide gels and bound proteins detected by Western blotting as above. Samples of total cell lysate typically contained 5% of the protein used for immunoprecipitation.
 
-## Cycloheximide chase
+### Cycloheximide chase
 
 Cells were grown to 80% confluency and treated with 25 μg/mL cycloheximide by adding it directly to the conditioned media on the cells. Cells were treated with cycloheximide for 0, 2, 4, or 8 hr and lysed. Quantification of Western blots was done in ImageJ and BCAR3 protein levels were normalized to the loading control (GAPDH or vinculin).
 
-## Scratch wound assay
+### Scratch wound assay
 
 The desired proteins were knocked down using two siRNA transfections, as previously described. Cells were plated in ImageLock 96-well dishes (Essen BioScience) for the second siRNA transfection and transfection materials were scaled down proportional to dish sizes. Cells were plated at 30% confluence at the time of the second transfection. For migration assays where doxycycline (dox)-induction was required, the media was replaced with growth media containing dox (10 ng/mL except where noted) 6 hr after transfection and after two washes with PBS. For all migration assays, the confluent monolayers were placed in EGF-free assay media (with dox when required) 48 hr after the second transfection transfection. Monolayers were scratched using an Incucyte WoundMaker (Essen BioScience) 8 hr after being placed in assay media, the wells were washed with PBS three times to remove debris and cells were placed back in assay media (with dox when required). Scratch wounds were imaged once every 2 hr on an IncuCyte S3 and images were analyzed using the scratch wound function on the IncuCyte image analysis software. Overall migration was measured at 12 hr using the relative wound density calculated by the analysis software. Lamellipodium length was measured using the ruler in the IncuCyte image analysis software. Membrane ruffling was scored at 6 hr by counting the number of cells with ruffles relative to the total cell number. Ruffles were visualized as dark contrast at the front of the protrusion.
 
-## Transwell migration and invasion assays
+### Transwell migration and invasion assays
 
 Cells were grown in EGF-free assay media for 24 hr before the assay. Migration assays were performed in 24-well chemotaxis chamber with an 8 μm pore size polyethylene terephthalate filter that separated the upper and lower wells (Thermo Fisher Scientific). Invasion assays were performed in 24-well Matrigel invasion chambers with an 8 μm pore size polyethylene terephthalate filter coated in Matrigel matrix that separated the upper and lower wells (Thermo Fisher Scientific). In both assays, the lower wells were filled with MCF10A growth media. A total of 80,000 cells were resuspended in EGF-free assay media and added to the top well. After 24 hr, cells on the top of the membrane were removed and the cells on the bottom of the membrane were fixed with methanol and stained with SybrSafe at 1:10,000 for 15 min. Membranes were rinsed, imaged and nuclei were counted.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For experiments that required protein knockdown, cells were transfected with siRNA as previously described. On the day following the second siRNA transfection, cells were plated on 12 mm #1.5 coverslips at 30% confluency in four-well (1.9 cm2) plates (with dox when required). Confluent monolayers were transferred to assay media and incubated overnight before scratching with a P200 pipette tip. To detect the SNAP tag, JaneliaFluor cpJF549 SNAP-ligand (Lavis Lab, Janelia Farms) (Grimm et al., 2015) was added to the cells at 100 nM 4 hr after forming the wounds. Cells were incubated for 1 hr with the SNAP-ligand, washed three times with PBS and placed in fresh, ligand-free assay media for 1 hr to remove unreacted SNAP-ligand. Cells were fixed and permeabilized a total of 6 hr after the start of migration.
 
 Fixation and immunostaining was done at room temperature. Cells were washed with PBS, fixed and permeabilized with 0.1% Triton X-100, 4% paraformaldehyde (PFA) in PBS for 2 min, and further fixed with 4% PFA/PBS for 15 min. Cells were blocked with 2% BSA, 5% normal goat serum in PBS for 30 min or overnight at 4°C. Primary antibodies were diluted in block solution (typically 1:200 dilution) and added for 3 hr. Coverslips were washed three times with PBS. AlexaFluor-labeled secondary antibodies, diluted 1:1000 in PBS, were added for 1 hr. Coverslips were washed three times with PBS, mounted in Prolong Glass Antifade Mountant and left to cure overnight in the dark before imaging or storing in the cold.
 
-## Imaging and image quantification
+### Imaging and image quantification
 
 Coverslips were imaged using 63x, 1.40 NA or 100x, 1.40 NA oil objectives on a Leica SP8 confocal microscope and deconvolved using Leica LAS acquisition software. In order to ensure unbiased data collection, 8–14 cells along the leading edge of the wound were imaged in the paxillin channel before imaging channels showing other antigen(s) of interest. The same scale and image settings were used for all conditions within an experiment. The number of cells and biological replicates is provided in each figure legend.
 

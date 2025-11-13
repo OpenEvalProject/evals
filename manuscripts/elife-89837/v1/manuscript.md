@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/053r20n13 Ragon Institute of MGH, MIT and Harvard Cambridge United States
-2. https://ror.org/002pd6e78 Department of Neurology, Massachusetts General Hospital Boston United States
-3. https://ror.org/04b6nzv94 Department of Pathology, Brigham and Women’s Hospital Boston United States
-4. https://ror.org/04b6nzv94 Infectious Disease Division, Brigham and Women’s Hospital Boston United States
+1. Ragon Institute of MGH, MIT and Harvard Cambridge United States ([ROR:053r20n13](https://ror.org/053r20n13))
+2. Department of Neurology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+3. Department of Pathology, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+4. Infectious Disease Division, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 
 † Corresponding author
 
@@ -35,9 +35,195 @@ Much less is currently known about HIV-1 reservoir cells in other body compartme
 
 ## Results
 
-## Frequency of intact and defective proviruses in tissue compartments
+### Frequency of intact and defective proviruses in tissue compartments
 
 To investigate the proviral landscape across multiple anatomical tissues, including the CNS, we focused on three participants from whom post-mortem tissue samples were available for HIV-1 research. Tissue samples from the CNS and other organs were collected by a rapid (<24 hr) autopsy after death. The clinical and demographic characteristics of these study participants are shown in Table 1. All study participants adhered to antiretroviral treatment until death; plasma viral loads were undetectable by commercial assays in study participants 1 and 2, in whom 14 and 15 different tissue sections were sampled, respectively (Table 2). Organ-specific tissues analyzed in these two study participants included lymph node, spleen, colon, liver, pancreas, kidney, thyroid gland, and adrenal gland; in the female study participant 1, ovarian and uterus tissues were analyzed, while in the male study participant 2, prostate and testicular tissues were studied. In both of these study participants, four different CNS tissue sections (basal ganglia, thalamus, frontal lobe, and occipital lobe) were collected for investigation. In study participant 3, plasma viral load was 136 copies/ml at the time of death; 5 different tissue sections from the CNS (basal ganglia, thalamus, occipital lobe, frontal lobe, periventricular white matter) were analyzed in this person.
+
+**Table 1.**
+ Clinical and demographical data of study participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Gender</th>
+      <th>Age of death</th>
+      <th>Duration of HIV-1 infection (yr) from diagnosis date</th>
+      <th>Time on HAART (yr)</th>
+      <th>HAART regimen</th>
+      <th>CD4 count before death (cells/ul)</th>
+      <th>Viral load before death (copies/ml)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Female</td>
+      <td>38</td>
+      <td>16</td>
+      <td>16</td>
+      <td>FTC, RPV, TAF</td>
+      <td>1625</td>
+      <td>Undetectable</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Male</td>
+      <td>68</td>
+      <td>25</td>
+      <td>1</td>
+      <td>FTC, TAF, BIC</td>
+      <td>165</td>
+      <td>Undetectable</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Male</td>
+      <td>52</td>
+      <td>1</td>
+      <td>1</td>
+      <td>BIC, FTC, TAF</td>
+      <td>145</td>
+      <td>136</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Cell numbers analyzed from each tissue of each study participant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Compartment</th>
+      <th>Participant 1(million cells)</th>
+      <th>Participant 2(million cells)</th>
+      <th>Participant 3(million cells)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Brain tissues</td>
+      <td>Basal ganglia</td>
+      <td>67.25</td>
+      <td>18.06</td>
+      <td>32.85</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td>35.81</td>
+      <td>5.77</td>
+      <td>21.83</td>
+    </tr>
+    <tr>
+      <td>Occipital lobe</td>
+      <td>87.17</td>
+      <td>29.07</td>
+      <td>43.65</td>
+    </tr>
+    <tr>
+      <td>Frontal lobe</td>
+      <td>64.29</td>
+      <td>13.39</td>
+      <td>64.91</td>
+    </tr>
+    <tr>
+      <td>Periventricular white matter</td>
+      <td></td>
+      <td></td>
+      <td>36.42</td>
+    </tr>
+    <tr>
+      <td rowspan="13">Non-brain tissues</td>
+      <td>Lymph nodes</td>
+      <td>28.86</td>
+      <td>15.57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spleen</td>
+      <td>63.69</td>
+      <td>104.15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Colon</td>
+      <td>54.02</td>
+      <td>17.74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>72.91</td>
+      <td>43.59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pancreas</td>
+      <td>91.36</td>
+      <td>65.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Terminal ileum</td>
+      <td></td>
+      <td>1.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>57.02</td>
+      <td>25.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ovary</td>
+      <td>51.96</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Uterus</td>
+      <td>79.11</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Testes</td>
+      <td></td>
+      <td>4.74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prostate</td>
+      <td></td>
+      <td>19.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thyroid</td>
+      <td>53.65</td>
+      <td>46.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Adrenal</td>
+      <td>39.43</td>
+      <td>14.87</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>846.53</td>
+      <td>425.54</td>
+      <td>199.66</td>
+    </tr>
+  </tbody>
+</table>
 
 Near full-length single-template next-generation HIV-1 proviral sequencing was performed to profile the proviral reservoir landscape at single-molecule resolution in tissue samples. The number of cells analyzed from each organ in each participant is listed in Table 2. In total, 846.53, 425.54, and 199.66 million cells were assayed in study participants 1, 2, and 3, respectively, resulting in 1471.73 million cells analyzed in all study participants combined. A total of 1497 individual proviral sequences were amplified, of which n=497 were selected for next-generation sequencing based on their amplicon sizes on gel electrophoresis; the remaining sequences were classified as proviruses with large deletions. All amplicons (n=74) from CNS tissues were sequenced, regardless of their length. Using a previously described computational pipeline to identify lethal defects in proviral sequences, we identified 48 proviruses (3.21% of all proviruses) that met our criteria for genome-intactness (Figure 1A–C); this number is consistent with the small number of genome-intact proviruses detected in previous studies. Many sequences, both genome-intact and defective, were identified multiple times, consistent with clonal proliferation of infected cells (Figure 1B), as reported in prior work (Bui et al., 2017; Pinzone et al., 2019; Lee et al., 2017; Hiener et al., 2017).
 
@@ -47,9 +233,17 @@ Near full-length single-template next-generation HIV-1 proviral sequencing was p
 
 To evaluate HIV-1 persistence in selected tissue compartments, the frequencies of total, intact, and defective HIV-1 proviruses in each tissue were analyzed (Figure 2A–C). Intact proviral sequences were only detected in 8 tissue sites, including basal ganglia, periventricular white matter, lymph node, spleen, colon, kidney, prostate, and the thyroid gland (Figure 2B). The numbers of intact HIV-1 sequences in these eight tissues varied from 0.01 to 0.6 copies per million cells. Consistent with previous studies, the frequency of intact proviral sequences was highest in the lymph node in participant 1 (0.52 intact proviruses/million cells) and participant 2 (0.58 intact proviruses/million cells), followed by kidney, spleen, colon, and basal ganglia in participant 1 and by prostate, spleen, thyroid in participant 2. Intact proviruses were detected in the basal ganglia in study participant 1 (frequency of 0.015 /million cells) and in study participant 3 (0.030 intact proviruses/million cells). Moreover, one intact provirus was also detected in periventricular white matter in participant 3 (0.027 intact proviruses/million cells), in whom analysis was limited to brain tissues. No intact proviruses were detected in the CNS tissues of study participant 2, despite analyzing 66.29 million cells. Together, these results indicate that intact HIV-1 proviruses are preferentially detected in lymphoid and gastrointestinal (GI) tissues. The frequency of intact proviruses in the CNS is comparatively low; however, this study is the first one to document the presence of genome-intact proviral sequences in CNS tissues using near full-length proviral sequencing.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/89837/elife-89837-fig2-v1.jpg)
+
+**Figure 2.:** Bar diagrams reflect relative frequencies of total (A), intact (B), and defective (C) proviruses in all analyzed tissues in study participants 1–3. The total number of individual proviral sequences determined by single-genome, near-full-length, next-generation sequencing and by counting amplification products in agarose gel electrophoresis from each tissue site of each participant is listed aside each bar. The red bars reflect samples with detectable proviral sequences; grey bars reflect samples at limit of detection for proviral sequences, calculated as 0.5 (single genome near–full-length PCR) copies per maximum number of cells tested without target identification (see Materials and Methods for details). N.d. (not done) indicates that the samples were not available from the indicated tissue sites.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89837/elife-89837-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bar diagrams reflect the ratios of intact to defective HIV-1 proviruses in all analyzed tissues in study participants 1–3. The red bars reflect samples with detectable proviral sequences; grey bars reflect samples at limit of detection for proviral sequences, calculated as 0.5 proviral copies per maximum number of cells tested without target identification (see Materials and Methods for details). N.d. (not done) indicates that the samples were not available from the indicated tissue sites.
+
 Defective proviral sequences were detected in all analyzed tissue samples except for the thalamus from participant 1 (Figure 2C). In participant 1, the frequency of defective proviral sequences was highest in lymph nodes (5.7 defective proviruses/million cells), followed by colon, spleen, and kidney. In participant 2, the frequency of defective proviral sequences was highest in lymph nodes (13.0 defective proviruses/million cells), followed by prostate, colon, and spleen. Notably, the prostate had a very high frequency of virally infected cells. The ratio of intact to defective proviral species was relatively high among sequences isolated from the basal ganglia of participants 1 and 3 (Figure 2—figure supplement 1). Taken together, these results demonstrate the highest frequencies of defective proviruses in lymph nodes, in the colon and in the prostate. CNS tissues contained relatively low frequencies of proviral sequences, compared to other tissue sites; however, defective proviruses were isolated in all but one of the analyzed 13 different CNS samples.
 
-## Phylogenetic associations and clonality
+### Phylogenetic associations and clonality
 
 A series of prior studies demonstrated large sequence-identical clones of intact and defective proviruses in the peripheral blood of ART-treated study participants. In our subsequent analysis, we studied the dissemination of clonal proviral sequences across different tissues. In participant 1, a total of 24 intact proviral sequences were detected. Two large clones of intact proviruses were observed, one of which included sequences detected in kidney, lymph node, and spleen samples (Figure 3A–B). The other clone involved intact proviral sequences from basal ganglia and lymph node tissues. Among 218 defective proviruses sequenced in participant 1, 14 clones were observed across multiple tissues (Figure 3C). In participant 2, among 22 intact proviral sequences, only one clone with two member sequences was identified; both of these clonal sequences were located in the prostate (Figure 3A–B). Fourteen clones of defective proviruses were observed across multiple tissues in participant 2 (Figure 3C).
 
@@ -63,9 +257,17 @@ Clonal proviral sequences in CNS tissues were detected in all three study partic
 
 **Figure 4.:** (A, C, and E) Circular maximum likelihood phylogenetic trees of all proviral sequences derived from CNS tissues of the three study participants (A, participant 1; C, participant 2; E, participant 3). Color coding reflects tissue origins. Clonal sequences, defined by complete sequence identity, are indicated by blue arches. (B, D, and F) Circos plot reflecting the clonality of all proviral sequences isolated from CNS tissues of three participants (B, participant1; D, participant 2; F, participant 3). Each symbol reflects one provirus. Clonal sequences, defined by complete sequence identity, are highlighted. Color-coded arches around the plots indicate types of proviral sequences.
 
-## Viral tropism and immune selection footprints
+### Viral tropism and immune selection footprints
 
 Viral tropism was evaluated based on the env V3 region of the proviruses using the Geno2pheno algorithm. Notably, all proviral sequences containing the env V3 region of participant 1 (n=130, 53.7%) and 3 (n=6, 13.6%) were predicted to be CCR5-tropic (Figure 5A). In participant 2, 62.1% of proviral sequences (n=131) were predicted to be likely CXCR4-tropic, while 18.5% (n=39) were classified as CCR5-tropic; the remaining 19.4% (n=41) were classified as undetermined due to the lack of env V3 regions in this study participant (Figure 5A). Notably, approximately half of the 131 proviruses with predicted CXCR4 tropism from study participant 2 (n=66, 50.4%) were isolated from the prostate, followed by the spleen (n=38, 29.0%), lymph node (n=20, 15.3%) and thyroid gland (n=3, 2.3%) (Figure 5B–C). Among all proviruses (n=16) from CNS tissues of participant 2, only one provirus with a large deletion, isolated from the occipital lobe, had predicted CXCR4-tropism; the tropism of other proviruses from the CNS was unknown due to the lack of env V3 regions. As an additional analysis step, we evaluated footprints of immune selection pressure and mutations resulting in resistance to antiretroviral agents in intact proviral sequences from our study subjects. We noted that the frequency of viral amino acid residues associated with resistance to broadly neutralizing antibodies did not notably differ among sequences isolated from different tissue compartments (Figure 5—figure supplement 1). We did not observe sequence variations consistent with escape from antiretroviral agents in any of the intact proviral sequences analyzed here.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89837/elife-89837-fig5-v1.jpg)
+
+**Figure 5.:** (A) Pie charts indicating the proportions of all proviruses from each participant with CCR5-tropic or non–CCR5/CXCR4-tropic V3 envelope sequences are shown. The total number of proviral sequences included in this analysis is listed below each pie chart. (B) The proportions of proviruses with CCR5-tropic or non-CCR5/CXCR4-tropic V3 env sequences in each tissue from participant 2 are shown. (C) Pie charts indicating the proportions of all non–CCR5-tropic proviruses from participant 2 are shown. Color coding reflects tissue origins. The total number of analyzed proviral sequences is listed below the pie chart. HIV-1 tropism was computationally inferred using Geno2pheno (https://coreceptor.geno2pheno.org/). HIV-1 tropism was classified as “CCR5” if the false-positive rate (FPR) predicted by Geno2pheno was >2% and ‘CXCR4’ if FPR was <2%.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89837/elife-89837-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–F) Numbers of broadly neutralizing antibody (bnAb) sensitivity (A, C, and E) and resistance (B, D, and F) signature sites in intact proviral sequences from indicated tissues from each participant are shown. Each dot represents one intact provirus. Amino acid residues associated with susceptibility or resistance to bnAbs were inferred based on the study by Bricault et al., 2019. Horizontal lines reflect the median. FDR-adjusted two-sided Kruskal-Wallis nonparametric tests were used in (A-D).
 
 ## Discussion
 
@@ -83,18 +285,18 @@ In sum, this study provides a deep analysis of tissue reservoirs for HIV-1 that 
 
 ## Materials and methods
 
-## Study Participants
+### Study Participants
 
 HIV-1-infected study participants were recruited at the Massachusetts General Hospital (MGH) and the Brigham and Women’s Hospital in Boston, MA. Fresh tissues were sampled during routine autopsy according to protocols approved by the Institutional Review Board and cryopreserved for future study according to standard protocols. The clinical characteristics of study participants are summarized in Table 1. All study participants gave written consent to donate their tissues for autopsy studies, and the study was conducting according to the declaration of Helsinki.
 
-## HIV-1 DNA quantification by IPDA
+### HIV-1 DNA quantification by IPDA
 
 Tissue samples were dissected and subjected to genomic DNA extraction using the DNeasy Blood and Tissue Kit (QIAGEN DNeasy, #69504). HIV-1 DNA was analyzed by the Intact Proviral DNA Assay (IPDA), using primers and probes described previously (Bruner et al., 2019). PCR was performed using the following program: 95 °C for 10 min, 45 cycles of 94 °C for 30 s and 59 °C for 1 min, 98 °C for 10 min. The droplets were subsequently read by the QX200 droplet reader (Bio-Rad), and data were analyzed using QuantaSoft software (Bio-Rad).
 
-## Near full-length HIV proviral sequencing
+### Near full-length HIV proviral sequencing
 
 Genomic DNA diluted to single HIV-1 genome levels based on Poisson distribution statistics and IPDA results was subjected to near full-genome HIV-1 amplification using a one-amplicon approach (Lee et al., 2017; Lee et al., 2019). PCR products were visualized by agarose gel electrophoresis. Amplification products were individually subjected to Illumina MiSeq sequencing at the MGH DNA Core facility. The resulting short reads were de novo assembled using Ultracycler v1.0 and aligned to HXB2 to identify large deleterious deletions (<8000 bp of the amplicon aligned to HXB2), out-of-frame indels, premature/lethal stop codons, internal inversions, or 5′-LTR defect (≥15 bp insertions and/or deletions relative to HXB2), using an automated in-house pipeline written in Python scripting language (https://github.com/BWH-Lichterfeld-Lab/Intactness-Pipeline; Gao et al., 2020). The presence/absence of APOBEC-3G/3 F–associated hypermutations were determined using the Los Alamos HIV Sequence Database Hypermut 2.0 program. The sequences of individual genes were extracted by GeneCutter, and the start codons of Gag, Pol, and Env were examined and considered. Viral sequences that lacked all defects listed above were classified as “genome-intact”. Multiple sequence alignments were performed using MUSCLE (Edgar, 2004). Phylogenetic analyses were conducted using MEGA X, applying maximum likelihood approaches. Viral sequences were considered clonal if they had completely identical consensus sequences; single-nucleotide variations in primer binding sites were excluded for clonality analysis. When viral DNA sequences were undetectable, data were reported as LOD (limit of detection), calculated as 0.5 copies per maximum number of cells tested without target identification. The sensitivity of proviral species to broadly-neutralizing antibodies (bnAb) was estimated by calculating the number of amino acid signature sites associated with sensitivity to four bnAb classes within the env amino acid sequence from each intact provirus, as previously described (Bricault et al., 2019).
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Data are summarized as bar graphs. Phylogenetic relationships were evaluated using maximum-likelihood phylogenetic trees. Images were prepared using Adobe Illustrator. HIV-1 tropism was computationally inferred using Geno2pheno (https://coreceptor.geno2pheno.org/). HIV-1 tropism was classified as ‘CCR5’ if the false-positive rate (FPR) predicted by Geno2pheno was >2%, however, 92% of our proviral sequences meeting this definition had a FPR score >10%; proviruses were considered ‘CXCR4-tropic’ if FPR was <2%.

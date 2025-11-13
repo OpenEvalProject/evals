@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.29808.001 The locus coeruleus (LC) projects throughout the brain and spinal cord and is the major source of central noradrenaline. It remains unclear whether the LC acts functionally as a single global effector or as discrete modules. Specifically, while spinal-projections from LC neurons can exert analgesic actions, it is not known whether they can act independently of ascending LC projections. Using viral vectors taken up at axon terminals, we expressed chemogenetic actuators selectively in LC neurons with spinal ( LC ) or prefrontal cortex ( :SC LC ) projections. Activation of the :PFC LC module produced robust, lateralised anti-nociception while activation of :SC LC produced aversion. In a neuropathic pain model, :PFC LC activation reduced hind-limb sensitisation and induced conditioned place preference. By contrast, activation of :SC LC exacerbated spontaneous pain, produced aversion and increased anxiety-like behaviour. This independent, contrasting modulation of pain-related behaviours mediated by distinct noradrenergic neuronal populations provides evidence for a modular functional organisation of the LC. :PFC
+The locus coeruleus (LC) projects throughout the brain and spinal cord and is the major source of central noradrenaline. It remains unclear whether the LC acts functionally as a single global effector or as discrete modules. Specifically, while spinal-projections from LC neurons can exert analgesic actions, it is not known whether they can act independently of ascending LC projections. Using viral vectors taken up at axon terminals, we expressed chemogenetic actuators selectively in LC neurons with spinal (LC:SC) or prefrontal cortex (LC:PFC) projections. Activation of the LC:SC module produced robust, lateralised anti-nociception while activation of LC:PFC produced aversion. In a neuropathic pain model, LC:SC activation reduced hind-limb sensitisation and induced conditioned place preference. By contrast, activation of LC:PFC exacerbated spontaneous pain, produced aversion and increased anxiety-like behaviour. This independent, contrasting modulation of pain-related behaviours mediated by distinct noradrenergic neuronal populations provides evidence for a modular functional organisation of the LC.
 
 ## Introduction
 
@@ -30,29 +30,43 @@ The LC has been characterised as a homogeneous cluster of neurons that provide a
 
 ## Results
 
-## Targeting and activation of noradrenergic LC neurons with PSAM
+### Targeting and activation of noradrenergic LC neurons with PSAM
 
 To enable selective activation of LC neurons, the excitatory chemogenetic receptor PSAM (Pharmaco- Selective Actuator Module, PSAML141F,Y115F:5HT3HC [Magnus et al., 2011]) was expressed in noradrenergic neurons (Figure 1A–B) using viral vectors with the cell-type-specific synthetic promotor PRSx8 (PRS) (Hwang et al., 2001; Lonergan et al., 2005; Howorth et al., 2009a). Efficient and selective targeting of LC neurons was observed after direct injection into the dorsal pons of a lentiviral vector harbouring the PRS-EGFP-2A-PSAM expression cassette. After transduction, EGFP immunofluorescence was detected in 690 ± 38 neurons per LC (N = 5) of which 98 ± 0.4% co-expressed dopamine β-hydroxylase (DBH) confirming their identity as noradrenergic (Figure 1B). To enable post-hoc immuno-localisation, PSAM was tagged with a C-terminal HA. Subsequently, PSAM-HA was detected in the membranes of the LC neurons (Figure 1C, 82/112 transduced neurons examined from three rats). The functionality of the PSAM-HA was verified by Ca2+ -imaging in cell lines (Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig1-v2.jpg)
+
+**Figure 1.:** (A) Strategy using direct stereotaxic injection of lentiviral vector to express the excitatory ionophore PSAM in noradrenergic LC neurons. (B) Selective transduction of LC demonstrated by immunohistochemistry (IHC) for EGFP and dopamine β-hydroxylase (DBH) with 690 EGFP+ neurons per LC of which 98% were DBH+ (scale bar 100 µm). (C) PSAM expression was demonstrated using IHC for the HA tag. (scale bar 15 µm) (D) Schematic of PSEM308-mediated excitation of transduced neurons expressing PSAM. Patch clamp recordings from EGFP+ LC neurons in acute pontine brain slices. Perfusion of PSEM308 evoked concentration-dependent inward currents. (E) PSEM308 (3 µM) increased rate of firing of transduced LC neurons. Inset shows 16 overlaid action potentials. Group data shows increase in firing produced by PSEM308 (3 μM). (F) Extracellular recordings from LC neurons in anaesthetised rats using multi-barrel recording electrodes allowing local pressure ejection of PSEM308/saline/pontamine sky blue (PSB). Traces show graded excitation of an identified LC neuron by PSEM308. Recording sites were subsequently histologically identified by the PSB staining within the LC (transduced cells identified by IHC for EGFP (black arrowheads) and DBH (white arrowheads). The response to local PSEM308 was categorised as excitation or inhibition if it changed firing rate by more than 3 SD from the baseline rate. Application of PSEM308 produced an excitation in 50% of LC neurons. We found a second group of neurons that showed no response, presumably as they were not transduced. A third group showed an inhibition of spontaneous firing in response to local PSEM308 application. (G) Kinetics of the excitatory response to systemic PSEM308 administration (10 mg/kg i.p). (H) Timeline of conditioned place aversion protocol to assess influence of chemogenetic activation of LC neurons on behaviour. In PSAM expressing rats, PSEM308 (10 mg/kg) caused conditioned place aversion but had no effect on control animals. Representative heat maps of rat position in the pre-test and post-test after PSEM308 with bilateral LC transduction with LVPRS-EGFP-2A-PSAM HA or control LVPRS-EGFP All data analysed with repeated measures ANOVA (one or two way as appropriate) with Bonferroni’s post hoc testing (*p<0.05, **p<0.01). (See also Figure 1—figure supplements 1, 2 and 3)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the PSAM (PSAML141F,Y115F:5HT3 HC) and EGFP co-expression plasmid. Top row shows 4 EGFP+ transfected and 10 EGFP- PC12 cells. The bottom row shows [Ca2+]i increases in the transduced cells to the selective agonist PSEM89s. [Ca2+]i measured by Fura2 340:380 fluorescence ratio - F2R. (B) [Ca2+]i responses to PSEM89s in 4 EGFP+ and 5 EGFP- PC12 cells. (C) The maximum Ca2+ transient evoked by PSEM89s is sensitive to the length of C-terminal tag on PSAM. 18 amino acids remain at the C-terminal end of PSAM when the 2A peptide is downstream of PSAM. This C-terminal residue reduced the maximum PSEM89s-evoked response. There was no difference between the original PSAM-IRES-EGFP plasmid and the HA-tagged expression cassette EGFP-2A-PSAMHA (p<0.0001 Kruskal Wallis test with Bonferroni’s multiple comparison NS p>0.05, **p<0.01, ****p<0.0001). (D) The C-terminal HA tag does not interfere with the concentration response relationship (p=0.6384 sum-of-squares F test). EC50: PSAM-IRES-EGFP - 3.37 ± 0.04 vs EGFP-2A-PSAMHA - 3.86 ± 0.09 µM. (E) The upstream EGFP-2A sequence produces a significantly brighter fluorescent signal than the IRES linker (Mann-Whitney test p<0.0001). Calcium transients are shown as mean ± SEM and fluorescence data as median with interquartile intervals. N equals the number of cells analysed from at least three replicated experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Whole cell current clamp recordings from LC neurons in pontine slices 2 weeks after in vivo transduction with LVPRS-EGFP-2A-PSAM. (B) Schematic of action potential analysis. All spike measurements are taken with reference to the AP threshold defined as the point where velocity of depolarisation exceeded 7.5Vs−1. Data from 25 action potentials were averaged per cell. Input resistance was measured in voltage clamp from the average of 10 current responses to a 10 mV membrane hyperpolarization (C) No quantitative difference was observed in the intrinsic electrical properties between transduced (N = 7) and non-transduced (N = 8) LC neurons (unpaired t-test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig1-figsupp3-v2.jpg)
+
 Patch clamp recordings from transduced LC neurons in acute pontine slices showed that the designer-ligand PSEM308 (pharmaco-selective effector molecule) produced inward currents and a reversible excitation. PSEM308 evoked concentration-dependent inward currents of up to 800 pA in voltage clamp (Vhold60 mV, 1–10 μM, Figure 1D). Current-clamp recordings of transduced LC neurons showed an eight-fold increase in firing frequency (0.54 ± 0.21 Hz to 4.22 ± 0.90 Hz, Figure 1E) in response to PSEM308 (3 µM). No response to PSEM308 (doses up to 10 μM) was detected in recordings from non-transduced LC neurons (n = 6). We found no difference in intrinsic electrical properties between transduced and non-transduced LC neurons (Figure 1—figure supplement 2) suggesting that expression of PSAM is well tolerated. Together, these findings indicate that PSAM is functionally expressed in LC neurons and its activation is sufficient to robustly increase action potential discharge.
 
-## Chemogenetic excitation of the LC in vivo
+### Chemogenetic excitation of the LC in vivo
 
 Extracellular recordings with multi-barrelled electrodes were used to determine whether PSEM308 application could excite LC neurons in vivo (after direct LC transduction with LVPRS-EGFP-2A-PSAM (Figure 1F)). In PSAM expressing rats (N = 8), local pressure application of PSEM308, but not saline, caused a time-locked and reproducible excitation in 12 out of the 24 recorded units (Figure 1F), increasing their firing to 234% of baseline (2.63 ± 0.92 Hz to 6.15 ± 1.47 Hz). The remaining cells did not respond (n = 6) or showed a small reduction of their firing frequency (−34.6%, 2.83 ± 1.21 to 1.85 ± 0.86 Hz, n = 6) in response to local PSEM308 (Figure 1F). These inhibited units, which were in some cases simultaneously recorded along with LC units whose activity was increased (Figure 1—figure supplement 3), likely reflect LC neurons that are not themselves transduced but are inhibited by noradrenaline released from surrounding transduced and hence PSEM308-activated LC neurons (as previously hypothesised by Vazey and Aston-Jones, 2014). These data are in line with the observed distribution of cells at the recording sites, which were always surrounded by DBH expressing neurons of which many, but not all, were also EGFP+ (Figure 1F). Local application of PSEM308 did not alter baseline firing frequency in control LC neurons (2.99 ± 1.55 to 3.15 ± 1.58 Hz, NS, n = 7 neurons from three non-transduced rats).
 
 The effect of systemic application of PSEM308 was tested on transduced LC units that showed an excitatory response to local PSEM308 (n = 5, Figure 1G). Intraperitoneal (i.p) injection of PSEM308 (10 mg/kg, same dose used throughout the rest of the study unless otherwise stated) increased discharge frequency 10-fold from 1.47 ± 0.93 to 14.76 ± 2.8 Hz after 20 min. LC neurons doubled their firing frequency after 5.9 ± 3.9 min and cells reached their maximum discharge frequency after 15.9 ± 6.5 min (Figure 1G, median 15.8 Hz, range 10.5 to 27.2 Hz). The evoked excitation outlasted the time of experimental recording (30 min) in four out of five neurons.
 
-## Chemogenetic activation of the LC alters behaviour
+### Chemogenetic activation of the LC alters behaviour
 
 High tonic LC discharge frequencies (5–10 Hz) are acutely aversive (McCall et al., 2015). Therefore, we employed a Pavlovian-conditioned place preference (CPP) paradigm to assay whether there was a behavioural consequence to chemogenetic activation of LC neurons. CPP is a voluntary choice task using the innate behaviour of animals to divide their time between environments according to their affective valence. Conditioning with PSEM308 induced avoidance of the drug-paired environment in animals that bilaterally expressed PSAM in LC neurons (Figure 1H). Such avoidance was not seen with a lower dose of PSEM308 (5 mg/kg), or in animals transduced with a control vector (LVPRS-EGFP ) and given PSEM308 (10 mg/kg).
 
-## Activation of LC:SC but not LC:PFC is anti-nociceptive
+### Activation of LC:SC but not LC:PFC is anti-nociceptive
 
 Based on previous studies, we predicted that LC:SC neurons would play a role in anti-nociception (Jones and Gebhart, 1986; Howorth et al., 2009b) and hypothesised that the forebrain projecting LC neurons might play a different – potentially pro-nociceptive role (Hickey et al., 2014). To target noradrenergic neurons according to their projection territory, we inserted a PRS-EGFP-2A-PSAM expression cassette into a CAV-2 vector to target LC neurons (Figure 2A) from their axonal projections (Li et al., 2016; Soudais et al., 2001).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig2-v2.jpg)
 
-**Figure 2.:** :PFC is anti-nociceptive.(A) Retrograde transduction strategy with canine adenoviral vectors (CAV2) to target noradrenergic LC neurons with projections to the spinal cord (LC) or prefrontal cortex (:SCLC). Similar numbers of LC neurons were transduced by injections in lumbar spinal cord (L3-4, 380) and prefrontal cortex (361). In both cases, >99% of neurons were DBH+. (scale bar 100 µm). (:PFCB) The Hargreaves’ test (radiant heat) was used to measure hind- paw withdrawal latency. PSEM308 activation of LC but not :SCLC caused a robust anti-nociception (increase in withdrawal latency). The :PFCLC anti-nociceptive effect was only seen in the ipsilateral hind paw (same side as spinal CAV2 injection). (:SCC) Representative images of double immunofluorescence showing DBH-positive fibres in the spinal cord that were anterogradely filled with EGFP after transduction of LC neurons. Quantification of the percentage of DBH+ fibres that were EGFP+ showed a three-fold higher density of EGFP-labelled fibres ipsilateral to vector injection (Mann-Whitney test, *p<0.05) which is consistent with the lateralized analgesic effect seen in (:SCB). (D) Representative images and comparison of the percentage of EGFP labelled fibres in cortical areas and the spinal cord after LC or :SCLC transduction (N = 3 in each group). Data analysed with two-way repeated measures ANOVA with Bonferroni’s post hoc tests (**p<0.01, ***p<0.001, ****p<0.0001).:PFC10.7554/eLife.29808.008Figure 2—source data 1.
+**Figure 2.:** (A) Retrograde transduction strategy with canine adenoviral vectors (CAV2) to target noradrenergic LC neurons with projections to the spinal cord (LC:SC) or prefrontal cortex (LC:PFC). Similar numbers of LC neurons were transduced by injections in lumbar spinal cord (L3-4, 380) and prefrontal cortex (361). In both cases, >99% of neurons were DBH+. (scale bar 100 µm). (B) The Hargreaves’ test (radiant heat) was used to measure hind- paw withdrawal latency. PSEM308 activation of LC:SC but not LC:PFC caused a robust anti-nociception (increase in withdrawal latency). The LC:SC anti-nociceptive effect was only seen in the ipsilateral hind paw (same side as spinal CAV2 injection). (C) Representative images of double immunofluorescence showing DBH-positive fibres in the spinal cord that were anterogradely filled with EGFP after transduction of LC:SC neurons. Quantification of the percentage of DBH+ fibres that were EGFP+ showed a three-fold higher density of EGFP-labelled fibres ipsilateral to vector injection (Mann-Whitney test, *p<0.05) which is consistent with the lateralized analgesic effect seen in (B). (D) Representative images and comparison of the percentage of EGFP labelled fibres in cortical areas and the spinal cord after LC:SC or LC:PFC transduction (N = 3 in each group). Data analysed with two-way repeated measures ANOVA with Bonferroni’s post hoc tests (**p<0.01, ***p<0.001, ****p<0.0001).
 
 Bilateral injection of CAV2PRS-EGFP-2A-PSAM into the dorsal horn of the lumbar spinal cord transduced 380 ± 37 neurons in each LC (N = 7, Figure 2A). These LC:SC neurons were located in the ventral aspect of the nucleus. In a second set of animals, CAV2PRS-EGFP-2A-PSAM bilaterally injected into the PFC transduced similar numbers of neurons (361 ± 72 per LC, N = 6). However, these LC:PFC neurons were scattered throughout the LC with a more dorsal location than the LC:SC neurons (representing different groups of neurons as previously noted [Bruinstroop et al., 2012; Howorth et al., 2009a; Li et al., 2016]). In both cases, the transduced LC:SC and LC:PFC neurons were positive for DBH (99.1 ± 0.5% and 99.1 ± 0.7%, respectively) indicating efficient and specific retrograde transduction of the noradrenergic neurons (Figure 2A).
 
@@ -64,25 +78,33 @@ To investigate the mechanism of this LC:SC chemogenetic anti-nociception, extrac
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig3-v2.jpg)
 
-**Figure 3.:** :SC selectively supresses nociceptive excitation of wide dynamic range neurons of the dorsal horn via an alpha2-adrenoceptor in naive rats.(A) Spinal extracellular recording from wide dynamic range neurons in the dorsal horn. (B) Experimental protocol for noxious pinch (calibrated forceps) or non-noxious brush applied to the hindpaw during spinal drug application. Original traces of pinch or brush responses from WDR neurons during application of PSEM308 (10 µM) or PSEM308 (10 µM) + atipamezole (10 µM) (C) Posthoc histology of the spinal dorsal horn outlining the electrode track. (D) In LC transduced rats, spinal superfusion of PSEM308 (10 µM) caused a significant attenuation of the response to noxious pinch which was prevented by Atipamezole (10 µM) indicating a spinal α2-adrenoceptor mechanism (two-way repeated measures ANOVA with Bonferroni’s post hoc test, **p<0.01,. ***p<0.001, ****p<0.0001). Application of PSEM308 or atipamezole does not change spontaneous firing or brush evoked discharge of WDR neurons. (:SCE) Quantification of neuronal responses to pinch, brush and spontaneous discharge frequency during saline or atipamezole (10 µM) application (paired t-test p>0.05). Data are presented as mean ±SEM.10.7554/eLife.29808.010Figure 3—source data 1.
+**Figure 3.:** (A) Spinal extracellular recording from wide dynamic range neurons in the dorsal horn. (B) Experimental protocol for noxious pinch (calibrated forceps) or non-noxious brush applied to the hindpaw during spinal drug application. Original traces of pinch or brush responses from WDR neurons during application of PSEM308 (10 µM) or PSEM308 (10 µM) + atipamezole (10 µM) (C) Posthoc histology of the spinal dorsal horn outlining the electrode track. (D) In LC:SC transduced rats, spinal superfusion of PSEM308 (10 µM) caused a significant attenuation of the response to noxious pinch which was prevented by Atipamezole (10 µM) indicating a spinal α2-adrenoceptor mechanism (two-way repeated measures ANOVA with Bonferroni’s post hoc test, **p<0.01,. ***p<0.001, ****p<0.0001). Application of PSEM308 or atipamezole does not change spontaneous firing or brush evoked discharge of WDR neurons. (E) Quantification of neuronal responses to pinch, brush and spontaneous discharge frequency during saline or atipamezole (10 µM) application (paired t-test p>0.05). Data are presented as mean ±SEM.
 
 To address the question of whether the LC:SC inhibition of the pinch response was caused by spinal release of noradrenaline, Atipamezole (10 μM, α2-adrenoceptor antagonist) was co-applied with PSEM308 (10 μM). Atipamezole prevented the LC:SC mediated-inhibition of the pinch response (Figure 3D). Atipamezole alone had no effect on spontaneous discharge, evoked discharge after pinch or brush indicating there is little ongoing spinal release of noradrenaline under anaesthesia (paired t-test p>0.05, n = 5 WDR neurons from two preparations, Figure 3E).
 
-## Activation of LC:PFC module is aversive and anxiogenic
+### Activation of LC:PFC module is aversive and anxiogenic
 
 Because activation of LC:PFC neurons did not change nociceptive thresholds, we investigated whether activation of these neurons contributes to aversion or to the anxiety-like behaviour ascribed to the LC by McCall et al. (2015). We found that activation of LC:PFC caused avoidance of the drug-paired chamber in the CPP paradigm indicating a negative affective valence (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig4-v2.jpg)
 
-**Figure 4.:** :PFC neurons is aversive and anxiogenic unlike LC:SC.(A) Representative heat maps showing rat location in the place preference arena before and after conditioning for LC (left) and :SCLC (right) transduced rats (outer compartments 30 × 30 cm). Activation of :PFCLC with PSEM308 (10 mg/kg) caused conditioned aversion to the paired chamber (two-way repeated measures ANOVA with Bonferroni’s multiple comparison between the conditioned and unconditioned chamber, ***p<0.001) and had no effect on :PFCLC transduced rats. Pre-test data pooled for graphical presentation (:SCB) Cross-over design for open-field test (OFT) and tracks showing activity after PSEM308 (10 mg/kg) or saline (inner square 30 × 30 cm). PSEM308 reduced the time LC rats spent in the centre of the arena and increased the time these rats were immobile. In contrast, PSEM308 had no effect on :PFCLC transduced rats (two-way RM- ANOVA with Bonferroni’s multiple comparison test, PSEM308 vs saline, *p<0.05, **p<0.01).:SC10.7554/eLife.29808.012Figure 4—source data 1.
+**Figure 4.:** (A) Representative heat maps showing rat location in the place preference arena before and after conditioning for LC:SC (left) and LC:PFC (right) transduced rats (outer compartments 30 × 30 cm). Activation of LC:PFC with PSEM308 (10 mg/kg) caused conditioned aversion to the paired chamber (two-way repeated measures ANOVA with Bonferroni’s multiple comparison between the conditioned and unconditioned chamber, ***p<0.001) and had no effect on LC:SC transduced rats. Pre-test data pooled for graphical presentation (B) Cross-over design for open-field test (OFT) and tracks showing activity after PSEM308 (10 mg/kg) or saline (inner square 30 × 30 cm). PSEM308 reduced the time LC:PFC rats spent in the centre of the arena and increased the time these rats were immobile. In contrast, PSEM308 had no effect on LC:SC transduced rats (two-way RM- ANOVA with Bonferroni’s multiple comparison test, PSEM308 vs saline, *p<0.05, **p<0.01).
 
 The open-field test uses the innate behaviour of rodents to avoid exposed areas as a measure of anxiety. Anxiogenic stressors typically reduce the time rodents spend in the centre of the arena and increase the time animals are immobile. Chemogenetic activation of LC:PFC reduced centre time by 62.6% and doubled immobility time in the open-field test after PSEM308 i.p (Figure 4B). These findings indicate that chemogenetic activation of the LC:PFC neurons changes behaviour to produce anxiety/aversion and promoted immobility (as previously reported for high-frequency stimulation of the whole LC [Carter et al., 2010]).
 
 In contrast, when the LC:SC neurons were transduced, conditioning with PSEM308 was not aversive in the CPP paradigm (Figure 4A) and did not produce anxiety-like behaviour in the open-field test (Figure 4B). There was no difference in the total distance animals travelled between drug or saline injection in the open-field test for LC:SC animals (1894±90 PSEM308 vs 1885 ± 137 cm saline, paired t-test p=0.94) suggesting there was no gross locomotor deficit. This indicates that chemogenetic activation of the LC:SC module does not produce the same negative affective behaviour that is seen with the LC:PFC module.
 
-## Engagement of LC:SC module attenuates neuropathic sensitisation via α2-adrenoceptors
+### Engagement of LC:SC module attenuates neuropathic sensitisation via α2-adrenoceptors
 
 To test for possible analgesic benefit of chemogenetic activation of the LC:SC module in neuropathic pain, we employed the tibial nerve transection model (Figure 5A and Figure 5—figure supplement 1). This procedure causes the progressive development of punctate mechanical (von Frey threshold lowered from 16.0 ± 1.5 to 1.3 ± 0.3 g, N = 15) and cold hypersensitivity (increased frequency of paw withdrawals from 10.6 ± 3.8 to 82.7 ± 3.8%, N = 15) over 3 weeks (Figure 5—figure supplement 1). Chemogenetic activation of the LC:SC module increased the mechanical withdrawal threshold after nerve injury (from 1.2 ± 0.3 baseline to 11.7 ± 3.3 g, 30 min after PSEM308 i.p, N = 6 (Figure 5B)). Similarly, we found that activation of LC:SC produced a significant improvement in weight-bearing on the nerve-injured limb, linking the reduced evoked mechanical hypersensitivity to a spontaneous behaviour (Figure 5—figure supplement 1). Rotarod testing of TNT animals showed that activation of the LC:SC had no effect on motor performance indicating that these actions were not a consequence of motor impairment and reflected an analgesic action (Figure 5E). The chemogenetic analgesic effect on mechanical and cold allodynia was dose-dependent (1–10 mg/kg) and completely blocked by prior intrathecal (i.t) injection of the a2-adrenoceptor antagonist yohimbine (60 ng, 10.0 ± 2.6 g PSEM308 + vehicle to 1.2 ± 0.4 g PSEM308 + yohimbine, N = 5 (Figure 5D)). In marked contrast to LC:SC, activation of the LC:PFC module by PSEM308 had no effect on evoked mechanical or cold responses in the nerve injury model and did not improve weight-bearing (Figure 5B and Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental timeline of vector injection and the tibial nerve transection model of neuropathic pain (s = sural, cp = common peroneal and ti = tibial nerves). (B–C) Quantification of mechanical withdrawal threshold (von Frey, after Chaplan et al., 1994). (B) Nerve injured animals showed a mechanical sensitisation of the ipsilateral limb. Activation of LC:SC neurons (PSEM308 (10 mg/kg)) attenuated the neuropathic sensitisation (comparison vs baseline +++p<0.001, ++++p<0.0001, N = 6 all groups). In contrast, activation of the LC:PFC had no effect on neuropathic sensitisation at any time point (C). Co-application of reboxetine i.t (1 mg/kg) enhanced the analgesic effect of LC:SC activation shown in panel (B). (D) Timeline of sensory testing in weeks 4–6. The analgesic effect of LC:SC activation on mechanical and cold allodynia is dose-dependent and is completely blocked by intrathecal yohimbine the α2-adrenoceptor antagonist (paired t-test, +p<0.05). (E) Activation of LC:SC had no effect on the latency to fall in the rotarod test - a measure of motor impairment (paired t-test, p>0.05). All analysis by repeated measures ANOVA (one- or two-way) with Bonferroni’s multiple comparison, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 unless otherwise stated (see also Figure 5—figure supplement 1)
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Progression of mechanical sensitivity, cold sensitivity and incapacitance before and for 7 weeks after nerve injury (LC:SC N = 8, LC:PFC N = 7, sham N = 6, 2-way repeated measures ANOVA with Bonferroni’s multiple comparison, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, red stars: LC:SC vs Sham, blue stars: LC:PFC vs Sham, black star LC:SC vs LC:PFC). (B) PSEM308 (10 mg/kg) alleviates ipsilateral hypersensitivity and improves incapacitance only in the LC:SC group 4 weeks after nerve injury (two-way repeated measures ANOVA with Bonferroni’s multiple comparison PSEM308 vs saline, *p<0.05, ****p<0.0001, LC:SC N = 8, LC:PFC N = 7, sham N = 6). (C) Timeline of sensory testing and representative image of an intrathecal injection of pontamine sky blue 5 min before trans-cardiac perfusion (N = 3). Dye was restricted to the caudal region of the spinal cord. (D) Ipsilateral chemogenetic analgesia was blocked by pre-treatment with yohimbine (repeated measures ANOVA with Bonferroni’s multiple comparison, *p<0.05, **p<0.01, ***p<0.001). Note also that Intrathecal yohimbine (60 ng i.t) lowered the mechanical and cold thresholds contralateral to nerve injury in the presence or absence of PSEM308 (10 mg/kg i.p) (two-way repeated measures ANOVA with Bonferroni’s multiple comparison, *p<0.05, **p<0.01). Unmasking of contralateral sensitization was used as a positive control for successful intrathecal delivery of yohimbine (Hughes et al., 2013). Data are presented as mean ± SEM.
 
 These findings indicate that activation of LC:SC neurons is analgesic in this model of neuropathic pain and that the effect is mediated by noradrenaline acting on a2-adrenoceptors in the spinal cord. Therefore, we predicted that the noradrenaline reuptake inhibitor reboxetine (1 mg/kg i.p), at a dose too low to cause an analgesic effect on its own, would enhance chemogenetically evoked LC:SC analgesia. Co-administration of reboxetine amplified and prolonged the analgesic effect of PSEM308 and completely reversed mechanical hypersensitivity (17.8 ± 3.2 g) as compared to sham animals (17.9 ± 1.1 g, [Figure 5C]).
 
@@ -90,11 +112,21 @@ To characterise the mechanism of this LC:SC chemogenetic analgesia in the TNT mo
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig6-v2.jpg)
 
-**Figure 6.:** :SC is analgesic via a spinal α2-mechanism (cell recording).(A) Experimental timeline of vector injection and the tibial nerve transection. CAV2PRS-EGFP-2A-PSAM was injected to the spinal cord after the neuropathic phenotype was fully developed in week 3. (B) Spinal extracellular recording and experimental protocol. The insert shows the waveform of 500 action potentials from one discriminated unit from the recording traces below. (C) Representative recording traces (containing two discriminated WDR units) from the spinal dorsal horn with responses to mechanical and cold stimuli during spinal drug application. (D) Spinal superfusion of PSEM308 (10 µM) caused a significant attenuation of the response to all stimuli which was prevented by Atipamezole (20 µM) indicating a spinal a2-adrenoceptor mechanism. All data analysed with two-way repeated measures ANOVA with Bonferroni’s post hoc testing (**p<0.01, ***p<0.001, ****p<0.0001).10.7554/eLife.29808.017Figure 6—source data 1.
+**Figure 6.:** (A) Experimental timeline of vector injection and the tibial nerve transection. CAV2PRS-EGFP-2A-PSAM was injected to the spinal cord after the neuropathic phenotype was fully developed in week 3. (B) Spinal extracellular recording and experimental protocol. The insert shows the waveform of 500 action potentials from one discriminated unit from the recording traces below. (C) Representative recording traces (containing two discriminated WDR units) from the spinal dorsal horn with responses to mechanical and cold stimuli during spinal drug application. (D) Spinal superfusion of PSEM308 (10 µM) caused a significant attenuation of the response to all stimuli which was prevented by Atipamezole (20 µM) indicating a spinal a2-adrenoceptor mechanism. All data analysed with two-way repeated measures ANOVA with Bonferroni’s post hoc testing (**p<0.01, ***p<0.001, ****p<0.0001).
 
-## Bidirectional modulation of spontaneous pain and pain-related behaviours by LC modules
+### Bidirectional modulation of spontaneous pain and pain-related behaviours by LC modules
 
 We assayed the frequency of spontaneous foot-lifts as an index of ongoing pain caused by nerve injury. As anticipated, we found that nerve injury significantly increased the number of spontaneous foot-lifts over 5 min (6.2 ± 0.7 sham, N = 6 vs 30.7 ± 3.9 TNT, N = 17 [Figure 7B + Video 1]). Activation of LC:SC more than halved the number of spontaneous foot-lifts in nerve injured rats (13.1 ± 2.9), consistent with a reduction of ongoing pain. By contrast, activation of LC:PFC neurons almost doubled the number of foot-lifts (52.6 ± 9.3 [Figure 7B]) suggesting a diametric modulation of spontaneous pain by these distinct subsets of LC neurons.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig7-v2.jpg)
+
+**Figure 7.:** (A) Timeline and representative location heat maps for a rat in CPP arena. In TNT animals, activation of LC:SC now induces a robust place preference, whereas activation of LC:PFC continues to produce aversion (two-way RM-ANOVA with Bonferroni’s multiple comparison between the conditioned and unconditioned chamber, ***p<0.001, ****p<0.0001). (B) TNT animals showed an increased frequency of paw flinches - a measure of spontaneous pain (saline treatment, RM-ANOVA with Bonferroni‘s multiple comparison vs sham, +p<0.05, ++p<0.01). Activation of LC:SC reduced and LC:PFC increased the frequency of flinches (two-way RM-ANOVA with Bonferroni’s multiple comparison PSEM308 (10 mg/kg) vs saline, *p<0.05, **p<0.01). (C) Across both LC:SC and LC:PFC groups there was a correlation between the degree of modulation of spontaneous pain and the chamber preference (r = −0.65, p<0.01). (See also Video 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Timeline of nerve injury and open-field testing (OFT). (B) Representative heat maps showing activity in the OFT after saline or PSEM308 (10 mg/kg) injection for sham, LC:SC and LC:PFC groups. Chemogenetic activation of LC:PFC reduced the time spent in the centre of the arena and increased immobility but PSEM308 had no effect on LC:SC transduced rats or sham rats (two-way repeated measures ANOVA with Bonferroni’s multiple comparison PSEM308 vs saline, *p<0.05). (C) Co-application of reboxetine (1 mg/kg) and PSEM308 (10 mg/kg) in LC:PFC rats increased immobility time, decreased the distance travelled and decreased the time spent in the centre of the arena as compared to reboxetine alone. Co-application of reboxetine and PSEM308 (10 mg/kg) also increased immobility as compared to PSEM308 alone (paired t-test PSEM308 vs PSEM308 + Reboxetine, +p<0.05).
+
+![Video 1.](https://cdn.elifesciences.org/articles/29808/elife-29808-video1.mp4.jpg)
 
 If this dichotomous action of the LC on spontaneous pain is also reflected in the affective experience of pain, then we anticipated that chemogenetic stimulation of the LC:SC module would reduce the negative pain-associated affect whilst LC:PFC activation should increase pain affect. In rats with neuropathic sensitisation, activation of LC:SC increased the time spent in the PSEM308-paired chamber, whereas LC:PFC activation induced aversion (Figure 7A). These data indicate that the neuropathic animals obtain benefit from LC:SC activation but that their situation is worsened by LC:PFC activation.
 
@@ -102,13 +134,13 @@ A link between the signs of ongoing pain and the affective component of pain is 
 
 The negative affect induced by LC:PFC activation was also evident from measures of anxiety in the open-field test. Activation of LC:PFC reduced the time animals spent in the centre of the arena by 63% (5.4 ± 1.6% saline to 2.0 ± 0.7% PSEM308, N = 7) and increased immobility by 139% compared to saline (47.3 ± 6.0% saline to 65.9 ± 7.7% PSEM308, N = 7 (Figure 7—figure supplement 1). Furthermore, the effect on immobility caused by activation LC:PFC neurons was further enhanced by 135% by co-administration of reboxetine (1 mg/kg) (61.3 ± 8.0% PSEM308 to 82.8 ± 3.9% PSEM308 + reboxetine, N = 6) indicating that the effect was caused by release of noradrenaline. In contrast, PSEM308 application had no effect on open-field performance in LC:SC transduced or sham animals (Figure 7—figure supplement 1).
 
-## Transduction of the LC:SC after nerve injury still produces chemogenetic analgesia
+### Transduction of the LC:SC after nerve injury still produces chemogenetic analgesia
 
 In order to be a viable therapeutic approach for clinical neuropathic pain the retrograde transduction strategy to target the LC:SC would need to be effective after nerve injury. We have previously demonstrated that there is a relative depletion of DBH + fibres in the lumbar spinal segments after TNT which conceivably may impair vector transduction (Hughes et al., 2013). Therefore, as a proof-of-concept experiment we explored the feasibility of using CAV2PRS-EGFP-2A-PSAM transduction 3 weeks after nerve injury once sensitisation was maximal in the TNT model. Activation of the LC:SC neurones by systemic administration of PSEM308 (10 mg/kg) increased mechanical withdrawal thresholds, attenuated cold allodynia and greatly reduced the incidence of spontaneous paw flinches (Figure 8B–D) much as we observed with pre-emptive transduction. The change in evoked responses was blocked by intrathecal atipamezole (50 µg) indicating that it was mediated by spinal activation of a2- adrenoceptors (Figure 8C). Post-hoc histology for native EGFP revealed an equivalent level of transduction of LC neurones following the spinal CAV2 administration (CAV2 before TNT - 164.8 ± 38.1, N = 8 vs CAV2 after TNT - 165.4 ± 25.5 neurons per animal, N = 7).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/29808/elife-29808-fig8-v2.jpg)
 
-**Figure 8.:** (A) Experimental timeline of vector injection and the tibial nerve transection. CAV2PRS-EGFP-2A-PSAM was injected after the neuropathic phenotype was fully developed in week 3. (B) Quantification of mechanical withdrawal threshold (von Frey, after Chaplan et al., 1994). Activation of LC neurons (PSEM308 (10 mg/kg)) in week 5 attenuated the neuropathic sensitisation (repeated measures two-way ANOVA with Bonferroni’s multiple comparison, ++++p<0.0001, N = 7). (:SCC) Timeline of sensory testing in week 6. The analgesic effect of LC activation on mechanical and cold allodynia is completely blocked by intrathecal atipamezole the :SCa2-adrenoceptor antagonist (repeated measures two-way ANOVA with Bonferroni’s multiple comparison, *p<0.05, **p<0.01, N = 7). (D) Activation of LC reduced the frequency of spontaneous flinches (paired t-test, **p<0.01).:SC10.7554/eLife.29808.023Figure 8—source data 1.
+**Figure 8.:** (A) Experimental timeline of vector injection and the tibial nerve transection. CAV2PRS-EGFP-2A-PSAM was injected after the neuropathic phenotype was fully developed in week 3. (B) Quantification of mechanical withdrawal threshold (von Frey, after Chaplan et al., 1994). Activation of LC:SC neurons (PSEM308 (10 mg/kg)) in week 5 attenuated the neuropathic sensitisation (repeated measures two-way ANOVA with Bonferroni’s multiple comparison, ++++p<0.0001, N = 7). (C) Timeline of sensory testing in week 6. The analgesic effect of LC:SC activation on mechanical and cold allodynia is completely blocked by intrathecal atipamezole the a2-adrenoceptor antagonist (repeated measures two-way ANOVA with Bonferroni’s multiple comparison, *p<0.05, **p<0.01, N = 7). (D) Activation of LC:SC reduced the frequency of spontaneous flinches (paired t-test, **p<0.01).
 
 ## Discussion
 
@@ -130,23 +162,168 @@ In demonstrating this functional and anatomical dichotomy within the LC modules,
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resource table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent or Resource</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Antibodies</td>
+    </tr>
+    <tr>
+      <td>Chicken polyclonal anti-EGFP</td>
+      <td>Abcam</td>
+      <td>#AB13970</td>
+    </tr>
+    <tr>
+      <td>Mouse monoclonal anti  Dopamine-β-hydroxylase (DBH)</td>
+      <td>Chemicon</td>
+      <td>#MAB308 RRID:AB_2245740</td>
+    </tr>
+    <tr>
+      <td>Rabbit monoclonal anti-HA tag</td>
+      <td>Cell Signalling</td>
+      <td>#C29F4 RRID:AB_10693385</td>
+    </tr>
+    <tr>
+      <td colspan="3">Chemicals, Peptides and Recombinant Proteins</td>
+    </tr>
+    <tr>
+      <td>(Z)−4-Hydroxytamoxifen</td>
+      <td>Sigma</td>
+      <td>H7904</td>
+    </tr>
+    <tr>
+      <td>urethane (ethyl carbamate)</td>
+      <td>Sigma</td>
+      <td>#U2500</td>
+    </tr>
+    <tr>
+      <td>PSEM308/89S</td>
+      <td>Initially: Peter Lee from Sternson group Subsequently: Custom synthesis by Apex Scientific Inc</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Yohimbine hydrochloride</td>
+      <td>Tocris</td>
+      <td># 1127</td>
+    </tr>
+    <tr>
+      <td>Reboxetine mesylate</td>
+      <td>Tocris</td>
+      <td># 1982</td>
+    </tr>
+    <tr>
+      <td>Atipamezole hydrochloride</td>
+      <td>Pfizer, Antisedan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Recombinant DNA</td>
+    </tr>
+    <tr>
+      <td>rAAV-syn::FLEX- rev::PSAML141F, Y115F:5HT3HC- IRES-GFP</td>
+      <td>Addgene</td>
+      <td>32477</td>
+    </tr>
+    <tr>
+      <td>pCAVΔE3Sce</td>
+      <td>Kremer lab</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>pCMV-EGFP-2A-PSAM HA</td>
+      <td>GeneArt AG</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td colspan="3">Cell lines</td>
+    </tr>
+    <tr>
+      <td>Lenti-X293T cells</td>
+      <td>Clonetech</td>
+      <td># 632180, identity confirmed by manufacturer and certified as mycoplasma free</td>
+    </tr>
+    <tr>
+      <td>BJ5183 cells</td>
+      <td>Agilent Technologies</td>
+      <td># 50-125-019, # 632180, identity confirmed by manufacturer and certified as mycoplasma free</td>
+    </tr>
+    <tr>
+      <td>DK-SceI</td>
+      <td>Kremer lab</td>
+      <td>Mycoplasma free.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Software and Algorithms</td>
+    </tr>
+    <tr>
+      <td>Ethovision ET</td>
+      <td>Noldus</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Illustrator CS5</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Prism7</td>
+      <td>GraphPad</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>A plasmid Editor (ApE v2.0.51)</td>
+      <td>M. Wayne Davis</td>
+      <td>http://biologylabs.utah.edu/jorgensen/wayned/ape/</td>
+    </tr>
+    <tr>
+      <td>Spike2 v7</td>
+      <td>Cambridge Electronic Design</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Fiji</td>
+      <td>ImageJ</td>
+      <td>https://fiji.sc</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All procedures conformed to the UK Animals (Scientific Procedures) Act 1986 and were performed under Home Office project licence (3003362) and were approved by the University of Bristol local Ethical Review Panel. Animals were housed, with an enriched environment (cardboard tubes, wood block chews, string, and varied bedding material), under a reversed 12 hr light/dark cycle at (23˚C), with ad libitum access to food and water. All behavioural experiments were performed under red light conditions during the active dark phase of the cycle. Male Wistar rats from the University of Bristol colony were used for slice electrophysiology with vector injection at postnatal day 21 and subsequent use in experiments 10–14 days later. For behavioural assays and in vivo electrophysiology, male Wistar rats (120–200 g, Charles River), randomly assigned to experimental groups, and injected with the appropriate vector. The observer was blind to both the experimental groups and injected solution for all behavioural experiments. All surgical procedures were carried out under aseptic conditions and animals were maintained at 37°C on a homeothermic pad. All animals in nerve injury experiments were single housed. Brainstem tissue from all vector injected animals was histologically analysed post hoc to confirm transduction of LC neurons (EGFP expression). Out of 85 animals, 4 were excluded from the analysis because of low transduction (<10 EGFP labelled neurons) (See Supplemental file 1 for details of animal group allocations).
 
-## Method details
+### Method details
 
-## Generation of LVPRS-EGFP-2A-PSAM
+#### Generation of LVPRS-EGFP-2A-PSAM
 
 The chemogenetic excitatory ionophore PSAML141F,Y115F:5HT3HC (PSAM) (Magnus et al., 2011) was obtained in inverted orientation from Addgene (#32477). This sequence information was used to (1) generate a CMV promotor driven expression plasmid by excising the PSAM-IRES-EGFP cassette with BsrGI/NheI and subsequent ligation into the pre-cut expression plasmid (BsrGI/NheI) which caused the flip in sense orientation and (2) to design (using ApE) a HA tagged (8 C-terminal amino acids) version of PSAM in the EGFP-2A-PSAMHA expression cassette with the objective of producing stronger EGFP fluorescence whilst PSAM receptor function is no different to the original cassette (Figure 1—figure supplement 1). The CMV-EGFP-2A-PSAMHA cassette was custom synthesised in a plasmid (pCMV-EGFP-2A-PSAMHA ) by GeneArt AG.
 
 The LV was produced as previously detailed (Coleman et al., 2003; Hewinson et al., 2013). In short, the LV is based on a HIV-1 vector pseudotyped with vesicular stomatitis virus glycoprotein. The transgene product EGFP-2A-PSAMHA was excised with BamHI and BstBI and ligated into a pre-cut lentiviral (pTYF) backbone vector harbouring the noradrenergic-specific PRSx8 (PRS) promotor (Hwang et al., 2001) to generate pTYF-PRS-EGFP-2A-PSAMHA -WPRE (Sequence available at data.bris (DOI:10.5523/bris.1hy0z83o0vwp62tfyboixj9szl) and plasmid from Addgene). The LVs were produced by co-transfection of Lenti-X293T cells (Clontech) with the shuttle vector pTYF-PRS-EGFP- 2A-PSAMHA-WPRE or pTYF-PRS-EGFP-WPRE, along with a packaging vector, pNHP, and the envelope plasmid pHEF-VSVG. The virus containing supernatant was collected on 3 consecutive days post transfection, pooled and concentrated by ultracentrifugation. The titre, measured in transducing units (TU/ml), was assayed by establishing the infection rate of an LV produced in parallel and harbouring the expression cassette for placental alkaline phosphatase (Hewinson et al., 2013). The LV was used for microinjection at a titre of 7.5 × 1010 TU/ml for LV-PRS-EGFP-2A-PSAMHA and at 3.7 × 1010 TU/ml for LV-PRS-EGFP.
 
-## Generation of CAV2PRS-EGFP-2A-PSAM
+#### Generation of CAV2PRS-EGFP-2A-PSAM
 
 The EGFP-2A-PSAMHA cassette was excised from the custom synthesised plasmid (pCMV-EGFP-2A- PSAMHA ) with ApaI and HpaI. The CAV2 shuttle vector pTCAV2-PRS-ChR2-mCherry (previously described [Li et al., 2016]) was cut with ApaI/HpaI to remove ChR2-mCherry and subsequently ligated to generate pTCAV2-PRS-EGFP-2A-PSAMHA. The resulting plasmids were then purified and digested with BamHI/NotI for homologous recombination into the SwaI linearized CAV2 genome (pCAVΔE3Sce) in BJ5183 cells (Agilent Technologies) following the manufacturer’s protocol. CAV2 vectors were produced using previously described methods (Ibanes and Kremer, 2013). Briefly, DK- SceI dog kidney cells constitutively expressing the fusion protein of the endonuclease SceI and the estrogen receptor (SceI-ER) were grown in complete DMEM (with 10% fetal bovine serum, non-essential amino acids, L-glutamine, penicillin and streptamycin and G418) on 10 cm dishes to 80% confluency. Subsequently, cells were treated with 1 mM OH-tamoxifen for 4 hr to induce translocation of SceI-ER into the nucleus. The tamoxifen pre-treated DK-SceI cells (8 × 106) were seeded in 10 cm dishes containing 1 mM OH-tamoxifen and immediately transfected with 15 µg of the supercoiled pCAV genome using 30 µl turbofect. The transfection medium was replaced by complete DMEM the following morning. Cells were harvested and virus released by freeze-thaw cycles to prepare initial virus containing stocks for vector amplification in DK-SceI cells (Ibanes and Kremer, 2013). Vector stocks were titrated in functional transducing units (TU) per ml as previously described (Li et al., 2016; Ibanes and Kremer, 2013; Kremer et al., 2000) and diluted to 0.6 × 1012 TU before injection.
 
-## Stereotaxic injections
+#### Stereotaxic injections
 
 The procedures for viral vector injections into the LC, the PFC or the SC have been described in detail previously (Hickey et al., 2014; Howorth et al., 2009a; Li et al., 2016). In brief, rats were anesthetized by intraperitoneal injection of ketamine (5 mg/100 g, Vetalar; Pharmacia, Sweden) and medetomidine (30 μg/100 g, Domitor; Pfizer, UK) until loss of paw withdrawal reflex. The rat was placed in a stereotaxic frame. Burr holes and microinjections were made using a Drill and Injection Robot with Wireless Capillary Nanoinjector (NEUROSTAR, Germany).
 
@@ -158,90 +335,94 @@ Prefrontal cortex: Four burr holes were drilled bilaterally, 0.7 mm lateral to t
 
 Spinal cord: The vertebral column was exposed and clamped at vertebral segment L3. A laminectomy was performed at T12-L1 and 0.4 µl CAV2 vector injected bilaterally into the L3-L4 segment of the spinal cord (SC) at six injection sites in total. These injections were located 0.5 mm lateral from the midline and 0.5 mm deep and spread in pairs over the segmental extent. For unilateral injections (pain studies) six injections of (0.4 µl) were made unilaterally into the right lumbar dorsal horn.
 
-## Electrophysiology
+### Electrophysiology
 
-## Patch clamp recordings from acute pontine slices
+#### Patch clamp recordings from acute pontine slices
 
 Pontine slices were prepared from juvenile (age p28-p32) Wistar rats 7–14 days after lentiviral transduction as previously described (Hickey et al., 2014). Rats were deeply anesthetized with isoflurane 5%, decapitated and the brain quickly removed and immediately chilled in ice-cold cutting solution (similar to the recording solution but NaCl was reduced from 126 mM to 85 mM and substituted with sucrose 58.4 mM) and the brainstem blocked. Horizontal slices (300–350 μm thick) of the pons were cut from dorsal to ventral using a vibratome (Linearslicer Pro 7; DSK) in cold (4°C) cutting solution. After cutting, slices were kept at room temperature in carbogenated recording solution (NaCl 126 mM, KCl 2.5 mM, NaHCO3 26 mM, NaH2 PO4 1.25 mM, MgCl2 2 mM, CaCl2 2 mM, and D-glucose 10 mM saturated with 95%O2 /5%CO2 , pH7.3, osmolality 290 mOsm/L) for at least 1 hr to recover before recording. Pontine slices were transferred into the recording chamber of an upright fluorescence microscope (DMLFSA; Leica Microsystems), superfused with artificial CSF at a rate of 4–8 ml/min heated to 35°C. Borosilicate glass patch pipettes (Harvard Apparatus GC120F-10, resistances of 4–6 MΩ) were filled with internal solution (K-gluconate 130 mM, KCl 10 mM, Na-HEPES 10 mM, MgATP 4 mM, EGTA 0.2 mM, and Na2GTP 0.3 mM). Cells were identified under gradient contrast illumination and examined for transduction by epifluorescence illumination. Whole cell voltage and current clamp recordings were obtained with a Multiclamp 700 A amplifier (Axon instruments). All membrane potentials were corrected for a junction potential of 13 mV. Drugs were infused in the bath solution. Spike2 software (CED, Cambridge Electronic Design) was used to acquire and store data.
 
-## In vivo extracellular recordings from the locus coeruleus and local application of PSEM308
+#### In vivo extracellular recordings from the locus coeruleus and local application of PSEM308
 
 Anaesthesia was induced with 1.2–2 g/kg urethane (Sigma) i.p to achieve loss of paw withdrawal reflex. Once induced, urethane anaesthesia typically remained stable for 5–7 hr. The animal was placed in a stereotaxic frame, the skull exposed and the screw above the viral injection site removed to gain access to the CNS. In vivo single units were recorded with preloaded quadruple-barrelled microelectrodes (Kation Scientific, Carbostar-4 recording/iontophoresis microelectrode, E1041 standard) connected to a drug injector (Parker, Picospritzer II). Recordings were referenced against a silver chloride electrode pellet that was inserted between muscles and skin near the recording site. Neuronal activity was recorded via a Multiclamp 700A amplifier (with #CV-7b headstage, Axon instruments) filtered at 3 kHz and digitized at 10 kHz using a 1401micro and Spike2 software (CED, Cambridge Electronic Design) was used to store data and to control the drug delivery. Locus coeruleus cells were identified by their wide (~1 ms), large amplitude action potentials, the slow spontaneous firing frequency (0.5–5 Hz) and a characteristic burst of action potentials in response to contralateral hind-paw pinch (Hickey et al., 2014; Cedarbaum and Aghajanian, 1976). Action potential discharge frequency was measured in 5 s bins and compared before, during, and after drug application. The average depth of electrode placement for LC recordings was 5.7 ± 0.14 mm from the cerebellar surface.
 
-## In vivo single unit recordings from the dorsal horn
+#### In vivo single unit recordings from the dorsal horn
 
 Animals were terminally anaesthetised with urethane (1.2–2 g/kg i.p, Sigma) The spinal cord was exposed by laminectomy over the L1-L4 spinal segment for recordings (Funai et al., 2014; Furue et al., 1999). The animal was placed in a stereotaxic frame and the spinal cord stabilised with two spinal clamps at T1 and L5 and a bath was formed by skin elevation. Warmed (36˚C), Krebs solution was used to continually superfuse the spinal cord (NaCl 117 mM, KCl 3.6 mM, NaHCO3 25 mM, NaH2 PO4 1.2 mM, MgCl2 1.2 mM, CaCl2 2.5 mM and D-glucose 11 mM saturated with 95%O2 /5%CO2 , pH7.3, osmolality 290 mOsm/L). The dura mater was removed under binocular vision (Leica MZ6). A reference electrode (World Precision Instruments, Ag/AgCl Electrode pellets, EP2) was inserted into the muscle layer near the recording area and spinal units were recorded with a stainless-steel microelectrode (FHC, UESSEGSEFNNM, 8–8.8 MΩ) that was positioned ~500 µm from the midline. Neuronal activity was amplified and low-pass filtered at 3 kHz using a Multiclamp 700A amplifier (Axon instruments with #CV-7b headstage). The data were digitized at 10 kHz (CED Power1401) and stored using Spike2 software (CED, Cambridge Electronic Design). Pinch was applied from custom calibrated forceps with tip pads of area 3.5 mm2. These forceps were used to ensure that the pinch stimulus was standardised between applications and across animals. The forceps were equipped with strain gauges and a pinch pressure of 70 g mm-2 (Drake et al., 2014) was used throughout all experiments to compare pinch-evoked neuronal activity (NB this pressure was above the threshold for pain when applied to the experimenter’s index finger).
 
 Wide dynamic range (WDR) neurons were identified in the deep dorsal horn by graded responses to both non-noxious touch and noxious pinch. Their discharge frequency was measured in response to light touch with a brush or to sustained pinch pressure over five second time bins immediately after stimulus application. Extracellular recording data from four spinal cord neurons were excluded from analysis because the recording was interrupted before completion of the experimental protocol.
 
-## Tibial nerve transection model
+### Tibial nerve transection model
 
 Rats were anesthetized by intraperitoneal injection of ketamine (5 mg/100 g, Vetalar; Pharmacia, Sweden) and medetomidine (30 μg/100 g, Domitor; Pfizer) until loss of paw withdrawal reflex. A 1.5–2 cm long skin incision was made in the right hind leg in line with the femur (Pertin et al., 2012). The fascial plane between the gluteus superficialis and the biceps femoris was located and blunt dissected to expose the three branches of the sciatic nerve (i.e. common peroneal, sural and tibial nerves). The tibial nerve was carefully exposed. Subsequently, two tight ligations (5–0 silk) were made approximately 2 mm apart and the neve segment in between transected and removed. The nerve and muscle were placed back into the correct position and the skin sutured. For sham surgery, the same procedure without ligation and transection of the tibial nerve was performed.
 
-## Intrathecal injection after nerve injury
+#### Intrathecal injection after nerve injury
 
 The injection procedure was similar to a previous report (De la Calle and Paíno, 2002) Rats, 6 weeks post-TNT (400–500 g), were briefly induced with isoflurane in medical oxygen before transferring into a face mask with 1.5–2% isoflurane. The rat was placed in prone position on a 5 cm tall plastic board so that the hind legs hang over the board to arch the lower back and to open the intervertebral space between L4-L5 spinal segments. Subsequently, a 25G needle was inserted transcutaneously to the vertebral canal (typically producing a tail twitch) and 10–20 µl of vehicle or yohimbine (3 µg/µl in sterile saline with 20% DMSO) injected. PSEM308 was injected i.p immediately after recovery from anaesthesia and sensory testing began 30 min thereafter.
 
 As previously described (Hughes et al., 2013), we observed that the mechanical withdrawal thresholds fell in the contralateral paw after intrathecal injection of yohimbine in nerve injured animals. This phenomenon was used as an internal control for successful intrathecal targeting because it was more reliable than a tail flick response (see Figure 5—figure supplement 1).
 
-## Behaviour
+#### Behaviour
 
 Rats underwent two 30 min habituation sessions (unless otherwise stated) on consecutive days before testing. Animals were placed into Plexiglas chambers 20 min before sensory assessment began on the test day. All experiments, apart from conditioned place preference (CPP), were conducted in a cross-over design comparing saline and PSEM308 (10 mg/kg, unless otherwise specified). The experimenter was always blind to the animal group and to the administered solution.
 
-## Hargreaves’ test
+#### Hargreaves’ test
 
 Thermal withdrawal latencies were measured for the hind paw using the method described by Hargreaves et al. (1988). Animals were placed into a Plexiglas chamber on top of a glass plate. The radiant heat source (Ugo Basile Plantar test) was focused onto the plantar surface of the hind paw and the time to withdrawal recorded from 40 min before and up to 60 min after intraperitoneal injection of the selective agonist PSEM308 or saline. Each withdrawal value was the mean of two tests and tests were repeated every 15 min. A 24 s cut-off value was used to avoid tissue damage. The heat source intensity was adjusted so that control rats responded with a latency of 7–8 s.
 
-## Spontaneous foot lifts
+#### Spontaneous foot lifts
 
 Animals were placed into a Plexiglas chamber on a metal grid and a webcam (Logitech HD Pro Webcam C920) positioned underneath. The number of spontaneous footlifts and flinches was recorded over a 5-min period 20 min after i.p injection of PSEM308/saline.
 
-## von Frey test
+#### von Frey test
 
 To assess punctate mechanical sensitivity animals were placed into a Plexiglas chamber on a metal grid and von Frey filaments (0.4 g-26g) were applied to the lateral aspect of the plantar surface of the hind paw. The 50% paw withdrawal threshold was determined using the Massey-Dixon up-down method (Chaplan et al., 1994). This procedure was repeated every 30 min starting 1 hr prior and up to 4 hr after i.p injection of PSEM308 (1, 5 and 10 mg/kg) or saline.
 
-## Acetone test
+#### Acetone test
 
 To assess cold sensitivity animals were placed into a Plexiglas chamber on a metal grid and an acetone drop on top of a 1 ml syringe was presented to the hind paw from underneath five times, 2 min apart. Data are expressed as the percentage of withdrawals. Animals were tested prior to and 45 min after i.p injection of PSEM308 or saline.
 
-## Incapacitance test
+#### Incapacitance test
 
 The distribution of weight between the hind-limbs was measured with an incapacitance tester (Linton Instrumentation). Animals were habituated to the Plexiglas chamber with their hind paws on two force transducers in four sessions (each lasting 3 min) on 2 consecutive days. Measures were taken 45 min after injection of PSEM308 or saline. The percentage of weight borne on the injured leg was averaged over these four measures.
 
-## Conditioned place preference/aversion
+#### Conditioned place preference/aversion
 
 All rats were habituated to an unbiased three-compartment box, which contained a central neutral chamber with different association chambers either side. Note, two designs of box were employed the first for naive animals had a central chamber between the two conditioning chambers however in the course of these experiments two animals learnt how to escape the arena (and were excluded). Therefore, we modified this arrangement with higher walls and an offset connecting corridor between the two otherwise similar conditioning chambers for the nerve injured animals which adequately contained the animals and reduced the amount of time spent in the neutral chamber.
 
 The conditioning compartments have visual and tactile cues e.g. ‘bars’ or perforated ‘holes’ as flooring and differently patterned (but equal luminosity) wallpapers to maximise differentiation between the compartments. On the first day of the experiment animals were allowed to roam freely through all three compartments and a Basler camera (acA1300-60 gm) with a varifocal lens (Computar H3Z4512CS-IR) connected to EthovisionXT (Noldus) was used to record the time rats spent in either of the outer compartments as a baseline value. Subsequently, rats underwent four conditioning sessions in which the outside compartments were paired with PSEM308 injection or saline injection. Two pairing sessions per day at least 4 hr apart on two consecutive days were conducted in a counterbalanced design. For each conditioning session the animals were placed into the locked conditioning compartment 5 min after the i.p injection and left for 30 min. On the test day, the doors between the compartments were opened and the time spent in the conditioning compartments measured once more. It is expected that the choice of the animal’s preferred environment in the post-test is influenced according to the valence of the chemogenetic stimulation. Noldus EthoVision XT was used to analyse recorded videos and to quantify the time animals spent in the paired chambers.
 
-## Open-field test
+#### Open-field test
 
 On the first day of testing animals were randomly assigned into two groups and received PSEM308 or saline 20–25 min before placing the subjects into the open-field arena (56.5 × 56.5 cm with an inner zone of 30 × 30 cm) for 6 min. Exploration behaviour (distance travelled, location in central/perimeter areas and immobility (velocity < 1.75 cm/s)) was tracked for 5 min starting 60 s after entering the arena using EthoVisionXT. One week later the open-field experiment was repeated using the other solution.
 
-## Rotarod test
+#### Rotarod test
 
 Nerve injured animals were trained to balance on a rotating rod over 3 days consisting of 2–3 5-min-long training sessions per day. Subsequently, animals were assigned randomly into two groups and received PSEM308 or saline 20–25 min before placing the subjects onto the rod. The latency to fall was measured at a constant speed of 9 rotations/min. One day later, the rotarod experiment was repeated using the other drug solution.
 
-## Histology
+### Histology
 
-## Tissue collection and processing
+#### Tissue collection and processing
 
 Rats were killed with an overdose of pentobarbital (Euthatal, 20 mg/100 g, i.p; Merial Animal Health) and perfused transcardially with 0.9% NaCl (1 ml/g) followed by 4% formaldehyde (Sigma) in phosphate buffer (PB; pH 7.4, 1 ml/g). The brain and spinal cord were removed and post-fixed overnight before cryoprotection in 30% sucrose in phosphate buffer. Coronal tissue sections were cut at 40 μm intervals using a freezing microtome and left free floating for fluorescence immunohistochemistry.
 
-## Immunofluorescence
+#### Immunofluorescence
 
 Tissue sections were blocked for 45 min in phosphate buffer containing 0.3% Triton X-100 (Sigma) and 5% normal goat serum (Sigma). Incubated on a shaking platform with primary antibodies to detect EGFP (1:3000), DBH (1:2000), or HA tag (1:500-1:1000) for 14–18 hr at room temperature. After washing, sections were then incubated for 3 hr with appropriate Alexa Fluor secondary antibodies. A Leica DMI6000 inverted epifluorescence microscope equipped with Leica DFC365FX monochrome digital camera and Leica LAS-X acquisition software was used for widefield microscopy. For confocal and tile scan confocal imaging, a Leica SP5-II confocal laser-scanning microscope with multi-position scanning stage (Märzhäuser, Germany) was utilized. Images were exported as TIF files before being processed, analysed and prepared for presentation using Fiji- ImageJ software.
 
-Stereological cell counts (Miller et al., 2014) were made by stepping through a confocal z-stack with 1 μm spacing and EGFP positive cells were only counted if the top of the soma was unambiguously located within the imaged dissector volume of the section (12 μm). The average section thickness after histological processing was 18.0 ± 0.7 μm (30 sections from three animals) and dual guard zones of 2 μM were applied. Therefore, the height sampling factor was 0.66 (hsf = dissector height/average section thickness). The section sampling factor was 0.25 (ssf = 1/ number of serial sections). The correction was made using the following formula.N=C*1volume fraction
+Stereological cell counts (Miller et al., 2014) were made by stepping through a confocal z-stack with 1 μm spacing and EGFP positive cells were only counted if the top of the soma was unambiguously located within the imaged dissector volume of the section (12 μm). The average section thickness after histological processing was 18.0 ± 0.7 μm (30 sections from three animals) and dual guard zones of 2 μM were applied. Therefore, the height sampling factor was 0.66 (hsf = dissector height/average section thickness). The section sampling factor was 0.25 (ssf = 1/ number of serial sections). The correction was made using the following formula.
+
+$$
+N=C*\frac{1}{volumefraction}
+$$
 
 where N is the estimated number of cells and C the sum of all counted cells. The volume fraction is the product of ssf, hsf and asf (area sampling fraction). Because all EGFP-positive neurons in the LC area were counted the area sampling fraction was omitted from the volume fraction.
 
 The percentage of EGFP-labelled noradrenergic (DBH) axons in the spinal cord and in cortical regions were quantified in 82 µm x 82 µm x 10 µm z-stacks with 0.5 µm z-spacing. Three z-stacks from different brain sections per area of interest were averaged.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All statistical analyses were conducted using GraphPad Prism 7. All data are presented as mean ± SEM (unless otherwise specified). Sample size was estimated from previous experience and was similar to those generally employed in the field (McCall et al., 2015; King et al., 2009; Hughes et al., 2015). T-tests, one- way or two-way ANOVA were used to compare groups as appropriate. Bonferroni’s post-test was used for all comparisons between multiple groups. Differences were considered significant at p < 0.05. The number of replications (n) equals the number of cells for electrophysiological experiments (the number of individual rats or preparations is stated in the relevant section of the text), (N) number of animals tested in behavioural assays (each experiment was repeated with at least two independent batches of animals for each condition) and the number of LCs that were analysed in histological experiments.
 
-## Contact for reagent and resource sharing
+### Contact for reagent and resource sharing
 
 Further information and requests may be directed to, and will be fulfilled by, Dr. Anthony E. Pickering. The plasmid sequence LV: PRS-EGFP-2a-PSAM HA is available online from data.bris at: DOI: 10.5523/bris.1hy0z83o0vwp62tfyboixj9szl and the plasmid will be deposited with Addgene. CAV2 plasmids and vector will be available from the vector core facility in Montpellier (Eric J Kremer).

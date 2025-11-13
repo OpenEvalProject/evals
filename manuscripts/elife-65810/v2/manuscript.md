@@ -31,9 +31,21 @@ Steady-state biochemical and cryo-EM studies reveal diverse activities for dmDcr
 
 ## Results
 
-## Binding kinetics of dsRNA to dmDcr-2 is termini-dependent
+### Binding kinetics of dsRNA to dmDcr-2 is termini-dependent
 
 The equilibrium binding affinity of dmDcr-2 for dsRNA depends on molecular features at the dsRNA termini (Sinha et al., 2015). To identify transient intermediates of the enzyme•dsRNA interaction, and to reveal the kinetic basis of termini-dependent discrimination, we performed fluorescence-based stopped-flow experiments. Cy3-end-labeled 52 basepair dsRNAs (52-dsRNAs) with BLT or 2 nt 3’ovr termini were prepared by annealing top (sense) and bottom (antisense) strands (Figure 1A,B; Materials and methods). dmDcr-2 binds dsRNA termini, and one end was blocked with two deoxynucleotides and biotin, to allow binding and kinetic analysis only from the Cy3-labeled end. To simplify determination of kinetic parameters, stopped-flow experiments were performed under pseudo first-order conditions (Gutfreund, 1995; Fisher, 2005) using 10-fold excess of dmDcr-2 over dsRNA. As detailed subsequently, the initial molecular events of the dmDcr-2 catalytic cycle were kinetically well separated from dsRNA cleavage, allowing analyses without blocking substrate cleavage.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig1-v2.jpg)
+
+**Figure 1.:** The time-dependent increase in the fluorescence signal of Cy3-end-labeled 52-dsRNA (0.2 μM) was monitored upon mixing with 10-fold excess of dmDcr-2 (2 μM), alone and bound with nucleotide (ATPγS or ATP), in stopped-flow syringes. Cartoons show Cy3-end-labeled 52-dsRNA with BLT (A) and 2 nt 3’ovr termini (B) with deoxynucleotides (CC) and biotin to prevent dmDcr-2 binding to one end. Representative kinetic traces for binding of Cy3-labeled BLT (C) and 3’ovr (D) 52-dsRNA to dmDcr-2 are shown, with independent experiments over shorter time courses for BLT (E) and 3’ovr dsRNA (F), as well as for binding of dmDcr-2ΔHel to BLT (G) and 3’ovr (H) dsRNA. At least four to ten traces were collected for each experimental condition, and averaged trace was analyzed with single or double exponential rate equations, yielding values for kinetic parameters (kobs = 0.693/t1/2) and associated standard error (I).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The boundaries of the Hel1, Hel2, and Hel2i subdomains of the helicase are indicated, as well as those for the Domain of Unknown Function (DUF), Platform, PAZ, tandem RNase III domains, and the C-terminal dsRNA binding motif (RBM). Variants used in this study are labeled.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** dsRNA was incubated with dmDcr2RIII for 5 min to allow complete isomerization. The RNase III variant contained two-point mutations (D1217A, D1476A), each within one of the tandem active sites that each cleave one strand (Figure 1—figure supplement 1). Data were analyzed with single and double exponential rate equations yielding values for the fluorescence lifetime (𝜏) and amplitude (parenthesis) of Cy3 located in different micro-environments of dmDcr-2 (G). Also shown are the life-time values of unbound Cy3-BLT and Cy3-3’ovr dsRNA obtained under identical experimental conditions for comparison (G).
 
 Equilibrium experiments indicate binding of dmDcr-2 to 3’ovr termini is ATP-independent, while interactions with BLT termini requires ATP (Sinha et al., 2015). However, transient kinetic assays revealed interactions of both termini in the absence of nucleotide (black traces), and this was monitored on a long (Figure 1C,D) and short (Figure 1E,F) time scale. The BLT•dmDcr-2 complex may be less stable without nucleotide, possibly explaining why it was undetectable in prior equilibrium assays (Sinha et al., 2015). The kinetics of dmDcr-2 binding to BLT dsRNA were biphasic (t11/2 = 0.25 s, t21/2 = 49.8 s), but monophasic for 3’ovr dsRNA (t1/2 = 27.8 s) (Figure 1I). Prior studies suggest dmDcr-2 has two binding sites (helicase and Platform–PAZ) for dsRNA termini (Sinha et al., 2015; Sinha et al., 2018). While equilibrium experiments indicate binding to the helicase domain is ATP-dependent (Sinha et al., 2015), we considered that even without nucleotide, the biphasic kinetics might reflect interactions with two binding sites. Indeed, experiments performed with dmDcr-2 lacking the helicase domain (dmDcr-2ΔHel) showed monophasic binding kinetics for both BLT and 3’ovr dsRNA in the absence of nucleotide (Figure 1G,H). Further, the half-life of binding to 3’ovr dsRNA in the absence of nucleotide was similar for dmDcr-2 and dmDcr-2ΔHel (Figure 1I), consistent with the idea that 3’ovr dsRNA binds to the Platform–PAZ domain.
 
@@ -43,13 +55,21 @@ In the transient kinetic experiments (Figure 1C,D), addition of the non-hydrolyz
 
 While the biphasic binding kinetics observed without nucleotide appeared to derive from interactions with two binding sites, ATP binding is reported to mediate a conformational change in dmDcr-2’s helicase domain (Sinha et al., 2015; Sinha et al., 2018). Thus, we considered that the biphasic kinetics observed with nucleotide might reflect an initial encounter of dsRNA termini with the helicase domain, followed by a slow isomerization of the complex (dmDcr-2•ATPγS•dsRNA). We tested this possibility by measuring the fluorescence lifetime of Cy3-end-labeled 52-dsRNA bound to dmDcr2RIII•ATPγS under equilibrium conditions (Figure 1—figure supplement 2). Single fluorescence lifetimes were observed, 2.15 and 1.31ns, respectively, for BLT and 3’ovr 52-dsRNA (Figure 1—figure supplement 2E–G), ruling out the existence of two binding sites with ATPγS, and suggesting a slow isomerization step after initial binding of dsRNA termini to dmDcr-2’s helicase domain (see below). As described subsequently, this two-step binding mechanism (bimolecular followed by isomerization) was further validated by dissociation off-rate measurements, and evaluation of kinetically determined Kd values using the microscopic rate constants of dsRNA interaction with dmDcr2•ATPγS. Interestingly, the initial encounter and isomerization of dmDcr-2 with BLT dsRNA are approximately sixfold and twofold faster, respectively, as compared to the corresponding steps for 3’ovr (Figure 1I, + ATPγS). This observation points to a kinetic control mechanism for termini-dependent discrimination of dsRNA by dmDcr-2, which could markedly impact the efficiency of an antiviral response (see Discussion). Our binding kinetics experiments revealed a two-step binding of both BLT and 3’ovr dsRNA to the helicase domain in the presence of ATPγS. Thus, the presence of ATPγS mediates a binding site switch for 3’ovr dsRNA, from the Platform–PAZ domain to the helicase domain.
 
-## Residence time of enzyme-bound dsRNA is termini-dependent
+### Residence time of enzyme-bound dsRNA is termini-dependent
 
 The kinetics of dmDcr-2 binding to dsRNA with ATPγS indicates a differential mode of interaction of BLT and 3’ovr dsRNA with the helicase domain (Figure 1I) and is predicted to affect residence time of the enzyme-bound dsRNA. We measured dissociation off-rates for dsRNA bound to dmDcr-2 with ATPγS, using the stopped-flow system (Figure 2A–H; see Materials and methods). The dissociation of enzyme-bound BLT and 3’-ovr dsRNA in the presence of ATPγS was biphasic (Figure 2C,D), as also shown over a shorter time (Figure 2E,F); this is consistent with two-step binding kinetics (Figure 1) and the principle of microscopic reversibility (Krupka et al., 1966; Fisher, 2005). While values for fast and slow koff for BLT dsRNA were 0.12 s−1 and 0.002 s−1 respectively, dissociation of 3’ovr dsRNA was twofold and fourfold faster, with fast and slow koff values of 0.28 s−1 and 0.008 s−1 (Figure 2H). Thus, BLT dsRNA was engaged more tightly than 3’ovr dsRNA in the dmDcr2•ATPγS complex. Activation-free energy (ΔG‡), calculated using the Eyring equation (see Materials and methods), for dissociation of BLT dsRNA, was 1.3 and 1.0 kcal/mol higher, respectively, for fast and slow phases of dissociation, as compared to values for 3’ovr dsRNA (Figure 2H). This emphasizes that the molecular forces holding BLT termini in the helicase domain (with ATPγS) are stronger than those engaging the 3’ovr termini. The higher residence time of BLT versus 3’ovr dsRNA is consistent with prior observations indicating BLT dsRNA is cleaved processively by dmDcr-2, while 3’ovr dsRNA is cleaved distributively (Welker et al., 2011; Sinha et al., 2015; Sinha et al., 2018; see Discussion).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig2-v2.jpg)
+
+**Figure 2.:** Dissociation kinetics were measured by mixing enzyme-bound Cy3-end-labeled 52-dsRNA with 10-fold excess of unlabeled dsRNA in stopped-flow syringes, and monitoring decrease in Cy3 fluorescence over time. Cartoons show BLT (A) and 3’ovr (B) dsRNA with representative kinetic traces for dissociation of Cy3-labeled BLT (C) and 3’ovr (D) 52-dsRNA, and independent experiments over shorter time courses (BLT, E; 3’ovr F). (G) Reaction scheme for dissociation of enzyme-bound Cy3-dsRNA; in this scheme since k-1 >> k-2, the dmDcr-2•ATPγS•Cy3-dsRNA reaches steady-state level with rate constant k-1, and then decays slowly with rate constant k-2 (Fersht, 1999). (H) Kinetic traces were analyzed with single or double exponential rate equations, yielding values for dissociation off-rates. At least four to ten traces were collected for each condition, and averaged trace was analyzed with single or double exponential rate equations to obtain values for kinetic parameters (kobs = 0.693/t1/2) and associated standard error.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Association (A) and dissociation (B) kinetics follow a two-step mechanism. Observed rate constants for bimolecular (kobs1) and isomerization (kobs2) steps are a function of microscopic rate constants. In association kinetics (A), kobs1 is linearly dependent on molar concentration of dmDcr-2 (1 µM after twofold dilution upon mixing, see Materials and methods), and therefore, accurate evaluation of the second-order rate constant (k+1, slope) requires kobs1 values to be measured over a fairly wide range of enzyme concentration. Since a non-ideal (aggregative behavior) of dmDcr-2 at higher micromolar concentration precludes determination of kobs1 as a function of enzyme concentration (see Materials and methods), we estimated the second-order rate constant from the kobs1 value measured at a single dmDcr-2 concentration. To enhance accuracy in values of estimated microscopic rate constants as reported in (C), we used the mean value of observed rate constants (BLT, kobs1 = 1.24 s−1, kobs2 = 0.013 s−1; 3’ovr, kobs1 = 0.36 s−1, kobs2 = 0.01 s−1) obtained from three independent experiments; values of kobs measured using different batches of protein and/or dsRNA, in general, varied by less than or equal to twofold. The Kd values for enzyme–substrate interaction were evaluated using all microscopic rate-constants; values of k-1 and k-2 reported in (C) represent an average of three independently determined values from dissociation off-rate measurements. The kinetically determined Kd values reported in (C), Kd = (k-1k-2)/(k+1k+2), are within experimental error of those previously determined with equilibrium binding studies (Donelick et al., 2020).
+
 We also estimated the microscopic rate constants associated with the interaction of BLT and 3’ovr dsRNA with dmDcr2•ATPγS using observed rates constants obtained from the association and dissociation kinetics (Figures 1 and 2) to evaluate Kd values (Figure 2—figure supplement 1). The kinetically determined Kd values for BLT and 3’ovr dsRNA for dmDcr-2 with nucleotide are similar (within experimental error) to those determined from equilibrium binding studies (Donelick et al., 2020; Jarmoskaite et al., 2020), supporting a two-step binding and dissociation mechanism for dsRNA with dmDcr-2 (Figure 2—figure supplement 1).
 
-## dmDcr-2 catalyzes an ATP-dependent transient unwinding and rewinding of dsRNA
+### dmDcr-2 catalyzes an ATP-dependent transient unwinding and rewinding of dsRNA
 
 The dmDcr-2 helicase domain is structurally homologous to mammalian RIG-I (Jiang et al., 2011; Kolakofsky et al., 2012), and whether RIG-I exhibits ATP-dependent unwinding of dsRNA is controversial (Takahasi et al., 2008; Myong et al., 2009). However, a cryo-EM structure of the dmDcr-2•ATPγS•BLT-dsRNA complex showed a single-stranded RNA within the helicase domain, and biochemical assays based on strand-displacement confirmed unwinding activity (Sinha et al., 2018). This raised the question of why dmDcr-2 unwinds dsRNA, since presumably it would need to rewind it for subsequent cleavage by the dsRNA-specific RNase III active sites (Nicholson, 2014).
 
@@ -57,31 +77,55 @@ To directly monitor ATP-dependent unwinding of dsRNA by dmDcr-2 in real time, an
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig3-v2.jpg)
 
-**Figure 3.:** The time-dependent change in FRET signal was monitored after mixing 0.2 μM dsRNA containing a FRET (donor–acceptor) pair with 2 μM dmDcr-2 in stopped-flow syringes. Cartoons showing BLT (A) and 3’ovr (B) 52-dsRNA indicating positions of Cy3 and Cy5, and modifications to block dmDcr-2 entry, as in Figure 1. Representative kinetic traces for unwinding and reannealing of FRET-labeled BLT (C) and 3’ovr (D) dsRNA by dmDcr-2 alone (black), with ATPγS (red), or ATP (blue). Kinetic traces were analyzed with a double exponential rate equation, and kinetic parameters are in (E). At least four to ten traces were collected for each experimental condition, and the averaged trace was analyzed with single or double exponential rate equations, yielding values for kinetic parameters (k = 0.693/obst1/2), amplitude (A), and associated standard error.
+**Figure 3.:** The time-dependent change in FRET signal was monitored after mixing 0.2 μM dsRNA containing a FRET (donor–acceptor) pair with 2 μM dmDcr-2 in stopped-flow syringes. Cartoons showing BLT (A) and 3’ovr (B) 52-dsRNA indicating positions of Cy3 and Cy5, and modifications to block dmDcr-2 entry, as in Figure 1. Representative kinetic traces for unwinding and reannealing of FRET-labeled BLT (C) and 3’ovr (D) dsRNA by dmDcr-2 alone (black), with ATPγS (red), or ATP (blue). Kinetic traces were analyzed with a double exponential rate equation, and kinetic parameters are in (E). At least four to ten traces were collected for each experimental condition, and the averaged trace was analyzed with single or double exponential rate equations, yielding values for kinetic parameters (kobs = 0.693/t1/2), amplitude (A), and associated standard error.
 
 We also observed a sequential loss and gain of FRET signal catalyzed by dmDcr-2 on BLT and 3’ovr with ATPγS (red trace; Figure 3C,D), although the signal was not as robust as with ATP. This may indicate the presence of contaminating ATP in commercially purchased ATPγS, although we cannot rule out that binding of nucleotide to dmDcr-2 (without hydrolysis) is sufficient to initiate unwinding, as reported for some DEAD-box helicases (Liu et al., 2008). Finally, a higher fluorescence amplitude associated with the rewinding phase for both BLT and 3’ovr with ATP (compared to ATPγS) underscores the role of ATP-hydrolysis in rewinding (Yusufzai and Kadonaga, 2008).
 
-## The translocation/arrival of dmDcr-2 at the cleavage site is ATP-dependent
+### The translocation/arrival of dmDcr-2 at the cleavage site is ATP-dependent
 
 The transient kinetic experiments described so far reveal that the initial binding, unwinding, and rewinding, are all termini-dependent, and that ATP binding and hydrolysis are critical for these early molecular events of the dmDcr-2 catalytic cycle (Figures 1–3). The dmDcr-2 primary cleavage site is located ~20–25 nt away from the dsRNA terminus (Zamore et al., 2000; Elbashir et al., 2001), and therefore, it is anticipated that dmDcr-2 translocates ~20 nt on dsRNA upon binding, but prior to dsRNA cleavage. We investigated the real-time arrival of dmDcr-2 at the cleavage site by monitoring the protein-induced fluorescence enhancement (PIFE) signal of Cy3 (Hwang and Myong, 2014; Stennett et al., 2015; Nguyen et al., 2019) attached to the 18th position of the sense strand of 52-dsRNA (Figure 4A,B). Representative stopped-flow kinetic traces showed the time-dependent increase in Cy3 fluorescence signal in the presence of ATP (blue trace; Figure 4C,D), and analyses with a single-exponential rate equation yielded half-life values for the 18-base-pair translocation of dmDcr-2 on BLT and 3’ovr dsRNA, of 14 s and 27.8 s, respectively (Figure 4E). The twofold higher translocation rate of dmDcr-2 on BLT dsRNA compared to 3’ovr dsRNA is consistent with the twofold higher rate of ATP hydrolysis observed with BLT dsRNA compared to 3’ovr dsRNA (Donelick et al., 2020), indicating that ATP hydrolysis is directly coupled with translocation. Interestingly, the speed of dmDcr-2 translocation is comparable to that of the ATP-dependent translocation of RIG I on BLT dsRNA (Myong et al., 2009; Devarkar et al., 2018).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig4-v2.jpg)
 
-**Figure 4.:** Cartoons show BLT (A) and 3’ovr (B) 52-dsRNA with a covalently linked Cy3 at the 18th nucleotide of the top (sense) strand, and deoxynucleotide (CC) and biotin to prevent binding of dmDcr-2 to one end. Representative stopped-flow kinetic traces for translocation of dmDcr-2 alone (black trace), and while bound with ATPγS (red) and ATP (blue) on BLT (C) and 3’ovr (D) dsRNA. Kinetic traces were analyzed with a single exponential rate equation, yielding observed rate constants associated with translocation (E). At least four to ten traces were collected for each experimental condition, and averaged trace was analyzed with single or double exponential rate equations, yielding kinetic parameters (k = 0.693/obst1/2) and associated standard error.
+**Figure 4.:** Cartoons show BLT (A) and 3’ovr (B) 52-dsRNA with a covalently linked Cy3 at the 18th nucleotide of the top (sense) strand, and deoxynucleotide (CC) and biotin to prevent binding of dmDcr-2 to one end. Representative stopped-flow kinetic traces for translocation of dmDcr-2 alone (black trace), and while bound with ATPγS (red) and ATP (blue) on BLT (C) and 3’ovr (D) dsRNA. Kinetic traces were analyzed with a single exponential rate equation, yielding observed rate constants associated with translocation (E). At least four to ten traces were collected for each experimental condition, and averaged trace was analyzed with single or double exponential rate equations, yielding kinetic parameters (kobs = 0.693/t1/2) and associated standard error.
 
 We also observed a time-dependent increase in Cy3 fluorescence in our translocation assay with ATPγS (red trace) or even without nucleotide (black trace) (Figure 4C,D), albeit rates and associated amplitudes were markedly lower compared to those in the presence of ATP (Figure 4E). Consistent with our binding studies (Figure 1 and Figure 1—figure supplement 2), without nucleotide, 3’ovr dsRNA directly interacts with the Platform–PAZ domain, which presumably directs the dsRNA to the RNase III active sites for cleavage. Therefore, it seems likely that the enhancement in fluorescence from Cy3 at position 18 of 3’ovr dsRNA in the absence of nucleotide reflects an interaction with the protein near the RNase III domains. Similarly, with ATPγS, the observed PIFE may reflect formation of a stable, non-productive enzyme–substrate complex wherein the Cy3-label is engaged with the helicase domain upon clamping on dsRNA termini.
 
-## ATP-dependent cleavage of dsRNA is dictated by dsRNA termini
+### ATP-dependent cleavage of dsRNA is dictated by dsRNA termini
 
 After delineating the early kinetic events of the dmDcr-2-catalyzed reaction that precede dsRNA cleavage (Figures 1–4), we wished to gain mechanistic information about how these events fine-tune substrate cleavage and product release. Toward this goal, we performed transient kinetic experiments to directly monitor dsRNA cleavage and siRNA release in real time. Notably, the dmDcr-2-catalyzed cleavage of dsRNA and siRNA release was kinetically well separated from earlier molecular events (binding, unwinding/rewinding, and translocation), enabling reliable evaluation of cleavage parameters (see below; Figures 1, 3, and 4).
 
 We prepared BLT and 3’ovr 52-dsRNA with a Cy3-Cy5 FRET pair that spanned the primary cleavage site in 52-dsRNA (Figure 5A,B; dotted lines), so that dmDcr-2-catalyzed cleavage coupled with siRNA release would lead to a loss of FRET. We mixed 10-fold excess dmDcr-2 (alone or with nucleotide) with FRET-labeled 52-dsRNA in the stopped-flow system and monitored the reaction for ~5 min (to observe the entire catalytic cycle) by recording the time-dependent change in Cy5 FRET signal upon excitation of Cy3 (see Materials and methods). As in the translocation assay, which used dsRNA without a FRET acceptor (Figure 4C,D), we anticipated that an increase in Cy3 fluorescence due to PIFE would also lead to an increased Cy5 fluorescence due to a greater extent of energy transfer from Cy3 to Cy5 (Hwang and Myong, 2014; Stennett et al., 2015; Nguyen et al., 2019). Indeed, the time-dependent increase in FRET signal observed for BLT and 3’-ovr dsRNA in the presence of dmDcr-2 and ATP was similar to the increase in PIFE signal observed in the translocation assay (compare t1/2 and t11/2 values with ATP, Figures 4E and 5E). As anticipated, the time-dependent increase in FRET signal due to arrival of dmDcr-2 at the cleavage site was followed by a slow loss of FRET for both BLT and 3’ovr dsRNA (blue, Figure 5C,D). We attributed this time-dependent slow loss of FRET signal to the cleavage of dsRNA coupled with siRNA release. Control experiments performed with cleavage incompetent dmDcr-2 (dmDcr2RIII) only showed a time-dependent increase in FRET signal (Figure 5—figure supplement 1), confirming this interpretation. The half-life for the ATP-dependent cleavage/product release for BLT dsRNA (t21/2 = 43 s) was twofold faster than that of 3’-ovr dsRNA (t21/2 = 83 s) (Figure 5E), possibly reflecting a differential interaction of dsRNA termini (after translocation) with the Platform–PAZ domain that poises the enzyme for substrate cleavage (see below) (Sinha et al., 2015). The twofold difference in dsRNA cleavage/siRNA release also correlates with the difference in ATP-hydrolysis rate observed with dsRNA with different termini, indicating that ATP-hydrolysis is important for substrate cleavage and/or product release (see below). Further, a higher amplitude for the FRET loss associated with BLT dsRNA cleavage/siRNA release compared to 3’ovr dsRNA suggests an incomplete release and/or rebinding of 3’ovr siRNA (Gan et al., 2006). This could arise due to a higher binding specificity of 3’ovr to the Platform–PAZ domain, which could play a role in siRNA release or transfer to Argonaute 2 (AGO2, see below) (Ma et al., 2004; Tian et al., 2014; Sheu-Gruttadauria and MacRae, 2017).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig5-v2.jpg)
+
+**Figure 5.:** Cartoons illustrate BLT (A) and 3’ovr (B) dsRNA containing the Cy3-Cy5 FRET pair at positions indicated, and deoxynucleotide (CC) and biotin to block dmDcr-2 binding at one end. Representative stopped-flow kinetic traces for cleavage of BLT (C) and 3’ovr (D) 52-dsRNA by dmDcr-2 alone (black), with ATPγS (red) or ATP (blue). Kinetic traces were analyzed with a double exponential rate equation, and kinetic parameters listed in (E). At least four to ten traces were collected for each condition, and averaged trace was analyzed with single or double exponential rate equations, yielding values for kinetic parameters (kobs = 0.693/t1/2) and associated standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The RNase III mutant variant contains point mutations as indicated (Figure 1—figure supplement 1). Cartoons illustrate BLT (A) and 3’ovr (B) dsRNA as in Figure 5. Representative kinetic traces were analyzed with a single exponential rate equation yielding half-life values for BLT (C; 25 s) and 3’ovr (D; 50 s) dsRNA.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Cartoons illustrating BLT (A) and 3’ovr (B) 52-dsRNA as in Figure 5. Representative stopped-flow kinetic traces for cleavage of BLT (C) and 3’ovr (D) dsRNA by dmDcr-2 alone (black trace), dmDcr2ΔHel (cyan trace), and dmDcr-2 with ATP (blue trace). Kinetic traces were analyzed with single or double exponential rate equations yielding half-life values (E).
+
 In the absence of nucleotide, dmDcr-2 did not produce a significant change in FRET for BLT dsRNA, but biphasic kinetics were observed for 3’ovr dsRNA, with an initial modest gain of FRET followed by slow loss over time (black, Figure 5C,D), as expected for substrate binding followed by slow cleavage. This result is consistent with prior studies indicating that dmDcr-2’s Platform–PAZ domain mediates a slow and ATP-independent cleavage of 3’ovr dsRNA that does not require the helicase domain (Sinha et al., 2018). Interestingly, we observed a similar cleavage of BLT dsRNA by dmDcr-2 lacking the helicase domain (dmDcr-2ΔHel) (cyan, Figure 5—figure supplement 2), likely due to its binding to the Platform–PAZ domain in the absence of the helicase domain. With ATPγS, both BLT and 3’ovr dsRNA showed biphasic kinetics (red, Figure 5C,D) and both phases were associated with an increase in FRET, suggesting that without ATP hydrolysis, dsRNA was kinetically trapped in a non-productive conformation within the helicase domain that likely undergoes slow conformational changes.
 
-## Conformational dynamics of helicase and Platform–PAZ domains impact dmDcr-2 catalysis
+### Conformational dynamics of helicase and Platform–PAZ domains impact dmDcr-2 catalysis
 
 Our transient kinetics studies indicated that in the presence of ATP, BLT and 3’ovr termini are discriminated by the helicase domain during initial binding, and subsequently by the Platform–PAZ domains prior to cleavage (Figures 1 and 5). To gain insights into how fast conformational dynamics of these domains is correlated with catalytic activity, we performed time-resolved fluorescence anisotropy. We measured anisotropy parameters of Cy3-end-labeled BLT and 3’ovr 52-dsRNA (Figure 6A,B), alone (green), bound to dmDcr-2RIII without nucleotide (black), as well as with ATPγS (red) or ATP (blue). Our assays to this point indicated that ATPγS traps dsRNA within the helicase domain (Figure 1 and Figure 1—figure supplement 2), while addition of ATP to dmDcr-2RIII allows translocation without cleavage, placing termini in the Platform–PAZ domain (Figure 5); thus, we anticipated these nucleotides would allow us to separately probe dynamics of the helicase and Platform–PAZ domains. Anisotropy decay curves (Figure 6C–J) were analyzed with single and double exponential rate equations yielding rotational correlation time (ϕ), fractional amplitude (A), limiting anisotropy (r∞), and change in anisotropy (Δr) (Figure 6K; Materials and methods) (Lakowicz, 2006).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig6-v2.jpg)
+
+**Figure 6.:** Cartoons show Cy3-end-labeled 52-dsRNA with BLT (A) and 2 nt 3’ovr termini (B) with deoxynucleotides (CC) and biotin to prevent dmDcr-2 binding to one end. Representative anisotropy decay curves for Cy3-end-labeled BLT (C–F) and 3’ovr dsRNA (G–J) alone (green) and bound to dmDcr-2RIII in the absence of nucleotide (black), or in the presence of ATPγS (red) or ATP (blue). All decay curves were analyzed with a minimum number of exponential terms (single and double exponential rate equations) to obtain the best fit (see Materials and methods), yielding values of anisotropy parameters (K). The precise values of anisotropy parameters associated with the fast correlation time (φ1) were determined from independent analyses of the fast phase of anisotropy decay curves using a single exponential equation (see Figure 6—figure supplement 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** All biphasic anisotropy decay curves were analyzed using double-exponential equations, and to obtain precise values of anisotropy parameters associated with fast dynamics, the fast phase of decay curves was independently analyzed with a single-exponential equation, yielding anisotropy parameters listed in Figure 6.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65810/elife-65810-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Data were analyzed with single- and double-exponential rate equations yielding values for the fluorescence lifetime (𝜏) of Cy3 in different micro-environments of dmDcr-2 (E). Also shown are the life-time values of Cy3-BLT and Cy3-3’ovr dsRNA without protein (alone) obtained under identical experimental conditions to facilitate comparison (E). The life-time values listed here represent the averaged life-time.
 
 Anisotropy parameters for Cy3-end-labeled BLT and 3’ovr 52-dsRNA (Figure 6C,G,K) were similar to the reported values of Cy3-end-labeled dsDNA (Sanborn et al., 2007). To obtain precise values for fast correlation times, the fast phase of anisotropy decay was analyzed separately (Figure 6—figure supplement 1A–J). Fast (ϕ1) and slow (ϕ2) rotational correlation times for BLT 52-dsRNA were 0.34 and 2.6ns, respectively, with associated amplitudes of 20% and 80% (Figure 6K). For Cy3-end-labeled 52-dsRNA, fast correlation times derive from internal rotational dynamics of the fluorophore, while slow correlation times report on local tumbling of the hydrated nucleic acid (Sanborn et al., 2007; Broos et al., 1995; Unruh et al., 2005).
 
@@ -99,11 +143,11 @@ Invertebrate Dicers involved in antiviral defense require ATP (Welker et al., 20
 
 While prior equilibrium studies indicate that 3’ovr dsRNA, but not BLT dsRNA, interacts with dmDcr-2 in the absence of nucleotide, our transient kinetic studies show that dsRNA with either terminus binds in the absence of nucleotide (Figures 1, 6, and 7). Addition of nucleotide directs both BLT and 3’ovr dsRNA to the helicase domain (Figures 1 and 2 and Figure 1—figure supplement 2), albeit BLT dsRNA is trapped faster and clamped tighter (Figures 1 and 2). Prior studies show that dsRNA is unwound by the helicase domain (Sinha et al., 2018), and we directly monitored the ATP-dependent transient unwinding and rewinding of dsRNA at the termini (Figure 3). Furthermore, we find that the energy of ATP hydrolysis is coupled with the translocation of dmDcr-2 to the cleavage site located ~20–25 nt away from the dsRNA terminus (Figure 4). Our studies suggest that ATP binding and hydrolysis by the helicase domain promote terminus-dependent conformational transitions ~80 Å away in the Platform–PAZ domain, and further that these dynamics fine-tune substrate cleavage and siRNA release (Figures 5 and 6).
 
-## Termini-dependent dsRNA discrimination by dmDcr-2 for enhanced antiviral defense
+### Termini-dependent dsRNA discrimination by dmDcr-2 for enhanced antiviral defense
 
 D. melanogaster requires the helicase domain of dmDcr-2 to mount an effective antiviral response (Marques et al., 2013; Donelick et al., 2020), but definitive evidence that this domain discriminates termini of viral dsRNA in vivo, in flies, awaits validation. However, our studies reveal dramatic differences in the interaction and processing of BLT and 3’ovr termini, firmly establishing that the enzyme has evolved the ability to discriminate these termini. Our transient kinetics studies show that dmDcr-2's helicase domain entraps BLT termini approximately sixfold faster, and holds tighter, as compared to 3’ovr termini (Figures 1 and 2). Furthermore, a higher observed rate for cleavage of BLT dsRNA (t1/2 = 43 s; Figure 5E) as compared to its residence time on dmDcr-2, 346 s (t1/2 = 0.693/koff slow; Figure 2H), would be expected to facilitate the processivity of dmDcr-2 on long BLT dsRNA observed in prior studies (Welker et al., 2011; Sinha et al., 2015). In contrast, the residence time of 3’ovr dsRNA on dmDcr-2 in the presence of nucleotide (t1/2 = 86 s, Figure 2H) is similar to the observed rate of its cleavage (t1/2 = 84 s; Figure 5E) – indicating the enzyme bound to long 3’ovr dsRNA dissociates at the end of the catalytic cycle after producing a single ~20–25 base-pair siRNA (distributive cleavage). While the BLT dsRNA used in our kinetic experiments was designed to mimic termini found on certain viruses, the 3’ovr dsRNA is a product released after the first or subsequent round(s) of the dmDcr-2 catalytic cycle (Cenik et al., 2011; Marques et al., 2013). Our kinetic studies showing a markedly higher rate of initial engagement and processing of BLT dsRNA (as compared to 3’ovr) by dmDcr-2, underscores the idea that invertebrate Dicers have fine-tuned the transient events of the catalytic cycle (Benner, 1989) for an enhanced clearance of newly replicated/intact viral dsRNA (Flint et al., 2015; Mueller et al., 2010; Schlee, 2013; Sowa et al., 2020).
 
-## The role of ATP binding and hydrolysis in dmDcr-2 catalysis
+### The role of ATP binding and hydrolysis in dmDcr-2 catalysis
 
 Our transient kinetic studies show that ATP binding promotes a termini-dependent initial encounter of dsRNA with dmDcr-2, followed by isomerization of the encounter complex, characterized by a slow conformational change in the helicase domain (Figure 7). Using the t1/2 values (Figure 1I, + ATPγS), we calculated the observed rate constants (kobs = 0.693/t1/2) for the nucleotide-dependent conformational change in dmDcr-2’s helicase domain as 0.012 s−1 and 0.007 s−1 when bound to BLT and 3’ovr dsRNA, respectively. This difference in the kinetics of the nucleotide-mediated conformational change in the helicase domain while bound to distinct dsRNA termini offers a kinetic control mechanism for substrate discrimination by the helicase domain.
 
@@ -111,7 +155,7 @@ We find that ATP-hydrolysis by the helicase domain is essential for energeticall
 
 Since the half-lives for ATP-dependent cleavage of BLT and 3’ovr dsRNA, and siRNA release, are the longest steps of the catalytic cycle (Figure 7), we assign this as the rate-limiting step. The observed rate constant associated with cleavage/siRNA release with ATP (t21/2, 43.2 s, BLT; 83.8 s, 3’ovr; Figure 5E) measured in our FRET-based assay is essentially the same as the rate of isomerization of dmDcr-2•ATPγS•dsRNA (t21/2, 55.5 s, BLT; 95.9 s, 3’ovr, Figure 1I), suggesting that the ATP-binding-mediated conformational change in the helicase domain is critical for siRNA release. Such a role for ATP-binding during siRNA release has been proposed for human Dicer (Zhang et al., 2002). The regulatory factors Loqs-PD and R2D2 bind dmDcr-2’s helicase domain to modulate dsRNA processing and transfer of siRNA to Argonaute-2, respectively (Liu et al., 2003; Liu et al., 2006; Marques et al., 2010; Hartig and Förstemann, 2011). We propose that an ATP-mediated conformation change in the helicase domain, in conjunction with R2D2, kinetically fine-tunes the transfer of siRNA from dmDcr-2 to Argonaute-2 at the end of the catalytic cycle.
 
-## The importance of conformational fluctuations of dmDcr-2 in catalysis
+### The importance of conformational fluctuations of dmDcr-2 in catalysis
 
 Conformational dynamics of proteins are often harnessed by enzymes to enhance catalytic efficiency (Vendruscolo and Dobson, 2006; Boehr et al., 2006; Gerstein et al., 1994; Henzler-Wildman et al., 2007; Benkovic and Hammes-Schiffer, 2003). Slow transitions in the micro-millisecond range are typically associated with domain movements that facilitate substrate binding and product release (Gerstein et al., 1994), while fast, pico-nanosecond fluctuations promote rapid sampling of conformations that can reduce activation barriers and fine-tune transient mechanisms to promote catalysis (Karplus and Kuriyan, 2005; Henzler-Wildman et al., 2007). Such conformational dynamics are encoded in protein structures, and importantly, a subset of fast-conformational fluctuations (ps–ns) can be kinetically coupled with slower motions (ms–s) to enhance catalytic efficiency (Karplus and Kuriyan, 2005; Gerstein et al., 1994). Molecular dynamic simulations and NMR studies suggest that conformational fluctuations of proteins are not entirely random, but biased toward specific conformational states that enhance their functional efficiency (Karplus and Kuriyan, 2005). This phenomenon is mechanistically analogous to the inherent bias toward selecting a few specific conformational states of a protein, and funneling them to the next step in the protein folding pathway, instead of sampling all possible conformational states (possibly millions) which would require an astronomical amount of time (Levinthal Paradox) (Karplus and Kuriyan, 2005).
 
@@ -123,52 +167,216 @@ Our finding that the local tumbling/rotation of BLT 52-dsRNA inside the Platform
 
 ## Materials and methods
 
-## Expression and purification of dmDcr-2 and variants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA agent</td>
+      <td>pFastBac (plasmid)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10360–014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9 cells</td>
+      <td>Expression System</td>
+      <td>Cat# 94–001S RID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Escherichia coli)</td>
+      <td>DH10Bac Competent Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10361012</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Protein purification reagent</td>
+      <td>Strep-Tactin</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat# 2-1201-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA labeling reagent</td>
+      <td>Sulfo-NHS-ester Cyanine3</td>
+      <td>Lumiprobe Corporation</td>
+      <td>Cat# 21320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA labeling reagent</td>
+      <td>Sulfo-NHS-ester Cyanine5</td>
+      <td>Lumiprobe Corporation</td>
+      <td>Cat# 23020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA synthesis reagent</td>
+      <td></td>
+      <td>Glen Research</td>
+      <td>http://www.glenresearch.com</td>
+      <td>Phosphoramidites</td>
+    </tr>
+    <tr>
+      <td>Nucleotide</td>
+      <td>ATP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# R1441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nucleotide-analog</td>
+      <td>ATPγS</td>
+      <td>Sigma</td>
+      <td>A-1388–25 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin software package</td>
+      <td>Origin Lab</td>
+      <td>Origin Lab Corporation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fast-mixing device</td>
+      <td>Stopped-flow system</td>
+      <td>BioLogic Sciences Instruments</td>
+      <td>SFM 3000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Optical filter</td>
+      <td>Long pass- filter</td>
+      <td>NewPort</td>
+      <td>10LWF-550B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TCSPC fluorescence system</td>
+      <td>Time-correlated single photon counting (TCSPC) module</td>
+      <td>PicoQuant</td>
+      <td>PHR 800 and Picoharp 300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>52 nt sense strand for BLT and 3’ ovr dsRNA</td>
+      <td>This paper</td>
+      <td>ssRNA</td>
+      <td>5’-GGAGGUAGUAGGUUGUAUAGUAGUAAGACCAGACCCUAGACCAAUUCAUGCC-3’ CC = deoxynucleotide</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>52 nt antisense strand for BLT dsRNA</td>
+      <td>This paper</td>
+      <td>ssRNA</td>
+      <td>Biotin-5’- GGCAUGAAUUGGUCUAGGGUCUGGUCUUACUACUAUACAACCUACUACCUCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>54 nt antisense strand for 3’ovr dsRNA</td>
+      <td>This paper</td>
+      <td>ssRNA</td>
+      <td>Biotin-5-GGCAUGAAUUGGUCUAGGGUCUGGUCUUACUACUAUACAACCUACUACCUCCCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cy3-end labeled 52 nt sense strand</td>
+      <td>IDT</td>
+      <td>ssRNA</td>
+      <td>5’Cy3-GGAGGUAGUAGGUUGUAUAGUAGUAAGACCAGACCCUAGACCAAUUCAUGCC-3’ CC = deoxynucleotide</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of dmDcr-2 and variants
 
 dmDcr-2, dmDcr-2RIII, and dmDcr-2ΔHel were expressed and purified using a baculovirus expression system as described (Sinha and Bass, 2017). Briefly, recombinant pFastBac plasmid containing the open reading frame for OSF-tagged dmDcr-2 was transformed into DH10Bac competent cells. Recombinant bacmid was isolated and transfected into SF9 cells to make viral stocks (P0, P1, and P2) for protein expression. Recombinant P2 viral stocks were titered and used for large-scale expression. Expressed protein was purified to homogeneity using Strep-Tactin affinity chromatography as described, and purified protein was dialyzed, concentrated, and stored at −80°C in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP), supplemented with 20% glycerol.
 
-## RNA preparation
+### RNA preparation
 
 BLT 52-dsRNA was prepared from 52 nt sense and antisense strands, and 3’ovr dsRNA was prepared with 52 nt sense and 54 nt antisense strands (sequences below) as described (Sinha et al., 2018); all strands were chemically synthesized using reagents from Glen Research (Sterling VA), and HPLC purified at the DNA/Peptide Synthesis Core facility at the University of Utah. All dsRNAs were prepared with two deoxynucleotides at the 3’-end of the sense strand, and a biotin at the 5’-end of the antisense strand, to facilitate directional binding of dmDcr-2. Single strands were gel purified after PAGE (17% denaturing). dsRNA was prepared by mixing equimolar amounts of sense and antisense RNAs in annealing buffer (50 mM Tris pH 8.0, 20 mM KCl), heating at 95°C for 2 min, and allowing to cool to room temperature for 4 hr. Annealed dsRNA was purified after 8% native PAGE.
 
-## Labeling of RNA
+### Labeling of RNA
 
 Cy3-5’-end-labeled 52 nt sense RNA (sequence above) was purchased from IDT (Integrated DNA Technologies). For internal labeling of sense and antisense strands, oligonucleotides were synthesized in-house with C6-amine modified uridine at desired locations needed for monitoring duplex unwinding, translocation, and cleavage. The Sulfo-NHS-ester forms of Cyanine dyes (Cy3 or Cy5) were purchased from Lumiprobe (Lumiprobe corporation). C6-amine modified RNA was mixed with 20-fold molar excess of the NHS-ester modified dye in freshly prepared labeling buffer (100 mM sodium tetraborate pH 8.5; pH adjusted with 12.1 M HCl) as described previously (Joo and Ha, 2012). The mixture was incubated for 6 hr at room temperature followed by overnight at 4°C. Labeled RNA was ethanol precipitated, rinsed with 70% cold ethanol to remove excess dye, and gel purified after 17% denaturing PAGE prior to annealing to form duplex.
 
-## Transient kinetic experiments
+### Transient kinetic experiments
 
 Kinetic events prior to dsRNA cleavage (binding, unwinding/rewinding, and translocation) were investigated separately utilizing dsRNA with fluorophores (Cy3 or Cy3–Cy5) at specific sites, and by monitoring time-dependent changes in fluorophore signal. Transient kinetic analysis of dsRNA binding to dmDcr-2 was performed using a stopped-flow system (SFM 3000, BioLogic Sciences Instruments) under pseudo first-order conditions in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP) at 25°C. The premixing concentrations of dmDcr-2 (or dmDcr-2•ATP/ATPγS) and Cy3-end-labeled dsRNA in stopped-flow syringes were 2 μM and 0.2 μM, respectively. The nucleotide-bound form of dmDcr-2 (dmDcr-2•ATP/ATPγS) was prepared by incubating 2 μM dmDcr-2 for 5 min with a large excess (8 mM) of ATP/ATPγS to ensure rapid binding. The binding reaction was started with rapid mixing of equal volumes of enzyme (or enzyme–nucleotide) with dsRNA. Reaction progress was monitored by exciting the sample at 530 nm and measuring fluorescence emission using a 550 nm long pass-filter (NewPort). At least 4–10 kinetic traces were obtained for each experimental condition and values reported as averages. Averaged traces were analyzed using single or double exponential rate equations, yielding values for the observed rate constant (kobs = 0.693/t1/2). Data analysis was performed using the Origin software package (OriginLab corporation). A non-ideal (aggregative) behavior of dmDcr-2 at high micromolar concentration precludes an accurate measurement of kobs as a function of enzyme concentration in our experimental conditions.
 
-## Measurement of dissociation off-rates
+### Measurement of dissociation off-rates
 
-Dissociation off-rates for enzyme-bound dsRNA were measured by mixing tenfold excess of 52-dsRNA with dmDcr-2•ATPγS•Cy3-dsRNA in stopped-flow syringes; we observed no difference in observed rates of dissociation with further increases in excess dsRNA (15-fold excess). Off-rate measurements were performed in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP) at 25°C. Dissociation kinetics were recorded by exciting samples at 530 nm and detecting fluorescence emission using a 550 nm long pass-filter (NewPort). At least 4–10 traces were obtained and values averaged. Averaged traces were analyzed using single or double exponential rate equations to yield dissociation off-rates. Data analysis was with the Origin software package (OriginLab corporation). The activation-free energy was calculated using the Eyring equation (Equation 1):(1)ΔG‡=−RTln⁡(koff h/kB T)where R is the gas constant (1.986 cal K−1 mol−1), T is the absolute temperature, h is the Planck’s constant (1.58 × 10−34 cal s), and kB is the Boltzmann’s constant (3.3 × 10−24 cal K−1).
+Dissociation off-rates for enzyme-bound dsRNA were measured by mixing tenfold excess of 52-dsRNA with dmDcr-2•ATPγS•Cy3-dsRNA in stopped-flow syringes; we observed no difference in observed rates of dissociation with further increases in excess dsRNA (15-fold excess). Off-rate measurements were performed in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP) at 25°C. Dissociation kinetics were recorded by exciting samples at 530 nm and detecting fluorescence emission using a 550 nm long pass-filter (NewPort). At least 4–10 traces were obtained and values averaged. Averaged traces were analyzed using single or double exponential rate equations to yield dissociation off-rates. Data analysis was with the Origin software package (OriginLab corporation). The activation-free energy was calculated using the Eyring equation (Equation 1):
 
-## Measurement of translocation kinetics
+$$
+ΔG^{‡}=−RTln⁡(koff h/kB T)
+$$
+
+where R is the gas constant (1.986 cal K−1 mol−1), T is the absolute temperature, h is the Planck’s constant (1.58 × 10−34 cal s), and kB is the Boltzmann’s constant (3.3 × 10−24 cal K−1).
+
+### Measurement of translocation kinetics
 
 Translocation assays used 52-dsRNA with a Cy3 covalently attached to the 18th nt of the sense strand and were performed in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP) at 25°C. Reactions were monitored upon mixing dsRNA with 10-fold excess of dmDcr-2 alone, or bound to nucleotide (dmDcr-2•ATP/ATPγS), in stopped-flow syringes. dmDcr-2•ATP/ATPγS was prepared by incubating 2 μM of dmDcr-2 with 8 mM ATP/ ATPγS for 5 min as described above. The time-dependent arrival of dmDcr-2 near to the Cy3 attached to dsRNA leads to PIFE. At least 4–10 traces were obtained and values averaged. Averaged traces were analyzed using single or double exponential rate equations, yielding values for the observed rate constant (kobs = 0.693/t1/2) for the translocation. Data analysis was performed using the Origin software package (OriginLab corporation).
 
-## Measurement of dsRNA cleavage kinetics
+### Measurement of dsRNA cleavage kinetics
 
 Kinetics of dsRNA cleavage and siRNA release were investigated by monitoring the first round of catalytic cycle for ~5 min. The reaction mixture was synchronized at the beginning of the catalytic cycle via rapid mixing using the stopped-flow system, and by using 10-fold excess of dmDcr-2 over dsRNA. The excess enzyme over substrate ensured that dsRNA remained bound during the first turnover, thus making precise measurement of kinetic parameters feasible. dsRNA used in the cleavage assay had a FRET pair at the primary cleavage site, and cleavage and siRNA release were recorded by exciting at 530 nm (Cy3 excitation) and monitoring the time-dependent change in FRET signal (Cy5 fluorescence emission) using 670 nm long pass filter. Assays were performed in cleavage assay buffer (25 mM Tris pH 8.0, 100 mM KCl, 10 mM MgCl2.6H2O, 1 mM TCEP) at 25°C in the absence and presence of nucleotide (ATP/ATPγS). Nucleotide-bound dmDcr-2 (dmDcr-2•ATP/ATPγS) was prepared by incubating 2 μM of dmDcr-2 with 8 mM ATP/ ATPγS for 5 min. At least 4–10 traces were obtained and values averaged. Averaged traces were analyzed using single or double exponential rate equations, and data analysis was performed using the Origin software package (OriginLab corporation).
 
-## Time-resolved fluorescence experiments
+### Time-resolved fluorescence experiments
 
-## Experimental setup
+#### Experimental setup
 
-## Channel equalization with neutral density
+#### Channel equalization with neutral density
 
 A 1.0 ND Thorlabs filter was added to the vertical channel’s collection fiber path to equalize the raw count rate in both polarization channels. Since both data streams are collected simultaneously, this allows for longer integration times that optimize the signal-to-noise ratio in the overall experiment.
 
-## Measurement of fluorescence lifetimes and time-resolved fluorescence anisotropy
+### Measurement of fluorescence lifetimes and time-resolved fluorescence anisotropy
 
 Time-resolved photoluminescence experiments on fluorescently labeled RNAs were used to measure fluorescence lifetime and transient fluorescence anisotropy of the Cy3 chromophore. Data were collected with a polarization-resolved epifluorescence setup whose source is the second harmonic of a tunable-wavelength pulsed Ti:sapphire laser (Coherent Chameleon Ultra II, repetition rate of 80 MHz, <200 fs pulse duration). Excitation pulse energy was kept low (2 pJ/pulse) to prevent sample photodamage, and excitation wavelength was set to 529 nm (FWHM ≤3.5 nm). Excitation beam polarization was set to the vertical axis with high extinction ratio polarizers before being directed to the sample with a 562 nm long-pass dichroic, and focused using a 75 mm focal length aspheric lens. Samples were held in a 4 mm pathlength quartz cuvette. Fluorescence was collected with the same lens and filtered with the same dichroic mirror before passing through a bandpass filter (576–596 nm transmission window) to further eliminate any scattered light from the excitation beam. The fluorescence signal was split into vertical and horizontal polarization channels using a set of polarizing beam splitters, and the signal in each channel was detected with identical single-photon Si photodiodes (MPD systems), whose output was routed to a time-correlated single-photon counting (TCSPC) module (PHR 800 and Picoharp 300, PicoQuant). All spectral cleanup, focusing, collection, and detection optical elements were mounted on a 30 mm cage system to prevent deleterious stray light (<1 Hz dark count rates). To match the signal-to-noise ratio in the data of each polarization channel (which have different collection efficiencies), count rates on the TCSPC module were equalized to within a factor of 2 by placing a neutral density filter (optical density = 1.0) in the path of the vertical channel. The instrument response function for setup was ≤60 ps and data resolution was kept at 16 ps. For each sample, data collection was integrated for 110 s. Individual traces of intensity vs. time delay for the vertical and horizontal polarization channels were stored and exported as ASCII files for further processing.
 
-## Data analysis (time-resolved fluorescence)
+### Data analysis (time-resolved fluorescence)
 
-Raw data for vertically and horizontally polarized fluorescence traces were imported into Matlab for processing and analysis. The temporal axis for each channel was matched to account for different sample-to-detector path lengths (~380 ps shift in time delay axis). Counts due to background signal were estimated as average of signal before the steep rise due to arrival of excitation pulses, and subtracted from data. Quantitative match of the signal collection efficiency in the orthogonal polarization channels was achieved by finding the factor g required to overlap the long-time (> 2 ns) traces recorded for the free chromophore in buffer solution (tail-matching). The resulting fluorescence lifetime (300 ps), anisotropy amplitude (0.40), and rotational diffusion lifetime (440 ps) of this control sample (Cy3-NHS) reproduced previously reported values (Sanborn et al., 2007). The scaling factor g for the control sample of each experimental run was used for all samples in that run. This time-shifted, background-subtracted, and scaled data were then used to calculate total fluorescence output of the sample, Itott, and the transient fluorescence anisotropy, rt, with Equations 2 and 3, respectively.(2)Itot(t)=gIVV=2IVH(3)rt= (gIVV- IVH)(gIVV+2 IVH)
+Raw data for vertically and horizontally polarized fluorescence traces were imported into Matlab for processing and analysis. The temporal axis for each channel was matched to account for different sample-to-detector path lengths (~380 ps shift in time delay axis). Counts due to background signal were estimated as average of signal before the steep rise due to arrival of excitation pulses, and subtracted from data. Quantitative match of the signal collection efficiency in the orthogonal polarization channels was achieved by finding the factor g required to overlap the long-time (> 2 ns) traces recorded for the free chromophore in buffer solution (tail-matching). The resulting fluorescence lifetime (300 ps), anisotropy amplitude (0.40), and rotational diffusion lifetime (440 ps) of this control sample (Cy3-NHS) reproduced previously reported values (Sanborn et al., 2007). The scaling factor g for the control sample of each experimental run was used for all samples in that run. This time-shifted, background-subtracted, and scaled data were then used to calculate total fluorescence output of the sample, $I_{tot}t$, and the transient fluorescence anisotropy, $rt$, with Equations 2 and 3, respectively.
+
+$$
+I_{tot}(t)=gI_{VV}=2I_{VH}
+$$
+
+
+
+$$
+rt=\frac{(gI_{VV}-I_{VH})}{(gI_{VV}+2I_{VH})}
+$$
 
 Total fluorescence output as a function of delay time was described with either a single- or bi-exponential decay using a nonlinear least-squares fitting algorithm whose output was used to calculate the sample’s average fluorescence lifetime. Transient anisotropy curves were described with an exponential decay to a constant (typically nonzero) value. To avoid dsRNA cleavage during the longer times required for time-resolved measurements, we used dmDcr-2RIII, which binds and hydrolyzes ATP similar to the wild-type enzyme (Cenik et al., 2011). All incubations were ~5 min so that kinetic events prior to dsRNA cleavage were complete (one catalytic turnover requires 1–2 min; Figure 5E). Anisotropy decay curves were analyzed with single and double exponential rate equations yielding rotational correlation time (ϕ), fractional amplitude (A), limiting anisotropy (r∞), and change in anisotropy (Δr) (Figure 6k). The change in anisotropy (Δr) was evaluated by subtracting the value of limiting anisotropy (r∞) from the fundamental/initial anisotropy (r0) (Lakowicz, 2006). In order to evaluate precise values of anisotropy parameters associated with sub-nanosecond dynamics, the fast phase of the decay curve was analyzed independently with a single-exponential rate equation. Goodness of fit or precision of fitted parameters was evaluated using the associated standard error, reduced chi-square (χ2) values, as well as randomness of residuals.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-At least 4–10 kinetic traces were collected for each experimental condition used in our transient kinetic experiments. They were averaged, and the resulting averaged trace was analyzed using single or double exponential rate equations (Equations 4 and 5).(4)RFU=A e-kobs.t+offset(5)RFU=A1 e-kobs1.t+A2 e-kobs2.t+offsetwhere RFU is the relative fluorescence signal, A is the amplitude associated with the exponential phase, kobs is the observed rate constant, and offset is the baseline signal. The relative fluorescence signal was normalized to one as the maximum signal for ease of comparison. The nonlinear least square fitting of the data to the above rate equations was performed using the Levenberg–Marquardt iteration algorithm available in Origin software package (OriginLab corporation). Goodness of fit or precision of fitted parameters was evaluated using the associated standard error, reduced chi-square (χ2) values, and randomness of residuals.
+At least 4–10 kinetic traces were collected for each experimental condition used in our transient kinetic experiments. They were averaged, and the resulting averaged trace was analyzed using single or double exponential rate equations (Equations 4 and 5).
+
+$$
+RFU=Ae^{-kobs.t}+offset
+$$
+
+
+
+$$
+RFU=A1e^{-kobs1.t}+A2e^{-kobs2.t}+offset
+$$
+
+where RFU is the relative fluorescence signal, A is the amplitude associated with the exponential phase, kobs is the observed rate constant, and offset is the baseline signal. The relative fluorescence signal was normalized to one as the maximum signal for ease of comparison. The nonlinear least square fitting of the data to the above rate equations was performed using the Levenberg–Marquardt iteration algorithm available in Origin software package (OriginLab corporation). Goodness of fit or precision of fitted parameters was evaluated using the associated standard error, reduced chi-square (χ2) values, and randomness of residuals.

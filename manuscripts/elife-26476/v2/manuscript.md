@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.26476.001 Immune cells infiltrating tumors can have important impact on tumor progression and response to therapy. We present an efficient algorithm to simultaneously estimate the fraction of cancer and immune cell types from bulk tumor gene expression data. Our method integrates novel gene expression profiles from each major non-malignant cell type found in tumors, renormalization based on cell-type-specific mRNA content, and the ability to consider uncharacterized and possibly highly variable cell types. Feasibility is demonstrated by validation with flow cytometry, immunohistochemistry and single-cell RNA-Seq analyses of human melanoma and colorectal tumor specimens. Altogether, our work not only improves accuracy but also broadens the scope of absolute cell fraction predictions from tumor gene expression data, and provides a unique novel experimental benchmark for immunogenomics analyses in cancer research ( http://epic.gfellerlab.org ).
+Immune cells infiltrating tumors can have important impact on tumor progression and response to therapy. We present an efficient algorithm to simultaneously estimate the fraction of cancer and immune cell types from bulk tumor gene expression data. Our method integrates novel gene expression profiles from each major non-malignant cell type found in tumors, renormalization based on cell-type-specific mRNA content, and the ability to consider uncharacterized and possibly highly variable cell types. Feasibility is demonstrated by validation with flow cytometry, immunohistochemistry and single-cell RNA-Seq analyses of human melanoma and colorectal tumor specimens. Altogether, our work not only improves accuracy but also broadens the scope of absolute cell fraction predictions from tumor gene expression data, and provides a unique novel experimental benchmark for immunogenomics analyses in cancer research (http://epic.gfellerlab.org).
 
 ## Introduction
 
@@ -30,27 +30,65 @@ Here, we developed a robust approach to simultaneously Estimate the Proportion o
 
 ## Results
 
-## Reference gene expression profiles from circulating and tumor-infiltrating cells
+### Reference gene expression profiles from circulating and tumor-infiltrating cells
 
 EPIC incorporates reference gene expression profiles from each major immune and other non-malignant cell type to model bulk RNA-Seq data as a superposition of these reference profiles (Figure 1A,B). To tailor our predictions to recent gene expression studies, we first collected and curated RNA-Seq profiles of various human innate and adaptive circulating immune cell types (Hoek et al., 2015; Linsley et al., 2014; Pabst et al., 2016) (CD4 T cells, CD8 T cells, B cells, NK cells, Monocytes and Neutrophils) from a diverse set of patients analyzed in different centers (see Materials and methods). Principal component analysis (PCA) of these data (Figure 1C) showed that samples clustered first according to cell type and not according to experiment of origin, patient age, disease status or other factors, suggesting that they could be used as bona fide reference expression profiles across different patients. Reference gene expression profiles for each major immune cell type were built from these RNA-Seq samples based on the median normalized counts per gene and cell type. The variability in expression for each gene was also considered when predicting the various cell proportions based on these reference profiles (see Materials and methods and Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic description of our method. (B) Matrix formulation of our algorithm, including the uncharacterized cell types (red box) with no or very low expression of signature genes (green box). (C) Low dimensionality representation (PCA based on the 1000 most variable genes) of the samples used to build the reference gene expression profiles from circulating immune cells (study 1 [Hoek et al., 2015], study 2 [Linsley et al., 2014], study 3 [Pabst et al., 2016]). (D) Low dimensionality representation (PCA based on the 1000 most variable genes) of the tumor- infiltrating cell gene expression profiles from different patients. Each point corresponds to cell-type average per patient of the single-cell RNA-Seq data of Tirosh et al. (2016) (requiring at least 3 cells of a given cell type per patient). Only samples from primary tumors and non-lymphoid tissue metastases were considered. Projection of the original single-cell RNA-Seq data can be found in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Principal component analysis of the samples used to build the reference gene expression profiles from tumor-infiltrating immune cells, based on the data from Tirosh et al. (2016), considering only the primary tumor and non-lymphoid tissue metastasis samples.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) mRNA content per cell type obtained for cell types sorted from blood. Values for B, NK, T cells and monocytes were obtained as described in Materials and methods. Values for Neutrophils are from Subrahmanyam et al. (2001). (B) Width of the forward scatter values for the different immune and cancer cells from flow cytometry data of melanoma metastatic lymph nodes. Data were first normalized by the mean FSC-W for each donor. Error bars represent the standard deviation from data of 4 patients.
+
 Immune cells differ in their gene expression profiles depending on their state and site of origin (e.g., blood or tumors) (Ganesan et al., 2017; Speiser et al., 2016; Zheng et al., 2017). To study the potential effect of these differences on our predictions, we established reference gene expression profiles of each major tumor-infiltrating immune cell type (i.e., CD4 T, CD8 T, B, NK, macrophages). We further derived reference profiles for stromal cells (i.e. cancer-associated fibroblasts (CAFs)) and endothelial cells. These reference gene expression profiles were obtained as cell type averages from the single-cell RNA-Seq data of melanoma patients from Tirosh and colleagues (Tirosh et al., 2016), considering only samples from primary tumor and non-lymphoid tissue metastasis (see Materials and methods and Supplementary file 2). As for circulating immune cell data, principal component analysis of the tumor-infiltrating cells’ gene expression profiles showed that samples clustered first according to cell type (Figure 1D and Figure 1—figure supplement 1, see also results in [Tirosh et al., 2016]).
 
-## Cancer and non-malignant cell fraction predictions
+### Cancer and non-malignant cell fraction predictions
 
 Reference gene expression profiles from each of the immune and other non-malignant (i.e., stromal and endothelial) cell types were then used to model bulk gene expression data as a linear combination of m different cell types (Figure 1B). To include cell types like cancer cells that show high variability across patients and tissues of origin, we further implemented in our algorithm the ability to consider an uncharacterized cell population. Mathematically this was done by taking advantage of the presence of gene markers of non-malignant cells that are not expressed in cancer cells. Importantly, we do not require our signature genes to be expressed in exactly one cell type, but only to show very low expression in cancer cells. The mRNA proportion of each immune and other non-malignant cell type was inferred using least-square regression, solving first our system of equations for the marker genes (green box in Figure 1B, see Materials and methods). The fraction of cancer cells was then determined as one minus the fraction of all non-malignant cell types. Cell markers used in this work were determined by differential expression analysis based on our reference cell gene expression profiles as well as gene expression data from non-hematopoietic tissues (see Materials and methods and Appendix 1—table 1). Finally, to account for different amounts of mRNA in different cell types and enable meaningful comparison with flow cytometry and IHC data, we measured the mRNA content of all major immune cell types as well as of cancer cells (Figure 1—figure supplement 2) and used these values to renormalize our predicted mRNA proportions (see Materials and methods).
 
-## Validation in blood
+### Validation in blood
 
 We first tested our algorithm using three datasets comprising bulk RNA-Seq data from PBMC (Hoek et al., 2015; Zimmermann et al., 2016) or whole blood (Linsley et al., 2014), as well as the corresponding proportions of immune cell types determined by flow cytometry (Figure 2A). These data were collected from various cancer-free human donors (see Materials and methods). Overall, very accurate predictions were obtained by fitting reference profiles from circulating immune cells, considering either all cell types together (Figure 2A) or each cell type separately (Figure 2—figure supplement 1). When comparing with other widely used cell fraction prediction methods (Becht et al., 2016; Gong and Szustakowski, 2013; Li et al., 2016; Newman et al., 2015; Quon et al., 2013; Zhong et al., 2013), we observed a clear improvement (Figure 2B and Figure 2—figure supplement 1). Of note, the very high correlation values can partly result from the broad range of different cell fractions in our data (Figure 2A) and we emphasize that these correlation values should only be used to compare methods tested on the same datasets (Figure 2B). The root mean squared error (RMSE), which is less dependent on such ‘outlier data points’, shows also improved accuracy for EPIC compared to other methods (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig2-v2.jpg)
+
+**Figure 2.:** (A) Predicted vs. measured immune cell proportions in PBMC (dataset 1 (Zimmermann et al., 2016), dataset 2 (Hoek et al., 2015)) and whole blood (dataset 3 (Linsley et al., 2014)); predictions are based on the reference profiles from circulating immune cells. (B) Performance comparison with other methods. Significant correlations are indicated above each bar (*p<0.05; **p<0.01; ***p<0.001). (C) Predicted immune cells' mRNA proportions (i.e., without mRNA renormalization step) vs. measured values in the same datasets. Correlations are based on Pearson correlation; RMSE: root mean squared error. Proportions of cells observed experimentally are given in Supplementary file 3B-D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Heatmaps show (A) the Pearson R correlation and (B) the root mean squared error, between the cell fractions predicted by each method and the experimentally measured fractions (dataset 1 [Zimmermann et al., 2016], dataset 2 [Hoek et al., 2015], dataset 3 [Linsley et al., 2014]). Results are based either on all cell types together (noted as ‘All cells’) or for each individual cell type measured experimentally. NA's indicate cases where the cell type could not be predicted by a method. The ‘All cells’ boxes are hatched for TIMER as it does not predict the proportions from all the cell types so that the values computed there correspond to less cell types than for the other methods. For the dataset 2, as there are only two donors data, the results are only presented with all cells together (includes eight data points). In (A) the significance of the Pearson correlation is indicated by stars: *p<0.05, **p<0.01, ***p<0.001, while results with p-values above 0.1 are inside parentheses.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Pearson R correlations are shown as in Figure 2—figure supplement 1A, showing here for each method its original result and the result if the predicted proportions are then renormalized by the mRNA per cell values as is done in EPIC.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Comparison of the predictions as done in Figure 2—figure supplement 1A, for different variations from EPIC: (1) full EPIC method; (2) EPIC if the gene expression reference profiles are scaled a priori by the mRNA per cell values instead of doing the mRNA normalization step a posteriori; (3) EPIC results without the mRNA normalization step at all; (4) EPIC results when the optimization does not include any weights based on the gene expression variability from the reference profiles.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Results are shown similarly than in Figure 2—figure supplement 1A. Here, we present for various cell fraction prediction methods the results considering all the immune cell types in the gene expression reference profiles followed by the results obtained when removing all references to T cell (and their subsets) from these reference profiles. Only the results of the predictions from the other immune cells than T cells are shown. The effect of removing T cells from MCPcounter and TIMER could not be tested because one cannot select the cell reference profiles or cell types to use in the input of the R codes for these methods.
 
 The renormalization by mRNA content, which had not been considered in previous approaches, appeared to be important for predicting actual cell fractions (Figure 2C). Moreover, we observed that most other methods could also benefit from such a renormalization step, be it for the global prediction of all cell types together or for the predictions of each cell type (Figure 2—figure supplement 2). A conceptually related approach was developed by Baron et al. (2016), but the rescaling was done on the gene expression reference profiles (in their case of pancreatic cells) based on the total number of transcripts per cell type and the prediction of the proportion of pancreatic cells from a bulk sample was carried out with CIBERSORT (Newman et al., 2015). For comparison purpose, we implemented such an a priori renormalization step in EPIC as well, and observed similar results than with the a posteriori renormalization (Figure 2—figure supplement 3).
 
 With respect to the other methods, EPIC has two other main distinctive features: (i) it allows for a cell type without a known reference gene expression profile (such a feature is also part of ISOpure [Quon et al., 2013]) and (ii) it integrates information about the variability in each signature gene from the reference gene expression profiles. The latter point slightly improves the prediction accuracy but to a lesser extent than the renormalization by mRNA (Figure 2—figure supplement 3). The former point cannot be tested directly in the blood samples as only cell types with known reference gene expression profiles are composing these samples. Therefore, to test the effect of including a cell type without a known reference profile, we removed all the T cell subsets from the reference gene expression profiles and predicted the proportion of the other cell types in the bulk samples, allowing for one uncharacterized cell type in EPIC. As expected, the results from EPIC including or not the T cell reference profiles remained nearly unchanged, while the other methods suffered from this, except for DSA (Zhong et al., 2013) which is based only on signature genes and not reference profiles (Figure 2—figure supplement 4). Such an advantage of EPIC is especially useful in the context of tumor samples where in general no reference gene expression profile is available for the cancer cells.
 
-## Validation in solid tumors
+### Validation in solid tumors
 
 To validate our predictions in tumors, we collected single cell suspensions from lymph nodes of four metastatic melanoma patients (see Materials and methods). A fraction of the cell suspension was used to measure the different cell type proportions with flow cytometry (CD4 T, CD8 T, B, NK, melanoma and other cells comprising mostly stromal and endothelial cells; Supplementary file 3A), and the other fraction was used for bulk RNA sequencing (Figure 3—figure supplement 1). EPIC was first run with reference profiles from circulating immune cells. We observed a remarkable agreement between our predictions and experimentally determined cell fractions (Figure 3A). The high correlation value is possibly driven by the two samples containing about 80% of melanoma cells, but we stress that all predicted cell proportions fall nearly on the ‘y = x’ line. This clearly indicates that the absolute cell fractions were correctly predicted for all cell types, as confirmed by a low RMSE. Of note, the proportion of melanoma cells could be very accurately predicted even in the absence of a priori information about their gene expression.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig3-v2.jpg)
+
+**Figure 3.:** (A) Comparison of EPIC predictions with our flow cytometry data of lymph nodes from metastatic melanoma patients. (B) Comparison with immunohistochemistry data from colon cancer primary tumors (Becht et al., 2016). (C) Comparison with single-cell RNA-Seq data (Tirosh et al., 2016) from melanoma samples either from lymphoid tissues or primary and non-lymphoid metastatic tumors. Correlations are based on Pearson correlation. Proportions of cells observed experimentally are given in Supplementary file 3A,E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig3-figsupp1-v2.jpg)
 
 As a second validation, we compared EPIC predictions with IHC data from colon cancer (Becht et al., 2016) (see Materials and methods). Although a limited number of immune cell types had been assayed in this study, we observed a significant correlation between cell proportions measured by IHC and our predictions, except for the CD8 T cells (Figure 3B).
 
@@ -58,9 +96,45 @@ As a third validation, we used recent single-cell RNA-Seq data from 19 melanoma 
 
 We next compared these predictions to those obtained with reference profiles from tumor- infiltrating cells, including also CAFs and endothelial cells (Figure 4). For the single-cell RNA-Seq data (Figure 4C), we applied a leave-one-out procedure, to avoid using the same samples both to build the reference profiles and the bulk RNA-Seq data used as input for the predictions (see Materials and methods). Overall, predictions did not change much compared to those based on circulating immune cell reference gene expression profiles (Figure 4), except for the IHC data where the predictions for CD8 T cells and macrophages clearly improved (Figure 4B). Moreover, we could observe some differences between the results obtained from circulating immune cell reference gene expression profiles and those from tumor-infiltrating cell reference gene expression profiles, when considering the proportions from each cell type independently (Figures 3–4 and Figure 4—figure supplement 1): (i) predictions for CD8 T cells and macrophages improved in the datasets of primary tumors and non-lymph node metastases but not in the datasets from lymph node metastases; (ii) predictions for B and NK cells displayed similar accuracy based on the circulating cells or tumor-infiltrating cells profiles for all datasets; and (iii) CAFs and endothelial cells were not available for the blood-based reference profiles but the proportion of these cells could be well predicted based on the reference profiles constructed from tumor-infiltrating cells (Figure 4 and Figure 4—figure supplement 1).
 
-## Benchmarking of other methods
+![Figure 4.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig4-v2.jpg)
+
+**Figure 4.:** Same as Figure 3 but based on reference profiles built from the single-cell RNA-Seq data of primary tumor and non-lymphoid metastatic melanoma samples from Tirosh et al. (2016). (A) Comparison with flow cytometry data of lymph nodes from metastatic melanoma patients. (B) Comparison with IHC from colon cancer primary tumors (Becht et al., 2016). (C) Comparison with single-cell RNA-Seq data (Tirosh et al., 2016). For primary tumor and non-lymphoid metastasis samples, a leave-one-out procedure was used (see Materials and methods). Proportions of cells observed experimentally are given in Supplementary file 3A,E.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pearson R correlation and (B) RMSE between the cell fractions predicted and the experimentally measured fractions (from flow cytometry of lymph nodes from metastatic melanoma patients (this study), colorectal cancer IHC from primary tumors (Becht et al., 2016) and single-cell RNA-Seq data from melanoma (Tirosh et al., 2016). NA’s indicate cases where the cell type could not be predicted by a method. #: No predictions for endothelial cells were done in the primary tumors from single-cell RNA-seq data as only one patient had such cells and no profiles could be built through the leave-1-out procedure used for this dataset. The ‘Cancer +other cells’ correspond to cancer cells and other stromal and endothelial cells. No RMSE value can be computed for the IHC data in (B) as the measured values are not for all cells and do not reflect cell proportions. In (A) the significance of the Pearson correlation is indicated by stars: * p.value < 0.05, ** p.value < 0.01, *** p.value < 0.001, while results with p-values above 0.1 are inside parentheses.
+
+### Benchmarking of other methods
 
 We took advantage of our unique collection of independent validation datasets to benchmark other methods for predictions of immune cell type fractions in human tumors. We first compared the results of EPIC and ISOpure (Quon et al., 2013), which is the only other method that can consider uncharacterized cell types and therefore predict the fraction of cancer and immune cell types based only on RNA-seq data. EPIC displayed improved accuracy in all three datasets (Figure 5A, and Figure 5—figure supplements 1–4). To benchmark other methods, we then restricted our analysis to the predictions of the different immune cell types (Figure 5B and Figure 5—figure supplements 1–4). Predictions from EPIC were in general more accurate, especially when considering all cell types together. Nevertheless, when restricting the comparisons to relative cell type proportions, some methods like MCPcounter (Becht et al., 2016) and TIMER (Li et al., 2016) were quite consistent in their predictions across the various datasets and showed similar accuracy as EPIC for the cell types considered in these methods (Figure 5—figure supplements 1–4). Of note, MCPcounter could not be included in the global prediction comparison as this method returns scores that are not comparable between different cell types. Predictions from DSA (Zhong et al., 2013) were also quite accurate when available, but in multiple cases some cell type proportions returned by the method were simply equal to 0 in all samples (Figure 5—figure supplements 1–4 – correlation values were replaced by NA in these cases).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-v2.jpg)
+
+**Figure 5.:** (A) Pearson correlation R-values between the cell proportions predicted by EPIC and ISOpure and the observed proportions measured by flow cytometry or single-cell RNA-Seq (Tirosh et al., 2016), considering all cell types together (i.e., B, CAFs, CD4 T, CD8 T, endothelial, NK, macrophages and cancer cells). (B) Same analysis as in Figure 5A but considering only immune cell types (i.e., B, CD4 T, CD8 T, NK and macrophages) in order to include more methods in the comparison. (C) Analysis of ESTIMATE predictions in the single-cell RNA-Seq dataset for the sum of all immune cells, the proportion of stromal cells (cancer-associated fibroblasts) and the proportion of cancer cells (cells identified as melanoma cells in Tirosh et al.). (D) Same as Figure 5C but for EPIC predictions of immune, stromal and cancer cells. Significant correlations in (A–B) are indicated above each bar (*p<0.05; **p<0.01; ***p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Pearson R correlation and (B) root mean squared error between the cell fractions predicted by each method and the experimentally measured fractions (from flow cytometry (this study), colorectal cancer immunohistochemistry (Becht et al., 2016) and single-cell RNA-Seq data (Tirosh et al., 2016). Results are based either on cell types grouped together (noted as ‘All cells’, including the immune, endothelial, stromal and cancer cells, or ‘All immune cells’, including only the immune cell types) or for each individual cell type that had been measured experimentally. NA’s indicate cases where the cell type could not be predicted by a method. #: No predictions for endothelial cells were done with EPIC in the primary tumors from single-cell RNA-seq data as only one patient had such cells and no profiles could be built through the leave-1-out procedure used for this dataset. The ‘Cancer + other cells’ correspond to cancer cells and other stromal and endothelial cells. In (A) the significance of the Pearson correlation is indicated by stars: *p<0.05, **p<0.01, ***p<0.001, while results with p-values above 0.1 are inside parentheses.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Comparison directly of all cell types together. When a cell type could not be predicted by a given method, this cell type is absent from the subfigure. (B) Comparison per cell type for MCP-counter as the predictions are not comparable across different cell types. CD4 T cells and melanoma cell proportions are not predicted by MCP counter. Correlation and RMSE values are available in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Observed values are in number of cells/mm2. Correlation values are available in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Comparison directly of all cell types together. When a cell type could not be predicted by a given method, this cell type is absent from the subfigure. (B) Results for MCP-counter, splitting the different cell types as the predictions are not comparable across different cell types. CD4 T cells and melanoma cell proportions are not predicted by MCP counter. Correlation and RMSE values are available in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** The predictions are compared to the observed cell proportions. ESTIMATE returns a score of global immune infiltration and thus the sum of all observed immune cells has been taken for the comparison. The observed cancer cells correspond to the melan-A + cells. Correlations between observed fractions and predictions are based on Spearman correlations.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/26476/elife-26476-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** The proportions of Thelper and Treg cells predicted by EPIC and CIBERSORT are compared to the proportions observed in the bulk samples reconstructed from the single-cell RNA-seq data from melanoma tumors (Tirosh et al., 2016). Pearson correlations and RMSE are indicated on the figures.
 
 Immune, stromal and tumor purity scores (Yoshihara et al., 2013) based on gene set enrichment analysis were also correlated with the total fraction of immune cells, stromal cells and the fraction of cancer cells (correlation was not significant for the tumor purity score – Figure 5C and Figure 5—figure supplement 5). However, these correlations were considerably lower than those obtained with our approach (Figure 5D and Figure 5—figure supplement 5). Moreover, such scores are less quantitative and are thus more difficult to interpret with respect to actual cell type proportions.
 
@@ -88,57 +162,115 @@ EPIC can be downloaded as a standalone R package (https://github.com/GfellerLab/
 
 ## Materials and methods
 
-## Code availability
+### Code availability
 
 EPIC has been written as an R package. It is freely available on GitHub (https://github.com/GfellerLab/EPIC; copy archived on https://github.com/elifesciences-publications/EPIC) for academic non-commercial research purposes. Version v1.1 of the package was used for our analyses.
 
 In addition to the R package, EPIC is available as a web application at the address: http://epic.gfellerlab.org.
 
-## Prediction of cancer and immune cell type proportions
+### Prediction of cancer and immune cell type proportions
 
-In EPIC, the gene expression of a bulk sample is modeled as the sum of the gene expression profiles from the pure cell types composing this sample (Figure 1A,B). This can be written as (Venet et al., 2001):(1)b=C × p
+In EPIC, the gene expression of a bulk sample is modeled as the sum of the gene expression profiles from the pure cell types composing this sample (Figure 1A,B). This can be written as (Venet et al., 2001):
+
+$$
+b=C\timesp
+$$
 
 Where b is the vector of all n genes expressed from the bulk sample to deconvolve; C is a matrix (n x m) of the m gene expression profiles from the different cell types; and p is a vector of the proportions from the m cell types in the given sample (Figure 1B).
 
 Matrix C consists of m-1 columns corresponding to various reference non-malignant cell types whose gene expression profiles are known, and a last column corresponding to uncharacterized cells (i.e. mostly cancer cells, but possibly also other non-malignant cell types not included in the reference profiles). EPIC assumes the reference gene expression profiles from the non-malignant cell types are well conserved between patients. Such a hypothesis is supported by the analysis in Figure 1C,D. The uncharacterized cells can be more heterogeneous between patients and EPIC makes no assumption on them.
 
-EPIC works with RNA-seq data, which is implicitly normalized. We use data normalized into transcripts per million (TPM) because it has some properties needed for the full cell proportion prediction to work, as will be shown in the next paragraphs. Therefore, instead of the raw data from Equation (1), we are working with TPM-normalized data, which correspond to the following:(2)bi¯=106∑k=1nbklk⋅biliCij¯=106∑k=1nCkjlk⋅Cijli
+EPIC works with RNA-seq data, which is implicitly normalized. We use data normalized into transcripts per million (TPM) because it has some properties needed for the full cell proportion prediction to work, as will be shown in the next paragraphs. Therefore, instead of the raw data from Equation (1), we are working with TPM-normalized data, which correspond to the following:
 
-Where b¯ and C¯ are the TPM-normalized bulk sample and reference cell gene expression profiles respectively and li is the length of gene i.
+$$
+b_{i}¯=\frac{10^{6}}{\sumk=1n\frac{b_{k}}{l_{k}}}⋅\frac{b_{i}}{l_{i}}C_{ij}¯=\frac{10^{6}}{\sumk=1n\frac{C_{kj}}{l_{k}}}⋅\frac{C_{ij}}{l_{i}}
+$$
 
-Using these, Equation (1) is rewritten to:(3)b¯=C¯×p¯
+Where $b¯$ and $C¯$ are the TPM-normalized bulk sample and reference cell gene expression profiles respectively and li is the length of gene i.
 
-where(4)pj¯=∑k=1nCkjlk∑i=1nbili⋅pj
+Using these, Equation (1) is rewritten to:
 
-This normalization guarantees the sum of the new proportions, p-, is equal to 1:∑i=1nb¯i=from eq. 2 ∑i(106∑kbklk⋅bili)=106
+$$
+b¯=C¯\timesp¯
+$$
 
-and∑i=1nb¯i=from eq. 3 ∑i(C¯×p¯)i=∑i=1n∑j=1mCij¯⋅p¯j=from eq. 2∑j[(106∑kCkjlk⋅∑iCijli)⋅p¯j]=106⋅∑jp¯j(5)⇒∑j=1mpj¯=1
+where
 
-In addition to p¯ and C¯ we also define p¯∗ and C¯∗, which are the same except that they include the normalized proportions and profiles from the reference cell types only (i.e. they have one less element and one less column than p¯ and C¯ respectively).
+$$
+p_{j}¯=\frac{\sumk=1n\frac{C_{kj}}{l_{k}}}{\sumi=1n\frac{b_{i}}{l_{i}}}⋅p_{j}
+$$
 
-Using these normalized quantities, EPIC then solves Equation (3) for a subset of ns equations corresponding to the ns signature genes (S) that are expressed by one or more of the reference cell types but only expressed at a negligible level in the uncharacterized cells (Figure 1B). Previous computational work (Clarke et al., 2010; Gosink et al., 2007) showed that the proportion from uncharacterized cells in bulk samples could indeed be inferred with help of genes not expressed by the uncharacterized cells. Importantly, cell-specific signature genes are well established and widely used in flow cytometry to sort immune cells. Thus, EPIC solves the following system of equations:(6)bi¯|i∈S=((C¯∗×p¯∗)i+C¯im⋅p¯m)|i∈S=(C¯∗×p¯∗)i|i∈S
+This normalization guarantees the sum of the new proportions, $p-$, is equal to 1:
 
-where the term corresponding to the uncharacterized cells (m) vanished thanks to the definition of the signature genes (C¯im|i∈S≅0).
+$$
+\sumi=1nb¯_{i}=from eq. 2 \sumi(\frac{10^{6}}{\sumk\frac{b_{k}}{l_{k}}}⋅\frac{b_{i}}{l_{i}})=10^{6}
+$$
 
-The solution to Equation (6) can be estimated by a constrained least square optimization. EPIC takes advantage of the known variability for each gene in the reference profile, to give weights in the function to minimize:(7)fp¯*=∑i∈Swib¯i-C¯*×p¯*i2
+and
 
-with constraints{p¯j∗≥0∑j=1m−1p¯j∗≤1
+$$
+\sumi=1nb¯_{i}=from eq. 3 \sumi(C¯\timesp¯)_{i}=\sumi=1n\sumj=1mC_{ij}¯⋅p¯_{j}=from eq. 2\sumj[(\frac{10^{6}}{\sumk\frac{C_{kj}}{l_{k}}}⋅\sumi\frac{C_{ij}}{l_{i}})⋅p¯_{j}]=10^{6}⋅\sumjp¯_{j}
+$$
 
-Here, the weights, wi, give more importance to the signature genes with low variability in the reference gene expression profiles. In EPIC, these weights are given by:wi=min⁡ui, 100∙medianui
 
-whereui=∑j=1m-1C¯ij*V¯ij+ε
 
-V- is the matrix of the TPM-based variability of each gene for each of the reference cells (Supplementary files 1–2), ε is a small number to avoid division by 0, and the term '100∙medianui' is used to avoid giving too much weight to few of the genes.
+$$
+⇒\sumj=1mp_{j}¯=1
+$$
 
-Finally, thanks to Equation (5), the proportion for the uncharacterized cells can be obtained by:(8)p¯m=1−∑j=1m−1p¯j
+In addition to $p¯ and C¯$ we also define $p¯^{∗} and C¯^{∗}$, which are the same except that they include the normalized proportions and profiles from the reference cell types only (i.e. they have one less element and one less column than $p¯ and C¯$ respectively).
 
-Since we used normalized gene expression data, values of p¯ correspond actually to the fraction of mRNA coming from each cell type, rather than the cell proportions. As the mRNA content per cell type can vary significantly (Figure 1—figure supplement 2), the actual proportions of each cell type can be estimated as:(9)pj=α∙p-jrj
+Using these normalized quantities, EPIC then solves Equation (3) for a subset of ns equations corresponding to the ns signature genes (S) that are expressed by one or more of the reference cell types but only expressed at a negligible level in the uncharacterized cells (Figure 1B). Previous computational work (Clarke et al., 2010; Gosink et al., 2007) showed that the proportion from uncharacterized cells in bulk samples could indeed be inferred with help of genes not expressed by the uncharacterized cells. Importantly, cell-specific signature genes are well established and widely used in flow cytometry to sort immune cells. Thus, EPIC solves the following system of equations:
 
-where rj is the amount of RNA nucleotides in cell type j (or equivalently the total weight of RNA in each cell type) and α is a normalization constant to have ∑pj=1.
+$$
+b_{i}¯|_{i\inS}=((C¯^{∗}\timesp¯^{∗})_{i}+C¯_{im}⋅p¯_{m})|_{i\inS}=(C¯^{∗}\timesp¯^{∗})_{i}|_{i\inS}
+$$
+
+where the term corresponding to the uncharacterized cells (m) vanished thanks to the definition of the signature genes ($C¯_{im}|_{i\inS}≅0$).
+
+The solution to Equation (6) can be estimated by a constrained least square optimization. EPIC takes advantage of the known variability for each gene in the reference profile, to give weights in the function to minimize:
+
+$$
+fp¯^{*}=\sum_{i\inS}w_{i}b¯_{i}-C¯^{*}\timesp¯^{*}_{i}^{2}
+$$
+
+with constraints
+
+$$
+{p¯_{j}^{∗}\geq0\sumj=1m−1p¯_{j}^{∗}\leq1
+$$
+
+Here, the weights, wi, give more importance to the signature genes with low variability in the reference gene expression profiles. In EPIC, these weights are given by:
+
+$$
+w_{i}=min⁡u_{i},100∙medianu_{i}
+$$
+
+where
+
+$$
+u_{i}=\sumj=1m-1\frac{C¯_{ij}^{*}}{V¯_{ij}+\epsilon}
+$$
+
+$V-$ is the matrix of the TPM-based variability of each gene for each of the reference cells (Supplementary files 1–2), ε is a small number to avoid division by 0, and the term '$100∙medianu_{i}$' is used to avoid giving too much weight to few of the genes.
+
+Finally, thanks to Equation (5), the proportion for the uncharacterized cells can be obtained by:
+
+$$
+p¯_{m}=1−\sumj=1m−1p¯_{j}
+$$
+
+Since we used normalized gene expression data, values of $p¯$ correspond actually to the fraction of mRNA coming from each cell type, rather than the cell proportions. As the mRNA content per cell type can vary significantly (Figure 1—figure supplement 2), the actual proportions of each cell type can be estimated as:
+
+$$
+p_{j}=\alpha∙\frac{p-_{j}}{r_{j}}
+$$
+
+where rj is the amount of RNA nucleotides in cell type j (or equivalently the total weight of RNA in each cell type) and α is a normalization constant to have $\sump_{j}=1$.
 
 Another method, DeMix (Ahn et al., 2013), starts from Equation (1) to estimate the proportion and gene expression profile from cancer cells in mixed samples. In this method the mixed sample is assumed to be composed only by two cell types: cancer cells (without any a priori known gene expression profile) and normal cells (with known gene expression data, which can either come from tumor-matched or unmatched samples). This method was developed for microarray data and shows that it was important to use the raw data as input assuming it follows a log-normal distribution as is the case for microarray, instead of working with log-transformed data like most other methods did. DeMix estimates the variance of the gene expression in the normal samples and uses this in the maximum likelihood estimation to predict the cancer cell gene expression and proportions, using thus implicitly a gene-specific weight for each gene. EPIC was derived for RNA-seq data and is directly using linear (non-log) data. Notably, when solving the linear regression from Equation (7) in EPIC, we are not assuming any specific distribution for the gene expression and the weights we give to each gene are simply based on their interquartile range in the reference samples. Other measures of gene variability could however be given as input into EPIC's R-package. Contrary to DeMix, another important assumption performed in EPIC is that our signature genes are not expressed by the cancer cells, so that we can easily estimate the proportion of multiple non-malignant cell types composing the bulk samples.
 
-## Flow cytometry and gene expression analysis of melanoma samples
+### Flow cytometry and gene expression analysis of melanoma samples
 
 Patients agreed to donate metastatic tissues upon informed consent, based on dedicated clinical investigation protocols established according to the relevant regulatory standards. The protocols were approved by the local IRB, that is, the 'Commission cantonale d’éthique de la recherche sur l’être humain du Canton de Vaud'. Lymph nodes (LN) were obtained from stage III melanoma patients, by lymph node dissection that took place before systemic treatment. The LN from one patient was from the right axilla and the LNs from the other three patients were from the iliac and ilio-obturator regions (Appendix 2—table 1). Single cell suspensions were obtained by mechanical disruption and immediately cryopreserved in RPMI 1640 supplemented with 40% FCS and 10% DMSO. Single cell suspensions from four lymph nodes were thawed and used in parallel experiments of flow cytometry and RNA extraction. In order to limit the number of dead cells after thawing, we removed those cells using a dead cell removal kit (Miltenyi Biotech). Proportions of CD4 T (CD45+/CD3+/CD4+/Melan-A-), CD8 T (CD45+/CD3+/CD8+/Melan-A−), NK (CD45+/CD56+/CD3−/CD33−/Melan-A−), B (CD45+/CD19+/CD3−/CD33−/Melan-A−) and Melan-A expressing tumor cells (Supplementary file 3A) were acquired via flow cytometry using the following antibodies: anti-CD3 BV711 (RRID:AB_2566035), anti-CD4 BUV737 (RRID:AB_2713927), anti-CD8 PE-Cy5 (RRID:AB_2713928), anti-CD56 BV421 (RRID:AB_11218798), anti-CD19 APCH7 (RRID:AB_1645728), anti-CD33 PE-Cy7 (RRID:AB_2713932), anti-CD45 APC (RRID:AB_314400), anti-Melan-A FITC (RRID:AB_2713930) and Fixable Viability Dye eFluor 455UV (eBioscience). Data was acquired on a BD LSR II SORP flow cytometry machine (BD Bioscience). Analysis was performed using FlowJo (Tree Star). Cell proportions were based on viable cells only. In parallel total RNA was extracted using the RNAeasy Plus mini kit (Qiagen) following the manufactures’ protocol. Starting material always contained minimum 0.2 × 106 cells. RNA was quantified and integrity was analyzed using a Fragment Analyser (Advanced Analytical). Total RNA from all samples used for sequencing had an RQN ≥7. Libraries were obtained using the Truseq stranded RNA kit (Illumina). Single read (100 bp) was performed using an Illumina HiSeq 2500 sequencer (Illumina).
 
@@ -146,31 +278,31 @@ Post processing of the sequencing was done using Illumina pipeline Casava 1.82. 
 
 RNA-Seq data from this experiment have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE93722 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE93722).
 
-## Amount of mRNA per cell type
+### Amount of mRNA per cell type
 
 Healthy donor peripheral blood was obtained through the blood transfusion center in Lausanne. PBMCs were purified by density gradient using Lymphoprep (Axis-Shieldy). Mononuclear cells were stained in order to sort monocytes, B, T and NK cells using the following antibodies: CD14 FITC (RRID:AB_130992), CD19 PE (RRID:AB_2716572), CD3 APC (RRID:AB_130788), CD56 BV421 (RRID:AB_11218798) and fixable live/dead near IR stain (ThermoFisher Scientific). 1 × 106 live cells from each cell type were sorted using the BD FACS ARIA III (BD Biosciences). Total RNA was extracted using the RNAeasy Plus mini kit (Qiagen) following the manufactures’ protocol and quantified using a Fragment Analyser (Advanced Analytical). Values obtained are given in Figure 1—figure supplement 2A.
 
 The mRNA content for the cancer cells was estimated from the flow cytometry data described in the previous section from the four patients with melanoma. For this we used the forward scatter width, which is a good proxy of cell size and mRNA content (Padovan-Merhar et al., 2015; Tzur et al., 2011), and observed that cancer cells had similar amount of mRNA than B, NK and T cells (Figure 1—figure supplement 2B). We thus used a value of 0.4 pg of mRNA per cancer cell.
 
-## Public external datasets used in this study
+### Public external datasets used in this study
 
 For the above datasets 2 and 3, we obtained raw fastq files. RNA-seq reads alignment to the human genome, hg19, and TPM quantification were performed with RSEM (Li and Dewey, 2011) version 1.2.19, using Bowtie2 (Langmead and Salzberg, 2012) version 2.2.4 and Samtools (Li et al., 2009) version 1.2.
 
 For the other datasets, we directly obtained the summary counts data from the respective studies without mapping the reads by ourselves, and we transformed these counts to TPM wherever necessary.
 
-## Reference gene expression profiles from circulating cells
+### Reference gene expression profiles from circulating cells
 
 Reference gene expression profiles of sorted immune cells from peripheral blood were built from the datasets 2, 3 and 4 described in previous section. We verified no experimental biases were present in these data through unsupervised clustering of the samples, with help of a principal component analysis based on the normalized expression from the 1000 most variable genes (Figure 1C).
 
 The median value of TPM counts was computed per cell type and per gene. Similarly, the interquartile range of the TPM counts was computed per cell type and gene, as a measure of the variability of each gene expression in each cell type. Values of these reference profiles are given in Supplementary file 1). Granulocytes from dataset 4 and neutrophils from datasets 2 and 3 were combined to build the reference profile for neutrophils (neutrophils constitute more than 90% of granulocytes). No reference profile was built for the myeloid dendritic cells as only few samples of these sorted cells existed and they were all from the same experiment. Monocytes are not found in tumors but instead there are macrophages, mostly from monocytic lineage, that are infiltrating tumors and that are not found in blood. For this reason, we also used the monocyte reference gene expression profile as a proxy for macrophages when applying EPIC to tumor samples. Such an assumption gave coherent results as observed in the results.
 
-## Reference profiles from tumor-infiltrating cells
+### Reference profiles from tumor-infiltrating cells
 
 We also built gene expression reference profiles from tumor-infiltrating cells. These are based on the single-cell RNA-Seq data from Tirosh and colleagues (Tirosh et al., 2016) described above. We only used the non-lymphoid tissue samples to build these tumor-infiltrating cell’s profiles, avoiding in this way potential ‘normal immune cells’ present in the lymph nodes and spleen. These reference profiles (Supplementary file 2) were built in the same way as described above for the reference profiles of circulating immune cells, but based on the mean and standard deviation instead of median and interquartile range respectively, due to the nature of single-cell RNA-Seq data and gene dropout present with such technique.
 
 When testing EPIC with these profiles for the single-cell RNA-Seq datasets, for the samples of primary tumor and other non-lymph node metastases, a leave-one-out procedure was applied: for each donor we built reference cell profiles based only on the data coming from the other donors.
 
-## Cell marker gene identification
+### Cell marker gene identification
 
 EPIC relies on signature genes that are expressed by the reference cells but not by the uncharacterized cells (e.g., cancer cells). For each reference cell type, we thus built a list of signature genes through the following steps:
 
@@ -178,12 +310,12 @@ All the differential expression tests were performed with DESeq2 (Love et al., 2
 
 Appendix 1—table 1 summarizes the full list of signature genes per cell type.
 
-## Prediction of cell proportions in bulk samples with other tools
+### Prediction of cell proportions in bulk samples with other tools
 
 We compared EPIC's predictions with those from various cell fraction prediction methods. These other methods were run with the following packages (using the default options when possible):
 
 For CIBERSORT, DeconRNASeq and ISOpure, when run based on our gene expression reference profiles, we used the reference profiles from peripheral blood immune cells for the predictions in blood and the reference profiles from tumor-infiltrating cells for the predictions in solid tumors.
 
-## List of abbreviations
+### List of abbreviations
 
 CAFs: cancer-associated fibroblasts; EPIC: acronym for our method to ‘Estimate the Proportion of Immune and Cancer cells’; GEO: Gene Expression Omnibus; IHC: immunohistochemistry; PCA: principal component analysis; RMSE: root mean squared error; TCGA: The Cancer Genome Atlas; TPM: transcripts per million.

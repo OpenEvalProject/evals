@@ -12,13 +12,13 @@
 
 ### Affiliations
 
-1. https://ror.org/036jqmy94 Iowa Institute for Oral Health Research, College of Dentistry & Dental Clinics, University of Iowa Iowa City United States
-2. https://ror.org/036jqmy94 Department of Periodontics, College of Dentistry & Dental Clinics, University of Iowa Iowa City United States
-3. https://ror.org/036jqmy94 Department of Anatomy and Cell Biology, Carver College of Medicine, University of Iowa Iowa City United States
-4. https://ror.org/03wmf1y16 Department of Craniofacial Biology, University of Colorado Anschutz Medical Campus Aurora United States
-5. https://ror.org/03wmf1y16 Department of Pediatrics, Section of Hematology, Oncology, and Bone Marrow Transplant, University of Colorado School of Medicine, University of Colorado Anschutz Medical Campus Aurora United States
-6. https://ror.org/03wmf1y16 Department of Cell and Developmental Biology, University of Colorado Anschutz Medical Campus Aurora United States
-7. https://ror.org/03wmf1y16 Department of Pediatrics, University of Colorado Anschutz Medical Campus, Children's Hospital Colorado Aurora United States
+1. Iowa Institute for Oral Health Research, College of Dentistry & Dental Clinics, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+2. Department of Periodontics, College of Dentistry & Dental Clinics, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+3. Department of Anatomy and Cell Biology, Carver College of Medicine, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+4. Department of Craniofacial Biology, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+5. Department of Pediatrics, Section of Hematology, Oncology, and Bone Marrow Transplant, University of Colorado School of Medicine, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+6. Department of Cell and Developmental Biology, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
+7. Department of Pediatrics, University of Colorado Anschutz Medical Campus, Children's Hospital Colorado Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))
 
 † Corresponding author
 
@@ -38,29 +38,41 @@ Therefore, here we have assessed how craniofacial development is affected upon s
 
 ## Results
 
-## Combined loss of Tfap2a and Tfap2b in the embryonic surface ectoderm causes major craniofacial defects
+### Combined loss of Tfap2a and Tfap2b in the embryonic surface ectoderm causes major craniofacial defects
 
 Previous studies have shown that Tfap2a and Tfap2b have overlapping functions within the neural crest in regulating facial development (Van Otterloo et al., 2018) raising the possibility that these transcription factors might also act together in the overlying surface ectoderm to regulate this aspect of embryogenesis. Therefore, we documented expression of the five family members in the ectoderm of the facial prominences based on analysis of previous RNAseq datasets spanning E10.5 and E12.5 (Hooper et al., 2020). Tfap2a and Tfap2b were the most highly expressed in the ectoderm, with lower levels of Tfap2c, and undetectable levels of Tfap2d and Tfap2e (Figure 1A). Further mining of single-cell RNA-seq data derived from facial prominences indicated that Tfap2a and Tfap2b expression also displayed significant overlap within cells of the surface ectoderm and periderm (Figure 1B). Since these two genes were the most highly expressed family members and were frequently expressed in the same cells, we next tested whether these two genes performed similar joint functions in the surface ectoderm in controlling growth and patterning as they do within the neural crest (Van Otterloo et al., 2018). Here the ectoderm expressed Cre recombinase transgene Crect (Schock et al., 2017) was used in concert with floxed versions of Tfap2a (Brewer et al., 2004) and Tfap2b (Van Otterloo et al., 2018) to remove these two transcription factors (TFs) from the early ectoderm. Using scanning electron microscopy, we found that at E11.5 both control and mutant embryos—hereafter designated ectoderm double knockout (EDKO)—had a similar overall facial organization, with distinct paired mandibular, maxillary, lateral and medial nasal processes (Figure 1C–F). However, there were also clear changes in the size and shape of these processes in the EDKO. The mandible was smaller with a more noticeable notch at the midline while in the upper face the maxilla and nasal processes had not come together to form a three-way lambdoid junction, and the nasal pit was more pronounced. By E13.5 these earlier morphological changes in the EDKOs were greatly exacerbated typified by a fully cleft mandible and a failure of the maxillary prominence (MxP), lateral nasal prominence (LNP), and medial nasal prominence (MNP) to undergo any productive fusion (Figure 1G–J). These observations indicate that the AP-2 TFs, particularly AP-2α and AP-2β, are critical components of a craniofacial ectodermal gene regulatory network (GRN). In the next section, we analyze this GRN in more detail, prior to describing additional analysis of the EDKO mouse model at later time points.
 
-## ATAC-Seq of control and AP-2 mutant mouse craniofacial ectoderm identifies a core subset of unique nucleosome-free regions, many of which are AP-2 dependent
+![Figure 1.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig1-v2.jpg)
+
+**Figure 1.:** (A) Chart depicting Tfap2a, Tfap2b, and Tfap2c expression in the three regions of the mouse ectoderm between E10.5 and E12.5 (data adapted from Hooper et al., 2020). The lines represent the standard deviation between three biological replicates. (B) Left panel shows tSNE plot of E11.5 single cell RNAseq data from the region surrounding the lambdoid junction with various cell populations labeled adapted from Li et al., 2019a. Feature plots for Tfap2a, Tfap2b, and the cells in which their expression overlaps are shown in the adjacent panels. (C–J) Scanning electron microscope images of E11.5 (C–F) or E13.5 (G–J) control (C, D, G, H) or EDKO (E, F, I, J) heads shown in frontal (C, E, G, I) and angled (D, F, H, J) view. Abbreviations: e, eye; FNP, combined nasal prominences; LNP, lateral nasal process; MdP, mandibular prominence; MNP, medial nasal process; MxP, maxillary prominence; np, nasal pit. Arrow shows position of lambdoid junction; arrowhead shows medial cleft between mandibular prominences in EDKO mutant. Ctrl embryos are Tfap2aflox/+; Tfap2bflox/+ and EDKO embryos are Crect; Tfap2aflox/flox; Tfap2bflox/flox. N = 3 for each genotype. Scale bar = 500 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Images of E10.5 Crect +embryos that are positive for either the r26r (A–B) or the mT/mG (C–D) reporter alleles. (A) Whole-mount ß-gal staining of Crect+/r26r + embryo highlights strong ectoderm expression in the craniofacial prominences. (B) A representative coronal section through a ß-gal stained Crect+/r26r + embryo, highlighting robust epithelial expression. Section is counterstained with eosin. (C, D) Representative sagittal Crect+/mT/mG + sections through the FNP (C) or MdP (D) labeled with an anti-eGFP antibody and a fluorescent secondary antibody. Fluorescent signal is detected throughout the epithelium. Note, light signal in the underlying mesenchyme is autofluorescence from red blood cells. Nuclei are counterstained with DAPI. (E) tSNE plot of E11.5 single cell RNAseq data from region surrounding lambdoid junction, with identity of cell populations marked in the first panel (adapted from Li et al., 2019a). Note, surface ectoderm cells have been circled in a dashed blue line. The final three panels include feature plots highlighting: first, Crect expression (red); second, Tfap2a expression (green) and its overlap with Cre expression (yellow); and third, Tfap2b expression (green) and its overlap with Cre expression (yellow). Note, both Tfap2a and Tfap2b expression overlap highly with Cre expression in the surface ectoderm cell population. In contrast, while expression of Tfap2a and Tfap2b is detected within the mesenchyme, Cre expression is nearly absent. Individual feature plots for Tfap2a and Tfap2b are shown in Figure 1B. Abbreviations: FNP, frontonasal prominence; MdP, mandibular prominence; MxP, maxillary prominence. Scale bars = 500 µM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) At the Tfap2a locus, nearly all reads mapping to exons 5 and 6 (those flanked by the loxP recombination sites) have been lost in the EDKO’s, as compared to the controls. (B) Likewise, reads mapping to the single exon (exon 6) flanked by loxP sites at the Tfap2b locus are absent in EDKO’s, as compared to controls. These findings are consistent with a near 100% recombination rate in the facial surface ectoderm of EDKO’s.
+
+### ATAC-Seq of control and AP-2 mutant mouse craniofacial ectoderm identifies a core subset of unique nucleosome-free regions, many of which are AP-2 dependent
 
 To investigate this GRN—and AP-2’s potential role within it—we implemented ATAC-seq (Buenrostro et al., 2013; Buenrostro et al., 2015; Corces et al., 2017) on surface ectoderm pooled from the facial prominences of E11.5 control or EDKO embryos, processing two biological replicates of each (Figure 2A). We choose E11.5 for analysis since at this timepoint differences in craniofacial morphology between controls and mutants were becoming evident but were not yet severe (Figure 1C–F). To assess open chromatin associated with the craniofacial ectoderm GRN, we first focused our analysis on the control ectoderm datasets. From the combined control replicates, ~ 65 K (65,467) ‘peaks’ were identified above background (Figure 2B) representing open chromatin associated with diverse genomic cis-acting elements including promoters and enhancers. These elements were further parsed using ChIP-Seq data from E10.5 and E11.5 craniofacial surface ectoderm obtained using an antibody detecting the active promoter histone mark, H3K4me3. Specifically, the ATAC-seq peaks were classified into two distinct clusters, either high (N = 10,363) or little to no (N = 54,935) H3K4me3 enrichment (Figure 2B). Assessing the location of these peak classes relative to the transcriptional start site of genes clearly delineated them into either proximal promoter or more distal elements, respectively (Figure 2C). Motif enrichment analysis for the proximal promoter elements (Andersson and Sandelin, 2020) identified binding sites for Ronin, SP1, and ETS-domain TFs (Figure 2D, top panel, Figure 2—source data 1). Conversely, the top four significantly enriched motif families in distal elements were CTCF/BORIS, p53/63/73, TEAD, and AP-2 TFs (Figure 2D, bottom panel, Figure 2—source data 2). The most significant motif, CTCF/BORIS, is known to be found at insulator elements and is important in establishing topologically associated domains (Dixon et al., 2012; Ong and Corces, 2014). Notably, p53/63/73, TEAD, and AP-2 family members are highly enriched in open chromatin regions associated with early embryonic skin (Fan et al., 2018) and are known to be involved in skin development and often craniofacial morphogenesis (Wang et al., 2006; Wang et al., 2008; Yuan et al., 2020). Finally, pathway analysis of genes associated with either H3K4me3+ (Figure 2—source data 3) or H3K4me3- (Figure 2—source data 4) elements identified clear biological differences between these two subsets, with craniofacial and epithelial categories being prominent only in the latter.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig2-v2.jpg)
 
-**Figure 2.:** (A) A schematic outlining the general workflow of craniofacial surface ectoderm isolation and subsequent ATAC-seq to identify open chromatin regions. (B) Density plot of ~65,000 open chromatin regions identified in the control surface ectoderm (Y-axis), +/- 3 Kb (X-axis), overlaid with the H3K4me3 promoter mark from similar tissue at E10.5 (column 1), E11.5 (column 2), or non-enriched input control (column 3). (C) Distribution, relative to the transcriptional start site (TSS, arrow) of the elements subset in (B). (D) Transcription factor motif enrichment analysis of the 2 subset clusters identified in (B). (E) Density plot of ~55,000 non-promoter, open chromatin regions [bottom cluster in (B) replotted on Y-axis], +/- 3 Kb (X-axis) overlaid with ENCODE ATAC-seq datasets from various mouse embryonic tissues/organs. (F) Transcription factor motif enrichment analysis of 2 (C1 and C3) of the three subset clusters identified in (E) (C2 not shown). (G) A cumulative distribution plot of gene expression in craniofacial surface ectoderm versus mesenchyme. The groups of genes include those with no peaks (black line), those with C1, C2, and C3 peaks (light blue line), and those with C2 and C3 peaks only (dark blue line)—with ‘peaks’ being those defined by subclusters in (E).Figure 2—source data 1.Figure 2D, top).Figure 2—source data 2.Figure 2D, bottom).Figure 2—source data 3.Figure 2—source data 4.Figure 2—source data 5.Figure 2E, top).Figure 2—source data 6.Figure 2E, top).Figure 2—source data 7.Figure 2E, bottom).Figure 2—source data 8.Figure 2E, bottom).Figure 2—source data 9.Figure 2E, middle).Figure 2—source data 10.Figure 2E, middle).Figure 2—source data 11.
+**Figure 2.:** (A) A schematic outlining the general workflow of craniofacial surface ectoderm isolation and subsequent ATAC-seq to identify open chromatin regions. (B) Density plot of ~65,000 open chromatin regions identified in the control surface ectoderm (Y-axis), +/- 3 Kb (X-axis), overlaid with the H3K4me3 promoter mark from similar tissue at E10.5 (column 1), E11.5 (column 2), or non-enriched input control (column 3). (C) Distribution, relative to the transcriptional start site (TSS, arrow) of the elements subset in (B). (D) Transcription factor motif enrichment analysis of the 2 subset clusters identified in (B). (E) Density plot of ~55,000 non-promoter, open chromatin regions [bottom cluster in (B) replotted on Y-axis], +/- 3 Kb (X-axis) overlaid with ENCODE ATAC-seq datasets from various mouse embryonic tissues/organs. (F) Transcription factor motif enrichment analysis of 2 (C1 and C3) of the three subset clusters identified in (E) (C2 not shown). (G) A cumulative distribution plot of gene expression in craniofacial surface ectoderm versus mesenchyme. The groups of genes include those with no peaks (black line), those with C1, C2, and C3 peaks (light blue line), and those with C2 and C3 peaks only (dark blue line)—with ‘peaks’ being those defined by subclusters in (E).
 
 We next reasoned that the H3K4me3- distal peaks likely represented regions of open chromatin that were found in multiple tissue-types as well as some that were ectoderm specific. Therefore, we utilized publicly available ATAC-seq datasets (ENCODE Project Consortium, 2012; Davis et al., 2018) from additional mouse embryonic tissues (liver, kidney, intestine, brain, etc.) and plotted relative peak intensities on top of our ~ 55 K distal peaks in the craniofacial surface ectoderm. K-means clustering of this overlap identified three distinct groups: ‘tissue generic’ (termed C1, N = 9244); ‘ectoderm favored’ (chromatin open in surface ectoderm, but also at low levels in other tissues, termed C2, N = 24,805); and ‘ectoderm unique’ (termed C3, N = 20,886) (Figure 2E). Motif analyses of these three subgroups showed that C1 was most highly enriched for the CTCF/BORIS motif (Figure 2F, Figure 2—source data 5) and genes nearby these elements had less relevant ectodermal/craniofacial associations (Figure 2—source data 6). Conversely, C3 elements contained the p53/p63/p73, AP-2, and TEAD motifs (Figure 2—source data 7), and nearby genes were highly enriched for networks associated with ectodermal and craniofacial development (Figure 2F, Figure 2—source data 8). In addition, the GRHL and PBX motifs—both key TF families in surface ectoderm gene networks (Ferretti et al., 2011; Ting et al., 2005)—were the next identified within the C3 element list at high significance. The C2 list contained a mix of both C3 and C1 motifs (Figure 2—source data 9) and gene network associations (Figure 2—source data 10).
 
 Next, we employed the corresponding E11.5 gene expression profiles of the mouse craniofacial ectoderm and mesenchyme (Hooper et al., 2020) and correlated the relative expression between these two tissue layers with the list of E11.5 genomic elements and associated genes identified using ATAC-seq. Genes from the expression analysis were first binned into groups (Supplementary file 1) based upon whether they had: no associated peaks; peaks associated only with C1 (tissue generic), C2 (ectoderm favored), or C3 (ectoderm unique); or peaks in multiple categories (e.g. C1 + C2). We then used a cumulative distribution plot to assess the difference in distribution of ‘ectoderm expression enrichment’ between each group. This analysis identified that genes associated with both a C2 and C3 element showed a shift in distribution favoring ectoderm enrichment relative to genes with no associated element (p < 2.2e-16) (Figure 2G). In addition, if genes were also binned based on the sum of associated C2 and C3 elements, genes with 4 or greater elements, compared to those with less than 4, showed the most significant shift in distribution relative to genes with no elements (Figure 2—source data 11). Collectively, these analyses identified the position of key genomic elements in the mammalian craniofacial surface ectoderm, their predicted TF binding profiles, and correlation with ectoderm specific gene expression patterns and pathways. Moreover, these data suggested that AP-2 binding sites within promoter distal elements of ectodermally expressed genes may play an important role in the associated GRN required for facial development.
 
-## Simultaneous loss of Tfap2a and Tfap2b within the surface ectoderm results in reduced chromatin accessibility at a subset of elements, including those associated with WNT ligands
+### Simultaneous loss of Tfap2a and Tfap2b within the surface ectoderm results in reduced chromatin accessibility at a subset of elements, including those associated with WNT ligands
 
 To examine how loss of Tfap2a and Tfap2b impacted chromatin accessibility in the craniofacial ectoderm, we next analyzed the ATAC-seq data from the EDKO samples and compared the results to those obtained from controls. Combined analysis of the two EDKO samples yielded ~63,000 ‘peaks’ with CTCF, P53/P63/P73, and TEAD again the top motifs identified (Figure 3—source data 1). In stark contrast to controls though, AP-2 consensus motifs were not detected, consistent with the loss of elements directly bound by AP-2 in EDKO mutants. Further, these data suggest that the limited expression of AP-2γ/Tfap2c in the ectoderm is not sufficient to compensate for the loss of AP-2α and AP-2β. Next, using the mutant dataset as ‘background’ to remove regions with similar chromatin accessibility from the control dataset, we identified genomic loci where accessibility was significantly higher in controls relative to in EDKO mutants. This differential analysis identified ~3.1 K genomic regions (N = 3103, ~ 5% of control elements) that were significantly decreased in accessibility upon loss of AP-2α/AP-2β (Figure 3A). AP-2 elements were the top two binding motifs in these 3.1 K peaks, consistent with AP-2 directly binding many of these elements (Figure 3B, Figure 3—source data 2). A more limited enrichment for p53/63/73, TEAD, and PBX motifs was also observed in these 3.1 K peaks, potentially indicating that AP-2 either facilitates access of these other TFs at certain sites or simply reflecting the prevalence of these additional motifs in ectodermal control elements (Figure 3B, Figure 3—source data 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig3-v2.jpg)
 
-**Figure 3.:** (A) Average normalized read density for control (black lines) and Tfap2a/Tfap2b ectoderm mutant (green lines) ATAC-seq datasets at AP-2-dependent nucleosome-free regions ( +/- 3.0 Kb). (B) Transcription factor motif enrichment analysis of AP-2-dependent nucleosome-free regions. (C) Distribution, relative to the transcriptional start site (TSS, arrow) of AP-2 dependent nucleosome-free regions. (D) GO/pathway enrichment analysis, using GREAT, of genes located near AP-2 dependent nucleosome-free regions. Note, the inset highlights the genes associated with the GO Molecular Function annotation ‘frizzled binding’ and the genomic location (relative to the TSS) of the associated AP-2-dependent nucleosome-free region. (E) Density plot of ~3100 AP-2-dependent elements (Y-axis), +/- 3 Kb (X-axis) overlaid with conservation score (e.g. darker green = more conserved) identifies ‘ultra-conserved’ and ‘non-ultra-conserved’ subclusters. (F) Mean conservation score of elements identified in each subcluster in (E). (G) IGV browser view of tracks at the Wnt3 locus. Tracks for conservation (grey, labeled cons.), control ATAC-seq replicates (black, labeled ctrl 1 and ctrl 2), AP-2 mutant ATAC-seq replicates (green, labeled EDKO1 and EDKO2), and coordinates of significantly altered elements between control and AP-2 mutant datasets (green bars, labeled ctrl vs EDKO sig.). The Wnt3 transcription unit is schematized at the bottom, along with the 3’ exons of the flanking Nsf gene, representing ~60 kb of genomic DNA.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.Figure 3E, Top).Figure 3—source data 5.Figure 3E, Bottom).Figure 3—source data 6.
+**Figure 3.:** (A) Average normalized read density for control (black lines) and Tfap2a/Tfap2b ectoderm mutant (green lines) ATAC-seq datasets at AP-2-dependent nucleosome-free regions ( +/- 3.0 Kb). (B) Transcription factor motif enrichment analysis of AP-2-dependent nucleosome-free regions. (C) Distribution, relative to the transcriptional start site (TSS, arrow) of AP-2 dependent nucleosome-free regions. (D) GO/pathway enrichment analysis, using GREAT, of genes located near AP-2 dependent nucleosome-free regions. Note, the inset highlights the genes associated with the GO Molecular Function annotation ‘frizzled binding’ and the genomic location (relative to the TSS) of the associated AP-2-dependent nucleosome-free region. (E) Density plot of ~3100 AP-2-dependent elements (Y-axis), +/- 3 Kb (X-axis) overlaid with conservation score (e.g. darker green = more conserved) identifies ‘ultra-conserved’ and ‘non-ultra-conserved’ subclusters. (F) Mean conservation score of elements identified in each subcluster in (E). (G) IGV browser view of tracks at the Wnt3 locus. Tracks for conservation (grey, labeled cons.), control ATAC-seq replicates (black, labeled ctrl 1 and ctrl 2), AP-2 mutant ATAC-seq replicates (green, labeled EDKO1 and EDKO2), and coordinates of significantly altered elements between control and AP-2 mutant datasets (green bars, labeled ctrl vs EDKO sig.). The Wnt3 transcription unit is schematized at the bottom, along with the 3’ exons of the flanking Nsf gene, representing ~60 kb of genomic DNA.
 
 Examination of this core subset of AP-2-dependent nucleosome free regions in the craniofacial ectoderm revealed that they are mostly promoter distal (~87%), consistent with enhancers (Figure 3C). Most genes (2,432) had only one assigned peak (Supplementary file 2), but many had two (654), three (232), four (108), or five (32) peaks. Notably, 45 genes had 6 or more assigned peaks, and ~120 peaks were assigned to only four gene pairs: Rhou/Gas8, Ezh2/Pdia4, Atg7/Hrh1, and Asmt/Mid1. However, these highly clustered assignments of 20–56 peaks per gene pair represent binding to direct repeat sequences, which skews functional annotations assigned by GREAT (Figure 3D and Figure 3—source data 3). Nevertheless, multiple genes and annotations associated with development of the skin and its appendages are still present (Supplementary file 2 and Figure 3—source data 3). Thus, AP-2-dependent peaks had annotations including anchoring junction and adherens junction and were associated with genes encoding keratins, cadherins, and gap junction components (Figure 3D). Similarly, GO ‘Molecular Function’ annotations included both frizzled binding and beta-catenin binding, and multiple WNT pathway genes were also assigned to peaks (Figure 3D: Wnt2b, Wnt3, Wnt3a, Wnt4, Wnt6, Wnt8b, Wnt9b, Wnt10a, and Wnt10b)—some of which are known to be essential for proper craniofacial development (Chiquet et al., 2008; Menezes et al., 2010; Reynolds et al., 2019; Watanabe et al., 2006).
 
@@ -68,31 +80,474 @@ Next, we further subdivided the AP-2-dependent elements based on their overall d
 
 In summary, our analysis of chromatin accessibility in AP-2 mutant craniofacial surface ectoderm suggests that: (1) a subset of distal nucleosome-free regions—presumed enhancers—is AP-2 dependent; (2) these elements are significantly enriched near genes regulating craniofacial and ectodermal development; (3) elements near WNT-related loci are disproportionally impacted upon loss of AP-2; and, (4) AP-2 regulation of chromatin dynamics near WNT-loci is likely a highly conserved function.
 
-## Reduced chromatin accessibility at WNT-related genes correlates with reduced gene expression at E11.5 in EDKO surface ectoderm
+### Reduced chromatin accessibility at WNT-related genes correlates with reduced gene expression at E11.5 in EDKO surface ectoderm
 
 Analysis of chromatin accessibility in EDKO mutants and controls indicated that loss of AP-2 in the ectoderm may impact expression of several genes in the WNT pathway. Therefore, at this juncture, we surveyed the distribution of multiple WNT pathway components in both the facial ectoderm and mesenchyme to ascertain how they correlated with expression of Tfap2a and Tfap2b using previously published bulk RNAseq (Hooper et al., 2020) or scRNAseq (Li et al., 2019a) datasets. This data mining confirmed that genes encoding Wnt ligands Wnt3, Wnt4, Wnt9b as well as the antagonist Dkk4 showed biased expression in the surface ectoderm that overlapped on a cellular level with the two Tfap2 genes (Supplementary file 3 and Figure 4—figure supplement 1). Several other Wnt pathway genes, such as Axin2 and Sostdc1 showed notable overlap with the Tfap2 genes in the surface ectoderm but were also present at significant levels in the underlying mesenchyme. The connection between AP-2 transcription factors and these Wnt pathway genes was further investigated using both real-time RT-PCR and RNA in situ hybridization to compare expression in E11.5 embryos between control and EDKO mutants. To extend the analysis, gene expression was also analyzed in embryos with additional Tfap2a/Tfap2bCrect allelic combinations, specifically those lacking both copies of Tfap2a, but still containing one functional allele of Tfap2b (EAKO), and those with one functional allele of Tfap2a, but no Tfap2b (EBKO). In situ hybridization for Wnt3 and Wnt9b in control embryos demonstrated strong expression in the facial ectoderm, typified by the signal observed at the margins of the MxP (Figure 4A and E). This staining was absent in the EDKO mutants (Figure 4C and G), and the EAKO mutants showed an intermediate level of staining (Figure 4B and F). RT-PCR analysis of E11.5 whole facial tissue confirmed these in situ findings for the ectodermally expressed ligands Wnt3 and Wnt9b, as well as Wnt10b (Figure 4D, H, I). RT-PCR also revealed a graded reduction in expression from control, to EAKO, and finally EDKO mutants, for these three genes but no significant loss of expression in EBKO mutants, where an intact allele of Tfap2a was still present. Several WNT-signaling repressors—for example, Axin2, Dkk4, and Sostdc1—were also associated with elements showing reduced chromatin accessibility in facial ectoderm of EDKO mutants (Figure 4M and Figure 4—figure supplements 2 and 3). RT-PCR analysis of these 3 genes also showed reduced expression, especially between control and EDKO mutants (Figure 4J–L). Since Axin2 has similar expression in ectoderm and mesenchyme (Leach et al., 2017), we next used RT-PCR to examine Axin2 expression in the separated tissue layers of control and EDKO samples, in comparison to Wnt3, which exhibits mainly ectodermal expression (Figure 4—figure supplement 4). These studies showed that Wnt3 down-regulation was confined to the ectoderm, whereas Axin2 expression was reduced in both tissues, suggesting that AP-2 loss in the ectoderm may also be indirectly affecting the mesenchyme gene expression program. We further examined the impact of changes in epithelial:mesenchymal interactions caused by loss of Tfap2a/Tfap2b in the ectoderm by studying cell proliferation in the facial prominences of E11.5 control and EDKO embryos. As shown in Figure 4—figure supplement 5, α-phospho-Histone H3 (αPHH3) immuno-fluorescence analysis revealed significant reduction in global αPHH3 + cells in mutant versus control embryos. Collectively, these analyses identify a dramatic impact of ectodermal loss of AP-2α and AP-2β on chromatin accessibility and gene expression of major WNT-signaling components. These changes in the ectoderm correlate with reduced proliferation of the underlying mesenchyme. In addition, these findings highlight a graded response caused by loss of three or more Tfap2 alleles within the ectoderm with the presence of one functional allele of Tfap2a enabling some expression of critical regulatory genes, but loss of all four Tfap2a/b alleles resulting in more drastic reductions.
 
-## A graded response in gross craniofacial development results from different Tfap2a and Tfap2b allelic combinations in the surface ectoderm
+![Figure 4.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-v2.jpg)
+
+**Figure 4.:** (A–D). Analysis of Wnt3 expression. (A–C) Lateral facial views of whole mount in situ hybridization analyses of E11.5 control (A), EAKO (B), and EDKO (C) embryos stained for Wnt3. (D) Quantitative RT-PCR analysis of Wnt3 expression for biological duplicates of control (grey), EAKO (red), or EBKO (yellow) and EDKO (orange) samples. The boxplots represent technical triplicates, including upper, lower, and median values. Note, RNA was derived from whole facial prominences that is, ectoderm and mesenchyme, as shown in schematic at top left of (D). The Y-axis represents relative gene expression normalized to ß-actin. (E–H) Panels show equivalent whole mount and qRT-PCR analyses to (A–D) for Wnt9b expression. (I–L) Quantitative RT-PCR analysis for Wnt10b (I), Axin2 (J), Dkk4 (K) and Sostdc1 (L) as in panel (D). (M) IGV screenshot showing tracks for ATAC-seq analysis in control (top two tracks, black, ctrl 1 and ctrl 2) or EDKO (bottom two tracks, green, EDKO 1 and EDKO 2), and regions of significant difference between the two genotypes (green bar). An ‘AP-2-dependent’ nucleosome-free region is highlighted in green ~6 kb upstream of the 4 kb mouse Dkk4 transcription unit. MxP, maxillary prominence. Ctrl embryos are Tfap2aflox/+; Tfap2bflox/+, EAKO embryos are Crect; Tfap2aflox/flox; Tfap2bflox/+, EBKO embryos are Crect; Tfap2aflox/+; Tfap2bflox/flox, and EDKO embryos are Crect; Tfap2aflox/flox; Tfap2bflox/flox. A minimum of three embryos per genotype were used for in situ analysis, while real-time PCR was conducted with two biological replicates (each with technical triplicates). Scale bar = 500 µM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) tSNE plot of E11.5 single-cell RNAseq data from the region surrounding the lambdoid junction with cell populations arranged as labeled in Figure 1B (adapted from Li et al., 2019a). Features plots for Tfap2a expression (very top left panel, red) and Wnt pathway component expression (green). Focusing on the first 3 feature plots, Tfap2a expression (red) is shown first, Wnt3 expression (green) is shown second, and their overlap (red +green = yellow) is shown last. Note, subsequent groupings only show expression of the Wnt-associated gene and the corresponding overlap with Tfap2a expression. While some genes show high expression overlap with Tfap2a in the surface ectoderm (e.g. Wnt3) others are not expressed in the surface ectoderm (e.g. Nkd2). (B) Higher magnification of the tSNE plot, focusing on cells of the surface ectoderm. Tfap2a expression is shown first (in red), followed by expression of various Wnt-pathway components (in green). Boxed regions highlight their degree of expression overlap in these cells (e.g. yellow equals high overlap).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Black tracks are control samples (e.g., ctrl 1, ctrl 2), while green tracks are EDKO samples (e.g., mut 1, mut2). Green boxes below EDKO samples represent ATAC-seq regions that are significantly reduced in EDKO’s vs controls.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** AP-2 dependent peaks are located ~160 kb upstream of the Axin2 promoter (located at ~108,920) within introns of the adjacent Cep112 gene. Black tracks are control samples (e.g. ctrl 1, ctrl 2), while green tracks are EDKO samples (e.g. mut 1, mut2). Green boxes below EDKO samples represent ATAC-seq regions that are significantly reduced in EDKO’s vs controls.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Relative expression (normalized to ß-actin) is shown for both Wnt3 (expressed only in the ectoderm) and Axin2 (expressed in both ectoderm and mesenchyme).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A–B) Boxplots summarizing quantification of the number of anti-phospho histone H3 + cells per area, of either control (grey) or EDKO (red) E11.5 embryos, either collectively within a section of the face (i.e. all prominences) (A) or by each prominence individually (B). The mean is indicated by the unfilled circle, 75th and 25th percentiles by the limits of the box, and the largest or smallest value within 1.5 times the interquartile range by the lines. Outliers are indicated by the isolated points. A standard two-tailed t-test was conducted to calculate significance.
+
+### A graded response in gross craniofacial development results from different Tfap2a and Tfap2b allelic combinations in the surface ectoderm
 
 The graded changes in WNT pathway gene expression observed at E11.5 EBKO, EAKO, and EDKO embryos suggested that the loss of different allelic combinations of Tfap2a and Tfap2b in the facial ectoderm might also have functional consequences for facial development. After determining that certain allelic combinations did not survive postnatally, we found that at E18.5, EBKO embryos (Figure 5C and C’) were indistinguishable from controls (Figure 5A and A’), whereas EAKO (Figure 5B and B’) and EDKO (Figure 5D and D’) embryos displayed substantial defects. EAKO embryos exhibited bilateral facial clefting, a cleft palate, a cleft hypoplastic mandible, bifid tongue, hypoplastic and low-set pinna, and a partial ventral body-wall closure defect (Figure 5B and B’). These phenotypes were exacerbated in EDKO embryos, with most craniofacial structures severely malformed (Figure 5D and D’), displaying a complete failure of the facial prominences to grow towards the midline, with the maxilla and mandible growing out laterally from the oral cavity, resulting in a mandibular and palatal cleft, consistent with the morphological defects observed at earlier time points (Figure 1). Similarly, structures derived from the MNP and LNP failed to fuse with each other or the maxilla, instead growing dorsally, resulting in exposure of the developing nasal cavity (Figure 5D and D’). External pinnae were notably absent and there was also microphthalmia (Figure 5D and D’). Compared to the EAKO mutants, EDKO embryos also had a more severe ventral body wall closure defect, with an open thorax (Figure 5D’). A small percentage of EDKO mutants also had a failure of dorsal neural tube closure, resulting in exencephaly (data not shown). Finally, EDKO mutants also displayed an apparent thinning of the epidermal layer, resulting in tissue transparency, most obvious around the lateral portions of the neck (Figure 5D). Collectively, these findings reveal that functional redundancy exists between AP-2α and AP-2β within the ectoderm lineage—most notably in the context of facial morphogenesis. Furthermore, these results indicate that AP-2α has the most potent TF activity since mice lacking Tfap2b, but containing one functional copy of Tfap2a, can still undergo normal facial development, whereas the reverse results in orofacial clefting.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig5-v2.jpg)
 
-**Figure 5.:** Lateral (A–D) or ventral (A’-D’) views of an E18.5 control (A, A’), EAKO (B, B’), EBKO (C, C’), or EDKO (D, D’) embryo. Abbreviations: md, mandible; mnp, medial nasal prominence; mx, maxillary prominence; er, eye remnant; ns, nasal septum; t, tongue. Asterisks in B’ and D’ indicates ventral body wall closure defect. Ctrl embryos are Tfap2a, EAKO embryos are Crect; flox/+; Tfap2bflox/+Tfap2a, EBKO embryos are Crect; flox/null; Tfap2bflox/+Tfap2a, and EDKO embryos are Crect; flox/+; Tfap2bflox/nullTfap2a. A minimum of at least three embryos per genotype were examined. Mandibular clefting and failure of facial fusion was fully penetrant in EDKO embryos. Scale bar = 500 µM.flox/null; Tfap2bflox/null
+**Figure 5.:** Lateral (A–D) or ventral (A’-D’) views of an E18.5 control (A, A’), EAKO (B, B’), EBKO (C, C’), or EDKO (D, D’) embryo. Abbreviations: md, mandible; mnp, medial nasal prominence; mx, maxillary prominence; er, eye remnant; ns, nasal septum; t, tongue. Asterisks in B’ and D’ indicates ventral body wall closure defect. Ctrl embryos are Tfap2aflox/+; Tfap2bflox/+, EAKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/+, EBKO embryos are Crect; Tfap2aflox/+; Tfap2bflox/null, and EDKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/null. A minimum of at least three embryos per genotype were examined. Mandibular clefting and failure of facial fusion was fully penetrant in EDKO embryos. Scale bar = 500 µM.
 
-## Disruption of neural crest derived craniofacial bone and cartilage elements in EDKO mutants
+### Disruption of neural crest derived craniofacial bone and cartilage elements in EDKO mutants
 
 To further assess the effect of loss of Tfap2a and Tfap2b within the facial ectoderm, E18.5 embryos were processed by alizarin red and alcian blue staining, revealing bone and cartilage elements, respectively (Figure 6). The craniofacial skeleton can be grouped into three structural units: the viscerocranium (comprising solely NCC derived facial elements); neurocranium (calvaria/skull vault); and chondrocranium—the latter two units having both a NCC and mesoderm origin reviewed in Minoux and Rijli, 2010. Control and EBKO embryos displayed the typical NC-derived craniofacial elements (Figure 6A, D, G and J, and not shown) whereas both EAKO and EDKO embryos demonstrated major disruption to several of these skeletal structures. First, in EAKO skeletons (Figure 6B, E, H and K), the most substantially affected structures included a shortened, cleft mandible, hypoplastic development of the maxillary, nasal, lamina obturans, and palatine bones (consistent with the bilateral facial clefts and clefting of the secondary palate), a slightly hypoplastic frontal bone, and missing tympanic bones. The premaxillary bone developed anteriorly into a long bony element protruding at the front of the face, presumably due to the absence of constraints imposed by fusion to the maxilla (Figure 6B)—a feature commonly observed in humans with orofacial clefting (Nyberg et al., 1993). In addition, isolation of the mandible revealed disruption to the patterning of the proximal end, including the normally well-defined condyles seen in control embryos (Figure 6J and K). These skeletal defects were even more pronounced in EDKO mutants, with some additional features observed that were not seen in EAKO preparations as discussed further below. Thus, several NC derived bones that were hypoplastic in EAKO mutants were virtually absent in the EDKO mutants, including the squamosal, jugal, palatine, and lamina obturans (Figure 6C, F, I). Like EAKO mutants, the tympanic bones were absent, the frontal bone hypoplastic, and the premaxillary bone protruding in EDKO mutants, although this latter process grew mediodorsally reflecting the more extreme outward growth of the facial prominences in the latter genotype. Both the mandible and maxillary bones, comprising the lower and upper-jaw, respectively, were more severely impacted in EDKO mutants, including a loss of the primary and secondary jaw joints, resulting in syngnathia (Figure 6C). Like EAKO mutants, isolation of the mandible in EDKO mutants revealed a major loss of proximal condylar identity that was exacerbated by fusion with upper-jaw components (Figure 6L). Also, in contrast to EAKO embryos, the oral/aboral axis of the mandible was disrupted, resulting in a less pronounced tapering at the distal end (Figure 6L). To further investigate these unique features, we subsequently stained the chondrocranium of control, EAKO, and EDKO embryos at E15.5 with alcian blue (Figure 6M–O). Notably, this analysis revealed that EDKO mutants displayed a duplicated Meckel’s cartilage along the length of the proximal-distal axis of the mandible, a feature not observed in other genotypes, and consistent with a duplication of the mandible along the oral/aboral axis (Figure 6M–O).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig6-v2.jpg)
 
-**Figure 6.:** Tfap2 gene dosage.(A–L) E18.5 alizarin red and alcian blue stained craniofacial elements. Lateral (A–C), ventral (D–F), dorsal (G–I) views of the craniofacial skeleton, and lateral views of the left and right hemi-mandibles in isolation (J–L) in control (A, D, G, J), EAKO (B, E, H, K), and EDKO (C, F, I, L) embryos. Note that the mandibles have been removed in (D–F) for clearer visualization of the cranial base, and the calvaria are outlined with yellow dashed lines in (G–I). The white dashed line in (C) highlights fusion of the upper and lower jaw (syngnathia), also indicated by the black dashed lines in (L). (M–O) E15.5 alcian blue stained chondrocraniums from a control (M), EAKO (N), or EDKO (O) embryo. A cleft Meckel’s cartilage is highlighted by the red arrowhead in (N) or by black lines in (O). Note, Meckel’s cartilage is also duplicated (pink arrows) along the proximodistal axis of the lower jaw in (O) and upturned nasal cartilages are highlighted by the black arrow. Abbreviations: agp, angular process; bs, basisphenoid; bo, basioccipital; cdp, condylar process; crp, coronoid process; dnt, dentary; f, frontal; h, hyoid; ii, inferior incisor; ii*, duplicated incisor; ip, interparietal; jg, jugal; lo, lamina obturans; mc, Meckel’s cartilage; md, mandible; mx, maxillary; na, nasal; nc, nasal cartilage; ns, nasal septum; p, palatine; pmx, premaxillary; pr, parietal; ps, presphenoid; syn*, syngnathia; t, tympanic ring;? indicates possible identity of dysmorphic structure; * in (E, F) indicates missing tympanic ring. Ctrl embryos are Tfap2a, EAKO embryos are Crect; flox/+; Tfap2bflox/+Tfap2a, and EDKO embryos are Crect; flox/null; Tfap2bflox/+Tfap2a. A minimum of at least three cranial skeletons per genotype were examined. Scale bar = 500 µM.flox/null; Tfap2bflox/null
+**Figure 6.:** (A–L) E18.5 alizarin red and alcian blue stained craniofacial elements. Lateral (A–C), ventral (D–F), dorsal (G–I) views of the craniofacial skeleton, and lateral views of the left and right hemi-mandibles in isolation (J–L) in control (A, D, G, J), EAKO (B, E, H, K), and EDKO (C, F, I, L) embryos. Note that the mandibles have been removed in (D–F) for clearer visualization of the cranial base, and the calvaria are outlined with yellow dashed lines in (G–I). The white dashed line in (C) highlights fusion of the upper and lower jaw (syngnathia), also indicated by the black dashed lines in (L). (M–O) E15.5 alcian blue stained chondrocraniums from a control (M), EAKO (N), or EDKO (O) embryo. A cleft Meckel’s cartilage is highlighted by the red arrowhead in (N) or by black lines in (O). Note, Meckel’s cartilage is also duplicated (pink arrows) along the proximodistal axis of the lower jaw in (O) and upturned nasal cartilages are highlighted by the black arrow. Abbreviations: agp, angular process; bs, basisphenoid; bo, basioccipital; cdp, condylar process; crp, coronoid process; dnt, dentary; f, frontal; h, hyoid; ii, inferior incisor; ii*, duplicated incisor; ip, interparietal; jg, jugal; lo, lamina obturans; mc, Meckel’s cartilage; md, mandible; mx, maxillary; na, nasal; nc, nasal cartilage; ns, nasal septum; p, palatine; pmx, premaxillary; pr, parietal; ps, presphenoid; syn*, syngnathia; t, tympanic ring;? indicates possible identity of dysmorphic structure; * in (E, F) indicates missing tympanic ring. Ctrl embryos are Tfap2aflox/+; Tfap2bflox/+, EAKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/+, and EDKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/null. A minimum of at least three cranial skeletons per genotype were examined. Scale bar = 500 µM.
 
 In summary, skeletal analysis indicated that the NC derived elements in the craniofacial skeleton were most exquisitely sensitive to loss of AP-2α and AP-2β from the surface ectoderm. In contrast, mesoderm derived components, such as the basioccipital of the cranial base, appeared less affected in EAKO and EDKO mutants (Figure 6D–F). These findings are consistent with AP-2 expression in the ectoderm affecting short range signaling to the adjacent NCC mesenchyme to control growth and morphogenesis.
 
-## RNA-Seq analysis of E10.5 EDKO mutants reveals early disruption of WNT signaling components along with reciprocal mesenchymal perturbations
+### RNA-Seq analysis of E10.5 EDKO mutants reveals early disruption of WNT signaling components along with reciprocal mesenchymal perturbations
 
 To obtain a more global assessment of the gene expression changes in the ectoderm and how they impact the underlying mesenchyme, we performed RNAseq analysis of the whole face at E10.5 for both control and EDKO mice (Figure 7A). This timepoint was chosen to detect primary changes in gene expression before major morphological differences were apparent in the mutants. Three biological replicates of each genotype were processed and the read data for each gene are summarized in Supplementary file 3. An initial assessment of the data was made by examination of a list of ~240 genes that satisfied a 1.5 fold cut-off in gene expression difference between controls and mutants, and which had consistent and measurable expression changes when viewed on the IGV browser (Supplementary file 3). This manually curated list revealed that multiple genes down-regulated in the mutant were associated with development and function of the ectoderm (Table 1). Notably, there was reduction in Krt5, Krt14, and Krt15 expression, as well as for several genes associated with the periderm, balanced by a rise in Krt8 and Krt18 transcripts, indicating a delay or inhibition of normal stratification. Further, mRNAs for TFs associated with epidermal development, particularly Trp63, Grhl3, and Foxi2, were also reduced in the mutant (Supplementary file 3). Other notable changes occured in signaling molecules associated with the WNT pathway, with CXCL factors and to a lesser extent with genes involved in NOTCH, EDN, and FGF.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic depicting regions isolated and general workflow for RNA-seq analysis. (B) Scatterplot of gene mean expression values (FPKM) for control (X-axis) and EDKO mutant (Y-axis) samples, blue or orange dots representing genes significantly upregulated or down-regulated in mutants versus controls, respectively. (C) Boxplot of mean fold-change values (mutant versus control) for all expressed genes (grey) or those that were significantly altered (red). (D) Boxplot of mean gene expression fold-change values (mutant versus control) for down-regulated (orange) or up-regulated (blue) genes. (E) Scatterplot of mean gene expression fold-change between mutant and control samples (X-axis) and mean gene expression fold-change between craniofacial ectoderm and mesenchyme (Y-axis). (F) Boxplot of mean gene expression fold-change values (mutant versus control) for ‘ectoderm enriched’ (orange) or ‘mesenchyme enriched’ (yellow) genes. (G) As in (F) but further subset into each quadrant. (H) Gene-set enrichment analysis (using ENRICHR) for ‘AP-2-dependent’ ectoderm (blue) or mesenchyme (orange) enriched genes. (I) Boxplots of mean gene expression fold-change values (mutant versus control) for all significantly altered genes (grey) versus those found specifically in the WNT-pathway (blue) or all significantly down-regulated ectoderm genes (Q1 genes, red) versus WNT-pathway associated genes down-regulated in the ectoderm (Q1 Wnt, blue). (J) RNA-seq based, computed gene expression values (TPM) for a subset of WNT-related genes, shown as biological triplicates in control (salmon) or EDKO mutant (teal). For all boxplots, the median is indicated by the horizontal line, 75th and 25th percentiles by the limits of the box, and the largest or smallest value within 1.5 times the interquartile range by the lines. A standard two-tailed t-test was conducted to calculate significance in C, D, F, G, and I (* = p-value < 0.05; ** = p-value < 0.005). Abbreviations: DEG, differentially expressed genes; DR, down-regulated; FNP, nasal processes; MdP, mandibular prominence; MxP, maxillary prominence; ns, not significant; TPM, transcripts per million; UR, up-regulated. Samples used for RNA-seq analysis included, 2 Tfap2aflox/+; Tfap2bflox/+ and 1 Tfap2aflox/+; Tfap2bflox/null control embryos and 3 Crect; Tfap2aflox/null; Tfap2bflox/null EDKO embryos.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Briefly, the plot highlights gene expression changes (X-axis) in the facial prominences of EDKO (α/ßCRECT) versus control (CTRL) samples. Genes are further stratified based on their given enrichment in the surface ectoderm versus mesenchyme (Y-axis) in a control embryo. All WNT-pathway components (as defined by DAVID pathway analysis) have been labeled sky-blue.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** cDNA for real-time PCR was generated from RNA collected from either the medial and lateral nasal prominences or the combined MxP and MnP portions of the face as diagrammed, from the given genotype. The boxplots represent technical triplicates from a single embryo.In situ hybridization images show a representative E10.5 embryo in a lateral view of the head.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Relative expression (normalized to B2m) is shown for Wif1, Dkk2, Kremen1, Dvl2, and Nkd1. Experiments were done with biological duplicates, and technical triplicates.
+
+**Table 1.**
+ Curated list of differentially expressed genes identified in E10.5 EDKO facial prominences vs control facial prominences, with the presence or absence of associated ATAC-seq peaks based on GREAT.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene category</th>
+      <th>Gene</th>
+      <th>Average expression in control</th>
+      <th>Average expression in mutant</th>
+      <th>Fold changeMutant vs Control</th>
+      <th>AP-2 dependentATAC-seq peak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="12">Epithelial Development and Function</td>
+      <td>Krt5</td>
+      <td>3.25</td>
+      <td>0.52</td>
+      <td>0.16</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Bnc1</td>
+      <td>2.46</td>
+      <td>0.50</td>
+      <td>0.20</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Krt15</td>
+      <td>3.74</td>
+      <td>0.81</td>
+      <td>0.22</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Tgm1</td>
+      <td>0.82</td>
+      <td>0.23</td>
+      <td>0.28</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Hr</td>
+      <td>0.63</td>
+      <td>0.27</td>
+      <td>0.43</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Nectin4</td>
+      <td>2.73</td>
+      <td>1.40</td>
+      <td>0.51</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Krt14</td>
+      <td>11.40</td>
+      <td>6.36</td>
+      <td>0.56</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Perp</td>
+      <td>16.49</td>
+      <td>9.72</td>
+      <td>0.59</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Grhl3</td>
+      <td>4.45</td>
+      <td>2.61</td>
+      <td>0.59</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Trp63</td>
+      <td>11.09</td>
+      <td>7.12</td>
+      <td>0.64</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Krt8</td>
+      <td>26.20</td>
+      <td>39.97</td>
+      <td>1.53</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Krt18</td>
+      <td>33.05</td>
+      <td>53.98</td>
+      <td>1.63</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Epithelial Junction Complexes</td>
+      <td>Gjb6</td>
+      <td>1.48</td>
+      <td>0.40</td>
+      <td>0.27</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Gjb2</td>
+      <td>2.65</td>
+      <td>0.86</td>
+      <td>0.32</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Gjb3</td>
+      <td>1.86</td>
+      <td>0.63</td>
+      <td>0.34</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Col17a1</td>
+      <td>0.74</td>
+      <td>0.26</td>
+      <td>0.35</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Tns4</td>
+      <td>1.05</td>
+      <td>0.48</td>
+      <td>0.48</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Periderm</td>
+      <td>Gabrp</td>
+      <td>1.23</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Zfp750</td>
+      <td>0.85</td>
+      <td>0.18</td>
+      <td>0.21</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Rhov</td>
+      <td>0.73</td>
+      <td>0.17</td>
+      <td>0.23</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Krt19</td>
+      <td>6.93</td>
+      <td>12.96</td>
+      <td>1.87</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td rowspan="13">Signaling</td>
+      <td>Dkk4</td>
+      <td>1.96</td>
+      <td>0.20</td>
+      <td>0.10</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wnt10b</td>
+      <td>0.84</td>
+      <td>0.11</td>
+      <td>0.13</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Kremen2</td>
+      <td>3.98</td>
+      <td>0.58</td>
+      <td>0.15</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Wnt3</td>
+      <td>2.09</td>
+      <td>0.31</td>
+      <td>0.15</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Cxcl14</td>
+      <td>18.02</td>
+      <td>3.45</td>
+      <td>0.19</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wnt10a</td>
+      <td>0.48</td>
+      <td>0.12</td>
+      <td>0.25</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wif1</td>
+      <td>1.94</td>
+      <td>0.49</td>
+      <td>0.25</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Wnt9b</td>
+      <td>3.86</td>
+      <td>1.12</td>
+      <td>0.29</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Sostdc1</td>
+      <td>8.95</td>
+      <td>2.76</td>
+      <td>0.31</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Cxcl13</td>
+      <td>6.55</td>
+      <td>2.65</td>
+      <td>0.40</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ednra</td>
+      <td>15.93</td>
+      <td>9.44</td>
+      <td>0.59</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Dll1</td>
+      <td>8.96</td>
+      <td>13.88</td>
+      <td>1.55</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Fgfr3</td>
+      <td>5.10</td>
+      <td>10.10</td>
+      <td>1.98</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Transcription factors</td>
+      <td>Foxi2</td>
+      <td>1.38</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Irx4</td>
+      <td>1.67</td>
+      <td>0.15</td>
+      <td>0.09</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Gbx2</td>
+      <td>4.06</td>
+      <td>0.60</td>
+      <td>0.15</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Osr2</td>
+      <td>3.34</td>
+      <td>0.83</td>
+      <td>0.25</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Irx2</td>
+      <td>4.02</td>
+      <td>1.17</td>
+      <td>0.29</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Lmx1b</td>
+      <td>2.75</td>
+      <td>1.05</td>
+      <td>0.38</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Twist2</td>
+      <td>29.64</td>
+      <td>13.73</td>
+      <td>0.46</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Vgll3</td>
+      <td>2.15</td>
+      <td>1.01</td>
+      <td>0.47</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Hand1</td>
+      <td>11.26</td>
+      <td>5.36</td>
+      <td>0.48</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Irx5</td>
+      <td>8.40</td>
+      <td>4.03</td>
+      <td>0.48</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Twist1</td>
+      <td>135.74</td>
+      <td>79.38</td>
+      <td>0.58</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Msx1</td>
+      <td>102.04</td>
+      <td>61.27</td>
+      <td>0.60</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Sox21</td>
+      <td>4.56</td>
+      <td>7.94</td>
+      <td>1.74</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Pax6</td>
+      <td>9.36</td>
+      <td>29.27</td>
+      <td>3.13</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Other</td>
+      <td>Ass1</td>
+      <td>2.26</td>
+      <td>1.30</td>
+      <td>0.58</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Hapln1</td>
+      <td>8.59</td>
+      <td>5.07</td>
+      <td>0.59</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Smoc2</td>
+      <td>6.72</td>
+      <td>2.22</td>
+      <td>0.33</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Cdkn1a</td>
+      <td>8.46</td>
+      <td>15.22</td>
+      <td>1.80</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Tagln</td>
+      <td>6.85</td>
+      <td>13.35</td>
+      <td>1.95</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Lin28a</td>
+      <td>9.29</td>
+      <td>20.20</td>
+      <td>2.17</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
 
 signaling (Supplementary file 3). Prominent up-regulated genes included Lin28a and Cdkn1a, which correlate with the reduced expression of genes for ectodermal differentiation and the inhibition of growth noted by more limited α-PHH3 + stained cells in the mutants (Figure 4—figure supplement 5).
 
@@ -104,9 +559,17 @@ Finally, 32 out of the total 711 differentially expressed genes were related to 
 
 Although Q1 genes, assigned as ectodermal down-regulated, had the most significant changes in expression (Figure 7G), several other WNT-related genes were also impacted in EDKO mutants. Specifically, additional WNT modulators (mostly repressors), Rspo2, Nkd2, Nkd1, Axin2, Dkk2, and Kremen1 were also significantly down-regulated in mutant embryos (Supplementary file 3). Several of these genes including Axin2, Kremen1, Dvl2, and Fzd10 showed notable overlap with the Tfap2 genes in the surface ectoderm but were also present at significant levels in the underlying mesenchyme while a further set including Wif1, Dkk2, Rspo2, and Nkd1 display more prominent expression in the mesenchyme than in the ectoderm (Figure 4—figure supplement 1). We had previously shown that Axin2 expression was reduced in both the ectoderm and mesenchyme (Figure 4), and we next extended these studies to a number of these other mesenchymally expressed WNT pathway genes. RT-PCR analysis of isolated mesenchymal RNA from control and EDKO facial prominences demonstrated that Wif1, Dkk2, Kremen1, and Nkd1 were also significantly reduced in expression in the mutant tissue (Figure 7—figure supplement 3). We speculate their down-regulation in the mesenchyme probably results from a regulatory feedback loop caused by reduced expression of Wnt ligands from the ectoderm. Concurrently, several Wnt receptors (Fzd5, Fzd8, and Fzd9) and related molecules (Sfrp1, Sfrp2, and Sfrp4) were up-regulated (Supplementary file 3), potentially as a response to reduced Wnt ligand levels. In summary, bioinformatic and molecular analyses of control and EDKO mutants identified AP-2α and AP-2β as essential, cooperative regulators of multiple signaling pathways and processes originating from the ectoderm during craniofacial development, most notably the WNT pathway.
 
-## WNT1 over-expression partially rescues craniofacial defects in AP-2 ectoderm mutants
+### WNT1 over-expression partially rescues craniofacial defects in AP-2 ectoderm mutants
 
 Axin2 is a direct target of WNT signaling, and the Axin2-LacZ allele (Lustig et al., 2002) was incorporated into the EAKO and EDKO mutant backgrounds as a means to determine if the loss of AP-2 alleles in the ectoderm had a direct impact on WNT pathway output. In E10.5 control embryos in which Tfap2a/Tfap2b had not been targeted, β-gal activity was robust within all facial prominences and the second branchial arch (Figure 8A). In contrast, EAKO mutants displayed a reproducible drop in β-gal staining intensity throughout these regions, with the most striking disruption around the ‘hinge’ (intermediate) domain of BA1 (Figure 8B). Finally, consistent with a more exacerbated phenotype and WNT pathway perturbation, EDKO mutants showed an even more prominent drop in β-gal staining (Figure 8C). Notably, β-gal activity was clearly reduced in mesenchymal populations, supporting a model in which ectodermal AP-2 influences ectodermal to mesenchymal WNT signaling.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig8-v2.jpg)
+
+**Figure 8.:** (A–C) Lateral views of E10.5 β-galactosidase stained control (A), EAKO (B) and EDKO (C) embryos harboring the Axin2-lacZ reporter allele. The black arrow marks the position of the hinge region. (D) Schematic of genetic cross used to elevate Wnt1 expression levels in control, EAKO, or EDKO mutant embryos. (E–G) Ventral craniofacial view of E13.5 EAKO mutants that lack (E) or contain (F, G) the Wnt1 over-expression allele. The blue chevrons indicate the bilateral cleft present in (E). The white arrow indicates the lack of lens development previously noted from an excess of WNT signaling (Smith et al., 2005). (H–J) Ventral craniofacial view of E13.5 EDKO mutants that lack (H) or contain (I, J) the Wnt1 over-expression allele. Abbreviations: BA2, branchial arch 2; e, eye; md, mandibular prominence; mx, maxillary prominence; n, nasal pit. In A-C, in addition to being Axin2-lacZ+, Ctrl embryos are Tfap2aflox/+; Tfap2bflox/+, EAKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/+, and EDKO embryos are Crect; Tfap2aflox/null; Tfap2bflox/null (n = 3/genotype).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70511/elife-70511-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–H) Gross morphological phenotypes of E12.5 control (i.e. Crect+) (A–D) or Crect Wnt1OX embryos (E–H). Heads are shown in either a top-down (A, E), ventral (B, F), or lateral, anterior to the left (C, D, G, H) view.
 
 We next assessed whether elevating WNT-signaling could mitigate the craniofacial defects observed in EAKO and EDKO embryos by incorporating an allele that expresses Wnt1 upon Cre-mediated recombination (Carroll et al., 2005) into our Tfap2 allelic series. First, though, we examined how Crect-mediated Wnt1 overexpression in the ectoderm might impact face development to assess its suitability as a rescue model (Figure 8—figure supplement 1). In common with controls, E12.5 Crect Wnt1ox embryos had completed fusion of the face to form an intact upper lip. However, there were developmental changes in that mutant animals had a more pronounced angle between the forebrain and snout than controls and there were also defects in eye formation, consistent with activation of the WNT pathway in this process (Smith et al., 2005). Nevertheless, based on the overall facial phenotype, we reasoned that this approach was feasible to supplement Wnt ligand expression in the facial ectoderm of the EAKO and EDKO mice. In this approach, the Crect transgene both inactivates any floxed Tfap2 alleles as well as concurrently activates Wnt1 expression in the ectoderm (Figure 8D). Comparison of E13.5 EAKO to EAKO/Wnt1ox embryos indicated that while the former (Figure 8E) had bilateral cleft lip and primary palate with a protruding central premaxilla (9 of 9), most of the latter (11/13) had achieved upper facial fusion, so that there was a slight midfacial notch in place of the aberrant premaxilla as well as the formation of nares (Figure 8F and G). Similarly, all EDKO mice (Figure 8H) had facial fusion defects leading to the prominent central premaxilla (9 of 9), but in EDKO/Wnt1ox embryos (Figure 8I and J) the severity of the clefting was diminished and the central premaxilla replaced with nares (7 of 7). Note that the face was still dysmorphic in the rescued embryos, possibly reflecting insufficient WNT pathway activity, novel defects resulting from ectopic Wnt1 expression, or additional functions regulated by AP-2 beyond the WNT pathway. Nevertheless, these data indicate that supplementing the loss of ectodermal WNT ligands in EAKO and EDKO mice can rescue major aspects of upper facial clefting fitting with our model that one of the main functions of these TFs is to regulate the WNT pathway.
 
@@ -126,88 +589,280 @@ A strong link between AP-2 function, skin development, and WNT pathway expressio
 
 ## Materials and methods
 
-## Animal procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tfap2atm1Will</td>
+      <td>Zhang et al., 1996</td>
+      <td>Tfap2a null allele</td>
+      <td>In-house</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tfap2atm2Will/J</td>
+      <td>Brewer et al., 2004</td>
+      <td>Tfap2a conditional allele</td>
+      <td>In-house</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tfap2btm1Will</td>
+      <td>Martino et al., 2016; Van Otterloo et al., 2018</td>
+      <td>Tfap2b null allele</td>
+      <td>In-house</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tfap2btm2Will</td>
+      <td>Martino et al., 2016; Van Otterloo et al., 2018</td>
+      <td>Tfap2b conditional allele</td>
+      <td>In-house</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Crect</td>
+      <td>Schock et al., 2017</td>
+      <td>Crect transgene allele</td>
+      <td>In-house; Cre-driver line with Cre driven by a Tfap2a intronic enhancer</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.129P2-Axin2tm1Wbm/J</td>
+      <td>Lustig et al., 2002</td>
+      <td>Axin2lacZ</td>
+      <td>Obtained from Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gt(ROSA)26Sortm2(Wnt1/Gfp)Amc/J</td>
+      <td>Carroll et al., 2005</td>
+      <td>Wnt1Ox</td>
+      <td>Obtained from Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gt(ROSA)26Sortm1Sor</td>
+      <td>Soriano, 1999</td>
+      <td>r26r</td>
+      <td>Obtained from Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J</td>
+      <td>Muzumdar et al., 2007</td>
+      <td>mT/mG</td>
+      <td>Obtained from Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K4Me3 (Rabbit, monoclonal)</td>
+      <td>Millipore, cat. #04–745</td>
+      <td></td>
+      <td>2.5 µL/ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p-Histone H3 (Rabbit, polyclonal)</td>
+      <td>sc-8656-R, Santa Cruz Biotechnology</td>
+      <td></td>
+      <td>1:250 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NGmerge</td>
+      <td>Gaspar, 2018</td>
+      <td></td>
+      <td>Read trimming</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead et al., 2009</td>
+      <td></td>
+      <td>Mapping</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>Li et al., 2009</td>
+      <td></td>
+      <td>Format conversion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Genrich (v0.5)</td>
+      <td>https://github.com/jsh58/Genrich, Gaspar, 2022</td>
+      <td>RRID:SCR_002630</td>
+      <td>ATAC-seq peak calling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard (v2.19)</td>
+      <td>http://broadinstitute.github.io/picard</td>
+      <td>RRID:SCR_006525</td>
+      <td>Duplicate removal</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>Ramírez et al., 2016</td>
+      <td></td>
+      <td>Read normalization/ visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GREAT algorithm (v4)</td>
+      <td>McLean et al., 2010</td>
+      <td></td>
+      <td>Pathway enrichment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>Heinz et al., 2010</td>
+      <td></td>
+      <td>Motif enrichment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore!</td>
+      <td>Babraham Bioinformatics, Babraham Institute, Cambridge, UK</td>
+      <td></td>
+      <td>Read trimming</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Pertea et al., 2016</td>
+      <td></td>
+      <td>Read mapping</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StringTie</td>
+      <td>Pertea et al., 2016</td>
+      <td></td>
+      <td>RNA expression quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CuffDiff2</td>
+      <td>Trapnell et al., 2012</td>
+      <td></td>
+      <td>Differential gene expression</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>kallisto</td>
+      <td>Bray et al., 2016</td>
+      <td></td>
+      <td>RNA expression quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sleuth</td>
+      <td>Pimentel et al., 2017</td>
+      <td></td>
+      <td>Differential gene expression and visualization</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures
 
 All experiments were conducted in accordance with all applicable guidelines and regulations, following the ‘Guide for the Care and Use of Laboratory Animals of the National Institutes of Health’. The animal protocol utilized was approved by the Institutional Animal Care and Use Committee of the University of Colorado – Anschutz Medical Campus (animal protocol #14) and the University of Iowa (animal protocol #9012197). Noon on the day a copulatory plug was present was denoted as embryonic day 0.5 (E0.5). For the majority of experiments, littermate embryos were used when comparing between genotypes. Yolk sacs or tail clips were used for genotyping. DNA for PCR was extracted using DirectPCR Lysis Reagent (Viagen Biotech) plus 10 µg/ml proteinase K (Roche), incubated overnight at 65 °C, followed by heat inactivation at 85 °C for 45 min. Samples were then used directly for PCR-based genotyping with primers (Supplementary file 4) at a final concentration of 200 nM using the Qiagen DNA polymerase kit, including the optional Q Buffer solution (Qiagen).
 
-## Mouse alleles and breeding schemes
+### Mouse alleles and breeding schemes
 
 The Tfap2a null (Tfap2atm1Will Zhang et al., 1996) and conditional alleles (Tfap2atm2Will/J [Brewer et al., 2004]), the Tfap2b null (Tfap2btm1Will) and conditional alleles (Tfap2btm2Will [Martino et al., 2016; Van Otterloo et al., 2018]), as well as Crect transgenic mice (Schock et al., 2017), have been described previously. Crect is a Cre-driver line with Cre driven by a Tfap2a intronic enhancer. Axin2lacZ (B6.129P2-Axin2tm1Wbm/J) and Wnt1Ox (Gt(ROSA)26Sortm2(Wnt1/Gfp)Amc/J) mice (Carroll et al., 2005; Lustig et al., 2002) were obtained from Jackson Laboratory (Bar Harbor, ME). Note that the Wnt1ox allele was always introduced into the experimental embryos via the dam, to avoid premature activation of this allele in the sire as this genetic interaction was lethal. EDKO experiments were performed using mice that were either Crect; Tfap2aflox/flox; Tfap2bflox/flox or Crect; Tfap2anull/flox; Tfap2bnull/flox as indicated in the text. Similarly, EBKO mice were either Crect; Tfap2aflox/+; Tfap2bflox/flox or Crect; Tfap2aflox/+; Tfap2bnull/flox and EAKO mice either Crect; Tfap2aflox/flox; Tfap2bflox/+ or Crect; Tfap2anull/flox; Tfap2bflox/+. We did not detect any gross morphological differences between the two types of EDKO, EAKO, or EBKO mice which differ in respect to the number of functional Tfap2a or Tfap2b alleles in tissues that do not express Crect. Although the Crect transgene is used here to target the early embryonic ectoderm, a previous report has indicated that it frequently produces a broader pattern of recombination (Schock et al., 2017). We used several approaches to avoid this broader expression pattern. First, the Crect transgene was always introduced into the experimental embryos via the sire to reduce global recombination sometimes seen with transmission from the female. Second, all sires were tested using reporter lines such as (Gt(ROSA)26Sortm1Sor) (Soriano, 1999) or mT/mG, Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (Muzumdar et al., 2007) to ensure that they consistently produced the desired pattern of recombination before they were used to generate EAKO, EBKO, or EDKO animals (Figure 1—figure supplement 1). We also confirmed the overlap between the expression of Cre, Tfap2a, and Tfap2b in the ectoderm by mining a previously published single cell RNAseq dataset (Li et al., 2019a; Figure 1—figure supplement 1). Lastly, we determined that the Crect transgene was highly efficient at targeting the Tfap2a and Tfap2b loci based upon RNA expression and genomic recombination associated with these genes in Cre expressing cells (Figure 1—figure supplement 2).
 
-## Tissue preparation for ATAC-Seq
+### Tissue preparation for ATAC-Seq
 
 For ATAC-seq analysis, E11.5 embryos were dissected into ice-cold PBS and associated yolk sacs used for rapid genotyping using the Extract-N-Amp Tissue PCR kit as recommended by the manufacturer (Sigma). During genotyping, the facial prominences were carefully removed from individual embryos using a pair of insulin syringes and placed in a 24-well plate with 1 mL of 1 mg/ml Dispase II (in PBS). The samples were incubated with rocking at 37 °C for 30–40 min and then the facial ectoderm carefully dissected away from the mesenchyme into ice-cold PBS, as described (Li and Williams, 2013). Facial ectoderm was then centrifuged at 4 °C, 500 g, for 3 min in a 1.5 mL Eppendorf tube, washed 1 x with ice-cold PBS, and then centrifuged again. Following resuspension in 750 µL of 0.25% trypsin-EDTA, samples were incubated at 37 °C for 15 min with gentle agitation. Following addition of 750 µL of DMEM with 10% FBS to inhibit further digestion, cells were dissociated by pipetting up and down multiple times with wide orifice pipette tips. Cells were subsequently spun at 300 g for 5 min and washed with PBS containing 0.4% BSA, and this step was repeated twice. Finally, the cell pellet was resuspended with 50 µL of PBS and the density of the single-cell suspension quantified on a hematocytometer.
 
-## ATAC-Seq transposition, library preparation, and sequencing
+### ATAC-Seq transposition, library preparation, and sequencing
 
 Following genotype analysis of embryos used for facial ectoderm isolation, EDKO (Crect; Tfap2aflox/flox; Tfap2bflox/flox) and control littermate samples lacking Crect (Tfap2aflox/+; Tfap2bflox/+) were used for the ATAC-seq protocol, largely following procedures previously described (Buenrostro et al., 2013; Buenrostro et al., 2015; Corces et al., 2017). Briefly, 50,000 cells from each sample were pelleted at 500 g for 5 minutes at 4 °C. The pellet was then resuspended in 50 µL of cold lysis buffer (10 mM Tris-HCl, pH 7.5; 10 mM NaCl; 3 mM MgCl2; 0.1% NP-40, 0.1% Tween-20; 0.01% Digitonin) by gently pipetting ~4 times to release the nuclei which were then incubated on ice for 3 min. The sample was next spun at 500 g for 20 min at 4 °C and the pelleted nuclei resuspended in Tagmentation mix (e.g. 25 µL 2 x Nextera TD Buffer, 2.5 µL Nextera TD Enzyme, 0.1% Tween-20, 0.01% Digitonin, up to 50 µL with nuclease-free water) and placed at 37 °C for 30 min in a thermocycler. Following transposition, samples were purified using the QIAGEN minElute PCR Purification Kit (Qiagen) and eluted with 11 µL of supplied Elution Buffer. Transposed DNA was next indexed with a unique barcoded sequence and amplified prior to sequencing. Briefly, 10 µL of transposed DNA was mixed with the Nextera Ad1 PCR primer as well as a unique Nextera PCR primer (e.g. Ad2.x) and NEBNext HighFidelity 2 x PCR Master Mix. Samples were then amplified using the following cycling parameters: [72 °C, 5 min], [98 °C, 30 sec], [98 °C, 10 sec; 63 °C, 30 sec; 72 °C, 1 min (repeat 10–12 cycles)]. Following cycle 5, an aliquot of sample was removed for Sybr-green based quantification to determine the number of remaining cycles required to reach adequate amounts for sequencing without introducing over-amplification artifacts due to library saturation. Following indexing and amplification, samples were purified using two rounds of AmpureXP bead-based size selection. Library purity, integrity, and size were then confirmed using High Sensitivity D1000 ScreenTape and subsequently sequenced using the Illumina NovaSEQ6000 platform and 150 bp paired-end reads to a depth of ~75 × 106 reads per sample, carried out by the University of Colorado, Anschutz Medical Campus, Genomics and Microarray Core.
 
-## H3K4me3 histone ChIP
+### H3K4me3 histone ChIP
 
 For H3K4me3 based histone ChIP-seq analysis, craniofacial ectoderm was first isolated from E10.5 and E11.5 wild-type mouse embryos, as previously described (Li and Williams, 2013). Once isolated and pooled, tissue/chromatin was crosslinked with 1% formaldehyde at RT for 10 min. Following crosslinking, reactions were quenched using 0.125 M glycine, followed by multiple PBS washes. Samples were subsequently frozen in liquid nitrogen and stored at –80 °C. Once ~5 mg of tissue was collected per stage (e.g. E10.5, N = ~ 50 embryos; or E11.5, N = ~ 15 embryos), samples from multiple dissections, but similar stages, were pooled and combined with 300 µl of ‘ChIP Nuclei Lysis buffer’ (50 mM Tris-HCl, pH 8.0, 10 mM EDTA, 1% SDS), with 1 mM PMSF and 1 X proteinase inhibitor cocktail (PICT, 100 X from Thermo Scientific, Prod # 1862209). Pooled tissue was resuspended completely and subsequently incubated at RT for 10 mins. Following incubation, chromatin was fragmented using a Bioruptor (Diagenode, Cat. No. UCD-200) with the following settings: High energy, 30 s on, 30 s off, with sonication for 45 min. Following shearing, chromatin was assessed as ~100–500 bp in size. Next, a small portion of fragmented chromatin was saved as input, while the rest was diluted 1 in 5 in RIPA buffer (150 mM NaCl, 1% NP-40, 0.5% deoxycholate, 0.1% SDS, 50 mM Tris pH 8.0, 5 mM EDTA, plus PMSF and PICT) followed by the addition of 20 µl protein A/G agarose beads (Pierce, Thermo Scientific, Prod # 20423) prewashed with RIPA buffer to eliminate non-specific binding. The pre-cleaned chromatin was then incubated with 2.5 µL of monoclonal H3K4Me3 primary antibody (Millipore, cat. #04–745), while rotating at 4 °C, overnight. The following day, 20 µl protein A/G beads pre-saturated with 5 mg/ml BSA in PBS (Sigma, A-3311) were washed in RIPA buffer and subsequently added to the chromatin/antibody mix at 4 °C, rotating, for 2 hr. Samples were then washed twice in RIPA, four times in Szak Wash (100 mM Tris HCl pH 8.5, 500 mM LiCl, 1% NP-40, 1% deoxycholate), twice more in RIPA followed by two TE washes (10 mM Tris HCl pH 8.0, 1 mM EDTA pH 8.0). Finally, the bead slurry was resuspended in 100 µl TE and the remaining bound chromatin was eluted off the beads using 200 µl 1.5 X ‘Elution Buffer’ (70 mM Tris HCl pH 8.0, 1 mM EDTA, 1.5% SDS) at 65 °C for 5 min. Once eluted, crosslinks were reversed by incubating ChIP’d samples and input samples at 65 °C overnight in 200 mM NaCl. Samples were then subjected to 20 µg of Proteinase K digestion at 45 °C for 1 hr and DNA subsequently extracted using a standard Phenol:Chloroform, EtOH-precipitation based approach. Purified, pelleted, DNA was then resuspended in 20 µl water.
 
-## H3K4me3 histone ChIP-Seq library preparation and sequencing
+### H3K4me3 histone ChIP-Seq library preparation and sequencing
 
 Once purified fragments were obtained and quality and size confirmed, libraries were constructed using the Nugen ChIP Seq Library Construction Kit. Library purity, integrity, and size were then confirmed using High Sensitivity D1000 ScreenTape and subsequently sequenced using an Illumina MiSEQ platform and 50 bp single-end reads to a depth of ~25–30 × 106 reads per experimental sample and ~10 × 106 reads for input, carried out by the University of Colorado, Anschutz Medical Campus, Genomics and Microarray Core.
 
-## Bioinformatic processing of ATAC-Seq and histone ChIP-Seq data
+### Bioinformatic processing of ATAC-Seq and histone ChIP-Seq data
 
-## ATAC-seq trimming, mapping, peak calling:
+#### ATAC-seq trimming, mapping, peak calling:
 
 Following sequencing and demultiplexing, paired-end reads from each sample were first trimmed using NGmerge (with the adapter-removal flag specified) (Gaspar, 2018). Following trimming, samples were individually mapped to the Mm10 genome using Bowtie2 (Langmead et al., 2009) with the following settings (--very-sensitive -k 10) and converted to bam format and sorted using Samtools (Li et al., 2009). To find sites of ‘enrichment’ (i.e. peak calling) we used Genrich (https://github.com/jsh58/Genrich, Gaspar, 2022) with the following flags set (-j, -y, -r, -e chrM). First to identify control peaks, we used the two control replicate ATAC-seq alignment files—produced from Bowtie2/Samtools—as ‘experimental input’, with the above Genrich settings (in this approach, ‘background’ is based on the size of the analyzed genome, i.e., Mm10, minus mitochondrial DNA). We did a similar analysis using the two mutant replicate alignment files as ‘experimental input’ (rather than control)—identifying significantly enriched regions in the mutant dataset. Additionally, to compare the two datasets directly, we supplied the two control alignment files as ‘experimental’ while simultaneously supplying the two mutant alignment files as ‘background’, thus, identifying regions that were significantly enriched in controls relative to mutants. These analyses resulted in genomic coordinates of ‘peaks’ for each of the supplied datasets.
 
-## H3K4me3 histone ChIP-seq trimming, mapping, and overlapping
+#### H3K4me3 histone ChIP-seq trimming, mapping, and overlapping
 
 Following sequencing, samples were demultiplexed and mapped to the Mm10 genome build using NovoAlign (Novocraft). Mapped reads were then processed for duplicate removal using the Picard suite of tools (http://broadinstitute.github.io/picard). The resulting deduplicated mapped reads were subsequently indexed using Samtools (Li et al., 2009) and the resulting indexed Bam files were normalized using the bamCoverage function in deepTools (Ramírez et al., 2016). The resulting normalized bigWig files were then used with the control ATAC-seq bed file (genomic coordinates of peaks), along with the computeMatrix function in deepTools, to generate a matrix file. This matrix was then visualized using the plotHeatmap function in deepTools with a K-means cluster setting of 2, identifying ATAC-seq coordinates that had high or little to no H3K4me3 enrichment.
 
-## Multi-organ ATAC-seq dataset overlapping
+#### Multi-organ ATAC-seq dataset overlapping
 
 First, publicly available ATAC-seq datasets were downloaded from the ENCODE consortium in bigWig file format (E11.5 heart: ENCSR820ACB; E11.5 liver: ENCSR785NEL; E11.5 hindbrain: ENCSR012YAB; E11.5 midbrain: ENCSR382RUC; E11.5 forebrain: ENCSR273UFV; E11.5 neural tube: ENCSR282YTE; E15.5 kidney: ENCSR023QZX; E15.5 intestine: ENCSR983JWA). A matrix file was then generated using all bigWig files along with the genomic coordinates obtained from the H3K4me3 clustering above (specifically the coordinates from the H3K4me3 negative cluster) using the computeMatrix function in deepTools. Once generated, the matrix file was then visualized using the plotHeatmap function, with a K-means cluster setting of 3, in deepTools.
 
-## GREAT analysis:
+##### GREAT analysis:
 
 To determine and plot the general distribution of sub-clusters and their genomic coordinates relative to transcriptional start site of genes, the GREAT algorithm (v4) (McLean et al., 2010) was used with default settings. GREAT was also utilized for identifying enriched biological pathways and gene sets within discrete sub-clusters, with the ‘Association rule settings’ limited to 100 kb distal in the ‘Basal plus extension’ setting.
 
-## Motif enrichment analysis
+### Motif enrichment analysis
 
 For motif enrichment analysis, genomic coordinates were supplied in BED file format to the HOMER software package (Heinz et al., 2010), using the “findMotifsGenome.pl” program and default settings.
 
-## Association of gene expression and ATAC-seq peaks
+### Association of gene expression and ATAC-seq peaks
 
 First, gene expression for the craniofacial ectoderm and mesenchyme, at E11.5, was calculated using our publicly available datasets profiling the facial ectoderm and mesenchyme from E10.5 through E12.5 (Hooper et al., 2020) (available through the Facebase Consortium website, https://www.facebase.org/, under the accession number FB00000867). Expression values for all 3 craniofacial prominences (e.g. mandibular, maxillary, frontonasal) were averaged independently for the ectoderm and mesenchyme, establishing an ‘expression value’ for each tissue compartment of the entire face at E11.5. Next, an ‘ectoderm enrichment’ value was calculated for each gene by taking the quotient of the ectoderm value divided by the mesenchyme value. Concurrently, ATAC-seq peaks from various sub-clusters were associated with a corresponding gene(s) using the GREAT algorithm and these associations were downloaded using the ‘Gene - > genomic regions association table’ function in GREAT. A ‘peak-associated profile’ was then ascribed for each gene (i.e. the type and number of sub-cluster peaks associated with each gene), allowing the binning of genes based on this profile. Bins of genes, and their associated ‘ectoderm enrichment’ value were then plotted in R using the empirical cumulative distribution function (stat_ecdf) in ggplot2 and significance calculated using a Kolmogorov-Smirnov test (ks.test).
 
-## Conservation analysis
+### Conservation analysis
 
 To determine the level of conversation for AP-2-dependent genomic elements (Figure 3E) the phastCons60way (scores for multiple alignments of 59 vertebrate genomes to the mouse genome) dataset was downloaded from the University of California, Santa Cruz (UCSC) genome browser in bigWig format (http://hgdownload.cse.ucsc.edu/goldenpath/mm10/phastCons60way/). A matrix file was then generated using the bigWig file along with the ‘AP-2 dependent’ genomic coordinates using the computeMatrix function in deepTools. Once generated, the matrix file was then visualized using the plotHeatmap function, with a K-means cluster setting of 2, in deepTools.
 
-## RNA-sequencing
+### RNA-sequencing
 
 For RNA-sequencing E10.5 facial prominences encompassing ectoderm and mesenchyme of the mandibular, maxillary, and nasal prominences were micro-dissected in ice cold PBS using insulin syringes and stored in RNA-later at –20 °C. Once sufficient EDKO (Crect; Tfap2aflox/null; Tfap2bflox/null) and control littermate samples lacking Crect (e.g. Tfap2aflox/+; Tfap2bflox/+) were identified for three biological replicates of each, tissue was removed from RNA-later and RNA harvested as previously described using the microRNA Purification Kit (Norgen Biotek) and following manufacturer’s protocol (Van Otterloo et al., 2018). Following elution, mRNA was further purified using the Qiagen RNAeasy Kit according to the manufacturer’s protocol. The quality of extracted mRNA was assessed using DNA Analysis ScreenTape (Agilent Technologies) prior to library production. Following validation of extracted mRNA, cDNA libraries were generated using the Illumina TruSeq Stranded mRNA Sample Prep Kit. All libraries passed quality control guidelines and were then sequenced using the Illumina HiSeq2500 platform and single-end reads (1 × 150) to a depth of ~15–25 × 106 reads per sample. To identify differentially expressed genes between control and mutant groups, we next utilized a standard bioinformatic pipeline for read filtering, mapping, gene expression quantification, and differential expression between groups (see below). Library construction and sequencing was carried out by the University of Colorado, Anschutz Medical Campus, Genomics and Microarray Core.
 
-## Bioinformatic processing of RNA-Seq data
+### Bioinformatic processing of RNA-Seq data
 
 Raw sequencing reads were demultiplexed and fastq files subsequently processed, as previously described (Van Otterloo et al., 2018). Briefly, reads were trimmed using the Java software package Trim Galore! (Babraham Bioinformatics, Babraham Institute, Cambridge, UK) and subsequently mapped to the Mm10 genome using the HISAT2 software package (Pertea et al., 2016) (both with default settings). Following mapping, RNA expression levels were generated using StringTie (Pertea et al., 2016) and differential expression computed between genotypes using CuffDiff2 (Trapnell et al., 2012), with a significance cut-off value of Q < 0.05 (FDR-corrected p-value). As a secondary approach, particularly for plotting differential gene expression differences for specific transcripts (e.g. Figure 7J), quantification of transcript abundance was calculated using kallisto (Bray et al., 2016) and then compared and visualized using sleuth (Pimentel et al., 2017).
 
-## Skeletal staining
+### Skeletal staining
 
 Concurrent staining of bone and cartilage in E18.5 embryos occurred as previously described (Van Otterloo et al., 2016). Briefly, following euthanasia and removal of skin and viscera, embryos were first dehydrated in 95% EtOH and then for ~2 days in 100% Acetone. Embryos were then incubated in a mixture of alcian blue, alizarin red, acetic acid (5%) and 70% EtOH, at 37 °C, for ~2–3 days. Samples were then placed in 2% KOH (~1–2 days) and then 1% KOH (~1–2 days) to allow for clearing of remaining soft tissue. Final skeletal preparations were stored at 4 °C in 20% glycerol. Staining of only cartilage in E15.5 embryos occurred as previously reported (Van Otterloo et al., 2016). Briefly, following fixation in Bouin’s at 4 °C overnight, embryos were washed with repeated changes of 70% EtOH and 0.1% NH4OH until all traces of Bouin’s coloration was removed. Tissue was permeabilized by two 1 hr washes in 5% acetic acid, followed by overnight incubation in a solution of methylene blue (0.05%) and acetic acid (5%). Next, embryos were washed twice with 5% acetic acid (~1 hr each wash) and then twice with 100% MeOH (~1 hr each wash). Finally, embryos were cleared with a solution consisting of one-part benzyl alcohol and two parts benzyl benzoate (BABB). A minimum of three embryos were analyzed per genotype.
 
-## In situ hybridization
+### In situ hybridization
 
 Embryos were fixed overnight in 4% PFA at 4 °C and then dehydrated through a graded series of MeOH:PBST washes and stored in 100% MeOH at –20 °C. Prior to hybridization they were rehydrated from MeOH into PBST as previously described (Simmons et al., 2014; Van Otterloo et al., 2016). Note, for some experiments, embryonic heads were bisected in a mid-sagittal plane, with either half being used with a unique anti-sense RNA probe. At a minimum, each in situ probe examined was run on three control and three EDKO mutant embryos. Antisense RNA probes were generated using a unique fragment that was cloned into a TOPO vector (Life Technologies, Grand Island, NY), using cDNA synthesized from mouse embryonic mRNA as a template. cDNA was generated using the SuperScript III First-Strand Synthesis System (Life Technologies, Grand Island, NY), as per manufacturer’s instructions. The Wnt3 probe is equivalent to nucleotides 674–1727 of NM_009521.2; Wnt9b to nucleotides 1158–2,195 of NM_011719; Kremen2 probe is equivalent to nucleotides 206–832 of NM_028416. Sequence verified plasmids were linearized and antisense probes synthesized using an appropriate DNA-dependent RNA polymerase (T7/T3/SP6) and DIG RNA labeling mix (Roche, Basel, Switzerland).
 
-## Cell proliferation analysis
+### Cell proliferation analysis
 
 To analyze cell proliferation in sectioned mouse embryos, E11.5 embryos were harvested and fixed overnight in 4% PFA at 4 °C. The following day, embryos were moved through a series of PBS and sucrose washes, followed by a mixture of sucrose and OCT. Embryos were then transferred to a plastic mold containing 100% OCT. After orientating the tissue samples in the plastic molds, the OCT ‘block’ was frozen on dry ice and stored at –80 °C. OCT blocks, containing control and mutant embryos, were then sectioned at 12 µM on a cryostat. Sectioned materials were stored at –80 °C. For immunolabeling, slides which contained the frontonasal, maxillary, or mandibular prominence were brought to room temperature, washed 4 × 15 min in PBST, blocked for 1 hr in PBST plus 3% milk. Sections were then incubated overnight in primary antibody (anti-p-Histone H3, sc-8656-R, Santa Cruz Biotechnology, rabbit polyclonal) diluted 1:250 in PBST at 4 °C in a humidified chamber. Following primary antibody incubation, samples were washed twice for 10  min in PBST at room temperature, followed by a 30  min wash in PBST/3% milk. Samples were then incubated for 1  hr with a secondary antibody (goat anti-rabbit IgG, Alexa Flour 488 conjugate, ThermoFisher Scientific/Invitrogen, R37116) and DRAQ5 (Abcam, ab108410) nuclear stain, diluted 1:250 and 1:5000, respectively, in PBST. Processed samples were imaged on a Leica TCS SP5 II confocal microscope and individual images taken for visualization. After acquiring an image of each prominence, the area of interest was outlined in Image-J and immuno-positive cells within that area were counted by an independent observer—who was blinded to the sample genotype—using the threshold and particle counter function. The number of positive cells/area of the ‘area of interest’ (e.g. the prominence) was then calculated for sections originating from three control and three EDKO embryos. An unpaired student T-test was used to assess statistical significance between groups.
 
-## ß-Galactosidase staining
+### ß-Galactosidase staining
 
 Whole-mount ß-galactosidase staining was conducted as previously described (Seberg et al., 2017). Briefly, embryos were fixed for ~30 min to 1 hr at RT in PBS containing 0.25% glutaraldehyde, washed 3 × 30 min in a ‘lacZ rinse buffer’ followed by enzymatic detection using a chromogenic substrate (1 mg/ml X-gal) diluted in a ‘lacZ staining solution’. Staining in embryos was developed at 37 °C until an optimal intensity was observed, embryos were then rinsed briefly in PBS, and then post-fixed in 4% PFA overnight. A minimum of three embryos were analyzed per genotype.
 
-## Real-time PCR
+### Real-time PCR
 
 Real-time reverse transcriptase PCR (RT-PCR) was carried out essentially as previously described (Van Otterloo et al., 2018). Briefly, embryos were harvested at the indicated stage and facial prominences dissected off for RNA isolation. Tissue was stored in RNAlater at −20 °C until genotyping was completed on samples. Following positive identification of genotypes, tissue was equilibrated at 4 °C for 1 day, RNAlater removed, and RNA extracted from tissue samples using the Rneasy Plus Mini Kit (Qiagen) along with the optional genomic DNA eliminator columns. A similar approach was used for tissue specific RT-PCR analysis. However, once facial prominences were isolated, samples were placed in a 24-well plate with 1 mL of 1 mg/ml Dispase II (in PBS). The samples were incubated with rocking at 37 °C for 30–40 min and then the facial ectoderm carefully dissected away from the mesenchyme into ice-cold PBS, as described (Li and Williams, 2013) and RNA extracted from tissue samples using the Rneasy Plus Mini Kit (Qiagen). Following RNA isolation and quantification, cDNA was generated using a set amount of RNA and the SuperScript III First-Strand Synthesis Kit (Invitrogen/ThermoFisher Scientific). Once cDNA was generated, quantitative real-time PCR analysis was conducted using a Bio-Rad CFX Connect instrument, Sybr Select Master Mix (Applied Biosystems, ThermoFisher Scientific) and 20 µl reactions (all reactions performed in triplicate). All primers were designed to target exons flanking (when available) large intronic sequences. Relative mRNA expression levels were quantified using the ΔΔCt method (Dussault and Pouliot, 2006) and an internal relative control (e.g. β-actin).
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Specimens were processed for electron microscopy according to standardized procedures. Briefly, the samples were fixed in glutaraldehyde, rinsed in sodium cacodylate buffer, and secondarily fixed in osmium tetroxide before dehydrating in a graduated ethanol series. Following dehydration, the samples were mounted on a SEM stub and sputter coated for 30 s using a gold/palladium target in a Lecia (Buffalo Grove, IL) EM ACE 200 Vacuum Coater. Scanning electron micrographs were acquired using a JEOL (Peabody, MA) JSM-6010LA electron microscope operated in high-vacuum mode at 20kV. A minimum of three embryos were analyzed per genotype.

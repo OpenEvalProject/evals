@@ -29,41 +29,53 @@ Benzodiazepines are positive allosteric modulators of GABA-ARs that are increasi
 
 ## Results
 
-## Characteristics of action potentials in dopaminergic neuron axons – main axons and striatal terminal axons
+### Characteristics of action potentials in dopaminergic neuron axons – main axons and striatal terminal axons
 
 Dopamine neurons of substantia nigra pars compacta form thin, unmyelinated axons that project to the dorsal striatum through the medial fiber bundle (MFB). To examine action potential firing in the main unbranching axon from adult mice, we used a horizontal brain slice preparation which preserved the connection between the cell bodies of SNc dopaminergic neurons and their MFB projecting axons. Dopaminergic neuron axons within the MFB were identified using the fluorescent marker proteins GFP or td-Tomato from TH-GFP or DAT-CRE x Ai9 mice, respectively. Using these optimized brain slices in combination with marker mice enabled us to record propagating action potentials from the main axon at distances of greater than two millimeters from the soma (Figure 1A).
 
-To examine the characteristics of axonal action potentials, we made whole-cell recordings from the cut ends of axons (blebs) located on the surface of the slice (Hu and Shu, 2012; Hu et al., 2009; Shu et al., 2007). We found that many axons exhibited spontaneous firing activity with median spontaneous rates that were nearly identical to somatic pacemaker rates (Figure 1B; axon: x~ = 3.3 Hz, n=41; soma: x~ = 2.75 Hz, n=10; Mann-Whitney U test, U=161, p=0.298), consistent with the slow, rhythmic firing associated with dopaminergic neurons (Grace and Bunney, 1984). Axonal action potentials had narrower half-widths (Figure 1C and D; axon: x~ = 0.89 ms n=27, soma: x~ = 1.24 ms n=10; Mann-Whitney U=59, p=0.008 two-tailed) and a more hyperpolarized threshold relative to somatic spikes (Figure 1E; axon: x~ = -56 mV, n=26; soma: x~ = -41.7 mV n=10; U=9, p<0.0001).
+![Figure 1.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig1-v1.jpg)
 
-In the axon, the voltage trajectory between action potentials was shallow in slope (avg. dV/dt at middle 50% of the interspike interval, axon: x~ = 9.24 mV/s, n=27), reaching a minimum at the spike trough with little depolarization before reaching threshold. By contrast, the somatic interspike voltage exhibited a significantly greater slope on average (Figure 1F; avg. dV/dt, soma: x~ = 49.9 mV/s n=10; U=22, p<0.0001), similar to previously reported values (Khaliq and Bean, 2008). A plot of the slope of the interspike voltage against the axonal recording distance followed a roughly exponential relationship with the interspike slope, such that it becomes more shallow with increasing recording distance (Figure 1G; single exponential fit, length constant, λ=211 µm, n=27; R2=0.70; data were fit with a single exponential significantly better than with a line: F(1,24)=22.1, p<0.0001). Axonal recordings at distances greater than two length constants from the soma (> 422 µm) exhibited little sub-threshold depolarization between action potentials (x~=7.3 mV/s, n=13). In sum, action potentials recorded in the main axons of dopaminergic neurons are narrow, with voltage thresholds that are negative relative to somatic spikes.
+**Figure 1.:** (A) Main axon recorded in whole-cell mode with a connected soma (filled with neurobiotin, imaged with streptavidin-Cy5, slice cleared with CUBIC, red); GFP driven by the TH promoter (green). (B) Trace of spontaneous action potentials recorded from a dopaminergic axon (left). Firing rate from somatic (n = 10) and axonal recordings (n = 41; p=0.298) (right). (C) Overlay of an axonal and somatic spike (left). Phase plot for a somatic and axonal action potential (right). (D) Half-peak widths from somatic (n = 10) and axonal (n = 27) APs (**p=0.008). (E) AP thresholds recorded from soma (n = 10) and axons (n = 26)(****p<0.0001). (F) Example traces of interspike voltage from obtained from axonal (blue) and somatic (gray) recordings. (G) Slope of interspike voltage plotted against recording distance between axonal recording site (blue) and soma (gray). (H) Post-hoc reconstruction of a patched striatal axon. (I) Trace of subthreshold depolarization (left) and axonal AP (right) evoked by 250 pA and 275 pA current injection. (J) Input resistance values for main axon (n = 28) and striatal axons (n = 74) APs (****p<0.0001). (K) Comparison of the mean interspike voltage between soma (n = 10) main axon (n = 21) and striatal axon, which was measured as the average resting membrane potential (n = 74) (*p=0.032; ***p=0.0007; ns p=0.87).
 
-Within the dorsal striatum the axons of dopaminergic neurons branch extensively while progressively decreasing in diameter (Matsuda et al., 2009), which raises the question of how the properties of striatal terminal axons compare to those of the main axon. Using perforated-patch recordings to record from axon blebs, we found that terminal axons have a higher input resistance (Figure 1J; x~ = 1.83 GΩ, n=74) than the main axon (x~ = 599 MΩ, n=28, U=254, p<0.0001 two-tailed). The interspike membrane potential in the striatal dopamine neuron axon was hyperpolarized relative to the main axon, but both axonal compartments were more hyperpolarized relative to the average interspike voltage in the soma (Figure 1K; terminal axon: x~ = -71 mV, main axon: x~ = -68.9 mV, soma=-62.2 mV; Kruskal-Wallis H test χ2(2)=13.9, p=0.001; terminal vs. main p=0.87; terminal vs. soma, p=0.0007; soma vs. main, p=0.032). Together, these results show that the main and terminal axons of dopamine neurons are high input resistance compartments in which action potentials are evoked from relatively hyperpolarized interspike voltages.
+To examine the characteristics of axonal action potentials, we made whole-cell recordings from the cut ends of axons (blebs) located on the surface of the slice (Hu and Shu, 2012; Hu et al., 2009; Shu et al., 2007). We found that many axons exhibited spontaneous firing activity with median spontaneous rates that were nearly identical to somatic pacemaker rates (Figure 1B; axon: $x~$ = 3.3 Hz, n=41; soma: $x~$ = 2.75 Hz, n=10; Mann-Whitney U test, U=161, p=0.298), consistent with the slow, rhythmic firing associated with dopaminergic neurons (Grace and Bunney, 1984). Axonal action potentials had narrower half-widths (Figure 1C and D; axon: $x~$ = 0.89 ms n=27, soma: $x~$ = 1.24 ms n=10; Mann-Whitney U=59, p=0.008 two-tailed) and a more hyperpolarized threshold relative to somatic spikes (Figure 1E; axon: $x~$ = -56 mV, n=26; soma: $x~$ = -41.7 mV n=10; U=9, p<0.0001).
 
-## Identification of GABA-A receptor-mediated currents on dopaminergic neuron axons
+In the axon, the voltage trajectory between action potentials was shallow in slope (avg. dV/dt at middle 50% of the interspike interval, axon: $x~$ = 9.24 mV/s, n=27), reaching a minimum at the spike trough with little depolarization before reaching threshold. By contrast, the somatic interspike voltage exhibited a significantly greater slope on average (Figure 1F; avg. dV/dt, soma: $x~$ = 49.9 mV/s n=10; U=22, p<0.0001), similar to previously reported values (Khaliq and Bean, 2008). A plot of the slope of the interspike voltage against the axonal recording distance followed a roughly exponential relationship with the interspike slope, such that it becomes more shallow with increasing recording distance (Figure 1G; single exponential fit, length constant, λ=211 µm, n=27; R2=0.70; data were fit with a single exponential significantly better than with a line: F(1,24)=22.1, p<0.0001). Axonal recordings at distances greater than two length constants from the soma (> 422 µm) exhibited little sub-threshold depolarization between action potentials ($x~$=7.3 mV/s, n=13). In sum, action potentials recorded in the main axons of dopaminergic neurons are narrow, with voltage thresholds that are negative relative to somatic spikes.
+
+Within the dorsal striatum the axons of dopaminergic neurons branch extensively while progressively decreasing in diameter (Matsuda et al., 2009), which raises the question of how the properties of striatal terminal axons compare to those of the main axon. Using perforated-patch recordings to record from axon blebs, we found that terminal axons have a higher input resistance (Figure 1J; $x~$ = 1.83 GΩ, n=74) than the main axon ($x~$ = 599 MΩ, n=28, U=254, p<0.0001 two-tailed). The interspike membrane potential in the striatal dopamine neuron axon was hyperpolarized relative to the main axon, but both axonal compartments were more hyperpolarized relative to the average interspike voltage in the soma (Figure 1K; terminal axon: $x~$ = -71 mV, main axon: $x~$ = -68.9 mV, soma=-62.2 mV; Kruskal-Wallis H test χ2(2)=13.9, p=0.001; terminal vs. main p=0.87; terminal vs. soma, p=0.0007; soma vs. main, p=0.032). Together, these results show that the main and terminal axons of dopamine neurons are high input resistance compartments in which action potentials are evoked from relatively hyperpolarized interspike voltages.
+
+### Identification of GABA-A receptor-mediated currents on dopaminergic neuron axons
 
 Past work has shown that GABA-A receptors modulate dopamine release, but evidence that GABA-A receptors are located on dopaminergic neuron axons has been indirect. To test for a GABA-A receptor-mediated conductance in the axon, a second pipette was placed 30–60 µm from the axonal recording site on the main axon and GABA (300 µM-1 mM) was locally applied by a brief (80–300 ms) pressure ejection (Figure 2A,B). GABA puff resulted in depolarization of the axonal membrane potential by an average of 4.86 ± 0.66 mV (n = 9), which was completely blocked by the GABA-A antagonist picrotoxin (Figure 2C; 100 µM; t(8)=6.1, p=0.0003). To verify the direct nature of these currents, we tested the effect of increasing the concentration of intracellular chloride on the GABA-mediated depolarization. We found that filling axons with an internal solution containing high chloride resulted in GABA-mediated depolarizations that were 2.76-fold larger in amplitude (Figure 2D; low Cl-=4.74 ± 0.66 mV, high Cl-=13.1 ± 2.44 mV; t(13)=4.34, p=0.0008). These results provide direct evidence for the presence of functional GABA-A receptors on the axons dopaminergic neurons.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic of experimental setup. (B) Example traces of pressure ejection of GABA onto the axon in control (black) and after application of picrotoxin (red). (C) Peak of amplitude of GABA-evoked depolarization in control and after picrotoxin (n = 9; ***p=0.0003). (D) Peak amplitude of GABA-evoked depolarization recorded with low (n = 5) or high (n = 10) chloride internal solutions (***p=0.0008). (E) Example traces overlaid from three different current injections. Timing of muscimol puff application indicated by arrow. (F) Peak of the muscimol-evoked depolarization plotted against the average interspike voltage. Fitted line was used to determine the reversal potential. (G) Paired values indicating mean interspike voltage (Vinterspike) and muscimol reversal potential (Emusc) in individual axons (n = 15; ****p<0.0001).  Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic of experimental setup. (B) Example traces of pressure ejection of GABA onto the axon in control (black) and after application of picrotoxin (red). (C) Peak of amplitude of GABA-evoked depolarization in control and after picrotoxin (n = 9; ***p=0.0003). (D) Peak amplitude of GABA-evoked depolarization recorded with low (n = 5) or high (n = 10) chloride internal solutions (***p=0.0008). (E) Example traces overlaid from three different current injections. Timing of muscimol puff application indicated by arrow. (F) Peak of the muscimol-evoked depolarization plotted against the average interspike voltage. Fitted line was used to determine the reversal potential. (G) Paired values indicating mean interspike voltage (Vinterspike) and muscimol reversal potential (Emusc) in individual axons (n = 15; ****p<0.0001).
 
-## Axonal GABA-A receptors are depolarizing
+### Axonal GABA-A receptors are depolarizing
 
 The physiological function of GABA-A receptors is closely tied to its reversal potential, which has been shown to vary in axons across cell types from depolarizing (Pugh and Jahr, 2011; Ruiz et al., 2010; Szabadics et al., 2006) to hyperpolarizing (Rinetti-Vargas et al., 2017; Xia et al., 2014). Therefore, we determined the GABA-A reversal potential in the main dopaminergic neuron axons using perforated-patch recordings in which the intracellular chloride concentration is preserved. While holding the axon at different membrane voltages with constant current, we applied single puffs of the GABA-A selective agonist muscimol and then measured the amplitude of the resulting muscimol-evoked membrane depolarization (Figure 2E–G). Our analysis showed that the average GABA-A reversal potential in dopamine neuron axons was −56.3 ± 2.38 mV (n = 15). Importantly, we found in all recorded axons that the reversal potential of axonal GABA-A current was always depolarized relative to the average interspike voltage of the axon (Figure 2E–G; Vinterspike=-68 ± 1.75 mV, p<0.0001).
 
-## GABA-A activation inhibits striatal dopamine release
+### GABA-A activation inhibits striatal dopamine release
 
 Based on our finding that GABA-A receptors are depolarizing, we reasoned that activation of axonal GABA-receptors should enhance dopamine release. Therefore, we tested the effect of axonal GABA-A receptors on dopamine release using dLight 1.2 to image striatal dopamine. A stimulating electrode was placed at the caudal end of the striatum, and a burst of stimulations were elicited with a bipolar electrode (Figure 3A–C). Contrary to our expectation, we found that bath perfusion of muscimol (10 µM) depressed dopamine release by an average of 38.2 ± 6.6% (Figure 3C; RM 1-way ANOVA F(2, 26)=16.5; Bonferroni’s post-hoc t(8)=5.8, p=0.0008). While we observed a large inhibition in evoked dopamine release, we saw no change in the pre-stimulation (baseline) dLight signal following muscimol perfusion suggesting that muscimol does not alter background striatal dopamine (Figure 3—figure supplement 1).
 
-Past work on parallel fibers in the cerebellum has shown that GABA produces biphasic effects on axonal excitability with low intensity GABA uncaging (Khatri et al., 2019) or transient GABA-A receptor activation within a 10-20 second time window being more likely to enhance release while stronger or longer muscimol application being more likely to inhibit release (Stell, 2011). To test this hypothesis on dopamine neuron axons, we activated GABA-A receptors transiently with a puffer pipette (10 µM, 1-3 s puff). Dopamine release was evoked selectively from dopaminergic fibers in dorsal striatum slices using optical activation of a channelrhodopsin variant, CoChR. Extracellular dopamine was monitored using fast-scan cyclic voltammetry. Surprisingly, we found that puff application of muscimol still resulted in inhibition of dopamine release from axons within the dorsal striatum by an average of 19.1 ± 4.2% (Figure 3D–F; control, x-=94.7%; muscimol, x-=75.7%; F(1, 6)=20.7, p=0.004; n=7 slices). Together, these results show that both transient and steady-state receptor activation of axonal GABA-A receptors results in inhibition of striatal dopamine release.
+![Figure 3.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig3-v1.jpg)
 
-## Axonal GABA-A receptors inhibit through a combination of voltage-gated sodium channel inactivation and shunting
+**Figure 3.:** (A–C) Imaging dopamine release in the dorsal medial striatum using dLight 1.2. (A) Experimental setup diagram. (B) Example traces of bulk dopamine release following electrical stimulation in control (black) and during muscimol bath application (green). (C) Group data showing the time course of muscimol application on dopamine release peak amplitude measured distal to the site of stimulation (average 1054 µm, n = 9; p=0.0008). (D–F) Voltammetry experiments using opsin-evoked dopamine release (DAT-Cre injected with CoChR in SNc). (D) Example voltammetry signal of dopamine in control (black) and during muscimol puff (green). Inset: example current-voltage plot of FSCV signal. (E) Time course of opsin-evoked dopamine release in an example experiment. (F) Summary data showing the main effect of muscimol puff on dopamine release measured with voltammetry. Closed symbols indicate individual experiments and open symbols indicate averaged data (p=0.004; n = 7). All experiments in (A–C) were done in the presence of hexamethonium chloride (200 µM), sulpiride (1 µM), atropine (30 nM), and CGP 55845 (200 nM) to block nAChRs, D2Rs, mAChRs, and GABA-BRs respectively.
 
-To better understand how axonal GABA-A receptors inhibit dopamine release, we tested the effect of GABA-A receptor activation on axonal action potential waveforms. As shown in Figure 4B, the most prominent effect of GABA-A receptor activation was a shortening of the action potential peak. Although the effect of GABA on spike height varied between axons, we found that the peak was shortened on average by 7.74 ± 1.83 mV (avg. peak amplitude; control, x- = 12.5 ± 4.72 mV; GABA, x- = 4.77 ± 5.22 mV; 2-way ANOVA Bonferroni’s post-hoc t(12)=5.75; n=7, p=0.0002). This effect was blocked completely by picrotoxin (peak reduction in picrotoxin; control peak, x- = -1.86 ± 5.34 mV, GABA peak x- = -3.88 ± 5.02 mV; 2-way ANOVA Bonferroni’s post-hoc t(12)=1.49; n=7, p=0.32). We took advantage of the variability between axons in their responses to GABA in order to assess the relationship between the GABA-A mediated depolarization and spike height. Plotting data from 14 axon recordings, we found that the reduction in spike height correlated linearly with the GABA-mediated depolarization with a slope of -1.50 mV/mV (95% CI: -2.05 to -0.94; R2=0.74, n=14; Figure 4D, fit to green symbols). Therefore, larger GABA-induced subthreshold depolarizations result in shorter axonal action potentials.
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bath perfusion of muscimol did not significantly alter the pre-stimulation (baseline) dLight signal.
+
+Past work on parallel fibers in the cerebellum has shown that GABA produces biphasic effects on axonal excitability with low intensity GABA uncaging (Khatri et al., 2019) or transient GABA-A receptor activation within a 10-20 second time window being more likely to enhance release while stronger or longer muscimol application being more likely to inhibit release (Stell, 2011). To test this hypothesis on dopamine neuron axons, we activated GABA-A receptors transiently with a puffer pipette (10 µM, 1-3 s puff). Dopamine release was evoked selectively from dopaminergic fibers in dorsal striatum slices using optical activation of a channelrhodopsin variant, CoChR. Extracellular dopamine was monitored using fast-scan cyclic voltammetry. Surprisingly, we found that puff application of muscimol still resulted in inhibition of dopamine release from axons within the dorsal striatum by an average of 19.1 ± 4.2% (Figure 3D–F; control, $x-$=94.7%; muscimol, $x-$=75.7%; F(1, 6)=20.7, p=0.004; n=7 slices). Together, these results show that both transient and steady-state receptor activation of axonal GABA-A receptors results in inhibition of striatal dopamine release.
+
+### Axonal GABA-A receptors inhibit through a combination of voltage-gated sodium channel inactivation and shunting
+
+To better understand how axonal GABA-A receptors inhibit dopamine release, we tested the effect of GABA-A receptor activation on axonal action potential waveforms. As shown in Figure 4B, the most prominent effect of GABA-A receptor activation was a shortening of the action potential peak. Although the effect of GABA on spike height varied between axons, we found that the peak was shortened on average by 7.74 ± 1.83 mV (avg. peak amplitude; control, $x-$ = 12.5 ± 4.72 mV; GABA, $x-$ = 4.77 ± 5.22 mV; 2-way ANOVA Bonferroni’s post-hoc t(12)=5.75; n=7, p=0.0002). This effect was blocked completely by picrotoxin (peak reduction in picrotoxin; control peak, $x-$ = -1.86 ± 5.34 mV, GABA peak $x-$ = -3.88 ± 5.02 mV; 2-way ANOVA Bonferroni’s post-hoc t(12)=1.49; n=7, p=0.32). We took advantage of the variability between axons in their responses to GABA in order to assess the relationship between the GABA-A mediated depolarization and spike height. Plotting data from 14 axon recordings, we found that the reduction in spike height correlated linearly with the GABA-mediated depolarization with a slope of -1.50 mV/mV (95% CI: -2.05 to -0.94; R2=0.74, n=14; Figure 4D, fit to green symbols). Therefore, larger GABA-induced subthreshold depolarizations result in shorter axonal action potentials.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig4-v1.jpg)
 
-**Figure 4.:** (A) Schematic of the experimental setup for this figure. Whole-cell recordings were made from the main, connected, axons of dopamine neurons. (B) Example axonal recording showing the effect of a brief GABA pressure ejection. Control (gray) and GABA (green) traces magnified. B, right: Control action potential in black and GABA-affected action potential in green. (C) Similar experiment to B, except demonstrating the effect current injection on spike properties as opposed to GABA application. Purple line on AP upstroke denotes area of measurement for rate of rise, arrows denoting measurement of change in AP peak and change in membrane potential. (D) Effect of the amount of baseline depolarization on the decrease in peak AP amplitude, compared between GABA (green; n = 14) and current injection (tan; n = 15) (*p=0.047). (E) Effect of the amount of baseline depolarization on the normalized decrease in rate of AP upstroke, compared between GABA (green; n = 11) and current injection (tan; n = 10) (ns p=0.564). (F) A plot showing the relationship between decrease in rate of AP rise and decrease in AP peak, for injection of current (brown; n = 8) and a brief pressure ejection of GABA (green; n = 11). (G) Example axonal recording showing spontaneously firing action potentials before the application of TTX (top, black) and after TTX bath perfusion, just before the action potentials cease (bottom, red), inset: Example phase plots for axonal action potentials before (black) and after (red) TTX perfusion. (H) Averaged data showing the effect of TTX on action potential peak amplitude (graphs were aligned to the beginning of TTX effect, n = 5). The decrease in peak amplitude is plotted in I. (I) Data from five individual axons showing the effect of TTX wash-in on the change in rate of action potential rise, and the change in the peak of the action potential. Each dot in data from an individual action potential, normalized to just before the perfusion of TTX. In red is the average effect.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Schematic of the experimental setup for this figure. Whole-cell recordings were made from the main, connected, axons of dopamine neurons. (B) Example axonal recording showing the effect of a brief GABA pressure ejection. Control (gray) and GABA (green) traces magnified. B, right: Control action potential in black and GABA-affected action potential in green. (C) Similar experiment to B, except demonstrating the effect current injection on spike properties as opposed to GABA application. Purple line on AP upstroke denotes area of measurement for rate of rise, arrows denoting measurement of change in AP peak and change in membrane potential. (D) Effect of the amount of baseline depolarization on the decrease in peak AP amplitude, compared between GABA (green; n = 14) and current injection (tan; n = 15) (*p=0.047). (E) Effect of the amount of baseline depolarization on the normalized decrease in rate of AP upstroke, compared between GABA (green; n = 11) and current injection (tan; n = 10) (ns p=0.564). (F) A plot showing the relationship between decrease in rate of AP rise and decrease in AP peak, for injection of current (brown; n = 8) and a brief pressure ejection of GABA (green; n = 11). (G) Example axonal recording showing spontaneously firing action potentials before the application of TTX (top, black) and after TTX bath perfusion, just before the action potentials cease (bottom, red), inset: Example phase plots for axonal action potentials before (black) and after (red) TTX perfusion. (H) Averaged data showing the effect of TTX on action potential peak amplitude (graphs were aligned to the beginning of TTX effect, n = 5). The decrease in peak amplitude is plotted in I. (I) Data from five individual axons showing the effect of TTX wash-in on the change in rate of action potential rise, and the change in the peak of the action potential. Each dot in data from an individual action potential, normalized to just before the perfusion of TTX. In red is the average effect.
 
 The GABA-A mediated reduction of spike amplitude likely involves two main processes: inactivation of axonal sodium channels due to GABA-induced depolarization (Rama et al., 2015) and shunting inhibition (Xia et al., 2014; Cattaert and El Manira, 1999). To dissect the contribution from these two processes, we compared the GABA puff experiments in Figure 4B to separate experiments where depolarization was evoked instead by direct current injection (Figure 4C). We reasoned that the effects of current injection-evoked depolarization on spike height should be dominated by sodium channel inactivation, whereas shunting inhibition should be minimal under these conditions. Plotting the spike height against current injection-evoked depolarization in Figure 4D (brown symbols), we found that direct current injections were significantly less effective at reducing spike peak amplitudes as compared to GABA mediated depolarization, shown by a shallower slope of best-fit lines (Figure 4D; GABA-A activation: −1.50 mV/mV, 95% CI: −2.05 to −0.94; direct depolarization: −0.77 mV/mV, 95% CI: −0.96 to −0.59; F(1,25)=4.39, n = 29, p=0.047). We next analyzed the rate of the rise of the action potential (dV/dt) as it reflects the maximal spike-evoked sodium current. By contrast, we found little difference in the effect of GABA-evoked and direct current injection-evoked depolarization on the rate of rise of axonal action potentials (dV/dt). Plots in Figure 4E show that both manipulations slowed the rate of rise of action potentials and shared similar dependences on subthreshold depolarization (slope of linear fits; GABA-A activation: −3.78 %/mV 95% CI: −5.46 to −2.10, direct depolarization: −3.20 %/mV, 95% CI: −4.57 to −1.83; F(1,17) = 0.35, n = 21, p=0.56).
 
@@ -73,17 +85,17 @@ To experimentally test the effect of sodium channel inhibition on axonal action 
 
 These data show that GABA-A receptors act mechanistically through both depolarization of the axonal membrane as well as a change in the input resistance that leads to shunting inhibition. These two effects combine to slow and shorten dopaminergic action potentials.
 
-## GABA-A receptor-mediated inhibition of axonal calcium signals increases with propagation distance
+### GABA-A receptor-mediated inhibition of axonal calcium signals increases with propagation distance
 
 Our data show a clear inhibitory effect of axonal GABA-A conductance on dopamine release that differs from the excitatory actions of GABA-A receptors observed in most central axons. As a possible explanation for their distinctive responses, dopamine neuron axons in the dorsal striatum are distinguished by their very thin diameters and highly branched structure (Matsuda et al., 2009). Under some circumstances, this feature may present a challenge for spike propagation following the GABA-A increase in shunting inhibition.
 
-We therefore set out to determine the influence of GABA-A receptors on signals that have propagated through the extreme architecture of the dopaminergic neuron terminals. To test this, a burst of activity was evoked in axons using a bipolar electrode placed in the caudal striatum (closer to the main trunk of the axon) and axonal calcium signals were imaged distal to the site of stimulation in the rostral striatum (x- ~ 690 ± 73.1 µm, Figure 5A–C). We found that calcium signals evoked by electrical stimulation in the caudal striatum and imaged distally in the rostral striatum were significantly inhibited by GABA-A receptor activation (Figure 5C, muscimol x-=36.4 ± 14.3% of baseline; Šidák’s post-hoc test t(4)=4.4; p=0.034; n=5 slices). By contrast, calcium signals evoked by local stimulation (x- ~ 100 ± 29.2 µm between stimulator and imaging site, Figure 5D–I) were not significantly affected by bath perfusion of muscimol (10 µM). This was true for axonal calcium signals evoked by local stimulation of the caudal striatum (Figure 5F, muscimol x-=95.0 ± 8.4% of baseline; Šidák’s post-hoc test t(4)=0.52; p=0.95; n=5 slices) and the rostral striatum (Figure 5I, muscimol x-=96.1 ± 3.2% of baseline; Šidák’s post-hoc test t(7)=1.2; p=0.61; n=8 slices). Therefore, these data show that calcium signals in dopaminergic neuron axons of the striatum are most greatly affected by GABA-A receptor activation under conditions involving action potentials that propagate long distances throughout the axonal arbor.
+We therefore set out to determine the influence of GABA-A receptors on signals that have propagated through the extreme architecture of the dopaminergic neuron terminals. To test this, a burst of activity was evoked in axons using a bipolar electrode placed in the caudal striatum (closer to the main trunk of the axon) and axonal calcium signals were imaged distal to the site of stimulation in the rostral striatum ($x-$ ~ 690 ± 73.1 µm, Figure 5A–C). We found that calcium signals evoked by electrical stimulation in the caudal striatum and imaged distally in the rostral striatum were significantly inhibited by GABA-A receptor activation (Figure 5C, muscimol $x-$=36.4 ± 14.3% of baseline; Šidák’s post-hoc test t(4)=4.4; p=0.034; n=5 slices). By contrast, calcium signals evoked by local stimulation ($x-$ ~ 100 ± 29.2 µm between stimulator and imaging site, Figure 5D–I) were not significantly affected by bath perfusion of muscimol (10 µM). This was true for axonal calcium signals evoked by local stimulation of the caudal striatum (Figure 5F, muscimol $x-$=95.0 ± 8.4% of baseline; Šidák’s post-hoc test t(4)=0.52; p=0.95; n=5 slices) and the rostral striatum (Figure 5I, muscimol $x-$=96.1 ± 3.2% of baseline; Šidák’s post-hoc test t(7)=1.2; p=0.61; n=8 slices). Therefore, these data show that calcium signals in dopaminergic neuron axons of the striatum are most greatly affected by GABA-A receptor activation under conditions involving action potentials that propagate long distances throughout the axonal arbor.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig5-v1.jpg)
 
-**Figure 5.:** Stimulation-evoked calcium signals in dopamine neuron axons imaged either at the site of stimulation, or distal to the site of stimulation. (A) Experimental setup diagram. (B) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (C) Time course showing a significant effect of bath applied muscimol for GCaMP6f signals imaged in the rostral striatum, stimulated caudally (~690 ± 73.1 µm between stimulation and imaging, n = 5; *p=0.034). (D) Experimental setup diagram. E) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (F) Time course showing no significant effect of bath applied muscimol for GCaMP6f signals imaged near to the site of stimulation in the caudal striatum (~100 ± 29.2 µm between stimulation and recording, n = 5, p=0.95). (G) Experimental setup diagram. H) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (I) Time course showing no significant effect of bath applied muscimol for GCaMP6f signals imaged near to the site of stimulation in the rostral striatum (<100 µm between stimulation and recording, n = 8, p=0.61). In these experiments, Hexamethonium Chloride (200 µM; Figure 6A–F) or DhβE (1 µM; Figure 6G–I), sulpiride (1 µM), atropine (30 nM), and CGP 55845 (200 nM) were used to block nAChRs, D2Rs, mAChRs, and GABA-BRs respectively.  Figure 5—source data 1.Figure 5.
+**Figure 5.:** Stimulation-evoked calcium signals in dopamine neuron axons imaged either at the site of stimulation, or distal to the site of stimulation. (A) Experimental setup diagram. (B) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (C) Time course showing a significant effect of bath applied muscimol for GCaMP6f signals imaged in the rostral striatum, stimulated caudally (~690 ± 73.1 µm between stimulation and imaging, n = 5; *p=0.034). (D) Experimental setup diagram. E) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (F) Time course showing no significant effect of bath applied muscimol for GCaMP6f signals imaged near to the site of stimulation in the caudal striatum (~100 ± 29.2 µm between stimulation and recording, n = 5, p=0.95). (G) Experimental setup diagram. H) Stimulation-evoked GCaMP6f signals in control (black) and in response to muscimol bath application (green). (I) Time course showing no significant effect of bath applied muscimol for GCaMP6f signals imaged near to the site of stimulation in the rostral striatum (<100 µm between stimulation and recording, n = 8, p=0.61). In these experiments, Hexamethonium Chloride (200 µM; Figure 6A–F) or DhβE (1 µM; Figure 6G–I), sulpiride (1 µM), atropine (30 nM), and CGP 55845 (200 nM) were used to block nAChRs, D2Rs, mAChRs, and GABA-BRs respectively.
 
-## Benzodiazepines enhance tonic GABA activity on dopamine neuron axons
+### Benzodiazepines enhance tonic GABA activity on dopamine neuron axons
 
 Benzodiazepines constitute a class of allosteric modulators that act on GABA-A receptors to enhance GABA-mediated currents. Much is known about the somatic mechanisms regulating the effects of benzodiazepines in dopamine neurons (Reynolds et al., 2012; Tan et al., 2010; Tan et al., 2011); but less is known about direct axonal effects of these drugs. Studies examining the effect of benzodiazepines on dopamine release showed these effects are likely mediated through GABA-B receptors, and indirectly involved GABA-A receptors on non-dopaminergic neurons (Brodnik et al., 2019). We therefore sought to determine the contribution of GABA-A receptors on dopamine neuron axons to the effects of diazepam.
 
@@ -93,13 +105,21 @@ Next, we tested the effect of the benzodiazepine diazepam on modulating axonal G
 
 To understand the mechanism behind this inhibition in the dopamine neuron axons we performed direct recordings from the axon. First, we sought to investigate whether these axonal GABA-A receptors are directly modulated by diazepam. For this experiment we puffed on muscimol in a voltage-clamp recording of the main axon, and then bath perfused diazepam (10 µM). Diazepam dramatically increased the amplitude of the muscimol-evoked current (Figure 6C,E). We also tested the effect of diazepam on the input resistance by giving a small voltage step (Figure 6C). We found that, in the main axon, there was no effect of diazepam perfusion on the axonal input resistance (Figure 6D). This set of experiments shows that diazepam directly targets axonal GABA-A receptors on dopamine neurons, but in the medial fiber bundle GABA-A agonists must be exogenously applied to observe the effects of the drug.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig6-v1.jpg)
+
+**Figure 6.:** (A) Example traces of imaged dopamine release from control (black) and diazepam bath perfusion (green) conditions. Right: time course showing the effect of diazepam bath perfusion on peak dopamine release (n = 5). (B) Example traces of imaged dopamine release from control (black) and diazepam bath perfusion (green) conditions with nAChRs blocked. Right: Group effect of diazepam on peak dopamine release (n = 6; *p=0.044). GABA-A Antagonists picrotoxin (100 µM) and gabazine (10 µM) were perfused at the end of each experiment. (C) Example step depolarization (left) and muscimol pressure ejection (right) recorded in the main axon in control (black) and diazepam bath application (green). Step depolarization and muscimol puff were performed within the same cell. (D) Time course showing the effect of diazepam bath application on the normalized input resistance of the main axon in the medial forebrain bundle (n = 5). (E) Time course showing the effect of diazepam bath application on the normalized muscimol-evoked peak current (n = 6). (F) Example current injections to test axonal input resistance in control (black) diazepam (green) and GABA-A antagonists picrotoxin and gabazine (red) conditions. (G) Time course of diazepam bath perfusion followed by GABA-A antagonist bath perfusion on the normalized axonal input resistance. Hexamethonium chloride (200 µM), sulpiride (1 µM), atropine (30 nM), and CGP 55845 (200 nM) were used to block nAChRs, D2Rs, mAChRs, and GABA-BRs respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55729/elife-55729-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) GABA-A and GABA-B antagonists significantly increased optically-evoked dopamine release measured with voltammetry. Inset: example CV plot for dopamine release. (B) Left: Example dopamine transient in control (black) and in GZ/CGP (red). Right: Plot of the average increase in peak optically-evoked dopamine release (each point is one slice; n=10, p = 0.015). (C) Bath perfusion of the GABA-A antagonist gabazine (10 µM) did not significantly alter dopamine release as measured with dLight. (D) Comparison between the average baseline dopamine release (normalized) to the average final three events in gabazine. There was no significant difference between the baseline and gabazine ($x-$=126 ± 14.3% of baseline) conditions (two-tailed paired t-test, t(10)=1.8; p=0.10; n=11). Experiment was performed in the presence of CGP (200 nM), sulpiride (1 µM), atropine (30 nM), and DHβE (1 µM).
+
 Given the effect of diazepam on dopamine release reported above, we hypothesized that diazepam might be acting in concert with the striatal GABA tone to modulate dopamine neuron axons. When we recorded from striatal dopamine neuron axons and bath perfused diazepam, we found that diazepam decreased the input resistance of the axon in the striatum by an average of 22.7 ± 6.2% (Figure 6F,G), without any additional application of a GABA agonist. These results indicate a tonic level of GABA-A receptor activity that is enhanced by the application of diazepam, which decreases the input resistance of dopamine neuron axons and potentiates shunting inhibition. Thus, our data provide direct evidence that diazepam targets axonal GABA-A receptors to inhibit the release of striatal dopamine.
 
 ## Discussion
 
 Here we examine the influence of GABA-A receptors on the excitability of dopaminergic neuron axons and the release of dopamine in the dorsal striatum. To test this, we performed whole-cell and perforated-patch recordings from the main axon located within the medial forebrain bundle as well as in the branched, signaling axon located in the striatum. Using this approach, we provide direct evidence that GABA-A receptors are present on the axons of midbrain dopaminergic neurons. We show that these receptors modulate propagation of action potentials in the axon through a combination of sodium channel inactivation and shunting inhibition. Finally, we demonstrate that diazepam (Valium), a commonly prescribed broad-spectrum benzodiazepine, enhances axonal GABA-A receptors, resulting in shunting and subsequent inhibition of dopamine release. Together, these experiments reveal the mechanisms of GABA-A receptor modulation of dopamine release and provide new insight into the role of axonal GABA-A receptors in the actions of benzodiazepines in the striatum.
 
-## Action potential firing in midbrain dopaminergic neuron axons
+### Action potential firing in midbrain dopaminergic neuron axons
 
 The shape of the axonal action potential and the pre-spike membrane potential are critical determinants of neurotransmitter release (Augustine, 1990; Awatramani et al., 2005; Geiger and Jonas, 2000; Rowan et al., 2016; Sabatini and Regehr, 1997). Our data show that these features of axonal action potentials differ substantially from those that have been classically associated with somatic firing in dopaminergic neurons (Grace and Bunney, 1983; Ungless and Grace, 2012). For example, action potentials in the soma of dopamine neurons are typically broad, while we find that axonal action potentials are narrow with an average halfwidth of 0.89 ms, in agreement with studies that have reported brief presynaptic action potentials in other neuronal cell types (Alle and Geiger, 2006; Geiger and Jonas, 2000; Hallermann et al., 2012; Kole et al., 2007). We also find that action potentials are initiated from spike thresholds that are 14.3 mV more hyperpolarized than somatic spikes. Furthermore, the average non-spike voltage recorded in both the main axon and striatal axon is 6.7 mV and 8.8 mV more negative than values reported for the soma, respectively, which also fits with data from cortical layer five pyramidal neurons (Hu and Bean, 2018).
 
@@ -107,13 +127,13 @@ The hyperpolarized axonal interspike potential has possible functional implicati
 
 In somatic recordings of pacemaking, dopaminergic neurons exhibit a gradual depolarization of the interspike voltage thought to be critical for the generation of spontaneous activity (Kang and Kitai, 1993; Khaliq and Bean, 2008). By contrast, our data from distal recordings show that the slope of the interspike axonal membrane potential was shallow. The shallower interspike depolarization in the axon suggests that pacemaking in dopaminergic neurons results largely from the intrinsic excitability of the soma and dendrites. Furthermore, the hyperpolarized axonal threshold potential suggests that our recording site in the axon is distal to the site of action potential initiation, which is the axon initial segment (Häusser et al., 1995; Shu et al., 2007). Therefore, these observations argue against the axon as a third site of oscillation generation after the soma and dendrites (Pissadaki and Bolam, 2013). It is important to note that although the mixture of conductances present in axons does not favor spontaneous activity, it is still possible that the conductances that drive somatic depolarization such as NALCN and HCN may also be present in axons. In fact, a recent study found a positive correlation between the length of the axon initial segment and the spontaneous firing rate, suggesting that the conductances present in the axon initial segment speed firing (López-Jury et al., 2018; Meza et al., 2018). However, a different study found that the geometry of the axon initial segment negligibly affects the firing rate (Moubarak et al., 2019). In addition to the axon initial segment geometry, future work should focus on determining the axonal conductances that enable and control firing rate and spike transmission.
 
-## Axonal GABA-A receptors on dopaminergic neuron axons are depolarizing
+### Axonal GABA-A receptors on dopaminergic neuron axons are depolarizing
 
 The published literature has shown that large differences exist in the reversal potential of axonal chloride-based conductances when comparing between neuronal cell types. For example, a careful study of the GABA reversal potential in the axon initial segment of cortical layer 2/3 pyramidal neurons demonstrated that EGABA shifts from depolarizing to hyperpolarizing with age, eventually settling at negative values near the somatic resting potential in adult mice (~ −87 mV, Rinetti-Vargas et al., 2017). Similarly, hyperpolarized GABA reversal potential values were reported from proximal axons of layer five pyramidal neurons from rats (Xia et al., 2014). By contrast, axonal GABA-A receptors on the mossy fiber bouton (Ruiz et al., 2010), cultured Purkinje neuron terminals (Zorrilla de San Martin et al., 2017) as well as axonal glycine receptors on the calyx of Held (Price and Trussell, 2006) have reported axonal chloride-based conductances that are depolarizing relative to resting membrane potential.
 
 In this study, we demonstrate that the average reversal potential of GABA-mediated currents in dopamine neuron axons, when considered relative to the average axonal interspike membrane potential of −68 mV, is also depolarized at −56 mV. Our recordings were performed in adult mice (ages 6–17 weeks, median of 15.5 weeks) suggesting that the depolarized reversal potential that we obtained represents the value in mature axons. Interestingly, the reversal potential for somatodendritic GABA currents in dopaminergic neurons is also depolarized at −63 mV due to relatively low expression of the K-Cl cotransporter KCC2 (Gulácsi et al., 2003), which is similar to the average interspike membrane potential of dopamine neurons during pacemaking. Therefore, activation of somatodendritic GABA-A receptors reduces spiking primarily through shunting with relatively little change in the membrane potential.
 
-## Mechanism of axonal GABA-A receptor mediated inhibition of striatal dopamine release
+### Mechanism of axonal GABA-A receptor mediated inhibition of striatal dopamine release
 
 Despite the depolarized GABA reversal potential in distal axons, our findings show that activation of axonal GABA-A receptors results in inhibition of dopamine release. Although this is consistent with work from spinal cord (Curtis and Lodge, 1982; Eccles et al., 1961; for a review see, Trigo et al., 2008), these results differ from previous studies that have found axonal GABA-A receptors enhance synaptic transmission in cerebellar parallel fibers (Dellal et al., 2012; Howell and Pugh, 2016; Khatri et al., 2019; Pugh and Jahr, 2011) hippocampal mossy fibers (Ruiz et al., 2010), terminals of cerebellar Purkinje neurons (Zorrilla de San Martin et al., 2017) and in layer 2/3 pyramidal neurons of the cortex (Szabadics et al., 2006).
 
@@ -121,7 +141,7 @@ What features distinguish dopaminergic neuron axons, and contribute to the inhib
 
 Past studies have proposed that presynaptic GABA-A receptors exert their effects through either shunting inhibition or sodium channel inactivation (Trigo et al., 2008). Because of the lack of experimental access to the axonal compartment, however, direct tests of this hypothesis have previously been limited to large terminal structures. In the rat posterior pituitary nerve terminals, GABA was shown to produce large depolarizations that led to strong inactivation of sodium channels, while shunting was thought to play little role in inhibition of secretion from terminals (Zhang and Jackson, 1993). Here, we demonstrate in the thin, unmyelinated axons of dopaminergic neurons that shunting and depolarization-mediated inactivation of sodium channels contribute nearly equally to GABA-A receptor mediated alteration of action potential shape and the subsequent inhibition of striatal dopamine release. Under conditions of tonic GABA-A receptor activation, these two inhibitory mechanisms will be especially prominent, particularly in an electrically tight compartment like the axon where tiny fluctuations of GABA-A activity can cause large changes in membrane voltage and input resistance. Furthermore, we found that these two mechanisms of inhibition differentially affect action potential waveforms. While depolarization-mediated sodium channel inactivation both reduces spike height and slows the rate of action potential rise, shunting inhibition only affects spike height.
 
-## Effect of benzodiazepines on axons
+### Effect of benzodiazepines on axons
 
 Benzodiazepines can have rewarding effects that, in some cases, can lead to habit formation (Blanco et al., 2018; Tan et al., 2011). The rewarding actions of benzodiazepines are thought to involve potentiation of GABA-A receptors located on inhibitory GABAergic neuron within the VTA which then results in disinhibition of VTA dopaminergic neurons (Tan et al., 2010). As is the case with other drugs of abuse that disinhibit dopamine neurons (e.g. opioids), benzodiazepines would be expected then to increase the somatic firing rate and subsequent dopamine release in the striatum. Instead, studies of awake behaving rats show that systemic diazepam administration increases the frequency of dopamine release events but decreases the amplitude of these release events (Schelp et al., 2018). The apparent disparity in these results can be reconciled by our observation that axonal GABA-A receptors on dopaminergic neuron axons are enhanced by diazepam. This enhancement of GABA-A receptors leads to a decrease in dopamine release through a combination of shunting inhibition and depolarization-mediated sodium channel inactivation. Therefore, we propose that the effects of drugs that pharmacologically target GABA-A receptors such as ethanol, barbiturates, and other sedatives should be reexamined considering their potential effects on axonal GABA-A receptors.
 
@@ -135,17 +155,286 @@ In sum, this report shows direct evidence for GABA-A receptors on dopamine neuro
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV1-hsyn-FLEX-CoChR-GFP</td>
+      <td>UNC vector core</td>
+      <td>Boyden, E.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV9-CAG-FLEX-TdTomato</td>
+      <td>Penn vector core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV9-Syn-FLEX-jGCaMP7f</td>
+      <td>Janelia</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (adeno-associated virus)</td>
+      <td>AAV9-hSyn-dLight1.2</td>
+      <td>Lin Tian</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin cy5 conjugate</td>
+      <td>Invitrogen</td>
+      <td>SA1011</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR95531 hydrobromide (Gabazine)</td>
+      <td>Tocris</td>
+      <td>Cat# 1262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR95531 hydrobromide (Gabazine)</td>
+      <td>Hello Bio</td>
+      <td>Cat# HB0901</td>
+      <td>used only in Figure 6—figure supplement 1A and B</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP55845 hydrochloride</td>
+      <td>Tocris</td>
+      <td>Cat# 1248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Tocris</td>
+      <td>Cat# 0106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atropine</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# A0132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Tocris</td>
+      <td>Cat# 1044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(±)-Sulpiride</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# S8010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Tocris</td>
+      <td>Cat# 1078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>λ-Aminobutyric Acid (GABA)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# A5835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# P1675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexamethonium Chloride</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# H2138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diazepam</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# D0899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gramicidin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# G5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Muscimol</td>
+      <td>Tocris</td>
+      <td>Cat# 0289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin from cold water fish skin</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# G7041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(+)-Sodium L-ascorbate</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# A4034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Pyruvate</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# P5280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiourea</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# T7875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triethanolamine</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 90279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N,N’,N’-Tetrakis-(2-hydroxypropyl)ethylenediamine</td>
+      <td>TCI</td>
+      <td>Cat# T0781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# U5128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai95-RCL-GCaMP6f-D: Cg-Gt(ROSA)26Sor(tm95.1(CAG-GCaMP6f)Hze)/MwarJ</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 028865</td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai9: Gt(ROSA)26Sor(tm9(CAG-tdTomato)Hze)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 007909</td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>TH-GFP (Tg(TH-EGFP)1Gsat</td>
+      <td>NIH MMRRC</td>
+      <td></td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57/Bl6J Wild Type</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 000664</td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.SJL-Slc6a3(tm1.1(cre)Bkmn/J (DAT-IRES-cre)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 006660</td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai32: B6.Cg – Gt(ROSA)26Sor(tm32(CAG-COP4*H143R/EYFP)Hze)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#024109</td>
+      <td>male and female over 6 weeks of age</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td>http://fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 11</td>
+      <td>Axon Instruments</td>
+      <td>RRID:SCR:011323</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All animal handling and procedures were approved by the animal care and use committee (ACUC) for the National Institute of Neurological Disorders and Stroke (NINDS) at the National Institutes of Health (protocol 1322). Mice of both sexes were used throughout the study. Mice that underwent viral injections were injected at postnatal day 18 or older and were used for ex vivo electrophysiology and imaging 3–12 weeks after injection. The following strains were used: DAT-Cre (SJL-Slc6a3(tm1.1(cre)Bkmn/J, The Jackson Laboratory Cat#006660); Ai95-RCL-GCaMP6f-D (Cg-Gt(ROSA)26Sor(tm95.1(CAG-GCaMP6f)Hze)/MwarJ, The Jackson Laboratory Cat#028865); Ai9 (Gt(ROSA)26Sor(tm9(CAG-tdTomato)Hze), The Jackson Laboratory Cat#007909); TH-GFP (Tg(TH-EGFP)1Gsat) NIH MMRRC; C57/Bl6J Wild Type, The Jackson Laboratory Cat#000664; Ai32 (B6.Cg – Gt(ROSA)26Sor(tm32(CAG-COP4*H143R/EYFP)Hze), The Jackson Laboratory, Cat#024109).
 
-## Method details
+### Method details
 
-## Viral injections
+#### Viral injections
 
 All stereotaxic injections were conducted on a Stoelting QSI (Cat#53311). Mice were maintained under anesthesia for the duration of the injection and allowed to recover from anesthesia on a warmed pad. The AAV9-CAG-FLEX-TdTomato (Penn Vector Core), AAV-Syn-FLEX-jGCaMP7f (Dana et al., 2019), and AAV9-hSyn-dLight1.2 (Patriarchi et al., 2018) viruses (0.5–1 µl) were injected bilaterally into either the medial dorsal striatum (X:±1.7 Y: +0.8 Z: −3.3) or the SNc (X:±1.9 Y: −0.5 Z: −3.9) via a Hamilton syringe. At the end of the injection, the needle was raised at a rate of 0.1 to 0.2 mm per minute for 10 minutes before the needle was removed.
 
-## Slicing and electrophysiology
+### Slicing and electrophysiology
 
 Brain slice experiments were performed on male and female adult mice of at least 6 weeks in age. Mice were anesthetized with isoflurane, decapitated, and brains rapidly extracted. Horizontal sections (electrophysiology, dLight, calcium imaging) or coronal sections (voltammetry) were cut at 330–400 µm thickness on a vibratome while immersed in warmed, modified, slicing ACSF containing (in mM) 198 glycerol, 2.5 KCl, 1.2 NaH2PO4, 20 HEPES, 25 NaHCO3,10 glucose, 10 MgCl2, 0.5 CaCl2, 5 Na-ascorbate, 3 Na-pyruvate, and two thiourea. Cut sections were promptly removed from the slicing chamber and incubated for 30–60 min in a heated (34°C) chamber with holding solution containing (in mM) 92 NaCl, 30 NaHCO3, 1.2 NaH2PO4, 2.5 KCl, 35 glucose, 20 HEPES, 2 MgCl2, 2 CaCl2, 5 Na-ascorbate, 3 Na-pyruvate, and 2 thiourea. Slices were then stored at room temperature and used 30 minutes to 6 hours later. Following incubation, slices were moved to a heated (33–35°C) recording chamber that was continuously perfused with recording ACSF (in mM): 125 NaCl, 25 NaHCO3, 1.25 NaH2PO4, 3.5 KCl, 10 glucose, 1 MgCl2, 2 CaCl2. Whole-cell recordings were made using borosilicate pipettes (5–10 MΩ, axon; 2–3 MΩ, soma) filled with internal solution containing (in mM) 122 KMeSO3, 9 NaCl, 1.8 MgCl2, 4 Mg-ATP, 0.3 Na-GTP, 14 phosphocreatine, 9 HEPES, 0.45 EGTA, 0.09 CaCl2, adjusted to a pH value of 7.35 with KOH. For high chloride experiments, KMeSO3 was substituted with KCl.
 
@@ -157,7 +446,7 @@ Electrical stimulation was evoked with tungsten bipolar electrodes (150 µm tip 
 
 Pressure ejection was performed using a borosilicate micropipette pulled on a horizontal puller (pipette size ~2–4 MΩ). The pharmacological agent being tested, either GABA or muscimol, was added to a modified external solution containing (in mM): 125 NaCl, 25 NaHCO3, 1.25 NaH2PO4, 3.5 KCl, 10 HEPES, 0.01 either Alexa 488 (for experiments in DAT-Cre x Ai9 animals) or Alexa 594 (for experiments in TH-GFP animals), final osmolarity 280–290 mOsm. This puffing solution was then spin filtered, loaded into the glass pipette, and lowered to within 30–50 µm of the axon using a micro-manipulator. The puffing solution was then applied onto the axon with a short pressure ejection (80–300 ms in duration) using a PV 820 Pneumatic PicoPump (WPI).
 
-## Fast-scan cyclic voltammetry (FSCV)
+### Fast-scan cyclic voltammetry (FSCV)
 
 For all voltammetry experiments the method is as follows. Cylindrical carbon-fiber electrodes (CFEs) were prepared with T650 fibers (6 μm diameter,~150 μm of exposed fiber) inserted into a glass pipette and filled with KCl (3 M). Before use, the CFEs were conditioned with 8 ms long triangular voltage ramp (−0.4 to +1.2 and back to −0.4 V versus Ag/AgCl reference at 4 V/s) delivered every 15 ms. CFEs showing current above 1.8 µA or below 1.0 µA in response to the voltage ramp around 0.6 V were discarded. A triangular voltage ramp was passed through the fiber from −400 mV to 1200 mV, and returned to −400 mV. The ramp was run at a rate of 400 V/s, every 100 ms.
 
@@ -167,20 +456,20 @@ For voltammetry experiments performed by J.H.S., the method is as follows. Mice 
 
 DA transients were evoked by brief light pulse (0.6–0.8 ms) through an optical fiber (200 µm/0.22 NA) connected to a 470 nm LED (2 mW; ThorLabs) delivered every 2 min. Data were collected with a modified electrochemical headstage (CB-7B/EC retrofit with 5 MΩ resistor) using a Multiclamp 700B amplifier (Molecular Devices) after being low-pass filtered at 10 kHz and digitized at 100 kHz using custom-written software in Igor Pro named VIGOR (Bock and Shin, 2018; Bock, 2018) running mafPC software (Xu-Friedman, 2019). Decay time constants were obtained with a single exponential fit of the derivative of the falling phase of DA transient curve.
 
-## Fluorescent imaging
+### Fluorescent imaging
 
 Calcium was measured in dopamine neuron axons of the medial dorsal striatum using the GCaMP6f mouse bred with the DAT-Cre mouse, or with viral injection of CRE-dependent jGCaMP7f into the SNc of DAT-cre mice. These data were combined in the results. All calcium imaging experiments were performed in the presence of atropine (30 nM), sulpiride (1 µM), hexamethonium chloride (200 µM), and CGP55845 (200 nM). A white light LED (Thorlabs; SOLIS-3C) was used in combination with a GFP filter set. A photodiode (New Focus) was mounted on the top port of the Olympus BX-51WI microscope.
 
-## Immunohistochemistry, clearing, confocal imaging, and neural reconstructions
+### Immunohistochemistry, clearing, confocal imaging, and neural reconstructions
 
 After electrophysiology or imaging, slices were fixed overnight in 4% paraformaldehyde (PFA) diluted in phosphate buffer (PB, 0.1M, pH 7.6). Slices were subsequently stored in PB until immunostaining and cleared using a modified CUBIC protocol, chosen because it does not quench endogenous fluorescence (Susaki et al., 2015). For the immunostaining/CUBIC clearing, all steps were performed at room temperature on a shaker plate. Slices were placed in CUBIC reagent 1 for 1–2 days, washed in PB 3 × 1 hour each, placed in blocking solution (0.5% fish gelatin (MilliporeSigma) in PB) for 3 hours. Slices were directly placed in streptavidin-Cy5 conjugate at a concentration of 1:1000 in PB for 2–3 days. Slices were washed 3 times for 2 hr each and were then placed in CUBIC reagent two overnight. Slices were mounted on slides in reagent two in frame-seal incubation chambers (Bio-Rad SLF0601) and coverslipped (#2 glass). Slices were imaged through 20×, 0.8 nA and 5×, 0.3 nA objectives on an LSM 800 confocal microscope (Zeiss), and taken as tiled z-stacks using Zen Blue software in the NINDS light imaging facility.
 
 Main axons were reconstructed and measured using Simple Neurite Tracer in FIJI (Longair et al., 2011). Of axons with a positively identified soma, the majority were found in the substantia nigra pars compacta, with some found in the ventral tegmental area. Striatal axons were reconstructed using Neurolucida (MBF bioscience).
 
-## Drugs
+### Drugs
 
 All salts and all drugs not otherwise stated were from MilliporeSigma. Fluo5F and Alexa594 (Life Technologies), gabazine, d-AP5, hexamethonium chloride, oxotremorine M, GABA, and muscimol, were dissolved in deionized water. Sulpiride, quinpirole, picrotoxin, CGP55845 (Tocris), NBQX, and diazepam were dissolved in DMSO. Atropine was dissolved in DMSO and then diluted 1:10 in deionized water.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-Analysis was conducted in Igor Pro and Prism 8 (GraphPad). Data in text are reported as mean (x-) ± SEM for parametric or median (x~) for non-parametric data. Error bars on graphs are indicated as ± SEM. Box plots show medians, 25 and 75% (boxes) percentiles, and 10 and 90% (whiskers) percentiles. For parametric data, t-tests were used for two-group comparison, and ANOVA tests were used for more than two group comparisons, followed by a Bonferonni or Šidák post-hoc test for analysis of multiple comparisons. For non-parametric data sets, Mann-Whitney U tests were used to compare two groups while the Kruskal-Wallis test was used to compare more than two groups. For linear regression analysis, the Straight Line analysis function was used in Prism, and an extra sum-of-squares F test was performed to determine significant differences in slope between data sets on the same plot, and to determine whether a line or exponential decay model fits the data better. For exponential fits, the One Phase Decay analysis function in Prism was used to fit a standard curve.
+Analysis was conducted in Igor Pro and Prism 8 (GraphPad). Data in text are reported as mean ($x-$) ± SEM for parametric or median ($x~$) for non-parametric data. Error bars on graphs are indicated as ± SEM. Box plots show medians, 25 and 75% (boxes) percentiles, and 10 and 90% (whiskers) percentiles. For parametric data, t-tests were used for two-group comparison, and ANOVA tests were used for more than two group comparisons, followed by a Bonferonni or Šidák post-hoc test for analysis of multiple comparisons. For non-parametric data sets, Mann-Whitney U tests were used to compare two groups while the Kruskal-Wallis test was used to compare more than two groups. For linear regression analysis, the Straight Line analysis function was used in Prism, and an extra sum-of-squares F test was performed to determine significant differences in slope between data sets on the same plot, and to determine whether a line or exponential decay model fits the data better. For exponential fits, the One Phase Decay analysis function in Prism was used to fit a standard curve.

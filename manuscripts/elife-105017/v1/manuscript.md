@@ -19,12 +19,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02be6w209 Istituto Pasteur Italia-Fondazione Cenci Bolognetti, Department of Molecular Medicine, Department of Excellence 2023-2027, Sapienza University of Rome Rome Italy
-2. https://ror.org/04tfzc498 National Institute for Infectious Diseases L. Spallanzani, IRCCS Rome Italy
-3. https://ror.org/02be6w209 Biology and Biotechnology Department C. Darwin, Sapienza University of Rome Rome Italy
-4. https://ror.org/042t93s57 Center for Life Nano- and Neuro-Science, RNA Systems Biology Lab, Fondazione Istituto Italiano di Tecnologia (IIT) Genoa Italy
-5. https://ror.org/04gqbd180 Anatomical Pathology Operative Research Unit, Fondazione Policlinico Universitario Campus Bio-Medico Rome Italy
-6. https://ror.org/042t93s57 Center for Human Technologies, Istituto Italiano di Tecnologia Genoa Italy
+1. Istituto Pasteur Italia-Fondazione Cenci Bolognetti, Department of Molecular Medicine, Department of Excellence 2023-2027, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
+2. National Institute for Infectious Diseases L. Spallanzani, IRCCS Rome Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))
+3. Biology and Biotechnology Department C. Darwin, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
+4. Center for Life Nano- and Neuro-Science, RNA Systems Biology Lab, Fondazione Istituto Italiano di Tecnologia (IIT) Genoa Italy ([ROR:042t93s57](https://ror.org/042t93s57))
+5. Anatomical Pathology Operative Research Unit, Fondazione Policlinico Universitario Campus Bio-Medico Rome Italy ([ROR:04gqbd180](https://ror.org/04gqbd180))
+6. Center for Human Technologies, Istituto Italiano di Tecnologia Genoa Italy ([ROR:042t93s57](https://ror.org/042t93s57))
 
 † Corresponding author
 
@@ -44,9 +44,21 @@ We here aimed at the investigation of molecular players responsible for miRNAs i
 
 ## Results
 
-## PCBP2 recognizes a CELL motif and has a functional role in the intracellular retention of miRNA-155-3p
+### PCBP2 recognizes a CELL motif and has a functional role in the intracellular retention of miRNA-155-3p
 
 Aiming to identify the RBPs involved in the intracellular retention, proteins from hepatocytes were used in RNA-pull-down by using as specific bait the miRNA-155-3p, selected for the presence of the Core CELL-motif identified in AML12 cells (Garcia-Martin et al., 2022; Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sequences of biotinylated oligos used as bait in pull-down experiment; Core CELL motifs (WT and mutated) are in gray, hEXO motifs (WT and mutated) are underlined. miRNA devoid of CELL motif (no-CELL), miRNA devoid of hEXO (no-hEXO). (B) Volcano plot comparing proteins bound to miRNA-155-3p no-CELL vs WT. Black curves represent the significant threshold at a false discovery rate (FDR) of 0.05 and S0 of 0.1. PCBP2 and SYNCRIP proteins are labeled in the plot. (C) CLIP of PCBP2 protein in murine hepatocytes. RT-qPCR analysis for miR-155-3p, miR-365-2-5p (CELL motif-devoid), and miR-31-3p (hEXO motif-devoid) is shown as IP/IgG. Data are the mean ± SEM of three independent experiments. (D) RNA pull-down with the WT and mutated (no-CELL, no-hEXO) (sequences are reported in A) miR-155-3p followed by western blot for the indicated proteins (HSP90 is used as positive and GAPDH as negative controls, respectively). Data are representative of three independent experiments. (E) RNA pull-down with the WT and mutated (+CELL) miR-365-2-5p followed by western blot for the indicated proteins. Data are representative of three independent experiments. (F) RNA pull-down by using the recombinant PCBP2 protein and with WT and mutated miR-155-3p (no-CELL) followed by western blot for PCBP2. Data are representative of three independent experiments. (G) CLIP of SYNCRIP protein in murine hepatocytes. RT-qPCR analysis for miR-155-3p is shown as IP/IgG. Data are the mean ± SEM of three independent experiments. (H) (Left and middle panels) EV miRNA-155-3p and miR-365-2-5p levels in shCTR and shPCBP2 cells analyzed by RT-qPCR. Data are expressed as ratio of miRNA expression in EVs with respect to the intracellular compartment (shCTR arbitrary value 1). Results are shown as the mean ± SEM of three independent experiments. (right panel) EV miRNA-155-3p levels in shCTR and shSYNCRIP cells analyzed by RT-qPCR. Data are expressed as ratio of miRNA expression in EVs with respect to the intracellular compartment (shCTR arbitrary value 1). Results are shown as the mean ± SEM of three independent experiments. Data are considered statistically significant with p<0.05 (Student’s t-test). *p<0.05; **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression levels of PCBP2 in shCTR and shPCBP2 murine hepatocytes. Data are shown as the mean ± SEM of three independent experiments. (B) (Left panel) Western blot analysis for PCBP2 on protein extracts from hepatocytes silenced for PCBP2 (3A shPCBP2) and relative control (3A shCTR). GAPDH has been used as loading control. The figure is representative of three independent experiments. (Right panel) Densitometric analysis of western blot signals. Data are shown as the mean ± SEM of three independent experiments. (C) Expression levels of SYNCRIP in shCTR and shSYNCRIP murine hepatocytes. Data are shown as the mean ± SEM of three independent experiments. (D) (Left panel) Western blot analysis for SYNCRIP on protein extracts from hepatocytes silenced for SYNCRIP (3A shSYNCRIP) and relative control (3A shCTR). GAPDH has been used as loading control. The figure is representative of three independent experiments. (Right panel) Densitometric analysis of Western-blot signals. Data are shown as the mean ± SEM of three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blot analysis for EV-specific (Alix, LAMP1, CD63, Flotillin-1, TSG101, Synthenin), intracellular (calnexin) markers, and SYNCRIP and PCBP2 on protein extracts from hepatocytes (WCE, whole cell extract) and hepatocyte-derived EVs (EVs). (B) Particle diameter (nm) and concentration (particles/ml) of EVs evaluated by Exoid (IZON) (top: shCTR EVs, Middle: shPCBP2 EVs, bottom: shSYNCRIP EVs). (C) Quantification of number of EVs per cell in shCTR, shPCBP2 and shSYNCRIP conditions.
 
 Label-free nLC-MS/MS proteomic analysis allowed to identify miR-155-3p-interacting proteins (Supplementary file 1), and label-free quantification intensities analysis identified 21 proteins enriched in miR-155-3p pull-down with respect to miR-155-3p mutated in the Core CELL motif (miR-155-3p no-CELL) (Figure 1A, Supplementary file 2, and Figure 1B). Twelve of them are classified as RNA-binding proteins, with six containing at least one canonical RNA-binding domain (Cook et al., 2011; Liao et al., 2020; Ray et al., 2013; Treiber et al., 2017, Supplementary file 2). For three of them, RNA-binding preferences are also known (i.e. PCBP2 prefers CU-rich sequences; Ray et al., 2013; Van Nostrand et al., 2020), LARP1 recognizes the CAP and the 5’ top motif in mRNAs (Fonseca et al., 2015), and STAU1 binds to double-stranded RNAs (Wickham et al., 1999).
 
@@ -62,7 +74,7 @@ Functionally, the role of PCBP2 in miRNA partition was addressed by its silencin
 
 Overall, these data demonstrated that (i) PCBP2 interacts with miRNA-155-3p, as proved by CLIP analysis and RNA pull-down, (ii) the interaction is CELL-motif-dependent while an unexpected role for the hEXO motif is also unveiled, and (iii) PCBP2 favors the intracellular localization of this miRNA.
 
-## PCBP2 binding to miR-155-3p is both sequence- and SYNCRIP-dependent
+### PCBP2 binding to miR-155-3p is both sequence- and SYNCRIP-dependent
 
 The observation that loading (hEXO) and retention (CELL) motifs are both present in miR-155-3p sequence prompted us to investigate on the hypothesis of a sequence- and SYNCRIP-dependent PCBP2 binding ability.
 
@@ -70,7 +82,7 @@ First, we observed that the two proteins interact each other (Figure 2A) and mor
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig2-v1.jpg)
 
-**Figure 2.:** (A) Co-immunoprecipitation of PCBP2 and SYNCRIP. Immunoprecipitations with rabbit polyclonal anti-PCBP2, mouse monoclonal anti-SYNCRIP, and the relative preimmune IgG were performed on protein extracts from hepatocytes. GAPDH is used as negative control. Immunoblots representative of three independent experiments are shown. (B) Electrophoretic mobility shift assay (EMSA): interactions of miR-155-3p with the indicated protein extracts (shifts) and Abs (anti-SYNCRIP and anti-PCBP2) (supershift) are shown. Ultrashift shown in lane 5 demonstrates concurrent binding of SYNCRIP and PCBP2 to miR-155-3p. (C) EMSA: interactions of miR-155-3p with protein extracts from shCTR (1), shPCBP2 (2), and shSYNCRIP (3) cells (shifts) and Abs (anti-SYNCRIP and anti-PCBP2) (supershift) are shown. (D) CLIP of PCBP2 protein in murine hepatocytes both WT (shCTR) and silenced for SYNCRIP (shSYNCRIP). RT-qPCR analysis for the expression of miR-155-3p is shown as IP/IgG. Data are the mean ± SEM of three independent experiments.Figure 2—source data 1.Figure 2A– C, indicating the relevant bands.Figure 2—source data 2.Figure 2A–C.
+**Figure 2.:** (A) Co-immunoprecipitation of PCBP2 and SYNCRIP. Immunoprecipitations with rabbit polyclonal anti-PCBP2, mouse monoclonal anti-SYNCRIP, and the relative preimmune IgG were performed on protein extracts from hepatocytes. GAPDH is used as negative control. Immunoblots representative of three independent experiments are shown. (B) Electrophoretic mobility shift assay (EMSA): interactions of miR-155-3p with the indicated protein extracts (shifts) and Abs (anti-SYNCRIP and anti-PCBP2) (supershift) are shown. Ultrashift shown in lane 5 demonstrates concurrent binding of SYNCRIP and PCBP2 to miR-155-3p. (C) EMSA: interactions of miR-155-3p with protein extracts from shCTR (1), shPCBP2 (2), and shSYNCRIP (3) cells (shifts) and Abs (anti-SYNCRIP and anti-PCBP2) (supershift) are shown. (D) CLIP of PCBP2 protein in murine hepatocytes both WT (shCTR) and silenced for SYNCRIP (shSYNCRIP). RT-qPCR analysis for the expression of miR-155-3p is shown as IP/IgG. Data are the mean ± SEM of three independent experiments.
 
 To challenge the hypothesis of a SYNCRIP-dependent PCBP2 binding, EMSA assay was performed in PCBP2-silenced and in SYNCRIP-silenced cells (Figure 1—figure supplement 1A–D respectively). As shown in Figure 2C while PCBP2 silencing does not affect SYNCRIP binding, SYNCRIP silencing impairs also PCBP2 binding. Furthermore, CLIP assay was performed on SYNCRIP-silenced cells; as shown in Figure 2D, SYNCRIP silencing impairs PCBP2 binding to miR-155-3p.
 
@@ -78,13 +90,29 @@ This evidence supports the unpredictable mechanism where SYNCRIP binding appears
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig3-v1.jpg)
 
-**Figure 3.:** (A) RNA pull-down with the WT and mutated (sequences are reported above) miR-26b-3p followed by western blot for the indicated proteins. Data are representative of three independent experiments. (B) RNA pull-down with the WT and mutated (sequences are reported above) miR-31-3p followed by western blot for the indicated proteins. Data are representative of three independent experiments. (A, B) Core CELL motifs (WT and mutated) are in gray, hEXO motifs (WT and mutated) are underlined.Figure 3—source data 1.Figure 3A and B, indicating the relevant bands.Figure 3—source data 2.Figure 3A and B.
+**Figure 3.:** (A) RNA pull-down with the WT and mutated (sequences are reported above) miR-26b-3p followed by western blot for the indicated proteins. Data are representative of three independent experiments. (B) RNA pull-down with the WT and mutated (sequences are reported above) miR-31-3p followed by western blot for the indicated proteins. Data are representative of three independent experiments. (A, B) Core CELL motifs (WT and mutated) are in gray, hEXO motifs (WT and mutated) are underlined.
 
 Overall, these data indicate that PCBP2 binding requires both the CELL motif and SYNCRIP binding; in other words, SYNCRIP binding is epistatic to PCBP2 recruitment.
 
-## PCBP2 functionally dominates on SYNCRIP EV-loading activity on a repertoire of miRNAs embedding CELL and hEXO motifs
+### PCBP2 functionally dominates on SYNCRIP EV-loading activity on a repertoire of miRNAs embedding CELL and hEXO motifs
 
 To extend the evidence for the role of PCBP2 in miRNA compartmentalization and to confirm its mechanistic role, (i) PCBP2 and (ii) SYNCRIP functional role in miRNA EVs/cell partition was evaluated, and (iii) PCBP2, (iv) SYNCRIP, and (v) SYNCRIP-dependent PCBP2 binding were assessed. First, NGS analysis of miRNAs exported in EVs produced by control and PCBP2-silenced murine hepatocytes allowed the selection of further miRNAs differentially loaded in EVs in correlation to PCBP2 (Supplementary file 3, Figure 4A and B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volcano plot comparing miRNAs differentially expressed from NGS data; miRNAs with Log2FC > 1 and Log2FC < -1 and p-value ≤ 0.10 were considered differentially expressed. Downregulated miRNAs in shPCBP2 respect to shCTRL are represented as blue dots, upregulated miRNAs are represented as red dots. (B) Heatmap showing the Log2 fold enrichment (EV/CELL) of mature miRNAs in small extracellular vesicles derived from shCTRL cells versus shPCBP2 cells. miRNAs with Log2FE ≥ 1.0 and p-value ≤ 0.10 were considered to be differentially enriched. (C) List of selected miRNAs embedding CELL and/or hEXO motifs; consensus sequences are highlighted in gray or underlined respectively. (D) EV miRNA levels in shCTR and shPCBP2 cells analyzed by RT-qPCR. Data are expressed as ratio of miRNA expression in EVs with respect to the intracellular compartment (shCTR arbitrary value 1). Results are shown as the mean ± SEM of three independent experiments. Data are considered statistically significant with p<0.05 (Student’s t-test). *p<0.05; **p<0.01. (E) Gene Ontology enrichment analysis on validated and predicted targets. The X-axis represents the gene ratio, whereas the Y-axis represents the enriched GO terms. Colors indicate the statistical significance after multiple test correction, while circle size represents the number of genes associated with each term. (F) Liver-isolated leukocytes cultured either alone (NO EVs) or in the presence of control EVs (shCTR EVs) or shPCBP2 EVs (shPCBP2 EVs) for 24 h. The expression of IFN-γ was analyzed on CD3+, NK1.1+ CD11b+, and CD11b+ cells by flow cytometry. The dot plots show the percentage of cytokine-positive T cells, NK cells, and myeloid cells. T cells and NK cells graphs are representative of five independent experiments, while myeloid cells graph is representative of four independent experiments. Each symbol represents data obtained from an individual mouse. Data are considered statistically significant with p<0.05 (Student’s t-test). *p<0.05; **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** EV miRNA levels in shCTR and shSYNCRIP cells analyzed by RT-qPCR. Data are expressed as ratio of miRNA expression in EVs with respect to the intracellular compartment (shCTR arbitrary value 1). Results are shown as the mean ± SEM of three independent experiments. Data are considered statistically significant with p<0.05 (Student’s t-test). *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Gene Ontology enrichment analysis on validated targets. The X-axis represents the gene ratio, whereas the Y-axis represents the enriched GO terms. Colors indicate the statistical significance after multiple test correction, while circle size represents the number of genes associated with each term. (B) Gene Ontology enrichment analysis on predicted targets. The X-axis represents the gene ratio, whereas the Y-axis represents the enriched GO terms. Colors indicate the statistical significance after multiple test correction, while circle size represents the number of genes associated with each term.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/105017/elife-105017-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Leukocytes selected according to SSC-A and FSC-A morphological parameters. Live cells were identified excluding APC-H7+ cells. CD45.2+ cells were gated and then segregated into NK1.1+ CD11b+, NK1.1- CD11b+, NK1.1- CD11b- CD3+ cells to discriminate NK cells, myeloid cells, and T cells, respectively. These gated cells were then analyzed for the expression of IFN-γ.
 
 Then, the functional role of PCBP2 was assessed by means of qRT-PCR performed on nine miRNAs expressed in EVs and embedding both CELL and hEXO motifs (see ‘Materials and methods’ section) in comparison to four miRNAs embedding either the CELL (miR-31-3p, miR-195a-5p, miR-421-3p) or the hEXO motif (miR-365-2-5p) (Figure 4C).
 
@@ -142,19 +170,74 @@ The described multiple RNA/proteins interactions provide a further step in the p
 
 ## Materials and methods
 
-## Cell culture conditions
+### Cell culture conditions
 
 Non-tumorigenic murine hepatocyte 3A cells (Montaldo et al., 2021; Conigliaro et al., 2013) were grown at 37°C, in a humidified atmosphere with 5% CO2, in RPMI 1640 medium supplemented with 10% FBS (Gibco Life Technology), 50 ng/mL epidermal growth factor (EGF), 30 ng/mL insulin growth factor (IGF) II (PeproTech), 10 mg/mL insulin (Roche), and penicillin/streptomycin, on dishes coated with collagen I (Collagen I, Rat Tail; Gibco Life Technology). All cell lines were tested for mycoplasma using the DAPI staining and the Mycoplasma PCR Detection Kit (G238, ABM). All cell lines were authenticated after thawing by morphology check, cell proliferation rate evaluation, and species verification by PCR. Bacteria contamination was excluded.
 
-## Extracellular vesicle purification
+### Extracellular vesicle purification
 
 EVs were prepared according to the International Society of Extracellular Vesicles recommendations (Théry et al., 2018). Conditioned media (CM) from 150 mm plates each containing 250,000 hepatocytes were collected after 72 h culture in complete medium containing EV-depleted FBS. Cell-conditioned media were centrifuged at 2000×g for 20 min at 4°C to remove dead cells and then at 20,000×g for 30 min at 4°C. Cleared supernatants were passed through 0.22 mm filter membranes, ultracentrifuged in a SW32 Ti rotor (Beckman Coulter) at 100,000×g for 70 min at 4°C, and finally resuspended in PBS. The EVs resuspension was analyzed by EXOID-V1-SC (IZON) for size and concentration characterization.
 
-## Biotin miRNA pull-down
+### Biotin miRNA pull-down
 
 Biotin miRNA pull-down experiments were performed on cytoplasmic extracts. Briefly, cells were lysed in hypotonic buffer (10 mM Tris-Cl [pH 7.5], 20 mM KCl, 1.5 mM MgCl2, 5 mM DTT, 0.5 mM EGTA, 5% glycerol, 0.5% NP40, and 40 U/mL RNAsin [Promega]) supplemented with protease inhibitors (Roche Applied Science). Lysates were incubated on a rotating platform for 30 min at 4°C and then centrifuged at 13,000 rpm for 30 min at 4°C. Protein concentration was determined with Protein Assay Dye Reagent (Bio-Rad) based on the Bradford assay.
 
 Samples (2 mg of proteins) were incubated for 1 h at 4°C with 10 nmol synthetic single-strand miRNA oligonucleotides containing a biotin modification attached to the 5’ and via a spacer arm (IDT, Intregrated DNA Technology) (Table 1).
+
+**Table 1.**
+ Biotinylated RNA oligonucleotides used in pull-down experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Oligonucleotides sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biotin-miR-26b-3p WT</td>
+      <td>[Btn] 5’ CCUGUUCUCCAUUACUUGGCUC 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-26b-3p no-hEXO</td>
+      <td>[Btn] 5’ CCUGUUCUCCAUUACUUGGCGA 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-31-3p WT</td>
+      <td>[Btn] 5’ UGCUAUGCCAACAUAUUGCCAUC 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-31-3p+hEXO</td>
+      <td>[Btn] 5’ UGCUAUGCCAACAUAUUGGGCUG 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-31–3p+hEXO no-CELL</td>
+      <td>[Btn] 5’ UGCUAUGCCAACAUAUUUGGCUG 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-155b-3p WT</td>
+      <td>[Btn] 5’ CUCCUACCUGUUAGCAUUAAC 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-155b-3p no-CELL</td>
+      <td>[Btn] 5’ CUCCUACCUGUUAGCAUGAUC 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-155b-3p no-hEXO</td>
+      <td>[Btn] 5’ CUCCUACCUGUUAGCAUUAGU 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-365-2-5p WT</td>
+      <td>[Btn] 5’ AGGGACUUUCAGGGGCAGCUGUG 3’</td>
+    </tr>
+    <tr>
+      <td>Biotin-miR-365-2-5P+hEXO</td>
+      <td>[Btn] 5’ AGGGACUUUCAUUGGCAGCUGUG 3’</td>
+    </tr>
+  </tbody>
+</table>
 
 Dynabeads M-280 Streptavidin (50 μL/sample, Invitrogen), previously blocked with 1 mg/mL yeast tRNA (Roche Applied Science), were added to reaction mixture for 90 min at 4°C, and then the beads were washed three times with cold lysis buffer and once with PBS. Elution was performed at room temperature for 5 min in Laemmli Buffer (containing 2-β mercaptoethanol and SDS).
 
@@ -162,55 +245,199 @@ Detection of miRNA/RBPs interaction was evaluated by WB on 10% of Input sample a
 
 Pull-down assay with PCBP2 (NM_001103165) mouse recombinant protein (TP522190, Origene) was performed with 4 μg of protein.
 
-## Protein digestion, peptide purification, and nanoLC analysis
+### Protein digestion, peptide purification, and nanoLC analysis
 
 Proteins obtained from the pull-down experiments with miR-155-3p or random scrambled miRNA were separated on 4–12% gradient gels (Invitrogen) and stained by Simply Blue Safe Stain staining. Fourteen sections of the gel lane were cut. Protein digestion of gel pieces and peptide purification were performed as previously described in Mancone et al., 2012. Peptides resuspended in a suitable nanoLC injection volume of 2.5% ACN/0.1% TFA and 0.1% formic acid were then analyzed by an UltiMate 3000 RSLCnano-LC system (Thermo Fisher Scientific) connected on-line via a nano-ESI source to an Q Exactive plus TM Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific) as in Montaldo et al., 2021. Proteins were automatically identified by MaxQuant (v. 1.6.17.0) software. Tandem mass spectra were searched against the Mus musculus dataset of UniprotKB database.
 
 Quantitative comparison among miR-155-3p WT and miR-155-3p no-CELL was performed using the label-free quantification algorithm calculated by MaxQuant software.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 Cells were lysed in Triton 1X buffer; subsequently, the proteins (30 μg for each sample) were analyzed as in Battistelli et al., 2021. The following primary antibodies were used for immunoblotting: α-PCBP2 (AV40568; Sigma-Aldrich), α- SYNCRIP (MAB11004; Merck Millipore), α-HSP90 (sc-13119; Santa Cruz Biotech), α-LAMP1 (Ab24170; Abcam), α-CD63 (sc-5275; Santa Cruz Biotechnology), α-SYNTHENIN (Ab133267; Abcam), α-ALIX (2171; Cell Signaling Technology), α-TSG101 (sc-7964; Santa Cruz Biotechnology), α-FLOTILLIN-1 (sc74566; Santa Cruz Biotechnology), α-CALNEXIN (NB100-1965; Novus Biologicals), and α-GAPDH (MAB-374; Merck Millipore) used as a loading control. The immune complexes were detected with horseradish peroxidase-conjugated species-specific secondary antiserum: (α-Rabbit 172-1019 and α-Mouse 170-6516; Bio-Rad Laboratories), then by enhanced chemiluminescence reaction (Bio-Rad Laboratories). Densitometric analysis of protein expression was performed by using the Fiji-ImageJ image processing package.
 
-## RNA extraction, RT-PCR, and real-time qPCR
+### RNA extraction, RT-PCR, and real-time qPCR
 
 miRNAs were extracted by miRNeasy Mini Kit and RNeasy MinElute Cleanup Kit (QIAGEN) and reverse transcribed with MystiCq microRNA cDNA Synthesis Mix (Sigma-Aldrich). Quantitative polymerase chain reaction (RT-qPCR) analyses were performed according to MIQE guidelines. cDNAs were amplified by qPCR reaction using GoTaq qPCR Master Mix (Promega, Madison, WI, USA). Relative amounts, obtained with 2^(-ΔCt) method, were normalized with respect to the cel-miR-39 Spike-In (59000; NORGEN), previously added into miRNA samples and expressed as ratio of miRNAs expression in EVs with respect to the intracellular compartment Garbo et al., 2024. Oligonucleotide sequences are reported in Table 2.
 
+**Table 2.**
+ Primers for miRNA qPCR analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>miRNA</th>
+      <th>Primer sequence</th>
+      <th>Tm (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mmu-miR-23a-5p</td>
+      <td>GGGGTTCCTGGGGATGGGATTT</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-26b-3p</td>
+      <td>CCTGTTCTCCATTACTTGGCTC</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-31-3p</td>
+      <td>TGCTATGCCAACATATTGCCATC</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-122b-3p</td>
+      <td>AAACACCATTGTCACACTCCAC</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-155-3p</td>
+      <td>CTCCTACCTGTTAGCATTAAC</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-155-5p</td>
+      <td>TTAATGCTAATTGTGATAGGGGT</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-181d-5p</td>
+      <td>AACATTCATTGTTGTCGGTGGGT</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-192-5p</td>
+      <td>CTGACCTATGAATTGACAGCC</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-195a-5p</td>
+      <td>TAGCAGCACAGAAATATTGGC</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-214-3p</td>
+      <td>ACAGCAGGCACAGACAGGCAGT</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-345-3p</td>
+      <td>CCCTGAACTAGGGGTCTGGAGAC</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-365-2-5p</td>
+      <td>GACTTTCAGGGGCAGCTG</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-3084-5p</td>
+      <td>GTTGAAGGTTAATTAGCAGAGT</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-421-3p</td>
+      <td>ATCAACAGACATTAATTGGGCGC</td>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
+
 Total RNA was extracted by ReliaPrep RNA Tissue Miniprep System (Promega, Madison, WI, USA) and reverse transcribed with iScript c-DNA Synthesis Kit (Bio-Rad Laboratories Inc, USA). Quantitative polymerase chain reaction (RT-qPCR) analyses were performed according to MIQE guidelines. cDNAs were amplified by qPCR reaction using GoTaq qPCR Master Mix (Promega, Madison, WI, USA). Relative amounts, obtained with 2^(-ΔCt) method, were normalized with respect to the housekeeping gene 18S. Oligonucleotide sequences are reported in Table 3.
+
+**Table 3.**
+ Primers for gene expression qPCR analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Primer sequence</th>
+      <th>Tm (°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCBP2</td>
+      <td>For ACACCGGATTCAGTGGCARev TTGATTTTGGCGCCTTGACG</td>
+      <td>5858</td>
+    </tr>
+    <tr>
+      <td>SYNCRIP</td>
+      <td>For ACCTTGCCAACACGTAACARev CCATAGCCTTGACACACCA</td>
+      <td>5959</td>
+    </tr>
+    <tr>
+      <td>18s</td>
+      <td>For AGCACCCATTGCAACGTCTGRev GCACGGCGACTACCATCG</td>
+      <td>5858</td>
+    </tr>
+  </tbody>
+</table>
 
 The results were analyzed with Manager Software (Bio-Rad) and calculated using the ΔC(t) method.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Cells were lysed with IP Lysis Buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.5, 5 mM EGTA pH 8, 50 mM NaF pH 8, 1,5 mM MgCl2, 1% TRITON-X100, and 10% glycerol) containing freshly added cocktail protease inhibitors (complete EDTA-free Protease Inhibitor Cocktail; Sigma-Aldrich) and phosphatase inhibitors (5 mM EGTA pH 8.0; 50 mM sodium fluoride; 5 mM sodium orthovanadate). Lysates were incubated on a rotating platform for 2 h at 4°C and then centrifuged at 13,000 rpm for 30 min at 4°C. Protein concentration was determined with Protein Assay Dye Reagent (Bio-Rad), based on the Bradford assay.
 
 2 mg of proteins (one for the specific antibody and one for the corresponding aspecific IgG) were precleared adding 40 µL of Protein A Sepharose or Protein G Sepharose (GE HealthCare) for 3 hr at 4°C in a total volume of 1 mL of IP Lysis Buffer in rotation. Then, Protein A or G Sepharose was removed by centrifugation and the extracts were incubated with 5 µg of specific antibody α-PCBP2 (cod. RN025P; MBL), SYNCRIP (MAB11004; Merck Millipore), Normal Rabbit IgG (12-370; Millipore), or Normal Mouse IgG (12-371; Merck Millipore), the last two used as negative controls, to proceed with immunoprecipitation at 4°C overnight. Immuno-complexes were collected adding 50 µL of Protein A or G Sepharose for 3 h at 4°C in rotation. The immunoprecipitated proteins were washed three times with Net Gel Buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.5, 1 mM EDTA, 0.1% NP40, and 0.25% gelatin) and once with RIPA Buffer (150 mM NaCl, 1% NP40, 0,5% sodium deoxycholate, 0,1% SDS, 50 mM Tris-HCl pH 8). Finally, immunoprecipitated proteins were detached from Sepharose beads by adding 50 µL of Laemmli Buffer 2X. Samples were boiled at 95°C for 5 min, beads were eliminated by centrifugation, and 10% of input sample and 50% of each immunoprecipitated sample were loaded on polyacrylamide gel and analyzed by western blotting.
 
-## EMSA
+### EMSA
 
 Cells were lysed in Triton Buffer at 4°C, for 30 min, and 4 μg of protein extract were incubated with 0.5 pmol of biotinylated RNA oligonucleotides for 30 min at room temperature in REMSA Binding Buffer, according to the manufacturer’s protocol (Light Shift Chemiluminescent RNA EMSA Kit, Thermo Fisher Scientific 20158). 1 μg of each antibody was incubated with the protein-RNA complex: anti-PCBP2 (RN025P; MBL) and anti-SYNCRIP (MAB11004; Merck Millipore) for supershift and ultrashift analysis. The electrophoresis was performed in native 6% polyacrylamide gel in 0.5× TBE. Transfer step was carried out at 25 V, for 15 min in 0.5× TBE, and the detection was performed following manufacturer’s instructions.
 
-## UV cross-linking RIP
+### UV cross-linking RIP
 
 CLIP was performed as reported in Battistelli et al., 2021. Immunoprecipitated miRNAs were reverse transcribed and analyzed by RT-qPCR amplifications. The list of primers is reported in Table 2. Primary antibodies for IP: anti-PCBP2 (RN025P; MBL), anti-SYNCRIP (MAB11004; Merck Millipore) and as negative controls Normal Rabbit IgG (12-370; Merck Millipore) or Normal Mouse IgG (12-371; Merck Millipore).
 
-## shRNA silencing
+### shRNA silencing
 
 Stable PCBP2 knockdown was achieved through infection with shRNAs cloned in pSUPER retro puro retroviral vector (Oligoengine). Viral supernatants were collected 48 h after transfection of 293gp packaging cells, filtered (0.45 mm), and added to hepatocytes. At 48 h post-infection, selection was performed with 2 µg/mL puromycin for at least 1 week before analysis. The sequence of shRNA scramble used as control was previously described (Pasque et al., 2011). The sequences of shRNA oligos used for cloning are reported in Table 4.
 
-## Motif scanning analysis
+**Table 4.**
+ Oligos for shRNA cloning in pSUPER.retro.puro vector.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCBP2</td>
+      <td>Sense GATCCCCGAGCAGACCCATCCATAATTTCAAGAGAATTATGGATGGGTCTGCTCTTTTTAAntisenseAGCTTAAAAAGAGCAGACCCATCCATAATTCTCTTGAAATTATGGATGGGTCTGCTCGGG</td>
+    </tr>
+    <tr>
+      <td>SYNCRIP</td>
+      <td>As reported in Santangelo et al., 2016</td>
+    </tr>
+    <tr>
+      <td>CTR</td>
+      <td>As reported in Santangelo et al., 2016</td>
+    </tr>
+  </tbody>
+</table>
+
+### Motif scanning analysis
 
 Murine mature miRNA sequences were retrieved from miRBase v22.1 database (Kozomara et al., 2019). The FIMO tool (Grant et al., 2011) was used to scan these sequences for occurrences of hEXO, extended CELL (the bottom motif identified in AML12 cells and reported in Figure 2 by Garcia-Martin et al., 2022) and core AUUA/G CELL motifs, encoded as Position Probability Matrices, with parameters --bfile --motif-- --norc and setting the p-value threshold to 0.1, 0.1, and 0.01, respectively.
 
-## Small RNA sequencing
+### Small RNA sequencing
 
 miRNA samples (two biological replicates per condition), to which the cel-miR-39 Spike-In (59000; NORGEN) was previously added, were sequenced at Procomcure Biotech GmbH. Sequencing libraries were prepared using the NEXTFLEX Small RNA-Seq Kit v4 (PerkinElmer). The sequencing reaction was performed on an Illumina NovaSeq 6000 instrument in 2 × 40 bp paired-end configuration, with a throughput of ~40 million read pairs per sample. FastqToolkit version 2.2.5 (BaseSpace Labs, 2023) was used to remove adapter sequences from the 3’ end and to filter out reads whose length and average quality after trimming were <10 and <30, respectively. Only forward reads were kept for downstream analyses. The mirPRo software version 1.1.4 (Shi et al., 2015), which utilizes NovoAlign (Li and Homer, 2010) as its alignment engine, was used to align reads to a reference composed of miRNA hairpin sequences downloaded from the miRBase v22.1 database with the addition of the spike-in and to count reads mapping to mature miRNAs. A count matrix was assembled, including only mature miRNAs with one or more reads in at least two cell and two EV samples. Differential abundance analysis was performed using the DESeq2 R package (Love et al., 2014). Size factors were estimated directly from spike-in counts. For each mature miRNA, a likelihood ratio test was conducted to assess differences between the EV/cell abundance ratios measured in the shPCBP2 and shCTR conditions.
 
-## miRNA target prediction and enrichment analysis
+### miRNA target prediction and enrichment analysis
 
 Enrichment analysis was performed using the R Bioconductor packages ClusterProfiler (v4.14.4), org.Mm.eg.db (v3.20.0), and AnnotationDbi (v1.68.0). The analysis was carried out on miRNA validated targets identified through TarBase v9.0 database (https://dianalab.e-ce.uth.gr/tarbasev9) and miRNA targets predicted with DIANA-MicroT Webserver (https://dianalab.e-ce.uth.gr/microt_webserver/#/), using miRBase v22.1 as miRNA resource. GO terms for Biological Processes were filtered using p-value and q-value cutoffs, respectively, of 0.05 and 0.2. Multiple testing correction was applied using the Benjamini–Hochberg method. Enriched GO terms were visualized using dotplots.
 
-## Ex vivo analysis
+### Ex vivo analysis
 
 Female C57BL/6J mice were purchased from Charles River and were of 12–14 weeks old by the time of use weighing 20–25 g. All animals were housed in ventilated cages (no more than five mice per cage) under specific pathogen‐free conditions and in a controlled environment (12 h daylight cycle, lights off at 18:00) with free access to food and water. Livers were dissected from mice, smashed using PBS, and strained (100 µm filter). Leukocytes, enriched using 40% Percoll, were plated at a concentration of 1 × 106/mL in complete RPMI, and supplemented with EVs-free 10% fetal calf serum, 100 U/mL penicillin/streptomycin, 1% glutamine, and with 20 ng/mL recombinant murine IL-2 (Peprotech) and 20 ng/mL recombinant murine IL-7 (Peprotech) at 37°C under 5% CO2. Leukocytes were cultured either alone or in the presence of 10 μg/mL control EVs or with the same amount of shPCBP2 EVs for 24 h at 37°C under 5% CO2. Brefeldin A 5 μg/mL (Merck Life Sciences) was added in the last 3 h of treatment.
 
@@ -220,10 +447,10 @@ Animal studies were conducted in accordance with all relevant ethical regulation
 
 The Italian Ministry of Health approved the use of animals (authorization no. 698/2021-PR).
 
-## Statistical analysis
+### Statistical analysis
 
 For the qRT-PCR analysis, and for ex vivo analysis, statistical differences were assessed with the one-tailed paired Student’s t-test using GraphPad Prism version 9 (GraphPad Software). Data are presented as mean ± SEM, and p-values<0.05 were considered statistically significant. For the statistical analysis of proteomic studies, Perseus software (version 1.6.7.0) after log2 transformation of the intensity data was used. Results were considered statistically significant at p<0.05.
 
-## Materials availability
+### Materials availability
 
 This study generated a new cell line (3A shPCBP2) and used previously generated cell lines (3A shCTR and 3A shSYNCRIP); we are available to share them under request without restrictions.

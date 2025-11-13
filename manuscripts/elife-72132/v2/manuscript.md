@@ -34,7 +34,7 @@ Here, we address the problem of anisotropic root growth and cell polarity patter
 
 ## Results
 
-## Anisotropic root growth results from the differential expansion of neighboring tissues
+### Anisotropic root growth results from the differential expansion of neighboring tissues
 
 Plant embryogenesis follows the fertilization of the egg, and successive formation of the zygote (Park and Harada, 2008). Initially, the zygote contracts transiently to later elongate, setting the embryonic axis within a few hours; after several cell divisions, the aerial and root parts are already clearly distinguishable (Kimata et al., 2016). The stem cell niche is initiated during the ‘heart’ developmental stage (ten Hove et al., 2015).
 
@@ -44,11 +44,31 @@ We explored through mechanical model simulations the potential mechanisms of ani
 
 We then hypothesized that perhaps differential growth of tissues at the root-shoot interface (RSI) during late embryogenesis could potentially trigger initial symmetry breaking, leading to anisotropic root growth (Figure 1A–B). To test this hypothesis, we performed model simulations first by assuming uniform growth of root and RSI (Figure 1A, Figure 1—video 1). In this scenario, we could only observe the strong isotropic growth at the basal part of the embryo (BPE) (Figure 1A). Anisotropy-generating elements such as CMTs are typically perpendicular to the maximal growth direction (Hamant et al., 2019), yet, the lack of any mechanical growth restriction leads to isotropic deformation. In contrast, faster growth of the BPE compared to the adjacent embryonic tissues yields a strong anisotropic expansion (Figure 1B and Figure 1—video 1). The plausible explanation for this is that a slowly growing RSI prevents the expansion of the faster-growing BPE in the radial direction; the BPE gradually enlarges longitudinally, generating deformation (strain). Then, this deformation feeds back on the BPE growth, creating the desired anisotropy. We tested these model predictions by quantifying the growth increase over 6 hr in radicle and hypocotyl of young seedlings using time-lapse confocal microscopy imaging (Figure 1C; Zhu et al., 2019). Indeed, the emerging root radicle grew ~4 x faster than the adjacent hypocotyl (Figure 1D) in the initial outgrowth phase which further supports our model.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Simulated root growth mechanics with uniform growth rates at the RSI (A). The RSI and the root are allowed to grow at the same rate, producing an isotropic growth pattern. (B) Simulated root outgrowth by assuming differential growth rate at the RSI. The root grows anisotropically since the growing cell deformation causes the gradual AF stabilization orthogonal to this deformation. All the cells are allowed to grow at the same rate (purely mechanical model). Simulations have been run for 300 time steps. The white lines represent the principal directions of growth. (C) Screenshots from time-lapse imaging of growing radicle with PIP-GFP plasma membrane marker (Zhu et al., 2019) for a total time of 6 hr (six time points). (D) Size increase per hour (in %) for adjacent organs radicle (root) and hypocotyl quantified from the time-lapse confocal imaging of three independent plants (n = 3). **p-value = 0.0015 a one-way ANOVA with post-hoc Tukey’s HSD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** thaliana embryo into a detailed mesh using MorphoGraphX.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In contrast to the typical force-based methods, PBD skips the velocity layer and calculates an object’s positions according to the set of constraints. (B) Schematic examples of PBD constraints. A simple template comprising two square-shaped triangulated cells: simulations demonstrate the effect of projecting each of the PBD constraints onto the cellular mesh.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) (A) Simulated root outgrowth with uniform growth rates at the RSI. (B) Simulated root outgrowth by assuming differential growth rates at the RSI. Cell coloring indicates the AF strength. In both simulations, the chemical effect of auxin on cell growth is not included and all the cells are allowed to grow at the same rate. The simulation has been run for 300-time steps. The white lines represent the principal directions of growth.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Reference root growth simulation as described in Figure 1A. (B) Subsequent steps of the simulation are shown in (A) after the gradual introduction of uniform growth at the RSI. Anisotropy is maintained even after the differential cell growth assumption is relaxed.
+
 To further confirm that growth anisotropy indeed emerges from differential growth rates, and not from an existing conflict of growth direction, we quantified the degree of cellular anisotropy in both scenarios and found that anisotropy forms gradually without predominant growth conflicts, but is rather dictated by differential growth at the RSI (Figure 1—figure supplement 3). Finally, we tested the robustness of the model by relaxing the differential growth assumption during the late outgrowth stimulation (Figure 1—figure supplement 4). After a short period of growth after which the anisotropy is established, the organ is still capable of maintaining anisotropic elongation even if differential growth at the RSI is abolished (Figure 1—figure supplement 4). This result further strengthens the notion that the differential growth between adjacent tissues is, in principle, sufficient to generate root growth anisotropy.
 
 In summary, model simulations and experiments jointly suggest that anisotropic root growth results from differential growth rates of neighboring tissues. This oriented growth further restricts root elongation, primarily along the longitudinal axis.
 
-## Organ growth patterns arise through the interplay between anisotropic growth and polar auxin flow
+### Organ growth patterns arise through the interplay between anisotropic growth and polar auxin flow
 
 Our purely mechanical growth model suggests that differential growth at the RSI could trigger anisotropic root growth (Figure 1). In A. thaliana root, cellular auxin levels play a key role in regulating growth, and auxin levels can be tuned through intercellular transport, involving auxin influx and efflux carriers (Adamowski and Friml, 2015). While auxin influx carriers of the AUX/LAX family are typically uniformly distributed around the cell membranes (Kleine-Vehn and Friml, 2008), PIN auxin efflux carriers show polar subcellular localization in the root that directs the auxin flow rootward or shootward (Wisniewska et al., 2006). Also, PIN proteins are prominent markers of cell polarity that continuously recycle between the plasma membrane and endosomal compartments (Kleine-Vehn et al., 2011). The mechanisms underlying PIN trafficking are still poorly understood, however, chemical treatments of actin, microtubules, and cell wall components with disruptive agents suggest the involvement of these cytoskeleton components in the regulation of PIN polar trafficking (Baskin, 2005; Kleine-Vehn et al., 2008; Feraru et al., 2011).
 
@@ -59,6 +79,38 @@ Auxin modulates the trafficking of PIN proteins in a feedback-dependent manner b
 In the first scenario, cells would sense auxin flux through the membrane (also called ‘with-the-flux model’)(Feugier and Iwasa, 2006; Mitchison, 1997; Rolland-Lagan and Prusinkiewicz, 2005; Stoma et al., 2008) and adjust PIN allocation to the plasma membrane in a positive feedback-dependent manner (Figure 2—figure supplement 1A, B). Despite that, the exact molecular mechanism behind auxin flux sensing is to be demonstrated and it may involve membrane-associated protein kinases (Hajný et al., 2020; Marhava et al., 2018; Michniewicz et al., 2007). Therefore, we explored a second scenario for PIN polarization that we named ‘regulator-polarizer’ (Figure 2—figure supplement 1C, D). The regulator-polarizer model implements a potential mechanism behind auxin flux sensing (Feugier and Iwasa, 2006; Mitchison, 1997; Rolland-Lagan and Prusinkiewicz, 2005; Stoma et al., 2008). Briefly, a putative regulator (i.e. a general phosphatase [Michniewicz et al., 2007]) detects auxin passing through a plasma membrane, it becomes activated and freely diffuses in the plasma membrane. This regulator inhibits a polarizer (e.g. a dedicated protein kinase that phosphorylates PIN Hajný et al., 2020; Michniewicz et al., 2007) that in turn activates PINs. Therefore, at the side where the concentration of regulator is high enough to overcome the polarizer, no PINs are recruited.
 
 Our model combines exo- or endocytosis and lateral diffusion of PIN proteins into one general trafficking term, which is a crude simplification required to reduce model complexities (see Materials and methods for more details, Auxin transport module description). However, to incorporate quantitative data in the model, PIN recruitment parameters were fitted to the experimentally derived kinetics of PIN trafficking after cell division (Figure 2K; Glanc et al., 2018). Currently, we do not distinguish in our model between different PIN families (Sauer and Kleine-Vehn, 2019), instead, all PINs are distributed according to one of the two PIN polarization scenarios (Figure 2—figure supplement 1). The only exception to this general rule is that PINs in the columella are distributed uniformly among membrane sections, to reproduce the observed PIN3 distribution (Friml et al., 2002). Given that maximal PINs abundance threshold is the same for all cell types, the fact that columella cells redistribute PINs over the totality of the membrane and not to a specific polar section causes lower overall PINs levels when compared to experimental observations (Blilou et al., 2005). Other assumptions of our model are the uniform distribution of AUX/LAX carriers (Swarup et al., 2001) in all cell types, and the omission of other transporters such as ABCB transporters (Cho and Cho, 2013).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-v2.jpg)
+
+**Figure 2.:** (A) Initial embryonic set point. Locations of auxin influx (auxin source, blue) and evacuation (auxin sinks, red) from the embryo are shown. (B, D) Model simulations predict a time evolution of cell growth rates (bright cyan color) and principal growth directions (white lines). Ongoing cell division events are marked by black regions. (C, E) Dynamics of auxin distribution (blue color), auxin flow direction (arrows,) and PIN localizations (red). (F, G) Zoom on basal meristem (F) and root apical meristem (G). The model correctly reproduces very detailed PINs localizations including bipolar PIN2 localization in the cortex (F). (H–J) Profiles of average values of interest across all cell files along the longitudinal axis. (H) Growth rate profile along the root axis. The fastest-growing region is located in the apical meristem as observed experimentally (Bassel et al., 2014). (I) Cell division frequencies along the root axis. The majority of cell divisions occur in the apical meristem. (J) Auxin concentration in the vascular tissues (dashed blue line) and auxin concentration in the non-vascular tissues (external tissues and the root tip, dotted blue line) along the root axis. Most of the auxin is concentrated in the root tip as observed in experiments (Overvoorde et al., 2010). Time-lapse profile of PINs re-localization on the membranes after cell division event. PINs re-localization is completed in approximately 5–6 hr after cell division (Glanc et al., 2018). All simulations have been run until 1500 time steps were reached.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Single-cell model simulation of the ‘auxin-flux’ model. In this simple single-cell model, there are only two species of molecules: auxin (light green line) and PINs (red line). The auxin-flux model follows a simple rule: auxin application on one side of the cell wall (dotted line) induces PINs polarization on the other side of the cell. (B) Model simulation using the ‘auxin-flux’ model (A) on a simplified root-like grid structure. The ‘auxin-flux’ method is capable of producing a realistic auxin flow inside the grid. Auxin was initially applied to the central cells of the top layer of the grid. (C) Single-cell model simulation of the ‘regulator-polarizer’ method. This model represents a molecular expansion of the ‘auxin-flux’ model (A). This model includes four molecular species: auxin (light green line), PINs (red line), a regulator (dark green line), and a polarizer (blue line). Auxin application on one side of the cell wall (dotted line) induces recruitment of regulators proteins which inhibits the PIN polarizer pushing it towards the opposite side of the cell surface. The polarizer in turn fosters the recruitment of PINs molecules on that side of the cell. (D) Model simulation with the ‘regulator-polarizer’ method (C) on a simplified root-like grid structure. The ‘regulator-polarizer’ model was capable of producing an auxin flow inside the root. Auxin was initially applied to the central cells of the top layer of the grid.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Digitized microscopy image of an A. thaliana heart-stage embryo processed through MorphoGraphX (Barbier de Reuille et al., 2015). Cell types are shown with different colors, while predicted auxin flow direction is depicted with the arrow. (B) Schematics of a mature A. thaliana root. The direction of auxin transport is visualized with blue arrows. Growth anisotropy is depicted with a bidirectional black arrow. (C) Cells are under constant internal turgor pressure. Auxin induces cell walls relaxation and allows cell expansion. Mechanical deformation(strain) imposed on root cell walls forces the reorganization of the anisotropy factor (AF), which in turn maintains the anisotropic growth. (D) Cell division occurs according to the cell polarity defined by the AF vector. Cell division plane is orthogonal to cell polarity; exceptions to this rule are cortex/endodermis and LRC/epidermis initials. (E) PINs localization is defined by AF orientation and auxin flux direction. Auxin feedback on PINs localization is determined by two equivalent mechanisms; the total auxin flux through the plasma membrane (the ‘auxin-flux’ model) or inhibition of PIN polarizer (e.g. kinase) through an auxin-driven regulator (e.g. phosphatase) (the ‘regulator-polarizer’ model).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The diagram shows the main components of the current model and their connections: The turgor pressure forces isotropic cell expansion driven by cell wall relaxation induced by intracellular auxin. Cell expansion causes mechanical deformation of the cell walls that triggers anisotropy factor (AF) reorganization. AF restricts cell expansion along the axis, producing anisotropic growth. Cells divide once the cell area has reached a specific threshold. AF alignment maintains PIN polarity (i.e. by causing the membrane bending stress), reinforcing the auxin-dependent PINs polarization. Polar PINs efflux carriers and non-polar AUX/LAX influx carriers mediate the auxin distribution along the root.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Individual cells growth rate during model simulation (left figure) and anisotropy index along the root axis (right plot). The anisotropy index has been calculated as the ratio of growth directions. A high anisotropy index indicates a greater tendency of the cell for the anisotropic growth, in contrast to a lower index which denotes a cell tendency toward isotropic growth. The simulation has been run for 1500 time steps.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Initial embryonic set point. Locations of auxin influx (auxin source, blue) and evacuation (auxin sinks, red) from the embryo are shown. (B, D) Model simulations predict a time evolution of cell growth rates (bright cyan color) and principal growth directions (white lines). Ongoing cell division events are marked by black regions. (C, E) Dynamics of auxin distribution (blue color), auxin flow direction (arrows), and PIN localization (red). (F, G) Zoom on basal meristem (F) and apical meristem (G) of the root. The model correctly reproduces very detailed PINs localizations including bipolar PIN2 localization in the cortex (F). (H–J) Profiles of average values of interest across all cell files along the longitudinal axis. (H) Growth rate profile along the root axis. The fastest-growing region is located in the apical meristem as observed experimentally (Bassel et al., 2014). (I) Cell division frequencies along the root axis. The majority of cell divisions occur in the apical meristem. (J) Auxin concentration in the vascular tissues (dashed blue line) and auxin concentration in the non-vascular tissues (external tissues and the root tip, dotted blue line) along the root axis are shown. Most of the auxin is concentrated in the root tip as observed in experiments (Overvoorde et al., 2010). Time-lapse profile of PINs re-localization on the membranes after cell division event. PINs re-localization is completed in approximately 5–6 hr after cell division (Glanc et al., 2018). The full simulation has been run for 1500 time steps.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** The wild-type simulation (left) versus root simulations where specific rules for the stem cell niche are removed from the model (right).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** In these simulations (B–D) the auxin maximum does not form due to disrupted PIN subcellular localizations.
 
 Previous modeling attempts combined auxin transport with tissue mechanics to explain a unidirectional PIN polarity pattern associated with the shoot apical meristem but operated on static non-growing templates (Heisler et al., 2010). However, such models have never been applied to root development, in particular in an organ growth context. We combined the biomechanical model (Figure 1) and the polar auxin transport component into a coherent mechanistic framework (Figure 2—figure supplement 2, Figure 2—figure supplement 3), and tested whether this framework is capable of generating the complex PIN polarity network and sustained anisotropic root growth.
 
@@ -78,23 +130,51 @@ Another intriguing emergent property of the model was the bidirectional (shootwa
 
 Taken together, computer simulations indicate a plausible mechano-biochemical model that accounts for auxin-dependent anisotropic root growth and PIN polarity establishment.
 
-## Shoot-independent root growth requires auxin reflux, local auxin production, and balance in auxin levels
+### Shoot-independent root growth requires auxin reflux, local auxin production, and balance in auxin levels
 
 Our model simulations reconstitute the complex PIN polarity network in the simulated root growth (Figure 2F–G, Figure 2—figure supplement 5F-G), suggesting the presence of lateral auxin transport from the external tissues (epidermis and LRC) into the cortex and the stele (Figure 2E, Figure 2—figure supplement 5E). This ‘bipolar’ PIN localization (Figure 2F, Figure 2—figure supplement 5F) could drive polar auxin redistribution towards inner tissues, that is consistent with the phenomenon described as the reflux loop (Benková et al., 2003; Grieneisen et al., 2007; Paponov et al., 2005). Although not covered by our model, this lateral auxin transport between the epidermis and cortex might be further enhanced by plasmodesmata-dependent diffusion (Mellor et al., 2020). Yet, it is a directionality of transport mediated by PINs that is critical for the growth coordination of adjacent epidermis and cortex tissues (Ötvös et al., 2021). How this reflux phenomenon would operate on realistic tissue geometries constrained by growth mechanics remains, however, unclear.
 
 To further investigate the importance of a dynamic PIN localization network for the sustained growth of the root, we performed model simulations by artificially preventing lateral auxin transport (Figure 3A and B). We found that a negligible amount of auxin enters the cortex, but no lateral auxin influx originated from the epidermis. Additionally, the bipolar PIN localization was absent in these ‘no-reflux’ simulations (Figure 3C and Figure 3—video 1) compared to the reference model (Figure 3D and Figure 3—video 1). This finding confirms the importance of PIN-mediated lateral transport for auxin redistribution in inner root tissues. However, the lack of auxin recycling in the meristem does not seem to significantly reduce root growth rates as long as auxin is supplied from the shoot (Figure 3E). Therefore, to investigate the role of shoot-derived auxin source in the root growth, we artificially separated the root from the rest of the plant by removing the shoot-derived auxin source (Figure 3A–B, bottom panel). In this simulation where there was neither reflux nor bipolar PIN localization, root growth could not be sustained over a prolonged time and the auxin inside the root eventually disappeared (Figure 3E). On contrary, the reflux scenario allows for the maintenance of auxin levels over a prolonged period even without the shoot-derived auxin source being removed. Root growth can be further strengthened by incorporating auxin biosynthesis in the QC cells (Stepanova et al., 2008), which in theory could sustain root growth almost indefinitely (Figure 3E–F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Schematics (A and B) and model simulations (C and D) with the disabled auxin reflux-loop (A, C) or wild-type-like scenario with self-emerging reflux (B, D). Only the in reflux scenario auxin moves from the epidermis back into the vascular tissues sustaining the long-term root growth. (E) Growth rate profiles of model simulations after primary auxin source removal, in four different scenarios. The plot shows the total root growth rate over time. In the absence of an auxin reflux-loop, the root is unable to sustain growth for a long period (solid lines) even if a secondary auxin source in the root tip was introduced (solid blue line). On the contrary, the presence of an auxin reflux-loop sustains the root growth for prolonged periods (dotted lines), further augmented by the presence of a secondary auxin source in the root tip (dotted blue line). (F) Auxin concentration profiles of model simulations after primary auxin source removal. The plots show the average radial auxin concentration among the root cells. In the absence of an auxin reflux-loop, the average auxin concentration in the root quickly drops to zero (solid red line). Alternatively, the presence of an auxin reflux-loop allows the root to maintain an auxin reserve for prolonged periods (dotted blue line). The presence of a secondary auxin source in the root tip preserves an auxin reservoir and sustains root growth in the long term (blue lines). The model simulations have been run for 1000 time steps.
+
 These results together indicate that the presence of an auxin reflux loop mediated by bidirectional PIN transport and diffusion in the cortex/epidermis is capable to sustain root growth for prolonged periods.
 
 Keeping the correct balance in auxin levels might also be important to sustain root growth mechanics. To test how alterations in auxin levels alone would impact root growth dynamics, we successively simulated a series of external auxin applications for 6 hr by increasing the overall auxin content of the root (Figure 4A–B and Figure 4—video 1). Model simulations show the sequential inhibition and reinstatement of root growth after cyclic auxin removal (Figure 4C). A similar trend was observed for a shorter period of stimulation (Figure 4—figure supplement 1). Notably, these model predictions replicate the experimentally observed temporal inhibition of root growth by external auxin applications (see Figure 1f in Fendrych et al., 2018).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig4-v2.jpg)
+
+**Figure 4.:** (A) Successive application of external auxin in model simulations according to a predefined cycle. Root growth is inhibited by the introduction of high amounts of auxin and subsequently restored after the external application is stopped as seen in experiments (Fendrych et al., 2018). (B) Schematic of the in silico experiment. To simulate auxin treatment as described in Fendrych et al., 2018, we introduced external auxin inside the root (by inducing excessive auxin synthesis at individual cell level) at predefined time points to inhibit root growth and subsequently removed to allow root growth re-establishment. (C) Time-lapse profile of root growth rate (red line) and average cell auxin concentrations (blue line). The cycles of external auxin applications inhibit and restore root growth, respectively. The simulation has been run for 1500 time steps.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Successive applications of 10 nM of external auxin in model simulations according to a predefined cycle of 1 hr.
+
 Our analysis indicates that our root model can correctly recapitulate experimentally observed modulation of root growth response to externally applied auxin. Also, our model suggests that the balance in auxin content maintained by the network of PIN polarity is critical for the sustained growth of the root meristem.
 
-## Model simulations reproduce experimentally observed phenotypes of auxin-mediated growth and mechanical perturbations
+### Model simulations reproduce experimentally observed phenotypes of auxin-mediated growth and mechanical perturbations
 
 Our analysis indicates that the mechano-biochemical framework for root meristem growth could be potentially used to test dynamic perturbations of root growth, such as genetic alterations and mechanical manipulations, guiding the further design of wet-lab experiments. To test the predictive power of our model we investigated how alterations of auxin transport parameters could perturb patterning dynamics and whether these predictions would match experimental observations.
 
 PIN2 is an important auxin efflux carrier expressed in the most external root tissues: cortex, epidermis, and lateral root cap (Adamowski and Friml, 2015), and steers root gravitropic responses (Rahman et al., 2010). PIN2 loss-of-function results in defective gravitropic response largely because of disrupted auxin transport dynamics (Dhonukshe et al., 2010). To test whether our model could predict the alterations of auxin distribution observed in pin2 mutants, we performed computer simulations by reducing PIN expression rate in the epidermis, cortex, and lateral root cap (Figure 5A–B and Figure 5—video 1). The reduced levels of PINs in these outermost tissues resulted in auxin accumulation in the lateral root cap on both sides of the root (Figure 5B), which was absent in the wild-type simulations (Figure 5A). These predictions mimic experimental observations of pin2 knockdown mutant (see Figure 2f in Liu et al., 2018). Similarly, the reduced expression of PIN-dependent transport in the inner vascular tissues in our model predicts the alteration of auxin distribution and growth defects (Figure 5—figure supplement 1A and Figure 5—video 2). This prediction could reflect the scenario of reduced levels of vascular PINs (PIN knockdown) as opposed to the full knockout which is lethal (Vieten et al., 2005). Finally, we tested how a general knockdown of auxin cellular influx would impact root growth. Severely reducing auxin cellular influx (by 90 % reduction of AUX/LAX expression) led to lower auxin content, reduced sensitivity to auxin, and thereby slow root growth (Figure 5—figure supplement 1B and Figure 5—video 3) as previously suggested (Inoue et al., 2016; Liu et al., 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig5-v2.jpg)
+
+**Figure 5.:** (A) Reference model simulation of the wild-type scenario. The figure displays a schematic representation of the auxin flow inside the root (left picture), cell growth rate (right picture). The bottom graph shows the profiles of auxin concentration in the vascular tissues (dashed blue line), auxin concentration in the non-vascular tissues (dotted blue line,) and growth rate (red line) along the root axis. (B) Model simulation of the pin2 knockdown mutant. In silico pin2 mutant shows strongly reduced PINs expression in the lateral root cap, epiderm, is, and cortex. Note that acropetal auxin flow is severely affected and auxin tends to accumulate in the lateral tissues as observed in experiments (Dhonukshe et al., 2010). (C) Mechanical removal of lateral root cap resulted in the strong accumulation of auxin inside the root tip, largely because auxin cannot flow anymore shootward through outermost tissues whereas growth rate was not significantly affected. (D) Simulation of root tip cutting. Removing the root tip results in a general increase of auxin level in the central vascular tissues, as a consequence of the disappearance of acropetal auxin flow. PINs localization in the external tissues is also affected due to the loss of incoming auxin flow. (E) Simulated CMTs disruption (i.e. oryzalin treatment or similar) on root growth and polarity. CMTs disruption was simulated by inducing a fast degradation of the anisotropy factor. Cells lose polarity and growth anisotropy, causing the root to expand and bulge radially as observed in experiments (Baskin et al., 1994). Notice that the top cell row is considered to be a static attachment of the root to the substrate and therefore its growth is not affected during the simulation. (F) Legend and scale bars of auxin concentration and cell growth rate. ‘Auxin conc. Vasc.’ indicates auxin concentration in the vascular central tissues (the vascular cells and the pericycle), while ‘Auxin conc. non-Vasc.’ indicates auxin concentration in the remaining external tissues and the root tip. The simulations have been run for 1500 time steps.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Model simulations of the vascular PINs reduction. PINs expression was reduced in the vascular tissues, pericycle, and endodermis, to maintain 10 % PIN activity. The model predicts that auxin levels in the root are strongly depleted as the hormone flow is severely affected by PIN down-regulation. (B) Simulated aux1 knockdown mutant. AUX/LAX expression was reduced by 90 % in every cell. This simulated mutant present decreased auxin levels and root growth. (C) Model simulations of QC ablation. Removing the QC cells results in an increase of auxin level in the vascular initial cells above the ablated QC. The model simulations display the disappearance of acropetal auxin flow, as much less auxin each and accumulate in the root tip. (D) Legend and scale bars of auxin concentration and cell growth rate. ‘Auxin conc. Vasc.’ indicated auxin concentration in the vascular central tissues (the vascular cells and the pericycle), while ‘Auxin conc. non-Vasc.’ indicates auxin concentration in the remaining external tissues and the root tip. All simulations have been run for 1500 time steps.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Embryo templates extracted from the following studies Nieuwland et al., 2016 (A); Scheres et al., 1994 (B). The particular choice of an initial embryo template has no impact on the emergence of root growth and auxin distribution. The simulations have been run for 1500 time steps.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/72132/elife-72132-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Model testing for parameter kP, the coefficient of contribution for auxin flow to PIN sensitivity (Equation. 14). The values tested are (from the left to right): 0, 1, 3 (default wild-type), 4, and 5. (B) Model testing for parameter K1auxin, the auxin-induced cell wall relaxation coefficient (Equation. 27). The values tested are (from the left to right): 0.005, 0.01, 0.05 (default wild-type), 0.1 and 0.2. The simulations have been run for 1500 time steps.
 
 Next, we tested how local mechanical disruptions of QC, root tip, and LRC would alter the model outcome, and whether this outcome agrees with experimental observations. The QC is a small group of cells (four to seven in the A. thaliana root) located in the middle of the root apical meristem (Doerner, 1998). The QC divides infrequently and grows at an extremely low rate (Nawy et al., 2005). The QC is known to be the source of signals that inhibits differentiation of the surrounding stem cells (van den Berg et al., 1997). QC cells define the correct location of the stem cell niche but also behave as independent cells by self-renewing and replenishing initials that have been displaced from their position (Kidner et al., 2000). QC laser ablation is not lethal for the root as a new QC and stem niche are quickly reestablished a few cells above the wound in correlation with increased auxin accumulation (Sabatini et al., 2003). We replicated the same experiment in silico by removing the two QC cells from the model during a simulation (Figure 5—figure supplement 1C and Figure 5—video 4). Compared to the wild-type simulations (Figure 5A), the typical auxin accumulation in the root tip is depleted, and auxin reflux in the LRC was significantly reduced, while most of the auxin coming from the shoot tends to concentrate in the cells above the ablation, exactly as observed in experiments (see Figure 5 in Reddy et al., 2007). Similarly, removal of the LRC led to sharp auxin accumulation in the root tip (Figure 5C and Figure 5—video 5), largely matching empirical data (Tsugeki and Fedoroff, 1999).
 
@@ -118,21 +198,21 @@ Taken together, our study highlights the general design principles underlying ro
 
 ## Materials and methods
 
-## Cellular mesh segmentation and processing
+### Cellular mesh segmentation and processing
 
 The process of segmentation of microscopy images with MorphoGraphX is broken into several steps:
 
-## General model description
+### General model description
 
 The root model was created using MorphoDynamX, the second generation of the MorphoGraphX software (Barbier de Reuille et al., 2015). This modeling framework is based on an advanced data structure called Cell Complexes (Karwowski and Prusinkiewicz, 2004; Prusinkiewicz and Lane, 2013) that expands the previous methodology called Vertex-Vertex complexes (Federl and Prusinkiewicz, 1999) to model subdividing geometries in two and three dimensions. MorphoDynamX provides the user interface and API interface to the Cell Complexes. Cells are represented as triangulated polygons obtained through the segmentation and mesh processing pipeline described in(Cellular mesh segmentation and processing). Cells are composed of vertices, edges, and faces. Each of these three base elements (vertices [0 dimension], edges [one dimension], and faces [two dimensions]) has its biological interpretation and possesses different attributes and properties that allow the model to run and produce dynamically growing organ structures. Perimeter edges represent the cell membrane while internal edges mimic the cell cytoskeleton (i.e. actin, CMTs). These edges store both mechanical and biochemical attributes.
 
 To create a continuous flow and recycling of auxin inside the root we assumed that the cells at the very top of the mesh are considered either sources or sinks; the central row of cells represent the source coming from the aerial side of the embryo, while the most external epidermal cells act as sinks by moving auxin from the root back to the embryo (Möller and Weijers, 2009). The mechanics of root growth are implemented using Position-Based Dynamics (PBD) (Müller et al., 2007) (see Position-based dynamics implementation). PBD simulates physical phenomena such as material deformation, fluids, fractures, or material rigidness (Müller et al., 2007). PBD allows overcoming the typical limitations of force-based models by directly updating positions of vertices based on a set of biologically sound constraints. Whereas chemical processes are numerically solved using the Euler integration method (Butcher, 2007).
 
-## Time-lapse confocal imaging of young seedlings
+### Time-lapse confocal imaging of young seedlings
 
 Confocal laser-scanning micrographs of 35 S::PIP2-GFP transgenic lines were obtained as published elsewhere(Zhu, Q. et al, 2019). Briefly, seeds were stratified for 3 days, seed coat was removed and peeled embryos were imaged using a vertical Zeiss LSM700 microscope with a 488 nm argon laser line for excitation of GFP fluorescence. Emissions were detected between 505 and 580 nm with the pinhole at 1 Airy unit, using a 20 x air objective. Images were taken every 20 min and Z-stack maximal projections were done using ImageJ software.
 
-## Computer model assumptions
+### Computer model assumptions
 
 The root of A. thaliana is made of several radially organized layers of morphologically similar cells that can be distinguished in radial and longitudinal sections (Dolan et al., 1993; Scheres et al., 1994). The central vascular tissue is composed of a bundle of thin and elongated cells surrounded by the pericycle - a cylindrical sheath protecting the stele. The pericycle is also the origin of emerging lateral organs (Lavenus et al., 2013; Péret et al., 2009). The central cylinder (stele) is enclosed by three adjacent tissues endodermis, cortex, and epidermis. The gravity-sensing columella is located at the very tip of the root and is composed of four layers of differentiated cells (Kumpf and Nowack, 2015). The meristem of the mature root is covered by the lateral root cap which protects the meristem and is periodically shed and replaced by new emerging layers (Di Mambro et al., 2019; Kumar and Iyer-Pascuzzi, 2020). Finally, the root tip stores a group composed of undifferentiated stem cells that divide asymmetrically and replenish the upper sections of individual tissues (Stahl and Simon, 2009). Therefore, this precise spatial-temporal arrangement of tissues in the root requires the coordination of cell polarity, anisotropic growth, and asymmetric cell divisions.
 
@@ -144,7 +224,326 @@ Based on known characteristics of A. thaliana root, we integrate the following b
 
 All model components are presented in a comprehensive model diagram (Figure 2—figure supplement 2 and Figure 2—figure supplement 3). Optimal parameters values were chosen by testing over a large plausible range of values for each parameter using high-throughput simulations on a computing cluster. Parameters description and values are listed in Table 1. Non-linearities of higher order used in some formulas simulate a threshold memory and signal amplification effects (increased sensitivity) that would result from multi-cascade signaling events: that is kinases and phosphatases such as MAPK (O’Shaughnessy et al., 2011).
 
-## Anisotropy factor (AF) and cell polarity
+**Table 1.**
+ Model parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Mechanical model component</td>
+    </tr>
+    <tr>
+      <td>RAF</td>
+      <td>AF reorientation rate</td>
+      <td>0.02</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>DAF</td>
+      <td>AF degradation rate</td>
+      <td>0.01</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td colspan="4">Auxin transport model component</td>
+    </tr>
+    <tr>
+      <td>bIAA</td>
+      <td>basal auxin production rate</td>
+      <td>0*</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>DIIAA</td>
+      <td>auxin diffusion rate in the intercellular space</td>
+      <td>1</td>
+      <td>μm2/h</td>
+    </tr>
+    <tr>
+      <td>dIAAb</td>
+      <td>basal auxin degradation rate</td>
+      <td>0.0125, Perianez-Rodriguez et al., 2021</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>dIAAMax</td>
+      <td>maximum auxin degradation rate coefficient</td>
+      <td>0.125</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>KIAAMax</td>
+      <td>coefficient for half-max auxin degradation</td>
+      <td>5</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>KAUX1</td>
+      <td>coefficient of auxin importing rate by AUX/LAX</td>
+      <td>1</td>
+      <td>μm/h</td>
+    </tr>
+    <tr>
+      <td>KPIN</td>
+      <td>coefficient of auxin export rate by PIN</td>
+      <td>1.4, Mironova et al., 2010</td>
+      <td>μm/h</td>
+    </tr>
+    <tr>
+      <td>bAUX1</td>
+      <td>AUX/LAX basal expression</td>
+      <td>1</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>AUX1expr</td>
+      <td>auxin-induced AUX/LAX maximal expression</td>
+      <td>30</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>AUX1K</td>
+      <td>auxin-induced AUX/LAX half-max expression</td>
+      <td>0.01</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>AUX1tr</td>
+      <td>AUX/LAX trafficking rate</td>
+      <td>1</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>AUX1Max</td>
+      <td>maximum concentration of AUX/LAX</td>
+      <td>2</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>AUX1MaxMem</td>
+      <td>maximum concentration of AUX/LAX on membrane sections</td>
+      <td>15</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>dAUX1</td>
+      <td>AUX/LAX degradation rate</td>
+      <td>0.08</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>bPIN</td>
+      <td>PIN basal expression</td>
+      <td>0.2, Mironova et al., 2010</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>PINexpr</td>
+      <td>auxin-induced PIN maximal expression</td>
+      <td>50</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>PINK</td>
+      <td>auxin-induced PIN half-max expression</td>
+      <td>0.05</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>PINtr</td>
+      <td>PIN trafficking rate</td>
+      <td>1</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>PINMax</td>
+      <td>maximum PIN concentration inside the cell</td>
+      <td>2</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>PINMaxMem</td>
+      <td>the maximum concentration of PIN on membrane sections</td>
+      <td>15</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>dPIN</td>
+      <td>PIN degradation rate</td>
+      <td>0.08, Mironova et al., 2010</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>dPINmax</td>
+      <td>maximum PIN degradation rate on membranes</td>
+      <td>0.8</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>kAF</td>
+      <td>coefficient for AF orientation contribution to PIN sensitivity</td>
+      <td>†</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>kP</td>
+      <td>coefficient for auxin flow contribution to PIN sensitivity</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>kAFP</td>
+      <td>coefficient for interaction AF orientation+ auxin flow contribution to PIN sensitivity</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>kG</td>
+      <td>coefficient for cell geometry contribution to PIN sensitivity</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Kaf</td>
+      <td>half-max AF orientation contribution to PIN sensitivity</td>
+      <td>0.5</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Kgeom</td>
+      <td>half-max cell geometry contribution to PIN sensitivity</td>
+      <td>0.5</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="4">PIN polarization parameters</td>
+    </tr>
+    <tr>
+      <td>Kflux</td>
+      <td>auxin-flux half-max contribution on PIN sensitivity</td>
+      <td>0.1</td>
+      <td>nM μm</td>
+    </tr>
+    <tr>
+      <td>bREG</td>
+      <td>regulator basal expression</td>
+      <td>10</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>bPOL</td>
+      <td>polarizer basal expression</td>
+      <td>10</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>dPOL</td>
+      <td>regulator decay rate</td>
+      <td>0.08</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>dREG</td>
+      <td>polarizer decay rate</td>
+      <td>0.08</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>Kregtr</td>
+      <td>regulator base trafficking rate</td>
+      <td>1</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>Kpoltr</td>
+      <td>polarizer base trafficking rate</td>
+      <td>0.01</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>Dreg</td>
+      <td>regulator diffusion rate</td>
+      <td>1</td>
+      <td>μm2/h</td>
+    </tr>
+    <tr>
+      <td>Dpol</td>
+      <td>polarizer diffusion rate</td>
+      <td>0.1</td>
+      <td>μm2/h</td>
+    </tr>
+    <tr>
+      <td>KdispPOL</td>
+      <td>polarizer displacement rate</td>
+      <td>10</td>
+      <td>h–1</td>
+    </tr>
+    <tr>
+      <td>KregIAA</td>
+      <td>regulator auxin-induced half-max trafficking rate</td>
+      <td>0.01</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>KpolIAA</td>
+      <td>polarizer auxin-induced half-max trafficking rate</td>
+      <td>0.01</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>KregGradT</td>
+      <td>regulator max trafficking rate activation by auxin gradient</td>
+      <td>1</td>
+      <td>nM/h</td>
+    </tr>
+    <tr>
+      <td>KregGradK</td>
+      <td>regulator auxin gradient-induced half-max trafficking rate</td>
+      <td>1</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>KpolIP</td>
+      <td>half-max value of polarizer contribution on PIN sensitivity</td>
+      <td>0.1</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td colspan="4">Auxin-dependent root growth parameters</td>
+    </tr>
+    <tr>
+      <td>kEMax</td>
+      <td>cell wall maximum stiffness</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>K1auxin</td>
+      <td>half-max cell wall relaxation coefficient by auxin</td>
+      <td>0.05</td>
+      <td>nM</td>
+    </tr>
+    <tr>
+      <td>K2auxin</td>
+      <td>half-max cell wall stiffening coefficient by auxin</td>
+      <td>3</td>
+      <td>nM</td>
+    </tr>
+  </tbody>
+</table>
+
+_*auxin basal expression is set to zero for the default wild type model. However, when local production in the QC is necessary, the value is set to 10.†this parameter is set to 0 in the default model and included in the formulas only for completeness._
+
+### Anisotropy factor (AF) and cell polarity
 
 The processes that define cell polarity in plants are not well understood (Dettmer and Friml, 2011), and are considered to be different from those in animals. Plant cells display clear polarity patterns when observed to grow anisotropically or by targeting proteins to specific regions in the cell membranes such as PIN proteins (Yang, 2008). Apart from PIN protein (Wisniewska et al., 2006), several other prominent cell polarity markers have been identified in plants, such as putative regulators of cell division orientation BASL (Pillitteri et al., 2011) and SOSEKI (Yoshida et al., 2019). So far, the only well-characterized regulators of PIN trafficking are the AGCVIII kinases and PP2A phosphatases (Barbosa et al., 2018), components of the phosphorylation on/off switch aimed at the central hydrophilic loop of PINs (Michniewicz et al., 2007). Cell polarity may be also influenced by a mechanical stimulus, nutrient availability, and pathogen responses (Adamowski and Friml, 2015).
 
@@ -152,47 +551,97 @@ Root cells present a clear apical-basal (shootward-rootward) polarity, which all
 
 Key model assumptions regarding mechanics of cell growth and polarity are listed below:
 
-## Auxin transport module description
+### Auxin transport module description
 
 Previously proposed models of auxin polar transport can be divided into two main classes: flux-based and concentration-based models (van Berkel et al., 2013; Wabnik et al., 2011). Briefly, flux-based canalization models assume that PIN proteins polarize according to the direction of auxin flux (Alim and Frey, 2010; Feugier et al., 2005; Feugier and Iwasa, 2006; Fujita and Mochizuki, 2006; Mitchison, 1997; Stoma et al., 2008). In concentration-based models, the cell can detect auxin concentrations of a surrounding environment and increase PIN transport either against the gradient (Jönsson et al., 2006; Merks et al., 2007; Newell et al., 2008; Smith et al., 2006) or with the gradient (Kramer, 2009; Wabnik et al., 2010). Despite relying on different formulations, both types of models assume auxin feedback on PIN polarity which can recreate some aspects of auxin-related patterning observed in plant development. An alternative model was proposed by Heisler et al., 2010. The authors suggested a correlation between PINs polarity and the alignment of cortical microtubules, indicative that the cell wall stress could be involved in determining PIN localizations. Interestingly, a more recent study (Narasimhan et al., 2021) showed that auxin exhibits a PIN2-specific positive effect on endocytosis, indicating a potential role for auxin in blocking PIN protein recruitment.
 
 However, we primarily focused on the auxin-flux model and its molecular realization in this study. In our model, both PINs and AUX/LAX expressions are induced by the presence of auxin inside the cell (Vieten et al., 2005). Similarly, PIN trafficking is positively or negatively regulated by auxin depending on one of two scenarios (Auxin-flux module description and Regulator-Polarizer module description sections). Auxin is exported by PINs from the cell into an intercellular space where it can be imported by AUX1 that is uniformly distributed on the membranes. The set of model assumptions and components for auxin transport is listed below:
 
-As discussed before, the PIN sensitivity of a specific membrane section depends on whether the auxin flux or regulator-polarizer method is used (see sections 1.7 and 1.8). Either of these two scenarios determines the IPmem term in Equation (14).
+As discussed before, the PIN sensitivity of a specific membrane section depends on whether the auxin flux or regulator-polarizer method is used (see sections 1.7 and 1.8). Either of these two scenarios determines the $IP_{mem}$ term in Equation (14).
 
-## Auxin-flux module description
+### Auxin-flux module description
 
-Flux-based computer models of auxin transport were first introduced by Mitchison, 1997. A general mechanism is that cells sense the auxin flux and based on that information cells increase their auxin transport capacity in the flux direction. This mechanism reproduces canalized auxin transport patterns during leaf vein formation (Rolland-Lagan and Prusinkiewicz, 2005). Flux-based models assume the existence of cellular flux-sensing components that have not been yet experimentally identified. Using the auxin-flux model, cells recognize the net vector of auxin flow and redirect PINs accordingly. Specifically, the auxin-flux vector of a cell is defined as:(16)FLUXcell →=∑imu( centroid cell  midpoint mem i)→(Imem i−Emem i)
+Flux-based computer models of auxin transport were first introduced by Mitchison, 1997. A general mechanism is that cells sense the auxin flux and based on that information cells increase their auxin transport capacity in the flux direction. This mechanism reproduces canalized auxin transport patterns during leaf vein formation (Rolland-Lagan and Prusinkiewicz, 2005). Flux-based models assume the existence of cellular flux-sensing components that have not been yet experimentally identified. Using the auxin-flux model, cells recognize the net vector of auxin flow and redirect PINs accordingly. Specifically, the auxin-flux vector of a cell is defined as:
 
-where, m is the total number of membrane sections; centroidcell is the centroid of the cell, midpointmemi is the midpoint of membrane section mem; u(centroidcell,midpointmemi)→ is the unit vector parallel to the vector connecting the two previous elements; Imemi-Ememi indicates the net amount of auxin crossing the membrane section mem.
+$$
+FLUX_{cell }→=\sumimu( centroid _{cell } midpoint _{mem _{i}})→(I_{mem _{i}}−E_{mem _{i}})
+$$
 
-Given the auxin-flux vector of a cell, the contribution of auxin flow to PIN sensitivity of a membrane section mem is obtained by projecting the auxin flux over the membrane section mem:(17)IPmem=Fmem4Fmem4+Kflux4;Fmem=(FLUXcell→⋅n(mem)→)Lmem
+where, m is the total number of membrane sections; $centroid_{cell}$ is the centroid of the cell, $midpoint_{mem_{i}}$ is the midpoint of membrane section mem; $u(centroid_{cell},midpoint_{mem_{i}})→$ is the unit vector parallel to the vector connecting the two previous elements; $I_{mem_{i}}-E_{mem_{i}}$ indicates the net amount of auxin crossing the membrane section mem.
 
-here, IPmem is the (unitless) auxin flow contribution to PIN sensitivity of a membrane section mem; Fmem is the effect of the auxin flux on membrane section mem ;Kflux is the flux sensing constant; FLUXcell→ is the auxin flux vector; n(mem)→ is the unit vector orthogonal to the membranes section mem and Lmem is the length of the membrane section mem. The dot “.” symbol indicates the dot product between vectors.
+Given the auxin-flux vector of a cell, the contribution of auxin flow to PIN sensitivity of a membrane section mem is obtained by projecting the auxin flux over the membrane section mem:
 
-## Regulator-polarizer module description
+$$
+IP_{mem}=\frac{F_{mem}^{4}}{F_{mem}^{4}+Kflux^{4}};F_{mem}=(FLUX_{cell}→⋅n(mem)→)L_{mem}
+$$
 
-Cell polarization has been investigated both on the theoretical ground (Gierer and Meinhardt, 1972; Jilkine and Edelstein-Keshet, 2011; Meinhardt and Gierer, 2000) and designed synthetic circuits (Chau et al., 2012; Rappel and Edelstein-Keshet, 2017). We propose a mechanistic realization of auxin flux sensing by combining the interaction between four molecules: PIN, auxin, a polarizer, and a regulator. The polarizer is a molecule that promotes the sorting of PINs to the membrane section where it is most abundant (i.e. a specific kinase that phosphorylates PIN). The regulator is a molecule that is activated by auxin and inhibits polarizer abundance on the membranes (i.e. antagonizing phosphatase). Auxin presence in a membranes section promotes regulator trafficking, which in turn reduces the presence of the polarizer in that region. Free diffusion of the regulator over the surface of the cell results in the clustering of the polarizer on the opposite side of the cell where it promotes PIN trafficking by tuning the auxin contribution parameter IPmem (see Equation. 14).(18)Gradmem=Imem-Emem+∑imImemi-Ememidistancemem,memi1000Acell
+here, $IP_{mem}$ is the (unitless) auxin flow contribution to PIN sensitivity of a membrane section mem; $F_{mem}$ is the effect of the auxin flux on membrane section mem $;Kflux$ is the flux sensing constant; $FLUX_{cell}→$ is the auxin flux vector; $n(mem)→$ is the unit vector orthogonal to the membranes section mem and $L_{mem}$ is the length of the membrane section mem. The dot “.” symbol indicates the dot product between vectors.
 
-where Gradmem is the auxin influx-efflux ratio specific to membrane section mem; Imem-Emem indicates the net amount of auxin crossing the membrane section mem; distancemem,memi is the distance of membrane section memi from our reference membrane section mem, calculated as the Euclidean distance between the two sections midpoints; Acell is the area of the cell. The metric is further normalized dividing by the cell area and amplified by an amplification factor of 1000.
+### Regulator-polarizer module description
 
-dREGcelldt=bREG-REGcellKregtr+KregGradTGradmem4Gradmem4+KregGradK4IAAcell2IAAcell2+KregIAA2(19)-dREGREGcell(20)dPOLcelldt=bPOL−POLcellKpoltrIAAcell2IAAcell2+KpolIAA2−dPOLPOLcell
+Cell polarization has been investigated both on the theoretical ground (Gierer and Meinhardt, 1972; Jilkine and Edelstein-Keshet, 2011; Meinhardt and Gierer, 2000) and designed synthetic circuits (Chau et al., 2012; Rappel and Edelstein-Keshet, 2017). We propose a mechanistic realization of auxin flux sensing by combining the interaction between four molecules: PIN, auxin, a polarizer, and a regulator. The polarizer is a molecule that promotes the sorting of PINs to the membrane section where it is most abundant (i.e. a specific kinase that phosphorylates PIN). The regulator is a molecule that is activated by auxin and inhibits polarizer abundance on the membranes (i.e. antagonizing phosphatase). Auxin presence in a membranes section promotes regulator trafficking, which in turn reduces the presence of the polarizer in that region. Free diffusion of the regulator over the surface of the cell results in the clustering of the polarizer on the opposite side of the cell where it promotes PIN trafficking by tuning the auxin contribution parameter IPmem (see Equation. 14).
 
-where, REGcell and POLcell are the regulator and polarizer concentrations inside the cell, respectively; bREG and bPOL are the regulator and polarizer basal production rate, respectively; Kregtr and Kpoltr are the regulator and polarizer trafficking rates; KregGradT and KregGradK are regulator maximum trafficking rate and trafficking constant, respectively; Gradmem is auxin influx-efflux ratio for each specific membrane section mem; IAAcell is the amount of auxin inside the cell; KregIAA and KpolIAA are regulator and polarizer trafficking constants, respectively; dREG and dPOL are the regulator and polarizer degradation rates.(21)dREGmemdt=REGcell(Kregtr+KregGradTGradmem4Gradmem4+KregGradK4)Lmem∑imLmemiIAAcell2IAAcell2+KregIAA2+D(REGmem−dREGREGmem)(22)dPOLmemdt=POLcellKpoltrLmem∑imLmemIAAcell2IAAcell2+KpolIAA2+D(POLmem)+G(POLmem)−dPOLPOLmem
+$$
+Grad_{mem}=I_{mem}-E_{mem}+\sum_{i}^{m}\frac{I_{mem_{i}}-E_{mem_{i}}}{distancemem,mem_{i}}\frac{1000}{A_{cell}}
+$$
 
-where, REGmem and POLmem the regulator and polarizer in the membrane section mem. Kregtr and Kpoltr are the regulator and polarizer trafficking rates, respectively; REGcell and POLcell are cytoplasmic pools; KregIAA and KpolIAA are the regulator and polarizer trafficking constants; Lmem is the length of the membrane section mem; IAAcell is the concentration of auxin inside the cell; D(REGmem) and D(POLmem) diffusion terms for regulator and polarizer, respectively; G(POLmem) is the net fraction of polarizer displaced by the regulator in the membrane section mem.(23)D(REGmem)=DREG∑imem±1(REGmemi−REGmem)(24)D(POLmem)=DPOL∑imem±1(POLmemi−POLmem)
+where $Grad_{mem}$ is the auxin influx-efflux ratio specific to membrane section mem; $I_{mem}-E_{mem}$ indicates the net amount of auxin crossing the membrane section mem; $distancemem,mem_{i}$ is the distance of membrane section memi from our reference membrane section mem, calculated as the Euclidean distance between the two sections midpoints; $A_{cell}$ is the area of the cell. The metric is further normalized dividing by the cell area and amplified by an amplification factor of 1000.
 
-where, DREG and DPOL are the regulator and polarizer diffusion rates, respectively; REGmem and POLmem are the regulator and polarizer in the membrane section mem, respectively; The polarizer is displaced by the presence of regulator molecules toward the zone where the concentration of the regulator is the lowest. To simulate this process, we apply the model of stochastic recruitment of molecules to the membrane sections (Chau et al., 2012): in a membrane section mem, a fixed batch of a polarizer is reserved for the displacement; then one of the adjacent membrane segments is selected randomly; if the adjacent segment contains less regulator than the current segment, the batch of a polarizer is moved to that neighboring segment. Polarizer displacement can be written as:(25)G(POLmem)=KdispPOLif(REGmem+i>REGmemthenPOLmem+ielse0i=random(−1,+1)
+$\frac{dREG_{cell}}{dt}=b_{REG}-REG_{cell}Kreg_{tr}+Kreg_{GradT}\frac{Grad_{mem}^{4}}{Grad_{mem}^{4}+Kreg_{GradK}^{4}}\frac{IAA_{cell}^{2}}{IAA_{cell}^{2}+Kreg_{IAA}^{2}}$
 
-where G(POLmem), is the amount of polarizer displaced by the regulator and KdispPOL is the polarizer displacement rate.(26)IPmem=POLmem4POLmem4+KpolIP4
+$$
+-d_{REG}REG_{cell}
+$$
 
-where, KpolIP is the half-max constant.
 
-## Cell growth description
+
+$$
+\frac{dPOL_{cell}}{dt}=b_{POL}−POL_{cell}Kpol_{tr}\frac{IAA_{cell}^{2}}{IAA_{cell}^{2}+Kpol_{IAA}^{2}}−d_{POL}POL_{cell}
+$$
+
+where, $REG_{cell}$ and $POL_{cell}$ are the regulator and polarizer concentrations inside the cell, respectively; $b_{REG}$ and $b_{POL}$ are the regulator and polarizer basal production rate, respectively; $Kreg_{tr}$ and $Kpol_{tr}$ are the regulator and polarizer trafficking rates; $Kreg_{GradT}$ and $Kreg_{GradK}$ are regulator maximum trafficking rate and trafficking constant, respectively; $Grad_{mem}$ is auxin influx-efflux ratio for each specific membrane section mem; $IAA_{cell}$ is the amount of auxin inside the cell; $Kreg_{IAA}$ and $Kpol_{IAA}$ are regulator and polarizer trafficking constants, respectively; $d_{REG}$ and $d_{POL}$ are the regulator and polarizer degradation rates.
+
+$$
+\frac{dREG_{mem}}{dt}=REG_{cell}(Kreg_{tr}+Kreg_{GradT}\frac{Grad_{mem}^{4}}{Grad_{mem}^{4}+Kreg_{GradK}^{4}})\frac{L_{mem}}{\sumimL_{mem_{i}}}\frac{IAA_{cell}^{2}}{IAA_{cell}^{2}+Kreg_{IAA}^{2}}+D(REG_{mem}−d_{REG}REG_{mem})
+$$
+
+
+
+$$
+\frac{dPOL_{mem}}{dt}=POL_{cell}Kpol_{tr}\frac{L_{mem}}{\sumimL_{mem}}\frac{IAA_{cell}^{2}}{IAA_{cell}^{2}+Kpol_{IAA}^{2}}+D(POL_{mem})+G(POL_{mem})−d_{POL}POL_{mem}
+$$
+
+where, $REG_{mem}$ and $POL_{mem}$ the regulator and polarizer in the membrane section mem. $Kreg_{tr}$ and $Kpol_{tr}$ are the regulator and polarizer trafficking rates, respectively; $REG_{cell}$ and $POL_{cell}$ are cytoplasmic pools; $Kreg_{IAA}$ and $Kpol_{IAA}$ are the regulator and polarizer trafficking constants; $L_{mem}$ is the length of the membrane section mem; $IAA_{cell}$ is the concentration of auxin inside the cell; $D(REG_{mem})$ and $D(POL_{mem})$ diffusion terms for regulator and polarizer, respectively; $G(POL_{mem})$ is the net fraction of polarizer displaced by the regulator in the membrane section mem.
+
+$$
+D(REG_{mem})=D_{REG}\sumimem\pm1(REG_{mem_{i}}−REG_{mem})
+$$
+
+
+
+$$
+D(POL_{mem})=D_{POL}\sumimem\pm1(POL_{mem_{i}}−POL_{mem})
+$$
+
+where, $D_{REG}$ and $D_{POL}$ are the regulator and polarizer diffusion rates, respectively; $REG_{mem}$ and $POL_{mem}$ are the regulator and polarizer in the membrane section mem, respectively; The polarizer is displaced by the presence of regulator molecules toward the zone where the concentration of the regulator is the lowest. To simulate this process, we apply the model of stochastic recruitment of molecules to the membrane sections (Chau et al., 2012): in a membrane section mem, a fixed batch of a polarizer is reserved for the displacement; then one of the adjacent membrane segments is selected randomly; if the adjacent segment contains less regulator than the current segment, the batch of a polarizer is moved to that neighboring segment. Polarizer displacement can be written as:
+
+$$
+G(POL_{mem})=Kdisp_{POL}if(REG_{mem+i}>REG_{mem}thenPOL_{mem+i}else0i=random(−1,+1)
+$$
+
+where $G(POL_{mem})$, is the amount of polarizer displaced by the regulator and $Kdisp_{POL}$ is the polarizer displacement rate.
+
+$$
+IP_{mem}=\frac{POL_{mem}^{4}}{POL_{mem}^{4}+Kpol_{IP}^{4}}
+$$
+
+where, $Kpol_{IP}$ is the half-max constant.
+
+### Cell growth description
 
 The classical morphogen gradient model dictates that the cell fate is regulated by the positional information encoded in different morphogen levels at different positions across tissue (Wolpert, 1969). However, in an expanding system, cells are displaced quickly enough along the tissue experiencing different effective morphogens concentrations that depend on their current distance for the morphogens source(s). Moreover, cell growth dilutes morphogens concentration and thus modulates the morphogen effect on cell signaling. Our model addresses these issues by monitoring the combined effect of cell growth and auxin concentration on root development. The root growth component includes the following assumptions:
 
-## Position-based dynamics implementation
+### Position-based dynamics implementation
 
 The typical approach to simulate dynamic growing systems in biology is based on force-based calculations (Nealen et al., 2006). Tissues are usually represented as triangulated meshes made of connected vertices and forces are accumulated on these vertices following specific biological criteria such as internal turgor pressure, anisotropic expansion, or gravity. Vertex acceleration is later derived from these forces and vertex masses according to Newton’s second law. A time integration scheme is then used to first compute the velocities from the accelerations and then the final positions from the velocities. Classical integration methods are usually unstable or very computationally expensive, resulting in either unmanageable or extremely inefficient simulations. Therefore, instead of a forced-based system, we decided to implement the mechanical growth of Arabidopsis thaliana root using Position-Based Dynamics (PBD) (Müller et al., 2007). PBD is a recent method used to simulate physical phenomena such as cloth, deformation, fluids, fractures, material rigidness (Müller et al., 2007). PBD omits the velocity layer and instead computes the future positions of vertices based on mechanical constraints that restrict the system dynamics. The main PBD loop is summarized in the following diagram:
 
@@ -222,7 +671,7 @@ To provide a simple example of PBD constraint, consider the typical mass-spring 
 
 The current model integrates distance, shape, strain, bending as well as pressure constraints (Figure 1—figure supplement 2A,B):
 
-## Additional parameters sensitivity analysis
+### Additional parameters sensitivity analysis
 
 Our model was put to the test by varying two important parameters using high through model simulations on a computing cluster.
 

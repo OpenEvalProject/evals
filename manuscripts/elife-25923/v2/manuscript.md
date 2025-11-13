@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.25923.001 Public health programs are starting to recognize the need to move beyond a one-size-fits-all approach in demand generation, and instead tailor interventions to the heterogeneity underlying human decision making. Currently, however, there is a lack of methods to enable such targeting. We describe a novel hybrid behavioral-psychographic segmentation approach to segment stakeholders on potential barriers to a target behavior. We then apply the method in a case study of demand generation for voluntary medical male circumcision (VMMC) among 15–29 year-old males in Zambia and Zimbabwe. Canonical correlations and hierarchical clustering techniques were applied on representative samples of men in each country who were differentiated by their underlying reasons for their propensity to get circumcised. We characterized six distinct segments of men in Zimbabwe, and seven segments in Zambia, according to their needs, perceptions, attitudes and behaviors towards VMMC, thus highlighting distinct reasons for a failure to engage in the desired behavior.
+Public health programs are starting to recognize the need to move beyond a one-size-fits-all approach in demand generation, and instead tailor interventions to the heterogeneity underlying human decision making. Currently, however, there is a lack of methods to enable such targeting. We describe a novel hybrid behavioral-psychographic segmentation approach to segment stakeholders on potential barriers to a target behavior. We then apply the method in a case study of demand generation for voluntary medical male circumcision (VMMC) among 15–29 year-old males in Zambia and Zimbabwe. Canonical correlations and hierarchical clustering techniques were applied on representative samples of men in each country who were differentiated by their underlying reasons for their propensity to get circumcised. We characterized six distinct segments of men in Zimbabwe, and seven segments in Zambia, according to their needs, perceptions, attitudes and behaviors towards VMMC, thus highlighting distinct reasons for a failure to engage in the desired behavior.
 
 ## Introduction
 
@@ -49,19 +49,238 @@ To our knowledge, this is the first study that uses a hybrid behavioral-psychogr
 
 ## Results
 
-## Population characteristics
+### Population characteristics
 
 Figure 1—figure supplement 1 shows the demographic and cultural characteristics of the population sample in Zambia and Zimbabwe. Figure 1—figure supplement 2 characterizes the social acceptability of VMMC, as well as the perceived risk of HIV and other sexually-transmitted infections (STIs) in both countries’ samples. The two populations are broadly comparable on the measured parameters, such as age, education level, religion, working status, the perception whether many men had already been circumcised in the community, reasons for circumcision (for circumcised men only), and the perceived risk for HIV/STIs. The starkest difference was that in Zambia, a much greater share of the population was only educated to primary-school level, and a smaller percentage was employed than in Zimbabwe.
 
-## Identification of segments
+### Identification of segments
 
 In order to explain the differences between segments, the results of canonical correlations were analyzed and five key roots influencing intention to choose VMMC were identified. Three of them were common in both countries, while two had some country specifics. The last two roots in Zambia were eliminated from segments profiling due to relatively low contribution into variance between segments. Motivation to go for VMMC, which includes intention to go/advocate for circumcision combined with positive attitudes and beliefs about VMMC, was the most important factor (similar in both countries). It was followed by rejection due to cognitive dissonance in Zimbabwe and control over cognitive dissonance in Zambia, which explains rejection of VMMC and self-efficacy in going for the procedure (this factor combines, on the one hand, high concern about HIV, and, on the other hand, doubts in VMMC efficacy in regard to protection from HIV along with signs of cognitive dissonance, such as interest to circumcision along with hesitation and uncertainty in its need). These two factors were followed by perceived lack of ability (for both countries it includes perceived level of knowledge about VMMC and desire to have more information/hesitation due to lack of information about the procedure) and acceptance of social support (in Zimbabwe)/perceived self-efficacy against social pressure (in Zambia). The latter includes self-efficacy to go for circumcision even if it is not accepted by people around (in Zambia) or readiness to provide social support for others and accept it from others (in Zimbabwe) combined with perceived level of social support (from family and wider community). The last factor was personal constraints (such as fears of pain and embarrassment during the procedure and concerns about the surgery and healing process) which also was common in both countries. Based on these factors, six segments in Zimbabwe and seven segments in Zambia were identified (Table 1A and B). Each segment was profiled overall based on three levels (low, medium, or high expression) of each factor, explaining the characteristics of and differences among the segments (Table 1A and B). For instance, a segment in Zimbabwe characterized by strong levels of motivation, neutral levels of rejection due to cognitive dissonance, an average perceived lack of ability, high acceptance of social support, and moderate levels of fear of the procedure was called Enthusiasts (see Table 1A and B for a characterization of all segments, and Figure 1 for an overview of the constructs investigated). There was almost an even distribution of the population across the different segments in each country (Figure 2A and B)
 
+![Figure 1.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig1-figsupp2-v2.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig2-v2.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** % represents the proportion of men in that journey stage within the segment.
+
+**Table 1.**
+ (A) Factors deriving segments and segment profile summaries (Zimbabwe). (B) factors deriving segments and segment profile summaries (Zambia).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Table 1A – Factors deriving segments and segment profile summaries (Zimbabwe)</th>
+    </tr>
+    <tr>
+      <th>Country</th>
+      <th>Segment</th>
+      <th colspan="5">Key factors defining segment profiles</th>
+      <th>Summary of differences among segments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Zimbabwe</td>
+      <td></td>
+      <td>Motivation/need for VMMC</td>
+      <td>Rejection due to cognitive dissonance</td>
+      <td>Perceived lack of ability</td>
+      <td>Acceptance of social support</td>
+      <td>Personal constraints</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enthusiasts</td>
+      <td>Strong motivation</td>
+      <td>Neutral</td>
+      <td>Average ability</td>
+      <td>Highly socially driven</td>
+      <td>Some fears</td>
+      <td>Believe in all benefits of VMMC (including benefits related to sexual life); emotionally associate VMMC with a sense of achievement; relatively high level of risky sexual behavior; very socially driven and supported by social environment; require support to overcome some fears and cognitive dissonance, and strengthen ability to go for VMMC.</td>
+    </tr>
+    <tr>
+      <td>Champions</td>
+      <td>Strong motivation</td>
+      <td>No rejection</td>
+      <td>Strong ability</td>
+      <td>Highly independent</td>
+      <td>Some fears</td>
+      <td>Have positive attitudes to VMMC; believe in benefits; much more socially independent (going for VMMC is their own decision, not driven by social environment); feel strong ability to go for VMMC; despite presence of some fears, don’t experience serious cognitive dissonance.</td>
+    </tr>
+    <tr>
+      <td>Neophytes</td>
+      <td>Neutral motivation</td>
+      <td>Strong rejection</td>
+      <td>Lack of ability</td>
+      <td>Highly independent</td>
+      <td>Some fears</td>
+      <td>More ambivalent attitude to VMMC (have not decided yet whether they need it or not); quite low level of risky sexual behavior; feel lack of control and rejection due to cognitive dissonance; feel lack of knowledge about VMMC (need information); not socially driven.</td>
+    </tr>
+    <tr>
+      <td>Scared Rejecters</td>
+      <td>Neutral motivation</td>
+      <td>Strong rejection</td>
+      <td>Strong ability</td>
+      <td>Highly independent</td>
+      <td>Strong fears</td>
+      <td>Weak motivation due to a number of fears; very worried about contraction of infections and need additional sense of protection, but are not able to go for VMMC (due to fears of complications, pain, surgery, healing process, etc.); feel strong ability to go for VMMC (no need in additional information); not socially driven.</td>
+    </tr>
+    <tr>
+      <td>Embarrassed Rejecters</td>
+      <td>Weak motivation</td>
+      <td>No rejection</td>
+      <td>Average ability</td>
+      <td>Highly socially driven</td>
+      <td>Strong fears</td>
+      <td>Weakly motivated to go for VMMC; mostly are not concerned about HIV/STI contraction; have mostly negative beliefs about VMMC; due to absence of motivation do not experience cognitive dissonance; have some positive believes (especially, believe in hygiene), but largely don’t consider VMMC for themselves; have fears and concerns; highly socially driven; have mostly no social support for VMMC.</td>
+    </tr>
+    <tr>
+      <td>Highly Resistant</td>
+      <td>Weak motivation</td>
+      <td>Strong rejection</td>
+      <td>Strong ability</td>
+      <td>Highly socially driven</td>
+      <td>No fears</td>
+      <td>Weak motivation, rejection of VMMC; mostly negative beliefs about VMMC; relatively higher risk of HIV/STI contraction; however, level of concern about HIV/STIs contraction is low; are not open to information and feel that they know all they need about VMMC; claim absence of fear; very socially driven; mostly highly rejecting VMMC social environment.</td>
+    </tr>
+  </tbody>
+</table>
+
+_The table summarizes the differences among segments based on the key factors identified via canonical correlations analysis. Zambia, 5 key factors, 7 segments; Zimbabwe, 5 key factors, 6 segments._
+
 The segments can be prioritized by the program for targeting using a number of criteria. Below we illustrate two: ease of converting to higher levels of VMMC uptake and estimated behavioral risk for acquiring HIV/AIDS.
 
-## Composition of the different segments, potential opportunity, and ease of conversion for each segment
+### Composition of the different segments, potential opportunity, and ease of conversion for each segment
 
 The segments are strongly differentiated in terms of the proportion of men who have already been circumcised, which shows that attitudes, motivations and belief correlate with circumcision behavior (Table 2). Most of the men in the Friends-driven Hesitant (86%), Scared Rejecters (90%) and Indifferent Resisters (94%) in Zambia and Neophytes (94%), Rejecters (97%), Embarrassed Rejecters (67%), and Highly Resistant (99%) in Zimbabwe had not been circumcised. The highest levels of circumcision are found amongst the Self-reliant Believers (71%) and Traditional Believers (71%) in Zambia and Champions (76%) in Zimbabwe. However, given that the sizes of the segments are different, the relative distribution of uncircumcised men by segment is different (Figure 2A–D). Whilst the Champions represent 17% of uncircumcised men in Zimbabwe, only 6% of uncircumcised men are found in this segment and therefore represent low potential for targeting. Similarly, in Zambia, 19% of the men are Self-reliant Believers, but only 9% of uncircumcised men are found within this segment.
+
+**Table 2.**
+ Circumcision levels and commitment for MC, by segment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Country</th>
+      <th rowspan="2">Segment</th>
+      <th colspan="2">All men in segment*</th>
+      <th colspan="2">Uncircumcised men in segment†</th>
+    </tr>
+    <tr>
+      <th>Circumcised % (n)</th>
+      <th>Uncircumcised % (n)</th>
+      <th>Not committed % (n)</th>
+      <th>Committed % (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Zimbabwe</td>
+      <td>Enthusiasts</td>
+      <td>42.6 (211)</td>
+      <td>57.4 (284)</td>
+      <td>15.5 (44)</td>
+      <td>84.5 (240)</td>
+    </tr>
+    <tr>
+      <td>Champions</td>
+      <td>76.2 (269)</td>
+      <td>23.8 (84)</td>
+      <td>8.3 (7)</td>
+      <td>91.7 (77)</td>
+    </tr>
+    <tr>
+      <td>Neophytes</td>
+      <td>6.1 (17)</td>
+      <td>93.9 (260)</td>
+      <td>43.1 (112)</td>
+      <td>56.9 (148)</td>
+    </tr>
+    <tr>
+      <td>Scared rejecters</td>
+      <td>2.6 (6)</td>
+      <td>97.4 (228)</td>
+      <td>78.1 (178)</td>
+      <td>21.9 (50)</td>
+    </tr>
+    <tr>
+      <td>Embarrassed rejecters</td>
+      <td>32.7 (112)</td>
+      <td>67.3 (230)</td>
+      <td>56.1 (129)</td>
+      <td>43.9 (101)</td>
+    </tr>
+    <tr>
+      <td>Highly resistant</td>
+      <td>0.7 (2)</td>
+      <td>99.3 (298)</td>
+      <td>92.6 (276)</td>
+      <td>7.4 (22)</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Zambia</td>
+      <td>Socially-supported believers</td>
+      <td>56.1 (160)</td>
+      <td>43.9 (125)</td>
+      <td>20.0 (25)</td>
+      <td>80.0 (100)</td>
+    </tr>
+    <tr>
+      <td>Self-reliant believers</td>
+      <td>71.2 (272)</td>
+      <td>28.8 (110)</td>
+      <td>14.5 (16)</td>
+      <td>85.5 (94)</td>
+    </tr>
+    <tr>
+      <td>Knowledgeable hesitant</td>
+      <td>49.8 (119)</td>
+      <td>50.2 (120)</td>
+      <td>41.7 (50)</td>
+      <td>58.3 (70)</td>
+    </tr>
+    <tr>
+      <td>Friends-driven hesitant</td>
+      <td>14.1 (38)</td>
+      <td>85.9 (231)</td>
+      <td>29.0 (67)</td>
+      <td>71.0 (164)</td>
+    </tr>
+    <tr>
+      <td>Scared rejecters</td>
+      <td>9.7 (22)</td>
+      <td>90.3 (204)</td>
+      <td>62.7 (128)</td>
+      <td>37.3 (76)</td>
+    </tr>
+    <tr>
+      <td>Indifferent resisters</td>
+      <td>5.5 (19)</td>
+      <td>94.5 (325)</td>
+      <td>79.4 (258)</td>
+      <td>20.6 (67)</td>
+    </tr>
+    <tr>
+      <td>Traditional believers</td>
+      <td>70.6 (180)</td>
+      <td>29.4 (75)</td>
+      <td>16.0 (12)</td>
+      <td>84.0 (63)</td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+  </tbody>
+</table>
+
+_*No. of circumcised OR uncircumcised men in segment/no. total men in segment; Zambia, N = 2000; Zimbabwe, N = 2001†uncircumcised committed OR not-committed men in segment/all uncircumcised men in segment; Zimbabwe, N = 1384; Zambia, N = 1189_
 
 Given that males are at different stages of their journey towards VMMC (Eletskaya M et al., in preparation), targeting uncircumcised males who are in the ‘committed’ stage could be one strategy that the program could employ to achieve its targets (Figure 2—figure supplement 1). We see considerable differences among segments on proportion of males who are uncircumcised and committed (Table 2). Proportions of uncircumcised, committed males to VMMC also vary from segment to segment, providing the program for opportunities to target the ‘low-hanging fruit’ (Figure 2E and F).
 
@@ -69,7 +288,7 @@ In Zimbabwe, the Enthusiasts represent the biggest opportunity for the program. 
 
 The Friends-driven Hesitants and Enthusiasts represent the biggest opportunity in Zambia. Both have a large proportion of uncircumcised and committed men (Table 2). While the largest proportion of uncircumcised men in Zambia are within Indifferent Resistants, there are few who are committed. They require a lot of education and support from their social networks. The program could deprioritize the Traditional Believers as most of them will go for circumcision for traditional reasons eventually, anyway. The remaining segments are more or less the same in terms of ease of conversion and targeting each segment will require addressing specific needs (for example the safety concern of ‘Knowledgeable Hesitants’ or strong fear of surgical procedures of Scared Rejecters).
 
-## Segment-specific risk for HIV/AIDS
+### Segment-specific risk for HIV/AIDS
 
 On the other hand, the program may want to prioritize those segments that are at highest risk for acquiring HIV to have a more effective impact on the epidemic. In this case, the priority of segment targeting will change, as the estimated risk of acquiring HIV, as measured by the index we created, does not align with the likelihood to already be circumcised nor intent to get circumcised, by segment.
 
@@ -81,13 +300,13 @@ In Zambia, estimated risk is less differentiated across the segments overall, wi
 
 Further assessing the segments based on their self-perceived risk is additionally helpful in understanding their approach to VMMC. For example, when evaluating the perceived vs. estimated risk profiles in Zambia, segments having a higher self-perception of being at risk of HIV infection already have higher rates of circumcision. An exception are Traditional Believers, who circumcise for traditional reasons rather than for health reasons; interestingly, their perception vs. estimated risk profile is like that of the Indifferent Resistants (see Figure 3). In contrast, in Zimbabwe, the perception vs. risk profiles do not align with circumcision rates as clearly. Neophytes, Enthusiasts and Embarrassed Rejecters have the highest rates of moderate and high perceived risk (76%, 73% and 71% respectively), but Champions have by far the highest rate of circumcisions.
 
-## Segment identification algorithm
+### Segment identification algorithm
 
 The segment identification algorithm for Zimbabwe resulted in 9 rating questions organized in a decision tree. In Zimbabwe, any given man (aged 15–29 years) needs to answer only 2, 3 or 4 of the questions, based on his path through the decision tree, to be classified into his appropriate segment (Figure 4). In Zambia, the algorithm similarly resulted in 8 questions, of which only 2 to 4 need to be asked to classify a man into his segment (Figure 4—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/25923/elife-25923-fig4-v2.jpg)
 
-**Figure 4.:** Scale #1 (7-point scale): 7 = 'Strongly agree'; 4 = 'Neither agree nor disagree'; 1 = 'Strongly disagree'. Scale #2 (7-point scale): 7 = 'Would definitely encourage'; 4 = 'Would neither encourage nor discourage'; 1 = 'Would definitely NOT encourage'. Scale #3 (7-point scale): 7 = 'They think I definitely should get circumcised'; 4 = 'They don't have any particular opinion'; 1 = 'They think I definitely should NOT get circumcised'.10.7554/eLife.25923.012Figure 4—source data 1.
+**Figure 4.:** Scale #1 (7-point scale): 7 = 'Strongly agree'; 4 = 'Neither agree nor disagree'; 1 = 'Strongly disagree'. Scale #2 (7-point scale): 7 = 'Would definitely encourage'; 4 = 'Would neither encourage nor discourage'; 1 = 'Would definitely NOT encourage'. Scale #3 (7-point scale): 7 = 'They think I definitely should get circumcised'; 4 = 'They don't have any particular opinion'; 1 = 'They think I definitely should NOT get circumcised'.
 
 ## Discussion
 
@@ -100,6 +319,75 @@ The segment classification algorithms provide the ability to accurately classify
 Adding two additional questions to the end of the segment classification tool asking the self-reported number of times a man has sexual intercourse in a typical month and the self-reported number of different partners with whom a man has sex in a typical month would provide the ability to specifically identify and counsel men with regard to their personal estimated risk of HIV infection.
 
 Having identified the relative proportions of each segment still uncircumcised, and the proportions of these men committed to getting circumcised or not, the segments in Zambia and Zimbabwe each have been prioritized for targeting. Highest-priority segments can be those that have the most ‘low-hanging fruit’ – uncircumcised men already mentally committed to getting circumcised (Table 3). Prioritizing these ‘low-hanging fruit’ is especially key in resource-constrained settings, where mass targeting can be replaced with smaller-scale, but focused, communications and interventions which specifically focus on the factors determining action for each targeted segment. Even mass media communication campaigns can be designed to create self-selected attention to them by target segments by using messaging especially relevant for each target segment. For example, a sports car commercial and a truck commercial will draw variable attention by those more interested in owning and driving each type of vehicle. Additionally, specific strategies for targeting each segment, based on the factors which can most influence men in that segment to take action, have been summarized. These strategies include key messages to use, appropriate use of mass media and interpersonal communicators, use of the men as advocates for VMMC, and perhaps the potential offering of device options for getting circumcised.
+
+**Table 3.**
+ Segment targeting recommendations
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Targeting priority</th>
+      <th>Rationale for targeting priority</th>
+      <th>Key messages</th>
+      <th>Use of mass media</th>
+      <th>Use of IPCs</th>
+      <th>Use of advocates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Zimbabwe</td>
+      <td>Enthusiasts</td>
+      <td>Large potential (21% of uncircumcised men) with 85% of segment committed; high risk behavior, but likely to advocate</td>
+      <td>Detailed info on procedure and healing process; pain management; improved relationship with partner</td>
+      <td>Not a target</td>
+      <td>Clarify pain during healing, time off work/school; counsel on potential increase in promiscuity</td>
+      <td>Engage as advocates</td>
+    </tr>
+    <tr>
+      <td>Champions</td>
+      <td>Low potential (6% of uncircumcised men), but easy conversion (92% committed) and highly likely to advocate</td>
+      <td>Address uncertainty on healing process and pain during healing and procedure</td>
+      <td>Not a target</td>
+      <td>Address uncertainty on healing and pain; identify a friend-advocate to go with them for the VMMC</td>
+      <td>Engage as advocates</td>
+    </tr>
+    <tr>
+      <td>Neophytes</td>
+      <td>Large potential (19% of uncircumcised men), and 57% committed; knowledge needed to inform commitment for rest</td>
+      <td>Full info on benefits and risks; clarify safe, skill of surgeon, healing process; where to get info and service</td>
+      <td>Personalize benefits, pain – how to manage it, accomplishment</td>
+      <td>Communicate full info on benefits, risks, safety, procedure and healing process</td>
+      <td>Use advocates to allay fears, share process, accompany</td>
+    </tr>
+    <tr>
+      <td>Embarrassed Rejecters</td>
+      <td>Moderate potential (16% of uncircumcised men) but commitment low (22%) and embarrassment, fears high</td>
+      <td>VMMC becoming norm – be part of it; VMMC + condom use benefit; safe; how to manage pain, abstinence</td>
+      <td>VMMC norm, where service, reality of pain and how to manage it</td>
+      <td>VMMC norm, how to manage abstinence, reasons for pride, address myths believed</td>
+      <td>Provide community network of advocate support – VMMC as social norm</td>
+    </tr>
+    <tr>
+      <td>Scared Rejecters</td>
+      <td>Moderate potential (17% of uncircumcised men) but commitment very low and fears/dissonance are strong</td>
+      <td>Safe procedure, low risk of complications; pain mgmt. during healing; improved relationship with partner</td>
+      <td>Not a target</td>
+      <td>Safe, low risk, expert service, pain real but manageable, involve partners</td>
+      <td>Use advocates to allay fears, share experience, accompany</td>
+    </tr>
+    <tr>
+      <td>Highly Resistant</td>
+      <td>Large potential (21% of uncircumcised men), but hard to crack; knowledgeable, little fear; don’t recognize need despite high-risk behavior</td>
+      <td>VMMC becoming social norm; address safety, service quality, privacy; pain management</td>
+      <td>Not a target</td>
+      <td>Acceptance of VMMC by wider community and advocacy from leaders; address fears with full info</td>
+      <td>Need advocates, communicating pride in VMMC and allaying fears</td>
+    </tr>
+  </tbody>
+</table>
 
 In Zimbabwe, for example, the highest priority segment for targeting is the Enthusiasts, who represent 21% of uncircumcised men, with 85% already committed to getting circumcised. They have relatively higher-risk sexual behavior, but are more likely to advocate for VMMC to other men, once circumcised, because of their strong beliefs about the benefits of VMMC for themselves and their community. For greatest influence, messaging for this segment should focus on detailed information on the procedure, the healing process and pain management to reduce uncertainty, and the potential for improved relationship with their partner, but they should also be counseled on their risky behavior. These communications would be best accomplished through interpersonal communicators. Once circumcised, these men should be actively engaged as VMMC advocates to promote it to other men of their peer age groups.
 
@@ -115,7 +403,7 @@ In conclusion, behavioral-psychographic segmentation is a viable method to ident
 
 ## Materials and methods
 
-## Instrumentation and data collection
+### Instrumentation and data collection
 
 Responses to a questionnaire, which formed the basis of behavioral segmentation, were collected in 2015 via face-to-face personal interviews among men in Zambia and Zimbabwe using structured quantitative surveys programmed on mobile devices. Surveys were conducted by male, local interviewers who were contracted by the market research company Ipsos in Zambia, and by Ipsos sub-contractors in Zimbabwe. The design of the questionnaire utilized a framework based on the Integrated Behavior Model (IBM) (Montano and Kasprzyk, 1990; Yzer, 2012) and was guided by results from a qualitative stage of the research program, which indicated interest and information-seeking about VMMC, uncertainty about the need for VMMC and anxiety felt by a man about getting circumcised were key indicators of cognitive dissonance experienced by men as the main barrier to taking action to get circumcised (Eletskaya M et al., in preparation). Qualitative data was generated from two sources: journey mapping, and a decision-making game with subsequent hot-state interviews. From journey mapping, we obtained the temporal milestones in the process towards making a decision, and the proportion of men at each milestone. This method also uncovered the beliefs and attitudes for and against circumcision, as well as communication channels, that were relevant to men at each temporal stage. For example, mass communication was more relevant to men in earlier stages, whereas friends gained influence in later stages, and healthcare providers were most influential in very late stages of the decision-making process (Eletskaya M et al., in preparation). The decision-making game consisted of scenarios that simulated the real-world contexts of the participants. Men were presented with several hypothetical options (decisions) in response to a scenario, and were asked to select the one they thought a majority of other men would choose (Eletskaya M et al., in preparation). This was done in order to reduce the men’s pressure towards carefully-deliberated and socially-desirable answers. Through the game, and subsequent hot-state interviews, we obtained additional information about beliefs, emotions, biases, and contextual factors, as well as triggers to act to get circumcised. As an example of a contextual factor, close male friends were found to be more influential on men’s beliefs and attitudes than female partners (Eletskaya M et al., in preparation). Qualitative data was collected for a variety of strata of men, whether they were already circumcised or not; or if not, whether they already intended to undergo the procedure or not. This was done in order to obtain a broad picture of prevalent beliefs, biases, emotions, and contextual factors. The qualitative data were then used to inform which beliefs, emotions, attitudes, and contextual factors the survey questions should address. In turn, the survey formed the basis of the key differentiating variables for quantitative segmentation. Montaño used the IBM to quantitatively identify key beliefs about male circumcision in Zimbabwe (Giles et al., 2005; Rhodes et al., 2007; Montaño et al., 2014). Based on the IBM, intention is a key driver of behavior. Intention is driven by an individual’s beliefs and perceived norms about the behavior and self-perceived control over being able to act on the behavior (Fishbein and Ajzen, 2010). Many of the key circumcision-related beliefs identified by Montaño in Zimbabwe were also identified as relevant beliefs in Zambia in other studies (Price et al., 2014); thus, the model was viewed as applicable for both countries. For the current research, the IBM was employed and modified to identify specific groups of men, differentiated from each other in terms of constructs underlying behavior. The beliefs identified by Montaño as influencing motivation for getting circumcised were used to inform and build these constructs. The core constructs that lead to an intention to get circumcised include attitudes about the act of getting circumcised (defined by both emotional feelings and functional beliefs about the behavior), perceived norms (defined by both beliefs about others’ expectations and others’ behaviors) and personal agency to get circumcised (defined by both beliefs about personal control and personal efficacy). These determine intent, but other factors around perceptions of HIV risk and ability to control risk of infection, as well as structural factors such as availability of information and service for MC and service quality, are either barriers to or facilitators for taking-action. The qualitative phase of this research program also revealed that in some men, the absence of action in going for VMMC can be driven by additional motivational barriers rooted in cognitive dissonance (Eletskaya M et al., in preparation). Thus, measurement of the presence of cognitive dissonance (through 3 key components identified as important by the prior integrated qualitative study: interest and information-seeking about VMMC, uncertainty about the need for VMMC and anxiety felt by a man about getting circumcised) was implemented and combined with measurement of IBM theory constructs to provide a single design framework (Figure 1).
 
@@ -123,9 +411,9 @@ In the structured questionnaire, each construct was measured through a presentat
 
 The sample consisted of 4001 men (both circumcised and uncircumcised), aged 15–29 years: 2001 men in Zimbabwe and 2000 in Zambia. Circumcised men were also included to be able to identify the full set of factors that lead to the actual decisions of seeking VMMC (not only intention to go for circumcision) and factors that influence attitudes and behaviors post-VMMC. For practical fieldwork cost and logistics purposes, the research targeted the districts with the highest concentrations of uncircumcised men in each country, cumulatively accounting for 80% of the uncircumcised populations in each country. Districts were first sorted from high to low by their populations of uncircumcised men. Then, the cumulative percentage of all uncircumcised men was calculated. Around 50% of districts were below the 80% cut-off point, such that the research was carried out in 38 of 72 districts in Zambia, and 35 of 61 districts in Zimbabwe. Country-level sample sizes (n = 2000 or 2001 men in each country) were determined based on experience with cluster segment sizes and the need for minimum sample size in the smallest resulting segment to be large enough for significance testing for differences across segments. Typically, cluster segmentations on consumers result in 4 to 8 segments, with the smallest segment representing as low as 5–10% of the total sample. The minimum desired sample for significance testing was judged as n = 100. Consequently, if this sample represents the smallest segment with a size of 5% of the total sample, the resulting total sample size should be n = 2000 (n = 100 * 20). Samples were distributed by age in proportion to the population size for each age group in each district. Households were randomly sampled in the selected districts and a male was approached in each household for the interview. If more than one eligible male lived in the household, selection among these males was made by random selection using a table of random numbers (Kish, 1949). Once a quota for an age group was reached in a district, only males who met open quota criteria were interviewed. If the household’s selected male was not available or ineligible, the next household was approached. A small incentive was provided to compensate respondents for their time and refusal rates were low (<5%) and mostly due to men not having time to participate – consistent with rates experienced for other similar research. All respondent data was used in analysis of the results; none were excluded.
 
-## Analytical approach
+### Analytical approach
 
-## Identification of segments
+#### Identification of segments
 
 The analysis process was multi-stage, starting with reduction of the number of variables to a more manageable set using canonical correlations analysis (Sheth and Johansson, 2011; Schnaars and Schiffman, 1984). Canonical correlation analysis showed that from the set of canonical correlation pairs (roots), the null hypothesis that correlations were zero could be rejected for some roots, for example the first 16 of 32 roots in the Zambia data (p=0.001 for roots 1–14, p=0.002 for root 15, p=0.024 for root 16; all subsequent roots p>0.1). For each of the canonical correlation pairs, eigenvalues were also computed. For instance, the first root had an eigenvalue of >1 in the Zambia data. The cumulative variance explained was also used to determine the optimal set of roots. The analysis identified 5 roots, explaining 68% of variance in the data in Zimbabwe and 7 roots, explaining 67% of variance in the data in Zambia, on which segmentations were based. At the second stage, hierarchical clustering was employed to explore possible partitions (e.g., 5 or 6 or 7 segments) and the results were used to identify the most appropriate number of segments (Cross, 2008). There is no unambiguous answer to the question which number of clusters is optimal, however standard and best practice approach is to find the solution which ensures that clusters are homogeneous within the clusters and maximally different between the clusters. Several statistics were referenced to determine whether the solution meets these criteria or not: Pseudo-F statistic, Pseudo-T statistic, and the overall R2 (Cross, 2008). As an example, the Pseudo-F statistic gives the ratio of between-cluster variance to the variance within clusters, and when the index is plotted against the number of clusters, peaks in the graph indicate greater cluster separation. The Pseudo-T statistic is a measure of the difference between clusters merged together, and jumps in the index plotted against the number of clusters therefore point to an optimal number of clusters. After this stage, the cluster centers from this solution were refined with K-means clusters. At this stage an optimal solution was identified based on distances between clusters of >1.5, ensuring their distinctiveness (Sheth and Johansson, 2011; Schnaars and Schiffman, 1984; Cross, 2008). Then, clusters were profiled on the above-mentioned constructs in order to demonstrate which attitudes, beliefs, norms and behaviors characterize each segment.
 
@@ -133,7 +421,7 @@ Several statistically plausible solutions for the number of clusters were tested
 
 All statistical analysis was performed using SAS (RRID:SCR_008567) and SPSS (RRID:SCR_002865).
 
-## Assessment of risk for HIV among segments
+#### Assessment of risk for HIV among segments
 
 Two criteria on which the segments were profiled were 1) an estimation of relative risk for HIV infection based on self-reporting of behaviors, and 2) self-perceived risk of acquiring HIV and/or sexually transmitted infections (STIs). Indices were created for each of the two by creating a composite score using multiple questions measuring estimated relative risk and self-perceived risk of acquiring HIV, respectively.
 
@@ -143,11 +431,11 @@ To assess self-perceived risk of HIV infection, respondents were asked to rate t
 
 For each segment of men, the frequencies of that segment in the Low, Moderate and High estimated risk categories were contrasted with the frequencies for that segment of men across the Low, Moderate and High self-perceived risk categories.
 
-## Segment typing algorithm
+#### Segment typing algorithm
 
 The chi-squared automatic interaction detection (CHAID) algorithm (Miller et al., 2014), which builds a decision tree of merging variables, was employed to identify key questions to ask men in the field. Ultimately, the typing tool needed to be practicable and suitable for use with just pen and paper. Accuracy was defined by a statistically significant cross-tabulation between the segments that were predicted by applying the algorithm to the sample, and the actual segments that were derived for the sample. Overall, it was possible to confidently predict in which segment any given man belonged (with >60% accuracy). Accuracy varied for different segments, and ranged from 39% to 78% in Zambia (mean = 61%, standard deviation = 13.1), and from 54% to 84% in Zimbabwe (mean = 71%, standard deviation = 10.4).
 
-## Data availability
+### Data availability
 
 This study used data obtained from human participants. The dataset (anonymized survey responses) is owned by the governments of Zimbabwe and Zambia, and the authors have requested the respective governments to make the data publicly available. This request is currently subject to government approval. Until the data are publicly available, the data are made available upon reasonable request (criteria for access may apply subject to assessment by the respective governments). Requests for access to the data can be made to the following:
 

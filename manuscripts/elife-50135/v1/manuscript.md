@@ -43,9 +43,17 @@ We have recently developed a human Duodenum Intestine-Chip that combines healthy
 
 ## Results
 
-## Development of the adult Duodenum Intestine-Chip
+### Development of the adult Duodenum Intestine-Chip
 
 We have previously developed a human primary Intestine-Chip, referred at the time as the ‘Small Intestine-on-a-Chip’, which combined the use of intestinal organoids isolated from pediatric donors and Organ-Chips (Kasendra et al., 2018) to recapitulate critical features of intestinal morphology and associated functions. Here, we sought to establish a Duodenum Intestine-Chip from adult organoid-derived cells to serve as a platform in the preclinical assessment of drug transport and metabolism. In brief, we first established organoid cultures (Figure 1A; top) from crypts isolated from endoscopic biopsies of three different healthy adult individuals, the organoids were then dissociated into fragments and seeded on the top of the Extracellular Matrix (ECM)-coated porous flexible polydimethylsiloxane (PDMS) membrane of the chips (Figure 1B; 3: indicates the epithelial tissue). Primary human intestinal microvascular endothelial cells (HIMECs, Cell Biologics), derived from the human small intestine (Figure 1A; bottom), were used to populate the other surface of the PDMS membrane in the vascular channel (Figure 1B; 4: indicates the endothelial cells). Next, the Duodenum Intestine-Chip was perfused continuously through the luminal and vascular compartment with fresh cell culture medium. Once the epithelial monolayers reached confluency they were subjected to cyclic mechanical strain (10% strain, 0.2 Hz) in order to emulate physiologically relevant forces of intestinal peristalsis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig1-v1.jpg)
+
+**Figure 1.:** (a) Brightfield images of human duodenal organoids (top) and human microvascular endothelial cells (bottom) acquired before their seeding into epithelial and endothelial channels of the chip, respectively. (b) Schematic representation of Duodenum Intestine-Chip, including its top view (left) and vertical section (right) showing: the epithelial (1; blue) and vascular (2; pink) cell culture microchannels populated by intestinal epithelial cells (3) and endothelial cells (4), respectively, and separated by a flexible, porous, ECM-coated PDMS membrane (5). (c) Scanning electron micrograph showing complex intestinal epithelial tissue architecture achieved by duodenal epithelium grown for 8 days on the chip (top) in the presence of constant flow of media (30 µl/hr) and cyclic membrane deformations (10% strain, 0.2 Hz). High magnification of the apical epithelial cell surface with densely packed intestinal microvilli (bottom). See Figure 1-figure supplement demonstrating the effect of mechanical forces on the cytoarchitecture of epithelial cells and the formation of intestinal microvilli (d) Composite tile scan fluorescence image 8 days post-seeding (top) showing a fully confluent monolayer of organoid-derived intestinal epithelial cells (magenta, ZO-1 staining) lining the lumen of Duodenum Intestine-Chip and interfacing with microvascular endothelium (green, VE-cadherin staining) seeded in the adjacent vascular channel. Higher magnification views of epithelial tight junctions (bottom left) stained against ZO-1 (magenta) and endothelial adherence junctions visualized by VE-cadherin (bottom right) staining. Cells nuclei are shown in gray. Scale bars, 1000 µm (top), 100 µm (bottom) (e) Apparent permeability values of Duodenum Intestine-Chips cultured in the presence of flow and stretch (30 µl/hr; 10% strain, 0.2 Hz) for up to 10 days. Papp values were calculated from the diffusion of 3 kDa Dextran from the luminal to the vascular channel. Data represent three independent experiments performed with three different chips/donor, total of three donors; Error bars indicate s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative confocal images of x-y (top) and x-z (bottom) optical sections of duodenal organoid-derived epithelial cells cultured for 72 hr under static (Static), fluid flow (30 µl/hr; Flow) or flow and stretch (30 µl/hr; 10% strain, 0.2 Hz; Flow+Stretch) conditions and stained for apical marker villin (green) and basolateral protein E-cadherin (magenta). Nuclei were counterstained with DAPI (gray). Scale bar, 50 µm. (b) Quantitative analysis of the average cell height measured from Z-stack images as the distance between apical marker villin (green) and PDMS membrane (dotted line). Data represent the mean ± s.e.m; One-way ANOVA, ****p<0.0001. (c) Scanning electron microscopy surface images of duodenal organoid-derived epithelium cultured for 72 hr under static or ﬂow +/- stretch conditions. Cells seeded in the top channel of Intestine-Chip were maintained with (Flow) or without (Static) medium perfusion (30 µl/hr) in both channels and 10% of mechanical stretch (0.2 Hz) (Flow+Stretch). Images were captured at the center area of the chamber. Scale bar, 5 µm. (d) Quantiﬁcation of microvilli. Density of microvilli per µm2 was measured from the SEM images (100 µm2, 20 FOV) as described in the Materials and methods. Data represent the mean ± s.e.m; one-way ANOVA, ****p<0.0001.
 
 Next, we assessed the effect of applied mechanical stimulation (in the form of fluid flow and stretch) on the phenotypic characteristics of the human primary intestinal cells grown on the chip. To this end, we used multiple endpoints including immunofluorescent staining for apical (villin) and basolateral (E-cadherin) cell surface markers and scanning electron microscopy (SEM) for the identification of apical microvilli. Exposure of the Duodenum Intestine-Chip to flow for 72 hr resulted in accelerated polarization of the epithelial cells and formation of apical microvilli (Figure 1—figure supplement 1), what is in line with our previous findings reported for the Caco-2 cells (Kim et al., 2012). We observed that culture of primary intestinal epithelial cells in the chips maintained under static conditions resulted in the formation of a monolayer of flat (14.8 ± 2.6 μm) squamous cells with poorly defined cell-cell junctions (Figure 1—figure supplement 1A) and sparsely distributed microvilli (Figure 1—figure supplement 1B). In contrast, cells cultured under flow (30 μl/hr) with or without concomitant application of cyclic stretch (10% strain, 0.2 Hz), exhibited a well-polarized and cobblestone-like morphology with increased cell height (27.0 ± 1.3 μm), strongly delineated junctions, and densely packed microvilli. In line with our previous observations, application of the constant flow (shear stress) was critical for promoting maturation of a well-polarized epithelium, while short-term application of cyclic strain did not show any additional effect. Moreover, prolonged cell exposure to flow and cyclic strain resulted in the spontaneous development (around day 6 of culture) of epithelial undulations (‘villi-like structures’) extending into the lumen of the epithelial channel and covered by continuous brush border (Figure 1C). Immunofluorescence confocal analysis confirmed the establishment of confluent epithelial and endothelial monolayers across the entire length of the chip (Figure 1D), with well-defined epithelial tight junctions, as demonstrated by ZO-1 protein staining and endothelial adherent junctions visualized using antibodies against VE-cadherin (Dawson et al., 2016). Importantly, these culture conditions resulted in a time-dependent improvement of intestinal permeability as indicated by the low permeability coefficient (Papp) of fluorescently labeled dextran recorded in the Duodenum Intestine-Chip generated from organoid-derived cells of three different individuals (Figure 1E). Overall, this data indicates that the human adult Duodenum Intestine-Chip supports the formation of a functional barrier with in vivo relevant cytoarchitecture, cell-cell interactions, and permeability parameters.
 
@@ -55,9 +63,17 @@ To confirm differentiation of the organoid-derived cells within the chip into al
 
 **Figure 2.:** (a) Comparison of the relative gene expression levels of markers specific for differentiated intestinal cell types, including mucin 2 (MUC2) for goblet cells, alkaline phosphatase (ALPI) for absorptive enterocytes, chromogranin A (CHGA) for enteroendocrine cells, lysozyme (LYZ) for Paneth cells in Duodenum Intestine-Chip and RNA isolated directly from the duodenal tissue (Duodenum). Expression of these genes at different time points (days 2, 4, 6, 8, 10) of Duodenum Intestine-Chip culture is shown. In each graph, values represent average gene expression ± s.e.m (error bars) from three independent experiments, each using different donors of biopsy-derived organoids and at least three different chips per time point. Values are shown relative to duodenal tissue expressed as 1. EPCAM expression is used as normalizing control. One-way ANOVA, ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns p>0.05. (b) Representative confocal fluorescent micrographs demonstrating the presence of all major intestinal cell types (green) in Duodenum Intestine-Chip at day 8 of fluidic culture, including goblet cells stained with anti-mucin-2; enteroendocrine cells visualized with anti-chromogranin A, absorptive enterocytes stained with anti-villin and Paneth cells labeled with anti-lysozyme. Cell-cell borders were stained with anti-E-cadherin and are shown in magenta. Cells nuclei are shown in gray. Scale bar, 10 µm. (c) Quantification of the different intestinal epithelial cell types present in Duodenum Intestine-Chip at day eight and identified by immunostaining, as described in (b). Cell ratios are based on 10 different fields of view (10 FOV) counted in three individual chips (each from a different donor) per staining. DAPI staining was used to evaluate the total cell number. Duodenum values, represent cell ratios observed in the histological sections and are based on the literature (Karam, 1999).
 
-## Transcriptomic comparison of the Duodenum Intestine-Chip versus organoids
+### Transcriptomic comparison of the Duodenum Intestine-Chip versus organoids
 
 To further verify whether the Duodenum Intestine-Chip faithfully recapitulates human adult duodenal tissue and to better understand how much it differs from the organoids used for its establishment, we performed RNA-seq analysis (Figure 3). We compared global RNA expression data obtained from: i) duodenal organoids (Organoids; n = 3) cultured for 8 days in a conventional plastic-adherent Matrigel drop overlaid with growth medium; ii) Duodenum Intestine-Chip established using cells derived from the above organoids (Duodenum Intestine-Chip; n = 3) and grown for 8 days in the presence of constant flow and stretch; iii) human adult duodenal tissue (Adult Duodenum; n = 2; full-thickness samples) (Supplementary file 1). Importantly, the same experimental conditions that is maintenance in expansion media for 6 days, followed by 2 days in differentiation media were used for both organoids and chips. We annotated 13,735 genes in the genome and performed differential gene expression analysis (DGE). For the DGE analysis, we used the ‘limma’ R package which has an excellent performance even at low sample numbers (Ritchie et al., 2015; Baccarella et al., 2018). To select the differentially expressed genes, we applied the widely accepted thresholds adjusted p-value<0.05 and |log2FoldChange| > 2. These strict thresholds allowed for a significant increase in the statistical power of the results.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig3-v1.jpg)
+
+**Figure 3.:** (a) Differential gene expression analysis was carried out to identify genes that are up- or down-regulated in Duodenum Intestine-Chip compared to organoids (blue circle) (Figure 3—source data 1) and adult duodenum compared to organoids (yellow circle) (Figure 3—source data 2). The gene lists were then compared to determine how many genes overlap between those two comparisons (Figure 3—source data 3), and the results are shown as a Venn diagram. 305 genes were identified as common and responsible for the closer resemblance of Duodenum Intestine-Chip to human adult duodenum than organoids from which chips were derived. Sample sizes were as follows: Duodenum Intestine-Chip, n = 3 (independent donors); Organoids, n = 3 (independent donors); Adult duodenum, n = 2 (independent biological specimens). Intestinal crypts derived from the same three independent donors were used for the establishment of Duodenum Intestine-Chip and organoid cultures. Both chips and organoids were cultured in parallel, in the presence of expansion media for 6 days, followed by 2 days of differentiation media. Experiment was terminated and samples were processed for analyses 8 days post-seeding. (b) The list of overlapping genes was subjected to GO analysis to identify enriched biological processes (GO terms) (Figure 3—source data 4). The results are shown as REVIGO scatterplots in which similar GO terms are grouped in arbitrary two-dimensional space based on semantic similarity. Each circle corresponds to a specific GO term and circle sizes are proportional to the number of genes included in each of the enriched GO terms. Finally, the color of a circle indicates the significance of the specific GO term enrichment. GO terms enriched in the overlapping gene set demonstrate that Duodenum Intestine-Chip is more similar to human duodenum with respect to important biological functions of the intestine, including digestion, transport and metabolism. (c) The results of the KEGG pathway analysis using the 305 differentially expressed genes showed seven significantly enriched (FDR adjusted p-value<0.05) pathways related to absorption, metabolism, digestion and chemical carcinogenesis. The size of the bars indicates the fold-enrichment of the corresponding pathways. (d) Curated heatmaps were generated to examine particular genes that belong to the enriched KEGG pathways and to show the expression levels (loge(FPKM)) of these genes across different samples. Genes belonging to five different pathways, including: ‘mineral absorption’, ‘fat digestion and absorption’, ‘retinol metabolism’, ‘metabolism of xenobiotics by cytochrome P450’ and ‘protein digestion and absorption’, are shown. The expression levels of genes associated with ‘chemical carcinogenesis’ (CYP3A4, GSTA2, UGT2B17, CYP1A1, SULT2A1, ADH4, UGT1A4, ADH6, ADH1A, UGT2A3, UGT2B15, UGT2B7) and ‘drug metabolism – cytochrome 450’ CYP3A4, GSTA2, UGT2B17, ADH4, UGT1A4, ADH6, ADH1A, UGT2A3, UGT2B15, UGT2B7) were included in the heatmap representing ‘metabolism of xenobiotics by cytochrome P450’ as they showed to overlap in between three different pathways. Each heatmap has its own color scale, which corresponds to a different range of loge(FPKM) values, as indicated on the color bars located to the left. The provided results further demonstrate that Duodenum Intestine-Chip (Chip) is more similar to adult duodenum (In vivo) than are the organoids (Organoids). Sample sizes were as follows: Duodenum Intestine-Chip, n = 3 (independent donors); Organoids, n = 3 (independent donors); In vivo, adult duodenum, n = 2 (independent biological specimens). Intestinal crypts derived from the same three independent donors were used for the establishment of Duodenum Intestine-Chip and organoid cultures. Both chips and organoids were cultured in parallel as described in (a). See also Figure 3—figure supplement 1, Figure 3—figure supplement 1—source data 1 and Figure 3—figure supplement 1—source data 2 showing the results of DGE analysis followed by functional enrichment performed between Organoids or Duodenum Intestine-Chip and Adult Duodenum.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Volcano plot (left) and functional enrichment analysis (right) of differentially expressed genes between organoids and adult duodenum (Figure 3—figure supplement 1—source data 1). The red dots represent genes that were significantly (adjusted p-value<0.05) up- or down-regulated. The black dots correspond to the non-differentially expressed genes. The vertical lines correspond to 2.0 up/down fold change and the horizontal line indicates the adjusted p-value<0.05. Sample sizes were as follows: Organoids, n = 3, Adult Duodenum, n = 2. All samples are biologically independent (derived from a different donor). Organoids were cultured in the presence of expansion media for 6 days, followed by 2 days of differentiation media. Analysis was performed in samples collected 8 days post-seeding. Functional enrichment analysis demonstrated over (+) and under (-) represented biological processes in the GO categories concerning digestion, extracellular matrix organization, angiogenesis, cell adhesion, tissue development, and cell response to drugs and toxic substances, while nucleic acid metabolic process and RNA processing were underrepresented. GO, Gene Ontology. (b) Differential gene expression and functional enrichment analysis between Duodenum Intestine-Chip and adult human tissue (Figure 3—figure supplement 1—source data 2) demonstrating up- and down-regulated genes (volcano plot, left) and annotated biological processes (table, right) involving but not limited to protein synthesis and targeting as well as cell cycle and cell proliferation. Red dots: significant genes (adj. p-value<0.05). Black dots: non-differentially expressed genes. Sample sizes were as follows: Duodenum Intestine-Chip, n = 3; Adult Duodenum, n = 2. All samples were biologically independent (derived from a different donor). Duodenum Intestine-Chips were grown in the presence of expansion media for 6 days, followed by 2 days of differentiation media. Analysis was performed in samples collected 8 days post-seeding.
 
 First, we examined the differential gene expression in organoids as compared to human adult duodenal tissue. Out of the 13,735 genes annotated in the genome, 1437 were found to be significantly differentially regulated between these samples: 562 and 875 genes were respectively up- and down-regulated (Figure 3—figure supplement 1A and Figure 3—figure supplement 1—source data 1). Next, functional enrichment analysis was performed utilizing the PANTHER classification system to highlight biological processes, that is significantly enriched gene ontology (GO) terms within these gene sets (Ashburner et al., 2000; Mi et al., 2013; The Gene Ontology Consortium, 2017; The Gene Ontology Consortium, 2017). The majority of differentially expressed genes belonged to pathways related to digestion, extracellular matrix organization, angiogenesis, cell adhesion, tissue development, and cell responses to drugs and xenobiotics (Figure 3—figure supplement 1B). This comparison allowed us to identify genes responsible for global transcriptomic differences between organoid technology and native human tissue and highlight biological functions which could be affected by the observed differences.
 
@@ -69,13 +85,21 @@ Additionally, KEGG Pathway analysis identified a total of seven significantly en
 
 Cumulatively, this data demonstrated an increased similarity in the global gene expression profile between Duodenum Intestine-Chip and human adult duodenal tissue, compared to organoids.
 
-## Intestinal drug transporters and MDR1 efflux activity in the Duodenum Intestine-Chip
+### Intestinal drug transporters and MDR1 efflux activity in the Duodenum Intestine-Chip
 
 Encouraged by the results of transcriptomic analyses detailed above we sought to focus further on the characterization of the expression, localization and function of the main intestinal drug transporters. First, we assessed the expression and localization of these transporters in Duodenum Intestine-Chip established from the organoid-derived cells of three independent donors by qRT-PCR and immunofluorescent imaging. The average gene expression levels of efflux (MDR1, BCRP, MRP2, MRP3) and uptake (PepT1, OATP2B1, OCT1, SLC40A1) drug transporters, were assessed at day 8 of chip culture and compared with their levels observed in the freshly isolated human duodenal tissue (Duodenum) and the previously described Intestine-Chip model based on the use of Caco-2 cells (Caco-2 Intestine-Chip) (Figure 4A). The expression profiles of these genes in Duodenum Intestine-Chip were similar to those observed in human duodenal tissue. Although a similar pattern of gene expression was also found in the Caco-2 Intestine-Chip (day 8 of culture), expression of a couple of important organic anion and cation transporters, including OATP2B1 and OCT1, were markedly increased in comparison to the human duodenum. This data confirms that the well-known differences between Caco-2 cells and normal human intestinal tissue are maintained also in the case of on chip culture (Maubon et al., 2007; Ölander et al., 2016). Moreover, although not statistically significant, notable differences in the expression of MDR1, BCRP and PEPT1 were found in Caco-2 Intestine-Chip in comparison to Duodenum. In line with the trends previously reported by others (Sun et al., 2002; Maubon et al., 2007; Harwood et al., 2016), a 3.5-fold higher expression of MDR1, 3.6-fold and 24-fold lower expression of BCRP and PEPT1, respectively, were found in Caco-2 cells compared with the human duodenum. On the other hand, much smaller differences in respect to native human tissue were observed for Duodenum Intestine-Chip: with ~1.5 fold and ~2.6 fold increased expression of MDR1 and BCRP, respectively, and no differences noted in the expression of PEPT1. These results demonstrate that by combining duodenal organoids with Organs-on-Chips technology we enabled a closer emulation of human in vivo tissue gene expression profile, than with the previously described Caco-2 Intestine-Chip.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig4-v1.jpg)
+
+**Figure 4.:** (a) Comparison of the relative average gene expression levels of drug efflux (MDR1, BCRP, MRP2, MRP3) and uptake (PEPT1, OATP2B1, OCT1, SLC40A1) transporters in Caco-2 Intestine-Chip, Duodenum Intestine-Chip, both assessed on day 8 of culture, and RNA isolated directly from the duodenal tissue (Duodenum). The results show that Duodenum Intestine-Chip expresses drug transport proteins at the levels close to human duodenal tissue. Note, the expression of OATP2B1 and OCT1 in Caco-2 Intestine-Chip were significantly higher than in human duodenum while the difference between Duodenum Intestine-Chip and adult duodenum is not significant. Each value represents average gene expression ± s.e.m (error bars) from three independent experiments, each involving Duodenum Intestine-Chip established from a tissue of three different donors (three chips/donor), RNA tissue from three independent biological specimens, and Caco-2 Intestine-Chip (three chips). Values are shown relative to the duodenal tissue expressed as 1, two-way ANOVA, ****p<0.0001, ***p<0.001, **p<0.01. EPCAM expression was used as normalizing control. (b) Representative confocal immunofluorescence micrographs showing apical localization of the efflux transporter MDR1 (green) and the cell surface marker villin (magenta) in a vertical cross section of monolayer (top) formed in Duodenum Intestine-Chip at day 4 and later formed villi-like structure (bottom) at day 8. Cell nuclei are visualized in cyan. Scale bar, 10 µm. (c) Line plots corresponding to confocal images in (b) showing the distribution of fluorescent intensities for three different channels: MDR1 (green), villin (magenta) and nuclei (cyan) along the basal–apical axis of enterocytes forming a monolayer or villi-like structures in Duodenum Intestine-Chip. The fluorescent intensity was analyzed in 3D reconstructed confocal images of Duodenum Intestine-Chip and plotted as average across 20 different z-stacks. Distribution of MDR1 and villin shows significant overlap. See also Figure 4—figure supplement 1 showing luminal localization of additional efflux (BCRP) and uptake (PEPT1) transporters in Duodenum Intestine-Chip. (d) Activity of efflux pump proteins in Caco-2 and Duodenum Intestine-Chip. The intracellular accumulation of the fluorescent substrate of MDR1 - Rhodamine 123 is significantly increased in response to the MDR1 inhibitor vinblastine (black bars) in comparison to vehicle (DMSO) control (gray bars) in Caco2 and Duodenum Intestine-Chip. Data were represented as mean ± s.e.m (error bars) of at least three independent experiments involving chips generated from organoids of three individual donors or Caco-2 cells, all assessed 8 days post-seeding. Two-way ANOVA, **p<0.01, *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50135/elife-50135-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Representative cross-sectional confocal images of Duodenum Intestine-Chip (left) showing apical localization of efflux BCRP (a; green) and uptake PEPT1 drug transporters (c; green) that co-localize with luminal cell surface marker villin (magenta) at the time of confluent monolayer formation (day 4 of culture) as well as within successively formed villi-like structures (at day 8). Cell nuclei are visualized in cyan. Scale bar, 10 µm (b and d) Line plots corresponding to confocal images in (a andb) representing distribution of the fluorescence intensities across epithelial cell z-axis revealed close overlap of green (transporters; BRCP and PEPT1) and magenta (apical cell marker; villin) signals confirming co-distribution of these proteins on the luminal cell surface. The fluorescent intensity for each channel was analyzed in 3D reconstructed confocal images of Duodenum Intestine-Chip and plotted as average across 26 different z-stacks (for BCRP) and 21 different z-stacks (for PEPT1).
+
 We further demonstrated in vivo relevant localization of the luminal efflux pumps MDR1, more commonly referred to as P-gp or P-glycoprotein (Figure 4B) and BCRP (Figure 4—figure supplement 1A) as well as the uptake Peptide Transporter 1 (PEPT1) in Duodenum Intestine-Chip (Figure 4—figure supplement 1C). All three transporters showed to co-distribute together with villin, a marker specific for apical cell membrane, to the intestinal cell brush border of Duodenum Intestine-Chip. This was confirmed on the cross-sectional confocal images of the duodenal epithelium cultured on chip showing a co-localization (merge channel; white) of the fluorescent signal of MDR1, BCRP or PEPT1 with that of villin staining. Similarly, line plots depicting the distribution of fluorescence intensities of each transporter and villin along the basal-apical cell axis revealed the presence of significant overlap between the two channels (Figure 4C and Figure 4—figure supplement 1). Notably, the physiologically relevant localization of MDR1, BCRP1 and PEPT1 at the luminal surface of intestinal epithelium was confirmed at two different time-points of Duodenum Intestine-Chip culture – when the cells have formed a confluent monolayer (around day 4 of culture) and after the villi-like structures morphogenesis has occurred (at day 8 of culture). The MDR1 activity was confirmed by measuring the intracellular accumulation of rhodamine 123 in the presence and absence of specific MDR1 inhibitor, vinblastine, across Duodenum Intestine-Chip at day 8 of their culture. In addition, the obtained results were compared to MDR1 activity assessed in the Caco-2 Intestine-Chip model (Figure 4D). Exposure to the inhibitor induced a ~ 2 fold increase in intracellular accumulation of rhodamine (1.84-fold increase in Duodenum Intestine-Chip and 2.14-fold increase in Caco-2 cells-based model), confirming the presence of active MDR1 efflux pumps in both cell systems.
 
-## Drug-mediated CYP3A4 induction in the Duodenum Intestine-Chip
+### Drug-mediated CYP3A4 induction in the Duodenum Intestine-Chip
 
 Induction of CYP450 drug metabolizing enzymes in human intestine is a major concern for the pharmaceutical industry, as it is known to impact the pharmacokinetics and bioavailability of various orally administered drugs, as well as, mediate DDIs. Therefore, we evaluated the capability of our Duodenum Intestine-Chip to be applied for CYP3A4 induction studies and to help identify risk for DDIs in the clinic. This is not feasible in pre-clinical species, such as rat and dog, due to marked species differences in the expression and regulation of cytochrome P450, as well as substrate specificity of the nuclear receptors, such as PXR, responsible for the transcriptional regulation of CYP3A4 and several drug transporters. Caco-2 Intestine-Chip has been previously reported to possess an increased activity of the CYP450 enzymes when compared to the conventional static culture of Caco-2 cells on transwell inserts (Kim and Ingber, 2013). However, the gene expression level of CYP3A4 measured in this system is significantly lower than in the adult human intestine (Figure 5A), limiting its application for pharmaceutical research, specifically pharmacokinetic evaluation. In the present study, we demonstrate that, in comparison to the Caco-2 cells based system, our Duodenum Intestine-Chip expressed CYP3A4 at a much higher gene (~6000 times higher, p<0.0001) (Figure 5A) and protein level (Figure 5B), similar to those observed in the adult human duodenum.
 
@@ -103,58 +127,200 @@ In conclusion, Duodenum Intestine-Chip provides a closer to in vivo model of the
 
 ## Materials and methods
 
-## Human tissue collection, generation, and culture of organoids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BCRP (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB4155 RRID:AB_95060</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Chromogranin A (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-1488 RRID:AB_2276319</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-E-Cadherin (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab1416 RRID:AB_300946</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lysozyme (Rabbit polyclonal)</td>
+      <td>Agilent</td>
+      <td>Cat#: A0099 RRID:AB_2341230</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MDR-1 (P-gp) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# MA5-13854 RRID:AB_10979045</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mucin-2 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7314 RRID:AB_627970</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PEPT1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-373742 RRID:AB_10918256</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VE-Cadherin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab33168 RRID:AB_870662</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Villin (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab130751 AB_11159755</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO-1) (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 33–9100 RRID:AB_2533147</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3 kDa Dextran, Cascade Blue</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# D7132</td>
+      <td>0.1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1α,25-Dihydroxyvitamin D3</td>
+      <td>Sigma</td>
+      <td>Cat# D1530</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rifampicin</td>
+      <td>Sigma</td>
+      <td>Cat# R3501</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Testosterone</td>
+      <td>Sigma</td>
+      <td>Cat# T1500</td>
+      <td>200 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MDR1 Efflux Assay Kit</td>
+      <td>Millipore</td>
+      <td>Cat# ECM910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human tissue collection, generation, and culture of organoids
 
 Human duodenal organoid cultures were established from biopsies obtained during endoscopic or surgical procedures utilizing methods developed by the laboratory of Dr. Hans Clevers (Sato et al., 2011). De-identified biopsy tissue was obtained from healthy adult subjects who provided informed consent at Johns Hopkins University and all methods were carried out in accordance with approved guidelines and regulations. All experimental protocols were approved by the Johns Hopkins University Institutional Review Board (IRB #NA 00038329). Briefly, organoids generated from isolated intestinal crypts were grown embedded in Matrigel (Corning, USA) in the presence of expansion medium (EM) consisting of Advanced DMEM F12 supplemented with 50% v/v Wnt3a conditioned medium (produced by L-Wnt3a cell line, ATCC CRL-2647), 20% v/v R-spondin-1 conditioned medium (produced by HEK293T cell line stably expressing mouse R-spondin1; kindly provided by Dr. Calvin Kuo, Stanford University, Stanford, CA), 10% v/v Noggin conditioned medium (produced by HEK293T cell line stably expressing mouse Noggin), 10 mM HEPES, 0.2 mM GlutaMAX, 1x B27 supplement, 1x N2 supplement, 1 mM n-acetyl cysteine, 50 ng/ml human epidermal growth factor, 10 nM human [Leu15] -gastrin, 500 nM A83-01, 10 μM SB202190, 100 μg/ml primocin. EM was replaced every other day and supplemented with 10 μM CHIR99021 and 10 μM Y-27632 during the first 2 days after passaging. Organoids were passaged every 7 days and used for chip seeding between passage numbers 5 and 30.
 
-## Duodenum Intestine-Chip
+### Duodenum Intestine-Chip
 
 The design and fabrication of Organ-Chips used to develop the Duodenum Intestine-Chip was based on previously described protocols (Huh et al., 2013). The chip is made of a transparent, flexible polydimethylsiloxane (PDMS), an elastomeric polymer. The chip contains two parallel microchannels (a 1 × 1 mm epithelial channel and a 1 × 0.2 mm vascular channel) that are separated by a thin (50 μm), porous membrane (7 μm diameter pores with 40 μm spacing) coated with ECM (200 µg/ml collagen IV and 100 µg / ml Matrigel at the epithelial side and 200 µg / ml collagen IV and 30 µg / ml fibronectin at the vascular side). Chips were seeded with intestinal epithelial cells obtained from enzymatic dissociation of organoids, as described previously (Kasendra et al., 2018), and incubated overnight before being washed with fresh media. The next day, chips were connected to the culture module instrument (inside the incubator), that can hold up to 12 chips and allows for control of flow and stretching within the chips using pressure driven flow (Vatine et al., 2019). Chips were maintained under constant perfusion of fresh expansion medium at 30 µl/hr through top and bottom channels of all chips until day 6. Human Intestinal Microvascular Endothelial Cells (HIMECs; Cell Biologics) were than plated on the vascular side of the ECM-coated porous membrane in EGM-2MV medium, which contains human epidermal growth factor, hydrocortisone, vascular endothelial growth factor, human fibroblastic growth factor-B, R3-Insulin-like Growth Factor-1, Ascorbic Acid and 5% fetal bovine serum (Lonza Cat. no. CC-3202). At this time, the medium supplying the epithelial channel was switched to differentiation medium. Differentiation medium consisted of the same components as those of Expansion Medium with 50% less Noggin and R-spondin-1 and devoid of Wnt3a and SB202190. Media supplying both chip channels were under continuous flow. Cyclic, peristalsis-like deformations of tissue attached to the membrane (10% strain; 0.2 Hz) were initiated after the formation of a confluent monolayer at ~4 days in culture.
 
-## Permeability assays
+### Permeability assays
 
-In order to evaluate the establishment and integrity of the intestinal barrier, 3 kDa Dextran, Cascade Blue was added to the epithelial compartment of the Duodenum Intestine-Chip at 0.1 mg/ml on the day of their connection to flow. Effluents of the endothelial compartment were sampled every 48 hr to determine the concentration of dye that had diffused through the membrane. The apparent paracellular permeability (Papp) was calculated based on a standard curve and using the following formula:Papp (cms)=  Coutput mgmlx Flow rate (mls)Cinput mgmlx A (cm2)where Coutput is the concentration of dextran in the effluents of the endothelial compartment, A is the seeded area, and Cinput is the input concentration of dextran spiked into the epithelial compartment. The establishment of intestinal barrier function in Duodenum Intestine-Chip was evaluated in three independent experiments, each performed using chips established from a different donor of biopsy-derived organoids. At least three different chips were used per condition.
+In order to evaluate the establishment and integrity of the intestinal barrier, 3 kDa Dextran, Cascade Blue was added to the epithelial compartment of the Duodenum Intestine-Chip at 0.1 mg/ml on the day of their connection to flow. Effluents of the endothelial compartment were sampled every 48 hr to determine the concentration of dye that had diffused through the membrane. The apparent paracellular permeability (Papp) was calculated based on a standard curve and using the following formula:
 
-## Morphological analysis
+$$
+Papp(\frac{cm}{s})=\frac{C_{output}\frac{mg}{ml}xFlowrate(\frac{ml}{s})}{C_{input}\frac{mg}{ml}xA(cm^{2})}
+$$
+
+where Coutput is the concentration of dextran in the effluents of the endothelial compartment, A is the seeded area, and Cinput is the input concentration of dextran spiked into the epithelial compartment. The establishment of intestinal barrier function in Duodenum Intestine-Chip was evaluated in three independent experiments, each performed using chips established from a different donor of biopsy-derived organoids. At least three different chips were used per condition.
+
+### Morphological analysis
 
 Immunofluorescent staining of cells in the Duodenum Intestine-Chip was performed with minor modifications to previously reported protocols (Kasendra et al., 2018). Cells were fixed with 4% formaldehyde or cold methanol, and when required, were permeabilized, using 0.1% Triton X-100. 5% (v/v). Donkey serum solution in PBS was used for blocking. Incubation with primary antibodies directed against ZO-1, VE-cadherin, E-cadherin, villin, mucin 2, lysozyme, chromogranin A, MDR1, BCRP, PEPT1 (see Key Resources Table) was performed overnight at 4°C. Chips treated with corresponding Alexa Fluor secondary antibodies (Abcam) were incubated in the dark for 2 hr at room temperature. Cells were then counterstained with nuclear dye DAPI. Images were acquired with an inverted laser-scanning confocal microscope (Zeiss LSM 880 with Airyscan).
 
 Chips processed for SEM were fixed in 2.5% glutaraldehyde, treated with 1% osmium tetroxide in 0.1 M sodium cacodylate buffer, dehydrated in a series of graded concentrations of ethanol solutions and critical point dried, as described previously (Kasendra et al., 2018). Prior to imaging, samples were coated with a thin (10 nm) layer of Pt/Pd using a sputter coater.
 
-## Measurement of the density of microvilli
+### Measurement of the density of microvilli
 
 Images of microvilli on the surface of cells were captured with a scanning electron microscope (JSM-5600LV; JEOL). The morphological analysis and quantification of microvilli was performed using ImageJ. Number of intestinal microvilli per µm2 were calculated after applying two image processing techniques, namely binarization and particle analysis, and Otsu's thresholding method, as described previously (Julio et al., 2008).
 
-## MDR-1 efflux pump activity
+### MDR-1 efflux pump activity
 
 The transporter activity of MDR-1 was assessed using the MDR1 Efflux Assay Kit, as per manufacturer’s instructions. Briefly, Duodenum Intestine-Chip and Caco-2 Intestine-Chip (Kim et al., 2012; Kim and Ingber, 2013) were perfused apically with rhodamine 123, a fluorescent transport substrate of MDR1. Intracellular accumulation of dye was detected by fluorescent imaging (Olympus IX83) and measured in the presence and absence of MDR-1-specific inhibitor vinblastine (22 µM). Three independent experiments were performed for Caco-2 Intestine-Chip and Duodenum Intestine-Chip, each using chips established from a different donor of biopsy-derived organoids. At least three different chips were used per condition. Images of each were taken at three different fields of view, digitally processed and quantified using Fiji software.
 
-## CYP3A4 induction
+### CYP3A4 induction
 
 Duodenum Intestine-Chip and Caco-2 Intestine-Chip were treated with 100 nM 1,25-dihydroxyvitamin D3 (Sigma) or 20 µM rifampicin (Sigma), which are known to induce CYP3A4, for 48 hr. Controls were treated with DMSO (final concentration 0.1%). CYP3A4 enzyme activity was determined using prototypical substrate testosterone (Sigma). Duodenum Intestine-Chip was incubated with 200 µM testosterone for 1 hr under a flow rate of 300 µL/hr. The reaction was stopped using acetonitrile with 0.1% formic acid, and formation of 6β-hydroxytestosterone was measured using LC-MS at In Vitro ADMET Laboratories, Inc (IVAL). Specific activity of CYP3A4 was determined by dividing the total metabolite formed by the incubation time and normalized to protein contents (pmol/min/mg protein). In order to assess the level of CYP3A4 induction at the gene and protein level cells in the epithelial channel were harvested either for RNA isolation and gene expression analysis or for western blotting, respectively.
 
-## Western blotting
+### Western blotting
 
 RIPA cell lysis buffer (Pierce) supplemented with protease and phosphatase inhibitors (Sigma) was used for the extraction of total protein from epithelial cells in the chips. The protein concentration in each sample was determined using the bicinchoninic acid method. Equal amounts (15 µg) of protein lysates were heat denatured and separated on a 4–10% Mini-Protean Precast Gel (Bio-Rad), followed by transfer on a nitrocellulose membrane (Bio-Rad). After blocking with 5% nonfat milk, membranes were probed with primary antibodies for CYP3A4 (mouse monoclonal, Santa Cruz Biotechnology) and GAPDH (rabbit polyclonal, Abcam) and incubated overnight at 4°C, followed by incubation for 1 hr with IRDye-conjugated secondary antibodies against rabbit and mouse immunoglobulin G (LI-COR), at room temperature. Finally, blots were scanned using an Odyssey Infrared Imaging System (LI-COR) and the protein bands were visualized and quantified using Image Studio software (LI-COR). Gluceraldehyde-3-phosphate dehydrogenase (GAPDH) was used as the loading control.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was isolated from the epithelial cells grown in chip using PureLink RNA Mini kit (Thermo Fisher Scientific) and reverse transcribed to cDNA using SuperScript IV Synthesis System (Thermo Fisher Scientific). qRT-PCR was performed using TaqMan Fast Advanced Master Mix (Applied Biosystems) and TaqMan Gene Expression Assays (see Supplementary file 2, Thermo Fisher Scientific) in QuantStudio 5 PCR System (Thermo Fisher Scientific). Relative expression of gene was calculated using 2-∆∆Ct method.
 
-## RNA isolation and sequencing
+### RNA isolation and sequencing
 
 RNA was extracted using TRIzol (TRI reagent, Sigma) according to manufacturer’s guidelines. Samples were submitted to GENEWIZ South Plainfield, NJ for next generation sequencing. After quality control and a complementary DNA library creation, all samples were sequenced using HiSeq 4000 with 2 × 150 bp paired-end reads per sample.
 
-## RNA sequencing bioinformatics
+### RNA sequencing bioinformatics
 
 Pre-processing: raw sequence data (.bcl files) generated from Illumina HiSeq was converted into fastq files and de-multiplexed using Illumina's bcl2fastq 2.17 software. Read quality was assessed using FastQC. Adaptor and low-quality (<15) sequences were removed using Trimmomatic v.0.36. The trimmed reads were mapped to the Homo sapiens reference genome available on ENSEMBL using the STAR aligner v.2.5.2b. The STAR aligner uses a splice aligner that detects splice junctions and incorporates them to help the alignment of the entire read sequences. BAM files were generated following this step. Unique gene raw counts were calculated by using feature Counts from the Subread package v.1.5.2. Only the unique reads that fell within exon regions were counted.
 
 Differential Gene Expression Analysis: to combine our gene expression dataset with publicly available data for adult duodenum gene expression (provided as Fragments Per Kilobase of transcript per Million mapped read (FPKM) values in Finkbeiner et al., 2015, we converted the raw counts to FPKMs. Then, using the loge(FPKM) expressions of the combined datasets, we applied DE gene analysis using the R package ‘limma’(Ritchie et al., 2015). For each comparison, the thresholds used to identify the DE genes were set to a) adjusted p-values<0.05 and b) absolute log2 fold change >2.
 
-## GO term enrichment analysis and KEGG pathway analysis
+### GO term enrichment analysis and KEGG pathway analysis
 
 After expression pattern clustering, the transcripts from specific groups were subjected to functional annotation, including GO (The Gene Ontology) functional annotation and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathway annotation. The GO terms and KEGG pathway enrichment was performed using The Database for Annotation, Visualization and Integrated Discovery (DAVID v 6.8, http://david.abcc.ncifcrf.gov).
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were performed in triplicates and repeated with organoids from three different human donors. One-way or two-way ANOVA was performed to determine statistical significance, as indicated in the figure legends. The error bars represent standard error of the mean [s.e.m]; p values < 0.05 and above were considered as significant.

@@ -86,33 +86,954 @@ Here, we present another step toward a comprehensive drosophilid genome dataset:
 
 ## Results and discussion
 
-## Taxon sampling
+### Taxon sampling
 
 Our selection of species and strains for sequencing (Table 1) improves the geographic, ecological, and phylogenetic diversity of genomic data from the family Drosophilidae. Most (99 of 101) of the genome assemblies presented here are from 14 species groups in subgenera Drosophila and Sophophora of the subfamily Drosophilinae (Toda, 2020). One species of each of the genera Leucophenga and Chymomyza, both contained in less-studied sister subfamily Steganinae, have also been sequenced. We note some taxonomic inconsistencies arising from the paraphyly or polyphyly of certain drosophilid taxa (Finet et al., 2021; O'Grady and DeSalle, 2018; Yassin, 2013) but will make no attempt to address those issues here. The sequenced species originate from mainland and island locations in North America, Europe, Africa, and Asia; are distributed from northern (e.g. D. tristis, D.littoralis) to equatorial (e.g. D. bocqueti) latitudes; represent two independent transitions to leaf-mining herbivory (Scaptomyza and Lordiphosa); and for some species, like the pest Zaprionus indianus, represent reproductively isolated populations taken from throughout the range. For difficult to culture species, for instance Leucophenga varia and some Lordiphosa spp., only wild-caught flies were sequenced. Finally, we have sequenced lines in active research use. Additional genomic resources like gene expression or population data should be expected in the near future to accompany many of these assemblies. For species where multiple lines were assembled, we have selected a recommended line to use based on genome quality and denote this recommendation in Table 1.
 
-## Near chromosome-scale assembly with ultra-long reads
+**Table 1.**
+ Species and strain information for all samples assembled for this work.Note: Species group and subgroup information is taken from the NCBI Taxonomy Browser with slight modifications following O'Grady and DeSalle, 2018. Strain names along with corresponding NDSSC and Kyoto DGRC stock center numbers are provided to the best of our knowledge. See Supplementary file 1 and Supplementary file 6 for detailed information on samples and data. When multiple lines of a species are listed, * denotes the preferred assembly.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subgenus</th>
+      <th>Group</th>
+      <th>Subgroup</th>
+      <th>Species</th>
+      <th>Sex</th>
+      <th>Strain name</th>
+      <th>NDSSC</th>
+      <th>Kyoto DGRC/ Ehime</th>
+      <th>Additional notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="57">Sophophora</td>
+      <td rowspan="34">melanogaster</td>
+      <td rowspan="8">melanogaster</td>
+      <td>D. melanogaster</td>
+      <td>MF</td>
+      <td>ISO-1 GENOME</td>
+      <td>14021-0231.36</td>
+      <td>NA</td>
+      <td>BDGP reference strain</td>
+    </tr>
+    <tr>
+      <td>D. mauritiana</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14021-0241.01</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. simulans</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14021-0251.006</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. sechellia</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14021-0248.01</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. teissieri *</td>
+      <td>M</td>
+      <td>273.3</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. teissieri</td>
+      <td>M</td>
+      <td>CT02</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. yakuba</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14021-0261.01</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. erecta</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14021-0224.01</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>eugracilis</td>
+      <td>D. eugracilis</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14026-0451.02</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td rowspan="2">suzukii</td>
+      <td>D. subpulchrella</td>
+      <td>M</td>
+      <td>L1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. biarmipes</td>
+      <td>MF</td>
+      <td>361.0 iso1 l-11 GENOME strain 1</td>
+      <td>14023-0361.10</td>
+      <td>NA</td>
+      <td>modENCODE strain</td>
+    </tr>
+    <tr>
+      <td>takahashii</td>
+      <td>D. takahashii</td>
+      <td>F</td>
+      <td>IR98-3 E-12201</td>
+      <td>NA</td>
+      <td>E-912201</td>
+      <td>inbred derivative of Ehime stock IR98-3</td>
+    </tr>
+    <tr>
+      <td>ficusphila</td>
+      <td>D. ficusphila</td>
+      <td>F</td>
+      <td>631.0-iso1 l-10 GENOME</td>
+      <td>14025-0441.05</td>
+      <td>NA</td>
+      <td>modENCODE strain</td>
+    </tr>
+    <tr>
+      <td rowspan="4">rhopaloa</td>
+      <td>D. carrolli</td>
+      <td>MF</td>
+      <td>KB866</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. rhopaloa</td>
+      <td>MF</td>
+      <td>BaVi067 GENOME</td>
+      <td>14029-0021.01</td>
+      <td>E-24701</td>
+      <td>modENCODE strain</td>
+    </tr>
+    <tr>
+      <td>D. kurseongensis</td>
+      <td>F</td>
+      <td>SaPa58</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. fuyamai</td>
+      <td>F</td>
+      <td>KB-1217</td>
+      <td>14029-0011.01</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>elegans</td>
+      <td>D. elegans</td>
+      <td>F</td>
+      <td>HK0461.03 GENOME</td>
+      <td>14027-0461.03</td>
+      <td>NA</td>
+      <td>modENCODE strain</td>
+    </tr>
+    <tr>
+      <td>suzukii</td>
+      <td>D. oshimai</td>
+      <td>M</td>
+      <td>MT-04</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">montium</td>
+      <td>D. bocqueti</td>
+      <td>M</td>
+      <td>YAK3_mont-66</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. sp aff chauvacae</td>
+      <td>M</td>
+      <td>mont_up-71</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. jambulina</td>
+      <td>MF</td>
+      <td>st-2</td>
+      <td>14028-0671.01</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. kikkawai</td>
+      <td>F</td>
+      <td>561.0-iso4 l-10 GENOME</td>
+      <td>14028-0561.14</td>
+      <td>NA</td>
+      <td>modENCODE strain</td>
+    </tr>
+    <tr>
+      <td>D. rufa</td>
+      <td>F</td>
+      <td>EH091 iso-C L_3</td>
+      <td>NA</td>
+      <td>914802</td>
+      <td>inbred derivative of Ehime stock EH091</td>
+    </tr>
+    <tr>
+      <td>D. triauraria</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14028-0691.9</td>
+      <td>NA</td>
+      <td>Miller et al., 2018; previously mis-identified as D. kikkawai</td>
+    </tr>
+    <tr>
+      <td rowspan="9">ananassae</td>
+      <td>D. malerkotliana pallens</td>
+      <td>F</td>
+      <td>palQ-isoG</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. malerkotliana malerkotliana</td>
+      <td>MF</td>
+      <td>mal0-isoC</td>
+      <td>14024-0391.00</td>
+      <td>NA</td>
+      <td>inbred derivative of strain 14024-0391.00</td>
+    </tr>
+    <tr>
+      <td>D. bipectinata</td>
+      <td>MF</td>
+      <td>4-4-2-3-1-1-1-1-1 BackUp</td>
+      <td>14024-0381.04</td>
+      <td>NA</td>
+      <td>Inbred derivative of NDSSC strain</td>
+    </tr>
+    <tr>
+      <td>D. parabipectinata</td>
+      <td>MF</td>
+      <td>par2-isoB</td>
+      <td>14024-0401.02</td>
+      <td>NA</td>
+      <td>inbred derivative of strain 14024-0401.02 (now extinct)</td>
+    </tr>
+    <tr>
+      <td>D. pseudoananassae pseudoananassae</td>
+      <td>F</td>
+      <td>Wau 125</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. pseudoananassae nigrens</td>
+      <td>F</td>
+      <td>VT04-31</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. ananassae</td>
+      <td>F</td>
+      <td>14024-0371.13</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. varians</td>
+      <td>MF</td>
+      <td>CKM15-L1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. ercepeace</td>
+      <td>MF</td>
+      <td>164-14</td>
+      <td>14024-0432.00</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">obscura</td>
+      <td rowspan="4">obscura</td>
+      <td>D. ambigua</td>
+      <td>M</td>
+      <td>R42</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale strain from the wild</td>
+    </tr>
+    <tr>
+      <td>D. tristis</td>
+      <td>M</td>
+      <td>D2</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale strain from the wild</td>
+    </tr>
+    <tr>
+      <td>D. obscura</td>
+      <td>M</td>
+      <td>BZ-5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale strain from the wild</td>
+    </tr>
+    <tr>
+      <td>D. subobscura</td>
+      <td>M</td>
+      <td>Küsnacht</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>standard laboratory strain</td>
+    </tr>
+    <tr>
+      <td rowspan="2">pseudoobscura</td>
+      <td>D. persimilis</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14011-0111.01</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. pseudoobscura</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14011-0121.94</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td rowspan="8">willistoni</td>
+      <td rowspan="6">willistoni</td>
+      <td>D. willistoni (Uruguay) *</td>
+      <td>M</td>
+      <td>L-G3</td>
+      <td>14030-0811.17</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. willistoni</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>14030-0811.00</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. paulistorum L06 *</td>
+      <td>M</td>
+      <td>(Heed) H66.1C</td>
+      <td>14030-0771.06</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. paulistorum L12</td>
+      <td>M</td>
+      <td>L12</td>
+      <td>14030-0771.12</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. tropicalis</td>
+      <td>M</td>
+      <td>(Heed) H65.2</td>
+      <td>14030-0801.00</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. insularis</td>
+      <td>M</td>
+      <td>jp01i</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. Powell</td>
+    </tr>
+    <tr>
+      <td rowspan="2">bocainensis</td>
+      <td>D. sucinea</td>
+      <td>M</td>
+      <td>49.15</td>
+      <td>14030-0791.01</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. sucinea**</td>
+      <td>M</td>
+      <td>H176.10</td>
+      <td>14030-0761.01</td>
+      <td>NA</td>
+      <td>NDSSC strain is misidentified as D. nebulosa</td>
+    </tr>
+    <tr>
+      <td rowspan="4">saltans</td>
+      <td rowspan="2">saltans</td>
+      <td>D. saltans</td>
+      <td>M</td>
+      <td>(Heed) H180.40</td>
+      <td>14045-0911.00</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. prosaltans</td>
+      <td>M</td>
+      <td>(Heed) H29.6</td>
+      <td>14045-0901.02</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>neocordata</td>
+      <td>D. neocordata</td>
+      <td>M</td>
+      <td>2536.7</td>
+      <td>14041-0831.00</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sturtevanti</td>
+      <td>D. sturtevanti</td>
+      <td>F</td>
+      <td>H191.23</td>
+      <td>14043-0871.01</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Lordiphosa</td>
+      <td rowspan="3">miki</td>
+      <td>L. clarofinis</td>
+      <td>MF</td>
+      <td>Guizhou062018LC</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Line inbred for 2 generations in the lab before sequencing</td>
+    </tr>
+    <tr>
+      <td>L. stackelbergi</td>
+      <td>MF</td>
+      <td>UCILTSSapporo052019LS</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pool of 50 wild-caught flies</td>
+    </tr>
+    <tr>
+      <td>L. magnipectinata</td>
+      <td>MF</td>
+      <td>UCKTSapporo052019LM</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pool of 50 wild-caught flies</td>
+    </tr>
+    <tr>
+      <td>fenestrarum</td>
+      <td>L. collinella</td>
+      <td>MF</td>
+      <td>UCKTSapporo052019LC</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pool of 30 wild-caught flies</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L. mommai</td>
+      <td>MF</td>
+      <td>MMSapporo052014LM</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="41">Drosophila</td>
+      <td rowspan="19">Zaprionus</td>
+      <td rowspan="14">vittiger</td>
+      <td>Z. nigranus</td>
+      <td>M</td>
+      <td>st01n</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>line derived from wild collection</td>
+    </tr>
+    <tr>
+      <td>Z. camerounensis</td>
+      <td>M</td>
+      <td>jd01cam</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. lachaisei</td>
+      <td>M</td>
+      <td>jd01l</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>line derived from wild collection</td>
+    </tr>
+    <tr>
+      <td>Z. vittiger</td>
+      <td>M</td>
+      <td>jd01v</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. davidi</td>
+      <td>M</td>
+      <td>jd01d</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. taronus</td>
+      <td>M</td>
+      <td>st01t</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>line derived from wild collection</td>
+    </tr>
+    <tr>
+      <td>Z. capensis</td>
+      <td>M</td>
+      <td>jd01cap</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. gabonicus</td>
+      <td>M</td>
+      <td>jd01gab</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. indianus RCR04</td>
+      <td>M</td>
+      <td>RCR04</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. indianus 16GNV01</td>
+      <td>M</td>
+      <td>16GNV01</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. indianus BS02 *</td>
+      <td>M</td>
+      <td>BS02</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. indianus CDD18</td>
+      <td>M</td>
+      <td>CDD18</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. africanus</td>
+      <td>M</td>
+      <td>BS06</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z ornatus</td>
+      <td>M</td>
+      <td>jd01o</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td rowspan="2">tuberculatus</td>
+      <td>Z. tsacasi</td>
+      <td>M</td>
+      <td>car7-4</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. tsacasi *</td>
+      <td>M</td>
+      <td>jd01t</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td rowspan="3">inermis</td>
+      <td>Z. kolodkinae</td>
+      <td>M</td>
+      <td>jd01k</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td>Z. inermis</td>
+      <td>M</td>
+      <td>18BSZ10</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z. ghesquierei</td>
+      <td>M</td>
+      <td>jd01ghe</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>isofemale line from J. David</td>
+    </tr>
+    <tr>
+      <td rowspan="3">cardini</td>
+      <td rowspan="2">dunni</td>
+      <td>D. dunni</td>
+      <td>M</td>
+      <td>H254.21</td>
+      <td>15182-2291.00</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. arawakana</td>
+      <td>M</td>
+      <td>MONHI050227(B)-104</td>
+      <td>15182-2261.03</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cardini</td>
+      <td>D. cardini</td>
+      <td>M</td>
+      <td>NA</td>
+      <td>15181-2181.03</td>
+      <td>917701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">funebris</td>
+      <td>funebris?</td>
+      <td>undescribed (Sao Tome mushroom)</td>
+      <td>M</td>
+      <td>st01m</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>undescribed species collected on mushroom, Sao Tome</td>
+    </tr>
+    <tr>
+      <td>funebris</td>
+      <td>D. funebris</td>
+      <td>M</td>
+      <td>fst01</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>line derived from wild collection</td>
+    </tr>
+    <tr>
+      <td rowspan="4">immigrans</td>
+      <td rowspan="2">immigrans</td>
+      <td>D. immigrans *</td>
+      <td>F</td>
+      <td>FK05-19</td>
+      <td>15111.1731.12</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. immigrans kari17</td>
+      <td>M</td>
+      <td>kari17</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(incertae sedis)</td>
+      <td>D. pruinosa</td>
+      <td>M</td>
+      <td>iso-A1 l-9</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>quadrilineata</td>
+      <td>D. quadrilineata</td>
+      <td>M</td>
+      <td>quad-TMU</td>
+      <td>NA</td>
+      <td>914402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tumiditarsus</td>
+      <td></td>
+      <td>D. repletoides</td>
+      <td>M</td>
+      <td>ISZ-isoB I-10</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Scaptomyza</td>
+      <td rowspan="2">Scaptomyza</td>
+      <td>S. montana</td>
+      <td>MF</td>
+      <td>iso-CA-L1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S. graminum</td>
+      <td>F</td>
+      <td>TMU-2019</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>30 wild-caught females</td>
+    </tr>
+    <tr>
+      <td>Parascaptomyza</td>
+      <td>S. pallida</td>
+      <td>MF</td>
+      <td>iso-CA-L1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hemiscaptomyza</td>
+      <td>S. hsui</td>
+      <td>MF</td>
+      <td>iso-CA-L1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">HawaiianDrosophila</td>
+      <td rowspan="2">orphnopeza</td>
+      <td>D. sproati</td>
+      <td>MF</td>
+      <td>DKPTOMS02</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Pool of wild-caught flies</td>
+    </tr>
+    <tr>
+      <td>D. murphyi</td>
+      <td>MF</td>
+      <td>DKPHETFM01</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Flies from recently established but not inbred lab line</td>
+    </tr>
+    <tr>
+      <td>grimshawi</td>
+      <td>D. grimshawi</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>15287-2541.00</td>
+      <td>NA</td>
+      <td>Same line as caf1 genome</td>
+    </tr>
+    <tr>
+      <td rowspan="3">virilis</td>
+      <td rowspan="3">virilis</td>
+      <td>D. virilis</td>
+      <td>F</td>
+      <td>NA</td>
+      <td>15010-1051.87</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>D. americana</td>
+      <td>M</td>
+      <td>3367.1</td>
+      <td>15010-0951.00</td>
+      <td>NA</td>
+      <td>Also called Anderson strain</td>
+    </tr>
+    <tr>
+      <td>D. littoralis</td>
+      <td>M</td>
+      <td>Kilpisjärvi 1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Originally misidentified as D. ezoana (Lankinen 1986, J Comp Physiol A 159: 123-142)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">repleta</td>
+      <td>repleta</td>
+      <td>D. repleta</td>
+      <td>M</td>
+      <td>kari30</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mulleri</td>
+      <td>D. mojavensis</td>
+      <td>F</td>
+      <td>15081-1352.22</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Miller et al., 2018</td>
+    </tr>
+    <tr>
+      <td colspan="3">genus: Leucophenga</td>
+      <td>L. varia</td>
+      <td>M</td>
+      <td>nc01v</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Sequenced single wild-caught fly, no amplification</td>
+    </tr>
+    <tr>
+      <td colspan="3">genus: Chymomyza</td>
+      <td>C. costata</td>
+      <td>M</td>
+      <td>Sapporo</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* denotes the genome of best quality when multiple assemblies are available for a species._
+
+### Near chromosome-scale assembly with ultra-long reads
 
 We sequenced the fly samples using a ONT 1D ligation kit approach, replacing magnetic bead cleanups with size selective precipitation. This modified workflow is optimized for genomic DNA extractions from 15 to 30 whole flies, increases the yield of ultra-long reads relative to the standard ligation kit protocol, increases overall sequencing throughput, and significantly reduces the cost of library preparation. Sequencing runs varied with sample quality and type, and in general read lengths and throughput increased over the course of this work with improved iterations of the protocol. Under optimal conditions and with enough starting material (at least 2,000 ng of very high molecular weight DNA) to prepare at least three library loads (~1200–500 ng total prepared library, 350–500 ng per load), along with regular DNAse flushes to maintain yields, Nanopore sequencing runs following the supplied protocol should net 12–15 Gb of data per R9.4.1 flow cell with a read N50 greater than 20 kb, and about 30% of data in reads longer than 50 kb. We generated paired-end, 150 bp Illumina reads for most strains unless public datasets were available.
 
 Deep (average 52×) sequencing coverage with a substantial fraction of ultra-long reads (Supplementary file 1) resulted in high-quality genome assemblies that were comparable to and often better than currently available reference genomes in terms of contiguity and completeness (Figure 1, Figure 1—figure supplement 1, Supplementary file 2). We chose Flye (Kolmogorov et al., 2019) as our assembler based on superior contiguity and favorable runtimes relative to Miniasm (Li, 2016) and Canu (Koren et al., 2017; Figure 1—figure supplement 2). To provide standardization for measures of contiguity, we estimated genome size for each assembly using long-read coverage over single-copy BUSCO loci (Supplementary file 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig1-v3.jpg)
+
+**Figure 1.:** (A,B) Assembly contiguity is compared to the D. melanogaster v6.22 reference genome (blue) as well as five recently published, highly contiguous Illumina assemblies (red lines, D. birchii, D. bocki, D. bunnanda, D. kanapiae, D. truncata; Bronski et al., 2020). (A) Nx curves, or the (y-axis) size of each contig when contigs are sorted in descending size order, in relation to the (x-axis) cumulative proportion of the genome assembly that is covered. (B) The distribution of contig N50, the size of the contig at which 50% of the assembly is covered. (C) Assembly completeness assessed by BUSCO v4.0.6 (Seppey et al., 2019). Note, D. equinoxialis was evaluated with BUSCO v4.1.4 due to an issue with v4.0.6. L. stackelbergi has >10% missing BUSCOs. Individual assembly summary statistics are provided in Supplementary file 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The contig N50 of the representative genome assembly for 75 different species on NCBI (right) is compared to the contig N50s of our assemblies (left). (B) The BUSCO (Simão et al., 2015) completeness (sum of complete single-copy and complete duplicated) of the NCBI assemblies of our assemblies is compared to the BUSCO completeness of our assemblies. The list of drosophilid genomes, contig N50s, and BUSCO completeness statistics were obtained from Hotaling et al., 2021. Note, BUSCO v4 was used for both genome assessments, but the OrthoDB v10 (Kriventseva et al., 2019) Diptera gene set was used to evaluate our assemblies while the OrthoDB v10 Insecta set was used to evaluate the NCBI assemblies.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Points on the left depict contig N50s from Miller et al., 2018. Points on the right depict contig N50s with our updated assembly workflow. In the updated workflow, ONT raw data are basecalled with Guppy in high-accuracy mode and assembled with Flye v2.6. For D. bipectinata, D. biarmipes, and D. willistoni (depicted with the light orange lines), new ONT sequencing optimized for longer reads and of a different strain than Miller et al., 2018 was performed. For all other species, the same raw data was used for both assembly workflows.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) NGx curves, or the (y-axis) size of each contig when contigs are sorted in descending size order, in relation to the (x-axis) cumulative proportion of the estimated genome size that is covered. (B) The distribution of contig NG50, the size of the contig at which 50% of the estimated genome is accounted for.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** The genome size estimated from read coverage over known single-copy genes in each assembly (x-axis) is compared to the length of each final assembly (y-axis). The dotted line is the 1:1 line.
+
 Of 101 total assemblies, 94 contain over 98% of the assembly in contigs larger than 10 kb, and both contig N50s and NG50s exceed 1 Mb for these genomes (Figure 1A, Figure 1B, Figure 1—figure supplement 3, Supplementary file 2). Assembly sizes were highly correlated with estimated genome sizes (Figure 1—figure supplement 4). In addition to meeting the megabase contig N50 standard for new genomes proposed by the Vertebrate Genomes Project (Rhie et al., 2021), these statistics show that most of the genome is present in the assembly in megabase-sized contigs. In other words, the assemblies are nearly at the chromosome level. For comparison, of the 76 representative drosophilid genomes that were previously available on NCBI (Hotaling et al., 2021), only 25 have an N50 greater than 1 Mb (Figure 1—figure supplement 1). Moreover, many of these highly contiguous NCBI genomes are scaffolded, an additional step that would have added a significant amount of time and additional expenses to this study. Even when DNA was extracted from pools of wild-caught flies or a single fly (Leucophenga varia) resulting in sub-optimal read lengths and output, the assembly was comparable to existing short read assemblies (Figure 1A, Figure 1B). High contiguity resulted in benchmarking universal single-copy ortholog (BUSCO) completeness (Seppey et al., 2019; Simão et al., 2015) in the range of 97–99+% for all but the three most fragmented genomes (Figure 1C). As with contiguity, the completeness of these genomes is comparable to reference genomes on NCBI (Figure 1—figure supplement 1).
 
-## Estimates of sample diversity
+### Estimates of sample diversity
 
 We have utilized a variety of fly samples, from highly inbred lab lines to wild-caught flies, for genome assembly. We therefore sought to quantify the level of diversity inherent to each sample and use variant calls to estimate the error rate for each assembly. Long and short reads (if available) were mapped separately to each finished genome and variant calling was performed with PEPPER-Margin-DeepVariant (Shafin et al., 2021) for long reads and BCFtools (Danecek et al., 2021; Li, 2011) for short reads. After quality filtering and masking genomic regions annotated as repeats, the counts of single nucleotide polymorphisms (SNPs), indels, and the fraction of sites with a non-reference SNP were computed (Figure 2, Supplementary file 3). Note, when short reads were not from the same strain as used for the assembly, short read polishing was used to only correct indels, and called SNPs will not accurately represent the variation in the sample that was sequenced with Nanopore. Also note that SNP calls from Nanopore data should be relatively accurate but indel calls will not (Shafin et al., 2021).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig2-v3.jpg)
+
+**Figure 2.:** Per-site SNP heterozygosity (number of heterozygous SNPs/number of callable sites) is plotted for each of the 101 assembled lines. Blue dots represent heterozygosity estimates from Nanopore reads with PEPPER-Margin-DeepVariant (Shafin et al., 2021). Orange dots represent heterozygosity estimates from short reads with BCFtools (Li, 2011). The genomes on the right are for species that did not have available short-read data. Numerical values for these estimates are provided in Supplementary file 4.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Per-site estimates of heterozygosity are plotted against the contig N50 for all assemblies. No significant correlation (Pearson’s correlation p=0.30) was observed.
+
 Large variation in sample diversity over several orders of magnitude was observed. Estimated SNP heterozygosity, the number of heterozygous SNPs divided by the number of callable sites, ranged from 0.00035% to 1.1% from long reads and 0.0015% to 2.1% from short reads, and heterozygosity estimated from long reads was systematically lower than that from short reads, particularly when sample diversity was high (Figure 2, Figure S6). Qualitative patterns of heterozygosity generally tracked the history of the samples (e.g. the highly inbred reference strains had very low diversity). Conditioning on datasets where both long and short reads were generated from the same sample, heterozygosity estimates from both types of reads were positively correlated (Pearson correlation R2=0.50, p=1.13×10–12). If we ignore Lordiphosa, the group with wild-caught or recently collected samples that was consequently the most challenging to assemble, this correlation is greatly increased (Pearson correlation R2=0.81, p<2.2×10–16). Interestingly, we did not observe a significant relationship (p=0.30) between estimated heterozygosity and assembly contiguity (Figure 2—figure supplement 1). The number of heterozygous non-reference variants almost always exceeded the number of homozygous variants (Supplementary file 3), as would be expected from residual diversity in the sequenced lines.
 
-## Estimates of sequence quality
+### Estimates of sequence quality
 
 Next, we estimated the genome-wide error rates in our assemblies using both the variant calls obtained previously and a reference-free method (Supplementary file 4). For the first approach, Phred-scaled (Ewing et al., 1998) consensus quality (QV) was estimated by assuming all sites with a non-reference variant were an error. The error rate was then computed by dividing the number of sites with at least one non-reference variant by the total number of callable bases. As expected from the patterns of heterozygosity estimated from long and short reads, there was a large amount of variability in quality scores. Estimates from short reads ranged from QV17 to QV45 and from long reads were slightly higher, from QV19 to QV52 (Supplementary file 4).
 
 This method is likely to be biased by assembly features that affect the quality of read mapping, for example, we remove sequences annotated as repeats when filtering the variant calls. To address this bias, we employed the reference-free approach implemented in Merqury (Rhie et al., 2020) for the 94 assemblies which had some kind of short-read data available (Figure 3A, Supplementary file 4). Estimated quality scores ranged from QV16 to QV40, and once again, samples for which reads from a different strain or a genetically diverse sample (i.e. wild samples or recent isolates) were used had the lowest estimated QV. Merqury-estimated QV was on average higher than consensus quality estimated by the variant calling methods, but the relative ranking of QV estimates remained largely consistent with QV based on short-read (Spearman’s ρ=0.642, p<2.2e-16) and long-read (Spearman’s ρ=0.684, p<2.2e-16) variant calls.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig3-v3.jpg)
+
+**Figure 3.:** (A) Genome-wide, Phred quality scores estimated with the reference-free, k-mer based approach implemented in Merqury (Rhie et al., 2020). Merqury requires a short-read dataset to perform the evaluation. Filled circles represent QV estimates with short-read data from the same strain used for Nanopore sequencing, and empty circles denote estimates using short-read data from a different strain than used for Nanopore sequencing. (B, C, D) Phred quality score cutoffs for the bottom 10th percentile of 100 kb genomic windows, as evaluated with a reference-based approach, in coding sequences only. Quality scores are capped at 60 for visualization purposes. At least 90% of 100 kb windows are this accurate. Only Nanopore assemblies with an NCBI RefSeq genome counterpart of the same strain were evaluated. Accuracy is shown for SNVs (B), insertions (C), and deletions (D) separately. Additional details on quality score estimates are provided in Figure 3—figure supplement 1 and Supplementary file 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Phred-scaled quality scores were computed by a reference-based comparison in non-overlapping 100 kb windows. All variants were considered together (accuracy), then SNVs, insertions, and deletions separately. All sequences in each window were considered together (all) then coding sequences, introns, intergenic regions, and repeats separately. All scores above QV50 were set to QV50 for visualization purposes. The cross denotes the mean score, weighted by the bases considered for each window. The dot and both whiskers denote the median, 10th percentile, and 90th percentile scores across all windows, respectively. Only Nanopore assemblies with an NCBI RefSeq genome counterpart of the same strain were evaluated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The distribution of indel differences between our Nanopore-based assembly and the reference are shown. Each color represents a unique indel per FlyBase protein-coding gene. Note, the x-axis scale of insertions is much larger than that of deletions. Additional details on each indel are provided in Table S5.
+
 While these estimates showed our genomes to mostly fall below the often-recommended QV40 threshold for reference genomes (Koren et al., 2019; Rhie et al., 2021), there are many reasons to expect that sequence quality in certain regions of the genome will be far better than the average. As expected, we found that QV estimates were particularly low when short-read data from a different sample was used for the estimation, as any true variation between strains will inflate the error rate. Because we sequenced pools of flies, residual polymorphism will be found in the data even when long and short reads are sampled from the same pool of flies. In these cases QV might be considered as a lower bound estimate of the true accuracy of the assembly. Additionally, complex coding sequences are likely to be far more accurate than other regions of the genome, like repeats, due to better short-read mapping. The single genome-wide estimates of QV we report obscure this variation.
 
-## Nanopore-based assemblies are highly accurate in coding regions
+### Nanopore-based assemblies are highly accurate in coding regions
 
 For these reasons, we found it critical to further examine how errors are distributed in Nanopore assemblies. Of particular concern is the accuracy of coding sequences. Gene annotation is an important and obvious next step after assembling a new genome, but Nanopore sequences are known to systematically contain indels in homopolymer runs that cannot be called accurately when a run exceeds the size of the nanopore reader head. Indel disruptions to otherwise highly accurate coding sequences would have a disproportionately large negative impact on protein prediction (Watson and Warr, 2019). On the other hand, it is likely that coding sequences are generally more accurate than the rest of the genome since short-read mapping is generally more reliable there. In theory, most exons should be free of errors somewhere between a genome-wide quality of QV30 to QV40 (Koren et al., 2019), but many of our assemblies do not appear to reach this benchmark.
 
@@ -126,7 +1047,7 @@ We followed up on each of these 32 coding indels through manual curation with th
 
 This manual curation process revealed that the coding indels, in addition to being exceedingly rare, could be straightforwardly explained by regions of poor short read mapping and the presence of a duplicate contig in the assembly (Supplementary file 5). A series of large and small indels, including four out of the five insertions longer than 100 bp, overlapped a tandem repeat in genes CR44666, Mu68Ca, and Mu68E. While short reads mapped poorly to this region, limiting our ability to determine accuracy locally, long reads spanning the entire region and the two other long-read assemblies supported the large insertions. The remaining long (1414 bp) insertion was similarly supported by long reads and the other assemblies, but did not overlap with a repeat. Again, these insertions account for more than 99% of the indel differences between our genome and the reference. The remaining indels occurred in either repetitive regions (simple repeats and long interspersed nuclear element retrotransposons), in homopolymer runs in regions with poor short read mapping, or along a single contig that appeared to be a short duplicated segment of chromosome 2L. The other contig was error-free. All indels occurred on contigs with poor short-read mapping, suggesting they were a consequence of locally ineffective short read polishing, but also that sensible filtering based on short read depth or map quality would prevent these issues from propagating into downstream analyses. Importantly, these results suggest that reference-based quality analyses can be heavily biased against long-read assemblies and further support our caution against a naive projection of genome-wide quality score estimates onto coding regions.
 
-## A comparative genomics resource
+### A comparative genomics resource
 
 To demonstrate the potential this dataset holds for the study of genome evolution and chromosome organization, we revisit a classic result with our highly contiguous assemblies. Although the ordering of genes in drosophilid chromosomal (Muller) elements has been extensively shuffled throughout ~53 million years of evolution (Suvorov et al., 2021), the gene content of each element remains largely conserved (Bracewell et al., 2019; Ranz et al., 2001; Sturtevant and Novitski, 1941). To examine synteny in our assemblies, many of which contain several contigs tens of megabases in length, we constructed an undirected graph using single-copy orthologous markers (i.e. BUSCOs). The number of times two markers were connected by assemblies determined the weight of the graph’s edges. A graph layout method was applied to spatialize (map) these relationships, clustering together BUSCOs that are frequently connected in the assemblies. We found that BUSCOs formed six major clusters following the D. melanogaster chromosome arm on which they are found, consistent with the expected conservation of gene content in Muller elements across drosophilids (Figure 4). Furthermore, the lack of a clear order within groups is consistent with extensive shuffling within Muller elements. This demonstrates that our dataset can be used for studies of genome evolution. New reference-free, whole-genome alignment methods (Armstrong et al., 2020) should substantially facilitate more detailed comparative analyses.
 
@@ -134,11 +1055,23 @@ To demonstrate the potential this dataset holds for the study of genome evolutio
 
 **Figure 4.:** Each node in this graph represents an orthologous marker corresponding to single-copy orthologs annotated by BUSCOv4 (Seppey et al., 2019). An edge between two nodes represents the number of times that BUSCO pair is directly connected within an assembly. Each BUSCO is colored by the chromosome arm in D. melanogaster that it is found on. The ForceAtlas2 (Jacomy et al., 2014) graph layout algorithm was used for visualization.
 
-## Repeat content
+### Repeat content
 
 A large number of genome assemblies enables comparative analysis of repeat variation against a wide range of genome assembly sizes (140–450 Mb), for example the independent expansions of satellite repeats in D. grimshawi or retroelements in D. paulistorum, D. bipectinata, or D. subpulchrella (Figure 5). Within our dataset alone, RepeatMasker annotations reveal large variation in repeat content among drosophilids (Figure 5). No correlation exists between assembly contiguity and repeat content (Figure 5—figure supplement 1), suggesting long-read sequencing overcomes many of the challenges to drosophilid genome assembly posed by repetitive sequences. Additionally, we observe a positive relationship between the size of repetitive sequences and non-repetitive sequences, suggesting that genome size is influenced by expansions and contractions of both portions of the genome (Figure 5—figure supplement 2). Some discretion is warranted in the interpretation of these results. Repeats are likely to be better annotated in genomes from well-studied species groups, since they are more likely to be well-characterized in the repeat databases we used. Nevertheless, the high continuity of these assemblies should allow for the proper identification of new transposable elements in the genomes and allow for the analyses of transposable element evolution at the level of individual transposable elements or transposable element families in a way that is not feasible with more fragmented genome assemblies (Clark et al., 2007).
 
-## Next steps
+![Figure 5.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig5-v3.jpg)
+
+**Figure 5.:** For each species, the proportion of each genome annotated with a particular repeat type is depicted. Species relationships were inferred by randomly selecting 250 of the set of BUSCOs (Seppey et al., 2019) that were complete and single-copy in all assemblies. RAxML-NG (Kozlov et al., 2019) was used to build gene trees for each BUSCO then ASTRAL-MP (Yin et al., 2019) to infer a species tree. Repeat annotation was performed with RepeatMasker (Smit et al., 2013) using the Dfam 3.1 (Hubley et al., 2016) and RepBase RepeatMasker edition (Bao et al., 2015) databases. ASTRAL local posterior probabilities are reported at each node.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** There is no relationship (Spearman’s ρ=0.036, p=0.725) between repeat content (as annotated by RepeatMasker) in a genome and the contiguity of the resulting assembly.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Phylogenetically independent contrasts (PICs) are shown for the number of bases in each genome not annotated as repetitive sequence (x-axis) and the number annotated as repeat by RepeatMasker (y-axis). The red dotted line is the best-fitting line through the origin. A positive relationship between the non-repetitive and repetitive portions of the genome is observed (Spearman’s ρ=0.679, p<2.2e-16), suggesting that both play a role in determining the genome size of drosophilids.
+
+### Next steps
 
 We have built an open resource of 101 nearly chromosome-level drosophilid genome assemblies, adding to the rapidly growing number of high-quality genomes available for this model system (Hotaling et al., 2021; Suvorov et al., 2021). We envision this dataset being used to address a large number of outstanding questions entailing large comparative analyses among species, including the comparison of population genomic data between a large number of species, providing unprecedented resolution to investigate fundamental questions about the evolutionary process. In addition, we provide detailed laboratory and computational workflows that we hope will provide a jumping off point for future genome assembly projects in drosophilids or other taxa. While we hope this to already be a valuable resource to the scientific community, we acknowledge there is much to be done to build upon the resource and to improve its usability.
 
@@ -156,13 +1089,363 @@ This kind of hybrid long-read assembly approach may prove to be even more effici
 
 Finally, we are in the process of improving the utility of this resource by generating a suite of comparative genomics tools and annotations to be released in the upcoming months. Specifically, we are utilizing Progressive Cactus (Armstrong et al., 2020), a reference-free whole-genome aligner that is designed to be scalable to modern genomic datasets and that has already been applied to hundreds of mammal and bird genomes generated by the Zoonomia (Zoonomia Consortium et al., 2020) and Bird 10K (Feng et al., 2020) projects. These alignments will be used to create sequence conservation maps (Hickey et al., 2013; Pollard et al., 2010; Siepel et al., 2005), the precision of which should be close to single nucleotide resolution given the large number of drosophilid genomes that are now available. While ultimately RNA-seq across all species will be needed for annotation, we plan to quickly generate the first round of gene annotations using comparative annotation tools. For new assemblies where a previously annotated reference genome is available, LiftOff (Shumate and Salzberg, 2020) provides a way to quickly transfer annotations to a new genome. For the more challenging task of gene annotation in species that do not already have a well-annotated reference, we are using the Comparative Annotation Toolkit (Fiddes et al., 2018), software to perform first-pass annotations assisted by homology information from the Progressive Cactus alignment. New RNA-seq data will be generated for select species in clades without a well-annotated member (e.g. Zaprionus). These tools will provide a framework for anyone to apply iterative improvements as new data become available.
 
-## Reproducibility
+### Reproducibility
 
 Detailed laboratory protocols, computational pipelines, and computational container recipes are provided as a reference and to maximize reproducibility. The protocol is publicly available at Protocols.io and pipeline scripts along with associated compute containers are provided in a public GitHub repository. See Materials and methods for additional details on compute containers, accession numbers, and web links to these resources.
 
 ## Materials and methods
 
-## Taxon sampling and sample collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila spp. and relatives)</td>
+      <td colspan="4">See Table 1 and Supplementary files 1–6 for sample information, strain designations, stock center line identifiers (when applicable), biomaterial provider, and NCBI accession numbers.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Blood and Cell Culture DNA Mini Kit</td>
+      <td>Qiagen</td>
+      <td>cat # 13323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ligation Sequencing Kit</td>
+      <td>Oxford Nanopore</td>
+      <td>SQK-LSK109</td>
+      <td>Superseded by SQK-LSK110</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flow cell wash kit</td>
+      <td>Oxford Nanopore</td>
+      <td>EXP-WSH003</td>
+      <td>Superseded by EXP-WSH004</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Short Read Eliminator kit</td>
+      <td>Circulomics</td>
+      <td>SKU # SS-100-101-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Companion Module for ONT Ligation Sequencing</td>
+      <td>NEBNext</td>
+      <td>cat # E7180S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>cat # FC-131–1002</td>
+      <td>Superseded by version 2</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa HyperPrep Kit</td>
+      <td>Roche</td>
+      <td>cat # KK8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flye</td>
+      <td>Kolmogorov et al., 2019</td>
+      <td>2.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Canu</td>
+      <td>Koren et al., 2017</td>
+      <td>1.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Miniasm</td>
+      <td>Li, 2016</td>
+      <td>0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Guppy</td>
+      <td>Oxford Nanopore</td>
+      <td>3.2.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Medaka</td>
+      <td>Oxford Nanopore</td>
+      <td>0.9.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Minimap2</td>
+      <td>Li, 2016</td>
+      <td>2.17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>Li et al., 2009</td>
+      <td>1.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Racon</td>
+      <td>Vaser et al., 2017</td>
+      <td>1.4.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BUSCO</td>
+      <td>Simão et al., 2015</td>
+      <td>3.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BUSCO</td>
+      <td>Seppey et al., 2019</td>
+      <td>4.0.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Purge_haplotigs</td>
+      <td>Roach et al., 2018</td>
+      <td>1.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>npScarf</td>
+      <td>Cao et al., 2017</td>
+      <td>1.9-2b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pilon</td>
+      <td>Walker et al., 2014</td>
+      <td>1.23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST</td>
+      <td>Altschul et al., 1990</td>
+      <td>2.10.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPAdes</td>
+      <td>Bankevich et al., 2012</td>
+      <td>3.11.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FMLRC</td>
+      <td>Wang et al., 2018</td>
+      <td>1.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LINKS</td>
+      <td>Warren et al., 2015</td>
+      <td>1.8.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RepeatMasker</td>
+      <td>Smit et al., 2013</td>
+      <td>4.1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dfam repeat databse</td>
+      <td>Hubley et al., 2016</td>
+      <td>3.1</td>
+      <td>Library for RepeatMasker</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RepBase RepeatMasker edition</td>
+      <td>Bao et al., 2015</td>
+      <td>20181026</td>
+      <td>Library for RepeatMasker</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cross_match</td>
+      <td>Green, 2009</td>
+      <td>1.090518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tandem Repeat Finder</td>
+      <td>Benson, 1999</td>
+      <td>4.0.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioawk</td>
+      <td>Li, 2017</td>
+      <td>1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenomeScope</td>
+      <td>Vurture et al., 2017</td>
+      <td>1.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jellyfish</td>
+      <td>Marçais and Kingsford, 2011</td>
+      <td>2.2.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sambamba</td>
+      <td>Tarasov et al., 2015</td>
+      <td>0.8.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEPPER-Margin-Deepvariant</td>
+      <td>Shafin et al., 2021</td>
+      <td>0.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BCFtools</td>
+      <td>Li, 2011</td>
+      <td>1.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Merqury</td>
+      <td>Rhie et al., 2020</td>
+      <td>1.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pomoxis</td>
+      <td>Oxford Nanopore</td>
+      <td>0.3.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>2.30.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HALtools</td>
+      <td>Hickey et al., 2013</td>
+      <td>2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Robinson et al., 2011b</td>
+      <td>2.9.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>Katoh and Standley, 2013</td>
+      <td>7.453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAxML-NG</td>
+      <td>Kozlov et al., 2019</td>
+      <td>0.9.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRAL-MP</td>
+      <td>Yin et al., 2019</td>
+      <td>5.14.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ForceAtlas2</td>
+      <td>Jacomy et al., 2014</td>
+      <td></td>
+      <td>Implemented in R package https://github.com/analyxcompany/ForceAtlas2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ape</td>
+      <td>Paradis and Schliep, 2019</td>
+      <td>5.4.1</td>
+      <td>R package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Docker</td>
+      <td>docker.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Singularity</td>
+      <td>sylabs.io</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Taxon sampling and sample collection
 
 The selection of species used for this study was driven by several key objectives. First, we aimed to provide data for ongoing research projects. Second, we aimed to supplement existing genomic data, both as a benchmarking resource against well-studied references (e.g. D. melanogaster) and to provide a technological update to some older assemblies (Roy et al., 2010). Third, we aimed to increase the phylogenetic and ecological diversity of publically available Drosophila genome assemblies.
 
@@ -170,7 +1453,7 @@ In most cases, genomic DNA was collected from lab-raised flies, which were eithe
 
 Of 101 total assemblies, we include 13 genomes assembled with re-analyzed sequences from Miller et al., 2018; 60 genomes from stock center lines or established lab cultures; 22 genomes from lab-raised flies derived from recent wild collections; and six genomes from wild-caught flies. Of note, 6 Zaprionus lines used in this study (Z. africanus, Z. indianus, Z. tsacasi, Z. nigranus, Z. taronus) were assembled by Comeault et al., 2020, but updated higher contiguity assemblies are provided with this manuscript with the exception of Z. indianus line 16GNV01 (see ‘Alternative hybrid assembly process’ section below). Details on each sample including (if available) line designations and collection information, are provided in Table 1 and Supplementary file 6.
 
-## DNA extraction and nanopore sequencing
+### DNA extraction and nanopore sequencing
 
 A high molecular weight (HMW) genomic DNA (gDNA) extraction and ONT library prep was performed for each sample, with slight variation in the protocol through time and to deal with differences in sample quality or preservation. Here, we briefly describe a recommended general protocol for HMW gDNA extraction and library prep from 15 to 30 flies. This protocol is sufficient to reproduce all results from this manuscript at the same or higher levels of data quality. Detailed step-by-step instructions are provided at Protocols.io (see Data availability). We note one exception made necessary by sample availability and shipping laws. Scaptomyza graminum gDNA was extracted by using the Qiagen Blood and Cell Culture DNA Mini Kit (Qiagen, Germantown, MD) from 30 unfrozen flies and prepared with the ONT LSK109 kit (Oxford Nanopore, Oxford, UK) without any modifications to the manufacturer's instructions.
 
@@ -182,15 +1465,15 @@ The sequencing library was prepared following the ONT Ligation Sequencing Kit (S
 
 The typical yield of a library prepared in this manner is in the range of 1–1.5 μg. Approximately 350 ng of the prepared library was loaded for each sequencing run. To maintain flow cell throughput and read length, flow cells were flushed every 8–16 hr with the ONT Flow Cell Wash Kit (EXP-WSH003) and reloaded with a fresh library.
 
-## Obtaining short read datasets for polishing
+### Obtaining short read datasets for polishing
 
 We performed 2×150 bp Illumina sequencing for most of the strains that did not have publicly available short read data available. Illumina libraries were prepared from the same gDNA extractions as the Nanopore library for most samples, with some exceptions as described in Supplementary file 1. The libraries were prepared in either of two manners. For the majority of samples, sequencing libraries were prepared with a modified version of the Nextera DNA Library Kit (Illumina, San Diego, CA) protocol (Baym et al., 2015) and sequencing was performed by Admera Health on NextSeq 4000 or HiSeq 4000 machines. Alternatively, Illumina libraries were prepared with the KAPA Hyper DNA kit (Roche, Basel, Switzerland) according to the manufacturer’s protocol and sequenced at the UNC sequencing core on a HiSeq 4000 machine. In either case, all samples on a lane were uniquely dual indexed. Illumina sequencing was not performed for D. equinoxialis, D. funebris, D. subpulchrella, D. tropicalis, Le. varia, Z. lachaisei, Z. taronus, and the unidentified São Tomé mushroom feeder due to material unavailability (line extinction/culling). Details for each sample, including accession numbers for any public data used in this work, are provided in Supplementary file 1.
 
-## Choice of long read assembly program
+### Choice of long read assembly program
 
 Flye v2.6 (Kolmogorov et al., 2019) was used due to its quick CPU runtime, low memory requirements, excellent assembly contiguity, and its consistent performance on benchmarking datasets (Wick and Holt, 2020). We additionally validated the performance of Flye for Drosophila genomes using Nanopore data previously generated by Miller et al., 2018 and 60× depth of new Nanopore sequencing of the Berkeley Drosophila Genome Project ISO-1 strain of D. melanogaster. We assembled genomes with Flye v2.6 and Canu v1.8 (Koren et al., 2017) to evaluate simple benchmarks of assembly contiguity and run time and to provide a comparison to the Miniasm (Li, 2016) assemblies from Miller et al., 2018 Canu produced relatively contiguous assemblies, but a single assembly took several days on a 92-core cloud server and even longer when a large number of extra-long (>50kb) reads were present in the data. This was determined to be too costly when scaled to >100 species. In addition to a much shorter (8–12 hr wall-clock time) runtime, Flye also produced significantly more contiguous assemblies than those reported by Miller et al. (Figure 1—figure supplement 2). Note, several new long read assemblers have been released and these assembly programs have been significantly updated since this work was performed. Assembler performance should be evaluated with up-to-date versions in any future work.
 
-## Assembly and long read polishing
+### Assembly and long read polishing
 
 After Nanopore sequencing was performed, raw Nanopore data were basecalled with Guppy v3.2.4, using the high-accuracy caller (option: -c dna_r0.4.1_450bps_hac.cfg). Raw Nanopore data previously generated by Miller et al., 2018 were processed in the same manner.
 
@@ -198,15 +1481,15 @@ Next, basecalled reads were assembled using Flye v2.6 with default settings. Gen
 
 After generating a draft assembly, we performed long read polishing using Medaka following the developer’s instructions (https://nanoporetech.github.io/medaka/draft_origin.html). Reads were aligned to the draft genome with Minimap2 v2.17 (Li, 2016) and parsed with SAMtools v1.12 (Danecek et al., 2021; Li et al., 2009) before each round of polishing (option: -ax ont). The draft was polished with two rounds of Racon v1.4.3 (Vaser et al., 2017) (options: -m8 -x 6 g 8 w 500) and then a single round of Medaka v0.9.1.
 
-## Haplotig identification and removal
+### Haplotig identification and removal
 
 Next, we assessed each Medaka-polished assembly for the presence of duplicated haplotypes (haplotigs) using BUSCO v3.0.2 (Simão et al., 2015; Waterhouse et al., 2018) along with the OrthoDB v9 dipteran gene set (Zdobnov et al., 2017). If the BUSCO duplication rate exceeded 1%, haplotig identification and removal was performed, but on the draft assembly produced by Flye rather than the polished assembly. Purge_haplotigs v1.1.1 (Roach et al., 2018) was run on these sequences following the guidelines provided by the developer (https://bitbucket.org/mroachawri/purge_haplotigs). Illumina reads were mapped to the draft assembly with Minimap2 (option: -ax sr) to obtain read depth information. The optional clipping step was performed to remove overlapping (duplicate) contig ends. Finally, remaining contigs were re-scaffolded with Nanopore reads using npScarf v1.9-2b (Cao et al., 2017), with support from at least four long reads required to link two contigs (option: --support=4). These sequences were polished with Racon and Medaka as described above.
 
-## Final polishing and decontamination
+### Final polishing and decontamination
 
 The Medaka-polished assembly was further polished with Illumina data and any contigs identified as microbial sequences were removed. Illumina reads were mapped to the draft assembly with Minimap2 (option: -ax sr) and the assembly polished with Pilon v1.23 (--fix snps,indels) (Walker et al., 2014). If a genome did not have an accompanying short read dataset but Illumina reads were available from a different strain of the same species (Supplementary file 1), Pilon was run without correcting SNVs (option: --fix indels). We found that allowing Pilon to fix gaps or local misassemblies in default mode introduced large spurious indels in regions where short reads map poorly such as tandem repeats. These variants were not supported by long reads or by comparison to a reference assembly. Thus, we chose to use Pilon to only fix base-level errors.
 
-## Assembly decontamination
+### Assembly decontamination
 
 After Pilon polishing, assembly completeness was assessed again with BUSCO v3.0.2. We used BLAST v2.10.0 (Altschul et al., 1990) to remove any contigs not associated with at least one BUSCO that were also of bacterial, protozoan, or fungal origin. Finally, any sequences flagged by the NCBI Contamination Screen were excluded or trimmed.
 
@@ -214,60 +1497,72 @@ A flow chart outline of the full genome assembly process described here is provi
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66405/elife-66405-fig7-v3.jpg)
 
-## Alternative hybrid assembly process
+### Alternative hybrid assembly process
 
 Zaprionus indianus line 16GNV01 had insufficient Nanopore data for a Flye assembly. For this line only and to consolidate all assemblies as a single resource, the same genome assembly from Comeault et al., 2020 is both reported here and associated with the NCBI BioProject associated with this work. An alternative assembly strategy was taken for this line. Briefly, short-read sequence data was assembled first using SPAdes v3.11.1 (Bankevich et al., 2012) using default parameters. Nanopore reads were corrected with Illumina data using FMLRC v.1.0.0 (Wang et al., 2018) and subsequently used to scaffold the SPAdes assembly using LINKS v.1.8.7 (Warren et al., 2015) using the recommended iterative approach of 33 iterations with incrementally increasing k-mer distance threshold. The resulting scaffolds were polished with four rounds of Racon followed by four rounds of Pilon (but without Medaka) as described above.
 
-## Repeat annotation and masking
+### Repeat annotation and masking
 
 Each draft assembly was soft repeat masked with RepeatMasker v4.1.0 (Smit et al., 2013) at medium sensitivity, with both Dfam 3.1 (Hubley et al., 2016) and RepBase RepeatMasker edition (Bao et al., 2015) repeat libraries installed (options: --species Drosophila --xsmall). RepeatMasker was initialized with cross_match v1.090518 (Green, 2009) as the sequence search engine and Tandem Repeat Finder v4.0.9 (Benson, 1999).
 
-## Genome size estimation
+### Genome size estimation
 
 Genome size was estimated with Nanopore and Illumina data separately (Supplementary file 2). To estimate genome size from Illumina reads, we used the k-mer counting approach implemented in GenomeScope v1.0.0 (Vurture et al., 2017). Briefly, we followed the developer-provided workflow (https://github.com/schatzlab/genomescope) and generated a k-mer count histogram using a k-mer size of 21 (option: -m 21) with Jellyfish v2.2.3 (Marçais and Kingsford, 2011). The histogram was passed to the genomescope.R script to estimate the haploid genome size. We found these estimates to be somewhat unreliable, particularly when we tried to estimate genome size from a non-inbred sample. Due to this issue and because some samples were missing short read data, we took additional steps to estimate genome size from long reads.
 
-Since the higher error rate of Nanopore reads (5–15%) precludes the use of k-mer based reference-free approaches for genome size estimation, we instead used regions annotated as a single-copy BUSCO gene to estimate genome size. Our rationale was that non-duplicated complete BUSCOs in each assembly could reasonably be assumed to be true single-copy markers and serve a similar function as unique k-mers for genome size estimation. Then, genome size can be roughly estimated from the depth of coverage across single-copy BUSCOs:genome size = (total bases in Nanopore reads)/(coverage)
+Since the higher error rate of Nanopore reads (5–15%) precludes the use of k-mer based reference-free approaches for genome size estimation, we instead used regions annotated as a single-copy BUSCO gene to estimate genome size. Our rationale was that non-duplicated complete BUSCOs in each assembly could reasonably be assumed to be true single-copy markers and serve a similar function as unique k-mers for genome size estimation. Then, genome size can be roughly estimated from the depth of coverage across single-copy BUSCOs:
 
-To perform this estimation, Nanopore reads were aligned to the coding sequences with Minimap2, only keeping primary alignments (options: --ax map-ont --secondary=no). Read depth was computed from genomic regions annotated as a single-copy BUSCO with SAMtools. If some proportion of the genome assembly was identified as non-fly and removed during the contaminant removal step, we adjusted the genome size estimate based on the total length of removed sequence:genome size=(total bases in reads)∗(1−proportion of assembly removed)/(mean depth of coverage)
+$$
+genome size = (total bases in Nanopore reads)/(coverage)
+$$
+
+To perform this estimation, Nanopore reads were aligned to the coding sequences with Minimap2, only keeping primary alignments (options: --ax map-ont --secondary=no). Read depth was computed from genomic regions annotated as a single-copy BUSCO with SAMtools. If some proportion of the genome assembly was identified as non-fly and removed during the contaminant removal step, we adjusted the genome size estimate based on the total length of removed sequence:
+
+$$
+genome size=(total bases in reads)∗(1−proportion of assembly removed)/(mean depth of coverage)
+$$
 
 This assumes uniform Nanopore coverage across fly and contaminant sequence in the assembly and serves only as a rough approximation.
 
-## Assessing assembly contiguity and completeness
+### Assessing assembly contiguity and completeness
 
-Assembly contiguity statistics were computed using a series of custom shell and R scripts. Fasta files were parsed with Bioawk v1.0 (Li, 2017) and summary statistics were computed in the standard manner with the custom scripts. Contig N50 and NG50 were computed in the standard manner, in the latter case using the long-read based estimates of genome size. In addition to these statistics, we present contiguity in terms of auN. The auN statistic (Li, 2020) is the area under an Nx curve, and can be computed by multiplying the length of each contig (Li) by the proportion of the assembled genome it accounts for (Li /∑Li), then summing these values for all i contigs:auN=∑i(LiLi∑jLj)
+Assembly contiguity statistics were computed using a series of custom shell and R scripts. Fasta files were parsed with Bioawk v1.0 (Li, 2017) and summary statistics were computed in the standard manner with the custom scripts. Contig N50 and NG50 were computed in the standard manner, in the latter case using the long-read based estimates of genome size. In addition to these statistics, we present contiguity in terms of auN. The auN statistic (Li, 2020) is the area under an Nx curve, and can be computed by multiplying the length of each contig (Li) by the proportion of the assembled genome it accounts for (Li /∑Li), then summing these values for all i contigs:
+
+$$
+auN=\sum_{i}^{}(L_{i}\frac{L_{i}}{\sum_{j}^{}L_{j}})
+$$
 
 Contig N50 represents a single point on the Nx curve and may or may not be affected by assembly breaks, but auN is always sensitive to a break in the assembly. Therefore, auN is a fairer statistic for comparison between different versions of the same assembly.
 
 Assembly completeness was assessed with BUSCO v4.0.6 (Seppey et al., 2019), using the OrthoDB v10 Diptera database (Kriventseva et al., 2019) (options: --m geno -l diptera_odb10 --augustus_species fly). Note, the BUSCO version used here is different from what was used during the assembly process. When this work was started, BUSCO v3 was the current version. Version 4 was released while the project was ongoing. For consistency, version three was used during the assembly process for all assemblies, but the completeness of all final assemblies was assessed with BUSCO v4.For D. equinoxialis only, BUSCO v4.1.4 was used instead of v4.0.6 due to the presence of a bug that precluded the use of earlier versions.
 
-## Computation of sample heterozygosity and sequence quality from long and short reads
+### Computation of sample heterozygosity and sequence quality from long and short reads
 
 Sample diversity was estimated by counting the number of non-reference single-nucleotide polymorphisms (SNPs) and indels, called separately from long and short reads. We mapped ONT reads to the finished genome with Minimap2 (option: -ax map-ont) then sorted the output with sambamba 0.8.0 (Tarasov et al., 2015). Variants were called with PEPPER-Margin-Deepvariant r0.4 (Shafin et al., 2021), following the developer’s Singularity container-based ‘Nanopore variant calling’ instructions (https://github.com/kishwarshafin/pepper), to generate both variant call format (VCF) and banded genomic variant call format (gVCF) files, that is, a variant call file including intervals of invariant sites. Similarly, we mapped Illumina reads to each finished genome genome with Minimap2 (option: -ax sr), sorted and removed duplicates with sambamba, then performed variant calling, with output including all invariant sites, with BCFtools v1.12 (Danecek et al., 2021; Li, 2011). For both types of variant calls, we performed additional quality filtering using BCFtools. Only sites with minimum read depth 10, site quality score 30, and (if applicable) genotype quality score 30 filters were kept. The number of callable sites was estimated by adding the number of sites and the lengths of the intervals that passed these quality filters.
 
 Sequence quality was estimated from variant calls following the standard workflow (e.g. Koren et al., 2017; Solares et al., 2018). Error was estimated by counting the number of non-reference variants (SNPs or indels), in either heterozygous or homozygous form, then dividing this count by the number of informative bases for variant calling: Perror = (Number of variants)/(Number of callable sites). A Phred-scaled quality score (QV) was computed in the standard manner: QV = −10 * log10(Perror).
 
-## Reference-free consensus quality scores
+### Reference-free consensus quality scores
 
 Reference-free quality score estimates were computed with Merqury v1.3 (Rhie et al., 2020), following the instructions provided by the developer on the GitHub repository (https://github.com/marbl/merqury). Briefly, we used the tools included with the installation of Merqury to estimate an optimal k-mer size for each genome assembly, at a collision rate of 0.001. Then, we built a k-mer database using the Illumina reads used to polish the genome assembly. Note, in some cases, Illumina reads from a different strain were used, and polishing was only used to correct indels. Finally, we ran the main Merqury script on the assembly of interest to estimate a genome-wide Phred-scaled consensus quality score (QV).
 
-## Reference-based quality assessment
+### Reference-based quality assessment
 
 Reference-based quality score estimates were computed ONT Pomoxis v0.3.7 (https://github.com/nanoporetech/pomoxis) for assemblies where a well-annotated counterpart of not only the same species but the same strain was available through the NCBI RefSeq database. Gene and repeat annotations were downloaded from NCBI and coding regions, introns, intergenic regions, and repeats were parsed into BED formatted intervals with bedtools v2.30.0 (Quinlan and Hall, 2010). Introns were computed as the within-gene complement of exons, and intergenic regions were computed as the complement of genic regions. Then, we ran Pomoxis, which aligns each Nanopore-based assembly to the reference genome and assessed differences between the two genomes in 100 kb windows (option: -c 100000). Consensus quality was estimated by counting SNVs, insertions, and deletions and dividing the number of affected base pairs by the length of the alignment. This computation was performed separately for exons, introns, intergenic regions, repeats, and for the whole genome, using the genomic intervals described above.
 
 For manual validation, we first used Pomoxis, as described above, to generate a list of all 1 bp or longer (option: -l 1) indel differences between our Nanopore-based assembly and the Release six assembly (Hoskins et al., 2015) of the D. melanogaster reference strain. The CA 8.2 MHAP version of the PacBio-based (Kim et al., 2014; Koren et al., 2017) D. melanogaster ISO-1 assembly was obtained from GenBank accession GCA_000778455.1. The iso1_onta2_quickmerge_scaffolds version from Solares et al., 2018 was downloaded from the GitHub repository associated with that project (https://github.com/danrdanny/Nanopore_ISO1). We aligned short reads, long reads, and each of the non-reference genomes to the Release six reference genome using Minimap2 (option, for short reads: -ax sr; for long reads: -ax map-ont; for genomes: -ax asm5), then sorted and parsed the output into BAM format with SAMtools. Repeat annotations for the Nanopore-based assembly were generated as described previously, then lifted over into reference coordinates. The liftover was performed with HALtools v2.1 (Hickey et al., 2013). Specifically, we aligned our Nanopore assembly to the Release six assembly with Minimap2 (options: --cx asm5 --cs long), converted the PAF alignment to MAF with Minimap2’s paftools.js program, MAF alignment to HAL with HALtools’ hal2maf program, and executed the liftover with HALtools’ halLiftover program. Alignments and genomic intervals were viewed in the Integrative Genomics Viewer v2.9.4 (Robinson et al., 2011b).
 
-## Species tree inference from BUSCO orthologs
+### Species tree inference from BUSCO orthologs
 
 We inferred species relationships using complete and single-copy orthologs identified by the BUSCO analysis. Amino acid sequences were used instead of nucleotide sequences to achieve better alignments in the face of high-sequence divergence (Bininda-Emonds, 2005). Out of 990 single-copy orthologs present in all assemblies, we randomly selected 250 to construct gene trees. The predicted protein sequence of each ortholog was aligned separately with MAFFT v7.453 (Katoh and Standley, 2013), using the E-INS-i algorithm (options: --ep 0 --genafpair --maxiterate 1000). Gene trees were inferred with RAxML-NG v0.9.0 (Kozlov et al., 2019), using the Le and Gascuel, 2008 amino acid substitution model (options: --msa-format FASTA --data-type AA --model LG). The summary method ASTRAL-MP v.5.14.7 (Yin et al., 2019) was run with default settings to reconstruct the species tree. We note that this is not intended to be a definitive phylogenetic reconstruction of species relationships; see Suvorov et al., 2021 for a time-calibrated phylogeny utilizing 158 drosophilid whole genomes.
 
-## Analysis of chromosome organization
+### Analysis of chromosome organization
 
 Syntenic comparisons were performed by representing the genome assemblies as paths through an undirected graph. The path each genome traverses can be considered a series of connections between single copy orthologous markers (i.e. BUSCOs). Using BUSCO v4 annotations for each final genome, we constructed a 3285 by 3285 symmetric adjacency matrix, with row and column headers (nodes) corresponding to 3285 possible BUSCOs from the diptera_odb10 database. Off-diagonal entries in each matrix (edges) were the number of times two single-copy BUSCOs were found as connected and immediate neighbors in the assemblies. Sequences of three or more BUSCOs were not considered. The graph was then visualized in two dimensions using the ForceAtlas2 graph layout algorithm (Jacomy et al., 2014) as implemented in the ForceAtlas2 R package (https://github.com/analyxcompany/ForceAtlas2). While this method is primarily designed for flexible, user-friendly tuning of graph visualization, it is similar in effect to other nonlinear dimensionality reduction techniques (Böhm et al., 2020). ForceAtlas2 was run with the settings: tolerance=1, gravity=1, iterations=3000. D. equinoxialis was omitted from this analysis due to the BUSCO v4 issues mentioned previously.
 
-## Repeat content and genome size analysis
+### Repeat content and genome size analysis
 
 The contribution of repeat content to genome size variation in Drosophila was examined by comparing the number of bases in each genome annotated as a type of repeat (previously described) to the number of bases not annotated as repetitive sequence. Phylogenetic independent contrasts (Felsenstein, 1985) were computed for the counts of bases in both categories using the R package ape v5.4.1 (Paradis and Schliep, 2019) using the species tree described above with the root age set to 53 million years following the estimate in Suvorov et al., 2021.
 
-## Compute containers
+### Compute containers
 
 While the overall computational demands of this work were high, the unique computational challenge we faced was the variety of computational resources used for various stages of the assembly process. Assemblies took place across local servers, institutional clusters, and cloud computing resources. A key factor in ensuring reproducibility across computing environments was the use of computing containers, which is like a lightweight virtual machine that can be customized such that sets of programs and their dependencies are packaged together. Specifically, we used the programs Docker and Singularity to manage containers. These programs allow containers to be built and packaged as an image file which is transferred to another computer. A Dockerfile, a text file containing instructions to set up an image, is used to select the Linux operating system and the suite of programs to be installed within a Docker container. Singularity is used to package the Docker container as an image file that can be transferred to and used in a cluster or cloud environment without the need for administrative permissions. Standard commands are then run inside the container environment. The files and instructions necessary to build these containers, which will allow for the exact reproduction of the computing environment in which this work was performed, are provided at: https://github.com/flyseq/drosophila_assembly_pipelines, (copy archived at swh:1:rev:4e40d28d0bdcd1bc7e4eabb7709f301df9ad7ead, Kim, 2021). We hope these files will facilitate the work of researchers new to Nanopore sequencing or the genome assembly process.

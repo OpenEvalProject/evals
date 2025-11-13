@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00p4k0j84 Department of Respiratory Medicine, Graduate School of Medical Sciences, Kyushu University Fukuoka Japan
-2. https://ror.org/00vv7qz60 Department of Respiratory Medicine, NHO Fukuoka National Hospital Fukuoka Japan
-3. https://ror.org/00p4k0j84 Division of Immunogenetics, Department of Immunobiology and Neuroscience, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan
-4. https://ror.org/00p4k0j84 Division of Immunology and Genome Biology, Department of Molecular Genetics, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan
+1. Department of Respiratory Medicine, Graduate School of Medical Sciences, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+2. Department of Respiratory Medicine, NHO Fukuoka National Hospital Fukuoka Japan ([ROR:00vv7qz60](https://ror.org/00vv7qz60))
+3. Division of Immunogenetics, Department of Immunobiology and Neuroscience, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
+4. Division of Immunology and Genome Biology, Department of Molecular Genetics, Medical Institute of Bioregulation, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
 
 † Corresponding author
 
 ## Abstract
 
-Anticancer treatments can result in various adverse effects, including infections due to immune suppression/dysregulation and drug-induced toxicity in the lung. One of the major opportunistic infections is Pneumocystis jirovecii pneumonia (PCP), which can cause severe respiratory complications and high mortality rates. Cytotoxic drugs and immune-checkpoint inhibitors (ICIs) can induce interstitial lung diseases (ILDs). Nonetheless, the differentiation of these diseases can be difficult, and the pathogenic mechanisms of such diseases are not yet fully understood. To better comprehend the immunophenotypes, we conducted an exploratory mass cytometry analysis of immune cell subsets in bronchoalveolar lavage fluid from patients with PCP, cytotoxic drug-induced ILD (DI-ILD), and ICI-associated ILD (ICI-ILD) using two panels containing 64 markers. In PCP, we observed an expansion of the CD16 + T cell population, with the highest CD16 + T proportion in a fatal case. In ICI-ILD, we found an increase in CD57 + CD8 + T cells expressing immune checkpoints (TIGIT + LAG3 + TIM-3 + PD-1 + ), FCRL5 + B cells, and CCR2 + CCR5 + CD14 + monocytes. These findings uncover the diverse immunophenotypes and possible pathomechanisms of cancer treatment-related pneumonitis.
+Anticancer treatments can result in various adverse effects, including infections due to immune suppression/dysregulation and drug-induced toxicity in the lung. One of the major opportunistic infections is Pneumocystis jirovecii pneumonia (PCP), which can cause severe respiratory complications and high mortality rates. Cytotoxic drugs and immune-checkpoint inhibitors (ICIs) can induce interstitial lung diseases (ILDs). Nonetheless, the differentiation of these diseases can be difficult, and the pathogenic mechanisms of such diseases are not yet fully understood. To better comprehend the immunophenotypes, we conducted an exploratory mass cytometry analysis of immune cell subsets in bronchoalveolar lavage fluid from patients with PCP, cytotoxic drug-induced ILD (DI-ILD), and ICI-associated ILD (ICI-ILD) using two panels containing 64 markers. In PCP, we observed an expansion of the CD16+ T cell population, with the highest CD16+ T proportion in a fatal case. In ICI-ILD, we found an increase in CD57+ CD8+ T cells expressing immune checkpoints (TIGIT+ LAG3+ TIM-3+ PD-1+), FCRL5+ B cells, and CCR2+ CCR5+ CD14+ monocytes. These findings uncover the diverse immunophenotypes and possible pathomechanisms of cancer treatment-related pneumonitis.
 
 ## Introduction
 
@@ -38,31 +38,139 @@ This study aims to distinguish pulmonary involvement in patients with malignancy
 
 ## Results
 
-## Patient characteristics and clinical parameters
+### Patient characteristics and clinical parameters
 
 We analyzed seven cases of PCP, nine of DI-ILD, and nine of ICI-ILD (Table 1). One of the PCP cases was fatal. Differential cell counts for BALF revealed lymphocytosis in seven out of seven cases (100%) of PCP as well as in eight out of nine cases (88.9%) of DI-ILD and seven out of nine cases (63.6%) of ICI-ILD when the cutoff for the percentage of lymphocytes was set to >20%. Serum levels of β-d-glucan were significantly higher in patients with PCP than those with DI-ILD or ICI-ILD (196.5 ± 419.8, 3.7 ± 7.1, 0.6 ± 1.4 pg/mL, respectively) (Figure 1A). The receiver operating characteristic (ROC) curve was constructed to evaluate the diagnostic utility of β-d-glucan for PCP, with values from the DI-ILD group used as a reference (Figure 1B). The area under the curve was determined to be 0.8929. When the cutoff value was set to 14.70 pg/mL, the sensitivity and specificity of PCP were 85.71 and 87.50%, and the positive likelihood ratio was 6.86. The diagnostic value of β-d-glucan was consistent with the previous study (Tasaka et al., 2007), where the positive likelihood ratio was 6.57, with a cutoff value of 31.0. The serum levels of KL-6, an indicator of various types of interstitial pneumonitis (Ishikawa et al., 2012), tended to be higher in patients with ICI-ILD than PCP or DI-ILD, though insignificant (Figure 1C). Four out of seven (57.1%) in PCP, one out of nine (11.1%) in DI-ILD, and six out of nine (66.7%) in ICI-ILD were positive for KL-6 with a cutoff value of 500 U/mL.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig1-v1.jpg)
 
-**Figure 1.:** d-glucan and KL-6 from patients with Pneumocystis jirovecii pneumonia (PCP), cytotoxic drug-related interstitial lung disease (DI-ILD), and immune-checkpoint inhibitor-related ILD (ICI-ILD).(A) Serum levels of β-d-glucan from patients with PCP, DI-ILD, and ICI-ILD. (B) A receiver operating characteristic (ROC) curve was constructed to evaluate the diagnostic utility of β-d-glucan for PCP, with values from the DI-ILD group used as a reference. The area under the curve was determined to be 0.8929. (C) Serum levels of KL-6.
+**Figure 1.:** (A) Serum levels of β-d-glucan from patients with PCP, DI-ILD, and ICI-ILD. (B) A receiver operating characteristic (ROC) curve was constructed to evaluate the diagnostic utility of β-d-glucan for PCP, with values from the DI-ILD group used as a reference. The area under the curve was determined to be 0.8929. (C) Serum levels of KL-6.
 
-## Expansion of CD16+ T cells in BALF from patients with PCP
+**Table 1.**
+ Characteristics of the study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PCP</th>
+      <th>DI-ILD</th>
+      <th>ICI-ILD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number</td>
+      <td>7</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>66.9 ± 4.6</td>
+      <td>58.8 ± 19.3</td>
+      <td>71.9 ± 4.5</td>
+    </tr>
+    <tr>
+      <td>Male % (n)</td>
+      <td>42.8 (3)</td>
+      <td>77.8 (7)</td>
+      <td>100 (9)</td>
+    </tr>
+    <tr>
+      <td>Suspected drug/regimen</td>
+      <td></td>
+      <td>VAC (2), FOLFIRI (2), DTX (1), AC (1), GEM (1), TS-1 (1), BEP (1)</td>
+      <td>Nivolumab (3), pembrolizumab (3), durvalmab (2), atezolizumab (1)</td>
+    </tr>
+    <tr>
+      <td>CTCAE grade</td>
+      <td>G2 (5), G3 (1), G5 (1)</td>
+      <td>G1 (2), G2 (7)</td>
+      <td>G2 (7), G3 (2)</td>
+    </tr>
+    <tr>
+      <td colspan="4">BALF cell differentiation (%)</td>
+    </tr>
+    <tr>
+      <td>Macrophage</td>
+      <td>25 ± 8.9</td>
+      <td>40.2 ± 23.5</td>
+      <td>44.4 ± 26.6</td>
+    </tr>
+    <tr>
+      <td>Neutrophil</td>
+      <td>13.6 ± 29.7</td>
+      <td>1.9 ± 1.3</td>
+      <td>14.4 ± 26.7</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte</td>
+      <td>58.8 ± 30.5</td>
+      <td>56.2 ± 24.8</td>
+      <td>35.6 ± 23.7</td>
+    </tr>
+    <tr>
+      <td>Eosinophil</td>
+      <td>0.9 ± 1.1</td>
+      <td>1.7 ± 1.9</td>
+      <td>5.6 ± 8.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data for age and BALF analysis are presented as means ± SD.PCP = Pneumocystis jirovecii pneumonia; DI-ILD = cytotoxic drug-related interstitial lung disease; ICI-ILD = immune-checkpoint inhibitor-related ILD; BALF = bronchoalveolar lavage fluid; VAC = vincristine, actinomycin D, and cyclophosphamide; FOLFIRI = folinic acid, fluorouracil, and irinotecan hydrochloride; DTX = docetaxel; AC = adriamycin and cyclophosphamide; GEM = gemcitabine; TS-1 = tegafur gimeracil oteracil potassium; BEP = bleomycin, etoposide, and platinum; CTCAE = Common Terminology Criteria evaluated the severity of the disease for Adverse Events grading; grade 1 = asymptomatic; grade 2 = symptomatic; grade 3 = severe symptoms, requiring oxygen therapy; grade 4 = life-threatening respiratory failure; grade 5 = death._
+
+### Expansion of CD16+ T cells in BALF from patients with PCP
 
 First, we investigated whether subsets of T cells (gated CD2+ CD3+) differentially existed in PCP, DI-ILD, and ICI-ILD with mass cytometry. T cell lymphocytosis was observed in all groups (PCP: 62.9 ± 17.5%; DI-ILD: 58.3 ± 24.5%; ICI-ILD: 50.4 ± 29.9%) with a higher tendency of CD4/CD8 ratio observed in DI-ILD compared to PCP and ICI-ILD (PCP: 1.13 ± 0.86; DI-ILD: 6.08 ± 6.06; ICI-ILD: 1.9 ± 1.40) (Figure 2A). To visualize T cell differentiation within the affected lungs, we generated Uniform Manifold Approximation and Projection (UMAP) plots (Figure 2B). The majority of T cells in the BALF displayed either memory or effector phenotypes, with a limited population of naïve T cells (Figure 2B and C). Specifically, we observed a tendency of a higher abundance of transient memory/effector memory CD4 T cells and a lower abundance of transient memory/effector memory CD45RA (EMRA) CD8 T cells in DI-ILD compared to the other two groups (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig2-v1.jpg)
+
+**Figure 2.:** (A) Percentage of T cells (defined as CD2+CD3+) in CD45+ BALF cells and CD4/CD8 ratio in T cells from patients with PCP, DI-ILD, and ICI-ILD. (B) Uniform Manifold Approximation and Projection (UMAP) of concatenated samples visualizing the distribution of T cell subpopulations. Central memory (CM) T cells were defined by CCR7+ CD45RO+ CD28+ Fas+, transitional memory (TM) by CCR7– CD45RO+ CD28+ Fas+, effector memory (EM) by CCR7– CD45RO+ CD28– Fas+, terminal effector (TE) by CCR7– CD45RO+/– Fas–, and effector memory RA (EMRA) by CCR7– CD45RO– CD45RA+ Fas+/–. Arrows indicate the trajectory of T cell differentiation. DN: CD4– CD8– double negative; DP: CD4+ CD8+ double positive. (C) Percentage of T cell subpopulations. (D) Citrus network tree visualizing the hierarchical relationship of each marker between identified T cell populations gated by CD45+CD2+ CD3+ from PCP (n = 7), DI-ILD (n = 9), and ICI-ILD (n = 5). Clusters with significant differences are represented in red, and those without significant differences in blue. Circle size reflects the number of cells within a given cluster. (E) Citrus-generated violin plots for six representative and differentially regulated populations. Each cluster number (#) corresponds to the number shown in panel (D). (F) Heatmap demonstrates the expression of various markers in different clusters of T cells, as identified through the Citrus analysis. All differences in abundance were significant at a false discovery rate < 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative dot plots demonstrating the gating strategy for identification of T cell populations within BALF samples from patients with Pneumocystis jirovecii pneumonia (PCP), drug-induced interstitial lung disease (DI-ILD), and immune checkpoint inhibitor-induced lung disease (ICI-ILD). (B) Density plots comparing the expression of programmed death-ligand 1 (PD-1) on T cells from patients treated with Nivolumab versus other ICIs. (C) Citrus analysis of T cell populations with each surface marker. (D) Box plots depicting the abundance of distinct T cell clusters identified across different patient groups.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig2-figsupp2-v1.jpg)
+
 We then utilized the Citrus algorithm to classify T cell subpopulations with varying degrees of abundance in an unsupervised manner by analyzing 31 parameters (Figure 2D, Figure 2—figure supplement 1C and D). Our analysis identified 30 clusters of T cells, of which 13 were significantly differentiated between the groups. Interestingly, clusters #26299, #26293, and #26278, characterized by CD8+ T cells expressing CD16 (FcγRIIIa), and cluster #26286, characterized by CD4+ T cells expressing CD16, were abundant in PCP compared to DI-ILD and ICI-ILD (Figure 2E and F). These CD8+ T cells expressing CD16 were also positive for HLA-DR and CXCR3 (Figure 2F) but negative for CD14, a marker for monocytes (median CD14 expression of these clusters: 0.0–0.1 vs. 7.4–9.5 in monocyte populations). Cluster #26303, prevalent in ICI-ILD, comprised CD8+ CD57+ TIGIT+ LAG3+ but CD16– subpopulation (Figure 2E and F). These cells also expressed PD-1 and TIM-3, although the expression was lower than clusters #26299, #26293, and #26278. These CD8+ T cells expressed CD45RA but no expression of CD45RO and CCR7, indicating EMRA phenotype. Cluster #26281, prevalent in DI-ILD, was marked by CD4+ with low immune-checkpoint expression (PD-1, TIM-3, TIGIT, LAG3, PD-L1, PD-L2, and OX40; Figure 2E and F).
 
-## Myeloid cell subpopulations in the lungs of PCP, DI-ILD, and ICI-ILD
+### Myeloid cell subpopulations in the lungs of PCP, DI-ILD, and ICI-ILD
 
 Next, we investigated myeloid cell populations (identified as CD3– CD11b+ CD11c+). We first conducted UMAP to see the major myeloid cell populations. The UMAP plot categorized four major subtypes: monocytes, CCR2+ macrophages, alveolar macrophages, and dendritic cells, with no significant difference in PCP, DI-ILD, and ICI-ILD (Figure 3A and B). We next utilized the Citrus algorithm to further investigate differently abundant myeloid cell subpopulations by analyzing 18 parameters. Our analysis identified 31 clusters of myeloid cells, of which 17 were significantly differentiated between the groups (Figure 3C, Figure 3—figure supplement 1). Clusters #8220, #8215, and #8195, prevalent in PCP, were comprised of CD11bhi CD11chi CD64+ CD206+ alveolar macrophages with HLA-DRhi (Figure 3D and E). Clusters #8219 and #8197, prevalent in ICI-ILD, were characterized by CD14+ CCR2+ CCR5+ monocyte subpopulations (Figure 3D and E). Clusters #8227, #8223, and #8208, prevalent in DI-ILD, were marked by CD11blo CD11clo CD64lo CCR5+ subpopulations (Figure 3D and E).
 
-## B cell subpopulations in the lungs of ILDs
+![Figure 3.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig3-v1.jpg)
+
+**Figure 3.:** (A) Uniform Manifold Approximation and Projection (UMAP) of concatenated samples visualizing the distribution of myeloid cell subpopulations in CD3– CD11b+ CD11c+ gated myeloid cells in BALF from patients with PCP, DI-ILD, and ICI-ILD. Monocytes were defined by CD64+ CD14+, CCR2+ macrophages (Mp) by CD64+ CD14– CCR2+, alveolar Mp by CD64+ CD14–CCR2– CD206+, dendritic cells (DC) by CD64–CD14–CD206–CD11c+ HLA-DR+, and unidentified subsets by CD64– CD11b+/– CD11c+/– CD14– CD206–. (B) Percentage of myeloid cell subpopulations in PCP (n = 7), DI-ILD (n = 9), and ICI-ILD (n = 9). Dot plots represent individual samples. (C) Citrus network tree visualizing the hierarchical relationship of each marker between identified myeloid cell populations gated by CD45+ CD3– CD11b+ CD11c+ from PCP (n = 6), DI-ILD (n = 9), and ICI-ILD (n = 9). Clusters with significant differences are represented in red, and those without significant differences in blue. Circle size reflects the number of cells within a given cluster. (D) Citrus-generated violin plots for six representative and differentially regulated populations. Each cluster number (#) corresponds to the number shown in panel (C). All differences in abundance were significant at a false discovery rate < 0.01. (E) Heatmap demonstrates the expression of various markers in different clusters of myeloid cells, as identified through the Citrus analysis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig3-figsupp2-v1.jpg)
+
+### B cell subpopulations in the lungs of ILDs
 
 In addition to T cells and myeloid cells, we sought to investigate whether there were differential representations of B cells in BALF from PCP, DI-ILD, and ICI-ILD. By utilizing CD45+CD3–CD64– and CD19+ or CD138+ as gating parameters, we were able to detect the presence of B cells and plasma cells. The frequency of B cells/plasma cells was found to be relatively higher in patients with PCP compared to the other two groups, although the proportion of B cells and plasma cells remained low in all groups. (Figure 4A). A t-stochastic neighborhood embedding (t-SNE) analysis of 17 parameters among B cells/plasma cells revealed the presence of various B cell subpopulations, including IgD+-naïve B cells, IgM+ B cells, IgG+ B cells, IgA+ B cells, plasmablasts, and plasma cells (Figure 4B). Although not significant, higher levels of IgG+ B cells were observed in patients with PCP, while individuals with ICI-ILD exhibited a greater presence of plasma cells (Figure 4C). Previous research has suggested that FCRL5+ B cells contribute to the pathogenesis of autoimmune disorders (Owczarczyk et al., 2020; Dement-Brown et al., 2012). Therefore, we investigated the frequency of these cells in our study and found that FCRL5+ B cells were more abundant in patients with ICI-ILD compared to those with PCP and DI-ILD, suggesting these FCRL5+ B cells may have a role in irAE (8.37 ± 6.74%, 1.37 ± 2.30%, 2.29 ± 3.81%, respectively) (Figure 4D).
 
-## Marked CD16+ T cell expansion in BALF from a fatal case of PCP
+![Figure 4.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig4-v1.jpg)
+
+**Figure 4.:** (A) Percentages of B cells and plasma cells in CD45+ BALF cells. (B) t-stochastic neighborhood embedding (t-SNE) plots of concatenated samples visualizing the distribution of B cell subpopulations in CD64–CD3– and CD19+ or CD138+ gated B cells in BALF from patients with PCP, DI-ILD, and ICI-ILD. Naive B cells are defined by CD19+IgD+, IgM B cells: CD19+ IgM+, IgG B cells: CD19+ IgG+, IgA B cells: CD19+ IgA+, plasmablasts: CD19+ CD27+ CD38+ CD138–, plasma cells: CD19– CD138+ and IgG+ or IgA+. (C) Percentages of B cell subpopulations in PCP (n = 7), DI-ILD (n = 9), and ICI-ILD (n = 9). Dot plots represent individual samples. (D) Two-dimensional dot plots depicting FCRL5-expressing B cells within a gated population of B cells defined as CD64–CD3– and CD19+ or CD138+. Percentages of FCRL5-expressing B cells within the total B cell population are also shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig4-figsupp1-v1.jpg)
+
+### Marked CD16+ T cell expansion in BALF from a fatal case of PCP
 
 One case of PCP that developed during the use of immunosuppressive drugs after living donor liver transplantation had a fatal course despite intensive treatment. Upon admission, chest CT images revealed the emergence of diffuse ground glass opacities and infiltration in the bilateral lungs (Figure 5A). The serum levels of β-d-glucan and KL-6 were highly elevated (1146 pg/mL and 1561 U/mL, respectively). The T cell percentage was 51.3%, and the CD4/CD8 ratio was 0.58, which was not particularly different from other PCP cases (Figure 5B). Strikingly, 97.5% of T cells expressed CD16 in the BALF from the fatal case (Figure 5C and D). Further, not only the proportion but the CD16 intensity was the highest in the fatal case among PCP cases (Figure 5E). On the contrary, there did not appear to be any significant differences in myeloid cell fractions, and CD16 expression was not particularly high in the fatal case (Figure 5F). The correlation matrix of clinical parameters and mass cytometry parameters revealed that CD16 intensity in T cells may be correlated with disease severity (r = 0.748, p=0.053) and β-d-glucan (r = 0.868, p=0.011) (Figure 5G). Therefore, CD16 expression in T cells is not only a characteristic of PCP but also a potential indicator of disease severity. For reference, we investigated CD16 expression in BALF T cells from healthy controls along with severe COVID-19 patients using the publicly available single-cell RNA-sequencing data (GSE145926). In the BALF of healthy controls, FCGR3A (CD16) expression was observed in 18.7% of CD4+ T cells and 7.22% of CD8+ T cells in healthy controls. In contrast, severe COVID-19 patients exhibited expression rates of 17.2% in CD4+ T cells and 22.1% in CD8+ T cells (Figure 5H and I). Notably, CD8+ T cells from COVID-19 patients showed significantly higher FCGR3A (CD16) expression compared to those from healthy controls (0.31 ± 0.62 vs 0.12 ± 0.43, p=2.47e-08), while no significant difference was observed in CD4+ T cells between the two groups (0.22 ± 0.53 vs 0.34 ± 0.73, p=0.407).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig5-v1.jpg)
+
+**Figure 5.:** (A) Chest computed tomography images of the patient upon admission reveal the emergence of bilateral diffuse ground glass opacities and infiltration in both lungs. (B) Comparison of T cell percentage and CD4/CD8 ratio between a fatal case and surviving cases of PCP. (C) t-stochastic neighborhood embedding (t-SNE) plots illustrating the distribution of T cell subpopulations in bronchoalveolar lavage fluid (BALF) T cells (gated as CD45+CD2+CD3+) from a fatal case and surviving cases of PCP. Double-negative (DN) T cells were defined as CD4–CD8– T cells. (D) Percentages of each T cell subpopulation. Red dots represent the value of the fatal case. (E) Mean CD16 intensity in the T cell population. (F) Mean CD16 intensity in the myeloid cell population. (G) The correlation matrix in PCP cases. Pearson r values are shown in each square. (H) Violin plots illustrate FCGR3A (CD16) expression intensity on CD4+ and CD8+ T cells, with each dot representing an individual cell in BALF from healthy controls (HCs) and COVID-19 patients, derived from single-cell RNA-seq dataset GSE145926. The significance of differences was assessed using the Wilcoxon test. ns: not significant, ***p<0.001. (I) The proportion of FCGR3A (CD16)-positive cells within the CD4+ and CD8+ T cell populations in BALF from HC and COVID-19 patients, with the FCGR3A expression threshold set at 0.5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87288/elife-87288-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The correlation was calculated using the Pearson correlation coefficient. This involved correlating the CTCAE grade directly with the mean expression levels of each marker. The computations were conducted using GraphPad Prism version 9. CCR7, CD7, and CD57 are correlated with the severity (CTCAE) of PCP (p-values: 0.009, 0.035, and 0.039, respectively).
 
 ## Discussion
 
@@ -86,7 +194,7 @@ In summary, our study has shown distinct immune cell phenotypes in PCP, DI-ILD, 
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 In this retrospective study, patients who were newly diagnosed with PCP, DI-ILD, and ICI-ILD and had undergone BALF collection at Kyushu University Hospital from January 2017 to April 2022 were included. The retrospective study was approved by the Ethics Committee of Kyushu University Hospital (reference number 22117-00). Patient consent was waived due to an opt-out method that was approved by the Ethics Committee of Kyushu University Hospital. Diagnostic criteria for PCP, DI-ILD, and ICI-ILD were in accordance with those previously described (Skeoch et al., 2018; Asai et al., 2022; Apostolopoulou and Fishman, 2022; Delaunay et al., 2019). A visual representation of the experimental and analytical workflow can be found in Figure 6.
 
@@ -94,11 +202,11 @@ In this retrospective study, patients who were newly diagnosed with PCP, DI-ILD,
 
 **Figure 6.:** Bronchoalveolar lavage fluid (BALF) samples were collected from patients with Pneumocystis jirovecii pneumonia (PCP), cytotoxic drug-induced interstitial lung disease (DI-ILD), and immune-checkpoint inhibitor-related ILD (ICI-ILD). Subsequently, BALF cells were analyzed using mass cytometry with a T cell panel (35 markers) and B cell/myeloid cell panel (32 markers) following CD45 barcoding for sample identification. The study found that there was a significant increase in the expansion of CD16+ T cells in patients with PCP, with the highest CD16 expression observed in a fatal case of PCP.
 
-## Mass cytometry
+### Mass cytometry
 
 Metal-tagged antibodies were obtained from Standard Biotools or purchased in a purified form (Supplementary file 1) and then labeled with metals using the Maxpar Antibody Labeling Kit (Standard Biotools) as instructed by the manufacturer. The cell labeling was performed as previously described (Hata et al., 2023). Upon collection, BALF samples were immediately centrifuged at 300 × g for 5 min to pellet the cells. The resultant cell pellets were then resuspended in Cellbanker 1 cryopreservation solution (Takara, Cat# 210409). This suspension was aliquoted into cryovials and gradually frozen to –80°C and stored at –80°C until required for experimental analysis. Cryopreserved BALF cells were thawed in PBS and then stained with Cell-ID Cisplatin-198Pt (Standard Biotools #201198, 1:2000 dilution) in PBS before being incubated with FcR blocking reagent (Myltenyi, #130-059-901) and barcoded with each metal-labeled CD45 antibody (Supplementary file 1). After washing, CD45-labeled cells were mixed and stained with APC-conjugated FCRL5 antibodies (for panel #2), followed by staining with the antibody cocktail (panels #1 and #2, see Supplementary file 1). The antibody amount was determined through preliminary experiments with metal minus one. Cells were then washed, fixed with 1.6% formaldehyde, and resuspended in Cell-ID Intercalator 103Rh (Standard Biotools #201103A) in Fix and Perm buffer (Standard Biotools) at 4℃ overnight. For acquisition, cells were resuspended in MaxPar Cell Acquisition Solution (Standard Biotools #201240) containing one-fifth EQ Four Element Calibration Beads (Standard Biotools #201078) and acquired at a rate of 200–300 events/s on a Helios mass cytometer (Standard Biotools). Files were converted to FCS, randomized, and normalized for EQ bead intensity using the Helios software. Concatenating fcs files in the same group into one file was conducted by FlowJo v10.8 (BD Biosciences). Cytobank Premium (Cytobank Inc) was used to perform manual gating, visualization of t-distributed stochastic neighbor embedding (viSNE), UMAP analysis, and Citrus analysis (Bruggner et al., 2014).
 
-## Data analysis
+### Data analysis
 
 Cisplatin-positive cells and doublets were excluded to select live cells, and CD45+ cells were further analyzed. For T cells, CD2+ CD3+ cells were gated and subjected to UMAP and Citrus algorithms. The UMAP analysis included clustering channels for CD4, CD8a, CD27, CD28, CD45RA, CD45RO, Fas, and used the parameters: numbers of neighbors = 15, minimum distance = 0.01. The Citrus algorithm for T cells included clustering channels for CD4, CD5, CD7, CD8a, CD11a, CD16, CD27, CD28, CD44, CD45RA, CD45RO, CD49d, CD57, CD69, CD226, Fas, IL-2R, PD-L1, PD-L2, PD-1, OX40, TIGIT, TIM3, CTLA-4, CD223 (LAG-3), BTLA, ICOS, ST2, CCR7, CXCR3, HLA-DR, and used the parameters: association models = nearest shrunken centroid (PAMR), cluster characterization = abundance, minimum cluster size = 5%, cross-validation folds = 5, false discovery rate (FDR) = 1%. The Citrus analysis excluded nivolumab-induced ILD cases due to the apparent loss of PD-1 detection caused by competitive inhibition by nivolumab (Figure 2—figure supplement 1B; Yanagihara et al., 2020). The viSNE analysis for T cells included clustering channels for CD4, CD5, CD7, CD8a, CD11a, CD16, CD27, CD28, CD44, CD45RA, CD45RO, CD49d, CD57, CD69, CD226, Fas, IL-2R, PD-L1, PD-L2, PD-1, OX40, TIGIT, TIM3, CTLA-4, CD223 (LAG-3), BTLA, ICOS, ST2, CCR7, CXCR3, and HLA-DR, and used the parameters: iterations = 1000,, perplexity = 30, theta = 0.5.
 
@@ -108,10 +216,10 @@ B cells and plasma cells were identified using gating of CD3–CD64– and CD19+
 
 The selection of the dimensionality reduction technique, UMAP or viSNE, was made based on their ability to retain the relationships between global structures and the distances between cell clusters (where UMAP outperformed viSNE) and their ability to present a distinct and non-overlapping portrayal of cell subpopulations, facilitating the identification of inter-group variations (where viSNE performed better than UMAP).
 
-## Statistical analysis
+### Statistical analysis
 
 We utilized a PAMR association model with a stringent threshold of 1% FDR, as described in the ‘Data analysis’ section, for the Citrus algorithm experiment. Student’s two-tailed unpaired t-test was employed to conduct a comparative analysis between the two groups. To determine the significance of serum β-d-glucan and KL-6 among three groups, a statistical analysis was performed using Kruskal–Wallis tests. We evaluated the manually gated cell proportions by performing a two-way ANOVA, along with Tukey’s multiple comparison tests. Data were analyzed using GraphPad Prism 9 software. Statistical significance was considered to be achieved when the p-value was <0.05.
 
-## Analysis of single-cell RNA sequencing data of human BALF cells
+### Analysis of single-cell RNA sequencing data of human BALF cells
 
 For our investigation, we utilized the publicly available dataset GSE145926, which contains single-cell RNA-sequencing data from BALF cells of both healthy controls (n = 3) and patients with severe COVID-19 (n = 6) (Liao et al., 2020). We initiated our analysis by normalizing the filtered gene-barcode matrix using the ‘NormalizeData’ function in Seurat version 4, applying the default settings. Subsequently, we identified the top 2000 variable genes utilizing the ‘vst’ method available in the ‘FindVariableFeatures’ function of Seurat. Principal component analysis and UMAP were then conducted to reduce dimensionality and visualize the data. To isolate T cells for further analysis, we defined them as cells expressing CD2 and CD3E with expression values greater than 1. We specifically examined the expression of FCGR3A (CD16) by setting an expression threshold of 0.5 to identify relevant cell populations. The resulting expression patterns were illustrated using violin plots and bar plots, which were generated using the ‘ggplot’ function in R.

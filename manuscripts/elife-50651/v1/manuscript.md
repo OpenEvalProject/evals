@@ -13,7 +13,7 @@
 
 ## Abstract
 
-The laboratory rat was the first mammal domesticated for research purposes. It is descended from wild Norway rats, Rattus norvegicus , which despite their name likely originated in Asia. Exceptionally adaptable, these rodents now inhabit almost all environments on Earth, especially near human settlements where they are often seen as pests. The laboratory rat thrives in captivity, and its domestication has produced many inbred and outbred lines that are used for different purposes, including medical trials and behavioral studies. Differences between wild Norway rats and their laboratory counterparts were first noted in the early 20 th century and led some researchers to later question its value as a model organism. While these views are probably unjustified, the advanced domestication of the laboratory rat does suggest that resuming studies of wild rats could benefit the wider research community.
+The laboratory rat was the first mammal domesticated for research purposes. It is descended from wild Norway rats, Rattus norvegicus, which despite their name likely originated in Asia. Exceptionally adaptable, these rodents now inhabit almost all environments on Earth, especially near human settlements where they are often seen as pests. The laboratory rat thrives in captivity, and its domestication has produced many inbred and outbred lines that are used for different purposes, including medical trials and behavioral studies. Differences between wild Norway rats and their laboratory counterparts were first noted in the early 20th century and led some researchers to later question its value as a model organism. While these views are probably unjustified, the advanced domestication of the laboratory rat does suggest that resuming studies of wild rats could benefit the wider research community.
 
 ## Introduction
 
@@ -35,21 +35,21 @@ Rats live in almost all terrestrial environments except deserts, tundra and pola
 
 ## Characteristics of the wild Norway rat
 
-## Reproduction
+### Reproduction
 
 Wild rats reach sexual maturity at about 11 weeks, remain pregnant for 21–24 days, and give birth to litters of about 7 or 8 pups. Female rats build nests before giving birth, and the young are born almost naked, blind and totally dependent on the mother (Burton and Burton, 2002). The young start leaving the nest and ingest solid foods at about 14 days after birth. R. norvegicus can breed all year long and has 3–5 litters per year on average. Its life expectancy is slightly more than 1 year (Davis, 1953).
 
-## Behavior and senses
+### Behavior and senses
 
 The Norway rat is primarily nocturnal. It prefers small, dark, confined places and avoids moving in open and well-lit spaces. It tends to move on four limbs with its fur and whiskers in contact with the walls and large objects. It can also jump (Himmler et al., 2014), and swim and dive (Galef, 1980; Stryjek et al., 2012). Rats have no sweat glands and regulate their body temperature through behavior, for example, by hiding in burrows. The sparsely haired tail also plays a part in thermoregulation (Owens et al., 2002).
 
 In rats, the main sensory input is touch from the facial whiskers (or vibrissae) and a particularly well-developed sense of smell (Uchida and Mainen, 2003). Wild Norway rats have relatively poor eyesight and are sensitive to sharp light (Finlay and Sengelaub, 1981; Prusky et al., 2002). They have dichromatic color vision thanks to two classes of cone cells on the retina: one sensitive to ultraviolet light and the other most sensitive to the middle wavelengths of the visible spectrum, such as the color green (Jacobs et al., 2001). They can detect sounds between about 0.25–80 KHz (Heffner et al., 1994), which enables them to communicate with ultrasound (Portfors, 2007; Burke et al., 2018). These vocalizations are inaudible to humans without the use of specialized equipment.
 
-## Exploration and neophobia
+### Exploration and neophobia
 
 Rats are highly inquisitive and eager to explore new environments but exhibit neophobia (i.e., caution towards new objects; Pisula, 2009). They also markedly reduce their food intake after they are introduced to an unfamiliar food. This "food neophobia" is typified by the initial avoidance of the new food, followed by gradual sampling (Barnett, 1958). If the new food does not become associated with adverse body symptoms, the rats will eat more (Barnett, 2009; Mitchell, 1976). Rats develop an aversion to foods that cause adverse effects within up to 6 hours (Misanin et al., 2002; Revusky and Bedarf, 1967), which often limits the effectiveness of traditional pest control procedures.
 
-## Social behavior
+### Social behavior
 
 Rats live in groups and establish social relations. In favorable conditions they can form colonies of several hundred individuals. The colonies comprise groups with an adult male and a few females with their young. These groups inhabit certain areas, called territories, which are delineated and marked with scent cues (Adams, 1976; Barnett, 2009). The males defend their territories against intruders from other groups (referred to "resident-intruder aggression"; Koolhaas et al., 2013). Social aggression in males may increase while cohabiting with females (Albert et al., 1988). When individual rats meet, they examine each other thoroughly, relying on scent to learn about the sex, age, health, reproductive status and nutrition of the other rat. If an individual is not recognized as a representative of its own group, the intruder may be attacked and will often retreat from the territory (Miczek and de Boer, 2005). Female rats defend their nests and offspring against intruders and their social aggression increases in the postpartum period (Consiglio and Lucion, 1996).
 
@@ -71,17 +71,100 @@ Numerous strains of laboratory rat have been created to ensure control over the 
 
 Based on their breeding history, laboratory rats may be broadly divided into outbred stocks and inbred strains (Table 1). The outbred stocks are usually used for general study purposes where homozygosity is not crucial and are well suited for behavioral studies. The inbred strains are used for researching issues related to genetic and phenotypic characteristics (Sharp and Villano, 2012). Rat models are also created in laboratories by means of electrical, pharmacological and surgical techniques that induce changes in the animals (e.g., Calcutt, 2004; Teixeira and Webb, 2007; Relton and Weinreb, 2008; Obenaus and Kendall, 2009).
 
+**Table 1.**
+ The most common stocks and strains of the laboratory rat.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Inbred/ outbred*</th>
+      <th>Coat color</th>
+      <th>Origine</th>
+      <th>Use and characteristics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wistar</td>
+      <td>outbred</td>
+      <td>albino</td>
+      <td>The Wistar Institute, Philadelphia, Pennsylvania, USA (1906)</td>
+      <td>The most-popular general multi-purpose models. Studies of infectious diseases, aging and as a surgical model.</td>
+    </tr>
+    <tr>
+      <td>Wistar Han</td>
+      <td>outbred</td>
+      <td>albino</td>
+      <td>Zentralinstitute für Versuchstierzucht, Hannover, Germany</td>
+      <td>A general multi-purpose model, popular in preclinical safety assessments, and as an aging, oncological and surgical model.</td>
+    </tr>
+    <tr>
+      <td>Wistar Kyoto</td>
+      <td>outbred</td>
+      <td>albino</td>
+      <td>the Kyoto School of Medicine, Japan</td>
+      <td>Normotensive controls for the spontaneous hypertensive line, a depression and autism model.</td>
+    </tr>
+    <tr>
+      <td>Sprague Dawley</td>
+      <td>outbred</td>
+      <td>albino</td>
+      <td>The Sprague-Dawley farms, Madison, Wisconsin, USA (1925). Derived from a hybrid Hooded male and a female Wistar.</td>
+      <td>Behavioral studies and as models in obesity, oncology and surgical research.</td>
+    </tr>
+    <tr>
+      <td>Long Evans</td>
+      <td>outbred</td>
+      <td>hooded</td>
+      <td>The University of California, USA. Created by Herbert McClean Evans and Joseph Abraham Long (1915–1922). A result of crossbreeding albino females and wild males caught near the University.</td>
+      <td>Behavioral studies. Known for their docility and ease of breeding but prone to spontaneous seizures.</td>
+    </tr>
+    <tr>
+      <td>Brown Norway</td>
+      <td>inbred</td>
+      <td>pigmented</td>
+      <td>Derived from a pen-bred colony of wild-caught rats maintained by King and Aptekman at the Wistar Institute in the 1930s. The strain was created by Silvers and Billingham in 1958 (Hedrich, 2000).</td>
+      <td>Immunological and transplantation studies. Selected as the sequencing target in Gibbs et al. (2004).</td>
+    </tr>
+    <tr>
+      <td>Lewis</td>
+      <td>inbred</td>
+      <td>albino</td>
+      <td>Developed by Margaret Lewis from the Wistar rats in the early 1950s</td>
+      <td>Enhanced susceptibility to many experimental inflammatory conditions, such as PGPS-induced arthritis, adjuvant-induced arthritis, collagen-induced arthritis, autoimmune encephalitis, autoimmune thyroiditis and enterocolitis (Zhang, 2010). Characterized by their docile behavior but relatively low fertility.</td>
+    </tr>
+    <tr>
+      <td>Zucker fatty rats</td>
+      <td>outbred</td>
+      <td>hooded</td>
+      <td>Developed by crossing the Sherman strain with the Meck stock 13M strain (Kava et al., 1990)</td>
+      <td>Most often used as a model of genetic obesity. Relatively insensitive to leptin due to a mutation in the long form of the leptin receptor (van der Spek et al., 2012). Characterized by hyperlipidemia, hypercholesterolemia and hyperinsulinemia (Kava et al., 1990).</td>
+    </tr>
+    <tr>
+      <td>Nude rats</td>
+      <td>inbred</td>
+      <td>albino hooded grey</td>
+      <td>The nude mutation first encountered in 1953 in an outbred colony of hooded rats at the Rowett Research Institute in Aberdeen, Scotland. The mutation reappeared independently in Aberdeen in 1977 and in New Zealand in 1979 (Hanes, 2006). Since than numerous new strains have been developed. For instance, a spontaneous mutation model isolated from a Crl:CD(SD) colony in Charles River in the late 1980s.</td>
+      <td>Characterized by almost complete absence of fur. Experimental models for a variety of immunological, surgical, infectious, transplant-related and oncological procedures. Uniquely capable of maintaining increased tumours without visible distress and enlarged body weight (Hanes, 2006). Also useful in wound healing and dermatology.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Inbred rat strains are created by brother-sister or parent-offspring mating for at least 20 generations. It produces almost genetically identical individuals (after 20 generations rats are homozygous at 98.7% of all alleles and the residual heterozygosity decreases as inbreeding continue; Lohmiller and Swing, 2006). Outbred rat stocks are developed from large colonies with males and females selected randomly from different breeding groups; stock animals are genetically different, which can represent inter-individual differences occurring in natural environment (Lohmiller and Swing, 2006; Olson and Graham, 2014)._
+
 Rat strains differ significantly in their morphology: their body weight and the size of internal organs may vary greatly, while the body length remains the same (e.g., Reed et al., 2011). For example, albino strains consistently exhibit impaired vision, while other strains appear to have the wild-type or even enhanced visual acuity (Prusky et a., 2002). Metabolism and behavior differ between certain strains as do the way these characteristics change with age (Clemens et al., 2014). Differences may also occur where social behaviors are concerned: for example, when play-fighting, juvenile Wistar rats initiate significantly fewer playful attacks than Fisher 344 rats (Schneider et al., 2014).
 
 As many breeding colonies have been isolated for several decades, the inbred animals have different phenotypes than their counterparts bred elsewhere (e.g., Goepfrich et al., 2013). Environmental conditions and specific breeding settings lead to epigenetic differences, while several decades of breeding may result in a cumulation of mutations, which subsequently hinders the generalization of results even to the animals of the same strain (Box 3).
 
 ## Changes occurring in the process of laboratorization of Rattus norvegicus
 
-## Morphological and physiological changes
+### Morphological and physiological changes
 
 The differences between laboratory rats and wild Norway rats were first noticed and described in the 1920s (King and Donaldson, 1929), when it was seen that laboratory rats differed from their wild counterparts in morphology and behavior after only 10 generations of inbreeding. In the second half of the 20th century, a series of morphological differences were spotted between the Wistar rats and trapped wild rats (Richter, 1952). The laboratory rats were smaller at maturity but did not differ significantly in their skeletal structure and teeth anatomy. The liver, heart, brain and adrenal glands were smaller, while the gonads and secondary sex organs developed at an earlier age (Richter, 1952). Domesticated female rats reached sexual maturity earlier and had bigger litters, which may indicate that domestication accelerated sexual development and increased reproductive success (Clark and Price, 1981). Domestication significantly affected their brain morphology too, the neocortex being the most markedly altered brain structure (Welniak-Kaminska et al., 2019). There are also significant differences in the circadian rhythm and out-of-nest activity between the laboratory and wild rats (Stryjek et al., 2013).
 
-## Behavioral changes
+### Behavioral changes
 
 Compared to their wild counterparts, laboratory rats show less interspecific aggression (Barnett et al., 1979). Defensive behaviors are also reduced, resulting in smaller reactions to both humans and conspecifics (Blanchard et al., 1986). Longitudinal studies of social behavior, such as play-fighting in juvenile rats, show that laboratory rats initiate more playful attacks and are more likely to defend themselves. Wild Norway rats are however more likely to use evasive actions to defend their nape than to wrestle with their partner (Himmler et al., 2014; Himmler et al., 2013).
 

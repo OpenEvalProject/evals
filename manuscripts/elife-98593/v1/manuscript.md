@@ -21,11 +21,11 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 The Center for Microbes, Development and Health, National Key Laboratory of Immune Response and Immunotherapy, Shanghai Institute of Immunity and Infection, Chinese Academy of Sciences, University of Chinese Academy of Sciences Shanghai China
-2. https://ror.org/04w00xm72 Shanghai Municipal Center for Disease Control and Prevention Shanghai China
-3. https://ror.org/00z0j0d77 The First Affiliated Hospital of Guangzhou Medical University, State Key Laboratory of Respiratory Disease, National Clinical Research Center for Respiratory Disease, Guangzhou Institute of Respiratory Health Guangzhou China
-4. https://ror.org/05t8y2r12 School of Life Sciences, Soochow University Jiangsu China
-5. https://ror.org/01cyxs230 Shanghai Blood Center Shanghai China
+1. The Center for Microbes, Development and Health, National Key Laboratory of Immune Response and Immunotherapy, Shanghai Institute of Immunity and Infection, Chinese Academy of Sciences, University of Chinese Academy of Sciences Shanghai China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. Shanghai Municipal Center for Disease Control and Prevention Shanghai China ([ROR:04w00xm72](https://ror.org/04w00xm72))
+3. The First Affiliated Hospital of Guangzhou Medical University, State Key Laboratory of Respiratory Disease, National Clinical Research Center for Respiratory Disease, Guangzhou Institute of Respiratory Health Guangzhou China ([ROR:00z0j0d77](https://ror.org/00z0j0d77))
+4. School of Life Sciences, Soochow University Jiangsu China ([ROR:05t8y2r12](https://ror.org/05t8y2r12))
+5. Shanghai Blood Center Shanghai China ([ROR:01cyxs230](https://ror.org/01cyxs230))
 
 † Corresponding author
 
@@ -47,19 +47,63 @@ Innate immune cells express Toll-like receptors (TLRs), and TLR-mediated signali
 
 ## Results
 
-## Host factors secreted by activated innate immune cells inhibit SARS-CoV-2-induced cell-cell fusion
+### Host factors secreted by activated innate immune cells inhibit SARS-CoV-2-induced cell-cell fusion
 
 We have previously established quantitative and qualitative models for SARS-CoV-2 spike-induced cell-cell fusion by bioluminescence assay, immunoblotting, and fluorescence imaging (Yu et al., 2022). In order to explore the potential effect of cytokines on SARS-CoV-2-induced cell-cell fusion, human monocyte cell line THP-1 and human peripheral blood mononuclear cells (PBMCs) were used in this study. We applied several TLR ligands to stimulate such innate immune cells and collected the cell culture supernatants for subsequent experiments (Figure 1A). Of note, cell culture supernatants of THP-1 cells stimulated by TLR ligands significantly reduced the bioluminescence signal, while neither untreated THP-1 cell culture supernatant nor the medium control had any effect on the bioluminescence signal reflecting cell-cell fusion (Figure 1B). SARS-CoV-2 spike engagement of ACE2 primed the cleavage of S2’ fragment in target cells, a key proteolytic event coupled with spike-mediated membrane fusion (Yu et al., 2022). In parallel with bioluminescence assay, a large amount of enriched S2’ cleavage was detected in HEK293T-Spike and HEK293T-ACE2 co-cultured group and co-culture incubated with untreated THP-1 cell culture supernatant, while S2’ cleavage was clearly reduced upon treatment with TLR ligands-stimulated THP-1 cell culture supernatants (Figure 1C). Syncytia formation was also visualized using cells co-expressing spike and a ZsGreen fluorescent reporter. The area of syncytium were significantly reduced by the treatment with TLR ligands-stimulated THP-1 cell culture supernatants (Figure 1D and Figure 1—figure supplement 1A). Considering the presence of TLR ligands in such cell culture supernatants, we tested their potential direct effects. As expected, TLR ligands alone did not reduce the bioluminescence signal and S2’ cleavage compared to the control groups, as well as no effect on syncytia formation (Figure 1—figure supplement 1B–E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematics of the cell-cell fusion model used to quantify spike-mediated syncytium formation upon treatment with cell culture supernatants from Toll-like receptor (TLR) ligands-stimulated innate immune cells. Cells co-expressing SARS-CoV-2 spike and Cre were co-cultured with ACE2 and Stop-luc co-expressing HEK293T cells for 16 hr, before cell lysates were collected for bioluminescence assay and immunoblotting. Cells co-expressing SARS-CoV-2 spike and ZsGreen were co-cultured with ACE2 expressing HEK293T cells for 16 hr before fluorescence imaging. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates collected from THP-1 supernatants-treated HEK293T-S and HEK293T-ACE2 described in (A) for 16 hr. Fetal bovine serum (FBS)-free RPMI 1640 served as medium control. Data are representative of six individual repeats and displayed as individual points with mean ± standard error of the mean (SEM). (C) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from THP-1 supernatants-treated HEK293T-S and HEK293T-ACE2 described in (A) for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (D) Representative fluorescent image captured at 488 nm from THP-1 supernatants-treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. (E) Schematic presentation of THP-1 supernatants pre-treatment on authentic SARS-CoV-2-infected cells. Pre-treatment of HEK293T-ACE2 cells with THP-1 supernatants for 1 hr, then inoculated with 0.5 multiplicity of infection (MOI) Delta or wild-type (WT) authentic SARS-CoV-2 virus. Imaging was performed at 24 hr post-infection (hpi) before cell lysates were harvested for immunoblotting. (F) Immunoblots of Delta SARS-CoV-2 S, S2, cleaved S2’, N, and ACE2 proteins collected from HEK293T-ACE2 cells 24 hpi as described in (E). Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus Tubulin. (G) Immunoblots of WT SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from Caco-2 cells 24 hpi as described in (E). Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (H) Immunofluorescent images showing morphology of SARS-CoV-2-infected Caco-2 cells pre-treated with THP-1 supernatants. Anti-SARS-CoV-2 N was stained with Alexa Fluor 555, and nuclei were counterstained with DAPI, respectively. White arrowheads (D and H) indicate syncytia formation or infected cells, scale bars are indicative of 50 μm, and images are representative of three independent experiments. (I) Quantification of the infected area in (H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantification of the fused area in Figure 1D. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates collected from TLR ligands-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± standard error of the mean (SEM). (C) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from TLR ligands-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (D) Representative fluorescent image captured at 488 nm from TLR ligands-treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. (E) Quantification of the infected area in (D). (F) Luciferase activity (RLU) measured from HEK293T cell lysates collected from PBMCs supernatants-treated HEK293T-S and HEK293T-ACE2 for 16 hr. 1% fetal bovine serum (FBS) RPMI 1640 served as medium control. Data are representative of five individual repeats and displayed as individual points with mean ± SEM. (G) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from PBMCs supernatants-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (H) Representative fluorescent image captured at 488 nm from PBMCs supernatants-treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. White arrowheads (D and H) indicate syncytia formation. Scale bars, 50 μm. Images are representative of three individual repeats. (I) Quantification of the fused area in (H).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunoblots of wild-type (WT) SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from HEK293T-ACE2 cells 24 hr post-infection (hpi) as described in Figure 1E. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus Tubulin. (B, C) Bright-field images of 0.5 multiplicity of infection (MOI) WT (B) or Delta (C) SARS-CoV-2-infected HEK293T-ACE2 cells pre-treated with THP-1 supernatants. White arrowheads indicate syncytia formation, scale bars are indicative of 50 μm, and images are representative of three independent experiments.
 
 Concurrently, we also tested the effect of PBMCs culture supernatants on SARS-CoV-2 spike-induced cell-cell fusion. Consistent with the results from THP-1 cells, TLR ligands-stimulated PBMCs culture supernatants treatment also strongly reduced the bioluminescence signal, S2’ cleavage, and the area of syncytium compared with the medium group (Figure 1—figure supplement 1F–I). These results thus suggested that activated innate immune cells released host factors to inhibit SARS-CoV-2 spike-induced cell-cell fusion.
 
 To validate the effect of innate immune cell culture supernatants on cell-cell fusion in authentic SARS-CoV-2 infection, we pre-treated ACE2-expressing cells with THP-1 cell culture supernatants before inoculation with SARS-CoV-2 B.1.617.2 (Delta) or wild-type (WT) strains. Cell lysates were used for the detection of SARS-CoV-2 spike and N protein 24 hr post-infection (hpi) (Figure 1E). Result from this experiment showed that TLR ligands-stimulated-THP-1 cell culture supernatants reduced S2’ cleavage and N protein levels during Delta or WT SARS-CoV-2 infection in HEK293T-ACE2 cells, whereas untreated THP-1 cell culture supernatant had no effect (Figure 1F, Figure 1—figure supplement 2A). In addition, TLR ligands-stimulated-THP-1 cell culture supernatants reduced the area of syncytium induced by Delta or WT SARS-CoV-2 infection (Figure 1—figure supplement 2B and C). Furthermore, we infected the human colon epithelial carcinoma cell line Caco-2 with WT SARS-CoV-2, and found that S2’ cleavage and N protein amounts were reduced after TLR ligands-stimulated THP-1 cell culture supernatants pre-treatment (Figure 1G). Accordingly, immunofluorescent staining also showed that TLR ligands-stimulated THP-1 cell culture supernatants significantly reduced the area of syncytium during SARS-CoV-2 infection in Caco-2 cells (Figure 1H and I). Therefore, these data suggested that host factors secreted by activated innate immune cells inhibit authentic SARS-CoV-2-induced cell-cell fusion.
 
-## IL-1β inhibits SARS-CoV-2-induced cell-cell fusion
+### IL-1β inhibits SARS-CoV-2-induced cell-cell fusion
 
 To explore which host factor(s) inhibited SARS-CoV-2-induced cell-cell fusion, we first detected mRNA levels of different cytokines in THP-1 cells stimulated by TLR ligands. It was found that the expression levels of IL1A, IL1B, IL6, and IL8 were significantly increased upon TLR ligands stimulation, while IL4, IL12A, IFNA1, IFNB1, and IFNG mRNA levels were not changed or undetected (Figure 2—figure supplement 1A). In addition, we also detected the mRNA levels of cytokine receptors in HEK293T modeling cells, confirming that IL1R1, IL4R, IL6ST, IL8RA, IFNAR1, IFNGR1 were expressed in such cells, while IL2RA and IL12RB1 were undetectable (Figure 2—figure supplement 1B).
 
 We next selected recombinant IL-1α, IL-1β, IL-6, and IL-8 to test whether individual cytokine may play a role in affecting SARS-CoV-2 spike-induced cell-cell fusion (Figure 2A). Interestingly, IL-1α and IL-1β significantly reduced the bioluminescence signal compared to the control group, while IL-6 and IL-8 had little or no effect (Figure 2B). In addition, fluorescence images of cells expressing ZsGreen reporter also confirmed that IL-1α and IL-1β significantly inhibited SARS-CoV-2 spike-induced syncytia formation (Figure 2—figure supplement 1C and D). Furthermore, IL-1β and IL-1α both reduced the bioluminescence signal and S2’ cleavage (Figure 2C and D and Figure 2—figure supplement 2A) in cell lysates in a dose-dependent manner. Moreover, the syncytia formation was inhibited with increasing concentrations of IL-1β or IL-1α (Figure 2—figure supplement 2B–E). Intriguingly, when we added both IL-1α and IL-1β, there was no synergistic inhibition on cell-cell fusion compared to either cytokine alone (Figure 2—figure supplement 2F–H), suggesting a saturation of IL-1 receptor binding to these homologues. Since both IL-1α and IL-1β activate the downstream pathway through the same receptor IL-1R1, these data suggested that IL-1α or IL-1β may inhibit cell-cell fusion through the same pathway. Considering the higher mRNA level of IL1B than IL1A, as well as the classical release pathway of IL-1β from innate immune cells (Weber et al., 2010), we applied IL-1β for further experiments.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematics of the cell-cell fusion model used to quantify spike-mediated syncytium formation upon treatment with different cytokines. Cells co-expressing SARS-CoV-2 spike and Cre were co-cultured with ACE2 and Stop-luc co-expressing HEK293T cells for 16 hr, before cell lysates were collected for bioluminescence assay and immunoblotting. Cells co-expressing SARS-CoV-2 spike and ZsGreen were co-cultured with ACE2 expressing HEK293T cells for 16 hr before fluorescence imaging. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates collected from different cytokines-treated HEK293T-S and HEK293T-ACE2 described in (A) for 16 hr. IL-1α (10 ng/mL), IL-1β (1 ng/mL), IL-6 (100 ng/mL), or IL-8 (100 ng/mL) were added into the cell-cell fusion system. Data are representative of six individual repeats and displayed as individual points with mean ± standard error of mean (SEM). (C) Luciferase activity (RLU) measured from HEK293T cell lysates collected from different concentrations of IL-1β-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Data are representative of six individual repeats and displayed as individual points with mean ± SEM. (D) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from different concentrations of IL-1β-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (E) Schematic presentation of IL-1β pre-treatment on authentic SARS-CoV-2-infected cells. Pre-treatment of HEK293T-ACE2 cells with different concentrations of IL-1β for 1 hr, then inoculated with 0.5 multiplicity of infection (MOI) Delta or wild-type (WT) authentic SARS-CoV-2 virus. Bright-field images were captured at 24 hr post-infection (hpi) before cell lysates were harvested for immunoblotting. (F) Immunoblots of Delta SARS-CoV-2 S, S2, cleaved S2’, N, and ACE2 proteins collected from HEK293T-ACE2 cells 24 hpi as described in (E). Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus Tubulin. (G) Immunoblots of WT SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from Caco-2 cells 24 hpi as described in (E). Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (H) Immunofluorescent images showing morphology of SARS-CoV-2-infected Caco-2 cells pre-treated with or without IL-1β. Anti-SARS-CoV-2 N was stained with Alexa Fluor 555, and nuclei were counterstained with DAPI, respectively. White arrowheads indicate syncytia formation or infected cells, scale bars are indicative of 50 μm and images are representative of three independent experiments. (I) Quantification of the infected area in (H). (J) Luciferase activity (RLU) measured from THP-1 supernatants-treated HEK293T-S and HEK293T-ACE2 in the presence or absence of IL-1 receptor antagonist (IL-1RA). Data are representative of four individual repeats and displayed as individual points with mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) mRNA levels of different cytokine genes in THP-1 cells after Toll-like receptor (TLR) ligands stimulation for 4 hr. Data are representative of three individual repeats. (B) mRNA levels of indicated cytokine receptor genes in HEK293T cells. Data are representative of five individual repeats. (C) Representative fluorescent image captured at 488 nm from different cytokines-treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. White arrowheads indicate syncytia formation. Scale bars, 50 μm. Images are representative of three individual repeats. (D) Quantification of the fused area in (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from different concentrations of IL-1α-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Data and blots are representative of four individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (B, C) Representative fluorescent image captured at 488 nm from different concentrations of IL-1β (B) or IL-1α (C) treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. (D) Quantification of the fused area in (B). (E) Quantification of the fused area in (C). (F) Luciferase activity (RLU) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from IL-1α and IL-1β co-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Data and blots are representative of three individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (G) Representative fluorescent image captured at 488 nm from IL-1α and IL-1β co-treated HEK293T-S-ZsGreen and HEK293T-ACE2 for 16 hr. White arrowheads (B, C, and G) indicate syncytia formation. Scale bars, 50 μm. Images are representative of three individual repeats. (H) Quantification of the fused area in (G).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Immunoblots of wild-type (WT) SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from HEK293T-ACE2 cells 24 hr post-infection (hpi) as described in Figure 2E. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus Tubulin. (B, C) Bright-field images of 0.5 multiplicity of infection (MOI) WT (B) or Delta (C) SARS-CoV-2-infected HEK293T-ACE2 cells pre-treated with different concentrations of IL-1β. White arrowheads indicate syncytia formation, scale bars are indicative of 50 μm, and images are representative of three independent experiments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A, B) ELISA of IL-1β concentrations in supernatants from THP-1 (A) and peripheral blood mononuclear cells (PBMCs) (B) after Toll-like receptor (TLR) ligands stimulation. Data are representative of three individual repeats. (C) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from THP-1 supernatants-treated HEK293T-S and HEK293T-ACE2 in the presence or absence of IL-1 receptor antagonist (IL-1RA). Blots are representative of three individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (D) ELISA of IL-1β concentrations in supernatants from sgControl and sgTLR2 THP-1 cells after TLR ligands stimulation. Data are representative of four individual repeats. (E) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates collected from sgControl and sgTLR2 THP-1 supernatants-treated HEK293T-S and HEK293T-ACE2 for 16 hr. Fetal bovine serum (FBS)-free RPMI 1640 served as medium control. Data are representative of three individual repeats and displayed as individual points with mean ± standard error of mean (SEM). (F) ELISA of IL-1β concentrations in supernatants from TAK1/IKKβ inhibitors-treated THP-1 cells after PGN stimulation. Data are representative of three individual repeats. (G) Luciferase activity (RLU) measured from HEK293T cell lysates collected from TAK1/IKKβ inhibitors pre-treated THP-1 supernatants added onto HEK293T-S and HEK293T-ACE2 cells for 16 hr. FBS-free RPMI 1640 served as medium control. Data are representative of three individual repeats and displayed as individual points with mean ± SEM. (H) ELISA of IL-1β concentrations in supernatants from TAK1/IKKβ inhibitors-treated PBMCs after PGN stimulation. Data are representative of three individual repeats. (I) Luciferase activity (RLU) measured from HEK293T cell lysates collected from TAK1/IKKβ inhibitors pre-treated PBMCs supernatants added onto HEK293T-S and HEK293T-ACE2 cells for 16 hr. 1% FBS RPMI 1640 served as medium control. Data are representative of three individual repeats and displayed as individual points with mean ± SEM.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Schematics of the cell-cell fusion model used to determine cell types affected by IL-1β. Pre-treated HEK293T-S or HEK293T-ACE2 cells or both with 1 ng/mL IL-1β for 6 hr, then co-cultured for 16 hr after washing with phosphate buffered saline (PBS). Cells co-expressing SARS-CoV-2 spike and Cre were co-cultured with ACE2 and Stop-luc co-expressing HEK293T cells for 16 hr, before cell lysates were collected for bioluminescence assay and immunoblotting. Cells co-expressing SARS-CoV-2 spike and ZsGreen were co-cultured with ACE2 expressing HEK293T cells for 16 hr before fluorescence imaging. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from different treatments of IL-1β described in (A) for 16 hr. Data and blots are representative of six individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (C) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from 1 ng/mL IL-1β-treated HEK293T-S and Vero E6-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (D) Immunoblots showing full-length spike, S2, and cleaved S2’ collected from 1 ng/mL IL-1β-treated HEK293T-S and Calu-3 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Representative fluorescent image captured at 488 nm from HEK293T-S-ZsGreen co-cultured with HEK293T-ACE2, Vero E6-ACE2, and Calu-3 for 16 hr with or without 1 ng/mL IL-1β. White arrowheads indicate syncytia formation. Scale bars, 50 μm. Images are representative of three individual repeats. (B) Quantification of the fused area in (A). (C) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates from 1 ng/mL IL-1β-treated HEK293T-S (S-Alpha, S-Beta, S-Delta, S-Omicron BA.4) and HEK293T-ACE2 for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± standard error of mean (SEM). (D, E) Immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from 1 ng/mL IL-1β-treated HEK293T-S (S-Alpha, S-Beta, S-Delta (D), S-Omicron BA.4 (E)) and HEK293T-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Schematics of the cell-cell fusion model used to quantify SARS-CoV and MERS-CoV spike-mediated syncytia formation upon IL-1β treatment. Cells co-expressing SARS-CoV or MERS-CoV spike and Cre were co-cultured with ACE2 or DPP4 and Stop-luc co-expressing HEK293T cells for 16 hr, before cell lysates were collected for bioluminescence assay and immunoblotting. Cells co-expressing SARS-CoV or MERS-CoV spike and Cre were co-cultured with ACE2 or DPP4 and Stop-mCherry co-expressing HEK293T cells for 16 hr before fluorescence imaging. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates from 1 ng/mL IL-1β-treated HEK293T-S (SARS-S) and HEK293T-ACE2 for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± SEM. (C) Luciferase activity (RLU) measured from HEK293T cell lysates from 1 ng/mL IL-1β-treated HEK293T-S (MERS-S) and HEK293T-DPP4 for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± SEM. (D) Immunoblots showing SARS-CoV full-length spike, cleaved S2’ and ACE2 collected from 1 ng/mL IL-1β-treated HEK293T-S (SARS-S) and HEK293T-ACE2 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (E) Immunoblots showing MERS-CoV full-length spike, cleaved S2’ collected from 1 ng/mL IL-1β-treated HEK293T-S (MERS-S) and HEK293T-DPP4 for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (F) Representative fluorescent images captured at 594 nm from 1 ng/mL IL-1β-treated HEK293T-S (SARS-S) and HEK293T-ACE2 or HEK293T-S (MERS-S) and HEK293T-DPP4 for 16 hr. White arrowheads indicate syncytia formation. Scale bars, 50 μm. Images are representative of three individual experiments. (G) Quantification of the fused area in (F).
 
 In order to validate the effect of IL-1β on cell-cell fusion during authentic SARS-CoV-2 infection, we pre-treated ACE2-expressing cells with IL-1β before inoculating Delta or WT authentic SARS-CoV-2. Cell lysates were used for the detection of SARS-CoV-2 spike and N protein 24 hpi (Figure 2E). To this end, it was found that IL-1β reduced S2’ cleavage and N protein levels compared to the control group during such infection both in HEK293T-ACE2 (Figure 2F and Figure 2—figure supplement 3A) and in Caco-2 cells (Figure 2G). Meanwhile, IL-1β inhibited authentic SARS-CoV-2-induced syncytia formation (Figure 2H and I and Figure 2—figure supplement 3B and C). Thus, these results verified that IL-1β inhibits authentic SARS-CoV-2-induced cell-cell fusion in various target cells.
 
@@ -69,17 +113,45 @@ To investigate the effector function of IL-1 on cells expressing SARS-CoV-2 spik
 
 Of note, SARS-CoV (Belouzard et al., 2009) and MERS-CoV (Straus et al., 2020) spike proteins also induce cell-cell fusion in target cells. Therefore, we further explored whether IL-1β was also able to inhibit SARS-CoV and MERS-CoV spike-induced cell-cell fusion in ACE2- or dipeptidyl peptidase-4 (DPP4)-expressing cells by bioluminescence assay, immunoblotting, and a modified stop-mCherry fluorescent model, wherein mCherry reporter is only expressed when Cre excises the Stop cassette inside the fused syncytia (Figure 2—figure supplement 7A). Similar to SARS-CoV-2 spike-induced cell-cell fusion, IL-1β also reduced bioluminescence signal (Figure 2—figure supplement 7B and C), S2’ cleavage (Figure 2—figure supplement 7D and E), and the area of syncytium (Figure 2—figure supplement 7F and G) in these cell-cell fusion systems. Thus, IL-1β possesses a broad spectrum to inhibit cell-cell fusion induced by different coronaviruses.
 
-## IL-1β inhibits SARS-CoV-2-induced cell-cell fusion through IL-1R1/MyD88/IRAK/TRAF6 pathway
+### IL-1β inhibits SARS-CoV-2-induced cell-cell fusion through IL-1R1/MyD88/IRAK/TRAF6 pathway
 
 To investigate the mechanism of IL-1β inhibition on SARS-CoV-2-induced cell-cell fusion, we performed gene knockout using CRISPR-Cas9 technology, in conjunction with inhibitors targeting the IL-1 receptor pathway (Figure 3A). First of all, in the presence of IL-1RA, IL-1β was unable to reduce bioluminescence signal and S2’ cleavage (Figure 3B). Next, as MyD88 is the downstream adaptor for IL-1R1, we generated MyD88 knockout HEK293T cell line, wherein IL-1β was unable to reduce bioluminescence signal (Figure 3C) and S2’ cleavage (Figure 3—figure supplement 1A). In addition, we found that IL-1β was unable to reduce bioluminescence signal and S2’ cleavage in the presence of IRAK1/4 inhibitor (Figure 3D). Furthermore, IL-1β was unable to reduce bioluminescence signal (Figure 3E) and S2’ cleavage (Figure 3—figure supplement 1B) in TRAF6 knockout HEK293T cell line. These results suggested that IL-1β inhibits SARS-CoV-2 spike-induced cell-cell fusion through IL-1R1-MyD88-IRAK-TRAF6 pathway.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematics of gene knockout or inhibitor treatment in the IL-1 receptor pathway. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from HEK293T-S and HEK293T-ACE2 pre-treated with 1000 ng/mL IL-1 receptor antagonist (IL-1RA) for 30 min, then treated with 1 ng/mL IL-1β for 16 hr. Data and blots are representative of five individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (C) Luciferase activity (RLU) measured from cell lysates collected from 10 ng/mL IL-1α or 1 ng/mL IL-1β-treated sgControl or sgMyD88 HEK293T cell-cell fusion system for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± SEM. (D) Luciferase activity (RLU) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, and ACE2 collected from HEK293T-S and HEK293T-ACE2 pre-treated with 2 μM IRAK1/4 inhibitor for 30 min, then treated with 1 ng/mL IL-1β for 16 hr. Data and blots are representative of four individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (E) Luciferase activity (RLU) measured from cell lysates collected from 10 ng/mL IL-1α- or 1 ng/mL IL-1β-treated sgControl or sgTRAF6 HEK293T cell-cell fusion system for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± SEM. (F) Immunoblots showing full-length spike, S2, cleaved S2’, and N collected from Caco-2 cells, which were pre-treated with 2 μM IRAK1/4 inhibitor and 10 ng/mL IL-1β for 1 hr, then infected with authentic SARS-CoV-2 for 24 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (G) Immunoblots showing full-length spike, S2, cleaved S2’, and N collected from Calu-3 cells, which were infected with authentic SARS-CoV-2 for 1 hr, then washed with phosphate buffered saline (PBS) before treated with 2 μM IRAK1/4 inhibitor and 10 ng/mL IL-1β for 24 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoblots showing full-length spike, S2 and cleaved S2’, ACE2, and MyD88 collected from 10 ng/mL IL-1α- or 1 ng/mL IL-1β-treated sgControl or sgMyD88 HEK293T cell-cell fusion system for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (B) Immunoblots showing full-length spike, S2 and cleaved S2’, ACE2, and TRAF6 collected from 10 ng/mL IL-1α- or 1 ng/mL IL-1β-treated sgControl or sgTRAF6 HEK293T cell-cell fusion system for 16 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Luciferase activity (relative luminescence units [RLU]) measured from cell lysates and immunoblots showing full-length spike, S2 and cleaved S2’, ACE2 collected from 1 ng/mL IL-1β-treated sgControl or sgMAP3K7 HEK293T cell-cell fusion system for 16 hr. Data and blots are representative of five individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (B) Luciferase activity (RLU) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2 and cleaved S2’, ACE2 collected from HEK293T-S and HEK293T-ACE2 pre-treated with different concentrations of TPCA1 for 30 min, then treated with 1 ng/mL IL-1β for 16 hr. Data and blots are representative of three individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (C) mRNA levels of NF-κB pathway-related genes in HEK293T cells after 1 ng/mL IL-1β for 4 hr. Data are representative of three individual repeats. (D) Luciferase activity (RLU) measured from cell lysates collected from 1 ng/mL IL-1β-treated sgControl, sgRELB, sgNFKB1, or sgNFKBIA HEK293T cell-cell fusion system for 16 hr. Data are representative of four individual repeats and displayed as individual points with mean ± standard error of mean (SEM).
 
 Intriguingly, when we tested TAK1, a downstream molecule of TRAF6 for the potential involvement in the signaling, it was found that IL-1β still reduced bioluminescence signal and S2’ cleavage in TAK1 knockout (sgMAP3K7) HEK293T cell line (Figure 3—figure supplement 2A). Moreover, we found that in the presence of TPCA1, an IKKβ inhibitor, IL-1β still inhibited bioluminescence signal and S2’ cleavage as well (Figure 3—figure supplement 2B). In addition, although IL-1β upregulated the mRNA transcription levels of NF-κB pathway-related genes, such as RELB, NFKBIA, and NFKB1 (Figure 3—figure supplement 2C), IL-1β still reduced the bioluminescence signal after these NF-κB pathway-related genes knockout (Figure 3—figure supplement 2D). Taken together, these results demonstrated that IL-1β inhibits SARS-CoV-2 spike-induced cell-cell fusion independent from the TAK1-IKKβ-NF-κB signaling cascade.
 
 Furthermore, we validated these findings in authentic SARS-CoV-2-infected Caco-2 and Calu-3 cells. Consist with the results from HEK293T cells, IL-1β failed to reduce S2’ cleavage and N protein levels in the presence of IRAK1/4 inhibitor, whereas it still reduced S2’ cleavage and N protein amounts in the presence of the IKKβ inhibitor TPCA1 in Caco-2 (Figure 3F) and Calu-3 cells (Figure 3G).
 
-## IL-1β inhibits SARS-CoV-2-induced cell-cell fusion through RhoA/ROCK-mediated actin bundle formation at the cell-cell junction
+### IL-1β inhibits SARS-CoV-2-induced cell-cell fusion through RhoA/ROCK-mediated actin bundle formation at the cell-cell junction
 
 It has been reported that IL-1β activates RhoA signaling via MyD88 and IRAK, which is a pathway independent from IKKβ (Chen et al., 2002). As a major downstream effector of RhoA, ROCK phosphorylates substrates that are involved in the regulation of the actin cytoskeleton, cell attachment, and cell motility (Riento and Ridley, 2003). Therefore, we set out to detect the active level of RhoA through pull-down assay. To this end, we verified that IL-1β activated RhoA signaling in sgControl HEK293T cells but not in sgMyD88- or sgTRAF6-HEK293T cells (Figure 4A). To directly visualize the distribution of endogenous GTP-RhoA (active RhoA), we used a location biosensor derived from the carboxy terminus of anillin (GFP-AHPH) (Priya et al., 2015; Sun et al., 2015). Interestingly, IL-1β significantly increased the fluorescence intensity of GFP-AHPH in sgControl HEK293T cells, but had no effect in sgMyD88- and sgTRAF6-HEK293T cells (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig4-v1.jpg)
+
+**Figure 4.:** (A) GTP-RhoA pull-down assay to detect the active level of RhoA in sgControl, sgMyD88, and sgTRAF6 HEK293T cells after 1 ng/mL IL-1β treatment for 30 min. Immunoblots showing activated RhoA and total RhoA. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of active RhoA versus total RhoA. (B) Representative confocal images of GFP-AHPH after 1 ng/mL IL-1β treatment for 30 min in sgControl, sgMyD88, and sgTRAF6 HEK293T cells. Scale bars, 10 μm. (C) Quantification of fluorescence intensity of GFP-AHPH in (B). Data are representative of eight individual repeats. (D) Representative confocal images of GFP-AHPH localization with or without 1 ng/mL IL-1β treatment at different time points of syncytia formation in HEK293T-S-HA and HEK293T-ACE2 cells. Schematics with green dots in the white dashed line boxes representing GFP-AHPH, red cycles representing S-expressing cells, and magenta cycles representing ACE2-expressing cells. White arrowheads indicate the localization of GFP-AHPH, scale bars, 10 μm. Images are representative of three independent experiments. (E) Representative confocal images of F-actin stained with phalloidin-488 in transfected vector or 20 ng RhoA-CA HEK293T-S-HA and HEK293T-ACE2 cells. Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells, and magenta cycles representing ACE2-expressing cells. Scale bars, 10 μm. Images are representative of three independent experiments. (F) Representative confocal images of F-actin stained with phalloidin-488 in the presence or absence of 1 ng/mL IL-1β or 50 μM Y-27632 treatment at different time points of syncytia formation in HEK293T-S-HA and HEK293T-ACE2 cells. Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells, and magenta cycles representing ACE2-expressing cells. White arrowheads (E and F) indicate the enrichment or disappearance of F-actin, scale bars, 10 μm. Images are representative of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Single-channel confocal images of Figure 4D (top panel). (B) Single-channel confocal images of Figure 4D (bottom panel).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Single-channel confocal images of Figure 4E. (B) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2, cleaved S2’, ACE2, and Myc-RhoA collected from transfected vector, 10 or 20 ng constitutively active RhoA mutant (RhoA-CA) both in HEK293T-S and in HEK293T-ACE2 cells. Data and blots are representative of four individual repeats. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (C) Single-channel confocal images of Figure 4F (top panel). (D) Single-channel confocal images of Figure 4F (middle panel).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Single-channel confocal images of Figure 4F (bottom panel).
 
 To investigate whether IL-1β inhibits SARS-CoV-2 spike-induced cell-cell fusion through the RhoA/ROCK pathway, we co-transfected GFP-AHPH in ACE2-expressing cells, then co-cultured with Spike-expressing cells at different time points. In the process of syncytia formation, cell-cell contact established between S-expressing cells and ACE2-expressing cells, and GFP-AHPH localized distally from cell-cell junction in the early stage of syncytia formation. With the enlargement of syncytium, GFP-AHPH is visualized at the periphery of syncytium (Figure 4D, top panel, and Figure 4—figure supplement 1A). However, in IL-1β-treated group, GFP-AHPH foci is enriched to the cell-cell junction in the early stage. Over time, GFP-AHPH was recruited more to the cell-cell junction between S-expressing cells and ACE2-expressing cells, preventing further cell-cell fusion (Figure 4D, bottom panel, and Figure 4—figure supplement 1B). Cartoon schematics inserted in the imaging data illustrate such findings in a modeled manner.
 
@@ -87,15 +159,63 @@ It has been reported that RhoA initiates actin arc formation (Dupraz et al., 201
 
 Importantly, upon authentic SARS-CoV-2 infection, we observed consistent results: immunofluorescence (IF) staining showed GFP-AHPH moving to the opposite of cell-cell junction and located peripherally with syncytia formation (Figure 5A, top panel, and Figure 5—figure supplement 1A), while upon IL-1β treatment, GFP-AHPH located to the cell-cell junction of infected cells and neighboring cells (Figure 5A, bottom panel, and Figure 5—figure supplement 1B). In parallel, staining results showed that F-actin at the cell-cell junction were disassembled during authentic SARS-CoV-2 infection; with the formation of syncytium, F-actin was mainly distributed peripherally. However, actin bundles formed at cell-cell junction upon IL-1β inhibition of membrane fusion and further syncytia formation (Figure 5B and Figure 5—figure supplement 1C–E). Together, these data revealed that IL-1β induced the formation of actin bundles at the cell-cell junction of SARS-CoV-2-infected cells and neighboring cells through RhoA/ROCK pathway, which inhibited SARS-CoV-2-induced cell-cell fusion.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative confocal images of GFP-AHPH localization with or without 1 ng/mL interleukin-1β (IL-1β) treatment in 0.5 multiplicity of infection (MOI) wild-type (WT) authentic SARS-CoV-2-infected HEK293T-ACE2 cells at 6 and 24 hr post-infection (hpi). Schematics with green dots in the white dashed line boxes representing GFP-AHPH, red cycles representing SARS-CoV-2-infected cells, and white cycles representing neighboring cells. White arrowheads indicate the localization of GFP-AHPH, scale bars, 10 μm. Images are representative of three independent experiments. (B) Representative confocal images of F-actin stained with phalloidin-488 in the presence or absence of 1 ng/mL IL-1β treatment upon 0.5 MOI WT authentic SARS-CoV-2 infection of Caco-2 cells at 24 hpi. Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing SARS-CoV-2-infected cells, and white cycles representing neighboring cells. Scale bars, 10 μm. Images are representative of three independent experiments. (C) Immunoblots of WT SARS-CoV-2 S, S2, cleaved S2’, N, and Myc-RhoA collected from HEK293T-ACE2 cells, which were transfected with vector, 10 or 20 ng RhoA-CA before infection with 0.5 MOI authentic SARS-CoV-2 WT strain for 24 hr. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (D) Immunoblots of WT SARS-CoV-2 S, S2, cleaved S2’, N, and Myc-RhoA collected from lentivirus-transduced Calu-3 cells expressing vector or RhoA-CA, infected with WT authentic SARS-CoV-2 for 24 hr. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (E) Representative confocal images of F-actin stained with phalloidin-488 from Calu-3 cells described in (D). Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells, scale bars, 10 μm. Images are representative of four independent experiments. (F, G) Immunoblots of WT SARS-CoV-2 S, S2, cleaved S2’, and N collected from Calu-3 cells (F) or primary human lung cells (G), which were infected with authentic SARS-CoV-2 for 1 hr, then washed with phosphate buffered saline (PBS) before being treated with different concentrations of Y-27632 and 10 ng/mL IL-1β for 24 hr. Blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (H) Representative confocal images of F-actin stained with phalloidin-488 in Calu-3 cells described in (F). Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells. White arrowheads (B, E, and H) indicate the enrichment or disappearance of F-actin, scale bars, 10 μm. Images are representative of four independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Single-channel confocal images of Figure 5A (top panel). (B) Single-channel confocal images of Figure 5A (bottom panel). (C) Single-channel confocal images of Figure 5B. (D) Representative confocal images of F-actin stained with phalloidin-488 in the presence or absence of 1 ng/mL interleukin-1β (IL-1β) treatment in 0.5 multiplicity of infection (MOI) wild-type (WT) authentic severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)-infected HEK293T-ACE2 cells at 6 or 24 hr post-infection (hpi). Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing SARS-CoV-2-infected cells, and white cycles representing neighboring cells. White arrowheads indicate the enrichment or disappearance of F-actin, scale bars, 10 μm. Images are representative of four independent experiments. (E) Single-channel confocal images of (D).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Immunoblots of wild-type (WT) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) S, S2, cleaved S2’, N, and Myc-RhoA collected from Caco-2 cells, which were transfected with vector, 10 or 20 ng RhoA-CA before infection with 0.5 multiplicity of infection (MOI) WT authentic SARS-CoV-2 for 24 hr. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (B) Representative confocal images of F-actin stained with phalloidin-488 from Caco-2 cells described in (A). Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells. White arrowheads indicate the enrichment or disappearance of F-actin, scale bars, 10 μm. Images are representative of four independent experiments. (C) Single-channel confocal images of (B). (D) Single-channel confocal images of Figure 5E. (E) Co-immunoprecipitation (IP) and input controls of full-length spike protein after anti-V5 or anti-IgG pull-down from cell lysates mixed between HEK293T cells expressing ACE2-V5-6his or Spike protein with vector or RhoA-CA (10 ng). Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S or S2 versus ACE2 in IP group and S, S2, or ACE2 versus Tubulin in input group. (F) Representative confocal images of wheat germ agglutinin (WGA, cell surface marker) and ACE2 from HEK293T cells co-transfected with ACE2 and vector or RhoA-CA (10 ng). Scale bars, 10 μm. Images are representative of three independent experiments. (G) Quantification of the relative ACE2 expression on the cell surface in (F).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Representative confocal images of wheat germ agglutinin (WGA) and ACE2 from HEK293T cells transfected with ACE2 and treated with phosphate buffered saline (PBS) or IL-1β. Scale bars, 10 μm. Images are representative of three independent experiments. (B) Quantification of the relative ACE2 expression on the cell surface in (A). (C) Representative confocal images of WGA and Spike from HEK293T cells transfected with Spike and treated with PBS or IL-1β. Scale bars, 10 μm. Images are representative of three independent experiments. (D) Quantification of the relative Spike expression on the cell surface in (C). (E) Luciferase activity (relative luminescence units [RLU]) measured from HEK293T cell lysates and immunoblots showing full-length spike, S2 and cleaved S2’, ACE2 collected from HEK293T-S, and HEK293T-ACE2 pre-treated with different concentrations of Y-27632 for 30 min, then treated with 1 ng/mL IL-1β for 16 hr. Data and blots are representative of three independent experiments. Numbers below the blots indicated the intensity of S2’ versus Tubulin. (F) Immunoblots of wild-type (WT) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) S, S2, cleaved S2’, and N collected from Caco-2 cells, which were treated with different concentrations of Y-27632 and 10 ng/mL IL-1β for 1 hr, then infected with 0.5 multiplicity of infection (MOI) WT authentic SARS-CoV-2 for 24 hr. Blots are representative of three individual experiments. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin. (G) Representative confocal images of F-actin stained with phalloidin-488 in Caco-2 cells described in (F). Schematics with green lines in the white dashed line boxes representing actin bundles, red cycles representing S-expressing cells. White arrowheads indicate the enrichment or disappearance of F-actin, scale bars, 10 μm. Images are representative of four independent experiments.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Single-channel confocal images of Figure 5—figure supplement 3G. (B) Single-channel confocal images of Figure 5H.
+
 To further investigate the role of RhoA/ROCK pathway in inhibiting SARS-CoV-2 induced cell-cell fusion, we found that HEK293T-ACE2 (Figure 5C), Caco-2 (Figure 5—figure supplement 2A), and Calu-3 cells (Figure 5D) expressing RhoA-CA clearly reduced S2’ cleavage and N protein levels compared to the control group during authentic SARS-CoV-2 infection. Meanwhile, we observed that constitutive activation of RhoA enriches actin bundles at cell-cell junction, thus preventing SARS-CoV-2-induced cell-cell fusion in authentic SARS-CoV-2 infected Caco-2 (Figure 5—figure supplement 2B and C) and Calu-3 cells (Figure 5E and Figure 5—figure supplement 2D). In addition, we examined the potential effect of RhoA-CA on ACE2 and found that it did not affect Spike protein binding to ACE2 (Figure 5—figure supplement 2E), nor ACE2 distribution on the cell surface (Figure 5—figure supplement 2F and G). We also observed that IL-1β treatment did not change ACE2 or Spike protein distribution on the cell surface (Figure 5—figure supplement 3A–D).
 
 Notably, ROCK inhibitor Y-27632 treatment increased bioluminescence signal and S2’ cleavage in a dose-dependent manner, promoting syncytia formation. When treated with lower concentrations of Y-27632, IL-1β eliminated Y-27632-enhanced cell-cell fusion. However, IL-1β was unable to inhibit cell-cell fusion in the presence of higher concentrations of Y-27632 (Figure 5—figure supplement 3E). Furthermore, we verified that IL-1β was unable to reduce S2’ cleavage and N protein levels in the presence of Y-27632 in authentic SARS-CoV-2-infected Caco-2 (Figure 5—figure supplement 3F), Calu-3 cells (Figure 5F), and primary human lung cells (Figure 5G). IF results also confirmed that the elimination of IL-1β induced actin bundles by Y-27632 in Caco-2 (Figure 5—figure supplements 3G and 4A) and Calu-3 cells (Figure 5H and Figure 5—figure supplement 4B). These results indicated that preventing the formation of RhoA/ROCK-mediated actin bundles at cell-cell junction promotes SARS-CoV-2-induced cell-cell fusion.
 
-## IL-1β restricts SARS-CoV-2 transmission via induction of actin bundles in vivo
+### IL-1β restricts SARS-CoV-2 transmission via induction of actin bundles in vivo
 
 To demonstrate the role of IL-1β in controlling SARS-CoV-2 transmission in vivo, BALB/c mice were infected with authentic SARS-CoV-2 B.1.351 after IL-1β or IL-1RA+IL-1β pre-treatment (Figure 6—figure supplement 1A). Interestingly, the results of this experiment showed that in mice with IL-1β treatment, the body weight loss was less than in the PBS control group, while IL-1β was unable to improve body weight in the presence of IL-1RA (Figure 6—figure supplement 1B). According to hematoxylin and eosin (H&E) staining, tissue histopathology analysis demonstrated that the mice with IL-1β treatment carry less pulmonary injury compared to the PBS control and IL-1RA+IL-1β groups (Figure 6A and B). In addition, the expression level of SARS-CoV-2 N gene in the lung from IL-1β-treated mice was significantly lower than in the PBS control and IL-1RA+IL-1β-treated mice (Figure 6C). In addition, immunohistochemistry (IHC) staining showed that the infected area in the epithelial linings of lung tissue was significantly reduced by IL-1β treatment compared to the PBS control and IL-1RA+IL-1β groups (Figure 6D and E), indicating that IL-1β restricted the transmission of SARS-CoV-2 in the lung. Moreover, fluorescence staining showed that SARS-CoV-2-infected lung epithelial cells fused with neighboring cells, promoting viral transmission in the airway epithelial cells, while IL-1β induced the formation of actin bundles to restrict the syncytia formation and further viral transmission (Figure 6F and Figure 6—figure supplement 1C and D). In addition, we found that IL-1β-treated mice have no significant changes in body weight, nor liver and spleen weight compared to control mice (Figure 6—figure supplement 2A–D), indicating that this dose of IL-1β did not cause toxicity in vivo in the mice. Of note, when we isolated tissue cells from the IL-1β-treated mice and infected with authentic SARS-CoV-2, it was found that S2’ cleavage and N protein levels were strongly reduced in IL-1β-treated mice-derived lung and intestine tissue cells compared to control (Figure 6G and Figure 6—figure supplement 2E), suggesting that IL-1β may have protective effects on various tissue cells against SARS-CoV-2 infection in vivo.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Representative images of hematoxylin and eosin (H&E)-stained lung sections (A) and histopathology scores (B) from phosphate buffered saline (PBS); 1 μg/kg mIL-1β; 150 μg/kg mIL-1RA+mIL-1β pre-treated mice infected with SARS-CoV-2 at 4 days post-infection (dpi), scale bars are indicative of 500 μm and images are representative of eight samples. (C) qPCR analysis of SARS-CoV-2 N mRNA collected from infected lung tissues at 4 dpi. (D) Immunohistochemistry analysis of SARS-CoV-2 N staining in the lung tissue slices at 4 dpi, scale bars are indicative of 500 μm (top panel), 50 μm (bottom panel), and images are representative of eight samples. (E) The percentages of SARS-CoV-2-infected area in (D) were quantified. (F) Representative confocal images of F-actin stained with phalloidin-488 and SARS-CoV-2 N in the area 1 of lung tissue at 4 dpi. White arrowheads indicate syncytia formation or infected cells, scale bars are indicative of 10 μm and images are representative of three samples (top). White lines indicate SARS-CoV-2 cell-cell transmission and quantify with fluorescence intensity of F-actin and SARS-CoV-2 N (bottom). (G) Immunoblots of SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from SARS-CoV-2 B.1.351-infected lung tissue cells, which were isolated from BALB/c mice treated with or without 1 μg/kg mIL-1β at day 7. Blots are representative of three individual mouse. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic for a murine model of authentic SARS-CoV-2 infection, phosphate buffered saline (PBS) control (n=8); 1 μg/kg mIL-1β (n=8); 150 μg/kg mIL-1RA+1 μg/kg mIL-1β (n=8) were administered 1 hr before intranasal challenge with 5×104 FFU of SARS-CoV-2 B.1.351; mice were then intraperitoneally injected with PBS, mIL-1β and mIL-1RA+mIL-1β at 1 and 2 day post-infection (dpi), before sacrificed at 4 dpi. (B) The body weights were assessed daily for weight loss after SARS-CoV-2 infection. (C, D) Representative confocal images of F-actin stained with phalloidin-488 and SARS-CoV-2 N in the area 2 (C) and area 3 (D) of lung tissue at 4 dpi. White arrowheads indicate syncytia formation or infected cells, scale bars are indicative of 10 μm and images are representative of three samples (top). White lines indicate SARS-CoV-2 cell-cell transmission and quantify with fluorescence intensity of F-actin and SARS-CoV-2 N (bottom).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic of phosphate buffered saline (PBS) (n=5) and mIL-1β (n=5) treated BALB/c mice. (B) The body weights were assessed daily for weight loss. Liver (C) and spleen (D) weights were assessed at day 7. (E) Immunoblots of SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from SARS-CoV-2 B.1.351-infected intestine tissue cells, which isolated from BALB/c mice treated with or without 1 μg/kg mIL-1β at day 7. Blots are representative of three individual mouse. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin.
+
 To further verify the function and mechanism of IL-1β in controlling SARS-CoV-2 transmission in vivo, BALB/c mice were infected with authentic SARS-CoV-2 B.1.351 after IL-1β or ROCK inhibitor Y-27632+IL-1β pre-treatment (Figure 7—figure supplement 1A). Similar to IL-1RA, Y-27632 compromised the effect of IL-1β in preventing weight loss (Figure 7—figure supplement 1B). In addition, H&E staining showed that Y-27632 treatment aggravated lung injury in IL-1β-treated mice upon SARS-CoV-2 infection (Figure 7A and B), although Y-27632+IL-1β did not cause weight loss or lung injury in uninfected mice (Figure 7—figure supplement 1C and D). Moreover, Y-27632 treatment increased the expression level of SARS-CoV-2 N gene (Figure 7C) and infected area (Figure 7D and E) in the lungs of IL-1β-treated mice. Importantly, Y-27632 treatment prevented the formation of IL-1β-induced actin bundles at cell-cell junctions, thus promoted syncytia formation and further viral transmission (Figure 7F and Figure 7—figure supplement 2A and B). Furthermore, we treated BALB/c mice with PBS, IL-1β, or Y-27632+IL-1β (Figure 7—figure supplement 2C), then isolated the lung tissue cells for authentic SARS-CoV-2 infection. Here, it was found that S2’ cleavage and N protein levels were clearly reduced in IL-1β-treated mice compared to control at day 2, while Y-27632 treatment abolished the inhibitory effect of IL-1β (Figure 7—figure supplement 2D). Of note, the lung tissue cells in IL-1β-treated mice remained resistant to SARS-CoV-2 infection at day 7, while the protective effect of IL-1β was abolished by Y-27632 treatment (Figure 7G). Taken together, IL-1β prevents the transmission of SARS-CoV-2 through inducing the formation of actin bundles via the RhoA/ROCK pathway in vivo.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Representative images of hematoxylin and eosin (H&E)-stained lung sections (A) and histopathology scores (B) from phosphate buffered saline (PBS); 1 μg/kg mIL-1β; 1 mg/kg Y-27632+mIL-1β pre-treated mice infected with SARS-CoV-2 at 4 days post-infection (dpi), scale bars are indicative of 500 μm and images are representative of eight samples. (C) qPCR analysis of SARS-CoV-2 N mRNA collected from infected lung tissues at 4 dpi. (D) Immunohistochemistry analysis of SARS-CoV-2 N staining in the lung tissue slices at 4 dpi, scale bars are indicative of 500 μm (top panel), 50 μm (bottom panel) and images are representative of eight samples. (E) The percentages of SARS-CoV-2-infected area in (D) were quantified. (F) Representative confocal images of F-actin stained with phalloidin-488 and SARS-CoV-2 N in the area 1 of lung tissue at 4 dpi. White arrowheads indicate syncytia formation or infected cells, scale bars are indicative of 10 μm and images are representative of three samples (top). White lines indicate SARS-CoV-2 cell-cell transmission and quantify with fluorescence intensity of F-actin and SARS-CoV-2 N (bottom). (G) Immunoblots of SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from authentic SARS-CoV-2 BF.7-infected lung tissue cells, which were isolated from BALB/c mice treated with PBS, 1 μg/kg mIL-1β or 1 mg/kg Y-27632+1 μg/kg mIL-1β at day 7. Blots are representative of three individual mouse. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic for a murine model of authentic severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection, phosphate buffered saline (PBS) control (n=8); 1 μg/kg mIL-1β (n=8); 1mg/kg Y-27632+1 μg/kg mIL-1β (n=8) were administered 1 hr before intranasal challenge with 5×104 FFU of SARS-CoV-2 B.1.351; mice were then intraperitoneally injected with PBS, mIL-1β, and Y-27632+mIL-1β at 1 and 2 day post-infection (dpi), before sacrificed at 4 dpi. (B) The body weights were assessed daily for weight loss after SARS-CoV-2 infection. (C) The body weights were assessed daily from PBS or Y-27632+mIL-1β-treated uninfected mice. (D) Representative images of hematoxylin and eosin (H&E)-stained lung sections from PBS or Y-27632+mIL-1β-treated uninfected mice at day 7, scale bars are indicative of 500 μm and images are representative of four samples.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A, B) Representative confocal images of F-actin stained with phalloidin-488 and severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) N in the area 2 (A) and area 3 (B) of lung tissue at 4 days post-infection (dpi). White arrowheads indicate syncytia formation or infected cells, scale bars are indicative of 10 μm and images are representative of three samples (top). White lines indicate SARS-CoV-2 cell-cell transmission and quantify with fluorescence intensity of F-actin and SARS-CoV-2 N (bottom). (C) Schematic of phosphate buffered saline (PBS) mIL-1β and Y-27632+mIL-1β-treated BALB/c mice. (D) Immunoblots of SARS-CoV-2 S, S2, cleaved S2’, and N proteins collected from authentic SARS-CoV-2 BF.7-infected lung tissue cells, which were isolated from BALB/c mice treated with PBS, 1 μg/kg mIL-1β or 1mg/kg Y-27632+1 μg/kg mIL-1β at day 2. Blots are representative of three individual mouse. Numbers below the blots indicated the intensity of S2’ or N versus β-Actin.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/98593/elife-98593-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Host factors secreted from innate immune cells upon Toll-like receptor (TLR) ligands stimulation, including interleukin-1β (IL-1β) and IL-1α, act on both severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)-infected cells expressing spike protein and neighboring cells expressing ACE2 receptor via IL-1R1-MyD88-IRAK-TRAF6 signaling pathway, which leads to strong enrichment of activated RhoA at cell-cell junction, resulting in the formation of ROCK-mediated actin bundle to prevent SARS-CoV-2-induced cell-cell fusion and further viral transmission through syncytia formation.
 
 ## Discussion
 
@@ -113,39 +233,357 @@ In summary, this study demonstrated the function and mechanism of IL-1β in inhi
 
 ## Materials and methods
 
-## Cell culture and stimulation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody (pAb) to SARS-CoV-2 S2</td>
+      <td>Sino Biological</td>
+      <td>Cat#:40590-T62, RRID:AB_3073714</td>
+      <td>WB (1:2000), IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody (mAb) to SARS-CoV-2 Nucleocapsid</td>
+      <td>Sino Biological</td>
+      <td>Cat#:40143-MM05, RRID:AB_2827977</td>
+      <td>WB (1:1000), IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody (pAb) to ACE2</td>
+      <td>Proteintech</td>
+      <td>Cat#:21115-1-AP, RRID:AB_10732845</td>
+      <td>WB (1:2000), IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody (pAb) to MERS-CoV S2 antibody</td>
+      <td>Sino Biological</td>
+      <td>Cat#:40070-T62</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal antibody (mAb) to MyD88</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:4283, RRID:AB_10547882</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal antibody (mAb) to TRAF6</td>
+      <td>Abcam</td>
+      <td>Cat#:ab33915, RRID:AB_778572</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibody (pAb) to TAK1</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:4505, RRID:AB_490858</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody (mAb) to Myc-Tag</td>
+      <td>Abclonal</td>
+      <td>Cat#:AE010, RRID:AB_2770408</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody (mAb) to HA-Tag</td>
+      <td>Abclonal</td>
+      <td>Cat#:AE008, RRID:AB_2770404</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody (mAb) to HRP-conjugated β-tubulin</td>
+      <td>Abclonal</td>
+      <td>Cat#:AC030, RRID:AB_2769870</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal antibody (mAb) to β-actin</td>
+      <td>Proteintech</td>
+      <td>Cat#:66009-1-Ig, RRID:AB_2687938</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>Cat#:A-21424, RRID:AB_141780</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat#:A-21236, RRID:AB_2535805</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Actin-Tracker Green-488</td>
+      <td>Beyotime</td>
+      <td>C2201S</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DAPI</td>
+      <td>Abcam</td>
+      <td>ab228549</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Antifade mounting medium</td>
+      <td>Vectorlabs</td>
+      <td>H-1400-10</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Purified LTA from S. aureus</td>
+      <td>Invitrogen</td>
+      <td>tlrl-pslta</td>
+      <td>10 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Pam3CSK4</td>
+      <td>Invitrogen</td>
+      <td>tlrl-pms</td>
+      <td>1 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Peptidoglycan from S. aureus</td>
+      <td>Sigma-Aldrich</td>
+      <td>77140</td>
+      <td>2 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>LPS</td>
+      <td>Invitrogen</td>
+      <td>tlrl-eklps</td>
+      <td>1 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TPCA1</td>
+      <td>Selleck</td>
+      <td>S2824</td>
+      <td>0.5 μM, 1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5Z-7-Oxozeaenol</td>
+      <td>Sigma-Aldrich</td>
+      <td>O9890</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IRAK1/4 inhibitor</td>
+      <td>Selleck</td>
+      <td>S6598</td>
+      <td>2 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Selleck</td>
+      <td>S6390</td>
+      <td>In vitro: 1 μM, 10 μM, 50 μM; In vivo: 1 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human IL-1α</td>
+      <td>Peprotech</td>
+      <td>200-01A</td>
+      <td>10 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human IL-1β</td>
+      <td>Peprotech</td>
+      <td>200-01B</td>
+      <td>1 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant mouse IL-1β</td>
+      <td>Peprotech</td>
+      <td>211-11B</td>
+      <td>In vivo: 1 μg/kg</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human IL-1RA</td>
+      <td>Peprotech</td>
+      <td>200-01RA</td>
+      <td>1000 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human IL-6</td>
+      <td>Peprotech</td>
+      <td>200-06</td>
+      <td>100 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human IL-8</td>
+      <td>Peprotech</td>
+      <td>200-08M</td>
+      <td>100 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant mouse IL-1RA</td>
+      <td>BioLegend</td>
+      <td>769706</td>
+      <td>In vivo: 150 μg/kg</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IL-1β ELISA kit</td>
+      <td>R&amp;D Systems</td>
+      <td>DY201</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RhoA pull-down activation assay Biochem kit</td>
+      <td>Cytoskeleton</td>
+      <td>BK036-S</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAX1 SARS-CoV-2 spike (Wild type) plasmid</td>
+      <td>This paper</td>
+      <td>GenBank: QHD43419.1</td>
+      <td>Homo sapiens codon-optimized, HA-tag at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAX1 SARS-CoV-2 spike (Alpha) plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Truncated 19 amino acids at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAX1 SARS-CoV-2 spike (Beta) plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Truncated 19 amino acids at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAX1 SARS-CoV-2 spike (Delta) plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Truncated 19 amino acids at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pVAX1 SARS-CoV-2 spike (Omicron) plasmid</td>
+      <td>GeneScript</td>
+      <td>N/A</td>
+      <td>Truncated 19 amino acids at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4.0 human ACE2 plasmid</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>V5-tag at the C-terminal</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-AHPH plasmid</td>
+      <td>Addgene</td>
+      <td>Cat#:71368, RRID:Addgene_71368</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK5myc RhoA L63 plasmid</td>
+      <td>Addgene</td>
+      <td>Cat#:15900, RRID:Addgene_15900</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 1 for primers used in this study</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA primers</td>
+      <td>This paper</td>
+      <td>sgRNA primers</td>
+      <td>See Supplementary file 2 for sgRNA primers used in this study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and stimulation
 
 HEK293T cells (4201HUM-CCTCC00187) were purchased from the National Science & Technology Infrastructure (NSTI) cell bank (https://www.cellbank.org.cn/). Human colon epithelial carcinoma cell line Caco-2 (catalog no. SCSP-5027) cells were obtained from Cell Bank/Stem Cell Bank, Chinese Academy of Sciences. Human lung cancer cell line Calu-3 and Vero E6-ACE2 cells were gifted from Prof. Dimitri Lavillette (Applied Molecular Virology Laboratory, Discovery Biology Department, Institut Pasteur Korea). Human monocytic cell line THP-1 (TIB-202; ATCC) was authenticated at Genetic Testing Biotechnology Corporation (Suzhou, China) using short tandem repeat analysis as described in 2012 in ANSI Standard (ASN-0002) by the ATCC Standards Development Organization. Their identity has been authenticated by the supplier and regular mycoplasma checks were performed. HEK293T and Vero E6-ACE2 cells were cultured in Gibco Dulbecco’s Modified Eagle Medium (DMEM) (GE Healthcare) supplemented with 10% fetal bovine serum (FBS) (Sigma) and 1% penicillin/streptomycin (P/S) (Life Technologies) at 37°C with 5% CO2 in a humidified incubator. Caco-2 and Calu-3 cells were cultured in Minimum Essential Medium supplemented with 10% FBS, 1% non-essential amino acids, and 1% P/S at 37°C with 5% CO2 in a humidified incubator. THP-1 cells were cultured in Roswell Park Memorial Institute (RPMI) 1640 supplemented with 10% FBS, 1% P/S, and 50 μM 2-ME at 37°C with 5% CO2 in a humidified incubator. All cells were routinely tested for mycoplasma contamination; passages between 4th and 25th were used. Human PBMCs were isolated from the peripheral blood of healthy doners (Shanghai Blood Center). This study was performed in accordance with the International Ethical Guidelines for Biomedical Research Involving Human Subjects and the principles expressed in the Declaration of Helsinki. Briefly, fresh human PBMCs were separated using Ficoll-Paque PLUS reagent (cytiva, 17144003) at 1200×g for 10 min at room temperature with SepMateTM-50 (SepMate, 86450). PBMCs were washed three times with filtered PBS containing 0.5% bovine serum albumin (BSA) and 2 mM EDTA. PBMCs were counted and resuspended in RPMI 1640 medium supplemented with 1% FBS and 1% P/S.
 
 For stimulation, THP-1 cells were seeded at 2×106 cells/mL in FBS-free RPMI 1640 and PBMCs were seeded at 1×107 cells/mL in 1% FBS RPMI 1640, then stimulated with LTA (10 μg/mL), Pam3CSK4 (1 μg/mL), PGN (2 μg/mL), LPS (1 μg/mL) for 24 hr, cell culture supernatants were collected after centrifugation at 2000×g for 5 min for subsequent experiments.
 
-## Transient transfection and cell-cell fusion assays
+### Transient transfection and cell-cell fusion assays
 
 For transient transfections, HEK293T cells were seeded in 24-well plates at 0.5×106 cells/mL overnight. 250 ng plasmids encoding SARS-CoV-2 spike mutants or ACE2 variants were packaged in Lipofectamine 2000 (Life Technologies) and transfected for 24 hr. For luciferase assays, Spike-mediated membrane fusion, a Cre-loxp Firefly luciferase (Stop-Luc) co-expression system was introduced to enable the detection of DNA recombination events during cell-cell fusion. 200 ng Cre plasmids were co-transfected into HEK293T-S cells and 200 ng Stop-Luc plasmid were co-transfected into HEK293T±ACE2 cells, respectively. For visualization of syncytia formation, 100 ng ZsGreen plasmid was co-transfected with spike variants. HEK293T cells in the 24-well plates were then detached using ice-cold calcium-free PBS in the absence of trypsin and centrifuged at 600×g for 4 min.
 
 For cell-cell fusion assays, cell pellets were resuspended into complete DMEM and mixed with control HEK293T cells, or HEK293T-ACE2, Vero E6-ACE2, or Calu-3 cells at 1:1 ratio before adhesion to the 48-well or 96-well plates, cell mixes were incubated for 16 hr at 37°C. Quantification of cell-cell fusion was performed by measuring luciferase expression as relative luminescence units (RLU) 1 min by mixing cell lysates with the Bright-Glo luciferase substrate (E2610, Promega) on a Synergy H1 plate reader (Biotek). Fluorescent images showing syncytia formation were captured at endpoint using a 10× objective and 12-bit monochrome CMOS camera installed on the IX73 inverted microscope (Olympus). Attached cells and syncytia were lysed in an NP40 lysis buffer containing 0.5% (vol/vol) NP40, 25 mM Tris pH 7.3, 150 mM NaCl, 5% glycerol, and 1× EDTA-free protease inhibitor cocktail (PIC) (Roche).
 
-## Immunoblotting
+### Immunoblotting
 
 Tissue culture plates containing adherent syncytia and cell mixes were directly lysed on ice in 2× reducing Laemmli loading buffer before boiled at 95°C for 5 min. Protein samples were separated by standard Tris-glycine SDS-PAGE on 7.5% or 9.5% Tris-glycine polyacrylamide gels. Proteins were then transferred onto 0.45 μm PVDF membranes (Millipore) for wet transfer using Towbin transfer buffer. All membranes were blocked in PBS supplemented with 0.1% Tween 20 (PBST) and 2.5% BSA or 5% non-fat dry milk, before overnight incubation in primary antibodies at 4°C. Blots were labeled with HRP-tagged secondary antibodies (Jackson ImmnuoResearch) and visualized with PicoLight substrate enhanced chemiluminescence solution (Epizyme Scientific). Immunoblot images were captured digitally using a 5200 chemiluminescent imaging system (Tanon) with molecular weight markers indicated.
 
-## Real-time PCR
+### Real-time PCR
 
 0.5×106 cells/mL HEK293T cells were seeded in 24-well plates overnight. After the cells were about 80% covered, specified stimulant was added. Upon harvesting, cells were washed with PBS for three times, and 1 mL TRIzol Reagent (15596018; Thermo Fisher Scientific) was added for full lysis at room temperature for 5 min. 250 μL chloroform was added, fully mixed at room temperature for 5 min, centrifuged at 10,000 r/min, 4°C for 10 min. After carefully removing the aqueous phase using a pipette into another 1.5 mL Eppendorf tube, some of the aqueous phase (about 1 mm above DNA layer to prevent DNA contamination) was remained. 550 µL isopropanol was added in the aqueous phase and mixed gently, then placed at –20°C for 30 min. The tubes were centrifuged at 14,000 r/min, 4°C for 20 min, and washed with 75% ethanol twice before dissolved in 30 µL DEPC water. RNA was reverse-transcribed to cDNA using a GoSript Reverse Transcription Kit (Promega). Real-time PCR was performed using SYBR Green Realtime PCR Master Mix (TOYOBO) on ABI QuantStudio 6 flex Real-time PCR System (Thermo Fisher Scientific). The RT-qPCR primer sequences for targeting genes are displayed in Supplementary file 1. Target genes’ relative quantification was normalized to GAPDH as relative unit (RU).
 
-## CRISPR/Cas9-mediated gene targeting
+### CRISPR/Cas9-mediated gene targeting
 
 Gene-deficient THP-1 or HEK293T cells were generated using CRISPR/Cas9-mediated gene targeting technology. Briefly, LentiCRISPR v2 (52961; Addgene) containing sgRNA specifically targeting indicated genes were constructed. The sgRNA sequences for targeting respective genes are displayed in Supplementary file 2. The lentiviral particles were produced in HEK293T cells by transfection with LentiCRISPR v2-sg gene, psPAX2, VSV-G at 2:1.5:1 ratio using Lipofectamine 2000. The lentiviral particles were employed to infect THP-1 or HEK293T cells. One day post-infection (dpi), the cells were subjected to puromycin selection at a concentration of 2 μg/mL for 72 hr. Survived cells were subjected to limiting dilution in 96-well plates to obtain single clones stably knocking-out respective genes.
 
-## RhoA pull-down assay
+### RhoA pull-down assay
 
 RhoA pull-down activation assay Biochem kit was applied for this experiment. In brief, after 1 ng/mL IL-1β treatment for 30 min, HEK293T cells were placed on ice and the culture media was aspirated off before washing cells with ice-cold PBS, then washed cells were transferred into 1.5 mL Eppendorf tubes followed with a centrifugation 600×g, 4°C for 5 min. Then, the cell lysis buffer with PIC was added. The tubes were immediately centrifuged at 10,000×g, 4°C for 1 min, then 20 µL of the lysate was saved for total RhoA, and the remaining lysate was used for pull-down assay. For pull-down assay, 10 μL rhotekin-RBD beads were mixed with 600 µg total protein, then the tubes were incubated at 4°C on a rotator for 1 hr before centrifuged at 5000×g, 4°C for 1 min. Next, 90% of the supernatants were carefully removed before washing beads with 500 μL wash buffer. Then, the tubes were centrifuged at 5000×g, 4°C for 3 min, and supernatant was carefully removed before adding 20 μL of 2× Laemmli sample buffer, then the beads were thoroughly resuspended and boiled for 2 min and analyzed through immunoblotting.
 
-## Immunostaining and confocal microscopy
+### Immunostaining and confocal microscopy
 
 HEK293T-ACE2 cells were seeded onto sterilized poly-D-lysine (100 µg/mL) (Beyotime, ST508) treated 12 mm coverslips (Fisher Scientific, 1254580) in 24-well plates. After co-culture with HEK293T-S, cells were washed with PBS once before fixing with 4% (wt/vol) paraformaldehyde (PFA) for 20 min. Then, cells were washed twice with PBS and permeabilized with 0.1% Triton at room temperature for 10 min (for wheat germ agglutinin [WGA] staining, cells were not treated with Triton). Next, cells were washed twice with PBS and blocked with Immunol Staining Blocking Buffer (Beyotime, P0102) at room temperature for 1 hr. Primary antibodies were incubated at room temperature for 1 hr. Coverslips were then washed twice with PBS before incubation with Actin-Tracker Green-488 or secondary antibodies for 1 hr at room temperature. Coverslips were washed twice with PBS before DAPI staining for 10 min or being mounted in antifade mounting medium. Fluorescent images covering various areas on the coverslips were captured at 12-bit depth in monochrome using a 100× oil immersion objective on the Olympus SpinSR10 confocal microscope and subsequently processed using ImageJ software (NIH) with scale bars labeled.
 
-## Authentic SARS-CoV-2 infection of cells
+### Authentic SARS-CoV-2 infection of cells
 
 All experiments involving authentic SARS-CoV-2 virus in vitro were conducted in the biosafety level 3 laboratory of the Shanghai Municipal Center for Disease Control and Prevention (CDC). The experiments and protocols in this study were approved by the Ethical Review Committee of the Shanghai CDC (Permit Number: 2022-51). Briefly, HEK293T-ACE2 or Caco-2 cells were seeded into 24-well or 96-well plates at a density of 4×105 cells/mL overnight, then pre-treated with different reagents for 1 hr before infection with 0.5 multiplicity of infection (MOI) Delta or WT authentic SARS-CoV-2 (B.1.617.2 and WT) for 24 hr. Calu-3 cells were seeded into 24-well or 96-well plates at a density of 4×105 cells/mL overnight, infected with 0.5 MOI WT authentic SARS-CoV-2 for 1 hr, then washed with PBS before treating with different reagents for 24 hr. Bright-field images were captured to indicate the syncytia formation, cell lysates were collected for spike S2’ cleavage and N protein immunoblots.
 
@@ -153,14 +591,14 @@ For primary mouse tissue cells, specific pathogen-free 6-week-old female BALB/c 
 
 For primary human lung cells, the human lung tissues were cut into small pieces of about 2 mm3 and washed three times with HBSS solution containing 1% PS, digested with collagenase type I (100 mg+50 mL PBS) in an incubator at 37°C for 4 hr. Then filtered through a 70 μm filter and centrifuged at 500×g for 5 min at room temperature. Lysed with 3 mL Red Blood Cell Lysis Buffer for 5 min at room temperature, and then centrifuged at 500×g for 5 min at room temperature, washed twice with HBSS solution containing 1% PS. Human lung cells were resuspended in B-ALI Growth Media and seeded into 96-well plates at a density of 4×105 cells/mL overnight, infected with 0.5 MOI WT authentic SARS-CoV-2 for 1 hr, then washed with PBS before treating cells with different reagents for 24 hr. The experiments and protocols were approved by the Ethical Review Committee of the Shanghai CDC.
 
-## Authentic SARS-CoV-2 infection of BALB/c mice
+### Authentic SARS-CoV-2 infection of BALB/c mice
 
 Specific pathogen-free 6-week-old female BALB/c mice were lightly anesthetized with isoflurane and intranasal treated with PBS, mIL-1β (1 μg/kg), mIL-1RA (150 μg/kg)+mIL-1β (1 μg/kg); or PBS, mIL-1β (1 μg/kg), Y-27632 (1 mg/kg)+mIL-1β (1 μg/kg) for 1 hr, then intranasally challenged with 5×104 FFU of SARS-CoV-2 B.1.351. For booster injection, mice were intraperitoneally injected with PBS, mIL-1β (1 μg/kg), mIL-1RA (150 μg/kg)+mIL-1β (1 μg/kg); or PBS, mIL-1β (1 μg/kg), Y-27632 (1 mg/kg)+mIL-1β (1 μg/kg) at 1 and 2 dpi. Mice were monitored daily for weight loss. Lungs were removed into TRIzol or 4% PFA at 4 dpi. Animal experiments related to authentic SARS-CoV-2 were conducted in Guangzhou Customs District Technology Center BSL-3 Laboratory (Permit Number: IQTC202302).
 
-## Pulmonary histopathology
+### Pulmonary histopathology
 
 Lungs were collected from mice infected with SARS-CoV-2 at 4 dpi and fixed in 4% PFA (Bioss) for 12 hr followed by dehydrating, embedded in paraffin for sectioning, then stained with H&E, IHC, or IF. H&E and IHC data were analyzed by PerkinElmer Vectra 3, IF results were analyzed by Olympus SpinSR10 confocal microscope. The pathological scores were judged according to previous work (Curtis et al., 1990).
 
-## Statistics analysis
+### Statistics analysis
 
 Bar graphs were presented as mean values ± standard error of mean (SEM) with individual data points. All statistical analyses were carried out with the Prism software v8.0.2 (GraphPad). Data with multiple groups were analyzed using matched one-way ANOVA followed by Sidak’s post hoc comparisons. Statistical significance p values were indicated between compared groups and shown on figures.

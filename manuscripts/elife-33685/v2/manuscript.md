@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.33685.001 Asymmetric stem cell division is a critical mechanism for balancing self-renewal and differentiation. Adult stem cells often orient their mitotic spindle to place one daughter inside the niche and the other outside of it to achieve asymmetric division. It remains unknown whether and how the niche may direct division orientation. Here we discover a novel and evolutionary conserved mechanism that couples cell polarity to cell fate. We show that the cytokine receptor homolog Dome, acting downstream of the niche-derived ligand Upd, directly binds to the microtubule-binding protein Eb1 to regulate spindle orientation in Drosophila male germline stem cells (GSCs). Dome’s role in spindle orientation is entirely separable from its known function in self-renewal mediated by the JAK-STAT pathway. We propose that integration of two functions (cell polarity and fate) in a single receptor is a key mechanism to ensure an asymmetric outcome following cell division.
+Asymmetric stem cell division is a critical mechanism for balancing self-renewal and differentiation. Adult stem cells often orient their mitotic spindle to place one daughter inside the niche and the other outside of it to achieve asymmetric division. It remains unknown whether and how the niche may direct division orientation. Here we discover a novel and evolutionary conserved mechanism that couples cell polarity to cell fate. We show that the cytokine receptor homolog Dome, acting downstream of the niche-derived ligand Upd, directly binds to the microtubule-binding protein Eb1 to regulate spindle orientation in Drosophila male germline stem cells (GSCs). Dome’s role in spindle orientation is entirely separable from its known function in self-renewal mediated by the JAK-STAT pathway. We propose that integration of two functions (cell polarity and fate) in a single receptor is a key mechanism to ensure an asymmetric outcome following cell division.
 
 ## Introduction
 
@@ -28,11 +28,19 @@ Asymmetric cell division is a key mechanism to generate diversity in cell fates.
 
 The Drosophila melanogaster testis provides an excellent model system for studying asymmetric stem cell division within the niche (Lehmann, 2012). Drosophila male germline stem cells (GSCs) attach to the hub, a major niche component that secretes the ligand, Unpaired (Upd). Upd binds to Domeless (Dome), a cytokine receptor homolog, leading to activation of the janus kinase-signal transducer and activator of transcription (JAK-STAT) pathway to specify GSC identity (Kiger et al., 2001; Tulina and Matunis, 2001) (Figure 1A). Within the context of this intercellular JAK-STAT self-renewal signaling, GSCs divide asymmetrically by orienting their mitotic spindle perpendicular to the hub (Yamashita et al., 2003; Yamashita et al., 2007) (Figure 1A). Spindle orientation is precisely prepared during interphase by stereotypical orientation of the mother and daughter centrosomes (Figure 1A). This spindle orientation allows one daughter of the GSC division to remain attached to the hub to self-renew, while the other is displaced away from the hub to initiate differentiation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig1-v2.jpg)
+
+**Figure 1.:** (A) Asymmetric GSC divisions. Stereotypical positioning of mother (red circle) and daughter (blue circle) centrosomes leads to spindle orientation that places the gonialblast (GB) away from the hub. (B) The definition of oriented/misoriented centrosomes/spindles. (C–E) Examples of centrosome orientation in control (C), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) (D), and nos-gal4ΔVP16, gal80ts > UAS-hopRNAi (4 d after RNAi induction) (E) GSCs (indicated by a white dotted line). Asterisk indicates the hub. Arrowheads indicate centrosomes. Green: Vasa (germ cells). Red: Fas III (hub cells) and γ-Tubulin (centrosome). Blue: DAPI. Bar: 5 µm. (F–H) Examples of spindles in control (F), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) (G), and nos-gal4ΔVP16, gal80ts > UAS-hopRNAi (4 d after RNAi induction) (H) GSCs (indicated by a white dotted line). Arrowheads indicate spindle poles. Green: Vasa. Red: Fas III and γ-Tubulin. White: Thr 3-phosphorylated histone H3 (PH3) (mitotic chromosomes). Blue: DAPI. Bar: 5 µm. (I) Summary of GSC centrosome/spindle misorientation in the indicated genotypes. P value comparing control and the indicated genotypes was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = GSC number scored for centrosome orientation or N = mitotic GSC number scored for spindle orientation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–E) Examples of Stat92E staining after 4 days at 29°C in control (A), upd-gal4, gal80ts > UAS-updRNAi (B), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (C), nos-gal4ΔVP16, gal80ts > UAS-hopRNAi (D), and nos-gal4ΔVP16, gal80ts > UAS-stat92ERNAi (E) testes. Asterisk indicates the hub. GSCs are indicated by dotted lines. Green: Vasa. Red: Stat92E. Bar: 5 μm. (F–J) Examples of apical tip after 10 days at 29°C in control (F), upd-gal4, gal80ts > UAS-updRNAi (G), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (H), nos-gal4ΔVP16, gal80ts > UAS-hopRNAi (I), and nos-gal4ΔVP16, gal80ts > UAS-stat92ERNAi (J) testes. Green: Vasa. Red: FasIII. DAPI: white. Bar: 5 μm.
+
 Here, we show that the receptor Dome plays dual roles in activating the JAK-STAT pathway for GSC self-renewal and orienting the GSC spindle to allow asymmetric stem cell division. We show that these two functions are entirely separable and the spindle orientation is mediated by Dome’s direct interaction with the microtubule regulator Eb1. Finally, we show that cytokine receptor-Eb1 interaction is evolutionarily conserved, with a mammalian cytokine receptor, Gp130, regulating the centrosome orientation toward a model immunological synapse. Taken together, we propose a novel mechanism by which a single receptor couples cell polarity with cell fate to ensure obligatory asymmetric division.
 
 ## Results
 
-## Niche ligand Upd and receptor Dome regulate spindle orientation during asymmetric divisions of the Drosophila male GSCs
+### Niche ligand Upd and receptor Dome regulate spindle orientation during asymmetric divisions of the Drosophila male GSCs
 
 To begin to address the potential role of the niche signaling in the oriented stem cell divisions in Drosophila GSCs, we first examined whether the JAK-STAT pathway components [upd (ligand), dome (receptor), hop (JAK kinase), stat92E (STAT)] might regulate GSC centrosome/spindle orientation in addition to their known role in supporting GSC self-renewal.
 
@@ -40,7 +48,7 @@ Because JAK-STAT components are essential for early development and GSC maintena
 
 These results indicate that upd and dome might regulate GSC centrosome/spindle orientation independent of the transcriptional network regulated by the JAK kinase and STAT transcription factor.
 
-## Function of Upd and Dome in GSC centrosome/spindle orientation is separable from their role in GSC self-renewal
+### Function of Upd and Dome in GSC centrosome/spindle orientation is separable from their role in GSC self-renewal
 
 Because the niche signaling is essential for the GSC self-renewal, above results that upd and dome are required for the GSC centrosome/spindle orientation may merely reflect that GSC identity is required for centrosome/spindle orientation. However, we disfavor this possibility, because hop and stat92E, which are equally essential for GSC identity, did not appear to be required for GSC centrosome/spindle orientation (Figure 1I).
 
@@ -48,33 +56,81 @@ We were able to separate the function of dome in GSC self-renewal and centrosome
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig2-v2.jpg)
 
-**Figure 2.:** hop significantly rescues GSC loss but not centrosome/spindle orientation caused by dome.RNAi(A–B) Examples of apical tip in nos-gal4 > UAS-dome (RNAiA) and hop, tum-1nos-gal4 > UAS- dome (RNAiB) testes. Double-headed arrows indicate the gap between the hub and nearest germ cells, showing GSC loss. Green: Vasa. Red: FasIII. Blue: DAPI. Bar: 5 μm. (C) GSC numbers in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. (D–E) Examples of spindles in control (D) and hop, tum-1nos-gal4 > UAS-dome (RNAiE) GSCs (indicated by a white dotted line). Asterisk indicates the hub. Arrowheads indicate spindle poles. Green: Vasa. Red: Fas III and γ-Tubulin. White: PH3. Blue: DAPI. Bar: 5 µm. (F) Summary of GSC centrosome/spindle misorientation in the indicated genotypes. P value comparing to control was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = GSC number scored for centrosome orientation or mitotic GSC number scored for spindle orientation.
+**Figure 2.:** (A–B) Examples of apical tip in nos-gal4 > UAS-domeRNAi (A) and hoptum-1, nos-gal4 > UAS- domeRNAi (B) testes. Double-headed arrows indicate the gap between the hub and nearest germ cells, showing GSC loss. Green: Vasa. Red: FasIII. Blue: DAPI. Bar: 5 μm. (C) GSC numbers in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. (D–E) Examples of spindles in control (D) and hoptum-1, nos-gal4 > UAS-domeRNAi (E) GSCs (indicated by a white dotted line). Asterisk indicates the hub. Arrowheads indicate spindle poles. Green: Vasa. Red: Fas III and γ-Tubulin. White: PH3. Blue: DAPI. Bar: 5 µm. (F) Summary of GSC centrosome/spindle misorientation in the indicated genotypes. P value comparing to control was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = GSC number scored for centrosome orientation or mitotic GSC number scored for spindle orientation.
 
 It should be noted that GSC centrosome misorientation does not normally lead to spindle misorientation due to a GSC-specific checkpoint mechanism, the centrosome orientation checkpoint (COC) (Cheng et al., 2008; Venkei and Yamashita, 2015). The COC monitors the correct centrosome orientation and prevents mitotic entry upon sensing centrosome misoreintation. The fact that updRNAi and domeRNAi lead to high frequency of spindle misorientation indicates that Upd and Dome are also required for COC, although the underlying mechanism remains elusive (see Discussion for more detail).
 
-## Dome localizes to the hub-GSC interface during interphase and translocates to the spindle during mitosis
+### Dome localizes to the hub-GSC interface during interphase and translocates to the spindle during mitosis
 
 To gain insights into the underlying mechanism by which Upd and Dome may regulate centrosome/spindle orientation, we examined the subcellular localization of Dome during GSC cell cycle. By using a specific anti-Dome antibody (Figure 3—figure supplement 1), we found that Dome localizes near the hub-GSC interface during interphase (Figure 3A), where centrosome is known to be anchored by microtubules (MTs) (Yamashita et al., 2007), implying that Dome might function in anchoring centrosomes to the hub-GSC interface. Dome localization at the hub-GSC interface was dependent on Upd (Figure 3D,G), indicating that Upd might guide the localization of Dome. Although Upd is a secreted ligand, it does not diffuse far after secretion (Harrison et al., 1998), thus locally concentrated Upd might instruct Dome localization in GSCs. Consistent with the idea that Upd directly guides Dome localization, expression of Upd from a single somatic cyst stem cell clone was sufficient to ectopically localize Dome in the neighboring GSCs (Figure 3I, n = 18 clones were examined).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig3-v2.jpg)
+
+**Figure 3.:** (A–F) Dome localization in control interphase (A), prophase (B), metaphase (C), upd-gal4, gal80ts > UAS-updRNAi (4 d after RNAi induction) interphase (D), prophase (E), and metaphase (F) GSCs. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Asterisk indicates the hub. (G–H) Pixel intensity analyses of Dome at interphase (G) and mitotic (H) GSCs in control or upd-gal4, gal80ts > UAS-updRNAi (4 d after RNAi induction) testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. (I) A GSC (inside the dotted blue line) adjacent to a Upd-expressing cyst stem cell clone (blue line) with ectopic Dome localization (arrowhead), in addition to normal Dome localization near the hub (arrow). Fly genotype: hs-flp, Act-FRT-stop-FRT-gal4 > UAS-GFP, UAS-upd.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Examples of Dome staining in control (A–B) and nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (C–D) testes. Asterisk indicates the hub. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Bar: 5 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Examples of Dome staining in control interphase (A), prophase (B) and metaphase (C) GSCs. (D–F) Examples of Dome staining in nos-gal4ΔVP16, gal80ts > UAS-hopRNAi interphase (D), prophase (E) and metaphase (F) GSCs. (G–I) Examples of Dome staining in nos-gal4ΔVP16, gal80ts > UAS-stat92ERNAi interphase (G), prophase (H) and metaphase (I) GSCs. Asterisk indicates the hub. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Bar: 5 μm.
 
 In mitosis, Dome translocated to the spindle (Figure 3B–C), which was also dependent on Upd (Figure 3E–F,H), again suggesting possible involvement of Dome in MT-dependent processes. Interestingly, although Dome localized to the mitotic spindle even in non-GSCs (i.e. gonialblasts (GBs) and spermatogonia (SGs)), it was not dependent on Upd in these cells (Figure 3H), indicating that Upd regulates Dome’s localization specifically in GSCs. Importantly, Dome localization was not affected in hopRNAi or stat92ERNAi (Figure 3—figure supplement 2), suggesting that only Upd, but not the JAK-STAT transcription network, is critical for Dome localization. Taken together, these results support the notion that Dome may directly regulate GSC centrosome/spindle orientation, possibly via its interaction to the cell cortex and/or MTs.
 
 These observations raised two critical questions. First, how does Dome, a transmembrane receptor, localize to spindle poles and spindles during mitosis? Second, how does Dome regulate GSC spindle orientation? These questions are addressed in the following sections.
 
-## Dome is endocytosed via early/recycling endosomes in regulating GSC spindle orientation
+### Dome is endocytosed via early/recycling endosomes in regulating GSC spindle orientation
 
 First, we addressed how Dome might translocate from the hub-GSC interface to the spindle. We hypothesized that Dome might be endocytosed to localize to the spindle. Indeed, previous reports have demonstrated that Dome can be trafficked through the endocytic pathway in several Drosophila cell lines and tissues (Devergne et al., 2007; Vidal et al., 2010). To determine the potential role of endocytic pathways in Dome localization in GSCs, we first examined potential colocalization of Dome with various endocytic Rab GTPases (nos-gal4 > UAS-YFP-rab). Obvious colocalization was observed between Dome and early endosomal marker Rab5 specifically in prophase (Figure 4A–C). Consistently, endogenous Rab5 was co-immunoprecipitated with Dome using Drosophila testes lysates enriched with GSCs, confirming their physical interaction (Figure 4D, nos-gal4 > UAS-dome-GFP, UAS-upd). In addition, a recycling endosome marker, Rab4, colocalized with Dome during prophase and physically interacted with Dome (Figure 4—figure supplement 1A,F). Rab8 showed weak colocalization during prophase, but clear physical interaction between Rab8 and Dome was detected (Figure 4—figure supplement 1C,H). A recycling endosome marker Rab11 showed colocalization with Dome at prophase, but physical interaction was barely detectable (Figure 4—figure supplement 1D,I). A late endosomal marker Rab7 and a recycling endosmal marker Rab35 showed no colocalization or physical interaction (Figure 4—figure supplement 1B,E,G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Dome localization in nos-gal4 > UAS-YFP-rab5 GSCs at interphase (A), prophase (B), metaphase (C). Green: YFP. Red: Dome. (D) Co-immunoprecipitation of Dome with Rab5. Dome-GFP was pulled down from GSC extracts using an anti-GFP antibody and blotted using anti-Rab5 and anti-GFP antibodies. (E–K) Examples of spindles in control (E), nos-gal4 > UAS-YFP-rab4DN (F), nos-gal4 > UAS-YFP-rab5DN (G), nos-gal4 > UAS-YFP-rab7DN (H), nos-gal4 > UAS-YFP-rab8DN (I), nos-gal4 > UAS-YFP-rab11DN (J), nos-gal4 > UAS-YFP-rab35DN (K) GSCs (indicated by a white dotted line). Asterisk indicates the hub. Arrowheads indicate spindle poles. Green: Vasa and PH3. Red: Fas III and γ-Tubulin. White: YFP. Blue: DAPI. Bar: 5 µm. (L) Summary of GSC centrosome/spindle misorientation in the indicated genotypes. P value comparing control and the indicated genotype was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = GSC number scored for centrosome orientation or N = mitotic GSC number scored for spindle orientation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–E) Dome localization in prophase of nos-gal4 > UAS-YFP-rab4 (A), nos-gal4 > UAS-YFP-rab7 (B), nos-gal4 > UAS-YFP-rab8 (C), nos-gal4 > UAS-YFP-rab11 (D), nos-gal4 > UAS-YFP-rab35 (E) GSCs. Green: YFP. Red: Dome. (F–I) Co-immunoprecipitations of Dome with Rab4 (F), Rab7 (G), Rab8 (H) and Rab11 (I). Dome-GFP was pulled down from GSC extracts using an anti-GFP antibody and blotted using anti-Rab4, 7, 8 or 11 and anti-GFP.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Examples of Dome staining in control interphase (A), prophase (B) and metaphase (C) GSCs. Asterisk indicates the hub. Green: Vasa. Red: Dome. (D–F) Examples of Dome staining in nos-gal4 > UAS-YFP-rab4DN interphase (D), prophase (E) and metaphase (F) GSCs. (G–I) Examples of Dome staining in nos-gal4 > UAS-YFP-rab5DN interphase (G), prophase (H) and metaphase (I) GSCs. Asterisk indicates the hub. Green: YFP. Red: Dome. Bar: 5 µm.
+
 These interactions between Dome and some endocytic components appear to be relevant, because expression of dominant-negative forms of Rab4, 5, 8, and 11 (nos-gal4 > UAS-YFP-rabDN) perturbed localization of Dome (Figure 4—figure supplement 2) and significantly increased centrosome/spindle misorientation (Figure 4E,F,G,I,J,L). Interestingly, expression of Rab4DN or Rab5DN led to perturbation of Dome localization even in interphase, implying that endocytosis is required for Dome localization even in interphase. In contrast, expression of Rab7DN or Rab35DN showed little effect (Figure 4H,K,L). These data suggest that internalization of Dome via endocytosis, which allows its localization with the spindle pole/spindle in mitosis, is critical for GSC centrosome/spindle orientation.
 
-## Dome interacts with Eb1 to regulate GSC centrosome/spindle orientation
+### Dome interacts with Eb1 to regulate GSC centrosome/spindle orientation
 
 We next explored how Dome might regulate GSC centrosome/spindle orientation. By searching the Drosophila Interactions Database (www.droidb.org), we found that Dome is reported to interact with Eb1 (Guruharsha et al., 2011), a major MT-binding protein (Akhmanova and Steinmetz, 2008). We confirmed that endogenous Eb1 co-immunoprecipitated with Dome in Drosophila testes lysates enriched with GSCs (Figure 5A, nos-gal4 > UAS-dome-GFP, UAS-upd).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig5-v2.jpg)
+
+**Figure 5.:** (A) Co-immunoprecipitation of Dome with Eb1. Dome-GFP was pulled down from GSC extracts using an anti-GFP antibody and blotted using anti-Eb1 and anti-GFP. (B–C) Examples of centrosomes in control (B) and nos-gal4 > UAS-eb1RNAi (C) GSCs (outlined by a dotted line). Asterisk indicates the hub. Arrowheads indicate centrosomes. Green: Vasa. Red: Fas III and γ-Tubulin. Blue: DAPI. Bar: 5 µm. (D–E) Examples of mitotic spindles in control (D) and nos-gal4 > UAS-eb1RNAi (E) GSCs (outlined by a dotted line). Asterisk indicates the hub. Arrowheads indicate spindle poles. Green: Vasa. Red: Fas III and γ-Tubulin. White: PH3. Blue: DAPI. Bar: 5 µm. (F) GSC spindle orientation in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = mitotic GSCs scored. (G–J) Eb1 localization in interphase control GSC (G), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) GSC (H), control GB (I), and nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) GB (J). Asterisk indicates the hub. Green: α-Tubulin. Red: Eb1. Bar: 5 µm. (K–N) Eb1 localization in metaphase control GSC (K), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) GSC (L), control GB (M), and nos-gal4ΔVP16, gal80ts > UAS domeRNAi (4 d after RNAi induction) GB (N). Asterisk indicates the hub. Green: α-Tubulin. Red: Eb1. Bar: 5 µm. (O–P) Pixel intensity analyses of Eb1 at interphase (O) and mitotic (P) GSCs in control and nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Dome localization in control interphase (A), control metaphase (B), nos-gal4 > UAS-eb1RNAi interphase (C), and nos-gal4 > UAS-eb1RNAi metaphase (D) GSCs. Asterisk indicates the hub. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Bar: 5 µm. (E–F) Dome localization in control (E) and nos-gal4 > UAS-eb1RNAi (F) GBs. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Bar: 5 µm. (G–H) Pixel intensity analyses of Dome in interphase (G) and mitotic (H) GSCs in control and nos-gal4 > UAS-eb1RNAi testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation.
+
 RNAi-mediated knockdown of eb1 (nos-gal4 > UAS-eb1RNAi) dramatically increased GSC centrosome/spindle misorientation (Figure 5B–F), suggesting that Eb1 is involved in GSC centrosome/spindle orientation. Eb1 localized to cytoplasm during interphase and to the spindle during mitosis in GSCs as well as in differentiating germ cells (GBs/SGs) (Figure 5G,I,K,M) as has been widely observed in a broad range of cell types (Rogers et al., 2002; Morrison et al., 1998). Interestingly, we found that Eb1 localization was dependent on dome specifically in GSCs, but not in GBs or SGs (Figure 5H,J,L,N,O,P), suggesting that the significance of Eb1-Dome interaction is specific to GSCs. Conversely, knockdown of eb1 (nos-gal4 > UAS-eb1RNAi) resulted in compromised localization of Dome in GSCs (Figure 5—figure supplement 1A–D,G,H), but not in GBs/SGs (Figure 5—figure supplement 1E–F), again showing that Eb1/Dome’s functional interdependence is likely specific to GSCs. Taken together, these results show that Dome and Eb1 interact with each other in GSCs to regulate centrosome/spindle orientation.
 
-## Dome interacts with Eb1 through SxIP motif in regulating GSC centrosome/spindle orientation
+### Dome interacts with Eb1 through SxIP motif in regulating GSC centrosome/spindle orientation
 
 Eb1 is known to interact with a number of plus-end tracking proteins (+TIP) at the ends of growing MTs (Akhmanova and Steinmetz, 2008). Many of these +TIPs are known to contain a short, hydrophobic sequence motif (SxI/LP) through which they bind Eb1 (Kumar and Wittmann, 2012; Honnappa et al., 2009). We found this motif (SQIP) in the intracellular domain of Dome (Figure 6A). Indeed, we found that the SQIP sequence is essential for Dome-Eb1 interaction: Dome cytoplasmic fragment (with or without SQIP sequence) tagged with 6xHis was expressed in bacteria, purified with Ni-NTA agarose beads, and incubated with GSC extract expressing Eb1-GFP (see Materials and ethods). Whereas wild type Dome cytoplasmic fragment pulled down Eb1-GFP, Dome cytoplasmic fragment without SQIP did not (Figure 6B). These results show that 1) Dome cytoplasmic fragment is sufficient to interact with Eb1, and 2) SQIP sequence is critical for interacting with Eb1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig6-v2.jpg)
+
+**Figure 6.:** (A) Domain organization of Dome. (B) His-tag pull-down of a 6xHis tagged cytoplasmic (C-terminal) domain of Dome (His-Dome or His-Dome∆SQIP), blotted for anti-GFP and anti-His antibodies. (C–F) Examples of Stat92E staining in control (C), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (4 d after RNAi induction) (D), nos-gal4 > UAS-dome-GFP, UAS-domeRNAi (E) and nos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi (F) testes. Asterisk indicates the hub. Green: Vasa. Red: Stat92E. Bar: 5 μm. (G) GSC numbers in control, nos-gal4 > UAS- domeRNAi, nos-gal4 > UAS-dome-GFP, UAS-domeRNAi and nos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. (H–J) Examples of centrosmes in control (H), nos-gal4 > UAS-dome-GFP, UAS-domeRNAi (I) and nos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi (J) GSCs (outlined by a dotted line). Asterisk indicates the hub. Arrowheads indicate centrosomes. Green: Vasa. Red: Fas III and γ-Tubulin. Blue: DAPI. Bar: 5 μm. (K–M) Examples of mitotic spindles in control (K), nos-gal4 > UAS-dome-GFP, UAS-domeRNAi (L) and nos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi (M) GSCs (outlined by a dotted line). Asterisk indicates the hub. Arrowheads indicate spindle poles. Green: Vasa and PH3. Red: Fas III and γ-Tubulin. Blue: DAPI. Bar: 5 μm. (N) GSC spindle orientation in control, nos-gal4 > UAS-dome-GFP, UAS-domeRNAi and nos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = total GSC number scored for centrosome orientation or mitotic GSCs number scored for spindle orientation. (O) Model: Eb1-mediated spindle orientation and JAK-STAT-mediated self-renewal are parallel pathways downstream of Upd and Dome.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Examples of testis apical tip in nos-gal4 > UAS-GFP-α-tub (A), and nos-gal4 > UAS-GFP-α-tub, UAS-domeRNAi (B) testes. Asterisk indicates the hub. Green: GFP. Red: FasIII and γ-Tub. Blue: DAPI. Bar: 5 μm. (C) GSC numbers in nos-gal4 > UAS-GFP-α-tub, nos-gal4 > UAS-GFP-α-tub, UAS-domeRNAi and nos-gal4 >UAS-domeRNAi testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. The results demonstrate that addition of a transgene (UAS-GFP-α-tub) does not reduce the efficiency of RNAi-mediated knockdown of dome. (D) GSC numbers in control, 2xnos-gal4 > UAS- dome-GFP, UAS-domeRNAi and 2xnos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi testes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. (E) Summary of GSC centrosome/spindle misorientation in control, 2xnos-gal4 > UAS-dome-GFP, UAS-domeRNAi and 2xnos-gal4 > UAS-dome∆SQIP-GFP, UAS-domeRNAi testes. P value comparing control and the indicated genotype was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = GSC number scored for centrosome orientation or mitotic GSC number scored for spindle orientation. The use of 2xnos-gal4 ensured that RNAi-mediated knockdown of dome was not weakened by addition of UAS-dome-GFP rescue constructs.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–H) Dome localization in control interphase (A), control metaphase (B), apc1Q8/Df(3R)3450 interphase (C), apc1Q8/Df(3R)3450 metaphase (D), apc2d40/apc2∆S interphase (E), apc2d40/apc2∆S metaphase (F), nos-gal4 > UAS-dCR4h interphase (G), and nos-gal4 > UAS-dCR4h metaphase (H) GSCs. Asterisk indicates the hub. Green: Vasa. Red: Dome. White: γ-Tubulin. Blue: DAPI. Bar: 5 µm. (I–N) Eb1 localization in control interphase (I), metaphase (J), apc1Q8/Df(3R)3450 interphase (K), apc1Q8/Df(3R)3450 metaphase (L), apc2d40/apc2∆S interphase (M), and apc2d40/apc2∆S metaphase (N) GSCs. Green: α-Tubulin. Red: Eb1. Bar: 5 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–D) Apc2 localization in control (A), upd-gal4, gal80ts > UAS updRNAi (B), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (C), and nos-gal4 > UAS-eb1RNAi (D) testes. Asterisk indicates the hub. Green: Apc2. Blue: DAPI. Bar: 5 µm. (E–G) Apc1 localization in control (E), nos-gal4ΔVP16, gal80ts > UAS-domeRNAi (F), and nos-gal4 > UAS-eb1RNAi (G) testes. Asterisk indicates the hub. Red: RFP-Apc1. Blue: DAPI. Bar: 5 µm. (H–I) E-cad-GFP (DEFL) localization in control (H) and nos-gal4 > UAS-domeRNAi (I) testes. Green: GFP. Blue: DAPI. Bar: 5 µm. (J) Model of spindle orientation by mostly parallel Upd-Dome-Eb1 and E-cad-Apc1-Apc2 pathways.
 
 To test the functionality of SQIP sequence in vivo, we combined domeRNAi with dome-GFP and dome∆SQIP-GFP constructs (nos-gal4 > UAS-domeRNAi, UAS-dome-GFP or nos-gal4 > UAS- domeRNAi, UAS-dome∆SQIP-GFP). These UAS-dome constructs were designed to be insensitive to RNAi-mediated knockdown such that their function can be tested in the absence of endogenous dome. Both UAS-dome-GFP and UAS-dome∆SQIP-GFP were fully capable of activating the JAK-STAT pathway as evidenced by upregulation of STAT in GSCs (Figure 6C–F), and supporting GSC self-renewal (Figure 6G). Despite its ability to effectively support GSC self-renewal, dome∆SQIP-GFP failed to orient centrosome/spindle (Figure 6H–N), demonstrating that the interaction between Dome and Eb1 via SQIP sequence is critical for GSC centrosome/spindle orientation, independent of GSC self-renewal.
 
@@ -82,17 +138,92 @@ To exclude the possibility that the apparent ‘rescue’ of domeRNAi by UAS-dom
 
 Collectively, the data shown here argue that Dome orients GSC centrosomes/spindles via its interaction with Eb1. Also, the ability of dome∆SQIP-GFP to fully rescue GSC loss due to domeRNAi, while failing to rescue GSC centrosome/spindle orientation, further strengthens the notion that Dome’s functions in self-renewal and centrosome/spindle orientation are separable (Figure 6O).
 
-## Dome-Eb1 axis of centrosome/spindle orientation is mostly independent of E-cadherin or Apc1/Apc2
+### Dome-Eb1 axis of centrosome/spindle orientation is mostly independent of E-cadherin or Apc1/Apc2
 
 We previously reported that Apc1 and Apc2 regulate spindle and centrosome orientation in GSCs (Yamashita et al., 2003). Apc2 is recruited to the hub-GSC interface via E-cadherin to orient centrosomes (Inaba et al., 2010). Because Apc proteins are known to interact with Eb1 (Su et al., 1995; Nakamura et al., 2001), we examined whether the Upd-Dome axis interacts with Apc1, Apc2 and E-cadherin. We found that Dome localization was not affected in apc1 or apc2 mutants (Figure 6—figure supplement 2A–F) or upon overexpression of dominant negative E-cadherin (Figure 6—figure supplement 2G–H). Conversely, localization of Eb1 was mostly unaffected under these conditions, except that Eb1 localization to the spindle was slightly compromised in apc2 mutants (Figure 6—figure supplement 2I–N). Similarly, the localization of Apc1, Apc2 and E-cadherin was unaffected in updRNAi, domeRNAi and eb1RNAi testes (Figure 6—figure supplement 3A–I). Although we were not able to test whether these two axes function cooperatively to ensure centrosome/spindle orientation due to inability to combine all genotypes required (temporarily controlled domeRNAi and homozygosity of apc1 or apc2), above results suggest that the Upd-Dome-Eb1 and E-cad-Apc2/Apc1 axes appear to operate mostly separately (Figure 6—figure supplement 3J).
 
-## Gp130 is required for orienting T cell centrosome at a model immunological synapse via interaction with Eb1 through SxI/LP motif
+### Gp130 is required for orienting T cell centrosome at a model immunological synapse via interaction with Eb1 through SxI/LP motif
 
 The above results show that a single receptor can integrate cell signaling (thus cell fate) and polarity. Such integration may play a critical role in achieving asymmetric cell divisions. Because cytokines/cytokine receptors are an evolutionarily conserved signaling module, we wondered whether our finding with Dome may hold true with other cytokine receptors. Indeed, we noticed that many cytokine receptors contain SxI/LP motifs, implying that their interaction with Eb1 may be widely conserved (Table 1). Gp130, the mammalian cytokine receptor with the highest homology to Dome, contains SYLP sequence in its cytoplasmic domain (Figure 7A). Gp130 plays a critical role in the differentiation and development of T cells via activation of the JAK-STAT signaling (Silver and Hunter, 2010). Immunological synapses formed between antigen-presenting cells and T-cells function as a signaling platform to facilitate T cell activation and proliferation (Martín-Cófreces et al., 2014). It is well-established that naïve T-cells orient their centrosomes toward the immunological synapse, leading to oriented cell division with respect to the antigen-presenting cell (Chang et al., 2007; Oliaro et al., 2010). This oriented division of naïve T-cells results in asymmetric division, generating memory and effector T cells (Arsenio et al., 2015).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/33685/elife-33685-fig7-v2.jpg)
 
 **Figure 7.:** (A) Domain organization of Gp130. (B–C) Examples of centrosome positioning (arrowheads) in control (B) and Gp130 siRNA (C) Jurkat cells. Red: Gp130. Green: anti-CD3 and γ-Tubulin. Blue: DAPI. Bar: 5 µm. (D) Centrosome orientation toward anti-CD3 beads in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = Jurkat cells scored. (E) Co-immunoprecipitation of Gp130 with Eb1. Control GFP, Gp130-GFP and Gp130∆SYLP-GFP was pulled down from Jurkat cell lysates using an anti-GFP antibody and blotted with anti-Eb1 and anti-GFP. (F–G) Examples of centrosome positioning (arrowheads) in Jurkat cells expressing Gp130-GFP; Gp130 siRNA (F) and Gp130∆SYLP-GFP; Gp130 siRNA (G). Red: γ-Tubulin. Green: anti-CD3. White, GFP. Blue: DAPI. Bar: 5 µm. (H) Summary of centrosome position relative to anti-CD3 beads in the indicated genotypes. P value was calculated using two-tailed Student’s t-test. Error bars indicate the standard deviation. N = Jurkat cells scored.
+
+**Table 1.**
+ The list of (S/T)x(I/L)P-containing cytokine receptors.All of these motifs are found in the cytoplasmic domain of the receptors. (S/T)x(I/L)P is underlined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>(S/T)x(I/L)P-containing sequence (position)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gp130(IL6RT)</td>
+      <td>ATDEGMPKSYLPQTVRQGGY (896-915)</td>
+    </tr>
+    <tr>
+      <td>IL12RB1</td>
+      <td>ERTEPLEKTELPEGAPELAL (627-646)</td>
+    </tr>
+    <tr>
+      <td>IL12RB2</td>
+      <td>IAEEKTQLPLDRLL (680-693), PACPWTVLPAGDLP (782-795)</td>
+    </tr>
+    <tr>
+      <td>IL23R</td>
+      <td>PSETIPEQTLLPDEFVSCLG (580-599)</td>
+    </tr>
+    <tr>
+      <td>IL2RG</td>
+      <td>YSERLCLVSEIPPKGGALGE (325-344)</td>
+    </tr>
+    <tr>
+      <td>IL11R</td>
+      <td>SPKPGFLASVIPVDRRPGAP (401-420)</td>
+    </tr>
+    <tr>
+      <td>IL7R</td>
+      <td>LLSLGTTNSTLPPPFS LQSG (405-424)</td>
+    </tr>
+    <tr>
+      <td>IL9R</td>
+      <td>QEGPGTRLPGNLSS (376-389), GGWHLSALPGNTQS (450-463)</td>
+    </tr>
+    <tr>
+      <td>IL4R</td>
+      <td>E PPRSPQSSHLPSSSPEHLG (660-679)</td>
+    </tr>
+    <tr>
+      <td>IL3RB</td>
+      <td>GPDTTPAASDLPTEQPPSPQ (559-578)</td>
+    </tr>
+    <tr>
+      <td>EPOR</td>
+      <td>PYSNPYENSLIPAAEPLPPS (484-503)</td>
+    </tr>
+    <tr>
+      <td>GHR</td>
+      <td>PQGLILNATALPLPDKEFLS (604-623)</td>
+    </tr>
+    <tr>
+      <td>PRLR</td>
+      <td>KVNKDGALSLLPKQRENSGK (514-533)</td>
+    </tr>
+    <tr>
+      <td>TPOR</td>
+      <td>ILPKSSERTPLPLCSSQAQM (570-589)</td>
+    </tr>
+    <tr>
+      <td>CNTFR</td>
+      <td>CSWHLPTPTYIPNTFNVTVL (127-146)</td>
+    </tr>
+  </tbody>
+</table>
 
 By using the Jurkat T-cell line and anti-CD3 coated beads as a model, we examined a possible role of Gp130 in centrosome orientation at the immunological synapses. Anti-CD3 coated beads have been successfully used to activate T cells through the formation of the model immunological synapses (Tsun et al., 2011; Huppa and Davis, 2003). We confirmed that Jurkat cells orient their centrosomes toward the beads upon binding and found that Gp130 was concentrated toward the bead (Figure 7B). Strikingly, siRNA-mediated knockdown of Gp130 dramatically reduced centrosome orientation toward the bead (Figure 7C–D), suggesting that Gp130 is required for correct centrosome orientation at the immunological synapse.
 
@@ -114,7 +245,7 @@ In summary, our study demonstrates that a single receptor regulates cell fate an
 
 ## Materials and methods
 
-## Fly husbandry, strains and transgenic flies
+### Fly husbandry, strains and transgenic flies
 
 All fly stocks were raised on standard Bloomington medium at 25°C, and young flies (0- to 1-day-old adults) were used for all experiments unless otherwise noted. The following fly stocks were used: nos-gal4 (Van Doren et al., 1998), UAS-upd (Zeidler et al., 1999), tub-gal80ts (McguireMcGuire et al., 2003), UAS-dome-EGFP (Ghiglione et al., 2002), apc2d40/TM3, apc2ΔS/TM6b, apc1Q8 and Df(3R)3450 (Yamashita et al., 2003) (obtained from Bloomington Drosophila Stock Center (BDSC)), hoptum-1 (Corwin and Hanratty, 1976), stat92E06346 (Hou et al., 1996), stat92EF (Baksa et al., 2002), UAS-updRNAi (P{GD1158}v3282 from Vienna Drosophila RNAi Center), UAS-domeRNAi (TRiP.HMS00647, TRiP.HMS01293, BDSC), UAS-hopRNAi (TRiP.HMS00761, BDSC), UAS-stat92ERNAi (TRiP.HMS00035, BDSC), UAS-eb1RNAi (TRiP.GL00559, BDSC), nos-gal4 without VP16 (nos-gal4ΔVP16) (Inaba et al., 2015a), hs-FLP, nos > stop > gal4 UAS-eGFP/CyO (Salzmann et al., 2013). hs-FLP, UAS-GFP Act-FRT-stop-FRT-gal4, UAS-DEFL, UAS-dCR4h and UAS-GFP-Apc2 (Inaba et al., 2010), UAS-RFP-Apc1 (Mattie et al., 2010), upd-gal4 (Flybase; http://flybase.org/reports/FBti0002638.html). Transgenic flies carrying wild-type and dominant negative (DN) variants of UAS-YFP-rab4, UAS-YFP-rab5, UAS-YFP-rab7, UAS-YFP-rab8, UAS-YFP-rab11, and UAS-YFP-rab35 were obtained from Bloomington Stock Center and have been described previously (Zhang et al., 2007).
 
@@ -122,7 +253,7 @@ For the construction of UAS-dome∆SQIP-GFP, a plasmid encoding pMAT-dome∆SQIP
 
 For construction of 6xHis-tagged Dome cytoplasmic domain, Dome cytoplasmic domain was amplified by PCR from full-length cDNA (LD46805) (Drosophila Genomics Resource Center) using the following primers: 5’-gtagaattcggtctagtgctgccgcag-3’ and 5’-gtactcgagttagaggacgtgccgattgtg-3’. The PCR product was cloned into EcoRI/XhoI sites of pET28a with an N-terminal 6xHis tag, yielding pET28a-6xHis-DomeC plasmid. The dome cytoplasmic fragment without the SQIP sequence was generated by site-specific deletion of SQIP sequence from pET28a-6xHis-DomeC plasmid using the following primers: 5’-ctcagcggctacgtgcc-3’ and 5’-cagcggctgggacatcg-3’.
 
-## Cell culture, siRNA transfection, and retrovirus infection of Jurkat cells with Gp130-GFP constructs
+### Cell culture, siRNA transfection, and retrovirus infection of Jurkat cells with Gp130-GFP constructs
 
 A human T cell line Jurkat cells (obtained from Malini Raghavan, University of Michigan, authenticated by ATCC and determined to be mycoplasma-negative prior to use) were grown in RPMI1640 media (Life Technologies, Carlsbad, CA) supplemented with 2 μM L-glutamine in a 37°C humidified incubator at 5% CO2. BOSC cells (obtained from Malini Raghavan, University of Michigan, authenticated by ATCC and determined to be mycoplasma-negative prior to use) were grown in DMEM media (Life Technologies). Culture media were supplemented with 10% fetal calf serum, and 100 U/mL penicillin and streptomycin (Life Technologies). siRNA transfections were performed using electroporation as described previously (Jordan et al., 2008). For all siRNA experiments, the siRNAs were transfected at a final concentration of 20 nM. Seventy-two hours after initial transfection, cells were harvested and used for experiments.
 
@@ -130,7 +261,7 @@ For generation of Gp130 constructs, the coding sequence of Gp130 (Dharmacon) wit
 
 Retrovirus was produced by transient transfection of BOSC cells (Rizvi et al., 2014). The Jurkat cells were infected with retroviruses encoding GFP, Gp130-GFP or Gp130∆SQIP-GFP. Then, 1 mg/mL G418 (Life Technologies) was added for drug selection to establish stable cell lines and maintained with 0.5 mg/mL G418.
 
-## Immunofluorescent staining and confocal microscopy
+### Immunofluorescent staining and confocal microscopy
 
 Drosophila testes were dissected in phosphate-buffered saline (PBS), transferred to 4% formaldehyde in PBS and fixed for 30 min. The testes were then washed in PBST (PBS containing 0.1% Triton X-100) for at least 30 min, followed by incubation with primary antibody in 3% bovine serum albumin (BSA) in PBST at 4°C overnight. Samples were washed for 60 min (three 20 min washes) in PBST, incubated with secondary antibody in 3% BSA in PBST at 4°C overnight, washed as above, and mounted in VECTASHIELD with 4',6-diamidino-2-phenylindole (DAPI; Vector Labs, Burlingame, CA). For Eb1 staining, Drosophila testes were fixed in 4% formaldehyde in methanol (pre-chilled at −20°C) for 10 min. The testes were then washed in PBST for 60 min and blocked in 3% bovine serum albumin (BSA) for 60 min, followed by antibody staining and mounting as described above.
 
@@ -140,7 +271,7 @@ The primary antibodies used were as follows: mouse anti-Fasciclin III [1:20; dev
 
 Correct centrosome orientation was defined as at least one centrosome being closely associated with the hub-GSC junction or the bead-Jurkat cell interface. Correct spindle orientation was defined as one spindle pole being juxtaposed to the hub-GSC junction in mitosis. Conversely, misoriented centrosomes/spindles are defined as neither of centrosomes/spindle poles being near the hub-GSC junction. Based on these criteria, orientation was scored as binary outcomes (oriented or misoriented).
 
-## Co-immunoprecipitation, His-tag pull down and western blotting
+### Co-immunoprecipitation, His-tag pull down and western blotting
 
 For immunoprecipitation using Drosophila testis lysate, testes enriched with GSCs due to ectopic Upd expression (100 pairs/sample) were dissected into PBS at room temperature within 30 min. Testes were then homogenized and solubilized with lysis buffer (10 mM Tris-HCl pH 7.5; 150 mM NaCl; 0.5 mM EDTA supplemented with 0.5% NP40 and protease inhibitor cocktail (EDTA-free, Roche, Switzerland)) for 30 min at 4°C. For immunoprecipitation using Jurkat cell lysates, cell lysates (2 × 107 cells/sample) were prepared in PBS with 2% Trition X-100, 150 mM NaCl, 50 mM Tris-HCl, pH 8.0, 1 mM MgCl2 and protease inhibitor cocktail. Testes or Jurkat cell lysates were centrifuged at 13,000 rpm for 15 min at 4°C using a table centrifuge, and the supernatants were incubated with GFP-Trap magnetic agarose beads (ChromoTek, Germany) for 4 hr at 4°C. The beads were washed three times with wash buffer (10 mM Tris-HCl pH 7.5; 150 mM NaCl; 0.5 mM EDTA). Bound proteins were resolved in SDS-PAGE and analyzed by western blotting.
 
@@ -148,6 +279,6 @@ For His-tag pull-down assays, 6xHis-tagged Dome fragments (with or without SQIP)
 
 For western blotting, samples subjected to SDS-PAGE (NuPAGE Bis-Tris gels (8%; Invitrogen, Carlsbad, CA)) were transferred onto polyvinylidene fluoride (PVDF) membranes (Immobilon-P; Millipore). Membranes were blocked in PBS containing 5% nonfat milk and 0.1% Tween-20, followed by incubation with primary antibodies diluted in PBS containing 5% nonfat milk and 0.1% Tween-20. Membranes were washed with PBS containing 5% nonfat milk and 0.1% Tween-20, followed by incubation with secondary antibody. After washing with PBS, detection was performed using an enhanced chemiluminescence system (Amersham, UK). Primary antibodies used were rabbit anti-GFP (abcam; 1:4000), mouse anti-His tag (Pierce; 1:2000), rabbit anti-Rab4 (a gift from Victor Hatini; 1:2000) (de Madrid et al., 2015), rabbit anti-Rab7 (a gift from Akira Nakamura; 1:4000) (Tanaka and Nakamura, 2008), rabbit anti-Rab11 (a gift from Akira Nakamura; 1:4000), rabbit anti-Rab5 (abcam; 1:4000), mouse anti-Rab8 (BD Biosciences; 1:4000), rabbit anti-Eb1 (a gift from Stephen Rogers; 1:4000), mouse anti-Eb1 (Santa Cruz Biotechnology; 1:1000). Secondary antibodies used were goat anti-mouse IgG and goat anti-rabbit IgG conjugated with horseradish peroxidase (HRP) (abcam; 1:5000).
 
-## Data analyses
+### Data analyses
 
 Statistical analysis was performed using GraphPad Prism seven software. For centrosome and spindle orientation scoring, 300 GSCs were scored for centrosome misorientation, and >25 mitotic GSCs were scored for spindle misorientation. Centrosome misorientation referred to no close association of neither of the two centrosomes with the hub-GSC inteface during interphase. Spindle misorientation referred to no close association of neither of the two spindle poles with the hub-GSC inteface during mitosis. For GSC number quantification, 300 GSCs were scored. Data are shown as means ± standard deviation. The P-value (two-tailed Student’s t-test) is provided for comparison with the control. Pixel intensity analysis was performed by manually drawing regions of interest in ImageJ and background intensity was subtracted from each value.

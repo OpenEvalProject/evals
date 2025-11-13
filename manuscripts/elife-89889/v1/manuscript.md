@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01s434164 Center for Dementia Research, The Nathan Kline Institute for Psychiatric Research Orangeburg United States
-2. https://ror.org/0190ak572 Department of Neuroscience and Physiology, New York University Grossman School of Medicine New York United States
-3. https://ror.org/0190ak572 Departments of Child and Adolescent Psychiatry, New York University Grossman School of Medicine New York United States
-4. https://ror.org/0190ak572 Department of Psychiatry, New York University Grossman School of Medicine New York United States
-5. https://ror.org/0190ak572 NYU Neuroscience Institute, New York University Grossman School of Medicine New York United States
+1. Center for Dementia Research, The Nathan Kline Institute for Psychiatric Research Orangeburg United States ([ROR:01s434164](https://ror.org/01s434164))
+2. Department of Neuroscience and Physiology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Departments of Child and Adolescent Psychiatry, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. Department of Psychiatry, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+5. NYU Neuroscience Institute, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -43,27 +43,51 @@ We also asked whether behavior would improve if MCS reduced IIS frequency in Tg2
 
 We fed dams one of three diets, which were relatively low, intermediate, or high in choline (Figure 1A; Supplementary file 1). The high choline diet provided levels of choline similar to other studies of MCS in rodents (Meck et al., 1988; Loy et al., 1991; Holler et al., 1996; Meck and Williams, 1999; Sandstrom et al., 2002; Mellott et al., 2004; Glenn et al., 2012; Kelley et al., 2019). After weaning, the intermediate diet was used. Offspring were implanted with electrodes for EEG at 1 month of age, and 24 hr-long recordings were made every month shortly thereafter and ending at 6 months of age.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig1-v1.jpg)
+
+**Figure 1.:** (A) Experimental timeline. Dams were fed one of three diets for mating, gestation, and offspring that consumed the diet until weaning. At 1 month old, offspring were implanted with electrodes for EEG. Recordings for 24 hr started 1 week later (5 weeks old; 1.2 months old in the graphs). Additional recordings were made at 2, 3, 4, 5, and 6 months of age. At 3 and 6 months of age, behavior was tested, mice were perfused, brains were sectioned, and sections were processed with antibodies against NeuN and ∆FosB. (B) Prior to NOL or NOR, animals were acclimated to the testing arena. There were three acclimation sessions separated by 24 hr during which animals were allowed to freely explore for 5 min. (C) In the NOL task, animals were placed in a cage with two identical objects and allowed to freely explore for 5 min (Training). After 1 hr, they were brought back to the cage, where one object was displaced, and allowed to freely explore for 5 min (Testing). (D) In the NOR task. animals were placed in a cage with two identical objects and allowed to freely explore for 5 min (Training). After 1 hr, they were brought back to the cage, where one object was replaced, and allowed to freely explore for 5 min (Testing).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A standard mouse cage is diagrammed, with the locations of objects inside it. For novel object location (NOL), there were two pineapple-like objects and one was moved across the cage for the test session. For the novel object recognition (NOR) test session, one pineapple-like object was removed and an object made of LEGO was placed in the location where the original pineapple-like object had been.
+
 The time span (1–6 months of age) is relevant because IIS are present at these ages (Bezzina et al., 2015; Kam et al., 2016; Lisgaras and Scharfman, 2023). The novel object location (NOL) task is impaired also (at 3–4 months of age in Tg2576 mice [Duffy et al., 2015]), so we evaluated NOL at 3 months. We also tested a related task, novel object recognition (NOR [Vogel-Ciernia and Wood, 2014]). To understand the persistence of any effects of the diets, we repeated NOL and NOR at 6 months. The interval between testing was sufficiently long that it is unlikely that testing at 3 months affected testing at 6 months, but we cannot exclude the possibility. At 6 months of age, we perfusion-fixed mice, sectioned the brains, and evaluated NeuN and ΔFosB protein expression. NeuN was studied because it is a neuronal marker that is reduced in numerous pathological conditions (Buckingham et al., 2008; Kadriu et al., 2009; Matsuda et al., 2009; Duffy et al., 2011; Duffy et al., 2015). We also assayed ΔFosB because it can be used to assay neuronal activity and therefore is complementary to EEG recordings. It also can be used to assess hyperexcitability of GCs.
 
 The results showed a remarkable effect of the high choline diet. IIS and spatial memory were improved, as was NeuN and ΔFosB expression. Interestingly, the relatively low choline diet had mixed effects, reducing IIS frequency, but making NOL, ΔFosB, and NeuN worse. The mice also died prematurely relative to mice that were fed the high choline diet. We also report for the first time that there is loss of NeuN-ir in the DG hilus of Tg2576 mice, which is important because abnormal hilar neurons could cause GC hyperexcitability (Sperk et al., 2007; Scharfman and Myers, 2012). In summary, we make a strong argument for choline supplementation in early life to improve outcomes in an AD model, especially the DG.
 
 ## Results
 
-## Approach
+### Approach
 
 As shown in Figure 1A, animals were implanted with electrodes at 1 month of age and recorded for a continuous 24 hr-long period at 5 weeks, 2, 3, 4, 5, and 6 months of age. At 3 and 6 months of age, mice were tested for NOL and NOR. Afterward, they were perfused and immunocytochemistry was conducted for NeuN and ΔFosB. Sections were made in the coronal plane and relatively anterior and posterior levels were compared to sample different parts of hippocampus. Some mice were not possible to include in all assays either because they died before reaching 6 months or for other reasons.
 
-## Behavior
+### Behavior
 
 NOL and the NOR were selected because they show deficits in Tg2576 mice at just 3 months of age (Duffy et al., 2015). This is before deficits have been shown in other tasks (i.e., Morris Water Maze, Radial Arm Water Maze, Y-Maze) which occur after 9 months of age (Yassine et al., 2013; Wolf et al., 2016). Figure 1B–D (see also Figure 1—figure supplement 1) shows a schematic of the specific experimental procedures for NOL and NOR.
 
-## Novel object location
+#### Novel object location
 
 The results of the NOL task are presented in Figure 2, Figure 3, Figure 4. In Figure 2, lines connect the data for a given animal in training and testing. Data are the time spent exploring the objects. Exploration of the object that is moved in the training session (the novel object) is expressed as a percentage of the total exploration time of both objects. When the slope of the line increases between training and testing, the time spent exploring the moved object increased in testing relative to training. This increase reflects a preference to explore the moved object during the testing period and suggests the mouse can recall the old object locations and can recognize the new object location. Figure 2—figure supplement 1 shows the data with mean ± sem.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig2-v1.jpg)
+
+**Figure 2.:** (A) Three months-old mice. For (A) and (B), breeders were fed the specified diet and offspring were tested. 1. Low choline diet. WT and Tg2576 offspring showed spatial memory deficits. 2. Intermediate diet. Tg2576 showed spatial memory deficits but not WT. 3. High choline diet. Spatial memory was improved. (B) Six months-old mice. 1. Low choline diet. WT and Tg2576 offspring showed spatial memory deficits. 2. Intermediate diet. WT and Tg2576 mice showed spatial memory deficits. 3. High choline diet. WT and Tg2576 mice had improved spatial memory.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Survival curves are shown for mice fed the low choline diet and mice fed the high choline diet. The mice fed the high choline diet had a significantly less severe survival curve. (B) Left: a photo of a mouse after sudden unexplained death. The mouse was found in a posture consistent with death during a convulsive seizure. The area surrounded by the red box is expanded below to show the outstretched hindlimb (red arrow), consistent with a convulsive seizure. Right: a photo of a mouse that did not die suddenly. The area surrounded by the box is expanded below to show that the hindlimb is not outstretched.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig3-v1.jpg)
 
 **Figure 3.:** (A) Results are shown for 3 months-old WT and Tg2576 mice based on the discrimination index. 1. Mice fed the low choline diet showed object location memory only in WT. 2. Mice fed the intermediate diet showed object location memory only in WT. 3. Mice fed the high choline diet showed memory both for WT and Tg2576 mice. Therefore, the high choline diet improved memory in Tg2576 mice. (B) The results for 6 months-old mice are shown. 1–2. There was no significant diference between training and testing demonstrated by mice that were fed the low or intermediate choline diet. 3. Mice fed a diet enriched in choline showed significant differences between training and testing whether they were WT or Tg2576 mice. Therefore, choline enrichment improved task performance in all mice.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig4-v1.jpg)
+
+**Figure 4.:** (A) Three months-old mice. 1–3. WT and Tg2576 mice performed the novel object recognition (NOR) task. (B) Six months-old mice. 1–3. WT and Tg2576 mice performed the NOR task.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig4-figsupp1-v1.jpg)
 
 An important foundation for this task is equal preference for the objects during training. The lack of preference reflects no inherent bias for one object vs. the other. We confirmed the lack of bias for each genotype and each diet during training. To conduct statistics, we first conducted a two-way ANOVA based on the training data with genotype or age (3 or 6 months) as factors. There were no effects of genotype (F(1,97) = 0.40, p=0.530) or age (F(1,70) = 1.94, p=0.167) on object exploration time. Then, we conducted a two-way ANOVA to ask whether diet played a role. The main factors were diet and age, and there also was no effect of diet (F(2,97) = 0.06, p=0.941) or age (F(2,70) = 2.94, p=0.058) on object exploration time. Thus, novel object exploration during training approached 50% in all treatment groups, independent of genotype and maternal diet, and at both ages.
 
@@ -81,7 +105,7 @@ The discrimination indices of 6 months-old mice led to the same conclusions as t
 
 Taken together, these results demonstrate the lasting beneficial effects of the high choline diet and adverse effects of low choline on offspring in a spatial memory task in Tg2576 as well as WT littermates.
 
-## Novel object recognition
+#### Novel object recognition
 
 We first confirmed that animals did not show preference for one object over the other in training. Indeed, a two-way ANOVA revealed no main effects of genotype at 3 months (F(1,71) = 2.59, p=0.536) and no effect of diet (F(2,71) = 0.22, p=0.809). The same result was obtained at 6 months of age (genotype, F(1,66) = 0.11, p=0.746; diet, F(2,66) = 0.98, p=0.376). Thus, novel object exploration during training approached 50% in all treatment groups, independent of genotype and maternal diet, and at both ages.
 
@@ -91,7 +115,7 @@ Figure 4B shows the data for 6 months of age. Animals that received the low chol
 
 Thus, at both 3 and 6 months of age, WT and Tg2576 mice performed well in the NOR task. These results suggest that young Tg2576 mice are less sensitive to NOR than NOL. The greater sensitivity to NOL is consistent with past demonstrations that the DG contributes to NOL (Sahay et al., 2011; Kesner et al., 2015; Spyrka and Hess, 2018; Vandrey et al., 2020; Gulmez Karaca et al., 2021; GoodSmith et al., 2022). Also, our implementation of NOL may have increased the DG dependence of the task by making the object locations relatively close together because in studies by Pofahl and colleagues it was shown that distances between objects like those we used made NOL DG-dependent (Pofahl et al., 2021).
 
-## Exploration time
+#### Exploration time
 
 Total object exploration (TOE) was measured to address any effects of genotype or diet on the total duration of exploration of objects (Figure 5). For NOL TOE at 3 months of age, there were effects of genotype (F(1,67) = 6.89, p=0.01) but not diet (F(2,87) = 0.67, p=0.63). Tukey–Kramer post hoc tests showed that Tg2576 mice fed the low choline diet showed more exploration than WT mice fed the same diet but the effect was on the border of significance (p=0.049; data not shown). Three months-old mice tested with NOR showed no significant effect of genotype (F(1,76) = 1.35, p=0.25) or diet (F(2,76) = 0.30, p=0.61). Since there were weak or no effects of genotype, all genotypes are pooled for Figure 5A1 (NOL) and Figure 5B1 (NOR).
 
@@ -107,9 +131,9 @@ To gain insight into the potential reason for the effect of diet on exploration 
 
 Taken together, the results indicate that, in 6 months-old mice, animals that received the high choline diet spent more time with objects at each approach. This could explain the increased object memory in high choline-treated mice because there would be more time for information processing during an approach. Another possibility is that as Tg2576 mice age they show compensatory changes that enhance memory. This has been suggested for procedural learning (Middei et al., 2004) but, to the best of our knowledge, it has not been shown for memory of objects. A third possibility is that the high choline diet reduces anxiety (Glenn et al., 2012; Langley et al., 2015; McCall et al., 2015). Reduced anxiety may lessen fear of exploring objects, and as a result, animals may spend more time with objects.
 
-## Anatomy
+### Anatomy
 
-## NeuN
+#### NeuN
 
 To further analyze the effects of dietary choline early in life, we used an antibody against a neuronal nuclear antigen, NeuN. Previous studies have found that reduced expression of NeuN often occurs in neurons after insults or injury (e.g., ischemia, toxicity, and even aging; Lind et al., 2005; Portiansky et al., 2006; Buckingham et al., 2008; Kadriu et al., 2009; Matsuda et al., 2009; Won et al., 2009; Duffy et al., 2011). For example, when NeuN is reduced after a heterozygous deletion in ankyrin-rich membrane spanning kinase D-interacting substrate of 220K, ARMS/Kidins, a protein critical to neurotrophin signaling, neurons in the entorhinal cortex demonstrate loss of NeuN immunoreactivity (ir) and the cellular morphology is abnormal (Duffy et al., 2011; Duffy et al., 2015). NeuN is also reduced when Aβ levels are elevated (Wu et al., 2016) and NeuN is reduced in AD patients (Camporez et al., 2021). Therefore, we initially examined NeuN-ir in Tg2576 mice. We found it was reduced and then asked if the high choline diet could restore it.
 
@@ -121,7 +145,7 @@ As shown in Figure 6A, relatively weak NeuN-ir was observed in Tg2576 that recei
 
 To ask if the improvement in NeuN after the high choline diet in Tg2576 restored NeuN to WT levels, we used WT mice. The WT mice were fed the intermediate diet because it is the standard mouse chow, and this group was intended to reflect normal mice. For the analysis, we used a one-way ANOVA with four groups: low choline Tg2576, intermediate Tg2576, high choline Tg2576, and intermediate WT (Figure 5C). Tukey–Kramer multiple comparisons tests were used as the post hoc tests. The results showed a significant group difference for anterior DG (F(3,25) = 9.20; p=0.0003; Figure 5C1) but not posterior DG (F(3,28) = 0.867; p=0.450; Figure 5C2). Regarding the anterior DG, there were more NeuN-ir cells in high choline-treated mice than both low choline (p=0.046) and intermediate choline-treated Tg2576 mice (p=0.003). WT mice had more NeuN-ir cells than Tg2576 mice fed the low (p=0.011) or intermediate diet (p=0.003). Tg2576 mice that were fed the high choline diet were not significantly different from WT (p=0.827). Thus, we found reduced hilar NeuN in Tg2576 mice and the high choline diet increased NeuN protein expression to WT levels.
 
-## ∆FosB
+#### ∆FosB
 
 To complement the information from the video-electroencephalographic recordings (video-EEG) (see below), we used a marker of elevated neuronal activity, ∆FosB (Figure 7). ∆FosB is a truncated variant of the transcription factor FosB, which is increased by enhanced neuronal activity; ∆FosB has a half-life of approximately 8 days (Ulery-Reynolds et al., 2009), so when ∆FosB is elevated, it reflects increased neuronal activity over the last 10–14 days (McClung et al., 2004). Previous studies have shown that when the J20 mouse model of AD is examined with an antibody to ∆FosB, the GC layer shows extremely high levels of ∆FosB expression (Corbett et al., 2017), similar to a mouse with chronic spontaneous seizures (Morris et al., 2000). This is not surprising since the J20 mice have recurrent seizures (Palop et al., 2007). Therefore, we asked if Tg2576 mice would have robust ∆FosB in the GC layer, and choline supplementation would reduce it. We also included WT mice fed the intermediate (standard) diet. These WT mice would allow us to address the possibility that the high choline diet restored ΔFosB back to normal.
 
@@ -133,19 +157,31 @@ There was strong expression of ∆FosB in Tg2576 GCs in mice fed the low choline
 
 ∆FosB quantification was repeated with a lower threshold to define ∆FosB-ir GCs (see ‘Methods’) and results were the same (Figure 7D). Two-way ANOVA showed a significant effect of group (F(3,32) = 14.28, p<0.0001) and location (F(1,32) = 7.07, p=0.012) for anterior DG but not posterior DG (Figure 7D). For anterior sections, Tukey–Kramer post hoc tests showed that low choline mice had greater ΔFosB-ir than high choline mice (p=0.002) and WT mice (p=0.005) but not Tg2576 mice fed the intermediate diet (p=0.275; Figure 7D1). Mice fed the high choline diet were not significantly different from WT (p=0.993; Figure 7D1). These data suggest that high choline in the diet early in life can reduce neuronal activity of GCs in offspring later in life. In addition, low choline has an opposite effect, suggesting low choline in early life has adverse effects.
 
-## Interictal spikes
+### Interictal spikes
 
 Previous research has shown that Tg2576 mice exhibit IIS (Figure 8A) starting at very young ages: 4 weeks (Kam et al., 2016) or 6 weeks (Bezzina et al., 2015). Therefore, we performed video-EEG using cortical (left frontal cortex, right occipital cortex) and hippocampal (left and right) electrodes in WT and Tg2576 mice (Figure 8B and C). Animals were recorded for 24 hr each session so that the major behavioral states (exploration, awake rest, and sleep) were sampled well. Consistent with previous studies (Bezzina et al., 2015; Kam et al., 2016), we observed IIS in Tg2576 mice but not WT littermates. Therefore, analyses below were only in Tg2576 mice.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig8-v1.jpg)
+
+**Figure 8.:** (A) 1. Representative example of an IIS (red arrow). IIS were defined as occurring in all four channels (generalized) to distinguish them from focal spikes that can often be artifact. 2–4. The IIS shown in A1 is expanded. (B) 1. Scatter plot of IIS frequency at each age of recording. 2. Means and sem are plotted. The high choline diet group had fewer IIS than the intermediate diet group at ages 1–3 months ($, p<0.05) and the low choline group had less IIS than the intermediate diet at ages 1–4 months (@, p<0.05). The high and low choline diet groups were significantly different at ages 3 and 4 months (*, p<0.05).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative EEG traces recorded from electrodes implanted in the skull over the left frontal cortex, right occipital cortex, left hippocampus (Hippo), and right hippocampus during a spontaneous seizure in a 5 months-old Tg2576 mouse. Arrows point to the start (green arrow) and end of the seizure (red arrow), and postictal depression (blue arrow). (B) IIS frequency was quantified from continuous video-EEG for mice that had a spontaneous seizure during the recording period and mice that did not. IIS frequency is plotted for three consecutive days, starting with the day before the seizure (designated as day 1), and ending with the day after the seizure (day 3). A two-way RMANOVA was conducted with the day and group (mice with or without a seizure) as main factors. There was a significant effect of day (F(2,4) = 46.95, p=0.002) and group (seizure vs. no seizure; F(1,2) = 46.01, p=0.021) and an interaction of factors (F(2,4) = 46.68, p=0.002).Tukey–Kramer post hoc tests showed that mice with a seizure had significantly greater IIS frequencies than mice without a seizure for every day (day 1, p=0.0005; day 2, p=0.0001; day 3, p=0.001). For mice with a seizure, IIS frequency was higher on the day of the seizure than the day before (p=0.037) or after (p=0.010). For mice without a seizure, there were no significant differences in IIS frequency for day 1, 2, or 3. These data are similar to prior work showing that from one day to the next mice without seizures have similar IIS frequencies (Kam et al., 2016).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/89889/elife-89889-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) IIS frequency was compared for females and males at 1.2 months (1), 2 months (2), and 3 months (3). Two-way ANOVA was used to analyze the effects of sex and diet. Female and male Tg2576 mice were not significantly different. (B) Mice were pooled at 1.2 and 2 months (1), 3 and 4 months (2), and 5 and 6 months (3). Two-way ANOVA analyzed the effects of sex and diet. There were significant effects of diet for (1) and (2) but not (3). There were no effects of sex at any age. 1. There were significant effects of diet (F(2,47) = 46.21, p<0.0001) but not sex (F(1,47) = 0.11, p=0.746). Female and male mice fed the low choline diet or high choline diet were significantly different from female and male mice fed the intermediate diet (all p<0.05, asterisk). 2. There were significant effects of diet (F(2,32) = 10.82, p=0.0003) but not sex (F(1,32) = 1.05, p=0.313). Both female and male mice of the low choline group were significantly different from male mice fed the intermediate diet (both p<0.05, asterisk) but no other pairwise comparisons were significant. 3. There were no significant differences (diet, F(2,23)=1.21, p=0.317); sex, (F(1,23)=0.84, p=0.368).
+
 As shown in Figure 8, animals that received the intermediate diet had a significantly higher number of IIS in the 24 hr-long recording periods compared to animals that received the high choline and low choline diets. A two-way ANOVA (mixed model analysis) showed that there was a significant effect of age (F(2,37) = 3.38; p=0.036) and maternal diet (F(2,36) = 8.12; p=0.089). At the 5 weeks-old recording, Tukey–Kramer post hoc analyses showed that IIS frequency in animals treated with the intermediate diet was higher compared to animals treated with the low (p=0.027) or high choline diets (p=0.038). This also was true for 2 months and 3 months (low choline, high choline, p<0.05). At 4 months, the low choline group had significantly reduced IIS frequency compared to the mice that had received the intermediate diet (p=0.009) but this was not the case for the high choline group compared to the intermediate group (p=0.976). At 5–6 months, IIS frequencies were not significantly different in the mice fed the different diets (all p>0.05), probably because IIS frequency becomes increasingly variable with age (Kam et al., 2016). One source of variability is seizures because there was a sharp increase in IIS during the day before and after a seizure (Figure 8—figure supplement 1). Another reason that the diets failed to show differences was that the IIS frequency generally declined at 5–6 months. This can be appreciated in Figure 8B and Figure 8—figure supplement 2. These data are consistent with prior studies of Tg2576 mice where IIS increased from 1 to 3 months but then waxed and waned afterwards (Kam et al., 2016).
 
-## Seizures and premature mortality in mice fed the low choline diet
+### Seizures and premature mortality in mice fed the low choline diet
 
 We found that mice fed the low choline diet had greater ΔFosB-ir in GCs and the hilus showed very low NeuN-ir. Therefore, we asked whether low choline-treated mice had more seizures than mice fed the other diets. We recorded eight mice by video-EEG for 5 days each (at 6 months of age) to examine seizures and found two mice from the low choline group had seizures (11 seizures over 2 of the 5 days in one mouse, 1 seizure in the other mouse), whereas none of the other mice had seizures (n = 0/4, two intermediate and two high choline, data not shown).
 
 These values are probably an underestimate for the low choline group because many mice in this group appeared to die in a severe seizure prior to 6 months of age (Figure 2—figure supplement 2). Therefore, the survivors at 6 months probably were the subset with few seizures. The reason we think that low choline-treated mice appeared to die in a seizure was that they were found in a specific posture in their cage which occurs during a severe seizure that leads to death, a prone posture with extended limbs (Figure 2—figure supplement 2). Regardless of how the mice died, there was greater mortality in the low choline group compared to mice that had been fed the high choline diet (log-rank [Mantel–Cox] test, chi-square 5.36, df 1, p=0.021; Figure 2—figure supplement 2A).
 
-## Correlations between IIS and other measurements
+### Correlations between IIS and other measurements
 
 As shown in Figure 9A, IIS were correlated to behavioral performance in some conditions. For these correlations, only mice that were fed the low and high choline diets were included because mice that were fed the intermediate diet and were tested behaviorally were not always tested with EEG.
 
@@ -157,7 +193,7 @@ For NOL, IIS frequency over 24 hr was plotted against the preference for the nov
 
 We also tested whether there were correlations between dorsal hilar NeuN-ir cell numbers and IIS frequency. In Figure 9B, IIS frequency over 24 hr was plotted against the number of dorsal hilar cells expressing NeuN. The dorsal hilus was used because there was no effect of diet on the posterior hilus. For NOL, there was no significant correlation (low choline, p=0.273; high choline, p=0.159; Figure 9B1). However, for NOR, there were more NeuN-ir hilar cells when the behavioral performance was strongest (low choline, p=0.024; high choline, p=0.016; Figure 9B2). These data support prior studies showing that hilar cells, especially mossy cells (the majority of hilar neurons), contribute to object recognition (Kesner et al., 2015; Botterill et al., 2021; GoodSmith et al., 2022).
 
-## Sex differences
+### Sex differences
 
 As shown in Figures 2 and 3, there appeared to be no sex differences in NOL or NOR. For confirmation, we studied NOL further since that was the task that showed effects of diet. A three-way ANOVA with sex, genotype and task phase as factors showed no significant effect of sex at 3 months of age (low choline diet, F(1,35) = 0.0001; p=0.99). Results were the same for the 3 months-old mice fed the intermediate diet (F(1,22) = 0.06; p=0.810) and 3 months-old mice that were fed the high choline diet (F(1,34) = 0.43; p=0.522). At 6 months of age, there also were no significant effects of sex (low choline diet, F(1,23) = 0.34; p=0.571; intermediate diet, F(1,16) = 2.49; p=0.130; high choline diet, F(1,27) = 0.29; p=0.873).
 
@@ -169,7 +205,7 @@ For the 3–4 months-old mice, there was also a significant effect of diet (F(2,
 
 ## Discussion
 
-## Summary
+### Summary
 
 This study showed that choline supplementation in early life had several beneficial effects in Tg2576 mice. The high choline diet led to improved behavior in the NOL task, improved expression of ΔFosB, and reduced IIS frequency.
 
@@ -177,7 +213,7 @@ We also found surprising effects of treating mice with relatively low choline in
 
 We showed for the first time that Tg2576 mice have pathology in the hilus at an early age in that hilar neurons are deficient in immunoreactivity to anti-NeuN antibody, and this occurs before amyloid plaque develops (after 6 months of age; Hsiao et al., 1996). Tg2576 offspring that were fed the high choline diet showed a restoration of hilar NeuN staining. Because hilar neurons play a role in NOL (Bui et al., 2018), it is possible that rescue of hilar neurons by the high choline diet led to improved spatial memory. However, there was no significant correlation between the number of NeuN-ir hilar cells and testing for the NOL task. There was a significant correlation for the NOR task, with both low and high choline groups performing better when hilar NeuN-ir cell numbers were greater. The significant correlation with NOR test performance is consistent with a role of somatostatin-expressing hilar GABAergic neurons (Nagarajan et al., 2024) and hilar glutamatergic mossy cells in NOR and object-related activity (Botterill et al., 2021; GoodSmith et al., 2022). Somatostatin-expressing hilar neurons (Tallent, 2007; Savanthrapadian et al., 2014; Hofmann et al., 2016) and mossy cells Sloviter, 1994; Scharfman, 1999; Scharfman and Myers, 2012; Jinde et al., 2013; Bui et al., 2018; Botterill et al., 2019 have been suggested to contribute to excitability of GCs, so phenotypic rescue may also have contributed to the ability of the high choline diet to reduce hyperexcitability.
 
-## Benefits of high choline
+### Benefits of high choline
 
 The results of this study are consistent with previous reports that prenatal or postnatal choline supplementation improves object memory. One study of iron deficiency showed that choline supplementation improved NOR (Kennedy et al., 2014). Wistar rats treated with a diet high (5.0 g/kg) in choline had improved NOR relative to rats that had been fed a diet lower (1.1 g/kg) in choline (Moreno et al., 2013). In rats that were aged to 24 months, animals that had been fed a high choline diet showed improved NOR, but only in females (Glenn et al., 2008).
 
@@ -187,25 +223,25 @@ To our knowledge, our study is the first to show that MCS can exert effects on I
 
 Our results are consistent with previous studies of mouse models of AD. In the APP/PS1 mouse model, where mutations found in AD are present in APP and PS1, it was shown that lifelong choline supplementation, using the high choline diet, improved memory in aged mice compared to a low choline diet (Velazquez et al., 2019). Postnatal choline supplementation also improved memory in APP/PS1 mice (Wang et al., 2019). Other improvements were also shown in the APP/PS1 mice, such as increased choline acetyltransferase, the major enyzme for acetylcholine synthesis (Mellott et al., 2017; Velazquez et al., 2019). In 3xFAD mice, where there are three familial AD mutations, a diet without choline had numerous deleterious consequences, including increased Aβ and tau phosphorylation (Dave et al., 2023).
 
-## Adverse effects of the diet with relatively low choline
+### Adverse effects of the diet with relatively low choline
 
 The relatively low choline diet had several adverse effects, which was surprising because the low choline levels are not considered very low in some prior studies (Moreno et al., 2013; Mellott et al., 2017; Velazquez et al., 2019). However, the past studies using low choline did not test Tg2576 mice. Also, past studies sometimes used the diet for only part of gestation rather than all of gestation and stopped after birth instead of continuing until weaning. In contrast, we fed the diet throughout gestation and until weaning. Nevertheless, it is surprising. One possible explanation is an interaction of the low choline diet with the strain of the Tg2576 mice, SJL (Swiss James Lambert). To our knowledge, this strain has not been tested with different diets before. SJL mice descend from Swiss Webster and are prone to reticulum cell sarcoma (Haran-Ghera et al., 1967). This strain is also characterized by vulnerability to infection causing a multiple sclerosis-like syndrome (Linzey et al., 2023).
 
 One of the adverse effects was high mortality. Mice appeared to die in seizures. Mice also had high ΔFosB expression in the GCs. Another adverse effect was weak NeuN-ir in the hilus. For both WT and Tg2576 mice, NOL was impaired. These data suggest that the offspring of mothers fed the low choline diet were unhealthy. If mice were unhealthy, IIS might have been reduced due to impaired synchronization (despite high excitability in the DG). Another reason for reduced IIS is that the mice that had the low choline diet had seizures, which interrupted rapid eye movement (REM) sleep. Less REM sleep would reduce IIS because IIS occur primarily in REM (Kam et al., 2016). Also, seizures in the Tg2576 mice were followed by a depression of the EEG (postictal depression; Figure 8—figure supplement 1) that would transiently reduce IIS. A different perspective is that the intermediate diet promoted IIS (rather than low choline reducing IIS). Instead of choline, a constituent of the intermediate diet may have promoted IIS.
 
-## NeuN
+### NeuN
 
 As mentioned above, NeuN is a neuronal nuclear antigen that can be phosphorylated, and when that occurs the antibody to NeuN no longer binds to NeuN. NeuN is phosphorylated in response to oxidative damage, brain injury, and toxicity (Lind et al., 2005). Therefore, it was of interest when we saw that hilar neurons of the DG showed reduced NeuN in Tg2576 mice. Hilar neurons are mainly glutamatergic mossy cells and somatostatin (SOM)/neuropeptide Y (NPY)-expressing GABAergic neurons (HIPP cells; Houser, 2007; Scharfman and Myers, 2012; Scharfman, 2016), and both neuronal types are implicated in spatial memory functions of the GCs, as well as their excitability (Myers and Scharfman, 2009; Myers and Scharfman, 2011; Scharfman and Myers, 2012; Jinde et al., 2013; Scharfman, 2016; Raza et al., 2017; Bui et al., 2018; GoodSmith et al., 2019; Li et al., 2021). If damaged by the high intracellular APP and Aβ levels in young Tg2576 mice, the hilar neurons would be expected to show NeuN loss. This idea is consistent with deficits in SOM and NPY-stained cells in AD (Chan-Palay, 1987), indicating a vulnerability.
 
 The reason for rescue of anterior hilar but not posterior hilar NeuN with the high choline diet is unclear. The greater sensitivity of dorsal neurons may be related to differences in gene expression patterns since some of the genes that are differentially expressed along the dorsal-ventral axis could affect vulnerability to insult or injury (Cembrowski et al., 2016; Zhang et al., 2018). However, there was a similar trend for the data in both anterior and posterior regions. The lack of statistical significance in posterior DG may simply have been due to a greater variance in the posterior DG data.
 
-## ∆FosB
+### ∆FosB
 
 Given that seizures are associated with elevated GC expression of ∆FosB (Chen et al., 1997; McClung et al., 2004; Corbett et al., 2017; You et al., 2017), the differences in ∆FosB protein expression levels observed here could be the result of increased seizures in animals that received the low choline diet. However, we did not detect a significant difference in seizures at 6 months of age, although there may have been a difference earlier in life or if we had recorded for a longer time. Interestingly, there may have been more seizures due to a reduced number of IIS. Thus, some evidence suggests that IIS can abort a seizure (Staley and Dudek, 2006).
 
 ∆FosB is a transcription factor that is linked to cognition. In the J20 mouse model of AD, elevated ∆FosB in GCs led to reduced cognition, and when ∆FosB was selectively reduced the cognition improved (Corbett et al., 2017). Therefore, the reduction in ∆FosB by the high choline diet was important to show hyperexcitability was reduced and also important because it showed how high choline may benefit cognition.
 
-## Choline and cholinergic neurons
+### Choline and cholinergic neurons
 
 There are many suggestions for the mechanisms that allow MCS to improve health of the offspring. One hypothesis that we are interested in is that MCS improves outcomes by reducing IIS. Reducing IIS would potentially reduce hyperactivity, which is significant because neuronal activity can increase release of Aβ and tau (Cirrito et al., 2005; Cirrito et al., 2008; Bero et al., 2011; Yamada et al., 2014; Yamamoto et al., 2015; Hettinger et al., 2018). IIS would also be likely to disrupt sleep since it represents aberrant synchronous activity over widespread brain regions. The disruption to sleep could impair memory consolidation since consolidation is a notable function of sleep (Graves et al., 2001; Poe et al., 2010). Indeed, in AD patients, IIS and similar events, IEDs, are correlated with memory impairment (Vossel et al., 2016). Sleep disruption also has other negative consequences such as impairing normal clearance of Aβ (Nedergaard and Goldman, 2020).
 
@@ -213,7 +249,7 @@ How would choline supplementation in early life reduce IIS of the offspring? It 
 
 Why would MCS make BFCNs resilient? There are several possibilities that have been explored, based on genes upregulated by MCS. One attractive hypothesis is that neurotrophic support for BFCNs is retained after MCS but after a normal diet BFCNs decline in aging and AD (Gautier et al., 2023). The neurotrophins, notably nerve growth factor and brain-derived neurotrophic factor, have been known for a long time to support the health of BFCNs (Mufson et al., 2003; Niewiadomska et al., 2011).
 
-## Limitations
+### Limitations
 
 One of the limitations of the study was that the maternal diets were not matched exactly. Although the low and high choline diets only had differences in choline, the intermediate diet had different amounts of choline as well as other constituents (Supplementary file 1). Therefore, the only diet comparison with a difference restricted to choline is the low versus high choline diets (Supplementary file 1). The intermediate diet was useful, however, because numerous studies in AD mouse models employ this standard diet.
 
@@ -223,13 +259,387 @@ Regarding sex differences, there may have been differences if females had been s
 
 The Tg2576 mouse model is one of many murine models of AD, and as with all models there are inherent limitations. The Tg2576 model recapitulates familial AD, whereas the majority of AD is sporadic. Tg2576 mice also lack tau pathology. However, MCS has now demonstrated structural/functional benefits in several AD-relevant models, namely Tg2576 (this report), APP/PS1 (Alldred et al., 2021; Dave et al., 2023), Ts65Dn (Velazquez et al., 2013; Powers et al., 2016; Strupp et al., 2016; Powers et al., 2017; Alldred et al., 2021; Alldred et al., 2023), and 3xFAD mice (Dave et al., 2023). Moreover, increasing evidence suggests that humans with AD have low serum choline and are improved by dietary choline (Dave et al., 2023; Judd et al., 2023a; Judd et al., 2023b).
 
-## Conclusions
+### Conclusions
 
 There is now a substantial body of evidence that MCS promotes learning and memory in the offspring of normal rats and improves behavior and other abnormalities in mice that simulate AD. There also is evidence that serum levels of choline are low in AD. Therefore, it is exciting to think that dietary choline might improve AD. Given the past work also shows benefits to mice that simulate DS, the benefits of choline supplementation appear to extend to DS. The present study adds to the growing consensus that MCS is restorative by showing that hyperexcitability and pathology in the DG of Tg2576 mice are improved by MCS. They also suggest that there may be some adverse effects of a relatively low level of choline in the diet.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN (mouse monoclonal)</td>
+      <td>Cat# MAB377; Millipore</td>
+      <td>RRID:AB_2313673</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ΔFosB (rabbit monoclonal; D3S8R)</td>
+      <td>Cat# 14695, Cell Signaling</td>
+      <td>RRID:AB_2798577</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated horse anti-mouse IgG antibody</td>
+      <td>Cat# BP-2000; Vector Laboratories</td>
+      <td>RRID:AB_2798577</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated goat anti-rabbit IgG antibody</td>
+      <td>Cat# BA-1000; Vector Laboratories</td>
+      <td>RRID:AB_2313606</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton-X 100</td>
+      <td>Cat# X100; Sigma-Aldrich</td>
+      <td></td>
+      <td>0.25%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Cat# 19210; Electron Microscopy Sciences</td>
+      <td></td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal goat serum</td>
+      <td>Cat# S-1000; Vector Laboratories</td>
+      <td></td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal horse serum</td>
+      <td>Cat# S-2000; Vector Laboratories</td>
+      <td></td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIS hydrochloride</td>
+      <td>Cat# T3253; Sigma-Aldrich</td>
+      <td></td>
+      <td>97 g/8 L</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris base (TRIZMA base)</td>
+      <td>Cat# T1503; Sigma-Aldrich</td>
+      <td></td>
+      <td>22 g/8 L</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H2O2; hydrogen peroxide</td>
+      <td>Cat# 95321; Sigma-Aldrich</td>
+      <td></td>
+      <td>1% w/v</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Avidin-biotin complex (ABC)</td>
+      <td>Cat# PK6100; Vector Laboratories</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3,3-Diamino-benzidine (DAB)</td>
+      <td>Cat# D5905; Sigma-Aldrich</td>
+      <td></td>
+      <td>0.5 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium chloride</td>
+      <td>Cat# A514; Sigma-Aldrich</td>
+      <td></td>
+      <td>40 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D(+)-glucose</td>
+      <td>Cat# G5767; Sigma-Aldrich</td>
+      <td></td>
+      <td>25 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose oxidase</td>
+      <td>Cat# G2133; Sigma-Aldrich</td>
+      <td></td>
+      <td>3 g/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin</td>
+      <td>Cat# G9391; Sigma-Aldrich</td>
+      <td></td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylene</td>
+      <td>Cat# 534056; Sigma-Aldrich</td>
+      <td></td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Permount</td>
+      <td>Cat# 17986-01; Electron Microscopy Sciences</td>
+      <td></td>
+      <td>Undiluted</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>#G7893; Sigma-Aldrich</td>
+      <td></td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene glycol</td>
+      <td>Cat# 324558; Sigma-Aldrich</td>
+      <td></td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sterile 0.9% sodium chloride solution; saline</td>
+      <td>NDC# 50989-885-17; Vedco, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dental cement</td>
+      <td>Cat# 4734FIB, Lang Dental Mfg. Co</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lactated Ringer’s solution</td>
+      <td>NDC# 099355000476; Aspen Veterinary Resources Ltd</td>
+      <td></td>
+      <td>50 mL/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>NDC# 07-893-1389; Patterson Veterinary</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urethane</td>
+      <td>Cat# U2500; Sigma-Aldrich</td>
+      <td></td>
+      <td>2.5 g/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Buprenorphine</td>
+      <td>Buprenex; NDC#12496-075705; Reckitt Benckiser</td>
+      <td></td>
+      <td>0.2 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Tg2576 mice, C57BL6/SJL background</td>
+      <td>Jackson Labs</td>
+      <td>Stock# 100012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImagePro Plus V7.0</td>
+      <td>Media Cybernetics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia acquisition</td>
+      <td>Pinnacle Technology</td>
+      <td>RRID:SCR_016183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sirenia Seizure</td>
+      <td>Pinnacle Technology</td>
+      <td>RRID:SCR_016184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neuroscore</td>
+      <td>Data Science International</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 1.44</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>G*Power</td>
+      <td>G*Power</td>
+      <td>RRID:SCR_013726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Connector</td>
+      <td>Cat# ED85100-ND; Digi-key Corporation</td>
+      <td></td>
+      <td>For EEG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Commutator</td>
+      <td>Cat# 8408; Pinnacle</td>
+      <td></td>
+      <td>For EEG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.10” stainless steel screws</td>
+      <td>Cat# 8209; Pinnacle Technology</td>
+      <td></td>
+      <td>For EEG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Low choline diets</td>
+      <td>AIN-76A; #110098 or #110194 Dyets, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>High choline diet</td>
+      <td>AIN-76A; #110194 Dyets, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intermediate diet</td>
+      <td>Purina 5008; W.F. Fisher and Son</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VIbratome</td>
+      <td>VT1000P; Leica Biosystems</td>
+      <td></td>
+      <td>For sectioning</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope slides</td>
+      <td>Cat# ZA0262; Zefon International</td>
+      <td>3" x 1"</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Coverslips</td>
+      <td>Cat# 48393-106 VWR Scientific Products Corp.</td>
+      <td>#1; 24 × 60 mm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Camera</td>
+      <td>Logitech HD Pro C920; Logitech</td>
+      <td></td>
+      <td>For behavior</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Infrared camera</td>
+      <td>AP-DCS100W; Apex CCTV</td>
+      <td></td>
+      <td>For EEG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Digital camera</td>
+      <td>Model RET 2000R-F-CLR-12; Q imaging</td>
+      <td></td>
+      <td>For microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope</td>
+      <td>BX61; Olympus of America</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereotaxic apparatus</td>
+      <td>Model 902; David Kopf Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Peristaltic pump</td>
+      <td>Minipulse1; Gilson</td>
+      <td></td>
+      <td>For perfusion-fixation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experimental procedures followed the guidelines set by the National Institute of Health and were approved with protocol number AP2019-1640 by the Institutional Animal Care and Use Committee of the Nathan Kline Institute for Psychiatric Research (Animal Assurance number, A4545-01). Mice were housed in standard mouse cages (26 cm wide × 40 cm long × 20 cm high) with corn cob bedding and a 12 hr-long light-dark cycle. Food and water were provided ad libitum.
 
@@ -237,49 +647,49 @@ Tg2576 mice express a mutant form of human APP (isoform 695) with a mutation fou
 
 Breeding pairs were randomly assigned to receive one of three diets with different concentrations of choline chloride: 1.1 g/kg (AIN-76A, Dyets Inc), 2.0 g/kg (Purina 5008, W.F. Fisher and Son Inc), and 5.0 g/kg (AIN-76A, Dyets Inc; Supplementary file 1). These diets (‘low choline’ diet, ‘intermediate choline’ diet, and ‘high choline’ diet, respectively) were used until weaning (25–30 days of age). After weaning, all mice were fed the intermediate diet. Mice were housed with others of the same sex (1–4 per cage). WT mice received the intermediate diet during breeding, gestation, and after birth.
 
-## Behavior
+### Behavior
 
-## General information
+#### General information
 
 Starting at least 24 hr prior to all experiments, mice were housed in the room where they would be tested behaviorally. Both NOL and NOR were preceded by three acclimation sessions (5 min each). Acclimations were conducted between 10:00 a.m. and 12:00 p.m. NOL and NOR were composed of a training and a testing session (5 min each; Figure 1B–D). Training and testing was conducted between 1:00 p.m. and 4:00 p.m. The interval between training and testing was 60 min, and therefore the tasks tested short-term memory (Vogel-Ciernia and Wood, 2014). NOL and NOR tests were separated by 7 days to ensure the effects of one task did not affect the next. Prior studies have failed to find an effect on one task on the next when a 7 day-long interval is used (Botterill et al., 2021). The order of testing (NOL before NOR or NOR before NOL) was randomized.
 
 Video recordings of all training and testing sessions were captured using a USB camera (Logitech HD Pro C920, Logitech). All equipment was cleaned using 70% ethanol before each use. In pilot studies, we confirmed that objects were explored equally by animals (see ‘Results’). One object was composed of red and green LEGO pieces (approximately 5 cm × 7 cm × 7 cm); the other object was a pineapple (3 cm × 3 cm × 5 cm) and made of painted metal (Figure 1—figure supplement 1; Botterill et al., 2021).
 
-## Novel object location
+#### Novel object location
 
 NOL was conducted in a standard rat cage (26 cm wide × 40 cm long × 20 cm high) with different pictures on three sides of the cage to provide a consistent context. Pictures included several shapes and colors. The dimensions of the pictures were (1) 10 cm × 21 cm, (2) 16 cm × 18 cm, and (3) 17 cm × 20 cm. During the acclimations, animals were allowed to freely explore the cage. During the training session, mice were placed in the cage where they had been acclimated, with two identical objects, one in a corner of the cage (e.g., left top) and the other in the adjacent corner (e.g., left bottom, Figure 1—figure supplement 1). The mice were then removed and placed in their home cage for 1 hr. During the test session, one of the objects was moved to the opposite end of the cage (left top to right top; Figure 1—figure supplement 1).
 
-## Novel object recognition
+#### Novel object recognition
 
 NOR was conducted in the cage described above for NOL. As for NOL, during the acclimations animals were allowed to freely explore the cage. During the training session, mice were placed in the cage used for acclimation with two identical objects centered along the shortest cage wall (Figure 1—figure supplement 1). The mouse was then removed and placed in their home cage for 1 hr. During the testing session, one of the objects was replaced with a different one. The objects that were identical were two pineapple-like objects, and the new object was made of red and green LEGO pieces (Figure 1—figure supplement 1).
 
-## Quantification
+#### Quantification
 
 The experimenter who conducted the analysis was blind to the genotype and which object was novel or familiar. Videos of the training and testing sessions were analyzed manually. A subset of data was analyzed by two independent blinded investigators, who were in agreement. Exploration was quantified based on the guidelines of Vogel-Ciernia and Wood, 2014. However, in addition to the 2014 recommendations, we also analyzed the number of approaches to an object. The time spent exploring each object was calculated as well, defined as the duration of time the nose was pointed at the object and the nose was located within 2 cm of the object. The time spent exploring also included the time animals spent on top of the object if they were looking down and sniffing it. An approach was defined by a movement toward the object and ending at least 2 cm from the edge of the object.
 
 Animals that remembered the objects that were explored during the training phase were expected to demonstrate an increased preference for novelty in the test phase (Ennaceur and Delacour, 1988). In other words, exploration of the novel object during testing was expected to be higher than 50% of the total time of object exploration. Cognitive impairment was defined as significantly less than 50%.
 
-## Anatomy
+### Anatomy
 
-## Perfusion-fixation and sectioning
+#### Perfusion-fixation and sectioning
 
 Mice were initially anesthetized by isoflurane inhalation (NDC# 07-893-1389, Patterson Veterinary), followed by urethane (2.5 g/kg; i.p.; Cat# U2500, Sigma-Aldrich). Under deep anesthesia, the abdominal and heart cavities were opened with surgical scissors and a 23 g needle inserted into the heart. The atria was clipped, the needle was clamped in place with a hemostat, and the animal was transcardially-perfused using 10 mL of room temperature (RT) saline (0.9% sodium chloride in double-distilled [dd] H2O) using a peristaltic pump (Minipuls1; Gilson), followed by 30 mL of 4°C 4% paraformaldehyde (PFA, Cat# 19210, Electron Microscopy Sciences) in 0.1 M phosphate buffer (PB; pH 7.4). The brains were immediately removed, hemisected, and post-fixed for at least 24 hr in a scintillation vial with 10 mL 4% PFA (at 4°C).
 
 Following post-fixation, 50-µm-thick coronal sections were made using a vibratome (VT 1000P, Leica Biosystems). Sections were collected serially and stored at 4°C in 24-well tissue culture plates containing cryoprotectant solution (30% glycerol, 30% ethylene glycol, 40% 0.1 M phosphate buffer, pH 6.7). Throughout the hippocampus, every sixth section was processed with an antibody to NeuN or ΔFosB. For analysis of anterior DG, 2–3 sections that were 300 µm apart were selected from ~1.5–2.5 mm posterior to Bregma. For posterior DG, 2–3 sections that were 300 µm apart were selected starting at ~3.5 mm posterior to Bregma. The values of the 2–3 sections were averaged so that there was one measurement for anterior and one for posterior for each mouse.
 
-## NeuN and ∆FosB immunohistochemistry
+#### NeuN and ∆FosB immunohistochemistry
 
 Free-floating sections were washed in 0.1 M Tris buffer (96.96 g Tris–HCl #1185-53-1; Sigma; 22.24 g Tris Base #10708976001, q.s. to 8 L with dH2O and pH to 7.6; TB; 3 × 5 min), followed by a 3 min wash in 1% (weight/volume or w/v) H2O2 in 0.1 M TB. Sections were then washed in 0.1 M TB (3 × 5 min) and incubated for 60 min in 5% normal horse serum for NeuN (Cat# S-2000, Vector) or 5% normal goat serum for ∆FosB (Cat# S-1000, Vector), diluted in a solution of 0.25% (volume/volume or v/v) Triton-X 100, and 1% (w/v) bovine serum albumin (#03117332001; Sigma) in 0.1 M TB. Sections were then incubated overnight at 4°C in primary antibody to NeuN (mouse monoclonal, 1:5000; Cat# MAB377, Millipore) or anti-ΔFosB (rabbit monoclonal, 1:1000; Cat# D3S8R, Cell Signaling), diluted in a solution of 0.25% (v/v) Triton-X 100, and 1% bovine serum albumin in 0.1 M TB. Both NeuN and ΔFosB have been well-characterized as antigens (Mullen et al., 1992; Wolf et al., 1996; Chen et al., 1997; Sarnat et al., 1998) and the antibodies we used have been commonly employed in the past (Chen et al., 1997; Duffy et al., 2013; Corbett et al., 2017). On the following day, sections were washed in 0.1 M TB (3 × 5 min) and then incubated for 60 min in biotinylated horse anti-mouse IgG secondary antibody (1:500, Cat# BP-2000, Vector) for NeuN or biotinylated goat anti-rabbit IgG secondary antibody (1:500, Cat# BA-1000) for ∆FosB, diluted in a solution of 0.25% (v/v) Triton-X 100, and 1% (w/v) bovine serum albumin in 0.1 M TB. The sections were then washed in 0.1 M TB (3 × 5 min) and incubated in avidin-biotin complex for 2 hr (1:1000; Cat# PK-6100, Vector). They were washed in 0.1 M TB (3 × 5 min) and then reacted in a solution containing 0.5 mg/mL 3, 3′-diaminobenzidine (DAB; Cat# D5905, Sigma-Aldrich), 40 µg/mL ammonium chloride (Cat# A4514, Sigma-Aldrich), 25 mg/mL D(+)-glucose (Cat# G5767, Sigma-Aldrich), and 3 g/mL glucose oxidase (Cat# G2133, Sigma-Aldrich) in 0.1 M TB. This method slowed the reaction time so that the reaction could be stopped when the immunoreactivity was robust but background was still low. The sections were then washed in 0.1 M TB (3 × 5 min), mounted on gelatin-coated (1% bovine gelatin in dH2O, Cat# G9391, Sigma-Aldrich) slides (Cat# ZA0262; Zefon International) and dried at RT overnight. The following day they were dehydrated in increasing concentrations of ethanol (90%, 10 min; 95% 10 min; 100%, 10 min; 100% again, 10 min), washed in xylene (10 min; Cat# 534056, Sigma-Aldrich), and cover-slipped (Cat# 48393-106 VWR Coverglass; VWR Scientific Products Corp) with Permount (Cat# 17986-01, Electron Microscopy Sciences).
 
-## Analysis
+#### Analysis
 
 Photomicrographs were acquired using ImagePro Plus version 7.0 (Media Cybernetics) and a digital camera (model RET 2000R-F-CLR-12, Q-Imaging). NeuN and ∆FosB staining were quantified from micrographs using ImageJ (National Institutes of Health). All images were first converted to grayscale, and in each section, the hilus was traced, defined by zone 4 of Amaral, 1978. A threshold was then calculated to identify the NeuN-stained cell bodies but not background. Then NeuN-stained cell bodies in the hilus were quantified manually. Note that the threshold was defined in ImageJ using the distribution of intensities in the micrograph. A threshold was then set using a slider in the histogram provided by Image J (see Figures 6B and 7B). The slider was pushed from the low level of staining (similar to background) to the location where staining intensity made a sharp rise, reflecting stained cells. Cells with labeling that was above threshold were counted.
 
 To quantify ∆FosB-stained cells, images were converted to grayscale, and in each section, the GCL was outlined and defined as a region of interest (ROI). A threshold was then set to identify the well-stained cells but not the background, analogous to the method to define threshold in the for NeuN. Two thresholds were used because some cells were lightly stained and others much more robust in their staining. The first threshold was most inclusive of immunoreactive cells. Presumably this group reflected cells with less neuronal activity as well as those with intense activity. Then a second analysis was done with the same sections using a higher threshold. This group corresponded to cells with the highest activity. ImageJ was used to calculate the area (in pixels) within the ROI that was above threshold (see Figure 7B).
 
-## Video-EEG recordings
+### Video-EEG recordings
 
-## Stereotaxic surgery
+#### Stereotaxic surgery
 
 EEG electrodes (Cat# 8209, 0.10" stainless steel screws, Pinnacle Technology) were implanted in Tg2576 animals at 4 weeks of age. WT littermates were not implanted because previous work from our laboratory has shown that WT mice have no IIS (Kam et al., 2016). The animals were anesthetized by isoflurane inhalation (3% isoflurane, 2% oxygen for induction) in a rectangular transparent plexiglas chamber (18 cm long × 10 cm wide × 8 cm high) made in-house. For maintenance during surgery, isoflurane was <1.75% and flow rate was 1.2 L/min. Mice were placed in a stereotaxic apparatus (model 902; David Kopf Instruments). Prior to the implantation of the electrodes, animals were injected with the analgesic Buprenex (0.2 mg/kg, s.c.; buprenorphine hydroxide, NDC# 12496-0757-5, Reckitt Benckiser), which was diluted in saline (0.03 mg/mL in sterile 0.9% sodium chloride solution, Vedco Inc). The skull was exposed with a midline incision and six holes were drilled for the placement of subdural screw electrodes.
 
@@ -287,17 +697,17 @@ The coordinates for the electrode placement were right occipital cortex (AP –3
 
 After surgery, animals were placed on a heating blanket overnight and injected with lactated Ringer’s solution (50 mL/kg at 31°C; NDC# 099355000476, Aspen Veterinary Resources Ltd). They were then transferred to the room where the video-EEG was recorded.
 
-## Video-EEG recording
+#### Video-EEG recording
 
 Video-EEG started 1 week after surgery, at 1.25 months (5 weeks) of age. The animals were recorded at 5 weeks, and subsequently 2, 3, 4, 5, and 6 months of age. Each recording session lasted 24 hr so that a long period of sleep could be acquired, since IIS occur primarily in sleep (Kam et al., 2016).
 
 Mice were placed into 21 cm × 19 cm transparent cages with food and water provided ad libitum and corncob bedding. A pre-amplifier was inserted into the 8-pin connector on the skull, which was connected to a 4-channel commutator and swivel (Cat# 8408, Pinnacle Technology). This arrangement allowed for free range of movement throughout the recording. EEG signals were acquired at 2 kHz and bandpass filtered at 0.5–200 Hz using Sirenia Acquisition (version 2.0.4, Pinnacle Technology). Simultaneous video recordings were captured using an infrared camera (Cat# AP-DCS100W, Apex CCTV).
 
-## Analysis
+#### Analysis
 
 EEG recordings were analyzed offline with Neuroscore version 3.2.1 (Data Science International). IIS were defined as large amplitude, 10–75 ms deflections occurring synchronously in all four leads (Kam et al., 2016). They were quantified by first setting an amplitude threshold (calculated separately for each recording) and a duration criterion (10–75 ms). To determine the amplitude threshold, we calculated the root mean square (RMS) amplitude for noise in each recording during a 60 s segment of baseline activity. A period of baseline activity was selected that did not include any artifacts, which were defined as extremely large deflections much greater than any other activity, and composed of a waveform that was unlike any physiological activity. They typically were accompanied by a large shake in the animal, a cable hitting a part of the cage, or scratching the implant. The threshold for IIS was set at 9 standard deviations above the RMS amplitude. This threshold was selected because it identified IIS extremely well and excluded artifacts. The IIS in one of the hippocampal channels was used instead of another channel because of data suggesting IIS begin in the hippocampus (Kam et al., 2016; Lisgaras and Scharfman, 2023). Following the automatic analysis of the IIS, the software’s detection accuracy was verified manually for each recording to ensure that all spikes appeared in all four channels and that no artifacts were included.
 
-## Statistical comparisons
+### Statistical comparisons
 
 Data are expressed as mean ± standard error of the mean (SEM). The significance was set to <0.05 prior to all experiments. Tests were conducted using Prism software (GraphPad).
 

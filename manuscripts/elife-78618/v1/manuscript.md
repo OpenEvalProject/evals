@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 College of Veterinary Medicine, University of Minnesota Saint Paul United States
-2. https://ror.org/03k2dnh74 Zoetis Parsippany United States
+1. College of Veterinary Medicine, University of Minnesota Saint Paul United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Zoetis Parsippany United States ([ROR:03k2dnh74](https://ror.org/03k2dnh74))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ We previously published a vaccine-challenge study assessing IAV infections in pi
 
 ## Results
 
-## Specimen collection and background information
+### Specimen collection and background information
 
 The BALF specimens utilized in this study originated from a previously published vaccine-challenge study (Li et al., 2020). We used a co-infection challenge model that attempted to simulate more realistic field settings by commingling two infected seeder pigs, one inoculated with an H1N1 (A/swine/Minnesota/PAH-618/2011) and the other with an H3N2 (A/swine/Minnesota/080470/2015) influenza virus, with 10 other contact pigs in the same room to attempt simultaneous infection to both strains using a natural transmission route (Figure 1). A total of 14 seeder pigs and 70 in-contact pigs were distributed into seven rooms. The two challenge viruses contained clade 1A 3.3.3 gamma (H1N1) or clade 3.2010.1 human-like (H3N2) HA, which represent the major circulating strains in the US pig industry (Aphis, 2022). Three licensed IAV vaccines were used in the study, including a commercial (COM) quadrivalent WIV, an autogenous (AUT) trivalent WIV, or a bivalent LAIV. The protective effect of four different WIV combinations (including COM/COM, AUT/AUT, AUT/COM, and COM/AUT) and positive control treatment (NO VAC/CHALL) was evaluated in 50 pigs that had been distributed evenly in groups of 2 pigs per treatment to each of five rooms. Another 20 pigs received two different administrations of the LAIV (LAIV/COM and LAIV/NONE), and pigs were distributed evenly in groups of 5 per treatment to each of the two rooms.
 
@@ -45,35 +45,522 @@ The four WIV administrations significantly decreased virus shedding, and details
 
 Overall, there were 70 BALF samples from the treatment pigs collected at necropsy 7 days post contact (DPC) with the seeder pigs. Also, 28 of the BALF samples were successfully sequenced and their genomes were used to identify IAV mutations (Table 1). To identify IAV reassortants in vaccinated and nonvaccinated pigs, we performed plaque assays on BALF samples from pigs in three rooms (two rooms containing WIV treatment pigs and one room containing LAIV treatment pigs). These rooms were selected because seeder pigs shed IAV in enough quantities to transmit it to in-contact pigs. There were 13 BALF samples that could be used for plaque isolation, yielding a total of 202 IAV plaques (Table 1). Based on the vaccination regime, treatment pigs were grouped into PRIME BOOST (with COM/COM, AUT/AUT, COM/AUT, and LAIV/COM pigs), SINGLE LAIV (LAIV/NONE pigs), and NO VAC (NO VAC/CHALL pigs) groups and used for further analysis. No matter for IAV mutation or reassortment identification, PRIME BOOST pigs had significantly higher specific antibody responses against both H1 and H3 challenge viruses than SINGLE LAIV and NO VAC pigs (Supplementary file 1). Our overall hypothesis was that vaccination helps reduce the risk of IAV co-infection in pigs and decreases the number and diversity of genotypes of reassortant viruses generated in pig lungs. At the same time, vaccine-induced immunity may drive variant selection on IAV genomes, which could affect the within-host genetic diversity and expand the antigenic diversity of IAV populations (Figure 1).
 
-## Multiple genotypes identified among the new reassortant, plaque-purified viruses
+**Table 1.**
+ Number of bronchoalveolar lavage fluid (BALF) samples available for direct sequencing or plaque purification from each group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Group</th>
+      <th colspan="3">Vaccination</th>
+      <th rowspan="2">No. samples sequenced/ total</th>
+      <th rowspan="2">Average Ct value (range)</th>
+      <th rowspan="2">Average coverage on H1N1 consensus genome (SD ) *</th>
+      <th rowspan="2">Average coverage on H3N2 consensus genome (SD)</th>
+      <th rowspan="2">No. samples assayed to obtain purified plaques/total †</th>
+    </tr>
+    <tr>
+      <th>Vaccination protocol ‡</th>
+      <th>Prime</th>
+      <th>Boost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">PRIME BOOST</td>
+      <td>COM/COM</td>
+      <td>COM</td>
+      <td>COM</td>
+      <td>5/10 pigs</td>
+      <td>22.47 (17.83–27.58)</td>
+      <td>8397 (722)</td>
+      <td>12,897 (1329)</td>
+      <td>3/4 pigs</td>
+    </tr>
+    <tr>
+      <td>AUT/AUT</td>
+      <td>AUT</td>
+      <td>AUT</td>
+      <td>1/10 pigs</td>
+      <td>26.12(NA )</td>
+      <td>3192(NA)</td>
+      <td>7769(NA)</td>
+      <td>0/4 pigs</td>
+    </tr>
+    <tr>
+      <td>COM/AUT</td>
+      <td>COM</td>
+      <td>AUT</td>
+      <td>2/10 pigs</td>
+      <td>31.10(30.88–31.31)</td>
+      <td>18,267(NA)</td>
+      <td>5784(6318)</td>
+      <td>0/4 pigs</td>
+    </tr>
+    <tr>
+      <td>LAIV/COM</td>
+      <td>LAIV</td>
+      <td>COM</td>
+      <td>4/10 pigs</td>
+      <td>26.74(20.30–30.63)</td>
+      <td>415(NA)</td>
+      <td>18,209(12333)</td>
+      <td>2/5 pigs</td>
+    </tr>
+    <tr>
+      <td colspan="3">In total</td>
+      <td>12/40 pigs</td>
+      <td>25.64(17.83–31.31)</td>
+      <td>7733(6829)</td>
+      <td>13,069(8611)</td>
+      <td>5/17 pigs</td>
+    </tr>
+    <tr>
+      <td>SINGLE LAIV</td>
+      <td>LAIV/NONE</td>
+      <td>LAIV</td>
+      <td>Saline</td>
+      <td>9/10 pigs</td>
+      <td>22.84(17.76–29.84)</td>
+      <td>9322(4090)</td>
+      <td>9009(5513)</td>
+      <td>4/5 pigs</td>
+    </tr>
+    <tr>
+      <td>NO VAC</td>
+      <td>NO VAC/CHA</td>
+      <td>Saline</td>
+      <td>Saline</td>
+      <td>7/10 pigs</td>
+      <td>21.17(14.97–27.73)</td>
+      <td>7699(4406)</td>
+      <td>9775(1057)</td>
+      <td>4/4 pigs</td>
+    </tr>
+    <tr>
+      <td>In total</td>
+      <td colspan="3"></td>
+      <td>28/60 pigs</td>
+      <td>23.62(14.97–31.31)</td>
+      <td>8306(4801)</td>
+      <td>11,281(6972)</td>
+      <td>13/26 pigs</td>
+    </tr>
+  </tbody>
+</table>
+
+_Ct, cycle threshold; NA, not applicable; SD, standard deviation.*The genome coverage was computed as the mean depth of the trimmed gene reads covered on the sequenced influenza (IAV) genomes across all sequenced samples. The gene segments whose coverage was below 100 reads were discarded for coverage calculation and SNV identification.†The samples that yield the purified IAV plaques were also directly sequenced by the next-generation sequencing platform.‡The vaccines used in this study include a commercial multivalent whole inactivated vaccine (COM), an autogenous multivalent whole inactivated vaccine (AUT), or a bivalent live-attenuated vaccine (LAIV)._
+
+### Multiple genotypes identified among the new reassortant, plaque-purified viruses
 
 To characterize and evaluate the distribution of reassortant viruses in vaccinated and nonvaccinated pigs, a total of 202 IAV plaques were isolated and whole-genome sequenced from 13 BALF samples collected at necropsy from the pigs receiving the prime-boost (PRIME BOOST), single-dose LAIV (SINGLE LAIV), and no vaccine (NO VAC) administrations (Supplementary file 2). A summary of the genotypes is shown in Figure 2. Among the 202 plaques, 148 (73.3%) were the parental virus-challenge strains (137 [67.8%] H3N2 and 11 [5.4%] H1N1). Also, 54 (26.7%) plaques were classified as IAV reassortants with 33 (16.3%) plaques distributed into 17 distinct single reassortants (R01–R17) and 21 (10.4%) plaques classified as 16 mixed reassortant genotypes (M01–M16) (Figure 2, Figure 2—source data 1). Mixed genotypes were reassortant viruses that contained complete gene sequences of both parental viruses in a given gene segment. The IAV reassortants were detected in 6 out of 13 pigs with some pigs having as few as one genotype and as many as 13 genotypes (including mixed genotypes); notably 83.3% (45/54) of reassortants originated from only three pigs (Figure 2—figure supplement 1). We did not detect any gene segments that originated from the LAIV strains, and in this study there were no reassortants observed between LAIV and challenge viruses.
 
-## Vaccination decreases the number of reassortant influenza A viruses
+![Figure 2.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig2-v1.jpg)
+
+**Figure 2.:** A total of 202 plaques were whole-genome sequenced and genotyped based on the origins of IAV gene segments in each plaque. Gene segments are shown above the columns. Red blocks represent gene segments that originate from the H1N1 virus; green blocks originate from the H3N2 virus; and blue blocks indicate that complete gene segments were detected from both viruses. The specific genotype number is indicated on the left side of each row, and the quantity of plaques that contain the corresponding gene constellation is shown on the right side of the row. The specific single reassortant genotype number is named after R, and the M-number indicates the specific mixed reassortant genotype number. The quantity and genotypes of influenza plaques isolated from each individual pig are displayed in Figure 2—figure supplement 1. The maximum likelihood trees and the assembled nucleotide sequences of isolated plaques used for constructing the trees can be found in Figure 2—source data 1 and Figure 2—source data 2, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each reassortant genotype is shown in a different color except for red and green that show the H1N1 and H3N2 genotypes from the challenge viruses. The number of plaques isolated from individual pigs is displayed above the bar, and the corresponding pig IDs and treatment groups are indicated below the bar.
+
+### Vaccination decreases the number of reassortant influenza A viruses
 
 To evaluate whether vaccination alters the occurrence of IAV reassortment in swine lungs, we compared the percentage of IAV reassortants isolated from vaccinated and nonvaccinated pigs (Figure 3A). Nonvaccinated (NO VAC) pigs had more reassortant viruses and more distinct genotypes, with 50.0% (37/74) of plaques being reassortants, which belong to 11 single and 14 mixed genotypes. For the remaining plaques isolated in PRIME BOOST and SINGLE LAIV pigs, 13.3% (17/128) were reassortants distributed in seven single and three mixed genotypes. We found 25.0% (13/52) of plaques isolated from the SINGLE LAIV pigs and 5.3% (4/76) of plaques in the PRIME BOOST pigs were identified as reassortants. After accounting for the unequal quantities of plaques isolated from individual pigs and the different number of pigs between treatment groups, we found that the proportion of reassortants was significantly lower in the PRIME BOOST pigs than in the NO VAC pigs (p=0.020).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig3-v1.jpg)
 
-**Figure 3.:** (A) Percentage of reassortant plaques in pigs by genotype and treatment groups. Each genotype is shown in a different color. The total number of plaques for each group is shown above each bar, and the quantity of available bronchoalveolar lavage fluid (BALF) samples for each group (n) is indicated under the treatment names. Both plaques with single (R01–R17) and mixed (M01–M16) genotypes were considered as reassortant viruses. To account for the unequal number of plaques and pigs from different treatment groups, we compared the proportion of IAV reassortants by the binomial logistic regression model, allowing for overdispersion, and tested all pairwise differences between treatments using the chi-squared deviance test, and adjusted the p-values by Bonferroni–Holm method for multiple comparisons. p-value<0.05 was considered significant. (B) Correlation between the proportion of reassortant viruses and the number of days pigs were co-infected with H1 and H3 challenge viruses. The number in the dot represents the number of overlapping points plotted for pigs that had the same proportion of reassortants and co-infection day, and the total number of samples available for this analysis is indicated (n). The number of days pigs were co-infected is shown in Figure 3—source data 1, which is defined as the number of days when both H1 and H3 IAV were detected in the nasal cavities or lungs by a hemagglutinin (HA) subtype-specific multiplex rRT-PCR. Spearman’s rank-order correlation test evaluated the direction and intensity of the correlation between the proportion of reassortant viruses and the number of days pigs were co-infected.Figure 3—source data 1.
+**Figure 3.:** (A) Percentage of reassortant plaques in pigs by genotype and treatment groups. Each genotype is shown in a different color. The total number of plaques for each group is shown above each bar, and the quantity of available bronchoalveolar lavage fluid (BALF) samples for each group (n) is indicated under the treatment names. Both plaques with single (R01–R17) and mixed (M01–M16) genotypes were considered as reassortant viruses. To account for the unequal number of plaques and pigs from different treatment groups, we compared the proportion of IAV reassortants by the binomial logistic regression model, allowing for overdispersion, and tested all pairwise differences between treatments using the chi-squared deviance test, and adjusted the p-values by Bonferroni–Holm method for multiple comparisons. p-value<0.05 was considered significant. (B) Correlation between the proportion of reassortant viruses and the number of days pigs were co-infected with H1 and H3 challenge viruses. The number in the dot represents the number of overlapping points plotted for pigs that had the same proportion of reassortants and co-infection day, and the total number of samples available for this analysis is indicated (n). The number of days pigs were co-infected is shown in Figure 3—source data 1, which is defined as the number of days when both H1 and H3 IAV were detected in the nasal cavities or lungs by a hemagglutinin (HA) subtype-specific multiplex rRT-PCR. Spearman’s rank-order correlation test evaluated the direction and intensity of the correlation between the proportion of reassortant viruses and the number of days pigs were co-infected.
 
 To further investigate whether the occurrence of reassortant viruses increased with increasing length of time (in days) that pigs were co-infected, we evaluated the relationship between the duration of co-infection (i.e., number of days the pigs were co-infected with H1N1 and H3N2 viruses), as measured by a subtype-specific multiplex rRT-PCR in nasal swabs and BALF samples collected at 2–7 DPC and the frequency of reassortants detected in BALF at necropsy performed on 7 DPC (Figure 3—source data 1). We found the duration of IAV co-infections (in days) was significantly longer in NO VAC pigs than in the PRIME BOOST pigs (p=0.012, Dunn’s test with Benjamini–Hochberg correction). In addition, a strong positive correlation (R = 0.73, p=0.0046), as evaluated by the Spearman’s rank-order correlation test, was observed between the proportion of reassortant viruses isolated and the increasing duration of co-infection (Figure 3B).
 
-## Virus load and genome coverage of direct sequenced BALF samples for single-nucleotide variant (SNV) identification
+### Virus load and genome coverage of direct sequenced BALF samples for single-nucleotide variant (SNV) identification
 
 Virus load and sequencing coverage are considered important factors that could affect the accuracy of IAV SNV identification (McCrone and Lauring, 2016). The sequenced samples in this study had a high virus load with a mean Ct value of 23.62 (range 14.97–31.31) tested by IAV matrix rRT-PCR. The average Ct values of sequenced samples were not significantly different between treatment groups (p=0.13, Kruskal–Wallis rank-sum test). The mean depth across the whole available samples used for SNV identification in the H1N1 and H3N2 genomes are 8306 and 11281 reads, respectively (Table 1). The mean genome coverages on H1N1 and H3N2 viruses from the sequenced samples were not significantly different between treatment groups (H1N1: p=0.49, H3N2: p=0.43, Kruskal–Wallis rank-sum test).
 
-## Vaccine-induced immunity has a limited impact on within-pig HA nucleotide variation of H1N1 and H3N2 viruses
+### Vaccine-induced immunity has a limited impact on within-pig HA nucleotide variation of H1N1 and H3N2 viruses
 
 We called a total of 380 SNVs in 218,821 sequenced H1N1 consensus nucleotides (207 nonsynonymous, 165 synonymous, 8 stop-gained) from 19 BALF samples (Figure 4—figure supplement 1A, Figure 4—source data 1). H1N1 SNVs were dominated by low-frequency variants (Figure 4A). About 9.5% (36/380) of SNVs existed at the consensus level (above 50% of virus population) and over 81.8% (311/380) of SNVs, which included 171 (82.6%) nonsynonymous, 132 (80.0%) synonymous, and 8 (100.0%) stop-gained SNVs, were present at less than 10% frequency. The average number and frequency of H1N1 SNVs by coding region and group are summarized in Table 2. The quantity and frequency of SNVs in each IAV coding region did not differ significantly among treatment groups (p=0.06–0.99 for SNVs quantity; p=0.06–0.80 for SNVs frequency, Kruskal-–Wallis rank-sum test). We found 75 out of 207 nonsynonymous mutations (mean frequencies with SD = 0.095 ± 0.221) located at functional relevant sites using the available annotations from the Sequence Feature Variant Types tool in the Influenza Research Database (Noronha et al., 2012; Figure 4—figure supplement 2 and Supplementary file 3). The percentage and mean frequencies of these annotated SNVs were not significantly different between pigs from different treatment groups (percentage: p=0.101, chi-square test; frequency: p=0.473, Kruskal–Wallis rank-sum test). The H1N1 virus exhibited low antigenic variation regardless of treatment groups (Figure 4B). Only four different nonsynonymous (at nucleotide site 622 in Sb region found in three SINGLE LAIV and one NO VAC pigs, site 665 in Ca1 region from a PRIME BOOST pig, site 473 in Ca2 region from a NO VAC pig, and site 263 in Cb region from a NO VAC pig) nucleotide changes were identified in H1 antigenic regions in one PRIME BOOST, three SINGLE LAIV, and two NO VAC pigs. The divergence of H1 genes did not differ based on the intensity of the humoral and cellular immunity induced by vaccination (Figure 4C and D). There was no evidence of correlation of the H1 nucleotide divergence with the H1-specific HI titers (R = 0.069, p=0.79, Spearman’s rank-order correlation test) nor with the H1-specific IFN-γ-secreting cell spots (R = –0.153, p=0.62, Spearman’s rank-order correlation test).
 
+**Table 2.**
+ Average number and frequency of single-nucleotide variants (SNVs) detected on H1N1 sequences of bronchoalveolar lavage fluid (BALF) samples by coding region for each gene segment and treatment groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Segment</th>
+      <th colspan="3">PRIME BOOST (n = 12)*</th>
+      <th colspan="3">SINGLE LAIV (n = 9)</th>
+      <th colspan="3">NO VAC (n = 7)</th>
+    </tr>
+    <tr>
+      <th>No. of sequences†</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+      <th>No. of sequences</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+      <th>No. of sequences</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PB2</td>
+      <td>3</td>
+      <td>6.7 (4.0)</td>
+      <td>0.117 (0.229)</td>
+      <td>7</td>
+      <td>3.7 (2.6)</td>
+      <td>0.162 (0.331)</td>
+      <td>7</td>
+      <td>4.3 (4.9)</td>
+      <td>0.135 (0.305)</td>
+    </tr>
+    <tr>
+      <td>PB1</td>
+      <td>2</td>
+      <td>4.5 (0.7)</td>
+      <td>0.258 (0.393)</td>
+      <td>7</td>
+      <td>2.7 (2.5)</td>
+      <td>0.097 (0.228)</td>
+      <td>7</td>
+      <td>5.3 (3.7)</td>
+      <td>0.138 (0.292)</td>
+    </tr>
+    <tr>
+      <td>PB1-F2</td>
+      <td>2</td>
+      <td>0.5 (0.7)</td>
+      <td>0.317 (NA)</td>
+      <td>7</td>
+      <td>0.4 (0.5)</td>
+      <td>0.249 (0.410)</td>
+      <td>7</td>
+      <td>0.3 (0.8)</td>
+      <td>0.018 (0.005)</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>4</td>
+      <td>2.5 (1.7)</td>
+      <td>0.029 (0.024)</td>
+      <td>7</td>
+      <td>3.0 (3.1)</td>
+      <td>0.115 (0.274)</td>
+      <td>7</td>
+      <td>2.9 (1.8)</td>
+      <td>0.064 (0.100)</td>
+    </tr>
+    <tr>
+      <td>PA-X</td>
+      <td>4</td>
+      <td>0.8 (1.0)</td>
+      <td>0.035 (0.038)</td>
+      <td>7</td>
+      <td>1.3 (1.1)</td>
+      <td>0.221 (0.404)</td>
+      <td>7</td>
+      <td>1.1 (1.3)</td>
+      <td>0.058 (0.125)</td>
+    </tr>
+    <tr>
+      <td>HA</td>
+      <td>3</td>
+      <td>4.7 (6.4)</td>
+      <td>0.113 (0.259)</td>
+      <td>7</td>
+      <td>3.0 (2.7)</td>
+      <td>0.287 (0.390)</td>
+      <td>7</td>
+      <td>3.6 (4.0)</td>
+      <td>0.145 (0.323)</td>
+    </tr>
+    <tr>
+      <td>NP</td>
+      <td>2</td>
+      <td>3.0 (1.4)</td>
+      <td>0.236 (0.375)</td>
+      <td>7</td>
+      <td>0.3 (0.5)</td>
+      <td>0.014 (0.002)</td>
+      <td>7</td>
+      <td>1.3 (1.4)</td>
+      <td>0.035 (0.047)</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>1</td>
+      <td>5.0 (NA)</td>
+      <td>0.036 (0.028)</td>
+      <td>7</td>
+      <td>1.6 (1.1)</td>
+      <td>0.059 (0.079)</td>
+      <td>7</td>
+      <td>2.3 (2.7)</td>
+      <td>0.079 (0.125)</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>3</td>
+      <td>3.0 (1.0)</td>
+      <td>0.029 (0.020)</td>
+      <td>7</td>
+      <td>1.1 (1.3)</td>
+      <td>0.249 (0.429)</td>
+      <td>7</td>
+      <td>0.7 (1.1)</td>
+      <td>0.256 (0.406)</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>3</td>
+      <td>0.7 (0.6)</td>
+      <td>0.017 (0.006)</td>
+      <td>7</td>
+      <td>0.1 (0.4)</td>
+      <td>0.196 (NA)</td>
+      <td>7</td>
+      <td>0.1 (0.4)</td>
+      <td>0.052 (NA)</td>
+    </tr>
+    <tr>
+      <td>NS1</td>
+      <td>3</td>
+      <td>0.7 (1.2)</td>
+      <td>0.048 (0.001)</td>
+      <td>7</td>
+      <td>1.1 (1.2)</td>
+      <td>0.022 (0.017)</td>
+      <td>7</td>
+      <td>0.9 (1.2)</td>
+      <td>0.017 (0.011)</td>
+    </tr>
+    <tr>
+      <td>NS2</td>
+      <td>3</td>
+      <td>0.3 (0.6)</td>
+      <td>0.049 (NA)</td>
+      <td>7</td>
+      <td>0.9 (1.2)</td>
+      <td>0.020 (0.008)</td>
+      <td>7</td>
+      <td>0.6 (0.5)</td>
+      <td>0.344 (0.407)</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD, standard deviation; LAIV, live-attenuated influenza virus; VAC, vaccination; IAV, influenza A virus.*‘n’ represents the number of BALF samples successfully sequenced by Illumina in each of the treatment groups.†The ‘No. of sequences’ columns represent the number of sequences from H1N1 IAVs for any given gene product from the total available samples (n) within each treatment group._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig4-v1.jpg)
+
+**Figure 4.:** The frequency distribution of the H1N1 (A) and H3N2 (E) SNVs in pigs regardless of treatment groups. The quantity of SNVs at a given frequency interval (bin width = 0.05) is presented by a stacked histogram based on the mutation types. The SNVs with frequencies above 0.5 were considered as consensus variants. Antigenic variant identification from the total detected H1(B) and H3 (F) SNVs. The HA SNVs are shaped by their mutation types and colored based on whether they fell into the H1 antigenic regions (including the Sa, Sb, Ca1, Ca2, and Cb regions) (Brownlee and Fodor, 2001; Caton et al., 1982) or H3 antigenic regions (including the A, B, C, D, and E regions) (Debbink et al., 2017; Lee and Chen, 2004; Wiley et al., 1981). The Spearman correlation between H1-specific HI titer (C) or H1-specific IFN-γ-secreting cell counts (D) with the H1 nucleotide divergence identified in individual pigs was calculated. The same statistics were also computed for H3 viruses between the H3-specific HI titer (G) or H3-specific IFN-γ-secreting cell counts (H) with the H3 nucleotide divergence identified in individual pigs. HA nucleotide divergence was calculated by summing the frequencies of all the HA SNVs identified in each sample. The HI titers of any individual pigs below the detection limit (1:10) are shown as 1:5. The number in specific dots represents the quantity of overlapping points plotted for pigs that had the same numbers for both variables, and the total quantity of available samples for this analysis is indicated as ‘n.’ All the within-host IAV nucleotide polymorphisms present in at least 1% of H1N1 and H3N2 sequencing reads from BALF samples are shown in Figure 4—figure supplement 1. The detailed information of identified H1N1 and H3N2 SNVs is displayed in Figure 4—source data 1 and Figure 4—source data 2, respectively. The nonsynonymous SNVs that were identified at functional sites in pigs from different groups were summarized in Figure 4—figure supplement 2. The detailed results of permutation test on shared amino acid polymorphic sites in the 70 and 100% genome of H1N1 and H3N2 influenza A viruses (IAVs) can be found in Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Summary of identified nucleotide polymorphisms of H1N1 (A) and H3N2 (B) virus in bronchoalveolar lavage fluid (BALF) samples from PRIME BOOST (light green), SINGLE LAIV (blue), and NO VAC (pink) pigs. Each unique SNV was annotated in either synonymous (triangle), nonsynonymous (circle), or stop-gained (cross) mutation. The x-axis represents the nucleotide site where the SNV was placed, and the y-axis represents the frequency of the SNV within the virus population.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The percentage of annotated functional associated single-nucleotide variants (SNVs) from the total identified SNVs in H1N1 (A) and H3N2 (B) virus. The number of identified SNVs and the total number of consensus nucleotides where these SNVs were called by treatment groups are shown above the bars. Only the nonsynonymous mutations in our data were queried against the database of Sequence Feature Variant Types tool in the Influenza Research Database. Phenotypic summary of annotated functional-related mutations in H1N1 (C) and H3N2 (D) virus. The quantity of annotated functional-related mutations detected in pigs by treatment group is shown above each bar, and the mutations are colored based on their putative phenotypic effect on the virus.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The permutation test of shared amino acid polymorphisms in 70% H1N1 (A) and H3N2 (C) IAV genome in pigs is shown by treatment groups. The x-axis indicates the number of shared polymorphic sites present in at least two samples collected from multiple rooms within the same treatment group. The y-axis indicates the number of iterations that have given number of shared polymorphic sites within each treatment group. The dashed lines represent the actual number of shared amino acid polymorphic sites observed in our data from H1N1 or H3N2 viruses in bronchoalveolar lavage fluid (BALF) samples from each group. The same processes of permutation tests on shared amino acid polymorphism sites are also run on the entire genomes of H1N1 (B) and H3N2 (D) IAVs.
+
 Within the SNVs dataset of the H3N2 virus, we observed 364 SNVs out of 257,699 sequenced consensus nucleotides (205 nonsynonymous, 153 synonymous, 6 stop-gained) in 21 BALF samples (Figure 4—figure supplement 1B, Figure 4—source data 2). Similar to H1N1, the H3N2 SNVs were dominated by low-frequency variants (Figure 4E). There were 187 (91.2%) nonsynonymous, 120 (78.4%) synonymous, and 6 (100.0%) stop-gained SNVs whose frequency was below 10%. About 4.4% (16/364) of H3N2 SNVs were presented at the consensus level, which was less than the SNVs presented for the H1N1 virus (p=0.007, chi-square test). We summarized the SNVs quantity and frequency of the H3N2 virus by coding region and group in Table 3, and no statistical differences were detected in the average SNV number between treatment groups (p=0.27–1.00, Kruskal–Wallis rank-sum test). The differences of SNVs frequencies in each gene segment were not significant between treatment groups, except the frequency of N2 SNVs detected in PRIME BOOST pigs was lower than that of SINGLE LAIV pigs (p=0.046, Dunn’s test with Benjamini–Hochberg correction). There were 93 nonsynonymous SNVs (mean frequencies with SD = 0.048 ± 0.117) located at functional relevant sites in the H3N2 genomes. We found that the percentage and average frequencies of these functional annotated SNVs were similar between treatment groups (percentage: p=0.122, chi-square test; frequency: p=0.058, Kruskal–Wallis rank-sum test) (Figure 4—figure supplement 2 and Supplementary file 4). Consistent with the H1N1 virus, we did not find a significant impact of immunity on H3 variants (Figure 4F–H). Specifically, there were only two nonsynonymous (at nucleotide site 830 in E region from a NO VAC pig and site 961 in C region from a PRIME BOOST pig) nucleotide changes located in the H3 antigenic regions in one PRIME BOOST and one NO VAC pigs, and we did not detect any associations between the H3 nucleotide divergence and H3-specific HI titers (R = –0.203, p=0.39, Spearman’s rank-order correlation test) or H3-specific IFN-γ-secreting cell counts (R = –0.046, p=0.87, Spearman’s rank-order correlation test). The detailed results of H1/H3 HI titers and H1/H3-specific IFN-γ-secreting cell counts for each vaccinated and nonvaccinated pig can be found in Li et al., 2020.
+
+**Table 3.**
+ Average number and frequency of single-nucleotide variants (SNVs) detected on H3N2 sequences of bronchoalveolar lavage fluid (BALF) samples by coding regions and treatment groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Segment</th>
+      <th colspan="3">PRIME BOOST (n = 12)*</th>
+      <th colspan="3">SINGLE LAIV (n = 9)</th>
+      <th colspan="3">NO VAC (n = 7)</th>
+    </tr>
+    <tr>
+      <th>No. of sequences†</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+      <th>No. of sequences</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+      <th>No. of sequences</th>
+      <th>Mean no. of SNV (SD)</th>
+      <th>Mean SNV frequency (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PB2</td>
+      <td>10</td>
+      <td>4.9 (3.8)</td>
+      <td>0.155 (0.287)</td>
+      <td>6</td>
+      <td>4.0 (2.9)</td>
+      <td>0.130 (0.259)</td>
+      <td>4</td>
+      <td>3.3 (0.5)</td>
+      <td>0.147 (0.162)</td>
+    </tr>
+    <tr>
+      <td>PB1</td>
+      <td>9</td>
+      <td>3.1 (2.7)</td>
+      <td>0.119 (0.231)</td>
+      <td>6</td>
+      <td>3.2 (3.8)</td>
+      <td>0.044 (0.038)</td>
+      <td>3</td>
+      <td>2.3 (1.2)</td>
+      <td>0.024 (0.019)</td>
+    </tr>
+    <tr>
+      <td>PB1-F2</td>
+      <td>9</td>
+      <td>0.1 (0.3)</td>
+      <td>0.024 (NA)</td>
+      <td>6</td>
+      <td>0.0 (0.0)</td>
+      <td>0.000 (0.000)</td>
+      <td>3</td>
+      <td>0.0 (0.0)</td>
+      <td>0.000 (0.000)</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>8</td>
+      <td>2.5 (2.7)</td>
+      <td>0.060 (0.096)</td>
+      <td>6</td>
+      <td>2.2 (1.8)</td>
+      <td>0.054 (0.106)</td>
+      <td>4</td>
+      <td>2.0 (0.8)</td>
+      <td>0.033 (0.028)</td>
+    </tr>
+    <tr>
+      <td>PA-X</td>
+      <td>8</td>
+      <td>0.8 (0.9)</td>
+      <td>0.063 (0.069)</td>
+      <td>6</td>
+      <td>0.7 (1.2)</td>
+      <td>0.015 (0.003)</td>
+      <td>4</td>
+      <td>0.5 (0.6)</td>
+      <td>0.038 (0.011)</td>
+    </tr>
+    <tr>
+      <td>HA</td>
+      <td>10</td>
+      <td>1.2 (1.2)</td>
+      <td>0.036 (0.060)</td>
+      <td>6</td>
+      <td>1.7 (0.8)</td>
+      <td>0.092 (0.179)</td>
+      <td>4</td>
+      <td>1.0 (0.0)</td>
+      <td>0.024 (0.015)</td>
+    </tr>
+    <tr>
+      <td>NP</td>
+      <td>11</td>
+      <td>3.0 (3.1)</td>
+      <td>0.102 (0.246)</td>
+      <td>6</td>
+      <td>1.7 (1.2)</td>
+      <td>0.080 (0.169)</td>
+      <td>4</td>
+      <td>1.0 (0.8)</td>
+      <td>0.023 (0.008)</td>
+    </tr>
+    <tr>
+      <td>NA</td>
+      <td>11</td>
+      <td>2.3 (1.9)</td>
+      <td>0.019 (0.012)</td>
+      <td>6</td>
+      <td>1.8 (1.7)</td>
+      <td>0.035 (0.023)</td>
+      <td>4</td>
+      <td>1.8 (1.5)</td>
+      <td>0.170 (0.256)</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>11</td>
+      <td>1.3 (1.7)</td>
+      <td>0.041 (0.079)</td>
+      <td>6</td>
+      <td>0.7 (1.2)</td>
+      <td>0.017 (0.011)</td>
+      <td>4</td>
+      <td>0.0 (0.0)</td>
+      <td>0.000 (0.000)</td>
+    </tr>
+    <tr>
+      <td>M2</td>
+      <td>11</td>
+      <td>0.5 (0.8)</td>
+      <td>0.032 (0.024)</td>
+      <td>6</td>
+      <td>0.3 (0.5)</td>
+      <td>0.018 (0.004)</td>
+      <td>4</td>
+      <td>0.0 (0.0)</td>
+      <td>0.000 (0.000)</td>
+    </tr>
+    <tr>
+      <td>NS1</td>
+      <td>10</td>
+      <td>1.3 (1.4)</td>
+      <td>0.078 (0.110)</td>
+      <td>6</td>
+      <td>0.3 (0.5)</td>
+      <td>0.033 (0.016)</td>
+      <td>4</td>
+      <td>1.0 (0.8)</td>
+      <td>0.014 (0.003)</td>
+    </tr>
+    <tr>
+      <td>NS2</td>
+      <td>10</td>
+      <td>0.5 (0.5)</td>
+      <td>0.122 (0.167)</td>
+      <td>6</td>
+      <td>0.3 (0.8)</td>
+      <td>0.052 (0.059)</td>
+      <td>4</td>
+      <td>0.8 (1.0)</td>
+      <td>0.036 (0.032)</td>
+    </tr>
+  </tbody>
+</table>
+
+_SD, standard deviation; NA, not applicable; LAIV: live-attenuated influenza virus; IAV, influenza A virus.*‘n’ represents the number of BALF samples successfully sequenced by Illumina by treatment groups.†The ‘No. of sequences’ columns represent the number of sequences from H3N2 IAVs for any given protein from the total available samples (n) within each treatment group._
 
 Vaccine-induced immunity may drive genetic selection within a specific genetic region or site of the IAV genome, facilitating the same amino acid changes in multiple pigs even if the pigs are housed in different rooms, which would suggest a sign of convergent evolution. There were 0, 1 (PB1 V632A), and 2 (HA A242G and PB2 N562I) amino acid changes of H1N1 viruses in at least two PRIME BOOST, SINGLE LAIV, and NO VAC pigs from different rooms, respectively. For the H3N2 virus, we only identified NA G143R in NO VAC pigs from multiple rooms. We performed the permutation test for each treatment group to evaluate whether the number of shared amino acid site changes observed in pigs from multiple rooms was more than expected by chance (Figure 4—figure supplement 3). However, we found that the shared polymorphisms in pigs of all three treatment groups were no more than expected by chance for both H1N1 and H3N2 viruses, except for the weak genome convergence of H3N2 viruses observed in NO VAC pigs (permutation in 100% IAV genome: p=0.03536, 70% IAV genome: p=0.04907). As the permutation test was based on the assumption that all the four shared amino acid changes identified in multiple pigs from different rooms were developed independently, the presence of IAV shared polymorphisms in pigs may even be more scarce if any of them was the minor variant transmitted from the seeders. Overall, we observed limited shared diversity in H1N1 and H3N2 IAV detected in vaccinated pigs, which shows a minimal effect of vaccination on the degree of IAV convergence in pigs from the different rooms for either the H1N1 or the H3N2 virus.
 
-## Within-pig nucleotide polymorphisms and evolutionary rates of H1N1 and H3N2 viral populations are similar regardless of vaccination status
+### Within-pig nucleotide polymorphisms and evolutionary rates of H1N1 and H3N2 viral populations are similar regardless of vaccination status
 
 We calculated the nucleotide diversity (Pi, average number of pairwise nucleotide differences per site) to measure the degree of genetic variation for the H1N1 and H3N2 viral populations within pigs from the different treatment groups (Figure 5A). However, neither the H1N1 nor the H3N2 viruses from any pig, regardless of treatment group, had statistically significant Pi differences at individual coding regions or in all coding regions combined (i.e., whole genome). One exception was the higher nucleotide diversity in pigs from the PRIME BOOST group when compared to the SINGLE LAIV group for the NP gene (p=0.049, Dunn’s test with Benjamini–Hochberg correction) of the H1N1 virus.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig5-v1.jpg)
+
+**Figure 5.:** (A) Nucleotide diversity (Pi) was computed for each coding region of H1N1 and H3N2 viruses for each treatment group. The nucleotide diversity is shown as mean with standard error for PRIME BOOST (brown), SINGLE LAIV (dark green), and NO VAC (dark blue) pigs. The statistical results are noted (*p<0.05) if the nucleotide diversity of any coding region differed significantly between treatment groups, which were compared by Kruskal–Wallis rank-sum test; the Dunn’s test was used for the multiple pairwise comparisons with Benjamini–Hochberg correction. The standard errors were calculated through 10,000 bootstrap resampling with the replacement. (B) The evolutionary rates were calculated separately for H1N1 and H3N2 viruses at synonymous (dark blue circle), nonsynonymous (pink square), and stop-gained (green triangle) sites for each sample on antigenic proteins and whole-genome level. The evolutionary rates are displayed as means with standard deviations and compared by Kruskal–Wallis rank-sum test, followed with the Dunn’s test for the multiple pairwise comparisons; the p-values were corrected by the Benjamini–Hochberg method. The statistical results are noted (*p<0.05) if the evolutionary rate of any coding region and mutational type was significantly different between pigs from any two groups. The nonsynonymous (piN) or synonymous (PiS) nucleotide diversity is the average number of pairwise nonsynonymous or synonymous polymorphism/diversity per nonsynonymous or synonymous site and computed for each coding region and sample by treatment groups. The paired t-test was used to test the null hypothesis that piN = piS, and the significant results (p<0.05) are marked in red font. The p-values are assigned as ‘NA’ if no SNVs were identified in a given coding region in any groups or the number of available samples was not enough to perform the statistical analysis, and the ratios of piN to piS (piN/piS) are displayed as ‘NA’ if there was no synonymous single-nucleotide variant (SNV) found in that coding region for pigs in any treatment groups. The piN/piS = 0 indicates no nonsynonymous SNVs were identified in any coding region from pigs in any treatment groups. The number of samples/sequences used to calculated the nucleotide diversity and evolutionary rates for each H1N1 and H3N2 coding region from different groups can be found in Table 2 and Table 3, respectively. Figure 5—figure supplement 1 shows the evolutionary rates and ratios of nonsynonymous to synonymous nucleotide diversity on protein products from H1N1 and H3N2 internal genes. The detailed values of PiN and PiS for H1N1 and H3N2 viruses by treatment groups and coding regions can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78618/elife-78618-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Figure settings and statistical analysis are the same as in Figure 5B.
 
 We calculated the evolutionary rates for H1N1 and H3N2 viruses at the whole-genome and individual coding region level to assess the pace of synonymous, nonsynonymous, and stop-gained mutations accumulated on virus populations in pigs by treatment (Figure 5B, Figure 5—figure supplement 1). Only the rate of stop-gained mutations in the N1 gene differed between groups (PRIME BOOST – SINGLE LAIV: p=0.0009, PRIME BOOST – NO VAC: p=0.0004, Dunn’s test with Benjamini–Hochberg correction). For all other genome changes in the H1N1 and H3N2, similar rates for all three types of mutations between any two individual groups did not differ significantly in any individual IAV coding region within pigs from different vaccination statuses.
 
@@ -99,7 +586,7 @@ Finally, understanding the association between IAV vaccination and evolution is 
 
 ## Materials and methods
 
-## Vaccine-challenge experiments in pigs
+### Vaccine-challenge experiments in pigs
 
 All the BALF samples analyzed in this study were obtained from pigs infected using a co-infection seeder pig model using an H1N1 and an H3N2 IAV strain to evaluate the protective efficacy of different prime-boost vaccination protocols in pigs (Li et al., 2020). All the animal work followed the protocols approved by the University of Minnesota Institutional Animal Care and Use Committee (protocol ID: 1712-35407A) and the Institutional Biosafety Committee (protocol ID: 1508-32918H).
 
@@ -107,23 +594,23 @@ The infection seeder pig model was set up to mimic field conditions where pigs b
 
 To evaluate IAV reassortment happening in naïve and vaccinated pigs, we selected pigs from two rooms housing pigs vaccinated with inactivated vaccines and one room housing LAIV pigs. This was done to select seeder pigs that shed relatively high quantity of both challenge viruses (Ct values ranging between 21.15 and 30.51 when placed in contact with the vaccinated pigs) and that shed IAV for at least 2 days after being mixed with the other pigs. This situation allowed for sufficient IAV contact exposure from the seeders to all pigs in the room, which is the prerequisite for IAV reassortment. BALF samples from pigs that yielded virus replication by virus titration (TCID50 ≥ 1.75 /ml) were used for viral plaque purification. Thirteen BALF samples yield IAV plaques that then were used to evaluate IAV reassortment happening in the naïve and vaccinated pigs (Table 1). For analysis purposes, pigs were grouped in three groups named (a) prime boost (COM/COM, AUT/AUT, COM/AUT and LAIV/COM pigs), (b) single LAIV (LAIV/NONE pigs), and (c) nonvaccinated (NO VAC/CHA pigs) groups.
 
-## Plaque library preparation
+### Plaque library preparation
 
 Plaque assay to purify individual virions was performed on Madin–Darby canine kidney (MDCK) cell monolayers (Tobita et al., 1975). MDCK cells were obtained from the University of Minnesota Veterinary Diagnostic Laboratory (VDL). The cells were purchased from the American Type Culture Collection (ATCC-CCL-34). The cell line identification was verified morphologically. The MDCK cells were free of mycoplasma contamination and tested annually by VDL staff. Briefly, BALF samples were tenfold serially diluted using IAV growth medium, which was made up of Dulbecco’s modified Eagle medium (DMEM, Gibco Invitrogen, Carlsbad, CA), 4% BSA fraction V 7.5% solution (Gibco, Life Technologies, Carlsbad, CA), 0.15% 1 mg/ml TPCK trypsin (Sigma-Aldrich, St. Louis, USA), and 1% antibiotic-antimycotic (Gibco, Life Technologies, New York, NY). The MDCK cells cultured in six-well plates, washed twice using Hanks' Balanced Salt Solution (HBSS, BioWhittaker, Verviers, Belgium) with 0.15% 1 mg/ml TPCK trypsin (Sigma-Aldrich), then inoculated using the diluted BALF samples and incubated for 1 hr in 37℃ at 5% CO2 incubator. After melting in 70℃ water bath, one volume of 4% Agarose Gel (Gibco, Life Technologies) was mixed by a three-volume preheated IAV growth media to make the overlay gel liquid and kept at 37℃ water bath. After 1 hr incubation, the diluted samples were aspirated and gently replaced by the warm overlay gel liquid at room temperature. When the overlayed gel became solid, the plates were invertedly incubated in a CO2 incubator for 3–5 days. Up to 30 visualized plaques were randomly picked up from each sample using micropipette tips and propagated individually on MDCK cells. The isolated plaques were stored at –80℃ for further whole-genome sequencing. The number of plaques isolated from each BALF sample is summarized in Supplementary file 2.
 
-## RNA extraction, next-generation sequencing, and quality control
+### RNA extraction, next-generation sequencing, and quality control
 
 RNA extraction from BALF samples and plaque isolates was performed using the MagMax Viral RNA isolation kit (Ambion, Life Technologies, USA) (Zhou et al., 2009). The viral cDNA was amplified from extracted RNA through one-step reverse transcription-PCR amplification by using SuperScript III One-Step RT-PCR system with High Fidelity Platinum Taq DNA Polymerase (Invitrogen, Life Technologies, USA) with degenerate primers (10 uM MBTuni-12M and MBTuni-13) (Keller et al., 2018; Zhou et al., 2009). The PCR product was checked by NanoDrop 1000 (Thermo Fisher Scientific) and cleaned up by the QIAGEN QIAquick PCR Purification Kit (QIAGEN, USA). Purified PCR products were fragmented and tagged with the indexed adaptors using the Nextera DNA XT Sample Preparation Kit (Illumina, San Diego, CA). The sequence library was quantified by using the Quant-iT PicoGreen dsDNA Assay Kit (Invitrogen). The barcoded library was pooled in equimolar concentrations and multiplexed and sequenced by 2 × 150 bp paired-ends on Illumina Nextseq 550 Mid-Output mode platform at the University of Minnesota Genomics Center (UMGC). The sequence data obtained from UMGC was analyzed using the software available at the University of Minnesota Supercomputing Institute (MSI) platform. The raw reads were assessed for sequence quality using Fast-QC and trimmed by Trimmomatic (Andrew, 2010; Bolger et al., 2014). The trimming on the BALF sequences was conducted using the command: java -jar path-to-trimmomatic-0.33.jar PE input.fastq output.fastq ILLUMINACLIP: path-to-adaptor.fasta:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:5:30 MINLEN:75. The command removes the adaptors and the bases with Q-score below 3 at the beginning and end of the raw reads, trimming the sequences in sliding windows of 5 base pairs and cutting the scan bases with the average Q-scores under 30. The reads were discarded if trimmed to the length below 75 bps. The trimming of the plaque sequences was performed using the same command but with different parameters: java -jar path-to-trimmomatic-0.33.jar PE input.fastq output.fastq ILLUMINACLIP: path-to-adaptor.fasta:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:20 MINLEN:36, which trimmed the raw reads with the sliding windows of 4 base pairs and cutting the scan bases with the average Q-scores under 20. Reads were omitted if the length was below 36 after trimming.
 
-## Reassortant recognition of viral plaques
+### Reassortant recognition of viral plaques
 
 The trimmed reads of viral plaque isolates were de novo assembled by Shovill (Seemann, 2017). The assembled contigs were annotated by OctoFLU for the initial inspection and sorted by IAV genes (Chang et al., 2019). Within each sample, the same IAV gene’s contigs were omitted if the sequence length was <70% of the total nucleotide bases or <20% of the overall k-mer coverage on corresponding IAV segments. Occasionally, the longest contigs (~1.7% of total analyzed sequences) of any plaque isolates were preserved for genotyping if no sequences covered 70% of nucleotide sites for any of their IAV segments. The consensus sequences from isolated plaques for IAV reassortant identifications were shown in Figure 2—source data 2, and aligned with the sequences from the curated reference package from OctoFLU, and the sequences of H1N1 and H3N2 challenge viruses were aligned using the MUSCLE program in Geneious (version 2021.0.3) (Chang et al., 2019; Edgar, 2004; Kearse et al., 2012). The plaque gene segments' sources were initially checked by comparing the genetic distance between plaque sequences with the reference sequences of H1N1 and H3N2 challenge viruses in Geneious (version 2021.0.3). IQ-TREE was used to construct the maximum likelihood tree of each gene segment in 1000 bootstrap replicates with the best-fit nucleotide substitution model auto-detected by its curate package – ModelFinder – to further verify the origin of plaque segments (Nguyen et al., 2015). The tree files were visualized in FigTree (Rambaut, 2009). Based on the origins of the eight gene segments, a genotype was assigned to each plaque isolate. A viral plaque was considered a reassortant if there were one or more gene segment substitutions of both parental H1N1 and H3N2 challenge viruses. A mixed genotype denomination was assigned to those reassortants from plaques that in a given gene segment had complete gene segments from both of the parental viral strains. We labeled the reassortants differently whether they had a substitution with a single gene in a given gene segment (R01–R17) or had more than one (mixed genotypes, M01–M16). The maximum likelihood tree for the sequences of each gene segment is displayed in Figure 2—source data 1.
 
-## Identification of within-host variants
+### Identification of within-host variants
 
 The variant calling pipeline has been described previously elsewhere (Moncla et al., 2020). In this study, we only identified the H1N1 (A/swine/Minnesota/PAH-618/2011) and H3N2 (A/swine/Minnesota/080470/2015) within-host variants on the gene reads directly sequenced from the BALF samples. Briefly, the trimmed reads were imported and mapped to the reference sequences of the H1N1 and H3N2 challenge viruses in Geneious (version 2021.0.3) (Kearse et al., 2012). We excluded the consensus sequences from any IAV segments whose average coverages were less than 100 reads (Moncla et al., 2020). The mapped reads were exported in SAM format, sorted by Picard Sortsam (command: java -jar picard.jar SortSam INPUT=input_file.sam OUTPUT=output_file.sam SORT_ORDER=coordinate), and duplicate reads removed using Picard MarkDuplicates (command: java -jar picard.jar MarkDuplicates REMOVE_DUPLICATES=true INPUT=input_file.sam OUTPUT=output_file.sam METRICS_FILE=test.sam.metrics) to avoid PCR bias (http://broadinstitute.github.io/picard/). The files were converted to mpileup files by Samtools (https://github.com/samtools/samtools; Davies, 2022) and the viral variants were called by VarScan (https://github.com/dkoboldt/varscan; Koboldt, 2019) with the command: samtools mpileup -f reference_file.fasta input_file.sam | java -jar VarScan.v2.3.9.jar pileup2snp >output_file.vcf (Koboldt et al., 2009; Li et al., 2009). The reported variants were filtered with a minimum depth of 100 reads, the minimum frequency of 1%, mean PHRED quality score of 30, and with the variant detected in both forward and reverse reads by performing the command: java -jar VarScan.v2.3.9.jar filter input_file.vcf --min-coverage 100 --min-avg-qual 30 --min-var-freq 0.01 --min-strands2 2 --output-vcf 1>output_file.vcf. For the samples that contained both challenge viruses, the generated variant report was checked and corrected using a custom Python script to ensure no variants were mistakenly recorded in the report due to nucleotide differences between the challenge viruses, given that mis-mapping of the reads against the reference templates could occur due to the close genetic distance of internal gene segments between H1N1 and H3N2 viruses. For the called SNVs that were located in the same nucleotide sites of H1N1 and H3N2 genomes from the same sample, we checked the original mapping reads and withdraw the false-positive SNVs from the variant report. The final identified variants listed in vcf files were parsed and annotated based on their effect of amino acid changes on reference sequences by the custom Python script. The SNVs identified in H1N1 and H3N2 coding regions were reported based on the H1 and H3 numbering schemes, respectively, including the signal peptide.
 
-## Evolutionary analysis
+### Evolutionary analysis
 
 The within-host evolutionary rates were calculated separately for synonymous, nonsynonymous, and stop-gained mutations at the whole-genome and individual protein level based on methods described previously (Xue and Bloom, 2020). The evolutionary rate was calculated for each sample by summing the frequencies of SNVs by their mutation type and divided by available sites and the number of days post-challenge. All BALF samples were collected at 7 days post-contact with the seeder pigs, and the available sites for synonymous, nonsynonymous, and stop-gained mutations were normalized by multiplying the total length of nucleotide sequences for each coding region or all sequenced coding regions combined together (whole genome) by 25, 72, and 3%, respectively. These proportions of sites in IAV genome available for different mutation types were calculated in previous published research (Xue and Bloom, 2020), based on counting the proportion of available sites for each mutation type on the genome of A/Victoria/361/2011 (H3N2) by the Nei and Gojobori method (stop-gained mutations are split from the nonsynonymous mutations) (Nei and Gojobori, 1986), and assuming the frequency of transitions is threefold higher than transversions (Bloom, 2014; Pauly et al., 2017; Sanjuán et al., 2010). The efficacy of selection for the IAV populations was estimated by calculating the nucleotide diversity (Pi), synonymous nucleotide diversity (piS), and nonsynonymous nucleotide diversity (piN) at the individual coding region or whole-genome (all sequenced coding regions combined together) level based on the identified within-host variants for each sample by SNPGenie (Nelson and Hughes, 2015) (https://github.com/chasewnelson/SNPGenie; Nelson, 2021).
 
@@ -131,10 +618,10 @@ To identify the variants located in functional relevant sites, the data of all c
 
 The permutation test on shared variant sites was performed at the amino acid level to identify whether the BALF samples from each treatment group shared more polymorphic sites than random chance by the custom Python script adapted from https://github.com/blab/h5n1-cambodia/blob/master/figures/figure-5b-shared-sites-permutation-test.ipynb (Moncla, 2019). The permutation test was performed as described before (Moncla et al., 2020). Briefly, for each treatment group, we counted the number of variable amino acid sites, n, on each coding region for each sample. We started the permutation test for each group by randomly simulating n variable amino acid sites at each coding region for each sample. Within each iteration, we count the total number of shared polymorphic amino acid sites from all IAV coding regions for each group after removing the amino acid sites shared between pigs from the same room. The null distribution was generated by calculating the total number of polymorphic amino acid sites shared by at least two pigs from different rooms for each treatment group through 100,000 simulations of each gene segment and BALF sample. The p-value was calculated for each treatment group as the total number of iterations in which an equal or larger number of polymorphic sites were shared compared to those observed in actual data, divided by the number of simulations, which was 100,000. Since previously published work indicates that the IAV genome is highly constrained with about 30% of mutations being lethal (Visher et al., 2016), we assumed that only 70% of the IAV genome could tolerate mutations. Therefore, we ran the permutation test on both 70 and 100% of each coding region’s amino acid sites. All the Python scripts used for evolutionary analysis are available at https://github.com/TorremorellLabUMN/Swine-IAV-within-host-evolution/tree/Main/Script.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was conducted with the R program version 3.6.2 (Chambers, 2008). The percentage of IAV reassortants by treatment groups or vaccination status was compared using a binomial logistic regression model, allowing for overdispersion. The pairwise differences between groups were compared using the chi-squared deviance test, and the p-value was adjusted for multiple comparisons using the Bonferroni–Holm method. This model accounted for the unequal number of pigs from different treatment groups and different number of plaques isolated from each individual pig. The significant results represent the statistical differences at the individual pig level. Kruskal–Wallis rank-sum test was utilized to compare the means of SNV quantity and frequency, nucleotide diversity (Pi), and evolutionary rates by synonymous mutation, nonsynonymous mutation, and stop-gained mutation between treatment groups. The Dunn’s test was performed for the pairwise comparisons, and the p-values were adjusted using the Benjamini–Hochberg method. The paired t-test was applied to assess the significant differences between the mean piNs and mean piSs within each treatment group for each coding region. The Spearman’s rank-order correlation test was performed to evaluate the strength and direction of associations between the percentage of IAV reassortants and co-infection days in pigs. The same statistical analysis also was computed to compare the correlation between HI titers (log2 transformed) and ELISPOT cell counts versus the values of nucleotide divergence, Pi, PiN, and PiS of the HA segment in H1N1 and H3N2 viruses.
 
-## Data availability
+### Data availability
 
 The raw sequence reads generated in this study have been deposited in SRA (NCBI) under BioProject accession number PRJNA813974. All the raw datasets and custom Python scripts generated in this study are available in the GitHub repository at https://github.com/TorremorellLabUMN/Swine-IAV-within-host-evolution; Li, 2022.

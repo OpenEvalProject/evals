@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Genetics, University of Cambridge Cambridge United Kingdom
+1. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ More recent studies applied improved analytical tools, as well as additional con
 
 ## Results
 
-## Limited overlap between the sets of novel imprinting candidates from RNA-seq
+### Limited overlap between the sets of novel imprinting candidates from RNA-seq
 
 The four studies used for our analysis generated whole transcriptomes from reciprocal hybrid mouse tissues to identify novel imprinted genes. Reciprocal mouse crosses take advantage of sequence-specific polymorphisms to distinguish parental-origin effects from those caused by the genetic background of different mouse strains. A summary comparing the methods used in all four studies is described in the methods section and summarized in Supplementary file 1a. We first assessed the overlap between the studies (Figure 1A and B). For this, all genes identified were compiled and those with alternative names between studies were merged. This produced a list of 313 genes of which only 36 (11.5%) were identified with allelic biases in all four studies (Supplementary file 1b). Genes were then divided into ‘Known’ (had previously been identified as imprinted or validated using a non-RNA-seq method - Supplementary file 1b) or ‘Novel’ (first identified in these studies or previously un-validated RNA-seq experiments). By our classification, Dataset A identified 99 genes with ASE, of which 26 were novel and 73 were known. Dataset B identified 209 genes, 151 novel and 58 known. Dataset C identified 112 genes, 51 novel and 61 known, and Dataset D identified 95 genes, 57 novel and 38 known. When the overlap between studies was assessed, 30 out of 87 (35%) known genes were identified in all four studies compared with six out of 226 novel genes (2.7%) (Figure 1A and B and Supplementary file 1c).
 
@@ -43,11 +43,23 @@ As imprinted genes tend to be clustered within the genome, novel genes were subd
 
 The vast majority (82.7%) of novel parental-origin-specific biased genes were unique to one study, whereas only 28.7% of known genes fell in the same category (Figure 1D). The lack of overlap in novel genes suggests that the genes identified in these studies may be subjected to tissue-specific imprinting. Most known genes only identified in one study come from Dataset A. This is not surprising since more tissues were analyzed including four extra-embryonic tissues and 6 of the 14 unique known genes from this study have previously been shown to be specifically imprinted in the placenta or yolk sac (Wang et al., 2011b; Zwart et al., 2001; Okae et al., 2012; Paulsen et al., 2000; Kuzmin et al., 2008; Wang et al., 2011a). To investigate the effect of tissue specificity further, gene sets identified in different studies, but in the same tissue, were compared. Once again minimal overlap was observed between novel genes compared with known genes in the same tissues (Figure 1E and F). Thus, despite the careful analytical measures that appear to have been taken in all four studies to reduce false positives, the minimal overlap between the sets of novel genes suggests that some of these may indeed be false positives.
 
-## Reanalysis of data from previous studies indicates differences between studies are due to experimental design and analysis
+### Reanalysis of data from previous studies indicates differences between studies are due to experimental design and analysis
 
 The lack of overlap between the four studies could be due to the different methods used, and we, therefore, decided to run the sequence data generated from three of the studies (which all used C57BL/6xCastEiJ reciprocal crosses) through the same analysis pipeline and see if the overlap was improved. We utilized the more recently established ISoLDE (Integrative Statistics of alleLe Dependent Expression) package (Reynès et al., 2020) that had not been employed in any of the four studies to call allele-specific expression (ASE). ISoLDE uses a nonparametric statistical method to infer ASE in RNA-seq data from reciprocal crosses. It was benchmarked by the authors on six RNA-seq datasets including Datasets B and C used in this study and has been used by others to study imprinted gene expression in the mammary gland (Xu et al., 2020).
 
 We chose the hypothalamus, cerebellum, liver, muscle, and whole adult brain from Dataset A, the arcuate nucleus (ARN), the dorsal raphe nucleus (DRN), liver and muscle from Dataset B, and P8 and P60 cerebellum from Dataset C. First, we assessed the overlap between our calls and the calls from the original studies. 204 genes were identified across the five different tissues from Dataset A (Supplementary file 1d). 66% of total known genes and 17% of Class-3 genes overlap using their approach and ISoLDE (Figure 2A). For these data, ISoLDE identified a high proportion of Class-1 +2 genes (65.2%). No overlap is observed in Class-1 +2 genes as none were identified in the original study. This high number of novel genes called by ISoLDE is most likely due to the absence of biological replicates in Dataset A as other datasets without biological replicates also have increased novel calls (data not shown).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Venn diagrams showing the overlap between allelic biased genes called by our pipeline with the ISoLDE package (gray circles) versus the original studies. A – Dataset A, B - Dataset B, C - Dataset C. Overlapping novel genes are listed to the right. Dataset A only genes called in the hypothalamus, cerebellum, liver, muscle, and whole adult brain were analyzed. (D–G) Venn diagrams showing the overlap between allelic biased genes called by our pipeline from sequence data generated from the same tissue by different studies: liver (D), muscle (E), hypothalamus (F) from Dataset A and Dataset B and cerebellum (G) from Dataset A and Dataset C. (H–I) Venn diagrams of three-way overlap between allelic biased genes called by our pipeline from sequence data from the liver (H) and muscle (I) generated by Dataset A, Dataset B, and Dataset E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Data generated from re-analysis of original RNA-seq datasets. To allow for comparison across the different datasets, expression levels are reported as mean TPM (transcripts per million) from all biological replicates. Source data is in Supplementary file 1f. Samples: Dataset A - whole adult brain, cerebellum (cb) hypothalamus (hypo) liver, muscle. Dataset B - arcuate nucleus (ARN), dorsal raphe nucleus (DRN), liver, and muscle. Dataset C - P8 and P60 cerebellum.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Number of ISoLDE called genes are in pale gray, and overlaps with original study are in dark gray. Overlapping genes are listed to the right. Genes in red were flagged by ISoLDE and genes in bold were validated by pyrosequencing.
 
 For Datasets B and C, this identified 86 and 63 total ASE genes, respectively (Supplementary file 1d). For Dataset B, 49 known genes overlap which is 73% of all genes identified using both methods (Figure 2B). This is consistent across all four tissues analyzed with between 50–71% of known imprinted genes overlapping in the tissues (Supplementary file 1e). Fewer novel genes show overlap between the two methods: 11% of Class-3 genes and 1% of Class-1 +2 overlap (Figure 2B and Supplementary file 1d). A similar pattern is observed in the Dataset C with 67% of known genes overlapping, 14% of Class-3, and 8% of Class-1 +2 (Figure 2C). For both datasets, fewer novel genes were identified using the common pipeline than in the original studies indicating that the individual methods used to identify allele-specific genes in the four studies greatly influence the calling of novel imprinted genes. Only one Class-1 +2 gene was found in each study: Gm11410 in Dataset B and BC034090 in Dataset C. This is a much lower proportion of Class-1 +2 genes than was called in Dataset A (2.3% and 3.2% in datasets B and C, respectively vs. 65.2%) and is most likely due to the higher number of biological replicates sampled in Datasets B and C.
 
@@ -59,7 +71,7 @@ To see if a particular dataset caused the lack of overlap, we next incorporated 
 
 We next investigated whether strain biases influenced novel gene calling and the impact of this on calling parental-origin-specific expression bias. The overlap between strain specific genes called by ISoLDE and novel genes called in Datasets B and C was compared. Twenty-five genes called as ASE in Dataset B are called as strain-specific by ISoLDE of which 20 are Class-1 +2 (Supplementary file 1g) compared with only one overlapping parent-of-origin called gene, suggesting they were miscalled as imprinted in the original study. Five overlapping strain-specific genes were called in the Dataset C: three of them in known imprinted regions and two known imprinted genes – highlighting that strain-specific expression can also act on imprinted genes and needs to be considered when calling allele-specific expression.
 
-## Weakly biased Class-3 genes are peripherally located and preferentially expressed from the chromosome carrying the germline methylation mark
+### Weakly biased Class-3 genes are peripherally located and preferentially expressed from the chromosome carrying the germline methylation mark
 
 One of the most surprising findings of the cited studies is that many novel imprinting candidates show only a weak bias in the expression of the parental alleles, in some cases only slightly different from an unbiased 50:50 expression ratio. Perez and colleagues grouped their genes according to the percentage expression from the preferred allele (Perez et al., 2015) and we used and extended this grouping to the gene sets from the other studies (Figure 3A and Supplementary file 1b). Overall, among the 311 known and novel candidate genes for which bias data was available, we observed a bimodal distribution with 169 genes in the 50–60% bias group and 95 genes in the 90–100% group (Figure 3A). This bimodal distribution had already been described by Perez and colleagues (Perez et al., 2015). Notably, two-thirds of known imprinted genes (77.3%) were in the 90–100% group while only 12.1% of novel candidates show this high expression bias. Most novel genes (73.1%) were found to have only weak biases with 50–60% expression coming from the preferred allele. 88.7% of Class-1 novel singletons and 83.9% of Class-2 genes in novel clusters fall within this weakly biased group (Figure 3A). Interestingly, Class-3 genes, close to known imprinted regions, also show a bimodal distribution: 53.7% fall in the 50–60% group and 23.2% in the 90–100% group but, only nine genes (9.5%) show a 70–90% expression bias. The presence of Class-3 genes displaying strong imprinted expression again indicates that the full extent of imprinted expression at some imprinted clusters has not been fully established.
 
@@ -79,27 +91,1261 @@ Next, Class-3 genes were classified by whether they were flanked by previously k
 
 We next integrated the position and strength of bias with the ICR status on the chromosome preferentially expressing the gene and found over half of all Class-3 genes are weakly biased, at the edge of the known cluster and preferentially expressed from the chromosome that carries the methylated copy of the ICR (Figure 4B). This suggests that secondary repressive mechanisms acting at imprinted genes on the unmethylated chromosome are exerting a small effect on the expression levels of a gene at the periphery of the cluster. Perez et al., previously showed that the degree of bias is reduced as a function of distance from the most strong bias gene in the cluster indicating that the influence of ICRs diminishes over distance. To test whether the ICRs control these weak biases we used the Dlk1/Dio3 region as a model since it has strongly biased Class-3 genes in the centre of the cluster and nine weakly biased genes were called at the periphery (Figure 4D). Utilizing a previously described mouse model with a deletion of its ICR (IG-DMR) that causes a maternal-to-paternal epigenotype switch when maternally inherited (Lin et al., 2003), we looked to see if the biased expression of peripheral genes was lost when the ICR was removed. Female mice heterozygous for the deletion were crossed with castaneus males to allow allele-specific expression to be determined by pyrosequencing. Dync1h1 which is located on the distal side of the region and was reported to be paternally biased in two of the original studies shows fully biallelic expression in E15.5 brain from maternal heterozygotes and wildtype littermates (Figure 4E). Conversely, two genes proximal to the defined cluster, Wars, and Wdr25, both show a weak paternal expression bias in wildtype brains that is significantly reduced in mice with the IG-DMR deletion (Figure 4E). This indicates that the weak biases seen at the edges of imprinted clusters are regulated by the ICRs and may be innocent bystanders of the different epigenetic environments established by the ICR on each chromosome.
 
-## Weakly biased genes close to known imprinted domains are more likely to experimentally validate than novel genes elsewhere in the genome
+### Weakly biased genes close to known imprinted domains are more likely to experimentally validate than novel genes elsewhere in the genome
 
 The lack of overlap between studies in the same tissue (Figure 1F and Figure 2D–I) implies a high number of false positives. To test if these parent-of-origin biases are real we performed quantitative RT-PCR and pyrosequencing validation on eight Class-1, 15 Class-2 genes (representing five novel clusters), and 20 Class-3 genes identified close to seven known imprinted domains. These genes included those that overlapped between the original studies, and those called as ASE or ‘Undetermined’ by ISoLDE that overlapped with an original study (Figure 2A–C, Figure 2—figure supplement 2 and Supplementary file 1c and i). Six known imprinted genes were tested as controls: the robustly imprinted Dlk1 and Peg3, the more moderately biased Mcts2 and Herc3, and the extra-embryonic tissue-specific imprinted genes Gab1 and Ampd3 (Okae et al., 2012; Schulz et al., 2006). Thirteen tissues were analyzed from three different timepoints e16.5, P7, and P60. Expression was called as biallelic if the mean of the paternal expression from both the C57BL/6 × CastEiJ and CastEiJ × C57BL/6 crosses was between 45 and 55% (Table 1).
 
-## Class-1
+**Table 1.**
+ Table showing the summary of all the allele-specific pyrosequencing performed to validate putative-biased genes.Values show the mean expression (%) from the paternal allele of both reciprocal crosses to eliminate strain bias. Values above 55% are called as paternally biased (blue) and values below 45% are called as maternally biased (red). Assays with a strain bias of greater than 45:55 in more than one tissue are indicated in the 19th column. Genes that only validate in the placenta are called as Placental in the 20th column (Red = Maternal, Blue = Paternal).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Genes</th>
+      <th rowspan="2">Chr.</th>
+      <th rowspan="2">Dataset</th>
+      <th rowspan="2">Direction previously reported</th>
+      <th rowspan="2">Class</th>
+      <th>e16.5</th>
+      <th>e16.5</th>
+      <th>e16.5</th>
+      <th>P7</th>
+      <th>P7</th>
+      <th>P7</th>
+      <th>P7</th>
+      <th>P7</th>
+      <th>P60</th>
+      <th>P60</th>
+      <th>P60</th>
+      <th>P60</th>
+      <th>P60</th>
+      <th rowspan="2">Strain Bias</th>
+      <th rowspan="2">Validation status</th>
+    </tr>
+    <tr>
+      <th>Plac.</th>
+      <th>Liver</th>
+      <th>Brain</th>
+      <th>Cortex</th>
+      <th>Hyp.</th>
+      <th>Cb.</th>
+      <th>Hipp.</th>
+      <th>B.S</th>
+      <th>Cortex</th>
+      <th>Hyp.</th>
+      <th>Cb.</th>
+      <th>Hipp.</th>
+      <th>B.S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Class-1 (Novel Singletons)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L3mbtl1</td>
+      <td>2</td>
+      <td>B</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>48.1</td>
+      <td>53.4</td>
+      <td>53.4</td>
+      <td>46.4</td>
+      <td>50.1</td>
+      <td>49.4</td>
+      <td>49.7</td>
+      <td>46.7</td>
+      <td>51.0</td>
+      <td>49.2</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Ahi1</td>
+      <td>10</td>
+      <td>B,D</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>52.8</td>
+      <td>46.5</td>
+      <td>n/a</td>
+      <td>47.0</td>
+      <td>51.6</td>
+      <td>50.9</td>
+      <td>52.8</td>
+      <td>46.9</td>
+      <td>48.6</td>
+      <td>49.4</td>
+      <td>50.0</td>
+      <td>52.4</td>
+      <td>51.3</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Platr20</td>
+      <td>11</td>
+      <td>A</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>51.7</td>
+      <td>49.9</td>
+      <td>50.0</td>
+      <td>49.9</td>
+      <td>50.4</td>
+      <td>50.1</td>
+      <td>50.4</td>
+      <td>50.2</td>
+      <td>49.8</td>
+      <td>49.8</td>
+      <td>50.1</td>
+      <td>50.2</td>
+      <td>49.7</td>
+      <td></td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Calm1</td>
+      <td>12</td>
+      <td>B,D</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>54.7</td>
+      <td>49.5</td>
+      <td>51.4</td>
+      <td>45.9</td>
+      <td>43.4</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Nhlrc1</td>
+      <td>13</td>
+      <td>B, C, D</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>56.6</td>
+      <td>55.6</td>
+      <td>57.8</td>
+      <td>54.8</td>
+      <td>58.8</td>
+      <td>58.1</td>
+      <td>56.1</td>
+      <td>55.4</td>
+      <td>55.0</td>
+      <td>55.2</td>
+      <td>✓</td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Tnk1</td>
+      <td>11</td>
+      <td>A</td>
+      <td>mat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Mlana</td>
+      <td>18</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Gm16299</td>
+      <td>19</td>
+      <td>C</td>
+      <td>pat</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td colspan="5">Class-2 (Novel Clusters)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stx6</td>
+      <td>1</td>
+      <td>C</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>50.7</td>
+      <td>49.2</td>
+      <td>50.3</td>
+      <td>49.8</td>
+      <td>50.1</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td></td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Gabra5</td>
+      <td>7</td>
+      <td>B,D</td>
+      <td>pat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>51.5</td>
+      <td>53.2</td>
+      <td>52.5</td>
+      <td>54.8</td>
+      <td>52.6</td>
+      <td>52.3</td>
+      <td>50.7</td>
+      <td>48.6</td>
+      <td>51.5</td>
+      <td>51.5</td>
+      <td></td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Wnk4</td>
+      <td>11</td>
+      <td>C</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>50.1</td>
+      <td>52.0</td>
+      <td>45.3</td>
+      <td>50.6</td>
+      <td>44.0</td>
+      <td>48.1</td>
+      <td>44.6</td>
+      <td>50.9</td>
+      <td>45.4</td>
+      <td>48.1</td>
+      <td>✓</td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Vat1</td>
+      <td>11</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>43.9</td>
+      <td>50.9</td>
+      <td>52.6</td>
+      <td>49.6</td>
+      <td>48.8</td>
+      <td>50.4</td>
+      <td>51.0</td>
+      <td>49.9</td>
+      <td>46.4</td>
+      <td>51.3</td>
+      <td>50.8</td>
+      <td>49.8</td>
+      <td>50.4</td>
+      <td>✓</td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Rdm1</td>
+      <td>11</td>
+      <td>A</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>49.4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>48.8</td>
+      <td>48.8</td>
+      <td>50.1</td>
+      <td>50.2</td>
+      <td>50.7</td>
+      <td>46.9</td>
+      <td>49.5</td>
+      <td>50.5</td>
+      <td>50.1</td>
+      <td>48.7</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Gaa</td>
+      <td>11</td>
+      <td>B,D</td>
+      <td>pat</td>
+      <td>2</td>
+      <td>48.9</td>
+      <td>52.3</td>
+      <td>53.6</td>
+      <td>51.3</td>
+      <td>47.1</td>
+      <td>51.7</td>
+      <td>53.1</td>
+      <td>51.8</td>
+      <td>51.8</td>
+      <td>51.6</td>
+      <td>47.9</td>
+      <td>51.9</td>
+      <td>50.8</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Pcdhb10</td>
+      <td>18</td>
+      <td>D</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Pcdhb12</td>
+      <td>18</td>
+      <td>B,C</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>40.5</td>
+      <td>41.2</td>
+      <td>41.0</td>
+      <td>39.4</td>
+      <td>41.8</td>
+      <td>42.6</td>
+      <td>42.7</td>
+      <td>42.1</td>
+      <td>43.2</td>
+      <td>44.9</td>
+      <td></td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Pcdhb20</td>
+      <td>18</td>
+      <td>B,C</td>
+      <td>pat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>52.7</td>
+      <td>51.5</td>
+      <td>51.6</td>
+      <td>52.0</td>
+      <td>52.6</td>
+      <td>53.1</td>
+      <td>51.5</td>
+      <td>52.3</td>
+      <td>51.6</td>
+      <td>51.6</td>
+      <td>50.1</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Prdx5</td>
+      <td>19</td>
+      <td>B</td>
+      <td>pat</td>
+      <td>2</td>
+      <td>46.9</td>
+      <td>51.1</td>
+      <td>49.4</td>
+      <td>49.0</td>
+      <td>50.4</td>
+      <td>48.8</td>
+      <td>49.4</td>
+      <td>49.9</td>
+      <td>49.2</td>
+      <td>50.2</td>
+      <td>50.0</td>
+      <td>48.3</td>
+      <td>49.2</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Rtn3</td>
+      <td>19</td>
+      <td>D</td>
+      <td>pat</td>
+      <td>2</td>
+      <td>44.6</td>
+      <td>49.9</td>
+      <td>50.7</td>
+      <td>49.4</td>
+      <td>47.3</td>
+      <td>49.5</td>
+      <td>49.5</td>
+      <td>49.2</td>
+      <td>49.1</td>
+      <td>50.9</td>
+      <td>49.7</td>
+      <td>50.4</td>
+      <td>50.4</td>
+      <td></td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Pla2g16</td>
+      <td>19</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>40.3</td>
+      <td>51.6</td>
+      <td>50.6</td>
+      <td>51.7</td>
+      <td>49.7</td>
+      <td>48.9</td>
+      <td>48.5</td>
+      <td>50.7</td>
+      <td>51.5</td>
+      <td>51.2</td>
+      <td>49.2</td>
+      <td>46.8</td>
+      <td>48.3</td>
+      <td>✓</td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Mr1</td>
+      <td>1</td>
+      <td>C</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>BC034090</td>
+      <td>1</td>
+      <td>C</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Tmem106a</td>
+      <td>11</td>
+      <td>A</td>
+      <td>mat</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td colspan="5">Class-3 (Close to known imprinted genes)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Adam23</td>
+      <td>1</td>
+      <td>A,B,C,D</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>48.0</td>
+      <td>52.0</td>
+      <td>59.1</td>
+      <td>56.5</td>
+      <td>57.8</td>
+      <td>56.5</td>
+      <td>58.0</td>
+      <td>53.7</td>
+      <td>55.6</td>
+      <td>58.7</td>
+      <td>53.5</td>
+      <td>56.5</td>
+      <td>54.1</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Mcts2</td>
+      <td>2</td>
+      <td>A,B,C</td>
+      <td>pat</td>
+      <td>K</td>
+      <td>77.2</td>
+      <td>82.9</td>
+      <td>64.7</td>
+      <td>71.8</td>
+      <td>80.2</td>
+      <td>73.1</td>
+      <td>77.3</td>
+      <td>80.4</td>
+      <td>85.7</td>
+      <td>78.3</td>
+      <td>70.6</td>
+      <td>87.8</td>
+      <td>84.2</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Cox4i2</td>
+      <td>2</td>
+      <td>C</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>49.3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>69.8</td>
+      <td>51.0</td>
+      <td>56.6</td>
+      <td>60.0</td>
+      <td>56.5</td>
+      <td>55.3</td>
+      <td>55.0</td>
+      <td>52.8</td>
+      <td>56.8</td>
+      <td>54.9</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bcl2l1</td>
+      <td>2</td>
+      <td>A,B,C,D</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>49.5</td>
+      <td>50.2</td>
+      <td>61.6</td>
+      <td>60.9</td>
+      <td>61.8</td>
+      <td>58.3</td>
+      <td>59.5</td>
+      <td>58.8</td>
+      <td>59.9</td>
+      <td>61.4</td>
+      <td>57.4</td>
+      <td>59.2</td>
+      <td>59.0</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Tpx2</td>
+      <td>2</td>
+      <td>C</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>49.7</td>
+      <td>49.1</td>
+      <td>53.4</td>
+      <td>52.6</td>
+      <td>50.7</td>
+      <td>53.6</td>
+      <td>51.4</td>
+      <td>56.4</td>
+      <td>55.4</td>
+      <td>64.6</td>
+      <td>62.5</td>
+      <td>61.1</td>
+      <td>✓</td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Herc3</td>
+      <td>6</td>
+      <td>A,B,C,D</td>
+      <td>mat</td>
+      <td>K</td>
+      <td>47.0</td>
+      <td>45.8</td>
+      <td>43.1</td>
+      <td>45.7</td>
+      <td>40.7</td>
+      <td>40.5</td>
+      <td>49.9</td>
+      <td>32.4</td>
+      <td>44.0</td>
+      <td>29.5</td>
+      <td>39.0</td>
+      <td>42.3</td>
+      <td>24.4</td>
+      <td>✓</td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Fam13a</td>
+      <td>6</td>
+      <td>B,D</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>46.1</td>
+      <td>53.2</td>
+      <td>47.9</td>
+      <td>47.1</td>
+      <td>51.3</td>
+      <td>49.4</td>
+      <td>48.4</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Zfp78</td>
+      <td>7</td>
+      <td>B</td>
+      <td>both</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Smim17</td>
+      <td>7</td>
+      <td>B,D</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>38.3</td>
+      <td>48.8</td>
+      <td>35.5</td>
+      <td>50.9</td>
+      <td>44.0</td>
+      <td>44.5</td>
+      <td>45.2</td>
+      <td>43.2</td>
+      <td>52.1</td>
+      <td>50.8</td>
+      <td>49.3</td>
+      <td></td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Peg3</td>
+      <td>7</td>
+      <td>A,B,C,D</td>
+      <td>pat</td>
+      <td>K</td>
+      <td>96.3</td>
+      <td>99.2</td>
+      <td>99.6</td>
+      <td>92.4</td>
+      <td>92.8</td>
+      <td>94.1</td>
+      <td>94.3</td>
+      <td>95.1</td>
+      <td>97.5</td>
+      <td>98.0</td>
+      <td>98.0</td>
+      <td>97.3</td>
+      <td>97.7</td>
+      <td>✓</td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Zfp954</td>
+      <td>7</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Zfp773</td>
+      <td>7</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Zfp772</td>
+      <td>7</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td>Low expression</td>
+    </tr>
+    <tr>
+      <td>Clcn4-2</td>
+      <td>7</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>44.6</td>
+      <td>54.5</td>
+      <td>48.5</td>
+      <td>48.9</td>
+      <td>48.8</td>
+      <td>49.9</td>
+      <td>49.1</td>
+      <td>48.0</td>
+      <td>49.5</td>
+      <td>50.7</td>
+      <td>51.0</td>
+      <td>49.6</td>
+      <td>50.7</td>
+      <td>✓</td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Ifitm10</td>
+      <td>7</td>
+      <td>C,D</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>46.9</td>
+      <td>52.3</td>
+      <td>48.7</td>
+      <td>47.5</td>
+      <td>41.5</td>
+      <td>53.0</td>
+      <td>49.4</td>
+      <td>45.0</td>
+      <td>49.0</td>
+      <td>43.2</td>
+      <td>43.6</td>
+      <td>50.7</td>
+      <td>47.0</td>
+      <td>✓</td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Ctsd</td>
+      <td>7</td>
+      <td>B,D</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>46.8</td>
+      <td>47.8</td>
+      <td>50.1</td>
+      <td>50.0</td>
+      <td>49.0</td>
+      <td>48.4</td>
+      <td>48.9</td>
+      <td>49.8</td>
+      <td>49.3</td>
+      <td>50.2</td>
+      <td>49.0</td>
+      <td>50.5</td>
+      <td>49.5</td>
+      <td></td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Evl</td>
+      <td>12</td>
+      <td>B</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>46.2</td>
+      <td>48.3</td>
+      <td>50.2</td>
+      <td>48.7</td>
+      <td>51.3</td>
+      <td>51.1</td>
+      <td>50.2</td>
+      <td>49.5</td>
+      <td>50.9</td>
+      <td>50.9</td>
+      <td>52.6</td>
+      <td>50.8</td>
+      <td>50.6</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Slc25a29</td>
+      <td>12</td>
+      <td>B</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>18.9</td>
+      <td>45.5</td>
+      <td>52.3</td>
+      <td>53.9</td>
+      <td>56.2</td>
+      <td>54.5</td>
+      <td>53.3</td>
+      <td>54.2</td>
+      <td>52.8</td>
+      <td>53.8</td>
+      <td>50.6</td>
+      <td>53.6</td>
+      <td>53.2</td>
+      <td>✓</td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Wars</td>
+      <td>12</td>
+      <td>C</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>45.2</td>
+      <td>52.5</td>
+      <td>55.1</td>
+      <td>53.9</td>
+      <td>56.2</td>
+      <td>54.5</td>
+      <td>53.3</td>
+      <td>54.2</td>
+      <td>52.8</td>
+      <td>53.9</td>
+      <td>50.6</td>
+      <td>53.6</td>
+      <td>53.2</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Wdr25</td>
+      <td>12</td>
+      <td>B,D</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>50.7</td>
+      <td>52.9</td>
+      <td>52.0</td>
+      <td>50.6</td>
+      <td>48.7</td>
+      <td>51.8</td>
+      <td>59.8</td>
+      <td>49.9</td>
+      <td>51.7</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Dlk1</td>
+      <td>12</td>
+      <td>A,B,C,D</td>
+      <td>pat</td>
+      <td>K</td>
+      <td>95.7</td>
+      <td>87.9</td>
+      <td>93.7</td>
+      <td>92.5</td>
+      <td>92.7</td>
+      <td>94.6</td>
+      <td>90.2</td>
+      <td>95.0</td>
+      <td>89.5</td>
+      <td>95.6</td>
+      <td>93.2</td>
+      <td>86.9</td>
+      <td>95.2</td>
+      <td></td>
+      <td>Paternal</td>
+    </tr>
+    <tr>
+      <td>Ppp2r5c</td>
+      <td>12</td>
+      <td>B,C</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>52.4</td>
+      <td>51.3</td>
+      <td>48.5</td>
+      <td>48.6</td>
+      <td>49.3</td>
+      <td>54.0</td>
+      <td>50.6</td>
+      <td>48.2</td>
+      <td>50.6</td>
+      <td>48.7</td>
+      <td>45.2</td>
+      <td>51.0</td>
+      <td>49.3</td>
+      <td>✓</td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Dync1h1</td>
+      <td>12</td>
+      <td>B,C</td>
+      <td>pat</td>
+      <td>3</td>
+      <td>46.9</td>
+      <td>49.8</td>
+      <td>50.4</td>
+      <td>50.7</td>
+      <td>50.7</td>
+      <td>51.1</td>
+      <td>49.9</td>
+      <td>50.4</td>
+      <td>51.0</td>
+      <td>50.4</td>
+      <td>50.1</td>
+      <td>50.1</td>
+      <td>49.8</td>
+      <td></td>
+      <td>Biallelic</td>
+    </tr>
+    <tr>
+      <td>Ago2</td>
+      <td>15</td>
+      <td>A,B,C,D</td>
+      <td>mat</td>
+      <td>3</td>
+      <td>47.7</td>
+      <td>50.7</td>
+      <td>30.1</td>
+      <td>24.1</td>
+      <td>25.8</td>
+      <td>28.8</td>
+      <td>28.7</td>
+      <td>19.3</td>
+      <td>25.9</td>
+      <td>28.7</td>
+      <td>38.0</td>
+      <td>33.3</td>
+      <td>24.6</td>
+      <td></td>
+      <td>Maternal</td>
+    </tr>
+    <tr>
+      <td>Ampd3</td>
+      <td>7</td>
+      <td>B</td>
+      <td>mat</td>
+      <td>K</td>
+      <td>23.4</td>
+      <td>47.5</td>
+      <td>51.4</td>
+      <td>48.6</td>
+      <td>48.5</td>
+      <td>48.3</td>
+      <td>51.8</td>
+      <td>50.9</td>
+      <td>50.1</td>
+      <td>46.7</td>
+      <td>50.9</td>
+      <td>49.4</td>
+      <td>51.5</td>
+      <td>✓</td>
+      <td>Placental</td>
+    </tr>
+    <tr>
+      <td>Gab1</td>
+      <td>8</td>
+      <td>A</td>
+      <td>pat</td>
+      <td>K</td>
+      <td>74.9</td>
+      <td>50.4</td>
+      <td>49.8</td>
+      <td>52.7</td>
+      <td>49.6</td>
+      <td>48.6</td>
+      <td>49.4</td>
+      <td>51.0</td>
+      <td>47.1</td>
+      <td>49.6</td>
+      <td>48.8</td>
+      <td>50.1</td>
+      <td>50.2</td>
+      <td></td>
+      <td>Placental</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Class-1
 
 Of the eight novel singletons (Class-1) tested, four were biallelically expressed in all tissues and indeed three were expressed at very low levels. One gene, Nhlrc1, showed a consistent paternal bias across all postnatal brain tissues (Table 1 and Figure 5A). It is noteworthy that this was the only Class-1 gene that was called in three of the original studies (Figure 1C and Supplementary file 1c). Nhlrc1 lies 1.3 kb downstream from a known germline DMR and a Zfp57 binding site suggesting a plausible mechanism for biased gene expression at the region (Proudhon et al., 2012; Strogantsev et al., 2015). To see if this DMR persists postnatally, bisulfite pyrosequencing was performed on DNA from the P7 cerebellum and liver. In the cerebellum, the DMR is partially retained: the maternal allele is hypermethylated compared with the paternal allele in both BxC and CxB crosses (Figure 5B). However, in the liver where Nhlrc1 shows no parental bias (Figure 5—figure supplement 1A), both alleles are hypermethylated (Figure 5C), indicating Nhlrc1 expression is parentally biased only in tissues where the DMR is retained. This suggests a mechanism whereby a gDMR can influence tissue-specific imprinting postnatally.
 
-## Class-2
+![Figure 5.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig5-v2.jpg)
+
+**Figure 5.:** (A) – Nhlrc1 (Class-1) is paternally biased in all postnatal neuronal tissues tested. (B-C) Bisulfite sequencing analysis in P7 tissues.(B) – Cerebellum, (C)- Liver. Each line represents a different clone of bisulfite sequencing derived from two BxC animals and two CxB animals. Numbers of identical clones sequenced are indicated to the right. Black = methylated CpG and Gray = unmethylated CpG, white = CpG absent from clone. Percentage of methylated CpGs from all clones is indicated underneath.(D) – Pcdhb12 (Class-2) is maternally biased in all postnatal tissues tested. (E) – Three Class-2 genes show a maternal bias in e16.5 placenta: Vat1, Pla2g16, and Rtn3. These biases are weaker than seen in Ampd3 which is imprinted in the placenta (Schulz et al., 2006). Allele-specific expression graphs (A, D and E) show mean expression (%) from the paternal allele (deep blue) and maternal allele (red) in C57BL/6 × CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown n=3 or 4. Data are normalized to gDNA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Nhlrc1 expression bias in P6 cerebellum and liver which were also used for bisulfite sequencing analysis. (B) Allelic balance of expression of Coro1c pseudogene that overlaps the Nhlrc1 DMR. Graph shows mean expression (%) from the paternal allele (blue) and maternal allele (red). C57BL/6 × CastEiJ (BC) and CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=2 for Nhlrc1 and 3 for Coro1c pseudogene.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Weak bias in Wnk4 gene. (B) location of genes in the novel cluster, (C) location of gDMRs, and antisense transcript. Graph shows mean expression (%) from the paternal allele (blue) and maternal allele (red) C57BL/6 × CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=3 or 4. Data are normalized to gDNA.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Data are extracted from Supplementary file 1f. Genes that were only validated in the placenta were counted as unvalidated and the two known placental-specific imprinted genes are not included in the figure. Expression levels were reported as the mean transcripts per million (TPM) across all biological replicates. Samples: Dataset A - whole adult brain, cerebellum (cb) hypothalamus (hypo) liver, muscle. Dataset B - arcuate nucleus (ARN), dorsal raphe nucleus (DRN), liver, and muscle. Dataset C - P8 and P60 cerebellum. The original study the genes were reported as biased is noted on the y-axis – A=Dataset A, B=Dataset B, C=Dataset C, and D=Dataset D.
+
+#### Class-2
 
 Four of the 15 Class-2 genes tested fell below the expression threshold (Table 1). Of the other 11, six were biallelic in all tissues tested, two showed biased expression in the postnatal brain (Pcdhb12 and Wnk4) and three had a weak maternal bias in the placenta (Vat1, Rtn3, and Pla2g16) (Table 1). Pcdhb12 shows preferential expression from the maternal allele in all postnatal tissues which is consistent with the Datasets B and C (Figure 5D). This gene encodes protocadherin beta-12 and is in a cluster of protocadherin genes on chromosome 18 including Pcdhb10 and Pcdhb20 which were also called as biased in the original studies. Both of these genes were also tested: Pcdhb10 was only expressed at very low levels and Pcdhb20 showed biallelic expression (Table 1).
 
 The other Class-2 gene which validated in the postnatal brain is Wnk4. This gene forms a novel cluster with Vat1, Tmem106a, and Rdm1 on chromosome 11 that spans approximately 375 kb. Both validating tissues exhibit a weak bias. Indeed, Wnk4 has a much stronger strain bias in both tissues in C57BL/6xCastEiJ hybrids which may be confounding the data (Figure 5—figure supplement 2). Further analysis of this gene in other reciprocal hybrid strains is necessary to confirm the nature of its bias. One of the other genes in the Wnk4 novel cluster, Vat1, was one of three Class-2 genes that validated with maternal expression bias in the placenta (Figure 5E). The other two genes Rtn3 and Pla2g16 form a novel cluster with Prdx5 (which is biallelic in all tissues tested) on Chromosome 19. All three genes with the maternal placental bias were originally called as being biased in neural tissue where no evidence for biased expression was found.
 
-## Class-3
+#### Class-3
 
 The 20 peripheral Class-3 genes assessed by allele-specific cDNA pyrosequencing had all been called as biased in brain tissues in the original studies and had maximum biases below 70%, except for Ago2 which has a maximal maternal bias of 79.3%. In contrast with the putative-biased genes identified elsewhere in the genome, we found those peripheral to known imprinted clusters were more likely to validate. Nine of the 20 tested genes were validated in somatic tissues (Adam23, Cox4i2, Bcl2l2, Tpx2, Smim17, Ifitm10, Wars, Wdr25, and Ago2 - Table 1). Of these Bcl2l1 and Ago2 showed a bias in all neural tissues tested (Figure 6—figure supplements 1 and 2). Bcl2l1, along with Cox4i2 and Tpx2 is located close to the known imprinted gene Mcts2. All three genes showed a paternal bias in at least five neural tissues. Interestingly, Tpx2 was validated in all P60 tissues but not in the E16.5 or P7 material (Table 1 and Figure 6—figure supplement 1) suggesting the bias strengthens over time postnatally.
 
 Of the six genes tested that are located close to the Peg3 cluster, four could not be tested due to low expression. In contrast, Smim17 (Gm16532) is preferentially expressed from the maternal allele in five neural tissues (Figure 6—figure supplement 3). Smim17 bias is strongest in the P7 hypothalamus (64.7%) but is reduced to 56.7% by P60. A maternal bias is also detected in the P7 hippocampus and brain stem but is lost by P60, together indicating the Smim17 bias reduces over time (Table 1).
 
 Six genes were tested that are located at the periphery of the Dlk1/Dio3 cluster on Chromosome 12. Wdr25 was biallelically expressed in all tissues except the P60 hypothalamus where 59.7% of expression is from the paternal allele (Figure 6D). Unlike Wdr25, Wars expression was consistently higher from the paternally inherited allele in all somatic tissues however, the bias was only above the 55% cut-off in two tissues: e16.5 brain (55.1%) and P7 hypothalamus (56.2%) (Figure 6C). The most peripheral genes tested on both the proximal (Evl) and distal (Ppp2r5c and Dync1h1) side of the cluster were called as paternally biased in the original studies but biallelic in all tissues we assessed (Figure 6A and F and Table 1). Slc25a29 was called as paternally biased in ARN and DRN in Dataset B, but we found it to be biallelic in all neural tissues. Taken together our data suggest the weak biases observed at the periphery of known imprinted domains are tissue- and stage-specific.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig6-v2.jpg)
+
+**Figure 6.:** (A–F) Allelic bias in Evl (A), Slc25a29 (B), Wars (C) Wdr24 (D) Dlk1 (E), and Dync1h1 (F) Graphs show mean expression (%) from the paternal allele (blue) and maternal allele (red) C57BL/6 × CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=3 or 4. Tissues with a mean bias greater than 45:55 are indicated by arrow heads. Amplification bias was assessed in genomic DNA and the data are corrected. (G) – Imprinting of Slc25a29 in e15.5 placenta is not under the control of the IG-DMR. WT (BC) = maternal allele is wildtype for the IG-DMR paternal allele is CastEiJ (n=5). Mat_Het = maternal allele has IG-DMR deletion and the paternal allele is CastEiJ (n=6). WT (CB)=paternal allele is wildtype for the IG-DMR maternal allele is CastEiJ (n=5). Pat_Het = Paternal allele has IG-DMR deletion and the maternal allele is CastEiJ (n=7). (H) Schematic of the validated expression data in the Dlk1 region. Red boxes = known maternally expressed genes. Blue boxes = known paternally expressed genes. Pink boxes = novel validated maternally biased genes. Turquoise boxes = novel validated paternally biased genes. Gray boxes = biallelically expressed genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mcts2 imprinted region. (B–E) Allelic bias (%) in Mcts2 (A), Cox4i2 (B), Bcl2l1 (C) , and Tpx2 (D). Graphs show mean expression (%) from the paternal allele (blue) and maternal allele (red) C57BL/6 × CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=3 or 4. Data are normalized to gDNA.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Graphs show mean expression (%) from the paternal allele (blue) and maternal allele (red) C57BL/6 × CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=3 or 4. Adam23 and Iftim10 data are normalized for an amplification bias in gDNA. Data are normalized to gDNA.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/83364/elife-83364-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Peg3 imprinted region. (B–D) Allelic bias (%) in Smim17 (A), Peg3 (B), and Clcn4 (C). Graphs show mean expression (%) from the paternal allele (blue) and maternal allele (red) C57BL/6 x CastEiJ (BC) and four CastEiJ × C57BL/6 (CB) crosses. Castaneus allele is denoted by a spotted pattern. Standard error of the mean is shown, n=3 or 4. Clcn4 data are normalized for an amplification bias in gDNA. Data are normalized to gDNA.
 
 Interestingly, Slc25a29 showed a very strong maternal bias in the placenta (81.1% - Figure 6B). To determine if this biased expression is regulated by the Dlk1/Dio3 imprinting control region, we again made use of the IG-DMR knockout mouse model (Lin et al., 2003), Male and female mice heterozygous for the IG-DMR deletion were crossed with CastEiJ mice and placentas were collected at E15.5. Allele-specific pyrosequencing revealed maternal and paternal heterozygotes to both the same degree of maternal bias as wildtype litter mates indicating that Slc25a29 imprinting in the placenta is not under the control of the IG-DMR (Figure 6G).
 
@@ -123,7 +1369,7 @@ We have shown that the number of novel imprinted genes in the genome has been ov
 
 ## Methods
 
-## Comparison of methods used in the four studies chosen for analysis
+### Comparison of methods used in the four studies chosen for analysis
 
 For the best comparison, we ignored all non-mouse data, as well as imprinting data from the mouse X chromosome, which was only analyzed in one of the studies (Bonthuis et al., 2015) as well as any non-imprinting work performed. Crowley et al., used CastEiJ, PWK/PhJ, and WSB/EiJ mice in reciprocal crosses of all combinations whereas the other three studies all used C57BL/6 x CastEiJ reciprocal mouse crosses (Supplementary file 1a; Babak et al., 2015; Bonthuis et al., 2015; Crowley et al., 2015; Perez et al., 2015). As RNA-seq starting material, Perez and colleagues used mouse cerebellum at postnatal day (P)8 and P60 (Dataset C) (Perez et al., 2015). Bonthuis et al., used mouse liver and skeletal muscle, as well as two highly specific brain regions, the arcuate nucleus (ARN) of the hypothalamus and the dorsal raphe nucleus (DRN) of the midbrain, at 8–10 weeks of age (Dataset B) (Bonthuis et al., 2015). Crowley and colleagues used the whole brain at P23 for their imprinting analysis (Dataset D) (Crowley et al., 2015). The Babak et al., study generated an imprinting atlas from 23 tissues from between 35- and 45 days’ post-partum (including whole brain and six brain regions) and three fetal tissues, in addition to reanalyzing data from five previous studies (Dataset A) (Babak et al., 2015). Details of the four different studies can be found in Supplementary file 1a.
 
@@ -133,21 +1379,33 @@ Three of the studies (Babak, Crowley, and Perez) used previously annotated SNPs 
 
 A critical analysis of using RNA-seq to infer imprinted expression highlighted the need for validation via an independent method (DeVeale et al., 2012). However, only three of the studies included such validation. One of the studies (Perez et al., 2015) conducted a full quantitative validation by pyrosequencing of all novel genes. They found nine false positives, which are not included in our meta-analysis. Bonthuis and colleagues validated only a subset of 18 novel genes by pyrosequencing, of which 8 failed (Bonthuis et al., 2015). Since this approach was not very systematic, testing only 12% of all novel genes, we included the original RNA-seq results including the false positives in our meta-analysis. Babak and colleagues validated most of the novel genes by pyrosequencing but in only one of all respective positive tissues (Babak et al., 2015). They only made RNA-seq data available for novel genes that either passed validation (13 genes) or could not be tested (12 genes), so we could not include other results. The final numbers of ASE autosomal genes reported for each study were as follows: Babak et al., - 125 (Dataset A), Bonthuis et al., - 210 (Dataset B), Perez et al., - 115 (Dataset C), and Crowley et al., – 95 (Dataset D) (Babak et al., 2015; Bonthuis et al., 2015; Crowley et al., 2015; Perez et al., 2015).
 
-## Meta-analysis of previous data
+### Meta-analysis of previous data
 
 Co-ordinates from the Datasets A and B were converted to mm10 using the LiftOver function at UCSC (Kent et al.). Any overlapping genes with different names were individually assessed and merged if found to represent the same transcript. Overlaps between studies were then assessed.
 
-The maximum bias from each gene was assigned into 1 of 5 bins (50-60, 60-70, 70-80, 80-90, 90-100). For Dataset C these were taken straight from elife-07860-supp1-v2.xlsx (Table G). For the Dataset A, read counts for the reciprocal crosses were taken from the original source data. The bias for each gene in every tissue was calculated by: Paternalreads(BxC+CxB)/Totalreads(BxC+CxB)
+The maximum bias from each gene was assigned into 1 of 5 bins (50-60, 60-70, 70-80, 80-90, 90-100). For Dataset C these were taken straight from elife-07860-supp1-v2.xlsx (Table G). For the Dataset A, read counts for the reciprocal crosses were taken from the original source data. The bias for each gene in every tissue was calculated by:
 
-orMaternalreads(BxC+CxB)/Totalreads(BxC+CxB)
+$$
+Paternalreads(BxC+CxB)/Totalreads(BxC+CxB)
+$$
 
-For Dataset B, the maternal bias for each gene in every tissue was calculated as:(FoldChange(MaternalPaternal)/1+FoldChange(MaternalPaternal))x100
+or
+
+$$
+Maternalreads(BxC+CxB)/Totalreads(BxC+CxB)
+$$
+
+For Dataset B, the maternal bias for each gene in every tissue was calculated as:
+
+$$
+(FoldChange(\frac{Maternal}{Paternal})/1+FoldChange(\frac{Maternal}{Paternal}))x100
+$$
 
 For Dataset D, the maximum bias was calculated by taking the mean paternal and maternal bias from each reciprocal cross to eliminate strain biases.
 
 For promoter analysis, the 500 bp upstream of the transcriptional start site was taken for each Class-3 and known imprinted gene. Methylation levels for fetal and male six week frontal cortex (Lister et al., 2013; Song et al., 2013) and Histone H3 lysine 27 trimethylation (E16 and P0 forebrain) (Gorkin et al., 2017; Shen et al., 2012; Sloan et al., 2016) were extracted using UCSC Table Browser (Karolchik et al., 2004). The mean level across the 500 bp interval was calculated then the heatmap was produced using ggplot2 (Wickham, 2016).
 
-## Allele-specific expression analysis
+### Allele-specific expression analysis
 
 Raw sequencing read FASTQ files were downloaded from EMBL-EBI European Nucleotide Archive for each of the RNA-seq datasets (Babak et al., 2015; Bonthuis et al., 2015; Crowley et al., 2015; Perez et al., 2015; Andergassen et al., 2017). Low-quality bases and adapters were removed with trim_galore (v0.4.1) (Babraham Bioinformatics - Trim Galore!). SNPSplit (v0.3.4) (Krueger and Andrews, 2016) was used to separate reads by the parent of origin, which first required the preparation of allele-specific reference genomes for C57BL6/CAST_Eij and CAST_Eij/FVB (based on C57BL6) with the following commands SNPsplit_genome_preparation --vcf_file mgp.v5.merged.snps_all.dbSNP142.vcf.gz --reference_genome GRCm38_fasta/ --strain CAST_EiJ and SNPsplit_genome_preparation --vcf_file mgp.v5.merged.snps_all.dbSNP142.vcf.gz --reference_genome GRCm38_fasta/ --strain CAST_EiJ --strain2 FVB_NJ --dual_hybrid. VCF files for strain-specific SNPs were obtained from http://www.sanger.ac.uk/data/mouse-genomes-project.
 
@@ -155,22 +1413,22 @@ The Clusterflow pipeline tool was used to enable running multiple jobs in parall
 
 The counts tables were then manipulated into the configuration needed for the ISoLDE R package (Reynès et al., 2020). ISoLDE was used to test both allele-specific parental and strain biases. The default resampling method was used with nboot = 3000 for datasets with more than two replicates. For datasets with two replicates or fewer the threshold method was used (Reynès et al., 2020). Overlaps were then identified between the different datasets.
 
-## Mice
+### Mice
 
 All animal procedures were subject to local institutional ethical approval and performed under a UK Government Home Office license (project license number: PC213320E). Reciprocal crosses of the mouse lines C57BL/6 J and castaneus (CAST/EiJ) were generated. For loss of IG-DMR studies, mutant mice were maintained on a C57BL6/J background by crossing males heterozygous for the deletion with wild-type females. For expression analysis, female or male heterozygotes were mated to castaneus (CAST/EiJ) mice to generate IG-DMR deletion heterozygotic conceptuses and wildtype littermates.
 
-## Tissue collection
+### Tissue collection
 
 Samples were harvested from three to four mice from each cross at three developmental stages: e16.5 (16.5 days after conception), P7 (7 days after birth), and P60 (60 days after birth). At e16.5, the whole brain, liver, and placenta were harvested. At P7 and P60, the brain stem, cerebellum, cortex, hippocampus, and hypothalamus were harvested. Samples were snap-frozen in liquid nitrogen and stored at –80 degrees. For loss of IG-DMR studies samples were collected at E15.5, n=6 maternal heterozygotes and five wildtype littermates.
 
-## qRT–PCR
+### qRT–PCR
 
 DNA and RNA were extracted from samples using AllPrep DNA/RNA Mini kit (Qiagen) according to the manufacturer’s instructions. 5 μg RNA was treated with DNaseI (Thermo Scientific) as per the manufacturer’s instructions. 1 μg RNA was reverse transcribed with Revert Aid RT (Thermo Scientific). Assays were designed using PyroMark Assay Design SW 2.0 (Qiagen) and provided in Supplementary file 1j. The annealing temperature for each primer set was optimized by gradient PCR. The qPCR reactions were run on a LightCycler 480 (Roche) with Brilliant III Ultra-Fast SYBR Green qPCR Master Mix and the following conditions: 95 °C for 5 min followed by 45 cycles of 95 °C - 10 s, specific annealing temperature - 10 s, 72 °C - 10 s. All reactions were run in duplicate, and the relative expression of each gene was calculated using the ΔCt method and normalized to the housekeeping gene Tbp. Genes with expression lower than 0.05 times that of the housekeeping gene Tbp after qRT-PCR were not analyzed further as weak expression leads to inconsistent results between technical replicates in pyrosequencing.
 
-## Allelic expression analysis
+### Allelic expression analysis
 
 Parental allelic expression quantification was performed by pyrosequencing. Streptavidin Sepharose High-Performance beads (GE healthcare) dissolved in binding buffer (10 mM Tris-HCL pH7.6, 2 M NaCl, 1 mM EDTA, 0.1% Tween-20) were shaken with the qPCR product at 1400 rpm for 20 min. The biotinylated strand was purified using a PyroMark Q96 Vacuum Workstation (QIAGEN) then sequencing primers annealed in annealing buffer (20 mM Tris-acetate pH7.6, 2 M magnesium acetate) at 85 °C for 3 min. Sequencing was performed on a PyroMark Q96 MD pyrosequencer (Qiagen) using PyroMark Gold Q96 Reagents (Qiagen). The mean expression bias from three or four biological replicates of tissue was then calculated. Genomic DNA was also assessed to identify any amplification bias from the primers and all assays were corrected for this bias.
 
-## Clonal methylation analysis
+### Clonal methylation analysis
 
 DNA (0.5–1 µg) was bisulfite treated using the two-step protocol of the Imprint DNA Modification Kit (Sigma). converted DNA was amplified using primers Fwd 5’ TTGATGGAGTAAAAGGAATTGTTTTAGG and Rev 5’ CCAATTCAAAAATTTAAAAAAAACAAAACC with HotStarTaq DNA Polymerase (QIAGEN). The PCR conditions were: (1) 95 °C – 5 min; (2) 94 °C – 30 s, 55 °C – 30 s, 72 °C – 55 s, 40 cycles; (3) 72 °C – 5 min. PCR Products were run on a 1.5% agarose gel, bands were then cut out and DNA was extracted using MinElute Gel Extraction Kit (QIAGEN). Purified DNA was ligated into the pGEM-T Easy Vector and transformed into Stellar Competent Cells (Cat# 636766). Selected colonies were Sanger sequenced by GENEWIZ. At least 20 clones were tested for each tissue and genotype from two biological replicates. Clones were assessed using BISMA - Bisulfite sequencing DNA Methylation Analysis (Rohde et al., 2010).

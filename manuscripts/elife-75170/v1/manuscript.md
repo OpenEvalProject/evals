@@ -22,22 +22,22 @@
 ### Affiliations
 
 1. Child Health Research Unit, Barwon Health, Faculty of Health, School of Medicine, Deakin University Geelong Australia
-2. https://ror.org/048fyec77 Murdoch Children's Research Institute Parkville Australia
-3. https://ror.org/01ej9dk98 Department of Paediatrics, University of Melbourne Parkville Australia
-4. https://ror.org/03rke0285 Metabolomics Laboratory, Baker Heart and Diabetes Institute Melbourne Australia
-5. https://ror.org/03a2tac74 The Florey Institute of Neuroscience and Mental Health Parkville Australia
-6. https://ror.org/02rktxt32 Royal Children’s Hospital Parkville Australia
-7. https://ror.org/02czsnj07 Deakin University Geelong Australia
-8. https://ror.org/05wg1m734 Department of Internal Medicine, Radboud Institute for Molecular Life Sciences, Radboud University Medical Centre Nijmegen Netherlands
-9. https://ror.org/00rqy9422 Child Health Research Centre, University of Queensland Brisbane Australia
-10. https://ror.org/00my0hg66 Child Health Research Unit, Barwon Health Geelong Australia
-11. https://ror.org/02bfwt286 Department of Paediatrics, Monash University Clayton Australia
+2. Murdoch Children's Research Institute Parkville Australia ([ROR:048fyec77](https://ror.org/048fyec77))
+3. Department of Paediatrics, University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+4. Metabolomics Laboratory, Baker Heart and Diabetes Institute Melbourne Australia ([ROR:03rke0285](https://ror.org/03rke0285))
+5. The Florey Institute of Neuroscience and Mental Health Parkville Australia ([ROR:03a2tac74](https://ror.org/03a2tac74))
+6. Royal Children’s Hospital Parkville Australia ([ROR:02rktxt32](https://ror.org/02rktxt32))
+7. Deakin University Geelong Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+8. Department of Internal Medicine, Radboud Institute for Molecular Life Sciences, Radboud University Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+9. Child Health Research Centre, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+10. Child Health Research Unit, Barwon Health Geelong Australia ([ROR:00my0hg66](https://ror.org/00my0hg66))
+11. Department of Paediatrics, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
 
 † Corresponding author
 
 ## Abstract
 
-The risk of adult onset cardiovascular and metabolic (cardiometabolic) disease accrues from early life. Infection is ubiquitous in infancy and induces inflammation, a key cardiometabolic risk factor, but the relationship between infection, inflammation, and metabolic profiles in early childhood remains unexplored. We investigated relationships between infection and plasma metabolomic and lipidomic profiles at age 6 and 12 months, and mediation of these associations by inflammation. Matched infection, metabolomics, and lipidomics data were generated from 555 infants in a pre-birth longitudinal cohort. Infection data from birth to 12 months were parent-reported (total infections at age 1, 3, 6, 9, and 12 months), inflammation markers (high-sensitivity C-reactive protein [hsCRP]; glycoprotein acetyls [GlycA]) were quantified at 12 months. Metabolic profiles were 12-month plasma nuclear magnetic resonance metabolomics (228 metabolites) and liquid chromatography/mass spectrometry lipidomics (776 lipids). Associations were evaluated with multivariable linear regression models. In secondary analyses, corresponding inflammation and metabolic data from birth (serum) and 6-month (plasma) time points were used. At 12 months, more frequent infant infections were associated with adverse metabolomic (elevated inflammation markers, triglycerides and phenylalanine, and lower high-density lipoprotein [HDL] cholesterol and apolipoprotein A1) and lipidomic profiles (elevated phosphatidylethanolamines and lower trihexosylceramides, dehydrocholesteryl esters, and plasmalogens). Similar, more marked, profiles were observed with higher GlycA, but not hsCRP. GlycA mediated a substantial proportion of the relationship between infection and metabolome/lipidome, with hsCRP generally mediating a lower proportion. Analogous relationships were observed between infection and 6-month inflammation, HDL cholesterol, and apolipoprotein A1. Infants with a greater infection burden in the first year of life had proinflammatory and proatherogenic plasma metabolomic/lipidomic profiles at 12 months of age that in adults are indicative of heightened risk of cardiovascular disease, obesity, and type 2 diabetes. These findings suggest potentially modifiable pathways linking early life infection and inflammation with subsequent cardiometabolic risk. The establishment work and infrastructure for the BIS was provided by the Murdoch Children’s Research Institute (MCRI), Deakin University, and Barwon Health. Subsequent funding was secured from National Health and Medical Research Council of Australia (NHMRC), The Shepherd Foundation, The Jack Brockhoff Foundation, the Scobie & Claire McKinnon Trust, the Shane O’Brien Memorial Asthma Foundation, the Our Women’s Our Children’s Fund Raising Committee Barwon Health, the Rotary Club of Geelong, the Minderoo Foundation, the Ilhan Food Allergy Foundation, GMHBA, Vanguard Investments Australia Ltd, and the Percy Baxter Charitable Trust, Perpetual Trustees. In-kind support was provided by the Cotton On Foundation and CreativeForce. The study sponsors were not involved in the collection, analysis, and interpretation of data; writing of the report; or the decision to submit the report for publication. Research at MCRI is supported by the Victorian Government’s Operational Infrastructure Support Program. This work was also supported by NHMRC Senior Research Fellowships to ALP (1008396); DB (1064629); and RS (1045161) , NHMRC Investigator Grants to ALP (1110200) and DB (1175744), NHMRC-A*STAR project grant (1149047). TM is supported by an MCRI ECR Fellowship. SB is supported by the Dutch Research Council (452173113).
+Background:The risk of adult onset cardiovascular and metabolic (cardiometabolic) disease accrues from early life. Infection is ubiquitous in infancy and induces inflammation, a key cardiometabolic risk factor, but the relationship between infection, inflammation, and metabolic profiles in early childhood remains unexplored. We investigated relationships between infection and plasma metabolomic and lipidomic profiles at age 6 and 12 months, and mediation of these associations by inflammation.Methods:Matched infection, metabolomics, and lipidomics data were generated from 555 infants in a pre-birth longitudinal cohort. Infection data from birth to 12 months were parent-reported (total infections at age 1, 3, 6, 9, and 12 months), inflammation markers (high-sensitivity C-reactive protein [hsCRP]; glycoprotein acetyls [GlycA]) were quantified at 12 months. Metabolic profiles were 12-month plasma nuclear magnetic resonance metabolomics (228 metabolites) and liquid chromatography/mass spectrometry lipidomics (776 lipids). Associations were evaluated with multivariable linear regression models. In secondary analyses, corresponding inflammation and metabolic data from birth (serum) and 6-month (plasma) time points were used.Results:At 12 months, more frequent infant infections were associated with adverse metabolomic (elevated inflammation markers, triglycerides and phenylalanine, and lower high-density lipoprotein [HDL] cholesterol and apolipoprotein A1) and lipidomic profiles (elevated phosphatidylethanolamines and lower trihexosylceramides, dehydrocholesteryl esters, and plasmalogens). Similar, more marked, profiles were observed with higher GlycA, but not hsCRP. GlycA mediated a substantial proportion of the relationship between infection and metabolome/lipidome, with hsCRP generally mediating a lower proportion. Analogous relationships were observed between infection and 6-month inflammation, HDL cholesterol, and apolipoprotein A1.Conclusions:Infants with a greater infection burden in the first year of life had proinflammatory and proatherogenic plasma metabolomic/lipidomic profiles at 12 months of age that in adults are indicative of heightened risk of cardiovascular disease, obesity, and type 2 diabetes. These findings suggest potentially modifiable pathways linking early life infection and inflammation with subsequent cardiometabolic risk.Funding:The establishment work and infrastructure for the BIS was provided by the Murdoch Children’s Research Institute (MCRI), Deakin University, and Barwon Health. Subsequent funding was secured from National Health and Medical Research Council of Australia (NHMRC), The Shepherd Foundation, The Jack Brockhoff Foundation, the Scobie & Claire McKinnon Trust, the Shane O’Brien Memorial Asthma Foundation, the Our Women’s Our Children’s Fund Raising Committee Barwon Health, the Rotary Club of Geelong, the Minderoo Foundation, the Ilhan Food Allergy Foundation, GMHBA, Vanguard Investments Australia Ltd, and the Percy Baxter Charitable Trust, Perpetual Trustees. In-kind support was provided by the Cotton On Foundation and CreativeForce. The study sponsors were not involved in the collection, analysis, and interpretation of data; writing of the report; or the decision to submit the report for publication. Research at MCRI is supported by the Victorian Government’s Operational Infrastructure Support Program. This work was also supported by NHMRC Senior Research Fellowships to ALP (1008396); DB (1064629); and RS (1045161) , NHMRC Investigator Grants to ALP (1110200) and DB (1175744), NHMRC-A*STAR project grant (1149047). TM is supported by an MCRI ECR Fellowship. SB is supported by the Dutch Research Council (452173113).
 
 ## Introduction
 
@@ -49,19 +49,19 @@ We therefore aimed to characterise metabolomic and lipidomic profiles at 6 and 1
 
 ## Materials and methods
 
-## Study cohort
+### Study cohort
 
 This study used available data from 555 mother-infant dyads in the Barwon Infant Study (BIS), a population-based pre-birth longitudinal cohort (n = 1074 mother-infant dyads). The cohort details and inclusion/exclusion criteria have been detailed elsewhere (Vuillermin et al., 2015); in brief, mothers were eligible if they were residents of the Barwon region in south-east Australia and planned to give birth at the local public or private hospital. Mothers were recruited at approximately 15 weeks’ gestation and provided informed consent. They were excluded if they were not a permanent Australian resident, aged <18 years, required an interpreter to complete questionnaires, or had previously participated in BIS. Infants were excluded if they were very preterm (<32 completed weeks gestation) or had a serious illness or major congenital malformation identified during the first few days of life. Ethics approval was granted by the Barwon Health Human Research Ethics Committee (HREC 10/24).
 
-## Parent-reported infections
+### Parent-reported infections
 
 At the 4-week, 3-month, 6-month, 9-month, and 12-month time points following birth, mothers were asked to report each episode of infant illness or infection since the previous time point using standardised online questionnaires. The number of parent-reported infections from birth to 12 months was defined as the total number of respiratory tract infections, gastroenteritis, conjunctivitis, and acute otitis media episodes. In secondary analyses, numbers of parent-reported infections from birth to 6 months and from 6 to 12 months were considered. It was not possible to identify the proportion of parent-reported infections that lead to health service utilisation (Rowland et al., 2021).
 
-## Other maternal and infant measures
+### Other maternal and infant measures
 
 Questionnaires during pregnancy and at birth were used to collect self-reported data on maternal age, household income, maternal education, and prenatal smoking (considered here as a dichotomous any/none exposure). Residential postcode was used to determine neighbourhood disadvantage using the Index of Relative Socio-Economic Disadvantage (IRSD) from the 2011 Socio-Economic Indexes for Areas (SEIFA) (Pink, 2013), with a lower score corresponding to greater socioeconomic disadvantage. Pre-eclampsia (based on International Association of Diabetes and Pregnancy Study Groups criteria; Tranquilli et al., 2014) and gestational diabetes (based on International Society for the Study of Hypertension in Pregnancy criteria; Nankervis et al., 2013) diagnoses were extracted from hospital records. Infant gestational age, birth weight, and mode of delivery (categorised as vaginal, planned caesarean section, or unplanned caesarean section delivery) were collected from birth records, and the age- and sex-standardised birth weight z-score was calculated using the 2009 revised British United Kingdom World Health Organisation (UK-WHO) growth charts (Cole et al., 2011). Postnatal smoking data was collected from questionnaire data, with mothers asked the average number of hours each day someone smoked near or in the same room as the child (Gray et al., 2019). This was dichotomised as any postnatal smoke exposure if >0 hr reported at any time point up to 12 months of age, or no postnatal smoke exposure. Breastfeeding duration up to 12 months of age was collected from maternal questionnaire data. As most evidence for the protective effect of breastfeeding on early life infection is from comparisons between any breastfeeding and no breastfeeding (Victora et al., 2016), and in light of previous evidence in BIS for an association between even a short duration of breastfeeding and lower odds of infection in early infancy (Rowland et al., 2021), we first looked at breastfeeding as a binary (any/none) measure in models (presented in the main text). As most infants (98.2%) were breastfed to some extent, and it is unknown the degree to which breastfeeding, and the timing of breastfeeding, might affect infant metabolomics and lipidomics, we also considered duration of breastfeeding as a continuous variable for sensitivity analyses.
 
-## Metabolomic and lipidomic profiling
+### Metabolomic and lipidomic profiling
 
 Venous peripheral blood was collected from infants at the 6- and 12-month time points in sodium heparin and generally processed within 4 hr, with a minority (197 of 555) of 12-month samples processed after 4 hr (median time for those 197 samples = 19.9 hr, inter-quartile range [IQR] [18.7, 21.4]). The time interval between collection and post-processing storage of samples was included as a covariate in analyses. Due to the bimodal distribution of 12-month sample collection times as samples were either processed same day of collection or the following day, sensitivity analysis excluding participants with a plasma storage time greater than 4 hr (197 out of 555 infants, predominantly processed the following day) was performed, as described in the Statistical analysis section below. Plasma was stored at –80°C, and aliquots were shipped on dry ice to Nightingale Health (Helsinki, Finland) for NMR metabolomic quantification and Baker IDI (Melbourne, Australia) for liquid chromatography/mass spectrometry (LC/MS) lipidomic quantification, as described below. For secondary analyses investigating possible ‘reverse causality’, that is, whether metabolomic or lipidomic profile at birth was associated with number of parent-reported infections from birth to 6 months of age, metabolomics and lipidomics data using the same platforms from venous cord blood collected at birth, as previously described (Burugupalli et al., 2022; Mansell et al., 2021), was used.
 
@@ -71,7 +71,7 @@ The details of the high-performance LC/MS lipidomics platform have been describe
 
 Quantification of lipid species was determined by comparison to the relevant internal standard. Lipid class total concentrations were calculated as the sum of individual lipid species concentrations, except in the case of triacylglycerols (TGs) and alkyl-diacylglycerols, where we measured both neutral loss and single ion monitoring (SIM) peaks, and subsequently used the SIM species concentrations for summation purposes.
 
-## Statistical analysis
+### Statistical analysis
 
 Analyses were performed in R (version 3.6.3) (R Development Core Team, 2018). All metabolomic and lipidomic measures had their lowest observed non-zero value (considered the lower limit of detection) added to their value before they were natural log-transformed and scaled to a standard distribution (standard deviation units). Pearson’s correlations were calculated for number of infections from birth to 12 months with 12-month GlycA and hsCRP.
 
@@ -93,13 +93,262 @@ As models investigating reverse causality, described above, suggested that 6-mon
 
 The flowchart for the 555 infants included in this study is shown in Figure 2, and the cohort characteristics for these infants are shown in Table 1. The median number of total parent-reported infections from birth to 12 months of age was 5 (IQR = [3–8]). Median infections from birth to 6 months of age was 2 [1–3], and median infections from 6 to 12 months of age was 3 [2–5]. Median 12-month hsCRP and GlycA were 0.25 mg/L [0.08–0.96] and 1.30 mmol/L [1.16–1.48], respectively. Total number of parent-reported infections between birth and 12 months of age was more strongly correlated with 12-month GlycA (r = 0.20) than hsCRP (r = 0.11). The distributions of metabolomic and lipidomic measures at each time point for the cohort are shown in Supplementary file 2A and B.
 
+**Table 1.**
+ Cohort characteristics (n = 555).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex (female)</td>
+      <td>269 (48.4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean (SD)</td>
+    </tr>
+    <tr>
+      <td>Maternal age at delivery (years)</td>
+      <td>31.7 (4.5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>n (%)</td>
+    </tr>
+    <tr>
+      <td>Maternal smoking during pregnancy (any)</td>
+      <td>69 (12.5)</td>
+    </tr>
+    <tr>
+      <td>Gestational diabetes (cases) (n = 84 missing data)</td>
+      <td>26 (5.5)</td>
+    </tr>
+    <tr>
+      <td>Pre-eclampsia (cases) (n = 1 missing data)</td>
+      <td>21 (3.8)</td>
+    </tr>
+    <tr>
+      <td>Maternal annual household income (AUD)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;$25,000</td>
+      <td>11 (2.0)</td>
+    </tr>
+    <tr>
+      <td>$25,000 to $49,999</td>
+      <td>41 (7.5)</td>
+    </tr>
+    <tr>
+      <td>$50,000 to $74,999</td>
+      <td>94 (17.2)</td>
+    </tr>
+    <tr>
+      <td>$75,000 to $99,999</td>
+      <td>145 (26.5)</td>
+    </tr>
+    <tr>
+      <td>$100,000 to $149,999</td>
+      <td>191 (34.9)</td>
+    </tr>
+    <tr>
+      <td>≥$150,000</td>
+      <td>65 (11.9)</td>
+    </tr>
+    <tr>
+      <td>Maternal education (highest level completed) (n = 8 missing data)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Less than year 10 of high school</td>
+      <td>2 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Year 10 of high school or equivalent</td>
+      <td>20 (3.7)</td>
+    </tr>
+    <tr>
+      <td>Year 12 of high school or equivalent</td>
+      <td>86 (15.7)</td>
+    </tr>
+    <tr>
+      <td>Trade/certificate/diploma</td>
+      <td>135 (24.9)</td>
+    </tr>
+    <tr>
+      <td>Bachelor’s degree</td>
+      <td>199 (36.4)</td>
+    </tr>
+    <tr>
+      <td>Postgraduate degree</td>
+      <td>105 (19.2)</td>
+    </tr>
+    <tr>
+      <td>Mode of birth</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vaginal</td>
+      <td>374 (67.4)</td>
+    </tr>
+    <tr>
+      <td>Planned caesarean section</td>
+      <td>103 (18.6)</td>
+    </tr>
+    <tr>
+      <td>Unplanned caesarean section</td>
+      <td>78 (14.1)</td>
+    </tr>
+    <tr>
+      <td>Breastfed (any breastfeeding)</td>
+      <td>545 (98.2)</td>
+    </tr>
+    <tr>
+      <td>Infant postnatal smoke exposure to 12 months (any) (n = 47 missing data)</td>
+      <td>14 (2.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median [IQR]</td>
+    </tr>
+    <tr>
+      <td>SEIFA index of disadvantage*</td>
+      <td>1031 [996–1066]</td>
+    </tr>
+    <tr>
+      <td>Breastfeeding duration to 52 weeks (weeks)</td>
+      <td>40 [16–52]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean (SD)</td>
+    </tr>
+    <tr>
+      <td>Gestational age (weeks)</td>
+      <td>39.5 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Birth weight (g)</td>
+      <td>3,538 (521)</td>
+    </tr>
+    <tr>
+      <td>Birth weight z-score</td>
+      <td>0.32 (0.95)</td>
+    </tr>
+    <tr>
+      <td>Age at 6-month time point (months)</td>
+      <td>6.5 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Weight at 6 months (kg)</td>
+      <td>7.9 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Weight z-score at 6 months</td>
+      <td>0.1 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Age at 12-month time point (months)</td>
+      <td>13.0 (0.8)</td>
+    </tr>
+    <tr>
+      <td>Weight at 12 months (kg)</td>
+      <td>10.1 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Weight z-score at 12 months</td>
+      <td>0.4 (1.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Median [IQR]</td>
+    </tr>
+    <tr>
+      <td>Number of parent-reported infections from birth to 12 months</td>
+      <td>5 [3–8]</td>
+    </tr>
+    <tr>
+      <td>Infections from birth to 6 months</td>
+      <td>2 [1–3]</td>
+    </tr>
+    <tr>
+      <td>Infection from 6 to 12 months</td>
+      <td>3 [2–5]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GlycA at 6 months (mmol/L)</td>
+      <td>0.76 [0.68–0.85]</td>
+    </tr>
+    <tr>
+      <td>hsCRP at 6 months (mg/L)</td>
+      <td>0.14 [0.05–0.94]</td>
+    </tr>
+    <tr>
+      <td>GlycA at 12 months (mmol/L)</td>
+      <td>1.30 [1.16–1.48]</td>
+    </tr>
+    <tr>
+      <td>hsCRP at 12 months (mg/L)</td>
+      <td>0.25 [0.08–0.96]</td>
+    </tr>
+  </tbody>
+</table>
+
+_All n = 555 infants had complete covariate data for primary models, missing data of secondary exposures is indicated next to the relevant measure.*A lower SEIFA value indicates greater socioeconomic disadvantage based on postcode._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig2-v1.jpg)
 
 **Figure 2.:** Included participants had complete infection data from all five time points between birth and 12 months of age, and 12-month plasma nuclear magnetic resonance (NMR) metabolomics data. Almost all included participants (n = 550 out of 555) had 12-month plasma liquid chromatography/mass spectrometry (LC/MS) lipidomics data.
 
-## Infection and inflammation burden and plasma NMR metabolomic profile at 12 months
+### Infection and inflammation burden and plasma NMR metabolomic profile at 12 months
 
 There was evidence for higher number of infections associating with higher inflammatory markers (GlycA (0.06 SD per 1 infection, 95% CI [0.04–0.08]) and hsCRP (0.06 [0.03–0.08])), lower HDL (−0.04 [−0.07 to −0.02]), HDL2 (−0.04 [−0.07 to −0.02]), and HDL3 (−0.04 [−0.06 to −0.01]) cholesterols, lower ApoA1 (−0.04 [−0.06 to −0.01]), lower citrate (−0.04 [−0.07 to −0.01]), higher phenylalanine (0.04 [0.02–0.07]), and to a lesser extent with higher triglycerides (0.03 [0.00–0.05]) and lower sphingomyelins (−0.03 [−0.05 to −0.01]) (Figure 3a). In models with GlycA as the marker of inflammation burden, metabolomic differences observed for higher GlycA were largely similar to, but more marked than, those for parent-reported infections; including cholesterols (lower HDL (−0.38 SD per 1 SD increase in log GlycA [−0.46 to −0.30]), higher LDL (0.18 [0.09–0.26]), and very-large-density lipoprotein (0.50 [0.42–0.58]) cholesterols), apolipoproteins (lower ApoA1 (−0.23 [−0.31 to −0.14]), higher apolipoprotein B (ApoB) (0.39 [0.31–0.48])), higher total fatty acids (0.36 [0.28–0.45]), higher total triglycerides (0.48 [0.40–0.56]) and cholines (0.18 [0.10–0.27]), amino acids (higher phenylalanine (0.17 [0.09–0.25]), isoleucine (0.14 [0.05–0.22]), and glycine (0.16 [0.08–0.23]), lower histidine (−0.16 [−0.24 to −0.09])), glycolysis-related metabolites (higher pyruvate (0.06 [0.01–0.11]), lower citrate (−0.17 [−0.26 to −0.08])), and lower acetoacetate (−0.18 [−0.26 to −0.09]) (Figure 3b). Bootstrap estimates were generally similar to standard regression estimates for all models. Estimated effect sizes were generally similar across most sensitivity analyses (Supplementary file 1A-C), though excluding samples with processing time greater than 4 hr slightly reduced the magnitude of estimated effects of parent-reported infections on HDL cholesterols and ApoA1 (Supplementary file 1A). Higher hsCRP was associated with lower HDL cholesterol (−0.24 SD per 1 SD increase in log hsCRP, [−0.32 to −0.16]), ApoA1 (−0.26 [−0.34 to −0.18]) and histidine (−0.20 [−0.27 to −0.12]), and higher phenylalanine (0.14 [0.06 to 0.22]), as observed for GlycA, and with lower levels of most other amino acids and albumin (−0.11 [−0.19 to −0.03]), and higher LDL triglycerides (0.16 [0.08–0.25]) (Figure 4a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig3-v1.jpg)
+
+**Figure 3.:** Forest plots of the estimated 12-month metabolomic differences for each additional parent-reported infection from birth to 12 months (a, circle points) or SD log 12-month GlycA (b, square points) from adjusted linear regression models, and the correlation of estimated metabolomic differences for these two exposures (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all NMR metabolomic measures are shown in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Forest plots of the estimated 6-month metabolomic differences for each additional parent-reported infection from birth to 6 months (a, circle points) or SD log 6 month GlycA (b, square points) from adjusted linear regression models, and the correlation of estimated metabolomic differences for these two exposures (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all NMR metabolomic measures are shown in Figure 3—source data 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Forest plots of the estimated 12-month metabolomic differences for each additional parent-reported infection from 6 to 12 months (a, circle points) or SD log 12-month GlycA (b, square points) from adjusted linear regression models, adjusted for corresponding 6-month metabolomic measures. Infection models were adjusted for number of infections from birth to 6 months of age, and GlycA models were adjusted for 6-month GlycA. The correlation of estimated metabolomic differences for these two exposures (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all NMR metabolomic measures are shown in Figure 3—source data 3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig4-v1.jpg)
+
+**Figure 4.:** Forest plot for the estimated 12-month metabolomic differences for each additional SD log 12-month hsCRP (a, diamond points) from adjusted linear regression models, and the correlation of estimated metabolomic differences for infection and hsCRP (b) and for glycoprotein acetyls (GlycA) and hsCRP (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all NMR metabolomic measures are shown in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Forest plot for the estimated 6-month metabolomic differences for each additional SD log 6-month hsCRP (a, diamond points) from adjusted linear regression models, and the correlation of estimated metabolomic differences for infection and hsCRP (b) and for glycoprotein acetyls (GlycA) and hsCRP (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all NMR metabolomic measures are shown in Figure 4—source data 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Forest plot for the estimated 12-month metabolomic differences (adjusted for corresponding 6-month metabolomic measure) for each additional SD log 12-month hsCRP (adjusted for 6-month hsCRP) (a, diamond points) from adjusted linear regression models, and the correlation of estimated metabolomic differences for infection and hsCRP (b) and for glycoprotein acetyls (GlycA) and hsCRP (c). Error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all NMR metabolomic measures are shown in Figure 4—source data 3.
 
 There was a stronger correlation for the metabolomic differences related to infection and those related to GlycA (r = 0.74, Figure 3c) than for infection and hsCRP (r = 0.62, Figure 4b). The correlation of metabolomic differences related to GlycA and those for hsCRP was r = 0.61 (Figure 4c).
 
@@ -107,13 +356,45 @@ In models investigating the relationship between number of parent-reported infec
 
 In secondary analyses, there was little evidence for associations between serum NMR metabolomic measures at birth at number of parent-reported infections from birth to 6 months of age (Supplementary file 3A). Similarly, there was little evidence for metabolomic measures at 6 months of age associating with number of infections from 6 to 12 months of age. GlycA at 6 months showed a modest association with a higher number of infections from 6 to 12 months (average 0.10 higher infections per 1 SD higher log 6-month GlycA, [0.04–0.16]), adjusted for the number of infections from birth to 6 months; for hsCRP there was little evidence (0.02 [−0.04–0.08]) (Supplementary file 3B).
 
-## Infection and inflammation burden and plasma LC/MS lipidomic profile at 12 months
+### Infection and inflammation burden and plasma LC/MS lipidomic profile at 12 months
 
 In regression models with number of parent-reported infections as exposure and LC/MS lipids as the outcomes, infants with more infections had, on average, lower levels of the dehydrocholesteryl ester (−0.05 SD per 1 infection, [−0.08 to −0.03]) and trihexosylceramide (−0.04 [−0.06 to −0.01]) class lipids. There was also evidence to a lesser extent for associations between higher number of infections and lower cholesteryl esters (−0.03 [−0.05 to −0.01]) and plasmalogen classes (lysoalkenyl phosphatidylcholines, −0.02 [−0.04–0.00]; alkenylphosphatidylethanolamines, −0.03 [−0.06 to −0.01]) (Figure 5a). The 10 lipid species with the strongest statistical evidence for association with number of infections were hexosylceramides (HexCer(d18:2/18:0), –0.05 [−0.07 to −0.02]; HexCer(d18:2/22:0), –0.04 [−0.07 to −0.02]; HexCer(d16:1/24:0), –0.04 [−0.07 to −0.02]), trihexosylceramides (Hex3Cer(d18:1/18:0), –0.04 [−0.07 to −0.02]; Hex3Cer(d18:1/20:0), –0.05 [−0.07 to −0.02]; Hex3Cer(d18:1/22:0), –0.04 [−0.07 to −0.02]), phosphatidylethanolamines (PE(18:0/20:3), 0.04 [0.02–0.07]), cholesteryl esters (CE(22:5), –0.04 [−0.07 to −0.02]; CE(22:6), –0.04 [−0.07 to −0.02]) and dehydrocholesteryl esters (DE(18:2), –0.05 [−0.08 to −0.03]) (Figure 5—figure supplement 1a).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig5-v1.jpg)
+
+**Figure 5.:** Forest plots of the estimated 12-month lipidomic differences in class totals for each additional parent-reported infection from birth to 12 months (a, circle points) or SD log 12-month GlycA (b, square points) from adjusted linear regression models, and the correlation of estimated differences for these two exposures across all lipidomic measures (c). In (a) and (b), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Forest plots depicting individual lipid species within each group are shown in Figure 5—figure supplement 1. Infection and GlycA exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Forest plots of the estimated 12-month lipidomic differences in lipid class totals (solid boxes) and individual lipid species (pale boxes) for each additional parent-reported infection from birth to 12 months (a) or SD log 12-month GlycA (b) from adjusted linear regression models. Closed points for class totals and blue points for lipid species represent adjusted p-value < 0.05. Error bars are 95% confidence intervals for class totals. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Forest plots of the estimated 6-month lipidomic differences in class totals for each additional parent-reported infection from birth to 6 months (a, circle points) or SD log 6-month GlycA (b, square points) from adjusted linear regression models, and the correlation of estimated differences for these two exposures across all lipidomic measures (c). In (a) and (b), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 5—source data 2.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Forest plots of the estimated 12-month lipidomic differences in class totals for each additional parent-reported infection from 6 to 12 months (a, circle points) or SD log 12-month GlycA (b, square points) from adjusted linear regression models, adjusted for corresponding 6-month lipidomic measures. Infection models were adjusted for number of infections from birth to 6 months of age, and GlycA models were adjusted for 6-month GlycA. The correlation of estimated differences for these two exposures across all lipidomic measures (c). In (a) and (b), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Infection and GlycA exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 5—source data 3.
 
 Compared to models with number of infections, lipidomic differences were more pronounced when GlycA was considered as the exposure, including higher ceramides (0.15 SD per 1 SD increase in log GlycA, [0.06–0.24]), dihexosylceramides (0.29 [0.21–0.38]), di- (0.32 [0.24–0.40]) and TGs (0.27 [0.19–0.36]), and phospholipid classes (e.g. phosphatidylethanolamines, 0.28 [0.19–0.36]; phosphatidylglycerols, 0.23 [0.15–0.32]), and lower plasmalogen classes (alkenyl phosphatidylcholines, −0.28 [−0.37 to −0.21]; alkenylphosphatidylethanolamines, −0.22 [−0.31 to −0.14]; lysoalkenyl phosphatidylcholines, −0.14 [−0.20 to −0.08]), cholesteryl esters (−0.25 [−0.34 to −0.17]), and dehydrocholesteryl esters (−0.41 [−0.49 to −0.33]) (Figure 5b).
 
 Higher hsCRP was also associated with differences across several lipid classes, particularly lower plasmalogen classes (e.g. lysoalkenyl phosphatidylcholines, −0.19 SD per 1 SD increase in log hsCRP, [−0.25 to −0.14]; alkenyl phosphatidylcholines, −0.26 [−0.35 to −0.18]), sulfatides (−0.26 [−0.34 to −0.17]), and alkyl phosphatidylcholines (−0.29 [−0.38 to −0.21]) (Figure 6a). For all lipidomic models, bootstrap estimates were similar to the standard regression estimates. All sensitivity analyses (Supplementary file 1D-1F) showed similar estimated effect sizes, except for hsCRP models excluding samples with processing times greater than 4 hr, where estimated differences in several classes (including lysophosphatidylcholines, lysoalkenyl phosphatidylcholines, and lysoalkenylphosphatidylethanolamines) were substantially larger compared to the primary models (Supplementary file 1F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig6-v1.jpg)
+
+**Figure 6.:** Forest plot for the estimated 12-month lipidomic differences for each additional SD log 12-month hsCRP (a, diamond points) from adjusted linear regression models, and the correlation of estimated differences across all lipidomic measures for infection and hsCRP (b) and glycoprotein acetyls (GlycA) and hsCRP (c). In (a), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Forest plots depicting individual lipid species within each group are shown in Figure 6—figure supplement 1. hsCRP exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Forest plots of the estimated 12-month lipidomic differences in lipid class totals (solid boxes) and individual lipid species (pale boxes) for each SD log 12-month hsCRP from adjusted linear regression models. Closed points for class totals and blue points for lipid species represent adjusted p-value < 0.05. Error bars are 95% confidence intervals for class totals. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Forest plot for the estimated 6-month lipidomic differences for each additional SD log 6-month hsCRP (a, diamond points) from adjusted linear regression models, and the correlation of estimated differences across all lipidomic measures for infection and hsCRP (b) and glycoprotein acetyls (GlycA) and hsCRP (c). In (a), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 6—source data 2.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Forest plot for the estimated 12-month lipidomic differences (adjusted for corresponding 6-month lipidomic measure) for each additional SD log 12-month hsCRP (adjusted for 6-month hsCRP) (a, diamond points) from adjusted linear regression models, and the correlation of estimated lipidomic differences for infection and hsCRP (b) and for glycoprotein acetyls (GlycA) and hsCRP (c). In (a), error bars are 95% confidence intervals. Closed points represent adjusted p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. hsCRP exposure model estimates and details for all LC/MS lipidomic measures are shown in Figure 6—source data 3.
 
 There was stronger correlation for lipidomic differences related to infection and GlycA (r = 0.77, Figure 5c) than for infection and hsCRP (r = 0.36, Figure 6b) or GlycA and hsCRP (r = 0.55, Figure 6c).
 
@@ -121,9 +402,17 @@ In models investigating parent-reported infections from birth to 6 months of age
 
 As with the NMR metabolomic measures, there was little evidence for associations between serum LC/MS lipidomic measures at birth and number of infections from birth to 6 months of age in secondary analyses (Supplementary file 3C). For 6-month measures, higher cholesteryl esters and dehydrocholesteryl esters were associated with lower number of subsequent infections from 6 to 12 months of age (average −0.10 lower infections per 1 SD higher 6-month log total cholesteryl esters, 95% CI [−0.15 to −0.05]; −0.10 infections per 1 SD higher 6-month log total dehydrocholesteryl esters, 95% CI [−0.16 to −0.05]) (Supplementary file 3D).
 
-## Mediation analysis
+### Mediation analysis
 
 We next assessed whether inflammation (i.e. GlycA or hsCRP at 12 months) mediated the effects of infection on specific metabolite and lipid measures (adjusted p-value < 0.1) (Figure 7). For the NMR metabolomic measures considered in mediation models, there was evidence of an indirect effect of infection mediated by GlycA on all measures, and an indirect effect mediated by hsCRP for phenylalanine, ApoA1, and the HDL, HDL2, and HDL3 cholesterols. For all measures except ApoA1 and HDL3 cholesterol, GlycA was estimated to mediate a larger proportion of the total effect of infections on metabolomic measures than hsCRP. For the LC/MS lipidomic mediation models, there was evidence of indirect effects of infection on all the considered lipid classes mediated by GlycA, and indirect effects mediated by hsCRP for all classes except dehydrocholesteryl esters. GlycA was estimated to mediate a larger proportion of the total effect on infections on all lipid classes except lysoalkenyl phosphatidylcholines. GlycA was similarly estimated to mediate a larger proportion of the total effect of infection on individual lipid species than hsCRP for all lipid species included in mediation analyses.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig7-v1.jpg)
+
+**Figure 7.:** Units of change are 1 infection for parent-reported infections, and 1 SD change for GlycA, hsCRP, and metabolomic/lipidomic measures on log scale. Error bars are 95% confidence intervals. Closed points represent p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Model details are in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75170/elife-75170-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Units of change are 1 infection for parent-reported infections, and 1 SD change for GlycA, hsCRP, and metabolomic/lipidomic measures on log scale. Error bars are 95% confidence intervals. Closed points represent p-value < 0.05. All models were adjusted for infant age, sex, gestational age, birth weight, maternal household income, smoking during pregnancy, breastfeeding status, and sample processing time. Model details are in Figure 7—source data 2.
 
 To consider potential confounding from earlier inflammation or metabolomic/lipidomic measures, we additionally performed mediation analyses for inflammation measured at 12 months mediating the relationship between number of infections from 6 to 12 months of age and the 12-month metabolomic/lipidomic measures with adjustment for number of infections from birth to 6 months of age, 6-month inflammation, and the corresponding 6-month metabolomic/lipidomic measure. For most metabolomic and lipidomics measures, evidence for indirect effects mediated by GlycA or hsCRP varied minimally in this 6- to 12-month model compared to the birth to 12-month mediation models (Figure 7—figure supplement 1).
 
@@ -139,17 +428,17 @@ In lipidomic analyses, infection burden was associated with lower levels of seve
 
 The different relationships of the two inflammatory markers GlycA and hsCRP with metabolomic and lipidomic profiles are consistent with a recent study in pregnant women reporting GlycA was more strongly correlated with NMR metabolomic differences than hsCRP (Mokkala et al., 2020). While hsCRP has been widely used as a measure of chronic inflammation, primarily in adults, it is an acute phase reactant that increases rapidly following acute stimulus and returns to baseline levels within a matter of days and is therefore mostly used as a diagnostic adjunct in children with acute infection or inflammation (Gabay and Kushner, 1999). In contrast, there is evidence that GlycA can remain elevated for up to a decade in young adults (Ritchie et al., 2015), and it is considered a superior marker of cumulative inflammation burden, though data of GlycA in early life are sparser. Several studies in adults have reported that these two markers are only moderately correlated (Akinkuolie et al., 2014; Gruppen et al., 2015b), and it is suggested that these markers reflect different (albeit overlapping) inflammatory processes. This is consistent with our findings of distinct metabolomic and lipidomic profiles for these two markers and reflects other findings that show different relationships of GlycA and hsCRP with cardiovascular and metabolic phenotypes. For example, GlycA is independently associated with risk of CVD and with enzymatic esterification of free cholesterol, even after adjustment for hsCRP (Duprez et al., 2016; Gruppen et al., 2015a; Muhlestein et al., 2018). Associations between GlycA and lipolysis rates (Levine et al., 2020) and gut microbiome diversity (Mokkala et al., 2020) are also stronger than those reported for hsCRP.
 
-## Strengths and limitations
+### Strengths and limitations
 
 This large prospective cohort study is the first to examine the relationship between infection, inflammation, and plasma NMR metabolomic and LC/MS lipidomic profiles in early life, with implications for later CVD risk. The associations were consistent using either parental-reported infections (potentially prone to reporting bias) or 12-month GlycA as a measure of cumulative inflammatory burden. We found no evidence that birth plasma metabolomic or lipidomic profiles were associated with infection burden in the first 6 months of life (i.e. reverse causation; Supplementary file 3A and C). There was some limited evidence that GlycA at 6 months may be associated with subsequent number of infections (Supplementary file 3B), but we were able to adjust for this in mediation models to avoid exposure-induced mediator-outcome confounding (Vanderweele and Vansteelandt, 2009). The use of metabolomics and lipidomic data from three early life time points (birth, 6 months, and 12 months) is unique and allowed longitudinal analyses to be performed.
 
 Limitations include the use of cross-sectional data for mediation analyses (i.e. 12-month inflammatory markers and 12-month metabolomics/lipidomics), which we addressed in part with mediation models adjusted for infections from birth to 6 months of age and 6-month inflammation. Moreover, GlycA is a marker of cumulative inflammation (Collier et al., 2019; Ritchie et al., 2015) and is believed to reflect inflammatory events occurring prior to the 12-month time point. Evidence from randomised controlled trials in adults support a causal role of inflammation in CVD risk (Chunfeng et al., 2021; Ridker et al., 2017), however this study in infants is observational. While we have used a casual framework for mediation analyses, our findings do not demonstrate causality. Despite rigorous adjustment and sensitivity analyses, there may be unmeasured confounding, such as from environmental factors that may modify changes in metabolomic/lipidomic measures following infection. We considered total parent-reported infections, as defining clinical categories of infection given the non-specific symptoms and signs in infancy is challenging. Validation of all parent-reported infections was not feasible and only a minority (70 infections in 555 infants) resulted in medical attention (Rowland et al., 2021). However, the strong correlation between metabolomic and lipidomic differences for number of reported infections and for GlycA suggests that parent report is a reasonable measure of infection-induced inflammatory burden. Most childhood infections are viral, and microbial testing is impractical in non-hospitalised children and cannot necessarily differentiate between colonisation and infection. Notwithstanding, distinct lipid differences have been reported for children with bacterial versus viral infections (Wang et al., 2019), and different infectious aetiologies in adults have been linked to differential CVD risk (Cowan et al., 2020). Finally, the relative lack of racial/ethnic diversity in our cohort may limit generalisability of our findings.
 
-## Conclusions
+### Conclusions
 
 In summary, we present evidence for higher infection burden in early life leading to proatherogenic and prodiabetic plasma metabolome and lipidome at 12 months of age, and for inflammation partly mediating these relationships. GlycA may be a better marker of early life infection and inflammation burden than hsCRP. These findings suggest that the impact of the cumulative infection and inflammation burdens previously implicated in adult cardiometabolic disease may begin in infancy, thereby offering opportunities for early prevention. Further work is required to determine the potential consequences these adverse metabolomic profiles in early life have on later risk of disease, and how the relationships between infections, inflammation, and metabolomic and lipidomic profiles might differ across age groups, pathogen type, and clinical severity of infection.
 
-## Data availability
+### Data availability
 
 Given the ethics for this study, the individual participant data cannot be made freely available online. Interested parties can access the data used in this study upon reasonable request, with approval by the BIS data custodians. As part of this process, researchers will be required to submit a project concept for approval, to ensure the data is being used responsibly, ethically, and for scientifically sound projects.
 

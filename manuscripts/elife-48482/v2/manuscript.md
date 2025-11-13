@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.48482.001 Tissue homeostasis requires a balance between progenitor cell proliferation and loss. Mechanisms that maintain this robust balance are needed to avoid tissue loss or overgrowth. Here we demonstrate that regulation of spindle orientation/asymmetric cell divisions is one mechanism that is used to buffer changes in proliferation and tissue turnover in mammalian skin. Genetic and pharmacologic experiments demonstrate that asymmetric cell divisions were increased in hyperproliferative conditions and decreased under hypoproliferative conditions. Further, active K-Ras also increased the frequency of asymmetric cell divisions. Disruption of spindle orientation in combination with constitutively active K-Ras resulted in massive tissue overgrowth. Together, these data highlight the essential roles of spindle orientation in buffering tissue homeostasis in response to perturbations.
+Tissue homeostasis requires a balance between progenitor cell proliferation and loss. Mechanisms that maintain this robust balance are needed to avoid tissue loss or overgrowth. Here we demonstrate that regulation of spindle orientation/asymmetric cell divisions is one mechanism that is used to buffer changes in proliferation and tissue turnover in mammalian skin. Genetic and pharmacologic experiments demonstrate that asymmetric cell divisions were increased in hyperproliferative conditions and decreased under hypoproliferative conditions. Further, active K-Ras also increased the frequency of asymmetric cell divisions. Disruption of spindle orientation in combination with constitutively active K-Ras resulted in massive tissue overgrowth. Together, these data highlight the essential roles of spindle orientation in buffering tissue homeostasis in response to perturbations.
 
 ## Introduction
 
@@ -27,6 +27,22 @@ The epidermis is a proliferative tissue that turns over repeatedly throughout li
 
 We began by examining whether spindle orientation was altered when developmental or adult homeostatic proliferation was experimentally altered. In the embryonic mouse epidermis, where proliferation is high, the ratio of perpendicular to planar divisions is approximately 70:30 (Lechler and Fuchs, 2005; Smart, 1970). To inhibit basal cell cycle progression, we used a basal epidermal keratin 14 promoter to drive a doxycycline-inducible allele of Cdkn1b, a CDK1 inhibitor (K14-rtTA;tetO-CDKN1b) (Pruitt et al., 2013). Quantitation of the percentage of cells expressing the mitotic marker phospho-histone H3 (pHH3) revealed a significant decrease in basal cell proliferation (Figure 1A). This also resulted in a significant reduction in perpendicular divisions, from 70% to 35%, with a concomitant increase in planar divisions (from 22% to 42%) (Figure 1B,C). We measured spindle angles as shown in Figure 1—figure supplement 1. This data is consistent with the need for increased rates of planar divisions to maintain the surface area of the epidermis in a rapidly growing embryo.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig1-v2.jpg)
+
+**Figure 1.:** (A) Proliferation of control and K14-rtTA;TRE-Cdkn1b embryonic epidermis measured by pHH3 incorporation after treatment with doxycycline from e14.5–16.5. (B–C) Radial histograms of mitotic spindle orientation for e16.5 control (n = 61) and Cdkn1b (n = 59) embryonic epidermis. (D) Proliferation of adult backskin epidermis, control or TPA-treated (10 μl of 0.4 mM TPA, applied daily for 5 days), as measured by BrdU incorporation. n > 150 for each of three mice. (E–F) Radial histograms of mitotic spindle orientation for control (n = 20) and TPA-treated (n = 41) epidermis. Three or more mice were examined for each condition. *p<0.05, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We measure the angle formed by a line through the spindle poles and one along the basement membrane.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Proliferation in WT backskin and footpad as measured by BrdU incorporation. n > 300 cells for each of 3 mice. p<0.001. (B,C) H and E images of WT backskin and footpad epidermis, showing their difference in thickness. (D–F) Radial histograms of mitotic spindles in WT backskin (n = 22), footpad (n = 78), and footpad from a K14-rtTA;TRE-Cdkn1b (n = 24) mouse epidermis. Note that the data in (D) is the same as the data presented in Figure 2A.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** K10 (red), nuclei (blue), and the basement membrane is marked by β4-integrin staining in green.
+
 In contrast to the embryo, the proliferation rate in the adult backskin is low. Live imaging has shown that most divisions occur symmetrically and that basal cells delaminate from the basement membrane to populate suprabasal cell layers (Ipponjima et al., 2016; Rompolas et al., 2016). Consistent with this observation, we see that the majority of mitotic spindles are planar in adult backskin (Figure 1E). Notably, there is regional variability in epidermis from different anatomical areas in both proliferation and spindle orientation. The epidermis of the footpad, which is thicker, has both a higher proliferation index and increased numbers of perpendicular divisions (Figure 1—figure supplement 2). Similar to the embryonic epidermis, expression of Cdkn1b caused a shift to more planar cell divisions in the paw epidermis (Figure 1—figure supplement 2E).
 
 To induce hyperproliferation of adult backskin epidermis we topically applied the mitogen TPA. This resulted in thickening of the epidermis and a 6-fold increase in proliferation rate as measured by BrdU incorporation (Figure 1D). Notably, this treatment increased the percentage of perpendicular divisions from 20% to 40% (Figure 1E,F). Therefore, one of the responses to TPA-induced hyperproliferation in the epidermis is an increase in the rate of divisions that give rise to differentiated progeny, as seen by staining for the differentiation marker, keratin 10 (Figure 1—figure supplement 3). Together these data demonstrate correlations between proliferation and spindle orientation, and support the hypothesis that cells tune their division orientation in response to the needs of the surrounding tissue as a mechanism to promote robust homeostasis.
@@ -35,7 +51,23 @@ To directly determine whether regulated spindle orientation was important for ep
 
 Given that tissues responded to TPA-induced hyperproliferation by increasing perpendicular divisions, we next asked whether this also occurred in response to an oncogenic perturbation. Mutations that activate Ras family members can drive squamous cell carcinoma and a significant percentage of squamous tumors carry Ras mutations (Daya-Grosjean et al., 1993; Pierceall et al., 1991; South et al., 2014). Unexpectedly, we found that expression of KRASG12D (at endogenous levels and only in the epidermis; K5CreER;KRASG12D/+) had distinct effects in backskin and footpad epidermis. While there was no significant change in division orientation ratios in the backskin, active K-Ras resulted in an increase in perpendicular divisions in the footpads (Figure 2A–D). These data rule out the possibility that active K-Ras inhibits regulated spindle orientation/asymmetric cell divisions as an oncogenic mechanism. It raised the alternative possibility that the increased perpendicular divisions may protect the tissue against overgrowth. We therefore addressed the molecular requirements for spindle orientation in skin expressing active K-Ras. We combined a NuMA mutation that disrupts embryonic spindle orientation with the KRASG12D oncogene (Seldin et al., 2016; Silk et al., 2009). This resulted in a significant shift of divisions from perpendicular to planar, consistent with NuMA being required for spindle orientation in this context (Figure 2E). On their own, mutations in NuMA resulted in a skewing of spindle orientations in the pawskin (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig2-v2.jpg)
+
+**Figure 2.:** (A,B) Radial histogram of mitotic spindles in adult backskin 21 days after tamoxifen-induced recombination in control (A) and K5CreER; KRASG12D mice (B). (C,D) Radial histogram of mitotic spindles in adult footpad epidermis, 21 days after tamoxifen-induced recombination in control (C) and K5CreER; KRASG12D mice, (n = 78 cells), and (D) (n = 64 cells). (E) Radial histogram of mitotic spindles in adult footpad 21 days after tamoxifen-induced recombination in K5CreER; KRASG12D;NuMAΔMTBD mice (n = 57 cells). Note that the data in 2C is the same as that presented in Figure 1—figure supplement 2E.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** n = 41 cells.
+
 The consequence of perturbing regulated spindle orientation in epidermis expressing active KRAS was dramatic. Within two weeks of recombination, large overgrowths appeared on the footpads and anogenital regions of the double mutant mice (K5CreER;KRASG12D/+;NuMAMTBDfl/fl) (Figure 3A). These features were not found in single KRASG12D or NuMA mutants, although KRASG12D alone was sufficient for formation of oral tumors similar to those that appeared in the double mutants. Most mice died within 3–4 weeks after recombination (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig3-v2.jpg)
+
+**Figure 3.:** (A) Images of K5CreER; KRASG12D and K5CreER; NuMAΔMTBD; KRASG12D mice 21 days after recombination with tamoxifen, with inset of footpad and anal-genital region. (B,C)) Kaplan-Meier Survival plot of K5CreER; KRASG12D and K5CreER; NuMAΔMTBD; KRASG12D mice (B) and K5CreER; p53-/- and K5CreER; p53-/-; NuMAΔMTBD mice (C). n = 12 mice for K5CreER; NuMAΔMTBD; KRASG12D and 10 for other genotypes. (D,E) H and E images of K5CreER; KRASG12D (D) and K5CreER; NuMAΔMTBD; KRASG12D (E) footpad epidermis. (F,G) Immunofluorescence images of K5CreER; KRASG12D (F) and K5CreER; NuMAΔMTBD; KRASG12D (G) footpad epidermis showing localization of K5/K14+ basal and K10+ suprabasal epidermal layers. Scale bar = 50 μm. (H) Quantitation of basement membrane length divided by tissue length in indicated genotypes (n = 3 mice/condition). (I) Quantitation of proliferation, as assayed by BrdU incorporation, in control and KRASG12D mice. (n > 300 cells, three mice/condition). (J) Image showing co-localization of keratin 10 (red) and histone H2B (green) in a basal cell from a K10-rtTA; TRE-H2B-GFP mouse. (K) Quantitation of Keratin 10 positive basal cells in paw and backskin with indicated genotypes. n > 300 cells/mouse, three mice/condition. (L) Fluorescence intensity (normalized) of β4-integrin in control and KRASG12D expressing footpad epidermis (n = 3 mice/condition).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48482/elife-48482-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Images show K10 (green) stained ear skin epidermis with the basement membrane noted with a dotted line. These mice were topically treated with TPA for ten days (treatment every second day). The graph indicates the basement membrane length/tissue length of the skin.
 
 Histologic analysis of the double mutant paws demonstrated massive tissue overgrowth and papilloma formation (Figure 3D–G). Despite this dramatic change in tissue architecture, the basement membrane remained intact and differentiation was normal at early time points. Thus, this combination of mutations is not sufficient for invasion, at least in the short time period we were able to assay. The massive tissue overgrowth led to lethality, likely due, at least in part, to blockage of the oral cavity.
 
@@ -55,22 +87,22 @@ Our data are consistent with the idea that both regulated spindle orientation an
 
 ## Materials and methods
 
-## Mouse strains and tissue preparation
+### Mouse strains and tissue preparation
 
 All animal work was approved by Duke University’s Institutional Animal Care and Use Committee. Mouse strains used in this study were: Krt5-CreER (Gift from Brigid Hogan), NuMA1-ΔMTBD (Seldin et al., 2016; Silk et al., 2009), KRASG12D (Jackson et al., 2001), and Trp53fl/fl (Marino et al., 2000). Mice were genotyped by PCR, and both males and females were used for experiments from postnatal day 30–60. For BrdU incorporation experiments, mice were injected with 10 mg/kg BrdU (Sigma-Aldrich) and left for 75 mins prior to sacrifice. Paws and backskin were embedded in Optimal Cutting Temperature prior to freezing, and samples were stored at −80 °C. A cryostat was used to cut 10 µm thick sections. For TPA (Cayman Chemical) treatment, 10 μl of 0.4 mM TPA was applied to the backskin each day for 5 days.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For immunofluorescent staining, 10 uM thick sections were fixed for 8 min in 4% PFA in PBS-T (containing 0.2% Triton X-100) or 3 min in −20C methanol. Samples were washed for 5 min in PBS-T, and then incubated in blocking buffer (5% normal goat serum, 5% normal donkey serum, and 3% bovine serum albumen in PBS-T) for 15 min. Sections were then incubated with primary antibody overnight at 4C (for anti-K5/K14), or for 15 min at room temperature (all other antibodies). After washing with PBS-T, sections were incubated with secondary antibody for 10 min at room temperature. Sections were washed again and then mounted in 90% glycerol in PBS with 2.5 mg/mL p-Phenylenediamine (Sigma-Aldrich). Antibodies used were: rat anti-β4-integrin (BD Biosciences), rabbit anti-pHH3 (Cell Signaling Technology), rat anti-BrdU and rabbit anti-NuMA (Abcam), chicken anti-Keratin5/Keratin14 (Lechler lab), rabbit anti-Keratin 10 (Covance). Images were collected using a Zeiss Axio Imager Z1 fluorescence microscope with Apotome attachment. Adobe Photoshop and ImageJ software were used to process images.
 
-## Measurement of spindle angles
+### Measurement of spindle angles
 
 Spindle angles were measured in Fiji and defined by the angle formed by a line drawn through the two spindle poles of late metaphase or anaphase spindles and a second line across the underlying basement membrane (see Figure 1—figure supplement 1). When spindle poles were not in the same plane, three dimensional reconstructions were generated and spindle angles were measured in rotated images.
 
-## Hematoxylin and eosin staining
+### Hematoxylin and eosin staining
 
 Tissue sections were fixed for 10 min in 10% PFA in distilled water. Slides were then submerged in Mayer’s Hemotoxylin (Sigma-Aldrich) for 10 min, and then allowed to rinse in water for approximately 10 min. Slides were dipped 5–10 times in 10% Eosin in ethanol, then washed by dipping 10 times in 50% ethanol, 10 times in 70% ethanol, incubated 30 s in 95% ethanol, and 1 min in 100% ethanol. Slides were then dipped in xylene, allowed to air dry, and mounted in Permount (Sigma-Aldrich).
 
-## Statistics
+### Statistics
 
 For all spindle orientations we used the Kolomogrov-Smirnov test. For comparison of two samples we used Student’s t-test and ANOVA analysis was first performed when three or more samples were analyzed.

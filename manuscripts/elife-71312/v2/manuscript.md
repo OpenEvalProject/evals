@@ -42,15 +42,54 @@ In this study, we propose a surgical nerve transfer model to allow the transfer 
 
 ## Results
 
-## Nerve transfer surgery
+### Nerve transfer surgery
 
 All animals survived the surgical nerve transfers and showed normal gait and grasping behavior in the 12-week follow-up period (Table 1). All animals were able to carry out activities of daily behavior unhindered and no signs of severe pain, wound dehiscence, auto-mutilation, or infection were documented. The mean surgery time was 49±13 min for the single nerve transfer (SNT) procedures and 78±20 min for the double nerve transfer (DNT) procedures.
 
-## Behavioral evaluation
+**Table 1.**
+ Overview of qualitative results.These results provide a detailed overview of the nerve transfer model and evidence of successful reinnervation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SNT</th>
+      <th>DNT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Surgery timeBehavior after 12 weeksMacroscopic innervationCrush/neurotomy response</td>
+      <td>49±13 minAll max score (n=21)All (n=30)All (n=15)</td>
+      <td>78±20 minAll max score (n=30)All (n=32)All (n=17)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UN</td>
+      <td>AIN</td>
+    </tr>
+    <tr>
+      <td>Nerve length</td>
+      <td>23.08±1.36 mm</td>
+      <td>10.50±1.61 mm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavioral evaluation
 
 Slow-motion video sequence analysis by a blinded evaluator showed that 12 weeks following the SNT and DNT, all animals could consistently reach behind their ears and therefore achieved a maximum score of 5 (Video 1, Video 2).
 
-## Retrograde labeling
+![Video 1.](https://cdn.elifesciences.org/articles/71312/elife-71312-video1.mp4.jpg)
+
+**Video 1.:** The grooming behavior of a double nerve transferred animal is provoked by sprinkling 1–3 ml of water or glucose on its snouts and as shown in slow-motion. Notice that the animal can perform a physiological grooming movement with both front paws reaching behind the ears smoothly.
+
+![Video 2.](https://cdn.elifesciences.org/articles/71312/elife-71312-video2.mp4.jpg)
+
+**Video 2.:** The supinated left forelimb with the exposed biceps muscle and its motor branch is shown. By crushing the MCN repeatedly with increasing pressure from proximal to distal with a micro needle holder, action potentials were elicited toward the biceps’ long head which resulted in muscle fibrillation. MCN, musculocutaneous nerve.
+
+### Retrograde labeling
 
 Analyses of the spinal cord following UN transfer showed adequate motor neuron staining in the corresponding segments (Th1-C8). When comparing the spinal cords of the untreated animals with spinal cords of animals that underwent DNT, the distribution pattern of the longitudinally arranged Fluoro-Gold dyed clusters provides strong evidence that both the UN and AIN innervated the biceps’ long head (see Figure 1 for a representative example). Furthermore, no signs of spontaneous regeneration from the musculocutaneous nerve (MCN) were noted by analyzing the corresponding spinal cord segments (C5–C7).
 
@@ -60,19 +99,33 @@ Analyses of the spinal cord following UN transfer showed adequate motor neuron s
 
 Furthermore, retrograde labeling revealed 50.67±15.67 motor neurons reinnervating the long head of the biceps following SNT and 80.07±28.15 motor neurons following DNT, compared to 67.14±2.34 innervating the untreated biceps (Figure 1C).
 
-## Neuromuscular analyses
+### Neuromuscular analyses
 
 Both the donor nerve branches and biceps’ motor entry point were topographically consistent. The UN measured a mean length of 23.08±1.36 mm from the distal exit of the cubital tunnel to the distal stump. The AIN transfer provided a mean length of 10.50±1.61 mm measured from its branching off the median nerve to the distal stump.
 
 Twelve weeks following nerve transfer surgeries, macroscopic examination of all biceps motor entry points showed successful reinnervation but no auto-innervation by the MCN and no signs of neuroma were detected. Adequate muscle fibrillation was observed in all animals upon crushing and neurotomizing the donor nerves individually following SNT and DNT (AIN crush and UN crush response are shown in Videos 3 and 4, respectively).
 
-## Comparison of reinnervated muscle mass
+![Video 3.](https://cdn.elifesciences.org/articles/71312/elife-71312-video3.mp4.jpg)
+
+**Video 3.:** Twelve weeks following DNT, the AIN reinnervating the long head of the biceps was repeatedly crushed with a micro needle holder. This resulted in a macroscopically recognizable muscle response, indicating successful reinnervation. DNT, double nerve transfer.
+
+![Video 4.](https://cdn.elifesciences.org/articles/71312/elife-71312-video4.mp4.jpg)
+
+**Video 4.:** After crushing and neurotomizing the AIN, the UN was crushed. Repeated nerve crushes resulted in adequate muscle fibrillations indicating neuromuscular regeneration.
+
+### Comparison of reinnervated muscle mass
 
 There was a linear relationship between treated and untreated muscle mass for each nerve transfer procedure, as assessed by visual inspection of a scatterplot (Figure 2—figure supplement 1). There was homogeneity of regression slopes as the interaction term was not statistically significant, F(1, 28)=0.238, p=0.630. Standardized residuals for the interventions and for the overall model were normally distributed, as assessed by Shapiro-Wilk test (p>0.05). There was homoscedasticity and homogeneity of variances, as assessed by visual inspection of a scatterplot and Levene’s test of homogeneity of variance (p=0.504), respectively. There were no outliers in the data, as no cases were detected with standardized residuals greater than ±3 standard deviations.
 
 After adjustment for control muscle mass, there was a statistically significant difference in muscle mass between the treated sides following SNT and DNT, F(1, 29)=24.030, ***p<0.001, partial η2=0.453 (Figure 2) . Muscle mass was statistically significantly larger in the DNT group (303.01±7.76 mg) compared to the SNT group (245.57±8.29 mg), with a mean difference of 57.45 (95% confidence interval [CI], 33.48–81.41) mg, ***p<0.001. Data are reported adjusted mean± standard error.
 
-## Comparison of reinnervated and control muscle mass
+![Figure 2.](https://cdn.elifesciences.org/articles/71312/elife-71312-fig2-v2.jpg)
+
+**Figure 2.:** Muscle mass after SNT was significantly reduced compared to the untreated muscle mass *p<0.001 while muscle mass following DNT regenerated to 98.83%. Muscle mass following DNT was significantly larger compared to the SNT group **p<0.001. DNT, double nerve transfer; SNT, single nerve transfer.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71312/elife-71312-fig2-figsupp1-v2.jpg)
+
+### Comparison of reinnervated and control muscle mass
 
 No outliers were detected as assessed by inspection of a boxplot. The assumption of normality was not violated, as assessed by Shapiro-Wilk test for the SNT (p=0.758) and DNT groups (p=0.307).
 
@@ -104,7 +157,7 @@ In conclusion, this study demonstrated that a single target muscle can host two 
 
 ## Materials and methods
 
-## Experimental design
+### Experimental design
 
 Eight rat cadavers were dissected to design the DNT procedure. An important criterion for the selection of the donor nerves and the target muscle was clinical relevance. First, eligible peripheral motor nerves were determined for a reliable, tension-free transfer to the long head of the biceps muscle. Then, the topographical relationships between the biceps’ long head, its motor nerve branch, the ulnar nerve in the antebrachium (UN) and the anterior interosseus nerve (AIN) were studied and subsequently compared to the human anatomy. These studies verified the anatomical feasibility of transferring both the distal UN and AIN to the long head of the biceps.
 
@@ -114,39 +167,39 @@ Sixty-two Sprague-Dawley rats aged 8–10 weeks were randomly allocated into two
 
 **Figure 3.:** Single-nerve transfer model: The UN (yellow) was transected distally to the palmar cutaneous branch in the forearm and surgically transferred to reinnervate the long head of the biceps (n=30). Multiple-nerve transfer model: Both the UN (yellow) and AIN (green) were redirected to reinnervate the long head of the biceps (n=32). Before both nerve transfer procedures, the originally innervating branch of the MCN was removed. The untreated contralateral biceps muscles served as internal control for both groups. The red lines indicate the level of transection.
 
-## Nerve transfer model
+### Nerve transfer model
 
 For each procedure, anesthesia was induced with ketamine (100 mg/kg) and xylazine (5 mg/kg) intraperitoneally and maintained by volume-controlled ventilation (40% O2, room air, 1.5–2% isoflurane) following orotracheal intubation. Piritramide (0.3 mg/kg) was administered subcutaneously for analgesia. Furthermore, the drinking water was mixed with piritramide and glucose (30 mg piritramide and 30 ml 10% glucose dissolved in 250 ml drinking water) and administered ad libitum for pain relief during the first 7 postoperative days. After the experimental tests, animals were euthanized with a lethal dose of pentobarbital (300 mg/kg) injected intracardially under deep anesthesia. All animals were examined daily by an animal keeper for pain, sensory deficits, impairments in daily activities, wound dehiscence, and infection. All nerve transfer procedures were performed by the same surgeon and assistant. Nerve transfer models such as the one described here aim to be as reproducible as possible and to be able to modify them for research purposes if necessary.
 
-## Single nerve transfer
+### Single nerve transfer
 
 A lazy S-shaped incision was made from 5 mm caudal to the greater tubercle of the humerus over the medial epicondyle along the ulnar side of the forearm until 5 mm proximal to the forepaw (Figure 4A). Following the dissection of the subcutaneous tissue, the antebrachial fascia was opened through an incision placed over the palmaris longus muscle to preserve the underlying ulnar collateral vessels. Then, the flexor carpi ulnaris muscle was bluntly mobilized and retracted ulnarly using a Magnetic Fixator Retraction System (Fine Science Tools, Heidelberg, Germany) to expose the UN. Further exposure of the dorsal and palmar cutaneous branches of the UN was carried out using an operating microscope (Carl Zeiss, Munich, Germany) (Figure 4B). The palmar branch was cut right after its emergence and the UN was subsequently transected as distally as possible. The UN was dissected proximally to its distal exit from the cubital tunnel while preserving the ulnar artery and basilic vein. Intraneural dissection allowed for conservation of the dorsal cutaneous and flexor carpi ulnaris motor branches (Figure 4B), while facilitating a tension-free nerve coaptation. Next, the incision of the antebrachial fascia was extended proximally to open the brachial fascia above the cubital fossa and biceps. Subsequently, the pectoral muscles were retracted to expose the MCN branch to the long head of the biceps running along the bicipital groove (Figure 4C). The motor branch of the MCN to the biceps’ long head was then cut at the motor insertion point and the proximal segment was subsequently removed from its division to prevent spontaneous regeneration. Next, the UN was routed proximally over the cubital fossa and coapted tension-free to the epimysium near the original motor insertion point with one 11–0 (Ethilon, Ethicon, Johnson & Johnson Medical Care, USA) simple interrupted stitch (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/71312/elife-71312-fig4-v2.jpg)
 
-**Figure 4.:** (A) Overview of the rats’ supinated right forelimb after the brachial and antebrachial fascia were removed. (B) Two blunt retractors have been placed to pull the flexor carpi ulnaris and the palmaris longus apart, revealing the underlying UN. The yellow line indicates the level of transection to gain sufficient length to reach the biceps’ long head tension-free. To achieve this, the palmar cutaneous branch must be transected, while the dorsal cutaneous branch can be preserved. (C) For better visualization, the brachial fascia was opened above the biceps. A sharp retractor was placed to pull back the pectoral muscles and thus revealed the two biceps heads, which were bluntly separated. In the deep bicipital groove, the MCN and its motor branch to the long head of the biceps were identified. Maximum length of the motor branch to the long head was removed to prevent spontaneous regeneration. (D) Eventually, the UN was rerouted from between the palmaris longus and flexor carpi ulnaris to the long head of the biceps and sutured to the epimysium at the former original motor entry point. This procedure on the one hand spares the denervation of the flexor carpi ulnaris and the flexor digitorum superficialis and the invasive dissection through the cubital tunnel. MCN, musculocutaneous nerve.Figure 4—source data 1.
+**Figure 4.:** (A) Overview of the rats’ supinated right forelimb after the brachial and antebrachial fascia were removed. (B) Two blunt retractors have been placed to pull the flexor carpi ulnaris and the palmaris longus apart, revealing the underlying UN. The yellow line indicates the level of transection to gain sufficient length to reach the biceps’ long head tension-free. To achieve this, the palmar cutaneous branch must be transected, while the dorsal cutaneous branch can be preserved. (C) For better visualization, the brachial fascia was opened above the biceps. A sharp retractor was placed to pull back the pectoral muscles and thus revealed the two biceps heads, which were bluntly separated. In the deep bicipital groove, the MCN and its motor branch to the long head of the biceps were identified. Maximum length of the motor branch to the long head was removed to prevent spontaneous regeneration. (D) Eventually, the UN was rerouted from between the palmaris longus and flexor carpi ulnaris to the long head of the biceps and sutured to the epimysium at the former original motor entry point. This procedure on the one hand spares the denervation of the flexor carpi ulnaris and the flexor digitorum superficialis and the invasive dissection through the cubital tunnel. MCN, musculocutaneous nerve.
 
-## Double nerve transfer
+### Double nerve transfer
 
 The skin incision, exposure of the distal UN as well as the denervation of the biceps’ long head were performed as described in the SNT. Before coaptation of the UN, the median nerve and AIN were dissected. For better exposure of the AIN, one blunt retractor was carefully placed to pull the proximal belly of the pronator teres muscle ulnarly (Figure 5A). After identifying the AIN, it was transected and dissected proximally in an intraneural fashion to its branching point (Figure 5A). Then, both the UN and the AIN were neurotized to the epimysium near the original motor insertion point with one 11–0 (Ethilon, Ethicon, Johnson & Johnson Medical Care) simple interrupted stitch each (Figure 5B). Significant caliber differences between the motor branch of the biceps’ long head and the two transferred nerves required neurotization directly to the epimysium. In this way, the regeneration distance was kept as short as possible, hence minimizing the reinnervation time. It is particularly important not to place the two nerves in direct proximity in the tissue (Figure 5B) as this increases the complexity of the dissection and therefore the risk of injuring the nerves in the follow-up examinations. Wound closure was performed with fascial and deep dermal 6–0 (Vicryl, Ethicon, Johnson and Johnson Medical Care, Austria) simple interrupted sutures followed by running subcuticular suture with 6–0 (Vicryl, Ethicon, Johnson and Johnson Medical Care).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71312/elife-71312-fig5-v2.jpg)
 
-**Figure 5.:** (A) General view of the right supinated forelimb. The proximal hook pulls the pectoral muscles toward proximal for better presentation. (B) The brachial and antebrachial fascia and the motor branch to the pronator teres muscle were removed for better visualization. In the cubital fossa, three branches arise from the median nerve: one muscle branch supplying the pronator teres (resected); one muscle branch supplying the flexor carpi radialis, palmaris longus, and flexor digitorum superficialis; and the AIN supplying pronator quadratus, flexor pollicis longus, and flexor digitorum profundus. After transecting the AIN (yellow line), proximal dissection in an intraneural fashion gains sufficient length to reach the biceps’ motor entry point. (C) Surgical site before wound closure, after both the UN and the AIN were transferred to the physiological motor entry point of the long head of the biceps. FCR, flexor carpi radialis; FDS, flexor digitorum superficialis; PL - palmaris longus.Figure 5—source data 1.
+**Figure 5.:** (A) General view of the right supinated forelimb. The proximal hook pulls the pectoral muscles toward proximal for better presentation. (B) The brachial and antebrachial fascia and the motor branch to the pronator teres muscle were removed for better visualization. In the cubital fossa, three branches arise from the median nerve: one muscle branch supplying the pronator teres (resected); one muscle branch supplying the flexor carpi radialis, palmaris longus, and flexor digitorum superficialis; and the AIN supplying pronator quadratus, flexor pollicis longus, and flexor digitorum profundus. After transecting the AIN (yellow line), proximal dissection in an intraneural fashion gains sufficient length to reach the biceps’ motor entry point. (C) Surgical site before wound closure, after both the UN and the AIN were transferred to the physiological motor entry point of the long head of the biceps. FCR, flexor carpi radialis; FDS, flexor digitorum superficialis; PL - palmaris longus.
 
-## Behavioral valuation
+### Behavioral valuation
 
 Quantitative assessment of grooming behavior was carried out and filmed 12 weeks after the SNT (n=21) and DNT (n=30) using Terzis’ grooming test (Inciong et al., 2000), a modification of Bertelli’s grooming test (Bertelli and Mira, 1993). To keep the animals’ stress level at a minimum, testing was performed in the animals’ familiar environment. In brief, 1–3 ml of water was sprinkled on the rats’ snouts, which led to consistent bilateral grooming movements of the forelimbs. Grading of the grooming performance was assessed by the following score: grade 1, paws reach mouth or elbow is extended; grade 2, paws reach mouth and beneath eyes; grade 3, paws reach eyes; grade 4, paws reach between eyes and ears; and grade 5, paws reach behind the ears. The slow-motion video sequences were graded by a blinded observer.
 
-## Retrograde labeling
+### Retrograde labeling
 
 Assessment of the motor unit at the spinal cord level after nerve transfer surgery was performed via retrograde labeling as previously described (Hayashi et al., 2007). In brief, retrograde tracers are taken up by terminal axons and transported via retrograde axonal transport to label the cell somas in the spinal cords’ ventral root. In eight additional untreated control animals, both the UN in the antebrachium and the AIN were transected and placed into conduit reservoirs for 1 hr, either filled with 5 µl of 10% Fluoro-Ruby (Invitrogen, Carlsbad, CA) or 5 µl of 2% Fast-Blue (Polysciences, Warrington, PA). Tracer leakage was prevented by sealing the reservoir around the nerve with Vaseline (Vaselinum album, Fagron, Glinde, Germany). Hence, the corresponding motor neuron pools in the spinal cord (C8-Th1) were localized (Figure 1). To further prevent bias due to differences in penetration of the tracers, the nerves were alternately colored with Fluoro-Ruby and Fast-Blue. Additionally, 12 weeks following SNT (n=15), DNT (n=15), and in another seven untreated control animals, motor neurons reinnervating the long head of the biceps were studied. Through a 15-mm incision above the biceps, the biceps’ long head and its insertion site were exposed. A Hamilton micro syringe was then used to inject 10 µl 2% Fluoro-Gold (Fluorochrome, LLC, Denver, CO) evenly into the biceps’ long head near the motor insertion site. After tracer injection with a small gauge needle, the syringe was kept inside the muscle for 1 min before slowly withdrawing it to keep leakage to a minimum. Seven days following retrograde labeling, the animals were deeply anesthetized by a lethal dose of xylazine, ketamine, and pentobarbital intraperitoneally before the left ventricle was perfused with 400 ml of 0.9% NaCl followed by 400 ml of 4% paraformaldehyde (PFA) solution. Then, the spinal cord segments C4-Th2 were harvested and stored in 4% PFA for 24 hr at +4°, followed by 24 hr in 0.1 M phosphate-buffered saline PBS0 at +4°. Then, the specimens were dehydrated in a PBS solution with increasing sucrose concentrations of 10%, 25%, and 40% for 24 hr each before embedding them in Tissue-Tek O.C.T. Compound (Sakura Finetek Europe B.V., Alphen aan den Rijn, Netherlands). Spinal cord segments were cut longitudinally into 40 µm sections using a cryostat (Leica, Germany). To assess the reinnervation and motor neuron count, each spinal cord section was analyzed in an observer blinded setting using a fluorescence microscope (Carl Zeiss, Munich, Germany). Spinal cord segments after SNT and DNT (Fluoro-Gold) were compared to the double labeled (Fast-Blue, Fluoro-Ruby) and the intramuscular labeled Fluoro-Gold segments of the untreated animals.
 
-## Neuromuscular analyses
+### Neuromuscular analyses
 
 The lengths of both the UN (n=6) and AIN (n=6) were measured intraoperatively before coaptation to the muscle. Twelve weeks following surgery, the motor entry point was microscopically examined for proper reinnervation and neuroma formation in all animals. Muscle reaction to nerve crush (see Video 2 for muscle reaction to MCN crush in the control side) and neurotomy was assessed in animals following DNT (n=17) and compared to animals following SNT (n=15). For internal control, the motor branches to the biceps’ long head were crushed and neurotomized in the contralateral forelimbs. Conclusively, to assess neuromuscular regeneration after denervation, the biceps muscles were resected and weighed immediately after removal using a microscale.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare the motor neuron count of retrograde labeling between the three groups, a one-way analysis of variance (ANOVA) would have to be conducted. Since two assumptions (one significant outlier as assessed by inspection of a boxplot and non-normally distributed data as assessed by Shapiro-Wilk test) for the ANOVA have not been met, a Kruskal-Wallis H test was performed instead. Distribution of scores was assessed by visual inspection of a boxplot.
 

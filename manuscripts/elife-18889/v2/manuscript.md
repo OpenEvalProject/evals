@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.18889.001 HIV-1 infection cannot be cured because the virus persists as integrated proviral DNA in long-lived cells despite years of suppressive antiretroviral therapy (ART). In a previous paper ( Zanini et al, 2015 ) we documented HIV-1 evolution in 10 untreated patients. Here we characterize establishment, turnover, and evolution of viral DNA reservoirs in the same patients after 3–18 years of suppressive ART. A median of 14% (range 0–42%) of the DNA sequences were defective due to G-to-A hypermutation. Remaining DNA sequences showed no evidence of evolution over years of suppressive ART. Most sequences from the DNA reservoirs were very similar to viruses actively replicating in plasma (RNA sequences) shortly before start of ART. The results do not support persistent HIV-1 replication as a mechanism to maintain the HIV-1 reservoir during suppressive therapy. Rather, the data indicate that DNA variants are turning over as long as patients are untreated and that suppressive ART halts this turnover. DOI: http://dx.doi.org/10.7554/eLife.18889.001
+HIV-1 infection cannot be cured because the virus persists as integrated proviral DNA in long-lived cells despite years of suppressive antiretroviral therapy (ART). In a previous paper (Zanini et al, 2015) we documented HIV-1 evolution in 10 untreated patients. Here we characterize establishment, turnover, and evolution of viral DNA reservoirs in the same patients after 3–18 years of suppressive ART. A median of 14% (range 0–42%) of the DNA sequences were defective due to G-to-A hypermutation. Remaining DNA sequences showed no evidence of evolution over years of suppressive ART. Most sequences from the DNA reservoirs were very similar to viruses actively replicating in plasma (RNA sequences) shortly before start of ART. The results do not support persistent HIV-1 replication as a mechanism to maintain the HIV-1 reservoir during suppressive therapy. Rather, the data indicate that DNA variants are turning over as long as patients are untreated and that suppressive ART halts this turnover.
 
 ## Introduction
 
@@ -32,89 +32,331 @@ Because of their importance to development of a cure for HIV-1 infection, many m
 
 The HIV-1 reservoir is established early during primary infection and is remarkably quantitatively and qualitatively stable. Siliciano et al. (2003) found a 44-month half-life for latently infected cells capable of producing replication-competent virus in the QVOA. Similarly, HIV-1 DNA levels and genetic compositions are very stable in patients receiving long-term suppressive ART (von Stockenstrom et al., 2015; Besson et al., 2014; Josefsson et al., 2013; Kearney et al., 2014; Günthard et al., 1999; Evering et al., 2012; Kieffer et al., 2004). Early ART reduces the reservoir’s size and genetic complexity (Chomont et al., 2009; Josefsson et al., 2013; Lori et al., 1999; Strain et al., 2005). Most studies suggest that the HIV-1 reservoir is maintained by the physiological homeostasis of memory CD4 cells that in part involves occasional expansion and contraction of individual CD4 cell clones (von Stockenstrom et al., 2015; Chomont et al., 2011, 2009). However, the results of some studies have suggested that persistent virus replication may be an important contributor to the maintenance of the HIV-1 reservoir (Buzón et al., 2010; Yukl et al., 2010). Recently, Lorenzo-Redondo et al. (2016) reported evidence of rapid HIV-1 evolution in lymphoid tissue reservoirs.
 
-Despite their significance for HIV-1 cure efforts, relatively little is known about the pre-ART establishment and turnover of the HIV-1 reservoir. In this study, we characterized the establishment and maintenance of the HIV-1 DNA reservoirs in 10 patients. We previously studied the evolution of HIV-1 in these patients before ART by whole genome deep-sequencing of HIV-1 RNA in longitudinal plasma samples (
+Despite their significance for HIV-1 cure efforts, relatively little is known about the pre-ART establishment and turnover of the HIV-1 reservoir. In this study, we characterized the establishment and maintenance of the HIV-1 DNA reservoirs in 10 patients. We previously studied the evolution of HIV-1 in these patients before ART by whole genome deep-sequencing of HIV-1 RNA in longitudinal plasma samples (Zanini et al., 2015). We now sequenced HIV-1 DNA from peripheral blood mononuclear cells (PBMCs) from these patients after many years of suppressive ART and compared these reservoir DNA sequences with the replicating HIV populations that were present before ART. The collection dates of all available samples relative to start of treatment are presented in Figure 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig1-v2.jpg)
 
-**Figure 1.:** For each study participant, the thick grey bar indicates the period of untreated HIV-1 replication. Circles indicate the collection times of the plasma samples used for whole genome deep sequencing of the HIV-1 RNA populations (Zanini et al., 2015). Triangles and squares indicate the collection times of the PBMC samples used for p17gag deep sequencing of the HIV-1 DNA populations. All times are relative to start of therapy.DOI: http://dx.doi.org/10.7554/eLife.18889.002
+**Figure 1.:** For each study participant, the thick grey bar indicates the period of untreated HIV-1 replication. Circles indicate the collection times of the plasma samples used for whole genome deep sequencing of the HIV-1 RNA populations (Zanini et al., 2015). Triangles and squares indicate the collection times of the PBMC samples used for p17gag deep sequencing of the HIV-1 DNA populations. All times are relative to start of therapy.
 
 We found that the HIV-1 DNA populations remained genetically stable for up to 18 years after the start of suppressive ART. The absence of genetic changes indicates that viral evolution and replication are not important mechanisms for the maintenance of HIV-1 reservoirs during supressive ART. We also found that the variants that were replicating shortly before start of ART were overrepresented in the HIV-1 DNA reservoirs. This excess of late variants in the DNA reservoirs indicated that proviral HIV-1 variants continued to turn over with a half-life of approximately one year until the patients began therapy. ART effectively froze the composition of the HIV-1 DNA reservoir in the state it had at start of therapy.
 
 ## Results
 
-## Patients and samples
+### Patients and samples
 
-The study population consisted of 10 HIV-1 infected patients who were diagnosed in Sweden between 1990 and 2003. The following criteria were used to select the patients: (1) A relatively well-defined time of infection; (2) Being treatment-naive for ≥5 years; and (3) Receiving suppressive ART (plasma HIV-1 RNA levels continuously <50 copies/ml) for ≥2 years. We previously characterized HIV-1 RNA populations in longitudinal plasma samples (6–12 per patients over 5–8 years). Results for 9 out of the 10 patients were reported in Zanini et al. (2015). The tenth patient (p7) was part of the previous study, but was not included in the final analyses of that study because the sequencing of plasma samples obtained during the first years after infection had failed. The results for the patient characteristics are presented in Figure 1 and Table 1.10.7554/eLife.18889.003Table 1.Summary of patient characteristics.DOI: http://dx.doi.org/10.7554/eLife.18889.003PatientGenderTransmissionSubtypeAge*HIV RNA from plasmaHIV DNA from PBMCs# samplesFirst/last since EDI†Time on ART†# templatesp1FHET01_AE37120.38.27.9/9.9/10.4 820/148/38 p2MMSMB3260.25.56.975p3MMSMB52100.48.44.6/6.7/7.2 243/102/108 p5MMSMB3870.45.94.0/6.3 180/72 p6MHETC3170.27.03.0/5.0/5.5 115/15/ndp7MMSMB31116.3‡16.16.3/8.4/8.8 88/279/108 p8MMSMB3570.26.08.4/10.6/10.9 180/55/175 p9MMSMB3280.38.17.7/9.7/10.2 60/72/72 p10MMSMB3490.16.216.2/18.3/18.6 249/116/51 p11MMSMB5370.65.66.4/8.4/8.8 124/120/123 *at diagnosis;†EDI: estimated date of infection; all times are given in years;‡sequencing failed in earlier samples due to low plasma HIV-1 RNA levels.
+The study population consisted of 10 HIV-1 infected patients who were diagnosed in Sweden between 1990 and 2003. The following criteria were used to select the patients: (1) A relatively well-defined time of infection; (2) Being treatment-naive for ≥5 years; and (3) Receiving suppressive ART (plasma HIV-1 RNA levels continuously <50 copies/ml) for ≥2 years. We previously characterized HIV-1 RNA populations in longitudinal plasma samples (6–12 per patients over 5–8 years). Results for 9 out of the 10 patients were reported in Zanini et al. (2015). The tenth patient (p7) was part of the previous study, but was not included in the final analyses of that study because the sequencing of plasma samples obtained during the first years after infection had failed. The results for the patient characteristics are presented in Figure 1 and Table 1.
+
+**Table 1.**
+ Summary of patient characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Gender</th>
+      <th>Transmission</th>
+      <th>Subtype</th>
+      <th>Age*</th>
+      <th colspan="3">HIV RNA from plasma</th>
+      <th colspan="2">HIV DNA from PBMCs</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th># samples</th>
+      <th colspan="2">First/last since EDI†</th>
+      <th>Time on ART†</th>
+      <th># templates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p1</td>
+      <td>F</td>
+      <td>HET</td>
+      <td>01_AE</td>
+      <td>37</td>
+      <td>12</td>
+      <td>0.3</td>
+      <td>8.2</td>
+      <td>7.9/9.9/10.4</td>
+      <td>820/148/38</td>
+    </tr>
+    <tr>
+      <td>p2</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>32</td>
+      <td>6</td>
+      <td>0.2</td>
+      <td>5.5</td>
+      <td>6.9</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>p3</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>52</td>
+      <td>10</td>
+      <td>0.4</td>
+      <td>8.4</td>
+      <td>4.6/6.7/7.2</td>
+      <td>243/102/108</td>
+    </tr>
+    <tr>
+      <td>p5</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>38</td>
+      <td>7</td>
+      <td>0.4</td>
+      <td>5.9</td>
+      <td>4.0/6.3</td>
+      <td>180/72</td>
+    </tr>
+    <tr>
+      <td>p6</td>
+      <td>M</td>
+      <td>HET</td>
+      <td>C</td>
+      <td>31</td>
+      <td>7</td>
+      <td>0.2</td>
+      <td>7.0</td>
+      <td>3.0/5.0/5.5</td>
+      <td>115/15/nd</td>
+    </tr>
+    <tr>
+      <td>p7</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>31</td>
+      <td>11</td>
+      <td>6.3‡</td>
+      <td>16.1</td>
+      <td>6.3/8.4/8.8</td>
+      <td>88/279/108</td>
+    </tr>
+    <tr>
+      <td>p8</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>35</td>
+      <td>7</td>
+      <td>0.2</td>
+      <td>6.0</td>
+      <td>8.4/10.6/10.9</td>
+      <td>180/55/175</td>
+    </tr>
+    <tr>
+      <td>p9</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>32</td>
+      <td>8</td>
+      <td>0.3</td>
+      <td>8.1</td>
+      <td>7.7/9.7/10.2</td>
+      <td>60/72/72</td>
+    </tr>
+    <tr>
+      <td>p10</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>34</td>
+      <td>9</td>
+      <td>0.1</td>
+      <td>6.2</td>
+      <td>16.2/18.3/18.6</td>
+      <td>249/116/51</td>
+    </tr>
+    <tr>
+      <td>p11</td>
+      <td>M</td>
+      <td>MSM</td>
+      <td>B</td>
+      <td>53</td>
+      <td>7</td>
+      <td>0.6</td>
+      <td>5.6</td>
+      <td>6.4/8.4/8.8</td>
+      <td>124/120/123</td>
+    </tr>
+  </tbody>
+</table>
+
+_*at diagnosis;†EDI: estimated date of infection; all times are given in years;‡sequencing failed in earlier samples due to low plasma HIV-1 RNA levels._
 
 For this study, we obtained sequence data from the HIV-1 DNA in viral reservoirs using deep sequencing of the p17gag region of the HIV-1 genome in DNA prepared from PBMCs. Longitudinal PBMC samples (1–3 samples per patient for up to a 2.6-year period) were obtained 3–18 years after the start of suppressive ART (Figure 1 and Table 1). We defined viral DNA reservoirs as HIV-1 p17gag sequences that were still present in PBMCs after at least 2 years of suppressive ART. HIV-1 DNA template numbers were quantified by limiting dilution by the same p17gag PCR that was used for sequencing. Identical p17gag sequences were merged into haplotypes while preserving their abundance. Minor haplotypes were merged with major haplotypes if they differed by one mutation (see Materials and methods section). Processed sequence data are available at hiv.tuebingen.mpg.de. Raw sequencing reads from all HIV-1 DNA samples were deposited in the European Nucleotide archive (study accession number PRJEB13841; sample accession numbers ERS1138001-ERS1138025).
 
-## Proviral DNA sequences reflect pretreatment RNA sequences
+### Proviral DNA sequences reflect pretreatment RNA sequences
 
-The HIV-1 DNA sequences recapitulate the diversity observed in RNA sequences before treatment, often with exact sequence matches,
+The HIV-1 DNA sequences recapitulate the diversity observed in RNA sequences before treatment, often with exact sequence matches, Figure 2 and Figure 2—figure supplement 1. While we observed large variations in the abundance of haplotypes with sequence read frequencies varying between 0.1 and 50% (Figure 2—figure supplement 2), the high similarities between RNA and DNA sequences confirmed that our characterization of proviral diversity was specific and sensitive. Variation in haplotype abundance likely reflects clonal expansion (Josefsson et al., 2013; von Stockenstrom et al., 2015), independent integration of identical sequences, and resampling of the same original DNA templates during sequencing. However, the specific contributions of these distinct mechanisms were difficult to determine in our sequencing results.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig2-v2.jpg)
 
-**Figure 2.:** The RNA sequences were obtained from plasma samples collected before the start of suppressive antiretroviral therapy (ART). DNA sequences 1, 2, and 3 were obtained from PBMCs collected after many years of suppressive ART (see Figure 1). The symbol colors indicate the sample date relative to the start of therapy and use the same color scale as in Figure 1. The symbol size indicates the fraction of reads represented by the node. The trees were built using the FastTree software (see Materials and methods section) (Price et al., 2010). Analogous phylogenetic trees for the remaining eight study patients are presented in Figure 2—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.18889.004
+**Figure 2.:** The RNA sequences were obtained from plasma samples collected before the start of suppressive antiretroviral therapy (ART). DNA sequences 1, 2, and 3 were obtained from PBMCs collected after many years of suppressive ART (see Figure 1). The symbol colors indicate the sample date relative to the start of therapy and use the same color scale as in Figure 1. The symbol size indicates the fraction of reads represented by the node. The trees were built using the FastTree software (see Materials and methods section) (Price et al., 2010). Analogous phylogenetic trees for the remaining eight study patients are presented in Figure 2—figure supplement 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.18889.005
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** We found a wide variation in haplotype frequencies (measured by fraction of reads), from <0.001 to >0.5. Most of the haplotypes were present at frequencies of approximately 0.01 (note the logarithmic scales).DOI: http://dx.doi.org/10.7554/eLife.18889.006
+**Figure 2—figure supplement 2.:** We found a wide variation in haplotype frequencies (measured by fraction of reads), from <0.001 to >0.5. Most of the haplotypes were present at frequencies of approximately 0.01 (note the logarithmic scales).
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.18889.007
-
 The estimated numbers of HIV DNA templates, the numbers of distinct haplotypes observed, and the fractions of haplotypes present in multiple samples are presented in Supplementary file 1. If a haplotype was present at a frequency >1%, it was also present in another sample from the same patient in approximately one-third (median 0.29) of all cases.
 
-## Hypermutated sequences are frequent in HIV-1 reservoirs
+### Hypermutated sequences are frequent in HIV-1 reservoirs
 
 We found that substantial proportions (median 14%; range 0–42%) of the p17gag DNA sequences from the viral reservoirs were hypermutated and were therefore expected to be replication incompetent (Figure 2—figure supplement 3). This result was consistent with the results of earlier research, which showed that 9–30% of sequences were hypermutated (Josefsson et al., 2013; Bruner et al., 2015; Kieffer et al., 2005). A small proportion of sequences had stop codons that were not obviously due to G-to-A hypermutation (mean 3%, range 0–12%). A proportion of sequences without overt inactivating mutations were likely also replication incompetent due to mutations or deletions outside of p17gag (Ho et al., 2013; Bruner et al., 2016). We excluded hypermutated sequences from the main analyses, but we also performed complementary analyses that included hypermutated sequences.
 
-## Lack of evidence of persistent replication in HIV-1 DNA reservoirs
+### Lack of evidence of persistent replication in HIV-1 DNA reservoirs
 
 Whether or not HIV-1 reservoirs are maintained by persistent replication remains controversial (von Stockenstrom et al., 2015; Chomont et al., 2011, 2009; Buzón et al., 2010; Yukl et al., 2010; Lorenzo-Redondo et al., 2016; Evering et al., 2012). We used the p17gag DNA sequences from viral reservoirs to search for evidence of sequence evolution, which should occur if the virus was replicating. Root-to-tip distances for plasma RNA populations and PBMC DNA populations were calculated relative to the major RNA haplotype present in the first plasma sample.
 
+Figure 3 presents the results for temporal changes in root-to-tip distances in HIV-1 RNA and DNA populations obtained before and after the start of suppressive ART, respectively. Plasma HIV-1 RNA populations obtained before the start of ART evolved at a relatively constant rate (Zanini et al., 2015); there was a steady increase in mean root-to-tip distances over time in Figure 3. In sharp contrast, the HIV-1 DNA populations obtained after 3–18 years of suppressive therapy had stable root-to-tip distances. Hypermutated DNA sequences had larger root-to-tip distances, but these distances were also stable over time (Figure 3—figure supplement 1). To rule out biases due to clonal expansion or PCR resampling, or both, we repeated this analyses while counting each unique sequence only once; we obtained essentially the same results (Figure 3—figure supplement 2).
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig3-v2.jpg)
 
-**Figure 3.:** The plasma HIV-1 RNA sequences evolved steadily before the start of antiretroviral therapy (ART), while no evidence of evolution was found in the PBMC HIV-1 DNA sequences obtained after the start of ART. For each patient, we have samples obtained before or at the start of therapy (HIV-1 RNA from plasma), and samples obtained after the start of therapy (HIV-1 DNA from PBMCs). The error bars indicate ± one standard deviation of the root-to-tip distances. The figure contains data on DNA sequences not classified as hypermutants. The analogous figures for the hypermutants and haplotypes are presented in ±Figure 3—figure supplements 1 and 2, respectively.DOI: http://dx.doi.org/10.7554/eLife.18889.008
+**Figure 3.:** The plasma HIV-1 RNA sequences evolved steadily before the start of antiretroviral therapy (ART), while no evidence of evolution was found in the PBMC HIV-1 DNA sequences obtained after the start of ART. For each patient, we have samples obtained before or at the start of therapy (HIV-1 RNA from plasma), and samples obtained after the start of therapy (HIV-1 DNA from PBMCs). The error bars indicate $\pm$± one standard deviation of the root-to-tip distances. The figure contains data on DNA sequences not classified as hypermutants. The analogous figures for the hypermutants and haplotypes are presented in Figure 3—figure supplements 1 and 2, respectively.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** This figure is analogous to Figure 3 in the main text, but presents root-to-tip distance values for DNA sequences classified as hypermutants. The root-to-tip distances of the hypermutant HIV-1 DNA sequences were approximately 2 and 4% greater than the non-hypermutant sequences from the same samples, but the root-to-tip distances did not change over time.DOI: http://dx.doi.org/10.7554/eLife.18889.009
+**Figure 3—figure supplement 1.:** This figure is analogous to Figure 3 in the main text, but presents root-to-tip distance values for DNA sequences classified as hypermutants. The root-to-tip distances of the hypermutant HIV-1 DNA sequences were approximately 2 and 4% greater than the non-hypermutant sequences from the same samples, but the root-to-tip distances did not change over time.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** This figure is analogous to Figure 3 in the main text. Instead of weighing each sequence by its number of reads, each sequence was counted only once. The two approaches yielded similar results. The grey cone in the upper right quadrant indicates the rate of evolution during suppressive therapy estimated by Lorenzo-Redondo et al. (2016).DOI: http://dx.doi.org/10.7554/eLife.18889.010
+**Figure 3—figure supplement 2.:** This figure is analogous to Figure 3 in the main text. Instead of weighing each sequence by its number of reads, each sequence was counted only once. The two approaches yielded similar results. The grey cone in the upper right quadrant indicates the rate of evolution during suppressive therapy estimated by Lorenzo-Redondo et al. (2016).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** HIV-1 DNA from cell samples taken at the initiation of antiretroviral therapy (ART) will be dominated by virus variants that have very recently infected short-lived cells (blue). The short-lived cells will die within a few months of therapy, and the HIV-1 DNA will be dominated by infected cells with longer life spans (red). The HIV-1 DNA in these cells will contain a larger fraction of sequences corresponding to virus that replicated earlier during the course of the infection. This shift in the cell populations can result in a false signal of evolution (Panel B). This illustration assumes that 90% of the infected cells were short-lived (half-life of 21 days). The remaining 10% of the cells were assigned a half-life of 350 days. To mimic the HIV-1 DNA samples obtained from the cells sampled at 0, 3, and 6 months after initiation of ART (the sampling times used by Lorenzo-Redondo et al. (2016), we randomly sampled sequences obtained from the HIV-1 RNA present before treatment (distribution illustrated in panel A). From these sequences, we calculated the apparent divergence of the pseudo-samples at 3 and 6 months from the pseudo-sample taken when the ART was started. There was large variation in this backward evolution signal among patients. Averaged over patients, the observed shift corresponded to a rate of evolution of 0.0025 substitutions per year.DOI: http://dx.doi.org/10.7554/eLife.18889.011
+**Figure 3—figure supplement 3.:** HIV-1 DNA from cell samples taken at the initiation of antiretroviral therapy (ART) will be dominated by virus variants that have very recently infected short-lived cells (blue). The short-lived cells will die within a few months of therapy, and the HIV-1 DNA will be dominated by infected cells with longer life spans (red). The HIV-1 DNA in these cells will contain a larger fraction of sequences corresponding to virus that replicated earlier during the course of the infection. This shift in the cell populations can result in a false signal of evolution (Panel B). This illustration assumes that 90% of the infected cells were short-lived (half-life of 21 days). The remaining 10% of the cells were assigned a half-life of 350 days. To mimic the HIV-1 DNA samples obtained from the cells sampled at 0, 3, and 6 months after initiation of ART (the sampling times used by Lorenzo-Redondo et al. (2016), we randomly sampled sequences obtained from the HIV-1 RNA present before treatment (distribution illustrated in panel A). From these sequences, we calculated the apparent divergence of the pseudo-samples at 3 and 6 months from the pseudo-sample taken when the ART was started. There was large variation in this backward evolution signal among patients. Averaged over patients, the observed shift corresponded to a rate of evolution of 0.0025 substitutions per year.
 
-The results for the rates of evolution before and after the start of suppressive ART are presented in Table 2. In all 10 patients we found statistically significant evolution of plasma RNA sequences before the start of therapy, with rates 1−4 × 10−3/year. In contrast, DNA sequences showed no signal of statistically significant evolution in DNA reservoirs during suppressive ART.10.7554/eLife.18889.012Table 2.Rates of evolution in plasma HIV-1 RNA and PBMC HIV-1 DNA sequences obtained before the start and after the start of suppressive antiretroviral therapy, respectively.DOI: http://dx.doi.org/10.7554/eLife.18889.012PatientRNA rateDNA rate[Year−1]p-value[Year−1]p-valuep14.4 × 10−3<10−6−6 × 10−40.22p23.7 × 10−3<10−2−8 × 10−4–p34.1 × 10−3<10−6−2 × 10−40.39p54.8 × 10−3<10−34 × 10−40.45p61.4 × 10−3<10−3−9 × 10−40.22p71.3 × 10−3<10−2−7 × 10−40.14p82.9 × 10−3<10−58 × 10−50.22p92.6 × 10−3<10−41 × 10−40.12p103.6 × 10−3<10−5−1 × 10−40.20p111.2 × 10−3<10−22 × 10−40.16
+The results for the rates of evolution before and after the start of suppressive ART are presented in Table 2. In all 10 patients we found statistically significant evolution of plasma RNA sequences before the start of therapy, with rates 1−4 × 10−3/year. In contrast, DNA sequences showed no signal of statistically significant evolution in DNA reservoirs during suppressive ART.
+
+**Table 2.**
+ Rates of evolution in plasma HIV-1 RNA and PBMC HIV-1 DNA sequences obtained before the start and after the start of suppressive antiretroviral therapy, respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th colspan="2">RNA rate</th>
+      <th colspan="2">DNA rate</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>[Year−1]</th>
+      <th>p-value</th>
+      <th>[Year−1]</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p1</td>
+      <td>4.4 × 10−3</td>
+      <td>&lt;10−6</td>
+      <td>−6 × 10−4</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>p2</td>
+      <td>3.7 × 10−3</td>
+      <td>&lt;10−2</td>
+      <td>−8 × 10−4</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>p3</td>
+      <td>4.1 × 10−3</td>
+      <td>&lt;10−6</td>
+      <td>−2 × 10−4</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>p5</td>
+      <td>4.8 × 10−3</td>
+      <td>&lt;10−3</td>
+      <td>4 × 10−4</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>p6</td>
+      <td>1.4 × 10−3</td>
+      <td>&lt;10−3</td>
+      <td>−9 × 10−4</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>p7</td>
+      <td>1.3 × 10−3</td>
+      <td>&lt;10−2</td>
+      <td>−7 × 10−4</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>p8</td>
+      <td>2.9 × 10−3</td>
+      <td>&lt;10−5</td>
+      <td>8 × 10−5</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>p9</td>
+      <td>2.6 × 10−3</td>
+      <td>&lt;10−4</td>
+      <td>1 × 10−4</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>p10</td>
+      <td>3.6 × 10−3</td>
+      <td>&lt;10−5</td>
+      <td>−1 × 10−4</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>p11</td>
+      <td>1.2 × 10−3</td>
+      <td>&lt;10−2</td>
+      <td>2 × 10−4</td>
+      <td>0.16</td>
+    </tr>
+  </tbody>
+</table>
 
 Taken together, our results did not indicate that persistent HIV-1 replication acts as a mechanism to maintain the HIV-1 reservoir during suppressive therapy.
 
-## Time of deposition of reservoir HIV-1 DNA sequences
+### Time of deposition of reservoir HIV-1 DNA sequences
 
 The phylogenetic analyses indicated that most of the HIV-1 DNA variants present in the PBMCs matched the HIV-1 RNA variants detected in the plasma samples obtained shortly before the start of therapy (Figure 2 and Figure 2—figure supplement 1). However, the phylogenetic trees also revealed that DNA variants that matched the earliest plasma variants were present in some patients.
 
-To investigate when the PBMC HIV-1 DNA variants were deposited in the viral reservoirs, we compared the on-treatment PBMC DNA sequences with the longitudinal pre-treatment plasma RNA sequences. For each p17gag DNA sequence, we determined the pre-treatment plasma sample and the RNA haplotype that was the most likely source. This method assigned most of the HIV-1 DNA sequences to the plasma samples closest to the start of treatment (
+To investigate when the PBMC HIV-1 DNA variants were deposited in the viral reservoirs, we compared the on-treatment PBMC DNA sequences with the longitudinal pre-treatment plasma RNA sequences. For each p17gag DNA sequence, we determined the pre-treatment plasma sample and the RNA haplotype that was the most likely source. This method assigned most of the HIV-1 DNA sequences to the plasma samples closest to the start of treatment (Figure 4, panel A and Figure 4—figure supplement 1). A combined analysis of the data for all patients (Figure 4, panel C) indicated that approximately 60% of the DNA reads were most similar to RNA variants that were present in plasma samples obtained during the last year before the start of therapy. The representation of the variants present in the earlier plasma samples decreased; the half-life was 0.75 years going backward in time from the start of therapy. Analyses in which each unique sequence was counted only once revealed very similar results, which indicated that the findings were robust to possible sampling biases from clonal expansions or PCR resampling, or both (Figure 4—figure supplement 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig4-v2.jpg)
 
-**Figure 4.:** For each HIV-1 DNA read obtained from the PBMCs, we determined the pre-treatment plasma sample and HIV-1 RNA variant that was the most likely origin of the read. Panel A presents the results for the distribution of these pre-treatment assignments for HIV-1 DNA reads from the three PBMC samples (DNA 1, 2, and 3) of patients p1 and p8 (compare trees in Figure 2). The analogous graphs for all patients are presented in Figure 4—figure supplement 1. A large fraction of the reservoir DNA sequences was most closely related to the RNA sequences present in the plasma samples obtained during the last year before the start of therapy. Panels B and C present summaries of the results for the distributions of the likely origins of the reservoir reads for all samples as a function of time since estimated date of infection (EDI) and time before treatment start, respectively. The distribution of reads decays with the time from treatment start (half-life of approximately 0.75 years) (Panel C). A small fraction of reads was estimated to originate from plasma samples obtained shortly post-infection (Panel B). We found these early reservoir sequences in 50% of the patients.DOI: http://dx.doi.org/10.7554/eLife.18889.013
+**Figure 4.:** For each HIV-1 DNA read obtained from the PBMCs, we determined the pre-treatment plasma sample and HIV-1 RNA variant that was the most likely origin of the read. Panel A presents the results for the distribution of these pre-treatment assignments for HIV-1 DNA reads from the three PBMC samples (DNA 1, 2, and 3) of patients p1 and p8 (compare trees in Figure 2). The analogous graphs for all patients are presented in Figure 4—figure supplement 1. A large fraction of the reservoir DNA sequences was most closely related to the RNA sequences present in the plasma samples obtained during the last year before the start of therapy. Panels B and C present summaries of the results for the distributions of the likely origins of the reservoir reads for all samples as a function of time since estimated date of infection (EDI) and time before treatment start, respectively. The distribution of reads decays with the time from treatment start (half-life of approximately 0.75 years) (Panel C). A small fraction of reads was estimated to originate from plasma samples obtained shortly post-infection (Panel B). We found these early reservoir sequences in 50% of the patients.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** For each HIV-1 DNA read obtained from the PBMCs, the plasma sample and HIV-1 RNA variant from which the read was most likely derived was determined. The plots present the distributions of these most likely origin samples across all available RNA samples.DOI: http://dx.doi.org/10.7554/eLife.18889.014
+**Figure 4—figure supplement 1.:** For each HIV-1 DNA read obtained from the PBMCs, the plasma sample and HIV-1 RNA variant from which the read was most likely derived was determined. The plots present the distributions of these most likely origin samples across all available RNA samples.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/18889/elife-18889-fig4-figsupp2-v2.jpg)
-
-**Figure 4—figure supplement 2.:** Figure 4—figure supplement 1, but counting each sequence once instead of weighted by the number of reads it represents.DOI: http://dx.doi.org/10.7554/eLife.18889.015
 
 Sequences that matched sequences at earlier plasma sampling time points were found as minor variants among the p17gag DNA sequences (Figure 4, panel B). Among these minor variants, the DNA sequences matching plasma variants obtained within six months post-infection were overrepresented in some patients (14%, 2.4%, 42%, <1%, and 6.9% of all the reads in patients 2, 3, 6, 8, and 11, respectively). On average approximately 5% of the reads matched plasma variants from the first 6 months after the estimated date of infection (EDI) (Figure 4, panel B). If the outlying data for patient six were omitted, this fraction was 2%. Even 2% was unexpectedly high given the rapid DNA decay during untreated HIV-1 infection. If the rates of seeding into the reservoirs were stable over time, we would have expected a mean value of 0.14% (range < 0.001–0.32% across patients) of the DNA sequences to match the earliest plasma variants. This result suggested that massive seeding of HIV DNA into the viral reservoirs occurred during the first weeks and months post-infection.
 
@@ -142,35 +384,35 @@ In summary, we found compelling evidence against persistent viral replication as
 
 ## Materials and methods
 
-## Ethical statement
+### Ethical statement
 
 The study was performed according to Declaration of Helsinki requirements. Ethical approval was granted by the Regional Ethical Review Board, Stockholm, Sweden (Dnr 2012/505 and 2014/646). Written and oral informed consent was obtained from each patient that participated in the study.
 
-## Patients
+### Patients
 
 The study population consisted of 10 HIV-1-infected patients who were diagnosed in Sweden between 1990 and 2003. These patients had been included in a recent study of the population genomics of intrapatient HIV-1 evolution (Zanini et al., 2015). The patients were selected based on the following inclusion criteria: (1) A relatively well-defined time of infection (based on a negative HIV antibody test <2 years before a first positive test or a laboratory-documented primary HIV infection); (2) No ART during a minimum period of approximately 5 years after diagnosis; (3) Availability of biobank plasma samples covering this time period; and (4) Later initiation of successful ART (plasma viral levels <50 copies/ml) for ≥2 years. As previously described, 6–12 plasma samples per patient were retrieved from biobanks and used for full-genome HIV-1 RNA sequencing (Zanini et al., 2015). The same patient nomenclature was used in both studies. For this study, the same 10 patients were asked to donate 70 ml fresh EDTA-treated blood on up to three occasions during a 2.5-year period. These blood samples were obtained 3–18 years after the start of successful ART. The clinical and laboratory findings (including Fiebig staging and BED testing) were used to calculate the EDI, as previously described (Zanini et al., 2015). The results for the characteristics of the patients and the samples are presented in Table 1.
 
-## HIV-1 RNA sequencing from plasma
+### HIV-1 RNA sequencing from plasma
 
 Whole-genome deep-sequencing of the virus RNA populations present in the plasma samples obtained before the start of therapy was performed as previously described (Zanini et al., 2015). Briefly, the total plasma RNA was extracted using an RNeasy Lipid Tissue Mini Kit (Qiagen Cat No. 74804). The extracted RNA was amplified using a one-step RT-PCR, outer primers for six overlapping regions, and Superscript III One-Step RT-PCR with Platinum Taq High Fidelity High Enzyme Mix (Invitrogen, Carlsbad, California, US). An optimized Illumina Nextera XT library preparation protocol and a kit from the same supplier were used to build the DNA libraries, which were sequenced using an Illumina MiSeq instrument and 2 × 250 bp or 2 × 300 bp sequencing kits (MS-102–2003/MS-10–3003). For the present study, a section of the p17gag region of the HIV-1 genome was extracted from the full-genome RNA data set. A median number of 146 (inter-quartile range 56–400) high quality reads was obtained. The cDNA template numbers are available in Zanini et al. (2015).
 
-## HIV-1 DNA sequencing from PBMCs
+### HIV-1 DNA sequencing from PBMCs
 
 A total of approximately 70 ml fresh whole blood was split between seven Vacutainer (EDTA) tubes. The PMBCs were isolated using Ficoll-Paque PLUS (GE Healthcare Bio-Sciences AB, Uppsala, Sweden) centrifugation according to the manufacturer’s instructions. Total DNA was extracted from the PBMCs using the OMEGA E.Z.N.A Blood DNA Mini Kit (Omega Bio-Tek, Norcross, Georgia) or the QIAamp DNA Blood Mini Kit (Qiagen GmbH, Hilden, Germany) according to the manufacturer’s instructions. The amount of DNA was measured using a Qubit dsDNA HS Assay Kit (Invitrogen, Eugene, Oregon, USA). Patient-specific nested primers (Integrated DNA Technologies) were used to amplify a 387 bp long portion of the p17gag gene corresponding to positions 787 to 1173 in the HxB2 reference sequence. The primers were designed based on the plasma RNA sequences from each patient (Supplementary file 2). Outer primers and Platinum Taq DNA Polymerase High Fidelity (Invitrogen, Carlsbad, California, US) were used for the first PCR. The protocol began with a denaturation step at 94°C for 2 min followed by 15 PCR cycles of denaturation at 94°C for 20 s, annealing at 50°C for 20 s, extension at 72°C for 30 s, and a final extension step at 72°C for 6 min. For the second PCR, 2.5 μl of the product from the first PCR was amplified using inner primers and the cycle profile and enzyme as for the first PCR. Amplified DNA was purified using Agencourt AMPure XP (Beckman Coulter, Beverly, Massachusetts) and quantified using Qubit. For each sample, the number of HIV-1 DNA templates used for sequencing was roughly quantified in triplicate by limiting dilution using the same PCR conditions, three dilutions (usually 0.5 µg, 0.1 µg, 0.02 µg DNA), and Poisson statistics. The plasmids NL4-3 and SF162 were used for control experiments, which were performed to evaluate PCR-induced recombination. Equal proportions of the plasmids were spiked into human DNA and were amplified using the same PCR conditions as previously described. The results revealed that there was minimal PCR-induced recombination in this short amplicon.
 
-## Sequencing and read processing
+### Sequencing and read processing
 
 The HIV-specific primers were flanked by NexteraXT adapters. To construct sequencing libraries, indices and sequencing primers were added in 12–15 cycles of additional PCR. The amplicons were sequenced using an Illumina MiSeq instrument and 2 × 250 cycle kits. A total of 6500 to 190,000 (median 35,000) paired-end reads were generated per sample. The overlapping paired-end sequencing reads were merged to create synthetic reads spanning the entire p17gag amplicon. The nucleotide on the read with the higher quality score was used for the cases of disagreement between paired reads. We counted the numbers of times a particular p17gag sequence was observed, and performed subsequent analysis using read-abundance pairs. To reduce the effects of sequencing and PCR errors, we combined rare sequences (below frequency 0.002) with common sequences if they differed at no more than one position. Specifically, starting with the rarest sequences, we merged rare sequences with the most common sequence that was one base away. The cutoff value of 0.002 is the typical error frequency of the pipeline (Zanini et al., 2015). Less than 1 in 1000 reads that began with the HIV specific primer sequence could not be assigned with confidence to the previously determined RNA sequences. Most of these reads mapped to the human genome. All analyses were performed using Python and the libraries NumPy, BioPython, and Matplotlib (Cock et al., 2009; van der Walt et al., 2011; Hunter, 2007). All read files have been uploaded to ENA with study accession number PRJEB13841.
 
-## Hypermutation detection
+### Hypermutation detection
 
 To classify sequences into hypermutated and non-hypermutated sequences, we counted mutations at positions that did not vary in the RNA samples obtained before therapy. If greater than four mutations were observed, and at least one-half of them were G→A, the sequence was considered to be a hypermutant. The results for the distributions of the different transition mutations relative to the closest genome found in the RNA samples are presented in Figure 2—figure supplement 3 for reads classified as hypermutants, or not. The results we obtained for sequences classified as non-hypermutants were very similar to the results obtained when only using sequences without stop codons.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 We reconstructed phylogenetic trees using the approximate maximum likelihood method implemented in the FastTree software (Price et al., 2010). The tips were annotated with frequency, source, and sample date using custom-made Python scripts.
 
-## Statistical analysis
+### Statistical analysis
 
 The root-to-tip distances were calculated as the mean distance between a sample and the founder sequence, approximated by the consensus sequence of the first RNA sample. This root-to-tip distance was regressed against time to determine the rate of evolution in the absence of treatment. The root-to-tip sequence of the last RNA sample and the DNA samples was regressed against time to determine the rate of evolution on treatment. To determine the most likely seeding time for a PBMC p17gag DNA sequence, we calculated the likelihood of sampling this sequence given the SNP frequencies in each plasma RNA sample and assigned the sequence to the sample that had the greatest likelihood value.
 

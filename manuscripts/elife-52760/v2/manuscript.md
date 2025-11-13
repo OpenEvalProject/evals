@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Microtubules are cytoskeletal structures involved in stability, transport and organization in the cell. The building blocks, the α- and β-tubulin heterodimers, form protofilaments that associate laterally into the hollow microtubule. Microtubule also exists as highly stable doublet microtubules in the cilia where stability is needed for ciliary beating and function. The doublet microtubule maintains its stability through interactions at its inner and outer junctions where its A- and B-tubules meet. Here, using cryo-electron microscopy, bioinformatics and mass spectrometry of the doublets of Chlamydomonas reinhardtii and Tetrahymena thermophila , we identified two new inner junction proteins, FAP276 and FAP106, and an inner junction-associated protein, FAP126, thus presenting the complete answer to the inner junction identity and localization. Our structural study of the doublets shows that the inner junction serves as an interaction hub that involves tubulin post-translational modifications. These interactions contribute to the stability of the doublet and hence, normal ciliary motility.
+Microtubules are cytoskeletal structures involved in stability, transport and organization in the cell. The building blocks, the α- and β-tubulin heterodimers, form protofilaments that associate laterally into the hollow microtubule. Microtubule also exists as highly stable doublet microtubules in the cilia where stability is needed for ciliary beating and function. The doublet microtubule maintains its stability through interactions at its inner and outer junctions where its A- and B-tubules meet. Here, using cryo-electron microscopy, bioinformatics and mass spectrometry of the doublets of Chlamydomonas reinhardtii and Tetrahymena thermophila, we identified two new inner junction proteins, FAP276 and FAP106, and an inner junction-associated protein, FAP126, thus presenting the complete answer to the inner junction identity and localization. Our structural study of the doublets shows that the inner junction serves as an interaction hub that involves tubulin post-translational modifications. These interactions contribute to the stability of the doublet and hence, normal ciliary motility.
 
 ## Introduction
 
@@ -36,6 +36,14 @@ Cilia and flagella are highly conserved organelles present in protists all the w
 Both cilia types are comprised of a bundle of nine specialized microtubule structures termed doublet microtubules (doublets). Ciliary components, important for motility such as the outer and inner dynein arms, radial spokes and the dynein regulatory complex (DRC) are assembled onto the surface of the doublet (Bui et al., 2008; Bui et al., 2009; Bui et al., 2012; Heuser et al., 2009). Inside the doublets, is a weaving network of proteins, termed microtubule-inner-proteins (MIPs), that bind to the inner lumen surface of the doublet (Ichikawa et al., 2017; Ichikawa et al., 2019). These MIPs act to stabilize the doublet and possibly regulate the ciliary waveform through interactions with the tubulin lattice (Ichikawa et al., 2019).
 
 Doublets consist of a complete 13-protofilament (PF) A-tubule, similar to a 13-PF cytoplasmic microtubule and a partial 10-PF B-tubule forming on top of the A-tubule (naming of the PF number is shown in Figure 1B). To this day there still exists a long-standing question of how the junctions between the two tubules are formed (Tilney et al., 1973; Linck and Stephens, 2007; Nicastro et al., 2011). The recent high-resolution cryo-EM structure of the doublet shows that the outer junction is formed by a non-canonical tubulin interaction among PF B1, A10 and A11 (Ichikawa et al., 2017). The inner junction (IJ), which bridges the inner gap between the B-tubule and A-tubule is formed by non-tubulin proteins. Both primary and motile cilia have been observed to contain the IJ (Nicastro et al., 2011; Sun et al., 2019).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Surface renderings and schematics of the 48 nm repeat cryo-EM maps of Chlamydomonas (A, B) and Tetrahymena (C, D) doublets viewed from the tip of the cilia. Black arrow indicates longitudinal view in (E), (F) and (G). (E–F) The longitudinal section of the Chlamydomonas doublet at the IJ complex from the inside (E) and outside (F). (G) The longitudinal section of Tetrahymena doublet viewed from the inside. Color scheme: FAP20: dark green; PACRG: gray; FAP52: light green, Y-shaped density: purple; FAP45: yellow green; fMIP-B8B9: orange; Tubulin: light gray; Unknown density: yellow; Rest of MIPs: white; Tether density 1 and 2: red; Tether density 3, pink. Plus and minus ends are indicated by + and - signs. (H) Cross sectional views of the different Tether densities from Chlamydomonas (left) and Tetrahymena (right). In Chlamydomonas, there is a Y-shaped density (purple) that cradles the FAP52 density. The Y-shaped density is absent in Tetrahymena. In Tetrahymena, we observed Tether density 3, which is absent in Chlamydomonas.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematics of fractionation of the axoneme in this study. Doublets were split from axoneme, and outside proteins were removed to obtain a simpler sample for cryo-EM. (B) A typical cryo-EM image of Chlamydomonas doublets. (C) Gold-standard Fourier Shell Correlation of the 48 nm repeat and 16 nm repeat doublet maps of Chlamydomonas and Tetrahymena. (D) Local resolution estimation of the 16 nm repeat maps from Chlamydomonas and Tetrahymena using MonoRes. The resolution of the B-tubule in Tetrahymena is lower due to the loss of the IJ PF. (E) The remaining PACRG- and FAP20-like densities in the Tetrahymena doublet structure. (F) Superimposition of the tomographic structure of the intact doublet (EMD-2132) with the 48 nm structure of the Chlamydomonas doublet in this study. The DRC is colored green. (G) Enlarged view of the missing PACRG unit at the IJ PF, where the DRC binds. Bars in E and H denote a length of 5 nm.
 
 In vitro formation of a B-tubule-like hook (i.e. the outer junction like interaction) was assembled onto pre-existing axonemal and mitotic spindle microtubule with the addition of purified brain tubulin (Euteneuer and McIntosh, 1980). More recently, the B-tubule-like hook can be achieved by adding purified tubulins onto existing subtilisin-treated microtubules (Schmidt-Cernohorska et al., 2019). However, these hooks are not closed and appear to be flexible (Schmidt-Cernohorska et al., 2019). This supports the notion that the IJ is composed of non-tubulin proteins that are indispensable to the stability of the IJ.
 
@@ -49,7 +57,7 @@ Despite all the phenotypes known about these IJ proteins, there are not yet any 
 
 ## Results
 
-## Multiple tether proteins exist at the IJ
+### Multiple tether proteins exist at the IJ
 
 We obtained the 48 nm repeating unit of taxol stabilized and salt-treated Chlamydomonas doublet at 4.5 Å resolution (Figure 1A,B and Figure 1—figure supplement 1A–C). Due to the salt wash, some MIPs were lost when compared to the intact tomographic doublet structure (dashed parts in Figure 1B) (Bui et al., 2012). On the other hand, the IJ region bridging PF B10 and A1 of the Chlamydomonas doublet remained intact (Figure 1A,B). In the corresponding salt-treated Tetrahymena doublet map, most of the IJ region bridging PF B10 and A1 is missing (Ichikawa et al., 2017; Ichikawa et al., 2019) (Figure 1C,D, more details later). Based on previous studies (Yanagisawa et al., 2014; Dymek et al., 2019; Owa et al., 2019), we were able to localize FAP52, FAP45 in both Tetrahymena and Chlamydomonas (FAP52, light green and FAP45, yellow-green in Figure 1E,G), and PACRG and FAP20 (PACRG, light gray and FAP20, dark gray in Figure 1F) in Chlamydomonas.
 
@@ -65,11 +73,108 @@ The IJ PF is formed by a pair of PACRG and FAP20 repeating every 8 nm with the s
 
 The entire IJ filament of PACRG and FAP20 is previously reported missing in the Tetrahymena structure, probably due to salt wash and dialysis treatment (Ichikawa et al., 2019). However, upon adjusting the threshold value of the surface rendering, we observed one pair of PACRG and FAP20 remaining in the structure (Figure 1—figure supplement 1E) (Ichikawa et al., 2017). This can be a result of a specific region in the 96 nm repeat of the Tetrahymena doublet that has extra interactions to prevent this pair of PACRG and FAP20 to detach during sample preparation.
 
-## PACRG, FAP20, FAP52 and FAP276 form an IJ complex
+### PACRG, FAP20, FAP52 and FAP276 form an IJ complex
 
 Since the majority of IJ proteins repeat with 8 nm and 16 nm, we first obtained the 16 nm repeating unit from Chlamydomonas and Tetrahymena at 3.9 Å resolution (Figure 1—figure supplement 1C). Using focused refinement, the IJ complex of Chlamydomonas was improved to 3.6 Å resolution (Figure 2A,B). Since the B-tubule is flexible in Tetrahymena, the resolution in the IJ area was significantly lower than that of Chlamydomonas (Figure 1—figure supplement 1D). In contrast, the IJ region of Chlamydomonas has good resolution with the intact IJ PF. It is worth mentioning that PFs A3-A6 in Chlamydomonas have lower resolution due to the loss of MIPs in this region. At 3.6 Å resolution, we were able to segment, trace and de novo model PACRG, FAP20 and FAP52 in Chlamydomonas (Figure 2A,B and Figure 2—figure supplement 1A–F). We could not model FAP45 since FAP45 repeats with 48 nm, and therefore was averaged out in the 16 nm averaged map.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) 16 nm repeat structure of Chlamydomonas doublet and model at the IJ region. Tubulin densities are depicted as transparent gray, except in A in which tubulins are shown in dark blue. (C) Atomic model of the IJ complex, consisting of PACRG, FAP20, FAP52 and FAP276. Color scheme: FAP20: dark green; PACRG: gray; FAP52: light green, FAP276: purple; tubulin: transparent gray density. (D, E) Maps and models of PF A1 and B10, and IJ PF illustrating how the IJ PF interacts with tubulins. The views are indicated in the schematics. Dashed boxes indicate the views in (F), (G) and (H). Color scheme: α-tubulin: green; β-tubulin: blue; PACRG: gray; FAP20: dark green; FAP276: purple. (F) Electrostatic surface charge of PACRG, FAP20 and α- and β-tubulins of PF A1. Tubulin surface is negatively charged while the interacting interface of PACRG and FAP20 are positively charged. (G) The interaction of the PACRG with the inter-dimer interface of tubulins from PF B10 is shown. H136 from PACRG is conserved and is likely to take part in the interaction with D127 and C129 from α-tubulin of PF B10. (H) The C-terminus of β-tubulin of PF A1 interacts with PACRG and FAP20. Potential residues involved in the interaction of C-tail of β-tubulin and PACRG and FAP20 are shown. (I) Chlamydomonas PACRG has a long N-terminus 1–117. The N-terminus of Chlamydomonas PACRG (red) forms a stable triple helix arrangement with the core of the protein. This is not observed in the human PACRG (PDB: 6NDU) shown in yellow. In addition, the N-terminus of PACRG going into the wedge between PF A13 and A1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Atomic model of (A) PACRG, (C) FAP20, (E) FAP52 and (G) FAP276. Illustration of the cryo-EM density quality at selected regions of (B) PACRG, (D) FAP20, (F) FAP52 and (H) FAP276.
+
 The Y-shaped density is repeating with 16 nm and has a large binding interface with FAP52, we hypothesized that this protein would be missing in FAP52 knockout cells. Therefore, we did mass spectrometry of split doublets isolated from Chlamydomonas FAP52 knockout cells and performed relative quantification of axonemal proteins compared to the wild type (Dai et al., 2019). We observed 12 proteins completely missing (no peptide detected) and 26 proteins reduced by at least twofold (Table 1 and Supplementary Table 1). PACRG, FAP20 and FAP45 levels are unchanged in FAP52 mutants since their binding interfaces with FAP52 are not as large as supported by our structure. The level of tektin, another suggested IJ protein, did not change as well. Using the predicted molecular weight and fold of the density of the Y-shaped density, we identified FAP276 as the Y-shaped density (details in Materials and methods).
+
+**Table 1.**
+ Proteins completely missing (no peptide detected) in FAP52 knockout mutant
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Mol. weight (kDa)</th>
+      <th>p-values (WT vs FAP52)</th>
+      <th>Exclusive unique peptide counts in WT (quantitative values after normalization)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARL3</td>
+      <td>20</td>
+      <td>0.0013</td>
+      <td>2, 2, 1 (2, 1, 2)</td>
+    </tr>
+    <tr>
+      <td>CHLREDRAFT_171815</td>
+      <td>57</td>
+      <td>0.035</td>
+      <td>2, 6, 1 (2, 5, 2)</td>
+    </tr>
+    <tr>
+      <td>CHLREDRAFT_156073</td>
+      <td>11</td>
+      <td>0.024</td>
+      <td>1, 1, 1 (2, 1, 2)</td>
+    </tr>
+    <tr>
+      <td>FAP276</td>
+      <td>10</td>
+      <td>0.015</td>
+      <td>3, 3, 2 (8, 7, 14)</td>
+    </tr>
+    <tr>
+      <td>FAP52</td>
+      <td>66</td>
+      <td>0.0046</td>
+      <td>27, 21, 15 (59, 73, 105)</td>
+    </tr>
+    <tr>
+      <td>FAP36</td>
+      <td>41</td>
+      <td>0.0023</td>
+      <td>3, 3, 1 (3, 3, 2)</td>
+    </tr>
+    <tr>
+      <td>CrCDPK1</td>
+      <td>54</td>
+      <td>&lt;0.0001</td>
+      <td>3, 5, 2 (3, 4, 4)</td>
+    </tr>
+    <tr>
+      <td>CHLREDRAFT_176830</td>
+      <td>110</td>
+      <td>0.024</td>
+      <td>2, 1, 2 (2, 1, 1)</td>
+    </tr>
+    <tr>
+      <td>FAP173</td>
+      <td>33</td>
+      <td>0.012</td>
+      <td>3, 3, 1 (5, 3, 2)</td>
+    </tr>
+    <tr>
+      <td>FAP29</td>
+      <td>112</td>
+      <td>0.00045</td>
+      <td>2, 3, 2 (3, 3, 4)</td>
+    </tr>
+    <tr>
+      <td>CHLREDRAFT_181390</td>
+      <td>41</td>
+      <td>0.028</td>
+      <td>1, 1, 1 (1, 1, 2)</td>
+    </tr>
+    <tr>
+      <td>ANK2</td>
+      <td>60</td>
+      <td>0,0041</td>
+      <td>1, 2, 1 (1, 1, 2)</td>
+    </tr>
+  </tbody>
+</table>
 
 FAP276 supports and mediates the interaction between FAP52 and tubulin (Figure 2C). FAP276 itself forms different contacts with tubulin with both of its N- and C-termini, thus it provides strong anchorage for FAP52 to the tubulin lattice (Figure 2C). Thus, the IJ complex is made up of two copies of PACRG and FAP20, one copy of FAP52 and FAP276 and one copy of Tether density 1 and 2 per 16 nm (Figure 2C). This represents a high stoichiometry compared to other proteins in the axoneme such as CCDC39 and CCDC40, which have only one copy per 96 nm (Oda et al., 2014).
 
@@ -85,27 +190,57 @@ The structure of the β-tubulin C-terminus in PF A1 appears to be the result of 
 
 In our structure, we also observe that the distance between FAP20 and the proximal PACRG is closer compared to the distal PACRG, thus PACRG and FAP20 likely form a heterodimer in the axoneme instead of a continuous filament (Figure 3A), except for one missing PACRG unit (Figure 1—figure supplement 1F,G). The PACRG and FAP20 binding interface involves complementary surface charges, suggesting a specific and strong interaction (Figure 3B–D). The loop N225-I260 of PACRG forms β-sheet-like interactions with strand H33-R36 of FAP20 (Figure 3B). In addition, residues Q264 and D258 of PACRG form hydrogen bonds with residue T38 and K20 of FAP20, respectively. This FAP20 binding loop of PACRG is well-conserved among species (Figure 3E), but is not present in the PACRG-like protein, a homolog of PACRG that exists in the basal body (Khan et al., 2019). FAP20, on the other hand, has a high degree of sequence conservation (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig3-v2.jpg)
+
+**Figure 3.:** (A) Consecutive molecules of PACRG and FAP20 in the IJ PF. PACRG and FAP20 form a heterodimer as indicated by brackets. (B) Magnified view of the interacting region of PACRG and FAP20. Residues Q264 and D258 of PACRG form hydrogen bonds with residue T38 and K20 of FAP20, respectively. (C, D) Electrostatic interactions between PACRG and FAP20 illustrated by their surface charge. The dashed boxes in (A, C, D) highlight the interacting loops between PACRG and FAP20 (B). (E) Multiple sequence alignment of PACRG in the regions of FAP20-binding loop. Asterisks indicate residues that are involved in FAP20 binding.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig3-figsupp1-v2.jpg)
+
 The cryo-EM structure of the Chlamydomonas PACRG is highly similar to the crystal structure of the human PACRG binding to MEIG1 (PDB: 6NDU) (Khan et al., 2019), suggesting a conserved role of PACRG. Chlamydomonas PACRG has a long N-terminus that binds on top of PF A13 and into the wedge between PF A1 and A13 (Figure 2I, Figure 2—figure supplement 1A). This N-terminal region is not conserved in humans or Tetrahymena (Khan et al., 2019). This could indicate organism-specific adaptations to achieve finely tuned degrees of ciliary stability.
 
-## FAP52 forms an interaction hub and stabilizes α-tubulin’s acetylated K40 loop
+### FAP52 forms an interaction hub and stabilizes α-tubulin’s acetylated K40 loop
 
 Next, we investigated the structure of FAP52 (Figure 2—figure supplement 1E). FAP52 consists of eight WD40 repeats forming two seven-bladed beta-propellers. The two beta-propellers form a V-shape that docks onto PF B9 and B10. The proximal beta-propeller docks onto the inside of the α- and β-tubulin intra-dimer interface, while the distal beta-propeller is aligned with the next inter-dimer interface toward the plus end (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig4-v2.jpg)
+
+**Figure 4.:** (A) Structure of FAP52 in a top view from the outside of the B-tubule looking down on the A-tubule. Black arrow indicates the direction of view in (B). (B) Three-point contacts of FAP52 with α-tubulins from PF B9 and B10 and PACRG, indicated by the black dashed boxes. The α-K40 loops are colored red. (C, D) The structure of the α-K40 loop from PF B10. Red dashed boxes indicate the α-K40 loop. (E) Interaction of α-K40 loop of PF B10 with FAP52. FAP52’s K229 is within favorable distance to form hydrogen bonds with the backbone of D39 and T41. Hydrophobic interactions between L226 and I42 and interactions involving R225 are also possible.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Atomic model of Chlamydomonas FAP52 from inside the Chlamydomonas density map. (B) Atomic model of Chlamydomonas FAP52 fitted inside the Tetrahymena map highlights the longer loop (red) from Chlamydomonas. (C) Alignment of FAP52 from several species shows that Chlamydomonas has a longer loop in one beta propeller blade. The long loop is responsible for the interaction with PACRG. (D, E) α-K40 loop from PF B9 in Chlamydomonas. (F, G) Superimposition of the acetylated α-K40 loops from Chlamydomonas PF B9, B10 and Tetrahymena A12.
 
 The distal beta-propeller of FAP52 has a three-point contact with the inner surface of the B-tubule (Figure 4B). Two of the FAP52 contacts involve the K40 loop of α-tubulin from PF B9 and B10. The α-K40 acetylation was first discovered in Chlamydomonas flagella, which is almost fully acetylated (LeDizet and Piperno, 1987). This α-K40 loop has not been fully visualized in reconstituted studies of acetylated tubulins (Eshun-Wilson et al., 2019; Howes et al., 2014). In our structure, the α-K40 loop is fully structured in this position (Figure 4C,D and Figure 4—figure supplement 1D–G). The density of the α-K40 loop of PF B10 has a higher SNR than the one from B9. Residue K229 of FAP52 is within favorable distance to form hydrogen bonds with the backbone of D39 and T41 of α-tubulin from PF B10. It is also possible that there is a hydrophobic interaction between L226 and I42 (Figure 4E). Residue R225 of FAP52 and D39 of α-tubulin are in an environment where they could interact; however, the side chain densities for both residues are not well-resolved. At the second tubulin contact point, FAP52 segment G142-P144 is in the close proximity of the α-K40 loop from PF B9 (Figure 4B). In the lower region of FAP52, the loop V268-L279 is in close proximity with the N-terminus of PACRG (Figure 4B). The density of the aforementioned loop is not present in the FAP52 structure in Tetrahymena doublet (Figure 4—figure supplement 1A,B). This long loop (V268 to L279) of Chlamydomonas FAP52 is, in fact, deleted in other species (Figure 4—figure supplement 1C). The interaction of this loop with Chlamydomonas PACRG suggests that it is a Chlamydomonas-specific feature that contributes to additional stabilization of PACRG and, hence the IJ PF.
 
 We then investigated the α-K40 loops from Chlamydomonas and Tetrahymena doublets (Figure 4—figure supplement 1D–G). When there is no interacting protein, this loop is flexible consistent with previous literature (Eshun-Wilson et al., 2019). Despite having low resolution in the B-tubule in Tetrahymena, we still observed the α-K40 loop of PF B9 and B10 interacts with FAP52 (Figure 4—figure supplement 1B). We were also able to visualize the α-K40 loop in several locations in both Chlamydomonas and Tetrahymena doublets where there are other proteins interacting with it (Figure 4—figure supplement 1F,G). The conformation of the α-K40 loop appeared to be different depending on its corresponding partner. This suggests that the α-K40 loop might have a role in MIP recognition and binding. Given the numerous interactions of FAP52 with all the proteins in the IJ, FAP52 is likely to function as an interaction hub, which could play an important role during IJ assembly.
 
-## FAP106 is the Tether loop, consisting of Tether densities 1 and 2
+### FAP106 is the Tether loop, consisting of Tether densities 1 and 2
 
 We were able to trace the Tether density in the 16 nm averaged map. Tether density 1 is connected to Tether density 2 (Figure 5A–D), forming a Tether loop, through which the A- and B-tubules are connected. The loop connecting the Tether density 1 binds on top of PF A12 and then into the outside wedge between A12 and A13 before connecting with Tether density 2. The entire Tether loop is a single polypeptide, conserved between Tetrahymena and Chlamydomonas (Figure 5A–B). Part of this Tether loop resembles Tau binding to the microtubule (Kellogg et al., 2018). There is a small helical region in this loop that binds to α-tubulin of PF A12 (Figure 5—figure supplement 1C,D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) At higher resolution, Tether densities 1 and 2 appear to be a single polypeptide chain in both Chlamydomonas (A) and Tetrahymena (B). Color scheme: tubulin: transparency gray; Tether densities 1 and 2 (Tether loop/FAP106): red; FAP276: purple; PACRG: light gray; Densities between PF A13 and A12 (turquoise). The dashed regions indicate the location of FAP52, which has been digitally removed to show the Tether densities underneath. (C) Model of FAP106 fitted inside the segmented Tether loop from Chlamydomonas. (D) Model of FAP106 tethering the B-tubule and A-tubule. Dashed box indicates view in (E). (E) Helix H3 and H4 of FAP106 insert into the gap formed by four tubulin dimers of PF B9 and B10. (F) Structure of Tether density 3 from Tetrahymena, which binds on top of the wedge between PF A13 and A1. (G) Overlay of the PACRG from Chlamydomonas onto the structure of Tetrahymena shows a hypothetical steric clash of a long Tetrahymena PACRG N-terminus with Tether density 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The density of the search motif [FHY]xWxxKxx[FHY used for identifying FAP106 (left panel) and the fitted model segment (right panel). (B) The model of the N-terminus (left) and C-terminus (right) of FAP106 inside the electron density. (C, D) The small helix (H2) (indicated by the dashed box) from Chlamydomonas (A) and Tetrahymena homolog for Tether loop appear to interact with α-tubulin. (E) Multiple sequence alignment of FAP106 from a few organisms. (F) Secondary structure prediction of FAP106. The big cylinder represents helical prediction. Low confidence predictions are omitted.
 
 To identify the protein that makes up the Tether loop, we utilized mass spectrometry, bioinformatics and modeling (details in Materials and methods, Figure 5—figure supplement 1A). This allowed us to identify the Tether loop as FAP106. We were able to model segments Q2-P13, P20-A148 and W189-I226 where the density had sufficient signal (Figure 5C,D and Figure 5—figure supplement 1B). Helix H3 and H4 of FAP106 insert into the interdimer interfaces between PF B9 and B10 forming the anchor point to the B-tubule (Figure 5E) while helix H1 and H2 bind to β-tubulin of PF A13 and α-tubulin of PF A12 (Figure 5D). FAP106 is a homolog of ENKURIN (ENKUR), a conserved protein in sperms of many species (Sutton et al., 2004; Jungnickel et al., 2018). Enkur knockout mice have abnormal sperm motility with asymmetric flagellar waveform and therefore low fertility rate (Jungnickel et al., 2018). In addition, mutations in ENKUR is linked to situs inversus in human and mouse (Sigg et al., 2017; Stauber et al., 2017). However, the IQ motif of Enkurin that binds Calmodulin is not conserved in Chlamydomonas (Figure 5—figure supplement 1E).
 
 In Tetrahymena, Tether density 3 connects the distal lobe of FAP52 and binds across the wedge between PF A13 and A1. (Figure 5F). Upon superimposing the Chlamydomonas PACRG structure onto the Tetrahymena IJ area, the N-terminus of PACRG will have a steric clash with Tether density 3 (Figure 5G). This explains the shorter N-terminus of Tetrahymena PACRG relative to the Chlamydomonas PACRG. Tether density 3 might interact with and perform the same function as the N-terminus of PACRG in Chlamydomonas.
 
-## FAP126, a FLTOP homolog, interacts with the tether loop, FAP106
+### FAP126, a FLTOP homolog, interacts with the tether loop, FAP106
 
 Using the same approach as FAP106, we were also able to identify a density that lies on top of PF A13 and goes into the wedge between PF A12 and A13 (Figure 6A, turquoise and Figure 6—figure supplement 1B) as FAP126. FAP126 does not have a homolog in Tetrahymena and is not present in the Tetrahymena map.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig6-v2.jpg)
+
+**Figure 6.:** (A) View from the top of the PF A12 and A13 showing the density of FAP126 (dark turquoise). Dashed box indicates view in (B). (B) Closeup view of the interactions of FAP126 with the Tether loop, FAP106. T76 and Q77 of FAP126 form hydrogen bonds with Q126 and Q129 of FAP106, respectively. (C) Complimentary electrostatic surface charges of tubulins and FAP126. (D) Electrostatic charge of FAP126 on the tubulin interacting surface. (E) The N-terminus of PACRG and the hook density go into the wedges between PF A12 and A13, and PF A13 and A1, respectively. This likely contributes to the curvature of this region. (F) Inter-PF angles of the A- and B-tubules from Chlamydomonas and Tetrahymena (Ichikawa et al., 2019) showing very similar angle distributions. (G and H) Correlation graphs of consensus normalized expression levels for two selected pairs of genes (ENKURIN(FAP106)/FAP126 and FAP52/FAP126). Tissues showing high levels of expression of one or both genes are labeled. Correlation coefficients (r) are indicated. By excluding testis, corpus callosum, pons and medulla and fallopian tube, the correlation coefficients between ENKUR and FAP126 and between FAP52 and FAP126 are 0.66 and 0.84, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Multiple sequence alignment of FAP126 from a few organisms. FAP126 of Chlamydomonas still have the SH3 binding domain while lacks the proline-rich region compared to other species. (B) Atomic model of FAP126 fitted inside its segmented density. The dotted box indicated the view in (C). (C) The density of the search motif WPxxxxxW used for identifying FAP126. (D) Table of pairwise correlation coefficients between tissue mRNA expression levels, color-coded from low (red) to high (blue) values. ENKUR is the homolog of FAP106 in human. DCX is a microtubule associated protein in neuron, picked as a control. (E, F) Correlation graphs of consensus normalized expression levels for two selected pairs of genes (PACRG/FAP20 and PACRG/FAP52). Tissues showing high levels of expression of one or both genes are labeled. Correlation coefficients (r) are indicated.
 
 FAP126 is a homolog of the human FLTOP protein, which is shown to be important for basal body docking and positioning in mono- and multi-ciliated cells (Gegg et al., 2014). Multiple alignment sequence alignment of FAP126 shows that the Chlamydomonas FAP126 lacks the proline-rich regions of other species (Figure 6—figure supplement 1A).
 
@@ -120,6 +255,8 @@ In this study, we describe the molecular details of the IJ complex using a combi
 ![Figure 7.](https://cdn.elifesciences.org/articles/52760/elife-52760-fig7-v2.jpg)
 
 **Figure 7.:** (A) Model of the IJ complex including PACRG, FAP20, FAP52, FAP126, FAP276 and FAP106. FAP45 is not depicted here. Tubulin is depicted as transparent. (B) The B-tubule starts growing laterally from the outer junction side as shown in Schmidt-Cernohorska et al. (2019). PACRG and FAP20 form a heterodimer, which binds onto the outside surface of PF A1. Following this, multiple alternative hypotheses are possible. One hypothesis is that FAP52, FAP276 and FAP106 would bind onto PF A12 and A13. FAP45 and other fMIP proteins would then be incorporated inside the B-tubule, which fixes the proper curvature so that PF B9 and B10 can interact with other IJ proteins. FAP52 binds both PF B9 and B10 through their K40 loops and finally, PACRG and FAP20 interact with the lateral side of PF B10 allowing for B-tubule closure.
+
+![Video 1.](https://cdn.elifesciences.org/articles/52760/elife-52760-video1.mp4.jpg)
 
 Reconstituted doublet microtubules (Schmidt-Cernohorska et al., 2019) indicate that the B-tubule cannot be closed and is extremely flexible without the IJ PF. Therefore, the IJ PF is necessary to dock the B-tubule onto the A-tubule. In our Tetrahymena doublet, in which most of the IJ PF was washed away, even with the presence of FAP52 and FAP106, the doublet is still flexible which can be seen by the lower resolution of the B-tubule compared to the A-tubule (Figure 1—figure supplement 1D). In addition, the B-tubule can be subjected to depolymerization when the IJ PF is not fully formed (Owa et al., 2019). Therefore, the IJ PF serves as an anchor, which might protect the B-tubule from depolymerization by shielding the lateral side of PF B10 (Figure 7B). Because of the complexity of interactions and the diverse protein composition of the IJ complex, it is reasonable to assume that the IJ is assembled after the outer junction nucleates and expands toward the IJ. The IJ complex might be assembled or co-assembled at the same time as PF B10 for the closure of the B-tubule (Figure 7B).
 
@@ -141,13 +278,13 @@ Another interesting insight from our study is the structured C-terminus of β-tu
 
 ## Materials and methods
 
-## Preparation of doublet samples
+### Preparation of doublet samples
 
 WT Chlamydomonas cells (cc124) were obtained from Chlamydomonas source center and cultured either on Tris-acetatephosphate (TAP) media with shaking or stirring with 12 hr light-12 hr dark cycle. For flagella purification, Chlamydomonas cells were cultured in 1.5 L of liquid TAP media with stirring until OD600 reached around 0.5–0.6 and harvested by low-speed centrifugation (700 g for 7 min at 4°C). Chlamydomonas flagella were purified by dibucaine method (Witman, 1986), resuspended in HMDEKP buffer (30 mM HEPES, pH 7.4, 5 mM MgSO4, 1 mM DTT, 0.5 mMc, 25 mM Potassium Acetate, 0.5% polyethylene glycol, MW 20,000) containing 10 μM paclitaxel, 1 mM PMSF, 10 μg/ml aprotinin and 5 μg/ml leupeptin. Paclitaxel was added to the buffer since Chlamydomonas doublets were more vulnerable to high-salt extraction compared with Tetrahymena doublets (data not shown). Isolated flagella were demembraned by incubating with HMDEKP buffer containing final 1.5% NP40 for 30 min on ice. After NP40 treatment, Chlamydomonas doublets were incubated with final 1 mM ADP for 10 min at room temperature to activate dynein and then incubated with 0.1 mM ATP for 10 min at room temperature to induce doublet sliding. Since the Chlamydomonas doublets were harder to split compared to Tetrahymena doublet, sonication was done before ADP/ATP treatment. After this, Chlamydomonas doublets were incubated twice with HMDEKP buffer containing 0.6 M NaCl for 30 min on ice, spinned down (16,000 g and 10 min), and resuspended. Chlamydomonas doublets were not dialyzed against low-salt buffer since it was difficult to remove radial spokes.
 
 Tetrahymena doublets were isolated according to our previous work (Ichikawa et al., 2017; Ichikawa et al., 2019).
 
-## Cryo-electron microscopy
+### Cryo-electron microscopy
 
 3.5 µl of sample of sonicated doublets (~4 mg/ml) was applied to a glow-discharged holey carbon grid (Quantifoil R2/2), blotted and plunged into liquid ethane using Vitrobot Mark IV (Thermo Fisher Scientific) at 25°C and 100% humidity with a blot force 3 or four and a blot time of 5 s.
 
@@ -157,50 +294,387 @@ The Chlamydomonas doublet structures were performed according to Ichikawa et al.
 
 270,713 and 122,997 particles were used for the reconstruction of 16 nm and 48 nm repeating unit of Chlamydomonas. 279,850 particles were used for the 16 nm reconstruction of Tetrahymena. The final Gold Standard FSC resolutions of the 16 nm and 48 nm reconstruction for Chlamydomonas after contrast transfer function refinement and polishing using 0.143 FSC criterion in Relion3 (Zivanov et al., 2018) are 4.5 and 3.8 Å, respectively. Using focus refinement of the IJ of the 16 nm reconstruction for Chlamydomonas, the resolution reaches 3.6 Å. The resolution for the 16 nm reconstruction of Tetrahymena was 3.6 Å. Focus refinement of the IJ of Tetrahymena did not improve the resolution of the IJ due to the flexibility of this region. The maps were local sharpened (Ichikawa et al., 2019). Local resolution estimation was performed using MonoRes (Vilas et al., 2018).
 
-## Modeling
+### Modeling
 
-## Chlamydomonas reinhardtii α-β-tubulin
+#### Chlamydomonas reinhardtii α-β-tubulin
 
 A homology model of C. reinhardtii α-β-tubulin (Uniprot sequence α: P09204, β: P04690) was constructed in Modeller v9.19 (Webb and Sali, 2014) using the Taxol structure (PDB ID: 5SYF) as template. The model was refined using real-space refinement (Afonine et al., 2018) and validated using comprehensive validation for cryo-EM in Phenix v1.16 (Adams et al., 2010).
 
-## PACRG and FAP20
+#### PACRG and FAP20
 
 A partial homology model of C. reinhardtii PACRG (B1B601) was constructed using the crystal structure of the human homolog (Q96M98-1) as template (Khan et al., 2019). The model was completed by building segments N2-D148 and Y249-L270 de novo in density using Coot v0.8.9.1 (Emsley et al., 2010). The density for segment M89-K101 is missing, likely due to flexibility and or the 16 nm averaging of the cryo-EM data. The missing segment was worked out based on the fact that i) all the surrounding densities have been assigned to the α-β-tubulin heterodimers, ii) there is a 101 long segment of the PACRG N-terminus that is still unassigned to density and iii) the density signature downstream and upstream of the gap matches the sequence identity of the PACRG N-terminus as shown in Figure 2—figure supplement 1B (right side). C. reinhardtii FAP20 (A8IU92) was completely built de novo in density. Both models were refined and validated as described for α-β-tubulin.
 
-## FAP52
+#### FAP52
 
 The density was traced in Coot v0.8.9.1 (Emsley et al., 2010) based on the topology of a seven-bladed beta propeller (PDB ID: 2YMU), which agrees with the I-TASSER (Yang et al., 2015) tertiary structure prediction of FAP52. The Uniprot sequence for C. reinhardtii FAP52 (A8ILK1, 615 amino acids long) is missing loop V264-K277. This was worked out based on the sequence-density disagreement following Q263. Upon further investigation, a longer sequence in the Uniprot database (633 long) was identified by a blast search (Uniprot ID: A0A2K3D260), which agrees with our electron density and both the Phytozome transcript (Cre12.g489750.t1.2) and the C. reinhardtii FAP52 sequence reported in Owa et al. (2019). Overall, the electron density for FAP52 had less resolution and lower SNR than surrounding proteins. This is likely due to the 16 nm averaging of the cryo-EM data and the heterogeneity of FAP52 due to the 48 nm periodic association with FAP45. The bulky residues of FAP52 were used as anchors to maintain the correct registry in lower resolution areas. The model could be overfit in segment D341-P627 where the density signal is significantly lower. Tracing the backbone of this segment was possible due to the predictability of the seven-bladed beta propeller topology. Furthermore, 7 out of 10 Tryptophan residues of the FAP52 sequence are located within this segment, which served as anchors and allowed us to maintain registry and overfit some side chains where the density was missing. The final model was refined and validated as described above.
 
-## FAP276
+#### FAP276
 
 After resolving all the proteins in the its environment, the density for the Y-shaped protein was segmented and traced to around 80 amino acids of ~9 kDa in mass. Candidates of approximately this size from the wild-type mass spectrometry data were compared to the FAP52 knockout data and reduced to only FAP276, which was completely missing in the latter (Table 1). The secondary structure prediction (Drozdetskiy et al., 2015) as well as the sequence of FAP276 (Phytozome transcript: Cre04.g216250) agree with the density signature of the Y-shaped region (Figure 2—figure supplement 1G,H). The model was traced, refined and validated as described above.
 
-## FAP106
+#### FAP106
 
 The trace of the Tether loop was estimated to be ~220–240 amino acids due to missing and likely flexible segments of this protein. To identify the protein that makes up the Tether loop, this protein needs to satisfy the following criteria: (i) has a high stoichiometry (1 per 16 nm of the doublet), (ii) has a minimum molecular weight of ~25 kDa (based on the sequence trace) and (iii) conserved in both Chlamydomonas and Tetrahymena.
 
 We calculated the stoichiometry of proteins in the doublet after salt extraction by normalizing the averaged quantitative spectral count of each protein by their molecular weight. The triplicate mass spectrometry data comes from Dai et al. (2019). The top 35 proteins by copy numbers are shown in Table 2. In our calculation, some radial spoke and central pair proteins displayed high stoichiometry such as RSP9 and PF16. Remarkably, all the IJ proteins are in the top 35 (PACRG, FAP52, FAP20, FAP45 ranked 4, 9, 10 and 35, respectively) as supported by our structure. This validates the quality of the stoichiometry calculation. Although FAP276 should have the same stoichiometry as FAP52, it does not appear in high stochiometric numbers. This can be explained that by the small size of FAP276, which is not well detected in mass spectrometry.
 
+**Table 2.**
+ Normalized spectral count of proteins detected by mass spectrometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Molecular Weight in kDa (MW)</th>
+      <th>Average quantitative Value (AQV)</th>
+      <th>Rough Stoichiometric Peptide Abundance (RSPA)*</th>
+      <th>T. thermophila Homologs**</th>
+      <th>Human homologs***</th>
+      <th>Localization in C. reinhardtii</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TUA1</td>
+      <td>50</td>
+      <td>1077.97</td>
+      <td>215.59</td>
+      <td>TBA_TETTH</td>
+      <td>TUBA1C</td>
+      <td>Doublet</td>
+    </tr>
+    <tr>
+      <td>TUB1</td>
+      <td>50</td>
+      <td>625.46</td>
+      <td>125.09</td>
+      <td>TBB_TETTH</td>
+      <td>TUBB4B</td>
+      <td>Doublet</td>
+    </tr>
+    <tr>
+      <td>RIB72</td>
+      <td>72</td>
+      <td>116.72</td>
+      <td>16.21</td>
+      <td>TTHERM_00143690</td>
+      <td>EFHC1</td>
+      <td>MIP</td>
+    </tr>
+    <tr>
+      <td>PACRG</td>
+      <td>25</td>
+      <td>38.39</td>
+      <td>15.35</td>
+      <td>TTHERM_00446290</td>
+      <td>PACRG</td>
+      <td>IJ</td>
+    </tr>
+    <tr>
+      <td>PF16</td>
+      <td>50</td>
+      <td>74.09</td>
+      <td>14.82</td>
+      <td>TTHERM_000157929</td>
+      <td>SPAG6</td>
+      <td>Central Pair</td>
+    </tr>
+    <tr>
+      <td>RSP9</td>
+      <td>30</td>
+      <td>41.79</td>
+      <td>13.93</td>
+      <td>TTHERM_00430020</td>
+      <td>RSPH9</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP86</td>
+      <td>30</td>
+      <td>36.11</td>
+      <td>12.04</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Doublet</td>
+    </tr>
+    <tr>
+      <td>FAP1</td>
+      <td>22</td>
+      <td>26.46</td>
+      <td>12.03</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Doublet</td>
+    </tr>
+    <tr>
+      <td>FAP52</td>
+      <td>66</td>
+      <td>79.12</td>
+      <td>11.99</td>
+      <td>TTHERM_01094880</td>
+      <td>CFAP52</td>
+      <td>MIP</td>
+    </tr>
+    <tr>
+      <td>FAP20</td>
+      <td>22</td>
+      <td>26.08</td>
+      <td>11.86</td>
+      <td>TTHERM_00418580</td>
+      <td>CFAP20</td>
+      <td>IJ</td>
+    </tr>
+    <tr>
+      <td>FAP126</td>
+      <td>15</td>
+      <td>16.89</td>
+      <td>11.26</td>
+      <td>-</td>
+      <td>CFAP126</td>
+      <td>MIP</td>
+    </tr>
+    <tr>
+      <td>RSP1</td>
+      <td>88</td>
+      <td>98.73</td>
+      <td>11.22</td>
+      <td>TTHERM_00047490</td>
+      <td>RSPH1</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP115</td>
+      <td>27</td>
+      <td>29.98</td>
+      <td>11.10</td>
+      <td>TTHERM_00193760</td>
+      <td>-</td>
+      <td>Doublet</td>
+    </tr>
+    <tr>
+      <td>FAP106</td>
+      <td>27</td>
+      <td>29.81</td>
+      <td>11.04</td>
+      <td>TTHERM_00137550</td>
+      <td>ENKUR</td>
+      <td>IJ?</td>
+    </tr>
+    <tr>
+      <td>Tektin</td>
+      <td>53</td>
+      <td>57.61</td>
+      <td>10.87</td>
+      <td>-</td>
+      <td>TEKT5</td>
+      <td>IJ?</td>
+    </tr>
+    <tr>
+      <td>RSP3</td>
+      <td>57</td>
+      <td>60.55</td>
+      <td>10.62</td>
+      <td>TTHERM_00566810</td>
+      <td>RSPH3</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP252</td>
+      <td>39</td>
+      <td>39.97</td>
+      <td>10.25</td>
+      <td>TTHERM_00899430</td>
+      <td>CETN3</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>RSP2</td>
+      <td>77</td>
+      <td>77.95</td>
+      <td>10.12</td>
+      <td>-</td>
+      <td>CALM2</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP161</td>
+      <td>43</td>
+      <td>43.50</td>
+      <td>10.12</td>
+      <td>TTHERM_00155380</td>
+      <td>CFAP161</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>IDA4</td>
+      <td>29</td>
+      <td>27.29</td>
+      <td>9.41</td>
+      <td>TTHERM_00841210</td>
+      <td>DNALI1</td>
+      <td>Dynein</td>
+    </tr>
+    <tr>
+      <td>FAP107</td>
+      <td>26</td>
+      <td>23.66</td>
+      <td>9.10</td>
+      <td>-</td>
+      <td>FLG2</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>DHC2</td>
+      <td>457</td>
+      <td>414.12</td>
+      <td>9.06</td>
+      <td>TTHERM_01027670</td>
+      <td>DNAH1</td>
+      <td>Dynein</td>
+    </tr>
+    <tr>
+      <td>FAP12</td>
+      <td>54</td>
+      <td>48.85</td>
+      <td>9.05</td>
+      <td>-</td>
+      <td>DAGLB</td>
+      <td>Cytoplasmic</td>
+    </tr>
+    <tr>
+      <td>RSP7</td>
+      <td>34</td>
+      <td>30.62</td>
+      <td>9.01</td>
+      <td>TTHERM_00194419</td>
+      <td>CALML5</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>RSP5</td>
+      <td>56</td>
+      <td>49.32</td>
+      <td>8.81</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP230</td>
+      <td>45</td>
+      <td>39.59</td>
+      <td>8.80</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>FAP77</td>
+      <td>29</td>
+      <td>23.88</td>
+      <td>8.24</td>
+      <td>TTHERM_00974270</td>
+      <td>CFAP77</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>FAP55</td>
+      <td>111</td>
+      <td>90.47</td>
+      <td>8.15</td>
+      <td>-</td>
+      <td>MYH14</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>FAP90</td>
+      <td>28</td>
+      <td>22.35</td>
+      <td>7.98</td>
+      <td>-</td>
+      <td>WBP11</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>RSP10</td>
+      <td>24</td>
+      <td>19.10</td>
+      <td>7.96</td>
+      <td>TTHERM_00378600</td>
+      <td>RSPH1</td>
+      <td>Radial Spoke</td>
+    </tr>
+    <tr>
+      <td>FAP71</td>
+      <td>32</td>
+      <td>24.86</td>
+      <td>7.77</td>
+      <td>TTHERM_00077710</td>
+      <td>EWSR1</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>EEF1</td>
+      <td>51</td>
+      <td>39.04</td>
+      <td>7.66</td>
+      <td>TTHERM_00655820</td>
+      <td>Multiple</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>FAP182</td>
+      <td>49</td>
+      <td>36.69</td>
+      <td>7.49</td>
+      <td>TTHERM_01049330</td>
+      <td>C9orf116</td>
+      <td>Axonemal</td>
+    </tr>
+    <tr>
+      <td>Rib43a</td>
+      <td>43</td>
+      <td>32.06</td>
+      <td>7.46</td>
+      <td>TTHERM_00624660 TTHERM_00641119</td>
+      <td>RIBC2</td>
+      <td>MIP</td>
+    </tr>
+    <tr>
+      <td>FAP45</td>
+      <td>59</td>
+      <td>43.20</td>
+      <td>7.32</td>
+      <td>TTHERM_001164064</td>
+      <td>CFAP45</td>
+      <td>MIP</td>
+    </tr>
+  </tbody>
+</table>
+
+_*RSPA was calculated by (AQV)/(MW)*10.** T. thermophila homologs were BLAST searched using the Uniprot database.***Human homologs were taken from the ChlamyFP project (Pazour et al., 2005)._
+
 Among the proteins that have high stoichiometry, the following proteins satisfy the three criteria above: FAP115, FAP106, FAP252, FAP161, FAP77 and FAP71. However, the homologs of FAP115 and FAP161 in Tetrahymena are too big. Our analysis of the secondary structure prediction places FAP106 at the top of the list of candidates for the Tether loop (Figure 5C).
 
 The identity of FAP106 was further confirmed by a blast search against the complete C. reinhardtii proteome using a regular expression pattern that matches the density signature around residue W127 ([FHY]xWxxKxx[FHY]) (Figure 5—figure supplement 1A). The search was restricted for sequences of lengths between 220 and 280 based on the sequence trace. This returned two matches: FAP106 (uniport ID: A8IVJ1) and a transcription factor (uniport ID: A8I9A1). Furthermore, the sequence secondary structure prediction of FAP106 had high confidence in four α-helices and a long-disordered segment, which agrees with the density topology of this protein. As before, the sequence of FAP106 had side chain agreement with the density throughout the entire sequence. Segments Q14-R19, K149-K188 and R227-D240 could not be modeled due to poor density in these areas. Similar to what was described above for PACRG, the disconnected fragments of FAP106 were worked out to be part of the same protein based on resolving all the proteins in its environment, the presence of unassigned segments of FAP106 that need to be assigned to density and the density signature agreement with the sequence (Figure 5—figure supplement 1B). The model was built and refined as mentioned above.
 
-## FAP126
+#### FAP126
 
 The density for FAP126, which is mostly disordered, was traced as before to 133 amino acids and ~15 kDa in mass. The density had clear side chains signature, particularly in an area where it appeared to have a Tryptophan residue followed by a Proline, five more amino acids and another Tryptophan residues (Figure 6—figure supplement 1C). Doing a blast search against the entire C. reinhardtii proteome, in both C- and N-termini directions, using a regular expression matching the pattern above (WPxxxxxW) gives a single hit: FAP126 (Uniprot ID: A8IVJ1). The search was restricted for sequences of lengths between 128 and 147 residues based on the sequence trace. We also applied the same search strategy as FAP106 to identify this protein. The search criteria were: (i) a high stoichiometry number; (ii) a size of ~15 kDa and (iii) no homolog in Tetrahymena. In this case, the only protein that satisfied these criteria among high stoichiometry proteins (Table 2) was also FAP126. As before, the sequence has matching secondary structure prediction and density signature agreement throughout the entire sequence. The model was modeled and refined as mentioned above.
 
-## Inter-PF angle (lateral curvature) measurement
+### Inter-PF angle (lateral curvature) measurement
 
 The inter-PF angle between each PF pair are measured according to Ichikawa et al. (2017).
 
-## Visualization
+### Visualization
 
 The maps and models were segmented, coloured and visualized using Chimera (Pettersen et al., 2004) and ChimeraX (Goddard et al., 2018).
 
-## Mass spectrometry
+### Mass spectrometry
 
 Sample preparation and mass spectrometry of FAP52 mutant and relative quantification compared to wild type Chlamydomonas was done according to Dai et al. (2019). The ratio between the averaged quantitative values from the mass spectrometry (n = 3) and a proteins molecular weight was used to calculate their stoichiometry in the axoneme.
 
-## Transcriptomics analysis
+### Transcriptomics analysis
 
 Transcriptomics analysis of PACRG, FAP20, FAP52, FAP126, FAP106, FAP45 and DCX using consensus normalized expression levels for 55 tissue types and seven blood cell types was done according to Khan et al. (2019).

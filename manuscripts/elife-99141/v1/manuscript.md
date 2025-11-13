@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03c62dg59 Regenerative Medicine Program, Ottawa Hospital Research Institute Ottawa Canada
-2. https://ror.org/03c4mmv16 Centre for Neuromuscular Disease, University of Ottawa Ottawa Canada
-3. https://ror.org/03c4mmv16 Department of Cellular and Molecular Medicine, University of Ottawa Ottawa Canada
-4. https://ror.org/03c4mmv16 Department of Medicine, University of Ottawa Ottawa Canada
+1. Regenerative Medicine Program, Ottawa Hospital Research Institute Ottawa Canada ([ROR:03c62dg59](https://ror.org/03c62dg59))
+2. Centre for Neuromuscular Disease, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
+3. Department of Cellular and Molecular Medicine, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
+4. Department of Medicine, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
 
 † Corresponding author
 
 ## Abstract
 
-Spinal muscular atrophy (SMA) is caused by mutations in the Survival Motor Neuron 1 ( SMN1 ) gene. While traditionally viewed as a motor neuron disorder, there is involvement of various peripheral organs in SMA. Notably, fatty liver has been observed in SMA mouse models and SMA patients. Nevertheless, it remains unclear whether intrinsic depletion of SMN protein in the liver contributes to pathology in the peripheral or central nervous systems. To address this, we developed a mouse model with a liver-specific depletion of SMN by utilizing an Alb-Cre transgene together with one Smn allele and one 2B Smn1 exon 7 allele flanked by loxP sites. Initially, we evaluated phenotypic changes in these mice at postnatal day 19 (P19), when the severe model of SMA, the Smn mice, exhibit many symptoms of the disease. The liver-specific SMN depletion does not induce motor neuron death, neuromuscular pathology or muscle atrophy, characteristics typically observed in the 2B/- Smn mouse at P19. However, mild liver steatosis was observed, although no changes in liver function were detected. Notably, pancreatic alterations resembled that of 2B/- Smn mice, with a decrease in insulin-producing β-cells and an increase in glucagon-producingα-cells, accompanied by a reduction in blood glucose and an increase in plasma glucagon and glucagon-like peptide (GLP-1). These changes were transient, as mice at P60 exhibited recovery of liver and pancreatic function. While the mosaic pattern of the Cre-mediated excision precludes definitive conclusions regarding the contribution of liver-specific SMN depletion to overall tissue pathology, our findings highlight an intricate connection between liver function and pancreatic abnormalities in SMA. 2B/-
+Spinal muscular atrophy (SMA) is caused by mutations in the Survival Motor Neuron 1 (SMN1) gene. While traditionally viewed as a motor neuron disorder, there is involvement of various peripheral organs in SMA. Notably, fatty liver has been observed in SMA mouse models and SMA patients. Nevertheless, it remains unclear whether intrinsic depletion of SMN protein in the liver contributes to pathology in the peripheral or central nervous systems. To address this, we developed a mouse model with a liver-specific depletion of SMN by utilizing an Alb-Cre transgene together with one Smn2B allele and one Smn1 exon 7 allele flanked by loxP sites. Initially, we evaluated phenotypic changes in these mice at postnatal day 19 (P19), when the severe model of SMA, the Smn2B/- mice, exhibit many symptoms of the disease. The liver-specific SMN depletion does not induce motor neuron death, neuromuscular pathology or muscle atrophy, characteristics typically observed in the Smn2B/- mouse at P19. However, mild liver steatosis was observed, although no changes in liver function were detected. Notably, pancreatic alterations resembled that of Smn2B/-mice, with a decrease in insulin-producing β-cells and an increase in glucagon-producingα-cells, accompanied by a reduction in blood glucose and an increase in plasma glucagon and glucagon-like peptide (GLP-1). These changes were transient, as mice at P60 exhibited recovery of liver and pancreatic function. While the mosaic pattern of the Cre-mediated excision precludes definitive conclusions regarding the contribution of liver-specific SMN depletion to overall tissue pathology, our findings highlight an intricate connection between liver function and pancreatic abnormalities in SMA.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ Our findings reveal that our novel liver-specific SMN depleted (herein referred 
 
 ## Results
 
-## Generation of liver-specific SMN-depleted mice
+### Generation of liver-specific SMN-depleted mice
 
 To elucidate the impact of liver-specific SMN depletion on both CNS and peripheral tissue pathology, we utilized mice expressing Cre recombinase under the control of the mouse albumin promoter, referred to as AlbCre. This strain is commonly employed for liver-specific gene knockout using the Cre/loxP system (Postic et al., 1999). We generated the Smn2B/F7 genotype by crossing SmnF7/F7 with Smn2B/2B mice (Figure 1A). The Smn2B/F7 genotype carries one allele harboring a three nucleotide switch in the exon splicing enhancer within exon 7 of the mouse Smn1 gene (known as Smn2B allele), mimicking the SMN2 gene in humans (Hammond et al., 2010), while the other allele features exon 7 flanked by loxP sites (Frugier et al., 2000). Additionally, crosses between AlbCre and SmnF7/F7 yielded AlbCre/+;SmnF7/+ offspring.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the breeding scheme to generate liver-specific SMN depletion. In these mice, the Smn1 gene carries one Smn2B allele that harbors a three-nucleotide switch in exon 7, and one Smn1 allele whose exon 7 is floxed by loxP sites (SmnF7). The Alb-Cre transgene has also been crossed into this background to provide liver-specific expression of the Cre recombinase. (B) Littermate controls do not harbor Cre recombinase but do carry one Smn2B allele and are thus used as heterozygous controls. (C) Upon crossing AlbCre/+;SmnF7/+ with Smn2B/F7 animals, Cre recombination will induce specific excision of exon 7 in the liver, leading to reduced SMN protein production only in the liver. (D–H) Immunoblots were performed to assess SMN protein levels in various tissues from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. Membranes were probed for SMN and then reprobed for α-tubulin (loading control). (D’-H’) Bar graphs show quantification of SMN protein levels in the liver (D’), brain (E’), muscle (F’), spinal cord (G’) and pancreas (H’), normalized to α-tubulin. n ≥ 3, mean ± SEM. Statistical significance indicated by *p < 0.05, **p < 0.01 or p values, following Brown-Forsythe and Welch ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Representative immunofluorescent images of liver, pancreas and spinal cord at P19 (A) and liver at P60 (B), stained for Cre (red) and counterstained for DAPI (blue, nuclei) from +/+;Smn2B/F7, and AlbCre/+; Smn2B/F7mice. Scale bar 50 μm. n=3 per group.
 
 The liver-specific mouse line was subsequentially established through further genetic crosses between AlbCre/+;SmnF7/+ and Smn2B/F7, resulting in various genotypes, including +/+;Smn2B/F7 (Figure 1B), and AlbCre/+;Smn2B/F7 (Figure 1C). As +/+;Smn2B/F7 mice lack Cre recombinase, they were used as heterozygous controls. In contrast, recombination occurs in AlbCre/+;Smn2B/F7 animals resulting in the specific deletion of one allele of exon 7 in the liver, while the Smn2B allele remains unaffected.
 
@@ -47,69 +55,69 @@ Smn2B/- mice, the severe mouse model of SMA, express approximately 15% residual 
 
 We first assessed SMN protein levels in the liver and across CNS and peripheral tissues. Our findings confirmed a reduction in SMN protein levels across various tissues in Smn2B/- mice (Figure 1D–H). However, in AlbCre/+;Smn2B/F7, there was a~70% decrease in FLSMN protein expression in the liver (Figure 1D and D’) compared to littermate control counterparts (+/+;Smn2B/F7). Conversely, SMN protein levels in the brain (Figure 1E and E’), muscle (Figure 1F and F’), spinal cord (Figure 1G and G’) and pancreas (Figure 1H and H’) remained unaltered, indicating that deletion of Smn exon 7 was restricted to the liver in AlbCre/+;Smn2B/F7mice. We validated these findings by assessing Cre expression in liver, pancreas, and spinal cord tissues (Figure 1—figure supplement 1A). Cre expression was exclusively observed in the liver, where it exhibited variable expression across hepatocytes, with some cells showing detectable expression while others showed no expression, confirming the stochastic nature of Cre activity in our model. No Cre signal was detected in either the pancreas or spinal cord tissues.
 
-## AlbCre/+;Smn2B/F7 mice show mild yet important liver steatosis
+### AlbCre/+;Smn2B/F7 mice show mild yet important liver steatosis
 
 We previously showed that Smn2B/- mice exhibit defects in fatty acid metabolism and lipid accumulation in the liver (Deguise et al., 2019a; Deguise et al., 2021a; Deguise et al., 2019b; Deguise et al., 2021b). Additionally, SMA patients face an elevated risk of dyslipidemia and steatosis (Deguise et al., 2019a). Hence, we explored whether the intrinsic decrease in SMN levels restricted to the liver would lead to increased lipid accumulation. Histology from AlbCre/+;Smn2B/F7 mice (Figure 2A) qualitatively indicates some level of hepatic microvesicular steatosis and lipid accumulation. However, there was a noticeable variation in cell morphology and Oil Red-O retention among hepatocytes, suggesting incomplete recombination.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative images of H&E (top row, scale bar 100 μm) and Oil Red-O (bottom row, scale bar 50 μm) stained liver sections from Smn, 2B/+, Smn2B/-+/+;Smn, and 2B/F7Alb mice at P19. (Cre/+;Smn2B/F7B) Bar graph shows quantification of liver triglycerides. (C–E) Immunoblots were performed to assess heme oxygenase (HO, (C-C’)), transferrin (D-D’) and P62 (E-E’) protein levels in the liver. α-tubulin was used as a loading control. (C’-E’) Bar graphs show quantification of HO (C’), transferrin (D’), and P62 (E’) levels. (F) Bar graph depicts quantification of liver IGF-1. n ≥ 3, mean ± SEM. Statistical significance indicated by *p < 0.05, **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA.Figure 2—source data 1.Figure 2C–E, indicating the relevant bands and treatments.Figure 2—source data 2.Figure 2C–E.Figure 2—source data 3.Figure 2B, C’, D’, E’ and F.
+**Figure 2.:** (A) Representative images of H&E (top row, scale bar 100 μm) and Oil Red-O (bottom row, scale bar 50 μm) stained liver sections from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. (B) Bar graph shows quantification of liver triglycerides. (C–E) Immunoblots were performed to assess heme oxygenase (HO, (C-C’)), transferrin (D-D’) and P62 (E-E’) protein levels in the liver. α-tubulin was used as a loading control. (C’-E’) Bar graphs show quantification of HO (C’), transferrin (D’), and P62 (E’) levels. (F) Bar graph depicts quantification of liver IGF-1. n ≥ 3, mean ± SEM. Statistical significance indicated by *p < 0.05, **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA.
 
 Consistent with the histological findings, AlbCre/+;Smn2B/F7 mice showed variable triglycerides levels (n1=45.95, n2=10.10; n3=75.72; n4=21.91 μg/mg, mean ± SEM 38.44±14.48) (Figure 2B), and yet higher than those observed in +/+;Smn2B/F7 controls (n1=2.60, n2=0.15; n3=0.66; n4=1.44 μg/mg, mean ± SEM 1.213±0.5332), although this difference did not reach statistical significance (p=0.0824). As expected, Smn2B/- controls exhibited increased lipid accumulation and triglyceride levels. Taken together, the data suggest an intrinsic role of SMN in regulating fat liver metabolism.
 
 We next sought to identify whether AlbCre/+;Smn2B/F7 mice display disturbed liver homeostatic function. Specifically, we evaluated parameters associated with iron metabolism (Figure 2C, C’, D and D’), endoplasmic reticulum stress (Figure 2E and E’), and insulin-like growth factor-1 (IGF-1; Figure 2F) levels, all of which have previously been identified as altered in Smn2B/- mice (Deguise et al., 2021b) and were further confirmed in our study. Our analysis revealed no significant differences in the protein levels of heme oxygenase, transferrin, P62, and IGF-1 between the AlbCre/+;Smn2B/F7 and +/+;Smn2B/F7 control groups. These findings suggest that liver-specific SMN depletion may not play a significant role in these pathways or that the mosaic nature of Cre-mediated excision led to a subtle effect that is difficult to detect.
 
-## Liver-specific SMN-depleted mice display pancreatic defects
+### Liver-specific SMN-depleted mice display pancreatic defects
 
 We have demonstrated pancreatic and glucose abnormalities in the Smn2B/- mouse model of SMA and type I SMA patients (Bowerman et al., 2012b; Reilly et al., 2022). Therefore, we conducted immunohistochemistry to investigate the cellular profile of the pancreas, aiming to ascertain whether the targeted depletion of SMN in the liver contributes to pancreatic dysfunction. Surprisingly, double-labeling of insulin-producing β cells and glucagon-producing α cells revealed a significant decrease in the proportion of β cells and a notable increase in α cells in the pancreas of AlbCre/+;Smn2B/F7 mice compared to +/+;Smn2B/F7 and Smn2B/+ heterozygous controls (Figure 3A, B and F). This loss of β cells and rise in α cells could suggest a functional impairment in glucose metabolism. Consequently, we evaluated non-fasting glucose levels in these mice (Figure 3C), revealing reduced blood glucose levels in AlbCre/+;Smn2B/F7 mice relative to +/+;Smn2B/F7 and Smn2B/+. However, blood glucose levels remained higher than those observed in Smn2B/- mice. Overall, these findings indicate imbalances in α and β cell fate within pancreatic islets in AlbCre/+;Smn2B/F7 mice, resembling those observed in Smn2B/- mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig3-v1.jpg)
 
-**Figure 3.:** (A) Representative immunofluorescent images of pancreatic islets stained for glucagon (red) and insulin (green) from Smn, 2B/+Smn, 2B/-+/+;Smn, and 2B/F7Alb mice at P19. Scale bar 50 μm. (Cre/+;Smn2B/F7B) Bar graph shows quantification of insulin-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (C) Bar graph depicts non-fasting blood glucose levels across different genotypes. (D, E) Bar graphs illustrate non-fasting plasma levels of insulin (D) and C-peptide (E). (F) Bar graph shows quantification of glucagon-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (G–J) Bar graphs depict non-fasting plasma levels of glucagon (G), active GLP-1 (H), pancreatic polypeptide (I) and active amylin (J). n ≥ 3, mean ± SEM. Statistical significance indicated by *p < 0.05, **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA.Figure 3—source data 1.Figure 3B–J.
+**Figure 3.:** (A) Representative immunofluorescent images of pancreatic islets stained for glucagon (red) and insulin (green) from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. Scale bar 50 μm. (B) Bar graph shows quantification of insulin-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (C) Bar graph depicts non-fasting blood glucose levels across different genotypes. (D, E) Bar graphs illustrate non-fasting plasma levels of insulin (D) and C-peptide (E). (F) Bar graph shows quantification of glucagon-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (G–J) Bar graphs depict non-fasting plasma levels of glucagon (G), active GLP-1 (H), pancreatic polypeptide (I) and active amylin (J). n ≥ 3, mean ± SEM. Statistical significance indicated by *p < 0.05, **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA.
 
 In previous work, we demonstrated that Smn2B/- mice exhibit a normoinsulinemic plasma state, despite persistent hypoglycemia and reduced C-peptide levels at P19 (Deguise et al., 2021a), findings that were recapitulated in this study (Figure 3C–E). Similarly, AlbCre/+;Smn2B/F7 mice showed no significant changes in plasma insulin levels. However, surprisingly, C-peptide levels in these mice were comparable to those observed in +/+;Smn2B/F7 and Smn2B/+ heterozygous controls (Figure 3E). Additionally, we observed a marked increase in plasma glucagon levels (Figure 3G) as well as elevated glucagon-like peptide (GLP-1) levels, a product of proglucagon processing (Figure 3H), reaching levels similar to those seen in Smn2B/- mice. These changes likely reflect an increase in pancreatic α-cell numbers, although they were not accompanied by dysregulation of plasma pancreatic polypeptide (PP, Figure 3I) or amylin (Figure 3J) hormone production. Furthermore, the maintenance of SMN protein expression at levels comparable to those of heterozygous controls in the pancreas (Figure 1H and H’) suggests that selective SMN depletion in the liver may be implicated in the dysfunction of the pancreas-liver axis.
 
-## Motor neurons, neuromuscular junction (NMJ) or motor fibers are unaffected in liver-specific SMN-depleted mice
+### Motor neurons, neuromuscular junction (NMJ) or motor fibers are unaffected in liver-specific SMN-depleted mice
 
 The hallmark features of SMA include the degeneration of lower spinal motor neurons, neuromuscular junction (NMJ) pathology, and muscle atrophy (Bowerman et al., 2012a; Reilly et al., 2024; Deguise et al., 2016; Deguise et al., 2020; Gavrilina et al., 2008; Murray et al., 2013; Murray et al., 2015; Shababi et al., 2014; Lorson et al., 2010). While the exact mechanisms linking these changes in the motor unit to the clinical manifestations of SMA remain unclear, diminished levels of SMN protein are recognized as a pivotal factor (Lefebvre et al., 1995; Lefebvre et al., 1997; Reilly et al., 2024; Lorson et al., 2010; Hua et al., 2011; Mercuri et al., 2022). Thus, we investigated the impact of liver-specific SMN depletion on these SMA-like features. Our findings show no significant differences in motor neuron cell body counts (Figure 4A and B), neurofilament accumulation at NMJs (Figure 5A and B), NMJ endplate occupancy (Figure 5A and C), muscle fiber size (Figure 6A and B), or muscle fiber frequency distribution (Figure 6C) among AlbCre/+;Smn2B/F7 and +/+;Smn2B/F7 and Smn2B/+ heterozygous controls. However, as anticipated, Smn2B/- mice exhibited motor neuron loss, NMJ defects, and muscle atrophy.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig4-v1.jpg)
 
-**Figure 4.:** (A) Representative images of lumbar spinal cord anterior horns stained for ChAT (red) and DAPI (blue) from Smn, 2B/+Smn, 2B/-+/+;Smn, and 2B/F7Alb mice at P19. (Cre/+;Smn2B/F7B) Bar graph shows quantification of motor neuron cell body numbers. n ≥ 3, mean ± SEM. Statistical significance indicated by **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA. Scale bar = 50 μm.Figure 4—source data 1.Figure 4B.
+**Figure 4.:** (A) Representative images of lumbar spinal cord anterior horns stained for ChAT (red) and DAPI (blue) from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. (B) Bar graph shows quantification of motor neuron cell body numbers. n ≥ 3, mean ± SEM. Statistical significance indicated by **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA. Scale bar = 50 μm.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig5-v1.jpg)
 
-**Figure 5.:** (A) Representative images of transversus abdominis (TVA) muscle stained with bungarotoxin (red), neurofilament (NF) (green) and synaptic vesicle protein 2 (green) from Smn, 2B/+Smn, 2B/-+/+;Smn, and 2B/F7Alb mice at P19. *Depicts occupied endplate, whereas **depicts normal neurofilament distribution; arrowheads show NF accumulation and arrows show unoccupied endplate/denervation. (Cre/+;Smn2B/F7B, C) Bar graphs show quantification of neurofilament accumulation (B) and endplate occupancy (C). n = 3, mean ± SEM. Statistical significance indicated by **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA. Scale bar = 50 μm.Figure 5—source data 1.Figure 5B and C.
+**Figure 5.:** (A) Representative images of transversus abdominis (TVA) muscle stained with bungarotoxin (red), neurofilament (NF) (green) and synaptic vesicle protein 2 (green) from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. *Depicts occupied endplate, whereas **depicts normal neurofilament distribution; arrowheads show NF accumulation and arrows show unoccupied endplate/denervation. (B, C) Bar graphs show quantification of neurofilament accumulation (B) and endplate occupancy (C). n = 3, mean ± SEM. Statistical significance indicated by **p < 0.01, ***p < 0.001, following Brown-Forsythe and Welch ANOVA. Scale bar = 50 μm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig6-v1.jpg)
 
-**Figure 6.:** (A) Representative images of H&E-stained tibialis anterior muscle sections from Smn, 2B/+Smn, 2B/-+/+;Smn, and 2B/F7Alb mice at P19. (Cre/+;Smn2B/F7B) Bar graph shows quantification of muscle fiber cross-sectional area. C. Graph demonstrating frequency of muscle fiber size across different genotypes. n ≥ 3, mean ± SEM. Statistical significance indicated by **p < 0.01, following Brown-Forsythe and Welch ANOVA. Scale bar = 20 μm.Figure 6—source data 1.Figure 6B and C.
+**Figure 6.:** (A) Representative images of H&E-stained tibialis anterior muscle sections from Smn2B/+, Smn2B/-, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P19. (B) Bar graph shows quantification of muscle fiber cross-sectional area. C. Graph demonstrating frequency of muscle fiber size across different genotypes. n ≥ 3, mean ± SEM. Statistical significance indicated by **p < 0.01, following Brown-Forsythe and Welch ANOVA. Scale bar = 20 μm.
 
-## Liver-specific SMN-depleted mice show transitory liver and pancreatic pathology
+### Liver-specific SMN-depleted mice show transitory liver and pancreatic pathology
 
 We next assessed AlbCre/+;Smn2B/F7 mice at P60 to determine whether liver and pancreatic dysfunction persisted or improved during early adulthood. Histological analysis revealed no significant changes in hepatocyte morphology (as assessed by H&E staining) or lipid accumulation (evaluated with Oil Red O staining) in AlbCre/+;Smn2B/F7 mice at this time point (Figure 7A). These findings suggest that proliferating non-recombined cells may help restore liver homeostasis over time. Notably, the expression of Cre recombinase was also observed at P60 (Figure 1—figure supplement 1B), indicating stable Cre activity across postnatal development.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig7-v1.jpg)
 
-**Figure 7.:** (A) Representative images of H&E (top row) and Oil Red-O (bottom row) stained liver sections from Smn, 2B/++/+;Smn, and 2B/F7Alb mice at P60. Scale bar 100 μm. (Cre/+;Smn2B/F7B) Representative immunofluorescent images of pancreatic islets stained for glucagon (red) and insulin (green) from Smn, 2B/++/+;Smn, and 2B/F7Albmice at P60. Scale bar 50 μm. (Cre/+;Smn2B/F7C) Bar graph shows the quantification of insulin-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (D) Bar graph depicts non-fasting blood glucose levels from P60 mice across different genotypes. (E, F) Bar graphs illustrate non-fasting plasma levels of insulin (E) and C-peptide (F). (G) Bar graph shows quantification of glucagon-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (H–K) Bar graphs depict non-fasting plasma levels of glucagon (H), active GLP-1 (I), pancreatic polypeptide (J) and active amylin (K). n ≥ 3, mean ± SEM. Samples were analyzed using Brown-Forsythe and Welch ANOVA, and no statistically significant differences were observed.Figure 7—source data 1.Figure 7C–K.
+**Figure 7.:** (A) Representative images of H&E (top row) and Oil Red-O (bottom row) stained liver sections from Smn2B/+, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7 mice at P60. Scale bar 100 μm. (B) Representative immunofluorescent images of pancreatic islets stained for glucagon (red) and insulin (green) from Smn2B/+, +/+;Smn2B/F7, and AlbCre/+;Smn2B/F7mice at P60. Scale bar 50 μm. (C) Bar graph shows the quantification of insulin-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (D) Bar graph depicts non-fasting blood glucose levels from P60 mice across different genotypes. (E, F) Bar graphs illustrate non-fasting plasma levels of insulin (E) and C-peptide (F). (G) Bar graph shows quantification of glucagon-positive cells relative to the total number of DAPI-positive cells within the pancreatic islet. (H–K) Bar graphs depict non-fasting plasma levels of glucagon (H), active GLP-1 (I), pancreatic polypeptide (J) and active amylin (K). n ≥ 3, mean ± SEM. Samples were analyzed using Brown-Forsythe and Welch ANOVA, and no statistically significant differences were observed.
 
 Further examination of pancreatic tissue at P60 showed no significant differences in insulin-producing β cells or glucagon-producing α cells in AlbCre/+;Smn2B/F7 mice compared to +/+;Smn2B/F7 and Smn2B/+ heterozygous controls (Figure 7B, C and G). Additionally, non-fasting plasma glucose, insulin, and C-peptide levels in AlbCre/+;Smn2B/F7 mice were similar to those in the control groups (Figure 7D–F). Moreover, no significant changes in plasma glucagon (Figure 7H), GLP-1 (Figure 7I), pancreatic polypeptide (Figure 7J), or amylin hormone production were observed. Collectively, these results suggest that the liver and pancreatic defects observed in AlbCre/+;Smn2B/F7 mice may be transient, potentially linked to the stochastic nature of Cre recombinase activity in our model and the highly proliferative properties of hepatocytes. In addition, these findings suggest that liver-specific SMN may play a role in regulating pancreatic function, a mechanism that warrants further investigation.
 
-## Liver-specific SMN depletion does not affect major adipocyte and gastrointestinal hormones
+### Liver-specific SMN depletion does not affect major adipocyte and gastrointestinal hormones
 
 Gastrointestinal (GI) hormones play a key role in regulating hepatic lipid metabolism and pancreatic function (Mells and Anania, 2013). Thus, to assess whether adipocytes and GI hormones contribute to liver and pancreatic dysfunction in liver-specific SMN-depleted mice, we measured plasma levels of major adipocyte hormones (leptin and resistin) and GI hormones (ghrelin, gastric inhibitory polypeptide (GIP), peptide YY (PYY) and secretin) at P19 and P60 (Mells and Anania, 2013; Chen et al., 2021). Our data revealed no significant changes in adipocyte hormones at either time point (Figure 8A–B and G–H) across all genotypes. Moreover, few alterations in GI hormones (Figure 8C–F, I–L) were observed exclusively in Smn2B/- mice at P19, including a marked reduction of ghrelin (Figure 8C) – a hormone involved in glucose homeostasis in pancreatic islet and liver (Dong and Brubaker, 2012) – and secretin (Figure 8F), which regulates secretory activity in organs such as the liver and pancreas (Afroze et al., 2013). Notably, no such changes were observed in AlbCre/+;Smn2B/F at any time point. Altogether, these results suggest that the pancreatic and liver changes at P19 are likely independent of major adipocyte and GI hormone alterations, pointing to a more direct disruption of the liver-pancreas axis in liver-specific SMN-depleted mice.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig8-v1.jpg)
 
-**Figure 8.:** Panels A-B and G-H show bar graphs depicting non-fasting plasma levels of adipocyte-secreted hormones leptin (A, G) and resistin (B, H) in P19 (A–B) and P60 (G–H) mice across different genotypes. Panels C-F and I-L illustrate non-fasting plasma levels of gastrointestinal-secreted hormones, including ghrelin (C, I), gastric inhibitory polypeptide (D, J), peptide YY (E, K), and secretin (F, L) in P19 (C–F) and P60 (I–L) mice. n ≥ 3, mean ± SEM. Statistical significance is indicated by *p < 0.05, **p < 0.01, following Brown-Forsythe and Welch ANOVA.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Panels A-B and G-H show bar graphs depicting non-fasting plasma levels of adipocyte-secreted hormones leptin (A, G) and resistin (B, H) in P19 (A–B) and P60 (G–H) mice across different genotypes. Panels C-F and I-L illustrate non-fasting plasma levels of gastrointestinal-secreted hormones, including ghrelin (C, I), gastric inhibitory polypeptide (D, J), peptide YY (E, K), and secretin (F, L) in P19 (C–F) and P60 (I–L) mice. n ≥ 3, mean ± SEM. Statistical significance is indicated by *p < 0.05, **p < 0.01, following Brown-Forsythe and Welch ANOVA.
 
-## Liver-specific SMN-depleted mice have normal survival rates and motor function
+### Liver-specific SMN-depleted mice have normal survival rates and motor function
 
 We also conducted a comprehensive assessment of survival, weight, and motor function in AlbCre/+;Smn2B/F7 and +/+;Smn2B/F7 mice up to postnatal day 60 (Figure 9A). While the Smn2B/− mice typically have a mean survival of 25 days (Reilly et al., 2024), both AlbCre/+;Smn2B/F7 and +/+;Smn2B/F7 mice in our study survived up to 60 days (Figure 9B), after which they were euthanized for tissue collection. Moreover, throughout the observation period, mice from both groups exhibited similar weight gain trends (Figure 9C). When weight gain at P60 was normalized to the basal weight at P7, no statistically significant differences were observed (Figure 9D).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/99141/elife-99141-fig9-v1.jpg)
 
-**Figure 9.:** (A) Schematic representation of experimental design. The righting reflex test was conducted from P7 to P13, the inverted mesh grip test from P13 to P25, and the pen test from P19 to P25. Assessments were performed every 2 days. Weight was measured every 2 days until day 30, and then weekly until day 60. Animal welfare was monitored throughout the 60-day period during weight measurements. (B) Kaplan–Meier survival curve comparing Alb and Cre/+;Smn2B/F7+/+;Smn mice up to 60 days. (2B/F7C, E-G) Graphs show weight (C), righting reflex (E), inverted mesh grip (F) and pen test (G). n=5 per genotype, mean ± SEM. (B) Kaplan–Meier survival analysis; (C, E-G) two-way ANOVA, followed by Šídák’s method. (D) Percentage weight gain at P60, normalized to basal weight at P7. n=5 per genotype, mean ± SEM, two-tailed unpaired Student’s t-test.Figure 9—source data 1.Figure 9B–G.
+**Figure 9.:** (A) Schematic representation of experimental design. The righting reflex test was conducted from P7 to P13, the inverted mesh grip test from P13 to P25, and the pen test from P19 to P25. Assessments were performed every 2 days. Weight was measured every 2 days until day 30, and then weekly until day 60. Animal welfare was monitored throughout the 60-day period during weight measurements. (B) Kaplan–Meier survival curve comparing AlbCre/+;Smn2B/F7 and +/+;Smn2B/F7 mice up to 60 days. (C, E-G) Graphs show weight (C), righting reflex (E), inverted mesh grip (F) and pen test (G). n=5 per genotype, mean ± SEM. (B) Kaplan–Meier survival analysis; (C, E-G) two-way ANOVA, followed by Šídák’s method. (D) Percentage weight gain at P60, normalized to basal weight at P7. n=5 per genotype, mean ± SEM, two-tailed unpaired Student’s t-test.
 
 To further evaluate motor function at different stages, we implemented several age-specific behavioral tests commonly used to assess motor function (Chehade et al., 2022; Figure 9E–G). We previously showed Smn2B/- mice have reduced motor function scores, as seen through increased time to right, prolonged balancing time and diminished muscle strength (Reilly et al., 2022). Here, we found no alterations in AlbCre/+;Smn2B/F7 compared to +/+;Smn2B/F7 mice in time to right, as assessed by the righting reflex (Figure 9E), nor in distal muscle strength measured through the inverted mesh grip test (Figure 9F), or motor balance and coordination evaluated by the pen test (Figure 9G). Overall, these findings collectively demonstrate that liver-specific SMN depletion does not impact survival, weight gain, or motor function.
 
@@ -137,17 +145,56 @@ Overall, our findings suggest that alterations in SMN production solely within t
 
 ## Materials and methods
 
-## Mouse models
+### Mouse models
 
 The Smn2B mouse, which harbors the Smn2B mutation resulting from the substitution of three nucleotides within the exon splicing enhancer of exon 7, was developed and maintained on a C57BL/6 background in our laboratory (Bowerman et al., 2012a; Eshraghi et al., 2016). The FVB.129(B6)-Smn1tm1Jme (SmnF7/F7) (RRID:IMSR_JAX:006138) and B6.Cg-Speer6-ps1Tg(Alb-Cre)21Mgn/J (AlbCre) (RRID:IMSR_JAX:003574) mice were acquired from The Jackson Laboratory. Liver-specific SMN-depleted mice were obtained through successive crosses between AlbCre/+;SmnF7/+ and Smn2B/F7 mice (see Figure 1). Line validation was conducted via genotyping of DNA extracted from mouse ear biopsies using PCR (see Table 1 for list of primers used). Both male and female mice were included in the studies. All mice were bred and housed in the University of Ottawa Animal Facility under protocol OHRI-3343, adhering to guidelines established by the Canadian Council on Animal Care. Additionally, we employed Smn2B/- mice (a severe SMA mouse model) and asymptomatic heterozygous Smn2B/+ mice as controls in our experiments.
 
-## Tissue harvesting and processing
+**Table 1.**
+ List of primers used for genotyping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence (5'–3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Alb-Cre</td>
+      <td>TGCAAACATCACATGCACAC</td>
+    </tr>
+    <tr>
+      <td>TTGGCCCCTTACCATAACTG</td>
+    </tr>
+    <tr>
+      <td>GAAGCAGAAGCTTAGGAAGATGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SmnF7</td>
+      <td>AGAAGGAAAGTGCTCACATACAAATT</td>
+    </tr>
+    <tr>
+      <td>TGTCTATAATCCTCATGCTATGGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Smn2B</td>
+      <td>GGTTTCAGACAAAATAAAAAAGAATTTAAG</td>
+    </tr>
+    <tr>
+      <td>TTTGGCAGACTTTAGCAGGGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue harvesting and processing
 
 Following euthanasia, liver, and tibialis anterior (TA) muscles underwent fixation in a 1:10 dilution of buffered formalin for 48 hr at 4 °C, followed by transfer to 70% ethanol at the same temperature until processing. The pancreas was fixed in 4% paraformaldehyde (PFA) for 48 hr at 4 °C, then similarly moved to 70% ethanol for processing. For the lumbar spinal cord (SC) and liver (for Oil Red-O staining), fixation was performed overnight at 4 °C in 4% PFA, followed by immersion in 30% sucrose in PBS. Subsequently, the liver and spinal cord were flash-frozen in optimal cutting temperature (OCT) embedding medium. Cryosections of the lumbar spinal cord were cut at a thickness of 16 μm, while liver sections were cut at 10 μm and stored at –80 °C until immunohistochemical analysis. Cre immunostaining of cryosectioned liver and spinal cord was performed as described in section 4.4.1, with the exception that the antigen retrieval step was not performed.
 
 The abdominal musculature was dissected and fixed in 4% PFA for 15 min at room temperature, followed by 3 washes in 1 X PBS, after which the transversus abdominis (TVA) muscle was dissected from the abdominal musculature. TA, liver, and pancreas samples were handled at the University of Ottawa Department of Pathology and Laboratory Medicine. Paraffin blocks containing tissues were sectioned at 4 μm thickness using a microtome. Sections of TA and liver were stained with hematoxylin and eosin (H&E) using an XL CV5030 autostainer from Leica. Liver cryosections were stained with Oil Red-O and counterstained with hematoxylin using established protocols. Images of H&E and Oil Red-O-stained samples were scanned with a MIRAX MIDI digital slide scanner manufactured by Zeiss. Image acquisition was performed using Panoramic Viewer 1.15.4 software.
 
-## Immunoblotting
+### Immunoblotting
 
 Total protein was extracted by homogenizing flash-frozen samples of spinal cord, brain, liver, pancreas and hindlimb muscles using RIPA lysis buffer (Cell Signaling), supplemented with phenylmethylsulfonyl fluoride (PMSF, Cell Signaling). The concentrations of the extracted proteins were determined using the Pierce BCA Protein Assay kit (ThermoFisher).
 
@@ -155,17 +202,182 @@ For liver, brain, and spinal cord tissues, 20 μg of protein per sample were sep
 
 After incubation, the membranes were rinsed with tris-buffered saline containing 0.1% Tween-20 (TBS-T) and then incubated for 1 hr at room temperature with IRDye 680 R or 800CW (LI-COR) secondary antibody. Fluorescent signals were detected using the Odyssey Infrared Imaging System (LI-COR). Total raw values were normalized to α-tubulin (housekeeping protein) obtained from the same blot.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
-## Pancreas
+#### Pancreas
 
 Pancreatic sections underwent deparaffinization using three washes of Histo-Clear (National Diagnostics, Atlanta, GA) for 5 min each, followed by two washes of a 50/50 mixture of absolute ethanol and Histo-Clear for 3 min each. Subsequently, the slides were gradually rehydrated in two washes of 100% (v/v) ethanol (3 min each), followed by one wash of 95% (v/v), 70% (v/v), 50% (v/v), and 0% (v/v) ethanol for 3 min each. The slides were then incubated in 0.5% Triton-X-100 (Millipore Sigma, Burlington, MA) in PBS for 5 min, followed by three washes with PBS. Afterward, the slides were blocked in a solution containing 20% goat serum and 0.3% Triton-X-100 in TBS for 2 hr.
 
 Primary antibodies targeting insulin, glucagon or Cre (Table 2) were applied to the slides in a solution containing 2% goat serum and 0.3% Triton-X-100 in TBS overnight at 4 °C. The slides were then washed three times with PBS and subsequently incubated with secondary antibodies in a solution containing 2% goat serum and 0.3% Triton-X-100 for 1 hr. Following this, the solution was removed, and DAPI (1:1000) in PBS was added for 5 min at room temperature. The slides were washed three times with PBS and mounted in Fluoromount-G Mounting Medium (Invitrogen).
 
+**Table 2.**
+ List of antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Application</th>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Dilution</th>
+      <th>Company (Catalog #)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Western Blot</td>
+      <td>SMN</td>
+      <td>Mouse</td>
+      <td>1:2 500</td>
+      <td>BD Transduction (610647)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Alpha-tubulin</td>
+      <td>Rabbit</td>
+      <td>1:10 000</td>
+      <td>Abcam (ab4074)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Alpha-tubulin</td>
+      <td>Mouse</td>
+      <td>1:10 000</td>
+      <td>Sigma-Aldrich (CP06)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Heme oxygenase-1 (HO)</td>
+      <td>Rabbit</td>
+      <td>1:10 000</td>
+      <td>Abcam (ab68477)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>P62</td>
+      <td>Mouse</td>
+      <td>1:1 000</td>
+      <td>Abcam (ab56416)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Transferrin</td>
+      <td>Rabbit</td>
+      <td>1:1 000</td>
+      <td>Abcam (ab82411)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Goat anti-mouse IR Dye 800 CW</td>
+      <td></td>
+      <td>1:5 000</td>
+      <td>LI-COR (925–32210)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Goat anti-mouse IR Dye 680 R</td>
+      <td></td>
+      <td>1:5 000</td>
+      <td>LI-COR (926–68070)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Goat anti-rabbit IR Dye 800 CW</td>
+      <td></td>
+      <td>1:5 000</td>
+      <td>LI-COR (925–32211)</td>
+    </tr>
+    <tr>
+      <td>Western Blot</td>
+      <td>Goat anti-rabbit IR Dye 680 R</td>
+      <td></td>
+      <td>1:5 000</td>
+      <td>LI-COR (926–68071)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>ChAT</td>
+      <td>Goat</td>
+      <td>1:100</td>
+      <td>Millipore (AB144P)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Donkey anti-goat Alexa Fluor 555</td>
+      <td></td>
+      <td>1:200</td>
+      <td>Invitrogen (A21432)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>TRITC conjugated bungarotoxin</td>
+      <td>N/A</td>
+      <td>1:1 000</td>
+      <td>Invitrogen (T1175)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Neurofilament (NF-M)</td>
+      <td>Mouse</td>
+      <td>1:100</td>
+      <td>(Developmental Studies Hybridoma Bank, P12839)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Synaptic vesicle glycoprotein 2 A (SV2A)</td>
+      <td>Mouse</td>
+      <td>1:250</td>
+      <td>(Developmental Studies Hybridoma Bank, Q7L0J3)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Goat anti-mouse Alexa Fluor 488</td>
+      <td></td>
+      <td>1:250</td>
+      <td>Invitrogen (A11001)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Glucagon</td>
+      <td>Mouse</td>
+      <td>1:200</td>
+      <td>Abcam (ab10988)</td>
+    </tr>
+    <tr>
+      <td>IHC (Parafin)IHC (Frozen)</td>
+      <td>Cre Recombinase (D7L7L)</td>
+      <td>Rabbit</td>
+      <td>1:5001:200</td>
+      <td>Cell Signaling (15036)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Insulin</td>
+      <td>Rabbit</td>
+      <td>1:50</td>
+      <td>Abcam (ab181547)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Goat anti-mouse Alexa Fluor 555</td>
+      <td></td>
+      <td>1:500</td>
+      <td>Invitrogen (A21422)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td>Goat anti-rabbit Alexa Fluor 488</td>
+      <td></td>
+      <td>1:500</td>
+      <td>Invitrogen (A11034)</td>
+    </tr>
+  </tbody>
+</table>
+
 Images were taken using an Axio Imager M2 microscope (Zeiss) and captured with a 40 X objective. The number of glucagon and insulin-positive cells per islet was counted for each mouse. Analysis was blinded where possible.
 
-## Motor neurons
+#### Motor neurons
 
 Lumbar spinal cord sections were prepared for choline acetyltransferase (ChAT) staining of motor neurons. The slides were air-dried at room temperature for 30 min and then rinsed in TBS-T for 5 min. Samples were permeabilized in 0.3% Triton X-100 in PBS for 30 min, followed by blocking in 1 x Power Block (BioGenex, Fremont, CA) for 20 min at room temperature. Subsequently, the samples were incubated with a goat anti-ChAT (details in Table 2) antibody at a dilution of 1:100 in 1% BSA and 0.3% Triton X-100 in PBS for 3 nights at 4 °C.
 
@@ -173,7 +385,7 @@ After the initial antibody incubation, slides were washed twice for 10 min with 
 
 Finally, the slides were rinsed 3 X for 10 min with TBS-T and mounted with Fluoromount-G Mounting Medium (Invitrogen). Spinal cord sections were examined under fluorescence using an Axio Imager M2 microscope (Zeiss) and imaged at ×20 magnification for quantification, and at ×63 for representative pictures. The number of ChAT-positive motor neurons with a diameter of ≥20 μm per ventral horn was recorded for 7–10 different sections per animal, each separated by at least 100 μm to prevent re-counting of the same motor neuron. An average number of motor neuron cell bodies per section was determined. Analysis was blinded where possible.
 
-## Neuromuscular junction (NMJ)
+### Neuromuscular junction (NMJ)
 
 To evaluate neuromuscular innervation, we performed immunohistochemistry using established protocols (Reilly et al., 2022). After euthanasia, the TVA muscles were promptly dissected and fixed in 4% paraformaldehyde (Electron Microscopy Science) in PBS for 15 min. Post-synaptic acetylcholine receptors (AChRs) were labeled for 10 min with alpha-bungarotoxin (aBTX) conjugated to Alexa Fluor 488. Subsequently, the muscles were blocked in 4% bovine serum albumin (BSA) and 1% Triton-X-100 in PBS for 30 min.
 
@@ -181,34 +393,34 @@ Following blocking, the muscles underwent overnight incubation with primary anti
 
 A minimum of three fields of view (FOV) were quantified per muscle. For each FOV, the percentage of fully occupied endplates was noted. Fully occupied endplates were defined as motor endplates completely covered by the presynaptic terminal labeled with synaptic vesicle protein 2 (SV2) and neurofilament (NF). Analysis was blinded where possible.
 
-## Muscle fiber analysis
+### Muscle fiber analysis
 
 Muscle fiber analysis was performed using ImageJ software (version 2.9.0/1.53t). A total of one hundred fibers were evaluated per animal, covering various regions of the muscle section to ensure good representation. The area of each fiber was measured in square micrometers (μm²) to compute both the average and distribution of fiber sizes for each animal.
 
-## Glucose levels
+### Glucose levels
 
 Non-fasting blood glucose concentrations were assessed using a OneTouch Ultra2 Blood Glucose Test Strips (LifeScan Europe GmbH, Zug, Switzerland) immediately following blood collection. Approximately 2 μL of blood was applied to the test strip for glucose concentration measurement.
 
-## ELISA for insulin-like growth factor I (IGF-1)
+### ELISA for insulin-like growth factor I (IGF-1)
 
 The concentration of IGF-1 in the liver was quantified using the Mouse/Rat IGF-I/IGF1 Quantikine ELISA Kit (MG100, R&D Systems, Inc, Minneapolis, MN, USA). Liver protein lysates were diluted at a ratio of 1:6 in calibrator diluent and the assay was performed following the manufacturer’s instructions.
 
-## Triglycerides quantification
+### Triglycerides quantification
 
 Liver tissues from P19 mice were promptly dissected and flash frozen. Subsequently, triglyceride analysis was conducted at the Vanderbilt Mouse Metabolic Phenotyping Center, employing established protocols previously utilized by our team (Deguise et al., 2021b).
 
-## Mouse metabolic hormone assay
+### Mouse metabolic hormone assay
 
 Blood was collected from the mice immediately after decapitation using a Microcuvette CB 300 K2E coated with K2 EDTA (16.444.100) for capillary sampling. All samples were taken randomly without a fasting period. The blood was centrifuged at 5000 × g for 5 min at room temperature to separate the plasma. For plasma volumes less than 50 µL, genotypes were pooled to achieve a minimum volume of 50 µL as needed. The multiplexing analysis was performed using the Luminex 200 system (Luminex, Austin, TX, USA) by Eve Technologies Corp. (Calgary, Alberta). Twelve markers were simultaneously measured in the samples using Eve Technologies' Mouse Metabolic Hormone 12-Plex Discovery Assay (MilliporeSigma, Burlington, Massachusetts, USA) according to the manufacturer’s protocol. The 12-plex consisted of Amylin(active), C-Peptide 2, Ghrelin, GIP(total), GLP-1(active), Glucagon, Insulin, Leptin, PP, PYY, Resistin and Secretin. Assay sensitivities of these markers range from 1.4 to 91.8 pg/mL for the 12-plex. Individual analyte sensitivity values are available in the MilliporeSigma MILLIPLEX MAP protocol. If analyte levels were too low to be detected and fell outside the dynamic range, they were recorded as 0 in the graphs.
 
-## Motor function, weight, and survival assessments
+### Motor function, weight, and survival assessments
 
 Motor function, weight, and survival were assessed according to established protocols (Chehade et al., 2022). Spinal reflexes were evaluated using the righting reflex test, while motor balance and coordination were evaluated with the pen test. Additionally, muscle strength was measured using the inverted mesh grip test (see Figure 9A). The righting reflex test was conducted from P7 to P13, the inverted mesh grip test from P13 to P25, and the pen test from P19 to P25. Assessments were performed every 2 days. A maximum duration of 30 s for the pen test and 60 s for the inverted mesh grip represented the established threshold. Three consecutive measurements were obtained, and their average was recorded for subsequent analysis. Weight was measured every 2 days starting at day 7 until day 30, and then weekly until day 60. Animal welfare was monitored throughout the 60-day period during weight measurements.
 
-## Statistical analysis
+### Statistical analysis
 
 Survival data were visualized using Kaplan-Meier survival curves, and intergroup differences were evaluated using the Mantel-Cox test. Brown-Forsythe and Welch ANOVA were employed to compare three or more sets of unpaired measurements, given the mosaic-like outcome observed in the AlbCre/+;Smn2B/F7 model, where assumptions of equal variances were not tenable. Two-way ANOVA, followed by Šídák’s method for multiple comparisons, was utilized to assess the influence of two factors on a response. Pairwise comparisons were performed using a two-tailed Student’s t-test. Statistical analyses were conducted using GraphPad Prism V.10.2.1 (GraphPad Prism Software, San Diego, CA), with significance set at p<0.05. Data were presented as mean ± standard error of the mean. Sample sizes (n) are provided in figure legends, indicating the number of biological replicates analyzed, with each data point corresponding to an individual mouse from at least two different litters. Detailed statistical information is outlined in the respective figure legends, where statistical significance is indicated by *, p<0.05; **, p<0.01; ***, p<0.001.
 
-## Data sharing
+### Data sharing
 
 All authors had access to the study data and reviewed and approved the final manuscript. All data associated with this study are available in the main text or supplementary materials. Imaging data used in this manuscript have been deposited at the BioImage Archive repository under Accession S-BIAD1633.

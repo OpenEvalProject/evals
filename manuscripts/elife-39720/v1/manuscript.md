@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.39720.001 Cytokines and chemokines are produced and secreted by a broad range of immune cells including macrophages. Remarkably, little is known about how these inflammatory mediators are released from the various immune cells. Here, the endolysosomal cation channel TRPML2 is shown to play a direct role in chemokine trafficking and secretion from murine macrophages. To demonstrate acute and direct involvement of TRPML2 in these processes, the first isoform-selective TRPML2 channel agonist was generated, ML2-SA1. ML2-SA1 was not only found to directly stimulate release of the chemokine CCL2 from macrophages but also to stimulate macrophage migration, thus mimicking CCL2 function. Endogenous TRPML2 is expressed in early/recycling endosomes as demonstrated by endolysosomal patch-clamp experimentation and ML2-SA1 promotes trafficking through early/recycling endosomes, suggesting CCL2 being transported and secreted via this pathway. These data provide a direct link between TRPML2 activation, CCL2 release and stimulation of macrophage migration in the innate immune response.
+Cytokines and chemokines are produced and secreted by a broad range of immune cells including macrophages. Remarkably, little is known about how these inflammatory mediators are released from the various immune cells. Here, the endolysosomal cation channel TRPML2 is shown to play a direct role in chemokine trafficking and secretion from murine macrophages. To demonstrate acute and direct involvement of TRPML2 in these processes, the first isoform-selective TRPML2 channel agonist was generated, ML2-SA1. ML2-SA1 was not only found to directly stimulate release of the chemokine CCL2 from macrophages but also to stimulate macrophage migration, thus mimicking CCL2 function. Endogenous TRPML2 is expressed in early/recycling endosomes as demonstrated by endolysosomal patch-clamp experimentation and ML2-SA1 promotes trafficking through early/recycling endosomes, suggesting CCL2 being transported and secreted via this pathway. These data provide a direct link between TRPML2 activation, CCL2 release and stimulation of macrophage migration in the innate immune response.
 
 ## Introduction
 
@@ -50,11 +50,27 @@ We demonstrate that ML2-SA1 activates TRPML2 in EE and LE/LY as well as in Rab11
 
 ## Results
 
-## Development of a potent isoform-selective TRPML2 channel agonist
+### Development of a potent isoform-selective TRPML2 channel agonist
 
 With the aim to further improve the characteristics of existing TRPML channel agonists, we generated more than 80 novel derivatives of recently reported lead activators of TRPML channels which had been originally identified by random screening of the MLSMR small molecule library (Scripps Research Institute Molecular Screening Center) (Grimm et al., 2010). Here, novel derivatives of the lead compounds SN-2 and ML-SA1, a SF-51 analogue (Grimm et al., 2010; Shen et al., 2012; Grimm, 2016; Chen et al., 2014) were evaluated for their efficacy, potency, and selectivity profiles, respectively.
 
 We first synthesized and tested >50 chemically modified versions of the TRPML3 activator SN-2 (Figure 1; Figure 1—figure supplement 1; Supplementary file 1). These modifications comprise systematic variations of the substitution pattern of the aryl ring, variations of the aliphatic norbornane ring system, aromatisation of the isoxazoline to an isoxazole fragment, introduction of polar substituents, as well as replacement of the isoxazol(in)e ring by other heterocycles. Crucial steps in these syntheses were Huisgen-type 1,3-dipolar cycloaddition reactions of norbornene (for the closer analogues) and other alkenes with nitrile oxides (Jawalekar et al., 2011; Huisgen, 1963) and related 1,3-dipoles. Related aromatic isoxazole analogues were prepared via cycloaddition of nitrile oxides with ketone enolates (Vitale and Scilimati, 2013) or enamines (Fos et al., 1992). General synthesis strategies for these modifications are shown in Figure 1A.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig1-v1.jpg)
+
+**Figure 1.:** (A) Shown are synthesis strategies a and b used to generate most of the SN-2 analogous compounds shown in Suppl. Figure 1. R1 = alkyl/ halogen/nitro/ methoxy; R2 / R3 = (cyclo)alkyl/phenyl/ hydroxyalkyl; R4 / R5=alkyl/ phenyl / (hetero)cycles; a) H2N-OH ∙ HCl (1.5 eq.), NaOH (3 eq.), H2O:EtOH (1:1), 0°C - rt, 18 hr; b) PIFA (1.2 eq.), alkene (1.5 eq.), H2O:MeOH (1:2), rt, 1–24 hr; c) ketone (2 eq.), LDA (2 eq.), THF, −78°C, 2 hr, mesitonitrile oxide, −78°C - rt, 2–15 hr; d) Na2CO3, MeOH:H2O (2:1), 95°C, 2 hr. (B) Cartoon showing schematically the fractions of inactive, non-selective TRPML activating, TRPML2-selective, and TRPML3-selective agonists (total number = 55). (C) Fura-2 calcium imaging results showing the effect of SN-2 and its analogues (10 μM) on hTRPML1(NC)-YFP, hTRPML2-YFP, and hTRPML3-YFP transfected HEK293 cells. Mean values normalized to basal (200 s after compound application)±SEM of up to >100 independent experiments with 3–10 cells per experiment are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Shown are the chemical structures of all generated SN-2 analogous compounds. Changes in comparison to SN-2 are highlighted in red. (A) Structure of the lead compound SN-2. (B) Variations in the aryl ring. (C) Isoxazolines with variations in the aliphatic residue. (D) Different 5-hydroxy- and 5-morpholino-isoxazolines. (E) Different isoxazoles. (F) Variations in the heterocycle. With synthesis strategy a we performed numerous variations of the residues on SN-2. Starting with suitable aromatic aldehydes (such as variably substituted mono- and poly-methoxybenzaldehydes, chloro- and fluorobenzaldehydes, trifluoromethyl- and nitrobenzaldehydes, thiophene- and furan-carbaldehydes), the appropriate oximes were prepared. Subsequent conversion into nitrile oxides with PIFA (= [bis (trifluoroacetoxy)iodo]benzene) and reaction with norbornene and other cyclic and acyclic olefins in a Huisgen [3 + 2] cycloaddition led to analogues of SN-2 with a broad range of variations in the aromatic ring and the ring/substituents attached to the isoxazoline ring. Synthesis strategy b (Figure 1A) resulted in fully aromatic isoxazole analogues of SN-2, bearing annulated ring systems or open chain substituents (R4, R5). Starting from enolates of appropriate cyclic or acyclic ketones, substituted 5-hydroxyisoxazolines were generated via a Huisgen cycloaddition with mesitonitrile oxide. Dehydration with sodium carbonate resulted in aromatic analogues of SN-2. 5-Morpholinoisoxazolines (EVP-82, EVP-85) were generated in a similar manner from the ketones via enamines (Fos et al., 1992; Kuehne et al., 1964). Other 5-membered ring heterocycles like isoxazolidines (EVP-94) (Cerri et al., 1974), isomeric isoxazoles (EVP-103) (Fos et al., 1992), triazolines (EVP-199), pyrazolines (EVP-110) (Wulfman et al., 1988), and isothiazoles (EVP-109) (Akiba et al., 1985) were obtained by following established procedures of heterocyclic chemistry.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Shown are the chemical structures of all generated SF-51/ML-SA1 analogous compounds. Changes in comparison to SF-51/ML-SA1 are highlighted in red. (A) Structure of the lead compounds ML-SA1 and SF-51. (B) Modifications of the acetone anile residue. (C) Modifications of the phthalimide residue. (D) Modifications of the length of the acyl spacer.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Shown are synthesis strategies a and b used to generate the 35 SF-51/ML-SA1-analogous compounds shown in Figure 1—figure supplement 2. X = Cl/ Br; Y = CO/SO2 / CH2; R1 / R2 / R3 / R4=H/(cyclo)alkyl/aryl; n = 1–5; reaction conditions: a) p-toluenesulfonic acid, cyclohexane, 85°C, 15 hr. (b) H2, Pd/C, ethyl acetate, rt, 15 hr. (c) K2CO3, acetone, 0°C, 30 min, chloroacetyl chloride/bromoacetyl bromide, 0°C - rt, 15 hr. (d) LiHMDS (lithium bis(trimethylsilyl)amide), NaI, molecular sieves 4 Å, THF (dry), 70°C, 15 hr. (e) SOCl2, reflux, 1 hr. (f) Et3N, DCM, RT, 15 hr. (g) DCM, 0°C – rt, 15 hr. (B) Cartoon showing schematically the fractions of inactive, non-selective TRPML activating, TRPML2-selective, and TRPML3-selective agonists (total number = 35). (C) Fura-2 calcium imaging results showing the effect of SF-51/ML-SA1 and their analogues (10 μM) on hTRPML1(NC), hTRPML2, and hTRPML3 transfected HEK293 cells. Mean values (normalized to basal)±SEM of at least three up to >100 independent experiments with 3–10 cells per experiment are shown. With synthesis strategy a we performed numerous variations of the phthalimide residue of ML-SA1. Acetone anile was prepared following a known procedure (Chen et al., 2007) and hydrogenated according to a protocol from Venturini et al., 2010. Coupling with chloroacetyl chloride or bromoacetyl bromide respectively (Li et al., 2013) yielded haloacetamides suitable to undergo SN-reactions with a broad range of imides, lactams or sulfimides under anhydrous conditions (Escudero et al., 2011; Bansode et al., 2009). Synthesis strategy b was used both for variations in the northern acetone anile part of ML-SA1 as well as differentiations in the length of the acyl spacer. Starting from commercially available N-phthaloylglycine the acid chloride was prepared following a standard procedure (Bala et al., 2012) followed by amide coupling with different 1,2,3,4-tetrahydroisoquinolines and other cyclic and acyclic secondary amines (Volkov et al., 2014). Starting from phthalic anhydride and variable ω-aminocarboxylic acids, the southern part of the lead compounds was prepared with variable length of the acyl spacer (Tan et al., 2004) followed by chlorination with thionyl chloride (Tan et al., 2004) and amide coupling with hydrogenated acetone anile (Tagle et al., 2017) or other appropriate secondary amines.
 
 Derivatives of SF-51/ML-SA1 (Figure 1—figure supplement 2; Figure 1—figure supplement 3; Supplementary file 1) were synthesized by combining appropriate amine building blocks (partially hydrogenated quinolines and other cyclic and open-chain analogues) with N-acyl spacers and imide/lactam-type residues following standard procedures (Figure 1—figure supplement 3A).
 
@@ -62,19 +78,43 @@ Following synthesis, we initially tested the compounds in HEK293 cells transient
 
 The majority of the SN-2 and SF-51/ML-SA1 derivatives were either inactive, non-selective like ML-SA1, or selective for TRPML3 like SN-2 (Figure 1B; Figure 1—figure supplement 3B). A subset of molecules however displayed a strong preference for TRPML2: ML2-SA1 (=EVP-22), a derivative of SN-2, as well as derivatives of SF-51/ML-SA1: EVP-198, EVP-207 and EVP-209. The latter three SF-51/ML-SA1 derivatives however showed lower efficacy compared to ML2-SA1 (Figure 1B; Figure 1—figure supplement 3B).
 
-## TRPML2 activity is detectable in EE, LE/LY as well as Rab11+ and TfR+ organelles
+### TRPML2 activity is detectable in EE, LE/LY as well as Rab11+ and TfR+ organelles
 
 In endolysosomal patch-clamp experiments using transiently transfected HEK293 cells, we investigated TRPML2 channel activity in wortmannin/latrunculin B (Wort./Lat.B)-enlarged EE (Chen et al., 2017a), in YM201636-enlarged LE/LY (Chen et al., 2017a), as well as in vacuolin-enlarged Rab11+ and TfR+ organelles (Figure 2; Figure 2—figure supplement 1). In LE/LY, both ML2-SA1 (Figure 2B; Figure 2—figure supplement 1A) and PI(3,5)P2 (Figure 2—figure supplement 1A) evoked TRPML2 activation while no or very little activation was detectable for TRPML1 and TRPML3. In contrast, the latter ones were robustly activated by ML-SA1 as a positive control (Figure 2C–E). The time course for activation of TRPML2 in LE/LY patch-clamp experiments and the relative Ca2+ permeability are shown in Figure 2G and Figure 2—figure supplement 1B. In addition to LE/LY, TRPML2 channel activity was also detectable in EE after stimulation with ML2-SA1 (Figure 2H and K). In order to patch-clamp discrete populations of vesicles involved in early/recycling endosomal trafficking, cells were transfected with fluorophore-tagged Rab11 or TfR, and enlarged with vacuolin. ML2-SA1 elicited significant currents in Rab11+ and in TfR+ vesicles (Figure 2I–K).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cartoon depicting chemical structures of SN-2 and ML2-SA1. (B) Representative ML2-SA1 or ML-SA1 (10 μM) elicited currents from YM201636-enlarged LE/LY isolated from hTRPML2 expressing HEK293 cells. (C–D) Representative ML2-SA1 or ML-SA1 (10 μM) elicited currents from YM201636-enlarged LE/LY isolated from hTRPML1 or hTRPML3 expressing HEK293 cells. (E) Statistical summary of ML2-SA1 data as shown in B-D as fold increase compared to the respective basal currents in LE/LY. Shown are mean values ± SEM at −100 mV of n independent experiments as indicated, each. (F) Dose-response curves obtained from fura-2 calcium imaging experiments with hTRPML1(NC), hTRPML2, and hTRPML3 expressed in HEK293 cells and elicited with ML2-SA1 at varying concentrations. The calculated EC50 value for hTRPML2 is: 1.24 ± 0.12 μM (mean ± SEM). (G) Time course of TRPML2 activation by ML2-SA1 taken from experiments as shown in B. Black and red arrows indicate time points for basal and ML2-SA1 induced TRPML2 activity that were used for the IV relationship. (H–J) Representative basal and ML2-SA1 (10 μM) elicited currents from Wort./Lat.B-enlarged EE, from vacuolin-enlarged Rab11+, or form TfR+ vesicles isolated from hTRPML2 expressing HEK293 cells. (K) Statistical summary of data as shown in G-I. * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, Figure 2E, one-way ANOVA test followed by Tukey’s post-hoc test, Figure 2J, paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative basal, PI(3,5)P2 (1 μM) or ML2-SA1 (10 μM) elicited currents from YM201636-enlarged LE/LY isolated from hTRPML2 expressing HEK293 cells (neutral luminal pH). (B) Representative basal and ML2-SA1 (10 μM) elicited currents measured in 105 mM luminal Ca2+ (isotonic) from YM201636-enlarged LE/LY isolated from hTRPML2 expressing HEK293 cells. The right panel shows the corresponding time course. (C) Representative basal, PI(3,5)P2 (1 μM) or ML2-SA1 (10 μM) elicited currents from YM201636-enlarged LE/LY isolated from hTRPML2 expressing HEK293 cells (highly acidic luminal pH).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Shown are representative images of TRPML2 (green) transiently cotransfected with either TRPML2 (red) or markers of the endolysosomal system (red): Rab5 (early endosomes), TfR (early/recycling endosomes), Rab11 (recycling endosomes), Rab7 (late endosomes), or LAMP1 (late endosomes/lysosomes). Scale bar (identical for all images)=10 μm. (B) TRPML2 colocalisation quantification. Pearson’s Correlation Coefficients were calculated by marking and isolating single cells in ImageJ, using the ImageJ plugin ‘JACoP’ to quantify the localization correlation. Individual PCC values are plotted alongside overall mean values ± SEM of five individual cells. Colocalization of TRPML2 did not significantly differ from TRPML2 (0.880 ± 0.028) with either TfR (0.809 ± 0.030) or Rab11 (0.745 ± 0.039), while it appeared to colocalize significantly less with Rab5 (0.579 ± 0.047), Rab7 (0.712 ± 0.037), and LAMP1 (0.675 ± 0.034). * indicates p<0.05, ** indicates p<0.01, *** indicates p<0.001, one-way ANOVA test followed by Dunnett’s post-hoc test comparing against TRPML2/TRPML2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Dose-response curve (DRC) for ML2-SA1 effect on mouse TRPML2 in HEK293 cells, obtained from fura-2 calcium imaging experiments. The calculated EC50 value for mTRPML2 is: 2.38 ± 0.001 μM (mean ± SEM). (B) Summary of fura-2 calcium imaging results showing the effect of SN-2, ML2-SA1, and ML-SA1 (10 μM, each) on mouse TRPML1, 2, and 3. (C, E) Representative time courses of continuous recordings using a ramp protocol (−120 mV to +120 mV in 500 ms, every 5 s, holding potential = 0 mV). Data obtained at +120 mV were plotted against time. Recordings at the time points as indicated were used for the IV relationships (D, F), respectively. No significant ML2-SA1 (10 μM) elicited current was detectable in vacuolin-enlarged endolysosomes isolated from hTPC1 (C–D) or hTPC2 (E–F) expressing HEK293 cells. PI(3,5)P2 (1 μM, batch solution) was applied as positive control to elicited TPC currents. ATP (1 mM, bath solution) was applied to inhibit PI(3,5)P2-evoked TPC currents.
 
 Furthermore, the effect of luminal pH on TRPML2 channel activity was evaluated (Figure 2—figure supplement 1A and C). TRPML2 activity (stimulated with PI(3,5)P2 or with ML2-SA1) increases with increasing, that is less acidic luminal pH. This differs from TRPML1 which shows maximal activity in highly acidic luminal pH (Chen et al., 2017a; Dong et al., 2010). These findings argue TRPML2 channel function is adapted to vesicles of only slightly acidic or neutral pH such as EE/RE rather than highly acidic LE/LY. The strong colocalization between TfR or Rab11 with TRPML2 confirms an important functional role of TRPML2 in RE (Figure 2—figure supplement 2A–B).
 
 In summary, ML2-SA1 was found to be a potent and efficacious activator of both hTRPML2 and mTRPML2. The calculated EC50 values for human and mouse TRPML2 were 1.24 ± 0.12 μM and 2.38 ± 0.01 μM, respectively (Figure 2F; Figure 2—figure supplement 3A). ML2-SA1 shows high selectivity over h/mTRPML1 and h/mTRPML3 in both calcium imaging and endolysosomal patch-clamp experiments and it does not activate TPC1 nor TPC2 (Figure 1; Figure 2; Figure 2—figure supplement 3B–F).
 
-## Molecular modeling of ML2-SA1 binding
+### Molecular modeling of ML2-SA1 binding
 
 Several recent papers have provided in-depth information on the structures of TRPML1 and TRPML3 channels (Schmiege et al., 2017; Chen et al., 2017b; Hirschi et al., 2017). Schmiege et al., 2017 found that a hydrophobic cavity created by I468 and F465 of PH1 (pore helix 1), F428, C429, V432 and Y436 of S5, F505 and F513 of S6, and Y499 and Y507 of S6 in the neighboring subunit, tightly accommodates ML-SA1 (Figure 3A). In a molecular modeling approach using these recently published structures of TRPML1 and TRPML3 as a basis, we simulated the binding of ML-SA1 as well as ML2-SA1 to hTRPML1 and hTRPML2 (Figure 3; Figure 3—figure supplement 1). Complete 3D models of the open conformation of hTRPML1 and hTRPML2 were constructed and used for ligand docking analysis. Amino acids differing between hTRPML1 and hTRPML2 are colored green (Figure 3B–D). Based on this model, ML2-SA1 (both enantiomers are described, one in Figure 3—figure supplement 1) is predicted to bind to the same binding pocket as ML-SA1 as observed in the cryo-EM structure of hTRPML1 (Figure 3A–B). Six amino acids (A422, A424, G425, A453, V460, and I498) in this pocket are unique to hTRPML2 (highlighted in green; Figure 3C–D). The orientation of ML2-SA1 in the binding pocket of hTRPML2 with the highest docking score is shown in Figure 3C. The dichlorophenyl ring shows favorable π-stacking interaction with F502 whereas the polar isoxazole ring is located near the side chain OH-groups of Y428 and Y496. The hydrophobic norbornane ring is interacting with G425 and Y428. Other possible orientations of ML2-SA1 binding to hTRPML2 are shown in Figure 3—figure supplement 1C–D). The observed binding mode of ML2-SA1 at hTRPML1 is different and appears to be energetically less favorable compared to hTRPML2 due to the observed amino acid substitutions in the predicted binding cavity (Figure 3D). We subsequently replaced each of the six amino acids that are unique to the predicted hTRPML2 binding pocket with the respective amino acids of hTRPML1. We analysed these mutant isoforms first in calcium imaging experiments where we found the strongest reduction of the ML2-SA1 effect in G425A (Figure 3E). In the next step, we performed endolysosomal patch-clamp experiments with this mutant. Mutation of G425 to alanine was found to selectively abrogate the effect of ML2-SA1, while ML-SA1 was still able to activate G425A to a degree not significantly different from WT (Figure 3E–F). G425 is close to the norbornane ring of ML2-SA1 (minimum distance 3.6 Å) docked to hTRPML2 and substitution to alanine is unfavorable for this binding mode (Figure 3C). The experimental data corroborate binding of ML2-SA1 to the ML-SA1 binding pocket and confirm a critical role of G425 in mediating ML2-SA1 selectivity.
 
-## Effect of ML2-SA1 on endogenous TRPML2 channel activity in organelles isolated from LPS-stimulated macrophages
+![Figure 3.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig3-v1.jpg)
+
+**Figure 3.:** (A) Binding mode of ML-SA1 (green colored carbon atoms) at hTRPML1, showing residues within 5 Å of ML-SA1, as observed in one of the four identical binding pockets of the cryo-EM structure (PDB ID: 5WJ9). The S6 helix of monomer A of hTRPML1 is colored magenta, the PH1 and S5 helices of monomer B are colored cyan. (B) Binding mode of ML-SA1 (green colored carbon atoms) at hTRPML2 (homology model generated with MODELLER) as predicted by the ligand docking. Only residues within 5 Å of ML-SA1 in one of the four identical binding pockets are displayed. The S6 helix of monomer A of hTRPML2 is colored petrol blue, the PH1 and S5 helices of monomer B are colored salmon. Amino acid residues that are different in hTRPML1 and hTRPML2 are colored green (C) Binding mode of one ML2-SA1 enantiomer (cyan colored carbon atoms; 3aS, 4S, 7R, 7aS) at hTRPML2 as predicted by ligand docking. Only residues within 5 Å of ML2-SA1 in one of the four identical binding pockets are displayed (same coloring and representation style as in Figure 3B). Binding of the other ML2-SA1 enantiomer (3aR, 4R, 7S, 7aR) resulted in a similar binding mode that is shown in Figure 3—figure supplement 1B (D) Binding mode of one ML2-SA1 enantiomer (cyan colored carbon atoms; 3aS, 4S, 7R, 7aS) at hTRPML1 as predicted by ligand docking. Only residues within 5 Å of ML2-SA1 in one of the four identical binding pockets are displayed (same coloring and representation style as in Figure 3a). (E) Fura-2 calcium imaging results showing the effect of ML2-SA1 (10 μM) on hTRPML2-YFP WT and mutant transfected HEK293 cells. Mean values normalized to basal (120 s after compound application)±SEM of at least three independent experiments, each. * indicates p<0.05, one-way ANOVA, followed by Dunnet post-hoc test. (F) Representative ML2-SA1 or ML-SA1 (10 μM) elicited currents from YM201636-enlarged LE/LY isolated from hTRPML2(G425A) expressing HEK293 cells. (G) Statistical summary of data as shown in F as fold increase compared to the respective basal currents in LE/LY. Shown are mean values ± SEM at −100 mV of at n independent experiments as indicated. * indicates p<0.05, unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of the experimentally derived binding mode of ML-SA1 (green colored carbon atoms) and the docking pose (obtained with program GLIDE) at the hTRPML1 binding pocket (orange colored carbon atoms). The RMSD of the heavy atoms is 1.22 Å for the top-ranked solution. (B) Binding mode of the second ML2-SA1 enantiomer (cyan colored carbon atoms; absolute configuration: 3aR, 4R, 7S, 7aR) at hTRPML2 as predicted by ligand docking. The orientation is similar as observed for the enantiomer shown in Figure 3c and only the norbornane ring adopts a slightly different orientation. Only residues within 5 Å of ML2-SA1 in one of the four identical binding pockets are displayed. Binding was not different from the enantiomer (3aS, 4S, 7R, 7aS) shown in Figure 3D. (C–D) Alternative orientations (rank 2 and 3 of the GLIDE docking results) to that shown in Figure 3C of ML2-SA1 binding at hTRPML2.
+
+### Effect of ML2-SA1 on endogenous TRPML2 channel activity in organelles isolated from LPS-stimulated macrophages
 
 In macrophages significant TRPML2 channel expression is found only after stimulation with LPS, as demonstrated previously by qRT-PCR and western blot analysis (Sun et al., 2015). We confirmed this finding by qRT-PCR and endolysosomal patch-clamping, revealing that only after several hours of LPS treatment, robust endogenous TRPML2 channel expression and activity were detectable (Figure 4A–G). In LPS-stimulated bone marrow-derived macrophages (BMDMΦ) ML2-SA1-induced currents were detectable in Tf-Alexa555 loaded, vacuolin-enlarged vesicles, while no significant TRPML2 channel activity could be detected in non-LPS stimulated BMDMΦ Tf+ vesicles (Figure 4A–B). Currents measured in BMDMΦ LE/LY with ML2-SA1 after LPS-stimulation were smaller than currents measured in Tf+ loaded vesicles (Figure 4C–D). In contrast, in LE/LY isolated from alveolar macrophages (AMΦ), TRPML2 currents elicited with ML2-SA1 were larger on average than in BMDMΦ (Figure 4E–F). These data confirm that ML2-SA1 elicits robust TRPML2 currents in endogenously expressing cells.
 
@@ -82,7 +122,7 @@ In macrophages significant TRPML2 channel expression is found only after stimula
 
 **Figure 4.:** (A) Representative currents from vacuolin-enlarged/Tf+ vesicles isolated from murine (LPS 6 hr or LPS 0 hr) primary WT BMDMΦ, basal or elicited by an application of 10 μM ML2-SA1. All currents are normalized to basal current without ML2-SA1. (B) Statistical summary of data shown in A. (C) Representative currents from YM201636-enlarged LE/LY isolated from murine (LPS 6 hr or LPS 0 hr) primary WT bone marrow macrophages (BMDMΦ), basal or elicited by an application of 10 μM ML2-SA1. (D) Statistical summary of data shown in C. (E) Representative currents from YM201636-enlarged LE/LY isolated from murine (LPS 6 hr or LPS 0 hr) primary WT alveolar macrophages (AMΦ), basal or elicited by an application of 10 μM ML2-SA1. (F) Statistical summary of data shown in E. * indicates p<0.05, ** indicates p<0.01, Student’s t test, unpaired. (G) qPCR data showing levels of TRPML2 expression after 3, 6, and 24 hr LPS treatment compared to untreated (0 hr). * indicates p<0.05, ** indicates p<0.01, one-way ANOVA test followed by Tukey’s post-hoc test.
 
-## Effect of selective TRPML2 activation on CCL2 secretion
+### Effect of selective TRPML2 activation on CCL2 secretion
 
 To evaluate effects of the novel TRPML2 channel agonist on chemokine secretion from macrophages, we performed experiments based on the results recently provided by Sun et al. (2015) (Figure 5A). We found that incubation with ML2-SA1 significantly increased secretion of the chemokine CCL2 from BMDMΦ, both after 4 hr and 8 hr of LPS treatment (Figure 5A). Importantly, ML2-SA1 did not induce CCL2 secretion in unstimulated BMDMΦ. Furthermore, CCL2 secretion was severely reduced in TRPML2-/- BMDMΦ and ML2-SA1 showed no further increase of CCL2 secretion in the TRPML2-/- BMDMΦ, corroborating the specificity of the agonist (Figure 5A). To characterise the pathway of ML2-SA1-induced CCL2 secretion from macrophages, we performed lysosomal exocytosis and Tf trafficking experiments to distinguish between LE/LY and EE/RE as possible secretion routes. Lysosomal exocytosis experiments revealed no significant effect of ML2-SA1 on lysosomal enzyme (beta-hexosaminidase) release (Figure 5B). In accordance with this, ML2-SA1 application did not result in translocation of LAMP1 to the plasma membrane (Figure 5C), arguing against LE/LY being involved in CCL2 secretion in BMDMΦ. These findings are supported by the LE/LY environment being less favorable for TRPML2 activity as outlined above. More favorable conditions are found in EE/RE compartments (less acid to neutral pH). In line with this, ML2-SA1 application resulted in a significant enhancement of Tf trafficking and recycling through EE/RE (Figure 5D–E). Taken together, these data argue for a TRPML2-dependent trafficking route of CCL2 from Golgi to EE/RE (Figure 5F).
 
@@ -90,9 +130,21 @@ To evaluate effects of the novel TRPML2 channel agonist on chemokine secretion f
 
 **Figure 5.:** (A) Shown are data obtained from primary WT and TRPML2-/- mouse bone marrow macrophages (BMDMΦ) with and without LPS treatment for 4 hr and 8 hr, respectively. The fraction treated with LPS and 10 μM ML2-SA1 showed significantly increased CCL2 secretion compared to WT controls treated with LPS only. TRPML2-/- cells displayed strongly reduced CCL2 secretion. Shown are normalized mean values ± SEM of 5 mice each. * indicates p<0.05, Student’s t test, unpaired. (B) Lysosomal exocytosis assay showing the increase in beta-hexosaminidase release upon stimulation with either ionomycin, ML-SA1, or ML2-SA1 (conc. as indicated) from LPS (6 hr) stimulated BMDMΦ. *** indicates p<0.001, one-way ANOVA test followed by Tukey’s post-hoc test. (C) Lysosomal exocytosis assay by flow cytometry showing the percentage of cells which show an increase in LAMP1 fluorescence on the plasma membrane. Cells were treated with DMSO, calcium ionophore A23187 (calcimycin), and 30 μM ML2-SA1. (D–E) Recycling endosome assay showing the decrease of Tf mean fluorescence in LPS stimulated RAW264.7 cells, treated with either DMSO or 30 μM ML2-SA1. Scale bar (identical for all images)=10 μm. Plot shows the normalized Tf intensity (shown is the average of 3 independent experiments, each). **p<0.01, two-way ANOVA, repeated measures, followed by Bonferroni post-hoc test. (F) Cartoon showing organelles with functional TRPML2 expression as confirmed by endolysosomal patch-clamp analysis (EE, RE, LE/LY). CCL2 (MCP-1) is hypothesized to be trafficked and secreted via the EE/RE pathway, based on the observation that ML2-SA1 promotes Tf trafficking in the EE/RE compartment, while no effect on lysosomal exocytosis was found. No secretory vesicles are reported to exist in macrophages.
 
-## ML2-SA1 promotes macrophage migration
+### ML2-SA1 promotes macrophage migration
 
 To assess effects of ML2-SA1 on cell migration, we performed migration assays in a modified Boyden chamber setup (Figure 6—figure supplement 1). BMDMΦ in the presence or absence of LPS were seeded in the lower compartment of the chamber and exposed to different concentrations of ML2-SA1. LPS-stimulated, ML2-SA1 pre-treated BMDMΦ were able to significantly increase migration of untreated BMDMΦ through the transwell chamber, while LPS-stimulated BMDMΦ without ML2-SA1 pre-treatment (only DMSO) were not able to alter migration properties of untreated BMDMΦ. (Figure 6A). This is in accordance with the enhanced release of CCL2 by ML2-SA1, which serves as chemoattractant for untreated BMDMΦ. To exclude a chemotactic effect of the compounds themselves, we used a classical Boyden chamber setup without cells in the lower compartment. Yet, neither LPS nor ML2-SA1 alone were able to significantly enhance BMDMΦ migration, while supplementation of recombinant CCL2 led to a substantial increase in BMDMΦ migration (Figure 6B; Figure 6—figure supplement 2A–B). Overall, these data suggest that ML2-SA1 is able to induce CCL2 secretion selectively in TRPML2-expressing macrophages, thus serving as chemoattractant to recruit more macrophages.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig6-v1.jpg)
+
+**Figure 6.:** (A) Shown are representative images obtained from a modified Boyden chamber experiment. Images show fixed and crystal violet stained BMDMΦ after 3 hr migration through a transwell chamber along a chemotactic gradient created by BMDMΦ in the lower compartment. Indicated treatments refer to treatment of the cells in the lower compartment. (B) Quantification of migration in the modified Boyden chamber setup (A) shows a significant increase in migration when LPS pre-treated cells in the lower compartment were subjected to 10 or 30 µM ML2-SA1. Shown are mean values ± SEM of 4 independent experiments. * indicates p<0.05, ** indicates p<0.01, repeated measures, one-way ANOVA with Greenhouse-Geisser correction, followed by Dunnet post-hoc test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** In the modified Boyden chamber setup (A–C) BMDMΦ plated on poly-L-lysine coated cover slips in a twenty-four well plate are treated with 1 µg/mL LPS or equal volume of DMSO for 6 hr (A). After 6 hr media is replaced for media containing 10 or 30 µM ML2-SA1 or equal volume of DMSO and a transwell chamber containing 1 × 105 BMDMΦ is inserted (B). After 3 hr migration, cells translocated through the transwell chamber and stick to the bottom (C). In the classical Boyden chamber setup (D–E) a twenty-four well plate is filled with media containing either DMSO, 1 µg/mL LPS and DMSO, 1 µg/mL LPS and 30 µM ML2-SA1, or 10 ng/mL CCL2 and a transwell chamber containing 1 × 105 BMDMΦ is inserted (D). After 3 hr migration, cells translocated through the transwell chamber and stick to the bottom (E). Migrated cells can be fixed and stained with crystal violet for quantification of cell covered area.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39720/elife-39720-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative images obtained from a classical Boyden chamber setup showing fixed and crystal violet stained BMDMΦ after 3 hr migration through a transwell chamber. The respective conditions in the lower compartment (media) are indicated. (B) Quantification of migration in the classical Boyden chamber setup showing a significant increase in migration when 10 ng/mL CCL2 was present in the lower compartment but not when LPS or ML2-SA1 were present (1 µg/mL LPS or 30 µM ML2-SA1). Shown are mean values ± SEM of 3 independent experiments. *** indicates p<0.001, one-way ANOVA, followed by Dunnet post-hoc test.
 
 ## Discussion
 
@@ -116,7 +168,293 @@ CCL2 is known to be a key chemokine regulating migration and infiltration of mon
 
 ## Materials and methods
 
-## Endolysosomal patch-clamp and calcium imaging experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HEK293</td>
+      <td>DSMZ</td>
+      <td>ACC 305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HEK 293 stable stably expressing TRPML3-YFP</td>
+      <td>Grimm et al. (2010); PMID: 20189104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HEK 293 stable stably expressing TRPML1-YFP</td>
+      <td>Chen et al. (2014), PMID: 25119295</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML1 (encoded by the Mcoln1 gene) KO mouse; Mcoln1tm1Sasl, C57BL/6</td>
+      <td>Venugopal et al. (2007); PMID: 17924347</td>
+      <td>MGI ID: 3794204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML2 (encoded by the Mcoln2 gene) KO mouse; C57BL/6</td>
+      <td>Sun et al. (2015); PMID: 26432893</td>
+      <td>MGI: 1915529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML3 (encoded by the Mcoln3 gene) KO mouse; Mcoln3tm1. 1Hels, FVB/NJ</td>
+      <td>Jörs et al. (2010); PMID: 21179200</td>
+      <td>MGI ID: 5319089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>anti-LAMP-1 (1D4B) (rat monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#A-11006; RRID: AB_2134495</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Rat IgG (H + L) Secondary Antibody, Alexa Fluor 488</td>
+      <td>ThermoFisher</td>
+      <td>Cat#sc-19992; RRID: AB_2534074</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>mcherry-Transferrin Receptor 20 (plasmid)</td>
+      <td>N/A</td>
+      <td>Addgene Plasmid #55144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DsRed-Rab11 (plasmid)</td>
+      <td>Choudhury et al. (2002); PMID: 12070301</td>
+      <td>Addgene Plasmid #12679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML1-YFP (plasmid)</td>
+      <td>Grimm et al. (2010), PMID: 20189104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML2-YFP (plasmid)</td>
+      <td>Grimm et al. (2010), PMID: 20189104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TRPML3-YFP (plasmid)</td>
+      <td>Grimm et al. (2010), PMID: 20189104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP A422C</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: CTTCGGTTTTGTTGTTGTG CTGGTATGATTTATCTGGG reverse: CCCAGATAAATCATACCAGC ACAACAACAAAACCGAAG</td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP A424V</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: CGGTTTTGTGCTTG TGTTGGTATGATTTATCTGGGTTACAC reverse: GTGTAACCCAGATAAATCAT ACCAACACAAGCACAAAACCG</td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP G425A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: CGGTTTTGTGCTTGT GCTGCTATGATTTATCTGGGTTACAC reverse: GTGTAACCCAGATAAATCA TAGCAGCACAAGCACAAAACCG</td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP A453S</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: CTGAACACAGTTTCTG AGTGTCTGTTTTCTCTGG reverse: CCAGAGAAAACAGACA CTCAGAAACTGTGTTCAG</td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP V460I</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: TGTCTGTTTTCTCTGATCA ACGGTGATGACATG reverse: CATGTCATCACCGTTGATC AGAGAAAACAGACA</td>
+    </tr>
+    <tr>
+      <td>Quikchange primers for TRPML2:YFP I498V</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: CCTTCATCAGCCTTTTTATATATA TGGTTCTCAGTCTTTTTATTGC reverse: GCAATAAAAAGACTGAGAACCA TATATATAAAAAGGCTGATGAAGG</td>
+    </tr>
+    <tr>
+      <td>qPCR Primer for TRPML1 (NM_053177)</td>
+      <td>www.pga.mgh.harvard.edu/primerbank</td>
+      <td>PrimerBankID: 16716462 c2</td>
+      <td>forward: GCCTTGGGCCAATGGATCA reverse: CCCTTGGATCAATGTCAAAGGTA</td>
+    </tr>
+    <tr>
+      <td>qPCR Primer for TRPML2 (NM_026656)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: AATTTGGGGTCACGTCATGC reverse: AGAATCGAGAGACGCCATCG</td>
+    </tr>
+    <tr>
+      <td>qPCR Primer for TRPML3 (NM_134160)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>forward: GAGTTACCTGGTGTGGCTGT reverse: TGCTGGTAGTGCTTAATTGTTTCG</td>
+    </tr>
+    <tr>
+      <td>qPCR Primer for HPRT (NM_013556)</td>
+      <td>Hruz et al. (2011); PMID: 21418615</td>
+      <td>N/A</td>
+      <td>forward: GCTCGAGATGTCATGAAGGAGAT reverse: AAAGAACTTATAGCCCCCCTTGA</td>
+    </tr>
+    <tr>
+      <td>Lipopolysaccharides (LPS) from Escherichia coli O26:B6</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#L2762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipopolysaccharides (LPS) from Escherichia coli O111:B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#L4391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fura-2, AM, cell permeant</td>
+      <td>ThermoFisher</td>
+      <td>Cat#F1201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse M-CSF, premium grade</td>
+      <td>Miltenyi Biotech</td>
+      <td>Cat#130-101-703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transferrin from human serum, Alexa FluorTM 546-conjugated</td>
+      <td>TermoFisher</td>
+      <td>Cat# T23364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transferrin from human serum, Alexa FluorTM 555-conjugated</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#T35352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JE/MCP-1/CCL2 from mouse, recombinant</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SRP4207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YM201636</td>
+      <td>Chemdea</td>
+      <td>Cat#CD0181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MLSA-1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#SML0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PI(3,5)P2</td>
+      <td>AG Scientific</td>
+      <td>Cat#P-1123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wortmannin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#W1628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LatrunculinB</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#L5288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vacuolin</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-216045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Calcium ionophore A23187</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C7522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4-Methylumbelliferyl N-acetyl-b-D-glucosaminide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M2133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RevertAid first strand cDNA synthesis Kit</td>
+      <td>ThermoScientific</td>
+      <td>Cat# K1621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CD11b MicroBeads, human and mouse</td>
+      <td>Miltenyi Biotech</td>
+      <td>Cat#130-049-601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>QuikChange II Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>Cat#200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse/rat CCL2/ JE/MCP-1 Quantikine ELISA Kit</td>
+      <td>BioLegend</td>
+      <td>Cat#432707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Origin8</td>
+      <td>OriginLab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Endolysosomal patch-clamp and calcium imaging experiments
 
 Whole-LE/LY and whole-EE recordings have been described previously in detail (Chen et al., 2017a; Chen et al., 2017c). In brief, for whole-LE/LY manual patch-clamp recordings, cells were treated with YM201636 (HEK293 cells: 800 nM o/n; macrophages: 800 nM 1 hr). For whole-EE manual patch-clamp recordings, cells were treated with a combination of 200 nM wortmannin and 10 nM latrunculin B (HEK293 cells: 10–15 min). Cells were treated with compounds at 37°C and 5% CO2. YM201636 was obtained from Chemdea (CD0181), wortmannin and latrunculin B from Sigma (W1628 and L5288), and vacuolin from Santa Cruz (sc-216045). Compounds were washed out before patch-clamp experimentation.
 
@@ -128,7 +466,7 @@ Macrophages were used for experiments within 2–10 days after isolation. Mean c
 
 Calcium imaging experiments were performed using fura-2 as described previously (Grimm et al., 2012a). Briefly, HEK293 cells were plated onto glass coverslips, grown over night and transiently transfected with the respected cDNAs using TurboFect transfection reagent (Thermo Scientific). After 24–48 h cells were loaded for 1 hr with the fluorescent indicator fura2-AM (4 µM; Invitrogen) in a standard bath solution (SBS) containing (in mM) 138 NaCl, 6 KCl, 2 MgCl2, 2 CaCl2, 10 HEPES, and 5.5 D-glucose (adjusted to pH 7.4 with NaOH). Cells were washed in SBS for 30 min before measurement. Calcium imaging was performed using a monochromator-based imaging system (Polychrome IV mono-chromator, TILL Photonics).
 
-## Computational methods
+### Computational methods
 
 Analysis of electron density map. The electron density maps for the cryo-electron microscopy structures of hTRPML1 and hTRPML3 in open agonist-bound form (PDB IDs: 5WJ9 and 6AYF, respectively) were downloaded from the Protein Data Bank (PDB; ww.rcsb.org) (Berman et al., 2000) and visualized in PyMOL (The PyMOL Molecular Graphics System, Version 1.7.4 Schrödinger, LLC). Homology modelling of TRPML2. The amino acid sequence of hTRPML2 was retrieved from UniProt (The UniProt Consortium, 2017); Accession number: Q8IZK6-1) and a Blast (Altschul et al., 1990) search using BLOSUM62 matrix was performed against the PDB to find the closest homologues. Subsequently, sequence alignment of hTRPML2 to the top scored template, hTRPML3 (Sequence identity 59%), was conducted in MOE2012.10 (Molecular Operating Environment (MOE), 2016.08; Chemical Computing Group Inc., 1010 Sherbooke St. West, Suite #910, Montreal, QC, Canada, H3A 2R7, 2016) and the alignment file was used to generate the homology model using MODELLER 9.11 (Webb and Sali, 2014). Ligand-bound homology models of hTRPML2 were finally built using the agonist-bound structure of hTRPML3 (PDB ID: 6AYF) and ranked according to their DOPE score (Shen and Sali, 2006). Molecular docking to hTRPML1 and −2. The ligands were prepared for docking using the LigPrep tool as implemented in Schrödinger’s software (Schrödinger Release 2017–1: LigPrep, Schrödinger, LLC, New York, NY, 2017), where the two stereoisomers of ML2-SA1 were generated and energy minimized using the OPLS force field. Conformers of the prepared ligands were calculated with ConfGen using the default settings and allowing minimization of the output conformations.
 
@@ -136,30 +474,30 @@ Protein preparation. The cryo-electron microscopy structure of the open conforma
 
 The receptor grid preparation for the docking procedure was carried out by assigning the agonist as the centroid of the grid box. The generated ligand conformers were docked into the proteins using Glide (Small-Molecule Drug Discovery Suite 2017–1: Glide, Schrödinger, LLC, New York, NY, 2017) in the Standard Precision mode. A total of 100 poses per ligand conformer were included in the post-docking minimization step and a maximum of 20 docking clusters were output for each ligand. Redocking of the ligand ML-SA1 into the hTRPML1 pocket gave a docking pose with root mean square deviation of 1.22 Å for the top-ranked solution (Figure 3—figure supplement 1A).
 
-## Cell culture of primary macrophages isolated from knockout and WT mice
+### Cell culture of primary macrophages isolated from knockout and WT mice
 
 For preparation of primary alveolar macrophages (AMΦ), mice were deeply anesthetized and euthanized by exsanguination. Afterwards, the trachea was carefully exposed and cannulated by inserting a 20 gauge catheter (B. Braun, cat. no. 4252110B). AMΦ were harvested by eight consecutive lung lavages with 1 ml of DPBS each. After a centrifugation step, cells were immediately collected and cultured in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% antibiotics. AMΦ were directly seeded onto 12 mm glass cover slips and used for experiments within 5 days after preparation. Bone marrow-derived macrophages (BMDMΦ) were isolated from femur and tibias of mice. Thus, bones were isolated and bone marrow was flushed with 10 ml PBS using a sterile 25 gauge needle. Cells were obtained by centrifugation, resuspended and subsequently cultured in 10 cm petri dishes in RPMI 1640 medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin and 40 ng/mL murine M-CSF (Miltenyi Biotech). Cells were incubated for 5 days, before they were plated onto poly-L-lysine coated cover slips for experiments. All cells were maintained at 37°C in 5% CO2 atmosphere. If necessary, cells were stimulated with 1 µg/mL LPS (Escherichia coli O26:B6, Sigma, L2762) prior to experiments for different time periods as stated in the text. Animals were used under approved animal protocols and University of Munich (LMU) Institutional Animal Care Guidelines.
 
-## Measurement of CCL2 content in bmdmφ culture supernatants by ELISA
+### Measurement of CCL2 content in bmdmφ culture supernatants by ELISA
 
 Cell culture supernatants from WT or TRPML2-/- BMDMΦ were collected at 4 hr or 8 hr following LPS treatment in the presence or absence of TRPML2 agonist (ML2-SA1), and CCL2 was measured using an ELISA kit (BioLegend, 432707), per the manufacturer’s instructions. Cell culture supernatants were diluted ten times for the assay, and 50 μL diluted supernatant was assessed.
 
-## Transferrin trafficking assay
+### Transferrin trafficking assay
 
 RAW264.7 cells were seeded overnight with 0.1 mg/mL of lipopolysaccharide (LPS) (L4391, Sigma). Then, cells were loaded for 20 min at 37°C with transferrin from human serum, Alexa Fluor 546-conjugated (T23364, ThermoFisher) at the concentration of 50 μg/mL in complete medium (DMEM 10% FBS). The analysis of recycling kinetics was performed by chasing for 5, 10, 15 and 20 min in complete media plus 50 μg/mL of unconjugated transferrin (T0665, Sigma) in the presence of either DMSO or ML2-SA1 (30 μM). Before fixation with 4% paraformaldehyde (PFA), non-internalized transferrin was acid-stripped (150 mM NaCl, 0.5% acetic acid in H2O) for 30 s. Images were acquired using a Zeiss LSM 800 with 63x magnification.
 
-## Lysosomal exocytosis assay (FACS)
+### Lysosomal exocytosis assay (FACS)
 
 RAW264.7 cells were seeded overnight with 0.1 mg/mL of lipopolysaccharide (LPS) (L4391, Sigma). Then, cells were treated with DMSO, calcium ionophore A23187 (C7522, Sigma) or ML2-SA1 for 3 hr. After 3 h cells were collected and stained with LAMP1 antibody (SC-19992, Santa Cruz) in PBS (1% BSA) during agitation for 20 min (4°C). Cells were then collected by centrifugation and resuspended in PBS (1% BSA) with goat anti-rat, Alexa488 (A-11006 ThermoFisher) during agitation for 1 hr (4°C). Finally, cells were washed in PBS and left on ice until FACS analysis. Cells were loaded into the FACS machine using a nozzle of 100 µm and the LAMP1 fluorescence intensity was measured using a 488 nm excitation laser and a FITCH (530/30 nm) emission filter. The threshold was set using DMSO-treated samples, and 1000 events were counted for each condition.
 
-## Lysosomal exocytosis assay (Hexosaminidase)
+### Lysosomal exocytosis assay (Hexosaminidase)
 
 For measurement of lysosomal hexosaminidase enzyme release, bone marrow macrophages were treated with ML2-SA1, ML-SA1 or DMSO in serum-free RPMI medium, concentrations and durations as indicated. Ionomycin was used as control. After treatment, supernatants were collected, centrifuged and incubated with natrium citrate buffer (pH 4.5) and 4-Methylumbelliferyl N-acetyl-β-D-glucosaminide (M1233, Sigma, 1 mM final concentration) for 1.5 hr. Cells were lysed with Triton-X buffer and lysates were processed in parallel. The reaction was stopped by adding glycin buffer to the samples and the turnover of hexosaminidase substrate was detected as fluorescence (Exitation: 365 nm; Emission: 450 nm) using a plate reader (Spectramax ID3, Molecular Devices). The increase in substrate turnover was analyzed as fluorescence increase in supernatants relative to lysates.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 Generation of point mutant isoforms of hTRPML2 (encoded by the MCOLN2 gene) was performed as described previously (Grimm et al., 2010) using the QuikChange protocol. The following primers were used to generate hTRPML2 mutant isoforms: A422C forward primer: CTTCGGTTTTGTTGTTGTGCTGGTATGATTTATCTGGG; A422C reverse primer: CCCAGATAAATCATACCAGCACAACAACAAAACCGAAG; A424V forward primer: CGGTTTTGTGCTTGTGTTGGTATGATTTATCTGGGTTACAC; A424V reverse primer: GTGTAACCCAGATAAATCATACCAACACAAGCACAAAACCG; G425A forward primer: CGGTTTTGTGCTTGTGCTGCTATGATTTATCTGGGTTACAC; G425A reverse primer: GTGTAACCCAGATAAATCATAGCAGCACAAGCACAAAACCG; A453S forward primer: CTGAACACAGTTTCTGAGTGTCTGTTTTCTCTGG; A453S reverse primer: CCAGAGAAAACAGACACTCAGAAACTGTGTTCAG; V460I forward primer: TGTCTGTTTTCTCTGATCAACGGTGATGACATG; V460I reverse primer: CATGTCATCACCGTTGATCAGAGAAAACAGACA; I498V forward primer: CCTTCATCAGCCTTTTTATATATATGGTTCTCAGTCTTTTTATTGC; I498V reverse primer: GCAATAAAAAGACTGAGAACCATATATATAAAAAGGCTGATGAAGG.
 
-## Macrophage migration experiments
+### Macrophage migration experiments
 
 ML2-SA1 effects on macrophage migration were assessed by a modified Boyden chamber setup (Figure 6—figure supplement 2). In the modified Boyden chamber setup, BMDMΦ were plated onto poly-L-lysine coated cover slips in a twenty-four well plate (lower compartment) in the presence or absence of 1 µg/ml LPS for 6 hr. After 6 hr, media was replaced with media containing 10 or 30 µM ML2-SA1 or DMSO. 1 × 105 BMDMΦ were placed on top of the transwell chamber (Corning) in media without any compound. Transwell chambers were placed into the twenty-four well plate and incubated for 3 hr at 37°C in 5% CO2 atmosphere. In the classical Boyden chamber approach a twenty-four well plate was filled with media containing either DMSO, 1 µg/ml LPS and DMSO, 1 µg/ml LPS and 30 µM ML2-SA1, or 10 ng/ml CCL2. Transwell chambers were equally prepared and incubated. Migrated cells were fixed and stained with crystal violet/methanol. The top of the transwell chamber was cleaned an images were taken. Cell covered area was determined with ImageJ (NIH, Bethesda, MD).

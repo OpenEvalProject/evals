@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01ckdn478 Department of Psychological and Brain Sciences, University of Louisville Louisville United States
-2. https://ror.org/00rs6vg23 College of Optometry, The Ohio State University Columbus United States
+1. Department of Psychological and Brain Sciences, University of Louisville Louisville United States ([ROR:01ckdn478](https://ror.org/01ckdn478))
+2. College of Optometry, The Ohio State University Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
 
 † Corresponding author
 
@@ -38,13 +38,13 @@ We have premised the allocentric hypothesis on the ground-based spatial coding s
 
 ## Results
 
-## Experiment 1: testing allocentric vs. egocentric hypothesis
+### Experiment 1: testing allocentric vs. egocentric hypothesis
 
 We first verified the prediction of the allocentric hypothesis (Figure 2) by testing a baseline-stationary condition (Figure 3a) and a walking condition (Figure 3b). In both conditions, the observer readied for the experiment by sitting on a chair in the waiting area, which was illuminated by a dimly lit LED light from the ceiling. To ready for a test trial, he/she waited for an audio tone. Upon hearing the tone, he/she stood up and aligned his/her feet at the start point (home base) that faced a black curtain in the direction of the testing area. About 30 s later, the experimenter turned off the LED light in the waiting area and the observer drew the curtain open in the dark to begin the trial.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88095/elife-88095-fig3-v1.jpg)
 
-**Figure 3.:** (a) Baseline-stationary condition: The observer stood at the home base (illustrated as blue cross) and judged the location of a briefly presented dimly lit target. (b) Walking condition: The observer walked blindly from the home base (illustrated as blue cross) for 1.5 m to the new location (illustrated as red cross). After a short delay (12 or 60 s), the dimly lit target was presented for him/her to judge the location. (c) Graph plotting the average (n = 8) judged target locations from Experiment 1. The black plus symbols, here and in other graphs, represent the physical target locations. The filled and open green triangle symbols represent the results for the 12 and 60 s waiting periods, respectively, in the walking condition. The red circle symbols represent the baseline-stationary condition. With the 12-s waiting period, judged locations (filled green triangles) in the walking condition were significantly nearer than in the baseline-stationary (filled red circles) condition. With the 60-s waiting period, judged locations (open triangles) had a much smaller separation from the baseline-stationary condition. The blue and gray curves with the same shape are the intrinsic bias fitted to the data by eye. Their horizontal shift is about 1.35 m. The black circle on the vertical axis represents the average eye height of the observers. (d) Graph plotting the average (n = 8) judged target locations from Experiment 2. The green triangle and red circle symbols represent results from the divided-attention-walking and baseline-stationary conditions, respectively. Judged locations from both conditions were similar and are fitted by the same intrinsic bias curve. Error bars represent the standard errors of the mean. (e and f) Average judged angular declination as a function of the physical angular declination. The error bars represent the standard errors of the means among observers (n = 8).Figure 3—source data 1.
+**Figure 3.:** (a) Baseline-stationary condition: The observer stood at the home base (illustrated as blue cross) and judged the location of a briefly presented dimly lit target. (b) Walking condition: The observer walked blindly from the home base (illustrated as blue cross) for 1.5 m to the new location (illustrated as red cross). After a short delay (12 or 60 s), the dimly lit target was presented for him/her to judge the location. (c) Graph plotting the average (n = 8) judged target locations from Experiment 1. The black plus symbols, here and in other graphs, represent the physical target locations. The filled and open green triangle symbols represent the results for the 12 and 60 s waiting periods, respectively, in the walking condition. The red circle symbols represent the baseline-stationary condition. With the 12-s waiting period, judged locations (filled green triangles) in the walking condition were significantly nearer than in the baseline-stationary (filled red circles) condition. With the 60-s waiting period, judged locations (open triangles) had a much smaller separation from the baseline-stationary condition. The blue and gray curves with the same shape are the intrinsic bias fitted to the data by eye. Their horizontal shift is about 1.35 m. The black circle on the vertical axis represents the average eye height of the observers. (d) Graph plotting the average (n = 8) judged target locations from Experiment 2. The green triangle and red circle symbols represent results from the divided-attention-walking and baseline-stationary conditions, respectively. Judged locations from both conditions were similar and are fitted by the same intrinsic bias curve. Error bars represent the standard errors of the mean. (e and f) Average judged angular declination as a function of the physical angular declination. The error bars represent the standard errors of the means among observers (n = 8).
 
 In the baseline-stationary condition, after further waiting at the home base (blue cross) for either 12 or 60 s, the observer saw a briefly presented (1 s) dimly lit target. He/she was instructed to judge the target location and to respond by walking blindly to the remembered target location and gesturing its height after reaching the walked destination (Thomson, 1983; Loomis et al., 1996; Ooi et al., 2001; Ooi et al., 2006). (While walking, the observer’s right hand glided along a horizontal guidance rope, drawn as the yellow line in Figure 3a.) Effectively, this blind walking-gesturing task reveals the perceived target location (x: walked distance; y: gestured height).
 
@@ -54,19 +54,19 @@ Figure 3c shows the average results of the two conditions. With the 12 s waiting
 
 The results above demonstrate the action of the path-integration mechanism. It tracks the observer’s location with respect to the external world during locomotion and plays a critical role in maintaining an allocentric reference frame. In the walking condition, the path-integration mechanism computes the traveled distance relative to the home base. Experiments 2–4 explored the characteristics of the path-integration mechanism.
 
-## Experiment 2: path integration affected by cognitive load
+### Experiment 2: path integration affected by cognitive load
 
 Since in the walking condition (Figure 3b), observers were simply attentive to the task at hand but otherwise neutral and not subjected to excessive cognitive demands, one might assume that the path-integration mechanism operates automatically. To test this assumption, we investigated whether the path-integration mechanism requires some attentional resources to function normally (Amorim et al., 1997; Cavanagh et al., 2010). We thus tested a new, divided attention walking condition, where the observer continuously performed a cognitive task, counting number backward, while walking from the home base to the new location. We predicted this would reduce the attention resources available for path integration. For comparison, we also tested the baseline-stationary condition as in Experiment 1 (Figure 3a).
 
 The average results in Figure 3d reveal a small, though significant, difference between the divided attention walking condition and the baseline-stationary conditions (p = 0.022). Noticeably, the distance underestimation in the divided attention walking condition (Figure 3d) was much smaller than that found in Experiment 1 (Figure 3c). This suggests path integration is less effective when observers were engaged in another mental task that distracted their spatial attention. Figure 3f plots the average judged angular declination as a function of physical angular declination for both conditions. The regression lines from the two conditions are similar.
 
-## Experiment 3: path integration from vestibular input
+### Experiment 3: path integration from vestibular input
 
 We addressed two issues regarding the idiothetic distance cues used by the path-integration mechanism. First, does it operate only when the observer’s movement is self-initiated? Second, does it operate when observer moves in the backward direction? To answer these questions, we moved the observers passively to stimulate their vestibular system (Mittelstaedt and Mittelstaedt, 2001; Israël and Berthoz, 1989; Siegle et al., 2009). That is, instead of instructing the observer to walk in the dark from the home base, he/she stood upright on a rolling-platform that was moved by the experimenter (insets in Figure 4). Doing so negated the contributions of the proprioception and motor efference copy information to path-integration while keeping the vestibular information intact.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88095/elife-88095-fig4-v1.jpg)
 
-**Figure 4.:** a, b) and Experiment 4 (e).(a) Vestibular-forward condition: The blue square and green triangle symbols represent the vestibular-forward and walking conditions, respectively, and they show that judged target locations were similar (n = 8). These judged target locations were nearer than those from the baseline-stationary condition (red circles). (b) Vestibular-backward condition: Backward translation caused judged target locations (blue squares) to be farther than those from the baseline-stationary condition (red circles) (n = 8). (c and d) Average judged angular declination as a function of the physical angular declination. (e) Experiment 4. Verbally reported results of vestibular-forward condition show shorter reported eye-to-target distances (blue squares) than in the baseline-stationary (red disc) condition (n = 8). Error bars represent standard errors of the mean (n=8).Figure 4—source data 1.
+**Figure 4.:** (a) Vestibular-forward condition: The blue square and green triangle symbols represent the vestibular-forward and walking conditions, respectively, and they show that judged target locations were similar (n = 8). These judged target locations were nearer than those from the baseline-stationary condition (red circles). (b) Vestibular-backward condition: Backward translation caused judged target locations (blue squares) to be farther than those from the baseline-stationary condition (red circles) (n = 8). (c and d) Average judged angular declination as a function of the physical angular declination. (e) Experiment 4. Verbally reported results of vestibular-forward condition show shorter reported eye-to-target distances (blue squares) than in the baseline-stationary (red disc) condition (n = 8). Error bars represent standard errors of the mean (n=8).
 
 We first tested a new vestibular-forward condition in which the experimenter pushed the observer on the platform forward by 1.5 m to the new location. Once at the new location, the observer stepped down from the platform and stood on the floor to wait for the dimly lit test target to be presented. He/she responded with the blind walking-gesturing task. For comparison, we also tested the walking (Figure 3b) and baseline-stationary (Figure 3a) conditions as in Experiment 1. Figure 4a reveals the judged target locations in the vestibular-forward condition (blue squares) were similar to the walking condition (green triangles; p = 0.718), and were significantly nearer than the baseline-stationary condition (red circles; p < 0.0001). This indicates the path-integration mechanism can function during passive movements that stimulate the vestibular system.
 
@@ -74,17 +74,17 @@ To answer the second question, we then tested a complementary condition wherein 
 
 Figure 4c and d plot the average judged angular declination as a function of physical angular declination. The judged angular declinations are similar for targets with smaller angular declinations that were located farther from the observers. However, for nearer targets, the judged angular declination for the forward and backward conditions had a small difference with respect to the baseline-stationary condition. A similar pattern is also found in Figure 4e. Further research, beyond the scope of this paper, is required to investigate this observation.
 
-## Experiment 4: the allocentric principle is not task specific
+### Experiment 4: the allocentric principle is not task specific
 
 Previous studies of space perception with stationary observers not undergoing self-motion measured with different response tasks have shown a concordance in finding. Specifically, the perceptual effects found were similar between an action-based task (blind walking-gesturing) and a perception-based task (e.g., verbal reports and perceptual matching) (Sinai et al., 1998; Ooi et al., 2001; Wu et al., 2004; Zhou et al., 2013). To confirm that this is also true for observers undergoing self-motion, we repeated the vestibular-forward and the baseline-stationary conditions in Experiment 3 and employed the verbal report task, wherein the observer verbally reported the perceived eye-to-target distances in feet or meters. We found that verbally reported distances were significantly shorter in the vestibular-forward than the baseline-stationary condition (p < 0.0001, Figure 4e). Thus, both the verbal report (Figure 4e) and blind walking-gesturing (Figure 4a) tasks show that forward moving in the dark before seeing the dimly lit target can affect judged target distance.
 
-## Experiment 5: horizontal/vertical asymmetry in path integration – a bias for the ground surface
+### Experiment 5: horizontal/vertical asymmetry in path integration – a bias for the ground surface
 
 An assumption underlying the allocentric hypothesis is that adoption of the ground-based spatial coding scheme is fitting for our terrestrial existence, where everyday activities, including navigation, are performed with respect to the horizontal ground surface (Gibson, 1950). This dependence on the ground surface, that is, an ecological constraint, predicts when the observer travels on a sloping surface in the dark, the visual system would not be able to simultaneously maintain the intrinsic bias at the home base in the vertical and horizontal directions. To investigate this prediction of asymmetric path integration, we tested a new, stepladder condition, where the observer descended a stepladder in the dark (Figure 5a). As the self-motion here consisted of both horizontal forward and vertical downward vectors, we predicted the intrinsic bias would be spatially updated in the horizontal but not in the vertical direction. This prediction is illustrated in Figure 5a where the horizontal coordinate of the intrinsic bias (blue curve) remains at the home base location on the floor while the vertical coordinate travels along with the observer. Thus, upon stepping down from the stepladder and standing on the floor, the observer underestimates the horizontal distance of a dimly lit target. We expected that the target underestimation would be similar to that of a horizontal-walking condition (Figure 5b). In contrast, if the intrinsic bias is spatially updated in both the horizontal and vertical dimensions, the intrinsic bias would remain at the top of the staircase (orange curve, Figure 5a). The perceived target location would then be dramatically different from the predicted horizontal-only-updating strategy (Figure 5b).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88095/elife-88095-fig5-v1.jpg)
 
-**Figure 5.:** (a) Stepladder condition where the observer descends from the stepladder in the dark. If the path-integration process only gauges the horizontally traveled distance, the intrinsic bias would be path integrated in the horizontal but not vertical direction. As such, the horizontal coordinate of the intrinsic bias (blue curve) is kept at the home base location on the floor while the vertical coordinate travels along with the observer. Thus, upon stepping down from the stepladder and standing on the floor, the observer underestimates the horizontal distance of the target. The target underestimation would be similar to that of the horizontal-walking condition depicted in b. In contrast, if the path-integration process integrates distance in both the horizontal and vertical directions, the intrinsic bias will remain at the top of the staircase (orange curve). The perceived target location will then be dramatically different from that in the horizontal-walking condition. (b) Horizontal-walking condition. (c) The average results of the baseline-stationary, horizontal-walking, and stepladder conditions, respectively, represented by the red circle, green square, and blue triangle symbols (n = 9). The judged horizontal distances are significantly shorter in the horizontal-walking condition than in the baseline-stationary conditions. The two sets of data points are fitted by the same intrinsic bias profile with a horizontal separation of 1.0 m, which is close to the walked distance (1.06 m) from the home base to the new location in the horizontal-walking condition. Of significance, the judged locations in the stepladder condition (blue triangles) are similar to that in the horizontal-walking condition (green squares). This confirms that the path-integration process mainly gauges the horizontal (ground) distance traveled. (d) Average judged angular declination as a function of the physical angular declination. Error bars represent standard errors of the mean (n=9).Figure 5—source data 1.
+**Figure 5.:** (a) Stepladder condition where the observer descends from the stepladder in the dark. If the path-integration process only gauges the horizontally traveled distance, the intrinsic bias would be path integrated in the horizontal but not vertical direction. As such, the horizontal coordinate of the intrinsic bias (blue curve) is kept at the home base location on the floor while the vertical coordinate travels along with the observer. Thus, upon stepping down from the stepladder and standing on the floor, the observer underestimates the horizontal distance of the target. The target underestimation would be similar to that of the horizontal-walking condition depicted in b. In contrast, if the path-integration process integrates distance in both the horizontal and vertical directions, the intrinsic bias will remain at the top of the staircase (orange curve). The perceived target location will then be dramatically different from that in the horizontal-walking condition. (b) Horizontal-walking condition. (c) The average results of the baseline-stationary, horizontal-walking, and stepladder conditions, respectively, represented by the red circle, green square, and blue triangle symbols (n = 9). The judged horizontal distances are significantly shorter in the horizontal-walking condition than in the baseline-stationary conditions. The two sets of data points are fitted by the same intrinsic bias profile with a horizontal separation of 1.0 m, which is close to the walked distance (1.06 m) from the home base to the new location in the horizontal-walking condition. Of significance, the judged locations in the stepladder condition (blue triangles) are similar to that in the horizontal-walking condition (green squares). This confirms that the path-integration process mainly gauges the horizontal (ground) distance traveled. (d) Average judged angular declination as a function of the physical angular declination. Error bars represent standard errors of the mean (n=9).
 
 Figure 5c depicts the average judged target locations (n = 9) from the stepladder (blue triangles), horizontal-walking (green square) and baseline-stationary (red circles) conditions (the baseline-stationary condition’s setup was the same as in Figure 3a). A comparison between the horizontal-walking and the baseline-stationary conditions reveals the judged horizontal distances were significantly shorter in the horizontal-walking condition (p < 0.001). The two sets of data are fitted by the same intrinsic bias profile with a horizontal separation of 1.0 m, which is close to the walked distance (1.06 m) in the horizontal-walking condition.
 
@@ -92,77 +92,77 @@ The judged horizontal distances in the stepladder condition were significantly s
 
 Taken together, our experiment revealed when stepping down from a stepladder, the horizontal coordinate of the intrinsic bias is kept at the home base on the floor while the vertical coordinate moves downward with the body. This suggests human’s path-integration mechanism, responsible for allocentric spatial coding, operates much more efficiently along the horizontal ground plane than in the vertical direction.
 
-## Statistical analysis of data
+### Statistical analysis of data
 
-## Experiment 1 (Figure 3c)
+#### Experiment 1 (Figure 3c)
 
-## Baseline-stationary condition vs. walking condition with a 12-s waiting period
+##### Baseline-stationary condition vs. walking condition with a 12-s waiting period
 
 We applied two-way analysis of variance (ANOVA) with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Baseline-stationary condition vs. walking condition with a 60-s waiting period
+##### Baseline-stationary condition vs. walking condition with a 60-s waiting period
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Experiment 2 (Figure 3d)
+### Experiment 2 (Figure 3d)
 
-## Baseline-stationary condition vs. divided attention walking condition
-
-We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
-
-## Experiment 3 (Figure 4)
-
-## Vestibular-forward condition vs. walking condition (Figure 4a)
+#### Baseline-stationary condition vs. divided attention walking condition
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Vestibular-forward condition vs. baseline-stationary condition (Figure 4a)
+### Experiment 3 (Figure 4)
+
+#### Vestibular-forward condition vs. walking condition (Figure 4a)
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Baseline-stationary condition vs. walking condition (Figure 4a)
+#### Vestibular-forward condition vs. baseline-stationary condition (Figure 4a)
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Vestibular-backward condition vs. baseline-stationary condition (Figure 4b)
+#### Baseline-stationary condition vs. walking condition (Figure 4a)
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Experiment 4 (Figure 4e)
+#### Vestibular-backward condition vs. baseline-stationary condition (Figure 4b)
 
-## Vestibular-forward condition vs. baseline-stationary condition (verbal reports of eye-to-target distances)
+We applied two-way ANOVA with repeated measures (2 test conditions × 6 horizontal distances) to the walked horizontal distance data. The analysis reveals:
+
+### Experiment 4 (Figure 4e)
+
+#### Vestibular-forward condition vs. baseline-stationary condition (verbal reports of eye-to-target distances)
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 horizontal distances) to the verbally reported distance data. The analysis reveals:
 
-## Experiment 5 (Figure 5c)
+### Experiment 5 (Figure 5c)
 
-## Baseline-stationary condition vs. stepladder condition
+#### Baseline-stationary condition vs. stepladder condition
 
-## Horizontal distances
+##### Horizontal distances
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Heights
+##### Heights
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 heights) to the judged height data. The analysis reveals:
 
-## Baseline-stationary condition vs. horizontal-walking condition
+### Baseline-stationary condition vs. horizontal-walking condition
 
-## Horizontal distances
+#### Horizontal distances
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Heights
+#### Heights
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 heights) to the judged height data. The analysis reveals:
 
-## Stepladder condition vs. horizontal-walking condition
+### Stepladder condition vs. horizontal-walking condition
 
-## Horizontal distances
+#### Horizontal distances
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 horizontal distances) to the walked horizontal distance data. The analysis reveals:
 
-## Heights
+#### Heights
 
 We applied two-way ANOVA with repeated measures (2 test conditions × 5 heights) to the judged height data. The analysis reveals:
 
@@ -184,78 +184,78 @@ Following this line of thinking, we further speculate that the intrinsic bias th
 
 ## Materials and methods
 
-## Observers
+### Observers
 
 Fourteen observers (age = 24.47 ± 1.45 years old; eye height = 1.60 ± 0.02 m; 7 males and 7 females) participated in Experiments 1–4 with eight observers for each experiment. Nine observers (age = 22.78 ± 1.22 years old; eye height = 1.58 ± 0.04 cm; 6 males and 3 males) participated in Experiment 5. They were naïve to the purpose of the study. All observers had normal, or corrected-to-normal, visual acuity (at least 20/20) and a stereoscopic resolution of 20 arc sec or better. They viewed the visual scene binocularly. A within-subject experimental design was used. The study protocol was approved by The University of Louisville Institutional Review Board (approved IRB number 94.0302) and followed the tenets of the Declaration of Helsinki. All subjects signed the informed consent form approved by the IRB at the start of the study.
 
-## General stimulus and testing environment
+### General stimulus and testing environment
 
 All Experiments 1–4 were performed in a dark room whose layout and dimensions were unknown to the observers. One end of the room, just before the testing area, served as the waiting area (~3 m2) for the observer. The waiting area had a chair facing the wall for the observer to sit in between trials so that his/her back faced the testing area. Two white LED lights on the ceiling provided ambient illumination while the observer waited in between trials. The testing and waiting areas were separated by a black curtain. A long guidance rope (0.8 m above the floor) was tied to both ends of the room and served to guide the observer while walking blindly. A plastic wrap was tied to the guidance rope on the part of the rope located in the waiting area near the curtain to mark the start point (home base). To ready for a trial, the observer walked to this start point and faced the test area while holding onto the plastic wrap on the rope and called out ‘ready’. The curtain was then drawn open for the trial to begin.
 
 The dimly lit test target used in all experiments was a diffused green LED (0.16 cd m−2). The LED was placed in the center of a ping-pong ball that was encased in a small opaque box. An adjustable iris-diaphragm aperture was placed at the front of the ping-pong ball to keep its visual angular size constant at 0.22° when measured at the eye level. During testing, the target was displayed with a 5-Hz flicker for 1 s. Music was played aloud during the entire experimental session to mask extraneous auditory information during the experiments.
 
-## Observer’s response tasks
+### Observer’s response tasks
 
 The main task used in all experiments was the blind walking-gesturing task (Ooi et al., 2001; Ooi et al., 2006). For each trial, the observer stood by the guidance rope in the dark and judged the location of the 1-s flickering target. After which he/she then put on the blindfold and called out ‘ready to walk’. This signaled the experimenter to quickly remove the target and shook the guidance rope to indicate it was safe to walk. The observer walked while sliding his/her right hand along the guidance rope until he/she reached the remembered target location. Once there, he/she indicated the remembered target height with his/her left hand and called out ‘done’. The experimenter turned on the flashlight, marked the observer’s feet location, measured the gestured height, and asked the observer to turn around and walk back to the start point using the guidance rope. When the observer arrived at the start point, the experimenter turned on the ceiling LED lights in the waiting area. The observer then removed the blindfold, sat down, and waited for the next trial.
 
 An additional task used, in Experiment 4, was the verbal reporting task (Ooi et al., 2001; Zhou et al., 2013). Here, the observer stood next to the guidance rope in the dark and viewed the target for 5 s to judge its absolute distance between the target and his/her eyes. Once the target was turned off, an audio tone was presented to signal the observer to immediately report the estimated distance either in meters or feet. For both this and the blind walking-gesturing task, the observer was provided five practice trials before each test session. No feedback regarding performance was provided to the observer during the practice or test session.
 
-## Experiment 1
+### Experiment 1
 
-## Design
+#### Design
 
 Two viewing conditions were tested: walking and baseline-stationary. Each condition was tested separately with a 12- and 60-s waiting period. The target was placed at one of six locations in both conditions. Four locations were on the floor at 3, 4.25, 5.25, or 6.5 m from the observer, the fifth location was 0.5 m above the floor at 6.5 m from the observer, and the sixth location was at the observer’s eye level and 6.5 m from the observer. Testing of the 4.25, 5.25, and 6.5 m targets on the floor were repeated three times while testing of the remaining targets was repeated twice. A total of 60 trials were run over 2 days. The order of stimulus presentation was randomized.
 
-## Procedure
+#### Procedure
 
 While the observer sat at the waiting area before each trial, he/she was informed of the upcoming test condition (baseline-stationary or walking) and of the waiting period (12 or 60 s). After that, an audio tone was presented to signal to the observer to walk to the start point (home base) and face the black curtain in the direction of the testing area. About 30 s later, the experimenter turned off the ambient LED lights in the waiting area and the observer drew the curtain open in the dark.
 
 For the baseline-stationary condition, the observer stood in the dark at the start point (home base) over the predetermined waiting duration (12 or 60 s). He/she was instructed to stand upright with minimal head motion during the waiting period, and to expect hearing a pure tone at the end of the waiting period. Roughly, 2 s after hearing the tone, the test target was presented at one of the six predetermined locations. The observer’s task was to judge its location and perform the blind walking-gesturing task. For the walking trial, the observer stood at the start point until a white noise (instead of pure tone) was heard. He/she then walked forward until his/her right hand touched a plastic wrap tied on the guidance rope at the new location (1.5 m from the start point). He/she then stopped walking, called out ‘ready’ and waited there for either 12 or 60 s before the test target was presented. The remaining procedural steps were the same as in the baseline-stationary condition.
 
-## Experiment 2
+### Experiment 2
 
-## Design and procedure
+#### Design and procedure
 
 Both the baseline-stationary and walking conditions with the 12-s waiting period were tested but with one modification. The modification was that during the 12-s waiting period at the start point (home base) (for baseline-stationary condition), or while walking to, and waiting at the new location (for walking condition), the observer performed a counting task. The experimenter would provide a random number between 50 and 99 for the observer to count backward. The same six target locations tested in Experiment 1 were tested here. A total of 30 trials were run. The order of stimulus presentation was randomized.
 
-## Experiment 3
+### Experiment 3
 
-## Vestibular-forward condition
+#### Vestibular-forward condition
 
-## Design
+##### Design
 
 The two conditions from Experiment 1 (walking and baseline-stationary conditions with the 12-s waiting period) and a new, vestibular-forward condition were tested. The latter vestibular-forward condition was the same as in the walking condition, except that the observer now stood on a rolling-platform that was pushed forward by the experimenter for 1.5 m. The rolling-platform had four wheels that was 0.30 m above the floor. The same six target locations tested in Experiment 1 were tested here. There were 60 trials in total with 30 trials tested per day. The order of stimulus presentation was randomized.
 
-## Procedure
+##### Procedure
 
 Two experimenters (A and B) conducted the experiment. Before each trial, Experimenter A instructed the observer of the upcoming test condition and to prepare for an audio signal. Once the signal was heard, the observer stepped onto the rolling-platform at the start point (home base) behind the curtain with eyes opened and facing the test area. He/she then called out ‘ready’. A second audio signal was presented after 30 s. A pure tone indicated to the observer to stay (baseline-stationary condition), while a white noise indicated to walk (walking condition) or to be pushed forward (vestibular-forward condition). At the same time, Experimenter A turned off the LED lights in the waiting area, and the observer drew the curtain open. For the baseline-stationary condition trial, the observer stepped down from the rolling-platform, stood at the start point, and called out ‘ready to view’. For the walking condition trial, the observer stepped down from the rolling-platform, and walked forward until he/she touched the plastic wrap tied onto the guidance rope at the new location (1.5 m), and then stopped and called out ‘ready to view’. For the vestibular-forward condition trial, the observer kept standing on the rolling-platform. Experimenter B verbally informed the observer the trial was starting and pushed the rolling-platform forward by 1.5 m to the new location. Upon arrival, Experiment B instructed the observer to step down from the rolling-platform and to call out ‘ready to view’. For all three trial types, after the observer called out ‘ready to view’, Experimenter A turned on the test target after a 12-s waiting period for the observer to judge its location. He/she then responded by performing the blind walking-gesturing task.
 
-## Vestibular-backward condition
+### Vestibular-backward condition
 
-## Design and procedure
+#### Design and procedure
 
 The baseline-stationary condition was the same as in Vestibular-forward condition. The vestibular-backward condition was modified from the vestibular-forward in Vestibular-forward condition, by pulling the rolling-platform backward for 1.5 m. The same six target locations as in Vestibular-forward condition were tested. A total of 30 trials were tested in one session. The order of stimulus presentation was randomized.
 
-## Experiment 4
+### Experiment 4
 
-## Design
+#### Design
 
 The two conditions tested were the vestibular-forward and baseline-stationary conditions as in Vestibular-forward condition. But instead of the six test target locations, only five target locations on the floor were tested. The target location at 6.5 m distance and 0.5 m above the ground was not tested. All targets were presented for 5 s. Twenty-eight trials in total were tested in one session. The order of stimulus presentation was randomized.
 
-## Procedure
+#### Procedure
 
 The procedure was the same as in Vestibular-forward condition, except the observers performed the verbal report task. To do so, the observer judged the absolute distance between the target and his/her eyes. Immediately after the target was turned off, an audio signal was presented to prompt the observer to report the estimated distance aloud either in meters or feet.
 
-## Experiment 5
+### Experiment 5
 
-## Design
+#### Design
 
 Three conditions (baseline-stationary, horizontal-walking, and stepladder) were tested in two different blocks. The horizontal-walking and baseline-stationary conditions were mixed in test block-A, while the stepladder and baseline-stationary conditions in test block-B. Each block consisted of 20 test trials. The order of test conditions within each block was randomized. Each block was tested in a daily session and ran twice. The testing order of the four blocks was alternated between observers.
 
-## Procedure
+#### Procedure
 
 Before each trial, the experimenter informed the observer of the condition to be tested. The baseline-stationary and horizontal-walking conditions were conducted as in the main experiment (Experiment 1). For the stepladder condition, the observer first ascended the stepladder, and waited for an audio tone that signaled to descend the stepladder with eyes opened and looking at the invisible horizon (in the dark). Upon reaching the foot of the stepladder, he/she held onto the guidance rope and walked forward until he/she felt the plastic wrap on the rope at the new location. The observer then stood still and waited for 12 s before the test target was presented. After judging the target’s location, he/she put on the blindfold and called out ‘ready’ to begin the blindfolded walking-gesturing task.
 
-## Statistical tests
+#### Statistical tests
 
 Data were analyzed using ANOVA with repeated measures. The Mauchly’s test was applied to verify the assumption of sphericity.

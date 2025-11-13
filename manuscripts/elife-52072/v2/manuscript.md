@@ -16,7 +16,7 @@
 
 ## Abstract
 
-The Triatominae are vectors for Trypanosoma cruzi , the aetiological agent of the neglected tropical Chagas disease. Their distribution stretches across Latin America, with some species occurring outside of the Americas. In particular, the cosmopolitan vector, Triatoma rubrofasciata , has already been detected in many Asian and African countries. We applied an ensemble forecasting niche modelling approach to project the climatic suitability of 11 triatomine species under current climate conditions on a global scale. Our results revealed potential hotspots of triatomine species diversity in tropical and subtropical regions between 21°N and 24°S latitude. We also determined the climatic suitability of two temperate species ( T. infestans , T. sordida ) in Europe, western Australia and New Zealand. Triatoma rubrofasciata has been projected to find climatically suitable conditions in large parts of coastal areas throughout Latin America, Africa and Southeast Asia, emphasising the importance of an international vector surveillance program in these regions.
+The Triatominae are vectors for Trypanosoma cruzi, the aetiological agent of the neglected tropical Chagas disease. Their distribution stretches across Latin America, with some species occurring outside of the Americas. In particular, the cosmopolitan vector, Triatoma rubrofasciata, has already been detected in many Asian and African countries. We applied an ensemble forecasting niche modelling approach to project the climatic suitability of 11 triatomine species under current climate conditions on a global scale. Our results revealed potential hotspots of triatomine species diversity in tropical and subtropical regions between 21°N and 24°S latitude. We also determined the climatic suitability of two temperate species (T. infestans, T. sordida) in Europe, western Australia and New Zealand. Triatoma rubrofasciata has been projected to find climatically suitable conditions in large parts of coastal areas throughout Latin America, Africa and Southeast Asia, emphasising the importance of an international vector surveillance program in these regions.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ In the past, Chagas disease vectors have frequently experienced range expansions
 
 ## Results
 
-## Potential distribution under current climate conditions
+### Potential distribution under current climate conditions
 
 Global species distribution modelling revealed several regions with current suitable climatic conditions for the considered triatomine species. Comparing the modelled potential distribution of the species, differences in the preference of climatic conditions are evident. Rhodnius brethesi, R. ecuadoriensis and Triatoma maculata are limited to one or a few areas with mostly tropical climate. Triatoma brasiliensis, Panstrongylus geniculatus, P. megistus, R. prolixus, T. dimidiata and T. rubrofasciata find suitable climate conditions in a broad range of tropical and sub-tropical regions, while T. sordida and T. infestans possess a broad potential range in temperate regions (Figure 1).
 
@@ -42,7 +42,7 @@ The projected range of R. brethesi and R. ecuadoriensis is limited to areas with
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/52072/elife-52072-fig2-v2.jpg)
 
-**Figure 2.:** T. rubrofasciata (consensus map) and observed occurrence records outside the Americas.Hatched areas indicate regions where the projection is uncertain. Maps were built using WGS 84 as geographical system and ESRI ArcGIS (ESRI, 2018).
+**Figure 2.:** Hatched areas indicate regions where the projection is uncertain. Maps were built using WGS 84 as geographical system and ESRI ArcGIS (ESRI, 2018).
 
 The observed occurrence of the considered species is mainly consistent with the projected climatic suitability in Latin America. Nevertheless, it is noteworthy that for some species the modelled climate suitability in Central and South America exceeds the area of current occurrence. For example, T. dimidiata is not observed in large parts of Brazil, Peru and Bolivia, although a good climatic suitability has been projected (Figure 1H).
 
@@ -54,7 +54,7 @@ Potential hotspots of triatomine diversity are revealed by the species diversity
 
 The most important bioclimatic variable is the temperature seasonality (BIO4) for all considered species, closely followed by the minimum temperature of the coldest month (BIO6) and maximum temperature of the warmest month (BIO5). The three precipitation variables (BIO13, BIO14, and BIO15) seem to shape the species distribution in a subordinate way.
 
-## Model evaluation
+### Model evaluation
 
 The evaluation of the global projection of the climatic suitability shows that almost all actual occurrence points of T. rubrofasciata (with coordinates provided) are within an area classified as climatically suitable by the models (Supplementary file 1). This is particularly evident in South India, Vietnam, South China, Taiwan or the Philippines. A few occurrence points are located in areas projected as less suitable including seaports such as Singapore and the Okinawa islands in Japan. According to the models, every country in which T. rubrofasciata has been found (but without specific coordinates of occurrence records given) provides at least one area offering suitable climatic conditions, for example Indonesia, Madagascar and several African countries.
 
@@ -82,21 +82,135 @@ Through our work, the global climatic suitability for many triatomine species ha
 
 ## Materials and methods
 
-## Occurrence data
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>R Development Core Team, 2019</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ArcGIS for Desktop</td>
+      <td>ESRI, 2018</td>
+      <td>RRID:SCR_011081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomod2 package</td>
+      <td>Thuiller et al., 2019</td>
+      <td></td>
+      <td>Available at https://cran.r-project.org/package=biomod2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Occurrence data
 
 Eleven triatomine species were considered for species distribution modelling representing different biogeographical regions in Latin America. The selection was also based on their importance as Chagas disease vectors and their presence in domestic and peri-domestic environments.
 
 Occurrence data of the triatomine species were obtained from data provided by Fergnani et al., 2013. This American distribution dataset contains point data for each species with associated coordinates and was generated to study patterns on morphological diversity and species assemblages in Neotropical Triatominae (Fergnani et al., 2013). In total, 4155 unique occurrence points were provided ranging from 31 for Rhodnius ecuadoriensis to 1180 for Panstrongylus geniculatus (Table 1, Supplementary file 5). Fergnani et al., 2013 abstracted the occurrence data from distribution data from the 'Atlas of Chagas disease vectors in the Americas' (Carcavallo et al., 1998). In this atlas, the distribution of the species in the Americas is presented as detailed maps. These maps were copied and digitised at a 0.1° x 0.1° resolution and converted into a grid comprising the information of occurrence for each grid cell using an equal area Mollweide map projection. With the help of the map projection, occurrence points with coordinates were created (Fergnani et al., 2013).
 
+**Table 1.**
+ Model specifications.Occurrence points for all considered species used for modelling and model evaluation (AUC).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Occurrence records</th>
+      <th>AUC ensemble models</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Panstrongylus geniculatus</td>
+      <td>1180</td>
+      <td>0.985</td>
+    </tr>
+    <tr>
+      <td>Panstrongylus megistus</td>
+      <td>401</td>
+      <td>0.976</td>
+    </tr>
+    <tr>
+      <td>Rhodnius brethesi</td>
+      <td>85</td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <td>Rhodnius ecuadoriensis</td>
+      <td>31</td>
+      <td>0.989</td>
+    </tr>
+    <tr>
+      <td>Rhodnius prolixus</td>
+      <td>540</td>
+      <td>0.981</td>
+    </tr>
+    <tr>
+      <td>Triatoma brasiliensis</td>
+      <td>178</td>
+      <td>0.994</td>
+    </tr>
+    <tr>
+      <td>Triatoma dimidiata</td>
+      <td>300</td>
+      <td>0.962</td>
+    </tr>
+    <tr>
+      <td>Triatoma infestans</td>
+      <td>631</td>
+      <td>0.977</td>
+    </tr>
+    <tr>
+      <td>Triatoma maculata</td>
+      <td>132</td>
+      <td>0.992</td>
+    </tr>
+    <tr>
+      <td>Triatoma rubrofasciata</td>
+      <td>268</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Triatoma sordida</td>
+      <td>409</td>
+      <td>0.978</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>4155</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 In order to assess the reliability and completeness of the data obtained from Carcavallo et al., 1998 and Fergnani et al., 2013, we compared it to further occurrence datasets. The publication by Ceccarelli et al., 2018 also contains comprehensive distribution data on triatomines. However, a direct comparison of both plotted datasets showed, that the data points obtained from Ceccarelli et al., 2018 are completely covered by the data from the ‘Atlas of the Chagas disease vectors in the Americas’ (Carcavallo et al., 1998; Fergnani et al., 2013; Supplementary file 6). Furthermore, the occurrence data from the ‘Atlas of Chagas disease vectors’ (Carcavallo et al., 1998; Fergnani et al., 2013) match the time period of the climatic conditions used as predictor variables (1970–2000) and are probably less susceptible to sampling bias.
 
 Additional global occurrences of Triatoma rubrofasciata from an intensive literature search were used solely for independent global model validation and were not included in the modelling approach (Jurberg and Galvão, 2006; Eugenio and Minakawa, 2012; VAST, 2014; Dujardin et al., 2015b; Liu et al., 2017; Ceccarelli et al., 2018; Dong et al., 2018; Huang et al., 2018; GBIF.org, 2019a). This type of global validation was only feasible for T. rubrofasciata as it is the only triatomine species with known occurrences both inside and outside the Americas. For the data collection, the search engine ‘Google scholar’ and ‘Web of Knowledge’ were searched for the keywords ‘Triatoma rubrofasciata occurrence’, ‘Triatoma rubrofasciata distribution’ and ‘Triatoma rubrofasciata records’ considering only data points from outside the Americas. Records in English language, with included coordinates, and from all temporal periods were taken into account.
 
-## Climate data
+### Climate data
 
 It is well described that temperature and relative humidity have a strong impact on the development and distribution of Triatominae favouring mild temperatures and median to high humidity (Guarneri et al., 2003; Lazzari, 1991; Luz et al., 1998; Catalá et al., 2017). Therefore, we proceeded on the assumption that the distribution of the Triatominae is mainly climatically controlled. Bioclimatic variables provided by WorldClim comprising data on temperature and precipitation patterns were used as environmental variables (Fick and Hijmans, 2017). Nineteen different variables are available referring to the climate conditions empirically recorded over a period of 30 years from 1970 to 2000. We chose a subset of six variables to train the models. Studies have indicated that a major limiting factor of triatomine distribution is the minimum temperature of the coldest month (de la Vega et al., 2015). However, this seems to be species-specific, since temperature seasonality has also often been identified as an important determinant (Pereira et al., 2013; Ceccarelli et al., 2015). Hence, temperature seasonality (BIO4), maximum temperature of the warmest month (BIO5) and minimum temperature of the coldest month (BIO6) were chosen as explanatory variables for temperature. The precipitation and also the relative humidity play a decisive part in the distribution, but also the spatial delimitation of different triatomine species (Gurgel-Gonçalves et al., 2011; Ibarra-Cerdeña et al., 2014). Therefore, as explanatory variables for precipitation, we considered precipitation of the wettest month (BIO13), precipitation of the driest month (BIO14) and precipitation seasonality (BIO15). In order to avoid collinearity between the environmental variables, the Pearson correlation coefficient was computed (Pearson < 0.8) using the function cor of R’s stats package (R Development Core Team, 2013).
 
-## Species distribution modelling
+### Species distribution modelling
 
 The modelling of the habitat suitability was performed with an ensemble forecasting approach incorporating six different algorithms. Modelling was executed in the R environment (R Development Core Team, 2019) using the biomod2 package (Thuiller et al., 2019) (Source code 1). The algorithms were selected based on their modelling performance and advantages and included ANN – artificial neuronal networks, GAM – generalized additive models, GBM – generalized boosted models, GLM – generalized linear models, MARS – multivariate adaptive regression splines and MAXENT – maximum entropy approach (Elith et al., 2006; Li and Wang, 2013). The models were trained solely on the South American dataset with a spatial extent of 105°W to 35°W longitude and 30°N to 45°S latitude. The discriminatory capacity of the algorithms was evaluated using the receiver operating characteristic curve (ROC). A greater area under the curve (AUC 0–1) indicates a better predictive model performance. The results were then projected on a global scale. The models were run using the following single algorithm parameters: a stepwise feature selection with quadratic terms based on the Akaike Information Criterion (AIC) was used to generate the generalised linear models (GLM); generalised boosted models (GBM) were run with a maximum of 5 000 trees to ensure fitting, a minimum number of observations in trees’ terminal nodes of 10, a learning rate of 0.01 and a interaction depth of 7; for generalised additive models (GAM) a binomial distribution and logit link function was applied and the initial degrees of smoothing was set to 4; the minimum interaction degree of the multivariate adaptive regression splines (MARS) was set to two with the number of terms to retain in the final model set to 17; artificial neuronal networks (ANN) were produced with fivefold cross-validation resulting in eight units in the hidden layer and a weight decay of 0.001; for the maximum entropy approach (MAXENT) we used linear, quadratic and product features and deactivated threshold and hinge features, while the number of iterations was increased to 10 000 to ensure convergence of the algorithm.
 
@@ -110,6 +224,6 @@ In order to convert the continuous climatic suitability maps into binary presenc
 
 All maps were created with ESRI ArcGIS (ESRI, 2018).
 
-## Model evaluation for Triatoma rubrofasciata
+### Model evaluation for Triatoma rubrofasciata
 
 The evaluation of the global projection of climate suitability was performed with occurrence data of T. rubrofasciata, the only member of the Triatoma genus distributed in the Old and New World (Dujardin et al., 2015b). The global projection was compared to occurrence data of T. rubrofasciata outside of South America. Occurrence references with two levels of accuracy were taken into account; records with exact coordinates and records on country level. Occurrence points in areas with uncertain prediction have not been considered. Consistency of the global modelled climate suitability conditions and the actual occurrence of the species were compared and the resulting model performance was assessed.

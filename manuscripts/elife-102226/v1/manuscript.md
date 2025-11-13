@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03taz7m60 Department of Biological Sciences, University of Southern California Los Angeles United States
+1. Department of Biological Sciences, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 
 † Corresponding author
 
@@ -27,9 +27,21 @@ Here, we discovered that SIMR-1, the founding component of the germline SIMR foc
 
 ## Results
 
-## SIMR-1 and ENRI-2 localize to cytoplasmic granules during embryogenesis
+### SIMR-1 and ENRI-2 localize to cytoplasmic granules during embryogenesis
 
 In previous work, we sought to identify proteins that associate with SIMR-1 and ultimately found that SIMR-1 associates with HRDE-2 and the nuclear Argonaute protein, HRDE-1, to promote correct HRDE-1 small RNA binding in germ cells (Chen and Phillips, 2024a). In that work, we also identified another nuclear Argonaute protein, NRDE-3, as an interactor of SIMR-1. NRDE-3 has been shown previously to bind ERGO-dependent 22G-RNAs and silence ERGO-target genes in somatic cells (Figure 1—figure supplement 1 A-B). To delve further into this potential interaction between SIMR-1 and NRDE-3, we first systematically compiled a list of protein interactions identified from previous studies for both SIMR-1 and NRDE-3 (Figure 1A). Interestingly, the HRDE-2 paralog, ENRI-2, had been shown to interact with both SIMR-1 and NRDE-3 in embryos by immunoprecipitation (IP) followed by mass spectrometry (mass-spec), and another HRDE-2 paralog, ENRI-1, was similarly shown to interact with only NRDE-3 (Lewis et al., 2020). These findings suggest that SIMR-1, NRDE-3, ENRI-2, and possibly ENRI-1 proteins may function together in the somatic nuclear RNAi pathway, analogous to the roles of SIMR-1, HRDE-1, and HRDE-2 in the germline nuclear RNAi pathway.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig1-v1.jpg)
+
+**Figure 1.:** (A) Summary of IP-mass spectrometry interactions detected between NRDE-3, ENRI-2, ENRI-1, and SIMR-1 from previously published studies (Chen and Phillips, 2024a; Lewis et al., 2020). The number of replicates from which the interaction was detected relative to the total number of replicates performed is indicated. (B) Live imaging of GFP::3xFLAG::NRDE-3 and SIMR-1::mCherry::2xHA; ENRI-2::2xTy1::GFP embryos at different stages (4 cell, 8 cell, 28 cell, 100 cell, 200 cell, and comma). Boxes identify the location of Z2 and Z3 primordial germ cells, showing that SIMR-1 is present in germ granules while ENRI-2 is not. At least five individual embryos were imaged for each genotype and stage. Scale bars, 5 μm. (C) Box plot of SIMR-1::mCherry::2xHA granule number quantification at different embryonic stages (4 cell, 8 cell, 28 cell, 100 cell, and 200 cell). At least ten individual embryos at each stage were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Lines connect the mean granule number for each stage, illustrating the change in number of SIMR granules across the developmental stages of the embryo. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons. See Materials and methods for a detailed description of quantification methods.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Illustration of NRDE-3 and CSR-1 pathways in C. elegans. In the NRDE-3 pathway, primary ERGO-class 26G-RNAs are synthesized by the ERI complex, including ERI-1. The primary Argonaute protein, ERGO-1, is loaded with the ERGO-class 26G-RNAs. The secondary ERGO-dependent 22G-RNAs, a subset of the WAGO-class 22G-RNAs, are synthesized from ERGO-1-targeted mRNAs. Their synthesis depends on the Mutator complex, which includes the RNA-dependent RNA polymerase, RRF-1, and the poly(UG) polymerase, RDE-3. They are subsequently loaded into NRDE-3 and other cytoplasmic WAGO-family Argonaute proteins to promote gene silencing. In the CSR-1 pathway, the CSR-class 22G-RNAs are synthesized by the RNA-dependent RNA polymerase, EGO-1. CSR-1 is loaded with CSR-class 22G-RNAs to promote gene licensing in the germline and clearance of maternal transcripts in early embryos. (B) A table summarizing the function of some key proteins in NRDE-3 and CSR-1 pathways.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Live imaging of the germline from SIMR-1::mCherry::2xHA; GFP::3xFLAG::NRDE-3 day-one-old adult animals. Late pachytene (left) and oocyte (right) regions are shown, revealing that SIMR-1 and NRDE-3 do not colocalize in the germline. At least seven individual germlines were imaged. Scale bars, 5 μm. (B) Live imaging of SIMR-1(R159C)::GFP::3xFLAG embryo at 100 cell stage, showing that SIMR-1(R159C) fails to localize to cytoplasmic granules. At least five individual embryos were imaged. Scale bars, 5 μm. (C) Live imaging of 2xTy1::GFP::ENRI-1 (top two rows) and ENRI-1::mCherry::2xHA (bottom two rows) embryos at different stages (4 cell, 8 cell, 28 cell, 100 cell, 200 cell, and comma). Fluorescence and brightfield channels are shown, demonstrating that ENRI-1 does not show prominent localization in embryos. At least seven individual embryos were imaged for each genotype and stage. Scale bars, 5 μm. (D) Western blot of ENRI-1::mCherry::2xHA (left lane) and wild-type N2 (right lane) gravid adult animals (72 hr at 20 °C after L1 arrest), showing that the ENRI-1::mCherry::2xHA is expressed in this strain. Anti-HA-HRP and anti-actin antibodies were used for the western blot. Source data of the original blot is provided.
 
 Here, we first aimed to address whether and where NRDE-3, SIMR-1, ENRI-1, and ENRI-2 colocalize. NRDE-3 has previously been shown to be expressed in the nucleus of most somatic cells (Guang et al., 2008). Until recently, all characterization of NRDE-3 was done using a low-copy, integrated transgenic strain in which the nuclear localization was not visible until the ~30–80 cell stage of development, and it was presumed that this localization reflected the endogenous NRDE-3 localization (Guang et al., 2008; Lewis et al., 2020). However, a more recent study constructed an endogenously-tagged NRDE-3 strain using CRISPR and found that NRDE-3 additionally localizes to the nucleus of oocytes and early embryos (Seroussi et al., 2023; Seroussi et al., 2022). In a recent study, we addressed this discrepancy, and demonstrated that the older, transgenic NRDE-3 construct is targeted for RNAi-mediated gene silencing in germ cells and early embryos (Chen and Phillips, 2024b). SIMR-1 is a component of the SIMR foci, a sub-compartment of germ granules, that appears as punctate foci at the periphery of C. elegans germ cells starting in embryos through the adult stage (Manage et al., 2020; Uebel et al., 2021). ENRI-1 has been reported to localize to the cytoplasm of oocytes and embryos while ENRI-2 localized to both the nucleus and cytoplasm, varying depending on developmental stage (Lewis et al., 2020). With these four proteins showing distinct localization patterns from one another, it was unclear how these proteins could physically interact.
 
@@ -37,25 +49,41 @@ To investigate where and how these interactions might potentially occur, we chos
 
 We next focused on ENRI-1 and ENRI-2 and observed that ENRI-2 shows similar cytoplasmic granule localization and colocalizes with SIMR-1 in embryos, but it does not localize to the germ granules in Z2 and Z3, suggesting that the activity of ENRI-2 is restricted to somatic cells (Figure 1B). Finally, we examined the localization of N-terminal tagged 2xTy1::GFP::ENRI-1, and could not detect any specific localization in either nuclei or cytoplasmic granules (Figure 1—figure supplement 2C; Lewis et al., 2020). Consequently, we constructed a new strain with C terminal tagged ENRI-1::mCherry::2xHA and confirmed the presence of full-length ENRI-1 protein with western blot (Figure 1—figure supplement 2D). Nonetheless, we could not detect any ENRI-1 localization in embryos with our newly generated strain (Figure 1—figure supplement 2C). These results are consistent with the fact that ENRI-1 does not interact directly with either SIMR-1 or ENRI-2 by immunoprecipitation (Figure 1A; Lewis et al., 2020). Altogether, these data indicate that SIMR-1 and ENRI-2 colocalize at cytoplasmic granules in the somatic cells of embryos and suggest that ENRI-2 and SIMR-1 may function together at these sites. In contrast, NRDE-3 is spatially separated in the nucleus and no clear expression pattern was observed for ENRI-1.
 
-## Unloaded NRDE-3 associates with SIMR-1 in cytoplasmic granules
+### Unloaded NRDE-3 associates with SIMR-1 in cytoplasmic granules
 
 Next, to determine whether SIMR-1 and ENRI-2 are required for NRDE-3 localization, we introduced the simr-1 mutant, enri-2 mutant, enri-1 mutant, and enri-1; enri-2 double mutant in the endogenously tagged GFP::3xFLAG::NRDE-3 strain, and examined NRDE-3 localization across embryonic developmental stages. We observed no changes in NRDE-3 expression or nuclear localization in any of the mutants examined at any developmental stage (Figure 2—figure supplement 1A).
 
 In previous work, we demonstrated that the germline nuclear Argonaute protein HRDE-1 loses nuclear localization and associates in the cytoplasm with the SIMR compartment of germ granules when it is unable to bind small RNAs (Chen and Phillips, 2024a). Additionally, ENRI-2 interacts more strongly with NRDE-3 in an eri-1 mutant background compared to wild-type (Lewis et al., 2020), suggesting that the interaction occurs when NRDE-3 does not bind small RNAs. Localization of unloaded NRDE-3 has been examined in the seam cells of L3 stage animals, where, like HRDE-1, it loses nuclear localization and becomes restricted to the cytoplasm (Guang et al., 2008). Therefore, we next sought to examine the localization of NRDE-3 when it is unbound to small RNA in embryos and germline. First, we aimed to deplete the preferred small RNA binding partners of NRDE-3. NRDE-3 has previously been shown to bind secondary 22G-RNAs downstream of ERGO-class 26G-RNAs, dependent on ERI-1, which is required for 26G-RNA biogenesis (Guang et al., 2008; Han et al., 2009; Seroussi et al., 2023), and RDE-3/MUT-2, which is a component of the Mutator complex and necessary for 22G-RNA production (Chen et al., 2005; Phillips et al., 2012; Phillips et al., 2014; Figure 1—figure supplement 1A–B). Therefore, we introduced an eri-1 mutant and a rde-3/mut-2 mutant into the endogenously GFP-tagged NRDE-3 background. We observed that NRDE-3 associates with somatic granules with a similar spatiotemporal pattern to SIMR-1 and ENRI-2, peaking around the 100 cell stage, although the total number of granules per embryo is lower for NRDE-3 granules in the eri-1 and rde-3/mut-2 mutant backgrounds compared to SIMR granules (Figure 2A–B). Next, to fully abolish the small RNA binding capacity of NRDE-3 and to confirm that the observed granule localization was due to the loss of small RNA loading, we introduced mutations to abolish small RNA binding into the GFP-tagged NRDE-3; specifically, residues 687 H and 691 K in the Mid domain were mutated to alanine, hereafter referred to as NRDE-3(HK-AA) (Ma et al., 2005; Guang et al., 2008; Chen and Phillips, 2024a). NRDE-3(HK-AA) localizes exclusively to the cytoplasm across embryonic development, accumulating in somatic granules at 100 cell stage similar to SIMR-1 and ENRI-2 (Figure 2A). Quantification of the number of NRDE-3 granules per embryo in the NRDE-3(HK-AA) strain shows that the dynamics of NRDE-3 granule appearance and disappearance are similar to that of SIMR-1, where the number of granules increases from early embryos up until about 100 cell stage and then decreases as the embryos progress to later stages of development (Figure 2C). Overall, the total number of NRDE-3(HK-AA) granules quantified per embryo are similar to or modestly higher than SIMR-1 granules (Figures 1C and 2C). Western blot analysis reveals that overall protein level are similar for wild-type NRDE-3 and NRDE-3(HK-AA) (Figure 2—figure supplement 1B), indicating that unloaded NRDE-3 is not subject to degradation. This result contrasts with our previous results for unloaded HRDE-1 (HK-AA), which does show reduced protein expression compared to wild-type HRDE-1 (Chen and Phillips, 2024a). Together, these data indicate that NRDE-3 forms granules in the cytoplasm of somatic cells when not associated with a small RNA binding partner.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig2-v1.jpg)
+
+**Figure 2.:** (A) Live imaging of GFP::3xFLAG::NRDE-3 embryos in eri-1, rde-3, and nrde-3(HK-AA) mutants at 8 cell, 100 cell, and comma stage embryos. At least five individual embryos were imaged for each genotype and stage. Arrows point to granule localization of NRDE-3 in the 100 cell stage. Asterisks highlight the nuclear localization of NRDE-3 in somatic cells of the 100 cell stage embryos and in the primordial germ cells of the comma stage embryos. Scale bars, 5 μm. (B) Box plot of GFP::3xFLAG::NRDE-3 granule number quantification in different mutants. (C) Box plot of GFP::3xFLAG::NRDE-3(HK-AA) granule number quantification at different embryonic stages. Lines connect the mean granule number (red dots) for each stage, illustrating the change in number of NRDE-3 granules across embryonic development. (D) Live imaging of SIMR-1::mCherry::2xHA; GFP::3xFLAG::NRDE-3(HK-AA) at 100 cell stage. Arrows and insets show examples of colocalization between SIMR-1 and NRDE-3(HK-AA). At least ten individual embryos were imaged. Scale bars, 5 μm. For box plots in B and C, at least twelve individual embryos in each mutant were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons. See Materials and methods for a detailed description of quantification methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Live imaging of GFP::3xFLAG::NRDE-3 embryos in the simr-1 mutant, enri-1 mutant, enri-2 mutant, and enri-1; enri-2 double mutant in 8 cell, 100 cell, and comma stage embryos. At least five individual embryos were imaged for each genotype and stage. (B) Western blot of wild-type N2, GFP::NRDE-3, and GFP::NRDE-3(HK-AA) mixed staged embryos, showing that the level of NRDE-3 protein is not significantly changed in the nrde-3(HK-AA) mutant compared to wild-type. Anti-FLAG and anti-ACTIN antibodies to detect NRDE-3 and ACTIN, respectively. (C) Live imaging of SIMR-1::mCherry::2xHA; GFP::3xFLAG::NRDE-3 embryos in an eri-1 mutant at the 100 cell stage. Arrows point to examples of colocalization between SIMR-1 and NRDE-3. At least five individual embryos were imaged. Dotted white line indicates the outline of the embryo. (D) Box plot quantifying the number of SIMR-1::mCherry::2xHA granules in a nrde-3(HK-AA) mutant at different embryonic stages. At least twelve individual embryos for each genotype were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Lines connect the mean granule number (red dots) at each stage, illustrating the change in number of SIMR-1 granules across embryonic development. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons. See Materials and methods for a detailed description of quantification methods. (E) Live imaging of germline regions from SIMR-1::mCherry::2xHA; GFP::3xFLAG::NRDE-3(HK-AA) day-one-old adult animals shows that SIMR-1 and NRDE-3(HK-AA) do not colocalize and NRDE-3(HK-AA) does not form foci in the germline (late pachytene (top) and oocyte (bottom)). At least five individual germlines were imaged. All scale bars, 5 μm. Source data are provided as a Source Data file.
+
 It is also worth noting that despite the similarity in timing of NRDE-3 granule appearance and disappearance in the eri-1 and rde-3 mutants compared to the nrde-3(HK-AA) mutant, we observed a striking difference in the NRDE-3 localization in early embryos. Specifically, in eri-1 and rde-3 mutants, NRDE-3 localizes to the nucleus in early embryos while NRDE-3(HK-AA) localizes exclusively to the cytoplasm (Figure 2A). Similarly, in the Z2 and Z3 primordial germ cells of late embryos, NRDE-3 is still found in the nucleus in eri-1 and rde-3 mutants. In contrast, NRDE-3 localizes exclusively to the cytoplasm in the somatic cells of late embryos of all three mutants. This result suggests that there may be a fundamental difference in the small RNAs bound by NRDE-3 in early compared to late embryos, and that the small RNAs bound by NRDE-3 in early embryos are produced independently of ERI-1 and RDE-3.
 
 To determine whether unloaded NRDE-3 localizes to SIMR granules, we examined the localization of SIMR-1 and NRDE-3 together in the nrde-3(HK-AA) mutant and eri-1 mutant backgrounds. We found that SIMR-1 colocalizes with unloaded NRDE-3 in embryonic granules (Figure 2D, Figure 2—figure supplement 1C). Further, the SIMR granules in the nrde-3(HK-AA) mutant background exhibit dynamics similar to the wild-type background (Figure 2—figure supplement 1D), indicating that nrde-3(HK-AA) does not affect the localization of SIMR-1. Interestingly, NRDE-3(HK-AA) does not form granules in germ cells and is instead present exclusively in the cytoplasm, thus it does not colocalize with the SIMR compartment of germ granules (Figure 2—figure supplement 1E). These results demonstrate that unloaded NRDE-3 associates with SIMR-1 and ENRI-2 in cytoplasmic granules in the somatic cells of C. elegans embryos, indicating a potential role for SIMR-1 in the NRDE-3 nuclear RNAi pathway.
 
-## SIMR-1 and ENRI-2 recruit unloaded NRDE-3 to cytoplasmic granules
+### SIMR-1 and ENRI-2 recruit unloaded NRDE-3 to cytoplasmic granules
 
 As previously described, unloaded NRDE-3 localizes to cytoplasmic granules in embryos and colocalizes with SIMR-1. Next, we aimed to determine whether SIMR-1 and ENRI-2 are required for the NRDE-3 granule localization. To this end, we introduced a simr-1 mutant and an enri-2 mutant into the GFP-tagged NRDE-3(HK-AA) strain and assessed NRDE-3(HK-AA) localization. Strikingly, we found that NRDE-3(HK-AA) granules disappear completely and NRDE-3(HK-AA) is instead found exclusively in the cytoplasm in all cells across all embryonic stages (Figure 3A). Similarly, in a simr-1; eri-1 double mutant, NRDE-3 granules are absent though NRDE-3 remains in the nucleus in early embryos (Figure 3A), similar to NRDE-3 expression in the eri-1 single mutant (Figure 2A). However, neither wild-type NRDE-3 nor NRDE-3(HK-AA) protein levels are affected by loss of simr-1 (Figure 3—figure supplement 1A), indicating that loss of granule localization in nrde-3(HK-AA); simr-1 is not due to reduced NRDE-3 protein expression. These results demonstrate that both SIMR-1 and ENRI-2 are required for the recruitment of NRDE-3 to cytoplasmic granules.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig3-v1.jpg)
+
+**Figure 3.:** (A) Live imaging of GFP::3xFLAG::NRDE-3(HK-AA) embryos in simr-1 and enri-2 mutants, and GFP::3xFLAG::NRDE-3 embryos in a simr-1; eri-1 double mutant at 8 cell, 100 cell, and comma stages. At least five individual embryos were imaged for each genotype and stage. Asterisk marks the nuclear localization of GFP::NRDE-3 in the simr-1; eri-1 mutant, visible in somatic cells of 8- and 100- cell stage embryos and in a primordial germ cell of the comma stage embryo. Scale bars, 5 μm. (B) Live imaging of ENRI-2::2xTy1::GFP embryos in a simr-1 mutant and SIMR-1::GFP::3xFLAG embryos in an enri-2 mutant. At least five individual embryos were imaged for each genotype and stage. Arrows point to examples of cytoplasmic SIMR granules still visible in the enri-2 mutant. Box surrounds a primordial germ cell displaying germ granule localization of SIMR-1. Scale bars, 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blot of wild-type (N2), GFP::NRDE-3, GFP::NRDE-3; simr-1, GFP::NRDE-3(HK-AA), GFP::NRDE-3(HK-AA); simr-1 mixed staged embryos, showing that the GFP::NRDE-3 and GFP::NRDE-3(HK-AA) does not exhibit expression level change in the simr-1 mutant. Anti-FLAG and anti-ACTIN antibodies were used to detect NRDE-3 and ACTIN, respectively. (B) Live imaging of GFP::3xFLAG::NRDE-3(HK-AA) embryos in an enri-1 mutant and an enri-1; enri-2 double mutant. At least five individual embryos were imaged for each genotype and stage. Arrows point to cytoplasmic NRDE-3(HK-AA) granules visible in an enri-1 mutant. Scale bars, 5 μm. (C) Live imaging of ENRI-1::mCherry::2xHA embryo in an enri-2 mutant at 100 cell stage. Both fluorescence (left) and brightfield (right) channels are shown to demonstrate that no specific localization can be observed for ENRI-1 in the enri-2 mutant. At least five individual embryos were imaged. Scale bars, 5 μm. (D) Live imaging of ENRI-1::mCherry::2xHA; GFP::3xFLAG::NRDE-3(HK-AA) embryo at 100 cell stage, showing that no specific localization can be observed for ENRI-1 in the nrde-3(HK-AA) mutant. Arrows point to cytoplasmic NRDE-3(HK-AA) granules. At least five individual embryos were imaged. Scale bars, 5 μm.
 
 To investigate the dependence of SIMR-1 and ENRI-2 on one another, we examined ENRI-2 localization in a simr-1 mutant and SIMR-1 localization in an enri-2 mutant. We found that ENRI-2 granules are lost in the simr-1 mutant, while SIMR-1 granules are still present in the enri-2 mutant, indicating that SIMR-1 functions upstream of ENRI-2 for granule assembly (Figure 3B).
 
 To further assess whether ENRI-1 plays a role in the accumulation of unloaded NRDE-3 in cytoplasmic granules, we introduced an enri-1 mutant into the GFP-tagged NRDE-3(HK-AA) strain and found that NRDE-3 association with cytoplasmic granules was not disrupted (Figure 3—figure supplement 1B). We further examined NRDE-3(HK-AA) granule association in the enri-1; enri-2 double mutant and found it to be fully cytoplasmic, indistinguishable from the enri-2 single mutant (Figure 3—figure supplement 1B). While we had already determined that ENRI-1::mCherry did not form visible foci in embryos; to rule out the possibility of partial redundancy between ENRI-1 and ENRI-2, we introduced an enri-2 mutant into the mCherry-tagged ENRI-1 strain but still unable to detect any distinct ENRI-1 expression (Figure 3—figure supplement 1C). Lastly, to determine if NRDE-3 recruitment to granules could alter ENRI-1 localization, we introduced the mCherry-tagged ENRI-1 into the GFP-tagged NRDE-3(HK-AA) strain, and still we could not see any granule localization for ENRI-1 (Figure 3—figure supplement 1D). Therefore, we excluded ENRI-1 from further investigation, and conclude that SIMR-1 and ENRI-2, but not ENRI-1, recruit unloaded NRDE-3 to cytoplasmic granules, with SIMR-1 also acting to recruit ENRI-2.
 
-## SIMR-1 does not localize to P bodies or other previously identified embryonic granules
+### SIMR-1 does not localize to P bodies or other previously identified embryonic granules
 
 A variety of RNA-associated proteins have previously been shown to form granules in C. elegans embryos. To determine whether the SIMR-1, ENRI-2, and unloaded NRDE-3 granules that we have observed coincide with a previously identified granule, we examined the colocalization between SIMR-1 and all other embryonic granule-associated proteins that we could identify. It is well known that Processing (P) bodies, the condensates of translationally inactive mRNAs and proteins, localize to cytoplasmic foci of soma in C. elegans embryos (Parker and Sheth, 2007; Gallo et al., 2008). To examine if the SIMR-1 cytoplasmic granules are P bodies, we examined the localization of SIMR-1 and CGH-1, a core P body component, using a strain expressing GFP-tagged SIMR-1 and mCherry-tagged CGH-1 (Du et al., 2023). We found that CGH-1 does not colocalize with SIMR-1 (Figure 4—figure supplement 1A). CGH-1 also does not colocalize with NRDE-3 cytoplasmic granules in the eri-1 mutant (Figure 4—figure supplement 1B). Together, these data indicate that the cytoplasmic SIMR granules found in embryos are not P bodies.
 
@@ -63,45 +91,81 @@ Next, we examined two proteins previously shown to colocalize with SIMR foci in 
 
 RDE-12 interacts with Argonaute proteins and RNAi-targeted mRNAs, and has also been shown to localize to cytoplasmic granules in the somatic cells of C. elegans embryos (Shirayama et al., 2014; Yang et al., 2014). We next assessed the localization of mCherry-tagged SIMR-1 relative to GFP-tagged RDE-12 and found that they do not colocalize (Figure 4—figure supplement 1F). RSD-6 is a Tudor domain-containing RNAi factor that partially colocalizes with RDE-12 in the R2 bodies in adult germ cells (Yang et al., 2014; Sakaguchi et al., 2014; Zhang et al., 2012). We examined the expression of GFP-tagged RSD-6 in embryos and did observe RSD-6 at granules in somatic cells, while no colocalization with mCherry-tagged SIMR-1 could be detected (Figure 4—figure supplement 1G). The RNAi-inheritance factor and defining member of the Z compartment of the germ granule, ZNFX-1, has also been observed in cytoplasmic granules in the somatic cells of embryos (Wan et al., 2018; Ouyang et al., 2019), however these somatic ZNFX-1 granules also fail to colocalize with SIMR-1 (Figure 4—figure supplement 1H). Finally, we compared SIMR-1 localization to peri-centrosomal foci marked tubulin, based on a recent report that NRDE-3 accumulates at these foci (Jin et al., 2024), but we did not observe any colocalization between SIMR-1 and tubulin in a wild-type background (Figure 4—figure supplement 1I). Altogether, we found that SIMR-1 fails to localize to any previously characterized embryonic granules. These results further indicate that there are numerous granule-localized proteins in the somatic cells of embryos, such as RDE-12, RSD-6, and ZNFX-1, which may play important roles in the RNA biology of early embryos.
 
-## Multiple Mutator complex proteins localize to SIMR granules in embryos
+### Multiple Mutator complex proteins localize to SIMR granules in embryos
 
 Mutator foci localize adjacent to SIMR foci in the adult germline (Manage et al., 2020; Chen and Phillips, 2024a), so we next investigated the localization of Mutator components in embryos. We first examined Mutator foci component RDE-3/MUT-2, a poly(UG) polymerase required for WAGO-class 22G-RNA production (Figure 1—figure supplement 1A–B; Phillips et al., 2012; Shukla et al., 2020) and found that GFP-tagged RDE-3 is prominently localized to cytoplasmic granules in embryos that colocalize with SIMR-1 (Figure 4A–B). This colocalization led us to the hypothesis that SIMR-1 cytoplasmic granules are sites of WAGO-class 22G-RNA biogenesis. Therefore, we speculated that more small RNA production machinery might be localized with SIMR-1 at these cytoplasmic granules. We next examined the RNA-dependent-RNA-polymerase (RdRP) RRF-1, which synthesizes WAGO-class 22G-RNAs and localizes to Mutator foci in the adult germline (Figure 1—figure supplement 1A–B; Sijen et al., 2001; Gent et al., 2010; Vasale et al., 2010; Phillips et al., 2012). As we predicted, RRF-1 also colocalizes with SIMR-1 in somatic granules (Figure 4B–C), and it fails to localize to somatic granules in the simr-1 mutant (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig4-v1.jpg)
+
+**Figure 4.:** (A) Live imaging of SIMR-1::mCherry::2xHA; RDE-3::GFP embryo at 100 cell stage, showing that RDE-3 colocalizes with SIMR-1. At least five individual embryos were imaged for each genotype and stage. Arrowheads and insets show examples of colocalization between SIMR-1 and RDE-3 at cytoplasmic granules. Scale bars, 5 μm. (B) Box plot of Pearson’s R value quantifications among different pairs of proteins at 100 cell embryonic stage. At least 20 granules from at least four individual embryos were used for quantification. Each dot represents an individual quantification, and all data points are shown. Box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. See Materials and methods for a detailed description of quantification methods. (C) Live imaging of SIMR-1::GFP::3xFLAG; HA::EGO-1::mCherry::RRF-1 at 100 cell stage embryo, showing that RRF-1 colocalizes with SIMR-1. At least five individual embryos were imaged for each genotype and stage. Arrowheads and insets show examples of colocalization between SIMR-1 and RRF-1 at cytoplasmic granules. Scale bars, 5 μm. (D) Live imaging of mCherry::EGO-1::GFP::RRF-1 in a simr-1 mutant, showing that RRF-1 no longer associates with cytoplasmic granules, while EGO-1 remains associated with granules in the simr-1 mutant. At least five individual embryos were imaged. Arrowheads point to examples of cytoplasmic EGO-1 granules in a simr-1 mutant. Insets show examples of cytoplasmic localization of RRF-1 and granule localization of EGO-1 in a simr-1 mutant. Scale bars, 5 μm. (E) Live imaging of SIMR-1::mCherry::2xHA embryos in a mut-16 mutant at 8 cell, 100 cell, and comma stages. At least five individual embryos were imaged. Asterisks indicate spindle localization of SIMR-1 in a mut-16 mutant. Box highlights germ granule localization of SIMR-1 in a comma-stage, mut-16 mutant embryo. Scale bars, 5 μm. (F) Live imaging of GFP::3xFLAG::CSR-1 embryos at different stages (4 cell, 28 cell, 100 cell, 200 cell, and comma), shows that CSR-1 localizes to cytoplasmic granules in early embryos and is restricted to germ granules in late embryos. At least three individual embryos were imaged for each stage. Dotted white line marks perimeter of the embryo. Box marks germ granule localization of CSR-1. Scale bars, 5  μm. (G) Box plot quantifying GFP::3xFLAG::CSR-1 granules at different embryonic stages. At least ten embryos at each stage were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Lines connect the mean granule number (red dots) at each stage, illustrating the change in number of CSR granules across embryonic development. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons. See Materials and methods for a detailed description of quantification methods. (H) Live imaging of mCherry::EGO-1; GFP::3xFLAG::::CSR-1 embryo at 28 cell stage, showing CSR-1 colocalization with EGO-1. At least 10 individual embryos were imaged. Arrowheads and insets show examples of CSR-1 and EGO-1 colocalization at cytoplasmic granules. Scale bars, 5 μm. (I) Live imaging of SIMR-1::mCherry::2xHA; GFP::3xFLAG::CSR-1 embryo at 28 cell stage, showing the absence of colocalization between SIMR-1 and CSR-1 with occasional adjacent localization. At least ten individual embryos were imaged. Arrowheads point to examples of SIMR and CSR granules that do not colocalize. Insets show examples of SIMR and CSR granules that are found adjacent to each other or fail to colocalize. Dotted white line marks perimeter of embryo. Scale bars, 5  μm. (J) Model of CSR and SIMR granules in the somatic cells of C. elegans embryos. The RdRP EGO-1, which synthesizes CSR-class 22G-RNAs, localizes to CSR granules, where CSR-1 loading may take place. The RdRP RRF-1, along with RDE-3, ENRI-2, and unloaded NRDE-3 localize to SIMR granules. SIMR-1 and ENRI-2 recruits unloaded NRDE-3 to granule where RRF-1 may synthesize ERGO-dependent 22G-RNAs for loading into NRDE-3. After loading, NRDE-3 translocates to the nucleus and silences genes co-transcriptionally.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Live imaging of SIMR-1::GFP::3xFLAG; mCherry::CGH-1 embryo at 100 cell stage, showing that SIMR-1 does not colocalize with CGH-1. Arrowheads and insets show examples of SIMR-1 and CGH-1 granules that do not colocalize. (B) Live imaging of mCherry::CGH-1; eri-1; GFP::3xFLAG::NRDE-3 at 100 cell stage embryo, showing that NRDE-3 in the eri-1 mutant does not colocalize with CGH-1. Arrowheads and insets show examples of NRDE-3 and CGH-1 granules that do not colocalize. (C) Live imaging of SIMR-1::GFP::3xFLAG; RSD-2::mCherry embryo at 100 cell stage, showing that RSD-2 does not localize to cytoplasmic granules in the embryo. Arrowheads and insets show examples of SIMR granules. (D) Live imaging of SIMR-1::mCherry::2xHA; HRDE-2::2xTy1::GFP embryo at 100 cell stage, showing that HRDE-2 does not localize to cytoplasmic granules in the embryo. Arrowheads and insets show examples of SIMR granules. (E) Live imaging of SIMR-1::GFP::3xFLAG; hrde-2 embryo at 100 cell stage, showing that SIMR-1 still localizes to cytoplasmic granules in the hrde-2 mutant. Arrowheads and inset show examples of SIMR granules. (F) Live imaging of SIMR-1::mCherry::2xHA; GFP::3xFLAG::RDE-12 embryo at 100 cell stage, showing that SIMR-1 does not colocalize with RDE-12. Arrowheads and insets show examples of RDE-12 and SIMR granules that do not colocalize. (G) Live imaging of SIMR-1::mCherry::2xHA RSD-6::GFP::3xFLAG embryo at 100 cell stage, showing that SIMR-1 does not colocalize with RSD-6. Arrowheads and insets show examples of RSD-6 and SIMR granules that do not colocalize. (H) Live imaging of SIMR-1::GFP::3xFLAG; HA::tagRFP::ZNFX-1 embryo at 100 cell stage, showing that SIMR-1 does not colocalize with ZNFX-1. Arrowheads and insets show examples of SIMR and ZNFX-1 granules that do not colocalize. (I) Live imaging of SIMR-1::mCherry::2xHA; tubulin::GFP embryo at 100 cell stage, showing that SIMR-1 does not colocalize with tubulin. Arrowheads and insets show examples of tubulin and SIMR granules that do not colocalize. (J) Live imaging of MUT-16::GFP at 100 cell stage, showing that MUT-16 localizes to somatic granules. Arrowheads and inset show examples of MUT-16 somatic granules. (K) Live imaging of RDE-3::GFP in a mut-16 mutant embryo at 100 cell stage, showing that RDE-3 no longer associates with granules in the mut-16 mutant. (L) Live imaging of SIMR-1::GFP::3xFLAG; mCherry::EGO-1 embryo at 100 cell stage, showing that SIMR-1 does not colocalize with EGO-1. Arrowheads and insets show examples of SIMR-1 and EGO-1 granules that do not colocalize. At least five individual embryos were imaged for all experiments. All scale bars, 5  μm.
+
 MUT-16 is the scaffolding protein for germline Mutator foci, thus we next investigated whether MUT-16 similarly scaffolds the cytoplasmic SIMR granules in early embryos (Phillips et al., 2012). We found that MUT-16 can be observed in cytoplasmic granules in the embryonic somatic cells (Figure 4—figure supplement 1J), similar to what has been observed in a previous study (Ouyang et al., 2019), and both SIMR-1 and RDE-3 fail to assemble into cytoplasmic granules in the mut-16 mutant (Figure 4E, Figure 4—figure supplement 1K). Notably, the germ granule association of SIMR-1 is unaffected, as SIMR-1 still localizes to germ granules at comma stage embryos and in the adult germline (Figure 4E; Manage et al., 2020). Together, these data indicate that MUT-16 functions upstream of SIMR-1 and mediates the assembly of cytoplasmic granules in embryos. It is curious to note that, in a mut-16 mutant where SIMR-1 association with cytoplasmic granules is lost in the somatic cells, SIMR-1 instead associates with mitotic spindles (Figure 4E), similar to the localization observed for NRDE-3 in embryos (Jin et al., 2024). To conclude, we have shown that the SIMR granules found in the somatic cells of early embryos contain the biogenesis machinery for WAGO-class 22G-RNAs, including RDE-3 and RRF-1, and depend on the scaffolding protein MUT-16 for assembly (Figure 4J). The differential requirement for MUT-16 on the assembly of somatic and germline SIMR granules highlights a key difference between these two compartments, which have some parallel functions but distinct composition.
 
-## CSR-1 and EGO-1 associate with a distinct type of granule in early embryos
+### CSR-1 and EGO-1 associate with a distinct type of granule in early embryos
 
 The Argonaute protein CSR-1 has also been previously seen at cytoplasmic granules in the soma of early embryos, a time at which CSR-1 is functioning to clear maternal-inherited mRNAs (Quarato et al., 2021; Seroussi et al., 2023; Ouyang et al., 2019). Using a GFP-tagged CSR-1 strain we constructed previously (Nguyen and Phillips, 2021), we confirmed that CSR-1 forms prominent cytoplasmic granules in embryos visible prior to the 4 cell stage and present through 100 cell stage embryos, but disappear by the 200 cell stage, at which point only germ granule localization is visible (Figure 4F). Quantification of the total number of ‘CSR granules’ per embryo across development shows that the CSR granules are more abundant than the SIMR-1 and NRDE-3(HK-AA) granules and differ in the timing of their appearance and disappearance relative to SIMR-1 and NRDE-3(HK-AA) granules (Figures 1C, 2C and 4G). Specifically, CSR granules appear earlier and peak at the 28 cell stage, while SIMR-1 and NRDE-3(HK-AA) granules appear between 8- and 28 cell stages and peak at the 100 cell stage (Figures 1C, 2C and 4G). The small RNAs bound by CSR-1 are synthesized by the RdRP, EGO-1, so we next assessed the localization of EGO-1 in early embryos. We found that EGO-1 colocalizes with CSR-1 in the somatic CSR granules (Figure 4B and H) and neither CSR-1 nor EGO-1 fully colocalizes with SIMR-1, although we occasionally observed adjacent localization between SIMR-1 and CSR-1 (Figure 4B and I, Figure 4—figure supplement 1L). Lastly, unlike RRF-1 which requires SIMR-1 to localize to embryonic foci, EGO-1 localizes to cytoplasmic granules in the absence of SIMR-1 (Figure 4D). Together, our results show that the RdRPs, RRF-1 and EGO-1, localize to different cytoplasmic granules in the somatic cells of C. elegans embryos, where they colocalize with Argonaute proteins, NRDE-3 and CSR-1, respectively. Thus, we postulate that WAGO-class and CSR-class 22G-RNA biogenesis and loading are compartmentalized into cytoplasmic granules, differing from one another both spatially and temporally, in the somatic cells of early embryos (Figure 4J).
 
-## Autophagy regulates the removal of SIMR granules and other cytoplasmic granules during embryogenesis
+### Autophagy regulates the removal of SIMR granules and other cytoplasmic granules during embryogenesis
 
 Both SIMR and CSR granules exhibit dynamic expression patterns across embryonic development, where the granules increase in abundance from early to mid-embryogenesis, and then subsequently disappear from somatic cells, becoming restricted to germ cells by late embryogenesis (Figures 1B–C–4F–G). In contrast, P granules become enriched at the posterior half of one-cell embryos and are subsequently partitioned with the germline progenitor cells through the remainder of embryonic development (Strome and Wood, 1983). Previous work has shown that autophagic degradation is one mechanism by which P granules are removed from somatic blastomeres (Zhang et al., 2009). Autophagy, often referred to as the ‘self-eating’ pathway, is one of the two major protein degradation systems in eukaryotic cells. Autophagy involves the formation of autophagosomes, which engulf cytoplasmic structures and proteins and deliver the contents to lysosomes for degradation (Klionsky, 2005; Mizushima, 2007). In contrast, the ubiquitin-proteasome system degrades proteins though ubiquitination and degradation by the 26 S proteosome complex, bypassing lysosomes (Nedelsky et al., 2008). In the absence of the autophagy protein LGG-1, the C. elegans ortholog of S. cerevisiae Atg8, the core P granule proteins PGL-1 and PGL-3 are ectopically expressed in somatic foci during mid to late embryogenesis (Zhang et al., 2009). So we sought to test whether the removal of SIMR and CSR granules from the somatic cells during mid-to-late embryogenesis might similarly depend on the autophagy pathway.
 
 To address this possibility, we first examined the expression of PGL-1 and SIMR-1 at 8 cell, 100 cell, and comma stages of embryogenesis following lgg-1 or control (L4440) RNAi treatment of the parental animals. Consistent with previous work (Zhang et al., 2009), RNAi of lgg-1 leads to ectopic expression of PGL-1 in cytoplasmic foci of the somatic cells at mid (100 cell) and late (comma) embryonic stages, while its germ granule localization remains unaffected (Figure 5A). Similarly, we found that the number of somatic SIMR granules at the 100 cell stage increases by approximately 2-fold in lgg-1 RNAi-treated embryos compared to control (L4440) (Figure 5A and B). Further, in the comma stage, somatic SIMR granules remain in the soma in lgg-1 RNAi-treated embryos, whereas SIMR granules are cleared from the somatic cells and restricted to germ cells in control (L4440) RNAi-treated embryos (Figure 5A). Examination of other somatic SIMR granule-associated proteins, including ENRI-2, RDE-3, and RRF-1, and unloaded NRDE-3 revealed that they also exhibit ectopic expression in the somatic cells of comma-stage embryos and continue to colocalize with SIMR-1 (Figure 5—figure supplement 1A and B). These findings indicate that the removal of SIMR granules from somatic cells during mid and late embryogenesis is regulated by autophagy, similar to the role of autophagy in the degradation of P granules form early somatic blastomeres.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig5-v1.jpg)
+
+**Figure 5.:** (A) Live imaging of SIMR-1::mCherry and PGL-1::BFP at 8 cell, 100 cell, and comma stage embryos following treatment of parental animals with control (L4440) and lgg-1 RNAi. At least ten individual embryos were imaged for each genotype and stage. Dotted white line marks perimeter of embryo. Scale bars, 5 μm. (B) Box plot quantifying the number of SIMR granules at the 100 cell stage following treatment of parental animals with control (L4440) and lgg-1 RNAi. Fourteen embryos at each stage were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Two-tailed t-test was performed to determine statistical significance. (C) Live imaging of GFP::CSR-1 and RFP::ZNFX-1 at 8 cell, 100 cell, and comma stage embryos following treatment of parental animals with control (L4440) and lgg-1 RNAi. At least ten individual embryos were imaged for each genotype and stage. Dotted white line marks perimeter of embryo. Scale bars, 5 μm. (D) Live imaging of SIMR-1::GFP; RFP::ZNFX-1; PGL-1::BFP embryo and SIMR-1::mCherry; GFP::CSR-1 embryo at 100 cell stage embryos following treatment of parental animals with lgg-1 RNAi. At least ten individual embryos were imaged for each genotype. Dotted white line marks perimeter of embryo. Insets show examples of granule adjacency. Scale bars for embryos, 5 μm. Scale bars for insets, 0.2 μm. Images in A, C-D are maximum projections of deconvolved 12.5 μm z-stacks (about two-third of embryo depth).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Live imaging of GFP::NRDE-3; eri-1 at 8 cell, 100 cell, and comma stage embryos following treatment of parental animals with control (L4440) and lgg-1 RNAi. At least ten individual embryos were imaged for each genotype and stage. Scale bars, 5 μm. Images are maximum projections of deconvolved 12.5 μm z-stacks (about two-third of embryo depth). (B) Box plot quantifying Pearson’s R values of SIMR-1 with ENRI-2, RDE-3/MUT-2, RRF-1, and NRDE-3; eri-1 at comma stage on lgg-1 RNAi condition. At least 20 embryos at each stage were used for quantification. Each dot represents an individual embryo, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range.
+
 Since both SIMR granules and P granules are regulated by the autophagy pathway during embryogenesis, we also examined the role for autophagy in regulating other granule-associated proteins in early embryos, specifically CSR-1 and ZNFX-1. Similar to PGL-1 and SIMR-1, CSR-1 and ZNFX-1 show increased numbers of somatic granules in 100 cell and comma stage embryos following parental treatment with lgg-1 RNAi compared to control (L4440) (Figure 5C). To further investigate the spatial organization of these somatic granules in the absence of autophagy-mediated degradation, we examined the 100 cell stage embryos following lgg-1 RNAi treatment using strains expressing PGL-1::BFP; SIMR-1::GFP; RFP::ZNFX-1, and GFP::CSR-1; SIMR-1::mCherry. Interestingly, these proteins display a variety of configurations relative to one another, distinct from their typical organization in the germline (Uebel et al., 2023). These configurations included granules composed of individual protein, multiple proteins adjacent to one another, and large aggregates composed of multiple proteins (Figure 5D). We speculate that many of the PGL-1-containing granules, including the larger aggregates, are associated with autophagosomes, as has been shown previously (Zhang et al., 2009). Overall, our findings demonstrate that the autophagy pathway is utilized to regulate the spatial-temporal expression of many embryonic granule-associated proteins, including proteins found in P, Z, SIMR, and CSR granules. Further, it is worth noting that P, Z, SIMR, and CSR granules are not all removed at the same developmental timepoint (for example, Figures 1C and 4G), suggesting the presence of additional regulatory mechanisms controlling the timing of their degradation.
 
-## NRDE-3 switches small RNA partners during embryonic development
+### NRDE-3 switches small RNA partners during embryonic development
 
 The nuclear localization of NRDE-3 in the somatic cells of larvae depends on ERGO-1 and other proteins required for the biogenesis of ERGO-class 26G-RNAs (Figure 1—figure supplement 1A–B; Guang et al., 2008). Sequencing of NRDE-3-bound 22G-RNAs at the L4 to young adult transition identified a set of endogenous targets that overlap substantially with those of ERGO-1 (Seroussi et al., 2023). Together, these data have led to the conclusion that NRDE-3 acts downstream of ERGO-1 to transcriptionally silence ERGO-target genes. Yet our data looking at the nuclear localization of NRDE-3 in embryos, demonstrate that this model may be an incomplete picture. Specifically, in eri-1 and rde-3 mutants where 26G-RNA or WAGO-class 22G-RNA biogenesis are abolished, respectively, NRDE-3 remains localized to the nucleus in early embryos (Figure 2A). The small RNA binding-defective NRDE-3(HK-AA) is localized exclusively to the cytoplasm at the same time point, indicating that small RNA binding is critical for nuclear import at this stage (Figure 2A). Accordingly, we must postulate that NRDE-3 binds another class of small RNA to promote nuclear entry in very early embryos. To investigate the identity of NRDE-3-bound small RNAs across embryonic development and to explore the role of the SIMR granules in promoting NRDE-3 small RNA binding, we immunoprecipitated NRDE-3 and sequenced associated small RNAs (IP-sRNA seq) in early embryos (≤ 100 cell) and late embryos (≥ 300 cell) in wild-type, eri-1 mutant, simr-1 mutant, and enri-2 mutant animals (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig6-v1.jpg)
+
+**Figure 6.:** (A) Diagram of IP-sRNA seq on NRDE-3 early embryos (≤ 100 cell stage) and late embryos (≥ 300 cell). GFP::FLAG::NRDE-3 was immunoprecipitated from embryo lysate and its associated small RNAs were isolated for sequencing. (B) Box plot depicting log2(fold change small RNA abundance) in NRDE-3 IP compared to input for at least two biological replicates. (C) Normalized NRDE-3-bound small RNA read distribution across a CSR-target gene (ztf-27) and an ERGO-target gene (Y37E11B.2) in early embryos, late embryos, and young adults. One representative replicate is shown. (D) Normalized NRDE-3 IP compared to input small RNA reads in early embryos, late embryos, and young adults. CSR-target and ERGO-target genes are indicated in blue and red, respectively. One representative replicate is shown. Insets are pie charts describing numbers of CSR targets, ERGO targets, and other targets that are significantly enriched in the NRDE-3 IP. The enriched targets were defined as small RNAs with at least 2-fold enrichment in IP compared to input, average RPM >10, and p-values ≤0.05. (E) Box plot depicting log2(fold change small RNA abundance) in mutants compared to wild-type in late embryos for two or three biological replicates. (F) Box plot depicting log2(fold change of ERGO-class small RNA abundance) in NRDE-3 IP compared to input in wild-type and mutants in late embryos for two or three biological replicates. (G) Box plot depicting log2(fold change of CSR-class small RNA abundance) in NRDE-3 IP compared to input in wild-type and mutants in late embryos for two or three biological replicates. For box plots in B,E-G, bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range, excluding outliers. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Normalized NRDE-3 IP compared to input small RNA reads in young adults (left), nrde-3 mutant compared to wild-type small RNA reads in mixed-stage embryos (middle), nrde-3 mutant compared to wild-type mRNA reads in mixed-stage embryos (right). ERGO-target genes from Manage et al., 2020 are indicated in yellow. One representative replicate is shown. (B) Normalized NRDE-3 IP compared to input small RNA reads in young adults (left), nrde-3 mutant compared to wild-type small RNA reads in mixed-stage embryos (middle), nrde-3 mutant compared to wild-type mRNA reads in mixed-stage embryos (right). ERGO-target genes from Fischer et al., 2011 are indicated in green. One representative replicate is shown. (C) Normalized NRDE-3 IP compared to input small RNA reads in young adults (left), nrde-3 mutant compared to wild-type small RNA reads in mixed-stage embryos (middle), nrde-3 mutant compared to wild-type mRNA reads in mixed-stage embryos (right). NRDE-3-bound, ERGO-target genes are defined as genes with at least fourfold enrichment and an average of 100 RPM from the young adult NRDE-3 IP-sRNA seq libraries, and are indicated in red. One representative replicate is shown. (D) Venn diagram indicating overlap of ERGO - Manage and ERGO - Fischer targets gene lists with the newly defined NRDE-3-bound, ERGO-target genes. (E) Box plot depicting log2(fold change of small RNA abundance) in a nrde-3 mutant compared to wild-type in mixed-stage embryos for three biological replicates. (F) Box plot depicting log2(fold change of mRNA abundance) in a nrde-3 mutant compared to wild-type in mixed-stage embryos for three biological replicates. For box plots in E,F, bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range, excluding outliers. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons. Adjusted p-values are a comparison of the indicated gene list to all genes in the mixed-stage embryos.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Normalized NRDE-3 IP compared to input small RNA reads in eri-1 mutant early (left) and late (right) embryos. CSR-target and ERGO-target genes are indicated in blue and red, respectively. One representative replicate is shown. (B) Normalized NRDE-3 IP compared to input small RNA reads in simr-1 mutant (left) and enri-2 mutant (right) late embryos. CSR-target and ERGO-target genes are indicated in blue and red, respectively. One representative replicate is shown.
 
 Prior to analyzing our data, we sought to better define the expected NRDE-3-bound small RNAs. We initially planned to use two previously defined ERGO-target gene lists: the first list (ERGO - Manage) is defined by small RNAs significantly depleted at least two-fold in ergo-1 mutant compared to wild-type at the gravid adult stage, with at least 10 reads per million (RPM) in wild-type samples and a DESeq2 adjusted p-value of <0.05 (Manage et al., 2020); the second list (ERGO - Fischer) is defined by genes reduced by 67% in eri-7 adults or an average of 67% in ergo-1, eri-1, eri-6, and eri-7 embryos, with at least 10 RPM in wild-type (Fischer et al., 2011). However, there is a poor overlap between these two datasets (Figure 6—figure supplement 1D), and small RNAs targeting many of these previously defined ERGO targets were not enriched by NRDE-3 in a published NRDE-3 IP-sRNA seq data on young adult animals that have begun oogenesis but do not yet have embryos (Seroussi et al., 2023; Figure 6—figure supplement 1A–B). To define a more stringent NRDE-3-target gene list at the young adult stage, we chose genes with at least four-fold enrichment (log2FC ≥2) and 100 RPM (RPM ≥100) from the NRDE-3 IP-sRNA seq in young adults (Seroussi et al., 2023). This new list contains 119 genes and largely overlaps with the two previously defined ERGO-target gene lists (Figure 6—figure supplement 1C–D). To further confirm that this newly defined gene list represents NRDE-3 targets, we analyzed published small RNA and mRNA sequencing data from wild-type and nrde-3 mutant mixed-stage embryos (before the bean stage) (Padeken et al., 2021). Compared to the Manage and Fischer ERGO-target gene lists, the NRDE-3-target gene list shows more significant small RNA depletion and a greater increase in mRNA expression in the nrde-3 mutant compared to wild-type (Figure 6—figure supplement 1A–C and E–F). Therefore, we use the new NRDE-3-target gene list to represent the ERGO-1 pathway-dependent, NRDE-3-target genes (referred to here as ERGO targets) in the rest of this study.
 
 We next examined the small RNAs bound to NRDE-3 in wild-type early embryos and late embryos, comparing our data to the published NRDE-3 IP-sRNA seq data on young adult animals (Seroussi et al., 2023). Strikingly, we found that in early embryos, the majority of small RNAs bound by NRDE-3 are CSR-class 22G-RNAs, which become progressively less enriched as the animals develop into late embryos and then young adults (Figure 6B–D). In contrast, enrichment for small RNAs targeting ERGO-target genes increases as C. elegans develops, and they become the majority of NRDE-3-bound small RNAs by young adulthood (Figure 6B–D). NRDE-3 also binds to CSR-target genes in the early embryos of the eri-1 mutant, when it is observed to localize to the nucleus, indicating that the production of these NRDE-3-bound CSR-class 22G-RNAs is independent of eri-1 and that CSR-class 22G-RNAs are likely sufficient to promote nuclear entry of NRDE-3 in the early embryo (Figure 2A, Figure 6—figure supplement 2A). To conclude, NRDE-3 binds to CSR-class 22G-RNA in early embryos but switches to bind preferentially to ERGO-dependent 22G-RNA in late embryos and young adults, suggesting that NRDE-3 may have two separable functions at distinct developmental time points. It is also curious to note that the change in small RNA preference of NRDE-3 coincides with the appearance and disappearance of the cytoplasmic SIMR granules, suggesting a potential role for SIMR-1 and ENRI-2 in promoting the switch of small RNA loading of NRDE-3.
 
-## SIMR-1 and ENRI-2 contributes to an efficient switch of NRDE-3 bound small RNAs
+### SIMR-1 and ENRI-2 contributes to an efficient switch of NRDE-3 bound small RNAs
 
 Since ERGO-dependent 22G-RNA loading was mainly observed in late embryos, we focused on NRDE-3-bound small RNAs in the eri-1 mutant, simr-1 mutant, and enri-2 mutant late embryos to determine the role of SIMR granules in promoting NRDE-3 small RNA binding specificity. We first examined the levels of ERGO-dependent small RNAs in the total small RNA samples and observed depletion of small RNAs mapping to ERGO-target genes in the eri-1 mutant (Figure 6E, Figure 6—figure supplement 2A). This result is consistent with previous research indicating that ERI-1 is required for ERGO-class 26G-RNA production and downstream ERGO-dependent 22G-RNA production (Vasale et al., 2010; Han et al., 2009; Guang et al., 2008). ERGO-dependent small RNAs are not substantially depleted in simr-1 or enri-2 mutants, indicating that RRF-1 can still synthesize a similar amount of ERGO-dependent 22G-RNAs when the cytoplasmic SIMR granules are absent (Figure 6E). Following NRDE-3 immunoprecipitation in the eri-1 mutant, we observed a reduction in NRDE-3 binding to ERGO-dependent small RNAs and an increase binding to CSR-class small RNAs (Figure 6F and G, Figure 6—figure supplement 2A). These data indicate that in the absence of ERGO-dependent small RNAs, some NRDE-3 protein remains associated with CSR-class small RNAs into late embryogenesis. In the simr-1 and enri-2 mutants, although we did not observe a significant reduction of NRDE-3-bound ERGO-dependent small RNAs, we saw a significant increase of CSR-class 22G-RNA binding in the simr-1 mutant and a more modest but still significant increase of CSR-class 22G-RNA binding in the enri-2 mutant (Figure 6F and G, Figure 6—figure supplement 2B). These results indicate that SIMR-1 and ENRI-2 are not required for the production of the ERGO-dependent small RNAs during embryogenesis, but may be required for an efficient switch from CSR-class to ERGO-dependent 22G-RNAs.
 
-## NRDE-3 binds to CSR-class 22G-RNAs but does not silence CSR targets in early embryos
+### NRDE-3 binds to CSR-class 22G-RNAs but does not silence CSR targets in early embryos
 
 We discovered that NRDE-3 unexpectedly binds to CSR-class 22G-RNAs in early embryos, suggesting a potential new role for NRDE-3 that has not been previously reported. We hypothesized that NRDE-3 may function with CSR-1, perhaps to transcriptionally repress germline-expressed genes in early embryos while CSR-1 utilizes its catalytic activity to clear the same maternally-deposited transcripts (Quarato et al., 2021). To begin to address this hypothesis, we first sought to assess the degree to which NRDE-3-bound 22G-RNAs are similar to CSR-1-bound 22G-RNAs in early embryos. First, we examined the overlap of NRDE-3-targeted genes in early embryos with CSR-1-targeted genes in embryos or young adult animals. We found that the genes targeted by NRDE-3 substantially overlap with CSR-target genes at both stages (Figure 7A; Quarato et al., 2021; Nguyen and Phillips, 2021). Furthermore, the CSR-target genes yielding the highest abundance of CSR-1-bound small RNAs in embryos also have the highest abundance of NRDE-3-bound small RNAs (Figure 7B). These CSR-target genes with highly abundant CSR-bound small RNAs are highly enriched by NRDE-3 only in embryos and not in young adults (Figure 7—figure supplement 1A). Next, CSR-class 22G-RNAs tend to be enriched at the 3’ ends of mRNAs while WAGO-class 22G-RNAs are more evenly distributed across the gene bodies in adult animals (Ishidate et al., 2018; Singh et al., 2021). Comparing NRDE-3-bound small RNAs from early embryos to a published dataset of CSR-1-bound small RNA from mixed-stage embryos, we found that both NRDE-3 and CSR-1 are heavily enriched for small RNAs derived from the 3’ ends of CSR-target genes in embryos (Figure 7C). Interestingly, in adult animals, CSR-1-bound 22G-RNAs are still enriched for small RNA derived from the 3’ end of CSR-target genes, however there is additionally a much higher enrichment of small RNAs derived from the gene bodies compared to in embryos (Figure 7C). It has previously been proposed that two types of CSR-class 22G-RNAs exist, those that depend on CSR-1 catalytic activity for their production and are derived primarily from target gene bodies, and those that are produced independently of CSR-1 catalytic activity and are derived primarily from target 3’ UTRs (Singh et al., 2021). Our data points to both NRDE-3 and CSR-1 binding only the latter, CSR-1 catalytic activity-independent, type of CSR-class 22G-RNA in early embryos. In contrast, NRDE-3 does not show enrichment for small RNAs derived from the 3’ ends of ERGO target genes in embryos, and rather the small RNAs are distributed more evenly across the gene bodies (Figure 7—figure supplement 1B). CSR-1 utilizes its catalytic activity to slice and clear maternally inherited mRNAs from early embryos, preferentially binding to transcripts degraded early in embryogenesis (Quarato et al., 2021). We further demonstrate that NRDE-3 similarly binds preferentially to early-degraded transcripts (Figure 7—figure supplement 1C). Lastly, the expression of mRNAs targeted by CSR-1 decreases across embryonic development as CSR-1 actively slices and clears these maternal transcripts (Quarato et al., 2021). We similarly find that the mRNAs targeted by NRDE-3 in young embryos, which correspond primarily to CSR-target mRNAs, decrease in expression across development, while its targets in young adults, corresponding primarily to ERGO-target mRNAs, increase in expression across development (Figure 7—figure supplement 1D). Together, these data reveal that NRDE-3 binds to the same group of small RNAs as CSR-1 in early embryos.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig7-v1.jpg)
+
+**Figure 7.:** (A) Venn diagram indicates overlap of NRDE-3 IP enriched targets in early embryos (this work), CSR-1 IP enriched targets in young adults (Nguyen and Phillips, 2021), and CSR-1 IP enriched targets in embryos (Quarato et al., 2021). (B) Normalized NRDE-3 IP compared to input small RNA reads in early embryos. CSR-target genes with 1–50 RPM, with 50–100 RPM, and with more than 150 RPM are indicated in light blue, medium blue, and dark blue, respectively. One representative replicate is shown. (C) Density plots of small RNA enrichment on CSR targets in CSR-1 IP (dark blue), NRDE-3 IP (light blue) in embryos (left) and adults (right). Transcription start site (TSS) to transcription end site (TES) were plotted using normalized small RNA reads. All replicates are shown as individual lines. (D) Box plot quantifying the number of embryos laid per adult csr-1::degron or csr::degron, gfp::nrde-3(HK-AA) animal on 4 mM auxin plate. At least 65 individuals from each strain were scored. Each dot represents an individual animal, and all data points are shown. (E) Box plot depicting log2(fold change of H3K9me3 level in IP vs input) in wild-type (grey) and nrde-3 mutant (green) mixed-stage embryos, indicating that the H3K9me3 level of NRDE-3 targets in early embryos are not affected in nrde-3 mutant. Anti-H3K9me3 ChIP-seq data was obtained from Padeken et al., 2021. For box plots in D-E, bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range, excluding outliers. Two-tailed t-tests were performed to determine statistical significance and p-values were adjusted for multiple comparisons.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Normalized NRDE-3 IP compared to input small RNA reads in late embryos (left) and young adults (right). CSR-target genes with 1–50 RPM, with 50–100 RPM, and with more than 150 RPM are indicated in light blue, medium blue, and dark blue, respectively. One representative replicate is shown. (B) Density plots of small RNA enrichment on ERGO targets in CSR-1 IP (dark red), NRDE-3 IP (light red) in the embryos (left) and adults (right). Transcription start site (TSS) to transcription end site (TES) were plotted using normalized small RNA reads. All replicates are shown as individual lines. (C) Box plot depicting normalized log2(fold change of small RNA abundance in IP vs input) in a NRDE-3 IP in early embryos and CSR IP in embryos for two or three biological replicates. All genes list includes all genes expressed in IP or input. Early degraded mRNAs are maternal mRNAs that show at least twofold reduction in mRNA levels in early embryos (4–20 cell-stage) compared to 1 cell embryos (Quarato et al., 2021). Late degraded mRNAs are maternal mRNAs that show stable levels of mRNAs in early embryos and at least twofold reduction in late embryos (more than 20 cell stage) (Quarato et al., 2021). Zygotic mRNAs are mRNAs that are not detectable in 1 cell embryos but accumulate in early and late embryos (Quarato et al., 2021). (D) Box plots depicting mRNA RPM in one-cell embryo (dark blue), early embryo (medium blue), and late embryo (light blue) on NRDE-3 targets in early embryos (this study) and CSR-1 targets in embryos (Quarato et al., 2021) (left), and mRNA RPM in one-cell embryo (dark pink), early embryo (medium pink), and late embryo (light pink) on ERGO targets (this study) (right). All biological replicates (two or three) are included. mRNA-seq data was obtained from Quarato et al., 2021. (E) Quantification of the fertility for csr-1::degron and csr-1::degron, gfp::nrde-3(HK-AA) animals on ethanol and 4 mM auxin plate. The fertility of each animal was categorized as: hatched (some embryos laid by the animal hatched), ≥ 50 dead embryos (animal laid at least 50 unhatched embryos and no hatched embryos),<50 dead embryos (animal laid less than 50 unhatched embryos and no hatched embryos), no embryos (animal did not lay any embryos). At least 65 individual adult animals of each strain and each condition were used for quantification.
 
 To further investigate whether NRDE-3 and CSR-1 function synergistically, we examined the fertility of the csr-1::degron strain and the csr-1::degron; gfp::nrde-3(HK-AA) strain upon auxin treatment to deplete CSR-1. As expected, both strains had 100% viable progeny with ethanol control treatment (Figure 7—figure supplement 1E). When growing on 4 mM auxin plates, the number of embryos laid by the csr-1::degron; gfp::nrde-3(HK-AA) double mutant was significantly lower compared to the csr-1::degron single mutant and more of the double mutant produced no embryos (11.9%) compared to the csr-1::degron single mutant strain (7.5%), indicating a more severe sterility defect in the csr-1::degron; nrde-3(HK-AA) double mutant compared to the csr-1::degron alone (Figure 7D, Figure 7—figure supplement 1E). Additionally, 5.9% of the auxin-treated csr-1::degron animals produced some F1 progeny that hatched, compared to no F1 hatching for any of the auxin-treated csr-1::degron; gfp::nrde-3(HK-AA) double mutant animals (Figure 7—figure supplement 1E). All together, these results indicate that loss of NRDE-3 enhances the fertility defects of CSR-1.
 
 NRDE-3 is a nuclear Argonaute protein that recruits histone methyltransferases to target genes to deposit histone modifications such as H3K9me3 and H3K27me3 at these loci (Guang et al., 2008; Burton et al., 2011; Mao et al., 2015). To examine whether NRDE-3 promotes deposition of H3K9me3 at CSR-target genes during embryogenesis, we analyzed the published anti-H3K9me3 ChIP-seq data of wild-type and nrde-3 mutant mixed-staged embryos (Padeken et al., 2021). In wild-type embryos, the targets of NRDE-3 in young adults, which correspond to ERGO-target genes, have high H3K9me3 levels, and are significantly decreased in the nrde-3 mutant (Figure 7E). These data are consistent with previous research demonstrating that NRDE-3 deposits H3K9me3 at ERGO target genes (Burton et al., 2011). However, NRDE-3 targets in early embryos do not show H3K9me3 enrichment in wild-type and do not have a significant change in the nrde-3 mutant (Figure 7E). The same trend is also observed in the early degraded and late degraded targets (Figure 7E). These results indicate that the CSR targets are not H3K9 trimethylated in the early embryos. However, we cannot rule out the possibility that NRDE-3 may function to deposit other histone modification targets such as H3K27me3 and H3K23me3 or inhibit RNA Polymerase II (Pol II) on CSR targets to transcriptionally silence these genes in early embryos.
 
-## NRDE-3 associates with CSR-class 22G-RNAs in oocytes
+### NRDE-3 associates with CSR-class 22G-RNAs in oocytes
 
 In addition to being expressed in early embryos, NRDE-3 is also expressed in germ cells, starting in late pachytene through oogenesis (Seroussi et al., 2023; Chen and Phillips, 2024b). Because we were unable to detect a change in H3K9me3 in early embryos in the nrde-3 mutant, we next sought to determine whether NRDE-3 binds to CSR-class 22G-RNAs in germ cells. Curiously, in late embryos from eri-1 mutant and rde-3 mutant, we have observed nuclear localization of NRDE-3 only in the primordial germ cells (Figure 2A), raising an intriguing hypothesis that NRDE-3 might bind to CSR-class 22G-RNAs in germ cells throughout development and inherit NRDE-3-bound CSR-class 22G-RNAs to early embryos.
 
@@ -109,9 +173,9 @@ To determine whether NRDE-3 also binds to CSR-class 22G-RNAs in oocytes, we firs
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig8-v1.jpg)
 
-**Figure 8.:** (A) Live imaging of GFP::3xFLAG::NRDE-3 in 1-day-adult germlines for wild-type, eri-1, rde-3, and nrde-3(HK-AA) mutants, showing that NRDE-3 localizes to the nuclei of oocytes in wild-type, eri-1 mutant, and rde-3 mutants, and to the cytoplasm in the nrde-3(HK-AA) mutant. At least five individual gonads were imaged for each genotype. Dotted white line traces the proximal portion of the C. elegans gonad and outlines the individual oocytes. Scale bars, 25 μm. (B) Live imaging of 1-day-adult germlines and 8 cell embryos for EGO-1::degron; GFP::3xFLAG::NRDE-3 (top) and EGO-1::degron; GFP::3xFLAG::NRDE-3 in a rde-3 mutant (bottom) with ethanol (control) and 4 mM auxin treatment, showing that loss of both WAGO-class and CSR-class 22G-RNAs (rde-3 mutant and degron-mediated EGO-1 depletion) is necessary to result in cytoplasmic localization of NRDE-3 in both oocytes and early embryos. At least five individual gonads and embryos were imaged for each treatment condition. Dotted white line traces the proximal portion of the C. elegans gonad and outlines the individual oocytes. Arrowheads indicate granule localized NRDE-3 in 8 cell stage embryos. Scale bars, 25 μm in adults and 5 μm in embryos. (C) Box plot quantifying the RNA Pol II PSer2 signal intensity in oocytes of wild-type (GFP::NRDE-3 strain), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA) strain), showing that PSer2 signal is significantly increased in all oocytes in the nrde-3(HK-AA) mutant. Each dot represents an individual oocyte, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Two-tailed t-tests were performed to determine statistical significance. See Materials and methods for a detailed description of quantification methods. (D) Bar plot quantifying the RNA Pol II PSer2 expression pattern in wild-type (GFP::NRDE-3 strain), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA) strain) oocytes, showing that the PSer2 signal is retained on DNA longer in the nrde-3(HK-AA) mutant. At least 10 oocytes were used for quantification for each strain. Examples of three patterns of PSer2 signal are shown on right. Arrows point to a region of DNA to highlight PSer2 enrichment or exclusion. Scale bars, 2 μm. (E) Immunofluorescence imaging of PSer2 signal and DAPI stained DNA in oocytes of wild-type (GFP::NRDE-3), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA)), showing that the PSer2 signal appears earlier on DNA in the nrde-3(HK-AA) mutant. Images are maximum intensity projections of 12.5 μm z-stack, which allows for optimal visualization of the DNA-associated PSer2 signal, but obscures the ‘excluded from DNA’ pattern. At least five individual animals for each genotype. Arrows indicate the PSer2 signal on DNA. Scale bars, 25 μm.Figure 8—source data 1.Figure 8C–D.
+**Figure 8.:** (A) Live imaging of GFP::3xFLAG::NRDE-3 in 1-day-adult germlines for wild-type, eri-1, rde-3, and nrde-3(HK-AA) mutants, showing that NRDE-3 localizes to the nuclei of oocytes in wild-type, eri-1 mutant, and rde-3 mutants, and to the cytoplasm in the nrde-3(HK-AA) mutant. At least five individual gonads were imaged for each genotype. Dotted white line traces the proximal portion of the C. elegans gonad and outlines the individual oocytes. Scale bars, 25 μm. (B) Live imaging of 1-day-adult germlines and 8 cell embryos for EGO-1::degron; GFP::3xFLAG::NRDE-3 (top) and EGO-1::degron; GFP::3xFLAG::NRDE-3 in a rde-3 mutant (bottom) with ethanol (control) and 4 mM auxin treatment, showing that loss of both WAGO-class and CSR-class 22G-RNAs (rde-3 mutant and degron-mediated EGO-1 depletion) is necessary to result in cytoplasmic localization of NRDE-3 in both oocytes and early embryos. At least five individual gonads and embryos were imaged for each treatment condition. Dotted white line traces the proximal portion of the C. elegans gonad and outlines the individual oocytes. Arrowheads indicate granule localized NRDE-3 in 8 cell stage embryos. Scale bars, 25 μm in adults and 5 μm in embryos. (C) Box plot quantifying the RNA Pol II PSer2 signal intensity in oocytes of wild-type (GFP::NRDE-3 strain), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA) strain), showing that PSer2 signal is significantly increased in all oocytes in the nrde-3(HK-AA) mutant. Each dot represents an individual oocyte, and all data points are shown. Bolded midline indicates median value, box indicates the first and third quartiles, and whiskers represent the most extreme data points within 1.5 times the interquartile range. Two-tailed t-tests were performed to determine statistical significance. See Materials and methods for a detailed description of quantification methods. (D) Bar plot quantifying the RNA Pol II PSer2 expression pattern in wild-type (GFP::NRDE-3 strain), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA) strain) oocytes, showing that the PSer2 signal is retained on DNA longer in the nrde-3(HK-AA) mutant. At least 10 oocytes were used for quantification for each strain. Examples of three patterns of PSer2 signal are shown on right. Arrows point to a region of DNA to highlight PSer2 enrichment or exclusion. Scale bars, 2 μm. (E) Immunofluorescence imaging of PSer2 signal and DAPI stained DNA in oocytes of wild-type (GFP::NRDE-3), and nrde-3(HK-AA) mutant (GFP::NRDE-3(HK-AA)), showing that the PSer2 signal appears earlier on DNA in the nrde-3(HK-AA) mutant. Images are maximum intensity projections of 12.5 μm z-stack, which allows for optimal visualization of the DNA-associated PSer2 signal, but obscures the ‘excluded from DNA’ pattern. At least five individual animals for each genotype. Arrows indicate the PSer2 signal on DNA. Scale bars, 25 μm.
 
-## NRDE-3 represses RNA Pol II and promotes global transcriptional repression in oocytes
+### NRDE-3 represses RNA Pol II and promotes global transcriptional repression in oocytes
 
 Oocytes undergo global transcriptional repression across diverse species (Woodland, 1987). In C. elegans, transcriptional shutdown begins during the diakinesis stage of late oocytes to prepare for fertilization, and reactivates at the 4 cell stage embryos to initiate zygotic transcription (Walker et al., 2007). Previous work has shown that topoisomerase II acting with the condensin II complex, H3K9me3, and the zinc-finger containing protein PIE-1 are critical for global transcriptional repression (Belew et al., 2023), but the complete molecular mechanisms underlying the oocyte-to-embryo transition remain not fully understood. We therefore aimed to address whether germline-expressed NRDE-3 could play a role in these pathways.
 
@@ -123,13 +187,21 @@ The above evidence connects Pol II repression in oocytes to the co-transcription
 
 Germ granules are phase-separated condensates that localize to the perinuclear region of germ cells. In C. elegans, the known constituents of the germ granule have expanded over the last decades, such that germ granules now comprise multiple domains including P granules, Mutator foci, Z granules, SIMR foci, E granules, and D granules. Here, we discovered that several components of SIMR foci and Mutator foci also localize to cytoplasmic granules during specific stages of embryogenesis, where their temporal expression is regulated by autophagic degradation. We propose that these granules may serve as sites for the synthesis and loading of 22G-RNAs into the nuclear Argonaute NRDE-3. Furthermore, we showed that NRDE-3 switches its small RNA targets during embryogenesis, coincident with the formation of SIMR granules; during oogenesis, NRDE-3 binds to CSR-class 22G-RNAs to promote global transcriptional repression prior to the oocyte-to-embryo transition, and then in the developing soma, NRDE-3 binds to ERGO-dependent 22G-RNAs to silence retrotransposons and recently duplicated genes. Together, our study reveals a new world of embryonic RNAi factor condensates and uncovers two temporally distinct roles for NRDE-3, underscoring the need for careful examination of localization and targets of RNAi pathways across development (Figure 9).
 
-## A role for SIMR-1 as a platform for nuclear Argonaute protein loading
+![Figure 9.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig9-v1.jpg)
+
+**Figure 9.:** Model of NRDE-3, SIMR-1, and CSR-1 function during C. elegans development. In early embryos, CSR-1 and EGO-1 localize to CSR granules and synthesize CSR 22G-RNAs to slice and clear maternal mRNAs. NRDE-3 binds CSR 22G-RNA in the nucleus, which are inherited from the oocytes. During mid-embryogenesis (e.g. around the 100 cell stage), unloaded NRDE-3, ENRI-2, RRF-1, and RDE-3 localize to SIMR granules in somatic cells dependent on SIMR-1, where we propose that ERGO-dependent 22G-RNAs are produced and loaded into NRDE-3. In late embryos, NRDE-3 binds ERGO-dependent 22G-RNAs and silences ERGO-target genes in the nucleus, while autophagy controls selective degradation of SIMR and other embryonic granules. In adult C. elegans, somatic localized NRDE-3 associates with ERGO-dependent 22G-RNAs to transcriptionally silence ERGO-target genes, while germline localized NRDE-3 associates with CSR-class 22G-RNAs to globally repress transcription and promote chromatin compaction in oocytes, ultimately being deposited into early embryos.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/102226/elife-102226-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Graph displaying disorder tendency for the SIMR-1 protein sequence (left) and AlphaFold3 predicted structures of SIMR-1 (right). The disorder prediction was made using PONDR (http://www.pondr.com) with VSL2 and VSL3 parameters. Regions with PONDR scores of greater than 0.5 indicate disorder and regions with PONDR score less than 0.5 indicate order. The AlphaFold3 predicted confidence score of SIMR-1 is shown. The extended Tudor domain (aa. 89–259) of SIMR-1 is highlighted in orange. (B) AlphaFold3 predicted structures of HRDE-1 - HRDE-2 (left), and NRDE-3 - ENRI-2 complexes (right), showing that the C-terminus of HRDE-2 and ENRI-2 are inserted into small RNA binding pockets of HRDE-1 and NRDE-3, respectively. Domains of HRDE-1 and NRDE-3 are indicated and AlphaFold3 predicted confidence scores are shown.
+
+### A role for SIMR-1 as a platform for nuclear Argonaute protein loading
 
 Previously, we demonstrated that SIMR-1 and HRDE-2 are required to recruit unloaded HRDE-1, the germline nuclear Argonaute protein, to germ granules and to ensure correct 22G-RNA loading (Chen and Phillips, 2024a). Here, we reveal that SIMR-1 and another HRDE-2 paralog, ENRI-2, are similarly essential to recruit unloaded NRDE-3, the somatic nuclear Argonaute protein, to embryonic SIMR granules. We speculate that SIMR-1 and ENRI-2 are similarly important for NRDE-3 22G-RNA loading; however, we did not observe a significant change in the ERGO-dependent 22G-RNAs loaded by NRDE-3 in simr-1 or enri-2 mutant embryos compared to wild-type. While initially surprising based on the results of similar experiments with HRDE-1 in the germline, we envision several possible explanations. First, it is possible that SIMR-1 and ENRI-2 act to bring unloaded NRDE-3 in close proximity to the ERGO-dependent 22G-RNA biogenesis machinery, but that NRDE-3 loading can still occur diffusely in the cytoplasm, albeit with lower efficiency. Both the RdRP RRF-1 and unloaded NRDE-3 diffusely localize to cytoplasm in the simr-1 mutant (Figures 3A and 4D), suggesting that NRDE-3 may load the ERGO-class small RNAs synthesized in the cytoplasm in the absence of SIMR-1. Differences in NRDE-3 loading efficiency would likely not be detected by our NRDE-3 IP-small RNA sequencing experiment. Second, SIMR-1 and ENRI-2 could act to sequester unloaded NRDE-3 away from other small RNAs (i.e. CSR-class 22G-RNAs) to prevent misloading. Misloading should be detectable in our NRDE-3 IP-small RNA sequencing experiment and we do see an increase in CSR-class 22G-RNAs loaded by NRDE-3 in late embryos; however, it is unclear the extent to which newly synthesized, and unloaded CSR-class 22G-RNAs are even present in the cytoplasm, as the primary source for CSR-class 22G-RNAs may be the maternal germline. Thus, unlike in the adult germline where HRDE-1 incorrectly loads CSR-class 22G-RNAs in the absence of HRDE-2, there may not be an equivalent source of incorrect small RNAs that NRDE-3 can bind to (i.e. correct length, 5’ nucleotide and modifications) in the embryo. To further probe these possibilities, we need to more carefully assess the dynamics of NRDE-3 loading across embryonic development and possibly disrupt the formation of embryonic CSR granules to determine whether compartmentalization of the CSR-class 22G-RNA pathway is also contributing to correct loading of NRDE-3 in the absence of SIMR-1 and ENRI-2.
 
 We do not know the precise functions of SIMR-1 and ENRI-2; however, we have previously proposed that SIMR-1 mediates protein-protein interactions through its extended Tudor domain (Manage et al., 2020). ENRI-2 and its paralog HRDE-2 have structural similarities to a HELICc domain, and SIMR-1, ENRI-2, and HRDE-2 have large unstructured domains (Figure 9—figure supplement 1A; Lewis et al., 2020; Chen and Phillips, 2024a). With the advent of protein complex prediction algorithms (Abramson et al., 2024), we sought to examine the potential physical interactions between ENRI-2 and NRDE-3, as well as their paralogs HRDE-2 and HRDE-1. In both models, the structured HELICc domains of HRDE-2 and ENRI-2 dock on the Mid domains of their respective Argonaute partners. Interestingly, the unstructured C-terminal domains of ENRI-2 and HRDE-2 extend into the small RNA binding pocket of their respective nuclear Argonaute binding partners (Figure 9—figure supplement 1B). At this point, we do not know whether these structures are reflective of the actual geometry of the proteins in vivo, but it is tempting to speculate that the C-terminal disordered regions of the ENRI-2/HRDE-2 proteins could regulate 22G-RNA loading through interaction with the small RNA binding pockets of NRDE-3 and HRDE-1. Further study will be necessary to determine whether these interactions between disordered region and the small RNA binding pocket are necessary for correct small RNA loading and whether that mechanism extends to other WAGO proteins.
 
-## Compartmentalization of RNAi pathways
+### Compartmentalization of RNAi pathways
 
 Most of the studies on the organization of C. elegans RNAi factors in granules focus on the germline. Here, we find that multiple proteins associated with 22G-RNA biogenesis and function, including SIMR-1, RDE-3, RRF-1, ENRI-2, and unloaded NRDE-3, are localized to distinct condensates in C. elegans embryos. We speculate that these SIMR granules, which appear and then disappear during the course of embryonic development, play a functional role in the NRDE-3 nuclear RNAi pathway. This idea leads to an intriguing question: what role does organization of the RNAi pathways into condensates play in the soma vs. in the germline?
 
@@ -139,7 +211,7 @@ Both embryonic and germ granules exhibit dynamic expression patterns, suggesting
 
 It is additionally curious that embryonic and germ granules share many protein components yet possess distinct differences in content and assembly requirements. For instance, several RNAi proteins, such as RRF-1 and RDE-3, are shared between Mutator foci and embryonic SIMR granules, while the paralogous ENRI-2/NRDE-3 and HRDE-2/HRDE-1 pairs are found in embryonic SIMR granules and germline SIMR foci, respectively. It is unclear why the Mutator and SIMR components are visible as separate compartments in germ granules but are together in embryonic SIMR foci. This difference is highlighted by the requirement for MUT-16 in the assembly of embryonic SIMR granules but not germline SIMR foci (Figure 4E; Manage et al., 2020). Further investigation into the assembly and protein components of embryonic and germ granules will be crucial for elucidating the functional differences between embryonic and germ granules and dissecting the mechanisms of 22G-RNA loading into NRDE-3.
 
-## Spatial-temporal regulation of SIMR and other embryonic granules by autophagy
+### Spatial-temporal regulation of SIMR and other embryonic granules by autophagy
 
 Autophagy is a conserved eukaryotic protein degradation pathway involving the formation of double-membrane autophagosomes, which fuse with lysosomes for degradation (Nakatogawa et al., 2009). Autophagy has been linked to small RNA pathways and germ granules in C. elegans and other organisms. In Arabidopsis, the turnover of Argonaute protein AGO1 is controlled by autophagy in both antiviral and nonviral contexts (Derrien et al., 2012). In mammalian cells, AGO2 and Dicer are targeted for degradation via autophagy (Gibbings et al., 2012). In C. elegans, P granule components PGL-1 and PGL-3 are recruited to somatic aggregates during embryogenesis and degraded by autophagy (Zhang et al., 2009). Interestingly, miRNA pathway components ALG-1, ALG-2 and their interactor AIN-1/GW182 are also degraded by autophagy, while in aggregates distinct from PGL somatic aggregates (Zhang and Zhang, 2013).
 
@@ -147,7 +219,7 @@ Here, we discovered that, similar to P granule components, the expression of man
 
 Lastly, while autophagy pathway plays an important role in regulating expression of many granule components, we cannot role the possibility that the ubiquitin-proteasome system may also contribute to protein turnover in the small RNA pathway. In fact, Zhang et al., 2009 demonstrated that, unlike PGL-1 and PGL-3, the other P granule components GLH-1 and GLH-4 are not degraded via autophagy. Additionally, DeRenzo et al., 2003 showed that germline-expressed CCCH figure proteins, including PIE-1, POS-1, MEX-1, are selectively targeted for degradation in somatic cells by the E3 ubiquitin ligase subunit-interacting protein ZIF-1 through the ubiquitin-proteasome system. Furthermore, previous research suggest that the proteosome and autophagy pathways can act as compensatory mechanisms under certain contexts (Ji and Kwon, 2017). Future studies will be needed to interrogate the roles of these two protein degradation pathways in regulating protein turnover in the small RNA pathway.
 
-## The small RNA plasticity of NRDE-3
+### The small RNA plasticity of NRDE-3
 
 Argonautes are conventionally known to bind small RNAs with high specificity. In this study, we unveil the remarkable versatility of the nuclear Argonaute NRDE-3, demonstrating its ability to bind multiple classes of small RNAs and exhibit distinct functions throughout development. Argonaute proteins with the capacity to bind multiple types or classes of small RNAs have been observed in other organisms. For example, both siRNAs and miRNAs can be loaded into the four human Argonautes (Ago1-4) and both siRNAs and miRNAs can guide Ago2-dependent target cleavage (Meister et al., 2004; Liu et al., 2004). Our discovery is somewhat different, however, in that NRDE-3 binds its two preferred classes of small RNAs, CSR-class 22G-RNAs and ERGO-dependent 22G-RNAs, at distinct developmental stages, indicating that there must be a switch from one class of small RNA to the other during embryogenesis. Interestingly, a more recent study in the parasitic nematode Ascaris revealed that the Ascaris paralog of NRDE-3, AsNRDE-3, exhibits a dramatic change in associated small RNAs during spermatogenesis, targeting repetitive sequences and transposons in early stages of spermatogenesis and mRNAs in late meiosis (Zagoskin et al., 2022). Curiously, the mRNAs targeted by AsNRDE-3 in late meiosis largely overlap with the targets of AsCSR-1, the Ascaris paralog of CSR-1, and it is proposed that AsNRDE-3 could act in concert with AsCSR-1 at the late stages of meiosis to clear spermatogenic and meiotic mRNAs from the developing spermatids (Zagoskin et al., 2022). These data further suggest that the ability of NRDE-3 to target both repetitive sequences and germline-expressed genes at distinct developmental timepoints may be a conserved feature of this protein. It is currently unknown how this small RNA switching is achieved. It is possible that there is an active mechanism to unload the CSR-class 22G-RNAs and replace them with ERGO-dependent 22G-RNAs, or to degrade NRDE-3 loaded with CSR-class 22G-RNAs. However, we prefer the simpler model where NRDE-3 loaded with CSR-class 22G-RNAs, initially deposited into embryo from the maternal germline, are diluted out as the animal develops. Newly synthesized NRDE-3 in the embryo is loaded with ERGO-dependent 22G-RNAs to execute the small RNA ‘switch’. The idea that Argonaute proteins can be utilized at distinct timepoints with different small RNA partners to create multi-functionality is intriguing, especially in the vein of rapidly clearing transcripts from a cell to engineer a new developmental program. Achieving higher resolution small RNA-Argonaute interactions with tissue- and developmental-specific staging will be crucial to fully elucidate the roles of Argonaute proteins during development in C. elegans and other organisms.
 
@@ -155,46 +227,518 @@ In summary, this work investigating the role of SIMR granules in embryos, togeth
 
 ## Materials and methods
 
-## C. elegans stains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>simr-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00015504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>nrde-3</td>
+      <td>Wormbase</td>
+      <td>WBGene00019862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>enri-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00018386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>enri-2</td>
+      <td>Wormbase</td>
+      <td>WBGene00011981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>eri-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00001332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>ergo-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00019971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rrf-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00004508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rde-3/mut-2</td>
+      <td>Wormbase</td>
+      <td>WBGene00003499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>ego-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00001214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>csr-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00017641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>mut-16</td>
+      <td>Wormbase</td>
+      <td>WBGene00003508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>cgh-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00000479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rsd-2</td>
+      <td>Wormbase</td>
+      <td>WBGene00004681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>hrde-2</td>
+      <td>Wormbase</td>
+      <td>WBGene00011324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rde-12</td>
+      <td>Wormbase</td>
+      <td>WBGene00010280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rsd-6</td>
+      <td>Wormbase</td>
+      <td>WBGene00004684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>znfx-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00014208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>pgl-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00003992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>lgg-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00002980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans; hermaprhodites)</td>
+      <td>Bristol N2</td>
+      <td>Wormbase</td>
+      <td>RRID:WB-STRAIN:WBStrain00000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>RRID:WB-STRAIN:WBStrain00041971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115-L4440</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>RRID:WB-STRAIN:WBStrain00041080; RRID:Addgene_1654</td>
+      <td>control RNAi</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115- lgg-1 (C32D5.9.1)</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td></td>
+      <td>Ahringer RNAi library</td>
+    </tr>
+    <tr>
+      <td>Genetic reagents (C. elegans)</td>
+      <td>List of strains</td>
+      <td>This study, Supplementary file 1; Caenorhabditis Genetics Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA 3F10 Peroxidase (Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 12013819001, RRID:AB_390917</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 (Mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RNAPIIpSer2 (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab5095, RRID:AB_304749</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG AlexaFluor 555 (Goat Polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A21429, RRID:AB_2535850</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin IgG (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab3280, RRID:AB_303668</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG Secondary HRP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A16078, RRID:AB_2534751</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>List of oligonucleotides</td>
+      <td>This study, Supplementary file 2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>High Throughput Sequencing Data (this study)</td>
+      <td>NCBI GEO</td>
+      <td>GSE273239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>High Throughput Sequencing Data</td>
+      <td>NCBI GEO Quarato et al., 2021</td>
+      <td>GSE146057, GSE146062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>High Throughput Sequencing Data</td>
+      <td>NCBI GEO Padeken et al., 2021</td>
+      <td>GSE156548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>High Throughput Sequencing Data</td>
+      <td>NCBI GEO Seroussi et al., 2023</td>
+      <td>GSE208702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit 1 x dsDNA HS Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# Q33231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-FLAG M2 Affinity Matrix</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# A2220, RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TrIzol Reagent (phenol, Guanidine isothiocyanate, Ammonium thiocyanate)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Protease Inhibitor Tablets, EDTA-free</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A32965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nonidet P 40 substitute</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 11332473001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SureCast Acrylamide Solution (40%)</td>
+      <td>Fisher</td>
+      <td>Cat# HC2040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea &gt;99.5% Molecular Biology Grade Ultrapure</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# J75826.A1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEMED</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 17919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium persulfate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 17874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GeneRuler Ultra Low Range DNA</td>
+      <td>ThermoFisher</td>
+      <td>Cat# SM1213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ambion RNA loading buffer II</td>
+      <td>ThermoFisher</td>
+      <td>Cat# AM8547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR Gold Nucleic Acid Gel Stain</td>
+      <td>Life Technologies</td>
+      <td>Cat# S11494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bolt 4–12% Bis-Tris Plus Gels</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# NW04122BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nitrocellulose Pre-Cut Blotting Membranes</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# LC2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNA 5’ Polyphosphatase</td>
+      <td>EpiCentre</td>
+      <td>Cat# RP8092H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenol/Chloroform/Isoamyl Alcohol (pH 4.3)</td>
+      <td>Fisher</td>
+      <td>Cat# BP1754I-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 RNA Ligase 2, truncated KQ</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0373L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 RNA Ligase 1</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0204L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperScript III</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 18080–051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q5 High Fidelity DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0491L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI/ImageJ2/Fiji is just ImageJ (version 2.9.0)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRIF:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTX-Toolkit</td>
+      <td>Hannon Lab - CSHL</td>
+      <td>RRID:SCR_005534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 (Version 2.2.2)</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 (Version 1.22.2)</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR (Version 3.40.2)</td>
+      <td>Robinson et al., 2010</td>
+      <td>RRID:SCR_012802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic (Version 0.36)</td>
+      <td>Bolger et al., 2014</td>
+      <td>RRID:SCR_011848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioVenn</td>
+      <td>Hulsen et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrated Genomics Viewer</td>
+      <td>Robinson et al., 2010</td>
+      <td>RRID:SCR_011793</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans stains
 
 C. elegans strains were maintained at 20 °C on NGM plates seeded with OP50 E. coli according to standard conditions unless otherwise stated (Brenner, 1974). All strains used in this project are listed in Supplementary file 1.
 
-## CRISPR-mediated strain construction
+### CRISPR-mediated strain construction
 
 For nrde-3(cmp324[HK-AA]), enri-1(cmp328), enri-2(cmp318), and rde-3/mut-2(cmp337), we used an oligo repair template and RNA guide. For enri-1(cmp320[enri-1::mCherry::2xHA]), we used an RNA guide and PCR amplified repair template (Supplementary file 2). For injections using a single gene-specific crRNA, the injection mix included 0.25  μg/μl Cas9 protein (IDT), 100  ng/μl tracrRNA (IDT), 14  ng/μl dpy-10 crRNA, 42  ng/μl gene-specific crRNA, and 110  ng/μl of the oligo repair template. For injections using two gene-specific crRNAs, the injection mix included 0.25  μg/μl Cas9 protein (IDT), 100  ng/μl tracrRNA (IDT), 14  ng/μl dpy-10 crRNA, 21  ng/μl each gene-specific crRNA, and 110  ng/μl of each repair template.
 
 The following strains were used for injection: enri-2(cmp318) and enri-1(cmp320[enri-1::mCherry::2xHA]) into wild-type N2 strain. nrde-3(cmp324[HK-AA]) and enri-1(cmp328) into JMC237: nrde-3(tor131[GFP::3xFLAG::nrde-3]) X. rde-3/mut-2(cmp337) into USC1615: ego-1(cmp317[ego-1::degron]) I; ieSi38 [Psun-1::TIR1::mRuby::sun-1 3’ UTR] IV; nrde-3(tor131[GFP::3xFLAG::nrde-3]) X. Following injection, F1 animals with the Rol phenotype were isolated and genotyped by PCR to identify heterozygous animals with the mutations of interest, then F2 animals were further singled out to identify homozygous mutant animals.
 
-## RNAi assays
+### RNAi assays
 
 For RNAi experiment, control L4440 and lgg-1 RNAi E. coli clones were sequenced verified and cultured at 37 °C for 16 hours, then RNAi bacteria were seeded on fresh RNAi plates. Two L4 animals were transferred to seeded RNAi plates and raised at 20 °C. When the progenies of the L4 animals turn into young adults (about 4 days), the embryos of young adult animals were imaged to assess somatic granule expression.
 
-## Immunofluorescence imaging and quantification
+### Immunofluorescence imaging and quantification
 
 For immunofluorescence, C. elegans were dissected in egg buffer containing 0.1% Tween-20 and fixed in 1% formaldehyde in egg buffer as described (Phillips et al., 2009). Samples were immunostained with anti-RNA Polymerase II CTD (phosphoSer2) at 1:500 (Abcam ab5095). The secondary antibody, anti-Rabbit IgG AlexaFluor 555 was used at 1:1000 (Thermo Fisher A21429). Animals were dissected at the adult stage (24  h post L4). Imaging was performed on a DeltaVision Elite microscope (GE Healthcare) using a 60 x N.A. 1.42 oil-immersion objective, data stacks were collected and deconvolution was performed using the SoftWoRx package. 25 optical sections, for a total 12.5 µm sample thickness, are presented as a maximum intensity projection. PSer2 signal intensity was calculated in ImageJ (version 1.53 a) using a minimum of 10 individual adult gonads.
 
-## Live imaging
+### Live imaging
 
 Live imaging of C. elegans embryos was performed in M9 buffer. Young embryos were obtained by dissecting gravid adult C. elegans, and old embryos were obtained by manually picking embryos laid on the NGM plate. Live imaging of C. elegans adult germline was performed in M9 buffer containing sodium azide to prevent movement. Day-one-adult C. elegans were obtained by manually picking L4s and leaving L4s at 20 °C for about 24 hr. Imaging was performed on a DeltaVision Elite microscope (GE Healthcare) using a 60 x N.A. 1.42 oil-immersion objective. Images were pseudocolored using Adobe Photoshop.
 
-## Granule number quantification
+### Granule number quantification
 
 Granule number quantification was performed in FIJI/ImageJ2 (version 2.9.0). At least 10 embryos were imaged on a DeltaVision Elite microscope with 37 optical sections of a total 22.20 µm sample thickness from the bottom of the sample. Images were deconvolved to eliminate backgrounds. Z stacks were opened using the 3D object counter plugin for FIJI, and the granule counting threshold for each image was manually adjusted to obtain the least background and most granules.
 
-## Colocalization analysis
+### Colocalization analysis
 
 Quantitative colocalization analysis between different granules was performed in FIJI/ImageJ2 (version 2.9.0) using the Coloc2 package and 100 cell staged embryos imaged on a DeltaVision Elite microscope. At least 3 granules from each embryo, and at least 4 individual embryos for a total of at least 20 granules were used to calculate Pearson’s R value.
 
-## Western blot
+### Western blot
 
 Synchronized adult C. elegans were harvested (∼72 hours at 20 °C after L1 arrest) and 200 adults were loaded per lane. Proteins were resolved on 4–12% Bis-Tris polyacrylamide gels (Thermo Fisher, NW04122BOX), transferred to nitrocellulose membranes (Thermo Fisher, LC2001), and probed with rat anti-HA-peroxidase 1:1000 (Roche 12013819001), mouse anti-FLAG 1:1000 (Sigma, F1804), or mouse anti-actin 1:10,000 (Abcam ab3280). Secondary HRP antibodies were purchased from Thermo Fisher. Unedited western blots are provided in the Source Data File.
 
-## Small RNA library preparation and sequencing
+### Small RNA library preparation and sequencing
 
 For C. elegans embryo staging and collection, synchronized arrested L1s were grown on enriched peptone plates at 17 °C until the young adult stage. Adult C. elegans stage was monitored carefully under DeltaVision microscope by live imaging. For early embryo collection (≤ 100 cell), adult animals were washed off from plates with H2O and bleached as soon as the first animals had 1–4 eggs (around 68–70 hours depending on the strain and the incubator temperature). For late embryo collection (≥ 300 cell), adult animals were washed off from plates with H2O and bleached when about half of the worms had 1~6 eggs (around 70–72 hours depending on the strain and the incubator temperature). After bleaching, embryos were washed twice with M9 buffer, and filtered through 40 µm cell strainers (Fisherbrand Sterile Cell Strainers, 40 µm) twice to clear the residual worm body. To reach ≥ 300 cell stage for late embryo collection, embryos were additionally incubated in M9 buffer at 20 °C for 4.5 hr. Then embryos were washed once with IP buffer (50 mM Tris-Cl pH 7.5, 100 mM KCl, 2.5 mM MgCl2, 0.1% Nonidet P40 substitute) containing Protease Inhibitor (Thermo Fisher A32965). Embryos were kept on ice during washes to prevent further development. 500,000 embryos were collected for each replicate. Following washes, embryos were flash-frozen by placing tubes in a container with ethanol and dry ice. A small aliquot of embryos was examined on the Deltavision microscope to confirm the developmental stage immediately before freezing. Frozen embryos were stored at –80 °C until immunoprecipitation.
 
 For immunoprecipitation followed by small RNA sequencing in embryos, ∼500,000 synchronized embryos were sonicated with Fisher Sonifier 550 with a microtip (15 s on, 45 s off, 10% power, total 2 min on time). After sonication, insoluble particulate was removed by centrifugation at 21,000 × g for 30 min. Immunoprecipitation was performed using anti-FLAG Affinity Matrix (Sigma Aldrich, A2220). NRDE-3-bound RNAs were isolated using TRIzol reagent (Thermo Fisher, 15596018), followed by chloroform extraction and isopropanol precipitation. Small RNAs (18–30-nt) were size selected on homemade 10% Urea-polyacrylamide gels from total RNA samples. Small RNAs were treated with 5’ RNA polyphosphatase (Epicenter RP8092H) and ligated to 3’ pre-adenylated adapters with Truncated T4 RNA ligase (NEB M0373L). Small RNAs were then hybridized to the reverse transcription primer, ligated to the 5’ adapter with T4 RNA ligase (NEB M0204L), and reverse transcribed with Superscript III (Thermo Fisher 18080–051). Small RNA libraries were amplified using Q5 High-Fidelity DNA polymerase (NEB M0491L) and size selected on a homemade 10% polyacrylamide gel. Library concentration was determined using the Qubit 1 X dsDNA HS Assay kit (Thermo Fisher Q33231) and quality was assessed using the Agilent BioAnalyzer. Libraries were sequenced on the Illumina NextSeq2000 (SE 75 bp reads) platform. Primer sequences are available in Supplementary file 2. Differentially expressed gene lists and gene lists used in this paper can be found in Supplementary file 3. Sequencing library statistics summary can be found in Supplementary file 4.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 For small RNA libraries, sequences were parsed from adapters and quality filtered using FASTX-Toolkit (version 0.0.13) (Hannon, 2010). Filtered reads were mapped to the C. elegans genome, WS258, using Bowtie2 (version 2.5.0) (Langmead and Salzberg, 2012). Mapped reads were assigned to genomic features using featureCounts which is part of the Subread package (version 2.0.1) (Liao et al., 2014). Differential expression analysis was performed using edgeR (3.40.2) (Robinson et al., 2010). To define gene lists from IP experiments, a twofold-change cutoff, an edgeR adjusted p-value of ≤0.05, and at least 10 RPM in the IP libraries were required to identify genes with significant changes in small RNA levels.

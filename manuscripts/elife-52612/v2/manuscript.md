@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Cleavage of APP by BACE1/β-secretase initiates the amyloidogenic cascade leading to Amyloid-β (Aβ) production. α-Secretase initiates the non-amyloidogenic pathway preventing Aβ production. Several APP mutations cause familial Alzheimer’s disease (AD), while the Icelandic APP mutation near the BACE1-cleavage site protects from sporadic dementia, emphasizing APP’s role in dementia pathogenesis. To study APP protective/pathogenic mechanisms, we generated knock-in rats carrying either the protective ( App ) or the pathogenic Swedish mutation ( p App ), also located near the BACE1-cleavage site. α-Cleavage is favored over β-processing in s App rats. Consequently, non-amyloidogenic and amyloidogenic APP metabolites are increased and decreased, respectively. The reverse APP processing shift occurs in p App rats. These opposite effects on APP β/α-processing suggest that protection from and pathogenesis of dementia depend upon combinatorial and opposite alterations in APP metabolism rather than simply on Aβ levels. The Icelandic mutation also protects from aging-dependent cognitive decline, suggesting that similar mechanisms underlie physiological cognitive aging. s
+Cleavage of APP by BACE1/β-secretase initiates the amyloidogenic cascade leading to Amyloid-β (Aβ) production. α-Secretase initiates the non-amyloidogenic pathway preventing Aβ production. Several APP mutations cause familial Alzheimer’s disease (AD), while the Icelandic APP mutation near the BACE1-cleavage site protects from sporadic dementia, emphasizing APP’s role in dementia pathogenesis. To study APP protective/pathogenic mechanisms, we generated knock-in rats carrying either the protective (Appp) or the pathogenic Swedish mutation (Apps), also located near the BACE1-cleavage site. α-Cleavage is favored over β-processing in Appp rats. Consequently, non-amyloidogenic and amyloidogenic APP metabolites are increased and decreased, respectively. The reverse APP processing shift occurs in Apps rats. These opposite effects on APP β/α-processing suggest that protection from and pathogenesis of dementia depend upon combinatorial and opposite alterations in APP metabolism rather than simply on Aβ levels. The Icelandic mutation also protects from aging-dependent cognitive decline, suggesting that similar mechanisms underlie physiological cognitive aging.
 
 ## Introduction
 
@@ -28,17 +28,17 @@ Recent developments in gene-editing technologies can make the rat once more the 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig1-v2.jpg)
 
-**Figure 1.:** App is mutated to contain protective and humanizing mutations and App mRNA expression is normal in App KI rats.p(A) Alignment of Aβ40 region from wildtype rats (top), App rats (middle), and hApp rats (bottom). 6E10 epitopes are in red, 4G8 epitopes are in blue. Humanizing mutations are in highlighted in black. (pB) PCR amplification of App gene exon-16 from App and w/wApp rats and sequencing of PCR product shows that the humanizing (G to C, T to A and GC to AT substitution) and protective (the G to A substitution) mutations were correctly inserted. Substituted nucleotides are highlighted in gray. The amino acid substitutions introduced by the mutations are highlighted in gray above the DNA sequences (G to T = A to T; G to C = G to R; T to A = Y to F; and GC to AT = R to H). (p/hC) Levels of App mRNA were measured at p21 and normalized to Gapdh mRNA expression. We used the following male and female animals: App, 3 males and 2 females; h/hApp, 3 males and 2 females. Data were analyzed by unpaired student’s t-test, and presented as average (p/pApp/Gapdh)± SEM.Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) Alignment of Aβ40 region from wildtype rats (top), Apph rats (middle), and Appp rats (bottom). 6E10 epitopes are in red, 4G8 epitopes are in blue. Humanizing mutations are in highlighted in black. (B) PCR amplification of App gene exon-16 from Appw/w and Appp/h rats and sequencing of PCR product shows that the humanizing (G to C, T to A and GC to AT substitution) and protective (the G to A substitution) mutations were correctly inserted. Substituted nucleotides are highlighted in gray. The amino acid substitutions introduced by the mutations are highlighted in gray above the DNA sequences (G to T = A to T; G to C = G to R; T to A = Y to F; and GC to AT = R to H). (C) Levels of App mRNA were measured at p21 and normalized to Gapdh mRNA expression. We used the following male and female animals: Apph/h, 3 males and 2 females; Appp/p, 3 males and 2 females. Data were analyzed by unpaired student’s t-test, and presented as average (App/Gapdh)± SEM.
 
 The customary approach to study AD pathogenesis is to determine the mechanisms causing neurodegeneration in disease model organisms, such as the Apps rats. The Appp rats add a complementary approach aimed to determine the mechanisms by which the protective APP variant prevents age-associated cognitive decline and AD. Here, we present an analysis of Appp rats, centered on the effects of this variant on APP metabolism. We compare these metabolic changes to those caused by the Swedish pathogenic mutation. Finally, we tested how the Swedish and protective APP mutants interact in vivo to determine levels of APP metabolism.
 
 ## Results
 
-## App mRNA expression is normal in Appp rats
+### App mRNA expression is normal in Appp rats
 
 The founder rat (F0#88, generated as described in the Materials and methods section) carrying the p and humanizing mutations was crossed to WT (Appw/w) Long-Evans rats to generate F1-Appp/w rats. F1-Appp/w rats were crossed to WT Long-Evans to generate F2-Appp/w rats. To reduce to probability that F5 rats carry unidentified off-target mutations (except those, if present, on Chr. 11) to ~1.5625%, this crossing was repeated three more times to obtain F5-Appp/w rats. Male and female Appp/h rats were crossed to generate Apph/h, Appp/h and Appp/p animals. The humanizing and protective Icelandic mutations (Figure 1A) were correctly inserted into the Appp/h genome (Figure 1B) and expression of App in Appp/p brains was comparable to that detected in Apph/h brains (Figure 1C, p=0.7576). We have previously shown that App mRNA levels in Apph/h brains was identical to those observed in WT (Appw/w) Long-Evans rats (Tambini et al., 2019). Thus, the introduced humanizing plus protective Icelandic mutations do not alter App mRNA expression.
 
-## Gene-dosage-dependent increased α-processing and reduced β-cleavage of APP in Appp Knock In rats
+### Gene-dosage-dependent increased α-processing and reduced β-cleavage of APP in Appp Knock In rats
 
 APP is cleaved by several proteases. The most studied APP processing pathways involve APP cleavage by α-, β- and γ-secretases. Cleavage of APP by β-secretase takes place predominantly in acidic compartments: this processing releases a long (595 amino acid long, if referring to the APP695 isoform- the most highly expressed in brain) soluble NH2-terminal APP ectodomain (sAPPβ) and a membrane-bound 99 amino acid long fragment (C99 or βCTF). βCTF is cleaved with lax site specificity by γ-secretase into Aβ peptide and the APP intracellular domain (AICD/AID). Alternatively, α-secretase cleaves APP along the secretory pathway or on the plasma membrane. This cleavage occurs within the Aβ sequence to produce soluble APPα (sAPPα) and a COOH-terminal membrane-bound 83 amino acid long fragment (C83 or αCTF). αCTF can be also cleaved by γ-secretase into a ‘shorter Aβ’ peptide, called P3 (see Figure 3A for a depiction of the major Aβ and P3 species), and AID.
 
@@ -46,7 +46,7 @@ The steady-state levels of APP metabolites in the brain depend on the rate of pr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig2-v2.jpg)
 
-**Figure 2.:** App allele contains the humanizing and protective mutations, which reduces β-processing and increases α-processing of APP.pWestern blot (WB) analysis of brain lysate isolated from App, w/wApp, δ7/δ7App, h/hApp, and s/sApp rats with: (p/pA) Y188, an antibody that detects mAPP, imAPP, αCTF, and βCTF. Specific APP signals are detected from all animals except the App rats); (δ7/δ7B) M3.2, a mouse monoclonal antibody that detects only rat WT APP and βCTF; (C) 6E10, a mouse monoclonal antibody that detects only APP and βCTF carrying the humanizing mutations. (D) WB analysis with anti-sAPPα and anti-sAPPβ-WT (absent in App controls, *=non specific signal). (δ7/δ7E–K) Quantification of APP metabolites in App and h/hApp rats normalized to GAPDH; APP levels as detected by either 6E10 (p/pE) or Y188 (F); βCTF levels as detected by either 6E10 (G) or Y188 (H); αCTF levels as detected by Y188 (I); βCTF/αCTF ratio as measured by either 6E10-βCTF (J) or Y188-βCTF (K) quantitation values. Quantification of sAPPβ (L) and sAPPα (M) WB levels. (N) Aβ40 levels in App and h/hApp samples measured by Wako ELISA. Overexposed WBs are provided in panels A-B to show CTF levels clearly. Quantitations were performed on non-saturated exposures. Data are represented as mean ± SEM. Statistical analyses are by unpaired student’s t-test (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p21. We used the following male and female animals: 2E, F, G, H, I, J, K, N; p/pApp, 2 males and 2 females; h/hApp, 2 males and 2 females: 2L and 2M; p/pApp, 3 males and 2 females; h/hApp, 3 males and 2 females.p/pFigure 2—source data 1.Figure 2E,F,G,H,I,J,K,L,M.
+**Figure 2.:** Western blot (WB) analysis of brain lysate isolated from Appw/w, Appδ7/δ7, Apph/h, Apps/s, and Appp/p rats with: (A) Y188, an antibody that detects mAPP, imAPP, αCTF, and βCTF. Specific APP signals are detected from all animals except the Appδ7/δ7 rats); (B) M3.2, a mouse monoclonal antibody that detects only rat WT APP and βCTF; (C) 6E10, a mouse monoclonal antibody that detects only APP and βCTF carrying the humanizing mutations. (D) WB analysis with anti-sAPPα and anti-sAPPβ-WT (absent in Appδ7/δ7 controls, *=non specific signal). (E–K) Quantification of APP metabolites in Apph/h and Appp/p rats normalized to GAPDH; APP levels as detected by either 6E10 (E) or Y188 (F); βCTF levels as detected by either 6E10 (G) or Y188 (H); αCTF levels as detected by Y188 (I); βCTF/αCTF ratio as measured by either 6E10-βCTF (J) or Y188-βCTF (K) quantitation values. Quantification of sAPPβ (L) and sAPPα (M) WB levels. (N) Aβ40 levels in Apph/h and Appp/p samples measured by Wako ELISA. Overexposed WBs are provided in panels A-B to show CTF levels clearly. Quantitations were performed on non-saturated exposures. Data are represented as mean ± SEM. Statistical analyses are by unpaired student’s t-test (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p21. We used the following male and female animals: 2E, F, G, H, I, J, K, N; Apph/h, 2 males and 2 females; Appp/p, 2 males and 2 females: 2L and 2M; Apph/h, 3 males and 2 females; Appp/p, 3 males and 2 females.
 
 Next, we used an antibody raised against the COOH-terminus of human sAPPβ and an antibody raised against the COOH-terminus of sAPPα to perform WB analysis on soluble brain fractions. sAPPβ was significantly lower in Appp/p as compared to Apph/h brains (Figure 2D, upper panel: quantification in Figure 2L -P = 0.0014). In contrast, sAPPα was significantly higher in Appp/p as compared to Apph/h brains (Figure 2D, lower panel: quantification in Figure 2M -P = 0.0001). These findings support the notion that the APPp mutant expressed by the Appp allele is cleaved more efficiently by α-secretase and less efficiently by β-secretase, just like the human counterpart.
 
@@ -58,17 +58,25 @@ The WAKO Aβ42 ELISA kit could not reliably measure Aβ42, which is considered t
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig3-v2.jpg)
 
-**Figure 3.:** App rats shows decreased APP processing by β-secretase and increased processing by α-secretase.pTo test whether the APP protective mutation results in the expected changes in APP metabolism, we extracted brain tissue from a larger cohort that can identify sex-dependent changes in App, h/hApp and p/hApp 28 day old rats. (p/pA) Left panel, Amino acid sequence of Aβ and P3 peptides recognized by Meso Scale Discovery kits. Detection antibody epitopes for 6E10 (red) and 4G8 (blue) are shown. Capture antibodies recognize Aβ42 and P3-26 (top), Aβ40 and P3-24 (middle), and Aβ38 and P3-22 (bottom). Right panel, Validation of ELISAs of Aβ/P3-4G8, Aβ−6E10, sAPPα, and sAPPβ using App and δ7/δ7App brain lysates. (h/hB) ELISA of brain lysates for Aβ38 and P3-22 (left) and Aβ38 (right) showed that no significant differences between in App, h/hApp and p/hApp rats. (p/pC) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right) showed a gene-dose dependent and sex independent decrease as follows: App > h/hAppp > p/hAppp. (p/pD) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right) showed a gene-dose dependent and sex independent decrease as follows: App > h/hAppp > p/hAppp. (p/pE) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (F) ELISA of sAPPα and sAPPβ of App, h/hApp, and p/hApp rat brains separated by sex and (p/pG) with sexes pooled. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype. To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).Figure 3—source data 1.Figure 3B,C,D,E,F,G.
+**Figure 3.:** To test whether the APP protective mutation results in the expected changes in APP metabolism, we extracted brain tissue from a larger cohort that can identify sex-dependent changes in Apph/h, Appp/h and Appp/p 28 day old rats. (A) Left panel, Amino acid sequence of Aβ and P3 peptides recognized by Meso Scale Discovery kits. Detection antibody epitopes for 6E10 (red) and 4G8 (blue) are shown. Capture antibodies recognize Aβ42 and P3-26 (top), Aβ40 and P3-24 (middle), and Aβ38 and P3-22 (bottom). Right panel, Validation of ELISAs of Aβ/P3-4G8, Aβ−6E10, sAPPα, and sAPPβ using Appδ7/δ7 and Apph/h brain lysates. (B) ELISA of brain lysates for Aβ38 and P3-22 (left) and Aβ38 (right) showed that no significant differences between in Apph/h, Appp/h and Appp/p rats. (C) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right) showed a gene-dose dependent and sex independent decrease as follows: Apph/h > Apppp/h > Apppp/p. (D) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right) showed a gene-dose dependent and sex independent decrease as follows: Apph/h > Apppp/h > Apppp/p. (E) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (F) ELISA of sAPPα and sAPPβ of Apph/h, Appp/h, and Appp/p rat brains separated by sex and (G) with sexes pooled. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype. To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
 
 Next, we measure sAPPα and sAPPβ using the MSD ELISA kit, which is also specific (see Figure 3A, the two panels in the right end-side showing signals in Apph/h but not Appδ7/δ7 rats), in total brain homogenates rather than on soluble brain fractions, as done for the experiments shown in Figure 2D,L and M. We used total brain homogenates for the following reasons. While α-secretase cleaves APP in the secretory pathway or on the plasma membrane releasing sAPPα into the extracellular fluid, β-secretase cleaves mAPP in acidic organelles, including synaptic vesicles and late endosomes. A fraction of sAPPβ is released extracellularly during exocytosis but significant amounts of sAPPβ are present in intracellular compartments. Analysis of ELISA by sex showed some significant decrease in sAPPβ (F (5, 24)=4.552, p=0.0046), but not in sAPPα (F (5, 24)=2.263, p=0.0806) (Figure 3F). When data from males and females were pooled, we detected a gene-dosage-dependent increase in sAPPα (F (5, 24)=6.725, p=0.0043) and a significant decrease in sAPPβ (F (5, 24)=12.64, p=0.0001) in Appp/p rats (Figure 3G).
 
 Samples from these 30 animals were then analyzed by WB. Examples of the WB analyses with Y188 and an anti-GAPDH antibody are shown in Figure 4H,I and J. Total APP levels were not changed in either male or females (Figure 5A, males F (2, 12)=1.756, p=0.2144); females (F (2, 12)=2.367, p=0.1360). Quantification of mature APP (mAPP), immature APP (imAPP), αCTF and βCTF showed the following: levels of mAPP (males F (2, 12)=1.493, p=0.2635; females F (2, 12)=2.090, p=0.1615, Figure 4C) and imAPP were not significantly changed -except for a reduction in imAPP levels in female Appp/h brains (males F (2, 12)=1.036, p=0.3846; females F (2, 12)=4.180, p=0.0419, Figure 4B), which may or may not be confirmed in further analyses- in animals carrying the protective Icelandic mutation. The mAPP/imAPP ratio was also not changed (Figure 4D, males F (2, 12)=1.406, p=0.2828; females F (2, 12)=2.009, p=0.1768). βCTF levels were significantly lower in Appp/p females as compared to Apph/h females (Figure 4E, males F (2, 12)=4.131, p=0.0431; females F (2, 12)=4.873, p=0.0282). Levels of αCTF, albeit slightly higher in Appp/p rats, were also not significantly different (Figure 4F, males F (2, 12)=3.276, p=0.0732; females F (2, 12)=1.869, p=0.1965). However, the βCTF/αCTF ratio was decreased significantly in a gene-dosage dependent manner in both sexes (Figure 4G, males F (2, 12)=15.15, p=0.0005; females F (2, 12)=27.27, p<0.0001). The blots used for quantitation are shown in Figure 4—figure supplement 1. Overall, the data suggest that the protective Icelandic mutation reduced the rate of APP processing by β-secretase and increased rate of APP cleavage by α-secretase in a gene-dosage dependent manner.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig4-v2.jpg)
+
+**Figure 4.:** Quantitation of WB analysis (A–G) with representative blots (H–J). (A) Normalized total APP levels in Apph/h, Appp/h and Appp/p male (left) and female (right) rats. (B) Normalized imAPP levels in Apph/h, Appp/h and Appp/p male (left) and female (right) rats. (C) Normalized mAPP levels in Apph/h, Appp/h and Appp/p male (left) and female (right) rats. (D) Ratio of mAPP:imAPP in Apph/h, Appp/h and Appp/p rats. (E) Normalized β-CTF levels in Apph/h, Appp/h and Appp/p male (left) and female (right) rats. (F) Normalized α-CTF levels in Apph/h, Appp/h and Appp/p male (left) and female (right) rats. (G) Ratio of β-CTF: α-CTF. (H) Representative blot against C-terminus of APP (I) Longer exposure of α-APP-C-terminus blot to detect α-CTF and β-CTFs. (J) Anti-GAPDH loading control. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in males. (B) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in females.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig5-v2.jpg)
 
-**Figure 5.:** App rats shows increased APP processing by β-secretase and decreased processing by α-secretase.sTo confirm the Swedish mutation results in the expected changes in APP metabolism, we extracted brain tissue from a larger cohort that can identify sex-dependent changes in App, h/hApp, and s/hApp 28 day old rats. (s/sA) ELISA of brain lysates for Aβ38 and P3-22 (left) showed that no significant differences between in App, h/hApp, and s/hApp when P3-22 is considered, however Aβ38 (right) showed a gene-dose dependent and sex independent increase as follows: s/sApp < h/hApps < s/hApps. (s/sB) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right) showed a gene-dose dependent and sex independent decrease as follows: App < h/hApps < s/hApps. (s/sC) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right) showed a gene-dose-dependent and sex-independent decrease as follows: App < h/hApps < s/hApps. (s/sD) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (E) ELISA of sAPPα (F) ELISA of sAPPβ-WT (left) sAPPβ-Sw (middle) and the calculated sum of both sAPPβ species (right). Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype, except for male App (n = 4). To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).s/sFigure 5—source data 1.Figure 5A,B,C,D,E,F.
+**Figure 5.:** To confirm the Swedish mutation results in the expected changes in APP metabolism, we extracted brain tissue from a larger cohort that can identify sex-dependent changes in Apph/h, Apps/h, and Apps/s 28 day old rats. (A) ELISA of brain lysates for Aβ38 and P3-22 (left) showed that no significant differences between in Apph/h, Apps/h, and Apps/s when P3-22 is considered, however Aβ38 (right) showed a gene-dose dependent and sex independent increase as follows: Apph/h < Appss/h < Appss/s. (B) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right) showed a gene-dose dependent and sex independent decrease as follows: Apph/h < Appss/h < Appss/s. (C) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right) showed a gene-dose-dependent and sex-independent decrease as follows: Apph/h < Appss/h < Appss/s. (D) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (E) ELISA of sAPPα (F) ELISA of sAPPβ-WT (left) sAPPβ-Sw (middle) and the calculated sum of both sAPPβ species (right). Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype, except for male Apps/s (n = 4). To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
 
-## Gene-dosage-dependent decreased α-processing and increased β-cleavage of APP in Apps Knock In rats
+### Gene-dosage-dependent decreased α-processing and increased β-cleavage of APP in Apps Knock In rats
 
 We have recently shown that Apps/s rats, that is rats carrying two App alleles with the humanizing and pathogenic Swedish mutations, show an opposite phenotype: that is reduced the rate of APP processing by α-secretase and increased rate of APP cleavage by β-secretase (Tambini et al., 2019). To confirm these findings, to test whether these APP metabolic changes are also evident in heterozygous Apps/h rats, which genocopy the condition that causes dementia in humans, and to determine whether sex influences these alterations, we analyzed a new cohort of Apph/h, Apps/h and Apps/s rats.
 
@@ -78,15 +86,29 @@ Next, we measured sAPPα and sAPPβ. As shown in Figure 5E (F (5, 23)=5.762, p=0
 
 Western analysis was performed on these 30 samples to detect changes in APP-CTF levels consistent with a shift toward β-processing of APP. Examples of the WB analyses with Y188 and an anti-GAPDH antibody are shown in Figure 6H,I and J. Probing against the C-terminus of APP revealed a trend towards decreased amounts of total full-length APP in Apps/s rats, which reached significance only in male Apps/s rats compared to Apph/h rats (Figure 6A, males F (2, 11)=11.08, p=0.0023; females F (2, 12)=2.987, p=0.0886). Separating out the glycosylated, mature form, there was no statistical difference in imAPP levels in any of the genotypes of each sex (Figure 6B, males F (2, 11)=2.125, p=0.1658; females F (2, 12)=1.516, p=0.2589), however, a significant decrease was seen in mAPP levels in Apps/s rats compared to Apph/h (Figure 6C, males F (2, 11)=15.57, p=0.0006; females F (2, 12)=5.053, p=0.0256). The data suggest a trend toward a gene-dose dependent decrease in mAPP levels, but the data are not significant for all comparisons and, when mAPP levels are normalized to imAPP levels, the effect is only seen in Apps/s rats, with no sex differences (Figure 6D, males F (2, 11)=5.292, p=0.0245; females F (2, 12)=11.05, p=0.0019). This decrease, which we also observed in a different rat cohort (Tambini et al., 2019), is not likely the result of decreased expression of APP, given that APP mRNA levels are unchanged in this model (Tambini et al., 2019), but may reflect, given the large increase in Aβ and sAPPβ-Sw production (Figure 5), a β-processing driven depletion of the total pool of mAPP. Previous generation of a similar App-KI mouse model of the Swedish mutation did not reveal any alteration in mAPP levels, though this possibility was not specifically tested (Saito et al., 2014).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig6-v2.jpg)
+
+**Figure 6.:** Quantitation of WB analysis (A–G) with representative blots (H–J). (A) Normalized total APP levels in Apph/h, Apps/h, and Apps/s male (left) and female (right) rats, show a gene-dose dependent decrease in Apps rats. (B) Normalized imAPP levels in Apph/h, Apps/h, and Apps/s male (left) and female (right) rats. (C) Normalized mAPP levels in Apph/h, Apps/h, and Apps/s male (left) and female (right) rats show a gene-dose dependent decrease in Apps rats. (D) Ratio of mAPP:imAPP in Apph/h, Apps/h, and Apps/s rats. (E) Normalized βCTF levels in Apph/h, Apps/h, and Apps/s male (left) and female (right) rats. (F) Normalized αCTF levels in Apph/h, Apps/h, and Apps/s male (left) and female (right) rats. (G) Ratio of βCTF: αCTF. (H) Representative blot against C-terminus of APP (I) Longer exposure of α-APP-C-terminus blot to detect αCTF and βCTFs. (J) Anti-GAPDH loading control. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype, except for male Apps/s (n = 4).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in males. As it is evident from the blots, one Apps/s sample was degraded (indicated with *) and therefore that animal was excluded from any analysis. (B) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in females.
+
 βCTF levels were significantly increased in Apps/s rats of both sexes (Figure 6E, males F (2, 11)=7.926, p=0.0074; females F (2, 12)=5.819, p=0.0171). Levels of αCTF were not significantly different (Figure 6F, males F (2, 11)=0.620, p=0.5557; females (F (2, 12)=0.732, p=0.5012). The βCTF/αCTF ratio was increased significantly in a gene-dosage dependent manner in both sexes (Figure 6G, males F (2, 11)=66.89, p<0.0001; females F (2, 12)=24.78, p<0.0001). The blots used for quantitation are shown in Figure 6—figure supplement 1.Overall, the data suggest that this pathogenic mutation reduced the rate of APP processing by α-secretase and increased rate of APP cleavage by β-secretase in a gene-dosage dependent manner.
 
-## Opposite and gene-dosage-dependent changes in βCTF steady-state levels in Appp and Apps Knock In rats
+### Opposite and gene-dosage-dependent changes in βCTF steady-state levels in Appp and Apps Knock In rats
 
 As stated above, 6E10, which detects βCTF but not αCTF, can more accurately measure βCTF levels. Thus, we performed 6E10 WB analysis of Swedish and Icelandic KI rat brain lysates. As shown in Figure 7A and B, App Swedish rats show a significant decrease in APP (females F (2, 12)=67.62, p<0.0001; males F (2, 11)=5.760, p=0.0194) and a significant increase in βCTF steady-state levels (females F (2, 12)=49.69, p<0.0001; males (F (2, 11)=28.55, p<0.0001): these changes are gene-dosage dependent. The blots used for quantitation are shown in Figure 7—figure supplement 1A and B.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative blot with 6E10 (Long exposure was used to quantify βCTF, Short exposure was used to quantify APP) and anti-GAPDH on Apph/h, Apps/h, and Apps/s female and male brain lysates. The blots used for quantitation are shown in Figure 7—figure supplement 1A and B. (B) Total APP, βCTF and GAPDH were normalized against the average signal of the control Apph/h samples and shown as ratio of the normalized APP/GAPDH and βCTF/GAPDH ratios. APP and βCTF are decrease and increased in Apps rats, respectively, in a gene-dose-dependent manner. Data are represented as mean ± SEM. Data were analyzed by ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype, except for male Apps/s (n = 4). (C) Representative blot with 6E10 (Long exposure was used to quantify βCTF, Short exposure was used to quantify APP) and anti-GAPDH on Apph/h and Appp/p female and male brain lysates. The blots used for quantitation are shown in Figure 7—figure supplement 1C and D. Total APP, βCTF and GAPDH were normalized against the average signal of the control Apph/h samples. Normalized βCTF (D) and APP (E) values for female, male and female + male samples. (F) Normalized βCTF/APP ratios for female, male and female + male samples. (G) Normalized βCTF/GAPDH ratios for female, male and female + male samples. (H) Normalized βCTF/Ponc (Ponceau stain) ratios for female, male and female + male samples. Overall the data indicate a reduction in βCTF in Appp/p rats. Data are represented as mean ± SEM. Statistical analyses are by unpaired student’s t-test (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig7-figsupp1-v2.jpg)
+
 Given the more subtle changes in APP processing caused by the Icelandic mutation, we compared control Apph/h animals to homozygous Appp/p KI rats. Assessments of βCTF and APP levels (representative Western blots are shown in Figure 7C) showed a decrease in βCTF (Figure 7D); this decrease was significant in females (p=0.0023), trended toward significance in males (p=0.0549), and significance increased when male and female data were grouped together (p=0.0007). In contrast, APP levels were similar in Apph/h and Appp/p animals (Figure 7E, females p=0.2123; males p=0.4846; females + males p=0.1810). To analyze further βCTF levels, we used 3 internal controls and expressed βCTF as ratios of these controls: 1) βCTF/APP, which measures the relative abundance of βCTF compared to its precursor APP (Figure 7F); 2) βCTF/GAPDH, which measures the relative abundance of βCTF to the housekeeping protein GAPDH (Figure 7G, this control is widely used based on the assumption, which may not be always correct, that GAPDH levels remain always constant); 3) βCTF/Ponc (Figure 7H), which measures the relative abundance of βCTF compared to the total amount of proteins blotted on the Western blot membrane as determined by ponceau stain and is, in theory, a better control. All 3 analyses indicate that βCTF levels are significantly reduced in female Appp/p rats (Figure 7F, p<0.0001; Figure 7G, p=0.0002; Figure 7H, p=0.0083). As for the males, the reduction in βCTF in Appp/p rats was significant for the βCTF/APP and βCTF/GAPDH ratios and trended toward significance for the βCTF/Ponc ratio (Figure 7F, p=0.0257; Figure 7G, p=0.0059; Figure 7H, p=0.0877). The differences in βCTF levels were more obvious in female rats. Grouping male and female data increased significance (Figure 7F, p<0.0001; Figure 7G, p<0.0001; Figure 7H, p=0.0020). The blots used for quantitation are shown in Figure 7—figure supplement 1C and D.
 
-## Swedish and protective Icelandic mutations show an additive effect and no allelic interaction on APP-processing in Apps/p Knock In rats
+### Swedish and protective Icelandic mutations show an additive effect and no allelic interaction on APP-processing in Apps/p Knock In rats
 
 We wished to determine if the effects of Swedish and protective APP mutations on APP processing operate independently, or if there is interaction between the two alleles. Biochemical studies have identified that the Swedish and protective mutations result in increased and decreased affinity, respectively, of APP for BACE1. It has also been reported that APP and βCTF form homotypic dimers (Scheuermann et al., 2001; Winkler et al., 2015), therefore it is conceivable that APPSw and APPp might interact in such a way that the effect of each mutation may be abrogated or partially abrogated by the other mutant allele. Alternatively, the two alleles may act independently, in which case the effect of each variant on APP processing may be additive in Apps/p rats.
 
@@ -94,7 +116,7 @@ To test this possibility, we analyzed brain APP metabolites from Apph/h, Apps/h,
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig8-v2.jpg)
 
-**Figure 8.:** App, h/hApp, s/hApp, and p/hApp rats.s/p(A) ELISA of brain lysates for Aβ38 and P3-22 (left) and Aβ38 (right). (B) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right). (C) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right). (D) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (E) ELISA of sAPPα (F) ELISA of sAPPβ-WT (left) sAPPβ-Sw (middle) and the calculated sum of both sAPPβ species (right). Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype. To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).Figure 8—source data 1.Figure 8A,B,C,D,E,F.
+**Figure 8.:** (A) ELISA of brain lysates for Aβ38 and P3-22 (left) and Aβ38 (right). (B) ELISA of brain lysates for Aβ40 and P3-24 (left) and Aβ40 (right). (C) ELISA of brain lysates for Aβ42 and P3-26 (left) and Aβ42 (right). (D) Aβ42+P3-26/Aβ40+P3-24 ratio and Aβ42/Aβ40 ratio. (E) ELISA of sAPPα (F) ELISA of sAPPβ-WT (left) sAPPβ-Sw (middle) and the calculated sum of both sAPPβ species (right). Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences. Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype. To reduce complexity of the panels, in the graphs with both sexes only intra-sex differences are shown (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).
 
 Levels of sAPPα and sAPPβ in Apph/h, Apps/h, Appp/h, and Apps/p rats were analyzed by ELISA. In opposition to the data presented in Figure 3E, in this set of samples the protective mutation in heterozygosity does not lead to a significant increase in sAPPα levels (Figure 8E). The presence of a Swedish allele resulted in a decrease in sAPPα, significantly in males and only as a trend in females (Figures 8E,F (7 and 32)=4.657, p<0.0011), and a significant increase in sAPPβ-Sw (Figures 8F,F (7 and 32)=163.1, p<0.0001) for both sexes. Unexpectedly, female rats show a significant increase in sAPPβ-Sw in Apps/p compared to Apps/h, which might suggest some degree of allele interaction, though it is unclear how valid this finding is as this decrease is not reflected in Aβ levels, where the opposite trend is seen. Overall, the data argue that the effect of the Swedish and protective mutations on APP-processing occur independently, and the magnitude of the increase in β-processing of APP caused by the Swedish mutation is not abrogated by the presence of a protective allele.
 
@@ -102,9 +124,17 @@ To further validate this finding, we compared the Apps/p ELISA data to a simulat
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig9-v2.jpg)
 
-**Figure 9.:** App, h/hApp, s/hApp, and p/hApp rats to calculated s/pApp levels.s/pELISA values from App, h/hApp, and s/hApp rats in p/hFigure 7 were used to generate a hypothetical value for App rats. One s/ph allele value was calculated as half the value of App. This h/hh allele value was subtracted from App and s/hApp values to generate the p/hs and p allele values, respectively, which were then added together to represent a ‘hypothetical’ App rat. (s/pA) Real and calculated ELISA Aβ40 levels. (B) Real and calculated ELISA Aβ42 levels. (C) Real and calculated ELISA sAPPα levels. (D) Real and calculated ELISA total sAPPβ levels. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype.Figure 9—source data 1.Figure 9A,B,C,D.
+**Figure 9.:** ELISA values from Apph/h, Apps/h, and Appp/h rats in Figure 7 were used to generate a hypothetical value for Apps/p rats. One h allele value was calculated as half the value of Apph/h. This h allele value was subtracted from Apps/h and Appp/h values to generate the s and p allele values, respectively, which were then added together to represent a ‘hypothetical’ Apps/p rat. (A) Real and calculated ELISA Aβ40 levels. (B) Real and calculated ELISA Aβ42 levels. (C) Real and calculated ELISA sAPPα levels. (D) Real and calculated ELISA total sAPPβ levels. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype.
 
 We next performed Western analysis of Apph/h, Apps/h, Appp/h, and Apps/p rat brains to measure levels of APP and its metabolites. Examples of the WB analyses with Y188 and an anti-GAPDH antibody are shown in Figure 10H–J. Total APP levels (Figure 10A, males F (3, 16)=1.725, p=0.2022; females F (3, 16)=6.525, p=0.0043) and mAPP (Figure 10C, males F (3, 16)=2.794, p=0.0739; females F (3, 16)=7.551, p=0.0023), but not imAPP (Figure 10B, males F (3, 16)=0.5694 P=0.6432; females F (3, 16)=3.194, p=0.0520), are significantly lower in female Apps/p rats. Although βCTF (Figure 10E, males F (3, 16)=1.930, p=0.1654; females F (3, 16)=1.903, p=0.1699) and αCTF (Figure 10F, males F (3, 16)=1.481, p=0.2573; females F (3, 16)=2.582, p=0.0896) were not significantly different, we observed an expected increase in the βCTF/αCTF ratio for all animals carrying a Swedish allele (Figure 10G, males F (3, 16)=13.04, p<0.0001; females F (3, 16)=18.58, p<0.0001). The blots used for quantitation are shown in Figure 10—figure supplement 1.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig10-v2.jpg)
+
+**Figure 10.:** Quantitation of WB analysis (A–G) with representative blots (H–J). (A) Normalized total APP levels in Apph/h, Apps/h, Appp/h, and Apps/p male (left) and female (right) rats. (B) Normalized imAPP levels in Apph/h, Apps/h, Appp/h, and Apps/p male (left) and female (right) rats. (C) Normalized mAPP levels Apph/h, Apps/h, Appp/h, and Apps/p male (left) and female (right) rats. (D) Ratio of mAPP:imAPP in Apph/h, Apps/h, Appp/h, and Apps/p rats. (E) Normalized βCTF levels in Apph/h, Apps/h, Appp/h, and Apps/p male (left) and female (right) rats. (F) Normalized αCTF levels in Apph/h, Apps/h, Appp/h, and Apps/p male (left) and female (right) rats. (G) Ratio of βCTF: αCTF. (H) Representative blot against C-terminus of APP (I) Longer exposure of α-APP-C-terminus blot to detect αCTF and βCTFs. (J) Anti-GAPDH loading control. Data are represented as mean ± SEM. Data were analyzed by Ordinary one-way ANOVA followed by post-hoc Tukey's multiple comparisons test when ANOVA showed statistically significant differences (*p<0.05; **p<0.01; ***p<0.001). Animals were analyzed at p28. We used 5 male and 5 female rats for each genotype.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/52612/elife-52612-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in males. (B) Blots used to quantify GAPDH (left), mAPP and imAPP (center), αCTF and βCTF (right) in females.
 
 ## Discussion
 
@@ -128,32 +158,245 @@ Finally, the evidence that the Icelandic mutation delays/protects from what is k
 
 ## Materials and methods
 
-## Generation of App KI rats
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene App (Rattus norvegicus)</td>
+      <td>App, Amyloid beta (A4) precursor protein</td>
+      <td>http://mar2016.archive.ensembl.org/Rattus_norvegicus/Gene/Summary?g=ENSRNOG00000006997;r=11:24425005-24641858</td>
+      <td>Location: Chromosome 11: 24,425,005–24,641,858</td>
+      <td>Mutations were inserted into Exon 16</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Rattus norvegicus)</td>
+      <td>Apph</td>
+      <td>(Tambini et al., 2019)</td>
+      <td></td>
+      <td>Rat App allele with humanize Aβ region</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Rattus norvegicus)</td>
+      <td>Apps</td>
+      <td>(Tambini et al., 2019)</td>
+      <td></td>
+      <td>Rat App allele with humanize Aβ region and pathogenic Swedish mutations</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Rattus norvegicus)</td>
+      <td>Appp</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rat App allele with humanize Aβ region and protective Icelandic mutation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA1 targeting vector</td>
+      <td>This paper: http://www.vectorbuilder.com/design/report/733e7a50-b705-45cf-8f8c-8b8206e6f174</td>
+      <td></td>
+      <td>Vector expressing gRNA1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA2 targeting vector</td>
+      <td>This paper http://www.vectorbuilder.com/design/report/2a73df2c-1d5c-4e69-b43a-ee6cfaea80c6</td>
+      <td></td>
+      <td>Vector expressing gRNA1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Y188 anti APP-C terminus (Rabbit polyclonal)</td>
+      <td>Abcam Cat# ab32136</td>
+      <td>RRID:AB_2289606</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6E10 anti human APP-Aβ1-16, (Mouse monoclonal)</td>
+      <td>BioLegend Cat# 803001</td>
+      <td>RRID:AB_2564653</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M3.2 anti rodent APP-Aβ1-16, (Mouse monoclonal)</td>
+      <td>Biolegend Cat#: 805701</td>
+      <td>RRID:AB_2564982</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-sAPPα C-terminus, (Mouse monoclonal)</td>
+      <td>IBL Cat# 2B3</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human sAPPβ WT C-terminus (Rabbit polyclonal)</td>
+      <td>Covance Cat# SIG-39138</td>
+      <td>RRID:AB_662870</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human sAPPβ Sw C-terminus (Mouse monoclonal)</td>
+      <td>IBL Cat#: 6A1</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Rabbit polyclonal)</td>
+      <td>Abcam Cat# ab32136</td>
+      <td>RRID:AB_2289606</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-mouse antibodies</td>
+      <td>Southern Biotech Cat#: 1031–05</td>
+      <td>RRID:AB_2794307</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-rabbit antibodies</td>
+      <td>Southern Biotech Cat# 4050–05</td>
+      <td>RRID:AB_2795955</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-rabbit antibodies</td>
+      <td>Cell Signaling Cat# 7074</td>
+      <td>RRID:AB_2099233</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>West Dura ECL</td>
+      <td>Thermo</td>
+      <td>Cat# PI34076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human β Amyloid (1-42) ELISA Kit – High Sensitive</td>
+      <td>Wako</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human β Amyloid (1-40) ELISA Kit II</td>
+      <td>Wako</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>V-PLEX Plus Aβ Peptide Panel 1</td>
+      <td>Meso Scale Discovery</td>
+      <td>Cat# K15200G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>V-PLEX Plus Aβ Peptide Panel 1 4G8</td>
+      <td>Meso Scale Discovery</td>
+      <td>Cat# K15199G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>sAPPβ-Sw Elisa),</td>
+      <td>Meso Scale Discovery</td>
+      <td>Cat# K151BUE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>WT sAPPα/sAPPβ</td>
+      <td>Meso Scale Discovery</td>
+      <td>Cat# K15120E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ChemiDoc MP Imaging System</td>
+      <td>Biorad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Instrument/software, algorithm</td>
+      <td>MESO QuickPlex SQ 120</td>
+      <td>Meso Scale Discovery</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>xMark Spectrophotometer</td>
+      <td>Biorad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Instrument/software, algorithm</td>
+      <td>Image Lab software</td>
+      <td>Biorad</td>
+      <td>RRID:SCR_014210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Instrument/software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of App KI rats
 
 Generation of Appδ7, Apps, and Apph rats was as described previously (Tambini et al., 2019). For details, see Supplementary file 1.
 
-## Rats and ethics statement
+### Rats and ethics statement
 
 All experiments were done according to policies on the care and use of laboratory animals of the Ethical Guidelines for Treatment of Laboratory Animals of the NIH. The procedures were described and approved by the Rutgers Institutional Animal Care and Use Committee (IACUC) (protocol number 201702513). All efforts were made to minimize animal suffering and reduce the number of animals used. The animals were housed two per cage under controlled laboratory conditions with a 12 hr dark light cycle, a temperature of 22 ± 2°C. Rats had free access to standard rodent diet and tap water.
 
-## Rat brain preparation
+### Rat brain preparation
 
 Rats, 28 days old, were anesthetized with isoflurane and perfused via intracardiac catheterization with ice-cold PBS. Brains were extracted and homogenized using a glass-Teflon homogenizer (w/v = 100 mg tissue/1 ml buffer) in 20 mM Tris-base pH 7.4, 250 mM Sucrose, 1 mM EDTA, 1 mM EGTA plus phosphatase and protease inhibitors (ThermoScientific): all steps were carried out on ice or at 4°C. Total lysate was solubilized with 0.1% SDS and 1% NP-40 for 30 min rotating. Solubilized lysate was spun at 20,000 g for 10 m, the supernatant was collected and analyzed by ELISA and Western blotting. For Figure 2D, soluble lysate was prepared by the centrifugation of total lysate at 100,000 g for 30 m. The supernant was collected for further analysis.
 
-## RT-PCR
+### RT-PCR
 
 RNA was extracted from P28 rat brain’s using the RNeasy RNA Isolation kit (Qiagen 74104). cDNA was generated with a High-Capacity cDNA Reverse Transcription Kit (Thermo 4368814). Real-time PCR was performed using 50 ng of cDNA, TaqMan Fast Advanced Master Mix (Thermo 4444556), and the appropriate TaqMan (Thermo) probes. Samples were analyzed on a QuantStudio 6 Flex Real-Time PCR System (Thermo). LinRegPCR software (hartfaalcentrum.nl) was used to quantify relative mRNA amounts. The probe Rn00570673_m1 (exon junctions 11–12, 12–13, and 13–14) was used to detect rat App mRNA. Samples were normalized to Gapdh mRNA levels detected with Rn01775763_g1 (exon junctions 2–3, and 7–8).
 
-## Western analysis
+### Western analysis
 
 Protein content was quantified by Bradford analysis prior to solubilization. 15 µg of protein plus LDS Sample buffer and 10% β-mercaptoethanol (Invitrogen NP0007) were separate by PAGE on a 4–12% Bis-Tris polyacrylamide gel (Biorad 3450125), transferred onto nitrocellulose using the Trans-blot Turbo system (Biorad) and visualized by red Ponceau staining. After membranes were blocked in 5%-milk (Biorad 1706404), the following primary antibodies were applied (overnight at 4°C, at 1:1000 dilution in blocking solution (Thermo 37573): Y188 (Abcam ab32136), 6E10 (BioLegend 803001), sAPPα (IBL 2B3), M3.2 (Biolegend 805701), sAPPβ (Covance Catalog# SIG-39138), sAPPβ-Sw (IBL 6A1), and GAPDH (Sigma G9545). After extensive washings in PBS/Tween20 0.05%, the following secondary antibodies were used diluted 1:1000 in 5%-milk: anti-mouse (Southern Biotech, 1031–05) and a 1:1 mix of anti-rabbit (Southern Biotech, 4050–05) and anti-rabbit (Cell Signaling, 7074). Secondary antibodies were incubated with membranes for 30 min, RT, with shaking). After extensive washings in PBS/Tween20 0.05%, blots were developed with West Dura ECL reagent (Thermo, PI34076), visualized with ChemiDoc MP Imaging System (Biorad) and signal intensities were quantified with Image Lab software (Biorad).
 
-## ELISA
+### ELISA
 
 Initial measurements of Aβ40 and Aβ42 content of 100 µg total solubilized rat brain lysate was done with Human β Amyloid (1-42) ELISA Kit – High Sensitive (Wako) and Human β Amyloid (1-40) ELISA Kit II (Wako). Absorbances at 450 nm were read on an xMark Spectrophotometer (Biorad).
 
 For analysis of Aβ and sAPPs, the following Meso Scale Discovery kits were used: Aβ38, Aβ40, and Aβ42 were measured with V-PLEX Plus Aβ Peptide Panel 1 6E10 (K15200G) and V-PLEX Plus Aβ Peptide Panel 1 4G8 (K15199G), sAPPβ-Sw was measured with sAPP Swedish sAPPβ (K151BUE), and sAPPα/β-WT were measured with sAPPα/sAPPβ (K15120E), according to the manufacturer’s recommendations. Plates were read on a MESO QuickPlex SQ 120. Data were analyzed using Prism software and represented as mean ± SEM.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using GraphPad Prism software and expressed as mean ± s.e.m. Differences between two groups were assessed by appropriate two-tailed unpaired Student’s t-test Differences among three or more groups were assessed by One-way ANOVA. Data showing statistical significance by one-way ANOVA were subsequently analyzed by Tukey’s multiple comparisons post hoc test. p<0.05 was considered statistically significant. Statistical data are shown in the Figures.

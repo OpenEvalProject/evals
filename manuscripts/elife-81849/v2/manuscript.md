@@ -32,19 +32,19 @@
 
 1. Harvard TH Chan School of Public Health Boston United States
 2. Yale School of Public Health New Haven United States
-3. https://ror.org/00thqtb16 University of Nebraska Medical Center Omaha United States
-4. https://ror.org/01mk44223 IQVIA, Real World Solutions Durham United States
+3. University of Nebraska Medical Center Omaha United States ([ROR:00thqtb16](https://ror.org/00thqtb16))
+4. IQVIA, Real World Solutions Durham United States ([ROR:01mk44223](https://ror.org/01mk44223))
 5. Duke Center for Antimicrobial Stewardship and Infection Prevention Durham United States
-6. https://ror.org/01gbymr57 Tempus Labs Chicago United States
-7. https://ror.org/00hj8s172 Vagelos College of Physicians and Surgeons, Columbia University New York United States
-8. https://ror.org/03zjqec80 Hospital for Special Surgery New York United States
+6. Tempus Labs Chicago United States ([ROR:01gbymr57](https://ror.org/01gbymr57))
+7. Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+8. Hospital for Special Surgery New York United States ([ROR:03zjqec80](https://ror.org/03zjqec80))
 9. National Basketball Association New York United States
 
 † Corresponding author
 
 ## Abstract
 
-The combined impact of immunity and SARS-CoV-2 variants on viral kinetics during infections has been unclear. We characterized 1,280 infections from the National Basketball Association occupational health cohort identified between June 2020 and January 2022 using serial RT-qPCR testing. Logistic regression and semi-mechanistic viral RNA kinetics models were used to quantify the effect of age, variant, symptom status, infection history, vaccination status and antibody titer to the founder SARS-CoV-2 strain on the duration of potential infectiousness and overall viral kinetics. The frequency of viral rebounds was quantified under multiple cycle threshold (Ct) value-based definitions. Among individuals detected partway through their infection, 51.0% (95% credible interval [CrI]: 48.3–53.6%) remained potentially infectious (Ct <30) 5 days post detection, with small differences across variants and vaccination status. Only seven viral rebounds (0.7%; N=999) were observed, with rebound defined as 3+days with Ct <30 following an initial clearance of 3+days with Ct ≥30. High antibody titers against the founder SARS-CoV-2 strain predicted lower peak viral loads and shorter durations of infection. Among Omicron BA.1 infections, boosted individuals had lower pre-booster antibody titers and longer clearance times than non-boosted individuals. SARS-CoV-2 viral kinetics are partly determined by immunity and variant but dominated by individual-level variation. Since booster vaccination protects against infection, longer clearance times for BA.1-infected, boosted individuals may reflect a less effective immune response, more common in older individuals, that increases infection risk and reduces viral RNA clearance rate. The shifting landscape of viral kinetics underscores the need for continued monitoring to optimize isolation policies and to contextualize the health impacts of therapeutics and vaccines. Supported in part by CDC contract #200-2016-91779, a sponsored research agreement to Yale University from the National Basketball Association contract #21-003529, and the National Basketball Players Association.
+Background:The combined impact of immunity and SARS-CoV-2 variants on viral kinetics during infections has been unclear.Methods:We characterized 1,280 infections from the National Basketball Association occupational health cohort identified between June 2020 and January 2022 using serial RT-qPCR testing. Logistic regression and semi-mechanistic viral RNA kinetics models were used to quantify the effect of age, variant, symptom status, infection history, vaccination status and antibody titer to the founder SARS-CoV-2 strain on the duration of potential infectiousness and overall viral kinetics. The frequency of viral rebounds was quantified under multiple cycle threshold (Ct) value-based definitions.Results:Among individuals detected partway through their infection, 51.0% (95% credible interval [CrI]: 48.3–53.6%) remained potentially infectious (Ct <30) 5 days post detection, with small differences across variants and vaccination status. Only seven viral rebounds (0.7%; N=999) were observed, with rebound defined as 3+days with Ct <30 following an initial clearance of 3+days with Ct ≥30. High antibody titers against the founder SARS-CoV-2 strain predicted lower peak viral loads and shorter durations of infection. Among Omicron BA.1 infections, boosted individuals had lower pre-booster antibody titers and longer clearance times than non-boosted individuals.Conclusions:SARS-CoV-2 viral kinetics are partly determined by immunity and variant but dominated by individual-level variation. Since booster vaccination protects against infection, longer clearance times for BA.1-infected, boosted individuals may reflect a less effective immune response, more common in older individuals, that increases infection risk and reduces viral RNA clearance rate. The shifting landscape of viral kinetics underscores the need for continued monitoring to optimize isolation policies and to contextualize the health impacts of therapeutics and vaccines.Funding:Supported in part by CDC contract #200-2016-91779, a sponsored research agreement to Yale University from the National Basketball Association contract #21-003529, and the National Basketball Players Association.
 
 ## Introduction
 
@@ -56,7 +56,7 @@ We interpreted the data in two ways. First, we estimated the probability of an i
 
 ## Methods
 
-## Study design
+### Study design
 
 The data reported here represent a convenience sample including team staff, players, arena staff, vendors, and others affiliated with the NBA as described previously (Kissler et al., 2021a; Kissler et al., 2021b). The retrospective study includes samples collected between 7th July 2020 and 26th January 2022 (Appendix 1—figure 1). Clinical samples were obtained by combined swabs of the anterior nares and oropharynx, collected separately from each anatomical site, for each patient administered by a trained provider. Daily testing was required for most individuals prior to vaccination availability, with less frequent testing but close monitoring required after vaccination. Cycle threshold (Ct) values were generated using the Roche cobas target 1 assay. For the viral kinetics model analyses, Ct values were converted to viral genome equivalents using a standard curve (Kissler et al., 2021a).
 
@@ -64,37 +64,37 @@ We classified all individuals as having Ct value <30 or not on each day post-det
 
 Vaccination information was reported and verified by NBA staff and a clinical operational team. 828 individuals had been boosted by the time of their last PCR test, 529 had completed their primary vaccination course (two doses of an mRNA vaccine or one dose of Janssen / Ad.26.COV2.S adenovirus vector-based vaccine), 8 had received one vaccine dose, and 13 confirmed to be unvaccinated. The vaccination statuses of the remaining individuals were unknown. The time course of individual vaccination and exposure times is shown in Appendix 1—figure 2.
 
-## Study oversight
+### Study oversight
 
 In accordance with the guidelines of the Yale Human Investigations Committee, this work with de-identified samples was approved for research not involving human subjects by the Yale Institutional Review Board (HIC protocol # 2000028599). This project was designated exempt by the Harvard Institutional Review Board (IRB20-1407).
 
-## Classification of infections
+### Classification of infections
 
 We tagged each series of positive tests buffered by at least 14 days of negative or missing tests on each side as a distinct infection. After an infection was flagged, subsequent positives were not classified as a new infection for 90 days. Isolated positive tests with no other positive within 14 days either side were not considered as detections. We track the cumulative number of exposures (defined as either receiving a vaccination or infection) over time. Individuals who received the Janssen/Ad.26.COV2.S adenovirus vector-based vaccine were counted as having received two vaccine doses. A total of 351 additional infections were reported to the program outside of the main testing regime, either through an external PCR or rapid antigen test, or from a positive antibody test result (not including the Diasorin Trimeric Assay results described below). We consider these detections as contributing towards an individual’s infection history but are unable to include them in the Ct value trajectory analyses.
 
-## Genome sequencing and lineage assignment
+### Genome sequencing and lineage assignment
 
 RNA was extracted and confirmed as SARS-CoV-2 positive by RT-qPCR (Vogels et al., 2021). Next Generation Sequencing was performed with the Illumina COVIDSeq ARTIC viral amplification primer set (V4, 384 samples, cat# 20065135). Library preparation was performed using the amplicon-based Illumina COVIDseq Test v033 and sequenced 2×74 on Illumina NextSeq 550 following the protocol as described in Illumina’s documentation. The resulting FASTQs were processed and analyzed on Illumina BaseSpace Labs using the Illumina DRAGEN COVID Lineage Application; (BaseSpace Labs, 2021) versions included are 3.5.0, 3.5.1, 3.5.2, 3.5.3, and 3.5.4. The DRAGEN COVID Lineage pipeline was run with default parameters recommended by Illumina. Lineage assignment and phylogenetics analysis using the most updated version of Pangolin (Rambaut et al., 2020) and NextClade (Aksamentov and Neher, 2021), respectively. All sequenced Omicron infections were lineage BA.1 apart from 1 BA.2.10 infection. Sequenced Delta infections were a combination of lineages B.1.617.2 and AY.x.
 
 There were 3 and 482 non-sequenced infections in the window of time when Alpha was replaced by Delta (29th May 2021 to 18th July 2021) and after the first detection of Omicron BA.1 (3rd December 2021 onwards), respectively (Appendix 1—figure 3). We removed these 485 infections from variant-specific analyses and assigned all non-sequenced infections prior to the detection of Omicron BA.1 to the dominant lineage at the time of detection (i.e. all infections prior to 29th May 2021 were assumed ‘Other’ and all infections between 18th July 2021 and 3rd December 2021 were assumed ‘Delta’). We removed all non-sequenced infections detected after 3rd December 2021 from variant-specific analyses rather than classifying them as Omicron BA.1 due to the continued presence of Delta. Omicron BA.2 was not regularly detected until after this period, with only one confirmed BA.2 infection (BA.2.10), which was removed from these analyses.
 
-## Antibody titers
+### Antibody titers
 
 Individuals were tested with the Diasorin Trimeric Assay for IgG antibody titers against the ancestral SARS-CoV-2 (WA1) strain spike protein during the 2021 pre-season period (September-October 2021). The majority (>90%) of blood draws were from mid-September to early October 2021. We classified individuals with a titer of >250 AU/ml as being in the high titer group and in the low titer group otherwise, chosen based on its correlation with authentic virus neutralization results for wildtype and Delta (Liu et al., 2021; Wang et al., 2021). Specifically, an authentic virus neutralization titer of 100 was found to be well correlated with a 50% protective neutralization level for wildtype (Khoury et al., 2021) and found to correspond to a DiaSorin AU of 189.09 (95%CI: 147.61–235.75) (Appendix 1—figure 4). The cutoff of 250 was therefore chosen as a conservative upper bound classifying an individual as at lower risk of infection with Delta or wildtype SARS-CoV-2. Note that this cutoff does not predict infection risk with Omicron and was simply chosen as a proxy for an individual’s immune competence.
 
-## Logistic regression models
+### Logistic regression models
 
 We used the RStan package brms to fit Bayesian logistic regression models estimating the probability of having Ct value <30 on each day post detection, fitting all models to the frequent testing and delayed detection datasets separately (Bürkner, 2022). As a baseline, we considered a model without variant-specific effects, using smoothing splines to estimate the probability of having a Ct value less than 30 on each day post detection. We then fitted additional logistic regression models, adding additional spline terms and intercepts for the category-specific effect of age group (<30 years, 30–50 years and >50 years), vaccination status, cumulative number of previous exposures, days since previous exposure (categorized as naive, <1 month, 1–3 months and >3 months), and/or variant with days since detection. In models including variant, we considered the interaction of variant with exposure history, vaccination status or days since exposure category. We did not add an interaction between age group and any other variable. All models were fitted to the frequent testing and delayed detection group datasets separately.
 
 We ranked models based on the expected log predictive density and evaluated their classification accuracy and area under the receiver operator curve using k-folds cross-validation (25 folds). For the antibody titer analyses, we fitted Bayesian logistic regression models for the probability of Ct value <30 as a function of days since detection, stratified by the interaction of titer group (above or below 250 AU/ml), age group, variant and vaccination status. Further details on the fitting process can be found in the Appendix 1.
 
-## Viral kinetic model
+### Viral kinetic model
 
 We extended a previously reported model for capturing SARS-CoV-2 viral kinetics to estimate the viral proliferation time, viral clearance time, and peak viral load by variant and immune status (Kissler et al., 2021a; Kissler et al., 2021b). The model approximates viral kinetics on a logarithmic scale as a piecewise linear function, corresponding to an exponential increase of virus followed by an exponential clearance at possibly different rates. To estimate the relationship between booster status and viral kinetics, we first stratified the model by (1) Omicron boosted and (2) Omicron non-boosted individuals. There were too few boosted individuals who were infected with other variants to reliably fit the model to non-Omicron infections. Next, to estimate the relationship between antibody titer and viral kinetics, we stratified the model by (1) Delta infections with titer ≤250, (2) Delta infections with titer >250, (3) Omicron infections with titer ≤250 (4) Omicron infections with titer >250, and finally (5) non-Delta and non-Omicron infections in individuals who had not had any prior exposure either through infection or vaccination, to serve as a baseline. Stratification was accomplished by choosing a reference category (Omicron BA.1 non-boosted in the first analysis, non-Delta and non-Omicron infections without prior exposure in the second analysis) and fitting independent additive random effects for the other categories. Full details on the fitting procedure may be found in Kissler et al., 2021a; Kissler et al., 2021b and Appendix 1.
 
 ## Results
 
-## Data
+### Data
 
 We initially identified 2,875 distinct infections from 2,678 individuals in this cohort (Appendix 1—figure 1). By the time of their final test, 2,460 (91.9%) individuals had one detected infection, 214 (7.99%) had two detected infections, three (0.11%) had three detected infections, and one (0.04%) had four detected infections. None of the individuals received antiviral treatment. A total of 587 infections were detected within 1 day of a prior negative PCR test result, and thus the timing of the onset of test positivity can be assumed with reasonable accuracy. We defined these infections as the ‘frequent testing’ group. The remaining 2,288 infections were detected 2 days or more from a previous negative test result or were detected with no prior negative test in the dataset. These were predominantly tests following suspected exposure, recent symptom onset, or periodic clearance for occupational health requirements, and thus we consider this latter group of detections as a reasonable proxy for infection detection in the absence of frequent testing, which is the case for most populations. We define these infections as the ‘delayed detection’ group.
 
@@ -104,7 +104,175 @@ Based on genome sequencing, 1,561 infections were confirmed to be Omicron (one B
 
 For further analysis, we reduced the dataset to a subset of 1,280 well-documented infections. Beginning with the 2,875 infections, we removed those with an unknown lineage (n=490) and one Omicron BA.2 infection, those with only binary test results (positive/negative but no Ct values; n=21), those for which all Ct-based tests results were beyond 25 days after the time of first detection (n=12), and those for which the vaccination status was missing (1,071). Characteristics of these infections are listed in Table 1.
 
-## Interpersonal variation in viral RNA trajectories
+**Table 1.**
+ Characteristics of the documented infections.Counts (N) correspond to numbers of infections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Category</th>
+      <th>N</th>
+      <th>Percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>–</td>
+      <td>1280</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Variant</td>
+      <td>Delta</td>
+      <td>180</td>
+      <td>14.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Omicron BA.1</td>
+      <td>878</td>
+      <td>68.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other</td>
+      <td>222</td>
+      <td>17.3</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Vaccination Status</td>
+      <td>Unvaccinated</td>
+      <td>228</td>
+      <td>17.8</td>
+    </tr>
+    <tr>
+      <td>First dose</td>
+      <td>6</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Second dose</td>
+      <td>420</td>
+      <td>32.8</td>
+    </tr>
+    <tr>
+      <td>Boosted</td>
+      <td>626</td>
+      <td>48.9</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Antibody Titer</td>
+      <td>13–250</td>
+      <td>473</td>
+      <td>37.0</td>
+    </tr>
+    <tr>
+      <td>250–800</td>
+      <td>504</td>
+      <td>39.4</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>303</td>
+      <td>23.7</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Symptomatic</td>
+      <td>No</td>
+      <td>257</td>
+      <td>20.1</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>664</td>
+      <td>51.9</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>359</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Detection Speed</td>
+      <td>Delayed detection</td>
+      <td>877</td>
+      <td>68.5</td>
+    </tr>
+    <tr>
+      <td>Frequent testing</td>
+      <td>403</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Age Group</td>
+      <td>0–30</td>
+      <td>556</td>
+      <td>43.4</td>
+    </tr>
+    <tr>
+      <td>31–50</td>
+      <td>568</td>
+      <td>44.4</td>
+    </tr>
+    <tr>
+      <td>50+</td>
+      <td>155</td>
+      <td>12.1</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Cumulative Infection Number</td>
+      <td>1</td>
+      <td>1128</td>
+      <td>88.1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>149</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Days Since Previous Exposure</td>
+      <td>Naïve (no prior exposure)</td>
+      <td>220</td>
+      <td>17.2</td>
+    </tr>
+    <tr>
+      <td>&lt;1 month</td>
+      <td>273</td>
+      <td>21.3</td>
+    </tr>
+    <tr>
+      <td>1–3 months</td>
+      <td>403</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <td>&gt;3 months</td>
+      <td>384</td>
+      <td>30.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Interpersonal variation in viral RNA trajectories
 
 Viral trajectories varied substantially across individuals regardless of variant (Figure 1A). To characterize the probability of an individual remaining potentially infectious on each day following detection, defined as having a Ct <30, we fitted a logistic regression model with a smoothing spline on days since detection as a predictor (more complex models are considered below). We fit this model to the frequent testing and delayed detection groups separately (Appendix 1—figure 7). Most individuals (posterior mean: 65.4%, 95% credible intervals [CrI]: 62.0–68.8%) in the frequent testing group remained potentially infectious on day 5 post detection. This fraction decreased to 20.0% (95% CrI: 17.3–22.8%) at day 10. In the delayed detection group, fewer individuals remained potentially infectious at days 5 and 10, likely because they were detected later in their infection. In this group, the proportion with Ct <30 was 51.0% (95% credible interval (CrI): 48.3–53.6%) on day 5 post detection and 9.37% (95% CrI: 7.98–10.9%) on day 10.
 
@@ -112,11 +280,174 @@ Viral trajectories varied substantially across individuals regardless of variant
 
 **Figure 1.:** (A) PCR Ct value trajectories for each acute Delta (red), Omicron BA.1 (blue), and other (black) infection. Individuals are grouped by the gap between detection and their most recent negative or inconclusive PCR test (Frequent testing vs. Delayed detection). Thick lines depict the mean Ct value over time, counting negative tests as Ct = 40. Thin lines depict individual level Ct values over time. The horizontal dotted lines mark Ct = 30, which we consider here as a proxy for possible infectiousness and antigen test positivity. (B) Subsets of PCR Ct value trajectories that were classified as rebounds, stratified by testing frequency group. Rebounds are defined here as any trajectory with an initial Ct value <30, followed by a sequence of two or more consecutive negative tests or tests with Ct value ≥30, and subsequently followed by two or more consecutive tests with Ct value <30.
 
-## Incidence of rebounds
+### Incidence of rebounds
 
 We next characterized the frequency of rebound viral RNA trajectories in this cohort. Viral rebounds may be characterized by the duration of the “quiescent” period of low viral concentration between distinct peaks, the duration of the subsequent rebound, and the timing of rebound onset relative to infection, but no consensus definition of viral rebound based on these quantities exists. We defined rebound as any viral trajectory with a decline in Ct value to <30 for 3+consecutive days of tests (the rebound) after 3+consecutive days of tests with Ct ≥30 or a negative result (the quiescent period) following an initial Ct value <30 (the first detection of infection). Testing often ceased following initial clearance, and thus to minimize the impact of right censoring we only considered those trajectories with at least three days of tests with negative or Ct ≥30 following a Ct value <30 as the denominator (N=999). We detected seven viral rebounds under this definition. Less stringent definitions led to more rebound classifications. For example, 40 (3.00%) of 1,334 infections were identified as rebounds when only 2+consecutive days of Ct ≥30 followed by 2+days of Ct <30 was required to be classified as such (Table 2; Figure 1B). All individual-level viral trajectories classified as rebounds under this less stringent definition are shown in Appendix 1—figure 8 Under this definition, we found that rebound infections were more likely in Omicron BA.1 infections, with 36 (4.10%; N=877) Omicron BA.1 infections resulting in rebound compared to one (0.562%; N=178) and three (1.08%; N=279) Delta and other infections, respectively (Appendix 1—table 1; Chi-squared test for Omicron BA.1 (N=877) vs. non-Omicron BA.1 infection (N=457), test statistic = 9.69, P-value <0.05). Similarly, we found that rebounds were more common in boosted individuals, with 32 (6.48%; N=494) rebounds in boosted individuals vs. three (0.929%; N=323) and two (1.26%; N=159) rebounds in vaccinated and unvaccinated individuals, respectively (Appendix 1—table 2; Chi-squared test for boosted (N=494) vs. not-boosted (N=478) infection, test statistic = 18.1, P-value <1e-4).
 
-## Minimal differences across variants and vaccination histories in the probability of having low Ct values over time
+**Table 2.**
+ Number of rebound infections classified under different definitions for initial clearance and subsequent rebound.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Initial clearance duration (consecutive days with Ct ≥30)</th>
+      <th>Rebound duration (days above Ct value threshold)</th>
+      <th>Ct value threshold of rebound</th>
+      <th>Rebounds</th>
+      <th>Total</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≥4</td>
+      <td>≥4</td>
+      <td>Ct &lt;30</td>
+      <td>0</td>
+      <td>749</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>≥3</td>
+      <td>Ct &lt;30</td>
+      <td>1</td>
+      <td>749</td>
+      <td>0.13%</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>≥2</td>
+      <td>Ct &lt;30</td>
+      <td>4</td>
+      <td>749</td>
+      <td>0.53%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥4</td>
+      <td>Ct &lt;30</td>
+      <td>2</td>
+      <td>999</td>
+      <td>0.20%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥3</td>
+      <td>Ct &lt;30</td>
+      <td>7</td>
+      <td>999</td>
+      <td>0.70%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥2</td>
+      <td>Ct &lt;30</td>
+      <td>16</td>
+      <td>999</td>
+      <td>1.60%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥4</td>
+      <td>Ct &lt;30</td>
+      <td>7</td>
+      <td>1334</td>
+      <td>0.53%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥3</td>
+      <td>Ct &lt;30</td>
+      <td>18</td>
+      <td>1334</td>
+      <td>1.35%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥2</td>
+      <td>Ct &lt;30</td>
+      <td>40</td>
+      <td>1334</td>
+      <td>3.00%</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>≥4</td>
+      <td>Ct &lt;25</td>
+      <td>0</td>
+      <td>749</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>≥3</td>
+      <td>Ct &lt;25</td>
+      <td>0</td>
+      <td>749</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>≥4</td>
+      <td>≥2</td>
+      <td>Ct &lt;25</td>
+      <td>0</td>
+      <td>749</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥4</td>
+      <td>Ct &lt;25</td>
+      <td>1</td>
+      <td>999</td>
+      <td>0.10%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥3</td>
+      <td>Ct &lt;25</td>
+      <td>1</td>
+      <td>999</td>
+      <td>0.10%</td>
+    </tr>
+    <tr>
+      <td>≥3</td>
+      <td>≥2</td>
+      <td>Ct &lt;25</td>
+      <td>2</td>
+      <td>999</td>
+      <td>0.20%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥4</td>
+      <td>Ct &lt;25</td>
+      <td>1</td>
+      <td>1334</td>
+      <td>0.08%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥3</td>
+      <td>Ct &lt;25</td>
+      <td>2</td>
+      <td>1334</td>
+      <td>0.15%</td>
+    </tr>
+    <tr>
+      <td>≥2</td>
+      <td>≥2</td>
+      <td>Ct &lt;25</td>
+      <td>5</td>
+      <td>1334</td>
+      <td>0.38%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Minimal differences across variants and vaccination histories in the probability of having low Ct values over time
 
 To assess differences in the duration of test positivity and infectiousness by age, variant and immune status, we modeled the probability of an individual having Ct <30 on each day since detection. As a baseline model, we fitted a logistic regression model with a smoothing spline on days since detection as a predictor. We then fitted successively more complex models, adding independent category-specific smoothing splines for the interaction of age group (categorized as <30, 30–50 or >50 years old), variant, and exposure history with days since detection (factorized), and compared their predictive accuracy using k-fold cross-validation. All models were fit to the frequent testing and delayed detection datasets separately.
 
@@ -130,7 +461,7 @@ Vaccination provides multiple layers of protection against SARS-CoV-2, leading t
 
 It is important to consider the possible confounding effect of age, as boosted individuals in this cohort were typically older than non-boosted individuals at the time of BA.1 infection (mean age of 37.6 years in the BA-1 infected, boosted group vs. 31.3 years in the BA.1-infected, non-boosted group). The regression model including age group, vaccination status and variant found that older individuals do maintain Ct <30 for longer on average than younger individuals after conditioning on vaccination status (Figure 2B). However, the effect of a higher proportion with Ct <30 in boosted individuals relative to non-boosted individuals also remained within each age group, suggesting that both older age and booster status explain some variation in duration of Ct <30 (Appendix 1—figure 12). Furthermore, models including age were almost universally better supported in the model comparison analysis and provided improvements in classification accuracy, but in both cases the gains were small (Appendix 1—table 3 and Appendix 1—table 4).
 
-## Pre-Omicron antibody titer explains variation in viral RNA clearance
+### Pre-Omicron antibody titer explains variation in viral RNA clearance
 
 To assess the mechanisms behind the unexpected slower clearance in boosted Omicron BA.1 infections, we analyzed viral kinetics stratified by antibody titer. In addition to exposure history information, 979 individuals were tested at least once (1,017 measurements total) with the Diasorin Trimeric Assay for antibody titers against the spike protein from the ancestral SARS-CoV-2 (WA1) strain (Appendix 1—figure 13). Most titers were obtained from mid-September to mid-October 2021, and thus we consider these titers to represent an individual’s post primary vaccination course response rather than post-boost/post-Omicron infection immunity (Appendix 1—figure 2). The median time between the most recent vaccine dose and the titer draw was 162 days (interquartile range: 129–180 days) (Appendix 1—figure 14).
 
@@ -148,7 +479,7 @@ To account for potential confounding from waning immunity, in which low titers s
 
 Based on these findings, we hypothesized that boosted individuals who nevertheless were infected with Omicron BA.1 may have had relatively poor BA.1-specific immune responses to prior SARS-CoV-2 exposures, leading to longer infection durations. This is demonstrated by stratifying antibody titers by variant and vaccination status at the time of infection (Figure 3B). Antibody titers were lower among fully vaccinated individuals who were subsequently infected with Delta than individuals who had been infected with a pre-Delta variant. This suggests that individuals with a high antibody titer at around the time of Delta circulation were less likely to be infected with Delta. In contrast, we found that mean antibody titers among Omicron BA.1-infected, fully vaccinated individuals were similar to individuals in the pre-Delta, unvaccinated group, suggesting that higher titer individuals were not substantially less likely to be infected than lower titer individuals. Finally, we found that antibody titers were lowest among Omicron BA.1 infected boosted individuals, suggesting that individuals with a high titer measurement prior to being boosted were less likely to have Omicron BA.1 infections.
 
-## The effect of immune status and variant on viral proliferation, peak viral RNA titers, and clearance
+### The effect of immune status and variant on viral proliferation, peak viral RNA titers, and clearance
 
 We next adapted a framework to estimate the impact of antibody titer, vaccination status, and variant on peak viral RNA concentrations, proliferation phase duration, and clearance duration (Figure 4; Kissler et al., 2021a; Kissler et al., 2021b). According to the viral kinetic model, and among Omicron BA.1 infections, boosted individuals had a longer estimated viral clearance time than non-boosted individuals (8.4 days (95% CrI: 8.0–8.7) vs. 6.2 days (95% CrI: 5.8–6.6), respectively), in line with the results from the logistic regression model. Viral proliferation times and peak viral RNA were similar among boosted and non-boosted individuals with Omicron BA.1 infections (Appendix 1—table 5). When stratifying by post-initial vaccination antibody titer, Delta infections featured a consistently higher peak viral RNA than Omicron BA.1 infections. Among Omicron BA.1 infections, high antibody titers were associated with faster viral clearance times and lower peak viral RNA. Proliferation times were similar across variants and titers (Appendix 1—table 6).
 

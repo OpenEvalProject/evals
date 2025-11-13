@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.47402.001 The bacterial Sec translocon is a multi-protein complex responsible for translocating diverse proteins across the plasma membrane. For post-translational protein translocation, the Sec-channel – SecYEG – associates with the motor protein SecA to mediate the ATP-dependent transport of pre-proteins across the membrane. Previously, a diffusional-based Brownian ratchet mechanism for protein secretion has been proposed; the structural dynamics required to facilitate this mechanism remain unknown. Here, we employ hydrogen-deuterium exchange mass spectrometry (HDX-MS) to reveal striking nucleotide-dependent conformational changes in the Sec protein-channel from Escherichia coli . In addition to the ATP-dependent opening of SecY, reported previously, we observe a counteracting, and ATP-dependent, constriction of SecA around the pre-protein. ATP binding causes SecY to open and SecA to close; while, ADP produced by hydrolysis, has the opposite effect. This alternating behaviour could help impose the directionality of the Brownian ratchet for protein transport through the Sec machinery.
+The bacterial Sec translocon is a multi-protein complex responsible for translocating diverse proteins across the plasma membrane. For post-translational protein translocation, the Sec-channel – SecYEG – associates with the motor protein SecA to mediate the ATP-dependent transport of pre-proteins across the membrane. Previously, a diffusional-based Brownian ratchet mechanism for protein secretion has been proposed; the structural dynamics required to facilitate this mechanism remain unknown. Here, we employ hydrogen-deuterium exchange mass spectrometry (HDX-MS) to reveal striking nucleotide-dependent conformational changes in the Sec protein-channel from Escherichia coli. In addition to the ATP-dependent opening of SecY, reported previously, we observe a counteracting, and ATP-dependent, constriction of SecA around the pre-protein. ATP binding causes SecY to open and SecA to close; while, ADP produced by hydrolysis, has the opposite effect. This alternating behaviour could help impose the directionality of the Brownian ratchet for protein transport through the Sec machinery.
 
 ## Introduction
 
@@ -46,11 +46,35 @@ Optimised procedures for HDX-MS were carried out as described previously (Corey 
 
 We began by investigating the influence of nucleotides on the conformational dynamics of SecA. ΔHDX experiments were performed allowing us to track structural changes between AMPPNP and ADP bound states (SecAAMPPNP – SecAADP). Surprisingly, there was very little effect on the conformational dynamics of the isolated SecA (Figure 2a,b and Figure 2—figure supplement 2a). The greatest difference in deuterium uptake between the two states was observed at and around the ATP-binding sites (Figure 2a,b). This highlights the fact that SecA is only activated when it is associated with SecYEG: studying SecA by itself is therefore unlikely to yield information pertinent to transport.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-v2.jpg)
+
+**Figure 2.:** (a) Structures of the complex highlighting the contact sites (cyan) in SecA with SecG (green), SecY (pink), mature regions of the pre-protein (PP-M; grey) and ATP (orange). Significant sum differences in relative deuterium uptake (ΔHDX = AMPPNP-ADP) of (b) SecA without SecYEG, and (c) of SecA in the presence of a molar excess of SecYEG after 30 min of deuteration. Highlighted regions represent contacts with SecG, SecY, pre-protein (mature domain, PP-M) and ATP; coloured according to (a). Dashed boxes in (c) highlight regions in contact with the pre-protein mature domain (PP-M). Detailed information of HDX-MS data is provided in Supplementary files 1a and 1b.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Maps were generated using Deuteros (Lau et al., 2019).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Woods plots comparing the relative deuterium uptake (AMPPNP-ADP) of (a) SecA alone and (b) SecA in complex (and saturated) with SecYEG after incubation at 25°C in deuterated solvent for 15 s, 1, or 5 min. The dotted lines represent the 99% confidence interval, which indicates that the level of difference of deuterium uptake between the two compared states is statistically significant. Bars represent individual peptides. Bar length corresponds to peptide size. Red and blue coloured bars indicate statistically significant deprotected or protected peptides, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Woods plots comparing the relative deuterium uptake of SecA upon interaction with SecYEG (present in excess) at 15 s, 1, 5 or 30 min. Results indicate an overall deprotection, hence destabilisation of SecA upon SecYEG binding.
+
 To further explore the mechanism of protein transport we carried out equivalent comparative HDX-MS experiments in the presence of an excess of SecYEG to saturate SecA (SecAAMPPNPSecYEG - SecAADPSecYEG) (Figure 2a,c and Figure 2—figure supplement 2b). The results are consistent with SecYEG having a profound effect on SecA: SecYEG induces a large ATP-dependent stabilisation across almost the entirety of SecA (Figure 2c; negative ΔHDX, blue bars). We also examined the conformational effects of SecYEG binding to SecA (Figure 2—figure supplement 3). Interestingly, the results suggested small differences as compared to the differences observed between ATP- and ADP-bound states of SecA whilst bound to SecYEG (Figure 2c and Figure 2—figure supplement 3). This implies that the presence of nucleotides conformationally activate SecA.
 
 For mechanistic interpretation, the data were analysed in the context of a model of the SecA-SecYEG bound to a short pre-protein (Corey et al., 2016a)(Figure 2a). Most striking was the correspondence of the stabilised regions with sites in SecA that directly contact the mature regions (PP-M) of the translocating pre-protein (Figure 2a,c; dashed boxes –PP-M, grey bars). Such stabilisation in SecA suggests an ATP-driven conformational closure around the mature segment of the pre-protein. Conversely, of course, the highlighted regions identified in SecA would be destabilised in the ADP-bound state, following ATP hydrolysis.
 
 To explore the nucleotide-dependent conformational dynamics of the complex, we compared the behaviour of SecA to the associated channel complex SecYEG. Previously, we conducted ΔHDX analysis of SecA-SecYEG, as above, but instead saturated SecYEG with SecA (Corey et al., 2019). In that instance, we were only interested in selecting peptides lining the SecY protein-channel. Here, by taking into account global ΔHDX (SecAAMPPNPSecYEG - SecAADPSecYEG), we highlight the long-range nucleotide dependent impact of SecA on the dynamics of SecYEG (30 min deuterium exchange; not previously shown; Figure 3; Corey et al., 2019).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig3-v2.jpg)
+
+**Figure 3.:** (a) Structures of the SecA-SecYEG complex highlighting the contact sites of SecY (pink) and SecG (green) with SecA (cyan), signal sequence (PP-S; yellow) and pre-protein (PP-M; grey). (b-d) Significant sum differences in relative deuterium uptake (ΔHDX = AMPPNP-ADP) of (b) SecY, (c) SecE and (d) SecG in the presence of excess SecA at 30 min of deuteration. Regions interacting with SecY (b) and SecG (d) are highlighted: SecA, pre-protein mature domain (PP-M) and pre-protein signal sequence (PP-S); colour coding as in (a). Confidence intervals (CI; 99%) are shown as grey dotted lines. Red and blue bars indicate structural stabilisation (positive ΔHDX) and destabilisation (negative ΔHDX) of peptides, respectively. Grey bars indicate peptides with insignificant ΔHDX. Dashed boxes in (b) highlight regions interacting with the pre-protein signal sequence (PP-S) and the mature pre-protein (PP-M). Detailed information of HDX-MS data is provided in Supplementary file 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Woods plots comparing the relative deuterium uptake of SecYEG while bound to SecA (AMPPNP-ADP), showing: (a) SecY (b) SecE and (c) SecG after incubation at 25°C in deuterated solvent for 15 s, 1, or 5 min. The dotted lines represent the 99% confidence interval, which indicates the level of difference of deuterium uptake between the two compared states is statistically significant. Bars represent individual peptides. Bar length corresponds to peptide size. Red and blue coloured bars indicate statistically significant deprotected or protected peptides, respectively.
 
 Interestingly, we found significant ATP-dependent destabilisation of SecY (Figure 3a,b, and Figure 3—figure supplement 1). Closer inspection of the identified peptides reveals that two prominently destabilised regions in the SecY protein would be in direct contact with the signal sequence (PP-S) and mature regions (PP-M) of the pre-protein during protein translocation (Figure 3b; dashed boxes –PP-M grey, and PP-S yellow bars). These regions include the plug, which in the absence of the pre-protein maintains the closed state of the channel (Van den Berg et al., 2004), and the highly conserved trans-membrane helix 7. Multiple regions within the SecE and SecG subunits were also significantly destabilised in the presence of AMPPNP (Figure 3a,c–d and Figure 3—figure supplement 1). Again, conversely those identified regions would be stabilised after hydrolysis to ADP. These observations are consistent with an ATP-driven opening of the SecY channel, and closure after hydrolysis (Fessl et al., 2018; Allen et al., 2016).
 
@@ -70,11 +94,11 @@ The experiments presented here demonstrate the power of combining HDX-MS with th
 
 ## Materials and methods
 
-## Protein preparation
+### Protein preparation
 
 SecYEG and SecA were overproduced and purified as described previously (Gold et al., 2007).
 
-## Hydrogen deuterium exchange mass spectrometry (HDX-MS)
+### Hydrogen deuterium exchange mass spectrometry (HDX-MS)
 
 The HDX-MS experiments outlined here were carried out using a Synapt G2-Si HDMS coupled to an Acquity UPLC M-Class system with HDX and automation (Waters Corporation, Manchester, UK).
 
@@ -84,11 +108,11 @@ The proteins were labelled by incubation in deuteration buffer for 0.25, 1, 5, a
 
 Peptides were trapped using an Acquity BEH C18 1.7 μM VANGUARD pre-column for 3 min at a flow rate of 200 μL/min in buffer A (0.1% (v/v) formic acid at a pH of ~2.5). Peptides were eluted into an Acquity UPLC BEH C18 1.7 μM 1.0 × 100 mm analytical column with a linear gradient of 8–40% (v/v) gradient of acetonitrile with 0.1% (v/v) formic acid at a flow rate of 40 μL/min. Peptides were then ionised by positive electrospray into a Synapt G2-Si mass spectrometer (Waters). A 20–30 V trap collision energy ramp was utilised to capture the MSE data. The electrospray ionisation source was operated in a positive ion mode and ion mobility was enabled for all experiments. Leucine Enkephalin was used as a lock mass for mass accuracy correction and iodide was used for mass spectrometry calibration. All deuterium time points were performed in triplicate.
 
-## HDX data evaluation and statistical analysis
+### HDX data evaluation and statistical analysis
 
 All experiments, including deuterated time points and reference sample controls, were repeated in triplicate. MSE data from reference sample controls of the complexes were used by the Waters ProteinLynx Global Server 2.5.1 (PLGS) and filtered using DynamX (v. 3.0) to provide sequence identification. The following parameters were used to filter the quality of the peptides: minimum and maximum peptide sequence length of 4 and 25, respectively, minimum intensity of 1000, minimum MS/MS products of 2, minimum products per amino acid of 0.2, and a maximum MH + error threshold of 5 ppm. All spectra generated from the peptides were examined and only peptides with high-quality spectra and a high signal to noise ratio were used for data analysis. Wood’s plots and confidence intervals were generated using the in-house Deuteros software (Lau et al., 2019).
 
-## In silico analyses of SecA pore dynamics
+### In silico analyses of SecA pore dynamics
 
 Analyses were based on all-atom molecular dynamics simulations of a complex comprising Bacillus subtilis SecA, Geobacillus thermodenitrificans SecYE and a 76-stretch of pre-protein, built from PDB 5EUL (Li et al., 2016). The simulations were run in an ATP- or ADP-bound state, with full details of their set up described previously (Corey et al., 2019). For the analyses here, only the atoms corresponding to SecA and SecYE were kept (i.e. the solvent, membrane and pre-protein were removed). Snapshots were taken every 25 ns over a range of 750 to 1000 ns.
 
@@ -98,7 +122,7 @@ To quantify the pore size in the different snapshots, cavity cross-sectional are
 
 Images were made using the PyMOL Molecular Graphics System version 2.1.1, Schrödinger, LLC, and data were plotted and analysed in Prism version 7, GraphPad Software.
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Vizcaíno et al., 2016) partner repository with the dataset identifier: PXD013594.
 

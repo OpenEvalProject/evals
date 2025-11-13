@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.49180.001 Neuromuscular junction is a synapse between motoneurons and skeletal muscles, where acetylcholine receptors (AChRs) are concentrated to control muscle contraction. Studies of this synapse have contributed to our understanding of synapse assembly and pathological mechanisms of neuromuscular disorders. Nevertheless, underlying mechanisms of NMJ formation was not well understood. To this end, we took a novel approach – studying mutant genes implicated in congenital myasthenic syndrome (CMS). We showed that knock-in mice carrying N88K, a prevalent CMS mutation of Rapsyn (Rapsn), died soon after birth with profound NMJ deficits. Rapsn is an adapter protein that bridges AChRs to the cytoskeleton and possesses E3 ligase activity. In investigating how N88K impairs the NMJ, we uncovered a novel signaling pathway by which Agrin-LRP4-MuSK induces tyrosine phosphorylation of Rapsn, which is required for its self-association and E3 ligase activity. Our results also provide insight into pathological mechanisms of CMS.
+Neuromuscular junction is a synapse between motoneurons and skeletal muscles, where acetylcholine receptors (AChRs) are concentrated to control muscle contraction. Studies of this synapse have contributed to our understanding of synapse assembly and pathological mechanisms of neuromuscular disorders. Nevertheless, underlying mechanisms of NMJ formation was not well understood. To this end, we took a novel approach – studying mutant genes implicated in congenital myasthenic syndrome (CMS). We showed that knock-in mice carrying N88K, a prevalent CMS mutation of Rapsyn (Rapsn), died soon after birth with profound NMJ deficits. Rapsn is an adapter protein that bridges AChRs to the cytoskeleton and possesses E3 ligase activity. In investigating how N88K impairs the NMJ, we uncovered a novel signaling pathway by which Agrin-LRP4-MuSK induces tyrosine phosphorylation of Rapsn, which is required for its self-association and E3 ligase activity. Our results also provide insight into pathological mechanisms of CMS.
 
 ## Introduction
 
@@ -37,15 +37,23 @@ To understand molecular mechanisms of NMJ formation, we studied CMS mutations of
 
 ## Results
 
-## Aberrant NMJ formation in N88K mt mice
+### Aberrant NMJ formation in N88K mt mice
 
 To study pathological mechanisms of the CMS-associated mutation N88K, we generated N88K knock-in mutant (mt) mice by CRISPR-Cas9 technique (Figure 1—figure supplement 1A and B). The mRNA of N88K Rapsn was comparable to that of wild type (WT) Rapsn (Figure 1—figure supplement 1C). The protein levels of Rapsn were similar between muscle lysates of the two genotypes (Figure 1A); and the mutation seemed to have little effect on the levels of ubiquitinated Rapsn (Figure 1—figure supplement 1D and E). However, N88K homozygous mt mice died within 24 hr of birth with cyanosis, suggesting respiratory failure. To examine the effect of N88K mutation on the NMJ, diaphragms were isolated from neonatal P0 mice and stained for AChR and nerve terminals. In WT diaphragms, AChR clusters were abundant and localized in the middle of muscle fibers, whereas in Rapsn null mt (-/-) mice, there was almost no AChR cluster (Figure 1B–D). N88K mt mice were able to form AChR clusters, but their number and size were dramatically reduced (Figure 1C–F and Figure 1—figure supplement 1F). Remaining clusters were elongated, in contrast to oval plaque morphology in WT mice (Figure 1D and G and Figure 1—figure supplement 1G) and distributed in a wider region of muscle fibers (Figure 1C and H). AChR clusters in N88K mt mice were reduced in staining intensity (Figure 1I), indicating reduced AChR concentration. In addition, N88K mt mice displayed abnormal nerve terminal arborization, with increased numbers of secondary, tertiary, quaternary branches, as observed in null mt mice (Figure 1B–D and J and Figure 1—figure supplement 1H). To eliminate potential off-target effects of CRISPR-Cas9, we generated N88K/- mice that possess null mutation on one chromosome and N88K mutation on the other. They exhibited similar NMJ deficits to N88K mt mice (Figure 1B–J and Figure 1—figure supplement 1F–H), suggesting that NMJ deficits in N88K mt mice are likely due to N88K mutation, not an off-target effect.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig1-v2.jpg)
+
+**Figure 1.:** (A) Comparable Rapsn protein level between WT and N88K mt mice. Tissue lysates from WT, N88K mt, -/- (Rapsn null mt) diaphragms were subjected to western blotting with anti-Rapsn, and anti-α-AChR antibodies, using GAPDH as loading control. Note that α-AChR protein level was not altered in N88K and -/-, compared with WT controls. (B) Reduced AChR clusters and extensive axonal arborization in N88K mt mice. P0 diaphragms from WT, N88K, N88K/-, -/- mice were stained whole-mount with Flour 594-α-BTX (red) to label AChR clusters and with anti-NF/Syn antibodies (green) to label motor nerve terminals. V, ventral. L, left. (C, D) Higher magnification views of AChR clusters and motor axon branches. The boundary of AChR clusters was indicated by dashed blue lines. Heatmap, AChR intensity; arrows, elongated AChR clusters along axons. (E–J) Quantitative analysis of AChR cluster number (E), AChR cluster size (F), AChR cluster length (G), endplate band width (H), AChR fluorescence intensity (I), secondary branch length (J). Data were shown as mean ± SEM; **, p<0.01; ***, p<0.001, One-way ANOVA, n = 6 mice. Also see Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Generation of N88K mt mice by CRISPR-Cas9. Top, the Rapsn gene structure. Genomic sequence flanking the Asn 88 was shown below. Guidance RNA sequence, GCT CGA AAG CTA CCT GAA CC, was labeled by a line. Asparagine (N) 88 was indicated in red. Bottom, DNA sequence of the donor, with the mutated base pairs in green. (B) Verification of N88K mutation by sequencing. Genomic DNA from WT and N88K mt mice was sequenced. Dashed rectangle to indicate N88K mutation. (C) Similar Rapsn mRNA level between WT and N88K mt mice. Data were shown as mean ± SEM, unpaired t-test, n = 3. (D) Similar Rapsn ubiquitinated level between WT and N88K mt mice. Rapsn protein was purified from P0 muscles of WT, N88K and - /- mice. The precipitated Rapsn was probed for ubiquitin. (E) Quantitative data in (D) (mean ± SEM), unpaired t-test, n = 3. (F–H) Cumulative frequency of AChR cluster size (F), cumulative frequency of length of AChR cluster (G) in Figure 1A, and quantitative analysis of secondary, tertiary, and quaternary axon branches (H) in Figure 1A. Data were shown as mean ± SEM; **, p<0.01; ***, p<0.001, One-way ANOVA, n = 6.
 
 At electron microscopic (EM) level, in WT mice, axon terminals were filled with abundant synaptic vesicles, some of which were clustered at active zones (Figure 2A and C). Synaptic clefts were filled with synaptic basal lamina; and, on the postsynaptic side, junctional folds were observable (Figure 2A and C). However, junctional folds in N88K mt mice were fewer and the remainders were shorter than those of controls (Figure 2B,D and E). N88K mt mice also showed reduced number of synaptic vesicles in axon terminals (Figure 2F), compared with WT controls. The vesicle diameters and synaptic cleft width were similar between two genotypes (Figure 2G and H). Taken together, studies of P0 mice revealed both pre- and post- deficits at the NMJ, providing a mechanism of neonatal lethality of N88K mutation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig2-v2.jpg)
 
-**Figure 2.:** (A, B) Low magnification NMJ EM images of WT and N88K mt, including synaptic vesicles (SVs), synaptic cleft, synaptic basal lamina (SBL), and postsynaptic junctional folds (JF). M, muscle; N, nerve; (C, D) High magnification images of SVs, SBL, and JF. Note that junctional folds were smaller in N88K mt, and vesicle density was reduced in N88K mt, compared with WT controls. Asterisks indicate active zone. (E–H) Quantitative data of junctional fold length (E), synaptic vesicle density (F), vesicle diameter (G), synaptic cleft width (H) of WT and N88K mt. Data were shown as mean ± SEM; ***, p<0.001, unpaired t-test, n = 3 mice. (I–L) Few aneural AChR clusters in N88K mt mice at E14. E14 diaphragms from WT, N88K mt mice were stained whole-mount with Flour 594-α-BTX (red) to label AChR clusters and with anti-NF/Syn (green) antibodies to label motor nerve terminals. (I, J) Low magnification view. (K, L) High magnification view. (M, N) Quantitative data of endplate band width and AChR cluster number. Data were shown as mean ± SEM, ***, p<0.001, unpaired t-test, n = 3 mice.10.7554/eLife.49180.007Figure 2—source data 1.Figure 2E, F, G, H, M and N.
+**Figure 2.:** (A, B) Low magnification NMJ EM images of WT and N88K mt, including synaptic vesicles (SVs), synaptic cleft, synaptic basal lamina (SBL), and postsynaptic junctional folds (JF). M, muscle; N, nerve; (C, D) High magnification images of SVs, SBL, and JF. Note that junctional folds were smaller in N88K mt, and vesicle density was reduced in N88K mt, compared with WT controls. Asterisks indicate active zone. (E–H) Quantitative data of junctional fold length (E), synaptic vesicle density (F), vesicle diameter (G), synaptic cleft width (H) of WT and N88K mt. Data were shown as mean ± SEM; ***, p<0.001, unpaired t-test, n = 3 mice. (I–L) Few aneural AChR clusters in N88K mt mice at E14. E14 diaphragms from WT, N88K mt mice were stained whole-mount with Flour 594-α-BTX (red) to label AChR clusters and with anti-NF/Syn (green) antibodies to label motor nerve terminals. (I, J) Low magnification view. (K, L) High magnification view. (M, N) Quantitative data of endplate band width and AChR cluster number. Data were shown as mean ± SEM, ***, p<0.001, unpaired t-test, n = 3 mice.
 
 Muscles form primitive, aneural AChR clusters in advance of the arrival of motor nerve terminals (Lin et al., 2001; Yang et al., 2001b; Luo, 2010). Innervation induces the formation of new AChR clusters, perhaps by enlarging some of the aneural clusters. The formation of aneural clusters requires LRP4, MuSK, and Rapsn, but not Agrin (Lin et al., 2001; Remédio et al., 2016; Yang et al., 2001b). Having observed NMJ deficits in neonatal mice, we wondered whether the N88K mutation alters aneural AChR clusters and dissected diaphragms from embryos at E14, when axon terminals start branching out to innervate muscle fibers (Li et al., 2018; Lin et al., 2001; Wu et al., 2010; Yang et al., 2001b). As shown in Figure 2I and K, aneural AChR clusters of WT mice were numerous and elongated in shape (Figure 2M and N). Most of them were not innervated although nerve terminals were present. Remarkably, aneural AChR clusters were rarely detectable in N88K mt diaphragms (Figure 2J,L,M and N). These results suggest that N88 is necessary for the formation of aneural clusters and that the AChR clusters at P0 N88K mt diaphragms are likely induced by nerve terminals.
 
@@ -53,41 +61,77 @@ To examine whether synaptic transmission is altered in N88K mt mice, we first re
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig3-v2.jpg)
 
-**Figure 3.:** (A) Comparable resting membrane potentials among WT, N88K/+, N88K mt, and N88K/- mt. P0 hemi-diaphragms at ventral, left were recorded. (B) Percentage of muscle fibers with mEPPs in 3 min of recording (n = 120, 6 mice). (C) Representative mEPP traces. (D, E) Reduced mEPP amplitude (D) and reduced mEPP frequency in N88K mt and N88K/- mt (E). Data were shown as mean ± SEM, **, p<0.01, ***, p<0.001, One-way ANOVA, n = 6 mice.10.7554/eLife.49180.009Figure 3—source data 1.Figures 3A, B, D and E.
+**Figure 3.:** (A) Comparable resting membrane potentials among WT, N88K/+, N88K mt, and N88K/- mt. P0 hemi-diaphragms at ventral, left were recorded. (B) Percentage of muscle fibers with mEPPs in 3 min of recording (n = 120, 6 mice). (C) Representative mEPP traces. (D, E) Reduced mEPP amplitude (D) and reduced mEPP frequency in N88K mt and N88K/- mt (E). Data were shown as mean ± SEM, **, p<0.01, ***, p<0.001, One-way ANOVA, n = 6 mice.
 
-## Impaired ability of N88K Rapsn in AChR clustering
+### Impaired ability of N88K Rapsn in AChR clustering
 
 Rapsn is able to induce AChR clusters in heterologous cells (Froehner et al., 1981; Li et al., 2016; Phillips et al., 1991). To investigate mechanisms of how N88K mutation reduced AChR concentration at the NMJ, HEK293T cells were transfected with EGFP-tagged WT or N88K Rapsn together with four different AChR subunits (α, β, γ, δ), fixed and stained for AChR clusters. As shown in Figure 4A, AChRs were diffused when coexpressed with EGFP empty vector, but became clustered in cells co-expressing WT Rapsn, and these AChR clusters colocalized with Rapsn clusters, in agreement with previous reports (Froehner et al., 1990; Li et al., 2016; Phillips et al., 1991). N88K was able to form aggregates in HEK293 cells (Figure 4A), in agreement with a previous report (Ohno et al., 2002). However, fewer AChR clusters were observed in HEK293T cells expressing N88K, compared with those expressing WT Rapsn (Figure 4A and B). This result could suggest that the N88K mutation prevents Rapsn from clustering AChRs in HEK293T cells or maintaining AChR surface expression. To determine whether N88K mutation alters surface AChR levels, HEK293T cells were incubated with Sulfo-NHS-SS-biotin at 4°C. Biotin-labeled surface proteins were precipitated and probed for different AChR subunits and transferrin (Trf) as control. As shown in Figure 4C, surface AChR, total AChR and Rapsn levels were comparable between cells transfected with WT and N88K Rapsn, suggesting that N88K mutation did not alter AChR levels on cell surface. Moreover, N88K mutation did not change Rapsn’s stability in HEK293T cells (Figure 4—figure supplement 1A and B). These results suggest that the ability of N88K mt Rapsn to induce AChR clusters was reduced.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig4-v2.jpg)
+
+**Figure 4.:** (A) Impaired ability of N88K mt Rapsn to induce AChR clustering in HEK293T cells. HEK293T cells were transfected with AChR subunits (α, β, γ, δ), along with EGFP empty vector, Rapsn-EGFP, or N88K-EGFP. After 36 hr, live, unfixed cells were incubated with Flour 594-α-BTX (red) to label surface AChRs. Arrows, AChR clusters colocalized with Rapsn clusters. (B) Quantitative data of (A) (mean ± SEM). ***, p<0.001, unpaired t-test, n = 20 cells. (C) Comparable amount of AChRs and Rapsn in (A). Total levels of α-AChR, β-AChR, Rapsn, and surface α-AChR, β-AChR in the parallel experiment of (A) were examined by western blotting, using GAPDH and Transferrin (Trf) as lysate and surface protein loading controls, respectively. (D) Comparable total Rapsn and AChR, and surface AChR expression in N88K mt cultured myotubes. Total α-AChR, β-AChR, Rapsn and surface α-AChR, β-AChR from WT or N88K mt C2C12 myotubes were examined by western blotting, using GAPDH and Trf as lysate and surface protein loading controls, respectively. (E) Fewer Agrin-induced AChR clusters in N88K mt C2C12 myotubes, compared with WT controls. Myotubes were treated with or without 50 ng/ml Agrin for 12 hr. Arrows, AChR clusters. (F) Quantitative data of (E) (mean ± SEM), ***, p<0.001, Two-way ANOVA, n = 20 cells. Also see Figure 4—figure supplement 1 and Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparable degradation rate between WT and N88K mt Rapsn in HEK293T cells. HEK293T cells were transfected with EGFP tagged WT or N88K mt Rapsn. After 24 hr, cells were separated into 6-well plates and cultured for additional 12 hr. The resulting cells in 6-well plates were treated with cycloheximide (CHX, 50 μM) for indicated times. Cells were lysed and probed with anti-GFP antibody. (B) Quantitative data in (A) (mean ± SEM), unpaired t-test, n = 3.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Verification of N88K mutation by genomic DNA sequencing. Genomic DNA of WT and N88K mt C2C12 was sequenced and aligned. Dashed rectangle to indicate N88K mutation. (B) Comparable Rapsn mRNA level between WT and N88K mt myotubes. Data were shown as mean ± SEM; unpaired t-test, n = 3. (C) Comparable Rapsn protein stability between WT and N88K mt culture myotubes. WT or N88K mt myotubes were treated with CHX (50 μM) for indicated times. Resulting lysates were subject to western blotting with anti-Rapsn antibody. (D) Quantitative data in (C) (mean ± SEM), unpaired t-test, n = 3.
+
 Next, to test the ability of N88K mt Rapsn in AChR clustering in muscle cells, we generated N88K mt C2C12 cells using the same CRISPR-Cas9 strategy to generate N88K mt mice. The mutation was confirmed by genomic DNA sequencing (Figure 4—figure supplement 2A). The levels of N88K mRNA (Figure 4—figure supplement 2B) and protein (Figure 4D) in mt C2C12 myotubes were comparable to those of WT Rapsn in control myotubes. The mutation had no apparent effect on the stability of Rapsn protein (Figure 4—figure supplement 2C and D) and surface AChR levels (Figure 4D). However, AChR clusters were reduced in Agrin-treated N88K mt C2C12 myotubes, in contrast to robust AChR clusters in Agrin-treated WT C2C12 myotubes (Figure 4E and F). These results demonstrated that N88K mutation impairs the ability of Rapsn to induce AChR clusters.
 
-## Reduced E3 ligase activity of N88K mt Rapsn
+### Reduced E3 ligase activity of N88K mt Rapsn
 
 As a scaffold protein, Rapsn could induce AChR clusters by bridging AChR subunits to the actin cytoskeleton (Burden et al., 1983; LaRochelle and Froehner, 1986; Zhang et al., 2007; Walker et al., 1984). Therefore, we first determined whether the N88K mutation alters Rapsn binding to surface AChRs and cytoplasmic actin. Surface AChRs were purified with biotin-α-BTX/Streptavidin beads and probed for Rapsn and actin (Figure 5A). As shown in Figure 5B, the amount of Rapsn and actin associated with surface AChRs was similar between WT and N88K mt myotubes. When co-expressed in HEK293 cells, AChR subunits precipitated by WT or N88K mt Rapsn were similar (Figure 5—figure supplement 1A and B), indicating the mutation has little effect on the binding to AChRs. Actin-anchored Rapsn-AChR complexes are resistant to low concentration of detergents (Moransard et al., 2003). We found that the amount of Rapsn that could be solubilized by Triton X-100 was similar between N88K mt and WT myotubes (Figure 5—figure supplement 1C and D). These results suggest that the N88K mutation may not impair Rapsn association with actin cytoskeleton components.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic diagram of extraction of surface AChRs from C2C12 myotubes. Live C2C12 myotubes were incubated with biotin-α-BTX at 4°C for 1 hr to capture AChR complex, and then were lysed. Resulting biotin-α-BTX-AChR complex in lysates were precipitated by streptavidin-coupled agarose beads. Cell lysates, precipitated AChRs and AChR-associated proteins were examined by western blotting. (B) Comparable amounts of Actin and Rapsn were co-precipitated by surface AChR between WT and N88K mt C2C12 myotubes. Surface AChRs from WT or N88K mt myotubes were isolated, and associated Rapsn and actin were examined by western blotting. (C) Reduced Rapsn E3 ligase activity by N88K mutation in HEK293T cells. HEK293T cells were transfected with HA tagged WT, C366A, or N88K mt Rapsn, along with Flag-δ-AChR and Nedd8-Myc. After 48 hr, cells were lysed and precipitated with anti-Flag beads to pull down δ-AChR. The precipitated δ-AChR was blotted with anti-Nedd8 antibody to examine its neddylation. (D) Quantitative data of neddylated δ-AChR in (C) (mean ± SEM), ***, p<0.001, One-way ANOVA, n = 3. (E–H) Reduced Rapsn E3 ligase activity in N88K mt cultured myotubes and in mt mice. (E, F) WT and N88K mt cultured myotubes were treated with Agrin for 2 hr. Myotubes were lysed and precipitated with anti-Nedd8 antibody. The resulting lysates and precipitated proteins were blotted with indicated antibodies to reveal neddylated δ-AChR, readout for E3 ligase activity of Rapsn (E). (F) Quantitative data in (E) (mean ± SEM), ***, p<0.001, unpaired t-test, n = 3. (G) Neddylated δ-AChR was examined in WT or N88K mt mice. (H) Quantitative data in (G) (mean ± SEM), ***, p<0.001, unpaired t-test, n = 3. Also see Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) HEK293T cells were cotransfected with HA tagged WT or N88K mt Rapsn and Flag tagged α-AChR (A) or δ-AChR (B). After 48 hr, cells were lysed and the interaction of Rapsn with subunits of AChR was examined by co-immunoprecipitation with anti-HA immobilized on beads. Note that WT and N88K mt Rapsn showed comparable binding ability to α-AChR and δ-AChR. (C) Actin-anchored WT or N88K mt Rapsn showed similar resistance to 0.05% Triton X-100. Plates with WT or N88K mt myotubes were treated with 0.05% Triton X-100 for 10 min on ice to collect lysates. The plates were then incubated with 1% Triton X-100 to collect complexes resistant to 0.05%-Triton X-100 solubilization. Rapsn level in both conditions was probed. (D) Quantitative data in (C) (mean ± SEM), ns, no significant difference, unpaired t-test, n = 3.
+
 Our recent study revealed that Rapsn possesses E3 ligase activity, which is required for AChR clustering and NMJ formation (Li et al., 2016). In a working model, Rapsn increases AChR clusters by enhancing AChR neddylation, a posttranslational modification with Nedd8 (an Ub-like molecule) (Li et al., 2016; Li et al., 2018). To examine whether N88K mutation impairs Rapsn-mediated neddylation of AChRs, HA-tagged WT or N88K mt Rapsn was co-transfected with Flag-tagged δ-AChR and Myc-tagged Nedd8 into HEK293T cells. δ-AChR was purified by anti-Flag antibody and probed with anti-Nedd8 antibody. Nedd8-conjugated δ-AChR was apparent in HEK293T cells co-expressing WT Rapsn (Figure 5C and D); however, Nedd8 signaling was dramatically reduced in cells co-expressing N88K Rapsn (Figure 5C and D), to a level of cells expressing C366A, an E3 ligase-dead Rapsn mt (Li et al., 2016). These results suggest that N88K mutation may impair the E3 ligase activity of Rapsn. To further test this hypothesis, we compared neddylated δ-AChR level between WT and N88K mt C2C12 myotubes and found that neddylated δ-AChR in N88K mt myotubes was remarkably reduced, compared with WT controls (Figure 5E and F). Finally, we examined neddylated δ-AChR level in skeletal muscles of WT and N88K mt mice. As shown in Figure 5G and H, neddylated δ-AChR level was reduced in muscles of N88K mt mice, compared with WT controls. Together these results suggest that impaired E3 ligase activity may be a mechanism of N88K mutation.
 
-## Reduced Rapsn tyrosine phosphorylation by N88K mutation
+### Reduced Rapsn tyrosine phosphorylation by N88K mutation
 
 Agrin binds to LRP4 to stimulate MuSK to induce AChR clustering. How signal is transduced from MuSK to Rapsn was not well understood. Rapsn was tyrosine phosphorylated in electric organs of Torpedo California where AChRs are enriched (Mohamed and Swope, 1999) and in heterologous cells when expressed alone or together with MuSK (Lee et al., 2008). We characterized Rapsn tyrosine phosphorylation in muscle cells in response to Agrin treatment. Rapsn and MuSK were precipitated with respective antibodies from C2C12 myotubes treated with Agrin for different times and probed with anti-p-Tyr antibody. As shown in Figure 6A, MuSK activation occurred within 10 min, which was followed by Rapsn tyrosine phosphorylation. On the other hand, the increased in δ-AChR neddylation, an indicator of Rapsn E3 ligase activity (Li et al., 2016), was not peaked until 90 min after Agrin stimulation (Figure 6B). These data, quantified in Figure 7J, suggest that these events occur sequentially.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig6-v2.jpg)
 
-**Figure 6.:** (A) Agrin treatment induced tyrosine phosphorylation of Rapsn in cultured myotubes. WT cultured myotubes were treated with Agrin for indicated times. Cells were lysed and were incubated with anti-Rapsn antibody to precipitate Rapsn protein, and probed with anti-p-Tyr antibody to examine tyrosine phosphorylation of Rapsn. MuSK tyrosine phosphorylation was examined as positive controls. (B) Agrin treatment induced E3 ligase activity of Rapsn in culture myotubes. WT cultured myotubes were treated with Agrin for indicated times. Neddylated δ-AChR was examined to reveal E3 ligase activity of Rapsn. (C) Reduced tyrosine phosphorylation of Rapsn by N88K mutation in cultured myotubes. WT, N88K mt, Rapsn null mt (-/-) cultured myotubes were treated with Agrin for 2 hr, and then tyrosine phosphorylation of Rapsn was examined. (D) Quantitative data in (C) (mean ± SEM), *, p<0.05, unpaired t-test, n = 3. (E–G) Reduced tyrosine phosphorylation of Rapsn by N88K mutation in mt mice. Rapsn protein was precipitated with anti-Rapsn antibody from muscle homogenates of WT or N88K mice at E14 (E) and P0 (F) and probed with anti-p-Tyr antibody to examine tyrosine phosphorylation of Rapsn. (G) Quantitative data in (E) and (F) (mean ± SEM), **, p<0.01, ***, p<0.001, unpaired t-test, n = 3. (H) Reduced MuSK-induced Rapsn tyrosine phosphorylation by N88K and Y86F mutations in HEK293T cells. HEK293T cells were transfected HA tagged WT or indicated mt Rapsn, along with Flag tagged MuSK, or not. Precipitated Rapsn protein with anti-HA beads was probed with anti-p-Tyr antibody to reveal tyrosine phosphorylation of Rapsn. (I) Quantitative data of (H) (mean ± SEM), *, p<0.05, **, p<0.001, unpaired t-test, n = 3. (J) Abolished MuSK-induced TPR1-7 (TPR) tyrosine phosphorylation by N88K and Y86F mutations in HEK293T cells. Same as (H), MuSK-induced WT, Y86F, or N88K mt TPR was detected in HEK293T cells.10.7554/eLife.49180.021Figure 6—source data 1.Figure 6D, G and I.
+**Figure 6.:** (A) Agrin treatment induced tyrosine phosphorylation of Rapsn in cultured myotubes. WT cultured myotubes were treated with Agrin for indicated times. Cells were lysed and were incubated with anti-Rapsn antibody to precipitate Rapsn protein, and probed with anti-p-Tyr antibody to examine tyrosine phosphorylation of Rapsn. MuSK tyrosine phosphorylation was examined as positive controls. (B) Agrin treatment induced E3 ligase activity of Rapsn in culture myotubes. WT cultured myotubes were treated with Agrin for indicated times. Neddylated δ-AChR was examined to reveal E3 ligase activity of Rapsn. (C) Reduced tyrosine phosphorylation of Rapsn by N88K mutation in cultured myotubes. WT, N88K mt, Rapsn null mt (-/-) cultured myotubes were treated with Agrin for 2 hr, and then tyrosine phosphorylation of Rapsn was examined. (D) Quantitative data in (C) (mean ± SEM), *, p<0.05, unpaired t-test, n = 3. (E–G) Reduced tyrosine phosphorylation of Rapsn by N88K mutation in mt mice. Rapsn protein was precipitated with anti-Rapsn antibody from muscle homogenates of WT or N88K mice at E14 (E) and P0 (F) and probed with anti-p-Tyr antibody to examine tyrosine phosphorylation of Rapsn. (G) Quantitative data in (E) and (F) (mean ± SEM), **, p<0.01, ***, p<0.001, unpaired t-test, n = 3. (H) Reduced MuSK-induced Rapsn tyrosine phosphorylation by N88K and Y86F mutations in HEK293T cells. HEK293T cells were transfected HA tagged WT or indicated mt Rapsn, along with Flag tagged MuSK, or not. Precipitated Rapsn protein with anti-HA beads was probed with anti-p-Tyr antibody to reveal tyrosine phosphorylation of Rapsn. (I) Quantitative data of (H) (mean ± SEM), *, p<0.05, **, p<0.001, unpaired t-test, n = 3. (J) Abolished MuSK-induced TPR1-7 (TPR) tyrosine phosphorylation by N88K and Y86F mutations in HEK293T cells. Same as (H), MuSK-induced WT, Y86F, or N88K mt TPR was detected in HEK293T cells.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig7-v2.jpg)
+
+**Figure 7.:** (A) Reduced E3 ligase activity of Rapsn by Y86F mutation in transfected HEK293T cells. (B) Quantitative data of neddylated δ-AChR in (A) (mean ± SEM), ***, p<0.001, One-way ANOVA, n = 3. (C) Reduced Rapsn tyrosine phosphorylation in Y86F mt myotubes, compared with WT controls. (D) Quantitative data of tyrosine phosphorylation of Rapsn in (C) (mean ± SEM), *, p<0.05, unpaired t-test, n = 3. (E) Fewer Agrin-induced AChR clusters in Y86F mt C2C12 myotubes, compared with WT controls. Arrows, AChR clusters. (F) Quantitative data in (E), (mean ± SEM), **, p<0.01, ***, p<0.001, Two-way ANOVA, n = 20 cells. (G) Reduced E3 ligase activity of Rapsn in Y86F mt myotubes. (H) Quantitative data in (G) (mean ± SEM), ***, p<0.001, unpaired t-test, n = 3. (I) Agrin treatment increased Rapsn self-association. Cultured C2C12 cells were transfected with HA- and EGFP-tagged Rapsn, respectively. Resulting myotubes were treated with Agrin. Cell lysates were subjected to co-immunoprecipitation with anti-HA beads, and probed with anti-GFP antibody to reveal the association between Rapsn-HA and Rapsn-EGFP. (J) Quantitative analysis of MuSK and Rapsn tyrosine phosphorylation in Figure 6A, neddylated δ-AChR in Figure 6B, and Rapsn self-association in Figure 7I. Data were shown as mean ± SEM, **, p<0.01, ***, p<0.001 (compared with time 0), One-way ANOVA, n = 3. (K–N) Reduced Rapsn self-association by Y86F (K) or N88K (M) mutation revealed by co-immunoprecipitation in HEK293T cells. Quantitative data of WT or Y86F Rapsn self-association(L); WT or N88K Rapsn self-association (M) (mean ± SEM), *, p<0.05; ***, p<0.001, unpaired t-test, n = 3. Also see Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Generation of Y86F mt C2C12 cells by CRISPR-Cas9. Top, the Rapsn gene structure. Genomic sequence flanking the Y86 was shown below. Guidance RNA targeting sequence, CAT TGC TGC GCG CCA GGT TC, was underlined. Y86 was indicated in red. Bottom, DNA sequence of the donor, with the mutated base pairs in green. (B) Verification of Y86F mutation by sequencing. Y86F mutation was highlighted by dashed rectangle. (C) Rapsn mRNA level between WT and Y86F mt cultured myotubes were comparable, examined by real-time PCR. Data were shown as mean ± SEM; unpaired t-test, n = 3. (D) Same degradation rate of WT or Y86F mt Rapsn in culture myotubes. (E) Quantitative data in (D) (mean ± SEM), unpaired t-test, n = 3.
 
 To determine whether N88K mutation alters Rapsn tyrosine phosphorylation in muscle cells, we studied N88K mt C2C12 myotubes together with WT and Rapsn null (-/-) C2C12 myotubes. Compared with WT C2C12 myotubes, Agrin-stimulated Rapsn tyrosine phosphorylation in N88K mt myotubes was dramatically reduced (Figure 6C and D). These results demonstrate that Rapsn becomes tyrosine phosphorylated in response to Agrin stimulation and this event is inhibited by N88K mutation. To determine whether N88K mutation alters Rapsn tyrosine phosphorylation in vivo, Rapsn protein was precipitated with anti-Rapsn antibody from muscle homogenates of mice at E14 and P0 and probed with anti-p-Tyr antibody (Figure 6E–G). Rapsn tyrosine phosphorylation from N88K mt mice was reduced compared with WT muscles. These results demonstrate that in vivo tyrosine phosphorylated of Rapsn was reduced in N88K mt mice.
 
 To determine whether tyrosine phosphorylation is critical for Rapsn’s function, we sought to identify the tyrosine residues that are phosphorylated upon MuSK activation. HA-tagged Rapsn was co-transfected with Flag-tagged MuSK in HEK293T cells, which induced tyrosine phosphorylation of Rapsn (Figure 6H), consistent with previous work (Lee et al., 2008). Tyrosine phosphorylation was reduced in N88K mt Rapsn (Figure 6H and I), as observed in aforementioned studies with C2C12 myotubes (Figure 6C and D). We focused on tyrosine residues immediately flanking N88: Y59 in TPR2, Y86 and Y105 in TPR3, and mutated them individually to phenylalanine (F). Tyrosine phosphorylation of Y59F and Y105F Rapsn was similar to WT Rapsn in HEK293T cells co-expressing MuSK (Figure 6H and I), suggesting that these two residues may not be the target residue. However, Y86F mutation dramatically reduced tyrosine phosphorylation of Rapsn (Figure 6H and I). To test this notion further, we generated a recombinant protein containing only TPR domain. As shown in Figure 6J, MuSK-mediated tyrosine phosphorylation was completely abolished by the Y86F as well as N88K mutation. Together, these results demonstrate that Y86 may be a site in Rapsn that becomes tyrosine phosphorylated upon MuSK activation, and Y86 phosphorylation is regulated by N88K mutation.
 
-## Y86 phosphorylation for E3 ligase activity and AChR clustering
+### Y86 phosphorylation for E3 ligase activity and AChR clustering
 
 To investigate the role of Y86 phosphorylation, we determined whether its mutation impacts on E3 ligase activity of Rapsn. HEK293T cells were transfected with Flag-δ-AChR, Myc-tagged Nedd8 and HA-tagged WT, Y86F, or C366A Rapsn and tested δ-AChR neddylation as described in Figure 5C. δ-AChR neddylation was reduced in cells expressing Y86F or C366A (Figure 7A and B), compared with WT control, suggesting that Y86F mutation impairs the E3 ligase activity of Rapsn. To examine the role of Y86 phosphorylation on AChR cluster formation, we generated Y86F mt C2C12 cells by CRISPR-Cas9 (Figure 7—figure supplement 1A). The mutation was confirmed by genomic DNA sequencing (Figure 7—figure supplement 1B). Y86F mutation did not alter mRNA or protein levels of Rapsn (Figure 7—figure supplement 1C, and Figure 7C) or Rapsn protein stability (Figure 7—figure supplement 1D and E). Agrin-induced tyrosine phosphorylation was reduced, but not abolished in Y86F mt C2C12 myotubes (Figure 7C and D), consistent with results of HEK293T cells (Figure 6H). Remarkably, Agrin-induced clusters were fewer in Y86F mt C2C12 myotubes, compared with WT control (Figure 7E and F), indicating a necessary role of Y86 phosphorylation in Agrin-mediated AChR clustering. In support of this notion, δ-AChR neddylation was reduced in Y86F mt C2C12 myotubes, compared with WT control (Figure 7G and H).
 
 Next, we investigated how Y86F mutation impairs E3 ligase activity of Rapsn. E3 ligases including those containing RING-domain are regulated by self-association (Bian et al., 2017; Ho et al., 2015; Koliopoulos et al., 2016; Liew et al., 2010; Metzger et al., 2014; ; Nikolay et al., 2004). The TPR domains in the N-terminus of Rapsn are thought to mediate self-association and thus form aggregates in heterologous cells (Maimone and Merlie, 1993; Ramarao et al., 2001). We posited that tyrosine phosphorylation of Rapsn may promote self-association and thus activates E3 ligase activity. To test this, C2C12 myoblasts were co-transfected with Rapsn that were tagged by EGFP and HA, respectively (Figure 7I). Resulting myotubes were treated with Agrin and examined for self-binding by co-precipitation. Agrin increased the amount of Rapsn-EGFP co-precipitated by Rapsn-HA, plateaued ~90 min of Agrin treatment. As summarized in Figure 7J, upon Agrin stimulation, tyrosine phosphorylation of MuSK occurs prior to that of Rapsn; and subsequently, Rapsn self-association and δ-AChR neddylation were increased, suggesting E3 ligase activity might be regulated by self-association. To examine this, we investigated whether Y86F alters Rapsn self-association. HEK293T cells were transfected with EGFP-tagged and HA-tagged Rapsn. Lysates were incubated with beads immobilized with anti-HA antibody to purify HA-tagged Rapsn and probed with anti-GFP antibody. Compared with WT control, less amount of EGFP-tagged Y86F mt Rapsn was co-precipitated by HA-tagged Y86F Rapsn (Figure 7K and L), suggesting impaired ability of mt Rapsn to self-associate. In agreement, self-association of N88K Rapsn was also reduced, compared with WT Rapsn (Figure 7M and N), suggesting that Y86 and N88 are necessary for Rapsn self-association. Together, these results support a working model that MuSK stimulates AChR cluster formation by increasing Rapsn phosphorylation and self-association and thus enhancing its E3 ligase activity.
 
-## Failure of Y86F-Rapsn in rescuing NMJ deficits in N88K mt mice
+### Failure of Y86F-Rapsn in rescuing NMJ deficits in N88K mt mice
 
 To investigate the role of Y86 phosphorylation in vivo, we generated adeno-associated virus (AAV, AAV-PHP.B) expressing WT Rapsn (AAV-WT-EGFP) or Y86F mt Rapsn (AAV-Y86F-EGFP) (Figure 8—figure supplement 1A and B). Equal volume (10 μl) of AAV viruses in same titer (1.3 × 1013 vg/ml) were intramuscularly injected into N88K mt thigh muscles of embryos at E13. Thigh muscles were isolated at P0 and subjected to morphological characterization. As shown in Figure 8—figure supplement 1C, muscles infected with AAV were visible for EGFP. AChR clusters in N88K thigh muscles were reduced in number and appeared to be thin, compared with WT controls (Figure 8A, white arrows), as observed in diaphragm muscles (Figure 1C and D). Remarkably, AChR clusters were readily detectable in muscles of N88K mt mice that were injected with AAV-WT-EGFP (Figure 8A). Unlike AChR clusters in N88K mt mice that were elongated, oval-shaped clusters were detectable in AAV-WT-EGFP-infected N88K mt thigh muscles. Also increased were the size and fluorescence intensity of AChR clusters (Figure 8A–D). These results demonstrate that N88K mutation-caused NMJ impairment could be attenuated by viral expression of WT Rapsn. Noticeably, the rescue effects were not observed in mice injected with AAV-Y86F-EGFP (Figure 8A–D). These results provide in vivo evidence that Y86 is critical to Rapsn’s function in NMJ formation.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig8-v2.jpg)
+
+**Figure 8.:** (A) Thigh muscles of N88K mt were infected with AAV-WT-Rapsn-EGFP (N88K + AAV-WT-EGFP), or infected with AAV-Y86F-Rapsn-EGFP (N88K + AAV-Y86F-EGFP) at E13. The resulting P0 muscles were stained with Flour 594-α-BTX (red) and anti-NF/Syn antibodies (blue) to examine AChR clusters, using uninfected WT or N88K mt as positive or negative controls. (B–D) Quantitative analysis of AChR cluster fluorescence intensity (B), AChR cluster size (C), AChR cluster length (D). White arrows, AChR clusters. Data were shown as mean ± SEM; *, p<0.05; ***, p<0.001, ns, no significant difference, One-way ANOVA, n = 3. Also see Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49180/elife-49180-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic diagram of generation of AAV vector expressing Rapsn. (B) HEK293T cells were infected with AAV-Rapsn-EGFP (AAV-WT-EGFP) or AAV-Y86F-Rapsn-EGFP (AAV-Y86F-EGFP). After 24 hr, Rapsn-EGFP or Y86F-EGFP expression was confirmed by GFP fluorescence. (C) Infected muscle fibers by AAV-WT-EGFP or AAV-Y86F-EGFP.
 
 ## Discussion
 
@@ -105,46 +149,315 @@ In sum, this study demonstrates that the most prevalent CMS-associated mutation 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rapsn-/-</td>
+      <td>PMID: 7675108</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>N88K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See detail information in Materials and methods .</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#:CRL-3216 RRID: CVCL_0042</td>
+      <td>From ATCC; Cell identity has been confirmed by STR profiling and cell line was found to be free of Mycoplasma.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>Cat#: CRL-1772 RRID: CVCL_0188</td>
+      <td>From ATCC; Cell identity has been confirmed by STR profiling and cell line was found to be free of Mycoplasma.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>N88K mt C2C12</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See detail information in Material and methods).</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Y86F mt C2C12</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See detail information in Material and methods.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Rapsn-/- C2C12, clone 11–7</td>
+      <td>PMID: 10414969</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA Agarose</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 26181, RRID: AB_2537081</td>
+      <td>1: 40 for IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG conjugated with Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11008 RRID: AB_10563748</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Actin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 4967, RRID: AB_330288</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- α-Actin</td>
+      <td>Abcam</td>
+      <td>Cat #: ab52218 RRID: AB_870573</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: F7425 RRID: AB_439687</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GAPDH (Clone, 6C5)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-32233, RRID: AB_627679</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-neurofilament</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2837, RRID: AB_823575</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-synapsin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 5297, RRID: AB_2616578</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Ubiquitin (Clone, Ubi-1)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab7254, RRID: AB_305802</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2555, RRID: AB_10692764</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal P-Tyr-100</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9411 RRID: AB_331228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-Flag affinity gel (Clone, M2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A2220, RRID: AB_10063035</td>
+      <td>1: 50 for IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: H6908, RRID: AB_260070</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Rapsn (Clone 1234)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab11423, RRID: AB_298028</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Transferrin</td>
+      <td>Abcam</td>
+      <td>Cat#: ab82411, RRID: AB_1659060</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-δ-AChR (Clone, 88B)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: MA3-043, RRID: AB_2081037</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Rapsn</td>
+      <td>PMID: 18940591</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-α-AChR</td>
+      <td>PMID: 3484485</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-β-AChR</td>
+      <td>PMID: 3484485</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase (HRP)-conjugated goat anti-rabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 32260, RRID: AB_1965959</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase (HRP)-conjugated goat anti-Mouse IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 32230, RRID: AB_1965958</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase (HRP)-conjugated goat anti-Rat IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 31470, RRID: AB_228356</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant Protein</td>
+      <td>Agrin</td>
+      <td>R and D Systems</td>
+      <td>Cat#: 550-AG-100</td>
+      <td>50 ng / ml for induction of AChR clusters in culture myotubes</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immunofluorescence of NMJ in diaphragm and muscles</td>
+      <td>PMID: 18278041 PMID: 22794264</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electron microscopic analysis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Generation of Gene-modified C2C12 cells</td>
+      <td>PMID: 27839998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isolation of cell surface protein</td>
+      <td>PMID: 22157653</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isolation of surface AChR and their associated proteins</td>
+      <td>PMID: 18940591</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV Virus production</td>
+      <td>PMID: 30626963 and Information in Addgene: https://www.addgene.org/protocols/aav-production-hek293-cells/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Rapsn null (-/-) mt mice were a kind gift from Dr. Peter Noakes (Gautam et al., 1995). The N88K mt mice were generated by the University of Rochester Mouse Genome Editing Resource using CRISPR/Cas9 approach, as described previously (Li et al., 2016). Briefly, a single strand DNA template (ssDNA), CCGTG GTCCA GATTG ATACT GCTCG GGGAC TGGAG GATGC TGACT TCCTG CTCGA AAGCT ACCTC AAGTT AGCTC GCAGC AATGA GAAGC TATGT GAGTT CCACA AAACC ATCTC CTACT GCAAG ACCTG CCTCG G, containing the desired mutations was synthesized and purified by Integrated DNA Technologies. SgRNA was generated by a MEGAshortscript T7 kit (Life Technologies) using template sequence (GCTCG AAAGC TACCT GAACC) cloned in pX330 plasmid (Addgene #42230) and was purified using MEGAclear kit (Life Technologies). Mixture of Cas9 mRNA (TriLink Biotechnologies, 100 ng / μl), sgRNA (50 ng / μl), and ssDNA (100 ng / μl) was injected into fertilized eggs from C57BL/6J mice (Jackson Laboratory, Stock #000664). Viable two-cell stage embryos were transferred to pseudo-pregnant ICR females to generate founder mice, which were subsequently bred with C57BL/6J mice for germline transmission to generate F1 mice. Mice carrying N88K mutation were screened by PCR analysis and confirmed by DNA sequencing. Primers: 5’- GCTCG AAAGC TACCTG AACCT GGCG-3’ and 5’-CACGA GGTTCT CAGGG AGCCT CA-3’ were used to verify WT genomic DNA, and primers: 5’-CTTCC TGCTC GAAAG CTACC TCAAG TTAGC T-3’ and 5’-CACGA GGTTC TCAGG GAGCC TCA-3’ were used to verify N88K mt genomic DNA. C57BL/6 mice were used as WT controls. Mice were housed in cages in a room with 12 hr light-dark cycle with ad libitum access to water and rodent chow diet (Diet P3000). Embryo and P0 pups of either sex were analyzed, unless otherwise indicated. Animal protocols have been approved by the Institutional Animal Care and Use Committee of Case Western Reserve University.
 
-## Reagents and antibodies
+### Reagents and antibodies
 
 Following reagents were purchased from Thermo Fisher Scientific (Waltham, MA): Flour-594 conjugated α-Bungarotoxin (Flour 594-α-BTX; Catalog number, B-13423; 1:1000 for staining), Biotin conjugated α-Bungarotoxin (Biotin-α-BTX, Catalog number, B1196), Sulfo-NHS-SS-Biotin (Catalog number, PG82077), streptavidin-coupled agarose beads (Catalog number, 20349), goat anti-rabbit IgG conjugated with Alexa Fluor 488 (Catalog number, A-11008; 1: 500 for staining), mouse anti-HA agarose (Catalog number, 26181). Mouse anti-GAPDH (Catalog number, NB 600–501; 1:10000 for WB) was from Novus (Littleton, CA). Rabbit anti-Actin (Catalog number, 4967; 1: 5000 for western blotting), rabbit anti-Nedd8 (Catalog number, 10695299; 1:1000 for WB and IP), rabbit anti-neurofilament (Catalog number, 2837S; C28E10, 1:1000 for staining), rabbit anti-synapsin (Catalog number, 5297; D12G5, 1:1000 for staining) and mouse anti-phospho-tyrosine (Catalog number, 9411S; P-Tyr-100; 1:1000 for western blotting) were from Cell signaling technology (Boston, MA). Cycloheximide (CHX, Catalog number, C7658-5G; 50 μg / ml), rabbit anti-HA (Catalog number, H6908; 1:1000 for western blotting), rabbit anti-Flag (Catalog number, F7425; 1:1000 for western blotting), HA peptide (Catalog number, 11666975001), anti-Flag M2 affinity gel (Catalog number, A2220) were from Sigma (Mendota Heights, MN). Mouse anti-Ubiquitin (Catalog number, ab7254; 1:1000 for western blotting), rabbit anti-α-Actin (Catalog number, ab52218; 1: 10000 for western blotting), mouse anti-Rapsn (Catalog number, ab11423; clone 1234, 1:1000 for western blotting), rabbit anti-Transferrin (Catalog number, ab82411; 1: 1000 for western blotting) were from Abcam (Cambridge, MA). Mouse anti-δ-AChR (C4; 1:1000 for western blotting) was from Santa Cruz Biotechnology (Dallas, TX). Rabbit anti-Rapsn (2741), goat anti-α-AChR and rabbit anti-β-AChR antibodies were described previously (Barik et al., 2014; Luo et al., 2008; Wu et al., 2012a; Zhao et al., 2017). Horseradish peroxidase (HRP)-conjugated goat anti-rabbit IgG (Catalog number, 32260), goat anti-mouse IgG (Catalog number, 32230), goat anti-rat IgG (Catalog number, 31470) antibodies (1:5000 for western blotting) were from Pierce (Rockford, IL).
 
-## Immunofluorescence
+### Immunofluorescence
 
 The procedures for staining muscles or diaphragms were described previously (Li et al., 2016; Li et al., 2008; Wu et al., 2012b). Briefly, skeletal muscles or diaphragms were fixed in 4% paraformaldehyde in PBS for 24 hr, and then dissected in PBS. Dissected samples were rinsed with 0.1 M glycine in phosphate-buffered saline (PBS) for 1 hr at room temperature and followed by three-time washing in PBS. Samples were then incubated with the blocking buffer (5% BSA, 5% goat serum, 1% Triton X-100 in PBS) for 1 hr at room temperature and incubated with primary antibodies in blocking buffer at 4°C overnight. Next day, after washing three times with washing buffer (1% Triton X-100 in PBS), samples were incubated with fluorescent-labeled secondary antibodies at room temperature for 1–2 hr. Samples were then washed with washing buffer and mounted with Vectashield mounting medium (H1000, Vector Laboratories, Burlingame, CA) and coverslip. Images were collected with a Zeiss confocal laser scanning microscope (LSM 800) and collapsed into a single image. AChR clusters and axon branches in left, ventral diaphragms were quantified within 1 mm of primary phrenic nerve branches.
 
-## Western blot analysis
+### Western blot analysis
 
 Western blot was performed as described previously (Barik et al., 2014; Zhao et al., 2017).
 
-## Electron microscopic analysis
+### Electron microscopic analysis
 
 The procedures for electron microscopic were described previously (Li et al., 2016; Wu et al., 2015; Wu et al., 2012b).
 
-## Electrophysiological recording
+### Electrophysiological recording
 
 The procedures for electrophysiological recording of P0 diaphragms were described as previously (Li et al., 2008; Shen et al., 2018).
 
-## C2C12 culture and generation of Gene-modified C2C12 cells
+### C2C12 culture and generation of Gene-modified C2C12 cells
 
 Mouse myoblasts C2C12 were purchased from ATCC (Catalog number, CRL-1772, Manassas, VA). Rapsn null mt muscle cells (clone 11–7) were kindly provided by Dr. C. Fuhrer. The procedures for C2C12 culture and generation of knock-in mt C2C12 cell by CRISPR-Cas9 were described previously (Li et al., 2016; Zhang et al., 2012; Zhang et al., 2007). The sgRNA carrying targeting sequence GCTCG AAAGC TACCT GAACC was used for generation of N88K mt C2C12; sgRNA carrying targeting sequence CAT TGC TGC GCG CCA GGT TC was used for generation of Y86F mt C2C12. For comparing Rapsn tyrosine phosphorylation and E3 ligase activity between WT and N88K mt culture myotubes, myotubes were treated with Agrin for 2 hr, because Agrin activates MuSK within 10 min of stimulation and tyrosine phosphorylation of Rapsn that plateaus around 20 min (Figure 6A), and Agrin induces the formation of AChR clusters beginning around 2 hr of stimulation (Ngo et al., 2012). For studying Rapsn self-association in culture myotubes (Figure 7I), overexpression of high dosage of Rapsn could induce Rapsn aggregation in the absence of Agrin (data not shown), several dosages of Rapsn vectors were tested, and 3.5 μg Rapsn-HA vector and 3.5 μg Rapsn-EGFP vector were used to transfect 10 cm culture plate. At these dosages, through viewing GFP fluorescence, we could see expression of Rapsn at culture myotubes, but these myotubes didn’t have obvious Rapsn aggregates.
 
-## Isolation of cell surface protein
+### Isolation of cell surface protein
 
 The procedures for isolating surface proteins were described previously (Chen et al., 2012). Briefly, cells were washed twice with ice-cold PBS followed by incubation with 10 ml 0.25 mg/mL Sulfo-NHS-SS-Biotin in PBS containing Mg2+/Ca2+ at 4°C for 45 min. Reaction was quenched by adding 10 mM Glycine. Cells were lysed in RIPA buffer containing 150 mM NaCl, 25 mM Tris-HCl, 1% Triton X-100, 10% glycerol, 25 mM NaF, 2 mM NaVO3, 5 mM Na4P2O7, protease Inhibitor cocktail (CO-RO, Roche), PH 7.4 and centrifuged. Biotin-labeled surface proteins in supernatant were precipitated by adding Streptavidin-coupled agarose beads, and dissolved in 2 X protein loading buffer (20% Glycerol, 100 mM Tris-HCl, 4% SDS, 2% β-mercaptoethanol, 0.01% bromophenol blue), and analyzed by SDS-PAGE gel.
 
-## Isolation of surface AChR and their associated proteins
+### Isolation of surface AChR and their associated proteins
 
 The procedure for isolating surface AChR and associated proteins were described previously (Luo et al., 2008). Briefly, live cultured myotubes were washed with cold PBS twice, and then incubated with 300 nM biotin-α-BTX in PBS containing Mg2+/Ca2+ at 4°C for 1 hr. After washing with PBS for three times, cells were lysed in RIPA buffer. Lysates were centrifuged and supernatants were incubated with streptavidin beads for 6 hr at 4°C to precipitate biotin-labeled protein. Precipitated proteins were resolved by 2 X protein loading buffer and analyzed by SDS-PAGE gel.
 
-## Virus production
+### Virus production
 
 The procedures for generating recombinant AAV virus were as described previously (Challis et al., 2019). Briefly, full length WT or Y86F mt Rapsn was subcloned into AAV vector (AAV-CMV-GFP; Addgene Catalog, 67634). AAV vectors expressing WT Rapsn or Y86F mt Rapsn were cotransfected with helper vector (From Agilent), capsid vector (pUCmini-iCAP-PHP.B; Addgene Catalog, 103002) were cotransfected into human embryonic kidney (HEK) 293 T cells. Medium was harvested twin at 72 hr and 120 hr after transfection and viruses in the medium were precipitated by 40% PEG 8000. Cells were finally harvested and lysed in SAN digestion buffer (0.5 M NaCl, 4 mM Tris, 1 mM MgCl2). Virus was purified by using a discontinuous iodixanol gradient. The titer was determined by qPCR.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed by unpaired t-test, One-way ANOVA and Two-way ANOVA. Unless otherwise indicated, data were shown as mean ± SEM. Statistical difference was considered when p<0.05.

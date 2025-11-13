@@ -23,7 +23,7 @@
 
 ## Abstract
 
-To investigate how the CARD14 E138A psoriasis-associated mutation induces skin inflammation, a knock-in mouse strain was generated that allows tamoxifen-induced expression of the homologous Card14 E138A mutation from the endogenous mouse Card14 locus. Heterozygous expression of CARD14 E138A rapidly induced skin acanthosis, immune cell infiltration and expression of psoriasis-associated pro-inflammatory genes. Homozygous expression of CARD14 E138A induced more extensive skin inflammation and a severe systemic disease involving infiltration of myeloid cells in multiple organs, temperature reduction, weight loss and organ failure. This severe phenotype resembled acute exacerbations of generalised pustular psoriasis (GPP), a rare form of psoriasis that can be caused by CARD14 mutations in patients. CARD14 E138A -induced skin inflammation and systemic disease were independent of adaptive immune cells, ameliorated by blocking TNF and induced by CARD14 E138A signalling only in keratinocytes. These results suggest that anti-inflammatory therapies specifically targeting keratinocytes, rather than systemic biologicals, might be effective for GPP treatment early in disease progression.
+To investigate how the CARD14E138A psoriasis-associated mutation induces skin inflammation, a knock-in mouse strain was generated that allows tamoxifen-induced expression of the homologous Card14E138A mutation from the endogenous mouse Card14 locus. Heterozygous expression of CARD14E138A rapidly induced skin acanthosis, immune cell infiltration and expression of psoriasis-associated pro-inflammatory genes. Homozygous expression of CARD14E138A induced more extensive skin inflammation and a severe systemic disease involving infiltration of myeloid cells in multiple organs, temperature reduction, weight loss and organ failure. This severe phenotype resembled acute exacerbations of generalised pustular psoriasis (GPP), a rare form of psoriasis that can be caused by CARD14 mutations in patients. CARD14E138A-induced skin inflammation and systemic disease were independent of adaptive immune cells, ameliorated by blocking TNF and induced by CARD14E138A signalling only in keratinocytes. These results suggest that anti-inflammatory therapies specifically targeting keratinocytes, rather than systemic biologicals, might be effective for GPP treatment early in disease progression.
 
 ## Introduction
 
@@ -43,13 +43,29 @@ We present evidence that conditional heterozygous expression of CARD14E138A in a
 
 Human and mouse CARD14 proteins are highly homologous, with 77% amino acid identity overall and 80% identity in the coiled-coil region in which the CARD14E138A mutation is located (Figure 1—figure supplement 1A). To study how CARD14E138A mutation induces skin inflammation, we developed a conditional knock-in mouse strain, Card14LSL-E138A/LSL-E138A, in which a floxed minigene (exons 4–22) encoding wild type (WT) C-terminus of CARD14 linked to a 3xFLAG tag was inserted between exons 3 and 4 of the Card14 locus and an E138A point mutation was introduced into endogenous Card14 exon 5 (Figure 1—figure supplement 1B). In the absence of Cre-mediated recombination, Card14 was expressed from exon 3 and the inserted minigene to produce WT CARD14-3xFLAG. After Cre-mediated recombination, the minigene was excised, allowing transcription of Card14 from the endogenous exons and expression of CARD14E138A.
 
-## CARD14 is expressed at high levels in differentiated keratinocytes of the skin epidermis
+### CARD14 is expressed at high levels in differentiated keratinocytes of the skin epidermis
 
 In order to understand the effects of Card14E138A mutation, it was first important to know where CARD14 protein is normally expressed. High levels of CARD14-3XFLAG were detected in the back skin and ears, as expected, and also in the colon, small intestine and caecum (Figure 1A). Low levels of CARD14-3XFLAG were additionally found in the liver and kidney.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig1-v2.jpg)
+
+**Figure 1.:** (A) CARD14-FLAG protein expression analysed in total extracts from different organs from control (WT) and Card14E138A-LSL (KI) mice by immunoblotting. (B) Localisation of Card14 mRNA expression in the skin assessed by RNAscope. (C) Timeline of the Card14E138A induction by tamoxifen and sample collection. (D) Representative histology images of ears on d5 after tamoxifen injection: (first panel) H and E staining and acanthosis quantification over time; (second panel) Ki67 staining at d5 and quantitation; (third panel) S100A9 staining at d5 and quantitation; (fourth panel) involucrin staining at d5 and (bottom panel) endomucin staining at d5. (E) qRT-PCR analysis of the expression of IL17a, Tnfa, S100a9, Il17c and Il1f9 mRNAs. (F) Quantification and characterisation of the immune cell infiltrate of the ears at d5 after tamoxifen by FACS. Data pooled from 4 independent experiments; Card14+/+ Rosa26CreERT2/+n = 22, Card14LSL-E138A/+ Rosa26CreERT2/+ 5d n = 22. Data collected from a mixture of male and female mice. (B, D) Scale bar = 100 µm. Differences between groups analysed by one-way ANOVA (D and E) or Student’s t-test (F). *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. For clarity, only statistical analyses between the two genotypes at day 4 and day 5 were noted.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) pBlast alignment of the human (Q9BXL6) and mouse (Q99KF0) CARD14 protein sequences; highlighted in yellow is the conserved glutamic acid in the position 138 that is mutated in the psoriasis patient (Jordan et al., 2012b). (B) Schematic representation of Card14 knock in locus before and after Cre-mediated recombination. Under basal conditions (upper panel), Card14 is expressed from the early endogenous exons (starting from exon 3), and exons within the minigene. A 3xFLAG tag was inserted at the 3’ end of the minigene to attach a C-terminal tag on CARD14. The STOP and human growth hormone poly (A) (hGHpA) cassette prevented aberrant read-through to the remaining endogenous locus, in which the E138A point mutation (GAG >GCG) was introduced in exon 5. After Cre-mediated recombination (bottom panel), the minigene was excised and expression of Card14 from the endogenous exons was resumed, resulting in expression of CARD14E138A. (C) Card14 mRNA expression through the different layers of the mouse epidermis, RNAseq data from the public dataset GSE75931 (Asare et al., 2017). (D) Primary keratinocytes were isolated from Card14LSL-E138A mice and cultured for 7d. CaCl2 (2 mM) was added to promote differentiation and lysates were produced at the indicated times. CARD14-FLAG expression was assessed by immunoblotting. (E) Normal human epidermal keratinocytes were cultured in vitro and CaCl2 (2 mM) was added to promote differentiation. Lysates were analysed by qPCR for quantification of mRNA levels of Involucrin and CARD14. (F) Samples were produced as in (E), protein lysates were immunoblotted for CARD14, Involucrin and HSP90. (G) Expression of CARD14 mRNA from transcriptomes of human primary Keratinocytes (GSE73305) (Bin et al., 2016) and organotypic epidermal tissue (GSE52954) (Lopez-Pajares et al., 2015) at different differentiation stages. (D, E and F) representative from three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** CARD14E138A expression was induced by tamoxifen injection of Card14LSL-E138A/+Rosa26CreERT2/+ mice, as in Figure 1C. (A) Representative histology image of the back skin: (first panel) H and E on d5 and acanthosis quantification over time; (second panel) immunohistochemistry of the back skin stained with Ki67 at d5 and its quantification over time; (third panel) immunohistochemistry of the back skin stained for S100A9 at d5 and quantification of dermal myeloid cells over time; (fourth panel) immunohistochemistry of the back skin stained for involucrin at d5 and (bottom panel) immunohistochemistry of the back skin stained for endomucin at d5. (B) qRT-PCR analysis of the expression of Il17a, Tnfa, S100a9, Il17c and Il1f9 over time. Data collected from a mixture of male and female mice. (A) Scale bar = 100 µm. (B) Differences between WT and KI analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. For clarity, only statistics between the two genotypes at day 4 and day five were noted.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The same gating strategy was used for all mice and tissues analysed.
+
 RNAscope analysis revealed that Card14 mRNA expression in healthy mouse skin was restricted to the upper (most differentiated) keratinocytes, the outer root sheath of the hair and sebocytes in the skin (Figure 1B). These data contrasted with earlier immunohistochemistry results suggesting CARD14 expression in the basal layer of human skin (Fuchs-Telem et al., 2012; Jordan et al., 2012b). However, the RNAscope analyses were in line with published RNA sequencing data from different layers of the mouse epidermis (Figure 1—figure supplement 1C) and single cell sequencing of murine epidermis (http://kasperlab.org/mouseskin) which also indicated Card14 mRNA expression in differentiated keratinocytes (Asare et al., 2017). Consistent with this, CARD14 protein expression was induced in mouse keratinocytes following in vitro differentiation in culture medium containing CaCl2 (Figure 1—figure supplement 1D; Bikle et al., 2012). CARD14 mRNA and CARD14 protein expression was similarly induced in cultured human keratinocytes concurrent with the keratinocyte differentiation marker involucrin (Figure 1—figure supplement 1E and F). The CARD14 mRNA expression data agree with published transcriptomic datasets of differentiating human keratinocytes (Bin et al., 2016) and organotypic epidermis (Lopez-Pajares et al., 2015; Figure 1—figure supplement 1G).
 
-## Heterozygous expression of CARD14E138A rapidly induces psoriasiform skin inflammation
+### Heterozygous expression of CARD14E138A rapidly induces psoriasiform skin inflammation
 
 Psoriasis-associated CARD14 mutations in humans are generally heterozygous (Jordan et al., 2012a). Card14LSL-E138A/+Rosa26CreERT2 mice were generated to test the effect of ubiquitous heterozygous expression of Card14E138A following tamoxifen-induced minigene deletion (Seibler et al., 2003), according to the scheme in Figure 1C.
 
@@ -59,15 +75,43 @@ Flow cytometry further characterised immune cells in the ears five days (5d) aft
 
 Together these results indicated that expression of CARD14E138A promoted the rapid development of skin inflammation that shared many features in common with psoriasis (Greb et al., 2016).
 
-## CARD14E138A signalling in keratinocytes induces skin inflammation independently of the adaptive immune system
+### CARD14E138A signalling in keratinocytes induces skin inflammation independently of the adaptive immune system
 
 CARD14 is expressed at high levels in skin keratinocytes but is also expressed at lower levels in intestinal epithelial cells and other tissues (Figure 1A). To test whether the skin inflammation in the Card14LSL-E138A/+Rosa26CreERT2/+ mice was caused by keratinocyte-intrinsic CARD14E138A signalling, Card14LSL-E138A/LSL-E138A mice were crossed with Krt14CreERT2 mice. Tamoxifen injection of the resulting Card14E138A/+ Krt14CreERT2/+ mice induced expression of CARD14E138A in keratinocytes (Figure 2—figure supplement 1A). This induced acanthosis, hyperkeratosis, infiltration of S100A9+ myeloid cells and increased expression of chemokines and proinflammatory cytokines in the ears and the back skin at 5d after tamoxifen injection (Figure 2A,B,C,D and Figure 2—figure supplement 1B,C,D and E). Some Card14E138A/+ Krt14CreERT2/+ mice presented a visible skin phenotype without tamoxifen injection, which could be due to leaky expression of Cre allowing basal expression of CARD14E138A, these were excluded from experiments. Skin expression of psoriasis-associated genes at 5d was increased in Card14LSL-E138A/+Krt14CreERT2/+ mice compared to controls, similar to Card14LSL-E138A/+Rosa26CreERT2/+ mice (Figure 2—figure supplement 2A). However, the fold changes for the majority of these transcripts were higher on the Rosa26CreERT2 background. Nevertheless, these experiments showed that CARD14E138A signalling in keratinocytes alone was sufficient to induce skin inflammation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig2-v2.jpg)
+
+**Figure 2.:** Eight-week old Card14+/+ Krt14CreERT2/+, Card14LSL-E138A/+ Krt14CreERT2/+, Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+, Card14+/+ Rosa26CreERT2/+ Rag1+/+ and Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1-/- mice were injected intraperitoneally with tamoxifen on days 0, 1 and 2. Mice were sacrificed and tissues analysed at 5d after the first injection of tamoxifen. (A and E) Immunohistochemistry of the ear stained for S100A9 at d5. (B and F) Quantification of acanthosis (C and G) Quantification of dermal immune cell infiltration. (D and H) qRT-PCR analysis of mRNA expression of the indicated genes in the ear. Fold changes in (H) were calculated by comparison with the Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+ group. (A and E) Scale bar = 100 µm. Data in B and C from 1 of 2 similar experiments with n ≥ 4, data in D, F, G and H pooled from 2 independent experiments with n ≥ 4 (D) and with n ≥ 6 (F, G and H). Differences between groups analysed by Student’s t test (B, C and D) or one-way ANOVA (F, G and H). *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Eight-week old Card14+/+Krt14CreERT2/+, Card14LSL-E138A/+ Krt14CreERT2/+, Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+, Card14+/+ Rosa26CreERT2/+ Rag1+/+ and Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1-/- mice were injected intraperitoneally with tamoxifen on d0, 1 and 2. Mice were sacrificed and tissues analysed at 5d after the first injection of tamoxifen. (A) PCR was used to assess recombination of Card14LSL-E138A locus ± tamoxifen (5d) in tissues from Card14LSL-E138A/LSL-E138A Krt14CreERT2/+ mice. (B and F) Immunohistochemistry of the back skin stained with S100A9 at d5. (C and G) Quantification of acanthosis. (D and H) Quantification of dermal immune cell infiltration. (E and I) qRT-PCR analysis of the expression of the indicated genes in the back skin. Fold changes in (I) were calculated by comparison with a Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+ isotype injected group. (B and F) Scale bar = 100 µm. Data in C and D from 1 of 2 independent experiments with n ≥ 4, data in E, G, H and I pooled from 2 independent experiments with n ≥ 4 (E) and with n ≥ 6 (G, H and I). Differences between groups analysed by Student’s t-test (C, D and E) or one-way ANOVA (G, H and I). *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Comparison of the fold change from their respective controls between Card14LSL-E138A/+ Rosa26CreERT2/+ and Card14LSL-E138A/+ Krt14CreERT2/+ for the indicated genes as assessed by qRT-PCR. Values pooled from 2 independent experiment with each group n ≥ 4. Differences between groups analysed by Student’s t-test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
 To investigate the role of the adaptive immune system in the development of CARD14E138A-induced skin pathology, Card14LSL-E138A/+Rosa26CreERT2/+Rag1-/- mice were generated that lacked T and B cells. Tamoxifen induced a skin phenotype very similar to Card14LSL-E138A/+Rosa26CreERT2/+ Rag1+/+ controls, with acanthosis, hyperkeratosis, S100A9+ myeloid cell infiltration and expression of chemokines and proinflammatory cytokines at 5d following tamoxifen injection (Figure 2E,F,G,H and Figure 2—figure supplement 1F,G,H and I). Consequently, the adaptive immune system was not required for acute skin inflammation induced by ubiquitous CARD14E138A expression.
 
-## Neutralisation of TNF efficiently blocks skin inflammation induced by CARD14E138A
+### Neutralisation of TNF efficiently blocks skin inflammation induced by CARD14E138A
 
 Two of the most common and efficient treatments for moderate to severe psoriatic patients are antibody blocking of TNF and IL-17A (Greb et al., 2016). We next assessed whether the inflammatory skin phenotype induced by CARD14E138A could be ameliorated by neutralising either of these cytokines following the protocol shown in Figure 3A.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig3-v2.jpg)
+
+**Figure 3.:** Eight-week old Card14LSL-E138A/+Rosa26CreRT2/+ and Card14+/+ Rosa26CreERT2/+ mice treated with either tamoxifen and blocking antibodies or with tamoxifen and isotype control IgG following the scheme in A. (B) Representative histological image of ear stained by H and E on d5 and acanthosis quantification from mice receiving the different treatments. (C) qRT-PCR analysis of the expression of indicated genes Fold changes were calculated by comparing with the Card14LSL-E138A/+ Rosa26CreERT2/+ isotype treated group. (D) Quantification and characterisation of the immune cell infiltrate of the ears at d5 after tamoxifen by FACS. Data from 1 experiment (B) Scale bar = 100 µm. Data pooled from 2 experiments with at least n ≥ 4. Differences between groups analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. For clarity, only statistically significant differences have been noted in the graphs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Eight-week old Card14LSL-E138A/+Rosa26CreERT2/+ and Card14+/+ Rosa26CreERT2/+ mice were all tamoxifen induced and simultaneously: given no antibody treatment, treated with indicated blocking antibodies, or treated with IgG isotype control. (A) Representative histology image of the back skin stained by H and E on d5 and acanthosis from mice receiving the different treatments. (B) qRT-PCR analysis of indicated gene expression. Fold changes were calculated over the Card14LSL-E138A/+ Rosa26CreERT2/+ isotype treated group. (A) Scale bar = 100 µm. Data pooled from at least 2 independent experiments with at least n ≥ 4. Differences between groups analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Localisation of Card14 mRNA expression in the skin of untreated or 5 days after tamoxifen induced Card14LSL-E138A/+ Rosa26CreERT2/+ mice assessed by RNAscope. (B) Localisation of Tnfa mRNA expression in the back skin and ear of untreated or 5 days after tamoxifen induced Card14LSL-E138A/+ Rosa26CreERT2/+ mice assessed by RNAscope. Each picture corresponds to an individual mouse. Scale bar = 100 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Co-staining of Tnfa mRNA and keratin 5, Ly6g and CD3 in the skin 5 days after tamoxifen induction of Card14LSL-E138A/+ Rosa26CreERT2/+ mice assessed by RNAscope (pink - Tnfa mRNA) and IHC (blue - keratin 5, Ly6g, CD3). Scale bar = 100 µm.
 
 Anti-TNF substantially reduced acanthosis in ears and back skin of tamoxifen-induced Card14LSL-E138A/+ Rosa26CreERT2/+ mice such that epidermal thickness was similar to that detected in Card14+/+ Rosa26CreERT2/+ control mice after tamoxifen injection (Figure 3B and Figure 3—figure supplement 1A). Skin expression of mRNAs encoding chemokines and proinflammatory cytokines was also significantly reduced by anti-TNF in the ears and the back skin (Figure 3C and Figure 3—figure supplement 1B). Flow cytometric analyses demonstrated that anti-TNF reduced infiltration of neutrophils, DCs and eosinophils into the ears (Figure 3D).
 
@@ -77,9 +121,17 @@ Blocking of IL-17A also resulted in a significant reduction in epidermal thickne
 
 Together these results indicated that the acute inflammatory skin phenotype induced by tamoxifen injection of Card14LSL-E138A/+ Rosa26CreERT2/+ mice was predominantly driven by TNF produced by keratinocytes, while IL-17A appeared to play a less important role. These findings were consistent with the lack of requirement for adaptive immune cells for Card14E138A to induce acanthosis and expression of pro-inflammatory genes in the skin, since αβ and γδ T cells are a major source of IL-17A in psoriasis (Prinz et al., 2020). Consistent with this, Il17a mRNA levels were not increased in ears of Card14LSL-E138A/+Rosa26CreERT2/+Rag1-/- mice following tamoxifen induction (Figure 2H).
 
-## Comparison of the inflammatory effects of acute versus chronic CARD14E138A expression
+### Comparison of the inflammatory effects of acute versus chronic CARD14E138A expression
 
 Histological and flow cytometric analyses of ears revealed clear evidence of acanthosis and skin inflammation, respectively, 5d following tamoxifen injection of Card14LSL-E138A/+ Rosa26CreERT2/+ mice (Figure 1), but externally the ears appeared normal (Figure 4A). However, one month (1 m) after CARD14E138A induction, large scales with sharply demarcated edges were clearly evident on the ears of the mutant mice (Figure 4A). No obvious external back skin phenotype was visible at 5d or 1 m. Histologic examination of ears revealed increased acanthosis at 1 m compared with 5d (Figure 4B). In contrast, epidermal thickening of the back skin, although still detected, was significantly reduced at 1 m compared to 5d (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig4-v2.jpg)
+
+**Figure 4.:** Card14LSL-E138A/+Rosa26CreERT2/+ mice (Het) and Card14+/+ Rosa26CreERT2/+ controls (WT) were intraperitoneally injected with tamoxifen on days 0, 1 and 2. Mice were sacrificed and tissues analysed at 5d or 1 m following the first tamoxifen injection. (A) The backs of the ears were photographed. Photos shown are representative of numerous mice. (B) Epidermal thickness of ear and skin was measured from H and E stained tissue sections. Data shown are a pool of 14 independent experiments. (C) Flow cytometry was performed on ear and skin. Ear: data pooled from 6 independent experiments: WT, n = 31; Het 5d, n = 22; Het 1 m, n = 13. Skin: data pooled from 9 independent experiments: WT, n = 43; Het 5d, n = 32; Het 1 m, n = 18. Note: FACS data for d5 are the same as that shown in Figure 1F (D) Serum was collected and cytokine concentrations analysed by immunoplex array. Serum samples collected from 3 independent experiments. (E) Weight was monitored over time. Card14+/+ Rosa26CreERT2/+ (n = 5), Card14 LSL-E138A/+ Rosa26CreERT2/+ (n = 6). For each day, differences between groups analysed by Student’s t-test. Data collected from a mixture of male and female mice. (B-D) Differences between WT, Het 5d, and Het 1 m were analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Eight-week old Card14+/+ Rosa26CreERT2/+Rag1+/+, Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+ and Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1-/- mice were injected intraperitoneally with tamoxifen on days 0, 1 and 2. Mice were sacrificed and tissues analysed at 1 m after the first injection of tamoxifen. (A and E) Immunohistochemistry of the ear/back skin stained with S100A9 at 1 m. (B and F) Quantification of acanthosis (C and G) Quantification of dermal immune cell infiltration. (D and H) qRT-PCR analysis of the expression of the indicated genes in the ear/back skin. Fold changes were calculated by comparison with the Card14LSL-E138A/+ Rosa26CreERT2/+ Rag1+/+ mice group (I) Flow cytometry was performed on cells isolated from ears to characterise the immune cell infiltration at 1 m. Scale bar = 100 µm. Data in B, C, D, F, G and H pooled from 3 different experiments with n ≥ 4, data in I from 1 experiment with n ≥ 4. Differences between groups analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
 Flow cytometry was used to compare immune cell infiltration in the ears and back skin at 5d and 1 m post-tamoxifen injection (Figure 4C). At 5d, the immune cell infiltrates in the ears and skin was largely composed of innate cells, with substantially increased numbers of neutrophils, macrophages, dendritic cells and NK cells. The number of αβ T cells was only modestly increased (approximately two-fold) at 5d in ears, but not altered in back skin. However, the numbers of αβ T cells, including Tregs, were substantially increased in both ears and back skin at 1 m. CARD14E138A expression did not increase numbers of γδ T cells in ears or back skin at either time point.
 
@@ -89,9 +141,25 @@ To investigate the role of the adaptive immune system in skin pathology induced 
 
 Taken together, these results suggest that acute CARD14E138A signalling in keratinocytes induced the transient systemic release of pro-inflammatory mediators that produced body weight loss. This early inflammatory burst was accompanied by a skin infiltrate predominantly composed of innate immune cells. After this acute phase, the skin lesion evolved and external ear skin morphology became similar to plaque psoriasis in humans. Chronic CARD14E138A signalling involved a prominent influx of T cells, although this was not required for induction of skin inflammation (from analysis of Card14LSL-E138A/+Rosa26CreERT2/+Rag1-/- mice), and reduced levels of pro-inflammatory cytokines systemically. The progression of the pathology in the Card14LSL-E138A/+ Rosa26CreERT2/+ mice resembled the flares suffered by psoriatic patients, which eventually undergo spontaneous resolution (Greb et al., 2016).
 
-## CARD14E138A signalling induces dynamic changes in the skin transcriptome
+### CARD14E138A signalling induces dynamic changes in the skin transcriptome
 
 To gain more insight into the mechanisms by which CARD14E138A induced skin inflammation, RNA was extracted from the ears of Card14LSL-E138A/+Rosa26CreERT2/+ and Card14+/+Rosa26CreERT2/+ mice 5d and 1 m after tamoxifen injection and subjected to RNA sequencing analysis. A principal component analysis indicated that the main difference between sample groups was the genotype (PCA1); CARD14E138A expression induced a genetic response clearly differentiated from the control groups (Figure 5A). The gene responses in the mutant mice were clearly distinct between 5d and 1 m, resulting in signalling duration being identified as the second cause of variation (PCA2) between sample groups (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig5-v2.jpg)
+
+**Figure 5.:** Card14LSL-E138A/+Rosa26CreERT2/+ mice (Het) and Card14+/+ Rosa26CreERT2/+ controls (WT) were intraperitoneally injected with tamoxifen on days 0, 1 and 2. Mice were sacrificed and tissues analysed at 5d or 1 m following the first tamoxifen injection (each experimental group n = 6). (A) Principal Component analysis separated samples by genotype (PCA1) and time point (PCA2). (B) Heatmap showing the top 500 differentially expressed genes. (C) Heatmap of the genes contained in the TNFα signalling via NF-κB (left), Naba Collagens (middle) and Keratinisation (right) pathways. (D) Graphs showing the expression levels of individual genes. TPM (Transcripts Per Million). Differences between WT, Het 5d and Het 1 m were analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Scatter plots illustrating the concordance between logFC from genes of Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (left panel) and 1 m (right panel) and Psoriasis Vulgaris (PV) from the dataset GSE121212 (Tsoi et al., 2019). (B) Venn diagrams showing the amount of shared genes with logFC ≥2 and padj ≤0.05 between Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (left panel) and 1 m (right panel) and Psoriasis Vulgaris (PV) from the dataset GSE121212. (C) Scatter plots illustrating the concordance between logFC from genes of Card14ΔΕ138/+ and Psoriasis Vulgaris (PV) from the dataset GSE121212. (D) Scatter plots illustrating the concordance between logFC from genes of Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (upper panel) and 1 m (lower panel) and Card14Δ138/+ from the dataset PRJEB25394. (E) Scatter plot illustrating the concordance between logFC from genes of Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 and the IL-23 injected mouse model at day five from dataset GSE123971 (Gauld et al., 2018). Red dots in the scatter plots indicate genes inside the Hallmark TNFa singaling via NFKB pathway.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Number and percentage of 2-fold upregulated differentially expressed genes shared with Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (upper panels) and 1 m (lower panels) and Psoriasis Vulgaris (PV) (left panels) and Generalised Pustular Psoriasis (GPP) (right panels) from Johnston et al., 2017. (B) Graphs show the expression levels of individual genes. TPM (Transcripts Per Million). Differences between Card14+/+ Rosa26CreERT2/+, Card14LSL-E138A/+ Rosa26CreERT2/+ 5d and Card14LSL-E138A/+ Rosa26CreERT2/+1 m were analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Scatter plots illustrating the concordance between logFC from genes of Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (left panel) and 1 m (right panel) an d Atopic Dermatitis (AD) from the dataset GSE121212 (Tsoi et al., 2019). (B) Heatmaps show the expression level of the genes logFC ≥2 and padj ≤0.05 from the skin of Card14LSL-E138A/+ Rosa26CreERT2/+ at d5 (left panel) and 1 m (right panel) in human skin samples (GSE121212). (C) Graphs showing the expression levels of individual genes. TPM (Transcripts Per Million). Red dots in the scatter plots indicate genes inside the Hallmark TNFa singaling via NFKB pathway. Differences between Card14+/+ Rosa26CreERT2/+ 5d, Card14+/+ Rosa26CreERT2/+1 m, Card14LSL-E138A/+ Rosa26CreERT2/+ 5d and Card14LSL-E138A/+ Rosa26CreERT2/+1 m were analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
 458 genes were found to be upregulated and 88 genes downregulated more than 2-fold in the Card14LSL-E138A/+Rosa26CreERT2/+ compared to the controls at 5d. Interestingly, the pattern of gene expression changed between 5d and 1 m, as shown by the different colour intensities in the heat map, indicating a change in transcriptional pattern with prolonged CARD14E138A signalling (Figure 5B). Pathway analysis revealed that TNF signalling via NF-κB was one of the pathways most strongly upregulated by CARD14E138A at both 5d and 1 m (Figure 5C). Strikingly, pathways related to extracellular matrix formation were also largely reduced in the Card14LSL-E138A/+Rosa26CreERT2/+ mice at 5d compared to the other groups. Expression of keratinisation genes was enriched in the Card14LSL-E138A/+Rosa26CreERT2/+ mice relative to controls, especially at 1 m.
 
@@ -99,7 +167,7 @@ Among the genes more strongly upregulated by CARD14E138A at 5d compared to 1 m w
 
 Together the results in this section indicated that conditional expression of CARD14E138A in adult mice allowed the evolution of CARD14E138A-induced skin inflammation to be monitored. This involved downregulation of some key proinflammatory genes at 1 m, which may reflect a homeostatic response to chronic activation of CARD14E138A signalling pathways. Importantly, several genes relevant to the pathology of psoriasis (S100a9, Il1f9, Cxcl2, Il17a and Tnfa) remained significantly elevated in Card14LSL-E138A/+Rosa26CreERT2/+ mice at 1 m and may be necessary in maintaining the inflammatory skin phenotype promoted by chronic CARD14E138A signalling.
 
-## Comparison of the CARD14E138A skin transcriptome with human psoriatic skin transcriptome
+### Comparison of the CARD14E138A skin transcriptome with human psoriatic skin transcriptome
 
 To determine whether the transcriptional changes in the skin of Card14LSL-E138/+ Rosa26CreERT2/+ mice were similar to Psoriasis Vulgaris (PV), the CARD14E138A skin transcriptome was compared with the lesional skin transcriptome of psoriatic patients (Tsoi et al., 2019). This showed that the CARD14E138A transcriptome at 5d and 1 m (Figure 5—figure supplement 1A) had relatively low R2 coefficients of determination with the PV datasets (R2: 0.255 at 5d and R2: 0.185 at 1 m). Nevertheless, when comparing the differentially expressed genes (DEG; logFC ≥2, p-adj ≤0.05) from the ears of Card14LSL-E138/+ Rosa26CreERT2/+ mice after tamoxifen injection and the skin of PV patients, 34% and 30% of genes at 5d and 1 m, respectively, were shared with PV (Figure 5—figure supplement 1B). This striking overlap suggested that the skin inflammation that develops in Card14LSL-E138/+ Rosa26CreERT2/+ mice after tamoxifen injection shares mechanistic similarities with PV.
 
@@ -113,11 +181,23 @@ Atopic dermatitis (AD) is the most common inflammatory skin disorder, driven by 
 
 To gain a clearer insight into whether skin inflammation in Card14LSL-E138/+ Rosa26CreERT2/+ mice resembled AD, DEG (logFC ≥2, padj ≤0.05) in Card14LSL-E138A/+ Rosa26CreERT2/+ mice were compared with gene expression levels in normal, non-lesional and lesional skin of PV and AD patients (Figure 5—figure supplement 3B). Heat maps showed that a significant fraction of 5d and 1 m CARD14E138A upregulated genes were highly expressed in PV patients (red genes). However, these genes were expressed at lower levels in AD patients. In addition, IL17a, IL19, IL36a (Swindell et al., 2016) and IL36g (D'Erme et al., 2015), which are considered to be biomarkers of psoriatic skin, were all strongly upregulated in the skin of Card14LSL-E138A/+ Rosa26CreERT2/+ (Figure 5D and Figure 5—figure supplement 3C). In contrast, AD involves downregulation of cornification proteins (eg. FLG and IVL) and upregulation of the TH2 cytokines IL4, IL5, IL33, TSLP and CCL24 (Guttman-Yassky and Krueger, 2017), which are not changed or follow opposite trends in Card14LSL-E138A/+ Rosa26CreERT2/+ mice (Figure 5D and Figure 5—figure supplement 3C). These comparative analyses were consistent with CARD14E138A inducing a psoriasis-like skin inflammation and not skin inflammation with gene expression characteristics of AD.
 
-## Homozygous expression of Card14E138A induces a severe systemic illness
+### Homozygous expression of Card14E138A induces a severe systemic illness
 
 The majority of psoriasis-associated CARD14 mutations identified are heterozygous suggesting that homozygous expression of such CARD14 mutations might exceed a threshold of NF-κB activation that is compatible with life. To investigate whether the inflammatory effects of CARD14E138A were dose dependent, the responses of Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ (homozygous) mice to tamoxifen injection were compared with Card14LSL-E138A/+Rosa26CreERT2/+ (heterozygous) mice.
 
 Tamoxifen injection of Card14LSL-E138A/+Rosa26CreERT2/+ mice did not result in any significant weight changes up to 4d (Figure 6A). In contrast, Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice started losing weight around 3d after tamoxifen induction. By 5d, homozygous mice had lost near to 20% of their initial body weight (Figure 6A), reaching humane end-points and requiring sacrifice. Upon general inspection, homozygous mice at d5 appeared scaly, emaciated, inactive and hunched, while heterozygous mice remained in good health.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig6-v2.jpg)
+
+**Figure 6.:** Card14LSL-E138A/+Rosa26CreERT2/+ mice (Het), Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice (Hom) and Card14+/+ Rosa26CreERT2/+ controls (WT) were intraperitoneally injected with tamoxifen on d0, 1 and 2. All mice were sacrificed 5d after the first injection of tamoxifen and tissues collected for analysis. (A) Weight was monitored every day. WT (n = 24, from five independent experiments), Het (n = 22, from five independent experiments), Hom (n = 49, from nine independent experiments). (B) The temperatures of all mice were taken using a rectal thermometer on d5. WT from four independent experiments, Het from two independent experiments, Hom from six independent experiments. (C) Representative histology images of colons stained with H and E (upper panels) or anti-S100A9 (lower panels) are shown. (D) Epidermal thickness of ear at d5 was measured from H and E stained tissue sections. Data collected from 15 independent experiments. (E) Flow cytometry was performed to calculate neutrophil numbers in ears at d5. Data pooled from two independent experiments. (F) qRT-PCRs of d5 ear and lung tissue were performed. Fold changes were calculated by comparison with the WT mice group. Data pooled from two independent experiments. (G) S100A9 staining was performed via immunohistochemistry to enumerate myeloid cell numbers in kidney, liver, and lung at d5. Data pooled from two independent experiments. (H) Serum was taken at the point of sacrifice and analysed by immunoplex array. (I) Serum quantification of biochemistry for indicators of liver (ALT: alanine aminotransferase and GLDH: glutamate dehydrogenase) and kidney (inorganic phosphate) damage. Sera were collected from 4 (H and I) independent experiments. Data collected from a mixture of male and female mice. (B, D-I) Differences between WT, Het, and Hom analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. (C) Scale bar = 200 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ (Hom), Card14LSL-E138A/+ Rosa26CreERT2/+ (Het), and Card14+/+ Rosa26CreERT2/+ (WT) mice were injected intraperitoneally with tamoxifen on d0, 1 and 2. Mice were sacrificed on d5 and photographs taken to show the extent of skin scaling on different areas of the body. (A) The uninvolved back skin of WT mice was compared to that of Het and Hom mice. The upper back of Het mice often showed visible scaling, whilst the lower did not. The total back skin of Hom mice was often uniformly covered by fine scales. (B) The foot pads of Het and Hom mice were affected to the same extent. (C) The inner ear of Hom mice was visibly scalier than that of Het mice. (D) The lips of Hom mice displayed consistent and extensive scaling, in contrast to Het mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Following sacrifice, mice were dissected to display the gastrointestinal tract. Representative photographs are shown (B) Localisation of Card14 mRNA expression in the colon of a WT mouse was assessed by RNAscope. (C) qRT-PCR analysis of the expression of Card14 mRNA in the distal and proximal colon of a WT mouse. (D) Quantification of the expression of Card14 mRNA by RNAscope. Pink dots, each corresponding to a copy of mRNA from Card14 were counted in ten apical cells from the distal and proximal colon of 2 WT mice. Results are expressed as dots per cell. (E) The number of neutrophils infiltrating the colon at d5 after induction with tamoxifen assessed by FACS. Data pooled from three independent experiments. (F) qRT-PCR analysis of the expression of indicated genes in the colon at d5 after induction with tamoxifen. (G) PCR was used to monitor recombination of Card14E138A locus ± tamoxifen (5d) in tissues from Card14LSL-E138A/LSL-E138A VillinCreERT2/+ mice. (H) Representative histology image of the colons stained by H and E from Card14+/+ VillinCreERT2/+ and Card14LSL-E138A/LSL-E138A VillinCreERT2/+ mice 1 m after Tamoxifen injection. (I) qRT-PCR analysis of the expression of indicated genes in the colon at 1 m after induction with tamoxifen (B) Left picture Scale bar = 100 µm. (B) Right picture Scale bar = 200 µm. Data in C and F pooled from two independent experiments with n ≥ 4. Differences between groups analysed by Student’s t-test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
 The fraction of body surface covered by visible scales appeared to be greater in the homozygous mice than their heterozygous littermates. The middle and lower back skin of the heterozygous mice was largely clear of visible scaling, although areas of skin that were easily accessible to the mice (upper back and beneath the chin) often presented fine scales. In contrast, large areas of back skin in the homozygous mice, including sections less easy to scratch, were covered in fine scales (Figure 6—figure supplement 1A). The skin of some homozygotes also appeared erythrodermic. The ears of the homozygous mice were visibly scalier than those of the heterozygotes, although the foot pads of both genotypes were similarly affected (Figure 6—figure supplement 1B and C). Of particular note, the lips of the d5 homozygous mice were consistently chapped (Figure 6—figure supplement 1D), while the lips of the heterozygous mice appeared normal.
 
@@ -127,7 +207,7 @@ Flow cytometry showed increased neutrophil infiltration into the ears of the hom
 
 In conclusion, the results in this section indicated that homozygous expression of Card14E138A in adult mice caused a severe systemic illness, in addition to widespread skin inflammation. This phenotype had striking similarities to the systemic phenotype displayed in exacerbations of GPP (Bachelez, 2020).
 
-## Keratinocyte-intrinsic CARD14E138A signalling induces systemic inflammation independently of adaptive immune cells
+### Keratinocyte-intrinsic CARD14E138A signalling induces systemic inflammation independently of adaptive immune cells
 
 Immunoblotting analyses demonstrated that the skin and gastrointestinal tract were the main sites of WT CARD14 expression (Figure 1A). RNAscope analysis of the colon revealed Card14 expression to be largely restricted to the single layer of epithelial cells lining the gut lumen (Figure 6—figure supplement 2B). Furthermore, Card14 mRNA expression was found to increase from proximal to distal ends of the colon (Figure 6—figure supplement 2B–D).
 
@@ -137,19 +217,19 @@ To investigate this, Card14LSL-E138A/LSL-E138A VillinCreERT2 were generated to r
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig7-v2.jpg)
 
-**Figure 7.:** E138A signalling in keratinocytes induces a severe systemic phenotype independently of the adaptive immune system.Mice of indicated genotypes were intraperitoneally injected with tamoxifen on d0, 1 and 2. (A) Weight was monitored over time. Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ (n = 49, from nine independent experiments), Card14LSL-E138A/LSL-E138A Krt14CreERT2 (n = 6, from two independent experiments), and Rag1-/-Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice (n = 11, from two independent experiments) lost weight, necessitating sacrifice 5d after the first injection of tamoxifen. Card14LSL-E138A/LSL-E138A VillinCreERT2 mice (n = 7, from two independent experiments) and Card14+/+ VillinCreERT2 controls (n = 19, from four independent experiments) were monitored for an extended period and did not lose weight. (B) Temperatures of indicated mice were taken by rectal thermometer 5d after the first injection of tamoxifen. Card14+/+ Krt14CreERT2, and Card14LSL-E138A/LSL-E138A Krt14CreERT2, from two independent experiments; Rag+/+ Card14+/+ Rosa26CreERT2, from four independent experiments; Rag-/- Card14LSL-E138A/LSL-E138A Rosa26CreERT2, from one experiment. Differences between groups analysed by Student’s t-test. (C) Numbers of S100A9+ myeloid cells were calculated from stained sections of lung tissue taken from indicated genotypes on d5. Card14+/+ mice represent a mixture of Card14+/+ Rosa26CreERT2/+ and Card14+/+ Krt14CreERT2 mice. Data pooled from two independent experiments. Differences between groups analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001.
+**Figure 7.:** Mice of indicated genotypes were intraperitoneally injected with tamoxifen on d0, 1 and 2. (A) Weight was monitored over time. Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ (n = 49, from nine independent experiments), Card14LSL-E138A/LSL-E138A Krt14CreERT2 (n = 6, from two independent experiments), and Rag1-/-Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice (n = 11, from two independent experiments) lost weight, necessitating sacrifice 5d after the first injection of tamoxifen. Card14LSL-E138A/LSL-E138A VillinCreERT2 mice (n = 7, from two independent experiments) and Card14+/+ VillinCreERT2 controls (n = 19, from four independent experiments) were monitored for an extended period and did not lose weight. (B) Temperatures of indicated mice were taken by rectal thermometer 5d after the first injection of tamoxifen. Card14+/+ Krt14CreERT2, and Card14LSL-E138A/LSL-E138A Krt14CreERT2, from two independent experiments; Rag+/+ Card14+/+ Rosa26CreERT2, from four independent experiments; Rag-/- Card14LSL-E138A/LSL-E138A Rosa26CreERT2, from one experiment. Differences between groups analysed by Student’s t-test. (C) Numbers of S100A9+ myeloid cells were calculated from stained sections of lung tissue taken from indicated genotypes on d5. Card14+/+ mice represent a mixture of Card14+/+ Rosa26CreERT2/+ and Card14+/+ Krt14CreERT2 mice. Data pooled from two independent experiments. Differences between groups analysed by one-way ANOVA. *, p<0.05; **, p<0.01; ***, p<0.001.
 
 To determine whether CARD14E138A signalling in keratinocytes was driving the severe systemic phenotype, homozygous Card14LSL-E138A/LSL-E138AKrt14CreERT2 mice were generated. Tamoxifen injection of these mice rapidly induced a pronounced loss of weight, comparable to that in Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice (Figure 7A). Card14LSL-E138A/LSL-E138AKrt14CreERT2 mice also became hypothermic following tamoxifen administration and displayed significant infiltration of S100A9+ myeloid cells in the lungs (Figure 7B and C). Upon dissection, these mice also showed signs of organ dysfunction, most notably swollen stomach and intestines (data not shown), akin to those seen in the Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice (Figure 6—figure supplement 2A). These results indicated that keratinocyte-intrinsic CARD14E138A signalling was sufficient to induce severe systemic inflammation.
 
 To determine whether the adaptive immune system contributed to the development of systemic disease induced by homozygous CARD14E138A expression, Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ Rag1-/- mice were generated. The absence of T and B cells in these mice did not ameliorate the systemic phenotype induced by homozygous Card14LSL-E138A, as judged by weight loss, hypothermia and extensive infiltration of S100A9+ myeloid cells into the lungs (Figure 7A–C). Hence, the rapid development of systemic disease in homozygous Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice following tamoxifen injection was not dependent on the adaptive immune system.
 
-## Anti-TNF ameliorates severe disease in homozygous Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice
+### Anti-TNF ameliorates severe disease in homozygous Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice
 
 Blocking TNF significantly reduced skin inflammation in heterozygous Card14LSL-E138A/+Rosa26CreERT2 mice following tamoxifen injection (Figure 3). Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice were treated with anti-TNF blocking antibody prior to and post tamoxifen induction to determine whether the severe systemic disease was also mediated by TNF. Weight loss was significantly reduced by anti-TNF treatment compared to isotype control, but not completely blocked (Figure 8A). However, anti-TNF prevented the hypothermic response of Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice to tamoxifen-induction (Figure 8B), which correlated with the mice appearing more active than isotype controls. Recruitment of S100A9+ myeloid cells into the kidneys, liver and lung at d5 post-tamoxifen was also significantly reduced by anti-TNF compared to isotype control (Figure 8C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/56720/elife-56720-fig8-v2.jpg)
 
-**Figure 8.:** Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice Card14LSL-E138A/LSL-E138ARosa26CreERT2/+ mice were intraperitoneally injected with tamoxifen on d0, 1 and 2 and intraperitoneally injected with either isotype control, anti-TNF, or anti-GR1 on days −1, 1 and 3.Mice were sacrificed on d5. (A) Mouse weight was monitored from d0 until the experiment end. Isotype (n = 24, from four independent experiments), anti-TNF (n = 11, from two independent experiments), anti-GR1 (n = 11, from two independent experiments). For each day, differences between groups were analysed by one-way ANOVA. (B) Mouse temperatures were taken by rectal thermometer on d5. Card14+/+ control mice are a mixture of Cre-, Rosa26CreERT2/+ and Krt14CreERT2 mice (from four independent experiments). Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice: isotype (from four independent experiments), anti-TNF (from two independent experiments), anti-GR1 (from two independent experiments). (C) Numbers of S100A9+ myeloid cells were calculated from stained sections of kidney, liver, and lung tissue taken from isotype, anti-TNF or anti-GR1 treated Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice and Card14+/+ Rosa26CreERT2/+ (not antibody treated) controls. Data pooled from three independent experiments. (D) qRT-PCR was performed on d5 ear and lung tissue from Card14+/+Rosa26CreERT2/+ control mice and Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice treated with either isotype control IgG or anti-TNF. Fold changes were calculated by comparison with the Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ isotype treated group One representative experiment of 2 is shown. (E) Serum quantification of biochemistry for indicators of liver (ALT: alanine aminotransferase and GLDH: glutamate dehydrogenase) and kidney (inorganic phosphate) damage. Sera were collected from nine independent experiments. Differences between groups analysed by one-way ANOVA (A-E). *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001.
+**Figure 8.:** Mice were sacrificed on d5. (A) Mouse weight was monitored from d0 until the experiment end. Isotype (n = 24, from four independent experiments), anti-TNF (n = 11, from two independent experiments), anti-GR1 (n = 11, from two independent experiments). For each day, differences between groups were analysed by one-way ANOVA. (B) Mouse temperatures were taken by rectal thermometer on d5. Card14+/+ control mice are a mixture of Cre-, Rosa26CreERT2/+ and Krt14CreERT2 mice (from four independent experiments). Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice: isotype (from four independent experiments), anti-TNF (from two independent experiments), anti-GR1 (from two independent experiments). (C) Numbers of S100A9+ myeloid cells were calculated from stained sections of kidney, liver, and lung tissue taken from isotype, anti-TNF or anti-GR1 treated Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice and Card14+/+ Rosa26CreERT2/+ (not antibody treated) controls. Data pooled from three independent experiments. (D) qRT-PCR was performed on d5 ear and lung tissue from Card14+/+Rosa26CreERT2/+ control mice and Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ mice treated with either isotype control IgG or anti-TNF. Fold changes were calculated by comparison with the Card14LSL-E138A/LSL-E138A Rosa26CreERT2/+ isotype treated group One representative experiment of 2 is shown. (E) Serum quantification of biochemistry for indicators of liver (ALT: alanine aminotransferase and GLDH: glutamate dehydrogenase) and kidney (inorganic phosphate) damage. Sera were collected from nine independent experiments. Differences between groups analysed by one-way ANOVA (A-E). *, p<0.05; **, p<0.01; ***, p<0.001, ****, p<0.0001.
 
 Anti-TNF treatment significantly decreased ear mRNA expression of Ccl20, Cxcl2 and Cxcl3 (Figure 8D), the products of which are chemoattractants for neutrophils (Chiang et al., 2019). The reduction in expression of these genes by anti-TNF was even more pronounced in the lungs. mRNA expression of S100a9, a marker of myeloid cell infiltration, was also significantly reduced (Figure 8D).
 
@@ -185,7 +265,241 @@ Both GR1 antibody (to deplete neutrophils and monocytes) and TNF antibody signif
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Card14LSL-E138A</td>
+      <td>Taconic</td>
+      <td>MGI:6111507</td>
+      <td>Mice were bred into the C57BL6/J background for &gt; 8 generations by the Ley lab. Strain name at the Francis Crick Institute SLAT.</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Rosa26CreERT2</td>
+      <td>PMID:12582257</td>
+      <td>RRID:IMSR_TAC:10471</td>
+      <td>Strain name at the Francis Crick Institute BRAW</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>VillinCreERT2</td>
+      <td>PMID:15282745</td>
+      <td>RRID:IMSR_JAX:020282</td>
+      <td>Strain name at the Francis Crick Institute BRGU</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Krt14CreERT2</td>
+      <td>PMID:14742263</td>
+      <td>(MGI:4357971)</td>
+      <td>Mice were bred into the C57BL6/J background for &gt; 8 (more like N5 for the SLDD12) generations by the Ley lab Strain name at the Francis Crick Institute SLBN</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Rag1-/-</td>
+      <td>PMID:7926785</td>
+      <td>(MGI:2448994)</td>
+      <td>Historically Backcrossed 12 x to C57BL/6J total N unknown Strain name at the Francis Crick Institute BRAU</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Card14</td>
+      <td>Mus musculus Mouse Genome Informatics</td>
+      <td>MGI:2386258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NHEK</td>
+      <td>Lonza</td>
+      <td>Cat #00192627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG1 isotype control (mouse monoclonal)</td>
+      <td>BioXcell</td>
+      <td>MOPC-21</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Il17a (mouse monoclonal)</td>
+      <td>BioXcell</td>
+      <td>clone 17F3</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG2b isotype control (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>LTF-2</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gr1 (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>clone RB6-8C5</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat IgG1 isotype control (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>TNP6A7</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TNFa (Rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>clone XT3.11</td>
+      <td>0.5 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab16667</td>
+      <td>1/350</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Involucrin (Rabbit monoclonal)</td>
+      <td>In house</td>
+      <td>ERL-3</td>
+      <td>Produced by the Crick Cell Services. 1/800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S100a9 (Rat monoclonal)</td>
+      <td>In house</td>
+      <td>2b10</td>
+      <td>1/1000 (Can be purchased from abcam ab105472)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Endomucin (Rat monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-65495</td>
+      <td>1/400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CARD14 (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>CUK-1813</td>
+      <td>Produced by Covalab 1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hsp90 (Rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-7947</td>
+      <td>1/5000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Card14 oligo 1</td>
+      <td>This paper</td>
+      <td>PCR oligo</td>
+      <td>TCAACATTATCTTCCAAGCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Card14 oligo 2</td>
+      <td>This paper</td>
+      <td>PCR oligo</td>
+      <td>TGACCTCACGTTTCATGCG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>Life Technologies</td>
+      <td>11754250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LEGENDplex,</td>
+      <td>Biolegend</td>
+      <td>740150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Gene Expression Master Mix</td>
+      <td>Thermo Fisher</td>
+      <td>4369514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Card14 RNAscope</td>
+      <td>ACDBio</td>
+      <td>Probe - Mm-Card14 Cat No 476041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corn oil</td>
+      <td>Sigma</td>
+      <td>C8267</td>
+      <td>100 ul per injection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+      <td>2 mg per injection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH, Bethesda, MD</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>GraphPad Prism eight software for Mac</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mice were bred and maintained under specific pathogen–free conditions at the Francis Crick Institute. Experiments were performed in accordance with UK Home Office regulations and endorsed by the Francis Crick Institute Animal Welfare and Ethical Review Body under the Procedure Project Licence 70/8819. Rosa26CreERT2 (Seibler et al., 2003), Krt14CreERT2 (Hong et al., 2004), VillinCreERT2 (el Marjou et al., 2004) and Rag1-/- (Spanopoulou et al., 1994) mouse lines have been described previously.
 
@@ -195,13 +509,13 @@ Transgenic mice containing the construct were crossed to a Flp deleter strain to
 
 To verify tissue-specific Cre deletion, DNA extracted from ear snips or colon was used for genotyping by PCR (KAPA Taq PCR Kit). The fragment amplified with oligos 1 (TCAACATTATCTTCCAAGCTCC) and 2 (TGACCTCACGTTTCATGCG) detected the WT Card14 locus (1818 bp), the Knock-In allele (1310 bp), and the mutant Card14E138A allele after Cre deletion (1899bp).
 
-## In vivo procedures
+### In vivo procedures
 
 To induce expression of CARD14E138A, Card14LSL-E138A/+ mice, crossed to the appropriate CreERT2 driver strain, were given intraperitoneal (I.P.) injections of tamoxifen (Sigma) dissolved in corn oil (Sigma). Each mouse received a total of three I.P. injections (2 mg/injection) of tamoxifen over three consecutive days.
 
 For all blocking antibody experiments, mice received I.P. injections of antibody on days −1, 1 and 3. In all cases, I.P. tamoxifen was given on days 0, 1 and 2. (On day 1, when mice received two I.P. injections, the blocking antibody was given in the morning and tamoxifen in the afternoon). Each antibody injection contained 0.5 mg of blocking antibody or isotype control. All antibodies were purchased from BioXcell. Mice in each experimental cohort were treated with either a blocking antibody or the appropriate isotype control. Antibody/isotype control combinations were as follows: TNF antibody (clone XT3.11) and rat IgG1 isotype control (TNP6A7); GR1 antibody (anti-Ly6G/Ly6C, clone RB6-8C5) and rat IgG2b isotype control (clone LTF-2); IL-17A antibody (clone 17F3) and mouse IgG1 isotype control (MOPC-21).
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometric analyses were performed with 5 million splenocytes, 5 million cells from the lamina propria of the colon, 5 million cells from the epithelium of the colon, 4x skin punches (total surface area of approximately 200 mm2), or 1 ear.
 
@@ -215,19 +529,19 @@ CD4 BV650 (clone RM4-5), CD8 BV510 (clone 53–6.7), CD11b BV605 (clone M1/70), 
 
 For flow cytometric gating (Figure 1—figure supplement 3), all populations were first gated on: single, live and CD45+ cells. Gating strategies for individual cell populations were then as follows: neutrophils: MHC-II-, CD11b+, Ly6G+; macrophages: Ly6G, MHCII+ and/or CD11b+, Ly6C+ and/or CD64+, MerTK+ CD64hi; dendritic cells (DCs): MHC-II+, CD11b+, CD11chi; αβ T cells: TCRβ+; CD4 T cells: TCRβ+, CD4+; CD8 T cells: TCRβ+, CD8+; Tregs: TCRβ+, CD4+, CD25+; B cells: CD19+; γδ T cells: TCRγδ+; NK cells: NK1.1+.
 
-## Immunoplex array and serum biochemistry
+### Immunoplex array and serum biochemistry
 
 Blood was collected by cardiac puncture of dead mice. Blood was allowed to clot and serum separated by centrifugation. Cytokine and chemokine concentrations within serum samples were analysed by immunoplex array (LEGENDplex, Mouse Inflammation Panel, Biolegend) on a BD LSR Fortessa X20, following manufacturer’s instructions.
 
 Serum biochemistry was quantified by IDEXX bioanalytics.
 
-## Keratinocyte cultures
+### Keratinocyte cultures
 
 Primary mouse keratinocyte cultures were prepared from mouse tail skin. Tails were cut longitudinally and bone removed. After cutting into 3 segments, the pieces were floated in cold 5 mg/ml Dispase (Thermo Fisher, 17105–041) for 4 hr at 4°C. The epidermis was then separated with forceps, and washed in cold PBS twice. Epidermis was floated in TrypLE select (Thermo fisher, 12563011) for 10 min at 37°C to detach the keratinocytes. After TrypLE incubation, epidermis was further minced with forceps and aspirated through a pipette 20 times. The suspended keratinocytes were then transfered into a 50 ml falcon with a filter on the top (100 µm) and centrifuged to pellet the cells. Keratinocytes were cultured in 7 µg/ml Collagen 1 coated plates (Thermo Fisher, A1048301) with CNT-57 medium for 2 days and then changed to CNT-02 for 5d (CELLnTEC, Bern, Switzerland). The medium was changed every second day. Normal human epidermal keratinocytes (NHEK) were purchased from Lonza and cultured in CNT-57 medium.
 
 For differentiation studies, cells were seeded in six-well plates (Thermo Fisher) and grown to pre-confluence, then 2 mM CaCl2 was added and lysates were obtained at the indicated culture times.
 
-## Histopathology and immunohistochemistry
+### Histopathology and immunohistochemistry
 
 Excised Tissues were fixed in 10% neutral buffered formalin for 48 hr at RT, then stored in 70% ethanol. Tissues were embedded in paraffin and sections (5 μm) were stained with hematoxylin and eosin (H and E). Pictures were taken with a Nikon Eclipse 90i microscope. For acanthosis (epidermal thickness) quantification, 3 measurements from the basement membrane to the stratum corneum were taken for each 10x magnification picture using Image J (NIH, Bethesda). For each mouse, 3 pictures were taken.
 
@@ -235,22 +549,22 @@ For immunohistochemistry, tissue sections were dewaxed three times in xylene for
 
 For Card14 mRNA detection in tissue, RNAscope Probe - Mm-Card14 Cat No 476041 was used following manufacturer’s instructions (ACDBio). For Tnfa mRNA detection in tissue, RNAscope Probe- Mm-TNFa Cat No. 311081 was used. For localisation of Tnfa with different cell types, the following antibodies were used: CK5 (Abcam, ab52635 at 1/6000) for keratinocytes; CD3 (Abcam, ab134096 at 1/750) for T cells and Ly6g (BD Pharmigen, 551459 at 1/500) for neutrophils. RNAscope staining was performed first, followed by IHC. Bound antibodies were visualised using Blue chromogen (Vector, SK-5300) for 3–15 min at RT.
 
-## Protein lysates and western blot
+### Protein lysates and western blot
 
 Mouse tissues were lysed in radioimmunoprecipitation assay (RIPA) buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 2 mM EDTA, 1 mM sodium pyrophosphate, 50 mM sodium fluoride, 1 mM sodium vanadate, 0.1% SDS, 1% Triton-X, 0.5% deoxycholate and protease inhibitor cocktail (Roche 11836170001)). Protein levels were quantified (Pierce BCA protein assay, Thermo Scientific) and normalised. Lysates were boiled in Laemmli buffer, resolved by SDS-PAGE and transfered to a PVDF membrane (Trans-Blot Turbo Transfer Packs, Biorad). Membranes were blocked for 1 hr at RT with 5% skimmed milk and incubated with anti-FLAG M2 (Sigma F1804); or anti-Hsp90 (Santa Cruz; sc-7947). Bound HRP-labelled secondary antibody (anti-mouse IgG; Southern Biotech) was visualised by enhanced chemiluminescence (ECL, Millipore).
 
-## RNA extraction and quantification by RT-qPCR
+### RNA extraction and quantification by RT-qPCR
 
 Tissues were harvested and immersed in RNAlater (Thermofisher) for 48 hr at 4°C and then stored at −80°C. To extract RNA, the tissues were blended in the presence of trizol with IKA T25 digital Ultra-turrax tissue homogeniser. Chloroform was added and mixed vigorously. Following 15 min centrifugation at maximum speed at 4°C the aqueous phase was transferred to a RNeasy mini kit (Qiagen #74106) to purify RNA, following manufacturer’s instructions. Quantity and purity of RNA were analysed using a NanoDrop ND-1000 Spectrophotometer.
 
 SuperScript VILO cDNA Synthesis Kit (Life Technologies #11754250) was used to obtain cDNA from 1 μg of RNA. For RT-qPCR, QuantStudio 5 Real-Time PCR was used according to the instructions provided by the manufacturers. Induction of genes was calculated with the delta delta CT method, using Hprt as a housekeeping gene. Real-time quantitative PCR (qPCR) was performed using TaqMan Gene Expression Master Mix and predesigned probes (Thermo Fisher Scientific, Waltham, MA) for the following mouse genes: Card14 (Mm00459947_m1), S100a9 (Mm00656925_m1), Tnf (Mm00443258_m1), Il1f9 (Mm00463327_m1), Il17c (Mm00521397_m1), Hprt (Mm03024075_m1), Il22 (Mm01226722_g1), Il23a (Mm01160011_g1), Il17a (Mm00439618_m1), Ccl20 (Mm01268754_m1), Cxcl2 (Mm00436450_m1), Cxcl3 (Mm01701838_m1), Nos2 (Mm00440485_m1). For human samples, CARD14 (Hs01106904_m1), 18S (Hs99999901_s1) and IVL (Hs00846307_s1) probes were used.
 
-## RNA-Seq and data analysis
+### RNA-Seq and data analysis
 
 RNA was isolated from tissue as detailed above. RNA-sequencing was performed by the Crick advanced sequencing facility using the polyA KAPA mRNA Hyper Prep kit (Roche) and coding-mRNA as starting material. Sequencing was performed on an Illumina HiSeq4000 instrument with single end reads of at least 75 bp. The RNA-Seq data generated in this article was deposited in the GEO repository (GSE149880).
 
 The ‘Trim Galore!’ utility version 0.4.2 was used to remove sequencing adaptors and to quality trim individual reads with the q-parameter set to 20 (https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/). Then sequencing reads were aligned to the mouse genome and transcriptome (Ensembl GRCm38 release-89) using RSEM version 1.3.0 (Li and Dewey, 2011) in conjunction with the STAR aligner version 2.5.2 (Dobin et al., 2013). Sequencing quality of individual samples was assessed using FASTQC version 0.11.5 (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and RNA-SeQC version 1.1.8 (DeLuca et al., 2012). Differential gene expression was determined using the R-bioconductor package DESeq2 version 1.14.1 (Love et al., 2014) (http://www.R-project.org). Gene set enrichment analysis (GSEA) was conducted as described in Subramanian et al., 2005.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analysed using GraphPad Prism 8 software for Mac (GraphPad; La Jolla, CA, USA). To compare the mean values between two groups, unpaired two-tailed Student t-tests was used. Statistical differences in mean values between three or more experimental groups were determined with one-way ANOVA Tukey’s multiple comparison test. p values < 0.05 were considered statistically significant. Significance was noted in the graphs as stars: *p<0.05; **p<0.01; ***p<0.001 and ****p<0.0001.

@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03qryx823 Skin Research Laboratory, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel
-2. https://ror.org/01fm87m50 Department of Dermatology, Rambam Health Care Campus Haifa Israel
+1. Skin Research Laboratory, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+2. Department of Dermatology, Rambam Health Care Campus Haifa Israel ([ROR:01fm87m50](https://ror.org/01fm87m50))
 3. Monasterium Laboratory Münster Germany
-4. https://ror.org/05pp39346 Department of Plastic Surgery, Rambam Medical Center Haifa Israel
-5. https://ror.org/02dgjyy92 Dr. Phillip Frost Department of Dermatology & Cutaneous Surgery, Miller School of Medicine, University of Miami Miami United States
+4. Department of Plastic Surgery, Rambam Medical Center Haifa Israel ([ROR:05pp39346](https://ror.org/05pp39346))
+5. Dr. Phillip Frost Department of Dermatology & Cutaneous Surgery, Miller School of Medicine, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
 6. CUTANEON Hamburg Germany
 
 † Corresponding author
@@ -52,17 +52,35 @@ Taken together, our data show that ILC1lc is increased in AA lesions and suffice
 
 ## Results
 
-## Peri- and intrafollicular infiltrates of ILC1lc are seen in both lesional and non-lesional AA skin
+### Peri- and intrafollicular infiltrates of ILC1lc are seen in both lesional and non-lesional AA skin
 
 First, we investigated whether healthy and AA-affected human skin differs in their content and/or distribution of ILC1lc, using a comprehensive set of triple-immunofluorescence (IF) staining best suited to identify these immunocytes (Seillet et al., 2021; Bennstein et al., 2020; Gao et al., 2017). This revealed the presence of only extremely few ILC1lc in healthy control skin with all three staining settings employed (Eomes+, CD49a+, NKG2D+ [Figure 1A and Figure 1—figure supplement 1A], Eomes+, c-KIT-, CD49a+ [Figure 1B and Figure 1—figure supplement 1A], or NKp44+, CD103+, T-bet- cells [Figure 1C and D and Figure 1—figure supplement 1A; Kim, 2015; Fuchs et al., 2013; Salimi and Ogg, 2014]). These cells appeared to be preferentially scattered along the papillary dermis of healthy scalp skin biopsies and around the HFs (Figure 1C). This is reminiscent of the few Vδ1+T cells detectable in healthy human skin that also have a preferential perifollicular location and may ‘police’ the skin for molecular indications of tissue stress, namely of HFs (Uchida et al., 2020; Uchida et al., 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig1-v1.jpg)
+
+**Figure 1.:** (A) ILC1lc (EOMES+, CD49a+, and NKG2D+) around HF in normal scalp skin, intrafollicular and perifollicular ILC1lc infiltrates in lesional and in non-lesional AA scalp patient. (B) EOMES+, c-KIT-,CD49a+, and (C) NKp44+, CD103+, T-bet- ILC1lc. For each panel, yellow staining indicates double staining A-EOMES+, NKG2D+; B- EOMES+, CD49a+; C- NKp44+,CD103+ (D) Quantitative immunohistomorphometry (qIHM) shows an increased number of ILC1lc in AA patients as compared to normal volunteers and increased number of the cells in lesional versus non-lesional areas of the patients. There is a significant increased perifollicular than intrafollicular ILC1lc in the lesional and non lesional areas. (E) CD8+/NKG2D+ cells around HF in AA scalp patient and absence of these cells in normal scalp skin of normal scalp skin. (F) There is an increased number of CD8+/NKG2D+ cells in HFs of AA patients compared to normal scalp skin and a significant lower number of ILC1lc versus CD8+/NKG2D+ cells in AA scalp skin. N=6 biopsies /AA patients and six biopsies /healthy donors from six independent donors, three areas were evaluated per section, and three sections per biopsy. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01 or Mann Whitney U test: #p<0.05. Scale bars, 50 µm. CTS- connective tissue sheath, DP - dermal papilla, HM - hair matrix, White arrow- c-KIT stained melanocyte.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Single channels of EOMES, T-bet, CD49a+, NKG2D+, c-kit, CD103, and NKp44 expressing cells in alopecia areata (AA) scalp patient and (B) in the humanized AA model. N=4 biopsies from AA patients and five biopsies from the humanized AA mouse model. Scale bars, 50 µm.
 
 Instead, intra and peri-follicular infiltrates of ILC1lc were frequently present in lesional AA HFs (Figure 1A, B, C and D and Figure 1—figure supplement 1A), typically in conjunction with a dominant infiltrate of CD8+/NKG2D+ cells around the hair bulb (p<0.05) (Figure 1E and F). Importantly, the number of ILC1lc was already significantly increased in/around non-lesional AA HFs compared to healthy scalp skin (p<0.01) (Figure 1A, B, C and D and Figure 1—figure supplement 1A). This may indicate that ILC1lc may actually have arrived around the HFs before the CD8 cells and may have contributed to attracting the CD8 cells into the perifollicular space.
 
 This strongly suggested that ILC1lc are not mere bystanders attracted only secondarily to the HFs by CD8 T-cells, similar to, but more pronounced than we have recently observed regarding perifollicular Vδ1+T cells in non-lesional AA skin (Uchida et al., 2020). This invited the hypothesis that ILC1lc is actively involved in transforming healthy human scalp HFs into lesional AA HFs.
 
-## T-betlo/Eomeshi ILC1lc can be expanded from human peripheral blood mononuclear cells (PBMCs) in vitro
+### T-betlo/Eomeshi ILC1lc can be expanded from human peripheral blood mononuclear cells (PBMCs) in vitro
 
 To functionally probe this hypothesis, we isolated, purified, and characterized human peripheral blood-derived ILC1lc as the most suitable cell source for the planned HF-immunocyte co-culture studies. The scarcity of ILC1lc in healthy human skin, compared to their relative abundance in peripheral blood (Colonna, 2018; Artis and Spits, 2015) necessitated to isolate autologous ILC1lc from the latter source rather than from skin (Teunissen et al., 2014). To facilitate ILC1lc isolation, PBMCs of healthy volunteers were first cultured with high-dose IL-2 (100 U/mL) in the presence of IL-18 (1 µg/1 ml), IL-33 (1.5 µg/5 ml), and IL-12 (1.5 µg/5 ml), since these cytokines induce ILC1lc expansion (Salimi and Ogg, 2014; Silver et al., 2016; Orimo et al., 2020; Ohne et al., 2016). When ILC1lc were sorted by FACS Aria and characterized by FACS analysis on day seven of culture, low T-bet, and high Eomes expression were observed (Figure 2A), in contrast to classical T-bethi and Eomeslo ILC1 cells (Jiao et al., 2016; Vivier et al., 2018; Zhang et al., 2018). In addition, the ILC1lc expressed and shared the following markers with classical ILC1 cells: LIN- CD3/CD1a/D14/CD19/CD34/CD123/CD11c /BDCH2/FcεR1α/TCRαβ/TCRγδ/CD56, CD127+, CD161+, c-KIT-, and CRTH2- (Zook and Kee, 2016; Bernink et al., 2017; Simoni and Newell, 2017; Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig2-v1.jpg)
+
+**Figure 2.:** (A) PBMCs activated by IL-18, IL-33 and IL-12 were sorted by FACS Aria and characterized by FACS analysis. ILC1lc markers were identified by the expression of CD127+, CD161+, c-KIT-, and CRTH2-, high levels of integrin α1 (CD49a) expression, combined with the absence of integrin α2 (CD49b) and transcription factors Eomeshi and T-betlo (B) unstimulated PBMCs (C) isotype controls. N=10 blood donors, 1.5 × 106 cells/blood donor, analysis was performed in triplicates from each of the blood donors. Following Shapiro-Wilk test, Student’s t-test, p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PBMCs activated by IL-18, IL-33, and IL-12 were sorted by FACS Aria and characterized by FACS analysis. ILC1-like cell markers were identified by the expression of Eomes+, CXCR6+, CD200R+, IRF8-, Perforin-, CD16-, and NKP80 (B) IL-2 induced PBMCs (C) isotype controls. (D) expression of CD127+, CD161 +, and RORγt-. N=4 blood donors, 1.5 × 106 cells/blood donor, analysis was performed in triplicates from each of the blood donors. Following Shapiro-Wilk test, Student’s t-test, p<0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig2-figsupp2-v1.jpg)
 
 This immune phenotype suggests that the immune cells used in our study are best classified as ILC1lc (Nabekura and Shibuya, 2021a), and documents that all experiments reported below were indeed performed with autologous ILC1lc rather than with NK cell subpopulations. Indeed, the FACS analysis (Figure 2—figure supplement 1A,B and C) revealed that ILC1lc demonstrates the ILC1 phenotype (CD200R, CD127, CXCR6) (Lopes et al., 2023; Curio and Belz, 2022) but not of the classical NK cell lineage (IRF8, Perforin, NKp80, CD16) (Sagebiel et al., 2019; Brownlie et al., 2021; Krämer et al., 2023), thus further serving as an evidence that EOMES +ILCs represent distinct ILC1 lineage-defining markers. In contrast to NK cells, ILC1lc also expressed the expected high levels of integrin α1 (CD49a), combined with the absence of integrin α2 (CD49b) (Jiao et al., 2016; Figure 2A). All these characteristic markers of ILClc were absent in the control unstimulated PBMCs (Figure 2B and C).
 
@@ -70,7 +88,7 @@ This immune phenotype suggests that the immune cells used in our study are best 
 
 In order to exclude the possibility that contamination from ILC3s during sorting the ILC1lc and thus contributing to the observed results, we generated a new set of FACS data on sorted ILC1lc. Given that ILC1 cells are RORγt negative while ILC3 cells are RORγt positive (Peng et al., 2022; Fiancette et al., 2021), the data clearly demonstrate that the contamination hypothesis is highly unlikely (Figure 2—figure supplement 1D).
 
-## ILC1lc induces HF cytotoxicity ex vivo
+### ILC1lc induces HF cytotoxicity ex vivo
 
 Next, we functionally probed the interaction of ILC1lc with HFs that were investigated here as a model human (mini-) organ in which the interactions of a healthy human tissue system with defined, autologous immunocyte populations can be interrogated ex vivo in the absence of any confounding systemic immune or neural inputs (Uchida et al., 2021). For this, microdissected, organ-cultured human scalp HFs (Langan et al., 2015) were co-cultured for six days with autologous, peripheral blood-derived, purified, IL-12/IL-18/IL-33-prestimulated ILC1lc, or with autologous human CD8 +NKG2D+ cells (=positive control), ILC2, ILC3 cells, or PBMCs non-speciﬁcally activated with PHA (PBMCs/PHA) (=negative controls).
 
@@ -80,31 +98,31 @@ First, we studied the cytotoxic effects of ILC1lc on healthy human scalp HF ex v
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig3-v1.jpg)
 
-**Figure 3.:** These cell populations were placed separately into wells with (+Hair) dissected HFs and without (-Hair). Cytotoxic effects of these cell populations on normal human scalp HF ex vivo were studied by measuring the spontaneous release of lactate dehydrogenase (LDH) from the microdissected HFs. Increased cytotoxicity of ILC1lc co-cultured with HFs compared to CD8+/NKG2D+, as well as to ILC2s and ILC3s, and PBMCs/PHA cells. N=20–24 HFs/group derived from three independent donors analyzed in three independent HF organ culture experiments. Following Shapiro-Wilk test and Dunn’s test §p<0.05, §§p<0.01, §§§p<0.001.Figure 3—source data 1..
+**Figure 3.:** These cell populations were placed separately into wells with (+Hair) dissected HFs and without (-Hair). Cytotoxic effects of these cell populations on normal human scalp HF ex vivo were studied by measuring the spontaneous release of lactate dehydrogenase (LDH) from the microdissected HFs. Increased cytotoxicity of ILC1lc co-cultured with HFs compared to CD8+/NKG2D+, as well as to ILC2s and ILC3s, and PBMCs/PHA cells. N=20–24 HFs/group derived from three independent donors analyzed in three independent HF organ culture experiments. Following Shapiro-Wilk test and Dunn’s test §p<0.05, §§p<0.01, §§§p<0.001.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) H&E staining revealed undifferentiated and prominent matrix cells, condensed dermal papilla, and the appearance of apoptotic cells, N=15–19 HFs/group from three independent donors. (D–G) Masson-Fontana histochemistry revealed melanin clumping and ectopic location of melanin granules only in HFs co-cultured with CD8+/NKG2D+and ILC1lc, but not in HFs cultured with PBMCs/PHA. N=7–11, HFs/group from three independent donors. Following Shapiro-Wilk test,Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (H–K) HFs co-cultured with ILC1lc or CD8+/NKG2D+ cells showed a significantly decreased proliferation (pink, arrowhead) and increased apoptosis (green, wide arrows). N=6 HFs/group from two independent donors, three areas were evaluated per section. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001 in the anagen hair bulb compared to HFs cultured with PBMCs/PHA. Scale bars, 50 µm. DP - dermal papilla, HM - hair matrix.Figure 4—source data 1.
+**Figure 4.:** (A–C) H&E staining revealed undifferentiated and prominent matrix cells, condensed dermal papilla, and the appearance of apoptotic cells, N=15–19 HFs/group from three independent donors. (D–G) Masson-Fontana histochemistry revealed melanin clumping and ectopic location of melanin granules only in HFs co-cultured with CD8+/NKG2D+and ILC1lc, but not in HFs cultured with PBMCs/PHA. N=7–11, HFs/group from three independent donors. Following Shapiro-Wilk test,Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (H–K) HFs co-cultured with ILC1lc or CD8+/NKG2D+ cells showed a significantly decreased proliferation (pink, arrowhead) and increased apoptosis (green, wide arrows). N=6 HFs/group from two independent donors, three areas were evaluated per section. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001 in the anagen hair bulb compared to HFs cultured with PBMCs/PHA. Scale bars, 50 µm. DP - dermal papilla, HM - hair matrix.
 
-## ILC1lc induces HF immune privilege collapse ex vivo via NKG2D stimulation
+### ILC1lc induces HF immune privilege collapse ex vivo via NKG2D stimulation
 
 Given that AA cannot occur without the prior collapse of HF immune privilege [HF-IP] (Gilhar et al., 2012; Bertolini et al., 2020), we also investigated the impact of ILC1lc on key HF-IP markers. Indeed, the co-culture of HFs with ILC1lc triggered IP collapse, as evidenced by ectopic and overexpressed HLA-A,B,C, ß2-microglobulin (ß2 MG), and HLA-DR, along with overexpression of the ‘danger’/tissue distress signals, MICA and CD1d, which interact with and stimulate NKG2D (Uchida et al., 2021; Fan et al., 2022) as compared to HFs interacting with PBMC/PHA or with ILC3 cells (Figure 5A, B, C, D, E and F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig5-v1.jpg)
 
-**Figure 5.:** (A) MICA, (B) HLA-A,B,C, (C) β2 MG, (D) HLA-DR, and (E) CD1d, expression by HFs epithelium, which had been co-cultured with either ILC1lc or CD8+/NKG2D+ cells but not in the control HFs, which had been co-cultured with either ILC3s, PBMCs/PHA, ILC1lc /NKG2D neutralization or in the untreated HFs. (F) quantitation. (G) The immune inhibitory HF immune privilege guardians, α-MSH and (H) TGF-β1 almost disappeared in HFs/ ILC1lc and HFs/NKG2D but were prominently present in ILC1lc /NKG2D neutralization and control HFs, N=9–12 HFs/group from three independent donors, three areas were evaluated per section. Following Shapiro-Wilk test,Student’s t-test, *p<0.05. Scale bar, 100 µm. ORS - outer root sheet.Figure 5—source data 1.
+**Figure 5.:** (A) MICA, (B) HLA-A,B,C, (C) β2 MG, (D) HLA-DR, and (E) CD1d, expression by HFs epithelium, which had been co-cultured with either ILC1lc or CD8+/NKG2D+ cells but not in the control HFs, which had been co-cultured with either ILC3s, PBMCs/PHA, ILC1lc /NKG2D neutralization or in the untreated HFs. (F) quantitation. (G) The immune inhibitory HF immune privilege guardians, α-MSH and (H) TGF-β1 almost disappeared in HFs/ ILC1lc and HFs/NKG2D but were prominently present in ILC1lc /NKG2D neutralization and control HFs, N=9–12 HFs/group from three independent donors, three areas were evaluated per section. Following Shapiro-Wilk test,Student’s t-test, *p<0.05. Scale bar, 100 µm. ORS - outer root sheet.
 
 Notably, quantitative immunohistomorphoemtry (qIHM) also showed that protein expression of the immunoinhibitory HF-IP guardians, TGF-β1 and α-MSH (Gilhar et al., 2012; Bertolini et al., 2020; Paus et al., 2018; Ito et al., 2004), almost disappeared in the epithelium of HFs co-cultured with autologous ILC1lc or CD8+/NKG2D+ cells (=positive control) (Figure 5G, H and I), while these critical HF-IP guardians were still prominently expressed in negative control HFs (Figure 5G, H and I). Importantly, adding anti-NKG2D blocking antibodies prevented HFs IP collapse and preserved the IP in the ILC1lc /NKG2D treated group (Figure 5G, H and I).
 
 This demonstrates that autologous ILC1lc induces human HF-IP collapse ex vivo – incidentally, the first time that the induction of IP collapse by ILC1lc has been documented in an intact human tissue/organ.
 
-## ILC1lc are activated by ‘stressed’ HFs and induce premature catagen development via IFN-γ secretion
+### ILC1lc are activated by ‘stressed’ HFs and induce premature catagen development via IFN-γ secretion
 
 Next, we examined how autologous ILC1lc impacted on human HF cycling, given that premature induction of apoptosis-driven HF regression (catagen) is one of the hallmarks of AA (Gilhar et al., 2012; Bertolini et al., 2020; Messenger et al., 1986). This showed that ILC1lc significantly accelerated the transformation of anagen into catagen HFs ex vivo (Paus et al., 2005) compared to all three negative controls (ILC2, ILC3, or PBMCs/PHA) – thus eliciting the third hallmark of the AA phenotype besides HF-IP collapse and dystrophy ex vivo (Gilhar et al., 2012; Bertolini et al., 2020; Messenger et al., 1986; Figure 6A), just as we had previously shown for Vδ1+ γδT cells (Uchida et al., 2021). As expected (Gilhar et al., 2012; Pratt et al., 2017; Bertolini et al., 2020; de Jong et al., 2018; Xing et al., 2014), premature catagen induction was also seen with CD8+/NKG2D+ cells (=positive control), but not with any of the negative control cell populations (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig6-v1.jpg)
 
-**Figure 6.:** (A) These immune cells significantly accelerated the transformation of anagen HFs into catagen HFs ex vivo compared to ILC2, ILC3, PBMCs/PHA, and neutralizing anti- IFN-γ, anti-NKG2D antibodies. N=28–34 HFs/group taken from six independent donors, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (B) ELISA analysis revealed increased IFN-γproduction by ILC1lc /HFs compared to production by CD8+/NKG2D+ cells, ILC2s, ILC3s, and PBMCs/PHA. N=6 healthy donors, 6 × 106 cells from each donor. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (C) FACS analysis revealed a significant increased intracellular IFN-γexpression in ILC1lc co-cultured with HFs compared to the effector CD8+/NKG2D+and to ILC2s and ILC3s, N=6 blood donors, 1.5 × 106 cells/blood donor. Student’s t-test, p<0.05.Figure 6—source data 1.
+**Figure 6.:** (A) These immune cells significantly accelerated the transformation of anagen HFs into catagen HFs ex vivo compared to ILC2, ILC3, PBMCs/PHA, and neutralizing anti- IFN-γ, anti-NKG2D antibodies. N=28–34 HFs/group taken from six independent donors, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (B) ELISA analysis revealed increased IFN-γproduction by ILC1lc /HFs compared to production by CD8+/NKG2D+ cells, ILC2s, ILC3s, and PBMCs/PHA. N=6 healthy donors, 6 × 106 cells from each donor. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. (C) FACS analysis revealed a significant increased intracellular IFN-γexpression in ILC1lc co-cultured with HFs compared to the effector CD8+/NKG2D+and to ILC2s and ILC3s, N=6 blood donors, 1.5 × 106 cells/blood donor. Student’s t-test, p<0.05.
 
 ILC1lc prominently secrete IFN-γ (Seillet et al., 2021), that is the cytokine that we had shown to induce HF damage (dystrophy), premature catagen, and HF-IP collapse most potently (Ito et al., 2004; Ito et al., 2005a). Therefore, we next investigated IFN-γrelease in these co-culture experiments. ELISA analysis revealed that ILC1lc produced and secreted higher amounts of IFN-γ into the medium than all other cells co-cultured with ‘stressed’ HFs, including CD8+/NKG2D+ cells (p<0.05) (Figure 6B). This suggests that ILC1lc possesses even stronger HF cytotoxicity-, IP collapse- and dystrophy-inducing properties than CD8 +T cells, the classical effector cells of AAA (Gilhar et al., 2012; Pratt et al., 2017; Bertolini et al., 2020).
 
@@ -112,15 +130,31 @@ FACS analysis showed ILC1lc activation when these were co-cultured with ‘stres
 
 When neutralizing anti- IFN-γ antibodies were administered into the medium of the organ culture, premature catagen development of HFs co-cultured with ILC1lc was significantly reduced (Figure 6A), strongly suggesting that premature catagen induction by ILC1lc depends on their IFN-γsecretion (Seillet et al., 2021). Importantly, reduced catagen induction was also seen after adding NKG2D-blocking antibodies to the medium (Figure 6A). This suggests that ILC1lc activation and IFN-γsecretion are induced by NKG2D-stimulating danger signals overexpressed by stressed HF epithelium, such as MICA. These findings further support the recognized central role of both IFN-γand NKG2D in the initial stages of AA pathobiology (Gilhar et al., 2012; Paus et al., 2018; Ito et al., 2008; de Jong et al., 2018).
 
-## ILC1lc suffice to induce AA lesions in healthy human scalp skin in vivo
+### ILC1lc suffice to induce AA lesions in healthy human scalp skin in vivo
 
 Taken together, these clinically relevant ex vivo experiments documented that ILC1lc can indeed induce the hallmarks of AA in healthy human scalp HFs ex vivo: HF-IP collapse, HF dystrophy, and premature catagen development (Gilhar et al., 2012; Paus et al., 2018). Therefore, we finally probed the hypothesis that ILC1lc may also suffice to induce human AA-like hair loss lesions in vivo using our established humanized AA mouse model (Gilhar et al., 2013a; Ghraieb et al., 2018; Gilhar et al., 2016). We had previously demonstrated that a macroscopic and histological phenocopy of human AA lesions can be rapidly induced experimentally in healthy human scalp skin xenotransplants on SCID/beige mice in vivo by the intradermal injection of enriched CD8/NKG2D are defined as PBMCs that have been cultured for 14 days in high-dose IL-2 (100 U/ml) according to our previously published characterization (Ghraieb et al., 2018; Gilhar et al., 2013a; Gilhar et al., 2013b; Gilhar et al., 2016; Bertolini et al., 2014). These cells are derived from healthy donors, that is in the absence of a specific genetic or autoimmune constellation.
 
 For this, 10 SCID/beige mice were each xenotransplanted with three full-thickness human scalp skin grafts (3 mm) obtained from parietal skin regions of four healthy donors without a prior history of AA (males aged 37±6). Eighty-nine days after transplantation, that is when hair regrowth had occurred in all xenotransplants, the mice were randomly divided into three groups, and each mouse from each group received one intradermal injection of either autologous IL-12/IL-18/IL-33-preactivated ILC1lc (test), PBMCs co-cultured with a nonspecific mitogen (PHA; negative control), or enriched CD8/NKG2D cells (positive control). When measured 45 days later, significant AA-like hair loss was observed macroscopically in the xenotransplants injected with ILC1lc compared to the negative control, at about the same level as positive control xenotransplants (Figure 7A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig7-v1.jpg)
+
+**Figure 7.:** (A) Significant hair loss is observed following the injection of ILC1lc and enriched CD8/NKG2D cells, while in the PBMCs/PHA treated group, hair number remains almost constant. N=7–9 xenotransplants/group from three independent donors, Following Shapiro-Wilk test, Mann-Whitney U test: #p<0.05, ##p<0.01. (B) HF dystrophy and perifollicular lymphocytic infiltrates around anagen hair follicles (HFs) (H&E staining) combined with strong expression of (C) HLA-A,B,C, β2 MG, HLA-DR, and downregulation of α-MSH and TGF-β1 in the ILC1lc and in (D) enriched CD8/NKG2D cells versus xenotransplants treated with (E) PBMCs/PHA (IHC staining) (F) quantitative data. N=5–9 xenotransplats/group from three independent donors. 4–5 defined reference areas were evaluated per section, and three sections per xenotransplants. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Scale bar, 50 µm. DP - dermal papilla, HM - hair matrix.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Significant hair loss was observed following the injection of ILC1lc, ILC1lc /OKT3, or enriched CD8/NKG2D cells into normal scalp skin on SCID/beige mice, but not in those treated with enriched CD8+/NKG2D+/anti-CD3 (OKT3), N=5 xenotransplants/group from two independent donors. Following Shapiro-Wilk test, Mann-Whitney U test: #p<0.05, ##p<0.01. Hair follicle (HF) dystrophy combined with perifollicular lymphocytic infiltrate around anagen HFs (H&E staining) in xenotransplants treated with (B) ILC1lc, ILC1lc /OKT3, or enriched CD8/NKG2D. Normal HF in anagen in xenotransplant treated with enriched CD8/NKG2D/OKT3. Induction of HLA-A,B,C and of HLA-DR, downregulation of α-MSH and TGF-β1 by the follicular epithelium and increased dermal IFN-γ cells (IHC staining) in xenotransplants treated with (C) ILC1lc and similarly in (D) ILC1lc /OKT3 and (E) enriched CD8/NKG2D treated groups. Reduced expression of HLA-A,B,C, HLA-DR, and upregulation of α-MSH and TGF-β1 combined with decreased number of dermal IFN-γ cells were observed in xenotransplants treated with (F) enriched CD8/NKG2D/OKT3 cells. (G) Quantitative data, N=5–6 xenotransplants/group from two independent donors. 3–4 areas were evaluated per section, and three sections per xenotransplant. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Scale bar, 50 µm. HM - hair matrix.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Several CD8 and CD4 in xenotransplants treated with (A) ILC1lc and similarly in xenotransplants treated with (B) ILC1lc /OKT3, and (C) enriched CD8/NKG2D/OKT3 cells versus increased CD8 and CD4 in xenotransplants treated with (D) enriched CD8/NKG2D cells. (E) Quantitative data,N=5–6 xenotransplants/group from two independent donors, 3–four areas were evaluated per section, and three sections per xenotransplant. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Scale bar, 50 µm. DP - dermal papilla,HM - hair matrix.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** Infiltrates of IFN-γ +, CD8, and CD4 cells in group treated with (B) enriched CD8/NKG2D cells. Decreased number of IFN-γ +, CD8, and CD4 cells in the (C) PBMCs/PHA treated one. (D) Quantitative data (E) presence of ILC1lc in transplants injected with ILC1lc compared to the virtual absence of these cells in enriched CD8/NKG2D and PBMCs/PHA treated mice.(F) Quantitative data N=5–9 xenotransplats/group from three donors. 4–5 areas were evaluated per section, and three sections per xenotransplant. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Scale bar, 50 µm. DP - dermal papilla,HM - hair matrix.
+
 To exclude that the above phenomena were not caused by residual human T-cells present in the transplants, an additional eight xenotransplanted mice were also injected intradermally once daily for 45 days with anti-CD3 antibodies (OKT3), in addition to injecting either ILC1lc or enriched CD8/NKG2D cells as described above (four mice each). This showed that anti-CD3 failed to abrogate hair loss induction in the mice treated with ILC1lc alone, but suppressed hair loss in the group treated with enriched CD8/NKG2D cells, as expected (Figure 7—figure supplement 1A). These findings invalidate the residual T-cell hypothesis.
 
-## ILC1lc induce the characteristic immunopathology of human AA lesions in vivo
+### ILC1lc induce the characteristic immunopathology of human AA lesions in vivo
 
 Immunohistology revealed that ILC1lc, just like autologous enriched CD8/NKG2D cells, induced a phenocopy of AA immunopathology in previously healthy human scalp skin in vivo, in sharp contrast to the negative control PBMCs/PHA group: HFs dystrophy, miniaturization and perifollicular lymphocytic infiltrate around anagen HFs (Figure 7B) as well as induction of HF-IP collapse (significantly increased expression of HLA-A,B,C, β2 MG, and HLA-DR of the HF epithelium, along with downregulation of the immune privilege guardians, α-MSH and TGF-β1) (Figure 7C and D). In contrast, negative control xenotransplants injected with PBMCs/PHA showed normal anagen HFs and a significantly lower expression of HLA-A,B,C, β2 MG, and HLA-DR, paired with the expected normal expression levels α-MSH and TGF-β1 protein (Figure 7E) as assessed by qIHM (Figure 7F).
 
@@ -128,7 +162,7 @@ In addition, histology and quantitative immunohistomorphometry confirmed the pre
 
 In line with the key role of IFN-γ in the development of AA (Gilhar et al., 2012; Gilhar et al., 2019a), IFN-γ+ cells were found to be increased around the bulb of xenotransplants injected with ILC1lc, even in the presence of the anti-CD3 antibody (OKT3), or with enriched CD8/NKG2D cells, but not with PHA-treated PBMCs or enriched CD8/NKG2D cells in the presence of OKT3 (Figure 7—figure supplement 1A,B,C,D,E,F and G and Figure 7—figure supplement 2A,B,C and D).
 
-## ILC1lc in the experimentally induced AA lesions
+### ILC1lc in the experimentally induced AA lesions
 
 Given that both, enriched CD8/NKG2D cells, and ILC1lc produce high amounts of IFN-γ, we then investigated the subtype of these cells around the bulb of control and treated xenotransplants, along with the frequencies of CD4 +T cells. In enriched CD8/NKG2D cells injected xenotransplants, the number of CD8 + cells and CD4 +T cells was significantly increased as compared to ILC1lc (p<0.001, p<0.001) (Figure 7—figure supplement 3A,B,C and D) while dense infiltration of ILC1lc was found only in xenotransplants treated with the purified ILC1lc (Figure 7—figure supplement 3E and F).
 
@@ -136,7 +170,7 @@ Interestingly, qIHM also showed that the peri- and intrafollicular distribution 
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/80768/elife-80768-fig8-v1.jpg)
 
-**Figure 8.:** (A) EOMES+, CD49a+, and NKG2D+ around hair follicle (HF) in normal scalp skin, intrafollicular and perifollicular ILC1lc infiltrates in AA-induced xenotransplants (B) EOMES+,c-KIT-,CD49a+, and (C) NKp44+, CD103+, T-bet- ILC1lc. Absence of these cells in normal scalp xenotransplant. For each panel, yellow staining indicates double staining A-EOMES+, NKG2D+; B- EOMES+,CD49a+; C- NKp44+, CD103+. (D) Quantitation. (E) CD8+/NKG2D+ cells around HF in AA-induced xenotransplant versus absence of the cells in normal xenotransplant. (F) The quantitative data demonstrate the significant increased CD8+/NKG2D+ cells in HFs of alopecia areata (AA) humanized mice compared to normal scalp xenotransplants. N=6 xenotransplants/ group from three independent donors, three areas were evaluated per section. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Mann Whitney U test: #p<0.05, ##p<0.01.Scale bar, 50 µm. DP - dermal papilla, HM - hair matrix, White arrow- c-KIT stained melanocyte.Figure 8—source data 1.
+**Figure 8.:** (A) EOMES+, CD49a+, and NKG2D+ around hair follicle (HF) in normal scalp skin, intrafollicular and perifollicular ILC1lc infiltrates in AA-induced xenotransplants (B) EOMES+,c-KIT-,CD49a+, and (C) NKp44+, CD103+, T-bet- ILC1lc. Absence of these cells in normal scalp xenotransplant. For each panel, yellow staining indicates double staining A-EOMES+, NKG2D+; B- EOMES+,CD49a+; C- NKp44+, CD103+. (D) Quantitation. (E) CD8+/NKG2D+ cells around HF in AA-induced xenotransplant versus absence of the cells in normal xenotransplant. (F) The quantitative data demonstrate the significant increased CD8+/NKG2D+ cells in HFs of alopecia areata (AA) humanized mice compared to normal scalp xenotransplants. N=6 xenotransplants/ group from three independent donors, three areas were evaluated per section. Following Shapiro-Wilk test, Student’s t-test: *p<0.05, **p<0.01, ***p<0.001. Mann Whitney U test: #p<0.05, ##p<0.01.Scale bar, 50 µm. DP - dermal papilla, HM - hair matrix, White arrow- c-KIT stained melanocyte.
 
 ## Discussion
 
@@ -164,7 +198,7 @@ Collectively, our study introduces IFN-γ -secreting ILC1lc lymphocytes as impor
 
 ## Materials and methods
 
-## Patients, tissue, and blood samples
+### Patients, tissue, and blood samples
 
 For the in situ analyses we used archival paraffin-embedded biopsy specimens of human AA scalp skin lesions from the Department of Pathology, Rambam Medical Center ( fourfemales, 12–35 years, mean age 20.5±9.5; sixmales, 6–38 years, mean age 18±12). Three of these AA patients showed active hair loss of the AA universalis phenotype while the other patients showed stable hair loss patches of the multifocal AA phenotype (Gilhar et al., 2012). One ten-year-old male patient had a positive family history of allergic rhinitis. AA was diagnosed both clinically and by histopathology, and none of the enrolled patients showed clinical evidence or had a personal history of other AA-associated autoimmune diseases (Gilhar et al., 2012; Meah et al., 2021).
 
@@ -180,7 +214,7 @@ For the ex vivo experiments, frozen HFs sections were dehydrated for 40 min and 
 
 For the in vivo experiment, five-micrometer paraffin sections were used. Antigen retrieval was for 20  min at 90 °C in a microwave. Specimens were blocked for 30  min to prevent nonspecific binding and incubated with the first antibody (Ab) overnight, followed by a wash and incubation with biotinylated 2nd Ab (Jackson ImmunoResearch, West Grove, PA), and subsequent binding with horseradish peroxidase-conjugated streptavidin. Markers were revealed with AEC (red) (Aminoethyl Carbazole Substrate kit). Sections were then mounted and analyzed under a light microscope.
 
-## Histochemistry, immunohistology, and quantitative immunohistomorphometry (qIHM)
+### Histochemistry, immunohistology, and quantitative immunohistomorphometry (qIHM)
 
 Five-micrometer paraffin sections of lesional AA biopsies and human scalp skin xenotransplants were processed for histochemistry or immunohistology. The following primary antibodies were used: anti-CD8 (Cell Marque-108M-95), anti-CD4 (DAKO-M7310), anti-HLA-A,B,C (Abcam-70328), anti-HLA-DR (Abcam-20281), anti- IFN-γ (Abcam-25101), anti- α-MSH (LSBio-C25584), anti-beta2 microglobulin (Abcam-218230), and anti-TGF-β1 (Santa Cruz-52893) (Ghraieb et al., 2018; Laufer Britva et al., 2020; Keren et al., 2018).
 
@@ -196,15 +230,15 @@ For HLA-A,B,C, HLA-DR, MICA, CD1d, α-MSH, beta2 microglobulin, and TGF-β1 imag
 
 Masson-Fontana staining (Abcam) was performed as described by us (Laufer Britva et al., 2020; Purba et al., 2016). Briefly, five-micrometer paraffin sections were deparaffinized and hydrated in distilled water. Slides were placed in mixed ammoniacal silver solution in a 58–60°C water bath and allowed adequate time for the temperature to equilibrate. Slides were then placed in the warmed ammoniacal silver solution for 30–60 min or until the tissue section became yellowish/brown in color. Counterstaining was performed with Nuclear Fast Red Solution for 5 min.
 
-## TUNEL analysis
+### TUNEL analysis
 
 Apoptotic cells were evaluated using a commercial TUNEL kit (Roche) with anti-digoxigenin fluorescein labeling and according to the manufacturer’s protocol. Ki-67 (Invitrogen) was visualized using Alexa Flour 594-conjugated goat anti-mouse (Jackson, 115-585-062). Sections were counterstained by DAPI (Thermo Fisher Scientific). Staining was visualized using a confocal Microscope - Zeiss LSM 700. Quantification was performed as previously described (Peters et al., 2006).
 
-## Immunohistology
+### Immunohistology
 
 Slides were photographed using immunofluorescence confocal microscopy and compared systematically by qIHM in standardized, defined tissue compartments. Mouse skin served as a negative control. Three non-consecutive sections were analyzed per patient.
 
-## Isolation, characterization, and culture of circulating ILC1lc, ILC2, ILC3, and CD8+/NKG2D+ cells
+### Isolation, characterization, and culture of circulating ILC1lc, ILC2, ILC3, and CD8+/NKG2D+ cells
 
 ILC2 and ILC3 cells were used as negative controls, while CD8+/NKG2D+ cells were used as a positive control to evaluate the ILC1lc cytotoxic effects on HFs.
 
@@ -216,7 +250,7 @@ The following components are required for the expansion of various immune cell p
 
 On days three and five, half of the medium was either frozen for further analysis or discarded and replaced with fresh medium containing cytokines. After seven days, cells were sorted by FACS Aria (FACSAria III Cell Sorter, BD Biosciences, USA) and in the case of ILC3 further enriched by MACS for negative selection of CD3 + cells (see Figure 2—figure supplement 2).
 
-## Flow cytometry sorting for ILC1lc, ILC2, and CD8+/NKG2D+ cells
+### Flow cytometry sorting for ILC1lc, ILC2, and CD8+/NKG2D+ cells
 
 Cells were cultured for one week, collected, and washed with PBS containing 1% BSA and 2% PSN. Surface cells were stained with antibodies to the PE-conjugated lineage cocktail that includes antibodies against CD1a (BLG-300105), CD3 (BLG-300–307), CD14 (BLG-367103), CD19 (BLG-302207), CD34 (BLG-343605), CD123 (BLG-306005), CD11c (BLG-301605), BDCA2 (BLG-354203), FcεR1α (BLG-334609), TCRαβ (BLG-306707), TCRγδ (BLG-331209), CD56 (BLG- 362565) (Hawke et al., 2020b).
 
@@ -230,13 +264,13 @@ CD8+/NKG2D+ cells – CD8 (Cell Marque-108M-95)/NKG2D(Novus-5c6) (Ito et al., 20
 
 Compensation was done using Comp-Beads (BDTM Biosciences) and data were analyzed using FlowJo software.
 
-## Magnetic isolation of ILC3 subsets
+### Magnetic isolation of ILC3 subsets
 
 Separation was performed using anti-CD3 antibodies conjugated to ferromagnetic microbeads (Miltenyi Biotec, Bergisch Gladbach, Germany) and directed through a cell separation column containing a magnetic field (Miltenyi Biotec). For the purification of ILC3s, CD3−sorted cells were collected and stained with anti-NKp44-PE conjugated to ferromagnetic microbeads (Miltenyi Biotec) and directed through a cell separation column containing a magnetic field (Keren et al., 2018).
 
 Finally, cells were co-cultured with autologous HFs ex vivo (see below) or used for different assays (Keren et al., 2018).
 
-## Co-culture of autologous ILC1lc with ‘stressed’ human scalp hair follicles ex vivo
+### Co-culture of autologous ILC1lc with ‘stressed’ human scalp hair follicles ex vivo
 
 Experimental induction of HF-IP collapse by IFN-γ is the standard ex vivo-assay system for interrogating key elements of AA-related human HF immunopathology (Ito et al., 2004; Bertolini et al., 2016; Kinori et al., 2012). We have recently complemented this assay by co-culturing key immunocytes in AA pathogenesis (CD8 +T cells, γδTCs) directly with organ-cultured human scalp HFs ex vivo (Uchida et al., 2021).
 
@@ -248,7 +282,7 @@ Therefore, organ culture-stressed day 1 HFs (1HF/well) were co-cultured in suppl
 
 The medium was not replaced in order to avoid losing any immunocytes. Basic HF biology read-out parameters were assessed by evaluating the Ki-67/TUNEL ratio, values of LDH release, HF pigmentation, and hair shaft production in situ, all of which indicated that the HFs did not suffer major damage after 6 days of organ culture. At the end of the experimentation, the HFs were photo-documented and cryopreserved in optimal cutting temperature (OCT) blocks. Cytokine release into the culture medium by ELISA was analyzed as previously described (Zook and Kee, 2016).
 
-## Flow cytometry analysis for characterization of ILC1lc
+### Flow cytometry analysis for characterization of ILC1lc
 
 PBMCs were isolated from healthy blood via centrifugation on ficol/Hypaque and cultured for seven days in a medium composed of RPMI 1640, 10% human AB serum, 1% L-glutamine, and 1% PSN. The medium was changed as needed.
 
@@ -258,33 +292,33 @@ Cells were incubated for 25 min at room temperature in the dark. All tubes were 
 
 All cell samples were detected by FACS Calibur Flow Cytometer (Benton Dickinson) using Cell Quest software, and the acquired data were further analyzed using FlowJo 5.7.2 (Tree Star).
 
-## Cytokine analyses in culture medium by ELISA
+### Cytokine analyses in culture medium by ELISA
 
 Production of IFN-γ by ILC1lc from healthy volunteers was analyzed using ELISA. ILC2, ILC3, and PBMCs/PHA were analyzed as negative controls. CD8+/NKG2D+ cells were analyzed as a positive control.
 
 The concentration of IFN-γ was determined in the supernatant of 6 × 106 cells from each donor (six healthy donors) using the Human IFN-γ ELISA deluxe set (BioLegend) according to the manufacturer’s protocol.
 
-## Analysis of HF cytotoxicity, catagen induction, and immune privilege collapse
+### Analysis of HF cytotoxicity, catagen induction, and immune privilege collapse
 
 As an indication of HF cytotoxicity, LDH release into the supernatants was quantified by colorimetric assay using the Cytotoxicity Detection kit Plus (Roche), which measures the conversion of tetrazolium salt in formazan, a water-soluble dye with a broad absorption maximum at approximately 500 nm (Uchida et al., 2021; Lu et al., 2007; Poeggeler et al., 2010). Medium with/without HFs was cultured with PBMCs/PHA, CD8+/NKG2D+, ILC1lc, ILC2, or ILC3 cells for three days. Formazan absorbance was measured for each condition that correlates with cell cytotoxicity. Anagen and catagen HFs were visualized and differentiated under Nikon Diaphot inverted binocular and thereafter qualitative morphological and quantitative morphometric assessments were analyzed as previously described (Kloepper et al., 2010). IHC staining was performed to test all hallmarks of AA in order to probe whether co-culture with ILC1lc induced abnormal HLA-DR, HLA-ABC, CD1d, ß2-microglobulin, and MICA protein expression in the proximal HF epithelium and/or downregulated the key guardians of HF immune privilege, TGF-β1, and α-MSH (Bertolini et al., 2020; Ito et al., 2004), using the qIHM method described above.
 
 In order to check whether ILC1lc affects HFs via IFN-γoverproduction or via activation of the NKG2D-NKG2DL axis following excessive MICA expression by stressed HFs, neutralizing anti- IFN-γ (10 µg/ml, R&D Systems, MAB285) or function-blocking NKG2D (5 µg/ml, R&D Systems, MAB139-100) antibodies, were added to the HFs co-cultured with ILC1lc (defined as CD49a+CD49b- Verma et al., 2020), lin-/CD127+/CD117-/CRTH2-, and T-betlo/ Eomeshi (Bennstein et al., 2020; Krabbendam et al., 2021).
 
-## Humanized AA mouse model
+### Humanized AA mouse model
 
 For the humanized AA mouse model (Gilhar et al., 2013a; Ghraieb et al., 2018; Gilhar et al., 2016), full-thickness biopsies were taken from healthy donors undergoing plastic surgery on the scalp. Biopsies from each donor were dissected horizontally to generate pieces with a diameter of 3  mm. Three 3  mm pieces were grafted orthotopically into the subcutaneous layer of each SCID/beige mice as previously described (Gilhar et al., 2013a; Ghraieb et al., 2018; Gilhar et al., 2013b). Seven days after surgery, mice were treated with Minoxi-5 (hair regrowth treatment for men containing 5% Minoxidil active ingredient) by spreading it on the grafts twice a day until we received optimal expedited hair growth (period of two months). The topical minoxidil application is not required for hair regrowth induction after the initial post-transplantion hair shaft shedding, but only accelerates it. This application is discontinued before the ILC1lc injection (Gilhar et al., 2013a). Since the immune cell infiltrate in AA attacks only hair follicles in anagen (Gilhar et al., 2012), it is critical that the majority of xenotransplant HFs are in anagen at the time the immune cells are injected. Topical minoxidil pretreatment increases the likelihood that this is the case (Price et al., 1999; Suchonwanit et al., 2019). Moreover, we have recently demonstrated that 5% minoxidil does indeed significantly stimulate hair regrowth in human androgenetic alopecia scalp skin transplanted onto SCID/beige mice (Gilhar et al., 2022). It also deserves mentioning that topical minoxidil reduces the degranulation of – hair growth-modulatory! (Paus et al., 1994) - perifollicular mast cells in the skin of mice, namely under conditions of perceived stress (Arck et al., 2003), while excessive degranulation of perifollicular mast cells is an important feature of lesional human AA skin (Bertolini et al., 2014). Therefore, this pretreatment likely also helps to reestablish perifollicular mast cell homeostasis after the stress of xenotransplantation. In the current study, 18 female SCID/beige mice (C.B-17/IcrHsd-scid-bg) (Harlan Laboratories Ltd., Jerusalem, Israel) were used at 2–3 months of age and were housed in the pathogen-free animal facility of the Rappaport Faculty of Medicine, Technion – Israel Institute of Technology. Animal care and research protocols were in accordance with institutional guidelines and were approved by the Institutional Committee on Animal Use (17-08-115-IL).
 
-## Culture of Peripheral blood mononuclear cells
+### Culture of Peripheral blood mononuclear cells
 
 PBMCs were isolated from healthy donors without any history of AA or other autoimmune diseases by centrifugation on Ficoll/Hypaque (Pharmacia, Amersham Pharmacia Biotech, Uppsala, Sweden) (Ghraieb et al., 2018). The PBMCs were then cultured for 14 days with 100 U IL-2 per ml (Pepro Tech Inc, Rocky Hill, NJ) in a medium composed of RPMI 1640, 10% human AB serum (Sigma, St. Louis, MO), 1% glutamine, 1% antibiotics (media components; Biological Industries, Kibbutz Beit Haemeck, Israel). Medium was changed as needed. The cultured cells defined as enriched CD8/NKG2D according to our previous publication (Ghraieb et al., 2018), were injected intradermally into human explants on beige-SCID mice.
 
-## Study design
+### Study design
 
 Two sets of experiments were performed: In the first set, the mice were divided randomly into three groups on day 89 after scalp skin transplantation and treated as described in Supplementary file 2.
 
 The second set of experiments was performed to eliminate the confounding influence of resident human T-cells present in the human scalp skin xenotransplants. To this end, anti-CD3/OKT3 antibodies (Supplementary file 2) were injected into xenotransplants treated with either autologous ILC1lc or autologous enriched CD8+/NKG2D+ cells. For both sets of experiments, the mice were sacrificed and skin biopsies were taken for analysis on day 45 after immunocyte injection.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as the mean ± standard error of mean (SEM) or fold change of mean ± SEM; p values of <0.05 were regarded as significant.
 

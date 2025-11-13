@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/04w5etv87 CAS Key Laboratory of Mountain Ecological Restoration and Bioresource Utilization & Ecological Restoration and Biodiversity Conservation Key Laboratory of Sichuan Province, Chengdu Institute of Biology, Chinese Academy of Sciences Chengdu China
-2. https://ror.org/031dhcv14 Ministry of Education Key Laboratory for Ecology of Tropical Islands, Key Laboratory of Tropical Animal and Plant Ecology of Hainan Province, College of Life Sciences, Hainan Normal University Haikou China
-3. https://ror.org/008xxew50 Department of Ecological Sciences, Vrije Universiteit Amsterdam Amsterdam Netherlands
+1. CAS Key Laboratory of Mountain Ecological Restoration and Bioresource Utilization & Ecological Restoration and Biodiversity Conservation Key Laboratory of Sichuan Province, Chengdu Institute of Biology, Chinese Academy of Sciences Chengdu China ([ROR:04w5etv87](https://ror.org/04w5etv87))
+2. Ministry of Education Key Laboratory for Ecology of Tropical Islands, Key Laboratory of Tropical Animal and Plant Ecology of Hainan Province, College of Life Sciences, Hainan Normal University Haikou China ([ROR:031dhcv14](https://ror.org/031dhcv14))
+3. Department of Ecological Sciences, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
 
 † Corresponding author
 
 ## Abstract
 
-Recently we showed that limb movements associated with anti-parasite defenses can enhance acoustic signal attraction in male little torrent frogs ( Amolops torrentis ), which suggests a potential pathway for physical movements to become co-opted into mating displays (Zhao et al., 2022). Anderson et al. argue for alternative explanations of our results and provide a reanalysis of part of our data (Anderson et al., 2023). We acknowledge some of the points raised and provide an additional analysis in support of our hypothesis.
+Recently we showed that limb movements associated with anti-parasite defenses can enhance acoustic signal attraction in male little torrent frogs (Amolops torrentis), which suggests a potential pathway for physical movements to become co-opted into mating displays (Zhao et al., 2022). Anderson et al. argue for alternative explanations of our results and provide a reanalysis of part of our data (Anderson et al., 2023). We acknowledge some of the points raised and provide an additional analysis in support of our hypothesis.
 
 ## Introduction
 
@@ -24,25 +24,127 @@ Physical movements have been viewed as the raw material of visual signals for ma
 
 ## Results and discussion
 
-## Underestimations of parasite-associated limb movements
+### Underestimations of parasite-associated limb movements
 
 Anderson et al. suggest that the two movements most strongly preferred in playback experiments by females – hind foot lifting (HFL) and arm waving (AW) – are not associated with the presence of eavesdropping parasites, whereas two other movements – wiping (W) and limb shaking (LSA) – do increase as parasite numbers increase, but are less preferred (or not preferred) by females. They base this suggestion on a reanalysis of our original data, but we argue that their approach is problematic for two reasons.
 
 First, their reanalysis used samples that differed from those used in our original paper. Most importantly, they included observations from non-calling males (which had been recorded outside of a breeding context for our control videos), whereas we analysed data from actively displaying males only. Many silent males were observed to be undisturbed by parasites and produced few limb movements (Supplementary file 1 in Zhao et al., 2022). Thus, the inclusion of data from silent males greatly underestimates any effect. Similar to previous results, our new analysis found that all movements were produced around parasites in calling individuals (Table 1).
 
+**Table 1.**
+ Outcomes of a generalized linear mixed model (GLMM) to investigate the effect of parasite presence on four limb movements in actively displaying males.The overall movement and noise data used in this analysis are available in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Response</th>
+      <th>Predictor</th>
+      <th>z</th>
+      <th>P</th>
+      <th>Parameter estimates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Intercept</td>
+      <td>0.858</td>
+      <td>0.391</td>
+      <td>1.251±1.457</td>
+    </tr>
+    <tr>
+      <td>Arm waving</td>
+      <td>Noise intensity</td>
+      <td>0.142</td>
+      <td>0.887</td>
+      <td>0.003±0.022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parasite</td>
+      <td>3.840</td>
+      <td>&lt;0.001</td>
+      <td>0.053±0.014</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intercept</td>
+      <td>0.442</td>
+      <td>0.658</td>
+      <td>0.745±1.683</td>
+    </tr>
+    <tr>
+      <td>Hind foot lifting</td>
+      <td>Noise intensity</td>
+      <td>1.057</td>
+      <td>0.291</td>
+      <td>0.026±0.024</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parasite</td>
+      <td>1.788</td>
+      <td>0.074</td>
+      <td>0.026±0.015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intercept</td>
+      <td>1.445</td>
+      <td>0.148</td>
+      <td>2.000±1.384</td>
+    </tr>
+    <tr>
+      <td>Limb shaking</td>
+      <td>Noise intensity</td>
+      <td>0.186</td>
+      <td>0.853</td>
+      <td>0.004±0.020</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parasite</td>
+      <td>2.277</td>
+      <td>0.023</td>
+      <td>0.034±0.015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Intercept</td>
+      <td>0.145</td>
+      <td>0.885</td>
+      <td>0.220±1.517</td>
+    </tr>
+    <tr>
+      <td>Wiping</td>
+      <td>Noise intensity</td>
+      <td>0.231</td>
+      <td>0.817</td>
+      <td>0.005±0.023</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parasite</td>
+      <td>2.792</td>
+      <td>0.005</td>
+      <td>0.035±0.013</td>
+    </tr>
+  </tbody>
+</table>
+
 Second, the proportion of parasite-induced movements is likely to be underestimated in our original study. For parasite-induced displays, we only included movements that occurred when parasites landed on the body of frogs or moved very close to them. Although the exact distances could not be measured from our videos, given the difficult field conditions, we feel that this is an appropriate approach.
 
-## The association between limb displays and parasites
+### The association between limb displays and parasites
 
 Anderson et al. also argue that the association between limb displays and parasites could be confounded by other environmental variables, such as local climatic conditions, densities of calling males or ambient noise levels. We agree on this issue and have performed a new analysis of our observational data that includes background noise level as a covariate (see Table 1).
 
 When taking additional environmental variables into account, we now find that all four movements tested on female preferences increased with parasite presence. It is important to note, however, that it is not clear how effective the limb movements, in particular a movement such as hind-foot lifting, are as an anti-predator strategy. As suggested by Anderson et al., it would be interesting to control the amount and type of parasites around calling frogs experimentally in order to obtain a better understanding of limb movements as an anti-parasite function. Mechanistically, different limb movements may be produced (somewhat) simultaneously (for example, when they are controlled by the same neuronal and/or physiological pathway). Theoretically, some movements may have evolved after females started to pay attention, and thus immediately functioned in mate attraction. If such movements recruited (part of) the same mechanism, then we would also expect to find a relation with parasite pressure, even if the movement lost or never possessed an anti-parasite function.
 
-## The role of male–male interactions is another interesting topic for future studies
+### The role of male–male interactions is another interesting topic for future studies
 
 The role of limb displays in male–male competition can be easily observed and recorded in the wild, whereas observing or manipulating male–female interactions is challenging in many species. Anderson et al. summarize studies on limb displays in torrent frogs and show that data on female choice behavior is rare, but we disagree with the statement that this means that female choice behavior has a smaller role than male–male competition. Only very few studies have addressed multimodal displays in the context of intra- and intersexual interactions simultaneously, but when they do, they typically show that males and females pay attention to similar cues (Halfwerk et al., 2014; James et al., 2022). In animal communication, it is generally assumed (although perhaps wrongly) that male responses to playback reflect female responses and thus can be used to study signal evolution in a broad comparative framework. It would be interesting to test whether male torrent frogs respond similarly to limb movements that are associated with parasite pressure, as this would provide a much easier way to assess how these movements and responses evolved across the phylogeny.
 
-## Conclusions
+### Conclusions
 
 Our data on males is observational and does not provide evidence for causal relationships, a point on which we agree with Anderson et al. The novelty of our paper lies in the fact that we propose a novel hypothesis of how and why multimodal displays evolve, namely via a process of co-option and possibly sensory exploitation. Studying the evolutionary history of multimodal displays, such as the limb movements produced during calling in torrent frogs, requires a phylogenetic comparative approach. For such a study, data on male–male interactions might be more useful than data on male–female interactions, given the challenges of collecting such data in the field. Finally, our data on female choice is highly novel because we show that several limb movements enhance the attractiveness of a calling male, which is a prerequisite for the co-option of cues into multimodal displays.
 

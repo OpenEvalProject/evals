@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/024exxj48 Department of Microbiology, Graduate School of Medicine, Gifu University Gifu Japan
-2. https://ror.org/057jm7w82 School of Life Sciences, Tokyo University of Pharmacy and Life Sciences Hachioji Japan
-3. https://ror.org/024exxj48 Center for One Medicine Innovative Translational Research (COMIT), Gifu University Gifu Japan
+1. Department of Microbiology, Graduate School of Medicine, Gifu University Gifu Japan ([ROR:024exxj48](https://ror.org/024exxj48))
+2. School of Life Sciences, Tokyo University of Pharmacy and Life Sciences Hachioji Japan ([ROR:057jm7w82](https://ror.org/057jm7w82))
+3. Center for One Medicine Innovative Translational Research (COMIT), Gifu University Gifu Japan ([ROR:024exxj48](https://ror.org/024exxj48))
 
 † Corresponding author
 
@@ -34,39 +34,71 @@ In this study, we investigated the role of Legionella Ub ligases in Rab10 dynami
 
 ## Results
 
-## The SidE- and SidC-family proteins differentially contribute to ubiquitination of Rab10 in infected cells
+### The SidE- and SidC-family proteins differentially contribute to ubiquitination of Rab10 in infected cells
 
 Host Rab10 is required for optimal intracellular replication of L. pneumophila (Jeng et al., 2019) and therefore considered to play a significant role in LCV biogenesis or maintenance. Since L. pneumophila SidE-family proteins, which catalyze PR-linked ubiquitination, have a wide range of substrates including Rab1 and Rab33b (Bhogaraju et al., 2016; Kalayil et al., 2018; Kotewicz et al., 2017; Qiu et al., 2016), we first examined whether the SidE family can affect Rab10 ubiquitination. Upon infection of HEK293T-FcγRII cells transiently expressing FLAG-Rab10 and HA-Ub with a wild-type L. pneumophila strain (Lp01) for 1 hr, Rab10 was detected with a shifted band of higher molecular mass (Figure 1a, upper panel). The band was shown to contain Ub by probing with an anti-HA antibody (Figure 1a, lower panel), indicating that the band represents Rab10 conjugated with a single Ub molecule. The mass shift was not detected in cells infected with the T4SS-deficient strain (ΔdotA), suggesting that Rab10 can be monoubiquitinated in a T4SS-dependent manner. Infection with a ΔsidEs strain lacking all four SidE-family proteins (SidE, SdeA, SdeB, and SdeC) mostly eliminated the molecular mass shift of Rab10, while infection with a strain lacking the negative regulators of SidE-family proteins (DupA, DupB, SidJ, and SdjA; Black et al., 2019; Gan et al., 2019b; Qiu et al., 2017; Shin et al., 2020; Sulpizio et al., 2019) enhanced the intensity of the band (Figure 1a). These results suggest that the SidE-family proteins can conjugate PR-Ub to Rab10. The high molecular weight smears detected with anti-HA antibody are thought to be polyUb chains (Figure 1a, lower panel). Appearance of these smears is tightly associated with the PR-Ub bands, showing that polyubiquitination of Rab10 is linked with its PR ubiquitination.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig1-v1.jpg)
+
+**Figure 1.:** HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10 and HA-Ub were infected with the indicated L. pneumophila strains for 1 hr at a multiplicity of infection (MOI) of 20. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG and with anti-HA antibodies (a-c). Triple-HA-Ub (3xHA-Ub) or Ub in which the C-terminal GG were replaced with AA (3xHA-UbAA) was expressed instead of HA-Ub in (b). Bacterial lysates were probed with anti-Myc antibody in (b). The asterisks indicate the postion of monoubiquitinated Rab10.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10 or 3xFLAG-Rab10 K102A K136A L154A (KKK) (a) with HA-Ub were infected with the indicated L. pneumophila strains for 1 hr (a) or 7 hr (b) at an MOI of 20. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG and with anti-HA antibodies. The asterisks indicate the postion of monoubiquitinated Rab10.
 
 To examine if PR-Ub conjugation to Rab10 can enhance its modification with polyUb chains, we infected HEK293T-FcγRII cells expressing FLAG-Rab10 and HA-Ub with the ΔsidEs strain complemented with a plasmid expressing wild-type or a catalytic mutant of SdeA (SdeAEE/AA), a representative SidE-family protein (Figure 1b). We detected a strongly enhanced polyUb smear whose appearance depends on the mono-ADP ribosyltransferase activity of SdeA. The intensity of the monoubiquitination band was correlated with that of the polyUb smears (Figure 1b, middle panel). When the C-terminal GG motif of Ub was replaced with AA (UbAA), the polyUb smear drastically diminished, and accumulation of monoUb-conjugated Rab10 was observed instead. This indicates that the polyUb chains on Rab10 were formed via the Ub C-terminus by the canonical ubiquitination reaction. This also shows that the observed monoUb conjugation to Rab10 does not require the Ub C-terminus, which is consistent with the formation of bridge between Arg42 of Ub and substrate catalyzed by the SidE effectors (Bhogaraju et al., 2016; Kotewicz et al., 2017; Qiu et al., 2016). These results strongly support that Rab10 is subjected to SdeA-mediated PR ubiquitination and that this modification may provide a platform of conjugation of polyUb chains to Rab10, which is expected to be mediated by other Ub ligases.
 
 Since it was reported that L. pneumophila effectors SidC and its paralog SdcA induce Rab10 ubiquitination (Jeng et al., 2019; Liu et al., 2020), we investigated how these E3 ligases contribute toward ubiquitination of Rab10 in our system (Figure 1c). Infection of cells with a ΔsidCΔsdcA strain as well as with a strain lacking all the SidC-family proteins (ΔsidCΔsdcAΔsdcB) still caused both mono- and polyubiquitination of Rab10 but with reduced levels. On the contrary, infection with the ΔsidEs strain eliminated both modifications. These results support that SidE-family proteins primarily contribute toward ubiquitination of Rab10, and that SidC-family proteins partly contribute toward polyubiquitination of Rab10 directly or indirectly in conditions where Rab10 is modified with PR-Ub. We also found that substitution of three residues on Rab10 (Lys102, Lys136, and Lys154) that were previously suggested to be potential ubiquitination sites (Jeng et al., 2019) to Ala (Rab10KKK) did not abolish polyubiquitination of Rab10 (Figure 1—figure supplement 1a), implying that ubiquitination sites can be present in the other residues. This raises the possibility that canonical Ub chains can be formed partly on PR-Ub conjugated to Rab10. The polyubiquitination of Rab10 was significantly observed until 7 hr after infection, although the level was slightly reduced (Figure 1—figure supplement 1b).
 
-## Rab10 recruitment to the LCV is differentially regulated by SidE- and SidC-family proteins
+### Rab10 recruitment to the LCV is differentially regulated by SidE- and SidC-family proteins
 
 Earlier studies demonstrated that Rab10 ubiquitination is highly correlated with its localization to the LCV (Jeng et al., 2019; Liu et al., 2020). We therefore examined if the SidE family regulates Rab10 recruitment to the LCV using HeLa-FcγRII cells transiently expressing RFP-Rab10 (Figure 2a and b). Infection with the ΔsidEs strain drastically reduced the level of Rab10-positive LCVs at all time points examined (Figure 2b). As reported for Rab33b (Kawabata et al., 2021), PR ubiquitination is thought to be required for Rab10 to localize to the LCV. The ΔsidCΔsdcA LCV also exhibited a reduced the level of Rab10 localization at 1 hr after infection (Figure 2b, left panel). However, the level of Rab10 recruitment to the ΔsidCΔsdcA LCV recovered at 4 hr after infection, while that to the ΔsidCΔsdcAΔsdcB LCV did not recover even as late as 7 hr (Figure 2b, middle and right panels). This result suggests that SdcB can contribute toward retention of Rab10 on the LCV at late stages of infection.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig2-v1.jpg)
 
-**Figure 2.:** Legionella-containing vacuole (LCV).HeLa-FcγRII cells transiently expressing RFP-Rab10 were infected with the indicated L. pneumophila strains at an MOI of 5 for 4 hr (a) and for the indicated time (b). (a) Representative images of infected cells. Fixed cells were stained for L. pneumophila (green) and DNA (blue) and visualized with RFP-Rab10 (red). Magnified images in the white squares are shown in merged and in each channel. Arrows indicate the Rab10-positive LCVs. Scale bars, 10 μm. (b) Quantitation of Rab10-positive LCVs (%). Infections were performed in triplicate and each value represents scoring from 200 LCVs. Significance was determined using Student’s t-test.Figure 2—source data 1.Figure 2a.Figure 2—source data 2.Figure 2b.
+**Figure 2.:** HeLa-FcγRII cells transiently expressing RFP-Rab10 were infected with the indicated L. pneumophila strains at an MOI of 5 for 4 hr (a) and for the indicated time (b). (a) Representative images of infected cells. Fixed cells were stained for L. pneumophila (green) and DNA (blue) and visualized with RFP-Rab10 (red). Magnified images in the white squares are shown in merged and in each channel. Arrows indicate the Rab10-positive LCVs. Scale bars, 10 μm. (b) Quantitation of Rab10-positive LCVs (%). Infections were performed in triplicate and each value represents scoring from 200 LCVs. Significance was determined using Student’s t-test.
 
-## SdcB associates with the LCV and plays a major role in Ub recruitment to the LCV at late stages of infection
+### SdcB associates with the LCV and plays a major role in Ub recruitment to the LCV at late stages of infection
 
 The Ub accumulation on the LCV has been thought to be mediated largely by SidC and SdcA (Horenkamp et al., 2014; Luo et al., 2015). We therefore examined the possible role of SdcB in Ub recruitment to the LCV at distinct time points after infection (Figure 3). To mask the effect of SidC and SdcA, we used a ΔsidCΔsdcAΔsdcB strain complemented with wild-type or catalytic mutant (C57A) of SdcB expressed from a plasmid. When HeLa-FcγRII cells were infected with these strains for 1 hr, SdcB was detected around the LCV (Figure 3a, b). The level of wild-type SdcB-positive LCVs was relatively lower compared with that of the SdcBC57A-positive LCVs, probably due to its catalytic cycling. The expression of wild-type SdcB led to recruitment of Ub to the vacuole even without SidC and SdcA, while expression of SdcBC57A did not (Figure 3b). This result indicates that SdcB has a catalytic activity to conjugate Ub to substrates on the LCV. At 7 hr after infection, the level of the SdcB-positive LCVs was elevated to about 70% regardless of its catalytic activity (Figure 3c, d). At this time point, the level of the Ub-positive LCVs was also raised to about 60 %, but only when SdcB was catalytically active. These results demonstrate that SdcB can play a substantial role to conjugate Ub to substrates on the LCV at late stages of infection.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig3-v1.jpg)
 
-**Figure 3.:** Legionella-containing vacuole (LCV) and plays a major role in Ub recruitment to the LCV at late stages of infection.HeLa-FcγRII cells were infected with the indicated L. pneumophila strains at an MOI of 2 for 1 hr (a, b) and for 7 hr (c, d). (a, c) Representative images of infected cells. Fixed cells were stained for FLAG-SdcB or Ub (green), L. pneumophila (red), and DNA (blue). Magnified images in the white squares are shown in the lower panels. Scale bars, 10 μm. (b, d) Quantitation of SdcB-positive (left) and of Ub-positive (right) LCVs (%). Infections were performed in triplicate and each value represents scoring from 200 LCVs. Significance was determined using Student’s t-test.Figure 3—source data 1.Figure 3a.Figure 3—source data 2.Figure 3c.Figure 3—source data 3.Figure 3, d.
+**Figure 3.:** HeLa-FcγRII cells were infected with the indicated L. pneumophila strains at an MOI of 2 for 1 hr (a, b) and for 7 hr (c, d). (a, c) Representative images of infected cells. Fixed cells were stained for FLAG-SdcB or Ub (green), L. pneumophila (red), and DNA (blue). Magnified images in the white squares are shown in the lower panels. Scale bars, 10 μm. (b, d) Quantitation of SdcB-positive (left) and of Ub-positive (right) LCVs (%). Infections were performed in triplicate and each value represents scoring from 200 LCVs. Significance was determined using Student’s t-test.
 
-## The catalytic activity of SdcB enhances retention of Rab10 on the LCV
+### The catalytic activity of SdcB enhances retention of Rab10 on the LCV
 
 As Rab10 is one of the plausible substrates located on the LCV, we assessed its ubiquitination upon infection with the L. pneumophila strains for comparison between its GTP-bound active (QL) and GDP-bound inactive (TN) conformations (Figure 4a). A substantial amount of ubiquitinated Rab10QL, but not Rab10TN, was detected upon infection with the wild-type strain (Figure 4a; Figure 4—figure supplement 1). We found that ubiquitination of Rab10TN detected with HA-probing (HA-Ub) was apparently indirect and not infection-induced, as FLAG-probing (FLAG-Rab10) mostly eliminated the high molecular weight smears on Rab10TN (Figure 4—figure supplement 1). Polyubiquitinated Rab10QL was reduced by infection with the ΔsidCΔsdcAΔsdcB strain, while both mono- and polyubiquitination of Rab10QL was mostly blocked by infection with the ΔsidEs strain. Localization of active Rab10 (Rab10QL) on the LCVs was apparently correlated with the level of its polyubiquitination (Figure 4b, Figure 4—figure supplement 2). The finding that the active form of Rab10 is preferentially targeted and spatially regulated by the action of SidE- and SidC-family ligases prompted us to examine the effect of SdcB activity on ubiquitination of this specific form of Rab10. Bacterially expressed SdcB, but not its catalytic mutant, significantly enhanced the level of polyubiquitination of Rab10QL at 7 hr after infection (Figure 4c). To examine the relationship between the catalytic activity of SdcB and the LCV localization of Rab10, we assessed the level of Rab10-positive LCVs on which SdcB localized. At 7 hr post infection, Rab10 localization was readily detected on ΔsidCΔsdcAΔsdcB LCVs containing wild-type SdcB, but not the inactive SdcBC57A mutant (Figure 4d). The level of Rab10-positive LCVs was significantly higher with expression of wild-type SdcB than that of the catalytic mutant (Figure 4e), suggesting that the Ub ligation activity of SdcB supports retention of Rab10 on the LCV until late stages of infection.
 
-## MavC modifies SdcB when ectopically expressed in cells
+![Figure 4.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig4-v1.jpg)
+
+**Figure 4.:** (a) HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10 Q68L (QL) or Rab10 T23N (TN) with HA-Ub were infected with the indicated L. pneumophila strains for 1 hr at an MOI of 50. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG antibody. (b) HeLa-FcγRII cells transiently expressing RFP-Rab10QL were infected with the indicated L. pneumophila strains at an MOI of 10 for 1 hr (see Figure 4—figure supplement 2). Rab10-positive LCVs (%) were quantified. Infections were performed in triplicate and each value represents scoring from 50 LCVs. Significance was determined using Student’s t-test and represented as: ****p < 0.0002. (c) HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10QL and HA-Ub were infected with the L. pneumophila strains expressing Myc-tagged SdcB or its catalytic mutant for 7 hr at an MOI of 20. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG and with anti-HA antibodies. For detection of translocated SdcB, it was isolated from cell lysate by immunoprecipitation using anti-Myc magnetic beads and was probed with anti-Myc antibody. Note that apparent reduction of the wild-type SdcB was caused by its auto-ubiquitination leading to the molecular weight shift (see text). (d, e) HeLa-FcγRII cells transiently expressing RFP-Rab10 were infected with the indicated L. pneumophila strains at an MOI of 2 for 7 hr. (d) Representative images of infected cells. Fixed cells were stained for FLAG-SdcB (green) and L. pneumophila (blue) and visualized with RFP-Rab10 (red). Magnified images in the white squares are shown in each channel. White arrows indicate the position of a bacterium. The red arrow indicates a Rab10 signal surrounding an LCV. Scale bars, 10 μm. (e) Quantitation of Rab10-positive LCVs (%) out of SdcB-positive ones. Infections were performed in triplicate and each value represents scoring from 200 SdcB-positive LCVs. Significance was determined using Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10 Q68L (QL) or Rab10 T23N (TN) with HA-Ub were infected with the wild-type L. pneumophila strain or treated with media containing anti-Legionella antiserum (mock infection) for 1 hr at an MOI of 20. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG and with anti-HA antibodies.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** HeLa-FcγRII cells transiently expressing RFP-Rab10QL were infected with the indicated L. pneumophila strains at an MOI of 10 for 1 hr. Cells were fixed and stained with anti-Legionella antiserum (green) before permeabilization of cells for detection of extracellular bacteria. Permeabilized cells were stained with 4,6-diamidino-2-phenylindole (DAPI; blue) for detection of intracellular bacteria (and nuclei) and with RFP-Rab10 (red). Representative images of infected cells were shown. Magnified merged images in the white squares are shown as enlarged images. Scale bars, 5 μm.
+
+### MavC modifies SdcB when ectopically expressed in cells
 
 A potential relationship between SdcB and MavC as an effector/metaeffector pair was suggested by a recent systematic analysis utilizing yeast genetics (Urbanus et al., 2016). We therefore examined whether expression of MavC can affect the activity profile of SdcB in cells. When ectopically expressed in HEK293T-FcγRII cells, 3xFLAG-tagged SdcB could not be detected (Figure 5a, top panel, most left lane). However, we found that coexpression of GFP-tagged MavC, but not of its catalytic mutant (MavCC74A), recovered the detection of SdcB (Figure 5a, top panel). As SdcB was resolved as a doublet in the immunoblot, we suspected that SdcB may be chemically modified by MavC and that the modification may result in enhanced detection of this protein. We therefore probed with an anti-HA antibody to detect possible Ub conjugation. The upper band was stained with anti-HA antibody, showing that Ub was conjugated to SdcB presumably by the known Ub conjugation ability of MavC (Gan et al., 2019a; Figure 5a, middle panel). We also found that the disappearance of the SdcB bands correlated with the appearance of the high molecular weight smears when probed with anti-HA antibody (Figure 5a, middle panel). This suggests that the disappearance of the SdcB band can be caused by auto-ubiquitination, as SdcB has an ability to catalyze auto-ubiquitination with a diverse repertoire of E2 enzymes (Figure 5—figure supplement 1) consistently with a previous report (Lin et al., 2018). A proteasome inhibitor MG132 treatment of the cells did not rescue the disappearance of the SdcB bands, suggesting that auto-ubiquitinated SdcB was not subjected to proteasomal degradation (Figure 5—figure supplement 2a), but the auto-ubiquitination rather caused its apparent loss by the band distribution on the gel. The catalytic activity-dependent reduction of apparent SdcB level was also detected in infected cells (Figure 4c, bottom panel). The transglutaminase activity of MavC is likely required for conjugation of Ub to SdcB, as the catalytic mutant of MavC (MavC C74A) failed to modify SdcB (Figure 5a). We also found that unmodified SdcB was readily detected when the SdcB C57 active site was mutated regardless of the presence of MavC (Figure 5b, top panel), consistent with the disappearance of the band was linked to the auto-ubiquitination ability. Interestingly, the MavC-mediated Ub conjugation to SdcBC57A was not readily detected (Figure 5b). This indicates that the catalytic residue C57 of SdcB is crucial in being modified by MavC. As suggested by the reduction of the high molecular weight smears (Figure 5a), it is plausible that MavC suppresses the E3 ligase activity of SdcB by the unique chemical modification.
 
-## The transglutaminase activity of MavC mediates Ub conjugation to SdcB and SdcA
+![Figure 5.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig5-v1.jpg)
+
+**Figure 5.:** (a) 3xFLAG-SdcB, HA-Ub, and GFP-MavC were coexpressed in HEK293T-FcγRII cells. SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcB. (b) 3xFLAG-SdcB and GFP-MavC were coexpressed in HEK293T-FcγRII cells. SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcB. (c) In vitro transglutaminase assay was performed using purified proteins. The samples were analyzed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) followed by silver staining (top) or by immunoblotting using the indicated antibodies (middle and bottom). The asterisks indicate the Ub-conjugated form of SdcB. (d) 3xFLAG-SdcA or SidC, GFP-MavC, and HA-Ub were coexpressed in HEK293T-FcγRII cells. SdcA or SidC was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcA. (e) 3xFLAG-SdcB, GFP-MavC, and HA-Ub or Ub without any Lys residues (Ub No K) were coexpressed in HEK293T-FcγRII cells. SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcB. (f) 3xFLAG-SdcB, GFP-MavC, and HA-Ub or Ub in which the C-terminal GG were replaced with AA (Ub AA) were coexpressed in HEK293T-FcγRII cells. SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcB.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Ub, E1 enzyme, indicated E2 enzymes, and purified His-SdcB or His-SidC were mixed in the reaction buffer in the presence of ATP and incubated at 30°C for 120 min. The samples were analyzed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) followed by silver staining (a) or by immunoblotting using the anti-Ub antibody (b).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) 3xFLAG-SdcB, HA-Ub and GFP-MavC were coexpressed in HEK293T-FcγRII cells. After 24 hr transfection, cell media was replaced with media containing 10 μM of MG132 or equivalent amount of dimethylsulfoxide (DMSO), and incubation of cells was resumed for additional 6 hr. The cell lysates were probed with the indicated antibodies. (b) The in vitro reaction was performed with recombinant Ub, E1 enzyme, His-UbcH6, purified His-SdcB and His-MavC in the reaction buffer in the presence of ATP by incubation at 30°C for 120 min. The samples were analyzed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) followed by immunoblotting using the anti-Ub antibody.
+
+### The transglutaminase activity of MavC mediates Ub conjugation to SdcB and SdcA
 
 To confirm the direct involvement of MavC in the unique Ub modification of SdcB, we reconstructed an in vitro reaction using purified proteins. In the presence of MavC, but not of its paralog MvcA, the mass shift of SdcB was readily detected (Figure 5c, top panel). The immunoblotting showed that the band contains Ub (Figure 5C, middle panel). The presence of wild-type MavC, but not its catalytic mutant, also reduced SdcB auto-ubiquitination in vitro (Figure 5—figure supplement 2b). Since SidC, SdcA, and SdcB are paralogs to each other, we examined if SidC and/or SdcA are also subject to MavC-mediated Ub conjugation. Triple-FLAG-tagged SidC or SdcA were transiently expressed together with GFP-MavC and HA-Ub in HEK293T-FcγRII cells, and the 3xFLAG-tagged proteins were immunoprecipitated (Figure 5d). These results clearly demonstrated that Ub was conjugated to SdcA but not to SidC by the catalytic activity of MavC, and that this modification occurred only to SdcA in the catalytically active form.
 
@@ -74,9 +106,33 @@ We then analyzed the MavC-mediated Ub conjugation to SdcB using derivatives of U
 
 Transglutaminase activity of MavC is known to target Gln40 of Ub to catalyze the intramolecular crosslinking (Gan et al., 2019a; Guan et al., 2020; Puvar et al., 2020). We investigated whether the same residue of Ub is crosslinked to SdcB by the activity of MavC using mass spectrometric (MS) analysis. We found that a covalent bond was formed between Gln41 of Ub and Lys518 of SdcB (Figure 6a). Crosslinking between Gln31 of Ub and Lys891 of SdcB was also detected (Figure 6—figure supplement 1). To confirm the results, we replaced Ub residues Gln41 and Gln31 with Glu (Ub Q41E, Ub Q31E, and Ub Q31E Q41E) and conducted the Ub conjugation assay by transient expression in HEK293T-FcγRII cells. Consistent with the result from the MS analysis, Ub Q41E, but not Ub Q40E, failed to be conjugated to SdcB, showing that Gln41 is crucial for MavC-mediated crosslinking with SdcB (Figure 6b, middle panel). Ub Q31E also reduced the level of modified SdcB, and Ub Q31E Q41E completely abolished the crosslinking to SdcB. The presence of modified SdcB bands when probed with anti-FLAG antibody is thought to be caused by conjugation with intrinsic Ub in cells (Figure 6b, top panel). Contrarily, replacement of Lys518 and Lys891 of SdcB to Arg (SdcB K518R, SdcB K891R, and SdcB K518R K891R), which have no apparent effect on Rab10 ubiquitination (Figure 6—figure supplement 2), showed lesser impact on abolishing the reactivity (Figure 6c), suggesting that additional residues of SdcB can be subjected to MavC-dependent Ub conjugation. Taken together, we currently hypothesize that association of the C-terminal Gly of Ub to the catalytic pocket of SdcA or SdcB (C44 or C57, respectively) positions these molecules in proper orientation for intramolecular crosslinking mediated by the transglutaminase activity of MavC.
 
-## Catalytic activity of MavC can impact Rab10 localization to the LCV
+![Figure 6.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig6-v1.jpg)
+
+**Figure 6.:** (a) MavC catalyzes the formation of an isopeptide bond between the Gln41 of Ub and the Lys518 of SdcB. The indicated proteins were expressed in HEK293T-FcγRII cells and SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads. The samples were resolved by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE). The Ub-conjugated SdcB was detected by immunoblotting and by CBB staining. The gel slices of areas of the bands shown with the red squares were subjected to mass spectrometric analysis. Product ion spectrum was shown for Ub peptide – AKIQDKEGIPPDQQR crosslinked with SdcB peptide – VLLDKEVNDEGIAEAVASK. (b, c) The indicated proteins were coexpressed in HEK293T-FcγRII cells. SdcB was isolated from cell lysates by immunoprecipitation using anti-FLAG magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of SdcB.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Product ion spectrum was shown for Ub peptide – IQDKEGIPPDQQR crosslinked with SdcB peptide – GYVGVFFSGKENIK.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** HEK293T-FcγRII cells transiently expressing 3xFLAG-Rab10QL and HA-Ub were infected with the L. pneumophila ΔsidCΔsdcAΔsdcB strain expressing Myc-tagged SdcB, its catalytic mutant (SdcB C57A) or SdcB K518R K891R for 7 hr at an MOI of 20. Rab10 was isolated from cell lysate by immunoprecipitation using anti-FLAG magnetic beads and was probed with anti-FLAG and with anti-HA antibodies. For detection of translocated SdcB, it was isolated from cell lysate by immunoprecipitation using anti-Myc magnetic beads and was probed with anti-Myc antibody. Note that apparent loss of SdcB was caused by its auto-ubiquitination leading to the molecular weight shift.
+
+### Catalytic activity of MavC can impact Rab10 localization to the LCV
 
 We then examined the role of MavC in the LCV localization of Rab10. By immunofluorescent microscopy, we monitored the level of RFP-tagged Rab10 on SdcB-positive LCVs when MavC or its catalytic mutant were expressed in HeLa-FcγRII cells (Figure 7a). At 4 hr after infection with L. pneumophila strains expressing 3xFLAG-SdcB, the level of Rab10-positive LCVs was significantly higher in the cells expressing the catalytic mutant of MavC compared with those expressing wild-type MavC (Figure 7a, b). That Rab10 localization was reduced coincident with MavC-dependent inhibition of SdcB further supports the contribution of SdcB activity toward retention of Rab10 on the LCV. We then wondered whether bacterially delivered MavC can contribute to the elimination of Rab10 from the vacuole. As the levels of the Rab10-positive LCVs were not significantly altered up to 7 hr after infection with the wild-type L. pneumophila strain (Figure 2b), we examined Rab10 localization at a later time point after infection (Figure 7c, Figure 7—figure supplement 1). At 9 hr after infection with the wild-type strain, the level of Rab10-positive LCVs was reduced to about 20% of the total LCVs (compare with that of 1–7 hr infection (~40%)) (Figure 2b). However, the level got significantly higher in the cells infected with a ΔmavCΔmvcA strain. Contrary, when the cells were infected with a strain lacking Lpg2149 which inhibits the activity of MavC and MvcA, the level declined. These results support that MavC suppresses the activity of SdcB in infection conditions and thereby downregulates Rab10 localization to the LCV at later stages of infection. Taken together, we found that Rab10 localization is finely regulated during infection; the interplay of bacterial enzymes leads to sustained association of Rab10 with the LCV and eventually dissociates it from the LCV presumably in accordance with the process of the LCV biogenesis (Figure 7d).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig7-v1.jpg)
+
+**Figure 7.:** (a, b) HeLa-FcγRII cells transiently expressing RFP-Rab10 and HA-MavC or its catalytic mutant were infected with the Lp01 ΔsidCΔsdcAΔsdcB strain complemented with the plasmid expressing 3xFLAG-SdcB or its catalytic mutant at an MOI of 2 for 4 hr. (a) Representative images of cells infected with the Lp01 ΔsidCΔsdcAΔsdcB strain complemented with the plasmid expressing 3xFLAG-SdcB. Fixed cells were stained for FLAG-SdcB (green) and DNA (blue), and visualized with RFP-Rab10 (red). Magnified images in the white squares are shown in each channel. White arrows indicate the position of a bacterium. The red arrow indicates a Rab10 signal surrounding an LCV. Scale bars, 10 μm. (b) Quantitation of Rab10-positive LCVs (%) out of SdcB-positive ones. Infections were performed in triplicate and each value represents scoring from 200 SdcB-positive LCVs. Significance was determined using Student’s t-test. (c) HeLa-FcγRII cells transiently expressing RFP-Rab10 were infected with the indicated Lp01 strains at an MOI of 2 for 9 hr, and Rab10-positive LCVs (%) were quantified. Infections were performed in triplicate and each value represents scoring from 200 LCVs. Significance was determined using Student’s t-test. (d) The schematic of roles of SidE- and SidC-family ligases in Rab10 localization to the LCV and of negative regulation of SdcB-dependent Rab10 retention by the transglutaminase activity of MavC. Red arrows indicate canonical Ub conjugation by SidC, SdcA, and SdcB. Purple arrows indicate the noncanonical Ub conjugation. In the early stage of infection, Rab10 is recruited and retained to the LCV. This event is linked to its phosphoribosylated (PR) ubiquitination catalyzed by the SidE effectors. The PR ubiquitination of Rab10 provides a platform of its polyubiquitination in a manner depending on SidC and SdcA. In later stages, SdcB contributes toward sustained Ub accumulation on the LCV, enabling the LCV to maintain Rab10 on the vacuole. MavC-mediated crosslinking between Ub and SdcB disrupts the catalytic activity of SdcB, eventually releasing Rab10 from the LCV.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Representative images of cells infected with the indicated Lp01 strains at an MOI of 2 for 9 hr (Rab10-positive LCVs (%) were quantified in Figure 7c). Fixed cells were stained for L. pneumophila (green) and DNA (blue), and visualized with RFP-Rab10 (red). Magnified images in the white squares are shown in each channel. Red arrows indicate the Rab10 signal surrounding an LCV. Scale bars, 10 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/89002/elife-89002-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Indicated proteins were coexpressed in HEK293T-FcγRII cells. Rab10 was isolated from cell lysates by immunoprecipitation using anti-RFP magnetic beads and was probed with the indicated antibodies. The asterisks indicate the Ub-conjugated form of Rab10.
 
 ## Discussion
 
@@ -92,48 +148,478 @@ We found that L. pneumophila has a multi-tiered regulatory mechanism to manipula
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Philadelphia-1 (Lp01)</td>
+      <td>Berger and Isberg, 1993</td>
+      <td>NC_002942.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01ΔicmV ΔdotA (ΔdotA)</td>
+      <td>Zuckman et al., 1999</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔsidCΔsdcA</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔsidCΔsdcAΔsdcB</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔsidEΔsdeAΔsdeBΔsdeC (ΔsidEs)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔdupAΔdupB</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔdupAΔsidJΔdupBΔsdjA</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 Δlpg2149</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp01 ΔmavCΔmvcA</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Constructed in Nagai lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>TOYOBO</td>
+      <td>Cat# DNA-903</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5αλpir</td>
+      <td>Zuckman et al., 1999</td>
+      <td>N/A</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NOVAGEN-MERK</td>
+      <td>Cat# 69450</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa‐FcγRII</td>
+      <td>Arasaki et al., 2017</td>
+      <td>Established fromATCC CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T‐FcγRII</td>
+      <td>Arasaki and Roy, 2010</td>
+      <td>Established from ATCC CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (M2) (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F1804</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>Cat# M132-3</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit monoclonal)</td>
+      <td>MBL</td>
+      <td>Cat# 561</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ub (FK2) (Mouse monoclonal)</td>
+      <td>Enzo</td>
+      <td>Cat# BML-PW8810</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ub (P4D1) (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-8017</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# 598</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-His (Mouse monoclonal)</td>
+      <td>Novagen</td>
+      <td>Cat# 70796-3</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc (Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat# 11 667 203 001</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (Rabbit polyclonal)</td>
+      <td>MBL</td>
+      <td>Cat# PM005</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Proteintec</td>
+      <td>Cat# 60004-1-Ig</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Legionella pneumophila (Rabbit polyclonal)</td>
+      <td>BioAcademia</td>
+      <td>Cat# 64-100</td>
+      <td>IF (1:5000)Opsonization (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H+L) secondary, HRP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 62-6520</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L) secondary, HRP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 65-6120</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A-11029</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A-11034</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamine RedX goat anti-rabbit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# R6349</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubiquitin, human recombinant</td>
+      <td>Boston Biochem</td>
+      <td>Cat# U-100H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubiquitin K63R, human recombinant</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UM-K63R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubiquitin mutant with K63 only, human recombinant</td>
+      <td>Boston Biochem</td>
+      <td>Cat# UM-K630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UBE1, human recombinant</td>
+      <td>Boston Biochem</td>
+      <td>Cat# E-305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubc (E2) Enzyme Kit</td>
+      <td>Boston Biochem</td>
+      <td>Cat# K-980B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-(2-Acetamido)-2-aminoethanesulfonic acid (ACES)</td>
+      <td>Sigma</td>
+      <td>Cat# 7365-82-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Ethylmaleimide (NEM)</td>
+      <td>Sigma</td>
+      <td>Cat# E3876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete protease inhibitor Cocktail (EDTA free)</td>
+      <td>Roche (Merk)</td>
+      <td>Cat# 11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SigmaFast Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>Cat# S8830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylmethylsulfonyl fluoride (PMSF)</td>
+      <td>Nacarai</td>
+      <td>Cat# 27327-94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Calbiochem</td>
+      <td>Cat# 474791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>Silver Stain MS Kit</td>
+      <td>FUJIFILM Wako</td>
+      <td>Cat# 299-58901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>QuickChange II site-directed mutagenesis kit</td>
+      <td>Agilent</td>
+      <td>Cat# 200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>Gibson assembly kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E2611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>EndoFree Plasmid MAXI prep kits</td>
+      <td>QIAGEN</td>
+      <td>Cat# 12362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4,6-Diamidino-2-phenylindole (DAPI)</td>
+      <td>DOJINDO</td>
+      <td>Cat# GW094</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668-019</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Polyethylenimine (PEI)</td>
+      <td>Polysciences</td>
+      <td>Cat# 24765-2</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly-L-lysine</td>
+      <td>Sigma</td>
+      <td>Cat# P4707</td>
+      <td>0.01%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Sigma</td>
+      <td>Cat# 441244</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLongTM Diamond Antifade Mountant</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# P36961</td>
+      <td>Antifade moutant</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-nitrilotriacetic acid (NTA) agarose</td>
+      <td>QIAGEN</td>
+      <td>Cat# 30210</td>
+      <td>Affinity matrix</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FLAG M2 magnetic beads</td>
+      <td>Sigma</td>
+      <td>Cat# M8823</td>
+      <td>Affinity beads</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Myc-Trap magnetic beads</td>
+      <td>chromotek</td>
+      <td>Cat# ytma</td>
+      <td>Affinity beads</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RFP-Trap magnetic beads</td>
+      <td>chromotek</td>
+      <td>Cat# rtma</td>
+      <td>Affinity beads</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Minimum essential medium α (MEMα)</td>
+      <td>Gibco</td>
+      <td>Cat# 12571-063</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s modified Eagle medium (DMEM)</td>
+      <td>Gibco</td>
+      <td>Cat# 11885-084</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Sigma</td>
+      <td>Cat# 172012</td>
+      <td>Heat inactivated, 10%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Goat serum</td>
+      <td>Gibco</td>
+      <td>Cat# 16210-064</td>
+      <td>2%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 The L. pneumophila and Escherichia coli strains used in this study are listed in Key resource table. Deletion strains were constructed by allelic exchange, as described previously (Zuckman et al., 1999). The L. pneumophila strains were grown at 37°C in liquid N-(2-acetamido)-2-aminoethanesulfonic acid (Sigma)-buffered yeast extract (AYE) media or on charcoal-yeast extract (CYE) plates (Feeley et al., 1979) with or without appropriate antibiotics (100 µg/ml streptomycin, 10 µg/ml chloramphenicol, and 10 µg/ml kanamycin), as described previously (Berger et al., 1994). The E. coli strains (DH5α, DH5αλpir, and BL21[DE3]) were grown at 37°C in standard media.
 
-## Cell culture
+### Cell culture
 
 HeLa cells stably expressing FcγRII (HeLa-FcγRII) were established (Arasaki et al., 2017) from HeLa cells (ATCC; CCL-2) obtained from the RIKEN Bioresource Center (RCB0007). HEK293T cells stably expressing FcγRII (HEK293T-FcγRII) were established (Arasaki and Roy, 2010) from HEK293T cells (ATCC; CRL-3216) supplied from Dr. Craig Roy (Yale University). HeLa-FcγRII cells were grown in minimum essential medium α (MEMα; Gibco) supplemented with 10% fetal bovine serum (FBS; Sigma). HEK293T-FcγRII cells were grown in Dulbecco’s modified Eagle medium (DMEM; Gibco) supplemented with 10% FBS. All cells were incubated at 37°C under 5% CO2 condition. All cell lines were regularly tested for mycoplasma contamination.
 
-## Plasmid construction
+### Plasmid construction
 
 Plasmids used in this study are listed in Supplementary file 1. All cloning was conducted by PCR amplification of the desired genes using primers listed in Supplementary file 2 from genomic DNA of L. pneumophila or from plasmids listed in Supplementary file 1 followed by ligation with the vectors unless otherwise noted below. Site-directed mutagenesis was carried out using a QuickChange II site-directed mutagenesis Kit (Agilent) according to the manufacture’s recommendation. For construction of pET15b-His-sdeAΔDUB, the entire region of pET15b-His-sdeA except for the region encoding 1–199 aa of SdeA was amplified with primers 2649/2712 and then the fragment was self-ligated with a Gibson assembly kit (New England Biolabs). For construction of pmGFP-sdeAΔDUB, the entire region of pmGFP-sdeA except for the region encoding 1–199 aa of SdeA was amplified with primers 2714/2715 and then the fragment was self-ligated with a Gibson assembly kit. For construction of pMMB-3xMyc-sdeA, the coding region of sdeA was amplified using primers 2658/2659 from genomic DNA of Lp01, then the fragment was ligated with a linearized vector generated by PCR using 2341/2681 based on pMMB-PicmR-3xFLAG.
 
-## Protein purification
+### Protein purification
 
 E. coli cells overproducing MavC, MvcA, or SdcB with a hexa-histidine tag were collected by centrifugation and resuspended with 50 mM Tris–HCl pH 7.5, 5 mM ethylenediamine tetraacetic acid (EDTA) containing SigmaFast Protease Inhibitor Cocktail (Sigma). Cells were disrupted, centrifuged (30,000 × g, 20 min), and the soluble fraction was loaded on a HiPrep Q FF column (Cytiva). His-tagged MacV or MvcA was eluted by a 0–500 mM gradient of NaCl in 20 mM Tris–HCl pH7.5, 10 mM 2-mercaptoethanol and was loaded on a HisTrap HP column (Cytiva). His-tagged protein was eluted by a 40–500 mM gradient of imidazole in 20 mM Tris–HCl pH 7.5, 200 mM NaCl, 10 mM 2-mercaptoethanol. Peak fractions were pooled and loaded onto a HiLoad Superdex 200 gel filtration column (Cytiva). Purified protein was eluted in 20 mM Tris–HCl pH 7.5, 200 mM NaCl, 1 mM dithiothreitol and concentrated using a Vivaspin 20 concentrator (Sartorius).
 
-## Ub ligation assay
+### Ub ligation assay
 
 The in vitro ubiquitination assay in the substrate-free system was conducted as described before (Kubori et al., 2018) with minor modifications. Briefly, reaction mixtures (12.5 μl) containing 5 μg of recombinant human Ub (Boston Biochem), 80 nM recombinant human E1 (Boston Biochem), 400 nM recombinant human E2 enzymes (Boston Biochem) and 400 nM purified E3 ligases in 50 mM Tris–Cl (pH 7.5), 2 mM MgCl2, 120 mM NaCl, 2 mM ATP, and 1 mM DTT were incubated for 2 hr at 30°C. The reaction was stopped by adding 12.5 μl of 2× sodium dodecyl sulfate (SDS) sample buffer and boiling.
 
-## Transglutaminase assay
+### Transglutaminase assay
 
 The in vitro transglutaminase assay was conducted using the same buffer for the Ub ligation assay (omitting ATP). Reaction mixtures (12.5 μl) containing 5 μg of Ub, 400 nM purified His-SdcB, and 800 nM purified MavC were incubated for 1 hr at 37°C. The reaction was stopped by adding 12.5 μl of 2× SDS sample buffer and boiling.
 
-## Transfection and infection
+### Transfection and infection
 
 HEK293T-FcγRII cells were seeded in poly-L-lysine (Sigma)-coated 6-well tissue culture plates at 6 × 105 cells/well 24 hr before transfection or infection. Transfection was performed using Lipofectamine 2000 (Invitrogen) for 24 hr according to the manufacturer’s recommendation. HeLa-FcγRII cells were seeded on coverslips in 24-well tissue culture plates at 4 × 104 cells/well 24 hr before transfection or infection. Transfection was performed using polyethylenimine for 24 hr. For infection, L. pneumophila was harvested from a 2-day heavy patch grown on CYE plates with or without appropriate antibiotics and 1 mM isopropyl-β-D-thiogalactopyranoside (IPTG), and then it was resuspended in sterilized distilled water. The bacteria were opsonized with anti-Legionella antibody (1:3000 dilution) before infection. After adding the bacteria to the cells, the plates were centrifuged at 200 × g to precipitate bacteria onto the layer of cells and were immediately warmed in a 37°C water-bath by floating for 5 min and then placed in a CO2 incubator at 37°C. At 1 hr after infection, the infected cells were washed three times with prewarmed Dulbecco’s phosphate-buffered saline (DPBS; Sigma) and refreshed with prewarmed media to remove the extracellular bacteria, and incubation was resumed at 37°C in a CO2 incubator.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 The transfected or infected cells were washed with DPBS three times and lysed with Lysis buffer (20 mM Tris–HCl, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% NonidentP40) containing protease inhibitors (cOmplete; Roche), 1 mM phenylmethylsulfonyl fluoride (Nacarai), 10 mM N-ethylmaleimide (NEM, Sigma) as a DUB inhibitor and 10 μM MG132 (Calbiochem) as a proteasome inhibitor. After removal of cell debris with centrifugation, cell lysates were incubated with FLAG M2 magnetic beads (Sigma), RFP-Trap magnetic beads (chromotek) or Myc-Trap magnetic beads (chromotek) for 2 hr to overnight at 4°C. The beads were washed five times with wash buffer (20 mM Tris–HCl, pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.1% Triton X-100), and the bead-bound proteins were eluted by boiling in SDS sample buffer.
 
-## Immunofluorescent microscopy
+### Immunofluorescent microscopy
 
 HeLa-FcγRII cells on coverslips were fixed with 4% paraformaldehyde/DPBS for 20 min at room temperature and washed with DPBS three times. After permeabilization and blocking with 0.2% Triton X-100 and 2% goat serum in DPBS for 20 min, the coverslips were incubated with the primary antibodies indicated in the figure legends for 90 min. After washing with DPBS three times, the coverslips were incubated with the fluorescent secondary antibodies with 4,6-diamidino-2-phenylindole for 40 min. After washing with DPBS three times, the coverslips were mounted on glass slides using ProLong Diamond antifade mounting medium (Thermo Fisher). Images were collected using an inverted microscope (TE2000-U; Nikon) equipped with a digital ORCA-ERA camera (Hamamatsu).
 
-## Liquid chromatography–MS/MS analysis
+### Liquid chromatography–MS/MS analysis
 
 Protein bands corresponding to MavC-mediated modification of 3xFLAG-SdcB were excised from SDS–polyacrylamide gel electrophoresis and digested with trypsin. MS experiments were performed at the Research Institute for Microbial Diseases (RIMD). The proteins were reduced with 10 mM DTT, followed by alkylation with 55 mM iodoacetamide, digested by treatment with trypsin (Promega) and purified with a C18 tip (AMR, Tokyo, Japan). The resultant peptides were subjected to nanocapillary reversed-phase liquid chromatography (LC)–MS/MS analysis using a C18 column (12 cm × 75 µm, 1.9 µm, Nikkyo technos, Tokyo, Japan) on a nanoLC system (Bruker Daltoniks, Bremen, Germany) connected to a timsTOF Pro mass spectrometer (Bruker Daltoniks) and a modified nano-electrospray ion source (CaptiveSpray; Bruker Daltoniks). The mobile phase consisted of water containing 0.1% formic acid (solvent A) and acetonitrile containing 0.1% formic acid (solvent B). Linear gradient elution was carried out from 2% to 35% solvent B for 20 min at a flow rate of 250 nl/min. The ion spray voltage was set at 1.6 kV in the positive ion mode. Ions were collected in the trapped ion mobility spectrometry (TIMS) device over 100 ms and MS and MS/MS data were acquired over an m/z range of 100–2000. During the collection of MS/MS data, the TIMS cycle was adjusted to 0.53 s and included 1 MS plus 4 parallel accumulation serial fragmentation (PASEF)-MS/MS scans, each containing on average 12 MS/MS spectra (>100 Hz) (Meier et al., 2018; Meier et al., 2015) and nitrogen gas was used as collision gas.
 
 The resulting data were processed using DataAnalysis version 5.2 (Bruker Daltoniks), resulting peak files (mgf format) were subjected to MASCOT version 2.7.0 (Matrix Science, London, UK) against the Swissprot_database (568,744 sequences; 205,548,017 residues) taxonomy limited Homo sapiens (20,305 sequences), HA-Ub (1 sequences; 92 residues), and 3xFLAG-SdcB database (1 sequences; 950 residues), and searched with the following settings: The mass tolerance for precursor ions was ±15 ppm; The mass tolerance for fragment ions was ±0.05 Da; enzyme, Trypsin; max. missed cleavages, 4; fixed modification: carbamidomethylation on cysteine; variable modifications: oxidation of methionine, N-terminal Gln to pyro-Glu. The threshold score/expectation value for accepting individual spectra was p < 0.05. User defined Crosslinker setting is crosslinker: Ubiq01 (mass modification: −17.026549 Da, deamination). The crosslink reactions were assumed to connect lysine or glutamine. It does not pair with K and K, or Q and Q. It links only 3xFLAG-SdcB between HA-Ub.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 In the immunofluorescence experiments, at least 50 bacterial vacuoles were counted per experiment. Student’s t-tests were carried out with data from three independent experiments.

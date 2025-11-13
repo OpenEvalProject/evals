@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.39273.001 In eukaryotic translation initiation, AUG recognition of the mRNA requires accommodation of Met-tRNA i in a ‘P IN ’ state, which is antagonized by the factor eIF1. eIF5 is a GTPase activating protein (GAP) of eIF2 that additionally promotes stringent AUG selection, but the molecular basis of its dual function was unknown. We present a cryo-electron microscopy (cryo-EM) reconstruction of a yeast 48S pre-initiation complex (PIC), at an overall resolution of 3.0 Å, featuring the N-terminal domain (NTD) of eIF5 bound to the 40S subunit at the location vacated by eIF1. eIF5 interacts with and allows a more accommodated orientation of Met-tRNA i . Substitutions of eIF5 residues involved in the eIF5-NTD/tRNA i interaction influenced initiation at near-cognate UUG codons in vivo, and the closed/open PIC conformation in vitro, consistent with direct stabilization of the codon:anticodon duplex by the wild-type eIF5-NTD. The present structure reveals the basis for a key role of eIF5 in start-codon selection.
+In eukaryotic translation initiation, AUG recognition of the mRNA requires accommodation of Met-tRNAi in a ‘PIN’ state, which is antagonized by the factor eIF1. eIF5 is a GTPase activating protein (GAP) of eIF2 that additionally promotes stringent AUG selection, but the molecular basis of its dual function was unknown. We present a cryo-electron microscopy (cryo-EM) reconstruction of a yeast 48S pre-initiation complex (PIC), at an overall resolution of 3.0 Å, featuring the N-terminal domain (NTD) of eIF5 bound to the 40S subunit at the location vacated by eIF1. eIF5 interacts with and allows a more accommodated orientation of Met-tRNAi. Substitutions of eIF5 residues involved in the eIF5-NTD/tRNAi interaction influenced initiation at near-cognate UUG codonsin vivo, and the closed/open PIC conformation in vitro, consistent with direct stabilization of the codon:anticodon duplex by the wild-type eIF5-NTD. The present structure reveals the basis for a key role of eIF5 in start-codon selection.
 
 ## Introduction
 
@@ -42,27 +42,367 @@ Here, we have determined a cryo-EM structure of a yeast 48S complex in the PIN c
 
 ## Results
 
-## Overview of the cryo-EM structure of a yeast 48S PIC containing eIF5
+### Overview of the cryo-EM structure of a yeast 48S PIC containing eIF5
 
 Partial yeast 48S PIC maps containing clear density for eIF5-NTD (py48S-eIF5N) were obtained from a 48S sample reconstituted by sequential addition of purified Saccharomyces cerevisiae eIF1, eIF1A, eIF3, eIF5, TC and an eIF4F-eIF4B-mRNA complex to yeast Kluyveromyces lactis 40S subunits. An unstructured, capped 49-mer mRNA with an AUG codon and an optimal Kozak sequence for yeast was used (See Materials and methods). In our earlier studies, eIF4 factors were not used to deliver the mRNA to the PIC, and the mRNA was uncapped and lacked an optimal Kozak sequence. These changes in assembly protocol may have helped in capturing eIF5 in the 48S.
 
 The structure of py48S-eIF5N was determined to an overall resolution of 3.0 Å to 3.5 Å in respective maps: 1, A, B, C1 and C2 (Figure 1—figure supplements 1, 2 and 3; Tables 1, 2 and 3), and the resulting model is shown in Figure 1. The local resolution of the density is highest for the 40S core and ligands directly attached to it, including the eIF5-NTD (Figure 1—figure supplement 4 and Table 2). Met-tRNAi is bound to py48S-eIF5N in a PIN state (base paired to the AUG codon), with a closed mRNA latch and compressed conformation of h28 (the rRNA helix connecting the 40S head and body) (Figure 1—figure supplement 5), as in previous py48S PIN/closed complexes, and in contrast to the open-latch and relaxed h28 conformations of a py48S POUT/open complex (Figure 1—figure supplement 5) (Hussain et al., 2014; Llácer et al., 2015). Density for the eIF5-NTD is observed on the 40S platform near the P site (Figure 2A), which is also the site for binding of eIF1 (Llácer et al., 2015; Hussain et al., 2014; Lomakin and Steitz, 2013; Hashem et al., 2013; Rabl et al., 2011; Aylett et al., 2015). Although eIF1 and the eIF5-NTD share structural similarity (Conte et al., 2006) (Figure 2—figure supplement 1A–B), the resolution of the map allowed us to unambiguously determine that the density belongs to eIF5-NTD and not eIF1 (see below for details of fitting eIF5-NTD into the density map). Clear density for the codon:anticodon interaction is observed at the P site; and the complete N-terminal tail (NTT) of eIF1A was resolved, stabilizing the codon:anticodon helix as seen in earlier closed py48S complexes containing eIF1 instead of eIF5-NTD (Llácer et al., 2015; Hussain et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-v4.jpg)
+
+**Figure 1.:** (A) CryoEM maps of the PIC py48S-eIF5N shown in three orientations. Regions of the map are colored by component to show the 40S subunit (yellow), eIF1A (blue), eIF5-NTD (cyan), Met-tRNAiMet (green), mRNA (magenta), eIF2α (violet), eIF2γ (orange), eIF2β (red), eIF3 (different shades of pink). The 40S head is shown in a darker yellow compared to the body. The density for 40S, eIF1A, mRNA, tRNA, eIF2 subunits and eIF5 is taken from Map C1, whereas density for eIF3 PCI domains is taken from Map A, and for eIF3-bgi subcomplex from Map B. The same colors are used in all the figures. (B) Atomic model for the PIC in the same colors and in the same three orientations. See also Figure 1—figure supplements 1, 2, 3, 4, 5 and 6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** For Sample 1 (without crosslinking dataset) 394,672 particles were selected after 2D classification and an initial 3D refinement was done. After two rounds of 3D-classification, a class containing clear density for TC was refined to 3.0 Å-resolution (Map 1). Densities for peripheral and flexible elements like eIF3, eIF2β and eIF2γ are not seen in the completely sharpened map. For Sample 2 (1%-formaldehyde-crosslinked dataset) 312,041 particles were selected after 2D classification and an initial 3D refinement was done. After two rounds of 3D-classification, a class containing clear density for TC was obtained. Particles from both samples were joined and further separate, focused 3D classifications were carried out. The eIF3 masks ‘PCI mask’ and ‘bgi mask’ as well as the ‘TC mask’ used separately for focused 3D classification on the combined 271,706 particles are shown by an outline. The scheme shows how each map (Maps: 1, (A, B, C1 and C2) was obtained. See ‘Analysis and structure determination’ section for detailed information.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gold-standard Fourier Shell Correlation (FSC) curves for the Maps 1, A and B. (B) Gold-standard Fourier Shell Correlation (FSC) curves for Maps C1 and C2. (C) Analysis of overfitting by cross-validation of the Model C1. FSCwork curves (red) corresponding to the refined model versus the half-map it was refined against, and FSCtest curves (green), that is those calculated between the refined atomic model and the other half-map. The black curve shows the FSC curve between a reconstruction from all particles and the model refined against the map. (D) Analysis of overfitting by cross-validation, similar to that in (C), of the Model C2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp3-v4.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Fitting of mRNA (magenta), eIF1A (marine), eIF5-NTD (cyan), tRNAi (green), eIF2α (purple), eIF2β (red) and eIF2γ (orange) in Map C1. (B) As in A, but shown in a different orientation and omitting eIF2 components to highlight the fitting of eIF5-NTD. (C) High-resolution features for tRNAi, mRNA and eIF5-NTD at the P site, at 3.0 Å-resolution (Map 1). (D) As in C, but showing the ion centered around the mRNA codon (E) Fitting of the eIF3a/c PCI domain dimer in map A. (F) Fitting of the eIF3bgi subcomplex in map B, shown in two orientations.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp4-v4.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Map 1 (B) Map C1 (C) Map B (D) Map A.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp5-v4.jpg)
+
+**Figure 1—figure supplement 5.:** Superimposition of different py48S complexes shows a different degree of head closure around the latch area (left inset). Right inset shows distinct h28 conformations; only py48S-open presents a non-compressed h28, whereas in all other PICs, including py48S-eIF5N presented here, h28 is compressed.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig1-figsupp6-v4.jpg)
+
+**Figure 1—figure supplement 6.:** (A,B) Particles in map B belonging to sample 1 (non-crosslinked; gray) or sample 2 (crosslinked; yellow) were refined independently. Resulting maps, shown separately in (A), or superposed (B) are nearly identical, except for the higher occupancy for eIF3b/eIF3i subunits in the crosslinked dataset.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig2-v4.jpg)
+
+**Figure 2.:** (A) A detailed view of the contacts of eIF5-NTD near the P site with the 40S subunit, tRNAi, mRNA, eIF1A and eIF2β. eIF5 residues involved in the contacts are shown in sticks. (B) Fitting of eIF5-NTD (left) and eIF1(right) on density in Map 1(low-pass filtered to 5 Å). Zinc binding domain (ZBD) and helix α3 of eIF5, both absent in eIF1, are labeled. β5 of eIF1, which is not present in eIF5 is highlighted by a grey arrow. (C) The relative movement of the initiator tRNA in all reported yeast PICs, as deduced by a superposition using the 40S body. tRNAis from py48S-eIF5N (this study; green), py48S PIC (PDB 3J81; orange), py48S PIC-closed (PDB 3JAP; blue) and py48S PIC-open (PDB 3JAQ red) are shown. eIF5-NTD from py48S-eIF5N and eIF1 from py48S PIC (PDB 3J81) are also shown. For comparison, tRNAi and IF2 from a bacterial PIC with accommodated P site tRNA conformation is also shown (PICIII; PDB 5LMV; grey). In all closed conformations, the tip of the ASL is essentially in the same position; however, there is a different tilting of the tRNAi toward the 40S body in the different PICs. eIF1 would clash with tRNAi in py48S-eIF5N; black arrows highlight these clashes. (D) Representation of how eIF1 in py48S (transparent orange surface) would clash with tRNAi in py48S-eIF5N (in spheres). The model results from aligning the 40S bodies of the two structures. (E) eIF1 and eIF5-NTD share a similar fold; however, β-hairpin two in eIF5 is shorter than that in eIF1, which allows a further accommodation of tRNAi in the P site. eIF1 and tRNAi from py48S (PDB 3J81; orange) are superimposed on eIF5-NTD/tRNAi from py48S-eIF5N. See also Figure 2—figure supplements 1, 2 and 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cartoon representation of eIF5 (this study). Secondary structure elements are labeled. (B) Cartoon representation of eIF1 (from PDB:3J81) with labeled secondary structure elements. (C) Amino acid sequence and topology of secondary structure elements of eIF5. The β-strands and α-helices are depicted as superimposed arrows and rectangles, respectively. Residues belonging to the eIF5-NTD are in bold whereas those in light grey (comprising the eIF5-CTD) or in italics (comprising the linker connecting the NTD and CTD) are not visible in the present structure. In eIF5-NTD, the residues having decreased accessibility upon binding to 40S (in blue), tRNA (black circles), eIF2β (transparent circles), eIF2γ (violet triangles) and eIF1A (green triangles) in py48S-eIF5N are indicated. Asn30 interacting with mRNA, tRNA and the 40S simultaneously is shown in red. (D) Cartoon representation showing how Arg15 (essential for GAP activity) is 13 Å away from bound nucleotide in eIF2γ. (E) Contacts of eIF5-NTD with tRNAi or mRNA in py48S-eIF5N. Only secondary structure elements involved in the contacts are labeled. Two basic residues located in β-hairpin loop-2 of eIF5-NTD (K71, R73) interact with tRNAi. (F) Contacts of eIF1 with tRNAi or mRNA in the py48S complex (from PDB:3J81). Only secondary structure elements involved in the contacts are labeled, as in (E). The analogous secondary structure elements participate in the interactions in the two proteins; however, eIF1 β-hairpin loop-2 is negatively charged and exerts electrostatic repulsion between eIF1 and the tRNAi rather than the attraction afforded by basic residues in the eIF5-NTD loop-2 as seen in (E).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig2-figsupp2-v4.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Fitting of β-hairpin 1 of eIF5-NTD (cyan) and tRNAi (green) in Map 1. (B) As in A, but for β-hairpin 2 of eIF5-NTD.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig2-figsupp3-v4.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Accommodation of tRNAi in the P site in different yeast PICs. Similar representation to that in Figure 2C but including eIF5B and its associated tRNA (in gray) from the structure of an 80S initiation complex (PDB:4UJD) instead of bacterial IF2/tRNAi from bacterial PIC-III. For simplicity, only nucleotides 7–15 (D-loop) +26–43 (ASL) +69–76 (acceptor arm) from tRNA are shown. (C) Same orientation as in (A) of the superimposition of different bacterial PICs. When comparing panels A and C, we observe a similar tRNA accommodation process which depends on the displacement of eIF1/IF3 from near the P site. The present structure with eIF5-NTD in place of eIF1 could be considered the eukaryotic counterpart of bacterial PIC-4 (tRNA in green; IF3-CTD in cyan) or PIC-III (tRNA in gray; IF3-CTD in cyan) wherein IF3-CTD is completely displaced from the P site, since in both prokaryotic/eukaryotic PIC structures the tRNA accommodation process is very similar. (D) Similarity between locations and interactions of different eukaryotic and bacterial initiation factors and tRNAis in closed PIC structures. Bacterial PIC-3 (in yellow) and the py48S-eIF5N structures were superimposed by aligning the 40S/30S bodies. The tRNAis superpose quite well, and IF1:eIF1A, IF3-CTD:eIF5-NTD (or eIF1, not shown), IF3-NTD:eIF2α (domains D1 and D2) all occupy similar positions in two complexes. (Bi) Superimposition of eIF5B from the 80S initiation complex (PDB:4UJD) (in gray) with py48S-eIF5N shows a potential coexistence of eIF5B and eIF5-NTD in the same PIC, as eIF5B would clash with eIF2 but not with eIF5-NTD. (E) Superimposition of eIF5B from the 80S initiation complex (PDB:4UJD) with py48S-closed (PDB 6GSN) shows the incompatibility of eIF3 bound at the subunit interface with eIF5B, based on predicted extensive clashing of eIF3 subunits with eIF5B. (F) Similar representation to that in Figure 6C of the mRNA at the P site and flanking regions of py48S-eIF5N. (G) Same orientation as in (F) of the equivalent region of a bacterial PIC in closed conformation (PIC4; 5LMU), revealing an almost identical mRNA configuration and equivalent elements stabilizing the mRNA as observed in (F).
+
+**Table 1.**
+ Refinement and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Model with TC in conformation 1</th>
+      <th>Model with TC in conformation 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model Composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>104,332</td>
+      <td>104,232</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>8538</td>
+      <td>8522</td>
+    </tr>
+    <tr>
+      <td>RNA bases</td>
+      <td>1882</td>
+      <td>1882</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution used for refinement (Å)</td>
+      <td>3.05</td>
+      <td>3.05</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å)</td>
+      <td>−67</td>
+      <td>−66</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å)</td>
+      <td>162</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>Fourier Shell Correlation (FSC)*</td>
+      <td>0.90</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Rms deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.006</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>1.139</td>
+      <td>1.194</td>
+    </tr>
+    <tr>
+      <td>Validation (proteins)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score (Percentile in brackets)</td>
+      <td>2.65 (91st)</td>
+      <td>2.74 (89th)</td>
+    </tr>
+    <tr>
+      <td>Clashscore, all atoms (Percentile in brackets)</td>
+      <td>6.87 (100th)</td>
+      <td>7.11 (98th)</td>
+    </tr>
+    <tr>
+      <td>Good rotamers (%)</td>
+      <td>91.1</td>
+      <td>89.2</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>89.8</td>
+      <td>89.2</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>2.5</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>Validation (RNA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Correct sugar puckers(%)</td>
+      <td>98.6</td>
+      <td>96.9</td>
+    </tr>
+    <tr>
+      <td>Good backbone conformations(%)</td>
+      <td>63.6</td>
+      <td>63.1</td>
+    </tr>
+  </tbody>
+</table>
+
+_*FSC= Σ(Nshell FSCshell)/ Σ(Nshell), where FSCshell is the FSC in a given shell, Nshell is the number of ‘structure factors’ in the shell. FSCshell = Σ(Fmodel FEM)/ (√(Σ(|F|2model)) √(Σ(|F|2EM)))_
+
+**Table 2.**
+ Local resolution of ligands.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structures</th>
+      <th>Map 1 (Å)</th>
+      <th>Map A (Å)</th>
+      <th>Map B (Å)</th>
+      <th>Map C1 (Å)</th>
+      <th>Map C2 (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall Resolution</td>
+      <td>3.00</td>
+      <td>3.50</td>
+      <td>3.50</td>
+      <td>3.50</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <td>eIF5-NTD</td>
+      <td>3.15</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>3.80</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <td>eIF1A</td>
+      <td>3.00</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>3.70</td>
+      <td>3.10</td>
+    </tr>
+    <tr>
+      <td>eIF2α</td>
+      <td>3.65</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>4.15</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>eIF2β</td>
+      <td>nd*</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>9.40</td>
+      <td>&gt;15</td>
+    </tr>
+    <tr>
+      <td>eIF2γ</td>
+      <td>8.15</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>8.00</td>
+      <td>8.10</td>
+    </tr>
+    <tr>
+      <td>tRNAi</td>
+      <td>3.20</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>3.65</td>
+      <td>3.20</td>
+    </tr>
+    <tr>
+      <td>ASL + mRNA(−4 to + 4)</td>
+      <td>2.95</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>3.45</td>
+      <td>3.15</td>
+    </tr>
+    <tr>
+      <td>eIF3 PCI domains</td>
+      <td>nd</td>
+      <td>7.80</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>eIF3b/eIF3a-cterm</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>7.25</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+    <tr>
+      <td>eIF3b-cterm/eIF3i/eIF3g</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>12.20</td>
+      <td>nd</td>
+      <td>nd</td>
+    </tr>
+  </tbody>
+</table>
+
+_*nd – not determined_
+
+**Table 3.**
+ Contribution of non-crosslinked (157,868 particles) and crosslinked (113,838 particles) datasets to each map.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structures Number of particles (% of the total) and resolution in Å</th>
+      <th>Map 1</th>
+      <th>Map A</th>
+      <th>Map B</th>
+      <th>Map C1</th>
+      <th>Map C2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-crosslinked</td>
+      <td>157,868 (58%) ; 3.00</td>
+      <td>23,219 (8.5%) ; 3.70</td>
+      <td>25,761 (9.5%) ; 3.60</td>
+      <td>27,012 (10%) ; 3.60</td>
+      <td>99,229 (36.5%) ; 3.10</td>
+    </tr>
+    <tr>
+      <td>Crosslinked</td>
+      <td>-</td>
+      <td>30,651 (11.5%) ; 4.30</td>
+      <td>28,938 (10.5%) ; 4.35</td>
+      <td>47,760 (17.5%) ; 4.30</td>
+      <td>37,874 (13.5%) ; 4.05</td>
+    </tr>
+    <tr>
+      <td>Merged</td>
+      <td>157,868 (58%) ; 3.00</td>
+      <td>53,870 (20%) ; 3.50</td>
+      <td>54,699 (20%) ; 3.50</td>
+      <td>74,772 (27.5%) ; 3.50</td>
+      <td>137,103 (50%) ; 3.10</td>
+    </tr>
+  </tbody>
+</table>
+
 In Map 1, the occupancies for eIF3, eIF2γ, eIF2β and the acceptor arm of the tRNAi are rather low. In order to observe the location of these ligands on the py48S-eIF5N, a larger data set and extensive 3D classification using different masks was employed to obtain multiple py48S-eIF5N maps (Maps A, B, C1 and C2) showing clear densities for eIF1A, eIF3, TC (including eIF2β), eIF5 and mRNA (Figure 1—figure supplement 1; see Materials and methods). Densities corresponding to the eIF5-CTD and eIF4 factors were not observed in any of these py48S-eIF5N maps, which presumably reflects the flexibility or dynamic nature of these domains/factors in the 48S PIC during the later steps of initiation.
 
-## The eIF5-NTD replaces eIF1 on the 40S platform near the P site
+### The eIF5-NTD replaces eIF1 on the 40S platform near the P site
 
 A clear and distinct density for an ‘eIF1-like’ domain was observed at the top of h44 near the P site (Figure 2A), but fitting the known eIF1 structure into this density as seen in previous py48S-maps (Hussain et al., 2014; Llácer et al., 2015) could not account for all of it (Figure 2B). Also, there was no density to account for the C-terminal β-strand of eIF1. Moreover, close inspection revealed discrepancies between the densities and side chains of eIF1, particularly for β-hairpin one at the P site. Together, the known structural similarity of the eIF5-NTD with eIF1 (Conte et al., 2006) (Figure 2—figure supplement 1A–B), our previous suggestion that the eIF5-NTD might occupy the position of eIF1 on the 40S following eIF1 dissociation (Nanda et al., 2009), and our previous demonstration that the eIF5-NTD can bind directly to the 40S subunit (Nanda et al., 2013), all prompted us to place the structure of eIF5-NTD (PDB: 2E9H) into the unassigned density on the 40S platform. The eIF5-NTD structure accounted for the entire density, including the zinc-binding domain (ZBD) absent in eIF1 (Figure 2B), and the high resolution of the map enabled us to unambiguously model the eIF5-NTD at the atomic level (Figure 1—figure supplement 3C and Figure 2—figure supplement 2).
 
 The eIF5-NTD binds on the platform at essentially the same location occupied by eIF1 in previous py48S structures (Figure 2A,C and Figure 2—figure supplement 1C–F and Video 1), interacting with 18S rRNA residues in h44 (1760; S. cerevisiae numbering), h45 (1780 and 1781) and h24 (994, 995, 1001, 1002 and 1004). In this position, eIF5-NTD interacts with eIF1A, as does eIF1 in other py48S structures; and also makes limited contacts with eIF2β and eIF2γ (Figure 2—figure supplement 1C). However, residue Arg15 of eIF5-NTD (essential for its GAP activity; (Algire et al., 2005)) is positioned more than 10 Å away from the bound GTP analog in eIF2γ (Figure 2—figure supplement 1D). Accordingly, this position and conformation of the eIF5-NTD does not appear compatible with the GAP activity of eIF5. Given that GTP hydrolysis occurs in the scanning complex but Pi release requires eIF1 dissociation (Algire et al., 2005), and noting that eIF1 is absent and replaced by eIF5-NTD, we presume that this complex represents a state following both GTP hydrolysis and eIF1 dissociation but that the use of non-hydrolyzable GDPCP has prevented Pi release.
 
+![Video 1.](https://cdn.elifesciences.org/articles/39273/elife-39273-video1.mp4.jpg)
+
+**Video 1.:** Detailed contacts of eIF5-NTD with other elements of the 48S complex are also shown.
+
 Multiple residues in the eIF5-NTD, including Lys24, Gly27, Arg28, Gly29, Asn30, and Gly31 (in β-hairpin 1), and Lys71 and Arg73 (in β-hairpin 2), make multiple contacts with the anticodon stem loop (ASL) of the tRNAi (Figure 2A, Figure 2—figure supplement 1C, Figure 2—figure supplement 2A,B), and these contacts are more extensive and more favorable than are those made by the structurally analogous β-hairpins 1 and 2 of eIF1 in py48S (Figure 2—figure supplement 1E,F and Video 1) (Hussain et al., 2014). Interestingly, β-hairpin 1 of eIF5-NTD is positioned in the mRNA channel at the P site and monitors the codon:anticodon interaction in a similar fashion as the β-hairpin 1 of eIF1 (Figure 2A,C)(Hussain et al., 2014; Martin-Marcos et al., 2013). The conserved Asn30 in β-hairpin 1 of eIF5 makes contacts with both the codon and anticodon (Figure 2A,C, Figure 2—figure supplement 2A). However, in eIF5-NTD the β-hairpin one is shorter and contains three Gly residues compared to only one Gly in the case of eIF1. Gly27, Gly29 and Gly31 are closely packed against the ASL (Figure 2A) and any larger residue would create a steric clash with the ASL. The β-hairpin 2 of eIF5-NTD is also three residues shorter than that of eIF1 and is oriented away from the tRNAi to allow the latter to be tilted more toward the 40S body compared to previous py48S complexes that contain eIF1 (Hussain et al., 2014) (Figure 2C–E and Video 1).
 
 A superimposition of this structure containing eIF5-NTD with the previous py48S structure containing eIF1 (Hussain et al., 2014) reveals that eIF1 would sterically clash with tRNAi at its position in py48S-eIF5N (Figure 2D–E and Video 1) indicating a further accommodation of the tRNAi in the P site after dissociation of eIF1. Of the various eukaryotic py48S complexes containing eIF2, the structure here shows the maximum degree of tRNAi accommodation and tilt toward the 40S body (Figure 2C). This tRNAi tilt toward the body is also similar to that found in eukaryotic 80S initiation complexes containing eIF5B (Figure 2—figure supplement 3A) (Fernández et al., 2013; Yamamoto et al., 2014). Given that the affinity of TC for the PIC increases when eIF1 is ejected after AUG recognition (Passmore et al., 2007; Nanda et al., 2013), the tRNAi conformation observed in the present complex probably represents its most stable conformation, and it is conceivable that eIF5-NTD participates in this stabilization via its interaction with the ASL.
 
-## eIF5-NTD substitutions at the codon:anticodon interface alter the stringency of AUG start-codon selection in vivo
+### eIF5-NTD substitutions at the codon:anticodon interface alter the stringency of AUG start-codon selection in vivo
 
 To examine the physiological significance of the direct contacts observed between the eIF5-NTD and the start codon and ASL, specific residues were selected for mutagenesis based on their proximity to tRNAi or 18S rRNA in the PIC (Figure 3A–B and Figure 3—figure supplement 1). Mutations were generated in the gene coding for eIF5 harboring a C-terminal FLAG epitope (the TIF5-FL allele), on a LEU2 plasmid, and introduced into a his4-301 tif5Δ strain lacking chromosomal TIF5 and carrying WT TIF5 on a URA3 vector. The his4-301 mutation confers auxotrophy for histidine (His-) owing to the absence of the AUG start codon of the WT HIS4 allele, which can be suppressed by error-inducing Sui- mutations that allow utilization of the third, UUG triplet as start codon, including the eIF1 mutation sui1-L96P (Martin-Marcos et al., 2011) (Figure 3—figure supplement 2A). Hence, by determining effects of the eIF5 mutations on the histidine requirement of the resulting his4-301 strains, we could determine their effects on accurate start-codon recognition in vivo (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig3-v4.jpg)
+
+**Figure 3.:** (A) Location of the eIF5 residues substituted in genetic studies, highlighted in red and shown as spheres. (B) Summary of eIF5-NTD residues substituted by TIF5 mutations (col. 1), their interactions in py48S-eIF5N (col. 2), the amino acid substitutions introduced (col. 3), and the observed Sui- or Ssu- phenotypes in vivo (col. 4) revealed by results in (C or D). (C) Slg- and His+/Sui- phenotypes were determined for derivatives of his4-301 tif5Δ strain ASY100 harboring the indicated TIF5-FL alleles on LEU2 plasmids. Ten-fold serial dilutions of the strains were spotted on synthetic complete medium lacking leucine (SC-L) and supplemented with 0.3 mM histidine (+His), and incubated for 1d (D1) or 2d (D2) at 30°C. To assess the effect of TIF5 substitutions on start-codon recognition, the strains were transformed with HIS4-lacZ reporter plasmids containing AUG (p367) or UUG (p391) start codons. Cells were cultured in SC medium lacking leucine and uracil at 30°C and β-galactosidase activities were measured in whole cell extracts (WCEs). Ratios of β-galactosidase expressed from the UUG to AUG reporter were calculated from four independent transformants and mean ratios and S.E.M.s (error bars) are reported on the right. Ratios indicating Sui- phenotypes are highlighted in lime green. (D) Strains described in (C) were transformed with SUI3-2 plasmid pRSSUI3-S264Y-W (rows 2–11) or empty vector (row 1). Slg- and His+/Sui- phenotypes were determined by spotting the 10-fold serial dilutions of strains on SC medium lacking leucine and tryptophan and supplemented with either 0.3 mM histidine (+His) or 0.0003 mM histidine (1% His), and incubated for 1d (D1) or 2d (D2) for +His medium and 6d for 1% His medium, at 30°C. The HIS4-lacZ initiation ratios, were determined as in (B) except the cells were grown in SC medium lacking leucine, uracil and tryptophan. Ratios indicating Sui- (lime green) or Ssu- (pink) phenotypes are highlighted. See also Figure 3—figure supplements 1 and 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Schema depicting wild-type HIS4 mRNA (A) and his4-303 mRNA containing an ACG replacement of the AUG start codon, which diminishes translation of the HIS4-encoded histidine biosynthetic enzyme and prevents cell growth on medium lacking a histidine supplement—the His- phenotype (B) Mutations in various genes encoding initiation factors confer a Sui- (Suppressor of initiation codon mutations) phenotype by suppressing the effects of the his4-303 mutation and enabling increased initiation at the third, in-frame UUG codon, thus restoring a level of his4-303 mRNA translation and attendant histidine biosynthesis sufficient for growth in the absence of a histidine supplement (His+ phenotype). Sui- mutations render start-codon selection hypoaccurate (C) Mutations conferring an Ssu- (Suppressor of Sui- mutations) phenotype suppress the effects of a Sui- mutation in the same or different gene by diminishing initiation at the third UUG codon of his4-303 mRNA, thereby reinstating a histidine requirement (His- phenotype). Ssu- mutations render start-codon selection hyperaccurate (D). (E) Matched HIS4-lacZ reporters containing AUG or UUG as initiation codon are used to quantify hypoaccuracy (Sui-) or hyperaccuracy (Ssu-) phenotypes by calculating the ratio of expression from the UUG vs. AUG reporters measured in the same strains.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig3-figsupp2-v4.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Strains ASY101, PMY30 and PMY33 with the indicated relevant genotypes (rows 1–3, respectively) were spotted on SC-L medium supplemented with 0.3 mM histidine (+His) or 0.0003 mM histidine (1% His), and incubated for 1d or 2d (+His) or 6d (1% His) at 30°C. (B–C) Ssu- and Sui- substitutions do not alter expression of FLAG-tagged eIF5 proteins. Derivatives of his4-301 tif5Δ strain ASY100 containing the indicated TIF5-FL alleles on sc LEU2 plasmids and harboring only chromosomal WT SUI3 (B) or also plasmid-borne SUI3-2 (C) were cultured in SC medium lacking leucine (B) or leucine and tryptophan (C). WCEs were prepared using trichloroacetic acid, resolved by SDS-PAGE and immunoblotted using antibodies against FLAG epitope or Gcd6. (D) Dominant Slg- and His+/Sui- phenotypes were determined for derivatives of his4-301 tif5Δ strain ASY100 harboring WT TIF5, URA3 plasmid p3342, the indicated TIF5-FL alleles on LEU2 plasmids, and either SUI3-2 plasmid pRSSUI3-S264Y-W (rows 2–7) or empty vector (row 1). Ten-fold serial dilutions were spotted on SC media lacking leucine, tryptophan and uracil supplemented either with 0.3 mM histidine (+His) or 0.0003 mM histidine (1% His) and incubated for 3d (+His) or 6d (1% His) at 30°C. (E) Strains harbouring the indicated TIF5-FL alleles and either SUI3-2 plasmid pRSSUI3-S264Y-W (rows 2–4) or empty vector (row 1) were analyzed as in (D) except that cells were spotted on SC media lacking leucine and tryptophan. HIS4-lacZ initiation ratios were determined in these strains as in Figure 3C. The Ssu- phenotype of -R28A is highlighted in pink.
 
 After plasmid-shuffling to evict WT TIF5, we found that all mutant strains were viable, but that the strains carrying TIF5-FL alleles -R28E, -N30E, -K55E, and -K142E displayed slow-growth (Slg-) phenotypes of varying degrees compared to the WT TIF5-FL strain (Figure 3C;+His (D1)). None of the mutations conferred any marked differences in steady-state expression of the FLAG-tagged eIF5 proteins (Figure 3—figure supplement 2B,C). None of the mutants exhibited a His+ phenotype on media lacking His or containing only 1% of the His used to fully supplement the auxotrophy (data not shown), suggesting the absence of marked Sui- hypoaccuracy phenotypes. However, assaying β-galactosidase expressed from matched HIS4-lacZ reporters with either AUG or UUG start codons revealed that E26K, K142E, G29R and N30R conferred ~2-, 3-, 4- and 8-fold increases in the UUG:AUG ratio, respectively (Figure 3C, HIS4-lacZ UUG:AUG, rows 7–10 vs. 1). The absence of a His+ phenotype for these mutations might result from a failure to increase the UUG:AUG ratio above a critical threshold level (Martin-Marcos et al., 2013); the strong slow-growth (Slg-) phenotype of K142E would likely also impede growth on –His or 1% His medium.
 
@@ -74,13 +414,134 @@ The TIF5-FL alleles E26K, G29R and N30R, which elevate the UUG:AUG ratio in othe
 
 It is noteworthy that substitutions of G29 introducing positively charged residues decrease initiation accuracy, whereas substitutions with negatively charged residues increase accuracy (Figure 3C–D). These findings are consistent with the idea that introducing a positive charge at the interface with tRNAi enhances electrostatic attraction with the ASL to stabilize the PIN state at UUG start codons, whereas a negatively charged side-chain at this position destabilizes PIN through electrostatic repulsion with the ASL to preferentially diminish selection of UUG codons, which form mismatched duplexes with the tRNAi ASL. The same reasoning can explain the opposite phenotypes of the Arg and Glu substitutions of N30 (Figure 3C–D, N30E, N30R); and as noted above, the hyperaccuracy phenotype of R28E and hypoaccuracy phenotype of E26K. The fact that R73A and R28A also confer hyperaccuary phenotypes without introducing electrostatic repulsion underscores the importance of the native contacts of R28 and R73 with the tRNAi ASL in stabilizing PIN. Together, the genetic data provide strong evidence that the contacts between the eIF5-NTD and the tRNAi ASL visualized in the cryo-EM structure are crucial for a WT stringency of start-codon recognition in vivo.
 
-## eIF5-NTD substitutions at the codon:anticodon interface alter the influence of the start codon on transition to the closed PIC conformation
+### eIF5-NTD substitutions at the codon:anticodon interface alter the influence of the start codon on transition to the closed PIC conformation
 
 We have previously shown that monitoring dissociation of fluorescently labeled eIF1A from 48S PICs using fluorescence anisotropy is a useful tool to distinguish between open/POUT and closed/PIN conformations of the PIC (Saini et al., 2014; Maag et al., 2006). Although dissociation of eIF1A from the PIC at this stage of the initiation process is slow and does not appear to be a physiologically relevant event, it does report on the relative abundance and stability of the open and closed states of the complex (Figure 4A). In WT PICs, dissociation of eIF1A occurs with biphasic kinetics, with the fast phase reflecting complexes in the open state, in which eIF1A is less stably bound, and the slow phase reflecting the more stable, closed state. The ratio of amplitudes of the slower phase (a2) over the fast phase (a1) is taken as the apparent equilibrium constant between the closed and open states (a2/a1) and is referred to as ‘Kamp’. As observed in previous studies, with WT complexes Kamp is higher when the model mRNA has an AUG start codon (mRNA(AUG)) than when it has a near-cognate UUG codon (mRNA(UUG)) (5.9 vs. 3.2; Table 4A, rows 1–2), consistent with the closed state being more favored in the former case than in the latter. This effect is also reflected in the rate constants for the fast (k1) and slow (k2) phases, which are both higher for complexes assembled on mRNA(UUG) than on mRNA(AUG) (6 vs. 22 × 10−3 s−1 and 0.4 vs. 2.1 × 10−3 s−1, respectively; Table 4A and Figure 4B), indicating that eIF1A is less stably bound in both the open and closed states in complexes assembled on a near-cognate start codon. Consistent with this interpretation, the fluorescence anisotropy of the C-terminal fluorescein moiety on eIF1A is higher in complexes assembled on mRNA(AUG) (Rbound = 0.21) than on mRNA(UUG) (Rbound = 0.18) (Table 4A, rows 1–2). Because higher fluorescence anisotropies indicate less freedom of rotation of the fluorophore, these data indicate that a 'tighter', more constrained complex is preferentially formed on mRNA containing the cognate AUG codon.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig4-v4.jpg)
 
-**Figure 4.:** - mutants stabilize the closed conformation of the PIC at UUG codons.Dissociation of fluorescein-tagged eIF1A from 43S·mRNA complexes reconstituted with model mRNAs containing an AUG or UUG start codon and either WT or Sui- variants of eIF5 was monitored as decrease in fluorescence anisotropy over time after addition of excess unlabeled eIF1A. The data were fit with a double exponential decay equation. (A) Schematic of the eIF1A dissociation assay. PICs are assembled with fluorescein-labeled eIF1A (15 nM) and then dissociation of the labeled factor is initiatied with a chase of 66-fold excess unlabeled eIF1A (1 μM). The fast phase (kfast) of the dissociation of eIF1A-Fl reflects release from the open state of the PIC, where as the second, slower phase (kslow) reflects dissociation from the closed state of the PIC. (B) eIF1A dissociation from 48S PICs assembled with WT eIF5 (blue) or eIF5-G31R (red) and mRNAs with an AUG (closed circles) or UUG (closed squares) start codons. (C–E) eIF1A dissociation from PICs containing WT eIF5 (blue) or the indicated mutant eIF5 (red) and mRNAs with AUG (closed circles) or UUG (closed squares) start codons, for eIF5-N30R (C), eIF5-G29R (D), or eIF5-E26K (E). The curves shown are representative experiments. Mean kinetic parameters and average deviations from multiple, independent experiments are presented in Table 4.10.7554/eLife.39273.021Figure 4—source data 1.
+**Figure 4.:** Dissociation of fluorescein-tagged eIF1A from 43S·mRNA complexes reconstituted with model mRNAs containing an AUG or UUG start codon and either WT or Sui- variants of eIF5 was monitored as decrease in fluorescence anisotropy over time after addition of excess unlabeled eIF1A. The data were fit with a double exponential decay equation. (A) Schematic of the eIF1A dissociation assay. PICs are assembled with fluorescein-labeled eIF1A (15 nM) and then dissociation of the labeled factor is initiatied with a chase of 66-fold excess unlabeled eIF1A (1 μM). The fast phase (kfast) of the dissociation of eIF1A-Fl reflects release from the open state of the PIC, where as the second, slower phase (kslow) reflects dissociation from the closed state of the PIC. (B) eIF1A dissociation from 48S PICs assembled with WT eIF5 (blue) or eIF5-G31R (red) and mRNAs with an AUG (closed circles) or UUG (closed squares) start codons. (C–E) eIF1A dissociation from PICs containing WT eIF5 (blue) or the indicated mutant eIF5 (red) and mRNAs with AUG (closed circles) or UUG (closed squares) start codons, for eIF5-N30R (C), eIF5-G29R (D), or eIF5-E26K (E). The curves shown are representative experiments. Mean kinetic parameters and average deviations from multiple, independent experiments are presented in Table 4.
+
+**Table 4.**
+ Kinetic parameters for dissociation of eIF1A from 48S PIC
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">(A) Kinetic parameters for dissociation of eIF1A from 48S PIC in presence of eIF5 Sui- mutants</th>
+    </tr>
+    <tr>
+      <th>eIF5 variants</th>
+      <th>mRNA</th>
+      <th>k1 (open) (x10−3 s−1)</th>
+      <th>k2 (closed) (x10−3 s−1)</th>
+      <th>a1 (open)</th>
+      <th>a2 (closed)</th>
+      <th>Kamp* (a2/a1)</th>
+      <th>Rbound†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">WT</td>
+      <td>AUG</td>
+      <td>6 ± 1</td>
+      <td>0.4 ± 0.05</td>
+      <td>0.15 ± 0.02</td>
+      <td>0.85 ± 0.02</td>
+      <td>5.9</td>
+      <td>0.2105 ± 0.002</td>
+    </tr>
+    <tr>
+      <td>UUG</td>
+      <td>22 ± 4</td>
+      <td>2.1 ± 0.3</td>
+      <td>0.24 ± 0.02</td>
+      <td>0.76 ± 0.02</td>
+      <td>3.2</td>
+      <td>0.1820 ± 0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G31R</td>
+      <td>AUG</td>
+      <td>18 ± 3</td>
+      <td>3.0 ± 0.4</td>
+      <td>0.33 ± 0.03</td>
+      <td>0.67 ± 0.03</td>
+      <td>2.1</td>
+      <td>0.1915 ± 0.001</td>
+    </tr>
+    <tr>
+      <td>UUG</td>
+      <td>7.0 ± 1.5</td>
+      <td>0.5 ± 0.02</td>
+      <td>0.13 ± 0.01</td>
+      <td>0.87 ± 0.02</td>
+      <td>6.9</td>
+      <td>0.2025 ± 0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">N30R</td>
+      <td>AUG</td>
+      <td>10.0 ± 1.0</td>
+      <td>1.5 ± 0.3</td>
+      <td>0.50 ± 0.1</td>
+      <td>0.50 ± 0.1</td>
+      <td>1.0</td>
+      <td>0.2030 ± 0.002</td>
+    </tr>
+    <tr>
+      <td>UUG</td>
+      <td>6.0 ± 1.0</td>
+      <td>0.5 ± 0.1</td>
+      <td>0.30 ± 0.05</td>
+      <td>0.70 ± 0.05</td>
+      <td>2.3</td>
+      <td>0.2100 ± 0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G29R</td>
+      <td>AUG</td>
+      <td>20 ± 3.0</td>
+      <td>1.5 ± 0.4</td>
+      <td>0.40 ± 0.02</td>
+      <td>0.60 ± 0.02</td>
+      <td>1.5</td>
+      <td>0.1885 ± 0.001</td>
+    </tr>
+    <tr>
+      <td>UUG</td>
+      <td>6.0 ± 1.6</td>
+      <td>0.6 ± 0.1</td>
+      <td>0.20 ± 0.03</td>
+      <td>0.80 ± 0.03</td>
+      <td>4.0</td>
+      <td>0.1925 ± 0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="2">E26K</td>
+      <td>AUG</td>
+      <td>17 ± 2.6</td>
+      <td>0.9 ± 0.05</td>
+      <td>0.23 ± 0.02</td>
+      <td>0.77 ± 0.02</td>
+      <td>3.5</td>
+      <td>0.1835 ± 0.001</td>
+    </tr>
+    <tr>
+      <td>UUG</td>
+      <td>8.0 ± 1.5</td>
+      <td>0.4 ± 0.05</td>
+      <td>0.16 ± 0.01</td>
+      <td>0.84 ± 0.01</td>
+      <td>5.2</td>
+      <td>0.1900 ± 0.002</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Higher values of Kamp indicate that a greater proportion of the complexes are in the closed state (Saini et al., 2014).†Higher values of Rbound indicate that more complexes are in the constrained, closed state ( Saini et al., 2014)._
 
 Using this system, we sought to determine the mechanistic impact of substitutions in the eIF5 residues that are in proximity to the start codon:tRNAi anticodon helix. As described above, in the presence of WT eIF5, eIF1A is more stably bound to the PIC with mRNA(AUG) than mRNA(UUG) (Figure 4B blue closed circles versus blue closed squares) with a relatively higher Kamp for mRNA(AUG) (Table 4A; rows 1–2), indicating a greater preponderance of complexes in the closed state. As observed previously (Saini et al., 2014; Maag et al., 2006), the G31R-eIF5 substitution, which has a strong, dominant Sui- hypoaccuracy phenotype in vivo, inverts the effect of an AUG versus UUG start codon on the dissociation kinetics (Figure 4B red closed circles versus red closed squares). In contrast to WT eIF5, PICs containing G31R eIF5 have higher Kamp values at UUG than AUG start codons (Table 4A, rows 3–4), thus indicating the closed state of the PIC is favored in the former case relative to the latter, consistent with the Sui- hypoaccuracy phenotype. Similarly, k1 and k2 values are lower for PICs assembled with G31R on UUG start codons than on AUG codons (k1 values 18 and 7 × 10−3 s−1, and k2 values 3.0 and 0.5 × 10−3 s−1, for AUG and UUG, respectively; Table 4A, rows 3–4 versus 1–2). The Rbound values also invert, becoming 0.19 and 0.20 for AUG and UUG, respectively (Table 4A, rows 3–4 versus 1–2). These results are consistent with the placement of the G31 residue directly across from the first position of the codon:anticodon helix (Figure 2A), where an arginine substitution could stabilize the formation of a U:U mismatch and the closed/PIN state of the complex.
 
@@ -90,19 +551,62 @@ We also determined the effects of substitutions in the eIF5-NTD at the same or n
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39273/elife-39273-fig5-v4.jpg)
 
-**Figure 5.:** - mutants destabilize the closed conformation of the PIC and accelerate Pi release at UUG codons in the presence of the SUI3-2 Sui- variant of eIF2.(A–D) eIF1A dissociation kinetics experiments conducted as in Figure 4 for PICs assembled with mRNAs containing AUG (closed circles) or UUG (closed squares) start codons and the following forms of eIF2 and eIF5: (A) WT eIF2/WT eIF5 (blue) or Sui3-2 eIF2/WT eIF5 (red); (B) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-R28A (blue); (C) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-G29E (blue); (D) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-N30E (blue). The curves shown are representative experiments. Mean kinetic parameters and average deviations from multiple, independent experiments are presented in Table 4. (E) Schematic of Pi release experiment (see Materials and methods). (F–G) Rates of Pi release from PICs assembled with mRNAs containing AUG (green) or UUG (orange) start codons and the indicated WT or mutant variants of eIF5. WT eIF2 was employed in (F), whereas Sui3-2 eIF2 was used in (G). Error bars depict average deviations.10.7554/eLife.39273.024Figure 5—source data 1.
+**Figure 5.:** (A–D) eIF1A dissociation kinetics experiments conducted as in Figure 4 for PICs assembled with mRNAs containing AUG (closed circles) or UUG (closed squares) start codons and the following forms of eIF2 and eIF5: (A) WT eIF2/WT eIF5 (blue) or Sui3-2 eIF2/WT eIF5 (red); (B) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-R28A (blue); (C) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-G29E (blue); (D) Sui3-2 eIF2/WT eIF5 (red) or Sui3-2 eIF2/eIF5-N30E (blue). The curves shown are representative experiments. Mean kinetic parameters and average deviations from multiple, independent experiments are presented in Table 4. (E) Schematic of Pi release experiment (see Materials and methods). (F–G) Rates of Pi release from PICs assembled with mRNAs containing AUG (green) or UUG (orange) start codons and the indicated WT or mutant variants of eIF5. WT eIF2 was employed in (F), whereas Sui3-2 eIF2 was used in (G). Error bars depict average deviations.
 
 With 48S PICs assembled with eIF2β-S264Y, the eIF5 variants R28A, G29E, and N30E increased the overall rate of eIF1A dissociation with mRNA(UUG) as compared to the native eIF5 (Figure 5B–D, blue squares versus red squares). These substitutions decrease the occupancy of the closed complex at UUG start codons, as indicated by the decreased Kamp values on UUG relative to AUG start codons compared to the case with eIF2β-S264Y PICs containing WT eIF5 (Table 4B, rows 5–10). The N30E and R28E derivatives of eIF5 also increase k2 values for complexes with UUG by ~2 fold (Table 4B, rows 3–4 and rows 7–10), indicating that these substitutions destabilize eIF1A binding to the closed state of the PIC at UUG start codons. All four hyperaccurate Ssu- eIF5 variants also increase k1 with both UUG and AUG codons, suggesting they destabilize eIF1A binding to the open state of the PIC. In all cases, the substitutions partially or completely restore the difference in Rbound values between AUG and UUG complexes that was eliminated by the eIF2β-S264Y mutant with WT eIF5 (Table 4B, rows 3–10 versus 1–2). Taken together, these results suggest that the hyperaccurate Ssu- eIF5 suppressors of SUI3-2 eIF2 revert the equilibrium back toward the open/POUT conformation of the PIC at UUG codons while promoting the closed/PIN conformation at AUG codons.
 
-## eIF5-NTD substitutions at the codon:anticodon interface alter the coupling of Pi release to start-codon recognition
+### eIF5-NTD substitutions at the codon:anticodon interface alter the coupling of Pi release to start-codon recognition
 
 We next checked the effect of the eIF5 substitutions on the rate of phosphate (Pi) release from eIF2 in the PIC in response to recognition of cognate AUG and near-cognate UUG start codons (Figure 5E). Pi release is a late step in start-codon recognition and is gated by eIF1 release and movement of the eIF1A-CTT closer to the eIF5-NTD. It is thought to help commit the PIC to initiation at the selected point on the mRNA. Previous studies have shown that Pi release is influenced by the nature of the start codon in the mRNA, with a higher rate observed from PICs assembled on AUG start codons as compared to PICs on near-cognate UUG codons (Algire et al., 2005; Saini et al., 2014).
 
 In accordance with earlier studies (Saini et al., 2014; Algire et al., 2005), we observed that the kinetics of Pi release is 2- to 3-fold faster in response to AUG as compared to UUG start codons (kobs values of 0.60 s−1 versus 0.26 s−1) (Figure 5F; Table 5A, row 1). This trend is reversed when the Sui- hypoaccurate G31R eIF5 mutant replaces the WT factor, with a kobs of 0.6 s−1 for PICs assembled on UUG codons versus 0.3 s−1 for complexes on AUG codons (Figure 5F; Table 5A, row 2). This result is consistent with previous observations (Saini et al., 2014) and the Sui- hypoaccuracy phenotype of the G31R mutant. Similarly, all of the new Sui- hypoaccuracy substitutions in eIF5 (N30R, G29R, and E26K) suppress the rate of Pi release from the PIC in response to recognition of cognate AUG start codons and/or enhance it in response to near-cognate UUG codons (Figure 5F, compare green and orange bars; Table 5A, rows 3–5). These results are consistent with the conclusion that these substitutions that increase the positive charge on the eIF5-NTD in the region of the codon:anticodon helix stabilize the closed state of the PIC at UUG codons, while destabilizing it at AUG codons. Thus, in accordance with the eIF1A dissociation kinetics results described above, the Pi release kinetics for the positive charge eIF5 substitutions help explain their Sui- hypoaccuracy phenotypes observed in vivo.
 
+**Table 5.**
+ Kinetic parameters for Pi release from 48S PIC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">(A) Kinetic parameters for Pi release from 48S PIC with eIF5 Sui- mutants.</th>
+    </tr>
+    <tr>
+      <th>eIF5 Variants</th>
+      <th colspan="2">Rate of Pi release (s−1) AUG UUG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>0.60 ± 0.08</td>
+      <td>0.26 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>G31R</td>
+      <td>0.30 ± 0.04</td>
+      <td>0.60 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>N30R</td>
+      <td>0.16 ± 0.02</td>
+      <td>0.41 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>G29R</td>
+      <td>0.25 ± 0.03</td>
+      <td>0.55 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>E26K</td>
+      <td>0.50 ± 0.20</td>
+      <td>0.72 ± 0.06</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we monitored the kinetics of AUG- and UUG-triggered Pi release from PICs assembled with the Sui- hypoaccuracy variant eIF2β-S264Y (encoded by SUI3-2) mutant and either WT eIF5 or one of the hyperaccurate Ssu- variants described above (N30E, G29E, R28A). In agreement with the eIF1A dissociation kinetics results described above, the eIF2β-S264Y mutant normalizes the rate of Pi release from complexes assembled on UUG and AUG start codons (kobs values of 0.7 and 0.6 s−1, respectively; Figure 5G; Table 5B, row one versus Table 5A, row 1). Unlike the behavior of G31R eIF5, the eIF2β-S264Y mutant does not decrease the rate of Pi release with AUG start codons but instead only increases the rate with UUG codons (Figure 5G versus Figure 5F), suggesting that it specifically enhances the stability of the closed/PIN conformation of the PIC at near-cognate (UUG) codons. Consistent with their effects in the eIF1A dissociation assay, the hyperaccurate Ssu- eIF5 variants N30E, G29E and R28A all suppress the effect of eIF2β-S264Y by decreasing the rate of Pi release from UUG start codons ~ 2 fold (kobs values between 0.3–0.4 s−1, Table 5B, rows 2–4) versus the rate observed with WT eIF5 (kobs of 0.7 s−1, Table 5B, row 1), restoring the preference for AUG start codons. These results support the proposal that these substitutions, which increase the negative charge or decrease the positive charge in this region of the eIF5-NTD, destabilize the closed/PIN state of the PIC at near-cognate codons.
 
-## Stabilization of codon-anticodon interaction by the ribosome, eIF5, eIF2α and eIF1A in py48S-eIF5N
+### Stabilization of codon-anticodon interaction by the ribosome, eIF5, eIF2α and eIF1A in py48S-eIF5N
 
 The py48S-eIF5N is locked into a single configuration with the exception of small movements of eIF2 subunits γ, β, and domain 3 (D3) of the α subunit around the acceptor arm of the tRNAi (see maps C1 and C2; Figure 6A,B and Figure 1—figure supplement 1). We observe an apparently greater accommodation of the codon-anticodon duplex in the P site (Figure 2C) in concert with stabilization of the ASL by other elements from the eIF5-NTD (noted above), the 40S body, the eIF1A-NTT and eIF2α-D3 (Figure 6C). In this regard, the ribosomal elements (R143 of 40S protein uS9 and rRNA bases from h44 and h31) involved in the stabilization of the codon-anticodon duplex at the P site described earlier for the py48S in the presence of eIF1 (Hussain et al., 2014) are also involved in py48S-eIF5N (Figure 6C). Moreover, a highly modified rRNA base at the 40S head (m1acp3ψ1191), not present in bacteria, plays a key role by providing a chair-like structure where the tip of the tRNAi ASL (C34) sits. Mutations in an enzyme involved in modifying this base are associated with a severe syndrome in humans (Meyer et al., 2011). Also, an ion (revealed as a spherical density) (Figure 1—figure supplement 3D) interacts with the phosphates of the U(+2) and G(+3) nucleotides of the AUG codon as well as the nearby rRNA residues G1150 and C1637, thereby playing a key structural role at the P site (Figure 6C). As in previous py48S structures in the PIN state (Llácer et al., 2015; Hussain et al., 2014), the eIF1A-NTT interacts with the codon-anticodon helix via Gly8-Gly9, which also allows the NTT to loop back towards the P site (Figure 6D). We are now able to visualize the entire NTT unambiguously except for the terminal Met1 residue. The NTT occupies the cleft in between the head and body of the 40S around the A and P sites, and several of its basic residues (Arg and Lys) establish contacts with rRNA residues from the 40S head and body (Figure 6D), essentially gluing them together to stabilize the closed conformation of the 48S. Recently, we established that substituting the conserved basic residues, as well as the yeast equivalents of eIF1A NTT residues identified as recurring substitutions in certain human uveal melanomas, decreases initiation at UUGs in vivo and selectively destabilizes PICs reconstituted at UUG codons in vitro (Martin-Marcos et al., 2017), as described above for eIF5-NTD hyperaccurate Ssu- substitutions.
 
@@ -110,11 +614,11 @@ The py48S-eIF5N is locked into a single configuration with the exception of smal
 
 **Figure 6.:** (A) Cartoon representation of the TC in Maps C1 and C2, resulting from superposition of the 40S body in the two maps. The tRNAi, mRNA, and each component of TC is colored differently for C1, whereas all components of C2 are in gray. (B) Cartoon representation of the TC in Map C1 and py48S-closed (PDB 3JAP), resulting from superposition of the 40S body in the two maps. The tRNAi, mRNA, and each component of TC is colored differently for C1, whereas all components from py48S-closed are in gray. (C) Cross-section of the 40S subunit along the mRNA path and tRNAi bound in the P site of py48S-eIF5N, viewed from the top of the 40S subunit. eIF1A, eIF2 and eIF5-NTD are also shown. Black box inset: Detailed view of the codon-anticodon and surrounding elements that stabilize this interaction. Ribosomal, tRNAi and eIF2α residues involved in the interaction with mRNA at (minus) positions 5’ of the AUG codon (+1) are also shown. Blue box inset: Spheres representation of the same region in (C) highlighting the close packing of mRNA from positions −4 to +3 with its stabilizing residues of the ribosome, tRNAi and eIF2α in the mRNA channel. (D) eIF1A NTT interactions with the codon-anticodon duplex and the 40S subunit in py48S-eIF5N.
 
-## Interactions with the Kozak sequence of mRNA in py48S-eIF5N
+### Interactions with the Kozak sequence of mRNA in py48S-eIF5N
 
 In addition to the start codon, the mRNA bases at −1 to −4 in the E-site corresponding to the Kozak consensus sequence (Kozak, 1986) are locked into a single conformation in py48S-eIF5N. Bases −1 to −4 adopt an unusual but stable conformation, in which the adenine base at −4 is flipped out toward the 40S body, and the next three adenines (−3 to −1) stack with one another and are sandwiched by the uS7 β-hairpin loop and G1150 (from h28, at the neck of the 40S) (Figure 6C). Moreover, Arg55 of eIF2α interacts with the A nucleotide at −3, as previously reported (Hussain et al., 2014; Pisarev et al., 2006); and the t6A37 base adjoining the tRNAi anticodon interacts with the A at −1 through its threonylcarbamyol modification and also stacks with the adenine base at the +1 position of the start codon (Figure 6C). Interestingly, the absence of t6A37 in yeast increases translation initiation at upstream non-AUG codons (Thiaville et al., 2016), and therefore plays a role in stringent selection of AUG as start codon. In S. cerevisiae, A nucleotides at the −4 to −1 positions are highly preferred, particularly the A at −3 (Zur and Tuller, 2013), and are known to promote AUG recognition (Martin-Marcos et al., 2011; Hinnebusch, 2017). Placement of this favorable mRNA sequence at the E-site and its attendant interactions with elements of the 40S, eIF2α, and tRNAi might pause the ribosome during scanning and help position the downstream AUG codon at the P site. Its indirect stabilization of the codon-anticodon duplex and, therefore, of the closed conformation of the 48S might also facilitate dissociation of eIF1 after AUG recognition and subsequent eIF5-NTD binding.
 
-## The path of mRNA and interaction with eIF3a at the mRNA exit channel of py48S-eIF5N
+### The path of mRNA and interaction with eIF3a at the mRNA exit channel of py48S-eIF5N
 
 We could model the mRNA in the py48S-eIF5N from positions −14 to +17, spanning the entire mRNA channel plus additional nucleotides protruding from the two channel openings on the solvent side of the 40S (Figure 7A). The last four nucleotides at the 3’ end and first 14 nucleotides at the 5’ end of the mRNA could not be modeled owing to lack of unambiguous high-resolution density. As previously reported (Hussain et al., 2014), we observe kinks between the A and P codons and P and E codons (Figure 6C). At the mRNA entry site (Figure 7B), the latch is closed (Figure 1—figure supplement 5) and the mRNA interacts with both elements from the head (uS3) and body (uS5 and h16) of the 40S. We recently showed that two conserved Arg residues in yeast uS3 in proximity to the mRNA (R116-R117) stabilize PIC:mRNA interaction at the entry channel, augmenting this activity of eIF3, and are crucial for efficient initiation at UUG codons and AUG codons in poor Kozak context in vivo (Dong et al., 2017). At the 3’ end, the mRNA does not protrude away from the ribosome but instead points upward and remains attached to the 40S head. Whether this reflects the limited length at the 3’ end of the mRNA used here or represents the true trajectory of the mRNA 3’ end remains to be determined. The fact that proteins like eIF3g and eIF4B, which can interact with both mRNA and proteins of the 40S head (Cuchalová et al., 2010; Walker et al., 2013), bind in this region may favor the latter hypothesis.
 
@@ -124,7 +628,7 @@ We could model the mRNA in the py48S-eIF5N from positions −14 to +17, spannin
 
 At the mRNA exit channel (Figure 7A), the mRNA interacts with uS7, uS11, eS17, eS26, eS28 and the 3’ end of the rRNA. At the exit channel pore, the −12 to −14 nucleotides of mRNA interact with the eIF3a-PCI domain, and interestingly, this interaction seems to change the trajectory of the mRNA at its 5’end (Figure 7A, black inset), as seen in Map A (Figure 1—figure supplement 1) containing higher eIF3 occupancy. In fact, an unassigned tubular density at the 5’ end of the modeled mRNA (Figure 7A, blue inset), which may correspond to part of the unmodeled first 14 nucleotides of the mRNA, approaches and lays on the electropositive surface of eIF3a. This possible interaction would be consistent with previous experiments showing cross-linking of mammalian eIF3a to the −11 to −17 positions in mRNA (Pisarev et al., 2008), and that the eIF3a-PCI is critical for stabilizing mRNA binding at the exit channel (Aitken et al., 2016).
 
-## eIF3 architecture in the py48S-eIF5N complex
+### eIF3 architecture in the py48S-eIF5N complex
 
 The eIF3 subunits in py48S-eIF5N are located entirely at the 40S solvent side, as in mammalian 43S structures (Bai et al., 2015; Hashem et al., 2013) and the yeast 40S-eIF1-eIF1A-eIF3 complex (Aylett et al., 2015), except for the N-terminal helical bundle of eIF3c, which is still located at the subunit interface (Figure 8A) as observed previously (Llácer et al., 2015). The density of eIF3 in py48S-eIF5N does not allow ‘de novo’ modeling of atomic coordinates, but it does permit rigid-body fitting of previously reported structures of eIF3 subunits. The eIF3a-eIF3c PCI heterodimer sits near the mRNA exit tunnel, whereas the quaternary complex of eIF3b/eIF3i/eIF3g/eIF3a-Cter is found near the mRNA entry channel (Figure 8A and B) as in the aforementioned previous structures. The eIF3 submodules are roughly in the same locations in py48S-eIF5N compared to previous structures (Aylett and Ban, 2017; Valášek et al., 2017). The eIF3a-Cterm helix likely helps to position the eIF3b β-propeller and RRM domains as it runs beneath the eIF3b β-propeller and also interacts with eIF3b-RRM domain (Figure 8B).
 
@@ -170,21 +674,21 @@ The results of this study allow us to propose a model (Figure 10) of probable st
 
 ## Materials and methods
 
-## Purification of ribosomes, mRNA, tRNA, and initiation factors
+### Purification of ribosomes, mRNA, tRNA, and initiation factors
 
 Kluyveromyces lactis 40S subunits were prepared as described earlier (Fernández et al., 2014). Saccharomyces cerevisiae eIF3 and eIF2 were expressed in yeast while eIF1, eIF1A, eIF5, eIF4A and eIF4B were expressed in Escherichia coli as recombinant proteins and purified as described (Acker et al., 2007; Mitchell et al., 2010). eIF4G1 was co-expressed with eIF4E in E. coli and both purified as a complex as previously described (Mitchell et al., 2010) with modifications. A Prescission cleavage site was introduced just before the eIF4G1 coding sequence on the reported expression plasmid (Mitchell et al., 2010) in order to cleave and remove the GST tag from eIF4G1. Wild type tRNAi was overexpressed and purified from yeast and aminoacylated as described (Acker et al., 2007). The mRNA expression construct comprised a T7 promoter followed by the 49-nt unstructured mRNA sequence of 5′-GGG[CU]3[UC]4UAACUAUAAAAAUG[UC]2UUC[UC]4GAU-3’ (with start codon underlined), cloned between XhoI and NcoI sites in a pEX-A2 plasmid (Eurofins Genomics). AUG context optimality was inferred from the sequences of highly expressed genes in yeast, as reported in Zur and Tuller, 2013. The mRNA was produced by T7 run-off transcription of the plasmid linearised by EcoRV (restriction site embedded in the mRNA sequence) according to a standard protocol. A 2 mL transcription reaction was resolved by electrophoresis on an 8M Urea, 12% acrylamide gel. A single mRNA band, visualized by UV light, was excised from the gel and mRNA was electro-eluted in TBE buffer, concentrated and buffer exchanged by dialisis into storage buffer (10 mM ammonium acetate, pH 5.0, 50 mM KCl). mRNA was capped with Vaccinia Capping System (New England Biolabs, M2080S) according to the manufacturer’s instructions and further purified on an 8M Urea, 12% acrylamide gel as described above. The final concentration of mRNA was determined by A260 measurement.
 
-## Reconstitution of the 48S complex
+### Reconstitution of the 48S complex
 
 First, a 43S mix was reconstituted by incubating 95 nM 40S subunits with eIF1, eIF1A, TC (consisting of eIF2, GDPCP and Met-tRNAi), eIF3 and eIF5 in 40S:eIF1:eIF1A:TC:eIF3:eIF5 molar ratios of 1:2.5:2.5:2:2:2.5, in 20 mM MES, pH 6.5, 80 mM potassium acetate, 10 mM ammonium acetate, 5–8 mM magnesium acetate, 2 mM dithiothreitol (DTT), 1 μM zinc acetate. Separately, an mRNA-eIF4 complex was prepared, containing eIF4G1, eIF4E, eIF4A, eIF4B and capped mRNA in molar ratios of 1.5:1.5:5:2:2.5 with respect to the 40S ribosome in the final 48S mix (see below), in 20 mM Hepes, pH 7.4, 100 mM potassium chloride, 5 mM magnesium chloride, 2 mM DTT, 3 mM ATP). The volume of the mRNA-eIF4 mix was five times smaller than the 43S mix volume. Both the 43S mix and the mRNA-eIF4 mix were incubated separately for 5 min at room temperature before mixing them together to produce a 48S mix. After incubation for 2 min at room temperature, the sample (at a 40S final concentration of 80 nM) was cooled to 4°C and used immediately to make cryo-EM grids without further purification. When formaldehyde was used to crosslink the 48S complex (as described below), a solution at 3% in 48S mix buffer (at 1% final concentration of formaldehyde) was used just prior to making the cryo-EM grids.
 
-## Electron microscopy
+### Electron microscopy
 
 Three μl of the 48S complex was applied to glow-discharged Quantifoil R2/2 cryo-EM grids covered with continuous carbon (of ~50 Å thick) at 4°C and 100% ambient humidity. After 30 s incubation, the grids were blotted for 2.5–3 s and vitrified in liquid ethane using a Vitrobot Mk3 (FEI).
 
 Automated data acquisition was done using the EPU software (FEI) on a Tecnai F30 Polara G2 microscope operated at 300 kV under low-dose conditions (35 e-/Å2) using a defocus range of 1.2–3.2 μm. Images of 1.1 s/exposure and 34 movie frames were recorded on a Falcon III direct electron detector (FEI) at a calibrated magnification of 104,478 (yielding a pixel size of 1.34 Å). Micrographs that showed noticeable signs of astigmatism or drift were discarded.
 
-## Analysis and structure determination
+### Analysis and structure determination
 
 The movie frames were aligned with MOTIONCORR (Li et al., 2013) for whole-image motion correction. Contrast transfer function parameters for the micrographs were estimated using Gctf (Zhang, 2016). Particles were picked using RELION (Scheres, 2012). References for template-based particle picking (Scheres, 2015) were obtained from 2D class averages that were calculated from particles picked with EMAN2 (Tang et al., 2007) from a subset of the micrographs. 2D class averaging, 3D classification and refinements were done using RELION-1.4 (Scheres, 2012). Both movie processing (Bai et al., 2013) in RELION-1.4 and particle ‘polishing’ was performed for all selected particles for 3D refinement. Resolutions reported here are based on the gold-standard FSC = 0.143 criterion (Scheres and Chen, 2012). All maps were further processed for the modulation transfer function of the detector, and sharpened (Rosenthal and Henderson, 2003). Local resolution was estimated using Relion and ResMap (Kucukelbir et al., 2014).
 
@@ -196,34 +700,34 @@ Then the particles from both datasets (non-crosslinked Sample 1 and crosslinked 
 
 To ensure that the addition of the crosslinker to the latter dataset was not producing undesirable artifacts, each of these four classes was divided again into two subsets using the particles belonging to the crosslinked/non-crosslinked datasets and were refined independently; in all cases, the maps were identical to each other but at lower resolution than the one with all particles combined (see Table 3).
 
-## Model building and refinement
+### Model building and refinement
 
 In all five maps, the conformations of 40S, eIF1A, eIF5-NTD, tRNA, mRNA and domains D1 and D2 of eIF2α are identical. Thus, modeling of all these elements was done in the higher resolution map (3.0 Å, non-crosslinked dataset only; Map 1), whereas maps resulting from local masked classifications were essentially used for model building of the various subunits/domains of eIF3 and of eIF2β and eIF2γ. In more detail, the atomic model of py48S in closed conformation (PDB: 3JAP) was placed into density by rigid-body fitting using Chimera (Pettersen et al., 2004). Then the body and head of the 40S were independently fitted. Wild type tRNAi was taken from PDB: 3JAQ for initial rigid-body fitting into its corresponding density. eIF3b subunit was taken from PDB: 4NOX and together with eIF3i and eIF3a C-term helix, placed into density by rigid-body fitting at the solvent side of the 40S in a position similar to that found previously (Brown et al., 2015). Possible residue numbering for eIF3a C-term helix is based on eIF3a secondary structure predictions and its known interactions with eIF3b and the eIF3b RRM domain (Chiu et al., 2010). Next, the NMR structure of the N-terminal domain of eIF5 (PDB: 2E9H) from Homo sapiens was docked into density using Chimera. Then, each chain of the model (including ribosomal proteins, rRNA segments, protein factors and tRNA and mRNA) was rigid-body fitted in Coot (Emsley et al., 2010) and further model building was also done in Coot v0.8.
 
 Model refinement was carried out in Refmac v5.8 optimized for electron microscopy (Brown et al., 2015), using external restraints generated by ProSMART and LIBG (Brown et al., 2015). All maps, including the one of highest resolution (Map 1) and maps A, B, C1 and C2 were used for refining. Average FSC was monitored during refinement. The final model was validated using MolProbity (Chen et al., 2010). Cross-validation against overfitting was calculated as previously described (Brown et al., 2015; Amunts et al., 2014). Refinement statistics for the last refinements, done in Map 1, are given in Table 1. All figures were generated using PyMOL (DeLano et al., 2006) Coot or Chimera.
 
-## Plasmid constructions
+### Plasmid constructions
 
 Plasmids used in the present study are listed in Supplementary file 1 Plasmid pAS5-101 harboring TIF5-FL (Saini et al., 2014), encoding eIF5 tagged with FLAG epitope at the C-terminus, was used as template for constructing TIF5 mutant alleles by fusion PCR. The resulting amplicons were inserted between the EcoRI and SalI sites of single-copy plasmid YCplac111, and the subcloned fragments of all mutant constructs were confirmed by DNA sequencing.
 
-## Yeast strain construction
+### Yeast strain construction
 
 Yeast strains used in this study are listed in Supplementary file 2 and were constructed by introducing the plasmid-borne TIF5 mutant alleles into the tif5Δ his4-301 strain ASY100 containing the TIF5, URA3 plasmid p3342, which was subsequently evicted by counter-selection on medium containing 5-fluoro-orotic acid.
 
-## Biochemical assays with yeast extracts
+### Biochemical assays with yeast extracts
 
 Assays of β-galactosidase activity in whole cell extracts (WCEs) were performed as described previously (Moehle and Hinnebusch, 1991). For Western analysis, WCEs were prepared by trichloroacetic acid extraction as described previously (Reid and Schatz, 1982) and immunoblot analysis was conducted as described (Olsen et al., 2003) using antibodies against FLAG epitope (Sigma #F-3165) to detect eIF5-FL proteins, or against eIF2Bϵ/Gcd6 as a loading control (Bushman et al., 1993).
 
-## Assays of rates of eIF1A dissociation and Pi release from reconstituted 43S·mRNA PICs
+### Assays of rates of eIF1A dissociation and Pi release from reconstituted 43S·mRNA PICs
 
-## Kinetics of eIF1A dissociation
+#### Kinetics of eIF1A dissociation
 
 The kinetics of eIF1A dissociation from reconstituted PICs were measured as described previously (Saini et al., 2014). The PIC was formed with 15 nM eIF1A-Fl (fluorescein-tagged eIF1A), 1 μM eIF1, 1 μM WT or mutant eIF5, 120 nM 40S subunits, 10 μM unstructured 43-mer model mRNA (GGAA(UC)7UNUG(CU)10C, where NUG is either AUG or UUG), 300 nM eIF2, 150 nM tRNAi and 0.5 mM GDPNP•Mg2+ in 30 mM HEPES (pH 7.4), 100 mM potassium acetate, 3 mM Mg(OAc)2, and 2 mM DTT. Reactions were incubated at 26°C for 45 min and fluorescence anisotropy (Rbound) was measured in Fluorolog-3 spectrofluorometer (Jobin Yvon Horiba). The fluorescein fluorophore was excited at 497 nm and fluorescence anisotropy was monitored at 520 nm. Dissociation of eIF1A-Fl was initiated by addition of a chase consisting of 100-fold excess (1 μM) unlabeled eIF1A and the change in fluorescence anisotropy of eIF1A-Fl was measured over time for up to 3 hr. Anisotropy values were plotted as a function of time and data were fit with a double-exponential decay equation. The individual curves were than end-point normalized, based on the endpoints calculated from the raw curves. All experiments were performed at least in duplicate. The values of kinetic parameters calculated from the eIF1A dissociation curves has been presented as means ± average deviations.
 
-## Pi release kinetics
+#### Pi release kinetics
 
 The kinetics of Pi release from reconstituted 43S PICs in response to start-codon recognition was measured using a rapid-quench device (Kintek) as decribed previously (Saini et al., 2014). TC was formed at 4X concentration: 3.2 μM eIF2 or Sui3-2 eIF2, 3.2 μM tRNAi and 250 pM γ[32P]-GTP in 1X recon buffer (30 mM HEPES•KOH, pH 7.6, 100 mM KOAc, 3 mM Mg(OAc)2 and 2 mM DTT). 4X ribosomal complex was made using 800 nM 40S subunits, 3.2 μM eIF1, and 3.2 μM eIF1A. TC and ribosomal complex were mixed in equal volumes to make 2X PIC. Reactions were then initiated in a quench flow with an equal volume of a solution of 2 μM WT or mutant eIF5 and 20 μM model mRNA (AUG or UUG) in recon buffer and quenched at different times with 0.1 M EDTA. The samples were then run on PEI-cellulose TLC plates using 0.4 M KPO4 buffer (pH 3.4) as the mobile phase. This was followed by phosphorimager analysis to quantify the fraction of GTP hydrolyzed over time. The data were fit with a double exponential rate equation. The first phase corresponds to GTP hydrolysis and the second-phase corresponds to to Pi release that drives the reaction forward (Algire et al., 2005). All experiments were done at least in duplicate and the kinetic parameter for Pi release are reported as means ± average deviations.
 
-## Data resources
+### Data resources
 
 Five maps have been deposited in the EMDB with accession codes EMDB: 4328, EMDB: 4330, EMDB: 4331, EMDB: 4327, EMDB: 4329, for the sample one map, Map A, Map B, Map C1 and Map C2, respectively. Two atomic coordinate models have been deposited in the PDB with accession codes PDB: 6FYX, PDB: 6FYY, for models showing TC in conformation 1 and conformation 2, respectively.

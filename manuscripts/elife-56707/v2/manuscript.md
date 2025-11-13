@@ -30,21 +30,73 @@ In this work, we use DMS to characterize the functional behavior of all ~5600 s
 
 ## Results and discussion
 
-## Deep mutational scanning of VIM-2 metallo-β-lactamase
+### Deep mutational scanning of VIM-2 metallo-β-lactamase
 
 DMS was conducted on a library of VIM-2 variants, each encoding a single amino acid substitution. The wild-type (wt) VIM-2 (UniProt ID: A4GRB6) was sub-cloned into a custom pIDR2 vector with a chloramphenicol resistance marker, where VIM-2 expression is controlled by the constitutive AmpR promoter (Supplementary file 1); an extra Gly was inserted at position two to facilitate cloning (See ‘Generation of a VIM-2 mutagenized library’ in methods), which was also further mutated and selected. We constructed the library of all possible single amino acid variants of wtVIM-2 through PCR based saturation mutagenesis, where each codon position is mutated to an ‘NNN’ codon using restriction-free (RF) cloning (Figure 1A; van den Ent and Löwe, 2006); there are 5607 possible variants in the library ((20 a.a. + stop codons)×267 positions). The plasmids of mutagenized codon libraries were pooled into seven groups—six groups of 39 codons (117 bp, 819 variants in each group) and 1 group of 33 (99 bp, 693 variants)—so the mutagenized region of each group can be covered by Illumina NextSeq deep sequencing. We estimated the mutation rate of our library construction by determining the full sequence of 87 variants by Sanger sequencing: only one nucleotide substitution was found outside the intended codon—which corresponds to a mutation rate of 1.4 × 10−5—while two other variants had a large insertion or deletion, which would be filtered out during the variant identification process (see ‘Variant identification and noise filtering’ in methods). Thus, we constructed a high quality variant library, comparable to other libraries constructed and deep sequenced in a similar manner (Melnikov et al., 2014).
 
-Cultures of E. coli cells—specifically, E. cloni 10G, chosen for their high transformation efficiency and lack of endA and recA—transformed with VIM-2 libraries (each group was treated separately) were subjected to antibiotic selection by incubating the culture at 37°C with LB media in the presence (selected) and the absence (non-selected) of three different classes of β-lactam antibiotics—ampicillin (AMP), a 3rd generation penicillin, cefotaxime (CTX), a 3rd generation cephalosporin and meropenem (MEM), a carbapenem (Figure 1B). To determine the selection conditions, the growth of E. coli cells harboring the plasmid encoding wtVIM-2 was examined at a range of antibiotic concentrations (1.0–1024 µg/mL AMP, 0.0625–64 µg/mL CTX, 0.002–2.0 µg/mL MEM) (Figure 1C and Figure 1—figure supplement 1). We chose to test the highest antibiotic concentration where wtVIM-2 can grow almost 100% relative to growth in media without β-lactam antibiotics, and at successive lower concentrations at 8-fold decrements where the range permits; selected conditions are 128, 16 and 2.0 µg/mL of AMP, 4.0 and 0.5 µg/mL CTX, and 0.031 µg/mL MEM (Figure 1C). The selection process for each antibiotic was conducted in duplicate on separate days. After selection, the plasmids were isolated, the mutagenized region of each group was amplified by PCR, and the amplicons were sequenced by the Illumina NextSeq 550 platform. The sequencing reads were error filtered, and the fitness score of each variant relative to wtVIM-2 was calculated using Equation (1). (see methods for ‘Deep sequencing and quality control’).(1)fitness score=Log2(frequency of variant Selectedfrequency of variant Non−selectedfrequency of wt Selectedfrequency of wt Non−selected)
+![Figure 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig1-v2.jpg)
+
+**Figure 1.:** (A) The workflow for DMS. All single amino acid variants are first generated using RF cloning, subsequently transformed into E. coli and then subject to selection for antibiotic resistance conferred to E. coli. The effects of selection (fitness score) were evaluated by deep sequencing and comparing the enrichment of each variant with and without selection. (B) Chemical structures of the antibiotics used in this study. (C) The dose-response growth curve of E. coli transformed with wtVIM-2 or an empty vector control for each antibiotic. Percent growth is calculated as OD600 selected / OD600 non-selected×100 after 6 hr of selection at 37°C. The vertical dashed lines indicate antibiotic concentrations at which selections were performed in this study. The dose-response curves of E. coli transformed with each of the seven library groups are in Figure 1—figure supplement 1. The number of variants represented in the mutated library is in Table 2. Other aspects of the cloning and data processing are described in Figure 1—figure supplement 2 (PCR cloning method), Figure 1—figure supplement 3 (deep sequencing error rates) and Figure 1—figure supplement 4 (improving variant identification by an error filtering process).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ampicillin. (B) Cefotaxime. (C) Meropenem. Y-axis indicates percent growth of E. coli transformed with plasmid library groups relative to no selection. The range of antibiotics tested is 1.0–1024 µg/mL for AMP, 0.0625–64 µg/mL for CTX, and 0.002–2.0 µg/mL for MEM. The dashed vertical lines indicate concentrations that were used in DMS.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The wtVIM-2 gene is encoded on a plasmid, and the first step is to extract the gene using a PCR. The forward primers carry an ‘NNN’ mutation that is in frame with a specific codon of the wtVIM-2 gene, and all products will have a randomly mutated codon at that position. The mutated products are purified and used as primers to extend the rest of the plasmid using the same wtVIM-2 plasmid as the template, giving rise to the mutant VIM-2 plasmid library; the plasmid has a nick in both strands at the 5’ end, but can anneal to each other to become circular. As a final clean up step, the second PCR products are digested with DpnI for 1 hr at 37°C to remove the wt template. The purified library is then transformed into E. coli for propagation and subsequently purified.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Violin plots showing the distribution of positional error rates observed in wtVIM-2 reads that pass filtering by having less than 20 mismatches between the forward and reverse reads and a minimum posterior Quality (Phred) score (5, 10, 15 or 20) at every read position. The positional error rate is calculated for every nucleotide position (804 positions in the VIM-2 gene) as the number of mutations divided by the total number of reads. The number of observations, distribution mean and standard deviation are listed below the x-axis. (B) Violin plots showing the distribution of proportions of specific mutations occurring due to sequencing error in the wtVIM-2 reads given a certain starting nucleotide. The proportions are calculated by dividing the number of a specific mutation at each wtVIM-2 nucleotide position (A > G, A > T, A > C) by the total number of mutations observed at that position. The proportions mutations arising from the same starting nucleotide sum to 100%. The number of observations, distribution mean, standard deviation and percentage of all observed mutations are listed below the x-axis.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The diagram depicts the main flow of variation when sequencing error is added on top of the existing variation. Sequences that are completely wt for every nucleotide occupy a sizeable portion of every library sequenced, and are also capable of being converted to any single amino acid variant through sequencing errors. Variants that already have a mutation are more likely to be mutated in a second codon and are likely to be filtered out. Additionally, single codon variants are already observed at fairly low frequencies, and are expected to contribute a negligible proportion of noise to any other variant. (B) A representative distribution of codon mutations in one of the selected libraries found after sequencing. In most cases at least 5% of the library is completely wt, indicated by those without any codon mutations. (C) A representative distribution of the proportion of reads that have a given number of sequencing errors observed when sequencing wtVIM-2 DNA. The reads with 0 sequencing errors are not shown to allow the smaller values to be resolved more clearly. (D) Distribution of sequence errors per position for every position in sequenced wtVIM-2 DNA after forward and reverse sequences have been merged and filtered by quality. This is the same distribution as the violin plot in Figure 1—figure supplement 3A with a minimum posterior quality score cutoff of 10. (E) An example calculation of expected noise arising from sequencing errors. (F) Visualization of the calculation shown in E) when applied across an entire all wt codons. The expected chance for each wt codon to become any of the other nine codons adjacent by a single nucleotide substitution is first calculated and then aggregated at the amino acid level. Only a subset of the codons are shown as an example.
+
+Cultures of E. coli cells—specifically, E. cloni 10G, chosen for their high transformation efficiency and lack of endA and recA—transformed with VIM-2 libraries (each group was treated separately) were subjected to antibiotic selection by incubating the culture at 37°C with LB media in the presence (selected) and the absence (non-selected) of three different classes of β-lactam antibiotics—ampicillin (AMP), a 3rd generation penicillin, cefotaxime (CTX), a 3rd generation cephalosporin and meropenem (MEM), a carbapenem (Figure 1B). To determine the selection conditions, the growth of E. coli cells harboring the plasmid encoding wtVIM-2 was examined at a range of antibiotic concentrations (1.0–1024 µg/mL AMP, 0.0625–64 µg/mL CTX, 0.002–2.0 µg/mL MEM) (Figure 1C and Figure 1—figure supplement 1). We chose to test the highest antibiotic concentration where wtVIM-2 can grow almost 100% relative to growth in media without β-lactam antibiotics, and at successive lower concentrations at 8-fold decrements where the range permits; selected conditions are 128, 16 and 2.0 µg/mL of AMP, 4.0 and 0.5 µg/mL CTX, and 0.031 µg/mL MEM (Figure 1C). The selection process for each antibiotic was conducted in duplicate on separate days. After selection, the plasmids were isolated, the mutagenized region of each group was amplified by PCR, and the amplicons were sequenced by the Illumina NextSeq 550 platform. The sequencing reads were error filtered, and the fitness score of each variant relative to wtVIM-2 was calculated using Equation (1). (see methods for ‘Deep sequencing and quality control’).
+
+$$
+fitness score=Log2(\frac{\frac{frequency of variant _{Selected}}{frequency of variant _{Non−selected}}}{\frac{frequency of wt _{Selected}}{frequency of wt _{Non−selected}}})
+$$
 
 Where the frequency of a variant (or wt) is the deep sequencing read count of the variant divided by the total reads in the corresponding sample. Variants with frequencies below the threshold of deep sequencing errors that was estimated from the deep sequencing of wtVIM2 (see methods for ‘Variant identification and noise filtering’) were excluded during scoring. The non-selected library shows excellent coverage, with 5535 of 5607 (98.7%) variants present after filtering in at least one replicate while 97.8% are observed in both replicates (Table 2). For selected libraries, we calculate the fitness score for any variants present in at least one non-selected replicate then average the fitness scores between the two selection replicates (see Supplementary file 2A for all fitness scores).
 
 Our DMS experiments show high replicability in all conditions tested. The R2 of a linear regression between variants observed in both replicates is 0.94 for selection with 128 µg/mL AMP, 0.91 for 4.0 µg/mL CTX and 0.85 for 0.031 µg/mL MEM (Figure 2 and Figure 2—figure supplement 1). As expected, variants with synonymous mutations have near neutral fitness and variants with nonsense mutations (stop codons) have the lowest fitness scores. At the highest concentration of each antibiotic, variants with stop codons have fitness scores centered around −4 and lower, thus a fitness score of −4 is considered the lowest score cut-off for downstream analyses and fitness scores below this cut-off are set to −4 (Figure 2). Like previous DMS studies with other proteins, the overall fitness distribution of all variants exhibit a bi-modal distribution with a peak at neutral fitness and a long tail stretching toward negative fitness to another peak at the cutoff of −4 (Figure 2; Stiffler et al., 2015; Firnberg et al., 2014; Roscoe et al., 2013; Jacquier et al., 2013).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig2-v2.jpg)
+
+**Figure 2.:** In the horizontal panels, data are shown for (A) 128 µg/mL AMP selection, (B) 4.0 µg/mL CTX selection and (C) 0.031 µg/mL MEM selection. The color legend in panel A) is shared by all panels. For each horizontal panel, the left plot shows correlation between fitness scores of all variants in the two replicates of DMS; replicate correlation of selection conditions not shown here are in Figure 2—figure supplement 1. The middle plot shows distribution of fitness effects for all variants separated into synonymous, missense and nonsense distributions, where the vertical grey lines indicate fitness score cut-offs used to classify fitness effects as positive, neutral or negative. The proportion of variants in each fitness effect category can be found in Figure 2—figure supplement 2. The right plot shows the relationship of DMS fitness scores with antibiotic resistance (EC50) of isolated variants measured in a dose-response curve; variants with resistance lower than the tested range could not be fitted for EC50, leading to EC50 values for 39 unique variants in AMP, 39 for CTX and 45 for MEM—some points are an average of the same codon or amino acid variant isolated multiple times. The filled rectangle in the background indicates the region of linear association between fitness scores and EC50. The text at the top of each plot indicates the Spearman rank-order correlation coefficient and the P-value of the correlation. Individual EC50 measurements can be found in Supplementary file 2B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The antibiotic concentration and growth temperature used for each experiment are labeled above each plot. Data points are colored by the type of amino acid mutation, as described in the legend in the top-left plot. The black line indicates the line of best fit for a linear regression between the replicates, with the R2 and P-value of the regression displayed near the top of each plot.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The proportion of variants with positive, neutral or negative fitness effects as classified for 128 µg/mL AMP, 4.0 µg/mL CTX and 0.031 µg/mL MEM.
+
 We confirmed the DMS fitness scores reflect the actual resistance level of variants (Figure 2 and Supplementary file 2B). We isolated 45 unique variants (61 unique codons), and determined the half maximal effective concentration (EC50) of E. coli culture harboring each variant for three antibiotics by measuring antibiotic dose-response curves. We fit the relationship using a sigmoidal function and identify a linear range of correlation for fitness scores within −3.1 to 0.1 for AMP (EC50 28–81 µg/mL), −2.7 to 0.6 for CTX (EC50 1.8–4.1 µg/mL) and −2.4 to 1.8 for MEM (EC50 0.012–0.066 µg/mL), which correspond to a 2.9, 2.3 and 5.5-fold range of EC50 values for AMP, CTX and MEM, respectively (Sebaugh and McCray, 2003). All fitness scores outside the linear range are still qualitatively consistent with EC50—where higher fitness scores correspond to higher EC50 values and lower fitness scores correspond to lower EC50 values—which is supported by a Spearman rank-order correlation between fitness and EC50 of at least 0.85 for selection using each antibiotic.
 
-## Global view of VIM-2 enzyme characteristics
+### Global view of VIM-2 enzyme characteristics
 
 The fitness scores for variants selected at 128 µg/mL AMP are shown in Figure 3 (See Figure 3—figure supplements 1 and 2 for CTX and MEM); the inserted Gly2 is omitted to match the numbering for wtVIM-2 (For Gly2 fitness scores, see Supplementary file 2A). At a glance, there are several interesting trends in the DMS data of VIM-2. Variants with Cys mutations are highly deleterious throughout the catalytic domain (positions 27–266) (Figure 3—figure supplement 3). As wtVIM-2 possesses only one Cys for metal binding, additional Cys may cause the formation of undesired disulfide bonds, leading to misfolding (Mehlhoff, 2020). Pro variants are also often deleterious, as this residue disrupts secondary structures (Stiffler et al., 2015; Firnberg et al., 2014; Gray et al., 2017). We found 112 positions (42% of all residues) are highly sensitive to mutations, where over 75% of missense variants (excluding synonymous and nonsense mutations) display a fitness score <−2.0. These positions are likely key requirements for catalytic activity or protein stability and folding in wtVIM-2. Indeed, these positions include all six active-site metal coordinating residues (His114, His116, Asp118, His179, Cys198, His240), as well as 3–4 residues adjacent to each metal binding residue in the amino acid sequence that are likely to play important roles in the metal configuration and enzymatic function. Additionally, 92% of positions with high mutational sensitivity—including all metal binding residues—are located in the core of the protein (accessible surface area, ASA, of residue <30%) and 63% are almost completely buried (ASA <5%), congruent with previous findings (Fowler et al., 2010; Stiffler et al., 2015; Thyagarajan and Bloom, 2014; Melnikov et al., 2014; Thompson et al., 2019; Kitzman et al., 2015; Figure 4A). The association between mutational sensitivity and ASA is also evident at the level of individual variants, where the distribution of variants at positions with ASA <30% exhibits significantly lower fitness than the distribution of variants at positions with ASA ≥30% (two-tailed Mann-Whitney U test, P-value<0.001, Figure 4A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig3-v2.jpg)
+
+**Figure 3.:** Each cell in the heat map represents the fitness score of a single amino acid variant. Synonymous variants are indicated by dark grey circles and variants that are not present in the library are in grey. The x-axis under the heat map indicates the wt residue and position (the six active site metal binding residues are highlighted as circles), while the y-axis indicates the variant residue at that position. The secondary structure of the wtVIM-2 crystal structure (PDB: 4bz3) is displayed below the heat map. Corresponding heat maps for variants under selection with CTX and MEM can be found in Figure 3—figure supplement 1 and Figure 3—figure supplement 2, respectively. A comparison between the distributions of variants with each mutated amino acid can be found in Figure 3—figure supplement 3. All fitness data used in the heat maps can be found in Supplementary file 2A.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Each cell in the heat map represents the fitness score of a single amino acid variant. Synonymous variants are indicated as dark grey circles and variants that are not present in the library are in grey. The x-axis under the heat map indicates the wt residue and position (the six active site metal binding residues are highlighted as circles), while the y-axis indicates the variant residue at that position. The secondary structure of the wtVIM-2 crystal structure (PDB: 4bz3) is displayed below the heat map.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Each cell in the heat map represents the fitness score of a single amino acid variant. Synonymous variants are indicated as dark grey circles and variants that are not present in the library are in grey. The x-axis under the heat map indicates the wt residue and position (the six active site metal binding residues are highlighted as circles), while the y-axis indicates the variant residue at that position. The secondary structure of the wtVIM-2 crystal structure (PDB: 4bz3) is displayed below the heat map.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The box and whisker plots depict the distribution of fitness scores for all missense variants mutated to the indicated amino acid, with the median highlighted by the orange line. The grid below the plot shows the significant results of two-tailed Mann-Whitney U tests between all pairwise combinations of amino acid fitness score distributions; the P-values are adjusted for false discovery rate using the Benjamini-Hochberg procedure with α = 0.05 (190 tests total). The number of variants in each amino acid distribution is shown to the right of the grid.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig4-v2.jpg)
 
@@ -54,9 +106,256 @@ To examine the distribution of fitness effects (DFE) of VIM-2 variants, we class
 
 Next, in order to determine biophysical properties that explain the fitness scores, a linear model was constructed using the fitness score of variants as the response factor and various parameters such as ASA, ΔΔG predicted by Rosetta, change in amino acid volume and polarity, and the wt and variant amino acid states as predictors (Table 1, Supplementary file 3A and 3B for CTX and MEM models, Supplementary file 2C for data used in models). We first modeled each predictor alone with the response, then selected predictors that account for at least 10% of variance in the response (R2 >0.10) and modeled them in combinations of 2 or more as individual terms and as interacting terms. The final model accounted for the greatest amount of variance using the fewest predictors—that is optimized for adjusted R2—and combined four predictors (ASA, ΔΔG, wt and variant amino acid) capable of explaining 55% of the variation in fitness scores (adjusted R2 = 0.55). The ASA alone can explain 21% of fitness score variation (Table 1) and ASA of the wt amino acid alone show a significant correlation (R2 = 0.50) to the average fitness scores of the position, with mutations at exposed residues having less deleterious fitness effects on average (Figure 4B). The ΔΔG explains an additional 18% (Table 1) and there is overall correlation between ΔΔG and fitness score while individual predictions are relatively scattered, similar to previous findings that compared fitness to Rosetta folding energies or solubility scores (Figure 4C; Firnberg et al., 2014; Klesmith et al., 2017). Knowing the wt and variant amino acid can further explain another 10% and 5% of variation respectively (Gray et al., 2017; Gray et al., 2018). Thus, the results indicate structure and biophysical factors can explain the majority of fitness score tendencies.
 
-## Codon and amino acid optimization in the signal peptide
+**Table 1.**
+ Linear model output for DMS fitness scores under 128 µg/mL AMP selection
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Predictor*</th>
+      <th>Estimated effect†</th>
+      <th>Adjusted P-value (α = 0.05)‡</th>
+      <th>Variance explained§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">(Intercept)¶</td>
+      <td>−1.73</td>
+      <td>&lt;0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">ASA**</td>
+      <td>2.83</td>
+      <td>&lt;0.001</td>
+      <td>21%</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rosetta ΔΔG††</td>
+      <td>−0.28</td>
+      <td>&lt;0.001</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Starting(wt) residue</td>
+      <td>C</td>
+      <td>−1.53</td>
+      <td>&lt;0.001</td>
+      <td rowspan="12">10%</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>−1.33</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>−0.53</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>−0.92</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>−1.09</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>−0.50</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>−0.43</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>−0.62</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>−0.35</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>−0.23</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>−0.36</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>−1.35</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Variant residue</td>
+      <td>C</td>
+      <td>−1.69</td>
+      <td>&lt;0.001</td>
+      <td rowspan="4">5%</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>−0.40</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>−0.61</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>−0.45</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Each predictor indicates a class of wtVIM-2 derived values that were used as explanatory variables to model a linear relationship with the observed fitness score.†The estimated effect is the predicted change in fitness score away from the intercept with a one unit increase in a continuous predictor or a binary change in a categorical predictor.‡P-values indicates whether a predictor makes a significant contribution to the change fitness score, and are adjusted for a false discovery rate of 5% using the Benjamini-Hochberg procedure.§The adjusted R2 of each predictor when correlated with fitness, which is a measure of how much variation in the fitness score can be explained by each predictor in the linear model.¶The intercept is the average fitness of all variants where the continuous variable is 0 (ASA and Rosetta ΔΔG) and the wt or variant residue is Ala.**ASA ranges from 0.0 to 1.0.††Rosetta ΔΔG ranges from −5.0 to 5.0 Rosetta energy units._
+
+**Table 2.**
+ Variants observed in each library group.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">37°C*</th>
+      <th colspan="2">25°C*</th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th>Number of positions</th>
+      <th>Total possible variants</th>
+      <th>Both replicates†</th>
+      <th>At least one replicate‡</th>
+      <th>Both replicates</th>
+      <th>At least one replicate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>39</td>
+      <td>819</td>
+      <td>808</td>
+      <td>811</td>
+      <td>808</td>
+      <td>812</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>39</td>
+      <td>819</td>
+      <td>812</td>
+      <td>813</td>
+      <td>811</td>
+      <td>814</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>39</td>
+      <td>819</td>
+      <td>803</td>
+      <td>807</td>
+      <td>802</td>
+      <td>807</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>39</td>
+      <td>819</td>
+      <td>802</td>
+      <td>813</td>
+      <td>809</td>
+      <td>812</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>39</td>
+      <td>819</td>
+      <td>801</td>
+      <td>812</td>
+      <td>804</td>
+      <td>811</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>39</td>
+      <td>819</td>
+      <td>775</td>
+      <td>793</td>
+      <td>789</td>
+      <td>796</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>33</td>
+      <td>693</td>
+      <td>682</td>
+      <td>686</td>
+      <td>678</td>
+      <td>690</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>267</td>
+      <td>5607</td>
+      <td>5483</td>
+      <td>5535</td>
+      <td>5501</td>
+      <td>5542</td>
+    </tr>
+    <tr>
+      <td>% coverage</td>
+      <td></td>
+      <td></td>
+      <td>97.8%</td>
+      <td>98.7%</td>
+      <td>98.1%</td>
+      <td>98.8%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Non-selected libraries were grown, sequenced and filtered separately at 37°C and 25°C.†The observed number of variants that passed noise filtering in both sequencing replicates of the non-selected library.‡The observed number of variants that passed noise filtering in at least one sequencing replicate of the non-selected library._
+
+### Codon and amino acid optimization in the signal peptide
 
 The first 26 residues of VIM-2 has been identified as the signal peptide (Lauretti et al., 1999; Franceschini et al., 2000; Garcia-Saez et al., 2008), which is a sequence used to translocate the enzyme to the periplasm, then cleaved after transport (Oliver, 1985; Pugsley, 1993; Freudl, 2018; Paetzel and Peptidases, 2019). Our DMS data supports the known length of the signal peptide as mutations to Cys are much less deleterious before residue 26, suggesting these positions are not incorporated into the mature enzyme in the periplasm. In general, the signal peptide sequence has an amino terminal (N) region (residues 1–7) with one or more positive residues, a hydrophobic (H) region (residues 8–21) and a carboxy terminal (C) region (residues 22–26) that precedes the cleavage site containing a PXAXS motif (Figure 5A; Oliver, 1985; Pugsley, 1993; Freudl, 2018; Paetzel and Peptidases, 2019). The signal peptide is conserved at 17 of 25 positions (Met one excluded) across all VIM variants, and the remaining are binary differences between the conserved sequences of the VIM-1 and VIM-2 clades (Figure 5A, clades are defined by Figure 8—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sequence logo of the signal peptide region aligned across all VIM natural variants generated using WebLogo (https://weblogo.berkeley.edu/). Positions with two major naturally occurring residues are conserved differences between the VIM-1 and VIM-2 clades (clades are defined in Figure 8—figure supplement 1). (B) The distribution of fitness effects of all missense variants, separated into signal peptide variants and catalytic domain variants. The number of variants in each distribution are displayed in the legend below the distributions. The results of a two-tailed Mann-Whitney U test between the distributions are displayed above the distributions. (C) DMS fitness scores of all variants at each position of the signal peptide. Synonymous variants of wtVIM-2 and conserved variants observed in the VIM-1 clade are highlighted as labelled circles. Additional information on codon variant fitness in the signal peptide can be found in Figure 5—figure supplement 1 (replicate correlation of codon variant fitness), Figure 5—figure supplement 2 (heat map of codon variant fitness) and Figure 5—figure supplement 3 (correlation between RNA folding energy and codon variant fitness).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data points are colored according to the type of mutation. The black line indicates the line of best fit for a linear regression between the replicates, with the R2 and P-value displayed at the top.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The residue positions are indicated on the y-axis (G2 refers to the Glycine two in the inhouse sequence that is not a part of wtVIM-2), while the codon mutations are indicated on the x-axis.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** The energy ΔΔG are calculated as the difference in ΔG between wtVIM-2 mRNA transcript and the transcript of each signal peptide codon-variant (isolating the contributions from the 5’ UTR and the signal peptide region). The ΔΔG is normalized to a multiple of the thermal energy factor kT, such that a ΔΔG of 1 indicates a 1 × kT increase in ΔG of the variant over the wt. The label above each plot indicates the positions where codon variants were considered for the correlation (G2 refers to the Glycine two in the inhouse sequence that is not a part of wtVIM-2).
 
 Mutations in the signal peptide are generally tolerated (67% of missense mutations are neutral with 128 µg/mL of AMP) and even beneficial (10% of missense mutations are positive), which is consistent with a previous DMS study with TEM-1 (Firnberg et al., 2014; Figure 5B). Overall, the DFE for missense variants in the signal peptide is significantly more neutral than the DFE of missense variants in the catalytic domain (two-tailed Mann-Whitney U test, P-value<0.001, Figure 5B). In the N-terminal region, mutations to Lys3 are especially deleterious, likely due to the importance of a net positive charge in the N-region for efficient translocation (Oliver, 1985; Inouye et al., 1982; Iino et al., 1987). In contrast, Lys7 is tolerant to substitution—in fact, half of the natural VIM variants have a Ser at this position—suggesting that Lys3, rather than Lys7, is critical for translocation. In the H-region, residues Val10 through Ile16 are the most sensitive to mutation, especially when changed to a charged amino acid (Firnberg et al., 2014; Mehlhoff, 2020; Oliver, 1985). The C-region is most negatively affected by the mutation of Leu23 to Cys (fitness of −2.5) or Trp (−2.7), while 95% of variants are neutral or positive, including those in the PXAXS motif.
 
@@ -64,31 +363,100 @@ Interestingly, variants with evolutionarily conserved residues in the signal pep
 
 The less than optimal residue level fitness of wtVIM-2 may be because we employ E. coli as a host while natural VIM variants are often found in Pseudomonas (Jia et al., 2017), and/or the signal peptide is not selected to produce maximum expression in natural environments. It has been shown that different signal peptides produce variable expression levels and translocation rates for a given protein, both of which affect the final resistance, especially in different host organisms (Socha et al., 2019; Mehlhoff, 2020; Inouye et al., 1982; Iino et al., 1987; Brockmeier et al., 2006; Mathiesen et al., 2009; Hemmerich et al., 2016). Meanwhile, fitness variation at the codon level may be due to the presence of a different 5’UTR compared to the plasmid sequence found in clinical VIM-2 (Bhattacharyya et al., 2018; Kelsic et al., 2016). The inclusion of an extra Glycine at position two may affect the observed fitness, though this effect is expected to be small since signal peptides are highly variable in length and composition in the N-region (Oliver, 1985; Pugsley, 1993); 13/19 missense variants are neutral or positive at Gly2. Overall, the signal peptide is sensitive to changes in organismal and genetic context which would affect the outcome of horizontal gene transfer. Notably, the signal peptide is frequently mutated in naturally occurring VIM-type variants (see section on ‘Natural VIM variation’ below), suggesting changes in the signal peptide sequences may have played significant roles in dissemination of MBL genes to different hosts and adaptation to higher antibiotic concentrations.
 
-## Elucidation of the role of residues in the catalytic domain
+### Elucidation of the role of residues in the catalytic domain
 
 We sought to further examine the functional and structural roles of residues in the catalytic domain (positions 27–266) of wtVIM-2. We compare fitness scores of missense variants between selection in 128 µg/mL and 16 µg/mL AMP, as fitness at different AMP concentrations reflect a residue’s degree of involvement in the enzyme’s stability, expression and/or catalytic activity. Selection was also performed at 25°C in addition to 37°C to examine temperature dependent mutational effects, highlighting residues involved in protein folding and stability; in general, lower temperatures are permissive to variants with poor folding and high aggregation propensity while having a uniform effect on catalytic rate. To assess the role of each residue, we classified all positions in the catalytic domain into four types: i) ‘tolerant’, if 75% of variants are neutral even in the most stringent condition with 128 µg/mL AMP at 37°C, ii) ‘essential’, if 75% of variants are highly deleterious even in the least stringent condition with 16 µg/mL AMP at 25°C, iii) ‘temperature dependent’, if the difference in the fitness score between 25°C and 37°C is more than 2.0 in either 128 or 16 µg/mL AMP, and iv) ‘residue dependent’, if variants are temperature independent (similar scores at the two temperature) and exhibit a range of fitness rather than being mostly neutral or negative (Figure 6A–B, Supplementary file 2F for all classifications, also see ‘Identification of critical residues and temperature dependence’ in the Materials and methods).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scatterplots comparing fitness scores under selection at 25°C and 37°C (128 µg/mL AMP). Variants within the classified positions are highlighted in dark blue while all variants are plotted in grey for reference. (B) Proportion of residues in the wtVIM-2 catalytic domain that have been classified into each behavioral category. (C–D) The wtVIM-2 crystal structure (PDB: 5yd7) is colored by the behavioral classifications, the active-site zinc ions are colored in lime green. (C) View of the spacial distribution of temperature dependence in wtVIM-2, with residues depicted as spheres. The upper row depicts all residues, while the lower row depicts only essential and temperature dependent residues. (D) Cartoon representation of wtVIM-2 with metal-binding residues shown as sticks. All classifications can be found in Supplementary file 2F. Additional analysis of temperature dependence can be found in Figure 6—figure supplement 1 (correlation of Rosetta ΔΔG with temperature dependence) and Figure 6—figure supplement 2 (proportion of sidechain-backbone hydrogen bonding by temperature dependence).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** In each plot, Rosetta ΔΔG is correlated with fitness score for amino acid variants from the catalytic domain, in positions with the temperature dependence classification indicated at the top.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** A comparison of proportion of h-bonding sidechains to the proportion of sidechain-backbone h-bonds within each temperature dependent classification (determined from the wtVIM-2 crystal structure, PDB: 5yd7). The black bars display the percentage of h-bonding sidechains within the wtVIM-2 catalytic domain (114 total) that fall within each temperature dependence classification. The white bars show the percentage of sidechain-backbone h-bonds (73 total) that are formed through sidechains of residues with the classification. All h-bonding in the 5yd7 structure can be found in Supplementary file 2G.
 
 As expected, the 55 ‘tolerant’ positions are scattered around the surface of the protein and are mostly solvent exposed (80% of positions have greater than 30% ASA) (Figure 6C–D). The 20 ‘essential’ residues include all six metal binding residues and deeply buried residues (70% have less than 5% ASA), which form the central core of the protein (Figure 6C). This core is further expanded into a larger scaffold by the 93 ‘temperature dependent’ positions that are mostly buried in the structure (76% have less than 30% ASA) and largely hydrophobic—75% of the temperature dependent residues are non-polar (A, G, I, L, P, V) or aromatic residues (F, W, Y) compared to 58% for the entire catalytic domain. The 72 ‘residue dependent’ positions tend to be near the surface or at packing interfaces between α-helices and β-sheets (Figure 6D).
 
 The fitness of variants at temperature and residue dependent positions show equally strong association with the Rosetta predicted ΔΔG, indicating both classes of residues have contributions to structural packing (Figure 6—figure supplement 1). However, the location and hydrogen bonding behavior of each class of residues suggest different functional roles. Essential and temperature dependent residues display an enrichment of sidechain-backbone h-bonding relative to the proportion of h-bonding residues in each class (Figure 6—figure supplement 2, Supplementary file 2G), suggesting—when combined with the formation of a hydrophobic core—these residues are largely involved in protein folding and stability (Roscoe et al., 2013; Thompson et al., 2019; Flynn, 2019). In contrast, ‘residue dependent’ positions are prominent in the two major active site loops (14/23 positions from 60 to 68 and 201–214) and on packing interfaces on these loops’ distal faces from the active site. The loop holding metal-binding residues His114, His116 and Asp118, and the helix positioning the loop into the active-site (positions 112–129) are also enriched in residue dependent positions (10/15 non-metal-binding positions), suggesting possible effects on metal and substrate positioning. Thus, many of the ‘residue dependent’ positions are likely to be involved in catalysis through direct or indirect substrate interactions, and also affect the overall shape of the active site.
 
-## Distinct recognition for different classes of β-lactam substrates
+### Distinct recognition for different classes of β-lactam substrates
 
 VIM-2 is known for its broad spectrum activity against all classes of β-lactam antibiotics except monobactams, but how residues achieve substrate recognition remains unknown. We examined mutations that alter substrate specificity to identify wt residues responsible for substrate recognition by comparing fitness scores between the three antibiotics (128 µg/mL AMP, 4.0 µg/mL CTX, 0.031 µg/mL MEM). First, we identified 29 ‘globally positive’ variants across 10 positions in the catalytic domain that increase fitness score to >1 in all antibiotics, which is more conservative than the cut-off of >0.7 for variants with positive fitness effects relative to wtVIM-2 and is above the upper fitness score range of the peak centered at neutral fitness in the DFEs (Figure 2; Supplementary file 2H). Residues at positions 47, 55, 66, 68 and 205 each give rise to at least three globally positive variants (24 total) while 57, 65, 115, 180 and 201 each give rise to one; 9/10 positions with globally positive variants are near the active site, having at least one atom within 15 Å of the active site zinc ions (Figure 7A). Next, we compare fitness scores of different antibiotics in pairs, and identified variants with a change in fitness effect classifications (negative, neutral or positive) combined with a 2.0 fitness score difference between antibiotics. We identified 78 specificity altering variants across 25 positions, with 23/25 positions near the active site (Figure 7B, Table 3 and Supplementary file 2I for individual specificity variants, Figure 7—figure supplement 1 for fitness heat maps at specificity positions). We confirm the specificity by comparing the fitness scores with the log2(EC50 var /EC50 wt) of the variant in the three antibiotics (Figure 7—figure supplement 2). Of the 25 positions, five are shared by both specificity and globally positive variants, and specificity changes are enhanced by the positive fitness at three of these positions (68, 201 and 205). However, most changes in specificity are due to decreases of fitness in one or two substrates, and only three variants (R205H/I/V) maintain neutral or higher fitness in all antibiotics (Melnikov et al., 2014; Wrenbeck et al., 2017). When examining the roles of these positions, we find nine ‘residue dependent’ and one ‘tolerant’ position, as expected for positions that interact with substrate rather than affect folding (Dellus-Gur et al., 2013). However, the other 15 positions are ‘temperature dependent’ positions, suggesting residues that are involved in substrate specificity are also embedded in the protein core.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig7-v2.jpg)
+
+**Figure 7.:** The wtVIM-2 crystal structure (PDB: 5yd7) is featured in all panels, with the active site Zn ions depicted as lime green spheres. (A) Positions with at least one globally positive mutation are highlighted as orange spheres, which are also found in Supplementary file 2H. (B) Positions classified as being responsible for specificity towards certain antibiotics in wtVIM-2 are color coded by antibiotic and highlighted as spheres; the positions are listed by specificity in Table 3. Individual variants classified as having changes in specificity are listed in Supplementary file 2I. Heat maps of specificity positions for fitness under selection in each antibiotic and fitness differences between antibiotics can be found in Figure 7—figure supplement 1. (C–E). Close-up views of the specificity residues in the active site with (C) hydrolyzed ampicillin (PDB: 4hl2), (D) cefuroxime (PDB: 4rl0) and (E) meropenem (PDB: 5n5i) from VIM-1 and NDM-1 structures that have been aligned to the wtVIM-2 structure using the active site residues. Residues are colored by the inferred substrate specificity as in B). Substrates are shown in stick and ball representation. Comparison of fitness changes with EC50 changes in individual variants are found in Figure 7—figure supplement 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Heat maps of variant fitness scores for variants at specificity positions in VIM-2 when selected using 128 µg/mL AMP, 4.0 µg/mL CTX and 0.031 µg/mL MEM. (B) Heat maps showing the difference in fitness scores between the conditions shown in panel A). For both panels, variants shown in grey squares are not present in the library.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Each plot shows the fitness score obtained from DMS (128 µg/mL AMP, 4.0 µg/mL CTX and 0.031 µg/mL MEM) or the EC50 fitted from a dose response curve for the variant indicated. Fitness scores are plotted directly, while EC50 values have been normalized to log2(EC50/EC50 wt) to allow them to be compared on the same scale as the fitness scores. EC50 values of the same amino acid variants (different codon variants or same codon variants isolated and measured multiple times) show the average EC50 with error bars indicating the 95% confidence interval.
+
+**Table 3.**
+ Inferred specificity of residues in wtVIM-2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specificity</th>
+      <th>Positions*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AMP</td>
+      <td>39, 55, 57, 63, 117, 119, 142, 143, 153, 196, 219, 222, 243, 248</td>
+    </tr>
+    <tr>
+      <td>CTX</td>
+      <td>62, 67, 68</td>
+    </tr>
+    <tr>
+      <td>AMP or CTX</td>
+      <td>60, 61, 202, 205, 210, 211, 216</td>
+    </tr>
+    <tr>
+      <td>MEM</td>
+      <td>201</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Positions in bold are temperature dependent. The underlined position is tolerant. The unformatted positions are residue dependent._
 
 Interestingly, there is a strong bias in specificity changes depending on mutations and their positions in the active site. In 21 of 25 positions, specificity variants decrease AMP fitness, while in 10 positions variants decrease CTX fitness and variants decrease MEM fitness at only one position (Figure 7B). This bias is maintained at the level of individual specificity variants, where 96% decrease the fitness in either AMP and/or CTX—29 only decrease AMP, 33 only decrease CTX and 10 decrease both—while only three variants decrease MEM. The residues specific to AMP—where mutations to the residue decrease AMP fitness, but are neutral for CTX and/or MEM—are spread around the active site, including the two active site loops (60–68 and 201–214) as well as residues in the protein scaffold. In contrast, the residues specific for CTX are restricted to the two active site loops (Mojica et al., 2015; Martínez-García et al., 2018; Moali et al., 2003; Merino et al., 2010; Leiros et al., 2014; Leiros et al., 2015); mutations in positions 62, 67 and 68 are fully specific to CTX, while positions 202, 205, 210 and 211 all have mixed specificity for CTX and AMP. To visualize residue-substrate interactions, we overlaid AMP, cefuroxime and MEM substrates in the active site of VIM-2 through alignment with VIM-1 and NDM-1 structures crystallized in complex with these substrates. Some substrate interactions are apparent from proximity, such as the packing of hydrophobic residues in loop 60–68 to the non-polar, aromatic substituents on the AMP (C6) and cefuroxime (C7) that is missing in most carbapenems (Figure 7C–D). However, Glu202 and Arg205 seem to be in better position to interact with the C2 substituent of MEM and are further from AMP or cefuroxime, yet both residues are specific for AMP and CTX. Moreover, many residues in the protein scaffold that are affecting AMP specificity do not directly interact with the substrates. We hypothesize that these distant residues may contribute to solvent related phenomenon—such as displacement of solvent and/or bridging solvent with ligand to affect substrate binding energy (Maurer and Oostenbrink, 2019; Spyrakis et al., 2017)—or alter protein dynamics to affect substrate specificity (González et al., 2016b; Petrović et al., 2018; Campbell et al., 2018; Campbell et al., 2016; Singh et al., 2015).
 
 Although wtVIM-2 degrades all three β-lactams, our observations suggest that the enzyme interacts with each substrate in a different manner. AMP interacts with many residues around the active site and is the most sensitive to mutations, while CTX specificity relies exclusively on interactions with residues in the active site loops. Interestingly, MEM seems to rely on contacts shared with other antibiotics, which suggest that carbapenem resistance of VIM variants may have coevolved with other antibiotics.
 
-## Natural VIM variation favors neutral, adaptive and specificity mutations
+### Natural VIM variation favors neutral, adaptive and specificity mutations
 
 Currently, 56 unique VIM-type MBL sequences (including wtVIM-2) have been found on plasmids in β-lactam resistant clinical isolates (Supplementary file 2J; Martínez-García et al., 2018; Jia et al., 2017). The DMS data of VIM-2 enable us to characterize these naturally occurring mutations comprehensively. We classified these sequences into four clades, represented by VIM-1 (between 25–29 mutations from VIM-2 each, 45 unique mutations total), VIM-2 (1–6 mutations, 31 total), VIM-7 (70 mutations), and VIM-13 (32–33 mutations, 34 total) (Figure 8A, Figure 8—figure supplement 1), with 131 unique point mutations relative to VIM-2 across 99 positions (Figure 8—figure supplement 2, Supplementary file 2K).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig8-v2.jpg)
+
+**Figure 8.:** (A) Maximum likelihood phylogenetic tree of all natural VIM variants examined in this study, colored by major clades (a larger version of the tree is presented in Figure 8—figure supplement 1). The wtVIM-2 sequence is highlighted in white. (B) Distribution of fitness for all unique individual mutations found in VIM natural variants compared to all missense variants measured in DMS for all three antibiotics. (C) All residues mutated in the natural variants are shown in sphere representation and colored by mutational tolerance and temperature dependence. The pie chart on the left shows the proportion of natural variant positions in each classification. (D) wtVIM-2 residues that are both mutated in at least one natural variant and affect specificity are highlighted as sticks, colored by the clade(s) in which the residue is mutated. All positions mutated in natural VIM-type variants relative to wtVIM-2 can be found in Figure 8—figure supplement 2.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The leaves in the tree indicate individual VIM-type variants labeled by number and host organism, with the wtVIM-2 sequence highlighted in blue. Other VIM-2 sequences are labeled in orange, and VIM-2 sequences that share the same host as wtVIM-2 have been labeled VIM-2b/c/d/e for disambiguation. The number beneath the branches indicate the normalized bootstrap value of 100 bootstrap replicates, and only bootstrap values above 0.75 are displayed. The major clades are noted by the labels on the right side. The tree was generated using MEGA7. The full list of variants can be found in Supplementary file 2J.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/56707/elife-56707-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** VIM-2 residues that are mutated in any natural variant are shown in sphere representation on the VIM-2 crystal structure (PDB: 5yd7), with positions mutated only within a single clade colored by clade and positions mutated in multiple clades colored by the number of clades.
 
 As expected, the fitness distribution of naturally occurring mutations in the VIM-type MBL for all antibiotics (128 µg/mL AMP, 4.0 µg/mL CTX, 0.031 µg/mL MEM) shows enrichment for neutral and positive mutations (Figure 8B). The trend suggests that natural variants have adapted to higher resistance as 31% of all ‘globally positive’ catalytic domain variants in DMS are also naturally occurring mutations, and 17% of all natural mutations have positive fitness effects for at least one antibiotic. At least 66% of variants have neutral fitness effects within each antibiotic. Natural mutations are disfavored in residues crucial for activity or stability (Figure 8C): Of the 99 mutated positions, only a small proportion of ‘essential’ (1/20 positions) and ‘temperature dependent’ (21/93) positions have been mutated while large proportions of the signal peptide (20/26) and ‘tolerant’ positions (32/55) have been mutated. Interestingly, 44% (11/25) of specificity altering positions have been mutated, which suggests that VIM variants may have changed their substrate specificity during evolution (Figure 8D).
 
 However, 10% of mutations are still highly deleterious (fitness score <−2.0) in 128 µg/mL AMP (6.9% for 4.0 µg/mL CTX, 6.1% for 0.031 µg/mL MEM), indicating other factors that affect natural variation (Figure 8B). These 13 deleterious mutations are spread over 11 positions, where one position is in the signal peptide, and 10 are in the catalytic domain. The signal peptide mutation (K3Q) occurs only in VIM-7 and eliminates the Lys3 critical to translocation, but this is likely neutral as VIM-7 has a S6R mutation that replaces the positive charge. Two mutations are only deleterious to AMP (Q60H, A143T), thus altering substrate specificity. Furthermore, we suspect the neutral I185V mutation (all 55 natural variants have Val185 while our wtVIM-2 has Ile185) acts as a global suppressor (Brown et al., 2010; Huang and Palzkill, 1997), and permit the accumulation of four mutations that are deleterious in all antibiotics (T139A, T139I, V236G and V255A) as I185V is the only other mutation in these natural variants. The remaining six deleterious mutations are likely neutralized by specific intramolecular epistasis, or the background dependence of mutational effects (Starr and Thornton, 2016; Miton and Tokuriki, 2016; Breen et al., 2012; Sarkisyan et al., 2016; Pokusaeva et al., 2019), as these mutations occur in natural variants with at least 25 mutations relative to VIM-2. While such epistasis will hamper our ability to perfectly predict the effect of mutations, the VIM-2 dataset presented in this study contributes to further our understanding of MBL evolution, and can help orient our predictions concerning the emergence of future resistance.
 
-## Conclusion
+### Conclusion
 
 In this work, we report the first comprehensive mutational analysis of an enzyme in the MBL, class B β-lactamase family, one of the most important enzyme families underlying the dissemination of multi-drug resistance to pathogens. We uncover a sensitivity to variation in the signal peptide of VIM-2, that may be due to codon dependent RNA folding or incompatibility with the host translocation system. Such findings highlight the importance of genome and host context in resistance gene compatibility (Socha et al., 2019; Bentele et al., 2013; Hemmerich et al., 2016). By performing DMS at various conditions, three different antibiotics, and two temperatures, we enhance the understanding of sequence-structure-function relationships by unveiling a set of mutations for protein stability, catalysis and substrate specificity of VIM-2.
 
@@ -98,17 +466,97 @@ We have demonstrated that VIM-type variants have been continuously evolving by e
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Pseudomonas aeruginosa)</td>
+      <td>wtVIM-2</td>
+      <td>UniProt</td>
+      <td>UniProtKB:A4GRB6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. cloni 10G</td>
+      <td>Lucigen</td>
+      <td>60061</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIDR2-wtVIM-2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Plasmid housing the wtVIM-2 sequence, maintained by the Tokuriki lab. See Supplementary file 1 for full sequence.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers with Nextera transposase adapter sequence</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Primers used to extract regions of the VIM-2 gene from variant libraries after a selection experiment, attaching the Nextera transposase adaptor sequence in the process. See Supplementary file 2L for all primer sequences.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Fisher Scientific</td>
+      <td>BP1760</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cefotaxime</td>
+      <td>Fisher Scientific</td>
+      <td>BP29511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Meropenem</td>
+      <td>Sigma Aldrich</td>
+      <td>M2574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq 500/550 High Output Kit (300 cycles)</td>
+      <td>Illumina</td>
+      <td>20024908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DMS-FastQ-Processing script</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Script used to merge and quality filter paired end FastQ reads. Code available at https://github.com/johnchen93/DMS-FastQ-processing (Chen, 2020; copy archived at https://github.com/elifesciences-publications/DMS-FastQ-processing)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 LB Broth, Miller (BP1426), ampicillin sodium salt (BP1760) and cefotaxime sodium salt (BP29511) were purchased from Fisher Scientific. Meropenem trihydrate (M2574) was purchased from Sigma-Aldrich (Millipore sigma). E. cloni 10G electrocompetent cells (60061) and E. cloni 10G chemically competent cells (60107) were purchased from Lucigen Corp. The KAPA HiFi PCR Kit (KK2102) was purchased from KAPA Biosystems Inc, the E.Z.N.A. Cycle Pure Kit was purchased from OMEGA Bio-tek Inc and the QIAprep Spin Miniprep Kit was purchased from Qiagen. The NextSeq 500/550 High Output Kit (300 cycles) (20024908) was purchased from Illumina Inc.
 
-## Generation of a VIM-2 mutagenized library with all possible single amino acid substitutions
+### Generation of a VIM-2 mutagenized library with all possible single amino acid substitutions
 
 The wild-type (wt) VIM-2 gene including its signal peptide sequence from Pseudomonas aeruginosa was synthesized (Bio Basic Inc) and subcloned into an in-house plasmid, pIDR2 (chloramphenicol resistance) (Supplementary file 1), under a constitutive AmpR promoter using Nco I and Xho I restriction enzymes (Fisher Scientific). The ATG codon in the Nco I site was used as the start codon. However, the cut site requires an extra G nucleotide to follow the start codon and an additional Gly (GGA codon) residue was inserted into the second position of the VIM-2 sequence; this extra Gly relative to wtVIM-2 will be labeled as G2 to distinguish it from position two in the wt sequence. The pIDR2 plasmid containing the wtVIM-2 gene will be referred to as pIDR2-wtVIM-2.
 
 To generate all single amino acid variants, a library of codon mutants was made for each codon (267 positions) in the wtVIM-2 gene using restriction-free cloning (RF cloning) (van den Ent and Löwe, 2006; Figure 1—figure supplement 2). We designed a forward primer for each codon position that contains a degenerate ‘NNN’ codon—using a MATLAB script used to design primers for the PFunkel method (Firnberg and Ostermeier, 2012)—and a single reverse primer, allowing a PCR to amplify part of the wtVIM-2 gene while incorporating the mutation. The PCR reaction to amplify part of the gene was done using a KAPA HiFi PCR Kit (Kapa Biosystems, Inc) for 30 cycles of amplification each with denaturation at 98°C for 20 s, annealing at 62°C for 15 s and extension at 72°C for 15 s; 1 ng of pIDR2-wtVIM-2 was used as template in a 20 µL reaction, with 1 µL each of the forward and reverse primer (10 µM). The first PCR products were purified using E.Z.N.A. Cycle Pure Kit (OMEGA Bio-tek, Inc). Afterwards, 10 µL of the first PCR product was then used as a primer to extend the entire plasmid, where the cycling conditions were identical to the first reaction except the extension time (90 s) and 1 ng of pIDR2-wtVIM-2 was freshly added as the template. Product from the second PCR was treated with Dpn I for one hour at 37°C to degrade the original wtVIM-2 plasmids, and then the amplified plasmids were purified and concentrated by the ethanol precipitation method. Subsequently, the purified plasmids were transformed into E. cloni 10G chemically competent cells (Lucigen Corp.) using the supplier’s recommended heat-shock transformation protocol and plated on LB-Cm (containing 25 µg/mL chloramphenicol) agar plates. We then counted the number of colony forming units (CFU) obtained after the transformation for every mutagenesis library. Using CASTER (Reetz and Carballeira, 2007) and GLUE (Firth and Patrick, 2008), we conservatively estimated that at least 700 CFU after transformation is needed to achieve 100% coverage of all 64 codon variants per position. If a transformation met the required CFU, all colonies were collected and the plasmids were purified using QIAprep Spin Miniprep Kit (QIAGEN N.V.), while those that did not were re-transformed or re-cloned until the count was met.
 
-## Antibiotic selection of the VIM-2 mutagenized library
+### Antibiotic selection of the VIM-2 mutagenized library
 
 Mutant libraries at individual codons were mixed into seven groups of 39 (33 for the last group) consecutive codons (see ‘Deep sequencing and quality control’). E. cloni 10G electrocompetent cells (Lucigen Corp.) were transformed with 1 ng of the plasmid DNA from each of the seven groups using the supplier’s recommended electro-transformation protocol and grown overnight in 10 mL LB-Cm shaking at 30°C. We plated 1/1000 of the transformed culture on LB-Cm agar plates to estimate total CFU after transformation. Using CASTER and GLUE, it was estimated that 20,000 CFU are needed to fully cover 2496 codon mutants (64 codons × 39 positions) and all groups transformed had at least 100,000 CFU. The transformed libraries were suspended in LB media and preserved in 1 mL aliquots at −80°C in LB with 25% final volume glycerol.
 
@@ -116,21 +564,51 @@ Antibiotic selection was conducted in duplicate on two separate days. For each e
 
 After placing the cultures under selection, antibiotics and DNA from lysed cells were removed by washing the selected cultures three times using a Biomek 3000 (Beckman Coulter Inc) liquid handling robot. For each wash, the culture was centrifuged at 4000 RPM for 12 min, and the supernatant was removed using the Biomek. Subsequently, 800 µL of fresh LB was manually dispensed into the wells, the plate was sealed with plastic film, and the pellets were resuspended by vortexing. The resuspended cultures were centrifuged again for the next cycle of the wash. After the final wash, all cultures were propagated overnight shaking at 30°C in 1 mL of LB-Cm. Plasmid DNA was purified from the cultures using a QIAprep 96 Turbo Kit (QIAGEN N.V.).
 
-## Determination of half maximal effective concentration (EC50)
+### Determination of half maximal effective concentration (EC50)
 
 We isolated 12 variants from codon libraries at positions 55, 62, 67, 68 and 11 variants from codon libraries at positions 205, 209, 210, 211 by transforming the libraries into E. coli, plating on agar plates, and picking single colonies. The identity of each variant was obtained by Sanger sequencing. The variants are grown into glycerol stocks in a 2.2 mL 96 well deep well plate; two single colonies transformed with pIDR2-wtVIM-2 and empty vector were also placed on this plate as controls.
 
-The variants in the plate were then placed under the same liquid culture selection procedure as the DMS selection experiments (see ‘Antibiotic selection of the VIM-2 mutagenized library’ above), up to the end of the 6 hr of selection where the cell growth (OD600) was measured. The range of selection is 1–1024 µg/mL for AMP, 0.0625–64 µg/mL for CTX and 0.002–2 µg/mL for MEM, separated in two fold increments. All variants were also grown without antibiotics as a growth control. We calculate the EC50 by fitting Equation (2) using the ‘curve_fit’ function of the ‘Scipy.optimize’ package.(2)% growth=bottom+top-bottom1+EC50drug concentrationHill Coefficient
+The variants in the plate were then placed under the same liquid culture selection procedure as the DMS selection experiments (see ‘Antibiotic selection of the VIM-2 mutagenized library’ above), up to the end of the 6 hr of selection where the cell growth (OD600) was measured. The range of selection is 1–1024 µg/mL for AMP, 0.0625–64 µg/mL for CTX and 0.002–2 µg/mL for MEM, separated in two fold increments. All variants were also grown without antibiotics as a growth control. We calculate the EC50 by fitting Equation (2) using the ‘curve_fit’ function of the ‘Scipy.optimize’ package.
+
+$$
+%growth=bottom+\frac{top-bottom}{1+\frac{EC50}{drugconcentration}^{HillCoefficient}}
+$$
 
 Initial estimates were 100% for top, 0% for bottom, −1.0 for the Hill coefficient and 1.0 for the EC50. In the case where a variant’s growth curve did not produce a successful fit based on the initial estimate, only the Hill coefficient and EC50 were adjusted until the fit was successful. Variants where the EC50 do not appear in the growth curve (stop codons, highly deleterious mutations and empty vector) could not be fitted and were excluded.
 
-The DMS fitness scores (y-values) for each antibiotic were fitted against the EC50 (x-values) using a similar sigmoidal curve in Equation (3) with the ‘curve_fit’ function.(3)DMS fitness score=bottom+top-bottom1+x0EC50Hill Coefficient
+The DMS fitness scores (y-values) for each antibiotic were fitted against the EC50 (x-values) using a similar sigmoidal curve in Equation (3) with the ‘curve_fit’ function.
+
+$$
+DMSfitnessscore=bottom+\frac{top-bottom}{1+\frac{x_{0}}{EC50}^{HillCoefficient}}
+$$
 
 The initial estimates for top, bottom and Hill coefficient are 2.0,–4.0 and 1.0 respectively for all antibiotics. The initial estimate for x0, the inflection point of the curve, was 64 µg/mL for AMP, 4.0 µg/mL for CTX and 0.031 µg/mL for MEM.
 
-The linear region of the sigmoidal curve for the DMS fitness scores was calculated using Equations (4-7), based on the final fitted values for each antibiotic (Sebaugh and McCray, 2003).(4)Ylower=top+( bottom-top1+1/4.6805)(5)Yupper=top+( bottom-top1+4.6805)(6)Xlower=x0( bottom-YlowerYlower-top)1Hill Coefficient(7)Xupper=x0( bottom-YupperYupper-top)1Hill Coefficient
+The linear region of the sigmoidal curve for the DMS fitness scores was calculated using Equations (4-7), based on the final fitted values for each antibiotic (Sebaugh and McCray, 2003).
 
-## Deep sequencing and quality control
+$$
+Y_{lower}=top+(\frac{bottom-top}{1+1/4.6805})
+$$
+
+
+
+$$
+Y_{upper}=top+(\frac{bottom-top}{1+4.6805})
+$$
+
+
+
+$$
+X_{lower}=x_{0}(\frac{bottom-Y_{lower}}{Y_{lower}-top})^{\frac{1}{HillCoefficient}}
+$$
+
+
+
+$$
+X_{upper}=x_{0}(\frac{bottom-Y_{upper}}{Y_{upper}-top})^{\frac{1}{HillCoefficient}}
+$$
+
+### Deep sequencing and quality control
 
 We grouped individual codon libraries into seven groups of 39 consecutive codons (33 for the last group) so that all mutations are within a distance of 117 bp (99 bp for the last group), allowing 150 bp forward and reverse deep sequencing reads to generate full overlap of each group. PCR amplicons of each library group and wtVIM-2 were generated using primers that flank the 117 bp region of each group, where primers have a Nextera transposase adapter sequence (Illumina, Inc) in the 5’ overhangs. We used KAPA HiFi PCR Kit (Kapa Biosystems, Inc) for 15 cycles of amplification each with denaturation at 98°C for 20 s, annealing at 65°C for 5 s and no extension time. The amplicons were extended by PCR again to include the sample indices (i7 and i5) and flow cell binding sequence, then sequenced using a NextSeq 550 sequencing system (Illumina, Inc); all samples were sequenced in the same NextSeq run. The raw sequencing data can be found on the NCBI Sequencing Read Archive (SRA) (BioProject accession: PRJNA606894). Each group under each condition received between 400,000 to 1,000,000 reads, which is at least 160 reads per codon variant on average. There were five samples that received as low as 100,000 reads in one of the two replicates, but the correlation of fitness scores between both replicates still showed an R2 of at least 0.72 and the scores were retained.
 
@@ -138,67 +616,87 @@ To process the deep sequencing data, including merging paired-end reads, quality
 
 Reads that had more than 20 base mismatches between the forward and reverse reads, or that had any bases with a posterior Q score less than 10 were discarded. It was found that above a posterior Q score cut-off of 10 or more, the average proportion of sequencing errors per position stabilized and no sizeable reduction of sequencing errors can be obtained by posterior Q score cut-offs (Figure 1—figure supplement 3A). Usually, 75–85% of all reads passed these filters. Additionally, the expected number of errors per read was calculated from adding the error rates calculated from the posterior Q Scores of every position in the entire read (Edgar and Flyvbjerg, 2015). Reads that had an expected number of error greater than one would also be discarded, however no reads exceeded this limit after the previous filters.
 
-## Variant identification and noise filtering
+### Variant identification and noise filtering
 
 Once forward and reverse reads were merged and filtered by read quality, codon mutants were identified and counted, then aggregated into amino acid (or stop codon) variants. Codon mutations were identified by comparing to the wtVIM-2 DNA sequence as a reference. Since we only intended for single codon mutants in the library, any sequence with mutations in more than one codon was discarded, leading to retention of 80–90% of the filtered reads.
 
 To exclude variants that may be due to sequencing errors alone, we estimated the expected frequency of each variant generated by sequencing errors and excluded variants that have less than 2 × the expected frequency in the non-selected library. Using sequencing data from wtVIM-2, we calculated the error rates that originates from culture growth, sample preparation (PCRs) and sequencing. The error rates at each position was calculated by dividing the errors observed by the total number of reads at that position (Figure 1—figure supplement 4D). The mean of the distribution of the positional errors was used as the estimate for error rates (0.072%) in all positions across the VIM-2 gene. The proportion of each type of nucleotide error (A > T, A > C, A > G, etc.) was calculated to estimate the likelihood of each type of nucleotide error given a starting nucleotide (Figure 1—figure supplement 3B).
 
-We made the observations that 1) sequencing errors in wt sequences will generate single codon mutants, but errors in single codon variants are most likely to be turned into double codon mutants (Figure 1—figure supplement 4A) 2)~5–10% of reads in each library group were occupied by wt sequences while other variants are rarely higher than 0.5% (Figure 1—figure supplement 4B) and 3) single nucleotide sequencing errors are the most abundant type of errors affecting up to 10% of all reads, while higher numbers of sequencing errors are nearly negligible (Figure 1—figure supplement 4C). In summary, single nucleotide errors on wt sequences are the main source of single codon variants arising from sequencing errors. Thus, we first calculated the chance of each of the 64 codons to mutate into the nine adjacent codons by single nucleotide sequencing errors using Equation (8) (Figure 1—figure supplement 4E).(8)chance of codon with substitution X→Y =error rate per position × frequency of substitution X→Y
+We made the observations that 1) sequencing errors in wt sequences will generate single codon mutants, but errors in single codon variants are most likely to be turned into double codon mutants (Figure 1—figure supplement 4A) 2)~5–10% of reads in each library group were occupied by wt sequences while other variants are rarely higher than 0.5% (Figure 1—figure supplement 4B) and 3) single nucleotide sequencing errors are the most abundant type of errors affecting up to 10% of all reads, while higher numbers of sequencing errors are nearly negligible (Figure 1—figure supplement 4C). In summary, single nucleotide errors on wt sequences are the main source of single codon variants arising from sequencing errors. Thus, we first calculated the chance of each of the 64 codons to mutate into the nine adjacent codons by single nucleotide sequencing errors using Equation (8) (Figure 1—figure supplement 4E).
+
+$$
+chance of codon with substitution X→Y =error rate per position \times frequency of substitution X→Y
+$$
 
 For example, to gauge how often AAA gets mutated to GAA by chance, we multiplied the per position error rate by the proportion of G mutations when starting from an A, leading to 0.0719% × 70.7% = 0.000719×0.707 = 0.00051. This means for each 100,000 wt reads that has an AAA codon at a given position, we expect 51 GAA mutants on average that arise by chance at the same position. We calculated expected codon error frequencies from every codon, then summed the expected error frequencies of the codons mutant for each amino acid variant (Figure 1—figure supplement 4F). The error frequency is multiplied by the count of the wt reads in each non-selected library group to arrive at an expected error count for that group. Subsequently, we compared the observed count of amino acid (or codon) variants in the non-selected library to the expected count from errors alone and we accepted a variant as truly existing if the observed count is at least twice the expected count from errors. In addition, because our filtering method only accounts for the nine codons with a single mutation relative to the wt codon, we also applied a count cut-off of 5 for all variants to reduce noise by excluding very low count data.
 
-## Fitness score calculations
+### Fitness score calculations
 
 The fitness score of each variant was calculated according to Equation (1) (see main text). To calculate the fitness score of a given amino acid (or codon) variant, the read count of the variant was first normalized to frequencies within the non-selected or selected library group. Variants that exist in the non-selected library but disappear in the selected library were interpreted to have been removed by antibiotic selection, and were given a dummy count of 1 to emulate the minimum frequency observable for that variant. The frequency of the variant after selection was divided by the frequency of the same variant in the library grown without selection for an enrichment ratio; synonymous codon variants were also considered as variants rather than wt during scoring. The variant enrichment ratio was then normalized to the enrichment ratio of the wt. The final score was expressed in Log2 units, and scores were calculated separately across the seven groups and separately for each replicate.
 
 When combining all data across the seven groups, we subtracted the mean fitness scores of all synonymous variants in each group from all variants of that group to center the mean fitness of synonymous variants at a fitness score of 0. To combine scores from replicates, we simply averaged the fitness scores across the two replicates, and take the single score if only one replicate contained the variant above noise in the non-selected library.
 
-## Fitness effect classification
+### Fitness effect classification
 
 To classify each amino acid variant as positive, neutral or negative for each of the three selection antibiotics, we use the score of each variant in a two tailed z-test on a normal distribution (null-model) with the same mean and standard deviation as our synonymous distribution (244 synonymous variants total). The P-values were then FDR corrected to an α of 0.05 using the Benjamini-Hochberg procedure; only nonsynonymous variants were tested and the total number of tests was 5291. The variants with scores that are significantly different from the synonymous distribution after FDR correction are then classified as ‘positive’ if their score is greater than the synonymous mean and ‘negative’ if the score is less, while the remaining variants are classified as ‘neutral’.
 
-## Linear model of DMS scores with various predictors
+### Linear model of DMS scores with various predictors
 
 We generated a linear model in R using a combination of terms to try and find properties that best explain the behavior we see in the DMS fitness scores. Using the fitness score as a response, we tried using 1) wild-type (wt) amino acid 2) variant (var) amino acid 3) accessible surface area (ASA) of the residue calculated from the crystal structure of wt VIM-2 (PDB: 4bz3) using ASA view (Ahmad et al., 2004) 4) change in amino acid volume (Perkins, 1986) (Δvolume = volumevar volumewt) 5) change in amino acid polarity (hydrophathy index Kyte and Doolittle, 1982) (Δpolarity = Δpolarityvar – Δpolaritywt) 6) distance of the alpha carbon of each residue in the crystal structure to the active site water held between the Zn ions 7) Rosetta predicted stability change between the variant and the wt (ΔΔG = ΔGvar-ΔGwt) (also see ‘Rosetta ΔΔG Calculation’ below) and 8) BLOSUM62 score for the substitution from wt to variant. Only variants from positions observable in the crystal structure were modelled (positions 32 to 262), and synonymous variants were excluded.
 
 All parameters were first modelled individually as predictors with DMS fitness score as the response, and the predictors with R2 higher than 0.10 are then modelled in combinations of two or more until the combination with the least predictors and the highest adjusted R2 was found. Predictors with R2 less than 0.10 are also retried in combination with the best predictors when optimizing for adjusted R2. Interaction between predictors were tested, but they did not improve adjusted R2 and were excluded for the sake of simplicity. The relative contribution of each term to the overall adjusted R2 were calculated using the R package ‘relaimpo’, using the ‘lmg’ method (Groemping, 2006).
 
-The final equation of the linear model is shown in Equation (9) where the fitness score of a given variant is the additive combination of the model intercept β0 and the various properties and the coefficients of the properties (e.g. βASA and ASA) plus a random error term ε.(9)FitnessScore=β0+βASA×ASA+βΔΔG×ΔΔG+βwt×wt+βvar×var+ϵ
+The final equation of the linear model is shown in Equation (9) where the fitness score of a given variant is the additive combination of the model intercept β0 and the various properties and the coefficients of the properties (e.g. βASA and ASA) plus a random error term ε.
+
+$$
+FitnessScore=\beta_{0}+\beta_{ASA}\timesASA+\beta_{ΔΔG}\timesΔΔG+\beta_{wt}\timeswt+\beta_{var}\timesvar+ϵ
+$$
 
 The categorical predictors wt and var are simplified in the equation and each is actually a collection of terms in the model, where every amino acid is a single binary term represented by 0 or 1 such that 1 indicates the presence of the amino acid. For example, the variant Q60V has Q = 1 for wt and V = 1 for var, while all other wt and var amino acids are set to 0. Ala is not present as one of the estimates in either wt or var, because they are used in calculating the intercept; this is the mean fitness of all data points where either wt = 1 or var = 1 for alanine.
 
-## Rosetta δδg calculation
+### Rosetta δδg calculation
 
-To estimate the effects of each VIM-2 variant on the stability of the protein, we used the Rosetta ‘ddg_monomer’ application to calculate the folding energy of a monomeric protein crystal structure. Rosetta was run on the Compute Canada server Cedar using a Rosetta 3.8 installation. Following the ‘ddg_monomer’ documentation, the VIM-2 structure (PDB: 4bz3) was first processed using ‘preminimize’ to pre-optimize the packing of the crystal structure and generate a constraints file. Then, all single amino acid variant structures and the wt structure at each position were simulated 50 times each using ‘ddg_monomer’, configured to protocol 16 as specified in Kellogg et al., 2011 while using Talaris 2014 as the scoring function. We store the simulated structures (variant and wt) as PDB files and scored them using the Rosetta ‘score’ function with Talaris 2014 weights to obtain the predicted ΔG in Rosetta Energy Units (REU). We average the predicted ΔG of all 50 replicates of each variant or wt. The ΔΔG is calculated using Equation (10) as the difference in average ΔG between variant and wt at the same position.(10)ΔΔG=ΔGvar−ΔGwt
+To estimate the effects of each VIM-2 variant on the stability of the protein, we used the Rosetta ‘ddg_monomer’ application to calculate the folding energy of a monomeric protein crystal structure. Rosetta was run on the Compute Canada server Cedar using a Rosetta 3.8 installation. Following the ‘ddg_monomer’ documentation, the VIM-2 structure (PDB: 4bz3) was first processed using ‘preminimize’ to pre-optimize the packing of the crystal structure and generate a constraints file. Then, all single amino acid variant structures and the wt structure at each position were simulated 50 times each using ‘ddg_monomer’, configured to protocol 16 as specified in Kellogg et al., 2011 while using Talaris 2014 as the scoring function. We store the simulated structures (variant and wt) as PDB files and scored them using the Rosetta ‘score’ function with Talaris 2014 weights to obtain the predicted ΔG in Rosetta Energy Units (REU). We average the predicted ΔG of all 50 replicates of each variant or wt. The ΔΔG is calculated using Equation (10) as the difference in average ΔG between variant and wt at the same position.
 
-## RNA folding energy calculation for single codon mutants
+$$
+ΔΔG=ΔG_{var}−ΔG_{wt}
+$$
 
-The RNA folding energy contribution of the 5’ UTR and signal peptide region is calculated according to a previously described method (Bhattacharyya et al., 2018). The ΔG of folding of the 5’ UTR and signal peptide is calculated using equation (11).(11)ΔG1,118=ΔG1,841−ΔG119,841
+### RNA folding energy calculation for single codon mutants
+
+The RNA folding energy contribution of the 5’ UTR and signal peptide region is calculated according to a previously described method (Bhattacharyya et al., 2018). The ΔG of folding of the 5’ UTR and signal peptide is calculated using equation (11).
+
+$$
+ΔG_{1,118}=ΔG_{1,841}−ΔG_{119,841}
+$$
 
 Each ΔG term is calculated using the NUPACK software package (Zadeh et al., 2011), using the ‘pfunc’ program which calculates the ΔG of all RNA secondary structures from the partition function. All folding energies were calculated using default conditions, with [Na+]=1 M and T = 37°C, and the results are in units of kcal mol−1. The subscripts for each ΔG term indicates the first and last nucleotide position in the transcript that is used for calculating the ΔG of folding, respectively. Thus, ΔG1,841 represents the calculated folding energy of the full transcript (including the 5’ UTR and coding region, but excluding the 3’ UTR), while ΔG119,841 is the folding energy of the transcript after the signal peptide. The interpretation of ΔG1,118 is that it is the folding energy contribution of the RNA transcript up to the end of the signal peptide, including energy from non-local interactions with downstream parts of the transcript but excluding folding energy of interactions exclusively within positions downstream of the signal peptide. The DNA sequence of the wtVIM-2 transcript used to calculate the folding energies is shown below, with positions 1–118 italicized and the translated signal peptide region underlined for clarity; the sequence is converted to RNA for calculation.
 
 5’-CTGATAAATGCTTCAATAATATTGAAAAAGGAAGCCCATGGGATTCAAACTTTTGAGTAAGTTATTGGTCTATTTGACCGCGTCTATCATGGCTATTGCGAGCCCGCTCGCTTTTTCCGTAGATTCTAGCGGAGAATATCCGACAGTCAGCGAAATTCCGGTCGGGGAGGTCCGGCTTTACCAGATTGCCGATGGTGTTTGGTCGCATATCGCAACGCAGTCGTTTGATGGCGCAGTCTACCCGTCCAATGGTCTCATTGTCCGTGATGGTGATGAGTTGCTTTTGATTGATACAGCGTGGGGTGCGAAAAACACAGCGGCACTTCTCGCGGAGATTGAGAAGCAAATTGGACTTCCTGTAACGCGTGCAGTCTCCACGCACTTTCATGACGACCGCGTCGGCGGCGTTGATGTCCTTCGGGCGGCTGGGGTGGCAACGTACGCATCACCGTCGACACGCCGGCTAGCCGAGGTAGAGGGGAACGAGATTCCCACGCACTCTCTTGAAGGACTTTCATCGAGCGGGGACGCAGTGCGCTTCGGTCCAGTAGAACTCTTCTATCCTGGTGCTGCGCATTCGACCGACAACTTAATTGTGTACGTCCCGTCTGCGAGTGTGCTCTATGGTGGTTGTGCGATTTATGAGTTGTCACGCACGTCTGCGGGGAACGTGGCCGATGCCGATCTGGCTGAATGGCCCACCTCCATTGAGCGGATTCAACAACACTACCCGGAAGCACAGTTCGTCATTCCGGGGCACGGCCTGCCGGGCGGTCTTGACTTGCTCAAGCACACAACGAATGTTGTAAAAGCGCACACAAATCGCTCAGTCGTTGAGTAA-3’.
 
-Equation (12) is used to calculate the ΔΔG of folding upon codon mutations in the signal peptide.(12)ΔΔGsigpepRNA=(ΔG1,118var−ΔG1,118wt)/(kT)
+Equation (12) is used to calculate the ΔΔG of folding upon codon mutations in the signal peptide.
+
+$$
+ΔΔG_{sigpepRNA}=(ΔG_{1,118var}−ΔG_{1,118wt})/(kT)
+$$
 
 ΔG1,118wt is the folding energy of the wtVIM-2 signal peptide sequence shown above, while ΔG1,118var is the folding energy of the signal peptide sequence with a single codon mutation. The difference in folding energy is normalized to the thermal energy factor kT, where k = 0.0019872041 kcal mol−1 K−1 and T = 310.15 K (37°C).
 
-## Identification of critical residues and temperature dependence
+### Identification of critical residues and temperature dependence
 
 We classify the role of residues in wtVIM-2 by examining the DMS fitness scores of selection conducted at 128 µg/mL and 16 µg/mL AMP at 37°C and 25°C (four data sets), excluding signal peptide residues 1–26. Residues are classified as ‘essential’ when > 75% of variants are below a fitness score of −2.0 (halfway between zero and the lower score limit of −4) when selected at the least stringent condition of 16 µg/mL and 25°C. Residues are classified as ‘tolerant’ when > 75% of variants are above a fitness score of −1.0 (capturing the lower end of the peak centered at neutral fitness) when selected at the most stringent condition of 128 µg/mL and 37°C. Residues are classified as ‘temperature dependent’ when the fitness score of 25°C selection is higher than 37°C selection of the same AMP concentration by at least 2.0, for two or more variants at either 128 µg/mL or 16 µg/mL AMP. The ‘temperature dependent’ classifications overwrite ‘essential’ or ‘tolerant’ classifications (four occurrences total). Residues that do not fall into the three other classifications are defined as ‘residue dependent’.
 
-## Detecting hydrogen bonds in the wtVIM-2 crystal structure
+### Detecting hydrogen bonds in the wtVIM-2 crystal structure
 
 Potential hydrogen bonding pairs in the wtVIM-2 crystal structure (PDB: 5yd7, chain A only) were extracted using the ‘Polarpairs’ script in PyMol (https://pymolwiki.org/index.php/Polarpairs). The script filters for pairs of h-bond donor and acceptor atoms within a defined distance and h-bond angle; we set the distance limit to be within 3.6 Å and the h-bond angle to be greater than 63°. The script returns atom indices, which were converted to PBD atom IDs using pymol’s built in ‘id_atom’ function. The atoms were then extracted from the 5yd7 pdb file using the atom IDs, and the atom’s name was used to determine if the h-bond was formed between backbone atoms only (‘N’ and ‘O’ atoms indicate backbone amides and carbonyls, respectively), between sidechain atoms only or between backbone and sidechain atoms. All extracted h-bonds can be found in Supplementary file 2G.
 
-## Analysis of specificity variants
+### Analysis of specificity variants
 
 We define variants with altered specificity by filtering for variants with a change in fitness effect classifications (positive, neutral and negative, defined in ‘Fitness effect classification’) as well as a fitness score difference of 2.0 between at least 2 of the three antibiotics being compared.
 
 Specificity positions are visualized on the wtVIM-2 structure (PDB: 5yd7) using PyMol, with substrates overlaid from aligned MBL homolog structures (AMP - NDM-1(PDB:4hl2), cefuroxime – NDM-1(PDB:4rl0), MEM – VIM-1 (PDB:5n5i)). To overlay the substrates, the six metal binding residues (structure positions 114, 116, 118, 179, 198, 240 for VIM-1/VIM-2 and 120, 122, 124, 189, 208, 250 for NDM-1) and the two active-site Zn ions were selected from each structure, and the PyMol ‘align’ function was used with the VIM-2 active-site as the target object and the other structure’s active-site as the mobile object. When structures have more than one chain (PDB: 5yd7, 4hl2 and 4rl0), only chain A was used in the alignment. The protein portions of the homolog structures are hidden after alignment, to visualize just the substrates with the wtVIM-2 structure.
 
-## Collection of naturally occurring VIM variants
+### Collection of naturally occurring VIM variants
 
 Amino acid sequences of naturally observed VIM variants were extracted by performing a BLASTP search of the NCBI non-redundant protein database (NCBI Resource Coordinators, 2018), using the protein sequence of our in-house VIM-2 with Gly removed from the 2nd position, identical to the VIM-2 discovered in Pseudomonas aeruginosa isolates (UniProt accession: A4GRB6). We retained all BLASTP results with at least 70% identity and >90% query coverage. We also retrieved protein sequences from the Comprehensive Antibiotic Resistance Database (CARD) (Jia et al., 2017). All sequences from both sources were merged and sequences that are exactly identical in length and sequence were combined, while sequences that are less than 250 or greater than 290 residues were excluded. Recombinant variants VIM-12 and VIM-25 were excluded from this analysis, as well as VIM-14 (UniProt accession: Q6GUL7) which is a member of the VIM-1 clade despite being labeled as both VIM-11 and VIM-14 (UniProt accession: A0SWU7) (both are in the VIM-2 clade).
 

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.15910.001 HIV-1 Tat hijacks the human superelongation complex (SEC) to promote proviral transcription. Here we report the 5.9 Å structure of HIV-1 TAR in complex with HIV-1 Tat and human AFF4, CDK9, and CycT1. The TAR central loop contacts the CycT1 Tat-TAR recognition motif (TRM) and the second Tat Zn 2+ -binding loop. Hydrogen-deuterium exchange (HDX) shows that AFF4 helix 2 is stabilized in the TAR complex despite not touching the RNA, explaining how it enhances TAR binding to the SEC 50-fold. RNA SHAPE and SAXS data were used to help model the extended (Tat Arginine-Rich Motif) ARM, which enters the TAR major groove between the bulge and the central loop. The structure and functional assays collectively support an integrative structure and a bipartite binding model, wherein the TAR central loop engages the CycT1 TRM and compact core of Tat, while the TAR major groove interacts with the extended Tat ARM. DOI: http://dx.doi.org/10.7554/eLife.15910.001
+HIV-1 Tat hijacks the human superelongation complex (SEC) to promote proviral transcription. Here we report the 5.9 Å structure of HIV-1 TAR in complex with HIV-1 Tat and human AFF4, CDK9, and CycT1. The TAR central loop contacts the CycT1 Tat-TAR recognition motif (TRM) and the second Tat Zn2+-binding loop. Hydrogen-deuterium exchange (HDX) shows that AFF4 helix 2 is stabilized in the TAR complex despite not touching the RNA, explaining how it enhances TAR binding to the SEC 50-fold. RNA SHAPE and SAXS data were used to help model the extended (Tat Arginine-Rich Motif) ARM, which enters the TAR major groove between the bulge and the central loop. The structure and functional assays collectively support an integrative structure and a bipartite binding model, wherein the TAR central loop engages the CycT1 TRM and compact core of Tat, while the TAR major groove interacts with the extended Tat ARM.
 
 ## Introduction
 
@@ -44,97 +44,195 @@ The structure of TAR bound to Tat:AFF4:P-TEFb reveals extensive interactions bet
 
 ## Results
 
-## HDX-MS of Tat:AFF:P-TEFb with and without HIV-1 TAR
+### HDX-MS of Tat:AFF:P-TEFb with and without HIV-1 TAR
 
-To localize the regions of the Tat:AFF4:P-TEFb complex that undergo HIV-1 TAR-induced conformational changes, we performed hydrogen-deuterium exchange mass spectrometry (HDX-MS). The HDX rate of a protein region depends on its flexibility, the amount of hydrogen bonding with backbone amides, and solvent accessibility (
+To localize the regions of the Tat:AFF4:P-TEFb complex that undergo HIV-1 TAR-induced conformational changes, we performed hydrogen-deuterium exchange mass spectrometry (HDX-MS). The HDX rate of a protein region depends on its flexibility, the amount of hydrogen bonding with backbone amides, and solvent accessibility (Hoofnagle et al., 2003; Percy et al., 2012). We compared absolute deuteron incorporation into different segments of Tat:AFF4:P-TEFb in the absence (apo complex) and in the presence of saturating amounts of HIV-1 TAR (TAR complex) (Figure 1A). The observed peptic peptides of the apo complex covered more than 80% of the Tat:AFF4:P-TEFb sequence (Figure 1—figure supplement 1–3). Our HDX data of the apo complex in solution are in good agreement with the crystal structure of Tat:AFF4:P-TEFb (Schulze-Gahmen et al., 2014; Gu et al., 2014) (Figure 1A). The C-terminal segment (residues 59-67) of the synthetic AFF4 peptide (32–67) shows 70% deuteration after 10 s and almost complete deuteration within 3 min (Figure 1B). Although the crystal structure indicates an α-helix in this region, high B-factors indicate high mobility and partial unfolding of this terminal helix in solution, in agreement with the high deuteration levels observed in the HDX experiment. The Tat-TAR recognition motif (TRM; residues 246 to 262 in CycT1, (Das et al., 2004; Garber et al., 1998) also showed almost complete deuteration within 10 s in the apo complex (Figure 1B), which is consistent with multiple conformations for the TRM in the crystal structure (Schulze-Gahmen et al., 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig1-v2.jpg)
 
-**Figure 1.:** (A) Structure of the Tat:AFF4:P-TEFb complex colored according to the absolute percentage of deuterons incorporated in the presence and absence of TAR after 30 s in D2O. (B) TAR-dependent HDX kinetics of selected segments of Tat:AFF4:P-TEFb complex. Segments with more than 2.5 and 1 amide hydrogens protected in the presence of TAR at time‐point 10 s are colored in dark and light blue, respectively. The HDX kinetics for these segments in the absence of TAR (black) and the presence of TAR (cyan) are shown.DOI: http://dx.doi.org/10.7554/eLife.15910.002
+**Figure 1.:** (A) Structure of the Tat:AFF4:P-TEFb complex colored according to the absolute percentage of deuterons incorporated in the presence and absence of TAR after 30 s in D2O. (B) TAR-dependent HDX kinetics of selected segments of Tat:AFF4:P-TEFb complex. Segments with more than 2.5 and 1 amide hydrogens protected in the presence of TAR at time‐point 10 s are colored in dark and light blue, respectively. The HDX kinetics for these segments in the absence of TAR (black) and the presence of TAR (cyan) are shown.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Each block indicates peptide analyzed. Each block contains three time-points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time-point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.DOI: http://dx.doi.org/10.7554/eLife.15910.003
+**Figure 1—figure supplement 1.:** Each block indicates peptide analyzed. Each block contains three time-points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time-point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Each block indicates peptide analyzed. Each block contains three time points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.DOI: http://dx.doi.org/10.7554/eLife.15910.004
+**Figure 1—figure supplement 2.:** Each block indicates peptide analyzed. Each block contains three time points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Each block indicates peptide analyzed. Each block contains three time-points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time-point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.DOI: http://dx.doi.org/10.7554/eLife.15910.005
+**Figure 1—figure supplement 3.:** Each block indicates peptide analyzed. Each block contains three time-points; from the top, 10 s, 30 s and 3 min. The absolute deuteration levels of each segment and corresponding difference map at each time-point are shown by different colors, as indicated on the right of the Figure. Peptide coverage is shown above the deuteration map.
 
 Compared with the apo complex, we observed strong protection for the CycT1 TRM and AFF4 helix α2 (residues 59–65) after TAR binding (Figure 1B, dark blue segments) (Figure 1—figure supplement 1–3). These two segments are adjacent to each other in the crystal structure of Tat:AFF4:P-TEFb, consistent with their mutual cooperation in forming the TAR binding site. In contrast to CycT1 and AFF4, Tat exhibited a lesser degree of protection, localized to the N-terminal segment (residues 1-33) (Figure 1B, light blue segments). Surprisingly, the Tat ARM did not show any significant protection in HDX after TAR binding despite its well-established role in TAR binding (Weeks and Crothers, 1991; Calnan et al., 1991) (Figure 1B). This observation indicates that Tat ARM–TAR interactions are mediated primarily by amino acid side chains, without extensive hydrogen bonding and solvent exclusion of main-chain amide protons.
 
-## SHAPE mapping of the Tat:AFF4:P-TEFb complex on the HIV 5’UTR
+### SHAPE mapping of the Tat:AFF4:P-TEFb complex on the HIV 5’UTR
 
-We performed SHAPE analysis (
+We performed SHAPE analysis (Merino et al., 2005) to map the interactions of the Tat:AFF4:P-TEFb complex on the HIV 5’UTR, which includes the TAR sequence at its 5’ end. Experiments were done using the 344 nt-long 5’ end of the HIV genome (Heng et al., 2012) in the presence and absence of the Tat-AFF4-P-TEFb complex. Upon protein complex binding, the major SHAPE changes cluster in the 5’ TAR region of the 5’UTR (Figure 2A,B) with significant SHAPE changes observed around the bulge region at A17, the bulge region A22-U25, as well as the loop region C30-A35. As expected, no significant reactivity changes were observed in the regions 3’ to TAR. The SHAPE reactivity for some nucleotides in bulge A22-U25 and loop C30-A35 is extremely high (above 3) in the absence of Tat:AFF4:P-TEFb and remains high even after Tat:AFF4:P-TEFb binding. TAR binding reduces SHAPE reactivity by 0.3-0.4 and 0.2-1.2 for nucleotides in the bulge and loop region, respectively. The pattern of changes in SHAPE reactivity for TAR after binding the SEC is significantly different from changes observed after TAR binding to a Tat peptide covering the ARM region (Kenyon et al., 2015). This difference is expected because of additional contacts between CycT1 and TAR, which lead to higher affinity and more specific interactions between TAR and the SEC (Richter et al., 2002b; Zhang et al., 2000) compared to interactions between TAR and a small arginine-rich peptide from Tat. Because reduction in SHAPE activity correlates with reduced flexibility of the respective RNA regions (McGinnis et al., 2012), the results for the TAR-SEC complex indicate a stabilization of the bulge and loop structure through direct contacts between TAR and the SEC (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig2-v2.jpg)
 
-**Figure 2.:** (A) SHAPE reactivity of the entire HIV-1 5’UTR either alone or in complex with the SEC are shown in red and blue, respectively. SHAPE reactivity profiles are normalized using the 2/8 rule, where the top 2% of reactive nucleotides are excluded and the average of the next 8% of reactive nucleotides is used as the normalization factor. The left insert is a zoomed-in view of the TAR region. The right insert shows the secondary structure of TAR color-coded by the SHAPE profile of the TAR region alone and the SHAPE changes in the TAR region upon SEC binding. (B) SHAPE changes of the HIV-1 5’UTR upon SEC binding.DOI: http://dx.doi.org/10.7554/eLife.15910.006
+**Figure 2.:** (A) SHAPE reactivity of the entire HIV-1 5’UTR either alone or in complex with the SEC are shown in red and blue, respectively. SHAPE reactivity profiles are normalized using the 2/8 rule, where the top 2% of reactive nucleotides are excluded and the average of the next 8% of reactive nucleotides is used as the normalization factor. The left insert is a zoomed-in view of the TAR region. The right insert shows the secondary structure of TAR color-coded by the SHAPE profile of the TAR region alone and the SHAPE changes in the TAR region upon SEC binding. (B) SHAPE changes of the HIV-1 5’UTR upon SEC binding.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.15910.007
+### SAXS of the SEC complex with TAR
 
-## SAXS of the SEC complex with TAR
-
-SAXS data were collected for Tat:AFF4:P-TEFb complex in the presence and absence of TAR (
+SAXS data were collected for Tat:AFF4:P-TEFb complex in the presence and absence of TAR (Figure 3A). A comparison of SAXS data reveals significant differences in the P(r) function (Figure 3B), radius of gyration (RG), and the Porod exponent (Table 1). The RG of the TAR complex increases by 2.8 Å upon TAR binding. The Porod exponent, in contrast, is smaller for the TAR complex than the apo complex. The Porod exponent is a measure of the compactness of a molecule, with a larger exponent indicating a more compact structure. The TAR complex appears slightly less compact than the apo structure, which agrees with the differences in the shape of the P(r) function. The P(r) curve for the TAR complex is shifted to larger radii, with especially large differences in the distance distributions at r values between 70 and 130 Å.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig3-v2.jpg)
 
-**Figure 3.:** (A) Experimental intensities for the apo complex (left) and the TAR complex (right). Inserts in the top right corner show the Guinier plots for each data set. (B) The distance distribution plots were computed from the experimental data and normalized to the maximum value of unity.DOI: http://dx.doi.org/10.7554/eLife.15910.008
+**Figure 3.:** (A) Experimental intensities for the apo complex (left) and the TAR complex (right). Inserts in the top right corner show the Guinier plots for each data set. (B) The distance distribution plots were computed from the experimental data and normalized to the maximum value of unity.
 
-## Crystal structure of the SEC complex with TAR
+**Table 1.**
+ Overall parameters of Tat:AFF4:P-TEFb complexes determined by SAXS
 
-To clearly define the interactions between TAR and Tat:P-TEFb, and to determine if direct interactions existed between TAR and AFF4, we solved the crystal structure of the TAR:Tat:SEC complex at 5.9 Å resolution (
+
+<table>
+  <thead>
+    <tr>
+      <th>Complex</th>
+      <th>RG, Å*</th>
+      <th>Dmax, Å*</th>
+      <th>Porod exponent*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tat:AFF4:P-TEFb</td>
+      <td>31.2</td>
+      <td>126</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>TAR:Tat:AFF4:P-TEFb</td>
+      <td>33.9</td>
+      <td>134</td>
+      <td>3.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Parameters were determined using the program SCÅTTER (Förster et al., 2010)._
+
+### Crystal structure of the SEC complex with TAR
+
+To clearly define the interactions between TAR and Tat:P-TEFb, and to determine if direct interactions existed between TAR and AFF4, we solved the crystal structure of the TAR:Tat:SEC complex at 5.9 Å resolution (Table 2). The structure was solved by molecular replacement with one copy of the Tat:AFF4:P-TEFb complex (PDB ID 4OGR) in the asymmetric unit. After rigid-body and torsion angle molecular dynamics refinement with deformable elastic network (DEN) restraints (Table 2) (Schröder et al., 2010; Brunger et al., 2012) strong density for the TAR RNA became visible in the Fo-Fc electron density map (Figure 4—figure supplement 1) which allowed placement of one TAR molecule (PDB ID 1ARJ) into the asymmetric unit. The complex was further refined to R/Rfree = 0.211/0.311 with good geometry (Table 2) and an excellent fit to the density (Figure 4—figure supplement 2).
+
+**Table 2.**
+ X-ray data collection and refinement statistics for Tat:AFF4:P-TEFb with TAR21.Table 2—source data 1.Diffraction data and refinement analysis.Twinning analysis by L-test in Ctruncate (A) and Xtriage indicate no twinning. Blue curve is acentric untwinned data, green curve acentric twinned data, and red curve observed data from Tat:AFF4:P-TEFb-TAR co-crystal. (B, C) Optimization of DEN refinement parameters using the web service for low resolution crystal structure refinement (https://portal.sbgrid.org/d/apps/den/). (D) Log-file of twinning analysis in CNS.Table 2—source data 2.RSCC and RSR=sum|r-r_calc|/sum[r+r_calc| using 2fofc map and D*Fcalc.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P3221</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions: a, b, c</td>
+      <td>146.87, 146.87, 103.75</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>50.0-5.9 (6.1–5.9)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections*</td>
+      <td>3607 (339)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)*</td>
+      <td>10.22 (0.35)</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)*</td>
+      <td>17.8 (&gt;100)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 high resolution shell</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>9.68 (10.25)</td>
+    </tr>
+    <tr>
+      <td>Twin fraction†</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Temperature (K)</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Mosaicity (°)</td>
+      <td>0.175</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest resolution shell.†Value from Ctruncate (see Table 2—source data 1)§parameter for DEN refinement in CNS (see Table 2—source data 1)#Values from COOT._
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig4-v2.jpg)
 
-**Figure 4.:** The top panel shows an overview of the complex with the TAR loop next to CycT1 TRM (yellow) and Tat (red), and the TAR bulge close to Tat R49, the start of the Tat ARM. Zn2+ ions are shown as grey spheres. The close-up view below highlights the interactions of the Zn2+ binding loop and CycT1 TRM with the TAR-loop and the role of AFF4 (blue) in indirectly stabilizing the Tat-CycT1 surface involved in TAR interactions. TAR nucleotides with reduced SHAPE activity (< −0.2) in the presence of SEC are colored blue, those with increased SHAPE activity (> 0.2) are colored red.DOI: http://dx.doi.org/10.7554/eLife.15910.013
+**Figure 4.:** The top panel shows an overview of the complex with the TAR loop next to CycT1 TRM (yellow) and Tat (red), and the TAR bulge close to Tat R49, the start of the Tat ARM. Zn2+ ions are shown as grey spheres. The close-up view below highlights the interactions of the Zn2+ binding loop and CycT1 TRM with the TAR-loop and the role of AFF4 (blue) in indirectly stabilizing the Tat-CycT1 surface involved in TAR interactions. TAR nucleotides with reduced SHAPE activity (< −0.2) in the presence of SEC are colored blue, those with increased SHAPE activity (> 0.2) are colored red.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Clear density for TAR allowed placement of a TAR molecule (PDB ID 1ARJ). TAR is mediating important crystal contacts by interacting with a symmetry related TAR (grey).DOI: http://dx.doi.org/10.7554/eLife.15910.014
+**Figure 4—figure supplement 1.:** Clear density for TAR allowed placement of a TAR molecule (PDB ID 1ARJ). TAR is mediating important crystal contacts by interacting with a symmetry related TAR (grey).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Density around Cyclin T1, Tat, and TAR is contoured at 1.4 sigma (A). Density for CDK9 (B) is contoured at 1.3 sigma.DOI: http://dx.doi.org/10.7554/eLife.15910.015
+**Figure 4—figure supplement 2.:** Density around Cyclin T1, Tat, and TAR is contoured at 1.4 sigma (A). Density for CDK9 (B) is contoured at 1.3 sigma.
 
 The extended TAR loop region 29-33 contributes the main interactions with the SEC. It interacts with the protein complex surface composed of CycT1 TRM and the Tat cysteine-rich region, especially the Zn2+-coordinating loop (Tat 24-29). This structure rules out direct interactions between TAR and AFF4 α2. TAR loop nucleotides G32 and G33 abut the Tat Zn2+ -coordination loop (24-29) and CycT TRM, residues 259-261. The backbone phosphates of nucleotides 30–32 contact basic residues in the CycT TRM region (Figure 4). This orientation places the N-terminus of the Tat ARM (Arg49) at the widest point in the TAR major groove, which is 13 Å wide between nucleobases C24 and G34. However, there is not interpretable electron density present for residues in the Tat ARM region at the limited resolution of this crystal structure. This seems consistent with the lack of protection of this region seen in the HDX experiment (Figure 1B), but it is important not to overinterpret this observation given the limitations of the 5.9 Å map.
 
 The structure of the TAR complex with Tat:AFF4:P-TEFb shows no direct contacts between AFF4 and TAR. Instead, AFF4 helix α2 and its N-terminal loop connection to helix α1 are interacting with CycT1 TRM and Tat helix α1. The interaction network between these three protein regions most likely stabilizes the protein interaction surface for TAR and indirectly increases Tat:SEC affinity for TAR in the presence of AFF4 (Schulze-Gahmen et al., 2014).
 
-## Modeling of Tat ARM and CycT1 TRM
+### Modeling of Tat ARM and CycT1 TRM
 
-The Tat ARM and CycT TRM are key components for TAR binding by the SEC. Since the crystal structure shows no electron density for Tat ARM and the molecular replacement model for CycT1-TRM segment adopts multiple conformations we modeled the Tat ARM and refined the structure of the CycT1-TRM segment using the MODELLER 9.15 loop modeling protocol (
+The Tat ARM and CycT TRM are key components for TAR binding by the SEC. Since the crystal structure shows no electron density for Tat ARM and the molecular replacement model for CycT1-TRM segment adopts multiple conformations we modeled the Tat ARM and refined the structure of the CycT1-TRM segment using the MODELLER 9.15 loop modeling protocol (Šali and Blundell, 1993; Fiser and Šali, 2003). Using hierarchical clustering and DOPE scoring (Shen and Sali, 2006) we obtained five best scoring clusters with precisions between 2.5 and 6.3 Å (Figure 5). The computed small angle scattering fits well with SAXS data obtained from the TAR complex in solution with χ=0.86 (Figure 5—figure supplement 1). The CycT1 TRM segment is anchored by CycT1 Cys261, which coordinates one of the Tat Zn2+ ions and displays structural variability in the center part of the TRM (Figure 5B). The Tat ARM region is N-terminally anchored by Tat Tyr47, which binds to a pocket on the CycT1 surface and interacts with CycT1 residues Leu44, Asp47, and Cys111 (Figure 5C). From there, the ARM (residues 49-57) extends into the major groove of TAR stretching from the TAR bulge towards the phosphate backbone opposite the bulge. Basic side chains in the Tat ARM are in positions where they can form previously described interactions with the TAR G26 nucleobase, and phosphates P22, P23, and P40 in the TAR backbone (Puglisi et al., 1993; Aboul-ela et al., 1995).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig5-v2.jpg)
 
-**Figure 5.:** (A) Overview of the whole complex with multiple conformations for ARM and TRM, using the same color coding as in Figure 4. (B) Closeup of the interactions between TAR–loop and CycT1 TRM. The complex is rotated 90 degree around x relative to (A). (C) Tat ARM is N-terminally anchored by Tat Y47 to CycT1. The extended ARM is located in the TAR major groove, positioning R52 and R53 close to the TAR bulge and TAR phosphate backbone.DOI: http://dx.doi.org/10.7554/eLife.15910.016
+**Figure 5.:** (A) Overview of the whole complex with multiple conformations for ARM and TRM, using the same color coding as in Figure 4. (B) Closeup of the interactions between TAR–loop and CycT1 TRM. The complex is rotated 90 degree around x relative to (A). (C) Tat ARM is N-terminally anchored by Tat Y47 to CycT1. The extended ARM is located in the TAR major groove, positioning R52 and R53 close to the TAR bulge and TAR phosphate backbone.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** The scattering profile calculated from the model matches the experimental profile with χ = 0.86.DOI: http://dx.doi.org/10.7554/eLife.15910.017
+**Figure 5—figure supplement 1.:** The scattering profile calculated from the model matches the experimental profile with χ = 0.86.
 
-## Effect of AFF4 mutants on TAR binding and transcriptional activation
+### Effect of AFF4 mutants on TAR binding and transcriptional activation
 
-The strong protection of AFF4 helix α2 (residues 58-66) observed in HDX experiments could be due to direct interactions between the AFF4 helix 2 and TAR or to an indirect stabilization of the helical structure of AFF4 after TAR binding. To distinguish between these two possibilities, we explored the effect of mutations in the surface-exposed side of AFF4 helix α2 on TAR binding. We performed electrophoretic mobility shift assays (EMSA) with labeled TAR and Tat:P-TEFb complex in the presence of excess WT or mutant AFF4 fragment (residues 2-73) (
+The strong protection of AFF4 helix α2 (residues 58-66) observed in HDX experiments could be due to direct interactions between the AFF4 helix 2 and TAR or to an indirect stabilization of the helical structure of AFF4 after TAR binding. To distinguish between these two possibilities, we explored the effect of mutations in the surface-exposed side of AFF4 helix α2 on TAR binding. We performed electrophoretic mobility shift assays (EMSA) with labeled TAR and Tat:P-TEFb complex in the presence of excess WT or mutant AFF4 fragment (residues 2-73) (Figure 6A). The single site mutants AFF4 E61A and AFF4 K63A show a three-fold and two-fold reduction in TAR binding, respectively, while the effect of the other mutations is negligible. The gel shift in the absence of AFF4 shows a 50-fold increased Kd for TAR binding by Tat:P-TEFb (Kd = 19 nM) compared to the gelshift in the presence of WT AFF4 (Kd = 0.26 nM). The small effect of surface mutations in AFF4 helix α2 on TAR binding indicates that instead of direct interactions with TAR structural stabilization of the combined interface formed collectively by Cyc T1:Tat:AFF4 (Schulze-Gahmen et al., 2014) is the major role of AFF4 α2.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig6-v2.jpg)
 
-**Figure 6.:** (A) Electrophoretic mobility shift assays with 32P-labeled TAR and increasing concentrations of Tat:P-TEFb in the absence or presence of excess AFF4 WT fragment (resides 2–73) or mutant AFF4 fragment. In the absence of AFF4, affinity for TAR is reduced 50-fold. Single site mutants E61A and K63A reduce TAR affinity 3 and 2-fold, respectively. (B) HeLa-based NH1 cells containing the integrated HIV-1 LTR-luciferase reporter gene were transfected with the Tat(C22G)- and/or AFF1-expressing construct as labeled. Luciferase activities were measured in cell extracts, with the level of activity detected in cells transfected with an empty vector (-) set to 1. The error bars represent ± one standard deviation from three independent measurements.DOI: http://dx.doi.org/10.7554/eLife.15910.018
+**Figure 6.:** (A) Electrophoretic mobility shift assays with 32P-labeled TAR and increasing concentrations of Tat:P-TEFb in the absence or presence of excess AFF4 WT fragment (resides 2–73) or mutant AFF4 fragment. In the absence of AFF4, affinity for TAR is reduced 50-fold. Single site mutants E61A and K63A reduce TAR affinity 3 and 2-fold, respectively. (B) HeLa-based NH1 cells containing the integrated HIV-1 LTR-luciferase reporter gene were transfected with the Tat(C22G)- and/or AFF1-expressing construct as labeled. Luciferase activities were measured in cell extracts, with the level of activity detected in cells transfected with an empty vector (-) set to 1. The error bars represent ± one standard deviation from three independent measurements.
 
 To examine the AFF1/4 contribution to Tat-dependent HIV-1 transcription, we probed the effect of alanine substitutions on Tat-dependent HIV-1 transcription in HIV-1 LTR-driven luciferase expression. These assays were performed with the AFF1 scaffold protein, because Tat has a stronger effect on HIV transcription with AFF1 than with AFF4 (Lu et al., 2015). In addition, the assay used Tat(C22G), a Tat mutant that lacks an important Cys-Zn2+ ion coordination site required for wild-type Tat activity (Garber et al., 1998). It is thus highly sensitive to the AFF-mediated increase in affinity for P-TEFb (Lu et al., 2014). While wild-type AFF1 strongly supported the activation of HIV-1 LTR by Tat(C22G), all mutants displayed decreased activity, with 4-6-fold decreases observed when Glu65 (AFF4 Asp60), Glu66 (AFF4 Glu61), and Val67 (AFF4 Met62) were either singly or doubly mutated (Figure 6B). The combined results from EMSAs and transcription assays are consistent with the structural inference that AFF1/4 helix α2 plays a significant role in mediating TAR binding and Tat-transactivation, although the crystal structure shows no direct contact between them.
 
-## Effect of TAR mutants on SEC binding
+### Effect of TAR mutants on SEC binding
 
-Previous studies have identified several TAR mutations that severely reduce transactivation activity of TAR and TAR binding to a Tat-peptide spanning the ARM region of Tat (
+Previous studies have identified several TAR mutations that severely reduce transactivation activity of TAR and TAR binding to a Tat-peptide spanning the ARM region of Tat (Churcher et al., 1993). Three mutants with strongly reduced transactivation activity include G21-C41→ AU, A22-U40→ UA, and U23→C, which are located just below and in the TAR bulge. To further evaluate AFF4 function in TAR binding we determined binding affinities for WT-TAR and TAR-mutants to Tat:P-TEFb with or without AFF4 (Figure 7) in electrophoretic mobility shift assays (EMSAs). In the absence of AFF4, all three TAR-mutants showed strongly reduced binding affinity compared to the WT TAR. However, in the presence of AFF4, the affinity of WT TAR was increased 50-fold to 0.2 nM, and binding of the TAR-mutants was rescued to a 2–10 fold increased KD compared to WT TAR (Figure 7). The potent rescue of bulge mutants by addition of AFF4 is consistent with the placement of the bulge distal to the Tat zinc-binding loops. The picture that emerges is of a bipartite mode of TAR binding to the SEC. Nucleobases C29-G34 interact directly with the well-ordered Tat-SEC epitope consisting of the Tat zinc-binding loops and the adjacent N-terminal portion of the CycT1 TRM. This well-ordered region is the part that is scaffolded by AFF4. The remaining nucleobases of the Tat-SEC binding site on TAR, including the bulge, interact with extended regions of the C-terminal part of the CycT1 TRM and with the Tat ARM.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15910/elife-15910-fig7-v2.jpg)
 
-**Figure 7.:** Electrophoretic mobility shift assays with 32P-labeled TAR were performed as in Figure 6. TAR mutants G21–C41→A21–U41, A22–U40 → U22–A40, and U23C (Churcher et al., 1993) show large defects in binding to Tat:P-TEFb, but can be rescued in the presence of AFF4. Experiments were performed in triplicate. The error bars represent the standard deviation from three independent measurements.DOI: http://dx.doi.org/10.7554/eLife.15910.019
+**Figure 7.:** Electrophoretic mobility shift assays with 32P-labeled TAR were performed as in Figure 6. TAR mutants G21–C41→A21–U41, A22–U40 → U22–A40, and U23C (Churcher et al., 1993) show large defects in binding to Tat:P-TEFb, but can be rescued in the presence of AFF4. Experiments were performed in triplicate. The error bars represent the standard deviation from three independent measurements.
 
 ## Discussion
 
@@ -154,19 +252,19 @@ Considerable effort has been expended over the past two decades in the design of
 
 ## Materials and methods
 
-## Protein expression and synthesis
+### Protein expression and synthesis
 
 P-TEFb and P-TEFb-Tat1-57 were expressed in High 5 insect cells using recombinant baculovirus infections. We co-expressed human CDK9 1–330 and human cyclin T1 1–264 with and without HIV-1 Tat 1–57. Baculovirus generation and High 5 cell infections were described in detail previously (Schulze-Gahmen et al., 2013). AFF4 fragments 2–73 with a N-terminal TEV-protease-cleavable His-tag were expressed in E. coli (Schulze-Gahmen et al., 2013). The AFF4 peptide 32-67 with acetylated and amidated termini was synthesized at the University of Utah DNA/Peptide Facility.
 
-## TAR RNA
+### TAR RNA
 
 A synthetic TAR fragment encompassing nucleotides 18–44 (TAR27) or 21–41 (TAR21) were purchased from IDT (San Diego, CA, USA). The RNA was annealed at 0.1 mg/ml in 20 mM Na HEPES pH 7.3, 100 mM KCl, 3 mM MgCl2. Best results were obtained by heating the RNA at 75°C for 2 min, followed by rapid cooling on ice. The purity of the RNA, analyzed by denaturing and native 10% polyacrylamide gel electrophoresis, was at least 95%.
 
-## Protein purification
+### Protein purification
 
 Tat:P-TEFb and AFF42-73 were purified separately following procedures described recently (Schulze-Gahmen et al., 2013). Tat-P-TEFb and AFF42-73 (or AFF432-67) were combined at a 1:1.4 (mol/mol) ratio, concentrated to 0.6 ml, and injected onto an analytical Superdex S200 size exclusion column equilibrated with 25 mM Na-HEPES pH 7.4, 0.2 M NaCl and 1 mM DTT. To purify the Tat:AFF4:P-TEFb complex with TAR, synthetic TAR was added in small molar excess to the protein complex prior to purification over an analytical Superdex S200 column. The center fractions of the eluted S200 peak were used for SAXS data collection. Fractions with base line absorption, collected later in the elution process, were used to measure background diffraction for the SAXS experiment.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Crystals of the TAR:Tat:SEC complex grew easily under low salt conditions but diffracted very poorly. Optimization of the TAR construct used for crystallization eventually resulted in needle shaped crystals diffracting to 5.9 Å resolution. Purified Tat1-57:AFF432-67:P-TEFb was combined with the annealed TAR21 fragment, nucleotides 21-41, at a 1: 1.3 (mol/mol) ratio and concentrated to 7 mg/ml in 25 mM HEPES pH 7.3, 0.2 M NaCl, 0.05M KCl, 0.1 M Ammonium sulfate, 3 mM MgCl2, 0.5 mM TCEP. Crystals were grown in sitting drops from 0.8 ul protein-TAR complex combined with 0.5 ul reservoir solution. The drops were equilibrated against 50 mM Tris 8.5, 0.2M Ammonium Acetate, 6 mM MgCl2, 8% PEG 4K at 18°C. Single needle-shaped crystals grew to a size of about 0.05 mm x 0.05 mm x 0.25 mm.
 
@@ -174,15 +272,15 @@ Crystals were soaked in 0.1 M HEPES pH 8.0, 50 mM NaCl, 50 mM Ammonium Ace
 
 The structure was determined by molecular replacement with PHENIX (Adams et al., 2010) using the Tat:AFF4:P-TEFb complex (PDB ID 4OGR) as the search model. Rigid body refinement in PHENIX resulted in R/Rfree = 0.36/0.394. The protein complex without TAR was further refined by torsion angle molecular dynamics with deformable elastic network (DEN) restraints γ=0.5, wDEN=100 and a slow cooling annealing protocol starting with 3000° K (Schröder et al., 2010; Brunger et al., 2012) in CNS (R/ Rfree = 0.296/0.444). Strong positive density peaks in the Fo-Fc density map (Figure 4—figure supplement 1) allowed manual placement of a TAR molecule from the NMR ensemble (PDB ID 1ARJ) (Aboul-ela et al., 1995) in Coot (Emsley and Cowtan 2004), followed by rigid-body fitting to the Fo-Fc density map using Coot. Alternative orientations of the TAR molecule were also tested but excluded based on poor electron density fits and steric clashes. Rigid body refinement in CNS after TAR placement reduced the Rfree value by 4% to 0.406. The rigid body refined TAR-complex structure was used as the reference structure in the subsequent DEN refinement. Optimal DEN refinement parameters were determined using the Grid-enabled web service for low-resolution crystal structure refinement (O’Donovan et al., 2012) (Table 2) Torsion angle molecular dynamics with these optimized DEN refinement parameters, γ=0, w wDEN=300, reduced the final R values to R/Rfree=0.223/0.31.5 at 5.9 Å resolution (Table 2).
 
-## Hydrogen deuterium exchange
+### Hydrogen deuterium exchange
 
 Amide hydrogen-deuterium exchange was initiated by a 20-fold dilution of Tat-AFF4-P-TEFb complex (10 µM stock) into D2O buffer containing 25 mM Na-HEPES pD 7.4, 0.2 M NaCl and 1 mM DTT at 30°C. The Tat:AFF4:P-TEFb:TAR complex was assembled by incubating Tat:AFF4:P-TEFb (10 µM) with TAR RNA (20 µM) before 20-fold dilution into D2O. After specified time intervals, the exchange was quenched at 0°C with the addition of ice-cold quench buffer (400 mM KH2PO4/H3PO4, pH 2.2). Quenched samples were injected onto an HPLC (Agilent 1100) with in-line peptic digestion and desalting. Desalted peptides were eluted and directly analyzed by an Orbitrap Discovery mass spectrometer (Thermo Scientific). Initial peptide identification was done by running tandem MS/MS experiments. Peptides were identified using a Proteome Discoverer 2.0; Sequest HT (Thermo Scientific) search. Initial mass analysis of the peptide centroids was performed using the software HDExaminer version 1.4.3 (Sierra Analytics) followed by manual verification of every peptide. The deuteron content of the peptic peptides covering Tat, AFF4 and P-TEFb was determined from the centroid of the molecular ion isotope envelope. The deuteron content was adjusted for deuteron gain/loss during digestion and HPLC. Both nondeuterated and fully deuterated Tat:AFF4:P-TEFb complexes were analyzed. Fully deuterated samples were prepared by three cycles of drying and resolubilization in D2O and 6 M GdnHCl.
 
-## SHAPE analysis of the interactions between the HIV 5’UTR and the Tat:AFF4:P-TEFb complex
+### SHAPE analysis of the interactions between the HIV 5’UTR and the Tat:AFF4:P-TEFb complex
 
 The RNA construct contains the 344-nt of the HIV 5’UTR obtained from the Summers lab (Heng et al., 2012) with SHAPE handles added at both ends as previously reported (Bai et al. 2014). The RNA sample was prepared by in vitro transcription using T7 polymerase with PCR product DNA as templates, and purified using polyacrylamide gel electrophoresis. Purified RNA samples were annealed at 0.1 mg/ml in a buffer containing 50 mM K-HEPES pH 7.5, 200 mM KOAc, and 3 mM MgCl2 by heating at 75°C for 2 min and snap cooling on ice. Before SHAPE reactions, 9 μl of annealed 5’UTR RNA at 0.1 mg/mL was mixed with either 1 μL of the Tat:AFF4:P-TEFb complex to achieve a final stoichiometry of 1:1 (RNA:protein) or matching buffer containing 25 mM HEPES pH 7.3, 0.2 M NaCl, 0.05 M KCl, 3 mM MgCl2, 1 mM TCEP as a control. The resulting mixtures were incubated for 15 min at room temperature. SHAPE probing was performed as previous reported (Berry et al., 2011) with 1-methyl-7-mitroisatoic anhydride (1M7) as the 2’ hydroxyl-selective electrophile. Raw traces from fragment analysis was analyzed using ShapeFinder (Vasa et al., 2008).
 
-## SAXS
+### SAXS
 
 SAXS data were collected at the ALS beamline 12.3.1 (Lawrence Berkeley National Laboratory, Berkeley, CA) (Hura et al., 2009) at 18°C using a Pilatus 2M detector at 1.5 m sample to detector distance at a wavelength λ=1.127 Å. For each sample, 30 frames were collected with 0.5 s exposure each, and increasing numbers of buffer subtracted data frames were merged until radiation damage effects became noticeable. Sample concentrations for the Tat:AFF4:P-TEFb complex were 3.2 mg/ml, 1.6 mg/ml, and 0.8 mg/ml; those for the Tat:AFF4:P-TEFb complex with TAR were 2 mg/ml, 1 mg/ml, and 0.5 mg/ml. To reduce potential problems with sample aggregation, data were collected within 2 hr from eluting the protein complexes from a S200 size exclusion column, using only the center peak fractions. Buffer-subtracted datasets were merged and analyzed using the program SCÅTTER (Förster et al., 2010). The Dmax was determined after optimizing the P(r) function using the program SCÅTTER, following recommended procedures. The initial P(r) function was calculated with the default Dmax of 96 Å. After removing the very low resolution data in the Guinier region, Dmax was increased until the P(r) function showed no undulations and was positive for all r-values.
 
@@ -190,20 +288,20 @@ Comparison of the data collected at two-fold different concentrations showed som
 
 The fit of the computed SAXS profile and χ value of the crystal structure to the experimental SAXS data was calculated using the program FoXS (Schneidman-Duhovny et al., 2013, 2010).
 
-## Modeling of the Tat ARM and CycT1 TRM segments
+### Modeling of the Tat ARM and CycT1 TRM segments
 
 Tat ARM and CycT1 TRM are disordered protein segments that are key for TAR binding to the Tat:AFF4:P-TEFb complex. These two regions are not well defined in the crystal structure. We used the MODELLER 9.15 loop modeling protocol (Šali and Blundell, 1993; Fiser and Šali, 2003) to build the missing residues of the Tat ARM segment and to refine the conformation of the CycT1 TRM segment. We added a soft upper bound of 5.2 Å on the distance between Tat residues R52 and R53 and the TAR backbone, based on an NMR spectroscopy study (Calnan et al., 1991; Puglisi et al., 1993). We constructed 5000 loop models for the Tat ARM and CycT1 TRM segments, followed by hierarchical clustering based on pairwise all-atom RMSD values. We selected the top 5 best scoring clusters based on the DOPE assessment score (Shen and Sali, 2006). For each cluster, we used the centroid structure as the representative structure for further analysis. The precision of selected clusters ranges between 2.5 and 6.3 Å.
 
 Prior to obtaining the crystal structure of the TAR-SEC we determined an integrative structure of the complex using HDX, SAXS, and SHAPE data, as well as structural information for the individual components of the TAR complex with Tat:AFF4:P-TEFb. This integrative structure had errors due to incorrect filtering criteria.
 
-## Integrative modeling of TAR binding to the Tat:AFF4:P-TEFb complex without X-ray structure
+### Integrative modeling of TAR binding to the Tat:AFF4:P-TEFb complex without X-ray structure
 
 Before the X-ray structure of Tat:AFF4:P-TEFb:TAR complex was determined, we modeled the complex by integrative structure modeling (Alber et al., 2007; Russel et al., 2012; Schneidman-Duhovny et al., 2012, 2014). Integrative modeling was based on the atomic structure of the Tat:AFF4:P-TEFb complex (PDB ID 4OGR) (Schulze-Gahmen et al., 2014), an atomic structure of TAR (Schneidman-Duhovny et al., 2010, 2013) (PDB ID 1ARJ and 2KX5), a small-angle X-ray scattering (SAXS) profile of the complex, difference HDX data for the apo and TAR complexes, the SHAPE data describing the interactions between the HIV-1 5’UTR and the Tat-AFF4-P-TEFb complex, and previously published biochemical data identifying key residues for the recognition of TAR, including a cross-link between TAR U31 and CycT1 252-261 (Garber et al., 1998; Richter et al., 2002b). Specifically, we followed an integrative docking protocol (Schneidman-Duhovny et al., 2012), using the rigid-body docking program PatchDock (Schneidman-Duhovny et al., 2005). We selected only those resulting models whose FoXS computed SAXS profile (Schneidman-Duhovny et al., 2013, 2010) matched the experimental profile with χ < 1.5, followed by hierarchical clustering based on the pairwise all-atom RMSD values. Next, we filtered the remaining representative models further based on the HDX data, requiring that the Solvent Accessible Solvent Area (SASA) of AFF4 residues 57 to 67 was reduced by at least a 10% upon TAR binding. However, in retrospect, this filtering criterion was too strict, resulting in elimination of the correct model of the Tat:AFF4:P-TEFb:TAR complex. The crystal structure revealed that changes in the HDX rates of the AFF4 helical region are in fact caused by a conformational change triggered by binding of TAR rather than direct binding of TAR. The example illustrates the need for a conservative interpretation of experimental data used for structural modeling. It is more prudent to err on the side of caution, and apply spatial restraints that are broader than narrower, resulting in a less precise ensemble of models that still contains the correct structure as opposed to a more precise ensemble that does not contain the correct structure.
 
-## Luciferase assay
+### Luciferase assay
 
 The HeLa-based NH1 cell line containing an integrated HIV-1 LTR-luciferase reporter plasmid (He et al., 2010) was transfected with constructs expressing Tat(C22G) only or together with the indicated AFF1 proteins. AFF1 mutants were chosen based on their surface exposed position on the second αhelix in the homologous AFF4 (Schulze-Gahmen et al., 2014), with the exception of Val 67, which is only partially exposed. At 48 hr post transfection, total cell lysates were prepared and luciferase activity was measured with kit E1501 from Promega (Madison, WI, USA). An aliquot of cell lysates was analyzed by western blotting with the indicated antibodies to detect the level of the transfected AFF1 protein and the endogenous α-Tubulin.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 Synthetic TAR (nucleotides 18–44) was radioactively labeled as described (Schulze-Gahmen et al., 2014). Binding reactions were carried out with 100 pM labeled TAR RNA and Tat:P-TEFb concentrations ranging from 0.009 to 190 nM and five fold molar excess of AFF4 over P-TEFb. Details of the binding conditions and gel chromatography were described previously (Schulze-Gahmen et al., 2014). Gel bands were quantified with the program ImageJ (Schneider et al., 2012), and dissociation constants were calculated using one-site total binding curves in the program Prizm version 5.0c (GraphPad, La Jolla, CA, USA)

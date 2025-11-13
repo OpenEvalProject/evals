@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.39911.001 Replicative aging of Saccharomyces cerevisiae is an established model system for eukaryotic cellular aging. A limitation in yeast lifespan studies has been the difficulty of separating old cells from young cells in large quantities. We engineered a new platform, the Miniature-chemostat Aging Device (MAD), that enables purification of aged cells at sufficient quantities for genomic and biochemical characterization of aging yeast populations. Using MAD, we measured DNA accessibility and gene expression changes in aging cells. Our data highlight an intimate connection between aging, growth rate, and stress. Stress-independent genes that change with age are highly enriched for targets of the signal recognition particle (SRP). Combining MAD with an improved ATAC-seq method, we find that increasing proteasome activity reduces rDNA instability usually observed in aging cells and, contrary to published findings, provide evidence that global nucleosome occupancy does not change significantly with age.
+Replicative aging of Saccharomyces cerevisiae is an established model system for eukaryotic cellular aging. A limitation in yeast lifespan studies has been the difficulty of separating old cells from young cells in large quantities. We engineered a new platform, the Miniature-chemostat Aging Device (MAD), that enables purification of aged cells at sufficient quantities for genomic and biochemical characterization of aging yeast populations. Using MAD, we measured DNA accessibility and gene expression changes in aging cells. Our data highlight an intimate connection between aging, growth rate, and stress. Stress-independent genes that change with age are highly enriched for targets of the signal recognition particle (SRP). Combining MAD with an improved ATAC-seq method, we find that increasing proteasome activity reduces rDNA instability usually observed in aging cells and, contrary to published findings, provide evidence that global nucleosome occupancy does not change significantly with age.
 
 ## Introduction
 
@@ -32,13 +32,37 @@ Here, we introduce a robust methodology, utilizing miniature chemostats (Miller 
 
 ## Results
 
-## Miniature-chemostat aging devices (MADs) enable the enrichment of large numbers of replicatively aged yeast cells
+### Miniature-chemostat aging devices (MADs) enable the enrichment of large numbers of replicatively aged yeast cells
 
 To collect pure populations of aged mother cells, we first labeled the cell walls of exponentially growing cells with biotin and grew them ~12 hr overnight in liquid cultures before capturing biotinylated cells with magnetic streptavidin beads, as previously described (Park et al., 2002) (Figure 1A). Pre-growth in liquid culture after the biotin labeling improved the uniformity of the number of beads per cell, as compared to cells that were conjugated to beads immediately following biotin labeling. Following bead binding, the labeled mothers were loaded into our modified ministat culture vessel (~30–40 mL volume; see Supplementary file 1 and Figure 1—source data 1 for details) surrounded by custom-sized neodymium ring magnets (Figure 1A). Ring magnets are an important component of the system because they enable an even distribution of magnetically labeled mother cells along the glass walls of the MAD (i.e. they help minimize clumping). Peristaltic pumps were employed to provide aging cells with fresh media flow and to wash away progeny. The optical density (OD600) of the culture media within the MAD was kept at less than 0.15 to ensure that pH and glucose remained constant in the vessels (data not shown). Mother cells were harvested by first removing the MAD culture vessels from the magnets, washing cells in growth media to remove contaminating daughter cells, and purifying mother cells with a large magnet (Figure 1—figure supplements 1–6). We verified that purified mothers had aged at the expected ~2 hr division rate in YNB glucose minimal media by counting the number of replication bud scars for both haploid and diploid strains (38 hr: haploid = 15.5, diploid = 17.6; expected ~19) (Figure 1B and C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-v3.jpg)
+
+**Figure 1.:** (A) Yeast cells are biotinylated, grown in flask culture, labeled with streptavidin beads, and loaded into MAD. Daughters do not inherit the magnetic beads and are perfused from the culture, leaving behind a pure replicatively aged population of cells. (B,C). Haploid (DBY12000) and diploid (DBY12007) cells purified using MAD. Bud scars are labeled in green with wheat germ agglutinin conjugated to Alexa Fluor 488. Cell walls are labeled in red with NeutrAvidin conjugated to DyLight 593. (D) Viability of WT and sir2∆ cells from a 50 hr aging time course. (E) Mother cell ages (bud scars) during a 55 hr MAD time course.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Side-view of a single MAD. The ‘bubble cage’ enables aeration of the culture, and prevents large bubbles from dislodging beaded mother cells from the sidewall of the MAD. (B) View of four MADs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp2-v3.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp3-v3.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Units are in inches.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Units are in inches.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** The mean number of bud scars in log-sample cells was 0.9. Populations of cells grown in MAD for 27 hr with 80:1, 40:1, and 20:1 bead-to-cell ratios had 5, 6, and 11 bud scars, respectively (compared to the expected number of ~13.5).
+
 Previous studies have used mother cell viability over time as a method for approximating differences in strain replicative lifespan (RLS) (Lindstrom and Gottschling, 2009). To test if we could observe differential aging of strains, we loaded separate MADs with wild type (WT) cells or short-lived sir2∆ cells, and measured membrane integrity as a proxy for viability with propidium iodide (PI) staining at three time points (Figure 1D) (Defossez et al., 1999). The deletion of the SIR2 NAD-dependent histone deacetylase shortens lifespan by promoting hyper-recombination at the rDNA locus (Kaeberlein et al., 1999; Gottlieb and Esposito, 1989). As expected, viability for aged sir2∆ mothers was ~2-fold lower than that of aged WT mothers (Figure 1D).
 
-## Mother cells aged in the MADs exhibit hallmarks of the aging yeast transcriptome
+### Mother cells aged in the MADs exhibit hallmarks of the aging yeast transcriptome
 
 Substantial previous work has established that aging yeast cells share some common features across different methods and strains (Janssens and Veenhoff, 2016). As a starting point, we validated the MAD method by testing if we could recapitulate the salient features of the aging yeast transcriptome. We leveraged the ministat scalability to purify mothers over a dense aging time course, collecting aged cells from five separate ministats loaded from the same pre-culture (Figure 1E). Age, viability, and purity (% of recovered cells that are mothers) were measured with microscopy at each time point and were consistent with expectation from orthogonal methods (Figure 1E, Figure 1—source data 2) (Janssens et al., 2015; Lindstrom and Gottschling, 2009).
 
@@ -46,25 +70,41 @@ We then used Sleuth (an RNA-seq analysis software suite) to identify transcripts
 
 Next, we analyzed gene sets that are differentially expressed as a function of increasing age for enrichment of a variety of functional annotations using the Database for Annotation, Visualization and Integrated Discovery (DAVID; [Dennis et al., 2003]). We found numerous significantly enriched terms related to metabolism, oxidoreductase activity, stress, and mitochondrial proteins amongst the genes whose expression increases with age (Source Data 1). Genes downregulated with age were enriched for multiple terms, including ribosome biogenesis, rRNA processing and translation as well as a host of other terms related to general cellular anabolic function (tRNA synthesis, amino acid biosynthesis, mRNA transport, exosome activity) (Source Data 1). In general, these results are consistent with previous reports that the aging transcriptome shares a high degree of similarity to that of induction of the environmental stress response (ESR) (Janssens et al., 2015; Hu et al., 2014; Lesur and Campbell, 2004; Yiu et al., 2008; Kamei et al., 2014). The ESR is the simultaneous activation of a set of stress-responsive pathways coincident with the downregulation of ribosomal biogenesis and it is inextricably tied to growth rate (i.e. if a yeast culture is growing slowly, the ESR is upregulated) (Brauer et al., 2008). Likewise, we also observed a shift away from glycolysis toward gluconeogenesis, similar to previous reports (Lin et al., 2001; Koc et al., 2004). Thus, MAD robustly captures the transcriptomic hallmarks of yeast aging that have been reported across a diversity of strains and methodologies (Janssens and Veenhoff, 2016).
 
-## The ESR is a robust feature of the aging transcriptome
+### The ESR is a robust feature of the aging transcriptome
 
 We attempted to resolve the earliest age-dependent transcript changes using hierarchical clustering of genes with significant age-dependent expression (q < 0.05) (Figure 2). We found that age-dependent transcripts display a clear temporal progression as we observed clusters composed of early-, middle-, and late-age changes. To understand what processes and events these clusters might be representative of, we included transcript annotation categories alongside the heatmap for multiple classes of non-coding transcripts, sub-telomeric genes, TY retrotransposon genes, and ESR-induced and ESR-repressed genes (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig2-v3.jpg)
+
+**Figure 2.:** (left) Hierarchically clustered heatmap of transcriptome at increasing replicative ages of ~ 2900 genes (the transcriptome at 10 hr is conflated with cell beading). Different transcript types are labeled in black directly to the right of the transcriptional data. (AS = antisense, SUT = stable unannotated transcript, MUT = meiotic unannotated transcript, CUT = cryptic unstable transcript, XUT = Xrn1 sensitive unstable transcript, TELO = subtelomeric, TY = TY repeat element, ESR = environmental stress response). (right) Moving window average (of 100 gene bins) of Growth Rate Slopes from Brauer et al. and log2 transcript abundances in transcripts per million during initial log-phase growth (green). Red bars indicate clusters displaying early-age induction independent of the ESR.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plot of ~2900 significantly changing transcripts (ORF +non canonical transcripts) with age as modeled using Sleuth. The non-transcribed sequence (NTS) of the rDNA locus is one of the largest measured increases (purple). (B) Subset of GO terms enriched in upregulated and downregulated genes from (A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Transcriptome from Figure 2, along with an additional 40 hr and 55 hr time point from a separate MAD (**) and a pure population of daughters from those time points. (B) The effect of transcript abundance on gene expression with age. The aging slope for all transcripts was plotted against the mean natural log of sequence read counts across all samples. Each transcript (dot) is colored by its q-value. In general, low abundance transcripts are more likely to increase expression than decrease expression with age.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Data from Hu et al. of spike-normalized RNA-seq data showing that in absolute terms, transcripts increase with age. Replicate experiments were averaged. (B) Spike-normalized data split into replicate experiments, ‘4.13’ and ‘4.19’, and row-normalized. Data from old cells from batch ‘4.19’ are highlighted in red to point out that the majority of the global upregulation arises from this batch. (C) Re-analysis of the exact same spike-normalized data separated by batch reveals that universal upregulation of genes is only present in batch 4.19. (D) Re-analysis and realignment of raw data reveals extremely low mapping rates for batch 4.19.
 
 We found that a feature of the aging transcriptome is the activation of the ESR (i.e., almost all ESR-induced genes were upregulated with age and almost all ESR-repressed genes were downregulated [Figure 2]). This signature, even at later time points (where the purity of mother cells decreases), cannot be explained by newly produced daughter cells (Figure 2—figure supplement 2A). We also observed an age-independent initial rise and decline prior to the age-dependent increase in ESR induction in response to the beading process at the 10 hr time point. Subsequent iterations of the protocol were modified to reduce beading stress (Appendix 1); age-dependent changes and ESR induction from both protocols were highly correlated confirming that our observations are reflective of yeast aging in general.
 
 In order to extend our comparison between the ESR and the aging transcriptome, we used Growth Rate Slopes (GRS) from Brauer et al. (2008). By modulating the growth rate using nutrient limitation and measuring global patterns of gene expression across a range of growth rate, Brauer et. al. characterized the magnitude/direction of the effect of growth rate on gene expression as the slope of the regression of gene expression on growth rate (Brauer et al., 2008). Gene-specific GRSs have a straightforward biological interpretation. Genes with negative GRSs increase expression as growth rate slows, while genes with positive GRSs decrease expression as growth slows. We plotted the moving average for 100 gene bins across the heatmap in Figure 2 and found that the relationship between age-related change and stress-related change extends to almost all genes for which a GRS was measured.
 
-## Dense profiling of aging yeast cells reveals early transcriptomic events independent of the ESR
+### Dense profiling of aging yeast cells reveals early transcriptomic events independent of the ESR
 
 Our data and the literature agree that the aging yeast cell experiences stress/slowed growth (Zhang et al., 2012); however, the root cause[s] remain elusive. We reasoned that potentially causative events would occur both before and independently from the stress signature. Thus, we highlighted ESR-independent transcripts and processes that happen earliest in our time course as prospective initiating agents of yeast replicative aging. As such, we isolated and analyzed age-induced gene clusters that were relatively depleted of ESR-induced genes (Figure 2 red bars, Source Data 1). Strikingly, this group of genes was highly enriched for TY transposon genes (Figure 2, Source Data 1). Although age-dependent increases in transposon expression have been previously reported (Patterson et al., 2015), here we show that it is one of the earliest and strongest age-related changes (Figure 2, Source Data 1). We also found multiple transcripts arising from the non-transcribed spacer region (NTS) of the rDNA repeat enriched within this gene set as well as genes known to be involved with response to replicative stress and DNA damage (RNR3, IRC4) raising the possibility that rDNA instability and extrachromosomal rDNA circle (ERC) formation are very early events in the yeast aging process.
 
 The carbon source-responsive zinc-finger transcription factor, ADR1, was among these genes and was previously reported to be an early-age transcriptional responder (Kamei et al., 2014). ADR1 has also previously found to be involved in regulating gluconeogenesis during the diauxic shift, raising the possibility that ADR1 has a role in regulating the age induced transcriptional shift towards gluconeogenesis (Wierman et al., 2017). In addition, these clusters contained regulators of oxidative stress that are induced with age, including SRX1, SOD2, TSA2, GPX2 and XBP1. Together, these data revealed several compelling leads that are independent of the ESR for further study into the originating deleterious events during replicative aging in yeast.
 
-## Low abundance ORFs (at young ages) and non-coding RNAs tend to increase with age
+### Low abundance ORFs (at young ages) and non-coding RNAs tend to increase with age
 
 In general, we observed a negative correlation between transcript abundance during early age and age-related induction (i.e. low abundance transcripts tend to undergo the largest fold increases; Figure 2—figure supplement 2B). Interestingly, we also found that non-coding transcripts (Figure 2, right panel) typically fell into the age-induced clusters, similar to previous results (Sen et al., 2015). A recent study from Hu et al. suggested that all transcripts increase with age as a result of pervasive global transcription stemming from nucleosome loss (Figure 2—figure supplement 3) (Hu et al., 2014). Consistent with this hypothesis, we observed that many induced genes are either expressed at low or undetectable levels during exponential growth (Figure 2, right bar, white to green). However, a universal increase in transcription with age cannot explain numerous induced genes that are highly expressed and functionally related. The tendency of low abundance and silenced transcripts to increase with age might be explained by the decrease in exosome components we observed, as well as a decline in mRNA degradation pathways (Figure 2—figure supplement 1) and decreasing transcriptional fidelity (Sen et al., 2015). This is consistent with the observation that the exosome component XRN1-sensitive unstable transcripts (XUTs) and cryptic unstable transcripts (CUTs) tend to be age-induced (Figure 2, Source Data 1). Contrary to a previously published aging transcriptomic dataset (Hu et al., 2014), our data indicate that universal up-regulation of gene expression is not a general feature of aging cells. We suggest that this discrepancy may partially be due to batch effects in the previously published data (Figure 2—figure supplement 3).
 
-## The aging transcriptome is highly correlated across a mutant panel
+### The aging transcriptome is highly correlated across a mutant panel
 
 Although multiple wild-type strains have been transcriptionally profiled during the aging process, to our knowledge, the aging transcriptome of mutants has not been studied. It is unknown if long- and short-lived strains experience the same process albeit on a different timescale or if there are clear differences in what stresses RLS mutants undergo as a function of age and how their response might differ as a function of genotype. In the event of the latter scenario, perhaps different long-lived strains share aspects unique from that of wild type such that a ‘protective’ transcriptional response or state might be identified. To explore this idea further, we chose to profile ubr2∆ and fob1∆, whose RLS phenotypes are reported to be independent. Deletion of FOB1 can modulate yeast RLS by increasing rDNA stability and reducing ERC formation (Defossez et al., 1999; Takeuchi et al., 2003), whereas deleting UBR2 may confer longevity through constitutive upregulation of proteasome activity (Kruegel et al., 2011). In addition, we selected the sir2∆ strain to profile with age as well. As mentioned above, SIR2 silences transcription of the NTS rDNA region and is a major regulator of rDNA stability.
 
@@ -74,25 +114,73 @@ We then checked that we could observe expected differences between strains, such
 
 After quantifying transcript levels, we used Sleuth to call significant gene expression changes as a function of age. Notably, since we calculate the magnitude of change as an exponential fit of expression change to numbers of bud scars, our ‘aging slope’ can be interpreted as rate of change per cell division. We then used the aging slope to determine both the strain-dependent and strain-independent changes dependent on increasing age (Figure 3A, Figure 3—figure supplement 4). Although the aging transcriptomes were similar, it was the paucity of significant differences that emphasizes how analogous the transcriptional aging profile appears across strains (Figure 3—figure supplement 4). Even for sir2∆, the strain that exhibited the strongest strain-specific response to aging, the significant differences were in most cases a matter of magnitude per replication event (bud scar); the same genes changed, only more so, reflective either of a higher aging rate or a larger percentage of cells close to replicative senescence (Figure 3—figure supplement 4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-v3.jpg)
+
+**Figure 3.:** (A) (left) Hierarchically clustered heatmap of ~1500 genes with significant age-dependent transcriptional responses across multiple genotypes. (right) Significance of GO terms in upregulated and downregulated genes, respectively (-log10(p)). Experiments were performed in triplicate. (B) Scatterplot of ‘aging slopes’ from (A) versus 'growth rate slopes' from Brauer et al. Canonical ESR-induced transcripts are labeled red and canonical ESR-repressed transcripts are labeled blue. (C) Subset of (B), filtered for genes with aging slopes q < 0.05 and growth rate slopes > 4 or < −4 removed. SRP-encoding genes are labeled red, UPR genes are labeled orange, and SRP clients are labeled green. Right panel: density of SRP clients (green) and other genes (grey) across significant aging slopes. (D) Gene expression levels of SCR1 at increasing ages.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Doubling times of each mutant and WT in standard minimal media and in MAD media (SD +2% mannose+DAPA [no biotin]). (B) Verification of proteasome upregulation in the ubr2∆ background. Gene expression changes for proteasome components in each mutant strain normalized to WT log phase. (C) Gene expression levels of FOB1, UBR2, and SIR2, across all aging time courses.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp2-v3.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Bud scar counts for all yeast mothers cells at each timepoint during triplicate time courses. (B) The same data for replicate number two subset by viability.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Volcano plot displaying genes that change significantly with age in sir2∆ compared to WT. Color indicates directionality -- blue = decrease, red = increase (left panel). Scatter plot of aging slopes from WT (y -axis) versus sir2∆ (x -axis) with colored points from the volcano plot colored similarly here. Diagonal line in black, regression line in blue (right panel). (B) Same as in (A), but for ubr2∆. (C) Same as in (A), but for fob1∆..
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** For each perturbation in the Holstege data set, the average change in SRP components was plotted against the average change for all SRP clients. The negative correlation reveals that as SRP components go down in expression, SRP targets go up in expression.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp6-v3.jpg)
+
+**Figure 3—figure supplement 6.:** For each timepoint, SCR1 expression in Transcripts per Million (TPM) was plotted.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig3-figsupp7-v3.jpg)
+
+**Figure 3—figure supplement 7.:** (A) The Loess fit for aging slope plotted against gene position (relative to telomeres) for all genes from each longevity mutant. (B) The Loess fit for growth rate slope plotted against gene position (relative to telomeres) for all genes measured for each longevity mutant.
+
 To identify functionally coherent patterns across the significant changes common to all genotypes, we used GO-term analysis to find enriched functional annotations for the set of genes that increase with age (Figure 3A, red) and the set of genes that decrease with age (Figure 3A, blue) across the tested genotypes. The enriched annotation sets for genes that increase with age across genotype mirror the terms we found for the aging wild-type strain in our previous dense time course (e.g. stress, membrane component, oxidation-reduction processes) going up as a function of age and ribosome biogenesis and rRNA processing going down with age. Notably, we observed an age-dependent expression decrease in five out of six components of the signal recognition particle (SRP).
 
 We compared the rate of change with age (Figure 3B, y-axis) to the rate of change with growth rate (Figure 3B, x-axis) and found a strong correlation for genes that increase with age and canonical ESR induced genes (r = −0.67). In general, the correlation for all genes (r = −0.48) was strong and underscores the close relationship between RLS, stress, and growth rate.
 
-## Age-dependent changes in gene expression that are not explained by ESR/GRS are highly enriched for SRP targets
+### Age-dependent changes in gene expression that are not explained by ESR/GRS are highly enriched for SRP targets
 
 As with the first WT time course, we sought to extricate age-dependent changes in gene expression that are not dependent on growth rate and the ESR. Accordingly, we focused on the set of significant age-related changes bounded by a GRS between −5 and 5, a regime wherein the age-dependent changes in gene expression that we observe are not clearly dominated by the apparent relationship between age-related change and GRS/ESR (Figure 3C). We next asked whether this class of genes was a representative subset of all age-dependent changes genes or if it was enriched for specific functional annotation sets using GO term analysis (Source Data 2). We found that genes with an age-related increase in expression that are not strongly dependent on the GRS are greatly enriched for genes coding for transmembrane helices and more specifically for those that are classified as secreted and/or of containing sequence for a signal recognition peptide (SRP binding site) (Source Data 2). Next, we compiled a more exhaustive curated list of transcripts predicted or known to associate with the SRP (signal sequence-containing and SRP-binding; [del Alamo et al., 2011], Source Data 2, Figure 3C green dots). We found that these SRP clients are, as a class of genes, significantly upregulated with age in a GRS-independent manner (p<10−51, hypergeometric, Figure 3C). As SRP clients tended to increase in expression with age in parallel with age-dependent downregulation of SRP subunits (Figure 3C, red dots), we asked if these two phenomena might be linked. To this end, we plotted the expression of the SRP subunits versus the expression of SRP clients across the yeast deleteome dataset, in which global gene expression was profiled across ~1500 deletion mutants ([Kemmeren et al., 2014], Figure 3—figure supplement 5). Expression of SRP subunits and SRP clients was strongly negatively correlated (r ~ −0.5), suggesting the existence of a negative feedback loop between SRP and its clients.
 
 We next checked the expression of SCR1, the non-coding RNA subunit of the SRP complex. The aggregate trend across all of the genotypes we assayed indicates that SCR1 is increasing roughly two-fold from ~5% to~10% of the transcriptome with age (Figure 3D). We also checked the abundance changes for SCR1 in our dense time course and found the same upward trend with age (Figure 3—figure supplement 6). Since we observed discordant trends for the SRP protein component mRNAs and SCR1 (non-coding RNA), as well as an increase in expression of SRP clients, we looked for a signature of ER stress in our expression data. Genes involved in ER-associated protein degradation, specifically the members of the Cdc48p-Npl4p-Ufd1p segregase complex, were upregulated with age (Figure 3C, orange dots) and are not canonical ESR genes.
 
-## Proximity to telomeres correlates with age-dependent increases in gene expression
+### Proximity to telomeres correlates with age-dependent increases in gene expression
 
 Clustering analysis revealed that genes positioned in subtelomeric regions are more likely to increase with age than to decrease (Figure 2). In addition, previous work has suggested a loss of silencing at subtelomeric regions, potentially as a result of redistribution of SIR proteins from telomeres to the nucleolus, follows from an increasing rDNA copy number and age-dependent nucleolar dysfunction that is not dependent on telomere length (Kennedy et al., 1997; Salvi et al., 2013; Kim et al., 1996). We thus sought to determine to what extent telomere proximity affects the expression of a gene as a function of replicative age. We looked at rate of change with age for every gene versus the distance in base pairs from the telomeres for each genotype (Figure 3—figure supplement 7A). We found that genes located in subtelomeric regions are more likely to increase in expression with age (Figure 3—figure supplement 7A). Given the link we observed between increases in gene expression with age and increased expression as a function of slow growth and stress discussed above, we next asked if the observed age-dependent upregulation of sub-telomeric gene expression was also similarly connected. We plotted the GRS versus distance from the telomeres and found that indeed, subtelomeric genes as a group have a negative GRS and thus increase in expression as a function of slower growth rate (Figure 3—figure supplement 7B).
 
-## Evidence that global nucleosomal occupancy does not decrease with age
+### Evidence that global nucleosomal occupancy does not decrease with age
 
 Having characterized the aging transcriptome across a panel of strains, we sought to thoroughly characterize age-dependent changes in chromatin structure. ATAC-seq is an assay for measuring chromatin accessibility and nucleosomal occupancy and positioning by counting insertions of Tn5 transposase in the genome (Buenrostro et al., 2013). We used ATAC-seq to examine changes in the chromatin structure during yeast aging. We extracted transposase insertions from end points of ATAC-seq fragments and counted the number of insertions at each genomic location as a proxy of chromatin accessibility. To correct for variable sequencing depth and different amounts of rDNA between samples, insertion counts were normalized so that the total number of non-ribosomal, non-mitochondrial, uniquely mapped insertions was the same between samples. Precision of high-resolution analyses of chromatin structure is sensitive to read depth (Schep et al., 2015), and therefore we sequenced each sample deeply, requiring at least 25 million uniquely mappable ATAC-seq fragments per sample.
 
 It was recently suggested that old cells have a globally lower nucleosomal occupancy that could result in permissive transcription and genomic instability (Hu et al., 2014). Since that study was limited to very old cells, we used ATAC-seq data to look for changes in nucleosomal occupancy as a function of time and in different genetic backgrounds. Nucleosomes protect DNA from transposition by Tn5, resulting in depletion of Tn5 insertions in a region of about 140 bases around the centers of nucleosomes (Figure 4A) (Brogaard et al., 2012). These regions became more accessible in a sample from the old cells, consistent with global loss of nucleosomes. We noticed, however, that ATAC-seq samples from the old cells contained a higher level of background insertions. For instance, mid-gene bodies that are normally inaccessible to ATAC-seq became uniformly more accessible (Figure 4B). This led us to examine an alternative hypothesis, that the non-specific background signal was uniformly higher in the samples from the old populations, leading to an apparent gain of accessibility in nucleosomal regions. Consistent with this hypothesis, the accessibility of canonically open nucleosome-free regions (NFRs) decreased with age (Figure 4—figure supplement 1A). Indeed, since our data was normalized in a way that every sample has the same number of ATAC-seq insertions, increased insertions in the closed regions ‘compete’ with the insertions in the open regions, resulting in an appearance of decreasing accessibility of the open regions (Figure 4—figure supplement 1A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig4-v3.jpg)
+
+**Figure 4.:** (A,B) Tn5 insertion density around well-positioned nucleosomes (A) and 1000 bases downstream of TSS (B) at 14 hr, 55 hr and 55 hr after treatment with PMA. (C) Median nucleosomal occupancy estimated by NucleoATAC on well-positioned nucleosomes in open chromatin at different time points during time course. See Materials and methods for the method of estimation. Error bars represent five standard errors of occupancy. (D) Same as (C) but comparing mothers and daughters during aging time courses - three independent replicates are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Metagene plot of ATAC-seq insertion density for genes aligned at the transcription start sites for young cells (red), old cells (green) and old cells with PMA treated (blue). (B) Effect of PMA is strongest at nucleosomes with low accessibility. We binned nucleosomes into five bins according to their average occupancy and observed that the nucleosomes in the low-accessible regions are affected the most consistent with addition of a constant background to the accessibility signal. (C) Insertion density around well-positioned nucleosomes before and after treatment with PMA at various times along aging time courses.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Depth-normalized ATAC-seq coverage was plotted at specific locus to illustrate the lack of structure in ATAC-seq data from heat-killed cells (top panel) and that treatment with PMA effectively rescues live cell signal from a mixed live/dead population over a range of concentrations (panels 2–6).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig4-figsupp3-v3.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Multiple local changes in chromatin during aging. We show a hierarchically clustered heatmap of bins that significantly change with age (newborn cells at 20 hr (NB), 20 hr of aging and 40 hr of aging) in all profiled strains (see Materials and methods). (B) Number of genomic bins significantly changing accessibility with age at each threshold of significance. (C) Distributions of fold changes of significantly changing bins that are in promoters, gene bodies, origins of replications and everywhere. Note that almost all significantly changing bins in ARSes (250) decrease in accessibility with age. (D) Differences in patterns of changes of accessibility between promoters, gene bodies and origins of replication can’t be explained by average initial accessibility of each genomic location type. We binned each type of genomic locations into bins according to accessibility in Log phase and asked what proportion of bins with this level of accessibility go up in each type of genomic location. Notably, at the same level of accessibility ARSes tend to close the strongest. (E) Closure of ARSes in metabolic cycle. Shown are changes in occupancy similar in transition from RB to OX phase of the metabolic cycle (data from [Gowans et al., 2018]). Similar to (C). (F) Comparisons of aging slopes of genomic bins between mutants.
 
 What can increase the background? Naked DNA from dead cells has been a prominent confounder in microbiological studies as extracellular DNA can remain stable for days (Nielsen et al., 2007). DNA from the dead cells loses its chromatin structure, yielding an ATAC-seq signal that is virtually uniform (Figure 4—figure supplement 2). Because the number of dead cells recovered (Figure 1D) increases with age, we hypothesized that the non-specific background in the ATAC-seq signal could rise because of the contamination by dead cells in old cultures. Since dead cells lose their membrane integrity, their DNA can be made inert to the ATAC-seq amplification by pre-treatment with intercalating agent propidium monoazide (PMA). PMA selectively enters dead cells and upon photo-activation binds covalently to DNA, strongly inhibiting its amplification in subsequent PCR reactions. Testing the efficacy of PMA treatment in yeast on heat-killed cells revealed that PMA can effectively remove the ‘dead cell’ signature from mixed samples (Figure 4—figure supplement 2). We, therefore, compared ATAC-seq signal with and without pre-treatment of the sample with PMA.
 
@@ -102,7 +190,7 @@ To quantitatively measure the effect of age on nucleosomal occupancy, we used Nu
 
 We conclude that the global chromatin structure does not deteriorate significantly with age and previous observations to the contrary may be explained by an increase in the proportion of the dead cells in the aging population.
 
-## Age-dependent changes in chromatin accessibility
+### Age-dependent changes in chromatin accessibility
 
 Although global chromatin structure did not change significantly between the young and the old cells, local changes in chromatin structure with age were observed (Figure 4—figure supplement 4A), suggesting that the activities of multiple transcription factors and chromatin remodelers change with age. To define age-dependent opening and closing of genomic regions, we divided the yeast genome into 100 bp long non-overlapping bins and performed a statistical test of age-dependent opening and closing (see Materials and methods).
 
@@ -116,25 +204,25 @@ We then asked if changes in chromatin accessibility reflect changes in activity 
 
 To test if the age-dependency in chromatin accessibility differs between the mutants, we plotted the estimated age dependent slopes of bins in different genetic backgrounds. The aging slopes estimated in WT, ubr2∆ and fob1∆ were highly correlated with a slope of one. Sir2∆ cells, however, behaved quite differently, with all slopes significantly higher than in the wild type, which we interpret as faster rate of aging in this background. Notably, however, although the slopes of changes were higher in sir2∆ overall, the slopes were highly correlated, suggesting that the overall pattern of age-dependent change in accessibility remains the same in this mutant strain (Figure 4—figure supplement 4F).
 
-## Accessibility and relative copy number at the rDNA locus is genotype dependent
+### Accessibility and relative copy number at the rDNA locus is genotype dependent
 
 Despite the similarity in aging ATAC-seq profiles across our mutant panel, we hypothesized that accessibility at the rDNA locus would be an important distinguishing feature as SIR2 and FOB1 are known modulators of rDNA stability. We reasoned that ATAC-seq insertional density at the rDNA locus would report on three distinct outcomes with respect to increasing instability: (1) increased rDNA accessibility, (2) increased rDNA copy number (extrachromosomal), and (3) increased rDNA copy number (genomic). We found that with age, WT strains present with a ~ 2 fold increase in insertional density over the entire rDNA locus (Figure 6, first panel). To determine whether the observed increase in ATAC-seq coverage at the rDNA locus (Figure 6A) was driven by increased accessibility (1) versus copy number expansion (2 and 3), we quantified relative rDNA copy number using qPCR with DNA from aged samples, and found that rDNA copy number increased with age (Figure 6B). In fact, in comparison to insertional density, relative copy number increases to a larger extent with age, suggesting that the age-dependent increase in insertional density at the rDNA locus is largely being driven by copy number expansion. We observed that the increased ATAC-seq signal at the rDNA locus returned to normal levels in daughters born to old mothers, demonstrating an asymmetric division of signal. Together, these data argue for (3): increasing ATAC-seq insertion density at the rDNA locus is reflective of greater numbers of asymmetrically retained ERC rDNA repeats with age.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig6-v3.jpg)
 
-**Figure 6.:** fob1∆ and ubr2∆ reduce age-dependent rDNA instability.(A) Percent relative (to non-repetitive genome) ATAC-seq insertional density at the rDNA locus at increasing ages in both mother and daughter cells of WT and longevity mutants. Bars are ‘layered’ with data from daughter cells (opaque) displayed on top of data from mother cells (semi-transparent). Three independent replicates are shown. (B) Comparing relative rDNA ATAC-seq insertional density (y-axis) to relative rDNA copy number using TaqMan assay (x-axis) for multiple strains.10.7554/eLife.39911.033Figure 6—source data 1.
+**Figure 6.:** (A) Percent relative (to non-repetitive genome) ATAC-seq insertional density at the rDNA locus at increasing ages in both mother and daughter cells of WT and longevity mutants. Bars are ‘layered’ with data from daughter cells (opaque) displayed on top of data from mother cells (semi-transparent). Three independent replicates are shown. (B) Comparing relative rDNA ATAC-seq insertional density (y-axis) to relative rDNA copy number using TaqMan assay (x-axis) for multiple strains.
 
 We looked at rDNA ATAC-seq coverage in fob1∆ and sir2∆ mutants, which repress and promote ERC formation, respectively. Sir2∆ cells had slightly more (~20%) relative rDNA copy number than WT at young ages (Figure 6A,B) but much higher ATAC-seq coverage (twofold). However, in looking at age-related increases at this locus in sir2∆, relative rDNA copy number increased by ~10 fold and ATAC-seq signal only increased by twofold at older ages; one interpretation of these data is that an initial open chromatin state may promote instability/higher copy number with age.
 
 Surprisingly, like the sir2∆ strain, fob1∆ cells begin with ~15% higher relative rDNA copy number compared to WT during log phase, and have actually ~20% higher accessibility as measured by rDNA ATAC-seq than WT, consistent with the role of Fob1p in Sir2p recruitment to the rDNA (Huang and Moazed, 2003). We find that fob1∆ cells experience a much more modest increase in both ATAC-seq signal (1.4 fold vs 2.5 fold) and relative copy number (1.6-fold vs 6-fold) with age. Importantly, we note that if the source of our increased ATAC-seq rDNA coverage and estimated relative rDNA copy number are in fact from ERC build up, fob1∆ is only partially defective in ERC formation, consistent with previous work (Lindstrom et al., 2011). In young cells, rDNA ATAC-seq signal and relative copy number for ubr2∆ was equivalent to WT. With age, however, the ubr2∆ cells displayed an attenuated rDNA phenotype compared to WT in both ATAC-seq (1.7 vs 2.5) and relative copy number (2.3 vs 6).
 
-## ubr2∆ and fob1∆ strains exhibit resistance to nucleolar fragmentation with replicative age
+### ubr2∆ and fob1∆ strains exhibit resistance to nucleolar fragmentation with replicative age
 
 In yeast cells, rDNA is localized, transcribed, processed and assembled into ribosomes within the nucleolar subcompartment of the nucleus (Taddei and Gasser, 2012). It has previously been shown that the nucleoli of aged yeast cells grow large and fragment (Sinclair et al., 1997). To compare our ATAC-seq measurements to a cell biological phenotype, we monitored nucleolar morphology for our mutants as a function of replicative age using the MAD platform. To do so, we aged cells from each strain that also harbored a fluorescent nucleolar reporter (a translational fusion of NOP58 and mNeonGreen). Compared to young cells, old cells from all genotypes showed nucleolar enlargement (Figure 7). However, the observed increases were clearly more pronounced in WT and sir2∆ than in ubr2∆ and fob1∆, similar to what was seen in the qPCR and ATAC-seq assays.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/39911/elife-39911-fig7-v3.jpg)
 
-**Figure 7.:** fob1∆ and ubr2∆ reduce age-dependent nucleolar fragmentation.(left) Nucleolar sizes in young (log) and old (40 hr) mother cells (displayed in blue and red, respectively) across multiple genotypes. (right) Visualization of nucleoli from young and old cells across genotypes (fob1∆: nold = 59, nyoung = 94; ubr2∆: nold = 64, nyoung = 115; sir2∆: nold = 20, nyoung = 119; WT: nold = 70, nyoung = 55).
+**Figure 7.:** (left) Nucleolar sizes in young (log) and old (40 hr) mother cells (displayed in blue and red, respectively) across multiple genotypes. (right) Visualization of nucleoli from young and old cells across genotypes (fob1∆: nold = 59, nyoung = 94; ubr2∆: nold = 64, nyoung = 115; sir2∆: nold = 20, nyoung = 119; WT: nold = 70, nyoung = 55).
 
 ## Discussion
 
@@ -156,27 +244,27 @@ In the future, our expectation is that combining the MAD platform with single-ce
 
 ## Materials and methods
 
-## Assembly of MADs
+### Assembly of MADs
 
 Individual MADs (Figure 1—figure supplement 1A,B are modified versions of ministats originally developed in Miller et al., 2013). A list of parts can be found in Figure 1—source data 1. There are several key components, as detailed below.
 
-## Metro rack
+#### Metro rack
 
 A metro rack (Uline, H-2946–63) with three shelves can be used to hold 8 MADs. Casters are required to move in and out of temperature-controlled room. Shelf-liners, ledges, and push handle for safety, stability, and accessibility are optional. The top shelf is for air pumps and the bottom shelf is for effluent collection flasks. The middle shelf is for the rest of MAD components (peristaltic pump, ministat vessels in tube rack, media carboy, etc.).
 
-## Air pumps
+#### Air pumps
 
 An individual air pump (Hydrofarm, AAPA3.2L) is used to aerate each ministat vessel. Air pressure can be adjusted with a controller to ensure optimal air flow that strong enough to provide aeration, but weak enough not to disturb labeled yeast cells attracted to magnets. Air pumps should be mounted on the metro rack with cable ties.
 
-## Ring magnets
+#### Ring magnets
 
 Ministats are threaded through three neodymium ring magnets (K&J Magnetics, RY0X04) with spacer elements (3D printed, same dimension as magnets, plastic) and placed on a rack (Fisher Scientific, 14-793-5). The ministat is then surrounded by four 3D-printed posts (Figure 1—figure supplement 2 and Figure 1—figure supplement 3)
 
-## Ministat vessel with accessories
+#### Ministat vessel with accessories
 
 A stainless steel (type SST316; materials from McMaster-Carr, 89495K425 and 9298K12) bubble cage (Zera Development, SBT001Rev01 and SBT002Rev01) is used to guide air bubbles to the center of the vessel so they do not dislodge the bead-labeled mother cells from the glass wall (Figure 1—figure supplement 4). A 7-inch needle (Hamilton, 7750–07) is connected to Y-shape branched tubing for media feeding and aeration. Two 5-inch needles (Hamilton, 7750–07) are for effluent and loading port, respectively. The loading port with male luer cap can be used to deliver drugs or other additives as well as for the inoculation of seed culture. A Teflon cap (Zera Development, SBT003Rev01; materials from McMaster-Carr, 8546K17) with a silicone gasket (Zera Development, SBT004Rev01; materials from McMaster-Carr, 1460N25) is used for positioning of the needles and airtightness (Figure 1—figure supplement 5).
 
-## Cell preparation for aging in MADs
+### Cell preparation for aging in MADs
 
 Cultures of desired strains were grown overnight at 30°C with shaking (180–200 rotations per minute [RPM]) and harvested at OD600 < 0.2 by next morning (early log phase). Upon cells reaching the desired OD600,EZ-Link Sulfo-NHS-LC-LC-Biotin (ThermoFisher cat# 21338) was removed from −20°C freezer and equilibrated to room temperature during cell washing and preparation. For one MAD, 4 OD600 units of cells were washed twice in PBS + 0.25% PEG3350 at 1500 g for 5 min at room temperature. During the second wash the NHS-LC-LC-Biotin was weighed out (0.5 mg per OD unit of cells) and re-suspended in 0.5 mL of PBS. Final washed cell pellets were resuspended in 0.5 mL of PBS and combined with NHS-LC-LC-Biotin in PBS for a final reaction volume of 1 mL. The labeling reaction was carried out for 30 min at room temperature with rotation followed by a 2x wash in PBS with 0.25% PEG3350, as above. Biotin-labeled cells were resuspended in growth media and grown under normal liquid culture conditions (30°C with shaking at 180–200 RPM) for 10–14 hr. At time of seeding, the number of labeled cells was determined using a Beckman Coulter Counter. In general, 4 OD600 units of cells produces between 130 and 170 million cells with variation arising from differences in strain size and cell loss during washing. Cultures were seeded such that the cell density at time of collection would not exceed an OD600 of 0.3.
 
@@ -190,31 +278,31 @@ For MAD loading, ministats were removed from magnets, the air pumps were set to 
 
 For experiments in Figures 1 and 2, the media used was a minimal medium (Yeast Nitrogen Base [YNB] with 5 g/L Ammonium Sulfate as a nitrogen source; Fisher, DF0919) with 2% glucose and 2% mannose (mannose is used to suppress potential flocculation in the MAD). In subsequent experiments, a slightly different minimal medium was used: Yeast Nitrogen Base [YNB] with 5 g/L Ammonium Sulfate and no biotin (Sunrise, 1523–100) with 2% glucose, 2% mannose, and 40 nM 7,8-diaminopelargonic acid (DAPA). See Appendix 1 for more details.
 
-## Aging of cells in MADs
+### Aging of cells in MADs
 
 Loaded cells were grown in MADs for desired length of time. For the dense time course, 5 MADs were loaded and an entire MAD worth of cells was collected per time point. For the mutant strain time courses, cells were harvested by removing the glass vessel from the magnets (pumps off, air low, and effluent needle up) and waiting 5 min for mothers to disperse. Sampling of cells was done through the loading port luer-lock syringe.
 
-## Harvesting of daughter cells
+### Harvesting of daughter cells
 
 Effluent tubing was diverted to a clean 50 mL Falcon tube to collect daughter cells. 5 million cells were spun down and frozen in liquid nitrogen for RNA, DNA preps or used immediately for ATAC-seq or bud scar counting as needed.
 
-## Harvesting and washing of aged mother cells
+### Harvesting and washing of aged mother cells
 
 Following removal of the MAD cap, tubing, and bubble cage, the supernatant was removed using a 25 mL pipette, being careful not to disturb the magnetically bound cells on the vessel wall. With the vessel removed from the magnet, beaded cells were resuspended in media and placed back on the magnet for 5–10 min. This was repeated for a minimum of four washes or until the cells were of desired purity as assessed by microscopy. Final beaded cells were resuspended in 1 mL of media and 5 million cells were spun down and frozen in liquid nitrogen for RNA, DNA preps or used immediately for ATAC-seq or bud scar counting as needed.
 
-## Bud scar counting and viability staining
+### Bud scar counting and viability staining
 
 Cells were resuspended in PBS with 1M sorbitol and 4 mM EDTA and stained with 10 µL of NeutrAvidin Protein with DyLight 405 (ThermoFisher cat# 22831) or NeutrAvidin Protein with DyLight 594 (ThermoFisher cat# 22831 cat#22842) to identify biotinylated mother cells; 1 µL 5 mg/mL Wheat Germ Agglutinin, Alexa Fluor 488 Conjugate (ThermoFisher cat# W11261) to determine replicative age; and 1 µL of 5 mg/ml propidium iodide) to quantify replicative age. Cells were stained for 30 min at room temperature and then washed twice in PBS with 1M sorbitol before microscopy. Viability and purity analysis was carried out exactly as in Janssens et al. (2015). FACS analysis was carried out with FloJo.
 
-## RNA extraction
+### RNA extraction
 
 Frozen cell pellets were resuspended in 200 µL of Lysis buffer (10 mM Tris [pH 8.0], 0.5% SDS, 10 mM EDTA). Following the addition of 200 µL Acid Phenol [pH 4.3], samples were vortexed for 30 s. Samples were incubated at 65°C for 1 hr in a Thermomixer with intermittent shaking (2000 RPM for 1 min every 15 min). 400 µL of ethanol was then added and the RNA was purified using the Direct-zol RNA Miniprep Plus kit (Zymo research) according to the manufacturer’s protocol including the optional DNase digestion step. RNA integrity was confirmed using an Agilent Bioanalyzer.
 
-## RNA-seq library preparation
+### RNA-seq library preparation
 
 RNA-seq libraries were prepared first by removing rRNA with the Ribo-Zero Gold rRNA Removal Kit (Yeast) (Illumina Cat #MRZY1324) and eluted in 30 µL. After rRNA removal, RNA was bound to Agencourt RNAClean XP beads (Beckman coulter cat#A66514) using a 2x bead volume (60 µL) followed by washing and elution as per vendor’s protocol (except that RNA was eluted in Fragment, Prime, Finish Mix from the TruSeq Stranded mRNA Library Prep [Illumina cat# 20020595]). Subsequent steps were carried out as per the protocol for the TruSeq Stranded mRNA Library Prep. Libraries were indexed using Illumina barcode kit (catalog # 20020492, 20020493 or 20019792). Libraries were sequenced on a hISEQ4000 (with 150 × 150 paired-end reads).
 
-## RNA-seq data processing and analysis
+### RNA-seq data processing and analysis
 
 RNA-seq data was quantified using Salmon-0.8.1 with three separate annotation indices:
 
@@ -226,43 +314,43 @@ Batch correction (for heatmap visualization only) was applied to the Salmon quan
 
 Gene Ontology (GO) term enrichment analysis was performed via uploading query lists to the DAVID Bioinformatics Resources 6.8 website and running enrichment with the S. Cerevisiae species background.
 
-## Live/dead cell prep for ATAC-seq
+### Live/dead cell prep for ATAC-seq
 
 WT cells (DBY12000) were grown in YPD to OD600 0.2–0.4, spun down (1200 rcf/4 min./room temperature), resuspended at 108 cells/mL in YPD and split into two 1 mL aliquots for ‘live’ and ‘dead’ cells. The ‘dead’ cell aliquot was incubated at 50°C for 25 min in a thermomixer and 100 µL (10 million cells) was plated on YPD to test viability (only 2 CFUs grew). Live and dead cells were combined into 100 µL aliquots at the desired ratios. ATAC-seq was performed as described below.
 
-## ATAC-seq sample preparation
+### ATAC-seq sample preparation
 
 5 million cells were spun down (1200 rcf/4 min./room temperature) and resuspended in 250 µL media. Propidium Monoazide (PMA, Qiagen 296015) was added to a concentration of 50 mM, the cells were incubated in the dark at room temperature for 10 min. and then illuminated in the BLU-V system (Qiagen 9002300) for 20 min at 4°C. Cells were spun down, washed twice with SB buffer (1M Sorbitol, 40 mM HEPES [pH7.5], 10 mM MgCl2) and then resuspended in 190 µL SB Buffer. 10 µL of 10 mg/mL Zymolyase-100T was added and the cells were incubated at 30°C for 30 min. with light shaking (600 RPM) in a thermomixer (Eppendorf). Spheroplasts were spun down (1500 rcf/5 min./room temperature) and washed twice with SB Buffer, resuspended in 50 µL Tagmentation Mix (25 µL Nextera Tagment DNA Buffer, 22.5 µ﻿L H2O, 2.5 µL Nextera Tagment DNA Enzyme I) and incubated at 37°C for 30 min. DNA was purified over DNA Clean and Concentrator-5 kit (Zymo Research) following the manufacturer’s protocol, eluted in 11 µL H2O and stored at −20°C until ready for PCR.
 
 PCR reactions were set up using Nextera Index i5 and i7 series PCR primers (Illumina). Mixed 25 µL NEBNext Hi-Fidelity 2x PCR Master Mix, 7.5 µL H2O, 6.25 µL i5 primer (10 mM), 6.25 µL i7 primer (10 mM) and 5 µL tagmented DNA from above such that each sample has a unique barcoded primer pair. Ran PCR amplification (one cycle: 72°C for 5 min.; one cycle: 98°C for 30 s.; eight cycles: 98°C for 10 s., 63°C for 30 s., 72°C for 1 min.; hold at 4°C). PCR reactions were cleaned up using the Agencourt AMPure XP system (Beckman Coulter) first by negatively selecting against large DNA fragments using 0.4x volume of beads and then by positively selecting for the desired fragments using 1.5x volume of beads. The final solution was re-purified over DNA Clean and Concentrator-5 columns to eliminate primers, eluted in 22 µL H2O and analyzed on the BioAnalyzer.
 
-## ATAC-seq data analysis
+### ATAC-seq data analysis
 
-## Processing of raw sequencing data
+#### Processing of raw sequencing data
 
 Raw ATAC-seq data was processed as described in Hendrickson et al. (2018). Briefly, first, the raw paired end reads were aligned to the Saccharomyces cerevisiae genome (sacCer3, Release 64) using bwa mem version 0.7.12 with default parameters. Second, the alignments were filtered requiring that both reads in the pair are mapped, the mapping quality is greater than or equal to 30, the reads are mapping concordantly and the direction of the mapping is F1R2. Third, we converted the alignments into track of number of insertions at each position in the genome. For every aligned fragment, the insertion locations are calculated by shifting the fragment ends of reads that align to ‘+’ strand by four nucleotides and shifting the fragment ends of reads that align to ‘-’ strand by five nucleotides in the 3’ direction to reflect the distance to the center of the transposase binding site (Buenrostro et al., 2013). To normalize for uneven sequencing depth and different amounts of rDNA in the samples, insertion counts were normalized such that the total number of insertions from unique non-rDNA, nonmitochondrial reads is constant in each sample.
 
-## Annotations
+#### Annotations
 
 Nucleosome positions were downloaded from Brogaard et al. (2012), lifted over to sacCer3 assembly and only nucleosomes with mapping score greater than two were used in the metagene plots. For metagene plots around promoters we defined the TSSs for each yeast gene my merging the TSS data from Pelechano et al. (2013) (TIF-seq) and Park et al. (2014) (TSS data). If the TSS for a gene was not reported by these two papers, we used the beginning of ORF as the TSS. TF and chromatin modifier binding data were from (MacIsaac et al., 2006; Venters et al., 2011).
 
-## NucleoATAC
+#### NucleoATAC
 
 Baseline estimation of the nucleosome occupancy from ATAC-seq data could be confounded by noise in estimation of nucleosome free and nucleosomal fraction of fragments between samples. Therefore we generated a fragment size distribution that was an average fragment size distribution of all samples and ran the NucleoATAC pipeline using a constant fragment size distribution using --sizes parameter. Since occupancy estimation was sensitive to the depth of the sample, we downsampled each sample to 25 million uniquely mapped non-ribosomal reads. Finally, to limit differences due to differences in nucleosomal calling between samples, we called occupancy only on the nucleosomes from Brogaard et al that are well positioned (score >2), located in the open chromatin part of the genome (as defined by Schep et al) and have a median occupancy of at least 0.5.
 
-## Differential accessibility
+#### Differential accessibility
 
 Aging slope for accessibilities was calculated as follows. We first binned the genome into non-overlapping 100 bp bins and counted number of insertions in each bin. We then performed quantile normalization for each sample separately to calculate normalization factors and supplied gene specific normalization factors as described in http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#sample-gene-dependent-normalization-factors to DESeq2 pipeline (Love et al., 2014). The aging slope was determined on all samples using the following model: ‘~replicate + strain+ ave_budscars’ where ave_budscars were the average number of budscars for that time point and we looked at the bins with q-value of non-zero slope of less than 10−6. To identify bins that were specifically opening or closing in certain strains, we used the following model ‘replicate +strain + ave_budscars + strain:ave_budscars’.
 
-## Enrichments of regulators
+#### Enrichments of regulators
 
 We assigned each genomic bin to the gene whose gene body it intersects or to the promoter (defined as up to 400 bp upstream of TSS) of the gene that intersects. The lists of age-opening and age-closing genes were generated by looking at a genes that contained at least one opening and closing bin (with q-value <10−6), respectively. We then intersected these lists with the list of genes that bind to transcription factor or chromatin modifier and performed a hypergeometric test to evaluate enrichment.
 
-## Strain construction
+### Strain construction
 
 Strains containing single-gene deletions were constructed using the standard PCR-mediated gene disruption method (Amberg et al., 2006). NOP58-3xmNeonGreen fusion proteins were constructed in WT, sir2∆, ubr2∆ and fob1∆ strains by PCR amplifying a 3xmNeonGreen/natMX cassette (from pKT127-3xNeonGreen-NatMX) using primers with homology to the NOP58 C-terminus and 3’UTR. All strains are S288c with a repaired HAP1 allele (Hickman and Winston, 2007). A full list of strains used in this study can be found in Figure 2—source data 2.
 
-## Nucleolar quantification
+### Nucleolar quantification
 
 Strains were grown in media to mid-log phase (OD600 of 0.2–0.4), labelled and beaded. Cells were harvested at log phase (pre-biotinylation), ‘young’ (purified after initial 20 hr of outgrowth, before loading onto MAD) and ‘old’ (after 23 hr of growth on the MAD, 43 hr of growth). Cells were stained with NeutrAvidin Protein, DyLight 405 (ThermoFisher cat# 22831) and Wheat Germ Agglutinin, Alexa Fluor 594 (ThermoFisher cat # W11262) to label the original biotinylated mothers and bud scars, respectively.
 
@@ -270,10 +358,10 @@ Approximately 50,000 cells/well were loaded onto a Matriplate 384-Well glass bot
 
 Images were analyzed in ImageJ and nucleolar area was determined by first creating a mask outline around original (biotinylated, Neutravidin-405-stained) cells. This mask was overlaid onto the mNeonGreen image, the threshold of the green areas was set and the analyze particles function was applied to calculate the nucleolar areas within each original cell. If the nucleolus was fragmented, the area was recorded as the sum of all fragments within that cell. Nucleoli outside of cells or within non-neutravidin-405 stained cells were not included in the analyses.
 
-## qPCR analysis of rDNA
+### qPCR analysis of rDNA
 
 PCR primers and probes were designed against each target sequence using the online PrimerQuest Tool (IDT-Integrated DNA Technologies) and ordered as PrimeTime QPCR Assays (primer and probe mix) with probes containing a 5’ FAM reporter and ZEN/Iowa Black FQ double quencher. Each amplicon was also synthesized and cloned into a standard vector to generated copy # standard curves. Total DNA was isolated from frozen yeast pellets (5 million cells frozen in liquid nitrogen) via standard Zymolyase digestion/Buffered Phenol:Chlorofom:Isoamyl (25:24:1, pH 8.0) extraction/EtOH precipitation methods. Each amplicon plasmid was diluted to generate a standard curve ranging from 10 to 781,250 copies/well. qPCR was run on 250 pg of total DNA as well as the standard curve using IDT’s PrimeTime Gene Expression 2x Master Mix in 384-well format on the Applied Biosystems ViiA seven system. Data was normalized to ACT1 copy number to obtain relative copy number per genome. Primers can be found in Figure 6—source data 1.
 
-## Accessing genomics data
+### Accessing genomics data
 
 RNA-seq and ATAC-seq data were deposited with the NCBI Gene Expression Omnibus with accession number GSE118581.

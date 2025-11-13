@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05gs8cd61 Department of Psychology, Laboratory for Sleep, Cognition and Consciousness Research, University of Salzburg Salzburg Austria
-2. https://ror.org/05gs8cd61 Centre for Cognitive Neuroscience Salzburg (CCNS), University of Salzburg Salzburg Austria
-3. https://ror.org/00pjgxh97 Hertie-Institute for Clinical Brain Research, University Medical Center Tübingen Tübingen Germany
+1. Department of Psychology, Laboratory for Sleep, Cognition and Consciousness Research, University of Salzburg Salzburg Austria ([ROR:05gs8cd61](https://ror.org/05gs8cd61))
+2. Centre for Cognitive Neuroscience Salzburg (CCNS), University of Salzburg Salzburg Austria ([ROR:05gs8cd61](https://ror.org/05gs8cd61))
+3. Hertie-Institute for Clinical Brain Research, University Medical Center Tübingen Tübingen Germany ([ROR:00pjgxh97](https://ror.org/00pjgxh97))
 
 † Corresponding author
 
@@ -43,9 +43,17 @@ Healthy adolescents (n = 28, age: 13.11 ± 0.79 years, mean ± standard deviatio
 
 **Figure 1.:** Adolescents (N = 28; 23 males) and adults (N = 41; 25 males) without prior juggling experience were divided into sleep-first and wake-first groups. Participants in the sleep-first group trained to juggle for 1 hr with video instructions in the evening. Juggling performance was tested before and after a retention interval containing sleep (1), followed by a third juggling test after a retention interval containing wakefulness (2). Participants in the wake-first group followed the same protocol but in reverse order (i.e., training in the morning, first retention interval containing wakefulness and second retention interval containing sleep). Polysomnography was recorded during an adaptation night and a learning night at the respective sleep retention interval. Psychomotor vigilance tasks were conducted before each performance test. Adolescents only performed three juggling blocks per test to avoid a too excessive training load.
 
-## Behavioral results: juggling performance and disentangling the learning process
+### Behavioral results: juggling performance and disentangling the learning process
 
 Adolescents improved their juggling performance over the course of all nine blocks (Figure 2A, top; F3.957, 94.962 = 6.948, p < 0.001, η2 = 0.23). There was neither an overall difference in performance between the sleep-first and wake-first groups (F1, 24 = 1.002, p = 0.327, η2 = 0.04), nor did they differ over the course of the juggling blocks (F3.957, 94.962 = 1.148, p = 0.339, η2 = 0.05). Similar to the adolescents, adults improved in performance across all 15 blocks (Figure 2B, top; F4.673, 182.241 = 11.967, p < 0.001, η2 = 0.24), regardless of group (F4.673, 182.241 = 0.529, p = 0.742, η2 = 0.01). Further, there was no overall difference in performance between the sleep-first and wake-first groups in adults (F1, 39 = 1.398, p = 0.244, η2 = 0.04). Collectively, these results show, that participants do not reach asymptotic level juggling performance (for single subject data of good and bad performers, see Figure 2—figure supplement 1A, B). In other words, the gross-motor skill learning process is still in progress in adolescents and adults. Therefore, we wanted to capture the progression of the learning process, rather than absolute performance metrics (i.e., mean performance) that would underestimate the dynamics of gross-motor learning.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig2-v1.jpg)
+
+**Figure 2.:** (A) The number of successful three-ball cascades (mean ± standard error of the mean [SEM]) of adolescents (circles) for the sleep-first (blue) and wake-first groups (green) per juggling block. Grand average learning curve (black lines) as computed in (C) are superimposed. Dashed lines indicate the timing of the respective retention intervals that separate the three performance tests. Note that adolescents improve their juggling performance across the blocks. (B) Same conventions as in (A) but for adults (diamonds). Similar to adolescents, adults improve their juggling performance across the blocks regardless of group. (C) Schematic representation of the juggling learning process parameterization. We used a linear fit across all juggling blocks within a performance test to estimate the learning curve (m) and the task proficiency (linear line equation solved for x = 1) for each corresponding performance test. (D) Comparison of the juggling learning curve (mean ± standard error of the mean [SEM]) between the sleep-first (blue) and wake-first groups (green) of adolescents (circles) and adults (diamonds) before and after the first retention interval to investigate the influence of sleep. Single subject data are plotted in the corresponding group color and age icon. Participants in the sleep-first group showed a steeper learning curve than the wake-first group after the first retention interval. (E) Same conventions as in (D) but for the task proficiency metric. Adolescents in the wake-first group had better overall task proficiency than adolescents in the sleep-first group. Adults in the sleep-first group displayed better overall task proficiency than adults in the wake-first group. (F) Spearman rank correlation between the overnight change in task proficiency (post–preretention interval) and the overnight change in learning curve with robust linear trend line collapsed over the whole sample. Gray-shaded area indicates 95% confidence intervals of the trend line. Adolescents are denoted as red circles and adults as black diamonds. A strong inverse relationship indicated that participants with an improved task proficiency show flatter learning curves.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Single subject data of successful three-ball cascades per juggling block for well performing adolescents (upper lines) and worse performing adolescents (lower lines) color coded for their respective group affiliation. (B) Same conventions as in (A) but for adults. (C) Reaction time (mean ± standard error of the mean [SEM]) for the sleep-first (blue) and wake-first groups (green, collapsed across adolescents and adults) in the psychomotor vigilance tasks conducted before the juggling performance test pre and post the first retention interval. We found no significant difference between the groups (F(1,67) = 1.87, p = 0.18, partial eta² = 0.03) nor between the performance tests (F(1,67) = 1.06, p = 0.31, partial eta² = 0.02). Critically, we found no significant interaction (F(1,67) = 0.35, p = 0.55, partial eta² = 0.01) indicating that participants’ cognitive engagement did not differ in the juggling performance tests due to the preceding sleep or wake intervals. (D) Spearman rank correlation between the overnight change in task proficiency (post–preretention interval) and the overnight change in learning curve with robust linear trend line collapsed over the whole sample after outlier removal. The strong inverse relationship between task proficiency and learning curve originally observed in Figure 2F persisted. Gray-shaded area indicates 95% confidence intervals of the trend line. Adolescents are denoted as red circles and adults as black diamonds.
 
 Since subjects did not reach asymptotic level performance, but learning was ongoing, we parameterized the juggling learning process by estimating the learning curve for each performance test using a first-degree polynomial fit to the different blocks (Figure 2A–C, black lines). We considered the slope of the resulting trend as learning curve. The learning process of complex motor skills is thought to consist of a fast initial learning stage during skill acquisition and a much slower skill retaining learning stage (Dayan and Cohen, 2011; Doyon and Benali, 2005). In other words, within-learning session performance gains are rapid at the beginning, but taper off with increased motor skill proficiency, resembling a power-law curve. Therefore, we also estimated the task proficiency per performance test at the first time point as predicted by the model, since the learning curve is expected to be influenced by the individual juggling aptitude. Importantly, the estimated task proficiency was comparable to the observed values in the corresponding first juggling block (performance test 1: rhos = 0.98, p < 0.001; performance test 2: rhos = 0.97, p < 0.001). Besides having a more accurate picture of juggling performance, this parameterization also allowed us to compare performance of adolescents and adults on a similar scale because of the different number of juggling blocks. A mixed ANOVA with the factors performance test (pre- and postretention interval), condition group (sleep-first and wake-first) and age group (adolescents and adults) showed a significant interaction between performance test and condition group (F1, 65 = 4.868, p = 0.031, η2 = 0.07). This result indicates that regardless of age, the juggling learning curve becomes steeper after sleep than after wakefulness, thus indicating that sleep impacts motor learning (Figure 2D). No other interactions or main effects were significant (for the complete ANOVA report, see Supplementary file 1—table 3). When analyzing the task proficiency before and after the first retention interval, depending on condition and age group, we found a significant interaction between condition and age group (Figure 2E; F1, 65 = 5.210, p = 0.026, η2 = 0.07), showing that the adult sleep-first group had better overall task proficiency than the wake-first group, whereas the adolescent sleep-first group was worse than the wake-first group. The interaction (performance test × condition group) did not reach significance (F1, 65 = 1.882, p = 0.175, η2 = 0.03; also see Supplementary file 1—table 4). Collectively, these results suggest that sleep influences learning of juggling as a gross-motor task.
 
@@ -53,9 +61,29 @@ Figure 2A, B indicates that performance tests in the morning might be characteri
 
 Next, we further dissected the relationship between changes in the learning curve and task proficiency after the first retention interval. We hypothesized, that a stronger increase in task proficiency across sleep would lead to a flatter learning curve based on the assumption that motor skill learning involves fast and slow learning stages. Indeed, we confirmed a strong negative correlation between the change (postretention values − preretention values) in task proficiency and the change in learning curve after the retention interval (Figure 2F; rhos = −0.71, p < 0.001), which also remained strong after outlier removal (Figure 2—figure supplement 1D). This result indicates that participants who consolidate their juggling performance after a retention interval show slower gains in performance. Note, that the flattening of the learning curve does not necessarily indicate worse learning but rather mark a more progressed learning stage. These results demonstrate a highly dynamic gross-motor skill learning process. Given that sleep influences the juggling learning curve, we aimed to determine whether sleep oscillation dynamics track the dynamics of gross-motor learning.
 
-## Electrophysiological results: interindividual variability and SO–spindle coupling
+### Electrophysiological results: interindividual variability and SO–spindle coupling
 
 To determine the nature of the timed coordination between the two cardinal sleep oscillations, we adopted the same principled individualized approach we developed earlier (Hahn et al., 2020). First, we compared oscillatory power between adolescents and adults in the frequency range between 0.1 and 20 Hz during NREM (2 and 3) sleep, using cluster-based permutation tests (Maris and Oostenveld, 2007). Spectral power was elevated in adolescents as compared to adults across the whole tested frequency range (Figure 3—figure supplement 1A left for representative electrode Cz; cluster test: p < 0.001, d = 1.88). Similar to the previously reported developmental patterns of sleep oscillations from childhood to adolescence (Hahn et al., 2020), this difference was explained by a spindle frequency peak shift and broadband decrease in the fractal or 1/f trend of the signal, thus directly replicating and extending our previous findings in a separate sample. After estimating the fractal component of the power spectrum by means of irregular-resampling autospectral analysis (Wen and Liu, 2016), we found that adolescents exhibited a higher offset of fractal component on the y-axis than adults (Figure 3—figure supplement 1A middle; cluster test: p < 0.001, d = 1.99). Next, we subtracted the fractal component from the power spectrum, which revealed clear distinct oscillatory peaks in the SO (<2 Hz) and sleep spindle range (11–16 Hz) for both adolescents and adults (Figure 3—figure supplement 1A, right). Importantly, we observed the expected spatial amplitude topography with stronger frontal SO and pronounced centroparietal spindles for both age groups (Figure 3A left).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig3-v1.jpg)
+
+**Figure 3.:** (A) Left: topographical distribution of the 1/f corrected SO and spindle amplitude as extracted from the oscillatory residual (Figure 3—figure supplement 1A, right). Note that adolescents and adults both display the expected topographical distribution of more pronounced frontal SO and centroparietal spindles. Right: single subject data of the oscillatory residual for all subjects with sleep data color coded by age (darker colors indicate older subjects). SO and spindle frequency ranges are indicated by the dashed boxes. Importantly, subjects displayed high interindividual variability in the sleep spindle range and a gradual spindle frequency increase by age that is critically underestimated by the group average of the oscillatory residuals (Figure 3—figure supplement 1A, right). (B) Spindle peak locked epoch (NREM3, co-occurrence corrected) grand averages (mean ± standard error of the mean [SEM]) for adolescents (red) and adults (black). Inset depicts the corresponding SO-filtered (2 Hz lowpass) signal. Gray-shaded areas indicate significant clusters. Note, we found no difference in amplitude after normalization. Significant differences are due to more precise SO–spindle coupling in adults. (C) Top: comparison of SO–spindle coupling strength between adolescents and adults. Adults displayed more precise coupling than adolescents in a centroparietal cluster. T-Scores are transformed to z-scores. Asterisks denote cluster-corrected two-sided p < 0.05. Bottom: Exemplary depiction of coupling strength (mean ± SEM) for adolescents (red) and adults (black) with single subject data points. Exemplary single electrode data (bottom) is shown for C4 instead of Cz to visualize the difference. (D) Cluster-corrected correlations between individual coupling strength and overnight task proficiency change (post–preretention) for adolescents (red, circle) and adults (black, diamond) of the sleep-first group (left, data at C4). Asterisks indicate cluster-corrected two-sided p < 0.05. Gray-shaded area indicates 95% confidence intervals of the trend line. Participants with a more precise SO–spindle coordination show improved task proficiency after sleep. Note that the change in task proficiency was inversely related to the change in learning curve (Figure 2F), indicating that a stronger improvement in task proficiency related to a flattening of the learning curve. Further note that the significant cluster formed over electrodes close to motor areas. (E) Cluster-corrected correlations between individual coupling strength and overnight learning curve change. Same conventions as in (D). Participants with more precise SO–spindle coupling over C4 showed attenuated learning curves after sleep.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Left: z-normalized EEG power spectra (mean ± standard error of the mean [SEM]) for adolescents (red) and adults (black) during NREM sleep in semi-log space. Data are displayed for the representative electrode Cz unless specified otherwise. Note the overall power difference between adolescents and adults due to a broadband shift on the y-axis. Straight black line denotes cluster-corrected significant differences. Middle: 1/f fractal component that underlies the broadband shift. Right: oscillatory residual after subtracting the fractal component (A, middle) from the power spectrum (A, left). Both groups show clear delineated peaks in the slow oscillation (SO; <2 Hz) and spindle range (11–16 Hz) establishing the presence of the cardinal sleep oscillations in the signal. (B) Top: spindle frequency peak development based on the oscillatory residuals. Spindle frequency is faster at all but occipital electrodes in adults than in adolescents. T-Scores are transformed to z-scores. Asterisks denote cluster-corrected two-sided p < 0.05. Bottom: exemplary depiction of the spindle frequency (mean ± SEM) for adolescents (red) and adults (black) with single subject data points at Cz. (C) SO–spindle co-occurrence rate (mean ± SEM) for adolescents (red) and adults (black) during NREM2 and NREM3 sleep. Event co-occurrence is higher in NREM3 (F(1, 51) = 1209.09, p < 0.001, partial eta² = 0.96) as well as in adults (F(1, 51) = 11.35, p = 0.001, partial eta² = 0.18). (D) Histogram of co-occurring SO–spindle events in NREM2 (blue) and NREM3 (purple) collapsed across all subjects and electrodes. Note the low co-occurring event count in NREM2 sleep. (E) Single subject (top) and group averages (bottom, mean ± SEM) for adolescents (red) and adults (black) of individually detected, for SO co-occurrence-corrected sleep spindles in NREM3. Spindles were detected based on the information of the oscillatory residual. Note the underlying SO component (gray) in the spindle detection for single subject data and group averages indicating a spindle amplitude modulation depending on SO phase. (F) Grand average time–frequency plots (−2 to −1.5 s baseline corrected) of SO-trough-locked segments (corrected for spindle co-occurrence) in NREM3 for adolescents (left) and adults (right). Schematic SO is plotted superimposed in gray. Note the alternating power pattern in the spindle frequency range, showing that SO phase modulates spindle activity in both age groups.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Comparison of task proficiency between sleep-first and wake-first groups after the sleep retention interval (mean ± standard error of the mean [SEM]). Adolescents in the wake-first group had higher task proficiency given the additional juggling performance test, which also reflects additional training (t(23) = −2.24, p = 0.034). (B) Comparison of slow oscillation (SO)–spindle coupling strength in the adolescent sleep-first (blue) and wake-first (green) groups using cluster-based random permutation testing (Monte-Carlo method, cluster alpha 0.05, max size criterion, 1000 iterations, critical alpha level 0.05, two-sided). Left: exemplary depiction of coupling strength at electrode C4 (mean ± SEM). Right: z-transformed t-values plotted for all electrodes obtained from the cluster test. No significant clusters emerged. (C) Left: cluster-corrected correlations between individual coupling strength and overnight task proficiency change (post–preretention) for adolescents of the sleep-first group with Spearman correlation at C4, uncorrected. Asterisks indicate cluster-corrected two-sided p < 0.05. Gray-shaded area indicates 95% confidence intervals of the robust trend line. Participants with a more precise SO–spindle coordination show improved task proficiency after sleep. Right: cluster-corrected correlation of coupling strength and overnight task proficiency change for adults. Independently, adolescents and adults with higher coupling strength have better task proficiency after sleep. (D) Left: cluster-corrected correlation of coupling strength and overnight learning curve change for adolescents. Same conventions as in (C). Higher coupling strength related to a flatter learning curve after sleep. Right: cluster-corrected correlation of coupling strength and overnight learning curve change for adults. Higher coupling strength related to a flatter learning curve after sleep in both age groups. (E) Cluster-corrected correlations for coupling strength of co-occurrence corrected events in NREM2 and NREM3 sleep with overnight task proficiency change (top) and overnight learning curve change (bottom). Asterisks indicate cluster-corrected two-sided p < 0.05. Similar to our original analyses (Figure 3D, E) we found significant cluster-corrected correlations at C4. (F) Cluster-corrected correlations between individual coupling strength and overnight task proficiency change (post–preretention) after outlier removal with Spearman correlation at C4, uncorrected. Similar to our original analyses we found a significant central cluster (mean rho = 0.35, p = 0.029, cluster-corrected) after outlier removal. (G) Same conventions as in (F) but for overnight learning curve change. Similar to our original analyses we found a significant correlation at C4 (rho = −0.44, p = 0.047, cluster-corrected). (H) Topographical plot of Spearman rank correlations of coupling strength in the adaptation night and learning night across all subjects. Overall coupling strength was highly correlated between the two measurements (mean rho across all channels = 0.55), supporting the notion that coupling strength remains rather stable within the individual (i.e., trait). (I) To investigate a possible state effect for coupling strength and motor learning, we calculated the difference in coupling strength between the two nights (learning night–adaptation night) and correlated these values with the overnight change in task proficiency and learning curve. We identified no significant correlations with a learning-induced coupling strength change. Neither for task proficiency (top) nor learning curve change (bottom).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Summary of cluster-corrected partial correlations (Monte-Carlo method, cluster alpha 0.05, max size criterion, 1000 iterations, critical alpha level 0.05, two-sided) of coupling strength with task proficiency (left) and learning curve (right) controlling for possible confounding factors.Asterisks indicate location of the detected cluster. The pattern of initial results remained highly stable.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/66761/elife-66761-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Summary of cluster-corrected partial correlations of coupling strength with task proficiency (left) and learning curve (right) controlling slow oscillation (SO)/spindle descriptive measures at critical electrode C4. Asterisks indicate location of the detected cluster. The pattern of initial results remained highly stable. (B) Spearman correlation between resampled coupling strength (N = 200, 100 iterations) and original observation of coupling strength for adolescents (red circles) and adults (black diamonds), indicating that coupling strength is not influenced by spindle event number if at least 200 events are present. Gray-shaded area indicates 95% confidence intervals of the robust trend line.
 
 Critically, the displayed group averages of the oscillatory residuals (Figure 3—figure supplement 1A, right) underestimate the interindividual variability of the spindle frequency peak (Figure 3A, right; oscillatory residuals for all subjects at Cz). Even though we found the expected systematic spindle frequency increase in a frontoparietal cluster from adolescence to adulthood (Figure 3—figure supplement 1B; cluster test: p = 0.002, d = −0.87), both respective age groups showed a high degree of variability of the interindividual spindle peak.
 
@@ -67,7 +95,7 @@ To further assess the interaction between SO and sleep spindles, we computed SO-
 
 Next, we determined the coordinated interplay between SO and spindles in more detail by analyzing individualized event-locked cross-frequency interactions (Dvorak and Fenton, 2014; Hahn et al., 2020; Helfrich et al., 2019). In brief, we extracted the instantaneous phase angle of the SO component (<2 Hz) corresponding to the positive spindle amplitude peak for all trials at every electrode per subject. We assessed the cross-frequency coupling based on z-normalized spindle epochs (Figure 3B) to alleviate potential power differences due to age (Figure 3—figure supplement 1A) or different EEG-amplifier systems that could potentially confound our analyses (Aru et al., 2015). Importantly, we found no amplitude differences around the spindle peak (point of SO-phase readout) between adolescents and adults using cluster-based random permutation testing (Figure 3B), indicating an unbiased analytical signal. This was also the case for the SO-filtered (<2 Hz) signal (Figure 3B, inset). Critically, the significant differences in amplitude from −1.4 to −0.8 s (p = 0.023, d = −0.73) and 0.4–1.5 s (p < 0.001, d = 1.1) are not caused by age-related differences in power or different EEG systems but instead by the increased coupling strength (i.e., higher coupling precision of spindles to SOs) in adults giving rise to a more pronounced SO-wave shape when averaging across spindle peak locked epochs. Further, we specifically focused our analyses on spindle events to account for the higher variability in the spindle frequency band than in the SO band (Figure 3A). Based on these adjusted phase values, we derived the coupling strength defined as 1 − circular variance. This metric describes the consistency of the SO–spindle coupling (i.e., higher coupling strength indicates more precise coupling) and has previously been shown to accurately track brain development and memory formation (Hahn et al., 2020). As expected, adults had a higher coupling strength in a centroparietal cluster than adolescents (Figure 3C; cluster test: p < 0.001, d = 0.88), indicating a more precise interplay between SO and spindles during adulthood.
 
-## SO–spindle coupling tracks gross-motor learning
+### SO–spindle coupling tracks gross-motor learning
 
 After demonstrating that SO–spindle coupling becomes more precise from early adolescence to adulthood, we tested the hypothesis, that the dynamic interaction between the two sleep oscillations explains the dynamic process of complex gross-motor learning. When taking the behavioral analyses into account, we did not find any evidence for a difference between the two age groups on the impact of sleep on the learning curve (Figure 2D). Therefore, we did not differentiate between adolescents and adults in our correlational analyses. Furthermore, given that we only recorded PSG for the adults in the sleep-first group and that adolescents in the wake-first group showed enhanced task proficiency at the time point of the sleep retention interval due to additional training (Figure 3—figure supplement 2A), we only considered adolescents and adults of the sleep-first group to ensure a similar level of juggling experience (for summary statistics of sleep architecture and SO and spindle events of subjects that entered the correlational analyses; see Supplementary file 1—table 7). Notably, we found no differences in electrophysiological parameters (i.e., coupling strength, event detection) between the adolescents of the wake-first and sleep-first groups (Figure 3—figure supplement 2B and Supplementary file 1—table 8). To investigate whether coupling strength in the night of the first retention interval explains overnight changes of task proficiency (postretention interval 1 − preretention interval 1), we computed cluster-corrected correlation analyses. We identified a significant central cluster (Figure 3D; mean rho = 0.37, p = 0.017), indicating that participants with a more consistent SO–spindle interplay have stronger overnight improvements in task proficiency.
 
@@ -103,41 +131,133 @@ Taken together, our results provide a mechanistic understanding of how the brain
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Brain Vision Analyzer 2.2</td>
+      <td>Brain Products GmbH https://www.brainproducts.com</td>
+      <td>RRID:SCR_002356</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CircStat 2012</td>
+      <td>Berens, 2009 https://philippberens.wordpress.com/code/circstats/</td>
+      <td>RRID:SCR_016651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EEGLAB 13_4_4b</td>
+      <td>Delorme and Makeig, 2004 https://sccn.ucsd.edu/eeglab/index.php</td>
+      <td>RRID:SCR_007292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FieldTrip 20161016</td>
+      <td>Oostenveld et al., 2011 http://www.fieldtriptoolbox.org/</td>
+      <td>RRID:SCR_004849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IRASA</td>
+      <td>Wen and Liu, 2016 https://purr.purdue.edu/publications/1987/1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB 2017a</td>
+      <td>MathWorks Inc</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio Team</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Somnolyzer 24 × 7</td>
+      <td>Koninklijke Philips N.V.https://www.philips.co.in</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>‘Jonglieren und Bewegungskünste’</td>
+      <td>Sobota and Hollauf, 2013 Austrian ministry of Sports</td>
+      <td></td>
+      <td>Juggling video instructions</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 We recruited 29 adolescents (mean ± SD age, 13.17 ± 0.85 years; 5 females, 24 males) from a local boarding school and 41 young adults (mean ± SD age, 22.24 ± 2.15 years; 16 females, 25 males) from the student population of the University of Salzburg. All participants were healthy, right-handed and without prior juggling experience. However, we excluded one adolescent for all analyses post hoc for violating the prior juggling experience criteria. Two adolescents did not participate in the third performance test. We randomly divided adolescents and adults into a sleep-first (adolescents: N = 17, 12.94 ± 0.75 years; 3 females, 14 males; adults: N = 25, 21.95 ± 2.42 years; 8 females, 17 males) and a wake-first group (adolescents: N = 11, 13.36 ± 0.81 years; 2 females, 9 males; adults: N = 16, 22.69 ± 1.62 years; 8 females, 8 males). See experimental design for more detailed information about the groups. We recorded PSG during full night sleep for all participants except adults in the wake-first group. Therefore, comparison of electrophysiological data between adults and adolescents was based on the adult sleep-first group and both adolescent groups. To ensure similar juggling learning experience, we only included adults and adolescents in the sleep-first group when analyzing the relationship between electrophysiological measures and behavioral performance. All participants and the legal custodians of the adolescents provided written informed consent before participating in the study. The study protocol was conducted in accordance with the Declaration of Helsinki and approved by the ethics committee of the University of Salzburg (EK-GZ:16/2014). Adults received monetary compensation or student credit for their participation. Adolescents received a set of juggling balls.
 
-## Experimental design
+### Experimental design
 
 Adults in the sleep-first group visited the sleep laboratory on three occasions (Figure 1). At the first day subjects slept in the sleep lab with full night PSG for adaptation purposes. On the second visit, subjects learned and practiced juggling by video instructions in the evening (8.45 pm to 9.45 pm). Juggling performance was assessed three times in total. The first performance test was conducted after the training session (10.00 pm to 10.18 pm). The second performance test (7.30 am to 7.48 am) took place after the first retention interval containing a full night of sleep with PSG (11 pm to 7 am). The third and last performance tests were executed after the second retention interval (9.00 pm to 9.18 pm) containing wakefulness. Adults in the wake-first group followed a similar protocol but with reversed order of the retention intervals (i.e., first retention interval containing wakefulness and the second interval containing sleep). Therefore, participants performed the juggling training (10.15 am to 11.15 am) and the first performance test (11.30 am to 11.48 am) in the morning, the second performance test after wakefulness (9.00 pm to 9.18 pm), and the third performance test after sleep (11.00 am to 11.18 am). We did not record PSG in the wake-first group because participants slept at home. To objectively assess attentiveness and potential circadian influences, all participants completed a psychomotor vigilance task (Dinges and Powell, 1985) before the performance tests. Actigraphy (Cambridge Neurotechnology Actiwatch, Cambridge, UK) and a sleep log (Saletu et al., 1987) verified compliance with a regular sleep schedule throughout the study.
 
 Adolescents went through a study protocol comparable to the adults. However, we adjusted the protocol to adhere to the schedule of the boarding school and to control the training load. First, we recorded ambulatory PSG for both groups in their habitual sleep environment at the boarding school and second, we reduced the number of juggling blocks during the performance tests (for details see gross-motor task) because the study regime was already exhausting for our adult participants and we wanted to avoid a too excessive training load. The sleep-first group performed the juggling training (6.30 pm to 7.30 pm) and performance test in the evening (7.45 pm to 7.58 pm) followed by a retention interval containing sleep (21.00 pm to 6.00 am). The second performance test was conducted after sleep (7.30 am to 7.43 am) and the third performance test after wakefulness (7.30 pm to 7.43 pm). The wake-first group learned to juggle (7.30 am to 8.30 am) with a subsequent performance test (8.45 am to 8.58 am) in the morning. The second performance test was executed after wakefulness in the evening (7.30 pm to 7.43 pm) and the third performance test was completed after sleep (7.30 am to 7.43 am).
 
-## Gross-motor task
+### Gross-motor task
 
 To investigate the involvement of SO–spindle coupling in acquiring a real-life gross-motor skill, we implemented a juggling paradigm, which has been shown to induce neural plasticity (Boyke et al., 2008; Draganski et al., 2004) and to be sensitive for sleep-dependent memory consolidation (Morita et al., 2012; Morita et al., 2016). Adults and adolescents completed the same juggling training, which was based on short video clips from the ‘Juggling and Movement Arts’ DVD (‘Jonglieren und Bewegungskünste’; Sobota and Hollauf, 2013) containing step-by-step instructions from the correct stance to a full five-ball cascade (i.e., five continuous catches). We used 14 video clips demonstrating the exercises followed by a practice opportunity for the participants. The training session lasted approximately 1 hr with a short break after half an hour. During the performance tests, participants were instructed to juggle as accurately and continuously as possible. Adults juggled for five blocks a 3 min, which was always separated by a 30-s break. To alleviate the physical strain, adolescents only juggled for three blocks a 3 min during the performance tests. Training and performance tests were videotaped to evaluate the juggling performance.
 
-## Parameterizing juggling performance
+### Parameterizing juggling performance
 
-We evaluated the juggling performance by counting consecutive catches based on the video material. We used the number of three-ball cascades (i.e., three catches in a row, Figure 2A, B) as index for juggling performance by dividing the number of consecutive catches by three. We opted for three-ball cascades as a performance index because we considered three consecutive catches as the criteria for the motor task to qualify as juggling (Boyke et al., 2008; Draganski et al., 2004). Because juggling is a complex motor task where it is unlikely to reach ceiling level performance, we were interested in the progression of the learning process and how it is influenced by task proficiency. Therefore, we calculated a first-degree polynomial fit using the least-squares method to parameterize the learning curve (m, slope) per performance test block (Figure 2A, B, black lines and Figure 2C, D), using the formula:m=∑i=1n(xi−X´)∗(yi−Y´)∑i=1n(xi−X´)²
+We evaluated the juggling performance by counting consecutive catches based on the video material. We used the number of three-ball cascades (i.e., three catches in a row, Figure 2A, B) as index for juggling performance by dividing the number of consecutive catches by three. We opted for three-ball cascades as a performance index because we considered three consecutive catches as the criteria for the motor task to qualify as juggling (Boyke et al., 2008; Draganski et al., 2004). Because juggling is a complex motor task where it is unlikely to reach ceiling level performance, we were interested in the progression of the learning process and how it is influenced by task proficiency. Therefore, we calculated a first-degree polynomial fit using the least-squares method to parameterize the learning curve (m, slope) per performance test block (Figure 2A, B, black lines and Figure 2C, D), using the formula:
 
-Next, we calculated the intercept c according to the following formula:c=Y´−m∗X´
+$$
+m=\frac{\sumi=1n(x_{i}−X´)∗(y_{i}−Y´)}{\sumi=1n(x_{i}−X´)²}
+$$
 
-Finally, task proficiency (y1, Figure 2E) was estimated at the first time point of each performance test asy1=m+c
+Next, we calculated the intercept c according to the following formula:
 
-## PSG and sleep staging
+$$
+c=Y´−m∗X´
+$$
+
+Finally, task proficiency (y1, Figure 2E) was estimated at the first time point of each performance test as
+
+$$
+y_{1}=m+c
+$$
+
+### PSG and sleep staging
 
 We recorded PSG with two systems. We conducted the ambulatory sleep recordings of the adolescents with a portable amplifier system (Alphatrace, Becker Meditec, Karlsruhe, Germany) with a sampling rate of 512 Hz. For in lab recordings of the adult participants, we utilized a 32-channel Neuroscan amplifier system (Scan 4.3.3 Software, Neuroscan Inc, Charlotte, NC) with a sampling rate of 500 Hz. Electrode placement was identical between the two recording systems and in accordance with the 10–20 system. Signals were recorded with gold cup electrodes placed at F3, Fz, F4, C3, Cz, C4, P3, Pz, P4, O1, and O2 on the scalp, as well as at A1 and A2 placed at the mastoids. To allow for sleep staging and to control for muscle artifacts, we recorded an electromyogram (bipolar electrodes at the musculus mentalis), a horizontal electrooculogram (EOG, above the right outer canthus and below the left outer canthus) and a vertical EOG (above and below the left eye). We used Cz as online reference and AFz as ground electrode. For sleep staging, we re-referenced the signal offline against contralateral mastoids. Sleep was semi-automatically staged in 30-s epochs using the Somnolyzer 24 × 7 algorithm (Koninklijke Philips N.V.; Eindhoven, The Netherlands) and subsequently controlled by an expert scorer according to standard sleep staging criteria (Iber et al., 2007). For all other data analyses, we demeaned and re-referenced the EEG signal to a common average.
 
-## Individualized cross-frequency coupling
+### Individualized cross-frequency coupling
 
 To assess the precise interplay between SO and spindles, we used the same individualized cross-frequency coupling pipeline we developed earlier in order to account for network changes induced by aging, that are known to cause spurious coupling estimates (Aru et al., 2015; Cole and Voytek, 2017; Hahn et al., 2020; Scheffer-Teixeira and Tort, 2016). In brief, our approach was based on the following principles: (1) establishing the presence of sleep oscillations, (2) individually detecting transient oscillatory events, (3) alleviating power differences, and (4) ensuring co-occurrence of SO (phase providing signal) and sleep spindles (amplitude providing signal).
 
-## Establishing sleep oscillations
+### Establishing sleep oscillations
 
 First, we z-normalized the EEG signal in the time domain to mitigate prominent power differences and computed averaged power spectra from 0.1 to 30 Hz using a Fast Fourier Transform (FFT) routine with a Hanning window on 15 s of continuous NREM sleep (i.e., NREM2 and NREM3, Figure 3—figure supplement 1A, left) with a 1-s sliding window. Data are presented in the semi-log space. Next, we sought to isolate the oscillatory activity in the normalized data by means of irregular autospectral analysis (IRASA, Wen and Liu, 2016). We first derived the 1/f fractal component (Figure 3—figure supplement 1A, middle) from 15 s NREM sleep data in 1-s sliding steps and subsequently subtracted it from the power spectrum (Figure 3—figure supplement 1A, left) to obtain an unbiased estimate of the oscillatory activity for every subject on every electrode (Figure 3—figure supplement 1A, right and Figure 3A). To separate the 1/f component from the power spectrum, we used the same parameters as specified previously (Hahn et al., 2020). In short, the signal is stretched and compressed by the same noninteger factor (e.g., stretching by a factor of 1.1 and compressing by a factor of 0.9). We repeated the resampling with factors from 1.1 to 1.9 in 0.05 steps. This pair wise stretching and compressing systematically causes frequency peak shifts in the regular oscillatory activity but leaves the more random 1/f background activity unaffected. Because the oscillatory activity becomes faster by a similar factor as it becomes slower, the oscillatory activity is averaged out by median averaging across all pair wise resampled segments thus extracting the 1/f component. We then detected individual SO (<2 Hz) and spindle peak frequencies (10–17 Hz, Figure 3—figure supplement 1B) and the corresponding 1/f corrected amplitude (Figure 3A, left) in the oscillatory residual (Figure 3—figure supplement 1A, right). We considered the highest peak within the specified SO and spindle frequency ranges above as the most representative oscillatory event in each electrode. We then utilized the individual frequency peaks to inform the algorithms for discrete SO and spindle event detection.
 
-## Individually detecting transient oscillatory events
+### Individually detecting transient oscillatory events
 
 We employed widely used spindle and SO detection algorithms (Helfrich et al., 2018; Mölle et al., 2011; Staresina et al., 2015) and adjusted them according to the 1/f corrected SO and spindle features for a fully individualized event detection (Hahn et al., 2020).
 
@@ -145,26 +265,26 @@ We detected spindle events (Figure 3, Figure 3—figure supplement 1E) by band-p
 
 We detected SO events (Figure 3—figure supplement 1F) by first high-pass filtering the continuous EEG signal at 0.16 Hz and then low-pass filtering at 2 Hz. Based on the filtered signal, we detected the zero-crossings that fulfilled the time criterion (length 0.8–2 s). The signal between two consecutive zero-crossings was considered a valid SO if its amplitude exceeded the 75-percentile threshold. We then segmented the raw data ±2.5 s centered on the negative peak.
 
-## Alleviating power differences
+### Alleviating power differences
 
 Power differences in the signal can systematically impact cross-frequency coupling measures by changing the signal-to-noise ratio, which in turn influences the precision of the phase estimation of the signal (Aru et al., 2015; Scheffer-Teixeira and Tort, 2016). Because power decreases are apparent across the lifespan (Campbell and Feinberg, 2009; Campbell and Feinberg, 2016; Hahn et al., 2020; Helfrich et al., 2018), we z-normalized all detected SO and spindle events in the time domain to alleviate this possible confound before calculating phase-amplitude coupling measures (Figure 3B).
 
-## Ensuring co-occurrence of SO and sleep spindles
+### Ensuring co-occurrence of SO and sleep spindles
 
 Cross-frequency coupling renders meaningful information of network communication only when the suspected interacting oscillations are present in the signal. Therefore, we only analyzed SO and sleep spindle epochs during which they co-occurred in a 2.5-s time window (±~2 SO cycles around the spindle peak). Furthermore, we restricted all our coupling analyses to sleep stage NREM3 because of general lower co-occurrence of SO and spindles in NREM2 (Figure 3—figure supplement 1C, D), which can cause spurious coupling estimates (Hahn et al., 2020).
 
-## Event-locked cross-frequency coupling
+### Event-locked cross-frequency coupling
 
 To parameterize the timed coordination between sleep spindles and SO (Figure 3C), we computed event-locked cross-frequency coupling analyses (Dvorak and Fenton, 2014; Hahn et al., 2020; Helfrich et al., 2019; Helfrich et al., 2018; Staresina et al., 2015) based on individualized and normalized spindle peak-locked segments. In short, we used a low-pass filter of 2 Hz to extract the underlying SO component (Figure 3B, inset) from the EEG signal and read out the phase angle corresponding with the sleep spindle peak after applying a Hilbert transform. We then calculated the coupling strength, which is defined as 1 − circular variance using the CircStat Toolbox function circ_r (Berens, 2009) to assess the consistency of the SO–sleep spindle interplay.
 
-## Time–frequency analyses
+### Time–frequency analyses
 
 We computed event-locked time–frequency representations based on −2 to 2 s epochs centered on the negative SO peak (Figure 3—figure supplement 1F). We used a 500-ms Hanning window in 50-ms steps to analyze the frequency power from 5 to 30 Hz in steps of 0.5 Hz. We subsequently baseline corrected the time–frequency representations by z-scoring the data based on the means and SDs of a bootstrapped distribution (10,000 iterations) for the –2- to −1.5-s time interval of all trials (Flinker et al., 2015; Helfrich et al., 2018).
 
-## Statistical analyses
+### Statistical analyses
 
 To compare juggling performance between the sleep-first and wake-first group and to assess the learning progression, we computed mixed ANOVAs with the between factor condition group (sleep-first, wake-first) and the repeated measure factor juggling blocks. Because number of juggling blocks differed between adolescents (9, Figure 2A) and adults (15, Figure 2B), we analyzed the juggling performance separately per age group. Influence of sleep on learning curve (Figure 2D) and task proficiency (Figure 2E) was assessed by a mixed ANOVA with the between factors condition group (sleep-first, wake-first) and age group (adolescents, adults) and the repeated factor performance test (preretention interval 1, postretention interval 1). To correct for multiple comparisons we clustered the data in the frequency (Figure 3—figure supplement 1A), time (Figure 3B), and space domain (Figure 3, Figure 3—figure supplement 1B), using cluster-based random permutation testing (Monte-Carlo method, cluster alpha 0.05, max size criterion, 1000 iterations, critical alpha level 0.05 two-sided; Maris and Oostenveld, 2007). Given our sparse sampling of only 11 scalp electrodes, we set the minimum number of neighborhood electrodes required to be included in the clustering algorithm to zero. For correlational analyses we utilized Spearman rank correlations (rhos; Figure 2F and Figure 3D, E) to mitigate the impact of possible outliers as well as cluster-corrected Spearman rank correlations by transforming the correlation coefficients to t-values (p < 0.05) and clustering in the space domain (Figure 3D, E). Linear trend lines were calculated using robust regression. To control for possible confounding factors we computed cluster-corrected partial rank correlations (Figure 3—figure supplements 3 and 4). We report partial eta squared (η2), Cohen’s d (d) and averaged Spearman correlation coefficients (mean rho) as effect sizes. Cluster effect sizes are estimated by first calculating Cohen’s d for every data point in the significant cluster and subsequently averaging across the obtained values.
 
-## Data analyses
+### Data analyses
 
 We used functions from the Fieldtrip toolbox (Oostenveld et al., 2011), EEGlab toolbox (Delorme and Makeig, 2004), CircStat toolbox (Berens, 2009), and custom written code implemented in MatLab 2015a (Mathworks Inc) for data analyses. IRASA (Wen and Liu, 2016) was conducted using code obtained from the original research paper.

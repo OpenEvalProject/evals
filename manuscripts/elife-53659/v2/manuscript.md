@@ -48,43 +48,87 @@ In this study, we use Drosophila genetics, quantitative trait and expression ana
 
 ## Results
 
-## Enhancers with specific TF binding sites can induce a tissue-specific Notch phenotype
+### Enhancers with specific TF binding sites can induce a tissue-specific Notch phenotype
 
 To better understand transcriptional responses to Notch signals in Drosophila, we designed synthetic enhancers with comparable numbers of either CSL monomer or SPS dimer sites (Figure 1A; note, 1xSPS has the same number of sites as 2xCSL) (Arnett et al., 2010; Nam et al., 2007; Bailey and Posakony, 1995). We first tested the synthetic 1xSPS and 2xCSL sites for their ability to bind Notch/CSL/Mastermind (NCM) complexes in electromobility shift assays (EMSAs) using purified mouse (RBPJ, N1ICD1, and MAML1) and Drosophila (Su(H), NICD, and Mam) proteins. For this experiment, an equal amount of differentially labeled 2xCSL (IRdye-700, pseudo-colored magenta) and 1xSPS (IRdye-800, pseudo-colored green) probe was added into the same binding reaction containing different concentrations of the RBPJ/Su(H) TF with and without the species matched NICD/Mastermind co-activators (Figure 1B–C and Figure 1—figure supplement 1). In the absence of co-activators, RBPJ and Su(H) bound each probe additively with both the mouse and fly proteins showing a slightly higher affinity to 2xCSL than 1xSPS (note, the increased unbound 1xSPS probe (green) in lane 4 of Figure 1B and lane 3 of Figure 1C relative to unbound 2xCSL probe (magenta)). Including the NICD/Mam co-activators didn’t change the additive binding behavior of RBPJ and Su(H) to 2xCSL. By contrast, both the mouse and fly NCM complex preferentially filled both sites of the 1xSPS probe relative to 2xCSL (Figure 1B–C). Hence, these results demonstrate that while both the 2xCSL and 1xSPS synthetic sequences bind NCM complexes, only the 1xSPS sites mediate cooperative NCM complex binding.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequences of 2xCSL and 1xSPS used for performing EMSAs and generating reporters. (B–C) Electromobility shift assays (EMSAs) using purified mammalian NCM proteins (B) and fly NCM proteins (C) with both 2xCSL (magenta) and 1xSPS (green) probes. Arrows highlight bands consistent with one vs two NCM complexes on DNA. RBPJ/Su(H) concentration increases from 10 to 320 nM and 1 µM NICD/Mastermind was used in indicated lanes. Note, we separated the 2xCSL and 1xSPS probe signals and show the EMSA data in grayscale in Figure 1—figure supplement 1. (D–F) Schematics of 6xSPS-3xGBE-lacZ (6SG), 3xGBE-6xSPS-lacZ (G6S) and 12xCSL-3xGBE-lacZ (12CG). (G–J) Wings from flies with one copy, two copies, or 4 copies of 6SG-lacZ, or 4 copies of 12CG-lacZ. Arrowhead denotes a notch. (K–L) Quantified wing notching in flies with indicated transgenes. Proportional odds model tested penetrance and severity differences between G6S-lacZ and G24S-lacZ. Two-sided Fisher’s exact test assessed the penetrance of other genotypes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) EMSAs using purified mammalian NCM proteins (A–B) or fly NCM proteins (C–D) and labeled 2xCSL (A, C) and 1xSPS (B, D) probes. Arrows highlight bands consistent with one vs two NCM complexes on DNA. The data shown in this figure are the isolated grayscale images of those shown in color in Figure 1B–C. Note, the fly and mouse proteins both cooperatively bind the 1xSPS but not the 2xCSL probe. However, we did observe that using the same concentration of mouse proteins resulted in the formation of more 2NCM complex on the 1xSPS probe relative to the fly proteins, suggesting that the mouse proteins may be more cooperative than the fly proteins. However, since we are not using full-length NICD and MAM proteins from either species due to difficulty in purifying these large proteins, additional studies are required to confirm the relevance of this observed difference.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Wing images from flies containing either 2 copies of 3xGBE-lacZ (A) or 6xSPS-lacZ (B) reveal no wing notching phenotypes. (C) Wing notching penetrance from flies with indicated genotypes. (D–G) Wing images from flies with indicated genotypes. 51C and 86Fb are genomic loci on second and third chromosome, respectively and arrows denote wing notches. (H) Wing notching penetrance and severity from flies with indicated genotypes. Note, while all of the fly lines with 2 copies of the 6SG-lacZ and G6S-lacZ transgenes develop wing notches, the penetrance and severity of the phenotype can vary between lines. The number of wings scored (n) for each genotype is noted, and a proportional odds model with Bonferroni adjustment tested for significance.
 
 We next generated transgenic fly lines containing reporter genes with either CSL or SPS binding sites. Since prior studies found that including sites for the Grainyhead (Grh) pioneer TF enhanced Notch reporter activity (Furriols and Bray, 2001) and induced chromatin opening (Jacobs et al., 2018), we generated fly lines containing CSL and SPS reporters with (Figure 1D–F) and without (Figure 1—figure supplement 2B–C) three copies of a Grh binding element (3xGBE). Surprisingly, flies homozygous for 6xSPS-3xGBE-lacZ (6SG-lacZ) developed a notched-wing phenotype that mimics a classic Notch haploinsufficiency (Figure 1H). In contrast, flies homozygous for 3xGBE alone (G-lacZ), 6xSPS alone (6S-lacZ), or mutated SPSs (6SmutG-lacZ) (Tun et al., 1994) inserted in the same locus were indistinguishable from wild type (Figure 1—figure supplement 2A–C). To define the SPS-GBE binding site features that contribute to wing notching, we tested additional fly lines and found that: i) The 6SG-lacZ caused notched wings when inserted in another locus and regardless of the order of GBE and SPS, although with differences in penetrance and severity (Figure 1—figure supplement 2D–H); ii) The penetrance and severity of wing notching increased as a function of both transgene and SPS numbers (Figure 1G–I and K); and iii) Flies with an equal number of Notch monomer (CSL) sites next to 3xGBE did not develop notched wings (Figure 1J and L). In total, these findings show that adding as few as 12 GBE-associated SPSs into the genome is sufficient to induce a Notch haploinsufficiency phenotype in the wing.
 
 To determine if the 6SG-lacZ induced wing phenotype could be modified by genetic changes in Notch pathway components, we analyzed flies carrying different gene copy numbers of either N or the Hairless (H) co-repressor that antagonizes Notch-mediated gene activation (Morel et al., 2001; Bang and Posakony, 1992). We found that a single 6SG-lacZ transgene greatly enhanced the penetrance and severity of wing notching in N heterozygotes compared to either genotype alone (Figure 2A–C and Figure 2—figure supplement 1). Moreover, adding two extra alleles of N (4N) or removing one allele of H significantly suppressed the notched wing phenotype induced by two copies of 6SG-lacZ (Figure 2D–H). Thus, wing phenotypes induced by 6SG can be enhanced or suppressed by changing the gene dose of N and H, respectively.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Wings from Notch heterozygotes (N55e11/+) in the absence (A) and presence of G6S-lacZ (B). (C) Quantified wing notching in the indicated genotypes. Proportional odds model tested for penetrance/severity differences. (D–E) Wings from flies containing two extra N alleles (BAC{Notch-GFP-FLAG}) in the absence (D) and presence of 6SG-lacZ (E). (F) Quantified wing notching in flies with indicated genotypes. Two-sided Fisher’s exact test. (G–H) Wings from H1/+ flies in the absence (G) and presence (H) of 6SG-lacZ. Solid arrowhead highlights loss (G) and rescue (H) of L5 wing vein. Open arrowhead points to rescued 6SG-induced wing notching phenotype in H1/+ flies. (I) Quantification of loss of L5 vein in flies with indicated genotypes. Each dot represents a measurement from an individual wing. Two-sided Student's t-test. In box plots, the line represents median, the box shows interquartile range, and whiskers represent the 1.5 times interquartile range. (J–K) Notum images from a N55e11/+ (J) and G6S-lacZ (K) fly. Arrowhead denotes extra macrochaetae in N55e11/+. (L) Quantification of gained/lost dorsalcentral and scutellar macrochaetae (wild type = 8) in indicated genotypes. Proportional odds model tested for statistical significance. Data are mean ±95% confidence interval.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Quantified wing notching in the indicated genotypes. Proportional odds model tested for statistical significance.
+
 N and H haploinsufficiency also cause defects in macrochaetae bristle patterning (Bang et al., 1991; Shellenbarger and Mohler, 1978) and wing vein development (de Celis and García-Bellido, 1994). Intriguingly, 6SG-lacZ did not significantly impact macrochaetae formation in either wild type or sensitized N+/- and H+/- backgrounds (Figure 2J–L). However, while flies carrying two copies of the 6SG-lacZ Notch-dimer reporter alone did not cause a noticeable wing vein phenotype, two copies of the 6SG-lacZ, but not the 12CG-lacZ Notch-monomer reporter, did significantly suppress the loss of L5 wing vein observed in H+/- animals (Figure 2G–I). Altogether, these data demonstrate that coupled SPS-GBE sites affect a subset of dose sensitive phenotypes with wing margin cells being the most sensitive.
 
-## Cdk8 induces Notch turnover independent from transcription activation
+### Cdk8 induces Notch turnover independent from transcription activation
 
 Our findings raise two questions: How do the integrated SPS-GBE sites affect Notch activity, and why only in a subset of Notch-dependent processes? Prior studies have shown that Notch signal strength can be impacted by changes in either NICD production or degradation. Since NICD degradation in mammalian cells can be regulated by the Cdk8-Kinase module (CKM) that associates with the Mediator complex (Li et al., 2014; Fryer et al., 2004), we used genetics to assess the importance of the CKM in inducing wing phenotypes. To do so, we removed an allele of each gene of the Cdk8-kinase module (CKM; cdk8 (Loncle et al., 2007), cycC (Loncle et al., 2007), kto (Med12) (Treisman, 2001), or skd (Med13) [Treisman, 2001]) or an allele of an E3-ligase that encodes the Drosophila homologue of Fbxw7 (archipelago, ago) [Moberg et al., 2001]) and found that each significantly suppressed the penetrance and severity of 6SG-induced wing nicking (Figure 3A and Figure 3—figure supplement 1A). Notably, we observed that in N heterozygotes, removing an allele of cycC, kto, skd or ago, but not cdk8, also significantly suppressed wing notching (Figure 3B and Figure 3—figure supplement 1B). These data are consistent with Cdk8 phosphorylating NICD to promote its ubiquitylation and degradation (Figure 3C; Li et al., 2014; Fryer et al., 2004). Moreover, the smaller effect of cdk8 gene dose compared to changes of the other CKM genes is consistent with studies showing that cdk8 is not thought to be the limiting factor in the formation of this Mediator submodule (Davis et al., 2013; Knuesel et al., 2009b) and that enzymes are not typically gene dose sensitive (Kondrashov and Koonin, 2004). Hence, these findings support the model that lowering the dose of key CKM genes in Drosophila slows NICD turnover and thereby rescues the wing notching phenotype observed in 6SG-lacZ and N heterozygotes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Quantified wing notching in 6SG-lacZ (A) or N55e11/+ (B) in wild-type or cdk8, cycC, kto, skd or ago heterozygotes. Proportional odds model with Bonferroni adjustment tested for significance compared to wild-type. (C) Model of Cdk8-mediated NICD degradation. NCM complexes on SPSs recruit Cdk8, CycC, kto and skd. Cdk8 phosphorylates NICD to promote its degradation via Ago and the proteasome (gray cylinder). Cdk8 can also interact with the core Mediator (gray oval). (D) Schematics of promoter-containing and -lacking transgenes at left. Wing notching penetrance and severity at right. Proportional odds model was used to assess significance. (E) Rbpj-N1ICD split luciferase assay assessing N1ICD half-life in HEK293T cells treated with DMSO or Actinomycin D. 95% confidence interval noted. (F) Western blot of N1ICD, total Notch1 and β-actin after Notch activation in mK4 cells treated with DMSO or Actinomycin D. (G) Rbpj-N1ICD split luciferase assay assessing N1ICD half-life in HEK293T cells treated with DMSO, 5 μM Senexin A or 10 μM Senexin A. 95% confidence interval noted. (H) Western blot of N1ICD and full-length Notch1 after Notch activation in either wild-type (OT13) or Rbpj-deficient (OT11) cells. Open arrow denotes post-translationally modified NICD and closed arrow denotes un-modified NICD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Wing notching penetrance and severity from flies containing 2 copies of 6SG-lacZ in wild-type (yw) or heterozygotes of components of the Cdk8-Mediator submodule or Drosophila Fbw7 (ago). Wild-type data is the same as Figure 3A as it was performed in the same experiment. (B) Wing notching penetrance and severity from N heterozygotes crossed to a wild-type (yw) or heterozygotes of either components of the Cdk8-Mediator submodule or ago. Wild-type data is the same as Figure 3B as it was performed in the same experiment. Number of wings scored (n) for each genotype is noted. Proportional odds model with Bonferroni adjustment.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Luciferase activity of 6xSPS-NanoLuc (6S) after Notch activation in mK4 cells treated with either DMSO or Actinomycin D (50 nM). Empty luciferase vector (0xSPS-NanoLuc) was used as control (WT). One-way ANOVA analysis. (B) Rbpj-N1ICD split luciferase assay assessing N1ICD half-life in HEK293T cells treated with DMSO or 1 μM SEL120-34A, a CDK8/CDK19 specific inhibitor. 95% confidence interval noted. (C) Western blot of MAML1-3 in either wild-type or MAML-deficient mK4 cells. RUNX1 is used as a loading control. (D) Western blot of N1ICD and Notch1 in mK4 cells treated with either DMSO or 2 μM SEL120-34A after indicated duration of Notch activation. An antibody that recognizes both the membrane bound and induced Notch1 signal is used as a loading control. Open arrow denotes post-translationally modified NICD and closed arrow denotes un-modified NICD. (E) Western blot of N1ICD and Notch1 after Notch activation in MAML-deficient mK4 cells. Note, N1ICD mobility from MAML-deficient cells did not change over time, consistent with post-translational modifications requiring MAML-mediated DNA binding. An antibody that recognizes both the membrane bound and induced Notch1 signal is used as a loading control. Open arrow denotes post-translationally modified NICD and closed arrow denotes un-modified NICD. (F) Western blot of N1ICD in wild-type mK4 cells treated with either DMSO or SEL120-34A, or MAML-deficient mK4 cells after indicated duration of Notch activation with/without Calf intestinal phosphatase (CIP) treatment.
 
 The CKM has a complex relationship with promoter transcription (Fant and Taatjes, 2019). Some studies suggest interactions between the CKM and the core Mediator occludes RNA polymerase recruitment (Knuesel et al., 2009a) and/or decreases transcription (Pelish et al., 2015), whereas other studies suggest Cdk8 stimulates transcription (Galbraith et al., 2013; Donner et al., 2010). To test the role of the transgene promoter in causing wing nicks, we analyzed flies with promoter-containing (3xGBE-24xSPS-GFP, G24S-GFP) or promoter-less transgenes (3xGBE-24xSPS, G24S) flanked by insulator sequences (Figure 3D). We found that the wing notching penetrance and severity was similar with both transgenes, and the wing phenotype generated by both was significantly suppressed by removing an allele of skd (Figure 3D). These findings suggest that a transcriptionally active promoter is not required to induce wing nicks.
 
 To test the generality of the idea that transcription activation could be uncoupled from NICD degradation, we blocked transcription using actinomycin-D and assessed NICD half-life using a split-luciferase assay in HEK293T mammalian cells (Ilagan et al., 2011). Importantly, we found that while actinomycin-D effectively inhibited Notch-induced transcription (Figure 3—figure supplement 2A), it neither altered N1ICD half-life in the split-luciferase assay (Figure 3E), nor altered N1ICD mobility in western blot analysis (Figure 3F). These data suggest that post-translational modification and degradation of N1ICD does not require active transcription. In contrast, inhibiting Cdk8 activity using Senexin-A or SEL120-34A, two structurally distinct and specific inhibitors of Cdk8 and Cdk19, a closely related vertebrate paralogue that is absent in Drosophila (Porter et al., 2012; Rzymski et al., 2017), significantly prolonged N1ICD half-life in the split-luciferase assay (Figure 3G and Figure 3—figure supplement 2B). Importantly, we found that N1ICD was stabilized in mammalian OT11 cells deficient for RBPJ (Figure 3H; Kato et al., 1997), in mK4 cells deficient for the three Mastermind-like (MAML) proteins, and in mK4 cells treated with SEL120-34A (Figure 3—figure supplement 2C–E). These data suggest that N1ICD degradation is coupled with NCM complex formation on DNA and CDK8-mediated modification. Moreover, the increased N1ICD mobility observed in the absence of RBPJ or MAML or in the presence of the SEL120-34A CDK8 inhibitor is consistent with a loss of post-translational modifications (Figure 3H and Figure 3—figure supplement 2D,E). Lastly, we found that treatment of protein extracts with Calf intestinal phosphatase (CIP) can abolish the mobility shift of NICD in wild type mK4 cells (Valerius et al., 2002) and to a lesser extent in SEL120-34A treated cells, whereas NICD in MAML knockout cells shows no change in mobility due to CIP treatment (Figure 3—figure supplement 2F). Altogether, these data indicate that Cdk8-mediated regulation of NICD degradation requires NCM complex formation on DNA in both mammalian cells and fly tissues but does not require active transcription.
 
-## Quantitative analysis of enhancer binding site induced Notch turnover
+### Quantitative analysis of enhancer binding site induced Notch turnover
 
-Our data support a model whereby NCM binding to SPS-GBE sites promotes NICD phosphorylation and degradation, and thereby reduces NICD levels in the nucleus (Figure 4A). To obtain a quantitative understanding of how changes in SPS number affect Notch signal strength, we used mathematical modeling and quantitative expression analysis. The model includes a set of biochemical reactions that describe NICD dynamics in the nucleus (bottom, Figure 4A). We initially assume unphosphorylated, unbound NICD (NICDup,ub) enters the nucleus at a constant production rate (PNICD), where it forms NCM complexes that bind DNA. Bound, unphosphorylated NICD (NICDup,b) can be phosphorylated by Cdk8 (NICDp,b) at a rate kp, assuming that NICD is not dephosphorylated by a phosphatase. Similar to the unphosphorylated state, phosphorylated NICD can cycle between NICDp,b and NICDp,ub. Finally, it is assumed that the degradation rate of NICDp,ub, denoted by  Γp, is much faster than the degradation rate of NICDup,ub, denoted by Γup.
+Our data support a model whereby NCM binding to SPS-GBE sites promotes NICD phosphorylation and degradation, and thereby reduces NICD levels in the nucleus (Figure 4A). To obtain a quantitative understanding of how changes in SPS number affect Notch signal strength, we used mathematical modeling and quantitative expression analysis. The model includes a set of biochemical reactions that describe NICD dynamics in the nucleus (bottom, Figure 4A). We initially assume unphosphorylated, unbound NICD ($NICD_{up,ub}$) enters the nucleus at a constant production rate ($P_{NICD}$), where it forms NCM complexes that bind DNA. Bound, unphosphorylated NICD ($NICD_{up,b}$) can be phosphorylated by Cdk8 ($NICD_{p,b}$) at a rate $k_{p}$, assuming that NICD is not dephosphorylated by a phosphatase. Similar to the unphosphorylated state, phosphorylated NICD can cycle between $NICD_{p,b}$ and $NICD_{p,ub}.$ Finally, it is assumed that the degradation rate of $NICD_{p,ub}$, denoted by $Γ_{p}$, is much faster than the degradation rate of $NICD_{up,ub}$, denoted by $Γ_{up}$.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic and equation describing SPS-GBE induced turnover of NICD. In both wild type (left) and nuclei with SPS-GBE sites inserted (right), NICD is produced and enters the nucleus at a constant rate ($P_{NICD}$). NCM complexes form on SPS, where NICD is phosphorylated by Cdk8 at a rate $k_{p}$. Phosphorylated NICD degrades faster ($Γ_{p}$) than unphosphorylated NICD ($Γ_{up}$). Subscripts $p,up,b,ub$ denote phosphorylated, unphosphorylated, bound, and unbound NICD. (B) Simulations of NICD levels as a function of SPS number. The three curves correspond to simulations with indicated values of $k_{p}$. NICD starts from a common level ($NICD_{0}$) and initially decreases linearly with SPS number, with a slope proportional to $k_{p}$. (C) Wing notching penetrance and severity in flies with indicated genotypes. Proportional odds model was used to assess significance. (D–G”) Wing discs from flies containing 6xSPS-GFP (6S-GFP) and either GBE-lacZ (G-lacZ) or (G6S)1,2 or 3-lacZ stained with cut (magenta). (H) Quantified GFP levels in wing discs with increasing SPSs (0, 6, 12, 18 correspond to (G6S)1,2 or 3-lacZ) in either wild type (blue) or skd heterozygotes (red). Each dot represents the average GFP level in margin cells from a single wing disc. Error bars show means and S.E.M for each disc. Solid lines represent linear fit to mean GFP values of the first three points of wild-type (blue) and the four points of skd heterozygotes (red). Ratio of slopes is indicated. Effective number of endogenous SPS, $N_{e}$, is estimated by extrapolating the y axis intersect of dashed lines. (I) Estimated phosphorylation rates by a single SPS, $k_{p}$. Values of $k_{p}$ (color-bar) were estimated for a range of values of $NICD_{0}$ and $Γ_{up}$. Dashed line represents lower limit of the physiological range of kinase activities. (J) Quantified number of gained/lost macrochaetae from indicated genotypes in N55e11/+ (blue bars) or H1/+ (red bars) background. Proportional odds model with Bonferroni adjustment. Data are mean ±95% confidence interval. (K) NICD level simulations as a function of time after Notch activation (at t = 0 min) in wild-type (blue), N heterozygotes (yellow) and SPS-GBE flies (red). In tissues with long duration Notch activation (black dash line), N heterozygotes and SPS-GBE sites similarly reduce NICD levels. In tissues with short duration Notch activation (red dash line), NICD levels are weakly affected by SPS-GBE compared to N heterozygotes (arrows).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B”) Representative immunostained third instar wing discs from wild-type or N heterozygous female flies containing 6xSPS-GFP (6S-GFP) stained with cut (magenta). (C) Quantification of GFP and Cut levels from wing discs of indicated genotype. Each dot represents the average wing margin cell pixel intensity as measured from an individual imaginal disc. Two-sided Student’s t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53659/elife-53659-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Top: Simulation of NICD levels as a function of time after the onset of Notch activation (at t=0 min) in wild-type (blue), N heterozygotes (yellow) and SPS-GBE flies (red). Bottom: Parameters used for the model. The values of $slope_{wt}$ and $N_{e}$ were extracted from the analysis of Figure 4H. Other parameter values were chosen in the middle of the range estimation as described in the modeling section. (B) Simulations of NICD levels as a function of time for different parameters as indicated. In each plot, one parameter is changed compared to (A) with all other parameters remaining the same. This analysis shows that varying $NICD_{0}$ and $Γ_{up}$ over two orders of magnitude, and $Γ_{p}$ over one order of magnitude do not affect the general conclusion that long duration processes, but not short duration processes, are sensitive to the CDK8-mediated degradation mechanism.
 
 To test these predictions, we measured Notch signal strength in wing margin cells in the presence and absence of SPS-GBE transgenes. To systematically vary SPS numbers, we created fly lines containing one, two or three (3xGBE-6xSPS) cassettes in front of a single lacZ gene ((G6S)n-lacZ). Analysis of flies carrying a single copy of the (G6S)n-lacZ transgenes revealed enhanced penetrance and severity of wing notching as the number of G6S cassettes increased, and all were significantly suppressed by removing one skd allele (Figure 4C). Because direct measurement of nuclear NICD levels in vivo is very challenging (Couturier et al., 2012), we monitored NICD levels in wing margin cells indirectly via GFP expression from an independent 6xSPS-GFP (6S-GFP) reporter that is highly sensitive to changes in Notch gene dose (Figure 4—figure supplement 1). We found that GFP levels decreased as a function of added GBE-SPS sites (Figure 4D–H). Simultaneous analysis of Cut, an endogenous Notch target required for maintaining wing margin fate (Micchelli et al., 1997; Neumann and Cohen, 1996), revealed a loss of wing margin fate in a subset of (G6S)2-lacZ and (G6S)3-lacZ cells (arrowheads in Figure 4E–G), consistent with the notched wing phenotype observed in these animals.
 
-Analysis of the differential equations corresponding to these reactions generated several predictions. First, our model predicts steady state NICD levels will initially decrease linearly as the number of SPSs increases and then saturate for high numbers of SPSs (Figure 4B). Importantly, the linear regime of the slope describing NICD degradation is expected to be proportional to the Cdk8 phosphorylation rate, kp. Accordingly, if there is no dosage compensation in CKM heterozygotes, the model’s second prediction is that the slope of the wild-type curve should be twice that of the heterozygous mutant curve.
+Analysis of the differential equations corresponding to these reactions generated several predictions. First, our model predicts steady state NICD levels will initially decrease linearly as the number of SPSs increases and then saturate for high numbers of SPSs (Figure 4B). Importantly, the linear regime of the slope describing NICD degradation is expected to be proportional to the Cdk8 phosphorylation rate, $k_{p}$. Accordingly, if there is no dosage compensation in CKM heterozygotes, the model’s second prediction is that the slope of the wild-type curve should be twice that of the heterozygous mutant curve.
 
-Analysis of 6S-GFP expression revealed an approximately linear decrease in GFP as the number of G6S cassettes is increased (Figure 4H, blue markers). Moreover, removing an allele of skd significantly increased 6S-GFP expression, resulting in a shallower slope relative to wild type flies with the same (G6S)-lacZ transgene (Figure 4H, red markers). The ratio between slopes as calculated by linear regression analysis of GFP levels in wild type and skd heterozygotes (solid lines in Figure 4A) was 1.88 ± 0.29, in agreement with the predicted 2-fold change in the absence of CKM dosage compensation. Interestingly, the two curves did not intersect at the y-axis, reflecting a cumulative reduction in NICD phosphorylation and degradation rates at endogenous sites; an interpretation supported by the observation that CKM heterozygotes ameliorate Notch heterozygote induced wing notching phenotypes (Figure 3B). We used this observation to estimate the magnitude of the cumulative genomic effect by extrapolating the crossing point of the two curves (dashed lines in Figure 4H). The lines crossed at negative Ne=5.4±4.7SPS-GBE sites. This value means that the cumulative effect on NICD stability of all sites in the genome (Ne) is equal to that of ~5 highly active synthetic SPS-GBE sites.
+Analysis of 6S-GFP expression revealed an approximately linear decrease in GFP as the number of G6S cassettes is increased (Figure 4H, blue markers). Moreover, removing an allele of skd significantly increased 6S-GFP expression, resulting in a shallower slope relative to wild type flies with the same (G6S)-lacZ transgene (Figure 4H, red markers). The ratio between slopes as calculated by linear regression analysis of GFP levels in wild type and skd heterozygotes (solid lines in Figure 4A) was 1.88 ± 0.29, in agreement with the predicted 2-fold change in the absence of CKM dosage compensation. Interestingly, the two curves did not intersect at the y-axis, reflecting a cumulative reduction in NICD phosphorylation and degradation rates at endogenous sites; an interpretation supported by the observation that CKM heterozygotes ameliorate Notch heterozygote induced wing notching phenotypes (Figure 3B). We used this observation to estimate the magnitude of the cumulative genomic effect by extrapolating the crossing point of the two curves (dashed lines in Figure 4H). The lines crossed at negative $N_{e}=5.4\pm4.7$SPS-GBE sites. This value means that the cumulative effect on NICD stability of all sites in the genome (Ne) is equal to that of ~5 highly active synthetic SPS-GBE sites.
 
-Next, we used the model to calculate Cdk8 phosphorylation rates, kp, needed at SPS-GBE sites to lower NICD concentrations and induce wing notching phenotypes. In the linear regime, kp (in 1/min units) can be calculated from the measured slope,  Slopewt, for different values of NICD0, Γup, and Γp (see Figure 4B and Materials and methods for derivation). We used a plausible range of NICD concentrations,  NICD0, (between 102-104 molecules per nucleus) and degradation rates Γup (between 130min-1-11000min-1, see Materials and methods for parameter estimation). This analysis provided a range for likely Cdk8 catalytic activity on SPS-GBE sites between 10-1 to 103 min-1, a large portion of which falls within the physiological regime of known kinase activities (above the dashed line in Figure 4I; Davidi et al., 2016; Good et al., 2009; Kõivomägi et al., 2011). In fact, the calculated kp values are at the low end of the physiological range (of the order of ~1/min), suggesting that even modest phosphorylation rates could produce the observed reduction in Notch signal strength, and ultimately, wing notching phenotypes induced by SPS-GBE sites.
+Next, we used the model to calculate Cdk8 phosphorylation rates, $k_{p}$, needed at SPS-GBE sites to lower NICD concentrations and induce wing notching phenotypes. In the linear regime, $k_{p}$ (in 1/min units) can be calculated from the measured slope, $Slope_{wt}$, for different values of $NICD_{0}$, $Γ_{up}$, and $Γ_{p}$ (see Figure 4B and Materials and methods for derivation). We used a plausible range of NICD concentrations, $NICD_{0}$, (between 102-104 molecules per nucleus) and degradation rates $Γ_{up}$ (between $\frac{1}{30}min^{-1}-\frac{1}{1000}min^{-1}$, see Materials and methods for parameter estimation). This analysis provided a range for likely Cdk8 catalytic activity on SPS-GBE sites between $10^{-1}to10^{3}min^{-1}$, a large portion of which falls within the physiological regime of known kinase activities (above the dashed line in Figure 4I; Davidi et al., 2016; Good et al., 2009; Kõivomägi et al., 2011). In fact, the calculated $k_{p}$ values are at the low end of the physiological range (of the order of ~1/min), suggesting that even modest phosphorylation rates could produce the observed reduction in Notch signal strength, and ultimately, wing notching phenotypes induced by SPS-GBE sites.
 
-## Altered NICD degradation sensitizes tissues requiring long duration signals
+### Altered NICD degradation sensitizes tissues requiring long duration signals
 
 Molecularly, Notch haploinsufficiency is due to decreased NICD production, whereas our data support the model that the phenotype caused by SPS-GBE sites is due to enhanced NICD turnover. This difference in mechanism might explain why SPS-GBE sites fail to impact another known N dose sensitive tissue, the macrochaetae sensory bristles (Figure 2K–L). These data support the idea that wing margin cells are sensitive to changes in both NICD production and degradation, whereas macrochaetae formation is preferentially sensitive to changes in NICD production. To further test this hypothesis, we analyzed macrochaetae formation in compound heterozygotes for CKM genes and Notch or Hairless. In contrast to the observed suppression of wing notching (Figure 3B), we found that removing an allele of each CKM gene did not significantly suppress the Notch haploinsufficiency of extra macrochaetae (Figure 4J). In fact, macrochaetae numbers further increased in N;cdk8 and N;skd compound heterozygotes, which is opposite of the predicted outcome if slowing NICD degradation significantly elevated NICD levels during macrochaetae formation (Figure 4J). As a second test to determine if changes in the CKM could alter macrochaetae, we analyzed H heterozygotes that generate too few macrochaetae due to increased Notch activity (Morel et al., 2001; Maier et al., 1997). In this genetic background, removing an allele of either skd or cdk8 did not significantly alter macrochaetae formation (Figure 4J). However, we did find that removing an allele of cycC had a small, but significant impact on macrochaetae formation in H;cycC compound heterozygotes. Given that removing a cycC allele did not significantly impact macrochaetae formation in N55e11/+ heterozygotes, it is possible that the decrease in macrochaetae numbers in H;cycC compound heterozygotes is due to changes in factors unrelated to the Notch pathway. Nevertheless, these data suggest that the Notch haploinsufficient phenotypes in macrochaetae lateral inhibition and wing margin formation are differently affected by decreasing CKM levels.
 
-A potential explanation for the tissue-specific response to SPS-GBE sites and CKM heterozygotes could be the distinct temporal requirements for Notch activation in each tissue. Maintenance of wing margin identity is a continuous process at least 48 hours long (de Celis et al., 1996; Shellenbarger and Mohler, 1978), whereas macrochaetae formation requires Notch input over a short time period (< 30 min) (Barad et al., 2010). To explore the relationship between Notch signal duration and sensitivity to changes in NICD production/degradation rates, we modeled the dynamics of NICD accumulation as a function of time in wild-type, N heterozygotes, and flies homozygous for G6S-lacZ (Figure 4K). We assume that N heterozygotes lower NICD production (PNICD) by one half without impacting NICD degradation, whereas SPS-GBE sites do not affect PNICD but increase NICD degradation as a function of SPS number. In a scenario where nuclear NICD reaches steady state (Figure 4K, black dash line), both the SPS-GBE loci and N heterozygotes significantly decrease NICD levels. In contrast, if Notch signals are only required for a short time period, changes in degradation rates do not significantly alter NICD levels relative to the impact of losing a N allele (Figure 4K, arrows). We note that this conclusion is robust over a broad range of potential NICD production and degradation rates (Figure 4—figure supplement 2). Moreover, the model is consistent with the results observed using genetic changes in CKM gene dose – altering NICD degradation selectively impacts long duration events (wing margin) and not short duration events (lateral inhibition during macrochaetae specification).
+A potential explanation for the tissue-specific response to SPS-GBE sites and CKM heterozygotes could be the distinct temporal requirements for Notch activation in each tissue. Maintenance of wing margin identity is a continuous process at least 48 hours long (de Celis et al., 1996; Shellenbarger and Mohler, 1978), whereas macrochaetae formation requires Notch input over a short time period (< 30 min) (Barad et al., 2010). To explore the relationship between Notch signal duration and sensitivity to changes in NICD production/degradation rates, we modeled the dynamics of NICD accumulation as a function of time in wild-type, N heterozygotes, and flies homozygous for G6S-lacZ (Figure 4K). We assume that N heterozygotes lower NICD production ($P_{NICD}$) by one half without impacting NICD degradation, whereas SPS-GBE sites do not affect $P_{NICD}$ but increase NICD degradation as a function of SPS number. In a scenario where nuclear NICD reaches steady state (Figure 4K, black dash line), both the SPS-GBE loci and N heterozygotes significantly decrease NICD levels. In contrast, if Notch signals are only required for a short time period, changes in degradation rates do not significantly alter NICD levels relative to the impact of losing a N allele (Figure 4K, arrows). We note that this conclusion is robust over a broad range of potential NICD production and degradation rates (Figure 4—figure supplement 2). Moreover, the model is consistent with the results observed using genetic changes in CKM gene dose – altering NICD degradation selectively impacts long duration events (wing margin) and not short duration events (lateral inhibition during macrochaetae specification).
 
-## Defining enhancer TF binding sites (TFBSs) that induce the notched wing phenotype
+### Defining enhancer TF binding sites (TFBSs) that induce the notched wing phenotype
 
 The synthetic Notch binding sites used in the GBE-SPS transgene were designed to minimize the inclusion of sequences bound by other known TFs (see Materials and methods). To test if an endogenous SPS sequence could induce wing phenotypes, we selected a previously characterized E(spl)m8 SPS sequence (Furriols and Bray, 2001; Bailey and Posakony, 1995; Lecourtois and Schweisguth, 1995). The E(spl)m8 SPS is flanked by adjacent N-box sites bound by E(spl)/Hes factors (Kramatschek and Campos-Ortega, 1994), which thereby provide negative feedback downstream of Notch signaling (Figure 5A). Comparative analysis of flies carrying two copies of the synthetic G6S(syn)-lacZ versus the G6Sm8-lacZ revealed a highly similar penetrance and severity of wing notching phenotypes (Figure 5B). Thus, an endogenous SPS sequence from a known Notch-regulated enhancer can promote NICD degradation to induce a wing notching phenotype in the GBE-SPS transgene assay, even in the presence of potential negative feedback.
 
@@ -112,41 +156,373 @@ Intuitively, the duration model suggests a mechanism underlying cell-specific co
 
 ## Materials and methods
 
-## Reporter design, molecular cloning, and transgenic fly generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>BAC{Notch}</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:38665; RRID:BDSC_81271</td>
+      <td>FlyBase symbol: PBac{N-GFP.FLAG}VK00033</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>N[55e11]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:28813; RRID:BDSC_28813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>H[1]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:515; RRID:BDSC_515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>kto[T241]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:63126; RRID:BDSC_63126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>kto[T631]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:63125; RRID:BDSC_63125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>skd[T13]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:63123; RRID:BDSC_63123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>skd[T413]</td>
+      <td>BloomingtonDrosophila Stock Center</td>
+      <td>BDSC:63124; RRID:BDSC_63124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>cdk8[K185]</td>
+      <td>PMID:11171343</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>cycC[Y5]</td>
+      <td>PMID:11171343</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ago[1]</td>
+      <td>PMID:11565033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ago[3]</td>
+      <td>PMID:11565033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>PMID:23806616</td>
+      <td></td>
+      <td>Stable expression of CLuc-RBPjK and Notch1-NLuc</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mK4</td>
+      <td>PMID:11850199</td>
+      <td>RRID:CVCL_9T80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>OT-13</td>
+      <td>PMID:9374409</td>
+      <td>RRID:CVCL_T371</td>
+      <td>wild-type embryonic fibroblast</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>OT-11</td>
+      <td>PMID:9374409</td>
+      <td>RRID:CVCL_T370</td>
+      <td>RBPjK deficient embryonic fibroblast</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NICD Cleaved Notch1 Val1744 D3B8 (Rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>Cat # 4147; RRID:AB_2153348</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Notch1 Clone D1E11 (Rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>Cat# 3608; RRID:AB_2153354</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cut (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# 2B10</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Actin Clone AC-15 (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5441; RRID:AB_476744</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- MAML1 D3E9 (Rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>Cat# 11959; RRID:AB_2797778</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAML2 (Rabbit polyclonal)</td>
+      <td>CST</td>
+      <td>Cat# 4618; RRID:AB_2139273</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAML3 (Rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat# A300-684A; RRID:AB_2266032</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RUNX1 D4A6 (Rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>Cat# 8529; RRID:AB_10950225</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ECL anti-rabbit-HRP</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934; RRID:AB_772206</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ECL anti-mouse-HRP</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931; RRID:AB_772210</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML1 exon1 PX458 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGCCGAAGTGGCAGCCGGCGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML1 exon1 PX458 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACGGCGCCGGCTGCCACTTCGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML1 exon1 PX459 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGCGCCGGAAGAGGCGTTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML1 exon1 PX459 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACGAAAACGCCTCTTCCGGCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML2 exon1 PX458 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGGGGGCCTCCCAGTAAATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML2 exon1 PX458 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACTTATTTACTGGGAGGCCCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML2 exon1 PX459 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGACTCCCACCAGTGATTAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML2 exon1 PX459 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACAACTAATCACTGGTGGGAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML3 exon1 PX458 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGCTCCCGGGGCACACTATTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML3 exon1 PX458 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACAAATAGTGTGCCCCGGGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML3 exon1 PX459 F</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>CACCGCTCACTGGGGTGCGCGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MAML3 exon1 PX459 R</td>
+      <td>This paper</td>
+      <td>guide RNA</td>
+      <td>AAACCAACGCGCACCCCAGTGAGC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A1410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Senexin A</td>
+      <td>R and D</td>
+      <td>Cat# 4875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SEL120-34A</td>
+      <td>Medchemexpress</td>
+      <td>Cat# HY-111388A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CIP</td>
+      <td>NEB</td>
+      <td>Cat# M0525S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Luciferin</td>
+      <td>Goldbio</td>
+      <td>Cat# LUCK-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin-EDTA</td>
+      <td>Gibco</td>
+      <td>Cat# 25300–120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperSignalFemto West Chemoluminescent Substrate</td>
+      <td>Thermo-Fisher Scientific</td>
+      <td>Cat# PI34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>Codes available at https://github.com/OhadGolan/NICD-concentration-in-the-nucleus-as-by-binding-site-coupled-NICD-degradation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reporter design, molecular cloning, and transgenic fly generation
 
 All synthetic Notch enhancer sequences contain high affinity Su(H) binding sites (CGTGGGAA). Notch monomer sites (CSL) were placed 17bps apart in a head-to-tail manner to permit independent binding of NCM complexes. Notch dimer sites (SPS) were spaced 15bps apart in a head-to-head orientation to enable cooperative dimerization between adjacent NCM complexes. Intervening sequences were designed to exclude known binding sites for other Drosophila TFs using the cisBP website (Weirauch et al., 2014). The 6xSPSmut sequence is identical to 6xSPS except for two nucleotide changes in each site in positions previously shown to disrupt CSL binding (CGAGGCAA) (Tun et al., 1994). The 2xSPS, 6xSPS, 6xSPSmut, 12xCSL, 6xSPSm8, 5xZelda and 5xEbox sequences were synthesized by GenScript as either complementary oligonucleotides (2xSPS) or double stranded DNA (6xSPS, 6xSPSmut, 12xCSL, 6xSPSm8, 5xZelda, and 5xEbox; complete sequences listed below). Cloning was facilitated by including flanking EcoR1 and HindIII/BglII sequences. Annealed oligonucleotides or double stranded DNA fragments were cloned into either placZ-attB or 3xGBE-placZ-attB (Uhl et al., 2016) and sequence confirmed. To concatenate 6xSPS into larger arrays, a shuttle vector was used to generate a BamH1-6xSPS-BglII-Not1 fragment for reiterative cloning into vectors digested with BglII/NotI (BglII/NotI permits cloning BamH1/NotI fragments, which can be repeated as desired). To create the 3xGBE-24xSPS-lacZ vector, a 24xSPS fragment (generated in the shuttle vector) was cloned into the 3xGBE-lacZ vector. To make the promoter containing 3xGBE-24xSPS-GFP vector, we inserted 3xGBE-24xSPS into pHStinger-attB (Barolo et al., 2000). To generate a promoterless 3xGBE-24xSPS construct, the promoter and GFP encoding sequences were removed from 3xGBE-24xSPS-GFP by KpnI/SpeI digest, blunted with T4 DNA polymerase, and ligated. To generate the (3xGBE-6xSPS)n-lacZ (n = 2,3) constructs, the 3xGBE-6xSPS fragment was iteratively cloned into the 3xGBE-6xSPS-lacZ plasmid. The 6xSPS-GFP reporter used to measure Notch transcription responses was generated by cloning 6xSPS into the pHStinger-attB vector. All transgenic fly lines were generated by phiC31 recombinase integration into 22A, 51C or 86Fb loci of the Drosophila genome (Rainbow Transgenic Flies, Inc) with the transgene insertion location for each experiment listed in Supplementary file 1.
 
-## Synthetic enhancer DNA and probe design
+### Synthetic enhancer DNA and probe design
 
 Enhancer sequences used in the transgenic reporter vectors and the DNA probes used in electromobility shift assays (EMSAs) are listed in FASTA format. Sequences are annotated as following: Restriction enzyme sites (RE) and/or RE overhangs (italics), Su(H) binding sites (blue), Zelda and Ebox binding sites (purple), Nbox (red) and point mutations (bold and underlined).
 
-## Fly husbandry
+### Fly husbandry
 
 The following alleles were obtained from the Bloomington Drosophila Stock Center: PBac{N-GFP.FLAG}VK00033 (stock #38665), N[55e11] (#28813), H[1] (#515), kto[T241] (#63126), kto[T631] (#63125), skd[T13] (#63123) and skd[T413] (#63124). cdk8[K185] and cycC[Y5] alleles were gifts from Professor Treisman (2001). ago[1] and ago[3] alleles were previously described (Moberg et al., 2001). Flies were maintained under standard conditions with all genetic crosses, phenotyping and gene expression assays performed at 25°C. The detailed genetic crosses needed to generate the progeny in each Figure are listed in Supplementary file 1.
 
-## Genetic assays
+### Genetic assays
 
 To analyze the wing notching and macrochaetae phenotypes, flies of the appropriate genotypes were mated in cornmeal-containing vials and transferred to fresh food every day. During our studies, we observed that changes in food quality and overcrowding could change the severity/penetrance of wing phenotypes, introducing variation. Hence, all experiments quantifying wing phenotypes within each Figure panel contained control flies that were grown on the same batch of food and with a similar animal density. Offspring of the listed genotypes were selected and the number of nicks on each wing was recorded and/or the number of dorsocentral and scutellar macrochaetae was counted. A Fisher’s exact test was used to determine significance between samples when penetrance was being assessed (i.e. no phenotype versus a phenotype), whereas a proportional odds model was used to determine significance when the analysis included phenotype severity.
 
 For L5 wing vein length, fly wings of the proper genotypes were dissected, mounted on glass slides and imaged using a Nikon NiE upright widefield microscope. The total length of the presumptive L5 vein and the vein-missing gap were measured using Imaris software. Student’s t-test was used to determine significance.
 
-## GFP reporter assays in larval imaginal wing discs
+### GFP reporter assays in larval imaginal wing discs
 
 To systematically assess Notch transcription responses in larval wing imaginal discs, animals homozygous for 6xSPS-GFP22A and either 3xGBE-lacZ, 3xGBE-6xSPS-lacZ, (3xGBE-6xSPS)2-lacZ, or (3xGBE-6xSPS)3-lacZ were mated to either yw (wild type) or skd[T413]/TM6B males. Imaginal discs from male non-TM6B wandering 3rd instar larvae (skd[T413] heterozygotes) were dissected and fixed in 4% formaldehyde for 15 min. Samples were subsequently washed 4 times with PBX (0.3% Triton X-100 in PBS) and incubated with an antibody that recognizes the Cut antigen (mouse 1:50, DSHB) followed by a fluorescent-conjugated secondary antibody (Alexa Fluor, Molecular Probes). For quantitative purposes, at least eight imaginal discs were analyzed for each genetic condition tested and the entire wild type imaginal disc series was harvested, fixed and imaged at the same time using a Nikon A1R inverted confocal microscope (40x objective). For the skd heterozygote series, a set of wild type imaginal discs with 3xGBE-lacZ was performed simultaneously to normalize the responses between series. All imaging was performed with constant settings for GFP levels, and GFP pixel intensity in wing margin cells was determined from Z-stack images using Imaris software. Two-sided Student’s t-test was used to determine significance between samples.
 
-## Protein purification and electrophoretic mobility shift assay (EMSA)
+### Protein purification and electrophoretic mobility shift assay (EMSA)
 
 For recombinant protein purification, constructs that correspond to mouse RBPJ (aa 53–474), mouse N1ICD (aa 1744–2113), human MAML1 (aa 1–280), fly Su(H) (aa 98–523), fly NICD (aa 1763–2412) and fly Mastermind (aa 87–307) were expressed and purified from bacteria using a combination of affinity (Ni-NTA or Glutathione), ion exchange, and size exclusion chromatography as previously described (Friedmann et al., 2008). Purified proteins were confirmed by SDS-PAGE with Coomassie blue staining and concentrations were measured by absorbance at UV280 with calculated extinction coefficients. EMSAs were performed as previously described using native polyacrylamide gel electrophoresis (Uhl et al., 2016; Uhl et al., 2010). Proteins concentrations for each gel are listed in figure legends. Acrylamide gels were imaged using the LICOR Odyssey CLx scanner.
 
-## Split luciferase assay and half-life estimations
+### Split luciferase assay and half-life estimations
 
 Stability of mammalian N1ICD was analyzed using the previously described split-luc HEK293T cells (Liu et al., 2013; Ilagan and Kopan, 2014; Ilagan et al., 2011). These cells, which were engineered, generated and continuously maintained by the Kopan lab, express unique fusion proteins (CLuc-RBPjK and NOTCH1-NLuc) that provide a luciferase complementation assay. The cell line was authenticated by the inducible activation of Notch leading to the successful recapitulation of published data using the Luciferase complementation assay. In this study, these HEK293T cells were cultured for 8 hr with 50 nM Actinomycin D to block transcription or 4 hr in the presence of the inhibitor Senexin A to block CDK8/CDK19-mediated phosphorylation. Alternatively, cells were incubated 1 hr with 1 μM SEL120-34A (Medchemexpress) to block CDK8/19 mediated phosphorylation. Each inhibitor was present throughout the entire time-course of each respective experiment. Cells were activated for 10 min with 0.05% Trypsin-EDTA or with Trypsin only as a negative control and transferred to Poly-D-Lysine coated black 96-well plates with 40,000 cells/well. Cells were cultured at 37°C for 1 hr to let cells attach. Medium was changed to Opti-MEM (Gibco) with 50 nM ActD, 1 μM SEL120-34A or the indicated concentration of Senexin A, and 150 μg/ml of D-Luciferin (Goldbio) substrate was added fresh before each measurement. The first measurement (t = 0) was carried out 1 hr after activation. Luciferase signals were measured using the IVIS Lumina LT system and were normalized to Trypsin treated controls and each well separately to the signal counts at t = 0.
 
 To confirm the activity of Actinomycin D, mK4 cells with a stably integrated a 6xSPS-NanoLuc reporter or a 0xSPS-NanoLuc construct as control were used. Cells were cultured for 8 hr with 50 nM Actinomycin D or 0.1% DMSO and activated for 10 min with 0.05% Trypsin-EDTA (Gibco). Nano-Luc activity was measured after 3 hr using the Nano-Glo Luciferase Assay (Promega) and imaged with the IVIS Lumina LT system.
 
-Since the decay curves in Figure 3 did not exhibit simple exponential decay, we calculated the half-life values by fitting the luciferase activity values to a decreasing Hill function, t0.5n+bg∙tnt0.5n+tn, where t is time, t0.5 is the half life, bg is the background level, and n is the Hill coefficient. The fitting was performed using the least mean square fitting algorithm in MATLAB. The half-life values are presented with 95% confidence intervals.
+Since the decay curves in Figure 3 did not exhibit simple exponential decay, we calculated the half-life values by fitting the luciferase activity values to a decreasing Hill function, $\frac{t_{0.5}^{n}+bg∙t^{n}}{t_{0.5}^{n}+t^{n}},$ where t is time, $t_{0.5}$ is the half life, $bg$ is the background level, and $n$ is the Hill coefficient. The fitting was performed using the least mean square fitting algorithm in MATLAB. The half-life values are presented with 95% confidence intervals.
 
-## Western blot analysis
+### Western blot analysis
 
 Mouse Kidney 4 (mK4) cells, which were developed by and a kind gift from Steve Potter’s lab (Valerius et al., 2002), were routinely authenticated by transcriptomic (RNAseq) and functional genomic (ATAC-seq) studies. For Western blot analysis of mammalian N1ICD, mK4 cells were cultured 8 hr with 50 nM Actinomycin D (Sigma-Aldrich, A1410), 1 hr with 2 μM SEL120-34A or 0.1% DMSO in medium before activation of NOTCH with 0.05% Trypsin-EDTA (Gibco) for 10 min. Cells cultured in medium containing DMSO, Actinomycin D or SEL120-34A and harvested at different timepoints (t = 0 was taken 15 min after activation), lysed in RIPA for 30 min and sonicated. For the phosphatase treatment studies, lysates were mixed with the same amount of CIP-buffer (100 mM NaCl, 50 mM Tris-HCL pH 7.9, 10 mM MgCl2, 1 mM DTT) and incubated with Calf intestinal phosphatase (CIP, NEB; 20,000U/1 × 106 cells) for 60 min at 37°C. Equal amounts were loaded on 6% Acrylamide gels for SDS-PAGE and blotted on Nitrocellulose membranes (GE healthcare). Membranes were blocked in 5% dry milk powder in PBS with 0.1% Tween and incubated with anti-N1ICD (Val1744, CST, 1:1000), anti-Notch1 (D1E11, CST, 1:1000) and anti-β-actin (Sigma-Aldrich, 1:4000) overnight at 4°C. After incubation with HRP-conjugated secondary antibodies (GE Healthcare, 1:5000), signals were detected using SuperSignal Femto West Chemoluminescent Substrate (Thermo Fisher Scientific) and imaged with the BioRad ChemiDoc system.
 
@@ -154,78 +530,245 @@ Mouse embryonic fibroblast cells deficient for RBP-JK (OT-11) (Kato et al., 1997
 
 We generated mK4 cells deficient for all mastermind-like proteins through CRISPR Cas9 mediated deletion of exon 1 of Mastermind-like 1, 2, and 3. Briefly, parental mK4 cells were simultaneously transfected with PX458 and PX459 containing guide RNAs flanking exon1 for each of the Mastermind-like genes and subjected to selection with puromycin for 2 days. Surviving clones were picked and authenticated the following week using cloning disks and screened by PCR analysis and Western blot to identify clones that lacked expression of Mastermind-like 1, 2, and 3. The sequences of guide RNAs and genotyping PCR primers are in Key Resources Table. All cell lines used throughout these studies were tested negative for mycoplasma contamination and no cell lines were used from the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Mathematical model
+### Mathematical model
 
-The mathematical model describes the concentrations of the possible states of NICD. These include unphosphorylated unbound NICD, NICDup,ub, unphosphorylated bound, NICDup,b, phosphorylated bound, NICDp,b, and phosphorylated unbound, NICDp,ub. The dynamic equations described by the set of biochemical reactions presented in Figure 4a are:(1)ddtNICDup,ub=PNICD-NICDup,ubΓup-NICDup,ubNubkα++NICDup,bkα-(2)ddtNICDup,b=NICDup,ubNubkα+-NICDup,bkα-- NICDup,bkp(3)ddtNICDp,b=NICDup,bkp-NICDp,bkα-+ NICDp,ubNubkα+(4)ddtNICDp,ub=NICDp,bkα--NICDp,ub Γp-NICDp,ubNubkα+
+The mathematical model describes the concentrations of the possible states of NICD. These include unphosphorylated unbound NICD, $NICD_{up,ub}$, unphosphorylated bound, $NICD_{up,b}$, phosphorylated bound, $NICD_{p,b}$, and phosphorylated unbound, $NICD_{p,ub}$. The dynamic equations described by the set of biochemical reactions presented in Figure 4a are:
 
-Here, PNICD is the rate NICD enters the nucleus (production rate), Γp and Γup are the degradation rates of phosphorylated/unphosphorylated NICD, respectively, kα+,kα-  are the association and dissociation rates of the NCM complex to an SPS site, kp is the Cdk8 phosphorylation rate of bound unphosphorylated NICD, and Nub is the number of unbound SPS sites.
+$$
+\frac{d}{dt}NICD_{up,ub}=P_{NICD}-NICD_{up,ub}Γ_{up}-NICD_{up,ub}N_{ub}k_{\alpha}^{+}+NICD_{up,b}k_{\alpha}^{-}
+$$
 
-The total nuclear NICD concentration, NICDtot, is the sum of the phosphorylated, NICDp, and unphosphorylated fractions, NICDup:(5)NICDtot = NICDp + NICDup
 
-The total phosphorylated and unphosphorylated NICD are the sum of the bound (index b) and unbound (index ub) fractions:(6)NICDp=NICDp,b + NICDp,ub(7)NICDup=NICDup,b + NICDup,ub
 
-Combining Equations 1,2, 3, 4, 5, 6, 7 and assuming the system is in steady state gives:(8)0=NICD0-NICDup -NICDup,b(kp'-1)(9)0=NICDup,b kp'-NICDpΓp'+NICDp,bΓp'where we define the dimensionless parameters: NICD0≡PNICDΓup, Γp'≡ΓpΓup,  kp'=kpΓup.
+$$
+\frac{d}{dt}NICD_{up,b}=NICD_{up,ub}N_{ub}k_{\alpha}^{+}-NICD_{up,b}k_{\alpha}^{-}-NICD_{up,b}k_{p}
+$$
 
-NICDup,b and NICDp,b are calculated using a physical model based on equilibrium statistical mechanics (Brewster et al., 2014). The conceptual basis of such models is that the occupancy of binding sites can be deduced by examining the equilibrium probabilities of binding and unbinding of TFs to TFBSs. In such models, each state of the system is denoted with a statistical weight (Si). In equilibrium, the statistical weights can be represented as the ratio of the concentration of each binding species [X], to the dissociation rate kdX associated with that interaction so that Si = [X]/kdx (White et al., 2012). The partition function is defined as the summation of all possible statistical weights of the system:(10)Z = ∑Si
 
-The partition function is the normalization factor by which the probabilities of the different states of the system are calculated so that the probability for state j is:(11)prob(state j) = Sj/Z
 
-For our model, the statistical weights of the states of bound unphosphorylated and phosphorylated NICD are:(12)αup=NICDupkα(13)αp=NICDpkαwhere kα=kα-kα+ is the dissociation constant of NCM to an SPS site. Thus, the partition function of one binding site is:(14)Z=1+αup+αp
+$$
+\frac{d}{dt}NICD_{p,b}=NICD_{up,b}k_{p}-NICD_{p,b}k_{\alpha}^{-}+NICD_{p,ub}N_{ub}k_{\alpha}^{+}
+$$
 
-The total number of SPS sites, N, is comprised of endogenous SPS sites (Ne) and synthetic SPS sites (Ns):(15).N=Ne+Ns
 
-Note, Ne is an effective number for the cumulative impact of all endogenous sites (i.e. the many weak Notch binding sites within the genome) relative to the effect of the strong SPS sites in the GBE-SPS transgenes.
 
-Combining Equations 9, 10, 11, 12, 13, 14, 15 results in the following two equations:(16)0=NICD0-NICDup -Ne+NsNICDup  kα+NICDp+NICDup  (kp'-1)(17)0=Ne+NsNICDup  kα+NICDp+NICDup  kp'-NICDpΓp'+Ne+NsNICDpkα+NICDp+NICDup  Γp'
+$$
+\frac{d}{dt}NICD_{p,ub}=NICD_{p,b}k_{\alpha}^{-}-NICD_{p,ub}Γ_{p}-NICD_{p,ub}N_{ub}k_{\alpha}^{+}
+$$
 
-This statistical mechanics approach is based on three main assumptions: (1) The binding dynamics (on and off rates) are much faster than the dynamics determining the level of NICD in the nucleus. This is clearly valid as the DNA binding time scales are of the order of seconds (Gomez-Lamarca et al., 2018) and degradation time scales are of the order of minutes to hours. (2) The number of NICD molecules in the nucleus is larger than the number of SPS sites. Since we typically look at a range of NICD concentrations of 102-104 per nucleus, and a maximum number of SPS sites of 36, this assumption is also justified. (3) For simplicity, we assume that binding to different SPS sites are independent.
+Here, $P_{NICD}$ is the rate NICD enters the nucleus (production rate), $Γ_{p}$ and $Γ_{up}$ are the degradation rates of phosphorylated/unphosphorylated NICD, respectively, $k_{\alpha}^{+},k_{\alpha}^{-}$ are the association and dissociation rates of the NCM complex to an SPS site, $k_{p}$ is the Cdk8 phosphorylation rate of bound unphosphorylated NICD, and $N_{ub}$ is the number of unbound SPS sites.
 
-We also consider the situation where the nuclear NICD concentration is much higher than the dissociation rate: NICDp+NICDup≫kα, namely, that we are in a strong binding regime. Under this assumption, the results are largely independent of the values of kα.
+The total nuclear NICD concentration, $NICD_{tot}$, is the sum of the phosphorylated, $NICD_{p}$, and unphosphorylated fractions, $NICD_{up}$:
 
-We use Equation (16) and (17) to solve for NICDp, NICDup, and NICDtot and obtain their steady state levels for each set of parameters. These steady state solutions were used to plot Figures 4b and 4h (model curves).
+$$
+NICD_{tot}=NICD_{p}+NICD_{up}
+$$
 
-## Analysis of the linear regime
+The total phosphorylated and unphosphorylated NICD are the sum of the bound (index b) and unbound (index ub) fractions:
 
-Since phosphorylation of NICD by Cdk8 occurs only for bound NICD, it can be assumed that for a low number of SPS sites NICDp,kα,Ne+Ns≪NICDup. In this regime, Equations 16 and 17 are approximated by:(18)NICDup ≅NICD0-Ne+Ns(kp'-1)(19)NICDp≅Ne+Nskp'Γp'
+$$
+NICD_{p}=NICD_{p,b}+NICD_{p,ub}
+$$
 
-The total concentration of NICD is then:(20)NICDtot≅NICD0-Ne+Nskp'1-1Γp'-1kp'
 
-We now assume the phosphorylation rate of NICDup,b is much faster than the degradation rate of NICDup.ub, that is:  kp≫Γup. Under this assumption equation (20) becomes:(21)NICDtot≅NICD0-Ne+Nskp'1-1Γp'
 
-This analysis predicts that the slope in the linear regime is(22)slopewt=-kp'1-1Γp'
+$$
+NICD_{up}=NICD_{up,b}+NICD_{up,ub}
+$$
 
-For mutant skd heterozygotes (skd+/- ), we expect the phosphorylation rate to change to kp,het'. The expression for the total NICD in skd+/- is then:(23)NICDtothet≅NICD0-Ne+Nskp,het'1-1Γp'
+Combining Equations 1,2, 3, 4, 5, 6, 7 and assuming the system is in steady state gives:
 
-The ratio of the slopes between the wild type and skd+/- will simply be:(24)slopehetslopewt=kp,het'kp'
+$$
+0=NICD_{0}-NICD_{up}-NICD_{up,b}(k_{p}^{'}-1)
+$$
 
-If skd is a limiting factor for the formation of the Cdk8 Mediator submodule, it is expected that reducing its copy number from 2 to 1 in skd+/- would result in halving the Cdk8 phosphorylation activity, that is that kp,het'=12 kp' of the wild type.
 
-The difference between equations 21 and 23 at Ns=0 gives an expression for Ne:(25)Ne=NICDtot(Ns=0)-NICDtothet(Ns=0)kp,het'-kp'1-1Γp'
 
-To check the ratio between wildtype and skd het slopes and to estimate Ne, we performed linear regression on the data for the mean values of 6S-GFP expression in Figure 4h using the first 3 points of wildtype data (the fourth point is in the saturated regime) and the 4 points of skd+/-  data. We note that the data is normalized to the mean fluorescence level of 6S-GFP expression at Ns=0, so Equations 21 and 23 are normalized by NICDtot(Ns=0). This normalization factor does not affect the expressions in Equations 24 and 25 as it cancels out. The errors are estimated using standard error calculation on multivariate expression (Clifford, 1973).
+$$
+0=NICD_{up,b}k_{p}^{'}-NICD_{p}Γ_{p}^{'}+NICD_{p,b}Γ_{p}^{'}
+$$
 
-## Estimation of kp
+where we define the dimensionless parameters: $NICD_{0}≡\frac{P_{NICD}}{Γ_{up}}$, $Γ_{p}^{'}≡\frac{Γ_{p}}{Γ_{up}}$, $k_{p}^{'}=$$\frac{k_{p}}{Γ_{up}}$.
 
-The slope of the normalized linear fit is given by(26)slopewtnorm=slopewtNICDtotNs=0=kp'1-1Γp'NICD0-Nekp'1-1Γp'
+$NICD_{up,b}$ and $NICD_{p,b}$ are calculated using a physical model based on equilibrium statistical mechanics (Brewster et al., 2014). The conceptual basis of such models is that the occupancy of binding sites can be deduced by examining the equilibrium probabilities of binding and unbinding of TFs to TFBSs. In such models, each state of the system is denoted with a statistical weight ($S_{i}$). In equilibrium, the statistical weights can be represented as the ratio of the concentration of each binding species $[X]$, to the dissociation rate $k_{d}^{X}$ associated with that interaction so that $S_{i}=[X]/k_{d}^{x}$ (White et al., 2012). The partition function is defined as the summation of all possible statistical weights of the system:
 
-Which leads to the following expression for kp(27)kp=NICD0Γup-1slopewtnorm+Ne1-ΓupΓp
+$$
+Z=\sumS_{i}
+$$
 
-This expression allows estimating kp for different parameter values. We use the calculated values of slopewtnorm and Ne. We estimate the steady state amount of NICD in the nucleus, NICD0, ranges between 100 (below that, the concentration is unlikely to activate multiple Notch targets in the nucleus) and 10,000. The upper limit is based on the fact that bicoid concentration is about 10,000 molecules/nucleus (Gregor et al., 2007). Since endogenous NICD concentration is so small that it is notoriously hard to detect it in the nucleus using standard imaging techniques (Couturier et al., 2012), we estimate that it is not larger than the typical concentration of Bicoid. The estimated range of unphosphorylated NICD is between 130 min-1 to 11000 min-1 corresponding to half-lives of the range of 0.5-16 hours, which fits the typical half-lives of proteins. Note, that the analysis in Figure 3F shows a half-life of about 120 min in cell culture. Finally, since we assume that ΓupΓp≪1 the exact value of Γp has only a weak effect on the values of kp. For the calculation we take it to be Γp=18 min-1 which is close to the rate observed in Drosophila cell culture (Housden et al., 2013).
+The partition function is the normalization factor by which the probabilities of the different states of the system are calculated so that the probability for state j is:
 
-## Dynamic simulations
+$$
+prob(statej)=S_{j}/Z
+$$
 
-To study the dynamics of NICD in the nucleus, we numerically solved the dynamic equations corresponding to Equations 16 and 17:(28)ddtNICDup=NICD0-NICDup -Ne+NsNICDup  kα+NICDp+NICDup  (kp'-1)(29)ddtNICDp=Ne+NsNICDup  kα+NICDp+NICDup  kp'-NICDpΓp'+Ne+NsNICDpkα+NICDp+NICDup  Γp'
+For our model, the statistical weights of the states of bound unphosphorylated and phosphorylated NICD are:
 
-The equations were solved using ODE solver in MATLAB, with initial conditions NICDupt=0=NICDpt=0=0. The values of parameters used for the simulations are given in Supplementary file 1. For simulating wildtype cells, we assumed Ns=0 and Ne=5.4. For simulating N+/- cells, we assumed PNICDN het=12PNICDwt. For simulating cells with two copies of 6SG, we assumed Ns=12.
+$$
+\alpha_{up}=\frac{NICD_{up}}{k_{\alpha}}
+$$
 
-## Parameter values
 
-FigureParameter values usedFigure 4BNICD0=2000 #nuc, Γup=1120 min-1, Γp=18 min-1, kp=1,0.5,0.25 min-1Figure 4HNICD0=2000 #nuc, Γup=1120 min-1,  Γp=18 min-1, slopewt=-0.0294, slopeskd=12slopewt, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓp, kpskd=NICD0Γup-1Slopeskd+Ne1-ΓupΓpFigure 4INICD0=100-10,000 #nuc, Γup=130-11000 min-1, Γp=18 min-1, slopewt=-0.0294, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓpFigure 4KNICD0wt=2000 #nuc, NICD0N het=1000 #nuc, Γup=1120 min-1,  Γp=18 min-1, slopewt=-0.0294, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓp, Ns=12 (for 2xG6S-LacZ)Figure 4—figure supplement 2For A, same parameters as Figure 4k B: NICD0wt=200 #nuc, C: NICD0wt=20000 #nuc D: Γup=130 min-1, E: Γup=11000 min-1 F: Γp=14 min-1, G: Γp=130 min-1
 
-## Lead contact and materials availability
+$$
+\alpha_{p}=\frac{NICD_{p}}{k_{\alpha}}
+$$
+
+where $k_{\alpha}=\frac{k_{\alpha}^{-}}{k_{\alpha}^{+}}$ is the dissociation constant of NCM to an SPS site. Thus, the partition function of one binding site is:
+
+$$
+Z=1+\alpha_{up}+\alpha_{p}
+$$
+
+The total number of SPS sites, $N$, is comprised of endogenous SPS sites ($N_{e}$) and synthetic SPS sites ($N_{s}$):
+
+$$
+N=N_{e}+N_{s}
+$$
+
+Note, $N_{e}$ is an effective number for the cumulative impact of all endogenous sites (i.e. the many weak Notch binding sites within the genome) relative to the effect of the strong SPS sites in the GBE-SPS transgenes.
+
+Combining Equations 9, 10, 11, 12, 13, 14, 15 results in the following two equations:
+
+$$
+0=NICD_{0}-NICD_{up}-N_{e}+N_{s}\frac{NICD_{up}}{k_{\alpha}+NICD_{p}+NICD_{up}}(k_{p}^{'}-1)
+$$
+
+
+
+$$
+0=N_{e}+N_{s}\frac{NICD_{up}}{k_{\alpha}+NICD_{p}+NICD_{up}}k_{p}^{'}-NICD_{p}Γ_{p}^{'}+N_{e}+N_{s}\frac{NICD_{p}}{k_{\alpha}+NICD_{p}+NICD_{up}}Γ_{p}^{'}
+$$
+
+This statistical mechanics approach is based on three main assumptions: (1) The binding dynamics (on and off rates) are much faster than the dynamics determining the level of NICD in the nucleus. This is clearly valid as the DNA binding time scales are of the order of seconds (Gomez-Lamarca et al., 2018) and degradation time scales are of the order of minutes to hours. (2) The number of NICD molecules in the nucleus is larger than the number of SPS sites. Since we typically look at a range of NICD concentrations of $10^{2}-10^{4}$ per nucleus, and a maximum number of SPS sites of 36, this assumption is also justified. (3) For simplicity, we assume that binding to different SPS sites are independent.
+
+We also consider the situation where the nuclear NICD concentration is much higher than the dissociation rate: $NICD_{p}+NICD_{up}≫k_{\alpha}$, namely, that we are in a strong binding regime. Under this assumption, the results are largely independent of the values of $k_{\alpha}$.
+
+We use Equation (16) and (17) to solve for $NICD_{p}$, $NICD_{up}$, and $NICD_{tot}$ and obtain their steady state levels for each set of parameters. These steady state solutions were used to plot Figures 4b and 4h (model curves).
+
+#### Analysis of the linear regime
+
+Since phosphorylation of NICD by Cdk8 occurs only for bound NICD, it can be assumed that for a low number of SPS sites $NICD_{p},k_{\alpha},N_{e}+N_{s}≪NICD_{up}$. In this regime, Equations 16 and 17 are approximated by:
+
+$$
+NICD_{up}≅NICD_{0}-N_{e}+N_{s}(k_{p}^{'}-1)
+$$
+
+
+
+$$
+NICD_{p}≅N_{e}+N_{s}\frac{k_{p}^{'}}{Γ_{p}^{'}}
+$$
+
+The total concentration of NICD is then:
+
+$$
+NICD_{tot}≅NICD_{0}-N_{e}+N_{s}k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}-\frac{1}{k_{p}^{'}}
+$$
+
+We now assume the phosphorylation rate of $NICD_{up,b}$ is much faster than the degradation rate of $NICD_{up.ub}$, that is: $k_{p}≫Γ_{up}$. Under this assumption equation (20) becomes:
+
+$$
+NICD_{tot}≅NICD_{0}-N_{e}+N_{s}k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}
+$$
+
+This analysis predicts that the slope in the linear regime is
+
+$$
+slope_{wt}=-k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}
+$$
+
+For mutant skd heterozygotes ($skd^{+/-}$), we expect the phosphorylation rate to change to $k_{p,het}^{'}$. The expression for the total NICD in $skd^{+/-}$ is then:
+
+$$
+NICD_{tot}^{het}≅NICD_{0}-N_{e}+N_{s}k_{p,het}^{'}1-\frac{1}{Γ_{p}^{'}}
+$$
+
+The ratio of the slopes between the wild type and $skd^{+/-}$ will simply be:
+
+$$
+\frac{slope_{het}}{slope_{wt}}=\frac{k_{p,het}^{'}}{k_{p}^{'}}
+$$
+
+If $skd$ is a limiting factor for the formation of the Cdk8 Mediator submodule, it is expected that reducing its copy number from 2 to 1 in $skd^{+/-}$ would result in halving the Cdk8 phosphorylation activity, that is that $k_{p,het}^{'}=\frac{1}{2}k_{p}^{'}$ of the wild type.
+
+The difference between equations 21 and 23 at $N_{s}=0$ gives an expression for $N_{e}$:
+
+$$
+N_{e}=\frac{NICD_{tot}(N_{s}=0)-NICD_{tot}^{het}(N_{s}=0)}{k_{p,het}^{'}-k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}}
+$$
+
+To check the ratio between wildtype and skd het slopes and to estimate $N_{e}$, we performed linear regression on the data for the mean values of 6S-GFP expression in Figure 4h using the first 3 points of wildtype data (the fourth point is in the saturated regime) and the 4 points of $skd^{+/-}$ data. We note that the data is normalized to the mean fluorescence level of 6S-GFP expression at $N_{s}=0$, so Equations 21 and 23 are normalized by $NICD_{tot}(N_{s}=0)$. This normalization factor does not affect the expressions in Equations 24 and 25 as it cancels out. The errors are estimated using standard error calculation on multivariate expression (Clifford, 1973).
+
+#### Estimation of kp
+
+The slope of the normalized linear fit is given by
+
+$$
+slope_{wt}^{norm}=\frac{slope_{wt}}{NICD_{tot}N_{s}=0}=\frac{k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}}{NICD_{0}-N_{e}k_{p}^{'}1-\frac{1}{Γ_{p}^{'}}}
+$$
+
+Which leads to the following expression for $k_{p}$
+
+$$
+k_{p}=\frac{NICD_{0}Γ_{up}}{-\frac{1}{slope_{wt}^{norm}}+N_{e}1-\frac{Γ_{up}}{Γ_{p}}}
+$$
+
+This expression allows estimating $k_{p}$ for different parameter values. We use the calculated values of $slope_{wt}^{norm}$ and $N_{e}$. We estimate the steady state amount of NICD in the nucleus, $NICD_{0}$, ranges between 100 (below that, the concentration is unlikely to activate multiple Notch targets in the nucleus) and 10,000. The upper limit is based on the fact that bicoid concentration is about 10,000 molecules/nucleus (Gregor et al., 2007). Since endogenous NICD concentration is so small that it is notoriously hard to detect it in the nucleus using standard imaging techniques (Couturier et al., 2012), we estimate that it is not larger than the typical concentration of Bicoid. The estimated range of unphosphorylated NICD is between $\frac{1}{30}min^{-1}$ to $\frac{1}{1000}min^{-1}$ corresponding to half-lives of the range of 0.5-16 hours, which fits the typical half-lives of proteins. Note, that the analysis in Figure 3F shows a half-life of about $120min$ in cell culture. Finally, since we assume that $\frac{Γ_{up}}{Γ_{p}}≪1$ the exact value of $Γ_{p}$ has only a weak effect on the values of $k_{p}$. For the calculation we take it to be $Γ_{p}=\frac{1}{8}min^{-1}$ which is close to the rate observed in Drosophila cell culture (Housden et al., 2013).
+
+#### Dynamic simulations
+
+To study the dynamics of NICD in the nucleus, we numerically solved the dynamic equations corresponding to Equations 16 and 17:
+
+$$
+\frac{d}{dt}NICD_{up}=NICD_{0}-NICD_{up}-N_{e}+N_{s}\frac{NICD_{up}}{k_{\alpha}+NICD_{p}+NICD_{up}}(k_{p}^{'}-1)
+$$
+
+
+
+$$
+\frac{d}{dt}NICD_{p}=N_{e}+N_{s}\frac{NICD_{up}}{k_{\alpha}+NICD_{p}+NICD_{up}}k_{p}^{'}-NICD_{p}Γ_{p}^{'}+N_{e}+N_{s}\frac{NICD_{p}}{k_{\alpha}+NICD_{p}+NICD_{up}}Γ_{p}^{'}
+$$
+
+The equations were solved using ODE solver in MATLAB, with initial conditions $NICD_{up}t=0=NICD_{p}t=0=0$. The values of parameters used for the simulations are given in Supplementary file 1. For simulating wildtype cells, we assumed $N_{s}=0$ and $N_{e}=5.4$. For simulating $N^{+/-}$ cells, we assumed $P_{NICD}^{Nhet}=\frac{1}{2}P_{NICD}^{wt}$. For simulating cells with two copies of 6SG, we assumed $N_{s}=12$.
+
+### Parameter values
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>Parameter values used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 4B</td>
+      <td>NICD0=2000 #nuc, Γup=1120 min-1, Γp=18 min-1, kp=1,0.5,0.25 min-1</td>
+    </tr>
+    <tr>
+      <td>Figure 4H</td>
+      <td>NICD0=2000 #nuc, Γup=1120 min-1,  Γp=18 min-1, slopewt=-0.0294, slopeskd=12slopewt, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓp, kpskd=NICD0Γup-1Slopeskd+Ne1-ΓupΓp</td>
+    </tr>
+    <tr>
+      <td>Figure 4I</td>
+      <td>NICD0=100-10,000 #nuc, Γup=130-11000 min-1, Γp=18 min-1, slopewt=-0.0294, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓp</td>
+    </tr>
+    <tr>
+      <td>Figure 4K</td>
+      <td>NICD0wt=2000 #nuc, NICD0N het=1000 #nuc, Γup=1120 min-1,  Γp=18 min-1, slopewt=-0.0294, Ne=5.4, kpwt=NICD0Γup-1Slopewt+Ne1-ΓupΓp, Ns=12 (for 2xG6S-LacZ)</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 2</td>
+      <td>For A, same parameters as Figure 4k B: NICD0wt=200 #nuc, C: NICD0wt=20000 #nuc D: Γup=130 min-1, E: Γup=11000 min-1 F: Γp=14 min-1, G: Γp=130 min-1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 All materials used in this study will be made freely available. Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Brian Gebelein (brian.gebelein@cchmc.org).
 
-## Code availability
+### Code availability
 
 All simulation codes are available in the GitHub repository at https://github.com/OhadGolan/NICD-concentration-in-the-nucleus-as-by-binding-site-coupled-NICD-degradation.git (Golan, 2020; copy archived at https://github.com/elifesciences-publications/NICD-concentration-in-the-nucleus-as-by-binding-site-coupled-NICD-degradation/tree/master).

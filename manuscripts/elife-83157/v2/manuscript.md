@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Laboratory of Neural Plasticity, Faculties of Medicine and Science, Brain Research Institute, University of Zurich Zurich Switzerland
-2. https://ror.org/02crff812 University Research Priority Program (URPP), Adaptive Brain Circuits in Development and Learning (AdaBD), University of Zurich Zurich Switzerland
+1. Laboratory of Neural Plasticity, Faculties of Medicine and Science, Brain Research Institute, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+2. University Research Priority Program (URPP), Adaptive Brain Circuits in Development and Learning (AdaBD), University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
@@ -28,35 +28,59 @@ Despite substantial evidence supporting the importance of asymmetric centrosome 
 
 ## Results
 
-## Centriolin-RITE birthdates human centrosomes
+### Centriolin-RITE birthdates human centrosomes
 
 With the aim to birthdate and track the segregation of centrosomes over multiple cell divisions in human cells we created a novel genetic tool based on the recombination-induced tag exchange (RITE) system (Hotz et al., 2012), consisting of the red fluorescent protein tdTomato flanked by LoxP sites and followed by a second section containing the green fluorescent protein NeonGreen (with each section ending with a terminal stop codon followed by a 3′UTR or a T2A Neo, respectively) (Figure 1A). Using CRISPR/Cas9 (Ran et al., 2013) we inserted the RITE construct into hESCs immediately upstream of the terminal stop codon of Centriolin, a protein that localises to the subdistal appendages of the mother centriole (Gromley et al., 2003; Gromley et al., 2005; Kashihara et al., 2019; Chong et al., 2020). The Centriolin yeast ortholog, Nud1, has previously been shown to have limited turnover on the pre-existing yeast spindle pole body (Lengefeld et al., 2017). As the reading frame is maintained, Centriolin will be constitutively tagged with tdTomato. LoxP recombination with Cre recombinase will excise the first section containing tdTomato, causing Centriolin to be tagged with NeonGreen, and allowing for the discrimination of pre-existing vs. newly synthesised Centriolin based on red vs. green fluorescence. Indeed, tdTomato-positive dots were observed in each cell and NeonGreen was detectable within 24 hr after recombination induced by electroporation of Cre recombinase expressing plasmid; staining with the centrosomal marker protein Pericentrin showed that Centriolin-tdTomato was properly localising to the centrosome (Figure 1B). Correct localisation of RITE-tagged Centriolin was confirmed by live imaging of hESCs following electroporation of GFP-Centrin-1, which localised to the centrioles (Figure 1—figure supplement 1A). In line with the known behaviour of Centriolin as a subdistal appendage of the mother centriole, Centriolin-tdTomato co-localised to one of the two centrioles.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig1-v2.jpg)
+
+**Figure 1.:** (A) Centriolin is tagged with the RITE system in human embryonic stem cells (hESCs) so that all Centriolin protein made is tdTomato-tagged. Upon recombination with Cre recombinase, the tdTomato fluorophore is replaced with NeonGreen, making all new Centriolin protein tagged with NeonGreen. Identifying a proteins tag will indicate the proteins age with tdTomato being the oldest, then NeonGreen. (B) Image of hESCs expressing Centriolin-RITE 24 hr post Cre induction. Magnified images show a centrosome that has not recombined (ii), has recombined and contains red and green Centriolin (iii and iv), or only green Centriolin (v). Scale bars, 10 μm (upper panel), 1 μm (magnifications). (C) Signal of Centriolin through mitosis. In prophase centriolin signal is present, however the signal disappears in metaphase and anaphase. Scale bars, 10 μm. (D) Staining for tdTomato protein shows that Centriolin-tdTomato is present at the centrosome during metaphase but that the signal is subsequently quenched. Scale bars, 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) hESC electroporated with GFP-Centrin-1 is outlined in white. Centriolin localises to only one of the two centrioles marked by GFP-Centrin-1. Scale bars, 10 μm.
+
 Examination of cells at different stages of mitosis showed that Centriolin-tdTomato signal was present in prophase cells but diminished by metaphase (Figure 1C). To investigate whether this was due to loss of Centriolin-tdTomato protein or quenching of fluorescence, we stained for tdTomato, which revealed that Centriolin-tdTomato protein remained localised to the centrosome throughout mitosis (Figure 1D), indicating that RITE-tagged Centriolin allows for tracking centrosomes in human cells. To simplify and facilitate Cre recombinase-mediated recombination without the need of transfection or electroporation we used CRISPR/Cas9 to introduce a stable expression cassette of ERT2-CRE-ERT2 from the human safe harbour locus Adeno-associated virus site 1 (AAVS1; Roemer et al., 2016), which we used for subsequent experiments.
 
-## Centriolin-RITE localisation and recombination in human forebrain organoids
+### Centriolin-RITE localisation and recombination in human forebrain organoids
 
 We used a heterozygous Centriolin-RITE, ERT2-CRE-ERT2-positive hESC line to generate regionalised, forebrain organoids (Figure 2—figure supplement 1A) to understand how centriolin localises within the three-dimensional structure of human neural tissues (Qian et al., 2016; Denoth-Lippuner et al., 2021). Day 35 organoids were fixed and stained with the centrosomal marker CEP164 to check for correct co-localisation of RITE-tagged Centriolin within organoids. Indeed, CEP164 co-staining confirmed co-localisation with Centriolin-tdTomato (Figure 2A). Ventricle-like structures at the centre of cortical units were easily identifiable by the clustering of Centriolin-tdTomato-labelled centrosomes, belonging to SOX2-positive, NPCs in the VZ (Figure 2A). Centrosomes outside of the VZ were more sparsely distributed.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cortical unit of a day 35 forebrain organoid. The ventricular zone is easily identified by densly packed SOX2-positive neural progenitor cells (NPCs) that form a rosette-like structure around the ventricular centrosomes, shown by Centriolin-tdTomato and the mother centriole marker CEP164. Scale bar, 50 μm. (B) Recombined centrosomes exhibiting variable quantities of the older, Centriolin-tdTomato protein. Arrowheads indicate recombined centrosomes identifiable by the presence of Centriolin-NeonGreen. White arrowheads show centrosomes that have a large quantity of Centriolin-tdTomato present, thus are the oldest. Blue arrowhead indicated centrosomes have visibly less Centriolin-tdTomato, and the yellow arrowhead-depicted have no visible tdTomato signal, suggesting these are the most recently formed centrosomes. Scale bar, 5 μm. (C) Scheme showing the timing of Cre recombination in the context of the organoid protocol. (D) Schematic showing how imaging organoid sections causes the loss of progeny of some NPCs. In this example, two NPCs have recombined (orange and purple) and have produced progeny of a similar colour that migrate away along their radial processes. When imaging sections that include a ventricle, both the orange and purple NPCs’ centrosomes are included in the image. The orange progeny are also included because they migrate away along the x/y-axis of the image. However, as the purple NPCs’ progeny will migrate away along the z-axis, they are not imaged. (E) Example of an analysed image. The ventricular centrosomes are shown in large in (i) and an example of non-ventricular centrosome is shown in (ii). Scale bars, upper panel 20 μm, (i, ii) 2 μm. (F) Representative images that display the criteria of manual colour allocation. Recombined centrosomes signal was compared to unrecombined centrosomes. Centrosomes whose tdTomato signal was indistinguishable from unrecombined were allocated orange, those that had less tdTomato than unrecombined were yellow and those that had no tdTomato signal were green. Due to the presence of tdTomato signal, orange centrosomes would be the oldest, yellow the second oldest and green the youngest. (G, H) Analysis of the manual colour calling shows a significant enrichment of orange centrosomes in ventricle and a significant enrichment of green centrosomes outside of the ventricle (n = 22, cortical units). Cortical units defined as an entity within the organoid consisting of a ventricle-like structure surrounded by an inner ring of densly clustered NPCs and an outher ring of neurons. ns, non-significant, *p < 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scheme showing a timeline of forebrain organoid protocol, with the small molecules used during each part of the protocol. (B) Cross-sections of a ventricle show its three-dimensional, tubular/spherical structure. Centrosomes are identified by their endogenous Centriolin-tdTomato/Centriolin-NeonGreen signal. (C) Box plot of mean ratio of NeonGreen to total signal for each region shows non-ventricular centrosomes are significantly greener than the ventricular centrosomes (n = 20, cortical units). (D, E) Automated colour calling from the ratio of NeonGreen to total signal, this supports the manual data showing a significant enrichment of old centrosomes in the ventricle (n = 20, cortical units). (F) Cortical unit of a day 35 forebrain organoid. The neuronal progeny (TBR1+ cells) localise away from the densely packed sub-ventricular structure containing neural progenitor cells (NPCs) (SOX2+ cells). Zoom-in images show young, green centrosomes (red arrows) co-localising with TBR1+ cells. Scale bar, 20 μm (left image) and 5 μm (zoom-in). ns, non-significant, *p < 0.05, **p < 0.01, ***p < 0.001.
+
 To test whether Centriolin-RITE organoids maintain their capacity to recombine, day 35 organoids were incubated with 4-OH tamoxifen to induce nuclear translocation of the ERT2-Cre-ERT2 and thus the recombination of the LoxP sites in the RITE system. Presence of Centriolin-NeonGreen was detected both inside and outside the ventricle, indicating successful recombination (Figure 2B). Interestingly, we observed centrosomes with varying NeonGreen-to-tdTomato ratios, indicating centrosomes of varied ages. Such mixed tdTomato and NeonGreen centrosomes were observed at longer time points (>20 days) after recombination indicating that centriolin was remarkably stable on the centrosome, labelled with CEP164.
 
-## Ventricular NPCs retain the older centrosome
+### Ventricular NPCs retain the older centrosome
 
 To assess whether there is an asymmetric inheritance of older centrosomes, the RITE-tagged centrosome signal was compared between NPCs in the VZ and progeny that had migrated away from the centre of cortical units. NPCs in VZ were selected for comparison, as opposed to all SOX2-positive cells, as their presence in the VZ strongly indicates their capacity for self-renewal whereas SOX2-positive cells outside of the VZ may have already started differentiation along the neural lineage.
 
 Twenty-two days after recombination organoids were stained and the ventricles, and the surrounding tissue, were imaged (Figure 2C). During this process, the 3D tissue gets collapsed into a 2D image. As ventricle-like structures in organoids are tubular or spherical in nature, this dimension collapse produces a circle of centrosomes, where multiple Z planes show a ring (Figure 2D and Figure 2—figure supplement 1B). This leads to an inclusion of centrosomes whose-cell bodies are not imaged because of the radial orientation of NPCs relative to the ventricles and the volume of tissue imaged. This is problematic as the progeny of the recombined NPCs whose centrosomes are on the inner ventricular wall (shown in purple in Figure 2D) would migrate along the NPCs’ radial projection and would not be in the imaged area. However, NPCs whose centrosomes are on the outer ventricular wall will produce progeny that should remain in the imaged area (shown in orange and yellow in Figure 2D). The inclusion of NPC centrosomes and not their progeny could potentially skew the data. To correct for this, images were digitally subdivided into areas of recombined NPCs and their likely progeny (Figure 2E). Centrosomes were manually allocated a colour by the quantity of Centriolin-tdTomato signal present in recombined centrosomes. Orange centrosomes’ tdTomato signals were visibly indistinguishable from non-recombined centrosomes (Figure 2F); yellow centrosomes had some tdTomato signal but less compared to non-recombined centrosomes and green centrosomes showed no detectable tdTomato signal. The number of orange, yellow, and green centrosomes was counted in the VZ section (vent) and the non-VZ section (nonvent) and compared. Comparison between these two regions revealed a higher proportion of orange centrosomes in the ventricle compared to outside the ventricle (Figure 2G, H, Figure 2—source data 1). The inverse was observed for green centrosomes, whereas there was no difference seen in the localisation of yellow centrosomes, similar to what was observed in the absolute number of each centrosome colour (Figure 2H). To validate the manual approach, we used an unbiased method of analysing fluorescence levels at the centrosomes. The mean tdTomato and NeonGreen signal was acquired, and a ratio was calculated for each centrosome (see Methods for details). This analysis showed that VZ centrosomes had a lower proportion of NeonGreen signal compared to their non-ventricular progeny (Figure 2—figure supplement 1C, Figure 2—source data 2), corroborating the previous results obtained by manual grading. Next, centrosomes were divided into thirds by their NeonGreen to total signal ratio, with the highest, middle, and lowest thirds being labelled ‘green’, ‘yellow’, and ‘orange’, respectively. Again, we found increased orange centrosomes in the VZ and more green centrosomes in the non-ventricle areas within organoids (Figure 2—figure supplement 1D–E, Figure 2—source data 3). To test whether comparing ventricular to non-ventricular cells indeed reflects different cell types, organoids were stained for NPCs (SOX2) and neuronal progeny (TBR1). TBR1 was excluded from the NPC dense VZ and indeed, green centrosomes co-localised with TBR1+ cells (Figure 2—figure supplement 1F). Taken together, these data indicate that the older, tdTomato-enriched centrosomes are preferentially retained by VZ NPCs, whereas the differentiating progeny inherits the younger, more NeonGreen-containing centrosomes.
 
-## Ninein knockdown affects NPC fate
+### Ninein knockdown affects NPC fate
 
 Next, we wanted to understand how centrosome inheritance affects the behaviour of human NPCs. Previous work identified that a knockdown of Ninein can randomise inheritance by preventing centriole maturation, without impeding the cells’ ability to divide (Wang et al., 2009). We produced constructs that expressed human Ninein-targeting shRNA or a scrambled shRNA under the U6 promoter, as well as an H2B-CFP to facilitate identification of targeted cells (Figure 3—figure supplement 1A). To test the efficacy of the shRNA, we transfected HEK cells with the constructs and stained them for Ninein as well as centrosomal marker Pericentrin (Figure 3—figure supplement 1C). Analysis of the intensity of the Ninein signal showed a significant decrease between scrambled and Ninein-targeting shRNAs (Figure 3—figure supplement 1D, Figure 3—source data 1). Furthermore, HEK cells transfected with shRNA and GFP-Ninein (Chen et al., 2003) revealed a significant reduction in GFP-Ninein in cells expressing Ninein-targeting shRNA compared to scrambled shRNA (Figure 3—figure supplement 1E, F, Figure 3—source data 2). Ninein-targeting and control shRNA-expressing constructs were then electroporated into the VZ of day 35 WT human forebrain organoids (Figure 3A). After 5 days, we assessed the cell types of shRNA-targeted cells by co-staining with SOX2 or CTIP2 (Figure 3B–D, Figure 3—source data 3). Strikingly, within the H2B-CFP+ population (cells expressing either Ninein or scrambled shRNA) we found a decrease in the proportion of SOX2-positive cells upon Ninein knockdown, which corresponded with a significant increase in the neuronal, CTIP2-positive population. These data suggest that knockdown of Ninein, and therefore possibly randomisation of centrosome inheritance, leads to precocious neuronal differentiation of NPCs in the VZ (Figure 3B–D).
 
-## Ninein knockdown alters centrosome segregation
+![Figure 3.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scheme showing the timing of electroporation of the shRNA construct in the context of the organoid protocol. (B) Day 40 WT organoids, 5 days post electroporation with either scrambled shRNA or NIN-targeting shRNA, and a H2B-CFP marker. Arrowheads depict H2B-CFP-positive cells that are either SOX2-positive (white) or CTIP2-positive (yellow). Scale bars, 50 μm. (C) Graph of the percentage of H2B-CFP-positive nuclei being SOX2-positive (n = 11, cortical units). (D) Graph of the percentage of H2B-CFP-positive nuclei being CTIP2-positive (n = 11, cortical units). **p < 0.01, ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Genetic map of the constructs used for the electroporation experiments. shRNA is expressed through the U6 promoter and the H2B-CFP is expressed via the EF-1α promoter. (B) Genetic map of the construct used for the generation of retroviruses. shRNA is expressed through the U6 promoter and the CRE-ERT2 is expressed via the EF-1α promoter. (C) Example images of the effect of transfection of the shRNAs targeting Ninein (NIN KD) and control shRNA (SCRAM) on Ninein expression in HEK cells. Scale bars, 10 μm. (D) Graph of the mean Ninein signal of each replicate, corrected for background and normalised to the maximum centrosome signal within each replicate (n = 3, replicates; each replicate consisting of five images). (E) Images of HEK cells transfected with plasmids expressing GFP-Ninein and shRNAs (either targeting Ninein or scrambled) and stained for Pericentrin (white arrows). (F) Quantifications of GFP-Ninein signal normalised by Pericentrin signal within H2B-CFP cells expressing either scrambled shRNA or shRNA-targeting Ninein (n = 30 cells from each condition). *p < 0.05, ****p < 0.0001.
+
+### Ninein knockdown alters centrosome segregation
 
 As Ninein knockdown caused an increase in CTIP2-positive neurons, we next analyzed whether the older centrosome was still retained in the VZ or if it was also inherited by the differentiating daughter cell. To ensure constitutive expression of shRNA and recombination of only the cells expressing the shRNA, we generated constructs that expressed CRE-ERT2 and the shRNA (Figure 3—figure supplement 1B) on a retroviral backbone. Day 24 organoids derived from Centriolin-RITE (CRE-ERT2 negative) hESCs were transduced with either scrambled or Ninein-targeting shRNA retroviruses (Figure 4A). Organoids were induced with 4-OH tamoxifen, fixed 22 days later and their centrosomes colours were manually analysed (Figure 4B). Remarkably, we observed a shift in the localisation of the old centrosomes in the Ninein knockdown condition as compared to the scrambled, with an increase in old (orange) and a decrease in young (green) non-ventricular centrosomes in the Ninein knockdown cells as compared to the scrambled condition (Figure 4C, D, Figure 4—source data 1). This corresponded with the reverse seen in younger (green) centrosomes, where Ninein knockdown caused a substantial increase in green centrosomes in ventricular regions (Figure 4C, D). Taken together, these data suggest that Ninein plays a role in the inheritance of the older centrosome in the cells of the VZ and that aberration of Ninein, here through shRNA-mediated knockdown, leads to segregation of the older centrosome also into non-ventricular areas, associated with impaired NPC behaviour (Figure 4E).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83157/elife-83157-fig4-v2.jpg)
 
-**Figure 4.:** (A) Timing of the retroviral transduction and subsequent recombination in the context of the organoid protocol. (B) Day 24 Centriolin-RITE organoids were infected with retroviral expression of scrambled or NIN-targeting shRNA, and Cre-ERT2. Organoids were fixed 22 days after recombination was induced with tamoxifen. Scale bars, 25 μm (left column), 2 μm (right column). (C) Comparison of the colour of centrosomes in each region by shRNA treatment using manual colour calling (scram n = 7 cortical units, nin = 10, cortical units; note that single unit data overlay for ‘vent’ data points). (D) Analysis of the colour composition of each region shows a shift in localisation of the older centrosomes to the nonvent region for the NIN shRNA-treated organoids (n = 8, cortical units). ns, non-significant, *p < 0.05, **p < 0.01. (E) Scheme of asymmetric centrosome segregation in WT and how it is perturbed upon Ninein knockdown.Figure 4—source data 1.Figure 4C, D.
+**Figure 4.:** (A) Timing of the retroviral transduction and subsequent recombination in the context of the organoid protocol. (B) Day 24 Centriolin-RITE organoids were infected with retroviral expression of scrambled or NIN-targeting shRNA, and Cre-ERT2. Organoids were fixed 22 days after recombination was induced with tamoxifen. Scale bars, 25 μm (left column), 2 μm (right column). (C) Comparison of the colour of centrosomes in each region by shRNA treatment using manual colour calling (scram n = 7 cortical units, nin = 10, cortical units; note that single unit data overlay for ‘vent’ data points). (D) Analysis of the colour composition of each region shows a shift in localisation of the older centrosomes to the nonvent region for the NIN shRNA-treated organoids (n = 8, cortical units). ns, non-significant, *p < 0.05, **p < 0.01. (E) Scheme of asymmetric centrosome segregation in WT and how it is perturbed upon Ninein knockdown.
 
 ## Discussion
 
@@ -72,7 +96,7 @@ The extent to which proper asymmetric inheritance of the older centrosome by div
 
 ## Methods
 
-## Genetic targeting and constructs
+### Genetic targeting and constructs
 
 Guide RNAs and CRISPR/Cas9 tagging was performed as described previously (Denoth-Lippuner et al., 2021). ENSEMBL (https://www.ensembl.org) was used to find the full sequences of the gene of interest and the terminal stop codon. The Zhang group guide design tool (https://www.crispr.mit.edu) was used to find best gRNAs, based on the closeness to the stop codon and the lowest number of off-targets. Guides were synthesised from Microsynth AG, Switzerland and cloned into pSpCas9(BB)-2A-Puro (Addgene 48139) following the cloning strategy described by Ran et al., 2013. The following gRNAs were used:
 
@@ -80,27 +104,27 @@ To generate the homology arms required for the insertion of the construct via ho
 
 Upon establishment of a cell line, genomic DNA was extracted using QIAGEN DNeasy Blood & Tissue Kit (QIAGEN 69504). Primers to test correct integration of the construct were designed such a way that one primer was within the inserted, non-native DNA and one was outside the inserted DNA including the homology arms. Additional primers were designed that would span the whole inserted region; these would test for homozygous vs. heterozygous integration. PCRs were performed on WT and genetically modified genome DNA. CAG-Cre (Addgene No. 13776) was used for recombination via electroporation. AAVS1-T2A-Puro_CAG-ERT2-Cre-ERT2 was cloned by replacing DR-GFP from pAAVS1-DR-GFP (Addgene No. 113193) with ERT2-Cre-ERT2 fragment was obtained from CAG-ERT2-Cre-ERT2 (Addgene 13777) via restriction digest. shRNAs were taken from broad institute database (https://portals.broadinstitute.org/gpp/public/gene/search) and cloned into a retroviral backbone; viruses were produced as described before (bin Imtiaz et al., 2021). Later, H2B-CFP was removed from the constructs and replaced with CRE-ERT2 that was taken from CAG-ERT2-Cre-ERT2 (Addgene 13777).
 
-## Human ESCs and organoids
+### Human ESCs and organoids
 
 All hESC experiments were approved by the Kantonale Ethik-Kommission (KEK) of the canton of Zurich, Switzerland. H9 hESCs (WiCell) were maintained in feeder-free conditions and grown at 37°C with 5% CO2 (Thomson et al., 1998). hESCs were fed with mTeSR1 or mTeSR plus (Stem Cell Technologies) in the absence of antibiotics and grown on hESC qualified Matrigel (Corning) coated plates. ReLeSR (Stem Cell Technologies) was used for routine passaging as it promotes stemness. Passaged cells were kept in media containing 10 µM Y-27632 (Stem Cell Technologies) for 24 hr to promote survival. Some protocols required a single-cell suspension of hESCs (e.g., electroporations, aggrewells); to obtain a single-cell suspension, hESCs were instead passaged with Accutase (Sigma-Aldrich). For freezing down, hESCs were resuspended in CryoStore CS10 (Sigma-Aldrich) and stored below −170°C in liquid nitrogen. For electroporations, hESCs were maintained in media containing Y-27632 for at least 1 hr to improve cell survival. Approximately 2 million cells were used per electroporation. Chilled Nucleofector V (Lonza) was used as the electroporation medium, and the electroporation was performed on the AMAXA electroporation system using the programme A-23. For overexpression, 1 µg of DNA per plasmid was electroporated. For gene editing, 4 µg of DNA per plasmid was electroporated. Recombination of Cre-ERT2 expressing cells was induced in ERT2-Cre-ERT2 expressing cells by administration of 0.5 μM 4-hydroxytamoxifen (Sigma-Aldrich) for 24 hr. Neomycin resistant cells were selected with 100 µg/ml G418 sulfate (Gibco). Puromycin resistant cells were selected with 1 µg/ml puromycin (Gibco).
 
 The human forebrain organoid protocol was described before (Qian et al., 2016; Qian et al., 2018). We used a modified form of this protocol, and the adjustments are as follows.
 
-## Day 0, maintenance of hESC and embryoid body formation
+#### Day 0, maintenance of hESC and embryoid body formation
 
 hESCs were cultured in feeder free conditions. To produce EBs on day 0, a single-cell suspension was acquired with the use of Accutase. hESCs were incubated with 10 µM Y-27632 at least 1 hr prior to passaging to promote survival. The number of cells in the suspension was estimated with use of a cytometer and appropriate volume of suspension was added to AggreWell 800 (Stem Cell Technologies) that would result in 5000 cells per microwell being produced. AggreWells were pre-treated with Anti-adherence Rinsing Solution (Stem Cell Technologies) and AggreWell plates were centrifuged following the manufacturer’s guidelines.
 
-## Days 1–4, harvesting EBs and maintenance of EBs
+#### Days 1–4, harvesting EBs and maintenance of EBs
 
 On day 1, EBs are harvested following the AggreWell manufacturer’s guide by gently pipetting with either a 5- or 1-ml pipette with the tip cut-off. Prior to harvesting, medium was ran the full length of the pipette to reduce the adherence of EBs to the side of the pipette. EBs were transferred to a 6 well Ultra-Low Attachment Plate (Corning) or a 10-cm Ultra-Low Attachment Plate (Corning) and maintained in mTeSR-E5 (Stem Cell Technologies) with 2 µM Dorsomorphin (Sigma-Aldrich) and 2 µM A83-01 (Tocris) until day 4. Media was changed days 3 and 4.
 
-## Days 5–14, adaption and maintenance in induction media
+#### Days 5–14, adaption and maintenance in induction media
 
 Days 5–14 follow the exact same steps as described in Qian et al., 2018, but with a different media. The induction media used was mTeSR-E5 with 1 µM CHIR99021 (Stem Cell Technologies) and 1 µM SB-431542 (Stem Cell Technologies).
 
 To ensure batch-to-batch variability was kept to a minimum, we started organoid production with the same number of cells each time and an organoid batch production was only started if the hESC culture looked healthy with very low levels of differentiation. In addition, only the H9 hESC line (purchased from WiCell) was used to remove genetic differences introducing batch effects. Furthermore, organoid batchs that did not show the signs of typical forebrain organoid development were not used for experimentation.
 
-## Imaging and immunostaining
+#### Imaging and immunostaining
 
 hESCs were fixed by either incubation with prewarmed 4% paraformaldehyde (Sigma-Aldrich) for 15 min at room temperature or with chilled methanol (Sigma-Aldrich) for 20 min at 4°C. All monolayer immunostainings used 3% Donkey Serum (Millipore) as a blocking agent and 0.25% Triton-X (Sigma-Aldrich) as a permeabilisation agent. Primary antibodies were incubated with the samples at 4°C overnight and secondary antibodies were incubated for 1 hr and 30 min at room temperature. Zeiss LSM 800 confocal microscope was used to obtain all images. For live cell imaging, hESCs were maintained at 37°C and with 5% CO2 facilitated by the incubator chamber and heated stage that is fitted to the microscope. hESCs were imaged in Matrigel coated Lab Tek II chambered cover glasses (Thermo Fisher Scientific). For imaging following electroporation, cells were plated on the Lab Tek cover glasses. Imaging started after at least 6 hr. For imaging involving ERT2-Cre-ERT2 expressing cells, hESCs were first plated on Lab Tek chambered coverglasses (Thermo Fisher Scientific) and allowed to settle for at least 24 hr. Recombination was induced in situ with the addition of 0.5 μM 4-hydroxytamoxifen (Sigma-Aldrich) into the media. hESCs were imaged every hour. Throughout imaging hESCs were maintained in mTeSR plus containing 10 µM Y-27632 and penicillin–streptomycin–amphotericin B (Anti-Anti, Thermo Fisher Scientific). Additionally, media was supplemented with 1:1000 SiR-DNA (Spirochrome), in the absence of Verapamil, to visualise the nucleus and facilitate easier tracking of cells. Media was changed every 24 hr.
 
@@ -108,7 +132,7 @@ Organoids were electroporated as described (Denoth-Lippuner et al., 2021; Denoth
 
 Recombination was induced in ERT2-Cre-ERT2 expressing organoids by administration of 10 μM 4-hydroxytamoxifen (Sigma-Aldrich) for 48 hr. Organoids were fixed with prewarmed 4% paraformaldehyde (Sigma-Aldrich) for 15 min at room temperature. Fixed organoids were suspended in 30% sucrose overnight at 4°C; organoids were maintained in 30% sucrose until sectioned. For sectioning, organoids were embedded in OCT compound (Tissue-Tek) and frozen solid. 20–40 µm sections were sectioned using a cryostat and adhered to cover slides. Sections were kept at −20°C until stained. For tissues containing fluorophores, proper measures were undertaken to prevent unnecessary and extensive exposure to light during the whole process. All organoid immunostainings used 10% Donkey Serum (Millipore) as a blocking agent and 0.5% Triton-X (Sigma-Aldrich) as a permeabilisation agent. Primary antibodies were incubated with the samples at 4°C for 1–3 nights and secondary antibodies were incubated for 1 hr and 30 min at room temperature. The signal of H2B-CFP electroporated organoids was amplified using an anti-GFP antibody.
 
-## Image analysis
+#### Image analysis
 
 All images were analysed using ImageJ/Fiji and the data were processed and analysed in Excel or R. For organoid analysis, images with ventricular recombined centrosomes were selected. Cortical units were defined as a densely packed, spherical layer of SOX2+ cells, with their nuclei orientated inwards, surrounded by non-NSPC cells. To limit the effect of batch-to-batch variability, only well-formed cortical units were analysed. To define the size of the cortical unit, the thickness of the ventricle was measured using the SOX2 staining as the outer boundary. A circle with a radius of a maximum of three times the ventricle thickness or to the edge of the tissue (which ever was less), centred on the ventricle midpoint was cropped out. The centre of the ventricle was cropped out leaving a ring of three to five centrosomes, care was taken not to crop out recombined centrosomes that were part of the same cluster. A line was drawn between the two ends of the cluster. A perpendicular line was draw in the middle of the line extending radially out of the VZ to the edge of the circle. Two more lines were drawn from the ends of the first line at an angle of 45° extending to the edge of the circle. The area within these three lines and the arc of the edge of the circle was cropped out and analysed.
 
@@ -116,16 +140,93 @@ Recombined centrosomes were manually assigned one of three colours, orange, yell
 
 Centrosomes were analysed in two groups: centrosomes from the ventricle (vent) and centrosomes outside the ventricle (nonvent). Vent centrosomes were defined as the centrosomes visibly localised on the ventricular wall, identifiable by the high density of centrosomes in a circular configuration. Nonvent centrosomes were centrosomes localised outside of the ventricular wall. Centrosomes were drawn around and the mean signal intensity was recorded for tdTomato and NeonGreen. The ratio of NeonGreen to total signal was calculated by dividing the NeonGreen by the sum of tdTomato and NeonGreen signal. Means of this ratio were calculate for each region of each image. This ratio was used for the digital allocation of orange, yellow, and green, with the centrosomes in the top third for highest ratio being assigned green, the second third yellow and the lowest ratio centrosomes being assigned orange.
 
-## Validation of Ninein knockdown
+#### Validation of Ninein knockdown
 
 HEK cells were transfected with constructs using Lipofectamine 2000 (Thermo Fisher Scientific) 2 days before they were fixed, stained, and imaged. Cells were either transfected with a plasmid expressing shRNA-targeting Ninein or scrambled shRNA. Cells were stained using antibodies against Ninein and Pericentrin and the ratio of their fluorescence intensity was measured in H2B-CFP-expressing cells. Alternatively, cells were additionally infected with a plasmid expressing GFP-Ninein (Chen et al., 2003) and stained for Pericentrin. Fluorescence intensity of GFP-Ninein and Pericentrin was measured in H2B-CFP-expressing cells and ratios were plotted.
 
-## Used antibodies:
+#### Used antibodies:
 
-## Statistical analysis
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Species</th>
+      <th>Manufacturer</th>
+      <th>Catalogue No./RRID</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PCNT</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>ab4448 RRID:AB_304461</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>Rabbit</td>
+      <td>Millipore</td>
+      <td>AB5603 RRID:AB_2286686</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>Mouse</td>
+      <td>R&amp;D</td>
+      <td>MAB2018 RRID:AB_358009</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>CTIP2</td>
+      <td>Rat</td>
+      <td>Abcam</td>
+      <td>ab18465 RRID:AB_2064130</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>CEP164</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>ab221447/n.a.</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>tdTomato</td>
+      <td>Goat</td>
+      <td>Origene</td>
+      <td>AB8181-200/n.a.</td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Ninein</td>
+      <td>Mouse</td>
+      <td>Santa Cruz</td>
+      <td>sc-376420 RRID:AB_11151570</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>Chicken</td>
+      <td>Aves</td>
+      <td>GFP.1020 RRID:AB_10000240</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>TBR1</td>
+      <td>Rabbit</td>
+      <td>Abcam</td>
+      <td>ab31940 RRID:AB_2200219</td>
+      <td>1:250</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 Statistical significance of all data presented here was tested by using unpaired, Student’s t-test. Significance is represented with asterisks and ns, which correspond to the following p values: ns = p > 0.05, *p < 0.05, **p < 0.01, ***p < 0.001. The number of analysed data for the control and the test condition were kept the same. The number of analysed data represented in the figure legend as n, where n is equal to the number of control or test data points.
 
-## Materials availability
+### Materials availability
 
 All newly generated constructs and genetically modified hESCs are freely available after execution of appropriate materal transfer agreement. Requests should be directed to S.J. (jessberger@hifo.uzh.ch).

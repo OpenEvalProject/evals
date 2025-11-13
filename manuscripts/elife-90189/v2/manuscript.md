@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04a9tmd77 Division of Hematology and Medical Oncology, The Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States
-2. https://ror.org/01xvcf081 LFKRI, New York Blood Center New York United States
-3. https://ror.org/01z7r7q48 Department of Pediatrics, Division of Hematology, The Children’s Hospital of Philadelphia Philadelphia United States
-4. https://ror.org/00b30xv10 Cell and Molecular Biology affinity group (CAMB), University of Pennsylvania Philadelphia United States
-5. https://ror.org/01z7r7q48 Raymond G. Perelman Center for Cellular and Molecular Therapeutics at the Children’s Hospital of Philadelphia Philadelphia United States
-6. https://ror.org/01z7r7q48 Penn Center for Musculoskeletal Disorders at the Children’s Hospital of Philadelphia Philadelphia United States
-7. https://ror.org/00b30xv10 Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-8. https://ror.org/00b30xv10 Institute for Regenerative Medicine at University of Pennsylvania Philadelphia United States
-9. https://ror.org/00b30xv10 RNA Institute at University of Pennsylvania Philadelphia United States
-10. https://ror.org/0153tk833 Department of Pathology, University of Virginia Charlottesville United States
+1. Division of Hematology and Medical Oncology, The Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+2. LFKRI, New York Blood Center New York United States ([ROR:01xvcf081](https://ror.org/01xvcf081))
+3. Department of Pediatrics, Division of Hematology, The Children’s Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+4. Cell and Molecular Biology affinity group (CAMB), University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Raymond G. Perelman Center for Cellular and Molecular Therapeutics at the Children’s Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+6. Penn Center for Musculoskeletal Disorders at the Children’s Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+7. Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+8. Institute for Regenerative Medicine at University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+9. RNA Institute at University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+10. Department of Pathology, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
 
 † Corresponding author
 
@@ -56,7 +56,7 @@ Similar to EPO, iron is also essential for erythropoiesis. Hemoglobin synthesis 
 
 ## Physiological regulation and dysregulation of iron metabolism
 
-## Systemic regulation of iron metabolism
+### Systemic regulation of iron metabolism
 
 Because of its low bioavailability, complex living organisms have developed sophisticated mechanisms to obtain, distribute, and sequester iron that have also enabled competition for iron with pathogens and prevention of iron excess. In a seminal discovery more than two decades ago, the peptide hormone hepcidin, secreted primarily by hepatocytes, has been shown to be the principal regulator of iron homeostasis (Krause et al., 2000; Park et al., 2001; Ganz, 2005), modulating dietary iron absorption, iron recycling by macrophages, and the release of iron from hepatic stores (Figure 2A). Hepcidin is a negative regulator of iron flows with high hepcidin concentration typically resulting in the blockade of iron absorption and sequestration of cellular iron. Hepcidin downregulates iron release into plasma by binding to and functionally downregulating ferroportin 1, the sole exporter of intracellular iron (Nemeth et al., 2004; Donovan et al., 2005; Figure 2B). Ferroportin is evolutionarily conserved and is found in microbes, invertebrates, plants, and animals (Taniguchi et al., 2015). In humans, ferroportin is found in duodenal enterocytes, macrophages, and hepatocytes, all cells involved in iron transport (Figure 3). In addition, erythroid progenitors and precursors in the bone marrow as well as circulating RBCs also express ferroportin (Zhang et al., 2018; Figure 3C), an interesting finding that remains incompletely understood.
 
@@ -74,7 +74,7 @@ Ferroportin expression on the basolateral side of duodenal enterocytes, on splen
 
 In some pathological conditions, insufficiently increased hepcidin results in excessive iron released into the circulation, overwhelming transferrin’s iron binding capacity, resulting in the generation of non-transferrin bound iron (NTBI) (Esposito et al., 2003). NTBI, in particular its redox-active form, labile plasma iron (LPI), is thought to be the pathogenetic driver of clinically significant iron overload in diseases of primary and secondary hemochromatosis (Cabantchik et al., 2005). NTBI/LPI is unavailable for erythropoiesis, is taken up by non-hematopoietic cells in a dysregulated manner, causes parenchymal iron deposition (Jenkitkasemwong et al., 2015), and can result in free radical damage to cells and organs, leading to the morbidity and mortality of iron overload. More detailed pathophysiology of iron overload is beyond the scope of the current review; an excellent review of hepcidin in disorders of iron regulation was recently published (Nemeth and Ganz, 2023).
 
-## Cellular regulation of iron metabolism
+### Cellular regulation of iron metabolism
 
 As mentioned, iron is required for homeostatic function in all cells, essential for the production of heme and iron-sulfur clusters, themselves components of proteins/enzymes involved in respiration, nucleic acid replication and repair, metabolic reactions, and host defense. Specifically, iron is necessary for enzymatic reactions in the electron transport chain and the tricarboxylic acid cycle, and iron participates in reactions catalyzed by microsomal cytochromes involved in the detoxification of drugs and other foreign substances. Despite broad functioning in physiological processes, the majority of iron functions as an oxygen carrier in the heme groups of hemoglobin and myoglobin molecules. Because iron can be highly toxic to cells, cellular iron trafficking requires deliberate coordination to enable its safe utilization. Here, we focus on specific cell types that are central to systemic iron metabolism.
 
@@ -92,11 +92,11 @@ Interestingly, hepatocyte TFR1 also influences systemic iron homeostasis by inte
 
 Hemoglobin synthesis in erythroblasts requires large amount of iron, providing a strong rationale for erythropoiesis-mediated regulation of iron availability. For instance, stimulated erythropoiesis (e.g. in response to bleeding, repeated or large volume phlebotomy, hypoxia, or administration of exogenous EPO) leads to increased iron absorption, and the last few decades have provided a more robust mechanistic understanding of how iron availability is regulated by erythropoiesis. For the purposes of this article, we will discuss several aspects of this crosstalk, including how iron is taken up and chaperoned in erythroblasts, how erythropoiesis modulates iron metabolism directly and indirectly, and how iron metabolism itself impacts erythropoiesis.
 
-## Iron uptake and trafficking in erythroblasts
+### Iron uptake and trafficking in erythroblasts
 
 Hemoglobin, both in circulation and within the bone marrow, contains more than two-thirds of the body’s iron, and the majority of circulating iron is destined for uptake by erythroblasts (Finch et al., 1970). Iron uptake for erythropoiesis occurs via transferrin binding to TFR1 (Figure 3C). Transferrin bound to TFR1 is internalized as a complex by receptor-mediated endocytosis (Klausner et al., 1983a; Iacopetta et al., 1983), which is coordinated with endosomal acidification, resulting in the release of iron from transferrin (Klausner et al., 1983b; Dautry-Varsat et al., 1983; van Renswoude et al., 1982). Several hypotheses have been tested to ascertain how iron is transported within cells, the most compelling of which involves the cytosolic chaperone Poly(rC)-binding protein 1 (PCBP1). PCBP1 delivers iron to ferritin (Leidgens et al., 2013; Ryu et al., 2017; Figure 3C). Evidence from Pcbp1 knockout mice, with microcytosis and anemia, demonstrate that iron delivery to ferritin is required for normal erythropoiesis (Ryu et al., 2017). In addition, PCBP2 is also required for ferritin complex formation (Leidgens et al., 2013). Furthermore, an autophagic process to extract iron from the ferritin core is mediated by nuclear receptor coactivator 4 (NCOA4), a selective cargo receptor for autophagic ferritin turn-over, critical for regulation of intracellular iron availability (Mancias et al., 2014; Dowdle et al., 2014; Figure 3C). In iron-replete states, PCBP1 and PCBP2 expression is enhanced while NCOA4 is targeted to the proteasome for degradation (Mancias et al., 2015). This process, termed ferritinophagy, is believed to provide iron to the mitochondria, the main organelle involved in heme and hemoglobin synthesis during erythropoiesis. Alternatively, or in concert, the ‘kiss-and-run’ model may support the of transfer iron without chaperones when transferrin iron containing endosomes and mitochondria come into contact with one another (Hamdi et al., 2016). Finally, transferrin-bound iron internalized by TFR2 may undergo trafficking to lysosomes and subsequent transfer to mitochondria via Mucolipin 1 and Mitofusin 2 (Khalil et al., 2017; Figure 3C). Taken together, despite important recently uncovered mechanistic findings, the nuances of how iron trafficking in erythroblasts is dysregulated and contributes to disordered erythropoiesis are incompletely understood.
 
-## Erythropoiesis-mediated regulation of iron metabolism
+### Erythropoiesis-mediated regulation of iron metabolism
 
 During the last century, investigators have proposed that an erythroid regulator strongly influences iron homeostasis. The discovery of hepcidin as an iron-regulatory hormone heralded a new era in exploring the mechanistic foundation of an erythroid regulator of iron homeostasis. For instance, stimulation of erythropoiesis—by bleeding, anemia, hypoxia, or injection of exogenous EPO—strongly suppresses hepcidin production in mice and humans, and iron absorption increases, often dramatically, during such stress erythropoiesis to accommodate increased iron demand. Initial exploration of EPO itself as a hepcidin suppressor revealed a lack of direct effect in in vitro studies in isolated liver cells (Gammella et al., 2015), implicating an intermediary EPO-responsive suppressor of hepcidin.
 
@@ -106,7 +106,7 @@ Such an erythroid factor secreted by erythroid precursors, functioning as a horm
 
 Finally and importantly, the discovery of erythroferrone (ERFE) provided a mechanism for the physiological regulation of hepcidin in the absence of chronic disease (Kautz et al., 2014). ERFE is expressed in bone marrow erythroblasts (Figure 4A). As Erfe-/- mice exhibit only mild anemia during the postnatal period (Kautz et al., 2014), ERFE expression increases post-phlebotomy and in response to exogenous EPO, supporting a hypothesis that its main function is to facilitate iron mobilization during recovery from transient anemia. Consistently, hepcidin suppression is dampened in Erfe+/- and abrogated in Erfe-/- mice (Kautz et al., 2014) after phlebotomy. An evaluation of the mechanism of ERFE’s regulation of hepcidin demonstrates that ERFE sequesters BMP2 and BMP6, resulting in decreased BMP:BMPR binding, decreased BMP:SMAD signaling, and decreased hepcidin expression (Arezes et al., 2018; Wang et al., 2020; Figure 4A and B), increasing iron absorption and release from intracellular iron stores to meet the iron requirements of temporarily expanded erythropoiesis during recovery from transient anemia. However, additional regulators may also exist in light of some persistent hepcidin suppression in phlebotomized ERFE knockout mice and ongoing iron accumulation in β-thalassemic ERFE knockout mice (Kautz et al., 2014; Kautz et al., 2015).
 
-## Iron-mediated regulation of erythropoiesis
+### Iron-mediated regulation of erythropoiesis
 
 Anemia as a result of systemic iron deficiency is the most common cause of anemia worldwide. There is great consensus that iron deficiency inhibits the production of heme and hemoglobin but is erroneously synonymous with the resultant anemia. However, decreased heme and hemoglobin production in iron-deficient conditions contributes to decreased mean corpuscular volume (MCV) and hemoglobin (MCH). Conversely, disease states of excess iron are often associated with higher MCV and MCH as a functional utilization of iron within a non-toxic compartment (McLaren et al., 2007). Anemia, on the other hand, occurs when iron availability decreases below a threshold, impeding the maturation of erythroblasts and thus decreasing production of RBCs. Recent data provides mechanistic evidence of what is termed the ‘iron restriction response,’ demonstrating regulation of erythroid precursor differentiation during iron deficiency (Bullock et al., 2010; Khalil et al., 2018). The proposed mechanisms involve mitochondrial aconitase enzymes, TFR2, and scribble-mediated EPO receptor regulation, as well as effects on the erythroblast cell cycle (Talbot et al., 2011; Khalil et al., 2018) that converge on the decreased EPO-responsiveness of erythroblasts.
 
@@ -118,7 +118,7 @@ Recent studies have also implicated loss of ferritin-induced stabilization of th
 
 Although there is a broad range of anemia-causing mechanisms, we will focus in this review on causes related to iron metabolism. In addition to iron deficiency anemia, these foremost include anemia of chronic inflammation (ACI). In addition, iron refractory iron deficiency anemia (IRIDA) is an interesting albeit rare form of IDA discussed here. In a subsequent section below, we will also discuss iron metabolism in the context of ineffective erythropoiesis in iron loading anemias, namely β-thalassemias and MDS.
 
-## Anemia of chronic inflammation
+### Anemia of chronic inflammation
 
 ACI is also termed anemia of chronic disease; while iron deficiency results in sometimes severe (i.e. hemoglobin 5–7 g/dL) microcytic, hypochromic anemia, ACI is typically a milder normocytic normochromic hypoproliferative anemia (i.e. hemoglobin 8–10 g/dL) and is considered the second most frequent anemia in the world, after IDA (Weiss and Goodnough, 2005). Both present with decreased circulating serum iron concentration and transferrin saturation, but while IDA is characterized by anemia with depleted iron stores (i.e. serum ferritin below the lower limit of normal), iron stores are ample in ACI. In the setting of inflammation, differentiating ACI from iron deficiency anemia may be challenging, and iron deficiency anemia may co-exist with ACI (Bressman et al., 2021). ACI is also the most common anemia in hospitalized patients, found in conditions associated with an activated immune response, including chronic infections, autoimmune and inflammatory illnesses and malignancy. The underlying cause of anemia in these diseases is multifactorial, resulting from the effects of inflammatory cytokines, particularly interleukin-1 (IL-1), IL-6, IL-10, tumor necrosis factor-α (TNF-α), interferon-γ (IFN-ɣ), IFN-α, and IFN-β, all or some of which are increased in most inflammatory processes (Raj, 2009). Multiple lines of evidence suggest that elevated inflammatory cytokines lead to increased iron sequestration and resultant decreases in iron availability for erythropoiesis and hemoglobin synthesis, directly and indirectly inhibiting erythroid progenitor differentiation, and resulting in a decreased EPO-responsiveness to anemia (Figure 5). The mechanism resulting in anemia in ACI is similar to that of IDA when iron stores are depleted (due to poor iron absorption alone or insufficiently enhanced in the setting of bleeding) as both conditions lead to decreased iron availability for erythropoiesis. The decreased iron availability may also act in a synergistic manner with the inflammatory cytokines in ACI, potentiating their capacity for direct suppression of erythroblasts (Richardson et al., 2013).
 
@@ -145,6 +145,100 @@ Ineffective erythropoiesis can be defined as the diminished production of enucle
 Expansion in the number of erythroid precursors leads to increased ERFE production and consequent hepcidin suppression (Kautz et al., 2014). Hypoxia also plays a role by increasing expression of genes responsible for iron absorption in the duodenum (Anderson et al., 2013). Although in severely affected patients organ iron overload develops because of frequent RBC transfusions, in individuals with β-thalassemia who are not regularly transfused, the mechanisms responsible for increased iron absorption (i.e. insufficiently elevated hepcidin expression), along with chronic hemolysis, lead to progressive tissue iron deposition and toxicity, requiring even in these cases the use of iron chelators to prevent significant morbidity and mortality (Kattamis et al., 2022; Musallam et al., 2021).
 
 Novel drugs and genetic approaches are now being translated to improve the quality of life in β-thalassemia (and other) patients or even cure them. Although a full description of these therapeutics is beyond the scope of the current review, these drugs can be broadly classified based on their mechanism of action as shown in Table 1. Among these, only gene therapy provides a curative approach. However, the risks remain high and alternative therapeutic options are welcome for those patients who are ineligible for cure. Drugs that act on iron metabolism (e.g. hepcidin-mimetics and transferrin) could also improve RBC quality and survival by limiting erythroid iron intake and hemichromes formation, as shown in mouse models of β-thalassemia (Li et al., 2010; Guo et al., 2013). However, even these drugs may fail to do so in β-thalassemia patients, their use could reduce iron absorption in combination with iron chelators if the patient is already iron overloaded. In addition, they could prevent iron from being accumulated in combination with drugs that improve RBC quality and production (e.g. luspatercept, mitapivat, and TFR2 inhibitors).
+
+**Table 1.**
+ Novel agents in development for β-thalassemia (and other) patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mechanism of action</th>
+      <th>Agent name</th>
+      <th>Producer</th>
+      <th>Stage of development</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Improve RBC quality and production</td>
+      <td>Luspatercept</td>
+      <td>BMS</td>
+      <td>FDA approved for TD β-thalassemia and MDS-RS</td>
+      <td>Cappellini et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Mitapivat</td>
+      <td>Agios</td>
+      <td>FDA approved for PKD; in phase II clinical trial for NTD α- and β-thalassemia patients</td>
+      <td>Kuo et al., 2022</td>
+    </tr>
+    <tr>
+      <td>TFR2 inhibitors</td>
+      <td></td>
+      <td>Preclinical</td>
+      <td>Di Modica et al., 2022</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gene therapy to normalize the underlying genetic defect</td>
+      <td>Gene addition</td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td rowspan="2">Eckrich and Frangoul, 2023; Christakopoulos et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Gene editing</td>
+    </tr>
+    <tr>
+      <td>Suppress erythropoiesis and prevent or reverse splenomegaly</td>
+      <td>JAK2 inhibitors</td>
+      <td>Novartis</td>
+      <td>Phase IIa (failed)</td>
+      <td>Taher et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Alter iron import</td>
+      <td>Transferrin</td>
+      <td></td>
+      <td>Preclinical</td>
+      <td>Boshuizen et al., 2017</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Limit iron absorption</td>
+      <td>Hepcidin agonist rusfertide</td>
+      <td>Protagonist</td>
+      <td>Currently in phase II and III clinical trials for PV patients</td>
+      <td>Handa et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Hepcidin inducer sapablursen</td>
+      <td>Ionis</td>
+      <td>Currently in phase II clinical trials for PV patients</td>
+      <td>Ganz et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Ferroportin inhibitor Vamifeport</td>
+      <td>Vifor</td>
+      <td>Currently in phase II clinical trials for SCD patients</td>
+      <td>Nyffenegger et al., 2022</td>
+    </tr>
+    <tr>
+      <td>SLN124</td>
+      <td>Silence</td>
+      <td>Currently in phase I clinical trial for β-thalassemia and PV patients</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERFE inhibitors</td>
+      <td></td>
+      <td>Preclinical</td>
+      <td>Arezes et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+_RBC, red blood cell; BMS, Bristol Myers Squibb; FDA, Food and Drug Administration; TD, transfusion dependent; MDS-RS, myelodysplastic syndrome with ringed sideroblasts; PKD, pyruvate kinase deficiency; NTD, non-transfusion dependent; TFR2, transferrin receptor 2; SCD, sickle cell disease; ERFE, erythroferrone._
 
 Beyond the inherited forms of iron-loading anemias, that is, β-thalassemia, MDS is an acquired form of ineffective erythropoiesis associated with iron overload. MDS is a heterogeneous group of bone marrow stem cell disorders; several subtypes of MDS are characterized by ineffective erythropoiesis, leading to blood cytopenias and increased incidence of transformation to acute myeloid leukemia (Haferlach, 2019). The majority of MDS patients have a long median survival (e.g. 10 y), with 30–50% requiring only regular RBC transfusions to alleviate anemia and its associated symptoms (Dayyani et al., 2010; Kröger, 2019). RBC transfusions, however, are the main cause of progressive iron overload and consequent end-organ damage in transfusion-dependent MDS patients (Oliva et al., 2010). However, the risk–benefit ratio of treating iron overload in MDS patients remains controversial. Furthermore, RBC transfusion-dependence and iron overload correlate strongly with decreased survival in MDS patients (Malcovati et al., 2005; Malcovati et al., 2006; Garcia-Manero et al., 2008; Malcovati et al., 2011). In vitro experiments demonstrate that excess iron inhibits erythroid lineage differentiation in both murine and human hematopoietic progenitors, exhibiting dysplastic changes with increased intracellular reactive oxygen species (ROS), decreased expression of anti-apoptotic genes, and DNA damage, triggering apoptosis, and worsening disease in MDS (Pan et al., 1999; Camaschella et al., 2007; Fibach and Rachmilewitz, 2012; Taoka et al., 2012; Hartmann et al., 2013).
 
@@ -182,27 +276,27 @@ To develop a comprehensive characterization of the EBI macrophages at the molecu
 
 To study erythropoiesis, it is important to identify and isolate erythroid lineage cells at distinct stages of differentiation. During the past decade, considerable progress has been made, and methods for analyzing and isolating murine and human erythroblasts at distinct developmental stages have been developed. Here, we summarize these methods.
 
-## Isolation of murine erythroid progenitors
+### Isolation of murine erythroid progenitors
 
 Traditionally, the erythroid progenitors BFU-E and CFU-E have been functionally defined by their ability to form erythroid colonies of distinct kinetics and morphology (Iscove and Sieber, 1975; Gregory and Eaves, 1977). It should be pointed out that the erythroid colonies contain terminally differentiated erythroid cells and not the BFU-E and CFU-E cells themselves. With the development of flow technology for analysis and sorting of cells using lineage-specific surface markers, a flow cytometry-based method was developed to isolate erythroid progenitors from mouse fetal liver (Flygare et al., 2011). Briefly, the fetal liver lineage+ cells were depleted by antibodies against murine Ter119, B220, CD3, Gr-1, CD41, Sca-1, CD34, Mac-1, and CD16/CD32. The resulting lineage- cells were stained with CD117 (c-Kit) and CD71. Within the Kit+ fraction, the level of CD71 expression was used to separate BFU-E (CD7110%low) and CFU-E (CD7120%high) with more than 90% purity (Flygare et al., 2011). A similar strategy can be used to isolate murine bone marrow erythroid progenitors, but unlike fetal liver BFU-E, the bone marrow BFU-E cells are Kit+CD71- (Zhang et al., 2021).
 
-## Isolation of human erythroid progenitors
+### Isolation of human erythroid progenitors
 
 To identify the surface markers for human BFU-E and CFU-E, we systematically examined the expression of surface markers CD34, IL-3R, CD36, CD71, CD45, and GPA during human early stage erythropoiesis in vitro. Based on the expression profiles of these surface markers and the related colony-forming ability, the surface marker profiles for human BFU-E and CFU-E are CD45+GPA-IL-3R-CD34+CD36-CD71low and CD45+GPA-IL-3R-CD34-CD36+CD71high, respectively (Li et al., 2014). Importantly, this method can be used to isolate primary BFU-E and CFU-E cells from human bone marrow, umbilical cord blood, and peripheral blood (Li et al., 2014). A recent study documented that early human erythroid progenitors can be further subdivided into four subpopulations as they lose CD34 staining and acquire CD105 during progression from BFU-E to immature CFU-E and sequentially mature CFU-Es (Yan et al., 2021).
 
-## Isolation and quantification of murine erythroblasts terminal differentiation
+### Isolation and quantification of murine erythroblasts terminal differentiation
 
 To identify surface markers for isolating murine erythroblasts, we examined the changes in RBC membrane proteins during murine terminal erythroid differentiation and found that the expression of CD44 dramatically decreased during erythroid differentiation, with more than a 30-fold decrease from Pro to Ortho erythroblasts. Use of CD44 in conjunction with erythroid lineage marker TER119 and forward scatter (cell size) enabled stage-specific purification of murine erythroblasts with more than 90% purity (Chen et al., 2009). Under physiological conditions, murine Pro undergo three rounds of mitosis to sequentially generate Baso, Poly, and Ortho erythroblasts. It is therefore expected that during normal terminal erythroid differentiation the ratio of Pro:Baso:Poly:Ortho should follow a 1:2:4:8 pattern. We further improved this method, enabling quantification of this process in vivo, and identified stage-specific alterations during terminal erythroid differentiation of β-thalassemia mouse bone marrow (Liu et al., 2013).
 
-## Isolation and quantification of human erythroblasts during terminal differentiation
+### Isolation and quantification of human erythroblasts during terminal differentiation
 
 To identify surface markers for staging human erythroblasts, we examined changes in surface markers during human terminal erythroid differentiation in vitro. Notably, different from mouse, CD44 demonstrates no significant changes during terminal erythropoiesis. Interestingly, while cell surface band 3 progressively increases, α4 integrin decreases. The use of band 3 and α4 integrin in conjunction with the human erythroid lineage marker glycophorin A enabled separation of highly purified populations of erythroblasts at distinct stages in culture, designated as Pro (α4 integrinhiband3neg), early Baso (α4 integrinhiband3low), late Baso (α4 integrinhiband 3med), Poly (α4 integrinmedband3med), and Ortho (α4 integrinlowband 3hi) erythroblasts (Hu et al., 2013). Importantly, the surface markers identified using the in vitro erythroid culture system can be used to separate erythroblasts at distinct developmental stages from primary human bone marrow cells. Furthermore, the ratio of erythroblasts at successive stage in human bone marrow followed the predicted 1:2:4:8:16 pattern. Analyses of bone marrow from patients with MDS and sickle cell disease revealed the expected alteration in terminal erythroid differentiation profiles (Hu et al., 2013; Ali et al., 2018; El Hoss et al., 2021). These methods offer novel strategies for quantitative assessment of erythroid differentiation in mouse disease models and human erythroid disorders.
 
-## Assessment of enucleation by flow cytometry
+### Assessment of enucleation by flow cytometry
 
 Enucleation is the process during which the condensed nucleus is extruded from the erythroblast to yield the reticulocyte and the ‘pyrenocyte.’ Discrimination of nucleated erythroblasts, reticulocytes, and extruded nuclei by flow cytometry is based on DNA staining, surface expression of erythrocyte-specific markers, or forward scatter. The enucleation of murine erythroblasts is assessed by surface expression of the murine erythrocyte marker TER119 and DNA staining (Ji et al., 2008; Zhang et al., 2003). Three discrete populations that represent nucleated erythroblasts, reticulocytes, and extruded nuclei are defined as HoechstmedTER119high, HoechstlowTER119high, and HoechsthighTER119med, respectively (Ji et al., 2008; Zhang et al., 2003). Another nuclei acid staining dye, SYTO16, is used for the assessment of human enucleation in combination with forward scatter. For human cells, the three populations that represent nucleated erythroblasts (high forward scatter SYTO16+), reticulocyte (high forward scatter SYTO16-), and extruded nuclei (low forward scatter SYTO16+) are thus identified (Yoshida et al., 2005).
 
-## Models for iron-restricted anemias
+### Models for iron-restricted anemias
 
 Cell culture and in vivo techniques have been developed for analysis of the effects of iron restriction on erythropoiesis. In in vitro cell culture, human or murine hematopoietic stem and progenitors are subjected to a two-stage system using defined, serum-free conditions. Progenitors successfully studied have included human CD34+ peripheral blood-mobilized progenitors and murine Lin-Kit+ splenic stress progenitors (Bullock et al., 2010; Khalil et al., 2018). In the initial phase of culture, progenitors undergo expansion for ~2 d in the presence of early-acting cytokines, SCF, FLT3-ligand, TPO, and IL-3. The cells are then shifted into erythroid medium containing SCF and EPO. By adding different proportions of apo- and holo-transferrin, the transferrin saturation (%TSAT) can be adjusted to create iron-replete or iron-restricted conditions. Initial studies with human progenitors identified a TSAT level of 15% as showing a selective inhibition of erythropoiesis while not affecting granulopoiesis or megakaryopoiesis (Bullock et al., 2010). In subsequent studies with human stem and progenitor cultures, either TNFα or IFNγ when combined with a TSAT of 15% (instead of 100%) resulted in a synergistic suppression of erythropoiesis, suggesting a means for modeling ACI in vitro (Richardson et al., 2013). The most straightforward in vivo model for iron-restricted anemia consists of placing mice on low iron diet using customized mouse chow (Envigo Teklad 2.5–4 ppm iron). Important considerations in this model are to use male weanlings, enhance susceptibility to the development of iron deficiency, and use control customized iron-replete chow (containing ~35–50 ppm) that is matched in composition to the low iron chow. Robust in vivo models for iron-restricted anemia in the setting of chronic inflammation have included rat adjuvant arthritis, caused by injection of the streptococcal cell wall peptidoglycan-polysaccharide and murine chronic inflammation induced by weekly injections of low dose killed Brucella abortus combined with customized iron-replete chow (Envigo Teklad 35–50 ppm) (Richardson et al., 2013; Guo et al., 2019; Goldfarb et al., 2021). Evidence supporting a role for iron restriction in these rodent ACI models consisted of the amelioration of the anemia with isocitrate injections (Richardson et al., 2013; Goldfarb et al., 2021). Finally, as discussed in respective section above, several mouse models that recapitulate diseases such as β-thalassemia, MDS, and PV are commercially available.
 

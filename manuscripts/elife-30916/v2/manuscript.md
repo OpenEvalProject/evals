@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.30916.001 Manipulation of the gut microbiota holds great promise for the treatment of diseases. However, a major challenge is the identification of therapeutically potent microbial consortia that colonize the host effectively while maximizing immunologic outcome. Here, we propose a novel workflow to select optimal immune-inducing consortia from microbiome compositicon and immune effectors measurements. Using published and newly generated microbial and regulatory T-cell (T reg ) data from germ-free mice, we estimate the contributions of twelve Clostridia strains with known immune-modulating effect to T reg induction. Combining this with a longitudinal data-constrained ecological model, we predict the ability of every attainable and ecologically stable subconsortium in promoting T reg activation and rank them by the T reg Induction Score (TrIS). Experimental validation of selected consortia indicates a strong and statistically significant correlation between predicted TrIS and measured T reg . We argue that computational indexes, such as the TrIS, are valuable tools for the systematic selection of immune-modulating bacteriotherapeutics.
+Manipulation of the gut microbiota holds great promise for the treatment of diseases. However, a major challenge is the identification of therapeutically potent microbial consortia that colonize the host effectively while maximizing immunologic outcome. Here, we propose a novel workflow to select optimal immune-inducing consortia from microbiome compositicon and immune effectors measurements. Using published and newly generated microbial and regulatory T-cell (Treg) data from germ-free mice, we estimate the contributions of twelve Clostridia strains with known immune-modulating effect to Treg induction. Combining this with a longitudinal data-constrained ecological model, we predict the ability of every attainable and ecologically stable subconsortium in promoting Treg activation and rank them by the Treg Induction Score (TrIS). Experimental validation of selected consortia indicates a strong and statistically significant correlation between predicted TrIS and measured Treg. We argue that computational indexes, such as the TrIS, are valuable tools for the systematic selection of immune-modulating bacteriotherapeutics.
 
 ## Introduction
 
@@ -50,35 +50,306 @@ In previous work, some of us identified a set of 17 potent Treg-inducing Clo
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig2-v2.jpg)
 
-**Figure 2.:** +FOXP3+Treg induction parameters.(A) To infer the strain-resolved CD4+FOXP3+ Treg induction parameters CD4+FOXP3+ Treg abundance measurements and corresponding microbiome colonization data are used. CD4+FOXP3+ Treg data of single strains originates from previously published measurements from Atarashi et al. (2013). Because in Atarashi et al. (2013) microbial mono-colonization levels were not measured, a previously published predictive model (Bucci et al., 2016) was used to simulate these experiments. In addition, newly generated CD4+FOXP3+ Treg and colonization mouse stool data from three 11-strain combinations was included into the analysis (see also Figure 3). The 11-strain combinations were chosen according to results of the ‘keystoneness’ analysis previously described in Bucci et al. (2016). The microbiome compositions of these three 11-strain combinations were estimated by strain-specific qPCR. (B) The resulting CD4+FOXP3+ Treg induction parameters quantify the contribution of each individual strain to Treg induction. (Coefficients are scaled by the microbial mono-colonization concentrations for display reasons.)10.7554/eLife.30916.005Figure 2—source data 1.+FOXP3+ proportions and the derived induction parameters.
+**Figure 2.:** (A) To infer the strain-resolved CD4+FOXP3+ Treg induction parameters CD4+FOXP3+ Treg abundance measurements and corresponding microbiome colonization data are used. CD4+FOXP3+ Treg data of single strains originates from previously published measurements from Atarashi et al. (2013). Because in Atarashi et al. (2013) microbial mono-colonization levels were not measured, a previously published predictive model (Bucci et al., 2016) was used to simulate these experiments. In addition, newly generated CD4+FOXP3+ Treg and colonization mouse stool data from three 11-strain combinations was included into the analysis (see also Figure 3). The 11-strain combinations were chosen according to results of the ‘keystoneness’ analysis previously described in Bucci et al. (2016). The microbiome compositions of these three 11-strain combinations were estimated by strain-specific qPCR. (B) The resulting CD4+FOXP3+ Treg induction parameters quantify the contribution of each individual strain to Treg induction. (Coefficients are scaled by the microbial mono-colonization concentrations for display reasons.)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig3-v2.jpg)
 
 **Figure 3.:** (A) The model-predicted dynamics of three 11-strain combinations from the 13 Clostridia strains described in Bucci et al. (2016) (areas) are compared to measured data from germ-free mice (stacked bars) and each panel corresponds to an individual mouse (Figure 2A). Predictions were obtained by numerically integrating the corresponding generalized Lotka–Volterra equations with parameters from Bucci et al. (2016) using only each mouse’s initial microbial composition. In timelines/mouse 1–5, Strain 15 is absent referring to 11-strain set I (five biological replicates); in timelines 6–9, Strain 4 is absent (11-strain set II; four biological replicates), and in timelines 10–14, Strain 29 is absent (11-strain set III; five biological replicates). Data were obtained by qPCR of genes specific to each strain. Densities are computed as averages of three technical replicates. The number of mice used in each condition was chosen consistently with previous experimental work (Atarashi et al., 2013; Bucci et al., 2016) and combined with extensive in silico testing of the inference error as a function of sampling frequency and noise levels (Bucci et al., 2016). (B) Spearman’s rank correlation coefficient between observed and predicted data was computed at different time points. All displayed coefficients have a p-value of less than 10−16.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-v2.jpg)
+
+**Figure 4.:** (A) Predicted Treg Induction Score (TrIS) in germ-free mice as a function of probiotic consortium size. Each data point represents one of the 2N−1 possible non-trivial consortia of size N. The five highest and lowest TrIS consortia of size seven are highlighted by violet and cyan filled dots, respectively, as well as, the 4-strain consortia used for experimental validation in subpanel E. (B) Distribution of the TrIS plotted against the total population density of each model-predicted consortium. This analysis shows a strong correlation (Spearman’s Rank Correlation with coefficient 0.88 and p<0.05) between TrIS and total microbial density. The color of each dot represents the abundance of Strain 27, which is predicted to strongly colonize in high-TrIS subsets. (C) Heatmap of consortium membership of the five highest and lowest TrIS-consortia of size seven and their predicted Treg induction and estimated butyrate production using data from Atarashi et al. (2013). (D) Estimation of potential SCFA output based on single-strain in vivo metabolic profiling from Atarashi et al. (2013). The five highest TrIS consortia of size seven (from 4C) are predicted to have a significantly higher SCFA output relative to the five lowest ones. (E) Five 4-strain consortia were used for experimental validation: the two highest-ranked consortia (H1 and H2, respectively), the lowest-ranked consortium (L) and two intermediates (M1, M2). M1 and M2 were included because of interest in other disease areas. The experimentally introduced strains are listed next to each bar/consortium. Strains with numbers in black were detected by 16S rRNA sequencing in mouse stool samples, strains with numbers in gray were introduced but failed to colonize. A Pearson’s correlation of 0.97 between the predicted TrIS and the average of each consortium’s measured CD4+FOXP3+ Treg percentage proves the ability of the TrIS-based selection to correctly recover the experimentally observed Treg induction. (Pearson’s correlation of all points has a value of 0.54.) Importantly, the H2 consortium displays an average increase in immune activity of 107% relative to the average germ-free mouse control. Eight biological replicates were used for GF, H1 and H2, five biological replicates were used for M1, M2 and three biological replicates were used for L. Replication and design of the validation experiment for Treg induction assessment is consistent with work from us and others (Atarashi et al., 2013; Narushima et al., 2014).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** In contrast to Figure 4B, which highlights only the abundance of Strain 27 in each consortium, the predicted total population density of the microbial consortia is compared to the TrIS while the color in each subpanel represents the corresponding strain’s abundance.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30916/elife-30916-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Metabolic profiling results of fecal content of selected consortia with respect to acetic acid. (B) Comparison of predicted mean germ-free normalized acetate concentrations based on single-strain measurements in caecal content from (Atarashi et al., 2013) with the observed germ-free mean normalized acetic acid levels in mouse stool from (A).
+
 We envision that our framework, while in this study tailored to finding combinations ameliorating auto-inflammatory conditions, may also have direct relevance to other immune-system enhancing applications such as the optimal delivery of probiotic-based cancer immunotherapies (Garrett, 2015).
 
 ## Results
 
-## Generation of multimodal microbiome–Treg data set
+### Generation of multimodal microbiome–Treg data set
 
 The goal of this study is to develop a mathematical modeling-based framework to rapidly and systematically select microbial consortia that maximize a desired immune outcome when introduced in a specific host microbial background. To achieve this, we combine (i) a microbiome ecological model that accurately describes the dynamics of these bacteria in the host with (ii) a microbiome–Treg mathematical model that characterizes the contribution of every strain to the immune phenotype of interest given corresponding microbiome colonization data (Figure 1). For (i), we gathered newly produced quantitative polymerase chain reaction (qPCR) colonization data from gnotobiotic mice and combined it with a previously published microbiome ecological model of the dynamics of 12 Treg-inducing Clostridia strains that are part of an original consortium of 17 Treg-inducing strains discovered by some of us (Atarashi et al., 2013) (see also Table 1 for a breakdown of strains used in each study). In contrast to the original study of (Bucci et al., 2016), we included only 12 of the 13 strains used there because, based on the modeling and analysis of Bucci et al. (2016), Strain 6 from the 13-strain set was predicted to not stably colonize in the presence of the other 12 strains. The published colonization data have been reported in our previous work (Bucci et al., 2016) and include time-series measurements of microbial abundances by qPCR under dietary perturbations. These are used to derive a predictive microbiome ecology model in gnotobiotic conditions based on an extension of the generalized Lotka–Volterra (gLV) equations (Hofbauer and Sigmund, 1998) as introduced in Stein et al. (2013). For the newly generated dataset, we gavaged 14 mice with one of three possible 11-strain subsets from the 12-strain subset of original 13 strains (Figure 2) and used the derived stool measurements to validate the ability of our mathematical model in predicting unseen conditions. The three 11-strain subsets were chosen based on our ‘keystoneness’ definition, a measure describing the marginal predicted quantitative effect of removing each strain from the full community (Bucci et al., 2016). Specifically, we included two 11-strain combinations each missing one of the two highest keystoneness-scoring strains (VE202 Strain 15 and VE202 Strain 4) and one 11-strain combination which lacks the lowest keystoneness scoring strain (VE202 Strain 29). In analogy to Bucci et al. (2016), each strain’s density was profiled over time by qPCR with strain-specific primers (see Materials and methods). To resolve the contribution of each of these to Treg induction for point (ii) we coupled the colonization data from fecal content with newly collected and published FACS measurements of the CD4+FOXP3+ Treg population in the lamina propria of these mice (Figure 2A). As it is crucial to capture each strain’s contribution alone and in combination with others, we also included CD4+FOXP3+ Treg measurements from our previously published mono-colonization experiments (Atarashi et al., 2013) (Figure 2A). Due to the fact that the single-strain mono-colonization concentrations were not measured in these experiments (Atarashi et al., 2013), we simulated them using the microbiome ecological model and parameters from (Bucci et al., 2016). This choice was supported by the model's capability in predicting unseen validation data (Figure 3A). Spearman’s rank-order correlation coefficient ranges from 0.92 to 0.98 (p-value<10−16) between observations and predictions depending on the time point (Figure 3B).
 
-## Derivation of the microbiome–Treg mathematical model
+**Table 1.**
+ List of strains used with respect to our previous published work.The original publication (Atarashi et al., 2013) reported on 17 immune-modulating bacteria. In Bucci et al. (2016), a dynamical ecological model for 13 of the original 17 strains was presented. These 13 strains were selected because they do not harbor antibiotic resistance genes. For our study, we used a 12-strain subset of these 13 strains based on ecological stability considerations. Colonization and CD4+FOXP3+Treg data for the three 11-strain sets, measured by qPCR and FACS, were used along with the simulated mono-colonization concentrations (Figure 2) and included into the microbiome–immune system model (Figure 1). The resulting parameters were employed to predict ecologically stable subsets with different Treg induction potentials. 4-strain subsets were selected to validate the predictions of the mathematical model (see main text and Figure 3). Strain 1: Clostridium saccharogumia/Clostridium ramosum JCM1298, Strain 3: Flavonibacter plautii/Pseudoflavonifractor capillosus, Strain 4: Clostridium hathewayi/Clostridium saccharolyticum WM1, Strain 6: Blautia coccoides/Lachnospiraceae bacterium, Strain 7: Clostridium bolteae, Strain 8: Clostridium sp. MLG055/Erysipelotrichaceae bacterium 2 44A, Strain 9: Clostridium indolis/Anaerostipes caccae DSM 14662, Strain 13: Anaerotruncus colihominis, Strain 14: Ruminococcus sp. ID8/Lachnospiraceae bacterium 2 1 46FAA, Strain 15: Clostridium asparagiforme/Clostridium lavalense, Strain 16: Clostridium symbiosum, Strain 18: Clostridium ramosum, Strain 21: Eubacterium fissicatena/Eubacterium contortum/Clostridium sp. D5, Strain 26: Clostridium scindens/Lachnospiraceae bacterium 5 1 57FAA, Strain 27: Lacnospiraceae bacterium A4/Lachno bacterium 3 1 57FAA CT1, Strain 28: Clostridium sp. 316002/08, Strain 29: Lacnospiraceae bacterium A4/Lachno bacterium 3 1 57FAA CT1.
 
-We used the described microbiome colonization data and corresponding CD4+FOXP3+ Treg measurements to determine the contribution of each strain to the Treg pool. We begin by subdividing the population of CD4+ T-cells into two major subpopulations depending on their intracellular FOXP3 expression: CD4+FOXP3+ Treg and the remainder among the CD4+ T-cells, the conventional CD4+FOXP3− T-cells (Bilate and Lafaille, 2012; Rudensky, 2011). The concentration of CD4+ T-cells at time t in the colonic lamina propria, cT(t), is then the combination of these two T-cell populations, cT(t)=cFOXP3+(t)+cFOXP3−(t). To include a variety of effects into our model, we assume T-cell dynamics to follow the gLV equations (Gerber, 2014; Hofbauer and Sigmund, 1998), which also account for the effect of the microbial strains in the lumen on the CD4+FOXP3− T-cell subpopulation. In addition, we use an extension of the standard gLV equations to include the impact of the Clostridia strains in terms of external perturbations (Stein et al., 2013). The resulting microbiome–Treg mathematical model is found as,(1)dcFOXP3+(t)dt=cFOXP3+(t)(αFOXP3++βFOXP3+FOXP3+cFOXP3+(t)∑k=1K+βFOXP3+FOXP3−cFOXP3−(t)+∑k=1Kεikcstrainik(t))where αFOXP3+ denotes the basal growth rate and βFOXP3+FOXP3+ the self-interaction term of the CD4+FOXP3+ Treg population. The interaction terms βFOXP3+FOXP3- and βFOXP3-FOXP3+ represent the effect of the CD4+FOXP3− T-cell on the CD4+FOXP3+ Treg population and of the CD4+FOXP3+ Treg﻿ on the CD4+FOXP3− T-cell population, respectively (d’Onofrio, 2005). Consequently, positive interaction parameters correspond to activation, negative ones to inhibition. Moreover, εik  denotes the effect of strain ik on the CD4+FOXP3+ Treg population. For long-term observations, t→∞, the dynamics of  cFOXP3+(t) are given by its (non-trivial) steady-state solution, which simplifies the then static microbiome–Treg mathematical model of the relative CD4+FOXP3+ proportion in steady state, rFOXP3+, ss, to a linear regression problem,(2)rFOXP3+,ss=α~+∑k=1Kε~ikcstrainik,ss.
 
-Here, we use that the absolute and relative abundance of the CD4+FOXP3+Treg population are coupled by  cFOXP3+/−,ss=cT,ss⋅rFOXP3+/−,ss (see Materials and methods). We assume that the steady-state CD4+ T-cell concentration is constant, cT,ss=const., across all microbial compositions. We justify this because we are dealing with genetically similar mice and a set of closely related Clostridia. This assumption is however not justifiable when comparing non-colonized and colonized germ-free mice (Faith et al., 2014).
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Atarashi et al., 2013</th>
+      <th>Bucci et al., 2016</th>
+      <th>11-str. I</th>
+      <th>11-str. II</th>
+      <th>11-str. III</th>
+      <th>H1</th>
+      <th>H2</th>
+      <th>M1</th>
+      <th>M2</th>
+      <th>L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain 1</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 3</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 4</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 6</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 7</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 8</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 9</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 13</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 14</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Strain 15</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Strain 16</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>Strain 18</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 21</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 26</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 27</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 28</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain 29</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
 
-Assigning to rFOXP3+,ss the measured FACS-derived CD4+FOXP3+ Treg proportions after 35 days and to cstrainik,ss the corresponding microbial profiles, we infer each strain's contribution to the CD4+FOXP3+ Treg pool (Figure 2B) by solving Equation (2) with an ℓ2-penalized least-square regression with one shrinkage parameter, which is determined in a leave-one-sample-out cross-validation (Stein et al., 2013). The resulting normalized root-mean square deviation on left-out samples was found to be 12%.
+### Derivation of the microbiome–Treg mathematical model
 
-## Derivation of the Treg Induction Score (TrIS) and selection of Treg-inducing consortia
+We used the described microbiome colonization data and corresponding CD4+FOXP3+ Treg measurements to determine the contribution of each strain to the Treg pool. We begin by subdividing the population of CD4+ T-cells into two major subpopulations depending on their intracellular FOXP3 expression: CD4+FOXP3+ Treg and the remainder among the CD4+ T-cells, the conventional CD4+FOXP3− T-cells (Bilate and Lafaille, 2012; Rudensky, 2011). The concentration of CD4+ T-cells at time $t$ in the colonic lamina propria, $c_{T}(t)$, is then the combination of these two T-cell populations, $c_{T}(t)=c_{FOXP3^{+}}(t)+c_{FOXP3^{−}}(t)$. To include a variety of effects into our model, we assume T-cell dynamics to follow the gLV equations (Gerber, 2014; Hofbauer and Sigmund, 1998), which also account for the effect of the microbial strains in the lumen on the CD4+FOXP3− T-cell subpopulation. In addition, we use an extension of the standard gLV equations to include the impact of the Clostridia strains in terms of external perturbations (Stein et al., 2013). The resulting microbiome–Treg mathematical model is found as,
 
-After deriving a model to predict our candidate strains dynamics in germ-free conditions and having resolved each strain’s contribution to Treg expansion, we aim to use this information to computationally select for consortia that maximize Treg induction while being ecologically robust (Bucci et al., 2016; Stein et al., 2013). To specify a measure of ecological robustness as well as immune induction potential for microbial consortia in germ-free mice, we define the Treg Induction Score (TrIS) as the average predicted regulatory T-cell activation of a given consortium of K strains straini1,⋯,strainiK while ignoring contributions from the host,(3)TrIS({straini1,⋯,strainiK})=1N∑n=1N∑k=1Kε~ikcstrainik,ss(n).
+$$
+\frac{dc_{FOXP3^{+}}(t)}{dt}=c_{FOXP3^{+}}(t)(\alpha_{FOXP3^{+}}+\beta_{FOXP3^{+}FOXP3^{+}}c_{FOXP3^{+}}(t)\sumk=1K+\beta_{FOXP3^{+}FOXP3^{−}}c_{FOXP3^{−}}(t)+\sumk=1K\epsilon_{i_{k}}c_{strain_{i_{k}}}(t))
+$$
 
-If the predicted steady state of the microbial consortium (cstraini1(n),…,cstrainiK(n))ss that is computed from the n-th Markov Chain Monte Carlo (MCMC) parameter estimate (Bucci et al., 2016) is biologically meaningful, i.e. positive, and stable, then cstrainik,ss(n) denotes the steady-state concentration of strain ik; otherwise cstrainik,ss(n) is set to 0. Hence, the value of the TrIS is indicative of the expected CD4+FOXP3+ Treg induction (after removing the host contribution) and it is of the same unit as the FACS measurements. We evaluated TrIS for every possible strain combination that would stably colonize the gut in germ-free background. In our computation, of the 212–1 = 4095 possible steady-state strain configurations evaluated in N = 22,500 MCMC parameter estimates, 84% are found to be biologically meaningful and stable. Interestingly, while the average TrIS increases with consortium size, our analysis shows that a subset size of seven already contains bacterial combinations maximizing induction (Figure 4A). Furthermore, in addition to the strong correlation between TrIS and the predicted total bacterial abundance in the consortium, we observed that high-induction consortia display an especially large enrichment in the abundance of Strain 27 (Figure 4B, Figure 4—figure supplement 1). Because short-chain fatty acids have been previously associated with colonic Treg induction (Arpaia et al., 2013) and increase in density upon supplementation with these strains (Atarashi et al., 2013), we decided to test if modeling-predicted high Treg-inducing consortia were also enriched in SCFAs. We therefore compared the top 5-inducing microbial consortia of size seven against their same-size counterpart bottom 5 (Figure 4C). We predicted the SCFA concentration for each of the predicted compositions by summing the scaled metabolic outputs of each strain measured in mono-colonization experiments (Atarashi et al., 2013; Narushima et al., 2014) and normalized by the strain’s model-predicted mono-colonization density. We performed a Welch two-samples t-test for each of the predicted SCFAs concentrations and found significant enrichment for all estimated SCFAs (p<0.05, one tailed) in the high-TrIS consortia compared to the low ones (Figure 4D).
+where $\alpha_{FOXP3^{+}}$ denotes the basal growth rate and $\beta_{FOXP3^{+}FOXP3^{+}}$ the self-interaction term of the CD4+FOXP3+ Treg population. The interaction terms $\beta_{FOXP3^{+}FOXP3^{-}}$ and $\beta_{FOXP3^{-}FOXP3^{+}}$ represent the effect of the CD4+FOXP3− T-cell on the CD4+FOXP3+ Treg population and of the CD4+FOXP3+ Treg﻿ on the CD4+FOXP3− T-cell population, respectively (d’Onofrio, 2005). Consequently, positive interaction parameters correspond to activation, negative ones to inhibition. Moreover, $\epsilon_{i_{k}}$ denotes the effect of strain $i_{k}$ on the CD4+FOXP3+ Treg population. For long-term observations, $t→∞$, the dynamics of $ c_{FOXP3^{+}}(t)$ are given by its (non-trivial) steady-state solution, which simplifies the then static microbiome–Treg mathematical model of the relative CD4+FOXP3+ proportion in steady state, $r_{FOXP3^{+},ss}$, to a linear regression problem,
 
-## Experimental validation of mathematical model predictions
+$$
+r_{FOXP3^{+},ss}=\alpha~+\sumk=1K\epsilon~_{i_{k}}c_{strain_{i_{k},ss}}.
+$$
+
+Here, we use that the absolute and relative abundance of the CD4+FOXP3+Treg population are coupled by $ c_{FOXP3^{+/−},ss}=c_{T,ss}⋅r_{FOXP3^{+/−},ss}$ (see Materials and methods). We assume that the steady-state CD4+ T-cell concentration is constant, $c_{T,ss}=const.$, across all microbial compositions. We justify this because we are dealing with genetically similar mice and a set of closely related Clostridia. This assumption is however not justifiable when comparing non-colonized and colonized germ-free mice (Faith et al., 2014).
+
+Assigning to $r_{FOXP3^{+},ss}$ the measured FACS-derived CD4+FOXP3+ Treg proportions after 35 days and to $c_{strain_{i_{k}},ss}$ the corresponding microbial profiles, we infer each strain's contribution to the CD4+FOXP3+ Treg pool (Figure 2B) by solving Equation (2) with an $ℓ^{2}$-penalized least-square regression with one shrinkage parameter, which is determined in a leave-one-sample-out cross-validation (Stein et al., 2013). The resulting normalized root-mean square deviation on left-out samples was found to be 12%.
+
+### Derivation of the Treg Induction Score (TrIS) and selection of Treg-inducing consortia
+
+After deriving a model to predict our candidate strains dynamics in germ-free conditions and having resolved each strain’s contribution to Treg expansion, we aim to use this information to computationally select for consortia that maximize Treg induction while being ecologically robust (Bucci et al., 2016; Stein et al., 2013). To specify a measure of ecological robustness as well as immune induction potential for microbial consortia in germ-free mice, we define the Treg Induction Score (TrIS) as the average predicted regulatory T-cell activation of a given consortium of K strains $strain_{i_{1}},⋯,strain_{i_{K}}$ while ignoring contributions from the host,
+
+$$
+TrIS({strain_{i_{1}},⋯,strain_{i_{K}}})=\frac{1}{N}\sumn=1N\sumk=1K\epsilon~_{i_{k}}c_{strain_{i_{k}},ss}^{(n)}.
+$$
+
+If the predicted steady state of the microbial consortium $(c_{strain_{i_{1}}}^{(n)},…,c_{strain_{i_{K}}}^{(n)})_{ss}$ that is computed from the $n$-th Markov Chain Monte Carlo (MCMC) parameter estimate (Bucci et al., 2016) is biologically meaningful, i.e. positive, and stable, then $c_{strain_{i_{k}},ss}^{(n)}$ denotes the steady-state concentration of strain $i_{k}$; otherwise $c_{strain_{i_{k}},ss}^{(n)}$ is set to 0. Hence, the value of the TrIS is indicative of the expected CD4+FOXP3+ Treg induction (after removing the host contribution) and it is of the same unit as the FACS measurements. We evaluated TrIS for every possible strain combination that would stably colonize the gut in germ-free background. In our computation, of the 212–1 = 4095 possible steady-state strain configurations evaluated in N = 22,500 MCMC parameter estimates, 84% are found to be biologically meaningful and stable. Interestingly, while the average TrIS increases with consortium size, our analysis shows that a subset size of seven already contains bacterial combinations maximizing induction (Figure 4A). Furthermore, in addition to the strong correlation between TrIS and the predicted total bacterial abundance in the consortium, we observed that high-induction consortia display an especially large enrichment in the abundance of Strain 27 (Figure 4B, Figure 4—figure supplement 1). Because short-chain fatty acids have been previously associated with colonic Treg induction (Arpaia et al., 2013) and increase in density upon supplementation with these strains (Atarashi et al., 2013), we decided to test if modeling-predicted high Treg-inducing consortia were also enriched in SCFAs. We therefore compared the top 5-inducing microbial consortia of size seven against their same-size counterpart bottom 5 (Figure 4C). We predicted the SCFA concentration for each of the predicted compositions by summing the scaled metabolic outputs of each strain measured in mono-colonization experiments (Atarashi et al., 2013; Narushima et al., 2014) and normalized by the strain’s model-predicted mono-colonization density. We performed a Welch two-samples t-test for each of the predicted SCFAs concentrations and found significant enrichment for all estimated SCFAs (p<0.05, one tailed) in the high-TrIS consortia compared to the low ones (Figure 4D).
+
+### Experimental validation of mathematical model predictions
 
 We decided to experimentally test our approach's ability to correctly predict consortium ranking with respect to Treg-induction. Due to regulatory constraints on the used probiotic strains – limiting us to a maximum of four strains at a time in follow-up experiments – we selected five 4-strain combinations with a variety of predicted immune effects. We measured CD4+FOXP3+ Treg induction for five microbial consortia of size four and the germ-free control. We chose the two highest TrIS consortia (H1, H2 with rank 1 and 2, respectively), the lowest one (L with rank 495) and two TrIS-intermediate consortia of interest (M1, M2 with rank 129 and 452, respectively). Strains contained in each of the five consortia are detailed in Table 1. We correlated the TrIS score with the mean observed CD4+FOXP3+ Treg percentage and found a significant Pearson correlation with coefficient of 0.97 and p-value<0.01 (Figure 4E). Importantly, when using 16S rRNA sequencing to investigate the resulting colonization profiles for these combinations, we observed that the high TrIS-scoring consortia (H1, H2, M1) all stably colonized while the two low-scoring consortia only displayed a subset of the introduced strains. This result remarkably reflects the nature of our scoring system which, in addition to immune activation potential, also incorporates colonization success (Equation 3).
 
@@ -102,36 +373,50 @@ Mathematical modeling-based methods have the potential to greatly accelerate th
 
 ## Materials and methods
 
-## Derivation of the microbiome–Treg induction mathematical model
+### Derivation of the microbiome–Treg induction mathematical model
 
-We assume the following dynamics for the CD4+FOXP3+ regulatory T-cell population:dcFOXP3+(t)dt=cFOXP3+(t)(αFOXP3++βFOXP3+FOXP3+cFOXP3+(t)+ βFOXP3+FOXP3−cFOXP3−(t)+∑k=1Kεikcstrainik(t)).
+We assume the following dynamics for the CD4+FOXP3+ regulatory T-cell population:
 
-Here, αFOXP3+ denotes the basal growth rate and βFOXP3+FOXP3+ the self-interaction term of the CD4+FOXP3+ Treg population, while the interaction parameters βFOXP3+FOXP3- and βFOXP3-FOXP3+ characterize the effect of the CD4+FOXP3− T-cells on the CD4+FOXP3+ Treg population and of the CD4+FOXP3+ Treg on the CD4+FOXP3− T-cell population, respectively (d’Onofrio, 2005). Moreover, εik  denotes the effect of strain ik on the CD4+FOXP3+ Treg population. The non-trivial steady-state solution (i.e., the algebraic solution of the right-hand side of Equation (1) set to 0 with cFOXP3+≠0) is found as,cFOXP3+,ss=−1βFOXP3+FOXP3+(αFOXP3++βFOXP3+FOXP3−cFOXP3−, ss+∑k=1Kεikcstrainik,ss).
+$$
+\frac{dc_{FOXP3^{+}}(t)}{dt}=c_{FOXP3^{+}}(t)(\alpha_{FOXP3^{+}}+\beta_{FOXP3^{+}FOXP3^{+}}c_{FOXP3^{+}}(t)+ \beta_{FOXP3^{+}FOXP3^{−}}c_{FOXP3^{−}}(t)+\sumk=1K\epsilon_{i_{k}}c_{strain_{i_{k}}}(t)).
+$$
 
-Using cT,ss=cFOXP3+,ss+cFOXP3−,ss, the steady-state concentrations of the CD4+FOXP3+ Treg and CD4+FOXP3− populations, cFOXP3+/−,ss, are derived from the FACS-based relative abundances rFOXP3+/−,ss by,  cFOXP3+/−,ss= cT,ss⋅rFOXP3+/−, ss=cT,ss(1−rFOXP3−/+,ss). Finally, the linear relationship between the relative abundances, rFOXP3+,ss, and the strain densities, cstrainik,ss, is found as,rFOXP3+,ss=1βFOXP3+FOXP3−−βFOXP3+FOXP3+(αFOXP3+cT,ss+βFOXP3+FOXP3−+1cT,ss∑k=1Kεikcstrainik,ss)≡α~+∑k=1Kε~ikcstrainik,ssassuming constant concentration of CD4+ T-cells, cT,ss=const., across all possible microbiome compositions. The unknown parameters α~ and ε~ik are estimated in an ℓ2-penalized least-square regression (so-called ridge regression) with a positive shrinkage parameter λ, which is determined in a leave-one-sample-out cross-validation as λ*=2.
+Here, $\alpha_{FOXP3^{+}}$ denotes the basal growth rate and $\beta_{FOXP3^{+}FOXP3^{+}}$ the self-interaction term of the CD4+FOXP3+ Treg population, while the interaction parameters $\beta_{FOXP3^{+}FOXP3^{-}}$ and $\beta_{FOXP3^{-}FOXP3^{+}}$ characterize the effect of the CD4+FOXP3− T-cells on the CD4+FOXP3+ Treg population and of the CD4+FOXP3+ Treg on the CD4+FOXP3− T-cell population, respectively (d’Onofrio, 2005). Moreover, $\epsilon_{i_{k}}$ denotes the effect of strain $i_{k}$ on the CD4+FOXP3+ Treg population. The non-trivial steady-state solution (i.e., the algebraic solution of the right-hand side of Equation (1) set to 0 with $c_{FOXP3^{+}}\neq0$) is found as,
 
-## Collection of experimental data for training the microbiome–immune system model
+$$
+c_{FOXP3^{+},ss}=−\frac{1}{\beta_{FOXP3^{+}FOXP3^{+}}}(\alpha_{FOXP3^{+}}+\beta_{FOXP3^{+}FOXP3^{−}}c_{FOXP3^{−}, ss}+\sumk=1K\epsilon_{i_{k}}c_{strain_{i_{k},ss}}).
+$$
 
-## Strain abundance profiling
+Using $c_{T,ss}=c_{FOXP3^{+},ss}+c_{FOXP3^{−},ss},$ the steady-state concentrations of the CD4+FOXP3+ Treg and CD4+FOXP3− populations, $c_{FOXP3^{+/−},ss}$, are derived from the FACS-based relative abundances $r_{FOXP3^{+/−},ss}$ by, $ c_{FOXP3^{+/−},ss}= c_{T,ss}⋅r_{FOXP3^{+/−}, ss}=c_{T,ss}(1−r_{FOXP3^{−/+},ss})$. Finally, the linear relationship between the relative abundances, $r_{FOXP3^{+},ss}$, and the strain densities, $c_{strain_{i_{k},ss}}$, is found as,
+
+$$
+r_{FOXP3^{+},ss}=\frac{1}{\beta_{FOXP3^{+}FOXP3^{−}}−\beta_{FOXP3^{+}FOXP3^{+}}}(\frac{\alpha_{FOXP3^{+}}}{c_{T,ss}}+\beta_{FOXP3^{+}FOXP3^{−}}+\frac{1}{c_{T,ss}}\sumk=1K\epsilon_{i_{k}}c_{strain_{i_{k},ss}})≡\alpha~+\sumk=1K\epsilon~_{i_{k}}c_{strain_{i_{k},ss}}
+$$
+
+assuming constant concentration of CD4+ T-cells, $c_{T,ss}=const.$, across all possible microbiome compositions. The unknown parameters $\alpha~$ and $\epsilon~_{i_{k}}$ are estimated in an $ℓ^{2}$-penalized least-square regression (so-called ridge regression) with a positive shrinkage parameter $\lambda$, which is determined in a leave-one-sample-out cross-validation as $\lambda^{*}=2$.
+
+### Collection of experimental data for training the microbiome–immune system model
+
+#### Strain abundance profiling
 
 In our previous work (Bucci et al., 2016), we have inferred a mathematical model describing the dynamics of a 13-strain subset from the original 17-strain human-derived Clostridia consortium from Atarashi et al. (2013) in germ-free mice. Using newly generated data from the same experimental setup, we are now able to assess its predictive quality for three distinct 11-strain subsets. The three 11-strain compositions were selected based on their capability to maintain stability in the simulations when either one of two high (Strain 15 and Strain 4, here referred to as cases I and II, respectively) or one low (Strain 29; III) keystone strain was removed (Bucci et al., 2016). For the experimental validation, germ-free IQI mice were purchased from Sankyo Laboratories (Japan), randomized and maintained in germ-free vinyl isolators in the animal facility of RIKEN. Twelve Treg-inducing Clostridia strains were selected from the previously reported VE202 consortium consisting of 17 Treg-inducing strains (4, 7, 9, 13–16, 21, 26–29) and were individually cultured in modified Eggerth Gagnon broth under strictly anaerobic conditions (80% N2, 10% H2, 10% CO2) at 37°C in an anaerobic chamber (Coy Laboratory Products, Grass Lake, MI) to confluence. The cultured bacterial strains were then mixed and the three mixtures of 11 strains (described above) were orally inoculated into five IQI germ-free adult mice each. One mouse for condition II died and was therefore discarded from the study. After an initial 9-day interval of acclimation, we collected fecal pellets at 2–4 days interval until day 35, time at which mice were euthanized and analyzed for CD4+FOXP3 induction as in Atarashi et al. (2013). Colonization levels for each strain were assessed by amplifying strain-specific regions with qPCR as described in Bucci et al. (2016). Bacterial genomic DNA was extracted from 1 to 2 fecal pellets using QIAamp DNA Stool Mini Kit (Qiagen, Hilden, Germany). The amount of DNA was quantified using a Qubit dsDNA HS assay kit and Qubit fluorometer (Invitrogen, Carlsbad, CA). DNA was then subjected to qPCR using Thunderbird SYBR qPCR Mix (TOYOBO, Osaka, Japan) and a LightCycler 480 (Roche) with primers specific to 16S ribosomal RNA (rRNA) genes of the 12 Clostridia strains as in Bucci et al. (2016). Quantification of each strain in each sample was accomplished using standard curves of known concentrations of DNAs purified from each strain individually cultured in vitro. Strain densities in each sample were calculated by dividing the above absolute quantification numbers by the weight of the extracted fecal DNA. The 11-strain experiments were ethically approved by RIKEN, Keio and Azabu Universities under protocol H24-9(14) from RIKEN.
 
-## Estimation of CD4+FOXP3+ Treg – Isolation of intestinal lamina propria lymphocytes and flow cytometry
+### Estimation of CD4+FOXP3+ Treg – Isolation of intestinal lamina propria lymphocytes and flow cytometry
 
 The colons were collected and opened longitudinally, washed with PBS to remove all luminal contents and shaken in Hanks’ balanced salt solution (HBSS) containing 5 mM EDTA for 20 min at 37°C. After removing epithelial cells, muscle layers and fat tissue using forceps, the lamina propria layers were cut into small pieces and incubated with RPMI1640 containing 4% fetal bovine serum, 0.5 mg/ml collagenase D, 0.5 mg/ml dispase and 40 mg/ml DNase I (all Roche Diagnostics, Risch-Rotkreuz, Switzerland) for 1 hr at 37°C in a shaking water bath. The digested tissues were washed with HBSS containing 5 mM EDTA, resuspended in 5 ml of 40% Percoll (GE Healthcare, Boston, MA) and overlaid on 2.5 ml of 80% Percoll in a 15 ml Falcon tube. Percoll gradient separation was performed by centrifugation at 850 g for 25 min at 25°C. The lamina propria lymphocytes were collected from the interface of the Percoll gradient and suspended in ice-cold PBS. For analysis of Treg, isolated lymphocytes were labeled with the LIVE/DEAD fixable dead cell stain kit (Life Technologies, Carlsbad, CA) to exclude dead cells from the analysis. Then, surface and intracellular staining of CD3, CD4 and FOXP3 was performed using the BV605-labeled anti-CD3 (17A2, Biolegend, San Diego, CA), BV421-labeled anti-CD4 (RM4-5, Biolegend), Alexa700-labeled anti-FOXP3 antibody (FJK-16 s, eBioscience, San Diego, CA), and FOXP3 staining buffer set (eBioscience). The antibody-stained cells were analyzed with LSR Fortessa and data were analyzed using FlowJo software (Tree Star, Ashland, OR).
 
-## Measurement of organic acids
+### Measurement of organic acids
 
 Organic acid concentrations in caecal contents were determined by gas chromatography-mass spectrometry (GC-MS). Caecal contents (10 mg) were disrupted using 3 mm zirconia/silica beads (BioSpec Products) and homogenized in extraction solution containing 100 ml of internal standard (100 mM crotonic acid), 50 ml of HCl and 200 ml of ether. After vigorous shaking using a Shakemaster neo (Bio Medical Science) at 1500 rpm for 10 min, homogenates were centrifuged at 1000 g for 10 min and then the top ether layer was collected and transferred into new glass vials. Aliquots (80 ml) of the ether extracts were mixed with 16 ml of N-tert-butyldimethylsilyl-N-methyltrifluoroacetamide (MTBSTFA). The vials were sealed tightly by screwing and heated at 80°C for 20 min in a water bath, and left at room temperature for 48 hr for derivatization. The samples were then run through a 6890N Network GC System (Agilent Technologies) equipped with HP-5MS column (0.25 mm 330 m 30.25 mm) and 5973 Network Mass Selective Detector (Agilent Technologies, Santa Clara, CA). Pure helium (99.9999%) was used as a carrier gas and delivered at a flow rate of 1.2 ml/min. The head pressure was set at 10 psi with split 10:1. The inlet and transfer line temperatures were 250 µC and 260 µC, respectively. The following temperature program was used: 60 µC (3 min), 60–120°C (5°C/min), 120–300°C (20°C/min). One microliter quantity of each sample was injected with a run time of 30 min. Organic acid concentrations were quantified by comparing their peak areas with the standards.
 
-## Numerical simulations of the three 11-strain subsets used for microbiome–Treg model training
+### Numerical simulations of the three 11-strain subsets used for microbiome–Treg model training
 
 We used 22,500 sets of Markov Chain Monte Carlo generalized Lotka–Volterra parameter sets determined by applying the Bayesian Variable Selection algorithm within MDSINE to the data of Bucci et al. (2016), and the first time point of measured microbial profiles for each of the 14 validation mice as initial condition, to simulate the gLV system of differential equations corresponding to each mouse microbiome (Figure 3A). Prediction accuracy was evaluated by calculating the Spearman correlation coefficient between observed and predicted data (Figure 3B).
 
-## Simulation of mono-colonization abundances
+### Simulation of mono-colonization abundances
 
 As the experimental data from Atarashi et al. (2013) only provided CD4+FOXP3+ T-cell levels for the mono-strain colonization experiments at 35 days after inoculation but no measurement of the long-term microbial concentrations in the gut, we used instead the corresponding estimated mono-strain colonization densities obtained from the gLV model (section above and Figure 2A). In general, the long-term behavior of the gLV system is determined by its steady states which are uniquely defined by the inferred model parameters (Stein et al., 2013). We computed the parameter median in each single model variable from the 22,500 MCMC parameter sets. These median parameters were then used to deduce the steady-state densities, which were together with the measured CD4+FOXP3 proportions included into the training of the microbiome–Treg model.
 
-## Collection of CD4+FOXP3+ Treg data from 4-strain experiments for validation of the modeling-based predictions
+### Collection of CD4+FOXP3+ Treg data from 4-strain experiments for validation of the modeling-based predictions
 
 Bacterial strains 4, 7, 9, 14, 15, 16, 27, 28, 29 were grown anaerobically in PYG broth (Peptone, Yeast and Glucose broth from Anaerobe Systems, Cat no: AS-822) until they reached stationary phase (48 hr for strains 27 and 29, 24 hr for the remaining strains). Each 200 µl-mouse dose of a 4-strain LBP contained 50 µl of 20 times concentrated stationary phase culture. Germ-free C57BL/6 mice aged 6–8 weeks were randomized and gavaged with a total dose of 5·107–2·108 bacteria in a 200 µl, and maintained under gnotobiotic conditions for four weeks. Use of a C57BL/6 background for these experiments was motivated by availability of animals at the facility where we performed the validation and justified by the fact that previous work from us has shown that Treg induction by our Clostridia strains does not differ between Balb/c, IQI, and C57BL/6 mice (Atarashi et al., 2015). Mice were then sacrificed, colons harvested, and lamina propria leukocytes isolated and stained for CD3+CD4+FOXP3+ Treg as described above. Eight mice each were used for consortia High 1 (H1-strains: 7, 27, 28, 29) and High 2 (H2-strains: 4, 7, 27, 29). Five mice each were used for the intermediate high (M1-strains: 4, 7, 14, 28), and intermediate low consortia (M2-strains: 9, 16, 27, 29). Three mice were used for Low 1 (L1-strains: 14, 15, 16, 29). Colonization profiling was determined through 16S rRNA sequencing (as above) and verified by blasting representative sequences to a 16S VE202 fasta database. The 4-strain validation experiments were performed in the Massachusetts Host Microbiome Center under IACUC protocol 2016N000141.

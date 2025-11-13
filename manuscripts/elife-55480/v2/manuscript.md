@@ -21,7 +21,7 @@
 
 ## Abstract
 
-KdpFABC is an ATP-dependent K + pump that ensures bacterial survival in K + -deficient environments. Whereas transcriptional activation of kdpFABC expression is well studied, a mechanism for down-regulation when K + levels are restored has not been described. Here, we show that KdpFABC is inhibited when cells return to a K + -rich environment. The mechanism of inhibition involves phosphorylation of Ser162 on KdpB, which can be reversed in vitro by treatment with serine phosphatase. Mutating Ser162 to Alanine produces constitutive activity, whereas the phosphomimetic Ser162Asp mutation inactivates the pump. Analyses of the transport cycle show that serine phosphorylation abolishes the K + -dependence of ATP hydrolysis and blocks the catalytic cycle after formation of the aspartyl phosphate intermediate (E1~P). This regulatory mechanism is unique amongst P-type pumps and this study furthers our understanding of how bacteria control potassium homeostasis to maintain cell volume and osmotic potential.
+KdpFABC is an ATP-dependent K+ pump that ensures bacterial survival in K+-deficient environments. Whereas transcriptional activation of kdpFABC expression is well studied, a mechanism for down-regulation when K+ levels are restored has not been described. Here, we show that KdpFABC is inhibited when cells return to a K+-rich environment. The mechanism of inhibition involves phosphorylation of Ser162 on KdpB, which can be reversed in vitro by treatment with serine phosphatase. Mutating Ser162 to Alanine produces constitutive activity, whereas the phosphomimetic Ser162Asp mutation inactivates the pump. Analyses of the transport cycle show that serine phosphorylation abolishes the K+-dependence of ATP hydrolysis and blocks the catalytic cycle after formation of the aspartyl phosphate intermediate (E1~P). This regulatory mechanism is unique amongst P-type pumps and this study furthers our understanding of how bacteria control potassium homeostasis to maintain cell volume and osmotic potential.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ To further explore the inhibitory effects of serine phosphorylation, we have est
 
 ## Results
 
-## Expression of KdpFABC
+### Expression of KdpFABC
 
 We used three different expression strains and a variety of different growth conditions to study the physiological stimulus for serine phosphorylation and to produce KdpFABC for in vitro experiments (Figure 2, Table 1). In native E. coli cells, the promoter that controls transcription of kdpFABC genes is regulated by KdpE in response to ‘potassium need’ of the cell. In K+ replete conditions, KdpFABC is not expressed, but when K+ levels in the media fall into the micromolar range, the constitutive transport systems (Trk, Kup) fail to maintain the necessary chemo-osmotic gradient. KdpD senses this deficiency and activates KdpE such that transcription of kdpFABC is initiated. WT KdpFABC is a powerful pump, so the deficit is normally overcome by modest levels of expression. In order to obtain over expression, as required for structural or biochemical studies, a multicopy plasmid with kdpFABC driven by the native promoter is introduced into a cell line (TK2499) with Trk and Kup knocked out and cells are cultured with limiting concentrations of K+, which must remain in the low micromolar range for expression of WT kdpFABC (Epstein and Davies, 1970). Because KdpFABC activity is required to rescue these cells, mutations that generate lower activity cannot survive in these conditions and, in those cases, precise K+ concentrations that allow cell growth and also produce robust expression depend on the K+ affinity and/or turnover rate of the particular mutant (e.g. 0.2 mM for the KdpA-Q116R mutation used for the X-ray structure). Inactive mutants cannot be expressed using this strategy, because they are incapable of rescuing cell growth in a K+-deficient environment. In those cases, the pBAD promoter can be used for expression with Top10 cells in K+ replete conditions (e.g. for previous cryo-EM structures), or a chromosomal copy of the kdpFABC gene can be used for rescue (TK2498 cells) and the mutant protein can be expressed from a plasmid carrying the native promoter. In this case, a His-tag is used to separate the mutant from the chromosomal copy by affinity chromotagraphy. In the following studies, we have used all three expression strategies. As we learned over the course of this work, the K+ concentration in the culture media is key to serine phosphorylation, making the expression protocol an important parameter to keep in mind.
 
@@ -47,33 +47,238 @@ We used three different expression strains and a variety of different growth con
 
 **Figure 2.:** The TK2498 strain contains a chromosomal copy of kdpFABC that carries the KdpA-Q116R mutation behind the native promotor. This gene rescues the cells in K+-deficient media (0.2 mM), which also serves to induce expression not only of the chromosomal copy, but also of His-tagged mutants on plasmids derived from pSD107, which carries the same native promoter. The genotype is shown below together with mutants expressed from this strain. The TK2499 strain has the same genotype as TK2498, except that it lacks the chromosomal copy of kdpFABC. It was used for expression of the His-tagged WT protein, which is induced at μM K+ concentrations. This strain was used for K+ shock experiments. The Top10 strain was used for expression of several His-tagged mutants behind the pBAD promoter grown in standard LB media and induced with arabinose. This strain was used for expression of proteins for biochemical assays of aspartyl phosphate formation. The mutants and their expression conditions are summarized in Table 1.
 
-## Survey of KdpFABC mutants reveals unexpected inhibition
+**Table 1.**
+ KdpFABC mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Annotation</th>
+      <th>Mutations</th>
+      <th>Strain</th>
+      <th>Promoter</th>
+      <th>Condition</th>
+      <th>Figures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>-</td>
+      <td>TK2499</td>
+      <td>KdpE</td>
+      <td>μM K+</td>
+      <td>3,4,4-s1,6,6-s1</td>
+    </tr>
+    <tr>
+      <td>KdpA-E370A</td>
+      <td>KdpA-E370A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpA-R400A/T401A</td>
+      <td>KdpA-R400A KdpA-T401A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpA-S517A</td>
+      <td>KdpA-S517A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpA-R400A</td>
+      <td>KdpA-R400A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpA-R493A</td>
+      <td>KdpA-R493A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpB-D300A</td>
+      <td>KdpB-D300A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpB-D302A</td>
+      <td>KdpB-D302A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpB-D300A/D302A</td>
+      <td>KdpB-D300A/ KdpB-D302A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpB-D307A</td>
+      <td>KdpB-D307A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3,6-s1</td>
+    </tr>
+    <tr>
+      <td>KdpB-D583A</td>
+      <td>KdpB-D583A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KdpB-K586A</td>
+      <td>KdpB-K586A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Q116R/K357A/R363A</td>
+      <td>KdpA-Q116R/ KdpB-K357A/ KdpB-R363A</td>
+      <td>TK2498</td>
+      <td>KdpE</td>
+      <td>0.2 mM K+</td>
+      <td>6-s2</td>
+    </tr>
+    <tr>
+      <td>Q116R</td>
+      <td>KdpA-Q116R</td>
+      <td>Top10</td>
+      <td>pBAD</td>
+      <td>LB media*</td>
+      <td>5,5-s1,s2,6</td>
+    </tr>
+    <tr>
+      <td>S162A/Q116R</td>
+      <td>KdpA-Q116R/ KdpB-S162A</td>
+      <td>Top10</td>
+      <td>pBAD</td>
+      <td>LB media*</td>
+      <td>5,5-s1,s2</td>
+    </tr>
+    <tr>
+      <td>S162D/Q116R</td>
+      <td>KdpA-Q116R/ KdpB-S162D</td>
+      <td>Top10</td>
+      <td>pBAD</td>
+      <td>LB media*</td>
+      <td>5,5-s1</td>
+    </tr>
+    <tr>
+      <td>D307A/Q116R</td>
+      <td>KdpA-Q116R/ KdpB-D307A</td>
+      <td>Top10</td>
+      <td>pBAD</td>
+      <td>LB media*</td>
+      <td>5,5-s1,s2</td>
+    </tr>
+    <tr>
+      <td>S162A/E161Q/ Q116R</td>
+      <td>KdpA-Q116R/ KdpB-S162A/ KdpB-E161Q</td>
+      <td>Top10</td>
+      <td>pBAD</td>
+      <td>LB media*</td>
+      <td>5,5-s1,s2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*LB media has been reported to contain 8 mM K+ (Su et al., 2009)._
+
+### Survey of KdpFABC mutants reveals unexpected inhibition
 
 An overarching goal of our work is to understand the allosteric coupling between KdpA and KdpB that underlies ATP-dependent K+ transport. To this end, we setup a survey of alanine substitution mutants to assess the role of various residues implicated by the X-ray crystal structure. For expression of these mutants, we used E. coli strain TK2498 grown at 0.2 mM K+ (Figure 2, Table 1). After purification, the ATPase activities of all of the mutants were very low (Figure 3a), causing us to explore parameters that might have influenced the protein. Based on our earlier evidence that phosphorylation of Ser162 in KdpB is inhibitory (Huang et al., 2017), we used mass spectrometry to determine levels of this post-translational modification (Figure 3—figure supplement 1), which were all very high (Figure 3b). We then used LPP to remove the phosphate and observed significant stimulation in ATPase activity for several of these mutants (Figure 3c), thus supporting an inhibitory role for Ser162 phosphorylation. WT protein and the D307A mutation in KdpB served as positive and negative controls, respectively. As expected, the D307A mutant was catalytically inactive because this residue is the site of aspartyl phosphate (E1~P) formation. In contrast to the mutants, the WT construct had virtually no serine phosphorylation. This is because the WT protein has much higher K+ affinity and was therefore expressed at much lower levels of K+ (<10 μM) in the TK2499 strain. These results motivated us to examine whether phosphorylation of Ser162, and consequent inhibition of KdpFABC, was a cellular response to elevated K+ in the media.
 
-## Increased K+ is a physiological stimulus for serine phosphorylation
+![Figure 3.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig3-v2.jpg)
+
+**Figure 3.:** (A) Very low levels of ATPase activity were obtained from a series of Ala substitution mutants. As indicated in Table 1, WT protein has been expressed in TK2499 at very low levels of K+, whereas the other constructs were expressed in TK2498 at 200 μM K+. (B) Mass spectrometry of these Ala mutants revealed high levels of phosphorylation of Ser162 on KdpB. (C) Treatment of several of these mutants with LPP to remove serine phosphorylation resulted in significant stimulation of ATPase activity, supporting the notion that serine phosphorylation is inhibitory. Data in panels A and B are single measurements, whereas data in panel C were collected in duplicate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) MS/MS spectrum of phosphopeptide from KdpFABC with m/z 705.3376 and sequence SAITGE162pSAPVIRE. The observed fragment ions were used to confirm that Ser162 is the site of phosphorylation. (B) Predicted MS/MS fragment ions for the phosphopeptide SAITGE162pSAPVIRE. Fragment ions in red were detected in the spectrum in panel A. The data analysis was generated by the Mascot search engine which reported a 99.7% probability that the site of phosphorylation was on Ser162 and a combined probability of 0.3% for Ser156 and Thr159.
+
+### Increased K+ is a physiological stimulus for serine phosphorylation
 
 To test whether elevated K+ concentrations lead to serine phosphorylation, we first grew TK2499 cells with WT KdpFABC under K+ limiting (micromolar) conditions and then split the culture into two batches immediately prior to harvest. To one batch, we added 20 mM K+ - so called K+ shock - and growth was continued for 20 min. KdpFABC was then purified from both batches. ATPase assays documented a 40% inhibition for protein derived from the cells subjected to the K+ shock, which was fully restored after treatment with LPP (Figure 4a). Mass spectrometry confirmed that K+ shock produced a higher level of serine phosphorylation: ion currents for the phosphorylated peptide relative to the unphosphorylated peptide were 27% for K+ shock vs 1% for the control (Figure 4b). This quantification is nominal because phosphorylated and nonphosphorylated versions of the same peptide are not ionized and detected with equal efficiency and, as a result, positive ion mass spectrometry typically underestimates the level of phosphorylation (Xu et al., 2005). However, relative phosphorylation levels of different samples are reliable (Huang et al., 2016) and these data show that the K+ shock resulted in much higher levels of Ser162 phosphorylation as well as inhibition of ATPase activity.
 
-## Time dependence of serine phosphorylation
+![Figure 4.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig4-v2.jpg)
+
+**Figure 4.:** For these experiments, TK2499 cells were cultured at low K+ concentrations to induce expression of WT kdpFABC; thereafter, the culture was split and one half was subjected to 20 mM K+ for varying periods of time. (A) A 20 min K+ shock resulted in loss of ~40% of ATPase activity, which was fully recovered by LPP treatment. (B) Serine phosphorylation levels for samples from panel A determined by mass spectrometry were much higher after K+ shock. (C) ATPase rates from additional individual experiments with varying periods of K+ shock. The time periods are nominal because harvest of cells required a 20-min centrifugation in their respective media. (D) Serine phosphorylation levels for samples in panel C determined by Phos-tag staining of SDS gels show an increase in serine phosphorylation levels that is proportional to the observed inhibition of ATPase activity. (E) ATPase activities from a single culture split into four batches and treated with K+ for variable times show a graded inhibitory response. (F) Levels of serine phosphorylation for the cultures in panel E were determined by Phos-tag staining. (G) Data from all experiments were combined and show a reasonable correlation (R = 0.56) between ATPase activity and levels of serine phosphorylation determined by mass spectrometry. (H) Correlation of ATPase activities from all the experiments with levels of serine phosphorylation determined by Phos-tag staining produces a much better correlation (R = 0.97). (I) Correlation of serine phosphorylation levels from mass spectrometry and Phos-tag staining. ATPase measurements were performed in triplicate and shown as mean plus SEM; phosphoserine levels represent single measurements.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coomassie-stained SDS-PAGE of purified preparations used for EP measurements. Although KdpA, KdpB and KdpC are readily visible, KdpF has run off the bottom of the gel due to its small mass. (B) Elution profile from the size-exclusion column shows that the purified protein is monodisperse. (C) Phos-tag staining of various preparations of KdpFABC before and after K+ shock for the indicated periods of time. KdpB has varying levels of Ser162 phosphorylation, which has been quantified and plotted in Figure 4. Unexpectedly, we also observed a constant level of staining of KdpA, which could reflect a tightly bound lipid. This idea is supported by data in panel (D), which shows that LPP treatment reduced the staining associated with KdpB, but did not affect the staining of KdpA.
+
+### Time dependence of serine phosphorylation
 
 To extend these studies, we varied the length of time that cells were subjected to K+ shock in order to characterize the time dependence of the response. For each experiment, the culture was split, 20 mM added to one half and incubated for either 0, 10, or 90 min before harvesting the cells. The incubation time is nominal given that cells had continued exposure to the media during the ensuing 20-min centrifugation step. ATPase inhibition increased as incubation time increased (15%, 25%, and 74%) and LPP treatment largely relieved this inhibition (Figure 4c). In addition to mass spectrometry, we used SDS-PAGE together with Phos-tag stain (Figure 4—figure supplement 1) to quantify levels of serine phosphorylation. Results from mass spectrometric phosphorylation analysis were consistent with this graded response to the K+ shock (increased phosphorylation levels of 2.07-, 4.02-, and 5.23-fold, respectively) and confirmed Ser162 as the site of phosphorylation (Figure 3—figure supplement 1). However, data from Phos-tag staining was more consistent across independent experiments and these data clearly illustrate a time-dependent increase in serine phosphorylation and the inverse correlation with ATPase activity (Figure 4d).
 
 In addition to these isolated experiments, we conducted a time course in which a single culture was split into four batches that were shocked for varying times. In addition to a control, untreated batch, the cultures were exposed to 20 mM K+ for 0, 20 and 60 min prior to harvesting the cells. ATPase activities of the corresponding preparations of KdpFABC show an increasing amount of inhibition, which was largely reversed by treatment with LPP (Figure 4e), and increasing levels of serine phosphorylation (Figure 4f). Aggregation of data from all of these experiments showed a clear correlation between ATPase activity and serine phosphorylation for both mass spectrometry (Figure 4g) and Phos-tag staining (Figure 4h). Although the mass spectrometry data showed a lot of scatter, it was well correlated with measurements from Phos tag staining (Figure 4i). Combining the site specificity of mass spectrometry with the quantification accuracy of Phos-tag staining, provides strong evidence that a return to K+-rich media causes phosphorylation of Ser162 with a concomitant and proportional inhibition of ATPase activity.
 
-## Effect of serine phosphorylation on partial reactions
+### Effect of serine phosphorylation on partial reactions
 
 Transient formation of an aspartyl phosphate at the catalytic site in the P-domain of KdpB is a key step in the reaction cycle. To evaluate how serine phosphorylation affects individual steps in the cycle, we used a conventional assay employing [γ32P]-ATP to initiate the cycle followed by acid quench at defined time intervals. This assay reports on steady-state levels of aspartyl phosphate (EP), which includes molecules in both E1~P or E2-P states (Figure 1). These two states were then distinguished by their reactivity to ADP, based on the fact that the high-energy form (E1~P) is readily dephosphorylated by ADP, whereas the low-energy form (E2-P) is not (Toustrup-Jensen et al., 2001). For these studies, we introduced a number of mutations (Table 1) to elucidate the effect of serine phosphorylation, a stable post-translational modification that is distinct from the transient phosphorylation of the catalytic Asp307. In particular, the KdpB-S162A mutation prevented serine phosphorylation and the KdpB-S162D mutation served as a surrogate for the fully phosphorylated protein. The KdpB-E161Q mutation is expected to block hydrolysis of the E2-P species (step four in Figure 1), based on work with other P-type ATPases (Clausen et al., 2004), and KdpB-D307A serves as a negative control that prevents EP formation altogether. All these mutations in KdpB were combined with the KdpA-Q116R mutation, denoted kdp-42 or strain TK2242-42 in previous work (Epstein et al., 1978; Siebers and Altendorf, 1989), which lowers K+ affinity to the millimolar range and facilitates study of K+-dependence by eliminating the background activity generally observed with the WT construct (Siebers and Altendorf, 1988; Siebers and Altendorf, 1989). Although it may be surprising that a substitution in the signature TGES sequence is tolerated, an extensive phylogenetic analysis of the P-type ATPase superfamily indicates that the serine has the greatest variability in this motif and appears as Thr, Ala, Arg, or Pro in other family members (Chan et al., 2010). All relevant constructs were expressed behind a pBAD promoter in K+ rich media (Figure 2); these conditions activated the pathway for serine phosphorylation, which is evident from the stimulation in ATPase activities that was observed after treatment of the KdpA-Q116R construct with LPP (Figure 5—figure supplement 1). No inhibition was seen when Ser162 was mutated to Ala (KdpB-S162A) and mutations of KdpB-D307A, KdpB-E161Q and KdpB-S162D all resulted in complete inhibition of ATPase activity even after LPP treatment.
 
 Typical experiments are shown in Figure 5a and b, which represent the time course of EP formation at room temperature in the absence and presence of 10 mM K+, respectively. In the presence of K+, EP levels of active constructs (e.g. S162A/Q116R) decay over time as the ATP in the solution is exhausted (Figure 5b). In contrast, EP levels were stable in the absence of K+, because there is no enzymatic turnover (Figure 5a), and at 4°C, because of a much slower turnover rate (Figure 5—figure supplement 2). EP levels were also stable for inactive constructs such as S162D/Q116R and E161Q/S162A/Q116R. Data from 15 individual experiments have been normalized and pooled in Figure 5c. These data included all points for experiments with low turnover rates (i.e. at 4°C or lacking K+) and initial points for experiments with high turnover rates (i.e. at room temperature in the presence of K+) or pulse chase (see below). Normalization of data from each experiment was based on data from E161Q/S162A/Q116R, which consistently produced the highest EP levels and which were stable under all the experimental conditions that were tested. Thus, data in Figure 5c indicate that Q116R and S162D constructs, which both reflect the effects of Ser162 phosphorylation, produced high levels of EP both in the presence and absence of K+. In contrast, EP levels for the Ser162A construct, which cannot be serine phosphorylated, are much lower and showed a significant dependence on K+. As expected, the D307A construct produced negligible levels of EP. These data suggest that formation of the high-energy aspartyl phosphate (step two in Figure 1) is K+-dependent and that phosphorylation of Ser162 not only uncouples this step but also prevents the hydrolysis of the phosphoenzyme intermediate.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Individual experiments comparing time-dependence of EP formation at room temperature of several different constructs in the absence (A) or presence (B) of 10 mM K+. EP formation was initiated by addition of [γ32-P]-ATP and aliquots were taken at various time intervals and quenched with TCA. The constructs are indicated in the legend. (C) Aggregated data from 15 individual experiments that have been normalized relative to levels for the E161Q construct. (D) Pulse-chase experiment in which samples have been incubated for 15 s with [γ32-P]-ATP at 4°C to achieve maximal levels of EP (plotted at time zero) followed by addition of 10 mM ADP and 10 mM EDTA for the indicated time periods. Data was collected in triplicate and lines are drawn through mean values at each time point. Error bars in panel C correspond to SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ATPase activities of the various mutants before and after LPP treatment to remove serine phosphorylation. Triplicate measurements were made from each preparation, which are plotted as mean and SEM.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Individual experiments comparing time-dependence of EP formation in the absence of K+. (B) Data from the same constructs in the presence of 10 mM K+. EP formation was initiated by addition of [γ32P]-ATP and aliquots were taken at various time intervals and quenched with TCA. Data was collected in triplicate and the specific constructs are indicated in the legend.
+
 The data from S162D/Q116R and E161Q/S162A/Q116R suggest that the KdpB-S162D mutation and the KdpB-E161Q mutation cause the cycle to be blocked at some point after aspartyl phosphate formation. In order to determine more precisely where the cycle was blocked, we used a pulse-chase strategy to distinguish E1~P from E2-P intermediates. For this assay, we initiated phosphoenzyme formation in the presence of K+ with [γ32P]-ATP at 4°C where steady-state levels are stable. After 15 s, an aliquot was removed (plotted as time zero in Figure 5d) and a solution containing 10 mM ADP and 10 mM EDTA was added to determine the proportion of E1~P present. Figure 5d shows that EP levels for S162A/Q116R and S162D/Q116R are immediately reduced to zero (within the time resolution of this assay). This result indicates that E1~P is the prevalent species at steady state and that serine phosphorylation prevents the molecule from progressing to the E2-P state (step three in Figure 1). In contrast, the E161Q/S162A/Q116R construct was completely unreactive with ADP, indicating the the E2-P state was trapped in accordance with the effects of the Glu to Gln mutation on other P-type pumps (Clausen et al., 2004).
 
 Although steady levels of EP from S162D/Q116R are consistent with blockage of the E1~P to E2-P transition, data from the Q116R construct reflect a more complex situation. Unlike the S162D/Q116R construct, the Q116R construct generates a mixture of active (no serine phosphorylation) and inactive (serine phosphorylated) molecules. At first glance, one might expect that the fraction of inactive molecules with serine phosphorylation would produce stable EP levels while unmodified, active molecules would turnover and very slowly exhaust the ATP in the solution. However, ADP is produced as the active molecules turnover which will then react with and dephosphorylate the molecules arrested in the E1 ~P state, as seen in the pulse chase experiments. This behavior would then account for the observed fall in overall EP levels of partially phosphorylated Q116R mutants over time.
 
-## Effect of serine phosphorylation on ligand binding and transport
+### Effect of serine phosphorylation on ligand binding and transport
 
 An alternative explanation for the observed inhibition could be that serine phosphorylation simply slows down one of the steps of the reaction cycle or changes the affinity for one of the substrates. To evaluate this alternative, we used ATPase activity to estimate affinities for K+ and ATP as well as inhibition by orthovanadate. Orthovanadate acts as a transition state analogue for inorganic phosphate and typically binds to the E2 state of P-type ATPases to form an inhibitory complex (Clausen et al., 2016). In this way, the IC50 for inhibition by orthovanadate reflects not only an intrinsic binding affinity but also the conformational equilibrium between E2 and E1 states of P-type ATPases (Toustrup-Jensen et al., 2001). For the K+ titration, we used the KdpA-Q116R mutant and for the ATP and vanadate titrations we used WT protein, both with high levels of serine phosphorylation, evident from a threefold to fivefold stimulation after LPP treatment (e.g. Vmax = 1.9 and 9.3 μmoles/mg/min in Figure 6b). Fitting of data from untreated and treated samples (Figure 6a & b) indicated that differences in KM for K+ (21 mM and 7 mM, respectively) and ATP (60 μM and 72 μM) were not statistically significant. Similarly, inhibition by orthovanadate under standard ATPase conditions (150 mM K+ and 2.4 mM ATP) indicate no significant change in IC50 (9.2 μM vs. 8.4 μM). Although not a comprehensive analysis of reaction cycle kinetics, these results reveal no significant changes in the affinity of these substrates and are therefore consistent with the interpretation that the KdpA-Q116R preparation consists of a fraction of molecules with normal binding affinities and a fraction of inactive molecules with serine phosphorylation. Although we consider it unlikely, it is possible that the Q116R mutation is masking an effect of serine phosphorylation on K+ affinity of the WT protein, which is expected to be in the micromolar range (Buurman et al., 1995; Dorus et al., 2001).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig6-v2.jpg)
+
+**Figure 6.:** (A) For K+ titrations, the KdpA-Q116R mutant was expressed with the pBAD system, which produced high levels of serine phosphorylation (see Figure 5—figure supplement 1). K+-dependence curves show that TPP treatment increased Vmax significantly from 2.4 to 5.8 μmoles/mg/min, but that differences in KM (21.5 mM vs. 7.0 mM) where not statistically significant at the 95% confidence level. (B) ATP dependence of WT protein was fitted with Vmax = 1.9 and 9.3 μmoles/mg/min for untreated and treated samples respectively with insignificant change in KM (60 vs 73 μM). (C) Titrations of WT protein with orthovanadate produced maximal activities of 1.7 and 8.7 μmoles/mg/min for untreated and treated samples and IC50 values of 9.2 and 8.4 μM, respectively. Data were collected in triplicate and fitted with the Michaelis Menton equation (A,B) and inhibitor-response equation (C) in Prism8.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Transport was initiated by addition of ATP (black arrow), which generates a decrease in fluorescence as the membrane voltage builds up. (A, C, E) Raw data from DiSC3 fluorescence generated by reconstituted proteoliposomes. In panel A, the red arrow indicate an addition of valinomycin, which abolished the membrane voltage. (B, D, F) Analysis of these data to determine the initial rate, which involved normalizing the signal, determining the rate of quenching and fitting the curve with an exponential. The exponential fit is indicated as a red line, the quench rate as a blue line and the initial slope as a green line. These data come from WT protein subjected to K+ shock before (A,B) and after (C,D) LPP treatment as well as from the D307A mutant (E,F), which serves as a negative control (indicated at the bottom of each plot). (G) Comparison of transport rates from five different preparations based on the initial slopes from three independent experiments. Inhibition of transport by K+-shock and recovery with LPP treatment is consistent with results from ATPase activity measurements in Figure 4, indicating that ATP hydrolysis and K+ transport remain coupled in these preparations. Measurements were performed in triplicate and plotted as mean plus SEM.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55480/elife-55480-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) SDS-PAGE with Phos-tag statining of the K357A/R363A/Q116R mutant expressed in TK2498 shows robust serine phosphorylation of KdpB that is substantially reduced by LPP treatment. (B) ATPase activities from the K357A/R363A/Q116R mutant show an ~4-fold stimulation resulting from LPP treatment, thus producing ATPase levels comparable to WT. The ability of serine phosphorylation to inhibit this mutant indicates that salt bridges between the A-domain and the basic residues in the N-domain are not required for regulation of KdpFABC.
 
 Membrane transport assays indicate that transfer of K+ across the membrane remain coupled to ATPase activity of the complex. For these assays, KdpFABC was reconstituted into proteoliposomes and a voltage-sensitive dye (DiSC3) was used to report electrogenic transport of K+ into the vesicles (Fendler et al., 1996). Upon addition of ATP, a robust decrease in fluorescence indicated a buildup of a positive membrane potential (Figure 6—figure supplement 1). The initial part of the curve was fitted with an exponential to quantify the rate (Damnjanovic and Apell, 2014a) and to compare the preparation before and after LPP treatment. This analysis shows an excellent correlation between ATPase activity and transport. If an uncoupling of serine-phosphorylated molecules allowed passive transport of K+ in the absence of ATPase activity, the membrane voltage generated by unphosphorylated molecules would be rapidly dissipated, as is seen by the addition of valinomycin in Figure 6—figure supplement 1a (red arrow). Thus, these data suggest that the fraction of active molecules are fully capable of coupled transport whereas the fraction of inactive molecules with serine phosphorylation do not allow passive transport of K+ across the membrane.
 
@@ -97,7 +302,7 @@ In conclusion, our work has characterized a novel mechanism for regulating P-typ
 
 ## Materials and methods
 
-## Expression of KdpFABC complex
+### Expression of KdpFABC complex
 
 For studies of serine phosphorylation, the pSD107 plasmid was transformed into E. coli strain TK2499 (both from W. Epstein, Univ. of Chicago), which lacks all other K+ transport systems with genotype F−, thi, rha, lacZ, nagA, trkA405, trkD1, Δ(kdpFABC)5, Δ(ompT) (Figure 2). This plasmid was originally derived from pBR322 and contained the kdpFABC operon along with its endogenous promoter and an 8x histidine tag at the C-terminus of kdpC. Cells were grown in 4 L flasks at 31°C in K0-medium (46 mM Na2PO4, 23 mM NaH2PO4, 25 mM (NH4)2SO4, 0.4 mM MgSO4, 6 μM FeSO4, 1 mM sodium citrate, 0.2% glucose, 1 μg/mL thiamine, 50 μg/mL carbenicillin) supplemented with additions of 10 μM KCl every 90 min after culture density reached an OD600 of ~0.1. Total culture volumes ranged between 4 and 9 L. Cells were harvested at an OD600 of ~0.3–0.4 by centrifugation at 3500 g for 20 min; the resulting cell pellets were frozen at −80°C for storage. For K+ shock experiments, the culture was divided into equal portions and 20 mM KCl was added from a 2M stock solution followed by further incubation for defined periods of time prior to harvest.
 
@@ -105,11 +310,11 @@ To generate site-specific Ala mutants, site-directed PCR mutagenesis was used to
 
 For studies of EP formation, the kdpFABC operon with the 8x histidine tag was cloned into the pBAD vector (Invitrogen, Carlsbad, CA) and introduced into E. coli strain Top10 (Invitrogen). Cells were grown in 4L flasks at 37°C in LB media supplemented with 100 mg/mL ampicillin to an OD600 of 0.5. Expression was then induced by addition of 0.02% arabinose and the culture continued to grow at 37°C for 4 hr. Cells were then harvested by centrifugation as above and frozen for storage. Total culture volumes were typically 2 L.
 
-## Purification of KdpFABC
+### Purification of KdpFABC
 
 For purification of the KdpFABC complex, cells were resuspended in 50 mM Tris pH 7.5, 1.2 M NaCl, 10 mM MgCl2, 10% glycerol, protease inhibitor tablets (Roche, Basel Switzerland) and 1 mM DTT, and lysed with an Emulsiflex C3 high-pressure homogenizer (Avestin, Ottawa Canada). Whole cells and debris were removed by centrifugation for 15 min at 12,000 g, and membranes were pelleted by centrifugation for 2.5 hr at 90,140 g. Membranes were solubilized by overnight incubation in 50 mM Tris pH 7.5, 600 mM NaCl, 10 mM MgCl2, 10% glycerol, 1 mM TCEP and 1.2% n-decyl-β-maltoside (DM) at 4°C using 20 mL per gram of membrane. After centrifugation for 30 min at 90,140 g, the solution was loaded on a 5 mL Ni-NTA HiTrap chelating column (GE Healthcare, Chicago, IL) that was equilibrated in Ni-NTA base buffer (50 mM Tris pH 7.5, 600 mM NaCl, 10 mM MgCl2, 10% glycerol, 1 mM TCEP, and 0.15% DM) supplemented with 20 mM imidazole. The column was washed with 20 mL of this same buffer, followed by 20 mL of Ni-NTA base buffer supplemented with 50 mM imidazole. Stepwise 5 mL elutions (collected in 1.5 mL fractions) were then performed as the imidazole concentration was incremented in steps of 50 mM up to a final concentration of 300 mM imidazole. Alternatively, elution was done with a continuous gradient running from 50 to 500 mM imidazole. The fractions containing KdpFABC were pooled, concentrated to ~0.7 mL using a 100 kDa cut-off Amicon centrifugal filter (Sigma Aldrich, St. Louis, MO) and introduced onto a Superdex 200 size exclusion column (GE Healthcare) pre-equilibrated with 25 mM Tris pH 7.5, 100 mM KCl, 10% glycerol, 1 mM TCEP, and 0.15% DM. For measurements of EP formation, the NaCl was substituted for KCl during this purification. Fractions were either stored for short periods (days) at 4°C or frozen in liquid nitrogen and stored at −80°C.
 
-## Quantification of serine phosphorylation
+### Quantification of serine phosphorylation
 
 The Phospho-Tag phosphoprotein gel stain kit (ABP Biosciences, Beltsville, MD) was used to evaluate levels of serine phosphorylation. Specifically, 20 μg of precipitated protein was resuspended in sodium dodecylsulfate (SDS) buffer and run on a 10% SDS-PAGE gel. After staining according to manufacturer’s instructions, gels were imaged in a Chemidoc imaging system (BioRad, Hercules, CA) using the epi-green illumination for Cy3 fluorescence. KdpB-S162A was used as a negative control and as background in quantifying band intensities.
 
@@ -119,7 +324,7 @@ LC-MS/MS was performed with a ThermoEasy nLC 1000 ultra-high-pressure UPLC syste
 
 Mass spectra were first processed with Proteome Discoverer 1.4 and then compared with a SwissProt Database with a Taxonomy filter for E coli (22,982 sequences) from 072014 using Mascot (Matrix Science, London, UK). Decoy protein sequences with a reversed order were included to estimate false discovery rates, which averaged ~1% at protein and peptide levels. Peptide spectral matches were further analyzed with Thermo Scientific Xcalibur software. Phosphoserine peptide ion intensities (within 5 ppm of calculated mass) were manually extracted, and intensity ratios of singly phosphorylated peptides relative to total (phosphorylated and nonphosphorylated) peptide intensities were calculated for each sample.
 
-## Activity assays
+### Activity assays
 
 Rates for ATP hydrolysis were measured with a coupled enzyme assay (Warren et al., 1974) with 5 μg of purified KdpFABC in a total volume of 0.5 mL at 25°C. The assay buffer contained of 75 mM TES pH 7, 150 mM KCl, 7.5 mM MgCl2, 9.6 U/mL lactate dehydrogenase, 9.6 U/mL pyruvate kinase, 2.4 mM ATP, 0.5 mM phosphoenol-pyruvate, 0.36 mM NADH, and 0.15% DM. Concentrations of KCl and ATP were varied for determination of KM. Orthovanadate was prepared by adjusting the pH of a 200 mM solution of sodium othovanadate to 10 using NaOH, boiling until the yellow color cleared, cooling to room temperature, and repeating this cycle until the pH stabilized. Assays were run in triplicate and data from titrations with K+, ATP and VO4 were fit using Prism8 software (GraphPad Software, San Diego, CA).
 

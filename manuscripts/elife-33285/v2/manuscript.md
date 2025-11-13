@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.33285.001 Somatosensory neurons mediate responses to diverse mechanical stimuli, from innocuous touch to noxious pain. While recent studies have identified distinct populations of A mechanonociceptors (AMs) that are required for mechanical pain, the molecular underpinnings of mechanonociception remain unknown. Here, we show that the bioactive lipid sphingosine 1-phosphate (S1P) and S1P Receptor 3 (S1PR3) are critical regulators of acute mechanonociception. Genetic or pharmacological ablation of S1PR3, or blockade of S1P production, significantly impaired the behavioral response to noxious mechanical stimuli, with no effect on responses to innocuous touch or thermal stimuli. These effects are mediated by fast-conducting A mechanonociceptors, which displayed a significant decrease in mechanosensitivity in S1PR3 mutant mice. We show that S1PR3 signaling tunes mechanonociceptor excitability via modulation of KCNQ2/3 channels. Our findings define a new role for S1PR3 in regulating neuronal excitability and establish the importance of S1P/S1PR3 signaling in the setting of mechanical pain thresholds.
+Somatosensory neurons mediate responses to diverse mechanical stimuli, from innocuous touch to noxious pain. While recent studies have identified distinct populations of A mechanonociceptors (AMs) that are required for mechanical pain, the molecular underpinnings of mechanonociception remain unknown. Here, we show that the bioactive lipid sphingosine 1-phosphate (S1P) and S1P Receptor 3 (S1PR3) are critical regulators of acute mechanonociception. Genetic or pharmacological ablation of S1PR3, or blockade of S1P production, significantly impaired the behavioral response to noxious mechanical stimuli, with no effect on responses to innocuous touch or thermal stimuli. These effects are mediated by fast-conducting A mechanonociceptors, which displayed a significant decrease in mechanosensitivity in S1PR3 mutant mice. We show that S1PR3 signaling tunes mechanonociceptor excitability via modulation of KCNQ2/3 channels. Our findings define a new role for S1PR3 in regulating neuronal excitability and establish the importance of S1P/S1PR3 signaling in the setting of mechanical pain thresholds.
 
 ## Introduction
 
@@ -42,43 +42,67 @@ To identify candidate genes underlying mechanosensation, we previously performed
 
 S1P promotes excitability in small-diameter, capsaicin-sensitive nociceptors (Mair et al., 2011; Camprubí-Robles et al., 2013; Zhang et al., 2006; Li et al., 2015). In addition, S1PR3 has been shown to mediate spontaneous pain triggered by elevated S1P and thermal sensitization following sterile tissue injury (Camprubí-Robles et al., 2013). However, no studies have examined the role of S1PR3 in mechanosensation or in regulating somatosensory behaviors under normal conditions. Given the enrichment of S1pr3 in mechanosensory neurons of the star-nosed mole and mouse, we hypothesized that S1P signaling via S1PR3 may also play a role in mechanosensation. Thus, we set out to define the role of S1P signaling and S1PR3 in somatosensory mechanoreceptors.
 
-## S1PR3 mediates acute mechanical pain
+### S1PR3 mediates acute mechanical pain
 
 We first examined a variety of somatosensory behaviors in mice lacking S1PR3 (Kono et al., 2004) (S1pr3tm1Rlp/Mmnc; referred to herein as S1PR3 KO). We initially investigated baseline responses to mechanical stimuli. S1PR3 KO mice displayed a dramatic loss of mechanical sensitivity (Figure 1A; see Figure 1—source data 1), as von Frey paw withdrawal thresholds were significantly elevated in S1PR3 KO mice relative to WT and S1PR3 HET littermates (mean thresholds: 1.737 g vs. 0.736 and 0.610 g, respectively). Moreover, S1PR3 KO mice demonstrated decreased responses to a range of noxious tactile stimuli (2–6 g; Figure 1B) and to noxious pinprick stimulation (Figure 1C), but normal responsiveness to innocuous tactile stimuli (0.6–1.4 g; Figure 1B). S1PR3 KO mice exhibited normal tape removal attempts (Ranade et al., 2014) (Figure 1D), righting reflexes (Figure 1—figure supplement 1A), radiant heat withdrawal latencies (Figure 1E), and itch-evoked scratching (Figure 1—figure supplement 1B). These results demonstrate a selective role for S1PR3 in acute mechanical pain.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig1-v2.jpg)
+
+**Figure 1.:** (A) von Frey 50% withdrawal threshold measurements for S1pr3+/+ (WT, N = 8), S1pr3+/- (HET, N = 7) and S1pr3-/- (KO, N = 12) mice. p<0.0001 (one-way ANOVA). Tukey-Kramer post hoc comparisons for KO and HET to WT indicated on graph. (B) von Frey force-response graph for WT (N = 8) versus KO (N = 12) animals; pgenotype <0.0001 (two-way ANOVA). Tukey HSD comparisons between genotypes are indicated for given forces. (C) % withdrawal to pinprick stimulation of hindpaw for HET versus KO animals; p<0.0001 (unpaired t-test; N = 5–7 mice per group). (D) Number of attempted removal bouts in tape assay for WT (N = 2), HET (N = 2), and KO (N = 5) mice; p=0.172 (one-way ANOVA). (E) Baseline radiant heat measurements for WT (N = 8), HET (N = 3), and KO (N = 5) mice; p=0.444 (one-way ANOVA). (F) von Frey 50% withdrawal threshold measurements for mice pre- and post-injection of 500 µM TY 52156 (N = 10), 10 µM W146 (N = 6), or 1% DMSO-PBS vehicle (N = 17); p=0.016, 0.650 (two-tailed paired t-test comparing vehicle- vs. drug-injected paw). (G) von Frey force-response graph for mice injected with either 1% DMSO-PBS (N = 4) or 500 µM TY 52156 (N = 4); ptreatment <0.0001 (two-way ANOVA). Tukey HSD comparisons were made between treatment groups and significant differences at a given force are indicated on graph. Error bars represent mean ± SD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Related to Figure 1. (A) Time to righting in seconds for P7 pups per genotype for WT and KO mice; p=0.575 (two-tailed unpaired t-test; N = 7 mice per genotype). (B) (Left) Time spent scratching in response to injection of 50 mM chloroquine or PBS vehicle (VEH) in WT and KO mice; p=0.36, 0.98, (unpaired t-tests; N = 3–4 mice per group). (Right) Time spent scratching in response to injection of 27 mM Histamine or 0.1% DMSO-PBS in WT and KO mice; p=0.51, 0.06 (unpaired t-tests; N = 3–4 mice per group). (C) Normalized paw withdrawal latencies post-injection of SKI II, TY 52156, or 0.1% DMSO-PBS vehicle into the hind paw of wild-type animals; p=0.65 (one-way ANOVA; N = 5 mice per group). Unless otherwise indicated, error bars represent mean ± SD.
+
 As a complement to our analysis of somatosensation in S1PR3 KO animals, we employed a pharmacological approach, using the S1PR3-selective antagonist TY 52156 (TY) (Nussbaum et al., 2015). Similar to the phenotype of knockout animals, intradermal injection of 500 µM TY into the mouse hindpaw (the site of testing) triggered a rapid and significant elevation in von Frey paw withdrawal thresholds (Figure 1F) and decreased responsiveness to noxious (2–6 g), but not innocuous (0.6–1.4 g), tactile stimuli (Figure 1G), without affecting noxious heat sensitivity (Figure 1—figure supplement 1C). By contrast, blockade of S1PR1 with the selective antagonist W146 (Finley et al., 2013) had no effect on baseline mechanical or thermal thresholds (Figure 1F; Figure 1—figure supplement 1C). Overall, these data show that S1PR3 signaling sets mechanical pain sensitivity.
 
-## Endogenous S1P mediates acute mechanical pain
+### Endogenous S1P mediates acute mechanical pain
 
 We next asked whether peripheral S1P was required for the S1PR3-dependent effects on mechanosensation. We decreased S1P levels via injection of the sphingosine kinase inhibitor SKI II to block local production of S1P (Chiba et al., 2010) or elevated S1P levels via intradermal injection of S1P and measured behaviors 30 min after injection. Decreasing local S1P levels with SKI II significantly reduced mechanical sensitivity (Figure 2A; see Figure 2—source data 1), comparable to the hyposensitivity phenotype observed in S1PR3 KO mice (Figure 1A). Again, similar to what was observed in S1PR3 KO animals (Figure 1E), peripheral blockade of S1P production had no effect on baseline thermal sensitivity (Figure 1—figure supplement 1C). Surprisingly, injecting exogenous S1P (10 µM; maximum solubility in saline vehicle) had no effect on mechanical sensitivity (Figure 2A–B). However, as previously reported (Mair et al., 2011; Camprubí-Robles et al., 2013), S1P injection triggered S1PR3-dependent thermal hypersensitivity and spontaneous pain (Figure 2C–D), demonstrating that the lack of effect on mechanical hypersensitivity is not due to problems with S1P delivery or degradation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig2-v2.jpg)
 
-**Figure 2.:** (A) von Frey 50% withdrawal measurements for mice pre- and post-injection of 50 µM SKI II (N = 8) or 10 µM S1P (N = 7); p=0.003, 0.604 (two-tailed paired t-tests). (B) von Frey force-response graph for animals injected with 10 µM S1P or 0.1% MeOH-PBS; p >0.05 (two-way ANOVA; N = 8 mice per group). No Tukey HSD comparisons at any force between genotypes were significant. (genotypeC) Intradermal cheek injection of 10 µM S1P, 2 µM, 0.2 µM, and 20 µL 0.3% methanol PBS (vehicle), with quantification of number of forepaw wipes over the 5 min post-injection interval; p<0.0001 (one-way ANOVA; N = 3 mice per condition). Dunnett’s multiple comparisons p-values are represented on graph for comparisons made between treated and vehicle groups. (D) Radiant heat normalized paw withdrawal latencies 20–30 min post injection of 15 µL 10 µM S1P, 0.2 µM S1P. or 0.3% methanol-PBS vehicle (i.d.) into the hind paw of S1PR3 WT or KO mice; p=0.0129 (one-way ANOVA; N = 3–10 mice per condition). Dunnett’s multiple comparisons p-values are represented on graph for comparisons made between treated and vehicle groups. (E) von Frey 50% withdrawal measurements for mice pre- (baseline) and post-injection of 50 µM SKI II (N = 14) and 0 (N = 4), 10 (N = 3), 75 (N = 4), or 200 nM S1P (N = 3; one-way ANOVA; p=0.0001). Tukey Kramer comparisons are indicated on graph. Error bars represent mean ± SD.10.7554/eLife.33285.006Figure 2—source data 1.Related to Figure 2.
+**Figure 2.:** (A) von Frey 50% withdrawal measurements for mice pre- and post-injection of 50 µM SKI II (N = 8) or 10 µM S1P (N = 7); p=0.003, 0.604 (two-tailed paired t-tests). (B) von Frey force-response graph for animals injected with 10 µM S1P or 0.1% MeOH-PBS; pgenotype >0.05 (two-way ANOVA; N = 8 mice per group). No Tukey HSD comparisons at any force between genotypes were significant. (C) Intradermal cheek injection of 10 µM S1P, 2 µM, 0.2 µM, and 20 µL 0.3% methanol PBS (vehicle), with quantification of number of forepaw wipes over the 5 min post-injection interval; p<0.0001 (one-way ANOVA; N = 3 mice per condition). Dunnett’s multiple comparisons p-values are represented on graph for comparisons made between treated and vehicle groups. (D) Radiant heat normalized paw withdrawal latencies 20–30 min post injection of 15 µL 10 µM S1P, 0.2 µM S1P. or 0.3% methanol-PBS vehicle (i.d.) into the hind paw of S1PR3 WT or KO mice; p=0.0129 (one-way ANOVA; N = 3–10 mice per condition). Dunnett’s multiple comparisons p-values are represented on graph for comparisons made between treated and vehicle groups. (E) von Frey 50% withdrawal measurements for mice pre- (baseline) and post-injection of 50 µM SKI II (N = 14) and 0 (N = 4), 10 (N = 3), 75 (N = 4), or 200 nM S1P (N = 3; one-way ANOVA; p=0.0001). Tukey Kramer comparisons are indicated on graph. Error bars represent mean ± SD.
 
 These data support a model whereby S1P constitutively activates S1PR3 to set normal mechanical pain thresholds. To further test this model, we asked if the mechanical hyposensitivity elicited after endogenous S1P depletion (via SKI II) could be rescued by local injection of exogenous S1P. Indeed, we found that injection of exogenous S1P reversed SKI II-induced mechanical hyposensitivity in a dose-dependent manner, and observed a maximal effect with 200 nM S1P (Figure 2E). Although quantification of native S1P levels in skin is inaccurate owing to avid lyase activity (Shaner et al., 2009), our data establish that baseline S1P levels are sufficient to maximally exert their effect on S1PR3-dependent mechanical pain, such that increased S1P does not evoke mechanical hypersensitivity, but diminished S1P leads to mechanical hyposensitivity. These data show that constitutive activation of S1PR3 by S1P is required for normal mechanosensitivity.
 
-## S1PR3 is expressed in A mechanonociceptors and thermal nociceptors
+### S1PR3 is expressed in A mechanonociceptors and thermal nociceptors
 
 Our behavioral data showing distinct roles for S1PR3 in mechanonociception and thermal hypersensitivity suggest that S1PR3 is expressed in distinct subsets of somatosensory neurons. While a previous study suggested that all somatosensory neurons express S1PR3 (Camprubí-Robles et al., 2013), single cell RNA seq data suggests S1pr3 is not expressed by all DRG neurons (Usoskin et al., 2015), and no studies have performed quantitative analysis of S1PR3 staining or co-staining to define subpopulations of S1PR3+ neurons. We thus set out to characterize the somatosensory neuron subtypes expressing S1pr3 using in situ hybridization (ISH) of wild-type somatosensory ganglia and immunohistochemistry (IHC) in an S1pr3mCherry/+ reporter mouse (Sanna et al., 2016).
 
 We first used in situ hybridization (ISH) with a specific S1pr3 probe to examine expression patterns of S1pr3 (Figure 3A–B; see Supplementary file 1). In our experiments, 43% of cells from wild-type DRG expressed S1pr3. Co-ISH revealed that one population of S1pr3+ neurons represents Aδ mechanonociceptors (AMs). These cells expressed Scn1a (39.9% of all S1pr3+), a gene that encodes the Nav1.1 sodium channel, which mediates mechanical pain in Aδ fibers (Osteen et al., 2016). S1pr3+ cells also co-expressed Npy2r (20.4% of all S1pr3+), a marker of a subset of mechanonociceptive A fibers (Arcourt et al., 2017). S1pr3 was expressed in 70.6% of Scn1a+ cells and 72% of Npy2r+ cells, comprising a majority of both of these populations. Interestingly, a subset of cells co-expressed S1pr3 and the mechanically sensitive channel Piezo2, which is expressed by Aβ, Aδ, and C fibers (Ranade et al., 2014). The remaining S1pr3+ cells were Trpv1+ and/or Trpa1+ C nociceptors (67.1% of all S1pr3+), which are reported to overlap minimally with the Scn1a+ and Npy2r+ populations (Arcourt et al., 2017; Osteen et al., 2016).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig3-v2.jpg)
+
+**Figure 3.:** (A) (Top) Representative co-ISH of S1pr3 (green; left) with Scn1a, Npy2r, Piezo2, and Trpv1 (magenta; center) in sectioned DRG. Right column: overlay with co-localized regions colored white (10x air objective; scale = 100 µm). (B) Bar chart showing the % of total cells expressing the indicated marker (grey) and the % of total cells co-expressing both marker and S1pr3 (green). See Table S1 for quantification. (C) Representative IHC images of sectioned DRG from S1pr3mCherry/+ animals stained with anti-DsRed (green, S1PR3) and anti-Peripherin (left, magenta) or anti-NF200 (right, magenta). Arrows indicate co-stained cells. Images were acquired using a 10x air objective (scale = 100 µm). (D) Whole-mount skin IHC confocal images with anti-DsRed antibody (S1PR3, green) and anti-NefH antibody (NF200, magenta) in an S1pr3mCherry/+ animal (20x water objective; scale = 50 µm). Arrows indicate co-positive free nerves (left image). Arrowheads indicate NF200- free nerves (left) or S1PR3- circumferential fibers (right image). (E) Sectioned skin IHC with anti-DsRed (S1PR3) and anti-NefH (NF200, left, top right) or anti-DsRed (S1PR3) and anti-beta-tubulin III (BTIII, bottom right) antibody (magenta) in S1pr3mCherry/+ skin (20x air objective; scale = 50 µm). Arrows indicate co-positive free nerve endings (left), S1PR3-negative lanceolate/circumferential hair follicle endings (top right, arrow = circumferential, arrowhead = lanceolate), or S1PR3-negative putative Merkel afferent (bottom right). (F) (Left) Quantification of sectioned DRG IHC experiments showing % of S1PR3+ cells that co-stained with indicated markers (n > 250 cells per marker). (Right) Quantification of sectioned skin IHC experiments showing % of fibers positive for indicated marker that co-stained with S1PR3 (anti-DsRed; n = 10 images per marker from two animals).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Related to Figure 3. (A) ISH of sectioned adult DRG from WT and S1PR3 KO animals showing specificity of S1pr3 probes (20x air objective, scale = 50 µm). (B) (Image) Representative ISH Trpv1 (top) and Trpa1 (bottom) from sectioned DRG of wild-type (left) and S1PR3 KO animals (right; 20x air objective; scale = 50 µm). (C) % of total cells expressing Trpv1 and Trpa1 in sectioned DRG of wild-type and S1PR3 KO animals. (D) (Left) Average diameter ± SEM of all cells in sectioned DRG from WT and S1PR3 KO animals (p=0.36, two-tailed t-test; n = 437 and 679 cells from two animals each, respectively). (Right) Average diameter ±SD of Trpv1+ cells in WT and S1PR3 KO DRG (p=0.63, two-tailed t-test; n = 127 and 85 cells, respectively). (E) Representative staining with anti-S1PR3 antibody (1:2000) in sectioned adult DRG from WT and S1PR3 KO animals (10x air objective, scale = 100 µm). (F) Representative IHC images of sectioned DRG from S1PR3 KO animals stained with anti-DsRed (green) and anti-Peripherin (left, magenta) or anti-NF200 (right, magenta). Images were acquired using a 10x air objective (scale = 100 µm). (G) (Left) Quantification of total percentage of cells stained with indicated markers in sectioned DRG from S1pr3mCherry/+ and S1PR3 KO animals (n > 250 cells per condition). (Right) Average diameter of anti-NF200 +cells in S1pr3mCherry/+ and S1PR3 KO DRG (p=0.15, two-tailed t-test; n = 256 and 194 cells, respectively). (H) Percent responders to S1P and capsaicin in ratiometric calcium imaging of wild-type and S1PR3 KO cultured DRG and TG neurons; p<0.0001 (one-way ANOVA; N = 2 DRG and 2 TG preparations of 8 wells each). Sidak’s multiple comparisons p-values are represented on graph for comparisons made between genotypes. Error bars represent mean ± SEM. (I) (Left) No primary control showing robust staining of hair follicles in whole mount skin in contrast to specific neuronal staining shown in Figure 3D. (Right) No primary control showing staining around hair follicles and in epidermis in sectioned skin. Scale = 50 µm (20x water objective).
+
 We next used an S1pr3mCherry/+ reporter mouse, which produces a functional S1PR3-mCherry fusion protein (Sanna et al., 2016), as an independent strategy to explore S1PR3 expression and localization. This strategy was used because we found that anti-S1PR3 antibodies showed broad immunoreactivity in DRG from mice lacking S1PR3, and so we instead used anti-DsRed antibodies to probe expression of the S1PR3 fusion protein (Figure 3—figure supplement 1E). We found that 42.4% of S1PR3+ cells co-stained with anti-Peripherin, demonstrating that S1PR3 is expressed in a subset of small-diameter neurons. We also observed that 69.5% of S1PR3+ cells co-stained with anti-NF200, which marks medium and large-diameter myelinated neurons. Furthermore, we observed that S1PR3+ cells were primarily of small to medium diameter (11.3–35.1 µm), whereas all cells in the DRG ranged from 11.3 to 53.9 µm. Overall, these data support the expression of S1PR3 in subsets of small-diameter thermal nociceptors and medium-diameter mechanonociceptors (Figure 3F). Additionally, no significant differences were observed between WT and S1PR3 KO DRG in number of Trpa1+, Trpv1+, Peripherin+, NF200+, or IB4+ cells (Figure 3—figure supplement 1B–C,F,G). The mean diameters of Trpv1+ neurons (Figure 3—figure supplement 1D, left), NF200+ neurons (Figure 3—figure supplement 1G), or all neurons (Figure 3—figure supplement 1D, right) in WT versus KO DRG were not significantly different, suggesting no loss of major sensory neuronal subtypes in the S1PR3 KO.
 
 We then visualized S1PR3 expression in nerve fibers that innervate the skin using anti-DsRed antibodies in whole-mount immunohistochemistry (IHC; Figure 3D). The reporter animals showed no specific antibody staining in epidermal or dermal cells (Figure 3—figure supplement 1I), and single-cell RNA seq of a diverse array of mouse epidermal and dermal cells corroborates this lack of expression (Joost et al., 2016). We observed overlap of S1PR3-expressing free nerve endings with NF200+ myelinated free nerves and NF200- putative C-fiber endings (Figure 3F), but did not observe expression of S1PR3 in NF200+ circumferential or lanceolate hair follicle receptors, or in putative Merkel afferents (Figure 3D–E). β-tubulin III, PGP9.5 (pan-neuronal markers), and NF200 staining in S1PR3 KO skin displayed patterns of epidermal and dermal innervation similar to WT skin, suggesting the phenotypes observed in the S1PR3 KO mice are not due to developmental loss of sensory neuronal innervation (pPGP9.5= 0.443 (n = 93, 38 fibers); pNefH = 0.405 (n = 61, 28 fibers); pBTIII = 0.353 (n = 104, 89 fibers); two-tailed t-tests based on average number of fibers per field of view). These results support expression of S1PR3 in subsets of myelinated A mechanonociceptors and unmyelinated C nociceptors that terminate as free nerve endings.
 
-## S1P activates thermal nociceptors but not putative AMs
+### S1P activates thermal nociceptors but not putative AMs
 
 Live imaging of cultured DRG neurons from adult reporter animals showed expression of S1PR3-mCherry fusion protein in 48.3% of neurons, mirroring our ISH and IHC results (Figure 4A). To examine the effects of S1P on A mechanonociceptors and C nociceptors, we performed ratiometric calcium imaging and electrophysiology on DRG cultures from reporter mice. Interestingly, only 56.1 ± 22.4% of mCherry-expressing neurons were activated by 1 µM S1P (Representative trace in Figure 4B; representative images in Figure 4C), which our dose-response showed to be the saturating concentration for calcium influx (Figure 4D; EC50 = 155 nM). All S1P-responsive neurons were also capsaicin-sensitive (n > 2000 neurons). And while sensory neurons from S1PR3 KO animals did not respond to S1P, as expected (Camprubí-Robles et al., 2013), they exhibited capsaicin responses that were not significantly different from WT neurons (Figure 3—figure supplement 1H). The mean diameter of S1P-responsive mCherry+ neurons was 22.4 ± 1.0 µm, whereas the mean diameter of non-responsive mCherry+ neurons was 28.7 ± 3.2 µm (p=0.0002, two-tailed t-test). We also performed whole cell current clamp experiments and, consistent with other studies (Mair et al., 2011; Zhang et al., 2006; Li et al., 2015), found that S1P evoked action potential firing in capsaicin-sensitive small diameter cells (Figure 4E). This shows that only the small-diameter, S1PR3+ putative nociceptors are excited by S1P. We next asked whether the S1PR3+ medium-large diameter neurons represent the mechanonociceptors observed by ISH (Figure 3A). To this end, we asked whether the spider toxin Hm1a, a selective activator of AM nociceptors (Osteen et al., 2016), triggers calcium influx in S1PR3-expressing trigeminal neurons. Indeed, we found that 44.2 ± 15.1% of Hm1a-responsive neurons expressed mCherry (Figure 4F), consistent with our staining showing expression of S1pr3 in AM nociceptors and the role of Hm1a-responsive neurons in mediating mechanical pain in vivo (Osteen et al., 2016).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig4-v2.jpg)
 
-**Figure 4.:** (A) (Left) Representative image of mCherry signal in live, cultured adult DRG neurons from one S1pr3 animal. (Right) Quantification of % of total cells expressing mCherry/+S1pr3 from DRG ISH and mCherry from dissociated DRG cultures (N = 2 animals each experiment). (B) Representative traces depicting F340/F380 signal from Fura2-AM calcium imaging showing two neurons, one which responded to 1 µM S1P, 1 µM Capsaicin, and high K + Ringer’s (red) and one which only responded to high K+ (black). (C) (Left) Fura-2 AM calcium imaging before (left) and after (center) addition of 1 µM S1P in S1pr3 mCherry/+ cultured mouse DRG neurons. Bar indicates fluorescence ratio. Right-hand image indicates mCherry fluorescence. (Right) % of mCherry neurons that are responsive to 1 µM S1P in ratiometric calcium imaging (n > 1000 cells from 16 imaging wells from three animals). (D) Dose-response curve of mean neuronal calcium responders to varying concentrations of S1P. Concentrations used: 1, 10, 50, 100, 200, 1000, and 10,000 nanomolar (N = 2 animals). Error bars represent mean ± SD. Black dotted line indicates sigmoidal fit for all S1P responders from which EC50 was derived. All S1P responders were also capsaicin-responsive. (E) Current-clamp trace of a single wild-type neuron firing action potentials in response to bath addition of 1 µM S1P and 1 µM capsaicin, with Ringer’s wash in-between. Four of tenneurons responded to S1P and one of one S1P-responsive also responded to capsaicin. Bar = 2 s. (F) (Left) Fura-2 AM calcium imaging after addition of 500 nM Hm1a in S1pr3mCherry/+ P0 TG neurons, which were used instead of adult DRG neurons because they respond to Hm1a without prior PGE2 sensitization. Right-hand image indicates mCherry fluorescence. (Right) % of Hm1a-responsive P0 TG neurons that are mCherry+ (N = 1 animal, 1230 total neurons).
+**Figure 4.:** (A) (Left) Representative image of mCherry signal in live, cultured adult DRG neurons from one S1pr3mCherry/+ animal. (Right) Quantification of % of total cells expressing S1pr3 from DRG ISH and mCherry from dissociated DRG cultures (N = 2 animals each experiment). (B) Representative traces depicting F340/F380 signal from Fura2-AM calcium imaging showing two neurons, one which responded to 1 µM S1P, 1 µM Capsaicin, and high K + Ringer’s (red) and one which only responded to high K+ (black). (C) (Left) Fura-2 AM calcium imaging before (left) and after (center) addition of 1 µM S1P in S1pr3 mCherry/+ cultured mouse DRG neurons. Bar indicates fluorescence ratio. Right-hand image indicates mCherry fluorescence. (Right) % of mCherry neurons that are responsive to 1 µM S1P in ratiometric calcium imaging (n > 1000 cells from 16 imaging wells from three animals). (D) Dose-response curve of mean neuronal calcium responders to varying concentrations of S1P. Concentrations used: 1, 10, 50, 100, 200, 1000, and 10,000 nanomolar (N = 2 animals). Error bars represent mean ± SD. Black dotted line indicates sigmoidal fit for all S1P responders from which EC50 was derived. All S1P responders were also capsaicin-responsive. (E) Current-clamp trace of a single wild-type neuron firing action potentials in response to bath addition of 1 µM S1P and 1 µM capsaicin, with Ringer’s wash in-between. Four of tenneurons responded to S1P and one of one S1P-responsive also responded to capsaicin. Bar = 2 s. (F) (Left) Fura-2 AM calcium imaging after addition of 500 nM Hm1a in S1pr3mCherry/+ P0 TG neurons, which were used instead of adult DRG neurons because they respond to Hm1a without prior PGE2 sensitization. Right-hand image indicates mCherry fluorescence. (Right) % of Hm1a-responsive P0 TG neurons that are mCherry+ (N = 1 animal, 1230 total neurons).
 
-## S1PR3 modulates KCNQ2/3 channels to regulate AM excitability
+### S1PR3 modulates KCNQ2/3 channels to regulate AM excitability
 
 We next interrogated the molecular mechanism by which S1P signaling in AM nociceptors may regulate mechanical pain. We performed whole-cell current clamp on the medium-diameter S1pr3mCherry/+ dissociated DRG neurons (membrane capacitance = 61.05 ± 1.92 pF), which did not display S1P-evoked calcium influx (Figure 4B–C). In these cells, 1 µM S1P application did not change membrane potential (Figure 5—figure supplement 1A; see Figure 5—source data 1) or elicit firing in the absence of current injection (Figure 5—figure supplement 1A; Figure 5A). However, S1P dramatically lowered the threshold to fire action potentials (rheobase) in an S1PR3-dependent manner (Figure 5A, Figure 5—figure supplement 1B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig5-v2.jpg)
+
+**Figure 5.:** All experiments were performed in S1pr3mCherry/+ or -/- DRG neurons. (A) (Left) Example traces of a single mCherry +neuron in whole cell current clamp before and after S1P application. (Right) % change in rheobase after S1P application for S1pr3mCherry/+ (left, n = 7) and KO (right, n = 12) neurons (pWT,KO = 0.012, 0.287; two-tailed paired t-tests). (B) % ∆ in input resistance after S1P or vehicle application (p=0.017; two-tailed paired t-test; n = 4 cells per group). (C) The S1P-sensitive current is carried by potassium. The current-voltage relationship was determined by subtraction of the post-S1P current from the pre-S1P current and reverses at −60.125 mV; n = 6 cells. Data were fitted with a Boltzmann equation. Pre- and post-S1P currents were measured at the indicated voltage (−100 mV to +80 mV, 20 mV increments) following a +100 mV step (100 ms). Current was quantified using the peak absolute value of the slowly-deactivating current 0–10 ms after stepping to indicated voltage. Unless indicated otherwise, all error bars represent mean ± SEM. (D) (Graphic, top) Averaged current traces of a single mCherry+ neuron in whole cell voltage clamp recording comparing tail currents (∆I tail) pre- and post-S1P using indicated voltage step protocol. (graphic, bottom) Averaged current traces of a single mCherry+ neuron in whole cell voltage clamp recording with XE991 treatment. Holding phase (−40 mV, 150 ms) was truncated in traces. (Left graph) % ∆ in outward tail current (average ±SD after indicated treatments (1 µM S1P, 3 µM XE 991, or both) for S1pr3mCherry/+ medium-diameter neurons; (p=0.58; one-way ANOVA; n = 6, 8, 14 cells) using protocol depicted at right. (Right graph) % ∆ in inward tail current after indicated treatments (LINO = 100 µM linopirdine) for S1pr3mCherry/+ medium-diameter neurons; (p=0.47; two-tailed paired t-test; n = 12 cells).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Related to Figure 5. (A) (Left) Example trace of a single mCherry+ neuron in S1P before and after current injection. (Right) Resting membrane potential (RMP) in millivolts before and after addition of S1P (p=0.23; two-tailed paired t-test; n = 6 cells). (B) Rheobase pre- and post-S1P application in DRG neurons; pWT = 0.011; pKO = 0.28 (two-tailed paired t-test). Same data are represented in Figure 5A. (C) Sodium I-V relationship for a representative S1pr3mCherry/+ medium-diameter neuron pre- and 5 min post- 1 µM S1P using voltage step from −100 to +80 mV (150 ms steps, −80 mV holding). (D) Steady-state I-V relationship for same neuron. (E) (Left) % ∆ in peak sodium current (Na+) after S1P or 1% DMSO vehicle application for medium-diameter mCherry+ neurons; p=0.39 (two-tailed paired t-test; n = 7 cells per group). (Right) % ∆ in peak steady-state current (S.S. K+) after S1P or 1% DMSO vehicle application for medium-diameter mCherry+ neurons; p=0.948 (two-tailed paired t-test; n = 7 cells per group). (F) % ∆ in inward tail current (∆I tail) after S1P or 1% DMSO vehicle application for S1pr3mCherry/+ and KO medium-diameter neurons using a pre-pulse stimulation of +80 mV followed by a step to −80 mV, where (∆I tail) was calculated by subtracting the steady-state current from the absolute peak of the slowly-deactivating current at −80 mV (p=0.014; one-way ANOVA; n = 10, 13, 10 cells). Tukey Kramer post hoc p-values indicated on graph. (G) Dose-response relationship between % ∆ in tail current and S1P concentration for 1 nM, 50 nM, 100 nM, and 1 µM S1P (n = 7 cells). EC50 (48.8 nM), marked by thin dotted lines, was estimated from sigmoidal fit (thick dotted line).
 
 We then set out to determine the mechanism by which S1PR3 activity increases neuronal excitability using whole-cell voltage clamp recording. Previous studies showed that S1P excites capsaicin-sensitive nociceptors by increasing voltage-gated sodium currents and reducing steady-state potassium currents (Zhang et al., 2006; Li et al., 2015). We found that S1P had no such effects on S1PR3+ medium-diameter cells (Figure 5—figure supplement 1C–E). By contrast, S1P triggered a robust increase in input resistance (Figure 5B), consistent with the closure of potassium channels. I-V analysis revealed that the current inhibited by S1P application was carried by potassium (Figure 5C). Additionally, S1P significantly reduced slow, voltage-dependent tail current amplitudes (Figure 5—figure supplement 1F; Figure 5D (top)) in an S1PR3-dependent manner (Figure 5—figure supplement 1F, center).
 
@@ -86,15 +110,31 @@ As tail currents in Aδ neurons are primarily mediated by KCNQ2/3 potassium chan
 
 We also found that the effect of S1P on KCNQ2/3 currents was mediated by low levels of S1P, exhibiting an IC50 of 48 nM with saturation at 100 nM (Figure 5—figure supplement 1G). While S1P cannot be accurately measured in non-plasma tissues, this is similar to estimated levels of S1P in peripheral tissues (Schwab et al., 2005; Ramos-Perez et al., 2015), and to levels which rescued mechanosensitivity after local S1P depletion (Figure 2E). Thus, our in vitro IC50 supports our finding that baseline S1P levels are sufficient to maximally exert their effect on mechanical pain. In summary, our electrophysiological and behavioral observations support a model in which baseline S1P/S1PR3 signaling governs mechanical pain thresholds through modulation of KCNQ2/3 channel activity in AM neurons.
 
-## S1PR3 is required for nociceptive responses of high-threshold AM nociceptors
+### S1PR3 is required for nociceptive responses of high-threshold AM nociceptors
 
 Given the effects of S1P on putative AM neurons in vitro and the selective attenuation of baseline mechanical pain in S1PR3 KO animals, we hypothesized that S1PR3 would play a role in AM afferent function. To test this, we utilized ex vivo skin-nerve recordings to analyze the effects of genetic ablation of S1PR3 on AM afferents, which mediate fast mechanical pain sensation. S1PR3 HET animals were used as littermate controls because no significant differences were observed between S1PR3 WT and S1PR3 HET mice in any behavioral assay (Figure 1), and because force-response relationships are comparable between S1PR3 HET AM fibers and wild type AM recordings (Osteen et al., 2016; McIlwrath et al., 2007; Kwan et al., 2009; Smith et al., 2013; Garrison et al., 2012) (Figure 6—figure supplement 1A; see Figure 6—source data 1). Compared to S1PR3 HET, S1PR3 KO AM nociceptors displayed reduced sensitivity in their force-response relation (slope for HET versus KO: 50 Hz/N versus 35 Hz/N), as well as attenuated firing over the noxious, but not innocuous, range of mechanical stimulation (Figure 6A). Strikingly, the median von Frey threshold to elicit firing in AM nociceptors was significantly higher in S1PR3 KO animals (3.92 mN) compared to littermate controls (1.56 mN; Figure 6B). Furthermore, S1PR3 KO AM nociceptors displayed a right-shifted cumulative response curve to force-controlled stimuli (50% effective force for HET versus KO: 33.7 versus 60.0 mN; Figure 6C), consistent with the mechanonociceptive hyposensitivity observed in vivo. By contrast, neither AM conduction velocities nor the conduction velocity distributions of Aβ, Aδ, and C fibers differed between genotypes (Figure 6D and Figure 6—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig6-v2.jpg)
+
+**Figure 6.:** (A) (Left) Representative traces of AM fiber activity over time in ex vivo skin-saphenous nerve recording in response to stimulation (128 mN, top) from HET (middle) and KO (bottom) mice. (Right) Mean firing rate of AM fibers in response to force controlled stimulation (4, 8, 16, 32, 64, 128, 256 mN). **p=0.001, ***p=0.0002 (two-way ANOVA, Sidak’s post-hoc); lines, linear regression (HET: slope = 50 Hz/N, R2 = 0.99; KO: slope = 35 Hz/N, R2 = 0.95). (B) von Frey threshold of AM fibers in S1PR3 HET and KO specimens. ***p<0.0001 (Mann-Whitney test); lines, median; boxes, 25–75 percentile; whiskers, min-max. (C) Cumulative response plot of AM fibers to force controlled stimulation (solid lines); four-parameter logistic fit from which half-maximal force was estimated for each genotype (dotted lines). (D) Conduction velocity (CV) of AM fibers in S1PR3 HET and KO mice. p=0.65 (two-tailed t-test); n = 40, 36 fibers; errors, mean ± SEM. (E) Representative traces and binned instantaneous firing frequencies (IFF; 200 ms bins) of Non-Adapting and Adapting AMs in response to force controlled stimulation (256 mN, top) for S1PR3 HET and KO mice; blue regions, dynamic phase of stimulation (200 ms). (F). Proportion of fibers classified by pattern of mechanically evoked responses to 256-mN stimuli: Non-Responder (HET, 2/40 fibers; KO 5/36), Non-Adapting AM (HET, 18/40; KO, 29/36), Adapting AM (HET, 20/40; KO, 2/36). Non-Responders fired action potentials to large magnitude von Frey monofilaments (<0.5 mm tip diameter), but not controlled mechanical stimulation (256 mN, 2 mm tip diameter). ***p<0.00001 (Chi-square test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Related to Figure 6. (A) Mean firing rate of AM fibers in response to force controlled stimulation (4, 8, 16, 32, 64, 128, 256 mN) from Figure 6A, with additional data from one wild-type animal (nWT = 4 fibers) (WT: slope, 57 Hz/N, R (Vriens et al., 2011), 0.98; p=0.90, two-way ANOVA comparing HET and WT). (B) (Left) Conduction velocities from teased fibers from 6 S1PR3 KO animals (purple, Aβ, centroid = 13.1 m/s; yellow, Aδ, centroid = 5.7 m/s; orange, C, centroid = 0.4 m/s; R2 = 0.69, N = 65 fibers). (Right) Conduction velocities from teased fibers from 1 S1PR3 HET and 6 C57BL/6 WT animals (purple, Aβ, centroid = 14.5 m/s; yellow, Aδ, centroid = 6.8 m/s; orange, C, centroid = 0.3 m/s; R2 = 0.82, N = 76 fibers). Three-term Gaussian model. X-axis plotted on a log 1.2 scale. (C) Mean firing rates during dynamic (ramp) and static (hold) stimulation for S1PR3 HET and S1PR3 KO recordings (left, Adapting AMs; right, Non-Adapting AMs; see Figure 6E–F for experimental details). No significant differences were found between genotypes (p=0.227, 0.490 (two-way ANOVA); bars, means). As shown in Figure 6F, the proportion of Adapting AMs was significantly lower in S1PR3 KO recordings compared with littermate controls.
+
 A recent study reported that A-nociceptors are composed of two genetically distinct neuronal populations that differ in conduction velocity and in adaptation properties (Arcourt et al., 2017) (‘Adapting AM’ versus ‘Non-adapting AM’). We next asked whether loss of S1PR3 signaling altered these AM subtypes. Adapting AM fibers responded more vigorously to dynamic (ramp) stimuli than to static (hold) stimuli, and displayed a mean dynamic firing frequency at least twofold greater than their static firing frequency (Arcourt et al., 2017) (Figure 6E, upper traces). By contrast, Non-adapting AM fibers often showed bursting during static stimulation, which resulted in similar firing rates during dynamic and static stimulation (Figure 6E, lower traces). S1PR3 KO animals displayed a significantly lower proportion of Adapting AM nociceptors compared with littermate controls (Figure 6F). Additionally, we observed an increase in S1PR3 KO AM fibers that were unresponsive to controlled force stimulation (Figure 6F). These ‘non-responders’ only fired action potentials to high-pressure stimuli with a blunt glass probe or to suprathreshold stimulation with von Frey filaments (see Methods). The Non-adapting AMs, and the few remaining mechanosensitive Adapting AMs in the S1PR3 KO displayed similar firing frequencies over both the dynamic and static phases of force application to control fibers (Figure 6—figure supplement 1C). This suggests that decreased mechanosensitivity of the Adapting AM population accounts for the significant reduction in force-firing relations observed at the population level in S1PR3 KO AMs (Figure 6A). We conclude that S1PR3 is an essential regulator of both mechanical threshold and sensitivity in a distinct population of AM nociceptors.
 
-## S1PR3 is required for inflammatory pain hypersensitivity
+### S1PR3 is required for inflammatory pain hypersensitivity
 
 Having examined the mechanisms of S1P/S1PR3 signaling in acute mechanonociception, we next sought to evaluate S1P/S1PR3 signaling in pain hypersensitivity. For this purpose, we used an experimental model of inflammatory pain triggered by Complete Freund’s Adjuvant (CFA) injection into the hindpaw, which elicits infiltration of immune cells and thermal and mechanical hypersensitivity (Ghasemlou et al., 2015). While one previous study proposed that S1PR3 promotes injury-evoked heat and mechanical hypersensitivity, they did not measure or compare post-injury mechanical thresholds to pre-injury baselines for the knockout or control animals (Camprubí-Robles et al., 2013). Here, we compared development of CFA-evoked hypersensitivity between S1PR3 HET and KO littermates, since no significant behavioral differences were observed between WT and HET animals in CFA experiments (pvon Frey = 0.12; pradiant heat = 0.12; two-tailed t-tests). Strikingly, S1PR3 KO mice failed to develop thermal hypersensitivity (Figure 7A; see Figure 7—source data 1) relative to heterozygous littermates at both 24 and 48 hr post-CFA injection. In stark contrast, S1PR3 KO animals developed robust mechanical hypersensitivity when thresholds were normalized to account for the dramatic baseline differences between knockouts and control animals (Figure 7B). Our data demonstrate that S1PR3 mediates baseline mechanical sensitivity and is not required for the development of CFA-evoked mechanical hypersensitivity.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig7-v2.jpg)
+
+**Figure 7.:** (A) Thermal latency before and after CFA treatment (indicated by dotted line); pgenotype = 0.0053 (two-way ANOVA; N = 5 mice per genotype). Sidak’s multiple comparison between genotypes for specific time points indicated on graph. Error bars represent mean ± SD. (B) (Left) Normalized 50% withdrawal threshold before and after CFA treatment (indicated by dotted line); p(genotype)<0.001 (two-way ANOVA). (Right) 50% withdrawal thresholds for same experiment (p(genotype)=0.1634; two-way ANOVA). (C) (Left) Thermal latency assessed before (‘Baseline’) and 24 hr post CFA injection with either vehicle (CFA + VEH) or TY 52156 (CFA + TY) acutely administered; p<0.0001 (one-way ANOVA N = 5 mice per treatment). (Right) Thermal latency assessed before and after CFA injection with either vehicle (CFA + VEH) or SKI II (CFA + SKI II) acutely administered on Day 1; p<0.0001 (one-way ANOVA; N = 5–7 mice per treatment). Dunnett’s test comparisons to baseline are indicated on graph. Error bars represent mean ± SD. (D) (Left) 50% withdrawal threshold assessed before and 24 hr post CFA injection with either vehicle (CFA + VEH) or TY 52156 (CFA + TY) acutely administered on Day 1; p<0.0001 (one-way ANOVA; N = 5 mice per treatment). Dunnett’s test comparisons to baseline are indicated on graph. (Right) 50% withdrawal threshold assessed before and 24 hr post CFA injection with either vehicle (CFA + VEH) or SKI II (CFA + SKI II) acutely administered; p-values indicated on graph (two-tailed unpaired t-test; N = 5 mice per group.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33285/elife-33285-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Related to Figure 7. (A) Recruitment of neutrophils (Neut.) or inflammatory monocytes (IMs) to hindpaw skin 24 hr post-CFA administration in S1PR3 HET and KO mice, as a dot plot of CD11b + cells plotting Ly6G fluorescence intensity vs. Ly6C intensity (AFU). Boxes are for illustrative purposes. (B) Recruitment of immune cells, including neutrophils (Neut.) and inflammatory monocytes (IMs) to hindpaw skin 24 hr post-CFA administration in HET and KO mice, displayed as total number of cells; N = 8 mice per genotype. Sidak’s multiple comparisons were made between HET and KO for each cell type.
 
 Influx of myeloid lineage (Cd11b+/Ly6G-) cells is required for the development of mechanical hypersensitivity in the CFA model (Ghasemlou et al., 2015). In the immune system, S1P signaling via S1PR1 plays a key role in immune cell migration (Matloubian et al., 2004). Consistent with the development of mechanical hypersensitivity, flow cytometry experiments showed robust infiltration of immune cells into hindpaw skin from both S1PR3 KO and littermate controls (Figure 7—figure supplement 1A–B). These data suggest that the phenotypes observed in S1PR3 KO mice cannot be attributed to compromised immune cell infiltration.
 
@@ -124,7 +164,486 @@ We propose that S1PR3 signaling may contribute to a variety of inflammatory dise
 
 ## Materials and methods
 
-## Behavioral studies and mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (C57BL/6J)</td>
+      <td>C57BL/6J; WT; wild-type</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jackson Stock #: 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (B6.129S6- S1pr3tm1Rlp/Mmnc)</td>
+      <td>S1PR3 KO; S1pr3-/-</td>
+      <td>MMRRC Repository; https://www.ncbi.nlm.nih.gov/pubmed/15138255; PMID: 15138255</td>
+      <td>B6.129S6-S1pr3tm1Rlp/ Mmnc; MMRRC Stock #: 012038-UNC; RRID: MMRRC_012038-UNC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (B6.Cg- S1pr3tm1.1Hrose/J)</td>
+      <td>S1pr3-mCherry; S1pr3mcherry/+</td>
+      <td>The Jackson Laboratory</td>
+      <td>B6.Cg-S1pr3tm1.1Hrose/J; Jackson Stock #: 028624; RRID:IMSR_JAX:028624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Living Colors DsRed Rabbit Polyclonal Antibody)</td>
+      <td>Rabbit anti-DsRed</td>
+      <td>Clontech</td>
+      <td>RRID:AB_10013483; Cat # 632496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Chicken polyclonal to Neurofilament heavy polypeptide)</td>
+      <td>Chicken anti-NefH</td>
+      <td>Abcam</td>
+      <td>RRID:AB_304560; Cat # ab4680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Chicken polyclonal to beta III Tubulin)</td>
+      <td>Chicken anti-β-tubulin III</td>
+      <td>Abcam</td>
+      <td>RRID:AB_10899689; Cat # ab107216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Mouse monoclonal [13C4/I3 C4] to PGP9.5)</td>
+      <td>Mouse anti-PGP9.5</td>
+      <td>Abcam</td>
+      <td>RRID:AB_306343; Cat # ab8189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Rabbit polyclonal to EDG3)</td>
+      <td>Rabbit anti-S1PR3</td>
+      <td>Abcam</td>
+      <td>RRID:AB_732070; Cat # ab38324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Mouse monoclonal to NF200)</td>
+      <td>Mouse anti-NF200</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_260781; Cat # N5389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Chicken polyclonal to Peripherin)</td>
+      <td>Chicken anti-Peripherin</td>
+      <td>Abcam</td>
+      <td>RRID:AB_777207; Cat # ab39374</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Goat Anti-Mouse IgG H and L Alexa Fluor 488)</td>
+      <td>Goat anti-Mouse Alexa 488</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2688012; Cat # ab150117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Goat anti-Chicken IgY (H + L) Secondary Antibody, Alexa Fluor 488)</td>
+      <td>Goat anti-Chicken Alexa 488</td>
+      <td>ThermoFisher Scientific</td>
+      <td>RRID:AB_2534096; Cat # A-11039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Goat anti-Rabbit IgG (H + L) Secondary Antibody, Alexa Fluor 594)</td>
+      <td>Goat anti-Rabbit Alexa 594</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2556545; Cat # R37117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>S1pr3 Type I Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB1-19668-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Scn1a Type 6 Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB6-18173-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Npy2r Type 6 Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB6-3197254-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Piezo2 Type 6 Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB6-18046-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Trpv1 Type 6 Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB6-18246-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Trpa1 Type 6 Probe</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Assay ID: VB6-16610-VC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit (ViewRNA ISH Tissue Assay Kit (2-plex))</td>
+      <td>ViewRNA ISH Tissue Assay Kit</td>
+      <td>ThermoFisher Scientific; Affymetrix</td>
+      <td>Cat # QVT0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Sphingosine-1-phosphate)</td>
+      <td>Sphingosine 1-phosphate; S1P</td>
+      <td>Tocris Bioscience; Avanti Polar Lipids</td>
+      <td>CAS 26993-30-6; Cat # 1370; Cat # 860641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (TY 521256)</td>
+      <td>TY 52156</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 934369-14-9; Cat # 5328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (SKI II)</td>
+      <td>SKI II</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 312636-16-1; Cat # 2097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Histamine dihydrochloride)</td>
+      <td>Histamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 56-92-8; Cat # H7250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Chloroquine diphosphate)</td>
+      <td>Chloroquine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 50-63-5; Cat # C6628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (E-Capsaicin)</td>
+      <td>Capsaicin</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 404-86-4; Cat # 0462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Dimethyl sulfoxide)</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 8418–100 mL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Methanol)</td>
+      <td>Methanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 67-56-1; Cat # 34860</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Linopirdine dihydrochloride)</td>
+      <td>Linopirdine</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 113168-57-3; Cat # 1999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (XE 991 dihydrochloride)</td>
+      <td>XE 991</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 122955-13-9; Cat # 2000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (W146)</td>
+      <td>W146</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS 909725-61-7; Cat # 3602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Freund's Adjuvant, Complete)</td>
+      <td>Complete Freund's Adjuvant; CFA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # F5881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Formaldehyde, 16%, methanol free, Ultra Pure)</td>
+      <td>Paraformaldehyde; PFA</td>
+      <td>Polysciences, Inc.</td>
+      <td>Cat # 18814–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Tissue Tek Optimal cutting temperature compound (OCT))</td>
+      <td>OCT</td>
+      <td>Sakura Finetek USA</td>
+      <td>Cat # 4583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Triton X-100 solution)</td>
+      <td>Triton X-100</td>
+      <td>BioUltra</td>
+      <td>CAS 9002-93-1; Cat # 93443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Phosphate-buffered saline (PBS), pH 7.4)</td>
+      <td>PBS</td>
+      <td>Gibco</td>
+      <td>Cat # 10010023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Benzyl benzoate)</td>
+      <td>Benzyl benzoate</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 120-51-4; Cat # B6630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Benzyl alcohol)</td>
+      <td>Benzyl alcohol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 100-51-6; Cat # 305197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Sucrose)</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 57-50-1; Cat # S0389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (LIVE/DEAD Fixable Aqua Dead Cell Stain Kit, for 405 nm excitation)</td>
+      <td>Aqua</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # L34957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Isoflurane, USP)</td>
+      <td>Isoflurane</td>
+      <td>Piramal</td>
+      <td>CAS 26675-46-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (4',6-Diamidino-2- Phenylindole, Dihydrochloride)</td>
+      <td>DAPI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>CAS 28718-90-3; Cat # 1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug (Fluoromount-G, with DAPI)</td>
+      <td>Fluoromount-G, with DAPI</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # 00-4959-52</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (CD117 (c-Kit) Monoclonal Antibody (2B8), Biotin)</td>
+      <td>c-Kit-Biotin</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_466569; Cat # 13-1171-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (FceR1 alpha Monoclonal Antibody (AER-37 (CRA1)), PE, eBioscience)</td>
+      <td>FceRI-PE</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_10804885; Cat # 12-5899-42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (CD49b (Integrin alpha 2) Monoclonal Antibody (DX5), PE-Cyanine7, eBioscience)</td>
+      <td>CD49b-PECy7</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_469667; Cat # 25-5971-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Anti-Siglec-F-APC, mouse (clone: REA798))</td>
+      <td>SiglecF-APC</td>
+      <td>Miltenyi Biotech</td>
+      <td>RRID:AB_2653441; Cat # 130-112-333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Streptavidin FITC)</td>
+      <td>SA-FITC</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_11431787; Cat # 11-4317-87</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Ly-6C Monoclonal Antibody (HK1.4), PerCP- Cyanine5.5, eBioscience)</td>
+      <td>Ly6C-PerCP</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_1518762; Cat # 45-5932-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Pacific Blue anti- mouse/human CD11b Antibody)</td>
+      <td>CD11b-PB</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_755985; Cat # 101223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (Brilliant Violet 785 anti-mouse Ly-6G Antibody)</td>
+      <td>Ly6G-BV785</td>
+      <td>BioLegend</td>
+      <td>RRID:AB_2566317; Cat # 127645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody (CD45.2 Monoclonal Antibody (104), Alexa Fluor 700, eBioscience)</td>
+      <td>CD45.2-AF700</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_657752; Cat # 56-0454-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Igor Pro version 6.3)</td>
+      <td>IgorPro</td>
+      <td>WaveMetrics</td>
+      <td>https://www.wavemetrics.com/order/order_igordownloads6.htm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Microsoft Excel 2011)</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td>https://www.microsoft.com/en-us/store/d/excel-2016-for-mac/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (pClamp 10)</td>
+      <td>pClamp</td>
+      <td>Axon</td>
+      <td>http://mdc.custhelp.com/app/answers/detail/a_id/18779/~/axon%E2%84%A2-pclamp%E2%84%A2-10-electrophysiology-data-acquisition-%26-analysis-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (MetaFluor 7.8)</td>
+      <td>MetaFluor</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com/systems/metamorph-research-imaging/metafluor-fluorescence-ratio-imaging-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (MATLAB)</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/downloads/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (FIJI)</td>
+      <td>FIJI</td>
+      <td>NIH</td>
+      <td>https://imagej.net/Fiji/Downloads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (LabChart Software)</td>
+      <td>LabChart Software</td>
+      <td>AD Instruments</td>
+      <td>https://www.adinstruments.com/products/labchart</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (Graphpad Prism 7)</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (FlowJo 10.4.2)</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm (custom)</td>
+      <td>custom-made software in MATLAB</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>https://github.com/buh2003/SpikeSortingPCA_DBSCAN (Hoffman, 2018; copy archived at https://github.com/elifesciences-publications/SpikeSortingPCA_DBSCAN)</td>
+    </tr>
+    <tr>
+      <td>other (Bovine serum albumin, cold ethanol fraction, pH 5.2,≥96%)</td>
+      <td>BSA</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS 9048-46-8; Cat # A4503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other (Isolectin B4 (Bandeireia simplicifolia), FITC-conjugate)</td>
+      <td>IB4-FITC; IB4</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat # ALX-650–001F- MC05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other (Normal Goat Serum)</td>
+      <td>NGS</td>
+      <td>Abcam</td>
+      <td>Cat # ab7481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein (δ-theraphototoxin- Hm1a)</td>
+      <td>Hm1a</td>
+      <td>other; https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4919188/; PMID: 4919188</td>
+      <td>NA</td>
+      <td>obtained from the laboratory of David Julius (UCSF)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavioral studies and mice
 
 S1pr3mcherry/+ and S1pr3-/- mice were obtained from Jackson Laboratory and backcrossed to C57bl6/J. Wherever possible, wild-type/heterozygous (S1pr3) littermate controls were used in behavioral experiments. Mice (20–25 g) were housed in 12 hr light-dark cycle at 21°C. Mice were singly housed one week prior to all behavioral experiments and were between 8–10 weeks at the time of the experiment. All mice were acclimated in behavioral chambers (IITC Life Sciences) on two subsequent days for 1 hr prior to all behavioral experiments.
 
@@ -142,35 +661,35 @@ For the CFA model of hypersensitivity, mice were lightly anesthetized with isofl
 
 All behavior experiments were carried out using age-matched or littermate cohorts of male mice and conducted between 8 am and 1 pm. Mice were tested in 4-part behavior chambers (IITC Life Sciences) with opaque dividers (TAP Plastics) with the exception of righting reflex measurements. Scratching and wiping behaviors were filmed from below using high-definition cameras. All experiments were performed under the policies and recommendations of the International Association for the Study of Pain and approved by the University of California, Berkeley Animal Care and Use Committee.
 
-## In situ hybridization (ISH)
+### In situ hybridization (ISH)
 
 Fresh DRG were dissected from 8 to 12 week old mice, flash frozen in OCT embedding medium, and sectioned at 14 μm onto slides. ISH was performed using Affymetrix Quantigene ViewISH Tissue 2-plex kit according to manufacturer’s instructions with Type 1 (S1pr3) and Type 6 (all other) probes. The following probes against mouse mRNAs were created by Affymetrix and used for ISH: S1pr3, Scn1a, Npy2r, Piezo2, Trpv1, Trpa1.
 
-## Immunohistochemistry (IHC) of DRG
+### Immunohistochemistry (IHC) of DRG
 
 DRG were dissected from 8 to 12 week old adult mice and post-fixed in 4% PFA for one hour. DRG were cryo-protected overnight at 4°C in 30% sucrose-PBS, embedded in OCT, and then cryosectioned at 12 μm onto slides. Briefly, slides were washed 3x in PBST (0.3% Triton X-100), blocked in 2.5% horse serum +2.5% BSA PBST, and incubated overnight at 4°C in 1:1000 primary antibody in PBST +0.5% horse serum +0.5% BSA. Slides were washed 3X in PBS then incubated 1–2 hr at RT in 1:1000 secondary antibody. Slides were washed 3X in PBS and mounted in Fluoromount-G +DAPI with No. 1.5 coverglass. Primary antibodies used: Rabbit anti-DsRed (Clontech #632496), Rabbit anti-S1PR3 (Abcam #38324; #108370), Mouse anti-NF200 (Sigma #N5389), Chicken anti-Peripherin (Abcam #39374). Secondary antibodies used: Goat anti-Mouse Alexa 488 (Abcam #150117), Goat anti-Chicken Alexa 488 (ThermoFisher #A11039), Goat anti-Rabbit Alexa 594 (Invitrogen #R37117). Isolectin B4 (IB4)-FITC (Enzo Life Sciences #ALX-650–001F-MC05) was also used. Slides were mounted in Fluoromount with No. 1.5 coverglass. Imaging of DRG ISH and IHC experiments, and all live-cell imaging, was performed on an Olympus IX71 microscope with a Lambda LS-xl light source (Sutter Instruments). For DRG ISH and IHC analysis, images were analyzed using FIJI software. Briefly, DAPI-positive cells were circled and their fluorescence intensity (AFU) for all channels was plotted against cell size using Microsoft Excel software. Co-labeling analysis was performed using FIJI. Intensity thresholds were set based on the negative control (no probe) slide. Cells were defined as co-expressing if their maximum intensities exceeded the threshold for both channels of interest.
 
-## IHC of sectioned skin
+### IHC of sectioned skin
 
 Skin was dissected from 8 week old adult mice and post-fixed in 4% PFA for 30 min at RT. DRG were cryo-protected overnight at 4°C in 30% sucrose-PBS, embedded in OCT, and then sectioned at 18 μm onto slides. Briefly, slides were blocked in 5% normal goat serum in PBST (0.1% Triton X-100) and incubated overnight at 4°C in 1:1000 primary antibody in blocking buffer. Slides were washed 3X in PBS then incubated 45 min at RT in 1:1000 secondary antibody. Slides were washed 5X in PBS and mounted in Fluoromount-G +DAPI with No. 1.5 coverglass. Primary antibodies used: Rabbit anti-DsRed (Clontech #632496), Chicken anti-NefH (Abcam #4680), Chicken anti-β-tubulin III (Abcam #107216), mouse anti-PGP9.5 (Abcam #8189). Secondary antibodies used: Goat anti-Mouse Alexa 488 (Abcam #150117), Goat anti-Rabbit Alexa 594 (Invitrogen #R37117), Goat anti-Chicken Alexa 488 (ThermoFisher #A11039). For co-localization analysis, only fibers for which >50% of the length of the visible fiber contained co-localized (white) pixels were counted. Image analysis was performed using FIJI.
 
-## Whole mount skin IHC
+### Whole mount skin IHC
 
 Staining was performed according to Marshall et al. (2016). Briefly, 8-week-old mice were euthanized and the back skin was shaved, depilated, and tape-stripped. The removed skin was fixed overnight in 4% PFA, then washed in PBS (3X for 10 min each). Dermal fat was scraped away with a scalpel and skin was washed in PBST (0.3% Triton X-100; 3X for two hours each) then incubated in 1:500 primary antibody (Rabbit anti DsRed: Clontech #632496; Chicken anti-Nefh: Abcam #4680) in blocking buffer (PBST with 5% goat serum and 20% DMSO) for 5.5 days at 4°C. Skin was washed as before and incubated in 1:500 secondary antibody (Goat anti-Rabbit Alexa 594; Invitrogen #R37117; Goat anti-Chicken Alexa 488; ThermoFisher #A11039) in blocking buffer for 3 days at 4°C. Skin was washed in PBST, serially dried in methanol: PBS solutions, incubated overnight in 100% methanol, and finally cleared with a 1:2 solution of benzyl alcohol: benzyl benzoate (BABB; Sigma) before mounting between No. 1.5 coverglass. Sectioned and whole mount skin samples were imaged on a Zeiss LSM 880 confocal microscope with OPO using a 20x water objective. Image analysis was performed using FIJI.
 
-## Cell culture
+### Cell culture
 
 Cell culture was carried out as previously described (Wilson et al., 2011). Briefly, neurons from dorsal root ganglia (2–8 week old adults) or trigeminal ganglia (P0) were dissected and incubated for 10 min in 1.4 mg ml−1 Collagenase P (Roche) in Hanks calcium-free balanced salt solution, followed by incubation in 0.25% standard trypsin (vol/vol) STV versene-EDTA solution for 2 min with gentle agitation. Cells were then triturated, plated onto Poly D-Lysine coated glass coverslips and used within 20 hr. Media: MEM Eagle's with Earle's BSS medium, supplemented with 10% horse serum (vol/vol), MEM vitamins, penicillin/streptomycin and L-glutamine.
 
-## Calcium imaging
+### Calcium imaging
 
 Ca2+ imaging experiments were carried out as previously described (Wilson et al., 2011). Cells were loaded for 60 min at room temperature with 10 µM Fura-2AM supplemented with 0.01% Pluronic F-127 (wt/vol, Life Technologies) in a physiological Ringer’s solution containing (in mM) 140 NaCl, 5 KCl, 10 HEPES, 2 CaCl2, 2 MgCl2 and 10 D-(+)-glucose, pH 7.4. All chemicals were purchased from Sigma. Acquired images were displayed as the ratio of 340 nm/ 380 nm. Cells were identified as neurons by eliciting depolarization with high potassium Ringer’s solution (75 mM) at the end of each experiment. Responding neurons were defined as those having a > 15% increase from baseline ratio. Image analysis and statistics were performed using automated routines in Igor Pro (WaveMetrics). Fura-2 ratios were normalized to the baseline ratio F340/F380 = (Ratio)/(Ratio t = 0).
 
-## In vitro electrophysiology
+### In vitro electrophysiology
 
 Electrophysiological experiments were carried out as previously described (Wilson et al., 2011). Briefly, recordings were collected at 5 kHz and filtered at 2 kHz (Axopatch 200B, pClamp software). Electrode resistance ranged between 1.5–5 MΩ. Internal solution contained 140 mM KCl, 2 mM MgCl2, 1 mM EGTA, 5 mM HEPES, 1 mM Na2ATP, 100 µM GTP, and 100 µM cAMP (pH 7.4). Bath solution was physiological Ringer’s solution. The pipette potential was canceled before seal formation. Cell capacitance was canceled before whole cell voltage-clamp recordings. For mechanonociceptors experiments, only cells which were visually identified as mCherry expressing and which had a capacitance between 40–80 pF were used. Rheobase was calculated as the smallest current step required to elicit an action potential using current steps of 50 pA. M currents were measured and analyzed using standard protocols for DRG neurons reported in the literature (Schütze et al., 2016; Crozier et al., 2007; Zheng et al., 2013). Experiments were carried out only on cells with a series resistance of less than 30 MΩ. Analysis of electrophysiology data was performed in pClamp and IgorPro.
 
-## Ex vivo skin-nerve electrophysiology
+### Ex vivo skin-nerve electrophysiology
 
 Touch-evoked responses in the skin were recorded after dissecting the hind limb skin and saphenous nerve from 7 to 10 week old mice, according to published methods (Wellnitz et al., 2010; Maksimovic et al., 2014). The skin was placed epidermis-side-up in a custom chamber and perfused with carbogen-buffered synthetic interstitial fluid (SIF) kept at 32°C with a temperature controller (model TC-344B, Warner Instruments). The nerve was kept in mineral oil in a recording chamber, teased apart, and placed onto a gold recording electrode connected with a reference electrode to a differential amplifier (model 1800, A-M Systems). The extracellular signal was digitized using a PowerLab 8/35 board (AD Instruments) and recorded using LabChart software (AD Instruments).
 
@@ -182,10 +701,10 @@ Mechanical responses were elicited with von Frey monofilaments and a force contr
 
 Conduction velocity was measured by electrically stimulating identified receptive fields. Spike sorting by principal component analysis (PCA) and density based clustering, and data analysis was performed off-line with custom-made software in MATLAB. Statistics were performed in Prism.
 
-## Flow cytometry of CFA-treated hind paws
+### Flow cytometry of CFA-treated hind paws
 
 CFA injections were performed as described above. Briefly, hindpaw skin and underlying fascia of treated and PBS-injected paws were removed from freshly euthanized mice. Skin was placed in RPMI media (Gibco) on ice before mincing with dissection scissors. Digestions were performed for 90 min at 37°C on a rotating platform in 1 mL RPMI supplemented with 1:1000 DNaseI enzyme (Roche) and one unit LiberaseTM (Roche). Skin was then filtered through 70 µm nylon mesh (Falcon), washed in RPMI, and resuspended in PBS for Aqua Live-Dead staining. Samples were then transferred to FACS buffer (PBS with 0.5% FBS and 2 mM EDTA), blocked, then surface stained with the following antibodies: cKit-Biotin, FceRI-PE, CD49b-PECy7, SiglecF-APC, SA-FITC, Ly6C-PerCP, CD11b-PB, Ly6G-BV785, CD45.2-AF700. Compensation tubes (single-stain) were prepared for each fluorophore using positive and negative control beads. A spleen from a wild-type animal was also prepared by crushing between frosted glass slides, straining through 70 µm nylon mesh, and lysing of erythrocytes in ACK (Gibco). A portion of spleen sample was heat-killed for 10 min at 65°C and stained with Aqua viability stain and set aside. The rest of the spleen was stained normally with the other skin samples. Samples were then run through a flow cytometer (BD Fortessa). Data were analyzed using FlowJo (Prism) and Microsoft Excel. Neutrophils were defined as live single cells with the following staining profile: CD45.2+/CD11b+/Ly6G+/Ly6C+. Inflammatory monocytes were defined as the following: CD45.2+/CD11b+/Ly6G-/Ly6Chigh. Total number of immune cells was reported, rather than percentage of total, since neither genotype differed significantly in total number of live cells or total number of CD45.2+ immune cells.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses, except for skin nerve data (see above), were performed using IgorPro software or Microsoft Excel. Values are reported as the mean ±SEM where multiple independent experiments are pooled and reported (for whole cell electrophysiology), and mean ±SD where one experiment was performed with multiple wells (for calcium imaging) or mice (for behavior). For comparison between two groups, Student’s unpaired 2-tailed t-test was used. A paired t-test was employed only for measurements within the same biological replicate and after a given treatment. For single-point comparison between >2 groups, a one-way ANOVA followed by appropriate post hoc test was used, depending on comparison. For the time course comparison between two groups, 2-way ANOVA was used and single comparison p-values were derived using Tukey’s HSD or appropriate statistical test, depending on comparison. Number of mice or samples required to attain significance was not calculated beforehand, and where multiple statistical tests were performed, a Bonferroni correction was applied. In figure legends, significance was labeled as: n.s., not significant, p≥0.05; *p<0.05; **p<0.01; ***p<0.001.

@@ -40,15 +40,29 @@ Systems biology has been used in many studies to reveal the underlying molecular
 
 Previously, multiple studies in individual tissues have been performed and provided new insights into the underlying mechanisms of diseases (Pedrotty et al., 2012; Das et al., 2019; Ounzain et al., 2015; Williams et al., 2018). However, the crosstalk between different tissues and their dysregulation has not been examined in MI and other CVD-related complications (Priest and Tontonoz, 2019). Here, we performed an integrated analysis of heart and other metabolically active tissues (liver, skeletal muscle and adipose tissue) using a mouse model of MI. We used several systems biology approaches to obtain a systematic picture of the metabolic alterations that occur after an MI (Figure 1A), and validated our findings in two independent datasets.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of this study (B) Number of differentially expressed genes for each tissue at each time point. Effect of MI shown to be more pronounced after 24 hr. (C) UpSet plot to show intersection between differentially expressed genes (FDR < 5%) in different tissues. The plot showed that each tissue has its specific set of genes that were affected by MI. (D) KEGG pathway analysis (FDR < 0.05 in at least three tissues) for 24 hours post MI compared to its control for each tissue. We observed that 141 (5 upregulated) and 125 (14 upregulated) pathways are significantly altered in heart 6 and 24 hr after infarction, respectively. For other tissues, we found that 24 (9 upregulated), 61 (54 upregulated), and 48 (15 upregulated) pathways are altered in liver, muscle, and adipose, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** PCA plots of each tissue showing data from mice 6 and 24 hr after an MI or sham operation. The plot showed that heart was affected the most by the change in conditions and the rest were most affected by time shifts.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig1-figsupp4-v2.jpg)
+
 ## Results
 
-## Differential expression analysis shows a pronounced effect on gene expression 24 hr post MI
+### Differential expression analysis shows a pronounced effect on gene expression 24 hr post MI
 
 To study global biological alterations and systemic whole-body effects associated with MI, we obtained heart, liver, skeletal muscle, and white adipose tissue from mice 6 hr and 24 hr after either an MI (induced by ligating the left ascending coronary artery) or a sham operation (as control). Total of 20 mice were used in this study (five mice in each time and condition combination) (Figure 1A). We generated transcriptomics data and identified differentially expressed genes (DEGs) 6 and 24 hr post MI and sham operation in all tissues, with the most significant differences occurring after 24 hr (Supplementary file 1, Figure 1B). Principal component analysis (PCA) showed a close clustering between the control (for both time points) and MI (6 hr and 24 hr separately) samples for heart tissue but clustering by extraction time points (6 hr and 24 hr clusters) for the other tissues (Figure 1—figure supplement 1). We present the transcriptional changes associated with MI in Supplementary file 1 and the DEGs (FDR < 5%) using an UpSet plot (Lex et al., 2014) in Figure 1C.
 
 All tissues showed a more pronounced effect in terms of the number of DEGs 24 hr post MI (Figure 1C). As expected, the most affected tissue was the heart (393 DEGs at 6 hr, 3318 DEGs at 24 hr, and 318 DEGs were the same at both time points). By contrast, 136, 641, and 374 genes were significantly changed in liver, skeletal muscle and adipose tissues 24 hr post MI compared to control, respectively. More than 33% of the DEGs that significantly changed in the other tissues also changed in the heart (Figure 1C). Interestingly, more than 97% of the shared DEGs between heart and skeletal muscle changed in the same direction, with corresponding numbers of 88% and 64% in adipose and liver, respectively.
 
-## Functional analysis reveals widespread alterations of mitochondrial, fatty acid, immune, and protein and RNA-related biological processes post MI with liver shows contrasting trend
+### Functional analysis reveals widespread alterations of mitochondrial, fatty acid, immune, and protein and RNA-related biological processes post MI with liver shows contrasting trend
 
 We performed gene-set enrichment analysis (GSEA) with KEGG pathways (Supplementary file 2, Figure 1D) and gene ontology (GO) biological processes (BPs) (Supplementary file 3, Figure 2A) to identify altered biological functions and pathways 24 hr after an MI. Mitochondrial functions (specifically, mitochondrial translation, respiratory chain and oxidative phosphorylation) were significantly downregulated in the heart, muscle and adipose tissues but not in the liver. Processes related to oxidative stress were upregulated in the heart and skeletal muscle. Fatty acid beta-oxidation was downregulated in the heart and adipose but upregulated in the liver. Processes and pathways related to immune systems were significantly upregulated in the heart and skeletal muscle but significantly downregulated in liver. Processes associated with protein and RNA processing, ribosome biogenesis and protein targeting endoplasmic reticulum were upregulated in all tissues except liver, whereas protein processing in endoplasmic reticulum and RNA transport pathways were upregulated in all tissues.
 
@@ -58,7 +72,7 @@ We performed gene-set enrichment analysis (GSEA) with KEGG pathways (Supplementa
 
 We also observed that liver was showing opposite trends compared to the other tissues in other important functions, such as fatty acid metabolism and immune response. By checking regulation at the gene level, we observed that only 16 DEGs in liver showed opposite regulation compared to the other tissues, whereas 97 out of the 136 DEGs in liver were not DEGs in any other tissues (Supplementary file 4). Therefore, the differences we observed in liver were mainly due to different DEGs rather than opposite regulation compared to other tissues.
 
-## Tissue-specific altered biological functions point to specificity of metabolic and signaling responses to MI
+### Tissue-specific altered biological functions point to specificity of metabolic and signaling responses to MI
 
 The functional analysis also indicated that several metabolic pathways (including cholesterol, ascorbate and aldarate, linoleic acid, and sphingolipid metabolism pathways) and signaling pathways (including GnRH, FoxO, cAMP and prolactin signaling pathways) were significantly upregulated in heart 6 hr after an MI (Supplementary file 2, Figure 1—figure supplement 2). We also observed significant down regulation of tryptophan metabolism and upregulation of glycosaminoglycan biosynthesis in heart 24 hr after an MI (Supplementary file 2, Figure 1—figure supplement 2). Processes related to retinol metabolism were upregulated in heart at both timepoints. Pathways that were previously associated with cardiac hypertrophy and cardiac remodeling (e.g. JAK-STAT, MAPK, estrogen, and TNF signaling pathways, and ECM-receptor interaction) were significantly upregulated in heart 6 and 24 hr after an MI (Figure 1—figure supplement 4).
 
@@ -66,13 +80,13 @@ Our analysis also indicated significant metabolic differences in adipose tissue 
 
 We observed that the PPAR signaling pathway was upregulated, whereas glutathione was downregulated in liver 24 hr post-infarction (Figure 1—figure supplement 3). We found that sphingolipid metabolism and immune-related pathways were upregulated in skeletal muscle 24 hr post-infarction (Figure 1—figure supplement 3).
 
-## Reporter metabolite analyses show significant alterations in fatty acid, amino acid, retinol, and estrogen metabolism post MI
+### Reporter metabolite analyses show significant alterations in fatty acid, amino acid, retinol, and estrogen metabolism post MI
 
 To predict the effect of the transcriptional changes on metabolism, we performed reporter metabolite analyses (Supplementary file 5) using the gene-to-metabolites mapping from the Mouse Metabolic Reaction database (Mardinoglu, 2015); results in each tissue 24 hr after MI are shown in Figure 2B. In agreement with our analyses above, reporter metabolites related to oxidative phosphorylation, such as ubiquinol, ubiquinone, NADH and NAD+, were downregulated in all tissues except liver. Moreover, linolenoyl-CoA, acetyl CoA, and several other fatty acyl-CoA-related metabolites were downregulated in heart and adipose tissue but upregulated in liver. We also found that several 5-S-glutathionyl metabolite forms, known to be related to phenylalanine, tyrosine and tryptophan biosynthesis, were downregulated in heart, liver, and skeletal muscle. The same pattern of downregulation was also observed for metabolites related to estrogen metabolism, specifically metabolites related to oestrone and its glutathione conjugate derivative. Moreover, 12-keto-LTB4 and 12-oxo-c-LTB3, related to leukotriene metabolism, and hepoxilin A3, an arachidonic acid, were also found to be downregulated in heart, liver, and skeletal muscle.
 
 The liver showed the highest alteration in reporter metabolites, which is attributed to its role as one of the most metabolically active tissues. We found that several reporter metabolites related to retinol metabolism, namely retinal, retinol, retinoate, and all-trans-18-hydroxyretinoic acid, were significantly downregulated only in liver tissue. Retinol metabolism has been previously associated with MI (Lima et al., 2018; Palace et al., 1999).
 
-## Network analyses unveil universal and tissue-specific clusters and mechanisms post MI
+### Network analyses unveil universal and tissue-specific clusters and mechanisms post MI
 
 The use of co-expression network (CN) analyses can assist in elucidating the functional relationships between genes in a specific cell and tissue (Lee et al., 2017). Here, we performed CN analysis to reveal the functional relationship between the DEGs by generating tissue-specific CNs and selected highly connected genes (the top 5% positively correlated genes that fulfilled FDR < 0.05) (Table 1). To better define the structure of the networks, we used the Leiden clustering algorithm (Traag et al., 2019) by maximizing the modularity scores (Figure 3A–D) and selected the clusters that include more than 30 genes. Next, we superimposed DEGs 24 hr post-infarction onto the network (Supplementary file 1) and identified the components of the clusters that were affected by an MI. We also used functional analysis with GO BP and KEGG pathways to understand the specific functions associated with each cluster by using the Enrichr algorithm (FDR < 0.05) (Chen et al., 2013; Kuleshov et al., 2016). We summarized the GO BP terms with Revigo (Supplementary file 6; Supek et al., 2011) and checked the average clustering coefficient to define the centrality of each cluster (Supplementary file 6; Lee et al., 2017). Among the clusters, we identified the key clusters as those with the highest average clustering coefficient, allowing us to identify sets of genes whose time-dependent coordinated changes showed the strongest relationships.
 
@@ -80,9 +94,55 @@ The use of co-expression network (CN) analyses can assist in elucidating the fun
 
 **Figure 3.:** (A) Heart co-expression network clusters with superimposed DEGs 24 h post-infarction (Blue = downregulated, Red = upregulated) marked with the cluster numbers. The edges between the clusters were aggregation of the inter-cluster edges (B) Liver. (C) Muscle. (D) Adipose. (E) Intersection of the most central clusters in all tissues shows that the central architecture of the network was conserved in all tissues. We found four sub-clusters within the network intersection. Top 10 most connected genes are marked in black. (F) Enriched GO BP in heart-specific cluster generated by Revigo.
 
+**Table 1.**
+ Properties of the co-expression network.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tissue</th>
+      <th># of Genes</th>
+      <th># of Edges</th>
+      <th># of Clusters</th>
+      <th>Modularity scores</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heart</td>
+      <td>8793</td>
+      <td>1570898</td>
+      <td>7</td>
+      <td>0.540</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>7760</td>
+      <td>1103589</td>
+      <td>6</td>
+      <td>0.577</td>
+    </tr>
+    <tr>
+      <td>Muscle</td>
+      <td>8834</td>
+      <td>1660603</td>
+      <td>7</td>
+      <td>0.521</td>
+    </tr>
+    <tr>
+      <td>Adipose</td>
+      <td>10790</td>
+      <td>2636378</td>
+      <td>8</td>
+      <td>0.495</td>
+    </tr>
+  </tbody>
+</table>
+
 Interestingly, key clusters contained genes with similar functionalities including RNA processing, transports, and RNA metabolic processes in all tissue-specific CNs (Supplementary file 6). In addition, we found that the majority of the DEGs associated with those clusters were significantly upregulated. These observations strengthen the findings of the functional analysis above (Figure 2A) and further highlight how embryonically distinct tissues display similar functional responses to MI, with the most highly connected groups of genes preserved between different tissues (Supplementary file 6, Figure 3E).
 
-## Community detection reveals tissue-specific clusters post MI
+### Community detection reveals tissue-specific clusters post MI
 
 We investigated the tissue specificity of each cluster by performing enrichment analysis with data from the Mouse Gene Atlas (Su et al., 2004), which involved counting the number of tissue-specific genes.
 
@@ -94,9 +154,17 @@ The muscle network had two clusters with high tissue specificity: cluster Muscle
 
 The adipose tissue network showed tissue specificity in cluster Adipose-2 (33 genes), which is associated with GO BP processes including mRNA processing, regulation of mitotic cell cycle phase, ribosome biogenesis, and viral processes (Supplementary file 6). We observed that the results of the KEGG pathway enrichment analysis were consistent with those obtained from GO BP analysis, with additional associations with multiple signaling and regulatory pathways (Supplementary file 6).
 
-## Tissue-specific clusters show important tissue-specific changes post MI
+### Tissue-specific clusters show important tissue-specific changes post MI
 
 To understand the specific behavior of each tissue, we further studied the tissue-specific clusters in the CNs (Figure 4A). Heart specific cluster, Heart-3, was driven by several central genes including Pln, Pde4b, and Atp2a2 (related to regulation of cardiac muscle contraction) and Pdha1 and Vdac1 (related to mitochondrial functions). These genes were also found to be significantly differentially expressed in heart 24 hr post MI (Supplementary file 1). Genes in the heart-specific cluster were related to multiple other processes/pathways, for example oxytocin signaling pathway, and several metabolic pathways (glycogen, inositol phosphate, and purine) (Supplementary file 6).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig4-v2.jpg)
+
+**Figure 4.:** (A) Similarity of functions in the most central cluster and specific functions of each tissue-specific cluster. (B) Functional analysis for each tissue and hypothesized flow of metabolites.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66921/elife-66921-fig4-figsupp2-v2.jpg)
 
 Mitochondrial dysfunction in the heart leads to disturbance of energy (ATP) production (Kiyuna et al., 2018; Palaniyandi et al., 2010) and, in the presence of oxygen, to accumulation of reactive oxygen species (ROS), which can cause oxidative stress. Vdac1, a key gene for regulation of mitochondria function and one of the central genes in the heart-specific cluster (see above), is significantly downregulated in MI (Camara et al., 2017). Vdac1 is located in the outer mitochondrial membrane and is involved directly in cardioprotection (Schwertz et al., 2007) within the cGMP/PKG pathway (Figure 4—figure supplement 1). In the same pathway, we also observed down-regulation of the reporter metabolite hydrogen peroxide (Supplementary file 5), a ROS that is related to cardioprotection (Schwertz et al., 2007; Yada et al., 2006). We also observed downregulation of Pdha1, which is known to have a substantial role in both the HIF-1 signaling pathway and the pyruvate metabolism pathway that converts pyruvate to acetyl-CoA in the mitochondria (Figure 4—figure supplement 2). Acetyl-CoA is used in the TCA cycle to produce NADH and FADH2, which are both needed for ATP production and were downregulated in our reporter metabolite analysis of the heart. Our findings are thus consistent with dysfunctional mitochondria and ATP production in the heart in response to an MI. Pdha1 has been also been linked to the heart sensitivity during to ischemic stress, where its deficiency can compromise AMP-activated protein kinase activation (Sun et al., 2016).
 
@@ -106,7 +174,7 @@ In skeletal muscle and adipose tissue, we found that central genes in their resp
 
 **Figure 5.:** (A) Significantly differentially expressed central genes of each tissue-specific cluster to fatty acid metabolism, as one of the most affected metabolic process. (B) Lipid metabolism. Red = upregulated, blue = downregulated.
 
-## Multi-tissue modeling reveals key metabolic pathways affected post MI
+### Multi-tissue modeling reveals key metabolic pathways affected post MI
 
 To investigate the metabolic responses to MI in and across tissues in the mice, we constructed a multi-tissue genome-scale metabolic model. The model consisted of five tissue-specific genome scale metabolic models, namely heart, liver, skeletal muscle, adipose, and small intestine. The small intestine model (for which we do not have transcriptomic data) was added to include ingestion and conversion of dietary nutrients into chylomicrons, which are directly secreted into blood and transport lipids to other tissues (Mardinoglu, 2015). The final mouse multi-tissue model included 19,859 reactions, 13,284 metabolites, 7116 genes, and 41 compartments. We predicted the metabolic fluxes in mice 24 hr after an MI or sham operation by integrating the dietary input, tissue-specific resting energy expenditure and transcriptomics data.
 
@@ -114,7 +182,7 @@ The modeling showed that oxygen uptake, carbon dioxide production and the oxidat
 
 Next, we investigated the tissue-specific metabolic flux changes in the same model (Supplementary file 7). We found that the pentose phosphate pathway was upregulated in heart 24 hr post MI, consistent with upregulated glucose metabolism after an MI. Elevated glycolysis could allow the heart to rapidly generate energy under stress conditions, and the enhanced pentose phosphate pathway could increase the NADPH level, which could help maintain the level of reduced glutathione in heart (Tran and Wang, 2019). In addition, we observed an increase uptake of alpha-ketoglutarate (AKG) of heart 24 hr after MI. It has been reported that supplementation of AKG could prevent heart from ischaemic injury (Kjellman et al., 1995), and the increased uptake of AKG we observed after MI might be a natural protective metabolic response to MI. Moreover, we found there is a net lactate metabolic flux coming from liver to heart in the MI group. The influx of lactate has been reported to be positively correlated with the fraction of regional ejection of heart (Hattori et al., 1985) and this net flux not only agrees well with the previous report but also additionally suggested the source of the lactate. We also found that adipose tissue secreted more ketone bodies, including acetoacetate and butyrate, into plasma; the plasma level of ketone bodies has been reported as a stress marker in acute MI (Miyamoto et al., 1999). Notably, relatively small metabolic changes were found in liver and skeletal muscle, which is probably due to the small number of transcriptomic changes in metabolic pathways in these tissues.
 
-## Validating our findings with publicly available datasets
+### Validating our findings with publicly available datasets
 
 We validated our observations in heart tissue in two independent cohorts of bulk RNA-seq data from mouse heart (Supplementary file 8). We filtered both validation cohorts to get and analyzed only 24 hr post-MI data. We found that there were 2169 DEGs from our heart 24 hr post MI data were validated in at least one of the independent cohorts (959 DEGs validated in both) (Figure 6A). We also found that 109 out of the 123 most connected genes in our heart-specific cluster were also significantly differentially expressed in at least one of the independent cohorts (81 in both). By performing functional analysis of the validation cohorts, we found that ~61% of GO BP and 84% of KEGG pathways identified in our analysis of the heart were also present in at least one of the validation cohorts 24 hr after infarction (Figure 6B–C). In both cohorts, we observed downregulation of mitochondrial functions and fatty acid metabolism processes. We also observed upregulation of processes and pathways related to retinol metabolism and inflammatory response in both validation cohorts.
 
@@ -122,7 +190,7 @@ We validated our observations in heart tissue in two independent cohorts of bulk
 
 **Figure 6.:** (A) DEGs intersection of our data and validation cohort (B) and (C) intersection of functional analysis results (GO BP and KEGG Pathways) of our data and validation cohort.
 
-## Identification of driver genes in MI
+### Identification of driver genes in MI
 
 We observed that Flnc, Lgals3, Prkaca, and Pprc1 showed important role to MI. These genes were 4 of 16 genes that were DEGs in at least three tissues and validated in both validation cohorts (Supplementary file 9). Flnc, Lgals3, and Pprc1 were upregulated in heart, skeletal muscle, and adipose, whereas Prkaca was downregulated in these three tissues. We further retrieved their neighbors at each tissue specific CNs, showed their regulations from differential expression results, and performed functional analysis in Supplementary file 9.
 
@@ -148,19 +216,176 @@ In summary, we systematically unveiled the deregulation of biological processes 
 
 ## Materials and methods
 
-## Induction of MI
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Fibrous Tissue Mini Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Heart and Skeletal Muscle Tissue</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Liver Tissue</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Lipid Tissue Mini Kit</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Adipose Tissue</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan real-time PCR in a ViiA seven system</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaSeq6000</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NovaSeq Control Software 1.6.0/RNA v3.4.4</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CASAVA Software Suite</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto</td>
+      <td></td>
+      <td>RRID:SCR_016582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.7</td>
+      <td>Python Programming Language</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sklearn</td>
+      <td>Python Package</td>
+      <td>RRID:SCR_019053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rpy2</td>
+      <td>Python Package</td>
+      <td>https://rpy2.github.io/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>R Package</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PIANO</td>
+      <td>R Package</td>
+      <td>RRID:SCR_003200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>Python Package</td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statsmodel</td>
+      <td>Python Package</td>
+      <td>RRID:SCR_016074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iGraph</td>
+      <td>Python Package</td>
+      <td>RRID:SCR_019225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leiden Clustering</td>
+      <td>Python Package</td>
+      <td>https://github.com/vtraag/leidenalg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Induction of MI
 
 Ten-week-old male C57Bl/6N mice were fasted for 4 hr before induction of myocardial infarction. The mice were then anesthetized with isoflurane, orally intubated, and connected to a small-animal ventilator (SAR-830, Geneq, Montreal, Canada) distributing a mixture of oxygen, air and 2–3% isoflurane. ECG electrodes were placed on the extremities, and cardiac rhythm was monitored during surgery. An incision was made between the 4th and 5th ribs to reveal the upper part of the anterior left ventricle (LV) wall and the lower part of the left atrium. Myocardial infarction was induced by ligating the left anterior descending (LAD) coronary artery immediately after the bifurcation of the left coronary artery 1. The efficacy of the procedure was immediately verified by characteristic ECG changes, and akinesis of the LV anterior wall. After verification of the infarction, the lungs were hyperinflated, positive end-expiratory pressure was applied, and the chest was closed. Sham mice were handled identically (fasted, anesthetized, intubated, and connected to ventilator, and subsequently incised between 4th and 5th ribs), but no ligation of the LAD coronary artery was performed (and thus, no ischemia was induced in these mice). The mice received an intraperitoneal injection of 0.1 ml buprenorphine to relieve postoperative pain and were allowed to recover spontaneously after stopping isoflurane administration. Mice were killed with an overdose of isoflurane 6 hr or 24 hr after occlusion or sham operation. We collected the left ventricle (the whole left ventricle containing mainly infarcted tissue) of the heart, whereas white adipose tissue (WAT) was collected from the abdomen and musculus soleus was taken as the muscle tissue. Mouse hearts and biopsies from the liver, muscle and WAT were snap-frozen in liquid nitrogen and stored at −80°C until analysis. All mice studies were approved by the local animal ethics committee and conform to the guidelines from Directive 2010/63/EU of the European Parliament on the protection of animals used for scientific purposes.
 
-## Echocardiography in mice
+### Echocardiography in mice
 
 Echocardiographic examination, using VisualSonics VEVO 2100 system (VisualSonics Inc, Ontario, Canada), which includes an integrated rail system for consistent positioning of the ultrasound probe was performed 6 and 24 hr after an MI to determine the size of the MI. We calculated infarct size based on wall motion score index (WMSI) 24 hr after myocardial infarction by a 16-segments model on three short axis images, as 0 for normal, ½ for reduced wall thickening and excursion in a segment and one for no wall thickening and excursion in a segment. WMSI was calculated as the sum of scores divided by the total number of segments. Hair removal gel was applied to isofluorane-anesthetized (1.2%) mice chest to minimize resistance to ultrasonic beam transmission. The mice were then placed on a heating pad and extremities were connected to an ECG. A 55 MHz linear transducer (MS550D) was used for imaging. An optimal parasternal long axis (LAX) cine loop of >1000 frames/s was acquired using the ECG-gated kilohertz visualization technique. Parasternal short axis cine-loops were acquired at 1, 3, and 5 mm below the mitral annulus. Infarct size was calculated based on wall motion score index 6 and 24 hr after myocardial infarction by a 16-segments model on LAX and three short axis images view, as 0 for normal, ½ for reduced wall thickening and excursion in a segment and one for no wall thickening and excursion in a segment. The data were evaluated using VevoStrain software system (VisualSonics Inc, Ontario, Canada).
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 Total RNA was isolated from snap-frozen tissues using RNeasy Fibrous Tissue Mini Kit (Qiagen) for heart and skeletal muscle, RNeasy Mini Kit (Qiagen) for liver, or RNeasy Lipid Tissue Mini Kit (Qiagen) for adipose tissue. cDNA was synthesized with the high-capacity cDNA Reverse Transcription Kit (Applied Biosystems) and random primers. mRNA expression of genes of interest was analyzed with TaqMan real-time PCR in a ViiA seven system (Applied Biosystems). RNA sequencing library were prepared with Illumina RNA-Seq with Poly-A selections. Subsequently, the libraries were sequenced on NovaSeq6000 (NovaSeq Control Software 1.6.0/RNA v3.4.4) with a 2 × 51 setup using ‘NovaSeqXp’ workflow in ‘S1’ mode flow cell. The Bcl was converted to FastQ by bcl2fastq_v2.19.1.403 from CASAVA software suite (Sanger/phred33/Illumina 1.8 + quality scale).
 
-## RNA-sequencing data analysis
+### RNA-sequencing data analysis
 
 The raw RNA-sequencing results were processed using Kallisto (Bray et al., 2016) with index file generated from the Ensembl mouse reference genome (Release-96) (Zerbino et al., 2018). The output from Kallisto, both estimated count and TPM (Trancript per kilobase million), were subsequently mapped to gene using the mapping file retrieved from Ensembl BioMart website, by filtering only protein coding genes and transcripts. Genes with mean expression less than 1 TPM in each condition were filtered. For data exploration, we used PCA from sklearn package (Pedregosa, 2011) in Python 3.7 and used TPM values as the input.
 
@@ -168,26 +393,56 @@ Subsequently, we performed differential gene expression analysis using DESeq2 (L
 
 We checked the tissue specificity of the DEGs in each tissue with the data from Mouse Gene Atlas (Su et al., 2004). For all the tissue-specific genes, we also checked their human-homolog genes in the human secretome database (Uhlén et al., 2019).
 
-## Functional analysis
+### Functional analysis
 
 We performed functional analysis using the R package PIANO (Väremo et al., 2013). As the input, we used the fold changes and p-values from the DESeq2, and also GO BP and KEGG pathways gene-set collections from Enrichr (Chen et al., 2013; Kuleshov et al., 2016), and metabolites from Mouse Metabolic Reaction database (Mardinoglu, 2015). To define a process or pathway as significant, we used a cut off of FDR < 5% for the distinct direction of PIANO (both up and down).
 
-## Co-expression network generation
+### Co-expression network generation
 
 We generated the co-expression network by generating gene-gene Spearman correlation ranks within a tissue type, using spearmanr function from SciPy (Jones et al., 2001) in Python 3.7. Using the same environment, we performed multiple hypothesis testing using Benjamini-Hochberg method from statsmodels (Perktold et al., 2017). Correlation data were filtered with criterion of adjusted p-value<5%.
 
 The top 5% of filtered correlation results were then loaded into iGraph module (Csardi and Nepusz, 2006) in Python 3.7 as an unweighted network. To find the subnetworks, we employed the Leiden clustering algorithm (Traag et al., 2019) with ModularityVertexPartition method. Each cluster was analyzed by using Enrichr (Chen et al., 2013; Kuleshov et al., 2016) to get the enriched GO BP and KEGG pathways. Criterion FDR < 0.05 were used to find the significantly enriched terms. Clusters with less than 30 genes were discarded, to be able to get significant functional analysis results. Since GO BP was relatively sparse, we used Revigo (Supek et al., 2011) to summarize the GO BP into a higher level. Revigo was further employed to build a GO BP network. Clustering coefficient was calculated based on the average local clustering coefficient function within iGraph.
 
-## Multi-tissue metabolic modeling
+### Multi-tissue metabolic modeling
 
 We combined tissue-specific models (of heart, liver, muscle, adipose and small intestine) constructed previously (Mardinoglu, 2015) in a multi-tissue model by adding an additional compartment representing the plasma, which allows the exchange of metabolites among different tissues. Blocked reactions that could not carry fluxes (and the unused metabolites and genes linked to these reactions) were removed from the models. In addition, the dietary input reactions and constraints were added to the small intestine model to simulate the food intake (Supplementary file 7). Specifically, we assumed that the mice weighed 30 g and consumed 4.5 g chow diet per day (15 g/100 g body weight) based on a previous study (Kummitha et al., 2014). We also calculated the tissue-specific resting energy expenditures and set them as mandatory metabolic constraints based on previous studies and resting energy expenditure for other tissues was incorporated by including a mandatory glucose secretion flux out from the system with the lower bound calculated based on ATP (Supplementary file 7; Kummitha et al., 2014).
 
-To simulate the metabolic flux distribution in the sham-operated mice, we set the lipid droplet accumulation reaction in adipose tissue (m3_Adipose_LD_pool) as the objective function as we assume the energy additional to the resting energy expenditure will be mostly stored as fat rather than used by the muscle for physical activities because mice raised in the cages might have very little exercise. Then, we used parsimonious FBA to calculate the flux distribution. To simulate the flux distribution after an MI, we calculated an expected flux fold change of each reaction based on the FDR and expression fold changes of all genes associated with the reaction, and obtains a flux distribution that is closest to this expected flux distribution while satisfying the stoichiometric balance and flux constraints of the model. The mathematical formulation of the method is described as below,minimizeZ=∑i|vi−viexp|s.t.S*v=0lb≤v≤ubwhere S, v, lb, ub represent the stoichiometric matrix, flux distribution, lower bound and upper bound of all reactions, respectively. The viexp represents the expected flux of ith reaction which is calculated as follows,viexp=viref*∏j=1mFCjmwhere n is the number of gene sets that could independently catalyze the corresponding reaction, and FCj represents the expected expression changes of jth gene set which is calculated below,FCj=1-P1*fc1+P11-P2*fc2+⋯+∏k=1m-1Pk1-Pn*fcnwhere m is the number of genes in the ith gene sets, and Pj and fcj respectively represents the FDR and fold change of gene expression with jth smallest fold change in this gene set. In this way, genes with lowest fold change will have a dominating effect within a gene set encoding a protein complex, while the geometric mean of expected fold changes of gene sets encoding different isozymes of this reaction will be used as the final expected flux fold change of this reaction.
+To simulate the metabolic flux distribution in the sham-operated mice, we set the lipid droplet accumulation reaction in adipose tissue (m3_Adipose_LD_pool) as the objective function as we assume the energy additional to the resting energy expenditure will be mostly stored as fat rather than used by the muscle for physical activities because mice raised in the cages might have very little exercise. Then, we used parsimonious FBA to calculate the flux distribution. To simulate the flux distribution after an MI, we calculated an expected flux fold change of each reaction based on the FDR and expression fold changes of all genes associated with the reaction, and obtains a flux distribution that is closest to this expected flux distribution while satisfying the stoichiometric balance and flux constraints of the model. The mathematical formulation of the method is described as below,
 
-## Validation of the results
+$$
+minimizeZ=\sumi|v_{i}−v_{i}^{exp}|
+$$
+
+
+
+$$
+s.t.S*v=0
+$$
+
+
+
+$$
+lb\leqv\lequb
+$$
+
+where S, v, lb, ub represent the stoichiometric matrix, flux distribution, lower bound and upper bound of all reactions, respectively. The $v_{i}^{exp}$ represents the expected flux of ith reaction which is calculated as follows,
+
+$$
+v_{i}^{exp}=v_{i}^{ref}*\sqrt[m]{\prodj=1mFC_{j}}
+$$
+
+where n is the number of gene sets that could independently catalyze the corresponding reaction, and $FC_{j}$ represents the expected expression changes of jth gene set which is calculated below,
+
+$$
+FC_{j}=1-P_{1}*fc_{1}+P_{1}1-P_{2}*fc_{2}+⋯+\prodk=1m-1P_{k}1-P_{n}*fc_{n}
+$$
+
+where m is the number of genes in the ith gene sets, and $P_{j}$ and $fc_{j}$ respectively represents the FDR and fold change of gene expression with jth smallest fold change in this gene set. In this way, genes with lowest fold change will have a dominating effect within a gene set encoding a protein complex, while the geometric mean of expected fold changes of gene sets encoding different isozymes of this reaction will be used as the final expected flux fold change of this reaction.
+
+### Validation of the results
 
 We validated our findings by performing similar steps of RNA sequencing and functional analysis for the publicly available mouse MI datasets GSE104187 and GSE52313 (Ounzain et al., 2015; Williams et al., 2018).
 
-## Data and code availability
+### Data and code availability
 
 All raw RNA-sequencing data generated from this study can be accessed through accession number GSE153485. Codes used during the analysis are available on https://github.com/sysmedicine/ArifEtAll_2020_MultiTissueMI (copy archeived at swh:1:rev:e79df3ef069674c1344c096ef6b011e771cf506b; Arif, 2021).

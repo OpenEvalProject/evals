@@ -31,33 +31,145 @@ Here, we sought to identify the key structural-molecular elements that support t
 
 ## Results
 
-## Defining the structural organization of ROS membranes
+### Defining the structural organization of ROS membranes
 
 Mouse ROS were extracted using a fast retinal detachment method, minimizing structural deterioration. We employed a single mechanical disruption to detach ROS from the retina at the junction of their thin connecting cilium (CC). Examination of extracted ROS by light microscopy revealed intact ROS with the expected length on the order of 20 µm (Nickell et al., 2007; Figure 1—figure supplement 1A, B). The ROS suspensions were immediately applied to EM grids, vitrified by plunge freezing (Figure 1—figure supplement 1C, D) and thinned by cryo-focused ion beam (cryo-FIB) milling to create lamellae (Schaffer et al., 2017) with a thickness of around 150 nm (Figure 1—figure supplement 1E,F).
 
 Lamellae typically contained several ROS as revealed by TEM overview images (Figure 1—figure supplement 2A). Conventional tomograms acquired with defocus reveal the highly ordered ROS membrane architecture (Figure 1A, Video 1). The use of the Volta phase plate (VPP) (Danev et al., 2014) further enhanced the contrast and allowed for the direct observation of cytosolic protein densities (Figure 1B, Videos 2 and 3). Tomograms of ROS show that the supramolecular organization of the disk membranes exhibits the expected order over a range of micrometers. As this extended organization forms the foundation of ROS function in phototransduction, we derived a precise quantification of the structural parameters of the ROS ultrastructure (Figure 1—figure supplements 3 and 4). The resulting distances (Figure 1C and D, Figure 1—figure supplement 5) agree with previous studies of mammalian ROS (Nickell et al., 2007). The regular inter disk spacing is overall preserved across species (Nickell et al., 2007), and therefore defines with nanometer precision the 3D spatial framework within which fast molecular diffusion processes of phototransduction take place (Calvert et al., 2001).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-v3.jpg)
+
+**Figure 1.:** (A) Slice through a conventional tomogram acquired at 3 μm defocus and (B) in focus with Volta phase plate (VPP). Both imaging modalities allow distinction of the ROS membranes. The disk stack is composed of disk membranes (DM) surrounded by the disk rim (DR) and interrupted by the disk incisure (DI). The disk stack is enclosed by the plasma membrane (PM). DL denotes the disk lumen and Cy the cytosol. Insets: Fourier transforms of single projection images contributing to the tomograms. (C–D) Quantification of the characteristic ROS ultrastructure. The frame in (C) indicates the field of view in (D). (E) High-dose projection (~20 e-/Å2) showing a zipper-like structure. (F) Projection from a tomographic tilt-series (~1.4 e-/Å2) at tilt angle 25° showing a zipper-like structure similar to (E). (G) Projection at tilt angle 9°. (H) Tomographic slice reconstructed from the tilt-series. Zipper-like structure in (F) is resolved into the incisure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Transmission light microscopy of ROS after extraction. (A) This panel shows the extract after vortexing, and (B) the supernatant after centrifugation. Black arrowheads indicate ROS, the green arrowheads indicate cell bodies. The inset in (B) shows an isolated ROS with the connecting cilium (CC) attached. (C–D) SEM and FIB images of grid square before cryo-FIB milling, respectively. ROS appear as elongated, sausage-like structures, while cell bodies appear as spherical objects. (E–F) SEM and FIB images of the area outlined in (C) and (D) after FIB milling, respectively. Pt indicates the protective layer of organo-metallic platinum.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fraction of a lamella TEM overview image. It comprises six ROS oriented in parallel. One ROS is outlined in black. ROS damage is marked by yellow arrowheads. Pt denotes the protective layer of organo-metallic platinum, DI is the disk incisure and, the white asterisk indicates ice crystal contamination. Tomographic tilt-series were only acquired in areas without obvious ROS damage like the area outlined in white. (B) Projection of a tilt-series acquired in the white framed area in (A). Platinum particles which were deposited on lamellae during milling are indicated with white arrowheads and were used for tilt-series alignments.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Contours perpendicular to the disk stack marked with (h) were defined in 4 x binned tomograms (pixel size = 10.48 Å). (B) Cuboids were cropped along (h) with length h and square base area with edge length a = 21 voxels. (C) Cuboids were averaged along the base edges to generate 1D intensity profiles of length h. Points where the membrane signal dropped to 50% of the maximum intensity are marked by red circles. The points at half maxima were used to define the distance between membranes and the membrane thicknesses.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A–B) Thickness of the plasma membrane and measurement of the disk rim, respectively. The upper panels depict subvolume averages and define the directions (H)(K) and (L). The lower panels show intensity profiles along these directions. Characteristic distances are indicated as red lines. (C) Measurement of the cytosolic gap at the disk incisure dIN. (D) Measurement of the cytosolic gap between the disk rim and the plasma membrane dPR. The orange line represents the central plane of the PM as estimated by segmentation.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** The letters in the table are assigned to distances in the sketch in the upper panel.
+
+![Video 1.](https://cdn.elifesciences.org/articles/72817/elife-72817-video1.mp4.jpg)
+
+**Video 1.:** Scale bar 50 nm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/72817/elife-72817-video2.mp4.jpg)
+
+**Video 2.:** Scale bar 50 nm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/72817/elife-72817-video3.mp4.jpg)
+
+**Video 3.:** In focus with Volta Phase Plate. Scale bar 50 nm.
+
 It was previously suggested that the close proximity between disks is maintained by connectivity between the disk membranes, a model derived from 2D micrographs of metal-stained, plastic-embedded ROS sections showing zipper-like structures (Robertson, 1965). Cryo-EM 2D projections show similar patterns (Figure 1E and F). At a different tilt angle, however, the pattern is resolved into the disk incisure (Figure 1G). Tomographic reconstruction confirmed that the membranes at these positions are not interconnected (Figure 1H). We therefore conclude that the proposed model of continuous disk membranes is likely based on a misinterpretation of projection images that are disentangled by 3D imaging. Thus, we investigated next whether alternative structural elements contribute to the precise stacking of ROS disks.
 
-## Segmentation reveals two distinct types of connectors between disks
+### Segmentation reveals two distinct types of connectors between disks
 
 An alternative mechanism proposed for disk stacking is the existence of molecular connectors between disks (Corless and Schneider, 1987; Nickell et al., 2007; Roof and Heuser, 1982; Usukura and Yamada, 1981). In agreement with these previous findings, we observed structures that connect membranes of two adjacent disks in the raw (Figure 1B) and filtered (Figure 2A–C) tomograms acquired with the VPP, but they were not discernible in the conventional tomograms (Figure 1A). Connectors were visualized in proximity to the disk rims, both at the outer periphery of the disks (Figure 2A, Video 4) and at the disk incisures (Figure 2B). In addition, densities that seem to connect the parallel membranes at the disk interior were found at lower frequency (Figure 2C, Video 5). Owing to the high contrast of the VPP data, the molecular connectors could be segmented in the raw tomograms.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig2-v3.jpg)
+
+**Figure 2.:** (A–C) Slices of a tomogram acquired in focus with VPP (WTVPP), filtered with a Gaussian Kernel (sigma = 4 voxel). Orange arrowheads in (A) and (B) indicate connectors localized at the disk rim in proximity to the plasma membrane and the disk incisure, respectively. Blue arrowheads in (C) point at connectors between the parallel membranes of adjacent disks in the disk interior. (D) Connectors segmented with the customized Pyto workflow on the example of one membrane pair viewed from the top (along ROS axis). Connectors within 40 nm of the outer disk periphery are defined as disk rim connectors (orange), and connectors in between the parallel membrane planes as disk interior connectors (blue). (E–G) Statistical analysis of 7000 connectors from five tomograms of the WTVPP dataset. Histograms are shown of nearest neighbor distances (E), connector length (F) and mean gray value (G). Arrowheads above the histograms indicate the median values. (H) Mean value of connector density per µm2 of total disk membrane determined in five tomograms (error bars: one standard deviation). p Values were calculated according to the two-sample Kolmogorov-Smirnov test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The original Pyto workflow. (B) The customized Pyto workflow involving the creation of a binary mask with a single threshold. The binary mask is then subjected to watershed transform with ‘catchment basins’ filled from the center between the membranes towards the outside as indicated by the gradient of blue color in step (c). Watershed lines are shown as green bars. (C) The customized Pyto workflow applied to actual data on the example of one membrane pair. Membrane masks are depicted in yellow, watershed lines in green and segmented connectors in black. Connectors that can be tracked throughout the processing pipeline are marked by gray arrowheads.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Segmentation results of the original Pyto workflow. The neighboring membranes of adjacent disks are depicted in yellow. The segmented connectors are black. (B) Results with the customized Pyto workflow. (C) Comparison of results in B with manual segmentation. The right panel explains the viewing direction in (A–C). (D) Number of picked connectors and average connector volume for the segmentation methods (error bars: one standard deviation). (E) Sketch of connectors to illustrate the reason for differences between manual and automated segmentation. The membrane pair is viewed from the side (perpendicular to the ROS axis). Red rectangles represent tomographic slices. Manually and automatically segmented voxels are filled red and blue, respectively. The membranes are yellow. The Left panel indicates why manually selected connectors have a smaller volume. The right panel illustrates an inclined connector. In none of the slices is it observed as a straight connector. Therefore, it can be missed in the manual segmentation.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Disk morphological considerations to calculate the rim, interior, and total membrane area. (B) Sketch of two connectors illustrating the characteristic connector points. For each connector, the membrane contact points Pmb and the central point Ccon were used to calculate the connector length. Ccon of neighboring connectors was used to compute the nearest-neighbor distances.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Initial alignment of all disk rim connectors. The isosurface representation of the average is shown in the upper panel, the cross-section through the center in the lower panel. DM denotes disk membranes, DL the disk lumen, Cy the cytosol and DR the disk rim. The orange box marks the outline of the mask used for classification, the blue box the field of view in (B) and (C). (B) Three examples for class averages. A promising class which appears as a straight connector is boxed in green, an ambiguous class in yellow and a false-positives class in red. (C) Subvolume alignment of the promising class labelled with ‘1’ in (B). The left panel shows a cross section through the center of the average, middle and right panels are isosurface representations from two orientations. They display a clear connector between neighboring disk rims, but no further structural information can be inferred. (D–F) Similar analysis for disk interior connectors. (D) shows the initial alignment of all connectors, (E) three examples for class averages and (F) the alignment of the promising class labelled with ‘2’ in (E). M1 indicates the membrane at which the subvolume was extracted, M2 the second membrane within the same disk and M3 the neighboring disk.
+
+![Video 4.](https://cdn.elifesciences.org/articles/72817/elife-72817-video4.mp4.jpg)
+
+**Video 4.:** Shown are ROS disk rims in proximity to the plasma membrane. Many straight connectors between the disks can be observed at the disk periphery. Scale bar 20 nm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/72817/elife-72817-video5.mp4.jpg)
+
+**Video 5.:** Shown are the parallel ROS disk membranes (disk interior). Structures that interconnect the disks can be found but are less abundant than at the disk periphery (Video 4). Scale bar 20 nm.
 
 We produced segmentations of the membrane bilayers (Martinez-Sanchez et al., 2014), based on which elements connecting two adjacent disks are defined, and used the Pyto software package (Lučić et al., 2016) to segment densities corresponding to these elements (Figure 2—figure supplement 1A). Here, we customized the original Pyto workflow by applying an additional mask prior to the segmentation to separate artificially continuous connectors (Figure 2—figure supplement 1B, C) by water shedding (Meyer, 1994). The result of the automated segmentation method was compared to a manual segmentation (Figure 2—figure supplement 2C). Over 90% of the connectors were picked by both methods and the error of the determined coordinates was below 2 nm. Therefore, the automated segmentation allowed for quantitative analysis of connector abundance and arrangement in 3D.
 
 Automated segmentation was performed on five tomograms resulting in the segmentation of 7000 connectors. Based on their proximity to the disk rim, they were divided into disk rim connectors, residing within 40 nm from the rim (Figure 2—figure supplement 3A), and disk interior connectors at the remaining membrane surface (Figure 2D, Video 6). Statistical analysis showed that rim connectors have shorter nearest-neighbor distances (Figure 2E), are shorter (Figure 2F), and have a lower grey value; that is, represent a more dense structure (Figure 2G) compared to the disk interior connectors. These results implied the existence of two distinct types of connectors. Based on the segmentation, we estimated the density of the connectors per surface area of disk to be 190 and 920 molecules per μm2 of the disk membrane surface area for the rim and interior connectors, respectively (Figure 2H). By integrating available experimental data (Batra-Safferling et al., 2006; Gilliam et al., 2012; Zhao et al., 2019) and mass-spectrometry data (Kwok et al., 2008; Skiba et al., 2013), we tentatively assign disk rim connectors to glutamic-acid-rich protein 2 (GARP2), and the interior species to the enzyme phosphodiesterase 6 (PDE6). However, we were not able to validate this assignment experimentally. Due to the obvious structural flexibility of the connectors observed in the raw data (Figure 2A–C), we could not obtain further structural information by alignment, classification, and averaging of connector subvolumes (Figure 2—figure supplement 4).
 
-## ROS disk rims are likely organized by a continuous scaffold of PRPH2-ROM1 oligomers
+![Video 6.](https://cdn.elifesciences.org/articles/72817/elife-72817-video6.mp4.jpg)
+
+**Video 6.:** Color code: yellow: membrane mask; blue: connectors in the disk interior; orange: connectors at the disk rim.
+
+### ROS disk rims are likely organized by a continuous scaffold of PRPH2-ROM1 oligomers
 
 The second key structural feature of ROS architecture is the high curvature at the disk rims. There, the two membrane bilayers of a disk are connected via a hairpin-like structure, with a 12 nm radius of curvature. To elucidate its organization in 3D, subvolumes were extracted at the disk periphery in the conventional dataset (WTconv), aligned and averaged (Figure 3—figure supplement 1). The resulting average showed three densities (Figure 3—figure supplement 1C, Video 7) inside the disk lumen. In 3D, they form an ordered assembly of repeats organized in three interconnected rows, creating a continuous belt along the disk rim (focused on the central row in Figure 3A, Video 8). We measured a repeat length of 4.1 nm for all three rows in this average and a shift of half a repeat between the central and peripheral rows (Figure 3—figure supplement 2C). The view from the disk lumen onto the assembly appears to be C2 symmetric with respect to an axis perpendicular to the ROS axis.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-v3.jpg)
+
+**Figure 3.:** This average was obtained by focusing the alignment on four repeats along the central density row (CD). (A) Isosurface representation of the disk rim subvolume average. The central row of density with its contacts to the peripheral rows is depicted in solid gray by applying the alignment mask to the average, and the signal of the whole disk rim average is shown in transparent grey. Black arrowheads indicate transmembrane densities (TMDs). DL denotes the disk lumen and Cy the cytosol. (B) Cross-sections through the disk rim average density without masking. (C) Orthogonal slices of the unmasked averageat different z-heights. The green box is centered on the same repeat along the central density row throughout the slices. In the right panel, the signals of the peripheral rows (PR) are marked by black boxes. The locations of the slices are indicated by numbered lines in the right panel of (B). The signal of the inner leaflet (IL) and outer leaflet (OL) are indicated by a purple and a blue line, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Positions and orientations of subvolumes with the corresponding averages for different alignment steps. In the top panel, each arrow represents the position of one subvolume and the arrow direction coincides with the subvolume z-axis. The bottom panel depicts two orthogonal sections through the corresponding subvolume average. The location of the slices through the average are indicated by orange lines. The initial extraction points are shown in (A), the refined positions after alignment of 4 x binned subvolumes in (B) and the distance-cleaned positions after alignment of 2 x binned subvolumes in (C). Luminal densities (LDs) are indicated by black arrowheads. (D) Histogram of distance to 10 nearest neighbors for positions of 2 x binned particles before distance cleaning. Green arrowheads indicate peaks at multiples of 4 nm for subvolumes partially converged into lattice points. (E) Reference and mask used for the alignment of unbinned subvolumes. The initial reference, the mask and the masked reference are shown in the left, middle, and right panels, respectively. The orange line in the upper panel indicates the position of the slice in the lower panel. DL denotes the disk lumen and Cy the cytosol.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Examples for class averages obtained for the central row of density by classification of disk rim subvolumes in RELION (Scheres, 2016) indicating the local flexibility of the disk rims. The upper panel shows a slice through the center of the average, the lower panel shows the isosurface representation. The class highlighted in the green frame was used for further processing. (B) Sketch to illustrate the symmetry operations used to align the clockwise- (CW) and counterclockwise (CCW) rows of density with respect to each other. The starting points were the orientations of the central density (CD) row. The subvolume extraction points are marked by red crosses. (C) Intensity profiles along the three rows. Gray values were extracted from the whole, unmasked WTconv average of the central density row (CD). The left panel indicates the orientation of the three masks used to calculate the 1D intensity profiles in the right panel. The top right panel shows the actual 1D signals and the middle right panel the fitted sine-functions. The parameters of the fit are listed in the bottom panel. DL denotes the disk lumen and Cy the cytosol.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** This average was obtained by focusing the alignment on four repeats along the peripheral rows (PR). (A) Cross-section through the PR average without masking. The shape of the repeats in the peripheral rows is overall similar to the repeats of the central row (Figure 3B) but exhibit slight distortion or inclination towards the central repeat. (B) Isosurface representations of the PR average from different perspectives. The peripheral row and its contact to the neighboring row is shown in solid gray by applying the alignment mask to the average, and the signal of the whole, unmasked PR average in transparent gray. Black arrowheads indicate transmembrane densities (TMDs). (C) Same perspectives as in (B) but with isosurface representations at higher threshold. The density which links repeats of the peripheral row is highlighted by orange arrowheads. DL denotes the disk lumen and Cy the cytosol. The signals of the inner leaflet (IL) and outer leaflet (OL) are indicated by a purple- and a blue line, respectively.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Fourier shell correlation (FSC) curves for the subvolume averages derived from the conventional dataset (WTconv). (CD) denotes the central-, CW the clockwise-, CCW the counterclockwise rows, and CW + CCW combined both peripheral rows. (B) FSC curves for averages of the central density row. WTconv and WTVPP denote the conventional and the VPP dataset of WT mice, respectively. Abca4-/-VPP is the VPP dataset of ABCA4 knockout mice. (C) Angular distribution of the subvolume averages.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Comparison of the PRPH2 dimer model with the repeat resolved in the disk rim subvolume average. The left panel shows a front view of the model predicted by ColabFold colored according to the predicted local distance difference test (pLDDT). The middle panel depicts front and top view of the same model and a density map filtered to a resolution of 18 Å. The first and the second PRPH2 chain of the dimer are colored in green and cyan, respectively. The PRPH2-C150 cysteine residues responsible for intermolecular disulfide bonds are indicated by magenta spheres. The right panel shows slices through the whole, unmasked disk rim subvolume average. (B) The predicted model of the PRPH2 dimer docked into one repeat along the central density row of the disk rim scaffold. PRPH2-C150 is colored magenta, the two PRPH2 chains in green and cyan. The central row of repeats and its contact to the peripheral rows as isosurface representation is shown in transparent gray by applying the alignment mask to the whole disk rim average. DL denotes the disk lumen and Cy the cytosol. The signals of the inner leaflet (IL) and outer leaflet (OL) are indicated by a purple- and a blue line, respectively.
+
+![Video 7.](https://cdn.elifesciences.org/articles/72817/elife-72817-video7.mp4.jpg)
+
+**Video 7.:** The top panel shows a tomographic slice (WTVPP) with one disk rim indicated by an orange frame. The bottom panel depicts the isosurface representation of the disk rim average obtained by focusing the alignment on the central density row. The view along the disk periphery reveals three luminal densities which form a continuous scaffold of three interconnected rows along the disk rim.
+
+![Video 8.](https://cdn.elifesciences.org/articles/72817/elife-72817-video8.mp4.jpg)
+
+**Video 8.:** This average was obtained by focusing the alignment on four repeats along the central row of density. Initially, the whole, unmasked average is shown. Later, the central row of density (CD) with its contact to the peripheral rows (PR) is shown in solid grey by applying the alignment mask while the signal of the whole disk rim is displayed in transparent gray. The same representation was used in Figure 3A.
+
 The densities of the central row have a height of ~11 nm, stretching from the cytosol, through the membrane bilayer, and into the disk lumen (along the z-axis in Figure 3B). Slices taken at different heights reveal further structural features (Figure 3C). Each repeat contributes two small cytosolic densities. This 1.0 nm cytosolic domain is followed by a transmembrane domain extending over 6.0 nm with two diverging densities. These two densities then converge inside the disk lumen into a globular domain with a height of 2.6 nm. There, the densities within a repeat and its neighbors in the row come into close contact. Farther into the disk lumen, two diverging arms connect the central row to the peripheral rows. A repeat in the central row contacts two repeats, one on each of the peripheral rows located diagonally and inclined at an angle of ~63° with respect to the central repeat (Figure 3—figure supplement 2B). The head domain has a height of 1.5 nm (Figure 3B). The shape and the dimensions (Figure 3—figure supplement 3A, B, Video 9) of repeats in the peripheral rows are similar to the central row; however, a pronounced density connects the peripheral repeats along the outside of the assembly (Figure 3—figure supplement 3C, Video 10).
+
+![Video 9.](https://cdn.elifesciences.org/articles/72817/elife-72817-video9.mp4.jpg)
+
+**Video 9.:** This average was obtained by centering the peripheral row (PR) in the subvolume box and focusing the alignment on four repeats along the PR. Initially, the whole, unmasked average is shown. Later, the peripheral row (PR) with its contact to the central density rows (CD) is shown in solid gray by applying the alignment mask while the signal of the whole disk rim is displayed in transparent gray. The same representation was used in Figure 3—figure supplement 3B.
+
+![Video 10.](https://cdn.elifesciences.org/articles/72817/elife-72817-video10.mp4.jpg)
+
+**Video 10.:** This is the same average as in Video 9 with a similar representation, but at higher threshold emphasizing the density which links the repeats within the PR on the outside of the disk rim scaffold.
 
 Mammalian ROS contain three abundant proteins, which localize to the disk rim and harbor large disk luminal domains; namely, PRPH2 and ROM1 which form oligomers and ABCA4. To clarify the identity of the scaffold proteins, we analyzed the disk rims in VPP datasets of WT mice (WTVPP) and of homozygote ABCA4 knockout mice (Abca4-/-VPP). The overall quality of the VPP averages is lower than for WTconv, but cross-sections through the disk rim averages filtered to the same resolution reveal a similar structure in all three cases (Figure 4). Hence, the absence of ABCA4 has little impact on the architecture of the disk rim scaffold. Furthermore, the shape of the repeats is clearly different from the ABCA4 structure (Liu et al., 2021; Tsybovsky and Palczewski, 2014) while it agrees with the previously estimated dimensions of PRPH2-ROM1 tetramers (Kevany et al., 2013). However, a model of PRPH2 dimers predicted by AlphaFold2 (Jumper et al., 2021; Mirdita et al., 2021) matches the V-shape and the size of the repeats equally well (Figure 3—figure supplement 5, Video 11). Therefore, we hypothesize that the disk rim scaffold enforces the high membrane curvature at ROS disk rims and is composed of three interconnected rows of PRPH2-ROM1 oligomers. To test this hypothesis and to conclusively determine whether the repeats are PRPH2-ROM1 dimers or tetramers, a density map with near-atomic resolution would be needed.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72817/elife-72817-fig4-v3.jpg)
 
-**Figure 4.:** abca4 mice.-/-Shown are orthogonal slices through the whole, unmasked averages of the central density (CD) in different datasets. All averages are filtered to a resolution of 30 Å. The left and right panel display the average of WT disk rims from a conventional (WTconv) and a VPP dataset (WTVPP). The right panel shows the VPP average derived from ABCA4 knockout mice (Abca4-/-vpp). The orange line in the upper panels indicates the location of the slice in the bottom panels. DL denotes the disk lumen and Cy the cytosol.
+**Figure 4.:** Shown are orthogonal slices through the whole, unmasked averages of the central density (CD) in different datasets. All averages are filtered to a resolution of 30 Å. The left and right panel display the average of WT disk rims from a conventional (WTconv) and a VPP dataset (WTVPP). The right panel shows the VPP average derived from ABCA4 knockout mice (Abca4-/-vpp). The orange line in the upper panels indicates the location of the slice in the bottom panels. DL denotes the disk lumen and Cy the cytosol.
+
+![Video 11.](https://cdn.elifesciences.org/articles/72817/elife-72817-video11.mp4.jpg)
+
+**Video 11.:** The central row of density with its contact to the peripheral rows is shown in transparent grey by applying the alignment mask the whole disk rim average. The two PRPH2 chains within the dimer model are colored in green and cyan. The PRPH2-C150 cysteines are indicated as spheres in magenta.
 
 ## Discussion
 
@@ -89,7 +201,7 @@ We propose a mechanism for disk rim curvature formation, where the two diverging
 
 ## Materials and methods
 
-## ROS extraction and cryo-preparation
+### ROS extraction and cryo-preparation
 
 Five- to 8-week-old wild type (WT) mice (C57BL/6 J, Jackson Laboratory, Bar Harbor, USA) and mice lacking the photoreceptor-specific ATP binding cassette transporter ABCA4 (Abca4-/-) (Weng et al., 1999), were used for the isolation of rod outer segments (ROS). To minimize the interval between dissection and plunge-freezing, only one mouse was used for each preparation. The mouse was euthanized by exposing it to CO2 for 3–5 min followed by cervical dislocation. The first eyeball was excised with curved scissors and glued (Scotch Single-use super glue gel) with its sclera side down to a plastic Petri dish. The petri dish was filled with ice cold Ringer’s buffer (10 mM Hepes, 130 mM NaCl, 3.6 mM KCl, 12 mM MgCl2, 1.2 mM CaCl2, 0.02 mM EDTA, pH 7.4) until the eyeball was fully covered. The eye was dissected as follows. First, a slit was made with a scalpel blade, and one blade of fine scissors inserted into the slit. The cornea was cut away and then the lens removed with fine forceps. To separate the retina from the retinal pigment epithelium, Ringer’s buffer was applied gently between the layers with a P200 pipette. The retina was transferred into a 1.5 ml tube using a P1000 pipet. To prevent damaging the retina during transfer, the opening of the pipet tip was widened by cutting off its tip. The same procedure was applied to the second eye. After collecting two retinas in one tube, Ringer’s buffer was removed and 25 μL of fresh Ringer’s buffer added. The retinas were vortexed at 3200 rpm for 1 min to detach ROS. The sample was centrifuged at 100 rcf for 1 min at 4 °C using an Eppendorf 5415 R Centrifuge with an F 45-24-11 rotor. The centrifugation step enriched ROS in the supernatant which was transferred into a fresh tube (Figure 1—figure supplement 1A, B). To collect more ROS, 25 μL of Ringer’s buffer were added to the retinas, which were then subjected to the same ROS collection procedure. The combined supernatant was gently mixed by repetitive pipetting four times. The resulting sample was used for plunge-freezing. The total extraction time was 10–20 min.
 
@@ -99,19 +211,161 @@ For each glow-discharged copper grid (Quantifoil Cu 200 mesh, holy carbon film R
 
 Plunge-frozen grids were fixed into custom-made autogrids, mounted into a shuttle (Rigort et al., 2010b) and then transferred into a dual-beam focused ion beam and scanning-electron microscope (FIB/SEM, Quanta 3D FEG, Thermo Fisher Scientific) using a cryo-transfer system (PP3000T, Quorum Technologies, Lewes, UK). During FIB operation, samples were kept constantly close to liquid nitrogen temperature using an in-house-developed open nitrogen-circuit 360° rotatable cryo-stage (Rigort et al., 2010a). To improve sample conductivity and to reduce curtaining artifacts during FIB-milling, the samples were first sputter-coated with platinum in the Quorum prep-chamber (10 mA, 30 s) and then coated with organo-metallic platinum using an in situ gas injection system (GIS, Thermo Fisher Scientific) operated at 26 °C, at 12 mm stage working distance and 7 s gas injection time. Lamellae were prepared using a Gallium ion beam at 30 kV. FIB-milling was performed in a stepwise manner using rectangle patterns following similar procedures as in Schaffer et al., 2017. The initial step was conducted at a stage tilt angle of 25° with a beam current of 1 nA 10–20 µm away from the final lamella area. After rough milling, the stage was tilted to 20° and the ion current gradually reduced to lower currents as the thinning progressed (500 pA until 4 µm, 300 pA until 1 µm). For the final cleaning step, a low current of 50 pA was used to obtain lamellae thinner than 250 nm (Figure 1—figure supplement 1D, F). The progress of FIB-milling was monitored using the SEM operated at 10 kV and 42 pA (Figure 1—figure supplement 1C, E). For improved conductivity of the final lamella, the grid was again sputter-coated after cryo-FIB preparation with platinum in the Quorum prep-chamber (10 mA, 1 s) as previously reported in Mahamid et al., 2016.
 
-## Cryo-transmission electron microscopy and tomography
+### Cryo-transmission electron microscopy and tomography
 
 Cryo-transmission electron microscopy observations were performed using a Titan Krios operated at 300 kV (Thermo Fisher Scientific). This microscope was equipped with a field-emission gun, a quantum post-column energy filter (Gatan, Pleasanton, USA), and a Volta phase plate (VPP, Thermo Fisher Scientific) (Danev et al., 2014). Bidirectional tilt-series were collected using SerialEM software (Mastronarde, 2005) between ±50° or ±60° starting at 20° with a tilt increment of 2° and a total exposure dose of ~100 e−/Å2. The individual projection images were recorded as movies (dose fractionation mode) on a K2 Summit (Gatan) direct electron detector camera operated in counting mode with an image pixel size of 2.62 Å. The exposure dose for the projection at 0° doseα=0 was 1.6 e−/Å2 fractionated over five frames. By acquiring more frames at higher tilt angles, the dose was adjusted as a function of the tilt angle α according to the following equation: dose(α) = doseα = 0 / cos(α).
 
 A fraction of the tomographic tilt-series in this work were acquired with the VPP (Danev et al., 2014) and zero defocus (in focus). Alignment and operation of the Volta phase plate were carried out as described previously (Fukuda et al., 2015). During automated tilt-series acquisition an autofocusing routine was performed using zero defocus offset with 5 mrad and 10 mrad beam tilt for conventional tilt series and data acquisition with VPP, respectively. For tilt series recorded in focus, the effect of the microscope’s spherical aberration on the measured defocus was accounted for by setting the defocus target to 270 nm (Danev and Baumeister, 2016). Tomographic tilt-series were collected using standard automated acquisition procedures. All datasets are listed in Table 1.
 
+**Table 1.**
+ List of used datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset abbreviation</th>
+      <th colspan="2">WTconv</th>
+      <th>WTVPP</th>
+      <th>Abca4-/-VPP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse sample</td>
+      <td colspan="2">Wild type</td>
+      <td>Wild type</td>
+      <td>Abca4-/-</td>
+    </tr>
+    <tr>
+      <td>Volta phase plate</td>
+      <td colspan="2">No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Defocus (µm)</td>
+      <td>3</td>
+      <td>4.5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td># Tomograms</td>
+      <td>36</td>
+      <td>12</td>
+      <td>18</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>EMPIAR accession code (EMPIAR-)</td>
+      <td colspan="2">10773</td>
+      <td>10772</td>
+      <td>10771</td>
+    </tr>
+    <tr>
+      <td colspan="5">Number of segmented connectors in five tomograms</td>
+    </tr>
+    <tr>
+      <td>Disk rim connectors</td>
+      <td colspan="2">-</td>
+      <td>800</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Disk interior connectors</td>
+      <td colspan="2">-</td>
+      <td>6,200</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="5">Disk rim subvolumes for central density (CD)</td>
+    </tr>
+    <tr>
+      <td># all subvolumes</td>
+      <td colspan="2">53,000</td>
+      <td>14,300</td>
+      <td>4,600</td>
+    </tr>
+    <tr>
+      <td># classified subvolumes</td>
+      <td colspan="2">9,000</td>
+      <td>11,000</td>
+      <td>3,400</td>
+    </tr>
+    <tr>
+      <td>Global resolution at FSC = 0.5 (Å)</td>
+      <td colspan="2">18.6</td>
+      <td>22.5</td>
+      <td>27.5</td>
+    </tr>
+    <tr>
+      <td>Global resolution at FSC = 0.143 (Å)</td>
+      <td colspan="2">16.9</td>
+      <td>19.9</td>
+      <td>22.7</td>
+    </tr>
+    <tr>
+      <td>Processing with Warp/M</td>
+      <td colspan="2">Yes / Yes</td>
+      <td>No / No</td>
+      <td>No / No</td>
+    </tr>
+    <tr>
+      <td>EMDB accession code (EMD-)</td>
+      <td colspan="2">13321</td>
+      <td>13323</td>
+      <td>13324</td>
+    </tr>
+    <tr>
+      <td colspan="5">Disk rim subvolumes for peripheral density (CW+ CCW)</td>
+    </tr>
+    <tr>
+      <td># all subvolumes</td>
+      <td colspan="2">106,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td># classified subvolumes</td>
+      <td colspan="2">48,000</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Global resolution at FSC = 0.5 (Å)</td>
+      <td colspan="2">18.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Global resolution at FSC = 0.143 (Å)</td>
+      <td colspan="2">16.8</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Processing with Warp/M</td>
+      <td colspan="2">Yes / Yes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EMDB accession code (EMD-)</td>
+      <td colspan="2">13322</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Prior to the acquisition of the tilt-series, montage images at lower magnification (pixel size ~2 nm) were taken of the entire lamella. The montage tiles were aligned using the IMOD (version 4.10.18) (Kremer et al., 1996) command ‘justblend’. Each lamella contained several ROS. In some cases, the ROS ultrastructure was partially distorted. As the distortions were locally confined, tilt-series were exclusively recorded in areas with ROS unperturbed by the sample preparation (Figure 1—figure supplement 2A). For each mouse strain and acquisition scheme, data was collected on samples derived from at least three different mice.
 
-## Processing of tilt-series
+### Processing of tilt-series
 
 Prior to tilt-series alignment, the projection images were corrected for beam-induced motion with MotionCor2 (Zheng et al., 2017). For the conventional dataset (no VPP and non-zero defocus), the CTF parameters of the projections were determined with Gctf (Zhang, 2016). Prior to tomogram reconstruction the projections were CTF-corrected with the IMOD function ‘ctfphaseflip’ and dose-filtered as described in Grant and Grigorieff, 2015 with a MatLab implementation for tilt-series (Wan et al., 2017). Data acquired with VPP in focus was not CTF-corrected. Tilt-series alignment and tomographic reconstructions were performed using the IMOD (Mastronarde and Held, 2017) software package (version 4.10.18). Platinum particles originating from the protective platinum layer which were deposited over the lamella surface during FIB-milling served as fiducials (Figure 1—figure supplement 2B). Final alignment of the tilt-series images was performed using the linear interpolation option in IMOD. For tomographic reconstruction, the weighted back-projection algorithm in IMOD was used with the radial filter options left at their default values (cut off = 0.35; fall off = 0.05). In Figures 2A–C–4x binned tomographic volumes (pixel size = 10.48 Å) were filtered by convolution with a Gaussian Kernel (sigma = 4 voxel) using the TOM toolbox (Nickell et al., 2005). Micrographs or tomographic slices were visualized in IMOD (Kremer et al., 1996). In these cases, the density appears dark, that is with a low gray value.
 
-## Distance calculation
+### Distance calculation
 
 To measure the repetitive distances of ROS disk membranes, contours of varying length perpendicular to the disk stack were defined in the disk interior (e.g. contour h of length h = ||h|| in Figure 1—figure supplement 3A). The contours were generated in 3dmod by opening the tomographic volume in the Zap window and creating a new model. Each contour included two points spanning across at least two ROS disks. Cuboids were cropped along these contours (Figure 1—figure supplement 3B). The base of the cuboids was square-shaped with an edge length a of 21 voxels (base edges labeled ‘a’ in Figure 1—figure supplement 3B). The cuboid voxels were averaged along the base area to obtain a 1D intensity profile of length h (Figure 1—figure supplement 3C). The distances were measured from the points where the membrane signals reached 50% of the maximum intensity (marked as red circles in Figure 1—figure supplement 3C).
 
@@ -119,7 +373,7 @@ For the thickness calculation of the plasma membrane (PM) dPM, a total of 430 su
 
 For the distance between PM and the disk rim dPR, the central plane of the PM was segmented with TomoSegMemTV (Martinez-Sanchez et al., 2014). Then, dPR was calculated according to: dPR = d2 – dShift – dPM/2, where d2 is the shortest distance between a coordinate in group three and the central plane of the PM as determined by the segmentation (Figure 1—figure supplement 4D). Only the distance between neighboring disk rims (Distance G in Figure 1—figure supplement 5) was not directly measured in the tomograms but calculated as the difference between the unit cell distance and the maximum disk rim diameter (Distance B and H, respectively, in Figure 1—figure supplement 5). Besides subvolume averaging, the distance calculations and the required image processing steps were performed in MatLab aided by the TOM software toolbox (Nickell et al., 2005).
 
-## Connector segmentation
+### Connector segmentation
 
 The segmentations were performed on 4 x binned tomograms (pixel size = 10.48 Å). More dense structures, like proteins, appear darker in tomographic slices which translates into a lower gray value. First, all ROS membranes were automatically segmented by tensor voting (Martinez-Sanchez et al., 2014). The results of the automated segmentation and the original tomograms were loaded in Amira (v.6.2.0, Thermo Fisher Scientific). By comparing the two volumes, segmented patches which did not correspond to membranes were identified and manually removed. Afterwards, neighboring disk membranes of adjacent disks were grouped into pairs (Figure 2—figure supplement 1C). The results of the initial automated membrane segmentation correspond to the central membrane plane. By adding a layer of three voxels on either side of the central plane, the segmentation was grown to a thickness of 7 nm. This was then used to mask disk membranes with their apparent thickness of ~6.8 nm in raw tomograms. Additionally, these masks defined the borders of the cytosolic gap between disks which a connector must bridge. The cytosolic voxels between the membrane masks were normalized separately for each membrane pair to a mean value of zero and a standard deviation of one. This extinguished gradients in the gray value distribution throughout a tomogram caused by heterogeneous lamella thickness and compensated for contrast differences between tomograms. To pick the connectors, the Pyto software package was used (Lučić et al., 2016). The original Pyto workflow segments connectors between the membranes of adjacent disks by evaluating all cytosolic voxels between the membrane masks as described below. The algorithm runs a gray value ramp from a user-defined lowest gray value gmin to a highest gray value gmax, with a step size gstep according to: gi = gmin + (i – 1)gstep ∩ i = 1, 2, 3, …, gmax/gstep.
 
@@ -133,7 +387,7 @@ The manual segmentation of connectors was performed as follows: initially, the m
 
 To assess the quality of the customized Pyto segmentation approach, the results were compared to the manual segmentation (Figure 2—figure supplement 2C, D). Two major differences are apparent: First, the connectors selected automatically were bulkier than manually picked connectors. This is caused by the Pyto algorithm that picks voxels based on their gray value and their connectivity and evaluates all voxels at once, not in a slice-by-slice manner (Figure 2—figure supplement 2E). Second, fewer connectors were picked manually. This is likely due to inclined structures, which were not observed as continuous connectors in one single tomographic slice, but several successive slices. Consequently, they could be missed manually (Figure 2—figure supplement 2E). Therefore, picking of connectors with the automated segmentation approach is more reliable than the manual segmentation. Ninety percent of the connectors were picked by both methods and the error of the determined connector coordinates was below 2 nm. This error is small compared to the pixels size of 1 nm and the size of membrane patches with diameters of 500–1000 nm. Therefore, the shape of the automatically segmented connectors may not be reliable, but their abundance and arrangement in 3D can be quantitatively analyzed.
 
-## Analysis of connector segmentation
+### Analysis of connector segmentation
 
 A total of 7000 connectors were segmented in five VPP tomograms of wt ROS. The tomograms were selected based on a good IMOD tilt-series alignment scores and visual confirmation of well-resolved densities between ROS disks. The connectors and the membrane surface area were divided into two fractions. The disk rim fraction was within 40 nm from the outer periphery of disks rims. The remainder was considered the disk interior fraction. Based on this definition, 800 connectors were assigned as the disk rim connectors and 6200 as disk interior connectors. The local connector concentrations in the membrane fractions were calculated as the number of connectors nfraction per surface area Afraction:
 
@@ -151,11 +405,11 @@ To do the spatial analysis, each connector was assigned with a central coordinat
 
 Lcon = ||CconPmb1|| + ||CConPmb2||, with ||CconPmb1|| and ||CConPmb2|| denoting the distance between Ccon and the contact points Pmb1 and Pmb2, respectively (Figure 2—figure supplement 3B). The mean grey value was defined as the average gray value of all connector voxels. The statistical significance of differences between disk rim and disk interior connectors was established with the two-sample Kolmogorow-Smirnow test in MatLab.
 
-## Subvolume averaging
+### Subvolume averaging
 
 Initially, binned subvolumes were extracted from dose-weighted and, if possible, CTF-corrected tomograms. The initial alignments were performed with scripts based on TOM, AV3 and Dynamo as described in Schur et al., 2016; Wan et al., 2017. The alignment references were exclusively derived from the data itself and low-pass filtered to 30 Å. To describe the orientation of subvolumes within the tomograms, triplets of Euler angles in ‘ZXZ’ convention were used, comprising the angles Phi, Theta, and Psi. Phi is the angle of the first in-plane rotation around the z-axis. Theta describes the second rotation around the new x-axis, and Psi the third rotation around the new z-axis. Classification of 3D subvolumes and the final alignments were performed in RELION (version 3) with 2 x binned or unbinned subvolumes. For the WTconv dataset, unbinned subvolumes were extracted with Warp (Tegunov and Cramer, 2019). Warp automatically generates a CTF model for each subvolume which is needed for RELION (Tegunov and Cramer, 2019). For VPP tomograms a simple ‘fan’-shaped CTF model (Bharat et al., 2015) was created which was one for all information-containing slices in Fourier space, and zero elsewhere. For the gray value representation of subvolume averages, the scale was inverted compared to the raw tomograms. Therefore, density in slices through subvolume averages appears bright, translating into a high grey value. Slices of subvolume averages were depicted in IMOD (Kremer et al., 1996), while isosurface representations and subvolume positions within the context of tomograms were displayed in UCSF Chimera (Pettersen et al., 2004).
 
-## Subvolume averaging of connectors
+#### Subvolume averaging of connectors
 
 Subvolume analysis of disk connectors was only performed in WTVPP tomograms. The initial subvolume extraction points of connectors were defined at their two membrane contact points Pmb1 and Pmb2 (Figure 2—figure supplement 3B) as elucidated by the segmentation. Initial Euler angles for Psi and Theta were determined so that the subvolume z-axis was parallel to the local normal vector of the disk membrane. The Phi angles were randomized. First, subvolumes were extracted from 4 x binned tomograms (pixel size = 10.48 Å, box size = 643) and aligned with shifts only allowed perpendicular to the membrane plane. For the disk interior connectors, the angle of the in-plane rotation was not searched, while for the disk rim connectors the whole 360° were covered to align the disk rims with respect to each other. The initial alignment brought the membranes into register and refined the initial orientations. The averages as a result of this alignment indicate a clear density protruding from the membrane into the cytosol, but it appears fuzzy compared to the membrane signal (Figure 2—figure supplement 4A and D, for disk rim and disk interior connectors, respectively). Probably, this is caused by the heterogeneity of the densities which could not be sorted by classification of 3D subvolumes in RELION. Hence, a different classification approach was chosen.
 
@@ -163,7 +417,7 @@ First, 4 x binned subvolumes were re-extracted at the refined positions (pixel s
 
 The high rate of putative false-positives indicated by the classification of the connector subvolumes suggests that our segmentation approach is error prone. Most likely, because the segmentation algorithm cannot distinguish two densities in close proximity protruding from opposite disks into the cytosol from an actual connector. On the other hand, we obtain classes with elongated densities that appear to link neighboring disks. Therefore, we assume that the two types of connectors indeed exist, yet at lower concentration than the initial segmentation determined (Figure 2H). Particularly, the disk rim connectors which are frequently seen in our tomograms (Figure 2A and B) and have been observed before (Corless et al., 1987; Roof and Heuser, 1982) are unlikely an artifact of the segmentation in the crowded environment of ROS.
 
-## Subvolume averaging of disk rims
+#### Subvolume averaging of disk rims
 
 Subvolume analysis of disk rims was performed in WTconv, WTVPP and abca4-/-VPP tomograms. Splines were manually picked along disk rims. For that, the tomographic volume was visualized in the 3dmod ZAP window, and a new model created. A new contour was defined for each disk rim by adding points along its outer periphery. Initial subvolume extraction points were set along the splines with 1 nm distance. Initial Euler angles for Psi and Theta were assigned so that the local spline direction dictated the orientation of the subvolume z-axis. The Phi angles of the in-plane rotation were randomized (Figure 3—figure supplement 1A). Initially, 4 x binned subvolumes (pixel size = 10.48 Å, box size = 643) were extracted. The initial average was composed of a strong density along the z-axis (Figure 3—figure supplement 1A). During the initial alignments, the translations along the spline were restricted to 1 nm and the entire Phi range was sampled, while the search range for Psi and Theta was restricted to ±15°. Later, this search was refined. For the initial reference, a subset of 300 subvolumes was aligned against the unstructured, first average. After several iterations, the symmetry was broken until the average converged into the hairpin-like structure of the disk rim. This initial reference was then used to align the whole dataset. During this step, the subvolume positions converged to the disk rims and a first estimate for all three Euler angles was obtained (Figure 3—figure supplement 1B).
 
@@ -191,7 +445,7 @@ Subvolumes were extracted with Warp from unbinned tomograms and subjected to the
 
 Our best disk rim averages have a rather low resolution (~18 Å) given the number of used subvolumes (Table 1) compared to previous results for other protein scaffolds (Dodonova et al., 2017; Schur et al., 2016). This is probably caused by the flexibility and the heterogeneity which is characteristic of many structures in cells. The flexibility of the disk rim scaffold is indicated by the varying rim diameters measured in the tomograms (Figure 1—figure supplement 5). We tried to avoid the influence of flexibility by focusing the alignment on individual repeats instead of several repeats along a row. This did not improve the global resolution suggesting that the repeat itself is heterogeneous or flexible.
 
-## Structural prediction of PRPH2 oligomers
+### Structural prediction of PRPH2 oligomers
 
 To further improve our model of the disk rim scaffold, we modeled 3D structures of PRPH2. Since there are no available homolog structures in PDB for conventional homology-based structure prediction, we relied on ColabFold (Mirdita et al., 2021), a notebook environment based on AlphaFold2 (Jumper et al., 2021). For the prediction, we used the sequence of mouse PRPH2 available in the UniProt database (P15499) and the default settings in the following, publicly available notebook: https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/beta/AlphaFold2_advanced.ipynb.
 

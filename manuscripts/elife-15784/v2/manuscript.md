@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.15784.001 Myelin is best known for its role in increasing the conduction velocity and metabolic efficiency of long-range excitatory axons. Accordingly, the myelin observed in neocortical gray matter is thought to mostly ensheath excitatory axons connecting to subcortical regions and distant cortical areas. Using independent analyses of light and electron microscopy data from mouse neocortex, we show that a surprisingly large fraction of cortical myelin (half the myelin in layer 2/3 and a quarter in layer 4) ensheathes axons of inhibitory neurons, specifically of parvalbumin-positive basket cells. This myelin differs significantly from that of excitatory axons in distribution and protein composition. Myelin on inhibitory axons is unlikely to meaningfully hasten the arrival of spikes at their pre-synaptic terminals, due to the patchy distribution and short path-lengths observed. Our results thus highlight the need for exploring alternative roles for myelin in neocortical circuits. DOI: http://dx.doi.org/10.7554/eLife.15784.001
+Myelin is best known for its role in increasing the conduction velocity and metabolic efficiency of long-range excitatory axons. Accordingly, the myelin observed in neocortical gray matter is thought to mostly ensheath excitatory axons connecting to subcortical regions and distant cortical areas. Using independent analyses of light and electron microscopy data from mouse neocortex, we show that a surprisingly large fraction of cortical myelin (half the myelin in layer 2/3 and a quarter in layer 4) ensheathes axons of inhibitory neurons, specifically of parvalbumin-positive basket cells. This myelin differs significantly from that of excitatory axons in distribution and protein composition. Myelin on inhibitory axons is unlikely to meaningfully hasten the arrival of spikes at their pre-synaptic terminals, due to the patchy distribution and short path-lengths observed. Our results thus highlight the need for exploring alternative roles for myelin in neocortical circuits.
 
 ## Introduction
 
@@ -37,103 +37,233 @@ Here we combine analyses of light-microscopy-based array tomography (AT) data (M
 
 We applied two microscopic approaches to determine the neurotransmitter content of cortical myelinated axons. Array tomography (AT) is based on digital reconstruction of images acquired from arrays of serial ultrathin sections (70 nm) attached to coverslips and imaged with different modalities, such as immunofluorescence and scanning electron microscopy (SEM). The use of ultrathin sections allows the unambiguous light level identification of individual myelinated axons even in regions with high myelin density (e.g., subcortical white matter), while the possibility of applying multiple immunofluorescent markers (10 or more) enables the molecular characterization of these axons. Conjugate SEM further reveals the underlying ultrastructure. TEMCA-based volume electron microscopy uses an array of high-speed cameras to efficiently image large numbers of serial ultrathin (40–50 nm) sections. The resulting image volumes are of sufficient size and resolution that the densely packed and intertwined axons and dendrites of the brain neuropil can be traced over relatively long distances, and the synaptic connections between them can be discerned. With this form of EM, all membranes and synapses are labeled, enabling neuronal structure and connectivity to be sampled in an unbiased fashion. Additional evidence was also obtained using immunohistochemical labeling of brain slices from transgenic mice expressing fluorophores in salient inhibitory interneuron subtypes. The EM and AT studies were initiated and conducted independently in two different laboratories and data were pooled once the complementary nature of the findings were ascertained (Materials and methods).
 
-## Array tomography shows that a large fraction of myelinated axons in upper layers of cortex contain the inhibitory neurotransmitter GABA
+### Array tomography shows that a large fraction of myelinated axons in upper layers of cortex contain the inhibitory neurotransmitter GABA
 
-Immunofluorescence AT is particularly well suited for the study of myelinated axons in cortex. The abundance of myelin proteins, such as myelin basic protein (MBP), and the size of myelinated axons (>200 nm in diameter) make them an ideal target for immunofluorescence detection (
+Immunofluorescence AT is particularly well suited for the study of myelinated axons in cortex. The abundance of myelin proteins, such as myelin basic protein (MBP), and the size of myelinated axons (>200 nm in diameter) make them an ideal target for immunofluorescence detection (Figure 1A, Figure 1—figure supplement 1, Video 1). The ultrathin AT sections provide easy access of the antibodies against MBP and do not require lipid extraction. Conjugate light-electron AT confirms that immunofluorescence for MBP precisely outlines the myelinated sheaths of axons (Figure 1B, Figure 1—figure supplement 1B, Figure 1—figure supplement 2A). Overall, the MBP immunolabel is of high quality as evidenced by the consistency of the signal from section to section (Figure 1—figure supplement 2B), and the low background (mean gray value of 248 ± 6 a.u. on resin and 279 ± 2 a.u. on nuclei, vs 5754 ± 226 a.u. on myelin, mean and standard error). In addition, the use of ultrathin sections ensures that antigens can be detected equally well within myelinated and unmyelinated portions of the axon. For example, in our AT experiments GABA and PV immunostaining within axons is not affected by myelination (Figures 1, 3), in contrast to preembedding immunocytochemistry where myelinated portions of axons are much more weakly stained (Pawelzik et al., 2002).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig1-v2.jpg)
 
-**Figure 1.:** (A) An ultrathin section (70 nm) through the mouse somatosensory cortex immunolabeled for MBP (cyan) and GABA (red). Nuclei are stained with DAPI (blue). Smaller regions from each layer are shown at higher magnification to the right. (B) Scanning electron micrograph from layer 5 of the mouse somatosensory cortex overlaid with the corresponding immunofluorescence for MBP (cyan) and GABA (red), and the DAPI signal (blue). (C) Proportion of myelinated axonal profiles containing GABA in the cortical layers of mouse somatosensory cortex. (D) Density of GABA and non-GABA myelinated axons in mouse somatosensory cortex (y-axis is in logarithmic scale to accommodate the large range of myelinated axon densities along the cortical depth). Mean from 3 animals and standard errors are shown in C and D (number of axonal profiles analyzed per animal was 11103, 12,657 and 7540, respectively).DOI: http://dx.doi.org/10.7554/eLife.15784.00310.7554/eLife.15784.004Figure 1—source data 1.Figure 1.DOI: http://dx.doi.org/10.7554/eLife.15784.004
+**Figure 1.:** (A) An ultrathin section (70 nm) through the mouse somatosensory cortex immunolabeled for MBP (cyan) and GABA (red). Nuclei are stained with DAPI (blue). Smaller regions from each layer are shown at higher magnification to the right. (B) Scanning electron micrograph from layer 5 of the mouse somatosensory cortex overlaid with the corresponding immunofluorescence for MBP (cyan) and GABA (red), and the DAPI signal (blue). (C) Proportion of myelinated axonal profiles containing GABA in the cortical layers of mouse somatosensory cortex. (D) Density of GABA and non-GABA myelinated axons in mouse somatosensory cortex (y-axis is in logarithmic scale to accommodate the large range of myelinated axon densities along the cortical depth). Mean from 3 animals and standard errors are shown in C and D (number of axonal profiles analyzed per animal was 11103, 12,657 and 7540, respectively).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) MBP immunofluorescence on a single ultrathin section (70 nm) from layer 5 of the adult mouse cortex. Interruption in the MBP staining indicates a node of Ranvier (magenta box) (B) MBP staining corresponds exactly to the myelin sheath as seen in the SEM of the axon boxed in green in A. (C) Nodes of Ranvier (magenta box in A) do not stain for MBP, but the axonal path can be traced using cytoskeletal markers which persist through the nodes (alpha tubulin in red). (D) Volume reconstruction of myelinated axons immunolabeled with MBP (white) and GABA (red) in cortical layer 5 (43 sections, 70 nm each). Nuclei are stained with DAPI (blue). SEM of layer 5 of mouse cortex overlaid with immunofluorescence for GABA (red), MBP (cyan), α tubulin (green), glutamine synthetase (orange).DOI: http://dx.doi.org/10.7554/eLife.15784.005
+**Figure 1—figure supplement 1.:** (A) MBP immunofluorescence on a single ultrathin section (70 nm) from layer 5 of the adult mouse cortex. Interruption in the MBP staining indicates a node of Ranvier (magenta box) (B) MBP staining corresponds exactly to the myelin sheath as seen in the SEM of the axon boxed in green in A. (C) Nodes of Ranvier (magenta box in A) do not stain for MBP, but the axonal path can be traced using cytoskeletal markers which persist through the nodes (alpha tubulin in red). (D) Volume reconstruction of myelinated axons immunolabeled with MBP (white) and GABA (red) in cortical layer 5 (43 sections, 70 nm each). Nuclei are stained with DAPI (blue). SEM of layer 5 of mouse cortex overlaid with immunofluorescence for GABA (red), MBP (cyan), α tubulin (green), glutamine synthetase (orange).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Myelin thickness as measured from IF data and SEM data. Myelin thickness was measured on the same sections using either immunofluorescence for MBP or ultrastructurally defined myelin on SEM images using a dataset from a previous study (McGee et al., 2005) (N=125 axonal profiles). There is a strong correlation between the two measurements (R2=0.9), which allows the use of MBP immunofluorescence for more efficient sampling. (B) Consistency of MBP immunolabel. Correlation of MBP immunofluorescence of the same myelin sheath measured on two adjacent ultrathin sections (N=100 axonal profiles).DOI: http://dx.doi.org/10.7554/eLife.15784.006
+**Figure 1—figure supplement 2.:** (A) Myelin thickness as measured from IF data and SEM data. Myelin thickness was measured on the same sections using either immunofluorescence for MBP or ultrastructurally defined myelin on SEM images using a dataset from a previous study (McGee et al., 2005) (N=125 axonal profiles). There is a strong correlation between the two measurements (R2=0.9), which allows the use of MBP immunofluorescence for more efficient sampling. (B) Consistency of MBP immunolabel. Correlation of MBP immunofluorescence of the same myelin sheath measured on two adjacent ultrathin sections (N=100 axonal profiles).
+
+![Video 1.](https://cdn.elifesciences.org/articles/15784/elife-15784-media1.mp4.jpg)
+
+**Video 1.:** Stack of raw images from 59 serial sections (70 nm each) from cortical layer 5.
 
 As expected, AT detects the presence of myelinated axons in all neocortical layers. Quantification of the number of MBP profiles in single sections shows that their numbers dramatically increase with cortical depth (Figure 1D), consistent with previous quantitative myeloarchitectonic studies in non-rodent species (Nieuwenhuys, 2013; Braitenberg, 1962; Hopf, 1966). Immunostaining for the inhibitory neurotransmitter GABA reveals that a surprisingly large number of myelinated axons throughout cortex contain GABA, including more than 45% of myelinated axons in layers 2/3 (48.1 ± 3.2%, mean ± standard error, Figure 1C). Layers 4 and 5 exhibit similar numbers of GABA myelinated axons as layers 2/3 (Figure 1D), but the deeper layers contain larger numbers of non-GABA myelinated axons, presumably of projecting pyramidal cells. GABA myelinated axons are relatively sparse in layers 1, 6, and only occasionally seen in subcortical white matter.
 
-## Volume electron microscopy reveals that a large fraction of myelinated axons in layer 2/3 form symmetrical (presumed inhibitory) synapses
+### Volume electron microscopy reveals that a large fraction of myelinated axons in layer 2/3 form symmetrical (presumed inhibitory) synapses
 
-In parallel with the array tomography work, and blind to its results, myelinated axons were traced within a previously acquired (
+In parallel with the array tomography work, and blind to its results, myelinated axons were traced within a previously acquired (Bock et al., 2011), publicly available (Burns et al., 2013; Martone et al., 2002) volume electron microscopy dataset from the upper layers of mouse visual cortex V1. This dataset was of sufficient size and resolution that both myelinated and unmyelinated axons could be traced over hundreds of microns, allowing them to be categorized on the basis of their synaptic ultrastructure as inhibitory or excitatory. A section from near the middle of the EM volume was selected, and all the myelin profiles from the center portion of this section were annotated (Figure 2A). Each of these myelinated 'seeds' (e.g. Figure 2B,E) was used as a starting point for further tracing of the myelinated axon through the EM volume. Along their length, a majority of the traced axons unmyelinated and made a number of synapses (Figure 2C,F). Axons were classified according to the appearance of the pre- and postsynaptic densities of the synapses they made, using the classical definitions for asymmetrical (excitatory) and symmetrical (inhibitory) synapses (Colonnier, 1968; Peters et al., 1991) (Figure 2D,G). Of the 231 myelinated 'seeds', 73 were classified as excitatory (31.6%; Figure 2—figure supplement 1), 106 as inhibitory (45.9%; Figure 2—figure supplement 2), and 52 (22.5%; Figure 2—figure supplement 3) could not be categorized due to an absence of synapses within the volume. This analysis shows that inhibitory myelinated axons are abundant in cortical layer 2/3, comprising at least 45% of myelinated axons in the mouse visual cortex.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig2-v2.jpg)
 
-**Figure 2.:** (A) EM mosaic from pia through lower layer 2/3, overlaid with the locations of myelinated axon profiles used as tracing seeds. Each seed is color-coded by the type of synapses the axon was determined to make after exiting its myelin sheath elsewhere in the volume (red: symmetric; green: asymmetric; yellow, no synapses in the EM volume). Red and green rectangles indicate areas of detail in B and E, respectively. (B) Detail view of area in red rectangle in A. Three inhibitory myelinated axon profiles (false colored red) are shown. (C) A reconstructed axon arbor arising from the myelinated tracing seed at the center of B. Thick blue segments indicate myelinated internodal regions; thin red segments represent unmyelinated axon. Segment diameters are schematic. This axon was traced to its originating soma (sphere in lower left) and to 8 synapses (small red dots). The arrow indicates the location on this axon’s arbor of the symmetric synapse shown in D. Note that axon arbors were traced only until their synapses could be reliably categorized as symmetric or asymmetric; therefore the arbor shown here is a small subset of the full axonal arbor arising from this inhibitory neuron. (D) An unmyelinated axon profile (red) makes a symmetric synapse (red triangle) onto a postsynaptic spine (yellow). This spine also receives an asymmetric synapse (blue triangle) from an excitatory axon (green). (E) Detail view of area in green rectangle in A, showing two excitatory myelinated axon profiles (false colored green). (F) A reconstructed axon arbor arising from the myelinated tracing seed at the center of E. Conventions as in C, except unmyelinated axon segments are rendered in green. (G) An unmyelinated axon profile (green) makes three asymmetric synapses (blue triangles) onto three different spines. Scale bar in A, 50 μm; E, 3 μm (also applies to B); F, 20 μm (also applies to C); G, 1 μm (also applies to D).DOI: http://dx.doi.org/10.7554/eLife.15784.008
+**Figure 2.:** (A) EM mosaic from pia through lower layer 2/3, overlaid with the locations of myelinated axon profiles used as tracing seeds. Each seed is color-coded by the type of synapses the axon was determined to make after exiting its myelin sheath elsewhere in the volume (red: symmetric; green: asymmetric; yellow, no synapses in the EM volume). Red and green rectangles indicate areas of detail in B and E, respectively. (B) Detail view of area in red rectangle in A. Three inhibitory myelinated axon profiles (false colored red) are shown. (C) A reconstructed axon arbor arising from the myelinated tracing seed at the center of B. Thick blue segments indicate myelinated internodal regions; thin red segments represent unmyelinated axon. Segment diameters are schematic. This axon was traced to its originating soma (sphere in lower left) and to 8 synapses (small red dots). The arrow indicates the location on this axon’s arbor of the symmetric synapse shown in D. Note that axon arbors were traced only until their synapses could be reliably categorized as symmetric or asymmetric; therefore the arbor shown here is a small subset of the full axonal arbor arising from this inhibitory neuron. (D) An unmyelinated axon profile (red) makes a symmetric synapse (red triangle) onto a postsynaptic spine (yellow). This spine also receives an asymmetric synapse (blue triangle) from an excitatory axon (green). (E) Detail view of area in green rectangle in A, showing two excitatory myelinated axon profiles (false colored green). (F) A reconstructed axon arbor arising from the myelinated tracing seed at the center of E. Conventions as in C, except unmyelinated axon segments are rendered in green. (G) An unmyelinated axon profile (green) makes three asymmetric synapses (blue triangles) onto three different spines. Scale bar in A, 50 μm; E, 3 μm (also applies to B); F, 20 μm (also applies to C); G, 1 μm (also applies to D).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Left, frontal view. Right, side view. Large green spheres: excitatory somata reached during categorization of axon fragments; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Smallest green spheres indicate the position of synapses made by the excitatory axon fragments. Scale bar ~50 μm.DOI: http://dx.doi.org/10.7554/eLife.15784.009
+**Figure 2—figure supplement 1.:** Left, frontal view. Right, side view. Large green spheres: excitatory somata reached during categorization of axon fragments; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Smallest green spheres indicate the position of synapses made by the excitatory axon fragments. Scale bar ~50 μm.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Left, frontal view. Right, side view. Large red spheres: inhibitory somata reached during categorization of axon fragments; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Smallest red spheres indicate the position of synapses made by the inhibitory axon fragments. Scale bar ~50 μm.DOI: http://dx.doi.org/10.7554/eLife.15784.010
+**Figure 2—figure supplement 2.:** Left, frontal view. Right, side view. Large red spheres: inhibitory somata reached during categorization of axon fragments; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Smallest red spheres indicate the position of synapses made by the inhibitory axon fragments. Scale bar ~50 μm.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** Left, frontal view. Right, side view. Large green spheres: excitatory somata; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Scale bar ~50 μm.DOI: http://dx.doi.org/10.7554/eLife.15784.011
+**Figure 2—figure supplement 3.:** Left, frontal view. Right, side view. Large green spheres: excitatory somata; medium-sized spheres indicate the position of tracing seeds of categorized axon fragments (green: excitatory; red: inhibitory; yellow: unclassifiable). Scale bar ~50 μm.
 
-## Nearly all myelinated GABA axons are parvalbumin-positive
+### Nearly all myelinated GABA axons are parvalbumin-positive
 
-Cortical GABA neurons are a highly diverse population (
+Cortical GABA neurons are a highly diverse population (Ascoli et al., 2008; Markram et al., 2004; Xu et al., 2010). About half of them contain parvalbumin (PV), a calcium buffering protein. Array tomography (Figure 3A,B and Figure 3—figure supplement 1) revealed that nearly all GABA myelinated axons (97.9 ± 0.8%, mean ± st.error from 3 animals) are immunopositive for parvalbumin and therefore originate from PV interneurons. Correspondingly, in the examined cortical AT volumes (Figure 3C–F), examples of PV and GABA-positive cell bodies forming myelinated axons are seen in layers 2/3, 4 and 5. Blind to the AT results, we conducted independent experiments in three mice expressing the fluorescent protein tdTomato driven by Cre expression in PV neurons (Pvalb-ires-Cre;Ai9) (Taniguchi et al., 2011). Confocal imaging of 40 μm thick Vibratome slices from these mice immunostained with MBP corroborated the AT findings by showing that about half (53 ± 12%) of the myelinated axons in layer 2/3 of somatosensory cortex contain tdTomato and, therefore, PV (Figure 4A–D). Similar experiments were also performed on mice expressing tdTomato from SOM-Cre or VIP-Cre driver lines (Sst-ires-Cre;Ai9, and Vip-ires-Cre;Ai9) (Taniguchi et al., 2011; Madisen et al., 2010). After careful inspection of selected subareas, no myelinated axons containing reporter for the non-PV cortical interneurons vasoactive intestinal polypeptide (VIP; Figure 4E–G) could be observed. A small fraction (4.4%) of somatostatin (SOM)-positive myelinated axons were observed (Figure 4H–J); however, the transgenic reporter line used was recently found to have a small but consistent false-positive expression pattern, wherein up to 10% of Cre-expressing neurons are SOM-negative and PV-positive when examined by immunohistochemistry (Hu et al., 2013). At least some of the SOM-positive myelinated axon profiles we observe therefore may be false positives which actually express PV, not SOM; and some may be true positives, consistent with the AT data, which show that ~2% of GABA myelinated profiles are PV negative. Regardless, the data obtained from the three Cre-lines support the conclusion that the great preponderance of myelinated inhibitory axon profiles in layer 2/3 arise from parvalbumin-positive axons.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig3-v2.jpg)
 
-**Figure 3.:** (A) A single section (70 nm) from layer 2/3 of mouse cortex, immunolabeled for MBP (white), GABA (red) and PV (green); nuclei are stained with DAPI (blue). Note that the PV-containing neurons have weaker GABA immunoreactivity. (B) The central box from A shown at a higher magnification. The great majority (97.9 ± 0.8%) of GABA immunopositive myelinated axons (red, left panel) also contain PV (green, right panel); the yellow box marks an example of such an axon (see main text for quantification). Occasionally, a GABA myelinated axon does not show detectable PV immunofluorescence as shown in the red box. (C) Serial sections through the parvalbumin containing neuron boxed in A, C showing its myelinated axon. (D) Volume reconstruction of the neuron in C. (E, F) Volume reconstructions of PV interneurons with myelinated axons from layers 4 and 5. A–F, Scale bar, 10 μm.DOI: http://dx.doi.org/10.7554/eLife.15784.012
+**Figure 3.:** (A) A single section (70 nm) from layer 2/3 of mouse cortex, immunolabeled for MBP (white), GABA (red) and PV (green); nuclei are stained with DAPI (blue). Note that the PV-containing neurons have weaker GABA immunoreactivity. (B) The central box from A shown at a higher magnification. The great majority (97.9 ± 0.8%) of GABA immunopositive myelinated axons (red, left panel) also contain PV (green, right panel); the yellow box marks an example of such an axon (see main text for quantification). Occasionally, a GABA myelinated axon does not show detectable PV immunofluorescence as shown in the red box. (C) Serial sections through the parvalbumin containing neuron boxed in A, C showing its myelinated axon. (D) Volume reconstruction of the neuron in C. (E, F) Volume reconstructions of PV interneurons with myelinated axons from layers 4 and 5. A–F, Scale bar, 10 μm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Top, Distribution of GABA and PV immunofluorescence within cortical myelinated axons. Because of the inherent variability of immunolabeling intensity and image acquisition parameters, comparisons were always done on sections from the same coverslip, which were stained and imaged at the same time. Measurements from layers 4 and 5 of mouse cortex from one coverslip are presented in the figure. The threshold for GABA and PV immunofluorescence is indicated by the blue lines. Bottom, Scatterplot of GABA and PV immunofluorescence from the same experiment, showing three classified populations of myelinated axons: GABA negative in blue, GABA and PV positive in red, and GABA positive but PV negative axonal profiles in green.DOI: http://dx.doi.org/10.7554/eLife.15784.013
+**Figure 3—figure supplement 1.:** Top, Distribution of GABA and PV immunofluorescence within cortical myelinated axons. Because of the inherent variability of immunolabeling intensity and image acquisition parameters, comparisons were always done on sections from the same coverslip, which were stained and imaged at the same time. Measurements from layers 4 and 5 of mouse cortex from one coverslip are presented in the figure. The threshold for GABA and PV immunofluorescence is indicated by the blue lines. Bottom, Scatterplot of GABA and PV immunofluorescence from the same experiment, showing three classified populations of myelinated axons: GABA negative in blue, GABA and PV positive in red, and GABA positive but PV negative axonal profiles in green.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig4-v2.jpg)
 
-**Figure 4.:** (A) Maximum intensity projection of a stack of confocal image mosaics, spanning pia (top) to white matter (bottom) of somatosensory cortex, revealing the laminar distribution of PV-expressing neurons (red) and immunolabeled myelin (green). Yellow square in layer 2/3 indicates the location of the field of view portrayed in panels B–D. (B–D) Detail view of a representative subarea from a single section in layer 2/3. About half of the myelinated axons are PV-positive (yellow triangles). B shows the red channel (PV) only; C shows the green channel (myelin) only, and myelinated profiles containing PV-positive axons are false-colored cyan; and D overlays panels B and C. (E–G) Representative confocal images from layer 2/3 of somatosensory cortex, showing VIP-expressing neurites (red), immunolabeled myelin (green), and DAPI-stained nuclei (blue). E shows only the red (VIP) and blue (DAPI) channels; F shows only the green (myelin) and blue (DAPI) channels; and G overlays panels E and F. (H–J) Representative confocal images from layer 2/3 of somatosensory cortex, showing SOM-expressing neurites (red), immunolabeled myelin (green), and DAPI-stained nuclei (blue). H shows only the red (SOM) and blue (DAPI) channels; I shows only the green (myelin) and blue (DAPI) channels, and myelinated profiles containing SOM-positive axons are false-colored cyan; and J overlays panels H and I. No myelinated axon profiles are positive for VIP; 4.4% are positive for SOM. Scale bar in A, 100 μm; B, 10 μm (also applies to C–D); E, 10 μm (also applies to H–J).DOI: http://dx.doi.org/10.7554/eLife.15784.014
+**Figure 4.:** (A) Maximum intensity projection of a stack of confocal image mosaics, spanning pia (top) to white matter (bottom) of somatosensory cortex, revealing the laminar distribution of PV-expressing neurons (red) and immunolabeled myelin (green). Yellow square in layer 2/3 indicates the location of the field of view portrayed in panels B–D. (B–D) Detail view of a representative subarea from a single section in layer 2/3. About half of the myelinated axons are PV-positive (yellow triangles). B shows the red channel (PV) only; C shows the green channel (myelin) only, and myelinated profiles containing PV-positive axons are false-colored cyan; and D overlays panels B and C. (E–G) Representative confocal images from layer 2/3 of somatosensory cortex, showing VIP-expressing neurites (red), immunolabeled myelin (green), and DAPI-stained nuclei (blue). E shows only the red (VIP) and blue (DAPI) channels; F shows only the green (myelin) and blue (DAPI) channels; and G overlays panels E and F. (H–J) Representative confocal images from layer 2/3 of somatosensory cortex, showing SOM-expressing neurites (red), immunolabeled myelin (green), and DAPI-stained nuclei (blue). H shows only the red (SOM) and blue (DAPI) channels; I shows only the green (myelin) and blue (DAPI) channels, and myelinated profiles containing SOM-positive axons are false-colored cyan; and J overlays panels H and I. No myelinated axon profiles are positive for VIP; 4.4% are positive for SOM. Scale bar in A, 100 μm; B, 10 μm (also applies to C–D); E, 10 μm (also applies to H–J).
 
-## Myelinated inhibitory axons most likely belong to cortical basket cells
+### Myelinated inhibitory axons most likely belong to cortical basket cells
 
-Among the inhibitory neurons of cortex, parvalbumin is found in basket cells, chandelier cells (
+Among the inhibitory neurons of cortex, parvalbumin is found in basket cells, chandelier cells (Markram et al., 2004; Kawaguchi and Kubota, 1997; DeFelipe et al., 1989), and in a sparse sub-population of long-range inhibitory axons arising from basal forebrain (Freund and Gulyás, 1991; Caputi et al., 2013). Because these different cell types are known to have distinct axonal morphology and targets, we traced the postsynaptic targets of inhibitory myelinated axons in layer 2/3 from the volume EM data set in an effort to understand their originating cell type (Figure 5). The postsynaptic targets were identified as inhibitory or excitatory according to previously described ultrastructural criteria (Bock et al., 2011) (Materials and methods). Briefly, postsynaptic dendrites were classified as inhibitory if they were largely aspinous and densely coated with asymmetric (excitatory) synapses (e.g. Figure 6E–F), while they were classified as excitatory if they were spiny and received fewer shaft excitatory synapses. Excitatory somata were distinguished from inhibitory somata based on cell shape, the presence of a large apical dendrite, and the absence of asymmetric contacts on the soma. For each synapse, the postsynaptic compartmental location and class (excitatory or inhibitory) was tabulated (Table 1), and postsynaptic class was used to color-code the synapses along the reconstructed axonal fragments (Figures 5–6).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig5-v2.jpg)
 
-**Figure 5.:** (A) An inhibitory axon traced from a myelinated seed to completion within the EM volume. The proximal axonal arbor receives the preponderance of myelin (thick blue arbor segments), whereas the distal arbor makes most of the synapses. The red rectangle outlines the sub-arbor shown in D. In (A–C), the large red spheres indicate the position of the soma. Synapses are represented by dots, color-coded according to postsynaptic target class: green (excitatory), magenta (excitatory axon), yellow (unclassifiable), and red (inhibitory). (B) A second inhibitory axon traced to completion. In this case the EM volume boundaries were reached before reaching the soma. A myelinated core portion of the arbor can be discerned, with most synapses at the periphery. (C) All the inhibitory axon fragments traced from myelinated seeds. Overall, only 2% of synapses made by myelinated inhibitory axons are onto excitatory axons (magenta spheres); no synapses onto inhibitory axons were observed. (D) Detail view of area shown in red rectangle in A showing one of the rare synapses made by myelinated inhibitory neurons onto the proximal axon of a pyramidal cell (arrow). (E) EM image of a section intersecting the pyramidal cell body and its proximal axon (false-colored green), postsynaptic to the synapse indicated by the arrow in D (false-colored red). The red rectangle indicates the area of detail shown in F. (F) A magnified view of the synapse shown in E. A second postsynaptic target, the spine neck of a dendrite arising from a different pyramidal cell is false-colored in yellow. Symmetrical synapse locations indicated by red triangles. Scale bar in A–C, 50 μm; E, 4 μm; F, 1 μm.DOI: http://dx.doi.org/10.7554/eLife.15784.015
+**Figure 5.:** (A) An inhibitory axon traced from a myelinated seed to completion within the EM volume. The proximal axonal arbor receives the preponderance of myelin (thick blue arbor segments), whereas the distal arbor makes most of the synapses. The red rectangle outlines the sub-arbor shown in D. In (A–C), the large red spheres indicate the position of the soma. Synapses are represented by dots, color-coded according to postsynaptic target class: green (excitatory), magenta (excitatory axon), yellow (unclassifiable), and red (inhibitory). (B) A second inhibitory axon traced to completion. In this case the EM volume boundaries were reached before reaching the soma. A myelinated core portion of the arbor can be discerned, with most synapses at the periphery. (C) All the inhibitory axon fragments traced from myelinated seeds. Overall, only 2% of synapses made by myelinated inhibitory axons are onto excitatory axons (magenta spheres); no synapses onto inhibitory axons were observed. (D) Detail view of area shown in red rectangle in A showing one of the rare synapses made by myelinated inhibitory neurons onto the proximal axon of a pyramidal cell (arrow). (E) EM image of a section intersecting the pyramidal cell body and its proximal axon (false-colored green), postsynaptic to the synapse indicated by the arrow in D (false-colored red). The red rectangle indicates the area of detail shown in F. (F) A magnified view of the synapse shown in E. A second postsynaptic target, the spine neck of a dendrite arising from a different pyramidal cell is false-colored in yellow. Symmetrical synapse locations indicated by red triangles. Scale bar in A–C, 50 μm; E, 4 μm; F, 1 μm.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig6-v2.jpg)
 
-**Figure 6.:** (A) A representative inhibitory axon fragment traced from a myelinated seed profile (arrow). Blue indicates the extent of myelin along the fragment; thin red axon segments are unmyelinated. The spheres indicate the location of symmetric synapses, and are color-coded red for inhibitory postsynaptic targets (synapse 1) and green for excitatory postsynaptic targets (synapses 2–5). These five symmetric synapses were sufficient to categorize the axon as inhibitory. The letters above the fragment correspond to the approximate locations of later panels. (B) The myelinated profile used as a tracing seed for the axon fragment in . Myelin is false-colored blue; the axon is false colored in red. (AC–N) EM micrographs through synapses 1–5. The presynaptic axon is false-colored in dark red; the postsynaptic inhibitory dendrite in light red; the postsynaptic excitatory targets in green; and other excitatory boutons converging onto the same targets as the myelinated inhibitory axon, in yellow. (C) Synapse 1 contacts an inhibitory dendrite, which is also shown in (D–E). In E, the dendrite is densely coated with excitatory axonal boutons making asymmetric synapses (blue triangles), a hallmark of inhibitory dendrites. (F) Cross-section through synapse 2. (G) Larger field of view of the section in F, showing that the postsynaptic target is a neuronal cell body. (H) A nearby section through the same neuron as in G, reveals it to be a pyramidal cell with a prominent apical dendrite. (I) The myelinated axon approaching an apical dendrite. (J) Synapse 3 is formed immediately after the axon unmyelinates and contacts the same apical dendrite shown in I. (K) The same bouton participating in synapse 3 forms synapse 4 with a spine arising from the same apical dendrite shown in I and J. (L) Synapse 5 targets the shaft of a dendrite, identified as excitatory by the presence of spines on near-by sections (e.g. M–N). (M) Synapse 5 can still be seen, and a spine neck arises from the postsynaptic dendrite. (N) The spine neck in M forms a small spine head, receiving an asymmetric synapse (blue triangle) from an excitatory bouton from a different axon. Scale bar in A, ~1 μm; B, 1 μm (also applies to C–F); G, 4 μm; H, 9 μm; I, 1 μm (also applies to J–L); M, 1 μm (also applies to N).DOI: http://dx.doi.org/10.7554/eLife.15784.016
+**Figure 6.:** (A) A representative inhibitory axon fragment traced from a myelinated seed profile (arrow). Blue indicates the extent of myelin along the fragment; thin red axon segments are unmyelinated. The spheres indicate the location of symmetric synapses, and are color-coded red for inhibitory postsynaptic targets (synapse 1) and green for excitatory postsynaptic targets (synapses 2–5). These five symmetric synapses were sufficient to categorize the axon as inhibitory. The letters above the fragment correspond to the approximate locations of later panels. (B) The myelinated profile used as a tracing seed for the axon fragment in A. Myelin is false-colored blue; the axon is false colored in red. (C–N) EM micrographs through synapses 1–5. The presynaptic axon is false-colored in dark red; the postsynaptic inhibitory dendrite in light red; the postsynaptic excitatory targets in green; and other excitatory boutons converging onto the same targets as the myelinated inhibitory axon, in yellow. (C) Synapse 1 contacts an inhibitory dendrite, which is also shown in (D–E). In E, the dendrite is densely coated with excitatory axonal boutons making asymmetric synapses (blue triangles), a hallmark of inhibitory dendrites. (F) Cross-section through synapse 2. (G) Larger field of view of the section in F, showing that the postsynaptic target is a neuronal cell body. (H) A nearby section through the same neuron as in G, reveals it to be a pyramidal cell with a prominent apical dendrite. (I) The myelinated axon approaching an apical dendrite. (J) Synapse 3 is formed immediately after the axon unmyelinates and contacts the same apical dendrite shown in I. (K) The same bouton participating in synapse 3 forms synapse 4 with a spine arising from the same apical dendrite shown in I and J. (L) Synapse 5 targets the shaft of a dendrite, identified as excitatory by the presence of spines on near-by sections (e.g. M–N). (M) Synapse 5 can still be seen, and a spine neck arises from the postsynaptic dendrite. (N) The spine neck in M forms a small spine head, receiving an asymmetric synapse (blue triangle) from an excitatory bouton from a different axon. Scale bar in A, ~1 μm; B, 1 μm (also applies to C–F); G, 4 μm; H, 9 μm; I, 1 μm (also applies to J–L); M, 1 μm (also applies to N).
+
+**Table 1.**
+ The distribution of the postsynaptic targets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Postsynaptic target</th>
+      <th colspan="2">Completely traced axons</th>
+      <th colspan="2">Partially traced axons</th>
+      <th colspan="2">All</th>
+    </tr>
+    <tr>
+      <th>count</th>
+      <th>%</th>
+      <th>count</th>
+      <th>%</th>
+      <th>count</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitatory somata</td>
+      <td>60*</td>
+      <td>15.0</td>
+      <td>46†</td>
+      <td>10.5</td>
+      <td>106</td>
+      <td>12.6</td>
+    </tr>
+    <tr>
+      <td>Excitatory dendritic shafts</td>
+      <td>184</td>
+      <td>45.9</td>
+      <td>225</td>
+      <td>51.4</td>
+      <td>409</td>
+      <td>48.7</td>
+    </tr>
+    <tr>
+      <td>Excitatory dendritic spines</td>
+      <td>119</td>
+      <td>29.7</td>
+      <td>134</td>
+      <td>30.6</td>
+      <td>253</td>
+      <td>30.2</td>
+    </tr>
+    <tr>
+      <td>Excitatory axons</td>
+      <td>7</td>
+      <td>1.7</td>
+      <td>8</td>
+      <td>1.8</td>
+      <td>15</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>All excitatory</td>
+      <td>370</td>
+      <td>92.3</td>
+      <td>413</td>
+      <td>94.3</td>
+      <td>783</td>
+      <td>93.3</td>
+    </tr>
+    <tr>
+      <td>Inhibitory dendritic shafts</td>
+      <td>17</td>
+      <td>4.2</td>
+      <td>20</td>
+      <td>4.6</td>
+      <td>37</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Inhibitory dendritic spines</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Inhibitory axons</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>0.2</td>
+      <td>1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>All inhibitory</td>
+      <td>17</td>
+      <td>4.2</td>
+      <td>21</td>
+      <td>4.8</td>
+      <td>38</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>Uncategorized dendritic spines</td>
+      <td>14</td>
+      <td>3.5</td>
+      <td>4</td>
+      <td>0.9</td>
+      <td>18</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>401</td>
+      <td></td>
+      <td>438</td>
+      <td></td>
+      <td>839</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Including 10 synapses onto somatic spines;† Including 8 synapses on somatic spines﻿_
 
 The observed distribution of postsynaptic targets of myelinated inhibitory axons was consistent with their originating from local axonal arbors of cortical basket cells, and inconsistent with their arising from either chandelier cells or long-range inhibitory afferents to cortex. Basket cells and chandelier cells can readily be distinguished by their morphology and synaptic targets. When the axons from multiple basket cells are labeled and examined at the light level, they form ‘baskets’ of synapses around neuronal somata, hence the name (Kisvárday, 1992). Chandelier cells have an axonal arbor which resembles a chandelier, with vertically oriented axonal cartridges that almost exclusively form synapses onto the axon initial segments of pyramidal neurons (Somogyi et al., 1982). Less than 2% of the inhibitory myelinated axons in our volume electron microscopy dataset were found to make contacts on axon initial segments (Figure 5; Table 1). In addition, the few axonal arbors that were seen contacting axon initial segments did not have the characteristic appearance of chandelier cell axons and made single contacts with axonal initial segments, instead of several (typically 3–5 for chandelier cells) synapses in a row (Figure 5A,B). Therefore we can exclude the possibility that the myelinated inhibitory axons arise from chandelier cells. The great preponderance (93%) of postsynaptic targets of myelinated inhibitory axons in layer 2/3 of cortex were excitatory, likewise eliminating the possibility that these axons originated from the arbors of the known parvalbumin-positive long-range inhibitory afferents to cortex, all of which selectively target inhibitory neurons (Freund and Gulyás, 1991; Gritti et al., 2003; Henny and Jones, 2008).
 
 The remaining possibility, that myelinated inhibitory axons arise from the arbors of local parvalbumin-positive basket cells, was well supported by the distribution of their postsynaptic targets. Although neocortical basket cells are best known for their synapses with cell bodies, a large (but variable) fraction of their synapses are with dendritic shafts and spines (Somogyi et al., 1983; Kawaguchi and Kubota, 1998; Kisvarday et al., 1987; Tamás et al., 1997). Consistent with past surveys of basket cell synaptic targets, we found that 13% of the postsynaptic targets of the myelinated inhibitory axons were with somata, 49% were onto excitatory dendritic shafts, and 30% were onto dendritic spines (Figure 6; Table 1). Thus, we conclude that the majority of myelinated inhibitory axons belong to the intracortical axons of parvalbumin containing basket cells.
 
-## Inhibitory neurons exhibit a distinct pattern of myelination
+### Inhibitory neurons exhibit a distinct pattern of myelination
 
 Both our volume electron microscopy and array tomography data show that the axon of a parvalbumin interneuron becomes myelinated soon after exiting the cell body (usually within 20–50 μm), consistent with myelination commencing shortly after the axon initial segment. All of the axonal arbors that were traced back to the cell body in our volume EM dataset (n=8) had the same general appearance: a central core of partially myelinated axons (whose unmyelinated stretches rarely made synapses), from which emerged unmyelinated branches forming numerous synapses (Figures 2C, 5A,C). This is similar to the pattern reported for filled basket cells in both macaque somatosensory cortex (DeFelipe et al., 1986) and cat visual cortex (Somogyi et al., 1983).
 
-Further analysis revealed marked differences in the myelination of GABA and nonGABA axons. We used array tomography and MBP immunostaining to quantify the lengths of the nodes of Ranvier, where the ion channels needed for nerve impulse transmission are concentrated (
+Further analysis revealed marked differences in the myelination of GABA and nonGABA axons. We used array tomography and MBP immunostaining to quantify the lengths of the nodes of Ranvier, where the ion channels needed for nerve impulse transmission are concentrated (Figure 7A–B). Only gaps in the axonal myelin sheath of less than 4 μm length were considered to be nodes. Throughout the cortical layers, the nodes of GABA axons were shorter than for non-GABA axons (0.98 ± 0.07 μm vs. 1.51 ± 0.05 μm, mean ± standard error, p<0.0001, n=71 GABA and 209 non-GABA nodes of Ranvier, Mann-Whitney U Test; Figure 7C). Their internodes, the myelinated portion between two nodes of Ranvier, were also found to be shorter (22.54 ± 2.11 μm vs 29.29 ± 2.02 μm for non-GABA axons, mean ± standard error, p=0.032, n=23 GABA axons and 32 non-GABA axons, Mann-Whitney U Test).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig7-v2.jpg)
 
-**Figure 7.:** (A, B) SEM images of nodes of Ranvier (black lines: node boundaries) of a GABA (A) and non-GABA myelinated axon (B), immunolabeled with MBP (cyan) and GABA (red). (C) Comparison of the lengths of the nodes of Ranvier of cortical myelinated axons.DOI: http://dx.doi.org/10.7554/eLife.15784.01810.7554/eLife.15784.019Figure 7—source data 1.Figure 7.DOI: http://dx.doi.org/10.7554/eLife.15784.019
+**Figure 7.:** (A, B) SEM images of nodes of Ranvier (black lines: node boundaries) of a GABA (A) and non-GABA myelinated axon (B), immunolabeled with MBP (cyan) and GABA (red). (C) Comparison of the lengths of the nodes of Ranvier of cortical myelinated axons.
 
-## GABA and non-GABA myelin differ in protein composition, but not thickness
+### GABA and non-GABA myelin differ in protein composition, but not thickness
 
-Myelin thickness is thought to be directly correlated to axon diameter (constant 'g-ratio'), based mostly on studies of the peripheral nervous system (
+Myelin thickness is thought to be directly correlated to axon diameter (constant 'g-ratio'), based mostly on studies of the peripheral nervous system (Fraher and Dockery, 1998). However, we found no such correlation within mouse cerebral cortex. Using a deconvolved array tomography dataset with MBP and GABA immunofluorescence, we found that the average myelin thickness was 0.13 ± 0.002 μm for both GABA and non-GABA axons (mean ± standard error, n=163 GABA and 238 non-GABA axons from layers 4 and 5, p=0.88, Mann-Whitney U Test) and it did not correlate with axon thickness (R=0.008; n=163 GABA and 238 non-GABA axons from layers 4 and 5). Greater axon diameters not accompanied by changes in myelin thickness result in the g-ratio increasing as a function of axon diameter (Figure 8B). GABA axons are thicker than non-GABA axons (0.54 ± 0.001 μm vs. 0.45 ± 0.001 μm, n=163 GABA and 238 non-GABA axons, p<0.0001, Mann-Whitney U Test; and Figure 8A), thus their average g-ratio is higher (0.66 ± 0.006 vs. 0.61 ± 0.006, n=163 GABA and 238 non-GABA axons, p<0.0001, Mann-Whitney U Test).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig8-v2.jpg)
 
-**Figure 8.:** (A) GABA axons have thicker axons on average. Frequency distribution plot of the thickness measurements of 238 non-GABA and 163 GABA axons. (B) GABA and non-GABA axons have similar g-ratios (mean ± standard error, n=238 non-GABA and 163 GABA axons, Mann-Whitney U Test). (C) The myelin of GABA axons contains significantly more myelin basic protein (MBP) than non-GABA axons (mean ± standard error, n=489 non-GABA and 254 GABA axons). (D) There are no significant differences in the PLP content of myelinated axons. All the analyses for this Figure were performed in cortical layers 4 and 5, which have high density of GABA myelinated axons. Asterisks indicate statistically significant differences (**p<0.01, *p<0.05, Mann-Whitney U Test). (E) and (F) show an example of MBP and PLP immunofluorescence on a single section from the same dataset as analyzed in C and D.DOI: http://dx.doi.org/10.7554/eLife.15784.02010.7554/eLife.15784.021Figure 8—source data 1.Figure 8.DOI: http://dx.doi.org/10.7554/eLife.15784.021
+**Figure 8.:** (A) GABA axons have thicker axons on average. Frequency distribution plot of the thickness measurements of 238 non-GABA and 163 GABA axons. (B) GABA and non-GABA axons have similar g-ratios (mean ± standard error, n=238 non-GABA and 163 GABA axons, Mann-Whitney U Test). (C) The myelin of GABA axons contains significantly more myelin basic protein (MBP) than non-GABA axons (mean ± standard error, n=489 non-GABA and 254 GABA axons). (D) There are no significant differences in the PLP content of myelinated axons. All the analyses for this Figure were performed in cortical layers 4 and 5, which have high density of GABA myelinated axons. Asterisks indicate statistically significant differences (**p<0.01, *p<0.05, Mann-Whitney U Test). (E) and (F) show an example of MBP and PLP immunofluorescence on a single section from the same dataset as analyzed in C and D.
 
 Next we compared the protein composition of the myelin of GABA and non-GABA axons. The two major proteins in myelin are MBP and proteolipid protein (PLP), which together constitute about 80% of all proteins in myelin (Baumann and Pham-Dinh, 2001; Rosetti and Maggio, 2007). While the average PLP immunofluorescence was very similar in both types of axons (2229 ± 60 a.u. vs 2282 ± 40 a.u., for GABA and non-GABA axons respectively; mean ± standard error, n=254 GABA axons and 489 non-GABA, p=0.2713, Mann-Whitney U Test, Figure 8D), GABA myelinated axons had almost 20% higher MBP immunofluorescence (5263 ± 117 a.u. vs. 4486 ± 63 a.u., mean ± standard error, n=254 GABA axons and 489 non-GABA, p<0.0001, Mann-Whitney U Test). This difference in MBP content was not related to the thickness of the axons (Figure 8C). The higher MBP immunofluorescence of the myelin sheath of inhibitory axons was confirmed in experiments in two more animals (A1: 3024 ± 100 a.u. vs. 2634 ± 86 a.u., mean ± standard error, n=322 PV axons and 314 non-PV from layers 2 to 5, p=0.0114, Mann-Whitney U Test; A2: 3038 ± 117 a.u. vs. 2585 ± 120 a.u., mean ± standard error, n=233 PV axons and 119 non-PV from layer 4, p=0.0455, Mann-Whitney U Test). Although immunofluorescence has not been calibrated to underlying MBP concentration, the observation that GABA axons have more MBP than neighboring non-GABA axons was statistically significant and qualitatively consistent across multiple experiments.
 
-## The cytoskeletal composition of myelinated GABA axons is different from myelinated non-GABA axons and from unmyelinated GABA axons
+### The cytoskeletal composition of myelinated GABA axons is different from myelinated non-GABA axons and from unmyelinated GABA axons
 
-The most striking difference between GABA and non-GABA myelinated axons is in their cytoskeleton. Immunostaining for the neurofilament heavy chain and for alpha tubulin revealed that myelinated GABA axons are rich in neurofilaments and have relatively low microtubule content, while the cytoskeleton of myelinated non-GABA axons is dominated by microtubules (
+The most striking difference between GABA and non-GABA myelinated axons is in their cytoskeleton. Immunostaining for the neurofilament heavy chain and for alpha tubulin revealed that myelinated GABA axons are rich in neurofilaments and have relatively low microtubule content, while the cytoskeleton of myelinated non-GABA axons is dominated by microtubules (Figure 9). In addition, a larger fraction of the tubulin in myelinated GABA axons appears to be acetylated. While GABA myelinated axons contain on average only 66% of the alpha tubulin found in non-GABA myelinated axons, they have 86% of the acetylated alpha tubulin content of non-GABA myelinated axons. These differences in the cytoskeletal composition of myelinated axons were observed throughout the cortical layers.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/15784/elife-15784-fig9-v2.jpg)
 
-**Figure 9.:** (A) The reconstructed small volume (16 × 16 × 4.5 µm) from layer 5 of the mouse barrel cortex contains GABA axons (red), which are enriched in neurofilaments (NF-H, green), and non-GABA axons where microtubules (αtubulin, magenta) predominate. For clarity, only immunofluorescence signal within myelinated axons (MBP, white) is displayed. Red arrow points to a GABA positive axon and the white arrow to a GABA negative axon. (B) The immunofluorescence intensity (mean ± standard error) for neurofilament heavy chain, αtubulin and acetylated αtubulin within myelin profiles is compared between GABA (red) and non-GABA axons (blue). A larger volume spanning layers 2/3, 4 and 5, and including the region presented in A was analyzed. The differences are statistically significant (p<0.01, Mann-Whitney U Test) in all cortical layers analyzed (layers 2/3: 80 nonGABA and 68 GABA axons; layer 4: 121 nonGABA and 65 GABA axons; and layer 5: 146 non-GABA and 119 GABA axons). (C) Analysis of the cytoskeletal content of the two types of axons from layer 5 (146 non-GABA and 119 GABA axons). (D) Comparison of myelinated vs. unmyelinated stretches of axons. Individual axons which contained both a myelinated and a non-myelinated portion within the dataset volume were analysed (11 non-GABA and 20 GABA axons from layers 2/3, 4 and 5). Nodes of Ranvier were excluded from the analysis. Statistical differences using paired t-test are reported: *p<0.05, **p<0.01).DOI: http://dx.doi.org/10.7554/eLife.15784.02210.7554/eLife.15784.023Figure 9—source data 1.Figure 9.DOI: http://dx.doi.org/10.7554/eLife.15784.023
+**Figure 9.:** (A) The reconstructed small volume (16 × 16 × 4.5 µm) from layer 5 of the mouse barrel cortex contains GABA axons (red), which are enriched in neurofilaments (NF-H, green), and non-GABA axons where microtubules (αtubulin, magenta) predominate. For clarity, only immunofluorescence signal within myelinated axons (MBP, white) is displayed. Red arrow points to a GABA positive axon and the white arrow to a GABA negative axon. (B) The immunofluorescence intensity (mean ± standard error) for neurofilament heavy chain, αtubulin and acetylated αtubulin within myelin profiles is compared between GABA (red) and non-GABA axons (blue). A larger volume spanning layers 2/3, 4 and 5, and including the region presented in A was analyzed. The differences are statistically significant (p<0.01, Mann-Whitney U Test) in all cortical layers analyzed (layers 2/3: 80 nonGABA and 68 GABA axons; layer 4: 121 nonGABA and 65 GABA axons; and layer 5: 146 non-GABA and 119 GABA axons). (C) Analysis of the cytoskeletal content of the two types of axons from layer 5 (146 non-GABA and 119 GABA axons). (D) Comparison of myelinated vs. unmyelinated stretches of axons. Individual axons which contained both a myelinated and a non-myelinated portion within the dataset volume were analysed (11 non-GABA and 20 GABA axons from layers 2/3, 4 and 5). Nodes of Ranvier were excluded from the analysis. Statistical differences using paired t-test are reported: *p<0.05, **p<0.01).
 
 The differences in cytoskeletal composition of myelinated axons could be due to a general difference between GABA and non-GABA axons, regardless of their myelination status. To explore this possibility, we identified individual axons that contained both a myelinated and a non-myelinated portion within the dataset volume. Nodes of Ranvier were excluded and only non-myelinated stretches longer than 4 μm were considered. This analysis revealed several interesting differences (Figure 9D). First, the cytoskeletal composition of axons is indeed related to the presence of GABA. Both the myelinated and the unmyelinated regions of the GABA axons have higher neurofilament content and lower microtubule content compared to non-GABA axons. There are also significant differences in cytoskeletal content between the different regions of GABA axons, where myelinated portions have higher neurofilament and lower microtubule content compared to the unmyelinated portions of the same axons. While excitatory axons show similar trends of differences in cytoskeletal composition depending on myelination, the differences are more pronounced for GABA axons, especially regarding neurofilament content.
 
@@ -167,33 +297,114 @@ By combining data from two independent efforts, we show here that a large fracti
 
 ## Materials and methods
 
-## Array tomography
+### Array tomography
 
-## Lowicryl freeze-substitution tissue preparation
+#### Lowicryl freeze-substitution tissue preparation
 
 All animal procedures were performed according to NIH and University of North Carolina guidelines. After deep anesthesia with pentobarbital, adult mice (3 to 4 months old) were perfusion-fixed with a mixture of 2% glutaraldehyde/2% formaldehyde, dissolved in 0.1 M phosphate buffer (pH 6.8). Brains were removed and postfixed overnight at 4°C in the same fixative. 200 µm-thick Vibratome sections were collected, incubated on ice on a shaker with 0.1% CaCl2 in 0.1 M sodium acetate for 1 hr, then cryoprotected through 10% and 20% glycerol, and overnight in 30% glycerol in sodium acetate solution. The next day, small tissue chunks from S1 neocortex were dissected out and quick-frozen in a dry ice/ethanol bath. Freeze-substitution was performed using a Leica AFS instrument with several rinses in cold methanol followed by substitution in a 2–4% solution of uranyl acetate in methanol, all at -90°C. After 30 hr incubation, the solution was slowly warmed to −45°C and infiltrated with Lowicryl HM-20 over 2 days. Capsules containing tissue chunks were then exposed to UV during gradual warming to 0°C. Polymerized capsules were removed from the AFS apparatus and further exposed to UV at room temperature for an additional day, to complete curing of the plastic.
 
 Ribbons were prepared and imaged using standard methods of array tomography (Micheva et al., 2010). 70 nm-thick serial sections of the embedded plastic block were cut on an ultramicrotome (Leica Ultracut EM UC6, Leica Microsystems, Wetzlar, Germany) and mounted on gelatin-coated or carbon-coated coverslips. Gelatin-subbed coverslips were used for most of the immunofluorescent array tomography. Carbon-coated coverslips, which provide better adhesion of the sections and are conductive, were used for immunofluorescent experiments with more than 3 staining and imaging cycles and for conjugate immunofluorescent / SEM experiments.
 
-## Immunofluorescent array tomography
+#### Immunofluorescent array tomography
 
-Sections were processed for standard indirect immunofluorescence and imaged on an automated epi-fluorescent microscope (Zeiss AxioImager Z1, Zeiss, Oberkochen, Germany) using a 63x Plan-Apochromat 1.4 NA oil objective, as described in Micheva et al. (2010). Antibodies were obtained from commercial sources and their use has been reported in numerous studies (Tomer et al., 2014; Beirowski et al., 2014; Curchoe et al., 2010; Hodgson et al., 1985; Puthussery et al., 2011; Marek et al., 2010; González-Albo et al., 2001; Álvarez-Quilón et al., 2014; Kamura et al., 2011). We performed AT specific controls for all antibodies. (Supplementary file 1 and Figure 1—figure supplement 1). In addition, MBP immunofluorescence was compared to myelin from SEM images of the same sections (Figure 1—figure supplement 2). The sources and dilutions of all primary antibodies used in this study can be found in Table 2. The primary antibodies were applied for 2 hr at room temperature, or overnight at 4°C. Alexa dye conjugated secondary antibodies, highly cross-adsorbed (Life Technologies, Carlsbad, CA), were used at a dilution of 1:150 for 30 min at room temperature. One difference from the published protocols was the application of sodium borohydride (1% in Tris buffer for 3 min) as the first step of the immunofluorescent labeling to reduce non-specific staining and autofluorescence. For some samples, after the sections were imaged, the antibodies were eluted using a solution of 0.2 M NaOH and 0.02% SDS and new antibodies were reapplied. Several rounds of elution and restaining were applied to create a high-dimensional immunofluorescent image.10.7554/eLife.15784.024Table 2.Primary antibodies used in this study.DOI: http://dx.doi.org/10.7554/eLife.15784.024AntigenHostAntibody sourceDilutionRRIDMBPChickenAVES MBP1:200RRID:AB_2313550GABAGuinea pigMillipore AB1751:5000RRID:AB_91011ParvalbuminRabbitSWANT PV281:300RRID:AB_2315235NF-HChickenAVES NFH1:100RRID:AB_2313552NF-LChickenAVES NFL1:100RRID:AB_2313553αTubulinRabbitAbcam ab182511:100RRID:AB_2210057Acetylated αtubulinMouseSigma T67931:100RRID:AB_477585Glutamine SynthetaseMouseBD Biosciences 6105171:25RRID:AB_397879PLPChickenAVES PLP1:100RRID:AB_2313560
+Sections were processed for standard indirect immunofluorescence and imaged on an automated epi-fluorescent microscope (Zeiss AxioImager Z1, Zeiss, Oberkochen, Germany) using a 63x Plan-Apochromat 1.4 NA oil objective, as described in Micheva et al. (2010). Antibodies were obtained from commercial sources and their use has been reported in numerous studies (Tomer et al., 2014; Beirowski et al., 2014; Curchoe et al., 2010; Hodgson et al., 1985; Puthussery et al., 2011; Marek et al., 2010; González-Albo et al., 2001; Álvarez-Quilón et al., 2014; Kamura et al., 2011). We performed AT specific controls for all antibodies. (Supplementary file 1 and Figure 1—figure supplement 1). In addition, MBP immunofluorescence was compared to myelin from SEM images of the same sections (Figure 1—figure supplement 2). The sources and dilutions of all primary antibodies used in this study can be found in Table 2. The primary antibodies were applied for 2 hr at room temperature, or overnight at 4°C. Alexa dye conjugated secondary antibodies, highly cross-adsorbed (Life Technologies, Carlsbad, CA), were used at a dilution of 1:150 for 30 min at room temperature. One difference from the published protocols was the application of sodium borohydride (1% in Tris buffer for 3 min) as the first step of the immunofluorescent labeling to reduce non-specific staining and autofluorescence. For some samples, after the sections were imaged, the antibodies were eluted using a solution of 0.2 M NaOH and 0.02% SDS and new antibodies were reapplied. Several rounds of elution and restaining were applied to create a high-dimensional immunofluorescent image.
+
+**Table 2.**
+ Primary antibodies used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Host</th>
+      <th>Antibody source</th>
+      <th>Dilution</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBP</td>
+      <td>Chicken</td>
+      <td>AVES MBP</td>
+      <td>1:200</td>
+      <td>RRID:AB_2313550</td>
+    </tr>
+    <tr>
+      <td>GABA</td>
+      <td>Guinea pig</td>
+      <td>Millipore AB175</td>
+      <td>1:5000</td>
+      <td>RRID:AB_91011</td>
+    </tr>
+    <tr>
+      <td>Parvalbumin</td>
+      <td>Rabbit</td>
+      <td>SWANT PV28</td>
+      <td>1:300</td>
+      <td>RRID:AB_2315235</td>
+    </tr>
+    <tr>
+      <td>NF-H</td>
+      <td>Chicken</td>
+      <td>AVES NFH</td>
+      <td>1:100</td>
+      <td>RRID:AB_2313552</td>
+    </tr>
+    <tr>
+      <td>NF-L</td>
+      <td>Chicken</td>
+      <td>AVES NFL</td>
+      <td>1:100</td>
+      <td>RRID:AB_2313553</td>
+    </tr>
+    <tr>
+      <td>αTubulin</td>
+      <td>Rabbit</td>
+      <td>Abcam ab18251</td>
+      <td>1:100</td>
+      <td>RRID:AB_2210057</td>
+    </tr>
+    <tr>
+      <td>Acetylated αtubulin</td>
+      <td>Mouse</td>
+      <td>Sigma T6793</td>
+      <td>1:100</td>
+      <td>RRID:AB_477585</td>
+    </tr>
+    <tr>
+      <td>Glutamine Synthetase</td>
+      <td>Mouse</td>
+      <td>BD Biosciences 610517</td>
+      <td>1:25</td>
+      <td>RRID:AB_397879</td>
+    </tr>
+    <tr>
+      <td>PLP</td>
+      <td>Chicken</td>
+      <td>AVES PLP</td>
+      <td>1:100</td>
+      <td>RRID:AB_2313560</td>
+    </tr>
+  </tbody>
+</table>
 
 To define the position list for the automated imaging, a custom Python-based graphical user interface, MosaicPlanner (available at http://smithlabsoftware.googlecode.com), was used to automatically find corresponding locations across the serial sections. Images from different imaging sessions were registered using a DAPI stain present in the mounting medium. The images from the serial sections were also aligned using the DAPI signal. Both image registration and alignment were performed with the MultiStackReg plugin in Fiji (Schindelin et al., 2012).
 
-## Scanning electron microscopy
+#### Scanning electron microscopy
 
 After IF imaging, samples were rinsed with water and poststained with 5% aqueous uranyl acetate (UA) for 30 min and freshly prepared and filtered 1% Reynolds' lead citrate for 1 min. The coverslips were attached to 50 mm pin mounts (Ted Pella, Redding, CA) using carbon paint. Ribbons were imaged on a Zeiss Sigma field emission scanning electron (FESEM) microscope using the backscatter detector at 5–8 KeV. The corresponding regions of the sample were located using the correlations between the DAPI stain from the immunofluorescence and the ultrastructure of the nuclei as seen in the SEM.
 
-## Registration of light microscopy and scanning electron microscopy
+#### Registration of light microscopy and scanning electron microscopy
 
 Light and electron microscopy images were registered with the TrakEM2 plugin (Cardona et al., 2012) within Fiji. To identify the same structures in images from both acquisition systems, DAPI fluorescence images were histogram-normalized to make the spatial structure in both the dim autofluorescence and brighter DAPI fluorescence equally apparent. This is useful because variations in the dim autofluorescence correspond to ultrastructural features visible in the electron microscope, such as large dendrites, mitochondria, and myelin. Bright DAPI fluorescence corresponds to the ultrastructurally identified heterochromatin in cell nuclei. Several corresponding features (4–6) in the DAPI images and the EM images were used to fit a similarity transformation (rigid rotation plus uniform scaling). This transformation was automatically applied to the other light microscopy images. Our image reconstruction tools are all available at smithlabsoftware.googlecode.com.
 
-## Immunofluorescent image analysis and statistics
+#### Immunofluorescent image analysis and statistics
 
 Volumes from the somatosensory cortex of 3 mice were used for analysis. Most volumes comprised of approximately 60 serial sections (range of 43 to 81 sections) and included all cortical layers. For each layer, a field of view of approximately 135 by 130 μm was analyzed. Immunofluorescence measurements were performed on raw images using FIJI. MBP immunofluorescence was used to define regions of interest (ROI), which were either the myelin sheath for measurements of MBP and PLP signal, or the axon under the myelin sheath for measurement of axonal immunofluorescence for GABA, PV, and cytoskeletal proteins. The mean gray value of immunolabels was compared between GABA and nonGABA axons from the same coverslip, using the non-parametric Mann-Whitney U Test. Axons were classified as GABA positive or PV positive based on an empirically determined threshold for each experiment, as shown in Figure 3—figure supplement 1. The distribution of GABA immunofluorescence showed a peak of low immunofluorescence corresponding to background, followed by a clearly defined second broad peak corresponding to GABA immunopositive axons. PV immunofluorescence exhibited a less clear separation between the background and immunofluorescence peaks, however, as expected the great majority of GABA immunonegative axons were also classified as immunonegative for PV. With the thresholds set in the example of Figure 3—figure supplement 1, only 3.1% of GABA negative axons were classified as PV positive, and 1.7% of GABA positive axons were classified as PV negative. AT analysis and statistics were done in the Smith laboratory prior to knowledge of the volume EM or immunohistochemistry results from the Bock laboratory.
 
-## Tracing of volume electron microscopy data
+### Tracing of volume electron microscopy data
 
 A publicly available (Burns et al., 2013; Martone et al., 2002) 450 × 350 × 50 μm EM dataset from the upper layers of visual cortex (Bock et al., 2011) in an adult Thy1-YFP-H (Feng et al., 2000) mouse (9–14 months of age) was used. The images were obtained by transmission electron microscopy of serial thin sections, resulting in a ~10 TB dataset comprised of ~4 × 4 × 45 nm voxels. To sample a subset of myelinated axons in the volume systematically, a section near the center of the image volume was selected, and all myelinated axon profiles were annotated in TrakEM2 with ‘seed’ points for further tracing (Figure 2). Myelinated profiles near the edge of the imaged area were not seeded, to reduce the probability of the axon exiting the volume without making synapses. To categorize each myelinated axon as arising from an inhibitory or excitatory neuron, each seed was manually traced into the EM volume until the axon lost its myelin sheath and formed at least two synapses. The synapses were categorized as inhibitory or excitatory depending on whether the pre- and postsynaptic densities were symmetric (equal in thickness) or asymmetric (with a thicker postsynaptic density), respectively. Occasionally, individual synapses could not be definitively characterized as symmetric or asymmetric. This occurred most often when the section plane was oblique or parallel to the plane of the synapse. In these cases, tracing was continued until sufficient additional synapses were reached to make a definitive determination of axon type. This work was performed prior to the tracers’ knowledge that the array tomography work existed. Categorization of axons as inhibitory or excitatory based on synapse ultrastructure was done in the Bock laboratory prior to knowledge of the AT results from the Smith laboratory.
 
@@ -203,16 +414,16 @@ The postsynaptic target at each annotated synapse was also classified as excitat
 
 Two myelin seeds were arbitrarily selected for complete tracing (Figure 5A,B). Rather than halting tracing of these axons once they could be unambiguously categorized as inhibitory or excitatory, their arbors were traced to completion within the limits of the EM-imaged volume. In one case, the inhibitory cell body was reached (Figure 5A). All synapses were annotated and their postsynaptic targets were categorized as with the partially traced axons. The distribution of postsynaptic targets was nearly identical between the completely and partially traced axons (Table 1).
 
-## Immunohistochemistry of transgenic mice
+### Immunohistochemistry of transgenic mice
 
-## Tissue preparation
+#### Tissue preparation
 
 All animal procedures were performed according to HHMI-JFRC animal care and use protocols. Following isoflurane anesthesia, adult transgenic mice (male Pvalb-ires-Cre;Ai9, Sst-ires-Cre;Ai9, and Vip-ires-Cre;Ai9 [Taniguchi et al., 2011; Madisen et al., 2010]) between 1.5 and 4 months of age were fixed by cardioperfusion with a solution of fresh mixed 4% paraformaldehyde (J.T. Baker, Capitol Scientific) in 1x phosphate buffered saline (pH 7.4). Serial 40 μm thick Vibratome sections through S1 were collected, which were subsequently post-fixed in the same fixative solution overnight at 4°C. Slices were then triply washed in 1x PBS before blocking and permeabilization with 10% normal goat serum and 0.5% Triton X-100 in 1x PBS (Sigma-Aldrich, St. Louis, MO) for 12 hr at room temperature on a benchtop shaker. A 1:400 solution of rat anti-myelin basic protein antibodies (aMBP; Millipore MAB386) was then applied for 24 hr at room temperature, followed by a triple wash with 1x PBS and incubation in a 1:400 solution of goat anti-rat Alexa 488 conjugated antibodies (Invitrogen A11006) overnight at 4°C. Slices were then triple washed once again before overnight counterstaining with DAPI (Invitrogen, Waltham, MA) and subsequent mounting under #1.5 coverglass (Zeiss) with glycerol-based Vectashield mounting medium (Vector Labs, Burlingame, CA).
 
-## Confocal microscopy
+#### Confocal microscopy
 
 Confocal images of prepared samples were acquired on a Zeiss LSM 710 using a 40x Plan-Apochromat 1.4 N.A. oil immersion objective. Three-color imaging was performed by sequential acquisitions with 405 nm, 488 nm, and 561 nm lasers and pinhole parameters set to 1 Airy unit for any given laser. Detection was tuned to each fluorophore’s specific emission frequency using a 32-channel detector without the use of filters. Laser powers were scaled with increasing acquisition depth by spline interpolation to maintain constant fluorophore visibility. Images were acquired through a large region of S1 from layer 1 through layer 6 in sequential overlapping tile mosaics using the Multitime32 macro (Zeiss) and subsequently stitched using the Grid/Collection stitching plugin for Fiji (Preibisch et al., 2009).
 
-## Quantification of fluorescence labeled myelin and transgene reporter axons
+#### Quantification of fluorescence labeled myelin and transgene reporter axons
 
 Three image stacks, each from a separate animal, were collected for the PV-ires-Cre;Ai9 mouse line, while three image stacks were acquired from a single mouse from each of the SOM-ires-Cre;Ai9 and VIP-ires-Cre;Ai9 lines. In the PV and VIP image stacks, an 85 × 85 μm ROI in layer 2/3 of S1 was selected for annotation and quantification. In the SOM image stack, a 200 × 200 μm ROI in layer 2/3 of S1 was quantified, to better quantify the frequency of rarely myelinated SOM-Cre+ axonal profiles. The z-plane with the most robust myelin labeling, typically within 15 μm of the surface of the vibratome slice, was selected for annotation of myelinated axons and Ai9 reporter labeled neurites. Annotation was performed using the TrakEM2 plugin (Cardona et al., 2012) for Fiji and consisted of manual treeline skeletonization of fluorescent neurites over multiple z-planes adjacent to the target ROI plane. The total number of myelinated axons colabeled for PV (as represented by Ai9-fluorophore expression) was quantified. Colocalization of myelin and the reporter fluorophore along a visible neurite spanning multiple z-planes was considered as a myelinated reporter-labeled axon. The fraction of myelinated reporter labeled axons was tallied for each ROI, and pooled within each reporter line. VIP fractions were not annotated and quantified since by careful visual inspection, no reporter-labeled neurites were found to colocalize with myelin signal. For preparation of figures, Adobe Photoshop was used to smooth and adjust gamma of raw confocal data, and to false-color myelinated profiles that were positive for either PV (Figure 4C–D) or SOM (Figure 4I–J). Immunohistochemistry was done in the Bock laboratory prior to knowledge of the AT results from the Smith laboratory.

@@ -16,14 +16,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02pttbw34 Department of Pathology and Immunology, Baylor College of Medicine Houston United States
-2. https://ror.org/01yc7t268 Department Obstetrics and Gynecology, Washington University School of Medicine St. Louis United States
-3. https://ror.org/01yc7t268 Center for Reproductive Health Sciences, Washington University School of Medicine St. Louis United States
-4. https://ror.org/02pttbw34 Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States
-5. https://ror.org/01yc7t268 Department of Medicine and Department of Cell Biology, Washington University School of Medicine St. Louis United States
+1. Department of Pathology and Immunology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+2. Department Obstetrics and Gynecology, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Center for Reproductive Health Sciences, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+4. Department of Molecular and Cellular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+5. Department of Medicine and Department of Cell Biology, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 6. Department of Host Defense, Research Institute for Microbial Diseases (RIMD) Osaka Japan
-7. https://ror.org/035t8zc32 Laboratory of Host Defense, World Premier Institute Immunology Frontier Research Center (WPI-IFReC), Osaka University Osaka Japan
-8. https://ror.org/02pttbw34 Department of Molecular Virology and Microbiology, Baylor College of Medicine Houston United States
+7. Laboratory of Host Defense, World Premier Institute Immunology Frontier Research Center (WPI-IFReC), Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+8. Department of Molecular Virology and Microbiology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
 
 † Corresponding author
 
@@ -43,45 +43,151 @@ With a better understanding of the fundamental process of autophagy, its pathoph
 
 ## Results
 
-## Conditional deletion of Atg14 in the FRT results in infertility despite the normal ovarian function
+### Conditional deletion of Atg14 in the FRT results in infertility despite the normal ovarian function
 
 To explore the role of Atg14 in uterine function, we first determined its expression levels in the uterus during early pregnancy (days 1–7) in mice. We found distinct expression of ATG14 in all the uterine compartments (luminal epithelium, glands, and stroma) by day 1 of pregnancy, which disappeared by day 2 of pregnancy (Figure 1A). However, the ATG14 expression in the uterus reappeared by day 3 and persisted through day 7 of pregnancy. The period from day 3 to day 7 is critical as it is during this time when the uterus begins to prepare for embryo implantation and undergoes the decidualization process. Consistent with protein expression, similar Atg14 expression at mRNA levels was noted in uteri from early pregnant mice (Figure 1B). This analysis suggests a potential role for ATG14 protein in the uterine physiologic adaptations during early pregnancy. Thus, to study the role of ATG14 in uterine function, we generated a conditional knockout (Prcre/+; Atg14flox/flox) mouse model by crossing Atg14flox/flox mice with mice expressing Cre recombinase under the control of progesterone receptor promoter (Prcre/+). Histological examination of the uterus from adult females showed no gross morphological differences between Atg14 cKO and control mice (Figure 1—figure supplement 1A). Further, we did not find any overt defects in the ovary as cKO mice had normal follicles and corpus luteum like their corresponding controls (Figure 1—figure supplement 1B). Analysis of transcript levels from the uterus, ovary, and liver showed that while Atg14 levels were efficiently depleted in uteri from cKO mice the levels were unaltered in the ovary and liver samples in control and cKO mice (Figure 1C). Immunofluorescence analysis further confirmed the efficient deletion of ATG14 in all uterine compartments (epithelium and stroma) of cKO mice uteri compared to corresponding control groups (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative immunofluorescent images of uteri from pregnant mice (n = 3) at the indicated days of pregnancy stained with an ATG14-specific antibody (green). LE: luminal epithelium; G: glands; S: stroma, Scale bar: 100 µm. Rabbit IgG was used as an isotype control for staining. (B) Relative transcript levels of Atg14 mRNA in uteri from pregnant mice (n = 3–5) at indicated days of pregnancy. mRNA levels are normalized to levels of 18S m-RNA. Data are presented as mean ± SEM; **p<0.01, p>0.05, ns = nonsignificant. (C) Relative mRNA levels of Atg14 in 8-week-old virgin control and cKO mice uteri, ovary, and liver (n = 5). mRNA levels are normalized to levels of 18S mRNA. Data are presented as mean ± SEM; ***p<0.001, p>0.05, ns = nonsignificant. (D) Representative immunofluorescent images of ATG14 expression in different uterine compartments in control (n = 5) and Atg14 cKO mice (n = 5). LE: luminal epithelium; G: glands; S: stroma. (E) (Left panel) Relative number of pups/female/litter and (right panel) and relative number of total pups/months of Atg14 control (n = 4) and cKO mice (n = 5) sacrificed after the breeding trial. Data are presented as mean ± SEM; ***p<0.001; p>0.05, ns = nonsignificant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Histological analysis using H&E staining of 8-week-old virgin Atg14 control and cKO mice uteri and ovary. LE: luminal epithelium; GE: glandular epithelium; ST: stroma; AF: antral follicle; CL: corpus luteum.
+
 Considering the effective ablation, a 6-month breeding study was performed mating virile wild-type male mice with adult Atg14 cKO and control female mice. We found that Atg14 cKO females did not deliver any litter during the 6-month trial period. However, the control female (Atg14flox/flox) mice delivered an average of ~7–8 pups per litter every month (Table 1; Figure 1E). These findings suggest an indispensable role of Atg14 in female fertility with intact ovarian function.
 
-## Loss of Atg14 results in impaired embryo implantation and uterine receptivity in mice
+**Table 1.**
+ Six-month breeding trial of Atg14 control and cKO females with wild-type males.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Females</th>
+      <th>Pups</th>
+      <th>Pups/female</th>
+      <th>Litters</th>
+      <th>Pups/litter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>n = 4</td>
+      <td>223</td>
+      <td>55.75 ± 7.32</td>
+      <td>28</td>
+      <td>7.96 ± 0.37</td>
+    </tr>
+    <tr>
+      <td>Atg14 cKO</td>
+      <td>n = 6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Loss of Atg14 results in impaired embryo implantation and uterine receptivity in mice
 
 Based on the normal ovarian morphology, we posited that the infertility observed in females with Atg14 cKO status could be attributed to compromised uterine functioning. Analysis of the implanting embryos at day 5 of pregnancy showed no implantation sites in the uteri of Atg14 cKO females, whereas ~8–9 implantation sites were seen in the uteri of control mice at 5 days post coitum (dpc) (Figure 2A, left panel). While there was no embryo present in the uterine lumen of Atg14 cKO mice, a fully attached embryo encapsulated by the luminal uterine epithelium was seen in control mice uteri (Figure 2A, middle panel). Additionally, MUC1, a receptive marker expression, persisted in the luminal epithelium of cKO mice uteri at 5 dpc as well as 4 dpc (Figure 2A, right panel, Figure 2C). The process of successful embryo attachment and implantation within the uterus necessitates a transition from a non-receptive to a receptive state, a transformation orchestrated under the regulated influence of steroid hormones. Thus, the effects of Atg14 loss on uterine responsiveness to steroid hormones E2 and P4 were characterized. We performed an established hormone-induced uterine receptivity experiment, which involved ordered and co-stimulatory actions of E2 and P4, leading to the initiation of a receptive phase (Tong and Pollard, 1999). In response to E2 treatment, uteri from both Atg14 control and cKO mice showed similar proliferation as evidenced by Ki-67 staining (Figure 2B, middle panel). Following the co-stimulation with E2 + P4 treatment, epithelial proliferation was inhibited with concomitant induction of stromal cell proliferation in control mice uteri indicating fully receptive uteri (Figure 2B). Interestingly, cKO mice uteri failed to elicit sub-epithelial stromal cell proliferation and showed intact P4-driven inhibition of epithelial proliferation. Consistently, uteri from Atg14 cKO mice at 4 dpc showed a reduced number of proliferating stromal cells (Figure 2D). The absence of significant changes in E2-induced targets, such as Lif, Mcm2, Ccnd1, and Fgf18, at 4 dpc (Figure 2E) supports our conclusion that ATG14 is required for P4-mediated but not for E2-mediated actions during uterine receptivity. Moreover, the normal serum levels of E2 and P4 at D4 of pregnancy rule out any hormonal imbalances, strongly suggesting that the observed phenotype is primarily due to the uterine-specific loss of Atg14 (Figure 2F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig2-v1.jpg)
 
-**Figure 2.:** Atg14 is critical for embryo implantation and uterine receptivity.(A) Gross images of 5.0 dpc uteri of control (n = 5) and Atg14 cKO mice (n = 5) injected with Chicago Sky Blue dye to visualize implantation sites (denoted by black arrows) (left panel). H&E-stained cross-sections (×6 and ×20) of 5.0 dpc uteri of control (n = 5) and Atg14 cKO (n = 5) mice to visualize embryo implantation (middle panel). The asterisk denotes the embryo. Immunofluorescence analysis of uterine tissues from control (n = 5) and Atg14 cKO mice (n = 5), stained with MUC1 and KRT8 (right panel). LE: luminal epithelium; G: glands; S: stroma. (B) Representative immunofluorescence images of uteri from control (n = 5) and Atg14 cKO mice (n = 5) stained for Ki-67 following Oil or E2 or E2 + P4 treatment (n = 5 mice/group); scale bar: 100 μm. LE: luminal epithelium; G: glands; S: stroma. (C) Immunofluorescence analysis of KRT8 (green), MUC1 (red), and (D) Ki-67 (red) in the uteri of 4 dpc control and Atg14 cKO mice; scale bars, 100 µm. (E) Relative transcript levels of Lif, Mcm2, Ccnd1, and Fgf18 in control and cKO uteri at 4 dpc. mRNA levels are normalized to levels of 18S m-RNA. Data are presented as mean ± SEM; ns = nonsignificant. (F) Levels of steroid hormones estradiol and progesterone from serum collected during euthanasia of 4 dpc control or cKO mice.
+**Figure 2.:** (A) Gross images of 5.0 dpc uteri of control (n = 5) and Atg14 cKO mice (n = 5) injected with Chicago Sky Blue dye to visualize implantation sites (denoted by black arrows) (left panel). H&E-stained cross-sections (×6 and ×20) of 5.0 dpc uteri of control (n = 5) and Atg14 cKO (n = 5) mice to visualize embryo implantation (middle panel). The asterisk denotes the embryo. Immunofluorescence analysis of uterine tissues from control (n = 5) and Atg14 cKO mice (n = 5), stained with MUC1 and KRT8 (right panel). LE: luminal epithelium; G: glands; S: stroma. (B) Representative immunofluorescence images of uteri from control (n = 5) and Atg14 cKO mice (n = 5) stained for Ki-67 following Oil or E2 or E2 + P4 treatment (n = 5 mice/group); scale bar: 100 μm. LE: luminal epithelium; G: glands; S: stroma. (C) Immunofluorescence analysis of KRT8 (green), MUC1 (red), and (D) Ki-67 (red) in the uteri of 4 dpc control and Atg14 cKO mice; scale bars, 100 µm. (E) Relative transcript levels of Lif, Mcm2, Ccnd1, and Fgf18 in control and cKO uteri at 4 dpc. mRNA levels are normalized to levels of 18S m-RNA. Data are presented as mean ± SEM; ns = nonsignificant. (F) Levels of steroid hormones estradiol and progesterone from serum collected during euthanasia of 4 dpc control or cKO mice.
 
-## Atg14 is required for maintaining oviductal cell structural integrity and embryo transport
+### Atg14 is required for maintaining oviductal cell structural integrity and embryo transport
 
 Given that Atg14 cKO mice had impaired embryo implantation, we wondered whether embryos are reaching the uterus timely through the oviduct. To determine this, we flushed embryos from both the control and cKO mice uteri on day 4 of pregnancy. Interestingly, in cKO mice, we could retrieve only 1–2% of embryos from their uteri, whereas in control mice, 100% of well-developed blastocysts were retrieved from their uteri (Figure 3A and B). To ensure the timely transport of all embryos from the oviducts to the uteri, we also flushed oviducts from both control and cKO mice. As expected, in the control mice oviduct flushing, we could not recover any embryos or blastocysts, indicating their precise and timely transport to the uterus. Unexpectedly, oviduct flushing from cKO mice resulted in the retrieval of approximately 90% of embryos, suggesting their potential entrapment within the oviducts, impeding their transit to the uterus (Figure 3A and B). At 4 dpc, there was no significant difference in the average number of blastocysts, morula, or nonviable or retrieved from Atg14 control uteri and cKO oviducts (Figure 3—figure supplement 1). However, we noted that the percentage of developmentally delayed embryos appeared to be higher in Atg14 cKO oviducts compared to the embryos retrieved from control uteri (Figure 3C). The histological analysis further confirmed an entrapped embryo in the ampulla of Atg14 cKO at 4 dpc as shown in Figure 3D. Given the embryo retention phenotype in oviduct, we sought to determine if ATG14 is expressed in this region. Consistent with previous studies reporting PR-cre activity in the isthmus (Herrera et al., 2020; Soyal et al., 2005), we found a significant depletion of ATG14 in the isthmus compared to the ampulla (Figure 3—figure supplement 2A). Further, the increased p62 and LC3B expression in cKO oviducts suggests that the observed embryo retention phenotype might be attributed to the loss of ATG14-dependent autophagy in cKO oviducts (Figure 3—figure supplement 2B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images (upper panel) and (B) percentage of embryos (lower panel) collected at 4 dpc from the uteri or the oviducts of control (n = 6) or Atg14 cKO mice (n = 6–8). (C) Percentage of blastocysts, morulae, developmentally delayed or nonviable embryos collected from Atg14 control mice uteri and Atg14 cKO mice oviducts at 4 dpc. (D) Histological analysis using H&E staining of the ampullary and isthmic region of the oviduct from control and Atg14 cKO female mice at 4 dpc (n = 3 mice/genotype). (E) Embryos retrieved from the oviduct and uterus of super-ovulated Atg14 control or cKO mice at 4 dpc (n = 3 mice/genotype). (F) Immunofluorescence analysis of KRT8 (green), and α-SMA (red), in the oviduct of 4 dpc control (n = 5) and Atg14 cKO mice (n = 5) ampulla (upper panel) and isthmus (lower panel).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Average number of embryos retrieved from Atg14 cKO (n = 5) oviducts or control uteri (n = 5).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunofluorescence analysis to show ATG14 expression in ampulla and isthmus regions of oviducts. LE: Luminal epithelium; M: smooth muscle. Scale bar: 100 µm; 20 µm. The upper panel shows the ×10 objective images and the lower panel shows the ×20 objective images. (B) Western blotting shows LC3B and p62 expression in control and cKO oviducts tissues. β-actin was used as a loading control.
 
 Similarly, when we super-ovulated the mice and looked for the embryos on day 4 of pregnancy, we could recover ~20–25 embryos from the cKO mice oviducts compared to only 4–5 embryos that were able to reach the uterus. In comparison, in control mice, 90% of embryos were able to complete their predestined and timely transport to the uterus (Figure 3E), except 1–2% of unfertilized embryos, which remained in their oviducts.
 
 To understand the underlying cause for retained embryos in cKO mice oviducts, we performed histology analysis and determined the structural morphology of their oviducts. The cKO mice oviduct lining shows marked eosinophilic cytoplasmic change akin to decidualization in human oviducts. Some of the cells showed degenerative changes with cytoplasmic vacuolization and nuclear pyknosis, loss of nuclear polarity, and loss of distinct cell borders giving an appearance of fusion of cells (Figure 3F). The marked cytologic enlargement appears to cause luminal obliteration or narrowing resulting in a completely unorganized, obstructed, and narrow lumen, thereby hampering the path of embryos to reach the uterus as evident from an entrapped embryo shown in Figure 3D. Further, epithelial (cytokeratin KRT8-positive) and myosalpinx (α-smooth muscle active [SMA]-positive) marker analysis revealed completely distorted epithelial structures (in terms of loss of epithelial cell integrity) with no overt defects in the muscle organization in oviducts of cKO mice (Figure 3F, lower panel). Notably, the ampullary region from cKO oviducts seems to be normal with intact epithelial and smooth muscle structures as evident from KRT8 and SMA staining (Figure 3F, upper panel).
 
-## Selective loss of Atg14 in oviduct cilia is dispensable for female fertility
+### Selective loss of Atg14 in oviduct cilia is dispensable for female fertility
 
 The oviduct epithelium primarily consists of two types of cells: ciliated and secretory (non-ciliated) cells. Ciliated cells play a role in embryo and oocyte transport by means of ciliary beat and non-ciliated/secretory cells produce an oviductal fluid that is rich in amino acids and various molecules, thereby providing an optimal microenvironment for sperm capacitation, fertilization, embryonic survival, and development (Ito et al., 2020). Therefore, we determined whether oviducts from cKO mice possess normal ciliated and secretory cell composition. To do so, we examined the expression of various markers, including acetylated-α-tubulin (cilia marker), FOXJ1 (ciliogenesis markers), and PAX8 (non-ciliated/secretory cell marker), in control and cKO oviducts. As shown in Figure 4A, normal ciliary structures were observed in the ampulla of both control and cKO oviducts. However, in the isthmus of cKO oviducts, we observed a reduction in both FOXJ1- and PAX8-expressing cells (Figure 4B, Figure 4—figure supplement 1). Given the importance of cilia in embryo transport, we wondered whether the loss of Atg14 in oviduct cilia has any impact on embryo transport. To address this, we generated a Foxj1cre/+; Atg14flox/flox mouse model, wherein Atg14 will be ablated only in ciliary epithelial cells. We observed that ciliated epithelial cells that were positive for acetylated α-tubulin staining did not appear to be different in Foxj1Cre/+; Atg14flox/flox mice oviduct compared to controls, suggesting normal ciliogenesis in Foxj1Cre/+; Atg14flox/flox mice (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunofluorescence analysis of acetylated α-tubulin (green), and DAPI (blue) in oviduct of 4 dpc control (n = 5) and Atg14 cKO mice (n = 5). (B) Immunohistochemical analysis of FOXJ1 and PAX8 at 4 dpc (n = 5). (C) Immunohistochemical analysis of acetylated α-tubulin in 8-week-old control (n = 5) and Foxj1/Atg14 cKO mice (n = 5). Images are taken at ×6 and ×40. Scale bar: 100 µm and 10 µm. (D, E) Relative number of pups/females/litter and relative number of total pups/months of control (n = 5) and Foxj1/Atg14 cKO mice (n = 5) sacrificed after the breeding trial. Data are presented as mean ± SEM; p>0.05, ns = nonsignificant. (F) Gross images of 5.0 dpc uteri of control (n = 3) and Foxj1/Atg14 cKO mice (n = 3) injected with Chicago Sky Blue dye to visualize implantation sites (denoted by black arrows).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Immunohistochemistry to show FoxJ1-positive staining in Atg14 control and cKO oviducts. The upper panel shows the ampullary section, and the lower panel shows the isthmus section. Images were taken at ×20. Scale bar: 10 µm.
+
 The 6-month breeding trial revealed that loss of Atg14 in oviductal cilia had no impact on fertility (Table 2, Figure 4D and E). Consistently, D5 implantation study analysis showed ~7–8 visible embryo implantation sites in Foxj1/Atg14 cKO mice like their corresponding controls, suggesting that embryos were able to make their way to the uterus in a timely manner and undergo implantation despite the ablation of Atg14 in the oviduct ciliary epithelial cells (Figure 4F). These findings suggest that ciliary expression of Atg14 is dispensable for embryo transport.
 
-## ATG14 maintains mitochondria integrity and prevents unscheduled pyroptosis activation in the oviduct to enable embryo transport
+**Table 2.**
+ Six-month breeding trial of Foxj1/Atg14 control and cKO females with wild-type males.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Females</th>
+      <th>Pups</th>
+      <th>Pups/female</th>
+      <th>Litters</th>
+      <th>Pups/litter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Control</td>
+      <td>n = 5</td>
+      <td>192</td>
+      <td>38.4 ± 1.29</td>
+      <td>26</td>
+      <td>9.1 ± 1.29</td>
+    </tr>
+    <tr>
+      <td>Foxj1/Atg14 cKO</td>
+      <td>n = 5</td>
+      <td>151</td>
+      <td>30.2 ± 1.46</td>
+      <td>24</td>
+      <td>7.6 ± 1.46</td>
+    </tr>
+  </tbody>
+</table>
+
+### ATG14 maintains mitochondria integrity and prevents unscheduled pyroptosis activation in the oviduct to enable embryo transport
 
 To gain more insights into structural defects, we performed transmission electron microscopy (TEM) analysis on oviducts collected from both control and cKO females on day 4 of pregnancy. Interestingly, oviducts from cKO females had numerous altered mitochondrial structures with abnormally enlarged mitochondria and a less dense matrix compared to control oviducts that had small and compact mitochondria with tight cristae and a dense matrix (Figure 5A). Corroborating and extending those findings, we observed marked reductions of mitochondria network (as defined by TOM20 staining) in the sub-nuclear region of oviducts from Atg14 cKO mice compared to more densely packed mitochondrial network in the sub-nuclear region of control ones (Figure 5B). Further co-localization study analysis revealed a uniform co-localization of cytochrome C with the TOM20-positive mitochondrial network in control oviducts reflecting the intact mitochondrial integrity (Figure 5B). In contrast, in Atg14 cKO oviducts, cells with disrupted mitochondrial networks exhibited increased cytosolic leakage of cytochrome C (Figure 5B). Additionally, analysis of various mitochondrial functional and architecture markers (Cox4i2, Pink1, Opa1, and Drp1) showed reduced expression in Atg14 cKO compared to controls (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig5-v1.jpg)
 
-**Figure 5.:** Atg14 facilitates embryo transport in the oviduct by preserving mitochondrial integrity and inhibiting the activation of pyroptosis.(A) Transmission electron microscopy of oviducts at 4 dpc from control (n = 3) and Atg14 cKO (n = 3). Black arrowheads in control oviducts show small, compact mitochondria with tight cristae. Red arrowheads in cKO oviducts show abnormally enlarged mitochondria with loose cristae. (B) Immunofluorescence analysis of TOM20 (green) and cytochrome C (red) in Atg14 control and cKO oviducts cryo-sections. The inset shows the zoomed image of the selected area from control and cKO oviducts, Arrowheads in the cKO inset oviduct section show the leaked cytochrome C in the cytoplasm. Tissues were counterstained with DAPI (blue) to visualize nuclei; scale bars, 10 µm. (C) Relative transcript levels of Opa1, Cox4i2, Drp1, and Pink1 in oviduct tissues. Data are presented as mean ± SEM. *p<0.05; **p<0.01 compared with controls. 18S was used as an internal control. (D) Immunofluorescence analysis of GSDMD (red) + KRT8 (green), Caspase-1 (red) + KRT8 (green) in oviducts of adult control (n = 5), and Atg14 cKO mice (n = 5). Tissues were counterstained with DAPI (blue) to visualize nuclei; scale bars, 100 µm. (E) Immunohistochemical analysis of GSDMD expression in adult oviduct tissues (left panel). The middle and right panels show the zoom-in images to show the relative GSDMD expression in the ampulla and isthmus section from control and cKO oviducts. (F) Immunohistochemical analysis of GSDMD expression in adult uterus and ovary tissues. (G) Western blotting to show protein levels of Caspase-1 and GSDMD in oviduct tissues. β-actin is used as a loading control. (H) Relative transcript levels of Tnfa and Cxcr3 in oviduct tissues. Data are presented as mean ± SEM. *p<0.05; **p<0.01; ***p<0.001 compared with controls. 18S was used as an internal control.Figure 5—source data 1.Figure 6G, indicating the relevant bands and groups.Figure 5—source data 2.
+**Figure 5.:** (A) Transmission electron microscopy of oviducts at 4 dpc from control (n = 3) and Atg14 cKO (n = 3). Black arrowheads in control oviducts show small, compact mitochondria with tight cristae. Red arrowheads in cKO oviducts show abnormally enlarged mitochondria with loose cristae. (B) Immunofluorescence analysis of TOM20 (green) and cytochrome C (red) in Atg14 control and cKO oviducts cryo-sections. The inset shows the zoomed image of the selected area from control and cKO oviducts, Arrowheads in the cKO inset oviduct section show the leaked cytochrome C in the cytoplasm. Tissues were counterstained with DAPI (blue) to visualize nuclei; scale bars, 10 µm. (C) Relative transcript levels of Opa1, Cox4i2, Drp1, and Pink1 in oviduct tissues. Data are presented as mean ± SEM. *p<0.05; **p<0.01 compared with controls. 18S was used as an internal control. (D) Immunofluorescence analysis of GSDMD (red) + KRT8 (green), Caspase-1 (red) + KRT8 (green) in oviducts of adult control (n = 5), and Atg14 cKO mice (n = 5). Tissues were counterstained with DAPI (blue) to visualize nuclei; scale bars, 100 µm. (E) Immunohistochemical analysis of GSDMD expression in adult oviduct tissues (left panel). The middle and right panels show the zoom-in images to show the relative GSDMD expression in the ampulla and isthmus section from control and cKO oviducts. (F) Immunohistochemical analysis of GSDMD expression in adult uterus and ovary tissues. (G) Western blotting to show protein levels of Caspase-1 and GSDMD in oviduct tissues. β-actin is used as a loading control. (H) Relative transcript levels of Tnfa and Cxcr3 in oviduct tissues. Data are presented as mean ± SEM. *p<0.05; **p<0.01; ***p<0.001 compared with controls. 18S was used as an internal control.
 
 Having identified the cellular mechanisms of Atg14, we aimed to delineate the underlying molecular mechanisms associated with Atg14 function in the oviduct. Since we found mitochondrial defects with ATG14 loss and altered mitochondrial structures have been linked to the activation of pyroptosis, we determined if ATG14 regulates pyroptosis in the oviduct (Liu et al., 2018; Shi et al., 2022; Wang et al., 2019b). First, we assessed the key primary executors of the pyroptosis pathway, gasdermin D (GSDMD), and caspase-1. Immunofluorescence analysis revealed a remarkable upregulation in GSDMD and caspase-1 expression in the cKO oviducts compared to controls (Figure 5D and E). However, histological analysis of uterus and ovary showed no induction in GSDMD expression compared to their corresponding controls (Figure 5F). Western blot analysis further confirmed elevated expression of caspase-1 and GSDMD in cKO oviducts in comparison to control oviducts as shown in Figure 5G. Additionally, the qPCR analysis demonstrated elevated levels of inflammatory markers, such as Tnfa and Cxcr3, in cKO oviducts compared to control ones (Figure 5H). Based on these findings, we posit that Atg14 plays a crucial role in regulating the pyroptotic pathway by preserving the mitochondrial structural and functional integrity in the oviduct.
 
 To substantiate the notion, we also evaluated the impact of unscheduled activation of pyroptosis on embryo transport. To test this, we employed a pyroptosis inducer, polyphyllin VI, and chose the optimal dose based on the established studies (Teng et al., 2020). Wild-type females were mated with virile males and following the plug detection treated with polyphyllin VI for three consecutive days from 1 to 4 dpc (Figure 6A). We chose to treat mice from 1 to 4 dpc to activate unwarranted pyroptosis in oviduct during the embryo transport. Following the treatments, the oviducts, and uteri from both vehicle-treated and polyphyllin VI-treated were flushed. We found that pregnant females treated with polyphyllin VI showed ~50% embryo retention in the oviduct, whereas in the vehicle-treated group, no embryos were retained in the oviduct (Figure 6A–C). Further analysis of embryos retrieved from polyphyllin-treated oviducts showed more percentage of developmentally delayed and non-viable embryos compared to embryos recovered from control uteri (Figure 6D). The average number of embryos recovered from polyphyllin- and vehicle-treated mice was not significantly different (Figure 6—figure supplement 1). Histological analysis showed a marked induction in GSDMD expression compared to vehicle-treated mice oviducts (Figure 6E). However, precisely activating the unscheduled pyroptosis during the critical period of embryo transport is technically challenging. Nonetheless, our findings provide evidence that unscheduled pyroptosis adversely affects embryo transport through the oviduct. Taken together, these results demonstrate that Atg14 safeguards pyroptosis activation in the oviduct and allows the smooth transport of embryos to the uterus (Figure 6F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig6-v1.jpg)
+
+**Figure 6.:** (A) Experimental strategy for pyroptosis activation in pregnant female mice. (B) Embryos flushed from the vehicle (n = 3) or polyphyllin VI-treated (n = 3) D4 pregnant females. (C) Percentage of embryos recovered from oviducts or uteri. (D) Percentage of blastocysts, morulae, developmentally delayed or nonviable embryos collected from vehicle uteri or polyphyllin IV oviducts at 4 dpc. (E) Immunohistochemistry to show GSDMD expression in the isthmus section of polyphyllin IV-treated and vehicle-treated mice. ×40 objective, Scale bar: 5 µm. (F) Graphical illustration to show embryo transport and pyroptosis regulation in the oviduct.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97325/elife-97325-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Average number of embryos retrieved from vehicle (n = 3) uteri and polyphyllin VI-treated (n = 3) D4 pregnant mice oviducts and uteri.
 
 ## Discussion
 
@@ -97,35 +203,35 @@ In this report, we revealed tissue-specific roles of ATG14 in governing oviducta
 
 ## Materials and methods
 
-## Animal care and use
+### Animal care and use
 
 All animal studies were approved by the Institutional Animal Care and Use Committee of Washington University School of Medicine, Saint Louis, MO (protocol number: 20160227) and the Use Committee of Baylor College of Medicine, Houston, TX (protocol number: AN-8890). Atg14flox/flox mice were provided by a gift from Dr. Shizuo Akira at the Department of Host Defense, Research Institute for Microbial Diseases (RIMD), Osaka University, and previously described (Matsunaga et al., 2009). Wild-type Pr-cre mice were provided by Dr. John Lydon at Baylor College of Medicine, Houston, and previously described (Soyal et al., 2005). Atg14flox/flox mice, in which exon 4 was flanked by loxp sites, were bred to progesterone receptor cre (Prcre/+) mice to generate (Atg14flox/flox; Prcre/+ mice), hereafter referred to as Atg14 cKO mice. Both control and conditional knockout females were generated by crossing females carrying homozygous Atg14flox/flox alleles with Atg14 cKO males. Foxj1-cre mice were a generous gift from Dr. Michael J. Holtzman at Washington University St. Louis and previously described (Zhang et al., 2007). Foxj1/Atg14 cKO mice were generated by crossing females carrying homozygous Atg14flox/flox females with Atg14flox/flox; Foxj1cre/+ males. All mice were age-matched and on a C57BL/6 genetic background (The Jackson Laboratory, Bar Harbor, ME). Mice were genotyped by PCR analysis of genomic DNA isolated from tail clippings using the gene-specific primers listed in Supplementary file 1.
 
-## Fertility analysis and timed mating
+### Fertility analysis and timed mating
 
 Female fertility was determined by mating cohorts of Atg14 cKO experimental (n = 6) and control Atg14flox/flox (n = 4) females individually starting at 8 weeks of age with sexually mature males of proven fertility. Similarly, breeding trials were set up for Foxj1/Atg14-cre females (n = 6) and Foxj1/Atg14 control 8-week-old f/f females (n = 6). The numbers of litters and pups were tracked over 6 months for each female. Pups per litter for each genotype are reported as mean ± SEM. For timed mating, the morning on which the copulatory plug was first observed was considered 1 dpc. To visualize implantation sites, mice received a tail vein injection of 50 μL of 1% Chicago Sky Blue dye (Sigma-Aldrich, St. Louis, MO) at 5 dpc just before sacrifice.
 
-## Steroid hormone treatments
+### Steroid hormone treatments
 
 The hormonal profile of pregnancy at the time of implantation was done using a previously described experimental scheme (Popli et al., 2023). Briefly, Atg14 cKO and control females (8 weeks old) were bilaterally ovariectomized under ketamine anesthesia with buprenorphine-SR as an analgesic. Mice were allowed to rest for 2 weeks to dissipate all endogenous ovarian hormones. After the resting period, mice were injected with 100 ng of estrogen (E2; Sigma-Aldrich) dissolved in 100 µL of sesame oil on two consecutive days and then allowed to rest for 2 days. At this point, mice were randomly divided into three groups of five: vehicle-treated (E2 priming) mice received four consecutive days of sesame oil injections; E2 group mice received 3 days of sesame oil injections followed by a single injection of 50 ng of E2 on the fourth day; the E2/P4 mice received 1 mg of progesterone (P4; Sigma-Aldrich) for three consecutive days followed by a single injection of 1 mg P4 plus 50 ng E2 on the fourth day. All hormones were delivered by subcutaneous injection in a 90:10 ratio of sesame oil:ethanol. Mice were euthanized 16 hr after the final hormone injection to collect the uteri. A small piece of tissue from one uterine horn was processed in 4% neutral-buffered paraformaldehyde for histology, and the remaining tissue was snap-frozen and stored at –80°C.
 
-## Hormone analysis
+### Hormone analysis
 
 For serum hormone level measurement, blood was collected from D4 pregnant mice before mice were sacrificed. Serum was separated from the blood by centrifugation and stored at –80°C before hormone analysis. Serum P4 and E2 levels were measured using ELISA kits (Enzo Life Sciences) according to the manufacturer’s instructions.
 
-## H&E staining
+### H&E staining
 
 Tissues were fixed in 4% paraformaldehyde, embedded in paraffin, and then sectioned (5 μm) with a microtome (Leica Biosystem, Wetzlar, Germany). Tissue sections were deparaffinized, rehydrated, and stained with H&E as described previously (Chadchan et al., 2019). All the histology was performed on three sections from each tissue of individual mice, and one representative section image is shown in the respective figures.
 
-## Histological analysis
+### Histological analysis
 
 For histological analysis, the collected tissues (oviduct or uteri) were fixed in 4% paraformaldehyde, embedded in paraffin, and sectioned. Sections (5 µm) were immunostained (n = 5 per group) as described previously (Chadchan et al., 2019). Briefly, after deparaffinization, sections were rehydrated in an ethanol gradient and then boiled for 20 min in citrate buffer (Vector Laboratories Inc, Newark, CA) for antigen retrieval. Endogenous peroxidase activity was quenched with Bloxall (Vector Laboratories Inc), and tissues were blocked with 2.5% goat serum in Phosphate-buffered saline and Bovine serum albumin (PBS) for 1 hr (Vector Laboratories Inc). After washing in PBS three times, tissue sections were incubated overnight at 4°C in 2.5% goat serum containing the primary antibodies listed in Supplementary file 2. Sections were incubated for 1 hr with biotinylated secondary antibody, washed, and incubated for 45 min with ABC reagent (Vector Laboratories Inc). Color was developed with 3, 3’-diaminobenzidine (DAB) peroxidase substrate (Vector Laboratories Inc), and sections were counter-stained with hematoxylin. Finally, sections were dehydrated and mounted in Permount histological mounting medium (Thermo Fisher Scientific, Waltham, MA).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For ultrastructural analysis, oviducts were fixed in 2% paraformaldehyde/2.5% glutaraldehyde (Ted Pella Inc, Redding, CA) in 100 mM cacodylate buffer, pH 7.2 for 1 hr at room temperature and then overnight at 4°C. Samples were washed in cacodylate buffer and postfixed in 1% osmium tetroxide (Ted Pella Inc) for 1 hr. Samples were then rinsed extensively in dH2O prior to en bloc staining with 1% aqueous uranyl acetate (Ted Pella Inc) for 1 hr. Following several rinses in dH2O, samples were dehydrated in a graded series of ethanol and embedded in Eponate 12 resin (Ted Pella Inc). For initial evaluation, semithin sections (0.5 μm) were cut with a Leica Ultracut UCT7 ultramicrotome (Leica Microsystems Inc, Bannockburn, IL) and stained with toluidine blue. Sections of 95 nm were then cut and stained with uranyl acetate and lead citrate and viewed on a JEOL 1200 EX II transmission electron microscope (JEOL USA Inc, Peabody, MA). Images at magnifications of ×3000–30,000 were taken with an AMT 8-megapixel digital camera (Advanced Microscopy Techniques, Woburn, MA).
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Formalin-fixed and paraffin-embedded sections were deparaffinized in xylene, rehydrated in an ethanol gradient, and boiled in a citrate buffer (Vector Laboratories Inc) for antigen retrieval. After blocking with 2.5% goat serum in PBS (Vector Laboratories) for 1 hr at room temperature, sections were incubated overnight at 4°C with primary antibodies (Supplementary file 2) diluted in 2.5% normal goat serum. After washing with PBS, sections were incubated with Alexa Fluor 488-conjugated secondary antibodies (Life Technologies, Carlsbad, CA) for 1 hr at room temperature, washed, and mounted with ProLong Gold Antifade Mountant with DAPI (Thermo Fisher Scientific). All immunofluorescence images were obtained using a Zeiss LSM 880 confocal microscope (×10 and ×40 objective lens).
 
@@ -133,18 +239,18 @@ Fresh oviduct tissues from 8-week-old mice from control (n = 3) and cKO (n = 3) 
 
 Cryo-sections were processed for immunofluorescence staining as described before (Chojnacki et al., 2023). Briefly, cryosections were blocked in 2.5% normal goat serum. After washing with PBS, sections were blocked with Mouse on Mouse (M.O.M.) IgG blocking reagent (M.O.M. Fluorescein Kit, Vector Laboratories, #FMK-2201) diluted in 1% BSA per the manufacturer’s instructions. After blocking, sections were incubated overnight at 4°C with primary antibodies (Supplementary file 2) diluted in 2.5% normal goat serum. Next day, following washing with PBS, sections were incubated with Alexa Fluor 488-conjugated secondary antibodies (Life Technologies) for 1 hr at room temperature, washed, and mounted with ProLong Gold Antifade Mountant with DAPI (Thermo Fisher Scientific). All immunofluorescence images were imaged using a Nikon Fluorescent microscope.
 
-## Western blotting
+### Western blotting
 
 Protein lysates (40 µg per lane) from uteri or oviducts were loaded on a 4–15% SDS-PAGE gel (Bio-Rad, Hercules, CA), separated in 1X Tris-Glycine Buffer (Bio-Rad), and transferred to PVDF membranes via a wet electro-blotting system (Bio-Rad), all according to the manufacturer’s directions (Kommagani et al., 2016). PVDF membranes were blocked for 1 hr in 5% non-fat milk in Tris-buffered saline containing 0.1% Tween-20 (TBS-T, Bio-Rad), then incubated overnight at 4°C with antibodies listed in Supplementary file 2 in 5% BSA in TBS-T. Blots were then probed with anti-rabbit IgG conjugated with horseradish peroxidase (1:5000, Cell Signaling Technology, Danvers, MA) in 5% BSA in TBS-T for 1 hr at room temperature. Signal was detected with the Pierce ECL Western Blotting Substrate (Millipore, Billerica, MA), and blot images were collected with a Bio-Rad ChemiDoc imaging system.
 
-## RNA isolation and quantitative real-time RT-PCR analysis
+### RNA isolation and quantitative real-time RT-PCR analysis
 
 Tissues/cells were lysed in RNA lysis buffer, and total RNA was extracted with the Purelink RNA mini kit (Invitrogen, Carlsbad, CA) according to the manufacturer’s instructions. RNA was quantified with a Nano-Drop 2000 (Thermo Fisher Scientific). Then, 1 µg of RNA was reverse transcribed with the High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific). The amplified cDNA was diluted to 10 ng/µL, and qRT-PCR was performed with primers listed in Supplementary file 1 and TaqMan 2X master mix (Applied Biosystems/Life Technologies, Grand Island, NY) on a 7500 Fast Real-time PCR system (Applied Biosystems/Life Technologies). The delta-delta cycle threshold method was used to normalize expression to the reference gene 18S.
 
-## Treatment of mice with polyphyllin VI
+### Treatment of mice with polyphyllin VI
 
 Polyphyllin VI (Selleck Chemicals, Houston, TX), a pharmacological agent that induces caspase-1-mediated pyroptosis, was used to study its effects on embryo transport in the oviduct (Teng et al., 2020). Eight-week-old C57BL/6 mice were injected for three consecutive days starting from 1 dpc with polyphyllin VI activator dissolved in 40% PEG-300 (15 mg/kg body weight). Dimethyl sulfoxide with 40% PEG-300 was administered as a vehicle.
 
-## Statistics
+### Statistics
 
 A two-tailed paired Student t-test was used to analyze data from experiments with two experimental groups and one-way ANOVA followed by Tukey’s post hoc multiple range test was used for multiple comparisons. All data are presented as mean ± SEM. GraphPad Prism 9 software was used for all statistical analyses. Statistical tests, including p values, are reported in the corresponding figure legends or, when possible, directly on the data image. To ensure the reproducibility of our findings, experiments were replicated in a minimum of three independent samples, to demonstrate biological significance, and at least three independent times to ensure technical and experimental rigor and reproducibility.

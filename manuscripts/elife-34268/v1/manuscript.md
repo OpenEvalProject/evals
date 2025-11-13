@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.34268.001 Group II introns are mobile ribozymes that are rare in bacterial genomes, often cohabiting with various mobile elements, and seldom interrupting housekeeping genes. What accounts for this distribution has not been well understood. Here, we demonstrate that Ll.LtrB, the group II intron residing in a relaxase gene on a conjugative plasmid from Lactococcus lactis , inhibits its host gene expression and restrains the naturally cohabiting mobile element from conjugative horizontal transfer. We show that reduction in gene expression is mainly at the mRNA level, and results from the interaction between exon-binding sequences (EBSs) in the intron and intron-binding sequences (IBSs) in the mRNA. The spliced intron targets the relaxase mRNA and reopens ligated exons, causing major mRNA loss. Taken together, this study provides an explanation for the distribution and paucity of group II introns in bacteria, and suggests a potential force for those introns to evolve into spliceosomal introns.
+Group II introns are mobile ribozymes that are rare in bacterial genomes, often cohabiting with various mobile elements, and seldom interrupting housekeeping genes. What accounts for this distribution has not been well understood. Here, we demonstrate that Ll.LtrB, the group II intron residing in a relaxase gene on a conjugative plasmid from Lactococcus lactis, inhibits its host gene expression and restrains the naturally cohabiting mobile element from conjugative horizontal transfer. We show that reduction in gene expression is mainly at the mRNA level, and results from the interaction between exon-binding sequences (EBSs) in the intron and intron-binding sequences (IBSs) in the mRNA. The spliced intron targets the relaxase mRNA and reopens ligated exons, causing major mRNA loss. Taken together, this study provides an explanation for the distribution and paucity of group II introns in bacteria, and suggests a potential force for those introns to evolve into spliceosomal introns.
 
 ## Introduction
 
@@ -31,9 +31,29 @@ Here we investigated the impact of group II introns on their host gene expressio
 
 ## Results
 
-## A group II intron inhibits gene expression at the mRNA level
+### A group II intron inhibits gene expression at the mRNA level
 
 The group IIA Ll.LtrB intron interrupts the ltrB relaxase gene, which resides on the conjugative plasmid pRS01 and is required for pRS01 conjugative transmission (Belhocine et al., 2004; Belhocine et al., 2005; Mills et al., 1996). Both intron-containing (Int+) and intron-less (Int-) ltrB genes, under control of a nisin-inducible promoter on a pCY20 plasmid, were expressed in the native host L. lactis strain IL1403 (Figure 1A). Northern blotting analysis of RNA (Figure 1B) indicated that the relaxase mRNA abundance was much lower in the presence of the intron than in its absence (21% vs. 100%). Consistent with the mRNA difference, the LtrB relaxase determined by Western blotting also accumulated to lower levels in the Int+ cell (Figure 1C, 36% vs. 100%). Notably, a previous study showed an even larger (20-fold) difference in protein levels in Int- versus Int+ cells (Chen et al., 2005). The dramatic decrease in the ltrB relaxase mRNA level in the presence of the intron was confirmed by performing quantitative reverse transcription PCR (qRT-PCR). The difference in mRNA levels between the Int+ and the Int- cells was 23-fold (Figure 1D, Figure 1—source data 1, Figure 1—figure supplement 1, 4.3% vs. 100%). The greater difference by qRT-PCR and Northern blotting, may be accounted for by the different reference RNAs used (copA mRNA for qRT-PCR vs. 16S rRNA for Northern blot) or by the inherent difference between the two techniques in determining RNA levels.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig1-v1.jpg)
+
+**Figure 1.:** (A) Diagram of the ltrB relaxase mRNA produced from full-length intron-containing pre-mRNA and intron-less constructs on the pCY20 plasmids (specR). The mRNA generated from splicing of the intron (red) (S-mRNA, left) is compared to mRNA expressed from the intron-less construct (C-mRNA, right). (B) RNA analysis by Northern blotting using the mRNA splice-junction and intron-specific probes. Representative data of three biological replicates is shown. Quantitation of mRNA (two bands, bracketed) and splicing, normalized to 16S rRNA from the same blot after stripping and reprobing, is denoted at the bottom of the blot. The faint upper mRNA band may result from an alternate transcription start site. Splicing efficiency is defined as the percentage of the spliced intron relative to the sum of pre-mRNA and spliced intron. (C) LtrB relaxase protein levels determined by Western blotting. Representative data of three biological replicates is shown. Quantitation of protein level, normalized to respective total protein levels, is denoted at the bottom of the blot. Portions of the coomassie stained gels before (left) and after transfer (right) are shown below. (D) Representative qRT-PCR profile of expressed mRNAs in the Int- (blue) and Int+ (red) cells. PCR target and primer pair are shown (top) and average relative mRNA levels in Int-/Int+(100% vs 4.3%) derived from mean Ct values of three biological replicates are indicated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative qRT-PCR profile (three biological replicates) of 5′-transcription levels in the Int- (blue) and Int+ (red) cells. PCR targets and primer pairs are shown (top), and relative transcription levels (percentages of the Int-) are indicated. (B) The 5′-transcription level of the ltrB relaxase gene in the Int-/Int+ cells determined by primer extension. RNA targets and primer are shown above. cDNA synthesis was analyzed on a 10% urea-denaturing polyacrylamide gel. Cellular non-coding 6S RNA was used for loading normalization. Relative 5′-transcription levels (percentages) (mean value derived from three biological replicates) are indicated below the gel image. (C) Diagrams of RNA targets and primer pairs (arrows) used in PCR reactions. Numbers 1–5 denote the target mRNA, 5′-transcription, pre-mRNA + Intron, 5′-Exon-Intron, and Intron-3′-Exon, respectively. (D) qRT-PCR data. Expression of each RNA target relative to the internal reference copA is derived as decribed in Materials and methods. Mean values and standard deviations from three biological replicates, as well as the relative RNA levels (percentages in parentheses, if applicable) in the Int- and Int+ cells are shown. The relative level of the spliced intron (% splicing) is derived by subtracting pre-mRNA, represented by line 4 (probes 4) from total intron RNA (line 3, pre-mRNA + Intron). The relative splicing efficiency is determined as the percentage of spliced intron (lines 3–4) out of the total intron RNAs (line 3). Based on this analysis, splicing efficiency of the Ll.LtrB intron is in the 73.8% range.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Diagram of a termination assay designed to determine the level of spliced intron relative to the Int+ pre-mRNA (represented by 5′-Exon-Intron). Intron and exon sequence are in red and black respectively. Boundary between intron and 5′-exon is denoted as a dashed vertical line. Primer used (horizonatal arrow) and predicted sizes of cDNA products are shown. Reverse transcription terminates at the nearest upstream adenosine (bold and uppercase) for the pre-mRNA because the deoxythymidine 5′-triphosphate (dTTP) in the reaction is replaced with 2′,3′ dideoxythymidine 5′-triphosphate (ddTTP), and at the 5′ end for the spliced intron. Termination sites of the RNAs are indicated with up-ward arrows. (B) Primer extension to determine the relative level of spliced intron (Intron) was resolved on an 8% urea-polyacrylamide gel (n = 3). Three biological replicates for each strain are shown. cDNA to the spliced intron forms a doublet, maybe because of exonucleolytic nibbling back of a single nucleotide. Average amount of spliced intron (Intron) relative to pre-mRNA is shown below. Splicing efficiency is defined as the percentage of spliced intron (Intron) relative to the sum of pre-mRNA + Intron.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Northern blot analysis of RNAs expressed in cis after rifampicin treatment. Int-/Int+ plasmids were induced by nisin for gene expression for 30 min and then treated with rifampicin. Aliquots were taken at 0, 1, 3, 5, 10, and 20 min and RNA was probed for ltrB relaxase mRNA (bracket) and intron RNAs. The uninduced (-nis) and rifampicin untreated (+nis) were used as controls. Probing of the 16S rRNA was used for loading normalization. (B) Representative result of three biological replicates. Top: plot of mRNA abundance versus time of treatment in the Int+ (red square) (y = −0.0021x + 0.12, R2 = 0.62) and Int- (blue diamond) (y = −0.0075x + 0.2625, R2 = 0.87) cells; Bottom: plot of spliced intron (light green triangle) abundance versus time in the Int+ cells (y = −0.0009x + 0.0448, R2 = 0.85). Slope values are indicated above respective plots.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The mRNAs isolated from sucrose gradient fractions (odd-numbered, representative, ‘top’ and ‘bottom’ fractions of the gradient denoted) were visualized by Northern blotting (top panel). A vertical dashed red line denotes the boundary between polysomal (right of the line) and non-polysomal (left of the line) fractions, which were defined based on RNA gel electrophoresis (middle panel) and UV absorption spectrum (bottom panel). The non-polysomal portion is marked by the predominant occurrence of 30S (16S rRNA, Fraction 5) and 50S (23S rRNA, Fraction 7) ribosomal subunits, and ribosome monomer and dimers (Fraction 9, 11). The polysomal enrichment of mRNA (bracket in Northern blot) is defined as the fraction of total mRNA in the polysomal fractions (13-29) out of the total mRNA in all fractions (5-29). The average mRNA polysomal enrichment (biological replicates, n = 2) relative to Int- cells is shown at the bottom of gels. Control lanes ‘+” / ‘-”=total RNA from Int+/- cells.
 
 By performing both reverse transcription and qRT-PCR analyses we determined that the decrease in mRNA was not simply due to group II intron-promoted reduction in transcription rate (Figure 1—figure supplement 1). We analyzed nascent ltrB primary transcripts in Int-/Int+ cells, utilizing a DNA primer that bound 50 nucleotides downstream from the 5′-end of the transcript (Figure 1—figure supplement 1A–B). Because of the proximity of the primer to the 5′-end, we presumed that the yield of the cDNA or RT-PCR products generated was a reflection of transcription initiation, and indeed there was only a 20% difference in the amount of cDNAs between Int- and Int+ (Figure 1—figure supplements 1A, 100% vs. 79%; 1B, 100% vs. 74%). In addition, comparison of the relative mRNA expression level in the Int- cell with that of total intron RNAs (pre-mRNA + Intron) in the Int+ cell, also indicated small transcription differences between Int-/Int+ cells (Figure 1—figure supplement 1C, primers, 1D, relative levels, 20.04 ± 2.00 vs. 25.65 ± 6.47).
 
@@ -45,7 +65,7 @@ We also investigated if gene expression was affected at the translation level. C
 
 Additionally, although ltrB RNA levels can be condition-dependent (Chen et al., 2005), the differential expression levels between Int+ and Int- genes were not influenced by stressors and environmental changes, such as temperature, pH, salt and redox (data not shown). Taken together, we concluded that the group II intron-promoted inhibition in gene expression is likely to be mainly at the mRNA level.
 
-## Suppressing gene expression in bacteria is a common property of group II introns
+### Suppressing gene expression in bacteria is a common property of group II introns
 
 We also investigated if this substantial group II-intron mediated decrease in mRNA was independent of plasmids and promoters from which the ltrB relaxase gene was expressed (Figure 2A). When the Int-/Int+ ltrB genes were expressed from different plasmids, including pDL278 and pAMJ328, where gene expression was driven by either constitutive or pH-inducible promoters, respectively, we observed similar levels of mRNA reduction in the presence of the intron (pDL: 100% vs. 28%; pAMJ: 100% vs. 45%) (Figure 2A). This demonstrates that group II intron-promoted inhibition was independent of the plasmid and promoter from which the ltrB relaxase gene was expressed.
 
@@ -55,15 +75,15 @@ We also investigated if this substantial group II-intron mediated decrease in mR
 
 In addition, we extended this comparative study to other types of bacterial group II introns, including a typical IIB intron, EcI5 (Dai and Zimmerly, 2002b) and a IIC intron, BhI1 (Candales et al., 2012). The Int-/Int+ constructs of these introns were fused to an enhanced GFP reporter at the N-terminus. When expressed in Escherichia coli, levels of the mRNA dropped substantially for both EcI5 and BhI1 in the presence of the intron (Figure 2B,C). Also the GFP reporter was greatly reduced for EcI5 with the intron present (Figure 2B bottom). Therefore, it appears that inhibiting gene expression in bacteria is a common property of group II introns.
 
-## Ll.LtrB intron reduces conjugation of pRS01
+### Ll.LtrB intron reduces conjugation of pRS01
 
 Because ltrB relaxase is required for initiation of plasmid conjugation (Belhocine et al., 2004; Belhocine et al., 2005; Mills et al., 1996), and because ltrB gene expression is reduced in the presence of the intron, we wished to determine if the intron may inhibit conjugal transfer of pRS01. To test this hypothesis, we measured conjugation frequency where the donor strain, IL1403, co-hosted erythromycin resistant (ermR) conjugative plasmid pRS01 ltrB- (ΔLtrB::tet) and the pCY20 Int- or Int+ plasmid. After mating with fusidic acid-resistant (FAR) ILI403 the frequency of the ErmRFAR exconjugants was measured (Figure 3). Consistent with the LtrB relaxase protein levels (Figure 1C), the conjugation frequency of the Int+ donor was 3- to 4-fold lower that of the Int-, at 2.0 ± 0.1 × 10−4 versus 7.3 ± 10−4 exconjugants per donor (n = 2, p<0.05) (Figure 3 and data not shown). This result ties into a previous study (Novikova et al., 2014) suggesting that these two disparate mobile elements, the mobile intron and the conjugative pRS01 plasmid, have a functional interplay.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig3-v1.jpg)
 
-**Figure 3.:** Top, mating diagrams of IL1403 donor with IL1403-FAR recipient. Donor cells contain pRS01 (erm), with RltrB interrupted by a tet gene (red cross), co-expressed with Int- or Int+ (red bar) relaxase (brown and orange bars) from plasmid pCY20. Bottom, representative conjugation result. Spotting of 10 and 5 μl of donor plus recipient conjugation mix (two replicates per donor) on plates containing FA and Erm to select for transconjugants. Conjugation frequencies are shown (n = 2, p<0.05 based on two-tailed t-test with two-sample unequal variance).
+**Figure 3.:** Top, mating diagrams of IL1403 donor with IL1403-FAR recipient. Donor cells contain pRS01 (ermR), with ltrB interrupted by a tet gene (red cross), co-expressed with Int- or Int+ (red bar) relaxase (brown and orange bars) from plasmid pCY20. Bottom, representative conjugation result. Spotting of 10 and 5 μl of donor plus recipient conjugation mix (two replicates per donor) on plates containing FA and Erm to select for transconjugants. Conjugation frequencies are shown (n = 2, p<0.05 based on two-tailed t-test with two-sample unequal variance).
 
-## Spliced mRNA is associated with the intron
+### Spliced mRNA is associated with the intron
 
 The first crystal structure of a group II intron lariat has revealed that ligated exons (mRNA) remain bound to the spliced intron RNA (Robart et al., 2014). The recently determined cryo-electron microscopy (cryo-EM) structure of the Ll.LtrB group II intron-IEP complex, that was isolated from its native host, also shows that after splicing the mRNA is retained within the ribonucleoprotein (RNP) (Qu et al., 2016). To confirm the presence of this intron-mRNA interaction in the bacterial cell, we performed intron-RNA pull-down assays (Qu et al., 2014). Briefly, a streptavidin-specific RNA aptamer was introduced into the Ll.LtrB intron in order to purify it over streptavidin resin (Figure 4A). After purification, the intron and any associated RNAs, were isolated and analyzed by reverse transcription. With the aptamer-containing intron, we observed that while the full-length pre-mRNA and spliced intron were pulled down as expected, the small mRNA (smRNA), generated from splicing of the aptamer-containing pre-mRNA with small exons (S-smRNA), was co-isolated. However, the smRNA produced either from the Int- cell (C-smRNA) or from the aptamer-free Int+ cell (S-smRNA) were not co-isolated (Figure 4B). These results demonstrate that the intron is interacting with the spliced mRNA in the bacterial cell.
 
@@ -71,17 +91,41 @@ The first crystal structure of a group II intron lariat has revealed that ligate
 
 **Figure 4.:** (A) Schematic of construct harboring RNA aptamer. Pre-mRNA bears the Ll.LtrB intron (red line), which is flanked by small exons (brown and orange boxes). The RNA streptavidin aptamer (SA) is shown as a green stem-loop. Splicing of the aptamer-containing (Int+SA+) or aptamer-less (Int+SA-) pre-mRNA produces small ligated exons (S-smRNA) that have the same sequence as the control small mRNA (C-smRNA) generated from the intron-less construct (Int-). Primers IDT5078 and IDT1073 were used for analysis of smRNAs and intron RNAs (pre-mRNA and spliced intron), respectively, in panel below and are indicated as arrows. (B) mRNA binds to the intron (representative result of three biological replicates). RNAs with the SA aptamer were purified using streptavidin resin and were detected by reverse transcription using 5′- 32P-labeled primers specific for smRNAs and intron RNAs (pre-mRNA and Intron). The cDNA products were resolved on an 8% urea-polyacrylamide gel. Cellular 6S non-coding RNA was used as a loading control. F, flow-through; W4, the fourth wash; W8, the eighth wash, B, resin-bound.
 
-## Intron-mRNA interaction inhibits gene expression
+### Intron-mRNA interaction inhibits gene expression
 
 Next, we investigated the possibility that the intron-mRNA interaction might account for the group II intron-promoted mRNA reduction. Similar to a previous study, we developed an in trans, two-plasmid expression system (Qu et al., 2014). We therefore co-expressed the intron-less ltrB relaxase from the pCY20 plasmid with either the Ll.LtrB intron-containing (with flanking small exons), or intron-less (small exons only) second plasmid, pLNRK (Figure 5A, left). Northern blotting analysis again showed that the level of relaxase mRNA dramatically dropped in the presence of the intron (21% vs. 100%). Additionally, an unexpected band smaller than the mRNA was detected (we call this band RNA 3, see below) (Figure 5A, right). Also, Western blotting indicated less accumulation of LtrB relaxase protein (24% vs. 100%).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig5-v1.jpg)
+
+**Figure 5.:** (A) Intron in trans expression system. In the schematic, ltrB relaxase mRNA (brown and orange bars), from plasmid pCY20, was co-expressed with the Ll.LtrB group II intron (red line) flanked with small exons (brown and orange boxes) from plasmid pLNRK (camR) (Intron+). Co-expression of the mRNA with an intron-less allele was used as the control (Intron-). This system was used in assays shown in panels C-D. Splicing of the intron-containing pre-mRNA generates small mRNA (smRNA) and Intron, and the latter is proposed to interact with the mRNA via EBS and IBS base pairing. To the right, mRNAs were analyzed by Northern blotting (top) as in Figure 1B, and LtrB relaxase protein was analyzed by Western blotting as in Figure 1C (bottom). Representative data of three biological replicates is shown. Quantitation of mRNA (two bands, bracketed) and protein levels are denoted at the bottom of the images. Dagger (>), unexpected product (identified in Figures 5 and 6 as RNA 3). (B) EBS–IBS interaction sequences. WT (wt) and mutated (m) Intron_EBS (red) and mRNA_ IBS (black) sequences are shown with Watson–Crick pairs between them indicated as vertical bars and the wobble U:G pairs shown as a dot. Nucleotide substitutions in mutated EBS-IBS sequences are shown in blue. (C) Effect of EBS mutation on mRNA levels. mRNAs (two bands, bracketed) were analyzed by Northern blotting (top) as in Figure 1B. Quantitation of mRNA levels (derived from three biological replicates) is denoted at the bottom. Dagger (>), unexpected product (identified in Figures 5 and 6 as RNA 3). (D) Effect of IBS mutation on mRNA levels. RNAs were analyzed by Northern blotting with a 5′-exon specific probe (black bar). Quantitation of mRNA (two bands, bracketed) levels (derived from three biological replicates) is denoted at the bottom. Daggers (>), unexpected products (identified in Figures 5 and 6 as RNA 1 and RNA 4).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Retrohoming loss in LtrA reverse transcriptase (RT) and DNA endonuclease (EN) mutants. PCR scheme is diagramed on the top. Amplification of Int-/Int+ ltrB relaxase gene, using the designated primer pair (arrows), generate amplicons of different sizes, depending on retrohoming (RH+/-). PCR products were analyzed by agarose gel electrophoresis and a representative image (three biological replicates) is shown at the bottom. C+ and C-: PCR positive and negative controls using pCY20 plasmids expressing intron-containing and intron-less ltrB relaxases, respectively. (B) Gene expression inhibition persists in RT and EN mutants. RNAs were analyzed by Northern blotting (top) as in Figure 1B. Intron splicing, which was indicated by the production of the smRNA, was not substantially affected in these mutants although mRNA levels were reduced, indicating no major splicing defects in these mutants. Representative result of three biological replicates is shown. Unexpected product (identified in Figures 5 and 6 as RNA 3) is shown, but appears to be absent in RT and EN mutants. LtrB relaxase protein levels were analyzed by Western blotting (bottom) as in Figure 1C.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) EBS–IBS interaction sequences. WT (wt) and mutated (m*) Intron_EBS (red) and mRNA_ IBS (black) sequences are shown with Watson–Crick pairs between them indicated as vertical bars and the wobble U:G pairs shown as a dot. Nucleotide substitutions in mutated EBS and IBS sequences are shown in blue. (B) Effect of EBS and IBS mutations on mRNA levels. mRNAs (two bands, bracketed) were analyzed by Northern blotting (top) as in Figure 5D. Quantitation of mRNA levels (top), normalized to 16S (bottom) and relative to the appropriate wild type conditions (derived from three biological replicates), is denoted in the middle. Daggers (>), unexpected products (identified in Figures 5 and 6 as RNA 1 and 4, boxed). (C) Determination of intron splicing competence in the intron_EBSm* mutant by reverse transcription primer extension. Primer IDT1073 (black arrow, 27 nt) was used to extend to the transcription start site to identify the pre-mRNA (134 nt) or to the branch-point of the spliced intron lariat (41 nt). Splicing efficiency (%) is defined as the amount of spliced intron relative to total intron (pre-mRNA +spliced intron); P=Primer.
 
 It was necessary to elucidate if mRNA loss in this case is due to retrohoming or RNA-RNA interaction alone. To this end, mutants of the intron’s IEP, LtrA, in which retrohoming was stopped due to inactivation of either the reverse transcriptase (RT) or DNA endonuclease (EN), were created (Figure 5—figure supplement 1A). RNA analysis showed that strong mRNA inhibition still persisted in these mutants (Figure 5—figure supplement 1B), thus indicating that the inhibition of gene expression was due to the proposed RNA-RNA interaction rather than retrohoming.
 
 Using the trans-expression system, we validated that the intron-mRNA interaction requires EBS-IBS base-pairing, as shown previously in yeast (Qu et al., 2014). Mutants with nucleotide substitutions either in the IBS of the relaxase mRNA, or in the EBS in the intron expressed in trans, were compared to the respective wild-type counterparts (Figure 5B,C). The results showed that the relaxase mRNA level was recovered in the EBS mutant strain (Figure 5C, 21% to 92%), and increased ~2-fold in the IBS mutant (Figure 5D, 24% to 45%). Similar results were obtained with a different set of IBS-EBS mutants (m*), with recovery of mRNA levels in the EBS and IBS mutants from 23% to 116% and 23% to 51% respectively (Figure 5—figure supplement 2). Importantly, relaxase mRNA level was again reduced when the IBS mutation in the mRNA complemented the mutated EBS from the intron in the cell (Figure 5—figure supplement 2, down to 18%).
 
-## The spliced intron retargets the mRNA
+### The spliced intron retargets the mRNA
 
 The observation that splicing ability of the intron is required for mRNA inhibition (data not shown) raised the possibility that the intron interaction with mRNA enables biochemical reactivity. We were also curious about the unexpected bands (RNAs 3 and 4) observed in Figure 5C and D respectively. Biochemical reactivity was validated and the origin of the extraneous bands was examined with the in trans system through a series of Northern blotting assays with multiple probes and confirmed by Rapid Amplification of cDNA Ends (RACE), which generates a cDNA copy for sequencing of the desired RNA. Four RNA molecules (RNA 1-RNA 4) with identity clearly distinct from the RNAs that were predicted to be expressed, were revealed (Figure 6A–C, Figure 6—figure supplement 1A–D, Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig6-v1.jpg)
+
+**Figure 6.:** Proposed reactions in the in trans system as described in Figure 5A, are diagramed on the left and validated by Northern blotting (representative results of three biological replicates) on the right. (A) Reverse splicing into the mRNA. Left: The co-expressed full length ltrB relaxase mRNA or the smRNA (brown and orange boxes) are substrates of the intron ribozyme. Reverse splicing consists of two steps and generates two precursor forms. Right: RNAs expressed with the in trans system (right two lanes) were detected using an intron-specific probe (black bar), and compared to RNAs expressed in cis (left two lanes). This assay revealed both the predicted reverse splicing product (RNA 1), and an additional RNA product (RNA 2) resulting from the reaction shown in (B). (B) RNA recombination. Left: At the second step of reverse splicing, 5′-exons from the ltrB relaxase mRNA or the smRNA exchange with each other, thus producing chimeric intron precursors. These products could undergo forward splicing, thereby producing chimeric mRNAs. Right: RNAs expressed with the in trans system (right two lanes) were detected using a probe specific for the 3′-exon (black bar), and compared to RNAs expressed in cis (left two lanes). The mRNA was revealed as two bands (bracketed). This assay revealed both of the two predicted products resulting from RNA recombination (RNA 2, RNA 3), and also the RNA 1 product described in (A). (C) Spliced exons reopening (SER). Left: Either the relaxase mRNA or smRNA could be split by the intron at the exon-exon junction, thus freeing the 5′- and 3′-exons. Right: RNAs expressed with the in trans system (right two lanes) were detected using the probe specific for the 5′-exon (black bar), and compared to RNAs expressed in cis (left two lanes). The mRNA was revealed as two bands (bracketed). This assay revealed the predicted free 5′-exon of the relaxase mRNA (RNA 4) resulting from SER in both the in trans and in cis systems, and also the RNA 1 product described in (A).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Northern blot analysis where RNAs were expressed in the Int-/Int+ cells with the intron in cis (left lanes) or in trans (right lanes). Representative results (three biological repliactes) are shown. RNA targets and the probes (black bar) are shown below. (A) The intron-specific probe reveals RNA 1 and RNA 2 (B) The mRNA splice junction specific probe reveals RNA 3. (C) The mRNA 5′-exon-specific probe reveals RNA 1 and RNA 4. (D) The mRNA 3′-exon-specific probe reveals RNA 1, RNA 2 and RNA 3.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/34268/elife-34268-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** 5′ and 3′ RACE was performed on Int+ and Int- RNAs expressed from the cis and trans systems, followed by cDNA sequencing. PCR reactions resolved on 1.2% agarose gels are shown and the revealed RNAs are indicated with white triangles. Schematic to the right of gels shows the products, with half arrowheads indicating GSP (gene specific primer) and kit universal primers. Dotted line represents the PCR product. PCR products were excised and their identity was validated by DNA sequencing. (A) 5′ RACE. PCR reveals RNA 1, 2 and 3, as well as mRNA. (B) 3′ RACE. PCR reveals RNA 4, as well as mRNA. Notably, the PCR product marked as RNA 4 was faint and heterogeneous, and random sequencing of resulting DNA clones revealed a mixture of free 5′ exon sequences with diverse 3′ ends.
 
 Among the four RNA molecules, two of them appeared in the intron-specific probing (Figure 6A; Figure 6—figure supplement 1A, lane 7). The larger of the two, termed RNA 1, was also revealed with both relaxase mRNA 5′- and 3′-exon probes (Figure 6B–C; Figure 6—figure supplement 1C–D, lane 7), and was identified as the intron-containing relaxase pre-mRNA. This was confirmed by probing a splicing-inactive catalytic triad mutant (T), which produced only this pre-mRNA band, RNA 1, and not RNAs 2–4 (Figure 6—figure supplement 1A,C,D, lane 3), and also by 5′-RACE followed by PCR amplification and sequencing of the cDNA (Figure 6—figure supplement 2A). This result suggests that the intron expressed in trans, is reverse splicing into the relaxase mRNA (Figure 6A). The smaller of the two intron-specific RNAs, termed RNA 2, was also revealed with the probe for 3′-exon but was absent in the probing for the 5′-exon (Figure 6B–C; Figure 6—figure supplement 1C–D, lane 7). With selective Northern blotting, along with 5′-RACE followed by cDNA sequencing, this RNA was identified as the unspliced intron expressed in trans, with its small 3′-exon replaced by the full-length 3′-exon of the relaxase mRNA (Figure 6A–B, Figure 6—figure supplement 1A,D, Figure 6—figure supplement 2A). This result suggests that there was shuffling of exons or RNA recombination, possibly between two reverse splicing reactions, that resulted in the formation of a chimeric precursor (Figure 6B).
 
@@ -97,13 +141,13 @@ To further elucidate how these retargeting reactions are responsible for mRNA di
 
 ## Discussion
 
-## Group II introns are inherent inhibitors of gene expression
+### Group II introns are inherent inhibitors of gene expression
 
 Inspired by the recently determined group II intron RNP structure and by the distribution features of group II introns in bacterial genomes, we performed a comparative expression study of intron-containing and intron-less variants of otherwise identical genes, to investigate the impact of group II introns on host gene expression. We discovered that group II introns reduce gene expression by robustly decreasing the spliced mRNA level in bacteria (Figure 1). This group II intron-induced mRNA disappearance appears independent of plasmids and promoters from which the genes are expressed (Figure 2), and is independent of stresses and changes of environmental conditions (data not shown). While this intron-induced reduction of mRNA levels was revealed mainly for the well-defined group IIA intron Ll.LtrB and its host ltrB relaxase gene in its native bacterial host Lactococcus lactis, it was also shown for two other types of bacterial group II introns, the group IIB EcI5 and group IIC BhI1 introns (Figure 2). Using the Ll.LtrB intron as the model, we also demonstrated that this mRNA reduction results from interaction between the intron with its spliced mRNA, via EBS-IBS base pairing (Figures 4, 5 and 7). Since ltrB is part of an operon containing also ltrC, ltrD, ltrE and ltrF (Chen et al., 2005), it will be interesting to determine how ltrB targeting by the group II intron affects levels of the entire transcript.
 
 Interestingly, group II introns can also cause gene silencing in eukaryotic cells (Chalamcharla et al., 2010; Zerbato et al., 2013). Here, EBS-IBS-based intron-mRNA interactions shut down nuclear gene expression (Qu et al., 2014). Taken together, we conclude that group II introns are inherent and general inhibitors of gene expression.
 
-## How the mRNA level is controlled by the intron
+### How the mRNA level is controlled by the intron
 
 By using the in trans system, we revealed that through RNA-RNA interactions, the spliced intron can retarget the mRNA in the cell (Figures 6–7, Figure 6—figure supplement 1 and 2). The intron’s ribozyme activities include reverse splicing into the spliced mRNA, and the SER reaction. Because forward splicing is usually favored in the cell, based on the high splicing efficiency shown in Figure 1B, Figure 1—figure supplements 1–2, we speculate that reverse splicing accounts for a relatively small portion of mRNA loss. Additionally, a robust SER, which was also revealed in the in cis system (Figure 6C), splits the 5′-exon from the mRNA, and the free 3′-exon appears to be degraded (Figure 8A).
 
@@ -115,13 +159,13 @@ Although group II introns commonly invade DNA sequences, targeting RNA in vivo h
 
 The RNA decay study with rifampicin indicated slower mRNA degradation in the Int+ cell (Figure 1—figure supplement 3). However, this result may be misleading as the residual RNA that escapes intron targeting may be a more stable fraction. Alternatively, the intron may act as ribosomes do on bacterial mRNA, providing a ‘protective barrier’ by binding the mRNA that escapes degradative attack by the group II intron (Deana and Belasco, 2005). Additionally, enhanced stability may be a reflection of the reciprocal relationship between the stability and concentration of bacterial mRNAs (Nouaille et al., 2017), such that lower mRNA levels in the Int+ cell, would lead to higher stability of the mRNA. Whichever mechanism underlies the phenomenon, the consequence is that a fraction of the mRNA is maintained for translation.
 
-## Implications for distribution and spread of group II introns
+### Implications for distribution and spread of group II introns
 
 The discovery that group II introns inhibit gene expression likely explains why they are located mostly outside of genes or in non-essential genes, and why they are maintained at low frequency in bacterial genomes (Dai and Zimmerly, 2002a; Zimmerly and Semper, 2015). Group II intron-promoted reduction of gene expression could be the major driver that selected for group II introns residing in intergenic or non-essential regions. It is therefore intriguing that there are rare cases of essential genes containing group II introns in bacterial genomes (Candales et al., 2012; Dai et al., 2003; Dai and Zimmerly, 2002a; Zimmerly and Semper, 2015). We speculate that, in these cases, either robust gene expression is not needed, that reduction in gene expression is modest or that the intron plays a regulatory role (Belfort, 2017). The effect of organellar group II introns that are commonly present in essential genes is largely unknown (Dai and Zimmerly, 2002a; Zimmerly and Semper, 2015). Perhaps many of these introns have lost the ability to target mRNA and cause its loss, or do so very inefficiently. Alternatively, a lower expression level might be required for proper functions of these host genes. Notably, favoring the latter notion, a recent study showed that the presence of self-splicing introns including group II introns in the mitochondrion of Saccharomyces cerevisiae was required for inefficient expression of host genes that was essential for maintaining proper mitochondrial function (Rudan et al., 2018).
 
 Group II introns are also frequently found in mobile DNAs (Candales et al., 2012; Dai et al., 2003; Dai and Zimmerly, 2002a; Zimmerly and Semper, 2015). One of the examples is the Ll.LtrB group II intron that naturally resides in the conjugative plasmid pRS01, interrupting the ltrB relaxase gene whose expression is required for the horizontal gene transfer (HGT) of the plasmid. A recent study indicated that pRS01 promotes retromobility of the intron by providing LtrB relaxase that stimulates both the frequency and diversity of retrotransposition (RTP) events with its off-target DNA nicking activity (Novikova et al., 2014). Here our study showed that the Ll.LtrB group II intron reduces the conjugal transfer of pRS01 via inhibition of its host gene expression (Figure 3). Thus, these findings together suggest that the two mobile genetic elements (MGEs) functionally interact by exploiting ltrB relaxase gene expression. Whereas relaxase expression stimulates intron RTP and HGT of the conjugative element, inhibition of relaxase expression by the group II intron opposes the promotion of RTP and HGT (Figure 8B), effects that are likely in equilibrium. In general, expression of conjugative transfer genes is tightly controlled to minimize the burden on the host (Zatyka and Thomas, 1998). Indeed conjugative plasmid gene expression is kept in a default ‘off’ state and is switched on only under conditions that are optimal for transfer of the conjugative element (Singh and Meijer, 2014). Silencing of the relaxase gene by its resident group II intron therefore represents a novel way in which a conjugative element is down-regulated.
 
-## Evolutionary implications
+### Evolutionary implications
 
 The demonstration that intron RNAs are not only able to transpose and cleave exogenous RNAs, but can also recombine RNAs from different sources, suggests that progenitors of group II introns could have processed RNAs in primitive genomes. These actions could have contributed to the generation of an evolved genome and a cell that has novel functions and evolutionary advantages.
 
@@ -129,60 +173,151 @@ In regard to the ancestral relationship between group II and spliceosomal intron
 
 ## Materials and methods
 
-## Strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Lactococcus lactis)</td>
+      <td>IL1403</td>
+      <td>PMID: 11337471</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactococcus lactis)</td>
+      <td>IL1403 (FA-R)</td>
+      <td>Belfort Lab</td>
+      <td></td>
+      <td>Fusidic Acid Resistant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MC1061</td>
+      <td>PMID:6997493</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LtrB antibody</td>
+      <td>Gary Dunny, personal communication</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Lightning Site-Directed Mutagenesis Kit</td>
+      <td>Agilent, Santa Clara, CA</td>
+      <td>210519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-Rad, Hercules, CA</td>
+      <td>1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>172–5120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>5' RACE System</td>
+      <td>Invitrogen, Carlsbad, CA</td>
+      <td>18374058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>3' RACE System</td>
+      <td>Invitrogen</td>
+      <td>18373019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer RACE 5'/3' kit</td>
+      <td>Takara, Mountain View, CA</td>
+      <td>634860</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and growth conditions
 
 Lactococcus lactis IL1403 was used for ltrB gene expression and RNA and protein analysis. IL1403 pRS01 ltrB- (ΔLtrB::tet) and IL1403 (FAR) were used as donor and recipient strains for conjugation, respectively. Cultures were grown in M17 media supplemented with 0.5% glucose (GM17) in tightly-capped tubes or bottles at 30°C without shaking. For gene expression, cultures were grown to OD600 ~0.6 and nisin was added to a final concentration of 0.4 μg/ml, for 2–3 hr. Cultures were spun at 5000 x g and pellets were stored at −80°C. Where appropriate, the media contained spectinomycin (Spec) at 300 μg/ml, chloramphenicol (Cam) at 10 μg/ml, erythromycin (Erm) at 10 μg/ml, or fusidic acid (FA) at 25 μg/ml.
 
 Escherichia coli MC1061(DE3) was used for over-expression of EcI5 and BhI1 plasmids. Cultures were grown in LB media with 100 μg/ml ampicillin at 37°C with aeration. At OD600 ~0.3, cultures were induced with 0.1 mM IPTG for 3 hr. Cultures were spun at 5000 x g and pellets were stored at −80°C.
 
-## Plasmids
+### Plasmids
 
 All plasmids created or used are listed in Supplementary file 1, and DNA oligonucleotides used in this study are listed in Supplementary file 1. Plasmids pCY20LtrB (Int-) and pCY20LtrB::Ll.LtrB (Int+) were the vector pair used in the intron in cis system for comparative analysis of ltrB relaxase gene expression in the absence and presence of the Ll.LtrB intron. With the in trans system, pCY20LtrB was used for ltrB relaxase gene expression while plasmid pLNRK smEx::Ll.LtrB was used to express the intron. For an intron-less control in this system, pLNRK smEx::Ll.LtrB was replaced with plasmid pLNRK smEx, that contained only the small flanking exons. The ltrB IBS mutants, mRNA_IBSm and mRNA_IBSm*, and Ll.LtrB intron mutants including EBSm, EBSm* and Triad, and the IEP EN and RT mutants were created with the above pCY20 and pLNRK plasmids by site-directed mutagenesis (SDM) using QuickChange Lightning kit (Agilent, Santa Clara, CA). More specifically, to create EBSm*, the IBS region of the small exons of EBSm were mutated to make the intron splicing competent. This was done with 2 rounds of SDM PCR, using the plasmid product from PCR1 as the template for PCR2. All plasmids were confirmed by sequencing (see oligonucleotides used in Supplementary file 1). Construction of other plasmids used in this study are detailed below.
 
-## pDL278 and pAMJ328 expression plasmids
+#### pDL278 and pAMJ328 expression plasmids
 
 For cloning of pDL278 (LeBlanc et al., 1992) and pAMJ328 (Jørgensen et al., 2014) constructs, ltrB -/+Ll.LtrB intron inserts were PCR amplified from pCY20 plasmids using primers with SphI and BamHI sites (IDT4767 and 4768, respectively) for pDL278, or primers with SpeI and PstI sites (IDT4766 and 4769, respectively) for pAMJ328. The PCR products were first cloned into pGEM-T (Promega, Fitchburg, WI) as per manufacturer’s protocol and then cut and pasted into respective parental plasmids.
 
-## EcI5 and BhI1 expression plasmids
+#### EcI5 and BhI1 expression plasmids
 
 HS-GFP cloning: Homing site (HS) sequence of EcI5 or BhI1 was fused with GFP coding sequence directly by PCR of plasmid pFA6a-GFP(S65T)-KanMx6 (Addgene, Cambridge, MA) using primer pairs IDT4831/4827 and IDT4826/4827 respectively, and with HindIII and SpeI restriction sites inserted respectively in the 5′- and 3′-termini of the amplicons. GPII-GFP cloning: EcI5 or BhI1 group II intron full-length sequences was amplified by PCR of genomic DNAs provided by Dr. Alan Lambowitz using primer pairs IDT4832/4833 and IDT4828/4829 respectively, and with HindIII restriction site inserted in the 5′-terminus of the amplicons. GFP coding sequence was amplified by PCR of plasmid pFA6a-GFP(S65T)-KanMx6 (Addgene) using primer pairs IDT4834/4827 or IDT4830/4827 for SOEing of GFP with ECI5 or BhI1 introns. The GFP amplicon was then mixed and ligated with the respective EcI5 or BhI1 amplicons by PCR using primer pairs IDT4832/4827 and IDT4828/4827 respectively, and with HindIII and SpeI restriction sites inserted respectively in the 5′-and 3′-termini of the amplicons. pET11a plasmid was digested with NdeI and BamHI and ligated with pre-annealed DNA oligonucleotides IDT4824 and IDT4825 that contain HindIII and SpeI sites. The plasmid was digested with HindIII and SpeI, and ligated with digested EcI5 or BhI1 HS-GFP or GPII-GFP resulting in the plasmids pET11a-HS-GFP and pET11a-GPII-GFP.
 
-## Plasmids for RNA pull-down
+#### Plasmids for RNA pull-down
 
 Streptavidin aptamer-containing Ll.LtrB intron was amplified from plasmid pGpII(SA)-CUP1(6XMS2) by PCR using primer pairs IDT4942/4943, digested with XhoI and NotI and ligated into digested plasmid pLNRK smEx-nLIC (Qu et al., 2014). The resulting plasmid, pLNRK smEx::Ll.LtrB ΔORF (SA)-nLIC, was used for expression of SA aptamer-containing intron. The same plasmid backbone was ligated with pre-annealed DNA oligonucleotides IDT5051 and IDT5052 that contain XhoI and NotI sites, resulting in the control plasmid, pLNRK smEx::Ll.LtrB ΔORF-nLIC.
 
-## Northern blotting
+### Northern blotting
 
 For RNA analysis, 7.5 μg of total RNA was separated on a 1.2% agarose/formaldehyde gel and transferred to hybond XL membrane (GE Healthcare, Pittsburgh, PA), which was then UV cross-linked and probed with 32P-labeled oligonucleotides using Rapid-hyb buffer (GE Healthcare). For the Ll.LtrB intron, the membranes were hybridized for detection of mRNA exon splice junction (IDT4685), 5′-Exon (IDT5374), 3′-Exon (IDT5012), and Ll.LtrB intron (IDT1073). For the EcI5 intron, membranes were hybridized for the detection of mRNA (IDT4972) and intron (IDT4970), and for BhI1 intron, membranes were hybridized for mRNA (IDT4975) and intron (IDT4973). All membranes were probed for 16S rRNA (IDT861) as a loading control. Images were exposed on a phosphor screen, scanned on a Typhoon Trio, and quantified using ImageQuant.
 
-## Western blotting
+### Western blotting
 
 For LtrB relaxase analysis, total cell lysate was separated on a 12% SDS-polyacrylamide gel and transferred to 0.2 μM Immuno-blot PVDF membrane (Bio-Rad) at 25V for 30 min. The membrane was blocked with 5% dry milk in TBS-T (20 mM Tris, 140 mM NaCl, 2% Tween), incubated with a 1/1500 dilution of primary anti-relaxase antibody for 1 hr, washed with TBS-T twice for 15 min, and incubated with a 1/10,000 dilution of secondary HRP-labeled anti-rabbit antibody (Advansta, Menlo Park, CA) for 1 hr. Chemiluminescent HRP substrate (Advansta WesternBright ECL) was used for detection. For lane normalization, total protein was visualized from a coomassie stained 12% SDS-polyacrylamide gel. All images were scanned using a Bio-Rad ChemiDoc MP. Relaxase bands and total protein were quantified using Bio-Rad Image Lab software.
 
-## qRT-PCR
+### qRT-PCR
 
-cDNA synthesis was performed in a 20 μl reaction with 10 ng of DNase treated (Promega RQ1 DNase) RNA template using iScript (Bio-Rad, Hercules, CA), as per manufacturer’s protocol. Minus RT (RT-) controls were also performed. Total RNA quality and primer specificity were analyzed by gel electrophoresis prior to qPCR. qPCR reactions were done in a total volume of 10 μl, using iTaq Universal SYBR Green Supermix (Bio-Rad) and contained 2 μl of the cDNA reaction as template and 5 pmol of each primer. Reactions were run in technical triplicates and a no-template control was included in every run. Reactions were amplified with the following conditions: 95°C for 30 s, (95°C for 5 s, 60°C for 10 s) x 40 cycles, melt curve 65°C to 95°C (0.5°C every 2 s), on a Bio-Rad CFX384 Touch Real-Time PCR Detection System. Three biological replicates were run for each sample. Amplification efficiencies (E) of all primers were calculated using a 10-fold dilution and standard curve. Efficiencies, Ct values and charts were obtained using Bio-Rad CFX Manager Software. Primers used, their percent amplification efficiencies and amplicon lengths are listed in Supplementary file 1. Relative gene expression of each target (tar) was normalized to a reference gene (ref), CopA, whose expression was demonstrated to be constant in a previous study (Magnani et al., 2008), and calculated using the following equation, with subtraction of RT- background:[(Etar)−Ct(mean,RT+)−(Etar)−Ct(mean,RT−)]/[(Eref)−Ct(mean,RT+)−(Eref)−Ct(mean,RT−)].
+cDNA synthesis was performed in a 20 μl reaction with 10 ng of DNase treated (Promega RQ1 DNase) RNA template using iScript (Bio-Rad, Hercules, CA), as per manufacturer’s protocol. Minus RT (RT-) controls were also performed. Total RNA quality and primer specificity were analyzed by gel electrophoresis prior to qPCR. qPCR reactions were done in a total volume of 10 μl, using iTaq Universal SYBR Green Supermix (Bio-Rad) and contained 2 μl of the cDNA reaction as template and 5 pmol of each primer. Reactions were run in technical triplicates and a no-template control was included in every run. Reactions were amplified with the following conditions: 95°C for 30 s, (95°C for 5 s, 60°C for 10 s) x 40 cycles, melt curve 65°C to 95°C (0.5°C every 2 s), on a Bio-Rad CFX384 Touch Real-Time PCR Detection System. Three biological replicates were run for each sample. Amplification efficiencies (E) of all primers were calculated using a 10-fold dilution and standard curve. Efficiencies, Ct values and charts were obtained using Bio-Rad CFX Manager Software. Primers used, their percent amplification efficiencies and amplicon lengths are listed in Supplementary file 1. Relative gene expression of each target (tar) was normalized to a reference gene (ref), CopA, whose expression was demonstrated to be constant in a previous study (Magnani et al., 2008), and calculated using the following equation, with subtraction of RT- background:
 
-## Reverse transcription primer extension
+$$
+[(E_{tar})^{−Ct(mean,RT+)}−(E_{tar})^{−Ct(mean,RT−)}]/[(E_{ref})^{−Ct(mean,RT+)}−(E_{ref})^{−Ct(mean,RT−)}].
+$$
+
+### Reverse transcription primer extension
 
 To identify splicing products, primer extension was performed using SuperScript III Reverse Transcriptase (Thermo Fisher Scientific, Waltham, MA), as per manufacturer’s protocol, with 4 μg of DNase-treated RNA and 0.4 pmol of 32P-labeled oligonucleotides. Oligonucleotide IDT4836 was used with the addition of ddTTP for detection of intron precursor and spliced intron. Products were separated on an 8% Urea-polyacrylamide sequencing gel. To measure 5′-end transcription levels of the mRNA and intron precursor, IDT4916 was used, and products were separated on a 10% Urea-polyacrylamide gel. To analyze RNAs that were pulled down with streptavidin resin, IDT5078, IDT1073 and IDT5127 were used to probe the smRNAs, intron RNAs, and 6S non-coding RNA, respectively. To measure splicing efficiency of the intron_EBSm* mutant, oligonucleotide IDT1073 was used to detect the presence of intron precursor and spliced intron, and products were separated on a 10% Urea-polyacrylamide gel. Images were exposed on a phosphor screen, scanned on a Typhoon Trio, and quantified using ImageQuant.
 
-## mRNA degradation
+### mRNA degradation
 
 L. lactis IL1403 was grown to OD600 ~0.6 and nisin was added to a final concentration of 0.4 μg/ml for 0.5 hr. Rifampicin was then added to a final concentration of 0.2 mg/ml, and 10 ml of culture was removed for each aliquot and immediately spun down at 4°C. Total RNA was prepared and analyzed for Northern blots.
 
-## Polysome profiling
+### Polysome profiling
 
 To perform polysome profiling, 200 ml of L. lactis IL1403 Int+/Int- cells (1:20 dilution of saturated overnight culture) were grown and induced for gene expression with nisin for 2–3 hr. 100 mg/ml chloramphenicol was added and the cultures were chilled on ice for ~30 min with intermittent whirling and then collected by centrifugation at 5,000 rpm for 10 min at 4°C. Cell pellets were resuspended in 500 μl of ice-cold lysis buffer (20 mM Tris-HCl, pH 8.0; 140 mM KCl; 40 mM MgCl2; 0.5 mM DTT; 100 μg/ml chloramphenicol; 1 mg/ml heparin; 20 mM EGTA; 1% Triton X-100) and washed twice with the same buffer. The cell pellets were resuspended again in 500 μl of lysis buffer and snap-frozen in liquid nitrogen. Then the cells were disrupted at 4°C in 15 ml falcon tubes with 500 μl of 0.1 mm ice-cold glass beads by rigorous vortexing (30 s for 20 times, with 1 min interval) and then briefly spun down at 4,000 rpm for 5 min. Crude cell lysate was then gently mixed, transferred into 1.5 ml tubes on ice, and cleared by 14,000 rpm for 25 min at 4°C. 400 μl of the cleared lysates were then loaded onto prepared 10–50% sucrose gradients in lysis buffer without 0.5 mg/ml heparin and centrifuged at 36,000 rpm for 153 min at 4°C (SW41 rotor). 30 fractions of ~400 μl each were collected for each gradient from top to bottom. RNAs were extracted from each fraction by using phenol/chloroform and analyzed by running gels and performing Northern blotting.
 
-## Conjugation assays
+### Conjugation assays
 
 To measure conjugation efficiencies, L. lactis IL1403 (FAR) was used as the recipient strain and was grown to an OD600 ~0.6 and then for an additional 3 hr. L. lactis IL1403 ΔLtrB::tet (ermR) was used as the donor strain, and contained either the Int- plasmid pCY20LtrB, or the Int+ plasmid pCY20LtrB::Ll.LtrB. Cultures were grown to OD600 ~0.6 and nisin was added to a final concentration of 0.4 μg/ml for 3 hr. Equal volume of donor and recipient were mixed, spotted on pre-incubated filters (0.45 μm pore size, Millipore) on GM17 plates, and incubated ~18 hr at 30°C. The filters were removed from the plates, washed with 5 ml GM17 in a 50 ml conical tube by vortexing, and the wash was spotted or plated on GM17 plus 25 μg/ml fusidic acid and 10 μg/ml erythromycin for selection of transconjugants. Plates were incubated ~18 hr at 30°C. To calculate input donor, the donor strain was diluted to 10−6 and spotted or plated on GM17 plus 10 μg/ml erythromycin. Conjugation frequency was expressed as exconjugants per donor (ErmRFAR/ErmR).
 
-## RNA Pull-down
+### RNA Pull-down
 
 Bacterial cells (100 ml) were collected after 2–3 hr of nisin induction of RNA expression and disrupted in 800 μl of CB500 solution (20 mM Tris–HCl, pH 8.0, 500 mM NaCl, 0.1 mM EDTA, 1 mM PMSF) by vortexing (30 s, rest for 1 min, 24 cycles) using 500 μl of 0.1 mm ice-cold glass beads (Sigma). Lysates were cleared by centrifugation at 14,000 rpm for 25 min. To pull down RNAs, ~500 μl of cleared lysate was incubated with 100 μl of streptavidin resin (Thermo Scientific) that was equilibrated with CB500. The resin was washed eight times with 1 ml CB500 buffer. RNAs bound to resin were eluted with 400 μl of 5 mM biotin for 1 hr and were extracted from the eluates. RNA identities were determined by using reverse transcription primer extensions.
 
-## 5′ and 3′ RACE
+### 5′ and 3′ RACE
 
 To further identify mRNA targeting products 1–4, 5' and 3' RACE (Rapid Amplification of cDNA Ends) experiments were performed. Briefly, Int+ and Int- strains from cis and trans systems were grown and induced as previously described, and total RNA was prepared. RNAs were polyA-tailed using E. coli Poly(A) Polymerase (New England BioLabs, Ipswich, MA). 5' and 3' RACE experiments were then done using Invitrogen 5' or 3' RACE kits (Cat# 18374058 or 18373019), or the Takara SMARTer 5'/3' kit (Cat# 634859), following the kit protocols. Reverse transcriptase was used to synthesize cDNAs, which were then used as template for PCR amplification using GSP (gene specific primers IDT6074 and IDT6070 to ltrB 5' or 3' exon, respectively) along with a kit universal primer annealing to the synthesized cDNA. 5' and 3' RACE PCR products were run out on a 1.2% agarose gel, and the bands were excised, gel purified, and sequenced directly (Eton Bioscience, San Diego, CA) or cloned into pGEM-T vector (Promega), and then sequenced, to confirm their identity.

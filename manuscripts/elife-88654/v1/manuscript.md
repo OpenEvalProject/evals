@@ -20,22 +20,22 @@
 ### Affiliations
 
 1. UCLouvain Louvain-la-Neuve Belgium
-2. https://ror.org/002q01z48 Access 2 Perspectives Berlin Germany
-3. https://ror.org/00ks66431 University of Surrey Guildford United Kingdom
-4. https://ror.org/02rx3b187 Université Grenoble Alpes Grenoble France
-5. https://ror.org/055khg266 Institut Universitaire de France Paris France
-6. https://ror.org/04tsk2644 Ruhr University Bochum Bochum Germany
-7. https://ror.org/05f950310 KU Leuven Leuven Belgium
-8. https://ror.org/05vt9qd57 Rutgers University New Brunswick United States
-9. https://ror.org/03angcq70 University of Birmingham Birmingham United Kingdom
-10. https://ror.org/04yrqp957 Université d’Angers Angers France
-11. https://ror.org/03gnr7b55 Université de Nantes Nantes France
-12. https://ror.org/012a77v79 Lund University Lund Sweden
-13. https://ror.org/016476m91 University of Aberdeen Aberdeen United Kingdom
-14. https://ror.org/00ma0mg56 NHS Grampian Aberdeen United Kingdom
-15. https://ror.org/023pskh72 Maseno University Kisumu Kenya
-16. https://ror.org/00ayhx656 University of Sussex Brighton United Kingdom
-17. https://ror.org/02nv7yv05 Research Center Jülich Juelich Germany
+2. Access 2 Perspectives Berlin Germany ([ROR:002q01z48](https://ror.org/002q01z48))
+3. University of Surrey Guildford United Kingdom ([ROR:00ks66431](https://ror.org/00ks66431))
+4. Université Grenoble Alpes Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+5. Institut Universitaire de France Paris France ([ROR:055khg266](https://ror.org/055khg266))
+6. Ruhr University Bochum Bochum Germany ([ROR:04tsk2644](https://ror.org/04tsk2644))
+7. KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+8. Rutgers University New Brunswick United States ([ROR:05vt9qd57](https://ror.org/05vt9qd57))
+9. University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+10. Université d’Angers Angers France ([ROR:04yrqp957](https://ror.org/04yrqp957))
+11. Université de Nantes Nantes France ([ROR:03gnr7b55](https://ror.org/03gnr7b55))
+12. Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+13. University of Aberdeen Aberdeen United Kingdom ([ROR:016476m91](https://ror.org/016476m91))
+14. NHS Grampian Aberdeen United Kingdom ([ROR:00ma0mg56](https://ror.org/00ma0mg56))
+15. Maseno University Kisumu Kenya ([ROR:023pskh72](https://ror.org/023pskh72))
+16. University of Sussex Brighton United Kingdom ([ROR:00ayhx656](https://ror.org/00ayhx656))
+17. Research Center Jülich Juelich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
 
 † Corresponding author
 
@@ -47,19 +47,157 @@ Authors rely on a range of devices and techniques to attract and maintain the in
 
 Good scientific writing is hard, and it is easy to make mistakes, so we will not point to examples in the literature. Instead, over the last year, we have reflected on our own writing styles, and on the writing styles we have encountered when reading or reviewing academic articles, chapters and books. We have shared these reflections with each other and compiled a list of persuasive communication devices, which we have organized in a tentative typology (Table 1). This typology contains 22 devices arranged in four categories: mischaracterizing the state-of-the-art; overselling; smoke screening and deflection; and the misuse of authority (and authors). We hope that this list will encourage reflection on, and fostering of, good scientific writing.
 
-## Mischaracterizing the state-of-the-art
+**Table 1.**
+ Persuasive communication devices.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Device</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Category: Mischaracterizing the state-of-the-art</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ignoring previous work</td>
+      <td>Not citing previous work that decreases the perceived novelty of the current work.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>One-sided citation</td>
+      <td>Mostly or only citing supportive research, and mostly or completely ignoring research that does not support the author’s point of view.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Reliance on weak evidence</td>
+      <td>Citing work that is now known to be weak or wrong.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Misleading use of references</td>
+      <td>Citing papers that are not relevant to the point the author is trying to make in order to give the impression that support for this point is stronger than it actually is.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Missing evidence</td>
+      <td>Making statements that are not backed up with citations.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Category: Overselling</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Excessive titles</td>
+      <td>Using titles which make claims that go beyond the findings being reported.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Overgeneralization</td>
+      <td>Generalizing results beyond the population studied without evidence to support such claims.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Hype</td>
+      <td>Using adjectives such as striking, important, remarkable and so on without justification.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Selective reporting</td>
+      <td>Not reporting findings that would make the article ‘weaker‘; not reporting hypotheses that have been tested and ruled out.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Hypothesizing after the results are known (HARKing).</td>
+      <td>Giving the impression that a hypothesis was formulated before data were collected, when it was formulated after data collection.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Category: Smoke screening and deflection</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Inconsistent terminology</td>
+      <td>Being inconsistent in the use of terminology across papers – and sometimes within a paper –in order to avoid scrutiny.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Selective quotation</td>
+      <td>Selectively quoting other work, or citing other work out of context, in order to make a point.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Straw-person argument</td>
+      <td>Exaggerating or distorting other work in order to easily refute it.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Cryptic writing</td>
+      <td>Writing in a way intended to make an article unnecessarily difficult for readers to understand in order to impress them and prevent a fair assessment of the work being reported.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>(Supplementary) information overload</td>
+      <td>Overwhelming the reader with poorly organized supporting materials, if done to prevent close scrutiny.</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Limiting what is said about limitations</td>
+      <td>Seeking to downplay or hide the limitations of a study.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Ambiguity</td>
+      <td>Using words which suggest more than what the study delivered.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Selective appeal for rigor</td>
+      <td>Requiring higher standards of evidence from researchers with a different or competing perspective.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Open research washing</td>
+      <td>Engaging in ‘open research‘ practices in a superficial manner in order to boost the perceived robustness of work.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Category: Misuse of authority (and authors)</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Reliance on precedent</td>
+      <td>Suggesting that a procedure with known flaws is suitable for a study because it has been used in lots of previous studies.</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Reliance on number of citations</td>
+      <td>Arguing that because previous work has received lots of citations, an area of research – and hence the current work – is important and of high quality.</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Honorary authorship</td>
+      <td>Including a well-known researcher in the author list – even though they do not meet the relevant criteria for being an author – in order to increase the chances of the manuscript being accepted for publication.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mischaracterizing the state-of-the-art
 
 Researchers are at risk of misleading the reader about the novelty or strength of their research when they make inaccurate statements about the current state of scientific knowledge. This mischaracterization can take various forms and often involves failing to cite articles that are relevant, or citing articles that are not relevant. For example, authors might fail to cite articles that have already reported a similar result (device 1 in Table 1; ignoring previous work), ignore work that is inconsistent with their own work (device 2; one-sided citation), cite supportive work of weak quality (device 3; reliance on weak evidence), cite work that is agnostic to the point the author is trying to make (device 4; misleading use of references), or make statements that are not backed-up by a relevant citation (device 5; missing evidence). It is important to avoid bias in the reporting and citing of previous research because the cumulative effects of such biases can, for example, inflate the apparent efficacy of medical treatments (see de Vries et al., 2018 for a study of treatments for depression).
 
 It is probably not possible to estimate how often authors fail to cite articles they should have cited (devices 1 and 2). However, as regards articles that are cited, it has been estimated that around a quarter of the articles cited in ‘high-impact general science journals‘ do not completely support the statement they are supposed to support (Smith and Cumberledge, 2020), and similar findings have been reported in psychology (Cobb et al., 2023). Another problem is the practice of citing an original study without citing failures to replicate it (von Hippel, 2022): indeed, it has been estimated that only 12% of citations of non-replicated findings acknowledge the failure(s) to replicate (Serra-Garcia and Gneezy, 2021). However, it should also be noted that authors are sometimes compelled to cite articles that are not relevant by editors hoping to increase the impact factor of their journal (Fong et al., 2023).
 
-## Overselling
+### Overselling
 
 The second category in our typology concerns authors trying to inflate the perceived importance of their own research. This can involve the use of attention-grabbing titles which make claims that go well beyond the findings of a study (device 6; excessive titles), or authors overgeneralizing their conclusions without sufficient evidence (device 7; overgeneralization). Examples of the latter might include generalizing from college students to all human adults, or from one species to another. The inappropriate use of adjectives such as ‘striking,‘ ‘important,‘ or ‘remarkable,‘ and wording that makes the author’s research questions seem more important than they really are, are also problematic (device 8; hype). Reviewers will often ask authors to tone down their language, but one journal (ACS Catalysis) has gone a step further and now pre-screens submissions for words like ‘outstanding,‘ ‘excellent,‘ and ‘unprecedented‘ (Scott and Jones, 2017). The hyping of research has been particularly noticeable during the COVID-19 pandemic (Hyland and Jiang, 2021).
 
 The perceived coherence of the narrative can also be increased by not reporting findings that would weaken the article (device 9; selective reporting), or by claiming that the results were consistent with a hypothesis when, in fact, the hypothesis was generated after the data had been collected (device 10; HARKing). The practice of HARKing (which is short for hypothesizing after the results are known; Kerr, 1998), has been widely discussed in the literature (for a nuanced discussion, see Hollenbeck and Wright, 2017 and Rubin, 2017).
 
-## Smoke screening and deflection
+### Smoke screening and deflection
 
 The third category contains devices that are designed to reduce transparency and prevent debate. One tactic is being inconsistent in the use of terminology in order to prevent other researchers testing – and possibly refuting – an author’s claims (device 11; inconsistent terminology): in psychology, for example, an author might describe the same mental process as efficient in one article, unconscious in a second article, and unintentional in a third. Another tactic is to mislead the reader about other work being cited through selective quotation, misquotation, or quotation out of context (device 12; selective quotation).
 
@@ -69,7 +207,7 @@ Authors can also use ambiguous or polysemous terminology to inflate claims or de
 
 Superficial engagement with open research practices (such as underspecifying a pre-registered study) can also be used to mislead readers and reviewers about the strength of research (device 19; open research washing). For instance, one study of data availability in economics found that only 47.5% of articles in journals with a data-availability policy actually complied with the policy (Vlaeminck and Podkrajac, 2017; see also Tedersoo et al., 2021).
 
-## Misuse of authority (and authors)
+### Misuse of authority (and authors)
 
 Our fourth category is a range of devices that rely on authority rather than sound arguments. An author may suggest, for example, that some procedure (e.g., a measurement technique) is valid because it has been used in a large number of studies, even though the procedure is known to have flaws (device 20; reliance on precedent). Likewise, an author may write that there is growing interest in X or that there have been lots of papers about Y to give the impression that their own paper is more important than it really is (device 21; reliance on number of citations).
 

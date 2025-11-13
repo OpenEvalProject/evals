@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.29626.001 Chemotherapy-induced peripheral neuropathy (CIPN) arises from collateral damage to peripheral afferent sensory neurons by anticancer pharmacotherapy, leading to debilitating neuropathic pain. No effective treatment for CIPN exists, short of dose-reduction which worsens cancer prognosis. Here, we report that stimulation of nicotinamide phosphoribosyltransferase (NAMPT) produced robust neuroprotection in an aggressive CIPN model utilizing the frontline anticancer drug, paclitaxel (PTX). Daily treatment of rats with the first-in-class NAMPT stimulator, P7C3-A20, prevented behavioral and histologic indicators of peripheral neuropathy, stimulated tissue NAD recovery, improved general health, and abolished attrition produced by a near maximum-tolerated dose of PTX. Inhibition of NAMPT blocked P7C3-A20-mediated neuroprotection, whereas supplementation with the NAMPT substrate, nicotinamide, potentiated a subthreshold dose of P7C3-A20 to full efficacy. Importantly, P7C3-A20 blocked PTX-induced allodynia in tumored mice without reducing antitumoral efficacy. These findings identify enhancement of NAMPT activity as a promising new therapeutic strategy to protect against anticancer drug-induced peripheral neurotoxicity.
+Chemotherapy-induced peripheral neuropathy (CIPN) arises from collateral damage to peripheral afferent sensory neurons by anticancer pharmacotherapy, leading to debilitating neuropathic pain. No effective treatment for CIPN exists, short of dose-reduction which worsens cancer prognosis. Here, we report that stimulation of nicotinamide phosphoribosyltransferase (NAMPT) produced robust neuroprotection in an aggressive CIPN model utilizing the frontline anticancer drug, paclitaxel (PTX). Daily treatment of rats with the first-in-class NAMPT stimulator, P7C3-A20, prevented behavioral and histologic indicators of peripheral neuropathy, stimulated tissue NAD recovery, improved general health, and abolished attrition produced by a near maximum-tolerated dose of PTX. Inhibition of NAMPT blocked P7C3-A20-mediated neuroprotection, whereas supplementation with the NAMPT substrate, nicotinamide, potentiated a subthreshold dose of P7C3-A20 to full efficacy. Importantly, P7C3-A20 blocked PTX-induced allodynia in tumored mice without reducing antitumoral efficacy. These findings identify enhancement of NAMPT activity as a promising new therapeutic strategy to protect against anticancer drug-induced peripheral neurotoxicity.
 
 ## Introduction
 
@@ -27,35 +27,234 @@ Previously, an in vivo phenotypic screen searching for proneurogenic compounds r
 
 ## Results
 
-## Aggressive PTX treatment produces peripheral neuropathy and damages peripheral afferent neurons
+### Aggressive PTX treatment produces peripheral neuropathy and damages peripheral afferent neurons
 
 To induce peripheral neuropathy, rats were treated with a near maximum-tolerated dose of PTX. Adult male Sprague-Dawley rats received three injections of PTX (11.7 mg/kg/day, i.p.), administered every other day, for a total cumulative dose of 35 mg/kg (Figure 1—figure supplement 1A). As is typical with this dose of PTX (Cliffer et al., 1998), average body weights and circulating leukocytes maximally decreased by 16% and 60%, respectively, following which the animals began to recover (Figure 1—figure supplement 1B and C). Altered nociceptive thresholds to mechanical, thermal cold, and thermal heat stimulation are robust indicators of the development of peripheral neuropathy and commonly observed in patients with CIPN (Argyriou et al., 2012; Dougherty et al., 2007; Dougherty et al., 2004; Kleggetveit et al., 2012). PTX treatment of rats significantly reduced the thresholds for mechanical and cold stimuli to elicit a paw withdrawal response. This increased sensitivity (allodynia) developed within 4 days and was sustained for over 3 weeks (Figure 1A–F). By contrast, PTX-treated rats developed a transient hypoalgesia (reduced sensitivity) to thermal heat stimulation (Figure 1G–I). Differential sensitivities to external stimuli have been described in cancer patients receiving PTX (Cata et al., 2006; Dougherty et al., 2004; Nahman-Averbuch et al., 2011) as well as in rodent models that incorporate moderate to high cumulative PTX dosages (Authier et al., 2000; Peters et al., 2007b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig1-v2.jpg)
+
+**Figure 1.:** (A–I) Nociceptive thresholds to mechanical (A), cold (D), and heat (G) stimulation of the hindpaws of adult male Sprague-Dawley rats treated with vehicle (EtOH/Kolliphor EL/PBS, 1:1:6, i.p.) or PTX (11.7 mg/kg, i.p.) on days 0, 2, and 4. Data represent the mean change from baseline ± SEM. Individual rat timecourse plots showing changes in mechanical (B), cold (E), or heat (H) sensitivity following vehicle or PTX treatment. Bold lines represent group means. Area under the timecourse curves (AUC) of mechanical (C), cold (F), or heat (I) thresholds from vehicle- or PTX-treated rats. Bars represent the mean ± SEM and small circles are individual rat AUC values. ****p<0.0001, **p<0.01, *p<0.05 vs. Veh by two-way mixed effect ANOVA with Sidak’s post-hoc test (A, D, G) or two-tailed Student’s t-test (C, F, I), n = 14–15 rats/group. (J) Confocal images of IENFs in rat hindpaw biopsies. IENFs immunolabeled with PGP9.5 (arrowheads) project from subepidermal fascicles across the epidermal-dermal junction. Scale bar, 100 μm. (K) Confocal images of ATF3 expression (arrowheads) in nuclei of DRG neurons (also labeled with NeuN) acquired on day 7. Scale bar, 100 μm. (L and M) Quantification of IENF densities from paw biopsies collected on day 7 (L) and day 16 (M) of the experimental paradigm. Bars represent the mean ± SEM calculated from individual rat IENF densities from each group (circles), n = 7 rats/group. (N) Quantification of ATF3 expression. Bars represents mean ± SEM from each group, n = 3 rats/group. ****p<0.0001, ***p<0.001 vs. Veh by two-tailed Student’s t-test (L–N).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Treatment schedule with PTX. Adult male Sprague-Dawley rats received intraperitoneal (i.p.) injections of PTX (11.7 mg/kg) or vehicle on days 0, 2, and 4. Blood samples were collected from the ventral saphenous vein and responses to noxious mechanical, cold, and heat stimulation were measured before, during, and after treatment as indicated. (B and C) PTX produced a transient decrease in both body weight (B) and circulating leukocyte count (C). Data are expressed as mean ± SEM, n = 14–15 rats/group. (Note: Error bars for some data points are within the size of the symbol). #p<0.0001, **p<0.01, *p<0.05 vs. vehicle-treated controls by two-way mixed effect ANOVA with Sidak’s post-hoc test.
+
 Degeneration of intraepidermal nerve fibers (IENFs), the tortuous free nerve endings of nociceptive neurons that innervate the epidermal layer of peripheral tissues, is a signature of PTX-induced damage to peripheral nociceptive neurons (Jin et al., 2008; Krukowski et al., 2015; Liu et al., 2010; Siau et al., 2006). PTX treatment significantly reduced IENF density by ~50% in biopsies from rat hindpaws and forepaws obtained on day 7, 3 days after the final PTX injection (Figure 1J and L). IENF degeneration was still evident more than 2 weeks later (Figure 1M), which also paralleled the persistent allodynia observed in the rats. We extended our histological analysis to include measurement of the neuronal injury marker, activating transcription factor 3 (ATF3) in perikarya of lumbar dorsal root ganglia (DRG). ATF3 is up-regulated in peripheral and spinal neurons following neuronal injury (e.g. axotomy) or stress (Tsujino et al., 2000). Moderate-to-high doses of PTX have been shown to induce ATF3 expression in rat DRG neurons (Liu et al., 2010; Peters et al., 2007a; Verheyen et al., 2012). PTX treatment produced a marked increase in the number of lumbar DRG neurons expressing ATF3 within 3 days after treatment (Figure 1K and N).
 
-## P7C3-A20 abrogates neuropathic pain, protects peripheral nociceptive neurons from damage, improves general health, and reduces attrition associated with PTX treatment
+### P7C3-A20 abrogates neuropathic pain, protects peripheral nociceptive neurons from damage, improves general health, and reduces attrition associated with PTX treatment
 
 To test the hypothesis that P7C3-A20 would prevent the development of peripheral neuropathy, rats were treated with P7C3-A20 (10 mg/kg/day, i.p.) beginning 2 days prior to the first injection of PTX and continuing daily until the conclusion of the paradigm (Figure 2—figure supplement 1A). P7C3-A20 treatment did not alter PTX-induced weight loss or leukopenia (Figure 2—figure supplement 1B and C), suggesting no protection for rapidly dividing gastrointestinal epithelia or leukocytes. Remarkably, however, P7C3-A20 prevented completely the development of PTX-induced mechanical allodynia and heat hypoalgesia, and markedly reduced cold allodynia (Figure 2A–F). P7C3-A20 alone had no effect on nociceptive responses as compared to vehicle, indicating its action was not analgesic in nature.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Nociceptive thresholds to mechanical (A), cold (B), and heat (C) stimulation of the hindpaws of rats treated daily with vehicle (DMSO/Kolliphor EL/PBS, 1:4:10, i.p.) or P7C3-A20 (10 mg/kg/day, i.p.), in addition to vehicle or PTX treatment on days 0, 2, and 4 as before (Figure 1). Data represent the mean change from baseline ± SEM. (D–F) Treatment group AUCs of mechanical (D), cold (E), or heat (F) thresholds. Bars represent the mean AUC ±SEM and small circles are individual rat AUC values. ****p<0.0001, **p<0.01, *p<0.05 by one-way ANOVA with Dunnett’s post-hoc test, n = 5–8 rats/group. (G and H) Confocal images of IENFs in rat hindpaw biopsies (G, scale bar: 100 μm) and ATF3 expression in lumbar DRG (H, scale bar: 50 μm.) (I) IENF densities from hindpaw biopsies collected on days 7 and 16 of the experimental paradigm. Bars represent the mean ±SEM calculated from individual rat IENF densities from each group (circles), n = 5–8 rats/group. (J) ATF3 expression in lumbar DRG perikarya collected on day 7. Bars represents mean ± SEM from each group, n = 3 rats/group. ****p<0.0001, **p<0.01 vs. Veh/PTX by one-way ANOVA with Tukey’s post-hoc test (I and J).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Adult male Sprague-Dawley rats received P7C3-A20 (10 mg/kg/day, i.p.) beginning 2 days prior to the first injection of PTX (11.7 mg/kg, i.p., q.a.d.) or vehicle. Blood samples were collected and responses to noxious mechanical, cold, and heat stimulation were measured before, during, and after treatment as indicated. (B and C) P7C3-A20 did not affect PTX-induced weight loss (B) or leukopenia (C). Data are expressed as mean ±SEM, n = 6–8 rats/group (weight) or 4 rats/group (leukocyte counts). #p<0.0001, $p<0.001, **p<0.01, *p<0.05 vs. vehicle-treated controls by two-way mixed effect ANOVA with Sidak’s post-hoc test.
 
 In concordance with the results from the behavior experiments, P7C3-A20 completely prevented PTX-induced IENF degeneration by day 7, and this protective effect was sustained through at least day 16 (Figure 2G and I). P7C3-A20 also partially reduced PTX-induced ATF3 expression from 33.4% to 20.6% of lumbar DRG neurons (Figure 2H and J). It is noteworthy that P7C3-A20 did not completely prevent the up-regulation of ATF3 by PTX treatment, suggesting that, even in the presence of P7C3-A20, PTX still initiated a neuronal damage/stress response. Nevertheless, the histological analyses clearly indicate that P7C3-A20 protected peripheral afferent neurons from PTX-induced damage.
 
 To confirm our initial findings that P7C3-A20 abrogated PTX-induced neuropathy, we conducted a randomized, double-blinded dose-response study of P7C3-A20 and a second analogue, P7C3-S321. As before, P7C3-A20 reduced the PTX-induced mechanical and cold allodynia as well as IENF degeneration in a dose-dependent manner and consistent with plasma drug levels for each (Figure 3A–C and Figure 3—figure supplements 1 and 2, Figure 3—source data 1). P7C3-S321 was partially effective at preventing PTX-induced mechanical allodynia but did not reduce the cold allodynia. Changes in nociceptive thresholds to mechanical and cold stimulation were strongly correlated with IENF density (Figure 3D and E, Figure 3—source data 1). Despite the dramatic neuroprotective effect on PTX-induced allodynia and IENF density, neither P7C3-A20 nor P7C3-S321 altered PTX-induced weight loss, although the highest dose of P7C3-A20 (20 mg/kg/day) partially reduced leukopenia (Figure 3—figure supplement 3, Figure 3—source data 1). Observationally, P7C3-A20, more so than P7C3-S321, improved indices of general animal health (Table 1 and Figure 3—figure supplement 4). Furthermore, P7C3-A20 substantially reduced attrition rates across all behavioral experiments (Figure 3F). Study attrition was 25% for rats treated with PTX alone, where death almost always occurred within days 8 and 11 of the experimental paradigm (Figure 3G). In stark contrast, no deaths occurred in rats treated with P7C3-A20 at doses of at least 6.6 mg/kg/day.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig3-v2.jpg)
+
+**Figure 3.:** (A–C) AUCs to mechanical (A) and cold (B) stimulation and IENF densities (C) showing the dose-dependent neuroprotective effects of P7C3-A20 and P7C3-S321. Horizontal lines represent mean AUC ±SEM calculated from individual rat AUC values shown as small circles. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05 vs. Veh/PTX by one-way ANOVA with Dunnett’s post-hoc test, n = 5–17 rats/group. (D and E). Correlation analyses between individual rat IENF density and their respective mechanical (D) or cold (E) AUC (Pearson, two-tailed, p<0.0001). Black lines are linear regression curves with 95% confidence bands. Colors reflect treatment group as defined in Figure 3A–C. (F) Study attrition by treatment group. For each behavioral experiment, the number of rats removed due to >20% wt loss or death was divided by the total number of rats per treatment group. Data represent mean ± SEM, n = 1–4 independent experiments. (G) Survival curves showing attrition of rats treated only with PTX (red line) typically occurred between days 8–11, which was abolished by P7C3-A20 treatment. *p=0.0206 (χ2=13.32) by the Mantel-Cox log-rank test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Timecourse of changes in paw nociceptive thresholds of rats treated with P7C3-A20 to mechanical (A) and cold (B) stimuli. (D and E) Timecourse of changes in paw nociceptive thresholds of rats treated with P7C3-S321 to mechanical (D) and cold (E) stimuli. (C and F) Plasma levels of P7C3-A20 (C) and P7C3-S321 (F). Plasma was acquired 16 hr after the final injection on day 16. Data are expressed as mean ±SEM, n = 7–17 rats/group. Drug doses (mg/kg/day) are indicated by numbers in parentheses.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Individual timecourses of paw nociceptive thresholds for all rats in each treatment group in the dose-response experiment. Each treatment group is represented by n = 7–17 rats/group (weight, mechanical, cold) or 4 rats/group (leukocytes).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A and B) A maximal dose of P7C3-A20 (20 mg/kg/day) did not alter PTX-induced weight loss (A), but partially reduced leukopenia (B). (C and D) P7C3-S321 did not alter PTX-induced body weight loss (C) or leukopenia (D). Data are expressed as mean ± SEM, n = 7–17 rats/group (weight) or 4 rats/group (leukocyte counts). ****p<0.0001 vs. Veh/PTX by two-way ANOVA with Sidak’s post-hoc test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Rats treated with vehicle or P7C3-A20 alone (top row) exhibited no overt signs of toxicity. The general health on day 7 of rats treated with PTX alone (middle row) was poor, with increased observations of diarrhea, mild hair loss, chromodacryorrhea, piloerection, grimacing, reduced grooming, standing/walking on ‘tip-toes,’ paw hovering, and jump responses. Comparatively, health indices for rats co-treated with P7C3-A20 and PTX (bottom row) were improved (see also Table 1).
+
+**Table 1.**
+ Summary of general health observations in rats treated with P7C3-A20, P7C3-S321, or vehicle ±PTX
+
+
+<table>
+  <thead>
+    <tr>
+      <th>General health observations</th>
+      <th>VEH/VEH [n = 8]</th>
+      <th>VEH/PTX [n = 20]</th>
+      <th>A20 (20)/VEH [n = 8]</th>
+      <th>A20 (20)/PTX [n = 8]</th>
+      <th>A20 (6.6)/PTX [n = 8]</th>
+      <th>A20 (2.2)/PTX [n = 8]</th>
+      <th>S321 (20)/VEH [n = 8]</th>
+      <th>S321 (20)/PTX [n = 8]</th>
+      <th>S321 (6.6)/PTX [n = 8]</th>
+      <th>S321 (2.2)/PTX [n = 8]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gnawing on observation box</td>
+      <td>-</td>
+      <td>7</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>2</td>
+      <td>-</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Diarrhea</td>
+      <td>-</td>
+      <td>9</td>
+      <td>-</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+      <td>-</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Mild hair loss</td>
+      <td>-</td>
+      <td>14</td>
+      <td>-</td>
+      <td>3</td>
+      <td>5</td>
+      <td>6</td>
+      <td>-</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Hind limb paralysis</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chromo-dacryorrhea</td>
+      <td>-</td>
+      <td>10</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Standing/walking on ‘Tip-Toes’</td>
+      <td>-</td>
+      <td>17</td>
+      <td>-</td>
+      <td>2</td>
+      <td>4</td>
+      <td>5</td>
+      <td>-</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Hovering paw</td>
+      <td>-</td>
+      <td>4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Jump response</td>
+      <td>-</td>
+      <td>5</td>
+      <td>-</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Death</td>
+      <td>-</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Numbers in parentheses next to the drug name indicate the daily dose in mg/kg.Numbers in the table represent the number of rats that displayed the health indicator in the row title. “- “indicates 0 rats displayed the health indicator. Total number of rats in the group are shown in the column title row._
+
 We next compared the neuroprotective efficacy of P7C3-A20 with that of the inhibitor of poly(ADP)-ribose (PAR) polymerase (PARP), A-861696 (Figure 4—figure supplement 1A). In addition to anticancer activity, PARP inhibitors are under clinical investigation for efficacy to prevent CIPN (Ramalingam et al., 2017). A-861696, as well as its enantiomer and current clinical candidate, veliparib, were reported previously to attenuate mechanical hypersensitivity in rodents following treatment with vincristine or cisplatin (Brederson et al., 2012; Ta et al., 2013). In contrast to the robust neuroprotective efficacy of P7C3-A20, daily injections of A-861696 (50 mg/kg, i.p.) did not prevent the development of mechanical allodynia, nor did it prevent IENF degeneration triggered by a near maximum tolerated dose of PTX (Figure 4A and B and Figure 4—figure supplement 1B–D). We confirmed that A-861696 inhibited PARP in vivo as indicated by reduced PAR accumulation in lumbar DRG compared to PTX-only controls (Figure 4C and D). The ineffectiveness of A-861696 here, as compared with previous preclinical studies (Brederson et al., 2012; Ta et al., 2013), may due to the severity of peripheral neurotoxicity produced by the aggressive dose of PTX used in our model. Regardless, in a head-to-head comparison, P7C3-A20 demonstrated markedly superior efficacy compared with PARP inhibition in this CIPN model system.
 
-## Augmentation of NAMPT activity is required for P7C3-A20-mediated neuroprotection
+![Figure 4.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mechanical AUCs of rats treated with vehicle, P7C3-A20 (20 mg/kg/day, i.p.), or A-861696 (50 mg/kg/day, i.p.). Horizontal lines represent mean AUC ±SEM calculated from individual rat AUC values shown as small circles. (B) IENF densities from hindpaw biopsies collected on day 12. Horizontal lines represent the mean ±SEM calculated from individual rat IENF densities from each group (circles), n = 5–9 rats/group. (C and D) Dot-blot analysis of poly(ADP-ribose) (PAR) accumulation in lumbar DRG neurons of rats treated with PTX and either vehicle, P7C3-A20, or A-861696. Individual rat DRG homogenates were run in quadruplicate and the relative optical density was calculated for each rat. Bars represent the mean ±SEM, n = 4 rats/group. ****p<0.0001, ***p<0.001, **p<0.01 vs. Veh/PTX by one-way ANOVA with Dunnett’s post-hoc test (A, B, D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Diagram of the experimental paradigm that shows the daily injection schedule with either P7C3-A20 or A-861696 and PTX or vehicle. (B) Timecourse of changes in body weight from each treatment group. (C) Timecourse of changes in paw withdrawal threshold to mechanical stimulation in rats treated with PTX and either P7C3-A20 (20 mg/kg/day; i.p.) or the PARP inhibitor A-861696 (50 mg/kg/day, i.p.). P7C3-A20, but not A-861696, prevented PTX-induced mechanical allodynia. (D) Plasma levels of A-861696 or P7C3-A20 (determined by LC-MS/MS) in treated rats 16 hr after the final injection. (E) Study attrition by treatment group.
+
+### Augmentation of NAMPT activity is required for P7C3-A20-mediated neuroprotection
 
 P7C3-A20 was reported to be a first-in-class stimulator of NAMPT, the rate-limiting enzyme in the NAD salvage pathway (Wang et al., 2014). If enhancement of NAD salvage is the mechanism by which P7C3-A20 protects peripheral sensory neurons from PTX-induced damage, we hypothesized that inhibition of NAMPT would prevent P7C3-A20-mediated neuroprotection. Global knockout of NAMPT is embryonic lethal and heterozygotes still express functional NAMPT (Revollo et al., 2007), therefore we opted to antagonize NAMPT with the selective NAMPT inhibitor, FK866 (Hasmann and Schemainda, 2003). To inhibit NAMPT in vivo, we utilized a twice-a-day dosing paradigm of FK866 that was reported previously to be devoid of toxicity and only slightly reduced tissue NAD levels (Song et al., 2014). Rats were treated twice daily with either FK866 (0.5 mg/kg, i.p., b.i.d.) or vehicle, along with P7C3-A20 (10 mg/kg/day) or vehicle starting on day −2. PTX was administered on days 0, 2, and 4 as before (Figure 5A and Figure 5—figure supplement 1A). FK866 alone did not alter body weight, mechanical sensitivity, or IENF density, nor did it exacerbate mechanical allodynia or IENF loss induced by PTX treatment. However, FK886 completely blocked the protective effects of P7C3-A20 on PTX-induced mechanical allodynia and IENF degeneration (Figure 5B and C and Figure 5—figure supplement 1C), suggesting that NAMPT activity is required for the neuroprotective effect of P7C3-A20 on PTX-induced peripheral neuropathy.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig5-v2.jpg)
+
+**Figure 5.:** (A) FK866 (0.5 mg/kg, i.p., b.i.d.) was injected in rats to antagonize NAMPT stimulation by P7C3-A20 (10 mg/kg/day, i.p.) in response to PTX. (B) Individual rat mechanical AUCs. (C) IENF densities from hindpaw biopsies collected on day 12. Horizontal lines represent the mean ±SEM calculated from individual rat AUCs or IENF densities in each treatment group shown as small circles. ****p<0.0001, *p<0.05 vs. Veh + A20/PTX by one-way ANOVA with Sidak’s post-hoc test, n = 4–6 rats/group. (D) Exogenous NAM (150 mg/kg/day, s.c.) was administered to potentiate an ineffective dose of P7C3-A20 (2.2 mg/kg/day, i.p.) against PTX. (E and F). Scatter plots of mechanical AUCs (E) and IENF densities (F). ***p<0.001, **p<0.01 vs. Veh + Veh/PTX by one-way ANOVA with Sidak’s post-hoc test, n = 4–7 rats/group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Diagram of the experimental paradigm indicating treatment of rats with PTX or vehicle, P7C3-A20 (10 mg/kg/day, i.p.) or vehicle, and the NAMPT inhibitor, FK866 (0.5 mg/kg, b.i.d., i.p.) or vehicle. (B) Timecourse of changes in body weight following treatment. (C) Timecourse of changes in paw withdrawal threshold to mechanical stimulation in each treatment group. Data are expressed as mean ± SEM, n = 5–8 rats/group.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Diagram of the experimental paradigm indicating treatment of rats with PTX or vehicle, P7C3-A20 (2.2 or 20 mg/kg/day, i.p.) or vehicle, and NAM (150 mg/kg, s.c.) or vehicle. (B) Timecourse of changes in body weight following treatment. (C) Timecourse of changes in paw withdrawal threshold to mechanical stimulation in each treatment group. Data are expressed as mean ± SEM, n = 5–9 rats/group.
+
 To further test the hypothesis that the neuroprotective effect of P7C3-A20 is dependent on its ability to enhance NAMPT activity, we evaluated the effect of supplementation of an ineffective dose of P7C3-A20 with the NAMPT substrate, nicotinamide (NAM), on PTX-induced allodynia and IENF degeneration (Figure 5D and Figure 5—figure supplement 2A). We elected to use a low daily dose of NAM (150 mg/kg/day, s.c.) that is not associated with neuroprotective efficacy (Feng et al., 2006; Stevens et al., 2007). Neither a subthreshold dose of P7C3-A20 (2.2 mg/kg/day) nor NAM alone altered PTX-induced reductions in body weight, mechanical threshold, or IENF density. However, NAM supplementation enhanced the neuroprotective efficacy of subthreshold P7C3-A20 (2.2 mg/kg/day) in both behavioral and anatomical indices of neuropathy to a degree equivalent to that produced by the highest dose of P7C3-A20 (20 mg/kg/day) (Figure 5E and F and Figure 5—figure supplement 2B and C). These results taken together reveal a critical contribution of NAMPT activity to the neuroprotective efficacy of P7C3-A20 against PTX-induced neuronal damage and peripheral neuropathic pain.
 
-## P7C3-A20 enhances NAMPT-mediated NAD recovery in response to cellular damage
+### P7C3-A20 enhances NAMPT-mediated NAD recovery in response to cellular damage
 
 To assess the ability of P7C3-A20 to stimulate NAMPT activity in neuronal cells, we treated A1A1 rat cortical neurons (Berg et al., 1994) with vehicle (ddH2O) or H2O2 (200 µM) for 30 min, followed by treatment with P7C3-A20 (0.03–3 μM) or NAM (1 mM) and measured NAD levels. Treatment with H2O2 reduced NAD levels by 25%. While P7C3-A20 or NAM did not increase NAD production in vehicle-treated cells (Figure 6A), P7C3-A20 dose-dependently increased H2O2-depleted NAD levels back to vehicle-treated baseline (Figure 6B). The rescue of NAD levels in H2O2-treated cells was blocked by FK866 (Figure 6C). These data suggest that P7C3-A20 stimulates NAD recovery through NAMPT in neuronal cells, but this effect occurred only in cells depleted of NAD.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig6-v2.jpg)
 
-**Figure 6.:** 2O2 treatment in vitro.(A) Effects of vehicle, P7C3-A20 (3 μM), or NAM (1 mM) on intracellular NAD production under basal conditions. A1A1 cells were pre-treated with vehicle (30 min) followed by indicated treatment (60 min). (B and C) Effects of vehicle, P7C3-A20, or NAM (1 mM) on intracellular NAD production in response to pretreatment with H2O2 (200 μM, (B). FK866 (10 nM) was co-administered with P7C3-A20 (3 μM) or NAM (1 mM) after H2O2 pretreatment (C). Treatment conditions were performed in quadruplicate for each experiment. Bars represent mean NAD accumulation ±SEM expressed as a percentage of vehicle. Circles are mean NAD values from independent experiments. #p<0.05 vs. Veh/Veh or ***p<0.001, *p<0.05 vs. H2O2/Veh by one-way ANOVA with Dunnett’s post-hoc test, n = 4–5 independent experiments.
+**Figure 6.:** (A) Effects of vehicle, P7C3-A20 (3 μM), or NAM (1 mM) on intracellular NAD production under basal conditions. A1A1 cells were pre-treated with vehicle (30 min) followed by indicated treatment (60 min). (B and C) Effects of vehicle, P7C3-A20, or NAM (1 mM) on intracellular NAD production in response to pretreatment with H2O2 (200 μM, (B). FK866 (10 nM) was co-administered with P7C3-A20 (3 μM) or NAM (1 mM) after H2O2 pretreatment (C). Treatment conditions were performed in quadruplicate for each experiment. Bars represent mean NAD accumulation ±SEM expressed as a percentage of vehicle. Circles are mean NAD values from independent experiments. #p<0.05 vs. Veh/Veh or ***p<0.001, *p<0.05 vs. H2O2/Veh by one-way ANOVA with Dunnett’s post-hoc test, n = 4–5 independent experiments.
 
 Next, we determined if P7C3-A20 could stimulate NAD in peripheral sensory neurons in vivo in response to PTX-induced neurotoxic damage. Rats were treated with P7C3-A20 (or vehicle) and PTX (or vehicle) according to our standard protocol (see Figure 4—figure supplement 1). NAD+ was extracted from homogenized glabrous hindpaw skin, sciatic nerve, and lumbar DRG (collected on day 10 following the start of PTX treatment). These tissues were chosen because they represent anatomically distinct regions of peripheral afferent fibers, each with unique histologic characteristics (e.g. vascular permeability) that affect PTX accumulation in the tissue (Abram et al., 2006; Hirakawa et al., 2004; Jimenez-Andrade et al., 2008; Olsson, 1968). PTX treatment alone reduced NAD+ levels in the hindpaw and sciatic nerve, which was abolished by P7C3-A20 treatment (Figure 7A and B). NAD+ levels in the DRG were unaffected by either drug (Figure 7C). Collectively, these data further support the hypothesis that P7C3-A20 augments NAMPT-mediated NAD production in peripheral sensory neurons in response to the damaging effects of PTX.
 
@@ -63,9 +262,21 @@ Next, we determined if P7C3-A20 could stimulate NAD in peripheral sensory neuron
 
 **Figure 7.:** (A–C) Tissue NAD+ levels in glabrous hindpaw skin (A), sciatic nerve (B), and lumbar DRG (C) collected from treated rats on day 10 of the experimental paradigm. As before, rats were treated daily with P7C3-A20 (20 mg/kg/day; i.p.) or vehicle beginning on day −2 through day 9, with PTX (11.7 mg/kg, i.p.) or vehicle injected on days 0, 2, and 4. On day 10, tissue samples were collected for homogenization and subsequent metabolite analysis using the NAD/NADH-Glo Assay (Promega, Madison, WI). Tissue NAD+ levels were normalized to total protein content. Bars identify the mean metabolite levels (nmol/mg protein)±SEM for each treatment group. Circles represent individual rat tissue NAD+ levels. **p<0.01, *p<0.05 vs. specified group by one-way ANOVA with Sidak’s post-hoc test, n = 6–11 tissue samples/group.
 
-## P7C3-A20 does not alter cancer cell proliferation or chemosensitivity of cancer cells to PTX
+### P7C3-A20 does not alter cancer cell proliferation or chemosensitivity of cancer cells to PTX
 
-The striking ability of P7C3-A20 to attenuate PTX-induced neuropathy prompted a careful evaluation of its effects on the anti-proliferative and cytotoxic effects of PTX on cancer cells. Thus, we examined the effect of P7C3-A20 on PTX-induced growth inhibition of several cancer cells lines, including: HeLa (cervical), SK-OV-3 (ovarian), MDA-MB-231 (breast), Panc-1 (pancreatic), and SK-N-BE(2) (neuroblastoma) cells. P7C3-A20 did not change the anti-proliferative or cytotoxic potency or efficacy of PTX, nor did it alter the microtubule-stabilizing properties of PTX (Figure 8A and B and Figure 8—figure supplement 1A and B). For most of the cell lines, P7C3-A20 alone did not alter proliferation rate, however, at the highest concentration used, it slightly increased growth of cultured MDA-MB-231 cells (Figure 8C and Figure 8, Figure 8—figure supplement 1C).
+The striking ability of P7C3-A20 to attenuate PTX-induced neuropathy prompted a careful evaluation of its effects on the anti-proliferative and cytotoxic effects of PTX on cancer cells. Thus, we examined the effect of P7C3-A20 on PTX-induced growth inhibition of several cancer cells lines, including: HeLa (cervical), SK-OV-3 (ovarian), MDA-MB-231 (breast), Panc-1 (pancreatic), and SK-N-BE(2) (neuroblastoma) cells. P7C3-A20 did not change the anti-proliferative or cytotoxic potency or efficacy of PTX, nor did it alter the microtubule-stabilizing properties of PTX (Figure 8A and B and Figure 8—figure supplement 1A and B). For most of the cell lines, P7C3-A20 alone did not alter proliferation rate, however, at the highest concentration used, it slightly increased growth of cultured MDA-MB-231 cells (Figure 8C and Figure 8,Figure 8—figure supplement 1C).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig8-v2.jpg)
+
+**Figure 8.:** (A) Tubulin polymerization curves corresponding to addition of P7C3-A20 with and without PTX (n = 3 independent experiments). (B) Concentration-dependent anti-proliferation of PTX (48 hr) in MDA-MB-231 breast cancer cells pretreated (1 hr) with vehicle or P7C3-A20 (0.1–5 μM). (C) Effects of P7C3-A20 treatment only on growth of MDA-MB-231 cells. *p<0.05 vs. Veh by one-way ANOVA followed by Dunnett’s post-hoc test, n = 3 independent experiments. (D) Timecourse of changes in MDA-MB-231 tumor volumes in female athymic nude mice treated with P7C3-A20 (20 mg/kg/day, i.p.) or vehicle and PTX (11.7 mg/kg, i.p.) as indicated. ****p<0.0001, ***p<0.001, **p<0.01 vs. Veh/Veh by two-way mixed-effect ANOVA with Dunnett’s post-hoc test, n = 8–9 tumors/group. (E) Mechanical AUCs from tumored mice. Control mice lacking tumors were tested concurrently with the tumored mice. **p<0.01 by one-way ANOVA followed by Sidak’s post-hoc test, n = 5 mice/group.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Effect of various concentrations of P7C3-A20 on concentration-response curves for PTX to inhibit growth of several cancer cell lines with distinct genetic backgrounds. P7C3-A20 did not alter the potency or efficacy of PTX to inhibit growth. Cells were treated for 48 hr and cell growth was determined with the SRB assay. (B) P7C3-A20 did not alter the formation of perinuclear microtubule bundles by PTX. Immunofluorescent images of MDA-MB-231 cells pretreated with P7C3-A20 (5 μM) or vehicle for 1 hr followed by various concentrations of PTX or vehicle for an additional 4 hr and then stained for β-tubulin. (C) Effect of P7C3-A20 on the growth of various cancer cell lines. P7C3-A20 had no effect on the growth of the cell lines tested. Cells were incubated with P7C3-A20 (0.1–5 μM) or vehicle for 48 hr. Growth was monitored with the SRB assay.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/29626/elife-29626-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Athymic nude mice received bilateral injections into both flanks with MDA-MB-231 cells. When tumors reached at least 250 mm3, mice were treated with P7C3-A20 (20 mg/kg/day; i.p.) or vehicle beginning on day −2. PTX (11.7 mg/kg, i.p.) or vehicle was injected on days 0, 2, and 4. Paw withdrawal threshold to mechanical stimulation of the hindpaw were measured on indicated days before and after PTX treatment. P7C3-A20 abolished the development of PTX-induced mechanical allodynia in tumored mice. The xenografts did not alter mechanical paw withdrawal threshold as indicated by the lack of difference between the responses from mice with or without implanted tumors. (B) Neither P7C3-A20 nor PTX affected the body weight of tumored mice. Data are expressed as mean ± SEM, n = 5 mice/group.
 
 We next evaluated the effect of P7C3-A20 on PTX-mediated antitumor activity in vivo using MDA-MB-231 xenografts in female athymic nude mice. We also measured mechanical allodynia in these mice. We elected to implant MDA-MB-231 breast cancer cells on the bases that these tumors are sensitive to PTX treatment in vivo and since P7C3-A20 slightly increased the proliferation rate of these cells in vitro. Tumors were allowed to grow for 4 weeks following implantation. Mice were then treated with daily injections of P7C3-A20 (20 mg/kg, i.p.) or vehicle and PTX (11.7 mg/kg, i.p.) or vehicle on days 0, 2, 4. PTX treatment markedly decreased tumor growth as expected. P7C3-A20 did not alter the antitumor effects of PTX, nor alter tumor growth when administered alone (Figure 8D). As with its effect in rats, P7C3-A20 completely prevented PTX-induced mechanical allodynia in the tumor-bearing mice (Figure 8E and Figure 8—figure supplement 2). Collectively, these results demonstrate that P7C3-A20 treatment can attenuate the deleterious effects of PTX on peripheral nociceptive neurons and mitigate peripheral neuropathic pain without compromising the desired antitumor effects.
 
@@ -95,11 +306,175 @@ The effectiveness of P7C3-A20 in our aggressive model of PTX-induced peripheral 
 
 ## Materials and methods
 
-## Animals
+**Key resources table.**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRM-CCL-2; RRID:CVCL_0030</td>
+      <td>Cell line maintained in A. Risinger lab. Authenticated by STR profiling (Genetica).</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>Panc-1</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-1469; RRID:CVCL_0480</td>
+      <td>Cell line maintained in A. Risinger lab. Authenticated by STR profiling (Genetica).</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>MDA-MB-231</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRM-HTB-26; RRID:CVCL_0062</td>
+      <td>Cell line maintained in A. Risinger lab. Authenticated by STR profiling (Genetica).</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>SK-OV-3</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# HTB-77; RRID:CVCL_0532</td>
+      <td>Cell line maintained in A. Risinger lab. Authenticated by STR profiling (Genetica).</td>
+    </tr>
+    <tr>
+      <td>cell line (human)</td>
+      <td>SK-N-BE(2)</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-2271; RRID:CVCL_0528</td>
+      <td>Cell line maintained in A. Risinger lab. Authenticated by STR profiling (Genetica).</td>
+    </tr>
+    <tr>
+      <td>cell line (rat)</td>
+      <td>A1A1</td>
+      <td>PMID:8190100</td>
+      <td></td>
+      <td>Cell line maintained in W. Clarke lab</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PGP9.5 (mouse monoclonal)</td>
+      <td>Encor Biotechnology</td>
+      <td>EnCor Biotechnology Cat# MCA-BH7-AP; RRID:AB_2572395</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-collagen type IV (goat polyclonal)</td>
+      <td>Southern Biotechnology</td>
+      <td>Southern Biotechnology Cat# 1340–01</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ATF3 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-188; RRID:AB_2258513</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NeuN (mouse monoclonal)</td>
+      <td>Millipore (Chemicon)</td>
+      <td>Millipore Cat# MAB377; RRID:AB_2298772</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-poly(ADP-ribose)10 hr (mouse monoclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Enzo Life Sciences Cat# ALX-804–220, RRID:AB_2272987</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-β-tubulin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma Cat# T8328; RRID:AB_1844090</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse Alexa Fluor 488 secondary (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch Code# 715-545-150</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit Alexa Fluor 594 secondary (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch Code# 711-585-152</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-goat Alexa Fluor 594 secondary (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch Code# 705-585-147</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse IRDye 800CW secondary (goat polyclonal)</td>
+      <td>LI-COR Biosciences</td>
+      <td>LI-COR Biosciences Cat# 827–08364; RRID:AB_10793856</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse FITC secondary (sheep polyclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma Cat# F6257; RRID:AB_259692</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>DAPI stain</td>
+      <td>Sigma (Roche)</td>
+      <td>Sigma Cat# 10236276001</td>
+      <td>(0.1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>VECTASHIELD HardSet Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>Vector Laboratories Cat# H-1400; RRID:AB_2336787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay, kit</td>
+      <td>NAD/NADH-Glo Assay</td>
+      <td>Promega Corporation</td>
+      <td>Promega Cat# G9071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay, kit</td>
+      <td>Tubulin polymerization assay, OD based - Porcine</td>
+      <td>Cytoskeleton, Inc.</td>
+      <td>Cytoskeleton Cat# BK006P</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Adult male Sprague-Dawley rats (RRID:RGD_734476) weighing 250–300 g, and female athymic nude Foxn1nu mice (RRID:MGI:2680668) weighing 20–25 g, were used in this study. Rats were housed in groups of 3 and mice were housed in groups of 5. Animals were maintained on a 12 hr light-dark cycle with ambient temperatures between 20°C and 22°C. Food and water were available ad libitum. Animals were labeled numerically with permanent marker on the tail to monitor each animal throughout each study, as well as to allow drug dose/volume administration based on body weight. Body weight was recorded daily. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. The animal study protocol (#20130051AR) was approved by the Institutional Animal Care and Use Committee of the University of Texas Health Science Center at San Antonio and conformed to International Association for the Study of Pain (IASP) and federal guidelines.
 
-## Drug preparation and administration
+### Drug preparation and administration
 
 To conduct and maintain blinded experiments, drugs were prepared fresh daily in coded vials (2 ml/kg) by an individual not involved in administering injections or behavioral testing. Every day, a spreadsheet was prepared indicating the coded vial and injections volume based upon body weight for each animal. Two different experimenters prepared syringes using the coded spreadsheet and then administered injections to animals. Following injections, animals were returned to their storage room and checked for signs of distress before leaving them for the night.
 
@@ -109,78 +484,78 @@ For initial experiments, P7C3-A20 and P7C3-S321 were graciously provided by Andr
 
 A-861696 (provided by AbbVie, Inc.) was dissolved directly in PBS at a concentration of 35 mg/ml. Rats were injected daily at a dose of 50 mg/kg until sacrifice. FK866 (AdooQ Bioscience, Irvine, CA) was dissolved in DMSO (25 mg/ml) and stored at −20°C until ready for use. After thawing, FK866 was diluted with 4 volumes of Kolliphor followed by 10 volumes of PBS (same vehicle as P7C3-A20). Final stock solution was 1.67 mg/ml. Every day until sacrifice, rats were injected twice per day with either FK866 (1.0 mg/kg/day, i.p., b.i.d.) or vehicle, with the first injection given at the same time as P7C3-A20 and the second injection given 6 hr later (Khan et al., 2006; Song et al., 2014). Nicotinamide (NAM; Sigma, St. Louis, MO) was dissolved directly in PBS at a concentration of 50 mg/ml. Rats were injected subcutaneously (s.c.) with NAM at a dose of 150 mg/kg daily until sacrifice.
 
-## Leukocyte counts
+### Leukocyte counts
 
 Whole blood samples (50 μl) were obtained from the ventral saphenous vein and transferred into EDTA-coated Microvette CB 300 collection tubes (Kent Scientific, Torrington, CT). To minimize trauma, blood collection alternated between the left and right ventral saphenous veins. After collection, whole blood was diluted 1:20 in Turk’s solution (Gentian violet in 2% glacial acetic acid) for erythrocyte lysis. Leukocytes were counted with a hemocytometer and the final cell count was determined with the following equation: Leukocytes/μl blood = (d x C) / (g x v), where d is the dilution factor, C is the total number of cells counted, g is the number of grids, and v is the volume factor.
 
-## Determination of P7C3-A20 and P7C3-S321 levels in plasma
+### Determination of P7C3-A20 and P7C3-S321 levels in plasma
 
 Trunk blood was collected immediately upon decapitation (16 hr after the final injection of P7C3-A20 or vehicle) into a K2EDTA Vacutainer blood collection tube (Becton-Dickinson, Franklin Lakes, NJ) and placed on ice. Samples were then centrifuged at 3000 x g for 5 min to separate the plasma from leukocytes and erythrocytes. Plasma was transferred to cryovials, frozen, and shipped on dry ice to Noelle Williams in the Department of Biochemistry at the University of Texas Southwestern Medical Center for LC-MS/MS analysis.
 
-## Mechanical stimulation assay
+### Mechanical stimulation assay
 
 To assess the sensitivity of an animal’s hindpaw to noxious mechanical stimulation, paw withdrawal threshold (PWT) was evaluated using an electronic Von Frey aesthesiometer equipped with 0.8 mm rigid Supertip filaments (IITC Life Science, Inc., Woodland Hills, CA). Animals were placed in clear plastic observation boxes atop a metal mesh floor. After 30 min acclimation, the aesthesiometer with attached filament was positioned to stimulate the mid-plantar region of the rodent hindpaw, and the force (in grams) required to elicit a paw withdrawal response was displayed on a digital screen and recorded. The mean baseline PWT for naive rats and mice was 44.20 ± 1.29 g and 4.43 ± 0.46 g, respectively. PWT measurements were taken at least 30 s apart. At least six measurements were recorded per animal per testing day and the mean value was used for statistical analysis. As indicated above, experimenters were blinded to the treatment allocation. Additionally, animal testing order was randomized for each testing day.
 
-## Cold stimulation assay
+### Cold stimulation assay
 
 To assess the sensitivity of an animal’s hindpaw to noxious cold stimulation, paw withdrawal latency (PWL) to application of a cold stimulus to the plantar surface of the hindpaw was measured according to a protocol adapted from that described previously (Brenner et al., 2012). Briefly, rats were placed in plastic observation boxes atop 1/8’ tempered glass flooring. After 30 min acclimation, a 20-ml syringe (needle end cut off) tightly packed with crushed dry ice was pressed firmly against the glass floor directly beneath the plantar surface of the hindpaw. The latency (in seconds) for the cold stimulus to elicit a paw withdrawal response was timed with a stopwatch and recorded. The mean baseline PWL for naïve rats was 12.53 ± 0.33 s. A cutoff of 25 s was used to prevent tissue injury. PWL measurements were taken at least 2 min apart. At least four measurements were recorded per animal per testing day and the mean value was used for statistical analysis. As indicated above, experimenters were blinded to the treatment allocation. Additionally, animal testing order was randomized for each testing day.
 
-## Heat stimulation assay
+### Heat stimulation assay
 
 Paw withdrawal responses to a heat stimulus were measured according to a protocol adapted from that described previously (Hargreaves et al., 1988). Briefly, rats were placed in plastic observation boxes atop temperature-controlled (30°C) glass flooring. After 30 min acclimation, the ventral mid-plantar surface of the rat hindpaw was exposed to a radiant heat source from a thermal stimulator (RRID:SCR_012152) through the glass floor, causing a steady increase in the temperature of the hindpaw. PWL was automatically determined with a photoelectric cell and recorded. The intensity of the heat source was adjusted at the start (day 0) of the experiment such that mean baseline PWL were 10.75 ± 0.40 s; cutoff was set for 20 s. PWL measurements were taken at least 60 s apart. At least four measurements were recorded per animal per testing day and the mean was considered for statistical analysis. As indicated above, experimenters were blinded to the treatment allocation. Additionally, the animal testing order was randomized for each testing day.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 L4-L6 dorsal root ganglia (DRG) and 5 mm paw biopsies from rats were dissected at sacrifice, washed in ice-cold PBS, and immersion-fixed in 4% paraformaldehyde in 0.1M phosphate buffer (PB) at 4°C for 1 hr. Tissue was washed 3 × 15 min in PB, cryopreserved in 10% sucrose at 4°C overnight, in 30% sucrose at 4°C overnight, then stored at −20°C until sectioned. To prepare for sectioning, tissue was thawed then acclimatized in TissueTek OCT (Ted Pella, Inc., Redding, CA) prior to freezing on dry ice. Sections of DRG (12 μm) and paw tissue (20 μm) were cut with a cryostat (Leica Biosystems, Buffalo Grove, IL) then thaw-mounted onto Superfrost Plus slides (Ted Pella, Inc.). Sections were dried at room temperature for 2 hr and stored at −20°C prior to staining. Tissue sections were washed 2 × 20 min in PB, incubated with 10% normal donkey serum (RRID:AB_2337258) in PB +0.3% Triton X-100 (PBT) for 1 hr at room temperature, and then incubated with PBT including primary antibodies at 4°C overnight. DRG sections were double-labeled with mouse anti-NeuN (1:250, RRID:AB_2298772) and rabbit anti-ATF3 (1:400, RRID:AB_2258513). Paw sections were double-labeled with mouse anti-PGP9.5 (1:1000, RRID:AB_2572395) and goat anti-collagen Type IV (1:200, Southern Biotechnology, Birmingham, AL). Sections were then washed 3 × 10 min in PB and then incubated with Alexa Fluor 488-conjugated donkey anti-mouse IgG (1:500; RRID:AB_2340850) and Alexa Fluor 594-conjugated donkey anti-rabbit IgG or anti-goat IgG (1:500; RRID:AB_2340621) for 60 min at room temperature. Sections were then washed 3 × 10 min in PB, 2 × 5 min in ddH2O, air-dried, and coverslipped using HardSet VectaShield (RRID:AB_2336787) for imaging. Slides were imaged within 48 hr after mounting followed by storage at 4°C.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Images of paw biopsies and DRG sections were obtained with a FV1000 laser scanning confocal microscope (Olympus, Waltham, MA) equipped with: Blue diode (405 nm), Argon (458 nm, 488 nm, and 514 nm), Green HeNe (543 nm), and Red Diode (635 nm) lasers using a 20 × 0.75 NA UPlanApo, DIC objective. Image acquisition settings included: 1024 × 1024 resolution, 8-bit image depth, 8.0 μs/pixel scan speed, sequential channel scan with Kalman averaging (2X). Laser power, HV, and offset were adjusted to maximize signal-to-noise ratio and avoid pixel saturation. To facilitate throughput, IENF images for counting were acquired with the pinhole (confocal aperture) set to 650 μm. To maximize image quality, representative IENF images were acquired as image stacks, taken at 0.6 μm optical steps, with two times Kalman averaging, then reconstructed into a 2D z-stack. Adjustment of brightness/contrast, look-up tables, and z-stack reconstructions were done in Fiji (RRID:SCR_002285) (Collins, 2007; Linkert et al., 2010; Schindelin et al., 2012; Schneider et al., 2012).
 
-## IENF density quantification
+### IENF density quantification
 
 PGP9.5-positive IENFs that crossed the Type IV collagen-stained dermal-epidermal junction into the epidermis were counted in 1–2 randomly selected fields of view (635 μm x 635 μm) per section. Fibers that branched after crossing the dermal-epidermal junction were counted as a single fiber. Fragments of nerve fibers in the epidermis that did not cross dermal-epidermal junction or fibers that approached but did not cross the junction were not counted. Unless junction crossing was indisputably clear, fibers that overlapped with activated Langerhans cells were not counted. The length of the dermal-epidermal junction within each field of view was measured and the total number of fibers that crossed the dermal-epidermal junction were counted to quantify the IENF density (number of IENFs/mm). Quantification was performed using FIJI (RRID:SCR_002285) of at least six sections per paw and the mean was used as the data point for an animal. All counts were conducted by two blinded observers independently to reduce counting bias. Counts were averaged between observers to determine the IENF density for each rat. IENF densities of all rats in each group were used to calculate the mean IENF density ± SEM, then analyzed for statistical significance.
 
-## ATF3 quantification
+### ATF3 quantification
 
 For analysis of ATF3 expression in DRG sections, background of images was normalized with the FIJI macro BG Subtraction of ROI, followed by despeckling, and binarization. ATF3-positive neurons were defined as having stained nuclei within a size range of 60–300 μm2. To quantify total neurons (NeuN+ cells), images underwent thresholding, applied with a binary Watershed filter, and counted with the Analyze Particles plug-in, where size range was specified as 225 μm2 to infinity (Obata et al., 2003). The percentage of ATF3-labeled neurons was calculated by dividing the number of ATF3-positive neurons by the total number of neurons (NeuN+)×100. Quantification was performed using FIJI (RRID:SCR_002285) of at least six sections per DRG per animal. DRG were counted from three animals per treatment group. Values are given as mean ± SEM for statistical comparison.
 
-## Dot blot analysis of PAR accumulation
+### Dot blot analysis of PAR accumulation
 
 L4-L6 DRG were dissected quickly, were snap-frozen on dry ice, then stored at −80°C until needed. Lysis buffer (Pierce, ThermoFisherScientific, Waltham, MA), supplemented with 1% phosphatase inhibitor cocktail 3, 100 nM okadaic acid, and 1% protease inhibitor (Pierce, Thermo Scientific) was prepared and stored on ice. Three ganglia (from L4, L5, and L6 DRG) were pooled from each rat and homogenized in 300 µl lysis buffer with a Potter-Elvehjem glass homogenizer. Homogenates were centrifuged at 10,000 x g for 10 min at 4°C. Supernatants were collected and total protein content was determined via protein assay. Samples were diluted in cold lysis buffer to a concentration of 2 µg/µl and stored at −20°C until needed. Dot blot analysis was performed according to the instructions using a Bio-Dot microfiltration apparatus (Bio-Rad, Hercules, CA). Briefly, nitrocellulose membranes were pre-wet in Tris-buffered saline (TBS) and placed on the manifold gasket. The 96-well sample template was aligned over the membrane with the guide pins and secured with vacuum suction. Membranes were rehydrated with TBS, then DRG homogenates were applied in quadruplicate (50 µl per well) and gravity filtered through the membrane for 30 min. Samples were blocked (200 µl of 1:1 TBST and Odyssey Block Buffer (LI–COR Biosciences, Lincoln, NE)) for 60 min on gravity, and then washed twice with TBST on vacuum. 100 µl of monoclonal mouse clone 10 hr anti-PAR (1:300, RRID:AB_2272987) was applied for 45 min on gravity, and then washed three times with TBST on vacuum. Goat anti-mouse IR800 secondary antibody (1:10,000, RRID:AB_10793856) was applied for 45 min on gravity, and then washed two times with TBST on vacuum. The membrane was removed from the manifold, washed twice with TBS, then allowed to dry overnight. Membranes were imaged using a LI–COR Odyssey infrared imager and relative intensities of the innermost dots were quantified using Image Studio (RRID:SCR_013715).
 
-## Cell culture
+### Cell culture
 
 HeLa cervical cancer cells (RRID:CVCL_0030), Panc-1 prostate cancer cells (RRID:CVCL_0480), MDA-MB-231 breast cancer cells (RRID:CVCL_0062), SK-OV-3 ovarian cancer cells (RRID:CVCL_0532), and SK-N-BE(2) neuroblastoma cancer cells (RRID:CVCL_0528), were purchased from the American Type Culture Collection. HeLa and SK-OV-3 cells were maintained in Basal Medium Eagle with Earle’s salts (Sigma) with 10% FBS (Hyclone) and 50 μg/ml gentamicin. Panc-1 cells were maintained in Dulbecco’s Modified Eagle’s Medium (Gibco, ThermoFisher Scientific) with 10% FBS and 50 μg/ml gentamicin. MDA-MB-231and SK-N-BE(2) cells were maintained in Improved Modified Eagle Medium (Gibco) with 10% FBS and 25 μg/ml gentamicin. Cells were passaged for fewer than 6 months after resuscitation from liquid nitrogen. MDA-MB-231, SK-N-BE(2), SK-OV-3, HeLa, and Panc-1 cell lines were authenticated by STR profiling (Genetica DNA Laboratories, Burlington, NC).
 
-## In vitro NAD/NADH determination
+### In vitro NAD/NADH determination
 
 A1A1 cells were derived from retrovirally infected (wildtype SV40 virus) E16 rat cortical neuron cultures (Berg et al., 1994). Cells were maintained at 37°C, 5% CO2 in Dulbecco’s modified Eagle’s medium (DMEM) with 10% FBS. Cells were seeded at a density of 10,000 cells/well in poly-D-lysine-coated, white-walled 96-well plates for luminescence detection. Cells were maintained in serum-free DMEM for 24 hr prior to experimentation. A1A1 cells were then treated with vehicle (ddH2O) or 200 μM H2O2 for 30 min. Media was aspirated and replaced with DMEM containing vehicle, P7C3-A20 (0.03, 0.3, 3 μM), or NAM (1 mM) for 60 min. FK866 (10 nM) was included with the second treatment where indicated. Following aspiration of media, cells were washed once with PBS, then 50 μl PBS was added to each well. 50 μl of Detection Reagent from the NAD/NADH-Glo Assay kit (Promega, Madison, WI) was added to each well to measure intracellular NAD levels. A1A1 cells were lysed with the Detection Reagent, which includes a NAD cycling enzyme that converts NAD+ to NADH. In the presence of NADH, a reductase catalyzes the formation of luciferin from a proluciferin substrate. The Ultra-Glo recombinant luciferase generates a light signal from luciferin that is proportional to the amount of NAD in the cells tested. White backing tape (Perkin Elmer, Waltham, MA) was attached to the bottom of the plate, followed by luminescence detection (representing intracellular NAD levels) in plate mode with the top optic using a Fluostar Omega Microplate Reader (BMG Labtech, Cary, NC). Relative luminescence units detected per well were normalized to vehicle-treated control wells. For each experiment, treatment conditions were run in quadruplicate. Data represent mean NAD/NADH levels ± SEM expressed as percentage of vehicle of 4–5 experimental replicates.
 
-## Tissue NAD+determination
+### Tissue NAD+determination
 
 Hindpaw skin biopsies (3.5 mm punch), sciatic nerve (both sides), and L4-L6 DRG (both sides) were dissected as quickly as possible following decapitation and frozen on dry ice. Approximate times to dissect and freeze paw punches, sciatic nerves, and DRG were 2 min, 8 min, and 12 min, respectively. Samples were kept at −80°C until ready for assay. To determine tissue NAD+ levels, samples were transferred from −80°C to a container with dry ice. Tissue samples were weighed frozen (~5–10 mg), transferred immediately into 2 ml of ice-cold homogenization buffer (0.5% dodecyltrimethylammonium bromide, 100 mM Na2CO3, 20 mM NaHCO3, and PBS; pH 10–11), homogenized with a Tissue Tearor (Biospec) for 15–20 s, then placed on ice. Samples were vortexed every 5 min for 15 min then frozen on dry ice until all samples have been completed. 50 μl aliquots from each sample homogenate were added to a clear 96-well microplate. Standards were prepared in the same manner as the samples. To isolate NAD+, 25 μl of 0.4 N HCl was added to the samples, then the plate was incubated at 60°C for 15 min in a dry bath. The plate then cooled at RT for 15 min. 25 μl of 0.5 M Trizma base then was added to the NAD+ samples. 50 μl of each sample or standard then was transferred to a 96-well white-walled microplate. 50 μl of the NAD/NADH-Glo kit (Promega) was added to each well, the plate incubated at RT in the dark for 45 min, then was scanned on the Fluostar Omega Microplate Reader (BMG Labtech). Relative luminescence units for each sample were interpolated to determine the NAD+ concentration (nmol/l). Protein content (μg/ml) was determined for each sample using the Ionic Detergent Compatibility Reagent (Pierce) with the 660 nm Protein Assay Reagent (Pierce) to normalize tissue NAD+ levels (nmol/mg protein).
 
-## Anti-proliferation assay
+### Anti-proliferation assay
 
 The sulforhodamine B (SRB) assay was used to determine the effect of P7C3-A20 on the anti-proliferative effects of PTX in various cancer cell lines (Skehan et al., 1990). Cells were plated in 96-well plates at a density of 2500–5000 cells/well (depending on the individual growth characteristics of each cell line) and incubated for 24 hr. Cells were treated with P7C3-A20 (0.1–5 μM) or vehicle for 1 hr, and then treated with PTX (0.1 nM – 1 μM). After 48 hr of drug exposure, media was removed and cells were fixed with 10% w/v trichloroacetic acid, washed with dH2O and then protein stained with SRB dye. After excess dye was removed by washing with 4% acetic acid, the SRB dye was re-suspended in Tris and cell density was determined by measuring the absorbance at 560 nm. The inhibition of cell proliferation over the 48 hr of drug incubation was determined for each concentration of PTX ±P7 C3-A20 utilizing a second plate of cells that was fixed at the time of drug treatment as a time 0 measurement, which is represented as a dashed horizontal line at y = 0. Cell density values less than the time 0 measurement indicate cytotoxic activity (Monks et al., 1991). The effect of P7C3-A20 (0.1–5 μM) alone on the growth of each cell line also was compared to the growth of vehicle treated cells over the 48 hr period of drug incubation. Nonlinear regression with a four-parameter logistic curve was used to calculate the IC50 value for inhibition of cellular proliferation for each independent experiment followed by calculation of the mean pEC50 ±SD (n = 3) for each cell line tested.
 
-## Tubulin polymerization assay
+### Tubulin polymerization assay
 
 The effects of the compounds on purified porcine brain tubulin polymerization (Cytoskeleton, Inc., Denver, CO) were monitored at 340 nm with a SpectraMax plate reader (RRID:SCR_014789). The assay mixture contained 2 mg/ml tubulin in GPEM buffer (80 mM PIPES, pH 6.8; 1 mM MgCl2; and 1 mM EGTA) containing 1 mM GTP and 10% glycerol and DMSO as vehicle (1% v/v) or specified drug in 100 µl reactions at 37°C (Risinger et al., 2013).
 
-## In vivo antitumor trial
+### In vivo antitumor trial
 
 Female athymic nude Foxn1nu mice (Envigo) were maintained in an Association for Assessment and Accreditation of Laboratory Animal Care-approved facility and provided food and water ad libitum. A total of 3 × 106 MDA-MB-231 cells supplemented with Matrigel were bilaterally injected subcutaneously into each flank. Mice were randomized into treatment groups (n = 5 mice, 8–9 tumors) and drug treatments initiated when a median tumor volume of 200 mg was reached (~4 weeks). Mice were injected daily with P7C3-A20 (20 mg/kg/day; i.p.) or vehicle. On days 0, 2, and 4, mice also received PTX (11.7 mg/kg; i.p.) or vehicle. Total injection volume never exceeded 0.25 ml. Tumor dimensions were measured with digital calipers on specified days. Tumor volume was calculated using the equation: mass (mg) = (π/6) × [length (mm) ×width (mm) ×height (mm)] and the mean change from pretreatment baseline ± SEM was considered for statistical analysis.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 MDA-MB-231 cells were plated onto glass coverslips and allowed to adhere overnight before compound addition. Cells were pretreated with 5 μM P7C3-A20 or vehicle for 1 hr, then PTX (0.5–100 nM) for 4 hr. After treatment, cells were fixed with methanol (4°C) for 5 min and subsequently incubated with a blocking solution of 10% bovine calf serum in PBS for 20 min at room temperature. Cells were then incubated with a monoclonal β-tubulin antibody (1:400; RRID:AB_1844090) for 2 hr at 37°C. After incubation, cells were washed three times with 1% bovine serum albumin (BSA) in PBS and then incubated with a FITC-conjugated sheep anti-mouse IgG (1:200; RRID:AB_259692) for 1 hr at 37°C. Coverslips were then washed three times with BSA in PBS and stained with 0.1 μg/ml DAPI (Sigma) in PBS for 10 min at room temperature. Coverslips were mounted on slides and visualized with a FV1000 laser scanning confocal microscope (Olympus) using a 60 × 1.42 NA PlanApoN, DIC oil-immersion objective. Adjustments of brightness/contrast and look-up tables were done in Fiji.
 
-## Graphics
+### Graphics
 
 All image labels and indicators (i.e. arrowheads), timelines, and schematics were developed with OmniGraffle 6.6.1 (The Omni Group, Seattle, WA). Marvin was used for drawing and displaying chemical structures, Marvin 16.10.10.0, 2016 (ChemAxon, Cambridge, MA (http://www.chemaxon.com)).
 
-## Statistics
+### Statistics
 
 Student’s t test, one-way ANOVA, or two-way mixed effect ANOVA were used to compare the means among groups, followed by the Dunnett’s, Tukey’s, or Sidak’s post-hoc tests for pairwise comparisons, where appropriate. Pearson correlation coefficients were determined to establish the linear dependence between IENF density and mechanical or cold AUC. Linear regression was used to confirm correlation values and to graph 95% confidence bands of the best-fit line. All statistical tests are two-sided with an alpha of 0.05 as the significance threshold. Analyses were performed in GraphPad Prism 6.0 (RRID:SCR_002798).

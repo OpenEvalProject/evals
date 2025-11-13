@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.49673.001 Brain-derived neurotrophic factor (BDNF) is a potent modulator of brain synaptic plasticity. Signaling defects caused by dysregulation of its Ntrk2 (TrkB) kinase (TrkB.FL) and truncated receptors (TrkB.T1) have been linked to the pathophysiology of several neurological and neurodegenerative disorders. We found that upregulation of Rbfox1, an RNA binding protein associated with intellectual disability, epilepsy and autism, increases selectively hippocampal TrkB.T1 isoform expression. Physiologically, increased Rbfox1 impairs BDNF-dependent LTP which can be rescued by genetically restoring TrkB.T1 levels. RNA-seq analysis of hippocampi with upregulation of Rbfox1 in conjunction with the specific increase of TrkB.T1 isoform expression also shows that the genes affected by Rbfox1 gain of function are surprisingly different from those influenced by Rbfox1 deletion. These findings not only identify TrkB as a major target of Rbfox1 pathophysiology but also suggest that gain or loss of function of Rbfox1 regulate different genetic landscapes.
+Brain-derived neurotrophic factor (BDNF) is a potent modulator of brain synaptic plasticity. Signaling defects caused by dysregulation of its Ntrk2 (TrkB) kinase (TrkB.FL) and truncated receptors (TrkB.T1) have been linked to the pathophysiology of several neurological and neurodegenerative disorders. We found that upregulation of Rbfox1, an RNA binding protein associated with intellectual disability, epilepsy and autism, increases selectively hippocampal TrkB.T1 isoform expression. Physiologically, increased Rbfox1 impairs BDNF-dependent LTP which can be rescued by genetically restoring TrkB.T1 levels. RNA-seq analysis of hippocampi with upregulation of Rbfox1 in conjunction with the specific increase of TrkB.T1 isoform expression also shows that the genes affected by Rbfox1 gain of function are surprisingly different from those influenced by Rbfox1 deletion. These findings not only identify TrkB as a major target of Rbfox1 pathophysiology but also suggest that gain or loss of function of Rbfox1 regulate different genetic landscapes.
 
 ## Introduction
 
@@ -34,6 +34,22 @@ Learning and memory depend on the establishment, maintenance, strengthening or r
 ## Results
 
 We have previously reported that the trisomic TS16 mouse model, which has an extra copy of Chromosome (Chr) 16, has a neuronal upregulation of the TrkB.T1 receptor isoform level (Dorsey et al., 2006). Since, the Ntrk2 gene is located in Chr 13 (Tessarollo et al., 1993), these data suggested that one or multiple genes present in Chr16 are responsible for this phenotype. A comparison between the genes isolated from brain immunoprecipitation of the spliceosome and bio-informatics analysis of the Ts16 unique region identified two RNA binding proteins, Tra2b (Sfrs10) and Rbfox1 (A2bp1), as potential candidates of TrkB.T1 expression regulation (Li et al., 2007). Tra2b is a ubiquitously expressed splicing factor that contributes to alternative splicing processes in a concentration dependent manner (Elliott et al., 2012). Therefore, we first tested whether Tra2b overexpression in neurons can change TrkB isoforms expression levels. However, infection of primary hippocampal neurons with a Tra2b-expressing lentivirus did not cause any change in TrkB isoforms expression (Figure 1—figure supplement 1). Next, we tested the RNA binding protein Rbfox1 that, compared to Tra2b, has a more restricted and overlapping pattern of expression with TrkB in organs such as brain, heart and muscle (Li et al., 2007; Stoilov et al., 2002). Western blot analysis of primary hippocampal neurons transfected with a lentiviral vector expressing Rbfox1 showed increased truncated TrkB receptor levels associated with Rbfox1 overexpression while the TrkB.FL isoform was unaffected (Figure 1A,B). Although TrkB.T1 is the dominant truncated TrkB isoform in mouse brain, the potential presence of other truncated isoforms prompted us to test the identity of the upregulated truncated isoform. As shown in Figure 1A (right panel) western blot analysis with an antibody recognizing the specific 11 amino acid intracellular domain of TrkB.T1 confirmed that TrkB.T1 is the isoform upregulated by Rbfox1. Moreover, QPCR analysis also revealed an increased level of TrkB.T1-specific mRNA while TrkB.FL was unchanged, paralleling the results from the western analysis (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig1-v2.jpg)
+
+**Figure 1.:** T1 receptor levels in vitro and in vivo. (A) Overexpression of Rbfox1 in mouse primary hippocampal neurons leads to a specific up-regulation of TrkB.T1. Western blot analysis of wild-type mouse primary hippocampal neurons transfected with a lentiviral vector expressing Rbfox1 (Rbfox1) or eGFP (Ctrl) as a control. Neurons were transfected after 4 days in vitro and analyzed 72 hr after transfection. Ntrk2 (TrkB) protein levels were tested with an antibody against the TrkB extracellular domain to detect all TrkB isoforms (left panel) or an antibody specifically recognizing TrkB.T1 (right panel). Antibodies against Rbfox1 were used to verify Rbfox1 overexpression; Gapdh and β-III-Tubulin were used as control of loading and as a neuronal marker respectively. (B) Quantification of TrkB full-length (TrkB.FL) and TrkB.T1 protein from experiments as in A; n = 3 ± SEM. * = p ≤ 0.05, ** = p ≤ 0.01 (Student’s t-test). (C) Quantitative PCR analysis of TrkB.FL and TrkB.T1 expression from mouse primary hippocampal neurons as in (A); n = 3 ± SEM; ** = p ≤ 0.01 (Student’s t-test). (D) Immunoblot analysis of littermates wild-type R26-Rbfox1+/+ (WT) and transgenic R26-Rbfox1+/flox (R26-Fox1) primary hippocampal neurons transfected with a Cre-expressing adenovirus (Ad-Cre) and analyzed as in (A). (E) Immunoblot of hippocampi derived from control Nes-Cre animals (Ctrl) and transgenic Nes-Cre;R26-Rbfox1+/flox animals (N-cre;Fox1) analyzed with antibodies as in (A). (F) Immunoblot quantification analysis of TrkB.FL, TrkB.T1 and Rbfox1 protein levels of N-cre;Fox1 relative to Ctrl as in (E); n = 6 ± SEM; * = p ≤ 0.05; ** = p ≤ 0.01 (Student’s t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Western blot analysis of wild-type mouse primary hippocampal neurons transfected with a lentiviral vector expressing Tra2b or eGFP (Ctrl) as a control. Neurons were transfected after 4 days in vitro and analyzed 72 hr after transfection. TrkB protein levels were tested with an antibody against the TrkB extracellular domain to detect all TrkB isoforms. Antibodies against Gapdh and β-III Tubulin were used as control of loading and as a neuronal marker respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of the targeting vector used to generate the Rbfox1 conditional transgenic mouse model. The Gt(ROSA)26Sor locus (Rosa26) was targeted using a vector including the Rbfox1 cDNA that can be activated by the CAG promoter after cre-mediated removal of the loxP-flanked STOP-cassette. (B) Cre expression under the nestin promoter is specific to neurons in the hippocampus. β-Gal staining of the hippocampal area of control (R26-LacZ) and Nes-Cre;R26-LacZ (N-cre;R26-LacZ) mice showing robust Nes-cre activity in the granule cells of dentate gyrus (DG) and CA1 and CA3 pyramidal neurons. (C) Rbfox1 expression induced by nestin-cre is restricted to the neuronal compartment of the hippocampus. Immunofluorescence staining of N-cre (Nes-Cre) and N-cre;Fox1 (Nes-Cre;R26-Rbfox1+/flox) hippocampi showing similar pattern of Rbfox1 expression. Staining for Rbfox1 (green staining) and glial fibrillary acidic protein (GFAP; red staining) also shows no difference between the control and the N-cre;Fox1 sections. DAPI staining was used for nuclei. (D) Higher magnification immunofluorescence staining of DG area from panels in (A).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Western blot analysis of TrkC.FL, TrkC.T1 and Rbfox2 expression in the same hippocampal samples used in Figure 1E, including control Nes-Cre animals (Ctrl) and N-cre;Fox1 (Nes-Cre;R26-Rbfox1+/flox) animals. (B) Quantifications of the immunoblots bands as in (A); n = 6 ± SEM.
 
 To study the physiological significance of TrkB.T1 upregulation by Rbfox1 we generated a mouse model with an inducible gain of function Rbfox1 allele. By gene targeting of the Gt(ROSA)26Sor locus we introduced one copy of the Rbfox1 cDNA preceded by the CAG promoter to drive expression (R26-Fox1; Sakai and Miyazaki, 1997). A loxP-flanked stop cassette was inserted between the CAG promoter and the Rbfox1 c-DNA to allow for conditional activation of the gene (Figure 1—figure supplement 2A). Primary hippocampal neurons from heterozygous Rbfox1 transgenic mice (R26-Fox1) were isolated and transduced with a Cre-recombinase-expressing adenovirus (Ad-Cre) to delete the stop cassette and induce Rbfox1 expression. Compared to control neurons infected with the Ad-Cre, R26-Fox1 neurons showed increased Rbfox1 expression and subsequent TrkB.T1 upregulation (Figure 1D). These data suggest that this is an efficient model to up-regulate Rbfox1 and further validated our initial observation that lentiviral overexpression of Rbfox1 upregulates TrkB.T1 (Figure 1A–C).
 
@@ -45,9 +61,21 @@ Since Rbfox1 upregulation increases TrkB.T1 expression in vivo (Figure 1E,F) we 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig2-v2.jpg)
 
-**Figure 2.:** Rbfox1 heterozygosity in vivo and its overexpression increases TrkB.T1 receptor levels. (A) Western blot analysis of control (Ctrl) and Rbfox1+/- (Het) mouse hippocampus with antibodies against TrkB, Rbfox1, Rbfox2, Rbfox3 and Gapdh (used as loading control). (B) quantifications of immunoblots bands from (A) relative to Ctr (100%); n = 4 ± SEM; *p≤0.05; **p≤0.01 (Student’s t-test). (C) Overexpression of Rbfox2, but not Rbfox3 up-regulate TrkB.T1 expression in primary hippocampal neurons. Western blot analysis of wild-type mouse primary hippocampal neurons transfected with a lentiviral vector expressing eGFP as a control (Ctrl), Rbfox2 (Fox2) or Rbfox3 (Fox3). Neurons were transfected after 4 days in vitro and analyzed 72 hr after transfection by immunoblot with antibodies against TrkB extracellular domain to detect all TrkB isoforms, GFP, Rbfox2, Rbfox3 and β-III-Tubulin as loading control and neuronal marker. (D) Quantification of TrkB full-length (TrkB.FL) and TrkB.T1 protein from experiments as in (C); n = 3 ± SEM. *** = p ≤ 0.001 (Student’s t-test).
+**Figure 2.:** T1 receptor levels. (A) Western blot analysis of control (Ctrl) and Rbfox1+/- (Het) mouse hippocampus with antibodies against TrkB, Rbfox1, Rbfox2, Rbfox3 and Gapdh (used as loading control). (B) quantifications of immunoblots bands from (A) relative to Ctr (100%); n = 4 ± SEM; *p≤0.05; **p≤0.01 (Student’s t-test). (C) Overexpression of Rbfox2, but not Rbfox3 up-regulate TrkB.T1 expression in primary hippocampal neurons. Western blot analysis of wild-type mouse primary hippocampal neurons transfected with a lentiviral vector expressing eGFP as a control (Ctrl), Rbfox2 (Fox2) or Rbfox3 (Fox3). Neurons were transfected after 4 days in vitro and analyzed 72 hr after transfection by immunoblot with antibodies against TrkB extracellular domain to detect all TrkB isoforms, GFP, Rbfox2, Rbfox3 and β-III-Tubulin as loading control and neuronal marker. (D) Quantification of TrkB full-length (TrkB.FL) and TrkB.T1 protein from experiments as in (C); n = 3 ± SEM. *** = p ≤ 0.001 (Student’s t-test).
 
 The finding that overexpression of Rbfox1 causes a specific increase in the amount of TrkB.T1 mRNA without affecting the full-length receptor (TrkB.FL) suggests that Rbfox1 may act by increasing TrkB.T1 mRNA stability or expression and not as an alternative splicing factor. Therefore, we first analyzed Rbfox1 iCLIP datasets in brain to investigate the presence of Ntrk2 transcripts among the Rbfox1 targets (Figure 3A; Damianov et al., 2016). iCLIP experiments were performed from two distinct mouse brain nuclear fractions including a high molecular weight fraction (HMW) which is more intimately associated with chromatin and enriched in pre-mRNA species, and a more soluble nuclear fraction which excludes chromatin associated protein like histone H3 and is enriched in mature mRNAs (Damianov et al., 2016). Analysis of both HMW and soluble nuclear fractions showed several iCLIP-hits along the Ntrk2 sequence covering both intronic as well as 3’-UTR regions of the gene, suggesting direct binding of Rbfox1 to Ntrk2 transcripts (TrkB.FL and TrkB.T1) (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig3-v2.jpg)
+
+**Figure 3.:** T1-isoform and its RNA binding function is necessary to increase TrkB.T1 receptor levels. (A) Rbfox1 iCLIP analysis of mouse brain chromatin associated high molecular weight nuclear fraction (HMW) or soluble nuclear fraction (Soluble) (Damianov et al., 2016) showing association of Rbfox1 to TrkB transcripts in both HMW (vertical red bars) and soluble (vertical orange bars) nuclear fractions. Extracellular domain (ECD), specific TrkB.T1 region (T1) and tyrosine kinase domain (TK domain) are also indicated. (B) Schematic representation of the murine Ntrk2 gene. Exon lengths are indicated in base pairs (bp) while intron lengths are indicated as kilo-bases (kb). White and black stars indicate the start and stop codons respectively. (C) Agarose gels of RT-PCR amplification products from an RNA immunoprecipitation (RIP) analysis of wild type primary hippocampal neurons with an Rbfox1 antibody; input samples are from the PCR amplification of the RNA and antibody mixture before the immunoprecipition (IP) with mouse IgG or Rbfox1 antibodies. Indicated exonic (blue and green arrows) and intronic (red arrows) primers were used for the analysis. Note the presence of RT-PCR amplification bands following Rbfox1 IP for both TrkB.FL and TrkB.T1 and a proximal intronic region upstream of the specific TrkB.T1 exon, Camta1 (positive control; Gehman et al., 2011; Lee et al., 2016), but not Sirt1 (negative control). (D) Pulse-chase mRNA stability assay in primary hippocampal neurons derived from littermate control R26-Rbfox1+/flox (Ctrl) and Nes-Cre;R26-Rbfox1+/flox (N-cre;Fox1) embryos. Nascent RNA of primary neurons was labeled with 5-EU for 5 hr (pulsing) followed by QPCR analysis at 0 and 9 hr using c-DNA specific primers (purple arrows in schematic) for TrkB.FL and TrkB.T1. Values at 9 hr are expressed as percentage relative to 0 hr. n = 6 ± SEM; ns = p > 0.05; * = p ≤ 0.05 (Student’s t-test). (E); Rbfox1 RNA binding activity is required to promote TrkB.T1 up-regulation. Western blot analysis of wild-type mouse primary hippocampal neurons transfected with an adenovirus expressing WT Rbfox1 (Rbfox1) or an Rbfox1 with a mutation in the RNA binding domain (Rbfox1-F158A). Neurons were transfected after 4 days in vitro and analyzed 48 hr after transfection. (F) Quantification of TrkB.FL and TrkB.T1 protein from experiments as in E; n = 3 ± SEM. * = p ≤ 0.05, (Student’s t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** T1 3'UTR does not contribute to TrkB.T1 mRNA expression changes caused by Rbfox1 overexpression. (A) Western blot analysis of lysates from a Doxycycline (Dox) inducible HEK293-Rbfox1 cell line transfected with a TrkB.T1 cDNA containing the 3'UTR sequence. Rbfox1 expression was induced by 0.5 µg/ml Dox and samples were analyzed 48 hr after the transfection of the TrkB.T1-3'UTR cDNA. (B) Quantification of the TrkB.T1 specific bands from (A); n = 3 ± SEM. (C) Western blot analysis of lysates from the neuroblastoma cell line Neuro-2a (N2A) stably expressing TrkB.T1 with the 3’UTR sequence (N2A-TrkB.T1-3’UTR). Rbfox1 cDNA was transiently transfected into N2A-TrkB.T1-3’UTR cells and TrkB.T1 levels were analyzed 48 hr after the transfection and quantified in (D); n = 3 ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Analysis of TrkC.FL and TrkC.T1 from the same pulse-chase mRNA samples shown in Figure 3D. QPCR analysis was performed using specific primers for TrkC.FL and TrkC.T1 mRNAs. Values at 9 hr are expressed as percentage relative to 0 hr. n = 6 ± SEM; ns = p > 0.05 (Student’s t-test).
 
 To further validate Rbfox1 binding to Ntrk2 mRNAs we performed RNA immunoprecipitation (RIP) experiments (Figure 3C) (Jayaseelan et al., 2011). Lysates from wild type hippocampal neurons were subjected to immunoprecipitation (IP) with a Rbfox1 specific monoclonal antibody (1D10, a kind gift of Dr. Douglas Black) followed by RT-PCR analysis to detect bound RNA. While immunoprecipitation with control IgG failed to pull down any of the tested mRNA, IP with the anti-Rbfox1 antibody pulled down both the TrkB.FL and TrkB.T1 mRNA as well as a proximal intronic region upstream of the specific TrkB.T1 exon (Figure 3C), confirming the association found in the iCLIP experiments. Calmodulin-binding transcription activator 1 (Camta1) mRNA, used as positive control (Gehman et al., 2011; Lee et al., 2016), was also pulled down whereas Sirtuin 1 (Sirt1), used as a negative control, was not, even though it is present in the neuron lysates like all the other mRNAs (Figure 3C, Input lanes).
 
@@ -61,9 +89,17 @@ The findings that loss of function of Rbfox1 causes an upregulation of Rbfox2 an
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig4-v2.jpg)
 
-**Figure 4.:** Ntrk2 (TrkB) transcripts shows specific increase of the TrkB.T1 isoform levels in the hippocampus of Rbfox1 overexpressing animals. (A) Schematic representation of the murine Ntrk2 (TrkB) gene transcripts annotated from ENSEMBL (highlighted in green). In each transcript exons and introns are indicated with vertical and horizontal lines respectively. TrkB.FL (Ntrk2-201) and TrkB.T1 (Ntrk2-202) are indicated (Picture modified from Ensembl genome browser; ENSMUSG00000055254). (B) RNA-Seq specific analysis of the Ntrk2 transcripts in control (Ctrl; Nes-Cre) and N-cre;Fox1 hippocampus (Nes-Cre;R26-Rbfox1+/flox). Isoform IDs are indicated on the Y axis while the average of RNA-sequencing reads for every transcript is indicated on the X axis. TrkB.T1 (Ntrk2-202; red box) is the only TrkB isoform significantly modulated in the N-cre;Fox1 hippocampus. (C) Immunoblot analysis of wild type (WT) and TrkB.T1 knockout (T1-/-) hippocampus blotted with an antibody against the TrkB extracellular domain.
+**Figure 4.:** T1 isoform levels in the hippocampus of Rbfox1 overexpressing animals. (A) Schematic representation of the murine Ntrk2 (TrkB) gene transcripts annotated from ENSEMBL (highlighted in green). In each transcript exons and introns are indicated with vertical and horizontal lines respectively. TrkB.FL (Ntrk2-201) and TrkB.T1 (Ntrk2-202) are indicated (Picture modified from Ensembl genome browser; ENSMUSG00000055254). (B) RNA-Seq specific analysis of the Ntrk2 transcripts in control (Ctrl; Nes-Cre) and N-cre;Fox1 hippocampus (Nes-Cre;R26-Rbfox1+/flox). Isoform IDs are indicated on the Y axis while the average of RNA-sequencing reads for every transcript is indicated on the X axis. TrkB.T1 (Ntrk2-202; red box) is the only TrkB isoform significantly modulated in the N-cre;Fox1 hippocampus. (C) Immunoblot analysis of wild type (WT) and TrkB.T1 knockout (T1-/-) hippocampus blotted with an antibody against the TrkB extracellular domain.
 
 Gene ontology (GO) term analysis of the RNA-seq data revealed that the major biological processes affected in the N-cre;Fox1 hippocampus are involved in important neuronal functions comprising synapse organization, neurotransmitter secretion, axonal development and many others (Figure 5A; Supplementary file 1). Interestingly, we found that the TrkB-receptor ligand Bdnf is upregulated in the N-cre;Fox1 mouse although it is not clear whether this is the result of a compensatory mechanism in response to the upregulation of TrkB.T1 or whether Bdnf is a direct target of Rbfox1 (Supplementary file 1). The most surprising result came from the parallel analysis, using identical parameters, of the Rbfox1-KO and the N-cre;Fox1 hippocampal RNA-seq raw data (Vuong et al., 2018). In fact, we found that the gene-isoforms that are differentially expressed in the hippocampus of N-cre;Fox1 mice are mostly different from the gene-isoforms affected by Rbfox1 deletion [Figure 5B; Supplementary file 1 and 2; (Vuong et al., 2018) (Gehman et al., 2011). These findings were further supported by the very limited or complete lack of overlap of genes that are dysregulated by hippocampal Rbfox1 gain of function (N-cre;Fox1) or Rbfox1 loss of function in brain (Rbfox1-KO) (Gehman et al., 2011) or hippocampal neurons lacking both Rbfox1 and Rbfox3 [(Figure 5—figure supplement 1) (Lee et al., 2016).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig5-v2.jpg)
+
+**Figure 5.:** (A) Dot plot showing the top enriched biological process Gene Ontology (GO) terms. Note that significant over-represented GO terms (q-value <0.05) are neuronal related processes. GO terms are displayed on the left Y axis. (B) Venn diagram showing the number of overlapping gene-isoforms differentially expressed in N-cre;Fox1 and Rbfox1 knockout (Rbfox1-KO) hippocampus (Vuong et al., 2018).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** RNA-seq analysis comparing gene-isoforms modulated by hippocampal Rbfox1 upregulation (N-cre;Fox1) and hippocampal neuron Rbfox1 and Rbfox3 knockout (Lee et al., 2016), or whole brain Rbfox1-knockout (Gehman et al., 2011). Venn diagram showing the limited overlap of genes modulated in N-cre;Fox1 hippocampus relative to hippocampal neurons with Rbfox1 and Rbfox3 double knockout (A), nuclear Rbfox1 and Rbfox3 knockout (B) or cytoplasmic Rbfox1 and Rbfox3 knockout (C). Note that the specific knockout of the nuclear or cytoplasmic Rbfox1 isoforms in Lee et al. (2016) was achieved by rescuing the complete Rbfox1 KO with the cytoplasmic (Rbfox1_C) or nuclear isoform (Rbfox1_N) respectively. (D) Venn diagram showing the overlap of genes modulated in N-cre;Fox1 hippocampus and whole brain Rbfox1-KO.
 
 Next, we decided to investigate the physiological consequences of TrkB.T1 changes of expression. Rbfox1 upregulation causes a specific increase in the levels of TrkB.T1 without changing the expression of TrkB full-length (TrkB.FL). Therefore, we created an in vitro system to mimic this situation and study BDNF/TrkB signaling. We first generated a cell line with stable expression of TrkB.FL (HEK293-TrkB.FL) followed by transfection with a plasmid to express increasing amounts of TrkB.T1. Stimulation with BDNF showed an inverse correlation between TrkB.T1 expression levels and TrkB.FL (p-TrkB.FL) and ERK (p-ERK) phosphorylation suggesting an impairment in TrkB.FL signaling when TrkB.T1 is upregulated (Figure 6A). Importantly, deletion of TrkB.T1 in primary hippocampal neurons increased both basal as well as BDNF-stimulated p-TrkB.FL and p-ERK compared to control neurons suggesting that TrkB.T1 expression levels are potent regulators of TrkB.FL signaling (Figure 6B,C,D).
 
@@ -78,6 +114,18 @@ Since BDNF and TrkB are potent modulators of synaptic transmission and plasticit
 **Figure 7.:** T1 in synaptosomes. (A) Western blot analysis of TrkB isoform, PSD-95 and Rb-Fox1 expression in total homogenates (H), cytosolic (C) and synaptosome fraction (Syn) from hippocampus of control (Ctrl; Nes-Cre) and N-cre;Fox1 mouse brains. PSD-95 was used as control for enrichment of the synaptosomal fraction. (B) Immunoblot quantification of TrkB.FL, TrkB.T1 and Rbfox1 specific bands in the synaptosomal fraction as in (A); n = 3 ± SEM, *** = p ≤ 0.001, * = p ≤ 0.05 (Student’s t-test).
 
 Therefore, we tested the physiological significance and net outcome of Rbfox1-induced upregulation of TrkB.T1 by studying hippocampal synaptic plasticity (Figure 8). Due to the fact that Rbfox1 affects several genes regulating synaptic plasticity [Figure 5A; Supplementary file 1; (Gehman et al., 2011) we focused on BDNF-induced long term potentiation (LTP) at the Schaffer collateral-CA1 neuron synapses to dissect the specific effect on LTP caused by alterations in BDNF/TrkB signaling. We applied extracellular BDNF (20 ng/ml) to hippocampal slices from control mice for 20 min while the field excitatory postsynaptic potentials (fEPSPs) were elicited at 20 s intervals. As previously reported, BDNF induced a strong, gradual increase in the fEPSP in control N-cre (Ctrl) hippocampi (Kang and Schuman, 1995). Surprisingly, N-cre;Fox1 animals had a blunted induction of LTP in response to BDNF (Figure 8) and at 50 min this response was only about 30% of Ctrl (Ctrl 218.14 ± 22.42% vs. N-cre;Fox1 72.95 ± 12.82%) (Figure 8A–C). To test whether the BDNF-induced LTP deficit in the mutant animals was caused by the augmented TrkB.T1 expression, we introduced a TrkB.T1 KO allele in N-cre;Fox1 (N-cre;Fox1;T1+/-) mouse model to reduce its levels. As shown in Figure 8—figure supplement 1, this strategy led to a significant, although partial rescue of the BDNF-induced LTP deficit caused by Rbfox1 upregulation. Interestingly, analysis of BDNF-induced LTP in TrkB.T1 heterozygous animals (T1+/-) was similar to that of controls, suggesting that TrkB.T1 is not haploinsufficient and its levels influence BDNF-induced LTP only in the situation of upregulation (Figure 8—figure supplement 2). To further test whether TrkB.T1 levels are most critical in neurons, where Rbfox1 is expressed, we introduced a conditional TrkB.T1-loxP allele into the N-cre;Fox1 model (N-cre;Fox1;T1-Flx). This strategy allows for the simultaneous induction of Rbfox1 activation, which causes TrkB.T1 upregulation, and deletion of one copy of TrkB.T1 in the same neurons where Nes-cre is active. Importantly, this strategy also led to a partial rescue of BDNF-induced LTP over time, which became significant at 50 min (187.97 ± 49.26%) strongly suggesting that the TrkB.T1 up-regulation in neurons caused by Rbfox1 is causing the impairment in BDNF-induced LTP (Figure 8A–C). Analysis of the Shaffer collateral-CA1 excitability (Input/Output relationship Figure 8E) and presynaptic function with paired pulse stimulation (Figure 8F) showed no differences between the controls and mutant animals suggesting that hippocampal circuitries overall are not affected by the genetic manipulations. Taken together, these data strongly suggest that Rbfox1 upregulation leads to a deficit in the BDNF-induced LTP caused, at least in part, by an increase in TrkB.T1 receptor expression.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig8-v2.jpg)
+
+**Figure 8.:** T1 receptor allele. (A) Averaged time-course of the field excitatory postsynaptic potential (fEPSP) slope in hippocampal slices from control (Ctrl = Nes Cre, n = 10), N-cre;Fox1 (Nes-Cre;R26-Rbfox1+/flox, n = 10) and N-cre;Fox1;T1-Flx (Nes-Cre;R26-Rbfox1+/flox; TrkB.T1+/flox, n = 8) mice after extracellular application of BDNF (20 ng/ml). Values are expressed as fEPSP percentage of the baseline values (average of 5 min before BDNF application, mean ± SEM). BDNF application (20 min) is indicated by the black horizontal bar. (B) Histogram showing mean ± SEM of the fEPSP slope average at 50 min after BDNF infusion; ** = p ≤ 0.01; * = p ≤ 0.05; ns = p > 0.05 (One-way ANOVA followed by Tukey’s test). (C) Representative recording traces of slices before (baseline = black line) and 50 min after BDNF application (red line). (D) Western blot analysis of hippocampi from Ctrl, N-cre;Fox1 and N-cre;Fox1;T1-Flx mice probed with anti TrkB, Rbfox1 and Gapdh antibodies. (E) Input/Output relationship of Shaffer collateral projections on CA1 pyramidal neurons of Ctrl and N-cre;Fox1 hippocampal slices. Slope of fEPSP reported as percentage of the maximal recorded values plotted against the stimulation current. (F) Ratio between the second and first fEPSP evoked by the stimulation of Shaffer collateral and recorded in the CA1-radiatum at increasing time latency from 20 to 400 ms of Ctrl and N-cre;Fox1 hippocampal slices.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** T1 receptor allele. (A) Averaged time-course of the field excitatory postsynaptic potential (fEPSP) slope in hippocampal slices from control (Ctrl = Nes Cre, n = 10), N-cre;Fox1(Nes-Cre;R26-Rbfox1+/flox; n = 10) and N-cre;Fox1;T1+/- (Nes-Cre;R26-Rbfox1+/flox;TrkB.T1+/-; n = 13) mice after extracellular application of BDNF (20 ng/ml). Values are expressed as fEPSP percentage of the baseline values (average of 5 min before BDNF application, mean ± SEM). BDNF application (20 min) is indicated by the black horizontal bar. (B) Histogram showing mean ± SEM of the fEPSP slope average at 50 min after BDNF infusion; *** = p ≤ 0.001; ** = p ≤ 0.01; * = p ≤ 0.05 (Student’s t-test). (C) Representative recording traces of slices before (baseline = black line) and 50 min after BDNF application (red line). (D) Western blot analysis of hippocampus expression of TrkB, Rbfox1 and Gapdh of animals analyzed in (A–C).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/49673/elife-49673-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** T1 heterozygous animals. (A) Averaged time-course of changes in field excitatory postsynaptic potential (fEPSP) slope after extracellular application of BDNF (20 ng/ml) in mouse hippocampal slices from control (Ctrl; Nes-cre, n = 10) and TrkB.T1 heterozygous animals (T1+/-; n = 8). Values are expressed as fEPSP percentage of baseline values (average of 5 min before BDNF application, mean ± SEM). BDNF application (20 min) is indicated by the black horizontal bar. (B) Histogram showing the average mean ± SEM of the fEPSP slope at 50 min after BDNF infusion (n.s.: Student’s t-test). (C) Western blot analysis of hippocampal expression of TrkB, Rbfox1 and Gapdh of animals as in (A).
 
 ## Discussion
 
@@ -99,19 +147,190 @@ In all, our study lays the foundation to investigate whether upregulation of Rbf
 
 ## Materials and methods
 
-## Mouse models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Description</th>
+      <th>Reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M.musculus)</td>
+      <td>Rbfox1flox/flox</td>
+      <td>(Gehman et al., 2011) Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:014089, RRID:IMSR_JAX:014089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.musculus)</td>
+      <td>Nes-cre</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:003771, RRID:IMSR_JAX:003771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M.musculus)</td>
+      <td>Gt(ROSA)26Sor-LacZ</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:003309, RRID:IMSR_JAX:003309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>CAG-STOP-eGFP-ROSA26TV</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_15912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (rabbit polyclonal)</td>
+      <td>Agilent (Dako)</td>
+      <td>Agilent Cat# Z0334, RRID:AB_10013382</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TrkB (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# 07–225, RRID:AB_310445</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TrkB (C13) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-119, RRID:AB_632559</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TrkC (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 3376, RRID:AB_2155283</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# MAB374, RRID:AB_2107445</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cre (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 15036, RRID:AB_2798694</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rbfox1 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# MABE985, RRID:AB_2737389</td>
+      <td>WB (1:1000); IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rbfox2 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Cat# A300-864A, RRID:AB_609476</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rbfox3 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# MAB377, RRID:AB_2298772</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tra2b (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>Bethyl Cat# A305-011A, RRID:AB_2621205</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD95 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# AB9708, RRID:AB_2092543</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-TrkB (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 9141, RRID:AB_2298805</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ERK (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 9106, RRID:AB_331768</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 9102, RRID:AB_330744</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-47778 HRP, RRID:AB_2714189</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-III-Tubulin (mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>Covance Cat# MMS-435P, RRID:AB_2313773</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-mouse Alexa Fluor 488 Conjugated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-21202, RRID:AB_141607</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-rabbit Alexa Fluor 555 Conjugated</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-31572, RRID:AB_162543</td>
+      <td>IF (1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse models
 
 The Rbfox1 transgenic mouse model (R26-Fox1) was generated by targeting the Gt(ROSA)26Sor locus (Chromosome 6) with a CTV vector (Addgene #15912) to conditionally express murine Rbfox1. Rbfox1 cDNA (ID:6821627, Dharmacon) was cloned into the CTV vector using the AscI restriction enzyme site. In the targeting vector, a removable STOP cassette flanked by loxP sites is present in between a CAG promoter and the Rbfox1 cDNA (Figure 1—figure supplement 2A). The targeting vector was electroporated in the CJ7 embryonic stem cell line (129/sv), as previously described (Tessarollo, 2001), and recombinant clones were injected into C57BL/6J blastocysts to produce chimeras that transmitted the targeted Gt(ROSA)26Sor allele to the progeny. Animals were backcrossed into a pure C57BL/6J background for about 10 generations. TrkB.T1 conditional knockout mice (TrkB.T1flox/flox) are from Dorsey et al. (2006), while Rbfox1 conditional knockout (Gehman et al., 2011), Nes-cre (JAX strain 003771) and Gt(ROSA)26Sor-LacZ transgenic mice (JAX strain 003309) were obtained from the Jackson Laboratory. Animals were bred in a specific, pathogen-free facility with food and water ad libitum. All experimental procedures followed the National Institutes of Health Guidelines for animal care and use, and were approved by the NCI-Frederick Animal Care and Use Committee.
 
-## X-Gal staining of brain sections (β-galactosidase activity)
+### X-Gal staining of brain sections (β-galactosidase activity)
 
 Gt(ROSA)26Sor-LacZ mice and Nes-cre; Gt(ROSA)26Sor-LacZ mice were transcardially perfused with phosphate buffered saline (PBS), followed by PFA 4% in PBS at RT. Brains were dissected and cryoprotected in 30% sucrose solution (in PBS) overnight at 4°C. Floating brain sections (50 µm) were collected in PBS and stained with X-Gal staining solution for 5 min at 30°C in the dark and washed in PBS. X-Gal staining solution in PBS: 2 mg/ml X-Gal (ThermoFisher Scientific), 5 mM K3Fe(CN)6, 5 mM K4Fe(CN)6, 2 mM MgCl2, 0.25% Triton X-100.
 
-## Immunofluorescence of brain sections
+### Immunofluorescence of brain sections
 
 Mice were perfused in PFA 4% in PBS and brains dissected and cryoprotected in 30% sucrose solution (in PBS) overnight at 4C. After sectioning, floating brain sections (50 µm) were collected in PBS, blocked 30 min at RT in blocking solution (10% normal donkey serum, 0.1% Triton X-100 in PBS) and incubated overnight at 4°C with primary antibodies. Sections were then washed three times with PBS and incubated with secondary antibodies in PBS for 2 hr at RT. Sections were washed again three times in PBS and stained with DAPI (Invitrogen) for 5 min at RT and imaged using Zeiss LCI 510 Meta confocal microscope. Primary antibodies were: anti-Rbfox1 (1D10, Millipore), anti-GFAP (Z0334, Dako). Secondary antibodies were: donkey-anti-mouse Alexa Fluor 488 (A21202, Invitrogen) and donkey-anti-rabbit Alexa Fluor 555 (A31572, Invitrogen).
 
-## Hippocampal neuron cultures
+### Hippocampal neuron cultures
 
 Hippocampi used to generate primary neurons were collected from E17.5/E18.5 fetuses. After removal of the meninges from each cortex, hippocampi were dissected and collected in DMEM serum free media (Gibco). The hippocampal tissue was minced into small pieces, digested with Trypsin-EDTA (Gibco) at 0.125% for 25 min at 37°C, transferred into a new tube containing 2 ml of DMEM containing 10% FBS to inactivate trypsin and dissociated using a sterile Pasteur glass pipette flamed to slightly narrow the opening, triturated up and down 6–8 times. A last passage to facilitate single cell dissociation was done using a flame-pulled Pasteur glass pipette, triturating up and down 1–2 times. 80–100 µl of cell suspension was counted using Trypan Blue for live staining while the remaining cell suspension was centrifuged at 2000 rpm for 5 min. The cell pellet was re-suspended in DMEM with 10% FBS to obtain a concentration of 5 × 105 cells in 200 µl. 5 × 105 cells (200 µl of cell suspension) were pre-plated in the center of 35 mm dishes previously treated with Poly-D Lysine (P6407, Sigma Aldrich) and incubated for 2 hr at 37°C before adding 2 ml of Neurobasal media with B27 supplement (Gibco) to each dish. After 24 hr, AraC 1 µM (C6645, Sigma Aldrich) was added only once to the cultured neurons to avoid proliferation of dividing cells. Half of the Neurobasal media supplemented with B27 was replaced every 2 days.
 
@@ -119,17 +338,17 @@ Lentiviral expressing vectors GFP control, Rbfox1 (ID:6821627, Dharmacon), Rbfox
 
 Primary neurons were starved in Neurobasal media without B27 supplement (Gibco) for 5 hr before BDNF treatment for 5 min (1 ng/ml; Alomone Labs, Cat# B-250).
 
-## Western blot analysis
+### Western blot analysis
 
 Mouse hippocampi from 2 to 3 months old mice were quickly dissected in cold PBS and lysed in Precellys ceramic lysing kit tube with 0.5 ml of RIPA lysis buffer (20–188, Millipore) using three cycles of 20 s/cycle at 5000 rpm in PRECELLYS 24 (Bertin Technologies). Lysates were then incubated 20 min at 4°C. After the incubation, lysates were centrifuged at top speed (13,000 rpm) using a table-top centrifuge at 4°C. Only the top cleared part of the lysates was collected and transferred into new tubes. The total amount of protein was then quantified using BCA assay (23225, ThermoFisher Scientific) and samples were prepared using the same amount of total protein before adding Laemmli sample buffer 2X (S3401, Sigma-Aldrich). The samples were heated at 95°C for 5 min before being loaded in 4–12% NuPAGE (ThermoFisher Scientific) precast gels for western analysis.
 
 Primary hippocampal neurons were lysed by adding 150 µl of Laemmli sample buffer 2X directly into the culture dishes after being washed with cold PBS. The lysed neurons were then transferred into 1.5 ml tubes and sonicated using Bioruptor-300 (Diagenode) to shred genomic DNA and eliminate sample viscosity. Samples were then heated at 95°C for 5 min before being loaded in 4–12% NuPAGE precast gels for western blot analysis. After being transferred to PVDF membranes (LC2005, ThermoFisher Scientific), blots were blocked in 5% non-fat milk in TBS-Tween (0.1%) and incubated overnight at 4°C with specific antibodies. Antibodies were: anti-TrkB (against the extracellular domain of TrkB and therefore recognizing all TrkB isoforms; Millipore 07–225), anti-TrkB.T1 C13 (sc-119; Santa Cruz), anti-TrkC (C44H5, Cell Signaling), anti GAPDH (MAB374; Millipore), anti-Cre (Cre recombinase, D7L7L Cell Signaling), anti-Rbfox1 (1D10, a kind gift of Dr. Doug Black, and Millipore), anti-Rbfox2 (A300-864A Bethyl Laboratories), anti-Rbfox3 (MAB377, Millipore) anti-Tra2β (A305-011A Bethyl Laboratories) anti-PSD-95 (Millipore AB9708), anti-phospho-TrkB (#9141, Cell Signaling), anti-phospho-ERK (#9106, Cell Signaling), anti-ERK (#9102, Cell Signaling), β-Actin (Santa Cruz sc-47778) and anti β-III-Tubulin (Tuj1, Covance). After incubation with the appropriate horseradish peroxidase (HRP)-conjugated secondary antibodies (Millipore), membranes were incubated with enhanced chemilumescent substrate (34076, ThermoFisher Scientific) for detection of HRP enzyme activity and visualized in a Syngene gel documentation system. Bands in immunoblots were quantified by Syngene software. Student t-test was applied for statistical significance assessment.
 
-## Synaptosomes preparation
+### Synaptosomes preparation
 
 Synaptosomes were obtained from the whole hippocampi of control animals (Nes-Cre; Ctrl) and N-cre;Fox1 animals (Nes-Cre;R26-Rbfox1+/flox). Synaptosomes were isolated using Syn-PER Synaptic Protein Extraction Reagent (ThermoFisher Scientific Cat.No. 87793): each hippocampus was homogenized in 700 µl ice-cold Syn-PER reagent previously added with EDTA-free protease inhibitors (Roche Cat.No. 04 693 159 001) using a tissue homogenizer at low speed for 5 s. Homogenate samples (H) were collected (100 µl) before proceeding to centrifuge the remaining homogenate at 2.1 rcf/10 min/ +4°C. Supernantant (500 µl) was collected, transferred to a new tube and centrifuged again at 16.1 rcf/10 min/ +4°C. 400 µl of supernatant was collected as cytosolic fraction (C) while the pellet was re-suspended in 200 µl of ice cold Syn-PER reagent as synaptosome suspension (Syn). All the fractions (homogenates, cytosolic fractions, synaptosome suspensions) were then sonicated at +4°C using Bioruptor-300 (Diagenode) [30 s ON/30 s OFF for 10 cycles] before using BCA assay (23225, ThermoFisher Scientific) for total protein quantification. Samples were then prepared for western blot using equal amounts of total protein before adding Laemmli sample buffer 2X (S3401, Sigma-Aldrich) and loaded on 4–12% NuPAGE precast gels. Student t-test was applied for statistical significance assessment.
 
-## qPCR
+### qPCR
 
 Total RNA was extracted from primary neurons or hippocampi using Qiagen RNeasy Mini kit (Cat.no 74104) according to manufacturer’s instruction. cDNA was then generated using SuperScript III First-Strand Synthesis System (Cat. No 18080–051, ThermoFisher Scientific). Real time PCR was performed using BioRad iTaq Universal SYBR-green Supermix (Cat.No. 172–5120) in a MX3000P (Agilent Technologies) apparatus with the following program: 95°C for 3 min; 95°C 10 s, 60°C 20 s for 40 cycles; 95°C 1 min and down to 55°C (gradient of 1°C) for 41 cycles (melting curve step). Delta Ct values were obtained using GAPDH as reference gene.
 
@@ -151,7 +370,7 @@ Rbfox1 forward: 5’- TGGCCCCAGTTCACTTGTAT-3’
 
 Rbfox1 reverse: 5’- GCAGCCCTGAAGGTGTTGTA-3’
 
-## RNA immunoprecipitation (RIP)
+### RNA immunoprecipitation (RIP)
 
 RNA immunoprecipitation was performed following the protocol from Jayaseelan et al. (2011). Briefly, primary hippocampal neurons were cultured 4 days in vitro before being lysed using PLB buffer (100 mM KCl, 5 mM MgCl2, 10 mM HEPES pH 7, 0.5% Nonidet P-40, 1 mM DTT, 200 U/ml RNase OUT, 1 tablet of EDTA-free Complete Mini Protease Inhibitor). Protein-G magnetic beads (Dynabeads – ThermoFisher Scientific) were washed twice in NET-2 buffer (150 mM Tris-HCl pH 7, 100 mM Tris-HCl pH 8, 750 mM NaCl, 5 mM MgCl2, 0.25% NP-40, 20 mM EDTA pH 8, 1 mM DTT, 200 U/ml RNase OUT) and then conjugated with Rbfox1 (1D10) antibody overnight at 4°C. Beads/antibody slurry was washed six times using NT-2 buffer (150 mM Tris-HCl pH 7, 100 mM Tris-HCl pH 8, 750 mM NaCl, 5 mM MgCl2, 0.25% NP-40) and finally resuspended in 900 µl of NET-2 buffer for each sample. Primary neuron lysates were centrifugated at top speed (benchtop centrifuge) for 10 min at 4°C and 100 µl of cleared top lysate were added to each IP sample and incubated at 4°C overnight in rotation. Part of the initial samples (1:10) were collected as Inputs or Total samples. After the incubation, beads were washed six times with NT-2 buffer and then resuspended in 150 µl of Proteinase-K digestion buffer (NT-2 buffer supplemented with: 1% SDS, 1.2 mg/ml Proteinase-K) and incubated at 55°C for 30 min in a thermomixer.
 
@@ -185,7 +404,7 @@ Sirt1 forward: 5’-GAGCTGGATGATATGACGCTG-3’
 
 Sirt1 reverse: 5’-CAGAGACGGCTGGAACTGTC-3’
 
-## RNA stability
+### RNA stability
 
 Primary hippocampal neurons for RNA stability studies were obtained by crossing Nes-Cre animals with R26-Rbfox1flox/flox animals. Embryos at E18.5 stage were dissected and fast genotyped by using EZ Fast Tissue Tail PCR Genotypying Kit (EZ Bioresearch) in order to group Nes-Cre;R26-Rbfox1flox/+ hippocampi and R26-Rbfox1flox/+ hippocampi. RNA stability was assessed in hippocampal neurons at 4 DIV using Click-iT Nascent RNA Capture Kit (C10365, ThermoFisher Scientific) following manufacturer’s instruction. Briefly, 0.2 mM 5-ethynyl uridine (EU) ribonucleotide homolog was added to the neurons media to label new nascent RNA for 5 hr (pulse). After 5 hr, the media was replaced with normal media (without EU) for 9 hr (chase). Neurons were lysed at time 0 hr (right after 5 hr EU pulse) and at time 9 hr (after 9 hr of EU free media) and the RNA isolated using Qiagen RNeasy Mini kit (Cat.no 74104) according to manufacturer’s instruction. Biotin azide was then chemically bound to the EU containing RNA molecules and streptavidin magnetic beads were used to capture the newly synthesized pool of RNA. cDNA was generated by using SuperScript VILO cDNA synthesis kit (11754–050, ThermoFisher Scientific).
 
@@ -211,17 +430,17 @@ TrkC.T1 reverse: 5’-GACACATCCCCACTCTGGAC-3’
 
 β-Actin reverse: 5’-TCTCAGCTGTGGTGGTGAAG-3’
 
-## RNA seq analysis
+### RNA seq analysis
 
 RNA quality was assessed using an Agilent Bioanalyser. RNA integrity numbers (RIN) were observed to be greater than nine for all samples. Libraries were constructed from hippocampal total RNA using Illumina’s TruSeq Stranded Total RNA Kit (RS-122–2201). Three biological replicates were used for each of the two experimental groups: Ctrl mice (Nes-Cre) and N-cre-Fox1 mice (Nes-Cre;R26-Rbfox1flox/+) of about 3 months of age and in the C57BL/6 background. Deep-sequencing was performed on an Illumina HiSeq 4000 in paired-end mode with a read length of 150 base-pairs.
 
 The sequencing quality of the 99–153 million reads per sample was evaluated using FastQC (version 0.11.5), Preseq (version 2.0.3), Picard tools (version 1.119) and RSeQC (version 2.6.4). Reads were trimmed using Cutadapt (1.18) to remove adapter sequences, prior to mapping to the mm10 mouse reference genome using STAR (version 2.5.2b) in two-pass mode. Gene and transcript expression levels were quantified using RSEM (version 1.3.0) with gencode’s M16 mouse annotation. EBSeq (version 1.22.1) was used to test for differential isoform expression between experimental conditions. Group-based TPM filtering was applied to remove lowly expressed transcripts. Significant differentially expressed isoforms were identified with a false-discovery rate ≤0.05. The R package clusterProfiler (version 3.10.1) was used for gene ontology (GO) enrichment analysis of the significant differential expressed gene-isoforms identified by EBSeq. Significant over-represented biological process GO terms were identified with a q-value less than 0.05. The RNA-seq data generated for this study have been deposited in NCBI's Gene Expression Omnibus and is accessible through GEO Series accession number GSE136253.
 
-## iCLIP analysis
+### iCLIP analysis
 
 CLIP sequencing data (Damianov et al., 2016) (GSE76475) was downloaded from SRA using sratoolkit (version 2.9.2). Sequencing was done on Illumina HiSeq-2000 and pooled libraries were sequenced at a sequencing depth of ~15–18 million reads per sample. Sequencing quality was assessed using FastQC (version 0.11.5), Preseq (version 2.0.3), Picard tools (version 1.119), and deeptools (version 2.5.0.1). Illumina sequencing adapters were trimmed from reads using cutadapt (version 1.14). Reads were aligned to the mouse genome version mm10 using BWA (version 0.7.15). Once the quality of the data was ensured, tracks suitable for viewing in IGV were downloaded from GEO (GSM1835189, GSM1835195). Bedops (version 2.4.30) and crossmap (version 0.2.7) were used to lift-over genomic coordinates from mm9 to mm10. BAM files were generated using bedtools (version 2.27.1).
 
-## Cell lines
+### Cell lines
 
 A Rbfox1-inducible cell line was established by using Rbfox1 cDNA (ID:6821627, Dharmacon) and the Flp-In T-Rex 293 Cell Line system (R78007, ThermoFisher Scientific) according to the manufacturer instructions. Rbfox1 expression was induced by Doxycycline (D3447, Millipore-Sigma) 0.5 µg/ml. TrkB.T1 cDNA including the complete 3’UTR sequence (plasmid pLTM665) was transfected into the Rbfox1-Flp-In T-Rex 293 cells using X-tremeGENE 9 DNA Transfection Reagent (6365779001, Millipore-Sigma).
 
@@ -229,10 +448,10 @@ Neuro-2a (N2A) neuroblastoma cells (ATCC, CCL-131) were transfected using TrkB.T
 
 A HEK293 cell line with stable expression of TrkB.FL (HEK293-p618-2) was generated by transfecting HEK293 cells (ATCC, CRL-1573) with a TrkB.FL expression plasmid using X-tremeGENE 9 DNA Transfection Reagent (6365779001, Millipore-Sigma) and by puromycin selection. TrkB.FL expressing HEK293-p618-2 were transiently transfected with TrkB.T1 expressing plasmid by using X-tremeGENE 9 DNA Transfection Reagent (6365779001, Millipore-Sigma) and starved for 5 hr in serum free media (DMEM) before treatment with recombinant BDNF. All cell lines tested negative for mycoplasma.
 
-## Electrophysiology
+### Electrophysiology
 
 Coronal mouse brain slice for electrophysiological recording containing dorsal hippocampus was prepared according to Ting et al. (2014). Briefly, 3 months-old mice were placed under deep Avertin anesthesia (250 mg/kg) and transcardially perfused with 25–30 mL of cold (10 C) carbogenated N-methyl-D-glucamine ACSF. Brains were extracted from the skull within 1 min, sectioned at 300 µm (Leica VT1200 vibratome) and appropriately incubated before recording (for all solutions and the complete procedure see section 2.1 on Materials and 3.1 Methods in Ting et al., 2014). For the electrophysiological recording, the slice was placed in a recording chamber under microscope (Zeiss Axioskop 2fs) and perfused with ACSF (2 ml/min; 28 C). A Teflon-coated concentric platinum–iridium electrode (FHC, ME USA) was placed in the stratum radiatum in the CA1 area of the dorsal HC, 300–400 µm from the recording electrode. Borosilicate glass recording electrodes were pulled (Sutter Instruments P90), ACSF filled to get 4–7 MΩ resistance, and placed in the apical dendritic region of CA1 pyramidal neurons. Field excitatory postsynaptic potentials (fEPSPs) were recorded in CA1 by activation of the Schaffer collaterals. An input-output curve was initially obtained by gradually increasing the stimulus intensity until the fEPSP reached a plateau. After which the stimulus was reduced to obtain an fEPSP that was 50% of the maximum level. Baseline recording was obtained by stimulating the slice every 20 s for approximately 45 min. Once the baseline was stabilized to obtain LTP, BDNF infusion was initiated and continued for 20 min (20 ng/ml; 2 ml/min). Recording was continued for 50 min. Field potential was recorded (Multiclamp 700b; Axon Instruments), digitized (10 kHz Digidata 1324), low-pass filtered (3 kHz, eight-pole Bessel), and stored (Clampex 9.2; Axon Instruments). Signals were analyzed off line (Clampfit 9.2; Axon Instruments), and the size of the fEPSP was evaluated by measuring the initial slope of the signal expressed as percentage of the variation from the baseline value (average of 5 min before the BDNF infusion). n = indicates the number of hippocampal slices analyzed (from ≥3 mice). One-way ANOVA followed by Tukey’s multiple comparisons test was applied for statistical significance assessment.
 
-## Statistics
+### Statistics
 
 Statistical significance was calculated using nonpaired two-tailed Student’s t-test. One-way ANOVA followed by Tukey’s multiple comparisons test was used for analysis of multiple groups (Figure 8, Figure 8—figure supplement 1). All data are reported as mean ± SEM. ns = p > 0.05, * = p ≤ 0.05, ** = p ≤ 0.01, *** = p ≤ 0.001. n values for each individual experiment are indicated in the figure legends. GraphPad-Prism software was used to analyze data.

@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03c4mmv16 School of Psychology, University of Ottawa Ottawa Canada
-2. https://ror.org/026k5mg93 School of Psychology, University of East Anglia Norwich United Kingdom
-3. https://ror.org/03rmrcq20 Department of Psychology, University of British Columbia Vancouver Canada
+1. School of Psychology, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
+2. School of Psychology, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))
+3. Department of Psychology, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
 
 † Corresponding author
 
@@ -47,23 +47,195 @@ In this study, we aimed to go beyond dichotomies commonly used in memory researc
 
 ## Results
 
-## Behavioral study
+### Behavioral study
 
 A sample of 106 participants rated their subjective experience during memory retrieval, using the same paradigm as the fMRI study, but were not scanned. Repeated-measures ANOVA showed that the main effect of memory was significant for all dependent variables (ps < .001). Self-relevance was lowest for general facts compared to all personal forms of memory, and lower for personal semantics (i.e., autobiographical facts and repeated events) than unique events (see Table 1 and Figure 1A). Additionally, the amount of visual detail increased from general facts to autobiographical facts to repeated events to unique events (see Table 1 and Figure 1B).
 
+**Table 1.**
+ t-test values for pairwise comparisons of memory types on self-relevance and visual details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>t(105)</th>
+      <th>p</th>
+      <th>g</th>
+      <th>CI 95% of g</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Self-relevance</td>
+    </tr>
+    <tr>
+      <td>General facts vs. autobiographical facts</td>
+      <td>−13.94</td>
+      <td>&lt; .001*</td>
+      <td>−1.35</td>
+      <td>[–1.61, –1.08]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. repeated events</td>
+      <td>−12.23</td>
+      <td>&lt; .001*</td>
+      <td>−1.18</td>
+      <td>[–1.43, –0.93]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. unique events</td>
+      <td>−14.90</td>
+      <td>&lt; .001*</td>
+      <td>−1.44</td>
+      <td>[–1.71, –1.17]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. repeated events</td>
+      <td>−0.61</td>
+      <td>.541</td>
+      <td>−0.06</td>
+      <td>[–0.25, 0.13]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. unique events</td>
+      <td>−4.49</td>
+      <td>&lt; .001*</td>
+      <td>−0.44</td>
+      <td>[–0.63, –0.24]</td>
+    </tr>
+    <tr>
+      <td>Repeated events vs. unique events</td>
+      <td>−4.32</td>
+      <td>&lt; .001*</td>
+      <td>−0.42</td>
+      <td>[–0.62, –0.22]</td>
+    </tr>
+    <tr>
+      <td colspan="5">Visual details</td>
+    </tr>
+    <tr>
+      <td>General facts vs. autobiographical facts</td>
+      <td>−5.14</td>
+      <td>&lt; .001*</td>
+      <td>−0.50</td>
+      <td>[–0.70, –0.30]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. repeated events</td>
+      <td>−6.56</td>
+      <td>&lt; .001*</td>
+      <td>−0.64</td>
+      <td>[–0.84, –0.43]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. unique events</td>
+      <td>−8.98</td>
+      <td>&lt; .001*</td>
+      <td>−0.87</td>
+      <td>[–1.09, –0.64]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. repeated events</td>
+      <td>−2.07</td>
+      <td>.041*</td>
+      <td>−0.20</td>
+      <td>[–0.39, –0.01]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. unique events</td>
+      <td>−5.46</td>
+      <td>&lt; .001*</td>
+      <td>−0.53</td>
+      <td>[–0.73, –0.33]</td>
+    </tr>
+    <tr>
+      <td>Repeated events vs. unique events</td>
+      <td>−3.45</td>
+      <td>&lt; .001*</td>
+      <td>−0.33</td>
+      <td>[–0.53, –0.14]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: *Significant after correction for multiple comparisons._
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/83645/elife-83645-fig1-v1.jpg)
 
-**Figure 1.:** A) self-relevance ratings and (B) visual details ratings per condition.Red points represent scores of individual participants (N = 106). A black line shows the median and red lines show the quartiles. *p < .05, ***p < .001.
+**Figure 1.:** Red points represent scores of individual participants (N = 106). A black line shows the median and red lines show the quartiles. *p < .05, ***p < .001.
 
 The conjunction of details within a spatial context, or a scene, is sometimes perceived as integral to the recollection of events (Hassabis and Maguire, 2009). From that perspective, visual details and scene imagery can be dissociable constructs. A smaller proportion of general facts evoked a scene compared to the three personal memory types (see Table 2 and Figure 2C). Similarly, a smaller proportion of autobiographical facts elicited images of a scene compared to repeated events and unique events. Repeated events and unique events did not differ in the proportion of memories perceived as scenes (see Appendix 1 for the statistical tests of vague/nothing and object responses).
 
+**Table 2.**
+ t-test values for pairwise comparisons of memory types on the proportion of scenes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Comparison</th>
+      <th>t(105)</th>
+      <th>p</th>
+      <th>g</th>
+      <th>CI 95% of g</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>General facts vs. autobiographical facts</td>
+      <td>−2.34</td>
+      <td>.021*</td>
+      <td>−0.23</td>
+      <td>[–0.42, –0.03]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. repeated events</td>
+      <td>−6.51</td>
+      <td>&lt; .001*</td>
+      <td>−0.63</td>
+      <td>[–0.84, –0.42]</td>
+    </tr>
+    <tr>
+      <td>General facts vs. unique events</td>
+      <td>−7.98</td>
+      <td>&lt; .001*</td>
+      <td>−0.77</td>
+      <td>[–0.99, –0.56]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. repeated events</td>
+      <td>−4.75</td>
+      <td>&lt; .001*</td>
+      <td>−0.46</td>
+      <td>[–0.66, –0.26]</td>
+    </tr>
+    <tr>
+      <td>Autobiographical facts vs. unique events</td>
+      <td>−6.52</td>
+      <td>&lt; .001*</td>
+      <td>−0.63</td>
+      <td>[–0.84, –0.42]</td>
+    </tr>
+    <tr>
+      <td>Repeated events vs. unique events</td>
+      <td>−1.28</td>
+      <td>.204</td>
+      <td>−0.12</td>
+      <td>[–0.31, 0.07]</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: *Significant after correction for multiple comparisons._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/83645/elife-83645-fig2-v1.jpg)
 
-**Figure 2.:** A) nothing/vague, (B) an object, (C) a scene.Red points represent scores of individual participants (N = 106). A black line shows the median and red lines show the quartiles. *p < .05, **p < .01, ***p < .001.
+**Figure 2.:** Red points represent scores of individual participants (N = 106). A black line shows the median and red lines show the quartiles. *p < .05, **p < .01, ***p < .001.
 
-## fMRI study
+### fMRI study
 
-## Non-rotated PLS with a priori contrast
+#### Non-rotated PLS with a priori contrast
 
 We used a non-rotated PLS to test two theoretically plausible relations between the four memory conditions: a linear contrast (−3, –1, 1, 3) and one comparing general/autobiographical facts and repeated/unique events (−1, –1, 1, 1; abbreviated to facts vs. events subsequently). A linear contrast would be consistent with the continuum perspective of personal semantics (see Box 3 in Renoult et al., 2012), which would predict an increase in activity from general facts to autobiographical facts, from autobiographical facts to repeated events, and from repeated events to unique events. The increase in visual details (described above) followed precisely this pattern. Similarly, personal relevance increased from general facts to personal semantics (autobiographical facts and repeated events) to unique events, suggesting similar dynamics between component processes (e.g., contextual specificity may increase along with personal relevance). The facts vs. events contrast would favor the view of personal semantics as a subtype of general semantics (see Box 2 in Renoult et al., 2012). Of all personal semantics, autobiographical facts correspond best with this view due to its abstraction from events, its more objective quality than other forms of personal knowledge (e.g., trait knowledge), and the feeling of ‘knowing’ the ‘facts’ rather than recollecting events (i.e., ‘noetic’ consciousness; Tulving, 2002). Repeated events would instead group with unique events as ‘event memory’ due to the common construction of a scene (Rubin and Umanath, 2015). Indeed, participants in the behavioral study perceived scenes as frequently for repeated and unique events. However, it is less clear how one would accommodate the greater number of scenes evoked for autobiographical than general facts in a way that aligns with that perspective. Thus, the conjunction of the visualization of scenes, amount of visual details, and personal relevance agrees most with a continuum of contextual specificity.
 
@@ -79,11 +251,337 @@ The linear contrast and facts vs. events contrast were significant (ps < .001), 
 
 The linear contrast showed that activity increased from general to autobiographical facts, from autobiographical facts to repeated events, and from repeated to unique events bilaterally in the large regions of the frontal cortex (frontal pole, paracingulate gyrus, frontal medial cortex), precuneus, posterior cingulate cortex, retrosplenial cortex, angular gyrus, and with activity of the right middle frontal gyrus, left parahippocampal gyrus, left hippocampus, and left middle and superior temporal gyrus (see Figures 3 and 5, Table 3, and Appendix 2 for additional lags). Activity progressively decreased from general to autobiographical facts, from autobiographical facts to repeated events, and from repeated to unique events in areas of the right frontal inferior gyrus, superior parietal lobule, supramarginal gyrus, and bilateral lateral occipital cortex. In supplementary analyses, the brain scores of each memory condition differed from one another (see Appendix 2).
 
+**Table 3.**
+ Peaks of clusters for the linear contrast at lag 7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bootstrap ratio</th>
+      <th>Cluster size (voxels)</th>
+      <th>X (mm)</th>
+      <th>Y (mm)</th>
+      <th>Z (mm)</th>
+      <th>Harvard-Oxford, probability atlas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Negative saliences</td>
+    </tr>
+    <tr>
+      <td>−5.21</td>
+      <td>362</td>
+      <td>40.0</td>
+      <td>−80.0</td>
+      <td>25.0</td>
+      <td>72.0% Right Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>−4.76</td>
+      <td>188</td>
+      <td>42.5</td>
+      <td>−50.0</td>
+      <td>57.5</td>
+      <td>46.0% Right Superior Parietal Lobule; 20.0% Right Angular Gyrus</td>
+    </tr>
+    <tr>
+      <td>−4.75</td>
+      <td>103</td>
+      <td>−47.5</td>
+      <td>−70.0</td>
+      <td>5.0</td>
+      <td>84.0% Left Lateral Occipital Cortex inferior division</td>
+    </tr>
+    <tr>
+      <td>−4.61</td>
+      <td>102</td>
+      <td>50.0</td>
+      <td>15.0</td>
+      <td>17.5</td>
+      <td>46.0% Right Inferior Frontal Gyrus pars opercularis</td>
+    </tr>
+    <tr>
+      <td colspan="6">Positive saliences</td>
+    </tr>
+    <tr>
+      <td>5.03</td>
+      <td>113</td>
+      <td>−5.0</td>
+      <td>30.0</td>
+      <td>37.5</td>
+      <td>63.0% Left Paracingulate Gyrus; 13.0% Left Superior Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>5.29</td>
+      <td>116</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>42.5</td>
+      <td>22.0% Right Middle Frontal Gyrus; 19.0% Right Superior Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>6.10</td>
+      <td>94</td>
+      <td>−57.5</td>
+      <td>−5.0</td>
+      <td>−12.5</td>
+      <td>37.0% Left Middle Temporal Gyrus Anterior Division; 23.0% Left Superior Temporal Gyrus Anterior Division; 9.0% Left Superior Temporal Gyrus Posterior Division</td>
+    </tr>
+    <tr>
+      <td>6.12</td>
+      <td>105</td>
+      <td>−52.5</td>
+      <td>15.0</td>
+      <td>37.5</td>
+      <td>54.0% Left Middle Frontal Gyrus; 5.0% Left Inferior Frontal Gyrus pars opercularis</td>
+    </tr>
+    <tr>
+      <td>6.24</td>
+      <td>110</td>
+      <td>−27.5</td>
+      <td>−40.0</td>
+      <td>−10.0</td>
+      <td>29.0% Left Parahippocampal Gyrus Posterior Division; 27.0% Left Lingual Gyrus; 8.0% Left Temporal Occipital Fusiform Cortex; 7.0% Left Temporal Fusiform Cortex Posterior Division</td>
+    </tr>
+    <tr>
+      <td>6.25</td>
+      <td>233</td>
+      <td>−5.0</td>
+      <td>−40.0</td>
+      <td>42.5</td>
+      <td>48.0% Left Cingulate Gyrus Posterior Division; 31.0% Left Precuneus Cortex</td>
+    </tr>
+    <tr>
+      <td>6.65</td>
+      <td>137</td>
+      <td>45.0</td>
+      <td>−75.0</td>
+      <td>37.5</td>
+      <td>68.0% Right Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>6.85</td>
+      <td>401</td>
+      <td>−20.0</td>
+      <td>30.0</td>
+      <td>42.5</td>
+      <td>51.0% Left Superior Frontal Gyrus; 8.0% Left Middle Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>7.19</td>
+      <td>647</td>
+      <td>2.5</td>
+      <td>55.0</td>
+      <td>−7.5</td>
+      <td>43.0% Right Frontal Pole; 28.0% Right Frontal Medial Cortex; 8.0% Right Paracingulate Gyrus</td>
+    </tr>
+    <tr>
+      <td>8.87</td>
+      <td>444</td>
+      <td>−30.0</td>
+      <td>−82.5</td>
+      <td>45.0</td>
+      <td>44.0% Left Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>10.36</td>
+      <td>1118</td>
+      <td>−15.0</td>
+      <td>−62.5</td>
+      <td>22.5</td>
+      <td>54.0% Left Precuneus Cortex; 12.0% Left Supracalcarine Cortex</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Thresholded at bootstrap ratio at ± 3 (p < .001), minimal cluster size of 80 voxels, and a minimal distance of 10 voxels. Labels from the Harvard-Oxford (Desikan et al., 2006) atlas obtained using AtlasReader (Notter et al., 2019)._
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/83645/elife-83645-fig5-v1.jpg)
 
-**Figure 5.:** a) –27.5 –40 –10 (posterior division of the left parahippocampal gyrus), (b) –15.0 –62.5 22.5 (left precuneus cortex), (c) –57.5 –5 –12.5 (anterior division of the left middle temporal gyrus), (d) 2.5 55.0 –7.5 (right frontal pole), (e) –47.5 –70 5 (inferior division of the left lateral occipital cortex).(a and c) were common peaks for the two contrasts (linear and facts vs. events). (b, d, and e) were peaks of the linear contrast, but facts vs. events had a peak at nearby location (i.e., –47.5 –70 2.5 to e). GF = general facts, AF = autobiographical facts; RE = repeated events; UE = unique events.
+**Figure 5.:** (a and c) were common peaks for the two contrasts (linear and facts vs. events). (b, d, and e) were peaks of the linear contrast, but facts vs. events had a peak at nearby location (i.e., –47.5 –70 2.5 to e). GF = general facts, AF = autobiographical facts; RE = repeated events; UE = unique events.
 
 The facts vs. events contrast was similar to the linear contrast (see Figures 4 and 5, Table 4, and Appendix 3 for additional lags) with the first set of regions (i.e., frontal pole, precuneus, etc.) being associated with greater activity for events than facts, and the second set of regions (i.e., right frontal inferior gyrus, etc.) being associated with reduced activity for events than facts. In supplementary analyses, the statistical comparison of brain scores showed that general and autobiographical facts did not differ in how well they expressed the ‘facts’ portion of the LV, and repeated and unique events did not differ in how well they expressed the ‘events’ portion of the LV (see Appendix 3).
+
+**Table 4.**
+ Peaks of clusters for the facts vs. events contrast at lag 7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bootstrap ratio</th>
+      <th>Cluster size (voxels)</th>
+      <th>X (mm)</th>
+      <th>Y (mm)</th>
+      <th>Z (mm)</th>
+      <th>Harvard-Oxford, probability atlas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Negative saliences</td>
+    </tr>
+    <tr>
+      <td>−5.94</td>
+      <td>251</td>
+      <td>42.5</td>
+      <td>45</td>
+      <td>5</td>
+      <td>85.0% Right Frontal Pole</td>
+    </tr>
+    <tr>
+      <td>−5.59</td>
+      <td>170</td>
+      <td>57.5</td>
+      <td>12.5</td>
+      <td>15</td>
+      <td>55.0% Right Inferior Frontal Gyrus pars opercularis; 23.0% Right Precentral Gyrus</td>
+    </tr>
+    <tr>
+      <td>−5.30</td>
+      <td>465</td>
+      <td>57.5</td>
+      <td>−62.5</td>
+      <td>−10</td>
+      <td>52.0% Right Lateral Occipital Cortex Inferior Division; 15.0% Right Inferior Temporal Gyrus temporooccipital part; 9.0% Right Middle Temporal Gyrus temporooccipital part</td>
+    </tr>
+    <tr>
+      <td>−5.17</td>
+      <td>100</td>
+      <td>67.5</td>
+      <td>−42.5</td>
+      <td>22.5</td>
+      <td>19.0% Right Supramarginal Gyrus Posterior Division</td>
+    </tr>
+    <tr>
+      <td>−5.05</td>
+      <td>153</td>
+      <td>20</td>
+      <td>−70</td>
+      <td>55</td>
+      <td>58.0% Right Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>−5.05</td>
+      <td>300</td>
+      <td>60</td>
+      <td>−35</td>
+      <td>45</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>−4.70</td>
+      <td>202</td>
+      <td>−47.5</td>
+      <td>−70</td>
+      <td>2.5</td>
+      <td>87.0% Left Lateral Occipital Cortex Inferior Division</td>
+    </tr>
+    <tr>
+      <td colspan="6">Positive saliences</td>
+    </tr>
+    <tr>
+      <td>4.32</td>
+      <td>90</td>
+      <td>−5</td>
+      <td>30</td>
+      <td>37.5</td>
+      <td>63.0% Left Paracingulate Gyrus; 13.0% Left Superior Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>4.87</td>
+      <td>101</td>
+      <td>−10</td>
+      <td>−95</td>
+      <td>0</td>
+      <td>65.0% Left Occipital Pole</td>
+    </tr>
+    <tr>
+      <td>5.85</td>
+      <td>155</td>
+      <td>25</td>
+      <td>22.5</td>
+      <td>42.5</td>
+      <td>29.0% Right Superior Frontal Gyrus; 23.0% Right Middle Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>5.86</td>
+      <td>87</td>
+      <td>17.5</td>
+      <td>−95</td>
+      <td>0</td>
+      <td>50.0% Right Occipital Pole</td>
+    </tr>
+    <tr>
+      <td>6.21</td>
+      <td>153</td>
+      <td>−52.5</td>
+      <td>15</td>
+      <td>37.5</td>
+      <td>54.0% Left Middle Frontal Gyrus; 5.0% Left Inferior Frontal Gyrus pars opercularis</td>
+    </tr>
+    <tr>
+      <td>6.40</td>
+      <td>115</td>
+      <td>−57.5</td>
+      <td>−5</td>
+      <td>−12.5</td>
+      <td>37.0% Left Middle Temporal Gyrus Anterior Division; 23.0% Left Superior Temporal Gyrus Anterior Division; 9.0% Left Superior Temporal Gyrus Posterior Division</td>
+    </tr>
+    <tr>
+      <td>6.65</td>
+      <td>115</td>
+      <td>−27.5</td>
+      <td>−40</td>
+      <td>−10</td>
+      <td>29.0% Left Parahippocampal Gyrus Posterior Division; 27.0% Left Lingual Gyrus; 8.0% Left Temporal Occipital Fusiform Cortex; 7.0% Left Temporal Fusiform Cortex Posterior Division</td>
+    </tr>
+    <tr>
+      <td>6.88</td>
+      <td>487</td>
+      <td>0</td>
+      <td>55</td>
+      <td>−5</td>
+      <td>17.0% Right Frontal Pole; 12.0% Left Frontal Pole; 9.0% Right Paracingulate Gyrus; 9.0% Right Frontal Medial Cortex; 6.0% Left Paracingulate Gyrus; 6.0% Left Frontal Medial Cortex</td>
+    </tr>
+    <tr>
+      <td>7.08</td>
+      <td>421</td>
+      <td>−20</td>
+      <td>17.5</td>
+      <td>47.5</td>
+      <td>37.0% Left Superior Frontal Gyrus; 6.0% Left Middle Frontal Gyrus</td>
+    </tr>
+    <tr>
+      <td>7.09</td>
+      <td>163</td>
+      <td>45</td>
+      <td>−75</td>
+      <td>37.5</td>
+      <td>68.0% Right Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>9.43</td>
+      <td>470</td>
+      <td>−32.5</td>
+      <td>−82.5</td>
+      <td>42.5</td>
+      <td>65.0% Left Lateral Occipital Cortex Superior Division</td>
+    </tr>
+    <tr>
+      <td>9.55</td>
+      <td>1394</td>
+      <td>−7.5</td>
+      <td>−57.5</td>
+      <td>12.5</td>
+      <td>51.0% Left Precuneus Cortex; 7.0% Left Intracalcarine Cortex; 5.0% Left Supracalcarine Cortex</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Thresholded at bootstrap ratio at ± 3 (p < .001), minimal cluster size of 80 voxels, and a minimal distance of 10 voxels. Labels from the Harvard-Oxford (Desikan et al., 2006) atlas obtained using AtlasReader (Notter et al., 2019)._
 
 ## Discussion
 
@@ -101,15 +599,15 @@ Taken together, our data correspond with a continuum perspective of declarative 
 
 ## Materials and methods
 
-## fMRI study participants
+### fMRI study participants
 
 Fifty-three recruited participants (35 women, 18 men) were aged 24.89 years on average (SD = 4.51; range: 19–34) and attained a mean of 16.43 years of education (SD = 2.42). This sample size was the largest that was possible to achieve. The sample size is larger than similar studies (e.g., N ~12–28; Addis et al., 2011; Burianova and Grady, 2007; Ford et al., 2011; Holland et al., 2011). No formal power analysis was conducted. Participants responded to ads on university campuses and on social media. Candidates were retained if they were right-handed, native English speakers, free of any contraindication for MRI (e.g., ferromagnetic metal, back pain, claustrophobia), aged between 18 and 35 years, and had not experienced head injury, or neurological and psychiatric disorders. We excluded three participants because of an inadvertent phase encoding switch, one for an incidental finding, and one for ineligibility. Participants received a compensation of 30 CAD. The study received REB approval at the University of Ottawa (H08-16-32) and the Royal Ottawa Mental Health Centre (ROH; 2016023).
 
-## Behavioral study participants
+### Behavioral study participants
 
 The total sample included 181 participants (143 women, 34 men, 2 non-binary; 2 missing values); they were 18.79 years old on average (SD = 1.58; range: 17–34; 2 missing values) and had attained a mean of 12.67 years of education (SD = 1.02; 3 missing values). The possible small differences between proximal memory types (e.g., Addis et al., 2004b; Maguire and Mummery, 1999; Renoult et al., 2016) justified the large sample size. We recruited participants from a pool of students who received a credit toward their introductory or research methods course. The ad specified the eligibility criteria, which were the same as the fMRI study apart from those for MRI safety. We excluded participants who disclosed information that conflicted with the criteria (n for primary reason listed): 18–35 years of age (n = 1), right-handed (n = 2), normal or corrected-to-normal vision (n = 1), no neurological or psychiatric disorder (past/present) or no loss of consciousness lasting more than 10 min (n = 26), and native English speakers (n = 35). We also excluded 1 participant for being inattentive during testing (i.e., looking at a cellphone during the task), and 9 for implausible data (i.e., always responding ‘yes’) or incomplete data (e.g., entire task or questionnaire). After exclusions we had a total of 106 participants (87 women, 19 men) with a mean age of 18.74 (SD = 1.05, range 18–23) and 12.67 years of education on average (SD = 0.97). The study received REB approval at the University of Ottawa (H08-16-32).
 
-## fMRI task and procedure
+### fMRI task and procedure
 
 All tasks described below were administered via E-Prime 2.0 (Psychology Software Tools, 2012). We optimized the sentence verification task used in an electrophysiological study (Foster et al., 2012; Renoult et al., 2016) for fMRI. The four experimental conditions (general facts, autobiographical facts, repeated events, unique events) consisted of the same 70 main clauses (material available in Appendix 5). The conditions differed in two aspects: (1) The tense changed from past tense for unique events, to present perfect for repeated events, to present for facts (general and autobiographical). The type of awareness associated with semantic memory is indeed thought to be centered in the present, whereas episodic recollection is oriented toward the past (Tulving, 2001; Tulving, 2002). (2) We added distinct cue words that preceded each condition and gave different degrees of temporal specificity. We used 6–7 cues per condition. In the unique events condition, we used specific time cues (last night, last week-end, this morning, this week, today, yesterday) to promote access to specific instances of events (e.g., ‘Yesterday, I took a picture’). In the repeated events condition, we used script-like cues (when alone, when at a clinic, when at work, when on the bus, when on vacation, when shopping, when with friends), and constrained their temporal scope by asking participants to verify sentences by thinking about events that happened repeatedly within the last year (e.g., ‘When shopping, I have taken a picture’). In the autobiographical facts condition, we used general time cues (everyday, often, rarely, sometimes, usually, very often) for participants to report what is usual for them (‘Very often, I take pictures’). For the general facts condition, the first person personal pronoun (I) and the 6 cues were replaced by six distinct third person perspectives (everyone, few people, many people, most people, no one, some people), and participants had to report what they thought was generally true for people in their country (‘Few people take pictures’). The task involved pressing one of two buttons to produce a ‘yes’ or ‘no’ response to indicate whether the statements were true.
 
@@ -123,11 +621,11 @@ We blocked the trials of a given memory condition together within each run. We s
 
 All data were acquired within a single session, except for one participant who completed the study in two sessions because of a scanner issue. Participants practiced with a short version of the task outside and inside the scanner. In a post-scan interview, participants described briefly what they were thinking about during a few trials. Scanner time was 90 min. For the other steps, starting with consent and ending with debriefing, the study required an additional 60 min approximately.
 
-## Behavioral study task
+### Behavioral study task
 
 We tested participants in groups of 1–4. They completed individually the sentence verification task (described above), but we replaced the control task with subjective ratings, and participants completed only two runs (i.e., 20 stimuli per memory condition). The stimuli were randomized such that each participants received 20 randomly selected stimuli per condition and all stimuli should be represented equally across all participants. After their yes/no response, participants performed a scene rating, details rating, and a self-relevance rating (no time limit). The order of the ratings was counterbalanced across participants. Participants indicated whether what they pictured in their mind was: (1) nothing/vague, (2) objects only, or (3) a whole scene (based on Palombo et al., 2018). Participants rated the amount of visual details that came to mind from 1 (none) to 5 (a lot; based on D’Argembeau and Van der Linden, 2006). We provided examples of visual details and emphasized the distinction between scenes and details. (‘Note that you could remember a lot of bits and pieces about each individual object or people without putting them into an integrated whole’.) We specified that participants should consider both the amount of details of individual objects or people and the overall number of objects and people. Participants also rated how closely their thoughts were related to themselves from 1 (very remote) to 5 (very close). We explained that ‘very close’ meant that the thoughts were directly self-related, ‘very remote’ signified those thoughts concerned strangers or people in general. Intermediate ratings applied to acquaintances. After the practice, the researcher monitored the participants’ attentiveness from a control room. After task completion, participants filled the demographic questionnaire and the Center for Epidemiologic Studies Depression Scale (Radloff, 1977). The study lasted 60 min.
 
-## fMRI image acquisition
+### fMRI image acquisition
 
 We acquired the images on a Siemens Biograph mMR (Siemens Healthineers, Erlangen, Germany; Delso et al., 2011) with a 32-channel head coil (Ceresensa, London, Canada) at the Brain Imaging Centre (BIC) of the ROH. We collected the functional data with a multiband accelerated EPI sequence from CMRR that is sensitive to BOLD (Moeller et al., 2010; Xu et al., 2013; aligned to anterior and posterior commissure, TR = 1200 ms, TE = 33, flip angle = 65 degrees, FOV = 200 mm, voxel size = 2.5 mm3, slice thickness = 2.5 mm, 530 volumes per run, multiband factor = 6, covering the whole brain). The phase encoding alternated between anterior to posterior (for the first, third, fifth, seventh run) and posterior to anterior (for the second, fourth, sixth run).
 
@@ -135,28 +633,28 @@ Due to a technical error, the TE was 40 ms instead of the intended 33 ms for the
 
 The parameters for the anatomical scan, a T1-weighted pulse sequence (MPRAGE; Deichmann et al., 2000), of the first 28 participants had the following parameters: sagittal orientation, TR = 2530 ms, TE = 3.36 ms, TI = 1100 ms, flip angle = 7 degrees, slice thickness = 1 mm, FOV = 256 mm, voxel size = 1 mm3, with an acceleration factor of 2 using GRAPPA. For the latter group of 20 participants, we acquired a T1-weighted pulse sequence (MEMPRAGE; van der Kouwe et al., 2008) to enhance the quality of the T1w: sagittal orientation, TR = 2500 ms, TE 1 = 1.69 ms, TE 2 = 3.55 ms, TE 3 = 5.41, TE 4 = 7.27, flip angle = 10 degrees, slice thickness = 1 mm, FOV = 256 mm, voxel size = 1 mm3, with an acceleration factor of 2 using GRAPPA.
 
-## fMRI analyses
+### fMRI analyses
 
-## FMRIPREP pipeline
+#### FMRIPREP pipeline
 
 The MRI data were preprocessed using FMRIPREP (Esteban et al., 2018; Esteban et al., 2019) . The processing steps are described below verbatim as intended by FMRIPREP authors (https://fmriprep.readthedocs.io/; made available through CCO license).
 
 "Results included in this manuscript come from preprocessing performed using fMRIPprep 1.2.3 (Esteban et al., 2018; Esteban et al., 2019), which is based on Nipype 1.1.6-dev (Gorgolewski et al., 2011; Gorgolewski et al., 2018; RRID:SCR_002502). Anatomical Data Preprocessing. The T1-weighted (T1w) image was corrected for intensity non-uniformity using N4BiasFieldCorrection (Tustison et al., 2010, ANTs 2.2.0), and used as T1w reference throughout the workflow. The T1w reference was then skull-stripped using antsBrainExtraction.sh (ANTs 2.2.0), using OASIS as target template. Brain surfaces were reconstructed using recon-all (FreeSurfer 6.0.1, RRID:SCR_001847, Dale et al., 1999), and the brain mask estimated previously was refined with a custom variation of the method to reconcile ANTs-derived and FreeSurfer-derived segmentations of the cortical gray matter (GM) of Mindboggle (RRID:SCR_002438, Klein et al., 2017). Spatial normalization to the ICBM 152 Nonlinear Asymmetrical template version 2009c (Fonov et al., 2009; RRID:SCR_008796) was performed through nonlinear registration with antsRegistration (ANTs 2.2.0, RRID:SCR_004757, Avants et al., 2008), using brain-extracted versions of both T1w volume and template. Brain tissue segmentation of cerebrospinal fluid (CSF), white matter (WM), and GM was performed on the brain-extracted T1w using fast (FSL 5.0.9, RRID:SCR_002823, Zhang et al., 2001). For each of the seven BOLD runs found per subject (across all tasks and sessions), the following preprocessing was performed. First, a reference volume and its skull-stripped version were generated using a custom methodology of fMRIPrep. A deformation field to correct for susceptibility distortions was estimated based on fMRIPrep’s fieldmap-less approach. The deformation field is that resulting from co-registering the BOLD reference to the same-subject T1w reference with its intensity inverted (Huntenburg, 2014; Wang et al., 2017). Registration is performed with antsRegistration (ANTs 2.2.0), and the process regularized by constraining deformation to be nonzero only along the phase-encoding direction, and modulated with an average fieldmap template (Treiber et al., 2016). Based on the estimated susceptibility distortion, an unwarped BOLD reference was calculated for a more accurate co-registration with the anatomical reference. The BOLD reference was then co-registered to the T1w reference using bbregister (FreeSurfer) which implements boundary-based registration (Greve and Fischl, 2009). Co-registration was configured with nine degrees of freedom to account for distortions remaining in the BOLD reference. Head-motion parameters with respect to the BOLD reference (transformation matrices, and six corresponding rotation and translation parameters) are estimated before any spatiotemporal filtering using mcflirt (FSL 5.0.9, Jenkinson et al., 2002). The BOLD time-series (including slice-timing correction when applied) were resampled onto their original, native space by applying a single, composite transform to correct for head-motion and susceptibility distortions. These resampled BOLD time-series will be referred to as preprocessed BOLD in original space, or just preprocessed BOLD. The BOLD time-series were resampled to MNI152NLin2009cAsym standard space, generating a preprocessed BOLD run in MNI152NLin2009cAsym space. First, a reference volume and its skull-stripped version were generated using a custom methodology of fMRIPrep. Several confounding time-series were calculated based on the preprocessed BOLD: framewise displacement (FD), DVARS, and three region-wise global signals. FD and DVARS are calculated for each functional run, both using their implementations in Nipype (following the definitions by Power et al., 2014). The three global signals are extracted within the CSF, the WM, and the whole-brain masks. Additionally, a set of physiological regressors were extracted to allow for component-based noise correction (CompCor, Behzadi et al., 2007). Principal components are estimated after high-pass filtering the preprocessed BOLD time-series (using a discrete cosine filter with 128 s cut-off) for the two CompCor variants: temporal (tCompCor) and anatomical (aCompCor). Six tCompCor components are then calculated from the top 5% variable voxels within a mask covering the subcortical regions. This subcortical mask is obtained by heavily eroding the brain mask, which ensures it does not include cortical GM regions. For aCompCor, six components are calculated within the intersection of the aforementioned mask and the union of CSF and WM masks calculated in T1w space, after their projection to the native space of each functional run (using the inverse BOLD-to-T1w transformation). The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file. The BOLD time-series were resampled to surfaces on the following spaces: fsnative, fsaverage. All resamplings can be performed with a single interpolation step by composing all the pertinent transformations (i.e., head-motion transform matrices, susceptibility distortion correction when available, and co-registrations to anatomical and template spaces). Gridded (volumetric) resamplings were performed using antsApplyTransforms (ANTs), configured with Lanczos interpolation to minimize the smoothing effects of other kernels (Lanczos, 1964). Non-gridded (surface) resamplings were performed using mri_vol2surf (FreeSurfer). Many internal operations of fMRIPrep use Nilearn 0.4.2 (Abraham et al., 2014; RRID:SCR_001362), mostly within the functional processing workflow. For more details of the pipeline, see the section corresponding to workflows in fMRIPrep’s documentation."
 
-## FSL
+#### FSL
 
 The fMRIPrep output (in MNI152NLin2009cAsym space) was spatially smoothed using a Gaussian kernel of FWHM 5 mm and grand-mean intensity normalized using FEAT (FMRI Expert Analysis Tool) Version 6.00 from FSL (FMRIB’s Software Library, https://www.fmrib.ox.ac.uk; Jenkinson et al., 2012). We did not apply slice timing correction with fMRIPrep or FSL because of the rapid multi-band acquisition.
 
-## PLS
+#### PLS
 
 We used a multivariate approach, PLS correlation (Krishnan et al., 2011; McIntosh et al., 2004a; McIntosh and Lobaugh, 2004b), implemented in the PLSgui/PLScmd toolbox for Matlab (https://www.rotman-baycrest.on.ca/index.php?section=84; McIntosh et al., 2011). PLS is a technique developed for chemometrics (Krishnan et al., 2011) and widely adopted for neuroimaging use. Strengths of this analysis are that it is well suited for designs with multiple sets of measures and collinearity, and it mitigates power issues encountered in univariate analyses (O’Toole et al., 2007). It performs a singular value decomposition of the relation between two data matrices, X (brain) and Y (task design) to identify how tasks and voxels covary maximally together. PLS produces LVs that represent the similarities and differences in covariance patterns between the two matrices (akin to PCA eigenvectors). Saliences indicate the strength of the contribution of tasks and voxels to an LV (as indexed through bootstrap values, described below).
 
 We specified that each trial began at cue onset and comprised 12 TRs (or 14.4 s) to encompass the typical time-window of a BOLD response (McIntosh et al., 2004a). We retained only yes responses like Renoult et al., 2016, because they presumably reflect access to information consistent with the memory condition. Memory accuracy is often difficult to assess for autobiographical memory (Cabeza and St Jacques, 2007), and so was not considered for any of the conditions. We retained trials that had 3–6 numbers for the control task, thus lasting 6–12 s. We assessed the significance of LVs (p < .05) via 1000 permutations (randomizing the labels of conditions without replacement). We tested the stability of each voxel’s contribution to the LV via 500 iterations of bootstrap estimation (resampling participants with replacement; Krishnan et al., 2011; McIntosh et al., 2004a; McIntosh and Lobaugh, 2004b). The threshold of ± 3 bootstrap ratio (equivalent to p < .001; as in Hirshhorn et al., 2012; Ziaei et al., 2016) was used to determine whether a voxel made a reliable contribution to the LV. A reliable voxel contributes to the overall task and brain pattern. The PLS tests the association between the task and all voxels at all TRs in a single analysis, and so does not require correction for multiple comparison (McIntosh and Lobaugh, 2004b). An additional threshold of a minimum of 80 voxels with a minimum distance of 10 voxels was used to facilitate the summary of findings in the results section and the tables (for a similar cluster size, see Bowen et al., 2019; Hirshhorn et al., 2012; Robin et al., 2015; Ziaei et al., 2016). The bootstrap percentile estimates are unreliable. Thus, we reported the standard error of the bootstrap estimation instead of the confidence intervals along with t-tests (see Appendices 2 and 3); the interpretation is similar.
 
-## Statistical analyses of brain scores and behavioral data
+#### Statistical analyses of brain scores and behavioral data
 
 We compared the four memory conditions (general facts, autobiographical facts, repeated events, unique events) on brain scores, the proportion of ‘yes’ responses and response time during the fMRI task, and on mean self-relevance, mean visual details and proportion of trials associated with one of the three scene categories during the behavioral task. We followed up on significant main effects with paired samples t-tests, reporting Hedges’ g as the measure of effect size, and correcting each set of post hoc tests (i.e., six tests) with the Holm-Bonferroni procedure (Holm, 1979). We attributed the value equivalent to z ± 2.58 to bring univariate outliers closer to the mean. Scene ratings were excessively skewed (see Figure 2), but parametric tests gave similar results than nonparametric and are reported for simplicity. We applied a Greenhouse-Geisser correction (Greenhouse and Geisser, 1959) when the sphericity assumption was violated. All these analyses focused on trials associated with ‘yes’ responses (as in fMRI analyses) and were executed in SPSS v. 28 (Corp, 2021).
 
-## Open science statement
+#### Open science statement
 
 The instructions and stimuli are available in Appendix 5. End-stage data and some scripts are available on https://osf.io/ (https://osf.io/py5k6/). Additional information may be requested to the corresponding authors. fMRI standards guided the reporting in this paper (Poldrack et al., 2008).

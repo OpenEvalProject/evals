@@ -10,19 +10,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02kvxyf05 National Institute for Research in Digital Science and Technology (INRIA) Paris France
-2. https://ror.org/01pxwe438 Montreal Neurological Institute, McGill University Montreal Canada
-3. https://ror.org/00hj54h04 The University of Texas at Austin Austin United States
+1. National Institute for Research in Digital Science and Technology (INRIA) Paris France ([ROR:02kvxyf05](https://ror.org/02kvxyf05))
+2. Montreal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+3. The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
 ## Abstract
 
-Automated analysis of the biomedical literature ( literature mining ) offers a rich source of insights. However, such analysis requires collecting a large number of articles and extracting and processing their content. This task is often prohibitively difficult and time-consuming. Here, we provide tools to easily collect, process, and annotate the biomedical literature. In particular, https://neuroquery.github.io/pubget/pubget.html is an efficient and reliable command-line tool for downloading articles in bulk from PubMed Central, extracting their contents and metadata into convenient formats, and extracting and analyzing information such as stereotactic brain coordinates. https://jeromedockes.github.io/labelbuddy/labelbuddy/current/ is a lightweight local application for annotating text, which facilitates the extraction of complex information or the creation of ground-truth labels to validate automated information extraction methods. Further, we describe repositories where researchers can share their analysis code and their manual annotations in a format that facilitates reuse. These resources can help streamline text mining and meta-science projects and make text mining of the biomedical literature more accessible, effective, and reproducible. We describe a typical workflow based on these tools and illustrate it with several example projects.
+Automated analysis of the biomedical literature (literature mining) offers a rich source of insights. However, such analysis requires collecting a large number of articles and extracting and processing their content. This task is often prohibitively difficult and time-consuming. Here, we provide tools to easily collect, process, and annotate the biomedical literature. In particular, https://neuroquery.github.io/pubget/pubget.html is an efficient and reliable command-line tool for downloading articles in bulk from PubMed Central, extracting their contents and metadata into convenient formats, and extracting and analyzing information such as stereotactic brain coordinates. https://jeromedockes.github.io/labelbuddy/labelbuddy/current/ is a lightweight local application for annotating text, which facilitates the extraction of complex information or the creation of ground-truth labels to validate automated information extraction methods. Further, we describe repositories where researchers can share their analysis code and their manual annotations in a format that facilitates reuse. These resources can help streamline text mining and meta-science projects and make text mining of the biomedical literature more accessible, effective, and reproducible. We describe a typical workflow based on these tools and illustrate it with several example projects.
 
 ## Introduction
 
-## The need for literature mining is growing fast
+### The need for literature mining is growing fast
 
 More than 1 million papers are indexed by PubMed each year, about two papers per minute (Landhuis, 2016). This vast and fast-growing collection of knowledge has the potential to accelerate scientific insight and discovery. However, this information is represented as unstructured natural language texts across heterogeneous sources, making it difficult for researchers to access and analyze. As the number of publications continues to grow, there is an increasing need for tools and frameworks to systematically extract information from the scientific literature.
 
@@ -34,7 +34,7 @@ However, even as we move toward more highly automated literature mining, there i
 
 Here, we present litmining, an ecosystem to optimize the scalability, reproducibility, and accessibility of literature mining tasks, from collecting documents, to transforming them into usable formats, to manually and automatically extracting information. We offer a flexible environment that can be used for projects that have various needs. To illustrate this, we describe a variety of projects that use our ecosystem, from meta-analysis, to model evaluation, to automated and manual meta-research projects. In what follows, we will further expand on current approaches to literature mining, outline problems with those approaches, and describe our proposed workflow and set of tools. While this article focuses on the neuroimaging field, we demonstrate that our ecosystem may be used in a variety of contexts.
 
-## Limitations of current approaches to literature data collection
+### Limitations of current approaches to literature data collection
 
 We can divide approaches to literature data collection into three broad categories, each with its own disadvantages in terms accessibility, reproducibility, and scalability.
 
@@ -50,7 +50,7 @@ Figure 1 summarizes the advantages and disadvantages of these three approaches, 
 
 **Figure 1.:** The first two approaches are not scalable, while the third is not accessible to researchers with lower technical expertise. We have aimed to make our approach as scalable, reproducible, and accessible as possible.
 
-## Our proposed workflow and ecosystem
+### Our proposed workflow and ecosystem
 
 In contrast to these workflows, we present both an ecosystem of well-tested tools and repositories, as well as a set of recommendations for easier, more scalable, and more reproducible literature-mining and meta-research projects. Figure 2 shows our proposed open ecosystem and workflow for literature mining projects.
 
@@ -68,7 +68,7 @@ We further provide labelbuddy-annotations, an open repository of annotations (cr
 
 We have created a landing page for all these tools and repositories at https://litmining.github.io/, which explains the basic workflow in text and instructional videos.
 
-## Goals and scope
+### Goals and scope
 
 While researchers have a clear idea of the analyses they want to perform, the vast majority of time and energy is spent on the data collection and curation steps. We hope that the tools and recommendations we present here will make this process easier, more scalable, and more reproducible, and will therefore facilitate meta-research and literature mining.
 
@@ -80,7 +80,7 @@ These tools are already being used by a large funded project, Neurosynth-compose
 
 To demonstrate the use of the litmining tools, we chose examples diverse in their nature, requirements, and scale (from a few dozen documents to tens of thousands).
 
-## Large-scale meta-analyses
+### Large-scale meta-analyses
 
 For the first time, pubget enables running a complete large-scale meta-analysis as performed by NeuroSynth and NeuroQuery in a fully automated and reproducible manner.
 
@@ -98,7 +98,7 @@ Pubget downloads full-text articles from PubmedCentral (PMC) in a fast and relia
 
 We first ran pubget with a query covering many neuroimaging journals as well as the terms "fMRI" (functional magnetic resonance imaging) and "VBM" (voxel-based morphometry). The full query can be found in the https://github.com/neuroquery/pubget/blob/main/docs/example_queries/journal_list_fmri_vbm.txt. This resulted in over 10,000 articles with x, y, z stereotactic coordinates. Although that is a smaller number of publications than the NeuroSynth corpus, which contains over 14,000 abstracts, it represents a much larger amount of text because it also contains the articles full text. Therefore, any given term of interest such as "language" or "aphasia" is seen in more publications, associated with more coordinates, resulting in meta-analyses with higher statistical power. We used pubget to run meta-analyses on this corpus, using the --fit_neurosynth and --fit_neuroquery options provided by pubget. Some examples are shown in Figure 3.
 
-## Participants demographics
+### Participants demographics
 
 This second example reproduces and extends the investigation of sample size and statistical power presented in Poldrack et al., 2017. In the original paper, the authors point out that small sample sizes pose a threat to neuroimaging studies’ replicability and reliability. Poldrack et al., 2017 investigate the evolution of the median sample size in the literature through time, exploiting two sources of data: (i) sample sizes for 583 studies manually extracted from published meta-analyses provided by David et al., 2013 and (ii) new semi-automatic annotations of 548 abstracts in the NeuroSynth corpus. The authors find that the median sample size increased steadily from 1995 to 2015, as well as the number of studies with more than 100 participants.
 
@@ -128,7 +128,7 @@ As high-quality annotations about participants are useful for many projects (e.g
 
 At the time of writing this annotation, repository contains over 3K annotations for 188 documents.
 
-## Dynamic functional connectivity methods
+### Dynamic functional connectivity methods
 
 This third example illustrates the use of litmining on a fully manual project that relies only on pubget and labelbuddy without adding any custom code beyond simple plotting.
 
@@ -162,7 +162,7 @@ Overall, despite these limitations and the intentionally restricted scope of the
 
 ## Materials and methods
 
-## Pubget
+### Pubget
 
 Pubget is a command-line tool for downloading and processing publications from PMC. It is written in Python. This section provides a brief overview, and more information on using pubget can be found in the https://neuroquery.github.io/pubget/pubget.html.
 
@@ -172,7 +172,7 @@ A pubget execution proceeds in several steps, detailed below. The first steps co
 
 Each step stores its output in a separate directory. When invoking pubget again with the same query, steps that have already been completed are not re-run. Most steps can process different articles in parallel.
 
-## Downloading articles
+#### Downloading articles
 
 The first step is to download the articles matching a PMC query. This is done with the https://www.ncbi.nlm.nih.gov/books/NBK25497/. This collection of web services provides a programmatic interface to the National Library of Medicine (NLM) resources. Pubget strives to provide a client that is reliable and robust to network and server failures. As an example, the NLM servers often send responses with a 200 (success) status code, despite the fact that an internal server error has occurred and the response content is an error message. Pubget handles these cases by checking the content of the responses and retrying the download when necessary.
 
@@ -182,7 +182,7 @@ Given a query, pubget first uses E-Search to query the PMC database and build a 
 
 If pubget is executed again with a query for which a partial download exists, only missing batches of articles are downloaded. This is possible due to the Entrez history server keys stored by pubget, which identify a fixed set of articles.
 
-## Extracting the articles’ content
+#### Extracting the articles’ content
 
 The next step is extracting content in a usable format from the XML batches. Pubget first extracts articles from the downloaded batches and stores them in separate files. Then, each article’s XML is parsed and useful information is extracted. This is done in parallel across articles using a number of processes chosen by the user. Metadata such as authors or publication year are extracted with XPath. The articles are transformed with an XSLT stylesheet to obtain the text, free of XML markup.
 
@@ -190,11 +190,11 @@ Tables require special attention. The XML language used by PMC, JATS, allows two
 
 Stereotactic coordinates are extracted from tables with the approach that was used to create the neuroquery corpus (Dockès et al., 2020). The coordinate space (MNI or Talairach) is detected with the heuristic used by NeuroSynth (Yarkoni et al., 2011).
 
-## Meta-analyses
+#### Meta-analyses
 
 Pubget can optionally extract TF-IDF features from articles and run the same chi-square test as NeuroSynth, or train a neuroquery model. A small Python script is added to the output directory for a NeuroSynth or a NeuroQuery meta-analysis, which, when executed, allows a user to explore the meta-analytic maps interactively, with an interface similar to that of https://neurosynth.org/.
 
-## Integration with other tools
+#### Integration with other tools
 
 Pubget aims to make it as easy as possible to use the data it generates for subsequent analysis steps. Part of this effort consists in formatting this data to target specific tools that are used by the community or well-suited for common analysis steps. At the time of writing, such integrations exist only for two external tools (labelbuddy and NiMARE), but we are planning to add more, depending on user feedback.
 
@@ -202,11 +202,11 @@ Labelbuddy is a desktop application for manually annotating documents, described
 
 NiMARE (Salo and Bottenhorn, 2018) is the established Python library for neuroimaging meta-analysis. It provides implementations of most of the widely used meta-analysis methods. Pubget can format its output in the JSON format used by NiMARE to represent coordinate-based neuroimaging datasets and run meta-analyses. As a result, pubget output can directly be loaded with NiMARE and processed by any meta-analysis nimare method. For rigorous manual meta-analysis, additional steps to manually filter articles, select contrasts and check the extracted coordinates will need to be applied. However, having the pubget output in NiMARE format both facilitates this task and enables obtaining quickly a crude approximation of the final meta-analytic maps.
 
-## Plugins
+#### Plugins
 
 A core design element of pubget is that it easily allows defining plugins. This means that additional processing steps can be developed and distributed independently of pubget and still become part of the pubget command when they are installed. Such plugins are discovered at runtime and provide additional commands or options to the pubget command-line interface. One possible use for this plugin mechanism is to distribute processing steps that depend on libraries that are not installed by pubget, or that are too specific to be directly integrated in the main tool. These plugins foster reuse and an opportunity for projects to collaborate and progress at a faster pace or with less strict coding standards than pubget itself. A collection of such plugins is provided in the https://github.com/neurodatascience/pubextract package. Among other plugins, it adds to pubget the --participants option, which extracts participant counts and demographic information. This plugin is described in more detail below, where we present the methods used for the participant demographics example.
 
-## Labelbuddy
+### Labelbuddy
 
 Although many annotation tools exist, we did not find a good solution when we searched for one adapted to our needs for extracting information from the neuroimaging literature. Most available tools are web-based and annotators collaboratively contribute to a centralized database of annotations. This is necessary when many annotators are involved, which is typically the case when labeling text for machine learning, as many annotations are then needed. However, this makes the setup and integration in a Git-based workflow more difficult. As a result, many projects prefer to use a simple spreadsheet at the cost of relying on a much less convenient interface and losing the provenance and location of the exact portions of text that support the conclusions.
 
@@ -216,23 +216,111 @@ Internally the documents, labels, and annotations are stored in a single ordinar
 
 Pubget is well integrated with labelbuddy and can store the extracted text in JSON files that can be directly imported into labelbuddy for annotation, providing a core element of the litmining ecosystem.
 
-## Labelbuddy-annotations: A Git repository of manual annotations
+### Labelbuddy-annotations: A Git repository of manual annotations
 
 To store and showcase annotations from several projects, we created the https://litmining.github.io/labelbuddy-annotations/overview.html Git repository. It stores documents, labels, and annotations from several projects and annotators. The documents have typically been downloaded with pubget, although that is not a requirement. To start adding annotations, contributors simply need to create annotations in labelbuddy, export them, commit the resulting JSON, and open a Pull Request. A Jupyter book showcases the contents of the repository, provides documentation for users and contributors, and presents simple analyses of the available data. It is hosted on GitHub Pages and updated by Continuous Integration (GitHub Actions). Moreover, the repository also contains a small Python package to facilitate the analysis of existing annotations. Table 1 shows a summary of the projects currently included in the repository.
 
-## Participant demographics
+**Table 1.**
+ Number of documents, labels, annotators, and annotations for each project in the labelbuddy-annotations repository.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Project name</th>
+      <th>Documents</th>
+      <th>Labels</th>
+      <th>Annotators</th>
+      <th>Annotations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>review-neuro-meta-analyses</td>
+      <td>421</td>
+      <td>26</td>
+      <td>1</td>
+      <td>912</td>
+    </tr>
+    <tr>
+      <td>cluster_inference</td>
+      <td>193</td>
+      <td>20</td>
+      <td>2</td>
+      <td>1610</td>
+    </tr>
+    <tr>
+      <td>participant_demographics</td>
+      <td>188</td>
+      <td>15</td>
+      <td>10</td>
+      <td>3006</td>
+    </tr>
+    <tr>
+      <td>dynamic_functional_connectivity</td>
+      <td>70</td>
+      <td>9</td>
+      <td>1</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>parkinsons</td>
+      <td>60</td>
+      <td>6</td>
+      <td>1</td>
+      <td>411</td>
+    </tr>
+    <tr>
+      <td>NER_biomedical</td>
+      <td>11</td>
+      <td>9</td>
+      <td>1</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>neurosynth_use</td>
+      <td>8</td>
+      <td>4</td>
+      <td>1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>autism_mri</td>
+      <td>5</td>
+      <td>21</td>
+      <td>1</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>neurobridge_fmri</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>930</td>
+      <td>102</td>
+      <td>14</td>
+      <td>6180</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participant demographics
 
 To extend the study of sample sizes presented in Poldrack et al., 2017, we used two approaches to extract the number of participants from the text of a study: a manually defined heuristic and a workflow using OpenAI’s pre-trained GPT large language model.
 
-## Pubextract heuristic
+### Pubextract heuristic
 
 The heuristic approach proceeds in two steps. The first step recognizes mentions of participant groups in the text and extracts their different components (such as count and mean age). This is done with simple string matching and hard-coded rules – it does not involve any statistical learning. These rules are described by an Extended Backus–Naur Form grammar and parsing is performed by the https://lark-parser.readthedocs.io/en/latest/index.html Python library. The second step aggregates the different group mentions detected in the first step and infers the participant group structure. The full implementation can be found on GitHub as part of the https://github.com/litmining/pubextract.
 
-## GPT workflow
+### GPT workflow
 
 The GPT approach consists of two steps: a semantic search to identify the most relevant section of each paper and a zero-shot prompt to extract participant count from a given section. First, we separated each paper into chunks of less than 2000 characters using Markdown headers from the Body of each paper. If after exhausting all headers a section was above 2000 characters, we further subdivided it using newline characters, to reach a chunk under the desired length. Next, using the OpenAI API, we generated a 1536-dimensional embedding for all chunks in each article using the pre-trained ‘text-embedding-ada-002’ model. To find the chunk most likely to contain participant demographic information for each article, we embedded a string search query using the same embedding model and computed the Euclidean distance between each chunk and the search embedding. After piloted various search queries, we settled on the following search query: ’How many participants or subjects were recruited for this study?’. Finally, for each paper we attempted to extract participant demographics using a zero-shot prompt. Using OpenAI Chat Completion API, we prompted "GPT-3.5-turbo" using a template that inserted text from the nearest chunk from each article, and the instruction to "identify groups of participants that participated in the study, and underwent MRI." To ensure that GPT provided a structured response, we included a JSON Schema for the desired output to the model as part of the prompt, using the "function calling" parameter. If the model responded with a null object for a chunk, we iteratively reattempted extraction on the next-nearest chunk until a response was generated. Finally, we applied a manually derived set of cleaning results to the final output of the model, such as dropping rows with missing values or predicted counts of "0". The full implementation can be found on GitHub as part of the publang package.
 
-## Validation
+### Validation
 
 To validate the sample size extraction methods, we manually annotated 291 papers, which we divided into a training set of 188 and a final validation set of 103 papers. We used the training example to iteratively improve the heuristic extraction rules, and the search query and extraction prompt used in the GPT approach (i.e., "prompt engineering").
 
@@ -242,12 +330,12 @@ To validate the age extraction, we opened the automatically generated annotation
 
 Automatically extracting information about study participants from text is a difficult task and beyond the scope of the current paper. Our heuristic approach leaves much room for improvement, and statistical methods, for example based on pre-trained deep language models, would probably yield better results. What we aim to illustrate with this example project is that by using pubget we were able to focus on the task of interest (finding and analyzing the participants’ information), without spending time and effort on obtaining the relevant text. Moreover, the ability to easily annotate the documents with labelbuddy, and to visualize automatically generated annotations with the same tool, was key to an efficient validation step.
 
-## Data and code availability
+### Data and code availability
 
-## Our tools
+#### Our tools
 
-## Application: Large-scale meta-analyses
+#### Application: Large-scale meta-analyses
 
-## Application: Participant demographics
+#### Application: Participant demographics
 
-## Application: Dynamic functional connectivity
+#### Application: Dynamic functional connectivity

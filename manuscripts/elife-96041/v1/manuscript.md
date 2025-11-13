@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04ct4d772 School of Life Science and Technology, the Key Laboratory of Developmental Genes and Human Disease, Southeast University Nanjing China
-2. https://ror.org/02afcvw97 Co-innovation Center of Neuroregeneration, Nantong University Nantong China
+1. School of Life Science and Technology, the Key Laboratory of Developmental Genes and Human Disease, Southeast University Nanjing China ([ROR:04ct4d772](https://ror.org/04ct4d772))
+2. Co-innovation Center of Neuroregeneration, Nantong University Nantong China ([ROR:02afcvw97](https://ror.org/02afcvw97))
 
 † Corresponding author
 
 ## Abstract
 
-Axon projection is a spatial- and temporal-specific process in which the growth cone receives environmental signals guiding axons to their final destination. However, the mechanisms underlying changes in axonal projection direction without well-defined landmarks remain elusive. Here, we present evidence showcasing the dynamic nature of axonal projections in Drosophila ’s small ventral lateral clock neurons (s-LNvs). Our findings reveal that these axons undergo an initial vertical projection in the early larval stage, followed by a subsequent transition to a horizontal projection in the early-to-mid third instar larvae. The vertical projection of s-LNv axons correlates with mushroom body calyx expansion, while the s-LNv-expressed Down syndrome cell adhesion molecule (Dscam1) interacts with Netrins to regulate the horizontal projection. During a specific temporal window, locally newborn dorsal clock neurons secrete Netrins, facilitating the transition of axonal projection direction in s-LNvs. Our study establishes a compelling in vivo model to probe the mechanisms of axonal projection direction switching in the absence of clear landmarks. These findings underscore the significance of dynamic local microenvironments in the complementary regulation of axonal projection direction transitions.
+Axon projection is a spatial- and temporal-specific process in which the growth cone receives environmental signals guiding axons to their final destination. However, the mechanisms underlying changes in axonal projection direction without well-defined landmarks remain elusive. Here, we present evidence showcasing the dynamic nature of axonal projections in Drosophila’s small ventral lateral clock neurons (s-LNvs). Our findings reveal that these axons undergo an initial vertical projection in the early larval stage, followed by a subsequent transition to a horizontal projection in the early-to-mid third instar larvae. The vertical projection of s-LNv axons correlates with mushroom body calyx expansion, while the s-LNv-expressed Down syndrome cell adhesion molecule (Dscam1) interacts with Netrins to regulate the horizontal projection. During a specific temporal window, locally newborn dorsal clock neurons secrete Netrins, facilitating the transition of axonal projection direction in s-LNvs. Our study establishes a compelling in vivo model to probe the mechanisms of axonal projection direction switching in the absence of clear landmarks. These findings underscore the significance of dynamic local microenvironments in the complementary regulation of axonal projection direction transitions.
 
 ## Introduction
 
@@ -29,43 +29,95 @@ Drosophila small ventral lateral clock neurons (s-LNvs) exhibit the typical tang
 
 ## Results
 
-## s-LNvs axons change their projection direction in the early-to-mid third instar larvae
+### s-LNvs axons change their projection direction in the early-to-mid third instar larvae
 
 The stereotypical trajectory of the s-LNvs axon projection can be succinctly characterized as an initial vertical extension originating from the ventrolateral brain, followed by a directional pivot at the dorsolateral protocerebrum, ultimately leading to a horizontal projection toward the midline. Immunoreactivity for pigment-dispersing factor (PDF) (Cyran et al., 2005), representing the pattern of LNv neurons, is initially detected in the brains of first-instar larvae 4–5 hr after larval hatching (ALH) (Helfrich-Förster, 1997). To elucidate the intricate axon pathfinding process during development, we employed a dual-copy Pdf-GAL4 to drive the expression of double-copy UAS-mCD8::GFP, visualizing the s-LNvs at the larval stage (Figure 1A). We first tested whether Pdf-Gal4 could effectively label s-LNv, and tracked the s-LNv projection in early larvae after embryo hatching. At 8 hr ALH, the green fluorescent protein (GFP) signal strongly co-localized with the PDF signal within the axons (Figure 1—figure supplement 1). This remarkable co-localization continued throughout the larval stage, particularly concentrated at the axon’s terminal end (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig1-v1.jpg)
+
+**Figure 1.:** (A) Images showing the growth process of s-LNvs during larval development. Larval brains were stained with anti-PDF (white) and horseradish peroxidase (HRP, blue) antibodies. Different time points indicate the hours after larval hatching (ALH). (B) Left panel: schematic diagram illustrating the method used to measure the degree of vertical projection. One hemisphere of the larvae brain is depicted. Larval neuropil (gray), s-LNvs (green), and optic lobe (blue). Right panel: graphs showing the average vertical projection length at different developmental stages, presented as mean ± standard deviation (SD). (C) Left panel: schematic diagram illustrating the method used to measure the degree of horizontal projection. Right panel: graphs showing the average horizontal projection (A.U.: arbitrary unit) at different developmental stages, presented as mean ± SD. The red line segment indicates the stage at which the axonal projection undergoes a directional transition. (D) Schematic representation of s-LNvs vertical to horizontal projection directional shift during 72–96 hr ALH. One hemisphere of the larvae brain (gray), larval neuropil (white), and s-LNvs (green). For (B, C), 8 hr (n = 7), 24 hr (n = 10), 48 hr (n = 14), 72 hr (n = 16), 96 hr (n = 13), 120 hr (n = 16).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Images showing the growth process of s-LNvs during the early larval stage. Larval brains were stained with anti-PDF (white) and HRP (blue) antibodies. Different time points indicate the hours after larval hatching (ALH).
+
 We then quantified the process of s-LNvs axonal projection. The vertical projection distance of the s-LNvs axon was ascertained by measuring the vertical span between the lowest point of the optical lobe and the highest point of the axon’s projection terminal. Statistical analyses revealed a steadfast linear increase in the vertical projection distance of the s-LNvs axon as larval development progressed (Figure 1A, B). To determine the horizontal projection distance of the s-LNvs axon, we applied the methodology employed by Olive for measuring adult flies (Oliva et al., 2016). A tangent line is drawn precisely at the pivotal juncture where the s-LNvs axon undergoes a shift in its projection direction. We define the arbitrary unit (A.U.) as the ratio between the horizontal distances from this point to both the end of the axon projection and the midline (Figure 1A, C). Remarkably, at the time points of 8, 24, 48, and 72 hr ALH, the A.U. value for s-LNvs axon projection in the horizontal direction remained relatively stable at approximately 0.13. However, at 96 and 120 hr ALH, a significant and striking increase in the A.U. value ensued, eventually reaching approximately 0.25 (Figure 1C). These findings suggest that the precise transition of s-LNv axon projection from vertical toward the horizontal direction occurs in the early-to-mid third instar larvae, specifically during 72–96 hr ALH (Figure 1D).
 
-## Vertical projection of s-LNvs axons correlate with mushroom body calyx expansion
+### Vertical projection of s-LNvs axons correlate with mushroom body calyx expansion
 
 The axons of s-LNv project dorsally, coming in close proximity to the dendritic tree of the mushroom body (MB), specifically the calyx (Figure 2A, C). This spatial arrangement facilitates potential interactions between the s-LNvs axon and the MB. MB predominantly comprises 2500 intrinsic neurons, known as Kenyon Cells (KCs) (Puñal et al., 2021). The development of the MB is a dynamic process characterized by three primary types of KCs: α/β, α′/β′, and γ, each following distinct temporal schedules of birth. The γ cells emerge from the embryonic stage until early third-instar larval phase, while the α′/β′ cells are born during the latter half of larval life, and the α/β cells appear in the post-larval stage (Lee et al., 1999; Puñal et al., 2021). We noticed that s-LNv axons exhibit only vertical growth before early third-instar larval stage, which coincides with the emergence of γ KCs. Consequently, we have contemplated the potential correlation between the vertical projection of s-LNv axons and the growth of the MB.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig2-v1.jpg)
+
+**Figure 2.:** (A) Spatial position relationship between calyx and small ventral lateral clock neurons (s-LNvs). Top: OK107-GAL4 labels the calyx of MB γ and α′β′ neurons, while s-LNvs are labeled by the pigment-dispersing factor (PDF) antibody. Bottom: Tab2–201Y-GAL4 labels calyx of MB γ neurons, with s-LNvs labeled by the PDF antibody. Larvae brains were stained with anti-PDF (green) and GFP (magenta) antibodies. Different time indicated hours after larval hatching (ALH). The white dotted line indicates the calyx region. (B) Graphs showing the MB calyx’s area and vertical projection length averaged over different development stage are presented as mean ± standard deviation (SD). OK107: 24 hr (n = 10), 48 hr (n = 8), 72 hr (n = 12), 96 hr (n = 12), 120 hr (n = 9). Pearson’s r = 0.9987, p < 0.0001. Tab2-201Y: 24 hr (n = 6), 48 hr (n = 12), 72 hr (n = 13), 96 hr (n = 13), 120 hr (n = 11). Pearson’s r = 0.9963, p = 0.0003. (C) Schematic representation of complementary development of s-LNvs vertical projection and MB calyx. MB (purple), s-LNvs (green). (D) Images of MB ablation in the developing larval stages. Larvae brains were stained with anti-PDF (white) and HRP (blue) antibodies. Different time indicated hours ALH. (E) Quantification of vertical projection length in Control (Tab2-201Y >GFP) and Ablation (Tab2-201Y >GFP,rpr,hid) flies. Data are presented as mean ± SD. Control: 24 hr (n = 6), 48 hr (n = 14), 72 hr (n = 13), Ablation: 24 hr (n = 6), 48 hr (n = 12), 72 hr (n = 12). Two-tailed Student’s t tests were used. ns, p > 0.05; ****p < 0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Images of MB ablation in the developing larval stages. Larvae brains were stained with anti-GFP (green) and HRP (magenta) antibodies. Different time indicated after larval hatching (ALH). (B) Quantification of MB calyx area in Control (201Y>GFP) and Ablation (201Y>GFP,rpr,hid) flies. Data are presented as mean ± standard deviation (SD). Control: 24 hr (n = 6), 48 hr (n = 12), 72 hr (n = 13), Ablation: 24 hr (n = 6), 48 hr (n = 12), 72 hr (n = 12). Two-tailed Student’s t tests, ****p < 0.0001.
 
 Next, we closely monitored the spatial relationship between the calyx and the axon projections of the s-LNvs throughout different larval developmental stages (Figure 2A). We used OK107-GAL4 and Tab2-201Y-GAL4 to drive the expression of mCD8::GFP in all KC subtypes or specifically in γ KCs (Pauls et al., 2010), respectively, to visualize MB KCs. As development progressed, the calyx area defined by both GAL4 drivers exhibited a consistent expansion. Statistical analyses further confirmed that the calyx area increased proportionally with the advancement of developmental time, demonstrating a linear relationship (Figure 2B, C). Additionally, Pearson correlation analysis unveiled a robust positive correlation between the calyx area and the vertical projection distance of s-LNvs axon (r = 0.9987, p < 0.0001 for OK107-GAL4; r = 0.9963, p = 0.0003 for Tab2-201Y-GAL4) (Figure 2B, C). These compelling observations suggest that the MB calyx, and potentially specifically the calyx of γ KCs, exert significant influence on the vertical projection of the s-LNvs axon.
 
 To validate our idea, we employed a straightforward approach to evaluate any changes in s-LNvs axon projection after ablating γ KCs using the essential Drosophila cell death activators Reaper (Rpr) and Head involution defective (Hid) driven by the Tab2-201Y GAL4. Initially, we confirmed the effectiveness of our approach. In the control group, the GFP signal in γ KCs remained unchanged, while the ablation group showed a significant reduction or complete absence of the signal (Figure 2—figure supplement 1). Subsequently, we examined the axon projection of s-LNvs under these conditions. In the non-ablated group, the vertical distance increased linearly during development, following the expected pattern (Figure 2D, E). However, in the ablation group, although the initial vertical projection of s-LNvs appeared normal, there was a noticeable decrease in vertical projection distance at 48 hr ALH. This vertical development trend ceased thereafter, with the vertical projection distance measuring only 20–30 µm at 72 hr ALH (Figure 2D, E). Importantly, in later larval stages, we observed that s-LNvs in certain larvae became undetectable (data not shown), suggesting the potential occurrence of apoptosis in these neurons following MB ablation. These results underscore a significant association between MB development, specifically the γ KCs, and the vertical projection dynamics of s-LNv axons.
 
-## s-LNv-expressed Dscam1 mediate s-LNv axons horizontal projection
+### s-LNv-expressed Dscam1 mediate s-LNv axons horizontal projection
 
 To decipher the signaling pathways governing s-LNvs axon horizontal projection, we performed a screening with a total of 285 targets by using the RNA-interfering (RNAi) approach (Supplementary file 2). To optimize efficiency, we chose Clk856-GAL4, which is expressed in s-LNv from the embryonic stage (Figure 3—figure supplement 1A, B), although it is also expressed in other clock neuron subsets (Gummadova et al., 2009). Significantly, the knockdown of Down syndrome cell adhesion molecule (Dscam1) resulted in a notable decrease in the horizontal projection distance of s-LNv axons in late third instar larvae and adults (Figure 3—figure supplement 1C–F). In adults, knockdown of Dscam1-L (including the exon 19 isoform) in s-LNvs results in the failure of axon terminals to form normally (Zhang et al., 2019). To validate the role of s-LNv-expressed Dscam1 in governing axon horizontal projection, we employed the Pdf-GAL4, which specifically targeted s-LNvs during the larval stage. At 96 hr ALH, vertical projection showed no significant changes in Pdf-GAL4;UAS-Dscam1-RNAi flies, but a noticeable deficit was observed in the horizontal projection of the s-LNvs axon (Figure 3A–C). These observations strongly indicate that Dscam1 specifically regulates the horizontal projection of s-LNvs axon.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig3-v1.jpg)
+
+**Figure 3.:** (A) Images of s-LNvs in Pdf >GFP and Pdf >GFP, Dscam1RNAi fly. White line segment represents the horizontal projection distance of s-LNvs. Larvae brains were stained with anti-PDF (white) and HRP (blue) antibodies at 96 hr after larval hatching (ALH). Pdf >GFP (n = 13), Pdf >GFP, Dscam1RNAi (n = 15). (B) Quantification of vertical projection length in Pdf >GFP and Pdf >GFP, Dscam1RNAi flies. Data are presented as mean ± standard deviation (SD). Two-tailed Student’s t tests, ns, p > 0.05. (C) Quantification of horizontal A.U. in Pdf >GFP and Pdf >GFP, Dscam1RNAi flies. Data are presented as mean ± SD. Two-tailed Student’s t tests, ****p < 0.0001. (D) Images of Dscam1 mutant s-LNvs projection phenotype. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (E) Quantification of horizontal A.U. in Dscam1 mutant flies. Data are presented as mean ± SD. w1118 (n = 22) Dscam121/+ (n = 5), Dscam11/+ (n = 8), Dscam105518/+ (n = 10), Dscam121/Dscam105518 (n = 6), Dscam121/Dscam11 (n = 10), Dscam105518 (n = 14). One-way analysis of variance (ANOVA) with Tukey’s post hoc, ns, p > 0.05, ****p < 0.0001. (F) Endogenous Dscam1 co-localizes with the s-LNvs axon terminal. Pdf >GFP fly heads were collected at 120 hr ALH and stained with anti-Dscam1 (red). The white dotted line indicates the s-LNvs axon.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Images of immunostained in Clk856-GAL4>UAS-GFP at embryo stage 18. Heads were stained with anti-GFP (green) and HRP (red) antibodies. (B) Images of immunostained in Clk856-GAL4>UAS-GFP at 2 hr after larval hatching (ALH). Heads were stained with anti-GFP (green) and HRP (red) antibodies. (C) Immunostaining images of Clk856-GAL4 knockdown of Dscam1. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (D) Quantification of horizontal A.U. in Clk856-GAL4 knockdown of Dscam1. Data are presented as mean ± standard deviation (SD). Clk856-GAL4/+ (n = 6), Clk856-GAL4>Dscam1RNAi (n = 10). Two-tailed Student’s t tests, ****p < 0.0001. (E) Immunostaining images of Clk856-GAL4 knockdown of Dscam1. Brains were collected at adult. Heads were stained with anti-PDF (white) antibody. (F) Quantification of horizontal A.U. in Clk856-GAL4 knockdown of Dscam1. Data are presented as mean ± SD. Clk856-GAL4/+ (n = 6), Clk856-GAL4>Dscam1RNAi (n = 6). Two-tailed Student’s t tests, ****p < 0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunostaining images of Pdf-GAL4 knockdown of cytoskeleton-associated regulatory proteins and Dscam1 interaction molecule. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (B) Quantification of horizontal A.U. in Pdf-GAL4 knockdown of Dscam1 interaction molecule and cytoskeleton-associated regulatory proteins. Data are presented as mean ± standard deviation (SD). Pdf-GAL4/+ (n = 14), Pdf-GAL4 >tsrRNAi (n = 6), Pdf-GAL4 >chicRNAi (n = 8), Pdf-GAL4 >SH3PX1RNAi (n = 6), Pdf-GAL4 >DockRNAi (n = 7), Pdf-GAL4 >pakRNAi (n = 6). One-way analysis of variance (ANOVA) with Dunnett’s post hoc, ***p < 0.001, ****p < 0.0001. (C) Schematic representation of Dscam1 mediates s-LNvs horizontal projection downstream signaling pathways. Dscam1 (brown) activates the downstream signaling cascade involving Dock (cyan), SH3PX1 (yellow), Pak (blue), and cofilin/profilin (depicted in purple and blue balls, respectively). These signaling events induce alterations in cell cytoskeleton proteins (gray balls), facilitating the guidance of horizontal projection.
 
 We further checked s-LNvs axon projection in several well-defined Dscam1 mutants, including Dscam121, Dscam11, and Dscam105518 (Hummel et al., 2003; Schmucker et al., 2000). While all heterozygous mutants displayed normal horizontal axon projection in s-LNvs, trans-heterozygous mutants and homozygotes exhibited shortened horizontal axon projection (Figure 3D, E). Additionally, our immunostaining results indicated concentrated Dscam1 expression at the growth cone of s-LNv axons in third-instar larvae (Figure 3F). Taken together, these data demonstrate that Dscam1 controls the horizontal axon projection of s-LNvs in a cell-autonomous manner.
 
 Dscam1 is a well-recognized cell adhesion molecule that plays a crucial role in axon guidance (Chen et al., 2006; Hummel et al., 2003; Zhan et al., 2004; Zhang et al., 2019). The receptors present on growth cones senses the extracellular axon guidance molecules to initiate the reorganization of the cellular cytoskeleton, leading to the facilitation of axonal projection. Convincingly, knockdown of the cytoskeletal molecules tsr (the Drosophila homolog of cofilin) (Sudarsanam et al., 2020) and chic (the Drosophila homolog of profilin) (Shields et al., 2014) in s-LNvs recaptured the horizontal axon projection deficits in Dscam1 knockdown flies or Dscam1 mutants (Figure 3—figure supplement 1C, D). Consistently, knockdown of Dock and Pak, the guidance receptor partners of Dscam1 (Schmucker et al., 2000), or SH3PX1, the critical linker between Dscam1 and the cytoskeleton (Worby et al., 2001), phenocopied Dscam1 knockdown flies or Dscam1 mutants (Figure 3—figure supplement 2A, B). Taken together, these findings provide solid evidence to support that Dscam1 signaling as a crucial regulator of s-LNvs axon horizontal projection (Figure 3—figure supplement 2C).
 
-## Neuronal-derived Netrins act upstream of Dscam1 to govern the horizontal projection of s-LNvs axon
+### Neuronal-derived Netrins act upstream of Dscam1 to govern the horizontal projection of s-LNvs axon
 
 Two classical guidance molecules, Slit and Netrin, have been shown to specifically bind to the extracellular domain of Dscam1 (Alavi et al., 2016; Andrews et al., 2008). The Drosophila genome contains the sole slit gene and two Netrin genes: Netrin-A (NetA) and Netrin-B (NetB) (Harris et al., 1996; Mitchell et al., 1996). Notably, ubiquitous knockdown of both NetA and NetB (hereafter referred to as Netrins), rather than slit, resulted in the defective horizontal axon projection of s-LNvs. Convincingly, NetA,NetB double mutant (Brankatschk and Dickson, 2006), but not NetA or NetB single mutant, exhibited the defective horizontal axon projection of s-LNvs (Figure 4A, B and Figure 4—figure supplement 1). These results imply that two Netrin molecules function redundantly in regulating horizontal axon projection of s-LNvs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig4-v1.jpg)
+
+**Figure 4.:** (A) Images of immunostained in w1118, NetAΔ, NetBΔ, and NetABΔ fly. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (B) Quantification of horizontal A.U. w1118, NetAΔ, NetBΔ, and NetABΔ fly. Data are presented as mean ± standard deviation (SD), w1118 (n = 17), NetAΔ (n = 15), NetBΔ (n = 24), NetABΔ (n = 23). One-way analysis of variance (ANOVA) with Dunnett’s post hoc, ns, p > 0.05, ***p < 0.001. (C) Images of immunostained in nSyb-GAL4 and repo-GAL4 knockdown Netrins. Larvae brains were collected at late third larvae heads were stained with anti-PDF (white) and HRP (blue) antibodies. (D) Quantification of horizontal A.U. in nSyb-GAL4 and repo-GAL4 knockdown Netrins fly. Data are presented as mean ± SD. nSyb-GAL4/+ (n = 13), nSyb-GAL4 >NetrinsRNAi (n = 16), repo-GAL4/+ (n = 34), repo-GAL4 >NetrinsRNAi (n = 20). Two-tailed Student’s t tests, ns, p > 0.05, ***p < 0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Images of immunostained in tubulin-GAL4/+, tubulin-GAL4 >NetrinsRNAi, tubulin-GAL4 >slitRNAi fly. Larvae brains were heads were collected at late third larvae. Head stained with anti-PDF (white) and HRP (blue) antibodies. (B) Quantification of horizontal A.U. in tubulin-GAL4/+, tubulin-GAL4 >NetrinsRNAi, tubulin-GAL4 >slitRNAi fly. Data are presented as mean ± standard deviation (SD). tubulin-GAL4/+ (n = 13), tubulin-GAL4 >NetrinsRNAi (n = 20), tubulin-GAL4 >slitRNAi (n = 9). One-way analysis of variance (ANOVA) with Dunnett’s post hoc, ns, p > 0.05, **p < 0.01.
+
 To determine the source of Netrins, which are known to be secreted axon guidance molecules, we conducted experiments using pan-neuronal (nsyb-GAL4) and pan-glial (repo-GAL4) drivers to selectively knock down Netrins (Figure 4C, D). Strikingly, when Netrins were knocked down in neurons but not in glia, we observed severe defects in the horizontal axon projection of s-LNvs. These findings reveal that neuron-secreted Netrins serve as ligands for Dscam1, controlling the horizontal axon projection of s-LNvs.
 
-## DN-secreted Netrins mediate the horizontal axon projection of s-LNvs
+### DN-secreted Netrins mediate the horizontal axon projection of s-LNvs
 
 To further identify the source of Netrins, we focused on the neurons located in the dorsolateral protocerebrum, where the s-LNvs axons change their projection direction. We first excluded the possibility that MB-secreted Netrins mediate the horizontal axon projection of s-LNvs, as knockdown of Netrins with OK107-GAL4 showed normal horizontal axon projection of s-LNvs (Figure 5A, B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig5-v1.jpg)
+
+**Figure 5.:** (A) Images of immunostained in OK107-GAL4 and per-GAL4, Pdf-GAL80 knockdown Netrins. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (B) Quantification of horizontal A.U. in OK107-GAL4 and per-GAL4, Pdf-GAL80 knockdown Netrins fly. Data are presented as mean ± standard deviation (SD). OK107-GAL4/+ (n = 20), OK107-GAL4>NetrinsRNAi (n = 13). per-GAL4, Pdf-GAL80/+ (n = 18), per-GAL4, Pdf-GAL80 >NetrinsRNAi (n = 16). Two-tailed Student’s t tests for OK107-GAL4 knockdown Netrins, ns, p > 0.05. Mann–Whitney test for per-GAL4, Pdf-GAL80 knockdown Netrins, ****p < 0.0001. (C) Images of DN ablation in the developing larval stages. Larvae brains were stained with anti-PDF (white) and HRP (blue) antibodies. Different time indicated hours ALH. (D) Quantification of horizontal A.U. in Control (per-GAL4, Pdf-GAL80 >GFP) and Ablation (per-GAL4, Pdf-GAL80 >GFP,rpr,hid) flies. Data are presented as mean ± SD. Control: 72 hr (n = 5), 96 hr (n = 12), Ablation: 72 hr (n = 5), 96 hr (n = 10). Two-tailed Student’s t tests were used to compare conditions. ns, p > 0.05, ****p < 0.0001. (E) Images of immunostained in per-GAL4, Pdf-GAL80 overexpress NetB in NetABΔ. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (F) Quantification of horizontal A.U. in per-GAL4, Pdf-GAL80 overexpress NetB in NetABΔ. Data are presented as mean ± SD. NetABΔ, UAS-NetB (n = 12), NetABΔ, per-GAL4,Pdf-GAL80 /+ (n = 5), NetABΔ,per-GAL4,Pdf-GAL80 >UAS NetB (n = 9). One-way analysis of variance (ANOVA) with Bonferroni post hoc, ns, p > 0.05, ***p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Images of per-GAL4, pdf-GAL80, and crz-GAL4 ablation. Larvae brains were stained with anti-PDF (white) and HRP (blue) antibodies at 120 hr after larval hatching (ALH). (B) Quantification of horizontal A.U. in per-GAL4, Pdf-GAL80, and crz-GAL4 ablation fly. Data are presented as mean ± standard deviation (SD). per-GAL4, Pdf-GAL80 >GFP (n = 14), per-GAL4, Pdf-GAL80 >GFP,rpr,hid (n = 20), crz-GAL4 >GFP (n = 4), crz-GAL4 >GFP,rpr,hid (n = 3). Two-tailed Student’s t tests, ns, p > 0.05; ****p < 0.0001.
+
 The DNs, a subset of clock neurons, also situate in the dorsolateral protocerebrum. DNs are categorized into three types, DN1, DN2, and DN3 (Reinhard et al., 2022), and previous studies have shown that both DN2 and DN1 form synaptic connections with s-LNvs axon terminals at the adult stage (Schlichting et al., 2022). Interestingly, knockdown of Netrins in a substantial portion of DN2, DN3, and DN1 (Kaneko et al., 1997) (Per-GAL4, Pdf-GAL80;UAS-Netrins-RNAi) resulted in the defective horizontal axon projection of s-LNvs (Figure 5A, B). To further validate the involvement of DNs in mediating the horizontal axon projection of s-LNvs, we conducted cell ablation experiments. Notably, the impairments in the horizontal axonal projection of s-LNvs due to DNs ablation were exclusively observed at 96 hr ALH, which is after the occurrence of horizontal projection (Figure 5C, D). In contrast, ablating crz+ neurons, which occupy a similar location to DNs, had no significant effects on the horizontal axon projection of the s-LNvs (Figure 5—figure supplement 1). Moreover, by expressing NetB in DNs in NetA,NetB double mutants, we successfully restored the defective horizontal axon projection of s-LNvs (NetABΔ;Per-GAL4, Pdf-GAL80;UAS-NetB) (Figure 5E, F). These results demonstrate that DNs secrete Netrins to guide the horizontal axon projection of s-LNvs.
 
-## Newborn DNs secrete Netrins to regulate the horizontal axon projection of s-LNvs
+### Newborn DNs secrete Netrins to regulate the horizontal axon projection of s-LNvs
 
 Finally, we wonder which population of DNs secrete Netrins to regulate the horizontal axon projection of s-LNvs. Therefore, we monitored the number and location of DNs during the s-LNvs axon projection and found that the number of DNs significantly increased during this process. Per-GAL4, Pdf-GAL80; UAS-mCD8::GFP only labeled 4–5 cells at 48 hr ALH, and raise to 10–15 by 72 hr, and subsequently increased to approximately 25 by 96 hr ALH (Figure 6A, B). It is worth noting that the location of these newly formed DNs resides lateral to the transition point of axon projection direction of the s-LNvs, while maintaining a basic parallelism with the horizontal axon projection of the s-LNvs (Figure 6A). The sharp increase in the number of DNs coincides remarkably with the timing of the switch in axon projection direction of the s-LNvs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig6-v1.jpg)
+
+**Figure 6.:** (A) Top: images of s-LNvs axon and DNs growth process in the developing larval stages. Larvae brains were stained with anti-PDF (white) and GFP (green) antibodies. Different time indicated hours after larval hatching (ALH) are shown. Bottom: schematic diagram of s-LNvs horizontal projection and the corresponding increase in the number of DN neurons. s-LNvs axon (gray), DN neurons (green). (B) Quantification of the number of DN neurons labeled by per-GAL4, Pdf-GAL80 at different developmental stages. Data are presented as mean ± standard deviation (SD). (C) Images of newborn DN neurons were co-localized with Netrin-B at different developmental times. Larvae brains were stained with anti-GFP (green), mcherry (red), and PDF (white) antibodies. Different time indicated hours ALH. The white arrow demarcates the co-localization of red and green signals. (D) Schematic representation s-LNvs projection directional transition and the corresponding increase in the number of DN neurons. s-LNvs axon (gray), DN neurons (green), and newborn DN neurons (light green at 72 hr, orange at 96 hr).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96041/elife-96041-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left: schematic and image representation small ventral lateral clock neurons (s-LNvs) projection directional transition and the corresponding increase in the number of dorsal clock neurons (DNs). s-LNvs axon (gray), DN neurons (green), and newborn DN neurons (light green at 72 hr, orange at 96 hr). Larvae brains were stained with anti-PDF (white) and GFP (green) antibodies. The blue box indicates the area magnified in the right panel. Right: images of DN neurons were co-localized with Netrin-B at different developmental times. Larvae brains were stained with anti-Myc (red) and GFP (green) antibodies. Different time indicated after larval hatching (ALH). The white arrow demarcates the co-localization of red and green signals. (B) Images of Netrin ectopic expressed in R78G02-GAL4. Larvae brains were collected at late third larvae. Heads were stained with anti-PDF (white) and HRP (blue) antibodies. (C) Quantification of horizontal A.U. in Netrin ectopic expressed in R78G02-GAL4 fly. Data are presented as mean ± standard deviation (SD). R78G0-GAL4/+ (n = 11), R78G02-GAL4>UAS-NetAOE (n = 6), R78G02-GAL4>UAS-NetBOE (n = 11). One-way analysis of variance (ANOVA) with Dunnett’s post hoc, ***p < 0.001, ****p < 0.0001.
 
 Next, we asked whether these newly generated DNs expressed Netrins. To visualize the expression of endogenous NetB, we uesd the fly strains that insert either GFP or myc tag in NetB gene. At 72 hr ALH, we were unable to detect any NetB signals within the DNs. In contrast, at 96 hr ALH, we easily detected prominent NetB signals in approximately six to eight newborn DNs (Figure 6C, D, Figure 6—figure supplement 1A).
 
@@ -79,47 +131,414 @@ Previous studies have shown that DSCAM is involved in Netrin-1-mediated axonal a
 
 The mechanisms underlying axonal responses to intricate microenvironments and the precise development of axons within the brain have long remained enigmatic. In the past, researchers have identified a large number of axon guidance cues and receptors using different models in vivo and in vitro (Stoeckli, 2018). In addition, transient cell–cell interactions through intermediate targets play a crucial role in guiding axonal projection step by step toward its final destination (Chao et al., 2009; Garel and Rubenstein, 2004). The landmark midline, a crucial intermediate target, serves as a model in the majority of early studies exploring the directional transitions of axonal projections (Evans and Bashaw, 2010). However, so many neural projections do not cross the midline that it is challenging to understand how these axon projections are guided (Goodhill, 2016). In our study, we established an excellent model to investigate the mechanism of axonal projection direction switch by the Drosophila s-LNvs. We discovered a coordinated growth pattern between the vertical projection of s-LNvs and the MB calyx. Furthermore, the complementary interaction between Dscam1 expressed in s-LNvs and the emerging DN-secreted Netrins precisely modulates the transition of s-LNv axons from a vertical to a horizontal projection within a specific time window (Figure 7). These findings reveal the mechanism behind the transition of axonal projection direction, emphasizing the significance of developmental microenvironments in ensuring precise axon projection.
 
-## The dependence of s-LNv vertical projection on MB calyx expansion
+### The dependence of s-LNv vertical projection on MB calyx expansion
 
 During our monitoring of the axonal projection of s-LNvs, we observed that the axon terminals reached the dorsolateral brain area at an early stage but continued their vertical growth. This phenomenon raises the question of what drives this growth. The MB, a sophisticated central hub within the fruit fly’s brain, exhibits proximity to the projection of s-LNv axons in spatial arrangement. Upon careful examination, we found a positive correlation between the vertical length increase of s-LNv axons and the growth of the MB calyx (Figure 2). Remarkably, when we selectively removed KC cells, we observed a striking effect on the axonal projection of s-LNvs. The s-LNv axonal projections either stalled at the initial stage or even completely disappeared (Figure 2 and data not shown). Hence, the vertical projection of s-LNv axons is dependent on MB calyx expansion. Our hypothesis is supported by the findings of Helfrich-Förster who reported locomotor activity and circadian rhythm defects in some MB mutants (Helfrich-Förster et al., 2002), potentially attributed to the abnormality of s-LNvs axon. Moreover, it was observed that the MB mutants had minimal impact on the l-LNvs. This can be attributed to the fact that l-LNvs fibers emerge at a later stage during pupal development and are situated at a spatial distance from the MB.
 
 Unfortunately, we did not identify any molecules that have a discernible impact on the vertical projection of s-LNv axons through screening. This indicates that the successful completion of the vertical projection process may play a pivotal role in determining the overall existence of s-LNv axonal projections. Furthermore, the dorsal projection of s-LNv axons intersects with the ventral projection of neurons such as DN1 in the dorsolateral region adjacent to the calyx (Keene et al., 2011), resembling the corpus callosum in mammals (Fothergill et al., 2014; Hutchins et al., 2011; Keeble et al., 2006; Piper et al., 2009; Unni et al., 2012). Thus, during early developmental stages, multiple guiding cues may redundantly function between the MB calyx and neighboring neural processes to ensure the smooth progression of neural development and establish a stable brain structure. However, to gain a more comprehensive understanding, it is worthwhile to explore whether the development of the MB calyx influences the projection of other neurons traversing the same territory and the guidance cues involved. Insights from existing single-cell sequencing data obtained from multiple stages of larval life (Brunet Avalos et al., 2019; Corrales et al., 2022), might offer some clues and indications.
 
-## Netrin/Dscam signaling specifically controls the horizontal projection of s-LNv axons
+### Netrin/Dscam signaling specifically controls the horizontal projection of s-LNv axons
 
 In this paper, when we specifically knockdown Dscam1 in s-LNvs, we observed a significant defect in the axonal horizontal projection. This suggests that Dscam1 autonomously regulates the horizontal axonal projection of s-LNvs (Figure 3). Our findings align with a recent study that reported abnormal horizontal axonal projection of s-LNv neurons in adult flies when Dscam1 mRNAs lack the long 3′ UTR (Zhang et al., 2019).
 
 The extracellular domain of Dscam1 has been verified to be capable of binding to Netrin or Slit (Alavi et al., 2016). In Drosophila, at the midline of the embryonic central nervous system, Dscam1 forms a complex with Robo1 to receive the Slit signal and promote the growth of longitudinal axons (Alavi et al., 2016). In adult flies, Slit/Robo signaling restricts the medial growth of s-LNv axons (Oliva et al., 2016). However, we found that reducing Netrins levels, rather than slit, led to a decrease in the horizontal projection distance of s-LNv axons. Moreover, in the NetABΔ double mutant, the extent of defects in the horizontal axonal projection of s-LNv neurons is similar to that observed when knocking down Dscam1 in s-LNvs. Indeed, previous studies have provided evidence showcasing the widespread involvement of Dscam1 as a receptor for Netrin in mediating axon growth and pathfinding (Liu et al., 2009; Ly et al., 2008; Matthews and Grueber, 2011). When we disturbed the expression of Netrin signals in the axon targeting microenvironment, it was also sufficient to cause abnormal s-LNv projection (Figure 6—figure supplement 1B, C). Therefore, our findings suggest that Netrin, as a ligand for Dscam1, regulates the process of switching axon projection direction (Figure 4).
 
-## The newborn DN-secreted Netrin coordinates with s-LNv-expressed Dscam1 to switch the projection direction of s-LNv axons
+### The newborn DN-secreted Netrin coordinates with s-LNv-expressed Dscam1 to switch the projection direction of s-LNv axons
 
 While the midline serves as a prominent landmark, it presents a daunting challenge to comprehend the guidance and directional transitions of axons in many neural projections that do not actually cross this central axis (Evans and Bashaw, 2010). Segmented patterns such as the limb segment traversed by Ti1 neuron projections or neural circuits formed in a layer- or column-specific manner also serve as intrinsic ‘guideposts’ (Bentley and Caudy, 1983; Isbister et al., 1999; Kolodkin et al., 1992), offering valuable insights into axonal pathfinding processes. How axonal projections without clear landmarks are guided? Following vertical projection, the s-LNvs growth cones remain within the dorsolateral area for at least 48 hr before initiating horizontal projection (Figure 1). This phenomenon aligns harmoniously with the outcomes observed in earlier studies that the axonal growth of other types of neurons slows down at the specific choice point, the midline (Bak and Fraser, 2003; Godement et al., 1994; Li et al., 2021), indicating that the dorsolateral area serves as an intermediate targets to facilitate the subsequent phase of s-LNvs projection journey.
 
 Extracellular cues released by the final or intermediate targets play a crucial role in guiding axonal projection. The axon terminals of s-LNvs showed close spatial associations with the somas and processes of DNs. In this study, the knockdown of Netrins specifically in per+,Pdf− neurons, but not in the MB, resulted in axon projection defects in s-LNvs (Figure 5). Furthermore, the ablation of DNs resulted in the inhibition of horizontal growth of s-LNvs axons (Figure 5). These findings suggest that the Netrin signaling microenvironment secreted by DNs is involved in regulating the horizontal projection of s-LNv axons.
 
-## Ideas and speculation
+### Ideas and speculation
 
 The emergence of NetB-positive DNs and the aberrant axonal projection of s-LNv neurons caused by DN ablation occur concurrently during development (Figure 6). In Drosophila, three types of circadian oscillator neurons, including two DN1s, two DN2s, and four to five s-LNvs, can be identified as early as embryonic stage 16 (Houl et al., 2008). The DN3 group, which represents the largest contingent within the central circadian neuron network with over 35 neurons, emerges during the larval stage (Liu et al., 2015). Little is known about the function of DN3 neurons, particularly during the larval stage. Due to the lack of cell-specific labeling tools, we can only speculate about the identity of these newly generated Netrin-secreting neurons as DN3s based on their spatial distribution. Taken together, these results unveil a novel regulatory mechanism where axons, during the process of pathfinding, await guidance cues from newly born guidepost cells. This enables a switch in the direction of axon projection, facilitating the axon’s subsequent journey.
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Pdf-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_6900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nSyb-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_51941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>repo-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-7415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>OK107-GAL4</td>
+      <td>Kyoto Stock Center</td>
+      <td>DGRC-106098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tab2-201Y-G AL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-4440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Tubulin-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>per-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-7127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB247-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-50742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Crz-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-51976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Pdf-GAL80</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-80940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS--mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-5137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS--mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-5130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS--mCD8-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-27392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexAop-mCD8-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-32207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Clk856-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-93198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-rprC;;UAS-hid</td>
+      <td>Gifted from Yufeng Pan</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dscam11</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-5934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dscam121</td>
+      <td>Gifted from Haihuai He</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Dscam105518</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-11412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NetAΔ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-66878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NetBΔ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-66879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NetABΔ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-66877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NetB-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-67644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NetBtm</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC-66880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dscam1RNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU3896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NetARNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU1972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NetBRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>TH201500623.S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-slitRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-pakRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>TH201500668.S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DockRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU2815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-SH3PX1RNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU2738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-tsrRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU0972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-chicRNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>THU0986</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PDF (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>C7; RRID:AB_760350</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HRP (rabbit monoclonal)</td>
+      <td>Jackson Immuno Research</td>
+      <td>Cat# 323-005-021, RRID:AB_2314648</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP FLUR 488(rabbit polyclonal)</td>
+      <td>Invirtrogen</td>
+      <td>Cat# A-21311, RRID:AB_221477</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379, RRID:AB_2209751</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Invirtrogen</td>
+      <td>Cat# A10262, RRID:AB_2534023</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9402, RRID:AB_2151827</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dscam1 18 mAb (mouse monoclonal)</td>
+      <td>Gift from Tzumin Lee (Yu et al., 2009)</td>
+      <td>N/A</td>
+      <td>IF(1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (Alexa Fluor 555)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150078; RRID:AB_2722519</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG H&amp;L (Alexa Fluor 647)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150115, RRID:AB_2687948</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG H&amp;L (Alexa Fluor 488) preadsorbed</td>
+      <td>Abcam</td>
+      <td>Cat# ab150081; RRID:AB_2734747</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG H&amp;L (Alexa Fluor 488)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150113; RRID:AB_2576208</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Chicken IgY H&amp;L (Alexa Fluor 488)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150169; RRID:AB_2636803</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-HA-NetA (plasmid)</td>
+      <td>Gift from Duan R</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-HA-NetB (plasmid)</td>
+      <td>Gift from Duan R</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8.0.2</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zeiss LSM Image Browser</td>
+      <td>Zeiss</td>
+      <td>https://www.zeiss.com/microscopy/int/downloads/lsm-5-series.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fiji</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 The flies were maintained on standard medium at 25°C with 60–80% relative humidity. The wild-type flies used in this study were w1118. The Dscam1 (CG17800) null mutant allele, Dscam121, was obtained from Haihuai He’s laboratory. UAS-rpr.C;;UAS-hid fly were kindly provided by Yufeng Pan’s laboratory. The RNAi lines used in these studies were purchased from Tsinghua University; other flies were obtained from Bloomington Stock Center. Full genotypes of the flies shown in the main figures and figure supplements are listed in Supplementary file 2.
 
-## Generation of transgenic flies
+### Generation of transgenic flies
 
 To generate the NetA and NetB transgenes, the full-length NetA cDNAs and the the full-length NetB cDNAs were subcloned into the pUAST vectors and injected into w1118 flies.
 
-## Antibodies
+### Antibodies
 
 Antibodies were obtained from Developmental Studies Hybridoma Bank (anti-PDF, anti-FasII), Jackson Immuno Research (anti-HRP), Invitrogen (anti-GFP Alexa-488 goat anti-chicken IgY), Rockland (anti-RFP), and Abcam (Alexa-555 goat anti-rabbit IgG, Alexa-647 goat anti-mouse IgG, Alexa 488 goat anti-rabbit IgG, and Alexa 488 goat anti-mouse IgG), gifted from Tzumin Lee’s Lab (anti-Dscam1).
 
-## Collection embryo and larvae
+### Collection embryo and larvae
 
 ~100 females lay eggs on the collecting medium (1% agar and 30% juice) in Petri dishes for a 4-hr period. To obtain larvae of defined ages, freshly emerged larvae were selected at 2-hr intervals. They were then allowed to grow on the cornmeal medium until they reached the desired age, and they were dissected at 0.5-hr intervals.
 
-## Immunostaining
+### Immunostaining
 
 The embryos were dechorionated using 50% bleach and then fixed with 1 volume of heptane and 1 volume of 4% paraformaldehyde (PFA) for 20 min at room temperature. The vitelline membrane was removed by shaking the embryos in 100% methanol for 1 min. The embryos were washed with methanol for 5 min, followed by a 5-min wash with a 1:1 mixture of methanol and PBST (1× phosphate-buffered saline, PBS + 0.1% Triton X-100), and then washed twice with PBST for 5 min each. The embryos were blocked with 5% bovine serum albumin (BSA) in PBST for 30 min at room temperature. They were then treated with properly diluted primary antibody with 5% BSA in PBST at 4°C overnight. The embryos were washed three times with 1 ml PBST at room temperature for 30 min each. Subsequently, the embryos were treated with properly diluted fluorescent secondary antibody with 5% BSA in PBST and shaken at room temperature for 2–4 hr. The embryos were washed three times with 1 ml PBST at room temperature for 30 min each. After three washes, brains were mounted for microscopy in vectashield without 4’,6-Diamidino-2’-phenylindole (DAPI) (Vector Laboratories).
 
@@ -129,14 +548,14 @@ Primary antibodies were mouse anti-PDF (1:300), mouse anti-FasII (1:50), Rabbit 
 
 ImageJ software (National Institutes of Health) was used for the quantification vertical and horizontal axonal length of PDF immunostaining in s-LNvs. For s-LNvs horizontal measurements, results are presented as A.U. representing the fraction between the lengths of the horizontal projections divided by the distance between cell bodies and midline. Data are presented as means ± standard deviation (SD) from examined brains.
 
-## RNAi screening
+### RNAi screening
 
 The UAS-RNAi line were obtained from Tsinghua Fly Center, and Bloomington Drosophila Stock Center. The RNAi screen fly was generated as follows: recombine Pdf-GAL4 with UAS-mCD8-GFP or use Clk856-GAL4 directly, which has a broader expression pattern. UAS-RNAi males were crossed to this two screening lines, and the resulting flies were kept at 25°C, and dissected at desired age.
 
-## Neuron ablation
+### Neuron ablation
 
 Tab2-201Y-GAL4 which is expressed in larval MB γ neuron and per-GAL4,Pdf-GAL80 which is expressed in DN neurons was used to drive the expression of reaper (rpr) and hid.The GAL4 flies integrated UAS-GFP, and the efficiency of ablation was confirmed by GFP signals in MB and DN neurons. Animals were raised at 25°C to desired time.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All samples were obtained randomly and included in the statistical analysis. Statistical analysis was performed with GraphPad Prism V8.0.2 software. Data are presented as means ± SD. Shapiro–Wilk test was used to verify whether the data conformed to the normal distribution. F test was used to verify homogenous variances between two groups. Bartlett test was used to verify homogenous variances three or more conditions and genotypes. Statistical significance was set as: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, ns, no significance, p > 0.05. Statistical details of the experiments are found in the figure legends.

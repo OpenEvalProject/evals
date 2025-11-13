@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03ykbk197 Department of Psychology, Centre for Comparative and Evolutionary Psychology, University of Portsmouth Portsmouth United Kingdom
-2. https://ror.org/04xyxjd90 Centre for Interdisciplinary Research on Social Interaction, Department of Psychology, Nottingham Trent University Nottingham United Kingdom
-3. https://ror.org/02feahw73 CNRS-MNHN-Université Paris Cité Paris France
-4. https://ror.org/026zzn846 School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom
-5. https://ror.org/03yeq9x20 School of Psychology, University of Lincoln Lincoln United Kingdom
+1. Department of Psychology, Centre for Comparative and Evolutionary Psychology, University of Portsmouth Portsmouth United Kingdom ([ROR:03ykbk197](https://ror.org/03ykbk197))
+2. Centre for Interdisciplinary Research on Social Interaction, Department of Psychology, Nottingham Trent University Nottingham United Kingdom ([ROR:04xyxjd90](https://ror.org/04xyxjd90))
+3. CNRS-MNHN-Université Paris Cité Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+4. School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+5. School of Psychology, University of Lincoln Lincoln United Kingdom ([ROR:03yeq9x20](https://ror.org/03yeq9x20))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ In this study we compared the facial behavior of three macaque species that vary
 
 ## Results
 
-## Entropy of facial behavior
+### Entropy of facial behavior
 
 To compare the relative uncertainty in the facial behavior of macaques, we defined facial behavior by the unique combination of Action Units (facial muscle movements) that occurred at the same time. We calculated the entropy ratio for each species and social context, defined as the ratio between the observed entropy and the expected entropy if Action Units were used randomly. Values closer to 0 indicate that there is low uncertainty (e.g., when only a few facial movements are used frequently) and values closer to 1 indicate high uncertainty (e.g., when many facial movements are used frequently). To determine whether the entropy ratios for each species differed within social context, we calculated the entropy ratio on 100 bootstrapped samples of the data, resulting in a distribution of possible values. The bootstrapped entropy ratio of facial behavior differed across species and within social contexts (Figure 1). In an affiliative context, the entropy ratio was highest for crested, then Barbary, and lowest for rhesus macaques (crested: mean = 0.52, range = 0.50–0.53; Barbary: mean = 0.45, range = 0.45–0.46; rhesus: mean = 0.38, range = 0.37–0.39). In an aggressive context, the entropy ratio was highest for crested, then rhesus and lowest for Barbary macaques (crested: mean = 0.62, range = 0.60–0.65; Barbary: mean = 0.32, range = 0.32–0.33; rhesus: mean = 0.48, range = 0.47–0.49). In a submissive context, the entropy ratio was highest for crested, then Barbary, and lowest for rhesus macaques (crested: mean = 0.67, range = 0.64–0.70; Barbary: mean = 0.49, range = 0.48–0.50; rhesus: mean = 0.38, range = 0.37–0.39). Overall, across all contexts, including when the context was unclear, the entropy ratio was highest for crested, and similar for Barbary and rhesus macaques (crested: mean = 0.57, range = 0.56–0.58; Barbary: mean = 0.51, range = 0.51–0.51; rhesus: mean = 0.52, range = 0.51–0.52; Figure 1).
 
@@ -50,7 +50,7 @@ To compare the relative uncertainty in the facial behavior of macaques, we defin
 
 **Figure 1.:** The entropy ratio was calculated on 100 bootstrapped samples of the data by dividing the observed entropy by the expected entropy if Action Units were used randomly for each social context. The entropy ratio ranges from 0 to 1, with higher values indicating higher uncertainty. Symbols and whiskers indicate mean and range of bootstrapped values.
 
-## Context specificity of facial behavior
+### Context specificity of facial behavior
 
 We calculated the context specificity for all possible combinations of Action Units. Here, we report specificity for combinations that were observed in at least 1% of observations per species and social context because extremely rare signals do not affect the predictability of a system substantially, regardless of whether they have high or low specificity. Specificity for each Action Unit combination was defined as the number of times it was observed in one context divided by the total number of times it was observed across all contexts. When considering single Action Units, some were observed in only one context, but most were observed at least once in all three contexts for all three species (Figure 2). On average, single Action Units were observed in fewer contexts for rhesus (mean degree = 1.9), compared to Barbary (mean degree = 2.4), and crested macaques (mean degree = 2.6). The specificity of all Action Unit combinations used in an affiliative context was highest for the rhesus macaques, then Barbary, and lowest for crested macaques (rhesus: mean = 0.80, SD = 0.28, n=69; Barbary: mean = 0.63, SD = 0.26, n=450; crested: mean = 0.37, SD = 0.26, n=327; Figure 3a). The specificity of Action Unit combinations used in an aggressive context was highest for rhesus, then crested, and lowest for Barbary macaques (rhesus: mean = 0.71, SD = 0.35, n=83; Barbary: mean = 0.44, SD = 0.38, n=64; crested: mean = 0.51, SD = 0.30, n=281). The specificity of Action Unit combinations used in a submissive context was also highest for rhesus, then crested, and lowest for Barbary macaques (rhesus: mean = 0.93, SD = 0.18, n=312; Barbary: mean = 0.61, SD = 0.18, n=297; crested: mean = 0.70, SD = 0.21, n=595). The majority (>50%) of Action Unit combinations used by rhesus macaques had high specificity (>0.8) in all three social contexts, whereas only a minority (<50%) of Action Unit combinations used by Barbary and crested macaques had high specificity (Figure 3b).
 
@@ -62,9 +62,94 @@ We calculated the context specificity for all possible combinations of Action Un
 
 **Figure 3.:** Specificity ranges from 0 (indicating an Action Unit is never observed in a context) to 1 (indicating an Action Unit is only observed in one context). (A) Distribution of Action Unit combination specificity. Width of violin plots indicate the relative density of the data. Colored symbols indicate unique Action Unit combinations. White symbols indicate mean specificity. (B) Proportion of Action Unit combinations used with high (>0.8), moderate (0.4–0.8), or low (<0.4) specificity. Context abbreviations: agg = aggressive, aff = affiliative, sub = submissive.
 
-## Predicting social context from facial behavior
+### Predicting social context from facial behavior
 
 A random forest classifier was able to predict social context (affiliative, aggressive, or submissive) from facial behavior with a better accuracy than expected by chance alone for all three species of macaques. The classifier was most accurate for rhesus (kappa = 0.92), then Barbary (kappa = 0.68), and least accurate for crested macaques (kappa = 0.49). The confusion matrices for model predictions are shown in Table 1.
+
+**Table 1.**
+ Confusion matrices for random forest classifier predictions of social context from Action Unit combinations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Truth</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr>
+      <th>Prediction</th>
+      <th>Affiliative</th>
+      <th>Aggressive</th>
+      <th>Submissive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Rhesus</td>
+    </tr>
+    <tr>
+      <td>Affiliative</td>
+      <td>636</td>
+      <td>19</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>81</td>
+      <td>1205</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>2</td>
+      <td>6</td>
+      <td>731</td>
+    </tr>
+    <tr>
+      <td colspan="4">Barbary</td>
+    </tr>
+    <tr>
+      <td>Affiliative</td>
+      <td>2573</td>
+      <td>24</td>
+      <td>442</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>200</td>
+      <td>1219</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>166</td>
+      <td>34</td>
+      <td>528</td>
+    </tr>
+    <tr>
+      <td colspan="4">Crested</td>
+    </tr>
+    <tr>
+      <td>Affiliative</td>
+      <td>1134</td>
+      <td>90</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>16</td>
+      <td>86</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>3</td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -86,7 +171,7 @@ Our results on the complexity of facial behavior in macaques is mirrored by prev
 
 ## Methods
 
-## Study subjects and data collection
+### Study subjects and data collection
 
 Behavioral data and video recordings were collected on one adult male and 31 adult female rhesus macaques (M. mulatta), on 18 adult male and 28 adult female Barbary macaques (M. sylvanus), and 17 adult male and 21 adult female crested macaques (M. nigra). Admittedly, a more balanced sample size per sex would have been preferable for rhesus macaques. Nevertheless, male and female macaques must (and do) interact and communicate with each other regularly. Therefore, we have no a priori reason to expect an overall difference in the diversity and complexity of facial behavior between the sexes. The social complexity hypothesis makes predictions at the level of societies, and we feel like our sample size for rhesus macaques is large enough to representatively capture the complexity of their facial behavior.
 
@@ -94,23 +179,124 @@ Rhesus macaques belonged to one breeding group (Gruppe 1) at the German Primate 
 
 For all study groups and subjects, focal animal observations (Altmann, 1974) lasting 15–30 min were conducted throughout the day in a pseudo-randomized order such that the number of days and time of day that each individual was observed was balanced. Videos of social interactions were recorded with a recording camera (Panasonic HDC-SD700, Bracknell, UK) during focal animal observations as well as ad libitum. Social behavior, including grooming, body contact, and agonistic interactions, was recorded using a handheld smartphone or tablet with purpose-built software (rhesus: Animal Behavior Pro [Newton-Fisher, 2020]; Barbary: CyberTracker [http://cybertracker.org], crested: Microsoft Excel).
 
-## Facial behavior and social context coding
+### Facial behavior and social context coding
 
 Facial behavior was coded at the level of observable individual muscle movements using the FACS (Ekman et al., 2002), adapted for each species of macaque (MaqFACS): rhesus (Parr et al., 2010), Barbary (Julle-Danière et al., 2015), crested (Clark et al., 2020). In FACS, individual observable muscle contractions are coded as unique Action Units (AUs; e.g., upper lip raiser AU10). Some common facial movements where the underlying muscle is unknown are coded as Action Descriptors (ADs; e.g., jaw thrust AD29). In MaqFACS, the lip-pucker AU18 has two subtle variations normally denoted as AU18i and AU18ii (Parr et al., 2010; Julle-Danière et al., 2015). However, it was often difficult to reliably distinguish between these two subtle variations when coding videos, and so the lip-pucker was simply coded as AU18. We added a new Action Descriptor 185 (AD185) called jaw-oscillation, to denote the stereotyped movement of the jaw up and down. When combined with existing Action Units of lip movements, the jaw-oscillation AD185 allows for a more detailed and accurate coding of some facial behaviors that would otherwise be labeled as lipsmack (AD181), teeth-chatter, or jaw-wobble (Clark et al., 2020; Parr et al., 2010). A complete list of Action Units and Action Descriptors coded in this study is given in Supplementary file 1—Table 1.
 
-We coded facial behavior of adult individuals but included their interactions with any other group member regardless of age or sex. Each social interaction was labeled with a context; aggressive, submissive, affiliative, or unclear. We did not consider interactions in a sexual context because data for the rhesus macaques were only collected during the non-mating season. Social context was labeled from the point of view of the signaler based on their general behavior and body language (but not the facial behavior itself), during or immediately following the facial behavior. An aggressive context was considered when the signaler lunged or leaned forward with the body or head, charged, chased, or physically hit the interaction partner. A submissive context was considered when the signaler leaned back with the body or head, moved away, or fled from the interaction partner. An affiliative context was considered when the signaler approached another individual without aggression (as defined previously) and remained in proximity, in relaxed body contact, or groomed either during or immediately after the facial behavior. In cases where the behavior of the signaler did not match our context definitions, or displayed behaviors belonging to multiple contexts, we labeled the social context as unclear. Social context was determined from the video itself and/or from the matching focal behavioral data, if available. Videos were FACS coded frame-by-frame using the software BORIS (Friard et al., 2016) by AVR (rhesus, Barbary, crested), CP (Barbary), and PRC (crested), who are certified FACS and MaqFACS coders. Inter-observer reliability was determined with the same index of agreement used by Ekman et al., 2002, for FACS, with the formula:2The number of AUs on which both coders agreedTotal number of AUs scored by both coders
+We coded facial behavior of adult individuals but included their interactions with any other group member regardless of age or sex. Each social interaction was labeled with a context; aggressive, submissive, affiliative, or unclear. We did not consider interactions in a sexual context because data for the rhesus macaques were only collected during the non-mating season. Social context was labeled from the point of view of the signaler based on their general behavior and body language (but not the facial behavior itself), during or immediately following the facial behavior. An aggressive context was considered when the signaler lunged or leaned forward with the body or head, charged, chased, or physically hit the interaction partner. A submissive context was considered when the signaler leaned back with the body or head, moved away, or fled from the interaction partner. An affiliative context was considered when the signaler approached another individual without aggression (as defined previously) and remained in proximity, in relaxed body contact, or groomed either during or immediately after the facial behavior. In cases where the behavior of the signaler did not match our context definitions, or displayed behaviors belonging to multiple contexts, we labeled the social context as unclear. Social context was determined from the video itself and/or from the matching focal behavioral data, if available. Videos were FACS coded frame-by-frame using the software BORIS (Friard et al., 2016) by AVR (rhesus, Barbary, crested), CP (Barbary), and PRC (crested), who are certified FACS and MaqFACS coders. Inter-observer reliability was determined with the same index of agreement used by Ekman et al., 2002, for FACS, with the formula:
+
+$$
+\frac{2The number of AUs on which both coders agreed}{Total number of AUs scored by both coders}
+$$
 
 An agreement rating of >0.7 was considered good (Ekman et al., 2002) and was necessary for obtaining certification. To obtain a MaqFACS coding certification, AVR, CP, and PRC coded 23 video clips of rhesus macaques and the MaqFACS codes were compared to the data of other certified coders (https://animalfacs.com). The mean agreement ratings obtained were 0.85, 0.73, 0.83 for AVR, CP, and PRC, respectively. In addition, AVR and CP coded seven videos of Barbary macaques with a mean agreement rating of 0.79. AVR and PRC coded 10 videos of crested macaques with a mean agreement rating of 0.74.
 
 Table 2 shows the number of social interactions per species and context from which FACS codes were made.
 
-## Statistical analyses
+**Table 2.**
+ Total number of social interactions per species and social context that were MaqFACS coded.Note that combination of Action Units were grouped by time blocks of 500 ms. Therefore, the number of observations in the data is twice the duration of the social interaction in seconds.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Context</th>
+      <th>N interactions</th>
+      <th>N subjects</th>
+      <th>Duration (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Rhesus</td>
+      <td>Affiliative</td>
+      <td>193</td>
+      <td>29</td>
+      <td>1197</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>413</td>
+      <td>32</td>
+      <td>2050</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>318</td>
+      <td>31</td>
+      <td>1262</td>
+    </tr>
+    <tr>
+      <td>Unclear</td>
+      <td>121</td>
+      <td>30</td>
+      <td>802</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Barbary</td>
+      <td>Affiliative</td>
+      <td>683</td>
+      <td>43</td>
+      <td>4897</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>585</td>
+      <td>44</td>
+      <td>2128</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>529</td>
+      <td>34</td>
+      <td>1890</td>
+    </tr>
+    <tr>
+      <td>Unclear</td>
+      <td>603</td>
+      <td>45</td>
+      <td>3500</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Crested</td>
+      <td>Affiliative</td>
+      <td>241</td>
+      <td>35</td>
+      <td>1918</td>
+    </tr>
+    <tr>
+      <td>Aggressive</td>
+      <td>62</td>
+      <td>23</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>Submissive</td>
+      <td>25</td>
+      <td>18</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>Unclear</td>
+      <td>107</td>
+      <td>25</td>
+      <td>684</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analyses
 
 Prior to analyses, MaqFACS data were formatted as a binary matrix with Action Units and Action Descriptors (hereafter simply Action Units) in the columns. Each row denoted an observation time block of 500 ms, where if an Action Unit was active during this time block, it was coded 1 and coded 0 if not. Thus, each row contained information on the combination of facial muscle movements that were co-activated within a 500 ms time window (Table 2). All 500 ms time blocks per interaction were used in the statistical analyses in order to retain all the variation and complexity of the facial behavior (Action Unit combinations) used by the macaques. All statistical analyses were conducted in R (version 4.2.1) (R Development Core Team, 2022).
 
-The observed entropy for each social context was calculated using Shannon’s information entropy formula (Shannon, 1948):H=−∑inpilogpi
+The observed entropy for each social context was calculated using Shannon’s information entropy formula (Shannon, 1948):
 
-where n is the number of unique Action Unit combinations and p is the probability of observing each Action Unit combination in each social context. The expected maximum entropy was calculated by randomizing the data matrix while keeping the number of active Action Units per observation (row) the same. This process was repeated 100 times and the mean of the randomized entropy values was used as the expected entropy. Therefore, the expected entropy indicated the entropy of the system if facial muscle contractions occurred at random, while keeping the combination size of co-active muscle movements within the range observed in the data. The entropy ratio was calculated by dividing the observed entropy by the expected (maximum) entropy. To determine whether the entropy ratios for each species differed within social context, the entropy ratio was calculated on 100 bootstrapped samples of the data, resulting in a distribution of possible entropy ratios. If the distribution of bootstrapped entropy ratios did not overlap, the differences between entropy ratios were considered to be meaningful.
+$$
+H=−\suminp_{i}logp_{i}
+$$
+
+where $n$ is the number of unique Action Unit combinations and p is the probability of observing each Action Unit combination in each social context. The expected maximum entropy was calculated by randomizing the data matrix while keeping the number of active Action Units per observation (row) the same. This process was repeated 100 times and the mean of the randomized entropy values was used as the expected entropy. Therefore, the expected entropy indicated the entropy of the system if facial muscle contractions occurred at random, while keeping the combination size of co-active muscle movements within the range observed in the data. The entropy ratio was calculated by dividing the observed entropy by the expected (maximum) entropy. To determine whether the entropy ratios for each species differed within social context, the entropy ratio was calculated on 100 bootstrapped samples of the data, resulting in a distribution of possible entropy ratios. If the distribution of bootstrapped entropy ratios did not overlap, the differences between entropy ratios were considered to be meaningful.
 
 We calculated the specificity with which Action Unit combinations are associated with a social context within each species using the function ‘specificity’ from the R package ‘NetFACS’ (version 0.5.0) (Mielke et al., 2022). Due to an imbalanced number of observations across social contexts, contexts with fewer observations were randomly upsampled prior to the specificity calculation. During the upsampling procedure, all observations of the minority contexts were kept, and new observations were randomly sampled to match the number of observations in the majority context. This procedure corrects for any bias in the specificity results from an imbalanced dataset (see Specificity bias correction section below for details; Figure 4). Specificity is the conditional probability of a social context given that an Action Unit combination is observed, and ranges from 0 (when an Action Unit combination is never observed in a context) to 1 (when an Action Unit is only observed in one context). Low specificity values indicate that Action Units were used flexibly across multiple contexts whereas high values indicate that Action Units were used primarily in a single context. Specificity was calculated for all Action Unit combination sizes ranging from 1 to 11 (the maximum observed combination size) co-active Action Units. When reporting context specificity results, we excluded Action Unit combinations that occurred in less than 1% of observations within a social context because extremely rare signals do not impact the predictability of a communication system regardless of whether specificity is low or high. Therefore, excluding rare Action Unit combinations removes noise from the specificity results. We report the mean specificity of Action Unit combinations per social context and the proportion of Action Unit combinations that have high, moderate, or low specificity. For single Action Units we plotted bipartite networks that show how Action Units are connected to social context weighted by their specificity.
 
@@ -120,10 +306,10 @@ We calculated the specificity with which Action Unit combinations are associated
 
 To predict social context from the combination of Action Units we fit a random forest classifier using the ‘tidymodels’ R package (version 1.0.0) (Kuhn and Wickham, 2020) using the function ‘ran_forest’ with the engine set to ‘ranger’ (Wright and Ziegler, 2017), 500 trees, 4 predictor columns randomly sampled at each split, and 10 as the minimum number of data points in a node required for splitting further. The data were randomly split into a training set (70%) and a test set (30%), while keeping the proportion of observations per social context the same in the training and test sets. Due to an imbalanced number of observations across social contexts, contexts with fewer observations were over-sampled in the training set using the SMOTE algorithm (Chawla et al., 2002) to improve the classifier predictions. To assess the classifier performance, we report the kappa statistic, which denotes the observed accuracy corrected for the expected accuracy (Cohen, 1960). Kappa is 0 when the classifier performs at chance level and 1 when it shows perfect classification. Kappa values between 0 and 1 indicate how much better the classifier performed than chance (e.g., kappa of 0.5 indicates the classifier was 50% better than chance). Kappa is a more reliable estimate of model performance than accuracy alone when the relative sample size for each context is imbalanced, as was the case with our data.
 
-## Specificity bias correction
+### Specificity bias correction
 
 FACS data were simulated for three contexts (A, B, C) and 10 elements (1–10, representing Action Units). Specificity was calculated when all contexts had an equal number of observations (denoting the true specificity) and on a subset of the data where the number of observations between the three contexts was imbalanced at a ratio of 10:5:1. Specificity values were skewed higher in the context with most observations (A) and skewed lower in context with fewest observations (C). Upsampling the minority contexts, such that all contexts had the same number of observations, substantially minimized the error bias in specificity values (Figure 4). The R script for the simulation can be found at https://github.com/avrincon/macaque-facial-complexity; copy archived at Rincon, 2022.
 
-## Ethics
+### Ethics
 
 This work adhered to the Guidelines for the treatment of animals in behavioral research and teaching (ASAB Ethical Committee and ABS Animal Care Committee, 2022) and was approved by the Animal Welfare and Ethical Review Body of the University of Portsmouth (AWERB, approval number: 919B). The AWERB uses UK Home Office guidelines on the Animals (Scientific Procedures) Act 1986 when assessing proposals and adheres to the regulations of the European Directive 2010/63/EU. The German Primate Center also complies with the European Directive 2010/63/EU, as well as with the provisions of the German Animal Welfare Act.

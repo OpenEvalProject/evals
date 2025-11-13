@@ -60,13 +60,149 @@ Here we set out to test the hypothesis that MeCP2 is the only reader that interp
 
 ## Results
 
-## Loss of Dnmt3a or MeCP2 in inhibitory neurons produces overlapping but not identical behavioral phenotypes
+### Loss of Dnmt3a or MeCP2 in inhibitory neurons produces overlapping but not identical behavioral phenotypes
 
 To compare the effects of loss of the mCH ‘writer’ and ‘reader’, we deleted Dnmt3a or Mecp2 utilizing floxed alleles for each gene in combination with a mouse line that drives Cre expression in GABAergic inhibitory neurons (Slc32a1-Cre, also known as Viaat-Cre) (Chen et al., 2001; Chao et al., 2010; Kaneda et al., 2004). We chose the promoter for the Slc32a1 gene to drive Cre expression because it has been shown to turn on in the central nervous system around embryonic day 10 (Oh et al., 2005), before the earliest mCH marks have been detected in the brain (~embryonic day 12.5 in the hindbrain) (He et al., 2017). We previously characterized mice with conditional knockout (cKO) of Mecp2 in the same neurons on an F1 hybrid background (Chao et al., 2010), but to directly compare loss of the writer and reader we re-derived the Mecp2 cKO on the C57BL/6J background. Conditional knockout mice showed loss of either Dnmt3a or MeCP2, respectively (Figure 1—figure supplement 1). We then tested both lines of mice for the same behavioral abnormalities previously reported (Chao et al., 2010).
 
 Both cKO mice were born healthy but started to display symptoms around the time of weaning. Table 1 summarizes the phenotypes, showing that there is considerable overlap in the phenotypes but also specific features that are present in only one of the models (see Supplementary file 1 for statistics). While only males are classically tested for Mecp2 knockout mice (Mecp2 is on the X-chromosome), we tested both sexes for Dnmt3a cKO mice. We observed no significant difference between males and females in any tests and therefore combined data for all Dnmt3a cKO mice except for body weight because wild-type males are larger than females.
 
+**Table 1.**
+ Summary of behavioral and physiological test results in cKO models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symptom Category</th>
+      <th>Test/observation</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">General Health</td>
+      <td>Reduced body weight</td>
+      <td>Dnmt3a</td>
+    </tr>
+    <tr>
+      <td>Prematurely moribund (humane end due to lesioning)</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td>Spasticity</td>
+      <td>Hind limb clasping</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Repetitive Behavior</td>
+      <td>Forepaw stereotypies</td>
+      <td>Dnmt3a</td>
+    </tr>
+    <tr>
+      <td>Perseverative grooming and self-injury</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nociceptive pain</td>
+      <td>Delayed response to hot plate</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td>Delayed response to tail flick</td>
+      <td>Dnmt3a</td>
+    </tr>
+    <tr>
+      <td>Apraxia</td>
+      <td>Poor nest building</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td>Muscle Strength</td>
+      <td>Decreased grip strength</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Motor</td>
+      <td>Rotarod</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Parallel rod footslip- more footslips</td>
+      <td>Mecp2</td>
+    </tr>
+    <tr>
+      <td>Open field – decreased distance traveled</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td>Open field – decreased vertical activity</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Anxiety</td>
+      <td>Open field – time spent in center</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Elevated plus maze- increased time in open arms</td>
+      <td>Mecp2</td>
+    </tr>
+    <tr>
+      <td>Light/dark box</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Learning and Memory</td>
+      <td>Conditioned fear – decreased contextual fear response</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <td>Conditioned fear – cued</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Conditioned fear – decreased response to tone #2 during fear learning (training)</td>
+      <td>Dnmt3a</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sensory processing</td>
+      <td>Increased acoustic startle response</td>
+      <td>Dnmt3a</td>
+    </tr>
+    <tr>
+      <td>Paired pulse inhibition</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Social Behavior</td>
+      <td>Partition</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>Inhibitory signaling</td>
+      <td>Altered miniature inhibitory postsynaptic currents</td>
+      <td>both</td>
+    </tr>
+  </tbody>
+</table>
+
 Both cKO mice first developed hind limb spasticity (Figure 1A), and by six weeks both Dnmt3a cKO and Mecp2 cKO mice displayed obsessive grooming (Figure 1B), forepaw apraxia (Figure 1C), muscle weakness (Figure 1D), and motor deficits (Figure 1E, Figure 1—figure supplement 2A). We found hippocampal-dependent, but not amygdala-dependent, learning and memory deficits (Figure 1F, Figure 1—figure supplement 2C). Both mouse lines showed similar trends in anxiety-like behaviors (Figure 1—figure supplement 2D–F), with Mecp2 cKO achieving significance in one test (Figure 1—figure supplement 2F). Starting at 7 to 8 weeks of age, the obsessive grooming led to skin lesions (Figure 1G); this self-injury was previously observed in Mecp2 cKO mice on an F1 hybrid background (Chao et al., 2010) but was exacerbated on the C57BL/6J background, creating a need for humane euthanasia (see Materials and methods). This shortened the period we were able to perform behavioral testing on both cKO mouse models. Both cKO mouse models still responded to pain stimuli (Figure 1—figure supplement 2G–H), albeit to a lesser degree than controls. Rotarod and social interaction deficits that manifest in Mecp2 cKO mice later in life on a F1 hybrid background did not develop within the foreshortened observation period (Figure 1—figure supplement 2I–J).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig1-v1.jpg)
+
+**Figure 1.:** (A) Mice that lack Dnmt3a or MeCP2 in inhibitory neurons present with hindlimb spasticity. (B) Obsessive grooming is increased in both cKO models. (C) Nest building, (D) grip strength, (E) open field, (F) fear conditioning tests revealed impairments in both cKO lines. (G) Self-injury in Dnmt3a cKO and Mecp2 cKO mice necessitated humane euthanasia. (H) Example traces of miniature inhibitory postsynaptic currents (mIPSCs) recorded in the dorsal striatum. Both cKO models show similar alterations in (I) amplitude. (J) Weekly body weight records for Dnmt3a cKO and Mecp2 cKO mice showed only Dnmt3a cKO mice (here separated by sex- see Materials and methods) were runted. (K) Dnmt3a cKO and Mecp2 cKO mice showed opposite alterations in acoustic startle response. (L) Only Mecp2 cKO mice displayed impairment on the parallel rod. M) Dnmt3a cKO mice had to undergo earlier euthanasia than Mecp2 cKO mice due to the severity of their self-lesioning. n = 11–52 (behavior), n = 5–9 mice per genotype with 24–50 neurons total (electrophysiology). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. See Supplementary file 1 for full statistics.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot of half brain hemisphere from Dnmt3a or Mecp2 cKO mice demonstrating loss of each protein. (B) Immunofluorescence (IF) images of WT, Dnmt3a cKO or Mecp2 cKO mice probing for Dnmt3a or MeCP2 (red), the Sun1-sfGFP-myc-PA fusion protein that marks the nuclear envelope and is dependent on Cre expression (green), and DAPI to mark genomic DNA (blue). n = 3 mice per genotype (western), n = 3 mice (IF) representative images for two brain regions shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Both mouse lines showed decreased rearing in the open field test. (B) Dnmt3a cKO mice showed impaired fear learning, whereas Mecp2 cKO mice did not differ from control mice. (C) Cue memory was normal in both cKO mice. (D–F) Tests for anxiety-like behaviors (open field, light dark or elevated plus maze, respectively). (G) Hot plate and (H) tail flick testing for nociceptive pain in both cKO mice. (I) Rotarod test for motor learning and coordination and (J) the partition test for social interaction. (K–N) Frequency, charge, rise and decay measures from mIPSCs from the striatum. (O) Only Mecp2 cKO had a trend for increased pre-pulse inhibition. n = 11–50 per genotype (behavior), n = 5–9 mice per genotype with 24–50 neurons total (electrophysiology), *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. See Supplementary file 1 for full numbers and statistics.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) X-gal staining of LacZ+/- control and (B) LacZ+/-;Slc32a1-Cre+/- reporter mice demonstrating specific staining of tissues with expression of Cre recombinase under the Slc32a1 promoter. (C–H) Images showing positive X-gal staining in nervous system tissues consistent across three biological replicates: (C) brain (D) spinal cord (E) dorsal root ganglia (F) inner ear (G) olfactory epithelium (H) and eye. (I–L) Images showing positive X-gal staining in non-neural tissues consistent across three biological replicates: (I) kidney (J) heart (K) skin (only in select regions: surrounding genital tubercle and tail and area on the face/nose) (L) ureter and bladder. Additional positive X-gal staining was noted in the (M) testis in the only embryo where the testis were visible, as well as rare, scattered cells of the intestine and pancreas (not shown). The observation of expression of Slc32a1-Cre in the testis is consistent with our noted germline recombination of floxed genes if F1, Dnmt3aflox/+;Slc32a1-Cre+/- males are used to generate F2 offspring; a breeding scheme we deliberately avoided to generate our experimental mice (see Materials and methods for more details).
 
 To compare cKO mouse models at the physiological level we measured miniature inhibitory postsynaptic currents (mIPSCs) in the dorsal striatum of 6 week old Dnmt3a cKO, Mecp2 cKO, and control male mice. We observed decreased amplitude, as well as similar changes in frequency and charge (Figure 1H–I, Figure 1—figure supplement 2K–L). Differences were not apparent in measurements of rise or decay time (Figure 1—figure supplement 2M–N).
 
@@ -74,15 +210,45 @@ Despite these similarities, there were also clear differences between the cKO mi
 
 Of note we did observe sparse labeling of cells outside the nervous system using a LacZ reporter allele (Soriano, 1999) in combination with our Slc32a1-Cre driver (Chao et al., 2010; Figure 1—figure supplement 3). Given that MeCP2 function is largely restricted to the nervous system (Chen et al., 2001; Guy et al., 2001; Ross et al., 2016) and Dnmt3a has known peripheral functions (Tatton-Brown et al., 2014; Heyn et al., 2019; Kaneda et al., 2004; Yang et al., 2015; Nishikawa et al., 2015; Okano et al., 1999), we cannot rule out that non-neuronal symptoms (e.g. body weight) observed selectively in the Dnmt3a cKO mice may be in part due to loss of Dnmt3a in these select peripheral tissues.
 
-## MeCP2 is a partial reader of Dnmt3a dependent methylation in striatal inhibitory neurons
+### MeCP2 is a partial reader of Dnmt3a dependent methylation in striatal inhibitory neurons
 
 Our behavioral data suggest that Dnmt3a and MeCP2 are functionally related, but it is still unclear what proportion of genes marked by Dnmt3a dependent methylation are regulated via MeCP2. To determine this, we tested our model that assumes MeCP2 is the only functional reader for these marks by sequencing the DNA methylome and transcriptome of sorted GABAergic inhibitory neuronal nuclei from the striatum of 6 week old Dnmt3a cKO, Mecp2 cKO, and wild-type male mice via the INTACT method (Mo et al., 2015; Figure 2A). The striatum is ideal because mCH patterns are highly cell-specific and the vast majority of neurons (95%) in this region are inhibitory medium spiny neurons (Dudman and Gerfen, 2015; Kemp and Powell, 1971). We found that methylation was stable in the absence of MeCP2 (Figure 2B, Figure 2—figure supplement 1), but ~90% of mCH was lost in the absence of Dnmt3a (Figure 2C). We also noted a ~ 10% loss of mCG in Dnmt3a cKO neurons (Figure 2D) consistent with partial mCG demethylation in the prenatal period followed by re-methylation later in development (He et al., 2017; Stroud et al., 2017). Dnmt3a is thus required to re-methylate mCG sites in the postnatal period. To determine if mCH and mCG marks written by Dnmt3a are coincident at genomic loci or independent of one another, we plotted the percentage of mCH versus mCG per gene in wild-type mice, as well as restricting the analysis to Dnmt3a dependent methylation (the change in methylation observed in the Dnmt3a cKO is defined as ‘Dnmt3a dependent’). While mCH and mCG in wild-type mice showed poor genome-wide correlation (Figure 2E), Dnmt3a dependent mCH and mCG showed significant correlation suggesting that the writing of mCH and mCG are coupled (Figure 2F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of INTACT method used to isolate inhibitory neurons from the striata of WT, Dnmt3a cKO, or Mecp2 cKO mice that also conditionally express the INTACT allele. (B) Spearman correlation of methylation profiles from inhibitory neurons sorted from WT vs. Mecp2 cKO striatum, showing that methylation is stable in the absence of MeCP2. (C) Bar graph showing the global mCH level in each biological replicate (left). Example genes from DNA methylome sequencing tracks showing mCH signal in two biological replicates per genotype (right). (D) Bar graph showing the global mCG level in each biological replicate (left). Example genes from DNA methylome sequencing tracks showing mCG signal (right). Red bars indicate DMRs. (E) Genome wide correlation between mCH and mCG in wild-type mice showing poor correlation. (F) Genome wide correlation of Dnmt3a dependent mCG and mCH showing good correlation to indicate that mCH and mCG written by Dnmt3a are coupled. Correlation values for E and F are Pearson correlations designated as ‘rho’. n = 2 mice per genotype (see Materials and methods for specific genotype information). See Supplementary file 1 for replicate statistics.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Person correlation designated as rho. Consistent with stable methylation in the absence of MeCP2, the difference centers at 0.
+
 Comparing gene expression by RNA-Seq for both cKO models, we found hundreds of differentially expressed genes (DEGs), either up- or down-regulated (Figure 3A, Supplementary file 2). Although a large portion of DEGs in the Mecp2 cKO mice (~40%) were significantly altered in Dnmt3a cKO mice indicating a dependence on Dnmt3a and an important contribution to RTT, we were surprised to find that only a small percentage of DEGs in the Dnmt3a cKO mice (~12%) were significantly altered in Mecp2 cKO mice (i.e. are ‘MeCP2 dependent’) (Figure 3B). The amount of overlap was consistent at different p-value thresholds, and whether we considered only the DEGs that were up-regulated, down-regulated, or of certain length (Figure 3—figure supplement 1, Supplementary file 2). Plotting the log2 fold-change in gene expression for each model against one another (Figure 3C), we found that DEGs common to both cKO models changed in the same direction and to a similar degree, consistent with an equal dependence on Dnmt3a and MeCP2. In all, our data show that MeCP2 is a restricted reader for Dnmt3a dependent methylation providing a platform for discovering novel functional factors in this pathway, as well as highlight a subset of genes regulated by MeCP2 that appear independent of Dnmt3a and the methylation it sets.
 
-## Integrative gene expression and methylation analysis shows mCH and mCG loss contribute to Dnmt3a cKO DEGs, and reveals a strong mCH contribution to RTT
+![Figure 3.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig3-v1.jpg)
+
+**Figure 3.:** (A) RNA-seq data of sorted WT vs Dnmt3a cKO or Mecp2 cKO striatal inhibitory neurons that also express the INTACT allele. Red dots represent genes with altered expression in the knockout cells (padj <0.01). (B) Differentially expressed genes (DEGs) that overlap between knockout models. Inhibitory neurons that lack MeCP2 share ~40% of the same DEGs as the same neurons that lack Dnmt3a. Only ~12% of DEGs in inhibitory neurons that lack Dnmt3a are shared with the same neurons that lack MeCP2. (C) Plot of log2 fold-change for DEGs in Dnmt3a cKO and Mecp2 cKO models. DEGs that are only significantly misregulated in the Dnmt3a cKO model, only significantly misregulated in the Mecp2 cKO model, or common to both models are colored in blue, green, or orange, respectively. The plot shows that the DEGs common to both models have similar degree and direction of change.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The data are a re-analysis of single-nuclear RNA sequencing (Stroud et al., 2017). The percentages are shown as all genes and genes broken down by direction of change (down- or up-regulated) for (A) PV and (B) VIP neurons. Consistent with our data there are few DEGs significantly misregulated in Dnmt3a cKO mice that are also significantly misregulated in the same neurons that lack MeCP2. Notably, our data show a significantly higher overlap of genes (40%) misregualted in Mecp2 cKO that are also misregulated in the Dnmt3a cKO.
+
+### Integrative gene expression and methylation analysis shows mCH and mCG loss contribute to Dnmt3a cKO DEGs, and reveals a strong mCH contribution to RTT
 
 Plotting gene body mCH in wild-type mice for each category of differentially expressed genes, we find that, overall, DEGs have greater gene body mCH than genes that are unchanged, with up-regulated genes having higher mCH levels than down-regulated genes (Figure 4A, Figure 4—figure supplement 1A). The same analysis showed that mCG levels are also higher on DEGs than non-DEGs for the majority of DEGs categories (Figure 4B), consistant with the idea that total methylation may also influence the final transcriptional outcome (Lagger et al., 2017). Here we also see differences in mCG levels between up and down-regulated genes in each category, though the relationship between direction of gene expression change and higher mCG levels was not constant between DEG categories (Figure 4B, Figure 4—figure supplement 1B). Figure 4—figure supplement 1C–F shows gene body methylation levels for all genotypes and statistics for comparisons. Of note, some non-DEG genes show detectable changes in methylation (Figure 4—figure supplement 1C–D), however the magnitude of methylation loss is notably less than at DEG genes in either cKO model suggesting that the magnitude of methylation loss may drive the associated altered gene expression changes we observe.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig4-v1.jpg)
+
+**Figure 4.:** (A) Gene-body mCH levels in different categories of DEGs in WT mice are plotted, highlighting that misregulated genes have higher mCH than genes that are unchanged and the significant differences between mCH levels on up- and down-regulated genes. (B) Gene-body mCG levels in different categories of DEGs in WT mice are plotted, demonstrating that misregulated genes (with the exception of MeCP2 down-regulated genes) have higher mCG than genes that are unchanged and the significant differences between mCG levels on up- and down-regulated genes. (C) Running average plot of log2fold change in gene expression for genes significantly misregulated only in the Dnmt3a cKO model versus the change in mCH methylation observed in the Dnmt3a cKO model (‘Dnmt3a dependent mCH methylation’) (left). Running average plot of log2fold change in gene expression for these same genes versus the change in mCG methylation observed in the Dnmt3a cKO (‘Dnmt3a dependent mCG methylation’) (right). (D) Running average plots of log2fold change in gene expression in the Dnmt3a cKO model for genes commonly misregulated in both cKO models versus Dnmt3a dependent mCH (right) and mCG (left). (E) Running average plots of log2fold change in gene expression in the MeCP2 cKO for genes commonly misregulated in both cKO models versus Dnmt3a dependent mCH (right) and mCG (left). (F) Running average plots of log2fold change in gene expression for genes that are only significantly misregulated in the MeCP2 cKO model. (G–J) R2 values from analysis in panels C-F shown as blue, orange or green dots, respectively, plotted over 1000 random repetitions of the analysis with each repetition containing the same number of non-DEGs (padj >0.01). The results of random repetitions are shown as gray dots. All plots were made with DEGs padj <0.01. n = 2 mice per genotype for methylation data. n = 4 mice per genotype (RNA-seq). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Averaged gene-body mCH levels (average of two replicates) in different categories of DEGs in WT mice, highlighting the direction of difference in mCH levels between up- and down-regulated DEGs. The box plots within each segment highlights the median of the distribution, while the red point represents the mean of the distribution. (B) Averaged gene-body mCG levels (average of two replicates) in different categories of DEGs in WT mice, highlighting the direction of difference in mCG levels between up- and down-regulated DEGs. The box plots within each segment highlights the median of the distribution, while the red point represents the mean of the distribution. (C) Gene-body mCH levels in different categories of DEGs in WT, Dnmt3a cKO and Mecp2 cKO mice. (D) Gene-body mCG levels in different categories of DEGs in WT, Dnmt3a cKO and Mecp2 cKO mice. (E) P-value matrix for comparison of mCH levels of different categories of genes. The boxes are colored such that more significant p-values are darker shades of red. (F) P-value matrix for comparison of mCG levels of different categories of genes. As in C, the boxes are colored such that more significant p-values are darker shades of red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52981/elife-52981-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–H) Running average and validation plots from Figure 4 re-plotted after removing DEGs that may represent changes in gene expression in the minor population of co-purified inhibitory interneurons. All plots were made with DEGs padj <0.01. n = 2 mice per genotype for methylation data. n = 4 mice per genotype (RNA-seq). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To elucidate the relative contribution of mCH or mCG written by Dnmt3a to gene expression changes in our cKO models, we employed a similar method to previous publications (Stroud et al., 2017) and examined running average plots for the log2 fold-change in gene expression for each cKO model versus the percent change in Dnmt3a dependent methylation. These data were then fit with a univariate linear model to determine the percentage variance in log2 fold change explained by either mCH or mCG (R2, see Materials and methods). For genes significantly misregulated only in the Dnmt3a cKO model we found a correlation with both Dnmt3a dependent mCH and mCG (Figure 4C), consistent with these marks being part of the same epigenetic program. These trends were statistically robust as when the same analysis was done 1000 times using random sets of non-DEG genes, the R2 values for our selected set of DEGs were significantly higher (Figure 4G, see Materials and methods). The same trends hold when plotting the fold change in gene expression in the Dnmt3a cKO for genes that are commonly misregulated in both cKO models (Figure 4D,H). When we plot these commonly misregulated genes against the fold change in gene expression in the MeCP2 cKO, we find a strong dependence on the change in gene expression to the change in mCH but not mCG (Figure 4E,I). As expected significant trends were not observed for Dnmt3a dependent methylation when plotting DEGs that were only significantly misregulated in the MeCP2 cKO mice (Figure 4F,J).
 
@@ -104,7 +270,325 @@ There is a defined set of proteins in the mammalian genome that possess a methyl
 
 ## Materials and methods
 
-## Animal husbandry and handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Dnmt3a</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: 20703; RRID:AB_2093990</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-MeCP2</td>
+      <td>Huda Zoghbi lab (in house)</td>
+      <td>0535</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-histone H3</td>
+      <td>Abcam</td>
+      <td>Cat. #: 1791; RRID:AB_302613</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit-HRP</td>
+      <td>BioRad</td>
+      <td>Cat. #: 170–5046;RRID:AB_11125757</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Dnmt3a</td>
+      <td>Novus</td>
+      <td>Cat. #: NB120-13888; RRID:AB_789607</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Myc</td>
+      <td>Sigma</td>
+      <td>Cat. #: C3956; RRID:AB_439680</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-MeCP2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3456; RRID:AB_2143849</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat. #: 13970; RRID:AB_300798</td>
+      <td>(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A21127; RRID:AB_141596</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit Dylight 488</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat. #: A120-201D2; RRID:AB_10634085</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-chicken Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: A11039; RRID:AB_142924</td>
+      <td>(1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa Fluor 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A10042; RRID:AB_2534017</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NeuN</td>
+      <td>Millipore</td>
+      <td>Cat. #: MAB377; RRID:AB_2298772</td>
+      <td>(1:300) (each batch needs to be empirically tested after labeling with Alexa Fluor 647)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A-21311; RRID:AB_221477</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>Cat. #: 5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce Universal Nuclease for Cell Lysis</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 88701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optimal Cutting Temperature medium</td>
+      <td>VWR</td>
+      <td>Cat. #: 25608–930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VECTASHIELD HardSet Antifade Mounting Medium without DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>Cat. #: H-1400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cryoseal XYL</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. #: 22-050-262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aqueous Glutaraldehyde EM Grade, 10% 10 ML</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat. #: 16100</td>
+      <td>Dilute fresh</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma</td>
+      <td>Cat. #: P6148</td>
+      <td>Make fresh</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>X-Gal</td>
+      <td>Gold Biotechnologies</td>
+      <td>Cat. #: X4281C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNasin Ribonuclease Inhibitors</td>
+      <td>Promega</td>
+      <td>Cat. #: N261A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltraPure BSA (50 mg/mL)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. # AM2618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DPBS, no calcium, no magnesium</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 14190144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UltraPure DEPC-Treated Water (1L)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 750023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GE Healthcare Amersham ECL Prime Western Blotting Detection Reagent</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. #: 45010090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>APEX Alexa Fluor 647 Antibody Labeling Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A10475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Single Cell RNA Purification Kit</td>
+      <td>Norgen Biotek</td>
+      <td>Cat. #: 51800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NuGEN Ovation RNA-Seq v2</td>
+      <td>NuGen</td>
+      <td>protocol p/n 7102, kit p/n 7102–08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Rubicon ThruPlex DNA-Seq</td>
+      <td>Rubicon Genomics</td>
+      <td>protocol: QAM-108–002, kit p/n R400428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>EZ DNA Methylation-Direct Kit</td>
+      <td>Zymo</td>
+      <td>Cat. #: D5021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Unmethylated lambda DNA spike-in</td>
+      <td>Promega</td>
+      <td>Cat. #: D1521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Dnmt3aflox/flox mice</td>
+      <td>Dr. Margaret Goodell, Baylor College of Medicine (Can be purchased from Riken BRC)</td>
+      <td>Cat. #: RBRC03731; RRID:IMSR_RBRC03731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Slc32a1-Cre+/+ mice</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat. #: 017535; RRID:IMSR_JAX:017535</td>
+      <td>backcrossed to C57Bl/6J</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>Mecp2flox/flox and Mecp2flox/y mice</td>
+      <td>MMRRC</td>
+      <td>Cat. #: 011918-UCD; RRID:MMRRC_011918-UCD</td>
+      <td>backcrossed to C57Bl/6J</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Mus musculus)</td>
+      <td>R26-CAG-LSL-Sun1-sfGFP-Myc+/+ mice</td>
+      <td>Dr. M. Margarita Behrens, The Salk Institute for Biological Studies (can be purchased from Jackson Laboratory)</td>
+      <td>Cat. #: 021039; RRID:IMSR_JAX:021039</td>
+      <td>backcrossed to C57Bl/6J</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 6</td>
+      <td>GraphPad Software</td>
+      <td>www.graphpad.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>pClamp10</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Minianalysis 6.0.3</td>
+      <td>Synaptosoft Inc</td>
+      <td>http://www.synaptosoft.com/MiniAnalysis/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR aligner version 2.5.3a</td>
+      <td>GitHub</td>
+      <td>https://github.com/alexdobin/STAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCount v1.5.3</td>
+      <td>Subread</td>
+      <td>http://subread.sourceforge.net</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 v1.6.2</td>
+      <td>Bioconductor</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/DESeq2.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry and handling
 
 Baylor College of Medicine Institutional Animal Care and Use Committee (IACUC, Protocol AN-1013) approved all mouse care and manipulation. Mice were housed in an AAALAS-certified Level three facility on a 14 hr light-10hr dark cycle. To obtain Dnmt3a cKO and control mice for behavior and electrophysiology, Dnmt3aflox/flox mice (Kaneda et al., 2004) (C57BL6 background) were bred to Slc32a1-Cre+/+ mice (Chao et al., 2010) (C57BL/6J background) and Dnmt3aflox/flox mice were bred to wild-type mice (C57BL/6J background) to get F1 Dnmt3aflox/+;Slc32a1-Cre+/- females and Dnmt3aflox/+ males, respectively. F1 Dnmt3aflox/+;Slc32a1-Cre+/- females were mated with Dnmt3aflox/+ or Dnmt3aflox/flox males to obtain F2 mice (males and females) of the following genotypes for behavior and electrophysiology: Dnmt3a+/+ (WT), Dnmt3a+/+;Slc32a1-Cre+/- (Cre), Dnmt3aflox/flox (Flox), Dnmt3aflox/+;Slc32a1-Cre+/- (Het), Dnmt3aflox/flox;Slc32a1-Cre+/- (cKO). Importantly, female mice carrying the Cre allele at F1 were used in F2 mating as we discovered that males of the same genotype (Dnmt3aflox/+;Slc32a1-Cre+/-) mated at F1 frequently transmit the Cre allele in the germline resulting in deletion of the Dnmt3a allele in the whole body of F2 offspring. To obtain Mecp2 cKO and control mice for behavior and electrophysiology, Mecp2flox/+ females (Chen et al., 2001) (C57BL/6J background) were mated to Slc32a1-Cre+/- males (C57BL/6J background) to get F1 male mice of the following genotypes: Mecp2+/y (WT), Mecp2+/y;Slc32a1-Cre+/- (Cre), Mecp2flox/y (Flox), Mecp2flox/y;Slc32a1-Cre+/- (cKO). Weekly weights and health scores were taken according to previously described disease score scale (Guy et al., 2007). For electrophysiological recordings control mice (WT and Cre) were shared for analysis and taken from both breeding schemes.
 
@@ -112,111 +596,111 @@ To obtain Dnmt3a cKO, Mecp2 cKO and WT mice suitable for INTACT biochemistry exp
 
 Before experimental cohorts were subject to investigation we noted Dnmt3a cKO and Mecp2 cKO mice had a self-injury phenotype leading to skin lesions. Therefore, the institutional veterinarian was consulted to define humane euthanasia endpoint criteria for further experiments. Mice with lesions could be treated with antibiotic cream, and mice were euthanized when lesions extended below the skin layer. Survival age was taken as the age in which a mouse died of natural causes or when a mouse was euthanized due to skin lesions according to the institutional veterinarian guidelines set beforehand. Investigators were blind to genotypes of experimental mice until behavioral tests were finalized.
 
-## Mouse behavioral tests
+### Mouse behavioral tests
 
 Dnmt3a cKO, Mecp2 cKO, and control mice were assigned individual ID numbers and the experimenters were blinded to genotype for the duration of behavioral testing. Experimental mice were divided into two cohorts for testing. Cohort one mice were subjected to the following tests, in order, at 6 weeks of age: open field, grooming, hotplate and tail flick, grip strength, parallel rod footslip, and prepulse inhibition/acoustic startle. The same mice were tested for conditioned fear at 8 weeks. Cohort two mice were subjected to the following tests, in order, at 6 weeks of age: elevated pus maze, light/dark box, rotarod, and partition/nesting. All behavioral assays were conducted during the light cycle, generally in the afternoon. All tests were conducted in light conditions.
 
 All behavior data was analyzed using GraphPad Prism version 6 (GraphPad Software, La Jolla California USA, www.graphpad.com). Results were considered to be significant at p < 0.05 and statistical significance reported in figures using a star notation to represent the lowest significance reached in the comparison (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). After behavioral analysis of the Dnmt3a cohort separated by both sex and genotype was completed, we determined that there was no statistical difference in phenotype between males and females. Therefore, data for male and female mice were merged in our final analysis with the exception of body weight measures, where wild-type males are larger than females. Statistical analysis for only males in the Dnmt3a cohort can also be found in Supplementary file 1.
 
-## Grooming
+### Grooming
 
 Mice were habituated in the test room for 30 min. Each mouse was individually placed in a clean housing cage without food, food grate, or water for 10 min. They were then videotaped for an additional 10 min. After recording, the mice were returned to their home cage. Videos were scored for grooming time by an investigator blind to the genotype of the test mouse. Data is shown as mean ± standard error of mean and was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Grip strength
+### Grip strength
 
 Mice were habituated in the test room for 30 min. Each mouse was allowed to grab the bar of a digital grip strength meter (Columbus Instruments, Columbus, OH) with both forepaws while being held by the tail and then pulled horizontally away from the meter with a constant slow force until the forepaws released. The grip (in kg of force) was recorded and the procedure repeated for a total of three pulls. Data shown is the average of the three pulls presented as mean ± standard error of mean. Grip strength was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Open field
+### Open field
 
 Mice were habituated for 30 min in the test room lit at 200 lux with white noise playing at 60 dB. Each mouse was placed singly in the open field apparatus (OmniTech Electronics, Columbus, OH) and allowed to move freely for 30 min. Locomotion parameters and zones were recorded using Fusion activity monitoring software. Data is shown as mean ± standard error of mean and was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Fear conditioning
+### Fear conditioning
 
 Mice were habituated for 30 min outside the test room. Mice were placed singly into the conditioned fear apparatus (Coulbourn Instruments, Holliston, MA) that consisted of a lighted box with a floor made of parallel metal bars. On the training day, mice were placed in the chamber and subjected to two rounds of training, each of which consisted of 180 s of silence followed by a 30 second-long 80–85 dB tone and 2 s of a 0.72 mA shock. 24 hr after training, the mice were returned to the box where they received the shock and freezing behavior recorded for six minutes (Context). One hour later, the grated floor of the test chamber was covered, the shape changed with plastic panels, and vanilla scent added to the chamber. Mice were returned to the apparatus and subjected to a cue test consisting of 180 s of silence followed by 180 s of the original 80–85 dB tone. Freezing behavior for all tests was scored using Freeze Frame three software (Actimetrics) with a threshold of 5.0. Data is shown as mean ± standard error of mean. Context tests were analyzed by one-way ANOVA with Tukey's post hoc analysis. Cue tests were analyzed by two-way ANOVA with Tukey’s post hoc analysis.
 
-## Hot plate and tail flick
+### Hot plate and tail flick
 
 Mice were habituated for 30 min in the test room prior to testing. Each mouse was placed individually on a 55°C hot plate (Stoelting Co., Wood Dale, IL) and observed for jumping, vocalization, hind paw lifting, or licking of the hind paws. At the first incidence of any of these behaviors the mouse was removed from the hot plate and the elapsed time noted. 30 min after the hot plate test, the mouse was placed on the tail flick apparatus (Stoelting Co., Wood Dale, IL) and restrained with a paper towel laid over the mouse and held down gently by the experimenter’s hand. The tail was laid in the groove above the lamp but was not restrained. The lamp was then turned on at 5-6eWatts; this also started the timer, which stopped automatically when the mouse moved its tail away from the lamp. The mouse was then returned to its home cage. Data was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Elevated plus maze
+### Elevated plus maze
 
 Mice were habituated for 30 min in the test room lit at 200 lux with white noise playing at 60 dB. The elevated plus maze is a plus sign-shaped maze with two opposite arms enclosed by walls and two opposite arms open without walls. The entire maze is elevated above the floor. Mice were placed singly at the intersection of the four arms and allowed to move freely for 10 min. Activity was recorded by a suspended digital camera and recorded by the ANY-maze software (Stoelting Co., Wood Dale, IL). Data is shown as mean ± standard error of mean. Time and distance in the open arm were each analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Light/Dark Box
+### Light/Dark Box
 
 Mice were habituated for 30 min in the test room lit at 200 lux with white noise playing at 60 dB. Mice were placed singly in the light side of the light dark apparatus (Omnitech Electronics, Columbus, OH) and allowed to move freely for 10 min. Locomotion parameters and zones were recorded using Fusion activity monitoring software. Data is shown as mean ± standard error of mean. Time in Light was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Parallel rod footslip
+### Parallel rod footslip
 
 Mice were habituated in the test room for 30 min. Each mouse was placed in a footslip chamber consisting of a plexiglass box with a floor of parallel-positioned rods and allowed to move freely for 10 min. Movement was recorded by a suspended digital camera, while footslips were recorded using ANY-maze software (Stoelting Co.). At the completion of the test, mice were removed to their original home cage. Total footslips were normalized to the distance traveled for data analysis. Data is shown as mean ± standard error of mean and analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Acoustic startle response and prepulse inhibition
+### Acoustic startle response and prepulse inhibition
 
 Mice were habituated for 30 min outside the test room. Each mouse was placed singly in SR-LAB PPI apparatus (San Diego Instruments, San Diego, CA), which consisted of a Plexiglass cylindrical tube in a sound-insulated lighted box. Once restrained in the tube, the test mouse was allowed to habituate for 5 min with 70 dB white noise playing. The mouse was presented with eight types of stimulus, each presented six times in pseudo-random order with a 10–20 ms inter-trial period: no sound, a 40 ms 120 db startle burst, three 20 ms prepulse sounds of 74, 78, and 82 dB each presented alone, and a combination of each of the three prepulse intensities presented 100 ms before the 120 dB startle burst. After the test, mice were returned to their home cage. The acoustic startle response was recorded every 1 ms during the 65 ms period following the onset of the startle stimulus and was calculated as the average response to the 120 db startle burst normalized to body weight. Percent prepulse inhibition was calculated using the following formula: (1-(averaged startle response to prepulse before startle stimulus/averaged response to startle stimulus)) x 100. Data are shown as mean ± standard error of mean. Percent prepulse inhibition was analyzed by two-way ANOVA with Tukey’s post hoc analysis, and acoustic startle response was analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## Rotarod
+### Rotarod
 
 Mice were placed on the rotating cylinder of an accelerating rotarod apparatus (Ugo Basile, Varese, Italy) and allowed to move freely as the rotation increased from 5 rpm to 40 rpm over a five-minute period. Latency to fall was recorded when the mouse fell from the rod or when the mouse had ridden the rotating rod for two revolutions without regaining control. This procedure was repeated for a total of four trials for two days. Data is shown as mean ± standard error of mean. Latency to fall was analyzed by two-way ANOVA with Tukey’s post hoc analysis.
 
-## Partition test and nesting analysis
+### Partition test and nesting analysis
 
 Mice were single-housed for 48 hr on one side of a standard housing cage. The cage was divided across its width by a divider with holes small enough to allow scent but no physical interaction. The test mouse was provided with a KimWipe folded in fourths as nesting material. At 24 hr and 48 hr of single-housing, the KimWipe was assessed for nesting score, as described previously (Chao et al., 2010). At least 16 hr before the partition test, a novel age- and gender-matched partner mouse of a different strain was placed on the opposite side of the partition. On the day of the test, the cage was placed on a well-lit flat surface. All nesting material, food pellets, and water bottles were removed from both sides of the cage, and the test mice were observed for 5 min while interaction time with the now-familiar partner mouse was recorded. Interactions involved the test mouse smelling, chewing, or actively exploring the partition. At the end of the first test (Familiar 1), a novel mouse of the same age, gender, and strain replaced the familiar partner mouse, and test mouse interactions were recorded for five minutes (Novel). The novel mouse was then removed and the familiar partner mouse returned to the cage, followed by observation for another 5 min (Familiar 2). At the completion of the partition test, test mice were returned to their original home cage. Data is shown as mean ± standard error of mean. Interaction times were analyzed by two-way ANOVA with Tukey’s post hoc analysis, and nesting scores were analyzed by one-way ANOVA with Tukey’s post hoc analysis.
 
-## X-gal staining of whole E14.5 embryos
+### X-gal staining of whole E14.5 embryos
 
 X-gal staining was done as in Hurd et al. (2007). Specifically, timed matings between Slc32a1-Cre+/- (JAX#017535) (Chao et al., 2010) and LacZ+/+ mice (JAX#003474) (Soriano, 1999) were set, E14.5 embryos were dissected and fixed in a 0.5% formalin solution (0.5% formaldehyde, 2 mM MgCl2, 5 mM EGTA, in 1X PBS) overnight at 4°C. Embryos were transferred to a 30% sucrose solution containing 2 mM MgCl2 and incubated at 4°C overnight. Fixed, cryoprotected embryos were embedded in Optimal Cutting Temperature medium (VWR 25608–930) and stored at −80°C. Sagittal sections of LacZ+/-;Slc32a1-Cre+/- or LacZ+/- control mice were processed at 25 μm on a Leica CM3050S cryostat, dried on slides and stored at −20°C prior to staining. For X-gal staining, slides containing sections of LacZ+/-;Slc32a1-Cre+/- and control mice were equilibrated at room temperature for 20 min. Slides were incubated for 5 min at room temperature in a solution containing 0.5% glutaraldehyde, 1.25 mM EGTA, 2 mM MgCl2 in 1X PBS. Slides were then washed 3 times for 5 min each in wash buffer (2 mM MgCl2, 0.02% IGEPAL-630, 0.1M Sodium Phosphate buffer pH 7.4) and stained at 37°C in X-gal staining buffer (5 mM K4(Fe(CN)6, 5 mM K3(Fe(CN)6), 1 mg/mL X-gal, 2 mM MgCl2, 0.02% IGEPAL-630, 0.1M Sodium Phosphate buffer pH 7.4) until blue pigment was well detected on slides with sections from LacZ+/-;Slc32a1-Cre+/- (less than 2 hr). Slides were washed again in wash buffer 3 times for 5 min, 1X PBS for 5 min, and fixed with 4% Paraformaldehyde for 5 min as room temperature. After fixation slides were washed in 1X PBS 2 times for 5 min each and rinsed in milliQ water for 5 min. Slides were counterstained in eosin for 2–3 sec, washed with 95% ethanol 2 times 30 sec each, 100% ethanol 2 times 30 sec each, xylene 2 times for 30 sec each and mounted in Cryoseal XYL (Fisher Scientific Cat# 22-050-262). Final slides were imaged at 20X on a Axio Scan.Z1. A pathology report for unbiased identification of specific regions of X-gal staining was obtained from the Research Services Laboratory at the Center for Comparative Medicine at Baylor College of Medicine.
 
-## Western blots
+### Western blots
 
 Dnmt3aflox/flox;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/-, R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- and Mecp2flox/Y;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- male mice, 6–16 weeks old were anaesthetize with isoflurane, whole brains dissected, split in half, frozen in liquid nitrogen and stored at −80°C till processing. Half-brains were thawed in 2 mL lysis buffer (20 mM HEPES pH 7.4, 200 mM NaCl, 100 mM Na3PO4, 1% Triton X-100, 1X protease inhibitor (Sigma Cat#5056489001), 1:2000 Universal Nuclease (Sigma Cat# 88701), dounced 50X with tight pestle and incubated on ice for 20 min. Lysates were spun down 2 × 20 min at 13,200 rpm at 4°C saving the supernatant each time. 20 μg of protein was loaded onto a NuPAGE 4–12% Bis-Tris gradient gel and run in MES Running Buffer (Thermo Fisher Cat#NP0321BOX and NP000202, respectively). Protein bands were transferred to a nitrocellulose membrane in Tris-Glycine buffer (25mM Tris, 192mM glycine) plus 10% methanol at 400mA for 1 hr at 4°C. Membrane was blocked with 5% milk in tris buffered saline (5mM Tris pH 7.5, 120mM NaCl) with 0.1% Tween-20 (TBST) for 1 hr at room temperature (RT), cut and appropriate segments stained with primary antibodies overnight at 4°C. Membranes were washed in 1X TBST 3x for 5 min at RT and stained with secondary antibodies at 4°C for 1 hr, followed by repeated washes in 1X TBST. ECL detection kit (Fisher 45010090) was used to detect HRP. Antibodies used were: 1:1000 anti-Dnmt3a (Santa Cruz 20703), 1:10,000 anti-MeCP2 (in house N-terminal antibody), 1:20,000 anti-histone H3 (Abcam 1791) for primary antibodies, and 1:10,000 goat anti-rabbit-HRP (BioRad 170–5046) for the secondary antibody. Data is shown as mean ± standard error of mean and subject to unpaired t test with Welch's correction for statistical analysis.
 
-## Immunofluorescence
+### Immunofluorescence
 
 2 week old Dnmt3aflox/flox;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- and R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- brains were dissected and fixed in PBS-buffered 4% paraformaldehyde overnight at 4°C, equilibrated in 30% sucrose for 2 days and then frozen in Optimal Cutting Temperature medium (VWR 25608–930). 6 week old Mecp2flox/Y;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- and R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/- male mice were give Buprenorphine 30 min before being anaesthetize with Rodent Combo III and subject to transcardial perfusion using ice cold 1XPBS followed by PBS-buffered 4% paraformaldehyde, 10 mL each. Brains were post-fixed in PBS-buffered 4% paraformaldehyde overnight at 4°C, equilibrated in 30% sucrose for 2 days and then frozen in Optimal Cutting Temperature medium (VWR 25608–930). For 2 week old brains, 25 μm sagittal sections were taken on a Leica CM3050S cryostat, dried on slides and washed briefly in 1XPBS. Slides were transferred to antigen retrieval buffer (10 mM Citrate pH6, 0.05% Tween-20) in a 95°C water bath for 20 min, and then solution was allowed to cool to RT. For 6 week old brains 25 μm sagittal sections were taken on a Leica CM3050S cryostat and then processed without antigen retrieval. All sections were blocked in blocking buffer (2% normal goat serum, 0.3% Triton X-100, in 1XPBS) for 1 hr at RT and then stained with respective primary antibodies in blocking buffer (1:250 anti-Dnmt3a (VWR 64B1446) and 1:200 anti-Myc (Sigma C3956) for 2 week old brains and 1:500 anti-MeCP2 (Cell signaling 3456) and 1:800 anti-GFP (abcam 13970) for 6 week old brains). Sections were washed 4X in 1XTBST at RT for 5 min each and then stained with secondary antibodies overnight at 4°C (1:1000 goat anti-mouse 555 (Invitrogen A21127) and 1:750 goat anti-rabbit 488 (Bethyl A120-201D2) for 2 week old brains and 1:750 goat anti-chicken 488 (Invitrogen A11039) and 1:1000 donkey anti Rabbit-568 (Invitrogen A10042) for 6 week old brains). Sections were washed 4x in 1XTBST at RT for 5 min each and then stained with 2.5 μg DAPI in 1XPBS then washed in 1XPBS, both for 10 min at RT. Sectioned were mounted in VECTASHIELD HardSet Antifade Mounting Medium without DAPI (Vector Laboratories H-1400) and let dry overnight at 4°C. Images were taken on a Zeiss LSM 880 with Airyscan microscope at 20X. Images were taken with the same laser and gain settings and processed equivalently to facilitate comparison across genotypes. Of note, Dnmt3a related brains were processed at 2 weeks of age as Dnmt3a protein levels are at their peak, but then decline soon after this developmental time window (Lister et al., 2013) making immunofluorescence challenging at 6 weeks of age.
 
-## Electrophysiology
+### Electrophysiology
 
 Acute fresh brain slices were prepared from 6 week old, male mice. Coronal slices (350 μm thick) containing striatum were cut with a vibratome (Leica Microsystems Inc, Buffalo Grove, IL) in a chamber filled with cutting solution containing 110 mM C5H14ClNO, 25 mM NaHCO3, 25 mM D-glucose, 11.6 mM C6H7O6Na, 7 mM MgSO4, 3.1 mM C3H3NaO3, 2.5 KCl, 1.25 mM NaH2PO4 and 0.5 mM CaCl2. The slices were then incubated in artificial cerebrospinal fluid (ACSF) containing 119 mM NaCl, 26.2 mM NaHCO3, 11 mM D-glucose, 3 mM KCl, 2 mM CaCl2, 1 mM MgSO4, 1.25 mM NaH2PO4 at RT. The solutions were bubbled with 95% O2 and 5% CO2. Whole-cell recording was made from medium spiny neurons in the dorsal striatum by using a patch-clamp amplifier (MultiClamp 700B, Molecular Devices, Union City, CA) under infrared differential interference contrast optics. Microelectrodes were made from borosilicate glass capillaries and had a resistance of 2.5–4 MΩ. Data was collected with a digitizer (DigiData 1440A, Molecular Devices). The analysis software pClamp10 (Molecular Devices) and Minianalysis 6.0.3 (Synaptosoft Inc, Decatur, GA) were used for data analysis. Miniature IPSCs were recorded in voltage-clamp mode in the presence of 10 µM 6-cyano-7-nitroquinoxaline-2, 3-dione (CNQX), 50 µM D-2-amino-5-phosphonopentanoic acid (AP5) and 1 µM TTX. The glass pipettes were filled with high-Cl-intrapipette solution containing 145 mM KCl, 10 mM HEPES, 2 mM MgCl2, 4 mM MgATP, 0.3 mM Na2GTP and 10 mM Na2-phosphocreatine, pH 7.2 (with KOH). Signals were filtered at 2 KHz and sampled at 10 KHz. Data were discarded when the change in the series resistance was above 20% during the course of the experiment. The whole-cell recording was performed at 25 (±1) °C with the help of an automatic temperature controller (Warner Instruments, Hamden, CT). Data were analyzed with ordinary one-way ANOVA with Tukey's multiple comparisons. Results were considered to be significant at p < 0.05.
 
-## Nuclei isolation
+### Nuclei isolation
 
 Whole striatum was dissected from 6 week old Dnmt3aflox/flox;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/-, Mecp2flox/y;R26-CAG-LSL-Sun1-sfGFP-Myc+/-;Slc32a1-Cre+/-, and R26-CAG-LSL-Sun1-sfGFP-Myc +/-;Slc32a1-Cre+/-, male mice in ice-cold HB buffer (0.25M sucrose, 25 mM KCL, 5 mM MgCl2, 20 mM Tricine-NaOH pH 7.8) and flash frozen in liquid nitrogen and stored at −80°C. Experimental striatum (both halves of one mouse) were subjected to nuclear isolation and sorting for a total of 4 animals for each genotype. Individual striatum were dounced one at a time in 9 mL lysis buffer (0.32M Sucrose, 5 mM CaCl2, 3 mM Mg(Ac)2, 0.1 mM EDTA pH8, 10 mM Tris-HCl pH8, 1 mM DTT, 0.1% Triton X-100, 1X protease inhibitors (Sigma 5056489001), ribonuclease inhibitor (Promega N261A) 30 U/ml in DEPC treated water) in a 15 mL dounce homogenizer (VWR 62400–642) 15 strokes with loose pestle, followed by 35 strokes with tight pestle. Homogenized tissue was gently layered onto two ultracentrifuge tubes (4.5 ml on each) filled with 8.5 mL sucrose solution (1.8M sucrose, 3 mM Mg(Ac)2, 1 mM DTT, 10 mM Tris-HCl pH8, 1X protease inhibitors (Sigma 5056489001), ribonuclease inhibitor 30 U/ml in DEPC treated water). Samples were spun in a Beckman Optima LE 80K ultracentrifuge for 2.5 hr at 6°C with slow deceleration. After centrifugation, the top layer of gradient and mitochondrial layer was discarded carefully with vacuum until ~3 mL remained. Remaining solution was gently poured off and tubes dabbed with a KimWipe being careful to not disturb the nuclear pellet. Nuclei were rehydrated on ice for 45 min in 500 uL of rehydration buffer that was added drop-wise (0.5% BSA, 1X protease inhibitors, ribonuclease inhibitor 30 U/ml in 1X DPBS). Re-hydrated nuclei were pipetted up and down 50X with using a 1 mL filter tip with the end cut to increase clearance size. Matched samples were then re-pooled and dual labeled with mouse anti-NeuN 647 (Millipore MAB377 labeled using Thermo Fisher Scientific A10475) and anti-GFP 488 (Thermo Fisher Scientific A-21311) at 1:300 and 1:1000 ratio, respectively, for 1 hr at 4°C with gentle mixing. A BD Influx Cell Sorter at the Salk Flow Cytometry Core facility equipped with a 100 micron nozzle tip was used to isolate nuclei. Sheath fluid and pressure was 1X PBS (no Ca2+, Mg2+) and 18.5 PSI, respectively. Nuclei were first gated based on light scatter properties to exclude debris (forward versus side scatter) then aggregate exclusion gating was applied (forward scatter as well as side scatter pulse width). Finally, nuclei were selected based on anti-NeuN647 and anti-GFP488 labeling. The nuclei fractions were collected at 4°C using a 1 or two drop purity sort mode and collected into rehydration buffer described above. Nuclei were then spun down at 5,000 rpm for 15 min at 4°C, solution removed until ~50–100 uL of buffer was left, and frozen on dry ice and stored at −80°C until DNA/RNA extraction for NGS library preparation.
 
-## RNA extraction, NGS library preparation and RNA-seq
+### RNA extraction, NGS library preparation and RNA-seq
 
 RNA was extracted from sorted nuclei using a single cell RNA purification kit from Norgen Biotek according to manufactures instructions and stored at −80C until library preparation at the Genomic and RNA Profiling Core at Baylor College of Medicine. The Genomic and RNA Profiling Core first conducted Sample Quality checks using the NanoDrop spectrophotometer and Agilent Bioanalyzer 2100. Total RNA was quanted by the user using Qubit 2.0 RNA quantitation assay. The NuGEN Ovation RNA-Seq v2 (protocol p/n 7102, kit p/n 7102–08) and the Rubicon ThruPlex DNA-Seq (protocol: QAM-108–002, kit p/n R400428) kits were used for library preparation as follows:
 
-## NuGEN ovation RNA-Seq system v2 protocol
+### NuGEN ovation RNA-Seq system v2 protocol
 
 Purified double-stranded cDNA was generated from approximately 5 ng of total RNA and amplified using both oligo d(T) and random primers. Samples were quantified using the NanoDrop ND-2000 spectrophotometer and Qubit 2.0 DNA quantitation assay. One microgram of each sample’s ds-cDNA was sheared using the Covaris LE220 focused-ultrasonicator with a 400 bp target size. The sheared samples were quantified using the Qubit 2.0 DNA quantitation assay. The fragment sizes were viewed on the Agilent Bioanalyzer to verify proper shearing.
 
-## Rubicon ThruPlex DNA-Seq library preparation protocol
+#### Rubicon ThruPlex DNA-Seq library preparation protocol
 
 A double-stranded DNA library was generated from 50 ng of sheared, double-stranded cDNA, preparing the fragments for hybridization onto a flowcell. This is achieved by first creating blunt ended fragments, then ligating stem-loop adapters with blocked 5’ ends to the 5’ end of the double-stranded cDNA, leaving a nick at the 3’ end. Finally, library synthesis extends the 3’ end of the double stranded cDNA and Illumina-compatible indexes are incorporated with five amplification cycles. The fragments are purified using AMPure XP Bead system. The resulting libraries are quantitated using the NanoDrop ND-1000 spectrophotometer and fragment size assessed with the Agilent Bioanalyzer. A qPCR quantitation is performed on the libraries to determine the concentration of adapter-ligated fragments using the Applied Biosystems ViiA7 TM Real-Time PCR System and a KAPA Library Quant Kit.
 
-## Cluster generation by bridge amplification
+#### Cluster generation by bridge amplification
 
 Using the concentration from the ViiA7 qPCR machine above, 25pM from each equimolarly pooled library was loaded onto five lanes of a high output v4 flowcell (Illumina p/n PE-401–4001) and amplified by bridge amplification using the Illumina cBot machine (cBot protocol: PE_HiSeq_Cluster_Kit_v4_cBot_recipe_v9.0). PhiX Control v3 adapter-ligated library (Illumina p/n 15017666) is spiked-in at 2% by weight to ensure balanced diversity and to monitor clustering and sequencing performance. A paired-end 100 cycle run was used to sequence the flowcell on a HiSeq 2500 Sequencing System (Illumina p/n FC-401–4003).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Adapter sequences were removed from raw sequencing reads using cutadapt (v1.13), trimmed reads were then aligned to reference genome GRCm38 (GENCODE vM15 Primary assembly) using STAR aligner (Dobin et al., 2013) (version 2.5.3a) using default parameters. The number of reads aligned within the gene body (from TSS to TES) of each gene was tabulated using FeatureCount (Liao et al., 2014) (v1.5.3) (without extension on both ends). Finally, differential gene expression (DEG) analyses on the read counts were performed using DESeq2 (Love et al., 2014) (v1.6.2) in R environment. Genes with total read counts less 10 were filtered out from analysis. For analysis of differentially expressed genes split according to gene length as measured from transcription start site to transcription end site. Genes were defined as long or short according to length standards defined in Gabel et al. (2015).
 
-## DNA methylation sequencing
+### DNA methylation sequencing
 
 DNA methylome libraries were generated using a modified snmC-seq method adapted for bulk DNA samples and as previous described in Sabbagh et al. (2018). 1% unmethylated lambda DNA (Promega D1521) was added into each sample. Libraries were sequenced using an Illumina HiSeq 4000 instrument. The mapping of DNA methylome reads was done also described in Sabbagh et al. (2018).
 
 Plots of mCH versus mCG in wild-type mice are made with gene body methylation values for percentage mCH or percentage mCG. All genes are plotted as one point per gene. Density contours are plotted with geom_density_2d in R and Pearson correlations were calculated with the cor function. The plots for the methylation differences are calculated with ((mCH in WT) - (mCH in cKO)) or as ((mCG in WT) - (mCG in cKO)).
 
-## Integrative RNA-seq and methylation analysis
+### Integrative RNA-seq and methylation analysis
 
 Methylation versus gene expression plots were made using running average binning on significantly differentially expressed genes (DEGs, padj <0.01). To obtain bins, genes were first ordered based on their methylation value. Percent methylation is calculated as ((% mCH in cKO) - (% mCH in WT)) or as ((% mCG in cKO) - (% mCG in WT)). Genes were then binned such that each bin contained the same number of genes, with 80 percent overlap between consecutive bins. One point is plotted per bin. For the plots of genes significantly misregulated only in the Dnmt3a cKO model, each bin has 25 genes and the window moves by five genes per bin. For plots of genes significantly misregulated only in the Mecp2 cKO model, as well as the common DEGs, the bin size is 10 genes and the window slides by two each time. The number of bins obtained for DEGs in the Dnmt3a cKO model were 126, and 42 for DEGs that were only significant in the Dnmt3a cKO model, and common DEGs, respectively. The number of bins obtained for DEGs in the Mecp2 cKO model were 62, and 42 for DEGs that were only significant in the Mecp2 cKO model, and common DEGs, respectively. After binning, a univariate linear model was fit to the data with the lm function in R, and the R2 (percentage variance in log2 fold change explained by methylation) was calculated.
 
 To examine the significance of the observed trends in the running average plots, we compared their R2 values to R2 values from 1000 random gene repetitions, with each repetition containing the same number of non-differentially expressed genes (padj >0.01). Gray points represent each iteration of this process, with the original DEG (padj <0.01) values for R2 shown in larger orange, green, or blue points. P value was then computed as (r+1)/(n+1) (North et al., 2002); r is number of repetitions where R2 is greater than that in the DEGs, and n is total number of repetitions.
 
-## RNA-seq deconvolution analysis
+### RNA-seq deconvolution analysis
 
-Deconvolution analysis to assign DEGs specific to medium spiny neurons (MSN) or interneurons of the mouse striatum was done using the PSEA (Population-Specific Expression Analysis) package from R platform (Kuhn et al., 2011). Genes that serve as specific markers for each neuron population were selected from single cell RNA-seq data available on the DropViz database (Saunders et al., 2018), and used to calculate marker-based reference signal to build gene-wise population specific models. Samples are separated into two groups (Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT) for the population specific differential analysis. We then applied two rounds of standard filtering (Kuhn et al., 2012) to select genes with significant population-specific changes. In the first round of filtering, we only kept genes with better model fit (R2> 0.6) and low noise levels (intercept/mean < 0.5; intercept p > 0.1). In the second round of filtering, we select genes with significant differential expression (p < 0.05).
+Deconvolution analysis to assign DEGs specific to medium spiny neurons (MSN) or interneurons of the mouse striatum was done using the PSEA (Population-Specific Expression Analysis) package from R platform (Kuhn et al., 2011). Genes that serve as specific markers for each neuron population were selected from single cell RNA-seq data available on the DropViz database (Saunders et al., 2018), and used to calculate marker-based reference signal to build gene-wise population specific models. Samples are separated into two groups (Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT) for the population specific differential analysis. We then applied two rounds of standard filtering (Kuhn et al., 2012) to select genes with significant population-specific changes. In the first round of filtering, we only kept genes with better model fit ($R^{2}$> 0.6) and low noise levels (intercept/mean < 0.5; intercept p > 0.1). In the second round of filtering, we select genes with significant differential expression (p < 0.05).
 
 In order to determine the efficacy of our deconvolution, we compared the results of PSEA and the original DESeq. A hypergeometric test was performed for each of the conditions (Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT – in both MSN and interneurons) with the phyper function in R with lower.tail set to FALSE. For MSNs, out of 849 total DEGs, DESeq called 213 and PSEA called 29 for Mecp2 cKO mice; 15 of 29 DEGs called by PSEA were found in the original 213 DEGs called by DESeq. Out of 849 total DEGs, DESeq called 722 for Dnmt3a cKO mice, and PSEA called 90; 88 of 90 DEGs called by PSEA were found in the original 722 DEGs called by DESeq. The p values for Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT are 0.000409965 and 3.598891e-06, respectively. For interneurons, out of 849 total DEGs, DESeq called 213 for to Mecp2 cKO mice, and PSEA called 24; 11 of 24 DEGs called by PSEA were found in the original 213 DEGs called by DESeq. Out of 849 total DEGs, DESeq called 722 for to Dnmt3a cKO mice, and PSEA called 19; 17 of 19 DEGs called by PSEA were found in the original 722 DEGs called by DESeq. The p values for Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT are 0.00666093 and 0.196558, respectively. As the major population, the significant overlap between DEGs called from DESeq and PSEA from MSN validate the deconvolution. As the minor population of as few as 5% (Dudman and Gerfen, 2015; Kemp and Powell, 1971), it is unsurprising that the interneuron overlap is borderline significant and insignificant in Mecp2 cKO vs. WT and Dnmt3a cKO vs. WT respectively, as not much contamination is predicted.
 

@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Department of Medicine, Meakins-Christie Laboratories, Research Institute McGill University Health Centre, McGill University Montreal Canada
-2. https://ror.org/01165k395 INSERM, Nantes Université, Center for Research in Transplantation and Translational Immunology (CR2TI), UMR 1064, ITUN Nantes France
-3. https://ror.org/04cnscd67 Biotechnology and Bioresources Valorization Laboratory, Biology Department, Faculty of Sciences, Moulay Ismail University of Meknès Meknès Morocco
-4. https://ror.org/01pxwe438 Department of Microbiology and Immunology, Meakins-Christie Laboratories, Research Institute McGill University Health Centre, McGill University Montreal Canada
-5. https://ror.org/01pxwe438 Department of Pathology, Research Institute McGill University Health Centre, McGill University Montreal Canada
+1. Department of Medicine, Meakins-Christie Laboratories, Research Institute McGill University Health Centre, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. INSERM, Nantes Université, Center for Research in Transplantation and Translational Immunology (CR2TI), UMR 1064, ITUN Nantes France ([ROR:01165k395](https://ror.org/01165k395))
+3. Biotechnology and Bioresources Valorization Laboratory, Biology Department, Faculty of Sciences, Moulay Ismail University of Meknès Meknès Morocco ([ROR:04cnscd67](https://ror.org/04cnscd67))
+4. Department of Microbiology and Immunology, Meakins-Christie Laboratories, Research Institute McGill University Health Centre, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+5. Department of Pathology, Research Institute McGill University Health Centre, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 6. McGill International TB Centre Montreal Canada
 
 † Corresponding author
@@ -39,29 +39,61 @@ Adaptations in innate immune cells are diverse with substantial plasticity to va
 
 ## Results
 
-## β-Glucan-mediated trained immunity aggravates LPS-induced ALI
+### β-Glucan-mediated trained immunity aggravates LPS-induced ALI
 
 To investigate whether systemic administration of β-glucan induces trained immunity within the lung, we sought to assess its impact on ALI triggered by LPS treatment. We initially evaluated the consequences of β-glucan-mediated training on ALI by administering LPS 7 days after training (Figure 1A). ALI assessment conducted 24 hr post-LPS instillation did not reveal any discernible distinctions attributable to the initial i.p. β-glucan injection. However, ALI was notably exacerbated in mice that had undergone β-glucan training upon subsequent LPS stimulation as demonstrated non-invasively by lung microCT scanners with regard to the increased proportion of poorly or non-aerated lung segment and to a significant increase in Hounsfield units (Figure 1B). Hounsfield units reflect a coefficient of tissue attenuation and, by extrapolation, tissue composition. Consistent findings were corroborated through two complementary invasive evaluations of ALI. Specifically, the heightened alveolar-capillary permeability following LPS instillation in β-glucan-trained mice was substantiated by elevated lung Evans blue dye concentrations (Figure 1C). Histological examination further unveiled a spectrum of notable alterations following LPS instillation, including cellular infiltration, thickened alveolar walls, and the formation of hyaline membranes, observed in β-glucan-trained mice and not PBS controls (Figure 1D). We additionally monitored weight loss following LPS instillation. ALI-induced inflammation peaks at 24 hr, reflected in the weight loss of the mice which drops nearly 10% within a day. While there were no differences in weight loss between control and β-glucan-treated mice at this timepoint, we observed that β-glucan mice exhibited a delayed recovery period given they did not return to their original weight by day 4, as opposed to control mice (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the β-glucan-induced training 7 days before LPS-induced ALI model. Experiments were performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) WT mice. (B) Lung micro-CT scan, percentage of poorly or non-aerated lung and average lung Hounsfield unit. (C) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (D) Lung histology after staining with haematoxylin and eosin (Scale bar = 200 μm). (E) Quantification of bronchoalveolar lavage (BAL) neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (F–H) BAL chemokine and pro-inflammatory cytokines concentrations (left to right) (CXCL1: chemokine C-X-C motif ligand 1, IL-6: interleukin-6, and TNF: tumour necrosis factor). (I) Quantification of BAL alveolar macrophages frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c+, Siglec-F+). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, ***p < 0.001. Schematics created using BioRender.com.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the β-glucan-induced training 7 days before LPS-induced acute lung injury (ALI) model for weight loss monitoring. (B) Weight loss curve post-LPS instillation (n = 10). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05. Schematic created using BioRender.com.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) CD11b expression on CD11c+SiglecF+ cells in the bronchoalveolar lavage (BAL) (n = 4). (B) Expression of AM-associated marker (left to right: MHCII, F4/80, CD169, CD64, CD80) on CD11c+SiglecF+ cells in the BAL (n = 5). Data were analysed using unpaired t-test and one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of the β-glucan-induced training 28 days before LPS-induced ALI model. Experiments were performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) WT mice. (B) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (C) Lung histology after staining with haematoxylin and eosin (Scale bar = 200 μm). (D) Bronchoalveolar lavage (BAL) chemokine C-X-C motif ligand 1 (CXCL1) concentration (left) and pro-inflammatory cytokines (IL-6: interleukin-6 (middle) and TNF: tumour necrosis factor (right)). (E) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (F) Quantification of BAL alveolar macrophages frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c+, Siglec-F+). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001. Schematic created using BioRender.com.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic of control (i.p. PBS, white bars) or 28 days β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult WT mice ex vivo stimulation with lipopolysaccharide (LPS). (B) Chemokine C-X-C motif ligand 1 (CXCL1) and tumour necrosis factor (TNF) concentrations after ex vivo LPS stimulation. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. **p < 0.01 Schematic created using BioRender.com.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Schematic of the β-glucan-induced training 7 days before poly(I:C)-induced ALI model. Experiments were performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) WT mice. (B) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (C) Lung histology after staining with haematoxylin and eosin (Scale bar = 200 μm). (D) Bronchoalveolar lavage (BAL) chemokine C-X-C motif ligand 1 (CXCL1) concentration (left) and pro-inflammatory cytokines (IL-6: interleukin-6 (middle) and TNF: tumour necrosis factor (right)). (E) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (F) Quantification of BAL alveolar macrophages frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c+, Siglec-F+). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001. Schematic created using BioRender.com.
 
 The increased cell infiltration 24 hr after LPS instillation in β-glucan-treated mice was due to a significant recruitment of neutrophils, as assessed in the bronchoalveolar lavage (BAL; CD11b+Ly6G+). Strikingly, the frequency and total numbers of neutrophils was doubled in the β-glucan-treated mice, after LPS administration (Figure 1E). Concomitant with the increased neutrophil recruitment, CXCL1 was significantly increased in β-glucan-treated mice when compared to control mice after LPS treatment (Figure 1F; Wengner et al., 2008). Amplified ALI in β-glucan-trained mice was also associated with increased proinflammatory cytokines (IL-6 and TNF) (Figure 1G, H). As AMs are major producers of CXCL1, IL6, and TNF, we next assessed whether β-glucan increased the proportion or number of AMs and found no significant differences between naive and β-glucan-trained mice (Figure 1I). There were also no changes in the frequency of CD11b+ AMs at baseline and post-LPS instillation between β-glucan-treated and control mice (Figure 1—figure supplement 2A). This suggests that β-glucan does not induce the expansion of monocyte-derived AMs. To further characterize AM phenotype following β-glucan, we assessed several AM-associated cell surface markers and found no differences in expression of MHCII, F4/80, CD169, and CD69 (Figure 1—figure supplement 2B). Interestingly, β-glucan enhanced the frequency of CD80+ AMs, a costimulatory molecule associated with activation and pro-inflammatory responses (Figure 1—figure supplement 2B; Burastero et al., 1999). Thus, the increased cytokine production was not due to an increased number of AMs, but rather intrinsic functional changes.
 
 Next, we examined whether the effects of β-glucan-induced immune training persisted in ALI severity. To do so, we administered β-glucan or PBS (control) in mice and after 28 days challenged them with LPS (Figure 1—figure supplement 3A). Similar to the 7-day timeframe of β-glucan training, there was increased endothelial permeability of the lungs, and increased immunopathology (Figure 1—figure supplement 3B, C) in 28 days β-glucan-trained mice challenged with LPS. This increased ALI in β-glucan-treated mice after 28 days was associated with a higher concentration of CXCL1, IL-6, and TNF and increased neutrophil infiltration in BAL (Figure 1—figure supplement 3D, E) following LPS instillation. The frequency and number of AMs were not changed between groups (Figure 1—figure supplement 3F). Increased production of cytokines was also observed upon ex vivo stimulation of AMs isolated from treated mice 28 day post-β-glucan (Figure 1—figure supplement 4). Thus, the intrinsic functional changes in AMs suggest that the exacerbation of ALI induced by β-glucan triggered a long-term reprogramming of immune cells rather than an additive effect of lingering inflammation from β-glucan injection. To assess whether this response was specific to bacterial LPS or viral agonists can cause similar responses, we next challenged β-glucan-trained mice with a TLR-3 agonist (poly(I:C)) (Figure 1—figure supplement 5A). Similar to the LPS-model, β-glucan-treated mice had heightened poly(I:C)-induced ALI shown via increased alveolar-capillary permeability, tissue damage (Figure 1—figure supplement 5B, C). Pro-inflammatory cytokines CXCL1 and IL-6 were also increased while TNF remains unchanged following challenge suggesting differing cytokine profiles between LPS and poly(I:C)-induced ALI (Figure 1—figure supplement 5D). However, β-glucan-treated mice similarly had increased neutrophil infiltration following poly(I:C) instillation (Figure 1—figure supplement 5E). The number of AMs was also unchanged among groups (Figure 1—figure supplement 5F). Collectively, these results suggest that systemic β-glucan can maintain a long-term reprogramming in AMs promoting ALI.
 
-## β-Glucan augmented ALI is mediated via AM
+### β-Glucan augmented ALI is mediated via AM
 
 Although there were no differences in the frequency or absolute number of AMs between β-glucan-treated and control mice, the early heightened response with increased CXCL1 production and the recruitment of neutrophils indicate that the AMs are engaged in the exacerbation of ALI induced by β-glucan. To further characterize the role of these cells in ALI, we locally depleted AMs using intranasally administered clodronate liposomes 2 days before performing the LPS instillation, which is at its peak of AM depletion (Figure 2A). Depletion of AMs significantly reduced the production of cytokines TNF, IL-6, and CXCL1 and the recruitment of neutrophils in BAL, which abolished the β-glucan-induced ALI (Figure 2B–D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig2-v1.jpg)
 
-**Figure 2.:** (A) Schematic of the clodronate-mediated AMs depletion experiments, performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) WT mice. (B) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (C) Quantification of bronchoalveolar lavage (BAL) neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (D) BAL chemokine C-X-C motif ligand 1 (CXCL1) and pro-inflammatory cytokines (IL-6: interleukin-6 and TNF: tumour necrosis factor) concentrations. (E) Schematic of the β-glucan-induced training and lipopolysaccharide (LPS)-induced ALI model in sex- and age-matched 6-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) Csf2rb mice. (-/-F) BAL total protein concentration. (G) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (H) BAL CXCL1, IL-6, and TNF concentrations. (I) Schematic of the adoptive transfer of control (i.p. PBS, white bars) or β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult WT mice to 2 days old Csf2rb mice. LPS-induced ALI was performed 6 weeks after adoptive transfer. (−/−J) BAL total protein concentration. (K) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c, Siglec-F−, CD11b+, Ly6G+). (L) BAL CXCL1, IL-6, and TNF concentrations. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001. Schematics created using BioRender.com.Figure 2—source data 1.
+**Figure 2.:** (A) Schematic of the clodronate-mediated AMs depletion experiments, performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) WT mice. (B) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (C) Quantification of bronchoalveolar lavage (BAL) neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (D) BAL chemokine C-X-C motif ligand 1 (CXCL1) and pro-inflammatory cytokines (IL-6: interleukin-6 and TNF: tumour necrosis factor) concentrations. (E) Schematic of the β-glucan-induced training and lipopolysaccharide (LPS)-induced ALI model in sex- and age-matched 6-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) Csf2rb-/- mice. (F) BAL total protein concentration. (G) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (H) BAL CXCL1, IL-6, and TNF concentrations. (I) Schematic of the adoptive transfer of control (i.p. PBS, white bars) or β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult WT mice to 2 days old Csf2rb−/− mice. LPS-induced ALI was performed 6 weeks after adoptive transfer. (J) BAL total protein concentration. (K) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c, Siglec-F−, CD11b+, Ly6G+). (L) BAL CXCL1, IL-6, and TNF concentrations. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001. Schematics created using BioRender.com.
 
 To further confirm that tissue-resident AMs are responsible for the increased β-glucan-induced ALI, we used Csf2rb−/− mice (Figure 2E), which do not naturally develop AMs throughout their lifespan but maintain regular levels of bone marrow-derived macrophages and interstitial macrophages (Robb et al., 1995). Similar to the AM depletion, the production of cytokines and neutrophil recruitment in BAL was similar between β-glucan-treated and control Csf2rb−/− mice after LPS administration. Importantly, there was no difference in ALI, as similar levels of proteins were measured in the BAL of β-glucan-treated and control Csf2rb−/− after the LPS challenge (Figure 2F–H).
 
 To complement these loss-of-function experiments with a gain-of-function, we adoptively transferred AMs from adult WT control (PBS) or trained (β-glucan) mice to day 2 Csf2rb−/− neonate mice (Figure 2I) and after 6 weeks challenged these mice with LPS. Remarkably, mice replenished with AMs from β-glucan-trained mice displayed an increased in production of inflammatory cytokines and the recruitment of neutrophils into the BAL (Figure 2K, L). This was associated with increased ALI as they had higher protein levels in their BAL compared to mice who received control AMs (Figure 2J). Collectively, our data demonstrate that the exacerbation of LPS-induced ALI in β-glucan-trained mice is mediated through AMs, mainly via functional reprogramming rather than a change in the proportion or number of AMs.
 
-## β-Glucan reprograms AM
+### β-Glucan reprograms AM
 
 Our findings indicate that β-glucan reprograms AMs causing an increased response to LPS and subsequently enhanced ALI. To test this hypothesis, we investigated the transcriptional state of AMs after 7 days training with β-glucan in vivo, which were then stimulated with/without LPS ex vivo LPS. The rationale for using an ex vivo system was to ensure that AMs are uniformly stimulated with LPS (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of control (i.p. PBS) or β-glucan-trained (i.p. β-glucan) AMs collected from adult WT mice ex vivo stimulation with lipopolysaccharide (LPS) (LPS−: unstimulated, LPS+: stimulated in RNA-seq analysis). (B) Discovery plot. (C) AM differential expression of genes in response to β-glucan training. (D) Gene ontology in response to β-glucan training. (E) Gene set enrichment analysis (GSEA) in response to β-glucan training. (F) AM differential expression of genes in response to LPS stimulation. (G) Gene ontology in response to LPS stimulation. (H) GSEA in response to LPS stimulation. (I) AM gene expression in response to LPS in β-glucan-trained AMs. (J) Examples of genes expression in response to LPS in control versus β-glucan-trained AMs. (K) Chemokine C-X-C motif ligand 1 (CXCL1) and tumour necrosis factor (TNF) concentrations after ex vivo LPS stimulation. (L) GSEA of oxidative phosphorylation (left) and glycolysis (right) pathways according to β-glucan-training in unstimulated (LPS−) and LPS stimulated (LPS+) AMs. (M) Evaluation of AM metabolism: basal respiration (upper left), ATP production (upper right), extracellular acidification rate (ECAR, lower left), and oxygen consumption rate (OCR, lower right). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. **p < 0.01, ***p < 0.001. Schematics created using BioRender.com.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Schematic of control and β-glucan-trained AMs collected from adult WT mice ex vivo stimulation with lipopolysaccharide (LPS). Differential expression of viral defense genes in response to LPS in β-glucan-trained AMs. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. Schematic created using BioRender.com.
 
 Principal component analysis of all expressed genes across the four conditions revealed that control and β-glucan-trained AMs had distinct transcriptional profiles (Figure 3B). More precisely, the four different conditions explained the largest variance as they spread out across the first principal component (PC), while the variation within replicates was associated to the second and third PC. Next, we investigated the effect of β-glucan-trained AMs by comparing the differential gene expression between control and β-glucan-treated mice (Figure 3C). We found 88 differentially expressed genes (32 upregulated and 56 downregulated, with a false discovery rate (FDR) adjusted p-value <0.05 and a log2fold-change cut-off of 1). Despite that only few genes were differentially expressed, gene ontology analysis indicated a strong enrichment of genes involved in innate immune response and defense response to virus (Figure 3D). Interestingly, LPS response genes were downregulated in β-glucan-treated mice suggesting that, in response to β-glucan, the LPS response pathway is attenuated or less activated. Gene set enrichment analysis (GSEA) additionally revealed an increase of genes involved in IFNα but a significant decrease of genes involved in TNF signalling (Figure 3E).
 
@@ -71,11 +103,27 @@ To delineate how β-glucan training of AMs may affect the subsequent response to
 
 As trained immunity is associated with metabolic rewiring, we next assessed if β-glucan-induced training modified the AM’s metabolic state. Genes involved in both oxidative phosphorylation and glycolysis were upregulated during response to LPS in β-glucan-trained AMs compared to untrained AMs but not at the steady state (Figure 3L). The Seahorse assay showed while only mitochondrial respiration was increased in β-glucan-trained AMs at the steady state, both mitochondrial respiration and glycolysis were increased during the response to LPS in β-glucan-trained AMs, (Figure 3M). Taken together, β-glucan functionally reprograms AMs by rewiring their transcriptomic and metabolic states.
 
-## IFNγ signalling and neutrophils are required for AM reprogramming
+### IFNγ signalling and neutrophils are required for AM reprogramming
 
 Dectin-1 is the receptor that recognizes β-glucan and is involved in mediating the biological effects of β-glucan-induced training in most cell types (Camilli et al., 2018). To assess the role of Dectin-1 in β-glucan increased LPS-induced ALI, we used the same experimental setup using Dectin-1-deficient mice (Figure 4—figure supplement 1A). Surprisingly, the increased neutrophil infiltration and pro-inflammatory cytokine production in BAL were maintained in β-glucan-treated Dectin-1−/− mice and there was no change in the AM numbers (Figure 4—figure supplement 1B–D). To determine the effect of Clec7a (Dectin-1) on β-glucan-induced AM function, Dectin-1−/− mice were treated with β-glucan and after 7 days AMs were cultured and stimulated ex vivo with LPS (Figure 4—figure supplement 2A). Similar to wild-type AMs, the production of pro-inflammatory cytokines CXCL1 and TNF was increased in β-glucan-trained Dectin1-deficient AMs after LPS stimulation (Figure 4—figure supplement 2B). This indicates that β-glucan-induced AMs reprogramming is Clec7a-independent and that AMs are trained via a different signalling pathway. Since we observed type I IFN gene expression is increased in AMs after β-glucan treatment (Figure 3E) and type I IFN was previously reported to be involved in AMs training (Zahalka et al., 2022), we next assessed the impact of β-glucan on AMs reprogramming in Ifnar−/− mice, which lack type I IFN signalling (Figure 4—figure supplement 3A). Similar to Dectin-1-deficient mice, increased production of pro-inflammatory cytokines in response to LPS by β-glucan-treated Ifnar−/− AMs was maintained, demonstrating that β-glucan-induced AMs reprogramming is type I IFN independent (Figure 4—figure supplement 3B).
 
 Considering recent studies suggesting type II IFN can train AMs following BCG (Tran et al., 2024) or adenoviral infection (Yao et al., 2018), using IfngR−/− mice we next investigated if type II IFN is involved in β-glucan-induced exacerbation of ALI (Figure 4A). In contrast to Dectin1−/− or Ifnar−/− mice, the increased neutrophils recruitment, inflammatory cytokines production, and ALI were abolished in β-glucan-trained IfngR−/− mice (Figure 4B–D). To investigate the role of type II IFN signalling in β-glucan-induced reprogramming of AMs, we performed ex vivo LPS stimulation on β-glucan-trained IfngR−/− AMs (Figure 4E). The increase of inflammatory cytokines in response to LPS by β-glucan-trained AMs was abolished (Figure 4F), suggesting that training of AM by β-glucan is IFNγ dependent.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the β-glucan-induced training and lipopolysaccharide (LPS)-induced acute lung injury (ALI) model. Experiments were performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) IfngR−/− mice. (B) Alveolar capillary membrane permeability assessed by lung Evans blue dye concentration. (C) Quantification of bronchoalveolar lavage (BAL) neutrophils proportion (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (D) BAL chemokine C-X-C motif ligand 1 (CXCL1) concentration (left) and pro-inflammatory cytokines (IL-6: interleukin-6 (middle) and TNF: tumour necrosis factor (right)) concentrations. (E) Schematic of control (i.p. PBS, white bars) or β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult IfngR−/− mice ex vivo stimulation with LPS. (F) Chemokine C-X-C motif ligand 1 (CXCL1) and tumour necrosis factor (TNF) concentrations after ex vivo LPS stimulation. (G) Schematic of the analysis of the effect of i.p. β-glucan injection on interferon-γ (IFNγ) production and neutrophils expansion before (white bars) and days 1, 3, 5, and 7 post-injection (green bars). (H) BAL IFNγ concentrations. (I) Quantification of BAL neutrophils proportion (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (J) Quantification of lung neutrophils proportion (left) and absolute count (right). (K) Schematic of control (i.p. PBS, white bars) or β-glucan-trained (i.p. β-glucan, green bars) AMs ex vivo stimulation with 50 ng/ml LPS. AMs were collected from control (i.p. injection of isotypes), neutrophils depleted (i.p. injection of anti-Ly6G antibodies), or IFNγ antibody-depleted (i.p. injection of anti-IFNγ antibodies) adult WT mice. (L) CXCL1 and TNF concentrations after ex vivo LPS stimulation. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, ***p < 0.001. Schematics created using BioRender.com.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the β-glucan-induced training 7 days before lipopolysaccharide (LPS)-induced ALI model. Experiments were performed in sex- and age-matched 10- to 12-week-old control (i.p. PBS, white bars) and trained (i.p. β-glucan, green bars) Dectin1−/− mice. (B) Bronchoalveolar lavage (BAL) chemokine C-X-C motif ligand 1 (CXCL1) concentration (left) and pro-inflammatory cytokines (IL-6: interleukin-6 (middle) and TNF: tumour necrosis factor (right)). (C) Quantification of BAL neutrophils frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c−, Siglec-F−, CD11b+, Ly6G+). (D) Quantification of BAL alveolar macrophages frequency (left) and absolute count (right) (gated on single live cells, CD45.2+, CD11c+, Siglec-F+). Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. *p < 0.05, **p < 0.01. Schematic created using BioRender.com.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic of control (i.p. PBS, white bars) β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult Dectin1−/− mice ex vivo stimulation with lipopolysaccharide (LPS). (B) Chemokine C-X-C motif ligand 1 (CXCL1) and tumour necrosis factor (TNF) concentrations after ex vivo LPS stimulation. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. ***p < 0.001. Schematic created using BioRender.com.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/102068/elife-102068-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic of control (i.p. PBS, white bars) β-glucan-trained (i.p. β-glucan, green bars) AMs collected from adult Ifnar−/− mice ex vivo stimulation with lipopolysaccharide (LPS). (B) Chemokine C-X-C motif ligand 1 (CXCL1) and tumour necrosis factor (TNF) concentrations after ex vivo LPS stimulation. Data were analysed using one-way ANOVA followed by Dunn’s multiple comparisons test. **p < 0.01, ***p < 0.001. Schematic created using BioRender.com.
 
 Considering the concentration of IFNγ was significantly increased in BAL at day 1 post- β-glucan administration, which was associated with the increased number of neutrophils (Figure 4G–J), we next assess the direct role of IFNγ in training of AMs by β-glucan. We selectively depleted IFNγ prior to β-glucan administration in vivo (Figure 4K), and found the production of inflammatory cytokines (CXCL1 and TNF) was significantly reduced in β-glucan-trained AMs. Similarly, the depletion of neutrophils prior to β-glucan treatment in mice resulted in significant reduction in inflammatory cytokines in β-glucan-trained AMs (Figure 4L). These findings indicate that β-glucan reprograms AMs via IFNγ- and neutrophil-dependent manner.
 
@@ -95,84 +143,290 @@ Although we have not directly tested the contribution of circulating monocytes i
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Csf2rb−/−</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 005940; RRID:IMSR_JAX:005940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Clec7a (Dectin1)−/−</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 012337; RRID:IMSR_JAX:012337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ifnar−/−</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 028288; RRID:IMSR_JAX:028288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>IfngR−/−</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 003288; RRID:IMSR_JAX:003288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CXCL1 DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: DY453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNF-alpha DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: DY410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-6 DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: DY406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IFNγ DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #: DY485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA assay</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #: 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XF Cell Mito Stress Test Kit</td>
+      <td>Agilent</td>
+      <td>Cat #: 103015-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fixable Viability Dye eFluor 506</td>
+      <td>Invitrogen</td>
+      <td>Cat #: 65-0866-14</td>
+      <td>FACS (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified Rat Anti-Mouse CD16/CD32 (Mouse BD Fc Block)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 553141; RRID:AB_394656</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7-conjugated anti-CD11c (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 561022; RRID:AB_647251</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV786-conjugated anti-Siglec-F (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 740956; RRID:AB_2740581</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BUV395-conjugated anti-CD11b (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 565976; RRID:AB_2738276</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cy7-conjugated anti-Ly6G (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 560600; RRID:AB_1727561</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BUV737-conjugated anti-CD45.2 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 612778; RRID:AB_2870107</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-IFNγ (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 554412; RRID:AB_395376</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti-CD45.2 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 553772; RRID:AB_395041</td>
+      <td>In vivo (2 µg per mouse)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BUV395-conjugated anti-CD45.2 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>Cat #: 564616; RRID:AB_2738867</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Depleting anti-IFNγ (rat IgG1k) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #: 505801; RRID:AB_315395</td>
+      <td>In vivo (200 µg per mouse)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Depleting anti-Ly6G (rat IgG2a,k) (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #: 127601; RRID:AB_1089179</td>
+      <td>In vivo (70 µl per mouse)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Clodronate liposomes</td>
+      <td>Liposoma BV</td>
+      <td>Cat #: C-005</td>
+      <td>In vivo (200 µg per mouse)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Escherichia coli O55:B55 LPS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: L2637</td>
+      <td>In vivo (50 µg per mouse)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>β-1,3-Glucan purified from Saccharomyces cerevisiae</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: G5011</td>
+      <td>In vivo (1 mg per mouse)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly(I:C) HMW</td>
+      <td>Invivogen</td>
+      <td>Cat #: tlrl-pic</td>
+      <td>In vivo (50 µg per mouse)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6, Csf2rb−/−, Clec7a−/−, Ifnar−/−, and IfngR−/− mice were purchased from Jackson Laboratories. All animals were housed and inbred at the animal facility of the Research Institute of McGill University under specific pathogen-free conditions with ad libitum access to food and water, a temperature of 21°C (±1°C), relative humidity of 40–60% (±5%), and light cycle of 12 hr on, 12 hoff (daily cycle). Sex as a biological variable: Mice were randomly allocated to experimental groups, and experiments were performed using both female and male age- and sex-matched mice. Similar findings were reported for both sexes.
 
-## β-Glucan training
+### β-Glucan training
 
 Mice were administered intraperitoneally with 1 mg of β-1,3-glucan purified from Saccharomyces cerevisiae (Sigma) diluted in 100 µl of PBS 7 or 28 days before lung injury or AMs collection for ex vivo stimulation.
 
-## ALI models
+### ALI models
 
 Mice were administered with 50 µg of Escherichia coli O55:B55 LPS (Sigma) or poly(I:C) (Invivogen) in PBS (25 µl per mouse, intranasally) to induce TLR-4- or 3-mediated ALI, respectively.
 
-## Lung microCT scan
+### Lung microCT scan
 
 The trachea was cannulated with a 22-gauge cannula and an intra-thoracic pressure of 25 mmH2O was generated using a manometer. Images were acquired right after lung inflation using the nanoScan SPECT + CT (Mediso) allowing a resolution of 20 µm. DICOM software was used to analyse the microCT scans determining the average lung Hounsfield unit (HU) and the proportion of non- or poorly aerated lung (HU –500; +100).
 
-## BAL and lung collection
+### BAL and lung collection
 
 Broncho-alveolar lavage (BAL) samples collected by cannulating the trachea with a 22-gauge cannula, then washing the lungs with 3× 1 ml of cold, sterile PBS. The total volume of the recovered fluid after lavage was around 0.7 ml. Samples were centrifuged (1500 rpm, 10 min). Lung tissues were perfused with 10 ml of PBS, collected and minced before collagenase type I (3 mg, Worthington CLS-1), elastase (3 mg, Worthington ESL), and DNase I (0.4 mg, Worthington D) digestion for 30 min at 37°C. Lungs were filtered through a 70-µm nylon mesh, and red blood cells were lysed.
 
-## Endothelial permeability
+### Endothelial permeability
 
 LPS or poly(I:C)-challenged mice were intravenously injected with 400 µl of Evan’s blue dye (2% in PBS) into the mice. After 1 hr, mice were euthanized, and lungs were perfused with 10 ml of PBS. Evan’s blue then extracted by overnight incubation in formamide at 56°C (lungs) and quantified by spectrophotometry analysis using a standard curve of Evan’s blue in formamide.
 
-## Histopathological analysis
+### Histopathological analysis
 
 Histopathological analysis was performed as previously described (Pernet et al., 2023). Lungs were inflated and fixed for 48 hr with 10% formalin, and then embedded in paraffin. Sections (5 µm) were cut and stained with haematoxylin and eosin. Slides were scanned at a resolution of ×40 magnification, and pictures were taken using a Leica Aperio slide scanner (Leica). Histology samples were evaluated according to ATS 2011 guidelines regarding ‘Features and measurements of experimental ALI in animals’ by a blinded observer.
 
-## ELISA
+### ELISA
 
 CXCL1, TNF-α, IL-6, and IFNγ levels in BAL were assessed by ELISA (R&D Systems).
 
-## Protein in BAL
+### Protein in BAL
 
 Samples were centrifuged (1500 rpm, 10 min), and total protein content was assessed using a Pierce BCA Protein assay (Thermo Fisher).
 
-## Flow cytometry
+### Flow cytometry
 
 BAL and total lung cell counts were determined with a haemocytometer, and 1–2 illion cells were used for staining. Cells were initially stained with viability dye e506 (Invitrogen, 20 min, 4°C) and surface stained with anti-CD16/32 (BD Bioscience) in 0.5% BSA/PBS solution to block nonspecific AB interaction with Fc receptors (10 min, 4°C). Cells were then surface-stained with different combinations of PE-Cy7-conjugated anti-CD11c, BUV786-conjugated anti-Siglec-F, BUV395-conjugated anti-CD11b, APC-Cy7-conjugated anti-Ly6G, and BUV737-conjugated anti-CD45.2 antibodies (all from BD Biosciences). For IFNγ intra-cellular staining, cells were fixed and permeabilized using BD CytoFix/CytoPerm (BD Bioscience) before intracellular staining with PE-conjugated anti-IFNγ antibodies (BD Biosciences). Flow cytometry was performed using a BD LSR Fortessa X-20 instrument (BD Biosciences) with FACSDiva software v.8.0.1 (BD Biosciences). Analysis was performed using FlowJo software v.10.7.1 (Tree Star).
 
-## Intravascular staining
+### Intravascular staining
 
 In vivo discrimination between pulmonary vasculature and parenchyma was performed as previously described (Pernet et al., 2023). Adult WT mice were given 2 µg of FITC-conjugated anti-CD45.2 intravenously to label all circulating cells. Three minutes later, mice were euthanized and lungs collected, stained ex vivo with BUV395-conjugated anti-CD45.2 antibody to determine the parenchymal (cells only labelled with the ex vivo antibody) or vascular localization of the cells (cells labelled with both antibodies).
 
-## AM depletion
+### AM depletion
 
 WT mice were treated with control or clodronate liposomes (70 µl, intranasally; Liposoma BV). The LPS-induced ALI was then performed at day 2 after clodronate instillation.
 
-## Adoptive transfer models
+### Adoptive transfer models
 
 AMs from WT mice which received i.p. PBS or β-glucan were collected as described above and resuspended at a density of 5 × 104 cells per 5–7 µl of RPMI1640 medium supplemented with 10% (vol/vol) FBS, 2 mM L-glutamine, 10 mM HEPES, and 100 U ml–1 penicillin–streptomycin. AMs were then transferred by the intranasal route into day 2 Csf2rb−/− pups. LPS-induced ALI was performed 6 weeks after AM adoptive transfer. BAL and lung tissue were collected and processed as described above for endothelial permeability, flow cytometry, total BAL cytokine, and protein content experiments.
 
-## Isolation and culture of AMs
+### Isolation and culture of AMs
 
 AMs were collected by BAL of naive mice using cold, sterile PBS (5 × 1 ml for adult mice). AMs were cultured in the specific media described above. After 1 hr of adhesion, AMs were washed with PBS and placed in fresh medium.
 
-## Ex vivo stimulation
+### Ex vivo stimulation
 
 AMs from WT, Dectin1−/−, Ifnar−/−, and IfngR−/− mice which received i.p. PBS or β-glucan were collected as described above and 5 × 104 cells in specific media were distributed per well. AMs were stimulated with 50 ng/ml of LPS (Sigma) for 4 hr at 37°C.
 
-## Library preparation and RNA-seq
+### Library preparation and RNA-seq
 
 Total RNA was collected from BAL AMs from four WT mice per conditions (i.p PBS, no ex vivo stimulation/i.p. β-glucan, no ex vivo stimulation/i.p PBS, ex vivo LPS stimulation/i.p. β-glucan, ex vivo LPS stimulation). After RNA quality controls, sequencing libraries were constructed using the Illumina TruSeq protocol. Libraries were sequenced on an Illumina NovaSeq 6000 (paired-end 100 base pair) to an average depth of 51,189,336 reads per sample.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 RNA-seq reads were aligned to the Mus musculus genome from Ensembl version 99 using STAR (version 2.7.3a) was used (Dobin et al., 2013). All regions overlapped between referenced exons and alignments were counted using featureCounts (subread-1.6.4) (Liao et al., 2014). Low abundance genes were filtered out leaving 12,894 genes for subsequent analysis.
 
 Differential expression analyses were performed using the DESeq2 package (DESeq2 1.40.2) (Love et al., 2014). Gene ontology analysis was realized with the R package TopGO. For GSEA a ranked list of the differentially expressed genes was used with clusterProfiler v4.8.2 (Wu et al., 2021), and the Molecular Signatures Database MSigDB v7.5.1.
 
-## Extracellular flux analysis
+### Extracellular flux analysis
 
 Seahorse assay of isolated cells was performed as previously described (Pernet et al., 2023). Real-time OCRs of AMs were measured in XF medium (non-buffered RPMI containing 2 mM L-glutamine, 25 mM glucose, and 1 mM sodium pyruvate) using a Seahorse Xfe 96 Analyzer (Agilent Technologies). For the mitochondrial stress test, mitochondrial inhibitors oligomycin (1.5 µM), fluorocarbonyl cyanide phenylhydrazone (FCCP) (1 µM), antimycin A, and rotenone (0.5 µM) were used as per the manufacturer’s recommendations. In brief, cells were seeded at a density of 100,000 cells per well and 3 basal measurements were taken. Following this, two consecutive measurements were taken following each injection of oligomycin, FCCP, and antimycin A with rotenone. All measurements were normalized to cell number using crystal violet dye extraction assay. Oxygen consumption curves, OCRs and ECARs were generated using Wave Desktop 2.3 (Agilent Technologies).
 
-## IFNγ and neutrophils depletion experiments
+### IFNγ and neutrophils depletion experiments
 
 Sex- and age-matched adult WT mice received intra-peritoneal 200 µg of anti-IFNγ (rat IgG1k, Biolegend), anti-Ly6G (rat IgG2a,k, Biolegend) or appropriated control isotypes injection at days 1, 0, 2, 4, and 6 per intraperitoneal injection of β-glucan. AMs collection for ex vivo stimulation was performed at day 7 after intraperitoneal β-glucan injection.
 
-## Statistical analysis
+### Statistical analysis
 
 No statistical methods were used to pre-determine samples sizes. Sample sizes were empirically determined to optimize numbers based on previous experience with equivalent experiments reported in previous publications (Tran et al., 2024; Pernet et al., 2023). A minimum sample size of 3 was always included for statistical analysis to be valid. Data distribution was assumed to be normal, but this was not formally tested. No data points were excluded from analysis. Key experiments were reproduced independently two times for reproducibility of findings except RNA-seq as we considered the high output of data to be sufficient to corroborate our other reproducible findings. Experimentally intricate experiments such as Ly6G/IFNγ depletion and neonatal adoptive transfer was performed once. All experiments involve mice or mouse-derived samples. Mice of the same sex were age-matched and randomly assigned prior to the initiation of experiments. Data collection and analysis were not performed blinded to the experimental conditions as experiments were all done by one researcher at a time. Statistical analyses were performed using GraphPad Prism v.9.1.2 software (GraphPad). Statistical differences were determined using one-way ANOVA followed by Dunn’s multiple comparisons test, paired or unpaired two-tailed t-test or two-tailed Mann–Whitney test. Differential gene expression analysis was carried out using DEseq2 package (Love et al., 2014).

@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0546hnb39 Department of Chemistry, University of Konstanz Konstanz Germany
-2. https://ror.org/041zkgm14 Department of Life Science and Biotechnology, University of Ferrara Ferrara Italy
+1. Department of Chemistry, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+2. Department of Life Science and Biotechnology, University of Ferrara Ferrara Italy ([ROR:041zkgm14](https://ror.org/041zkgm14))
 
 † Corresponding author
 
 ## Abstract
 
-Metabolism and biological functions of the nitrogen-rich compound guanidine have long been neglected. The discovery of four classes of guanidine-sensing riboswitches and two pathways for guanidine degradation in bacteria hint at widespread sources of unconjugated guanidine in nature. So far, only three enzymes from a narrow range of bacteria and fungi have been shown to produce guanidine, with the ethylene-forming enzyme (EFE) as the most prominent example. Here, we show that a related class of Fe 2+ - and 2-oxoglutarate-dependent dioxygenases (2-ODD-C23) highly conserved among plants and algae catalyze the hydroxylation of homoarginine at the C6-position. Spontaneous decay of 6-hydroxyhomoarginine yields guanidine and 2-aminoadipate-6-semialdehyde. The latter can be reduced to pipecolate by pyrroline-5-carboxylate reductase but more likely is oxidized to aminoadipate by aldehyde dehydrogenase ALDH7B in vivo . Arabidopsis has three 2-ODD-C23 isoforms, among which Din11 is unusual because it also accepted arginine as substrate, which was not the case for the other 2-ODD-C23 isoforms from Arabidopsis or other plants. In contrast to EFE, none of the three Arabidopsis enzymes produced ethylene. Guanidine contents were typically between 10 and 20 nmol*(g fresh weight) -1 in Arabidopsis but increased to 100 or 300 nmol*(g fresh weight) -1 after homoarginine feeding or treatment with Din11-inducing methyljasmonate, respectively. In 2-ODD-C23 triple mutants, the guanidine content was strongly reduced, whereas it increased in overexpression plants. We discuss the implications of the finding of widespread guanidine-producing enzymes in photosynthetic eukaryotes as a so far underestimated branch of the bio-geochemical nitrogen cycle and propose possible functions of natural guanidine production.
+Metabolism and biological functions of the nitrogen-rich compound guanidine have long been neglected. The discovery of four classes of guanidine-sensing riboswitches and two pathways for guanidine degradation in bacteria hint at widespread sources of unconjugated guanidine in nature. So far, only three enzymes from a narrow range of bacteria and fungi have been shown to produce guanidine, with the ethylene-forming enzyme (EFE) as the most prominent example. Here, we show that a related class of Fe2+- and 2-oxoglutarate-dependent dioxygenases (2-ODD-C23) highly conserved among plants and algae catalyze the hydroxylation of homoarginine at the C6-position. Spontaneous decay of 6-hydroxyhomoarginine yields guanidine and 2-aminoadipate-6-semialdehyde. The latter can be reduced to pipecolate by pyrroline-5-carboxylate reductase but more likely is oxidized to aminoadipate by aldehyde dehydrogenase ALDH7B in vivo. Arabidopsis has three 2-ODD-C23 isoforms, among which Din11 is unusual because it also accepted arginine as substrate, which was not the case for the other 2-ODD-C23 isoforms from Arabidopsis or other plants. In contrast to EFE, none of the three Arabidopsis enzymes produced ethylene. Guanidine contents were typically between 10 and 20 nmol*(g fresh weight)-1 in Arabidopsis but increased to 100 or 300 nmol*(g fresh weight)-1 after homoarginine feeding or treatment with Din11-inducing methyljasmonate, respectively. In 2-ODD-C23 triple mutants, the guanidine content was strongly reduced, whereas it increased in overexpression plants. We discuss the implications of the finding of widespread guanidine-producing enzymes in photosynthetic eukaryotes as a so far underestimated branch of the bio-geochemical nitrogen cycle and propose possible functions of natural guanidine production.
 
 ## Introduction
 
@@ -26,43 +26,119 @@ Only two enzymes are known to release guanidine from arginine in side reactions.
 
 In plants, the family of 2-ODDs has diversified immensely, and it has been divided into three subfamilies according to sequence similarity and the types of reactions that the respective enzymes catalyze (Kawai et al., 2014; Prescott and John, 1996). Subfamily A comprises RNA demethylases and related enzymes, subfamily B comprises prolyl-hydroxylases that function in posttranslational protein modification, and the largest subfamily C comprises enzymes that act in the synthesis or modification of plant hormones, pigments and other secondary metabolites. Besides the 2-ODDs with known enzymatic function, subfamily C also contains many proteins of unknown function. Among these, Arabidopsis Din11 (Dark-induced11; At3g49620) has been identified because its expression was induced by prolonged dark treatment, which leads to C-starvation and the induction of autophagy (Fujiki et al., 2001; Magen et al., 2022). Din11 orthologs are encoded in the genomes of most analyzed plants and green algae, and Arabidopsis as well as many other Brassicaceae express three paralogs of this protein: Din11, At3g49630 and At3g50210, among which At3g50210 seems to be the most ancestral form (Figure 1). In rice, the single Din11 ortholog has been named 2-ODD33 and was reported to have weak melatonin-2-hydroxylase activity (Byeon and Back, 2015). Because the numbering of the 2-ODDs in rice does not reflect their phylogenetic relationship and the phylogenetic study by Kawai et al., 2014 used DOX as rather uncommon acronym for the 2-ODDs, we propose a hybrid nomenclature with 2-ODD followed by a denominator for the phylogenetic clade as defined in Kawai et al., 2014. According to this nomenclature, we propose 2-ODD-C23.1 as systematic name for At3g50210, 2-ODD-C23.2 for Din11 and 2-ODD-C23.3 for At3g49630.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig1-v1.jpg)
+
+**Figure 1.:** Excerpt of the gene tree for Din11 from EnsemblPlants (https://plants.ensembl.org, accessed Feb. 2023). The length of the horizontal blue lines is proportional to the number of amino acid exchanges except the dashed line, which is shortened by a factor of 10. Blue squares indicate speciation nodes, red squares indicate duplication nodes, green squares indicate ambiguous nodes, and open squares indicate species nodes. Grey triangles indicate collapsed branches. The three 2-ODD-C23 paralogues from Arabidopsis thaliana are highlighted by blue lettering.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Sequence identity between Pseudomonas savastanoi EFE (P.s. EFE), Din11s and selected other members of the 2-ODD superfamily derived from a multiple sequence alignment containing further plant and bacterial sequences. BLAST searches with NapI or VioC do not produce significant hits in Arabidopsis. Gibberellin 2-oxidase 4 (GA2OX4) has the highest degree of similarity with P.s. EFE among the functionally characterised Arabidopsis 2-ODDs. NCBI protein accession numbers are given in brackets. (b) Excerpt of a sequence alignment derived from a structural superposition of P.s. EFE with the structures other 2-ODDs acting on arginine or homoarginine as substrate. The structural alignment was generated in Chimera1.15 and was based only on the residues surrounding the active site, because an overall alignment was not possible. Residues contributing to Fe2+-coordination in the active site are marked with *. Residues contributing to 2-oxoglutarate binding in P.s. EFE are marked with #. A tyrosine residue that is structurally and functionally important for arginine binding in P.s. EFE is marked with §. This tyrosine residue is present in 2-ODD-C23 enzymes but not in any other Arabidopsis 2-ODD sequences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Alignment of RNAseq reads (pink or purple lines) from two independent experiments with the genomic sequence (four-colored line) of Arabidopsis around the transcription start site of Din11. The 5′-end of the annotated Din11 transcript At3g49620.1/Din11L is hardly covered by RNAseq reads, which are much more frequent several basepairs downstream of the annotated start codon. The graphical representation of the RNAseq reads was modified from the Arabidopsis RNAseq database (Zhang et al., 2020).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** RNAseq coverage of the three Arabidopsis 2-ODD-C23 isoforms under various abiotic and biotic stress conditions. The data plots were modified from the Arabidopsis RNAseq database (Zhang et al., 2020). Numbers in brackets are the number of samples per treatment. FPKM, Fragments per kilobase of transcript per million mapped reads.
+
 An important N-containing class of secondary plant metabolites are non-proteinogenic amino acids, which may have metabolic, storage, defense, or signaling functions (Bell, 2003). Homoarginine, the C6-analog of arginine, is accumulated to high concentrations in seeds of several Lathyrus species, where it is assumed to be a nitrogen storage form that is not easily accessed by bacteria or insects (Bell, 1962; Bell, 1980; Lambein et al., 1992; Rao et al., 1963). Trace amounts of homoarginine were also detected in other plants, and in humans it is thought to interfere with nitric oxide production and signaling (Koch et al., 2023; Lambein et al., 2019; Sulser and Sager, 1976). In man and animals, homoarginine is produced from lysine and arginine in a side reaction of glycine amidinotransferase (Choe et al., 2013). A protein with similar activity has been isolated from Lathyrus sativus, but the molecular identity of this protein remains unknown and we did not detect a homolog of human glycine amidinotransferase in any annotated plant genome (Srivenugopal and Adiga, 1980). No other homoarginine-metabolizing enzymes have so far been reported from plants.
 
 Here, we describe the identification of plant 2-ODD-C23 isoforms as homoarginine-6-hydroxylases, which initiate the decay of 6-hydroxyhomoarginine to 2-aminoadipate-6-semialdehyde (AASA) and guanidine. Within the 2-ODD-C23 clade, we found Din11/2-ODD23.2 to be special because it accepted also arginine as substrate to produce 5-hydroxy-arginine. This finding identifies 2-ODD-C23s as the first eukaryotic enzymes that release free guanidine from conjugated precursors, an activity previously only known as side reaction of rare bacterial enzymes. AASA accumulation is toxic because it inactivates the enzyme cofactor pyridoxal-5-phosphate (PLP) by adduct formation. Therefore, AASA is detoxified by oxidation to aminoadipate by ALDH7B4 (AASA-DH, At1g54100; Končitíková et al., 2015; van Karnebeek et al., 2016). In solution, AASA is in equilibrium with the cyclic δ1-piperideine-6-carboxylate (P6C), which can be reduced to pipecolate by pyrroline-5-carboxylate reductase (P5CR; Fujii et al., 2002; Struys et al., 2014). Our comparison of the activities of P5CR and ALDH7B4 indicates that under physiological conditions the oxidation of AASA is the prevalent metabolic route in plants.
 
 ## Results
 
-## Expression of plant EFE-like proteins causes guanidine production in E. coli
+### Expression of plant EFE-like proteins causes guanidine production in E. coli
 
 To determine if plant 2-ODD-C23 enzymes, which share the highest degree of similarity with EFE among the plant ODDs (26% sequence identity, Figure 1—figure supplement 1), also catalyze the production of guanidine, selected proteins were overexpressed in E. coli. We focused on the three 2-ODD-C23 isoforms from Arabidopsis (Din11/2-ODD-C23.2, At3g49630/2-ODD-C23.3 and At3g50210/2-ODD-C23.1) and the orthologs from rice and soybean, which are encoded by single-copy genes. We also included Ava5009 from Anabaena variabilis as representative of the most similar group of cyanobacterial 2-ODDs, although it is probably not orthologous to 2-ODD-C23 from plants and green algae. When we compared the annotation of Din11 with RNAseq data, we noticed that only very few RNAseq reads cover the 5′-end of the mRNA, whereas the coverage strongly increases 89 bp downstream of the predicted transcription start site, at a position 13 bp after the annotated start codon (Figure 1—figure supplement 2). A second ATG codon in the same reading frame is located 62 bp downstream of the major transcription start site. Comparison of the predicted protein sequences showed that the first 24 amino acids of the annotated Din11 (At3g49620.1, here termed Din11L) do not align with 2-ODD-C23 homologs from other plant species, whereas the variant starting with the second ATG codon (termed Din11s) aligns well over its entire length. Nevertheless, we were able to amplify the coding sequence of Din11L from Arabidopsis cDNA.
 
 Of the three Arabidopsis 2-ODD-C23 isoforms, only the short variant of Din11 induced guanidine production (detected and quantified by LC-MS, see materials and methods section) when overexpressed in E. coli (Figure 2). Guanidine production was stimulated by addition of arginine to the culture medium, whereas addition of 2-OG had no effect (Figure 2—figure supplement 1a). We speculated that the other 2-ODD-C23 isoforms might use a compound similar to arginine as substrate and supplemented the cultures with various other guanidine compounds known to occur in nature (methylguanidine, guanidinoacetate, guanidinopropionate, guanidinobutyrate, agmatine, homoarginine, taurocyamine). Only when the culture medium was supplemented with homoarginine, all 2-ODD-C23 isoforms from Arabidopsis except Din11L induced guanidine production in the E. coli cultures (Figure 2). The 2-ODD-C23 orthologs from soybean and rice (2-ODD33) mediated homoarginine-dependent guanidine accumulation to a similar degree than Din11s and At3g50210. The guanidine concentration was very similar in the E. coli cells and in the supernatant, indicating that guanidine was exported from the cells until an equilibrium with the medium was reached (Figure 2—figure supplement 1b). In contrast to the 2-ODD-C23 isoforms, the 2-ODD Ava5009 from the cyanobacterium Anabaena variabilis did not mediate guanidine production from arginine or homoarginine.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig2-v1.jpg)
+
+**Figure 2.:** The cDNAs of various 2-ODD-C23 isoforms from plants and Ava5009 from Anabaena variabilis were cloned in pET24 for overproduction of the respective proteins in E. coli. Expression was induced over night at 18 °C in LB medium supplemented with 0.2% (w/v) glucose and 10 µM Fe2+. One aliquot of each culture was additionally supplemented with 1 mM homoarginine (HoArg). All cultures reached an OD around 10. For guanidine and pipecolate quantification by LC-MS, aliquots of the cultures were diluted in a 20-fold excess of methanol with 10 µM 13C15N-labeled guanidine as analytical standard. Pipecolate was exclusively detected in the cultures supplemented with homoarginine. Columns are the average ± SD of samples from three independent cultures.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) E. coli cells expressing Din11s were cultivated over night at 18 °C in medium supplemented with either 5 mM 2-oxoglutarate (2-OG), 5 mM arginine (Arg), or a combination of both. The cultures were diluted with a 20-fold excess of methanol containing 10 µM 13C15N-labeled guanidine as analytical standard. (b), (c) E. coli cells expressing soybean 2-ODD-C23 were grown over night at 18 °C in the presence of 1 mM homoarginine. The cells were harvested by centrifugation and lysed in 20 µl (mg Fw)–1 methanol containing 10 µM labeled guanidine. The supernatant was also mixed with a 20-fold excess of methanol with 10 µM labeled guanidine. Guanidine and pipecolate were quantified by LC-MS. The columns are the average ± SD of samples from three independent cultures. The experiments were repeated with consistent results.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Flame ionization detector (FID) traces of samples from the headspace of E. coli cultures overexpressing Pseudomonas savastanoi EFE, Din11s, At3g49630, or At3g50210 and supplemented with 1 mM arginine or homoarginine as indicated in the figure. One ml of culture headspace was injected into a gas chromatograph (SGI 8610 C, SRI Instruments, Los Angeles, CA, United States) equipped with a 3 m HayeSep-D column (80 °C, carrier gas N2). Methane from the ambient air and ethylene produced by the bacteria were detected with a flame ionization detector. The software PeakSimple v4.44 was used to record the chromatograms. The detector output was smoothed by averaging 9 measurements recorded at 3 Hz. Inset: Quantification of guanidine in the cultures by LC-MS was used to confirm that the enzymes had been active. All data are from single measurements and consistent results were obtained in independent replicates.
+
 The detection of free guanidine indicated that 2-ODD-C23 might be homoarginine-6-hydroxylases, as 6-hydroxyhomoarginine is expected to decay spontaneously to yield guanidine and AASA. The latter is in spontaneous equilibrium with P6C, which can be converted to pipecolate by P5CR (proC in E. coli, Fujii et al., 2002). Indeed, we detected pipecolate in the E. coli cultures in quantities proportional to the amount of guanidine (Figure 2). Only in the cells expressing Din11s, the proportion of pipecolate was lower, suggesting that Din11s used both arginine and homoarginine as substrates. In contrast to guanidine, pipecolate was predominantly retained inside the cells (Figure 2—figure supplement 1c). To analyze if the plant enzymes can convert 2-oxoglutarate to ethylene, we compared bacterial cultures expressing either PsEFE or one of the Arabidopsis enzymes (Figure 2—figure supplement 2). By GC-FID analysis of the headspace of bacterial cultures expressing EFE, Din11s, At3g49630, or At3g50210 and incubated with 1 mM arginine or homoarginine for 18 hr in air-tight tubes, we observed the formation of up to 0.18% (v/v) ethylene by cultures expressing EFE. In contrast, none of the plant enzymes produced even traces of ethylene [detection limit 0.0002% (v/v)]. As expected, the cultures expressing EFE or Din11s contained guanidine, irrespective of the supplement. The cultures expressing At3g49630 or At3g50210 only contained guanidine, when they were fed with homoarginine.
 
-## Plant 2-ODD-C23 enzymes are homoarginine-6-hydroxylases
+### Plant 2-ODD-C23 enzymes are homoarginine-6-hydroxylases
 
 To determine if the Arabidopsis 2-ODD-C23 isoforms directly catalyze the release of guanidine from homoarginine, we purified the recombinant proteins by Ni-affinity chromatography. Measurement of the rate of O2 consumption at variable substrate concentrations allowed the characterization of the three Arabidopsis enzymes (Figure 3 and Supplementary file 1). With a fixed and saturating concentration of 0.5 mM 2-OG, At3g50210 had the lowest KM for homoarginine (0.78±0.15 mM) and the highest specific activity (Amax = 21 ± 1.7 nmol s–1 mg–1). Din11s had a KM of 1.9±0.3 mM for homoarginine and a lower specific activity (Amax = 13.4 ± 3.2 nmol s–1 mg–1). With a KM of 4.6±0.2 mM and an Amax of 5.6±1.2 nmol s–1 mg–1, At3g49630 had the lowest activity of the three Arabidopsis 2-ODD-C23 paralogs. LC-MS/MS analysis of the reaction products confirmed the formation of P6C, succinate and guanidine. When O-(2,3,4,5,6-Pentafluorbenzyl)-hydroxylamine was added during the reaction, the derivatization product of AASA was also detected. No products with the masses of dehydro-homoarginine or hydroxy-homoarginine were accumulating in the reaction mixture. We concluded that all three Arabidopsis 2-ODD-C23 isoforms specifically catalyze the C6-hydroxylation of homoarginine, which is followed by the spontaneous decay to guanidine and AASA, which subsequently cyclizes to P6C. As expected from the analysis of the E. coli cultures, only Din11s showed O2 consumption also with arginine, although the KM (6.0±5.1 mM) was higher compared to homoarginine and the specific activity was lower (Amax = 5.2 ± 0.9 nmol s–1 mg–1). Neither lysine nor agmatine or any other guanidine-containing compound induced O2 consumption with one of the purified enzymes. The reaction of Din11s with arginine yielded guanidine and GSA with its cyclic counterpart P5C, indicating that arginine is hydroxylated at the C5 position as in EFE from Pseudomonas savastanoi (Fukuda et al., 1992).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig3-v1.jpg)
+
+**Figure 3.:** (a)-(c) Specific activities of oxygen consumption at various substrate and inhibitor concentrations were analyzed with a Clark-type electrode. The concentration of the co-substrate 2-oxoglutarate was fixed at 0.5 mM. Only Din11s showed oxygen consumption with both homoarginine (HoArg) or arginine (Arg). The reaction of Din11s and At3g50210 with homoarginine was inhibited in the presence of 1 mM arginine (blue lines) or canavanine (red lines). Specific activities were calculated from the slope of the initial linear reaction rate. KM and Amax were determined by non-linear regression (see also Supplementary file 1). Data points represent single measurements, consistent results were obtained with independent enzyme preparations. (d) Reactions catalyzed by 2-ODD-C23 isoforms with subsequent spontaneous decay of the reaction products. The hydroxylated intermediates are too unstable to be detected.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Lineweaver-Burk plot of the activity data for Din11s from Figure 3a. Values in brackets are very low activities at low concentrations of homoarginine (HoArg) in presence of 1 mM arginine (Arg) or canavanine (Can) that were excluded from the linear regression. (b), Lineweaver-Burk plot of the activity data for At3g50210 from Figure 3c. Regression lines intersecting on or very near the Y-axis indicate competitive inhibition. (c) Specific activity of At3g50210 in dependence on the concentration of the co-substrate 2-oxoglutarate was determined at 30 °C. Homoarginine concentration was fixed at 10 mM. The blue line represents the least square fit to the Michaelis-Menten equation with an additional term for substrate inhibition. (d) pH-dependence of the specific activity of At3g50210 in a mixed buffer system with MES, HEPES and CHES. Homoarginine and 2-oxoglutarate (2-OG) concentrations were fixed at 10 mM and 0.5 mM, respectively. The dashed blue line is a polynomic fit with a 4th-order polynomial. Dots represent single measurements and independent enzyme preparations gave consistent results.
 
 When we tested the effect of 1 mM arginine on the reaction of the 2-ODD-C23 isoforms with homoarginine, we detected a competitive inhibition of Din11s and At3g50210, whereas At3g49630 was insensitive to arginine (Figure 3, Figure 3—figure supplement 1, Supplementary file 1). We further tested the effect of the arginine antimetabolite canavanine on the reaction of the 2-ODD-C23 isoforms. Canavanine is the 5-oxa-analog of arginine and therefore cannot be hydroxylated at this position. Similar to arginine, which is both substrate and inhibitor for Din11s, canavanine showed competitive inhibition of the reaction of Din11s with homoarginine. In contrast, the inhibition of At3g50210 was of the mixed type and At3g49630 was not inhibited by canavanine.
 
 When the concentration of the co-substrate 2-oxoglutarate was varied at near-saturating concentration of homoarginine (10 mM), all three 2-ODD-C23 isoforms showed KM values between 20 and 100 µM and the reaction was inhibited by high 2-OG concentrations (Figure 3—figure supplement 1c and Supplementary file 1). For At3g50210, we determined the pH-dependence of the enzymatic reaction and observed maximal activity around pH 7.2 (Figure 3—figure supplement 1d), whereas the enzyme was virtually inactive below pH 5 and above pH 9.
 
-## Arabidopsis 2-ODD-C23 isoforms are cytosolic enzymes and mediate guanidine production in vivo
+### Arabidopsis 2-ODD-C23 isoforms are cytosolic enzymes and mediate guanidine production in vivo
 
 The protein sequences of the 2-ODD-C23 isoforms from Arabidopsis do not contain any recognizable targeting signals. Consistently, the analysis of plants expressing 2-ODD-C23:GFP fusion proteins under control of the constitutive UBQ10-promoter demonstrated the cytosolic localization of all three isoforms (Figure 4). Among 41 plants transformed with a construct for expression of Din11L:GFP, no plants with detectable GFP fluorescence were identified. Among 80 lines carrying a construct for expression of Din11s:GFP, several lines showed cytosolic GFP signals but only in one line, the expression of Din11s:GFP was stable over several generations. For both At3g49630:GFP and At3g50210:GFP, several independent lines were identified that stably expressed the GFP fusion protein. GFP signals were typically strongest in At3g50210:GFP-expressing plants. In soluble protein extracts, proteins of the expected size were detected with an anti-GFP antibody (Figure 4—figure supplement 1). Additionally, also proteins in the size of free GFP were detected in all lines, which may be derived from partial proteolysis and may explain, why GFP fluorescence was also detected in nuclei.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig4-v1.jpg)
+
+**Figure 4.:** Protoplasts were isolated from plants expressing 2-ODD-C23:GFP fusions under control of the constitutive UBQ10-promoter. Spectrally resolved confocal fluorescence images were used to separate GFP fluorescence (depicted in green) from chlorophyll autofluorescence (Chl, depicted in red). BF, brightfield image.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** In soluble protein extracts of rosettes from all transgenic lines expressing 2-ODD-C23:GFP fusion proteins, an anti-GFP antibody detected proteins of the expected size (calculated MW: 68 kDa; *). Minor signals at 27 kDa (#) may represent free GFP generated by partial proteolysis. Staining of the membrane with coomassie brilliant blue was used as loading control.
 
 In order to determine whether the 2-ODD-C23 isoforms catalyze C6-hydroxylation of homoarginine under physiological conditions, we identified and generated Arabidopsis mutants. Several T-DNA insertion lines were obtained from the Nottingham Arabidopsis Stock Centre and were backcrossed at least 3 times to Col-0 wildtype (WT) plants to obtain single insertion lines (Figure 5—figure supplement 1a and Supplementary file 2). Because Din11 and At3g49630 are located directly next to each other on chromosome 3, we used mutagenesis with CRISPR/Cas9 with a gRNA targeting the third exon of both Din11 and At3g49630 to generate double mutants. We obtained one line, in which the 5′-end of Din11 is fused to the 3′-part of At3g49630. Insertion of 1 bp at the fusion site causes a frame shift and inactivates both genes. A second line contains a 27 bp deletion including the border between intron 2 and exon 3 of Din11 and a 1 bp deletion in exon 3 of At3g49630. The CRISPR/Cas9-generated mutants also were backcrossed to WT plants to eliminate the CRISPR/Cas9 expression cassette and potential off-target mutations. To generate triple mutants, the double mutants were crossed with the mutant line at3g50210-1, which carries a T-DNA insertion in the third exon of At3g50210. All single, double, and triple mutants were phenotypically not different from WT plants when growing under normal conditions in sterile culture or in the greenhouse.
 
 Basal guanidine contents were around 10–15 nmol [g fresh weight (Fw)]–1 equivalent to 100–200 nmol (g dry weight)–1 in the rosettes of axenically grown Arabidopsis WT plants and were increased to 20–30 nmol (g Fw)–1 in 2-ODD-C23:GFP overexpressing plants (Figure 5). The guanidine content of soil grown plants was usually slightly higher, and in legume seeds and seedlings we detected up to 2.4 µmol (g dry weight)–1 (equivalent to 145 ppm) guanidine (Figure 5—figure supplement 2). The guanidine content in rosettes of 2-ODD-C23-triple mutants was consistently lower than in WT plants. When WT plants and At3g50210:GFP-expressing plants were transferred to culture plates with 0.2 mM homoarginine in the medium, they accumulated both homoarginine and guanidine in a time-dependent manner, reaching 100 nmol (g Fw)–1 guanidine in WT rosettes and 600 nmol (g Fw)–1 in the rosettes of the overexpressor plants. Like WT and overexpressor plants, the 2-ODD-C23 triple mutants accumulated homoarginine to around 800 nmol (g Fw)–1, whereas the guanidine content in the rosettes stayed nearly unchanged. In din11 and at3g49630 single mutants, the guanidine content was not reduced compared to WT plants after external supply of homoarginine. In at3g50210 single mutants, however, the guanidine content was as low as in the triple mutants (Figure 5—figure supplement 1b).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig5-v1.jpg)
+
+**Figure 5.:** Plants were grown for two weeks in sterile culture and transferred to fresh plates with 0.2 mM or without (ctrl) homoarginine. Guanidine (a) and homoarginine (b) were extracted from rosettes in 80% (v/v) methanol containing 13C15N-labeled guanidine as analytical standard and quantified by LC-MS. Col-0, wildtype; At3g50210:GFP, At3g50210:GFP overexpressing plants, triple-KO, 2-ODD-C23 triple mutant. The yellow line marks a change in the scale of the Y-axis. Error bars indicate SD from four plant samples. The entire experiment was repeated with consistent results. Continued experiments during the revision of this paper revealed that our LC-MS protocol did not separate homoarginine from methylarginine. Therefore, the identity of the compound with a m/z ratio of 189 detected in plants that were grown in the absence of homoarginine is at present ambiguous.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Schematic representation of the three genes for 2-ODD-C23 isoforms in Arabidopsis. Thick blue lines represent exons, wide red triangles represent T-DNA insertions, narrow red triangles represent CRISPR/Cas9 target sites. The red lines indicate a fusion event between Din11 and At3g49630, in which the DNA fragment between the two CRISPR/CAs9 target sites was lost. (b) Guanidine content in rosettes of single and triple mutant seedlings cultivated under axenic conditions. The seedlings were cultivated for 9 days under long day conditions on half-strength MS medium supplemented with 2% sucrose. Subsequently, they were transferred for one week to plates supplemented additionally with 0.2 mM homoarginine. Columns represent the average ± SD of N=4 independent samples. Different letters above the columns indicate significant differences (p<0.05) by one-way ANOVA with Bonnferroni correction for multiple testing.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Black locust (Robinia pseudoacacia) and Arabidopsis samples were from soil-grown plants. For the other species, seeds were surface-sterilised and germinated on filter paper soaked with ddH2O for the indicated times. Guanidine was extracted in 80% (v/v) methanol with 10 µM 13C15N-labeled guanidine as analytical standard and quantified by LC-MS. Columns represent the average ± SD of N=3 independent samples.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (a), (b) Seedlings of WT Arabidopsis plants (Col-0) and 2-ODD-C23 overexpressors or triple mutants were grown for 6 days under long-day conditions on vertical plates containing half-strength MS medium, supplemented with 2% (w/v) sucrose and either arginine (Arg) or homoarginine (HoArg). Columns in (b) represent the average ± SD of N=40 seedlings. (c) Two-week-old seedlings grown on half-strength MS medium with 2% (w/v) sucrose and the indicated concentration of homoarginine. The positioning of the genotypes is identical on each plate. (d) Seven-day-old seedlings grown on vertical plates without or with 1 mM guanidine (Gd). Scale bars in (a), (c) and (d) are 1 cm.
+
 Addition of homoarginine or arginine to the growth medium impaired root growth of Arabidopsis seedlings (Figure 5—figure supplement 3a and b). On media containing either 1 mM arginine or 0.1 mM homoarginine, the roots of 1-week-old plants had only half the length of the roots of control plants grown without amino acid supplement. Above 0.2 mM homoarginine, also the growth of the rosettes was impaired (Figure 5—figure supplement 3c). However, these inhibitory effects were not changed in the 2-ODD-C23 triple mutants and 2-ODD-C23:GFP overexpressing plants, indicating that hydroxylation of homoarginine likely does not serve to detoxify high concentrations of homoarginine. Addition of 1 mM guanidine to the growth medium had no effect on seedling growth, whereas 5 mM guanidine was lethal (Figure 5—figure supplement 3d).
 
 Originally, Din11 was named for its induction by prolonged darkness, a condition now understood to induce both C-starvation and autophagy. However, we did not detect phenotypical differences between din11 or triple mutants and WT plants after prolonged dark treatment (Figure 6a). It had further been reported that expression of Din11 was induced by treatment with methyljasmonate (MeJA; Caarls et al., 2017) and by perturbations of ROS homeostasis (Gadjev et al., 2006), whereas analysis of publicly available RNAseq data did not reveal a treatment that induced all three Arabidopsis 2-ODD-C23 isoforms (Figure 1—figure supplement 3; Zhang et al., 2020). Treatment of WT plants with 10 or 50 µM MeJA did not induce consistent and marked changes of the content of homoarginine and arginine in the rosettes of Arabidospis seedlings. However, MeJA treatment strongly induced the guanidine content in Arabidopsis rosettes and this induction was lost in din11 single mutants and not decreased much further in 2-ODD-C23 triple mutants (Figure 6b).
 
-## Metabolic fate of AASA in plants
+![Figure 6.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig6-v1.jpg)
+
+**Figure 6.:** (a) Eight-day-old seedlings grown under short-day conditions were placed for 8 days in permanent darkness. Chlorophyll was extracted before and after the dark treatment and quantified spectrometrically. Col 0, wildtype; triple-KO-1 and 2, independently generated 2-ODD-C23 triple mutants; Din11s:GFP, At3g50210:GFP, plants overexpressing 2-ODD-C23:GFP fusion proteins. Error bars indicate SD of N=8 independent plant samples. (b) Three-week-old plants were treated for one week with approximately 50 µM MeJA by applying a stock solution in 50% (v/v) ethanol to the lid of the Petri dishes. Guanidine was extracted from rosettes in 80% (v/v) methanol containing 13C15N-labeled guanidine as analytical standard and quantified by LC-MS. din11-1, single T-DNA insertion mutant of Din11. The yellow line marks a change in the scale of the Y-axis. Error bars indicate SD of four independent plant samples. The din11-2 mutant line and the independently generated second triple mutant gave consistent results.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Arabidopsis seedlings were grown for 10 days under long-day conditions on half-strength MS medium supplemented with 2% (w/v) sucrose and 5 mM MES-KOH, pH 5.8 before they were transferred for 4 days to plates additionally containing 0.2 mM homoarginine. Guanidine and 2-aminoadipate were extracted in 80% (v/v) methanol containing 10 µM 13C15N-labeled guanidine as analytical standard and quantified by LC-MS. Columns represent the average ± SD of N=4 independent samples. n.d., not detected. The experiment was repeated with consistent results.
+
+### Metabolic fate of AASA in plants
 
 The different rates of homoarginine metabolism in WT plants, triple mutants and At3g50210:GFP overexpressing plants, as evidenced by different levels of guanidine accumulation, were surprisingly not reflected in different rates of homoarginine accumulation after external supply (Figure 4b). Therefore, we wondered if AASA/P6C production by 2-ODD-C23 might serve a signaling rather than a metabolic function. As in the E. coli cultures, P5CR might convert AASA/P6C to pipecolate, which is the direct precursor for the mobile defense signal N-hydroxypipecolate (Zeier, 2021). Purified, recombinant plant P5CR converted P6C to pipecolate with a KM of 173±18 µM or 257±23 µM and an Amax of 7 or 13 nmol s–1 mg–1, when NADH or NADPH were used as electron donors, respectively (Figure 7a). An alternative route for AASA/P6C metabolism would be oxidation of AASA to aminoadipate by an aldehyde dehydrogenase. For maize and pea, it was shown that ALDH7B has a high affinity for AASA (Končitíková et al., 2015). Indeed, purified, recombinant AtALDH7B4 (At1g54100) converted AASA to aminoadipate with a KM of 11.9±1.0 µM and an Amax of 529±6 nmol s–1 mg–1 with NAD+ as electron acceptor (Figure 7b). For the cofactor NAD+, ALDH7B4 had a KM of 324±17 µM, whereas the enzyme was almost inactive with NADP+ as electron acceptor and neither was NADPH formation linear over time nor did it show a linear correlation with the amount of enzyme (Figure 7—figure supplement 1a and b). ALDH7B4 also accepted GSA/P5C as substrate, but the conversion rates were 60 times lower compared to AASA/P6C and also in this case, the reaction rate was not linearly correlated to the amount of enzyme (Figure 7—figure supplement 1). The 10-fold lower KM of AASA oxidation to aminoadipate vs. P6C reduction to pipecolate suggests that the oxidative route is predominantly occurring under physiological conditions. Independent of genotype and homoarginine supply, the pipecolate content of seedlings was below 2 nmol (g Fw)–1 under our conditions and could not be quantified because the peak was not clearly separated from other compounds with the same M/Z ratio. The aminoadipate content in Arabidopsis rosettes was also below the level for reliable quantification [1 nmol (g Fw)–1] but increased to almost 6 nmol (g Fw)–1 in At3g50210:GFP-overexpression plants after supply of external homoarginine (Figure 6—figure supplement 1). This increase was absent in 2-ODD-C23 triple mutants and barely detectable in WT plants, indicating that aminoadipate metabolism is faster than the production via AASA derived from homoarginine hydroxylation by 2-ODD-C23.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig7-v1.jpg)
+
+**Figure 7.:** Recombinant purified enzymes were used to compare the reduction of P6C to pipecolate by pyrroline-5-carboxylate reductase from rice (OsP5CR; a) with the oxidation of AASA by Arabidopsis aldehyde dehydrogenase 7B4 (ALDH7B4; b) at 35 °C with a fixed cofactor concentration of 1 mM. OsP5CR used either NADH or NADPH as electron donor for the conversion of P6C to pipecolate. ALDH7B4 had a much higher specific activity and a lower KM, but efficiently catalyzed the reaction of AASA to aminoadipate only with NAD+ as electron acceptor. Data points are the average ± SD of technical triplicates. Colored lines represent the fit of the experimental data to the Michaelis-Menten equation. The insets show the Lineweaver-Burk plots of the same data. All experiments were repeated with an independent enzyme preparation and showed consistent results.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91458/elife-91458-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Activity of purified recombinant ALDH7B4 with different concentrations of NAD+ at 35 °C. AASA/P6C concentration was fixed at 1 mM. KM and Amax values were obtained by nonlinear regression to the Michaelis-Menten equation (red line). The inset shows the Lineweaver-Burk plot of the same data. (b) AASA/P6C-dependent reduction of NADP+ by different amounts of ALDH7B4. Concentrations of both NADP+ and AASA/P6C were 1 mM. (c) GSA/P5C-dependent reduction of NAD+ by different amounts of ALDH7B4. NAD+ concentration was 1 mM and DL-GSA/P5C concentration was 2 mM. In b and c, the insets show the initial velocity as a function of the amount of protein in the assay. Data points are the average ± SD of technical triplicates. All experiments were repeated with an independent enzyme preparation.
 
 ## Discussion
 
@@ -84,17 +160,202 @@ Overall, our characterization of plant 2-ODD-C23s as homoarginine-6-hydroxylases
 
 ## Materials and methods
 
-## DNA constructs and recombinant protein production
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>Din11 (At3g49620); At3g49630; At3g50210;P5CR (AT5G14800);ALDH7B4 (AT1G54100)</td>
+      <td>TAIR</td>
+      <td>dito</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Oryza sativa)</td>
+      <td>ODD33 (Os09g07020)</td>
+      <td>GenBank</td>
+      <td>NM_001422704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Glycine max)</td>
+      <td>LOC100789278</td>
+      <td>GenBank</td>
+      <td>NM_001255066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Anabaena variabilis)</td>
+      <td>Ava5009</td>
+      <td>Genbank</td>
+      <td>CP000117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain/background (Arabidopsis thaliana)</td>
+      <td>Col-0 wildtype</td>
+      <td>NASC</td>
+      <td>N60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain/background (E. coli)</td>
+      <td>SoluBL21</td>
+      <td>Amsbio (Genlantis)</td>
+      <td>AMS.C700200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana T-DNA insertion lines)</td>
+      <td>see Supplementary file 2</td>
+      <td>NASC</td>
+      <td></td>
+      <td>see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, (rat, monoclonal)</td>
+      <td>ChromoTek</td>
+      <td>3H9, RRID: AB_10773374</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat HRP (goat, polyclonal)</td>
+      <td>Roche</td>
+      <td>A9037</td>
+      <td>(1:80,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a</td>
+      <td>Novagen (Merck)</td>
+      <td>69749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24-HisTEV</td>
+      <td>this study</td>
+      <td></td>
+      <td>Data Source data 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTRa1</td>
+      <td>Invitrogen (ThermoFisher)</td>
+      <td>A10462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUBC-GFP-Dest</td>
+      <td>Grefen et al., 2010; doi:10.1111 /j.1365–313X.2010.04322.x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHEE401E</td>
+      <td>Wang et al., 2015; doi: 10.1186/s13059-015-0715-0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>custom DNA oligos</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td></td>
+      <td>see Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>see ‘genes‘ above</td>
+      <td>This study</td>
+      <td></td>
+      <td>see ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi</td>
+      <td>NEB</td>
+      <td>E2621L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D,L-P5C, L-P6C</td>
+      <td>This study</td>
+      <td></td>
+      <td>see ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism V.5</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel 2016</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN</td>
+      <td>Carl Zeiss Microscopy</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>Fiji/NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OxyTrace+</td>
+      <td>Hansatech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LabSolutions LC/GC, V5.93</td>
+      <td>Shimadzu</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs and recombinant protein production
 
 Bacterial expression constructs for Arabidopsis Din11, At3g49620, At3g50210, and ALDH7B4, as well as Os2-ODD33 and Gm2-ODD-C23 were generated by amplifying the coding sequence from cDNA with primers (Supplementary file 3) that introduce overlaps with a modified pET vector containing an N-terminal His-tag and a TEV cleavage site (Source data 2). The resulting PCR products were fused with the linearized vector by Gibson assembly (NEBuilderHiFi). A plasmid for expression of 6xHis-SUMO-tagged PsEFE was obtained from Christopher Schofield (Zhang et al., 2017a). Protein expression in E. coli SoluBL21 cells was induced with 1 mM IPTG at 18 °C overnight. The cells were lysed by sonication in extraction buffer [50 mM Hepes pH 7.5, 50 mM NaCl, 1 x protease inhibitor cocktail (EDTA-free cOmplete, Roche)] and the His-tagged proteins were purified with HisBind NiNTA-agarose (QIAGEN) according to the recommendations of the supplier. Imidazole was removed from the purified proteins by passage through PD MidiTrap G-25 columns (GE lifescience) equilibrated with extraction buffer. Protein concentrations were determined according to Bradford, 1976 with BSA as standard. All activity assays were performed with enzymes purified from at least three independent bacterial cultures.
 
-## Enzyme activity assays
+### Enzyme activity assays
 
 Activity of ODDs was measured by following the oxygen consumption at 30 °C in a Clark-type electrode (Hansatech Oxygraph+) calibrated according to the instructions of the supplier. The reaction mix contained 50 mM MOPS pH 7.2, 70 mM NaCl, 20 mM KCl, 0.4 mM Na-ascorbate, 40 µM Fe(NH4)2(SO4)2, and variable concentrations of substrate or cosubstrate. The reactions were started by adding the purified enzymes and the specific activities were calculated from the difference between the oxygen consumption rate in the initial linear phase and the rate observed prior to the addition of the enzymes (typically around –20 nmol O2 ml–1 s–1, corresponding to 1 to 2% of the maximal rate in the presence of enzyme).
 
 The activity of P5CR was calculated from the difference in the rates of NAD(P)H oxidation at 35 °C in the presence or absence of DL-P5C or L-P6C as described previously (Forlani et al., 2015). The standard enzyme assay contained 50 mM Tris-HCl, pH 7.5, 0.5 mg ml-1 NAD(P)H and 2 mM DL-P5C or 1 mM L-P6C. DL-P5C was synthesized by the periodate oxidation of δ-allo-hydroxylysine (Sigma H0377) and purified by cation-exchange chromatography, as described previously (Forlani et al., 1997). L-P6C generation from L-allysine ethyleneacetal (Sigma-Aldrich 714208) roughly followed a previous protocol (de La Fuente et al., 1997). A solution of 50 mg allysine ethyleneacetal in 5 ml water was mixed with 300 mg amberlite IR120 (Fluka 06428) and gently stirred for 20 min. The supernatant was discarded and the resin was loaded into a mini-column, washed with 10 mL of water and eluted with 10 mL of 1 M HCl in 1 ml fractions. The concentration of P6C was measured by mixing a proper dilution in 60 µl with 120 µl 1 mg ml–1 o-aminobenzaldehyde in ethanol, and the increase of absorbance at 465 nm was followed until a plateau was reached. The extinction coefficient of ε465=2,800 M–1 cm–1 was used (Fothergill and Guest, 1977). Both DL-P5C and L-P6C were kept as stocks in 1 M HCl at 4 °C in the dark and neutralized with 1 M Tris-base immediately before use. The activity of ALDH7B4 was calculated from the difference in NAD(P)+ reduction at pH 7.5 and 35 °C in the presence or absence of variable concentrations of DL-P5C or L-P6C. The standard reaction mixture contained 50 mM Tris-HCl, pH 7.5, 1 mM NAD(P)+ and 2 mM DL-P5C or 1 mM L-P6C. The extinction coefficient of ε340=6.22 mM–1 cm–1 for NADH and NADPH was used to calculate specific activities.
 
-## Plant material, plant transformation, and cultivation conditions
+### Plant material, plant transformation, and cultivation conditions
 
 Arabidopsis [Arabidopsis thaliana (L.) Heynh.], ecotype Col-0 and T-DNA insertion lines (Supplementary file 2) were obtained from the NASC. Surface-sterilized seeds were sown on solid half-strength Murashige and Skoog medium including Gamborg B5 vitamins (pH 5.8, supplemented with 2% [w/v] sucrose and 0.8% agar) in Petri dishes sealed with Leukopor tape (Leukoplast) and cultivated under a long-day light regime (16 h photoperiod; 110 µmol m–2 s–1 at 21 °C). For seed production, seedlings were transferred to commercial substrate (‘Einheitserde’, type P, Gebr. Patzer, Sinntal-Altengronau, Germany) and cultivated in a greenhouse under long-day conditions. All T-DNA insertion mutants were backcrossed at least three times with WT plants, until the segregation pattern was consistent with a single T-DNA insertion. Constructs for the expression of GFP fusion proteins were obtained by inserting the coding sequences into pENTRa1 (Invitrogen) followed by LR-recombination with pUBC-GFP-Dest (Grefen et al., 2010). The construct for simultaneous CRISPR/Cas9-mediated inactivation of Din11 and At3g49630 was generated by ligating two matching oligonucleotides (Supplementary file 3) into the BsaI-linearized vector pHEE401E (Wang et al., 2015). The resulting gRNA matches a Cas9 cleavage site in both genes with one mismatch in Din11 and no strongly predicted off-targets. All constructs were introduced into Arabidopsis plants by floral dip with Agrobacterium tumefaciens strain GV3101 (Clough and Bent, 1998). Transgenic plants were selected by spraying of seedlings with BASTA solution (50 µg ml–1) or growth on sterile culture plates containing 30 µg ml–1 hygromycin B (Sigma). For the GFP constructs, lines with stable expression and a single-copy T-DNA insertion were selected by segregation analysis. CRISPR/Cas9-induced mutations were detected by high-resolution melting analysis using gene-specific primers (Supplementary file 3) and confirmed by sequencing of the PCR products. The CRISPR/Cas9 construct was eliminated by backcrossing to WT plants. The absence of functional transcripts was confirmed by RT-PCR and sequencing of the products.
 
@@ -102,11 +363,11 @@ For feeding experiments, homoarginine or arginine were added to the culture medi
 
 Other plant material was collected around the University of Konstanz or was purchased in a garden store. Seeds of alfalfa, broccoli, and rocket were surface sterilized as above and germinated on filter discs soaked in distilled water.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Protoplasts were isolated from leaves of 2-ODD-C23:GFP expressing and WT plants by overnight incubation in protoplast medium (0.45 M sorbitol, ½ strength MS salt mixture) supplemented with 10 mg ml–1 cellulase and 2.5 mg ml–1 macerozyme. Spectral images were recorded with a Zeiss LSM880 with a 63 x water immersion lens. The samples were excited at 488 nm and images were recorded with 20 spectral channels (9 nm bandwidth) between 490 and 668 nm. A chlorophyll spectrum was obtained from WT protoplasts and a GFP spectrum from an epidermis protoplast that did not contain chloroplasts. Linear unmixing with background subtraction was performed with the ZEN software (Zeiss). Channel overlay, false coloring and adjustment to identical gain, offset and contrast settings were performed in ImageJ and Adobe Photoshop.
 
-## Metabolite analyses
+### Metabolite analyses
 
 E. coli cultures were lysed by ultrasonication prior to or after the addition of a 20-fold excess of MeOH spiked with 10 µM 13C15N-guanidine (Sigma-Aldrich 607312). Plant samples were homogenized at –80 °C in a TissueLyser (Qiagen) and resupendend in a 10-fold excess of 80% (w/v) MeOH containing 10 µM 13C15N-guanidine and 20 µM 13C15N-arginine (Cortectnet CCN250). After ultrasonication for 5 min, the suspension was centrifuged for 10 min at maximum speed in a tabletop centrifuge and the supernatant was used directly for metabolite quantification.
 
@@ -114,6 +375,6 @@ Metabolite concentrations in the samples were determined by high performance liq
 
 Ethylene production by E. coli cultures was analyzed with an SRI flame ionization detector (FID) equipped with a HayeSep-D GC column. Serial dilutions of pure ethylene were use to calibrate the FID signal.
 
-## Material availability
+### Material availability
 
 All the genetic material generated for this study is available from the corresponding authors upon reasonable request.

@@ -20,15 +20,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05dk0ce17 Paul G. Allen School for Global Health, Washington State University Pullman United States
+1. Paul G. Allen School for Global Health, Washington State University Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
 2. Global Animal Health Tanzania Arusha United Republic of Tanzania
-3. https://ror.org/00vtgdb53 School of Biodiversity, One Health, and Veterinary Medicine, College of Medical, Veterinary and Life Sciences, University of Glasgow Glasgow United Kingdom
-4. https://ror.org/041vsn055 Nelson Mandela African Institution of Science and Technology Arusha United Republic of Tanzania
-5. https://ror.org/047ck1j35 Moredun Research Institute, Pentlands Science Park Edinburgh United Kingdom
+3. School of Biodiversity, One Health, and Veterinary Medicine, College of Medical, Veterinary and Life Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+4. Nelson Mandela African Institution of Science and Technology Arusha United Republic of Tanzania ([ROR:041vsn055](https://ror.org/041vsn055))
+5. Moredun Research Institute, Pentlands Science Park Edinburgh United Kingdom ([ROR:047ck1j35](https://ror.org/047ck1j35))
 6. Kilimanjaro Clinical Research Institute Moshi United Republic of Tanzania
-7. https://ror.org/03zjvnn91 School of Applied Sciences, Edinburgh Napier University Edinburgh United Kingdom
-8. https://ror.org/01jmxt844 Centre for International Health, University of Otago Dunedin New Zealand
-9. https://ror.org/0369jpd83 Ministry of Livestock and Fisheries Dodoma United Republic of Tanzania
+7. School of Applied Sciences, Edinburgh Napier University Edinburgh United Kingdom ([ROR:03zjvnn91](https://ror.org/03zjvnn91))
+8. Centre for International Health, University of Otago Dunedin New Zealand ([ROR:01jmxt844](https://ror.org/01jmxt844))
+9. Ministry of Livestock and Fisheries Dodoma United Republic of Tanzania ([ROR:0369jpd83](https://ror.org/0369jpd83))
 
 † Corresponding author
 
@@ -50,15 +50,109 @@ A recent prospective study of the aetiologies of livestock abortion, carried out
 
 ## Results
 
-## Descriptive statistics
+### Descriptive statistics
 
 Between October 2017 and September 2019, 215 abortion cases were reported from 150 households in 13 of the 15 target wards. The distribution of investigated cases in relation to agro-ecological system and herd/flock composition is shown in Table 1. Out of the 150 households investigated, most (n=115) had only one event investigated. Of the remaining households, 21 had two cases investigated, eight had three, two had four, three had five and one household had 11 cases investigated. Herd level summary statistics have been provided in Supplementary file 1.
+
+**Table 1.**
+ The number (and percentage) of abortion cases by species and agro-ecological zone and the composition of the livestock herds (and percentage) in investigated households.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Category</th>
+      <th>Number (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Number of abortion cases</td>
+      <td>All species</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <td>Cattle</td>
+      <td>71 (33%)</td>
+    </tr>
+    <tr>
+      <td>Goats</td>
+      <td>100 (46.5%)</td>
+    </tr>
+    <tr>
+      <td>Sheep</td>
+      <td>44 (20.5%)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Number of abortion cases in each agricultural ecological zone</td>
+      <td>Pastoral</td>
+      <td>144 (67.0%)</td>
+    </tr>
+    <tr>
+      <td>Agro-pastoral</td>
+      <td>1 (0.5%)</td>
+    </tr>
+    <tr>
+      <td>Peri-urban</td>
+      <td>70 (32.5%)</td>
+    </tr>
+    <tr>
+      <td>Number of households that had an abortion event</td>
+      <td>Households</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Number of households in each agricultural ecological zone</td>
+      <td>Pastoral</td>
+      <td>84 (56.0%)</td>
+    </tr>
+    <tr>
+      <td>Agro-pastoral</td>
+      <td>1 (0.7%)</td>
+    </tr>
+    <tr>
+      <td>Peri-urban</td>
+      <td>65 (43.3%)</td>
+    </tr>
+    <tr>
+      <td>Composition of the 150 herds</td>
+      <td>Cattle, goats and sheep</td>
+      <td>77 (51.3%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cattle and goats</td>
+      <td>17 (11.3%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goats and sheep</td>
+      <td>7 (4.7%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cattle and sheep</td>
+      <td>1 (0.7%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cattle only</td>
+      <td>40 (26.6%)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Goats only</td>
+      <td>8 (5.3%)</td>
+    </tr>
+  </tbody>
+</table>
 
 The sensitivity of the platform (the percentage of expected abortion cases that were investigated) ranged from 0% to 12.4% for cattle, 0–1.2% for goats and 0–0.3% for sheep. A higher percentage of expected abortions in cattle were reported in smallholder wards (2.7%) than in other wards (0% for agropastoral and 0.31% for pastoral wards), with particularly high reporting in one smallholder ward, Machame Mashariki, close to Moshi town, where 12.4% of expected cattle abortions were investigated.
 
 Over the 12 months preceding a reported abortion event, abortions, peri-natal mortalities, or stillbirths occurred in 52 of 184 (28.3%) cattle herds, 98 of 168 (58.3%) goat herds and 93 of 140 (66.4%) sheep herds that had at least one adult female. Out of herds that had at least one abortion case, the mean (median, range) number of cases of abortion per herd in the past 12 months was 3.7 (3, 1 – 12) for cattle, 9.0 (6, 1 – 70) for goats and 6.7 (4, 1 – 67) for sheep.
 
-## Determinants of investigation
+### Determinants of investigation
 
 The number of cases reported to the research team by each LFO varied considerably (median = 5, range 0–84). Of the 215 cases, 70% were reported by three (20%) of the LFOs, with one reporting 84 cases (39.1%). Two LFOs did not report a single case (Figure 1a). The range in the interval between the report and the subsequent investigation by the research team was 0 to 4 days with a median of 1 day (Figure 2).
 
@@ -72,13 +166,13 @@ The number of cases reported to the research team by each LFO varied considerabl
 
 From the Pearson correlation analysis, no significant association was found between the interval between reporting and investigation and the direct distance between the centroid of the ward in which the LFO worked and the research team headquarters (R2=–0.07, t=–0.32, p=0.75) (Figure 1b).
 
-## Sample collection data
+### Sample collection data
 
 Out of the 215 cases, placental and foetal tissues were collected in 116 (24.0%) and 141 (34.1%), respectively. The reasons given for failure to collect placental and foetal tissues included: (a) the tissues not being seen by owners (for example if the animal aborted while away grazing); (b) the tissues being burned by the owner; and (c) the tissues being consumed by dogs or other animals. Vaginal and milk samples from aborting dams were collected in 213 (99.1%) and 167 (77.7%) cases, respectively.
 
-## Observed patterns in investigated abortions
+### Observed patterns in investigated abortions
 
-## Pattern of abortions in species and breeds
+#### Pattern of abortions in species and breeds
 
 In cattle, reported abortions occurred significantly more often than expected in non-indigenous cross-bred animals (expected proportion = 0.11, actual proportion = 0.52, 95% CI: 0.42–1.00, p<0.001) and non-indigenous exotic animals (expected proportion = 0.01, actual proportion = 0.25, 95% CI: 0.16–1.00, p<0.001). In goats, reported abortions occurred significantly more often than expected in non-indigenous cross-bred animals (expected proportion = 0.02, actual proportion = 0.18, 95% CI: 0.11–1.00, p<0.001) and more often than expected in non-indigenous exotic animals, although this difference was not significant (expected proportion = 0.01, actual proportion = 0.03, 95% CI: 0.01–1.00, p=0.053; Figure 3 and Supplementary file 2). There was no significant difference in the distribution of abortions in different breeds of sheep.
 
@@ -86,23 +180,98 @@ In cattle, reported abortions occurred significantly more often than expected in
 
 **Figure 3.:** Value of 0 = the expected number of cases occurred,>0 more than expected,<0 less than expected (LOC = indigenous (local), XB = non-indigenous cross-bred, EX = non-indigenous exotic breed).
 
-## History of previous abortion cases in the aborting dams
+#### History of previous abortion cases in the aborting dams
 
 Of the cattle, goat and sheep dams that were investigated in this study (and that had had previous pregnancies), 33.3% (n=12), 29.8% (n=17) and 16.7% (n=5), respectively, were reported by the owner to have experienced a previous abortion event. Of these cattle and goats, 41.7% (n=5) and 47.1% (n=8), respectively, had suffered multiple previous abortions. In one particular case, a cow had experienced four previous abortion cases and one goat had experienced seven.
 
-## History of recent stressful events
+#### History of recent stressful events
 
 Of dams that aborted, 16 of 71 cattle (22.5%), 37 of 98 goats (37.7%) and 15 of 43 sheep (34.9%) were reported to have experienced recent stress. Dams that aborted for which an attribution was made were no more or less likely to have experienced a stressful event than dams for which an aetiological attribution was not made. Regarding recent illnesses over the previous four weeks (diagnosed by the farmer), cattle were reported to have suffered from a range of conditions including anaplasmosis, diarrhoea, lumpy skin disease, and trypanosomiasis, whilst goats were reported to have suffered predominantly from respiratory disease.
 
-## Seasonality of cases
+#### Seasonality of cases
 
 Cases of abortion were reported in every month of the 24-month study period, and although these fluctuated over time, with more cases reported during the drier periods (Figure 4), there was no significant effect of mean monthly rainfall on the number of cases (correlation coefficient = –0.005. t = –0.25, p = 0.8).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95296/elife-95296-fig4-v1.jpg)
 
-## Determinants of attribution
+### Determinants of attribution
 
 As described in Thomas et al., 2022, the number of cases for which an abortigenic agent was attributed was 42 out of 215 (19.5%). Out of these, an attribution was made using PCR in 41 cases. One event in a cow met the case definition for two pathogens (both BHV-1 through seroconversion and Neospora through PCR) and in this event both pathogens were attributed. The attribution of the single case that was not determined using PCR (BHV-1) was made by serology alone. The sample types that were collected in each of these 41 cases for which an attribution was made using PCR, and whether the samples returned a positive or negative result, are shown in Figure 5. The time period between the abortion incident and the investigation (Delay) had a negative impact on attribution (z=–2.1, p=0.03), with each daily increase in the delay corresponding to a decrease in the odds of an attribution being made by 46.1% (i.e. 1–0.539; Table 2 and Figure 6). Additionally, when the abortion occurred in goats (Goat) an attribution was significantly less likely than when it occurred in cattle. Finally, the odds of achieving an attribution were not affected by the availability of the placenta (Placenta present), foetus (Foetus present), or milk (Milk collected) for sampling.
+
+**Table 2.**
+ Output of final regression model investigating determinants of attribution.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Odds Ratio</th>
+      <th>2.5%</th>
+      <th>97.5%</th>
+      <th>z value</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>0.353</td>
+      <td>0.053</td>
+      <td>2.361</td>
+      <td>–1.074</td>
+      <td>0.283</td>
+    </tr>
+    <tr>
+      <td>Delay</td>
+      <td>0.539</td>
+      <td>0.306</td>
+      <td>0.95</td>
+      <td>–2.139</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td>Goat</td>
+      <td>0.195</td>
+      <td>0.058</td>
+      <td>0.653</td>
+      <td>–2.651</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Sheep</td>
+      <td>0.615</td>
+      <td>0.142</td>
+      <td>2.664</td>
+      <td>–0.65</td>
+      <td>0.516</td>
+    </tr>
+    <tr>
+      <td>Foetus present</td>
+      <td>0.936</td>
+      <td>0.345</td>
+      <td>2.544</td>
+      <td>–0.129</td>
+      <td>0.897</td>
+    </tr>
+    <tr>
+      <td>Placental present</td>
+      <td>1.779</td>
+      <td>0.621</td>
+      <td>5.094</td>
+      <td>1.074</td>
+      <td>0.283</td>
+    </tr>
+    <tr>
+      <td>Milk collected</td>
+      <td>2.405</td>
+      <td>0.639</td>
+      <td>9.055</td>
+      <td>1.297</td>
+      <td>0.195</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95296/elife-95296-fig5-v1.jpg)
 
@@ -112,7 +281,7 @@ As described in Thomas et al., 2022, the number of cases for which an abortigeni
 
 **Figure 6.:** The blue line indicates the regression line with the 95% confidence interval shaded blue.
 
-## Exposure to zoonotic pathogens
+### Exposure to zoonotic pathogens
 
 Zoonotic pathogens (Brucella spp., Coxiella burnetii, Toxoplasma gondii. and RVFV) were detected in 61 of the 77 (79.2%) abortion cases where a pathogen was detected. Respondents reported that someone had assisted with the delivery in 13 (21.3%) of these cases, similar to the proportion of assisted deliveries across all abortion cases (40 out of 215, 23.5%). Of those assisting with delivery, the median age was 37, the youngest was seven, the eldest 84, and 20% were female.
 
@@ -132,7 +301,7 @@ The effectiveness of the platform in allowing an aetiological diagnosis to be re
 
 A reactive surveillance platform that is managed locally, for example by ward-based LFOs, will require the establishment of effective and safe protocols for collection and transport of samples for laboratory diagnosis that can be carried out without the need for long-distance travel of more highly trained investigators. Protocols for collection of vaginal swabs from aborting dams, which proved effective for both pathogen detection and attribution, may be of value. In this study, the greater accessibility of vaginal swabs, as compared to placental samples and foetal samples, meant more attribution of abortigenic pathogens was attained through these samples (Figure 5). They also require less handling of potentially infectious tissues and are more reliably accessible than placental and foetal tissues, which are often consumed by scavengers or disposed of by the farmer. Indeed, collection of vaginal swabs from the dam was possible in almost all cases investigated in this study. Thus, while logistic, financial, and capacity constraints for comprehensive sampling and investigation of livestock abortions are likely to exist across Africa, these need not preclude the establishment of simple and robust protocols that can yield valuable surveillance data.
 
-## Attribution
+### Attribution
 
 From this platform, an attribution was reached in 19.5% of cases (Thomas et al., 2022), which was not far below the typical range of 25–45% achieved in industrialized farming systems in high-income settings (Campero et al., 2003; Amouei et al., 2019; Derdour et al., 2017; Anderson et al., 1990). During this study, samples were tested for only 10 abortigenic pathogens and it is likely that rates of detection and attribution would be higher with inclusion of tests for other known abortigenic agents (such as Listeria spp., Campylobacter spp., Salmonella spp. and fungal pathogens), with more locally relevant aetiological data informing the suite of pathogens to be tested, and with metagenomic approaches.
 
@@ -142,7 +311,7 @@ We do not have an immediate explanation as to why the likelihood of attribution 
 
 The challenges of attribution, discussed also in Thomas et al., 2022, should not detract from the value of reporting and investigating livestock abortion cases. Recent studies have indicated that the economic costs of livestock abortion in Tanzania and impacts on food security are much more substantial than previously recognized; for example (Semango et al., 2024) estimated the annual gross losses associated with abortion in Tanzania to be $262 million USD. Given these findings, data collected on the number of cases and species/breed affected will be of considerable value in highlighting the importance of this syndrome in the context of livestock productivity, household livelihoods and food security.
 
-## Patterns of livestock abortion in northern Tanzania
+### Patterns of livestock abortion in northern Tanzania
 
 Data from the household questionnaire indicated that livestock abortion was a common occurrence across the study area with almost a third of cattle herds and two-thirds of small ruminant herds having experienced a previous case of abortion in the preceding 12 months.
 
@@ -156,13 +325,13 @@ In conclusion, this study has demonstrated that livestock abortion surveillance,
 
 ## Materials and methods
 
-## Logic model
+### Logic model
 
 A logic model was created to provide a conceptual framework that described the logical links between the main activities, outputs, and outcomes that were expected from the programme (Figure 7). The model depicts the overarching assumption that building better livestock abortion surveillance systems and strong community partnerships will lead to data-driven interventions to prevent and control infectious causes of livestock abortion and to catalyse changes in knowledge, attitudes, behaviours, or practices that could improve livestock productivity, livelihoods, and human and animal health.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95296/elife-95296-fig7-v1.jpg)
 
-## Abortion surveillance platform
+### Abortion surveillance platform
 
 The abortion surveillance platform was set up in northern Tanzania through a collaboration between the Ministry of Livestock and Fisheries, local government authorities, and the research team. The study was undertaken from October 2017 through September 2019 in 15 wards of five districts of Arusha, Kilimanjaro, and Manyara Regions in northern Tanzania (Figure 8). These study wards were selected from randomly selected wards included in earlier cross-sectional exposure studies (Bodenham et al., 2021). Thirteen wards were selected at random and two additional wards were selected purposively because of strong existing relationships with the livestock-keeping community (Thomas et al., 2022). These 15 wards comprised five wards that were expected to be predominantly pastoral, three were expected to be predominantly agropastoral and seven expected to predominantly smallholder, with categories assigned by the research team following discussion with local experts (typically the district level veterinary officer; Bodenham et al., 2021). Recruited livestock field officers (LFOs) responsible for each target ward received training on the causes and safe investigation of livestock abortion. These officers are government employees that are equivalent to para-veterinarians in other settings. They were requested to ask livestock owners to report any incidents of livestock abortion, stillbirths, and peri-natal death (hereafter referred to as abortion cases).
 
@@ -170,7 +339,7 @@ The abortion surveillance platform was set up in northern Tanzania through a col
 
 **Figure 8.:** The number of investigated cases per ward and the study base (Moshi) are shown.
 
-## Investigation of cases
+### Investigation of cases
 
 Cases were investigated if, following a report from the LFO, the event could be followed up within 72 hr of the abortion occurring. Full details of sample collection are provided in Thomas et al., 2022. Briefly, where available, blood, milk, and vaginal swabs were collected from the aborting dam and tissue and swab samples collected from the foetus and placental membranes. Information about the abortion event was collected and a household questionnaire (comprised of mixed open and closed questions) conducted to collect information on livestock demographics, livestock abortion history, the aborting dam (age, breed), household livestock parturition practices and household socio-economic data (Supplementary file 3). Questionnaire data were only collected from abortion cases that were investigated by the research team and were used to investigate underlying patterns of abortion, risks associated with abortion cases, and operational aspects of the surveillance platform.
 
@@ -178,32 +347,32 @@ LFOs were instructed to provide farmers with advice as to locally appropriate pr
 
 Event data were collected using a paper-based Cardiff Teleform system (Cardiff Inc, Vista, Ca., USA) into an Access database (Microsoft Corp, Va., USA). Household questionnaire data were collected using handheld digital devices programmed with the Open Data Kit survey tool. Data were imported into R (R Development Core Team, 2023) for cleaning, coding and analysis. The survey instruments were pre-tested in wards that were not targets for this study. Geographic co-ordinates from a central point within the household were collected with a handheld GPS (Garmin eTrex).
 
-## Sample analysis
+### Sample analysis
 
 Laboratory diagnostic analyses have previously been described in detail (Thomas et al., 2022). Briefly, samples were tested for: (a) Brucella spp., Coxiella burnetii, Chlamydia spp., and Leptospira spp. using quantitative polymerase chain reaction (qPCR) assays: (b) Neospora spp. and Toxoplasma gondii using conventional nested PCR assays; (c) Bluetongue virus (BTV), bovine viral diarrhoea virus / border disease virus (BVDV/BDV), and Rift Valley fever virus (RVFV) using quantitative reverse transcriptase PCR (RT-qPCR); and (d) additional tests for C. burnetii and Neospora spp. using immunohistochemistry. Additionally, serum was tested for antibodies to Brucella spp., bovine herpesvirus (BHV-1), BVDV, C. burnetii, Leptospira hardjo, and RVFV.
 
-## Summarising the investigated cases and description of the livestock study population
+### Summarising the investigated cases and description of the livestock study population
 
 The number of abortion cases was recorded for each agro-ecological zone (pastoral, agro-pastoral and small holder) and study ward, together with the number of households that had an abortion event, the composition of the livestock herds (cattle, goats, and sheep) kept at each household, and the number of previous abortion cases in each household that had an event.
 
 The sensitivity of the platform was examined by dividing the number of investigated abortion cases by the expected number of abortions for the livestock population of the study wards over the study period. The expected number of abortions was estimated by multiplying (a) the number of abortion cases per head of livestock reported over a 12-month period obtained through a previous randomized cross-sectional study (described in de Glanville et al., 2022; Supplementary file 5) by (b) the number of livestock in the ward reported by surveys conducted by LFOs from the Tanzania Ministry of Livestock and Fisheries covering a period from 2011 to 2016 (E. Swai, unpublished data; Supplementary file 6). This figure was multiplied by two to account for the 24-month duration of the study. Where data were not available for a specific ward, figures were estimated from the average of other wards in the same division (Rau) or by current estimates provided by the LFO (Machame Mashariki).
 
-## Determinants of investigation
+### Determinants of investigation
 
 The determinants of event investigation were analysed to determine the number of cases that each LFO investigated and the distribution of time taken between the report and the subsequent investigation by the research team. The relationship between the time taken between a report and its subsequent investigation and the distance (km) of the ward from the research team headquarters (in the town of Moshi) was investigated using Pearson correlation analysis (Figure 1).
 
-## Sample collection data
+### Sample collection data
 
 Data were recorded and summarized for: (a) the types of samples collected for each abortion event; (b) the availability of placental and foetal materials and, when not available, the reasons why these materials were not available; and (c) the relationship between sample types and pathogen detection and pathogen attribution.
 
-## Observed patterns in investigated abortions
+### Observed patterns in investigated abortions
 
 The distribution of investigated abortion cases was examined in relation to (a) livestock species and breed in which they occurred, (b) history of previous abortion cases in the aborting dams, (c) a history of recent stressful events affecting the pregnant dam, and (d) seasonality of the cases.
 
-## Determinants of attribution
+### Determinants of attribution
 
 World Organization for Animal Health (WOAH – previously OIE) guidelines and case definitions, in conjunction with recommendations from specialist/reference laboratories and peer-reviewed literature, were used to inform diagnosis and attribution of infectious causes of abortion (described in detail in Thomas et al., 2022). Binomial logistic regression analysis was carried out with attribution (yes or no) as the dependent variable. Potential independent explanatory variables, including the delay between the event and its investigation, species, and livestock management system, were selected for inclusion in the model through univariable analysis (with all variables with p-value < 0.25 selected for inclusion). Potential independent explanatory variables were retained or de-selected through a stepwise approach using Akaike Information Criterion (AIC) as an indicator for model efficiency to achieve a final model.
 
-## Exposure to zoonotic pathogens
+### Exposure to zoonotic pathogens
 
 The percentage of cases in which zoonotic pathogens (Brucella spp., C. burnetii, T. gondii and RVFV) were detected, and the percentage of these cases in which someone assisted with the delivery, was calculated. The age and sex of the persons assisting with delivery was also collected.

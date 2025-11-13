@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/049pfb863 Department of Biological Sciences, Brain Health Research Institute, Kent State University Kent United States
+1. Department of Biological Sciences, Brain Health Research Institute, Kent State University Kent United States ([ROR:049pfb863](https://ror.org/049pfb863))
 
 † Corresponding author
 

@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01kg8sb98 Indiana University Indianapolis United States
-2. https://ror.org/05apxxy63 Korea Advanced Institute of Science and Technology Daejon Republic of Korea
-3. https://ror.org/01js9sf40 Maine Health Access Foundation Portland United States
-4. https://ror.org/02jzgtq86 Dana Farber Cancer Institute Boston United States
+1. Indiana University Indianapolis United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+2. Korea Advanced Institute of Science and Technology Daejon Republic of Korea ([ROR:05apxxy63](https://ror.org/05apxxy63))
+3. Maine Health Access Foundation Portland United States ([ROR:01js9sf40](https://ror.org/01js9sf40))
+4. Dana Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
 5. Indiana Center for Musculoskeletal Health Indianapolis United States
 
 † Corresponding author
@@ -44,13 +44,21 @@ As shown previously, FNDC5 deletion has a protective effect against ovariectomy-
 
 ## Results
 
-## With lactation, FNDC5 global KO mice lose less bone and are mechanically stronger compared to WT
+### With lactation, FNDC5 global KO mice lose less bone and are mechanically stronger compared to WT
 
 No significant differences were observed in either bone composition or morphometry between 4- and 5-month-old virgin wildtype (WT) and FNDC5 global KO female mice (Figure 1A, B, and C, detailed result in Supplementary file 1), showing that the absence of FNDC5/irisin does not affect female bone development. It has been previously shown that during lactation, maternal bones release calcium to supplement milk, especially in response to the large calcium demand induced by large litter size or a calcium-deficient diet (Wysolmerski, 2002; Ardeshirpour et al., 2015). Similar to previous studies, 2 weeks of lactation resulted in bone loss in both WT and KO mice, with a significant reduction in cortical bone area (Ct. B.Ar), cortical bone area fraction percentage (Ct.B.Ar/T.Ar%), and cortical thickness (Ct. Th) (Figure 1A and B) as well as bone mineral density (BMD) (Figure 1C). However, the KO mice lost less bone compared to the WT mice, as evidenced by the significantly higher bone area fraction percent, cortical thickness, and BMD (Figure 1A, B, and C) as well as the lower percentage of bone loss (Supplementary file 1). These data suggest that the FNDC5 KO mice are more resistant to the effects of calcium demand. Analysis of trabecular bone parameters including trabecular bone volume fraction (BV/TV), trabecular thickness (Tb. Th), trabecular spacing (Tb. Sp), and trabecular number (Tb. N) showed no significant difference in bone loss between lactating WT and lactating KO mice (Supplementary file 1). There was no significant difference in the pup numbers between WT and KO females (Figure 1—figure supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig1-v1.jpg)
+
+**Figure 1.:** (A) Respective micro-computed tomography (µCT) images of femoral midshafts from WT virgin (WT), KO virgin (KO), WT lactation (WT L), and KO lactation (KO L) mice. (B) µCT analysis of femoral cortical bone parameters of virgin and lactating WT and KO female mice reported as cortical bone area (Ct. B.Ar), cortical bone area fraction (Ct. B.Ar/ T.Ar %), and cortical thickness (Ct. Th). (C) Ex vivo dual-energy X-ray absorptiometry (DXA) analysis for bone mineral density (BMD) and bone mineral content (BMC) of femurs from virgin and lactating WT and KO female mice. (D) Three-point bending analysis of WT and KO virgin and lactating mice reported as ultimate force and stiffness. (E) Representative tartrate-resistant acid phosphatase (TRAP)-stained images of cortical bone from WT virgin (WT), WT lactation (WT L), KO virgin (KO), and KO lactation (KO L) mice. (F) Representative backscatter scanning electron microscope (BSEM) images of WT virgin (WT), KO virgin (KO), WT lactation (WT L), and KO lactation (KO L) mice femur at ×400 magnification. (G) Percent TRAP-positive osteocytes (TRAP+ve) in tibia from virgin and lactating WT and KO mice. (H) Osteocyte lacunar area in femurs from virgin and lactating WT and mice. (I) Osteoclast number per bone perimeter in tibia from virgin and lactating WT and KO mice. (J) Serum receptor activator of nuclear factor kappa β ligand (RANKL) levels in virgin and lactating WT and KO mice. 4- to 5-month-old WT and KO virgin and lactating mice, n = 5–8/group. a=Significantly different from WT, b=significantly different from KO, *=p<0.05, **=p<0.01, ***=p<0.001. Two-way analysis of variance (ANOVA) was performed for statistical analysis. The interaction was not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Panel A shows total pup numbers in wildtype (WT) and knockout (KO) female mice that underwent pregnancy and 2 weeks of lactation. There are no significant differences in the pup numbers between genotypes. Student’s t-test was performed for statistical analysis. n = 8/group. Panels B and C show total body weight of WT and KO female (B) and male (C) mice. No statistically significant difference was found among the groups, regardless of genotype or diet. Two-way analysis of variance (ANOVA) with Tukey’s post hoc test was done. n = 4-5/group. As depicted here, red is female, and blue is male.
+
 Bone loss can have significant effects on bone mechanical properties including bone strength, stiffness, and fragility. To determine mechanical properties, three-point bending tests were performed on mice femurs. There was no significant difference between virgin WT and KO mice in terms of ultimate force and stiffness (Figure 1D). However, femurs from the lactating KO mice were stronger than lactating WT, as evidenced by the higher stiffness and significantly higher ultimate force needed to break the bone (Figure 1D, Supplementary file 1). This data indicates that lactating KO female bone retains greater resistance to fracture than lactating WT mice by less lactation-induced bone loss.
 
-## With lactation, FNDC5 global KO mice have fewer TRAP-positive osteoclasts and osteocytes as well as smaller osteocyte lacunar area compared to WT mice
+### With lactation, FNDC5 global KO mice have fewer TRAP-positive osteoclasts and osteocytes as well as smaller osteocyte lacunar area compared to WT mice
 
 Previously it was shown that lactation-induced bone loss occurs via not only osteoclastic bone resorption but also osteocytic osteolysis (Qing et al., 2012). To determine the relative contribution of each means of resorption, tibial longitudinal sections were stained for TRAP-positive multinucleated osteoclasts as well as TRAP-positive osteocytes.
 
@@ -62,7 +70,7 @@ In virgin mice, there were no significant differences in osteoclast number per b
 
 RANKL, another major factor in bone resorption (Xiong and O’Brien, 2012), is also increased during lactation to induce osteoclastic bone resorption (Ardeshirpour et al., 2015) by osteocytes, the major source of RANKL (Nakashima et al., 2011; Xiong and O’Brien, 2012; Ono et al., 2020). Virgin WT and KO mice had comparable serum RANKL levels (Figure 1J). With lactation, the increase in serum RANKL was significant in the WT mice, but not in the KO mice (Figure 1I, Supplementary file 1).
 
-## FNDC5 KO female and male bone have opposite responses to a low-calcium diet
+### FNDC5 KO female and male bone have opposite responses to a low-calcium diet
 
 After observing that bones are partially protected against lactation-induced bone loss in FNDC5/irisin KO female mice, we sought to determine if FNDC5/irisin null (KO) male bone is protected from calcium deficiency. Therefore, both female and male mice were placed on a calcium-deficient diet for 2 weeks to induce bone loss. We do not see any significant difference in body weight in any of the groups Figure (Figure 1—figure supplement 1) , or in food intake (per day average food intake was 3.9±0.9 g for WT females on a normal diet, 3.74±1.01 g for KO females on a normal diet, 3.66±1.1 g for WT females on a low-calcium diet, 3.8±0.7 g for KO females on a low-calcium diet, 4.2±1.3 g for WT males on a normal diet, 4.3±1.5 g for KO males on a normal diet, 3.94±1.8 g for WT males on a low-calcium diet, and 4.4±1.2 g for KO males on a low-calcium diet).
 
@@ -76,11 +84,107 @@ Unlike female bone, significant differences were observed between WT and KO male
 
 To ensure that the effects observed in the KO mice were due to circulating irisin, and not FNDC5 deletion, we injected AAV8-irisin in KO male mice, with AAV8-GFP as the control, and placed them on the same low-calcium diet. We chose male mice due to the highly significant effect on bone mass and strength we saw in the KO males compared to WT males on a low-calcium diet. The irisin injection rescued the skeletal phenotype in KO male mice, shown by the higher cortical bone area fraction and the lower endosteal perimeter (Figure 2G). There was a tendency for higher ultimate force and stiffness in the KO males that received the AAV8-irisin injection, however, this did not reach statistical significance (Figure 2H). These data show that the observed effects in the FNDC5 null animals are due to an absence of irisin.
 
-## Osteocytes from female and male KO mice respond differently to a low-calcium diet
+### Osteocytes from female and male KO mice respond differently to a low-calcium diet
 
 To investigate if the bone loss was due to osteoclast or osteocyte activation, tibiae from all the groups were TRAP-stained. Under a normal control diet, the tibia from both KO female and male (Figure 3A) mice had fewer TRAP-positive osteocytes compared to their WT counterparts. This indicates that their osteocytes were less ‘primed’ or ‘activated’ for resorption.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig3-v1.jpg)
+
+**Figure 3.:** (A) Percentage of tartrate-resistant acid phosphatase (TRAP)-positive (+ve) osteocytes in female and male wildtype (WT) and KO mice given a normal or a low-calcium diet. (B) Osteoclast number (N.Oc/B.Pm) in WT and KO female and male mice given a normal or a low-calcium diet. (C) Representative backscatter scanning electron microscope (BSEM) images depicting osteocyte lacunar area in femurs from WT female (WT F) and WT male (WT M) given a normal diet at ×450 magnification. (D) Osteocyte lacunar area in WT and KO female and male mice given a normal diet. (E) Lacunar area in female and male WT and KO mice given a normal or a low-calcium diet. (F) Serum receptor activator of nuclear factor kappa β ligand (RANKL) levels in female and male WT and KO mice given either a normal diet or a low-calcium diet. (G) Serum parathyroid hormone (PTH) levels in female and male WT and KO mice given either a normal diet or a low-calcium diet. (H) Serum calcium levels in female and male WT and KO mice given either a normal diet or a low-calcium diet. n = 4–5/group. a=Significantly different from WT, b=significantly different from KO, *=p<0.05, **=p<0.01. Two-way analysis of variance (ANOVA) was performed. As depicted here, red is female, and blue is male.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Panels A and C show in vivo muscle plantarflexion force (reported as plantarflexion torque and plantarflexion fatigue) in wildtype (WT) and knockout (KO) female (A) and male (C) mice on a control or a low-calcium diet, panels B and D show muscle electrophysiology parameters of CMAP, SMUP, and MUNE in WT and KO female (B) and male (D) mice, and panels E and F show ex vivo EDL functional measurement (reported as specific force frequency, maximum rate of contraction, maximum rate of relaxation, half-relaxation time, and % fatigue) in WT and KO female (E) and male (F) mice. Two-way analysis of variance (ANOVA) was performed. n = 4–5/group. As depicted here, red is female, and blue is male.
+
 Under a low-calcium diet, the number of TRAP-positive osteocytes increased in both WT and KO female mice, similar to lactation (Figure 3A, Table 1); however, the total number was still significantly lower in the KO females than the WT females. The low-calcium diet increased TRAP-positive osteocytes in both WT and KO male mice. The KO male mice had a significantly higher level of increase (Figure 3A, Table 1), and had significantly higher TRAP-positive osteocytes compared to WT. This indicates an increased activation of osteocytes in the KO males and suggests higher osteocytic bone resorption.
+
+**Table 1.**
+ FNDC5 knockout (KO) female and male mice have opposite responses to a low-calcium diet compared to wildtype (WT) female and male mice where female KO mice are protected but male KO mice have greater bone loss than WT.Percentage changes in different bone and serum parameters of WT and KO female and male mice with a 2-week low-calcium diet. *=p<0.05 compared to WT.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Bone parameters and serum markers</th>
+      <th></th>
+      <th colspan="2">% Change in female</th>
+      <th colspan="2">% Change in male</th>
+    </tr>
+    <tr>
+      <th>Change</th>
+      <th>WT</th>
+      <th>KO</th>
+      <th>WT</th>
+      <th>KO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bone area</td>
+      <td>Decrease</td>
+      <td>13%</td>
+      <td>7%*</td>
+      <td>2%</td>
+      <td>13%*</td>
+    </tr>
+    <tr>
+      <td>Bone area fraction</td>
+      <td>Decrease</td>
+      <td>17%</td>
+      <td>11%*</td>
+      <td>7%</td>
+      <td>23%*</td>
+    </tr>
+    <tr>
+      <td>Cortical thickness</td>
+      <td>Decrease</td>
+      <td>19%</td>
+      <td>13%*</td>
+      <td>4%</td>
+      <td>15%*</td>
+    </tr>
+    <tr>
+      <td>Osteoclast number/bone perimeter</td>
+      <td>Increase</td>
+      <td>125%</td>
+      <td>127%</td>
+      <td>170%</td>
+      <td>336%*</td>
+    </tr>
+    <tr>
+      <td>TRAP-positive osteocytes</td>
+      <td>Increase</td>
+      <td>180%</td>
+      <td>290% *</td>
+      <td>85%</td>
+      <td>388%*</td>
+    </tr>
+    <tr>
+      <td>Osteocyte lacunar area</td>
+      <td>Increase</td>
+      <td>38%</td>
+      <td>16% *</td>
+      <td>60%</td>
+      <td>89%*</td>
+    </tr>
+    <tr>
+      <td>Serum PTH</td>
+      <td>Increase</td>
+      <td>150%</td>
+      <td>75% *</td>
+      <td>70%</td>
+      <td>164%*</td>
+    </tr>
+    <tr>
+      <td>Serum RANKL</td>
+      <td>Increase</td>
+      <td>100%</td>
+      <td>118%</td>
+      <td>119%</td>
+      <td>130%</td>
+    </tr>
+  </tbody>
+</table>
 
 There was no significant difference between WT and KO mice in osteoclast numbers per bone perimeter for both females and males (Figure 3B). Both WT and KO females had an increase in their multinucleated TRAP-positive osteoclast number with a low-calcium diet, however, KO females had a significantly lower number of osteoclasts compared to WT females on a low-calcium diet (Figure 3B). Similarly, under a normal diet, there was no difference in the number of osteoclasts between male WT and KO. Under a low-calcium diet, osteoclast numbers increased in both groups, however, there was no significant difference between WT and KO male mice (Figure 3B). We also measured osteoblast numbers per bone perimeter. There was no difference in osteoblast numbers in either female or male normal or low-calcium diet mice groups (data not shown).
 
@@ -90,7 +194,7 @@ Serum RANKL levels increased in all the low-calcium diet groups compared to cont
 
 Since FNDC5/irisin is robustly produced in skeletal muscle, we wanted to determine if the deletion of FNDC5/irisin affects muscle function, under either a normal or a low-calcium diet. In vivo and ex vivo muscle contractility functions were performed in these mice. No difference was found between WT and KO mice on either a normal or a low-calcium diet (Figure 3—figure supplement 1). This indicates deletion of FNDC5 is not affecting muscle function and that bone resorption is releasing sufficient calcium into the circulation to maintain calcium homeostasis and supplying sufficient calcium for skeletal muscle function.
 
-## Female and male osteocyte transcriptomes are distinctly different
+### Female and male osteocyte transcriptomes are distinctly different
 
 Total RNA sequencing of osteocyte-enriched bone chips from female and male WT mice revealed significant sex-dependent differences in the osteocyte transcriptome under normal conditions (Figure 4A, C, and F). The major differentially expressed genes (DEGs) were involved in the steroid, fatty acid, cholesterol, lipid transport, and metabolic processes. Compared to male WT mice, female WT mice had an approximately 2- to 3-fold higher expression of very low-density lipoprotein receptor (Vldlr), voltage-dependent calcium channel T type alpha 1H subunit (Cacna1h), aldehyde dehydrogenase (Aldh1l2), and a 2- to 3-fold lower expression of apolipoproteins Apoa1, Apoa2, Apoa4, Apoc3 and others involved in steroid and fatty acid metabolic process. There was also a 2- to 3-fold lower expression of several lipid and solute carrier genes and apolipoprotein genes in female WT compared to male WT. This suggests that male osteocytes may be greater regulators and utilizers of these sources of energy than female osteocytes.
 
@@ -100,21 +204,29 @@ Total RNA sequencing of osteocyte-enriched bone chips from female and male WT mi
 
 Differences were also observed in genes involved in extracellular matrix organization pathways, bone development, ossification, bone remodeling, and re- sorption pathways. Female WT osteocytes have higher expression of genes shown to be highly expressed in osteocytes during lactation compared to male WT osteocytes. These include Tnfsf11 (RANKL, 2.7-fold), Ctsk (2.5-fold), Acp5 (TRAP, 2.2-fold), Mmp13 (2.7-fold), osteoclast associated receptor (Oscar, 4.6-fold), macrophage stimulating 1 receptor (Mst1r, 3-fold), as well as several collagen genes and bone formation and mineralization genes including alkaline phosphatase (Alpl, 2.4-fold), periostin (Postn, 2.6-fold), and Dmp1 (2.2-fold). Tgfb3 was expressed higher in the WT females compared to WT males, but no significant difference was found in either Tgfb1 or Tgfb2 expression levels between WT females and males. This suggests that the higher expression of bone formation genes may be to accommodate the rapid replacement of the perilacunar matrix with weaning. The upregulated and downregulated pathways in WT females compared to WT males are depicted in Figure 4.
 
-## Female and male KO osteocyte transcriptomes have fewer differences compared to WT female and male transcriptomes
+### Female and male KO osteocyte transcriptomes have fewer differences compared to WT female and male transcriptomes
 
 KO female and KO male osteocyte transcriptomes significantly differed in pathways facilitating ossification and bone mineralization, and extracellular structure and matrix organization (Figure 4B and F). In KO females, several collagen genes such as Col2a1, Col5a2, Col8a2, and Col11a1 were 2- to 4-fold greater compared to KO males. Bone formation genes including Alpl (2.5-fold), osteocalcin (Bglap, 2.7-fold), Postn (2.9-fold), and Wnt4 (2.4-fold) were also more highly expressed in KO females compared to KO males, however, the resorption genes including Acp5 and Ctsk were not significantly different between KO female and KO male osteocytes. Tgfb3 was expressed higher in the KO females compared to KO males, similar to the WTs.
 
 The transcriptomes of WT and KO male osteocytes differed significantly, with much lower expression of genes in pathways involving steroid, fatty acid, lipid, and cholesterol transport and metabolic processes in the KO males compared to WT males (significant genes listed in Supplementary file 3). A 2- to 4-fold downregulation of genes coding for solute carriers, aldehyde oxidase, and fatty acid binding proteins was observed in KO males, while Oscar and Mst1r are 2- to 3-fold higher in KO males compared to WT males. In contrast, a relatively small number of genes, 40, were differentially expressed between WT female and KO female osteocytes which reflects the lack of differences in bone morphology and bone mechanical properties (Figure 4D and F, Supplementary file 3).
 
-## With calcium deficiency, genes responsible for osteocytic osteolysis are lower in the female KO compared to the female WT osteocyte transcriptome
+### With calcium deficiency, genes responsible for osteocytic osteolysis are lower in the female KO compared to the female WT osteocyte transcriptome
 
 Calcium deficiency in WT female mice induced higher expression of osteoclast and resorption genes compared to WT females on a normal diet (Figure 5A and E). Acp5, Ctsk, Pth1r, and Mst1r were elevated 2- to 4-fold in the calcium-deficient WT females. Real-time PCR analysis of osteocytes also showed an increase in Tnsfs11, Acp5, and Ctsk gene expression levels in the calcium-deficient WT females compared to WT females on a normal diet. There was no difference in Sost expression (Figure 5—figure supplement 1D). Additionally, five different Mmps (Mmp13, Mmp15, Mmp2, Mmp16, and Mmp14) were upregulated 2- to 3.5-fold in the WT calcium-deficient females. These are genes thought to play a role in osteocytic osteolysis. Bone formation and remodeling genes including Bglap, Bglap2, Alpl, Wnt5a, and Wnt2b were upregulated 2- to 5-fold in the WT low-calcium diet group compared to WT female normal diet group as well. These genes may be increased to provide quick bone formation upon return to normal calcium demand.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig5-v1.jpg)
+
+**Figure 5.:** (A) Volcano plot showing the significantly regulated genes between WT female control (WT C) and WT female low-calcium diet-fed mice (WT lc) osteocyte transcriptome. (B) Volcano plot showing the significantly regulated genes between KO female control (KO C) and KO female low-calcium diet-fed mice (KO lc) osteocyte transcriptome. (C) Volcano plot showing the significantly regulated genes between WT female low-calcium diet-fed mice (WT lc) and KO female low-calcium diet-fed mice (KO lc) osteocyte transcriptome. (D) Heat map showing the differentially expressed genes (DEGs) among WT female control (WT C), WT female low-calcium diet-fed mice (WT lc), KO female control (KO C), and KO female low-calcium diet-fed mice (KO lc) osteocyte transcriptome. (E) Gene set enrichment analysis of gene ontology (GO) analysis of the significantly regulated genes between WT female control (WT C) and WT female low-calcium diet-fed mice (WT lc) osteocyte transcriptome, between KO female control (KO C) and KO female low-calcium diet-fed mice (KO lc) osteocyte transcriptome, and WT female low-calcium diet-fed mice (WT lc) and KO female low-calcium diet-fed mice (KO lc) osteocyte transcriptome. The figure shows the union of the top 10 GO terms of each analysis. If a term in the union, besides the top 10, is also significant (adjusted p-value less than 0.05 was used for GO analysis) in an analysis, it is also included in the figure. The latter group in the figure’s title is the reference group. n = 2–3/group. For DEG analysis, unadjusted p-value <0.01 was used.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92263/elife-92263-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Sanity check of data on the sample’s sex. (A) Boxplot of proportional of reads on chromosome Y. Male should have a higher value than female. (B) Boxplot of RPKM of Xist. Males should have very low expression of Xist. (C) Scatter plot of PC1 and PC2 from principal component analysis (PCA) of gene expression data. (D) Quantitative polymerase chain reaction (qPCR) analysis of Tnsfs11, Acp5, Sost, and Ctsk genes from osteocyte-enriched bone chips from female samples. n = 3-4/sample. Two-way analysis of variance (ANOVA) was performed for statistical analysis. Gene fold-change was normalized using β-2-microglobulin as the housekeeping gene. a = Significantly different from WT, b = Significantly different from KO, * = p<0.05. (E) qPCR analysis of Tnsfs11, Acp5, Sost, and Ctsk genes from osteocyte-enriched bone chips from male samples. n = 3-4/sample. Two-way ANOVA was performed for statistical analysis. Gene fold-change was normalized using β-2-microglobulin as the housekeeping gene. a = Significantly different from WT, b = Significantly different from KO, * = p<0.05.
 
 Calcium deficiency in KO female mice also induced increased expression of a number of osteoclast and resorption genes including Ctsk (2.8-fold), Mmp13 (3- fold), and Oscar (2.6-fold) in comparison to KO female osteocytes on a normal diet (Figure 5B and E). However, unlike the WT osteocytes, expression levels of Acp5 and Pth1r were not different in osteocytes from KO female mice on a normal diet or a low-calcium diet. Real-time PCR analysis also showed an increase in Ctsk gene expression level in the calcium-deficient KO females compared to KO females on a normal diet, with no significant difference in the expression levels of Tnfsf11, Acp5, and Sost genes (Figure 5—figure supplement 1D).
 
 Next, we compared KO female mice on a low-calcium diet to WT female mice on a low-calcium diet (Figure 5C and E, significantly DEGs listed in Supplementary file 4). Several bone resorption genes were lower by 2-fold in KO females, including Tnsfs11 and Mmp15. Real-time PCR analysis also showed a significantly lower expression of the Tnsfs11 gene in the calcium-deficient KO females compared to calcium-deficient WT females (Figure 5—figure supplement 1D). Additionally, bone formation genes including Alpl, Bglap, Wnt2b, Col1a1, Col1a2, and Postn were also approximately 2-fold lower in the KO low-calcium females compared to WT low-calcium females. This suggests that female KO osteocytes are less responsive to calcium deficiency than female WT osteocytes.
 
-## With calcium deficiency, genes responsible for bone resorption, bone formation, and lipid metabolism are differentially regulated in the osteocyte transcriptome in male KO mice compared to male WT mice
+### With calcium deficiency, genes responsible for bone resorption, bone formation, and lipid metabolism are differentially regulated in the osteocyte transcriptome in male KO mice compared to male WT mice
 
 Calcium deficiency in WT male mice caused a 2- to 7-fold increased expression of Tnsfs11, Acp5, Ctsk, Oscar, and Mst1r in their osteocyte transcriptome compared to WT males on a normal diet (Figure 6A and E). Real-time PCR validation also showed a similar increase in Tnsfs11, Acp5, and Ctsk gene expression levels in the calcium-deficient WT males compared to WT males on a normal diet (Figure 5—figure supplement 1E). Bone formation and remodeling genes including Postn, Col1a1, Col1a2, Bglap, and Wnt4 were also elevated 2- to 4-fold in the WT male low-calcium diet compared to the WT normal diet control group.
 
@@ -128,7 +240,7 @@ Similarly, osteocytes from KO males on a low-calcium diet had a 2- to 4-fold hig
 
 When KO males were compared to WT males on a low-calcium diet (Figure 6C and E, Supplementary file 4), there was a 2- to 3-fold higher expression of bone resorption genes including Oscar and Mst1r in the KO low-calcium diet males compared to WTs. Several collagen formation genes and ossification genes including Col3a1, Col8a2, Tnn, Aspn, and Igfbp6 were also significantly downregulated in the KO males on a low-calcium diet compared to WTs on a low-calcium diet. It is not clear whether these also play a role in the increased bone resorption observed with calcium deficiency in KO males. Real-time PCR analysis showed no significant difference in expression levels of Tnsfs11, Acp5, Sost, and Ctsk genes between calcium-deficient KO males and calcium-deficient WT males, reflecting the RNA sequencing data (Figure 5—figure supplement 1E). No significant difference was observed in expression levels of genes involved in the lipid catabolic process pathway or fatty acid metabolism pathways.
 
-## Male and female osteocytes respond differently to calcium deficiency in a genotype-specific manner
+### Male and female osteocytes respond differently to calcium deficiency in a genotype-specific manner
 
 In response to 2 weeks of calcium deficiency, WT female mice had higher expression of genes involved in extracellular matrix and structure organization as well as ossification compared to WT male mice with calcium deficiency. Calcium deficiency in WT female mice caused significantly increased expression of bone formation genes compared to WT males including several collagen genes such as Col2a1, Col6a3, Col4a2, as well as Postn, and Bglap2. This was accompanied by an increased expression of bone resorbing genes in WT females including several Car genes, Mmp13, Mmp16, Tnsfs11, and Mst1r in their osteocyte transcriptome compared to WT males on a low-calcium diet (Figure 7A, C, and D). This suggests that both bone formation and bone resorption are upregulated in WT females compared to WT males in response to calcium deficiency, and WT females undergo higher bone remodeling compared to WT males.
 
@@ -184,7 +296,7 @@ In summary, during normal development and on a regular diet, FNDC5/irisin deleti
 
 ## Methods
 
-## Animal experiments
+### Animal experiments
 
 All animal experiments were performed per procedures approved by the Institutional Animal Care and Use Committee (IACUC) of the Indiana University School of Medicine. Heterozygous C57Bl/6J FNDC5 KO mice were provided by Dr. Bruce Spiegelman at Harvard University and bred in our facility to obtain homozygous global FNDC5 KO and WT control mice. Genotype was determined using a PCR with primers targeting portions of exon 3 absent in KO (WT Forward: GCG GCT CGA GAG ATG AAG AA, WT Reverse: CAG CCC ACA ACA AGA AGT GC, KO Forward: GGA CTT CAA GTC CAA GGT CA, KO Reverse: CCT AAG CCC ACC CAA ATT AC). Mice were housed in a temperature-controlled (20–22°C) room on a 12 hr light/dark cycle with ad libitum food and water. Qualified veterinary staff and/or animal care technicians performed regular health check inspections.
 
@@ -192,11 +304,11 @@ For the lactation experiments, 4-month-old WT and FNDC5 global KO female mice we
 
 For the low-calcium diet experiments, 4- to 5-month-old male and female WT and FNDC5 global KO mice were fed either a control diet (0.6% calcium, Teklad, TD.97191) or a low-calcium diet (0.01% calcium, 0.4% phosphorus, Teklad TD.95027) for 2 weeks. Food was replaced every 2 days. Distilled water was used in place of tap water to control calcium intake. On the day of sacrifice, blood was collected under anesthesia, and mice were euthanized for sample collection, processing, and analysis (Qing et al., 2012; Jähn et al., 2017).
 
-## AAV8 injection
+### AAV8 injection
 
 AAV8-irisin and AAV8-GFP constructs were obtained from Dr. Bruce Spiegelman at Harvard University. AAV8 Mouse ORF 1–140 (containing the N-terminal signal peptide and irisin) plus a five-amino acid linker plus a C-terminal flag tag was cloned into the pENN.AAV.CB7.CI.pm20d1flag.WPRE.rBG vector (Addgene plasmid no. 132682). AAV8-GFP (pENN.AAV.CB7.CI.eGFP.WPRE.rBG), used as control, was obtained from Addgene (105542), and packaged at the UPenn Vector Core to a titer of 2.10×10 ¹³GC per mL. FNDC5 KO male mice were placed under anesthesia and injected into the tail vein with either AAV8-irisin or AAV8-GFP control (1×1010 GC per mouse) in 100 µL in PBS (Islam et al., 2021). One week after injection with either the control virus containing GFP or the virus coding for circulating irisin, the mice were placed on a low-calcium diet for 2 weeks before sacrifice.
 
-## In vivo and ex vivo muscle contractility and electrophysiology measurement
+### In vivo and ex vivo muscle contractility and electrophysiology measurement
 
 In vivo plantarflexion torque was assessed 1 day before sacrifice (Scientific Inc, Canada) as described in Pin et al., 2020. Briefly, the mouse was placed under anesthesia and the left hind foot was affixed to the force transducer aligned with the tibia at 90°. The tibial nerve was stimulated using monopolar electrodes (Natus Neurology, Middleton, WI, USA). Maximum twitch torque was established by using a 0.2 ms square wave pulse. Peak plantarflexion torque was measured by using a stimulation of 0.2 ms delivered at 100 Hz stimulation frequency.
 
@@ -204,64 +316,64 @@ In vivo electrophysiological functions were assessed 1 day before sacrifice with
 
 Ex vivo muscle contractility was measured in the extensor digitorum longus (EDL) muscle as described in Huot et al., 2021. EDL was collected from the mouse and mounted between a force transducer, and then submerged in a stimulation bath. The muscles were forced to contract, and data were collected using Dynamic Muscle Control/Data Acquisition (DMC) and Dynamic Muscle Control Data Analysis (DMA) programs (Aurora Scientific). The EDLs were weighed for normalization purposes.
 
-## Body composition assessment by DXA
+### Body composition assessment by DXA
 
 The right femurs from mice were dissected and cleaned of soft tissue, fixed in 4% paraformaldehyde (PFA) for 48 hr, and then transferred to 70% ethanol. Ex vivo dual-energy X-ray absorptiometry (DXA) measurements were obtained using a faxitron (Faxitron X-ray Corp, Wheeling, IL, USA) to measure BMD and BMC (Essex et al., 2020).
 
-## Bone morphometry analysis by µCT
+### Bone morphometry analysis by µCT
 
 Right femurs were analyzed using a Skyscan 1176 micro-computed tomography (µCT) as described previously (Pin et al., 2020). Briefly, specimens were scanned at 55 kV, 145 µA, high resolution, 10.5 mm voxel, and 200 ms integration time. For cortical parameters, 3D images from a 1 mm region of interest of the mid-diaphysis were used to calculate total cortical bone area fraction (Ct. B. Ar/T. Ar%), cortical bone thickness (Ct. Th), marrow cavity area, periosteal perimeter (Ps. Pm), and endosteal perimeter (Es. Pm) according to ASBMR guidelines (Bouxsein et al., 2010). For trabecular parameters, 3D images reconstructed within the range of 0.5 mm from the most proximal metaphysis of tibiae were analyzed. Trabecular morphometry was performed by excluding the cortical bone from the endocortical borders using hand-drawn contours followed by thresholding and characterized by BV/TV, Tb. N, Tb. Th, Tb. Sp, and connectivity density (Kitase et al., 2018).
 
-## TRAP staining
+### TRAP staining
 
 Tibiae were stripped of soft tissue, fixed in 4% PFA for 48 hr, decalcified in 10% EDTA for 3–4 weeks, and processed into paraffin as described previously followed by sectioning (5 µm) and staining for TRAP activity using the standard naphthol AS-BI phosphate post coupling method and counterstained with toluidine blue (Pin et al., 2021). Briefly, after equilibration in 0.2 M sodium acetate, 50 mM sodium tartrate, pH 5.0, for 20 min at room temperature (RT), sections were incubated at 37°C in the same buffer containing 0.5 mg/mL naphthol AS-MX phosphate (Sigma Chem. Co., St. Louis, MO, USA) and 1.1 mg/mL Fast Red Violet LB salt (Sigma) and counterstained in toluidine blue. Images were taken at 5× and 40× using an Olympus BX51 fluorescent microscope and Olympus cellSense Entry 1.2(Build 7533) imaging software. TRAP-positive osteocytes and osteoclasts 1.5 mm distal from the growth plate were quantified using Osteomeasure software (OsteoMetrics Inc) in a blind fashion. Toluidine blue-stained osteoblasts from the same sections were quantified 1.5 mm distal from the growth plate using the same software.
 
-## Osteocyte lacunar area measurement by BSEM
+### Osteocyte lacunar area measurement by BSEM
 
 Femurs were stripped of soft tissue and fixed in 4% PFA for 48 hr before proceeding to dehydration and embedding steps as previously described (Qing et al., 2012). Briefly, femurs were dehydrated in graded ethanol and placed into acetone. Subsequently, the femurs were immersed in infiltration solution made of 85% destabilized methyl methacrylate (MMA, Sigma), 15% dibutyl phthalate (Sigma), 1% PEG400 (Sigma), and 0.7% benzoyl peroxide (Polysciences, Inc, Warrington, PA, USA)/acetone until infiltration was complete. The femurs were then placed on pre-polymerized base layers, covered with freshly catalyzed MMA embedding solution (for 100 mL, 85 mL MMA, 14 mL dibutyl phthalate, 1 mL PEG400, 0.33 µL DMT, and 0.8 g BPO), and incubated under vacuum until the MMA was polymerized. The polymerized blocks were trimmed, sequentially polished to a completely smooth surface, and coated with gold using a sputter coater (Desk V, Denton Vacuum, NJ, USA). Then backscatter scanning electron microscopy (BSEM) (JEOL: JSM-7800F) was performed to image the osteocyte lacunae on the sectioned bone surface at ×450 magnification starting 2 mm distal from the growth plate. Six fields from the endosteal and periosteal sides of the cortical bone were taken as described previously (Qing and Bonewald, 2009). Using ImageJ (NIH), the images were thresholded for background removal, binarized, and the lacunar area from each sample quantitated.
 
-## Mechanical testing using three-point bending
+### Mechanical testing using three-point bending
 
 Mechanical testing was performed essentially as described in Melville et al., 2015. Briefly, the left femurs were stripped of soft tissue, wrapped in PBS-soaked gauze, and stored at –20°C until use. Frozen femurs were brought to RT and mounted across the lower supports (8 mm span) of a three-point bending platen on a TestResources R100 small force testing machine. The samples were tested in monotonic bending to failure using a crosshead speed of 0.05 mm/s. Parameters related to whole bone strength were measured from force/displacement curves.
 
-## Serum RANKL analysis
+### Serum RANKL analysis
 
 The levels of RANKL were measured in mouse centrifuged serum by using an ELISA kit (Bio-Techne Corporation, Minneapolis, MN, USA), according to the manufacturer’s protocol.
 
-## Serum PTH analysis
+### Serum PTH analysis
 
 Serum was obtained from terminal cardiac puncture and serum PTH levels were determined using the MicroVue Bone Mouse PTH 1-84 ELISA assay (Quidel Corp., San Diego, CA, USA) according to the manufacturer’s protocol.
 
-## Calcium measurement
+### Calcium measurement
 
 Plasma calcium levels were determined using the Pointe Scientific calcium Reagent kit (Pointe Scientific, Michigan, USA). Briefly, diluted serum (1:4 in dH2O) was incubated with a working calcium color reagent for 1 min and the absorbance read at 575 nm using a spectrophotometer (BioTek Synergy HTX).
 
-## Sample collection and processing for RNA sequencing
+### Sample collection and processing for RNA sequencing
 
 Bulk RNA sequencing was performed on osteocytes from the control and low-calcium diet, male and female, WT and KO mice. Osteocyte RNA was extracted from tibia and femur diaphyses after sequential digestion to remove surface cells including osteoclasts, osteoblasts, and lining cells as previously described (Qing et al., 2012; Pin et al., 2020). Briefly, soft tissue was removed from the bones, the epiphyses were cut off and bone marrow was removed by flushing with PBS. The remaining midshafts were incubated at 37°C with 0.2% type 1 collagenase (Sigma) for 30 min, followed by chelation/digestion in 0.53 mM EDTA/0.05% trypsin (Cellgro, Mediatech, Inc, Manassas, VA, USA) at 37°C for 30 min followed by a second collagenase digestion. After each step, the bone chips were rinsed with PBS and after the final step, flash-frozen in liquid nitrogen, and pulverized in liquid nitrogen, with Trizol reagent (QIAGEN, Carlsbad, CA, USA) added to the resulting bone powder. Total RNA was isolated with an RNA purification kit (QIAGEN miRNeasy mini kit) and DNase treatment to remove DNA contamination.
 
-## Library preparation and RNA sequencing
+### Library preparation and RNA sequencing
 
 Total RNA samples were first evaluated for their quantity and quality using Agilent TapeStation. All the samples used for the sequencing had a RIN of at least 5. 100 ng of total RNA were used for library preparation with the KAPA total RNA Hyperprep Kit (KK8581) (Roche). Each resulting uniquely dual-indexed library was quantified and quality accessed by Qubit and Agilent TapeStation. Multiple libraries were pooled in equal molarity. The pooled libraries were sequenced on an Illumina NovaSeq 6000 sequencer with the v1.5 reagent kit. 100 bp paired-end reads were generated.
 
-## RNA sequencing data analysis
+### RNA sequencing data analysis
 
 The sequencing reads were first quality-checked using FastQC (v0.11.5, Babraham Bioinformatics, Cambridge, UK) for quality control. The sequence data were then mapped to the mouse reference genome mm10 using the RNA sequencing aligner STAR (v2.7.10a) (Dobin et al., 2013) with the following parameter: ‘--outSAMmapqUnique60’. To evaluate the quality of the RNA sequencing data, the number of reads that fell into different annotated regions (exonic, intronic, splicing junction, intergenic, promoter, UTR, etc.) of the reference genome was assessed using bamutils (Breese and Liu, 2013). Uniquely mapped reads were used to quantify the gene-level expression employing featureCounts (subread v2.0.3) (Liao et al., 2014) with the following parameters: ‘-s 2 -Q 10’.
 
-## Quality control of samples
+### Quality control of samples
 
 During data quality control, one of the KO female control samples (sample 23) was found to have a similar proportion of reads on chromosome Y as in male mice and a very low expression of the gene Xist, typically highly expressed in females (Figure 5—figure supplement 1A and B), therefore this sample was excluded from the analysis.
 
 The WT female low-calcium diet samples (samples 16, 17, and 18) had low mapping percentages of 37%, 32%, and 61%, respectively. This may be due to bacterial contamination. The two possible methods to process these data are to filter all the possible contaminated reads before alignment or align the reads without filtering. However, filtering the possible contaminated reads before alignment may result in removing some reads from the mouse genome which is similar to the bacterial genome (causing lower gene expression). In contrast, using data without filtering may result in some genes having higher expression levels due to reads from the bacterial genome which are aligned to mice genes. We decided to perform a principal component analysis using data without filtering and found that the samples clearly clustered into four groups: control male mice, control female mice, low-calcium diet male mice, and low-calcium diet female mice (Figure 5—figure supplement 1C). Within each group, the separation of WT and KO mice is also clear. Due to contamination, samples 16 and 18 were slightly far apart from the others. However, contamination should not have a large global influence on the data as samples 16, 17, and 18 are close to the non-contaminated samples 5 and 6, also in the low-calcium diet female group. Additionally, we validated the data using quantitative polymerase chain reaction (qPCR) with selected genes.
 
-## DEG analysis
+### DEG analysis
 
 The read counts matrix was imported to Team RC, 2022, and analyzed with DEseq2 (Love et al., 2014). Within DESeq2, read counts data were normalized with median of ratios, and DEGs were detected after independent filtering. In DEG analysis, we first detected DEGs between different groups. Significant genes were defined as genes with an unadjusted p-value less than 0.01 and absolute log2 fold-change larger than 1. Gene set enrichment analysis was applied on gene sets from Gene Ontology Consortium, 2021, using R package clusterProfiler (Wu et al., 2021). p-Value of less than 0.05 was considered as significant for the gene ontology analysis. Several RNA sequencing and pathway figures were prepared with R packages ggplot2 (Wickham, 2016) and ComplexHeatmap (Gu, 2022). The data was deposited in NCBI GEO database (accession number GSE242445).
 
-## Real-time qPCR
+### Real-time qPCR
 
 Total RNA was reverse-transcribed to cDNA using the Verso cDNA Kit (Thermo Fisher Scientific). Transcript levels were measured by real-time PCR (Light Cycler 96; Roche), taking advantage of the TaqMan and SYBR Gene Expression Assay System (Thermo Fisher Scientific). Expression levels for RANKL (Tnfsf11, Forward primer: CCG AGC TGG TGA AGA AAT TAG, Reverse: CCC AAA GTA CGT CGC ATC TTG), Cathepsin K (Ctsk, Primer Bank ID: Mm.PT.58.9655974, IDT), TRAP (Acp5, Mm.PT.58.5755766, IDT), and sclerostin (Sost, Mm00470479_m1, Applied Biosystems) were quantitated. Gene expression was normalized to β-2-microglobulin (B2m, Forward: ACA GTT CCA CCC GCC TCA CAT T, Reverse: TAG AAA GAC CAG TCC TTG CTG AAG) levels using the standard 2-ΔΔCt method.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as individual data points. The statistical analysis was done by Prism 8.2 (GraphPad Software, San Diego, CA, USA) and R 4.3.0. When comparing three or more groups with two variables, a two-way analysis of variance (ANOVA) was used. To compare between two groups, the unpaired, two-tailed Student’s t-test was used. Differences were considered significant at *p<0.05, **p<0.01, and ***p<0.001.

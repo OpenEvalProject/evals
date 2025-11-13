@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Asymptomatic Plasmodium falciparum infections are common in sub-Saharan Africa, but their effect on subsequent symptomaticity is incompletely understood. In a 29-month cohort of 268 people in Western Kenya, we investigated the association between asymptomatic P. falciparum and subsequent symptomatic malaria with frailty Cox models. Compared to being uninfected, asymptomatic infections were associated with an increased 1 month likelihood of symptomatic malaria (adjusted hazard ratio [aHR]: 2.61, 95% CI: 2.05 to 3.33), and this association was modified by sex, with females (aHR: 3.71, 95% CI: 2.62 to 5.24) at higher risk for symptomaticity than males (aHR: 1.76, 95% CI: 1.24 to 2.50). This increased symptomatic malaria risk was observed for asymptomatic infections of all densities and in people of all ages. Long-term risk was attenuated but still present in children under age 5 (29-month aHR: 1.38, 95% CI: 1.05 to 1.81). In this high-transmission setting, asymptomatic P. falciparum can be quickly followed by symptoms and may be targeted to reduce the incidence of symptomatic illness. This work was supported by the National Institute of Allergy and Infectious Diseases (R21AI126024 to WPO, R01AI146849 to WPO and SMT).
+Background:Asymptomatic Plasmodium falciparum infections are common in sub-Saharan Africa, but their effect on subsequent symptomaticity is incompletely understood.Methods:In a 29-month cohort of 268 people in Western Kenya, we investigated the association between asymptomatic P. falciparum and subsequent symptomatic malaria with frailty Cox models.Results:Compared to being uninfected, asymptomatic infections were associated with an increased 1 month likelihood of symptomatic malaria (adjusted hazard ratio [aHR]: 2.61, 95% CI: 2.05 to 3.33), and this association was modified by sex, with females (aHR: 3.71, 95% CI: 2.62 to 5.24) at higher risk for symptomaticity than males (aHR: 1.76, 95% CI: 1.24 to 2.50). This increased symptomatic malaria risk was observed for asymptomatic infections of all densities and in people of all ages. Long-term risk was attenuated but still present in children under age 5 (29-month aHR: 1.38, 95% CI: 1.05 to 1.81).Conclusions:In this high-transmission setting, asymptomatic P. falciparum can be quickly followed by symptoms and may be targeted to reduce the incidence of symptomatic illness.Funding:This work was supported by the National Institute of Allergy and Infectious Diseases (R21AI126024 to WPO, R01AI146849 to WPO and SMT).
 
 ## Introduction
 
@@ -38,7 +38,7 @@ We investigated the natural history of asymptomatic P. falciparum infections in 
 
 ## Materials and methods
 
-## Study population, sample collection, and sample processing
+### Study population, sample collection, and sample processing
 
 From June 2017 to November 2019, we followed a cohort of 268 people aged 1 to 85 years living in 38 households in a rural setting in Webuye, Western Kenya (O'Meara et al., 2020). The cohort was assembled using radial sampling of 12 households per village for three villages with high malaria transmission. The first household in each village was randomly selected. Two households moved during follow-up and were replaced. For each person, asymptomatic P. falciparum infections were detected monthly by active surveillance through collecting questionnaires and dried blood spot (DBS) samples for post hoc molecular parasite detection. Symptomatic P. falciparum infections were detected using passive surveillance by testing people with self-reported symptoms with a malaria RDT (Carestart Malaria HRP2 Pf from Accessbio) and collecting a DBS (AccessBio, 2019). People with positive RDT results were treated with Artemether-Lumefantrine (AL).
 
@@ -46,7 +46,7 @@ DBS were processed to detect P. falciparum infections by extracting genomic DNA 
 
 Parasite densities were estimated using standard curves generated from amplifications on each plate from templates of known parasite density. To generate these templates, parasite strain 3D7 was cultivated in vitro using standard conditions and the parasite density was estimated initially by light microscopy of Giemsa-stained slides and then by hemocytometer. For the latter, after averaging estimates of parasite density from five to six chambers, the non-diluted sample was diluted with fresh whole blood to obtain a 2000 p/μL stock solution. This was then serially diluted with whole blood to obtain 1000, 200, 100, 20, 10, 2, 1, 0.2, and 0.1 p/μL samples. Each of these was then prepared as a DBS of 30 μL volume, and from these gDNA was extracted as above for clinical samples. The result was a series of gDNA samples from mocked templates of known concentrations of 3D7 parasite that were processed identically to the clinical samples.
 
-## Exposure and outcome ascertainment
+### Exposure and outcome ascertainment
 
 The main exposure was an asymptomatic P. falciparum infection during monthly active case detection assessments, defined as P. falciparum-positive by qPCR in a person lacking symptoms. People who were P. falciparum-negative by qPCR during monthly visits were considered uninfected. Participant follow-up was imputed for the first consecutive missed monthly visit during each follow-up period by carrying forward the previous month’s value as the exposure status of the missed monthly visit (Nguyen et al., 2018). If a person missed two or more consecutive monthly visits, they were considered lost to follow-up and censored at the time of the imputed monthly visit. A sensitivity analysis was conducted for imputation using a dataset without imputation for missed monthly visits. Participants were allowed to enter and leave the study throughout the study period. At the end of the study period, all participants were censored.
 
@@ -54,7 +54,7 @@ The main outcome assessed was days to symptomatic malaria. We defined symptomati
 
 Some participants were classified as symptomatically infected at a monthly visit through passive detection of symptoms; this occurred if a study team member conducting a monthly visit was approached by a participant reporting malaria-like symptoms. The study team member would then perform an RDT and record information as for a passively detected sick visit. Symptoms were not routinely elicited during interviews on monthly visits. If the person met the case definition for symptomatic malaria, they were confirmed as having a symptomatic visit on that day and removed from follow-up until 14 days post-receipt of antimalarials or the next monthly follow-up visit. If that person did not meet our case definition for symptomatic malaria, then they were removed from follow-up for that month and re-entered for follow-up in the following month.
 
-## Hazard of symptomatic malaria analysis
+### Hazard of symptomatic malaria analysis
 
 Across all participants, we estimated the hazard of subsequent symptomatic malaria when infected with asymptomatic malaria compared to being uninfected at monthly visits. The hazard of symptomatic malaria was calculated for multiple follow-up periods: (i) 1 month, (ii) 3 months, (iii) 6 months, (iv) 12 months, and (v) 29 months (entire study period). For each follow-up period exceeding 1 month, exposure status was ascertained at every monthly follow-up visit and allowed to vary each month using a method proposed by Hernán et al., 2005. This method treats each monthly follow-up visit as a new study entry, recalculating the time to symptomatic malaria or censoring using each monthly follow-up visit date as the origin and attributing the exposure in that month as the exposure status from that month up until the event or censoring (Figure 1). This exposure coding method was chosen due to its ability to capture the exposure at multiple time points with less risk of misclassification or left truncation bias compared to alternative time-varying coding approaches (Supplementary file 1).
 
@@ -62,27 +62,31 @@ Across all participants, we estimated the hazard of subsequent symptomatic malar
 
 **Figure 1.:** The method treated each monthly follow-up visit as a new study entry for the participant (denoted by circles), recalculating the time to symptomatic malaria (denoted by X) using the monthly follow-up visit date as the origin. The exposure status for each monthly follow-up visit became the exposure status for the follow-up period (denoted by the horizontal line). The follow-up period ended if the participant had a symptomatic infection (X) or was censored due to the study ending or becoming lost to follow-up (denoted by squares). Illustrated here is one hypothetical participant’s follow-up during 29 months, during which they contributed follow-up periods after being uninfected (green lines) and after having asymptomatic infections (orange lines), and suffered one episode of symptomatic malaria (denoted by X), before being censored at the close of follow-up (denoted by squares). As a result, each participant contributes multiple entries to each model equal to the number of exposure assessments, and models include a random effect at the level of the participant to account for repeated observations.
 
-## Statistical modeling
+### Statistical modeling
 
 We first estimated the time to symptomatic malaria across the full 29 months using Kaplan-Meier curves and the log-rank test. We compared differences in median time to symptomatic malaria across select covariates using the Wilcoxon rank sum test with continuity correction for dichotomous variables or the Kruskal-Wallis test for polytomous variables. The Bonferroni correction was applied to all table p-values to account for repeated measures during the 29 months of follow-up.
 
-In order to account for anticipated confounders of the relationship between asymptomatic infection and symptomatic malaria, we next computed a multivariate frailty Cox proportional hazards model (Equation 1).(1)h1(t)ih0(t)i=exp(αi+β1Aymptomaticinfectionim+β2Age5to15i+β3Ageover15i+β4Femalei+β5Regularbednetusagei+β6village:Maruti+β7village:sitabicha+ϵi)
+In order to account for anticipated confounders of the relationship between asymptomatic infection and symptomatic malaria, we next computed a multivariate frailty Cox proportional hazards model (Equation 1).
 
-The model controlled for the following confounders as determined by a directed acyclic graph (Figure 3—figure supplement 1): age (<5 years, 5 to 15 years, >15 years), sex, and regular bed net usage (averages > 5 nights a week sleeping under a bed net – yes, no). To account for differences in malaria prevalence across the three villages, we also included a covariate in the model to represent each village. We allowed the main exposure to vary each month based on the monthly follow-up visit infection status (m), and included a random intercept at the participant level (αi) to account for potential correlated intra-individual outcomes. A log-normal distribution was used for the random effect. ϵi represented the model’s error term. Additional models incorporated either an additional random effect at the household level or a robust error estimator at the participant level. The proportional hazards assumption was assessed using Kaplan-Meier curves and Schoenfeld residual plots.
+$$
+\frac{h_{1}(t)_{i}}{h_{0}(t)_{i}}=exp(\alpha_{i}+\beta_{1}Aymptomaticinfection_{im}+\beta_{2}Age5to15_{i}+\beta_{3}Ageover15_{i}+\beta_{4}Female_{i}+\beta_{5}Regularbednetusage_{i}+\beta_{6}village:Maruti+\beta_{7}village:sitabicha+ϵ_{i})
+$$
+
+The model controlled for the following confounders as determined by a directed acyclic graph (Figure 3—figure supplement 1): age (<5 years, 5 to 15 years, >15 years), sex, and regular bed net usage (averages > 5 nights a week sleeping under a bed net – yes, no). To account for differences in malaria prevalence across the three villages, we also included a covariate in the model to represent each village. We allowed the main exposure to vary each month based on the monthly follow-up visit infection status ($m$), and included a random intercept at the participant level ($\alpha_{i}$) to account for potential correlated intra-individual outcomes. A log-normal distribution was used for the random effect. $ϵ_{i}$ represented the model’s error term. Additional models incorporated either an additional random effect at the household level or a robust error estimator at the participant level. The proportional hazards assumption was assessed using Kaplan-Meier curves and Schoenfeld residual plots.
 
 We tested for effect measure modification by age and sex by stratifying the multivariate model by age category (<5 years, 5 to 15 years, >15 years) or sex, computing hazard ratios and 95% confidence intervals (CI) of the main exposure, and comparing a Cox proportional hazards model with an interaction term between the potential modifier and main exposure to Equation 1 using the log-likelihood ratio test.
 
 We computed an additional time-to-event model using a subset of events. Because asymptomatic infections could represent incipiently symptomatic (i.e. ‘pre-symptomatic’) infections, we excluded all monthly follow-up visits occurring within 14 days prior to a symptomatic infection, reducing the possibility that pre-symptomatic infections could be misclassified as asymptomatic. The time frame for identifying potentially pre-symptomatic infections was chosen for consistency with previous work studying time to symptomatic malaria (Buchwald et al., 2019). The analysis was conducted using Equation 1 for the 1-, 3-, 6-, 12-, and 29-month follow-up periods. All statistical analyses were performed using R version 4.0.2 (R Development Core Team, 2020) with the packages tidyverse (Wickham et al., 2019), survminer (Kassambara et al., 2020), survival (Therneau and Grambsch, 2000), coxme (Therneau, 2020), lme4 (Bates et al., 2015), and ggalluvial (Brunson, 2020). Code is available on Github: https://github.com/duke-malaria-collaboratory/time_to_symptomatic_malaria, (Sumner, 2021a; copy archived at swh:1:rev:95b7f8268baa6007af84cc7ee0f110f2a3629631, Sumner, 2021b). Statistical significance was assessed at an α level of 0.05.
 
-## Detectability of asymptomatic infections
+### Detectability of asymptomatic infections
 
 Asymptomatic infections defined as above were further classified as meeting a series of thresholds of parasite densities: any density, >1, >10, >100, >500, and >1000 parasites/μL. These classifications were assigned in a non-mutually exclusive fashion to asymptomatic infections, and then the 1-month likelihoods of symptomatic malaria relative to uninfected people were modeled separately using the Cox proportional hazards model in Equation 1. As an additional analysis, we repeated this process for each parasite density threshold stratified by participant age (<5 years, 5 to 15 years, >15 years).
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 We computed sensitivity analyses to account for potential misclassification of the outcome of symptomatic malaria in the main models over 1- and 29-month intervals. A ‘permissive’ case definition defined a symptomatic infection as one where a participant had at least one symptom consistent with malaria during a sick visit and was P. falciparum-positive by real-time PCR (qPCR). A ‘stringent’ case definition defined a symptomatic infection as one where a participant had a self-reported fever during a sick visit and was P. falciparum-positive by both RDT and qPCR. Additional sensitivity analyses were computed to investigate the separate effects of additional covariates by incorporating into the frailty Cox proportional hazards model in Equation 1, a new term for the covariate of interest. For seasonality, we classified monthly visits that occurred any time from May to October as the high-transmission season and from November to April as the low-transmission season, based on the region’s rainy seasons. For the number of prior infections, we included in the model as a covariate the number of prior infections as a continuous number. For prior antimalarial treatment, we included a variable coded dichotomously as having received study-prescribed antimalarials up until that monthly visit or not; a person was coded as having not received study-prescribed antimalarials up until their first symptomatic infection, but afterward were coded as receiving treatment from that point forward in follow-up.
 
-## Ethical review
+### Ethical review
 
 The study was approved by institutional review boards of Moi University (2017/36), Duke University (Pro00082000), and the University of North Carolina at Chapel Hill (19-1273). All participants or guardians provided written informed consent, and those over age 8 years provided additional assent.
 
@@ -94,21 +98,470 @@ For 29 months, we followed 268 participants from three villages in Western Kenya
 
 **Figure 2.:** (A) The proportion of participants who had either an asymptomatic infection (orange) or were uninfected (green) at each monthly visit is indicated by the bars. The ribbons connecting the bars illustrate the proportion of participants who moved exposure status from month to month. Orange ribbons indicate the proportion of participants with asymptomatic infections and green the proportion that were uninfected. (B) A Kaplan-Meier survival curve of symptomatic events across the follow-up period stratified by asymptomatic malaria exposure is displayed. Each exposure-outcome pair depicted in Figure 1 is plotted, and therefore each study participant is registered in the curve multiple times, equal to the number of exposure classifications.
 
-## Short-term effect of asymptomatic malaria exposure
+**Table 1.**
+ Covariate distribution across symptomatic malaria events in 29 months of follow-up.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total person-months† (N, %)</th>
+      <th>Person-months ending in symptomatic infections‡ (N, %)</th>
+      <th>Median time to symptoms for entire study (days, IQR)</th>
+      <th>p-Value comparing time to symptoms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main exposure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001§</td>
+    </tr>
+    <tr>
+      <td>No infection</td>
+      <td>3537 (65.8)</td>
+      <td>1580 (65.7)</td>
+      <td>230 (98, 402)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Asymptomatic infection</td>
+      <td>1842 (34.2)</td>
+      <td>826 (34.3)</td>
+      <td>173 (49, 399)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.015¶</td>
+    </tr>
+    <tr>
+      <td>&lt;5 years</td>
+      <td>812 (15.1)</td>
+      <td>329 (13.7)</td>
+      <td>226 (82, 435)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>5 to 15 years</td>
+      <td>2279 (42.4)</td>
+      <td>1319 (54.8)</td>
+      <td>199 (70, 379)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>&gt;15 years</td>
+      <td>2288 (42.5)</td>
+      <td>758 (31.5)</td>
+      <td>244 (97, 426)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.779§</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>2360 (43.9)</td>
+      <td>1190 (49.5)</td>
+      <td>229 (86, 420)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>3019 (56.1)</td>
+      <td>1216 (50.5)</td>
+      <td>202 (76, 384)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Regular bed net usage*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.000§</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>1425 (26.5)</td>
+      <td>730 (30.3)</td>
+      <td>210 (82, 386)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>3954 (73.5)</td>
+      <td>1676 (69.7)</td>
+      <td>217 (80, 403)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001¶</td>
+    </tr>
+    <tr>
+      <td>Kinesamo</td>
+      <td>1854 (34.5)</td>
+      <td>876 (36.4)</td>
+      <td>233 (89, 418)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Maruti</td>
+      <td>1681 (31.3)</td>
+      <td>745 (31.0)</td>
+      <td>174 (64, 350)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Sitabicha</td>
+      <td>1844 (34.3)</td>
+      <td>785 (32.6)</td>
+      <td>231 (90, 421)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: IQR, interquartile range.*Regular bed net usage was a person averaging > 5 nights a week sleeping under a bed net.†Total person-months indicates the total number of monthly follow-up visits ending in a symptomatic infection or censoring for full 29 months of follow-up.‡Symptomatic infections were defined using the primary case definition where a participant was P. falciparum-positive by both RDT and qPCR as well as had at least one symptom consistent with malaria during a sick visit.§Wilcoxon rank sum test with continuity correction and Bonferroni correction for repeated measures.¶ Kruskal-Wallis test with Bonferroni correction for repeated measures.Significant estimates are bolded._
+
+### Short-term effect of asymptomatic malaria exposure
 
 In a univariate frailty Cox proportional hazards model, compared to uninfected people, the 1-month crude hazard ratio of symptomatic malaria for participants with asymptomatic infections was 2.69 (95% CI: 2.12 to 3.43). This association was similar in a model adjusted for covariates (adjusted HR [aHR]: 2.61, 95% CI: 2.05 to 3.33) (Table 2, Figure 3A) as well as when using alternative modeling approaches, alternate outcome case definitions, and in sensitivity analyses. This relationship between asymptomatic malaria and subsequent symptomatic illness was not modified by age (p-value = 0.447 by log-likelihood ratio test), because asymptomatic infections were associated with significantly increased likelihoods of subsequent symptomatic malaria in all age categories: <5 years (aHR: 3.77, 95% CI: 2.02 to 7.04), 5 to 15 years (aHR: 2.45, 95% CI: 1.79 to 3.35), and >15 years (aHR: 2.55, 95% CI: 1.57 to 4.15) (Table 3). In contrast, sex did modify this relationship (p-value = 0.006 by log-likelihood ratio test) (Table 3), whereby the risk of symptomatic malaria following asymptomatic infection was lower for males (aHR: 1.76, 95% CI: 1.24 to 2.50) compared to females (aHR: 3.71, 95% CI: 2.62 to 5.24) (Figure 3—figure supplement 3). We observed similar 1-month elevated risks of malaria in asymptomatically infected people when using both the ‘permissive’ (aHR 1.97, 95% CI: 1.63 to 2.40) and the ‘stringent’ (aHR 2.76, 95% CI: 2.11 to 3.62) alternate case definitions for symptomatic malaria (Figure 3—figure supplement 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig3-v2.jpg)
+
+**Figure 3.:** (A) Frailty Cox proportional hazards model results comparing having asymptomatic malaria infections versus being uninfected over time and the 1-month hazard of symptomatic malaria. The main model used all eligible participants while the pre-symptomatic model removed monthly follow-up visits that occurred within 14 days prior to a symptomatic malaria infection. Models controlled for covariates participant age, sex, bed net usage, and village. (B) Main model results using primary outcome coding of symptomatic malaria were computed using differing follow-up periods ranging from 1 to 29 months and controlled for covariates participant age, sex, bed net usage, and village.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The shaded gray boxes represent the main exposure and main outcome. The boxes outlined with dotted lines represent potential effect measure modifiers (sex and age).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The age of each participant is shown on the X-axis and number of participants that were each age (by years) is shown on the Y-axis.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** The main model controls for covariates participant age, sex, bed net usage, and village. The age-stratified model controls for covariates sex, bed net usage, and village. The sex-stratified model controls for participant age, bed net usage, and village. Statistically significant adjusted hazard ratios are bolded.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The main model controls for covariates participant age, sex, bed net usage, and village. The age-stratified model controls for covariates sex, bed net usage, and village. The sex-stratified model controls for participant age, bed net usage, and village. Statistically significant adjusted hazard ratios are bolded.
+
+**Table 2.**
+ Predicted hazard of symptomatic malaria across follow-up periods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1-Month aHR (95% CI)</th>
+      <th>3-Month aHR (95% CI)</th>
+      <th>6-Month aHR (95% CI)</th>
+      <th>12-Month aHR (95% CI)</th>
+      <th>29-Month aHR (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main exposure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No infection</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+    </tr>
+    <tr>
+      <td>Asymptomatic infection</td>
+      <td>2.61 (2.05, 3.33)</td>
+      <td>1.64 (1.40, 1.94)</td>
+      <td>1.38 (1.20, 1.58)</td>
+      <td>1.12 (1.00, 1.25)</td>
+      <td>1.11 (1.01, 1.22)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;5 years</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+    </tr>
+    <tr>
+      <td>5 to 15 years</td>
+      <td>1.37 (0.90, 2.08)</td>
+      <td>1.61 (1.00, 2.61)</td>
+      <td>1.99 (1.07, 3.71)</td>
+      <td>2.37 (0.97, 5.77)</td>
+      <td>2.52 (1.26, 5.01)</td>
+    </tr>
+    <tr>
+      <td>&gt;15 years</td>
+      <td>0.56 (0.36, 0.88)</td>
+      <td>0.74 (0.46, 1.21)</td>
+      <td>0.83 (0.44, 1.53)</td>
+      <td>0.88 (0.37, 2.08)</td>
+      <td>0.97 (0.51, 1.84)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>0.93 (0.70, 1.24)</td>
+      <td>0.84 (0.61, 1.16)</td>
+      <td>0.80 (0.53, 1.20)</td>
+      <td>0.68 (0.38, 1.21)</td>
+      <td>0.63 (0.40, 0.99)</td>
+    </tr>
+    <tr>
+      <td>Regular bed net usage*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>1.00 (0.70, 1.43)</td>
+      <td>0.81 (0.55, 1.20)</td>
+      <td>0.70 (0.43, 1.16)</td>
+      <td>0.59 (0.29, 1.21)</td>
+      <td>0.52 (0.30, 0.89)</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kinesamo</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>Ref</td>
+    </tr>
+    <tr>
+      <td>Maruti</td>
+      <td>1.08 (0.77, 1.52)</td>
+      <td>1.11 (0.75, 1.64)</td>
+      <td>1.14 (0.69, 1.88)</td>
+      <td>1.13 (0.56, 2.31)</td>
+      <td>1.09 (0.64, 1.85)</td>
+    </tr>
+    <tr>
+      <td>Sitabicha</td>
+      <td>0.72 (0.49, 1.05)</td>
+      <td>0.80 (0.53, 1.21)</td>
+      <td>0.76 (0.45, 1.29)</td>
+      <td>0.73 (0.35, 1.51)</td>
+      <td>0.70 (0.40, 1.23)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: CI, confidence interval; aHR, adjusted hazard ratio; Ref, reference.*Regular bed net usage was defined as a person averaging > 5 nights a week sleeping under a bed net.Significant estimates are bolded._
+
+**Table 3.**
+ Age- and sex-stratified adjusted hazard ratios of time to symptomatic malaria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Comparison</th>
+      <th colspan="3">Age aHR (95% CI)</th>
+      <th></th>
+      <th colspan="2">Sex aHR (95% CI)</th>
+    </tr>
+    <tr>
+      <th>&lt;5 years</th>
+      <th>5 to 15 years</th>
+      <th>&gt;15 years</th>
+      <th></th>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1-Month main model</td>
+      <td>3.77 (2.02,7.04)</td>
+      <td>2.45 (1.79,3.35)</td>
+      <td>2.55 (1.57,4.15)</td>
+      <td></td>
+      <td>1.76 (1.24,2.50)</td>
+      <td>3.71 (2.62,5.24)</td>
+    </tr>
+    <tr>
+      <td>1-Month pre-symptomatic</td>
+      <td>2.85 (1.19,6.79)</td>
+      <td>1.61 (1.05,2.46)</td>
+      <td>1.90 (0.93,3.86)</td>
+      <td></td>
+      <td>1.24 (0.75,2.05)</td>
+      <td>2.34 (1.47,3.71)</td>
+    </tr>
+    <tr>
+      <td>3-Month main model</td>
+      <td>2.47 (1.59,3.84)</td>
+      <td>1.49 (1.21,1.85)</td>
+      <td>1.69 (1.23,2.32)</td>
+      <td></td>
+      <td>1.29 (1.01,1.64)</td>
+      <td>2.03 (1.62,2.55)</td>
+    </tr>
+    <tr>
+      <td>3-Month pre-symptomatic</td>
+      <td>2.00 (1.20,3.34)</td>
+      <td>1.16 (0.90,1.48)</td>
+      <td>1.35 (0.94,1.93)</td>
+      <td></td>
+      <td>1.05 (0.79,1.39)</td>
+      <td>1.52 (1.18,1.97)</td>
+    </tr>
+    <tr>
+      <td>6-Month main model</td>
+      <td>1.94 (1.34,2.80)</td>
+      <td>1.32 (1.11,1.57)</td>
+      <td>1.31 (1.01,1.70)</td>
+      <td></td>
+      <td>1.13 (0.93,1.39)</td>
+      <td>1.62 (1.35,1.94)</td>
+    </tr>
+    <tr>
+      <td>6-Month pre-symptomatic</td>
+      <td>1.63 (1.08,2.46)</td>
+      <td>1.11 (0.92,1.34)</td>
+      <td>1.10 (0.83,1.46)</td>
+      <td></td>
+      <td>0.98 (0.78,1.22)</td>
+      <td>1.33 (1.09,1.62)</td>
+    </tr>
+    <tr>
+      <td>12-Month main model</td>
+      <td>Not calculated*</td>
+      <td>Not calculated*</td>
+      <td>Not calculated*</td>
+      <td></td>
+      <td>1.10 (0.86,1.19)</td>
+      <td>1.21 (1.05,1.41)</td>
+    </tr>
+    <tr>
+      <td>12-Month pre-symptomatic</td>
+      <td>1.24 (0.88,1.74)</td>
+      <td>1.00 (0.86,1.17)</td>
+      <td>0.85 (0.68,1.07)</td>
+      <td></td>
+      <td>0.91 (0.77,1.09)</td>
+      <td>1.04 (0.88,1.22)</td>
+    </tr>
+    <tr>
+      <td>29-Month main model</td>
+      <td>1.38 (1.05,1.81)</td>
+      <td>1.16 (1.02,1.32)</td>
+      <td>0.96 (0.81,1.13)</td>
+      <td></td>
+      <td>1.08 (0.94,1.24)</td>
+      <td>1.14 (1.01,1.30)</td>
+    </tr>
+    <tr>
+      <td>29-Month pre-symptomatic</td>
+      <td>1.23 (0.92,1.64)</td>
+      <td>1.06 (0.93,1.21)</td>
+      <td>0.88 (0.74,1.05)</td>
+      <td></td>
+      <td>Not calculated*</td>
+      <td>Not calculated*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: CI, confidence interval; aHR, adjusted hazard ratio.*Not calculated due to data sparsity.Statistically significant effect measure modification by the log-likelihood ratio test is bolded._
+
 In a subset analysis accounting for potentially pre-symptomatic infections, compared to uninfected people, the risk of symptomatic malaria was increased in those with asymptomatic infections by more than 1.7 times (aHR: 1.77, 95% CI: 1.26 to 2.47) when limited to those with events more than 14 days after exposure ascertainment (Figure 3A). In this subset, we did not observe effect measure modification by participant age or sex (Table 3). The 1-month adjusted risk of symptomatic malaria was not substantially different in models incorporating seasonality (aHR: 2.46, 95% CI: 1.93 to 3.15), the number of prior asymptomatic infections (aHR: 2.60, 95% CI: 2.03 to 3.31), or prior antimalarial treatment (aHR: 2.61, 95% CI: 2.05 to 3.33), nor in a model using the dataset without imputation (aHR: 2.75, 95% CI: 2.05 to 3.66).
 
-## Long-term effect of asymptomatic malaria exposure
+### Long-term effect of asymptomatic malaria exposure
 
 Next, we assessed the relationship between asymptomatic infection and subsequent symptomatic malaria over longer follow-up periods. Extending the follow-up period led to a diminution in the risk of symptomatic malaria comparing those asymptomatically infected versus uninfected over 3 months (aHR: 1.64, 95% CI: 1.40 to 1.94), 6 months (aHR: 1.38, 95% CI: 1.20 to 1.58), 12 months (aHR: 1.12, 95% CI: 1.00 to 1.25), or 29 months (aHR: 1.11, 95% CI: 1.01 to 1.22) (Table 2, Figure 3B). In the 29-month analysis, this relationship was modified by participant age (p-value < 0.001 by log-likelihood ratio test) with the strongest relationship between asymptomatic infection and future symptomatic malaria in children < 5 years (aHR: 1.38, 95% CI: 1.05 to 1.81), second-strongest in children 5 to 15 years (aHR: 1.16, 95% CI: 1.02 to 1.32), and weakest in adults > 15 years (aHR: 0.96, 95% CI: 0.81 to 1.13) (Table 3, Figure 3—figure supplement 4). Consistent with the 1-month analysis, we observed modification by sex in some models, with females having higher risk for symptomatic disease (Table 3). The limited association between asymptomatic infection and malaria over the 29-month period was also observed when using both the ‘permissive’ (aHR: 1.20, 95% CI: 1.11 to 1.31) and the ‘stringent’ (aHR 1.02, 95% CI: 0.92 to 1.13) alternate case definitions for symptomatic malaria (Figure 3—figure supplement 4).
 
 We assessed for effect modification of the main exposure-outcome relationship by sex and by age in the main and pre-symptomatic models over various periods of follow-up (Table 3). For age, we observed only significant effect modification over the 29-month period, for which the risk of symptomatic malaria following asymptomatic infection was elevated in under-5s (aHR 1.38, 95% CI: 1.05 to 1.81) but not in adults (aHR 0.96, 95% CI: 0.81 to 1.13; p < 0.001 by log-likelihood ratio test). Conversely, for sex, we observed effect modification only at short follow-up period after an asymptomatic infection: over 1 month, the risk of symptomatic infection was lower in males (aHR 1.76, 95% CI: 1.24 to 2.50) than females (aHR 3.71, 95% CI: 2.62 to 5.24; p = 0.006 by log-likelihood ratio test).
 
-## Short-term effect of detectability of asymptomatic infections
+### Short-term effect of detectability of asymptomatic infections
 
 Owing to the consistently elevated short-term risk of symptomatic malaria in people with asymptomatic infections, we investigated the effect of parasite density in these infections on the risk of subsequent symptomatic malaria within 1 month. Compared to uninfected people, the 1-month hazard of symptomatic malaria was significantly increased by asymptomatic infections of all parasite densities, with the highest risk for those with densities > 1000 parasites/μL (aHR 3.99, 95% CI: 2.41 to 6.62) (Figure 4). This observed increase in the hazard of symptomatic malaria with increasing parasite density was most pronounced among adults >15 years (Figure 4—figure supplement 1); however, children’s likelihood of symptomatic infection did not appear to be influenced by parasite density.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig4-v2.jpg)
+
+**Figure 4.:** Estimates of the 1-month hazard of symptomatic malaria in people with asymptomatic infections compared to being uninfected are presented in separate frailty Cox proportional hazards models that were each restricted to asymptomatic infections meeting parasite density thresholds. Each model compared people with asymptomatic malaria infections meeting the listed density threshold to uninfected people and controlled for covariates participant age, sex, bed net usage, and village.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68812/elife-68812-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each model compared people with asymptomatic malaria infections meeting the listed density threshold to uninfected people and controlled for covariates participant sex, bed net usage, and village. The >500 p/μL and >1000 p/μL thresholds are not presented due to sparse data.
 
 ## Discussion
 

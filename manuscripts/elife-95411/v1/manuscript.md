@@ -33,38 +33,38 @@
 
 ### Affiliations
 
-1. https://ror.org/01z7r7q48 Center for Spatial and Functional Genomics, The Children's Hospital of Philadelphia Philadelphia United States
-2. https://ror.org/01z7r7q48 Division of Human Genetics, The Children's Hospital of Philadelphia Philadelphia United States
-3. https://ror.org/00b30xv10 Cell and Molecular Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-4. https://ror.org/00b30xv10 Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-5. https://ror.org/01z7r7q48 Department of Pathology, The Children's Hospital of Philadelphia Philadelphia United States
-6. https://ror.org/01z7r7q48 Division of Gastroenterology, Hepatology, and Nutrition, Children's Hospital of Philadelphia Philadelphia United States
-7. https://ror.org/00b30xv10 Scheie Eye Institute, Department of Ophthalmology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+1. Center for Spatial and Functional Genomics, The Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+2. Division of Human Genetics, The Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+3. Cell and Molecular Biology Graduate Group, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Department of Genetics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Department of Pathology, The Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+6. Division of Gastroenterology, Hepatology, and Nutrition, Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+7. Scheie Eye Institute, Department of Ophthalmology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 8. Penn Medicine Center for Ophthalmic Genetics in Complex Disease Philadelphia United States
-9. https://ror.org/00jmfr291 Department of Orthopedic Surgery University of Michigan Medical School Ann Arbor Ann Arbor United States
-10. https://ror.org/00vkwep27 Laboratory of Translational Genomics, Division of Cancer Epidemiology and Genetics, National Cancer Institute Bethesda United States
-11. https://ror.org/01z7r7q48 Department of Child and Adolescent Psychiatry, Children's Hospital of Philadelphia Philadelphia United States
-12. https://ror.org/00b30xv10 Department of Psychiatry, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-13. https://ror.org/00b30xv10 Institute for Diabetes, Obesity and Metabolism, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-14. https://ror.org/00b30xv10 Department of Cell and Developmental Biology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-15. https://ror.org/00b30xv10 Department of Physiology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-16. https://ror.org/016899r71 Department of Microbiology and Immunology, University of Melbourne, Peter Doherty Institute for Infection and Immunity Melbourne Australia
-17. https://ror.org/01ej9dk98 Department of Critical Care, Melbourne Medical School, University of Melbourne Melbourne Australia
-18. https://ror.org/03rmrcq20 Division of Infectious Diseases, Department of Medicine, University of British Columbia Vancouver Canada
-19. https://ror.org/03rmrcq20 Department of Surgery, University of British Columbia Vancouver Canada
-20. https://ror.org/01xesb955 BC Children's Hospital Research Institute Vancouver Canada
-21. https://ror.org/03rmrcq20 School of Biomedical Engineering, University of British Columbia Vancouver Canada
-22. https://ror.org/00b30xv10 Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-23. https://ror.org/00b30xv10 Department of Pathology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-24. https://ror.org/00b30xv10 Institute for Immunology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-25. https://ror.org/01z7r7q48 Division Endocrinology and Diabetes, The Children's Hospital of Philadelphia Philadelphia United States
-26. https://ror.org/00b30xv10 Penn Neurodegeneration Genomics Center, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
+9. Department of Orthopedic Surgery University of Michigan Medical School Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+10. Laboratory of Translational Genomics, Division of Cancer Epidemiology and Genetics, National Cancer Institute Bethesda United States ([ROR:00vkwep27](https://ror.org/00vkwep27))
+11. Department of Child and Adolescent Psychiatry, Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+12. Department of Psychiatry, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+13. Institute for Diabetes, Obesity and Metabolism, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+14. Department of Cell and Developmental Biology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+15. Department of Physiology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+16. Department of Microbiology and Immunology, University of Melbourne, Peter Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:016899r71](https://ror.org/016899r71))
+17. Department of Critical Care, Melbourne Medical School, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+18. Division of Infectious Diseases, Department of Medicine, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+19. Department of Surgery, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+20. BC Children's Hospital Research Institute Vancouver Canada ([ROR:01xesb955](https://ror.org/01xesb955))
+21. School of Biomedical Engineering, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+22. Department of Pediatrics, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+23. Department of Pathology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+24. Institute for Immunology, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+25. Division Endocrinology and Diabetes, The Children's Hospital of Philadelphia Philadelphia United States ([ROR:01z7r7q48](https://ror.org/01z7r7q48))
+26. Penn Neurodegeneration Genomics Center, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 
 ## Abstract
 
-The prevalence of childhood obesity is increasing worldwide, along with the associated common comorbidities of type 2 diabetes and cardiovascular disease in later life. Motivated by evidence for a strong genetic component, our prior genome-wide association study (GWAS) efforts for childhood obesity revealed 19 independent signals for the trait; however, the mechanism of action of these loci remains to be elucidated. To molecularly characterize these childhood obesity loci, we sought to determine the underlying causal variants and the corresponding effector genes within diverse cellular contexts. Integrating childhood obesity GWAS summary statistics with our existing 3D genomic datasets for 57 human cell types, consisting of high-resolution promoter-focused Capture-C/Hi-C, ATAC-seq, and RNA-seq, we applied stratified LD score regression and calculated the proportion of genome-wide SNP heritability attributable to cell type-specific features, revealing pancreatic alpha cell enrichment as the most statistically significant. Subsequent chromatin contact-based fine-mapping was carried out for genome-wide significant childhood obesity loci and their linkage disequilibrium proxies to implicate effector genes, yielded the most abundant number of candidate variants and target genes at the BDNF , ADCY3 , TMEM18, and FTO loci in skeletal muscle myotubes and the pancreatic beta-cell line, EndoC-BH1. One novel implicated effector gene, ALKAL2 – an inflammation-responsive gene in nerve nociceptors – was observed at the key TMEM18 locus across multiple immune cell types. Interestingly, this observation was also supported through colocalization analysis using expression quantitative trait loci (eQTL) derived from the Genotype-Tissue Expression (GTEx) dataset, supporting an inflammatory and neurologic component to the pathogenesis of childhood obesity. Our comprehensive appraisal of 3D genomic datasets generated in a myriad of different cell types provides genomic insights into pediatric obesity pathogenesis.
+The prevalence of childhood obesity is increasing worldwide, along with the associated common comorbidities of type 2 diabetes and cardiovascular disease in later life. Motivated by evidence for a strong genetic component, our prior genome-wide association study (GWAS) efforts for childhood obesity revealed 19 independent signals for the trait; however, the mechanism of action of these loci remains to be elucidated. To molecularly characterize these childhood obesity loci, we sought to determine the underlying causal variants and the corresponding effector genes within diverse cellular contexts. Integrating childhood obesity GWAS summary statistics with our existing 3D genomic datasets for 57 human cell types, consisting of high-resolution promoter-focused Capture-C/Hi-C, ATAC-seq, and RNA-seq, we applied stratified LD score regression and calculated the proportion of genome-wide SNP heritability attributable to cell type-specific features, revealing pancreatic alpha cell enrichment as the most statistically significant. Subsequent chromatin contact-based fine-mapping was carried out for genome-wide significant childhood obesity loci and their linkage disequilibrium proxies to implicate effector genes, yielded the most abundant number of candidate variants and target genes at the BDNF, ADCY3, TMEM18, and FTO loci in skeletal muscle myotubes and the pancreatic beta-cell line, EndoC-BH1. One novel implicated effector gene, ALKAL2 – an inflammation-responsive gene in nerve nociceptors – was observed at the key TMEM18 locus across multiple immune cell types. Interestingly, this observation was also supported through colocalization analysis using expression quantitative trait loci (eQTL) derived from the Genotype-Tissue Expression (GTEx) dataset, supporting an inflammatory and neurologic component to the pathogenesis of childhood obesity. Our comprehensive appraisal of 3D genomic datasets generated in a myriad of different cell types provides genomic insights into pediatric obesity pathogenesis.
 
 ## Introduction
 
@@ -76,7 +76,7 @@ With our extensive datasets generated on a range of different cell types, by com
 
 ## Results
 
-## Enrichment assessment of childhood obesity variants across cell types
+### Enrichment assessment of childhood obesity variants across cell types
 
 To explore the enrichment of childhood obesity GWAS variants across cell types, we carried out Partitioned Linkage Disequilibrium Score Regression (LDSR) (Finucane et al., 2015) on all ATAC-seq-defined OCRs for each cell type. We assessed cell-type-specific enrichment of GWAS signals in four main categories of genomic regions (Figure 1A): (1) Total OCRs: open chromatin regions defined by ATAC-seq; (2) Promoter OCRs: the subset of OCRs overlapping a gene promoter; (3) cREs: the subset of OCRs that form chromatin loops (as determined by Hi-C/Promoter Capture-C) with a gene promoter, and are therefore considered putative enhancers or suppressors regulating gene expression; (4) cREs ±500bases: extended cREs by 500 bases in both directions. The rationale behind this approach is that different GWAS variants can influence phenotypes by regulating gene expression in a cell-type specific manner through various regulatory mechanisms. For example, they may alter enhancer function (cREs category) or affect the binding of a transcription factor at a gene’s promoter (Promoter OCRs category).
 
@@ -88,17 +88,534 @@ We observed that 41 of 57 cell types – including 22 metabolic, 21 immune, 7 ne
 
 The original reported LDSR method analyzed enrichment in the 500 bp flanking regions of their regulatory categories (Finucane et al., 2015). However, when we expanded our analysis to the ± 500 bp window for our cREs, albeit incorporating more weighted variants into the enrichment (represented by larger dots in Figure 1B – cREs ± 500 bases), this resulted in a decrease in the number of cell types yielding at least nominal enrichment (26 cell types), the enrichment range across cell types, the 95% CI, and level of significance. The pancreatic alpha cell observation also dropped below the bar for significance with this expanded window definition.
 
-## Consistency and diversity of childhood obesity proxy variants mapped to cREs
+### Consistency and diversity of childhood obesity proxy variants mapped to cREs
 
 Despite the enrichments above only being limited to just a small number of cell types, it is likely that individual loci have differing levels of contributions in various cellular contexts and could not be detected at the genome wide assessment scale. As such we elected to further explore the candidate effector genes that are directly affected by cREs harboring childhood obesity-associated variants by systematically mapping the genomic positions of the LD proxies onto each cell type’s cREs. Most proxies fall within chromatin contact regions (blue area in Venn diagram Figure 2A) or OCRs (yellow area) or open chromatin contact regions (red area), or completely outside (white area) any defined region. Only 94 proxies fall within our defined cREs (overlapped area with dotted green border in Figure 2A), they clustered at 13 original loci (Supplementary file 1b). Figure 2—figure supplement 1 outlines the number of signals at each locus included or excluded based on the criteria we defined for our regions of interest. The TMEM18 locus yielded the most variants through cREs mapping, with 46 proxies for the two lead independent variants, rs7579427 and rs62104180. The second most abundant locus was ADCY3, with 21 proxies for lead variant rs4077678 (Figure 2B). The higher number of variants at one locus did not correlate with implicating more genes or cell types through mapping. The mapping frequency of various variants within a specific locus exhibited substantial differences (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-v1.jpg)
+
+**Figure 2.:** (A) Venn diagram shows how 771 proxies mapped to the OCRs: · Blue area: 758 proxies were located within contact regions of at least one cell type regardless of chromatin state; · Red area: 417 proxies were located within contact regions marked as open by overlapping with OCR; · Yellow area: If we only considered open chromatin regions, 178 proxies were included; · Dotted green bordered area: To focus on just those variants residing within open chromatin and contacting promoter regions in any cell type, we overlapped the genomic positions of these proxies with each cell type’s cRE set, yielding 90 variants (3 from the 99% credible set) directly contacting open gene promoters (Supplementary file 1b), with 10 of which located within a promoter of one gene but contacting another different gene promoter. There were an additional 4 variants located within gene promoters but in chromatin contact with promoter(s) of nearby transcript(s) of the same gene (correspond to 3 cREs illustrations in Figure 1A). · White area: proxies that fall into neither defined region of interest. (B) Bar-plot shows number of proxies, cell types and target genes mapped at each locus. (C) The upSet plot shows the degree of overlap across cell types of the variants; ranked from the most common variant (red) – rs61888800 from BDNF locus, a well-known 5' untranslated region variant of this gene that is associated with anti-depression and therapeutic response (Licinio et al., 2009; Colle et al., 2015) – appeared in 39 cell types, to the group of variants (grey) which appeared in only one cell type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Colors of the areas corresponding to different subset of OCRs, the white areas show proxies that unmapped to any OCR.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The 46 variants at the TMEM18 locus appeared in 31 cell types and implicated 16 genes, while only 5 variants of BDNF locus appeared in 42 cell types and implicated 23 genes, or 2 variants of FAIM2 locus with 26 cell types and 15 implicated genes. Seven variants of the FTO locus though appeared in only 7 cell types, but targeted promoters of up to 18 genes. At five loci ADCY9, GPR1, MC4R, METTL15, and TFAP2B, only one single proxy – but not the lead variant in each case – was mapped. Of these, the variant from METTL15 locus only implicated the BDNF gene but appeared in four different cell types. In contrast, the variant from ADCY9 locus appeared in five different cell types and implicated up to 10 different genes.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) At TFAP2B locus on chromosome 6, rs62405437 was found only in a human embryonic stem cell line, within the body of transcription factor AP-2 beta (TFAP2B) contacting the promoter of TFAP2D (red arc). Interestingly, there were many contacts identified by our Capture-C assay between these two members of the transcription factor AP-2 family (blue arcs), and many of our proxies were located within these loop ends, albeit outside any defined open chromatin region – red regions in illustration Figure 1A. (B) At the GPR1 locus on chromosome 2, rs115319174 was identified only within Nigerian melanocytes cREs, positioned in an open region within the body of the CMKLR2 gene and contacting (red arc) the promoter of GPR1 – a gene for G-protein-coupled receptors known to increase its expression in obese phenotypes14. Blue arcs represented other chromatin contacts identified within this window. Figure 2—figure supplement 4. Dot-plot with each variant colored by their locus shows the number of genes and cell types each proxy mapped into our cREs.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Bar-plots show some variants found in multiple cell types were more selective with respect to their target genes (red arrow) – such as rs11030197 at the METTL15 locus – or conversely more selective in given cell types but implicated multiple genes (blue arrow) – such as 21 other variants from the 66 mentioned earlier that appeared in only one cell type but contacted multiple genes within that cellular setting. These 21 variants included one from BDNF locus, one from FAIM2 locus, two from TNNI3K, five from FTO, and twelve from the TMEM18 locus.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Example in blue window. The green window: The SH3YL1 open promoter was contacted within 25 cell types, including eleven immune cell types (mostly T-cells), six metabolic cell types (adipocytes, different pancreatic cell types, differentiated osteoblasts), and three neural cell types (primary astrocytes, hESC-derived hypothalamic neurons, and neural progenitors). Similarly, the ACP1 promoter was contacted in 14 cell types across three systems, except for adipocytes and astrocytes.
 
 Inspecting individual variants regardless of their locus, we found that 28 of 94 proxies appeared in cREs across multiple cell types, with another 66 observed in just one cell type (Figure 2C). 45 variants of these 66 just contacted one gene promoter, such as at the GPR1 and TFAP2B loci (Figure 2—figure supplement 3).
 
 Overall, the number of cell types in which a variant was observed in open chromatin correlated with the number of genes contacted via chromatin loops (Figure 2—figure supplement 4). However, we also observed that some variants found in cREs in multiple cell types were more selective with respect to their candidate effector genes (Figure 2—figure supplement 5 - red arrow), or conversely, more selective across given cell types but implicated multiple genes (Figure 2—figure supplement 5 - blue arrow). Figure 2—figure supplement 6 outlines our observations at the TMEM18 locus – an example locus involved in both scenarios.
 
-## Implicated genes cluster at loci strongly associated with childhood obesity consistently across multiple cell types
+### Implicated genes cluster at loci strongly associated with childhood obesity consistently across multiple cell types
 
 Mapping the variants across all the cell types resulted in a total of 111 implicated childhood obesity candidate effector genes (Table 1). Among these, 45 genes were specific to just one cell type (Figure 3—figure supplement 1), including 13 in myotubes and 7 in natural killer cells. Conversely and notably, BDNF appeared across 42 different cell types. Across the metabolic, neural, and immune systems and seven other cell lines, there were nine genes consistently implicated in all four categories (top panel Figure 3 – red stars, Figure 3—figure supplement 2 ‘all’), while five genes were consistently implicated in metabolic, neural, and immune systems (top panel Figure 3 – blue stars, Figure 3—figure supplement 2 ‘all_main’). Two genes, ADCY3 and BDNF, had variants both at their promoters and contacted variants in cREs via chromatin loops (Figure 3—figure supplement 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig3-v1.jpg)
+
+**Figure 3.:** Main panel: Bubble plot show corresponding expression level (size) and number of variants (color) target each implicated gene of each cell type. Squares represent genes with variants at their promoters. Circles represent genes with variants contacted through chromatin loops. Some genes were implicated by both types, these ‘double implications’ are represented as diamond shapes, and were identified across several cell types: two cell types (plasmacytoid dendritic cells and pre-differentiated adipocytes) for ADCY3 gene, and five for BDNF (human embryonic stem cells - hESC, differentiated human fetal osteoblast cells - hFOB_Diff, neural progenitor cells derived from induced pluripotent stem cells - NPC_iPSC, PANC-1, and NCIH716 cell lines). Genes with expression undetected in our arrays are shown as triangles. Top panel: bar-plot shows numbers of cell types each gene was implicated within, color-coded by which systems the cell types belong to. Right panel: bar-plot shows numbers of genes implicated by the variants with each cell type.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Genomic views of two loci where genes promoters both harbor childhood obesity variants (solid arrows) and were contacted by OCRs harboring variants though chromatin contacts (hollow arrows), hence “double-implicated”. Top panel: BDNF locus where BDNF gene promoters harbor two variants rs61888800 and rs75707145 that overlapped with OCRs of three cell types. In differentiated hFOB cell and iPSC-derived neural progenitor cells, different BDNF promoters were contacted through chromatin loops in different cell types. Lower panel: ADCY3 locus where ADCY3 gene promoters were double-implicated by two variants in plasmacytoid dendritic cells and 8 other variants in pre-differentiated adipocytes.
+
+**Table 1.**
+ PubMed-query known functions for 111 genes implicated by obesity variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Locus</th>
+      <th>Implicated genes</th>
+      <th>Obesity or related traits</th>
+      <th>Different traits</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">TNNI3K</td>
+      <td>LRRIQ3</td>
+      <td>(NA)</td>
+      <td>Associated with opioid usage [PMID:34728798] and MDD [PMID: 31748543]</td>
+    </tr>
+    <tr>
+      <td>FPGT</td>
+      <td rowspan="2">Predict BMI in Korean pop. [PMID: 28674662]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>FPGT-TNNI3K</td>
+      <td>Associated with MDD [PMID: 31748543]</td>
+    </tr>
+    <tr>
+      <td>LRRC53</td>
+      <td>Associated with high BMI increased risk heart attack [PMID: 32471361]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>ASTN1</td>
+      <td>Identified as obesity QTL in rat [PMID: 35729251]</td>
+      <td>Associated with neurodevelopmental traits [PMID: 24381304] and variety of cancers [PMID: 32945491]</td>
+    </tr>
+    <tr>
+      <td>BRINP2</td>
+      <td>(NA)</td>
+      <td>Associated with neurodevelopmental traits [PMID: 34267256]</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SEC16B</td>
+      <td>AL122019.1</td>
+      <td rowspan="2" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>AL162431.1</td>
+    </tr>
+    <tr>
+      <td rowspan="16">TMEM18</td>
+      <td>FAM110C</td>
+      <td>(NA)</td>
+      <td>Overexpression induces microtubule aberrancies [PMID: 17499476], involved in cell spreading and migration [PMID: 19698782]</td>
+    </tr>
+    <tr>
+      <td>SH3YL1</td>
+      <td>Associated with BMI in type 2 diabetes nephropathy [PMID: 33223406]</td>
+      <td>Influence on T cell activation [PMID: 31427643], involved in different cancer types [PMID: 26305679,24508479]</td>
+    </tr>
+    <tr>
+      <td>ACP1</td>
+      <td>Associated with early-onset obesity [PMID: 24129437], correlated with cardiovascular risks [PMID: 19570551], drive adipocyte differentiation via control of pdgfrα signaling [PMID: 33615467]</td>
+      <td>Associated with bipolar disorder [PMID: 31830721]</td>
+    </tr>
+    <tr>
+      <td>ALKAL2</td>
+      <td>Associated with childhood BMI [PMID: 33627773]</td>
+      <td>Enhance expression in response to inflammatory pain in nociceptors [PMID: 35608912, 35610945]</td>
+    </tr>
+    <tr>
+      <td>MYT1L</td>
+      <td>Associated with early-onset obesity [PMID: 24129437]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>AC079779.1</td>
+      <td rowspan="11" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>AC079779.2</td>
+    </tr>
+    <tr>
+      <td>AC079779.3</td>
+    </tr>
+    <tr>
+      <td>AC079779.4</td>
+    </tr>
+    <tr>
+      <td>LINC01865</td>
+    </tr>
+    <tr>
+      <td>AC105393.2</td>
+    </tr>
+    <tr>
+      <td>AC105393.1</td>
+    </tr>
+    <tr>
+      <td>LINC01874</td>
+    </tr>
+    <tr>
+      <td>LINC01875</td>
+    </tr>
+    <tr>
+      <td>AC093326.1</td>
+    </tr>
+    <tr>
+      <td>AC141930.2</td>
+    </tr>
+    <tr>
+      <td rowspan="9">ADCY3</td>
+      <td>ITSN2</td>
+      <td>(NA)</td>
+      <td>Regulate T-cells function [PMID: 32618424] and help the interaction with B-cells [PMID: 29337666]</td>
+    </tr>
+    <tr>
+      <td>NCOA1</td>
+      <td>Meta-inflammation gene [PMID: 25647480], reduce adipogenesis, shift the energy balance between white and brown fat [PMID: 31133421]</td>
+      <td rowspan="5">(NA)</td>
+    </tr>
+    <tr>
+      <td>ADCY3</td>
+      <td>Regulate/impair MC4R within energy-regulating melanocortin signaling pathway [PMID: 29311635,32955435]</td>
+    </tr>
+    <tr>
+      <td>DNAJC27-AS1</td>
+      <td>Linked to obesity, diabetes traits [PMID: 30131766]</td>
+    </tr>
+    <tr>
+      <td>DNAJC27</td>
+      <td>Linked to obesity, diabetes traits [PMID: 30131766]</td>
+    </tr>
+    <tr>
+      <td>EFR3B</td>
+      <td>Associated with T1D [PMID: 21980299], down-regulated in rare obesity-related disorder [PMID: 25705109]</td>
+    </tr>
+    <tr>
+      <td>WDR43</td>
+      <td>(NA)</td>
+      <td>Associated with breast cancer [PMID: 27117709]</td>
+    </tr>
+    <tr>
+      <td>AC013267.1</td>
+      <td rowspan="2" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>RF00016</td>
+    </tr>
+    <tr>
+      <td>GPR1</td>
+      <td>GPR1</td>
+      <td>Increase expression in obese phenotype [PMID: 34174278]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>TFAP2B</td>
+      <td>TFAP2D</td>
+      <td rowspan="4">(NA)</td>
+      <td>Involve in embryogenesis [PMID: 12711551]</td>
+    </tr>
+    <tr>
+      <td rowspan="9">CALCR</td>
+      <td>HEPACAM2</td>
+      <td>Associated with colorectal cancer [PMID: 29659199, 29973580]</td>
+    </tr>
+    <tr>
+      <td>VPS50</td>
+      <td>Involve in neurodevelopmental disorders and defects [PMID: 30828385, 34037727]</td>
+    </tr>
+    <tr>
+      <td>MIR653</td>
+      <td>Involve in different types of cancer [PMID: 35777307]</td>
+    </tr>
+    <tr>
+      <td>MIR489</td>
+      <td>Promote adipogenesis in mice [PMID: 34004251]</td>
+      <td rowspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>CALCR</td>
+      <td>Associated with BMI and control of food-intake [PMID: 34462445, 34210852, 31955990, 29522093]</td>
+    </tr>
+    <tr>
+      <td>TFPI2</td>
+      <td>(NA)</td>
+      <td>Involved in colorectal cancer [PMID: 35004840, 34092617, 25902909]</td>
+    </tr>
+    <tr>
+      <td>BET1</td>
+      <td>Involved in triacylglycerol metabolism [PMID: 24423365]</td>
+      <td>Associated with muscular dystrophy [PMID: 34310943, 34779586]</td>
+    </tr>
+    <tr>
+      <td>AC003092.1</td>
+      <td>(NA)</td>
+      <td>Association with glioblastoma [PMID: 33815468, 30442884]</td>
+    </tr>
+    <tr>
+      <td>AC002076.1</td>
+      <td colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td rowspan="23">BDNF</td>
+      <td>LIN7C</td>
+      <td>Associated in T2D [PMID: 20215397], obesity [PMID: 23044507]</td>
+      <td>Associated with psychopathology [PMID: 23044507]</td>
+    </tr>
+    <tr>
+      <td>BDNF-AS</td>
+      <td>Regulate BDNF and LIN7C expression [PMID: 22960213, 22446693]</td>
+      <td rowspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>BDNF</td>
+      <td>Regulate eating behavior and energy balance [PMID: 34556834]</td>
+    </tr>
+    <tr>
+      <td>MIR610</td>
+      <td rowspan="2">(NA)</td>
+      <td>Involve in different types of cancer [PMID: 34408418, 29228616, 26885452]</td>
+    </tr>
+    <tr>
+      <td>KIF18A</td>
+      <td>Involve in different types of cancer [PMID: 35591854, 35286090]</td>
+    </tr>
+    <tr>
+      <td>METTL15</td>
+      <td>Associated with childhood obesity [PMID: 31504550]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>AC090124.1</td>
+      <td rowspan="4">(NA)</td>
+      <td>Reported to differentially prognostic of pancreatic cancer [PMID: 34307375]</td>
+    </tr>
+    <tr>
+      <td>ARL14EP</td>
+      <td>Involve in WAGR syndrome [PMID: 36011342, 31511512]</td>
+    </tr>
+    <tr>
+      <td>DCDC1</td>
+      <td>Involvement with eyes anomalies [PMID: 34773354, 34703991]</td>
+    </tr>
+    <tr>
+      <td>THEM7P</td>
+      <td>Associated with mechanisms underlying inguinal hernia [PMID: 34392144]</td>
+    </tr>
+    <tr>
+      <td>AL035078.2</td>
+      <td rowspan="13" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>ELP4</td>
+    </tr>
+    <tr>
+      <td>LINC00678</td>
+    </tr>
+    <tr>
+      <td>AC023206.1</td>
+    </tr>
+    <tr>
+      <td>RN7SKP158</td>
+    </tr>
+    <tr>
+      <td>AC104978.1</td>
+    </tr>
+    <tr>
+      <td>MIR8068</td>
+    </tr>
+    <tr>
+      <td>AC013714.1</td>
+    </tr>
+    <tr>
+      <td>AC100773.1</td>
+    </tr>
+    <tr>
+      <td>AC090833.1</td>
+    </tr>
+    <tr>
+      <td>AC090791.1</td>
+    </tr>
+    <tr>
+      <td>AC110056.1</td>
+    </tr>
+    <tr>
+      <td>AL035078.2</td>
+    </tr>
+    <tr>
+      <td rowspan="15">FAIM2</td>
+      <td>PRPF40B</td>
+      <td>(NA)</td>
+      <td>Splicing regulator involved in T-cell development [PMID: 31088860, 34323272]</td>
+    </tr>
+    <tr>
+      <td>TMBIM6</td>
+      <td>Deficiency leads to obesity by increasing Ca2+-dependent insulin secretion [PMID: 32394396]</td>
+      <td>Immune cell function and survival [PMID: 26470731]</td>
+    </tr>
+    <tr>
+      <td>BCDIN3D</td>
+      <td>Associated with obesity, T2D [PMID: 20215397]</td>
+      <td rowspan="3">(NA)</td>
+    </tr>
+    <tr>
+      <td>FAIM2</td>
+      <td>Associated with childhood obesity [PMID: 31504550]</td>
+    </tr>
+    <tr>
+      <td>AQP2</td>
+      <td>Associated with obesity, diabetes [PMID: 33367818]</td>
+    </tr>
+    <tr>
+      <td>AQP5</td>
+      <td>Associated with non-obese diabetes [PMID: 25635992,22320885]</td>
+      <td>Responsible for transporting water, involve in Sjogren’s syndrome [PMID: 25635992, 31557796]</td>
+    </tr>
+    <tr>
+      <td>AQP6</td>
+      <td>Down-regulated in retina in diabetes [PMID: 21851171]</td>
+      <td>Associated with renal diseases [PMID: 30654539]</td>
+    </tr>
+    <tr>
+      <td>RACGAP1</td>
+      <td>Involve in diabetes nephropathy [PMID: 35222021]</td>
+      <td rowspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>ASIC1</td>
+      <td>Inhibition increase food intake and decrease energy expenditure [PMID: 35894166]</td>
+    </tr>
+    <tr>
+      <td>LSM6P2</td>
+      <td rowspan="6" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>RPL35AP28</td>
+    </tr>
+    <tr>
+      <td>LINC02396</td>
+    </tr>
+    <tr>
+      <td>LINC02395</td>
+    </tr>
+    <tr>
+      <td>AC025154.1</td>
+    </tr>
+    <tr>
+      <td>AC025154.2</td>
+    </tr>
+    <tr>
+      <td rowspan="10">ADCY9</td>
+      <td>SLX4</td>
+      <td>(NA)</td>
+      <td>Associated with blood pressure [PMID: 30671673]</td>
+    </tr>
+    <tr>
+      <td>DNASE1</td>
+      <td>Associated with obesity hypertension [PMID: 33351325]</td>
+      <td rowspan="4">(NA)</td>
+    </tr>
+    <tr>
+      <td>TRAP1</td>
+      <td>Involve in global metabolic network, deletion reduce obesity incidence [PMID: 25088416]</td>
+    </tr>
+    <tr>
+      <td>CREBBP</td>
+      <td>Associated with high adiposity and low cardiometabolic risk [PMID: 33619380]</td>
+    </tr>
+    <tr>
+      <td>ADCY9</td>
+      <td>Asoociated with BMI, obesity [PMID: 33619380, 23563607]</td>
+    </tr>
+    <tr>
+      <td>SRL</td>
+      <td rowspan="2">(NA)</td>
+      <td>Involve in cardiac dysfunction [PMID: 22119571]</td>
+    </tr>
+    <tr>
+      <td>LINC01569</td>
+      <td>Associated with cancer and endometriosis [PMID: 35341703, 34422671]</td>
+    </tr>
+    <tr>
+      <td>TFAP4</td>
+      <td>Associated with BMI, birth weight, maternal glycemic [PMID: 35708509]</td>
+      <td>(NA)</td>
+    </tr>
+    <tr>
+      <td>AC012676.1</td>
+      <td>(NA)</td>
+      <td>Involve in hepatocellular carcinoma [PMID: 35210216]</td>
+    </tr>
+    <tr>
+      <td>AC009171.2</td>
+      <td colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td rowspan="18">FTO</td>
+      <td>FTO</td>
+      <td>Most extensively studied obesity locus [PMID: 34556834]</td>
+      <td rowspan="3">(NA)</td>
+    </tr>
+    <tr>
+      <td>IRX3</td>
+      <td rowspan="2">Obesogenic effects in adipocytes [PMID: 26760096], brain [PMID: 24646999], pancreas[93]</td>
+    </tr>
+    <tr>
+      <td>IRX5</td>
+    </tr>
+    <tr>
+      <td>AC018553.1</td>
+      <td>(NA)</td>
+      <td>Associated with melanoma [PMID: 35611195]</td>
+    </tr>
+    <tr>
+      <td>CRNDE</td>
+      <td>Regulator of angiogenesis in obesity-induced diabetes [PMID: 31863035]</td>
+      <td rowspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>MMP2</td>
+      <td>Involve in obesity-relate angiogenesis [PMID: 35919566]</td>
+    </tr>
+    <tr>
+      <td>CAPNS2</td>
+      <td>(NA)</td>
+      <td>Associated with thyroid-related traits [PMID: 23408906]</td>
+    </tr>
+    <tr>
+      <td>AMFR</td>
+      <td>Involve in hepatic lipid metabolism [PMID: 33591966]</td>
+      <td rowspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>CETP</td>
+      <td>Involve in monogenic hyperalphalipoproteinemia [PMID: 34878751]</td>
+    </tr>
+    <tr>
+      <td>RPGRIP1L</td>
+      <td>Hypomorphism of this ciliary gene linked to morbid obesity [PMID: 27064284, 30597647, 29657248]</td>
+      <td>Required for hypothalamic arcuate neuron development [PMID: 30728336]</td>
+    </tr>
+    <tr>
+      <td>LINC02169</td>
+      <td>(NA)</td>
+      <td>Associated with occupational exposure to gases/fumes and mineral dust [PMID: 31152171]</td>
+    </tr>
+    <tr>
+      <td>AC007491.1</td>
+      <td rowspan="7" colspan="2">(NA)</td>
+    </tr>
+    <tr>
+      <td>AC018553.2</td>
+    </tr>
+    <tr>
+      <td>LINC02140</td>
+    </tr>
+    <tr>
+      <td>AC106738.1</td>
+    </tr>
+    <tr>
+      <td>AC106738.2</td>
+    </tr>
+    <tr>
+      <td>MTND5P34</td>
+    </tr>
+    <tr>
+      <td>AC007336.1</td>
+    </tr>
+    <tr>
+      <td>MC4R</td>
+      <td>AC090771.1</td>
+      <td colspan="2">(NA)</td>
+    </tr>
+  </tbody>
+</table>
 
 At the TMEM18 locus on chr 2p25.3, a highly significant human obesity locus that has long been associated with both adult and childhood obesity, we observed differing degrees of evidence for 16 genes, but noted that rs6548240, rs35796073, and rs35142762 consistently contacted the SH3YL1, ACP1, and ALKAL2 promoters across multiple cell types (Figure 2C -third and fourth column).
 
@@ -110,19 +627,37 @@ At the FAIM2 locus on chr 12q13.12, we observed known genes associated with obes
 
 The independent ADCY9 and FTO loci are both located on chromosome 16. Genes at the ADCY9 locus were only implicated in a subset of immune cell types. Interestingly, genes at the FTO locus were only implicated in Hi-C datasets (as opposed to Capture C), including 6 metabolic cell types and astrocytes. Most genes at the FTO locus were implicated in skeletal myotubes, differentiated osteoblasts, and astrocytes, namely FTO and IRX3; while IRX5, CRNDE, and AC106738.1 were also implicated in adipocytes and hepatocytes.
 
-## The most implicated cell types by two sets of analyses
+### The most implicated cell types by two sets of analyses
 
 EndoC-BH1 and myotubes are the two cell types in which we implicated the most effector genes, with 38 and 42, respectively – Figure 3 side panel. This phenomenon is likely proportional in the case of myotubes, given the large number of cREs identified by overlapped Hi-C contact data and ATAC-seq open regions (Figure 1A), but not for EndoC-BH1. Albeit harboring an average number of cREs compared to other cell types, EndoC-BH1 cells were consistently among the top-ranked heritability estimates for the childhood obesity variants resulting from the EGG consortium GWAS (Figure 1) and harbored a significant number of implicated genes by the mapping of proxies. Interestingly, the pancreatic alpha cell type – shown above to be the most significant for heritability estimate by LDSC – revealed only six implicated genes contacted by the defined proxies, namely BDNF and five lncRNA genes.
 
-## Pathway analysis
+### Pathway analysis
 
 Of the 111 implicated genes in total, PubMed query revealed functional studies for 66 genes. The remaining were principally lncRNA and miRNA genes with currently undefined functions (Table 1). To investigate how our implicated genes could confer obesity risk, we performed several pathway analyses keeping them either separated for each cell type or pooling into the respective metabolic, neural, or immune system sets. Figure 4—figure supplement 1 shows simple Gene Ontology (GO) biological process terms enrichment results.
 
 Leveraging the availability of our expression data generated via RNA-seq (available for 46 of 57 cell types), we performed pathway analysis. Given that our gene sets from the variant-to-gene process was stringently mapped, the sparse enrichment from normal direct analyses is not ideal for exploring obesity genetic etiology. Thus, we incorporated two methods from the pathfindR package (Ulgen et al., 2019) and our customized SPIA (details in Materials and methods, Figure 4—figure supplement 2). The result of 60 enriched KEGG terms is shown in Figure 4A, Supplementary file 1c, with 13 genes in 14 cell types for pathfindR and 39 enriched KEGG terms shown in Figure 4, Supplementary file 1d, with 10 genes in 42 cell types for customized SPIA. There were 20 overlapping pathways between the two approaches (yellow rows in Supplementary file 1c-d) including many signaling pathways such as the GnRH (hsa04912), cAMP (hsa04024), HIF-1 (hsa04066), Glucagon (hsa04922), Relaxin (hsa04926), Apelin (hsa04371), and Phospholipase D (hsa04072) signaling pathways. They were all driven by one or more of these 5 genes: ADCY3, ADCY9, CREBBP, MMP2, and NCOA1. Interestingly, we observed the involvement of natural killer cells in nearly all the enriched KEGG terms from pathfindR due to the high expression of the two adenylyl cyclase encoded genes, ADCY3 and ADCY9, along with CREBBP. The SPIA approach disregarded the aquaporin genes (given they appear so frequently in so many pathways that involve cellular channels) but highlighted the central role of BDNF which single-handedly drove four signaling pathways: the Ras, Neurotrophin, PI3K-Akt, and MAPK signaling pathways. This also revealed the role of TRAP1 in neurodegeneration.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig4-v1.jpg)
+
+**Figure 4.:** (A) The pathfindR method: Focused on ‘leveraging interaction information from a protein-protein interaction network (PIN) to identify distinct active subnetworks and then perform enrichment analyses on these subnetworks’, thus aiding enriched pathway analyses through the inter-connection between the genes targeted by obesity variants with key genes driving the pathology of the disease. The result with 60 enriched KEGG terms in the main panel (Supplementary file 1c), shows 13 genes in 14 cell types and their scaled expression levels in the lower panel. (B) The modified SPIA: After applying the adjusted P-value of 0.05 as the filtering threshold, the analysis yielded 39 enriched KEGG terms (full table at Supplementary file 1d) with only 10 genes, but involved up to 42 cell types.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Due to the limited number of implicated genes, over-representation analysis for GO biological process terms across the cell types showed only a few main clusters. This result mainly emphasized the frequencies of several genes that appeared in many cell types and participated in many biological processes and pathways – namely BDNF, FAIM2, CALCR, Aquaporin genes (AQP2, AQP5, AQP6), ASIC1, and the Adenylate cyclase genes (ADCY3, ADCY9, BCDIN3D, METTL15). (B) Pooling genes resulting from the 3 systems of metabolic, neural, and immune cell types revealed two clear clusters of processes, segregated by the implicated genes enriched mainly in immune cell types (primarily within the ADCY3 locus) versus genes enriched on both metabolic and neural cell types. This somewhat reflected the gene clusters in Figure 3.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** To extend the analysis beyond the prerequisite protein-protein networks, but still account for how our genes were weighted within the network architecture of the pathways, we devised a modified SPIA analysis with additional metrics.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The four areas in each gene were colored by expression levels of such gene within the corresponding cell types: the hMSC-derived BMP2 differentiated osteoblast, the differentiated osteoblast cell line, the natural killer cell, and the skeletal myotubes.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig4-figsupp4-v1.jpg)
+
 These two approaches did not discount the role of FAIM2 and CALCR. However, their absence was mainly due to the content of the current KEGG database. On the other hand, these approaches accentuated the role of the MMP2 gene at the FTO locus in skeletal myotubes, given its consistency within the GnRH signaling pathway (Figure 4—figure supplement 3), which is in line with previous studies linking its expression with obesity (Derosa et al., 2008; Aksoyer Sezgin et al., 2022; Nonino et al., 2021).
 
-## Supportive evidence by colocalization of target effector genes with eQTLs
+### Supportive evidence by colocalization of target effector genes with eQTLs
 
 The GTEx consortium has characterized thousands of eQTLs, albeit in heterogeneous bulk tissues (Pejman, 2017). To assess how many observed gene-SNP pairs agreed with our physical variant-to-gene mapping approach in our multiple separate cellular settings, we performed colocalization analysis using ColocQuiaL (Chen et al., 2022).
 
@@ -134,9 +669,17 @@ The GTEx consortium has characterized thousands of eQTLs, albeit in heterogeneou
 
 Of these 20 SNPs, 15 were at the ADCY3 locus, in LD with sentinel variant rs4077678, and all implicated ADCY3 as the effector gene in 29 cell types – 15 metabolic, 6 immune, 4 neural cell types, and 4 independent cell lines (Figure 5C). Indeed, missense mutations have been previously reported for this gene in the context of obesity (Grarup et al., 2018; Stergiakouli et al., 2014) while another member of this gene family, ADCY5, has also been extensively implicated in metabolic traits (Sinnott-Armstrong et al., 2021).
 
-## Predicting transcription factors (TFs) binding disruption at implicated genes contributing to obesity risk
+### Predicting transcription factors (TFs) binding disruption at implicated genes contributing to obesity risk
 
 TFs regulate gene expression by binding to DNA motifs at enhancers and silencers, where any disruption by a SNP can potentially cause dysregulation of a target gene. Thus, we used motifbreakR (R package) to predict such possible events at the loci identified by our variant-to-gene mapping. Each variant was predicted to disrupt the binding of several different TFs, thus requiring further literature cross-examination to select the most probable effects. For example, rs7132908 (consistently contacting FAIM2 in 25 cell types) was predicted to disrupt the binding of 12 different transcription factors. Among them, SREBF1 (Figure 6A) was the only TF that concurred with evidence that it regulates AQP2 and FAIM2 at the same enhancer (Kikuchi et al., 2021). The full prediction list can be found in Supplementary file 1f.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig6-v1.jpg)
+
+**Figure 6.:** (A) Genome view at the FAIM2 locus where rs7132908 is located and can target many genes through many chromatin contacts, presented by arcs (different colors for different cell types). rs7132908 was predicted by motifBreakR to disrupt the TF SREBF1’s binding site, thus potentially altering the expression of its implicated genes. (B) Mosaic plot shows number of variants that were annotated with disrupt-TF-binding affect by motifBreakR, and the proportions that also overlapped with predicted TF footprint from ATAC-seq TF footprint analysis. Fisher exact test was performed and produced p-value = 1. (C) Stacked bar plot for all the variants from variant-to-gene analysis, showing number of transcription factor binding sites each of the variant can disrupt (predicted by motifbreakR – green), or simply overlap (analyzed by RGT suite – purple), or both (blue).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95411/elife-95411-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) At the CALCR locus, rs6943527 was predicted by motifbreakR to disrupt RBPJ binding in naïve T-cells that got activated for 24 hr. (B) From METTL15 locus, rs11030197 is one of the few variants that only targets one single gene promoter, namely BDNF gene, but is implicated in many cell types. It was predicted to disrupt the binding sites of six different TFs in melanocytes and enteroids. (C) A variant from BDNF locus, rs75707145 is predicted to disrupt at least 14 TFs binding sites, supported by overlaps with cREs-MPBS in pre-adipocytes, pancreatic cells, permissive osteoblasts, EndoC BH1 cell and NCIH716 cell lines. (D) At ADCY3 locus, rs7580081 was predicted to disrupt AHR binding in pre-adipocytes and RXRA binding in adipocytes. (E) The ‘regulatory-hub’ variant rs61888800 of BDNF locus was found to contact multiple genes across 41 different cell types and was predicted by motifbreakR to disrupt binding sites of many TFs. The overlaps with cREs-MPBS only provided support for disruption of binding of PROX1 and PRDM4 in germinal center B cell-like cell line, naïve B cells, naive T cells, and the HEPG2 cell line where it contacts via short-ranged chromatin loops with the BDNF promoter, and long-ranged chromatin loops with several lncRNA genes: AC090833.1, AC100773.1, AC090791.1 and AC013714.1. (F) Another variant, rs60802568, at ADCY3 locus was predicted to disrupt bindings of SREBF1 and SREBF2, which were supported by cREs-MPBS from ATAC-seq footprints from astrocytes, pre-adipocytes, adipocytes and osteocytes derived from mesenchymal stem cells. It was also predicted to disrupt ZBTB4 and NR1H4 with supported cREs-MPBS from ATAC-seq footprints only in osteocytes derived from mesenchymal stem cells. (G) At the TMEM18 locus, rs10865551 was predicted to disrupt the binding site of RREB1, in pancreatic alpha and beta cells (from the single-cell data set) by motifbreakR, which were supported by cREs-MPBS from ATAC-seq footprints from these cell types; the target genes through chromatin contact were different between these cell types, where rs10865551 contacts the AC141930.2 promoter in alpha cells, but contacts SH3YL1 and ACP1 promoters in beta cells. About eleven thousand bases upstream from that was rs5017303, which was predicted to disrupt binding sites of BC11A in adipocytes but contacts the same gene AC141930.2 as in pancreatic alpha cells.
 
 To narrow down the list of putative TF binding sites at each variant position, we leveraged the ATAC-seq footprint analysis using the RGT suite (Li et al., 2019). The final set of Motif-Predicted Binding Sites (MPBS) within each cell type ATAC-seq footprints was used to overlap with the genomic locations of the OCRs, and then overlapped with our obesity variants, resulting in annotated 29 variants. Mosaic plot in Figure 6B shows the number and proportions of variants predicted by motifbreakR and/or overlapped with MPBS. Insignificant p-value from Fisher’s exact test indicated the independence of the two analyses. Only seven variants were found within the cREs for the same TF motifs predicted to be disrupted by motifbreakR (Figure 6C). Figure 6—figure supplement 1 outlines the seven variants that motifbreakR and ATAC-seq footprint analysis agreed on the TF bindings they might disrupt.
 
@@ -170,17 +713,17 @@ Another limitation of this work is the diversity in data quality among different
 
 Our results have provided a set of leads for future exploratory experiments in specific cellular settings in order to further expand our knowledge of childhood obesity genomics and hence equip us with more effective means to overcome the burden of this systematic disease.
 
-## Conclusion
+### Conclusion
 
 Our approach of combining RNA-seq, ATAC-seq, and promoter Capture C/Hi-C datasets with GWAS summary statistics offers a systemic view of the multi-cellular nature of childhood obesity, shedding light on potential regulatory regions and effector genes. By leveraging physical properties, such as open chromatin status and chromatin contacts, we enhanced the fine-mapping process and gained new insights into the biological pathways influencing the disease. Although further functional validation is required, our findings provide valuable leads together with their cellular contexts for future research and the development of more effective strategies to address the burden of childhood obesity.
 
 ## Materials and methods
 
-## Data and resource
+### Data and resource
 
 Datasets used in prior studies are listed in Supplementary file 1a. ATAC-seq, RNA-seq, Hi-C, and Capture-C library generation for each cell type is provided in their original published study.
 
-## Cell lines/types resources
+### Cell lines/types resources
 
 details of each cell type/cell line source were described in their original published study, provided in Supplementary file 1a.
 
@@ -190,64 +733,64 @@ The rest of the cell types were isolated from samples, obtained from consented h
 
 This study also includes human adipocytes and pre-adipocytes from P. Seale’s lab, hepatocytes from P. Titchnell’s lab, trabecular meshwork cells from J. O’Brien’s lab, which will be described in detail in separate manuscripts currently in preparation.
 
-## ATAC-seq preprocessing and peaks calling
+### ATAC-seq preprocessing and peaks calling
 
 The detailed configurations and technical details for each data set are provided in the original studies. In brief, open chromatin regions were called using ENCODE ATAC-seq pipeline as previously described in each study the published data provided. In brief, reads were aligned to the hg19 or hg38 genome using bowtie2; duplicates were removed, alignments from all replicates were pooled, and narrow peaks were called using MACS2. A region was considered open if it overlapped at least 1 bp with ATAC-seq peak. We lifted all coordinates from hg19 to hg38 to ensure consistency between datasets.
 
-## Promoter Capture-C pre-processing and interaction calling
+### Promoter Capture-C pre-processing and interaction calling
 
 in brief, paired-end reads were pre-processed using HICUP pipeline (Wingett et al., 2015) with bowtie2 as aligner and hg19 for reference genome. Significant promoters’ interactions were called using unique read pairs from all baits promoter in the reference by CHICAGO (Cairns et al., 2016) pipeline. In addition to analysis of individual fragments (1frag), we also binned four fragments to improve long-distance sensitivity in interactions calling (Su et al., 2021). Interactions with CHICAGO score >5 in either 1-fragment or 4-fragment resolution were considered significant. These interactions were output as ibed format (similar to BEDPE format) in which each line represents one physical contact between fragments. Interactions from both resolutions were merged and their genomic coordinates were lifted from hg19 to hg38.
 
-## Hi-C pre-processing and interaction calling
+### Hi-C pre-processing and interaction calling
 
 We follow the pipeline as a recent study described (Su et al., 2022). Paired-end reads from each replicate were pre-processed using the HICUP pipeline v0.7.4 (Wingett et al., 2015), aligned by bowtie2 with hg38 as the reference genome. The alignments files were parsed to pairtools v0.3.0 to process and pairix v0.3.7 to index and compress, then converted to Hi-C matrix binary format.cool by cooler v0.8.11 at multiple resolutions (500 bp, 1, 2, 4, 10, 40, 500kbp and 1Mbp) and normalized with ICE method (Imakaev et al., 2012). The matrices from different replicates were merged at each resolution using cooler. Mustache v1.0.1 Roayaei et al., 2020 and Fit-Hi-C2 v2.0.7 (Kaul et al., 2020) were used to call significant intra-chromosomal interaction loops from merged replicates matrices at three resolutions 1 kb, 2 kb, and 4 kb, with significance threshold at q-value <0.1 and FDR <1 × 10−6, respectively. The identified interaction loops were merged between both tools at each resolution. Lastly, interaction loops from all three resolutions were merged with preference for smaller resolution if overlapped.
 
-## Definition of cis-regulatory elements (cREs)
+### Definition of cis-regulatory elements (cREs)
 
 We intersected ATAC-seq open chromatin regions (OCRs) of each cell type with chromatin conformation capture data determined by Hi-C/Capture-C of the same cell type, and with promoters –1,500/+500 bp of TSS, which were referenced by GENCODE v30.
 
-## Childhood obesity GWAS summary statistics
+### Childhood obesity GWAS summary statistics
 
 Data on childhood obesity from the EGG consortium was downloaded from https://www.egg-consortium.org/. We used 8,566,179 European ancestry variants (consisting of 8,613 cases and 12,696 controls in stage I; of 921 cases and 1930 controls in stage II), representing ~55% of the total 15,504,218 variants observed across all ancestries in the original study (Bradfield et al., 2019). The sumstats file was reformatted by munge_sumstats.py to standardize with the weighted variants from HapMap v3 within the LDSC baseline, which reduced the variants to 1,217,311 (7.8% of total).
 
-## Cell type specific partitioned heritability
+### Cell type specific partitioned heritability
 
 We used LDSC (http://www.github.com/bulik/ldsc) v.1.0.1 (Finucane et al., 2015) with --h2 flag to estimate SNP-based heritability of childhood obesity within 4 defined sets of input genomic regions: (1) OCRs, (2) OCRs at gene promoters, (3) cREs, and (4) cREs with an expanded window of ± 500 bp. The baseline model LD scores, plink filesets, allele frequencies and variants weights files for the European 1000 genomes project phase 3 in hg38 were downloaded from the provided link (https://alkesgroup.broadinstitute.org/LDSCORE/GRCh38/). The cREs of each cell type were used to create the annotation, which in turn were used to compute annotation-specific LD scores for each cell types cREs set.
 
-## Genetic loci included in variant-to-genes mapping
+### Genetic loci included in variant-to-genes mapping
 
 19 sentinel signals that achieved genome-wide significance in the trans-ancestral meta-analysis study (Bradfield et al., 2019) were leveraged for our analyses. Proxies for each sentinel SNP were queried using TopLD Huang et al., 2022 and LDlinkR tool (Myers et al., 2020) with the GRCh38 Genome assembly, 1000 Genomes phase 3 v5 variant set, European population, and LD threshold of r2 >0.8, which resulted in 771 proxies, including the 21 SNPs from the 99% credible set of the original study (Supplementary file 1g).
 
-## RNA-seq preprocessing and expression profiling
+### RNA-seq preprocessing and expression profiling
 
 The detailed configurations, steps, and technical details for each data set are provided in the original studies. In brief, read fragments from fastq files were mapped to genome assembly hg19 or hg38 using STAR, independently for each replicate and condition. We used GENCODE annotation files for feature annotation and htseq-count for raw read count calculation at each feature. Read counts were transformed into TPM (transcript per million) and normalized internally between replicates/conditions in each individual study. For comparative measurements, we transformed all the expression values into 0–100 scale.
 
-## Differential analysis and clustering of correlated genes
+### Differential analysis and clustering of correlated genes
 
 Normalized transcripts per million (TPM) of all measured genes in 46 of 57 cell types was used to perform differential analysis using DEseq2 package (Love et al., 2014), where cell type and system (immune, metabolic, neural and other) were used as variables for the modeling contrast. Because many of the genes we gathered from the variant-to-gene mapping were lowly expressed in corresponding cell types or others, causing relatively high levels of variability, we used apeglm method for effect size (logarithmic fold change estimates) shrinkage Zhu et al., 2019 to alleviate this phenomenon during the genes ranking. Weighted correlation network analysis (WGCNA) package (Langfelder and Horvath, 2008) was used to cluster genes from the variant-to-genes mapping process. WGCNA network construction power was chosen based on the analysis of scale-free topology for soft-thresholding. blockwiseModules with a power of 10 were used to create the correlation network and cluster genes into 3 modules of similarly expressed genes (Figure 4—figure supplement 4). The assigned colors were used to identify the gene modules: turquoise, grey, and blue.
 
-## Pathways enrichment analyses
+### Pathways enrichment analyses
 
 We performed three analyses on the set of genes from the variant-to-genes mapping process:
 
 Gene set over-representation analysis (ORA) was performed using clusterProfiler package Wu et al., 2021 to identify GO biology process terms (org.Hs.eg.db databese) enriched within our genes set in each cell type. A relaxed p-value cutoff was set at 0.1, and the minimum including genes was set at 2 to ensure the capture of all possible enriched terms. An adjusted p-value of 0.05 was later used to filter the significant terms.
 
-## Active-subnetwork-oriented gene set enrichment analysis
+### Active-subnetwork-oriented gene set enrichment analysis
 
 We used the pathfindR package Ulgen et al., 2019 to identify active subnetworks in protein-protein interaction networks from Biogrid, KEGG, STRING, GeneMania, and IntAct databases, using the list of genes from the variant-to-genes mapping process. Then we provided the statistic from the differential expression analysis for pathfindR to perform enrichment analyses on the identified subnetworks, discovering enriched KEGG pathways.
 
-## Customized signaling pathway impact analysis (SPIA)
+### Customized signaling pathway impact analysis (SPIA)
 
 The original method, proposed by Tarca in 2009 in SPIA package (Tarca et al., 2009), incorporates ORA with the adjacency matrix to measure the importance of genes within each pathway – genes that are connected to more other genes are likely more important than the downstream end-point genes. This pathway-topology approach measures the actual perturbation on a given pathway under a given condition and given differential effect size. We added more metrics to improve this method: (a) the score of gene impact among networks, (b) the neighborhood of genes that measure the importance of a gene based on its downstream effects, (c) the betweenness puts weight on the genes that act as a gateway for the network flow. The combination of metrics produces two ways of evidence – perturbance and enrichment – for each pathway similar to SPIA. Normal inverse cumulative distribution function was used to combine the p-values of this evidence, then Bonferroni and FDR correction was applied (Figure 4—figure supplement 2).
 
-## GWAS-eQTL colocalization
+### GWAS-eQTL colocalization
 
 The summary statistics for the European ancestry subset from the EGG consortium GWAS for childhood obesity was used. Common variants (MAF  ≥ 0.01) from the 1000 Genomes Project v3 samples were used as a reference panel. We used non-overlapped genomic windows of ±250,000 bases extended in both directions from the median genomic position of each of 19 sentinel loci as input. We used ColocQuiaL Chen et al., 2022 to test genome-wide colocalization of all possible variants included in each inputted window against GTEx v.8 eQTLs associations for all 49 tissues available from https://www.gtexportal.org/home/datasets. A conditional posterior probability of colocalization of 0.8 or greater was imposed.
 
-## ATAC-seq transcription factor footprint analysis with RGT toolkit
+### ATAC-seq transcription factor footprint analysis with RGT toolkit
 
 Bam files of mapped reads from replicates and samples were merged for each cell type. The merged bam files were then used for footprinting by RGT-HINT with parameters: --atac-seq, –paired-end, –organism = hg38. If bam files were generated on hg19, we performed lift-over using CrossMap.py bam and hg19ToHg38.over.chain.gz file. We then used RGT-MOTIFANALYSIS matching to scan each footprint for possible transcription binding sites from HOCOMOCO and JASPAR databases for human only with parameter --filter ‘species:sapiens;database:hocomoco,jaspar_vertebrates’. Parameter –rand-proportion 10 was used to generate random putative binding sites with sizes ten times larger than the input footprints. After performing motif matching, we evaluated which transcription factors were more likely to occur in those footprints than in background regions (generated by the previous command) using RGT-MOTIFANALYSIS enrichment with the same filtered databases and default parameters. Output included all the Motif-Predicted Binding Sites (MPBS) that occurred within the identified footprints in each cell type. We overlapped these sites with the loci of our obesity variants.
 
-## Prediction of variant’s effect on transcription factor binding
+### Prediction of variant’s effect on transcription factor binding
 
 Genomic positions (0-based coordinates) and allele alternatives of each proxy (from SNPlocs.Hsapiens.dbSNP155.GRCh38 package with matching reference sequence from BSgenome package) were used to scan all position frequency matrix databases (from MotifDb package) for potential transcription factor binding disruptive effects. The motifbreakR function from motifBreakR package was used, with filterp = TRUE and setting a p-value threshold = 0.0005, information content methods method='ic' with even background probabilities of the four nucleotides bkg = c(A=0.25, C=0.25, G=0.25, T=0.25) and BPPARAM = BiocParallel::SerialParam() to allow serial evaluation.

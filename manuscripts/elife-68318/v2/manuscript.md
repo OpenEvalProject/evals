@@ -40,7 +40,7 @@ We hypothesised that integrating the sinh-arcsinh distribution into a distributi
 
 ## Materials and methods
 
-## Data
+### Data
 
 In this work, we compared a set of probability distributions and regression specifications to identify a modelling strategy that produced stable and accurate estimates of sexual partner age distributions with well-quantified uncertainty. We conducted two model comparison experiments to identify which of a set of strategies best replicated partner age distributions. First, in our probability distribution comparison, we identified which of a set of distribution-dependent variable combinations fit best to age-/sex-specific data subsets, and then, in our distributional regression evaluation, we tested whether distributional regression methods could be used to estimate age-/sex-specific partner age distributions by sharing strength across observations. In distributional regression, all parameters of a distribution can vary with respect to data, so it allowed us to smooth and interpolate even higher order moments of observed partner ages. We divided the model comparison into two separate experiments to make the probability distribution comparison as fair as possible (accounting for the possibility that certain distributions would perform particularly well under certain regression specifications).
 
@@ -48,51 +48,167 @@ We analysed data on sexual partner age distributions from three sources: the Afr
 
 The AHRI and Manicaland studies are multi-round, open, general population cohort studies designed to measure the dynamics of HIV, sexual risk behaviour, and demographic change in sub-Saharan African settings. We used rounds one through six of the Manicaland study, collected between 1998 and 2013. The AHRI data we used were collected annually between 2004 and 2018. The 2016–17 Haiti DHS was a large, nationally representative household survey conducted in 2016 and 2017. We did not incorporate the weights associated with the survey into this analysis because our primary interest was in statistical modelling of partner age distribution as a function of respondent age, not producing population representative statistics for the Haitian population.
 
-These data sets consisted of individuals’ reports of their own age and sex and the ages of each of their sexual partners from the last year. Let i∈(1,…,N) index reported partnerships, ai∈[15,64] and si∈{0,1} be the age and sex of the respondent in partnership i with s=1 indicating female, and pi be the age of non-respondent partner in partnership i. These questionnaires do not ask specifically about partner sex, but self-reporting of non-heterosexual partnerships in these populations is thought to be low (Arias Garcia et al., 2020; World Health Organization and UNAIDS, 2020).
+These data sets consisted of individuals’ reports of their own age and sex and the ages of each of their sexual partners from the last year. Let $i\in(1,…,N)$ index reported partnerships, $a_{i}\in[15,64]$ and $s_{i}\in{0,1}$ be the age and sex of the respondent in partnership $i$ with $s=1$ indicating female, and pi be the age of non-respondent partner in partnership $i$. These questionnaires do not ask specifically about partner sex, but self-reporting of non-heterosexual partnerships in these populations is thought to be low (Arias Garcia et al., 2020; World Health Organization and UNAIDS, 2020).
 
 Respondents in each of these data sets are disproportionately likely to report that their partners’ ages are multiples of five or multiples of five away from their own age, leading to distinct ‘heaping’ in the empirical partner age (or age difference) distributions at multiples of five. For example, if a questionnaire asks ‘how many years older or younger is your partner than you?', respondents might be disproportionately likely to report a multiple of five, leading to age differences that are heaped on multiples of five. We tested the sensitivity of our results to heaping by developing a simple ‘deheaping’ algorithm, applying it to the AHRI data, and running each analysis on the deheaped AHRI data. We present these results in Appendix section ‘Age heaping'.
 
-## Probability distribution comparison
+### Probability distribution comparison
 
 To identify the best probability distribution for modelling sexual partner age distributions, we split all three data sets into 12 subsets by sex and five-year age bin ranging from 20 to 50, resulting in 36 subsets, and fit a number of distribution-dependent variable combinations to each subset.
 
-## Distributions
+#### Distributions
 
 We tested five candidate probability distributions: normal, skew normal, beta, gamma, and sinh-arcsinh. Table 1 summarises the domains, parameters, and probability density functions (PDFs) of these distributions. Because the gamma distribution is always right-skewed and men typically partner with women who are younger than them, we transformed data among male respondents to be right-skewed when using the gamma distribution. Specifically, we multiplied the men’s partners’ ages by −1 to reflect the distribution horizontally across the y-axis, and added 150 to the reflected ages to ensure that all resulting values were positive. Similarly, the beta distribution is only defined on the interval (0, 1), so, only when using a beta distribution, we scaled all partner ages to be between zero and one using upper and lower bounds of 0 and 150.
 
-The sinh-arcsinh distribution, presented by Jones and Pewsey, 2009, is an extension of Johnson’s distribution (Johnson, 1949). It has four parameters: location, scale, skewness, and tail weight (denoted, μ, σ, ϵ, and δ, respectively), and it can deviate substantially from the normal distribution. Figure 1 plots the density of this distribution with μ=0 and σ=1 for a variety of values of skewness and tail weight.
+**Table 1.**
+ Details of the five distributions tested in this analysis.We define $x_{z}=(x-\mu)/\sigma$, $p⁢(x)$ to be the standard normal PDF, $Φ⁢(x)$ to be the standard normal cumulative density function, $S_{ϵ,\delta}⁢(x)=sinh⁡(ϵ+\delta⁢asinh(x))$, and $C_{ϵ,\delta}⁢(x)=cosh⁡(ϵ+\delta⁢asinh(x))$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Distribution</th>
+      <th>Parameters</th>
+      <th>Domain</th>
+      <th>PDF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Normal</td>
+      <td>μ⁢(location)σ&gt;0⁢(scale)</td>
+      <td>ℝ</td>
+      <td>1σ⁢2⁢π⁢exp⁡[-xz2]</td>
+    </tr>
+    <tr>
+      <td>Skew normal</td>
+      <td>μ⁢(location)σ&gt;0⁢(scale)ϵ⁢(skewness)</td>
+      <td>ℝ</td>
+      <td>2σ⁢p⁢(xz)⁢Φ⁢(ϵ⁢xz)</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>k&gt;0⁢(shape)θ&gt;0⁢(scale)</td>
+      <td>ℝ+</td>
+      <td>1Γ⁢(k)⁢θk⁢xk-1⁢exp⁡[-xθ]</td>
+    </tr>
+    <tr>
+      <td>Beta</td>
+      <td>α&gt;0⁢(left)β&gt;0⁢(right)</td>
+      <td>ℝ(0,1)</td>
+      <td>xα-1⁢(1-x)β-1B⁢(α,β)</td>
+    </tr>
+    <tr>
+      <td>Sinh-arcinh</td>
+      <td>μ⁢(location)σ&gt;0⁢(scale)ϵ⁢(skewness)δ&gt;0⁢(tail weight)</td>
+      <td>ℝ</td>
+      <td>1σ⁢2⁢π⁢δ⁢Cϵ,δ⁢(xz)1+xz2⁢exp⁡[-Sϵ,δ⁢(xz)22]</td>
+    </tr>
+  </tbody>
+</table>
+
+The sinh-arcsinh distribution, presented by Jones and Pewsey, 2009, is an extension of Johnson’s distribution (Johnson, 1949). It has four parameters: location, scale, skewness, and tail weight (denoted, μ, σ, $ϵ$, and δ, respectively), and it can deviate substantially from the normal distribution. Figure 1 plots the density of this distribution with $\mu=0$ and $\sigma=1$ for a variety of values of skewness and tail weight.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68318/elife-68318-fig1-v2.jpg)
 
-**Figure 1.:** , μ=0, and a variety of assumptions about σ=1 and δ.ϵ
+**Figure 1.:** The sinh-arcsinh density with $\mu=0$, $\sigma=1$, and a variety of assumptions about $ϵ$ and δ.
 
-## Dependent variable transformations
+#### Dependent variable transformations
 
-We considered the possibility that certain distributions could fit better to particular transformations of the dependent variable (partner age) by testing a set of four potential outcome parametrisations. For example, if X is a positive-valued, right-skewed random variable, then assuming log⁡X is normally distributed might be more effective than assuming that X itself is normal.
+We considered the possibility that certain distributions could fit better to particular transformations of the dependent variable (partner age) by testing a set of four potential outcome parametrisations. For example, if $X$ is a positive-valued, right-skewed random variable, then assuming $log⁡X$ is normally distributed might be more effective than assuming that $X$ itself is normal.
 
-Let yi be the dependent variable value for partnership i, and let ai and pi be the respondent age and partner age of partnership i, respectively. We tested the following dependent variables:
+Let yi be the dependent variable value for partnership $i$, and let ai and pi be the respondent age and partner age of partnership $i$, respectively. We tested the following dependent variables:
 
 Because the gamma and beta distributions are not defined on the entire real line, we only fit them with the linear age dependent variable with the previously discussed transformations.
 
 To identify which distribution-dependent variable combination best modelled the characteristics of sexual partner age distributions, we stratified each of our three data sets by sex and 5-year age bin from 20 to 24 through 45–49. We omitted ages 15–19 from the probability distribution comparison because relatively small sample sizes in that group would make reliable comparison difficult. We fit every viable distribution-dependent variable combination to all 36 data set-/sex-/age bin-specific subsets independently. Given that we fit only the linear age dependent variable to the gamma and beta distributions, comprising a total of 504 models (14 per data subset). We fit each model using the brms R package (Bürkner, 2018), defining custom families as necessary.
 
-## Distributional regression evaluation
+### Distributional regression evaluation
 
-Given a probability distribution that accurately replicated the non-Gaussian characteristics of partner age distributions, we tested whether or not distributional regression would allow us to pool data across age and sex without sacrificing fit. In distributional regression, we make all of our distributional parameters, not just the mean, functions of data (Kneib and Umlauf, 2017). Taking conventional Bayesian regression as an example, we haveyi∼N⁢(μi,σ)μi=β⁢𝐗i,where β and log⁡σ are free parameters. There is an explicit assumption in this model that the standard deviation of the generating distribution is constant across all observations. We can use distributional regression to relax this assumption, making σ a function of data:yi∼N⁢(μi,σi)μi=βμ⁢𝐗iμlog⁡σi=βσ⁢𝐗iσ,where βμ and βσ are now our free parameters. Note that we have not assumed that 𝐗μ=𝐗σ. If 𝐗σ is a column of ones, this model is identical to the conventional case. This approach increases the complexity of the model and requires more data, but, based on previously described characteristics of how the distribution of partnership age distribution changes with age, even a simple model for our distributional parameters could yield large improvements.
+Given a probability distribution that accurately replicated the non-Gaussian characteristics of partner age distributions, we tested whether or not distributional regression would allow us to pool data across age and sex without sacrificing fit. In distributional regression, we make all of our distributional parameters, not just the mean, functions of data (Kneib and Umlauf, 2017). Taking conventional Bayesian regression as an example, we have
 
-In this application, we modelled the log-ratio dependent variable with the sinh-arcsinh distribution, specifying a model for all four distributional parameters:log⁡(pi/ai)∼sinh⁡(μi,σi,ϵi,δi)μi=βμ⁢𝐗iμlog⁡σi⋆=βσ⁢𝐗iσϵi=βϵ⁢𝐗iϵlog⁡δi=βδ⁢𝐗iδσi=σi⋆⁢δi,where βμ, βσ, βϵ, and βδ are free parameters. We placed essentially arbitrary shrinkage priors on all coefficients:βμ, βσ, βϵ, βδ∼N(0,5).
+$$
+y_{i}∼N⁢(\mu_{i},\sigma)\mu_{i}=\beta⁢𝐗_{i},
+$$
 
-By varying the specifications of the four design matrices, 𝐗μ, 𝐗σ, 𝐗ϵ, and 𝐗δ, we tested how well a series of increasingly complex distributional regression models fit to each data set. We fit the following models, which varied in the definitions of their four design matrices:
+where β and $log⁡\sigma$ are free parameters. There is an explicit assumption in this model that the standard deviation of the generating distribution is constant across all observations. We can use distributional regression to relax this assumption, making σ a function of data:
+
+$$
+y_{i}∼N⁢(\mu_{i},\sigma_{i})\mu_{i}=\beta^{\mu}⁢𝐗_{i}^{\mu}log⁡\sigma_{i}=\beta^{\sigma}⁢𝐗_{i}^{\sigma},
+$$
+
+where $\beta^{\mu}$ and $\beta^{\sigma}$ are now our free parameters. Note that we have not assumed that $𝐗^{\mu}=𝐗^{\sigma}$. If $𝐗^{\sigma}$ is a column of ones, this model is identical to the conventional case. This approach increases the complexity of the model and requires more data, but, based on previously described characteristics of how the distribution of partnership age distribution changes with age, even a simple model for our distributional parameters could yield large improvements.
+
+In this application, we modelled the log-ratio dependent variable with the sinh-arcsinh distribution, specifying a model for all four distributional parameters:
+
+$$
+log⁡(p_{i}/a_{i})∼sinh⁡(\mu_{i},\sigma_{i},ϵ_{i},\delta_{i})\mu_{i}=\beta^{\mu}⁢𝐗_{i}^{\mu}log⁡\sigma_{i}^{⋆}=\beta^{\sigma}⁢𝐗_{i}^{\sigma}ϵ_{i}=\beta^{ϵ}⁢𝐗_{i}^{ϵ}log⁡\delta_{i}=\beta^{\delta}⁢𝐗_{i}^{\delta}\sigma_{i}=\sigma_{i}^{⋆}⁢\delta_{i},
+$$
+
+where $\beta^{\mu}$, $\beta^{\sigma}$, $\beta^{ϵ}$, and $\beta^{\delta}$ are free parameters. We placed essentially arbitrary shrinkage priors on all coefficients:
+
+$$
+\beta^{\mu}, \beta^{\sigma}, \beta^{ϵ}, \beta^{\delta}∼N(0,5).
+$$
+
+By varying the specifications of the four design matrices, $𝐗^{\mu}$, $𝐗^{\sigma}$, $𝐗^{ϵ}$, and $𝐗^{\delta}$, we tested how well a series of increasingly complex distributional regression models fit to each data set. We fit the following models, which varied in the definitions of their four design matrices:
 
 Table 2 describes all five models. By fitting a wide set of specifications, we hoped to assess whether the additional complexity incurred by distributional regression was valuable. We fit each of the five models to all three data sets, including all respondents aged 15–64 years. We implemented these analyses with brms (Bürkner, 2018), which has deep support for distributional regression. More detailed descriptions of each model are available in the ‘Model specification details’ section of the Appendix. We tested the effect of age heaping on this analysis by fitting to the deheaped AHRI data and report results in the ‘Age heaping’ section of the Appendix.
 
-## Model comparison
+**Table 2.**
+ Summary of five models fit in this analysis.
 
-Across both analyses, we used two metrics to measure model fit. First, we calculated the expected log posterior density (ELPD), which estimates the density of the model at a new, unobserved data point (Vehtari et al., 2017). In cases where we wanted to compare across dependent variables, we multiplied the posterior densities of any variables resulting from non-linear transformations of observed partner ages by the Jacobians of the transformations. For example, if our observation model was defined on the log-age dependent variable yi=log⁡pi, we divided the posterior density by pi. We used the loo R package (Vehtari et al., 2020) to calculate ELPD values.
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Distributional?</th>
+      <th>Location</th>
+      <th>Other parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Conventional</td>
+      <td>No</td>
+      <td>Age-sex interaction</td>
+      <td>Constant</td>
+    </tr>
+    <tr>
+      <td>Distributional 1</td>
+      <td>Yes</td>
+      <td>Age-sex interaction</td>
+      <td>Age and sex effects</td>
+    </tr>
+    <tr>
+      <td>Distributional 2</td>
+      <td>Yes</td>
+      <td>Age-sex interaction</td>
+      <td>Age-sex interaction</td>
+    </tr>
+    <tr>
+      <td>Distributional 3</td>
+      <td>Yes</td>
+      <td>Sex-specific splines</td>
+      <td>Age-sex interaction</td>
+    </tr>
+    <tr>
+      <td>Distributional 4</td>
+      <td>Yes</td>
+      <td>Sex-specific splines</td>
+      <td>Sex-specific splines</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model comparison
+
+Across both analyses, we used two metrics to measure model fit. First, we calculated the expected log posterior density (ELPD), which estimates the density of the model at a new, unobserved data point (Vehtari et al., 2017). In cases where we wanted to compare across dependent variables, we multiplied the posterior densities of any variables resulting from non-linear transformations of observed partner ages by the Jacobians of the transformations. For example, if our observation model was defined on the log-age dependent variable $y_{i}=log⁡p_{i}$, we divided the posterior density by pi. We used the loo R package (Vehtari et al., 2020) to calculate ELPD values.
 
 To measure the ability of our models to replicate partner age distributions in an objective and interpretable way, we found the root mean squared error (RMSE) between the observed and posterior predictive quantiles. We calculated quantiles from 10 to 90 in increments of 10 by age bin and sex in the data and in the posterior predictions, and found the error in model prediction of each quantile. This measure tells how well our model predicts the entire distribution in the same units as our predictions. It is equivalent to finding the root mean squared distance from the line of equality in a quantile-quantile (QQ) plot.
 
-## Software
+### Software
 
 We conducted all of these analysis using the R programming language (R Development Core Team, 2020) and the brms library (Bürkner, 2018). We used the loo library to estimate all ELPDs (Vehtari et al., 2020), and produced all plots in this paper with the ggplot2 library (Wickham, 2016). We cannot provide the data we used for this analysis, but we do provide code and data for a simulated case on GitHub (https://github.com/twolock/distreg-illustration; Wolock, 2021, copy archived at swh:1:rev:a7f808f2cde2bb16edde8fdcbfa6e208df7952f9).
 
@@ -106,7 +222,7 @@ The AHRI data included 77,619 partnerships, Manicaland had 58,676, and the Haiti
 
 Within each data set, there is systematic variation across sex. For example, the standard deviation of partner ages in the Haiti DHS increased by 2.5 years among men and only by 0.5 years among women. These summary statistics illustrate the heterogeneity of partner age distributions across age and sex.
 
-## Probability distribution comparison
+### Probability distribution comparison
 
 To identify the probability distribution that most accurately described the variation in sexual partner age distributions, we first determined the dependent variable with the highest ELPD for each distribution-dependent variable combination. Figure 4 illustrates each probability distribution’s best fit to AHRI data among women aged 35–39 with each of the best distribution-specific dependent variables. Results for all 36 data subsets and the 12 deheaped subsets are presented in Appendix 1—table 2–9.
 
@@ -114,15 +230,222 @@ To identify the probability distribution that most accurately described the vari
 
 **Figure 4.:** Posterior predictive distributions come from fitting each age bin/sex combination independently.
 
-The best dependent variable varied across data subset and probability distribution. Table 3 provides the share of data sets for which each dependent variable has the highest ELPD given each distribution. The log-ratiodependent variable was best in 50.0% of subsets with a normal distribution, but it was best in only 27.8% of subsets with a skew normal distribution. The dependent variable that was best in a plurality of subsets in each probability distribution (i.e. the variable with the highest percentage in each column of Table 3) used a log link function. We restricted all remaining comparisons to each distribution-subset combination’s best dependent variable.
+The best dependent variable varied across data subset and probability distribution. Table 3 provides the share of data sets for which each dependent variable has the highest ELPD given each distribution. The log-ratiodependent variable was best in 50.0% of subsets with a normal distribution, but it was best in only 27.8% of subsets with a skew normal distribution. The dependent variable that was best in a plurality of subsets in each probability distribution (i.e. the variable with the highest percentage in each column of Table 3) used a $log$ link function. We restricted all remaining comparisons to each distribution-subset combination’s best dependent variable.
+
+**Table 3.**
+ Share of subsets in which each dependent variable yields the highest ELPD given each probability distribution (excluding deheaped AHRI data).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Normal</th>
+      <th>Skew normal</th>
+      <th>Sinh-arcsinh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age difference</td>
+      <td>22.2%</td>
+      <td>25.0%</td>
+      <td>16.7%</td>
+    </tr>
+    <tr>
+      <td>Linear age</td>
+      <td>8.3%</td>
+      <td>5.6%</td>
+      <td>16.7%</td>
+    </tr>
+    <tr>
+      <td>Log-age</td>
+      <td>19.4%</td>
+      <td>41.7%</td>
+      <td>30.6%</td>
+    </tr>
+    <tr>
+      <td>Log-ratio</td>
+      <td>50.0%</td>
+      <td>27.8%</td>
+      <td>36.1%</td>
+    </tr>
+  </tbody>
+</table>
 
 The sinh-arcsinh distribution had the highest ELPD in 35 of 36 data subsets (98%). In 29 of the 35 (83%) cases in which the sinh-arcsinh provided the highest ELPD, the absolute value of the ratio of the difference between the two best ELPDs and the estimated standard error of the difference was greater than 2, indicating that the sinh-arcsinh distribution was significantly better than the alternatives in the majority of cases. In one case, men aged 20–24 in the Haiti DHS, the skew normal distribution resulted in a slightly higher ELPD than the sinh-arcsinh distribution, but the standard error of the difference was greater than the difference. These results were not affected by deheaping the data (Appendix section ‘Age heaping’).
 
 To summarise each distribution’s performance, we calculated the average ELPD and QQ RMSE across the three data sets (Table 4). The sinh-arcsinh distribution had the highest average ELPD and lowest average QQ RMSE in all three data sets. The sinh-arcsinh distribution was, on average, able to predict the empirical quantiles of each data set within half a year of accuracy (0.36, 0.37, and 0.44 years for the AHRI, Haiti DHS, and Manicaland data, respectively). Overlaid QQ plots are presented in Appendix 1—figure 3.
 
-## Distributional regression evaluation
+**Table 4.**
+ Model comparison metrics averaged across all data subsets for all three data sets.Higher ELPD values indicate better fit. Lower QQ RMSE values indicate more accurate prediction of empirical quantiles. Bolded rows are best across all three data sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Distribution</th>
+      <th>AHRI</th>
+      <th>Haiti 2016–17 DHS</th>
+      <th>Manicaland</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">ELPD</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>−14847.2</td>
+      <td>−2917.9</td>
+      <td>−13152.8</td>
+    </tr>
+    <tr>
+      <td>Beta</td>
+      <td>−14748.0</td>
+      <td>−2896.5</td>
+      <td>−13003.5</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>−14593.7</td>
+      <td>−2868.4</td>
+      <td>−12856.8</td>
+    </tr>
+    <tr>
+      <td>Skew normal</td>
+      <td>−14505.1</td>
+      <td>−2854.0</td>
+      <td>−12778.5</td>
+    </tr>
+    <tr>
+      <td>Sinh-arcsinh</td>
+      <td>−14312.5</td>
+      <td>−2839.5</td>
+      <td>−12625.8</td>
+    </tr>
+    <tr>
+      <td colspan="4">QQ RMSE</td>
+    </tr>
+    <tr>
+      <td>Gamma</td>
+      <td>0.83</td>
+      <td>0.82</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Beta</td>
+      <td>0.99</td>
+      <td>0.82</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <td>Normal</td>
+      <td>0.82</td>
+      <td>0.68</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Skew normal</td>
+      <td>0.77</td>
+      <td>0.65</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>Sinh-arcsinh</td>
+      <td>0.36</td>
+      <td>0.37</td>
+      <td>0.44</td>
+    </tr>
+  </tbody>
+</table>
+
+### Distributional regression evaluation
 
 We fit all five distributional regression specifications to all three of our data sets with sinh-arcsinh distributions and log-ratio-dependent variables and compared the ELPDs and QQ RMSEs as before (provided in Table 5). Across all three data sets, the most complex distributional model (Distributional 4) had the highest ELPD and lowest QQ RMSE. When fit to the AHRI and Manicaland data sets (but not for the Haiti DHS), the most complex distributional model was at least two standard errors better than the next best model. Notably, the largest ELPD improvements came from moving from conventional regression (Conventional) to the simplest distributional model (improvements of 1646.0 units, 361.0 units, and 2181.2 units in the AHRI, Haiti DHS, and Manicaland data, respectively). Full results are presented in Appendix 1—table 10.
+
+**Table 5.**
+ ELPD and QQ RMSE values for all five distributional regression models fit to each data set.The models increase in complexity from Conventional Regression to Distributional Model 4. Bolded ELPD values are more than two standard errors higher than the next best value in the column. Bolded QQ RMSE values are lowest in their column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>AHRI</th>
+      <th>Haiti 2016–17 DHS</th>
+      <th>Manicaland</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">ELPD</td>
+    </tr>
+    <tr>
+      <td>Conventional</td>
+      <td>52689.2</td>
+      <td>4777.8</td>
+      <td>21011.3</td>
+    </tr>
+    <tr>
+      <td>Distributional 1</td>
+      <td>54335.2</td>
+      <td>5140.8</td>
+      <td>23192.5</td>
+    </tr>
+    <tr>
+      <td>Distributional 2</td>
+      <td>54794.8</td>
+      <td>5138.7</td>
+      <td>23472.1</td>
+    </tr>
+    <tr>
+      <td>Distributional 3</td>
+      <td>55534.2</td>
+      <td>5196.7</td>
+      <td>24313.7</td>
+    </tr>
+    <tr>
+      <td>Distributional 4</td>
+      <td>55841.9</td>
+      <td>5207.6</td>
+      <td>24516.1</td>
+    </tr>
+    <tr>
+      <td colspan="4">QQ RMSE</td>
+    </tr>
+    <tr>
+      <td>Conventional</td>
+      <td>1.30</td>
+      <td>1.33</td>
+      <td>2.05</td>
+    </tr>
+    <tr>
+      <td>Distributional 1</td>
+      <td>1.15</td>
+      <td>0.98</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <td>Distributional 2</td>
+      <td>1.21</td>
+      <td>0.99</td>
+      <td>1.80</td>
+    </tr>
+    <tr>
+      <td>Distributional 3</td>
+      <td>0.93</td>
+      <td>0.91</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>Distributional 4</td>
+      <td>0.66</td>
+      <td>0.84</td>
+      <td>1.04</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 5 shows the posterior predictive distributions from the conventional regression model and the most complex distributional model among men aged 16 years, 24 years, and 37 years in the AHRI data to illustrate the effect of distributional regression. Not only does the distributional model capture the high peak in the youngest age more accurately, but it also allows the variance of the distributions to change appropriately (beyond the change that naturally results from the log link function).
 

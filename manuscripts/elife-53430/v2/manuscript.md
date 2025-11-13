@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Transmembrane protein 175 (TMEM175) is a K + -selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson’s Disease. TMEM175 is evolutionarily distinct from all known channels, predicting novel ion-selectivity and gating mechanisms. Here we present cryo-EM structures of human TMEM175 in open and closed conformations, enabled by resolutions up to 2.6 Å. Human TMEM175 adopts a homodimeric architecture with a central ion-conduction pore lined by the side chains of the pore-lining helices. Conserved isoleucine residues in the center of the pore serve as the gate in the closed conformation. In the widened channel in the open conformation, these same residues establish a constriction essential for K + selectivity. These studies reveal the mechanisms of permeation, selectivity and gating and lay the groundwork for understanding the role of TMEM175 in lysosomal function.
+Transmembrane protein 175 (TMEM175) is a K+-selective ion channel expressed in lysosomal membranes, where it establishes a membrane potential essential for lysosomal function and its dysregulation is associated with the development of Parkinson’s Disease. TMEM175 is evolutionarily distinct from all known channels, predicting novel ion-selectivity and gating mechanisms. Here we present cryo-EM structures of human TMEM175 in open and closed conformations, enabled by resolutions up to 2.6 Å. Human TMEM175 adopts a homodimeric architecture with a central ion-conduction pore lined by the side chains of the pore-lining helices. Conserved isoleucine residues in the center of the pore serve as the gate in the closed conformation. In the widened channel in the open conformation, these same residues establish a constriction essential for K+ selectivity. These studies reveal the mechanisms of permeation, selectivity and gating and lay the groundwork for understanding the role of TMEM175 in lysosomal function.
 
 ## Introduction
 
@@ -26,21 +26,260 @@ Structures of TMEM175 homologs from the prokaryotes Chamaesiphon minutus (Lee et
 
 ## Results
 
-## Human TMEM175 is highly selective for K+
+### Human TMEM175 is highly selective for K+
 
 To measure the ion selectivity of recombinant hTMEM175 channels, we took advantage of the observation that while hTMEM175 is endogenously expressed in the membranes of endosomes and lysosomes, transient overexpression as a GFP-fusion protein in HEK293T cells leads to expression of hTMEM175 at the plasma membrane (Figure 1—figure supplement 1; Lee et al., 2017). The permeation properties of these plasma membrane-localized hTMEM175 channels can be analyzed using whole-cell patch clamp. In a bi-ionic condition, in which the pipette (intracellular) solution contains 150 mM K+ and the bath (extracellular) solution contains 150 mM Na+, hTMEM175 displays a strong preference for K+ (Figure 1A). The reversal potential calculated from voltage families stepping from −100 mV to +100 mV was −55 ± 2.7 mV, corresponding to a K+/Na+ permeation ratio (PK/PNa) of ~9 (Figure 1B). Consistent with previous results (Cang et al., 2015), hTMEM175 is also selective for Cs+ over Na+. In a Cs+/Na+ bi-ionic condition, the mean reversal potential of hTMEM175 is −65 ± 4.1 mV (PCs/PNa of ~13) (Figure 1C–D). We also measured whole-cell currents from non-transfected HEK293T cells, which revealed the presence of non-selective currents whose magnitude varied between 50 and 100 pA at +100 mV (Figure 1—figure supplement 1). Because these endogenous currents are also present in the hTMEM175 transfected cells, the ion-selectivity measurements determined using whole-cell patch clamp underrepresent the selectivity of hTMEM175 and the true values are likely closer to those measured in endolysosomal patch clamp (PK/PNa ~36) (Cang et al., 2015).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig1-v2.jpg)
+
+**Figure 1.:** (A, C) Representative whole-cell electrical recordings of hTMEM175-transfected HEK293T cells. In bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (A) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (C), currents were measured using the following protocol (red): from a holding potential of 0 mV, the voltage was stepped to voltages between −100 and +100 mV, in 20 mV increments, then returned to 0 mV. (B, D) Normalized current-voltage relationships of three independent whole-cell patch clamp recordings of hTMEM175-transfected HEK293T cells in bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (B) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (D). (E) K+ efflux from purified hTMEM175 reconstituted into liposomes in the presence or absence of 1 mM 4-aminopyridine and from empty liposomes was monitored using a fluorescence-based flux assay. Arrows mark addition of the proton ionophore CCCP to initiate K+ flux and addition of the K+ ionophore valinomycin to measure total flux capacity of the liposomes. All experiments were performed in triplicate and error bars represent SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative differential interference contrast microscopy (left) and GFP fluorescence microscopy (right) of non-transfected and hTMEM175 transfected HEK293T cells used for whole-cell patch clamp. (B) Three representative whole-cell electrical recordings of non-transfected HEK293T cells in bi-ionic conditions of 150 mM K+ (intracellular) and 150 mM Na+ (extracellular) (left) or 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular) (right). (C) Normalized current-voltage relationships of experiments shown in B. Currents were normalized to the maximum current of each experiment (at +100 mV). Error bars are shown in SEM. Recording protocol is same as in Figure 1A.
+
 We next overexpressed hTMEM175 in HEK293S GnTi- cells and purified it to homogeneity (Figure 2—figure supplement 1). To assess the activity of the purified channels, we reconstituted hTMEM175 into proteoliposomes composed of a 3:1 ratio of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) and measured channel activity. Using a 9-amino-6-chloro-2-methoxyacridine (ACMA)-based flux assay (Su et al., 2016) with 300 mM K+ inside of the vesicles and 300 mM Na+ outside, robust K+ efflux was detected from proteoliposomes containing hTMEM175 following the addition of the ionophore carbonyl cyanide m-chlorophenylhydrazone (CCCP) compared to empty liposomes (Figure 1E). No flux could be detected when the inhibitor 4-aminopyridine (4-AP) was added to the proteoliposomes at a concentration of 1 mM, demonstrating that reconstituted hTMEM175 channels are active and that they retain their K+ selectivity and their pharmacological sensitivity to 4-AP.
 
-## Structure of hTMEM175
+### Structure of hTMEM175
 
 To investigate the mechanisms that govern hTMEM175 function, we collected cryo-EM images of hTMEM175 purified in 150 mM K+. Three-dimensional classification revealed that two conformations were present among the imaged particles; class 1, which was resolved at a resolution of 2.6 Å, and class 2, which was resolved at a resolution of 3.0 Å (Figure 2A and Figure 2—figure supplement 1, 2 and Table 1). Due to the high degree of similarity between the two classes, we will first describe the higher-resolution class 1 structure (Figure 2B). hTMEM175 is composed of two homologous 6-helix repeat domains that share ~23% sequence identity (Figure 2C and Figure 2—figure supplement 3). Consequently, the density map revealed that while hTMEM175 is homodimeric, similarities between the two 6-helix repeat domains result in a pseudo-four-fold symmetric architecture. Inspection of the map identified features that were sufficiently well resolved to permit us to distinguish repeat I (TM1-TM6) from repeat II (TM7-TM12) and build a de novo structure of hTMEM175, comprising TM1-TM4 and TM7-TM12. The densities corresponding to peripheral helices TM5 and TM6 are too poorly resolved in the map for modelling (Figure 2—figure supplement 2). Viewed from the cytoplasm, hTMEM175 is a diamond-shaped channel measuring ~85 Å along the long axis and ~60 Å along the short axis with the ion-conduction pathway located at the center of the channel along the pseudo-four-fold axis (Figure 2B). The six helices of each repeat form distinct domains and no swapping of domains or helices is evident. Viewed from within the plane of the membrane, most of hTMEM175 is embedded within the membrane with only short loops extending out of the membrane on either side (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cryo-EM density maps of class 1 (cyan) and class 2 (gold) hTMEM175 in KCl depicted from within the membrane. (B) Structure of class 1 hTMEM175 depicted from within the membrane (left) and from the cytoplasm (right). TM1-TM4 (repeat I) and TM7-TM12 (repeat II) of protomer A are shown in blue and red, respectively. Protomer B is shown in grey. Approximate width of the lipid bilayer is shown as grey bars. (C) Topology of hTMEM175. TM1-TM4 (repeat I) and TM7-TM12 (repeat II) are shown in blue and red, respectively. Unmodelled helices TM5 and TM6 are shown in black. (D) Superposition of class 1 hTMEM175 repeat I (blue) with repeat II (red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Superdex 200 size exclusion profile of hTMEM175 (left) and Coomassie-stained PAGE analysis of purified hTMEM175 purified in LMNG and 150 mM KCl (right). Peak fractions from gel filtration are highlighted in the image of the Coomassie-stained gel by a blue box (B) Representative image and 2D class averages of hTMEM175 in 150 mM KCl. (C) Simplified image processing workflow. (D) Density map of class 1 colored by local resolution. (E) Fourier shell correlation (FSC) of two unfiltered half-maps for class 1 (solid cyan) and class 2 (solid gold) and cross correlation plot of two unfiltered half-maps following density modification for class 1 (dotted cyan) and class 2 (dotted gold). (F) Fourier shell correlation (FSC) of refined class 1 model compared with density modified map (cyan) and refined class 2 model compared with density modified map (gold).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Section through 6 Å lowpass-filtered class 1 (left, cyan) and class 2 (right, gold) density maps revealing weak density for poorly ordered transmembrane helices TM5 and TM6. (B–C) Density-modified class 1 (B) and class 2 (C) cryo-EM density maps with atomic model in sticks for TM1, TM2, TM7 and TM8, thresholded at 10 σ and 3 σ, respectively.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Hs – human TMEM175, Bt – cow TMEM175, Mm – mouse TMEM175, Rn – Rat TMEM175, Gg – chicken TMEM175, Dr – Zebrafish TMEM175, Cm - Chamaesiphon minutus TMEM175, Mt - Marivirga tractuosa TMEM175. Identical residues are colored by amino acid. RxxxFSD motif interaction network residues are highlighted by magenta boxes, isoleucine constriction residues are highlighted by blue boxes and residues whose side chains coordinate water molecules that stabilize the kinks in TM1 and TM7 are highlighted by green boxes.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Superposition of class 1 hTMEM175 (cyan) with TMEM175Cm (left, brown - main-chain RMSD = 3.2 Å) and TMEM175Mt (right, magenta - main-chain RMSD = 4.0 Å). (B) Superposition of TM7-TM12 of class 1 hTMEM175 (cyan) with monomeric structures of TMEM175Cm (left, brown - main-chain RMSD = 2.3 Å) and TMEM175Mt (right, magenta - main-chain RMSD = 3.9 Å).
+
+**Table 1.**
+ Cryo-EM data acquisition, reconstruction and model refinement statistics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>hTMEM175</td>
+      <td>hTMEM175</td>
+      <td>hTMEM175</td>
+      <td>hTMEM175</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Class 1 K+</td>
+      <td>Class 2 K+</td>
+      <td>Class 1 Cs+</td>
+      <td>Class 2 Cs+</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cryo-EM acquisition and processing</td>
+    </tr>
+    <tr>
+      <td>EMDB accession #</td>
+      <td>21603</td>
+      <td>21604</td>
+      <td>21605</td>
+      <td>21606</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+      <td>22,500x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Total electron exposure (e- / Å2)</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Defocus range (uM)</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+      <td>-1.0 to -2.5</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.088</td>
+      <td>1.088</td>
+      <td>1.088</td>
+      <td>1.088</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Initial particles</td>
+      <td>4,153,614</td>
+      <td>4,153,614</td>
+      <td>4,275,219</td>
+      <td>4,275,219</td>
+    </tr>
+    <tr>
+      <td>Final particles</td>
+      <td>342,340</td>
+      <td>57,152</td>
+      <td>94,653</td>
+      <td>70,132</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked FSC = 0.143, Å)</td>
+      <td>2.64</td>
+      <td>3.03</td>
+      <td>3.17</td>
+      <td>3.24</td>
+    </tr>
+    <tr>
+      <td>Density modified CC (0.5, Å)</td>
+      <td>2.67</td>
+      <td>3.09</td>
+      <td>3.12</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <td colspan="5">Model Refinement</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>6WC9</td>
+      <td>6WCA</td>
+      <td>6WCB</td>
+      <td>6WCC</td>
+    </tr>
+    <tr>
+      <td>Model resolution (FSC = 0.50/0.143Å)</td>
+      <td>2.68 / 2.32</td>
+      <td>3.07 / 2.67</td>
+      <td>3.18 / 2.71</td>
+      <td>3.27 / 2.84</td>
+    </tr>
+    <tr>
+      <td>Model refinement resolution</td>
+      <td>300-2.6</td>
+      <td>300-3.0</td>
+      <td>300-3.2</td>
+      <td>300-3.2</td>
+    </tr>
+    <tr>
+      <td colspan="5">RMS deviations</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.005</td>
+      <td>0.002</td>
+      <td>0.004</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.532</td>
+      <td>0.507</td>
+      <td>0.406</td>
+      <td>0.506</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.13</td>
+      <td>96.42</td>
+      <td>99.17</td>
+      <td>99.17</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.87</td>
+      <td>3.58</td>
+      <td>0.83</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Rotamer Outliers (%)</td>
+      <td>2.27</td>
+      <td>1.61</td>
+      <td>1.29</td>
+      <td>2.26</td>
+    </tr>
+    <tr>
+      <td colspan="5">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.71</td>
+      <td>1.74</td>
+      <td>1.12</td>
+      <td>1.49</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>3.88</td>
+      <td>6.28</td>
+      <td>2.50</td>
+      <td>4.39</td>
+    </tr>
+  </tbody>
+</table>
+
 Consistent with the high sequence homology between repeat I (TM1-TM6) and repeat II (TM7-TM12), alignment reveals that their structures are nearly identical with an RMSD of 1.7 Å (Figure 2D). The structures of repeat I and repeat II are also homologous with the monomeric structures of TMEM175 channels from the prokaryotes Chamaesiphon minutus (TMEM175Cm) (Lee et al., 2017) and Marivirga tractuosa (TMEM175Mt) (Brunner et al., 2018; Figure 2—figure supplement 4). Thus, while prokaryotic TMEM175 channels are homotetramers rather than homodimers, the global architecture of TMEM175 channels is conserved.
 
-## Ion-conduction pathway contains ordered ions and waters
+### Ion-conduction pathway contains ordered ions and waters
 
 The ion-conduction pathway of hTMEM175 is located along the central axis of the channel extending approximately 45 Å from the cytoplasm to the lysosomal lumen (Figure 3A) The pore is lined by the side chains of the kinked pore-lining helices, TM1 and TM7. The side chains of TM1 and TM7 create multiple constrictions whose radii are less than 2.0 Å and would restrict the permeation of hydrated K+ ions. The narrowest of these constrictions is formed by the side chains of Ile46 from TM1 and Ile271 from TM7, which are conserved among all eukaryotic TMEM175 channels, and has minimum radius of 1.7 Å (Figure 3B). Just below the constriction formed by Ile46 and Ile271, the pore contains an expanded vestibule that is also lined by the side chains of Thr49 and Leu53 from TM1 and Thr274, Leu275 and Leu278, making it much more hydrophobic than the rest of the pore (Figure 3A). Despite its hydrophobicity, multiple non-protein density peaks are resolved within the vestibule (Figure 3—figure supplement 1). Non-protein density peaks are also present in the vestibule in a density map calculated without symmetry, indicating that they represent ordered molecules rather than arising from the accumulation of noise along the two-fold symmetry axis during image processing (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-v2.jpg)
+
+**Figure 3.:** (A) Ion permeation pathway of class 1 hTMEM175. Pore-lining helices TM1 from protomers A (blue) and B (grey) are shown at left and TM7 from protomers A (red) and B (grey) are shown at right with all other helices removed for clarity. Pore-lining residues are shown as sticks. Surface representation of the ion permeation pathway colored by hydrophobicity calculated using the class 1 structure without ions and water molecules calculated using CHAP (Klesse et al., 2019). (B) Dimensions of the ion conduction pathway in class 1 calculated using CHAP (Klesse et al., 2019). (C) Overlapping non-protein density peaks in the ion permeation pathway of class 1 in the presence of K+ (blue mesh, 12 σ threshold) and Cs+ (gold mesh, 8 σ threshold). hTMEM175 is shown as in A. K+ ions are shown as violet spheres. (D) Density map near the isoleucine constriction displayed as blue mesh and contoured at 12 σ threshold. K+ ions are shown as violet spheres and water molecules are shown as red spheres.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Non-protein densities near the isoleucine constriction for class 1 with C2 symmetry imposed (A) and without imposing symmetry (B). (C–D) Non-protein densities in the cytoplasmic region of the pore for class 1 with C2 symmetry imposed (C) and without imposing symmetry (D). Density is shown as blue mesh contoured at 12 σ threshold for C2 map and at 8 σ threshold for C1 map.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative image and 2D class averages of hTMEM175 in 150 mM CsCl. (B) Simplified image processing workflow. (C) Fourier shell correlation (FSC) of two unfiltered half-maps for class 1 (solid cyan) and class 2 (solid gold) and cross correlation plot of two unfiltered half-maps following density modification for class 1 (dotted cyan) and class 2 (dotted gold). (D) Fourier shell correlation (FSC) of refined class 1 model compared with density modified map (cyan) and refined class 2 model compared with density modified map (gold).
 
 In addition to the non-protein densities resolved in the hydrophobic vestibule, numerous other non-protein densities are resolved in the other, more hydrophilic regions of the pore (Figure 3—figure supplement 1). However, due to the large number of non-protein peaks and lack of obvious protein-coordinated ion-binding sites, it was not possible to unambiguously distinguish ions from water molecules based on the density map alone. To aid in assigning the identity of these peaks, we collected cryo-EM images of hTMEM175 purified in 150 mM Cs+. We chose to determine structures in the presence of Cs+ for two reasons. First, Cs+ scatters electrons approximately three times more strongly than K+ (Peng, 1998) and thus bound Cs+ ions should yield density peaks that can be distinguished from those corresponding to water and other non-protein atoms in the density map. Second, because the permeation of Cs+ is similar to K+, we hypothesized that Cs+ would occupy the same binding sites in the pore as does K+ and thus facilitate identification of the ion-binding sites (Figure 1).
 
@@ -50,19 +289,37 @@ Three-dimensional classification revealed that hTMEM175 adopts the same two conf
 
 **Figure 4.:** Structure of the K1 (A), K2 (B), K3 (C) and K4 (D) binding sites in class 1. K+ ions are shown as violet spheres and water molecules are shown as red spheres. Density for K+ and water molecules shown as blue mesh and contoured at 12 σ threshold.
 
-## Structural heterogeneity reveals gating mechanism
+### Structural heterogeneity reveals gating mechanism
 
 To better understand the functional states of the two conformations resolved in our data sets, we next superimposed the class 1 and class 2 structures determined in the presence of K+ (Figure 5A). Overall, the two classes are very similar, with an all-atom RMSD of 0.9 Å. The similarities are especially pronounced in the cytoplasmic side of the channel, which likely arises from the existence of interaction networks at the intra-subunit interfaces between repeats I and II and at the inter-subunit interfaces between protomers (Figure 5B). These interaction networks adopt identical configurations in both conformations and are anchored by the essential RxxxFSD motif on TM1 and TM7 (Cang et al., 2015). In addition to the RxxxFSD motif, the networks involve a conserved histidine and a conserved tryptophan on TM2/TM8 and a conserved asparagine on TM3/TM9 (Figure 2—figure supplement 3). Similar interaction networks were resolved in the prokaryotic structures (Brunner et al., 2018; Lee et al., 2017), suggesting a conserved role for the RxxxFSD motif in maintaining channel quaternary structure during conformational changes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig5-v2.jpg)
+
+**Figure 5.:** (A) Superposition of class 1 (cyan) and class 2 (gold) viewed from within the membrane (left) and from the lysosomal lumen (right). (B) Alignment of the RxxxFSD inter- and intra-subunit interaction networks in class 1 (cyan) and class 2 (gold) depicted as sticks and viewed from the cytosol. Ionic and polar interaction are shown as dashed lines. (C) Ion conduction pathways of class 1 (cyan) and class 2 (gold). TM1 is shown at left and TM7 is shown at right with all other helices removed for clarity. K+ ion binding sites are shown as spheres. Dotted lines correspond to minimum distance between opposing residues at the isoleucine constriction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Order water molecule stabilizing the kinked TM1 in class 1 is coordinated by Ala48, Met51 and Thr84. (B) Side chain of Met51 occupies the position of the water molecule in class 2 and TM1 adopts a straight configuration. (C) Order water molecule stabilizing the kinked TM7 in class 1 is coordinated by Val272, Ala273, Leu276 and Ser316. (D) Side chain of Leu276 occupies the position of the water molecule in class 2 and TM7 adopts a straight configuration.
+
 In contrast to the rigid cytoplasmic side, differences between the two classes can be readily detected on the luminal side of the channel (Figure 5A and Video 1). When viewed from the luminal side of the channel, the ends of the transmembrane helices in the class 2 structure are rotated in a clockwise manner compared to their positions in class 1 (Figure 5A). The luminal loops between the transmembrane helices also adopt different conformations, with the loop between TM9 and TM10 undergoing the largest change. In class 2, the last turn of TM9 is unwound and moves nearly 12 Å from its position adjacent to the loop between TM11 and TM12 in class 1 to interact with the loop between TM1 and TM2.
+
+![Video 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-video1.mp4.jpg)
 
 Inspection of the pore-lining helices, TM1 and TM7, reveals that the clockwise rotation of their luminal ends from class 1 to class 2 is accompanied by the adoption of a straighter, α-helical conformation, particularly for TM7 (Figure 5C). In class 1, the kink in TM1 is stabilized by Pro54 and by a water molecule coordinated by the side chain of Thr84 on TM2, the backbone carbonyl oxygen of Ala48 and the backbone amide nitrogen of Met51, while the kink in TM7 is stabilized by a water molecule coordinated by the side chain of Ser316 on TM8, the backbone carbonyl oxygens of Val272 and Ala273 and the backbone amide nitrogen of Leu276 (Figure 5—figure supplement 1). In class 2, the waters stabilizing the kinks are displaced by the side chains of Met51 and Leu276. The resultant straightening of TM1 and TM7 in class 2 alters the shape of the pore, particularly at the isoleucine constriction (Figure 5C). In class 1, the minimum radius of the isoleucine constriction is 1.7 Å with an ion-binding site in the center surrounded by the isoleucine side chains in a nearly four-fold symmetric configuration. In class 2, the four-fold arrangement of the isoleucine side chains is broken by an inward movement of all four isoleucine residues and a rotation of the Ile271 side chains. These changes reduce the minimum pore radius to 0.5 Å, which is too narrow to accommodate dehydrated K+ ions. Accordingly, no density is resolved in the K3 ion-binding site in class 2. Thus, class 2 represents a closed conformation with Ile46 and Ile271 forming the channel gate.
 
 If class 2 represents a closed conformation, what state does class 1 represent? The proteoliposome flux assay demonstrated that purified hTMEM175 can conduct ions in the absence of stimuli, indicating that hTMEM175 can adopt an open state in the similar conditions used for cryo-EM analysis (Figure 1E). However, in order for class 1 to be a conductive state, ions would have to be able to permeate its narrow pore in a partially dehydrated state. In the cytosolic and luminal regions of the pore, the bound ions are coordinated by numerous water molecules and the constrictions are formed by polar and charged side chains, suggesting that partially hydrated ions can readily translocate. In contrast, ions would have to be almost completely dehydrated to penetrate the isoleucine constriction because of its size and hydrophobicity. However, the dehydration need only be transient due to the layers of water molecules on either side of the isoleucine constriction that can rehydrate the ion once it passes through the constriction (Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig6-v2.jpg)
+
+**Figure 6.:** (A) The isoleucine constriction is flanked by two layers of ordered water molecules. The cytosolic layer of waters is partially coordinated by Ser45, while the luminal layer is partially coordinated by Thr49 and Thr274. (B) Mean current recorded from HEK293T cells transfected with hTMEM175 (blue), S45A (red dashed), S45T (red), T274V (orange dashed), T274S (orange), I46M (green), I46M/I271M (magenta) and non-transfected (white) at +100 mV in a bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). (C) Normalized I-V relationship of whole-cell patch clamp of hTMEM175 transfected (blue), S45T transfected (red), T274S transfected (orange) and I46M transfected (green) HEK293T cells in a bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). All experiments were performed at least three times and error bars represent SEM. (D) Model for ion selectivity and gating in hTMEM175. In the open state, ions are transiently dehydrated through the isoleucine constriction, favoring permeation of K+ ions. In the closed state, the isoleucine constriction closes, preventing ion permeation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53430/elife-53430-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Superose 6 fluorescence size exclusion chromatography traces of hTMEM175 (blue), S45A (red dashed), S45T (red), T274V (orange dashed), T274S (orange), I46M (green), I46M/I271M (magenta) and non-transfected (black). (B) Representative whole-cell electrical recordings of HEK293T cells transfected with S45A, S45T, T274V, T274S, I46M or I46M/I271M mutants in bi-ionic condition of 150 mM Cs+ (intracellular) and 150 mM Na+ (extracellular). Recording protocol is same as in Figure 1C.
+
 To determine if the ordered water molecules facilitate ion permeation through the isoleucine constriction, we mutated Ser45 or Thr274, conserved residues on the cytosolic side and luminal side of the isoleucine constriction, respectively, whose side-chain hydroxyl groups participate in the coordination of ordered waters (Figure 6A). We first analyzed the effects of the mutations on protein stability using fluorescence size-exclusion chromatography (Goehring et al., 2014), which revealed that channels with mutations to Ser45 and Thr274 are properly folded as dimers and express at levels within two-fold of wild-type hTMEM175 (Figure 6—figure supplement 1). We next assessed the effects of the mutations on channel activity using whole-cell patch clamp in a bi-ionic Cs+/Na+ condition. Currents recorded from cells expressing the S45A and T274V mutants, which lack one of the hydroxyl groups involved in water coordination, were indistinguishable from those recorded from non-transfected cells (Figure 6B). In contrast, cells expressing either the S45T or the T274S mutant yielded Cs+-selective currents (Figure 6B–C). These results reveal a critical role for residues that coordinate water molecules in facilitating the permeation of ions through the isoleucine constriction and suggest that the water molecules themselves may participate in ion permeation. We therefore speculate that ions can permeate through the isoleucine constriction of class 1 in a partially hydrated state and that class 1 represents a conductive state.
 
-## Mechanisms of ion selectivity
+### Mechanisms of ion selectivity
 
 The transient dehydration of ions through the isoleucine constriction implies a mechanism for ion selectivity. Because the enthalpies of dehydration for Cs+ (250 kJ/mol) and K+ (295 kJ/mol) are lower than that of Na+ (365 kJ/mol) (Marcus, 1991), Cs+ and K+ ions can more readily access the partially dehydrated state necessary to permeate through the isoleucine constriction and are thus permeated more efficiently than Na+. Previously, mutation of Ile46 and Ile271 to asparagine was shown to diminish ion selectivity, which led to the proposal that the Ile46 and Ile271 act as a hydrophobic selectivity filter (Lee et al., 2017). However, in the class 1 structure of hTMEM175 the branched side chains of Ile46 and Ile271 form a constriction that we propose is precisely shaped to allow dehydrated ions to permeate, suggesting that the unique shape of isoleucine may also be essential (Figure 3D). To test if hydrophobicity itself is sufficient to impart ion selectivity, we mutated Ile46 to methionine, which is similar to isoleucine in terms of volume occupied and hydrophobicity, and recorded whole-cell currents. In a bi-ionic Cs+/Na+ condition, the I46M mutant displayed less selectivity for Cs+ with a mean reversal potential of −21 ± 1.5 mV compared to −65 ± 4.1 mV for wild-type hTMEM175 (Figure 6C). We also attempted to record whole-cell currents from cells expressing the I46M/I271M double mutant. However, no exogenous currents could be detected, consistent with a previous report that mutations of Ile46 and Ile271 to alanine, valine, leucine and phenylalanine were not functional (Lee et al., 2017). These results point to a unique role for isoleucine side chains in establishing a selectivity filter that cannot be duplicated by other amino acids.
 
@@ -78,27 +335,247 @@ In contrast to most ion channels, for which gating and selectivity are physicall
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hTMEM175</td>
+      <td>Synbio technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293S GnTi-</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (sodium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>carbonyl cyanide m-chlorophenylhydrazone (CCCP)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>215911250 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>9-amino-6-chloro-2-methoxyacridine (ACMA)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A1324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>valinomycin</td>
+      <td>Sigma</td>
+      <td>V0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenimine, Linear, MW 25000, Transfection Grade (PEI 25K)</td>
+      <td>Polysciences, Inc</td>
+      <td>23966–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma</td>
+      <td>8451440100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lauryl maltoside neopentyl glycol</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Octyl-β-D-Maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>O310S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind 4.1.10</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.1</td>
+      <td>Scheres, 2016</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v2</td>
+      <td>Structura Biotechnology</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Liebschner et al., 2019</td>
+      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, 2020</td>
+      <td>https://pymol.org/2/ RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoftMax Pro 6</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axon Digidata 1550B digitizer</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex 10.6</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHAP</td>
+      <td>Klesse et al., 2019</td>
+      <td>https://www.channotation.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10.6</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>FEI Vitrobot Mark IV</td>
+      <td>FEI Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 The gene encoding human TMEM175 was synthesized (SynBio) and subcloned into a BacMam expression vector with a C-terminal EGFP-tag fused via a short linker containing a PreScission protease site (Goehring et al., 2014). The plasmid was mixed with PEI 25 k (Polysciences, Inc) for 30 min and then used to transfect HEK293S GnTi– cells (ATCC CRL-3022). After 24 hr incubation at 37 °C, sodium butyrate was added to a final concentration of 10 mM, and cells were allowed to grow at 37 °C for an additional 48–72 hr before harvesting. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Expressed protein was solubilized in 2% lauryl maltose neopentyl glycol (LMNG, Anatrace), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 μg/mL aprotinin, 2.5 μg/mL leupeptin, 1 μg/mL pepstatin A) and DNase. Solubilized protein was separated by centrifugation 74,766 g for 40 mins, followed by binding to anti-GFP nanobody resin for 2 hr. Anti-GFP nanobody affinity chromatography was performed by 20 column volumes of washing with buffer containing 0.1% LMNG, 20 mM HEPES pH 7.5, 150 mM KCl, 2 mM DTT, followed by overnight PreScission digestion, and elution with wash buffer. Eluted protein was further purified by size exclusion chromatography on a Superdex 200 Increase 10/300 GL (GE healthcare) in SEC buffer (0.1% LMNG, 50 mM Tris pH 8.0, 150 mM KCl, 2 mM DTT). Peak fractions were pooled and concentrated to ~4 mg/mL using CORNING SPIN-X concentrators (100 kDa cutoff). For the CsCl samples, KCl was replaced with CsCl for all steps of the purification.
 
-## Proteoliposome reconstitution and flux assay
+### Proteoliposome reconstitution and flux assay
 
 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) in chloroform (Avanti) were mixed in a ratio 3:1 (mg:mg) and dried under argon gas. The dried lipid mixture was solubilized in pentane and dried again under argon gas to remove residual chloroform. Dried lipids were then desiccated for 2 hr under vacuum. Lipids were resuspended in 10 mM Hepes pH 7.4, 300 mM KCl to a final concentration of 10 mg/ml. Unilamellar vesicles were formed by sonication and then solubilized using 8% (w/v) octyl maltoside. Full length hTMEM175 purified in LMNG at a concentration of 1 mg/ml was mixed with the octyl maltoside-solubilized lipids and dialyzed using 25 kDa MWC bags (SpectraPor) in 10 mM Hepes pH 7.4, 300 mM KCl, 2 mM dithiothreitol (DTT) for 5 days with daily exchange of dialysis buffer. After dialysis, harvested proteoliposomes were snap frozen in liquid nitrogen and stored at −80 °C until use. Proteoliposomes were rapidly thawed at 37 °C, sonicated for 5 s, incubated at room temperature for 2–4 hr before use, and then diluted 100-fold into a flux assay buffer composed of 10 mM Hepes pH 7.4, 300 mM NaCl, 0.2 µM 9-amino-6-chloro-2-methoxyacridine (ACMA).
 
 Data were collected on a SpectraMax M5 fluorometer (Molecular Devices) using Softmax Pro six software. ACMA excitation/emission wavelengths were 410/490 nm, respectively. Fluorescence intensity measurements were collected every 30 s. The ionophore CCCP (1 µM) and valinomycin (20 nM) were added at 150 s and 600 s, respectively.
 
-## Electron microscopy sample preparation and data acquisition
+### Electron microscopy sample preparation and data acquisition
 
 4–5 μl of purified hTMEM175 at a concentration of 4 mg/ml was applied to glow-discharged Au 400 mesh QUANTIFOIL R1.2/1.3 holey carbon grids (Quantifoil, and then plunged into liquid nitrogen-cooled liquid ethane with an FEI Vitrobot Mark IV (FEI Thermo Fisher). Grids were transferred to a 300 keV FEI Titan Krios microscopy equipped with a K2 summit direct electron detector (Gatan). Images were recorded with SerialEM (Mastronarde, 2005) in super-resolution mode at 22,500x, corresponding to pixel size of 0.544 Å. Dose rate was eight electrons/pixel/s, and defocus range was 1.2–2.5 µm. Images were recorded for 8 s with 0.2 s subframes (total 40 subframes), corresponding to a total dose of 61 electrons/Å2.
 
-## Electron microscopy data processing
+### Electron microscopy data processing
 
 40-frame super-resolution movies (0.544 Å/pixel) of TMEM175 in KCl were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by Motioncor2 (Zheng et al., 2017) (1.088 Å/pixel). Whole-frame CTF parameters were determined using CTFfind 4.1.10 (Rohou and Grigorieff, 2015). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion 3.0 (Scheres, 2016), resulting in 2,499,425 particles for KCl data set 1 and 1,654,189 particles for KCl data set 2. False-positive selections and contaminants were excluded from the data using multiple rounds of heterogeneous classification in cryoSPARC v2 (Punjani et al., 2017) using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 571,468 particles. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a consensus reconstruction was determined at resolution of 2.7 Å. 3D variability analysis in cryoSPARC v2 was then employed to characterize conformational heterogeneity, revealing two states that were subsequently used for iterative rounds of supervised heterogeneous refinement in cryoSPARC v2. The final stack for class 1 contained 342,340 particles and yielded a reconstruction with an estimated resolution of 2.6 Å by non-uniform refinement in cryoSPARC v2 (Punjani et al., 2019). The final stack for class 2 contained 70,132 particles and yielded a reconstruction with an estimated resolution of 3.0 Å by non-uniform refinement in cryoSPARC v2. The final reconstructions of class 1 and class 2 were further improved by employing density modification on the two unfiltered half-maps with a soft mask in Phenix (Terwilliger et al., 2019).
 
 40-frame super-resolution movies (0.544 Å/pixel) of TMEM175 in CsCl were gain corrected, Fourier cropped by two and aligned using whole-frame and local motion correction algorithms by Motioncor2 (1.088 Å/pixel). Approximately 500 particles were manually selected to generate initial templates for autopicking that were improved by several rounds of two-dimensional classification in Relion and autopicking using Relion, resulting in 2,537,436 particles for CsCl data set 1 and 1,737,783 particles for CsCl data set 2. False-positive selections and contaminants were excluded through iterative rounds of heterogeneous classification in cryoSPARC v2 using models generated from the ab initio algorithm in cryoSPARC v2, resulting in a stack of 330,698 particles. After particle polishing in Relion and local CTF estimation and higher order aberration correction in cryoSPARC v2, a consensus reconstruction was determined to 3.1 Å. 3D variability analysis in cryoSPARC v2 was then employed to characterize conformational heterogeneity, revealing two states that were used for iterative rounds of seeded heterogeneous refinement in cryoSPARC v2. The final stack for class 1 contained 104,126 particles and yielded a reconstruction with an estimated resolution of 3.2 Å by non-uniform refinement in cryoSPARC v2. The final stack for class 2 contained 70,132 particles and yielded a reconstruction with an estimated resolution of 3.2 Å by non-uniform refinement in cryoSPARC v2. The final reconstructions of class 1 and class 2 were further improved by employing density modification on the two unfiltered half-maps with a soft mask that includes the detergent micelle in Phenix.
 
-## Model building and coordinate refinement
+### Model building and coordinate refinement
 
 Poly-alanine helices were manually built into the transmembrane helices of the class 1 K+ density map using coot (Emsley et al., 2010). The helices were manually registered using large side chains and the connecting loops were manually built into the density. Densities corresponding to TM5 and TM6 (residues 174–251) were too poorly ordered and omitted from the model. The final model contains residues 30–173, and 254–476. Four ions were assigned by identifying overlapping non-protein density peaks in the class 1 K+ and Cs+ maps. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).
 
@@ -106,15 +583,19 @@ The refined class 1 structure was manually docked into the class 2 density map u
 
 The Cs+ class 1 and class 2 structures were determined by docking in the K+ class 1 and class 2 structure in Coot and manually rebuilding the protein to best fit the density map. Atomic coordinates were refined against the density modified map using phenix.real_space_refinement with geometric and Ramachandran restraints maintained throughout (Adams et al., 2010).
 
-## Fluorescence size exclusion chromatography (FSEC)
+### Fluorescence size exclusion chromatography (FSEC)
 
 Plasmids encoding GFP-tagged versions of wild-type and mutant hTMEM175 were mixed with PEI 25 k (Polysciences, Inc) for 30 min and then used to transfect HEK293S GnTi– cells. After 24 hr incubation at 37 °C, sodium butyrate was added to a final concentration of 10 mM, and cells were allowed to grow at 37 °C for an additional 48–72 hr before harvesting. Cell pellets were washed in phosphate-buffered saline solution and flash frozen in liquid nitrogen. Expressed protein was solubilized in 2% lauryl maltose neopentyl glycol (LMNG), 20 mM HEPES pH 7.5, 150 mM KCl supplemented with protease-inhibitor cocktail (1 mM PMSF, 2.5 μg/mL aprotinin, 2.5 μg/mL leupeptin, 1 μg/mL pepstatin A) and DNase. Solubilized protein was separated by centrifugation 21,130 g for 60 mins. Separated proteins were injected to and monitored by fluorescence size exclusion chromatography on a Superose 6 Increase 10/300 GL (GE healthcare) in SEC buffer (0.1% LMNG, 50 mM Tris pH 8.0, 150 mM KCl, 2 mM DTT). Fluorescence was monitored at 488/509 nm of excitation/emission wavelength, respectively.
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological recordings of hTMEM175 constructs were performed in HEK293T cells (ATCC CRL-3216). HEK293T cells cultured in DMEM supplemented with 10% FBS were transfected with 2 μg of hTMEM175 plasmid using 6 μg of PEI 25 k (Polysciences, Inc). 24–48 hr following transfection, cells were detached by trypsin treatment. The detached cells were transferred to poly-Lys-treated 35 mm single dishes (FluoroDish, World Precision Instruments) and incubated overnight at 37 °C in fresh media. Immediately prior to recording, media was replaced with a bath solution containing 145 mM Na- methanesulfonate (MS), 5 mM NaCl or KCl, 1 mM MgCl2, 1 mM CaCl2, 10 mM HEPES/Tris pH 7.4. 10 cm long borosilicate glass were pulled and fire polished (Sutter instrument). The resistance of glass pipette was 5 ~ 8 MΩ were filled with a pipette solution containing 150 mM K-MS or Cs-MS, 5 mM MgCl2, 10 mM EGTA/Tris, 10 mM HEPES/Tris pH 7.4, GΩ seals were formed after gentle suction. The recordings were performed in whole cell patch clamp configuration using the following protocol: from a holding potential of 0 mV, the voltage was stepped to voltages between −100 and +100 mV, in 20 mV increments. The currents were recorded using Axon Digidata 1550B digitizer and Clampex 10.6 (Molecular Devices, LLC) and analyzed using Clampfit 10.6 (Molecular Devices, LLC). Each experiment was performed a unique cell and currents were normalized to the maximum current of each experiment (at +100 mV). Each condition includes cells from at least two independent transfections.
 
-In bi-ionic conditions, the relative permeability between cations are calculated using the following equations.PXPY= [Y+]ext[X+]inte-(ErevFRT)
+In bi-ionic conditions, the relative permeability between cations are calculated using the following equations.
+
+$$
+\frac{P_{X}}{P_{Y}}=\frac{[Y^{+}]_{ext}}{[X^{+}]_{int}}e^{-(\frac{E_{rev}F}{RT})}
+$$
 
 Where PX and PY are the permeabilities of intracellular and extracellular cation X and Y, respectively, Erev is the measured reversal potential, F is Faradays’ constant, R is the gas constant, and T is the absolute temperature.
 

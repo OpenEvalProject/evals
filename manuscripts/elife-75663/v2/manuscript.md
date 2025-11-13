@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Staglin Center for Brain and Behavioral Health, Department of Psychology, Department of Psychiatry and Biobehavioral Sciences, University of California, Los Angeles Los Angeles United States
+1. Staglin Center for Brain and Behavioral Health, Department of Psychology, Department of Psychiatry and Biobehavioral Sciences, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
@@ -27,13 +27,173 @@ Recently, there have been reports that challenge this view. Fadok et al., 2017 u
 
 Both previous reports concluded that these activity bursts were CRs because they increased over trials during acquisition when CS and US were paired and decreased during extinction when the CS was presented alone (Fadok et al., 2017; Gruene et al., 2015). While these behavioral patterns are certainly properties of a CR, they are not diagnostic of associative learning as these changes could also result from nonassociative processes such as sensitization and habituation (Rescorla, 1967). Additionally, no formal assessment was made of what properties of the CS led to the alternate CRs (e.g. its serial nature, the ordering of the two sounds, or stimulus modality). One subsequent study using this serial conditioning procedure in mice has suggested that this white-noise-elicited activity burst is mainly a result of the stimulus salience or intensity of the white noise and does not depend on any particular temporal relation to the US (Hersman et al., 2020). Another recent study using this procedure in rats has suggested that this flight behavior only occurs in contexts in which fear has been established and is a result of associative processes (Totty et al., 2021). Therefore, to better understand the associative nature of these flight responses, we embarked on a series of experiments to test these theoretical views and assess the validity of these concerns (Tables 1–4).
 
+**Table 1.**
+ Design of Experiment 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Training treatment: 10 CS-US pairings(5 per day)</th>
+      <th>Testing treatment(16 on 1 day)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1) Replication</td>
+      <td>10 s tone→10 s noise→1 s shock</td>
+      <td>10 s tone→10 s noise</td>
+    </tr>
+    <tr>
+      <td>(2) CS duration</td>
+      <td>10 s noise→shock</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(3) Stimulus change</td>
+      <td>20 s tone→shock</td>
+      <td>10 s tone→10 s noise</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Design of Experiment 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>2-Day training treatment:</th>
+      <th>Testing treatment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1) Pseudoconditioned noise-shock only noise test</td>
+      <td>10 Shocks(1-mA, 1 s, 150–210 s intertrial interval)</td>
+      <td>5 Noise presentations (10 s)</td>
+    </tr>
+    <tr>
+      <td>(2) Pseudoconditioned tone-shock only tone test</td>
+      <td>10 Shocks(1-mA, 1 s, 150–210 s intertrial interval)</td>
+      <td>5 Tone presentations (10 s)</td>
+    </tr>
+    <tr>
+      <td>(3) No shock control</td>
+      <td>Context exposure only(17 min and 15 s per day)</td>
+      <td>5 Noise presentations (10 s)</td>
+    </tr>
+    <tr>
+      <td>(4) Noise-shock conditioning</td>
+      <td>10 Noise (10 s)→shock pairings</td>
+      <td>5 Noise presentations (10 s)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Design of Experiment 3—paired vs unpaired noise-shock.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Training treatment: 10 CS-US pairings(5 per day)</th>
+      <th>Testing treatment(2 on 1 day)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1) Paired noise-shock (conditioning)</td>
+      <td>10 s noise→1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(2) Unpaired noise-shock</td>
+      <td>10 s noise and 1 s shock – unpaired</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(3) Noise - CS only</td>
+      <td>10 s noise</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(4) Shock only (pseudo conditioning)</td>
+      <td>1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Design of Experiment 4—tested the effect of habituation to the white noise.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Habituation treatment: 10 CS exposures (5 per day)</th>
+      <th>Training treatment: 10 CS-US pairings (5 per day)</th>
+      <th>Testing treatment(3 on 1 day)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1) Habituation/shock only (H-shock)</td>
+      <td>10 s noise</td>
+      <td>1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(2) Habituation/paired noise-shock (H-paired)</td>
+      <td>10 s noise</td>
+      <td>10 s noise→1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(3) Context exposure/shock only (C-shock)</td>
+      <td>Context exposure</td>
+      <td>1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+    <tr>
+      <td>(4) Context exposure/paired noise-shock (C-paired)</td>
+      <td>Context exposure</td>
+      <td>10 s noise→1 s shock</td>
+      <td>10 s noise</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Experiment 1 was conducted as delineated in Table 1 (see Figure 1 for a schematic representation of the serial conditional stimulus and the design for training and testing for Experiment 1). The first condition was a nearly exact replication of the conditions used by Fadok et al., 2017, using male and female mice (Replication Group). Briefly, animals received 10 pairings of footshock and the two-component stimulus (10 s tone followed by 10 s white noise) over 2 days before being tested on the third day with the two-component stimulus (see Figure 1—figure supplement 1 to view example velocity traces from day 1 training for one mouse in the Replication Group). We scored bursts of locomotion and jumping with a peak activity ratio (PAR; Fanselow et al., 2019) and the number of darts (Gruene et al., 2015). PAR reflects the largest amplitude movement made during the period of interest, while darts reflect the frequency of large movements during the same period (see Methods). We included two additional groups in this experiment to test the nature of any observed behaviors. We first asked whether any observed behavior occurred to the noise specifically because it was embedded in a serial compound and/or because of the brevity of the noise (10 s). For this group, we simply conditioned and extinguished a 10 s white noise (CS Duration Group). In a third group of mice, we also asked whether the noise-elicited flight behavior required the noise to be present during training. These mice were trained with a 20 s tone, but tested with the two-component serial compound stimulus (Stimulus Change Group).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig1-v2.jpg)
+
+**Figure 1.:** During training, animals were given 2 days each of five SCS-US pairings. The SCS consisted of a 10 s pure tone (7.5 kHz) followed by a 10 s white noise (75 dB). Immediately upon termination of the white noise-SCS, a footshock US (1 s, 0.9 mA) was delivered. On day 3, the animals were tested with 16 presentations of the SCS without delivering any shocks.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Vertical dotted lines denote stimulus onset times and the horizontal dotted line is the threshold for scoring behavior as a dart (22.9 cm/s). Darting episodes are marked with an *. See Figure 1—figure supplement 1—source data 1.
+
 In the nearly exact replication of the conditions used by Fadok et al., 2017, using male and female mice, we obtained nearly identical results with our Replication Group (Table 1, Figure 2). For this and all experiments described below, no effects of sex were observed in initial comparisons/ANOVAs (see Discussion). Sex was thus removed as a factor in subsequent statistical analyses. In the Replication Group, freezing to the initial tone progressively increased over the course of conditioning. At the beginning of training, freezing increased to the white noise but plateaued after a few trials. When freezing plateaued the noise elicited activity bursts, and this pattern maintained throughout acquisition and the beginning of extinction testing. As extinction testing continued, freezing was maintained while PAR and darting to the noise decreased.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig2-v2.jpg)
+
+**Figure 2.:** See Figure 2—source data 1 & Figure 2—source data 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Responding during the 10 s preCS period is represented with open circles, responding during the noise is represented with filled in black circles. See Figure 2—figure supplement 1—source data 1.
 
 Then, we directly asked whether the plateau in freezing and increase in activity that occurred to the noise required the noise to be a component of a serial compound stimulus. We simply conditioned and extinguished a 10 s white noise (CS Duration Group) and found that freezing increased linearly during a 10 s pre-noise period reflecting the acquisition of contextual fear conditioning (Kim and Fanselow, 1992; Figure 2—figure supplement 1). During testing, the reaction to onset of the white noise was almost a duplicate to what we saw when the noise was embedded in the compound. In other words, activity bursts and darting in no way depended on the use of a serial compound.
 
@@ -43,21 +203,29 @@ Overall in Experiment 1, we replicated findings that different defensive behavio
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig3-v2.jpg)
 
-**Figure 3.:** Data were averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test, the Replication Group (n=7) and the Stimulus Change Group (n=7) received the serial conditional stimulus in which a 10 s tone was followed by a 10 s noise. The CS Duration Group (n=8) was only tested with a 10 s noise. See Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** Data were averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test, the Replication Group (n=7) and the Stimulus Change Group (n=7) received the serial conditional stimulus in which a 10 s tone was followed by a 10 s noise. The CS Duration Group (n=8) was only tested with a 10 s noise. See Figure 3—source data 1.
 
 A mixed model ANOVA revealed a significant effect of time (F[19, 361]=8.203, p<0.001) as well as a group X time interaction (F[38, 361]=1.497, p=0.034). Generally, velocity peaked during the first bins of the noise period and then quickly decreased to more stable levels. Post hoc analyses revealed that the Stimulus Change Group trended to have the elevated velocity during the first bin of the noise period with trends for higher velocity than the CS Duration Group (p=0.09) and did have significantly higher velocity than the CS Duration Group during the fifth bin (~2.5 s into the noise; p=0.04).
 
 While the noise did not need to be within a serial compound stimulus or even need to be presented during training in order to elicit flight, it is worth noting that the strongest noise-elicited flight occurred for the group that received the serial compound stimulus only at test and for which the noise was novel at test.
 
-## Experiment 2
+### Experiment 2
 
 The mice that received the 20 s tone during training but the compound during testing showed darting to the noise embedded in the compound (Figures 2 and 3). Since the noise was not paired with the shock, this suggests that the response to the noise was nonassociative. However, it is possible that during the initial test trials the response to the noise occurred via second-order conditioning as the noise was paired with the previously reinforced tone. This seems unlikely because most darts were seen at the beginning of testing and decreased over the session. A second-order conditioning interpretation suggests the opposite pattern. Nonetheless, in a second experiment, we included classic controls to directly test for the phenomenon of pseudoconditioning (Table 2). Pseudoconditioning is a form of sensitization whereby mere exposure to the US changes behavior to the stimulus used as a CS (Underwood, 1966), and this appears to be what was observed in Experiment 1 (Stimulus Change Group; Figure 2). Two pseudoconditioned groups of mice simply received the same shock schedule used in the prior study without any auditory stimuli (no CS). A third was merely exposed to the chamber. The final group was a conditioning group that received noise-shock pairings. All groups received tests with the 10 s noise, except for one of the pseudoconditioning groups that was tested with the tone.
 
 Figures 4 and 5 summarize the test results from Experiment 2 (see Figure 4—figure supplement 1 for trial-by-trial data). As would be expected for a CR, freezing to the noise was greatest in the mice that received noise-shock pairings (F[3, 28]=11.76, p<0.001). Significant associative learning was indicated by more noise-elicited freezing in the paired group than the shock-only trained group tested with the noise. Interestingly, the no shock group that was tested with the noise gradually increased freezing over the course of noise testing (Figure 4—figure supplement 1) suggesting that the 75 dB noise itself was aversive to the mice and could support some conditioning of freezing (i.e. it was a weak US).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig4-v2.jpg)
+
+**Figure 4.:** Values are averaged across the 16 trials of extinction during test. p-values and significance were determined through one-way ANOVA. *p<0.05, **p<0.01, ****p<0.0001. See Figure 4—source data 1 & Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** See Figure 4—figure supplement 1—source data 1.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig5-v2.jpg)
 
-**Figure 5.:** Data were averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test, the no shock-noise test, shock only-noise test, and noise-shock noise test groups were tested with a 10 s noise. The shock only-tone test group was tested with a 10 s tone. See Figure 5—source data 1.Figure 5—source data 1.
+**Figure 5.:** Data were averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test, the no shock-noise test, shock only-noise test, and noise-shock noise test groups were tested with a 10 s noise. The shock only-tone test group was tested with a 10 s tone. See Figure 5—source data 1.
 
 The test session data were very different for activity bursts (Figures 4 and 5). The greatest PAR occurred in the pseudoconditioned control (shock only during training) that was tested with the novel noise (F[3, 28]=20.085, p<0.001). The pseudoconditioned control tested with the novel noise also showed the most darting behavior. Furthermore, these results are supported by a direct analysis of velocity data during the 10 s CS period at test (Figure 5).
 
@@ -65,7 +233,7 @@ A mixed model ANOVA on the averaged velocity measures during the CS period for t
 
 Pseudoconditioning is indicated by more activity during the noise test in the previously shocked mice than the no-shock controls tested with the same noise. Note that for both of these groups the noise was novel during testing so it had no association with shock. It is worth noting that we also see indirect evidence of pseudoconditioning to the tone, such that the shock only tone test group does show an elevated PAR with respect to the nonshocked controls tested with the noise. While darting was very low in this group, it was not zero, suggesting that a novel pure tone stimulus may also support cue-elicited flight behavior in frightened animals, although to a lesser extent than a white noise stimulus, which may have inherently aversive properties (continued in Discussion). Another striking finding is that while the group that received noise-shock training showed an elevated PAR, the level was significantly less than the pseudoconditioning control (p<0.001). Not only are activity bursts not conditioned, these data suggest conditioning may actually suppress such activity bursts. In other words, flight and darting are primarily a result of nonassociative processes and are likely not CRs.
 
-## Experiment 3
+### Experiment 3
 
 In a third experiment, we included a control group in which the shock and noise were explicitly unpaired to again test for the phenomenon of pseudoconditioning but in a situation where exposure to the CS is equated during training (Table 3). One group was again a conditioning group that received noise-shock pairings, and one group was again a pseudoconditioned group that only received shocks without any CS. A third group received equal numbers of noise and shock presentations but in an explicitly unpaired manner. An additional control group received presentations of only the white noise CS to examine whether or not the CS alone was able to support conditioning and/or activity bursts.
 
@@ -73,21 +241,29 @@ Acquisition and test results are summarized in Figures 6 and 7. As seen in the p
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig6-v2.jpg)
 
-**Figure 6.:** See (Figure 6—source data 1 & Figure 6—source data 2).Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** See (Figure 6—source data 1 & Figure 6—source data 2).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig7-v2.jpg)
 
-**Figure 7.:** Datawere averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as Mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test all groups were tested with a 10 s noise CS.See Figure 7—source data 1.Figure 7—source data 1.
+**Figure 7.:** Datawere averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as Mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test all groups were tested with a 10 s noise CS.See Figure 7—source data 1.
 
 While overall darting was elevated in the paired group (during acquisition and on the first trial of testing), the velocity traces during testing (Figure 7) reveal that the magnitude/frequency of the initial activity burst to the noise appears to be reduced in the paired group, and that increased levels of activity bursts during the latter portion of the CS account for any differences in overall numbers of darts. Indeed, a direct analysis of the velocity data during the 10 s noise CS period at test revealed significant effects of group (F[3, 28]=9.733, p<0.001), time (F[5.15, 144.22]=9.614, p<0.001), as well as a group X time interaction (F[15.45, 144.22]=2.045, p=0.02). Generally, as seen in prior experiments, velocity again peaked during the first bins of the noise period and then quickly decreased to more stable levels. In the paired group specifically, there is an additional peak of activity in the latter half of the stimulus period. Post hoc analyses revealed that the unpaired group had the highest velocity during the first bin of the noise period (the first second) with significantly higher velocity than the CS only group (p=0.007). Additionally, in the 16th and 17th bins toward the end of the CS period, the paired group showed the most activity with significantly higher velocity than the CS only group (p=0.002 and p=0.001), the shock only group (p=0.001, p=0.02), and the unpaired group (p<0.001, p=0.003).
 
 That pairing noise and shock altered the timing of the activity bursts is an interesting fact worth considering and suggests that pairing noise and shock may have primarily resulted in a conditional freezing response that in fact competes with/reduces any initial nonassociative activity/bursting to the white noise. Taken together, this and the prior experiment using control groups to assess pseudoconditioning reveal that a large portion of the noise-elicited activity bursts observed is due to nonassociative processes that result in an increase in darting behavior to the noise following shock exposure, regardless of any direct training history of the noise with shock. There does appear to be evidence that pairing noise with shock may further increase or alter the timing of this behavior, but by no means is pairing noise with shock necessary to produce these activity bursts.
 
-## Experiment 4
+### Experiment 4
 
 The experiments thus far have suggested that much of the white-noise-elicited activity bursting is a nonassociative process. We have also shown that novelty of the CS at test may increase this noise-elicited activity (Figures 3 and 4). In a final, fourth experiment, we explicitly tested whether habituation to the white noise stimulus prior to noise-shock training would be able to reduce noise-elicited activity bursts. If increased levels of novelty of the CS are driving noise-elicited activity bursts, then prior habituation should reduce the levels of darting to the noise CS. In this experiment, we had four groups that differed in whether they received an additional 2 days of habituation to the white noise stimulus (five noise presentations each day) and whether they received noise-shock pairings during training or just shock only (Table 4). One comparison of particular interest was between the habituated and nonhabituated shock only groups as these groups would directly compare whether prior experience with the CS would decrease darting at test compared to a group for which the CS was completely novel.
 
 Figure 8 shows the results of Experiment 4 during testing (see Figure 8—figure supplement 1 for trial-by-trial results for freezing, PAR, and darting across habituation, training, and testing). During the 2 days of habituation, interestingly, we found that within groups that received habituation, a low level of darting to the white noise alone without any shock decreased across day 1 (F[4, 48]=2.887, p=0.026) and increased by the end of the second day of habituation (F[4, 48]=2.793, p=0.36; Figure 8—figure supplement 1). Concurrently, freezing to the white noise increased over habituation trials, again showing that this white noise stimulus alone can act as a US. It is interesting that darting occurred to the white noise at the start of habituation when the CS was very novel, and at the end of habituation once the white noise alone was able to support some level of fear.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig8-v2.jpg)
+
+**Figure 8.:** Datawere averaged across all animals per group and binned into ~0.5 s bins (0.533 s) and presented as mean ± SE. These within-subject error bars are corrected for between-subject variability using methods as described in Morey, 2008. During this test, all groups were tested with a 10 s noise CS. See Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** For habituation, presented are the values during CS presentation for habituation groups and values during the same 10 s period for context exposure groups. For training, presented are the values during CS exposure for the paired groups and values during the same 10 s period for shock only groups. For testing, all presented values are during the 10 s CS presentation. See Figure 8—figure supplement 1—source data 1 and Figure 8—figure supplement 1—source data 2.
 
 Comparing the two shock only groups during test, the noise disrupted freezing more than tone. In this regard, noise seems to act like a weak shock US (Fanselow, 1982). Like shock, it disrupts freezing (Figure 4—figure supplement 1) and like shock, it supports conditioning of freezing (Figure 6).
 
@@ -95,7 +271,7 @@ Within paired groups (H-paired and C-paired), we found that throughout acquisiti
 
 Indeed, a mixed model ANOVA with pairing, habituation, and time as factors on the averaged velocity traces for each trial revealed significant effects of time (F[56, 1568]=17.420, p<0.001), a habituation X pairing interaction (F[1, 28]=4.696, p=0.04), and a pairing X time interaction (F[56, 1568]=3.036, p=0.01). Generally, once again, velocity peaked during the first bins of the noise period and then quickly decreased to more stable levels. As seen in the experiments above, again, this initial peak in velocity was most apparent in the shock only groups, with the paired groups showing an initially smaller peak in velocity. Post hoc analyses revealed that the shock only groups had significantly higher velocity during the first three bins of the noise than the paired groups (p’s=0.02, 0.03, 0.005, respectively). Post hoc analysis on the pairing X habituation interaction reveals that within the nonhabituated groups, pairing noise and shock significantly reduced the velocity throughout test trials (p<0.001). Additionally, within shock only groups, habituation reduced the velocity throughout test trials (p<.001). These results are exactly what would be predicted if exposure to the noise CS (through pre-exposure and/or through pairing CS and US) in fact reduces noise-elicited activity bursts and flight/darting behavior, that is, darting is enhanced by novelty.
 
-## All experiments analysis of dart timing and topography
+### All experiments analysis of dart timing and topography
 
 While the majority of the data presented here suggest that cue-elicited flight or darting is due primarily to nonassociative influences, we do show evidence that associative processes/pairing noise and shock alter the timing/topography of such flight behavior. Thus, we set out to further analyze these differences in dart timing, and in particular, we were interested in whether initial darts at CS onset may be functionally distinct from darts that occur later on in the CS period.
 
@@ -103,7 +279,7 @@ Figure 9 shows a detailed analysis of darting magnitude and timing collapsed acr
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig9-v2.jpg)
 
-**Figure 9.:** (A) and (B) represent the magnitude of darts to the tone (n=48 darts) and noise (n=360 darts) stimuli during testing, as well as the reaction to the first shock (n=102 shocks) on day 1 of training. Data are presented as mean ± SE and come from all groups (total n=102 animals) that received shock during training, collapsed across all experiments. p-values and significance were determined through Welch’s ANOVA. *p<0.05, ****p<0.0001. (C) represents the magnitude (mean ± SE) of the first and second dart within a single CS presentation for all animals across all experiments that performed two darts within a single 10 s CS period (n=65 “multi-darts”). p-values and significance were determined through a paired sample t-test. *p<0.05. (D) and (E) represent the magnitude of darts that occurred during the initial 3 s of the 10 s CS period (n=230 darts) and those that occurred during the final 7 s of the 10 s CS period (n=178 darts). Data are presented as mean ± SE and come from all groups that received shock during training (n=102 animals), displayed by group and stimulus type in (D) and collapsed across all experimental groups in (E). p-values and significance were determined through Welch’s ANOVA. ****p<0.0001. See Figure 9—source data 1.Figure 9—source data 1.
+**Figure 9.:** (A) and (B) represent the magnitude of darts to the tone (n=48 darts) and noise (n=360 darts) stimuli during testing, as well as the reaction to the first shock (n=102 shocks) on day 1 of training. Data are presented as mean ± SE and come from all groups (total n=102 animals) that received shock during training, collapsed across all experiments. p-values and significance were determined through Welch’s ANOVA. *p<0.05, ****p<0.0001. (C) represents the magnitude (mean ± SE) of the first and second dart within a single CS presentation for all animals across all experiments that performed two darts within a single 10 s CS period (n=65 “multi-darts”). p-values and significance were determined through a paired sample t-test. *p<0.05. (D) and (E) represent the magnitude of darts that occurred during the initial 3 s of the 10 s CS period (n=230 darts) and those that occurred during the final 7 s of the 10 s CS period (n=178 darts). Data are presented as mean ± SE and come from all groups that received shock during training (n=102 animals), displayed by group and stimulus type in (D) and collapsed across all experimental groups in (E). p-values and significance were determined through Welch’s ANOVA. ****p<0.0001. See Figure 9—source data 1.
 
 ## Discussion
 
@@ -111,7 +287,7 @@ Prior work reported that contact/pain-related stimuli (e.g. shock) disrupt post-
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig10-v2.jpg)
 
-**Figure 10.:** Also plotted is a similar curve showing freezing and the impact that shock presentation during training has on freezing. These data are averaged across both shock only groups (total n=16) on day 2 trials after fear to the context had been established, showing that shock disrupts freezing to an even greater extent than the noise. See Figure 10—source data 1.Figure 10—source data 1.
+**Figure 10.:** Also plotted is a similar curve showing freezing and the impact that shock presentation during training has on freezing. These data are averaged across both shock only groups (total n=16) on day 2 trials after fear to the context had been established, showing that shock disrupts freezing to an even greater extent than the noise. See Figure 10—source data 1.
 
 As the majority of the experiments presented here and in most prior studies conduct both training and testing in the same context (Fadok et al., 2017; Gruene et al., 2015; Hersman et al., 2020), these animals would already be in a high state of fear or post-encounter defense (from any learned contextual fear during training), thus endowing the presentation of the white noise to be a particularly startling stimulus change that can provoke these panic-like flight responses. Novelty of the stimuli is an important factor and familiarity with the CS during conditioning and/or habituation reduced CS novelty for the test. In the experiments presented here, the mice that received noise-shock pairings and were tested with noise showed lower flight to the noise than mice trained only with shock and then received noise for the first time. Additionally, prior habituation to the noise or experience with the noise during training (i.e. paired and unpaired groups) further reduced noise-elicited flight at test.
 
@@ -131,11 +307,11 @@ Beyond this potential explanation, as mentioned above and detailed below, there 
 
 Experimenters that have examined running-like locomotion in fear conditioning situations tend to collapse the behaviors under a single label such as darting, flight, or escape (Colom-Lapetina et al., 2019; Fadok et al., 2017; Gruene et al., 2015; Mitchell et al., 2021; Totty et al., 2021). These behaviors are then thought of as ‘active’ behaviors that compete with a ‘passive’ freezing response (Fadok et al., 2017; Gozzi et al., 2010; Gruene et al., 2015). It is important to recognize that all such movements are not identical and often serve different functions. Here, we will focus on two distinct movements we observed in the present experiments. In several instances, the mice made two movements in response to stimulus presentation. The first was a very high velocity response that occurred to stimulus onset; the other was a slower velocity movement that tended to occur later on during stimulus presentation (Figure 9C, D and E). We will discuss these two behaviors within the predatory imminence framework and suggest that the slower movement is part of the post-encounter freezing module and the faster one is a circa-strike behavior.
 
-## Post-encounter movement
+### Post-encounter movement
 
 Elsewhere we pointed out that the dominant post-encounter behavior, freezing, is not simply immobility (Fanselow and Lester, 1988). Rather, it is an integrated behavior where rats first move to the closest, easily accessible, location appropriate for freezing (Fanselow and Lester, 1988). Typically, this location is against a wall, especially a corner with its two walls (de Oca et al., 2007; Grossen and Kelley, 1972; Sigmundi, 1997). In other words, freezing and thigmotaxis constitute an integrated behavioral module (Fanselow and Lester, 1988). Indeed, when an especially appropriate freezing location, a dark cave, was available rats moved to the cave and froze more than when it was not (de Oca et al., 2007). Therefore, it would be most inappropriate to characterize the movements needed for thigmotaxis as competing with freezing. They are an integral part of freezing. Consistent with this interpretation, the slower second movement after stimulus onset was directed at a corner and once there the animal became immobile. Since these movements are part of the freezing module and shock-associated conditional stimuli are one of the most effective ways to drive the freezing module, it is not surprising that they may be more frequent in animals that had sound-shock pairings (Figures 4—8). We conjecture that the movements seen by Totty et al., 2021 exclusively in animals that were conditioned were largely this type of movement. Further, it is likely that the flight behavior in rats observed by other groups (Colom-Lapetina et al., 2019; Gruene et al., 2015; Mitchell et al., 2021) is this type of movement as Mitchell et al. report that the majority of their CS-elicited darting occurs late in the CS presentation, about 7–10 s into a 30 s tone CS.
 
-## Circa-strike activity bursts
+### Circa-strike activity bursts
 
 Circa-strike behavior occurs at or immediately before contact with the predator and represents a vigorous evasive movement away from the predator. The most effective circa-strike eliciting stimulus in the laboratory setting is shock, as it is directly analogous to painful contact. As can be seen in Figure 9A–B, the movement to shock onset is on average the highest velocity movement we observed. The activity burst to shock is highly protean and poorly directed, sometimes looking as if the animal is bouncing off the walls (Fanselow, 1982). If directed at all, it is directed away from the predator and not toward anything in particular. We argue here that when the animal is in the post-encounter fear mode (freezing), the threshold for these bursts of activity shifts such that sudden stimuli that would not normally cause an activity burst now do so. These are the high velocity movements we see to the noise and the tone at stimulus onset (Figure 9). These are nonassociative responses as they were greatest in animals that never had the sound paired with shock and decreased with familiarity to the stimulus (Figures 5, 7 and 8). Figure 9A–B shows the high velocity movement to tone, noise, and shock onset. The difference between the stimuli seems quantitative, such that shock > noise > tone, but note that in the violin plot some noise-elicited bursts are as fast as the fastest shock responses and many of the shock-elicited bursts overlapped in velocity with those triggered by tone. In all cases, these movements seemed protean and undirected.
 
@@ -147,21 +323,21 @@ Initial reports suggest a sex difference in this noise-elicited flight behavior 
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/75663/elife-75663-fig11-v2.jpg)
 
-**Figure 11.:** The right panels show individual values for each animal’s average PAR and darts per minute across training and testing. p-values and significance were determined through repeated measures ANOVA, and the interaction was followed up with pairwise t-tests.*p<0.05. See Figure 11—source data 1.Figure 11—source data 1.
+**Figure 11.:** The right panels show individual values for each animal’s average PAR and darts per minute across training and testing. p-values and significance were determined through repeated measures ANOVA, and the interaction was followed up with pairwise t-tests.*p<0.05. See Figure 11—source data 1.
 
 Some have characterized freezing as a passive response (Blanchard and Blanchard, 1969; Fadok et al., 2017; Gozzi et al., 2010; Gruene et al., 2015; Yu et al., 2016) that occurs because no other response is available (Blanchard, 1997; Blanchard et al., 1989). However, because motion is often the releasing stimulus for predatory attacks it is the best thing for a small mammal like a rat or a mouse to do when a predator is detected and will only be replaced if there is a change consistent with contact (Fanselow and Lester, 1988). Rodents choose locations in which to freeze such as corners or objects (thigmotaxis) (Grossen and Kelley, 1972). The current data show that the freezing rodent also prepares to react to sudden stimulus change. There is nothing passive about freezing.
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Subjects for all experiments included 120 C57BL/6NHsd mice (Experiment 1, n=24; Experiment 2, n=32; Experiment 3, n=32; Experiment 4, n=32), aged 9–11 weeks of age and purchased from Envigo. This C57BL/6NHsd strain was chosen to match that of Fadok et al., 2017. Each group consisted of four male and four female mice. A necessary/powered group sample size of 8 was calculated based on both years of data in our lab that suggests n=8 is sufficient to detect such behavioral differences in fear conditioning studies and on the recent articles in the literature using this procedure. Mice were group-housed four per cage on a 12 hr light/dark cycle with ad libitum access to food and water. Across each experiment, mice in each cage were randomly assigned to one of the groups, ensuring that every group had a representative from each cage to avoid any cage effects. All experiments were conducted during the lights-on phase of the cycle. Animals were handled for 5 days prior to the start of experiments. Subjects were all treated in accordance with a protocol approved by the Institutional Animal Care and Use Committee at the University of California-Los Angeles following guidelines established by the National Institute of Health.
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 All experiments were conducted in standard MedAssociates fear conditioning chambers (VFC-008; 30.5 × 24.2 × 21 cm), controlled by Med Associates VideoFreeze software (Med Associates, St. Albans, VT). For each experiment, the same context was used for training and testing (see Discussion). The context was wiped down between each mouse with 70% isopropanol and three sprays of 50% Windex were added to the pans below the shock grid floors to provide an olfactory cue/context. The US consisted of a 1 s 0.9 mA scrambled shock delivered through a MedAssociates shock scrambler (ENV-414S). Each of the CSs was delivered using a MedAssociates speaker (ENV-224AM-2). The tone was 7.5 kHz. Both the tone and the white noise were 75 dB inside the chamber. The intertrial interval varied between 150 s and 210 s with an average length of 180 s.
 
-## Design and procedure
+### Design and procedure
 
 Mice were handled for 5 days for approximately 1 min per day prior to beginning the experiment. At the beginning of each day of the experiment, mice were transported in their home cages on a cart to a room adjacent to the testing room and allowed to acclimate for at least 30 min. Mice were individually placed in clean empty cages on a utility cart for transport from this room to the testing room and promptly returned to their home cages after the session was over. These transport cages were wiped down with StrikeBac in between trials/sessions.
 
@@ -173,7 +349,7 @@ Experiment 3 was conducted as delineated in Table 3. The paired noise-shock (con
 
 Experiment 4 was conducted as delineated in Table 4. Prior to training with shock, all groups underwent 2 days of additional training with either habituation to the white noise or merely exposure to the context. The habituated groups, habituation/shock only (H-shock) and habituation/noise-shock pairing (H-paired), were trained on each of the 2 days with five presentations of a 10 s noise, while the two nonhabituated groups, context exposure/shock only (C-shock) and context exposure/noise-shock pairing (C-paired) received only equivalent exposure to the context. The following 2 days, as in the experiments above, all groups received 10 footshocks. The paired groups (H-paired and C-paired) were trained on each of the 2 days with five presentations of a 10 s noise, followed immediately by a 1 s footshock. The shock only groups (H-shock and C-shock) were trained on each of the 2 days with only five presentations of a 1 s footshock. At test, all groups received three presentations of the 10 s noise.
 
-## Data, statistics, and analysis
+### Data, statistics, and analysis
 
 Freezing behavior for Experiments 1–3 was scored using the near-infrared VideoFreeze scoring system. Freezing is a complete lack of movement, except for respiration (Fanselow, 1980). VideoFreeze allows for the recording of real-time video at 30 frames per second. With this program, adjacent frames are compared to provide the gray scale change for each pixel, and the amount of pixel change across each frame is measured to produce an activity score. We have set a threshold level of activity for freezing based on careful matching to hand-scoring from trained observers (Anagnostaras et al., 2010). The animal is scored as freezing if they fall below this threshold for at least a 1 s bout of freezing.
 

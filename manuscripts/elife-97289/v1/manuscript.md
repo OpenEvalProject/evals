@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Cell Biology, Duke University School of Medicine Durham United States
-2. https://ror.org/03vayv672 Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary
-3. https://ror.org/00py81415 Department of Psychiatry and Behavioral Sciences, Duke University School of Medicine Durham United States
-4. https://ror.org/00py81415 Mouse Behavioral and Neuroendocrine Analysis Core Facility, Duke University School of Medicine Durham United States
-5. https://ror.org/00py81415 Department of Neurobiology, Duke University School of Medicine Durham United States
-6. https://ror.org/00py81415 Proteomics and Metabolomics Shared Resource and Center for Genomic and Computational Biology, Duke University School of Medicine Durham United States
-7. https://ror.org/03vayv672 Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary
+1. Department of Cell Biology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary ([ROR:03vayv672](https://ror.org/03vayv672))
+3. Department of Psychiatry and Behavioral Sciences, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+4. Mouse Behavioral and Neuroendocrine Analysis Core Facility, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+5. Department of Neurobiology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Proteomics and Metabolomics Shared Resource and Center for Genomic and Computational Biology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+7. Department of Anatomy and Histology, University of Veterinary Medicine Budapest Hungary ([ROR:03vayv672](https://ror.org/03vayv672))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ In this study, we explore the behavioral impacts and regulatory mechanisms of Ra
 
 ## Results
 
-## Inhibition of Rac1 activity at presynaptic terminals in the hippocampus impairs spatial working memory
+### Inhibition of Rac1 activity at presynaptic terminals in the hippocampus impairs spatial working memory
 
 To explore the behavioral effects of presynaptic Rac1, we assessed the hippocampal-dependent learning and memory in C57BL/6J mice with presynaptic Rac1 inhibition. We inhibited Rac1 activity specifically at presynaptic terminals using the presynaptic Rac1 inhibitor construct (O’Neil et al., 2021), which is composed of a Rac1-inhibiting polypeptide W56 (Gao et al., 2001) fused to a presynaptic protein Synapsin1a (Syn1a) (Figure 1A). W56 was replaced with a scrambled sequence (Scr) in the negative control group. Previous studies have demonstrated that W56 effectively inhibits Rac1 activity (Gao et al., 2001), and this inhibitory effect can be spatially targeted when W56 is fused to a protein with specific subcellular localizations in neurons (Hedrick et al., 2016). Our previous work confirmed that targeting W56 to presynaptic terminals could recapitulate the presynaptic phenotypes of Cre-mediated knockout of Rac1 as well as optical inhibition of Rac1 signaling, demonstrating its effectiveness (O’Neil et al., 2021). We verified the presynaptic localization of the presynaptic Rac1 inhibitor construct in primary neuron cultures (Figure 1B, C). We stereotaxically injected adeno-associated viruses (AAVs) encoding this construct bilaterally throughout the hippocampus of C57BL/6J mice and conducted behavioral experiments following a recovery period (Figure 1D). We also verified the expression of the constructs in the dorsal and ventral hippocampus (Figure 1E).
 
@@ -61,7 +61,7 @@ Because the radial-arm maze test requires a relatively high memory load, we also
 
 To more comprehensively assess memory performance beyond basic exploratory behaviors and spatial recognition in mice, we conducted the delayed non-matching to position (DNMTP) T-maze test, which included habituation, pre-training, and DNMTP task (Figure 2K). During habituation, mice were handled for 1 min each day. During pre-training, we performed six forced trials daily, where each mouse was placed on the maze with one goal arm blocked and the food reward in the opposite, open goal arm. The DNMTP task involved six pairs of a forced trial and a choice trial with an inter-trial interval (ITI) of 5 s. In the choice trial, a food reward was placed in the goal arm opposite to the one that was open in the preceding forced trial. The mouse was then placed at the start arm, with both goal arms open. The percentage of correct choices of the control group gradually increased over time and plateaued approximately at 80%, which was consistent with previous studies (Kilonzo et al., 2021; Wietrzych et al., 2005). In contrast, the W56 group exhibited slower learning and fewer correct choices in the last 3 days of the test (Figure 2L). Overall, these data demonstrate that presynaptic Rac1 inhibition in the hippocampus impairs spatial working memory performance in mice. We did not observe any significant difference in the light/dark transition and the open field tests (Figure 2M–U), suggesting that working memory performance was not affected by anxiety or locomotor activity.
 
-## Inhibition of Rac1 activity at presynaptic terminals does not affect other types of memory
+### Inhibition of Rac1 activity at presynaptic terminals does not affect other types of memory
 
 Rac1 is involved in spatial learning and other types of memory, including long-term memory (LTM) (Liu et al., 2016). To assess whether presynaptic Rac1 inhibition is sufficient to affect cognitive functions beyond working memory, we performed the Morris water maze (MWM), a well-established test for hippocampal-dependent learning and memory (Morris et al., 1982; Logue et al., 1997; Haditsch et al., 2009). The task involved two sessions of acquisition trials with an ITI of 30 min daily for 6 consecutive days, followed by a probe trial 30 min after the last acquisition trial on days 2, 4, and 6 (Figure 3A). Swimming speed during acquisition trials was consistent for both groups throughout the test (Figure 3B). Escape latency of the control and W56 groups decreased over days at similar rates (Figure 3C), implying that spatial learning was intact in the W56 group. Furthermore, the percentage of time spent in the quadrant from which the platform was removed during the probe trials was also not significantly different (Figure 3D), suggesting that spatial reference memory and the rate of memory consolidation were not affected by presynaptic Rac1 inhibition.
 
@@ -71,13 +71,25 @@ Rac1 is involved in spatial learning and other types of memory, including long-t
 
 One report suggests that pharmacological inhibition of Rac1 activity in the hippocampus may alter forgetting in fear conditioning, indicating Rac1’s potential role in associative learning and emotional memory (Jiang et al., 2016). To test whether presynaptic Rac1 is involved in this process, we performed a fear conditioning experiment (Figure 3E, F). In the training session, each mouse was placed in a chamber for 3 min, during which a 30-s auditory cue followed by an electric foot shock was applied. Contextual fear conditioning sessions were conducted at 1 hr, 24 hr, and 10 days post-training by placing each mouse back in the same chamber for 5 min. A cued fear conditioning session was performed 2 days post-training by placing the mice in a novel spatial context and exposing them to the same auditory cue approximately halfway through the session. The percentage of time spent freezing was measured and averaged in 1 min bins, except for 30 s bins during and immediately after the auditory cue and electric shock. Mice with presynaptic Rac1 inhibition displayed freezing for similar durations as the negative control in all sessions (Figure 3G), suggesting that retrieval of fear memory was unaffected by presynaptic Rac1 inhibition.
 
-## Inhibition of Rac1 activity at postsynaptic sites affects remote memory
+### Inhibition of Rac1 activity at postsynaptic sites affects remote memory
 
 To assess whether Rac1 is involved in learning and memory in a site-specific manner, we examined the effects of postsynaptic Rac1 inhibition in C57BL/6J mice. We developed two postsynaptic Rac1 inhibitor constructs by fusing W56 with a linker to fibronectin intrabodies generated with mRNA display (FingRs) targeting a postsynaptic marker, either PSD95 or Gephyrin (Bensussen et al., 2020; Gross et al., 2013), with the scrambled sequence replacing W56 in the negative control group (Figure 4A). PSD95 and gephyrin FingRs recognize each endogenous protein and have been used extensively to localize fusion proteins such as fluorescent proteins to postsynaptic sites (Gross et al., 2016; Kim et al., 2023; Rimbault et al., 2024; Trimmer, 2022). We combined AAVs encoding these postsynaptic Rac1 inhibitor constructs in equal ratios and injected the mixture bilaterally throughout the hippocampus of adult C57BL/6J mice (n = 16 each for control and W56 group). We confirmed the expression of the postsynaptic Rac1 inhibitor constructs at postsynaptic sites (Figure 4B, C, Figure 4—figure supplement 1A) and in the hippocampus (Figure 4—figure supplement 1B). Behavioral tests, including the light/dark transition and the open field tests, revealed no significant effects of postsynaptic Rac1 inhibition on anxiety or locomotor activity (Figure 4—figure supplement 2A–G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97289/elife-97289-fig4-v1.jpg)
+
+**Figure 4.:** (A) Illustration of the postsynaptic Rac1 inhibitor constructs. (B, C) Fluorescence intensity profiles validated postsynaptic localization of the constructs (Soluble GFP (Homer): n = 12 cells; PSD95.FingR-Scr: n = 9 cells; PSD95.FingR-W56 : n = 9 cells; Soluble GFP (Gephyrin): n = 5 cells; GPHN.FingR-Scr: n = 5 cells; GPHN.FingR-W56: n = 7 cells). The radial-arm maze (n = 16 mice per group) revealed no significant differences in (D) the total number of arm entries (Scr: 32.25 ± 1.896, W56: 30.56 ± 1.245, p = 0.4627), (E) number of arm entries before making the first error (Scr: 5.563 ± 0.3532, W56: 5.563 ± 0.3287, p = 0.8199), and (F) latency to the first error (Scr: 37.19 ± 3.500 s, W56: 34.56 ± 2.630 s, p = 0.9919). The spontaneous alternation Y-maze (n = 16 mice per group) indicated no significant difference in (G) the total number of arm entries (Scr: 38.75 ± 2.452, W56: 38.63 ± 1.798, p = 0.9675), (H) latency to the first arm entry (Scr: 12.68 ± 1.819 s, W56: 10.07 ± 2.240 s, p = 0.3226), and (I) percentage of alternations (Scr: 45.61 ± 2.254%, W56: 42.56 ± 2.723%, p = 0.3953). (J) The percentage of correct choice trials in the DNMTP T-maze (n = 8 mice per group) was comparable for both groups throughout the test. In the Morris water maze (Scr: n = 16 mice; W56: n = 15 mice), (K) the escape latency from acquisition sessions (F(1,29) = 0.04019, p = 0.8425), and (L) the time spent in the platform quadrant (F(1,29) = 0.05692, p = 0.8131) also revealed no significant differences. (M) Percentage of time spent freezing in the fear conditioning test (Scr: n = 15 mice; W56: n = 14 mice). The difference between treatment groups was significant during the contextual trial 10 days after training (two-way repeated measures analysis of variance [ANOVA]; Treatment: F(1,27) = 6.169, p = 0.0195), but not in other trials. Data are expressed as mean ± standard error of the mean (SEM) with ns, not significant, *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97289/elife-97289-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) C57BL/6J primary neuron cultures expressing GFP, the negative control construct, or the postsynaptic Rac1 inhibitor construct. The mScarlet-Gephyrin.FingR constructs were immunostained using an RFP antibody and an Alexa Flour 488 secondary antibody, enabling the imaging of mScarlet in the green channel. (B) Representative immunohistochemistry images of brain slices expressing W56-PSD95.FingR-GFP and W56-mScarlet-Gephyrin.FingR. Expression of both constructs was observed in the dorsal (left) and ventral (right) hippocampus.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97289/elife-97289-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** In the light/dark transition (n = 16 mice per group), (A) latency to the first transition (Scr: 8.350 ± 1.221 s, W56: 7.588 ± 0.7299 s, p = 0.9612) and (B) time spent in the light box (Scr: 45.60 ± 1.625%, W56: 45.26 ± 1.597%, p = 0.8819) were not influenced by postsynaptic Rac1 inhibition. In the open field test (n = 16 mice per group), (C) distance traveled (Scr: 1506 ± 89.87 cm, W56: 1543 ± 95.70 cm, p = 0.7775), (D) velocity (Scr: 10.02 ± 0.2759 cm/s, W56: 9.768 ± 0.1878 cm/s, p = 0.4597), (E) percentage of time in movement (Scr: 69.33 ± 1.896%, W56: 71.07 ± 1.658%, p = 0.4953), (F) percentage of time spent in the center (Scr: 54.38 ± 2.265%, W56: 54.87 ± 2.952%, p = 0.8958), and (G) number of stereotypic activities (Scr: 5914 ± 342.4, W56: 5946 ± 281.2, p = 0.9443) were also unaffected. (H) The startle responses elicited by electric shock showed a positive correlation with the intensity of the shock (Scr: n = 16 mice; W56: n = 15 mice). However, no significant variations were observed across treatment groups (two-way repeated measures analysis of variance (ANOVA); Intensity: F(3.808,110.4) = 32.41, p < 0.0001; Intensity × Treatment: F(6,174) = 1.313, p = 0.2539). Data are expressed as mean ± standard error of the mean (SEM) with ns, not significant.
+
 In the radial-arm maze and spontaneous alternation Y-maze tests, there was no notable change in spatial working memory (Figure 4D–I). In the DNMTP T-maze test, both W56 and control groups showed a similar gradual increase in the percentage of correct choices over time (Figure 4J). In the MWM, escape latency for both groups decreased at comparable rates, and no significant difference was found in time spent in the platform quadrant (Figure 4K, L), indicating intact LTM in mice with postsynaptic Rac inhibition. In the fear conditioning test, the percentage of freezing time was not significantly different overall, with the exception of the contextual trial 10 days after training (Figure 4M). In this trial, the W56 group exhibited a significantly reduced level of freezing, suggesting an impairment in remote fear memory. This difference was not likely driven by shock sensitivity because the response to shock was not different between treatment groups (Figure 4—figure supplement 2H). Overall, the behavioral experiments suggested that postsynaptic Rac1 inhibition does not influence hippocampal-dependent spatial working memory but does affect forms of longer-term memory such as remote fear memory.
 
-## Postmitotic presynaptic Rac1 inhibition affects synaptic morphology, vesicle size, and distribution
+### Postmitotic presynaptic Rac1 inhibition affects synaptic morphology, vesicle size, and distribution
 
 Manipulation of Rac1 activity influences synaptic morphogenesis, likely via actin cytoskeleton regulation (Costa et al., 2020; Zamboni et al., 2018). While the role of Rac1 in postsynaptic morphology is established, its impact on presynaptic terminals is still unclear. To test whether presynaptic Rac1 inhibition induces any synaptic structural change, we analyzed hippocampal neurons with presynaptic Rac1 inhibition using electron microscopy (EM). The presynaptic Rac1 inhibitor construct W56-Synapsin1a or the negative control Scr-Synapsin1a was expressed throughout the hippocampus through AAV transduction in adult P60 C57BL/6J mice (n = 3 per group). After 4 weeks, we fixed brain tissues and examined the dorsal CA1 stratum radiatum neuropil using EM (Figure 5A, B).
 
@@ -87,9 +99,17 @@ Manipulation of Rac1 activity influences synaptic morphogenesis, likely via acti
 
 We observed no significant differences in bouton diameter, number of synaptic vesicles per bouton, and spine density between the two groups (Figure 5C–E). However, the W56 group exhibited a notable increase in diameter of vesicle (Figure 5F), implying possible disruptions in synaptic vesicle endocytosis by presynaptic Rac1 inhibition. We also noted that vesicles in the W56 group were positioned further from the active zone (Figure 5G), indicating that Rac1 may modulate vesicle trafficking or dynamics. Despite the fact there was no difference in spine density, which is known to be regulated by postsynaptic processes involving Rac1 (Costa et al., 2020; Runge et al., 2020), a slight increase in spine area was observed in the W56 group (Figure 5H), possibly reflecting transsynaptic effects of altered presynaptic functions.
 
-## Functional protein interaction network of presynaptic Rac1
+### Functional protein interaction network of presynaptic Rac1
 
 To investigate the proteomic landscape of activity-dependent Rac1 interactions at presynaptic terminals, we employed in vivo proximity-dependent biotin identification (iBioID), a chemico-genetic proteomics technique that allows for spatially targeted protein identification using a promiscuous biotin ligase at synaptic sites (Uezu et al., 2016). We developed a presynaptic Rac1 BioID construct comprising a presynaptic protein synaptotagmin1, a small biotin ligase ultraID (Kubitz et al., 2022), and Rac1 in either constitutively active (CA) or dominant negative (DN) forms (Figure 6A). We validated the presynaptic localization of these fusion proteins in primary neuron cultures (Figure 6B, C) and expressed these constructs through AAV transduction in neonatal C57BL/6J mice (n = 9 per group). Following biotin injection, we harvested brain tissues at P28, isolated synaptosomes, and performed streptavidin bead pulldown to purify biotinylated proteins, which were analyzed via liquid chromatography–tandem mass spectrometry (LC–MS/MS) (Figure 6D). We validated the expression of the presynaptic Rac1 BioID constructs and biotinylation from the purified protein samples (Figure 6E, F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97289/elife-97289-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the presynaptic Rac1 BioID construct. (B, C) Presynaptic Rac1 BioID constructs are co-localized with a presynaptic marker Bassoon at synaptic boutons in C57BL/6J primary neuron cultures (UltraID-Rac1 DN: n = 7 cells; Syt1-UltraID-Rac1 DN, UltraID-Rac1 CA, Syt1-UltraID-Rac1 CA: n = 6 cells). (D) Timeline of AAV injection and protein sample collection. Expression of presynaptic Rac1 BioID constructs (E) and biotinylation (F) were verified using Western blot. (G) Volcano plot of the biotinylated proteins. Red dots represent the 19 proteins that were significantly enriched in the Rac1 constitutively active (CA) proteome. Dashed lines correspond to p-value = 0.05 (horizontal) or fold-change (FC) = ±1.5 (vertical). (H) Network of biotinylated proteins that were significantly enriched (FC >1.5 and p < 0.05) in the CA proteome. Edges represent protein–protein interactions identified from our proteomic data (red) or reported from STRING (blue). (I) Phosphorylated peptides that were significantly enriched in the CA proteome. Numbers in gray boxes represent phosphorylation sites. Arrows represent predicted kinase–substrate pairs with high percentile scores (>90). (J) Schematic of Syntaxin-1 and Munc18a (PDB ID: 3C98). A red residue represents the phosphorylation site (Ser 109). (K) Schematic of Synaptotagmin-1 and SNARE complex (PDB ID: 5CCG). Colors are assigned randomly for different proteins/domains. Data are expressed as mean ± standard error of the mean (SEM) with **p < 0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97289/elife-97289-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Network of biotinylated proteins identified within either CA or DN proteome. Node titles correspond to the gene names. Edges between nodes represent protein–protein interactions previously reported from STRING. (B) Clustergrams of proteins that are previously reported as synaptic (green, n = 123/149 proteins) or presynaptic (pink, n = 61); localized in presynaptic membrane (purple, n = 29), presynaptic vesicle (blue, n = 11), or active zone (cyan, n = 11) as identified through SynGO; are significantly enriched in our Rac1 CA proteome (red, n = 19). (C) Venn diagram of the biotinylated proteins annotated as synaptic/presynaptic or enriched in the CA proteome. (D) Gene ontology (GO) analysis of the 19 biotinylated proteins enriched in the CA proteome using Biological Process (left) and Molecular Function (right) datasets. (E) Table of percentile scores of kinases and specific phosphorylation sites of substrates. The data were retrieved from the Kinase Library.
 
 In total, we quantified over 44,000 peptides corresponding to 3325 proteins. Using the advanced sensitivity of the newly released Orbitrap newly released Asymmetric Track Lossless (Astral) mass spectrometry analyzer, we were able to directly detect biotinylated peptides for 149 proteins in synaptosomes (Figure 6—figure supplement 1A), demonstrating their in vivo proximity to the BioID constructs at presynaptic terminals. To evaluate if these biotinylated proteins were indeed synaptic, we compared them with the synaptic gene datasets (Koopmans et al., 2019; van Oostrum et al., 2023). A high proportion (123/149) of biotinylated proteins were reported as enriched at synapses. Among the 97 SynGO-annotated proteins, 61 proteins were specifically localized at presynaptic terminals, including presynaptic membranes, vesicles, and active zones (Figure 6—figure supplement 1B), validating the spatial targeting of biotinylation. Additionally, a variety of proteins known to regulate or interact with Rac1, such as GEFs, GTPase-activating proteins (GAPs), and P21-activated kinases (PAKs), were present in the identified proteomes.
 
@@ -129,15 +149,193 @@ In summary, this study highlights the critical role of presynaptic Rac1 inhibiti
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary neuron cultures</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 132 011; RRID:AB_887726</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R960-25; RRID:AB_2556564</td>
+      <td>IHC (1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bassoon (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 141 003; RRID:AB_887697</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (Mouse monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 409 011; RRID:AB_2800533</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Homer1 (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 160 003; RRID:AB_887730</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Gephyrin (Rabbit monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 147 008; RRID:AB_2619834</td>
+      <td>ICC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Biotin (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 31852; RRID:AB_228243</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-W56-EGFP-Linker-Synapsin1a</td>
+      <td>O’Neil et al., 2021</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-Scr-EGFP-Linker-Synapsin1a</td>
+      <td>O’Neil et al., 2021</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-EGFP-Rac1</td>
+      <td>O’Neil et al., 2021</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-Syanptotagmin1-Linker-V5-UltraID-Linker-Rac1 CA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-Syanptotagmin1-Linker-V5-UltraID-Linker-Rac1 DN</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-V5-UltraID-Linker-Rac1 CA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn1-V5-UltraID-Linker-Rac1 DN</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-EF1a-W56-Linker-PSD95.FingR-eGFP-CCR5TC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-EF1a-Scr-Linker-PSD95.FingR-eGFP-CCR5TC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV_Ef1a-W56-Linker-mScarlet-Gephyrin.FingR-IL2RGTC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV_Ef1a-Scr-Linker-mScarlet-Gephyrin.FingR-IL2RGTC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Plasmids construction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>Millipore Signma</td>
+      <td>Cat# B4501; CAS: 58-85-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>The Cytoscape Consortium</td>
+      <td>RRID:SCR_003032</td>
+      <td>Version 3.9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 All experiments were conducted in compliance with the National Institutes of Health guidelines and were approved by the Duke Institutional Animal Care and Use Committee (Protocol #: A144-23-07). C57BL/6J (Strain #:000664) mice were purchased from the Jackson Laboratory. Mice were housed in a group of 2–5 per cage and had free access to food and water under a 12-hr light/dark cycle.
 
-## Primary neuron cultures
+### Primary neuron cultures
 
 Prior to obtaining neuron cultures, 12 mm coverglasses (Neuvitro) were incubated overnight in 1 mg/ml poly-L-lysine (Sigma) solution in 24-well plates. Primary neuron cultures were prepared from P0 to P2 pups. The cortices and hippocampi were isolated in Hibernate-A medium (Gibco) at 4°C and then incubated in 5 mg/ml papain solution at 37°C for 18 min. Neurons were dissociated using a Pasteur pipet and plated on the coverglasses in 24-well plates at the concentration of 200,000 cells/well. Neurons were incubated in Neurobasal A medium (Thermo Fisher) supplemented with 10 µg/ml gentamicin, 2% B-27 (Gibco), 1% GlutaMAX (Gibco) at 37°C and 5% CO2. At 4 days in vitro (DIV4), AAVs were added in neuron cultures at a multiplicity of infection of 150,000 viral genomes/cell, and 5 µM cytosine arabinoside (Sigma) was also added to suppress glial proliferation. Half of the medium was replaced with fresh medium once every 6–7 days.
 
-## Plasmids construction
+### Plasmids construction
 
 All plasmid constructs were verified prior to use by sequencing from either Eton Bioscience or Plasmidsaurus. pAAV-hSyn1-W56-EGFP-Linker-Synapsin1a, pAAV-hSyn1-Scr-EGFP-Linker-Synapsin1a, pAAV-hSyn1-DIO-TurboID, and pAAV-hSyn1-EGFP-Rac1 were previously generated in the Soderling lab.
 
@@ -153,43 +351,43 @@ pAAV-EF1a-W56-Linker-PSD95.FingR-eGFP-CCR5TC and pAAV-EF1a-Scr-Linker-PSD95.Fing
 
 pAAV_Ef1a-W56-Linker-mScarlet-Gephyrin.FingR-IL2RGTC and pAAV_Ef1a-Scr-Linker-mScarlet-Gephyrin.FingR-IL2RGTC were generated by replacing the NcoI/BstEII sites of pAAV-EF1A-mScarlet-Gephyrin.FingR-IL2RGTC (Addgene #125695) with the PCR products of the gene fragments (Twist Bioscience) encoding W56-mScarlet (FWD and REV primers: 5′-TAAGCTTGCCACCATGGTGGACGGCAAGC-3′ and 5′-GGCCACCCTTGGTCACCTTCAGCTTGGCGG-3′, respectively) or Scr-mScarlet (FWD and REV primers: 5′-TAAGCTTGCCACCATGCTGCCCGGCTGG-3′ and 5′-GGCCACCCTTGGTCACCTTCAGCTTGGCGG-3′, respectively) using In-Fusion cloning.
 
-## Virus production
+### Virus production
 
 Large-scale AAVs were produced as previously described (Uezu et al., 2016). Briefly, HEK293T (human embryonic kidney 293T) cells were incubated in Dulbecco’s modified Eagle medium (DMEM) medium (Gibco) supplemented with 10% fetal bovine serum (Sigma-Aldrich) and 1% penicillin–streptomycin (Gibco) at 37°C and 5% CO2. For each virus, HEK293T cells were plated on six 15 cm plates at a density of 1.5 × 107 cells/plate. After 24 hr, cells were transfected with 15 µg AAV plasmid with the transgene, 15 µg serotype plasmid AAV2/9, and 30 µg pAdDF6 using PEI MAX (Polysciences). At 72 hr after transfection, the cells were collected, resuspended in 4 ml of cell lysis buffer (15 mM NaCl, 5 mM Tris–HCl, pH 8.5), and freeze-thawed three times. The cell lysate was treated with 50 U/ml benzonase (Millipore) and centrifuged at 3300 × g for 30 min. The supernatant was added on the gradient of 15%, 25%, 40%, and 60% iodixanol solution and ultracentrifuged at 370,000 × g for 90 min using a Beckman Ti-70 rotor. The viral solution at the interface of the 40% and 60% iodixanol gradient was collected, washed with 1× phosphate-buffered saline (PBS) in a 100 kDa filter (Millipore) at least three times and until the final volume is less than 200 µl. Purified AAVs were aliquoted and stored at −80°C.
 
 Small-scale AAVs were produced as previously described (O’Neil et al., 2021). Briefly, for each virus, HEK293T cells were plated on a 12-well plate at a density of 2.5x105 cells/well. After 24 hr, cells were transfected with 0.4 µg AAV plasmid with the transgene, 0.4 µg serotype plasmid AAV2/9, and 0.8 µg pAdDF6 using PEI MAX (Polysciences). At 6–18 hr after transfection, all medium was aspirated and replaced with 1 ml DMEM without glutamine (Gibco) supplemented with 10% fetal bovine serum and 1% GlutaMAX. At 72 hr after transfection, the medium was collected, centrifuged in a 0.45-µm Spin-X filter at 2350 × g for 1 min, and stored at 4°C until use.
 
-## Stereotaxic injection of AAV
+### Stereotaxic injection of AAV
 
 Adult mice at P35–42 were stereotaxically injected with high-titer (>1013 VG/ml) AAVs bilaterally in the hippocampus. Mice were anesthetized with isoflurane. Microinjection dispense system, Picospritzer III (Parker), was used to inject small volume (~220 nl per site) of AAVs in two sites per hemisphere (AP −1.46, ML ±1.25, DV −2; and AP −2.46, ML ±2.4, DV −2.3) at a rate of 50 nl/min. The microinjection needle was inserted into the brain slowly at a speed of 0.5 mm/min and was retracted 5 min after AAV injection. Body weights of mice were recorded before and 24 hr after the surgery.
 
-## Mouse behavioral experiments
+### Mouse behavioral experiments
 
 All behavioral experiments were performed in the Duke Mouse Behavioral and Neuroendocrine Core Facility for behavioral tests. Food and water were provided ad libitum unless specified. To minimize the effects of olfactory cues, all apparatus were thoroughly wiped with disinfectant (LabSan 256 CPQ, Sanitation Strategies) before and in-between tests. Behavioral experiments were conducted with a minimum interval of 1 week between each experiment. The experimenters were blinded to the treatment groups to ensure objective assessment.
 
-## Light/dark transition test
+#### Light/dark transition test
 
 The light/dark transition test was conducted in a rectangular, two-compartment box. One compartment was brightly illuminated by a white bulb, while the other compartment was dark and covered with an opaque lid. The compartments were connected by a sliding door controlled by Med-PC Behavioral Control Software. Each mouse was placed in the dark compartment and allowed to move freely between the two compartments for 5 min. The Behavioral Control Software was used to record the time spent in each compartment, the number of transitions between compartments, and the total distance traveled.
 
-## Open field test
+#### Open field test
 
 Mice were placed in a square open field chamber (Omnitech Electronics Inc) and allowed to explore for 5 min. Locomotor activity was recorded using a camera on top and photosensors on sides of each chamber and analyzed using the Fusion software (Omnitech Electronics Inc). A horizontal activity count is a count of sensor changes (beam breaks), and a vertical activity count is a count of vertical beam breaks. A stereotypic activity count is the number of beam breaks due to a stereotypic activity, which is counted when a mouse breaks the same beam or the same set of beams repeatedly. Episodes are defined as periods of activity separated by rest periods of at least 1 s.
 
-## Radial-arm maze test
+#### Radial-arm maze test
 
 The radial-arm maze was made of eight identical arms conjoined at the center. Each arm was flanked by walls on both sides for the initial one-third of their length from the center of the maze. The maze was elevated 50 cm above the floor. The maze was surrounded by curtains with visual cues. Mice were placed at the center of the radial-arm maze and allowed to explore for 5 min. Video recordings were analyzed using a manual scoring method, where the specific arm and time point were recorded when all four paws of a mouse crossed beyond the walls. An arm entry was considered as an ‘error’ if the arm was previously visited in the given 5-min session. The percentage of errors was calculated as the number of errors divided by the total number of arm entries.
 
-## Y-maze test
+#### Y-maze test
 
 The Y-maze was made of three identical closed arms conjoined at the center. The maze was surrounded by curtains with visual cues. Mice were placed in the center of the Y-maze and allowed to explore for 5 min. Activity was recorded using a camera above the maze and analyzed using a video tracking software (Noldus EthoVision XT). An alternation was defined as the entry into the three arms consecutively. The percentage of alternation was calculated as the number of alternations divided by the number of maximum alternations.
 
-## DNMTP T-maze test
+#### DNMTP T-maze test
 
 Prior to the DNMTP test, mice (n = 8–10 per treatment group) were placed on a food restriction protocol to maintain them at 85–90% of their free-feeding body weight. Water was available ad libitum. Body weight was monitored daily to adjust the food ration and maintain the desired body weight.
 
 The T-maze was made of two goal arms and a longer start arm conjoined in the shape of ‘T’. The maze was elevated 50 cm above the floor. At the end of each goal arm, a food well was present where a food reward could be placed. The maze was surrounded by curtains with visual cues. The test consisted of habituation, pre-training, and the DNMTP task. During habituation, a small amount of food reward was mixed in rodent diets, and mice were handled for 1 min daily for 6 consecutive days. Pre-training involved six forced trials daily per mouse. In the forced trial, one of the goal arms was pseudo-randomly chosen (three times each for the left or right goal arm, in a random order) and blocked, and a food reward was placed at the end of the open goal arm. A mouse was placed in the start arm and allowed to explore the T-maze until they consumed the reward or 30-s period passed. The DNMTP task was conducted after all mice consumed food rewards in at least five forced trials during the pre-training. The DNMTP task involved six pairs of a forced trial and a choice trial with an ITI of 5 s daily for 7 days. If a mouse consumed the food reward in the forced trial, the mouse was removed from the maze, and a choice trial was performed after 5 s. In the choice trial, the mouse was placed back at the start arm with both goal arms open with a food reward at the arm opposite to the open goal arm in the forced trial. A correct choice was recorded if the mouse entered the correct arm on the first attempt. Upon entering an incorrect arm, the mouse was confined in the arm for 10 s. The percentage of correct choices was calculated as the number of correct choice trials divided by the total number of choice trials for every mouse each day. A percentage of correct choices was not included if a mouse failed five or all forced trials on a given day. The Tukey multiple comparison test was performed to compare means of correct choices percentages across treatment groups.
 
-## MWM test
+#### MWM test
 
 Prior to water maze testing, mice were handled for 1 min daily for 5 days. Subsequently, on days 6 and 7, mice were placed in a cage filled with shallow water of 1 cm depth for 30 s. On day 8, mice were allowed to freely swim in deep water for 30 s. On days 9 and 10, mice were placed on a platform submerged 1 cm below the water surface for 5 s and subsequently allowed to swim freely until they climbed onto the platform or 30 s elapsed.
 
@@ -199,7 +397,7 @@ Two pairs of acquisition trials were performed each day for 6 consecutive days. 
 
 Probe trials were conducted 30 min after the last acquisition trial on days 2, 4, and 6. The hidden platform was temporarily removed from the pool prior to the probe trials. Each mouse was placed opposite from the original position of the platform and allowed to swim freely for 60 s. Percentage of time spent in the platform quadrant was calculated as time spent in the quadrant where the hidden platform had been located during the acquisition trials divided by 60 s, the total duration of a probe trial.
 
-## Fear conditioning test
+#### Fear conditioning test
 
 In a training session, mice were placed in a chamber with a metal grid floor. Mice were allowed to explore for 2 min, after which an auditory tone was played as a conditioned stimulus (CS) for 30 s. Immediately after the CS, an electric shock (0.4 mA, 2 s) was applied as an unconditioned stimulus (US). After the shock, mice were allowed to explore for 30 s.
 
@@ -209,15 +407,15 @@ Cued fear conditioning session was conducted 48 hr after the training session. I
 
 For all sessions, mouse activity was recorded using a camera installed on the top of each chamber. Freezing time, defined as a motionless period lasting 1 s or more, was calculated using a fear conditioning software, CleverSys FreezeScan. Chambers were thoroughly cleaned with sanitizer after every session.
 
-## Shock sensitivity threshold evaluation
+#### Shock sensitivity threshold evaluation
 
 The assessment of sensitivity to scrambled foot shock was conducted using a Med-Associates (St. Albans, VT) startle platform. Mice were placed in a Plexiglas enclosure featuring a grid floor, with each grid linked to an electric harness connected to a scrambler module (Med-Associates), which generated foot shocks of different intensities. The procedure consisted of a 2-min period for acclimatization, followed by 10 trials where mice received shocks (250 ms) with ITIs of 20–90 s. Shock intensities across the 10 trials included 0, 0.1, 0.2, 0.3, 0.4, 0.5, and 0.6 mA. The startle response of each mouse was recorded using piezoelectric sensors during the initial 1000 ms following the onset of the shock stimulus.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Prior to immunocytochemistry, fixation buffer (4% PFA (Sigma-Aldrich), 4% sucrose in 1× PBS), permeabilization/wash buffer (0.1% Triton X-100 in 1× PBS) and blocking buffer (5% normal goat serum (Jackson ImmunoResearch), 0.1% Triton X-100 in 1× PBS) were prepared. Primary neuron cultures were fixed in the fixation buffer at 4°C for 10 min and were gently shaken in 1× PBS two times at room temperature (RT) for 5 min, in the permeabilization buffer at RT for 7 min, in the blocking buffer at RT for 1 hr, in the blocking buffer with primary antibodies at 4°C overnight, in the wash buffer three times at RT for 5 min, in the blocking buffer with secondary antibodies at RT for 1 hr, and in the wash buffer three times at RT for 5 min. The coverglass with the neuron cultures was transferred onto a glass slide with FluorSave Reagent (Millipore).
 
-## Transcardiac perfusion and immunohistochemistry
+### Transcardiac perfusion and immunohistochemistry
 
 For transcardiac perfusion, mice were anesthetized with isoflurane until there was no response to tail or toe pinches. In a chemical fume hood, mice were transcardially perfused with saline for 10 min and 4% paraformaldehyde (PFA) in 1× PBS for 30 min at a speed of 6.5 ml/min. The brain was harvested and stored in 4% PFA in 1× PBS at 4°C for 1–2 days until use.
 
@@ -225,7 +423,7 @@ Prior to immunohistochemistry, wash buffer (0.1% Triton X-100 in 1× PBS) and bl
 
 Antibodies used and the corresponding dilutions were as follows: mouse-anti-GFP (1:500, Synaptic Systems 132011), mouse-anti-V5 (1:500 for IHC and 1:1000 for WB, Thermo Fisher R960-25), rabbit-anti-Bassoon (1:500, Synaptic Systems 141003), mouse-anti-RFP (1:500, Synaptic Systems 409011), rabbit-anti-Homer1 (1:500, Synaptic Systems 160003), rabbit-anti-Gephyrin (1:500, Synaptic Systems 147008), goat-anti-biotin (1:5000, Invitrogen 31852), goat-anti-mouse 488 (1:1000, Invitrogen A32723), goat-anti-rabbit 637 (1:1000, Invitrogen A32733), goat-anti-mouse 800 (1:5000, LI-COR 926-32210), and rabbit-anti-goat horseradish peroxidase (HRP)-conjugate (1:5000, Bio-Rad 1721034).
 
-## In vivo proximity-dependent biotin identification
+### In vivo proximity-dependent biotin identification
 
 High-titer AAVs (>1013 VG/ml, 2 μl per hemisphere) were intracranially and bilaterally injected into P0-1 C57BL/6J pups under hypothermia anesthesia. Pups were placed under a heat lamp until recovery and then returned to their home cage. After 23–27 days post-AAV injection, mice were subcutaneously injected with 24 mg/kg biotin on a daily basis for 5 consecutive days. At P28, the cortices and hippocampi were harvested, flash-frozen using liquid nitrogen, and stored at −80°C.
 
@@ -233,11 +431,11 @@ Prior to synaptosome purification, homogenization buffer (320 mM sucrose, 5 mM 4
 
 Prior to the streptavidin pulldown, radioImmunoprecipitation assay (RIPA) buffer (50 mM Tris/Cl, 150 mM NaCl, 1 mM ethylenediaminetetraacetic acid [EDTA], 0.4% sodium dodecyl sulfate [SDS], 2% Triton X-100, 2% deoxycholate) and lysis buffer (50 mM Tris/Cl, 150 mM NaCl, 1 mM EDTA), and elution buffer (2% SDS, 25 mM Tris, 50 mM NaCl, 10 mM DTT, 2.5 mM biotin) were prepared. On the day of purification, all solutions were supplemented with cOmplete protease inhibitor and PhosSTOP phosphatase inhibitor cocktails. Synaptosomes were thawed and pooled (3 brains per replicate; 3 replicates per AAV construct) in an equal mix of lysis and RIPA buffers, followed by sonication for three 20-s intervals. After adding SDS to a final concentration of 1%, the lysates were heated in boiling water for 5 min. The lysates were then cooled on ice and combined with 50 μl of washed Pierce Protein A Agarose (Thermo Fisher). The mixture was rotated at 4°C for 30 min and centrifuged at 3,000 × g for 1 min. The supernatant was carefully collected and then combined with 50 μl of Pierce NeutrAvidin agarose (Thermo Fisher), followed by rotation at 4°C overnight. After centrifugation at 3000 × g for 1 min, the bead pellet was transferred to a low-protein-binding tube and washed twice with 2% SDS, twice with 25 mM LiCl/1% deoxycholate/1% Triton X-100, twice with 1 M NaCl, and five times with 50 mM Ambic in MS-grade water. The tube was placed on a nutator at room temperature for 10 min between washing steps. After washing, the biotinylated proteins were eluted from the beads by adding 50 μl of elution buffer and heating at 95°C for 5 min. After centrifugation at 3000 × g for 1 min, the supernatant containing the biotinylated proteins was transferred to a new low-protein-binding tube and stored at −80°C.
 
-## Electrophoresis and Western blotting
+### Electrophoresis and Western blotting
 
 Equal amounts (10 μl) of the eluted solution from the streptavidin pulldown were loaded in a 4–20% polyacrylamide gel (Bio-Rad 4561096) and separated with SDS–polyacrylamide gel electrophoresis at 100 V for 1 hr. After electrophoresis, proteins were transferred to a nitrocellulose membrane (Cytiva 10600002) at 90 V for 75 min. After transfer, the membranes were blocked for 1 hr using Intercept Blocking buffer (LI-COR 927-60001) or 5% milk in 1× TBST (TBS with 0.05% Tween-20). The membranes were then incubated with primary antibodies (mouse-anti-V5 in Intercept Blocking buffer or goat-anti-biotin in 5% milk 1× TBST) at 4°C overnight. The membranes were washed three times with TBST and incubated with secondary antibodies (goat-anti-mouse 800 in Intercept Blocking buffer or rabbit-anti-goat HRP-conjugate in 5% milk 1× TBST) at RT for 1 hr. After washing three times with TBST, the membranes were imaged using the Odyssey Imaging System and the Image Studio Ver 5.2.
 
-## Differential protein expression analysis by quantitative LC–MS/MS
+### Differential protein expression analysis by quantitative LC–MS/MS
 
 The protein samples were kept in dry ice and sent to the Duke Proteomics and Metabolomics Core Facility for LC–MS/MS. The samples were initially spiked with either 1 or 2 pmol of bovine casein, serving as an internal quality control. They were adjusted to a 5% SDS concentration, reduced at 80°C for 15 min, and alkylated with 20 mM iodoacetamide at room temperature for 30 min, followed by addition of 1.2% phosphoric acid and 375 μl of S-Trap (Protifi)-binding buffer (90% methanol, 100 mM triethylammonium bicarbonate [TEAB]). The proteins were trapped on the S-Trap micro cartridge, digested with 20 ng/μl sequencing grade trypsin (Promega) at 47°C for 1 hr, and eluted sequentially with 50 mM TEAB, then 0.2% formic acid, and finally a mixture of 50% acetonitrile with 0.2% formic acid. Post-elution, the samples were lyophilized until dry and then reconstituted in 1% trifluoroacetic acid (TFA)/2% acetonitrile containing 12.5 fmol/μl of yeast alcohol dehydrogenase (ADH). Equal volumes from each sample were combined to produce a study pool quality control.
 
@@ -249,16 +447,16 @@ The raw intensity values for each precursor were generated by the Spectonaut det
 
 Proteins from different species and contaminants, such as keratins and avidins, were removed from the dataset. FC was defined as a ratio of protein intensity in the experimental sample to that in the control sample, and FDR-adjusted p-value was calculated from two-tailed heteroscedastic t-tests on log2-transformed protein intensities. Proteins were considered significantly enriched in the experimental sample if their FC was higher than 1.5 and FDR-adjusted p-value lower than 0.05. Protein–protein interaction (PPI) networks were generated using Cytoscape 3.10.1. Each node corresponds to a gene name, and an edge between nodes shows a PPI. The previously known interactions were identified using the STRING database (v12.0) with a minimum required interaction score of 0.7. The enriched GO terms were identified using ShinyGO v0.80, and synaptic localization was annotated using SynGO v1.1.
 
-## Electron microscopy
+### Electron microscopy
 
 C57BL/6J mice (4 months old) were stereotaxically injected with AAV-hSyn1-W56-Synapsin1a or AAV-hSyn1-Scr-Synapsin1a (3 mice each; 6 mice in total) bilaterally in the hippocampus. The procedure and coordinates were as described in the Stereotaxic injection of AAV section. After 1 month post-injection, mice were transcardially perfused with cold physiological saline for 2 min, until blood is washed out and then with fixative (0.1% EM-grade glutaraldehyde (GA), 4% PFA in 0.1 M phosphate buffer (PB, pH 7.2)) for 45 min at a flow rate of 6.5 ml/min. Brains were post-fixed in GA-free 4% PFA in 0.1 M PB at 4°C overnight. Sections with a thickness of 70 µm were prepared using a Leica vibratome. No noticeable variations in the size of the hippocampus were observed across experimental groups.
 
 For EM, sections were post-fixed with 1% osmium tetroxide, subjected to a graded ethanol dehydration process, and then embedded in Durcupan epoxy resin (Sigma, Germany) within Aclar sheets (EMS, Hatfield, PA, USA). Rectangular samples, precisely cut from the dorsal region of the CA1 hippocampus (approximately −4.0 mm from bregma), were prepared under a Leica S6D dissecting microscope and mounted onto plastic blocks. Using a Reichert ultramicrotome, ultrathin sections of 60 nm were cut, placed onto 300 mesh copper grids, stained with lead citrate (Ultrostain II, Leica), and then analyzed using a JEM-1011 transmission electron microscope (JEOL, Tokyo, Japan). This microscope was equipped with a Mega-View-III digital camera and a Soft Imaging System (SIS, Münster, Germany). For each block, 5–10 sections were examined, with two blocks analyzed per animal to ensure a comprehensive collection of micrographs. Sample areas (>50 µm2 for each animal) were selected semi-randomly. Electron micrographs were used to identify postsynaptic dendritic spines, axonal boutons, and mitochondrial profiles. The areas of spine and mitochondrion profiles were quantified using NIH ImageJ v1.49o (Schneider et al., 2012). Data were organized and analyzed with KaleidaGraph (Synergy Software, Reading, PA, USA) software. Blind data collection and analysis were conducted to prevent any bias.
 
-## Subcellular localization quantification
+### Subcellular localization quantification
 
 Subcellular localization of protein constructs was quantified as previously described (O’Neil et al., 2021). Briefly, primary neuron cultures (n = 3 coverglasses per group) were imaged using a lattice structured illumination microscopy (Zeiss Elyra 7) with a Plan-Apochromat ×63/1.4 oil objective lens. Maximum intensity projection was calculated from Z-stack images. Areas corresponding to presynaptic/postsynaptic sites, axons/dendrites, and background were manually outlined using ImageJ on channels corresponding to Bassoon, Homer1, or Gephyrin. Bouton/axon intensity ratio and postsynaptic/dendritic intensity ratio were calculated as (Intensitybouton − Intensitybackground)/(Intensityaxon − Intensitybackground) and (Intensitypostsynaptic − Intensitybackground)/(Intensitydendritic − Intensitybackground), respectively.
 
-## Statistical analyses
+### Statistical analyses
 
 No statistical methods were used to determine sample sizes. Statistical analysis was performed in Prism 10 (GraphPad). Outliers were detected using the ROUT method with maximum desired FDR of 1% and removed in further analyses. The Shapiro–Wilk test was used to check normality. The means were compared using unpaired Student’s t-test; parametric t-test was performed on datasets that passed the normality test, and the Mann–Whitney test was performed otherwise. For cases where the t-test was not applicable, the alternative statistical methods used were mentioned separately.

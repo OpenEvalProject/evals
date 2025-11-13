@@ -73,7 +73,7 @@
 
 ## Abstract
 
-The understanding of the evolution of variable sex determination mechanisms across taxa requires comparative studies among closely related species. Following the fate of a known master sex-determining gene, we traced the evolution of sex determination in an entire teleost order (Esociformes). We discovered that the northern pike ( Esox lucius ) master sex-determining gene originated from a 65 to 90 million-year-old gene duplication event and that it remained sex linked on undifferentiated sex chromosomes for at least 56 million years in multiple species. We identified several independent species- or population-specific sex determination transitions, including a recent loss of a Y chromosome. These findings highlight the diversity of evolutionary fates of master sex-determining genes and the importance of population demographic history in sex determination studies. We hypothesize that occasional sex reversals and genetic bottlenecks provide a non-adaptive explanation for sex determination transitions.
+The understanding of the evolution of variable sex determination mechanisms across taxa requires comparative studies among closely related species. Following the fate of a known master sex-determining gene, we traced the evolution of sex determination in an entire teleost order (Esociformes). We discovered that the northern pike (Esox lucius) master sex-determining gene originated from a 65 to 90 million-year-old gene duplication event and that it remained sex linked on undifferentiated sex chromosomes for at least 56 million years in multiple species. We identified several independent species- or population-specific sex determination transitions, including a recent loss of a Y chromosome. These findings highlight the diversity of evolutionary fates of master sex-determining genes and the importance of population demographic history in sex determination studies. We hypothesize that occasional sex reversals and genetic bottlenecks provide a non-adaptive explanation for sex determination transitions.
 
 ## Introduction
 
@@ -85,29 +85,192 @@ Esociformes is a small order of teleost fishes (Figure 1) that diverged from the
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig1-v2.jpg)
 
-**Figure 1.:** Campbell et al., 2013; Kumar et al., 2017) and technical approaches for investigating SD systems in Esociformes.The two families within Esociformes, the Esocidae and the Umbridae, are highlighted with green and yellow background, respectively. Whole-genome sequencing (WGS), homology cloning (Cloning), restriction-site-associated DNA sequencing (RAD-Seq), and pooled-sequencing (Pool-Seq) approaches used in each species are shown by a black square on the right side of the figure. Fish silhouettes were obtained from phylopic.org.
+**Figure 1.:** The two families within Esociformes, the Esocidae and the Umbridae, are highlighted with green and yellow background, respectively. Whole-genome sequencing (WGS), homology cloning (Cloning), restriction-site-associated DNA sequencing (RAD-Seq), and pooled-sequencing (Pool-Seq) approaches used in each species are shown by a black square on the right side of the figure. Fish silhouettes were obtained from phylopic.org.
 
 Here, we took advantage of the small number of Esociformes species and their relatively long evolutionary history to explore the evolution of SD in relation to the fate of this amhby MSD gene. Generating novel draft genome assemblies and population genomic data in multiple species of Esociformes (Figure 1), we traced the evolutionary trajectory of amhby from its origin in a gene duplication event 65–90 Mya to its demise during species- or population-specific SD transitions. Our results highlight the diverse evolutionary fates experienced by an MSD gene. Among SD transitions, we uncovered a recent loss of the entire Y chromosome in some populations of northern pike. We hypothesize that drift, exacerbated by the bottleneck effect, may have facilitated the loss of the sex chromosome along with its MSD gene in these populations, a new mechanism for entire sex chromosome loss in vertebrates.
 
 ## Results
 
-## The Esox lucius amhby gene originated from an ancient duplication event
+### The Esox lucius amhby gene originated from an ancient duplication event
 
 Previously, we demonstrated that a male-specific duplication of the anti-Müllerian hormone gene (amhby) is the MSD gene in Esociformes and that this gene is located in a small, ~140 kb male-specific insertion on the Y chromosome of northern pike (Esox lucius) (Pan et al., 2019). To explore the evolution of the autosomal copy of amh (amha) and amhby in Esociformes, we collected phenotypically sexed samples of most species of this order (Figure 1 and Table 1). We searched for homologs of amh using homology cloning and whole-genome sequencing. We found two amh genes in all surveyed Esox and Novumbra species. In the more basally diverging species, Dallia pectoralis and Umbra pygmaea, we found only one amh gene in both species in tissue-specific transcriptome databases (Pasquier et al., 2016), while two amh transcripts were readily identified in E. lucius (Pan et al., 2019).
+
+**Table 1.**
+ Summary of the identification of amhby and its association with sex phenotypes in 11 Esociformes species, including six populations of E. lucius and three populations of Esox masquinongy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Sampling location</th>
+      <th>Geographic region</th>
+      <th>Males with amhby</th>
+      <th>Females with amhby</th>
+      <th>p-value of amhby association with sex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Esox lucius</td>
+      <td>France</td>
+      <td>Western Europe</td>
+      <td>161/161 (100%)</td>
+      <td>0/60 (0%)</td>
+      <td>&lt;2.2E-16</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Sweden</td>
+      <td>Northern Europe</td>
+      <td>20/20 (100%)</td>
+      <td>0/20 (0%)</td>
+      <td>&lt;2.2E-16</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Poland</td>
+      <td>Central Europe</td>
+      <td>20/20 (100%)</td>
+      <td>0/20 (0%)</td>
+      <td>&lt;2.2E-16</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Xinjiang, China</td>
+      <td>Eastern Asia</td>
+      <td>5/5 (100%)</td>
+      <td>0/5 (0%)</td>
+      <td>0.0114</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Continental USA and Canada</td>
+      <td>North America</td>
+      <td>0/88 (0%)</td>
+      <td>0/74 (0%)</td>
+      <td>amhby absent</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Alaska, USA</td>
+      <td>North America</td>
+      <td>17/19 (89%)</td>
+      <td>0/19 (0%)</td>
+      <td>1.79E-07</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>Siberia, Russia</td>
+      <td>Northern Asia</td>
+      <td>9/9 (100%)</td>
+      <td>0/8 (0%)</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>Esox aquitanicus</td>
+      <td>France</td>
+      <td>Western Europe</td>
+      <td>1/1 (100%)</td>
+      <td>0/2 (0%)</td>
+      <td>0.665</td>
+    </tr>
+    <tr>
+      <td>Esox cisalpinus</td>
+      <td>Italy</td>
+      <td>Western Europe</td>
+      <td>2/2 (100%)</td>
+      <td>0/2 (0%)</td>
+      <td>0.317</td>
+    </tr>
+    <tr>
+      <td>Esox reichertii</td>
+      <td>China</td>
+      <td>Eastern Asia</td>
+      <td>11/11 (100%)</td>
+      <td>0/10 (0%)</td>
+      <td>3.40E-05</td>
+    </tr>
+    <tr>
+      <td>Esox masquinongy</td>
+      <td>Iowa, USA</td>
+      <td>North America</td>
+      <td>18/27 (66.7%)</td>
+      <td>4/18 (22%)</td>
+      <td>2.01E-08</td>
+    </tr>
+    <tr>
+      <td>Esox masquinongy</td>
+      <td>Quebec, Canada</td>
+      <td>North America</td>
+      <td>9/20 (45%)</td>
+      <td>4/20 (20%)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Esox masquinongy</td>
+      <td>Wisconsin, USA</td>
+      <td>North America</td>
+      <td>57/61 (93%)</td>
+      <td>22/61 (36%)</td>
+      <td>1.17E-10</td>
+    </tr>
+    <tr>
+      <td>Esox americanus (americanus)</td>
+      <td>Mississippi, USA</td>
+      <td>North America</td>
+      <td>6/6 (100%)</td>
+      <td>0/4 (0%)</td>
+      <td>0.0123</td>
+    </tr>
+    <tr>
+      <td>Esox niger</td>
+      <td>Quebec, Canada</td>
+      <td>North America</td>
+      <td>5/5 (100%)</td>
+      <td>0/8 (0%)</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>Novumbra hubbsi</td>
+      <td>Washington, USA</td>
+      <td>North America</td>
+      <td>21/23 (91%)</td>
+      <td>0/22 (0%)</td>
+      <td>5.28E-09</td>
+    </tr>
+    <tr>
+      <td>Dallia pectoralis</td>
+      <td>Alaska, USA</td>
+      <td>North America</td>
+      <td>0/30 (0%)</td>
+      <td>0/30 (0%)</td>
+      <td>amhby absent</td>
+    </tr>
+    <tr>
+      <td>Umbra pygmaea</td>
+      <td>Belgium</td>
+      <td>Western Europe</td>
+      <td>0/31 (0%)</td>
+      <td>0/31 (0%)</td>
+      <td>amhby absent</td>
+    </tr>
+  </tbody>
+</table>
 
 To clarify relationships among these amh homologs, we inferred phylogenetic trees from these sequences. These phylogenies provided a clear and consistent topology with two well-supported gene clusters among the amh sequences from Esocidae (Figure 2A, Appendix 1—figure 1). The first gene cluster contains the autosomal amha of E. lucius and an amh homolog from all other species of Esox, Dallia, and Novumbra. Therefore, we assigned these amh homologs as amha orthologs. The second gene cluster contains the Y-specific amhby gene of E. lucius, along with the other amh homolog from all species for which we identified two amh sequences. We assigned these amh homologs as amhby orthologs. The general topology of each cluster was in agreement with the Esociformes species taxonomy.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig2-v2.jpg)
 
-**Figure 2.:** amh homologs from the Esociformes revealed an ancient origin of amhby.(A) Phylogenetic tree of amh coding sequences built with the maximum-likelihood method. Bootstrap values are provided on each node of the tree. The amha ortholog cluster is highlighted with blue background and the amhby ortholog cluster is highlighted with red background. (B) Time-calibrated species phylogeny of the Esociformes (Campbell et al., 2013). The three putative SD transitions are shown by black stars. The presence of pre-duplication amh, as well as amha and amhby along with the amhby sex linkage, is represented by colored dots at the end of each branch. In E. cisalpinus and E. aquitanicus, sex linkage is not significant (NS) due to low sample size. The earliest duplication timing of amh is denoted by a black arrow at the root of the divergence of Esocidae.
+**Figure 2.:** (A) Phylogenetic tree of amh coding sequences built with the maximum-likelihood method. Bootstrap values are provided on each node of the tree. The amha ortholog cluster is highlighted with blue background and the amhby ortholog cluster is highlighted with red background. (B) Time-calibrated species phylogeny of the Esociformes (Campbell et al., 2013). The three putative SD transitions are shown by black stars. The presence of pre-duplication amh, as well as amha and amhby along with the amhby sex linkage, is represented by colored dots at the end of each branch. In E. cisalpinus and E. aquitanicus, sex linkage is not significant (NS) due to low sample size. The earliest duplication timing of amh is denoted by a black arrow at the root of the divergence of Esocidae.
 
 In U. pygmaea, the closest sister species to the Esocidae, we found a single amh homolog, which roots at the base of the amha/amhby clusters. This result indicates that the amh duplication happened after the divergence of Esocidae (including Esox, Dallia, and Novumbra) and Umbridae (including Umbra) lineages. In contrast to other Esocidae that have two amh orthologs, we found only one amh gene in D. pectoralis, which fell in the phylogeny within the amha ortholog cluster, suggesting that this species experienced a secondary loss of its amhby gene after the amh duplication at the root of the Esocidae lineage (Figure 2B and Appendix 1—figure 1). We confirmed the absence of an additional divergent amh gene in D. pectoralis by searching sex-specific Pool-Seq reads from 30 males and 30 females. In addition, only one amh homolog was found in an ongoing genome assembly project with long reads for a male D. pectoralis (Y. Guiguen, personal communication). Using information from an Esociformes time-calibrated phylogeny (Campbell et al., 2013), we estimated that the amhby duplicate arose between 65 and 90 Mya (Figure 2B).
 
-## Sex linkage of amhby in the Esocidae lineage
+### Sex linkage of amhby in the Esocidae lineage
 
 Given that amhby originated from an ancient duplication event and is the MSD gene in E. lucius, we investigated when amhby became the MSD gene and whether transitions of SD systems exist in this group. Because male sex linkage of a sequence is a strong indication that this sequence is located on a Y-chromosome-specific region, we first investigated the association of amhby with male phenotype. We found an association between male phenotype and the presence of amhby in most species of Esox and Novumbra (Table 1). This sex linkage was significant in European, Asian, and Alaskan populations of E. lucius, in two North American populations of E. masquinongy (Iowa and Wisconsin), and in all populations surveyed of E. reichertii, E. americanus, E. niger, and N. hubbsi. For two recently described species, E. cisalpinus and E. aquitanicus (Denys et al., 2014), we had insufficient samples with clear species and sex identification for a decisive result. We confirmed the presence of amhby in all males and its absence from all females in these two species, but the association was not significant due to low sample size (Table 1). Because amhby is associated with male phenotype in most species of Esox and Novumbra, it likely gained an MSD role shortly after its origin either at the root of Esocidae or before the split of Esox and Novumbra lineages (~56 Mya) (Campbell et al., 2013). Despite this global conservation of the linkage between amhby and male phenotype, however, we found some variations in amhby sex association across populations of E. lucius and E. masquinongy (Table 1). These population variations are further investigated below.
 
-## Whole-genome analyses of the evolution of sex determination systems in Esociformes
+### Whole-genome analyses of the evolution of sex determination systems in Esociformes
 
 Because amhby was not completely associated with male phenotype in E. masquinongy and N. hubbsi (Table 1) and the gene was not found in D. pectoralis and U. pygmaea, we also used population genomic approaches to search for whole-genome sex-specific signatures in these species. Because of the close phylogenetic distance (45 Mya) between E. lucius and E. masquinongy, we used the E. lucius genome assembly to remap reads from E. masquinongy. We performed Pool-Seq analysis of E. masquinongy (Iowa, USA) to compare the size and location of its sex locus with that of E. lucius (Pan et al., 2019). Comparison of the sex-specific heterozygosity across the entire genome revealed that a single region of less than 50 kb, containing the highest density of male-specific single-nucleotide polymorphisms (SNPs) in E. masquinongy, is located in a region homologous to the proximal end of LG24, where the sex locus of E. lucius is located. Besides LG24, no other linkage group showed enrichment for sex-biased chromosome differentiation (Appendix 1—figure 2), suggesting that the location and the small size of the sex locus are likely conserved between E. lucius and E. masquinongy.
 
@@ -115,11 +278,11 @@ No high-quality genome assembly was available from a closely related species to 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig3-v2.jpg)
 
-**Figure 3.:** sex determination systems in different Esociformes species through RAD-Seq analyses.Each tile plot shows the distribution of non-polymorphic RAD-Seq markers shared between phenotypic males (horizontal axis) and phenotypic females (vertical axis). The intensity of color for a tile reflects the number of markers present in the respective number of males and females. Tiles that are significantly associated with phenotypic sex (chi-square test, p<0.05 after Bonferroni correction) are highlighted with a red border. (A) In N. hubbsi, two markers were present in 19 of 21 males and in 1 of 19 females, indicating a significant male association and thus an XX/XY SD system with a small sex locus. (B) In D. pectoralis, one marker showed a significant association with females, while no marker showed association with males, indicating a ZZ/ZW SD system. (C) In U. pygmaea, 140 markers showed a significant association with males, while no marker showed association with females, indicating a XX/XY SD system with a large non-recombining sex locus. (D) In the population of E. masquinongy from Quebec (Canada), no marker was associated with either sex. (E) In a population of E. masquinongy from Iowa (USA), five markers were significantly associated with male phenotype, indicating a XX/XY SD system.Figure 3—source code 1.Figure 3.Figure 3—source data 1.E. masquinongy from a Quebec population with a minimal marker depth of 10 reads.Figure 3—source data 2.E. masquinongy from a Iowa population with a minimal marker depth of 10 reads.Figure 3—source data 3.N. hubbsi a minimal marker depth of 10 reads.Figure 3—source data 4.U. pygmaea a minimal marker depth of 10 reads.Figure 3—source data 5.D. pectoralis a minimal marker depth of 10 reads.
+**Figure 3.:** Each tile plot shows the distribution of non-polymorphic RAD-Seq markers shared between phenotypic males (horizontal axis) and phenotypic females (vertical axis). The intensity of color for a tile reflects the number of markers present in the respective number of males and females. Tiles that are significantly associated with phenotypic sex (chi-square test, p<0.05 after Bonferroni correction) are highlighted with a red border. (A) In N. hubbsi, two markers were present in 19 of 21 males and in 1 of 19 females, indicating a significant male association and thus an XX/XY SD system with a small sex locus. (B) In D. pectoralis, one marker showed a significant association with females, while no marker showed association with males, indicating a ZZ/ZW SD system. (C) In U. pygmaea, 140 markers showed a significant association with males, while no marker showed association with females, indicating a XX/XY SD system with a large non-recombining sex locus. (D) In the population of E. masquinongy from Quebec (Canada), no marker was associated with either sex. (E) In a population of E. masquinongy from Iowa (USA), five markers were significantly associated with male phenotype, indicating a XX/XY SD system.
 
 In D. pectoralis and U. pygmaea, two species in which amhby is absent, we carried out RAD-Seq analyses comparing phenotypic males and females. In D. pectoralis, we found only three female-biased RAD markers, suggesting that this species also has a small sex locus region (30.8 restriction enzyme cutting sites/Mb on average, Supplementary file 2) under a female heterogametic SD system (ZZ/ZW) (Figure 3B). This ZZ/ZW SD system was further supported by an independent Pool-Seq analysis revealing 45 times more female-specific k-mers (N = 1,081,792) than male-specific k-mers (N = 23,816). This excess of female-specific k-mers indicates that females carry genomic regions that are absent from males and thus that females are the heterogametic sex. In contrast, 140 male-biased and no female-biased RAD markers were identified in U. pygmaea, supporting that this species has a large sex locus (26.2 restriction enzyme cutting sites/Mb on average, Supplementary file 2) under a male heterogametic SD system (XX/XY) (Figure 3C).
 
-## Some populations of Esox lucius lost their Y chromosome and ancestral master sex-determining gene
+### Some populations of Esox lucius lost their Y chromosome and ancestral master sex-determining gene
 
 Although amhby is the MSD gene in European populations of northern pike (Pan et al., 2019), this gene was absent from the genome assembly (GCA_000721915.3) of a male specimen from a Canadian population (GCA_000721915.3). To explore this discrepancy, we surveyed the sex linkage of amhby in geographically isolated populations of E. lucius. We found significant male linkage in all investigated European and Asian populations and in one Alaskan population (Table 1). In contrast, amhby was absent from both males and females in all other North American populations.
 
@@ -127,13 +290,13 @@ To investigate whether the loss of amhby in most North American populations coin
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig4-v2.jpg)
 
-**Figure 4.:** (A) The numbers of male-specific SNPs in 50 kb non-overlapping windows deduced from Pool-Seq data of a European population (A.1) and North American population (A.2) of E. lucius were mapped to the Y chromosome (LG24) of the sequence of E. lucius from a European male genome (SDAW00000000). The greatest number of male-specific SNPs is found in a single window located at the proximal end of LG24 (0.95 Mb–1.0 Mb) that contains 182 male-specific SNPs (highlighted by the gray box) in the European E. lucius population. The same region, however, shows no differentiation between males and females in the North American population. (B) Relative coverage of male and female Pool-Seq reads is indicated by blue and red lines, respectively, in contigs containing amhby in the European population (B.1) and in the North American population (B.2). Only zoomed view on the European population sex-specific region is presented to facilitate the visualization of the differences in coverage between two populations. We searched for Y-specific regions in 1 kb windows. A window is considered Y specific if it is covered by few mapped female reads (<3 reads per kb) and by male reads at a depth close to half of the genome average (relative depth between 0.4 and 0.6). Based on these depth filters, in the European population we identified 70 potential Y-specific 1 kb windows located between 0.76 Mb and 0.86 Mb and 70 Y-specific 1 kb windows located between 1.0 Mb and 1.24 Mb on LG24. This region is not covered by male or female reads in the North American population, indicating the loss of the entire Y-specific region, highlighted by the gray boxes. The region between 0.86 Mb and 1.0 Mb is not sex specific in both population and is likely an assembly artifact. Figure 4—source code 1.Figure 4.Figure 4—source data 1.E. lucius.Figure 4—source data 2.E. lucius.Figure 4—source data 3.E. lucius.Figure 4—source data 4.E. lucius.Figure 4—source data 5.E. lucius chromosome length file for the R script.
+**Figure 4.:** (A) The numbers of male-specific SNPs in 50 kb non-overlapping windows deduced from Pool-Seq data of a European population (A.1) and North American population (A.2) of E. lucius were mapped to the Y chromosome (LG24) of the sequence of E. lucius from a European male genome (SDAW00000000). The greatest number of male-specific SNPs is found in a single window located at the proximal end of LG24 (0.95 Mb–1.0 Mb) that contains 182 male-specific SNPs (highlighted by the gray box) in the European E. lucius population. The same region, however, shows no differentiation between males and females in the North American population. (B) Relative coverage of male and female Pool-Seq reads is indicated by blue and red lines, respectively, in contigs containing amhby in the European population (B.1) and in the North American population (B.2). Only zoomed view on the European population sex-specific region is presented to facilitate the visualization of the differences in coverage between two populations. We searched for Y-specific regions in 1 kb windows. A window is considered Y specific if it is covered by few mapped female reads (<3 reads per kb) and by male reads at a depth close to half of the genome average (relative depth between 0.4 and 0.6). Based on these depth filters, in the European population we identified 70 potential Y-specific 1 kb windows located between 0.76 Mb and 0.86 Mb and 70 Y-specific 1 kb windows located between 1.0 Mb and 1.24 Mb on LG24. This region is not covered by male or female reads in the North American population, indicating the loss of the entire Y-specific region, highlighted by the gray boxes. The region between 0.86 Mb and 1.0 Mb is not sex specific in both population and is likely an assembly artifact.
 
-## Evolving sex determination systems: the case of the muskellunge, Esox masquinongy
+### Evolving sex determination systems: the case of the muskellunge, Esox masquinongy
 
 As in E. lucius, we found variation in amhby sex linkage among different populations of E. masquinongy (Table 1). In addition, we found that two males and one female of E. masquinongy were heterozygous for amhby in the population from Quebec (Appendix 1—figure 4), a finding that conflicts with the expected hemizygous status of a Y-specific MSD gene. We thus used RAD-Seq to compare genome-wide patterns of sex differentiation in a population from Iowa (USA) where amhby was significantly associated with male phenotype and in a population from Quebec (Canada) where it was not. In the Iowa population, five RAD markers were significantly associated with male phenotype, while no marker was associated with female phenotype (Figure 3D). This result indicates a male heterogametic SD system (XX/XY) with a low differentiation between the X and Y chromosomes, as observed in northern pike (Pan et al., 2019) and N. hubbsi (this study). In contrast, we did not find a sex-specific marker in the Quebec population (Figure 3E). This result was further supported by the analysis of a publicly available dataset from another Quebec population (PRJNA512459, Appendix 1—figure 5), suggesting that the sex locus of E. masquinongy from these Quebec populations is too small to be detected with RAD-Seq (38.4 restriction enzyme cutting sites/Mb on average, Supplementary file 2) or that this population displays a multifactorial GSD or ESD system.
 
-## Evolution of the structure of the amhby gene in the Esocidae
+### Evolution of the structure of the amhby gene in the Esocidae
 
 The typical amh gene in teleost fishes comprises seven exons encoding a protein that contains 500–571 amino acids. The conserved C-terminal TGF-β domain is crucial for canonical Amh function (di Clemente et al., 2010). The predicted structures of most of the amha and amhby genes in Esociformes are consistent with this canonical structure, and most amha and amhby genes do not show signature of relaxation from purifying selection (Supplementary file 4 and Supplementary file 5). However, in both E. niger and N. hubbsi, the predicted Amhby protein is truncated in its N- or C-terminal part. In E. niger, this truncated amhby gene is flanked by repeated elements and encompasses only three of the seven conserved Amh exons, that is exons 5, 6, and 7 with a truncated TGF-β domain (Appendix 1—figure 6). In N. hubbsi, the truncated amhby gene contains the seven conserved Amh exons but with an N-terminal truncation of exon 1 encoding only eight amino acids with no homology to the conserved 50 amino acid sequence of the first Amh exon of other Esocidae (Appendix 1—figure 6). Together, these results show that in some species where amhby is sex linked, the protein sequence is strongly modified in the N- and C-terminal-conserved domains that are needed for proper protein secretion and correct conformation (di Clemente et al., 2010), leaving questions as to whether these proteins are functional.
 
@@ -149,6 +312,12 @@ The other SD transitions that we characterized, those in E. lucius and E. masqui
 
 In E. lucius, we found that amhby is present and completely sex linked in European, Asian, and Alaskan regions, but is not present elsewhere in North America (Figure 5). This finding suggests that amhby functions as an MSD gene in Eurasian and Alaskan populations, but that populations from elsewhere in North America lost amhby together with the entire sex locus. The current geographic distribution of E. lucius results from a post-glacial expansion from three glacial refugia ~0.18 to 0.26 Mya. The North American populations lacking amhby belong to a monophyletic lineage with a circumpolar distribution originating from the same refugia as the other population we surveyed that carry amhby (Skog et al., 2014). Fossil records from Alaska support the idea of an ‘out of Alaska’ North American expansion of E. lucius within the last 100,000 years (Wooller et al., 2015), suggesting that the Y-specific sequences containing amhby were lost during this dispersal period (Figure 5, Appendix 1—figure 7).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig5-v2.jpg)
+
+**Figure 5.:** The presence (blue silhouettes)/absence (red silhouettes) of amhby in different populations, showing that this MSD gene was lost in some North American populations during an out-of-Alaska dispersal around 0.1 Mya. The hypothesized refugium in the Ponto Caspian region is highlighted in beige. An alternative route of post-glacial dispersal is shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62858/elife-62858-fig5-figsupp1-v2.jpg)
+
 The loss of the entire sex locus in such a short evolutionary time is unlikely to have resulted from the pseudogenization of the amhby gene, as is the case for the ancestral MSD gene of the Luzon medaka (Myosho et al., 2012). Rather, it is probably the result of colonization by a small pool of females and sex-reversed XX males. Such a founder-effect hypothesis is supported by the fact that North American populations of E. lucius display a much lower genetic diversity compared to other populations from the same lineage (Skog et al., 2014). This hypothesis is also supported by the fact that environmental influence on GSD systems is a well-documented phenomenon in fishes (Baroiller et al., 2009; Chen et al., 2014; Sato et al., 2005) and that XX sex reversal induced by environmental factors has been observed occasionally in captive E. lucius (Pan et al., 2019). Our whole-genome analyses failed to identify any sex-associated signals in these North American populations, meaning that if such a new sex locus exists, it would lack detectable signatures of sequence differentiation, similar to the one-SNP sex locus of some Takifugu species (Kamiya et al., 2012). Whether ESD, which is common among poikilothermic animals including teleosts (Navara, 2018), could be the SD system in these North American populations or whether these populations already have a new GSD system in place is still unresolved. Notably, this Y chromosome loss in natural populations of E. lucius mirrors the loss of the W chromosome in lab strains of zebrafish after just a few decades of selective breeding (Wilson et al., 2014).
 
 A few evolutionary models have been formulated to capture the dynamics of sex chromosome turnover (Vicoso, 2019). The replacement of the ancestral SD locus by a new one could be driven by drift alone, by positive selection (Bull and Charnov, 1977), by sexual antagonistic selection (van Doorn and Kirkpatrick, 2007), or by the accumulation of deleterious mutations at the sex locus (Blaser et al., 2013). In all of these models, the ancestral sex chromosomes would revert to autosomes only when the new SD locus is fixed in the population. However, in North American populations of E. lucius, the ancestral sex chromosome was likely lost due to drift in bottlenecked populations. Interestingly, this process would not require the simultaneous emergence of a new GSD system, given the flexibility of SD mechanisms in teleosts, where environmental cues generate phenotypic sexes in the absence of a GSD system. ESD, which is easily invaded by a new genetic system (Muralidhar and Veller, 2018; van Doorn, 2014), may serve as a transitional state between sex chromosome turnovers.
@@ -159,15 +328,15 @@ Collectively, our results depict the evolutionary trajectories of a conserved MS
 
 ## Materials and methods
 
-## Sample collection
+### Sample collection
 
 Information on the Esociformes species, collectors, sexing method, and experiments is provided in Supplementary file 6.
 
-## Genomic DNA extraction
+### Genomic DNA extraction
 
 Fin clips were preserved in 75–100% ethanol at 4°C until genomic DNA (gDNA) extraction. For genotyping, samples were lysed with 5% Chelex and 25 mg of Proteinase K at 55°C for 2 hr, followed by incubation at 99°C for 10 min. For Illumina sequencing, gDNA was obtained using NucleoSpin Kits for Tissue (Macherey-Nagel, Duren, Germany) following the producer’s protocol. DNA concentration was quantified using Qubit dsDNA HS Assay Kit (Invitrogen, Carlsbad, CA) and a Qubit3 fluorometer (Invitrogen, Carlsbad, CA). For Pool-Seq, DNA from different samples was normalized to the same quantity before pooling for male and female libraries separately. High-molecular-weight gDNA for long-read sequencing was extracted as described by Pan et al., 2019.
 
-## Genome and population genomics sequencing
+### Genome and population genomics sequencing
 
 Draft genomes of northern pike, muskellunge (E. masquinongy), chain pickerel (E. niger), Olympic mudminnow (N. hubbsi), and Alaska blackfish (D. pectoralis) were sequenced using a whole-genome shotgun strategy with 2 × 250 bp Illumina reads. Libraries were built using the Truseq nano kit (Illumina, FC-121–4001) following instructions from the manufacturer. gDNA (200 ng) was briefly sonicated using a Bioruptor (Diagenode). The gDNA was end-repaired and size-selected on beads to retain fragments of ~550 bp, and these fragments were a-tailed and ligated to Illumina’s adapter. The ligated gDNA was then subjected to eight PCR cycles. Libraries were checked on a fragment analyzer (AATI) and quantified by qPCR using a library quantification kit from KAPA. Libraries were sequenced on a HIseq2500 using the paired end 2 × 250 bp v2 rapid mode according to the manufacturer’s instructions. Image analysis was performed by HiSeq Control Software, and base calling was achieved using Illumina RTA software. The output of each run is presented in Supplementary file 7. To improve the European male genome of E. lucius, we generated an extra coverage of Oxford Nanopore long reads using a higher fragment size (50 kb) library made from gDNA extracted from a different male from the same European population as the sample used for the previous genome assembly. Library construction and genome sequencing were carried out as in Pan et al., 2019 and 12.7 Gbp of new data were generated from one PromethION flowcell.
 
@@ -175,7 +344,7 @@ Pool-Seq was performed on E. masquinongy, D. pectoralis, and the North American 
 
 RAD-Seq was performed on E. masquinongy, N. hubbsi, D. pectoralis, U. pygmaea, and the North American populations of E. lucius. RAD libraries were constructed from gDNA extracted from fin clips for each species using a single Sbf1 restriction enzyme as in Amores et al., 2011. Each library was sequenced on one lane of an Illumina HiSeq 2500. The summary of the output of each dataset is presented in Supplementary file 8.
 
-## Analysis of population genomic data for sex-specific signals
+### Analysis of population genomic data for sex-specific signals
 
 Raw RAD-seq reads were demultiplexed with the process_radtags.pl script from stacks version 1.44 (Catchen et al., 2013) with all parameters set to default. Demultiplexed reads for each species were analyzed with the RADSex computational workflow (Feron et al., 2020a) using the radsex software version 1.1.2 (10.5281/zenodo.3775206). After generating a table of markers depth with process, the distribution of markers between sexes was computed with distrib and markers significantly associated with phenotypic sex were extracted with signif using a minimum depth of 10 (−d 10) for both commands and with all other settings at the default. RAD-Seq figures were generated with sgtr (10.5281/zenodo.3773063).
 
@@ -183,7 +352,7 @@ For each Pool-Seq dataset, reads were aligned to the reference genome using BWA 
 
 For k-mer analysis, 31-mers were identified and counted in the reads of the male and female pools using the ‘count’ command from Jellyfish (version 2.2.10) (Marçais and Kingsford, 2011) with the option ‘-C’ activated to count only canonical k-mers and retaining only k-mers with an occurrence >5 and <50,000,000. Tables of k-mer counts produced by Jellyfish were merged with the ‘merge’ command from Kpool (https://github.com/INRA-LPGP/kpool), and the resulting merged table was filtered using the ‘filter’ command to only retain k-mers present >25 times in one sex and <5 times in the other sex; such k-mers were considered sex biased.
 
-## Sequencing of amha and amhby genes
+### Sequencing of amha and amhby genes
 
 To survey the presence of amha (the canonical copy of amh) and amhby in Esociformes, we collected samples of 11 species (Table 1): all species in the genus Esox (E. americanus americanus, E. americanus vermiculatus, E. aquitanicus, E. cisalpinus, E. masquinongy, E. reichertii, and E. niger), N. hubbsi (the only species in its genus), D. pectoralis (the only well-recognized species in its genus), and one species from the genus Umbra (U. pygmaea). To search for amh homologs in the genomes of these 11 species, we either sequenced PCR amplicons with custom primers (Supplementary file 9) and/or sequenced and assembled the genome (Supplementary file 10) and searched in the assembly and in the raw reads for the presence of one or two amh genes.
 
@@ -201,21 +370,21 @@ No genome was available for the other two more distantly related species of E. l
 
 To investigate whether truncations of Amhby in E. niger and N. hubbsi could be assembly artifacts, we searched for potential missing homologous sequences in raw genome reads of both species using tblastn (https://blast.ncbi.nlm.nih.gov/Blast.cgi, version 2.10.0+) (Altschul et al., 1997) using the exon 1 protein sequence from E. lucius as a query. Homologous sequences were determined with a maximum e-value threshold of 1E-10.
 
-## Validating amh gene number in D. pectoralis and U. pygmaea
+### Validating amh gene number in D. pectoralis and U. pygmaea
 
 To check whether the two copies of amh were not collapsed into a single sequence during assembly, we computed the total number of apparent heterozygous sites in the amh region in population genomic data with the expectation that the presence of two divergent gene copies should result in high apparent heterozygosity when remapped on the single copy assembled in the genome. We compared these heterozygosity data in species where we only identified one amh gene, that is D. pectoralis and U. pygmaea, to results observed when mapping sex-specific pooled libraries of E. lucius (n = 30 males and 30 females, respectively) to a female reference genome containing only amha (GCA_004634155.1). Because there are two amh genes in male genomes of E. lucius and one amh gene in female genomes, this result from mapping E. lucius sex-specific Pool-Seq reads serves as a reference for expected number of variant sites. Reads from the male and female pools of E. lucius and from male pool of D. pectoralis were aligned separately to the reference genome (GCA_004634155.1) and our draft genome, respectively, using BWA mem version 0.7.17 (Li and Durbin, 2009) with default parameters. Each resulting BAM file was sorted and PCR duplicates were removed using Picard tools version 2.18.2 (http://broadinstitute.github.io/picard) with default parameters. Variants were then called for each BAM file using bcftools mpileup version 1.9 (Li et al., 2009) with default parameters on genomic regions containing amh, which locates between 12,906,561 and 12,909,640 bp on LG08 of E. lucius (GCA_004634155.1: CM015581.1), between 23,447 and 25,910 bp on the flattened_line_2941 contig of the draft genome of D. pectoralis, and between 760,763 and 757,962 bp on contig 633485 of our draft genome of U. pygmaea.
 
-## Gene phylogenetic analysis
+### Gene phylogenetic analysis
 
 Phylogenetic reconstructions were performed on all amh homolog sequences obtained from Esociformes with the S. salar amh used as an outgroup. Full-length CDS were predicted with the FGENESH+ (Solovyev et al., 2006) suite based on the genomic sequence and Amh protein sequence from E. lucius. Sequence alignments were performed with MAFFT (version 7.450) (Katoh and Standley, 2013). Both maximum-likelihood and Bayesian methods were used for tree construction with IQ-TREE (version 1.6.7) (Minh et al., 2020) and Phylobayes (version 4.1) (Lartillot et al., 2007), respectively.
 
 Additional analyses were carried with or without the truncated amh/Amh sequences of E. niger and N. hubbsi using the amh/Amh homolog of S. salar as an outgroup. CDS and proteins were predicted with the FGENESH+ suite (Solovyev et al., 2006), based on genomic sequences. These putative CDS and protein sequences were then aligned using MAFFT (version 7.450) (Katoh and Standley, 2013). Residue-wise confidence scores were computed with GUIDANCE 2 (Sela et al., 2015), and only well-aligned residues with confidence scores above 0.99 were retained. The resulting alignment file was used for model selection and tree inference with IQ-TREE (version 1.6.7) (Minh et al., 2020) with 1000 bootstraps and the 1000 SH-like approximate likelihood ratio test for robustness. To verify that the topology of the single amh homolog of D. pectoralis was not an artifact of long-branch attraction, we also constructed phylogenetic trees with only the first and second codons of the coding sequences (Lemey et al., 2009) as well as with complete protein sequences. For additional confirmation of the tree topology for the amh homologs, the same alignments were run in a Bayesian framework implemented in Phylobayes (version 4.1), (Lartillot et al., 2007; Lartillot and Philippe, 2006, Lartillot and Philippe, 2004) using the CAT-GTR model with default parameters, and two chains were run in parallel for approximately 1000 cycles until the average standard deviation of split frequencies remained ≤0.01.
 
-## Detection of signatures of selection on amha and amhby genes
+### Detection of signatures of selection on amha and amhby genes
 
-To compare selection pressure between amha and amhby genes, dN/dS ratios were computed between each ortholog sequence and the amh sequence of U. pygmaea, which diverged from the other Esociformes prior to the amh duplication. Sequences from E. niger and N. hubbsi were excluded because their amhby orthologs were substantially shorter and could introduce bias in the analysis. The ratio of nonsynonymous to synonymous substitution (dN/dS = ω) among amha and amhby sequences was estimated using PALM (version 4.7) (Yang, 2007) based on aligned full-length CDS, and the phylogenetic tree obtained with the CDS was used in the analysis. First, a relative rate test on amino acid substitution (Hughes, 1994) was performed between amha and amhby pairs with the amh of U. pygmaea used as an outgroup sequence. For each species with amh duplication, ω was calculated between the amha ortholog and amh of U. pygmaea and was compared to the ω calculated between the amhby ortholog and amh of U. pygmaea. A Wilcoxon test was used to compare the resulting ω values for the amh paralogs of these species. Then, several branch and site models (M0, M1a, M2a, M7, M8, free-ratio, and branch-site) implemented in the CODEML package were fitted to the data. The goodness of fit of these models was compared using the likelihood ratio test implemented in PALM.
+To compare selection pressure between amha and amhby genes, dN/dS ratios were computed between each ortholog sequence and the amh sequence of U. pygmaea, which diverged from the other Esociformes prior to the amh duplication. Sequences from E. niger and N. hubbsi were excluded because their amhby orthologs were substantially shorter and could introduce bias in the analysis. The ratio of nonsynonymous to synonymous substitution (dN/dS = $\omega$) among amha and amhby sequences was estimated using PALM (version 4.7) (Yang, 2007) based on aligned full-length CDS, and the phylogenetic tree obtained with the CDS was used in the analysis. First, a relative rate test on amino acid substitution (Hughes, 1994) was performed between amha and amhby pairs with the amh of U. pygmaea used as an outgroup sequence. For each species with amh duplication, $\omega$ was calculated between the amha ortholog and amh of U. pygmaea and was compared to the $\omega$ calculated between the amhby ortholog and amh of U. pygmaea. A Wilcoxon test was used to compare the resulting $\omega$ values for the amh paralogs of these species. Then, several branch and site models (M0, M1a, M2a, M7, M8, free-ratio, and branch-site) implemented in the CODEML package were fitted to the data. The goodness of fit of these models was compared using the likelihood ratio test implemented in PALM.
 
-## Genome assembly
+### Genome assembly
 
 Raw Illumina sequencing reads for D. pectoralis, E. masquinongy, E. niger, and N. hubbsi were assembled using the DISCOVAR de novo software with the following assembly parameters: MAX_MEM_GB = 256, MEMORY_CHECK = False, and NUM_THREADS = 16. Assembly metrics were calculated with the assemblathon_stats.pl script (Earl et al., 2011), and assembly completeness was assessed with BUSCO (version 3.0.2) (Simão et al., 2015) using the Actinopterygii gene set (Supplementary file 10).
 

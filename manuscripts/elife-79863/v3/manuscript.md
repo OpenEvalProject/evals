@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Departments of Neurosurgery, Neuropsychiatry and Behavioral Sciences, Stanford University School of Medicine Stanford United States
+1. Departments of Neurosurgery, Neuropsychiatry and Behavioral Sciences, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
 ## Abstract
 
-Homeostatic synaptic plasticity is a non-Hebbian synaptic mechanism that adjusts synaptic strength to maintain network stability while achieving optimal information processing. Among the molecular mediators shown to regulate this form of plasticity, synaptic signaling through retinoic acid (RA) and its receptor, RARα, has been shown to be critically involved in the homeostatic adjustment of synaptic transmission in both hippocampus and sensory cortices. In this study, we explore the molecular mechanism through which postsynaptic RA and RARα regulates presynaptic neurotransmitter release during prolonged synaptic inactivity at mouse glutamatertic synapses. We show that RARα binds to a subset of dendritically sorted brain-derived neurotrophic factor ( Bdnf ) mRNA splice isoforms and represses their translation. The RA-mediated translational de-repression of postsynaptic BDNF results in the retrograde activation of presynaptic tropomyosin receptor kinase B (TrkB) receptors, facilitating presynaptic homeostatic compensation through enhanced presynaptic release. Together, our study illustrates an RA-mediated retrograde synaptic signaling pathway through which postsynaptic protein synthesis during synaptic inactivity drives compensatory changes at the presynaptic site.
+Homeostatic synaptic plasticity is a non-Hebbian synaptic mechanism that adjusts synaptic strength to maintain network stability while achieving optimal information processing. Among the molecular mediators shown to regulate this form of plasticity, synaptic signaling through retinoic acid (RA) and its receptor, RARα, has been shown to be critically involved in the homeostatic adjustment of synaptic transmission in both hippocampus and sensory cortices. In this study, we explore the molecular mechanism through which postsynaptic RA and RARα regulates presynaptic neurotransmitter release during prolonged synaptic inactivity at mouse glutamatertic synapses. We show that RARα binds to a subset of dendritically sorted brain-derived neurotrophic factor (Bdnf) mRNA splice isoforms and represses their translation. The RA-mediated translational de-repression of postsynaptic BDNF results in the retrograde activation of presynaptic tropomyosin receptor kinase B (TrkB) receptors, facilitating presynaptic homeostatic compensation through enhanced presynaptic release. Together, our study illustrates an RA-mediated retrograde synaptic signaling pathway through which postsynaptic protein synthesis during synaptic inactivity drives compensatory changes at the presynaptic site.
 
 ## Introduction
 
@@ -27,19 +27,35 @@ In this study, we explore whether and how synaptic RA/RARα signaling modulates 
 
 ## Results
 
-## Postsynaptic RA receptor RARα mediates activity blockade-induced presynaptic homeostatic plasticity
+### Postsynaptic RA receptor RARα mediates activity blockade-induced presynaptic homeostatic plasticity
 
 While homeostatic plasticity studies conducted in neuronal cultures consistently report an increase in mEPSC amplitude in response to chronic synaptic silencing, the increase in mEPSC frequency has only been observed in those using older and likely more mature cultures (Aoto et al., 2008; Wang et al., 2011; Jakawich et al., 2010; Turrigiano et al., 1998). We have previously shown that in older (21 days in vitro [DIV]) but not younger (14 DIV) cultured primary hippocampal neurons, chronic treatment with postsynaptic activity blockers such as the AMPAR antagonist 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX) or L-type voltage-dependent calcium channel (VDCC) inhibitor nifedipine results in a significant increase in both mEPSC frequency and mEPSC amplitude (Wang et al., 2011). Thus, consistent with the literature, while the increase in mEPSC amplitude is observed in both young and old cultured neurons, the enhancement in frequency is only present in the older cultures (Wang et al., 2011). Importantly, this increase in both mEPSC frequency and amplitude requires RA synthesis as pharmacological inhibition of RA synthesis blocks the increase in both parameters. Additionally, RA synthesis in postsynaptic neurons triggers presynaptic changes in a cell-autonomous manner as sparse expression of a dihydropyridine-insensitive L-VDCC, which specifically blocks RA synthesis in transfected postsynaptic neurons, prevented the nifedipine-induced homeostatic increase in mEPSC frequency. However, what remains unanswered is where and through what molecular signaling pathway RA acts to trigger presynaptic changes.
 
 To first establish that RA also increases mEPSC frequency in older organotypic cultured hippocampal slices, we measured mEPSCs in WT neurons from 21–25 DIV slice cultures after acute RA treatment (10 μM, 4 hr). A significant increase in both mEPSC amplitude and frequency in CA1 pyramidal neurons was observed (Figure 1A and B), replicating our previous findings in primary hippocampal neuronal cultures (Wang et al., 2011). To further understand the cellular mechanisms driving mEPSC frequency changes, we measured paired-pulse ratios (PPRs) of the evoked EPSCs (eEPSCs). RA treatment significantly reduced the PPRs, suggesting potential enhancement of presynaptic function by RA (Figure 1—figure supplement 1A). We have previously reported the induction of silent synapses during tetrodotoxin (TTX)-induced homeostatic synaptic plasticity (Arendt et al., 2013). To understand whether activation of silent synapses may be contributing to the mEPSC frequency increases by RA, we measured eEPSC failure rate at both –60 and +40 mV using a minimal stimulation protocol (Arendt et al., 2013). The failure rates were comparable between –60 and +40 mV in both DMSO- and RA-treated slices, indicating little if any presence of postsynaptic silent synapses in these slices, and that activation of postsynaptic silent synapses is not a contributing factor to the mEPSC frequency changes observed (Figure 1—figure supplement 1B). Moreover, given that the mEPSC frequency increase only occurs in older slices, but not in younger ones where synaptogenesis is more robust, we think it is unlikely that new synapse formation underlies frequency increase. Taken together, these results are consistent with previous findings from both rodent and Drosophila studies (Davis and Müller, 2015; Jakawich et al., 2010; Subramanian and Dickman, 2015; Bergquist et al., 2010) and demonstrate that modification of presynaptic release is a conserved homeostatic mechanism operating at glutamatergic synapses across species.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig1-v3.jpg)
+
+**Figure 1.:** (A) Example traces of mEPSCs recorded from hippocampal pyramidal neurons in organotypic slices from WT (uninfected), presynaptic RARα KO (Cre expression in CA3) and postsynaptic RARα KO (Cre expression in CA1) groups treated with DMSO or RA (10 μM, 4 hr). Scale bars, 10 pA, 0.5 sec. (B) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic RARα KO neurons treated with DMSO or RA. **, p < 0.01; ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,208) = 5.413, p < 0.01; freq: F(2,208) = 11.81, p < 0.0001. (C) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic RARα KO neurons treated with DMSO or CNQX (36 hours). **, p < 0.01; ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,135) = 6.004, p < 0.01; freq: F(2,135) = 5.23, p < 0.01. n/N represent number of neurons/number of independent experiments (pups). All graphs represent mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Paired-pulse ratio measured at the CA3-CA1 synapses in DMSO- and RA-treated 21–25 days in vitro (DIV) organotypic hippocampal slices. *, p<0.05; **, p<0.01; two-way ANOVA with repeated measure followed by paired-wise comparison at each ISI. (B) Failure rate of CA3-CA1 eEPSCs at –60 and +40 mV with minimal stimulation in DMSO- and RA-treated organotypic hippocampal slices. p>0.25; paired t-test. (C) Left: a representative image of a 21 DIV organotypic hippocampal slice infected with Cre-GFP-expressing AAVs in the CA3 and part of the DG region. Scale bar: 200 µm. Right: a zoomed in image of CA3 showing AAV-infected neurons (green) represent more than 90% of the neuronal population in the CA3. Scale bar: 500 µm. (D) Quantification of mIPSC amplitudes and frequencies recorded from WT and postsynaptic RARα knockout (KO) neurons treated with DMSO or RA. ***, p<0.001; two-way ANOVA followed by Tukey’s test. Amp: F(1,137) = 5.78, p<0.001; freq: F(1,137) = 10.76, p=0.001. n/N represents number of neurons/number of independent experiments. All graphs represent mean ± SEM.
+
 We next sought to establish the location of RA’s action using organotypic hippocampal slices from RARα conditional knockout mouse (Chapellier et al., 2002; Sarti et al., 2012). We injected Cre-expressing AAVs into either the CA3 or CA1 regions of the hippocampus to achieve pre- or postsynaptic-specific deletion of RARα in the Schaeffer collateral-CA1 synapses. Care was taken to achieve high infection efficiency in CA3 regions to ensure appropriate interpretation of results from presynaptic Cre-dependent deletion (Figure 1—figure supplement 1C). Selective deletion of RARα in postsynaptic neurons (Cre expressed in CA1 neurons), but not presynaptic neurons (Cre expressed in CA3 neurons), blocked RA-induced homeostatic increases in both mEPSC amplitude and frequency (Figure 1A-B). Importantly, these results were also observed when homeostatic plasticity was induced with chronic synaptic activity blocker CNQX (20 µM, 36 hr) (Figure 1C), which has been shown to induce de novo RA synthesis (Wang et al., 2011). Thus, newly synthesized RA acts via postsynaptic RARα to promote homeostatic adjustment of synaptic strength in both pre- and postsynaptic compartments.
 
 RARα signaling has also been shown to mediate homeostatic plasticity at inhibitory synapses (Sarti et al., 2013). We thus asked whether the presynaptic enhancement of synaptic strength also occurs at inhibitory synapses. Acute RA treatment in 21–25 DIV cultured slices significantly reduced mIPSC amplitudes as has been shown in younger slices (Sarti et al., 2013; Figure 1—figure supplement 1D). Interestingly, unlike those in younger neurons, the mIPSC frequency in these older neurons was also reduced by RA. These changes in inhibitory synaptic transmission were blocked by postsynaptic RARα deletion (Figure 1—figure supplement 1D). This result is consistent with our previous observations showing that visual deprivation reduces both mIPSC amplitude and frequency in post-critical period layer 2/3 visual cortical neurons (Zhong et al., 2018), indicating that the impact of RA on inhibitory synaptic transmission may be conserved across different brain regions. Given the differences in the nature of RA’s action on the presynaptic function of excitatory and inhibitory synapses, we focused the rest of the study on molecular mechanisms by which RA drives the enhancement of presynaptic function at excitatory synapses in the hippocampal neurons.
 
-## RA activates BDNF synthesis through direct association between RARα and specific splice isoforms of dendritically localized Bdnf mRNAs
+### RA activates BDNF synthesis through direct association between RARα and specific splice isoforms of dendritically localized Bdnf mRNAs
 
 A postsynaptically initiated mechanism of translational regulation mediated by RA-RARα signaling modulating presynaptic neurotransmitter release suggests the existence of a retrograde messenger molecule. BDNF is one of the most widely expressed and well-characterized neurotrophins in the developing and adult mammalian central nervous system (Hofer et al., 1990; Conner et al., 1997). It is synthesized as a proneurotrophin known as proBDNF and secreted as a mixture of proBDNF and mature BDNF processed from proBDNF (Foltran and Diaz, 2016). The retrograde BDNF-TrkB signaling has been well established in modulating both Hebbian synaptic plasticity (Andero et al., 2014; Guo et al., 2018) and homeostatic synaptic plasticity (Jakawich et al., 2010). BDNF expression in the brain is developmentally regulated and exhibits a steep increase between postnatal day 15 and 20 (Schoups et al., 1995; Dincheva et al., 2016), a time period that coincides with the emergence of RA-dependent presynaptic homeostatic modulation observed in 21 DIV primary cultured hippocampal neurons (Wang et al., 2011). Immunoblotting of proBDNF in hippocampal tissue collected at different developmental stages showed a gradual increase in BDNF expression during the first 4 postnatal weeks (Figure 2—figure supplement 1A). Immunoblot analysis from cultured hippocampal slices (prepared from postnatal day 8 mouse pups) showed a similar trend where the expression of BDNF gradually increases as the cultures mature from 1 to 21 DIV (Figure 2A), suggesting that this developmental upregulation of BDNF expression is preserved in our organotypic hippocampal slice culture system.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig2-v3.jpg)
+
+**Figure 2.:** (A) Representative immunoblots (left) and quantification (right) depicting proBDNF expression profiles in cultured hippocampal slices collected at 1, 7, 14, and 21 days in culture. Actin was used as a loading control and all expression levels were normalized to that of 1 day in vitro (DIV) (one-way ANOVA with Dunnett’s multiple comparison test, ***, p<0.001; *, p<0.05). (B)Schematic diagram of recombinant GST fusion proteins of RARα LBD, RARα LBD ΔF, and RARβ LBD used in RNA-binding assays. Full-length RARα and RARβ protein structures are shown as references. (C) Representative imaging of Coomassie brilliant blue-stained SDS-polyacrylamide gel showing the expression of purified recombinant GST and GST fused RARα and RARβ LBD proteins (n=3). (D) Representative images for semi-quantitative RT-PCR of specific Bdnf transcripts pulled down from total hippocampal RNAs in in vitro selection with purified GST fusion proteins. Gria1 mRNA was used as a positive control. Psd95, Camk2a, and Ef1a mRNAs served as negative controls. The representative image shown here is from one of the three experiments with similar results. (E) Representative immunoblot (left) and quantification (right) showing induced proBDNF synthesis in synaptoneurosomal fraction following 30 min of retinoic acid (RA) treatment. Actin was used as a loading control (two- tailed unpaired t-test, *, p<0.05). N represents number of independent experiments. All graphs represent mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative immunoblots (left) and quantification (right) depicting proBDNF expression profile in whole hippocampi collected from 1-, 7-, 14-, 21-, and 28-day-old mouse pups. Actin was used as a loading control. All expression levels were normalized to that of P0 (one-way ANOVA with Dunnett’s multiple comparison test, ***, p<0.001; *, p<0.05). Graph represents mean ± SEM. (B) Schematic diagram of mouse Bdnf gene structure (top). Exons are indicated by boxes. Maroon box inside exon IX represents the coding region of the Bdnf gene. Red arrow heads indicate the alternative splice donor sites giving rise to Bdnf transcripts with different exon choices. The middle panel shows the specific mRNA sequence consensus recognized by RARα. The bottom panel indicates the presence of RARα-binding motifs (in red) in the 5’UTRs of three Bdnf transcripts with exons I, II, and VI. (C) Representative GST-immunoblot showing the expression levels of purified recombinant GST and GST-tagged RARα and RARβ LBD proteins (n=2). (D) Representative immunoblots to confirm the purity of synaptoneurosome preparation. PSD95 was enriched in, and lysate.histone H3 was selectively absent from, the hippocampal synaptoneurosome fraction relative to the whole cell. (E) Representative immunoblot (top) and quantification (bottom) showing induced GluA1 synthesis in synaptoneurosomal fraction following 30 min of retinoic acid (RA) (1 μM) treatment. Actin was used as a loading control (two-tailed unpaired t-test, **, p<0.005). (F) Representative immunoblot (top) and quantification (bottom) showing no induction of PSD95 synthesis in synaptoneurosomes following 30 min of RA treatment. Actin was used as a loading control. N represents number of independent experiments. All graphs represent mean ± SEM.
 
 We next sought to investigate whether postsynaptic RA/RARα is involved in retrograde BDNF signaling through regulation of BDNF synthesis. We first explored the possibility that RARα directly binds to Bdnf transcripts. In rodents, the Bdnf gene represents a complex structure that consists of nine unique promoters (on nine separate exons) that drive the expression of several distinct Bdnf transcript isoforms (Figure 2—figure supplement 1B). All regulatory non-coding exons yield a single identical mature BDNF protein (Aid et al., 2007). The complex Bdnf gene structure gives rise to a diverse array of Bdnf transcripts that can be differentially trafficked to subcellular domains and translationally regulated by distinct intra- and extracellular signals (Wang et al., 2022; Lau et al., 2010; Song et al., 2017). We first performed in silico analysis to search for RARα recognition motifs in non-coding Bdnf exons. This analysis revealed that at least two Bdnf exons (exon 2 and exon 6) carry RARα-binding motifs in their sequence (Figure 2—figure supplement 1B). Bdnf transcripts containing exon 2 or exon 6 are trafficked to distal dendrites and are subject to synaptic activity-dependent translational regulation (Song et al., 2017; Baj et al., 2011; Colliva and Tongiorgi, 2021; Vaghi et al., 2014; Baj, 2016). In cultured hippocampal pyramidal neurons, the localization of Bdnf exon 2 and exon 6 in distal dendrites increases dramatically as the culture matures from 7 to 18 DIV (Baj et al., 2011), making them potential targets for RA/RARα-mediated translational regulation around the onset time of homeostatic presynaptic changes.
 
@@ -47,9 +63,17 @@ RARα-mediated translational regulation in dendrites requires direct association
 
 Does the binding of Bdnf mRNAs by RARα result in their translational regulation by RA? To address this, we examined RA-induced local translation of BDNF in synaptoneurosomes prepared from 3- to 4-week-old mouse hippocampi. The purity of synaptoneurosomal fraction was verified by the enrichment of synaptic protein PSD95 and the absence of nuclear protein histone H3 (Figure 2—figure supplement 1D). A brief treatment of synaptoneurosomes with 1 μM RA for 30 min at 37°C significantly increased GluA1 protein levels and demonstrated the translational competency of the synaptoneurosomal preparation (Aoto et al., 2008; Figure 2—figure supplement 1E). Importantly, the expression levels of proBDNF protein also increased significantly (Figure 2E) while PSD95, whose mRNAs are also dendritically localized but do not bind to RARα, failed to respond to RA stimulation (Poon and Chen, 2008; Figure 2—figure supplement 1F). Thus, RARα binding to Bdnf mRNAs does convey translational regulation of BDNF by RA.
 
-## RA drives retrograde BDNF-TrkB signaling to achieve regulation of presynaptic homeostatic plasticity
+### RA drives retrograde BDNF-TrkB signaling to achieve regulation of presynaptic homeostatic plasticity
 
 Having established that RA regulates BDNF synthesis through direct binding between RARα and dendritically localized isoforms of Bdnf mRNAs, we next sought to test the relevance between RA-dependent BDNF synthesis and presynaptic homeostatic changes. To this end, we prepared organotypic hippocampal slice cultures from conditional knockout mice for either BDNF or TrkB, which allowed for dissection of the loci of action (pre vs. postsynaptic) for these two key players. Injection of Cre-expressing AAVs into either the CA3 or CA1 regions of the hippocampus achieved pre- or postsynaptic-specific deletion of target proteins in the Schaeffer collateral-CA1 synapses. Acute RA treatment or prolonged CNQX treatment significantly increased both mEPSC amplitudes and frequencies in uninfected control slices (Figure 3A–C). While presynaptic deletion of BDNF did not impair either of these changes in mEPSCs, postsynaptic deletion of BDNF prevented the increase in mEPSC frequency (Figure 3B–C). By contrast, presynaptic, but not postsynaptic deletion of TrkB blocked the increase in frequency induced by either RA or CNQX (Figure 3D–F). Deletion of either BDNF or TrkB pre- or postsynaptically did not affect the homeostatic increase in mEPSC amplitude, indicating that BDNF/TrkB signaling is exclusively involved in regulation of presynaptic function. The locations of action for BDNF and TrkB are consistent with the postsynaptic initiation of RA synthesis followed by RARα-mediated translational regulation supporting the notion that retrograde BDNF signaling through presynaptic TrkB drives presynaptic changes during homeostatic synaptic plasticity (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig3-v3.jpg)
+
+**Figure 3.:** (A) Example traces of mEPSCs recorded from hippocampal pyramidal neurons in organotypic slices from WT (uninfected), presynaptic BDNF KO (Cre expression in CA3) and postsynaptic BDNF KO (Cre expression in CA1) groups treated with DMSO or RA (10 μM, 4 hr). Scale bars, 10 pA, 0.5 sec. (B) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic BDNF KO neurons treated with DMSO or RA. ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,199) = 1.062, p > 0.3; freq: F(2,199) = 6.244, p < 0.01. (C) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic BDNF KO neurons treated with DMSO or CNQX (36 hours). *, p<0.05, **, p < 0.01; ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,195) = 1.77, p > 0.15; freq: F(2,195) = 2.53, p >0.05. (D) Example traces of mEPSCs recorded from hippocampal pyramidal neurons in organotypic slices from WT (uninfected), presynaptic TrkB KO (Cre expression in CA3) and postsynaptic TrkB KO (Cre expression in CA1) groups treated with DMSO or RA (10 μM, 4 hr). Scale bars, 10 pA, 0.5 sec. (E) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic TrkB KO neurons treated with DMSO or RA. **, p < 0.01; ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,147) = 0.01, p > 0.9; freq: F(2,147) = 14.87, p < 0.0001. (F) Quantification of mEPSC amplitudes and frequencies recorded from WT, presynaptic and postsynaptic TrkB KO neurons treated with DMSO or CNQX (36 hours). *, p<0.05,**, p < 0.01; ***, p < 0.001; two-way ANOVA followed by Mann Whitney test. Amp: F(2,168) = 2.33, p > 0.1; freq: F(2,168) = 0.17, p> 0.8.n/N represent number of neurons/number of independent experiments. All graphs represent mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79863/elife-79863-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** When synaptic transmission is normal, basal dendritic calcium levels inhibit RA synthesis through a calcineurin-dependent pathway. This allows RARα to inhibit the translation of specific dendritic mRNAs. During chronic synaptic inactivity, decreased calcium levels in dendrites remove the inhibition on RA synthesis. Newly synthesized RA binds to RARα and de-represses local translation of specific dendritic mRNAs, including those for GluA1 and brain-derived neurotrophic factor (BDNF). Newly synthesized α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) receptors supports enhanced excitatory postsynaptic strength, while newly synthesized BDNF acts retrogradely on presynaptic tropomyosin receptor kinase B (TrkB) receptors to augment presynaptic functions. Previous studies have also identified mTORC1 activation as a key regulatory step in de novo BDNF synthesis, and showed that AMPA receptor blockade results in enhanced phospholipase D (PLD1) activity that converts phosphatidylcholine (PC) to phosphatidic acid (PA), which in turn engages mTORC1 signaling pathway. Thus, multiple signaling pathways may work in concert to regulate postsynaptic protein synthesis in the context of homeostatic plasticity.
 
 ## Discussion
 
@@ -67,37 +91,341 @@ Similar to the rodent Bdnf gene, the human BDNF gene has a complex structure wit
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rarafl/fl</td>
+      <td>Chapellier et al., 2002</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Bdnffl/fl</td>
+      <td>Rios et al., 2001 (The Jackson Lab)</td>
+      <td>JAX#004339 RRID: IMSR_JAX:004339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ntrk2fl/fl</td>
+      <td>Luikart, 2005</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>CD-1 IGS</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain code: 022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Glutathione-S-transferase (GST) (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>SAB4200237-200UL; Clone 2H3-D10</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BDNF (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab108319</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Glur1-NT (N-terminus) (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB2263; Clone RH95</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD95 (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>MA1-046</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>07-690</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB1501; Clone C4</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW IgG Secondary Antibody (Donkey anti-Rabbit)</td>
+      <td>Li-cor</td>
+      <td>P/N: 926-32213</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD IgG Secondary Antibody (Donkey anti-Mouse)</td>
+      <td>Li-cor</td>
+      <td>P/N: 926–68072</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-KG</td>
+      <td></td>
+      <td></td>
+      <td>Expression vector with GST tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-KG-RARα LBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nucleotides 460 to end</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-KG-RARα LBD ΔF</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nucleotides 460–1,251</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-KG- RARβ LBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>496 to end</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gria1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>caatcacaggaacatgcggc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gria1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cctgccagttcttctcggcggc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 1 Bdnf _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctccctcactttctctggg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 1 Bdnf _R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctgagagacacgtttccc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 2 Bdnf _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cgagccccagtttggtcccc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 2 Bdnf _R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ggtggctagatcctggtg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 6 Bdnf _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gacccggttccttcaactgcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Exon 6 Bdnf _R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctcagggtccacacaaagctctcgg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlg4 (Psd95)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>catcgaaggaggcgctgccc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlg4 (Psd95)_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cattgtccaggtgctgagaata</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Camk2a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cattgtggcccgggagtatt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Camk2a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ggtgatgggaaatcataggcacc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ef1a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>cgagaccagcaaatactatgtgacc</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ef1a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ggcatattagcacttggctcc</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT Reagent Kit with gDNA Eraser (Perfect Real Time)</td>
+      <td>Takara</td>
+      <td>RR047B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic acid (RA)</td>
+      <td>Sigma</td>
+      <td>R2625-50MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Tocris</td>
+      <td>0190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>4693132001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNasin Ribonuclease Inhibitors</td>
+      <td>Promega</td>
+      <td>N2115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio 5.2.5</td>
+      <td>LI-COR Bioscience</td>
+      <td>https://www.licor.com/bio/pr oducts/software/image_studi o_lite/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/s cientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mind the graph</td>
+      <td></td>
+      <td>https://mindthegraph.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>Sigma Millipore</td>
+      <td>GE17-0756-05</td>
+      <td>In vitro RNA-binding assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mouse strains used in the study are mentioned in table above. All mouse studies were performed according to protocols approved by the Stanford University Administrative Panel on Laboratory Animal Care. All procedures conformed to NIH Guidelines for the Care and Use of Laboratory Animals and were approved by the Stanford University Administrative Panel.
 
-## Plasmid constructs for recombinant gene expression
+### Plasmid constructs for recombinant gene expression
 
 All RAR constructs were generated using mouse sequences and cloned into pGEX-KG. For GST-RARα LBD, nucleotides 460 to end were cloned using BamHI and HindIII; for GST-RARα LBD ΔF, nucleotides 460–1251 were cloned with BamHI and HindIII; and for GST-RARβ LBD, nucleotides 496 to end were cloned using BamHI and HindIII. All plasmids generated in this study are available upon request.
 
-## In vitro RNA-binding assay
+### In vitro RNA-binding assay
 
 Purified GST fusion proteins and total RNA from whole hippocampi of P25-P30 mouse pups were used for selection. GST fusion proteins were expressed in BL21 cells induced with 1 mM IPTG. Bacteria was sonicated in lysis buffer (150 mM NaCl, 20 mM sodium phosphate, pH 7.4, 1% Triton X-100, and protease inhibitors) and debris were cleared by centrifugation at 10,000 rpm for 20 min. Protein expression was confirmed by SDS/PAGE followed by Coomassie staining and immunoblotting when possible. GST fused to the various domains of RARα or RARβ were then purified from the bacterial lysate by binding to glutathione Sepharose beads and equilibrating/washing the protein-bound beads five times in RNA-binding buffer (200 mM KOAc, 10 mM TrisOAc, pH 7.7, and 5 mM MgOAc with protease and RNase inhibitors). Total RNA was obtained from whole hippocampi of 25- to 30-day-old CD1 mice using TRIzol. RNA was DNase treated and reextracted with TRIzol, and the pellet was resuspended in nuclease-free water and quantified by spectrophotometry. RNA (20 μg) was added to RNA-binding buffer and heated to 95°C to denature secondary structure, then slowly renatured. Renatured RNA was then added to the immobilized GST fusion protein in RNA-binding buffer and rotated overnight at 4°C. Beads were then washed several times in RNA-binding buffer. RNA was extracted with TRIzol, treated with RNase free DNase I, then reverse transcribed with oligo(dT) according to the manufacturer’s instructions. cDNA was used for amplification with PCR using gene-specific primers.
 
-## Synaptoneurosome preparation
+### Synaptoneurosome preparation
 
 Hippocampi from P25-P30 CD1 mice were dissected and gently homogenized in a solution containing 33% sucrose, 10 mM HEPES, 0.5 mM EGTA (pH 7.4), and protease inhibitors. Nuclei and other debris were pelleted at 2,000 × g for 5 min at 4°C and the supernatant was filtered through three layers of 100 μm pore nylon mesh (Millipore), and a 5 μm pore PVDF syringe filter (Millipore). The filtrate was then centrifuged for 10 min at 10,000 × g at 4°C and the supernatant was removed. The synaptoneurosome-containing pellet was then resuspended in the appropriate amount of lysis buffer containing 140 mM NaCl, 3 mM KCl, 10 mM glucose, 2 mM MgSO4, 2 mM CaCl2, and 10 mM HEPES (pH 7.4) containing protease inhibitors and RNAsin. Equal volumes were then aliquoted into opaque microfuge tubes. Appropriate samples were incubated with 1 μM RA for 10 min at 37°C and immediately frozen in dry ice afterward.
 
-## Western blotting
+### Western blotting
 
 Samples were run on 10% SDS/PAGE and transferred to nylon membranes. Membranes were blocked with Tris-buffered saline solution containing 0.1% Tween-20 (TBST) and 5% dry milk. Primary antibodies were diluted into TBST and incubated overnight at 4°C. Primary antibody was washed with TBST and secondary antibody was added for 1 hr in TBST. Secondary antibody was washed off with TBST and signal detected using Odyssey CLx imaging system (LI-COR). The densitometric analysis was performed using ImageJ software.
 
-## Organotypic hippocampal slice cultures
+### Organotypic hippocampal slice cultures
 
 Organotypic slice cultures were prepared from postnatal day 7–8 mouse pups and placed on semiporous membranes (Millipore) for 21–25 days prior to recording (Gähwiler et al., 1997). Briefly, slices were maintained in a MEM-based culture media comprised of 1 mM CaCl2, 2 mM MgSO4, 1 mM L-glutamine, 1 mg/L insulin, 0.0012% ascorbic acid, 30 mM HEPES, 13 mM D-glucose, and 5.2 mM NaHCO3. Culture media was a pH of 7.25 and the osmolarity was 320. Cultures were maintained in an incubator with 95% O2/5% CO2 at 34°C.
 
-## Viral vectors and viral infection
+### Viral vectors and viral infection
 
 AAV Syn-CRE was prepared as previously described (Aoto et al., 2013). Viral titers were determined by qPCR.
 
 Cultures were injected on 0 DIV and maintained for 21–25 days prior to recording. Presynaptic deletion was accomplished via injection of AAV-CRE into the CA3 pyramidal cell body layer. Postsynaptic deletion was achieved via injection of AAV-CRE into the CA1 pyramidal cell body layer. All experiments are executed with interweaving controls (either uninfected [i.e. WT], presynaptic deletion, or postsynaptic deletion) All injections were verified and confirmed as 95–100% infectivity in either the CA3 or CA1 prior to recording.
 
-## Electrophysiology
+### Electrophysiology
 
 Voltage-clamp whole-cell recordings are obtained from CA1 pyramidal neurons treated with either vehicle controls,10 µM RA for 4 hr prior to recording, or 20 µM CNQX for 36 hr prior to recording, under visual guidance using transmitted light illumination. Vehicle control, RA treated, and CNQX-treated cells were obtained from the same batches of slices on the same experimental day.
 
@@ -105,6 +433,6 @@ The recording chamber is perfused with 119 mM NaCl, 2.5 mM KCl, 4 mM CaCl2, 4 mM
 
 Spontaneous miniature transmission was obtained in the presence of 1 µM of TTX in the external solution. For slices previously exposed to RA or CNQX, slices were washed out prior to recording spontaneous responses.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample sizes were determined based on power analysis (power set at 0.8 and α=0.05) and also on similar experiments performed and published by our lab and others previously (Poon and Chen, 2008; Soden and Chen, 2010; Arendt et al., 2015; Henry et al., 2018). All graphs represent average values ± SEM. Statistical differences were calculated according to parametric or nonparametric tests (indicated in figure legends). Comparisons between multiple groups were performed either with one-way ANOVA or with the two-way ANOVA followed by Tukey’s test. When significant differences were observed, p values for pairwise comparisons were calculated according to two-tailed Mann-Whitney tests (for unpaired data) or Wilcoxon tests (for paired data). Comparisons between cumulative distributions were performed according to two-sample Kolmogorov-Smirnov tests. p values are indicated in each figure.

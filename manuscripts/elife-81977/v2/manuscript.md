@@ -14,9 +14,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Molecular Biosciences, Center for Systems and Synthetic Biology, University of Texas Austin United States
-2. https://ror.org/05b8d3w18 Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany
-3. https://ror.org/029gmnc79 Human Technopole Milan Italy
+1. Department of Molecular Biosciences, Center for Systems and Synthetic Biology, University of Texas Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany ([ROR:05b8d3w18](https://ror.org/05b8d3w18))
+3. Human Technopole Milan Italy ([ROR:029gmnc79](https://ror.org/029gmnc79))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Here, we present a detailed molecular model of an intact IFT-A complex obtained 
 
 ## Results
 
-## Determination of individual IFT-A protein structures by AlphaFold2 and chemical cross-linking mass spectrometry
+### Determination of individual IFT-A protein structures by AlphaFold2 and chemical cross-linking mass spectrometry
 
 We first independently modeled each of the six individual proteins that constitute the IFT-A complex: IFT43, IFT121, IFT122, IFT139, IFT140, and IFT144 (for simplicity, we use the human gene nomenclature for all genes) (Behal et al., 2012). Four of these proteins–IFT121, IFT122, IFT140, and IFT144–are predicted to share the same general architecture of two Tryptophan/Aspartic Acid Repeat (WD40) head domains and a tetratricopeptide repeat (TPR) tail domain, while IFT139 is composed of 19 TPR repeats, and the IFT43 domain structure is largely uncharacterized (Behal et al., 2012). These proteins are broadly conserved across eukaryotes (van Dam et al., 2013). While the individual domain structures have been predicted from sequence, with recent advances in structural predictions (Baek et al., 2021; Jumper et al., 2021), we could model the 3D structures of the full-length proteins with high confidence.
 
@@ -46,13 +46,49 @@ Using the AlphaFold2 Google Colab notebook (Mirdita et al., 2022) and protein se
 
 To experimentally validate these structure predictions, we characterized endogenous IFT-A complexes from Tetrahymena with cross-linking mass spectrometry (XL/MS), in which cross-linked amino acid residues in a protein sample are connected by covalent crosslinks (XLs) of a defined length and can be identified in MS analyses (Leitner et al., 2016; O’Reilly and Rappsilber, 2018; Tang et al., 2021; Liu et al., 2017). Such data define protein interaction interfaces at amino acid resolution and provide distance restraints for structural modeling. Briefly, we purified cilia from Tetrahymena (Rajagopalan et al., 2009; Figure 1A), solubilized the membrane and matrix fraction (M+M) which contains IFT-A and IFT-B (Lucker et al., 2005), and then further enriched for monomeric IFT-A complexes using size-exclusion chromatography (SEC) (Figure 1—figure supplement 2). We cross-linked the proteins in the IFT-A-containing fractions using a mass spectrometer-cleavable crosslinker, disuccinimidyl sulfoxide (DSSO), and mapped the crosslinked residues using MS2/MS3 tandem mass spectrometry. DSSO covalently cross-links pairs of accessible lysine residues falling within a distance determined by the length of the DSSO linker itself and the linked lysine side chains (Merkley et al., 2014). This is generally less than 30 Å, although we include an additional 5 Å margin of error to account for protein dynamics as in Erzberger et al., 2014; Fernandez-Martinez et al., 2016; LoPiccolo et al., 2015; Shi et al., 2014.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sample preparation protocol for obtaining an enriched sample of endogenous IFT-A from T. thermophila. The sample preparation was followed by chemical cross-linking using DSSO and tandem (MS2/MS3) mass spectrometry to identify cross-linked peptides. Image created with BioRender.com. (B) Bar diagrams highlight the extensive intramolecular DSSO cross-links (purple arcs connecting cross-linked amino acid pairs) within each of the IFT-A subunits (bars, numbers denote amino acid positions). (C) Violin plots of the distance between Cɑ atoms of chemically cross-linked residues. Surrounding images show locations of intramolecular crosslinks (black bars) on aligned AlphaFold2 predicted models of IFT-A subunits from Chlamydomonas reinhardtii (green) and Tetrahymena thermophila (pink). A maximum distance of 35 Å between Cɑ atoms is expected for DSSO cross-links. 97% of intramolecular cross-links are satisfied for T. thermophila and 94% for C. reinhardtii.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Structures are colored based on pLDDT (Tunyasuvunakool et al., 2021) where red represents higher confidence predictions and blue lower confidence predictions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) FPLC size exclusion chromatography elution traces for molecular weight calibrants (lines, left axis), overlaid with mass-spectrometry determined IFT-A protein abundances (in protein spectral matches, PSMs; bars, right axis) measured from Tetrahymena whole cell extract. Using these data, we identified IFT-A fractions to be subsequently collected from ciliary M+M preparations for cross-linking. (B) Linear regression between chromatography elution volumes (Ve, peak elution volume in mL; V0, void volume from Blue Dextran) and molecular weight calibrants (known size calibrants, filled circles; protein complexes of known composition, open circles) provided a molecular weight estimate for the selected IFT-A fractions ranging between 720 kDa and 1.1 MDa, consistent with an IFT-A monomer, whose expected molecular weight is 772 kDa.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Locations of intramolecular crosslinks (black bars) are visualized on structural alignments of AlphaFold2 predicted models of IFT-A subunits from Tetrahymena thermophila (pink), Chlamydomonas reinhardtii (green), and humans (blue). (B) Violin plots show the distance between Cɑ atoms of chemically cross-linked residues by DSSO. A maximum distance of 35 Å between Cɑ atoms is expected for DSSO cross-links. 86% of intramolecular cross-links are satisfied for the human structures.
+
 We identified a total of 69 intramolecular cross-links between amino acids spanning the length of each individual IFT-A protein, apart from IFT43 (Figure 1B, purple arcs). We then tested the concordance between these XL/MS data and our AlphaFold2-predicted structures by calculating the distance between each linked residue pair in each predicted IFT-A protein structure. Our XL/MS data strongly validated the predicted structures, as 97% of all cross-linked residue pairs fell within the 35 Å length restraint in the models (Figure 1C, pink in violin plots). Impressively, even intramolecular cross-linked residues separated by more than 500 residues in their primary sequence fell within 35 Å in the 3D structure (Figure 1B and C).
 
 The structures of the IFT-A complex and its subunits are expected to be highly conserved across eukaryotes (van Dam et al., 2013), so we explored this relationship by superimposing models of IFT-A proteins from C. reinhardtii on those for T. thermophila. As expected, our Tetrahymena-derived chemical cross-links were still strongly in agreement with the C. reinhardtii structures, although as expected the concordance was slightly weaker (Figure 1C, green). The overall structure was also largely conserved between structure predictions for Tetrahymena and human IFT-A proteins (Figure 1—figure supplement 3). Accordingly, we observed 86% agreement between the human model and the Tetrahymena XL/MS data, measured as the percentage of XL/MS amino acid pairs that were predicted to be 35 Å or less apart when mapped onto the AlphaFold2 models of human IFT proteins. Taken together, the high level of agreement between predicted structures and experimental cross-linking data strongly suggests that the predicted structures accurately capture relevant IFT-A subunit conformations in these highly conserved eukaryotic proteins.
 
-## Integrative modeling of the IFT-A complex
+### Integrative modeling of the IFT-A complex
 
 We next sought to build a molecular model of the assembled monomeric IFT-A complex. To this end, we first mined our XL/MS data for intermolecular cross-links, providing distance restraints between pairs of amino acids located in two different IFT-A protein subunits (Figure 2, green lines). With these new data providing experimentally supported intermolecular contacts, we modeled all possible pairs of IFT-A proteins with AlphaFold-Multimer (Evans et al., 2021) to test if the algorithm correctly identified the true interaction partners, judged by the crosslinks, and provided 3D models for the interacting domains (Figure 2—figure supplement 1). We found near-perfect concordance between AlphaFold-predicted interaction partners and the experimentally confirmed interaction partners, the sole exception being a high-confidence AlphaFold interaction between IFT122 and IFT139 with no supporting cross-links.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig2-v2.jpg)
+
+**Figure 2.:** Using spatial restraints (top panels) based on chemical cross-links (intramolecular, purple arcs; intermolecular, green lines), AlphaFold2 protein models, and AlphaFold2 high-confidence predicted interfaces between proteins (see Methods for more details), an integrative model (bottom panel) of monomer IFT-A was determined that best satisfied these spatial restraints. The centroid model of the top-scoring cluster of 9121 models is shown (ribbon diagram) in the localized probability density (colored volumes) for each subunit.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** AlphaFold-Multimer (Evans et al., 2021) was used to model pairs of IFT-A proteins and compute the predicted aligned error (PAE, reported in Å, where darker colors indicate higher confidence in the relative spatial positions of two amino acid residues) between all pairs of amino acid residues in both structures. Using these PAE scores and thresholds determined by comparing PAE scores to independent structural evidence (McCafferty et al., 2022b), we defined boundaries of well-predicted interacting domains to be used as rigid bodies for subsequent integrative modeling (see Methods), as for the case shown for IFT121-IFT122 (top panels). The white box indicates the extracted interacting region, which in this case lies within larger well-predicted monomeric structures; the complete IFT121-122 interaction model is drawn at right. No such information was used from the PAE plots of the proteins that were not predicted to interact, as for the case of IFT139-IFT144 (bottom panels), for which neither AlphaFold nor chemical cross-links showed any evidence for interacting.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Rigid body protein segment pairs determined from AlphaFold-Multimer on the basis of high-confidence model PAE scores. A starting model for integrative modeling was assembled from these rigid bodies, as shown in (B). We restricted the number of degrees of freedom explored during integrative modeling by defining regions that were modeled as groups of rigid bodies (gray ellipses) as well as restricting flexibility to ‘pivot points’ of low AlphaFold confidence (colored spheres) within each protein.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The four step protocol of IMP (shown as consecutive columns of panels) includes (1) gathering data into spatial restraints, (2) optimized sampling, (3) ensemble analysis, and (4) ensemble validation. In (1) we show the restraints that were used in the model. In (2) we show the initial random positions followed by a Monte Carlo sampling. In (3) we show the ensemble analysis, which includes clustering models by score and testing for convergence of high-scoring models. Finally, in step (4) we validate the model both against data that was used in the model and using protein interactions previously reported in the literature.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) The initial model built based on pairwise AlphaFold-Multimer predictions. The starting model showed numerous violations of intermolecular cross-linker distances (violin plots at right, showing distances between cross-linked amino acid residues in Ångstroms). (B) Integrative modeling using IMP markedly reduced the number of violations, producing a final model consistent with 98.6% of intramolecular and 72% of intermolecular cross-links, assessed as the percentage of cross-linked residue pair alpha carbons positioned within 35 Å of each other.
 
 Using AlphaFold’s predicted aligned error (PAE) confidence scores as a guide (as detailed in McCafferty et al., 2022b), we constructed high-confidence models of interacting domains between IFT121-IFT122, IFT121-IFT139, IFT121-IFT43, IFT122-IFT139, IFT122-IFT140, IFT122-IFT144, and IFT140-IFT144 (Figure 2—figure supplement 2A). The combination of cross-linked residue pairs, AlphaFold2 monomer structures, and AlphaFold-Multimer domain-domain interaction models provided sufficient spatial restraints to build an initial model of IFT-A, which we improved by using a four-step integrative modeling approach (Webb et al., 2018; Saltzberg et al., 2019; Russel et al., 2012; Figure 2, Figure 2—figure supplement 3, Figure 2—figure supplement 4, and Methods).
 
@@ -66,7 +102,7 @@ As an initial validation of our IFT-A model, we first examined the agreement wit
 
 We also assessed the quality of the ensemble solution by splitting the models in the final cluster in half and computing the probability densities separately, testing for convergence. We observed a high cross-correlation coefficient between the two samples (.94) confirming a high degree of convergence between models in our final cluster (Viswanath et al., 2017). These values indicate that the selected cluster contains convergent modeling runs in which different starting positions yield highly similar end arrangements of IFT-A subunits. Thus, our structural model of the IFT-A monomer was both strongly internally consistent with the input data from XL/MS and structure predictions and the same solution was repeatedly derived by independent modeling runs.
 
-## Assembly of IFT-A monomers into a polymeric train
+### Assembly of IFT-A monomers into a polymeric train
 
 As the model was determined primarily using cross-links and structural constraints derived from monomeric IFT-A, we next sought to determine how the monomeric IFT-A might assemble into the polymeric form found in anterograde trains in cilia, and how it might orient with respect to IFT-B and the ciliary membrane. To address these questions, we determined a 23 Å resolution structure of the IFT-A complex by cryo-ET and subtomogram averaging, as observed in situ in the context of a flagellar anterograde IFT transport train within intact Chlamydomonas flagella (Figure 3). To arrive at this structure, we incorporated 7900 additional particles into the subtomogram averaging from our previous studies (Jordan et al., 2018; Jordan and Pigino, 2019; Table 1 and Methods), and this improved resolution served to constrain and inform our modeling.
 
@@ -74,11 +110,86 @@ As the model was determined primarily using cross-links and structural constrain
 
 **Figure 3.:** (A) IFT train in a raw tomogram of a C. reinhardtii cilium with the section showing the repeats of IFT-A and IFT-B. The picking of IFT-A particles is shown in the lower panel (MTd, microtubule doublet; G, glycocalyx; M, membrane; the direction of the ciliary tip is to the right side). (B) Subtomogram average of IFT-A; the left panel shows the same orientation as in A (plus, direction of the ciliary tip). Vertical dashed lines in the left panel indicate slice sections corresponding to the middle and right panels, respectively. (C) The Fourier shell correlation of the subtomogram average indicates a resolution of 2.3 nm at a cut-off criterion of 0.5. The pixel size is 0.71 nm. (D1) 3D isosurface of a reconstructed IFT train in between the membrane and the microtubule doublet as seen from the ciliary base towards the tip (ODAs, outer dynein arms; A, B, A-, and B-tubule) and composed of three averages: IFT-A (yellow), IFT-B (green) and dynein-1b (blue). (D2) The IFT-A polymer as seen from the membrane towards the microtubule doublet. (D3) and (D4) Views of IFT-A as indicated.
 
+**Table 1.**
+ Cryo-ET data collection and processing statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>IFT-A complex (EMD-26791)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>30,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>100–140</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>–3 to –6</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>14.13 (bin6), 7.08 (bin3)</td>
+    </tr>
+    <tr>
+      <td>Tilt-range/step (°)</td>
+      <td>±64° / 2</td>
+    </tr>
+    <tr>
+      <td>Processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>9350</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+
 We first performed a rigid body docking of our IFT-A monomeric complex into the subtomogram average using the ChimeraX fit-in-map tool (Pettersen et al., 2004). While IFT43, IFT121, IFT139, and the N-terminus of IFT122 fit well into the train, IFT140, IFT144, and the C-terminus of IFT122 required further fitting using molecular dynamics-based flexible fitting (Kidmose et al., 2019; Figure 4, Figure 4—figure supplement 1, Figure 4—video 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig4-v2.jpg)
+
+**Figure 4.:** (A) The final cluster centroid model fit into the five IFT-A polymeric repeat subtomogram average map using molecular dynamics-based flexible fitting (Kidmose et al., 2019). (B) An alternative side view of the IFT-A trains to show interactions between adjacent monomers. Plus signs in A,B indicate the direction of the ciliary tip. (C) The IFT121-IFT122 interaction in the train-docked model with satisfied intermolecular cross-linked pairs shown in red. (D) The interaction between IFT122-IFT140-IFT144 is shown with satisfied intermolecular cross-links in red. (E) The interaction between IFT43-IFT121-IFT139 with satisfied intermolecular cross-links between IFT121 and IFT139 shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The starting position of the IFT-A integrative model (left panel) was determined by rigidly docking the model into the subtomogram average cryo-ET density using the ChimeraX fit-in-map tool (Goddard et al., 2018). The final structure (right panel) was obtained by flexibly fitting into the density using Namdinator (Kidmose et al., 2019). Figure 4—video 1 provides a visualization of the IFT-A conformational changes required to fit the monomer into the polymeric train.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** A comparison of our model (center panel), based on determining a monomeric structure using cross-linking mass spectrometry, AlphaFold2, and integrative modeling, followed by docking into a 23 Å subtomogram average of polymeric IFT-A, compares favorably with (left panel, reprinting Figure 5C of Hesketh et al., 2022) a monomeric structure determined by single particle cryo-EM then docked into a 30 Å subtomogram average of polymeric IFT-A, as well as with (right panel, reprinting Figure 4C of Lacey et al., 2022) a polymeric IFT-A model built into an 18 Å subtomogram average. Note the latter model omits IFT43 and the repeating IFT-A monomer adopts an alternative choice of neighboring IFT140/144 subunits, but otherwise shows similar packing of subunits within the cryo-ET density map. (Reprinted images are used with permission under CC-BY-NC-ND 4.0 International license and are unchanged apart from adding labels for clarity.).
 
 Accommodating the monomeric IFT-A into the anterograde train cryo-ET structure required a rotation of the C-terminus of IFT122 into the neighboring volume, where the extended TPR tail could be fit into a clearly delineated tube of density (Figure 4—figure supplement 1). By preserving the relative positions of IFT140/144 relative to the IFT122 C-terminal domain, their positions were also clearly evident in the cryo-ET density, in spite of a large movement of both IFT140 and IFT144 relative to IFT43/121/122 (N-terminus)/139 (Figure 4—video 1). Notably, we observed IFT140 rearranged to bridge adjacent IFT-A complexes within the train, with the N-terminus of IFT140 interacting with the C-terminus of an adjacent IFT140 protein. This arrangement was especially interesting in light of AlphaFold’s suggestion that IFT140 formed a loop with the N-terminus interacting with its own C-terminus, which may stem in part from evolutionary couplings that reflect the native polymeric state.
 
-## Validation of the modeled IFT-A structure
+### Validation of the modeled IFT-A structure
 
 To further validate our structural model, we investigated whether our model was consistent with the extensive prior biochemical literature identifying direct interactions among the IFT-A proteins. Both co-sedimentation assays and visual immunoprecipitation (VIP) experiments in Chlamydomonas and mammalian cells (Behal et al., 2012; Hirano et al., 2017) suggest that IFT122, IFT140, and IFT144 form a core complex within IFT-A (Figure 5B.I and B.II). Within this core complex, the C-terminal domain of IFT122 directly interacts with IFT140 and IFT144 (Takahara et al., 2018), with a stable heterodimer being formed between IFT122 and IFT144, and specifically, residues 357–653 of IFT144 are required for the interaction with IFT122 (Hirano et al., 2017; Takahara et al., 2018). Furthermore, visible immunoprecipitation (VIP) assays show the N-terminal domain of IFT122 interacts with IFT121 and IFT43 (Takahara et al., 2018). Our model of the IFT-A structure agrees perfectly with these previous findings (Figure 5B.III-5B.VI).
 
@@ -94,11 +205,19 @@ Finally, several studies focus on direct interactions of IFT139 within IFT-A. On
 
 As structural biology moves towards tackling more complicated problems in situ, AI-predicted structures and chemical cross-links provide a complement to cryo-electron microscopy and tomography studies to illuminate the architecture of challenging, transient, or less abundant protein complexes. Here, we have combined cryo-electron subtomogram averaging of intact cilia, chemical cross-links of highly enriched soluble endogenous IFT-A complexes, and AlphaFold2 predicted structures of individual proteins and protein pairs to build a comprehensive 3D model of the IFT-A ciliary trafficking protein complex. The IFT-A structure is strongly supported by previous biochemical interaction studies and reveals new and conserved packing modes among proteins sharing these domain architectures. Moreover, the model provides testable new hypotheses and sheds new light on the precise mechanisms underlying IFT-related human genetic diseases.
 
-## Conserved interactions between structurally similar proteins
+### Conserved interactions between structurally similar proteins
 
 We constructed our model using spatial information from organisms that have diverged since the last eukaryotic common ancestor (LECA). Despite this, IFT has proven to be highly conserved (van Dam et al., 2013). In one example, there is a 41% sequence identity shared between the IFT172 protein from human and T. brucei, an early branching supergroup (Excavata) of eukaryotes (van Dam et al., 2013). This structural conservation between species is also evident from IFT-B subtomogram averages collected from mammalian primary cilia and C. reinhardtii motile cilia (Kiesel et al., 2020), which display similar overall morphologies to the IFT-B monomers.
 
 Furthermore, our new model allows us to compare the protein-protein interactions in IFT-A to those with similar domain architectures to better understand the functions of individual subunits within the complex. Phylogenetic evidence suggests that the IFT complex is a sister structure to COPI and a member of the proto-coatomer family (van Dam et al., 2013). The ɑβ subunits of the COPI complex interact via their TPR tail domain (van Dam et al., 2013; Lee and Goldberg, 2010), and we observed a similar binding mode in IFT-A, where the subunits IFT121, IFT122, IFT140, and IFT144 interact via their TPR tail domains (Figure 6). Phylogenetic analyses also suggest that IFT-A and the BBSome likely evolved from a single IFT complex through subunit duplication (van Dam et al., 2013). Interestingly, the BBSome contains β-propeller structures similar to the WD40 domains of IFT-A, in addition to TPR-based subunits similar to IFT139. In the BBSome, the TPR protein, BBS4, interacts with the β-propeller of BBS1 (Yang et al., 2020). Similarly, in our model of IFT-A, there is an analogous interaction between the WD40 domain of IFT122 and TPR-based IFT139.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig6-v2.jpg)
+
+**Figure 6.:** By performing structure-based searches (Holm and Rosenström, 2010) of the set of AlphaFold2-predicted human protein structures (Tunyasuvunakool et al., 2021), we identified proteins that have a similar domain architecture to IFT121, IFT122, IFT140, and IFT144 (as in Figure 6—figure supplement 1). Colors highlight the role of these domains in depictions of native complexes containing proteins with these domain architectures. As in our model of the IFT-A complex, stable interactions between TPR domains underlie diverse macromolecular assemblies. COPI PDB: 5A1W (Dodonova et al., 2015), COPII PDB: 6ZL0 (Hutchings et al., 2021), apoptosome PDB: 5JUY (Cheng et al., 2016), anaphase promoting complex PDB: 5G05 (Zhang et al., 2016), elongator complex PDB: 5CQR (Xu et al., 2015), nuclear pore complex PDB: 7WB4 (Huang et al., 2022).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81977/elife-81977-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** IFT121, IFT122, IFT140, and IFT144 were individually searched against AlphaFold-predicted human protein structures (Tunyasuvunakool et al., 2021) using DALI (Holm and Rosenström, 2010) to identify other proteins that are structurally similar and share domain architectures.
 
 The dominant IFT-A subunit domain structure is two WD40 heads and a TPR tail. Because this domain architecture is so prevalent in the IFT-A complex, we were curious about its representation in the human proteome. We investigated the interactions formed between proteins with the same domain architecture. Sequence-based alignment has traditionally been highly successful in identifying proteins with homologous domains; however, AlphaFold2 has recently enabled new approaches to identify more distantly related homologs that nonetheless retain structural similarity. AlphaFold2 has been used to create databases of proteome-wide structure predictions (Varadi et al., 2022), enabling the identification of proteins with similar architectures that are dissimilar in sequence. With this resource now available, an entire proteome can serve as the target of structural similarity searches for discovery of distant homologs, such as by using the program Dali (Holm and Rosenström, 2010; Bayly-Jones and Whisstock, 2021). We used this approach to compare the four IFT-A proteins sharing the canonical WD40/TPR domain architecture to the set of human proteins with AlphaFold2-predicted structures and found the set of proteins with related structures (Figure 6—figure supplement 1). All contained a TPR tail and at least one WD40 head domain.
 
@@ -106,7 +225,7 @@ Analysis of these structurally similar proteins reveals they are generally membe
 
 In addition to overall structural similarity, the interactions among TPR tail domains of these proteins are similar to those of IFT-A (Figure 6). This is not surprising given the reported role of TPR domains in stabilizing intracomplex interactions (Grove et al., 2008). The recurring interaction between TPR domains raises the question of the role of the associated WD40 domains in these protein complexes. In clathrin, another complex identified in our search, the WD40 domains are known to selectively bind unique cargo peptides in vesicular transport (ter Haar et al., 2000). A similar function to this was previously suggested for the WD40 domains in IFT-A and the BBSome (Bhogaraju et al., 2013b). We hypothesize that the WD40 domains in these TPR-containing proteins may be specialized for participating in transient interactions such as the binding of cargo proteins and that this role may prove useful for explaining the position of the domains towards the exterior of the complex as well as the range of phenotypes associated with IFT-based diseases.
 
-## Human disease mutations of the IFT-A complex
+### Human disease mutations of the IFT-A complex
 
 Variants in the human genes encoding IFT-A subunits are linked to diverse ciliopathies (Waters and Beales, 2011), and we examined our IFT-A structure to shed new light on the molecular basis of IFT-A associated diseases. Both the evolutionary history of the IFT-A protein domains (Grove et al., 2008) and our new model suggest that the stable formation of the IFT-A complex is mediated by interactions of the TPR domains. While we observe some disease-associated variants occurring within the TPR domains, the large majority of known disease-associated variants (79%) (Hamosh et al., 2005; Landrum et al., 2014) are located within the WD40 regions (Figure 7). This suggests that the variants located on the WD40 domains act by disrupting the association of important cargo proteins rather than by disrupting overall IFT-A complex formation. This idea is consistent with the proposal that the WD-repeat domains provide large surface areas for potential binding, allowing these domains to simultaneously bind several distinct cargo proteins (Li and Roberts, 2001). To explore these ideas, we integrated the known genetics and cell biology of a subset of IFT-A related ciliopathy variants with our new structure of the IFT-A complex (Figure 8).
 
@@ -124,11 +243,11 @@ Likewise, loss of IFT122 results in ciliogenesis defects (Takahara et al., 2018)
 
 The L795P variant in the peripheral component IFT139 is also interesting, as this allele lies in the TPR domain near the protein’s interface with IFT121 (Figure 8E). The localization of this variant seems normal (Davis et al., 2011), yet functional assays in both zebrafish and C. elegans demonstrate that the allele is pathogenic suggesting a biochemical perturbation (Davis et al., 2011; Niwa, 2016). Our model suggests that this allele’s pathogenicity may be exerted by disrupting interaction with IFT121 (Figure 8E). Thus, our molecular model of the IFT-A complex provides insights into the molecular basis of IFT-A related human ciliopathies.
 
-## Comparison with two independently determined IFT-A structures
+### Comparison with two independently determined IFT-A structures
 
 Concurrently with our initial preprint (McCafferty et al., 2022a), two additional structures were reported for IFT-A particles from other species and determined using different techniques, one for the reconstituted human IFT-A particle determined by single particle cryo-EM (Hesketh et al., 2022) and one of the Chlamydomonas IFT-A/IFT-B train reconstructed from an 18 Å cryo-ET subtomogram average (Lacey et al., 2022). Because our structural constraints–the chemical cross-links and the co-evolutionary couplings incorporated into AlphaFold2–likely represent a combination of IFT-A in the anterograde and retrograde forms, we were interested to compare our model to these contemporaneous structures. While a full comparison will have to await release of atomic coordinates, an initial inspection (Figure 4—figure supplement 2) indicates that all three structures are highly concordant in the reasonably compact region of IFT-A defined by the WD40 domains of IFT121/122 and their interactions with IFT139. While IFT43 is absent from Lacey et al., 2022 and generally highly disordered, our model agrees well with that of Hesketh et al. for the positions of its more ordered segments. Finally, all three IFT-A polymer models appear to agree substantially with regard to the general orientation and placement of the IFT122 extended TPR domain, and to the IFT140-mediated monomer-monomer interactions, placing the N-terminus of IFT140 from one monomer to interact with the C-terminus of an adjacent IFT140 protein. This concordance is especially notable in light of the different experimental techniques employed by each group and provides some degree of confidence that the structures faithfully capture representative IFT-A conformations. The fact that the combination of cross-linking mass-spectrometry, AlphaFold-Multimer, and integrative modeling produced a highly concordant structure with the significantly higher resolution single particle cryo-EM reconstruction (Hesketh et al., 2022) also suggests that such a readily accessible combined modeling approach might be broadly suitable for many other protein complexes.
 
-## Limitations arising from integrative modeling and alternative conformations
+### Limitations arising from integrative modeling and alternative conformations
 
 A consideration of IFT-A’s biological role in ciliary cargo transport is essential in interpreting our model. It has been previously observed that when the IFT trains (including IFT-A, IFT-B, and the BBsome) reach the ciliary tip, a structural rearrangement occurs where kinesin dissociates from the complex and the dynein motors power the retrograde movement (Chien et al., 2017). The extent of the rearrangement for the IFT-A complex is not known. However, because our data were derived from IFT complexes solubilized from intact cilia, they should inform models of IFT in both directions. The subtomogram average that we have used in our polymeric model represents the anterograde arrangement and while the retrograde arrangement is not known, it was shown to differ in morphology from the anterograde arrangement (Stepanek and Pigino, 2016). It is important to remember that our results represent an ensemble of models that best satisfy the input data, and that some cross-link violations remain for our model (Figure 2—figure supplement 4). These remaining violations may point to a possible structural rearrangement in IFT-A proteins during the transition from anterograde to retrograde IFT.
 
@@ -138,19 +257,155 @@ For example, in our monomeric integrative model of the IFT-A complex, we observe
 
 ## Methods
 
-## Tetrahymena culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT43</td>
+      <td>Uniprot</td>
+      <td>Q22NF5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT121</td>
+      <td>Uniprot</td>
+      <td>Q22U89</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT122</td>
+      <td>Uniprot</td>
+      <td>Q244W3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT139</td>
+      <td>Uniprot</td>
+      <td>I7MFN3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT140</td>
+      <td>Uniprot</td>
+      <td>I7LVZ7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Tetrahymena thermophila)</td>
+      <td>IFT144</td>
+      <td>Uniprot</td>
+      <td>Q22BP2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Tetrahymena thermophila)</td>
+      <td>SB715</td>
+      <td>Tetrahymena Stock Center (Cornell University, Ithaca, NY)</td>
+      <td>SB715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Modeling Platform (IMP) software</td>
+      <td>https://github.com/salilab/imp</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold2 software</td>
+      <td>Colab version (https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold-Multimer</td>
+      <td>https://github.com/deepmind/alphafold</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Namdinator</td>
+      <td>https://namdinator.au.dk/namdinator/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>https://bio3d.colorado.edu/SerialEM/download.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>K2Align</td>
+      <td>https://github.com/dtegunov/k2align</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>https://bio3d.colorado.edu/imod/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/download.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DigitalMicrograph</td>
+      <td>https://www.gatan.com/products/tem-analysis/gatan-microscopy-suite-software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tetrahymena culture
 
 Tetrahymena thermophila SB715 were obtained from the Tetrahymena Stock Center (Cornell University, Ithaca, NY) and grown in Modified Neff medium obtained from the stock center. Cells were routinely maintained at room temperature (~21 ° C) in 10 ml cultures and were expanded to 3 liters at 30 °C with shaking (100 rpm) for preparation of cilia.
 
-## Tetrahymena membrane and matrix preparation
+### Tetrahymena membrane and matrix preparation
 
 Cilia extracts were made as outlined in Gaertig et al., 2013. Briefly, cilia were released by either pH shock or dibucaine treatment and recovered by centrifugation. For cross-linking experiments, cilia were extracted with 1% NP40 in HEPES-Cilia Wash Buffer (H-CWB, where 50 mM HEPES pH 7.4 was used in place of the 50 mM Tris to ensure compatibility with DSSO, and 0.1 mM PMSF was added.) Axonemes were removed by centrifugation at 10,000 x g, 10 min 4 °C. Protein concentration of the soluble membrane and matrix fraction (M+M) was determined by DC BioRad Assay.
 
-## Tetrahymena IFT-A sample preparation
+### Tetrahymena IFT-A sample preparation
 
 Two types of IFT-A-containing samples were generated: (1) IFT-A enriched fractions from preparative-scale SEC separations, or (2) IFT-A-containing ion exchange chromatography (IEX) fractions. Preparative scale SEC fractionation began with 2.8 mg M+M extract in 2 ml H-CWB. Separation was on a HiLoad 16/600 Superdex 200 PG (preparative grade) column (Cytiva) at a flow rate of 1 ml/min, mobile phase 50 mM HEPES, pH 7.4, 50 mM NaCl, 3 mM MgSO4, 0.1 mM EGTA. 1.5 ml fractions were collected and analyzed by mass spectrometry to confirm the IFT-A elution peak (fractions 16–18, as initially identified from analyses of Tetrahymena whole cell extract, corresponding to monomeric IFT-A; see Figure 1—figure supplement 2). Molecular mass of eluted IFT-A was estimated using a commercial mixture of molecular weight markers (Sigma-Aldrich #MWGF1000) run under the same conditions (Blue Dextran (approximate molecular mass ~2000 kDa), bovine thyroglobulin, horse spleen apoferritin, bovine serum albumin, and yeast alcohol dehydrogenase) in combination with eight well-characterized protein complexes of known or inferred molecular mass that were observed in the separations of Tetrahymena whole cell extract run under the same conditions. For sample preparation, IFT-A containing fractions from two identical sequential separations were pooled; IFT-A and B were estimated by mass spectrometry to each comprise approximately 3% of the sample. Membrane contamination was removed by centrifugation 100,000 x g 1.25 hours 4 °C in an NVT65.2 rotor (Beckman Coulter). The clarified supernatant was concentrated to 50 µl by ultrafiltration (Sartorius Vivaspin Turbo, 100,000 MWCO) according to manufacturer’s instructions. The second set of samples was generated from 1.5 mg of cilia M+M subjected to ultrafiltration (Amicon Ultra Ultracel 10 k NMWL, #UFC501096) to adjust salt and concentrate protein for fractionation using a mixed-bed ion exchange column (PolyLC Inc, #204CTWX0510) with a Dionex UltiMate3000 HPLC system. The chromatographic method was performed as in McWhite et al., 2021, but with 10 mM HEPES pH 7.4 replacing Tris in both Buffers A and B.
 
-## Chemical cross-linking / mass spectrometry
+### Chemical cross-linking / mass spectrometry
 
 Crosslinking was performed on both samples described above: (1) IFT-A enriched SEC fractions and (2) IFT-A-containing IEX fractions. The first sample (representing approx. 40 μg of protein) was cross-linked by addition of DSSO (freshly made 50 mM stock in anhydrous DMSO) to 5 mM final concentration. After 1 hr at room temperature crosslinking was quenched by addition of 1 M Tris pH 8.0–20 mM for 25 min at room temperature. Peptides were reduced, alkylated, digested with trypsin, and desalted using C18 spin tips (Thermo Scientific HyperSep SpinTip P-20 BioBasic # 60109–412) as in Havugimana et al., 2012 with the exception that reduction was accomplished with 5.0 mM TCEP (Thermo Scientific #77720) instead of DTT. To enrich for cross-linked peptides, the desalted peptides were dried and resuspended in 25 µl 30% Acetonitrile, 0.1% TFA, and separated on a GE Superdex 30 Increase 3.2/300 size exclusion column (Cytiva) at 50 µl/min flow rate using an ÄKTA Pure 25 FPLC chromatography system (Cytiva). A total of 100 µl fractions were collected, dried, and resuspended in 5% acetonitrile, 0.1% formic acid for mass spectrometry.
 
@@ -160,44 +415,44 @@ Mass spectra were collected on a Thermo Orbitrap Fusion Lumos tribrid mass spect
 
 To identify DSSO cross-links, spectra were collected as follows: peptides were resolved using a 115 min 3–42% acetonitrile gradient in 0.1% formic acid. The top speed method collected full precursor ion scans (MS1) in the Orbitrap at 120,000 m/z resolution for peptides of charge 4–8 and with dynamic exclusion of 60 s after selecting once, and a cycle time of 5 sec. CID dissociation (25% energy 10 msec) of the cross-linker was followed by MS2 scans collected in the orbitrap at 30,000 m/z resolution for charge states 2–6 using an isolation window of 1.6. Peptide pairs with a targeted mass difference of 31.9721 were selected for HCD (30% energy) and collection of rapid scan rate centroid MS3 spectra in the ion trap. Data were analyzed using the XlinkX node of Proteome Discoverer 2.3 and the XlinkX_Cleavable processing and consensus workflows (Liu et al., 2017) and results exported to xiView (Graham et al., 2019) for visualization.
 
-## Chlamydomonas cell culture
+### Chlamydomonas cell culture
 
 Chlamydomonas wild-type cells (CC-124 mt- and CC-125 mt+) were obtained from the Chlamydomonas resource center (https://www.chlamycollection.org); ift46-1::IFT46-YFP was a gift of K. Huang and G. Witman (Lv et al., 2017). Cells were cultured in TAP (Tris-Acetate-Phosphate) medium as described by the resource center. For long-term storage, cells were grown on TAP plates with 1.5% agar at room-temperature. For sample preparation, fresh liquid cultures of 300 mL were grown for three to four days at 22 °C under a light-dark cycle with constant aeration.
 
-## Preparation of cryo-TEM grids by plunge freezing
+### Preparation of cryo-TEM grids by plunge freezing
 
 TEM gold grids with Holey Carbon support film (Quantifoil Micro Tools GmbH, Au 200 mesh R3.5/1) were glow-discharged in a plasma cleaner (Diener electronic GmbH, Femto). For plunge freezing, a Leica EM Grid Plunger (GP) was used at 18 °C and a humidity of ~80%. 3 µL undiluted Chlamydomonas cells were applied to the grid and mixed with 1 µL 10 nm colloidal gold particles (BBI solutions). Blotting was performed from the back for 1 s and the grid was plunged into liquid ethane at –182 °C and stored in liquid nitrogen until data acquisition.
 
-## Cryo-ET data acquisition
+### Cryo-ET data acquisition
 
 For data acquisition, a Thermo Fisher (former FEI) Titan Halo cryo-TEM was used, equipped with a field emission gun (FEG), operating at 300 kV. Images were recorded on a K2 summit direct electron detector (Gatan) with an energy filter (GIF, Gatan image filter). Digital Micrograph software (Gatan) was used to tune the GIF, and SerialEM software (Mastronarde, 2005) was employed for the automated acquisition of tomographic tilt series in low-dose mode. Tilt series were acquired at a magnification of 30,000 X with a pixel size of 0.236 nm in super-resolution mode of the K2 camera. The tilting scheme was bidirectional with a starting angle of –20° and maximal tilt angles of ±64° when possible. Images were acquired every 2 degrees. The defocus range was between –3 and –6 µm, the slit width of the energy filter was 20 eV. Each tomogram had a cumulative dose between 100 and 140 e–/Å2 with an image dose of 1.8–2.1 e–/Å2. Exposure times were between 1.6 and 2.5 s per image, while each 10 frames were acquired. The sample drift was held well below 1 nm/s, and 34 grids were imaged in all. Data collection and refinement statistics are summarized in Table 1.
 
-## Tomographic reconstruction
+### Tomographic reconstruction
 
 Frame alignment was done with K2Align (provided by the Baumeister group, MPI for Biochemistry, Munich), which is based on the MotionCorr algorithm (Li et al., 2013). Tomograms were reconstructed with Etomo from IMOD (Kremer et al., 1996), using fiducial markers for alignment. CTF curves were estimated with CTFPLOTTER and the data were corrected by phase-flipping with CTFPHASEFLIP, both implemented in IMOD (Xiong et al., 2009). Dose weight filtration was applied (Grant and Grigorieff, 2015) and tomograms were reconstructed by weighted back-projection and subsequently binned by 3 and 6, resulting in pixel sizes of 0.708 nm and 1.413 nm.
 
-## Subtomogram averaging
+### Subtomogram averaging
 
 IFT-A particles were picked and averaged as described in detail previously (Jordan and Pigino, 2019). The data from wild-type cells (CC-124 and CC-125) was complemented with data from IFT46-YFP cells, which showed no differences in their IFT-A structure compared to wild-type. In short, subtomogram averaging was performed with PEET version 1.11.0 from the IMOD package (Heumann et al., 2011). Particles were picked with 11 nm spacing and pre-aligned to a reference generated from particles of one train on bin6 tomograms. The alignment was then refined on bin3 tomograms. To reduce the influence of IFT-B or the membrane, loose binary masks were applied to the reference. The final average was calculated from 9,350 particles derived from 96 tomograms. The resolution was estimated to 2.3 nm by Fourier shell correlation, using a cut-off criterion of 0.5. A reconstruction of the whole IFT-A polymer was generated in UCSF Chimera by placing several copies of one IFT-A unit along the train polymer with 'Fit in map' and merged with 'vop maximum'.
 
-## Modeling of IFT-A protein subunits and pairwise interactions
+### Modeling of IFT-A protein subunits and pairwise interactions
 
 The IFT-A complex is composed of IFT43, IFT121, IFT122, IFT139, IFT140, and IFT144. Each subunit was modeled independently using the ColabFold notebook (Mirdita et al., 2022) with AlphaFold2 (Jumper et al., 2021). Modeling results and statistics show that confident structures were generated for five of the six protein subunits (Figure 1—figure supplement 1). Pairwise interacting protein structures were predicted using the 2.1.2 version/release of AlphaFold-Multimer (Evans et al., 2021) as implemented on Texas Advanced Computing Center (TACC) Maverick2 and Frontera (Stanzione et al., 2020) GPU computer clusters. Predicted aligned error (PAE) plots were used as in McCafferty et al., 2022b to determine interaction interfaces to be represented as rigid bodies in integrative modeling. We use the calibration curve from our previous studies to select pairwise interactions with PAE of less than 3.5 Å.
 
-## Domain representation and spatial restraint configuration
+### Domain representation and spatial restraint configuration
 
 We used the Python modeling interface of the Integrative Modeling Platform (Webb et al., 2018) to model the IFT-A complex, performing the modeling in four stages: (1) gathering data, (2) domain and spatial restraint representation, (3) system restraint and restraint scoring, and (4) model validation (Saltzberg et al., 2019; Russel et al., 2012; Ganesan et al., 2020). Because there are no available crystal structures for any of the IFT-A subunits, we used AlphaFold2 structural models to construct representations of each of the subunits. IFT139 has a long alpha solenoid domain structure, which was independently supported by 18 cross-links, and it was represented as two rigid bodies. In contrast, IFT43, with its more poorly defined structure, was represented as two alpha helices connected by a flexible string of 1 Å beads. IFT121, IFT122, IFT140, and IFT144 share a similar domain architecture of two WDR domains and an alpha solenoid tail domain. All four of these proteins were represented as chains of rigid bodies that corresponded to regions of high AlphaFold2 confidence scores (high pLDDT scores). For pairs of IFT-A proteins, we used PAE estimated errors (Figure 2—figure supplement 1) to determine boundaries of rigid body interactions between pairs of IFT-A proteins predicted by AlphaFold-Multimer to interact. The initial model was built from combining the pairwise AlphaFold-Multimer structure predictions into a consensus model, thus preserving the arrangements of predicted interfaces (Figure 2—figure supplement 2 and Figure 2—figure supplement 4).
 
 In total, we considered 98 inter- and intramolecular cross-links, representing the combined cross-linking evidence from two alternative IFT-A enrichment procedures. Cross-links were modeled in IMP using a length of 21 Å as in Erzberger et al., 2014. An excluded volume restraint was incorporated to 10 residue beads ensuring that two volumes do not occupy the same space, and a connectivity restraint was applied between beads to ensure that consecutive protein segments remained nearby in 3D space. The full set of restraints was used in creating the scoring framework for the model, and all relevant data and scripts are available on the Zenodo repository.
 
-## System sampling, scoring of restraints, and initial model validation
+### System sampling, scoring of restraints, and initial model validation
 
 The 10 rigid bodies were randomized into their initial configurations. A steep gradient descent minimization based on connectivity was used to ensure that neighboring residues were close to each other before Monte Carlo sampling. We then performed 20 independent runs of Monte Carlo sampling, each run starting from a unique initialization configuration and sampling 10,000 frames, thus sampling 200,000 total configurations. Ensembles of models were then clustered first based on cross-linking agreement, sequence connectivity, enclosed volume, and total score. We selected the cluster with models from multiple runs showing high agreement with the cross-linking data and high overall scores for subsequent analyses. The top cluster was assessed against the input data and tested for convergence using the sampling exhaustiveness protocol (Viswanath et al., 2017).
 
-## Docking and polymer modeling
+### Docking and polymer modeling
 
 Our integrative IFT-A monomer model was rigidly docked into the IFT-A train using the ChimeraX fit in map tool (Goddard et al., 2018). Rigidly docking the model placed 54% of the atoms within the map. IFT43, IFT121, IFT139, and the C-terminus of IFT122 subcomplex fit better into the subtomogram average with 67% of the atoms within the map. The remainder of the IFT-A integrative model was fit into the map by successive rounds of breaking the structures and refining their fit using Namdinator (Kidmose et al., 2019). The final flexibly fit structure places 71% of all atoms within the map.
 
-## Data deposition
+### Data deposition
 
 Mass spectrometry proteomics data was deposited in the MassIVE/ProteomeXchange database (Deutsch et al., 2020) under accession number PXD032818. Cryo-tomography data was deposited in the Electron Microscopy Data Bank (Patwardhan, 2017) under accession number EMD-26791. IFT-A models were deposited in the PDB-Dev database (Burley et al., 2017) as well as on Zenodo at doi: 10.5281/zenodo.7222413, along with additional supporting materials, including integrative modeling data and code.

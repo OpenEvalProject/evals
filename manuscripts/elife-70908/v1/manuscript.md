@@ -33,7 +33,7 @@ It has been reported that hearing loss causes a cascade of changes in the main a
 
 ## Results
 
-## Noise exposure induces hearing loss in both 3×Tg-AD and wild-type mice
+### Noise exposure induces hearing loss in both 3×Tg-AD and wild-type mice
 
 Our first step was to characterize hearing loss induced by noise at different time points in both 3×Tg-AD and wild-type (WT) mice. Thereinafter mice exposed to noise will be referred to as ‘AD-NE’ and ‘WT-NE’, whereas normal hearing mice not subjected to noise as ‘AD-NN’ and ‘WT-NN’. Animals were exposed to noise at 2 months of age (M) and subsequently analyzed at 3 M (corresponding to 1 month after noise exposure) and at 6 M (corresponding to 4 months after noise exposure). Experimental design and protocol timeline of experiments are summarized in Figure 1.
 
@@ -45,15 +45,27 @@ The hearing loss was evaluated by auditory brainstem recording (ABR) threshold m
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig2-v1.jpg)
 
-**Figure 2.:** (A–B) Graphs show ABR averaged threshold values (± SEM) measured in not-exposed (NN) and noise-exposed (NE) wild-type (WT) and in Alzheimer’s disease (AD) mice. Auditory thresholds were similar in WT-NN and AD-NN mice at both 3 (A) and 6 (D) months of age (WT-NN 3 M n = 11; AD-NN 3 M n = 12; WT-NN 6 M n = 9; AD-NN 6 M n = 13). Repeated noise exposure induced a threshold elevation of about 30–40 dB after 1 month from the onset of trauma sessions in both strains (WT-NE 3 M n = 8; AD-NE 3 M n = 7; three-way ANOVA, Tukey’s post hoc test, WT-NE vs. WT-NN, p = 0.0001; AD-NE vs. AD-NN, p = 0.0002) and no recovery in threshold and threshold shift values was observed 4 months after noise exposure, corresponding to 6 M, compared with age-matched not-exposed animals (WT-NE 6 M n = 7; AD-NE 6 M n = 11; three-way ANOVA, Tukey’s post hoc test, WT-NN vs. WT-NE, p = 0.017; AD-NN vs. AD-NE, p = 0.003). (C–D) Graphs show Wave I (C) and II (D) latency-intensity functions across animals of 3 M in response to 16 kHz tone bursts (WT-NN n = 8; AD-NN n = 10; WT-NE n = 7; AD-NE n = 7). Asterisks indicate significant differences between groups (*p < 0.05; ***p < 0.001).Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A–B) Graphs show ABR averaged threshold values (± SEM) measured in not-exposed (NN) and noise-exposed (NE) wild-type (WT) and in Alzheimer’s disease (AD) mice. Auditory thresholds were similar in WT-NN and AD-NN mice at both 3 (A) and 6 (D) months of age (WT-NN 3 M n = 11; AD-NN 3 M n = 12; WT-NN 6 M n = 9; AD-NN 6 M n = 13). Repeated noise exposure induced a threshold elevation of about 30–40 dB after 1 month from the onset of trauma sessions in both strains (WT-NE 3 M n = 8; AD-NE 3 M n = 7; three-way ANOVA, Tukey’s post hoc test, WT-NE vs. WT-NN, p = 0.0001; AD-NE vs. AD-NN, p = 0.0002) and no recovery in threshold and threshold shift values was observed 4 months after noise exposure, corresponding to 6 M, compared with age-matched not-exposed animals (WT-NE 6 M n = 7; AD-NE 6 M n = 11; three-way ANOVA, Tukey’s post hoc test, WT-NN vs. WT-NE, p = 0.017; AD-NN vs. AD-NE, p = 0.003). (C–D) Graphs show Wave I (C) and II (D) latency-intensity functions across animals of 3 M in response to 16 kHz tone bursts (WT-NN n = 8; AD-NN n = 10; WT-NE n = 7; AD-NE n = 7). Asterisks indicate significant differences between groups (*p < 0.05; ***p < 0.001).
 
 Analysis of latency-intensity curves showed that noise exposure significantly increased latency of ABR Waves I and II at different intensities (Figure 2C–D; WT- NN n = 8, AD-NN n = 10; WT-NE n = 7, AD-NE n = 7; Student’s t-test) in both WT and 3×Tg-AD mice. These findings suggest that noise exposure induced an impairment of the number of neural unit firing.
 
 Collectively, these data indicate that noise exposure can induce a hearing loss that persists over time and similarly affects cochlear function in both 3×Tg-AD and WT mice.
 
-## Synaptic function and spine density in neurons of layer II/III of ACx are most severely affected by hearing loss in 3×Tg-AD mice
+### Synaptic function and spine density in neurons of layer II/III of ACx are most severely affected by hearing loss in 3×Tg-AD mice
 
 In order to evaluate the effect of sensory deprivation induced by noise exposure in the ACx, we studied field excitatory post-synaptic potentials (fEPSPs) in ACx layer II/III following stimulation of local connections in both 3×Tg-AD and WT mice 1 and 4 months after acoustic trauma, to assess early and long-lasting changes related to cochlear damage, respectively. As expected on the basis of our previous findings (Paciello et al., 2018), 1 month after the onset of trauma sessions, comparison of the input/output (I/O) curves, obtained by plotting EPSP amplitude against stimulus intensities, showed that fEPSPs were significantly smaller in animals subjected to noise compared to those not exposed, with similar results in WT (Figure 3A; n = 17 slices from three WT-NE and n = 11 slices from five WT-NN; two-way ANOVA, Tukey’s post hoc test, F(1,126) = 59.5, p < 0.001) and 3×Tg-AD mice (Figure 3B; n = 13 slices from five AD-NE and n = 15 slices from six AD-NN; two-way ANOVA, Tukey’s post hoc test, F(1,126) = 15.302, p < 0.001).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Field excitatory post-synaptic potential (fEPSP) amplitude following stimulation of afferent fibers in ACx layer II/III at increasing intensities are shown for slices obtained from 3 months of age (M) not-exposed (NN) and noise-exposed (NE) wild-type (WT) (A) and 3×Tg-AD mice (B). Statistical analysis by two-way ANOVA followed by Tukey’s post hoc revealed significant differences between not-exposed (WT n = 11 slices from mice; AD n = 15 slices from six mice) and noise-exposed (WT n = 17 slices from three mice; AD n = 13 slices from five mice) groups of both strains (WT-NN vs. WT-NE, p < 0.001; AD-NN vs. AD-NE, p < 0.001). (C,D) fEPSP amplitude normalized to mean values obtained in 6 M WT-NN and AD-NN at 300 μA, taken as 100% (C; WT-NN n = 21 slices from seven mice; WT-NE n = 20 slices from eight mice; D, AD-NN n = 12 slices from five mice; AD-NE n = 14 slices from five mice). Statistical analysis by two-way ANOVA revealed significant differences between AD-NN and AD-NE groups (p = 0.001). (E) Representative Western immunoblot revealing decreased pGluA1Ser845 in the ACx of AD mice exposed to noise (6 M) compared with age-matched not-exposed group. Bar graph shows results of densitometric analyses on all samples (n = 4 mice for each group; Student’s t-test, p = 0.071 WT-NE vs. WT-NN; p = 0.0001 AD-NE vs. AD-NN) normalized to the corresponding total protein levels (GluA1). Data are expressed as mean ± SEM. Asterisks indicate significant differences between groups (*p < 0.05; **p < 0.01;***p < 0.001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Data are expressed as mean ± SEM. Asterisks indicate significant differences between groups by two-way ANOVA (*p < 0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Bar graph shows results of densitometric analyses (O.D.) on all samples (n = 4 mice for each group; Student’s t-test, p = 0.77 WT-NE vs. WT-NN; p = 0.79 AD-NE vs. AD-NN) normalized to the corresponding total protein levels (GluA1). Data are expressed as mean ± SEM.
 
 Interestingly, at 6 M, no significant differences between WT-NN and WT-NE animals (Figure 3C; n = 20 slices from eight WT-NE and n = 21 slices from seven WT-NN mice; two-way ANOVA, Tukey’s post hoc test, F(1,117) = 0.084, p = 0.773) were observed. Conversely, at 6 M, decreased response (of about 30%) was found in AD-NE compared to age-matched not-exposed animals (Figure 3D and Figure 3—figure supplement 1; n = 14 slices from five AD-NE and n = 12 slices from five AD-NN mice; two-way ANOVA, Tukey’s post hoc test, F(1,72) = 12.53, p < 0.001), suggesting that in this mouse strain auditory cortex was most severely affected by noise.
 
@@ -61,9 +73,17 @@ To further assess the effect of hearing loss on glutamatergic transmission, phos
 
 The effect of noise exposure on glutamatergic synapses was also evaluated at structural level by analyzing spine density in pyramidal neurons of ACx layer II/III. Consistent with our previous studies (Fetoni et al., 2015; Paciello et al., 2018), 1 month after noise exposure, the number of spines in apical and basal dendrites in both WT and 3× Tg AD animals was significantly reduced (Figure 4—figure supplement 1). In line with functional evaluations, analysis at the subsequent time point (i.e., 4 months after noise exposure) showed a decreased spine density in both apical and basal dendrites in neurons of 6 M AD-NE mice compared with age-matched AD-NN animals (Figure 4B and D; two-way ANOVA, Tukey’s post hoc test, F(1,142) = 6.94, apical dendrites, n = 36 neurons from four AD-NN animals, n = 38 neurons from four AD-NE animals, p = 0.011; basal dendrites, n = 32 neurons from four AD-NN animals, n = 32 neurons from four AD-NE animals, p = 0.012). No significant differences in spine number were, instead, observed when comparing WT-NE and groups (Figure 4A and C; two-way ANOVA, Tukey’s post hoc test, p = 0.88; n = 40 neurons from four WT-NN animals, n = 30 neurons from four WT-NE animals; basal dendrites, p = 0.70; n = 30 neurons from four WT-NN animals, n = 30 neurons from four WT-NE animals). In keeping with these data, Western blot analysis showed significantly lower levels of PSD-95 in ACx of 3×Tg-AD mice and not in WT exposed to noise compared with their respective age-matched not-exposed animals (Figure 4E and F; n = 4 animals/group; Student’s t-test, AD-NE vs. AD-NN mice p = 0.025).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Representative images of apical and basal dendrites of pyramidal neurons of layers II/III in WT-NN and WT-NE groups (left panels, A) and AD-NN and AD-NE groups (right panels, B) at 6 months of age (M). Scale bar: 10 μm. (C–D) Bar graphs showing mean values of spine density in apical and basal dendrites of neurons of layer II/III of the ACx of NN and NE wild-type (WT) (C) and AD mice (D) (n = at least 30 segments from 30 different neurons were analyzed from four animals/groups). The number of spines decreased significantly in AD-NE compared to AD-NN mice both in apical and in basal dendrites (D, two-way ANOVA, Tukey’s post hoc test, apical dendrites p = 0.011; basal dendrites p = 0.012) whereas no differences between WT-NN and WT-NE groups were observed (C, two-way ANOVA, apical dendrites p = 0.88, basal dendrites p = 0.70). (E) Representative Western immunoblot revealing decreased PSD-95 expression in ACx of 6 M AD mice exposed to noise compared with age-matched not-exposed group. (F) Bar graph in the lower panel shows results of densitometric analyses on all samples (n = 4 mice for each group; Student’s t-test, WT-NE vs. WT-NN, p = 0.90; AD-NE vs. AD-NN, p = 0.025) normalized to total protein levels (GAPDH). Data are expressed as mean ± SEM. Asterisks indicate significant differences between groups (*p < 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Bar graphs showing mean values of spine density (mean ± SEM) in apical and basal dendrites of neurons of layer II/III of the ACx of not-exposed (NN) and noise-exposed (NE) WT (A) and AD mice (B) at 3 M (***p < 0.001).
+
 Collectively, these data suggest that 3×Tg-AD mice are most vulnerable to central damage induced by hearing loss as they cannot recover over time functional and morphological alterations induced by sensory deprivation in the ACx.
 
-## Auditory sensory deprivation accelerates hippocampal dysfunction and memory deficits in 3×Tg-AD mice
+### Auditory sensory deprivation accelerates hippocampal dysfunction and memory deficits in 3×Tg-AD mice
 
 Having established the long-lasting detrimental effects of hearing loss on ACx of 3×Tg-AD mice, we asked whether ACx damage impinged on hippocampal function, contributing to cognitive decline. Indeed, several evidences suggest that cortical and cognitive adaptation to the loss of a sensory modality impacts on information processing ability of cortical structures, and this, in turn, compromises the ability of the hippocampus to reliably and effectively encode and store sensory experience (Feldmann et al., 2019; Beckmann et al., 2020).
 
@@ -73,15 +93,113 @@ fEPSPs in the CA1 area were measured after stimulation of Schaffer collaterals a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig5-v1.jpg)
 
-**Figure 5.:** Field excitatory post-synaptic potential (fEPSP) amplitudes following stimulation of the Schaffer collaterals at increasing stimulus intensities in slices obtained from not-exposed and noise-exposed animals of both wild-type (WT) (A) and AD (B) groups at 6 months of age (M). Statistical analysis by two-way ANOVA followed by Tukey’s post hoc revealed significant differences (p = 0.020) between AD-NN (n = 12 slices from four mice) and AD-NE (n = 11 slices from four mice) groups, whereas no significant differences (p = 0.78) were observed between WT-NN (n = 14 slices from seven mice) and WT-NE groups (n = 12 slices from six mice). Data are expressed as mean  ± SEM. Asterisks indicate significant differences between groups (*p < 0.05).Figure 5—source data 1.Figure 5.
+**Figure 5.:** Field excitatory post-synaptic potential (fEPSP) amplitudes following stimulation of the Schaffer collaterals at increasing stimulus intensities in slices obtained from not-exposed and noise-exposed animals of both wild-type (WT) (A) and AD (B) groups at 6 months of age (M). Statistical analysis by two-way ANOVA followed by Tukey’s post hoc revealed significant differences (p = 0.020) between AD-NN (n = 12 slices from four mice) and AD-NE (n = 11 slices from four mice) groups, whereas no significant differences (p = 0.78) were observed between WT-NN (n = 14 slices from seven mice) and WT-NE groups (n = 12 slices from six mice). Data are expressed as mean  ± SEM. Asterisks indicate significant differences between groups (*p < 0.05).
 
 In line with functional data, morphological analyses showed a significant decrease of spine density in CA1 and dentate gyrus (DG) of the hippocampus in AD-NE mice. As shown in Figure 6, a decreased number of dendritic spines were observed in transgenic mice exposed to noise compared with age-matched not-exposed animals, both in apical and basal dendrites of CA1 pyramidal neurons (Figure 6B and D; two-way ANOVA, Tukey’s post hoc test, F(1,63) = 41.66, apical dendrites, n = 35 neurons from four AD-NN animals, n = 30 neurons from four AD-NE animals, p = 0.0001; basal dendrites, n = 37 neurons from four AD-NN animals, n = 34 neurons from four AD-NE animals, p = 0.0009) and in dendrites of DG granular cells (Figure 6F and H; one-way ANOVA, F(1,63) = 11.51, n = 31 neurons from four AD-NN animals, n = 34 neurons from four AD-NE animals, p = 0.001). No significant differences were observed between noise-exposed and not-exposed mice in the WT group (Figure 6A, C, E and G; CA1, two-way ANOVA, Tukey’s post hoc test, F(1,59) = 0.21, p = 0.64, apical dendrites, n = 41 neurons from four WT-NN animals, n = 30 neurons from four WT-NE animals; basal dendrites, n = 31 neurons from four WT-NN animals, n = 31 neurons from four WT-NE animals; DG, one-way ANOVA F(1,78) = 0.16, p = 0.68, n = 44 neurons from four WT-NN animals, n = 36 neurons from four WT-NE animals). Western blot analysis performed on hippocampal extracts from both 3×Tg-AD and WT animals corroborates this result, showing a significantly lower expression of PSD-95 in 3×Tg-AD animals exposed to noise compared with not-exposed animals (Figure 6I and J; n = 4 animals/group; Student’s t-test, AD-NE vs. AD-NN mice, p = 0.028).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig6-v1.jpg)
 
-**Figure 6.:** (A–B) Representative images of apical and basal dendrites of neurons in the hippocampal CA1 region in WT-NN and WT-NE groups (left panels, A) and in AD-NN and AD-NE groups (right panels, B). Scale bar: 10 μm. (C–D) Bar graphs showing mean values of spine density (mean ± SEM) in apical and basal dendrites of CA1 pyramidal neurons in NN and NE groups from WT (C) and AD mice (D) at 6 months of age (M). At least 30 segments from 30 different neurons were analyzed from four animals/groups. The number of spines decreased significantly in AD-NE compared to AD-NN group (D, two-way ANOVA, Tukey’s post hoc test, apical dendrites p = 0.0001; basal dendrites p = 0.0009) whereas no differences between WT-NN and WT-NE groups were observed (C, two-way ANOVA, Tukey’s post hoc test, p = 0.64). (E–F) Representative images of dentate gyrus (DG) neuron dendrites in WT-NN and WT-NE groups (left panels, E) and AD-NN and AD-NE groups (right panels, F). Scale bar: 10 μm. (G–H) Bar graphs showing mean values of spine density (mean ± SEM) in neurons of DG in NN and NE groups from WT mice (G) and AD mice (H) at 6 M. The number of spines decreased significantly in AD-NE compared to AD-NN mice (H, one-way ANOVA, p = 0.001) whereas no differences between WT-NN and WT-NE groups were observed (G, one-way ANOVA, p = 0.68). (I) Representative Western immunoblot revealing decreased PSD-95 expression in the hippocampus of AD exposed to noise (6 M) compared with age-matched not-exposed group. (J) Bar graph in the lower panel shows results of densitometric analyses on all samples (n = 4 mice for each group; Student’s t-test, WT-NE vs. WT-NN, p = 0.30; AD-NE vs. AD-NN, p = 0.028) normalized to total protein levels (α-tubulin). Data are expressed as mean ± SEM. Asterisks indicate significant differences between groups (*p < 0.05; **p < 0.01; ***p < 0.001).Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A–B) Representative images of apical and basal dendrites of neurons in the hippocampal CA1 region in WT-NN and WT-NE groups (left panels, A) and in AD-NN and AD-NE groups (right panels, B). Scale bar: 10 μm. (C–D) Bar graphs showing mean values of spine density (mean ± SEM) in apical and basal dendrites of CA1 pyramidal neurons in NN and NE groups from WT (C) and AD mice (D) at 6 months of age (M). At least 30 segments from 30 different neurons were analyzed from four animals/groups. The number of spines decreased significantly in AD-NE compared to AD-NN group (D, two-way ANOVA, Tukey’s post hoc test, apical dendrites p = 0.0001; basal dendrites p = 0.0009) whereas no differences between WT-NN and WT-NE groups were observed (C, two-way ANOVA, Tukey’s post hoc test, p = 0.64). (E–F) Representative images of dentate gyrus (DG) neuron dendrites in WT-NN and WT-NE groups (left panels, E) and AD-NN and AD-NE groups (right panels, F). Scale bar: 10 μm. (G–H) Bar graphs showing mean values of spine density (mean ± SEM) in neurons of DG in NN and NE groups from WT mice (G) and AD mice (H) at 6 M. The number of spines decreased significantly in AD-NE compared to AD-NN mice (H, one-way ANOVA, p = 0.001) whereas no differences between WT-NN and WT-NE groups were observed (G, one-way ANOVA, p = 0.68). (I) Representative Western immunoblot revealing decreased PSD-95 expression in the hippocampus of AD exposed to noise (6 M) compared with age-matched not-exposed group. (J) Bar graph in the lower panel shows results of densitometric analyses on all samples (n = 4 mice for each group; Student’s t-test, WT-NE vs. WT-NN, p = 0.30; AD-NE vs. AD-NN, p = 0.028) normalized to total protein levels (α-tubulin). Data are expressed as mean ± SEM. Asterisks indicate significant differences between groups (*p < 0.05; **p < 0.01; ***p < 0.001).
 
 We next ascertained whether these functional and morphological alterations were associated to deficits in hippocampal-dependent memory, assessed by the novel object recognition (NOR) test, evaluating short-term (STM) and long-term memory (LTM). The NOR test is a widely used behavioral paradigm for the assessment of object-recognition memory, in which an animal has to discriminate a novel from an old object. In a first phase of the test, the animal is allowed to explore two objects and then, after a certain time interval, one of the objects is changed with a novel one. Depending on the time interval between the two sessions, it is possible to evaluate STM or LTM. Changes in the exploration time of the new and the old object are indicative of recognition memory, which depends on temporal lobe activity, specifically on the hippocampus (Ennaceur and De Souza Silva, 2018). We found that, at 3 M, 3×Tg-AD and WT mice exposed to noise did not exhibit any impairment in recognition memory compared to age-matched not-exposed animals (Figure 7A and C; Table 1). In particular, preference index was comparable in AD-NN and AD-NE groups. Interestingly, at 6 M memory performance was significantly altered in 3×Tg-AD exposed to noise compared with age-matched not-exposed animals, for both LTM and STM evaluations (Figure 7B and D; Table 1). Consistent with functional and morphological evaluations, no significant differences in recognition memory were found in WT animals exposed to noise compared to age-matched not-exposed mice (Figure 7D; Table 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig7-v1.jpg)
+
+**Figure 7.:** Graphs show preference index for the novel object in the novel object recognition (NOR), from both long-term memory (LTM; A,B) and short-term memory (STM; C,D) paradigms in NN and NE groups from wild-type (WT) and AD animals of 3 months of age (M) (A,C; WT-NN STM n = 10, LTM n = 9; WT-NE STM n = 11, LTM n = 10; AD-NN STM n = 8, LTM n = 9; AD-NE STM n = 8, LTM n = 9) and 6 M (B,D; WT-NN STM n = 13, LTM n = 14; WT-NE STM n = 15, LTM n = 15; AD-NN STM n = 14, LTM n = 15; AD-NE STM n = 10, LTM n = 18). Notably, memory performance decreased significantly in AD mice exposed to noise compared to age-matched not-exposed animals at 6 M, for both LTM (two-way ANOVA, Bonferroni post hoc test, p = 0.001) and STM (two-way ANOVA, Bonferroni post hoc test, p < 0.001) evaluations. Data are expressed as mean  ± SEM. Asterisks indicate significant differences among groups (**p < 0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Bar graphs showing mean distance covered (mean ± SEM) in the open field test in WT and AD animals at 3 M (A) and 6 M (B).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–D) Simple linear regression analysis (Statistica, Statsoft) showing the relationship between NOR preference index (STM) and mean ABR threshold across not-exposed (NN) and noise-exposed (NE) wild-type (WT) and Alzheimer’s disease (AD) animals at 6 months of age (M) (WT-NN n = 9; WT-NE n = 7; AD-NN n = 13; AD-NE n = 10). (E–H) Simple linear regression analysis showing the relationship between NOR preference index (STM) and the mean number of spines (calculated as the average of all apical and basal dendritic spines/animal) in neurons of layer II/III of the ACx across NN and NE WT and AD animals at 6 M (n = 4 animals/group).
+
+**Table 1.**
+ Exploration time for novel and familiar objects in both short- and long-term memory.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment</th>
+      <th colspan="2">Short-term memory NOR</th>
+      <th colspan="2">Long-term memory NOR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3 M</td>
+      <td>Novel obj.</td>
+      <td>Familiar obj.</td>
+      <td>Novel obj.</td>
+      <td>Familiar obj.</td>
+    </tr>
+    <tr>
+      <td>WT-NN</td>
+      <td>14 ± 2.1 s</td>
+      <td>8 ± 1.3 s</td>
+      <td>18.8 ± 4.2 s</td>
+      <td>10.3 ± 1.2 s</td>
+    </tr>
+    <tr>
+      <td>WT-NE</td>
+      <td>14.6 ± 1.5 s</td>
+      <td>8.7 ± 1.4 s</td>
+      <td>15.7 ± 3 s</td>
+      <td>8.6 ± 1.3 s</td>
+    </tr>
+    <tr>
+      <td>AD-NN</td>
+      <td>14.1 ± 1.2 s</td>
+      <td>7.6 ± 1.1 s</td>
+      <td>11.4 ± 1.9 s</td>
+      <td>6.8 ± 0.9 s</td>
+    </tr>
+    <tr>
+      <td>AD-NE</td>
+      <td>10.9 ± 1.1 s</td>
+      <td>6.9 ± 1.1 s</td>
+      <td>9.2 ± 0.9 s</td>
+      <td>5.8 ± 0.8 s</td>
+    </tr>
+    <tr>
+      <td>6 M</td>
+      <td>Novel obj.</td>
+      <td>Familiar obj.</td>
+      <td>Novel obj.</td>
+      <td>Familiar obj.</td>
+    </tr>
+    <tr>
+      <td>WT-NN</td>
+      <td>19.7 ± 2.8 s</td>
+      <td>8.7 ± 1.1 s</td>
+      <td>15.2 ± 1.9 s</td>
+      <td>7.3 ± 1 s</td>
+    </tr>
+    <tr>
+      <td>WT-NE</td>
+      <td>16.3 ± 1.9 s</td>
+      <td>7.6 ± 0.9 s</td>
+      <td>17.5 ± 1.5 s</td>
+      <td>10.9 ± 1.5 s</td>
+    </tr>
+    <tr>
+      <td>AD-NN</td>
+      <td>13.1 ± 1.8 s</td>
+      <td>7.7 ± 0.9 s</td>
+      <td>11.4 ± 1.4 s</td>
+      <td>6.3 ± 0.9 s</td>
+    </tr>
+    <tr>
+      <td>AD-NE</td>
+      <td>6.8 ± 0.7 s</td>
+      <td>9.4 ± 1 s</td>
+      <td>7.1. ± 0.7 s</td>
+      <td>7.2 ± 0.5 s</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, differences in memory performance were independent of locomotor activity, as we did not observe any differences between NE and NN mice in total distance traveled (Figure 7—figure supplement 1).
 
@@ -93,7 +211,7 @@ However, of note, we found in AD-NE (n = 4) a significant statistical relationsh
 
 Collectively, our results revealed that sensory deprivation induced by noise exposure affects hippocampal synaptic function, decreases spine density and accelerates memory deficits in 3×Tg-AD model.
 
-## Molecular determinants of hippocampal dysfunction induced by hearing loss
+### Molecular determinants of hippocampal dysfunction induced by hearing loss
 
 Looking for molecular mechanisms underlying hearing loss-associated hippocampal functional and morphological alterations observed in 3×Tg-AD animals at 6 M, we focused on common hallmarks of neurodegenerative disease. Considering that hyperphosphorylation of tau is a well-known marker of neurodegenerative disorders and that tau phosphorylation is one of the earliest cytoskeletal changes in AD and a critical step in the formation of neurofibrillary tangles (Wischik et al., 1988), we evaluated tau phosphorylation at Ser396 (pTauSer396) which has been strongly linked to AD progression (Mondragón-Rodríguez et al., 2014). Our Western blot analysis performed on the hippocampi of 3×Tg-AD and WT mice showed a marked increase of pTauSer396 in 6 M transgenic mice exposed to noise compared with age-matched not-exposed animals (Figure 8A and B; n = 4 animals/group; Student’s t-test, AD-NE vs. AD-NN, p = 0.006), whereas no significant differences were observed between WT-NE and WT-NN groups (Figure 8A and B; n = 4 animals/group; Student’s t-test, WT-NE vs. WT-NN mice p = 0.49).
 
@@ -110,6 +228,14 @@ To further characterize molecular underpinnings of hippocampal dysfunctions, we 
 **Figure 9.:** (A–H) Representative images of brain coronal sections stained with dihydroethidium (DHE) (red fluorescence) showing ROS amount in dentate gyrus (DG) (A–D) and CA1 (E–H) hippocampal regions of both not-exposed and noise-exposed wild-type (WT) and AD mice at 6 months of age (M). Dotted boxes in A–D and E–H refer to high magnifications showed in A1–D1 and E1–H1 respectively. (I–J) Bar graphs showing fluorescence intensity signal quantification in DG (I) and CA1 (J) in all groups. Data are expressed as mean ± SEM and are representative of three independent experiments from three animals/group. Scale bar: 100 µm. Asterisks indicate significant differences between groups (**p < 0.01; ***p < 0.001, Student’s t-test).
 
 Furthermore, considering that increased ROS production can lead to lipid peroxidation (Angelova and Abramov, 2018), we assessed lipid peroxidative damage. Peroxidation of the membrane lipid bilayer is one of the major sources of free radical-mediated injury that directly damages neurons causing increased membrane rigidity, decreased activity of membrane-bound enzymes, impairment of membrane receptors, and altered membrane permeability eventually leading to cell death (Tekpli et al., 2013). Of note, our results revealed an increase of 4-hydroxy-2-nonenal (4-HNE), a key marker of lipid peroxidation, in the hippocampus of 6 M 3×Tg-AD mice exposed to noise, compared to age-matched not-exposed mice (Figure 10C–D and G–H). This difference was significant in both CA1 and DG hippocampal regions, as confirmed by quantitative fluorescence signal analysis (Figure 10I and J; n = 3 animals/group; Student’s t-test, CA1, AD-NE vs. AD-NN mice, p = 0.002; DG, AD-NE vs. AD-NN mice, p = 0.0001). No significant changes were found in WT-NE vs. WT-NN mice.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig10-v1.jpg)
+
+**Figure 10.:** (A–H) Representative images of brain coronal sections stained with 4-hydroxy-2-nonenal (4-HNE) as a marker of lipid peroxidation (red fluorescence) and DAPI (blue fluorescence) to label cell nuclei in dentate gyrus (DG) (A–D) and CA1 (E–H) hippocampal regions of both not-exposed and noise-exposed wild-type (WT) and AD mice at 6 months of age (M). Dotted box in A–D and E–H refers to high magnifications showed in A1–D1 and E1–H1 respectively. (I–J) Bar graphs showing 4-HNE fluorescence intensity signal quantification in DG (I) and CA1 (J) in all groups. Data are expressed as mean ± SEM and are representative of three independent experiments from three animals/group. Scale bar: 100 µm. Asterisks indicate significant differences between groups (**p < 0.01; ***p < 0.001, Student’s t-test).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/70908/elife-70908-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A) Representative dot blot and densitometric analysis showing an increase of nitrotyrosine (NT) expression in 6 months of age (M) Alzheimer’s disease (AD) mice exposed to noise (n = 4 mice for each group; Student’s t-test, AD-NE vs. AD-NN, p = 0.038). Equal protein loading was checked by Ponceau S staining of the membrane. (B) Representative Western immunoblots revealing increased expression of Bax (n = 4 mice/group; Student’s t-test, p = 0.004) and active Caspase-3 (n = 4 mice/group; Student’s t-test, p = 0.24) in the hippocampus of 6 M AD-NE mice compared to age-matched not-exposed animals. Bar graphs showing results of densitometric analyses on all samples normalized to the corresponding total protein levels (α- tubulin or GAPDH). Asterisks indicate significant differences between groups (*p < 0.05; **p < 0.01).
 
 In order to confirm the increase of oxidative stress, we performed a dot blot to detect nitrotyrosine (NT), a marker of nitro-oxidative stress. Indeed, protein tyrosine nitration represents a prominent post-translational redox modification and it is associated with different diseases (Ischiropoulos and Beckman, 2003). Dot blot analysis showed an increase of NT formation in hippocampal samples of 6 M AD-NE mice, compared to age-matched AD-NN animals (Figure 10—figure supplement 1; n = 4 animals/group; Student’s t-test, AD-NE vs. AD-NN, p = 0.038).
 
@@ -155,19 +281,19 @@ In the context of high brain vulnerability and lower cognitive reserve, hearing 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Triple transgenic AD (3×Tg-AD) mice, harboring the Swedish human APP, presenilin M146V, and tauP301L mutations (Oddo et al., 2003) were used in this study, compared to (B6129SF2/J) WT mice (Roddick et al., 2016; Ying et al., 2017). Based on the mouse lifespan, the age of 3–6 months can be considered has a mature adult age (Flurkey, 2007) and according to previous studies, including ours (Chakroborty et al., 2019; Joseph et al., 2019; Cocco et al., 2020), 3×Tg-AD mice at the age of 2–3 months can be considered a model of preclinical AD, whereas the onset of AD phenotype manifests at 7–9 months. Sex differences in the prevalence, risk, and severity of AD as well as noise-induced hearing loss have been demonstrated in numerous clinical and animal studies (Ferretti et al., 2018; Dumitrescu et al., 2019; Gür et al., 2019; Zhu et al., 2021), with greater susceptibility to AD (Laws et al., 2016; Jiao et al., 2016; Koran et al., 2017; Yang et al., 2018) and lower susceptibility to noise-induced hearing loss (Milon et al., 2018; Shuster et al., 2019) in females comparing to males. Considering the neuroprotective role of estrogens in noise damage, to better understand if and how hearing loss induced by noise exposure affected cognitive functions, we focused our study on male animals.
 
 The colonies were established in-house at the Animal Facility of the Università Cattolica from breeding pairs purchased from the Jackson Laboratory. For each strain, two experimental groups comprised animals submitted to noise trauma (AD-NE, n = 32; WT-NE, n = 33) and not-exposed animals (AD-NN, n = 42; WT-NN, n = 34). WT and 3×Tg-AD mice and, within each group, noise-exposed and not-exposed mice were housed separately, in cages containing from three to five animals.
 
-## Noise exposure
+### Noise exposure
 
 3×Tg-AD and WT mice were exposed to repeated noise sessions at 2 M. The animals were placed in the anechoic room and exposed to a 100 dB SPL during 10 consecutive days for 60 min each day. The noise had a 10 kHz center frequency. As described previously (Fetoni et al., 2013; Paciello et al., 2018), the sound was generated by a waveform generator (LAG-120B, Audio Generator; Leader Electronics Corporation) and amplified by an audio amplifier (A-307R; Pioneer Electronics). The sound was presented in an open field by a dome tweeter (TW340 × 0; Audax) positioned at the center of the cage. Sound level was measured using a calibrated 1⁄4-inch microphone (model 7017; ACO Pacific) and a calibrated preamplifier (Acoustic Interface System; ACO Pacific) Larson Davis sound photometer (LD-831C) was used.
 
 This paradigm of acoustic trauma of repeated and high intensity stimulation can be representative of dangerous exposure in humans, in whom exposure to intensities >85–87 dB are generally considered limit safe values (ISO, 1990).
 
-## Auditory brainstem response recordings
+### Auditory brainstem response recordings
 
 ABRs were recorded at low, mid, and high frequencies to analyze hearing function in all experimental groups. Animals were mildly anesthetized (ketamine 50 mg/kg+ medetomidine 0.5 mg/kg, intraperitoneal injection) and placed in the anechoic room. Three stainless steel recording electrodes were subcutaneously inserted posterior to the tested pinna (active), vertex (reference), and contralateral pinna (ground). ABRs were collected using a computer-controlled TDT System 3 (Tucker-Davis Technologies, Alachua, FL) data acquisition system with real-time digital signal processing. Tone bursts ranging from 6 to 32 kHz (1 ms rise/fall time, 10 ms total duration, 20/s repetition rate) were presented monaurally in an open field using a horn tweeter (Tucker-Davis Technologies). The responses were filtered (100–3000 Hz bandpass), digitized, and averaged across 512 discrete samples at each frequency-level combination. ABRs were measured at low (6 kHz), mid (12, 16, and 20 kHz), and high (24 and 32 kHz) frequencies. Thresholds were determined by decreasing tone intensity in 5 dB steps starting at 100 dB and decreasing to 0 dB or until a reliably scored ABR Wave I component was detected. Baseline ABRs were recorded bilaterally testing each ear separately to ensure no consistent left-right ear ABR asymmetry. After noise exposure, we recorded auditory potentials from the right ear only. Thus, data presented refers to right ear auditory thresholds.
 
@@ -177,7 +303,7 @@ The neural transmission time for the auditory nerve and cochlear nucleus was eva
 
 Data of noise-exposed animals were compared with age-matched not-exposed mice.
 
-## Electrophysiology
+### Electrophysiology
 
 Field recordings were performed on coronal slices (400-μm-thick) containing the hippocampus and the ACx as previously described (Podda et al., 2008; Podda et al., 2016; Paciello et al., 2018). Briefly, mice were anesthetized by isoflurane inhalation (Esteve) and decapitated. The brain was rapidly removed and placed in ice-cold cutting solution (in mM: 124 NaCl, 3.2 KCl, 1 NaH2PO4, 26 NaHCO3, 2 MgCl2, 1 CaCl2, 10 glucose, 2 sodium pyruvate, and 0.6 ascorbic acid, bubbled with 95 % O2-5% CO2; pH 7.4). Slices were cut with a vibratome (VT1200S) and incubated in artificial cerebrospinal fluid (aCSF; in mM: 124 NaCl; 3.2 KCl; 1 NaH2PO4, 26 NaHCO3, 1 MgCl2, 2 CaCl2, 10 glucose; 95 % O2-5% CO2; pH 7.4) at 32°C for 60 min and then at room temperature (RT) until use.
 
@@ -187,11 +313,11 @@ All recordings were made using MultiClamp 700B amplifier (Molecular Devices). Da
 
 I/O curves were obtained by afferent fiber stimulation at intensities ranging from 20 to 300 µA (in increments of 30 or 50 µA; stimulus rate of 1 pulse every 20 s).
 
-## Golgi-Cox staining
+### Golgi-Cox staining
 
 Golgi-Cox staining was performed in both noise-exposed and not-exposed animals at 3 and 6 M of age to evaluate morphological features of hippocampal neurons (CA1 and DG regions) and ACx pyramidal neurons of layer II/III. Mouse brains were dissected and used for Golgi-Cox staining according to previously published protocol (Fetoni et al., 2013; Paciello et al., 2018; Barbati et al., 2020). Neurons were identified and selected only if the labeling was uniform and lacked any reaction precipitate, they were relatively isolated from neighboring impregnated neurons to avoid overlapping, the predominant plane of the dendritic arbors was parallel to the plane of the section, the dendritic arborizations were intact and visible as far as the most distal branches of apical and basal dendrites, and spines were clearly marked. We counted only spines that protruded laterally from the dendritic arborization, excluding those above or below the dendrite. In a blinded manner, apical and basal dendritic trees were separately counted and spine density was calculated along ~20 μm length of dendritic terminals. The stained sections were analyzed using Olympus BX63 microscope with a 100× oil-immersion objective lens.
 
-## Memory test
+### Memory test
 
 Behavioral tests were carried out from 9 a.m. to 4 p.m. and data were analyzed using an automated video tracking system (Any-Maze). Recognition memory, both STM and LTM, was evaluated using the NOR paradigm. Both tests were divided into three sessions: habituation, training, and test. Briefly, for the LTM version, animals were familiarized on the first day for 10 min with the test arena (45 cm × 45 cm). On the second day (training session), they were allowed to explore two identical objects placed symmetrically in the arena for 5 min. On the third day (test session), a new object replaced one of the old objects and animals were allowed to explore for 5 min. For the short-term version of the test, which took place 24 hr after the long-term version, animals were habituated to the arena for 10 min on the first day, and underwent training and test, separated by 30 min, on the second day. Different couples of objects were used for the short-term and for the long-term paradigms. Preference index, calculated as the ratio between time spent exploring the novel object and time spent exploring both objects, was used to measure recognition memory. To exclude place preference in the test session, the position of the novel object was alternated on both sides of the box. Furthermore, object identity was counterbalanced across group, to exclude preference based on intrinsic object properties. The objects used were: lego bricks arranged in different shapes, glass bottles filled with clean bedding, pyramids, and spheres made of plastic. All objects were of almost the same size, and lego bricks were arranged in simple shapes (cubical or rectangular). Each object during each phase was taped to the arena, so that the animals couldn’t displace them. After each test, the objects and the box were cleaned with 70% ethanol solution. Mice exploring less than 10 s were excluded from the analysis.
 
@@ -199,7 +325,7 @@ Moreover, to ensure that deficits in locomotor activity, which could have hinder
 
 In order to find a relationship between memory performance and auditory sensory deprivation, a simple linear regression model was estimated by performing an animal-by-animal study comparing mean ABR threshold, NOR performance, and mean number of spines in ACx by using Statistica (Statsoft) software.
 
-## Oxidative stress evaluation
+### Oxidative stress evaluation
 
 To assess the oxidative damage in hippocampus, we used DHE staining and 4-HNE immunostaining. DHE and 4-HNE provided indications on production of the toxic-free radicals and oxidative degradation of lipids generated by the effect of oxidative stress, respectively. Brains from three/animals/group were quickly removed after transcardial perfusion with PBS 4% and, subsequently, with paraformaldehyde and samples were fixed with 4% paraformaldehyde in PBS at 4°C and pH 7.4 overnight. Immunofluorescence analysis was performed on 30-μm-thick coronal brain cryosections (Cryostat, SLEE Medical GmbH, Germany) containing the hippocampus from both 3×Tg-AD and WT mice exposed to noise or not (at 6 M).
 
@@ -207,7 +333,7 @@ For DHE staining, slices were incubated with 1 µM DHE (Supplementary file 1) in
 
 For all immunofluorescence analysis, a semi-quantitative measure of fluorescence signals was performed: fluorescence intensity of each area of interest, corresponding to hippocampus CA1 and DG regions was quantified with ImageJ (version 1.51s).
 
-## Western immunoblotting and dot blot
+### Western immunoblotting and dot blot
 
 Total proteins were extracted from ACx or hippocampus of not-exposed and noise-exposed mice sacrificed at 6 M, using ice-cold RIPA buffer (Supplementary file 1) as reported previously (Podda et al., 2016). Protein lysates (30 μg) were loaded onto 10% or 12% Tris-glycine polyacrylamide gels for electrophoretic separation. Precision Plus Protein Dual Color Standards (Supplementary file 1) were used as molecular mass standards. Proteins were then transferred onto nitrocellulose membranes at 330 mA for 2 hr at 4°C in transfer buffer containing 25 mM Tris, 192 mM glycine and 20% methanol. Membranes were incubated for 1 hr with blocking buffer (5% skim milk in TBST), and then incubated overnight at 4°C with primary antibodies directed against one of the following proteins: pGluA1Ser845, GluA1, PSD-95, pTau Ser396, Tau-5, TNF-α,SOD2, HO-1, Caspase-3, Bax, and GAPDH, or α-tubulin (Supplementary file 1).
 
@@ -215,10 +341,10 @@ For dot blot 5 µl of lysates were spotted into a TBST pre-wetted nitrocellulose
 
 After three 10 min rinses in TBST, membranes were incubated for 2 hr at RT with HRP-conjugated secondary antibodies (Supplementary file 1). The membranes were then washed, and the bands were visualized with an enhanced chemiluminescence detection kit (GE Healthcare, United Kingdom). Protein expression was evaluated and documented using UVItec Cambridge Alliance.
 
-## ELISA measurements
+### ELISA measurements
 
 Hippocampi of 6 M WT and 3×Tg-AD mice (both not-exposed and noise-exposed) were collected and stored at −80°C until further use. IL-1β levels were determined using commercially available ELISA kits (Supplementary file 1). The assay was performed according to the manufacturer’s instructions on samples collected from three animals per group, and each sample was analyzed in duplicate.
 
-## Statistical analyses
+### Statistical analyses
 
 Sample sizes were chosen with adequate statistical power (0.8) according to results of prior pilot data sets or studies, including our own using similar methods or paradigms. Data were first tested for equal variance and normality (Shapiro-Wilk test) and then the appropriate statistical tests were chosen. The statistical tests used (one-way ANOVA, two-way ANOVA, three-way ANOVA, or Student’s t-test, simple linear regression) are indicated in the main text and in the corresponding figure legends for each experiment. Post hoc multiple comparisons were performed with Bonferroni or Tukey correction (SigmaPlot 14.0 or Statistica, Statsoft). The level of significance was set at 0.05. Results are presented as mean ± SEM. Analyses were performed blinded.

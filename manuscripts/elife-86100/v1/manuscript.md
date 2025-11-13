@@ -20,18 +20,18 @@
 
 ### Affiliations
 
-1. https://ror.org/041nas322 Institute of Pathology, Department of Developmental Pathology, Medical Faculty, University of Bonn Bonn Germany
-2. https://ror.org/041nas322 Bonn Technology Campus, Core Facility 'Gene-Editing', Medical Faculty, University of Bonn Bonn Germany
-3. https://ror.org/00pd74e08 Institute of Reproductive Genetics, University of Münster Münster Germany
-4. https://ror.org/041nas322 Institute of Innate Immunity, Biophysical Imaging, Medical Faculty, University of Bonn Bonn Germany
-5. https://ror.org/00pd74e08 Centre of Reproductive Medicine and Andrology, University Hospital Münster, University of Münster Münster Germany
-6. https://ror.org/041nas322 Institute for Cell Biology, University of Bonn Bonn Germany
+1. Institute of Pathology, Department of Developmental Pathology, Medical Faculty, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+2. Bonn Technology Campus, Core Facility 'Gene-Editing', Medical Faculty, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+3. Institute of Reproductive Genetics, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+4. Institute of Innate Immunity, Biophysical Imaging, Medical Faculty, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+5. Centre of Reproductive Medicine and Andrology, University Hospital Münster, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+6. Institute for Cell Biology, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
 
 † Corresponding author
 
 ## Abstract
 
-Cylicins are testis-specific proteins, which are exclusively expressed during spermiogenesis. In mice and humans, two Cylicins, the gonosomal X-linked Cylicin 1 ( Cylc1/CYLC1 ) and the autosomal Cylicin 2 ( Cylc2/CYLC2 ) genes, have been identified. Cylicins are cytoskeletal proteins with an overall positive charge due to lysine-rich repeats. While Cylicins have been localized in the acrosomal region of round spermatids, they resemble a major component of the calyx within the perinuclear theca at the posterior part of mature sperm nuclei. However, the role of Cylicins during spermiogenesis has not yet been investigated. Here, we applied CRISPR/Cas9-mediated gene editing in zygotes to establish Cylc1- and Cylc2 -deficient mouse lines as a model to study the function of these proteins. Cylc1 deficiency resulted in male subfertility, whereas Cylc2 -/- , Cylc1 -/y Cylc2 +/- , and Cylc1 -/y Cylc2 -/- males were infertile. Phenotypical characterization revealed that loss of Cylicins prevents proper calyx assembly during spermiogenesis. This results in decreased epididymal sperm counts, impaired shedding of excess cytoplasm, and severe structural malformations, ultimately resulting in impaired sperm motility. Furthermore, exome sequencing identified an infertile man with a hemizygous variant in CYLC1 and a heterozygous variant in CYLC2 , displaying morphological abnormalities of the sperm including the absence of the acrosome. Thus, our study highlights the relevance and importance of Cylicins for spermiogenic remodeling and male fertility in human and mouse, and provides the basis for further studies on unraveling the complex molecular interactions between perinuclear theca proteins required during spermiogenesis.
+Cylicins are testis-specific proteins, which are exclusively expressed during spermiogenesis. In mice and humans, two Cylicins, the gonosomal X-linked Cylicin 1 (Cylc1/CYLC1) and the autosomal Cylicin 2 (Cylc2/CYLC2) genes, have been identified. Cylicins are cytoskeletal proteins with an overall positive charge due to lysine-rich repeats. While Cylicins have been localized in the acrosomal region of round spermatids, they resemble a major component of the calyx within the perinuclear theca at the posterior part of mature sperm nuclei. However, the role of Cylicins during spermiogenesis has not yet been investigated. Here, we applied CRISPR/Cas9-mediated gene editing in zygotes to establish Cylc1- and Cylc2-deficient mouse lines as a model to study the function of these proteins. Cylc1 deficiency resulted in male subfertility, whereas Cylc2-/-, Cylc1-/yCylc2+/-, and Cylc1-/yCylc2-/- males were infertile. Phenotypical characterization revealed that loss of Cylicins prevents proper calyx assembly during spermiogenesis. This results in decreased epididymal sperm counts, impaired shedding of excess cytoplasm, and severe structural malformations, ultimately resulting in impaired sperm motility. Furthermore, exome sequencing identified an infertile man with a hemizygous variant in CYLC1 and a heterozygous variant in CYLC2, displaying morphological abnormalities of the sperm including the absence of the acrosome. Thus, our study highlights the relevance and importance of Cylicins for spermiogenic remodeling and male fertility in human and mouse, and provides the basis for further studies on unraveling the complex molecular interactions between perinuclear theca proteins required during spermiogenesis.
 
 ## Introduction
 
@@ -45,9 +45,33 @@ In this study, we report the CRISPR/Cas9-mediated generation and characterizatio
 
 ## Results
 
-## Cylicins are indispensable for male fertility in mice
+### Cylicins are indispensable for male fertility in mice
 
 Cylicins were first discovered and characterized in the early 1990s; due to their subcellular localization a role in sperm head architecture was postulated (Longo et al., 1987; Hess et al., 1993; Hess et al., 1995). To address the question of the role of Cylicins during spermiogenesis, we used CRISPR/Cas9-mediated gene editing to generate Cylc1- and Cylc2-deficient mouse models. First, for Cylc1, a pair of sgRNAs targeting exon 5 was designed, and a mouse line with a frameshift inducing deletion of 1.585 kb, accounting for 85% of the Cylc1 coding sequence, was established (Figure 1A). Next, two guide RNAs targeting exon 4/5 of the Cylc2 gene were applied to establish a Cylc2-deficient mouse line with a 1.145 kb frameshift inducing deletion (Figure 1A). In both lines, the majority of predicted functional domains with repetitive, lysine-lysine-aspartic acid (KKD) and lysine-lysine-glutamic acid (KKE) peptide motifs were depleted. Deletion was confirmed by PCR-based genotyping (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the Cylc1 and Cylc2 gene structure and targeting strategy for CRISPR/Cas9-mediated generation of Cylc1- and Cylc2-deficient alleles. Targeting sites of guide RNAs are depicted by red arrows. Genotyping primer binding sites are depicted by black arrows. (B) Representative genotyping PCR of Cylc1- and Cylc2-deficient mice. N=3. (C) Fertility analysis of Cylicin-deficient mice visualized by mean litter size and pregnancy rate (%) in comparison to wildtype (WT) matings. Black dots represent mean values obtained for each male included in fertility testing. Columns represent mean values ± standard deviation (SD). Total number of offspring per total number of pregnancies as well as total number of pregnancies per total number of plugs are depicted above each bar. (D) Expression of Cylc1 and Cylc2 in testicular tissue of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice analyzed by quantitative reverse transcription-polymerase chain reaction (qRT-PCR). Biological replicate of 3 was used. (E) Immunofluorescent staining of testicular tissue and cauda epididymal sperm from WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- males against CYLC1 and CYLC2. Cell nuclei were counterstained with DAPI. Staining was performed on three animals from each genotype. Scale bar: 5 µm. (F) Schematic illustration of CYLC localization during spermiogenesis. CYLC localization (green) is shown for round and elongating spermatids as well as mature sperm. (G) Representative immunoblot against CYLC1 and CYLC2 on cytoskeletal protein fractions from WT, Cylc1-/y, Cylc2+/-, and Cylc2-/- testes. α-Tubulin was used as load control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** KKD/E motifs are highlighted in blue and repeating units are marked by red brackets.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bar: 100 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Nuclei were stained with DAPI. Scale bar: 5 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Scale bar: 5 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig1-figsupp6-v1.jpg)
 
 Fertility testing of Cylc1-/y males revealed significantly reduced pregnancy rates (16%) and mean litter size (2.2) (Figure 1C). Cylc2-/- males were infertile, while Cylc2+/- males showed no significant difference in fertility parameters compared to wildtype (WT) mice (Figure 1C). Additionally, established mouse lines were intercrossed to generate Cylc1-/y Cylc2+/- and Cylc1-/y Cylc2-/- males. Of note, Cylc1-/y Cylc2+/- and Cylc1-/y Cylc2-/- males were infertile (Figure 1C). This indicates that loss of Cylc1 alone is partially tolerated, as suggested by subfertility of Cylc1-/y males, whereas the additional loss of one Cylc2 allele renders male mice infertile. Taken together, the results suggest that two functional Cylicin alleles are required for male fertility.
 
@@ -55,9 +79,29 @@ Quantitative reverse transcription-polymerase chain reaction (qRT-PCR) confirmed
 
 Next, due to the lack of commercial antisera, polyclonal antibodies against murine CYLC1 and CYLC2 were raised to visualize the localization of Cylicins during spermiogenesis. Specificity of antibodies was proven by immunohistochemical (IHC) stainings, showing a specific signal in testis sections only, but not in any other organ tested (Figure 1—figure supplement 2). Immunofluorescence staining of WT testicular tissue showed presence of both, CYLC1 and CYLC2, from the round spermatid stage onward (Figure 1E). The signal was first detectable in the subacrosomal region as a cap-like structure, lining the developing acrosome (Figure 1E–F, Figure 1—figure supplement 3). As the spermatids elongate, CYLC1 and CYLC2 move across the PT toward the caudal part of the cell (Figure 1—figure supplement 4). At later steps of spermiogenesis, the localization in the subacrosomal part of the PT faded, while it intensified in the postacrosomal calyx region (Figure 1E–F). Of note, the localization of CYLC1 and CYLC2 in the calyx of mature sperm has been reported in bovine and human. The generated antibodies did not stain testicular tissue and mature sperm of Cylc1- and Cylc2-deficient males, except for a very weak unspecific background staining in the lumen of seminiferous tubules and the residual bodies of testicular sperm (Figure 1E). Additionally, western blot analyses confirmed the absence of CYLC1 and CYLC2 in cytoskeletal protein fractions of the respective knockout (Figure 1G), thereby demonstrating (i) specificity of the antibodies and (ii) validating the gene knockout. Of note, the CYLC1 antibody detects a double band at 40–45 kDa. This is smaller than the predicted size of 74 kDa, but both bands were absent in Cylc1-/y. Similarly, the CYLC2 antibody detected a double band at 38–40 kDa instead of 66 kDa. Again, both bands were absent in Cylc2-/-. Next, mass spectrometry analysis of cytoskeletal protein fraction of mature spermatozoa was performed detecting both proteins in WT but not in the respective knockout samples (Figure 1—figure supplement 5; Figure 1—figure supplement 6).
 
-## Sperm morphology is severely altered in Cylicin-deficient mice
+### Sperm morphology is severely altered in Cylicin-deficient mice
 
 Next, spermiogenesis of Cylicin-deficient males was analyzed in detail. Gross testicular morphology as well as testicular weight were not significantly altered (Figure 2A and B). The testicular morphology appeared unaltered, with all stages of spermatogenesis being detectable in hematoxylin and eosin (HE)-stained testicular sections (Figure 2—figure supplement 1). However, a strong decline in cauda epididymal sperm counts was observed in all Cylicin-deficient males. For Cylc1-/y and Cylc2+/- males, a moderate reduction of 40–47% was determined, whereas Cylc2-/- and Cylc1-/y Cylc2+/- displayed an approx. 65% reduction in epididymal sperm counts compared to WT mice (Figure 2C). In Cylc1-/y Cylc2-/- males, spermiogenesis was most impaired, as indicated by an 85% reduction of the sperm count (Figure 2C). Eosin-Nigrosin staining revealed that the viability of epididymal sperm from all genotypes was not severely affected (Figure 2D, Figure 2—figure supplement 2). However, viability of Cylc2-/- and Cylc1-/y Cylc2-/- sperm was significantly reduced by approx. 15% compared to WT sperm (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig2-v1.jpg)
+
+**Figure 2.:** (A) Testis weight (mg) and sperm count (×107) of wildtype (WT), Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- males. Mean values ± SD are shown; black dots represent data points for individual males. (B) Comparable photographs of the testes of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice. (C) Epididymal sperm count (×107) of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- males. Mean values ± SD are shown; black dots represent data points for individual males. (D) Viability of the epididymal sperm stained with Eosin-Nigrosin. Percentage of Eosin negative (viable) and Eosin positive (inviable) sperm is shown. Data represented as mean ± SD. Staining was performed on three animals from each genotype. (E) Bright-field microscopy pictures of epididymal sperm from WT, Cylc1-/y, Cylc2+/-, and Cylc2-/- mice. Scale bar: 10 μm. (F) Immunofluorescence staining of epididymal sperm acrosomes with peanut agglutinin (PNA) lectin (green) and tails with MITOred (red). Nuclei were counterstained with DAPI. Scale bar: 5 µm. (G) Quantification of abnormal sperm of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice is shown. Acrosome aberrations and tail coiling were counted separately. Staining was performed on three animals from each genotype. (H) Nuclear morphology analysis of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- sperm. Number of cells analyzed for each genotype is shown. (I) Representative pictures of immunofluorescent staining against perinuclear theca (PT) proteins CCIN (upper panel) and CAPZa3 (lower panel) in WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- sperm. Nuclei were counterstained with DAPI. Staining was performed on three animals from each genotype. Scale bar: 5 µm. (J–K) Quantification of sperm with abnormal calyx integrity in WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice based on CCIN and CapZA staining patterns.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scale bar: 100 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Scale bar: 10 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Scale bar: 5 μm. Elongation and circularity of nuclei from WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- sperm. The minimum detection area was set to 1.000 pixels, while the maximum detection area was 7.000 pixels.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Nuclei were counterstained with DAPI. Scale bar: 2 μm.
 
 Next, we used bright-field microscopy to evaluate the effects of Cylicin deficiency on sperm morphology. Above all, coiling of the sperm tails and kinked sperm heads were observed in Cylc2-/- and Cylc1-/y Cylc2-/- males (Figure 2E). To confirm this, we used peanut agglutinin (PNA)-fluorescein isothiocyanite (FITC) lectin immunofluorescence staining to analyze acrosome localization in mature sperm, MITOred, to visualize mitochondria in the flagellum and DAPI to stain the nucleus (Figure 2F). Loss of Cylc1 alone caused malformations of the acrosome in around 38% of mature sperm, while their flagellum appeared unaltered and properly connected to the head. Cylc2+/- males showed normal sperm tail morphology with around 30% of acrosome malformations. Cylc2-/- mature sperm cells displayed morphological alterations of head and midpiece (Figure 2F–G). 76% of Cylc2-/- sperm cells showed acrosome malformations, bending of the neck region, and/or coiling of the flagellum, occasionally resulting in its wrapping around the sperm head in 80% of sperm (Figure 2F). While 70% of Cylc1-/y Cylc2+/- sperm showed these morphological alterations, around 92% of Cylc1-/y Cylc2-/- sperm presented with coiled tail and abnormal acrosome (Figure 2F–G).
 
@@ -65,37 +109,75 @@ To analyze in detail the sperm head, we used Nuclear Morphology software on DAPI
 
 To study the effects of Cylicin deficiency on sperm calyx integrity and morphology, we analyzed the localization of other calyx-specific proteins, such as CCIN and CapZα3. In epididymal sperm, CCIN co-localize with both CYLC1 and CYLC2 in the calyx (Figure 2—figure supplement 4). In Cylc1-/y and Cylc2+/- sperm, CCIN localization remained unchanged, being present in the calyx and in the ventral portion of PT as described previously Zhang et al., 2022b. However, in 91% of Cylc2-/- sperm, CCIN localized to the tail or in random parts of the sperm head (Figure 2I and J). In 91% of Cylc1-/y Cylc2+/- and 98% of Cylc1-/y Cylc2-/- sperm, the localization of CCIN was also significantly altered, with the signal mainly being present in the sperm tail. CapZα3 forms a heterodimer with CapZβ3, creating a functional complex that localizes in the calyx (Wear and Cooper, 2004). Immunofluorescence stainings revealed that the localization of CapZα3 remained unchanged in Cylc1-/y and Cylc2+/- mice compared to WT mice. In 84% of Cylc2-/- sperm cells, CapZα3 localized in the caudal portion of the head but without regular calyx localization (Figure 2I and K). Interestingly, Cylc1-/y Cylc2+/- mice showed less severe anomalies of the calyx and although CCIN was located almost exclusively in the tail, CapZα3 maintained the correct calyx localization in around 30% of sperm (Figure 2I). Finally, 92% of Cylc1-/y Cylc2-/- spermatozoa showed CapZα3 localization across the sperm head without regular calyx shape. These results suggest that the loss of Cylicins impairs the formation of calyx and the correct localization of its components, which might contribute to morphological anomalies of the sperm described initially.
 
-## Cylc2-/- sperm cells have altered flagellar beat
+### Cylc2-/- sperm cells have altered flagellar beat
 
 Transmission electron microscopy (TEM) of epididymal sperm confirmed the severe structural defects observed by light microscopy (Figure 3A, Figure 3—figure supplement 1): Cylc2-/- sperm showed coiling of the tail and dislocation of the head-tail connecting piece from the basal plate, resulting in parallel positioning of head and tail (Figure 3A, white arrowheads). Furthermore, in Cylc2-/- sperm, excess of cytoplasm was observed, located around the nucleus and coiled tail (Figure 3A). Anomalies of the head were observed at the level of the PT, while the nuclei appeared unaltered. In all Cylc2-/- sperm cells, the posterior portion of PT-calyx was absent (Figure 3A, red arrowheads). Instead of surrounding the nucleus entirely, the PT in Cylc2-/- sperm appeared interrupted, missing completely its caudal part. Further, we observed loosening of the peri-acrosomal region, which is not compact and adherent to the nucleus (Figure 3A, green arrowheads). On the contrary, Cylc1-/y sperm cells appeared healthy, with intact PT, acrosome, and calyx.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig3-v1.jpg)
+
+**Figure 3.:** (A) Transmission electron microscopy (TEM) micrographs of wildtype (WT), Cylc1-/y and Cylc2-/- epididymal sperm. Acrosome appears detached from the nucleus in Cylc2-/- sperm (green arrowheads), while the calyx is missing entirely (red arrowheads). The head-tail connecting piece shifted from the basal plate is shown by white arrowheads causing the looping of the flagellum and formation of a cytoplasmatic sac. Cylc1-/y sperm appears comparable to WT. Scale bar: 1 µm. (B) Motility of the epididymal sperm of WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- males activated in TYH medium. (C) Full and half-beat cycle plots of the flagellar beat are shown for WT and Cylc2-/- spermatozoa. Half-beat cycle shows the stiffness of the midpiece (upper arrow) and high oscillations (lower arrow) in Cylc2-/- sperm in one direction of the beat.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Average curvature of the flagellum and the arc length are shown.
 
 While the motility of Cylc1-/y and Cylc2+/- sperm remained unchanged compared to WT sperm (around 60% motile cells), motility of Cylc2-/- sperm was drastically reduced to only 7% motile sperm (Figure 3B) and the motility of Cylc1-/y Cylc2-/- sperm was reduced to 2% motile sperm. In addition, the few motile sperm cells were not progressive but were swimming in circular trajectories. Interestingly, in Cylc1-/y Cylc2+/- mice, sperm motility was reduced as well, but less drastically, with 27% of sperm cells being motile (Figure 3B).
 
 The SpermQ software was used to analyze the flagellar beat of non-capacitated Cylc2-/- sperm in detail (Hansen et al., 2018). Cylc2-/- sperm showed stiffness in the neck and a reduced amplitude of the initial flagellar beat, as well as reduced average curvature of the flagellum during a single beat (Figure 3—figure supplement 2). Interestingly, we observed that the flagellar beat of Cylc2-/- sperm cells was similar to WT cells, however, with interruptions during which midpiece and initial principal piece appeared stiff, whereas high-frequency beating occurs at the flagellar tip (Figure 3C, Video 1, Video 2). These interruptions occurred only on the open-hook side and the duration of such interruptions varied from beat to beat. Of note, similar phenotypes have been observed for sperm with structural defects in the axoneme (Gadadhar et al., 2021), however axoneme structure of Cylicin-deficient sperm appeared unaltered, presenting typical 9+2 microtubular composition in all genotypes (Figure 3—figure supplement 1). Thus, we hypothesize that observed structural defects of the PT and head-tail connecting piece are restrictive for sperm motility and physiological beating patterns.
 
+![Video 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-video2.mp4.jpg)
+
 Taken together, observed anomalies of sperm heads, impaired sperm motility, and the decrease in epididymal sperm concentration show that Cylicin deficiency resembles a severe OAT (oligo-astheno-teratozoospermia syndrome) described in human.
 
-## Cylicins are required for acrosome attachment to the nuclear envelope
+### Cylicins are required for acrosome attachment to the nuclear envelope
 
 To study the origin of observed structural sperm defects, spermiogenesis of Cylicin-deficient males was analyzed in detail. PNA lectin staining and periodic acid Schiff (PAS) staining of testicular tissue sections were performed to investigate acrosome biogenesis. During Golgi phase, the acrosome first starts to appear as an aggregation of proacrosomal vesicles into a single granule. This premature acrosomal structure was unaltered in all genotypes, with PNA signal appearing as a small dot on one pole of round spermatids (Figure 4A–B). During cap phase, acrosomes grow to cover the apical part of the nucleus. In WT and Cylc2+/- mice, the forming acrosome appeared equally smooth and showed a regular cap structure on the perinuclear region of round spermatids. However, in some of the round spermatids from Cylc2-/- and Cylc1-/y mice, gaps in the forming acrosome were observed, as well as an irregular shape of the cap. In Cylc1-/yCylc2+/- and Cylc1-/y Cylc2-/- mice, most of the round spermatids were deformed or displayed irregularly localized caps (Figure 4A–B, Figure 4—figure supplement 1, Figure 4—figure supplement 2). At acrosome phase, many elongating spermatids of Cylc1-/y, Cylc2-/-, Cylc1-/yCylc2+/-, and Cylc1-/y Cylc2-/- mice had irregular acrosome (Figure 4A–B, Figure 4—figure supplement 1, Figure 4—figure supplement 2). Detachment of the acrosome from the nuclear envelope was evident in testis samples of Cylc2-/- and Cylc1-/y Cylc2-/- male mice. These results suggest that Cylicins are required for the attachment of the developing acrosome to the nuclear envelope during spermiogenesis. Microtubules appeared longer on one side of the nucleus than on the other, displacing the acrosome to the side and creating a gap in the PT (Figure 4C). Whereas elongated spermatids at steps 14–15 in WT sperm already disassembled their manchette and the PT appeared as a unique structure that compactly surrounds the nucleus, in Cylc2-/- spermatids, remaining microtubules failed to disassemble (Figure 4C, yellow arrowhead), and the acrosome detached from the nuclear envelope (green arrowhead). In addition, at step 16, the calyx was absent, and an excess of cytoplasm surrounded the nucleus and flagellum (Figure 4C, white arrowhead). Furthermore, many damaged and degrading cells were observed in testicular tissue TEM samples, having perforated nuclei and detached structures (Figure 4—figure supplement 3). Interestingly, phagosomes with cellular remains were observed far away from the lumen and sometimes even at the basal membrane of the tubuli, suggesting that the cells that suffer most severe structural damage are being removed. This mechanism of removing malformed cells explains the reduction of epididymal sperm count in Cylicin-deficient genotypes.
 
-## Cylicin deficiency results in abnormal manchette elongation and disassembly
+![Figure 4.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig4-v1.jpg)
+
+**Figure 4.:** (A) Peanut agglutinin (PNA)-fluorescein isothiocyanite (FITC) lectin immunofluorescence staining of the acrosome in testicular tissue of wildtype (WT), Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice (green). Golgi phase of acrosome biogenesis at round spermatid stage (I–IV) is visible in the left panel. Middle panel shows cap phases on round spermatids (stage V–VIII). In the right panel acrosomal phase is shown (stage IX–XI). Nuclei were counterstained with DAPI. Staining was performed on three animals from each genotype. Scale bar: 10 µm. Insets show representative single spermatids at higher magnification (scale bar: 2 µm). (B) Periodic acid Schiff (PAS) staining of testicular sections from WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice. Representative spermatids at different steps of spermiogenesis are shown. Scale bar: 3 µm. (C) Transmission electron microscopy (TEM) micrographs of testicular tissues of WT and Cylc2-/- mice. Single spermatids from step 6 to step 16 are shown. nu: nucleus; av: acrosomal vesicle; pr: perinuclear ring; m: manchette microtubules; cy: cytoplasm; green arrowheads: developing acrosome; red arrowheads: manchette; white arrowhead: cytoplasm; yellow arrowhead: remaining microtubules in mature sperm. Scale bar: 1 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Spermatids at cap phase and acrosome phase of acrosome biogenesis are shown individually. Scale bar: 5 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Scale bar: 20 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Scale bar: 5 µm.
+
+### Cylicin deficiency results in abnormal manchette elongation and disassembly
 
 Next, we investigated the role of Cylicins during formation and development of the manchette – a sperm-specific, transient structure that represents a microtubular platform for protein transport, which showed several anomalies in TEM. Transport of the intracellular vesicles is crucial for the formation of the flagellum, acrosome assembly, and removal of excess cytoplasm. The manchette is first detected at step 8 at the perinuclear ring of round spermatids, just prior to their elongation. During the next steps of spermiogenesis, as the spermatids elongate, manchette moves toward the neck region in a skirt-like structure and starts disassembling at step 13 when the elongation is complete (Okuda et al., 2017). We used immunofluorescence staining of α-tubulin on squash testis samples containing spermatids at different stages of spermiogenesis to investigate whether the altered head shape, calyx structure, and tail-head connection anomalies originate from defects of the manchette structure. Spermatids starting from step 8 were observed individually for step-to-step comparison. In all genotypes, a cap-like shape of the manchette was observed in step 8 round spermatids, suggesting that the manchette assembles properly and starts elongating toward the neck region during step 9 (Figure 5—figure supplement 1). In all genotypes, the typical skirt-like structure was observed at the caudal region of the spermatids at steps 10 and 11, suggesting that the manchette assembles correctly even in Cylicin-deficient sperm (Figure 5A). In spermatids from Cylc1-/y and Cylc2+/- mice, regular manchette development was observed in further steps of spermiogenesis (Figure 5A). However, starting from step 12, spermatids from Cylc2-/-, Cylc1-/yCylc2+/-, and Cylc1-/yCylc2-/- mice showed abnormal manchette elongation, which became more prominent at step 13 (Figure 5A). Manchette length was measured starting from step 10 until step 13 spermatids and the mean was obtained, showing that the average manchette length was 76–80 nm in WT, Cylc1-/y and Cylc2+/-, while for Cylc2-/- and Cylc1-/yCylc2-/- spermatids mean manchette length reached 100 nm (Figure 5B). Cylc1-/ yCylc2+/- spermatids displayed an intermediate phenotype with a mean manchette length of 86 nm. Interestingly, some of Cylc2-deficient spermatids showed shifting of the manchette to the ventral side of the nucleus along with excessive elongation. At step 16, the manchette was normally disassembled in WT, Cylc1-/y, and Cylc2+/- spermatids (Figure 5A). However, Cylc2-/-, Cylc1-/yCylc2+/-, and Cylc1-/ yCylc2-/- spermatids showed a persistent α-tubulin signal, indicating that disassembly of the manchette is delayed or incomplete (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig5-v1.jpg)
+
+**Figure 5.:** (A) Immunofluorescence staining of α-tubulin to visualize manchette structure in squash testis samples of wildtype (WT), Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y Cylc2+/-, and Cylc1-/y Cylc2-/- mice. Spermatids in different steps of spermiogenesis were shown, for step-to-step comparison. Scale bar: 5 µm. (B) Quantification of manchette length in WT, Cylc1-/y, Cylc2+/-, Cylc2-/-, Cylc1-/y, Cylc2+/-, and Cylc1-/y Cylc2-/- α-tubulin-stained spermatids at steps 10–13. (C) Co-staining of the manchette with HOOK1 (red) and acrosome with peanut agglutinin (PNA)-lectin (green) is shown in round, elongating and elongated spermatids of WT (upper panel) and Cylc2-/- mice (lower panel). Scale bar: 3 µm. Schematic representation shows acrosomal structure (green) and manchette filaments (red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Spermatids at steps 8–9 are shown. Scale bar: 10 μm.
+
 Other than α-tubulin, we also used HOOK1 as manchette marker. HOOK1 is a member of a family of coiled-coil proteins, which bind to microtubules and organelles and regulate microtubule trafficking during endocytosis and spermiogenesis. Co-staining of the spermatids with antibodies against PNA lectin (green) and HOOK1 (red) revealed that abnormal manchette elongation and acrosome anomalies simultaneously occurred in elongating spermatids of Cylc2-/- male mice (Figure 5C). Schematic representation shows acrosome biogenesis and manchette development in WT and Cylc2-/- spermatids (Figure 5C). While round spermatids of Cylc2-/- mice elongated as those of the WT sperm, the manchette elongated abnormally and the acrosome became loosened (Figure 4C, Figure 5C).
 
-## Cylc2 coding sequence is slightly more conserved among species than Cylc1
+### Cylc2 coding sequence is slightly more conserved among species than Cylc1
 
 To address why Cylc2 deficiency causes more severe phenotypic alterations than Cylc1 deficiency in mice, we performed evolutionary analysis of both genes. Analysis of the selective constrains on Cylc1 and Cyvideolc2 across rodents and primates revealed that both genes’ coding sequences are conserved in general, although conservation is weaker in Cylc1 trending toward a more relaxed constraint (Figure 6). A model allowing for separate calculation of the evolutionary rate for primates and rodents did not detect a significant difference between the clades, neither for Cylc1 nor for Cylc2, indicating that the sequences are equally conserved in both clades.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig6-v1.jpg)
 
-**Figure 6.:** A) CYLC1 and (B) CYLC2 amino acid alignment used in the PAML CodeML analysis.Alignments were stripped of columns with gaps in more than 80% of species. Evolutionary rate (ω) obtained by CodeML models M0 is shown for the whole alignment. The graph on top shows the evolutionary rate (ω) per codon sites across the whole tree (CodeML model M2a). Significantly positively selected sites are marked by asterisks. Sites with a probability of higher than 0.95 to belonging to the conserved or positively selected site class are marked in green and red respectively below the graph.Figure 6—source data 1.
+**Figure 6.:** Alignments were stripped of columns with gaps in more than 80% of species. Evolutionary rate (ω) obtained by CodeML models M0 is shown for the whole alignment. The graph on top shows the evolutionary rate (ω) per codon sites across the whole tree (CodeML model M2a). Significantly positively selected sites are marked by asterisks. Sites with a probability of higher than 0.95 to belonging to the conserved or positively selected site class are marked in green and red respectively below the graph.
 
 To analyze the selective pressure across the coding sequence in more detail, we calculated the evolutionary rates for each codon site across the whole tree. According to the analysis, 34% of codon sites were conserved, 51% under relaxed selective constraint, and 15% positively selected. For Cylc2, 47% of codon sites were conserved, 44% under neutral/relaxed constraint, and 9% positively selected. Interestingly, codon sites encoding lysine residues, which are proposed to be of functional importance for Cylicins, are mostly conserved. For Cylc1, 17% of lysine residues are significantly conserved and 35% of significantly conserved codons encode for lysine. For Cylc2, this pattern is even more pronounced with 27.9% of lysine codons being significantly conserved and 24.3% of all conserved sites encoding for lysine (Figure 6).
 
-## Cylicins are required for normal sperm morphology in human
+### Cylicins are required for normal sperm morphology in human
 
 As loss of two Cylicin alleles causes fertility defects in mice, we next addressed whether infertile men also display variants in CYLC1/CYLC2.
 
@@ -107,7 +189,122 @@ M2270 further carries the heterozygous variant c.551G>A in CYLC2 that is predict
 
 Segregation analyses revealed maternal inheritance of the X-linked CYLC1 variant c.1720G>C p. (Glu574Gln), whereas the father carries the heterozygous CYLC2 variant c.551G>A p.(Gly184Asp) (Figure 7A). According to ACMG-AMP criteria (Richards et al., 2015) both variants are classified as variants of uncertain significance. No other potentially pathogenic variants in genes associated with sperm morphological defects were identified by exploring the exome data of M2270.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig7-v1.jpg)
+
+**Figure 7.:** (A) Pedigree of patient M2270. His father (M2270_F) is carrier of the heterozygous CYLC2 variant c.551G>A and his mother (M2270_M) carries the X-linked CYLC1 variant c.1720G>C in a heterozygous state. Asterisks (*) indicate the location of the variants in CYLC1 and CYLC2 within the electropherograms. (B) Immunofluorescence staining of CYLC1 in spermatozoa from healthy donor and patient M2270. In donor’s sperm cells CYLC1 localizes in the calyx, while patient’s sperm cells are completely missing the signal. Scale bar: 5 µm. (C) Bright-field images of the spermatozoa from healthy donor and M2270 show visible head and tail anomalies, coiling of the flagellum, as well as headless spermatozoa, which carry cytoplasmatic residues without nuclei (white arrowhead). Heads were counterstained with DAPI. Scale bar: 5 µm. (D–E) Quantification of flagellum integrity (D) and headless sperm (E) in the semen of patient M2270 and a healthy donor. (F–G) Immunofluorescence staining of CCIN (F) and PLCz (G) in sperm cells of patient M2270 and a healthy donor. Nuclei were counterstained with DAPI. Scale bar: 3 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/86100/elife-86100-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Localization of the CYLC1 variant found in M2270. The variant affects exon 4 and an intolerant part of the C-terminal region of CYLC1 according to metadome 41. (B) CYLC2 variant localization. The missense variant in CYLC2 detected in M2270 affects exon 5 and a tolerant part of CYLC2 according to metadome 41.
+
 Semen analysis performed following WHO guidelines (World Health Organization, 2021) is shown in Table 1. The sperm concentration in the semen was slightly reduced, while significant reduction of motile spermatozoa (12.5%) was observed. Interestingly, only 2% of the sperm cells appeared morphologically normal, while 98% of sperm showed head defects (Table 1). Immunofluorescence staining of CYLC1 revealed that while in healthy donor’s sperm, CYLC1 localizes in the calyx, in M2270, CYLC1 labeling was absent (Figure 7B). Bright-field microscopy demonstrated that M2270’s sperm flagella coiled in a similar manner compared to flagella of sperm from Cylicin-deficient mice. Quantification revealed 57% of M2270 sperm displaying abnormal flagella compared to 6% in the healthy donor (Figure 7D). Interestingly, DAPI staining revealed that 27% of M2270 flagella carry cytoplasmatic bodies without nuclei and could be defined as headless spermatozoa (Figure 7C, white arrowhead; Figure 7E). CCIN staining demonstrated that while spermatozoa of a healthy donor showed a typical, funnel-like calyx structure in the posterior region of PT, spermatozoa from M2270 had CCIN localized in irregular manner throughout head and tail, suggesting that Cylicins have a role in maintenance of the calyx structure and composition in both mice and human spermatozoa (Figure 7F). Testis-specific phospholipase C zeta 1 (PLCζ1) is localized in the postacrosomal region of PT in mammalian sperm (Yoon and Fissore, 2007) and has a role in generating calcium (Ca²+) oscillations that are necessary for oocyte activation (Yoon et al., 2008). Staining of healthy donor’s spermatozoa showed a previously described localization of PLCζ1 in the calyx, while sperm from M2270 patient presents signal irregularly through the PT surrounding sperm heads (Figure 7G). These results suggest that Cylicin deficiency can cause severe disruption of PT in human sperm as well, causing male infertility.
+
+**Table 1.**
+ Semen analysis of the patient M2770 carrying variants in the CYLC1 and CYLC2 genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>First visit</th>
+      <th>Second visit</th>
+      <th>WHO reference rang</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abstinence time (day)</td>
+      <td>4.0</td>
+      <td>5.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Volume (ml)</td>
+      <td>4.2</td>
+      <td>5.8</td>
+      <td>&gt;1.4</td>
+    </tr>
+    <tr>
+      <td>Concentration (Mill./ml)</td>
+      <td>10.5</td>
+      <td>16.3</td>
+      <td>&gt;16</td>
+    </tr>
+    <tr>
+      <td>Total sperm count (Mill.)</td>
+      <td>44.1</td>
+      <td>94.5</td>
+      <td>&gt;39</td>
+    </tr>
+    <tr>
+      <td>Vitality (%)</td>
+      <td>53</td>
+      <td>27</td>
+      <td>&gt;54</td>
+    </tr>
+    <tr>
+      <td>Motility</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a (%)</td>
+      <td>7</td>
+      <td>9</td>
+      <td>a+b &gt; 30</td>
+    </tr>
+    <tr>
+      <td>b (%)</td>
+      <td>5</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c (%)</td>
+      <td>19</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>d (%)</td>
+      <td>69</td>
+      <td>79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Morphology</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Normal (%)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>&gt;4</td>
+    </tr>
+    <tr>
+      <td>Head defects (%)</td>
+      <td>99</td>
+      <td>99</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Midpiece defects (%)</td>
+      <td>63</td>
+      <td>59</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flagella defects (%)</td>
+      <td>18</td>
+      <td>47</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -131,67 +328,279 @@ Overall, the identification and detailed characterization of further patients wi
 
 ## Methods
 
-## Animals
+### Animals
 
 All animal experiments were conducted according to German law of animal protection and in agreement with the approval of the local institutional animal care committees (Landesamt für Natur, Umwelt und Verbraucherschutz, North Rhine-Westphalia, approval IDs: AZ84-02.04.2013.A429, AZ81-02.04.2018.A369). Cylc1- and Cylc2-deficient mice were generated by CRISPR/Cas9-mediated gene editing in zygotes of the hybrid strain B6D2F1. Guide sequences are depicted in Table 2. For Cylc1, in vitro transcribed sgRNAs (50 ng/µl each) and Cas9 mRNA (100 ng/µl) (Sigma-Aldrich, Taufkirchen, Germany) were microinjected into the cytoplasm of zygotes as described previously (Schneider et al., 2016). Cylc2-deficient mice were generated by electroporation of ribonucleoprotein (RNP) complexes into zygotes using a GenePulser II electroporation device (Bio-Rad, Feldkirchen, Germany). For RNP formation, crRNA and tracrRNA (IDT, Leuven, Belgium) were combined in duplex buffer (IDT) to a final concentration of 50 mM each and annealed (95°C, 5 min; cool down to room temperature with –0.2 °C/s). For RNP assembly, 4 µM Cas9 protein (IDT) and 2 µM of each annealed cr/tracr RNA were combined in Opti-MEM media (Gibco 11058-021, Thermo Fisher, Carlsbad, CA, USA) and incubated for 10 min at room temperature. RNP complexes were diluted 1:2 in Opti-MEM, supplemented with 30–40 zygotes in a 0.1 cm gene-pulser cuvette (Bio-Rad) and electroporated (two 30 V square wave pulses, 2 ms pulse length, 100 ms pulse interval). Recovered embryos were cultured over night at 37°C, 5% CO2 in G-TL medium (Vitrolife, Göteborg, Sweden) and transferred into the oviduct of pseudopregnant CB6F1 foster mice at two-cell stage. Offspring were genotyped and gene-edited alleles were separated by backcrossing of founder animals with C57Bl/6J mice. Established mouse lines were registered with Mouse Genome Informatics: Cylc1em1Hsc (MGI: 7341368), Cylc2em1Hsc (MGI:6718280). Mouse lines were maintained as congenic strains on C57Bl/6J background. For all analyses sexually mature males at the age of 8–15 weeks, backcross generation ≥N3 were used.
 
-## Genomic DNA extraction and genotyping
+**Table 2.**
+ Protospacer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Protospacer sequence (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mm.Cas9.CYLC1.sg1</td>
+      <td>GGTTTATCCATACGTGAGT</td>
+    </tr>
+    <tr>
+      <td>Mm.Cas9.CYLC1.sg2</td>
+      <td>GGCTTAGGTGATGCTCTAAA</td>
+    </tr>
+    <tr>
+      <td>Mm.Cas9.CYLC2.1.AB</td>
+      <td>AAGGGAGAGTCGAAAAGCGT</td>
+    </tr>
+    <tr>
+      <td>Mm.Cas9.CYLC2.1.AF</td>
+      <td>GGATCCAAGGATAAAGTGTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genomic DNA extraction and genotyping
 
 Genomic DNA was extracted from biopsies using the HotShot method (Truett et al., 2000). PCRs were assembled according to the manufacturer’s protocol of the DreamTaq Green DNA Polymerase (Thermo Fisher, EP0712) using gene-specific primers listed in Table 3.
 
-## Fertility analysis
+**Table 3.**
+ PCR primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cylc1</th>
+      <th>5′–3′</th>
+      <th>Expected band size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cylc1_F1</td>
+      <td>TATACACACAATCCACAATCTTGAAAT</td>
+      <td>WT: 427 bp</td>
+    </tr>
+    <tr>
+      <td>Cylc1_R1</td>
+      <td>TCACTTCAAAATCCAACTTGTCCT</td>
+      <td>KO: 264 bp</td>
+    </tr>
+    <tr>
+      <td>Cylc1_R2</td>
+      <td>TGCCTAGTATTTCAGGTTCCCC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cylc2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cylc2_F1</td>
+      <td>ACCACCATTATGGATGCACCG</td>
+      <td>WT: 376 bp</td>
+    </tr>
+    <tr>
+      <td>Cylc2_R1</td>
+      <td>AGTGTTTCTTGTGAGCTCGTTG</td>
+      <td>KO: 286 bp</td>
+    </tr>
+    <tr>
+      <td>Cylc2_R2</td>
+      <td>GGCTGAATCTTTACCCTTAGGT</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fertility analysis
 
 Males were mated 1:2/1:1 with C57Bl/6J females, which were checked daily for presence of a vaginal plug indicative for successful copulation. Plug positive females were separated and pregnancies as well as litter size were recorded.
 
-## Sampling
+### Sampling
 
 Mature sperm were obtained from the cauda epididymis in M2 medium (Merck) or PBS preheated at 37°C. Following several incisions of the cauda, sperm were retrieved by flush-out for 15–30 min. The extracted sperm samples were washed in PBS, centrifuged (4000 rpm, 5 min, 4°C), and snap-frozen. For squash tubule samples, fresh testes from three animals of each genotype were transferred to PBS and tubules were dissected as described by Kotaja et al., 2006. Tubule sections were pressed on a slide, quickly frozen in liquid nitrogen, and fixed in 90% ethanol for 5 min.
 
-## Semen analysis
+### Semen analysis
 
 Sperm concentrations for at least four animals of each genotype were determined using a Neubauer hemocytometer. Viability of sperm was determined by Eosin-Nigrosin staining as described previously (Schneider et al., 2020) for at least three animals per genotype. Sperm motility was analyzed referring to the WHO guidelines for analysis of human semen. For all analyses at least 100 sperm per individual were analyzed and the percentage of motile/immotile, viable/inviable sperm was calculated.
 
-## Quantitative reverse transcription-polymerase chain reaction
+### Quantitative reverse transcription-polymerase chain reaction
 
 RNA was extracted from the testis tissue with TRIzol (Life Technologies, Carlsbad, CA, USA; 15596018). RNA concentrations and purity ratios were determined by NanoDrop ONE (Thermo Scientific) measurements. qRT-PCR was performed as described previously (Courtot, 1991), on ViiA 7 Real Time PCR System (Applied Biosystems) using Maxima SYBR Green qPCR Mastermix (Thermo Fisher; K0221). Replicate of 3 was used for each genotype. Beta-actin was used as a housekeeping gene for normalization. Primers used are shown in Table 4.
 
-## Subcellular protein extraction and western blot analysis
+**Table 4.**
+ qRT primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Forward (5′-3′)</th>
+      <th>Reverse (5′-3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cylc1</td>
+      <td>GGGGAAAAATAAGCTCATGTGTAG</td>
+      <td>TTCAGGTTCCCCATTGGTTA</td>
+    </tr>
+    <tr>
+      <td>Cylc2</td>
+      <td>GCATTTCCCAAACCACCAAGG</td>
+      <td>AACGGATGGTCTCTCGGATATT</td>
+    </tr>
+    <tr>
+      <td>Beta-actin</td>
+      <td>TGTTACCAACTGGGACGACA</td>
+      <td>GGGTGTTGAAGGTCTCAAA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subcellular protein extraction and western blot analysis
 
 For the extraction of cytoskeletal protein fraction from sperm cells, Subcellular Fractionation Kit for Cultured cells (Thermo Fisher, #78840) was used according to the manufacturer’s instructions, with slight modifications to adjust it to sperm cells. Five subcellular protein fractions were extracted: membrane protein fraction, cytoplasmic protein fraction, soluble nuclear fraction, chromatin bound fraction, and cytoskeletal protein fraction. Briefly, epididymal sperm cells were washed in ice-cold PBS and centrifuged at 500 × g for 5 min at 4°C. Pellet was resuspended in Cytoplasmatic Extraction Buffer (CEB), incubated for 10 min and centrifuged again at 500 × g for 5 min. Following steps of subcellular fractionation were performed according to the manufacturer’s instructions. Quantity of proteins in each fraction was determined using NanoDrop ONE (Thermo Fisher). For further analysis only cytoskeletal protein fraction was used.
 
 Cytoskeletal proteins were separated on 12% SDS gel with 5% stacking gel. Transfer to PVDF membrane was performed using Trans Blot Turbo System (Bio-Rad). Membranes were washed with TBST 1×, stained with Coomassie blue, and blocked with 1% milk for 1 hr at room temperature with gentle shaking. Primary antibodies anti-CYLC1 and anti-CYLC2 were diluted in milk and incubated overnight at 4°C (for antibody dilutions see Table 5). After washing in TBST, membranes were incubated for 1 hr at room temperature with polyclonal goat anti-rabbit secondary antibody IgG/HRP (P044801-2; Agilent Technologies/Dako, Santa Clara, CA, USA), diluted 1:2000 in milk. After extensive TBST washing, membranes were imaged using WESTARNOVA2.0 chemiluminescent substrate (Cyanagen) or SuperSignal West Femto Maximum Sensitivity Substrate (34095; Thermo Fisher) and ChemiDoc MP Imaging system (Bio-Rad). Membranes were further re-blocked in 3% BSA for 1 hr at room temperature with gentle shaking and incubated with α-tubulin at 4°C overnight. After washing in TBST, membranes were incubated for 1 hr at room temperature with polyclonal rabbit anti-mouse secondary antibody IgG/HRP (P0260; Agilent Technologies/Dako) diluted 1:2000 in 3% BSA.
 
-## Proteomics
+**Table 5.**
+ Antibodies.
 
-## Peptide preparation
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Company</th>
+      <th>Catalogue number</th>
+      <th>Antigen</th>
+      <th>Dilution IF</th>
+      <th>Dilution WB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>α-Tubulin</td>
+      <td>Abcam</td>
+      <td>ab7291</td>
+      <td></td>
+      <td></td>
+      <td>1:10,000 in 3% BSA</td>
+    </tr>
+    <tr>
+      <td>α-Tubulin</td>
+      <td>Merck Millipore (Billerica, MA, USA)</td>
+      <td>16-232</td>
+      <td></td>
+      <td>1:1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CapZa3</td>
+      <td>Progen</td>
+      <td>GP-SH4</td>
+      <td></td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ccin</td>
+      <td>Progen</td>
+      <td>GP-SH3</td>
+      <td></td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cylc1 (used for mouse)</td>
+      <td>Davids Biotechnology (Regensburg, Germany)</td>
+      <td>Custom-made polyclonal antibody</td>
+      <td>AESRKSKNDERRKTLKIKFRGK andKDAKKEGKKKGKRESRKKR</td>
+      <td>1:1000(sperm cells)1:500(testis tissue)1:1000 western blot</td>
+      <td>1:1000 in 5% milk in TBST</td>
+    </tr>
+    <tr>
+      <td>Cylc1 (used for human samples)</td>
+      <td>Santa Cruz</td>
+      <td>sc-166400</td>
+      <td></td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cylc2</td>
+      <td>Davids Biotechnology (Regensburg, Germany)</td>
+      <td>Custom-made polyclonal antibody</td>
+      <td>KSVGTHKSLASEKTKKEVK and ESGGEKAGSKKEAKDDKKDA</td>
+      <td>1:1000(sperm cells)1:500 (testis tissue)1:1000 western blot</td>
+      <td>1:1000 in 5% milk in TBST</td>
+    </tr>
+    <tr>
+      <td>Hook1</td>
+      <td>Proteintech</td>
+      <td>10871-1-AP</td>
+      <td></td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PLCζ</td>
+      <td>Invitrogen</td>
+      <td>PA5-50476</td>
+      <td></td>
+      <td>1:100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sp56</td>
+      <td>Invitrogen</td>
+      <td>MA1-10866</td>
+      <td></td>
+      <td>1:500</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Proteomics
+
+#### Peptide preparation
 
 All chemicals from Sigma unless otherwise noted.
 
 Cytoskeletal protein solutions extracted as described in previous paragraph were processed with the SP3-approach (Hughes et al., 2019). Briefly, protein lysate with 50 µg protein were subjected to cysteine reduction and alkylation with 20 mM DTT and 40 mM acrylamide in 50 mM triethylammonium bicarbonate. Then a mixture of hydrophilic carboxylate-coated magnetic beads (equal amounts of Sera-Mag SpeedBeads, GE Healthcare, cat. no. 45152105050250, and cat. no. 65152105050250) were added at a bead:protein ratio of 10:1 (wt/wt). Protein binding was induced by adding three volumes of ethanol and subsequent mixing for 5 min. Beads with bound proteins were then washed three times with 80% ethanol and finally subjected to overnight tryptic digestion at 37°C using a trypsin:protein ratio of 1:25. Peptide solutions were separated from the magnetic beads, dried in a vacuum concentrator, and stored at –20°C. Before measurements, 10 µg of peptides were further desalted with C18 ZipTips (Merck Millipore, Darmstadt, Germany) to ensure complete removal of beads.
 
-## LC-MS analysis
+#### LC-MS analysis
 
 Dried peptides were dissolved in 10 µl 0.1% formic acid (solvent A). Peptide separation was performed on a Dionex Ultimate nano HPLC system (Dionex GmbH, Idstein, Germany) coupled to an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific, Bremen, Germany). One µg peptides were injected onto a C18 analytical column (400 mm length, 100 µm inner diameter, ReproSil-Pur 120 C18-AQ, 3 µm).
 
 The samples were analyzed by a standard data-dependent (DDA) method: Peptides were separated during a linear gradient from 5% to 35% solvent B (90% acetonitrile, 0.1% FA) at 300 nl/min within 120 min. Data-dependent acquisition was performed on ions between 330 and 1600 m/z scanned in the Orbitrap detector every 2.5 s (R=120,000, standard gain control and inject time settings). Polysiloxane (m/z 445.12002) was used for internal calibration. z>1 ions were subjected to higher-energy collision-induced dissociation (1.0 Da quadrupole isolation, threshold intensity 25,000, collision energy 28%) and fragments analyzed in the Orbitrap (R=15,000). Fragmented precursor ions were excluded from repeated analysis for 25 s.
 
-## Data analysis
+#### Data analysis
 
 Raw data processing of DDA data and analysis of database searches were performed with Proteome Discoverer software 2.5.0.400 (Thermo Fisher Scientific). Peptide identification was done with an in-house Mascot server version 2.8.1 (Matrix Science Ltd, London, UK) against the Uniprot reference proteome for M. musculus (as of 06/28/23) and a collection of common contaminants (Frankenfield et al., 2022). Precursor ion m/z tolerance was 10 ppm, fragment ion tolerance 20 ppm. Tryptic peptides (trypsin/P) with up to two missed cleavages were searched, propionamide was set as a static modification of cysteines, while oxidation of methionine and acetylation of protein N-termini were set as dynamic modifications. Spectrum confidence of Mascot results was assessed by the Percolator algorithm 3.05 as implemented in Proteome Discoverer (Käll et al., 2008). Spectra without high confident matches (q-value >0.01) were sent to a second-round Mascot search with semi-specific enzyme cleavage and changing the modification of cysteines with propionamide to dynamic. Proteins with two unique proteins in the protein group were reported. For quantification, summed abundances were normalized on total protein amount in Proteome Discoverer.
 
-## High-resolution microscopy of the flagellar beat
+### High-resolution microscopy of the flagellar beat
 
 Image sequences of mouse sperm were acquired using dark field at an inverted microscope (IX71; Olympus, Hamburg, Germany), equipped with a dark-field condenser and a high-speed camera (ORCA-Flash4.0 V3, C13220-20 CU, Hamamatsu, Hamamatsu City, Japan). A 10× objective (NA 0.4, UPlanFL; Olympus, Hamburg, Germany) with an additional ×1.6 magnifying lens (Olympus, Hamburg, Germany) that was inserted into the light path (final magnification: ×16) was applied. Image sequences were recorded at a rate of 200 frames per second (fps). A custom-made observation chamber was used (Hansen et al., 2018). Sperm samples were diluted in THY buffer shortly before insertion of the suspension into the observation chamber. Three WT and three Cylc2-/- animals were used.
 
-## Sperm nuclear morphology
+### Sperm nuclear morphology
 
 For the analysis of sperm nuclear morphology, epididymal sperm samples from three animals of each genotype were fixed in methanol and acetic acid (3:1). The samples were spread onto a slide and stained with 4’,6-diamidino-2-phenylindole (DAPI) containing mounting medium (ROTImount FluorCare DAPI (Carl Roth GmbH, Karlsruhe, Germany; HP20.1)). The sperm cells were imaged at ×100 magnification, using a Leica DM5500 B fluorescent microscope. At least 200 pictures were taken from each group and analyzed using Nuclear Morphology software (Skinner et al., 2019) according to the developer’s instructions. The minimum detection area was set to 1.000 pixels while the maximum detection area was 7.000 pixels.
 
-## Histology
+### Histology
 
 Bouin fixed testis tissues were paraffinized, embedded, and sectioned at 3–5 µm using microtome. For histological analysis, the sections were deparaffinized, hydrated incubated with periodic acid (0.5%) for 10 min, rinsed with H2O, and incubated for 20 min with Schiff reagent. Alternatively, tissue sections were stained with Hemalum solution acid (Henricks and Mayer) and Eosin Y solution (Carl Roth). In both procedures, stained sections were dehydrated in alcohol row and mounted using Entellan (Sigma-Aldrich). Slides were imaged at ×20 and ×63 magnification under bright field using 5500 B microscope.
 
-## Immunofluorescence/immunohistochemistry
+### Immunofluorescence/immunohistochemistry
 
 Bouin fixed testis tissue sections were deparaffinized in xylene and rehydrated in decreasing alcohol to be used for IHC staining. Squash testis samples fixed in 90% EtOH were used for the staining of α-tubulin and HOOK1. For sperm immunofluorescence, mature sperm cells isolated from cauda epididymis were fixed with methanol acetic acid (3:1), dropped on glass slides, and air dried. After washing in PBS twice, all samples were permeabilized using 0.1% Triton X-100 for 10 min at room temperature. The samples were then blocked with 5% BSA for 30 min, followed blocking with normal horse serum (Vectorlabs, Burlingame, CA, USA; DI-1788) for 30 min at room temperature. For tissue sections, heat-activated antigen retrieval was performed using citrate buffer (pH 6.0). All primary antibodies were incubated overnight at 4°C. Antibodies and dilutions are listed in Table 5. The respective secondary antibodies were incubated for 1 hr at room temperature using VectaFluor Labeling Kit DyLight 488 and DyLight 594 (Vectorlabs, Burlingame, CA, USA; DI-1788, DI-1794). Slides were mounted with DAPI containing mounting medium (ROTImount FluorCare DAPI, Carl Roth; HP20.1).
 
@@ -199,34 +608,34 @@ For IHC staining against CYLC1 and CYLC2, after antigen retrieval and blocking p
 
 For the analysis of acrosome biogenesis, PNA-FITC Alexa Fluor 488 conjugate (Molecular Probes, Invitrogen, Waltham, MA, USA; L21409) was used on the Buin fixed testis tissues. After permeabilization and blocking, the tissues were incubated with PNA-FITC 5 μg/ml for 30 min at room temperature. Mature sperm were fixed with paraformaldehyde (4%) for 20 min at room temperature. After PBS washing, the sperm samples were incubated with 5 μg/ml PNA-FITC and 5 nM Mito Tracker Red (Cell Signaling; 9082) for 30 min at room temperature. The slides were then mounted with DAPI mount. All stainings were performed on minimum of three animals per genotype.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 For TEM fresh epididymal sperm and testis tissue were used. After washing with PBS, the samples were fixed in 3% glutaraldehyde at 4°C overnight. The samples were then washed in 0.1 M cacodylate buffer and fixed again in 2% osmium tetroxide at 4% for 2 hr. After dehydration in an ascending ethanol row, the samples were contrasted in 70% ethanol 0.5% uranyl acetate for 1.5 hr at 4°C. Samples were then washed in propylenoxide, three times for 10 min at room temperature before embedding in Epon C at 70°C for 48 hr. Ultra-thin sections were examined using a Verios 460L microscope (FEI) with a STEM III-detector.
 
-## Evolutionary analysis
+### Evolutionary analysis
 
 Evolutionary rates of mammalian Cylicin genes were analyzed according to Lüke et al., 2016. Briefly, Cylc1 and Cylc2 nucleotide sequences were obtained from NCBI genbank and Ensembl genome browser. Phylogenetic trees of considered species were built according to the ‘Tree of Life web project’. The webPRANK software was applied for codon-based alignment of orthologous gene sequences and results were visualized using the ETE toolkit. To determine evolutionary rates of gene sequences across mammals, for different clades and for individual codon sites, the codeml application implemented in the PAML software was used (Yang, 1997; Yang, 2007). Selective pressures on protein level are represented by calculation of the nonsynonymous/synonymous substitution rate ratio (ω=dN/dS). It distinguishes between purifying selection (ω<1), neutral evolution (ω=1), and positive selection (ω>1) within various models. The M0 model served as basis for all performed analyses. Different codon frequency settings were tested for the M0 model of each gene and the setting with the highest likelihood was chosen. To test whether alternative models describe the selective constraints within a dataset more precise than the M0 model, likelihood ratio tests (LRTs) were performed. Applied models and LRTs are described by Yang, 1997; Yang, 2007; and Lüke et al., 2016.
 
-## Study cohort and ethical approval
+### Study cohort and ethical approval
 
 The MERGE (Male Reproductive Genomics study) cohort currently comprises over 2030 men, mainly recruited at the Centre of Reproductive Medicine and Andrology (CeRA) in Münster. The large majority has severe spermatogenic failure, that is severe oligozoospermia (<5 Mill./ml sperm concentration), crypto- or azoospermia. So far, only 35 cases were included because of notable sperm morphological defects (≥5 Mill./ml sperm concentration, <4% normal forms). Common causes for infertility such as oncologic diseases, AZF deletions, or chromosomal aberrations were ruled out in advance. Patients with aetiologically still unexplained infertility underwent whole exome sequencing.
 
 All participants gave written informed consent according to the protocols approved by the Ethics Committee of the Medical Faculty Münster (Ref. No. MERGE: 2010-578-f-S) in accordance with the Declaration of Helsinki in 1975.
 
-## Whole exome sequencing and data analysis
+### Whole exome sequencing and data analysis
 
 After DNA extraction from patients’ peripheral blood lymphocytes, WES was performed as previously described (Wyrwoll et al., 2020). WES data obtained from 2066 infertile men was filtered for rare (≤0.01 minor allele frequency, gnomAD) variants located within the coding sequence or the adjacent 15 bp of flanking introns in CYLC1 and CYLC2. Patients carrying only one variant in either of the gene were excluded. In case of either bi-allelic CYLC2 variants or a combination of CYLC1 and CYLC2 variants, the whole exome dataset was screened to rule out other potential genetic causes. Variants detected in this study were classified according to the guidelines by the American College of Medical Genetics and Genomics-Association for Molecular Pathology (ACMG-AMP) (Richards et al., 2015) adapted to recent recommendations as outlined in Wyrwoll et al., 2023.
 
 To rule out an alternative genetic cause for the patient’s condition, his exome data was screened for rare (MAF ≤0.01, gnomAD, and in-house database), homozygous, X-linked, or potentially compound heterozygous high-impact variants (stop gain, start lost, stop lost, frameshift, splice site, and splice region as well as missense variants with CADD >20) and rare, heterozygous LoF variants (stop gain, start lost, stop lost, frameshift, splice site) without filtering for a specific set of genes. Respective genes were screened for testis expression and reports of infertility.
 
-## Sanger sequencing
+### Sanger sequencing
 
 Sanger sequencing with variant-specific primers was conducted for validation and segregation purposes. The primers to confirm the CYLC1 (NM_021118.3) variant c.1720G>C p.(Glu574Gln) are 5’-ACTGATGCTGACTCTGAACCG-3’ (forward) and 5’-CCTTCGAGTCACAAAGTTGTCA-3’ (reverse). To confirm the CYLC2 (NM_001340.5) variant c.551G>A p.(Gly184Asp), the primers 5’-CTGTCGAGGTGGATTCTAAAGC-3’ (forward) and 5’-TGCATCCTTCTTTGCATCCT-3’ (reverse) were used.
 
-## Analysis of the human sperm samples
+### Analysis of the human sperm samples
 
 Human ejaculate samples from healthy donor and patient M2270 were analyzed according to WHO guidelines prior to washing in buffer and centrifuged (1000 rpm, 20 min). The cells were fixed in methanol and acetic acid (3:1) and used for immunofluorescence staining. Samples were dropped on slides and permeabilized with 0.1% Triton X-100. After blocking with 5% BSA for 30 min, slides were incubated with primary CCIN or CYLC1 antibodies (concentrations shown in Table 3) for 3 hr at room temperature. Secondary antibodies were incubated for 1 hr, followed by mounting with DAPI containing medium. All stainings were repeated three times using aliquots of the same sample.
 
-## Statistics
+### Statistics
 
 For all analyses mean values ± SD were calculated. Statistical significance was determined by one-way ANOVA using Bonferroni correction. All experiments were conducted as biological replicates and N is provided in Methods section and/or figure legends.

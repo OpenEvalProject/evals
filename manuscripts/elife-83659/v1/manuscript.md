@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Division of Pharmacotherapy and Experimental Therapeutics, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States
-2. https://ror.org/0130frc33 Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States
-3. https://ror.org/0130frc33 Lineberger Comprehensive Cancer Center, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States
+1. Division of Pharmacotherapy and Experimental Therapeutics, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. Lineberger Comprehensive Cancer Center, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -33,9 +33,19 @@ In this study, we applied imaging flow cytometry to quantify BiTE-induced IS for
 
 ## Results
 
-## Experimental design and theoretical models
+### Experimental design and theoretical models
 
 The formation dynamics of the BiTE-induced IS were the focus of this study. As depicted in Figure 1a, CD3+ Jurkat was used as effector cells (E) while CD19+ Raji was used as target cells (T). Jurkat and Raji cells were sorted into three subpopulations, high (H), medium (M), and low (L), based on their membrane expressions of CD3 or CD19, respectively (Figure 1—figure supplement 1). Effector and target cells were then co-incubated in the presence of blinatumomab. IS formation dynamics were visualized and quantified by imaging flow cytometry (Figure 1a, Figure 1—figure supplement 2). We quantified the dynamics of IS formation under various experimental conditions, including different cell densities, antigen expressions, incubation durations, E:T ratios, and antibody concentrations. Multiple types of IS were observed and quantified, including ‘typical’ IS with one effector and one target cell (ET) and ‘variants’ with three or more cells engaged, such as ETE, ETT, and ETET.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-v1.jpg)
+
+**Figure 1.:** The study examined the formation dynamics of immunological synapses (IS) elicited by a bispecific T cell engager (BiTE). (a) The abundance and dynamics of IS formation were quantified by imaging flow cytometry under various experimental conditions. (b) Three mechanistic agent-based models were developed for the comprehensive characterization of cell-cell engagement and tumor-killing effects on different spatiotemporal scales. 3-D, three-dimensional; 2-D, two-dimensional.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Step 1, gate cells in best focus (R1). Step 2, gate conjugates (R2). Single cells (intermediate area value and high aspect ratio) are excluded. Step 3, gate CD3 and CD19 double positive (R3, FITC+PE+). Step 4, gate conjugates with only one target cell (R4). Step 5, gate conjugates with only one effector cell (R5). This subpopulation consists of doublets with only one effector and one target cell. Step 6, gate immunological synapse (R6). 'Valley’ mask is employed to quantify actin intensity in the region of contact (Bright detail intensity). Co-localization wizard is used to measuring overlap (Bright detail similarity). For technical details, please see the user’s manual of IDEAS.
 
 We developed three mechanistic agent-based models to investigate IS formation and tumor-killing on different spatiotemporal scales. These models were developed in a stepwise fashion and calibrated with experimental or clinical data. As shown in Figure 1b, the base model was developed for predicting IS formation dynamics within 1 hr. The base model consists of three fundamental components during IS formation: three-dimensional (3D) binding between antibodies and antigens (CD3 or CD19) to form binary complexes, the probability of cell-cell encounter, and cell-cell adhesion driven by two-dimensional (2D) binding to form ternary complexes (CD3-BiTE-CD19) on the cellular membrane. The model structure for the base model is provided in the next section.
 
@@ -43,7 +53,7 @@ Next, the base model was extended with serial cell-cell engagement dynamics to c
 
 Last, the in vitro model was expanded to include cell-cell engagement in anatomically distinct compartments of the body. This model considered infiltration gradients of T and B cells and organ-to-organ cell trafficking. We refer to this expanded model as the in vivo model. This model integrated patient-specific parameters to predict clinically observed profiles of tumor killing and relapse. The in vivo model was also applied to support the simulation of antigen escape and tumor evolution across anatomical sites and compare dosing regimens for effective tumor control in light of tumor evolution.
 
-## Model structure (Base model)
+### Model structure (Base model)
 
 The major mechanism of BiTE pharmacology is to produce ternary complexes (CD3-BiTE-CD19) on opposing cell surfaces, driving IS formation. The dynamics of IS formation are, essentially, two independent and indispensable cellular processes mediated by the cell-cell encounter and cell-cell adhesion. Compared to molecular scale-focused pharmacodynamics models of BiTEs (Betts et al., 2019; Jiang et al., 2018; Schropp et al., 2019; Song et al., 2021), our models highlight the importance of these two cellular processes for IS formation in the context of macroscopic and biophysical forces (Figure 2).
 
@@ -57,9 +67,21 @@ After the cell-cell encounter, the probability of adhesion was modeled as a func
 
 Model details and parameters for the base, in vitro and in vivo models are provided in materials and methods, Appendix 1, and Supplementary file 1.
 
-## Effects of BiTE concentration, cell density, and antigen expression on IS formation
+### Effects of BiTE concentration, cell density, and antigen expression on IS formation
 
 IS formation dynamics were quantified by imaging flow cytometry. Representative images of non-engaged (futile contact), typical IS, and multiple IS variants are shown in Figure 3a. Contact between the effector and target cells was evaluated in brightfield and FITC + PE channels. Their interfaces were classified as bona fide IS when there was a high intensity of actin (red) at the contact site, as F-actin is known to polymerize and locally concentrate at sites of the interface (Dustin and Cooper, 2000).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative image of non-engagement (futile encounter), typical IS, and other IS variants. Green (FITC), effector cells (E); Yellow (PE), target cells (T). (b–i), The effects of drug concentration (b), incubation duration (c), antigen density (d, e), cell density (f, g), and E:T ratio (h, i) on IS formation. The base model was applied to simulate IS formation under different conditions. Observations are dots (with SE) and model simulations are solid curves. 2 X, 2 × 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD3(H), CD3 expression (High); CD19(M), CD19 expression (medium); 5, 20, 100 ng/mL, blinatumomab concentration; 60 min, incubation duration. All samples were biologically triplicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Observed and model predicted fraction (%) of effector cells engaged in immunological synapse (IS). solid line, y=x.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The base model was applied to perform simulations. KD, dissociation constant; gray vertical line, the KD value of blinatumomab;. 2 X, 2 × 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD19(M), CD19 expression (medium); 5, 20, 100 ng/mL, blinatumomab concentration; 60 min, incubation duration.
 
 To investigate the key influential factors of IS formation, we explored multiple experimental conditions by varying BiTE concentration (0.65–2000 ng/ml), incubation duration (0–60 min), antigen expression (three levels for either CD3 or CD19), cell density (0.7–8 million total cells/mL), and E:T ratio (0.05–6) (Figure 3b–i). The fraction (%) of effector cells engaged in IS was quantified to inform IS formation dynamics. We also ran these experiments virtually using the base model to test the model’s predictive performance and to explore mechanistic hypotheses.
 
@@ -73,7 +95,7 @@ The E:T ratio also played a pivotal role in IS formation. Changing the E:T ratio
 
 Overall, we found multiple factors to be influential to IS formation. The model reasonably recapitulated IS formation dynamics under various conditions (Figure 3b–i). The goodness of model predictions is provided in Figure 3—figure supplement 1. With good model predictability, we further investigated the influence of CD3 and CD19 binding affinities (Figure 3—figure supplement 2a and b). Counterintuitively, higher affinities to CD3 resulted in higher predicted IS formation at low BiTE concentration (e.g. 0.58% and 0.41% at 0.65 ng/mL with KD,CD3 = 2.6×10-10 and 2.6×10-7 respectively, Figure 3—figure supplement 2b), but lower predicted IS formation at high BiTE concentration, which is perhaps due to the oversaturation of both CD3-BiTE and CD19-BiTE and higher induction of CD3 downregulation. Reduced IS formation at high CD3 affinities also resulted in a bell-shaped relationship (Figure 3—figure supplement 2b). Notably, there are papers reporting that high CD3 affinity may result in negative effect on BiTE safety and clinical efficacy (Chen et al., 2021; Dang et al., 2021). Our model suggested that blinatumomab has an affinity for CD3 within the optimal range of 10–7 – 10–6 M. In contrast, BiTEs with higher affinity to CD19 were predicted to enhance IS formation (Figure 3—figure supplement 2c and d).
 
-## IS variants were prevalent and well-predicted by the base model
+### IS variants were prevalent and well-predicted by the base model
 
 Many types of IS variants were observed in the experimental system. In total, six types of IS were quantified, including typical IS (ET), ETE, ETT, ETET, ETEE, and ETTT. IS variants with more than four cells were not analyzed in our study, nor included in the base model, due to their low abundance. The frequency of these variants was recorded and compared under each experimental condition.
 
@@ -85,17 +107,45 @@ Depending on the experimental condition, approximately 12–25% of IS observed w
 
 The E:T ratios of IS variants from all co-incubation samples were pooled for comparison (Figure 4d). The median E:T ratio in total IS was about 1.0. When excluding typical IS, this ratio increased to 1.1 for the remaining IS variants, suggesting slightly more effector cells were involved in IS variant formation than target cells, in line with model predictions.
 
-## The in vitro model predicted antigen escape and organ reservoirs
+### The in vitro model predicted antigen escape and organ reservoirs
 
 Effector T cells detach from IS and re-engage with other target cells in a process called serial cellular engagement. These effector T cells are also known as ‘serial killers’ (Fousek et al., 2021; Rogala et al., 2015). We extended the base model to incorporate IS detachment and re-engagement (Figure 5a). The in vitro model simulated IS formation and cellular cytotoxicity for up to 72 hr. With serial engagement and killing, the fraction of target cell lysis increased considerably, even at low BiTE concentrations (Figure 5b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-v1.jpg)
+
+**Figure 5.:** (a) Scheme of cell detachment and serial engagement in the in vitro model. Immunological synapses (IS) duration is set to 150 min. Pe, encounter probability, Pa, adhesion probability; (b) Long-term simulation (72 hr) of target cell depletion across drug concentrations; (c–d) The effects of drug concentration (c) and incubation time (d) on CD19 expression. Dashed line, a pre-defined threshold value of CD19 expression for 15% target cell depletion within 72 hr (initial setup: 2 X, E:T(1), CD3(L), 0.65 ng/mL, 72 h). Ctrl, the initial distribution of CD19 expression in the target cell population. (e–f) the effects of effector and target cell density on target cell depletion (%). Dots indicated the effect and target cell densities in healthy human organs. White color, 15% target cell depletion. BM, bone marrow; LN, lymph nodes; SP, spleen; Remainder, all the rest of the non-lymphoid organs. Initial setup: CD3(L), CD19(M) for (e), CD19 (M/20) for (f), 0.65 ng/mL, 72 h.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The in vitro model was applied to perform simulations. Dashed line, the threshold value of CD19 expression for 15% target cell depletion within 72 h (initial setup: 2 X, E:T(1), CD3(L), 0.65 ng/mL, 72 h). Ctrl, initial CD19 distribution in the target cell population. Kd, dissociation constant; 2 X, 2 × 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD19(M), CD19 expression (medium); 0.65, 20 ng/mL, blinatumomab concentration; 72 h, incubation duration.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Simulations were performed by the in vitro model. Dots indicated the effect and target cell densities in healthy human organs. White color, 15% target cell depletion. BM, bone marrow; LN, lymph nodes; SP, spleen; Remainder, all the rest of non-lymphoid organs. Initial setup: CD3(L), CD19(M) for a, CD19 (M×4) for b, CD19 (M/4) for c, CD19 (M/20) for d, 0.65 ng/mL, 72 h.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (a–b) Different effects of target cell density and CD19 expression on target cell depletion amount (a) and fraction (b). The in vitro model was used in the simulation. Initial setup: CD3(L), effector cell (1 X), target cell (X/20 to 500 X), CD19 expression (M/20 to 500 M), 0.65 ng/mL, 72 h. Total CD19 in the system was jointly influenced by CD19 expression per target cell and target cell density. CD19 expression influenced cell lysis to a similar extent as target cell density when both factors were low (e.g. CD19 expression <M, target cell density <X in (a)). However, further increase of CD19 expression on cell membrane did not further improve cell lysis (e.g. from point A to point C), indicating maximum ternary complexes at each interface have been reached. In contrast, the increase of target cell density continuously promotes cell lysis, e.g., from point A to B, due to enhanced probability of cell-cell encounter. When the target cell density reaches extremely high (>50 X), cell lysis started to decrease, resulting from fewer cell-cell adhesion events due to insufficient bispecific T cell engager (BiTE) concentration. As shown, although total CD19 in the system at point B and C are identical (10 × M × X), different cell lysis level is yielded, supporting different effects of CD19 on cellular and molecular processes. (c) Effects of B cell density and CD19 expression on B cell depletion in vivo. In each group, the change of total CD19 density from the reference (1 X, 200 B cells/μL × 30,000 CD19/cell) was achieved through changing B cell density (red bar) or CD19 expression (gray bar). Their effects on B cell depletion amount were simulated by the in vivo model. Initial setup for reference (1 X): T cell (200 /μL), B cell (200 /μL), CD3 (50, 000 /cell), CD19 (30, 000 /cell), 0.73 ng/mL, 72 h. Different effects of CD19 on cellular and molecular processes have been confirmed by the in vivo model. Similarly, the increase of CD19 expression within low-level range (3 × 103–3 × 105 CD19/cell from 0.1X to 10X) constantly improved cell depletion, as ternary complexes formation at each interface increased with CD19 expression. By contrast, a bidirectional effect was shown by increasing B cell density, owing to enhanced probability of cell-cell encounter at the population level and then insufficient BiTE concentration. Herein, B cell density at 10 X (2000 /μL) in the blood indicates extremely high organ B cell density in the model, e.g., spleen (~9 × 108 /mL) and lymph nodes (~3 × 108 /mL).
 
 Importantly, the in vitro model predicted tumor evolution toward populations with low CD19 expression (i.e. antigen escape). Approximately 10–20% of patients who relapse after blinatumomab treatment experience antigen escape, which decreases the efficacy of subsequent anti-CD19 CAR-T cell therapy (Braig et al., 2017; Pillai et al., 2019). As shown in the model, tumor cells with lower CD19 expression had a lower chance of being engaged by effector cells and thus a higher probability of surviving (Figure 5c, d). The speed of evolution was predicted to increase at greater BiTE concentrations (Figure 5c) and accelerate over time (Figure 5d). The effect of E:T ratio, cell density, and antigen affinity on tumor evolution were also simulated (Figure 5—figure supplement 1). Notably, greater IS formation led to more extensive evolution toward lower CD19-expressing cells.
 
 The impact of cell density at clinically relevant BiTE concentrations was also interrogated (Figure 5e, f, Figure 5—figure supplement 2). Notably, an increase of effector cell density resulted in higher fractions of target cell lysis at 72 hours. However, a higher density of target cells did not markedly diminish the fraction of target cells lysed at a given effector cell density, due to a compensatory increase in the probability of cell-cell encounter probability per effector cell. When target cell density was extremely high (e.g., > 5×106/mL with medium CD19 expression at 1.45×105/cell in Figure 5e), lysis fraction decreased, as the low BiTE concentration may have become a limiting factor for IS formation. We used organ-specific effector and target cell abundance (Supplementary file 1b) to compare the predicted gradient of cell lysis across organs (Figure 5e, f, Figure 5—figure supplement 2). Higher target cell lysis was predicted in lymph nodes and the spleen due to the abundance of effector cells in these organs. The bone marrow and all the rest of non-lymphoid organs (the remainder) showed restricted cell lysis primarily due to their relatively low abundance of effector cells (Figure 5f). The model also predicted that some organs like the bone marrow may become tumor cell sanctuary sites, providing space for tumor cell survival and adaptation, thereby increasing the likelihood of treatment resistance.
 
-## The in vivo model predicted clinical outcomes and tumor evolution across anatomical sites
+### The in vivo model predicted clinical outcomes and tumor evolution across anatomical sites
 
 We developed the in vivo model by defining IS formation dynamics in organs and cell trafficking across organ compartments (Figure 6a, Materials and methods, Supplementary file 1b and c). We used the model to simulate cell lysis in each organ and tumor-killing profiles throughout the body. Organ-specific cell lysis is highly dependent on relative IS formation dynamics and thus is a function of organ-specific effector (T cell) and target (B cell) populations, as well as BiTE exposure.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-v1.jpg)
+
+**Figure 6.:** (a) Scheme of organ compartment and cell trafficking. Remainder, all the rest of the non-lymphoid organs; kB cell, the turnover rate of B cell; ktraff, in and ktraff out, B cell trafficking rate. For parameters and trial information, see Materials and methods, and Supplementary file 1b and c; (b–e) Observed and simulated patient B cell profiles in blood; (f) Simulated CD19 evolution in non-responder patients of trial MT103-211; (g) Simulated cell lysis potency for each organ in trial MT103-104; (h) Simulated baseline (day 0), and post-treatment (day 7 and 14) B cell organ distribution in patients with OS >30 months of trial MT103-206. Bar plot, simulated baseline and post-treatment tumor burden; (i–l) Sensitivity analyses for the impact of drug concentration (i), T cell density (j), B cell density (k), and CD19 expression (l) on B cell depletion. T cell density change is allowed in the simulations (b–e), details see Supplementary file 1b. BM, bone marrow; LN, lymph nodes; OS, overall survival; Rmd, remainder.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Cell co-culture was conducted at different flow velocities, producing different shear stresses to mimic the effect of blood flow. Initial setup: 2 X, 2 × 106 total cells/mL; E:T(1), E:T ratio = 1; CD3(L), CD3 expression (Low); CD3(M), CD3 expression (medium); CD19(M), CD19 expression (medium); 100 ng/mL, blinatumomab concentration; 60 min, incubation duration. (b) Cell incubation was conducted at static condition (initial setup: 2 X, E:T(1), CD19(M), CD3(L), 100 ng/mL, 60 min, shear stress = 0) and followed by adding different shear stresses (5 min) to test the stability of pre-existing IS. The reference line (100%) indicated the frequency of the effector cells engaged at static condition.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83659/elife-83659-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The in vivo model was applied to perform the simulations. Bar plot showed the simulated tumor burden at baseline and post-treatment. BM, bone marrow; LN, lymph nodes; OS, overall survival; Rmd, remainder, all the rest of the non-lymphoid organs.
 
 In the in vivo model, the blood compartment serves merely as a trafficking route and does not mediate IS formation and detachment (Figure 6a). This assumption was supported by our observation that negligible IS was formed under shear stress forces approximating those experienced under blood flow (Figure 6—figure supplement 1a). Once formed, IS in the blood are unlikely to be broken through shear stress (Figure 6—figure supplement 1b). Blood B cell levels reflected the systemic average. Although only 2% of lymphocytes are present in the blood, blood flow can transport about 5 × 1011 lymphocytes each day – comparable to the total number of lymphocytes in the body (Westermann and Pabst, 1992).
 
@@ -107,7 +157,7 @@ We finally explored tumor evolution across anatomical sites and characterized th
 
 Sensitivity analyses confirmed that baseline tumor burden, drug concentration, cytotoxic T cell infiltration, and CD19 expression were critical to patient response (Figure 6i - l).
 
-## The in vivo model predicted optimal dosing regimens for blinatumomab
+### The in vivo model predicted optimal dosing regimens for blinatumomab
 
 We applied the in vivo model to simulate B cell-killing efficacy and CD19 evolution during blinatumomab treatment and compared different doses and regimens (Figure 7a). The initial plasma B cell abundance was assumed to be 200 cells/µL, with varying levels of growth rates. Under the approved dose (i.e. the high dose) and scheme 1, tumor-killing profiles were highly dependent upon tumor growth rate and baseline T cell abundance (Figure 7b). Tumors gradually accumulated resistance to treatment, especially fast-growing tumors. For slow-growing tumors with low T cell baseline, the medium dose showed a comparable tumor-killing effect but resulted in less CD19 evolution than the high dose (Figure 7c). In contrast, for slow-growing tumors with high T cell abundance, the high dose exhibited almost complete tumor control and much less CD19 loss than the medium dose (Figure 7d). The high dose showed similar efficacy at the two dosing schemes, but scheme 2 had fewer total doses. For fast-growing tumors, CD19 loss was significant, regardless of dose and regimen (Figure 7e). The medium dose in scheme 2 elicited less CD19 loss and better tumor control than scheme 1. Figure 7f summarized the favorable dosing regimen under each condition. We found that the approved dose or regimen was suboptimal for most slow-growing tumors; rather, the medium dose or dosing scheme 2 could reach similar efficacy with slower CD19 evolution. The high dose was required for almost all fast-growing tumors, with the only exception being patients with high CD19 expression and high T cell abundance at baseline who received more benefit from the medium dose at scheme 2. Overall, our in vivo model, through defining IS formation dynamics across anatomical sites in the system, could predict BiTE pharmacodynamics and changes in CD19 expression over time, and identify optimal dosing strategies based on baseline tumor characteristics.
 
@@ -139,25 +189,25 @@ In conclusion, our study investigated the dynamics of IS formation under various
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 Jurkat (Clone E6-1) and Raji cells were obtained from ATCC and maintained in RPMI1640 supplemented with 10–20% fetal bovine serum (FBS) and 1% penicillin-streptomycin. Cell lines were routinely tested to avoid mycoplasma contamination. Cell lines have been authenticated by STR profiling and no mycoplasma contamination was detected.
 
-## Cell sorting and antigen expression quantification
+### Cell sorting and antigen expression quantification
 
 Cell populations with high (H), medium (M), and low (L) antigen expression were sorted based on natural expression levels, without any genetic engineering. PE-anti-CD3 and PE-anti-CD19 (BD Biosciences, San Jose, CA) were used as staining antibodies and BD FACSAria II was used to perform cell sorting. Surface expression of CD3 and CD19 was quantitatively determined by Quantum MESF beads (Bangs laboratories, Fishers, IN) and BD LSR II flow cytometry (Figure 1—figure supplement 1).
 
-## Cell co-incubation and imaging flow cytometry
+### Cell co-incubation and imaging flow cytometry
 
 Effector cell (E, Jurkat), target cell (T, Raji), and anti-hCD19-CD3 BiTE (BioVision, Milpitas, CA) were well mixed and co-incubated in 1 mL medium at 37 °C. CD3 or CD19 expression, drug concentration, cell density, E:T ratio, and duration of co-incubation varied as initial setups. All samples were biological triplicates. After co-incubation, the effector cell, target cell, actin, and nucleus were stained by FITC-anti-CD7 (eBiosciences, San Diego, CA), PE-anti-CD20 (BD Biosciences, San Jose, CA), AF647-anti-phalloidin (Thermo Fisher, Waltham, MA) and DAPI, respectively. Staining for surface and intracellular markers was performed as described previously (Liu et al., 2019). Samples were analyzed using Amnis ImageStream MKII (Luminex, Austin, TX). The frequency of IS was quantified using IDEAS (Luminex). The gating strategy is summarized in Figure 1—figure supplement 2.
 
-## Cell co-incubation under shear stress
+### Cell co-incubation under shear stress
 
 To mimic the shear stress in blood circulation, the effector cell, target cell, and BiTE were well mixed in a circular pipe (internal diameter: 1.6 mm) and co-cultured (37 °C) at a certain flow velocity driven by a roller pump (Masterflex, Vernon Hills, IL). Flow velocities were adjusted to produce varying wall shear stresses, equivalent to those in the vein (1–6 dyn/cm2), artery (10–24, dyn/cm2), and capillary (20–40 dyn/cm2) (Kamiya et al., 1984; Papaioannou and Stefanadis, 2005; Sebastian and Dittrich, 2018). After co-culture, sample staining and analysis were the same as previously described.
 
-## Modeling and simulation
+### Modeling and simulation
 
-## Base model
+#### Base model
 
 Mechanistic agent-based models were developed to simulate IS formation dynamics in vitro and in vivo. We employed a sequential model-building strategy. First, we developed a model to capture IS formation dynamics within 1 hr, called the base model. The base model consisted of three modules at different dimensions: antibody-antigen binding (3D), cell-cell encounter, and cell-cell adhesion (2D) (Figures 1 and 2).
 
@@ -171,11 +221,11 @@ When an effector cell physically contacts a target cell, it may have a chance to
 
 In the base model (time scale ≤1 hr), each free cell had only one chance to encounter in each round (60 s). Cells that failed to encounter or adhere would remain free cells in the next round. Newly formed IS would have a chance to encounter an additional free cell to form an IS variant in the next round (Figure 2). Only one free cell was allowed to be added at a time. IS variants of up to four cells were allowed in the model. The algorithm for the base model is provided in Appendix 1—figure 3. Other important assumptions in the base model include: (1) no cell proliferation within 1 hr; (2) no change in binding equilibrium for binary complex within 1 hr; (3) once formed, IS are not breakable; (4) target cells were assumed to be eradicated after IS formation, without distinguishing between typical IS and IS variants.
 
-## In vitro model
+#### In vitro model
 
 Next, the in vitro model was developed by incorporating serial cell engagement into the base model (Figures 1b and 5a). The duration of IS was assumed to be 150 min (Fousek et al., 2021), and the detached effector cells from IS became free cells for additional IS formation. We made the following updates and assumptions to extend the time scale to 72 hr: (1) binding equilibrium for the binary complex was recalibrated every hour; (2) CD19 internalization was ignored; (3) CD3 down-regulation remained unchanged after 1 hr; (4) BiTE concentration remained constant; (5) target cell death rate is not included as target cells were assumed to be eradicated after IS formation.
 
-## Clinical translation (in vivo model)
+#### Clinical translation (in vivo model)
 
 Lastly, we expanded the model to develop the in vivo model for simulating tumor-killing profiles in patients. Several additional modules, including multiple organ compartments and cell trafficking across organs, were defined in the in vivo model (Figures 1b and 6a).
 
@@ -185,6 +235,6 @@ The rate of B cell trafficking to blood (ktraff, out) was set at 4.17% per hour,
 
 As the model output, blood B cell levels after treatment was derived from the residual B cells in organs based on the pre-defined ‘partition repertoire’.
 
-## Data source, software, and code availability
+### Data source, software, and code availability
 
 Publicly available clinical data (Bargou et al., 2008; Klinger et al., 2012; Zhu et al., 2016; Zhu et al., 2018; Zugmaier et al., 2015) were digitized from the literature using WebPlot Digitizer. Simulation, plotting, and statistical analysis were implemented in R (3.6.0). The base model code can be found on GitHub at https://github.com/zhoujw14/BiTE-Code, (copy archived at Zhou, 2022).

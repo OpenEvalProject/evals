@@ -29,31 +29,161 @@ Here we leveraged the insight from the above-mentioned study (Raud and Huster, 2
 
 ## Results
 
-## Study 1 (EMG)
+### Study 1 (EMG)
 
 10 participants performed the stop-signal task (Figure 1a). On each trial they initiated a manual response when a Go cue occurred, and then had to try to stop when a Stop signal suddenly appeared on a minority of trials. Depending on the stop signal delay, SSD, participants succeeded or failed to stop, each ~50% of the time). We measured EMG from the responding right index and little fingers (Figure 1b inset). Behavioral performance was typical, with SSRT (referred to as SSRTBeh) of 216 ± 8 ms, and action-stopping on 51 ± 1% of Stop trials (Table 1). EMG analysis was performed on the trial-by-trial root-mean-squared EMG (EMGRMS; Figure 1b). On 53 ± 6% of Successful Stop trials (i.e. where no keypress was made) there was a small but detectible EMG response (Partial EMG trials; see Figure 1—figure supplement 1 for RTEMG-RTBeh correlation), while on the remainder of Successful Stop trials there was no detectible EMG response (No EMG trials). The amplitude of EMG responses (mean peak EMG voltage) in the Partial EMG trials was 48 ± 3% smaller than in trials with a keypress (Figure 2a).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig1-v2.jpg)
+
+**Figure 1.:** (a) Stop-signal task. (b) EMGRMS on a Successful Stop trial (Partial EMG) in an exemplar participant. Data are aligned to the Go cue. CancelTime refers to the time from the Stop signal (dotted red line) to when the EMGRMS starts decreasing (blue line). The green and purple line represent the detected onset and offset of the EMG response. (Inset) Recording set-up with a vertical and a horizontal keypad to record keypresses from the FDI and ADM muscles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) RTEMG-RTBeh correlation in the Correct Go trials. Each small dot represents the mean in a participant, color coded by the RTEMG-RTBeh correlation in that participant, while the cross-hairs represent the s.e.m. in that participant. The large dot and cross-hairs represent the mean and s.e.m. across all the participants, again color coded by the mean RTEMG-RTBeh correlation (r = 0.97, p<0.001, BF10 >100; RTEMG = 342 ± 13 ms, RTBeh = 480 ± 12 ms) across all participants. The linear regression fit and its 95% confidence interval is shown as a green line and shaded region respectively. The unity line is represented as a black dotted line. (b) Same as (a) but for the Failed Stop trials (r = 0.97, p<0.001, BF10 >100; RTEMG = 302 ± 11 ms, RTBeh = 439 ± 11 ms).
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig2-v2.jpg)
 
-**Figure 2.:** (a) Normalized EMGRMS voltage in Failed Stop (orange), Partial EMG (brown), and No EMG trials (purple), aligned to the Stop signal. The lines and the shaded area represent the mean ± s.e.m. across participants. The dotted cyan line and shaded area represent the mean ± s.e.m of SSRTBeh across participants. The dots and cross-hairs represent the mean ± s.e.m. of the Go cue in a participant. Note that the time between the Go cue and the Stop signal (i.e. the SSD) is shortest for the No EMG (purple), then the Partial EMG (brown), and then the Failed Stop trials (orange). (b) Same as (a) but for study 2. (c) (Left) Beeswarm plot of the CancelTime in an exemplar participant from study 1. Each dot represents a trial. The dotted cyan line represents the SSRTBeh. (Right) Same as left but for study 2. (d) Correlation between CancelTime and SSRTBeh in study 1 (light red) and study 2 (yellow). The brown dot, lines and arrows represent the means, while the black dotted line represents the unity line. The linear regression fit and its 95% confidence interval (pooled study 1 and 2) is shown as a brown line and shaded region respectively.Figure 2—source data 1.
+**Figure 2.:** (a) Normalized EMGRMS voltage in Failed Stop (orange), Partial EMG (brown), and No EMG trials (purple), aligned to the Stop signal. The lines and the shaded area represent the mean ± s.e.m. across participants. The dotted cyan line and shaded area represent the mean ± s.e.m of SSRTBeh across participants. The dots and cross-hairs represent the mean ± s.e.m. of the Go cue in a participant. Note that the time between the Go cue and the Stop signal (i.e. the SSD) is shortest for the No EMG (purple), then the Partial EMG (brown), and then the Failed Stop trials (orange). (b) Same as (a) but for study 2. (c) (Left) Beeswarm plot of the CancelTime in an exemplar participant from study 1. Each dot represents a trial. The dotted cyan line represents the SSRTBeh. (Right) Same as left but for study 2. (d) Correlation between CancelTime and SSRTBeh in study 1 (light red) and study 2 (yellow). The brown dot, lines and arrows represent the means, while the black dotted line represents the unity line. The linear regression fit and its 95% confidence interval (pooled study 1 and 2) is shown as a brown line and shaded region respectively.
+
+**Table 1.**
+ Behavior (mean ± s.e.m.; All values in ms).Table 1—source data 1.Behavior in the Stop-signal task in all five studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Study 1 (EMG)</th>
+      <th>Study 2 (EMG)</th>
+      <th>Study 3 (TMS)</th>
+      <th>Study 4 (EEG)</th>
+      <th>Study 5 (EEG)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Go RTBeh</td>
+      <td>470 (15)</td>
+      <td>493 (15)</td>
+      <td>430 (17)</td>
+      <td>427 (15)</td>
+      <td>405 (6)</td>
+    </tr>
+    <tr>
+      <td>Failed Stop RTBeh</td>
+      <td>416 (11)</td>
+      <td>447 (14)</td>
+      <td>391 (12)</td>
+      <td>384 (12)</td>
+      <td>370 (5)</td>
+    </tr>
+    <tr>
+      <td>Correct Go %</td>
+      <td>97 (1)</td>
+      <td>98 (0)</td>
+      <td>99 (0)</td>
+      <td>99 (0)</td>
+      <td>99 (0)</td>
+    </tr>
+    <tr>
+      <td>Correct Stop %</td>
+      <td>51 (1)</td>
+      <td>52 (1)</td>
+      <td>49 (1)</td>
+      <td>48 (1)</td>
+      <td>50 (0)</td>
+    </tr>
+    <tr>
+      <td>Mean SSD</td>
+      <td>237 (20)</td>
+      <td>280 (17)</td>
+      <td>194 (18)</td>
+      <td>191 (21)</td>
+      <td>170 (7)</td>
+    </tr>
+    <tr>
+      <td>SSRTBeh</td>
+      <td>216 (8)</td>
+      <td>204 (4)</td>
+      <td>219 (6)</td>
+      <td>214 (9)</td>
+      <td>219 (6)</td>
+    </tr>
+  </tbody>
+</table>
 
 We hypothesized that the time when the Partial EMG response starts declining after the Stop signal is a readout of the time when the Stop process is implemented in the muscle (hereafter ‘CancelTime’). We observed that, first, CancelTime is much earlier than SSRTBeh (see Figure 2c (left) for all CancelTimes in an exemplar participant; mean CancelTime = 146 ± 3 ms, SSRTBeh = 203 ms); and second, across participants, CancelTime was positively correlated with SSRTBeh (Figure 2d; study 1: mean CancelTime = 152 ± 11 ms, mean SSRTBeh = 216 ± 8 ms; r = 0.71, p=0.020, BF10 = 3.6). This suggests that CancelTime might index the time when stopping is implemented at the muscle.
 
-## Study 2 (EMG)
+### Study 2 (EMG)
 
 We then ran a new sample (n = 32; see Table 1 for behavioral results). Again, we observed partial EMG responses on 49 ± 2% of Successful Stop trials; where the EMG amplitude was 54 ± 1% smaller than the amplitude in trials with a keypress (Figure 2b). Figure 2c (right) shows the distribution of CancelTimes in an exemplar participant (mean CancelTime = 156 ± 4 ms, SSRTBeh = 218 ms). Again, across participants, mean CancelTime was positively correlated with SSRTBeh (Figure 2d; mean CancelTime = 146 ± 4 ms, mean SSRTBeh = 204 ± 4 ms; r = 0.59, p<0.001, BF10 = 71.7). Intriguingly, in each study, CancelTime was ~ 60 ms less than SSRTBeh. To further explore this, we pooled the data across the two studies.
 
-## Pooled studies 1 and 2
+### Pooled studies 1 and 2
 
-Mean CancelTime (147±5 ms) was 60±3 ms shorter than SSRTBeh (t(41) = 18.4, p < 0.001, d = 2.5, BF10 > 100; r = 0.62, p < 0.001, BF10 > 100). However, one must note that the criterion for estimating the stopping latency is different for the two measures, CancelTime uses EMG responses, while SSRTBeh uses the keypress responses. Hence, inherent differences in latencies between the two responses might lead to these incompatible measures of stopping latency. We hypothesized that the difference between SSRTBeh and the time of EMG cancellation (CancelTime) is due to an inherent “ballistic stage” in movements and once the muscle activity crosses the point-of-no-return they can no longer be stopped and a movement is inevitable (de Jong et al., 1990; Mirabella et al., 2006; Osman et al., 1986; Verbruggen and Logan, 2009). [The duration of such ballistic stages has been estimated to be ~15 ms in saccades in non-human primates (Boucher et al., 2007; Kornylo et al., 2003; Purcell et al., 2010) and ~50 ms for reaching movements in humans (Gopal and Murthy, 2016; Jana and Murthy, 2018)]. In other words, the time of EMG cancellation on partial trials reflects a time just before the point-of-no-return, whereby if EMG activity is allowed to continue develop beyond this point it will exceed a critical threshold such that a button press necessarily ensues (we presume this threshold reflects the point at which the inertia of the finger is overcome). In this respect, what is being tracked by the SSD staircasing procedure is the probability of crossing that EMG threshold, but since SSRT is calculated based on button press response times, it inevitably incorporates the ballistic stage that follows the crossing of this threshold. Hence, although our study was not designed to track the SSD staircase based on EMG, we calculated SSRT using the presence of EMG responses (SSRTEMG) instead of the keypress responses (SSRTBeh). The purpose of the SSRTEMG estimation was to test the idea of a ballistic phase by removing the influence of electromechanical delays and inertia in the neuromuscular system and response device, which likely make-up the ballistic stage, on the estimated stopping latency. We thus considered Partial EMG trials as Failed Stop trials and used EMG onset time (RTEMG) on Correct Go trials to recalculate SSRT (i.e. instead of using P(Respond|Stop) from behavior and Go RTBeh as is typical for SSRTBeh calculations; see Materials and methods; see Figure 3a for an exemplar participant). We then performed 1-way repeated measures ANOVA with 'Stop Time' as the dependent measure and the method of estimation as a factor (SSRTEMG, SSRTBeh, and CancelTime). There was a significant main effect of the estimation method on ﻿'Stop Time' (FGG(1.4, 56.1) = 66.3, p < 0.001, ηp2 = 0.6). Pairwise comparisons showed that SSRTEMG (157±7 ms) was significantly faster than SSRTBeh (207±3 ms) (Figure 3b; t(41) = 8.2, pBon < 0.001, d = 1.3, BF10 > 100), but importantly, not significantly different from mean CancelTime (t(41) = 1.5, pBon = 0.270, d = 0.2, BF10 = 0.5). This suggests that SSRTBeh might be protracted by a peripheral delay and that CancelTime might be a better metric of the time of implementation of the Stop process. [Our simulations using a previously described modelling framework (Boucher et al., 2007; Ramakrishnan et al., 2012; Usher and McClelland, 2001) also lead credence to this idea, demonstrating that the duration of the ballistic stage might be ~35 ms or longer (see Figure 3—figure supplement 1 and Appendix 1)].
+Mean CancelTime (147±5 ms) was 60±3 ms shorter than SSRTBeh (t(41) = 18.4, p < 0.001, d = 2.5, BF10 > 100; r = 0.62, p < 0.001, BF10 > 100). However, one must note that the criterion for estimating the stopping latency is different for the two measures, CancelTime uses EMG responses, while SSRTBeh uses the keypress responses. Hence, inherent differences in latencies between the two responses might lead to these incompatible measures of stopping latency. We hypothesized that the difference between SSRTBeh and the time of EMG cancellation (CancelTime) is due to an inherent “ballistic stage” in movements and once the muscle activity crosses the point-of-no-return they can no longer be stopped and a movement is inevitable (de Jong et al., 1990; Mirabella et al., 2006; Osman et al., 1986; Verbruggen and Logan, 2009). [The duration of such ballistic stages has been estimated to be ~15 ms in saccades in non-human primates (Boucher et al., 2007; Kornylo et al., 2003; Purcell et al., 2010) and ~50 ms for reaching movements in humans (Gopal and Murthy, 2016; Jana and Murthy, 2018)]. In other words, the time of EMG cancellation on partial trials reflects a time just before the point-of-no-return, whereby if EMG activity is allowed to continue develop beyond this point it will exceed a critical threshold such that a button press necessarily ensues (we presume this threshold reflects the point at which the inertia of the finger is overcome). In this respect, what is being tracked by the SSD staircasing procedure is the probability of crossing that EMG threshold, but since SSRT is calculated based on button press response times, it inevitably incorporates the ballistic stage that follows the crossing of this threshold. Hence, although our study was not designed to track the SSD staircase based on EMG, we calculated SSRT using the presence of EMG responses (SSRTEMG) instead of the keypress responses (SSRTBeh). The purpose of the SSRTEMG estimation was to test the idea of a ballistic phase by removing the influence of electromechanical delays and inertia in the neuromuscular system and response device, which likely make-up the ballistic stage, on the estimated stopping latency. We thus considered Partial EMG trials as Failed Stop trials and used EMG onset time (RTEMG) on Correct Go trials to recalculate SSRT (i.e. instead of using P(Respond|Stop) from behavior and Go RTBeh as is typical for SSRTBeh calculations; see Materials and methods; see Figure 3a for an exemplar participant). We then performed 1-way repeated measures ANOVA with 'Stop Time' as the dependent measure and the method of estimation as a factor (SSRTEMG, SSRTBeh, and CancelTime). There was a significant main effect of the estimation method on ﻿'Stop Time' (FGG(1.4, 56.1) = 66.3, p < 0.001, $η_{p}^{2}$ = 0.6). Pairwise comparisons showed that SSRTEMG (157±7 ms) was significantly faster than SSRTBeh (207±3 ms) (Figure 3b; t(41) = 8.2, pBon < 0.001, d = 1.3, BF10 > 100), but importantly, not significantly different from mean CancelTime (t(41) = 1.5, pBon = 0.270, d = 0.2, BF10 = 0.5). This suggests that SSRTBeh might be protracted by a peripheral delay and that CancelTime might be a better metric of the time of implementation of the Stop process. [Our simulations using a previously described modelling framework (Boucher et al., 2007; Ramakrishnan et al., 2012; Usher and McClelland, 2001) also lead credence to this idea, demonstrating that the duration of the ballistic stage might be ~35 ms or longer (see Figure 3—figure supplement 1 and Appendix 1)].
 
-Next, we examined in more detail the EMG profile on Partial EMG trials. Across all participants, the EMG response in the Partial EMG trials (when aligned to the EMG onset) had a profile similar to the EMG response in the Correct Go and Failed Stop trials, but diverged ~55 ms after EMG onset (55 ms compared to Correct Go, and 56 ms compared to Failed Stop trials, Figure 3c). We surmised that if the Partial EMG trials reflect responses that have been actively cancelled at the muscle-level, then the amplitude of these responses should increase with SSD. The rationale was that, at shorter SSDs, the Go process will have been active for a shorter duration, meaning EMG activity will not have increased much before being inhibited, while at longer SSD, the Go process will have been active for a longer duration, meaning EMG activity will have increased much more before being inhibited. Indeed, the amplitude of the Partial EMG responses increased with SSD (Figure 3—figure supplement 2). A 1-way repeated measures ANOVA with amplitude as the dependent variable and the SSD as the independent variable showed significant effect of SSD on amplitude (F(4,24) = 3.7, p = 0.018, ηp2 = 0.4) (also see Coxon et al., 2006). This suggests that the Partial EMG trials represent inhibited Go responses and not merely a weak Go process (which would presumably not increase across SSDs). In other words, the partial EMG response does not simply reflect a weak Go response, where the individual intended to execute a response but failed to produce sufficient muscle activity to fully depress the button, since the amplitude of such responses would presumably not vary as a function of SSD.
+![Figure 3.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig3-v2.jpg)
+
+**Figure 3.:** (a) P(Respond|Stop) in an exemplar participant calculated using the behavioral response (dark green dots) and the EMG response (cyan dots). The lines represent the cumulative Weibull fit as $w(t)=\gamma−(\gamma−\delta)e^{[−(t/\alpha)\beta]}$ where t is the SSD, α is the time at which the function reaches 64% of its full growth, β is the slope, δ is the minimum value of the function, and γ is maximum value of the function. The difference between δ and γ marks the range of the function. (Inset) Beeswarm plot of the EMG onset (dark green) and the behavioral responses (cyan) used to calculate SSRTEMG and SSRTBeh respectively. (b) Comparison of SSRTBeh (cyan), CancelTime (brown), and SSRTEMG (dark green) across all participants. Each dot represents a participant, while the bar and cross-hair represents the mean ± s.e.m. in a group. (c) The normalized EMG responses aligned to the detected EMG onsets in the Correct Go (green), Failed Stop (orange), and Partial EMG (brown) trials. The line and shaded region represent the mean ± s.e.m. in a group. The dots and cross hairs represent the mean ± s.e.m. of the keypress in a participant. (d) Correlation between CancelTime and mean SSRTBEESTS estimate. Each dot and cross-hair represent the mean ± s.e.m. in a participant. The brown line and the shaded area represent the linear regression fit and its 95% confidence interval. The unity line is represented as a dotted black line. (e) Correlation between SD of CancelTime and SD of the SSRTBEESTS estimate. Other details same as (d). (f) Correlation between percentage Trigger Failures estimated from BEESTS and CancelTime. Other details same as (d).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Cumulative Weibull fit of the empirical (solid blue line) and simulated (dotted gray line) behavioral (Beh) inhibition function in an exemplar participant. The dots represent the P(Respond|Stop) data. (Inset) The Stop distribution estimated using the behavioral (Beh) inhibition function and (μSTOP-Beh,σSTOP-Beh) with the black triangle representing the mean. (b) The estimated Stop distribution poorly fits the EMG inhibition function in the exemplar participant (solid green line – empirical, dotted gray - simulated). Other details same as (a). (c) Comparison of the squared error between the simulated and empirical inhibition function when the Stop distribution is estimated from the Beh inhibition function and RTBeh (Beh inhibition function: squared error = 0.10 ± 0.01; EMG inhibition function: squared error = 0.21 ± 0.02; t(41) = 4.8, p<0.001, d = 0.7, BF10 > 100). Each dot represents a participant, and the bar and cross-hairs represent the mean ± s.e.m. (d) Same as (a) but now the Stop distribution (inset) has been estimated from the EMG inhibition function and the (μGO-EMG, σGO-EMG). (e) Similar to (b). The Stop distribution estimated from EMG inhibition function poorly fits the Beh inhibition function (solid cyan line – empirical, dotted gray - simulated). (f) Same as (c) but when the Stop distribution is estimated from the EMG inhibition function (EMG inhibition function: squared error = 0.12 ± 0.02; RT inhibition function: squared error = 0.23 ± 0.02; t(41) = 4.7, p<0.001, d = 0.9, BF10 > 100). (g) Schematic of the architecture underlying a Correct Stop trial. The green accumulator represents the Go process, while the red accumulator, starting at the SSD, represents the Stop process. Both race towards the threshold (orange line at the top), but as the Stop hits the threshold first, no response is elicited. There is a delay at the periphery (EMG onset to keypress) which is partitioned into a non-ballistic and ballistic stage. (h) Same as (g) but for a Partial EMG trial. Here the Go process reaches the threshold first and EMG response is elicited, but the Stop process intervenes during the non-ballistic stage and cancels the drive, thereby preventing a keypress. (i) Same as (g) but for a Failed Stop trial. Here the Stop process is unable to cancel the response as the ballistic stage is impervious to the Stop process. (j) Same as (b) but here the Stop distribution has been estimated using the EMG inhibition function and the model has a ballistic stage (solid cyan line – empirical, dotted cyan line – model with ballistic stage, dotted gray line – model without a ballistic stage). (k) Comparison of the squared error between the simulated and empirical inhibition function for Stop estimated from the EMG inhibition function, with (cyan) and without a ballistic stage (blue-green) (With ballistic stage: squared error = 0.14 ± 0.02; Without ballistic stage: squared error = 0.23 ± 0.02; t(41) = 4.2, p<0.001, d = 0.7, BF10 > 100).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The normalized EMG voltage in the partial EMG trials for the first 5 SSDs (SSD no.) in each participant (SSD1 = 0.206±0.012, SSD2 = 0.212±0.012, SSD3 = 0.237±0.017, SSD4 = 0.234±0.015, SSD5 = 0.260±0.020; rmANOVA: F(4,24) = 3.7, p = 0.018, $η_{P}^{2}$ = 0.4). Each dot represents a participant, while the bar and cross-hairs represent the mean and s.e.m. across all the participants.
+
+Next, we examined in more detail the EMG profile on Partial EMG trials. Across all participants, the EMG response in the Partial EMG trials (when aligned to the EMG onset) had a profile similar to the EMG response in the Correct Go and Failed Stop trials, but diverged ~55 ms after EMG onset (55 ms compared to Correct Go, and 56 ms compared to Failed Stop trials, Figure 3c). We surmised that if the Partial EMG trials reflect responses that have been actively cancelled at the muscle-level, then the amplitude of these responses should increase with SSD. The rationale was that, at shorter SSDs, the Go process will have been active for a shorter duration, meaning EMG activity will not have increased much before being inhibited, while at longer SSD, the Go process will have been active for a longer duration, meaning EMG activity will have increased much more before being inhibited. Indeed, the amplitude of the Partial EMG responses increased with SSD (Figure 3—figure supplement 2). A 1-way repeated measures ANOVA with amplitude as the dependent variable and the SSD as the independent variable showed significant effect of SSD on amplitude (F(4,24) = 3.7, p = 0.018, $η_{p}^{2}$ = 0.4) (also see Coxon et al., 2006). This suggests that the Partial EMG trials represent inhibited Go responses and not merely a weak Go process (which would presumably not increase across SSDs). In other words, the partial EMG response does not simply reflect a weak Go response, where the individual intended to execute a response but failed to produce sufficient muscle activity to fully depress the button, since the amplitude of such responses would presumably not vary as a function of SSD.
 
 To further validate CancelTime, we modelled the behavior using BEESTS (Bayesian Estimation of Ex-gaussian STop-Signal reaction time distributions; see Table 2 for model estimates). While SSRTBeh produces a single estimate per person, BEESTS uses a Bayesian parametric approach to estimate the distribution of SSRTs (Matzke et al., 2017). Also, for each participant, it provides an estimate of the probability of trigger failures (i.e. stop trials where the stopping process was not initiated Matzke et al., 2017). Across participants, mean CancelTime was positively correlated with the mean SSRTBEESTS (205 ± 3 ms; r = 0.54, p<0.001, BF10 > 100; Figure 3d). More interestingly, the SD of CancelTime (33 ± 2 ms) was positively correlated with the SD of SSRTBEESTS (48 ± 5 ms; r = 0.42, p=0.005, BF10 = 6.9; Figure 3e). Further, the percentage of trigger failures (4 ± 1%) was positive correlated with mean CancelTime (ρ = 0.57, p<0.001, BF10 > 100) suggesting that participants who fail to ‘trigger’ the Stop process more often, are also likely to have longer stopping latency, indicating that there might exist a dependency between the triggering and the implementation of the Stop process (Figure 3f). These relationships between CancelTime and model estimates give further credence to our interpretation that CancelTime on Partial EMG trials reflects a single-trial measure of the time of implementation of the Stop process.
 
-## Study 3 (TMS)
+**Table 2.**
+ BEESTS estimates (mean ± s.e.m.; All values in ms)Table 2—source data 1.BEESTS estimates for study 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Estimated parameters</th>
+      <th>Pooled study 1 and 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean Go RTBeh</td>
+      <td>483 (13)</td>
+    </tr>
+    <tr>
+      <td>SD Go RTBeh</td>
+      <td>94 (5)</td>
+    </tr>
+    <tr>
+      <td>Mean SSRTBEESTS</td>
+      <td>205 (3)</td>
+    </tr>
+    <tr>
+      <td>SD SSRTBEESTS</td>
+      <td>48 (5)</td>
+    </tr>
+    <tr>
+      <td>%Trigger Failures</td>
+      <td>4 (1)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study 3 (TMS)
 
 To further validate CancelTime and relate it to brain processes we turned to a different method – single-pulse TMS over a task-irrelevant muscle representation in the brain. As mentioned above, the reduction of MEPs from task-irrelevant muscles on Successful Stop trials (Badry et al., 2009; Cai et al., 2012; Wessel and Aron, 2013), is thought to reflect a basal ganglia-mediated global suppression (Wessel et al., 2016). Seventeen new participants (see Table 1 for behavioral results) now performed the task with their left hand, while TMS was delivered over the left motor cortex and MEPs were recorded from a task-irrelevant, right forearm muscle. MEPs were recorded at different times after the Stop signal on different trials: 100–180 ms in 20 ms intervals, as well as during the inter-trial interval which served as a baseline. Concurrently, we recorded EMG from the task-relevant left-hand muscles as in studies 1 and 2 above (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig4-v2.jpg)
+
+**Figure 4.:** (a) Experimental set up and TMS stimulus timings for study 3. Participants performed the Stop signal task with the left hand with concurrent EMG measurement of CancelTime from task-relevant FDI and ADM muscles. On a given trial, a single TMS stimulus over left M1 was delivered at one of 6 possible times to elicit a motor evoked potential (MEP) in the task-irrelevant extensor carpi radialis (ECR) muscle of the right forearm. (b) Global motor system suppression begins at 140 ms after the Stop-signal, and thus ~20 ms prior to the mean CancelTime. Paired t-tests: *, pBon < 0.05 Successful Stop (red; combined Partial and No EMG trials) vs. Correct Go (green); #, pBon < 0.05 Successful Stop vs. Failed Stop (orange). Each dot and cross-hairs represent the mean ± s.e.m. across the population. The black dotted line shows amplitude of MEPs normalized to those at the inter-trial interval. (c) (Top) Schematic representation of an MEP. (Bottom) Beeswarm plot of the mean corticospinal conduction time to a hand muscle, which was established by measuring the onset latency of MEPs in the hand (~23 ms on average). Each dot represents a participant. This conduction time is included in CancelTime. (d) Trial-by-trial analysis of MEP amplitudes organized into 30 ms time bins reflecting the time of TMS expressed relative to CancelTime. Global motor system suppression begins in a window 30-0 ms prior to the CancelTime (gray shaded region). Wilcoxon rank sum test: *, pBon < 0.05 Partial EMG (brown) vs. Correct Go (green); #, pBon < 0.05 Partial EMG vs. Failed Stop (orange); ^, pBon < 0.05 Failed Stop vs. Correct Go. The black dotted line shows amplitude of MEPs normalized to those at the inter-trial interval.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Normalised MEP amplitudes in Successful Stop trials divided according to the presence, or not, of a Partial EMG burst. There was no difference in amplitude of MEPs for trials with (Partial EMG, brown) and without (No EMG, purple) EMG bursts. The squares and cross-hairs represent the mean ± s.e.m. across the population. rmANOVA showed no main effect of trial type (F(1,16) = 1.2, p = 0.288, $η_{P}^{2}$ = 0.1) or time (F(4, 64) = 1.1, p = 0.356, $η_{P}^{2}$ = 0.1), nor any interaction of trial-type by time (F(4, 64) = 2.3, p = 0.066, $η_{P}^{2}$ = 0.1). Therefore, the timing and extent of the global motor system suppression on Successful Stop trials was not influenced by whether or not a partial EMG burst was detected.
 
 The key TMS finding, in keeping with earlier studies (Badry et al., 2009; Cai et al., 2012; Wessel and Aron, 2013), was of suppression of MEPs in the task-irrelevant forearm, indicating global motor system suppression, beginning ~ 140 ms following the Stop signal in Successful Stop trials (Figure 4b; see Figure 4—figure supplement 1 for MEP amplitudes for Partial EMG and No EMG trials separately). A 2-way repeated measures ANOVA with MEP amplitude as the dependent measure and the factors of trial-type (Correct Go, Successful Stop, Failed Stop) and time (100, 120, 140, 160, 180 ms after the Stop signal) showed main effects of both trial-type (F(2,32) = 7.2, p=0.003, ηp2 = 0.3) and time (FGG(2.5, 40.7)=4.8, p=0.008, ηp2 = 0.2), as well as an interaction of trial-type by time (F(8, 128)=3.4, p=0.002, ηp2 = 0.2). Post hoc t-tests across Successful Stop and Correct Go trials showed no difference at 100 ms (t(16) = 0.7, pBon = 1.0, BF10 = 0.3), 120 ms (t(16) = 2.5, pBon = 0.066, BF10 = 2.8), and 160 ms (t(16) = 2.1, pBon = 0.159, BF10 = 1.4). However, MEP amplitudes were significantly suppressed on Successful Stop trials at 140 ms (t(16) = 4.1, pBon = 0.003, BF10 = 39.8) and 180 ms (t(16) = 4.4, pBon < 0.001, BF10 = 65.2) after the Stop signal. Therefore, we estimate the onset of the global motor suppression to be ~ 140 ms after the Stop signal, which places it ~ 20 ms prior to the mean CancelTime (160 ± 9 ms). There were no significant differences in MEP amplitudes between Failed Stop and Correct Go trials at any time point, though MEP amplitudes on Successful Stop trials were also suppressed compared to Failed Stop trials at 160 ms (t(16) = 2.9, pBon = 0.033, BF10 = 4.9).
 
@@ -61,17 +191,41 @@ It makes sense that global motor suppression occurs before CancelTime as motor c
 
 To further elaborate the temporal relationship between global motor suppression and CancelTime, we performed a trial-by-trial analysis whereby MEP amplitudes were sorted according to the time at which TMS was delivered, relative to the time at which EMG decreased on Successful Stop, Failed Stop and Correct Go trials (Figure 4d). The suppression of MEPs in Successful Stop trials compared to Correct Go trials began in the 30 ms prior to the EMG decline (−30 to 0 ms: Z = 3.12, pBon = 0.005; 0 to 30 ms: Z = 4.48, pBon <0.001; 30 to 60 ms: Z = 2.45, pBon = 0.045). This lag in the time of EMG decrease relative to the time of the MEP suppression on Successful Stop trials can again be accounted for by the corticospinal conduction time. Thus, these results imply that the brain output to task-relevant muscles declines at approximately the same time as the global motor suppression begins. We note too, that MEPs were also suppressed in Failed Stop versus Correct Go trials, but at some delay relative to Successful Stops and the time of EMG cancellation (Figure 4d). This is consistent with the idea that the Stop process is initiated even in Failed Stop trials, and that part of the reason for the failure to stop is that the Stop process is initiated/implemented later in these trials (the other reason being that the Go process might have been completed particularly quickly).
 
-## Study 4 (EEG)
+### Study 4 (EEG)
 
 Having established that CancelTime reflects the time of an active stopping process at the muscle (studies 1 and 2, EMG/behavior), which also related tightly with the timing of global motor suppression (study 3, TMS), we then tested whether this EMG measure was also related to the timing of a prefrontal correlate of action-stopping, specifically the increase of beta power (13–30 Hz) before SSRTBeh at right frontal electrode sites (Castiglione et al., 2019; Wagner et al., 2018). We now measured scalp EEG as well as EMG from the hand, in 11 participants (see Table 1 for behavioral results). We derived beta bursts rather than beta power per se, as bursts have richer features (Shin et al., 2017) also see Little et al. (2018); Wessel (2020), such as burst timing and duration.
 
 To identify right frontal electrodes of interest in each participant (i.e. a spatial filter), we used Independent Components Analysis (Bell and Sejnowski, 1995; see Castiglione et al., 2019; Wagner et al., 2018). We selected a participant-specific independent component (IC) based on two criteria; First, the scalp topography (right-frontal, and if not present, frontal); and Second, an increase in beta power on Successful Stop trials (from Stop signal to SSRTBeh; StopWin) compared to activity prior to the Go cue [−1000 to −500 ms aligned to the Stop signal; see Materials and methods; Figure 5—figure supplement 1]. The average scalp topography across all participants is shown in Figure 5b, inset (see Figure 5—figure supplement 2 for average dipoles). For each participant, we estimated beta bursts; First, by filtering the data at the peak beta frequency; and Second, by defining a burst threshold based on the beta amplitude in a baseline period after the Stop signal (500–1000 ms after Stop signal in the Stop trials, and 500–1000 ms after the mean SSD in the Correct Go trials) (see Materials and methods; Figure 5—figure supplement 3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-v2.jpg)
+
+**Figure 5.:** (a) Burst % across time for Successful Stop (red), Failed Stop (orange), and Correct Go (green) trials for an exemplar participant in study 4 from the right frontal spatial filter. The shaded region represents mean ± s.e.m. The CancelTime is shown in brown and the SSRTBeh as a cyan line. (b) The mean burst probability across all participants for Successful Stop (red), Failed Stop (orange), and Correct Go (green) trials and their respective baselines (gray). The bars and cross-hairs represent the mean and s.e.m across participants, while the dots represent individual participants. (Inset top right) The average scalp topography of all the right frontal ICs across all participants. (c) Same as (b) but for study 5. (d) Correlation between mean BurstTime and mean CancelTime. The yellow dots and cross-hairs represent the participants in study 4, while the light red ones represent participants in study 5. The brown line and the shaded area represent the linear regression fit and its 95% confidence interval (pooled study 4 and 5). Other details same as Figure 2d.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a–k) shows the time course of the peak beta power (solid red line) in the selected IC for each participant. The dotted cyan line represents each participant's SSRTBeh. The inset in each panel shows the scalp topography for the selected IC.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a), (b), and (c) The sagittal, top, and coronal view of the brain respectively, showing the average dipole location. The purple dot represents the mean location and the orange bubble represents the SD.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (a) The average beta power (13–30 Hz) between the Stop signal and SSRTBeh (top panel) for a participant. The window between mean SSD (dotted pink line) and Stop (dotted black line at 0) represents the baseline time window (BaseWin). The time from Stop signal to SSRTBeh (dotted cyan line) represents the stop time window (StopWin). The burst threshold window is the time period from 500 to 1000 ms after the Stop signal. The bottom two panels show single trial examples of brief bursts of activity with the dotted black and cyan lines represent the Stop signal and SSRTBeh respectively. (b) The histogram of beta amplitude for all trials in a participant i(500 to 1000 ms after the Stop signal in the Stop trials; 500 to 1000 ms after mean SSD in the Go trials). The dotted red line represents the threshold for defining a burst which is estimated as median + 1.5 SD of the beta amplitude. The BurstTime and burst height are the time and amplitude of the peak within a burst respectively. Once a burst is identified using this threshold, the burst % and burst length are estimated using a lower threshold which is median + SD (dotted blue line) (c) The burst raster for all trials in a participant across time. Each black dot represents a burst in that trial. To compute BurstTime we consider the burst times between the Stop signal and SSRTBeh (dotted cyan line).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a) Burst% for the Correct Go (green), Successful Stop (red), and Failed Stop (orange), aligned to the Go cue in Study 4. The bold traces represent the mean across the population, while the shaded region represents the s.e.m. The grey, brown, and cyan shaded regions represent the mean ± s.e.m. of the time of presentation of the Stop signal, CancelTime, SSRTBeh across the population. (b) Same as (a) but for Study 5.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/50371/elife-50371-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (a) Correlation between mean burst height (0.9 ± 0.2) and mean CancelTime across participants in study 4 (r = 0.5, p=0.161, BF10 = 0.7). The brown dots and cross-hairs represent the mean ± s.e.m. for individual participants. The brown line and the shaded area represent the linear regression fit and its 95% confidence interval respectively. (b) Across participants correlation between mean burst length (210 ± 20 ms) and mean CancelTime in study 4 (r = −0.1, p=0.801, BF10 = 0.3). Other details are same as in (a). (c) Same as (a) but for study 5. Mean burst height is 0.65 ± 0.05 (r = −0.3, p=0.281, BF10 = 0.5). (d) Same as (b) but for study 5. Mean burst length is 220 ± 15 ms (r = −0.22, p=0.475, BF10 = 0.4).
+
 In an exemplar participant, the burst % increased for Successful Stop compared to both Failed Stop and Correct Go trials prior to SSRTBeh (Figure 5a). To quantify this across participants, we compared the mean burst % among the three trial-types, and for the time window from the Stop signal to the SSRTBeh of a participant (StopWin) and the baseline period before the Stop signal (BaseWin; Go to Stop signal in Stop trials and Go to mean SSD in Correct Go trials). We performed a 2-way repeated measures ANOVA with mean burst % as the dependent measure, with trial-type (Successful, Failed Stop, and Correct Go trials) and time-window (StopWin and BaseWin) as factors. There was a significant main effect of trial-type (F(2,20) = 4.5, p=0.025, ηp2 = 0.3) and a trial-type by time-window interaction (F(2,20) = 4.0, p=0.034, ηp2 = 0.3), but no main effect of time-window (F(1,10) = 3.8, p=0.088, ηp2 = 0.3). Post hoc t-tests showed that in the StopWin there was a significant increase in burst % for Successful Stop (14.6 ± 1.7%) compared to both its baseline (9.9 ± 1.7%; t(10) = 3.3, pBon = 0.022, BF10 = 7.6), and Correct Go (9.6 ± 1.3%; t(10) = 3.7, pBon = 0.015, BF10 = 11.8), but not to Failed Stop (10.3 ± 1.6%; t(10) = 2.1, pBon = 0.198, BF10 = 1.2) (Figure 5b). Thus, burst % increased for the Successful Stop trials which could not be attributed to post-movement beta rebound (see Figure 5—figure supplement 4).
 
 To further clarify the temporal relationship between beta activity and the current EMG measure of action-stopping, we quantified the mean burst time (BurstTime in the StopWin) for each participant. Across participants, the mean BurstTime (115 ± 6 ms) was significantly shorter than mean CancelTime (169 ± 10 ms; t(10) = 8.2, p<0.001, BF10 > 100) and there was also a strong positive relationship between them (ρ = 0.76, p=0.006, BF10 = 10.6; Figure 5d; see Figure 5—figure supplement 5 for correlation between CancelTime and other burst parameters). Further, we show that the observed correlation was not merely an artifact of varying StopWin across participants (permutation test, p<0.05; see Materials and methods). Thus, these results show that participants with an early frontal beta burst also had an early CancelTime.
 
-## Study 5 (EEG replication)
+### Study 5 (EEG replication)
 
 We ran a new sample of 13 participants (see Table 1 for behavioral results). As above a right frontal IC was extracted for each participant (average topography Figure 5c inset) and the burst % was compared for the three trial-types (Successful Stop, Failed Stop, and Correct Go) in the two time-windows (StopWin and BaseWin). Again, a 2-way repeated measures ANOVA with burst % as the dependent measure revealed that there was a significant main effect of trial-type (F(2,24) = 6.9, p=0.004, ηp2 = 0.4) and a trial-type by time-window interaction (F(1,12) = 5.8, p=0.009, ηp2 = 0.3; Figure 5c). Here there was also a significant effect of time-window on burst % (F(1,12) = 16.1, p=0.002, ηp2 = 0.6). Post-hoc t-tests confirmed that the burst % was greater for Successful Stop (16.2 ± 2.2%) compared to its baseline (11.3 ± 1.4%; t(12) = 3.3, pBon = 0.021, BF10 = 7.6), and Correct Go (12.0 ± 1.4%; t(12) = 3.0, pBon = 0.030, BF10 = 5.3) but not compared to Failed Stop (15.4 ± 1.4%; t(12) = 1.0, pBon = 0.957, BF10 = 0.34). Across participants, the mean BurstTime (129 ± 7 ms) was again significantly shorter than CancelTime (166 ± 8 ms; t(10) = 5.0, p<0.001, BF10 > 100) and there was a significant positive relationship (ρ = 0.57, p=0.045, BF10 = 1.9; Figure 5d). Again, a permutation test suggested that this correlation was unlikely to result from mere variation in the length of StopWin across participants (p<0.05). Combining data from studies 4 and 5 confirms the strong relationship between right frontal beta BurstTime and CancelTime (ρ = 0.66, p<0.001, BF10 = 29.4).
 
@@ -93,6 +247,10 @@ Taken together, these studies motivate a relatively detailed model of the tempor
 
 **Figure 6.:** Following the Stop signal, the right PFC including the rIFC and the preSMA gets activated at ~120 ms. These region/s activate (green connections) the STN of the basal ganglia. This in turn activates the globus pallidus interna which, via its inhibition (red connection) on the motor regions of the thalamus, cuts down the ‘drive’ to the motor cortex. Theoutcome is a global motor suppression at ~140 ms after the Stop signal. This suppression is reflected in the hand muscle at ~160 ms which is measured as the CancelTime. There is a delay of ~60 ms at the muscle level which gets added to the behavioral estimate of SSRT.
 
+![Video 1.](https://cdn.elifesciences.org/articles/50371/elife-50371-video1.mp4.jpg)
+
+**Video 1.:** Following the Go signal, after a delay, the thalamocortical drive starts building up. After a while this drive is sufficient to activate muscles via the corticospinal pathways. Following the Stop signal, the right PFC including the rIFC and the preSMA gets activated at ~ 120 ms. These region/s activate (green connections) the STN of the basal ganglia which in turn activates the globus pallidus interna which via its inhibition (red connection) on the motor regions of the thalamus cuts down the ‘drive’ of the motor cortex. This results in a global motor suppression at ~ 140 ms after the Stop signal. This suppression is reflected in the hand muscle at ~ 160 ms which is measured as the CancelTime. There is a delay of ~ 60 ms at the muscle level which gets added to the behavioral estimate of SSRT.
+
 We acknowledge that the timings in this model are approximations that are dependent on a range of factors (such as averaging across participants, running different experiments, and the particular parameters of detection algorithms). However, we note a striking convergence of timings across the current experiments and in other studies, for example CancelTime (Hannah et al., 2019; Raud et al., 2019; Raud and Huster, 2017), time of MEP suppression (Coxon et al., 2006; van den Wildenberg et al., 2010), corticospinal conduction time (Groppa et al., 2012; Hamada et al., 2013), BurstTimes (Hannah et al., 2019), and the ballistic stage (Gopal and Murthy, 2016; Jana and Murthy, 2018). Together, these all provide support for our model.
 
 This model specifies the possible chronometrics of stopping in more detail than extant human models, and, more generally, raises questions about the timing reported in some other studies where the neural change appears late. For example, movement neurons in monkey Frontal Eye Field decrease activity in less than 10 ms before SSRT (Hanes et al., 1998), dopaminergic neurons in rodent substantia nigra and striatum increase activity only 12 ms before SSRT (Ogasawara et al., 2018), TMS at ~ 25 ms before SSRT over human Intraparietal Sulcus prolongs SSRT (Osada et al., 2019), and P300 human EEG activity ~ 300 ms after the Stop signal relates to the stopping latency (Wessel and Aron, 2015). Whereas the rather late timing of some of these results might be related to processes such as monitoring and feedback (Huster et al., 2019) as has been ascribed to brain signatures that modulate after SSRT (Logan et al., 2015; Schall and Boucher, 2007), our earlier latencies for prefrontal bursts, TMS-MEP and muscle CancelTime are more indicative of a role in stopping itself.
@@ -105,7 +263,7 @@ In conclusion, we propose a detailed timing model of action-stopping that partit
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All were adult, healthy, human volunteers provided written informed consent and were compensated at $20/hour. The studies were approved by the UCSD Institutional Review Board (protocol #171285).
 
@@ -119,7 +277,7 @@ Study 4 (EEG). Eleven participants (six females, age 19 ± 0.4 years, all righ
 
 Study 5 (EEG): Fifteen participants (nine females, age 21 ± 0.4 years, all right-handed). Two were excluded from analysis, one for misaligned EEG markers due to a technical issue, while the other lacked a right frontal brain IC, based on our standard method (Castiglione et al., 2019; Wagner et al., 2018).
 
-## Stop-signal task
+### Stop-signal task
 
 This was run with MATLAB 2014b (Mathworks, USA) and Psychtoolbox (Brainard, 1997). Each trial began with a white square appearing at the center of the screen for 500 ± 50 ms. Then a right or left white arrow appeared at the center. When the left arrow appeared, participants had to press a key on a vertically oriented keypad using their index finger, while for a right arrow they had to press down on a key on a horizontally oriented keypad with their pinky finger (Figure 1b inset), as fast and as accurately as possible (Go trials). The stimuli remained on the screen for 1 s. If participants did not respond within this time, the trial aborted, and ‘Too Slow’ was presented. On 25% of the trials, the arrow turned red after a Stop Signal Delay (SSD), and participants tried to stop the response (Stop trials). The SSD was adjusted using two independent staircases (for right and left directions), where the SSD increased and decreased by 50 ms following a Successful Stop and Failed Stop respectively. Each trial was followed by an inter-trial interval (ITI) and the entire duration of each trial including the ITI was 2.5 s (Figure 1a).
 
@@ -131,13 +289,13 @@ Study 4. Participants performed the task with their right hand. Following 160 pr
 
 Study 5. Participants performed the task with their right hand. Following 80 practice trials, participants 24 blocks of 80 trials each (1440 Go trials and 480 Stop trials).
 
-## Data recording
+### Data recording
 
-## EMG
+#### EMG
 
 EMG data were acquired using a Grass QP511 AC amplifier (Glass Technologies, West Warwick, RI) with a frequency cut-off between 30 and 1000 Hz. A CED Micro 1401 mk II acquisition system sampled the data at 2 kHz. The EMG data were acquired by CED Signal v4 software (Cambridge Electronic Design Limited, Cambridge, UK) for 2 s following the fixation cue. The data acquisition was triggered from MATLAB using a USB-1208FS DAQ card (Measuring Computing, Norton, MA). In all five experiments, surface EMG was recorded from both the first dorsal interossei (FDI) and the abductor digiti minimi (ADM) muscles of the hand (Figure 1b inset). In the TMS experiment, surface EMG was also recorded from the task-irrelevant right extensor carpi radialis (ECR) muscle (Figure 4a).
 
-## TMS
+#### TMS
 
 MEPs were evoked using a TMS device (PowerMag Lab 100, MAG and More GMBH, Munich, Germany) delivering full sine wave pulses, and connected to a figure-of-eight coil (70 mm diameter, Double coil PMD70-pCool; MAG and More GMBH, Munich, Germany). During the task, the coil was positioned on the scalp over the left primary motor cortex representation of the ECR muscle and oriented so that the coil handle was approximately perpendicular to the central sulcus, that is at ~45° to the mid-sagittal line, and the initial phase of current induced in the brain was posterior-to-anterior across the central sulcus. Prior to the experiment, the motor hot spot was determined as the position on the scalp where slightly supra-threshold stimuli produced the largest and most consistent MEPs in ECR. The position was marked on a cap worn by the participants. Resting motor threshold (RMT) was defined as the lowest intensity to evoke an MEP of at least 0.05 mV in 5 of 10 consecutive trials while participants were at rest. We then established the test stimulus intensity to be used during task, which was set to produce a mean MEP amplitude of approximately 0.2–0.5 mV whilst the participant was at rest.
 
@@ -145,58 +303,58 @@ MEPs were also evoked in the left FDI muscle prior to beginning the main experim
 
 During the task, TMS stimuli were delivered on every Stop trial and on 50% of Go trials. On every Stop trial, a single TMS stimulus at the test stimulus intensity was delivered at one of six time points: inter-trial interval (100 ms prior to fixation; ITI), 100 ms, 120 ms, 140 ms, 160 ms and 180 ms after the Stop signal (Figure 4a). On the Go trials, TMS stimuli were yoked to the time of the Stop signal on the previous Stop trial. Thus, there were 48 trials per TMS time point on Stop trials and 96 trials per time point on Go trials.
 
-## EEG
+#### EEG
 
 64 channel EEG (Easycap, Brainvision LLC) was recorded in the standard 10/20 configuration at 1 kHz using BrainVision actiChamps amplifier (Brain Products GMBH, Gilching, Germany) and BrainVision Pycorder (Brain Products GMBH, Germany).
 
-## Data analysis
+### Data analysis
 
 All analyses were performed using MATLAB (R2016b, R2018b, R2019a).
 
-## Stop signal reaction time
+#### Stop signal reaction time
 
 SSRT from the behavioral responses (SSRTBeh) was determined using the integration method (Verbruggen et al., 2019). When calculating SSRT using the EMG responses, SSRTEMG, as the P(Respond|Stop) was often much more than 0.5, we calculated the SSRT individually for all SSDs and then averaged it (Verbruggen and Logan, 2009).
 
-## EMG data analysis
+#### EMG data analysis
 
 EMG data were filtered using a 4th order Butterworth filter (roll-off 24 dB/octave) to remove 60 Hz noise and its harmonics at 120, and 180 Hz. EMG data were full-wave rectified and the root-mean square (RMS) of the signal was computed using a centered window of 50 ms. Any EMG activity which was greater than 8 SD of the mean EMG activity in the baseline period (Fixation to Go cue) was marked, on a trial-by-trial basis. Starting from the peak of that EMG activity, we backtracked and marked the onset at the point where the activity dropped below 20% of the peak for five consecutive ms. This method of adjusting the threshold based on the peak EMG activity, allowed better onset detection than a fixed threshold, especially when the amplitude of the EMG activity was small. The time when EMG started to decline was determined as the time when, following the peak EMG, the activity decreased for five consecutive ms. Visual inspection of individual trials showed that this method provided a reliable detection of both EMG onsets (see Figure 1—figure supplement 1a,b for RTEMG vs. RTBeh correlation) and decline. Any detected EMG timing which was beyond 1.5 times the inter-quartile range (IQR) of the first and third quartile (Q3) of that particular timing distribution was deemed an outlier. This removed < 4% trials. CancelTime was marked as the time of the EMG decline following the Stop signal. For outlier rejection, CancelTimes had a lower cutoff of 50 ms and higher cutoff of Q3+1.5 × IQR. This removed < 3% trials.
 
 As the peak EMG amplitude for the FDI and ADM muscle were quite distinct, before averaging the two EMG activities, we normalized the muscle activity by the peak activity in that particular muscle (VoltageNorm in Figures 2a, b and 3c, Figure 3—figure supplement 2).
 
-## Global MEP suppression
+#### Global MEP suppression
 
 MEP amplitudes were measured on a trial-by-trial basis. Data were included for analysis if the following criteria were met: (i) the amplitude of the ECR EMG signal in a 90 ms period prior to the TMS stimulus was < 0.05 mV; (ii) the amplitude of the MEP fell within the mean±1.5× IQR of values for the same time point and trial type (Correct Go, Failed Stop, Successful Stop). Thereafter, MEP amplitudes measured at the ITI were collapsed across trial type (Correct Go, Failed Stop and Successful Stop), averaged and used as a baseline against which to compare other TMS time points. For each of the other TMS time points (100, 120, 140, 160, 180 ms following the Stop signal), data were averaged within each trial type (Correct Go, Failed stop, Successful Stop) and expressed as a percentage of the mean ITI MEP amplitude.
 
-## Corticospinal conduction time
+#### Corticospinal conduction time
 
 Corticospinal conduction time was determined by delivering TMS over the hand representation of left FDI and measuring MEP from the muscle (Figure 4c). The earliest MEP onset latency across 10 trials was identified by visual inspection of the EMG traces (Hamada et al., 2013; Hannah and Rothwell, 2017; Rossini et al., 2015).
 
-## Trial-by-trial analysis of CancelTime and time of global motor suppression
+#### Trial-by-trial analysis of CancelTime and time of global motor suppression
 
 To compare the temporal association between the EMG decline and MEP suppression, we performed a trial-by-trial analysis of Stop-signal task data only on trials where an EMG burst was detected. We first normalized the time of TMS on a given trial by subtracting the time of EMG decline from the time of the TMS pulse. Hence, negative values mean that TMS was delivered before the EMG decline and positive values mean that TMS was delivered after. We then plotted MEP amplitudes for each of the three response types (Correct Go, Failed Stop, and Successful Stop) against the normalized times binned into 30 ms windows. This analysis meant that for a given individual there were relatively few trials per time bin, and some bins would occasionally contain no data. Therefore, we combined data across all individuals. Prior to this, MEP amplitudes for each individual were normalized to the mean MEP amplitude at the inter-trial interval, to account for inter-individual variability in absolute MEP amplitudes at baseline. We restricted our analysis to time bins that contained at least 50 trials, which resulted in time range −90 ms to 60 ms.
 
-## EEG preprocessing
+#### EEG preprocessing
 
 We used EEGLAB (Delorme and Makeig, 2004) and custom-made scripts to analyze the data. The data were downsampled to 512 Hz and band-pass filtered between 2–100 Hz. A 60 Hz and 180 Hz FIR notch filter were applied to remove line noise and its harmonics. EEG data were then re-referenced to the average. The continuous data were visually inspected to remove bad channels and noisy stretches.
 
-## ICA analysis
+#### ICA analysis
 
 The noise-rejected data were then subjected to logistic Infomax ICA to isolate independent components (ICs) for each participant separately (Bell and Sejnowski, 1995). We then computed the best-fitting single equivalent dipole matched to the scalp projection for each IC using the DIPFIT toolbox in EEGLAB (Delorme and Makeig, 2004; Oostenveld and Oostendorp, 2002). ICs representing non-brain activity related to eye movements, muscle, and other sources were first identified using the frequency spectrum (increased power at high frequencies), scalp maps (activity outside the brain) and the residual variance of the dipole (greater than 15%) and then, subtracted from the data. A putative right frontal IC was then identified from the scalp maps (if not present then we used frontal topography) and the channel data were projected onto the corresponding right frontal IC. The data on Successful Stop trials were then epoched from −1.5 s to 1.5 s aligned to the Stop signal. We estimated the time-frequency maps from 4 to 30 Hz, and −100 to 400 ms using Morlet wavelets with three cycles at low frequencies linearly increasing by 0.5 at higher frequencies. The IC was selected only if there was a beta power (13 to 30 Hz) increase in the window between the Stop signal and SSRTBeh compared to a time-window prior to the Go cue (−1000 to −500 ms aligned to Stop signal). In each participant, the beta frequency which had the maximum power in this time window was used in the beta bursts computation (Figure 5—figure supplement 1).
 
-## Beta bursts
+#### Beta bursts
 
 To estimate the beta bursts, the epoched data were first filtered at the peak beta frequency using a frequency domain Gaussian window with full-width half-maximum of 5 Hz. The complex analytic envelope was then obtained by Hilbert transform, and its absolute value provided the power estimate. In each participant, to define the burst threshold, the beta amplitude within a period of 500 to 1000 ms (i.e. after the Stop signal in the Stop trials, and after the mean SSD in the Correct Go trials) was pooled across all trials [Note that compared to the ICA analysis here we picked a different time-window to estimate the burst threshold to keep the analysis unbiased. However, picking the same time-window also yielded similar results]. The threshold was set as the median + 1.5 SD of the beta amplitude distribution (Figure 5—figure supplement 3). Once the burst was detected, the burst width threshold was set as the median + 1 SD. We binary-coded each time point where the beta amplitude crossed the burst width threshold to compute the burst % across trials. For each detected burst, the time of the peak beta amplitude was marked as the BurstTime.
 
-## Statistical analysis
+### Statistical analysis
 
 For pairwise comparisons, the data were first checked for normality using Lilliefors test, and if normally distributed a two-tailed t-test (t-statistic) was performed, else a Wilcoxon signed rank test (Z-statistic) was performed. We interpret the effect sizes as small (Cohen’s d: 0.2–0.5; Bayes Factor in favor of the alternate hypothesis, BF10: 1–3), medium (d: 0.5–0.8; BF10: 3–10), large (d > 0.8; BF10 > 10). For comparisons across multiple levels, repeated-measures ANOVA was used, followed by Bonferroni corrected t-tests for pairwise comparisons (Bonferroni corrected p-value: pBon). The Greenhouse-Geisser correction was applied where the assumption of sphericity in ANOVA was violated (corrected F-statistic: FGG). Effect sizes for ANOVAs were interpreted as small (partial eta-squared, ηp2: 0.01–0.06), medium (ηp2: 0.06–0.14), and large (ηp2 : 0.14). For correlational analyses, Pearson’s correlation coefficient (r) was usually used, but Spearman’s correlation coefficient (ρ) was used when the data was bounded in a closed interval. All data are presented as mean ± s.e.m.
 
 In testing the relationship between BurstTime and CancelTime, we performed a permutation test. We sampled BurstTimes randomly from a uniform distribution between 0 and SSRTBeh for a given participant for 3000 iterations. For each iteration, we then computed the correlation (r) between the mean BurstTime and the mean CancelTime across participants. This generated a distribution of r ranging between −1 and 1. The p-value for our analysis was determined as the P(r ≥ rObs|H0) in the permuted data.
 
-## Bayesian modelling of behavioral data
+### Bayesian modelling of behavioral data
 
 We used the BEESTS model developed by Dora Matzke and colleagues (run in R Studio 1.1.463) which assumes a race between two stochastically independent process, a Go and a Stop processes. This model estimates the distribution of the SSRT by using the participant’s Go RTBeh distribution, and by considering the Failed Stop RTBeh as a censored Go RTBeh distribution. The censoring points are sampled randomly from the SSRT distribution on each Stop trial. The RTBeh distributions underlying the Go and Stop processes are assumed to have a Gaussian and an exponential component and is described by three parameters (μGo, σGo, τGo and μStop, σStop, τStop). For such ex-Gaussian distributions, the mean and variance of the RTBeh distributions are determined as μ + τ and μ2 + τ2, respectively. The model also estimates the probability of trigger failures for each participant. The model uses Bayesian Parametric Method (BPE) to estimate the parameters of the distributions. We used a hierarchical BPE, where individual subject parameters are modeled with the group-level distributions. This approach is thought to be more accurate than fitting individual participants and is effective when there is less data per participant (Matzke et al., 2013). We pooled the subjects across both study 1 and 2 to estimate the individual parameters. The priors were bounded uniform distributions (μGo, μStop: U(0,2); σGo, σStop: U(0,0.5) τGo, τStop: U(0,0.5); pTF: U(0,1)). The posterior distributions were estimated using the Metropolis-within-Gibbs sampling and we ran multiple chains. We ran the model for 5000 samples with a thinning of 5. The Gelman-Rubin (R̂) statistic was used to estimate the convergence of the chain. Chains were considered converged if R̂<1.1.
 
-## Data and scripts
+### Data and scripts
 
 A core element of this paper is a novel method of calculating single-trial stopping latency from EMG. Accordingly, we provide the EMG and behavioral data from all participants in study 1 and 2, along with analysis scripts, and a brief description of how to execute the scripts (https://osf.io/b2ng5/). All other EMG, TMS-MEP and EEG data and scripts are also provided at the above link.

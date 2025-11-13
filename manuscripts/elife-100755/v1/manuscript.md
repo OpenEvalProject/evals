@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00t3r8h32 Department of Psychology, University of Lübeck Lübeck Germany
+1. Department of Psychology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 
 † Corresponding author
 

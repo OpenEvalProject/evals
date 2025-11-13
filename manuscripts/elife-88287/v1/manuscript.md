@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01hcx6992 Institut für Biologie, Humboldt Universität zu Berlin Berlin Germany
-2. https://ror.org/00hj8s172 Department of Neuroscience, Zuckerman Mind Brain Behavior Institute, Columbia University New York United States
+1. Institut für Biologie, Humboldt Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
+2. Department of Neuroscience, Zuckerman Mind Brain Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
@@ -38,11 +38,143 @@ Since both chirps and positional parameters (such as size, orientation, or motio
 
 Under the communication-hypothesis, the assumption that chirps and beats are conveying different types of information (i.e. semantic value as opposed to position and related geometrical parameters) is therefore leaving this issue unresolved. (Table 1).
 
+**Table 1.**
+ Chirp categories .
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chirp type</th>
+      <th>FM (Hz)</th>
+      <th>Duration (ms)</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type 1</td>
+      <td>200–400</td>
+      <td>25</td>
+      <td>Engler et al., 2000; Bastian et al., 2001; Zakon et al., 2002</td>
+    </tr>
+    <tr>
+      <td>type 2</td>
+      <td>50–100</td>
+      <td>15–20</td>
+      <td>Engler et al., 2000; Bastian et al., 2001; Hupé et al., 2008</td>
+    </tr>
+    <tr>
+      <td>type 3, 4</td>
+      <td>200–300</td>
+      <td>75–200</td>
+      <td>Hagedorn and Heiligenberg, 1985; Engler et al., 2000; Engler and Zupanc, 2001</td>
+    </tr>
+    <tr>
+      <td>rises</td>
+      <td>10–20</td>
+      <td>50–100</td>
+      <td>Engler and Zupanc, 2001; Tallarovic and Zakon, 2002</td>
+    </tr>
+  </tbody>
+</table>
+
 In this study, we propose a solution to this problem by providing evidence for a previously unexplored function of chirping in weakly electric fish. We have gathered a large dataset of circa 67.000 chirps, obtained from staged social pairings, playback experiments and behavioral assessments of fish locomotory activity (see Table 2). We first show that the relative number of different chirp types in a given recording does not significantly correlate with any particular behavioral or social context. It is instead correlated to the biophysical properties of underwater electric fields and to the spatial arrangement of interacting EODs. By using high-speed infrared video recordings synchronized with multi-channel voltage data acquisition, we then analyzed chirps considering both their effects on beat processing and their spatial attributes, that is the spatial location of the interacting fish. Analyses of cross-correlation of chirp time-series, chirp-type transitions and of behavioral responses to playback chirps were used to assess the presence of meaningful correspondences. The occurrence of chirps of different types was then analyzed in relation with the most common behavioral displays used by brown ghosts during social interactions. Finally, by recording fish in different conditions of electrical ‘isibility’, we provide evidence supporting a previously neglected role of chirps: homeoactive sensing.
+
+**Table 2.**
+ Chirp dataset (total = 67,522 chirps).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Figure</th>
+      <th>N fish</th>
+      <th>Total</th>
+      <th>Type1</th>
+      <th>Type2</th>
+      <th>Type3</th>
+      <th>Rises</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fish pair interactions</td>
+      <td>1, 2, 5</td>
+      <td>130</td>
+      <td>30,486</td>
+      <td>4842</td>
+      <td>23,169</td>
+      <td>2395</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>playback chirps</td>
+      <td>3</td>
+      <td>16</td>
+      <td>15,720</td>
+      <td>2428</td>
+      <td>12,880</td>
+      <td>331</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>playback freq ramps</td>
+      <td>4</td>
+      <td>14</td>
+      <td>3966</td>
+      <td>779</td>
+      <td>3012</td>
+      <td>89</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>freely swimming pairs</td>
+      <td>6</td>
+      <td>24</td>
+      <td>4672</td>
+      <td>252</td>
+      <td>4164</td>
+      <td>77</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>novel environment</td>
+      <td>8</td>
+      <td>30</td>
+      <td>7893</td>
+      <td>1059</td>
+      <td>5172</td>
+      <td>239</td>
+      <td>1423</td>
+    </tr>
+    <tr>
+      <td>cluttered environment</td>
+      <td>9</td>
+      <td>12</td>
+      <td>1864</td>
+      <td>529</td>
+      <td>1225</td>
+      <td>80</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>cluttered playback</td>
+      <td>9</td>
+      <td>8</td>
+      <td>2921</td>
+      <td>405</td>
+      <td>2258</td>
+      <td>241</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Results
 
-## Experience is the main factor affecting chirp variability
+### Experience is the main factor affecting chirp variability
 
 During social interactions, communication signals are often related to immediate aspects of behavioral physiology (e.g. internal states, Owren et al., 2011). As a consequence, correlations between signals and behavioral contexts are often indicative of signal meaning (Flack and Waal, 2007). Thus, if behavioral meaning can be attributed to different types of chirps, as posed by the communication-hypothesis (e.g. Hagedorn and Heiligenberg, 1985; Larimer and MacDonald, 1968; Rose, 2004), one should be able to identify clear correlations between behavioral contexts characterizing different internal states and the relative amounts of different types of chirp.
 
@@ -64,7 +196,7 @@ To better define the main factors underlying chirp variability (i.e. types, freq
 
 Overall, this analysis indicated that environmental and social experience, together with beat frequency (DF) are the most important factors explaining chirp variability (Figure 2B). It also indicates that chirp parameters such as duration and FM do not seem to be associated with any particular context in a meaningful way, other than being affected by beat frequency. The plot of individual chirps (Figure 2C) shows the presence of clustering around different categorical variables and it reveals that experience levels or swimming conditions are important factors affecting chirp distribution (note for instance the large central ‘breeding’ cluster in which fish are divided and the smaller ones in which fish are free). Sender or receiver identity does not individuate any clear clustering relative to either sex (see the overlap of male_s/male_r and female_s/female_r) or social status (dominant/subordinate). Chirps labeled based on tank experience (i.e. resident vs intruder) are instead clearly separated. Social experience may also be relevant although it appears to affect chirp clustering only slightly (note the contiguity of the novel and experienced clusters). Nonetheless, most of the clustering could be simply explained by the DF (see inset in Figure 2C), as suggested by the lack of association of chirp types to the other social variables considered (Appendix 1—figure 3).
 
-## Brown ghosts display invariant chirp responses to chirping playback EOD mimics
+### Brown ghosts display invariant chirp responses to chirping playback EOD mimics
 
 A complementary approach to uncover correspondences between communication signals and behavioral states relies on the use of playback experiments. To determine whether brown ghosts respond to playback chirps in a chirp-type specific manner, we adopted a variation of the classic ‘chirp chamber’ approach (e.g. Dye, 1987; Bastian et al., 2001; Dunlap and Larkins-Ford, 2003) and recorded brown ghosts’ electrical and locomotor responses to playback EODs in freely moving conditions (N=16 fish, 8 females, 8 males; Figure 3A). In these experiments, the matching of emitted signals to playbacks as well as the locomotor activity (video recorded) displayed during close-range interactions with EOD sources (i.e. decisions to approach or avoid playback signals), can be used as a possible measure of signal value (Fugère and Krahe, 2010; King and McGregor, 2016).
 
@@ -90,7 +222,7 @@ Perhaps not surprisingly, we found that chirps are produced at higher rates when
 
 **Figure 4.:** (A–C) Examples of spectrograms from playback trials showing the responses to frequency ramps (increasing from –300 Hz to 300 Hz or decreasing within the same range) of different durations: 20, 60, and 180 s, respectively. (D–F) Chirp raster plots relative to the three trial types. Chirp responses are grouped based on fish identity (unspaced rows represent responses by the same fish). Playback time is represented by the gray areas. Some fish produced chirps even in absence of a playback EOD. (G–I) Histograms showing chirp type distributions by DF. Trials in which decreasing ramps were used were adjusted by flipping the time array to match the DF values. The pie plots show the relative amounts of the four types of chirp.
 
-## Chirping is mainly a self-referenced behavior
+### Chirping is mainly a self-referenced behavior
 
 As shown in other communication systems (bats, Bohn et al., 2008; cetaceans, Dunlop, 2017; primates, Slocombe and Zuberbühler, 2005a; Slocombe and Zuberbühler, 2005b; Notman and Rendall, 2005), valence and behavioral meaning could reside in conserved motifs that can serve as unequivocal signifiers for the specific context in which they are produced (Berwick et al., 2011; Nieder and Mooney, 2020). Similarly, in brown ghosts, while single chirps may neither be behaviorally salient nor informative, meaning could be attributed to chirp patterns or chirp transitions produced by the senders of the signals, the receivers or both. In agreement with this idea, in weakly electric fish, specific chirp sequences have been proposed to be relevant to specific behavioral contexts (Henninger et al., 2018; Dye, 1987) and even emotional states (Triefenbach and Zakon, 2008; Smith, 2013; Silva et al., 2013).
 
@@ -114,7 +246,7 @@ Eventually, the absence of conserved temporal correlations could also depend on 
 
 To test whether cross-correlation would be significantly affected during courtship, we simulated the onset of the reproductive season by gradually lowering water conductivity over the course of a 40-day period (from 400 μS to 100 μS, Kirschbaum, 1979). As a result of this treatment, at least 75% of the females used in this experiment (N=8) showed visible signs of egg maturation. Mixed-sex pairs (N=8 pairs) held in such conditions were then allowed to interact freely, in absence of any tank divider. As a control group we paired males and females in absence of any water conductivity change (‘novel’ vs ‘experienced’, Figure 5I and J). Although female fish produced a surprisingly higher number of chirps in these conditions, only minimal signs of cross-correlation could be detected, without reaching on average the threshold for statistical significance (Figure 5J). Collectively, these results indicate that brown ghosts utilize a very limited variety of chirp type transitions in different behavioral contexts and do not emit specific chirp patterns in any given behavioral context analyzed. More importantly, they show that – at least in the social conditions analyzed here and within small-sized time windows – chirp time series produced by different fish during paired interactions are consistently independent of each other. This further confirms the idea of chirp production and detection as independent processes and that chirp type variability merely depends on beat frequency (DF).
 
-## Chirping correlates with active sensing behaviors
+### Chirping correlates with active sensing behaviors
 
 To gain better insights into the behavioral correlates of chirping, we conducted simultaneous video and EOD recordings of freely swimming fish pairs (N=12, mixed sexes; see Materials and methods). The aim of these experiments was to assess the occurrence of consistent chirp-behavior correlations and more in general to evaluate chirp patterning in conjunction with behaviors other than chirp production. Behaving fish were recorded using an infrared camera under IR illumination (920 nm). Fish were allowed to habituate to the testing conditions (15 min) prior to recording of both behavioral and electrical activity (15 min). In this phase, fish were allowed to sense each other electrically through a plastic mesh divider. EODs were recorded in this phase and after removing the mesh barrier. Of the 23 fish chirping during these trials, 12 increased chirping once the direct interaction started, 5 did not alter their chirping rates, 6 decreased them. Chirps were coded again in four types. The ethogram used for this analysis was created according to previously published observations (Triefenbach and Zakon, 2008) and included the following behaviors: attacks (i.e. bites to the fish head, atk), chasing attempts (ch), escape attempts (esc), head butts (i.e. direct hits of the snout to the target fish flank, head), jaw quivering (often preceding attacks directed to the head or the mouth, jaw), backward swimming (knife), forward locomotion (loc), stationary motion or inactivity (rest), backward approaches with tail contact (tail1) or involving tail waving (tail2), and close body contact (not always aggressive in nature, accompanied by side-to-side swimming, body intertwining and even periods of inactivity, wrestle).
 
@@ -142,7 +274,7 @@ Overall, these results provided mutually reinforcing evidence indicating that ch
 
 The significantly higher extent of chirping during swimming and locomotion, consistently confirmed by four different approaches (PSTH, TM, CN, MDS), suggests that – although chirp-behavior correlations may exist at time-scales larger than those here considered – chirping may be linked more strongly with scanning and environmental exploration than with a particular motivational state, thus confirming findings from our playback experiments.
 
-## Chirps significantly interfere with the beat and alter the patterning of transcutaneous voltage
+### Chirps significantly interfere with the beat and alter the patterning of transcutaneous voltage
 
 Given the stereotypical use of chirp types across various social contexts (Appendix 1—figure 3), the lack of chirp type-specific responses (Appendix 1—figure 4), the higher degree of auto-correlation of chirp time-series (Figure 5), the co-occurrence of chirps with locomotion and scanning (Figure 6), and the significant influence of beat frequency (i.e. DF) on chirp variance (Figure 2B), we propose that the function of chirps is linked to physiological aspects of beat processing in the chirping fish. According to this hypothesis, the emission probability of different chirp types would depend on how detectable their interference with the beat is, specifically at the beat frequency at which they are produced (for an in-depth analysis see Walz et al., 2013; Walz et al., 2014). It is worth noting that the frequency-dependent effects of different chirps on the beat have already been extensively described (Walz et al., 2014; Petzold et al., 2016). To evaluate this possibility, we computed an estimate of the interference caused by chirps on beat periodicity (beat interference) using an array of Gaussian chirps across a wide range of beat frequencies (±300 Hz, Appendix 1—figure 9). Estimates of beat interference were made by calculating the ratio between the cumulative duration of the beat cycles affected by a given chirp (1 beat cycle corresponding to the interval between two consecutive beat peaks) over the cumulative duration of all the beat cycles within the time window used as a reference (700ms, for other window sizes see Appendix 1—figure 10). This ratio was calculated for a wide range of chirp parameters: duration ranged between 10 and 400ms, while FM ranged between 0 and 400 Hz (Appendix 1—figure 9A). Since chirps can be produced at any EOD phase (Walz et al., 2013), estimates of beat-interference were calculated for each chirp at four different phases (with 90° steps) and then averaged. As a result, we obtained a three-dimensional array of beat-interference values which could be matched to recorded chirps (N=30,486 chirps, from our first set of recordings) having the same parameters (duration, FM and DF; Appendix 1—figure 9B).
 
@@ -170,7 +302,7 @@ We next quantified this effect including more reciprocal locations around the se
 
 This indicates that chirps consistently alter beats and EIs, at all the different reciprocal positions considered, thus supporting the idea that chirp-triggered EIs contain usable spatial information. Overall, both the estimates of chirp-induced beat interference as well as the more realistic representations of chirp-triggered electric images, confirm that chirping exerts conspicuous and spatially referenced effects on the beat that should be easily detectable by electrosensory afferents and could therefore be usable to complement beat processing, perhaps in scenarios in which beat amplitude is either low or poorly resolved.
 
-## Chirping is significantly affected by locomotion and social distance
+### Chirping is significantly affected by locomotion and social distance
 
 So far, our analysis focused on interacting fish pairs within a relatively small tank environment (35x80 x 35 cm). In such a scenario, we can expect fish to be able to detect the beat caused by the partner’s EOD at almost all times. As we pointed out in the previous paragraph, chirping could potentially convey enhanced spatial information even at short distances.
 
@@ -192,7 +324,7 @@ Modelling of field current and iso-potential lines using dipole models of our fi
 
 Overall, given that most chirps are reliably produced within very short range, they may not be useful for improving beat detection per se. Conversely, the orientation bias for chirp locations suggests that chirps are used during specific swimming trajectories and thus likely occurring while brown ghosts are trying to resolve other spatial parameters, such as the orientation, direction and possible motion of the beat source. In all this, rises may represent an exception as their locations are spread over larger distances and even in presence of obstacles potentially occluding the beat source (i.e. shelters, plants, or walls), all conditions in which beat detection or beat processing could be more difficult or simply interrupted (an idea coherent with the production of rises right at the end of EOD playbacks; Appendix 1—figure 6). Taken together, these observations may possibly explain why female subjects, apparently less motivated in exploring social stimuli, also produce considerably fewer chirps unless they are forced into social interactions (Appendix 1—figure 2E, F). More broadly, these findings indicate that chirping, besides being strongly correlated to the frequency of the beat generated by the interacting fish, is also significantly affected by locomotion and by spatial relationships between subjects within beat detection range.
 
-## Chirping increases with environmental complexity
+### Chirping increases with environmental complexity
 
 We hypothesized that if chirps are used as probes to refine beat processing and/or the resolution of electric images produced by conspecifics, higher levels of environmental complexity would likely result in higher chirping rates (as it implies higher probing needs, Siemers et al., 2009). To test this idea, we used both playback experiments and recordings of interacting fish pairs. The objective was to evaluate the chirping responses of brown ghosts to EODs in presence of environmental clutter which would distort electric fields in tangible but unpredictable ways (von der Emde, 2006).
 
@@ -210,7 +342,7 @@ The increased utilization of chirping during locomotion around partially conceal
 
 In this study, we examined the factors influencing the production of EOD frequency modulations (chirps) in brown ghost knifefish. We gathered a substantial dataset of chirps recorded during various social interactions, evaluating the impact of territory ownership, social hierarchy, sex, reproductive state, and social experiences. Analyzing this data, we found that the most influential factors in chirping are primarily beat frequency (DF) and experience (both environmental and social). Chirp patterns mainly consist of repetitions of the same chirp type which are heavily influenced by DF. Responses to playback chirps inserted into a sinewave stimulus of a particular DF are indistinguishable in terms of chirps emitted by the fish and exploratory behavior (approach/avoidance). Our behavioral observations of freely swimming fish indicate that chirping typically occurs at short ranges, often coinciding with active social approaches. Building upon these findings, we suggest that chirps serve as self-directed signals (sensory probes), aiding in the processing of spatial information derived from beats.
 
-## Existing functional hypotheses
+### Existing functional hypotheses
 
 Since the earliest reports (Larimer and MacDonald, 1968), chirps have been assigned behavioral meaning as communication signals based on the following observations (mostly in brown ghosts): (a) fish chirp mainly during social encounters; (b) males chirp considerably more than females (Dye, 1987; Bastian et al., 2001; Tallarovic and Zakon, 2002; Dunlap and Larkins-Ford, 2003; Kolodziejski et al., 2007) and are also considerably more aggressive; (c) during male interactions (often agonistic) smaller chirps are produced (i.e. shorter duration and lower frequency excursion: type 2) whereas larger chirps (types 1 and 3) are used more often during female-male encounters (presumably courtship-driven); (d) high chirp rates are observed in mating pairs, too, with a relatively higher production of large chirps (i.e. type 1 and type 3; Hagedorn and Heiligenberg, 1985; Henninger et al., 2018). This led to a dualistic semantic subdivision of chirps, with small chirps implied in agonistic interactions and larger chirps pertaining to different aspects of courtship and mating.
 
@@ -220,7 +352,7 @@ The idea of chirps being used as probes, as proposed here, is not entirely new: 
 
 More recent studies have further suggested that patterns of specific chirp types could be a salient signal used for communication purposes in the context of mating (Henninger et al., 2018). Yet, results obtained from our recordings do not support the existence of a chirp-based syntax in social interactions in which breeding conditions were simulated: fish pairs acclimated to breeding conditions (but not mating) used non-patterned chirp repertoires similar to fish pairs recorded in non-breeding conditions. One exception to the monotony of the chirping repertoires observed in this study is given by male-female pairs: in this case, type 1 and type 3 chirps are used more often, while the relative amount of type 2 chirps is lower (Figure 5, Appendix 1—figure 2C, D). However, this effect is likely to be a result of the combined effect of the pronounced dependency of chirp type on DF together with the higher chirp rates observed in males (i.e. if chirp variety increases with DFs and males chirp more, chirp type variety will be higher when males interact with high beat frequencies). Moreover, the somewhat stereotypical transition between large and small chirps that can be observed during repeated exposure to playback frequency ramps, appears a convincing argument against the communication-hypothesis. Interestingly, a recent study on pulse-type gymnotiforms suggested that chirps could be used for jamming avoidance. In this case, chirps are not an increase of EOD cycles on a sine wave signal, but an increase in the emitted pulses. The hypothesis was based on the temporal correlations of chirps emitted by interacting fish and the effect chirps exerts on EOD phase precession (i.e. a progressive phase shift between two signals, Field et al., 2019). In both cases (wave- and pulse-type chirps), chirps induce abrupt EOD phase changes (for pulse-type see Field et al., 2019; for wave-type see Stöckl et al., 2014; Walz et al., 2014) which may be beneficial to avoid jamming potentially occurring at any given phase. Although the EOD waveform generated by wave- and pulse-type gymnotiforms is essentially different (see for an overview Zupanc and Bullock, 2005), the similarities between the chirp waveforms (i.e. the instantaneous EOD frequency) may not be a matter of chance (Field et al., 2019) and could indicate similarities in the neural mechanisms responsible for their generation.
 
-## Inconsistencies between behavior and hypothesized signal meaning
+### Inconsistencies between behavior and hypothesized signal meaning
 
 In our playback experiments we observed no differences in the responses of fish of the two sexes to playback stimuli, regardless of whether they contained a particular chirp type or not: test subjects chirped at comparable rates in response to all types of EOD mimics (containing type 1 chirps, type 2 chirps or rises), confirming that the main factor determining type choice is DF and therefore self-referenced sensory requirements (as opposed to different semantic contents). This idea is further corroborated by the known symmetric distribution of chirp types within the ±400 Hz DF range (Bastian et al., 2001; Engler and Zupanc, 2001; Triefenbach and Zakon, 2008; Kolodziejski et al., 2007). Nonetheless, it’s plausible that playback stimuli, as employed in our study and others, may not faithfully replicate natural signals, thus potentially influencing the reliability of the observed behaviors. However, EOD waveform and harmonic components – which make natural EODs different from playback mimics – do not seem to play a role in EOD discrimination as EOD frequency alone does (Dunlap and Larkins-Ford, 2003; Fugère and Krahe, 2010). Moreover, artificial EODs are widely used in electrophysiological studies as they elicit comparable responses to natural stimuli in the electrosensory system (e.g. Benda et al., 2006; Marsat et al., 2009). Future studies might consider replicating these findings using either natural signals or improved mimics, which could include harmonic components (excluded in this study).
 
@@ -236,7 +368,7 @@ Notably, rises reliably occurred at the end of the playback stimulations (as als
 
 Taken together, these considerations strongly indicate that the primary determinants of chirp rates are the locomotor activity levels and the necessity to locate other fish through the beat. In our experiments, the choice of chirp type appeared largely unaffected by the behavioral context in which chirps were recorded, while the degree of social interaction, as observed in comparisons between novel and experienced fish pairs, played a bigger role.
 
-## Probing with chirps
+### Probing with chirps
 
 In this study we explore the possibility that chirps could improve the processing of spatial parameters associated to conspecific localization by enhancing beat processing. The frequent use of chirping during close physical interactions, suggests that whatever role chirps may play in beat processing, this may not necessarily be related to the mere localization of a beat source at a distance (such as most echolocation calls) but perhaps to other features detectable at close-range (such as size, orientation, direction, and motion). This could be achieved in at least three different ways. First, chirping could temporarily adjust beat frequency to levels better detectable by the electrosensory system (Bastian et al., 2001). Second, chirps could be used to improve active electrolocation by briefly enhancing beat temporal resolution (all types of chirps will increase ELL pyramidal cell firing rates, acting on different input lines; Marsat and Maler, 2010). Third, as previously discussed within this study, chirps could be used to enhance electrosensory responses to the beat. This may be achieved by simply enhancing the output of the primary electrosensory afferents (through synchronization of different types of input; Benda et al., 2006) or by phase-shifting the carrier EOD in correspondence of the destructive components of the beat cycles (i.e. the beat minima, as previously suggested by Field et al., 2019). Because the phase of interacting EODs is affected by both position and movement, phase shifts induced by chirps could be also aimed at recovering blind-spots forming on the electric images as a consequence of particular body positions, obstacles or even by motion (we show in fact that chirps can improve the EI contrast). Although chirp production has been previously reported to be phase-invariant (Metzen and Chacron, 2017), invariance here means that chirps are not produced at a specific EOD phase. Yet, this does not exclude the possibility that chirps could be used to briefly shift the EOD phase in order to avoid disruptive interferences caused by phase opposition (at the level of p-units). Therefore, this chirps-as-saccades idea could be still a valid hypothesis if one considers the effects of beat phase adjustment only at specific body locations (such as the head, which can be considered the ‘electrosensory fovea’; Carr et al., 1982; Castelló et al., 2000). In this view, chirping could be seen as an attempt to adaptively modify the incoming sensory input and maintain optimal contrast levels or a coherent sensory flow, as sniffing does for olfactory perception (Hahn et al., 1994), whisking and finger movement for tactile sensing (Krammer et al., 2020) and saccades for vision (Najemnik and Geisler, 2005). Future studies focused on the details of the EOD geometries and fish spatial coordinates during chirping will shed more light onto these matters.
 
@@ -244,7 +376,7 @@ In theory, chirps could also be used to improve electrolocation of objects as we
 
 If this idea finds further support, the question arises as to why not all gymnotiforms electrolocate using the same strategy. It may be that a trade-off exists between space- and time-resolution in the evolution and maintenance of electrosensory systems (Crampton, 2019). While broadband pulse signals may be useful to capture highly complex environments rich in foliage, roots and other structures common in the more superficial habitats in which pulse-type fish live, wave-type EODs may be a better choice in the relatively simpler river-bed environments in which many wave-type fish live (e.g. the benthic zone of deep river channels; Crampton, 2019). In this case, achieving a good spatial resolution is critical during social encounters, especially considering the limited utility of visual cues in these low light conditions. In such habitats, social encounters may be less ‘abrupt’, but spatially less ‘conspicuous’ or blurred (as a 3D electric field may be). In such a scenario, chirps could serve as a means to supplement the spatial information acquired via the beat, accentuating these cues during periods of reduced resolution.
 
-## Conclusions
+### Conclusions
 
 While our results do not completely rule out the possibility of chirps serving a role in social communication, the high stereotypy and auto-correlation of chirp time-series, along with the absence of any meaningful social correlate of chirping, suggests this scenario to be unlikely. Given the clear distance threshold at which chirps are produced, the correlation with locomotion and the increase of chirping in cluttered environments, chirp production mirrors the emission of other self-referenced signals used to gather spatial information obtained from a nearby source (such as echolocation calls; Siemers et al., 2009). Could chirps be useful for both electrocommunication and electrolocation functions? Or more simply, could chirping be ascribed simultaneously to different functional tasks?
 
@@ -258,33 +390,106 @@ In summary, although our behavioral experiments may not offer a comprehensive ca
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 A total of 234 Apteronotus leptorhynchus of both sexes – age ranging between 2 and 3 years – were obtained from tropical fish importers and housed in individual 80x35 x 40 cm aquariums under a 12/12 light cycle. Fish were allocated to the different experiments as follows: 130 for the assessment of context-dependent effects on chirping, 16 fish were used for the playback experiments, 14 fish were used for the playback experiments involving EOD frequency ramps, 24 fish were used for the chirp-behavior correlative analysis, 30 fish were used in the novel environment exploration assay, 12 fish were used to assess the environment effects on chirping and 8 to assess the impact of clutter on the fish responses to playback EODs. In all groups both sexes were equally represented. Throughout the experiments, the water was continuously filtered, water conductivity was maintained between 150–300 µS cm–1, temperature between 23–26°C and pH between 6–8. The hometank environment consisted of PVC shelter tubes and plastic plants. The fish were fed three times a week with red mosquito larvae. Prior to each experiment, the fish’s EOD frequency (EODf), body length and weight were measured. To identify their sex, the EODf was normalized to a water temperature of 25.0 °C using a Q10 of 2 (Dunlap and Ragazzi, 2015; Dunlap et al., 2000). The limitation of this approach is that females cannot be distinguished from immature males with absolute certainty, since no post-mortem gonadal inspection was carried out. Nevertheless, fish with a normalized EODf higher than 750 Hz are considered males and those with lower frequencies are considered females (Dunlap et al., 2000). Although a more accurate way to determine the sex of brown ghosts would be to consider other morphological features such as the shape of the snout (Hagedorn and Mary, 1986), the body size, the occurrence of developing eggs, EOD frequency has been extensively used for this purpose (Hagedorn and Mary, 1986; Meyer et al., 1987; Bastian et al., 2001).
 
-## Recordings of fish pairs and playback experiments
+### Recordings of fish pairs and playback experiments
 
-## Equipment
+#### Equipment
 
 All technical equipment used in the playback experiments is listed in the table below.
 
-## Experimental setup and groups
+<table>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Model</th>
+      <th>Manufacturer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amplifier</td>
+      <td>DPA-2FSL and DPA-2FS</td>
+      <td>npi electronic GmbH</td>
+    </tr>
+    <tr>
+      <td>Attenuator</td>
+      <td>839 attenuator</td>
+      <td>KAY elemetrics Corp.</td>
+    </tr>
+    <tr>
+      <td>Computer</td>
+      <td>OptiPlex 7050</td>
+      <td>Dell Technologies Inc</td>
+    </tr>
+    <tr>
+      <td>Data acquisition system</td>
+      <td>NI 6211 USB</td>
+      <td>National instruments</td>
+    </tr>
+    <tr>
+      <td>Infrared illuminators</td>
+      <td>CM-IRP6-940 nm</td>
+      <td>CMVision</td>
+    </tr>
+    <tr>
+      <td>Stimulus isolator</td>
+      <td>ISO-STIM 01 M</td>
+      <td>npi electronic GmbH</td>
+    </tr>
+    <tr>
+      <td>Infrared video camera</td>
+      <td>GS3-U3-41C6NIR-C</td>
+      <td>FLIR</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Experimental setup and groups
 
 Fish pairs were recorded in two adjacent chambers of tripartite 80x35 x 40 cm aquariums (Figures 1, 2 and 5). Tank compartments were separated by a plastic mesh barrier to allow electrical but no physical interaction. EOD recordings were conducted using 2 graphite electrodes placed on opposite sides of the tank (1 pair per compartment). EOD recordings were assigned to the following categories based on the type of experience fish had with either the test aquarium or the paired subjects: resident, intruder, dominant, subordinate, novel, experienced, courtship, no courtship, divided and free. Resident fish were housed for 1 week alone in the same setup, before being paired with intruder fish. Dominance was assessed by means of shelter-competition tests prior to EOD recordings. These tests consisted of 30 min long trials in which fish pairs were allowed to interact freely and compete for the occupancy of a plastic shelter tube positioned in one of the three compartments of a tripartite aquarium (1 pair per aquarium). The fish spending more time in the shelter tube was considered to be the dominant one, the other the subordinate. Fish were selected such that one fish was always 3–5 g heavier than the other, to ensure a predictable outcome of the competition and to limit aggressive displays to a minimum (Jennions and Backwell, 1996; Umbers et al., 2013). In these and other recordings, fish were considered ‘experienced’ after at least 1 week of pairing, as opposed to ‘novel’ (just paired). This means that residents, intruders, dominant and subordinate fish were all assigned to the category ‘novel’, whereas the category ‘experienced’ included only resident and intruder fish, due to their longer pairing period (1 week). In a separate set of recordings, male and female pairs were subject to water conductivity changes to simulate the onset of the breeding season: during the course of a 4-week period water conductivity was lowered from 400 to 100 µS cm–1 (novel fish in high conductivity water = no breeding, experienced fish in low conductivity water = breeding season). Although, the term ‘breeding’ here refers to the context and not to the actual behavioral repertoire displayed by the fish, this treatment resulted in 6/8 female fish to show evident signs of developed eggs (no post-mortem exam was used to confirm egg presence in the other two fish) while in other fish cohorts (housed in larger aquariums and with improved shelters) we successfully obtained newly spawned fish. At the end of this period, fish were allowed to swim freely and interact without mesh barriers (experienced fish in low conductivity water = breeding + free). Recordings from such pairs were compared with naïve male-female pairs freely swimming in high conductivity (400 µS cm–1) water (naïve fish in high conductivity water = no breeding +free). Although even in this case fish were paired with their tank partners for longer times, due to the different treatment they had been subject to, they were not included in the ‘experienced’ category.
 
-## Chirp type categorization
+#### Chirp type categorization
 
 Overall, the coding of custom MATLAB scripts (for EOD recording, chirp detection and validation), the preparation and execution of the behavioral experiments and the manual analysis of chirps imposed very significant timing constraints for the execution of the experiments. For this reason, to come up with threshold values usable to categorize chirps over the course of the whole study, we have used a preliminary dataset of 11,342 chirps obtained from our first set of recordings (8 male-male fish pairs). A more complete dataset (N=30,486) was obtained and validated only 2 years later.
 
 The cut-off values used in our study (50ms duration and 105 Hz frequency modulation amplitude) were chosen based on the distribution of our preliminary recorded chirps but also based on reference values previously published by other authors (see Table 1 for previously published chirp categories and Table 3 for details on our own categorization).
 
+**Table 3.**
+ Chirp categorization used for chirp detection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Frequency excursion &lt; 105 Hz</th>
+      <th>Frequency excursion &gt; 105 Hz</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Duration &gt; 50 ms</td>
+      <td>rise</td>
+      <td>Type 3 chirp</td>
+    </tr>
+    <tr>
+      <td>Duration &lt; 50 ms</td>
+      <td>Type 2 chirp</td>
+      <td>Type 1 chirp</td>
+    </tr>
+  </tbody>
+</table>
+
 All chirps recorded (N=67,522,, see Table 2) were obtained from different experiments in these proportions: 30,486 from staged fish pair interactions, 15,720 from playback experiments, 3966 from ramp playback experiments, 4672 from freely swimming fish pairs used for chirp-behavior correlation analysis, 7893 from novel environment exploration experiments, 1864 from fish interactions in cluttered environments, 2921 from clutter playback experiments.
 
-## Amplifier and recording settings
+### Amplifier and recording settings
 
 EOD recordings (three channels) were amplified through DPA-2FSL and DPA-2FS amplifiers (npi electronics) with a gain of 200, low pass filtered at 10 kHz, high-pass filtered at 100 Hz. The acquisition sampling rate was kept at 20 kHz in all recordings.
 
-## Playback experiments
+### Playback experiments
 
 All playback experiments were conducted in 80x35 x 40 cm glass aquariums in a dark room (Figures 3 and 4). Water conductivity and temperature were similar to the fish housing conditions and ranged between 200–300 µS cm–1 and 23–26°C, respectively. Water was pre-heated using commercially available heaters (EHEIM 3612 heating rod 50 W). At one end of the tank, a mesh barrier separated the playback electrode from the fish. Electrodes were placed 10 cm apart and 1 cm away from the barrier. This layout ensured that playback stimuli consisted of naturalistic electric fields (Kelly et al., 2008). Electrodes were randomly placed at either side of the aquarium, in different experiments, to avoid playback location biases.
 
@@ -292,15 +497,56 @@ Three pairs of recording electrodes were placed in the fish compartment in accor
 
 Playback sinewave stimuli were designed in MATLAB and their frequency based on the measured fish EOD frequency prior to trial onset. Stimuli were then delivered via a 6211-USB DAQ (National Instruments) to the aquarium through a stimulus isolator (ISO-STIM 01 M, npi electronics). The stimuli played back were modified sinewaves mimicking conspecific EODs the frequencies of which were calculated as differences (DF) from the fish’s own EOD frequency: −240,–160, −80,–40, −20,–10, –5, 0, 5, 10, 20, 40, 80, 160, 240 (Hz). Each of these playback stimuli was delivered in four different modes distinguished by their chirp content (modes, see Table 4 below): mode0 contained no chirps, mode1 contained type 1 chirps, mode2 with type 2 chirps and mode3 contained small rises (abrupt frequency rises). Each playback trial (50 s with a 5 s time of fade-in and fade-out) had a 180 s inter-trial interval. Each playback session consisted in a randomized sequence of 15x4 playback trials (1 min+3 min each) which lasted for 4 hr.
 
-## Video tracking
+**Table 4.**
+ Playback chirp parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mode</th>
+      <th>duration [ms]</th>
+      <th>freq. mod. [Hz]</th>
+      <th>Chirps</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>no chirps</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>approx. 120</td>
+      <td>500</td>
+      <td>0.1 Hz for 50 s (1 chirp every 10 s=5/trial)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>approx. 20</td>
+      <td>120</td>
+      <td>2 Hz for 5 s (n=10), every 10 s (n=10 × 5)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>approx. 60</td>
+      <td>30</td>
+      <td>0.1 Hz for 50 s (1 chirp every 10 s=5/trial)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Video tracking
 
 During playback experiments (Figure 3) but also freely swimming interactions (Figure 6) and novel environmental exploration assays (Figure 8), freely swimming fish were recorded at 40 FPS using an infrared USB camera (Grasshopper3, FLIR, model: GS3-U3-41C6NIR-C). The camera was set to acquire a frame every 500 samples of the EOD recording (1 s=20,000 samples) through a TTL channel of the digital acquisition device (NI USB 6211 National Instruments). Swimming trajectories were extracted from the videos using the software BioTracker after converting the files from H264 to AVI (https://www.igb-berlin.de/en/biotracker). Playback experiments began around 1 p.m., after the onset of the animals lights OFF phase (12 AM lights ON, 12 PM lights OFF). Test subjects were acclimated for 30 min to the test aquarium, before trial onset.
 
-## Ethogram used to analyze freely swimming behavioral interactions
+### Ethogram used to analyze freely swimming behavioral interactions
 
 During freely swimming interactions, behaviors were annotated following previously described reports (Triefenbach and Zakon, 2008). A total of 12 fish pairs were first habituated for 30 min to the testing aquarium (30x80 cm) in presence of a mesh divider. Right after, the divider was removed and fish were allowed to interact freely for another 30 min. Both their EODs and behaviors were recorded in both sessions. During the habituation session, most fish remained in proximity to the barrier, parallel to it, swimming back and forth or stationary. Some fish remained stationary in a corner of their tank compartment, others swam more often exploring their surroundings. In the freely swimming session, fish often continued their exploration rounds before interacting more closely. This often implied a repeated circling of the whole tank contour. Interactions often started with backward swimming (a behavior we referred to as ‘knife’), often resolving in a reciprocal backward tail-to-tail approach (‘tail1’). In some cases, one of the two fish would flicker the tail in rapid movements (‘tail waving’, or ‘tail2’). From this positioning, fish would often slide onto each other to begin a more direct physical interaction (‘wrestle’). This would often imply locomotion (‘loc’) towards one end of the tank. When reaching a corner fish would either disengage and part ways or start an aggressive interaction, visible through either head butts (one fish hitting with the snout the flank of the other, ‘head’) or – somehow more frequently – though bites directed to the head of the other fish (‘atk’). Less commonly, the attacking fish would quiver their jaws (‘jaw’) prior to either an attack (directed to the head or the flank) or a chasing attempt (‘ch’). The number and extent of such encounters varied considerably across fish pairs: in some cases, it lasted for the whole duration of the recording, while in others fish were just resting at opposite sides of the tank.
 
-## Boundary element model and electric images
+### Boundary element model and electric images
 
 The results shown in Figure 7 (electric images) and Appendix 1—figure 13 (electric field) were calculated using the boundary element method (BEM; Pedraja et al., 2014; Hofmann et al., 2017; Rother, 2003). This model comprises two main components: a geometric reconstruction of the fish’s body and a calculation of the transcutaneous field by solving the Poisson equation for the fish boundary.
 
@@ -312,21 +558,21 @@ Here, electric images were computed for each fish position and chirp scenario by
 
 The “Δ chirp-beat” shown for the chirp sender and the receiver in Figure 7E represents the cumulative change in voltage across the entire body surface during a chirp, compared to the same time window without a chirp.
 
-## Beat decay estimates
+### Beat decay estimates
 
 The beat dissipation range in our experimental conditions was estimated by recording the interaction of two EOD mimics (a static reference electrode pair and another identical electrode pair, placed parallel to it, as a moving source) at increasing distances and in the same water conditions as in our recordings (conductivity 200 μS/cm and temperature 25 °C; Appendix 1—figure 13). Both the reference and the moving EOD mimic were scaled to natural fish signals (1 mV/cm, measured at 2–3 cm from the playback dipoles). Recordings were made placing recording electrodes at opposite poles of the reference electrodes while shifting the moving source with 5 cm steps up to 60 cm away. The EOD field intensity generated by both reference and moving electrodes was recorded for 5 s at each distance step, always at the extremities of the reference pair.
 
-## Environmental manipulations
+### Environmental manipulations
 
 Fish pairs were exposed to changing environmental conditions in the experiments illustrated in Figure 9. Recordings in lights ON, OFF and cluttered conditions were carried out in 80x35 × 40 cm aquariums divided in 2 compartments by a plastic mesh divider. During lights-ON, even illumination of both tank compartments was provided via a Leica LED illuminator located on a shelf above the aquarium (Leica CLS 150 XE Microscope Cold Light Source, 150 W). During lights-OFF and cluttered conditions, a drape obtained from a blackout curtain was used to fully cover the tank (room lights were switched OFF and daylight lowered by curtains). Cluttered conditions were exactly the same as lights-OFF with the addition of floating and submerged plastic shelter tubes and plants heterogeneously arranged in order to fill up each compartment.
 
-## Data analysis
+### Data analysis
 
-## Chirp detection
+#### Chirp detection
 
 Chirps were detected in a two-step process consisting of a first automatic detection followed by a manual validation. The first step implied a measurement of the power density in the FFT of the recorded signal (FFT parameters: window size = 2^12; overlap = 90%) within the range set by the fundamental frequency and the first harmonic component (EODf - 5 Hz and 2 x EOD - 100 Hz). Chirps were detected as peaks in the power density. The manual validation consisted of a survey of the detected chirps to eliminate false positives. False negatives were estimated at a rate lower than 10%. Although the two electrode pairs used in each aquarium would detect EODs from both fish, chirps were properly assigned to the sender based on signal intensity and the baseline EOD frequency of the two fish, when possible (EODs generated by a fish will have higher intensity if recorded by electrodes placed in the same compartment). Notably, other authors reported the occurrence of more than two types of large chirps (namely: type 3-6), we included all those in one single group based on the distribution of our data and considering the absence of any obvious clustering for large chirps (see Figure 1).
 
-## Factor analysis mixed data - I
+#### Factor analysis mixed data - I
 
 Factor analysis was conducted using the R package FactoMiner (Pagès, 2004; Josse and Husson, 2008).
 
@@ -336,22 +582,22 @@ A total of 30,486 sampled chirps were used. For each chirp, the following qualit
 
 A first model (three dimensions, model#1, dim1 17.46%, dim2 15.76%, dim3 10.67%) was made considering all variables listed above. Subsequent models were calculated while progressively reducing the number of variables (down to 3, model#11, dim1 23.17%, dim2 20.4%, dim3 14.35%). At each iteration variables with eigenvalues lower than the mean average contribution were eliminated.
 
-## Factor analysis mixed data - II
+#### Factor analysis mixed data - II
 
 To assess the correlations among swimming related variables and chirps, a total of 7893 chirps obtained from a separate experiment (novel environment exploration, Figure 8) were used. For each chirp, the following qualitative and quantitative variables were considered: the percentage of time spent near the tank wall (‘wall’), the percentage of time spent in the tank open space (‘open’), percentage of time spent in the shelter area (‘shelter’), the percentage of time spent within a rectangular area 10 cm around the conspecific location (‘social’), the percentage of time spent investigating the novel object (‘object’), the time at which chirps were produced (‘timestamp’), the chirp type, the fish ID, the EOD frequency of the freely swimming fish, the EOD frequency of the caged fish, the sex of the chirp sender, the sex of the chirp receiver, the DF (i.e. EOD frequency difference between sender and receiver), the distance between sender and receiver (‘distance’), the average speed of the sender (‘avg speed’), the angle between sender and receiver (referred to the a horizontal axis delineated by the tube, ‘angle’), the interference estimate weighed on the distance (i.e. calculated on a beat resulting from EODs attenuated as a function of distance, ‘actual interference’) and the maximum beat interference possible for a given chirp (i.e. without distance attenuation, ‘interference’, Appendix 1—figure 12).
 
-## Chirp transitions and time-series cross-correlation
+#### Chirp transitions and time-series cross-correlation
 
 The number of chirp transitions present in each recording (dataset used for Figures 1, 2 and 5) was measured by searching in a string array containing the four chirp types per fish pair, all their possible pairwise permutations (i.e. all possible permutations of 4+4 = 8 elements are: 1–1, 1–2, 1–3 … 7–6, 7–7, 7–8; considering the following legend 1=fish1 type 1, 2=fish 1 type 2, 3=fish1 type 3 … 6=fish2 type 2, 7=fish2 type 3 and 8=fish2 rise). The number of each chirp-type transition was then used to create a 4x4 frequency matrix. Chirp transition diagrams were obtained by calculating the median of such frequency matrices calculated for different fish pairs. Chirp time series were extracted from each recording and binned (50ms) to evaluate the cross-correlation index within a +–2 s lag window.
 
-## Chirp interference
+#### Chirp interference
 
 Chirp interference was calculated as the cumulative duration of outlier beat inter-peak intervals (IPI) after calculating the beat envelope for each chirp/DF combination (Appendix 1—figure 9). Gaussian chirps were generated on top of a constant frequency carrier of 862 Hz (arbitrarily chosen) and the beat resulting from a paired sinewave with a frequency within ±300 Hz of 862 Hz. The frequency modulation and duration of gaussian chirps were determined by setting the sigma and the amplitude of the peak and by measuring the actual peak size of the instant frequency (‘medfreq’ MATLAB function). This was obtained from the FFT analysis of the chirping signal (window size 2^12, 90% overlap, sampling frequency 20 kHz). For each chirp, beat peaks (i.e. the peaks of the amplitude modulation, AM) were detected searching for local maxima in the signal first-order envelope. Adjacent beat peaks were used to calculate beat cycle durations for the whole segment. The different impact of different types of chirps on the beat would result in different populations of beat cycles (depending on the beat frequency, the duration and FM of the chirp). Outliers in the beat cycle durations resulting from each chirp were used as a measure of how a given chirp would perturbate the otherwise regular beat cycles. Beat cycle outliers were detected using a MATLAB built-in function – ‘isoutlier’ – with the ‘quartile’ setting to include peak durations on both tails of the peak distribution (below 25% and above the 75% quartiles). The interference value for each chirp was obtained by dividing the cumulative outlier beat cycle duration (i.e. the total duration of beat cycles significantly affected by the chirp) by the overall duration of the beat peaks. The duration of each beat cycle corresponded to the difference in time between consecutive beat peaks. In this way, the effect of a chirp could be weighted on the number of peaks (i.e. the beat frequency). The beat interference is calculated within a fixed time window (700ms, but see Appendix 1—figure 10 for wider windows) which corresponds to the median inter-chirp interval (ICI; median = 0.6987) calculated for 30486 chirps (130 chirp time-series) and is centered around the chirp (chirp peak is always at 350ms). This parameter is used to provide an estimate of the effect of a chirp in its immediate temporal surround.
 
-## Text-mining analysis of chirp-behavior sequences
+#### Text-mining analysis of chirp-behavior sequences
 
 A text-mining approach was used to identify correlations between behaviors and chirp types in text strings containing both (pooled data from 12 fish pairs of mixed sexes) using KH Coder (Higuchi, 2016). KH Coder is open-source software designed for computer-assisted qualitative data analysis, with a focus on quantitative content analysis, text mining, and applications in computational linguistics. After creating a word dataset including all the occurrences of chirps and behaviors in string form (words) conserving their temporal order, we have used KH Coder to perform a co-occurrence analysis and a multidimensional scaling. The first aims at analyzing text identifying potential relationships between words. By definition, co-occurrence networks are represented as interconnected networks based on the paired presence of words within a specified unit of text. The second, multidimensional scaling (MDS), is a means of visualizing the level of similarity of individual words based on their appearance pattern within a dataset. MDS is used to translate information about the pairwise 'distances' among a set of words into a configuration of points mapped into an abstract cartesian space.
 
-## Statistics on chirp counts
+#### Statistics on chirp counts
 
 The numbers of chirps produced during the experiments assessing the effect of environmental factors on chirp rate production were compared using the Friedman’s test (non-parametric ANOVA for repeated measures) as data were not following a Gaussian distribution.

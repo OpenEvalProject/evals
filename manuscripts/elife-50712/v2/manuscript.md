@@ -37,9 +37,17 @@ Here, we report that InSyn1 is a crucial regulator of the dystrophin/dystroglyca
 
 ## Results
 
-## Localization of InSyn1 at inhibitory synapses requires its N-terminal region and is DGC dependent
+### Localization of InSyn1 at inhibitory synapses requires its N-terminal region and is DGC dependent
 
 Previously we demonstrated that InSyn1 was enriched in the iPSD and that it was highly co-localized with the markers of inhibitory synapses gephyrin and αDG, which both serve to scaffold and organize the iPSD (Uezu et al., 2016). However, InSyn1 lacked any identifiable protein domains and thus the mechanism by which it localized to the iPSD remained enigmatic. To gain insights into the localization mechanism of InSyn1 to inhibitory synapses, we used CRISPR-based depletion based on insertion-deletion (Indel) mutagenesis to deplete either gephyrin or the αDG subunit of the DGC to test whether either was required for InSyn1 iPSD localization. Primary hippocampal neurons prepared from Lox-stop-Lox-Cas9-P2A-GFP (Cas9 KI) mice were transduced with adeno-associated viral (AAV) expressing Cre and sgRNA against either Gphn or Dag1 and fixed at P14. Depletion of endogenous protein levels of gephyrin or αDG was confirmed by immunostaining of both proteins, demonstrating the density of gephyrin or αDG clusters was decreased by 81% and 89% compared to negative control (empty sgRNA) samples (Figure 1A), respectively. Next, we tested whether InSyn1-HA localization was altered in either of the scaffolding protein-depleted neurons (Figure 1B). In control neurons, InSyn1 clusters clearly overlapped with each inhibitory post-synaptic marker such as αDG and gephyrin. CRISPR-mediated gephyrin depletion did not alter the distribution of InSyn1 puncta. However, following αDG depletion, InSyn1 dramatically diminished its clustering and was diffuse throughout the soma and dendrites (Figure 1B; bottom panels). The localization pattern of InSyn1 in each condition was quantified as a distribution index, a mean absolute deviation of InSyn1-HA intensity within the dendrites (Figure 1C). To further evaluate whether endogenous InSyn1 localization is also αDG dependent, we took advantage of Homology-Independent Targeted Integration (HITI) method to label C-terminus of InSyn1 with a highly antigenic spaghetti-monster tag (smFP-HA) in Cas9 KI neurons (Figure 1—figure supplement 1) (Suzuki et al., 2016; Viswanathan et al., 2015). We found a dramatic reduction of endogenous InSyn1-labeled neurons in CRISPR depleted αDG samples but no difference in gephyrin depletion compared to control (Fig. D and E). These quantitative analyses confirmed that αDG depletion severely disrupted the stereotypic InSyn1 localization within neurons. However, gephyrin-targeted CRISPR depletion did not alter the distribution of InSyn1 supporting the hypothesis that the inhibitory post-synaptic protein InSyn1 appears to be dependent on the DGC to manifest its synaptic localization in neurons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig1-v2.jpg)
+
+**Figure 1.:** (A) Depletion of Gephyrin or αDG by CRISPR in neurons. Cas9 knock-in hippocampal neurons were transduced with AAV:Cre/(control)gRNA [control], AAV:Cre/(Gphn)gRNA [gephyrin] or AAV:Cre/(Dag1)gRNA [αDG] at DIV1 and stained with gephyrin or αDG at DIV13 (left panel). GFP fluorescence of the Cas9-2A-GFP (right panel). Graphs to the right show the normalized puncta density. Gphn vs control (two-tailed t-test, gephyrin n = 19, control n = 17, p<0.0001), Dag1 vs control (two-tailed t-test, αDG n = 16, control n = 20, p<0.0001). (B, C) InSyn1-HA localization after αDG or gephyrin CRISPR depletion. Neurons were depleted of αDG or gephyrin, followed by AAV:InSyn1-HA transduction 3 days before fixation. Exogenously expressed InSyn1-HA is shown in red. Endogenous gephyrin or αDG are shown in green. Bar graph showing the distribution index of InSyn1-HA as arbitrary units. Control (n = 36), Gphn (n = 36), Dag1 (n = 36). One-way ANOVA followed by Tukey's multiple comparisons test, F (2, 105)=25.49, ***p<0.001. Scale bars, 20 µm. (D). HITI labeling of endogenous InSyn1 with smFP-HA in Cas9 KI neurons. InSyn1 is shown in red and αDG is shown in green. Of note, InSyn1:smFP showed clear puncta staining colocalized with αDG. (E) InSyn1 puncta-positive cells were quantified in either Control, Gphn, or Dag1 depleted neurons (n = 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** To epitope tag the C-terminus of InSyn1, a guide targeting the end of the coding region was chosen. After CRISPR-dependent cutting, smFP-HA that contains 12 HA epitopes was directly inserted in-frame to label endogenous InSyn1 in neurons.
 
 InSyn1 is a 292 amino acid protein and the only potential structural insight available is that the first 60 amino acids region harbors a predicted coiled-coil sequence, which often mediates protein-protein interactions (Burkhard et al., 2001). To determine the regions of InSyn1 that are important for its iPSD targeting, we performed a cell-based structure-function analysis by expressing a series of truncation mutants in neurons (Figure 2A). AAV expressing InSyn1 truncation mutants fused to GFP were transduced into hippocampal neurons and immunostained for endogenous αDG (Figure 2B). Full-length InSyn1-GFP, as well as truncation mutants of the C-terminus or middle portions of the protein exhibited puncta staining that strongly colocalized with αDG. In contrast, an N-terminal truncated version, InSyn1ΔN-GFP, showed diffuse expression throughout the neurons (Figure 2C). Quantitative analysis, comparing the distribution index of each InSyn1 deletion mutant to soluble GFP, confirmed the loss of the N-terminal region (a.a. 1–60) disrupted its localization in neurons (Figure 2C).
 
@@ -49,23 +57,75 @@ InSyn1 is a 292 amino acid protein and the only potential structural insight ava
 
 We next sought to determine how the N-terminus of InSyn1 might mediate its co-localization with the DGC. The DGC is composed of several subunits including α1-syntrophin and dystrobrevin (Figure 2D). α1-syntrophin is known to function as a docking site for various proteins through its PDZ and PH domains, including ion channels, GPCRs, water channels, kinases and phosphatases in the nervous system (Brenman et al., 1996; Connors et al., 2004; Neely et al., 2001), while the C-terminal SU domain mediates its interaction with dystrophin and utrophin (Kramarcy et al., 1994; Yang et al., 1995). Dystrobrevin has two isoforms, α and β-dystrobrevin. Dystrobrevins are an integral component of DGC that interact with dystrophin and syntrophin as well as other signaling proteins, such as dysbindin, Kif5, and the regulatory subunit of PKA (Benson et al., 2001; Ceccarini et al., 2007; Macioce, 2003). Mice lacking both α and β-dystrobrevin show defects in inhibitory synaptic structure and motor functions, suggesting their important roles in organizing the DGC at the CNS (Grady, 2006). We thus tested whether InSyn1, as well as the truncation mutants, might interact with either of these components of the DGC, as well as gephyrin, which we previously demonstrated forms a complex with InSyn1 (Uezu et al., 2016). Interestingly, we found that while full-length InSyn1 bound to α1-syntrophin and β-dystrobrevin, only the N-terminus deletion of InSyn1 (InSyn1ΔN) disrupted the interaction with both α1-syntrophin and β-dystrobrevin (Figure 2E). We also assessed the interaction between these InSyn1 mutants and gephyrin and found none of the deletion mutants disrupted this interaction, suggesting multiple regions of InSyn1 are involved in the interactions with gephyrin and that truncation of the N-terminus did not generally disrupt all functions of InSyn1 (Figure 2E). These results demonstrate that InSyn1 associates with the DGC complex via its N-terminal predicted coiled-coil region and that this interaction is required for its proper localization in neurons.
 
-## InSyn1 exhibits widespread expression throughout the brain and its loss significantly alters iPSD organization
+### InSyn1 exhibits widespread expression throughout the brain and its loss significantly alters iPSD organization
 
 As a prelude to analyzing the functional roles of InSyn1, we first examined its expression distribution patterns in the brain via a recently described proximity ligation in situ hybridization or PLISH (Nagendran et al., 2018). Probes to detect Insyn1 mRNA were incubated with sagittal sections of adult mice to visualize regional InSyn1 expression distribution. Insyn1 mRNAs were detected throughout the mouse brain, with high expression in the hippocampus, olfactory bulb, cerebellum and modest expression in the cortex, thalamus, midbrain, and pons (Figure 3A). This expression pattern was specific as the negative control scramble probe did not exhibit any specific staining (Figure 3A). In the hippocampus, InSyn1 was robustly expressed in the granule cell layer of the dentate gyrus (DG) and other pyramidal cell layer regions such as CA1 (Figure 3B). Insyn1 expression was detected in all cells within the hilus, suggesting InSyn1 may be expressed in both excitatory and inhibitory neurons (Pelkey et al., 2017). In the cerebellum, we observed strong expression of Insyn1 in Purkinje cells (PC), whereas comparatively weaker expression was detected in the internal granule cell layer (IGL).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig3-v2.jpg)
+
+**Figure 3.:** (A) InSyn1 mRNA (white) was detected throughout the adult mouse brain with strong signals in the hippocampus, cerebellum and olfactory bulb. Nissle stain (blue). Magnified images of the hippocampus and the cortex are shown. (B) Numerous clusters were found in cells in different layers of the cortex (Cx), pyramidal cell layers (CA1) and dentate gyrus granule cells (DG) in the hippocampus, Purkinje cells in the cerebellum (Cb), cells surrounding the glomerulus (GL) and in the mitral cell layer of the olfactory bulb (OB). Cx; cerebrum cortex, CA1; hippocampus CA1, DG; dentate gyrus, Cb; cerebellum, OB; olfactory bulb, GL; glomerular layer, Mi; mitral cell layer, Gr; granular cell layer, ML; molecular cell layer, PCL; Purkinje cell layer, IGL; internal granule layer. The asterisk represents the glomerulus. Scale bars, 1 mm (A), 50 um (B).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Multiple protein sequence alignment of InSyn1 from human (Homo sapiens), rat (Rattus norvegicus), mouse (Mus musculus), Dog (Canis lupus), Wild pig (Sus scrofa), monkey (Macaca fascicularis), marmoset (Callithrix jacchus), chicken (Gallus gallus), Lamprey (Petromyzon marinus), platypus (Ornithorhynchus anatinus), xenopus (Xenopus laevis), and two fish species (Takifugu rubripes), (Danio rerio), The set of sequences were chosen from the Gene Tree of human InSyn1 (ENSGT00910000144204). The sequences were aligned by multiple sequence alignment algorithm Kalign2 and manually curated by JalView (Lassmann et al., 2009). The consensus sequence with sequence logos is depicted below. The predicted coiled-coil region and the N terminus 60 amino acid-deleted InSyn1 mutant (InSyn1ΔN) are indicated above. Note the sequence similarities of InSyn1 between different species. (B) Schematic of InSyn1 gene structure (top, gray box regions representing coding sequence) and the alignment of DNA sequencing from WT (top trace) and InSyn1 (bottom trace) KO mice showing an 11bp-deletion in exon two in InSyn1 KO mice. (C) Representative images of PCR-based genotyping. F; a common forward primer. R1 and R5; reverse primers depicted in B. (D and E). HITI labeling of endogenous InSyn1 in WT and KO hippocampal neurons. (D) WT neurons exhibit clear puncta staining along the neurite while InSyn1 null neurons lost puncta staining. scale bars, 10 µm. (E) InSyn1 puncta-positive cells were quantified from three different samples. Of note, no InSyn1-positive cells were detected from null hippocampal neurons.
 
 Based on these Insyn1 expression analysis and data demonstrating that InSyn1 requires its interaction with the DGC for its proper localization to the iPSD where it also binds gephyrin, we next examined how its loss might impact the organization of the iPSD in hippocampal neurons. To accomplish this, we first generated a new line of InSyn1 knockout mice (InSyn1-/-) targeting coding sequence in exon2 of Insyn1 gene by embryo injection of CRISPR/Cas9 and sgRNA. This resulted in mice harboring an 11-basepair missense deletion causing an out-of-frame mutation following 34 amino-acids and a premature stop codon in a highly conserved region of InSyn1 including predicted coiled-coil region (Figure 3—figure supplement 1A–C). In WT neurons, endogenous InSyn1 tagged with smFP-HA by HITI showed clear puncta staining on the dendritic shafts. However, InSyn1 expression was abolished in Insyn1-/- neurons confirming InSyn1 protein expression was lost following the disruptive deletion in Exon 2 (Figure 3—figure supplement 1D and E).
 
 Using InSyn1 null primary hippocampal neurons, we next examined how its loss affected the organization of αDG or gephyrin by immunostaining and quantitative analysis. Loss of InSyn1 significantly impacted the density and clustering of αDG (Figure 4A). We found that compared to WT neurons, the density of αDG clustering was decreased by 41% in the neurite regions (Figure 4A). In contrast, analyzing the αDG cluster area demonstrated that there is an apparent increase in both regions (neurite regions; 30%, perisomatic regions; 18%) (Figure 4B). The total αDG cluster area did not show a difference between WT and InSyn1 KO neurons, suggesting the overall expression of αDG has not changed and is instead re-distributed to the fewer remaining αDG clusters in the KO neurons (Figure 4—figure supplement 1). Furthermore, another DGC component dystrophin showed a similar region-specific reduction of puncta density in KO neurons (Figure 4—figure supplement 2). Together, these data demonstrate InSyn1 regulates the spatial distribution of αDG and that its loss results in a corresponding alteration across αDG-positive synapses. We also performed the same analysis of gephyrin following the loss of InSyn1 (Figure 4C). Consistent with our in vitro findings, there was no significant change in the density or the cluster size of gephyrin between WT and KO neurons both in neurite and perisomatic regions (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images of WT and InSyn1 KO hippocampal neurons at DIV13, labeled with antibodies to αDG (green) and MAP2 (blue). Scale bars, 10 um. (B) Bar graphs showing normalized αDG cluster density or area size either at perisomatic regions or at neurite regions. Perisomatic cluster density (WT n = 36, KO n = 38, two-tailed t-test, p=0.6491), neurite cluster density (WT n = 28, KO n = 30, two-tailed t-test, p=0.0010), perisomatic cluster area (WT n = 36, KO n = 38, two-tailed t-test, p<0.0001), and neurite cluster area (WT n = 36, KO n = 38, two-tailed t-test, p<0.0001). *p<0.05, **p<0.001, ***p<0.0001. (C) Representative images of WT and InSyn1 KO hippocampal neurons labeled with antibodies to gephyrin (green) and MAP2 (blue). Scale bars, 10 µm. (D) Bar graphs showing normalized gephyrin cluster density or area size. Perisomatic cluster density (WT n = 45, KO n = 38, two-tailed t-test, p=0.5963), neurite cluster density (WT n = 45, KO n = 38, two-tailed t-test, p=0.6331), perisomatic cluster area (WT n = 45, KO n = 39, two-tailed t-test, p=0.7923), and neurite cluster area (WT n = 36, KO n = 38, two-tailed t-test, p=0.8098).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Bar graphs showing normalized total αDG cluster area size (WT n = 32, KO n = 41, two-tailed t-test, p=0.0839).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative images of WT and InSyn1 KO hippocampal neurons at DIV13, labeled with antibodies to dystrophin (green) and Tuj-1 (blue). Scale bars, 10 um. (B) Bar graphs showing normalized dystrophin cluster density or area size either at perisomatic regions or at neurite regions. Perisomatic cluster density (WT n = 25, KO n = 24, two-tailed t-test, p=0.9249), neurite cluster density (WT n = 25, KO n = 24, two-tailed t-test, p=0.0371), perisomatic cluster area (WT n = 25, KO n = 24, two-tailed t-test, p<0.6096), and neurite cluster area (WT n = 25, KO n = 23, two-tailed t-test, p<0.6234). *p<0.05.
+
 Because the loss of InSyn1 affects the DGC, we next examined the effects of its loss on several GABAA receptor (GABAAR) subunits by immunostaining KO neurons and quantifying the density and area of GABAARs along with Vgat, an inhibitory presynaptic marker protein at both the perisomatic or neurite regions (Figure 5A). In InSyn1 KO neurons, there was no significant change in the cluster density of GABAARα1 in either region compared to WT (Figure 5B). We also found no significant changes in the expression of β3, which is an important subunit in inhibitory transmission in the hippocampus CA1 regions (Nguyen and Nicoll, 2018). However, we found a marked reduction of α2 cluster density in the perisomatic (32%) and neurite (43%) regions. The γ2 subunit is highly expressed throughout the brain and is required for GABAAR clustering and normal inhibitory synaptic transmission (Essrich et al., 1998; Pritchett et al., 1989). In the perisomatic region, γ2 showed a 28% reduction of cluster density, consistent with our previous CRISPR-dependent acute depletion (Uezu et al., 2016). There was also a reduction in the area of α2 and β3 clusters in the neurite regions (Figure 5B). We have noticed that αDG staining was positive only in a subset of hippocampal neurons. Additionally, it is known that DGC localizes in a subset of the inhibitory synapses. This was verified by a previous study co-staining hippocampal neurons with GABAARα2 subunit and dystrophin (Brünig et al., 2002). Furthermore, it has been shown that the DGC exists only in a fraction of gephyrin-positive synapses by co-staining with βDG and gephyrin (Lévi et al., 2002). Based on this information, we sought to analyze only αDG negative neurons that should mainly express gephyrin. After applying the same analysis method, we found a decrease of α2 subunit cluster density in the neurite region (Figure 5—figure supplement 1). Together, these data show that InSyn1 has a subunit-specific effect on GABAARs distribution in hippocampal neurons.
 
-## Role of InSyn1 in modulating network excitability during neuronal development
+![Figure 5.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative images of WT and InSyn1 KO neurons at DIV13, immunostained with α1, α2, β3, and y2 GABAAR subunits (green), and Vgat (magenta). Scale bars, 10 µm. (B) Bar graphs showing the quantification of normalized cluster density and area size of each GABAAR and Vgat from perisomatic or neurite regions. GABAARα1 density (Two-tailed t test, Perisomatic; WT n = 13, KO n = 16, p=0.7421. Neurite; WT n = 14, KO n = 17, p=0.1589), and area (Two-tailed t test, Perisomatic; WT n = 14, KO n = 17, p=0.4237. Neurite; WT n = 12, KO n = 16, p=0.4012). GABAARα2 density (Two-tailed t test, Perisomatic; WT n = 16, KO n = 15, p=0.0179. Neurite; WT n = 17, KO n = 18, p=0.0021), and area size (Two-tailed t test, Perisomatic; WT n = 16, KO n = 16, p=0.1083. Neurite; WT n = 16, KO n = 16, p=0.0009). GABAARβ3 density (Two-tailed t test, Perisomatic; WT n = 19, KO n = 16, p=0.1874. Neurite; WT n = 17, KO n = 18, p=0.0522), and area size (Two-tailed t test, Perisomatic; WT n = 20, KO n = 15, p=0.8574. Neurite; WT n = 19, KO n = 15, p=0.0353). GABAARγ2 density (Two-tailed t test, Perisomatic; WT n = 14, KO n = 10, p=0.0254. Neurite; WT n = 16, KO n = 12, p=0.2996), and area size (Two-tailed t test, Perisomatic; WT n = 13, KO n = 16, p=0.3262. Neurite; WT n = 12, KO n = 15, p=0.1271). Of note, no significant difference was found in Vgat cluster quantifications (Two-tailed t-test. GABAARα1, Perisomatic; WT n = 13, KO n = 17, p=0.5510. Neurite; WT n = 13, KO n = 15, p=0.2996. GABAARα2, Perisomatic; WT n = 17, KO n = 16, p=0.8858. Neurite; WT n = 17, KO n = 17, p=0.5657. GABAARβ3, Perisomatic; WT n = 19, KO n = 16, p=0.3011. Neurite; WT n = 19, KO n = 16, p=0.5536. GABAARγ2, Perisomatic; WT n = 15, KO n = 12, p=0.9152. Neurite; WT n = 17, KO n = 15, p=0.7124). *p<0.05, ***p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of WT and InSyn1 KO hippocampal neurons at DIV13, labeled with antibodies to αDG (red), GABAARs (green), and Tuj-1 (blue). αDG positive (arrows) and negative (arrowheads) are indicated. Scale bars, 10 µm. (B) Bar graphs showing normalized GABAARs cluster density or area size either at perisomatic or at neurite regions from αDG negative cells. GABAARα1 perisomatic cluster density (WT n = 19, KO n = 20, two-tailed t-test, p=0.0185), neurite cluster density (WT n = 20, KO n = 19, two-tailed t-test, p=0.0640), perisomatic cluster area (WT n = 19, KO n = 20, two-tailed t-test, p=0.1026), and neurite cluster area (WT n = 19, KO n = 19, two-tailed t-test, p=0.3932). GABAARα2 perisomatic cluster density (WT n = 16, KO n = 12, two-tailed t-test, p=0.3015), neurite cluster density (WT n = 16, KO n = 14, two-tailed t-test, p=0.0039), perisomatic cluster area (WT n = 17, KO n = 12, two-tailed t-test, p=0.3511), and neurite cluster area (WT n = 16, KO n = 12, two-tailed t-test, p=0.7319). *p<0.05, **p<0.001. Scale bars, 10 um.
+
+### Role of InSyn1 in modulating network excitability during neuronal development
 
 We have previously shown that acute CRISPR-mediated InSyn1 depletion specifically reduced mIPSC frequency without impacting mEPSCs, which is consistent with the observations here that loss of InSyn1 leads to the abnormal distribution of αDG and GABAAR α2/γ2. To broadly test how impaired inhibition may impact neuronal excitability and network activity, we measured field recordings of spontaneous and optically stimulated activity using multi-electrode arrays (MEA). Because these recordings are non-invasive, we also took advantage of repeated recordings over two weeks to assess whether InSyn1 might also modulate neuronal activity at different developmental stages in vitro (Figure 6A). To determine the expression of endogenous InSyn1 during neuronal development, we labeled the protein by HITI technique to image its expression course over time. InSyn1 was detected as early as DIV6 in neuronal culture and gradually increased during the development (Figure 6—figure supplement 1). Previous studies have shown that DGC accumulates progressively in cultured neurons prepared from rat embryos at E18 (Lévi et al., 2002). They found β-DG was detected from 1 week and the colocalization with GABARγ2 increased from 2 weeks of in vitro culture. These data support the functional relationship between DGC and InSyn1. Cultured cortical neurons begin with random neuronal firing, which gradually exhibits network activity characterized by increasing spike firing rate, long bursting activity, and global synchronization that indicate the maturation of neuronal connectivity (Figure 6B). We found an increase in the mean spontaneous and evoked firing rate of InSyn1 null neurons compared to WT at DIV8 and DIV11, but no difference at DIV14 (Figure 6—figure supplement 2A) as well as no differences in network synchrony (Figure 6—figure supplement 2B and C). These effects on firing rates corresponded well with a significant increase in the frequency of neuronal bursting at early time points (DIV8; 26%, DIV11; 20%) (Figure 6C). Interestingly, at DIV14 the frequency of neuronal bursts was no longer different between WT and InSyn1 null neurons. However, the duration of neuronal bursts (DIV14) and the number of spikes per burst (DIV11 and 14) were significantly increased at later time points (Figure 6C). Bursting activity in cultured neuronal networks critically depends on excitatory synaptic transmission while GABAergic inputs participate in the termination of the bursts (Cohen et al., 2008; Suresh et al., 2016). We also found an increase in the number of spikes per burst at the network level at an early time point as well as an increase in the frequency of synchronous burst at the later developmental stage (Figure 6D). These data demonstrated that InSyn1 depletion increases the bursting activity and the duration of neuronal networks in culture, presumably originating from the inhibitory synaptic defects we previously identified.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design to record spontaneous neuronal activity. Cultured cortical neurons were prepared from InSyn1 WT or KO neonatal pups at P0, and spontaneous neuronal activities were recorded at DIV8, 11, and 14. (B) Representative raster plots of four electrodes from each genotype recorded at DIV8, 11 and 14. Black ticks indicate the time of a spike occurred, and blue ticks indicate the spikes are part of single-electrode burst activity. (C) KO neurons showed increased spontaneous activity compare to WT at early time points. Bar graphs showing normalized average of burst frequency (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.0010. DIV11, WT n = 38, KO n = 45, p=0.0026. DIV14, WT n = 39, KO n = 43, p=0.1064), normalized average of burst duration (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.1689. DIV11, WT n = 38, KO n = 45, p=0.1195. DIV14, WT n = 39, KO n = 43, p=0.0021), and normalized average of number of spikes per burst (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.1460. DIV11, WT n = 38, KO n = 45, p=0.0093. DIV14, WT n = 39, KO n = 43, p=0.0038). **p<0.001. (D) Measurements of synchronous neuronal activities. Bar graphs showing the normalized average of network burst frequency (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.1253. DIV11, WT n = 38, KO n = 45, p=0.8531. DIV14, WT n = 39, KO n = 43 from three plates, p=0.0395.), normalized average of network burst duration (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.0742. DIV11, WT n = 38, KO n = 45, p=0.7676. DIV14, WT n = 39, KO n = 43, p=0.1380), and normalized average number of spikes per network burst (Two-tailed t-test. DIV8, WT n = 38, KO n = 46, p=0.0104. DIV11, WT n = 38, KO n = 45, p=0.0003. DIV14, WT n = 39, KO n = 43, p=0.0745). *p<0.05. ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A and C) Hippocampal neurons from H11 Cas9 neonatal pups were transduced at DIV0 either with AAV-InSyn1-HITI or AAV-mTubb3 to tag endogenous InSyn1 or β-III tubulin, respectively. Scale bars, 15 µm. (B and D) Graphs depicting the quantification of labeled neurons at each developmental time point.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) InSyn1 KO neurons exhibited an increased firing rate at early developmental stages. Bar graphs showing normalized average of mean firing rate (Two-tailed t-test, DIV8, WT n = 38, KO n = 46 from three plates, p=0.0017. DIV11, WT n = 38, KO n = 45 from three plates, p=0.0324. DIV14, WT n = 39, KO n = 43 from three plates, n.s.) *p<0.05, **p<0.001. (B) Examples of cross-correlation histogram from each time points. X-axis; time delay (s), y-axis; the strength of the correlation. (C) Graph showing cross-correlation between WT and InSyn1 KO neurons (Two-tailed t-test, DIV8, WT n = 38, KO n = 46 from three plates, p=0.0829. DIV11, WT n = 38, KO n = 45 from three plates, p=0.3555. DIV14, WT n = 39, KO n = 43 from three plates, p=0.0729). (D) Experimental design of recording network activity from optogenetically activated neurons. Cultured cortical neurons were prepared from InSyn1 WT or KO neonatal pups at P0, and light-evoked neuronal activities were recorded at DIV8, 11, and 14. (E) Graph showing normalized evoked spike count in response to light stimulation from 0% to 75%. (n = 19–49 from three independent MEA plates. Two-way ANOVA followed by Bonferroni’s comparisons test. DIV8 genotype effect, F (1, 467)=6.059, p<0.0142, 75% p<0.0001. DIV11 genotype effect, F (1, 456)=16.43, p<0.0001, 10% p=0.0287, 25% p=0.0007. DIV14 genotype effect, F (1, 482)=0.0146) *p<0.05, **p<0.0001. (F) Graph showing the normalized duration of first spike response to light stimulation (n = 17–49 from three independent MEA plates. Light stimulation from 5% to 75% was analyzed. Two-way ANOVA followed by Bonferroni’s comparisons test. DIV8 genotype effect, F (1, 387)=0.8015, p=0.3712. DIV11 genotype effect, F (1, 380)=1.139, p=0.2865. DIV14 genotype effect, F (1, 400)=2.928, p=0.0878). Inset graphs represent the light intensity response between 0 and 10%.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Graph of the latency to myoclonic seizure onset (Two-tailed t-test, WT n = 12, KO n = 12, p=0.9362) and generalized seizure (Two-tailed t-test, WT n = 12, KO n = 12, p=0.7148) were measured.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) The preference score for the novel object training (Train), short-term (STM), and long-term (LTM) tests is shown (ANOVA with repeated measure, WT n = 21, KO n = 19, no significant main effects of genotypes, F(1,38)= 4.023, p=0.052, or time x genotype interaction, F(2,76) =0.282, p=0.755). (B) Total time spent with the objects were similar between the genotypes. (ANOVA with repeated measure, WT n = 21, KO n = 19, no significant main effects of genotypes, F(1,38)= 0.180, p=0.674, or time x genotype interaction, F(2,76) =0.485, p=0.618).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) A schematic of the water maze test showing the acquisition phase during days 1–8, reverse acquisition phase during days 9–16. NE, northeast; NW, northwest; SE, southeast; SW, southwest. (B) InSyn1 KO mice showed similar performance to WT mice in spatial learning as measured by total time spent to reach the platform during the acquisition phase or reverse phase. (C) Swim time in specific quadrants of the maze for WT and KO mice during acquisition probe tests (days 2, 4, 6, and 8) and reversal probe tests (days 10, 12, 14, and 16). At DIV10, KO mice showed a slight but a significant preference toward the new location (SW) compared to the previous location (NE) while WT mice did not.
+
 We further characterized the functional consequences of InSyn1 on network activity using optogenetic modulation. Optogenetic tools allow precise control of spike timing using short pulses of blue light to excite light-gated ion channels such as channelrhodopsin-2 (ChR2) (Boyden et al., 2005; Gunaydin et al., 2010). We measured the spike count and the latency to the first spike in response to the optical stimulation from neurons transduced with AAV-hSyn-hChR2(H134R)-EYFP. Neurons were infected at DIV1 and evoked spike activities were recorded with a range of different light intensities at DIV8, 11, and 14 (Figure 6—figure supplement 2D). At DIV8, InSyn1 null neurons exhibited a significant increase in the spike count at the stimulation intensity of 75%. At DIV11, InSyn1 null neurons still exhibited an increase response, however at DIV14, there was no statistical difference between the two genotypes (Figure 6—figure supplement 2E). These effects were not likely a reflection of altered membrane properties or channel kinetics as the first spike latency, which is a decay time of the first spike response to the stimulus, showed no genotype effects at any of the developmental stages (Figure 6—figure supplement 2F).
 
-## Behavioral analysis of InSyn1 KO mice
+### Behavioral analysis of InSyn1 KO mice
 
 The above data strongly supports the contention that InSyn1 is associated with and functionally important for aspects of neuronal and network bursting properties as well as the spatial distribution of GABAAR subtypes and the inhibitory DGC. Interestingly, muscular dystrophies arising from mutations in the DGC are often associated with mild to severe cognitive defects, epilepsy, and other neurological abnormalities (Hendriksen and Vles, 2008). These phenotypes are thought to arise due to the roles of the DGC at GABAergic synapses as abnormalities in inhibitory synaptic transmission are known to contribute to various neurological disorders, including epilepsy (Möhler, 2006). To determine whether InSyn1 might have similar physiologic functions, we performed a range of tests to determine if the loss of InSyn1 leads to increase sensitivity to seizure induction, altered locomotor activity levels, anxiety, or abnormalities in measures of cognition.
 
@@ -75,19 +135,19 @@ We next analyzed locomotor activity and anxiety levels of the InSyn1 KO mice in 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig7-v2.jpg)
 
-**Figure 7.:** InSyn1- /- mice exhibit hypoactivity.Analysis of open field exploration behavior (A–D). (A) Distance traveled in the open field over 1 hr shown in 5 min time blocks (ANOVA with repeated measure, WT n = 21, KO n = 21, main effects of group F(1, 38)=8.359, p=0.06, post-hoc t-test). (B) The plot of the total distance traveled (Two-tailed t-test, p=0.0066). (C) Graph of stereotypy behavior (ANOVA with repeated measure, WT n = 21, KO n = 21, no group difference for genotype F(1, 38)=1.186, p=0.283). (D) The plot of the duration spent in the center of the field (ANOVA with repeated measure, WT n = 21, KO n = 21, no group difference for genotype F(1, 38)=1.314, p=0.259). (E–F). Graphs depicting data from the light-dark transition test for: (E) Measurement of the latency to enter the light area (Two-tailed t-test, WT n = 19, KO n = 16, p=0.5970); (F) Total crosses between the areas (Two-tailed t-test, WT n = 20, KO n = 16, p=0.9888); (G) Time spent in the light area (Two-tailed t-test, WT n = 20, KO n = 16, p=0.1295); and (H) Total activity (Two-tailed t-test, WT n = 20, KO n = 16, p=0.0265). bb; beam break. *p<0.05, **p<0.01, ***p<0.001.
+**Figure 7.:** Analysis of open field exploration behavior (A–D). (A) Distance traveled in the open field over 1 hr shown in 5 min time blocks (ANOVA with repeated measure, WT n = 21, KO n = 21, main effects of group F(1, 38)=8.359, p=0.06, post-hoc t-test). (B) The plot of the total distance traveled (Two-tailed t-test, p=0.0066). (C) Graph of stereotypy behavior (ANOVA with repeated measure, WT n = 21, KO n = 21, no group difference for genotype F(1, 38)=1.186, p=0.283). (D) The plot of the duration spent in the center of the field (ANOVA with repeated measure, WT n = 21, KO n = 21, no group difference for genotype F(1, 38)=1.314, p=0.259). (E–F). Graphs depicting data from the light-dark transition test for: (E) Measurement of the latency to enter the light area (Two-tailed t-test, WT n = 19, KO n = 16, p=0.5970); (F) Total crosses between the areas (Two-tailed t-test, WT n = 20, KO n = 16, p=0.9888); (G) Time spent in the light area (Two-tailed t-test, WT n = 20, KO n = 16, p=0.1295); and (H) Total activity (Two-tailed t-test, WT n = 20, KO n = 16, p=0.0265). bb; beam break. *p<0.05, **p<0.01, ***p<0.001.
 
 Based on our findings that InSyn1 mRNA expression is abundant in the hippocampus and that its deletion resulted in both altered DGC and GABAR distribution as well as elevated neuronal excitability in vitro, we next tested whether InSyn1 null mice showed abnormal hippocampal activity during exploration of the open field in vivo. To analyze in vivo neural activity, we infected neurons in the dentate gyrus of the dorsal hippocampus with GCaMP6f-expressing AAV under the control of CaMKII promoter, followed by GRINS lens implantation 3–4 weeks later (Chen et al., 2013). In vivo imaging via a head-mounted miniaturized 1P microscope was utilized to image and record neural activity via Ca2+-induced fluorescence events in both WT and InSyn1 null mice during exploration (Figure 8A and B)(Ghosh et al., 2011). Prior electrophysiological and calcium imaging studies report a sparse and a low-frequency neuronal activity in which the rate depends on the status of animal behavior in this task (Danielson et al., 2016; Leutgeb et al., 2007; Pernía-Andrade and Jonas, 2014). Raster plots of calcium events depict relatively sparse neuronal activity in both WT and KO animals during exploration of the open field (Figure 8B). Quantification of calcium events revealed the event rate of KO mice was significantly elevated (WT = 0.044 Hz vs KO = 0.098 Hz), and this increase was found during both the movement (WT = 0.050 Hz vs KO = 0.121 Hz) and the stationary (WT = 0.041 Hz vs KO = 0.075 Hz) periods (Figure 8C). The ratio of neuronal firing events during movement versus stationary periods showed no statistical difference between genotypes (Figure 8D–E). Taken together, these data demonstrate that loss of InSyn1 has a profound impact on neural activity in vivo, consistent with our observations of activity in vitro.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig8-v2.jpg)
 
-**Figure 8.:** InSyn1- /- mice exhibit elevated neuronal activity in the dentate gyrus.(A) Left; experimental design showing unilateral AAV-CaMKII-GCaMP6f injection into the DG of the dorsal hippocampus. The image was generated by the Allen Institute Brain Explorer two software (http://mouse.brain-map.org/static/brainexplorer). Right; an image of GCaMP6f expression and the position of the implanted GRIN lens. Scale bar; 500 um. A ΔF/F transformed image is inserted. Scale bar; 20 µm. (B) Representative images of a Ca2+-transient-raster plot from 40 cells. (C) Measurements of Ca2+ event rate. (Two-tailed t-test, WT n = 4, KO n = 4, total, p=0.0011. movement, p=0.0269. stationary, p=0.0143). *p<0.05, **p<0.01. (D) Scatter plot of movement and stationary state-related Ca2+-transient frequency recorded from WT and InSyn1 KO mice. (E) Bar graph showing the Ca2+-transient event ratio of movement to stationary (Two-tailed t-test, WT n = 4, KO n = 4, p=0.496).
+**Figure 8.:** (A) Left; experimental design showing unilateral AAV-CaMKII-GCaMP6f injection into the DG of the dorsal hippocampus. The image was generated by the Allen Institute Brain Explorer two software (http://mouse.brain-map.org/static/brainexplorer). Right; an image of GCaMP6f expression and the position of the implanted GRIN lens. Scale bar; 500 um. A ΔF/F transformed image is inserted. Scale bar; 20 µm. (B) Representative images of a Ca2+-transient-raster plot from 40 cells. (C) Measurements of Ca2+ event rate. (Two-tailed t-test, WT n = 4, KO n = 4, total, p=0.0011. movement, p=0.0269. stationary, p=0.0143). *p<0.05, **p<0.01. (D) Scatter plot of movement and stationary state-related Ca2+-transient frequency recorded from WT and InSyn1 KO mice. (E) Bar graph showing the Ca2+-transient event ratio of movement to stationary (Two-tailed t-test, WT n = 4, KO n = 4, p=0.496).
 
 The hippocampus plays a pivotal role in the processing of emotional information through circuitry connections with other brain regions such as the amygdala (Engin and Treit, 2007). This cognitive processing may involve hippocampal DGC-positive inhibitory synapses, as mice lacking dystrophin (Mdx null mice) exhibit altered hippocampal function and significant cognitive disturbances in fear conditioning (Chaussenot et al., 2015; Dallérac et al., 2011; Vaillend and Chaussenot, 2017; Vaillend et al., 2010). Based on these prior studies of DGC function in the CNS and our observations of the altered hippocampal activity of the InSyn1 null mice, we next examined the contextual memory capability in the fear conditioning paradigm in which mice learn to associate aversive events (mild electric shock) within a specific context (Figure 9A). The freezing behavior during the context test attribute to hippocampal or temporal lobe processes (Phillips and LeDoux, 1992). Twenty-four hours after the foot shock, InSyn1 KO mice showed a marked decrease in conditioned freezing to the context compared to their WT littermates (Figure 9B and C). The freezing rate immediately after the footshock, which is an index of stress-induced fear response, were comparable between WT and KO mice. (Figure 9D). We also evaluated the dose-response relationship to electric foot shock and found InSyn1 KO mice responses were comparable to that of WT mice (Figure 9D). These data demonstrate that although InSyn1 KO mice perceive sensory footshock, contextual memory of these events is significantly impaired. These effects are unlikely to be due to differences in innate anxiety levels as baseline anxiety was normal in open field and light-dark emergence testing. Instead, the effects on cognitive performance were likely downstream of the elevated activity we detected in the dentate gyrus. To further test this possibility, we next investigated whether differential activation of neurons could be observed in the hippocampus using an independent method. To this end, we quantified c-Fos expression in the DG of both phenotypes. c-Fos is an early immediate gene whose expression is a marker of neural activity in hippocampal neurons during fear conditioning and memory retrieval (Milanovic et al., 1998; Reijmers et al., 2007). Following contextual fear memory retrieval, mice were perfused and stained with a c-Fos-specific antibody (Figure 9E). The quantitative comparison revealed a 26% increase of c-Fos-positive cells in the DG of InSyn1 KO mice, indicative of an effect of genotype on neuronal activity in this paradigm (Figure 9F). In summary, these data indicate InSyn1 is vital for normal neuronal activity in the hippocampus and that its loss significantly increases neuronal activity and impairs contextual fear memory.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/50712/elife-50712-fig9-v2.jpg)
 
-**Figure 9.:** InSyn1- /- mice exhibit reduced memory recall and elevated c-Fos staining in contextual fear conditioning.(A) Experimental scheme of contextual fear conditioning. After acclimation, mice receive a mild aversive foot-shock in a conditioning chamber. The next day, freezing upon placement in the chamber (without shock) was assessed. (B) Graph of startle responses to foot shock. Mice were exposed to different intensities of foot shock and the vertical acceleration was quantified and normalized. Two-way repeated measure ANOVA, Genotype effect, F (1, 29)=0.7095, p=0.4065. (C) Graph of the freezing response after shock stimulation between WT and KO mice. (D) Line graph representing the time of freezing in 1 min time bins during the fear memory test. Two-way repeated measure ANOVA, Genotype effect, F(1, 38)=18.38, p=0.0001. Bonferroni post-hoc analysis, 1 min p=0.0004, 2 min p=0.0085, 3 min p=0.0172, 4 min p=0.0735, 5 min p=0.1928. *p<0.05, **p<0.01, ***p<0.001. (E) Graph showing the total time of freezing is reduced more than 30% in InSyn1 KO mice compared to the WT littermates (WT n = 21, KO n = 19, two-tailed t-test, p<0.0001). (F) Representative images of hippocampus DG from WT and InSyn1KO stained for c-Fos (red) and Nissl (blue). Scale bars; 20 µm. (G) Bar graph represents c-Fos positive cell density in the DG regions of WT and KO hippocampal tissues. (Two-tailed t-test, WT n = 34 from four brains, KO n = 36 from five brains, p=0.0078). **p<0.01, ***p<0.001.
+**Figure 9.:** (A) Experimental scheme of contextual fear conditioning. After acclimation, mice receive a mild aversive foot-shock in a conditioning chamber. The next day, freezing upon placement in the chamber (without shock) was assessed. (B) Graph of startle responses to foot shock. Mice were exposed to different intensities of foot shock and the vertical acceleration was quantified and normalized. Two-way repeated measure ANOVA, Genotype effect, F (1, 29)=0.7095, p=0.4065. (C) Graph of the freezing response after shock stimulation between WT and KO mice. (D) Line graph representing the time of freezing in 1 min time bins during the fear memory test. Two-way repeated measure ANOVA, Genotype effect, F(1, 38)=18.38, p=0.0001. Bonferroni post-hoc analysis, 1 min p=0.0004, 2 min p=0.0085, 3 min p=0.0172, 4 min p=0.0735, 5 min p=0.1928. *p<0.05, **p<0.01, ***p<0.001. (E) Graph showing the total time of freezing is reduced more than 30% in InSyn1 KO mice compared to the WT littermates (WT n = 21, KO n = 19, two-tailed t-test, p<0.0001). (F) Representative images of hippocampus DG from WT and InSyn1KO stained for c-Fos (red) and Nissl (blue). Scale bars; 20 µm. (G) Bar graph represents c-Fos positive cell density in the DG regions of WT and KO hippocampal tissues. (Two-tailed t-test, WT n = 34 from four brains, KO n = 36 from five brains, p=0.0078). **p<0.01, ***p<0.001.
 
 ## Discussion
 
@@ -109,47 +169,281 @@ In summary, by analyzing a novel component of the iPSD, InSyn1, we have uncovere
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26-LSL-Cas9 knockin</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:026175, RRID:IMSR_JAX:026175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>H11-CAG-Cas9 knockin</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:028239, RRID:IMSR_JAX:028239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>American Type Culture Collection</td>
+      <td>ATCC Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat monoclonal anti-HA</td>
+      <td>Roche</td>
+      <td>Roche Cat# 3F10, RRID:AB_2314622</td>
+      <td>ICC 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-alpha-Dystroglycan</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# 05–593, RRID:AB_309828</td>
+      <td>ICC 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-HA</td>
+      <td>Covance</td>
+      <td>Cat# AFC-101P-1000, RRID:AB_291231</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Gephyrin</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 147 011, RRID:AB_887717</td>
+      <td>ICC 1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-MAP2</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 188 002, RRID:AB_2138183</td>
+      <td>ICC 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-beta-Tubulin III</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T8660, RRID:AB_477590</td>
+      <td>ICC 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GABAARα1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 224 203, RRID:AB_223218</td>
+      <td>ICC 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GABAARα2</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 224 103, RRID:AB_2108839</td>
+      <td>ICC 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GABAARβ3</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 224 403, RRID:AB_2619935</td>
+      <td>ICC 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GABAARγ4</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 224 003, RRID:AB_2263066</td>
+      <td>ICC 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Vgat</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 131 002, RRID:AB_887871</td>
+      <td>ICC 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-dystrophin</td>
+      <td>Abcam</td>
+      <td>Cat# ab7164, RRID:AB_305740</td>
+      <td>ICC 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-c-Fos</td>
+      <td>Millipore</td>
+      <td>Cat# ABE457, RRID:AB_2631318</td>
+      <td>IHC 1:5000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP (PX458)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_48138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBetaActin-HA-α 1-syntrophin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBetaActin-HA-β-dystrobrevin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-U6-sgRNA-hSyn-Cre</td>
+      <td>PMID: 27609886</td>
+      <td></td>
+      <td>backbone of AAV CRISPR constructs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-U6-InSyn1Cterm-HITI-smFP-SynI-Cre</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-mTubb3</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_87116</td>
+      <td>HITI construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_26973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>gRNAs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>InFusion cloning kit</td>
+      <td>TaKaRa</td>
+      <td>Cat#638910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bis(2,2,2-trifluoroethyl) ether/Flurothyl</td>
+      <td>Santa Cruz Bioteh</td>
+      <td>333-36-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_001935</td>
+      <td>1.52e</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Puncta Analyzer/ImageJ</td>
+      <td>PMID: 21113117</td>
+      <td></td>
+      <td>1.29</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6J (stock no. 000664), Rosa26-LSL-Cas9 knockin (stock No. 026175), and H11-CAG-Cas9 knockin (stock #028239) mice were purchased from Jackson Laboratory. All mice were housed (3–5 mice per cage) in the Duke University's Division of Laboratory Animal Resources facilities. All procedures were conducted with a protocol approved by the Duke University Institutional Animal Care and Use Committee in accordance with the US National Institutes of Health guidelines.
 
-## InSyn1 null mice
+### InSyn1 null mice
 
 InSyn1 KO mice were generated by CRISPR/Cas9 gene-editing method at the Duke Transgenic Core Facility (Durham, NC). Briefly, Insyn1 oligo sequence (ATGGTCATCGGGCAACTTGA) was cloned into px458 (Addgene; 48138). sgRNAs were transcribed in vitro by MegaShortScript T7 kit (Invitrogen). Insyn1 sgRNA was microinjected into an oocyte from C57BL/6J strain mice along with Cas9 RNA with standard protocol and embryo was transfer into the pseudopregnant female mice. Chimeric offspring were bred to C57BL/6J, establishing germ-line transmission and further bred to expand the colony. Primer oligos F1 (GGGCCGTTAAAATGTGGAGC), R1 (CTCTCAGGATGCCCGATG), and R5 (TTCTCTCAGGATGCCTTCAAGT) were used for genotyping.
 
-## Plasmids
+### Plasmids
 
 HA-gephyrin, HA-α1-syntrophin (BC026215) and HA-β-dystrobrevin (BC016655) expression constructs were made by subcloning each cDNA along with the epitope tag into the pBetaActin plasmid (Uezu et al., 2016). AAV expressing InSyn1-HA and InSyn1-GFP deletion mutants were generated by PCR based In-Fusion cloning (Clontech) into the AAV backbone using mouse InSyn1 as the template or synthesized as a gBlock (Integrated DNA Technologies, Coralville, IA) to insert an HA tag or to delete the regions encoding a.a. 1–60 (InSyn1ΔN), a.a. 61–87 (InSyn1ΔM1), a.a. 88–180 (InSyn1ΔM2), or a.a 181–292 (InSyn1ΔC). AAV CRISPR constructs were made by cloning each gRNA into pAAV-U6-sgRNA-hSyn-Cre (Uezu et al., 2016), (mouse Dag1; ACCGTGGTTGGCATTCCAGACGG, mouse Gphn; GTTGGTGAGGATCATTCCCTCGG). To label endogenous mouse InSyn1, AAV HITI construct (pAAV-U6-InSyn1Cterm-HITI-smFP-SynI-Cre) was generated by cloning smFP-HA flanked by sgRNA (AAGCTAAGGGCAAGAACTAGGGG) targeting the C terminus of mouse Insyn1 into pAAV-U6-sgRNA-hSyn-Cre (Suzuki et al., 2016). pAAV-mTubb3 was a gift from Juan Belmonte (Addgene # 87116) and pAAV-hSyn-hChR2(H134R)-EYFP was a gift from Karl Deisseroth (Addgene # 26973). All constructs generated in the lab were validated with sequencing (Eton).
 
-## AAV production and neuronal infection
+### AAV production and neuronal infection
 
 Large-scale AAV productions were performed as previously described (Uezu et al., 2016). Briefly, HEK293T cells were cultured in DMEM containing 10% fetal bovine. 1.5 × 107 HEK293T cells per 15 cm dish were plated 1 day before transfection for a total of six dishes per virus. Next day, cells were transfected with 30 µg pAd-DeltaF6, 15 µg serotype plasmid AAV2/9, and 15 µg AAV plasmid carrying the transgene with PEI MAX (Polysciences 24765). Eighteen hours later, the medium was replaced with 20 ml DMEM + 10% FBS. 48 hr later, cells were collected and centrifuged at 1200 rpm for 5 min at room temperature. The final cell pellet was resuspended in cell lysis buffer (15 mM NaCl, 5 mM Tris-HCl, pH 8.5) and freeze-thawed three times. The cell lysate was treated with 50 U/ml of Benzonase at 37°C for 30 min and centrifuged at 4500 rpm for 30 min at 4°C. The supernatant was added over a gradient of 15%, 25%, 40% and 60% iodixanol solution and centrifuged using a Beckman Ti-70 rotor, spun at 67,000 rpm for 1 hr. The viral solution was washed with 1X PBS three times and concentrated to 200 µl using a 100 kDa filter (Amicon). Aliquots were stored at −80°C until use. Small-scale AAV production followed the recently published method (Gao et al., 2019). In brief, HEK293T cells were plated on a 12-well plate, then transfected with 0.4 µg AAV plasmid, 0.8 µg helper plasmid pAd-DeltaF6, and 0.4 µg serotype 2/1 plasmid per well with PEI Max when cell density reached 60–80% confluency. Cells were then incubated in glutamine-free DMEM (ThermoFisher 11960044) supplemented with 1% Glutamax (ThermoFisher 35050061) and 10% FBS for 3 days. The AAV-containing supernatant medium was collected and filtered through a 0.45 µm filter tube and temporarily stored at 4°C. HEK293T cell line was purchased from the Duke Cell Culture Facility, which tests for mycoplasma contamination.
 
-## Primary neuronal culture and immunocytochemistry
+### Primary neuronal culture and immunocytochemistry
 
 Primary neuronal cultures from mouse hippocampus were prepared as described previously (Carlson et al., 2011). Briefly, P0 pups were rapidly decapitated and hippocampal neurons were collected and plated onto poly-L-lysine-coated coverslips. Neurons were cultured in Neurobasal-A medium with 2% (v/v) B-27 supplement and 1% (v/v) GlutaMAX. Samples were fixed at DIV13-14 in 4% PFA/4%sucrose in PBS for 10 min at 37°C. They were permeabilized and blocked with 0.2% Triton X-100% and 5% normal goat serum in 1x PBS at room temperature. Samples were then incubated for 1.5 hr at room temperature with primary antibodies: rat anti-HA (Roche, 3F10; 1:1000), mouse anti-α-dystroglycan (Millipore IIH6C4; 1:200), mouse anti-gephyrin (Synaptic Systems 147011 1:300), rabbit anti-MAP2 (Synaptic Systems 188002 1:1000), mouse anti-β-III tubulin/Tuj-1 (Sigma T8660 1:1000), chicken anti-β-III tubulin/Tuj-1 (Synaptic Systems 302306 1:1000), rabbit anti-GABAARα1 (Synaptic Systems 224203 1:500), α2 (Synaptic Systems 224103 1:500), β3 (Synaptic Systems 224403 1:500), γ2 (Synaptic Systems 224003 1:500), rabbit anti-Vgat (Synaptic systems 131002; 1:1000), mouse anti-dystrophin (Abcam MANDRA1 1:100). After washing with 1x PBS, samples were incubated with species-specific secondary antibodies in a combination of Alexa Fluor 488, Alexa Fluor 568, Alexa Fluor 647 (Invitrogen, 1:500), Alexa Fluor 405 (1:100), or DAPI (Sigma D9542; 1:1000) staining for 30 min at RT. Samples were washed with PBS and mounted with mounting media (FluorSave Reagent, EMD Millipore, 345789).
 
-## Quantification of endogenous or exogenous protein puncta in cultured neurons
+### Quantification of endogenous or exogenous protein puncta in cultured neurons
 
 Images were taken by either Zeiss Axio Imager M2 epifluorescence microscope or Zeiss LSM 710/880 inverted confocal microscopes. All images were acquired blinded to the experimental conditions. All the parameters taken by the microscopes were consistent between each sample. Each experimental condition was represented by 3–5 coverslips per experiment, and 5–6 images were captured per coverslip. ImageJ 1.52e (NIH) was used for image analysis, applying identical analysis parameters across all conditions within each experiment. To quantify the endogenous gephyrin, αDG, or dystrophin puncta density, a mask image was generated from the GFP fill-in signal to extract fluorescently-labeled puncta. Puncta Analyzer plugin for ImageJ 1.29 or Analyze Particles was used to count the puncta number per image (Ippolito and Eroglu, 2010). Background intensity was subtracted from the images (rolling ball radius = 50) and threshold to detect discrete puncta size between 0.2 and 1.0 µm2. The density was calculated by dividing the puncta number with the area of GFP fill-in. To quantify the expression profile of InSyn1 and its mutants in neurons, we calculated the average absolute deviation of GFP or HA-positive puncta images. ROI dendritic segments, 10 um away from the cell body, were chosen from InSyn1-GFP or InSyn1-HA positive neurons. A segmented line of 15 um was drawn over the dendrite to export the intensity plot profile (ImageJ). Each pixel intensity was normalized to the mean value within the segment. The mean absolute deviation was calculated and expressed as a ‘distribution index.’ To quantify αDG or GABAARs subunit puncta density and area from WT and InSyn1 KO neurons, each of the fluorescent cluster signals was extracted after masking Tuj-1 or MAP2-positive area. These puncta images were further divided into two regions, perisomatic region within a diameter of 30 µm from the center of the soma, and neurite regions within a diameter between 30 and 100 um. Images were thresholded to detect discrete puncta. The puncta density was calculated by dividing the puncta number with Tuj-1 or MAP2-positive area. Co-stained Vgat density was analyzed simultaneously. Because of the neuronal heterogeneity of the in vitro hippocampal culture, images were captured from αDG-positive neurons (Benson et al., 1994).
 
-## Immunoprecipitation experiment
+### Immunoprecipitation experiment
 
 Immunoprecipitation experiment using HEK293T cells were performed as previously described (Uezu et al., 2012). Briefly, Transfected cells were lysed with lysis buffer [25mMHepes(pH7.4), 150mMNaCl, 1mMEDTA, 1% NonidetP-40, 5mMNaF, 1mMorthovanadate, 1mMAEBSF, 2 μg/mL leupeptin/pepstatin]. The lysate was centrifuged and the supernatant was incubated with GFP trap-agarose (ChromoTek). Beads were washed with lysis buffer and the sample buffer was added and subjected to immunoblotting. The protein-transferred nitrocellulose membrane was probed for mouse anti-HA (Covance HA.11 1:2000) and rabbit anti-GFP (Invitrogen A11122 1:1000) following secondary antibodies (Li-cor IRDye 680RD Goat anti-Mouse 1:10,000. IRDye 800CW Goat anti-Rabbit 1:10,000). Immunofluorescence signal was detected by Odyssey FC imager (LI-COR).
 
-## Multi-electrode array (MEA)
+### Multi-electrode array (MEA)
 
 Postnatal day 0 neurons from WT or InSyn1 KO cortex were plated in a 48-well MEA plate (Lumos 48, Axion Biosystems) and neuronal activity was recorded at day 8, 11 and 14 days after plating (DIV; days in vitro). Each well contains a 4 × 4 grid of 50 nm diameter electrodes with a pole-to-pole electrode spacing of 350 um. Wells were coated with 1 mg/mL of poly-L-lysine in sodium borate buffer, pH 8.5. Neurons were plated at 120,000 cells/well spotted onto the electrode grid within the inner well. At DIV5, 5 µM of AraC was added and fed every other day using basal media. Extracellular recordings of spontaneous or optogenetically induced action potentials were performed at 37°C with 5% CO2 using a Maestro MEA system and AxIS software (Axion Biosystems). Ten min after the MEA plates were placed on the stage, 10 min recordings were used to calculate the metrics. Only wells that show more than 12 active electrodes were included for further data analysis. Data were acquired at a rate of 12.5 kHz filtered with a digital Butterworth bandpass of 200–3000 Hz. The threshold for spike detection was fixed at 6x standard deviation. Independent measurements were taken from triplicate MEA plates with 16–24 wells for each condition. Electrode bursting is defined as a minimal of 5 spikes separated by less than 100 ms between each spike. Network bursting is defined as a minimal of 50 spikes in a well separated by less than 100 ms between each spike with a minimum of 35% electrodes participated in the burst activity. The synchrony was examined by well-wide cross-correlogram across all unique combinations of electrodes in a well, normalized by the inter-electrode cross-correlations (Halliday et al., 2006). For quantification, the area under the cross-correlation histogram with the synchrony window of 20 ms was used. For optogenetic experiments, the cultures were transduced with 0.2 µL of pAAV-hSyn-hChR2(H134R)-EYFP with a titer of 3 × 10^11GC/mL at DIV1. Blue light stimulation was conducted as ten times of 5msec-on 2msec-off cycles with 1 s interval at the intensity of 0, 5, 10, 25, 50, and 75%. Evoked spike count was calculated as an average of the number of spikes from 10 stimuli in 100 ms time window after light stimulation. Evoked first spike latency was an average of time from the stimulation event to the first detected spike. Data were collected from three different MEA plates.
 
-## Proximity ligation in situ hybridization technology (PLISH)
+### Proximity ligation in situ hybridization technology (PLISH)
 
 Insyn1 mRNA was detected using PLISH as described previously (Nagendran et al., 2018). Mouse brain frozen sections were prepared using Nuclease-free grade PBS and Sucrose. The 20 µm sections were fixed with 4% methanol-free formaldehyde at room temperature for 20 min, followed by incubation with Proteinase-K (20 μg/ml, #EO0491) at 37C for 9 min. Sections were dehydrated with series of ethanol then incubated with total 1 μM of Insyn1-targeting or scramble hybridization probes at 37C for 2 hr followed by bridge and circle oligo hybridization at 37C for 1 hr. The sections were incubated with T4 DNA ligase (#M020M, New England Biolabs) at 37C for 2 hr. For rolling circular amplification (RCA), the sections were incubated with NxGen phi29 DNA polymerase (#30221, Lucigen) in hybridization chambers (#622514, Grace Bio-labs) at 37C for 16 hr. RCA products were detected using Cy5-conjugated imager oligo with incubating at 37C for 1 hr. Slices were counterstained with NeuroTrace 435/455 blue-fluorescent Nissl stain (ThermoFisher). All the probes are shown in Figure 3—source data 1.
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 Adult mice (>P60) were anesthetized through inhalation of 1.5% isoflurane gas and placed in a stereotaxic frame (Kopf Instruments). Mice were administered meloxicam (~10 μL/25 g) subcutaneously before the beginning of surgery to reduce inflammation. Ethanol and betadine were applied to the skin over the skull and a vertical incision was made through the skin to expose the skull. The mouse’s head angle was adjusted so that the primary fissures of the skull were on the same dorsal-ventral plane and a unilateral craniotomy was made with a high-speed drill (Foredom MH-170) over the dentate gyrus (coordinates: AP −2.0 mm; ML 1.0 mm: DV 2.0 mm), in reference to the Allen Mouse Brain Atlas (Lein et al., 2007). Using a precision pressure injection system (Drummond Nanoject), a glass pipette filled with virus containing a genetically encoded calcium indicator (AAV1.GCaMP6f, Inscopix Ready-to-Image virus) was lowered 200 µm below the desired depth, briefly retracted to the desired depth. After waiting 5 min, small amounts of virus were injected over a period of ~10 min (30 injections of 18–32 nL every 20 s). After waiting for an additional 5–10 min to prevent efflux of the virus during pipette retraction, the glass pipette was retracted from the brain and the skin over the craniotomy was sutured shut. After applying several drops of a topical anesthetic to the incision (bupivacaine) and administering an analgesic subcutaneously (buprenorphine,~25 μL/25 g), mice were allowed to recover under a heat lamp for 20–30 min and then placed in their home cage.
 
-## Microendoscope imaging in freely behaving mice
+### Microendoscope imaging in freely behaving mice
 
 Three weeks after AAV injection, a gradient index lens microendoscope (Proview Lens Probe, diameter 0.5 mm, length 6.1 mm, Inscopix [1050–002202]) was implanted in the same position during a second surgery. Briefly, a small cranial window was made above the DG and the microendoscope was slowly lowered into the brain (100 um/minute to 2.2 mm DV). After 5 min of waiting, the lens was retracted back to 2.0 mm DV and fixed to the skull using adhesive luting cement (C and B Metabond). A small screw was also affixed to the skull above the right frontal cortex to increase the stability of the implant. Cement, followed by a thin layer of tissue adhesive (VetBond) was used to seal the remaining exposed skull. One week after microendoscope implantation, a baseplate (Inscopix) was implanted over the lens, cemented in place and covered with a base plate cover (Inscopix).
 
@@ -157,34 +451,34 @@ Three weeks after AAV injection, a gradient index lens microendoscope (Proview L
 
 The data collected from imaging sessions was decompressed (Inscopix Image Decompressor) and processed to extract calcium event timing (Inscopix Data Processing 1.2.1). Briefly, using the Inscopix software package mentioned above, data was spatially downsampled (2-3x) and motion-corrected in reference to the first frame of the recording. Cells were identified with PCA-ICA and confirmed as cells by eye. The calcium traces extracted from PCA-ICA were then thresholded (median absolute deviation: 4; event smallest decay time: 0.20 s) and the timing of calcium events from individual cells was calculated. The timing of events was used to calculate the rate of events for each cell (Matlab). The animal’s velocity during the behavioral session was extracted from Ethovision and used to define epochs of stationarity (velocity >10 cm/s for at least 1 s), after which the calcium event rate during movement epochs and stationarity epochs was calculated and normalized by the amount of time spent in each behavioral state (Matlab).
 
-## Flurothyl-induced seizure test
+### Flurothyl-induced seizure test
 
 We performed a vapor inhalation of flurothyl (bis(2,2,2-trifluoroethyl) ether) (ChemCruz) seizure induction in a ventilate chemical hood, testing mice individually within an air-tight glass chamber (2 L volume) from the age of P50. Mice were habituated in the chamber for 1 min before administrating 10% flurothyl in 95% ethanol, though a 10 mL syringe with 18G needle. The flurothyl solution was dripped onto a filter paper (Whatman, 1001–042, grade 1) at the top of the chamber with an infusing rate of 200 µL/mL. We video-recorded the resultant behaviors and measured the latency to the following events. Myoclonic seizure; a brief but a distinct contraction of the body and extremities but maintain postural control. Generalized seizure; convulsions with a loss of postural control. Once the mice exhibit a generalized seizure, the chamber was quickly opened to fresh air, and the mice were removed from the chamber to end the seizure. Between the trials, the chamber was cleaned with water, 70% ethanol, and replaced with a new filter paper.
 
-## Open field test
+### Open field test
 
 The test was performed as described previously (Kim et al., 2014) from the age between P60 to P120. Mice were placed in an open field (AccuScan Instruments), and their activities were monitored over 1 hr under 350 lux illumination using VersaMax software (AccuScan Instruments; Columbus, OH). Locomotor (distance traveled), stereotypical activities (repetitive beam-breaks < 1 s), and anxiety level (duration in the center area of the arena) were measured in 5 min time-bins.
 
-## Novel object recognition test
+### Novel object recognition test
 
 The test was performed as described previously (Carlson et al., 2011). Before testing, the mice were acclimated to the arena (48 × 22×18 cm) under 80–100 lux illumination. The test consisted of three phases, training (Train), short-term memory (STM), and long-term memory (LTM). The first day, animals were individually placed in the arena and presented with two identical objects for 10 min (Train). Mice were then stayed in their home cage for 30 min before being returned to the test arena for 10 min to assess their STM, where one training object was replaced with a novel object. Next day, the mice were re-examined 24 hr later to assess their LTM with the familiar training object paired to a second novel object for 10 min. All the tests were video recorded and analyzed by Ethovision (Noldus). Contact with a given object was defined as the mouse approaching the object with the nose being within 1 cm of the object. Preference score for the novel object was expressed as a ratio of the total time spent with the familiar object subtracted from the total time spent with the novel object, divided by the total time spent exploring on both objects.
 
-## Morris water maze
+### Morris water maze
 
 Morris water maze task was conducted as described (Porton et al., 2010). A 120 cm diameter water tank was used. Opaque water in the tank was maintained at 25°C. The water pool was divided into four quadrants (NE, NW, SE, and SW). A 12 cm diameter round platform was submerged 1 cm below the water surface and 20 cm apart from the wall of the water tank at the NE quadrant. Testing consisted of three sessions: acquisition and probe trials (day 1 day 8), reversal acquisition and reversal probe trials (day 9 day 16). 1 week prior to testing, all mice were handled daily for 5 min and then were placed in a pan of shallow water (1 cm) for 30 s to acclimate them to water. On the seventh day after handling, each mouse was placed onto the hidden platform in the NE quadrant for 20 s and then allowed to swim freely for 60 s before being returned to the platform for 15 s. Acquisition testing consisted of 32 trials given across 8 days with four trials administered per day. Trials were run in pairs, with each pair separated by 60 min. Probe trials were conducted without a platform at the end of days 2, 4, 6 and 8. Reversal acquisition and reversal probe tests were conducted the same way as the acquisition/probe tests described above, but the platform location was moved from NE to SW. For each trial, the release point for the animals was randomized across seven equally spaced points along the perimeter of the maze. All test trials were 1 min in duration. The swim time was analyzed by Ethovision (Noldus Information Technology).
 
-## Light-dark transition test
+### Light-dark transition test
 
 Mice were placed in a two-chambered apparatus (Med-Associates) with a darkened (<1 lux) and a lighted chamber (~750 lux) to explore freely for 5 min. The mouse location and activity was tracked by Infrared beams.
 
-## Contextual fear conditioning
+### Contextual fear conditioning
 
 Fear conditioning was performed as described previously (Kim et al., 2014; Porton et al., 2010). Mouse fear conditioning chamber (Med Associates, Inc) was used for conditioning and testing. Following a 2 min acclimation in the conditioning chamber, mice received a 0.4 mA scrambled foot shock for 2 s. Each mouse remained in the chamber for an additional 30 s before being placed in the home cage. Fear contextual memory was tested the next day in the same conditioning chamber for 5 min in the absence of the foot shock. Startle shock threshold was conducted with the Med-Associates startle platform (St Albans, VT) run by Startle Pro Software. Mice were placed onto a multibar grid in a Plexiglass tube which allowed the animal to move freely back and forth, but not rears upright. After 2 min of acclimation, the mouse was subjected to a total of 10 scrambles of intensities from 0 to 0.6mA separated by varying intervals of 20–90 s. Startle responses by the animal during the first 100 msec of the shock were transduced through the load cells in the holding platform. The area under the curve (AUC) of the startle reactivity was measured and expressed as arbitrary units (AU).
 
-## c-Fos immunohistochemistry and quantification
+### c-Fos immunohistochemistry and quantification
 
 Animals from the age between P60 to P70 were singly housed 2 days before fear conditioning to minimize the abnormal behaviors as well as c-Fos activation (Rodriguiz and Wetsel, 2006). After mice were perfused transcardially with 4% PFA in PBS (pH 7.4), brains were dissected, post-fixed in PFA overnight at 4C, and cryoprotected in 30% sucrose. Every third brain coronal section (40 µm) of the dorsal hippocampal regions within Bregma −1.0 to −2.0 mm was collected from each brain sample. Free-floating tissue sections were first permeabilized with 1% TritonX-100/PBS at room temperature for 3 hr. After incubated in the blocking solution of 5% horse serum, 0.2% TritonX-100 in 1x PBS for 1 hr, tissue sections were stained with primary antibodies (c-Fos rabbit, Millipore, 1:5000) overnight in the blocking solution at 4C followed by secondary antibodies (Alexa555 or Alexa647 conjugated, 1:500, LT) at RT for 2 to 3 hr at RT. DAPI staining were performed 10 min to label cell nuclei. Images were acquired by confocal microscopy (Zeiss LSM 710) at 10x with identical image settings from multiple brain section (at least four slices) with anatomically similar areas. c-Fos-positive cells were counted individually and normalized by the area of the granule cell layer. All genotypes were blinded.
 
-## Statistical analysis
+### Statistical analysis
 
 Repeats for experiments and statistical tests carried out are given in the figure legends. Experiments were replicated at least three times. Statistical analysis and plotting were performed with either GraphPad Prism 8 (GraphPad Software, CA), SPSS (IBM) or Microsoft Excel. Data were tested for normal distribution with D’Agostino and Person to determine the use of parametric (unpaired Student’s t test, one-way ANOVA, two-way ANOVA) or non-parametric (Mann-Whitney, Kruskal-Wallis) tests. We confirmed necessary parametric test assumptions using the Shapiro-Wilk test (normality) and Levene’s test (error variance homogeneity) when ANOVA with repeated measure was applied. Appropriate post hoc tests were carried out in analyses with multiple comparisons and stated in figure legends. For all bar graphs, values are expressed as mean ± s.e.m. ns, not statistically significant.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-A fundamental limitation of photosynthetic carbon fixation is the availability of CO 2 . In C 4 plants, primary carboxylation occurs in mesophyll cytosol, and little is known about the role of CO 2 diffusion in facilitating C 4 photosynthesis. We have examined the expression, localization, and functional role of selected plasma membrane intrinsic aquaporins (PIPs) from Setaria italica (foxtail millet) and discovered that SiPIP2;7 is CO 2 -permeable. When ectopically expressed in mesophyll cells of Setaria viridis (green foxtail), SiPIP2;7 was localized to the plasma membrane and caused no marked changes in leaf biochemistry. Gas exchange and C 18 O 16 O discrimination measurements revealed that targeted expression of SiPIP2;7 enhanced the conductance to CO 2 diffusion from the intercellular airspace to the mesophyll cytosol. Our results demonstrate that mesophyll conductance limits C 4 photosynthesis at low p CO 2 and that SiPIP2;7 is a functional CO 2 permeable aquaporin that can improve CO 2 diffusion at the airspace/mesophyll interface and enhance C 4 photosynthesis.
+A fundamental limitation of photosynthetic carbon fixation is the availability of CO2. In C4 plants, primary carboxylation occurs in mesophyll cytosol, and little is known about the role of CO2 diffusion in facilitating C4 photosynthesis. We have examined the expression, localization, and functional role of selected plasma membrane intrinsic aquaporins (PIPs) from Setaria italica (foxtail millet) and discovered that SiPIP2;7 is CO2-permeable. When ectopically expressed in mesophyll cells of Setaria viridis (green foxtail), SiPIP2;7 was localized to the plasma membrane and caused no marked changes in leaf biochemistry. Gas exchange and C18O16O discrimination measurements revealed that targeted expression of SiPIP2;7 enhanced the conductance to CO2 diffusion from the intercellular airspace to the mesophyll cytosol. Our results demonstrate that mesophyll conductance limits C4 photosynthesis at low pCO2 and that SiPIP2;7 is a functional CO2 permeable aquaporin that can improve CO2 diffusion at the airspace/mesophyll interface and enhance C4 photosynthesis.
 
 ## Introduction
 
@@ -37,13 +37,33 @@ Setaria italica (foxtail millet) and Setaria viridis (green foxtail) are C4 gras
 
 ## Results
 
-## S. italica PIP family
+### S. italica PIP family
 
 Four PIP1 and eight PIP2 genes were identified in both S. italica and S. viridis and their protein sequences were 99–100% identical between the two species (Supplementary file 1). Phylogenetic analysis based on the amino acid sequences of the S. italica PIP family showed that three distinct clades emerge: the PIP1 clade, PIP2 clade I, and PIP2 clade II (Figure 1—figure supplement 1). Isoforms within these three clades have characteristic differences including sequence signatures associated with substrate selectivity (Supplementary file 2). Three of SiPIP1s (1;1, 1;2, and 1;5) and all SiPIP2 clade I members (2;1, 2;4, 2;5, 2;6, and 2;7) matched the current consensus sequence for CO2 transport (Azad et al., 2016; Perez Di Giorgio et al., 2014).
 
 RNA-seq data from the publicly available Phytomine database (Phytozome) was examined for tissue-specific expression patterns of the S. italica PIPs (Figure 1a). SiPIP1;1, 1;2, 1;5, and 2;1 were expressed at moderate to high levels and SiPIP2;6 at low to moderate levels, in all tissues analyzed (root, leaves, shoot, and panicle). SiPIP1;6, 2;4, 2;5, 2;7, and 2;3 were expressed predominantly in roots at low to moderate levels. SiPIP2;8 was expressed only in leaves and SiPIP2;2 transcripts were not detected.
 
-## Functional characterization of SiPIPs
+![Figure 1.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig1-v2.jpg)
+
+**Figure 1.:** (a) Expression atlas of the SiPIP genes generated from Phytomine reported as Fragments Per Kilobase of transcript per Million mapped reads (FPKM). House-keeping genes (HK) PROTEIN PHOSPHATASE 2A (PP2A) and DUAL SPECIFICITY PROTEIN (DUSP) were included for reference. (b) Localization of SiPIP-GFP fusions expressed in yeast visualised with confocal microscopy; left panels – GFP fluorescence; right panels – bright field overlaid with GFP fluorescence. Measured cell diameters are shown in Figure 1—figure supplement 2. (c) CO2 permeability assay on yeast co-expressing SiPIPs and human CARBONIC ANHYDRASE II (hCAII) analyzed by stopped-flow spectrometry (see Figure 1—figure supplement 2 for details). ‘hCAII only’ expression was used as negative control. Mean±SE, n=3 biological replicates. Two independent experiments are presented. Asterisks indicate statistically significant differences between yeast expressing SiPIPs and ‘hCAII only’ control (t-test, p<0.05). (d) Yeast water permeability was assessed in the yeast aquaporin deletion background (aqy1/2) by the cumulative growth between untreated and freeze-thawed cells and determined by the percent area under the curve (% AUC). The yeast expressing the β-glucuronidase reporter gene (515.GUS) was used as negative control. Mean±SE, n=4 biological replicates. Asterisks indicate statistically significant differences between yeast expressing SiPIPs and 515.GUS control (t-test, p<0.01).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Amino acid sequences for the PIP1 and PIP2 proteins from S. italica were acquired from Phytozome and numbered based on McGaughey et al., 2016. The protein sequences were aligned using MUSCLE in Geneious (v11.1.5) and the phylogenetic tree generated using the neighbor-joining method with pairwise deletions in MEGA10 (Kumar et al., 2018).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic highlighting the yeast expression system and the detection of CO2 permeability by measuring the change in fluorescein fluorescence due to the acidification of the cytoplasm by producing protons from the hydration of CO2 from ectopically expressed carbonic anhydrase (CA). The decline in fluorescence is measured by stop-flow spectrophotometry at 490 nm. (b) Construct design used for expression and assay of CO2 permeability and localization in yeast. (c) CA activity measured in yeast cells expressing PIPs. (d) The cell diameter of yeast cells expressing PIPs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The changes in CO2 permeability, detected on the stopped-flow spectrophotometer (Figure 1c), could be confounded by other factors such as permeability to protons also causing intracellular acidification. When SiPIP2;7+ hCAII (black) and hCAII alone (red) were injected alongside CO2 enriched buffer, a decrease in pH was observed. This decrease was more pronounced in PIP2;7+ hCAII indicating higher CO2 transport rate. When SiPIP2;7+ hCAII and hCAII were injected with a low pH (i.e., proton-rich) buffer, no decrease in fluorescence intensity was observed with either SiPIP2;7+ hCAII (gray) or hCAII alone (pink) demonstrating that the decrease in fluorescence seen with the CO2 enriched was not due to proton movement through the membrane. In fact, both traces were the same specifically pointing out that SiPIP2;7 expression did not cause excessive proton movement which could lead to a false-positive result for CO2 permeability.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Oocytes were injected with either water (control) or 23 ng of SiPIP2;7 cRNA. Osmotic permeability (Pos) was determined via photometric swelling where oocytes were pre-incubated in the isotonic swelling solution before being transferred to the hypotonic swelling solution for the assay. Mean±SE, p<0.0001 (t-test).
+
+### Functional characterization of SiPIPs
 
 GFP localization of SiPIP-GFP fusions was used to confirm expression and determine targeting to the yeast plasma membrane (Figure 1b). Overall, SiPIP1s had lower GFP signal that was patchy at the cell periphery with strong internal signal consistent with localization to the endoplasmic reticulum. GFP signal was also present diffusively throughout the cytosol suggestive of protein degradation. Overall, SiPIP1s were poorly produced in yeast and were not efficiently targeting the plasma membrane as needed for the functional assays. For the PIP2s, only SiPIP2;1, SiPIP2;4, SiPIP2;5, and SiPIP2;7 showed clear localization to the plasma membrane in addition to other internal structures, and were therefore selected for further functional analyses.
 
@@ -51,17 +71,121 @@ CO2 permeability was measured in yeast co-expressing a SiPIP along with human CA
 
 Freeze-thaw survival assays, which quantify water permeability of aquaporins (Tanghe et al., 2002), provided further confirmation that the SiPIPs expressed in yeast were functional. Overexpression of water permeable aquaporins greatly improves freeze-thaw tolerance in yeast, especially in the highly compromised aquaporin knockout mutant aqy1/2 (Tanghe et al., 2002). Yeast expressing the β-glucuronidase reporter gene (515.GUS) was used a control to show that the single freeze-thaw treatment was effective in almost killing off the entire yeast population (Figure 1d). Consistent with the poor plasma membrane localization and abundance of SiPIP2;1-GFP (Figure 1b), yeast expressing SiPIP2;1 did not show any protection to freeze-thaw treatments (Figure 1c). On the other hand, SiPIP2;4, 2;5, and 2;7 all showed some level of protection, indicating that they permeated water and were functional within the plasma membrane of yeast cells. For detailed characterization of water permeability, SiPIP2;7 was expressed in Xenopus laevis oocytes. Swelling assay confirmed that SiPIP2;7 is a functional water channel (Figure 1—figure supplement 4).
 
-## Expression of SiPIP2;7 in mesophyll cells of S. viridis
+### Expression of SiPIP2;7 in mesophyll cells of S. viridis
 
 To confirm and exploit the CO2 permeability characteristic of SiPIP2;7 in planta, we created transgenic S. viridis plants expressing SiPIP2;7 with a C-terminal FLAG-tag fusion and under the control of the mesophyll-preferential Z. mays PEPC promoter (Gupta et al., 2020; Salesse-Smith et al., 2018). Out of 52 T0 plants analyzed for SiPIP2;7-FLAG protein abundance and the hygromycin phosphotransferase (hpt) gene copy number (Figure 2—figure supplement 1), lines 27, 44, and 52 were selected for further analysis because they had the strongest FLAG signal per transgene insertion number. Immunodetection of FLAG and photosynthetic proteins was performed on leaves of homozygous transgenic plants (Figure 2a); azygous plants of line 44 were used as control hereafter. Monomeric and dimeric SiPIP2;7-FLAG was detected in all transgenic plants (Figure 2—figure supplement 1) and abundance of the prevalent dimeric form was used for relative quantification of SiPIP2;7 abundance (Figure 2a). Plants of line 44 had the highest production of SiPIP2;7-FLAG whilst plants of lines 27 and 52 accumulated about 2–4 times less of this protein. Immunodetection of FLAG on leaf cross-sections, visualized with confocal microscopy, confirmed partial localization of SiPIP2;7-FLAG to the plasma membrane of mesophyll cells (Figure 2c). Transcript analysis confirmed highly elevated expression of SiPIP2;7-FLAG in leaves but not in roots of transgenic lines and showed no changes in expression level of closely related SiPIP2;6 (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig2-v2.jpg)
+
+**Figure 2.:** (a) Immunodetection of SiPIP2;7-FLAG and photosynthetic proteins in leaf protein samples loaded on leaf area basis. Three plants from each of the three transgenic lines were analyzed and dilution series of the control and line 44-3 samples were used for relative quantification. (b) Protein abundances calculated from the immunoblots relative to control plants. Mean±SE. No significant difference was found between the transgenic and control plants (t-test). (c) Immunolocalization of SiPIP2;7-FLAG on leaf cross-sections visualized with confocal microscopy. Fluorescence signals are pseudo-colored: green – FLAG antibodies labelled with secondary antibodies conjugated with Alexa Fluor 488; red – chlorophyll autofluorescence. BS, bundle sheath cell; M, mesophyll cell. Scale bars = 20 µm. Azygous plants of line 44 were used as control. Uncropped images of the blots are provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) T0 plants; T-DNA insertion numbers indicate the number of hpt gene copies detected by droplet digital PCR. Lines selected for further analysis are marked with asterisks. (b) Homozygous T3 plants; azygous plants of line 44 were used as control. Uncropped images of the blots from (a) are provided in Figure 2—figure supplement 1—source data 1; uncropped images of the blot from (b) are provided in Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Azygous plants of line 44 were used as control.
+
 Abundances of photosynthetic proteins PEPC, CA, the Rieske subunit of the Cytochrome b6f complex, and the small subunit of Rubisco (RbcS), did not differ between transgenic and control plants (Figure 2a). In line with the immunoblotting results, measured activities of PEPC and CA, and the amount of Rubisco active sites were not altered in the transgenic plants (Table 1). Chlorophyll content, leaf dry weight per area, and biomass of roots and shoots did not differ between the genotypes either (Table 1).
+
+**Table 1.**
+ Properties of Setaria viridis plants expressing SiPIP2;7-FLAG in mesophyll cells.PEPC, PEP carboxylase; Rubisco, ribulose bisphosphate carboxylase oxygenase; LMA, leaf mass per area. Azygous plants of line 44 were used as control. Mean±SE, n=3 except for biomass (n=8). Three-weeks old plants before flowering were used for all analyses. No significant difference was found between the transgenic and control plants (one-way ANOVA, α=0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Control</th>
+      <th>Line 27</th>
+      <th>Line 44</th>
+      <th>Line 52</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PEPC activity, µmol CO2 m–2 s–1</td>
+      <td>220.1±25.8</td>
+      <td>197.6±12.7</td>
+      <td>208.7±7.9</td>
+      <td>218.5±3.5</td>
+    </tr>
+    <tr>
+      <td>CA hydration rate, mol m–2 s–1 bar–1</td>
+      <td>6.50±0.10</td>
+      <td>6.32±0.22</td>
+      <td>5.34±0.67</td>
+      <td>5.35±0.56</td>
+    </tr>
+    <tr>
+      <td>Rubisco active sites, µmol m–2</td>
+      <td>12.17±0.63</td>
+      <td>12.53±0.54</td>
+      <td>12.84±0.13</td>
+      <td>12.63±0.74</td>
+    </tr>
+    <tr>
+      <td>Chlorophyll (a+b), mmol m–2</td>
+      <td>0.71±0.07</td>
+      <td>0.72±0.04</td>
+      <td>0.72±0.05</td>
+      <td>0.72±0.08</td>
+    </tr>
+    <tr>
+      <td>Chlorophyll a/b</td>
+      <td>5.01±0.16</td>
+      <td>5.08±0.05</td>
+      <td>4.97±0.09</td>
+      <td>5.07±0.15</td>
+    </tr>
+    <tr>
+      <td>LMA, g (dry weight) m–2</td>
+      <td>23.6±1.6</td>
+      <td>24.0±1.5</td>
+      <td>25.6±1.3</td>
+      <td>25.4±1.3</td>
+    </tr>
+    <tr>
+      <td>Shoot biomass, g (dry weight) plant–1</td>
+      <td>2.06±0.36</td>
+      <td>2.01±0.20</td>
+      <td>2.23±0.31</td>
+      <td>2.24±0.34</td>
+    </tr>
+    <tr>
+      <td>Root biomass, g (dry weight) plant–1</td>
+      <td>0.27±0.07</td>
+      <td>0.28±0.03</td>
+      <td>0.34±0.06</td>
+      <td>0.35±0.05</td>
+    </tr>
+  </tbody>
+</table>
 
 To study the impact of SiPIP2;7-FLAG expression on the photosynthetic properties in transgenic plants, we conducted concurrent gas exchange and chlorophyll fluorescence analyses at different intercellular CO2 partial pressures (Ci) (Figure 3). No significant changes were detected between transgenic and control plants in CO2 assimilation rates (A), effective quantum yield of Photosystem II (φPSII) or stomatal conductance to water vapor (Figure 3—figure supplement 1). The SiPIP2;7-FLAG protein abundance was compared to the gas exchange phenotype in individual plants (Figure 3—figure supplement 2). A statistically significant polynomial relationship (R2=0.345, p<0.05) was found between the initial slopes and the relative protein content, which was significantly better than that achieved using a linear model (p<0.05). No significant relationship was observed between the SiPIP2;7-FLAG abundance and the saturating rates of assimilation (Amax; Figure 3—figure supplement 2).
 
-## Mesophyll conductance to CO2 in plants expressing SiPIP2;7
+![Figure 3.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig3-v2.jpg)
+
+**Figure 3.:** Measurements were performed at the irradiance of 1500 µmol m−2 s−1; azygous plants of line 44 were used as control. Mean±SE, n=4–6 biological replicates. No significant difference was found between the transgenic and control plants (one-way ANOVA, α=0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** No significant differences were detected between the transgenic and control plants (one-way ANOVA, α=0.05).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Immunodetection of the SiPIP2;7-FLAG in plants is on a leaf area basis. Quantification of immunoblot band intensities is shown underneath the bands in relative units. (b) The initial slopes compared to the relative SiPIP2;7 content. A second order polynomial was fitted using R, producing an R2 of 0.345 (p<0.05, F=5.007, df=2 and 19), which was significantly better than a linear fit when compared using ANOVA (p<0.05). No significant improvement of the model could be found adding random effects to account for transformation event or zygosity of lines. Both polynomial coefficients were significant to the model (p<0.05). (c) Amax compared to the relative SiPIP2;7 content. A linear model was fitted using R. No significant effects could be found, with R2 of the model being only 0.065; addition of random terms to this analysis were not found to be of any advantage.
+
+### Mesophyll conductance to CO2 in plants expressing SiPIP2;7
 
 Next, we analyzed in detail the initial slopes of the ACi curves and mesophyll conductance. Fitting linear regressions indicated that mean±SE values of the initial slopes of the ACi curves for lines 27, 44, and 52 were 0.46±0.03, 0.52±0.01, and 0.53±0.05, respectively, compared to the value of 0.41±0.02 in control plants (Figure 4a). Measurements of ∆18O were used to estimate conductance of CO2 from the intercellular airspace to the sites of CO2 and H2O exchange in the mesophyll cytosol (gm) with the assumption that CO2 was in full isotopic equilibrium with leaf water in the cytosol (Barbour et al., 2016; Osborn et al., 2017). Transgenic lines showed mesophyll conductance of 0.59±0.05, 0.55±0.08, and 0.46±0.04 mol m–2 s–1 bar–1 compared to the mean±SE value of 0.42±0.03 mol m–2 s–1 bar–1 in control plants (Figure 4b). Two-way ANOVA analysis with Tukey post hoc test on the initial slopes of the ACi curves and gm showed that differences measured in plants of lines 27 and 44 were statistically significant from the control plants (p=0.04573 and 0.03724, respectively). Interestingly, for plants of line 52, only initial slopes were significantly different compared to control plants when compared by one-way ANOVA (Tukey post hoc test, α=0.05, p=0.02993).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig4-v2.jpg)
+
+**Figure 4.:** (a) Initial slope of the ACi curves estimated by linear fitting of curves (a subset of curves is presented in Figure 3a inset). (b) Mesophyll conductance, gm, estimated by oxygen isotope discrimination assuming full isotopic equilibrium (Osborn et al., 2017). Measurements were made at ambient CO2 and low O2. (c) Data from (a) and (b) compared to the C4 biochemical model predictions (von Caemmerer, 2000; von Caemmerer and Furbank, 1999). All graphs show Mean±SE; azygous plants of line 44 were used as control. The model relates the initial slope of the ACi curve (dA/Ci) to gm by: $\frac{dA}{dC_{i}}=g_{m}V_{pmax}/g_{m}K_{p}+V_{pmax}$ , where Vpmax and Kp denote the maximum PEPC activity and the Michaelis Menten constant for CO2 taken here as 250 µmol m–2 s–1 and 82 µbar (DiMario and Cousins, 2019; von Caemmerer, 2021). Asterisks indicate statistically significant differences between the plants of lines 27 (p=0.04573) and 44 (p=0.03724) and control plants (two-way ANOVA with Tukey post hoc test, α=0.05). Plants of line 52 were not significantly different from the control plants (p=0.27518).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70095/elife-70095-fig4-figsupp1-v2.jpg)
 
 We also used the gm calculations proposed by Ogée et al., 2018 which try to account for the rates of bicarbonate consumption by CA. The CA hydration constant (kCA) of 6.5 mol m–2 s–1 bar–1 was used for these calculations (Table 1). We found that the gm measured with this method gave on average 1.25 times greater values but did not change the ranking of mesophyll conductance shown in Figure 4a (Figure 4—figure supplement 1). The C4 photosynthetic model by von Caemmerer and Furbank, 1999 and von Caemmerer, 2000 relates the initial slope of the CO2 response curve (dA/Ci) to gm (see Figure 4 caption and Materials and methods). Figure 4c shows that the measured relationship between the initial slope and gm fits closely with model prediction.
 
@@ -77,48 +201,48 @@ Our findings demonstrate that CO2 permeable aquaporins can enhance CO2 diffusion
 
 ## Materials and methods
 
-## Heterologous expression in yeast
+### Heterologous expression in yeast
 
 cDNAs encoding the 12 S. italica aquaporins (Supplementary file 1) and human CARBONIC ANHYDRASE II (hCAII, AK312978) were codon-optimized for expression in yeast with IDT DNA tool (https://sg.idtdna.com/pages/tools) and a yeast-related Kozak sequence was added at the 5′ end to help increase translation (Nakagawa et al., 2008). For CO2 permeability measurements, pSF-TPI1-URA3 with an aquaporin and pSF-TEF1-LEU2 with hCAII were co-transformed into the S. cerevisiae strain INVSc1 (Thermo Fisher Scientific, Waltham, MA). For water permeability measurements, pSF-TPI1-URA3 with an aquaporin was transformed into the aqy1/2 double mutant yeast strain deficient in aquaporins (Suga and Maeshima, 2004). The yeast vectors pSF-TPI1-URA3 and pSF-TEF1-LEU2 were obtained from Oxford Genetics (Oxford, UK). Yeast transformation was performed using the Frozen-EZ yeast transformation II kit (Zymo Research, Irvine, CA) and selection of positive transformants was based on amino acid complementation. To ensure CA was not limiting, CA activity was determined using a membrane inlet mass spectrometry as described by Endeward et al., 2006 (Figure 1—figure supplement 2). For CO2 permeability measurements, an average cell diameter of 4.63 µm was determined by measuring ~100 yeast cells expressing each aquaporin (Figure 1—figure supplement 2). To study the subcellular localizations of aquaporins in yeast, a C-terminus GFP tag was added to the sequences into the pSF-TPI1-URA3 vector (pSF-TPI1-URA3-GFP). The fluorescence signal was observed using a Zeiss 780 confocal laser scanning microscope (Zeiss, Oberkochen, Germany): excitation 488 nm and emission 530 nm. Cytosolic GFP expression was used as control.
 
-## CO2 induced intracellular acidification assay
+### CO2 induced intracellular acidification assay
 
 CO2 intracellular acidification was measured in yeast cells loaded with fluorescein diacetate (Sigma-Aldrich, St. Louis, MO) as described previously (Bertl and Kaldenhoff, 2007; Otto et al., 2010). Briefly, an overnight culture of yeast cells was collected and resuspended in an equal volume of 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES)-NaOH, pH 7.0, 50 µM fluorescein diacetate and incubated for 30 min in the dark at 37°C. The suspension was centrifuged and the pellet resuspended in ice-cold incubation buffer (25 mM HEPES-NaOH, pH 6.0, 75 mM NaCl). Cells loaded with fluorescein diacetate were then injected into the stopped-flow spectrophotometer (DX.17MV; Applied Photophysics, Leatherhead, UK) alongside a buffer solution (25 mM HEPES, pH 6.0, 75 mM NaHCO3, bubbled with CO2 for 2 hr). The kinetics of acidification was measured at 490 nm excitation and >515 nm emission (OG515 long pass filter, Schott, supplied by Applied Photophysics). Data were collected over a time interval of 0.2 s and analyzed using ProData SX viewer software (Applied Photophysics). CO2 permeability was determined using the method of Yang et al., 2000. An average of 75 injections over at least three separate cultures was used for each aquaporin.
 
-## Determination of water permeability
+### Determination of water permeability
 
 A freeze-thaw yeast assay was used to determine water permeability of aquaporins expressed in aqy1/2 based on previous reports (Tanghe et al., 2002). Briefly, an overnight culture was diluted to ~6×106 cells (final volume 1 ml) in appropriate selection liquid growth medium and incubated at 30°C for 1 hr. 250 µl of each culture were then aliquoted into two standard 1.5 ml microtubes: the first (control) tube was placed on ice and the second tube was subject to a single freeze-thaw treatment, consisting of 30 s freezing in liquid nitrogen and thawing for 20 min in a 30°C water bath. Following the treatment, the cells were placed on ice. The tubes were then vortexed briefly to ensure even suspension of cells and 200 µl of the culture was transferred to wells of a Nunc-96 400 µl flat bottom untreated plate (Thermo Fisher Scientific, Cat#243656). Yeast growth in control and treated cultures were monitored over a 24–30 hr period in an M1000 Pro plate reader (TECAN, Männedorf, Switzerland) at 30°C with double orbital shaking at 400 rpm and measuring absorbance at 650 nm every 10 min. Growth data were log-transformed and freeze-thaw survival calculated as the growth (area under the curve) of treated culture relative to its untreated control from time zero up until the untreated control culture reached stationary phase.
 
 For swelling assays, the coding sequence of SiPIP2;7 was cloned into pGEMHE oocyte expression vector using LR clonase II (Thermo Fisher Scientific) and cRNA was synthesized with mMessage mMachine T7 Transcription Kit (Thermo Fisher Scientific). X. laevis oocytes were injected with 46 nl of RNAse-free water with either no cRNA or 23 ng cRNA with a micro-injector Nanoinject II (Drummond Scientific, Broomall, PA). Post-injection oocytes were stored at 18°C in a Low Na+ Ringer’s solution (62 mM NaCl, 36 mM KCl, 5 mM MgCl2, 0.6 mM CaCl2, 5 mM HEPES, 5% [v/v] horse serum [H-1270, Sigma-Aldrich] and antibiotics: 0.05 mg ml−1 tetracycline, 100 units ml−1 penicillin/0.1 mg ml−1 streptomycin), pH 7.6 for 24–30 hr. Photometric swelling assay was performed 24–30 hr post-injection (Qiu et al., 2020).
 
-## Construct assembly and S. viridis transformation
+### Construct assembly and S. viridis transformation
 
 The coding sequence of S. viridis PIP2;7 (Sevir.2G128300.1, Phytozome, https://phytozome.jgi.doe.gov/) has been codon optimized for the Golden Gate cloning (Engler et al., 2014) and translationally fused with the glycine linker and the FLAG-tag coding sequence (Hopp et al., 1988). The resulting coding sequence was assembled with the Z. mays PEPC promoter and the bacterial tNos terminator into the second expression module of the pAGM4723 binary vector. The first expression module has been occupied by the hygromycin phosphotransferase (hpt) gene assembled with the Oryza sativa Actin-1 promoter and the tNos terminator. The construct was transformed into S. viridis cv. MEO V34-1 using Agrobacterium tumefaciens strain AGL1 following the procedure described in Osborn et al., 2017. T0 plants resistant to hygromycin were transferred to soil and analyzed for SiPIP2;7-FLAG protein abundance and hpt insertion number by droplet digital PCR (iDNA Genetics, Norwich, UK). Lines 27, 44, and 52 were selected for further analysis because they had the strongest FLAG signal per transgene insertion number (Figure 2—figure supplement 1). The T1 and T2 progenies of T0 plants 27, 44, and 52 were analyzed. Azygous T1 plants of line 44 and their progeny were used as control.
 
-## Plant growth conditions
+### Plant growth conditions
 
 Seeds were surface-sterilized and germinated on medium (pH 5.7) containing 2.15 g L−1 Murashige and Skoog salts, 10 ml L−1 100× Murashige and Skoog vitamins stock, 30 g L−1 sucrose, 7 g L−1 Phytoblend, 20 mg L−1 hygromycin (no hygromycin for azygous plants). Seedlings that developed secondary roots were transferred to 0.6 L pots with garden soil mix layered on top with 2 cm seed raising mix (Debco, Tyabb, Australia) both containing 1 g L−1 Osmocote (Scotts, Bella Vista, Australia). Plants were grown in controlled environmental chambers with 16 hr light/8 hr dark, 28°C day, 22°C night, 60% humidity, and ambient CO2 concentrations. Light intensity of 300 µmol m−2 s−1 was supplied by 1000 W red sunrise 3200K lamps (Sunmaster Growlamps, Solon, OH). Youngest fully expanded leaves of the 3–4 weeks plants before flowering were used for all analyses.
 
-## Chlorophyll and enzyme activity
+### Chlorophyll and enzyme activity
 
 Chlorophyll content was measured on frozen leaf discs homogenized with a TissueLyser II (Qiagen, Venlo, The Netherlands) (Porra et al., 1989). PEPC activity was determined after Pengelly et al., 2010 from fresh leaf extracts from the plants adapted for 1 hr to 800 µmol photons m–2 s–1. CA activity was measured on a membrane inlet mass spectrometer as a rate of 18O exchange from labeled 13C18O2 to H216O at 25°C according to Von Caemmerer et al., 2004 by calculating the hydration rate after Jenkins et al., 1989. The amount of Rubisco active sites was determined by [14C] carboxyarabinitol bisphosphate binding as described earlier (Ruuska et al., 2000).
 
-## RNA isolation and qPCR
+### RNA isolation and qPCR
 
 Leaf and root tissue were frozen in liquid N2. Leaf samples were homogenized using a TissueLyser II and RNA was extracted using the RNeasy Plant Mini Kit (Qiagen). Roots were ground with mortar and pestle in liquid N2 and RNA was isolated according to Massey, 2012. Briefly, 150 µl of pre-heated (60°C) extraction buffer (0.1 M trisaminomethane (Tris)-HCl, pH 8.5 mM ethylenediaminetetraacetic acid [EDTA], 0.1 M NaCl, 0.5% sodium dodecyl sulfate [SDS], 1% 2-mercaptoethanol) was added to ~100 mg of fine root powder and incubated at 60°C for 5 min. 150 µl of phenol:chloroform:isoamyl alcohol (25:24:1) saturated with 10 mM Tris (pH 8.0) and 1 mM EDTA was added to the samples, vortexed vigorously for 10 min and centrifuged at 4500×g for 15 min. Aqueous phase was mixed with 120 µl of isopropanol and 15 µl of 3 M sodium acetate and incubated at –80°C for 15 min, then centrifuged at 4500×g (30 min, 4°C). The pellet was washed two times in 300 µl of ice-cold 70% ethanol, air-dried, and dissolved in 60 µl of RNase-free water. After addition of 40 µl of 8 M LiCl, samples were incubated overnight at 4°C. Nucleic acids were pelleted by centrifugation at 16,000×g (60 min, 4°C), washed two times with 200 µl of ice-cold 70% ethanol, air-dried, and dissolved in RNase-free water. DNA from the samples was removed using an Ambion TURBO DNA-free Kit (Thermo Fisher Scientific), and RNA quality was determined using a NanoDrop (Thermo Fisher Scientific). 100 ng of total RNA were reverse transcribed into cDNA using a SuperScript III Reverse Transcriptase (Thermo Fisher Scientific). qPCR and melt curve analysis were performed on a Viia7 Real-Time PCR System (Thermo Fisher Scientific) using the Power SYBR Green PCR Master Mix (Thermo Fisher Scientific) according to the manufacturer’s protocol. Primer pairs designed to distinguish between S. viridis PIP2;6 and PIP2;7 using Primer3 in Geneious Prime (https://www.geneious.com) and reference primers are listed in Supplementary file 3.
 
-## Western blotting and immunolocalization
+### Western blotting and immunolocalization
 
 Protein isolation from leaves and gel electrophoresis were performed as described earlier (Ermakova et al., 2019). Proteins were probed with antibodies against FLAG (ab49763, 1:5000, Abcam, Cambridge, UK), RbcS (Martin-Avila et al., 2020) (1:10,000), Rieske (AS08 330, 1:3000, Agrisera, Vännäs, Sweden), PEPC (AS09 458, 1:10,000, Agrisera), CA (Azad et al., 2016; Ludwig et al., 1998) (1:10,000). Quantification of immunoblots was performed with Image Lab software (Bio-Rad, Hercules, CA). For immunolocalization, leaf tissue was fixed and probed with primary antibodies against FLAG (1:40) and secondary goat anti-mouse Alexa Fluor 488-conjugated antibodies (ab150113, 1:200, Abcam) as described in Ermakova et al., 2021. Images were captured with a Zeiss 780 microscope using ZEN 2012 software (Black edition, Zeiss, Oberkochen, Germany). Images for plants of lines 27, 44, and azygous plants were acquired using online fingerprinting (488 nm excitation) with three user-defined spectral profiles for Alexa Fluor 488, endogenous autofluorescence, and chlorophyll. The spectral profile for endogenous autofluorescence was derived from the azygous control. The image for line 52 was initially collected as a full spectral scan (490–660 nm), then linearly un-mixed using the same online fingerprint settings as previously described. Images were post-processed with FIJI (Schindelin et al., 2012), and histograms for all images were min-max adjusted.
 
-## Gas exchange measurements
+### Gas exchange measurements
 
 Gas exchange and fluorescence analyses were performed at an irradiance of 1500 µmol m−2 s−1 (90% red/10% blue actinic light) and different intercellular CO2 partial pressures using a LI-6800 (LI-COR Biosciences, Lincoln, NE) equipped with a fluorometer head 6800-01A (LI-COR Biosciences). Leaves were first equilibrated at 400 ppm CO2 in the reference side, leaf temperature 25°C, 60% humidity, and flow rate of 500 µmol s−1 and then a stepwise increase of CO2 concentrations from 0 to 1600 ppm was imposed at 3-min intervals. Initial slopes of the CO2 response curves were determined by linear fitting in OriginPro 2018b (OriginLab, Northampton, MA). Quantum yield of PSII upon the application of multiphase saturating pulses (8000 µmol m−2 s−1) was calculated according to Genty et al., 1989.
 
-## C18O16O discrimination measurements
+### C18O16O discrimination measurements
 
 Simultaneous measurements of exchange of CO2, H2O, C18O16O, and H218O were made by coupling two LI-6400XT gas exchange systems (LI-COR Biosciences) to a tunable diode laser (TDL; model TGA200A, Campbell Scientific Inc, Logan, UT) to measure C18O16O discrimination and a Cavity Ring-Down Spectrometer (L2130-i, Picarro Inc, Sunnyvale, CA) to measure the oxygen isotope composition of water vapor (Osborn et al., 2017). Measurements were made at 2% O2, 380 µmol mol–1 CO2, leaf temperature of 25°C, irradiance of 1500 µmol m–2 s–1, and relative humidity of 55%. Each leaf was measured at 4 min intervals and 10 readings were taken. Mesophyll conductance was calculated as described by Osborn et al., 2017 with the assumptions that there was sufficient CA in the mesophyll cytosol for isotopic equilibration between CO2 and HCO3−. We also used calculations proposed by Ogée et al., 2018 to estimate gm. These calculations try to account for the rates of bicarbonate consumption by CA. We used the rate constant of CA hydration (kCA) of 6.5 mol m–2 s–1 bar–1 for these calculations.
 
-## Statistical analysis
+### Statistical analysis
 
 One-way and two-way ANOVAs with Tukey post hoc test were performed in OriginPro 2018b. A two-tailed, heteroscedastic Student’s t-tests were performed in Microsoft Excel. Linear modeling was performed in R (R Development Core Team, 2021); mixed-effects models to test the need to incorporate transgenic event and copy status was performed in lme4 (Bates et al., 2015).

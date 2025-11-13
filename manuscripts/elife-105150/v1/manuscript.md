@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Biochemistry, University of Washington Seattle United States
-2. https://ror.org/00cvxb145 Department of Neurobiology and Biophysics, University of Washington Seattle United States
-3. https://ror.org/04gndp242 Department of Structural Biology, Genentech, Inc South San Francisco United States
+1. Department of Biochemistry, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Department of Neurobiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Structural Biology, Genentech, Inc South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ We produced NCPs by wrapping 147 bp chimeric centromeric DNA (CCEN) or Widom 601
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/105150/elife-105150-fig1-v1.jpg)
 
-**Figure 1.:** (A) Sequences of the W601 and CCEN DNA used to wrap histone octamers. The black text is W601 DNA, the black text highlighted in yellow is the portion of CDEII corresponding to the Mif2 footprint (Xiao et al., 2017), the cyan text is CDEIII, the sequence underlined in green is the CBF3 binding site (Guan et al., 2021), and the blue text is the pericentromeric DNA sequence just downstream of CDEIII on chromosome III. (B) Chromatogram representing elution fractions from size-exclusion chromatography column used to purify wrapped NCPs from excess free DNA. 260 nm signal is shown for both W601 and CCEN NCPs. (C) Native gel of elution fractions indicated in the chromatogram in (B). NCPs from both SEC Fraction 6 and SEC Fraction 7 were used to collect data on the optical trap. There was no statistically significant difference between rupture forces of assemblies measured with NCPs from either Fraction 6 or Fraction 7.Figure 1—source data 1.Figure 1C, including the relevant bands and conditions.Figure 1—source data 2.Figure 1C.
+**Figure 1.:** (A) Sequences of the W601 and CCEN DNA used to wrap histone octamers. The black text is W601 DNA, the black text highlighted in yellow is the portion of CDEII corresponding to the Mif2 footprint (Xiao et al., 2017), the cyan text is CDEIII, the sequence underlined in green is the CBF3 binding site (Guan et al., 2021), and the blue text is the pericentromeric DNA sequence just downstream of CDEIII on chromosome III. (B) Chromatogram representing elution fractions from size-exclusion chromatography column used to purify wrapped NCPs from excess free DNA. 260 nm signal is shown for both W601 and CCEN NCPs. (C) Native gel of elution fractions indicated in the chromatogram in (B). NCPs from both SEC Fraction 6 and SEC Fraction 7 were used to collect data on the optical trap. There was no statistically significant difference between rupture forces of assemblies measured with NCPs from either Fraction 6 or Fraction 7.
 
 Before determining the quantitative rupture strength that each kinetochore assembly could withstand, we confirmed that the recombinant elements could spontaneously build a functional kinetochore as previously described (Hamilton et al., 2020). Briefly, the NCPs bearing His6-tags were bound directly to polystyrene microbeads via anti-His6 antibodies. The remaining subcomplexes, which did not have His6-tags, were added free in solution and bound to the beads only indirectly by assembling with the directly tethered, His6-tagged NCP. Using a laser trap to manipulate individual beads, we tested the kinetochore assemblies for their ability to bind microtubules. Each bead was brought to the dynamic plus end of a microtubule anchored onto the surface of the flow chamber. If the bead bound to the microtubule when released from the laser trap, then the kinetochore assembly was designated as functional, and the bead was used for the rupture force assay.
 
@@ -49,13 +49,51 @@ With either OA or Mif2 in solution, over 78% of beads coated in W601-NCPs or CCE
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/105150/elife-105150-fig2-v1.jpg)
 
-**Figure 2.:** (A) Percentages of beads that had microtubule binding capability. Error bars indicate the standard error of the proportion. Barnard’s test was used to compare contingency tables. The p-values for the significance of the difference between fraction of beads bound if either OA or Mif2 were included compared to if neither were included are given in Table 1. Data were combined from two biological replicates (see Figure 2—source data 1). (B) Boxplot of rupture forces for each of the kinetochore assemblies tested. Dots represent individual rupture events, and boxes enclose the interquartile range, with indicated medians. Whiskers extend to the inner fences. Data were combined from four biological replicates of each condition (see Figure 2—source data 1). A Kolmogorov–Smirnov test was performed to compare the probability distributions of rupture forces across conditions. *** indicates p-value of 1.87 × 10–6, n.s., not significant. (C) Survival probability curves for the data plotted in (B).Figure 2—source data 1.Figure 2A and B and a list of the number of technical and biological replicates for Figure 2A and B.
+**Figure 2.:** (A) Percentages of beads that had microtubule binding capability. Error bars indicate the standard error of the proportion. Barnard’s test was used to compare contingency tables. The p-values for the significance of the difference between fraction of beads bound if either OA or Mif2 were included compared to if neither were included are given in Table 1. Data were combined from two biological replicates (see Figure 2—source data 1). (B) Boxplot of rupture forces for each of the kinetochore assemblies tested. Dots represent individual rupture events, and boxes enclose the interquartile range, with indicated medians. Whiskers extend to the inner fences. Data were combined from four biological replicates of each condition (see Figure 2—source data 1). A Kolmogorov–Smirnov test was performed to compare the probability distributions of rupture forces across conditions. *** indicates p-value of 1.87 × 10–6, n.s., not significant. (C) Survival probability curves for the data plotted in (B).
 
-## W601 OA vs. CCEN OA
+**Table 1.**
+ Statistical analyses for microtubule binding assay*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>CCEN NCP neither OA nor Mif2</th>
+      <th>W601 NCP neither OA nor Mif2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>W601 NCP, OA</td>
+      <td>N/A</td>
+      <td>2.61 × 10–12</td>
+    </tr>
+    <tr>
+      <td>CCEN NCP, OA</td>
+      <td>3.55 × 10–13</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>W601 NCP, Mif2</td>
+      <td>N/A</td>
+      <td>2.31 × 10–12</td>
+    </tr>
+    <tr>
+      <td>CCEN NCP, Mif2</td>
+      <td>4.27 × 10–7</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_N/A, not applicable.*p-Values for comparison of data in Figure 2A determined by a Barnard’s test._
+
+### W601 OA vs. CCEN OA
 
 Although OA has not previously been reported to specifically bind centromeric DNA sequence elements (Hornung et al., 2014), kinetochore assemblies that relied on OA were significantly stronger when assembled on CCEN-NCPs relative to those assembled on W601-NCPs (p=1.87 × 10–6). The median rupture force for OA-based assemblies on CCEN-NCPs was 6.0 pN compared to the W601-NCP median of 4.2 pN (Figure 2B and C).
 
-## W601 Mif2 vs. CCEN Mif2
+### W601 Mif2 vs. CCEN Mif2
 
 CCEN-NCP assemblies with Mif2 were not significantly stronger than assemblies with W601-NCPs (p=0.302), which was surprising given that the CDEII region of the centromere that contains a Mif2-binding footprint (Xiao et al., 2017) was present in our chimera. The median rupture force for Mif2-based assemblies on CCEN-NCPs was 2.9 pN, which was slightly higher but not significantly different than the W601-NCP median of 2.5 pN (Figure 2B and C).
 
@@ -67,52 +105,316 @@ Xiao et al., 2017 showed that both Cse4 and CEN DNA contribute to Mif2 binding t
 
 It has not yet been possible to obtain structures of yeast NCPs wrapped in authentic CEN3 DNA without using some method to stabilize the NCPs. Guan and coworkers solved a structure of yeast centromeric CEN3 DNA-wrapped NCPs bound to a stabilizing antibody. This structure did not include inner kinetochore proteins (Guan et al., 2021). Three structures of yeast NCPs bound to inner kinetochore components have also been solved (Dendooven et al., 2023; Guan et al., 2021; Yan et al., 2019), all of which relied either on W601 DNA or hybrid DNAs that contained 6 bp of CDEII, all of CDEIII, and sequences downstream of CDEIII (Table 3). Here, we describe a new chimera of CEN3 and W601 DNA (CCEN) that includes 35 bp of CDEII as well as all of CDEIII and the region downstream of CDEIII. CCEN stably wrapped yeast centromeric histone octamers and revealed new DNA sequence preferences not previously appreciated.
 
-## Conclusion
+### Conclusion
 
 We have developed a chimeric DNA sequence (CCEN) that represents an advance toward working with a more native-like recombinant kinetochore. Using centromeric nucleosomes wrapped with CCEN DNA, we have confirmed previous findings that OA and Mif2 can independently support recombinant kinetochore assembly. We showed previously that they can distinguish centromeric versus non-centromeric nucleosomes based on histone identity (Hamilton et al., 2020). Here, we provide the first evidence that OA also distinguishes between centromeric and non-centromeric nucleosomes on the basis of DNA sequence. We also show that Mif2 requires more than the DNA binding site identified by footprinting to display sequence preferences.
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3) pLys competent cells</td>
+      <td>Novagen</td>
+      <td>Cat# 71403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MonoRab anti-DYKDDDDK Affinity Resin</td>
+      <td>GenScript</td>
+      <td>Cat# L00766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bos taurus)</td>
+      <td>Tubulin</td>
+      <td>Lab purification</td>
+      <td></td>
+      <td>Isolated from Bos taurus brainsProtocol adopted from Castoldi and Popov, 2003</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated Anti-His tag antibody</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# BAM050RRID:AB_356845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose oxidase</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# 345386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Catalase</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# E3289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotinylated bovine serum albumin (BSA)</td>
+      <td>Vector laboratories</td>
+      <td>Cat# B-2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Avidin DN</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# A-3100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCEP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 20490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin-coated polystyrene beads</td>
+      <td>Spherotech</td>
+      <td>SVP-05-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Labview</td>
+      <td>National Instruments</td>
+      <td>RRID:SCR_014325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Plasmids are listed in Table 2. Plasmid pAZ144 was derived from pSc_Mf_7, which expressed Mif2-linker-(27-392)MBP-His6 (Hamilton et al., 2020). Agilent’s QuikChange Lightning Site-Directed Mutagenesis Kit (product number: 210518) was used according to the manufacturer’s instructions to loop out the His6 tag from pSc_Mf_7 and modify the C terminal end of the MBP tag to make it identical to the Escherichia coli MBP protein. To this end, amino acids GSSHHHHHH were removed and replaced with the native C terminal sequence of the E. coli MBP protein (QTRITK), resulting in a new coding sequence encoding Mif2-linker-(27-392)MBP. The forward and reverse primers used for this were GAAAGACGCGCAGACTCGTATTACCAAATAATAAACCAACTCCATAAGG and CCTTATGGAGTTGGTTTATTATTTGGTAATACGAGTCTGCGCGTCTTTC, respectively. In all other respects, pAZ144 was identical to pSc_Mf_7. Plasmids are available from the corresponding author.
 
-## Design of chimeric centromeric DNA sequence
+**Table 2.**
+ Plasmids used for expression of kinetochore proteins*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Plasmid</th>
+      <th>Components</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nucleosome</td>
+      <td>pScKl2</td>
+      <td>K. lactis His6-H2A,K. lactis His6-H2B,Cse4,K. lactis His6-H4</td>
+      <td>Migl et al., 2020</td>
+    </tr>
+    <tr>
+      <td>OA</td>
+      <td>pGH3</td>
+      <td>Okp1, Ame1-FLAG</td>
+      <td>Hamilton et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Mif2</td>
+      <td>pAZ144</td>
+      <td>Mif2-MBP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>2D-MIND</td>
+      <td>pGH62</td>
+      <td>FLAG-Nsl1, S240D &amp; S250D Dsn1, Mtw1, Nnf1</td>
+      <td>Hamilton et al., 2020</td>
+    </tr>
+    <tr>
+      <td>(230-576) 2D-MIND</td>
+      <td>pEHM4</td>
+      <td>FLAG-Nsl1, (230-576) S240D &amp; S250D Dsn1, Mtw1, Nnf1</td>
+      <td>Hamilton et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Ndc80c</td>
+      <td>pJT48Ndc80/Nuf2</td>
+      <td>Spc24-FLAG, Spc25Ndc80, Nuf2</td>
+      <td>Kudalkar et al., 2015; Wei et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Dam1c</td>
+      <td>pJT44</td>
+      <td>Spc34-FLAG, Dad1, Dad2, Dad3, Dad4 Duo1, Dam1, Hsk3, Spc19, Ask1</td>
+      <td>Umbreit et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All proteins are from Saccharomyces cerevisiae except as noted._
+
+### Design of chimeric centromeric DNA sequence
 
 The chimeric centromeric DNA sequence (CCEN) is a chimera of CEN3 and Widom 601 DNA. CCEN is 147 bp long and includes four elements: (i) the first 62 bp of W601, (ii) 35 bp of CDEII that includes the Mif2 footprint (Xiao et al., 2017), (iii) the rest of the CBF 3 binding site (Guan et al., 2021), which is all of CDEIII (25 bp) and 17 bp downstream of CDEIII, and (iv) the last 8 bp of W601. (Note that the 48 bp CBF3 binding site overlaps with the last 6 bp of the Mif2 binding site; Guan et al., 2021.) Of the five CEN3-W601 chimeras tested, CCEN was chosen for further study because it included both the Mif2 footprint and the CBF3 binding site, and it stably wrapped centromeric histone octamers such that the nucleosomes could be further purified by size-exclusion chromatography. A construct containing all the CEN3 sequences and no W601 DNA did not stably wrap histone octamers in our hands (Table 3).
 
-## NCP wrapping
+**Table 3.**
+ DNA sequences tested for ability to wrap centromeric nucleosomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence*</th>
+      <th>Wrapped?</th>
+      <th>Stable duringSEC?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>W601†</td>
+      <td>ATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGC TCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTA ACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATA TATACATCCGAT</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CEN 3 ‡</td>
+      <td>AAAGCTATTCATTGAAAAAATAGTACAAATAAGTCACATGATGATATTTGATTTTATTATATTTTTAAAAAAAGTAAAAAATAAAAAGTAGTTTATTTTTAAAAAATAAAATTTAAAATATTAGTGTATTTGATTTCCGAAAGTTAAAAAAGAAATAGTAAGAAATATATATTT</td>
+      <td>Some</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CEN 5.1</td>
+      <td>AAAGCTATTCATTGAAAAAATAGTACAAATAAGTCACATGATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATATATACATCCGATTATTTGATTTCCGAAAGTTAAAAAAGAAATAGTAAGAAATATATATTT</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CEN3-601 (Xiao et al., 2017)</td>
+      <td>ATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGC TCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAATATTAGTGTATTTGATTTCCGAAAGTTAAAAAAGAAATAGTAAGAAATCATCCGAT</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CCEN†</td>
+      <td>ATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACAGTTTATTTTTAAAAAATAAAATTTAAAATATTAGTGTATTTGATTTCCGAAAGTTAAAAAAGAAATAGTAAGAAATCATCCGAT</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CEN 6.3</td>
+      <td>ATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGC TCTAGCACCGCTTAAACAGTTTATTTTTAAAAAATAAAATTTAAAATATTAGAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATA TATACATCCGAT</td>
+      <td>Yes</td>
+      <td>ND §</td>
+    </tr>
+    <tr>
+      <td>CEN 6.4</td>
+      <td>ATCGAGAATCCCGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAACCGCCAAGGGGATTACTCCCTAGTCTCCAGGCACGTGTCAGATATATACATCCGATGCCGCCAGTTTATTTTTAAAAAATAAAATTTAAAATATTAG</td>
+      <td>Some</td>
+      <td>ND §</td>
+    </tr>
+    <tr>
+      <td>CON3 ¶ (Dendooven et al., 2023)</td>
+      <td>ATAAGTCACATGGTGCCGAGGCCGCTCAATTGGTCGTAGACAGCTCTAGCACCGCTTAAACGCACGTACGCGCTGTCCCCCGCGTTTTAATATTAGTGTATTTGATTTCCGAAAGTTAAAAAAGAAATAGTAAGAAATATATATTTCATTGAA</td>
+      <td>ND §</td>
+      <td>ND §</td>
+    </tr>
+  </tbody>
+</table>
+
+_ND, not determined.*W601 DNA in black font; Genomic DNA upstream or downstream of CEN3 in blue font; CDEI in purple font; CDEII in red font; CDEII Mif2 footprint in red font and underlined; CDEIII in purple font and underlined; linker DNA highlighted in bold.†These are the DNA sequences used to wrap the nucleosomes tested in the optical trapping assay in this paper.‡The construct used by Xiao et al., 2017 included only the 147 bp of CEN3 and none of the upstream or downstream sequences.§Not determined.¶Shown for comparison only._
+
+### NCP wrapping
 
 Yeast histones were purified as described (Hamilton et al., 2020). W601 DNA and CCEN DNA were purchased from Integrated DNA Technologies. Mononucleosome core particles were reconstituted by the standard salt dialysis method as described (Witus et al., 2023) with two exceptions. First, the nucleosomes contained S. cerevisiae histone Cse4, and K. lactis histones H2A, H2B, and H4, the latter three were tagged with 6X-His. Second, the W601 DNA and histones were combined in a 1:1.80 molar ratio, while CCEN DNA and histones were combined in a 1:1.55 molar ratio. Nucleosomes were further purified by size-exclusion chromatography using a 24 ml Superdex 200 increase 10/300 column equilibrated in NCP storage buffer (30 mM HEPES buffer [pH 7.5], 10 mM NaCl, 0.1 mM EDTA, 0.5 mM TCEP). NCPs purified by size-exclusion chromatography were stored on ice at 4°C and used within 5 days of purification.
 
-## Purification of kinetochore proteins
+### Purification of kinetochore proteins
 
 OA, Mif2, MIND, Ndc80c, and Dam1c were expressed as described with slight modifications (Hamilton et al., 2020). Briefly, each complex was expressed from a polycistronic vector (Table 2) in Rosetta 2 DE3 pLysS cells (Novagen). Cells were grown to OD600=0.6 and induced with 0.3 mM isopropyl β-d-1-thiogalactopyranoside for 16–18 hours at 18°C. After the induction period, cells were pelleted and washed with PBS containing 1 mM PMSF. Cell pellets were frozen in liquid nitrogen and stored at –80°C until purification.
 
-## MIND-FLAG
+#### MIND-FLAG
 
 On the day of purification, cell pellets were resuspended in MIND-lysis buffer (Table 4), and cells were lysed using a French Press and lysates were cleared by high-speed centrifugation. The cleared lysate was incubated with 2 ml of MonoRab anti-DYKDDDDK Affinity Resin (L00766; GenScript) for 30 minutes. After the resin was washed with 10 column volumes of MIND-wash buffer (Table 4), the immobilized protein was incubated for 30 min with MIND-elution buffer (Table 4) containing 200 µg/ml 3x FLAG peptide (F4799; Sigma). Eluate from the anti-FLAG resin was collected and further purified by size-exclusion chromatography in MIND-SEC buffer on a 120 ml Superdex 200 column (28-9893-35; GE Healthcare). Eluted fractions were pooled and concentrated if necessary using an Amicon Ultra centrifugal filter (UFC805008; Millipore). Purified protein was stored in MIND-SEC buffer with 5% glycerol at –80°C. Protein concentration was measured via the bicinchoninic acid assay (Thermo Fisher and Sigma-Aldrich).
 
-## OA-FLAG
+**Table 4.**
+ Kinetochore protein purification buffers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Purification buffers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dam1c-FLAG</td>
+      <td>Lysis: 50 mM sodium phosphate buffer pH 6.9, 500 mM NaCl, 1 mM PMSF, Roche protease inhibitor tabletsFLAG wash: 50 mM sodium phosphate buffer pH 6.9, 500 mM NaCl, 1 mM PMSF, Roche protease inhibitor tabletsFLAG elution: 50 mM sodium phosphate buffer pH 6.9, 500 mM NaCl, 1 mM PMSF, Roche protease inhibitor tablets, 200 ug/ml 3x FLAG peptideSEC: 50 mM sodium phosphate buffer pH 6.9, 500 mM NaCl</td>
+    </tr>
+    <tr>
+      <td>Mif2-MBP</td>
+      <td>Lysis: 30 mM HEPES buffer pH 7.5, 2 M NaCl, 10% glycerol, 1 mM TCEP, 1 mM PMSF, Roche protease inhibitor tabletsAmylose resin elution: 30 mM HEPES buffer pH 7.5, 100 mM NaCl, 10% glycerol, 1 mM TCEP, 1 mM PMSF, Roche protease inhibitor tablets, 10 mM maltoseQA: 30 mM HEPES buffer pH 7.5, 100 mM NaCl, 10% glycerol, 1 mM TCEP, 1 mM PMSF, Roche protease inhibitor tabletsQB: 30 mM HEPES buffer pH 7.5, 1 M NaCl, 10% glycerol, 1 mM TCEP</td>
+    </tr>
+    <tr>
+      <td>MIND-FLAG</td>
+      <td>Lysis: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 0.5% NP40, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsFLAG wash: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsFLAG elution: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tablets, 200 ug/ml 3x FLAG peptideSEC: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 1 mM EDTA</td>
+    </tr>
+    <tr>
+      <td>Ndc80c-FLAG</td>
+      <td>Lysis: 50 mM HEPES buffer pH 7.6, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsFLAG wash: 50 mM HEPES buffer pH 7.6, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsFLAG elution: 50 mM HEPES buffer pH 7.6, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tablets, 200 ug/ml 3x peptideSEC: 50 mM HEPES buffer pH 7.6, 200 mM NaCl, 1 mM EDTA</td>
+    </tr>
+    <tr>
+      <td>OA-FLAG</td>
+      <td>Lysis: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 0.5% NP40, 1 mM PMSF, Roche protease inhibitor tabletsLow salt FLAG wash: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsHigh salt FLAG wash: 50 mM HEPES buffer pH 7.5, 2 M NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tabletsFLAG elution: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 10% glycerol, 1 mM EDTA, 1 mM PMSF, Roche protease inhibitor tablets, 200 ug/ml 3x FLAG peptideSEC: 50 mM HEPES buffer pH 7.5, 200 mM NaCl, 1 mM EDTA</td>
+    </tr>
+  </tbody>
+</table>
+
+#### OA-FLAG
 
 OA-FLAG was purified as described for MIND-FLAG except that the OA-lysis, OA-elution, and OA-SEC buffers listed in Table 4 were used. Additionally, the immobilized OA on the FLAG resin was washed with eight-column volumes of OA-high-salt wash and two-column volumes of OA-low-salt wash prior to elution in order to remove co-purifying bacterial DNA.
 
-## Mif2-MBP
+#### Mif2-MBP
 
 Mif2-MBP was purified as described (Hamilton et al., 2020), with three exceptions. First, the Mif2-lysis, Mif2-amylose elution, Mif2-QA, and Mif2-QB buffers listed in Table 4 were used. Second, Mif2 was eluted from the anion exchange column with a 0–80% gradient of QB. Third, Mif2 was not subjected to size-exclusion chromatography.
 
-## Ndc80c-FLAG
+#### Ndc80c-FLAG
 
 Ndc80c-FLAG was purified as described for MIND-FLAG with two exceptions. First, the Ndc80c-lysis, Ndc80c-wash, Ndc80c-elution, and Ndc80c-SEC buffers listed in Table 4 were used. Second, the eluate from the FLAG affinity resin was concentrated in a 50 kDa molecular weight cutoff concentrator prior to loading on the Superdex 200 column.
 
-## Dam1c-FLAG
+#### Dam1c-FLAG
 
 Dam1c-FLAG was purified as described for MIND-FLAG, except the Dam1c-lysis, Dam1c-wash, Dam1c-elution, and Dam1c-SEC-specific buffers listed in Table 4 were used.
 
-## Optical trap assay
+### Optical trap assay
 
 Slide preparation for the optical trap assay was performed as previously described (Flores et al., 2022; Hamilton et al., 2020) with changes to the buffers listed below. 40 nM His6-NCPs and anti-His6 beads were incubated in bead incubation buffer (30 mM HEPES [pH 7.5], 10 mM NaCl, 1 mM EDTA, 0.5 mM TCEP, 2 mg/ml κ-casein) for 30 minutes. All kinetochore proteins were diluted in a buffer containing 1x BRB80 (80 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA) and 2 mg/ml κ-casein before addition to the reaction mix. The reaction mix contained 1x BRB80, 1 mM GTP, 8 mg/ml BSA, 0.05 mg/ml biotinylated BSA, 0.8 mM DTT, 250 µg/ml glucose oxidase, 30 µg/ml catalase, 3.6 mg/ml glucose, and 16 µM tubulin in addition to the non-His6 tagged proteins free in solution. 10 nM OA or 20 nM Mif2, 10 nM 2D-MIND, 10 nM Ndc80c, and 5 nM Dam1c were used in the trapping assays. Optical trap assays were performed at room temperature using custom instrumentation to capture and manipulate beads as described (Franck et al., 2010). Rupture force assays were performed as described (Hamilton et al., 2020). Once beads were bound to microtubule tips, a test force of 1 pN was applied, and only beads that tracked with ~100 nm of tip growth were subjected to ramping force of 0.25 pN until detachment. All attachments that withstood the 1 pN preload force were included in our analysis. Each slide was used to collect data for no more than 90 minutes.
 
-## Data analysis and visualization
+### Data analysis and visualization
 
 Igor Pro (Wavemetrics) was used to analyze data from optical trap assays and generate graphs for figures. Adobe Illustrator was used to generate figures.

@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03a1kwz48 Neurobiology of Vocal Communication, Institute for Neurobiology, University of Tübingen Tübingen Germany
-2. https://ror.org/043mz5j54 Howard Hughes Medical Institute and Center for Integrative Neuroscience, University of California San Francisco San Francisco United States
-3. https://ror.org/00ysfqy60 Departments of Horticulture and Integrative Biology, Oregon State University Corvallis United States
+1. Neurobiology of Vocal Communication, Institute for Neurobiology, University of Tübingen Tübingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))
+2. Howard Hughes Medical Institute and Center for Integrative Neuroscience, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Departments of Horticulture and Integrative Biology, Oregon State University Corvallis United States ([ROR:00ysfqy60](https://ror.org/00ysfqy60))
 
 † Corresponding author
 
 ## Abstract
 
-Complex skills like speech and dance are composed of ordered sequences of simpler elements, but the neuronal basis for the syntactic ordering of actions is poorly understood. Birdsong is a learned vocal behavior composed of syntactically ordered syllables, controlled in part by the songbird premotor nucleus HVC (proper name). Here, we test whether one of HVC’s recurrent inputs, mMAN (medial magnocellular nucleus of the anterior nidopallium), contributes to sequencing in adult male Bengalese finches ( Lonchura striata domestica ). Bengalese finch song includes several patterns: (1) chunks, comprising stereotyped syllable sequences; (2) branch points , where a given syllable can be followed probabilistically by multiple syllables; and (3) repeat phrases , where individual syllables are repeated variable numbers of times. We found that following bilateral lesions of mMAN, acoustic structure of syllables remained largely intact, but sequencing became more variable, as evidenced by ‘breaks’ in previously stereotyped chunks, increased uncertainty at branch points, and increased variability in repeat numbers. Our results show that mMAN contributes to the variable sequencing of vocal elements in Bengalese finch song and demonstrate the influence of recurrent projections to HVC. Furthermore, they highlight the utility of species with complex syntax in investigating neuronal control of ordered sequences.
+Complex skills like speech and dance are composed of ordered sequences of simpler elements, but the neuronal basis for the syntactic ordering of actions is poorly understood. Birdsong is a learned vocal behavior composed of syntactically ordered syllables, controlled in part by the songbird premotor nucleus HVC (proper name). Here, we test whether one of HVC’s recurrent inputs, mMAN (medial magnocellular nucleus of the anterior nidopallium), contributes to sequencing in adult male Bengalese finches (Lonchura striata domestica). Bengalese finch song includes several patterns: (1) chunks, comprising stereotyped syllable sequences; (2) branch points, where a given syllable can be followed probabilistically by multiple syllables; and (3) repeat phrases, where individual syllables are repeated variable numbers of times. We found that following bilateral lesions of mMAN, acoustic structure of syllables remained largely intact, but sequencing became more variable, as evidenced by ‘breaks’ in previously stereotyped chunks, increased uncertainty at branch points, and increased variability in repeat numbers. Our results show that mMAN contributes to the variable sequencing of vocal elements in Bengalese finch song and demonstrate the influence of recurrent projections to HVC. Furthermore, they highlight the utility of species with complex syntax in investigating neuronal control of ordered sequences.
 
 ## Introduction
 
@@ -31,105 +31,217 @@ Song production is controlled by neuronal activity in a set of brain nuclei call
 
 Although HVC is often considered to be at the top of a hierarchy in the song control circuit, it is part of a network of brain nuclei involved in song production and receives multiple inputs that might also contribute to premotor activity (McCasland, 1987; Hosino and Okanoya, 2000; Jin, 2009; Hamaguchi et al., 2016; Vyssotski et al., 2016). One prominent source of input to HVC is mMAN (medial magnocellular nucleus of the anterior nidopallium), which is part of a recurrent loop that bilaterally connects the two hemispheres through RA and bilateral connections from thalamic nucleus DMP (dorsomedial nucleus of the posterior thalamus, Figure 1E) and could thus be ideally positioned to convey sequence-related activity across hemispheres (Vates et al., 1997; Schmidt et al., 2004; Williams et al., 2012). A parallel recurrent pathway, which projects to RA through nucleus lMAN (lateral magnocellular nucleus of the anterior nidopallium, Figure 1E) has been shown to contribute variability to syllable pitch, a parameter that is controlled by RA premotor activity (Kao et al., 2005; Sober et al., 2008; Miller et al., 2017). lMAN-guided variability can serve as a form of motor exploration that is essential for learning (Sober and Brainard, 2012; Dhawale et al., 2017), regulating social context-dependent changes in pitch variability (Kao and Brainard, 2006; Hampton et al., 2009), and biasing pitch in the direction of improved motor performance during learning (Andalman and Fee, 2009; Warren et al., 2012; Tian and Brainard, 2017). This raises the question of whether mMAN, as the output of a parallel recurrent pathway that projects onto HVC, might have a similar role in contributing to premotor activity in its projection target, with the potential to influence syllable identity or sequencing variability (Kubikova et al., 2007; Seki and Okanoya, 2008; Ali et al., 2013). Previous studies in zebra finches showed that mMAN lesions in juveniles disrupt normal song learning, while lesions in adults affected song initiation, but not subsequent production of song in this species (Foster and Bottjer, 2001; Horita et al., 2008; Ali et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig1-v1.jpg)
+
+**Figure 1.:** (A) Example spectrogram (bird 7) depicting an entire song bout with introductory state ‘I’, repeat phrase ‘B’, and individual syllables. (B) Example transition diagram depicting a branchpoint with variable sequencing. Numbers above the arrows denote transition probabilities in percent. (C) Example spectrogram of a chunk. Chunks are defined as highly stereotyped sequences of syllables that only have a single input and output branch and are condensed into one state in the transition diagram (see ‘Methods’). (D) Example spectrogram of a repeat phrase, summarized by capital letter ‘B’ in the transition diagram. The repeating syllable (here, syllable ‘b’) repeats a variable number of times across different instances of the repeat phrase. (E) Schematic showing recurrent pathways projecting onto motor pathway nuclei through lMAN and mMAN. Red: pallial nuclei; blue: thalamic nuclei; green: basal ganglia. Dotted line indicates suspected connection by Kubikova et al., 2007. mMAN: medial magnocellular nucleus of the anterior nidopallium; DMP: dorsomedial nucleus of the posterior thalamus; BG: basal ganglia; DLM: medial portion of the dorsolateral thalamus; lMAN: lateral magnocellular nucleus of the anterior nidopallium; RA: robust nucleus of the arcopallium. (F) Example of a transition diagram. Nodes denote chunk or syllable labels, numbers denote transition probabilities (in percent, % symbol omitted for clarity), d1/d2, g1/g2 denote different states of syllables d and g respectively based on different sequential contexts, capital letters denote repeat phrases. Edges at each node may not sum to 100% because branches smaller than 5% are omitted for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** CGRP labels cells in both lateral magnocellular nucleus of the anterior nidopallium (lMAN) (seen in black to the left of the lesion) and medial magnocellular nucleus of the anterior nidopallium (mMAN) (blue, intact; red, completely destroyed).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Transition entropy did not change in a consistent way after recovery from the lesion for the followed time period. Numbers near the datapoints indicate number of song bouts recorded and analyzed for that day. While the persistence of the effects we observed is longer than transient effects such as those following Nif lesion in zebra finches (~2 d by Otchy et al., 2015), we cannot rule out either recovery or further deterioration following lesions on much longer time scales, such as those reported by Kubikova et al., 2007 (X lesions, 6 mo) (Kubikova et al., 2007). Additional non-connected datapoints at 14, 19, 33, and 33 d post lesion were gathered after additional behavior manipulation and were added here to analyze specifically the persistence of effects after the lesion. For three of these birds, transition entropy remained elevated above the baseline values for 14, 33, and 33 d, respectively.
+
 We tested the hypothesis that mMAN contributes to syllable sequencing by studying the effect of bilateral mMAN lesions on song production in adult Bengalese finches. We found that lesions had little effect on the acoustic structure of individual syllables but led to an increase in the variability of multiple aspects of syllable sequencing. These results highlight the potential importance of recurrent inputs such as mMAN in shaping the syntactical structure of adult birdsongs.
 
 ## Methods
 
-## Subjects and sound recordings
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CGRP antibody (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich, St. Louis, MO;10.1159/000113342</td>
+      <td></td>
+      <td>Dilution 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom recording software, LabView</td>
+      <td>10.1038/nature06390</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sound Analysis Pro software</td>
+      <td>10.1006/anbe.1999.1416</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoundSig sound analysis package</td>
+      <td>10.1007/s10071-015-0933-6</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TweetyNet sound annotation package</td>
+      <td>10.7554/eLife.63853</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects and sound recordings
 
 Experiments were carried out on seven adult male Bengalese finches (Lonchura striata domestica) obtained from the Brainard lab’s breeding colony at University of California, San Francisco (median age 640 d post-hatch, range 149–1049 at the start of experiment). Birds were raised with their parents and then housed in same-sex group cages. For the experiments, birds were placed in individual sound-attenuating boxes (Acoustic Systems, Austin, TX) and maintained on a 14:10 hr light:dark period. Song was recorded using an omnidirectional microphone above the cage using custom LabView software for continuous monitoring of song output (Tumer and Brainard, 2007). All experimental work was carried out under protocols approved by the University of California, San Francisco’s (UCSF) institutional animal care and use committee (IACUC); protocol entitled “The neural basis of vocal learning in songbirds,” including versions AN185512, AN170723, AN107972, AN087315, AN080388, AN075783.
 
-## mMAN lesions
+### mMAN lesions
 
 After several days of sound recording, birds were anesthetized using ketamine and midazolam with isoflurane. mMAN was localized using stereotaxic coordinates and was destroyed bilaterally using current injections of 100 uA current for 80 s at four sites per hemisphere. After conclusion of the study, birds were deeply anesthetized and perfused with paraformaldehyde. 40 um sections were cut on a microtome and processed with either Nissl stain (cresyl violet) or calcitonin gene-related peptide (CGRP) staining (Hampton et al., 2009). mMAN lesion size was estimated by experienced observers and estimated to be either complete (bird 1, birds 3–6) or greater than 75% (birds 2 and 7) for all birds used in this analysis (Figure 1—figure supplement 1).
 
-## Sequence analysis
+### Sequence analysis
 
 Bengalese finch songs were recorded for several days before and after lesions. Singing activity resumed on average 3.8 d post lesions (range 2–6 d, Figure 1—figure supplement 1), and we analyzed songs starting on average 5.3 d post lesions (range 3–11 d) up to 7.4 d post lesions (range 5–12 d). We analyzed at least 2 d pre and post lesions, and subsampled the larger of the two datasets pooled over all days such that the pre and post datasets were equal in size for each bird (average of 299 song bouts, range 102–601, for all analyses). All our main analyses were carried out on this dataset. To analyze specifically the persistence of effects after the lesion, Figure 1—figure supplement 2 includes four additional data points (14, 19, 33, and 33 d post lesion for birds 2, 3, 6, and 7, respectively) after additional behavioral manipulation, from which birds typically recover (Warren et al., 2012).
 
-## Annotation
+### Annotation
 
 We annotated the entire syllable sequence in an automated way. We first used a subset of the data to generate a training set for classification. Separate classifiers were trained for each bird. In the training data, syllable onsets and offsets were determined by amplitude thresholding. We then performed dimensionality-reduction and unsupervised clustering of the spectrograms of detected syllables using UMAP (McInnes et al., 2018; Sainburg et al., 2020) in order to determine the number of different syllables in an objective way (mean 13, range 11–14). On average, we used 181 files (range 70–505) for creating this training dataset, which was then used to train a deep neural network (TweetyNet) for the annotation of birdsong (Cohen et al., 2022). TweetyNet was used to segment and annotate all songs, followed by semi-automated hand-checking using custom-written software in MATLAB R2021b to ensure quality annotation. In rare cases, where there was some ambiguity in the assignment of syllable identity during hand-checking, we additionally took into account the sequential context, for example, during stereotyped chunks, to assign the most likely label. Thus, any errors in assignment in such cases would have tended to reduce rather than accentuate the magnitude of the lesions’ effects on reported sequencing changes.
 
-## Simplification of the syllable sequence
+### Simplification of the syllable sequence
 
 We defined song bouts as continuous sequences of syllables separated by at least 2 s of silence. We then simplified the syllable sequence by merging introductory notes into a single introductory state, that is, a single node ‘I’ in the transition diagram (Figure 1A and F). Introductory notes were defined as up to three syllable types occurring at the start of bouts that were quieter, and more variable in timing and structure than other syllable types (Rajan and Doupe, 2013; Veit et al., 2021). Similarly, syllables that were repeated a variable number of at least two times were reduced to a single state (e.g., ‘bbbbbbbbb’ to ‘B’, Figure 1A and F) in the syllable sequence, and the number of repetitions within these repeat phrases was analyzed separately (Hampton et al., 2009; Zhang et al., 2017; Jaffe and Brainard, 2020). We only analyzed repeat phrases with variable numbers of syllable repetitions in this way; therefore, we did not consider cases in which a syllable was repeated an exact number of times on each occurrence (occurring with repeat numbers of 2 or 3 in our dataset, see Figure 3A) a variable repeat phrase.
 
-## Separating different syllable states based on sequential context
+### Separating different syllable states based on sequential context
 
 Transition probabilities between syllables in Bengalese finch song can depend not only on the identity of the syllable, but also on the identity of at least one preceding syllable (Jin and Kozhevnikov, 2011; Katahira et al., 2011; Morita et al., 2021). In order to consider this sequential context-dependency of transition probabilities, we followed the procedure of Katahira et al., 2011 to classify spectrally similar syllables (i.e., with the same labels) into different ‘states’ based on the identity of the preceding syllable. For example, in Figure 1A, the syllable ‘g’ is preceded by ‘I’ or ‘f’ and is followed by ‘h’ or ‘a’. If ‘g’ is preceded by ‘I’, it is always followed by ‘h’ and if it is preceded by ’f’, it can be followed by ‘h’ or ‘a’. We would therefore like to introduce two separate states g1 and g2 in the transition diagram representing this sequential context. The input for this analysis was the syllable sequence with introductory and repeat phrases already condensed into single states. We compared the distribution of transition probabilities from these syllables by themselves (e.g., syllable ‘g’) to the distribution of transition probabilities from these syllables considering the context of one preceding syllable (e.g., syllable ‘f-g’) using the chi-square goodness-of-fit test. We split the syllable into a new state (e.g., ‘g1’) if p<0.01/n, where n is the number of comparisons made (Bonferroni correction for multiple comparisons) (Jin, 2009; Katahira et al., 2013). After completing this for all syllables of a given type (e.g., ‘g1’, ‘g2’, ‘g3’), we compared the different output states to each other using chi-square goodness-of-fit test and merged them back together if p>0.01/n (mean 15, range 6–21 additional states/bird).
 
-## Determining chunks and branchpoints
+### Determining chunks and branchpoints
 
 To determine chunks (Suge and Okanoya, 2010), we used the modified syllable sequence after chi-square analysis. We calculated a syllable-to-syllable transition diagram, while eliminating any syllables occurring with less than a threshold frequency of 0.9% and omitting branches with a probability of less than 5%. From the resultant graph, we merged all non-overlapping linear sequences (which consisted of nodes with only a single input and output branch) into chunks. The transition probabilities within resultant chunks were typically higher than 90% (range 87–100%). Values smaller than 100% for non-branching paths result from the omission of one or several small branches of less than 5%. We then re-calculate the transition probabilities between chunked nodes. We defined branchpoints as the set of single syllables that are retained after this processing and the end syllables of the newly defined chunks. To simplify diagrams for visualization, we eliminated any syllables that occurred less than once per bout and branches with transition probabilities of less than 5%.
 
-## Transition entropy
+### Transition entropy
 
-Transition entropy is a measure of uncertainty of sequence at a given syllable (Sakata and Brainard, 2006). With c different outputs from the given syllable ‘a’ and P(i) the probability of the ith outcome, we calculate the entropy Ha asHa=-∑i=1cPilogPi
+Transition entropy is a measure of uncertainty of sequence at a given syllable (Sakata and Brainard, 2006). With c different outputs from the given syllable ‘a’ and P(i) the probability of the ith outcome, we calculate the entropy Ha as
+
+$$
+H_{a}=-\sum_{i=1}^{c}PilogPi
+$$
 
 We call this value ‘transition entropy per branchpoint’ in Figure 3A.
 
-To determine the overall variability of song before and after mMAN lesions, we calculated total transition entropy TE, over all syllables ‘b’ as:TE=-∑b=1nHb*Pb
+To determine the overall variability of song before and after mMAN lesions, we calculated total transition entropy TE, over all syllables ‘b’ as:
+
+$$
+TE=-\sum_{b=1}^{n}H_{b}*Pb
+$$
 
 where Hb is the transition entropy at ‘b’ and P(b) is the frequency of syllable ‘b’ (Chatfield and Lemon, 1970; Katahira et al., 2013).
 
-## History dependence
+### History dependence
 
-History dependence is a previously established metric that measures the extent to which the most common transition at a given syllable is influenced by the transition at the last occurrence of this syllable (Warren et al., 2012). It has been used to characterize instances of apparent sequence variability, where seemingly variable transitions are always strictly alternating. For example, if the possible transitions from syllable ‘a’ are ‘ab’ or ‘ac’ but these strictly alternated (‘ab … ac … ab … ac’ and so on), then the seemingly variable branchpoint ‘a’ is perfectly predictable based on its history (Warren et al., 2012). Such apparent variability should be largely eliminated in our sequence analysis by the introduction of context-dependent states (i.e., in this example, the ‘a’ would be re-labeled as ‘a1’ or ‘a2’ depending on the context in which it occurs) and identification of chunks. However, if higher-order dependencies in the song determine the order of chunks, we might still expect some variable transitions to be governed by history dependence. If ‘ab’ is the most frequently occurring transition from ‘a’, and ‘ac’ is the collection of all other transitions from ‘a’, we define history dependence D of ‘a’ as:D=Pabnabn-1-Pabnacn-1∨
+History dependence is a previously established metric that measures the extent to which the most common transition at a given syllable is influenced by the transition at the last occurrence of this syllable (Warren et al., 2012). It has been used to characterize instances of apparent sequence variability, where seemingly variable transitions are always strictly alternating. For example, if the possible transitions from syllable ‘a’ are ‘ab’ or ‘ac’ but these strictly alternated (‘ab … ac … ab … ac’ and so on), then the seemingly variable branchpoint ‘a’ is perfectly predictable based on its history (Warren et al., 2012). Such apparent variability should be largely eliminated in our sequence analysis by the introduction of context-dependent states (i.e., in this example, the ‘a’ would be re-labeled as ‘a1’ or ‘a2’ depending on the context in which it occurs) and identification of chunks. However, if higher-order dependencies in the song determine the order of chunks, we might still expect some variable transitions to be governed by history dependence. If ‘ab’ is the most frequently occurring transition from ‘a’, and ‘ac’ is the collection of all other transitions from ‘a’, we define history dependence D of ‘a’ as:
 
-where Pabnabn-1 is the conditional probability of ‘ab’ transition given that ‘ab’ transition occurred at the previous instance of ‘a’ and Pabnacn-1 is the conditional probability of ‘ab’ transition given that ‘ac’ transition occurred at the previous instance of ‘a’.
+$$
+D=Pab_{n}ab_{n-1}-Pab_{n}ac_{n-1}∨
+$$
 
-## Chunk consistency
+where $Pab_{n}ab_{n-1}$ is the conditional probability of ‘ab’ transition given that ‘ab’ transition occurred at the previous instance of ‘a’ and $Pab_{n}ac_{n-1}$ is the conditional probability of ‘ab’ transition given that ‘ac’ transition occurred at the previous instance of ‘a’.
+
+### Chunk consistency
 
 As defined above, a chunk is defined by a single dominant sequence, but may have a small amount of variability across different instances. To quantify the stereotypy of chunks, we used a measure based on sequence consistency previously defined for relatively stereotyped zebra finch songs (Scharff and Nottebohm, 1991). Across all instances of a given chunk, we identified the syllable sequence that occurred most often as the ‘dominant sequence’. We then defined ‘n_dominant’ as the number of instances of the dominant sequence, and ‘n_other’ as the number of instances of other sequence variants for the chunk.
 
-We quantified chunk consistency C as the proportion of total instances that were the dominant sequence:C=ndominantndominant+nother
+We quantified chunk consistency C as the proportion of total instances that were the dominant sequence:
+
+$$
+C=\frac{n_{dominant}}{n_{dominant}+n_{other}}
+$$
 
 To compare a chunk before and after mMAN lesions, the dominant sequence for the pre-lesion chunk was used as a reference, regardless of whether the same sequence qualified as a chunk post lesion. To quantify chunk consistency post lesion, the most dominant sequence post lesion was used (even if that was not the same as the most dominant sequence pre lesion).
 
-## Repeat number variability
+### Repeat number variability
 
 To study the influence of mMAN on repeat phrases, we examined the distribution of repeat numbers before and after lesions. We quantified the variability of these distributions as their coefficient of variation (CV = standard deviation/mean).
 
-## Analysis of syllable acoustic structure
+### Analysis of syllable acoustic structure
 
-## Average spectrogram
+#### Average spectrogram
 
 For visual inspection of preservation of syllable types before and after mMAN lesions, we calculated average spectrograms for 200 instances of each syllable type for seven birds (Figure 2—figure supplement 1). Individual spectrograms of each syllable type were rescaled to have matching time axes and then overlaid.
 
-## Syllable similarity analysis
+#### Syllable similarity analysis
 
 We used Sound Analysis Pro (SAP) software (Tchernichovski et al., 2000) to quantify the similarity in syllable structure for all syllable types per bird (Figure 2—figure supplement 2). We used the settings ‘Symmetric’ and ‘Time Courses’ and compared 20 instances of each syllable type.
 
 We first calculated SAP similarity of all syllables to syllables of the same type from two separate control recordings before mMAN lesions. We termed this as ‘Self Similarity’. We next calculated SAP similarity of the same syllable types before and after mMAN lesions. We termed this as ‘Pre vs Post’ similarity. Lastly, we calculated SAP similarity of all syllable types compared to all other syllable types per bird. This was used as a measure of dissimilarity of structure across syllable types. We termed this as ‘Cross Similarity’.
 
-## Analysis of fundamental frequency
+#### Analysis of fundamental frequency
 
 We used the method previously described by Hampton et al., 2009 to calculate fundamental frequency and CV of fundamental frequency for select syllables for each bird (Figure 2—figure supplement 3; Hampton et al., 2009). Briefly, each syllable was visually inspected to have a segment with clearly defined fundamental frequency. We then found the peak of the autocorrelation function (using parabolic interpolation) of the sound waveform in this segment.
 
-## Analysis of acoustic features
+#### Analysis of acoustic features
 
 To further compare syllable phonology before and after the mMAN lesions, we used the SoundSig Python package (Elie and Theunissen, 2016) to calculate a set of acoustic features for all syllables for seven birds (Figure 2—figure supplement 4). The features used were entropy of spectral envelope (entS), temporal centroid for the temporal envelope (meanT), and first, second, and third formants (F1, F2, F3).
 
 ## Results
 
-## Structure of Bengalese finch song
+### Structure of Bengalese finch song
 
 Bengalese finch songs are composed of a fixed number of syllable types, which are arranged into variable sequences following syntactical rules. In this study, we sought to first characterize the different features of Bengalese finch song before investigating their change following mMAN lesions. For each bird, we first annotated all songs with labels for each of the syllable types, and then defined a transition diagram for analysis according to the following procedure (see ‘Methods’):
 
-## Transition entropy increased after bilateral mMAN lesions
+### Transition entropy increased after bilateral mMAN lesions
 
 After bilateral mMAN lesions, all syllable types were preserved (Figure 2—figure supplements 1–4), but the sequencing of syllables became more variable. In the example in Figure 2B and C, we show the transition diagrams of one example bird before and after mMAN lesions. We observed a change in transition probabilities at existing branch points, as well as the appearance of novel branches. We quantified changes in sequencing variability for all syllables using transition entropy (Sakata and Brainard, 2006; Katahira et al., 2013). Total transition entropy increased significantly after mMAN lesions, indicating that song syntax overall became more variable (Figure 2D). These effects appeared as soon as the bird resumed singing after the lesions and did not recover over the time for which the birds were observed (Figure 1—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-v1.jpg)
+
+**Figure 2.:** (A) Example spectrogram (bird 3) pre lesion (above) and post lesion (below). ‘I’ denotes introductory state, and ‘fe2’ and ‘ah’ denote chunks, shown as single nodes in the transition diagram. (B) Pre-lesion transition diagram, as in Figure 1F. Note that ‘fe2CB’ is also a chunk before the lesions but is shown as three separate nodes in order to align with the post-lesion diagram in (C). (C) Post-lesion transition diagram. Arrows in red mark example nodes with relatively high increase in transition entropy, including the introduction of new branches after mMAN lesions. (D) Total transition entropy for seven birds before and after mMAN lesions (*p<0.05, n = 7, Wilcoxon signed-rank test). Example bird from (A–C) is shown as darker line. Boxes indicate interquartile range and whiskers mark data points within one additional interquartile range.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Letters over the spectrograms indicate syllable labels and symbols over the spectrograms correspond to the symbols used in Figure 2—figure supplement 4.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** ‘Self Similarity’ = similarity comparison of syllables before medial magnocellular nucleus of the anterior nidopallium (mMAN) lesions to syllables of the same type, taken from two separate control recordings before the lesions, ‘Pre vs Post’ = similarity comparison of the same syllable types before and after mMAN lesions, ‘Cross Similarity’ = similarity comparison of each syllable type to other syllable types. For birds 1–2 and 4–7, ‘Self Similarity’ was not significantly different from ‘Pre vs Post’ Similarity (p>0.05, Wilcoxon signed-rank test), while for bird 3, there was a significant difference (p=0.03, Wilcoxon signed-rank test; n for bird 1: 9; bird 2: 8; bird 3: 11; bird 4: 9; bird 5: 8; bird 6: 10; bird 7: 10). For all birds, ‘Pre vs Post’ was significantly different from ‘Cross Similarity’ (p<0.05, Wilcoxon signed-rank test). On average, ‘Pre vs Post’ was 4.8% less than ‘Self Similarity’ (range 0.2–14%) while ‘Cross Similarity’ was 40% less than ‘Self Similarity’ (range 20.2–56.3%). These measures confirm the qualitative impression from Figure 2—figure supplement 1 that for most birds and syllables there were no greater changes to syllable structure following lesions than was present across control recordings, and that pre-post similarity remained higher than cross-similarity, that is, syllables remained clearly identifiable. Boxes mark interquartile range and whiskers mark data within one additional interquartile range.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Coefficient of variation (CV) of fundamental frequency (FF) of select syllables before and after medial magnocellular nucleus of the anterior nidopallium (mMAN) lesions. In the Bengalese finch and zebra finch, lesions of lateral magnocellular nucleus of the anterior nidopallium (lMAN), which sits immediately lateral to mMAN, cause a consistent reduction in the CV of fundamental frequency across repeated renditions of a given syllable (Sakata et al., 2008; Andalman and Fee, 2009; Warren et al., 2011). We therefore supposed that unintended damage to lMAN or its projections to RA might have resulted in a reduction in the CV of syllables following mMAN lesions. Instead, we saw a modest increase in the CV of fundamental frequency (p<0.05, Wilcoxon signed-rank test; mean across birds of +20%; range –19 to +43%). These data suggest that it is unlikely that changes to syllable structure might have arisen due to accidental damage to lMAN. (B) Percent change in mean fundamental frequency after mMAN lesions vs mean fundamental frequency before mMAN lesions.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Different colors represent different syllable types per bird. ‘entS’ = entropy of spectral envelope, ‘meanT’ = temporal centroid for temporal envelope, ‘F1’ = first formant, ‘F2’ = second formant, ‘F3’ = third formant. Acoustic features generally showed little change between pre- and post-lesion songs. They highlight as relative outliers the same individual examples that stand out in the average spectrograms in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Transition entropy for all individual branchpoints after medial magnocellular nucleus of the anterior nidopallium (mMAN) lesions. (B) Branchpoints with low history dependence before mMAN lesions showed a nonsignificant trend towards higher changes in transition entropy.
+
 Figure 2—figure supplement 5A shows the corresponding changes at all individual branch points. To investigate the source of differences in the magnitude of changes across branch points, we considered the history dependence of each of these branchpoints. History dependence captures apparent variability governed by long-range dependencies in the sequence and history-dependent transitions previously have been found to be difficult to modify in a sequence modification training protocol (Warren et al., 2012). They might therefore be less affected by lesions as well. Alternatively, we might expect lesion effects to be stronger for these transitions if mMAN contributes specifically to long-range dependencies. Consistent with the first possibility, we observed that there was a nonsignificant trend toward larger changes after mMAN lesion for transitions with low history dependence (Figure 2—figure supplement 5B).
 
-## Chunks became more variable after bilateral mMAN lesions
+### Chunks became more variable after bilateral mMAN lesions
 
 Bengalese finch songs contain short, relatively stereotyped sequences of syllables, here called ‘chunks’ (Okanoya and Yamaguchi, 1997; Suge and Okanoya, 2010; Isola et al., 2020; Veit et al., 2021). We speculated that transitions within chunks might be differently affected by mMAN lesions if, for example, the relatively fixed sequences within chunks are determined within premotor song nucleus HVC and inputs to HVC are only relevant at variable branch points. We found that the relatively fixed sequences within chunks were altered after mMAN lesions. An example bird (Figure 3A–C) exhibited one prominent chunk that was occasionally observed to ‘break’ after lesions, that is, branching within the chunk increased to a degree where it would no longer be considered a chunk after the lesions. The branching increased most noticeably in the ‘l-f’ transition (Figure 3C), which is characterized by a longer gap than other transitions within the chunk (Figure 3A). We therefore wondered whether sequencing changes were related to gap durations and found that gap durations within chunks were not significantly correlated with the increase in transition entropy at the corresponding transitions (Figure 3—figure supplement 1A). Overall, we found that changes within chunks were approximately the same magnitude as changes at branch points (Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig3-v1.jpg)
+
+**Figure 3.:** (A) Example spectrogram (bird 2) before and after bilateral mMAN lesions. Atypical chunk sequences are highlighted in red. (B, C) Transitions following the first ‘c’ of the ‘ccllfk’ chunk from (A) before and after mMAN lesions. Different column colors represent different syllables. (D) Chunk consistency before and after bilateral mMAN lesions (**p<0.01, n = 23, Wilcoxon signed-rank test). Example bird is shown as darker line. Boxes show interquartile range and whiskers mark data points within one additional interquartile range.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Duration of gaps within chunks before medial magnocellular nucleus of the anterior nidopallium (mMAN) lesions was not significantly correlated with entropy change at the corresponding transition (p>0.05, Wilcoxon rank-sum test). (B) Change in transition entropy was not significantly different for transitions within chunks and at branchpoints (p>0.05, Wilcoxon rank-sum test, n=94). Error bars show standard error of the mean.
+
 We quantified changes in within-chunk transitions using sequence consistency (Scharff and Nottebohm, 1991), a measure previously used to describe the relatively consistent sequence of zebra finch song. Sequence consistency measures how consistently the most probable sequence is followed (see ‘Methods’). Sequence consistency within chunks significantly decreased across 23 chunks from all birds, indicating that this aspect of song structure was affected by mMAN lesions (Figure 3D).
 
-## Repeat numbers became more variable after mMAN lesions
+### Repeat numbers became more variable after mMAN lesions
 
 We next tested how mMAN lesions affected repeat phrases. Repeat phrases might be governed by separate neural mechanisms than branch points (Fujimoto et al., 2011; Jin and Kozhevnikov, 2011; Wittenbach et al., 2015; Zhang et al., 2017). In our dataset of seven birds, only five birds had songs which contained repeat phrases.
 
@@ -137,7 +249,7 @@ In the example bird in Figure 4A and B, the average repeat number for the indica
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93272/elife-93272-fig4-v1.jpg)
 
-**Figure 4.:** (A) Example spectrogram (bird 6) highlighting one repeat syllable before (blue) and after (red) mMAN lesions. (B) Repeat numbers for two additional example birds before (blue) and after (red) mMAN lesions. (C) Average repeat numbers before and after mMAN lesions for all repeat phrases (p>0.05, n=6, Wilcoxon signed rank test). Boxes mark interquartile range and whiskers mark data points within one additional interquartile range. (D) Coefficient of variation for distribution of repeat numbers before and after mMAN lesions for all repeat phrases (p<0.05, n=6, Wilcoxon signed rank test). Example birds from (B) are shown as darker lines. Boxes mark interquartile range and whiskers mark data points within one additional interquartile range.Figure 4—source code 1.Figure 4B based on data from Source data 1 - Source data 28.Figure 4—source code 2.Figure 4D based on data from Source data 1 - Source data 28.Figure 4—source code 3.Figure 4C based on data from Source data 1 - Source data 28.
+**Figure 4.:** (A) Example spectrogram (bird 6) highlighting one repeat syllable before (blue) and after (red) mMAN lesions. (B) Repeat numbers for two additional example birds before (blue) and after (red) mMAN lesions. (C) Average repeat numbers before and after mMAN lesions for all repeat phrases (p>0.05, n=6, Wilcoxon signed rank test). Boxes mark interquartile range and whiskers mark data points within one additional interquartile range. (D) Coefficient of variation for distribution of repeat numbers before and after mMAN lesions for all repeat phrases (p<0.05, n=6, Wilcoxon signed rank test). Example birds from (B) are shown as darker lines. Boxes mark interquartile range and whiskers mark data points within one additional interquartile range.
 
 ## Discussion
 

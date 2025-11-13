@@ -20,7 +20,7 @@
 
 ## Abstract
 
-SynGAP is a postsynaptic density (PSD) protein that binds to PDZ domains of the scaffold protein PSD-95. We previously reported that heterozygous deletion of Syngap1 in mice is correlated with increased steady-state levels of other key PSD proteins that bind PSD-95, although the level of PSD-95 remains constant (Walkup et al., 2016). For example, the ratio to PSD-95 of Transmembrane AMPA-Receptor-associated Proteins (TARPs), which mediate binding of AMPA-type glutamate receptors to PSD-95, was increased in young Syngap1 mice. Here we show that only females and not males show a highly significant correlation between an increase in TARP and a decrease in synGAP in the PSDs of +/- Syngap1 rodents. The data reveal a sex difference in the adaptation of the PSD scaffold to synGAP haploinsufficiency. +/-
+SynGAP is a postsynaptic density (PSD) protein that binds to PDZ domains of the scaffold protein PSD-95. We previously reported that heterozygous deletion of Syngap1 in mice is correlated with increased steady-state levels of other key PSD proteins that bind PSD-95, although the level of PSD-95 remains constant (Walkup et al., 2016). For example, the ratio to PSD-95 of Transmembrane AMPA-Receptor-associated Proteins (TARPs), which mediate binding of AMPA-type glutamate receptors to PSD-95, was increased in young Syngap1+/-mice. Here we show that only females and not males show a highly significant correlation between an increase in TARP and a decrease in synGAP in the PSDs of Syngap1+/-rodents. The data reveal a sex difference in the adaptation of the PSD scaffold to synGAP haploinsufficiency.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ When the data were averaged for WT and HET animals in this large data set, we we
 
 ## Results
 
-## Creation of rat synGAP KO by the CRISPR-Cas9 method
+### Creation of rat synGAP KO by the CRISPR-Cas9 method
 
 CRISPR/Cas9 technology was used to establish a Syngap1 KO rat line that harbors a frameshift mutation in exon8 of Syngap1 (Figure 1A), which prevents expression of the protein. SynGAP protein expression level is reduced by 50% in HET knockout rats compared to wild-type (WT) and is absent in homozygous knockouts (Figure 1B). While SynGAP KO rats die perinatally, SynGAP HET rats appear healthy and fertile.
 
@@ -44,17 +44,41 @@ CRISPR/Cas9 technology was used to establish a Syngap1 KO rat line that harbors 
 
 **Figure 1.:** (A) SynGAP targeting strategy introduces a frame shift mutation into exon 8. (B) Quantification of synGAP immunoblots (inset) of cortical homogenates was performed as described in Materials and methods.
 
-## Average synGAP/PSD-95 and TARP/PSD-95 ratios in WT and HET rodents
+### Average synGAP/PSD-95 and TARP/PSD-95 ratios in WT and HET rodents
 
 We devised a method to isolate PSD fractions from individual mice and rats as described under Materials and Materials and methods. PSD fractions were prepared from the forebrains of 165 individual rodents, comprising 82 WT and 83 HETs. The total sample included 81 females (39 WT, 42 HET), and 84 males (43 WT, 41 HET). In each category, approximately half of the animals were rats and half were mice; approximately half were 7.5 weeks old and half were 12.5 weeks old. The ratio of synGAP/PSD-95 and TARP/PSD-95, averaged over all of the rodents, are summarized in the two bars labeled ‘All’ (Figure 2A and B, left). As expected, the synGAP/PSD-95 ratio (Figure 2A, left) is reduced by 22% in HET rodents compared to WT (the WT level is indicated by a dotted line). However, the ratio of TARP to PSD-95 (Figure 2B, left) is not significantly different, even when the results were averaged for animals grouped by sex, species, and age (Figure 2A and B), except for seven wk old female mice in which the ratio of TARPs to PSD-95 was significantly reduced compared to WT. This value may have been influenced by a developmental effect causing lower overall expression of TARPs in 7 week old mice. We also noted more variability in the averaged ratios of TARP to PSD-95 for females (Figure 2B, right) compared to males (Figure 2B, middle). Taken as a whole, the averaged results do not reproduce our original finding in Walkup et al. (2016).
 
-## Spearman’s correlation coefficient reveals that the synGAP/PSD-95 and TARP/PSD-95 ratios are inversely correlated only in females
+![Figure 2.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig2-v2.jpg)
+
+**Figure 2.:** PSDs were purified from the brains of individual animals as described under Materials and methods. The ratios of synGAP to PSD-95 (A) and TARPs to PSD-95 (B) were determined as described under Materials and methods and in Figure 2—figure supplement 1. Ratios from HET animals (bars) are normalized to the ratios from WT animals (dotted lines). Antibodies against synGAP, TARPS, and PSD-95 are the same as those used in Walkup et al. (2016). The antibody against synGAP (AB_2287112) recognizes all isoforms of synGAP. The antibody against TARPs (AB_877307) recognizes TARP-γ2, γ3, γ4, and γ8. The sample sizes for each group and the significance tests are as follows. A) all animals WT = 79 and HET = 78, one-tailed Wilcoxon matched-pairs signed rank test; male mouse 7.5 weeks WT = 11 and HET = 9, one-tailed Student T-test; male mouse 12.5 weeks WT = 11 and HET = 8, one-tailed Student T-test with Welch’s correction; male rat 7.5 weeks WT = 11 and HET = 10, one-tailed Student T-test; male rat 12.5 weeks WT = 10 and HET = 11, one-tailed Student T-test; female mouse 7.5 weeks WT = 10 and HET = 12, one-tailed Student T-test with Welch’s correction; female mouse 12.5 WT = 9 and HET = 9, one-tailed Student T-test; female rat 7.5 weeks WT = 10 and HET = 10, one-tailed Student T-test; female rat 12.5 weeks WT = 9 and HET = 10, one-tailed Student T-test. B) all animals WT = 77 and HET = 80, two-tailed Wilcoxon matched-pairs signed rank test; male mouse 7.5 weeks WT = 10 and HET = 9, two-tailed Student T-test; male mouse 12.5 weeks WT = 10 and HET = 10, two-tailed Mann Whitney test; male rat 7.5 weeks WT = 10 and HET = 10, two-tailed Student T-test; male rat 12.5 weeks WT = 10 and HET = 1, two-tailed Student T-test; female mouse 7.5 weeks WT = 9 and HET = 10, two-tailed Student T-test; female mouse 12.5 WT = 9 and HET = 10, two-tailed Mann Whitney test; female rat 7.5 weeks WT = 10 and HET = 10, two-tailed Student T-test; female rat 12.5 weeks WT = 9 and HET = 10, two-tailed Student T-test with Welch’s correction. Significance: * for p≤0.05, ** for p≤0.01, *** for p≤0.001, and **** for p≤0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example of an immunoblot that was double-stained for synGAP and PSD-95 as described under Materials and methods. (B) Example of an immunoblot that was double-stained for TARPs and PSD-95 as described under Materials and methods. The numbers at the top of each lane identify samples from individual rodents. The fluorescent signals at 700 and 800 nm on double-stained blots were scanned separately on the LiCor Odyssey scanner and stored in separate files. The figure is a superposition of images of the two scans. The brightness of each image was adjusted to provide the most accurate visual appearance. The LiCor system has two important advantages; adjustment of the brightness and contrast of images does not alter the underlying digital data; and the digital data can be recorded over a very large linear range. The images show examples of ‘regions of interest (ROI)’ placed with LiCor software on each of the four underlying digital files. Digital fluorescence densities within each ROI were recorded and transferred to Excel. To record background densities We used similarly sized boxes placed immediately below the target fluorescent bands. The bkg. boxes are shown only in B) to avoid visual confusion, but were recorded for all signals. (C) Specificity of antibodies for neuroligin-1 and GluN2B. For staining of synGAP, TARPS, and neuroligin-2, we used the same antibodies that were documented in Walkup et al. (2016). However, we used a different antibody to label NLG-1 (rabbit anti-NLG-1 (Synaptic Systems 129013 AB_2151646) and to label GluN2B we used rabbit anti-GluN2B). The figure shows blots of PSD fractions souble-labeled with anti-PSD-95 and these last two antibodies, to document their specificity.
+
+### Spearman’s correlation coefficient reveals that the synGAP/PSD-95 and TARP/PSD-95 ratios are inversely correlated only in females
 
 We examined the correlation between levels of TARP and synGAP among individual rodents in each sample using the more sensitive measure, Spearman’s r. We used Spearman’s r rather than Pearson’s r for these measurements because many of the data sets showed a non-normal distribution. Pearson’s r is valid only for normally distributed data.
 
 The average intensities of staining for proteins differed significantly between the cohorts, presumably because of developmental changes in protein expression. We therefore normalized the ratios for all cohorts to account for these average differences, as described under Materials and methods. The normalization enabled us to look for correlations between ratios among individuals across cohorts.
 
 Figure 3B and C contain plots for all WT and all HET animals, respectively. These data show that, at steady state in vivo, lower amounts of synGAP in PSDs from the HET animals (Figure 3C) correlate with higher amounts of TARP; whereas there is no correlation in WT animals (Figure 3B). This finding supports our original report (Walkup et al., 2016).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig3-v2.jpg)
+
+**Figure 3.:** Each point represents mean ratios for a single animal. Corrected ratios and Spearman’s rank correlation coefficients were determined as described under Materials and methods. (A) All animals, including all genotypes, ages, species, and sexes; n = 152. (B) All WT animals, including all ages, species, and sexes; n = 76. (C) All HET animals, including all ages, species, and sexes; n = 76. (D) All female animals, including all genotypes, ages, and species; n = 75. (E) All WT females including all ages and species; n = 36. (F) All HET females, including all ages and species; n = 39. (G) All male animals, including all genotypes, ages, and species; n = 77. (H) All WT males, including all ages and species; n = 40. (I) All HET males, including all ages and species; n = 37. Black symbols, WT; Orange symbols, HET. P-values for Spearman’s rank correlation coefficient are one-tailed. Significant p-values are shown in red.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Blots were double-stained for PSD-95 and the target proteins as described under Materials and methods. SynGAP, GluN2B, NLG-1 and NLG-2 were fractionated on 8% gels. TARPS were fractionated on 12% gels. The averaged intensity of staining of PSD-95 was not statistically different between WT and HET (A) or between Male and Female (B), measured on blots of 8% or 12% gels. (C) For each set of blots, a separate gel of the same individual samples was stained for protein with Coomassie blue. For the blots of 7.5 week old mice, synGAP intensity was divided by Coomassie intensity for each individual. PSD-95 intensity (from blots double stained for TARP) was divided by Coomassie intensity for each individual. Plots of synGAP intensity against PSD-95 intensity revealed no significant correlation between the two values. This data shows that the correlation between the synGAP/PSD-95 ration and the TARP/PSD-95 ratio in 7.5 week mice was not influenced by a correlation between levels of synGAP and PSD-95. Separate plots of data from 7.5 week old HET female mice, in which the largest correlation between synGAP and TARP was observed, produced a Spearman’s r = −0.0.2069 with p=0.5187. Plots of data for 7.5 week old male mice also showed no significant correlation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Data was acquired as described under Materials and methods and in Figure 3. The small individual data sets indicated in the headings of each panel were normal in distribution. Therefore, Pearson’s r, the parametric equivalent of the non-parametric Spearman’s coefficient, was calculated for each set. (A) A significant inverse correlation was found for 7 and 12 week old female mice, and a strong trend was present for 7 and 12 week old female rats.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/52656/elife-52656-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Data was acquired and analyzed as described for Figure 3—figure supplement 2. None of the data sets containing only males showed a significant inverse correlation between levels of TARPs and levels of synGAP. Data from HET mice are shown in blue; data from WT mice are shown in black.
 
 The data from all females (Figure 3D) show an inverse correlation between the two ratios that just reaches statistical significance. In contrast, the data from all males (Figure 3G) shows no correlation. Similarly, WT females and WT males (Figure 3E and H) show no correlation. Strikingly, the data from HET females (Figure 3F) show the largest inverse correlation of all the data sets, with a Spearman’s r = −0.498 and a p-value=0.0006. HET males (Figure 3I) show no significant correlation. The strong inverse correlation between the amount of synGAP and the amount of TARP in PSDs from HET females (Figure 3F) likely drives the inverse correlation observed for pooled HET animals (Figure 3C) and pooled females (Figure 3D).
 
@@ -64,7 +88,7 @@ These results mean that, between 7.5 and 12.5 weeks of age, synGAP haploinsuffic
 
 We also compared data sets from mice and rats at 7.5 weeks and 12.5 weeks (Figure 3—figure supplements 2 and 3). These data sets were small (9 or 10 animals). Nevertheless, they show a statistically significant inverse correlation between TARP/PSD-95 and synGAP/PSD-95 in HET female mice at both 7.5 and 12.5 weeks. In data from HET rats at 7.5 weeks, the inverse correlation is very close to significance; at 12.5 weeks, it is less significant, but still shows a trend. In the corresponding males, none of the data sets shows a statistically significant inverse correlation. More data would be required to make a definitive conclusion, but the results suggest that competition between synGAP and TARP for binding to PSD-95 in females is more prominent at 7 weeks than at 12 weeks, and more prominent in mice than in rats.
 
-## Effect of synGAP haploinsufficiency on the relative levels of other PSD proteins
+### Effect of synGAP haploinsufficiency on the relative levels of other PSD proteins
 
 In our previous paper, we examined the levels of neuroligins 1 and 2 (NLG-1,–2), and of the surface protein LRRTM2. In this study, we re-examined the effect of reduction of synGAP on the levels of NLG-1 and 2 in the PSD and looked at the effect on levels of GluN2B, a subunit of the NMDA-type glutamate receptor that binds most avidly to PDZ2 of PSD-95. We predicted that the level of GluN2B would be less affected than TARPs or NLGs by reduction of synGAP because synGAP has lower affinity for PDZ2 than for PDZ1 and PDZ3 (Walkup et al., 2016).
 
@@ -74,7 +98,7 @@ The ratios of the three proteins to PSD-95 in HET and WT rodents, averaged over 
 
 **Figure 4.:** PSDs were purified as in Figure 2. Ratios were determined as described under Materials and methods. Ratios from HET animals (bars) are normalized to the ratios from WT animals (dotted lines). (A) GluN2B/PSD-95. Sample sizes and significance tests are as follows: all animals WT = 81 and HET = 82, two-tailed Wilcoxon matched-pairs signed rank test; male mouse 7.5 weeks WT = 11 and HET = 10, two-tailed Student T-test; male mouse 12.5 weeks WT = 11 and HET = 10, two-tailed Student T-test; male rat 7.5 weeks WT = 11 and HET = 10, two-tailed Student T-test; male rat 12.5 weeks WT = 10 and HET = 11, two-tailed Student T-test; female mouse 7.5 weeks WT = 10 and HET = 12, two-tailed Student T-test; female mouse 12.5 WT = 9 and HET = 9, one-tailed Student T-test; female rat 7.5 weeks WT = 9 and HET = 10, two-tailed Student T-test with Welch’s correction; female rat 12.5 weeks WT = 9 and HET = 9, two-tailed Student T-test with Welch’s correction. (B) NLG-1/PSD-95. Sample sizes and significance tests are as follows: all animals WT = 81 and HET = 83, two-tailed Wilcoxon matched-pairs signed rank test; male mouse 7.5 weeks WT = 10 and HET = 10, two-tailed Student T-test; male mouse 12.5 weeks WT = 11 and HET = 10, two-tailed Student T-test; male rat 7.5 weeks WT = 11 and HET = 10, two-tailed Student T-test; male rat 12.5 weeks WT = 10 and HET = 11, two-tailed Student T-test; female mouse 7.5 weeks WT = 10 and HET = 12, two-tailed Student T-test; female mouse 12.5 WT = 10 and HET = 10, two-tailed Student T-test; female rat 7.5 weeks WT = 10 and HET = 11, two-tailed Mann-Whitney test; female rat 12.5 weeks WT = 9 and HET = 10, two-tailed Student T-test with Welch’s correction. (C) NLG-2/PSD-95. Sample sizes and significance tests are as follows: all animals WT = 79 and HET = 79, one-tailed Wilcoxon matched-pairs signed rank test; male mouse 7.5 weeks WT = 10 and HET = 10, one-tailed Student T-test; male mouse 12.5 weeks WT = 11 and HET = 10, one-tailed Student T-test; male rat 7.5 weeks WT = 11 and HET = 10, one-tailed Student T-test; male rat 12.5 weeks WT = 10 and HET = 11, one-tailed Student T-test; female mouse 7.5 weeks WT = 9 and HET = 12, one-tailed Student T-test with Welch’s correction; female mouse 12.5 WT = 10 and HET = 9, one-tailed Student T-test; female rat 7.5 weeks WT = 9 and HET = 10, one-tailed Student T-test; female rat 12.5 weeks WT = 9 and HET = 8, one-tailed Student T-test with Welch’s correction. Significance: * for p≤0.05, ** for p≤0.01, *** for p≤0.001, and **** for p≤0.0001.
 
-## Spearman’s correlation coefficient reveals that the levels of GluN2B and levels of synGAP in PSDs are positively correlated
+### Spearman’s correlation coefficient reveals that the levels of GluN2B and levels of synGAP in PSDs are positively correlated
 
 Figure 5 contains ratios of GluN2B to PSD-95 plotted against ratios of synGAP to PSD-95 measured in the same set of individual PSDs shown in Figure 3A,D and G. Data for all animals (Figure 5A), female animals (Figure 5B), and male animals (Figure 5C) show positive Spearman’s r values of ~0.4 with p-values indicating a highly significant difference from zero. The positive correlation is present in both WT (black) and HET (orange) animals. These results support our hypothesis that synGAP does not compete with GluN2B for binding to PSD-95. To the contrary, the data suggest that a higher level of synGAP leads to higher localization of GluN2B; and, therefore, NMDA-type glutamate receptors, to the PSD (see Discussion).
 
@@ -82,7 +106,7 @@ Figure 5 contains ratios of GluN2B to PSD-95 plotted against ratios of synGAP to
 
 **Figure 5.:** Each point represents a single animal. Black, WT; Orange, HET. (A) All animals including all genotypes, ages, species, and sexes. n = 158. (B) All female animals, including all genotypes, ages, and species. n = 77. C) All male animals, including all genotypes, ages, and species. n = 81. P-values for Spearman’s rank correlation coefficient are one-tailed. Significant p-values are shown in red.
 
-## Spearman’s correlation coefficient shows no significant correlation between levels of NLG-1 and 2 and levels of synGAP in PSDs
+### Spearman’s correlation coefficient shows no significant correlation between levels of NLG-1 and 2 and levels of synGAP in PSDs
 
 Our previous results showed only a small effect of synGAP haploinsufficiency on the level of NLG-2 in PSDs. The pooled data in Figure 4C reproduces those findings. However, the significance of Spearman’s r between levels of NLG-2 and synGAP in PSDs shows only a strong trend toward an inverse correlation (Figure 6A). As in our previous paper, both Figure 4B and Figure 6B show no effect of synGAP haploinsufficiency on the amount of NLG-1 in PSDs.
 
@@ -112,21 +136,136 @@ These results illustrate the complex role that synGAP plays in modulating the st
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Syngap1 KO mouse</td>
+      <td>Vazquez et al., 2004</td>
+      <td></td>
+      <td>C57BL/6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Syngap1 KO rat; LE-Syngap1em1/PWC</td>
+      <td>SAGE Labs, Sigma-Aldrich</td>
+      <td>Syngap1em1/PWC</td>
+      <td>CRISPR/Cas9 based genome targeting exon 8</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PSD-95 (Mouse monoclonal)</td>
+      <td>Caltech Monoclonal Antibody Facility</td>
+      <td>50% ammonium sulfate cut of Ascites fluid of 7E3-1B8; AB_212825</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-synGAP (Rabbit polyclonal)</td>
+      <td>Pierce</td>
+      <td>PA1-046; AB_2287112</td>
+      <td>WB (1:3,500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TARP (Rabbit polyclonal)</td>
+      <td>EDM Millipore</td>
+      <td>Ab9876; AB_877307</td>
+      <td>WB (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GluN2B (Rabbit polyclonal)</td>
+      <td>Raised in our lab. Zhou et al., 2007, see Figure 2—figure supplement 1</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NLG-1 (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>129013; AB_2151646</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NLG-2 (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>129202; AB_2151646</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 680 goat anti-mouse IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A28183; AB_2536167</td>
+      <td>WB (1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRdye800-conjugated goat-anti-rabbit IgG</td>
+      <td>Rockland Immunochemicals, Limerick, PA</td>
+      <td>611-145-122; AB_1057618</td>
+      <td>WB (1 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Pierce</td>
+      <td>23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Light</td>
+      <td>LI-COR Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad Software, San Diego</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Syngap1 KO mice were generated in the Kennedy lab, bred in the Caltech animal facility, and genotyped by polymerase chain reaction as described (Vazquez et al., 2004). The rat model LE-Syngap1em1/PWC, hereafter referred to as Syngap1 KO, was produced by SAGE Labs, Sigma-Aldrich (now a subsidiary of Horizon Discovery, Saint Louis, MO, USA) using CRISPR/Cas9 based genome targeting strategies (Li et al., 2013). Briefly, CRISPR/Cas9 reagents and sgRNA targeting exon 8 (gtgcatagagcatgtcgtccAGG) were microinjected into pronuclei of fertilized one-cell embryos from Long Evans rats and transplanted into pseudo-pregnant females. Live born pups were genotyped by Sanger sequencing of exon8 PCR amplicons. Founder #23 displayed a 2 bp deletion 1 bp insertion and was crossed to a wild type Long Evans rat to generate a cohort of heterozygous animals for breeding purposes. Tissue biopsies from pups were used for TaqMan genotyping using two primers (Forward: CCAAGAAGCGATATTACTGCGAGTT and Reverse: GGAAGTGGTCCGTGCATAGA) and two reporter probes (WT: CCTGGACGACATGC and KO: TGCCTGGATACATGC). Homozygous SynGAP KO rats die perinatally, but heterozygous (HET) Syngap1 KO rats appear healthy and are fertile. To verify knockout of expression of synGAP, forebrain homogenates of P5 littermate rats (n KO = 3, n HET = 5, n WT = 2) were prepared in radioimmunoprecipitation assay buffer containing protease and phosphatase inhibitors (cOmplete EDTA-free), immunoblotted with a primary antibody raised to panSynGAP (1:4000; Abcam AB77235), and imaged on an Odyssey infrared imaging system (Li-COR Bioscience) as previously described in Till et al. (2012). Total protein levels on the blot were visualised with the Pierce Reversible Protein Stain Kit (Thermo Fisher Scientific, #24580) and quantified with ImageJ gel analyzer software. Protein bands of interest were quantified with Image Studio Lite v5.0 (Li-COR Bioscience). The expression level of each protein of interest was first normalized to total protein, followed by normalization of the data to the average wild-type levels, which were considered to be 100%.
 
 Upon weaning each animal was given an ear punch ID associated with a unique ID number, sexed, and genotyped. Tissue from the ear punch was used for genotyping both mice and rats, although some mice were genotyped with tissue from the tail. Mice were genotyped by polymerase chain reaction as described (Vazquez et al., 2004) and rats were genotyped via sequencing performed by Transnetyx, Inc Cordova, TN. The ID numbers linked the genotype and all other metadata for an animal to its PSD samples.
 
-## Preparation of PSD fractions
+### Preparation of PSD fractions
 
 PSD fractions were prepared from individual WT and HET mice and rats that were either 7.5 weeks or 12.5 weeks old, by a modification of a standard method (Cho et al., 1992; Cohen et al., 1977). ID numbers were assigned randomly with respect to genotype, and were used to label and track tissue samples and extracts after harvesting from the animal. Animals were killed by decapitation according to a protocol approved by the Caltech Institutional Animal Care and Use Committee. The following steps were carried out at 4° C. Forebrains were dissected from each animal, rinsed in Buffer A (0.32 M sucrose, 1 mM NaHCO3, 1 mM MgCl2, 0.5 mM CaCl2, 0.1 mM phenylmethylsulfonyl chloride [PMSF, Sigma Millipore, St. Louis, MO]). Each individual forebrain was homogenized in Buffer A (10% w/v, 4.5 ml for mice and 13.5 ml for rats) with 12 up and down strokes of a teflon/glass homogenizer at 900 rpm. Homogenates were subjected to centrifugation at 1400 × g for 10 min. The pellet was resuspended in Buffer A to 10% w/v (3.8 ml for mice, 12 ml for rats), homogenized (three strokes at 900 rpm) and subjected to centrifugation at 710 g for 10 min. The two supernatants were combined and subjected to centrifugation at 13,800 g for 10 min. The resulting pellet was resuspended in Buffer B (0.32 M sucrose, 1 mM NaHCO3; 2 ml for mice, 8 ml for rats), homogenized with 6 strokes at 900 rpm in a teflon/glass homogenizer, and layered onto a discontinuous sucrose gradient (equal parts 0.85 M, 1.0 M, and 1.2 M sucrose in 1 mM NaH2CO3 buffer; 10.5 ml for mice, 30 ml for rats). Gradients were subjected to centrifugation for 2 hr at 82,500 g in a swinging bucket rotor. The synaptosome-enriched layer at the interface of 1.0 and 1.2 M sucrose was collected, diluted with Buffer B, 7 ml for mice and 20 ml for rats, then added to an equal volume of Buffer B containing 1% Triton (10% X-100 Surfact-Amps, Thermo Fisher Scientific, Waltham, MA). The mixture was stirred for 15 min at 4°C and subjected to centrifugation for 45 min at 36,800 g. The pellet, which contained the PSD-enriched Triton-insoluble fraction, was resuspended in 0.5–1.0 ml 40 mM Tris pH 8 with a 21-gauge needle attached to a 1 ml syringe, and then homogenized with six strokes at 900 rpm in a teflon/glass homogenizer. Samples were flash-frozen, and stored at −80° C. Protein concentrations were determined by the bicinconic acid method (Thermo Fisher Scientific). Individual mouse brains yielded ~1.25 mgs and individual rat brains yielded ~3.5 mgs protein. The yield was sufficient to measure the ratio of amounts of five separate proteins to PSD-95 for each individual animal.
 
-## Immunoblots
+### Immunoblots
 
 To measure each of the five proteins, an equal amount of protein from each sample (5 μg) was dissolved in SDS-PAGE sample buffer (50 mM Tris-HCL pH 6.8, 2% SDS, 10% glycerol, 5% β-mercaptoethanol, 0.005% bromophenol blue), heated at 90°C for 5 min, loaded into acrylamide gels (8% gel for analysis of synGAP, GluN2B, NLG-1 and 2; or 12% for TARPs), fractionated, and electrically transferred to PVDF membranes in 25 mM Tris, 150 mM glycine at 250V for 2–3 hr at 4 °C. All gels contained a mixture of males and females randomized by genotype. Completeness of transfer was checked by staining of gels with Gel Code Blue (Thermo Fisher Scientific) after transfer. Membranes were washed for 5 mins three times in 20 mM Tris, pH 7.6, 150 mM NaCl (TBS), blocked with Odyssey blocking buffer (LI-COR Biosciences, Lincoln NE) for 45 mins at RT, washed for 5 mins three times in TBS plus 0.1% tween (TBST) and then incubated in primary antibodies dissolved in TBST plus 5% BSA ON at 4 °C. Each blot was incubated with a mixture of mouse anti-PSD-95 (50% ammonium sulfate cut of Ascites fluid of 7E3-1B8, AB_212825, dilution 1:10,000), and one of the following; rabbit anti-synGAP (Pierce PA1-046, AB_2287112 dilution 1:3500), rabbit anti-TARP (EDM Millipore Ab9876, AB_877307 dilution 1:300), rabbit anti-GluN2B (raised in our lab, Zhou et al., 2007, see Figure 2—figure supplement 1, dilution 1:1000), rabbit anti-NLG-1 (Synaptic Systems 129013 AB_2151646 dilution 1:2000), or rabbit anti-NLG-2 (Synaptic System 129202 dilution 1:1000). Membranes were washed for 5 min three times in TBST and incubated for 45 min at RT in 5% nonfat milk in TBST with a mixture of secondary antibodies including Alexa Fluor 680 goat anti-mouse IgG (Thermo Fisher Scientific A28183, AB_2536167, 1 μg/ml) to label PSD-95, and IRdye800-conjugated goat-anti-rabbit IgG (Rockland Immunochemicals, Limerick, PA, 611-145-122, AB_1057618, 1 μg/ml) to label the target proteins. Membranes were then given three 5 min washes in TBST, followed by three 5 min washes in TBS. Bound antibodies were visualized with the Odyssey Infrared Imaging System (LI-COR Biosciences).
 
-## Data quantification and analysis
+### Data quantification and analysis
 
 For each gel lane (representing a single animal) the ratio of the target protein (NLG-1, NLG-2, TARPs, GluN2B, or synGAP) to PSD-95 was calculated (see Figure 2—figure supplement 1 and Supplementary file 1). Regions of Interest (ROI) were drawn around each protein band and the intensity within the box was determined with the use of Image Studio Light software supplied by LI-COR. To measure background, a box of the same size was placed in the lane in an unstained region above or below the band of interest. The fluorescence intensity values were transferred to Microsoft Excel. For both the target protein and PSD-95, background was subtracted from the signal, then the ratio of the two background-corrected signals was calculated. At least three technical replicates of the synGAP signal were performed for each animal; and, in general, six technical replicates were performed for the other targets.
 

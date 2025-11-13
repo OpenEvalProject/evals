@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Members of the Corynebacterineae suborder of Actinobacteria have a unique cell surface architecture and, unlike most well-studied bacteria, grow by tip-extension. To investigate the distinct morphogenic mechanisms shared by these organisms, we performed a genome-wide phenotypic profiling analysis using Corynebacterium glutamicum as a model. A high-density transposon mutagenized library was challenged with a panel of antibiotics and other stresses. The fitness of mutants in each gene under each condition was then assessed by transposon-sequencing. Clustering of the resulting phenotypic fingerprints revealed a role for several genes of previously unknown function in surface biogenesis. Further analysis identified CofA (Cgp_0016) as an interaction partner of the peptidoglycan synthase PBP1a that promotes its stable accumulation at sites of polar growth. The related Mycobacterium tuberculosis proteins were also found to interact, highlighting the utility of our dataset for uncovering conserved principles of morphogenesis for this clinically relevant bacterial suborder.
+Members of the Corynebacterineae  suborder of Actinobacteria have a unique cell surface architecture and, unlike most well-studied bacteria, grow by tip-extension. To investigate the distinct morphogenic mechanisms shared by these organisms, we performed a genome-wide phenotypic profiling analysis using Corynebacterium glutamicum as a model. A high-density transposon mutagenized library was challenged with a panel of antibiotics and other stresses. The fitness of mutants in each gene under each condition was then assessed by transposon-sequencing. Clustering of the resulting phenotypic fingerprints revealed a role for several genes of previously unknown function in surface biogenesis. Further analysis identified CofA (Cgp_0016) as an interaction partner of the peptidoglycan synthase PBP1a that promotes its stable accumulation at sites of polar growth. The related Mycobacterium tuberculosis proteins were also found to interact, highlighting the utility of our dataset for uncovering conserved principles of morphogenesis for this clinically relevant bacterial suborder.
 
 ## Introduction
 
@@ -27,33 +27,57 @@ Phenotypic profiling has proven to be a useful strategy to identify phenotypes f
 
 ## Results
 
-## Phenotypic profiling of a high-density Cglu transposon library
+### Phenotypic profiling of a high-density Cglu transposon library
 
 To generate phenotypic profiles, a Cglu transposon library of approximately 200,000 unique insertions was grown for eleven generations in the presence of drug or under a stress condition. For drug treatments, initial trials revealed that the best transposon-sequencing results were obtained when a drug concentration yielding a mild but observable decrease in growth rate was used. Typically these concentrations were 1/4 to 1/2 the measured minimal inhibitory concentration (MIC) for each drug (Figure 1—figure supplement 1A and Supplementary file 1). In several cases, two different treatment concentrations of a particular drug were used in the analysis. All total, 40 different growth conditions were analyzed with the collection of drugs used spanning all major targets, including PG and AG biogenesis, DNA replication, transcription, and translation (Figure 1A and Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of the phenotypic profiling procedure. A transposon mutagenized library of Cglu MB001 was exposed to sub-MIC concentrations of the indicated antibiotics or to the listed stress condition for 11 generations prior to transposon sequencing analysis and the calculation of fitness scores for mutants in each gene under each condition. Several of the antibiotics were tested at two different concentrations such that a total of 40 different growth conditions were surveyed (see Supplementary file 1). (B) Scatterplot highlighting the reproducibility of the analysis for duplicate samples grown in the absence of drug. The calculated fitness scores for each gene in the two replicates are plotted. Scores were calculated by comparing the proportion of total transposon reads for each gene in the untreated samples grown for 11 generations relative to the reads mapped for the input library. (C) Pie chart summarizing results from the profiling analysis. Depicted are essential genes (453, gray), genes that displayed a strong phenotype (fitness value below 0.75 or above 1.25) in at least one condition (465, dark blue), genes that displayed a moderate phenotype (fitness value below 0.9 or above 1.1) in at least one condition (484, light blue) and genes that did not show a phenotype in any condition tested (1535, black).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cultures of wild-type Cglu were grown for 24–36 hr from a starting OD600 of 2.5 × 10−6 in BHI with the addition of the indicated concentration of drug. The culture OD600 was measured every 5 min using a Molecular Devices VersaMax Microplate Reader.
 
 Following growth in each condition, genomic DNA was isolated from the cultures and transposon insertion profiles were analyzed by sequencing. Based on the results, a fitness score for mutants in each gene, referred for simplicity as gene fitness, was calculated by comparing the proportion of transposon reads mapped in the gene following one generation of growth in the absence of treatment relative to those mapped after eleven generations of growth in the treatment condition (see Materials and methods). Scores below 1.0 indicate reduced fitness relative to the population, whereas scores greater than 1.0 indicate greater fitness. Replicates of untreated cultures resulted in highly correlated fitness scores for each gene, with most genes yielding a fitness score near 1.0 as expected for such a comparison (Figure 1B). Overall, approximately 40% of all non-essential genes were found to have a moderate phenotype in at least one condition tested, indicated by a fitness score below 0.9 or above 1.1 (Figure 1C), with the vast majority of phenotypes observed being fitness defects.
 
 Hierarchical clustering of the phenotypic profiles generated from the analysis was used to identify sets of genes with similar fingerprints that may function together in the same biological pathway (Figure 2 and Figure 2—source data 1). As an indication that the clustering was accurately identifying factors with similar functions, genes encoding components of several characterized protein complexes were found to have highly correlated phenotypic signatures. For example, genes encoding the two cytochrome d oxidase subunits (cydA and cydB) and cytochrome transporter (cydC and cydD) cluster tightly together, primarily due to their hypersensitivity to the benzothiazinone BTZ043 (Figure 2). This finding is consistent with published literature demonstrating synergistic effects between electron transport chain inhibitors and benzothiazinones against Mtb (Lechartier and Cole, 2015). Additionally, genes encoding RipC, FtsE, and FtsX proteins that together form a complex required for proper cell wall remodeling at the division site (Lim et al., 2019; Tsuge et al., 2008; Maeda et al., 2016) were also found to have correlated profiles (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap showing clustered phenotypic profiles for all non-essential genes in Cglu. The test conditions are oriented along the abscissa and are ordered by the stress or the physiological process affected by antibiotic treatment. The 2488 non-essential genes (excluding tRNAs, rRNAs, and transposons) are clustered along the ordinate with neighboring genes sharing similar fitness profiles across all conditions. The intensity of the red color indicates the magnitude of the fitness defect (dark red has a fitness value close to 0), white indicates a fitness value of 1, and blue color indicates a fitness advantages in a given condition. The full dataset is available in Figure 2—source data 1. (B) Expanded view of the profiles for select genes. See text for details.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Shown is the transposon insertion profile for the cgp_3012–3020 genomic locus for untreated (top, -vanc) and vancomycin-treated (+vanc, 0.4 µg/ml, bottom) samples. (B) Phenotypic profiles for all genes in the cgp_3012–3020 locus displayed as in Figure 2. (C) Cultures of wild-type Cglu and the indicated deletion mutants were normalized to an OD600 of 0.5 and serially diluted. An aliquot (5 µl) of each dilution was spotted onto BHI agar medium supplemented with drug as indicated. Drug concentrations used were 0.3 μg/mL vancomycin, 0.07 μg/mL bacitracin, 0.06 μg/mL meropenem and 0.2 μg/mL ampicillin. Plates were incubated for 24 hr at 30°C and photographed.
+
 Another notable feature of the profiling analysis is that it successfully differentiated the biological function of genes from the same genetic locus. For example, genes in the putative cgp_3163–3168 operon clustered into two distinct groups. Mutants in four of these genes (cgp_3163, cgp_3165, cgp_3166, and cgp_3168) have been associated with defects in trehalose mycolate transport across the cytoplasmic membrane (Yamaryo-Botte et al., 2015). Accordingly, they were all found to cluster together in the profiling analysis (Figure 2). Gene cgp_3164 from this locus, on the other hand, was previously implicated in a different function. Mutants in this gene along with the unlinked mptA (cgp_2385) gene were found to have a defect in the elongation of the mannan backbone of membrane glycolipids (Cashmore et al., 2017). Consistent with this finding, cgp_3164 clusters with mptA (cgp_2385) in our analysis and has a phenotypic profile distinct from its neighboring genes in the cgp_3163–3168 locus (Figure 2). Therefore, the profiling and clustering results are not simply identifying functional groupings based on operonic organization.
 
 In addition to properly correlating the function of factors known to work together within the same complex or pathway, the profiling data also identified possible roles in cell surface biogenesis for genes of previously unknown function. For example, the putative cgp_3012–3020 operon stood out due to the specific hypersensitivity to bacitracin and vancomycin displayed by mutants in all of its genes except for cgp_3015 (Figure 2—figure supplement 1A–B). This hypersensitivity was confirmed by deletion of the entire locus or individual genes (cgp_3018 or cgp_3019) (Figure 2—figure supplement 1C). Also consistent with the phenotypic screen, these strains have a slight growth advantage on meropenem, but are not altered in their susceptibility to other drugs like ampicillin (Figure 2—figure supplement 1B–C). Vancomycin acts by directly binding the lipid II precursor for PG synthesis, which consists of the lipid carrier undecaprenol pyrophosphate (Und-PP) linked with the dissacharide pentapeptide monomeric unit of PG (Reynolds, 1989; Schneider and Sahl, 2010). Bacitracin similarly targets the lipid stage of PG biogenesis by blocking the dephosphorylation of Und-PP products of PG glycan polymerases such that Und-P is not regenerated for use in the synthesis of lipid II, causing PG synthesis to be inhibited (Schneider and Sahl, 2010). Thus, the specific hypersensitivity of mutants in the cgp_3012–3020 locus to drugs that interfere with lipid II biogenesis suggests that this large uncharacterized cluster of genes may be involved in undecaprenol synthesis or utilization to facilitate proper cell surface assembly in Cglu. Based on the overall accuracy of the functional connections made so far using the phenotypic profiling dataset, we anticipate that it will provide a useful resource for the discovery and characterization of new factors involved in cell surface biogenesis and other important biological processes within the Corynebacterineae.
 
-## The profiles of cgp_0016 and ponA (cpg_0336) are highly correlated
+### The profiles of cgp_0016 and ponA (cpg_0336) are highly correlated
 
 We continued mining the profiling data to identify genes of unknown function that had profiles that were highly correlated with those of factors known to play key roles in cell wall synthesis. This analysis peaked our interest in the gene of unknown function cgp_0016, which based on results presented below will henceforth be referred to as cofA (co-factor of PBP1a) (Figure 3A). The cofA gene encodes a small membrane protein of 114 amino acids with two predicted transmembrane domains and an N-in/C-in topology (Figure 3B). Its phenotypic profile clustered tightly with the ponA gene (Figure 3A) (correlation coefficient 0.91) encoding PBP1a, an aPBP-type synthase that helps build the PG layer. Like other aPBPs, PBP1a is a bitopic membrane protein with a small N-terminal cytoplasmic domain, a single transmembrane helix, and a large extracellular region (Figure 3B). The extracellular portion of the synthase contains both a glycosyltransferase (GTase, polymerase) domain that polymerizes lipid II into PG glycans and a transpeptidase (TPase) domain that forms the crosslinks between peptides of adjacent PG glycans in the wall matrix (Figure 3B). Cglu encodes a second aPBP called PBP1b, but its corresponding gene ponB (cgp_3313) had a phenotypic profile that was distinct from cofA and ponA (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig3-v2.jpg)
+
+**Figure 3.:** (A) Phenotypic profiles of cofA (cgp_0016), ponA (cgp_0336, encoding PBP1a), and ponB (cgp_3313, encoding PBP1b) displayed as in Figure 2. Note that cofA and ponA clustered tightly together in the analysis due to their similar profiles. Neither gene clustered near ponB, which is shown for reference. (B) Schematic showing the predicted membrane topology of CofA and PBP1a. (C) Cultures of wild-type Cglu and the indicated deletion mutants were grown, serially diluted, and plated as in Figure 2—figure supplement 1. The concentration of drugs used was 0.2 μg/mL ampicillin or 0.04 μg/mL meropenem as indicated. (D) Shown are mScarlet fluorescence (upper) and phase contrast (lower) micrographs of cells expressing the indicated fusion protein. Fusions were constitutively expressed from a construct integrated at the attB1 site. Translation of the fusions was controlled by the theophylline (riboE1) riboswitch and was induced with 0.3 mM theophylline in each case. The fusions were produced in strains deleted for the corresponding native untagged protein. Cells from an overnight culture were diluted 1:1000 in BHI supplemented with 0.3 mM theophylline and then imaged on CGX2 agarose pads after growth for 5.5 hr at 30°C. The brightness for the two mScar-PBP1a micrographs is normalized to allow for direct comparison. Bar equals 3 µm. (E) Bocillin labeling of PBPs in wild-type and mutant strains. Overnight cultures of the indicated strains were diluted 1:200 in BHI and grown until they reached an OD600 = 0.3. Cells were then treated with 10 μg/mL Bocillin-FL, and membrane fractions were isolated. Proteins (5 µg total) were then separated on a 10% SDS-PAGE gel and labeled bands were visualized using a Typhoon florescence scanner. Production of the mScar-PBP1a fusions was induced with 0.3 mM theophylline as for the microscopy analysis in panel D. Fluorescent band intensities for labeled PBP1a or mScar-PBP1a were quantified and normalized to the PBP2a band signal running just above 55 kDa. The PBP1a or mScar-PBP1a signal decreased by a factor of 5 in ΔcofA cells relative to the corresponding CofA+ strain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cultures of wild-type, ΔponA, and ΔcofA strains harboring the indicated mScar fusion under theophylline-inducible control were grown and plated as in Figure 3. The concentration of agar supplements was 0.2 μg/mL ampicillin and 0.3 mM theophylline as indicated. (B) Cultures of ΔponA strains harboring the indicated mScar-PBP1a fusion under theophylline-inducible control were grown and plated as in Figure 3. The concentration of agar supplements was 0.3 μg/mL ampicillin and 0.3 mM theophylline as indicated. (C) Shown are mScarlet fluorescence (upper) and phase contrast (lower) micrographs of cells expressing the indicated mScar-PBP1a fusions. mScar-PBP1a derivatives analyzed were mScar-PBP1a(E97A), mScar-PBP1a(S393A), and mScar-PBP1a(E97A,S393A), which are inactivated for the GTase, TPase, or both active sites, respectively. Cells were imaged on CGX2 with supplements agarose pads. Bar equals 3 µm. (D) Demographs reflecting protein localization throughout the indicated population of cells for each of the indicated strains. Heatmaps of fluorescence intensity across each cell analyzed were arranged according to cell length and stacked to generate the demograph. A custom-written MATLAB script was used to orient the cells such that the cell pole with the higher fluorescence was located on the right of the demograph.
 
 The high correlation of the ponA and cofA profiles suggested that CofA might be a cofactor specifically required for the function of PBP1a. Cofactors of aPBPs have been described in the Proteobacteria and Firmicutes (Typas et al., 2010; Paradis-Bleau et al., 2010; Greene et al., 2018; Fenton et al., 2018). However, no such cofactors have been identified as important for PG synthesis in the Corynebacterineae or other Actinobacteria. Given the critical roles played by these cofactors in the activation and/or control of PG synthesis by the aPBPs in other organisms, we decided to further investigate the connection between CofA and PBP1a in Cglu.
 
 To validate the profiling results, deletions of ponA and cofA were constructed and the sensitivity of the resulting mutants to antibiotics was assessed. As expected, ΔponA cells displayed hypersensitivity to ampicillin and meropenam relative to wild-type cells (Figure 3C). Cells deleted for cofA showed a similar sensitivity to these drugs, but in both cases the sensitivity defect was less severe than that of ΔponA cells (Figure 3C). Double ΔponA ΔcofA mutants displayed a drug sensitivity phenotype identical to the single ΔponA mutant (Figure 3C). Thus, the mutant phenotypes of cells inactivated for PBP1a and CofA are indeed similar. However, the reduced severity of the phenotypes for CofA inactivation relative to PBP1a inactivation suggests that PBP1a retains some residual function in the absence of CofA. This phenotypic disparity is consistent with a model in which CofA promotes normal PBP1a function but is not absolutely required for its activity.
 
-## CofA is required for the stable accumulation of PBP1a
+### CofA is required for the stable accumulation of PBP1a
 
 PBP1a has been shown to localize to the cell pole where it is likely participating in polar surface growth (Valbuena et al., 2007). We reasoned that one potential function of CofA might be the recruitment of PBP1a to the growing pole. To investigate this possibility, we constructed N-terminal fusions of the red-fluorescent protein mScarlet (mScar) to both PBP1a and CofA. Both fusions were functional as they complemented the ampicillin hypersensitivity phenotype of the corresponding deletion allele (Figure 3—figure supplement 1A). As expected based on prior results, mScar-PBP1a displayed a prominent polar localization pattern with additional signal at developing division septa (Figure 3D and Figure 3—figure supplement 1D). This localization pattern did not require PBP1a activity as mutant fusions inactivated for polymerase (GTase), crosslinking (TPase), or both activities retained their polar recruitment signal (Figure 3—figure supplement 1B–C). mScar-CofA showed a very similar localization pattern (Figure 3D and Figure 3—figure supplement 1D). Notably, the polar localization pattern of mScar-CofA was lost in ΔponA cells (Figure 3D and Figure 3—figure supplement 1D). The fusion instead displayed a peripheral localization signal typical of a delocalized membrane protein. In stark contrast, when mScar-PBP1a localization was assessed in ΔcofA cells, the fluorescent signal observed was dramatically reduced relative to cells producing CofA (Figure 3D and Figure 3—figure supplement 1D). This result suggested that PBP1a may not stably accumulate in the absence of CofA. To investigate this possibility, we used the fluorescent penicillin derivative called Bocillin to monitor PBP1a levels in wild-type and ΔcofA cells.
 
 Like all beta-lactams, Bocillin covalently modifies the TP active site of PBPs. It can therefore be used label cellular PBPs to track their abundance in membrane extracts following protein denaturation, and separation by SDS-PAGE. Labeling of wild-type cells yielded three bands of high-intensity (Figure 3E). The top band was identified as PBP1a due to its absence in the profile of labeled ΔponA cells (Figure 3E). As expected from the fluorescent microscopy analysis, the intensity of the PBP1a band was dramatically reduced in samples from ΔcofA cells (Figure 3E). Similarly, when ΔponA cells expressing the mScar-PBP1a fusion were labeled, the PBP1a band was shifted to a higher molecular weight corresponding to the fusion, and this band was significantly reduced in intensity when CofA was inactivated (Figure 3E). Given that the fusion protein was produced from a heterologous promoter, the effect of CofA is unlikely to be at the level of ponA transcription. Rather, we infer from the data that CofA is most likely required for the stable accumulation of PBP1a.
 
-## CofA directly interacts with the transmembrane domain of PBP1a
+### CofA directly interacts with the transmembrane domain of PBP1a
 
 The accumulation defect of PBP1a in cells lacking CofA suggested that the two proteins might interact and that this interaction is required to stabilize PBP1a. To assess their potential interaction, we used the recently developed POLAR (PopZ-Linked Apical Recruitment) two-hybrid assay in E. coli (Lim and Bernhardt, 2019). For this method, a bait protein is fused to GFP and a peptide that recruits the fusion to polarly-localized assemblies of the Caulobacter cresentus PopZ protein. The prey protein is expressed as an mScar fusion, and interaction with the bait is assessed based on whether or not the prey is recruited to the polar PopZ assembly. With this assay, CofA was found to interact with PBP1a but not a control transmembrane domain fusion or a fusion to PBP1b, the other aPBP encoded by Cglu (Figure 4A). Additionally, CofA was found to self interact (Figure 4B). Notably, we also observed that the transmembrane domain of PBP1a was necessary and sufficient for a positive CofA-PBP1a interaction in the POLAR assay (Figure 4C). We thus conclude that CofA interacts directly and specifically with PBP1a via its transmembrane domain.
 
@@ -61,13 +85,29 @@ The accumulation defect of PBP1a in cells lacking CofA suggested that the two pr
 
 **Figure 4.:** Shown are results from the POLAR two-hybrid assay with proteins expressed in E. coli cells. Bait proteins were fused with GFP and the H3H4 peptide to target them to polar assemblies of the PopZ protein. Prey proteins were expressed as mScar fusions. Schematics of the proteins or protein domains used as bait or prey are shown above the micrographs for reference. In each panel, representative fluorescence images of E. coli cells expressing the indicated bait and prey proteins are shown. Below these images are demographs that reflect protein localization throughout a population of cells. For the demographs the distribution of fluorescence across at least 250 cells was quantified. The resulting heatmaps of fluorescence intensity for each cell were then arranged according to cell length and stacked to generate the demograph. A custom-written MATLAB script was used to orient the cells such that the cell pole with the higher bait fluorescence was located on the right of the demograph (available at https://github.com/jsher-Bernhardtlab/cofA; Sher, 2020; copy archived at https://github.com/elifesciences-publications/cofA). (A) (left) GFP-PBP1a bait with mScar-CofA prey. (middle) Control transmembrane domain fused to GFP (GFP-TM) as bait with mScar-CofA prey. (right) GFP-PBP1b bait with mScar-CofA prey. (B) GFP-CofA bait with mScar-CofA prey. (C) (left) GFP fused to the tramsmembrane domain of PBP1a (GFP-PBP1a-TM) with mScar-CofA prey. (right) GFP-PBP1a with a heterologous transmembrane domain (GFP-PBP1a-Swap) with mScar-CofA prey.
 
-## The CofA-PBP1a interaction is required for the stable accumulation of PBP1a at the pole
+### The CofA-PBP1a interaction is required for the stable accumulation of PBP1a at the pole
 
 We next tested whether the transmembrane domain of PBP1a was responsible for its failure to accumulate in the absence of CofA. To do so, we replaced the native PBP1a transmembrane domain with the corresponding domain from E. coli PBP1a in the context of the mScar fusion. Bocillin labeling indicated that unlike wild-type mScar-PBP1a, this fusion protein (mScar-EcTM-PBP1a) accumulated in ΔcofA cells to levels approaching that of the wild-type mScar-PBP1a fusion in CofA+ cells (Figure 5A). Although accumulation of PBP1a was restored by the transmembrane domain swap, the hybrid fusion was only partially functional in restoring normal levels of sensitivity to ampicillin to ΔponA or ΔponA ΔcofA cells (Figure 5B). Moreover, the hybrid fusion was not recruited to the cell poles like wild-type mScar-PBP1a, but instead displayed a peripheral localization pattern consistent with a delocalized membrane protein (Figure 5C). Analysis by the POLAR assay also found that the EcTM-PBP1a hybrid failed to interact with CofA (Figure 5—figure supplement 1). The overall results with the hybrid PBP1a fusion are therefore consistent with a model in which the CofA-PBP1a interaction is needed for the stable accumulation of the complex at the cell pole.
 
-## The CofA-PBP1a interaction is conserved among the Corynebacterineae
+![Figure 5.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig5-v2.jpg)
+
+**Figure 5.:** (A) Bocillin labeling of mScar-PBP1a in the indicated strains. Production of the mScar fusions was induced with 0.3 mM theophylline as in Figure 3. For this gel, 7.5 μg of total protein was loaded for each sample. mScar-EcTM-PBP1a refers to the PBP1a derivative in which the transmembrane domain of E. coli PBP1a was used to replace the corresponding domain of native Cglu PBP1a. Fluorescent band intensities for labeled mScar-PBP1a derivatives was performed as in Figure 3E. The mScar-PBP1a band decreased in intensity by a factor of 8 in ΔcofA cells relative to the corresponding CofA+ strain, whereas the mScar-EcTM-PBP1a in ΔcofA cells was present at 74% of the mScar-PBP1a level in CofA+ cells. (B) Cultures of the indicated strains encoding mScar-PBP1a, mScar-EcTM-PBP1a, or no fusion as indicated were grown and plated as in Figure 2—figure supplement 1. Plates contained 0.3 μg/mL ampicillin with or without 0.3 mM theophylline to induce the production of the PBP1a fusions as indicated. (C) (top) Shown are representative micrographs of ΔponA or ΔponA ΔcofA cells producing the indicated mScar-PBP1a or mScar-EcTM-PBP1a fusion, which was induced upon addition of 0.3 mM theophylline. Cells were imaged on CGX2 with supplements agarose pads. (bottom) Demographs showing fluorescence distribution of the corresponding mScar fusions throughout a population of cells. At least 150 cells were analyzed for each demograph. Bar equals 3 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) POLAR two-hybrid assay assessing the interaction of Cglu mScar-CofA prey with GFP-EcTM-PBP1a bait. Results are displayed as in Figure 4.
+
+### The CofA-PBP1a interaction is conserved among the Corynebacterineae
 
 The CofA protein from Cglu, including its two transmembrane domains, consists almost entirely of the domain of unknown function designated DUF3566. Proteins with this domain are found throughout the Actinobacteria, and as in Cglu, the cofA sequence is commonly located in the same genetic context, directly downstream of DNA gyrase and upstream of tRNA gene(s) (Figure 6A–B). Some of the CofA paralogs have extended N-terminal cytoplasmic domains that may provide added functionality to the protein (Figure 6B). We tested the ability of CofA proteins from the opportunistic pathogen Corynebacterium jeikium and Mtb for their ability to interact with aPBPs using the POLAR assay. The C. jeikium CofA (CjCofA) was found to interact with the transmembrane domain of C. jeikium PBP1a (CjPBP1a-TM), but not the corresponding domain of its PBP1b ortholog (CjPBP1b-TM) (Figure 6C). Using the full-length CofA from Mtb (MtbCofA-FL) as the prey, a weak interaction signal was detected with the transmembrane domain of MtbPonA2, the paralog of Cglu PBP1a, but not the transmembrane domain of MtbPonA1, the paralog of Cglu PBP1b (Figure 6—figure supplement 1). For reasons that are currently unclear, the specific interaction signal between MtbCofA and the transmembrane domain of MtbPonA1 was greatly improved when the N-terminal extension of CofA was deleted (MtbCofA-ΔN) (Figure 6D). We thus conclude that the CofA-PBP1a interaction is conserved among the Corynebacterineae and most likely also throughout the Actinobacteria.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig6-v2.jpg)
+
+**Figure 6.:** (A) Phylogenetic tree showing the distribution of CofA-like proteins containing the DUF3566 domain. (B) Schematics showing the genomic organization of loci encoding cofA-like genes in representative bacteria. The domain predictions are based on the NCBI conserved domain database. Not drawn to scale. (C–D) POLAR two-hybrid assay assessing the interaction of CofA paralogs from Corynebacterium jeikeium K411 (C) or Mycobacterium tuberculosis H37Rv (D) with PBPs from these organisms. Results are displayed as in Figure 4. (C) (left) GFP fused to the transmembrane domain of C. jeikeium PBP1a (GFP-CjPBP1a-TM) with mScar-CjCofA prey. Reading frames used were JK1977 (residues 1–44) and JK0012, respectively. (right) GFP fused to the transmembrane domain of C. jeikeium PBP1b (GFP-CjPBP1b-TM) with mScar-CjCofA prey. Reading frames for PBP1b used was JK2069 (residue 185–235). Bar equals 3 µm. (D) POLAR two-hybrid assay results with Mtb proteins. (left) GFP fused to the transmembrane domain (residues 1–41) of Mtb PonA2 (GFP-MtbPonA2-TM) with mScar-MtbCofA-ΔN prey. Note PonA2 (Rv3682) is the Mtb ortholog of Cglu PBP1a. The CofA fusion used is deleted for the N-terminal extension (residues 1–190) found on the Mtb CofA sequence (Rv0007). (right) GFP fused to the transmembrane domain (residues 120–167) of Mtb PonA1 (GFP-MtbPonA1-TM) with mScar-MtbCofA-ΔN prey. Note PonA1 (Rv0050) is the Mtb ortholog of Cglu PBP1b. Bar equals 3 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54761/elife-54761-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) POLAR two-hybrid assay assessing the interaction of GFP-MtbPonA2-TM or GFP-MtbPonA1-TM baits with full-length mScar-MtbCofA prey. Results are displayed as in Figure 4.
 
 ## Discussion
 
@@ -83,35 +123,304 @@ In conclusion, we have identified a new cofactor required for the activity of an
 
 ## Materials and methods
 
-## Media, bacterial strains, and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α(λpir)</td>
+      <td>Gibco BRL</td>
+      <td>F– hsdR17 deoR recA1 endA1 phoA supE44 thi-1 gyrA96 relA1 Δ(lacZYA-argF)U169 ϕ80dlacZΔM15 ****add pir</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TB28</td>
+      <td>(Bernhardt and de Boer, 2003)</td>
+      <td>MG1655 ΔlacIZYA::frt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>MB001</td>
+      <td>(Baumgart et al., 2013)</td>
+      <td>ATCC 13032 ΔCGP1 (cg1507-cg1524) ΔCGP2 (cg1746-cg1752) ΔCGP3 (cg1890-cg2071)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>HL18</td>
+      <td>This work</td>
+      <td>MB001 ΔponA</td>
+      <td>Bernhardt lab (MB001/pHCL86, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>JS5</td>
+      <td>This work</td>
+      <td>MB001 Δcgp_3012-cgp_3020</td>
+      <td>Bernhardt lab (MB001/pJWS1, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>JS6</td>
+      <td>This work</td>
+      <td>MB001 Δcgp_3019</td>
+      <td>Bernhardt lab (MB001/pJWS2, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>JS7</td>
+      <td>This work</td>
+      <td>MB001 Δcgp_3018</td>
+      <td>Bernhardt lab (MB001/pJWS3, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>JS8</td>
+      <td>This work</td>
+      <td>MB001 Δcgp_0016</td>
+      <td>Bernhardt lab (MB001/pJWS4, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Corynebacterium glutamicum)</td>
+      <td>JS10</td>
+      <td>This work</td>
+      <td>MB001 Δcgp_0016 ΔponA</td>
+      <td>Bernhardt lab (JS8/pHCL86, see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS1</td>
+      <td>This work</td>
+      <td>KanR, pCRD206 derivative containing an insert covering upstream and downstream of cgp_3012-cgp_3020.</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS2</td>
+      <td>This work</td>
+      <td>KanR, pCRD206 derivative containing an insert covering upstream and downstream of cgp_3019.</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS3</td>
+      <td>This work</td>
+      <td>KanR, pCRD206 derivative containing an insert covering upstream and downstream of cgp_3018.</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS4</td>
+      <td>This work</td>
+      <td>KanR, pCRD206 derivative containing an insert covering upstream and downstream of cgp_0016 (cofA).</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS18</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-cgp_0016 (cofA)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS19</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-cgp_0336 (ponA)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS97</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-C. gluponA (E. coliTM)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS102</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-cgp_0336 (ponA) GT- (E97A)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS103</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-cgp_0336 (ponA) TP- (S393A)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS104</td>
+      <td>This work</td>
+      <td>KanR, pK-PIM derivative encoding Psod-riboE1-mscar-cgp_0336 (ponA) GT- and TP- (E97A and S393A)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHCL86</td>
+      <td>(Lim et al., 2019)</td>
+      <td>KanR, pCRD206 derivative containing an insert covering upstream and downstream of cgp_0336 (ponA).</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHCL149</td>
+      <td>(Lim and Bernhardt, 2019)</td>
+      <td>CmR, Para-popZ-rbs-H3H4-msfGFPN-tmponB.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHCL152</td>
+      <td>(Lim and Bernhardt, 2019)</td>
+      <td>TetR, lacI-Plac-mscar.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS29</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-msfGFP-ponA</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS41</td>
+      <td>This work</td>
+      <td>TetR, lacI-Plac-mscar-cgp_0016</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS70</td>
+      <td>This work</td>
+      <td>TetR, lacI-Plac-mscar-jk0012</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS73</td>
+      <td>This work</td>
+      <td>CmR Para-popZ-rbs-H3H4-msfGFP-ponATM</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS75</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-msfGFP-ponASwap</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS78</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-jk1977TM</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS80</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-msfGFP-ponB</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS81</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-ponA2TM</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS83</td>
+      <td>This work</td>
+      <td>TetR, lacI-Plac-mscar-rv0007FL</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS88</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-ponA1TM</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS90</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-jk2069TM</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS114</td>
+      <td>This work</td>
+      <td>TetR, lacI-Plac-mscar-rv0007ΔN</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJWS119</td>
+      <td>This work</td>
+      <td>CmR, Para-popZ-rbs-H3H4-C. gluponA (E. coliTM)</td>
+      <td>Bernhardt lab (see Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bocillin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>BOCILLIN FL Penicillin, Sodium Salt</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Media, bacterial strains, and plasmids
 
 All Cglu strains used in the reported experiments are derivatives of MB001 (Baumgart et al., 2013). Unless mentioned otherwise, strains were grown in Brain Heart Infusion (BHI) medium that was supplemented with Kanamycin; Kan 15 μg/mL, when necessary. CGXII media (Keilhauer et al., 1993) supplemented with 30 mg/L thiamine, 30 mg/L calcium pantothenate, 200 mg/L nicotinamide and 0.2% casamino acids was used where indicated in figure legends. All E. coli strains used in the reported POLAR two-hybrid experiments are derivatives of TB28 (Bernhardt and de Boer, 2004) and were grown in LB (1% tryptone, 0.5% yeast extract, 0.5% NaCl). Whenever necessary, antibiotics for E. coli cultures were used at 25 (kanamycin; Kan), 15 (chloramphenicol; Cm), or 5 (tetracycline; Tet) μg/mL. All strains and plasmids used are listed in key resources table. Details for plasmid constructions are provided in Supplementary file 2.
 
-## Transposon sequencing
+### Transposon sequencing
 
 The Cglu transposon library consisting of approximately 200,000 unique Tn5 transposon insertions was described previously (Lim et al., 2019). An inoculum of five million cells (25X coverage of the library) was grown for eleven generations to a final OD600 of 0.5 in the presence of drug and/or stress conditions at 30 degrees. The concentration of drug used was determined empirically to be one sufficient to provide selection while not forming a bottleneck. Typically, the concentration used caused a growth defect of roughly 8–50% relative to untreated cells over the ten generation growth period. Following growth, transposon sequencing libraries were prepared as previously described (Lim et al., 2019). Briefly, genomic DNA was extracted from strains using the Wizard Genomic DNA Purification Kit (Promega) and cleaned using Genomic DNA Clean and Concentrator (Zymo). Genomic DNA was fragmented using a Qsonica Q800RS Sonicator for 12 min (using a 15 s on and 15 s off pulse cycle) at 20% amplitude. Fragmented DNA was purified with 1.8 × volume Agentcourt AMPure XP beads (Beckman Coulter, Inc) and eluded into 30 μl water. Purified fragmented DNA was then treated with terminal deoxynucleotidyl transferase (TdT; Promega) in a 20 μl reaction with 1 μL 9.5 mM dCTP/0.5 mM ddCTP, 4 μl 5 × TdT reaction buffer and 0.5 μl rTdT at 37°C for 1 hr, then at 75°C for 20 min. TdT-treated DNA was purified with a Performa DTR Gel Filtration Cartridge (EdgeBio). Purified, TdT-treated DNA was used as a template in a PCR reaction to amplify the transposon junctions using the Easy-A Hi-Fi Cloning System (Agilent Technologies). The primers used were: PolyG-1st-1 5’-GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTGGGGGGGGGGGGGGGG-3’ and Tn5-1st-1 5’-ACCTGCAGGCATGCAAGCTTCAGGG-3’. A second nested PCR was next performed to further amplify the transposon junctions and append the sequencing barcode. The primers used were generic NEBNext Multiplex Oligos for Illumina (NEB) and: Tn5-2nd-1 5’ AATGATACGGCGACCACCGAGATCTACACTCTTTTCAGGGTTGAGATGTGTATAAGAGA-3’. The final product was run on a 2% agarose gel, and fragments ranging from 200 to 500 bp were gel purified using QIAquick Gel Extraction Kit (Qiagen). Libraries were sequenced at the Tufts University Core Facility on a HiSeq 2500 (Illumina) on a 1 × 50 single end run.
 
-## Transposon sequencing and data analysis
+### Transposon sequencing and data analysis
 
 Reads were trimmed using trimmomatic (Bolger et al., 2014) to remove adapter sequences, and mapped to the MB001 genome using bowtie 1.0.0 (Langmead et al., 2009). Only unique insertions with at least two reads were included in the downstream analysis. For each gene, we then compared the relative proportion of total transposon reads before and after growth in each condition. This allowed us to calculate the gene fitness for each gene in each condition using the equation: Fitness = ln(Nt2*210/Nt1)/ln((1-Nt2)*210/(1-Nt1)) for all non-essential Cglu genes [(van Opijnen and Camilli, 2013) and custom R scripts]. In order to reduce noise, we averaged transposon sequencing results from three replicates of our initial transposon library (called 1 g_A, 1 g_B and 1 g_C). We then employed hierarchical clustering (using heatmap.2 function from gplots package in R) to group genes behaving similarly into the heatmap shown in Figure 2a.
 
-## Strain construction
+### Strain construction
 
 For gene deletion in Cglu, we used the pCRD206 temperature-sensitive plasmid (Okibe et al., 2011). Briefly, the deletion allele with regions corresponding to approximately 750 bp upstream and downstream of the desired deletion were inserted into pCRD206. The resulting plasmid was transformed into the appropriate recipient strain. Transformants were selected and propagated on BHI agar supplemented with 15 μg/mL Kan at 25°C. To select for clones, a few fresh colonies were purified on a fresh BHI Kan plate, which was incubated at 30°C for 36 hr. One or two of the resulting KanR colonies were grown in BHI liquid medium at 30°C for several hours. The culture was then spread on a BHI agarose plate supplemented with 10% sucrose, which was then incubated at 30°C. The resulting colonies were replica patched on BHI and BHI Kan plates to identify Kan-sensitive colonies. The deletion allele was finally confirmed by colony PCR. Plasmid integration at the attB1 site was performed using derivatives of the pK-PIM vector (Oram et al., 2007). Plasmids containing the desired expression construct were introduced into the recipient by direct transformation.
 
-## Preparation of electrocompetent C. glutamicum
+### Preparation of electrocompetent C. glutamicum
 
 A stationary phase Cglu culture (10 ml) was diluted into 1 L BHIS (BHI + 91 g/L sorbitol) that was supplemented with 25 g glycine, 0.4 g isoniazid and 0.1% Tween 80 and incubated with shaking at 18°C. The culture was chilled on ice for 1 hr when the OD600 reached 0.5 (typically in 16–18 hr). Cells were then collected by centrifugation at 4000 x g for 20 min. The pellet was washed once with 500 ml chilled 10% glycerol and three additional times with 100 ml chilled 10% glycerol. Cell density was adjusted to an OD600 of 20 before use for electroporation.
 
-## Electroporation of DNA
+### Electroporation of DNA
 
 Approximately 100 ng of DNA was mixed with 100 µl of electrocompetent cells in a 1 mm electroporation cuvette (Genesee Scientific). The cells were then electroporated at 1.7kV using a MicroPulser electroporator (Bio-Rad). The cells were recovered in 1 ml BHIS, and then immediately heat-shocked for 6 mins at 46 degrees. The cells were then grown at 30 degrees for 1 hr before plating.
 
-## Bocillin labeling
+### Bocillin labeling
 
 Bocillin labeling of PBPs was performed as described previously (Cho et al., 2016) with the following modifications. After incubation with Bocillin washing the cell pellets 3X with PBS (137 mM NaCl, 2.7 mM KCl, 8 mM Na2HPO4, and 2 mM KH2PO4), the pellets were frozen at −80°C. Cell pellets were then thawed, resuspended in 1 mL of PBS and lysed using a FastPrep-24 (MPBio). Cells were lysed using matrix B in 2 mL tubes for 40 s at 6 m/s. Cells were centrifuged for 3 min at 7,000 rpm to remove the undisrupted cells and matrix and the supernatant was transferred to a fresh tube. Membranes were then pelleted by ultracentrifugation at 100,000 × g for 20 min at 4°C. The membrane pellets were then washed with 1X PBS and resuspended in 60 μL 1X PBS. Resuspended samples were mixed with 60 μL 2X Laemmli sample buffer (100 mM Tris-Cl (pH 6.8), 4% (w/v) SDS, 0.2% (w/v) bromophenol blue, 20% (v/v) glycerol, 5% (v/v) β-mercaptoethanol) and boiled for 10 min at 95°C. After measuring the total protein concentration of each sample with the NI-protein assay (G-Biosciences), an equivalent amount of total protein for each sample was then separated on a 10% SDS-PAGE gels. Bocillin-labeled proteins were then imaged using a Typhoon 9500 fluorescence imager (GE Healthcare) with excitation at 488 nm and emission at 530 nm.
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Growth conditions and staining procedures prior to microscopy are described in the figure legends. Prior to imaging, cells were immobilized on 2% agarose pads containing the appropriate growth medium, and covered with #1.5 coverslips. Images were cropped and adjusted using FIJI software.
 
@@ -119,6 +428,6 @@ Micrographs were obtained using a Nikon Ti inverted microscope outfitted with a 
 
 For the demographs, a custom-written MATLAB code, cells were arranged from top to bottom according to their cell lengths. Additionally, each cell was oriented such that the cell pole with the higher bait intensity are located on the right. The demograph of the prey signal was plotted using this same cell orientation.
 
-## Phylogenetic tree generation
+### Phylogenetic tree generation
 
 To generate the phylogenetic tree showing the distribution of DUF 3556 containing proteins in a diverse set of bacterial taxa, the amino acid sequences of CofA was submitted to the NCBI conserved domain search (Marchler-Bauer et al., 2017). NCBI reported 13104 proteins that contain the DUF 3556 (found using RPS BLAST), which were utilized for the phylogenetic tree. We used a complex and diverse set of 1773 bacterial taxa called ‘Representative Genomes’ that is available on NCBI (ftp://ftp.ncbi.nlm.nih.gov/blast/db/, Representative_Genomes.00.tar.gz). The phylogenetic tree was constructed using PhyloT (http://phylot.biobyte.de/) and BLASTp results were plotted against the tree. The tree was visualized and annotated using iToL (http://itol.embl.de/) (Letunic and Bork, 2016).

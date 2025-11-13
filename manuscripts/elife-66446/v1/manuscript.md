@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Understanding how neuronal circuits control nociceptive processing will advance the search for novel analgesics. We use functional imaging to demonstrate that lateral hypothalamic parvalbumin-positive (LH PV ) glutamatergic neurons respond to acute thermal stimuli and a persistent inflammatory irritant. Moreover, their chemogenetic modulation alters both pain-related behavioral adaptations and the unpleasantness of a noxious stimulus. In two models of persistent pain, optogenetic activation of LH PV neurons or their ventrolateral periaqueductal gray area (vlPAG) axonal projections attenuates nociception, and neuroanatomical tracing reveals that LH PV neurons preferentially target glutamatergic over GABAergic neurons in the vlPAG. By contrast, LH PV projections to the lateral habenula regulate aversion but not nociception. Finally, we find that LH PV activation evokes additive to synergistic antinociceptive interactions with morphine and restores morphine antinociception following the development of morphine tolerance. Our findings identify LH PV neurons as a lateral hypothalamic cell type involved in nociception and demonstrate their potential as a target for analgesia.
+Understanding how neuronal circuits control nociceptive processing will advance the search for novel analgesics. We use functional imaging to demonstrate that lateral hypothalamic parvalbumin-positive (LHPV) glutamatergic neurons respond to acute thermal stimuli and a persistent inflammatory irritant. Moreover, their chemogenetic modulation alters both pain-related behavioral adaptations and the unpleasantness of a noxious stimulus. In two models of persistent pain, optogenetic activation of LHPV neurons or their ventrolateral periaqueductal gray area (vlPAG) axonal projections attenuates nociception, and neuroanatomical tracing reveals that LHPV neurons preferentially target glutamatergic over GABAergic neurons in the vlPAG. By contrast, LHPV projections to the lateral habenula regulate aversion but not nociception. Finally, we find that LHPV activation evokes additive to synergistic antinociceptive interactions with morphine and restores morphine antinociception following the development of morphine tolerance. Our findings identify LHPV neurons as a lateral hypothalamic cell type involved in nociception and demonstrate their potential as a target for analgesia.
 
 ## Introduction
 
@@ -37,33 +37,69 @@ Using in vivo calcium imaging, we demonstrate that LHPV neurons exhibit time-loc
 
 ## Results
 
-## In vivo functional imaging of LHPV neurons
+### In vivo functional imaging of LHPV neurons
 
 LHPV neurons bidirectionally modulate responses to acute noxious stimuli (Siemian et al., 2019), but their activity in response to noxious stimuli in vivo has not yet been studied. To investigate this, we used the combination of in vivo endomicroscopy with a genetically encoded calcium indicator (GCaMP) to measure intensity fluctuations of calcium-sensitive fluorophores as an indicator of neuronal activity in LHPV cells during behavior. First, we expressed a green fluorescent calcium indicator in LHPV neurons by injecting a Cre recombinase-dependent viral vector driving the expression of GCaMP6s (Chen et al., 2013) in the LH of PvalbCre transgenic mice (Hippenmeyer et al., 2005). For detection of GCaMP6s fluorescence, we implanted a GRIN lens above the LHPV nucleus and interfaced the lens with a detachable miniscope (Figure 1a, b). In conjunction with established and open-source computational algorithms for data processing (Friedrich et al., 2017; Zhou et al., 2018; Pnevmatikakis and Giovannucci, 2017), we were able to visualize (Figure 1c) and extrapolate calcium (Ca2+) traces from individual LHPV neurons over periods of behavioral testing (Figure 1d).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic configuration for deep-brain functional imaging from LHPV neurons in freely moving mice. Permission to publish miniscope drawing granted by Doric Lenses Inc. (b) Top: representative GRIN lens placement for functional imaging of LHPV neurons. Scale bar: 500 µm. Bottom: depiction of GRIN lens above GCaMP6s-expressing LHPV neurons. Scale bar: 200 µm. (c) Top: sample background-subtracted frame from a recording session. Bottom: spatial footprints of extracted neural segments. Scale bar: 100 μm. (d) Representative filtered traces from individual LHPV neurons. Dotted lines represent contacts with hot plate. (e) Z-scored Ca2+ traces of LHPV neurons (87 neurons, three mice) averaged across exposures to a 51°C hot plate or a room temperature control surface. Dotted line represents contact with plate or control surface. (f) Clustering of 87 units by mean max amplitude and mean area under the curve (AUC) following hot plate surface contact. Dotted lines indicate the thresholds for inclusion into cluster 1 (mean max amplitude ≥ 1 and mean AUC ≥ 0) or cluster 2 (mean max amplitude ≤ 1 and mean AUC ≤ 0). (g) Neurons in cluster 1 (n = 35/87) displayed time-locked increases in activity in response to the hot plate as compared to the control room temperature surface. Two-way repeated-measures ANOVA on average Z-score per second revealed a significant time × stimulus interaction (F(29, 986) = 10.47, p<0.0001). Bonferroni multiple comparisons post-test significant between-stimulus differences are represented by the bolded red line. Red and gray shaded areas represent s.e.m. Tan shaded region represents average contact time with hot plate stimulus. (h) Neurons in cluster 2 (n = 16/87) displayed average decreases in activity in response to the hot plate as compared to the control room temperature surface. Two-way repeated-measures ANOVA on average Z-score per second revealed a significant time × stimulus interaction (F(29, 435) = 7.61, p<0.0001). Bonferroni multiple comparisons post-test significant between-stimulus differences are represented by the bolded red line. Red and gray shaded areas represent s.e.m. Tan shaded region represents average contact time with hot plate stimulus. (i) Z-scored Ca2+ traces of LHPV neurons (53 neurons, three mice) averaged across exposures to a 4°C cold plate or a room temperature control surface. Dotted line represents contact with plate or control surface. (j) Clustering of 53 units by mean max amplitude and mean AUC following cold plate surface contact. Dotted lines indicate the thresholds for inclusion into cluster 1 (mean max amplitude ≥ 1 and mean AUC ≥ 0) or cluster 2 (mean max amplitude ≤ 1 and mean AUC ≤ 0). (k) Neurons in cluster 1 (n = 15/53) displayed time-locked increases in activity in response to the cold plate as compared to the control room temperature surface. Two-way repeated-measures ANOVA on average Z-score per second revealed a significant time × stimulus interaction (F(29, 406) = 5.94, p<0.0001). Bonferroni multiple comparisons post-test significant between-stimulus differences are represented by the bolded blue line. Blue and gray shaded areas represent s.e.m. Tan shaded region represents average contact time with cold plate stimulus. (l) Neurons in cluster 2 (n = 11/53, top) displayed average decreases in activity in response to the hot plate as compared to the control room temperature surface. Two-way repeated-measures ANOVA on average Z-score per second revealed a significant time × stimulus interaction (F(29, 290) = 2.05, p=0.0016). Bonferroni multiple comparisons post-test significant between-stimulus differences are represented by the bolded blue line. Blue and gray shaded areas represent s.e.m. Tan shaded region represents average contact time with cold plate stimulus. (m) Illustration of fluorescent trace deconvolution to estimated periods of neuronal firing. (n) Average deconvolved events per 5 min period following no injection (n = 46 neurons) or formalin injection in the hindpaw ipsilateral (n = 67 neurons) or contralateral (n = 51 neurons) to the brain hemisphere implanted with a GRIN lens. (o–q) Formalin induced fluctuations in LHPV neuronal activity in each phase of the formalin test. Mann–Whitney U-tests with Holm–Sidak correction for multiple comparisons revealed significantly higher Ca2+ event frequency following contralateral formalin injection in the (o) acute (p=0.048), (p) interphase (p=0.0078), and (q) inflammatory phases (p=0.048) relative to no injection, whereas no significant differences were found between ipsilateral formalin and no injection (acute p=0.80, interphase p=0.18, inflammatory p=0.86). Lines and error bars indicate mean ±95% CI. See also Figure 1—figure supplements 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Hot plate cluster 1 neuronal responses decoded hot from neutral stimulus trials above chance levels (extra sum-of-squares F-test; F(1, 14) = 2990, p<0.0001). (b) Hot plate cluster 2 neuronal responses decoded hot from neutral stimulus trials above chance levels (extra sum-of-squares F-test; F(1, 14) = 319.8, p<0.0001). (c) Cold plate cluster 1 neuronal responses decoded cold from neutral stimulus trials above chance levels (extra sum-of-squares F-test; F(1, 12) = 136.7, p<0.0001). (d) Cold plate cluster 2 neuronal responses did not decode cold from neutral stimulus trials above chance levels (extra sum-of-squares F-test; F(1, 18) = 0.146, p=0.71).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Z-scored Ca2+ traces of LHPV neurons from the hot plate test in Figure 1e and (b) the cold plate test in Figure 1i, broken down by individual mouse and sorted by post-stimulus response. Each row represents data from one neuron. (c) Proportions of neurons contributed by individual mice to clusters 1 and 2 in the hot plate and cold plate tests. (d) Results of cell registration across hot plate and cold plate tests, broken down by individual mouse. 33 total neurons were detected in both sessions. The rows of each heatmap represent the same neuron in both tests. Black arrows indicate cells that remained in the same cluster designation between tests; gray arrows indicate cells that switched cluster designation. (e) Correlation of the AUC of Z-scored Ca2+ traces to the hot or cold stimuli of the 33 neurons detected in both hot plate and cold plate sessions. No significant correlation was observed (R2 = 0.1, p=0.074). (f) Results of cell registration across hot plate, cold plate, ipsilateral formalin, contralateral formalin, and ‘no injection’ tests. Of 320 total recorded neurons, only three neurons were observed in more than three test sessions.
 
 We first monitored Ca2+ dynamics in LHPV neurons (n = 87 neurons, three mice) in response to an acute thermal hot plate stimulus and clustered the neurons according to their response properties (Figure 1d−f). In a subset of the recorded LHPV neurons (‘Cluster 1,’ n = 35/87 neurons), we observed time-locked increases in fluorescence in response to the 51°C hot plate relative to a room-temperature innocuous stimulus of similar visual and tactile properties, suggesting that this subpopulation of LHPV neurons becomes active in response to a thermal stimulus (Figure 1g). Another subset of neurons (‘Cluster 2,’ n = 16/87 neurons) exhibited an average decrease in activity in response to the hot plate relative to control stimulus (Figure 1h). We observed a similar profile of time-locked responses to a 4°C cold stimulus relative to a control innocuous stimulus (Figure 1i, j). One subset of the recorded neurons (‘Cluster 1,’ n = 15/53 neurons) was significantly activated in response to the cold plate relative to control stimulus (Figure 1k), while another subset (‘Cluster 2,’ n = 11/53 neurons) displayed significantly lower activity following the cold plate stimulus as compared to the control stimulus (Figure 1l). Within each cluster, we trained a support vector machine (SVM) classifier using averaged 10 s traces following contact with the noxious (hot/cold) or neutral surfaces and tested whether it could predict the stimulus type when given unlabeled traces. Remarkably, neuronal activity from each cluster except cluster 2 from the cold plate test could decode the correct stimulus type above chance levels (Figure 1—figure supplement 1). Cluster 1 and 2 neurons were observed in each of the mice tested. Thus, we registered cells across the hot plate and cold plate sessions to examine whether LHPV neurons exhibited consistent response profiles across tests (Sheintuch et al., 2017). Of the 33 total neurons that were detected in both sessions, only 6 remained in the same cluster, and the area under the curves of the fluorescent traces of all 33 neurons did not significantly correlate between sessions, suggesting that the responses of LHPV neurons were generally variable across testing (Figure 1—figure supplement 2). Together, these results demonstrate that LHPV neuronal activity is modulated in response to acute thermal stimuli.
 
 We next tracked LHPV neuronal activity over a longer timescale in response to a hindpaw injection of the chemical irritant formalin. Formalin induces discrete acute (0–5 min) and inflammatory (15–45 min) phases of pain behavior, separated by a brief interphase period (Alhadeff et al., 2018; Dubuisson and Dennis, 1977), allowing us to monitor changes in neuronal activity during each phase. Relative to recording sessions without formalin injection, we observed that the frequency of deconvolved Ca2+ transients (Figure 1m) appeared to be generally higher following formalin injections in the hindpaw contralateral to the brain hemisphere in which the GRIN lens was implanted (Figure 1n), and statistical analyses of Ca2+ event frequency within each period supported this observation (Figure 1o−q). Cell registration revealed that only three neurons were detected in more than three of these imaging sessions, thus we could not examine whether a neuron being in cluster 1 or 2 in the hot plate and cold plate tests impacted its response properties in the formalin tests (Figure 1—figure supplement 2). Together, these findings indicate that LHPV neurons display changes in spontaneous activity in response to several stimulus modalities, including both acute thermal stimuli and ongoing chemical inflammation.
 
-## LHPV neurons regulate sensory and affective aspects of pain over long timescales
+### LHPV neurons regulate sensory and affective aspects of pain over long timescales
 
 We next examined whether manipulating LHPV neuronal activity can alter noxious stimulation-suppressed behavior and negative affect, which may be better indicators of clinical utility than stimulus-evoked behaviors (e.g., reflexive withdrawal to acute thermal stimuli). To investigate this, we targeted these neurons for chemogenetic manipulations by bilaterally injecting Cre recombinase-dependent viral vectors driving the expression of either the excitatory designer receptor hM3D, the inhibitory designer receptor hM4D, or the fluorophore mCherry as control into the LH of PvalbCre transgenic mice (Figure 2a). Activation of the designer receptors via administration of the ligand clozapine-N-oxide (CNO, 1 mg/kg, i.p.) evoked significant increases and decreases in PWLHP in LHPV:hM3D and LHPV:hM4D mice, respectively, as compared to mCherry controls, with effects detectable between 1 and 18 hr post-injection (Figure 2b). Thus, chemogenetic manipulations of these neurons alter nociception over a long timescale.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig2-v1.jpg)
 
-**Figure 2.:** PV neurons regulates pain-suppressed behavior and alters pain-associated negative affect.(a) Representative images of hM3D, hM4D, or mCherry expression in LHPV neurons. Scale bars: 500 μm, widefield; 50 μm, zoom. (b) Chemogenetic activation and inhibition of LHPV neurons evoked long-lasting significant increases and decreases in thermal pain thresholds, respectively (n = 11 mice per group; two-way mixed-model ANOVA group × time interaction, F(16, 240)=14.15, p<0.0001). Significant differences from LHPV:mCherry mice were determined by Bonferroni multiple comparisons tests and are represented graphically, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (c) Schematic for pain-suppressed nesting assay. (d) Chemogenetic activation of LHPV neurons prevented the reductions in nesting behavior induced by i.p. injection of 0.6% acetic acid (10 ml/kg). Two-way mixed-model ANOVA revealed a significant group × test interaction (n = 11 mice per group; F(4, 60) = 4.17, p=0.0048). Bonferroni multiple comparisons post-tests revealed no differences in normal nesting behavior from clozapine-N-oxide (CNO) injections (p=0.92), and that acetic acid injection decreased nesting behavior across groups when administered without CNO (p<0.0001). Administration of CNO before acetic acid increased nesting behavior in LHPV:hM3D mice relative to LHPV:mCherry control mice (p=0.008; Cohen’s d = 1.09) and tests without CNO (p=0.0002). (e) Schematic of the formalin place conditioning experiment. (f) Chemogenetic modulation of LHPV neurons altered the effects of formalin on place conditioning. Two-way mixed-model ANOVA revealed a significant group × test interaction (n = 11 mice per group; F(2,28) = 3.89, p=0.032). Bonferroni multiple comparisons post-tests showed significant shift in chamber preference in LHPV:mCherry (p=0.0001) and LHPV:hM4D mice (p<0.0001) but not LHPV:hM3D mice (p=0.094). (g) Time spent paw licking was altered by LHPV neuronal modulation (n = 10 LHPV:mCherry, 7 LHPV:hM3D, and 10 LHPV:hM4D mice; two-way mixed-model ANOVA group × time interaction, F(22, 264) = 1.99, p=0.0064). (h) Acute and inflammatory phase paw licking were differentially altered by LHPV neuronal activation and inhibition (n listed above; two-way mixed-model ANOVA group × phase interaction, F(2, 24) = 4.33, p=0.025). Activation of LHPV neurons in LHPV:hM3D mice decreased acute (p=0.0004, Cohen’s d = 2.07) but not inflammatory phase paw licking (p=0.50), whereas LHPV neuronal inhibition in LHPV:hM4D mice increased inflammatory (p=0.0049, Cohen’s d = 1.29) but not acute phase paw licking (p>0.99).
+**Figure 2.:** (a) Representative images of hM3D, hM4D, or mCherry expression in LHPV neurons. Scale bars: 500 μm, widefield; 50 μm, zoom. (b) Chemogenetic activation and inhibition of LHPV neurons evoked long-lasting significant increases and decreases in thermal pain thresholds, respectively (n = 11 mice per group; two-way mixed-model ANOVA group × time interaction, F(16, 240)=14.15, p<0.0001). Significant differences from LHPV:mCherry mice were determined by Bonferroni multiple comparisons tests and are represented graphically, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (c) Schematic for pain-suppressed nesting assay. (d) Chemogenetic activation of LHPV neurons prevented the reductions in nesting behavior induced by i.p. injection of 0.6% acetic acid (10 ml/kg). Two-way mixed-model ANOVA revealed a significant group × test interaction (n = 11 mice per group; F(4, 60) = 4.17, p=0.0048). Bonferroni multiple comparisons post-tests revealed no differences in normal nesting behavior from clozapine-N-oxide (CNO) injections (p=0.92), and that acetic acid injection decreased nesting behavior across groups when administered without CNO (p<0.0001). Administration of CNO before acetic acid increased nesting behavior in LHPV:hM3D mice relative to LHPV:mCherry control mice (p=0.008; Cohen’s d = 1.09) and tests without CNO (p=0.0002). (e) Schematic of the formalin place conditioning experiment. (f) Chemogenetic modulation of LHPV neurons altered the effects of formalin on place conditioning. Two-way mixed-model ANOVA revealed a significant group × test interaction (n = 11 mice per group; F(2,28) = 3.89, p=0.032). Bonferroni multiple comparisons post-tests showed significant shift in chamber preference in LHPV:mCherry (p=0.0001) and LHPV:hM4D mice (p<0.0001) but not LHPV:hM3D mice (p=0.094). (g) Time spent paw licking was altered by LHPV neuronal modulation (n = 10 LHPV:mCherry, 7 LHPV:hM3D, and 10 LHPV:hM4D mice; two-way mixed-model ANOVA group × time interaction, F(22, 264) = 1.99, p=0.0064). (h) Acute and inflammatory phase paw licking were differentially altered by LHPV neuronal activation and inhibition (n listed above; two-way mixed-model ANOVA group × phase interaction, F(2, 24) = 4.33, p=0.025). Activation of LHPV neurons in LHPV:hM3D mice decreased acute (p=0.0004, Cohen’s d = 2.07) but not inflammatory phase paw licking (p=0.50), whereas LHPV neuronal inhibition in LHPV:hM4D mice increased inflammatory (p=0.0049, Cohen’s d = 1.29) but not acute phase paw licking (p>0.99).
 
 Pain in basic research is traditionally assessed by measuring ‘pain-stimulated behavior’ or the elicited reactions to noxious stimuli (e.g., paw withdrawal). However, clinical pain disorders often impact quality of life more profoundly by deterring actions normally performed when healthy (Cleeland and Ryan, 1994; Dworkin et al., 2005). Therefore, we next examined the effects of LHPV neuronal activity in a model of ‘pain-suppressed behavior,’ which measures a decrease in behavioral output following a noxious stimulus (Negus et al., 2006). Healthy mice normally collect nestlet pieces distributed throughout the home cage within 30 min and begin nest building, a natural behavior (Negus et al., 2015; Diester et al., 2021a; Diester et al., 2021b; Figure 2c); this was not affected by CNO administration across groups (Figure 2d, ‘CNO + saline’). However, administration of acetic acid (0.6%; i.p.) significantly decreases nesting behavior; this was apparent in all three groups without LHPV manipulations (Figure 2d, ‘Vehicle + acid’). Interestingly, activation of LHPV neurons in LHPV:hM3D mice prior to acetic acid injection prevented the reductions in nesting behavior (Figure 2d, ‘CNO + acid’) as compared to tests without CNO and to LHPV:Ctrl mice. In contrast, no changes were observed in LHPV:hM4D mice. Thus, LHPV activation not only decreases noxious stimulus-evoked behavior but also restores behaviors normally suppressed by noxious stimulation.
 
 Pain results not only in overt behavioral changes but also negative affect, as made evident by the high comorbidity between pain and mood disorders (Asmundson and Katz, 2009; Elman et al., 2013). We sought to determine the role of LHPV neuronal activity on the affective, or emotional, component of a painful experience. For this, we used a place conditioning paradigm in which mice avoid a context paired with an aversive event (Johansen et al., 2001; Alhadeff et al., 2018; Figure 2e). After assessment of initial side preference of a two-chamber apparatus, we passively conditioned the mice by administering CNO (i.p.) with intra-plantar formalin to induce inflammation in the initially preferred side and CNO with intra-plantar saline in the initially less-preferred side. Mice were conditioned twice in each context on alternating days and then were given free access to both chambers during a post-test to assess changes in place preference. As expected, LHPV:Ctrl mice lost preference to the formalin-paired context as compared to pre-formalin preference levels (Figure 2f). However, activation of LHPV neurons during conditioning attenuated this loss of place preference, whereas inhibition of LHPV neurons during conditioning permitted the loss of place preference (Figure 2f). Furthermore, the time spent paw licking in these sessions was bidirectionally affected by chemogenetic LHPV neuronal activation or inhibition (Figure 2g, h). LHPV neuronal activation decreased paw licking during the acute but not inflammatory phase, whereas inhibition increased paw licking in the inflammatory but not acute phase. Together, these results support a role for LHPV neurons both in pain behaviors and associated negative affect.
 
-## Optogenetic activation of LHPV neurons attenuates persistent inflammatory pain-associated behaviors
+### Optogenetic activation of LHPV neurons attenuates persistent inflammatory pain-associated behaviors
 
 Since LHPV neurons ameliorated moderately long-lasting behavioral effects of pain, we next sought to determine whether they could also alter nociceptive thresholds in traditional models of persistent pain behavior. We targeted LHPV neurons for optogenetic manipulations with bilateral injections of a Cre recombinase-dependent viral vector driving the expression of either channelrhodopsin (ChR2:tdTomato; light-sensitive neuronal activator) or GFP (control fluorophore) in the LH of PvalbCre transgenic mice and implanted optical fibers bilaterally above these neurons (Figure 3a). Activation of LHPV neurons in naive mice significantly increased paw withdrawal latency in response to a 51°C hot plate (PWLHP, Figure 3b). However, activating these neurons did not change paw withdrawal threshold in the von Frey filament test (PWTVF, Figure 3c), suggesting that these neurons regulate acute thermal but not mechanical nociception in healthy mice. Since LHPV neurons are glutamatergic (Siemian et al., 2019; Kisner et al., 2018) and activation of LH neurons expressing the vesicular glutamate transporter 2 (SLC17A6; LHVGLUT2) is aversive (Jennings et al., 2013), we also assessed the effects of LHPV neuronal activation in a real-time place preference (RTPP) assay in which photostimulation was paired with one-half of the behavioral arena. Activation of LHPV neurons was mildly aversive as mice spent significantly less time on the photostimulation-paired side (Figure 3d), suggesting that these neurons may play a role in reward- and aversion-like behaviors. Next, we injected complete Freund’s adjuvant (CFA), a well-known inflammatory reagent (Alhadeff et al., 2018; Fehrenbacher et al., 2012; Nagakura et al., 2003), into the right hindpaw to cause inflammation and induce persistent hypersensitivity. We observed a significant decrease in nociceptive thresholds for both thermal and mechanical stimuli following these CFA injections (Figure 3—figure supplement 1a, b). Interestingly, activation of LHPV neurons after CFA evoked significant increases in both PWLHP and PWTVF (Figure 3e, f). Additionally, activation of LHPV neurons no longer triggered place avoidance (Figure 3g). Furthermore, we observed that the magnitude of the PWLHP response depends on the photostimulus frequency (Figure 3—figure supplement 1c) and that LHPV neuron-mediated antinociception was not strictly photostimulus-bound (Figure 3—figure supplement 1d) as the antinociceptive effects persisted for several minutes after photostimulation ceased. Together, these results indicate that LHPV neuronal activation attenuates hypersensitivity to both thermal and mechanical stimuli following the onset of inflammation.
 
-## LHPV neurons target excitatory circuits within the vlPAG to regulate pain behaviors
+![Figure 3.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative images of ChR2 or GFP expression in LHPV neurons and optical fiber implants above the lateral hypothalamus (LH). Scale bars: 500 μm, widefield; 50 μm, zoom. (b) Optogenetic activation of LHPV neurons in naive mice triggers thermal antinociception (n = 9 ChR2 mice and 10 Ctrl mice). Two-way mixed-model ANOVA revealed a significant group × epoch interaction (F(2, 34) = 14.01, p<0.0001), and Bonferroni multiple comparisons post-test showed that LHPV:ChR2 mice had significantly higher PWLHP during the photostimulation epoch than LHPV:Ctrl mice, p<0.0001; Cohen’s d = 2.22. (c) Optogenetic activation of LHPV neurons in naive mice does not affect mechanical nociception (n = 9 ChR2 mice and 10 Ctrl mice). Two-way mixed-model ANOVA interaction, p=0.87. (d) Naive LHPV:ChR2 mice displayed significant real-time place avoidance to photostimulation relative to controls (n = 9 ChR2 mice and 10 Ctrl mice, t(17) = 3.15, p=0.0058, Cohen’s d = 1.43). (e) Optogenetic activation of LHPV neurons in mice 5 days following complete Freund’s adjuvant (CFA) injection triggers increases in PWLHP (n = 9 ChR2 mice and 10 Ctrl mice). Two-way mixed-model ANOVA revealed a significant group × epoch interaction (F(2, 34) = 15.05, p<0.0001), and Bonferroni multiple comparisons post-test showed that LHPV:ChR2 mice had significantly higher PWLHP during the photostimulation epoch than LHPV:Ctrl mice (p=0.0001; Cohen’s d = 2.08). (f) Optogenetic activation of LHPV neurons in mice 6 days following CFA injection triggers increases in PWTVF (n = 9 ChR2 mice and 10 Ctrl mice). Two-way mixed-model ANOVA revealed a significant group × epoch interaction (F(2, 34) = 11.28, p=0.0002), and Bonferroni multiple comparisons post-test showed that LHPV:ChR2 mice had significantly higher PWLHP during the photostimulation epoch than LHPV:Ctrl mice (p=0.003; Cohen’s d = 1.11). (g) LHPV:ChR2 mice did not display significant real-time place avoidance to photostimulation relative to controls 7 days post-CFA, p=0.75 (n = 9 ChR2 mice and 10 Ctrl mice). See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) CFA injection significantly decreased thermal nociception thresholds by day 5 post-administration (n = 19 mice; t(18) = 4.71, p=0.0002) and (b) mechanical nociception thresholds by day 6 post-administration (t(18) = 11.43, p<0.0001). (c) LHPV-mediated thermal antinociception post-CFA injection was dependent on the photostimulus frequency (n = 9 ChR2 and 10 Ctrl mice); two-way mixed-model ANOVA group × epoch interaction (F(7, 119) = 10.92, p<0.0001). Bonferroni multiple comparisons post-tests revealed significant between-group differences at 50 and 100 Hz (p<0.0001). Further, in LHPV:ChR2 mice 50 Hz photostimulation evoked greater antinociception than the other frequencies tested (50 vs. 100 Hz, p=0.0032, 50 vs. 20 Hz and 50 vs. 5 Hz, p<0.0001). (d) LHPV activation-induced thermal antinociception post-CFA injection was not strictly photostimulus-bound. 20 min photostimulation (50 Hz, 50 pulses delivered every other second) evoked antinociception that persisted after photostimulation ceased. Repeated-measures one-way ANOVA (n = 9 ChR2 mice; F(4, 32) = 7.074, p=0.0003). Bonferroni’s multiple comparisons post-tests showed significantly increased PWLHP from baseline during photostimulation (p=0.004) and 5 min post-photostimulation (p=0.0451).
+
+### LHPV neurons target excitatory circuits within the vlPAG to regulate pain behaviors
 
 LHPV neurons send dense projections to the vlPAG (Kisner et al., 2018; Celio et al., 2013), where they form functional excitatory synapses. We next examined whether this LHPV→vlPAG pathway also regulates nociception in models of persistent pain behavior. To specifically target and manipulate the LHPV→vlPAG pathway, we bilaterally injected a Cre recombinase-dependent viral vector driving the expression of channelrhodopsin (ChR2:tdTomato), the light-sensitive neuronal silencer archaerhodopsin (ArchT:GFP), or the fluorophore GFP (control) into the LH of PvalbCre mice and implanted optical fibers bilaterally above the vlPAG to specifically manipulate the axonal projections of LHPV neurons (Figure 4a). In naive mice, activation of the LHPV→vlPAG pathway evoked increases in PWLHP but not PWTVF, similar to somatic manipulations (Figure 4b, c), whereas inhibition of the pathway decreased both nociceptive thresholds (Figure 4d, e). However, in contrast to somatic manipulations, no effects were observed for either LHPV→vlPAG activation or inhibition in the RTPP test (Figure 4f), suggesting that there were no changes in the overall affective state of the mice that may have contributed to these bidirectional effects on nociception. In healthy mice, we also observed that the magnitude of the PWLHP response during activation of the LHPV→vlPAG pathway depends on photostimulus frequency. Moreover, these responses were not affected by systemic administration of the cannabinoid receptor 1 (CNR1 or CB1) antagonist/inverse agonist rimonabant (3 mg/kg, i.p.; Figure 4g) despite the PAG being an important site for cannabinoid-mediated antinociception (Esmaeili et al., 2017; Finn et al., 2003; Maione et al., 2006). These results suggest that blocking CB1 receptors does not affect antinociception driven by LHPV→vlPAG circuitry.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig4-v1.jpg)
+
+**Figure 4.:** (a) Representative images of ChR2, ArchT, or GFP expression in LHPV neurons and optical fiber implants above the ventrolateral periaqueductal gray area (vlPAG). Inset shows axons from LHPV neurons under the optical fiber. Scale bars: 500 μm, widefield; 50 μm, zoom; 100 μm, inset. (b) In naive mice, optogenetic activation of LHPV axonal projections in the vlPAG evokes thermal antinociception (n = 7 mice per group; two-way mixed-model ANOVA group × epoch interaction, F(2, 24) = 25.19, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation epoch, p<0.0001; Cohen’s d = 2.85) but not (c) mechanical antinociception (p=0.38). (d) In naive mice, optogenetic inhibition of LHPV axonal projections in the vlPAG decreases both thermal (n = 7 mice per group; two-way mixed-model ANOVA group × epoch interaction, F(2, 24) = 11.96, p=0.0002, Bonferroni multiple comparisons post-test during photostimulation epoch, p<0.0001; Cohen’s d = 2.13) and (e) mechanical thresholds (two-way mixed-model ANOVA group × epoch interaction, F(2, 24) = 12.10, p<0.0002, Bonferroni multiple comparisons post-test during photostimulation epoch, p=0.038; Cohen’s d = 1.36). (f) Optogenetic activation or inhibition of the LHPV→vlPAG pathway did not affect real-time place preference behavior in naive mice (n = 7 mice per group; one-way ANOVA, F(2, 18) = 0.28, p=0.76). (g) LHPV→vlPAG activation-induced antinociception is dependent on photostimulus frequency but is not attenuated by the CB1 receptor antagonist rimonabant (3 mg/kg, i.p.; ‘3 RIM’). Two-way mixed-model ANOVA revealed a significant group × epoch interaction (n = 6 ChR2 mice and 7 Ctrl mice; F(7, 77) = 14.27, p<0.0001). Bonferroni multiple comparisons post-tests revealed between-group differences during the ‘50 Hz’ and ‘50 Hz + 3 RIM’ epochs (p<0.0001), but no within-group differences between these epochs (p>0.99). (h) Optogenetic activation of the LHPV→vlPAG pathway evokes increases in PWLHP on day 5 post-spared nerve injury (SNI) (n = 7 mice per group; two-way mixed-model ANOVA group × epoch interaction, F(2, 24) = 12.86, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation epoch, p=0.0002; Cohen’s d = 2.04) and (i) PWTVF on day 6 post-SNI (two-way mixed-model ANOVA group × epoch interaction, F(2, 24) = 5.24, p<0.013, Bonferroni multiple comparisons post-test during photostimulation epoch, p=0.019; Cohen’s d = 1.03). (j) On day 7 post-SNI, optogenetic activation of the LHPV→vlPAG pathway did not affect real-time place preference behavior (n = 7 mice per group; p=0.39). (k) In a new cohort of naive mice, optogenetic activation of the LHPV→vlPAG pathway evoked thermal (n = 10 mice per group; two-way mixed-model ANOVA group × epoch interaction, F(2, 36) = 23.64, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation epoch, p=0.0009) but not (l) mechanical antinociception (p=0.31). (m) Optogenetic activation of the LHPV→vlPAG pathway evokes increases in PWLHP on day 5 post-complete Freund’s adjuvant (CFA) injection (n = 10 mice per group; two-way mixed-model ANOVA group × epoch interaction, F(2, 36) = 19.65, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation epoch, p<0.0001; Cohen’s d = 3.66) and (n) PWTVF on day 6 post-SNI (two-way mixed-model ANOVA group × epoch interaction, F(2, 36) = 24.63, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation epoch, p<0.0001; Cohen’s d = 1.88). (o) On day 7 post-CFA injection, optogenetic activation of the LHPV→vlPAG pathway did not affect real-time place preference behavior (n = 9 mice per group; p=0.59). See also Figure 4—figure supplements 1–3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) SNI significantly decreased thermal nociception thresholds by day 5 post-surgery (n = 7 mice per group; t(13) = 9.70, p<0.0001) and (b) mechanical nociception thresholds by day 6 post-surgery (t(13) = 13.09, p<0.0001). (c) Activation of the LHPV→vlPAG pathway evoked thermal antinociception on day 25 post-SNI (n = 7 ChR2 mice and 6 Ctrl mice; two-way mixed-model ANOVA group × epoch interaction, F(2, 22) = 12.26, p=0.0003, Bonferroni multiple comparisons post-test during photostimulation, p=0.007). (d) Activation of the LHPV→vlPAG pathway evoked mechanical antinociception on day 26 post-SNI (n = 7 mice per group; group × epoch interaction, F(2, 24) = 17.21, p<0.0001, Bonferroni multiple comparisons test during photostimulation, p=0.0001).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) CFA injection significantly decreased thermal nociception thresholds by day 5 post-administration (n = 20 mice; t(19) = 7.24, p<0.0001) and (b) mechanical nociception thresholds by day 6 post-administration (t(19) = 16.06, p<0.0001). (c) LHPV→vlPAG pathway-mediated thermal antinociception post-CFA injection was photostimulus frequency-dependent (n = 10 ChR2 mice and 10 Ctrl mice; two-way mixed-model ANOVA group × epoch interaction, F(7, 126) = 17.08, p<0.0001). Bonferroni multiple comparisons post-tests revealed significant between-group differences at 50 Hz (p<0.0001). (d) LHPV→vlPAG pathway activation-induced thermal antinociception post-CFA injection was not strictly photostimulus-bound. 20 min photostimulation (50 Hz, 50 pulses delivered every other second) evoked antinociception that persisted after photostimulation ceased (n = 10 ChR2 mice; repeated-measures one-way ANOVA, F(4, 36) = 36.13, p<0.0001). Bonferroni’s multiple comparisons post-tests showed significantly increased PWLHP from baseline during photostimulation (p<0.0001), 5 min post-photostimulation (p<0.0001), and 10 min post-photostimulation (p=0.01).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Representative images of ChR2 or GFP expression in LHLEPR neurons and optical fiber implants above the vlPAG. Inset shows axons from LHPV neurons under the optical fiber. Scale bars: 500 μm, widefield; 100 μm, inset. (b) Photostimulation of LHLEPR axonal projections in the vlPAG evoked decreases in thermal nociceptive thresholds at 50 Hz photostimulation (n = 7 ChR2 mice and 6 Ctrl mice; two-way mixed-model ANOVA group × epoch interaction, F(2, 22) = 15.68, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation, p<0.0002), and (c) 20 Hz photostimulation (group × epoch interaction, F(2, 22) = 12.64, p=0.0012, Bonferroni multiple comparisons post-test during photostimulation, p=0.005) but not at (d) 5 Hz photostimulation (p=0.89). (e) Photostimulation of LHLEPR axonal projections in the vlPAG evoked decreases in mechanical nociceptive thresholds at 20 Hz photostimulation (n = 7 ChR2 mice and 6 Ctrl mice; group × epoch interaction, F(2, 22) = 42.31, p<0.0001, Bonferroni multiple comparisons post-test during photostimulation, p=0.018). (f) Optogenetic activation (20 Hz) of the LHLEPR→vlPAG pathway was rewarding as it evoked significant real-time place preference (n = 7 ChR2 mice and 6 Ctrl mice; p=0.025).
 
 We next investigated the effects of activating the LHPV→vlPAG pathway in the spared nerve injury (SNI) model of neuropathy. Five days post-SNI, we observed significant decreases in thermal and mechanical thresholds (Figure 4—figure supplement 1a, b). Photostimulation of the LHPV→vlPAG pathway evoked increases in both PWLHP and PWTVF (Figure 4h, i), and this remained during testing 25 days post-SNI (Figure 4—figure supplement 1c, d). Furthermore, no effects of LHPV→vlPAG pathway activation were observed in the RTPP test post-SNI (Figure 4j). Due to the modest effects of LHPV→vlPAG activation on mechanical thresholds, we predicted that this pathway may be more effective during inflammatory than neuropathic conditions. Therefore, in a new cohort of mice, we activated the LHPV→vlPAG pathway before (Figure 4k, l) and after (Figure 4m, n) the induction of inflammation by CFA (Figure 4—figure supplement 2a, b) and observed robust effects on both thermal and mechanical nociceptive thresholds. Similar to the SNI cohort, LHPV→vlPAG activation post-CFA did not affect RTPP, suggesting that there were no effects on reward- or aversion-related behaviors (Figure 4o). Furthermore, LHPV→vlPAG pathway-mediated antinociception post-CFA was dependent on photostimulus frequency but not strictly photostimulus-bound (Figure 4—figure supplement 2c, d). Together, these results show that the LHPV→vlPAG pathway regulates nociception in at least two models of persistent pain behavior and that its activation is more effective in attenuating inflammatory than neuropathic hypersensitivity.
 
@@ -71,21 +107,29 @@ Within the vlPAG, GABAergic and glutamatergic neurons play opposing roles in reg
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig5-v1.jpg)
 
-**Figure 5.:** PV neurons preferentially target glutamatergic neurons in the ventrolateral periaqueductal gray area (vlPAG).(a) Schematic for modified rabies viral tracing strategy. (b) Images from Slc17a6 (top row) and CreSlc32a1 (bottom row) brain slices showing the overlap of RVdG-mCherry(EnvA) with LHCrePV neurons. Scale bars: 20 μm. (c) Proportion of LHPV neurons that express or do not express RVdG-mCherry(EnvA) in Slc17a6 or CreSlc32a1 mice. LHCrePV neurons were connected to a greater proportion of vlPAGVGLUT2 neurons than vlPAGVGAT neurons (chi-square = 11.18, p=0.0008).
+**Figure 5.:** (a) Schematic for modified rabies viral tracing strategy. (b) Images from Slc17a6Cre (top row) and Slc32a1Cre (bottom row) brain slices showing the overlap of RVdG-mCherry(EnvA) with LHPV neurons. Scale bars: 20 μm. (c) Proportion of LHPV neurons that express or do not express RVdG-mCherry(EnvA) in Slc17a6Cre or Slc32a1Cre mice. LHPV neurons were connected to a greater proportion of vlPAGVGLUT2 neurons than vlPAGVGAT neurons (chi-square = 11.18, p=0.0008).
 
 To determine whether other lateral hypothalamic circuits encode for nociception, we examined the effects of manipulating LH leptin receptor expressing (LHLEPR) neurons, which also project to the vlPAG, albeit a slightly more posterior region (Schiffino et al., 2019; Leinninger et al., 2009). In contrast to LHPV neurons, LHLEPR neurons are predominantly GABAergic and their vlPAG axonal projections are more broadly distributed than those of LHPV neurons. Cre-dependent viruses driving ChR2 or GFP expression were injected into the LH of LeprCre mice (Leshan et al., 2006; Figure 4—figure supplement 3a), and we found that activation of the LHLEPR→vlPAG pathway potentiated both thermal and mechanical nociception in healthy mice (Figure 4—figure supplement 3b−e). Moreover, activation of the LHLEPR→vlPAG pathway was rewarding as LHLEPR:ChR2→vlPAG mice spent more time on the photostimulation-paired side of the chamber than LHLEPR:Ctrl→vlPAG control mice (Figure 4—figure supplement 3f). These results demonstrate that activation of lateral hypothalamic glutamatergic (LHPV) and GABAergic (LHLEPR) populations that project to the vlPAG attenuates and potentiates nociception, respectively.
 
-## Activation of LHPV axonal projections to the LHb triggers aversion
+### Activation of LHPV axonal projections to the LHb triggers aversion
 
 LHPV neurons also target other brain regions including the LHb (Kisner et al., 2018; Celio et al., 2013). Therefore, we examined whether LHPV neurons also modulate nociceptive processing via projections to the LHb. For this, we bilaterally injected a Cre recombinase-dependent viral vector driving the expression of either channelrhodopsin (ChR2:tdTomato) or the fluorophores GFP or tdTomato (control) into the LH of PvalbCre mice and implanted optical fibers bilaterally above the LHb to specifically activate the LHPV→LHb pathway (Figure 6a). Interestingly, activation of this LHPV→LHb circuitry did not evoke changes in nociceptive responses to an acute noxious thermal or mechanical stimulus in healthy mice (Figure 6b−d) or in mice with SNI-induced neuropathy when tested at 5 and 25 days post-surgery (Figure 6—figure supplement 1). Because the LHb is a brain region associated with reward- and aversion-related behaviors (Stamatakis et al., 2016; Faget et al., 2018), we also sought to determine whether activation of the LHPV→LHb pathway triggers such behaviors. We found that activation of this pathway in healthy mice was aversive as mice spent significantly less time on the photostimulation-paired side in the RTPP assays (Figure 6e−g). These results are consistent with previous findings demonstrating that broad activation of lateral hypothalamic glutamatergic axonal projections in the LHb is aversive (Stamatakis et al., 2016). Together, these findings demonstrate that LHPV neurons encode for distinct behavioral outputs depending on their targeted downstream regions: nociceptive processing via projections to the vlPAG and aversion-related behaviors through connections to the LHb.
 
-## Antinociceptive interactions between LHPV neuronal activation and morphine
+![Figure 6.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig6-v1.jpg)
+
+**Figure 6.:** (a) Representative images of ChR2 and tdTomato expression in LHPV neurons and optical fiber implants above the lateral habenula (LHb). Scale bars: 500 μm, widefield; 50 μm, zoom. (b) Optogenetic activation of LHPV axonal projections in the LHb does not alter thermal nociception at 50 Hz photostimulus frequency (p=0.16) or (c) 20 Hz photostimulus frequency (p=0.23) in healthy mice (n = 13 ChR2 mice and 14 Ctrl [GFP/tdTomato] mice). (d) Optogenetic activation of LHPV axonal projections in the LHb does not alter mechanical nociception at 50 Hz (p=0.15) in healthy mice (n = 13 ChR2 mice and 14 Ctrl mice). (e) Optogenetic activation of the LHPV→LHb pathway evokes significant real-time place aversion (p=0.0041; Cohen’s d = 1.38) in a standard rectangular one-chamber testing apparatus (n = 10 ChR2 mice and 12 Ctrl mice). (f) Optogenetic activation of the LHPV→LHb pathway also evokes real-time place aversion in a three-chamber testing apparatus (n = 8 mice per group); two-way mixed-model ANOVA group × chamber interaction, F(2, 28) = 6.22, p=0.0058, Bonferroni’s multiple comparisons post-test revealed the LHPV:ChR2→LHb group spent less time in the photostimulation chamber (p=0.0089; Cohen’s d = 1.28) and more time in the no photostimulation chamber (p=0.016) than LHPV:Ctrl→LHb control mice, but no differences were observed in hall zone occupancy (p>0.99). (g) Representative heatmaps of LHPV:ChR2→LHb and LHPV:Ctrl→LHb mice in a three-chamber real-time place preference session. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Activation of the LHPV→LHb pathway did not influence thermal (n = 5 ChR2 mice and 6 Ctrl mice; p=0.83) or (b) mechanical nociception (p=0.22) when tested on day 5 or day 6 post-spared nerve injury (SNI), respectively. (c) LHPV→LHb activation did not change thermal (n = 5 ChR2 mice and 6 Ctrl mice; p=0.65) or (d) mechanical nociception (p=0.32) when tested on day 25 or day 26 post-SNI, respectively.
+
+### Antinociceptive interactions between LHPV neuronal activation and morphine
 
 Since activation of LHPV neurons appears to reduce nociception as monotherapy, we last sought to examine the interaction between the antinociception induced by these neurons and the μ-opioid pain reliever morphine. For this, we performed a dose-addition analysis of CNO and morphine in LHPV:hM3D and LHPV:Ctrl mice. First, we determined the individual dose-response curves of CNO and morphine using a cumulative dosing procedure. As expected, CNO evoked dose-dependent PWLHP increases in LHPV:hM3D (Figure 7a) but not LHPV:Ctrl mice (Figure 7b), whereas morphine produced dose-dependent increases in both groups (Figure 7a, b). Next, the two drugs were combined in fixed proportions (1:1, 1:3, and 3:1) according to their relative potencies (ED50) in the LHPV:hM3D group. For example, the 1:1 ratio consisted of one unit of the morphine ED50 (10.31 mg/kg) for every one unit of the CNO ED50 (0.78 mg/kg). Fractions of these mixtures (e.g., the combined 0.125 ×, 0.25 ×, 0.5 ×, and 1 × ED50 values of morphine and CNO) were administered consecutively by a cumulative dosing procedure to complete one dose-response curve test (Figure 7a, b). The shared dose-response curves were used to calculate the ED50 of each drug within each mixture; these equi-effective points were plotted on an isobologram to visualize the nature of each interaction (Figure 7c, d). For LHPV:hM3D mice, 1:3 and 1:1 morphine:CNO combinations fell within the range of additivity. Remarkably, the 3:1 morphine:CNO combination fell below the range of additivity, suggesting synergistic interactions between morphine and LHPV neuronal activation, indicating that activation of LHPV neurons enhanced the antinociceptive potency of morphine. Formal statistical comparison of expected and experimental ED50 values confirmed this observation (Student’s paired t-test: t(7) = 2.92, p=0.022). For LHPV:Ctrl mice, no combinations significantly differed from the range of additivity, suggesting that CNO did not affect the antinociceptive potency of morphine in control subjects.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66446/elife-66446-fig7-v1.jpg)
 
-**Figure 7.:** PV neuronal activation and morphine.(a) Dose-response curves of clozapine-N-oxide (CNO) and morphine alone or in combinations of different fixed proportions in LHPV:hM3D and (b) LHPV:Ctrl mice in the hot plate test (n = 8 mice per group). (c, d) Isobolograms constructed from the data shown in panels (a) and (b). Each point represents the ED50 ± 95% CI of each drug alone or in a mixture; ordinates represent the ED50 value of morphine and abscissae represent the ED50 value of CNO. In LHPV:hM3D mice, the 3:1 morphine:CNO mixture was significantly more potent than predicted by the hypothesis of additivity (paired Student’s t-test, t(7) = 2.92, p=0.022). (e) Both groups of mice developed significant antinociceptive tolerance to 32 mg/kg morphine when administered twice per day for 3 days. Three-way mixed-model ANOVA revealed a significant morphine × test interaction (n = 8 mice per group; F(1, 14) = 134.7, p<0.0001), and Bonferroni multiple comparisons post-tests showed the antinociceptive effects of 32 mg/kg morphine were significantly lower on day 4 than day 1 (both p<0.0001). (f) Activation of LHPV neurons restored morphine potency, and further tolerance did not develop to combination treatment. Three-way mixed-model ANOVA revealed a significant treatment × group interaction (n = 8 mice per group; F(2, 28) = 42.10, p<0.0001). Bonferroni multiple comparisons post-tests revealed that there were between-group differences in PWLHP evoked on day 5 by CNO (p=0.0006) and morphine (p<0.0001) and on day 9 by CNO (p=0.016) and morphine (p<0.0001). However, no within-group differences were observed between day 5 and 9 in LHPV:hM3D mice during CNO (p>0.99) or morphine treatment (p>0.99).
+**Figure 7.:** (a) Dose-response curves of clozapine-N-oxide (CNO) and morphine alone or in combinations of different fixed proportions in LHPV:hM3D and (b) LHPV:Ctrl mice in the hot plate test (n = 8 mice per group). (c, d) Isobolograms constructed from the data shown in panels (a) and (b). Each point represents the ED50 ± 95% CI of each drug alone or in a mixture; ordinates represent the ED50 value of morphine and abscissae represent the ED50 value of CNO. In LHPV:hM3D mice, the 3:1 morphine:CNO mixture was significantly more potent than predicted by the hypothesis of additivity (paired Student’s t-test, t(7) = 2.92, p=0.022). (e) Both groups of mice developed significant antinociceptive tolerance to 32 mg/kg morphine when administered twice per day for 3 days. Three-way mixed-model ANOVA revealed a significant morphine × test interaction (n = 8 mice per group; F(1, 14) = 134.7, p<0.0001), and Bonferroni multiple comparisons post-tests showed the antinociceptive effects of 32 mg/kg morphine were significantly lower on day 4 than day 1 (both p<0.0001). (f) Activation of LHPV neurons restored morphine potency, and further tolerance did not develop to combination treatment. Three-way mixed-model ANOVA revealed a significant treatment × group interaction (n = 8 mice per group; F(2, 28) = 42.10, p<0.0001). Bonferroni multiple comparisons post-tests revealed that there were between-group differences in PWLHP evoked on day 5 by CNO (p=0.0006) and morphine (p<0.0001) and on day 9 by CNO (p=0.016) and morphine (p<0.0001). However, no within-group differences were observed between day 5 and 9 in LHPV:hM3D mice during CNO (p>0.99) or morphine treatment (p>0.99).
 
 Finally, using the same mice, we investigated the effects of LHPV neuronal activation following the development of morphine tolerance. We administered morphine (32 mg/kg, i.p.) twice per day for 3 days, which caused a significant decrease in morphine-induced antinociception (Figure 7e). On day 5, CNO (1 mg/kg) evoked a significant increase in PWLHP and restored morphine-induced antinociception as compared to control mice (Figure 7f). We then treated these mice once per day over the following three days with a combination of 1 mg/kg CNO and 32 mg/kg morphine to assess the potential development of tolerance to this combination. However, no differences were observed on the day 9 test in LHPV:hM3D mice as compared to day 5 (Figure 7f). Thus, activating LHPV neurons not only increases morphine potency acutely but also rescues morphine tolerance and may prevent subsequent tolerance development.
 
@@ -109,17 +153,272 @@ Here, we provide a detailed characterization of LHPV neurons, clearly demonstrat
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus; male/female)</td>
+      <td>PvalbCre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008069</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus; male/female)</td>
+      <td>Slc32a1Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028862</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus; male/female)</td>
+      <td>Slc17a6Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028863</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus; male/female)</td>
+      <td>LeprCre</td>
+      <td>M.G. Myers Jr., University of Michigan Medical School</td>
+      <td>RRID:IMSR_JAX:032457</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DsRed, rabbit polyclonal</td>
+      <td>Takara Bio, Inc</td>
+      <td>Cat # 632496 RRID:AB_10013483</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-parvalbumin (PVALB), guinea pig polyclonal</td>
+      <td>Swant</td>
+      <td>Cat # GP72; RRID:AB_2665495</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 488, goat polyclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # A11034 RRID:AB_2576217</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa Fluor 488, donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat # 706-545-148; RRID:AB_2340472</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa Fluor 647, donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat # 706-605-148; RRID:AB_2340476</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/9-CAG-FLEX-GCaMP6s-WPRE-SV40</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_10084; Addgene viral prep 100842-AAV9</td>
+      <td>5.0 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/rh10-hSYN-DIO-hM3D(Gq)-mCherry</td>
+      <td>University of North Carolina (UNC) Vector Core</td>
+      <td>RRID:Addgene_44361</td>
+      <td>2.0 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/rh10-hSYN-DIO-hM4D(Gi)-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td>RRID:Addgene_44362</td>
+      <td>2.0 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/9-hSYN-DIO-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50459; Addgene viral prep 50459-AAV9</td>
+      <td>2.1 × 1013 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/1-CAG-FLEX-rev-ChR2-tdTomato</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_18917; Addgene viral prep 18917-AAV1</td>
+      <td>6.9 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/9-CAG-FLEX-ArchT-GFP</td>
+      <td>UNC Vector Core</td>
+      <td>RRID:Addgene_29777</td>
+      <td>4.7 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/9-CAG-FLEX-GFP</td>
+      <td>University of Pennsylvania (U Penn) Vector Core</td>
+      <td>RRID:Addgene_51502</td>
+      <td>3.3 × 1013 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/1-CAG-FLEX-tdTomato</td>
+      <td>U Penn Vector Core</td>
+      <td>RRID:Addgene_51503</td>
+      <td>4.5 × 1013 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/9-CAG-FLEX-tdTomato</td>
+      <td>U Penn Vector Core</td>
+      <td>RRID:Addgene_51503</td>
+      <td>4.1 × 1013 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/8-hSYN-FLEX-TVA-Rabies B19G (TVA+)</td>
+      <td>Michigan Diabetes Research Center Molecular Genetics Core, University of Michigan</td>
+      <td></td>
+      <td>4 × 1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EnvA-∆G-Rabies-mCherry</td>
+      <td>Michigan Diabetes Research Center Molecular Genetics Core, University of Michigan</td>
+      <td></td>
+      <td>1 × 1010 pfu/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide (CNO)</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat # 4936; PUBCHEM:135445691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 320099; PUBCHEM:176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formalin</td>
+      <td>Macron Fine Chemicals</td>
+      <td>Cat # 5016–02; PUBCHEM:712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete Freund’s adjuvant (CFA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # F5881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Morphine</td>
+      <td>National Institute on Drug Abuse Drug Supply Program</td>
+      <td>PUBCHEM:5288826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANY-maze video tracking system v5</td>
+      <td>Stoelting Co.</td>
+      <td>RRID:SCR_014289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Doric Neuroscience Studio v5.1</td>
+      <td>Doric Lenses Inc</td>
+      <td>RRID:SCR_018569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI/ImageJ v1.52p</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Miniscope Analysis Pipeline</td>
+      <td>Etter, 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellReg</td>
+      <td>Sheintuch et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>R2019a &amp; R2020a</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Snap-in Imaging Cannula Model L-V</td>
+      <td>Doric Lenses Inc</td>
+      <td></td>
+      <td>GRIN lenses</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Basic Fluorescence Snap-In Microscopy System – Deep Brain</td>
+      <td>Doric Lenses Inc</td>
+      <td></td>
+      <td>In vivo imaging system</td>
+    </tr>
+  </tbody>
+</table>
+
 Further information and requests for resources and reagents should be directed to and will be fulfilled by Yeka Aponte (yeka.aponte@nih.gov).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Animals
+#### Animals
 
 All experimental protocols were conducted in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and with the approval of the National Institute on Drug Abuse and Michigan State University Animal Care and Use Committees. Male and female heterozygous PvalbCre mice (RRID:IMSR_JAX:008069; C57BL/6J background, The Jackson Laboratory, Bar Harbor, ME, USA), Slc32a1Cre mice (RRID:IMSR_JAX:028862, C57BL/6J background, The Jackson Laboratory), Slc17a6Cre mice (RRID:IMSR_JAX:028863, C57BL/6J background, The Jackson Laboratory), and LeprCre mice (RRID:IMSR_JAX:032457; C57BL/6J background, kindly provided by M.G. Myers Jr., University of Michigan Medical School, MI, USA) were used in this study. Mice were maintained at the National Institute on Drug Abuse animal facility under standard housing conditions. Up to five mice of the same sex were group housed under a 12 hr light-dark cycle at 20–24°C and 40–60% humidity with free access to water and food (PicoLab Rodent Diet 20, 5053 tablet, LabDiet/Land O’Lakes Inc, St. Louis, MO, USA). For behavior experiments, 6- to 8-week-old male and female mice (∼18–25 g) were randomly assigned to experimental groups while maintaining littermate or age-matched and gender-matched controls. Following stereotaxic surgeries, mice were individually housed.
 
 In all experiments, biological replicates were defined as ‘parallel measurements of biologically distinct samples that capture random biological variation,’ and technical replicates were defined as ‘repeated measurements of the same sample that represent independent measures of the random noise associated with protocols or equipment’ (Blainey et al., 2014).
 
-## Surgical procedures
+### Surgical procedures
 
 For in vivo functional imaging experiments, mice were anesthetized with isoflurane and placed onto a stereotaxic apparatus (David Kopf Instruments, Tujunga, CA, USA). After exposing the skull by a minor incision, a small hole (<1 mm diameter) was drilled unilaterally (bregma, −1.78 mm; midline, +1.38 mm) for virus injection and GRIN lens insertion. A sterile, beveled 25-gauge needle was inserted into the center of the craniotomy stopping approximately 50 μm above the dorsal-ventral coordinate for the lens implant and remaining in place for 4–5 min to create a path for the implant. Next, rAAV2/9-CAG-FLEX-GCaMP6s-WPRE-SV40 was injected offset from the center of the craniotomy (100 nl; rate: 25 nl/min; RRID:Addgene_100842; Addgene viral prep 100842-AAV9; titer: 5.0 × 1012 GC/ml) into the LH of PvalbCre mice (bregma, −1.78 mm; midline, +1.365 mm; skull surface, −5.38 mm) by a pulled glass pipette (20–30 µm tip diameter) with a micromanipulator (Narishige International USA Inc, Amityville, NY, USA) controlling the injection speed. The injection is offset to avoid damaging the tissue in the lens field of view. After injection, a 500-μm-diameter GRIN lens (Snap-in Imaging Cannula Model L-V; Doric Lenses Inc, Québec, QC, Canada) was lowered into the center of the craniotomy (bregma, −1.78 mm; midline, +1.38 mm; skull surface, −5.28 mm). Implants were affixed to the skull with C&B Metabond Quick Adhesive Cement System (Parkell, Inc, Edgewood, NY, USA). Subsequently, mice were individually housed for 3−4 weeks for post-surgical recovery and viral transduction.
 
@@ -131,17 +430,17 @@ Viruses used for optogenetic experiments include (1) rAAV2/1-CAG-FLEX-rev-ChR2-t
 
 For somatic-targeted optogenetic experiments, optical fibers were implanted bilaterally above LHPV somas (bregma, −1.80 mm; midline, ±1.40 mm; skull surface, −5.00 mm; no angle). For experiments targeting LHPV axonal projections within the vlPAG or the LHb, optical fibers were implanted bilaterally at 10° angles above LHPV axonal projections in the vlPAG (bregma, −4.00 mm; midline, ±1.00 mm; skull surface, −2.90 mm) or LHb (bregma, −1.70 mm; midline, ±0.90 mm; skull surface, −2.90 mm). For experiments targeting LHLEPR axonal projections within the vlPAG, optical fibers were implanted bilaterally at 10° angles above LHLEPR axonal projections in the vlPAG (bregma, −4.84 mm; midline, ±0.90 mm; skull surface, −2.50 mm). The axonal projections of LHLEPR neurons in the vlPAG are more posterior than those of LHPV neurons, which is why this more posterior coordinate was used (Schiffino et al., 2019; Leinninger et al., 2009). Implants were affixed to the skull with cyanoacrylate adhesive and C&B Metabond Quick Adhesive Cement System (Parkell, Inc). Subsequently, mice were individually housed for 3−4 weeks for post-surgical recovery and viral transduction.
 
-## In vivo functional imaging
+### In vivo functional imaging
 
 A miniature microscope with an integrated LED was used to image GCaMP6s fluorescence in LHPV neurons through an implanted GRIN lens (Basic Fluorescence Snap-In Microscopy System – Deep Brain; Doric Lenses Inc). LHPV:GCaMP6s mice underwent five imaging sessions (hot plate, cold plate, ipsilateral formalin, contralateral formalin, and no formalin). Before each imaging session, GRIN lenses were briefly cleaned with isopropanol and mice were gently restrained while the snap-in microscope was secured to the baseplate for alignment with the implanted GRIN lens. Mice were then given approximately 5 min to acclimate to the microscope and tether. Grayscale TIFF images were collected at 10 frames per second (100 ms exposure) using Doric Neuroscience Studio software version 5.1 (RRID:SCR_018569). The LED power was calibrated between 10% and 50% (0.2–1.2 mW of 458 nm blue light). At the beginning of each session, imaging was synchronized with behavioral video recordings for later alignment. Sample size estimates were derived from a previous study using miniscope recordings in the hypothalamus (Betley et al., 2015).
 
 For the hot plate tests, mice were placed on a 51°C hot plate (IITC Life Science, Woodland Hills, CA, USA) or a room temperature black cardboard surface with similar visual and tactile properties for 10–12 trials per stimulus. Mice were removed from the hot plate when typical behavioral responses were observed (e.g., paw withdrawal or paw licking). For the cold plate tests, mice were placed on a 4°C aluminum block or a room temperature white cardboard surface for 8–9 trials per stimulus. Mice were removed from the cold plate when paw checking or withdrawal responses were observed. 1−2 min interstimulus intervals were used for these tests. For the formalin tests, mice received a 20 μl intra-plantar injection of 2% formalin (Cat # 5016–02; Macron Fine Chemicals/Avantor, Radnor, PA, USA) diluted in saline. 47 min videos were captured, and formalin was injected into one of the hindpaws at the 2 min mark. For the ‘no injection’ test, no formalin was administered. These tests were separated by at least 5 days to minimize photobleaching and inter-test effects.
 
-## Image processing
+#### Image processing
 
 Image analyses were performed using MATLAB scripts available in the Miniscope Analysis pipeline (https://github.com/etterguillaume/MiniscopeAnalysis). First, images were motion-corrected using the Non-Rigid Motion Correction (NoRMCorre) package (Pnevmatikakis and Giovannucci, 2017) and downsampled spatially and temporally by factors of 3. Motion-corrected, downsampled videos were then processed using Constrained Non-negative Matrix Factorization for Endoscopic data (CNMF-E) to extract individual neural segments, denoise their signals, demix signals from nearby neurons, and deconvolve calcium transients for estimation of neuronal firing (Friedrich et al., 2017; Zhou et al., 2018; Pnevmatikakis et al., 2016).
 
-## Imaging and behavioral analysis
+#### Imaging and behavioral analysis
 
 For the hot plate and cold plate tests, filtered traces were Z-score normalized and smoothed with a rolling average of 3 frames. The 30 s activity traces surrounding stimulus presentations (10 s before to 20 s after) were averaged within each stimulus to form an average peri-stimulus activity trace per neuron. Neurons were assigned into clusters for further analysis if they displayed one of the two following phenotypes: (cluster 1) the average peak Z-score amplitude was ≥1.0 and the AUC of the trace following the stimulus was positive, or (cluster 2) the average peak Z-score amplitude was ≤−1.0 and the AUC of the trace following the stimulus was negative. The remaining neurons that did not meet either of these criteria were considered non-responsive to the noxious stimuli and were not analyzed further.
 
@@ -149,45 +448,45 @@ For decoding analysis, average traces for each neuron were constructed for hot p
 
 For the formalin experiments, deconvolved signals were used to bin estimated Ca2+ transients for every 5 min period of the test. For statistical comparison, we averaged the number of events per 5 min period within each phase of the formalin test (0–5 min, acute; 6–15 min, interphase; 16–45 min, inflammatory).
 
-## Optical manipulations
+### Optical manipulations
 
 Optical fiber implants were coupled to patch cords connected to lasers (Doric Lenses Inc) via rotary joints mounted over behavioral testing areas. Optical fiber implants were custom-made and assessed for output efficiency ≥80%. Laser output was controlled by Doric Neuroscience Studio software version 5.1 (RRID:SCR_018569). For photostimulation experiments, 450 nm laser diodes were used to deliver 5 ms pulses of 10–15 mW light at a frequency of 5–100 Hz. For photoinhibition experiments, 520 nm laser diodes were used to deliver 10–15 mW of constant light.
 
-## Behavioral experiments
+### Behavioral experiments
 
 Mice were habituated to experimenter handling for 3 days prior to experiments, and all experiments were performed during the light cycle. Mice were acclimated to behavioral rooms for at least 1 hr before experiments began. Across experimental and control groups, mice were gender-matched and age-matched or littermates. By design, sample sizes were 8–12 mice based on (Bolles and Fanselow, 1980) previous literature using similar procedures (Negus et al., 2015; Jennings et al., 2015; Jennings et al., 2013; Siemian et al., 2019; Alhadeff et al., 2018) and (Tovote et al., 2015) estimates of exclusion rates following histology. Mice were excluded from analysis if viral expression and fiber placement were not observed in at least one hemisphere after histological assessment (see Histology).
 
-## Pain-suppressed nesting assay
+#### Pain-suppressed nesting assay
 
 Single-housed mice were tested in their home cages, which were initially supplemented with nestlet. Mice were acclimated to the procedure room for at least 1 hr before testing and had access to food and water in their cages throughout test sessions. At the start of each test, mice were pretreated with saline or CNO (1 mg/kg, i.p.; PUBCHEM:135445691; Cat # 4936; Tocris Bioscience, Minneapolis, MN, USA). After 1 hr, the existing nest was removed from each home cage, and a new nestlet cut into six small, equal-sized pieces was placed into the home cage, distributed across zones divided by a 3 × 2 grid in the cage. The mouse was then given an i.p. injection of 0.6% acetic acid (PUBCHEM:176; Cat # 320099; Sigma-Aldrich) in saline (10 ml/kg) or saline alone (10 ml/kg) and returned to the home cage. Measurements of the number of nestlet pieces collected were taken at 10, 30, 60, and 100 min post-acetic acid injection (Negus et al., 2015) by an experimenter blinded to the treatment group. The data from the 30 min time point were presented. At least 5 days separated tests to minimize inter-test effects (Negus et al., 2015).
 
-## Formalin place conditioning
+#### Formalin place conditioning
 
 Place conditioning experiments were performed in a two-chamber apparatus separated by a wall with a small door that could be closed with a divider. The chambers were defined by tactile, visual, and olfactory cues. One chamber had a metal grid floor, walls decorated with tan and black alternating vertical stripes, and almond scent. The other chamber had a smooth white floor, walls decorated with white circles on a tan background, and orange scent. The front wall of each chamber remained clear, and sessions were recorded using video cameras aimed through this wall using ANY-maze software. Pilot experiments showed that mice consistently preferred the metal grid side at a rate of 60–70% per 15 min test. In comparison to using an unbiased design, this biased design permits pre-assigning groups at surgery with less potential for mismatched side preference at pretest. All mice used in this study preferred the metal grid side in the 15 min pretest on day 1, and this side was assigned for pairing with formalin treatment.
 
 Over the next 4 days, mice received one training session per day with the center door closed and only one chamber accessible; formalin sessions were video recorded for later behavioral scoring of paw licking behavior by a blinded scorer; some videos were difficult to view the mouse to score licking behavior and were removed from this analysis (two mCherry, three hM3D, and one hM4D). All sessions were preceded by an injection of CNO (1 mg/kg, i.p.; Tocris Biosciences) to control for potential subjective effects of LHPV manipulation in the absence of inflammatory pain. On even days (sessions 2 and 4), mice received an intra-plantar injection of saline (20 μl) in the hindpaw and were immediately placed in the initially non-preferred side for 60 min. On odd days (sessions 3 and 5), mice received a 20 μl hindpaw intra-plantar injection of 2% formalin (Cat # 5016-02; Macron Fine Chemicals/Avantor, Radnor, PA, USA) diluted in saline and were placed in the initially preferred chamber for 60 min. The formalin-treated paw was different on each of the two condition sessions. On day 6, untreated mice were placed back in the testing arena with free access to both chambers and the sessions were analyzed with ANY-maze video tracking system v5 (RRID:SCR_014289; Stoelting Co., Wood Dale, IL, USA).
 
-## Thermal nociception (hot plate test)
+#### Thermal nociception (hot plate test)
 
 A cylindrical plexiglass enclosure was placed on a 51°C hot plate (IITC Life Science). For optogenetic experiments, patch cords were connected, and mice were placed in a holding chamber for an initial 3 min period. Mice were gently transferred to the hot plate and the latency to paw withdrawal (PWLHP) was measured. A latency of 20 s was defined as complete analgesia and used as a cutoff time to avoid tissue injury. Following this measurement, mice were removed from the hot plate and photomanipulations commenced for 3 min in the holding chamber after which mice were placed back on the hot plate for a second PWLHP measurement. Photomanipulations ceased for another 3 min period in the holding chamber before a final PWLHP measurement. For frequency-response experiments, this procedure was repeated for each frequency, except only one 3 min ‘laser-OFF’ period separated photostimulation epochs. For experiments examining the effects of longer photostimulation, 50 Hz photostimulation was delivered every other second over 20 min, and PWLHP was measured at the end of the photostimulation period and at 5, 10, and 20 min post-photostimulation. For experiments examining the effects of rimonabant on photostimulation-induced antinociception, rimonabant (3 mg/kg, i.p., dissolved in a vehicle of 8% Tween-80 in saline; PUBCHEM:5360515; Cat # 9000484; Cayman Chemical, Ann Arbor, MI, USA) was administered in a volume of 10 ml/kg 30 min prior to photostimulation. For chemogenetic experiments, CNO (1 mg/kg, i.p.; PUBCHEM:135445691; Cat # 4936; Tocris Bioscience) was administered after the second PWLHP measurement and measurements were taken periodically after (0.5–72 hr).
 
-## Mechanical nociception (von Frey test)
+#### Mechanical nociception (von Frey test)
 
 Mice were habituated for 20 min in cylindrical plexiglass enclosures on a fine mesh grid floor. For optogenetic experiments, patch cords were connected, and mice were placed in a holding chamber for an initial 3 min period. Von Frey filaments ranging from 0.008 g to 4 g were used to determine paw withdrawal threshold (PWTVF), which was defined as the lowest strength filament eliciting a behavioral response in at least two out of three applications. Briefly, measurements started with the lowest strength filament, and the filament strength was increased until paw withdrawal responses reliably occurred in at least two out of three applications. This procedure was repeated for each hindpaw in three epochs as described above for PWLHP measurements: pre-photostimulation, photostimulation, and post-photostimulation.
 
-## Real-time place preference
+#### Real-time place preference
 
 RTPP sessions were performed in a standard rat cage with opaque black siding filled with a thin layer of clean rodent bedding, except for a subset of LHPV→LHb mice that were also tested in a three-chamber apparatus consisting of two identical black-walled chambers separated by a narrow hall section, and the entire apparatus was filled with a thin layer of clean rodent bedding. Patch cords were connected, and mice were placed into the chamber. Photostimulation (50 Hz) or photoinhibition was paired with one side of the chamber, which remained constant across all tests. For LHLEPR→vlPAG experiments, 20 Hz photostimulation was used (Schiffino et al., 2019). Tests lasted for 10 min (LHPV somatic manipulations) or 20 min (axonal projection manipulations). At the end of the sessions, the percentage of time spent on the laser-paired side was calculated by ANY-maze video tracking system v5 (RRID:SCR_014289; Stoelting Co.).
 
-## Persistent inflammatory pain
+#### Persistent inflammatory pain
 
 Following initial behavioral tests after stereotaxic surgery and viral transduction, CFA (Cat # F5881; Sigma-Aldrich, St. Louis, MO, USA) was diluted 1:1 in saline and injected (20 μl) into the plantar surface of one hindpaw under brief isoflurane anesthesia (Alhadeff et al., 2018). Behavioral tests resumed 5 days post-CFA.
 
-## Persistent neuropathic pain
+#### Persistent neuropathic pain
 
 Following initial behavioral tests after stereotaxic surgery and viral transduction, the SNI model was used for induction of neuropathic pain. Briefly, under isoflurane anesthesia, the tibial and common peroneal nerves were axotomized while the sural nerve was spared (Decosterd and Woolf, 2000; Suter et al., 2003). Behavioral tests resumed 5 days post-SNI.
 
-## Dose-addition analysis
+#### Dose-addition analysis
 
 For the experiment examining interactions between CNO and morphine, tests were conducted according to a cumulative dosing procedure, in which PWLHP measurements are taken immediately prior to i.p. drug administration, then 60 min after drug administration immediately before the next drug administration. When administered alone, CNO was tested across a dose range of 0.1–3.2 mg/kg, and morphine was tested across a dose range of 3.2–32 mg/kg. For combination tests, these dose-measurement cycles continued until near 100% maximal effect was achieved corresponding to the predetermined cutoff time of 20 s. Raw PWLHP values for CNO and morphine were transformed into percent maximum possible effect (%MPE) values according to the formula %MPE = [(post-drug PWLHP – pre-drug PWLHP) / (cutoff time – pre-drug PWLHP) × 100]. %MPEs were averaged within each group (± s.e.m.) and plotted as a function of dose. Log(ED50) values were determined from the %MPE dose-response curve via linear regression and averaged within the group to calculate the ED50 (±95% confidence interval [CIs]) for each drug, except for CNO in the mCherry control group, which did not produce 50% effect levels. Morphine was obtained from the National Institute on Drug Abuse Drug Supply Program (PUBCHEM:5288826).
 
@@ -195,20 +494,20 @@ To examine the antinociceptive interactions between CNO and morphine, a fixed-pr
 
 Dose-addition analysis was performed as described previously (Siemian et al., 2018; Tallarida, 2000). When both drugs were active in an assay, expected additive ED50 values (±95% CL) (Zadd) were calculated from the equation Zadd = fA + (1 − f)B, where A is the ED50 of morphine alone, B is the ED50 of CNO alone, and f is the fractional multiplier of A in the computation of the additive total dose (e.g., f = 0.5 when fixed ratio was 1:1). When only one drug was active (i.e., morphine in the mCherry control group), the hypothesis of additivity predicts that the inactive drug (i.e., CNO) should not contribute to the effects of the mixture, and the equation reduces to Zadd = A/ρA, where ρA is the proportion of morphine in the total drug dose. Experimental ED50 values (Zmix) were determined from the 1:3, 1:1, and 3:1 combinations and were defined as the sum of the ED50 values of both drugs in the combination. Given the within-subject experimental design, Zadd and Zmix values were analyzed with paired two-tailed Student’s t-tests to determine differences between expected and experimental ED50 values.
 
-## Morphine tolerance study
+#### Morphine tolerance study
 
 One week after the last morphine-alone dose-response curve, we induced morphine tolerance in LHPV:Ctrl and LHPV:hM3D mice by administering 32 mg/kg morphine (i.p.) twice per day, separated by approximately 8 hr. We measured PWLHP before and 1 hr after the first injection on day 1 and the first injection on day 4 (the seventh injection overall) to verify tolerance development. On day 5, three PWLHP measurements were taken: pre-injection, 1 hr post-CNO injection, and 1 hr post-morphine injection. On days 6–8, a combined injection of 32 mg/kg morphine and 1 mg/kg CNO was administered once per day. On day 9, the day 5 test was repeated to measure potential development of tolerance to the morphine/CNO mixture.
 
-## Histology
+### Histology
 
 Mice were deeply anesthetized with isoflurane and transcardially perfused with 1× phosphate buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in 1× PBS. Whole brains were removed and post-fixed in 4% PFA overnight at 4°C and subsequently transferred to 1× PBS for storage at 4°C until further processing. Coronal brain sections (50 µm thick) were collected in 1× PBS using a Leica VT1200 vibratome (Leica Biosystems GmBH, Wetzlar, Germany). In some instances, DsRed immunostaining was required to visualize viral transduction. Sections were blocked for 1 hr at room temperature in 1× PBS with 0.3% Triton X-100% and 3% normal goat serum. After blocking, sections were incubated with rabbit anti-DsRed antibody (1:1000 Cat # 632496/RRID:AB_10013483; Takara Bio, Inc, Mountain View, CA, USA) in block solution for 20 hr at 4°C. Tissue was then washed 4 × 10 min in 1× PBS followed by incubation in goat anti-rabbit Alexa Fluor 488 antibody (1:500 Cat # A11034/RRID:AB_2576217; Thermo Fisher Scientific, Waltham, MA, USA) in block solution for 1.5 hr at room temperature. After secondary antibody incubation, sections were washed 4 × 10 min in 1× PBS. All sections were mounted with DAPI-Fluoromount-G aqueous mounting medium (Electron Microscopy Sciences, Hatfield, PA, USA) onto Superfrost Plus glass slides (VWR International, Radnor, PA, USA). Images were taken with an AxioZoom.V16 fluorescence microscope (Carl Zeiss Microscopy LLC, Thornwood, NY, USA).
 
-## Recombinant rabies virus tracing
+### Recombinant rabies virus tracing
 
 For retrograde monosynaptic tracing experiments, Slc32a1Cre and Slc17a6Cre mice were anesthetized with ketamine/xylazine (90/10 mg/kg i.p.) and placed onto a stereotaxic apparatus (David Kopf Instruments). After exposing the skull by a minor incision, a small hole (<1 mm diameter) was drilled unilaterally for helper virus injection. 40 nl of Cre-dependent AAV8/hSyn-FLEX-TVA-Rabies B19G (TVA+) was injected unilaterally (rate: 10 nl/min; titer: 4 × 1012 GC/ml) into the vlPAG (bregma, −3.90 mm; midline, ±0.2 mm; skull surface, −3.20 mm) by a 25-gauge Hamilton syringe (500 nl). 3–4 weeks later, mice were injected with 100 nl of the recombinant rabies viral vector (EnvA-∆G-Rabies-mCherry; titer: 1 × 1010 pfu/ml) at the same vlPAG coordinate. Both viruses were graciously provided by the Michigan Diabetes Research Center Molecular Genetics Core, University of Michigan. 3–4 weeks after the recombinant rabies virus injection, mice were deeply anesthetized with isoflurane and transcardially perfused with 1× PBS followed by 4% PFA in 1× PBS. Whole brains were removed and post-fixed in 4% PFA overnight at 4°C and subsequently cryoprotected by equilibration in 30% sucrose in 1× PBS at 4°C, flash frozen in isopentane on dry ice, and stored at −80°C. Tissue was embedded in Tissue-Tek O.C.T. Compound (Sakura Finetek USA, Inc, Torrance, CA, USA) for cryosectioning. Coronal brain sections (50 µm thick) were collected in 1× PBS using a Leica CM3050 S cryostat (Leica Biosystems GmBH, Wetzlar, Germany). Sample size estimates were derived from a previous study using the same methodology (Jennings et al., 2013).
 
 For parvalbumin (PVALB) immunostaining, sections containing the hypothalamus were blocked for 1 hr at room temperature in 1× PBS with 0.3% Triton X-100% and 3% normal donkey serum. After blocking, sections were incubated with guinea pig anti-PVALB antibody (1:300 Cat # GP72; RRID:AB_2665495; Swant, Marly, Switzerland) in block solution for 16 hr at 4°C. Tissue was then washed 4 × 10 min in 1× PBS followed by incubation in donkey anti-guinea pig Alexa Fluor 488 or 647 antibody (1:500 Cat # 706-545-148/RRID:AB_2340472 or Cat # 706-605-148/RRID:AB_2340476; Jackson ImmunoResearch Laboratories, Inc, West Grove, PA, USA) in block solution for 1.5 hr at room temperature. After secondary antibody incubation, sections were stained for 5 min with 4',6-diamidino-2-phenylindole, dilactate (DAPI 1:5000; Thermo Fisher Scientific) in 1× PBS followed by 3 × 10 min washes in 1× PBS. Sections were mounted with Fluoromount-G aqueous mounting medium (Electron Microscopy Sciences) onto Superfrost Plus glass slides (VWR International). Z-stacks (30 µm) containing the LHPV region were imaged with an LSM 700 microscope using a 20× air objective (Carl Zeiss Microscopy LLC). Maximum intensity projections were manually counted using Fiji v1.52p software (RRID:SCR_002285) with the cell counter plugin (Schindelin et al., 2012). Sections were anatomically matched to ensure that the same regions were analyzed across samples. Additionally, sections containing the PAG were mounted as described, and images were taken with an AxioZoom.V16 fluorescence stereomicroscope using a 7× digital magnification to assess the injection site for mistargeted or lacking virus expression. After PAG assessment, one Slc32a1Cre and one Slc17a6Cre sample was excluded from the analysis as viral expression was not observed in the vlPAG.
 
-## Statistics
+### Statistics
 
 Graphs and statistics for behavioral experiments were prepared with GraphPad Prism 8 software (RRID:SCR_002798; GraphPad, La Jolla, CA, USA). All data are plotted as mean ± s.e.m., except for Ca2+ event frequency data and isobolograms, which are plotted as mean ± 95% CI, and cell counts, which are plotted in ‘part-of-whole’ format. Paired or unpaired Student’s two-tailed t-tests, one-way, two-way, or three-way mixed model ANOVAs with Bonferroni or Dunnett’s post-tests for multiple comparisons corrections were used to analyze all behavioral data, as appropriate. Mann–Whitney U-tests with Holm–Sidak correction for multiple comparisons were used to analyze Ca2+ event frequency data from the formalin tests. A chi-square test was used to compare cell counts in the rabies tracing experiment. For all statistical tests, p<0.05 was considered significant.

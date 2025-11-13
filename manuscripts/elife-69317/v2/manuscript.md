@@ -59,7 +59,7 @@
 
 ## Abstract
 
-The degree of heterotypic immunity induced by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) strains is a major determinant of the spread of emerging variants and the success of vaccination campaigns, but remains incompletely understood. We examined the immunogenicity of SARS-CoV-2 variant B.1.1.7 (Alpha) that arose in the United Kingdom and spread globally. We determined titres of spike glycoprotein-binding antibodies and authentic virus neutralising antibodies induced by B.1.1.7 infection to infer homotypic and heterotypic immunity. Antibodies elicited by B.1.1.7 infection exhibited significantly reduced recognition and neutralisation of parental strains or of the South Africa variant B.1.351 (Beta) than of the infecting variant. The drop in cross-reactivity was significantly more pronounced following B.1.1.7 than parental strain infection. The results indicate that heterotypic immunity induced by SARS-CoV-2 variants is asymmetric. This work was supported by the Francis Crick Institute and the Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg.
+Background:The degree of heterotypic immunity induced by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) strains is a major determinant of the spread of emerging variants and the success of vaccination campaigns, but remains incompletely understood.Methods:We examined the immunogenicity of SARS-CoV-2 variant B.1.1.7 (Alpha) that arose in the United Kingdom and spread globally. We determined titres of spike glycoprotein-binding antibodies and authentic virus neutralising antibodies induced by B.1.1.7 infection to infer homotypic and heterotypic immunity.Results:Antibodies elicited by B.1.1.7 infection exhibited significantly reduced recognition and neutralisation of parental strains or of the South Africa variant B.1.351 (Beta) than of the infecting variant. The drop in cross-reactivity was significantly more pronounced following B.1.1.7 than parental strain infection.Conclusions:The results indicate that heterotypic immunity induced by SARS-CoV-2 variants is asymmetric.Funding:This work was supported by the Francis Crick Institute and the Max Planck Institute for Dynamics of Complex Technical Systems, Magdeburg.
 
 ## Introduction
 
@@ -71,11 +71,63 @@ The B.1.1.7 variant is thought to have first emerged in the UK in September 2020
 
 IgG, IgM, and IgA antibodies to the spikes of the Wuhan strain or of variants D614G, B.1.1.7, or B.1.351, expressed on HEK293T cells, were detected by a flow cytometry-based method (Figure 1; Figure 1—figure supplement 1; Ng et al., 2020). Titres of antibodies that bound the parental D614G spike largely correlated with those that bound the B.1.1.7 or B.1.351 spikes (Figure 1a–c), consistent with the high degree of similarity. Similar correlations were observed for all three Ig classes also between the Wuhan strain and the three variant spikes and between the B.1.1.7 and B.1.351 spikes (Figure 1—figure supplements 2–5).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-v2.jpg)
+
+**Figure 1.:** (a-c) Correlation of IgG (a), IgM (b), and IgA (c) antibody levels to D614G and B.1.1.7 or B.1.351 spikes in the indicated groups of donors infected either with the D614G or B.1.1.7 strains. Each symbol represents an individual sample and levels are expressed as a percentage of the positive control. Black lines denote complete correlation and grey lines a 25% change in either direction. (d-f) Comparison of IgG (d), IgM (e), and IgA (f) antibody levels to the indicated spikes in groups of donors acutely infected either with the D614G or B.1.1.7 strains. Connected symbols represent individual donors. Numbers above the plots denote the average binding to each spike, expressed as a percentage of binding to the infecting spike.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** HEK293T cells were transfected with expression plasmids encoding each severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) variant spike and were used for flow cytometric analysis 2 days later. (a) Gating of HEK293T cells and of single cells in these mixed cell suspensions. (b) Example of IgG, IgM, and IgA staining in a positive sample and a negative control. Numbers within the plots denote the percentage of positive cells. (c) Staining of HEK293T cells transfected to express the Wuhan spike, with titrated amounts of the S2-specific D001 monoclonal antibody. Numbers above the plots denote the final D001 antibody concentration. (d) Median fluorescence intensity (MFI) of stained cells in c, according to the D001 antibody concentration.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Correlation of IgG antibody levels to Wuhan, D614G, B.1.1.7, and B.1.351 spikes in the indicated groups of donors infected either with the D614G or B.1.1.7 strains. Each symbol represents an individual sample and levels are expressed as a percentage of the positive control. Black lines denote complete correlation and grey lines a 25% change in either direction.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Correlation of IgM antibody levels to Wuhan, D614G, B.1.1.7, and B.1.351 spikes in the indicated groups of donors infected either with the D614G or B.1.1.7 strains. Each symbol represents an individual sample and levels are expressed as a percentage of the positive control. Black lines denote complete correlation and grey lines a 25% change in either direction.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Correlation of IgA antibody levels to Wuhan, D614G, B.1.1.7, and B.1.351 spikes in the indicated groups of donors infected either with the D614G or B.1.1.7 strains. Each symbol represents an individual sample and levels are expressed as a percentage of the positive control. Black lines denote complete correlation and grey lines a 25% change in either direction.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Levels of binding IgG, IgM, and IgA antibodies to the indicated spikes and levels of neutralising antibodies to the indicated strains were correlated using all the samples described in this work (n=83).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Levels of IgG antibodies to the spike of the infecting strain in sera from donors infected with the D614G or B.1.1.7 strains, over time since onset of symptoms (for symptomatic cases) or the first positive RT-qPCR diagnosis (for asymptomatic cases). Levels are expressed as a percentage of the positive control. (b) Neutralising antibody levels (IC50) against the closest infecting strain (Wuhan for D614G infection and B.1.1.7 for B.1.1.7 infection) in sera from donors infected with the D614G or B.1.1.7 strains, over time since onset of symptoms or since the first positive RT-qPCR diagnosis. (c) Correlation of binding IgG and neutralising antibody levels from a and b, respectively. (d) Comparison of binding IgG, IgM, and IgA antibody levels and of neutralising antibody levels (IC50) between B.1.1.7-infected asymptomatic donors and those with mild COVID-19 symptoms. Antibody binding and virus neutralisation were tested against the homologous B.1.1.7 spike and virus, respectively. Differences between the two groups were not statistically significant. Grey horizontal lines denote the lower and upper limit of detection. In (a-d), each symbol represents an individual sample.
+
 Comparison of sera from acute D614G and B.1.1.7 infections revealed stronger recognition of the infecting variant than of other variants. Although B.1.1.7 sera were collected on average earlier than D614G sera (Supplementary file 1), titres of antibodies that bound the homotypic spike or neutralised the homotypic virus, as well as the relation between these two properties, were similar in D614G and B.1.1.7 sera (Figure 1—figure supplement 6a–c), suggesting comparable immunogenicity of the two variants. Moreover, levels of binding and neutralising antibodies were not statistically significantly different in sera from mild or asymptomatic B.1.1.7 infection, although they were, on average, lower in the latter (Figure 1—figure supplement 6d).
 
 Recognition of heterotypic spikes was reduced by a small, but statistically significant degree for both D614G and B.1.1.7 sera and for all three Ig classes (Figure 1d–f). IgM or IgA antibodies in both D614G and B.1.1.7 sera were less cross-reactive than IgG antibodies (Figure 1d–f). The direction of cross-reactivity was disproportionally affected for some combinations, with IgA antibodies in D614G sera retaining on average 81% of recognition of the B.1.1.7 spike and IgA antibodies in B.1.1.7 sera retaining on average 30% of recognition of the D614G spike (Figure 1f). Similarly, recognition of the B.1.351 spike by IgM antibodies was retained, on average, to 71% in D614G sera and to 46% in B.1.1.7 sera (Figure 1f). Measurable reduction in polyclonal antibody binding to heterotypic spikes was unexpected, given >98% amino acid identity between them. Furthermore, mutations selected for escape from neutralising antibodies, which target the receptor binding domain more frequently, should not directly affect binding of non-neutralising antibodies to other domains of the spike. Indeed, we found that the reduction in heterotypic binding was less pronounced than the reduction in heterotypic neutralisation. However, reduction in serum antibody binding has also been observed for the receptor binding domain of the B.1.351 spike (Edara et al., 2021). Together, these findings suggested that either the limited number of mutated epitopes were targeted by a substantial fraction of the response (Diamond et al., 2021; Skelly et al., 2021; Wang et al., 2021; Zhou et al., 2021) or allosteric effects or conformational changes affecting a larger fraction of polyclonal antibodies.
 
 To examine a functional consequence of reduced antibody recognition, we measured the half maximal inhibitory concentration (IC50) of D614G and B.1.1.7 sera using in vitro neutralisation of authentic Wuhan or B.1.1.7 and B.1.351 viral isolates (Figure 2a–b). Titres of neutralising antibodies correlated most closely with levels of IgG binding antibodies for each variant (Figure 1—figure supplement 5). Neutralisation of B.1.1.7 by D614G sera was largely preserved at levels similar to neutralisation of the parental Wuhan strain (fold change −1.3; range 3.0 to −3.8, p=0.183) (Figure 2b), consistent with other recent reports, where authentic virus neutralisation was tested (Brown et al., 2021; Diamond et al., 2021; Planas et al., 2021; Skelly et al., 2021; Wang et al., 2021). Thus, D614G infection appeared to induce substantial cross-neutralisation of the B.1.1.7 variant. However, the reverse was not true. Neutralisation of the parental Wuhan strain by B.1.1.7 sera was significantly reduced, compared to neutralisation of the infecting B.1.1.7 variant (fold change −3.4; range −1.20 to −10.6, p<0.001) (Figure 2b), and the difference in cross-neutralisation drop was also significant (p<0.001). Both D614G and B.1.1.7 sera displayed significantly reduced neutralisation of the B.1.351 variant with a fold change of −8.2 (range −1.7 to −33.5) and −7.7 (range −3.4 to −17.9), respectively (Figure 2b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-v2.jpg)
+
+**Figure 2.:** (a) Correlation of neutralising antibody levels (IC50) against the Wuhan, B.1.1.7, or B.1.351 strains in the indicated groups of donors infected either with the D614G or B.1.1.7 strains. Each symbol represents an individual sample. Black lines denote complete correlation and grey lines a 50% (twofold) change in either direction. (b) Comparison of neutralising antibody levels (IC50) to the indicated SARS-CoV-2 strains in groups of donors acutely infected with either the D614G or B.1.1.7 strains. Connected symbols represent individual donors. Numbers above the plots denote the average IC50 against each strain, expressed as a percentage of IC50 against the infecting strain. Grey horizontal lines denote the lower and upper limit of detection.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Comparison of neutralising antibody levels (IC50) to the indicated SARS-CoV-2 strains in donors acutely infected with the D614G strain, grouped according to the severity of the outcome. Connected symbols represent individual donors. Numbers above the plots denote the average IC50 against each strain, expressed as a percentage of IC50 against the infecting strain. Grey horizontal lines denote the lower and upper limit of detection.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Levels of IgG, IgM, and IgA antibodies (expressed as a percentage of the positive control) to the D614G spike in sera from D614G-infected donors at 1 and 3 months post infection. (b) Neutralising antibody levels (IC50) against the Wuhan, B.1.1.7, or B.1.351 strains in same donors described in a. In a and b, connected symbols represent individual donors.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Comparison of neutralising antibody levels (IC50) to the indicated SARS-CoV-2 strains in subgroups of donors acutely infected with either the D614G (n=11) or B.1.1.7 (n=11) strains, selected for comparable disease outcome and time since infection. Connected symbols represent individual donors. Numbers above the plots denote the average IC50 against each strain, expressed as a percentage of IC50 against the infecting strain. Grey horizontal lines denote the lower and upper limit of detection.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Distance was calculated based on the sequence alignment of the full-length spike amino acid sequences of the indicated SARS-CoV-2 variants. Mutations of amino acid residues that are shared by at least two strains or are unique to specific strains are indicated in different colours. Mutations were considered shared if they affected the same amino acid position even if the change was not identical.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/69317/elife-69317-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** The 96-well racks of serum samples including controls are serially diluted after an initial dilution of 1:10 to generate four total dilution plates. These are used to treat pre-seeded Vero E6 cells in 384-well assay plates in duplicate before infection with SARS-CoV-2 virus. After immunostaining with DAPI and a 488-conjugated monoclonal antibody against SARS-CoV-2 nucleoprotein, each well is imaged and infection area per area of cells calculated, followed by automated curve fitting and identification of serum dilution factor to achieve 50% neutralisation (IC50).
 
 Although B.1.1.7 infection appeared to induce limited heterotypic immunity, relative to D614G infection, differences in both the severity of infection with each variant and the time since infection may have affected the degree of antibody cross-reactivity observed. For example, higher SARS-CoV-2-neutralising antibody titres are found in infections leading to severe COVID-19 than in mild/asymptomatic infection (Long et al., 2020) and these higher titres may include broader antibody diversity. Similarly, a longer time since infection may permit broader antibody diversity through somatic hypermutation and affinity maturation (Gaebler et al., 2021), potentially increasing cross-reactivity. However, the stronger heterotypic recognition of B.1.1.7 by D614G sera was independent of severity of infection and was, in fact, more pronounced in mild/asymptomatic than in severe D614G infection, when the two were considered separately, with sera from severe and mild/asymptomatic D614G infection retaining 52% and 85% neutralisation of B.1.1.7 (Figure 2—figure supplement 1). Moreover, the ability of sera from mild/asymptomatic D614G to neutralise B.1.1.7 did not change over time (Figure 2—figure supplement 2). Indeed, whilst binding antibody titres were significantly reduced for all three Ig classes in D614G sera in the 2 months of follow-up, neutralising antibody titres remained comparable for the Wuhan and B.1.1.7 strains and were undetectable at both time-points for the B.1.351 strain (Figure 2—figure supplement 2). Lastly, to adjust for potentially confounding differences in both the severity of infection and time since infection with each variant, we compared a subset of 11 seropositive samples from D614G or B.1.1.7 infection. These were selected for comparable disease outcome (all mild/asymptomatic) and for time since confirmed infection (on average, 24.0 and 19.5 days, respectively, p=0.37). Analysis of these comparable subsets further supported the notion that B.1.1.7 infection elicited reduced heterotypic immunity, with D614G and B.1.1.7 sera retaining 87% and 42% neutralisation of B.1.1.7 and D614G, respectively, and much lower neutralisation of B.1.351 (Figure 2—figure supplement 3).
 
@@ -89,30 +141,152 @@ The B.1.351, B.1.1.28, and B.1.617.2 VOCs appear comparably sensitive to antibod
 
 ## Materials and methods
 
-## Donor and patient samples and clinical data
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 anti-human IgG (monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562176; Cat# 409318</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human IgM (monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_493011; Cat# 314510</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-human IgA (monoclonal)</td>
+      <td>Miltenyi Biotech</td>
+      <td>RRID:AB_2733860; Cat# 130-114-002</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SARS-CoV-2 S2 clone D001 (monoclonal)</td>
+      <td>SinoBiological</td>
+      <td>RRID:AB_2857932; Cat# 40590-D001</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa488 anti-SARS-CoV-2 nucleoprotein (monoclonal)</td>
+      <td>Produced in-house</td>
+      <td>CR3009</td>
+      <td>IF</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-SARS-CoV-2_WT spike</td>
+      <td>Dr Massimo Pizzato, University of Trento, Italy</td>
+      <td>Wuhan spike sequence</td>
+      <td>Transfected construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-SARS-CoV-2_D614G spike</td>
+      <td>Dr Massimo Pizzato, University of Trento, Italy</td>
+      <td>Wuhan spike sequence with D614G mutation and cytoplasmic tail deletion</td>
+      <td>Transfected construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-SARS-CoV-2_B.1.1.7 spike</td>
+      <td>This paper</td>
+      <td>B.1.1.7 spike sequence</td>
+      <td>Transfected construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-SARS-CoV-2_ B.1.351 spike</td>
+      <td>This paper</td>
+      <td>B.1.351 spike sequence</td>
+      <td>Transfected construct</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>Cell Services facility at the Francis Crick Institute</td>
+      <td>RRID:CVCL_0063; CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus sp.)</td>
+      <td>Vero E6</td>
+      <td>Dr Björn Meyer, Institut Pasteur, Paris, France</td>
+      <td>CRL-1586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus sp.)</td>
+      <td>Vero V1</td>
+      <td>Prof. Steve Goodbourn, St. George’s, University of London, London, UK</td>
+      <td>CCL-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SARS-CoV-2</td>
+      <td>hCoV-19/England/02/2020</td>
+      <td>Respiratory Virus Unit, Public Health England, UK</td>
+      <td>Wuhan strain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SARS-CoV-2</td>
+      <td>hCoV-19/England/204690005/2020</td>
+      <td>Public Health England (PHE), UK, through Prof. Wendy Barclay, Imperial College London, London, UK</td>
+      <td>B.1.1.7 strain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SARS-CoV-2</td>
+      <td>501Y.V2.HV001 Cele et al., 2021</td>
+      <td></td>
+      <td>B.1.351 strain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Donor and patient samples and clinical data
 
 Serum or plasma samples from D614G infection were obtained from UCLH (REC ref: 20/HRA/2505) COVID-19 patients (n=20, acute D614G infection, COVID-19 patients) as previously described (Ng et al., 2020), or from UCLH health care workers (n=17, acute D614G infection, mild/asymptomatic), as previously described (Houlihan et al., 2020; Supplementary file 1). These samples were collected between March 2020 and June 2020. Serum or plasma samples from B.1.1.7 infection were obtained from patients (n=29, acute B.1.1.7 infection, mild/asymptomatic) admitted to UCLH (REC ref: 20/HRA/2505) for unrelated reasons, between December 2020 and January 2021, who then tested positive for SARS-CoV-2 infection by RT-qPCR, as part of routine testing (Supplementary file 1). Infection with B.1.1.7 was confirmed by sequencing of viral RNA, covered from nasopharyngeal swabs. A majority of these patients (n=23) subsequently developed mild COVID-19 symptoms and six remained asymptomatic. All serum or plasma samples were heat-treated at 56°C for 30 min prior to testing. No statistical methods were used to compute sample size for a pre-determined effect size. All patients/participants who had consented and were available at the time of the study were included.
 
-## Diagnosis of SARS-CoV-2 infection by RT-qPCR and next-generation sequencing
+### Diagnosis of SARS-CoV-2 infection by RT-qPCR and next-generation sequencing
 
 SARS-CoV-2 nucleic acids were detected in nasopharyngeal swabs from hospitalised patients by a diagnostic RT-qPCR assay using custom primers and probes (Grant et al., 2020). Assays were run by Health Services Laboratories (HSL), London, UK. Diagnostic RT-qPCR assays for SARS-CoV-2 infection in health care workers was run at the Francis Crick Institute, as previously described (Aitken et al., 2020). SARS-CoV-2 RNA-positive samples (RNA amplified by Aptima Hologic) were subjected to real-time whole-genome sequencing at the UCLH Advanced Pathogen Diagnostics Unit. RNA was extracted from nasopharyngeal swab samples on the QiaSymphony platform using the Virus Pathogen Mini Kit (Qiagen). Libraries were prepared using the Illumina DNA Flex library preparation kit and sequenced on an Illumina MiSeq (V2) using the ARTIC protocol for targeted amplification (primer set V3). Genomes were assembled using an in-house pipeline (ICONIC Consortium et al., 2017) and aligned to a selection of publicly available SARS-CoV-2 genomes (Elbe and Buckland-Merrett, 2017) using the MAFFT alignment software (Katoh and Standley, 2013). Phylogenetic trees were generated from multiple sequence alignments using IQ-TREE (Nguyen et al., 2015) and FigTree (http://tree.bio.ed.ac.uk/software/figtree), with lineages assigned (including B.1.1.7 calls) using pangolin (http://github.com/cov-lineages/pangolin), and confirmed by manual inspection of alignments.
 
-## Cells lines and plasmids
+### Cells lines and plasmids
 
 HEK293T cells were obtained from the Cell Services facility at the Francis Crick Institute, verified as mycoplasma-free and validated by DNA fingerprinting. Vero E6 and Vero V1 cells were kindly provided by Dr Björn Meyer, Institut Pasteur, Paris, France, and Prof. Steve Goodbourn, St. George’s, University of London, London, UK, respectively. Cells were grown in Iscove’s Modified Dulbecco’s Medium (Sigma-Aldrich) supplemented with 5% fetal bovine serum (Thermo Fisher Scientific), L-glutamine (2 mM, Thermo Fisher Scientific), penicillin (100 U/ml, Thermo Fisher Scientific), and streptomycin (0.1 mg/ml, Thermo Fisher Scientific). For SARS-CoV-2 spike expression, HEK293T cells were transfected with an expression vector (pcDNA3) carrying a codon-optimised gene encoding the wild-type full-length SARS-CoV-2 reference spike (referred to here as Wuhan spike, UniProt ID: P0DTC2) or a variant carrying the D614G mutation and a deletion of the last 19 amino acids of the cytoplasmic tail (referred to here as D614G spike) (both kindly provided by Massimo Pizzato, University of Trento, Italy). Similarly, HEK293T cells were transfected with expression plasmids (pcDNA3) encoding the full-length B.1.1.7 spike variant (D614G, Δ69–70, Δ144, N501Y, A570D, P681H, T716I, S982A, and D1118H) or the full-length B.1.351 spike variant (D614G, L18F, D80A, D215G, L242H, R246I, K417N, E484K, N501Y, A701V) (both synthesised and cloned by GenScript). All transfections were carried out using GeneJuice (EMD Millipore) and transfection efficiency was between 20% and 54% in separate experiments.
 
-## SARS-CoV-2 isolates
+### SARS-CoV-2 isolates
 
 The SARS-CoV-2 reference isolate (referred to as the Wuhan strain) was the hCoV-19/England/02/2020, obtained from the Respiratory Virus Unit, Public Health England, UK (GISAID EpiCov accession EPI_ISL_407073). The B.1.1.7 isolate was the hCoV-19/England/204690005/2020, which carries the D614G, Δ69–70, Δ144, N501Y, A570D, P681H, T716I, S982A, and D1118H mutations (Brown et al., 2021; Figure 2—figure supplement 4), obtained from Public Health England (PHE), UK, through Prof. Wendy Barclay, Imperial College London, London, UK. The B.1.351 virus isolate was the 501Y.V2.HV001, which carries the D614G, L18F, D80A, D215G, Δ242–244, K417N, E484K, N501Y, A701V mutations (Cele et al., 2021; Figure 2—figure supplement 4). However, sequencing of viral genomes isolated following further passage in Vero V1 cells identified the Q677H and R682W mutations at the furin cleavage site, in approximately 50% of the genomes. All viral isolates were propagated in Vero V1 cells.
 
-## Flow cytometric detection of antibodies to spike glycoproteins
+### Flow cytometric detection of antibodies to spike glycoproteins
 
 HEK293T cells were transfected to express the different SARS-CoV-2 spike variants. Two days after transfection, cells were trypsinised and transferred into V-bottom 96-well plates (20,000 cells/well). Cells were incubated with sera (diluted 1:50 in PBS) for 30 min, washed with FACS buffer (PBS, 5% BSA, 0.05% sodium azide), and stained with BV421 anti-IgG (clone HP6017, Biolegend), APC anti-IgM (clone MHM-88, Biolegend), and PE anti-IgA (clone IS11-8E10, Miltenyi Biotech) for 30 min (all antibodies diluted 1:200 in FACS buffer). Expression of SARS-CoV-2 spike was confirmed by staining with the D001 antibody (40590-D001, SinoBiological). Cells were washed with FACS buffer and fixed for 20 min in CellFIX buffer (BD Bioscience). Samples were run on a Ze5 analyzer (Bio-Rad) running Bio-Rad Everest software v2.4 or an LSR Fortessa with a high-throughput sampler (BD Biosciences) running BD FACSDiva software v8.0, and analyzed using FlowJo v10 (Tree Star Inc) analysis software, as previously described (Ng et al., 2020). All runs included three positive control samples, which were used for normalisation of mean fluorescence intensity (MFI) values. To this end, the MFI of the positively stained cells in each sample was expressed as a percentage of the MFI of the positive control on the same 96-well plate. The results shown are from one of one to two independent experiments.
 
-## SARS-CoV-2 neutralisation assay
+### SARS-CoV-2 neutralisation assay
 
 SARS-CoV-2 variant neutralisation was tested using an in-house developed method (Figure 2—figure supplement 5). Heat-inactivated serum samples in QR coded vials (FluidX/Brooks) were assembled into 96-well racks along with foetal calf serum-containing vials as negative controls and SARS-CoV-2 spike RBD-binding nanobody (produced in-house) vials as positive controls. A Viaflo automatic pipettor fitted with a 96-channel head (Integra) was used to transfer serum samples into V-bottom 96-well plates (Thermo 249946) prefilled with Dulbecco’s modified eagle medium to achieve a 1:10 dilution. The Viaflo was then used to serially dilute from the first dilution plate into three further plates at 1:4 to achieve 1:40, 1:160, and 1:640. Next, the diluted serum plates were stamped into duplicate 384-well imaging plates (Greiner 781091) pre-seeded the day before with 3000 Vero E6 cells per well, with each of the four dilutions into a different quadrant of the final assay plates to achieve a final working dilution of samples at 1:40, 1:160, 1:640, and 1:2560. Assay plates were then transferred to containment level 3 (CL3) where cells were infected with the indicated SARS-CoV-2 viral strain, by adding a pre-determined dilution of the virus prep using a Viaflo fitted with a 384 head with tips for the no-virus wells removed. Plates were incubated for 24 hr at 37°C, 5% CO2 and then fixed by adding a concentrated formaldehyde solution to achieve a final concentration of 4%. Assay plates were then transferred out of CL3 and fixing solution washed off, cells blocked, and permeabilised with a 3% BSA/0.2% Triton-X100/PBS solution, and finally immunostained with DAPI and an Alexa488-conjugated anti-nucleoprotein monoclonal antibody (clone CR3009; produced in-house). Automated imaging was carried out using an Opera Phenix (Perkin Elmer) with a 5× lens and the ratio of infected area (Alexa488-positive region) to cell area (DAPI-positive region) per well calculated by the Phenix-associated software Harmony. A custom automated script runs plate normalisation by background subtracting the median of the no-virus wells and then dividing by the median of the virus-only wells before using a three-parameter dose-response model for curve fitting and identification of the dilution which achieves 50% neutralisation for that particular serum sample (IC50). The results shown are from one of two to three independent experiments.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were analysed and plotted in SigmaPlot v14.0 (Systat Software). Parametric comparisons of normally distributed values that satisfied the variance criteria were made by paired or unpaired Student’s t-tests or one-way analysis of variance tests. Data that did not pass the variance test were compared with Wilcoxon signed rank tests.

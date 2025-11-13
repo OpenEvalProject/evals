@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Department of Biological Sciences, Graduate School of Science, The University of Tokyo Tokyo Japan
+1. Department of Biological Sciences, Graduate School of Science, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
 ## Abstract
 
-The endothelin ET B receptor is a promiscuous G-protein coupled receptor that is activated by vasoactive peptide endothelins. ET B signaling induces reactive astrocytes in the brain and vasorelaxation in vascular smooth muscle. Consequently, ET B agonists are expected to be drugs for neuroprotection and improved anti-tumor drug delivery. Here, we report the cryo-electron microscopy structure of the endothelin-1-ET B -G i complex at 2.8 Å resolution, with complex assembly stabilized by a newly established method. Comparisons with the inactive ET B receptor structures revealed how endothelin-1 activates the ET B receptor. The NPxxY motif, essential for G-protein activation, is not conserved in ET B , resulting in a unique structural change upon G-protein activation. Compared with other GPCR-G-protein complexes, ET B binds G i in the shallowest position, further expanding the diversity of G-protein binding modes. This structural information will facilitate the elucidation of G-protein activation and the rational design of ET B agonists.
+The endothelin ETB receptor is a promiscuous G-protein coupled receptor that is activated by vasoactive peptide endothelins. ETB signaling induces reactive astrocytes in the brain and vasorelaxation in vascular smooth muscle. Consequently, ETB agonists are expected to be drugs for neuroprotection and improved anti-tumor drug delivery. Here, we report the cryo-electron microscopy structure of the endothelin-1-ETB-Gi complex at 2.8 Å resolution, with complex assembly stabilized by a newly established method. Comparisons with the inactive ETB receptor structures revealed how endothelin-1 activates the ETB receptor. The NPxxY motif, essential for G-protein activation, is not conserved in ETB, resulting in a unique structural change upon G-protein activation. Compared with other GPCR-G-protein complexes, ETB binds Gi in the shallowest position, further expanding the diversity of G-protein binding modes. This structural information will facilitate the elucidation of G-protein activation and the rational design of ETB agonists.
 
 ## Introduction
 
@@ -27,13 +27,148 @@ To date, eight crystal structures of the human ETB receptor have been reported, 
 
 ## Results
 
-## Development of fusion-G system for structural determination
+### Development of fusion-G system for structural determination
 
 For the cryo-EM analysis, we initially used the thermostabilized receptor ETB-Y5, which contains five thermostabilizing mutations Okuta et al., 2016. However, the purified ETB-Y5 could not form a stable complex with the Gi trimer because the mutations were known to stabilize the inactive conformation. Thus, we chose to use the wild-type ETB for the structural study. To purify the stable GPCR-G-protein complex, we developed a ‘Fusion-G system’ (Figure 1A) by combining two complex stabilization techniques. One of these techniques was the NanoBiT tethering strategy Duan et al., 2020; Dixon et al., 2016, where the large part of NanoBiT (LgBiT) was fused to the C-terminus of the receptor, and a modified 13-amino acid peptide of NanoBiT (HiBiT) was fused to the C-terminus of Gβ via the GS linker. HiBit has a potent affinity for LgBiT (Kd = 700 pM) and thus provides an additional linkage to stabilize the interface between H8 of the receptor and the Gβ subunit of the G-protein. This strategy has been successfully used to solve several GPCR/G-protein complex structures Duan et al., 2020; Xia et al., 2021. The other technique was a 3-in-1 vector for G-protein expression, in which the Gα subunit was fused to the C-terminus of the Gγ subunit (Kim et al., 2020; Nureki et al., 2022; Figure 1A). The resulting pFastBac-Dual vector could produce a virus that expressed the G-protein trimer. Moreover, the protease-cleavable green fluorescent protein (EGFP) was connected to the C-terminus of the receptor-LgBiT fusion, allowing analysis of complex formation by fluorescence-detection size-exclusion chromatography (FSEC) Hattori et al., 2012. Using this system, we confirmed the complex formation of LPA1 and S1P5 with Gi (Figure 1—figure supplement 1A, B), whose structures in complex with the Gi trimer had previously been reported Akasaka et al., 2022; Liu et al., 2022; Yuan et al., 2021; Xu et al., 2022a.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representations of the fusion-G system. (B) Fluorescence-detection size-exclusion chromatography (FSEC) analysis of complex formation by the ETB receptor. The fluorescence intensities are adjusted to equalize those corresponding to the void volumes. (C) Cryo-electron microscopy (cryo-EM) map with variously colored densities. (D) Structure of the complex determined after refinement in the cryo-EM map, shown as a ribbon representation. (E) Density focused on ET-1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Fluorescence-detection size-exclusion chromatography (FSEC) analysis of the complex formation of LPA1 (A) and S1P5 (B). The fluorescence intensities are adjusted to equalize those corresponding to the void volumes. When co-expressed with the Gi trimer, the peak corresponding to the complex appears on the high molecular weight side of the receptor, reflecting the basal activity and the HiBiT-LgBiT binding, independent of the G-protein. When the co-expressed cells were treated with the agonists and apyrase, the complex peak of LPA1 and S1P5 became larger, corresponding to the GPCR-G-protein complex. (C) Size-exclusion chromatography elution profiles of the ETB -Gi complex. (D) SDS-PAGE analysis of the gel filtration fractions. Although the unbound receptor was present, the complex could be separated and purified effectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Flow chart of the cryo-EM data processing for the ETB -Gi complex, including particle projection selection, classification, and three-dimensional (3D) density map reconstruction. Local resolution maps, FSC curves, and cryo-EM density maps are also shown. Unless otherwise noted, analysis jobs were run on cryoSPARC v3.3. Details are provided in the Methods section.
+
 We cloned the full-length human ETB receptor into the LgBiT vector. Using the fusion-G-system, we confirmed the formation of the ETB-Gi complex (Figure 1B). The co-expressed cells from a 300 ml culture were solubilized and purified by Flag affinity chromatography. After incubation with scFv16, the complex was purified by size exclusion chromatography (Figure 1—figure supplement 1C, D). The structure of the purified complex was determined by single-particle cryo-EM analysis with an overall resolution of 2.8  Å (Figure 1C and D, Figure 1—figure supplement 2, Table 1). No density corresponding to NanoBiT was observed in the 2D class averages and reconstructed 3D density map, as in the previous structural studies using the NanoBiT tethering strategy Duan et al., 2020; Xia et al., 2021; Wang et al., 2021; Xu et al., 2022b. We refined with a mask on the receptor and obtained the receptor structure with a nominal resolution of 3.1  Å (Figure 1—figure supplement 2, Table 1). The agonist ET-1 is well resolved (Figure 1E).
 
-## Receptor conformational changes upon Gi activation
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>ETB-Gi (overall)</th>
+      <th>ETB-Gi (receptor focused)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="2">Titan Krios (Thermo Fisher Scientific)</td>
+    </tr>
+    <tr>
+      <td>Voltage (keV)</td>
+      <td colspan="2">300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="2">49.965</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td colspan="2">Gatan K3 summit camera (Gatan)</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="2">×105,000</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="2">–0.8–1.6</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å/pix)</td>
+      <td colspan="2">0.83</td>
+    </tr>
+    <tr>
+      <td>Number of movies</td>
+      <td colspan="2">10,408</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td colspan="2">C1</td>
+    </tr>
+    <tr>
+      <td>Picked particles</td>
+      <td colspan="2">3,863,134</td>
+    </tr>
+    <tr>
+      <td>Final particles</td>
+      <td colspan="2">260,085</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>2.80</td>
+      <td>3.13</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td colspan="2">0.143</td>
+    </tr>
+    <tr>
+      <td colspan="3">Model refinement</td>
+    </tr>
+    <tr>
+      <td>Atoms</td>
+      <td>9,367</td>
+      <td>2,523</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.m.s. deviations for ideal</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.56</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>11.68</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>Rotamers (%)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td colspan="3">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.55</td>
+      <td>98.04</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.19</td>
+      <td>1.96</td>
+    </tr>
+    <tr>
+      <td>Outlier (%)</td>
+      <td>0.26</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+### Receptor conformational changes upon Gi activation
 
 The extracellular half of the receptor superimposes well on the ET-1-bound crystal structure, and ET-1 interacts closely with the receptor in a similar manner (Figure 2A). Previous crystallographic analyses have suggested that the ET-1 binding leads to the downward movement of N3787.45 and W3366.48 in the C6.47W6.48xP6.50 motif at the bottom of the ligand binding pocket, which ultimately results in the downward rotation of F3326.44 in the P5.50I3.40F6.44 motif, and leading to the intracellular opening Shihoya et al., 2016; Nagiri et al., 2019; Izume et al., 2020; Shihoya et al., 2018; Shihoya et al., 2017. The downward movement of the residues is larger in the ETB-Gi complex than in the ET-1-bound crystal structure (Figure 2B), which consequently results in the outward displacement of the intracellular portion of the transmembrane helix (TM) 6 by 6.8 Å as compared to the apo state (Figure 2C), and by 5.1 Å as compared to the ET-1-bound crystal structure (Figure 2D). The degree of TM6 opening observed is less than those of other Gi-coupled receptors (e.g. μOR: 10 Å, CB1: 11.6 Å, and S1P1: 9 Å) Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020.
 
@@ -43,9 +178,21 @@ The extracellular half of the receptor superimposes well on the ET-1-bound cryst
 
 In most class A GPCRs, the highly conserved D3.49R3.50Y3.51 and N7.49P7.50xxY7.53 motifs on the intracellular side play an essential role in G-protein coupling Venkatakrishnan et al., 2013. The D3.49R3.50Y3.51 motif is conserved in the ETB receptor. Upon receptor activation, the ionic lock between D1983.49 and R1993.50 is broken, and R1993.50 becomes oriented towards the intracellular cavity (Figure 2E), similar to other GPCRs Zhuang et al., 2022; Rasmussen et al., 2011; Ring et al., 2013; Cherezov et al., 2007; Manglik et al., 2012; Huang et al., 2015 (Figure 2F and G). In contrast, the N7.49P7.50xxY7.53 motif is altered to N7.49P7.50xxL7.53Y7.54, where Y7.53 is replaced by L3867.53. In most class A GPCRs, receptor activation disrupts the stacking interaction between Y7.53 and F8.50 Carpenter and Tate, 2017. Y7.53 moves inwardly and forms a water-mediated hydrogen bond with the highly conserved Y5.58 (Figure 2F and G; Ring et al., 2013; Huang et al., 2015; Deupi et al., 2012). The mutations of the tyrosines significantly reduce G-protein activation Goncalves et al., 2010; Flock et al., 2015, indicating that the interaction between Y5.58-and Y7.53 stabilizes the active conformation of the receptor. Along with the motion, the intracellular portion of TM7 is displaced by approximately 4 Å. As L3867.53 is a hydrophobic residue, it cannot form a polar interaction, and hence in the ETB-Gi complex, TM7 is not displaced inwardly (Figure 2C). Nonetheless, the stacking interaction with F3938.50 is disrupted similarly. Moreover, the intracellular portion of TM7 is displaced downward by 2.8 Å. As expected, Y7.54 is directed towards the membrane plane, and its rotamer does not change upon receptor activation (Figure 2E). The substitution of Y7.53 with L3867.53 affects the movement of TM7 upon receptor activation, thereby distinguishing it from other GPCRs.
 
-## Shallow Gi coupling
+### Shallow Gi coupling
 
 These conformational changes create an intracellular cavity for G-protein recognition (Figure 3A, Figure 3—figure supplement 1). The cavity closely interacts with the C-terminal α5-helix of Gαi, the primary determinant for G-protein coupling. In particular, R1993.50 forms a hydrogen bond with the backbone carbonyl of C351G.H5.23 (superscript indicates the common Gα numbering [CGN] system Flock et al., 2015), which is commonly observed in other GPCR-Gi complexes Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019. Additionally, the C-terminal carboxylate of α5-helix forms electrostatic interactions with the backbone nitrogen atom of K3918.48. There are several other hydrogen-bonding interactions between the α5-helix and the receptor (Figure 3A). On ICL2, W206ICL2 fits into a hydrophobic pocket formed by L194G.S3.01, F336G.H5.08, T340G.H5.12, I343G.H5.15, and I344G.H5.16 in the Gαi subunit. Moreover, ICL2 forms extensive van der Waals interactions with the αN (Figure 3—figure supplement 1), which are not observed in other GPCR-Gi complexes (Figure 3—figure supplement 1; Yuan et al., 2021; Hua et al., 2020).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-v1.jpg)
+
+**Figure 3.:** (A) Hydrogen-bonding interactions between ETB and the α5-helix, indicated by black dashed lines. (B) Comparison of the Gα positions in the GPCR-G-protein complexes. The structures are superimposed on the receptor structure of the NTS1-C state.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Receptor-Gi interactions within 4.5 Å. Black dashed lines indicate hydrogen bonds. (C-E) Structural comparisons of the interactions between ICL2 and Gi in ETB (C), S1P1 (D), and CB1 (E). Residues are shown as stick and CPK models. (F) Structural comparison of the Gαi1 subunits.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85821/elife-85821-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A-F) Interactions between the α5-helix and TM7-H8 within 4.5 Å in the respective complexes.
 
 Upon receptor activation, the intracellular portion of TM7 moves downwards, resulting in the unique Gi coupling mode. Along with this motion, L3867.53 directly forms a hydrophobic contact with G352G.H5.24. Moreover, TM7 and H8 extensively interact with the α5-helix (Figure 3—figure supplement 2), which is not observed in other GPCR-Gi complexes (Figure 3—figure supplement 2; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Kato et al., 2019). These structural features enable the α5-helix of ETB-Gi to be located in the shallowest position relative to the receptor among the Gs, Gi, and Gq-coupled GPCR structures (Kim et al., 2020; Yuan et al., 2021; Zhuang et al., 2022; Hua et al., 2020; Rasmussen et al., 2011; Kato et al., 2019; Figure 3B). Nevertheless, the Gαi structure adopts a nucleic acid-free state, similar to the μOR-Gi complex (Figure 3—figure supplement 1; Zhuang et al., 2022; Wall et al., 1995). The interacting surface area between the receptor and Gαi subunit is 1,196 Å2, which is comparable to those in other GPCR-Gi complexes (µOR : 1,260 Å2. NTS1 : 1,197 Å2. and S1P1: 1,376 Å2. Yuan et al., 2021; Zhuang et al., 2022; Kato et al., 2019). As described above, ICL2 and TM7 extensively interact with the αN and α5 helix of the Gαi subunit, respectively. These interactions are uniquely observed in the ETB-Gi complex and can compensate for the shallow binding of Gi.
 
@@ -59,11 +206,119 @@ Previous structural analyses have demonstrated that docking the α5-helix to the
 
 ## Materials and methods
 
-## Constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>ET-1</td>
+      <td>PEPTIDE INSTITUTE, INC.</td>
+      <td>Cat #,4198 v</td>
+      <td>Ligand for ETB</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sf-900 II SFM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #,10902088</td>
+      <td>Expression medium for sf9 cells</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>n-dodecyl-β-D-maltoside</td>
+      <td>Calbiochem</td>
+      <td>CAS number:69227-93-6</td>
+      <td>Detergents used in purification of ETB-Gi complex</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate</td>
+      <td>Merck Millipore</td>
+      <td>CAS number:1510-21-0</td>
+      <td>For purifying ETB-Gi complex</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Apyrase</td>
+      <td>New England Biolabs</td>
+      <td>Cat #,M0398</td>
+      <td>Enzyme used for ETB-Gi complex formation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-DYKDDDDK G1 Affinity resin</td>
+      <td>Gen Script</td>
+      <td>Cat #,L00432</td>
+      <td>Affinity resin for DYKDDDDK tags</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Lauryl Maltose Neopentyl Glycol</td>
+      <td>Anatrace</td>
+      <td>CAS number:1257852-96-2</td>
+      <td>Detergents used in purification of ETB-Gi complex</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EPU</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>For Cryo-EM data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3.1</td>
+      <td>Zivanov et al., 2018</td>
+      <td>RRID:SCR_016274</td>
+      <td>For Cryo-EM data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v3.3</td>
+      <td>STRUCTURA BIOTECHNOLOGY</td>
+      <td>RRID:SCR_016501</td>
+      <td>For cryo-EM data processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td>RRID:SCR_014222</td>
+      <td>For structure model building</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix 1.19–4092</td>
+      <td>Afonine et al., 2018</td>
+      <td>RRID:SCR_014224</td>
+      <td>For structure refinement</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Quantifoil holey carbon grid</td>
+      <td>Quantifoil</td>
+      <td>R1.2/1.3, Au, 300 mesh</td>
+      <td>For cryo-EM specimen preparation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs
 
 The full-length human ETB gene was subcloned into the pFastBac vector with an HA-signal peptide sequence on its N-terminus and the LgBiT fused to its C-terminus followed by a 3 C protease site and EGFP-His8 tag. A 15 amino sequence of GGSGGGGSGGSSSGG was inserted into both the N-terminal and C-terminal sides of LgBiT. The Flag epitope tag (DYKDDDDK) was introduced between G57 and L66. The native signal peptide was replaced with the haemagglutinin signal peptide. Rat Gβ1 and bovine Gγ2 were subcloned into the pFastBac Dual vector, as described previously Kobayashi et al., 2020. In detail, rat Gβ1 was cloned with a C-terminal HiBiT connected with a 15 amino sequence of GGSGGGGSGGSSSGG. Moreover, human Gαi1 was subcloned into the C-terminus of the bovine Gγ2 with a nine amino sequence GSAGSAGSA linker. The resulting pFastBac dual vector can express the Gi trimer.
 
-## Complex formation and FSEC analysis
+### Complex formation and FSEC analysis
 
 Bacmid preparation and virus production was performed according to the Bac-to-Bac baculovirus system manual (Gibco, Invitrogen). Spodoptera frugiperda Sf9 cells at a density of 3 × 106 cells/ml were co-infected with baculoviruses encoding receptor and Gi trimer at the ratio of 1:1. For the expression of the receptor alone, the baculovirus encoding receptor was only used. Cells were harvested 48  hr after infection. 1 ml cell pellets were solubilized in 200 μl buffer, containing 20  mM Tris-HCl, pH 8.0, 150  mM NaCl, 1% n-dodecyl-β-D-maltoside (DDM) (Calbiochem), 0.2% cholesteryl hemisuccinate (CHS) (Merck) and rotated for 1  hr at 4 °C.
 
@@ -71,16 +326,16 @@ For the complex formation with the agonist, cell pellets were resuspended in 20 
 
 The supernatants were separated from the insoluble material by ultracentrifugation at 100,000 g for 20  min. A fraction of the resulting supernatant (10 μl) was loaded onto a Superdex 200 increase 10/300 column in 20  mM Tris-HCl, pH 8.0, 150  mM NaCl, and 0.03% DDM, and run at the flow rate of 0.5 ml/min. The eluent was detected by a fluorometer with the excitation wavelength (480 nm) and emission wavelength settings (512 nm).
 
-## ET-1–ETB–Gi complex formation and purification
+### ET-1–ETB–Gi complex formation and purification
 
 For expression, 300 ml of the Sf9 cells at a density of 3 × 106 cells/ml were co-infected with baculovirus encoding the ETB-LgBiT-EGFP and Gi trimer at the ratio of 1:1. Cells were harvested 48  hr after infection. Cell pellets were resuspended in 20  mM Tris-HCl, pH 8.0, 100  mM NaCl, and 10% Glycerol, and homogenized by douncing ~30 times. Apyrase was added to the lysis at a final concentration of 25 mU/ml. ET-1 was added at a final concentration of 2  µM. The lysate was incubated at room temperature for 1  hr with flipping. Then, the membrane fraction was collected by ultracentrifugation at 180,000 g for 1 hr. The cell membrane was solubilized in buffer, containing 20  mM Tris-HCl, pH 8.0, 150  mM NaCl, 1% DDM, 0.2% CHS, 10% glycerol, and 2 μM ET-1 for 1  hr at 4 °C. The supernatant was separated from the insoluble material by ultracentrifugation at 180,000 g for 30  min and then incubated with the Anti-DYKDDDDK G1 resin (Genscript) for 1 hr. The resin was washed with 20 column volumes of wash buffer containing 20  mM Tris-HCl, pH 8.0, 500  mM NaCl, 10% Glycerol, 0.1% Lauryl Maltose Neopentyl Glycol (LMNG) (Anatrace), and 0.01% CHS. The complex was eluted by the wash buffer containing 0.15 mg ml–1 Flag peptide. The eluate was treated with 0.5 mg of HRV-3C protease (homemade) and dialyzed against buffer (20  mM Tris-HCl, pH 8.0, and 300  mM NaCl). Then, cleavaged GFP-His8 and HRV-3C protease were removed with Ni+-NTA resin. The flow-through was incubated with the scFv16, prepared as described previously Okamoto et al., 2021. The complex was concentrated and loaded onto a Superdex 200 increase 10/300 column in 20  mM Tris-HCl, pH 8.0, 150  mM NaCl, 0.01% LMNG, 0.001% CHS, and 1 μM agonist. Peak fractions were concentrated to 8 mg/ml.
 
-## Cryo-EM grid preparation and data acquisition
+### Cryo-EM grid preparation and data acquisition
 
 The purified complex was applied onto a freshly glow-discharged Quantifoil holey carbon grid (R1.2/1.3, Au, 300 mesh) and plunge-frozen in liquid ethane by using a Vitrobot Mark IV (FEI). Cryo-EM data collection was performed on a 300 kV Titan Krios G3i microscope (Thermo Fisher Scientific) equipped with a BioQuantum K3 imaging filter (Gatan) and a K3 direct electron detector (Gatan). In total, 10,408 movies were acquired with a calibrated pixel size of 0.83  Å pix−1 and with a defocus range of −0.8 to −1.6  μm, using the EPU software (Thermo Fisher’s single-particle data collection software). Each movie was acquired for 2.3  s and split into 48 frames, resulting in an accumulated exposure of about 49.965 e− Å−2.
 
 All acquired movies in super-resolution mode were binned by 2x and were dose-fractionated and subjected to beam-induced motion correction implemented in RELION 3.1 Zivanov et al., 2018. The contrast transfer function (CTF) parameters were estimated using patch CTF estimation in cryoSPARC v3.3 Punjani et al., 2017. Particles were initially picked from a small fraction with the Blob picker and subjected to several rounds of two-dimensional (2D) classification in cryoSPARC. Selected particles were used for training of topaz model Bepler et al., 2019. For the full dataset, 3,863,134 particles were picked and extracted with a pixel size of 3.32 Å, followed by 2D classification to remove carbon edges and ice contaminations. A total of 1,442,243 particles were re-extracted with the pixel size of 1.16 Å and curated by three-dimensional (3D) classification without alignment in RELION. Finally, the 260,085 particles in the best class were reconstructed using non-uniform refinement, resulting in a 2.80 Å overall resolution reconstruction, with the gold standard Fourier Shell Correlation (FSC = 0.143) criteria in cryoSPARC. Moreover, the 3D model was refined with a mask on the receptor. As a result, the local resolution of the receptor portion improved with a nominal resolution of 3.13  Å. The local resolution was estimated by cryoSPARC. The processing strategy is described in Figure 1—figure supplement 2.
 
-## Model building and refinement
+### Model building and refinement
 
 The quality of the density map was sufficient to build an atomic model. Previously reported high-resolution crystal structure of the ET-3 bound ETB receptor (PDB 6IGK) and cryo-EM MT1-Gi structure (PDB 7DB6) were used as the initial models for the model building of receptor and Gi portions, respectively Shihoya et al., 2018; Okamoto et al., 2021. Initially, the models were fitted into the density map by jiggle fit using COOT Emsley et al., 2010. Then, atomic models were readjusted into the density map using COOT and refined using phenix.real_space_refine (v1.19) with the secondary structure restraints using phenix.secondary_structure_restraints Adams et al., 2010; Afonine et al., 2018.

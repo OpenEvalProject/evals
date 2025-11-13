@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.39563.001 We report a functional switching valve within the female genitalia of the Brazilian cave insect Neotrogla . The valve complex is composed of two plate-like sclerites, a closure element, and in-and-outflow canals. Females have a penis-like intromittent organ to coercively anchor males and obtain voluminous semen. The semen is packed in a capsule, whose formation is initiated by seminal injection. It is not only used for fertilization but also consumed by the female as nutrition. The valve complex has two slots for insemination so that Neotrogla can continue mating while the first slot is occupied. In conjunction with the female penis, this switching valve is a morphological novelty enabling females to compete for seminal gifts in their nutrient-poor cave habitats through long copulation times and multiple seminal injections. The evolution of this switching valve may have been a prerequisite for the reversal of the intromittent organ in Neotrogla .
+We report a functional switching valve within the female genitalia of the Brazilian cave insect Neotrogla. The valve complex is composed of two plate-like sclerites, a closure element, and in-and-outflow canals. Females have a penis-like intromittent organ to coercively anchor males and obtain voluminous semen. The semen is packed in a capsule, whose formation is initiated by seminal injection. It is not only used for fertilization but also consumed by the female as nutrition. The valve complex has two slots for insemination so that Neotrogla can continue mating while the first slot is occupied. In conjunction with the female penis, this switching valve is a morphological novelty enabling females to compete for seminal gifts in their nutrient-poor cave habitats through long copulation times and multiple seminal injections. The evolution of this switching valve may have been a prerequisite for the reversal of the intromittent organ in Neotrogla.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ The genus Neotrogla (family Prionoglarididae) is a minute Brazilian cave insect 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39563/elife-39563-fig1-v2.jpg)
 
-**Figure 1.:** Neotrogla.(A) Whole abdomen of a virgin female showing the location of the mating system. T8 and 9 indicate tergites 8 and 9. (B) Light microscopy photograph of the spermathecal plate with a single seminal capsule. (C) CLSM image of the spermathecal plate. (D) 3D segmentation of the spermathecal plate with no seminal capsule. Dotted line indicates the section plane shown in F and G. (E) 3D segmentation of the spermathecal plate with two seminal capsules and showing seminal flow. (F) Attachment points for the seminal capsules in the virgin female. (G) The base of two seminal capsules in different stages of connection to the spermathecal plate (corresponding to the two seminal capsules in Figure 1E).
+**Figure 1.:** (A) Whole abdomen of a virgin female showing the location of the mating system. T8 and 9 indicate tergites 8 and 9. (B) Light microscopy photograph of the spermathecal plate with a single seminal capsule. (C) CLSM image of the spermathecal plate. (D) 3D segmentation of the spermathecal plate with no seminal capsule. Dotted line indicates the section plane shown in F and G. (E) 3D segmentation of the spermathecal plate with two seminal capsules and showing seminal flow. (F) Attachment points for the seminal capsules in the virgin female. (G) The base of two seminal capsules in different stages of connection to the spermathecal plate (corresponding to the two seminal capsules in Figure 1E).
 
 The semen within the capsule is used not only for fertilization but is also consumed by the female as nutrition. To compete for nutritious semen, the direction of sexual selection is reversed in Neotrogla (sex-role reversal: Yoshizawa et al., 2014). Each seminal capsule is voluminous (~0.05 mm3, corresponding to ~300 ml scaled up to humans), and the duration of the copulation is very long (for 40 to 70 hr). In a closely related species lacking reversal of genital structure (Lepinotus patruelis, Trogiidae), the seminal transfer for forming a similarly voluminous seminal capsule is known to complete in 50 min (Wearing-Wilde, 1995). The female penis of Neotrogla bears a lot of spines, by which females anchor a male coercively during copulation. Therefore, females are obviously responsible for this very long copulation, probably to obtain more semen from a male (Yoshizawa et al., 2014). After consumption of the semen, the empty capsule is detached from the plate, which is kept within the spermatheca. Because females frequently have empty capsules within the spermathecal pouch (in an extreme case, up to nine empty capsules and two filled ones attached to the plate were observed: Yoshizawa et al., 2014), female Neotrogla can be considered polyandrous, which is apparently controlled actively by the female.
 
@@ -42,6 +42,43 @@ In this study, we investigated the structure of the spermathecal plate by using 
 ## Results
 
 The spermatheca of Neotrogla is in principle composed of an extensible pouch for storage of the seminal capsule, a spermathecal plate divided into two interconnected sclerites (body sclerites 1 and 2: Sc1 and 2 hereafter), and the spermathecal duct, which discharges into the spermathecal plate (Figure 1CD, Video 1). The terminology used for the following description is summarized in Table 1.
+
+**Table 1.**
+ Valve terminology used in the text
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Actuator</th>
+      <th>Device used to operate a valve using electric, pneumatic or hydraulic means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body</td>
+      <td>The principal pressure-containing part of a valve in which the closure element and seats are located</td>
+    </tr>
+    <tr>
+      <td>Closure element (CE)</td>
+      <td>The moving part of a valve, positioned in the flow stream, that controls the flow through the valve, for example wedge, plug, clapper, ball</td>
+    </tr>
+    <tr>
+      <td>Controller</td>
+      <td>A device that directs the flow of a valve</td>
+    </tr>
+    <tr>
+      <td>End connection</td>
+      <td>The type of connection supplied on the ends of a valve that allows it to be connected to piping — may be a welded end, flanged end, threaded or socket weld</td>
+    </tr>
+    <tr>
+      <td>Pennation angle</td>
+      <td>The oblique attachment of single muscle fascicles to the CE. It was measured as the angle between the outermost fascicles in a given muscle bundle</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/39563/elife-39563-video1.mp4.jpg)
 
 The switching valve mechanism is located at the spermathecal plate. Sc 2 is a bowl-shaped chitinous structure harboring a fan-like muscle (the actuator), which originates at its ventral part and attaches to a thumb-shaped controller/closure element (CE: Figures 1CD and 2A–D). Given their attachment area, the force range of each muscle bundle is between 0.0758–0.6562 mN (assuming a standard intrinsic muscle force of 33 N/cm²: David et al., 2016). The CE is located at the dorsal connection of Sc1 and 2, where the spermathecal duct opens into the pouch (Figure 2A–D).
 
@@ -54,6 +91,125 @@ In the virgin female, Sc 2 is connected to Sc 1 laterally through an interlock-l
 The seminal fluid entering the main lumen of the duct can be directed into the left or right channel depending on the position of the CE. If the left part of the actuator muscle is activated, the CE is moved to the left, so that a channel on the right side opens, which then allows for seminal flow into the right capsule (Figure 2E). A small lateral extension at the distal end of the CE serves to close the opposite channel during the opening of the other channel (Figure 2DE). If the right part of the actuator is activated, the process is executed in reverse. In a female fixed during copula, seminal flow from the duct opening lumen toward one of two seminal capsules was clearly observed (Figure 1E). Seminal flow can thus be directed by the female through differential muscle activation that moves the CE.
 
 Measurements of each structure and the estimated power produced by the discernible muscle bundles mentioned above are summarized in Table 2.
+
+**Table 2.**
+ Measurements of each component of the spermathecal plate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Object</th>
+      <th>Pennation angle</th>
+      <th>Attachment area of muscle [cm2]</th>
+      <th>Muscle strength [mN]</th>
+      <th>Length [mm]</th>
+      <th>Volume [µm3]</th>
+      <th>Mass [µg]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Muscle m1</td>
+      <td>34.16</td>
+      <td>0.0000199</td>
+      <td>0.6562</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Muscle m2</td>
+      <td>30.18</td>
+      <td>0.0000191</td>
+      <td>0.6319</td>
+      <td>0.08</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Muscle m3</td>
+      <td>15.59</td>
+      <td>0.0000023</td>
+      <td>0.0758</td>
+      <td>0.09</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Muscle m4</td>
+      <td>44.55</td>
+      <td>0.0000133</td>
+      <td>0.4374</td>
+      <td>0.09</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Muscle m5</td>
+      <td>12.26</td>
+      <td>0.0000033</td>
+      <td>0.1096</td>
+      <td>0.09</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Muscle m6</td>
+      <td>32.75</td>
+      <td>0.0000073</td>
+      <td>0.2394</td>
+      <td>0.11</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sum of muscle strength</td>
+      <td></td>
+      <td></td>
+      <td>2.1503</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Closure element</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.03</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spermathecal pouch</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1847443779</td>
+      <td>0.0021246</td>
+    </tr>
+    <tr>
+      <td>Body sclerite 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>199709300</td>
+      <td>0.0002297</td>
+    </tr>
+    <tr>
+      <td>Body sclerite 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>101434410</td>
+      <td>0.0001166</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

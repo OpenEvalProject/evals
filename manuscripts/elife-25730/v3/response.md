@@ -50,9 +50,7 @@ In more simplistic cases such as dwarfism from IGF1 mutations, Laron dwarfism (m
 
 In an attempt to pinpoint the hypothalamic, pituitary, peripheral, or combinatorial problem that was leading to the IGF1 deficiency, we performed a series of endocrinological and genetic tests. In the same cohorts of mice with IGF1 deficiency mentioned above (Figure 4C), GH was not significantly different in the Arid1b+/- mice in fed or fasting conditions (Figure 4E in the paper revision). We also confirmed that GH was not altered in younger 2-week old Arid1b+/- mice, an age where GH levels are more critical for growth (Figure 4G). This suggested a peripheral defect without appropriate compensation from either the pituitary or hypothalamus.
 
-Examination of four additional cohorts shown below also showed no significant differences in plasma GH levels in either fed or fasting states. These data were not included in the paper (Author response image 1).10.7554/eLife.25730.022Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.25730.022
-
-DOI: http://dx.doi.org/10.7554/eLife.25730.022
+Examination of four additional cohorts shown below also showed no significant differences in plasma GH levels in either fed or fasting states. These data were not included in the paper (Author response image 1).10.7554/eLife.25730.022Author response image 1.
 
 To determine if the pituitary is capable of making and secreting sufficient amounts of GH, we performed GH stimulation testing with Growth Hormone Releasing Hormone (GHRH) (4). In two independent experiments with different cohorts of mice, we determined that in Arid1b+/- mice, GH levels were never significantly different at baseline and also increased normally at multiple time points after stimulation (Figure 4H). In addition, GH mRNA levels in the pituitary as measured by qPCR were not significantly changed (Figure 4F). In sum, this clearly indicated a normal ability for the pituitary to respond to exogenous GHRH.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Investigating fitness interactions in natural populations remains a considerable challenge. We take advantage of the unique population structure of Vibrio parahaemolyticus , a bacterial pathogen of humans and shrimp, to perform a genome-wide screen for coadapted genetic elements. We identified 90 interaction groups (IGs) involving 1,560 coding genes. 82 IGs are between accessory genes, many of which have functions related to carbohydrate transport and metabolism. Only 8 involve both core and accessory genomes. The largest includes 1,540 SNPs in 82 genes and 338 accessory genome elements, many involved in lateral flagella and cell wall biogenesis. The interactions have a complex hierarchical structure encoding at least four distinct ecological strategies. One strategy involves a divergent profile in multiple genome regions, while the others involve fewer genes and are more plastic. Our results imply that most genetic alliances are ephemeral but that increasingly complex strategies can evolve and eventually cause speciation.
+Investigating fitness interactions in natural populations remains a considerable challenge. We take advantage of the unique population structure of Vibrio parahaemolyticus, a bacterial pathogen of humans and shrimp, to perform a genome-wide screen for coadapted genetic elements. We identified 90 interaction groups (IGs) involving 1,560 coding genes. 82 IGs are between accessory genes, many of which have functions related to carbohydrate transport and metabolism. Only 8 involve both core and accessory genomes. The largest includes 1,540 SNPs in 82 genes and 338 accessory genome elements, many involved in lateral flagella and cell wall biogenesis. The interactions have a complex hierarchical structure encoding at least four distinct ecological strategies. One strategy involves a divergent profile in multiple genome regions, while the others involve fewer genes and are more plastic. Our results imply that most genetic alliances are ephemeral but that increasingly complex strategies can evolve and eventually cause speciation.
 
 ## Introduction
 
@@ -39,23 +39,150 @@ We find that the great majority of interactions involve small numbers of accesso
 
 ## Results
 
-## Detection and characterization of interaction groups
+### Detection and characterization of interaction groups
 
 The presence of clonal and population structure within a dataset results in genome-wide LD that can confound screens for epistatic interactions based on LD patterns. To minimize the effect of population structure we first removed closely related strains within our global collection of 1,103 isolates (Yang et al., 2019a) to generate a non-redundant set of 469 genomes that each differed from each other by more than 2,000 SNPs (Figure 1a). As previously described, the sample is subdivided into four distinct populations, which have different, although currently overlapping, geographical distributions (Yang et al., 2019a). These four populations are clearly visible in Principle Coordination Analysis (PCoA) of the SNP variants in this dataset (Figure 1b). The great majority of strains in our sample are from the Asian population, VppAsia, so we excluded isolates from other populations. We then used fineSTRUCTURE (Lawson et al., 2012) to look for signals of clonal structure within the remaining isolates, iteratively removing isolates until all of the isolates were assigned to a single population (Materials and methods), leading to a discovery dataset of 198 strains (Figure 1c, Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig1-v2.jpg)
+
+**Figure 1.:** (a, c) NJ trees of strains from two datasets. Red branches indicate strains in the discovery dataset. The colored circles indicate populations (inner) and ecogroups (outer) according to the legend on the left. (b, d) PCoA analysis of strains from two datasets based on core SNPs and accessory genes. Colors of points indicate the populations and ecogroups according to the legend on the right. Two distinct genotype clusters separated by O-3 variants were highlighted with dashed ellipses.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Coancestry matrix of 201 strains, including the discovery dataset of 198 strains and three isolates respectively from VppX, VppUS1 and VppUS2. The color of each cell indicates the expected chunks numbers imported from a donor (column) to a recipient (row).
 
 Using the discovery dataset, we performed a Fisher exact test of associations between all pairwise combinations of 151,957 SNP variants within the core and 14,486 accessory genome elements. As has been observed previously (Cui et al., 2015), most of strong associations occurred between sites within 3 kb on the chromosome (Figure 2). In order to exclude associations that arise only due to physical linkage, we excluded all sets of associations that spanned less than 3 kb, including between accessory genome elements. This left us with 452,849 interactions with P < 10-10, which grouped into 90 interaction groups (IG, a set of SNP/accessory gene connected by at least one significant interaction), all of which involved at least one accessory-genome element, with 8 also including core genome SNPs and 35 including multiple genome regions. In total these IGs included 1,873 SNPs in 100 core genes and 1,460 accessory genome elements (Table 1). Interacting SNPs were enriched for non-synonymous variants (26% vs. 16%, P < 0.01, Fisher exact test), which is consistent with natural selection being the force generating the linkage disequilibrium we detected.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig2-v2.jpg)
 
-**Figure 2.:** P values between genetic variants.Colors and shapes indicate the interactions between different types of variants. The vertical dotted line shows the threshold p=10−10.
+**Figure 2.:** Colors and shapes indicate the interactions between different types of variants. The vertical dotted line shows the threshold p=10−10.
 
-## Complex structure of interaction group 1
+**Table 1.**
+ Summary of interactions detected in coadaptation screen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Total number</th>
+      <th colspan="2">IG1</th>
+      <th colspan="2">IG2-90</th>
+    </tr>
+    <tr>
+      <th>Number</th>
+      <th>Fraction</th>
+      <th>Number</th>
+      <th>Fraction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SNP-SNP pair</td>
+      <td>2.3 × 1010</td>
+      <td>289186</td>
+      <td>0.00%</td>
+      <td>22751</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>SNP-Accessory gene pair</td>
+      <td>2.2 × 109</td>
+      <td>113973</td>
+      <td>0.01%</td>
+      <td>1188</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>Accessory gene-gene pair</td>
+      <td>2.1 × 108</td>
+      <td>13487</td>
+      <td>0.01%</td>
+      <td>12264</td>
+      <td>0.01%</td>
+    </tr>
+    <tr>
+      <td>SNP</td>
+      <td>151957</td>
+      <td>1540</td>
+      <td>1.01%</td>
+      <td>333</td>
+      <td>0.22%</td>
+    </tr>
+    <tr>
+      <td>Synonymous (Syn)</td>
+      <td>117541</td>
+      <td>1084</td>
+      <td>0.92%</td>
+      <td>226</td>
+      <td>0.19%</td>
+    </tr>
+    <tr>
+      <td>Nonsynonymous (NonSyn)</td>
+      <td>23673</td>
+      <td>379</td>
+      <td>1.60%</td>
+      <td>107</td>
+      <td>0.45%</td>
+    </tr>
+    <tr>
+      <td>NonSyn/Syn</td>
+      <td>0.2</td>
+      <td>0.35</td>
+      <td></td>
+      <td>0.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Core gene</td>
+      <td>3936</td>
+      <td>82</td>
+      <td>2.25%</td>
+      <td>18</td>
+      <td>0.56%</td>
+    </tr>
+    <tr>
+      <td>Accessory gene</td>
+      <td>14486</td>
+      <td>338</td>
+      <td>2.33%</td>
+      <td>1122</td>
+      <td>7.75%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Complex structure of interaction group 1
 
 The largest interaction group 1 (IG1) accounted for the majority of interacting SNPs (82%) as well as a significant fraction of accessory genome elements (23%), while IG2-IG90 generally consisted of a small number of interacting SNPs (0-297) and accessory genes (2-128). IG1 is shown in Figure 3, Figure 3—figure supplements 1–3, Figure 4 and Supplementary file 1, while IG2-IG90 are displayed in Figure 5, Figure 5—figure supplement 1, Figure 6 and Supplementary file 2. In order to interpret these associations in a broader ecological and geographical context, we performed further analyses on the interactions that we identified in the discovery dataset on the non-redundant set of 469 strains.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig3-v2.jpg)
+
+**Figure 3.:** (a, b) Hierarchical clustering of 469 non-redundant strains (columns) based on coadaptated loci (rows) of IG1. Colors of the heatmap indicate the status of genetic variants as shown in the legend (bottom right), background colors of the upper and left clustering tree separately indicate different ecogroups (EG) and tiers, respectively, matching the colors in panel b-d. Colored bars below the upper clustering tree indicate the populations of strains. SNPs of lateral flagellar genes were marked by grey bars on the left of the heatmap. Panel b is a zoom-in version of specific tiers in panel a. (c) The distribution of coadaptation SNPs in the lateral flagellar gene cluster region (VPA1538-1557). The top indicates the gene organization of lateral flagellar gene cluster. Light orange rectangles indicate regions in the accessory genome. The histograms indicate the distribution of SNPs along the gene cluster, with colors of bars indicating coadaptation tiers. (d) Coadaptation blocks of IG1, shown in their genomic locations. Four different reference genomes were used, as indicated on the top of each panel, since no single genome contains all of the accessory genome variants. Grey horizontal arrows indicate core genes. Accessory genes are colored according to their tier or are tan if they do not belong to one. Vertical colored bars within grey arrows indicate core-SNPs in IG1, with colors indicating different coadaptation tiers. COG classification labels are shown above the genes. The numerical labels above reference genomes indicate the identity of the coadaptation genome blocks, corresponding to the information in Supplementary file 1. Colors of bottom left curves indicate the average copying probability (probability of genetic variants inherited from the same ecogroup) of different EGs calculated using chromosome painting.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Core SNPs. (b) Accessory genes. (c) SNPs of lateral flagellar gene cluster. Colors of the heatmap indicate the status of genetic variants, colored bars below the upper clustering tree indicate the populations and ecogroups of strains, and colored bars on the left indicate different coadaptation ties as shown in the legend (bottom).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Branch colors of the trees indicate populations (a) and SCGs (b), respectively. Horizontal dotted line indicates the expected average copy probability value. Different chromosomes are separated by a vertical dotted line.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Three randomly selected strains of EG1a and NonEG1a are used and marked in blue and red, respectively.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig4-v2.jpg)
 
 **Figure 4.:** (a) Swimming (top) and swarming (bottom) ability of strains in different ecogroups. Motility diameters in swimming and swarming plate were used to measure the motility ability. (b) Growth curve of strains in different ecogroups. The average optical density at 600 nm (OD600) of five replicates were used to generate the curve, vertical lines indicate the standard deviation. (c) Biofilm formation (top) and colony morphology (bottom). OD595 values were used to measure the biofilm formation ability. Colony morphologies of strains at different salinities were shown on the bottom. In panel a-c, five replicates were performed for each strain, and colors indicate different ecogroups.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig5-v2.jpg)
+
+**Figure 5.:** (a) COG classification and GC content of all analyzed genes (top panel) and of different types of coadaptated genes (lower panels). Red for core genes and blue for accessory genes. The first number in brackets is the number of genes with COG annotation and the second is the total number of genes in the category. (b) Gene maps of different IGs. The colors of the bar on the left indicates average linkage strength of the loci in each IG. Arrows indicate genes. Acessory genes are shown in blue and genes with no coadaptation signal are shown in orange. Red genes indicated core genes containing coadapted SNPs which are indicated with black vertical lines. Vertical dotted lines were used to split compatible genes with physical distance larger than 3 kb, or genes located in different contigs, chromosomes and strains. Dotted rectangles indicate incompatible genes. IGs with genome block length larger than 60 kb are broken by double slash and shown in (c) after zooming out. COG classification labels are shown above the genes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Hierarchical clustering of strains (column) based on coadaptation loci (row) of all IGs, except for IG1, 2, 3, 14, and 42 that had been showed in figures of the main text. Colors of the heatmap indicate the status of genetic variants, colored bars below the upper clustering tree indicate the populations of strains as shown in the legend.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig6-v2.jpg)
 
@@ -63,13 +190,89 @@ The largest interaction group 1 (IG1) accounted for the majority of interacting 
 
 IG1 involves a large number of pairwise interactions, presenting a challenge for interpretation. We filtered the results to remove putatively-non-causal interactions using ARACNE (Margolin et al., 2006), but this only reduced the number of interactions from 414,785 to 103,241, which is still far too many to interpret (Supplementary file 1). However, hierarchical clustering revealed that strains fall into four distinct ‘ecogroups’ (EGs) based on IG1 variants (Figure 3a,b). Three of these groups, EG1a, EG1b and EG1d have a large number of variants (50-965) that are associated with them, and we used the clustering to sort these variants into tiers, with ‘Tier 1’ (T1) corresponding to the variants that showed the strongest association for each EG (Figure 3, Table 2, Supplementary file 2). Associated variants also show other patterns, for example, Tier“Other 1’ (O-1) variants distinguish EG1a and EG1b from other EGs, with some exceptions; O-2 variants distinguish EG1a and EG1d from other EGs, also with exceptions; O-3 variants are polymorphic in EG1b and EG1c but mostly fixed in EG1a and EG1d (Figure 3a,b). Similar but not identical structuring of strains was obtained if clustering was performed only using core genome SNPs (Figure 3—figure supplement 1a) or accessory genome elements (Figure 3—figure supplement 1b).
 
+**Table 2.**
+ Summary of interaction group 1 variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Core SNPs</th>
+      <th>Accessory genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a-T1</td>
+      <td>520 SNPs (359 Syn, 137 NonSyn) in 21 genes of 8 blocks, 14 genes encoding lateral flagellar</td>
+      <td>66 genes in 10 blocks, 11 COG M genes, 5 T2SS genes</td>
+    </tr>
+    <tr>
+      <td>a-T2</td>
+      <td>121 SNPs (68 Syn, 43 NonSyn) in 18 genes of 10 blocks, 10 genes encoding lateral flagellar</td>
+      <td>22 genes in 10 blocks, 2 COG M genes, 3 T2SS genes</td>
+    </tr>
+    <tr>
+      <td>a-T3</td>
+      <td>190 SNPs (137 Syn, 38 NonSyn) in 44 genes of 18 blocks, 17 genes encoding lateral flagellar</td>
+      <td>46 genes in 13 blocks, 5 COG M genes, 3 COG NU genes, 4 T2SS genes</td>
+    </tr>
+    <tr>
+      <td>b-T1</td>
+      <td>12 SNPs (5 Syn, 2 NonSyn) lin 3 genes of 2 blocks, 2 genes encoding lateral flagellar</td>
+      <td>33 genes in 2 blocks, 12 COG M genes</td>
+    </tr>
+    <tr>
+      <td>b-T2</td>
+      <td>25 SNPs (15 Syn, 10 NonSyn) in 3 genes of 1 block encoding lateral flagellar</td>
+      <td>8 genes in 2 blocks, 1 COG M gene</td>
+    </tr>
+    <tr>
+      <td>d-T1</td>
+      <td>5 SNPs (3 syn, 2 nonsyn) in 1 gene encoding transmembrane</td>
+      <td>31 genes in 5 blocks, 23 genes (1 block) encoding T6SS</td>
+    </tr>
+    <tr>
+      <td>d-T2</td>
+      <td>0 SNP</td>
+      <td>14 genes in 4 blocks, 8 genes (1 block) encoding cellulose synthase</td>
+    </tr>
+    <tr>
+      <td>O-1</td>
+      <td>36 SNPs (28 Syn, 10 NonSyn) in 3 genes of 2 blocks, 2 genes encoding lateral flagellar, 1 TonB gene</td>
+      <td>6 genes in 4 blocks, 1 COG H gene</td>
+    </tr>
+    <tr>
+      <td>O-2</td>
+      <td>27 SNPs (18 Syn, 1 NonSyn) in 3 genes in 1 block, 2 genes encoding LuxR family transcriptional regulator</td>
+      <td>2 genes in 1 block, COG M and T</td>
+    </tr>
+    <tr>
+      <td>O-3</td>
+      <td>368 SNPs (269 Syn, 97 NonSyn) in 4 genes of 2 blocks, encoding multidrug resistance protein, lipase and long-chain fatty acid transport protein</td>
+      <td>0 gene</td>
+    </tr>
+    <tr>
+      <td>O-4</td>
+      <td>0 SNP</td>
+      <td>7 genes in 5 blocks, 4 genes encoding transferase</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>236 SNPs (182 Syn, 41 NonSyn) in 48 genes, 8 genes encoding lateral flagellar</td>
+      <td>102 genes, 15 COG M genes</td>
+    </tr>
+  </tbody>
+</table>
+
 Although fineSTRUCTURE did not detect any population structure within the discovery dataset, PCoA analysis of SNPs identifies axes of variation that reflect the ecogroup structure within EG1 (Figure 1d). PCo1, which explains 1.28% of the total SNP variance differentiates EG1a strains from the others while PCo2, which explains 1.06% of the variance differentiates the two distinct genotype clusters separated by O-3 variants (Figure 1d), with O-3-cluster 1 corresponding to SNP Allele 2 shown in Figure 3a. The phylogenetic analysis also reveals a split between EG1a and the remaining isolates (Figure 1a, c).
 
 The reason that PCoA and phylogenetic analysis reveals population structure within the discovery dataset, while fineSTRUCTURE does not, is because the differentiated loci are sharply concentrated into a small number of chromosomal regions, while fineSTRUCTURE looks for evidence of higher sharing across the entire genome. Chromosome painting (Figure 3d) shows evidence for sharp peaks of differentiation of different EGs around the IG1 loci identified by our coadaptation scan, especially for EG1a strains, but with little evidence for differentiation elsewhere. This pattern is qualitatively distinct either for that observed between geographically differentiated populations or for clonally related strains, which show higher-than-expected copying probability (probability of genetic variants inherited from the same population or ecogroup) throughout the genome but without sharp peaks (Figure 3—figure supplement 2). These results are consistent with there being a common gene pool shared by all of the ecogroups within each V. parahaemolyticus population, with ecogroup structure being maintained by natural selection rather than barriers to gene flow.
 
 The accessory genome elements are present in many of the same configurations as core genome SNPs, but with ecogroup structure explaining a much larger fraction of the overall variation. The first PCo accounts for around 10% of the variance, both for the discovery dataset and the non-redundant dataset, and nearly cleanly distinguishes EG1a strains from EG1b, c strains and from EG1d strains (Figure 1b,d). Geographically based population structure is correspondingly less important, with weak differentiation of two of the populations (VppAsia and VppX) from the other two evident within PCo2 (Figure 1b,d), which is consistent with our previous observation that few population-specific genes were identified (Yang et al., 2019a).
 
-## Functional differentiation of IG1 ecogroups
+### Functional differentiation of IG1 ecogroups
 
 Within IG1, genes of COG classes M and N, cell wall biosynthesis and cell motility, are substantially overrepresented, relative to their overall frequency in the genome (COG M 32% vs 8%, COG N 13% vs 3%, P<0.01, Fisher exact test). 27% (509/1879) of the IG1 SNPs localize to the lateral flagella gene cluster (VPA1538-VPA1557). The variants are scattered widely in the heatmap in many different configurations, with Tier 1 and Tier 2 SNPs from lateral flagella gene cluster showing strong associations with EG1a (a-T1 and a-T2 variants) and EG1b (b-T1 and b-T2 variants) and other patterns (O-1 variants, Figure 3a, Table 2, Supplementary file 1). Consistent with this, hierarchical clustering based on the IG1 SNPs of lateral flagellar genes can also distinguish EG1a and EG1b strains (Figure 3—figure supplement 1c). The lateral flagellar locus is responsible for motility on surfaces and the different configurations, most involving multiple non-synonymous SNPs, suggests that there are several functionally distinct motility phenotypes encoded by different versions of the gene cluster. A phylogenetic analysis of variation at the lateral flagellar locus incorporating data from Vibrio genus shows that the locus has been inherited vertically within the species but with a substantially elevated rate of evolution in the EG1a version of the locus (Figure 3—figure supplement 3), which suggests that this version of the cluster has evolved a substantially new function.
 
@@ -81,13 +284,13 @@ Tier O-1 includes 16 SNPs in lateral flagellar genes (VPA1548 and VPA1550) and 2
 
 EG1d was identified in our previous analysis (Cui et al., 2015). In the current dataset, it is differentiated from other strains at 5 SNPs in a transmembrane gene (VPA1081) and 45 accessory genes. A 23 gene block encoding T6SS (type VI secretion system, VP1391-VP1420, Ref1-10, d-T1) is present or partly present in all EG1d strains, and absent or largely absent in the other three EGs. Most EG1a-c strains instead encode a block of genes that are annotated as being cellulose synthesis related (Ref2-01, d-T2). It is notable, however, that there are no SNPs associated specifically with EG1d in the lateral flagellar genome region.
 
-## Phenotypic differences of EG1a strains
+### Phenotypic differences of EG1a strains
 
 We performed a preliminary investigation of the phenotypic differences underlying EG1a by determining the motility, growth rate, and biofilm formation ability (Figure 4) of 11 strains (4 EG1a, 1 EG1b, 2 EG1c, 4 EG1d) on laboratory media. Because there are many unique variations in the lateral flagella gene cluster of EG1a isolates, we expected a different motility ability between EG1a and other isolates, but we failed to observe differences in swimming or swarming capability under the conditions tested (Figure 4a). However, EG1a strains revealed faster growth rate and significantly higher biofilm formation ability than EG1b-d strains (Figure 4b,c), and they revealed rough colony morphology, also an indication of increased biofilm formation, under low salinity (1% NaCl) culture condition (Figure 4c).
 
 There are in total 60 EG1a strains in the global collection of 1,103 V. parahaemolyticus strains. All but one, a VppUS2 isolate, is from the VppAsia population, with the majority (n = 48, 80%) in this study coming from routine surveillance on food related environmental samples, including fish, shellfish, and water used for aquaculture. The strains revealed no clear geographical clustering pattern in China, as they can be isolated from all six provinces that under surveillance. Notably, only 4 EG1a strains were isolated from clinical samples, including wound and stool, representing a lower proportion than for EG1b-d isolates (453/1043), including if the two major pathogenic clonal lineages (CG1 and CG2) (Yang et al., 2019a) are removed (268/798), suggesting this ecogroup has low virulence potential in humans.
 
-## Other interaction groups
+### Other interaction groups
 
 The most common type of interaction group is ‘genome island-like’, which is a single accessory genome region of between 3 kb (IG50) and 57 kb (IG38), of which there are 52 (Figure 5). For example, IG2 consists of 10 genes in a single block (VPA1700-VPA1709). Nine of the genes code for various functions related to carbohydrate metabolism and transport while the 10th is a transcriptional regulator (Figure 6 and Supplementary file 2). Four strains have 9 out of the 10 genes but otherwise the genes are either all present or all absent in every strain. Interestingly, there appears to be a difference in frequency between VppAsia isolates and others, with the island present in 52% of VppAsia strains and 90% of others.
 
@@ -97,9 +300,15 @@ Another common interaction is incompatibility between different accessory genome
 
 Amongst interaction groups other than IG1, class G, encoding carbohydrate transport and metabolism are substantially overrepresented (22% vs 6%, p<0.01, Fisher exact test, Figure 5a), particularly amongst groups involving incompatibilities. There are also differences in GC content between accessory genes in IGs and others, with IGs having higher mean values, especially in compatibility IGs (Figure 5a).
 
-## Comparison with other epistasis detection methods
+### Comparison with other epistasis detection methods
 
 We compared our results for core genome interactions with those obtained by SuperDCA, a method that uses Direct Coupling Analysis to identify causal interactions (Morcos et al., 2011; Puranen et al., 2018), using the default settings for the algorithm. To make the results as directly comparable as possible we used the same 198 isolates that were used for the Fisher exact test. The most important discrepancy is that although SNPs associated with a specific group of strains, EG1a, involves perfect associations, with P values as low as 1.4×10−30, the coupling strengths are lower than for the other groups we identified and none appear amongst the top 5,000 couplings (Figure 7a, Figure 7—figure supplement 1). This discrepancy is due the large number of SNPs involved with similar association patterns, which means that coupling values are distributed between them. Excluding EG1a SNPs, there is a strong correlation between SuperDCA coupling strengths and Fisher exact test P values (Figure 7a). At a stringent cutoff of 10-2.2, SuperDCA identifies the same multi-locus interactions as Fisher exact test does at P < 10-10, with a few SNPs excluded (Figure 7b). The significance thresholds for both the Fisher exact test and SuperDCA could be relaxed to identify a substantially larger number of true-positive hits, at the likely expense of some false ones, but we do not investigate these associations further here. We also compared our results with those obtained by SpydrPick, a model-free method based on mutual information (MI) (Pensar et al., 2019). The Fisher exact test P value is almost perfectly correlated with the MI statistic used by SpydrPick for this data (Figure 7a).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig7-v2.jpg)
+
+**Figure 7.:** (a) Correlation between Fisher exact test P value and SuperDCA coupling strength (red and blue for ecogroup 1a (EG1a) and non-EG1a SNPs, respectively), and between Fisher exact test P value and SpydrPick mutual information (green). (b) Overlap of strong linked SNP sites detected by Fisher exact test (p<10−10, excluding EG1a SNPs) and SuperDCA (coupling strength >10-2.2). Red for interacted SNP pairs detected by both methods, blue for SNP pairs detected only by Fisher exact test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54136/elife-54136-fig7-figsupp1-v2.jpg)
 
 ## Discussion
 
@@ -117,7 +326,7 @@ Notwithstanding the unresolved challenges, our results highlight the central rol
 
 **Figure 8.:** Circles indicate bacterial strains within a population. Red and green stars indicate the two alleles of a SNP. Red and green rectangles indicate different accessory genes or genome islands. Blue arrows indicate transitions between different SNP alleles, or gain/loss of genes and genome islands. Black arrows indicate the transitions between different stages, or cycles within a stage. (a) Casual: frequent gene flow generated multiple combinations of different variants within a population. Some combinations might have high fitness but alternate combinations arise frequently due to gene flux and adaptation at individual loci. (b) Going steady: coadapted interactions, such as the SNPs (red star) and accessory gene (red rectangles), become more difficult to dislodge despite ongoing genetic exchange due to their high fitness when present in combination. (c) Married: coadapted interactions become fixed in the population and led to further co-adaptation in multiple genome regions. (d) Setting up home together: as the progressive enlargement of coadapted regions in the genome, the entire genome becomes differentiated, which prompt the barriers (horizontal line) to genetic exchange between different ecogroups.
 
-## Most interactions between core and accessory genomes are casual
+### Most interactions between core and accessory genomes are casual
 
 A recent debate about whether the accessory genome evolves neutrally (Vos and Eyre-Walker, 2017; Andreani et al., 2017; Shapiro, 2017) highlighted how little we know about the functional importance of much of the DNA in bacterial chromosomes. Using the same statistical threshold to assess significance, our interaction screen identifies many more examples of coadaptation between different accessory genome elements than of interactions between the core and accessory genomes or within the core genome, implying that natural selection has a central role in determining accessory genome composition.
 
@@ -129,13 +338,13 @@ Amongst interactions not involving physical linkage, the most common is incompat
 
 We propose that the rarity of interactions between core and accessory genome in our scan reflects the evolution of ‘plug and play’-like architecture for frequently transferred genetic elements. Accessory genome elements are more likely to establish themselves in new host genomes if they are functional immediately on arrival in a diversity of genetic backgrounds. Furthermore, from the point of view of the host bacteria, acquisition of essential functions in new environments is more likely if diverse accessory genome elements in the gene pool are functional as soon as they are acquired. These selection pressures will tend to promote a genomic architecture that facilitates casual gain and loss of genetic elements from particular genomes (Figure 8a).
 
-## Sometimes it makes sense to go steady
+### Sometimes it makes sense to go steady
 
 When an accessory genome element with an important protein coding function arrives in a new genome, it is likely that some optimization of gene regulation will be possible, coordinating the expression of the gene with others in the genome. This can lead to longer-lasting associations between genetic elements (Figure 8b). We found 8 different interaction groups involving core and accessory genome regions. One simple example included a regulatory gene VP0368 and an accessory genome element (IG3, Figure 6). In this example, it is feasible for the core genome SNP and the associated accessory element to be transferred together between strains in a single recombination event. Where coadaptation involves two or more separate genome regions, this makes assembling fit combinations more difficult and is likely to slow down the rate at which strains gain and lose the accessory genome elements involved. The difficulty of evolving the trait de novo is likely to slow down the rate at which it is gained and loss, which in turn makes further coadaptation at additional genes more likely.
 
 IG1d, is an example of a complex coadaptation involving multiple core and accessory genome regions. A large majority of strains in our dataset (439/469, EG1d) either carry a cluster of genes encoding a T6SS, or a cluster encoding cellulose biosynthesis genes (EG1a-c), but few strains have genes from both clusters (Figure 3a). Cells uses the T6SS to inject toxins into nearby bacteria (Salomon et al., 2013) and cellulose production to coat themselves in a protective layer (Tischler and Camilli, 2004). Incompatibility might have a functional basis, for example because cellulose production prevents the T6SS functioning efficiently, or an ecological one, for example because cells that attack others do not need to defend themselves. The evolution of dissimilar strategies has led to differentiation in gene/SNP frequencies in a large number of regions. Strains that do not have the T6SS use at least three distinct sets of strategies, corresponding to ecogroups EG1a, EG1b and EG1c, encoded by alleles that are rare or absent in EG1d strains.
 
-## Marriage changes everything
+### Marriage changes everything
 
 EG1a variants differ from the other interaction groups in our coadaptation screen in both the number of associated regions and the strength of the associations. The interaction group includes 454 SNPs in the lateral flagellar gene cluster (VPA1538-1557, 18 kb, Figure 3c), a further 917 core genome SNPs in 62 genes and 152 accessory genes in 35 clusters. Many of the variants represent fixed or nearly fixed differences between EG1a and other strains (a-T1 and a-T2). These include loci encoding flagellar genes, T2SS and other membrane transport elements. There are also 285 loci (27%, a-T3) in weaker disequilibrium, typically because they are polymorphic in EG1a or the other EGs. Many of these variants are likely to represent more recently evolved coadaptations. Some of these genes are also associated with flagella or the T2SS related function but also encompass a broader range of functional categories, including cell division and amino acid transport and metabolism (Table 2, Supplementary file 1).
 
@@ -151,13 +360,13 @@ On the other hand, an absence of intermediate genotypes in the population can fa
 
 These arguments imply that the evolution of fastidiousness, like the evolution of promiscuity, can be self-reinforcing. At some point in the differentiation of EG1a strains from the remaining ones, the coadaptation of the core loci to each other is likely to have become more-or-less irreversible (Figure 8c). In this respect, the interaction between loci resembles the human institution of marriage, which has historically been thought of as an irreversible bond, although this notion loosened in the Christian world following the reign of King Henry VIII in England.
 
-## Coadapted gene complexes as speciation triggers
+### Coadapted gene complexes as speciation triggers
 
 Running the tape forward, it is easy to envisage the number of coadapted regions of the genome within EG1a undergoing progressive enlargement, until the entire genome becomes differentiated. As coadapted regions become more numerous, the proportion of recombination events between eco-groups that are maladaptive will increase, which might prompt the evolution of mechanistic barriers to genetic exchange between them (Figure 8d).
 
 Mechanisms by which new bacterial species arise are frequently discussed in the literature (Shapiro et al., 2012; Fraser et al., 2009; Falush et al., 2006) but there is currently little data on how the process unfolds. EG1a isolates are of interest both as an example of an intermediate stage of divergence, prior to speciation, and because it suggests that substantial adaptive divergence between gene pools can precede any barriers to genetic exchange, other than natural selection at the loci involved. This – unique to our knowledge – example is exciting because the distinct signature of selection should make it possible to dissect the genetic basis of coadaptation in unprecedented detail. Broadly similar patterns of differentiation including ‘genomic islands of speciation’ have been observed for example between ecomorphs of cichlid fishes (Malinsky et al., 2015), but the evolution of ecomorphs has been facilitated by fish preferring to mate with similar individuals, which will have also inevitably lead to some level of differentiation at neutral loci throughout the genome.
 
-## Conclusions
+### Conclusions
 
 In V. parahaemolyticus, it has been possible to distinguish clearly between adaptive processes, reflecting fitness interactions between genes and neutral ones, reflecting clonal and population structure. This has allowed us to provide a description of the landscape of coadaptation, involving multiple simple interactions and a small number of complex ones. We have focused on interactions that generate strong linkage disequilibrium, but weaker and more complex polygenic ones also have the potential to provide biological insight.
 
@@ -165,19 +374,99 @@ Most bacteria have population structure that deviates more markedly from panmixi
 
 ## Materials and methods
 
-## Genomes used in this work
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fineSTRUCTURE</td>
+      <td>http://paintmychromosomes.com https://doi.org/10.1371/journal.pgen.1002453</td>
+      <td>SCR_018170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUMmer</td>
+      <td>http://mummer.sourceforge.net/ https://doi.org/10.1186/gb-2004-5-2-r12</td>
+      <td>SCR_018171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prokka</td>
+      <td>https://github.com/tseemann/prokka https://doi.org/10.1093/bioinformatics/btu153</td>
+      <td>SCR_014732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Roary</td>
+      <td>https://sanger-pathogens.github.io/Roary/ https://doi.org/10.1093/bioinformatics/btv421</td>
+      <td>SCR_018172</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TreeBest</td>
+      <td>http://treesoft.sourceforge.net/treebest.shtml</td>
+      <td>SCR_018173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTOL</td>
+      <td>https://itol.embl.de/ https://doi.org/10.1093/nar/gkw290</td>
+      <td>SCR_018174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SuperDCA</td>
+      <td>https://github.com/santeripuranen/SuperDCA https://doi.org/10.1099/mgen.0.000184</td>
+      <td>SCR_018175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SpydrPick</td>
+      <td>https://github.com/santeripuranen/SpydrPick https://doi.org/10.1093/nar/gkz656</td>
+      <td>SCR_018176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circos</td>
+      <td>http://circos.ca/ https://doi.org/10.1101/gr.092759.109</td>
+      <td>SCR_011798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genomes used in this work
 
 Totally 1,103 global V. parahaemolyticus genomes were used in this work, which also were analyzed in our other study (Yang et al., 2019a). To reduce clonal signals, we firstly made a ‘non-redundant’ dataset of 469 strains, in which no sequence differed by less than 2,000 SNPs in the core genome. They were attributed to 4 populations, VppAsia (383 strains), VppX (43), VppUS1 (18) and VppUS2 (21) based on fineSTRUCTURE result (Lawson et al., 2012). We then focused on VppAsia which has more strains, to generate a genome dataset in which strains represent a freely recombining population. We selected 386 genomes from 469 non-redundant genome dataset, including all the 383 VppAsia genomes and 3 outgroup genomes which were randomly selected from VppX, VppUS1 and VppUS2 population, respectively. These 386 genomes were used in Chromosome painting and fineSTRUCTURE analysis (Lawson et al., 2012) as previously described (Cui et al., 2015). Initial fineSTRUCTURE result revealed multiple clonal signals still exist, thus we selected one representative genome from each clone, combined them with the remaining genomes and repeated the process. After 14 iterations, we got a final dataset of 201 genomes with no trace of clonal signals, involving 198 VppAsia genomes that were used in further analysis (Figure 1—figure supplement 1).
 
 The copying probability (probability of genetic variants inherited from the same population or ecogroup) value of each strain at each SNP was generated by Chromosome painting with ‘-b’ option, and the average copying probability value of a given strain group (e.g. EG1a) at each SNP was used in Figure 3d and Figure 3—figure supplement 2.
 
-## Variation detection, annotation and phylogeny
+### Variation detection, annotation and phylogeny
 
 We re-called SNPs for 198 VppAsia genomes by aligning the assembly against reference genome (RIMD 2210633) using MUMmer (Delcher et al., 2003) as previous described (Cui et al., 2015; Yang et al., 2019b). Totally 565,466 bi-allelic SNPs were identified and 151,957 bi-allelic SNPs with minor allele frequency >2% were used in coadaptation detection. We re-annotated all the assemblies using Prokka (Seemann, 2014), and the annotated results were used in Roary (Page et al., 2015) to identify the pan-genome and gene presence/absence, totally 41,052 pan-genes were found and 14,486 accessory genes (present in >2% and<98% strains) were used in coadaptation detection. The pan-gene protein sequences of Roary were used to BLAST (BLASTP) against COG (Galperin et al., 2015) and KEGG (Kanehisa and Goto, 2000) database to obtain further annotation.
 
 The Neighbour-joining trees were built by using the TreeBest software (http://treesoft.sourceforge.net/treebest.shtml) based on sequences of concatenated SNPs, and were visualized by using online tool iTOL (Letunic and Bork, 2016).
 
-## Detection of coadapted loci
+### Detection of coadapted loci
 
 Totally 151,957 bi-allelic SNPs and 14,486 accessory genes identified from 198 independent VppAsia genomes were used in coadaptation detection by three methods. Firstly, we used Fisher exact test to detect the linkage disequilibrium of each SNP-SNP, SNP-accessory gene, and accessory gene-gene pair. Presence or absence of an accessory gene were considered as being alternate alleles. Each variant locus (SNP or accessory gene) has two alleles, major and minor, of which major represents the allele shared by majority of isolates. For each pair of loci X and Y, the number of combinations between Xmajor-Ymajor, Xmajor-Yminor, Xminor-Ymajor, Xminor-Yminor were separately counted and used in the contingency table to calculate the Fisher exact test P value. It took 3 days to finish all the coadaptation detection in a computer cluster using 21 cores and 2 Gb memory.
 
@@ -187,24 +476,24 @@ SpydrPick is based on mutual information (MI), an information theoretic measure 
 
 We removed coadaptation pairs with distance less than 3 kb to minimize the influence of physical linkage. All identified SNPs in this study were located in the core genome, therefore the physical distance between SNP pairs can be calculated according to their position in the reference genome. To define the distance between accessory genes, and between SNP and accessory gene, we mapped the sequence of accessory genes against available 19 complete maps of the V. parahaemolyticus genomes to acquire their corresponding position, and then the gene that failed to be found in complete reference genomes were then mapped to the draft genomes. If the accessory genes pair or SNP- accessory gene pair was found located in a same chromosome or same contig of a draft genome, then the distance between paired variants could be counted according to their position in the chromosome or contig. The distance between paired variants that located in different chromosomes or contigs was counted as larger than 3 kb and such pairs were kept in further analysis. Circos (Krzywinski et al., 2009) was used to visualize the networks of coadaptation SNPs in Figure 7b and Figure 7—figure supplement 1.
 
-## Lateral flagellar gene cluster region in Vibrio genus
+### Lateral flagellar gene cluster region in Vibrio genus
 
 To identify the homologous sequences of V. parahaemolyticus lateral flagellar gene cluster (VPA1538-1557) in the Vibrio genus, we downloaded all available Vibrio genome assemblies in NCBI, then aligned the nucleotide sequence of lateral flagellar gene cluster of V. parahaemolyticus (NC_004605 1639906–1657888) against Vibrio genome dataset (excluding V. parahaemolyticus) by using BLASTN. Totally 46 Vibrio genomes revealed above than 60% coverage on lateral flagella region in V. parahaemolyticus genome and was used in phylogeny rebuilding. We also included three randomly selected strains from EG1a and EG1b-d respectively for comparison. In total 3,000 SNPs were identified in this region and were used for NJ tree construction.
 
-## Determination of phenotypes
+### Determination of phenotypes
 
-## Bacteria strains
+#### Bacteria strains
 
 In the phenotype experiments, totally 11 strains were randomly selected respectively from four EGs that defined by IG1 variants, including 4 EG1a strains (B1_1, B3_1, B5_3, C3_10), 1 EG1b strain (B1_10), 2 EG1c strains (C5_2, C6_5) and 4 EG1d strains (B1_3, B2_10, B4_8, C1_5). The strains stored at −80°C were inoculated in the thiosulfate citrate bile salts sucrose agar (TCBS) plates by streak plate method. Five clones for each strains were inoculated again in another TCBS plate and then cultured overnight at 30°C in 3% NaCl-LB broth overnight and used for the following assays.
 
-## Motility assays
+#### Motility assays
 
 Five clones for each strain were cultured overnight at 30°C and then inoculated in the swimming plate (LB media containing 0.3% agar) and swarming plate (LB agar with 3% NaCl). The swimming ability was recorded by measuring the diameter of colony after 24 hr at 30°C. And the swarming ability was recorded after 72 hr at 24°C.
 
-## Growth curve
+#### Growth curve
 
 V. parahaemolyticus strains in 96-well plate were cultured overnight at 30°C in 3% NaCl-LB broth. The optical density of each culture was adjust to an OD600 of 0.6.Then 1 ml of each culture was inoculated 100 ml of 3% NaCl-LB broth in a 96-well plate and cultured at 30°C. The growth of each culture were measured every 1 hr at the optical density of 600 nm using Multiskan Spectrum.
 
-## Biofilm formation
+#### Biofilm formation
 
 V. parahaemolyticus strains were cultured overnight at 30°C in 3% NaCl-LB broth. 2 µl of each overnight culture was inoculated to 100 µl of 3% NaCl-LB broth in a 96-well plate and cultured at 30°C for 24 hr statically. The supernatant was discarded and each well was washed once with sterile phosphate-buffered saline (PBS). 0.1% Crystal violet (wt/vol) was added to each well and incubated at room temperature for 30 min. The crystal violet was decanted, and each well was washed once with sterile PBS. Crystal violet that stained biofilm was solubilized with dimethylsulfoxide (DMSO), and then measured at the optical density of 595 nm using Multiskan Spectrum (Thermo Scientific).

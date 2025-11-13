@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02785qs39 Institut de Génétique Moléculaire de Montpellier, University of Montpellier Montpellier France
+1. Institut de Génétique Moléculaire de Montpellier, University of Montpellier Montpellier France ([ROR:02785qs39](https://ror.org/02785qs39))
 2. Department of surgery and liver transplantation, Hopital Saint Eloi Hopitaux universitaires de Montpelier Montpellier France
-3. https://ror.org/01n92vv28 Division of Tumor Biology and Immunology, Netherlands Cancer Institute, Oncode Institute Amsterdam Netherlands
-4. https://ror.org/01xpc6869 Centre de Recherche en Biologie Cellulaire de Montpellier (CRBM), University of Montpellier, CNRS Montpellier France
+3. Division of Tumor Biology and Immunology, Netherlands Cancer Institute, Oncode Institute Amsterdam Netherlands ([ROR:01n92vv28](https://ror.org/01n92vv28))
+4. Centre de Recherche en Biologie Cellulaire de Montpellier (CRBM), University of Montpellier, CNRS Montpellier France ([ROR:01xpc6869](https://ror.org/01xpc6869))
 
 † Corresponding author
 
@@ -41,17 +41,33 @@ In this work, we transformed hepatocyte precursors (bipotent mouse embryonic liv
 
 ## Results
 
-## The phenotype of hepatic progenitors is affected by the RasG12V gene dosage
+### The phenotype of hepatic progenitors is affected by the RasG12V gene dosage
 
 In order to investigate the consequences of distinct Ras oncogenic dosage on tumour development, we used BMEL, bipotential precursors of the two epithelial hepatic lineages, derived from embryonic mouse liver (Akkari et al., 2010; Strick-Marchand and Weiss, 2003; Strick-Marchand and Weiss, 2002). BMEL are not transformed and retain major characteristics of primary hepatic progenitors, including the capacity to repopulate a damaged adult liver (Strick-Marchand et al., 2004). We have previously reported that the expression of an oncogenic form of Ras (H-RasG12V) is sufficient to transform a subset of BMEL clones (Akkari et al., 2012; Bacevic et al., 2019), including the ones used for the current study. These cells express p19ARF and wild-type p53, but not p16-INK4A (Figure 1—figure supplement 1), which could account for their escape from Ras-induced senescence (Xue et al., 2007).
 
 Because cellular phenotypes are sensitive to the Ras oncogene dosage (Kerr et al., 2016; Mueller et al., 2018) and the signalling intensity of its downstream effector, the MAPK Erk pathway (Dikic et al., 1994; Traverse et al., 1994), we asked whether a specific level of RasG12V expression was required for hepatic tumour growth in vivo. To obtain cellular populations with distinct levels of RasG12V expression, BMEL cells were transduced with bicistronic lentiviral vectors encoding H-RasG12V and either a Venus or a mCherry fluorescent protein (Figure 1A upper). Cells were sorted by flow cytometry on the basis of the fluorescence intensity, giving rise to populations that we named ‘RasLOW’ and ‘RasHIGH’ (Figure 1A middle). Since the parental BMEL cells used in this study were clonally derived, the BMEL-Ras populations were isogenic, except for the copy number and insertion sites of the RasG12V – Venus/mCherry transgene and the consequent level of their expression. As expected, the expression levels of the fluorescent markers faithfully reflected the Ras oncogene mRNA levels (Figure 1—figure supplement 2) and the mean levels of RasG12V protein were different in the RasLOW versus the RasHIGH populations, as shown for RasLOW-Cherry and RasHIGH-Venus in Figure 1A. However, the RasLOW and RasHIGH cells, while respectively enriched in weak and strong H-RasG12V expressors, remained quite heterogeneous with respect to the oncogene expression. Indeed, because of the gates used for sorting, the distribution of Ras expression levels presented an overlap between the two populations (Figure 1 and Figure 1—figure supplement 2). Importantly, neither the level of Ras expression nor the nature of the co-expressed fluorescent protein altered the in vitro proliferation rate of the transformed BMEL cells (Figure 1—figure supplement 3).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig1-v2.jpg)
+
+**Figure 1.:** (A) Bicistronic vectors were used to transduce BMEL cells that were sorted by flow cytometry according to fluorescence intensities, giving rise to RasLOW and RasHIGH populations labelled with either Venus or mCherry. RasG12V, Venus and mCherry expression were quantified by RTqPCR (see also Figure 1—figure supplement 1), and results for cell lines BMELWT, RasLOW-Cherry, RasHIGH-Venus are shown as mean ± SEM. p-Value of unpaired t-test statistical test is shown. Differences in RasG12V expression were confirmed by western blot analysis (RasLOW-cherry versus RasHIGH-Venus). Actin was used as loading control. (B) Parental non-transformed BMEL (‘BMELWT’), RasLOW and RasHIGH cells were seeded in soft agar, stained with crystal violet and counted after 21 days of culture. Representative wells and mean colony numbers ± SEM from two independent experiments performed in triplicate are shown. (C) Phosphoprotein array performed on BMELWT, RasLOW, and RasHIGH cell lines. Bottom panel shows the quantification of duplicates from two independent experiments. a.u.: arbitrary units. (D) qPCR quantification of Erk target genes signature in RasLOW and RasHIGH BMEL cells normalized to expression in parental BMELWT cells. Mean and SEM from three to four independent experiments are shown. Statistical significance from unpaired t-test are indicated. (E) Venn diagram and heatmaps showing log2 RPKM values of genes regulated by RasG12V in BMEL cells detected by an RNAseq transcriptomic analysis (log2FC >1.5, p-value <0.01). Genes expressed at low levels (all RPKM log2 values <1) were removed from the analysis. From left to right: 160 genes were modulated by Ras similarly in RasLOW and RasHIGH populations, 65 genes were altered only in the RasHIGH cells and the expression of 15 genes was gradually modulated in the RasLOW and RasHIGH populations. (F) Volcano plot presentation of deregulated genes in RasHIGH cells versus parental BMEL cells. Genes belonging to regulation of immune response signature (GO:0050776) are highlighted in orange. ns: not significant, *<0.05, **<0.01, ***<0.001, ****<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Quantification of mRNA expression levels of p16INK4A and p19ARF using qRT-PCR performed on three independent BMEL clones (C3, C6 and 8.1) with or without oncogenic Ras expression, as indicated. N-RASG12D p53null tumour cell line derived from a mouse tumour following a hydrodynamic gene transfer is used as control.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) RTqPCR quantification of H-RasG12V, Venus and mCherry mRNA expression normalized to Hprt expression in indicated cell populations after cell sorting. Mean value and SD from triplicates are shown. (B) Fluorescence intensity profiles of RasLOW and RasHIGH Venus (left panel) and mCherry (right panel) sorted BMEL cell populations, showing overlap in transgene expression in populations.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Doubling times in 2D culture for the indicated cell lines. Mean and values from two independent experiments are shown. (B) Composition of cellular populations after 5 days of culture of 1:1 mix of RasHIGH-Venus and RasLOW-mCherry cells and 1:1 mix of RasLOW-Venus and RasLOW-mCherry cells. Mean ± SEM are indicated for three independent experiments. Deviations from the theoretical value of 50% (dashed line) were calculated using one-sample t-test.
+
 While the parental BMEL cells did not form colonies when deprived of anchorage, Ras-transformed cells grew in soft agar, with the RasHIGH cells giving significantly more colonies than their RasLOW counterparts in this surrogate assay of transformation (Figure 1B). Several major signal transduction pathways lay downstream of Ras activation. To gain insight into their activation status in H-RasG12V-transformed BMEL cells, we assayed phosphorylation levels of a set of kinases (Figure 1C). Oncogenic Ras had no effect on AKTS473 and the GSKbS9, two downstream targets of PI(3)K that were strongly phosphorylated both in the parental and in the Ras-transformed cells. Similarly, no differences were detected for JNK and p38 pathway components. In contrast, although this assay did not reveal increased MEK or Erk activation, Ras signalling gave rise to a strong increase in the phosphorylation of Rsk 1 and 2, which are downstream targets of MAPK Erk signalling. Moreover, while the proteomic array assay was not sufficiently sensitive to distinguish between the RasLOW and RasHIGH signalling, the oncogenic dosage did translate into differences of the Ras/MAPK Erk signalling, as evidenced by distinct transcriptional signatures of known Erk delayed early target genes (Brant et al., 2017; Figure 1D).
 
 In order to further investigate how the intensity of Ras signalling governs the hepatic transcriptional programmes, we performed RNAseq analysis of parental BMEL, RasLOW and RasHIGH cells in culture. Setting the thresholds at fold change log2=1.5 and p-value <0.01 identified over 1000 genes modulated by RasG12V signalling in these hepatic progenitor cells (Figure 1E). The expression of 160 genes was modulated by Ras independently of its mean expression level in the tested population (Figure 1E left, Supplementary file 1a), thus representing a gene signature for the low threshold Ras/MAPK signalling. In a second group of 65 genes, target gene expression was modified only in the RasHIGH cells (Figure 1E middle, Supplementary file 1b). For these genes, a high-intensity Ras signalling is required for the mRNA accumulation. Finally, the third group contains the genes expression of which correlated with the mean level of Ras expression. We identified six genes (Al467606, Aim2, Dynap, Htra3, Itgb7, Tspan13) whose expression was gradually increased in RasLOW and RasHIGH cell populations (Figure 1E right, Supplementary file 1c). Similarly, we found nine genes (Ppp2r2b, Cbr1, Pmp22, Ptp4a3, Pmaip1, Thbs1, Akap12, Sulf2, Crip2) the expression of which was gradually repressed. Thus, our analysis identifies novel sets of quantitatively regulated Ras/MAPK target genes in hepatic cells. In the general framework of questioning the impact of Ras oncogenic dosage on the tumour-stroma interactions, we note the presence of genes in the gene ontology (GO) category of immune response regulation (Figure 1F).
 
-## Specific RasG12V gene dosage is selected during tumour growth
+### Specific RasG12V gene dosage is selected during tumour growth
 
 Orthotopic injections of 105 BMEL-Ras cells into immunocompromised recipients systematically gave rise within 3–4 weeks to hepatocellular tumours at the site of injection as well as to frequent extrahepatic growth in the peritoneal cavity. First, we concentrated on primary tumours arising in the liver. Allografts of RasLOW and RasHIGH cells both produced poorly differentiated and fast growing, aggressive tumours, as witnessed by their overall size, high proliferation index, and typically a multi-nodular morphology (Figure 2A). In accordance with their superior capacity for anchorage-independent growth (Figure 1B), the RasHIGH cells gave rise to significantly larger tumours than their RasLOW counterparts, indicating that high level of Ras signalling conferred a selective advantage in vivo. To validate this observation, we next performed orthotopic injections of a 1:1 mix of RasHIGH-Venus:RasLOW-mCherry cells. The in vivo seeding efficiencies of RasHIGH and RasLOW cells were indistinguishable, since equal numbers of Venus and mCherry-labelled cells were detected at early times (5 days) post-injection (Figure 2B). However, as the tumours grew, a clear imbalance between the two populations became apparent, with RasHIGH cells becoming the dominant population in tumours already at day 10, which was further confirmed in full-grown tumours 21 days post-injection (Figure 2B). This was not due to an artefactual effect of the fluorescent markers, as switching the fluorescent labels between the RasHIGH and RasLOW cells had no impact on the dominance of RasHIGH cells. Furthermore, cells labelled with Venus or mCherry that expressed comparable Ras levels contributed equally to orthotopic tumours (Figure 2B lower).
 
@@ -61,7 +77,7 @@ Orthotopic injections of 105 BMEL-Ras cells into immunocompromised recipients sy
 
 We next enquired about the selective processes within each (i.e. RasHIGH and RasLOW) subpopulation within the tumours. Of note, and as expected from the gating in the cell sorting (Figure 1A), while the mean RasG12V level was significantly different, there was an overlap of the oncogene dosage between the two injected populations (Figure 1—figure supplement 2). Tumours collected at day 21 post-engraftment were dissociated, and Venus+ or mCherry+ cells were sorted by flow cytometry (Figure 2C left panel). Interestingly, RTqPCR analysis specific for the RasG12V revealed that both cellular populations composing the tumour expressed identical level of the oncogene (Figure 2C right panel). This suggests that selective pressures operating during the in vivo tumour growth allow the expansion of a population with a defined level of Ras oncogene expression, independently of which parental population they originate from. Since fewer cells in the RasLOW population fell within the range of this ‘optimal’ oncogene dosage, they were underrepresented in the fully grown tumour at the end of the experiment. Finally, cell lines established from the orthotopic tumours maintained the high level of Ras expression in vitro (Figure 2D), providing further support to the idea of pre-existing clones undergoing selection in vivo.
 
-## Site specific tumour microenvironment selects distinct levels of oncogene dosage
+### Site specific tumour microenvironment selects distinct levels of oncogene dosage
 
 Human HCC give rise mainly to intrahepatic metastases, but extrahepatic invasion also occurs (Katyal et al., 2000). This is also the case in our animal model of HCC orthotopic allografts. Indeed, in addition to intrahepatic tumour spread, we consistently observed tumours in the peritoneal cavity, morphologically resembling the paired liver tumours (Figure 3A). Extrahepatic tumours likely arose from cell leakage during the surgical procedure of intrahepatic injection, since peritoneal lavage performed after surgery contained low but detectable numbers (<0.5%) of Venus-labelled cells. In this scenario, tumour initiation would be expected to be synchronous at the two locations.
 
@@ -77,9 +93,17 @@ To address the mechanistic basis for this phenomenon, we performed transcriptomi
 
 Both the hepatic and the peritoneal tumours were highly proliferative (Figure 3E). Interestingly, while the cultured BMEL cells expressing either high or low levels of the RasG12V oncogene have comparable, low, apoptotic indexes, hepatic tumours contain a higher proportion of cleaved caspase 3-positive cells than their peritoneal counterparts (Figure 3E). Moreover, in the liver, and much less so in the peritoneum, caspase 3-positive cells often surround large necrotic areas, indicating that the cell death in an expanding liver tumour is quite substantial, suggesting an evolutionary trade-off for the high oncogene dosage in the liver tumours.
 
-## Immune cell contexture differs in primary and metastatic-like tumours
+### Immune cell contexture differs in primary and metastatic-like tumours
 
 We next interrogated the interplay between the tumour cells and their local microenvironments that shape the oncogenic expression profile. The transcriptomic profiling of the stromal component of liver and peritoneal tumours revealed a number of differentially expressed genes, as expected for distinct tumour locations. Cibersortx deconvolution of the immune component of the stroma (Newman et al., 2019) did not show strong differences in the numbers of intra-tumoural macrophages at the two locations (Figure 4A). However, independent RTqPCR profiling of macrophage polarization markers did suggest a more immunosuppressive, less inflammatory microenvironment in the peritoneum (Figure 4B, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cibersortx algorithm was used to perform cell type deconvolution of RNAseq data from stroma of matched liver and peritoneal tumours (n=4). Ten immune cell populations were included in the signature, as indicated. (B) Macrophage polarization marker expression was analysed by RTqPCR performed on RNA isolated from stromal cells sorted from liver and peritoneal tumours. (C) Dendritic cells (DCs) (CD45+, CD11c+, MHCIIhigh, F4/80-, CD24+) from liver and peritoneal tumours were analysed by flow cytometry. The histogram represents the percentage of DCs among the total CD45+ population, indicating the proliferating (Ki67+, dashed bars) and non-proliferating (Ki67-, filled bars) DCs. (D) Immunohistochemistry performed on liver and peritoneal tumour sections using anti-MFG-E8 antibody, quantification of positive staining is shown in the right panel. Scale bars: 100 μm. (E) Flow cytometry analysis of CD45+CD11b+Ly6G-Ly6C- F4/80low (monocyte-derived macrophages) and CD45+CD11b+Ly6G-Ly6C- F4/80high (tissue-resident macrophages) from liver and peritoneal tumours. (F) Quantification of CD115+, Ki67+, and MHCIIhigh cells among CD45+CD11b+Ly6G-Ly6C-F4/80high macrophages. (G) 5000 cells (NRASG12D p53KO) were injected orthotopically in C57BL/6J mice and athymic nude mice, as indicated. Macroscopic images of representative liver and peritoneal tumours collected 3 weeks after injections (scale bar = 5 mm). Numbers indicate the fraction of inoculated animals that developed tumours. All quantitative analyses were subjected to a paired Student’s t-test. p-Values: #<0.05, ##<0.01, ###<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Additional macrophage polarization markers were analysed by RTqPCR performed on RNA isolated from stromal cells isolated from liver and peritoneal tumours. ns: not significant. (B) Quantification of myeloid populations defined as CD45+CD11b+Ly6GintLy6Cint eosinophils, CD45+CD11b+Ly6G+neutrophils, CD45+CD11b+Ly6G-Ly6C- patrolling monocytes, CD45+CD11b+Ly6G-Ly6C+ inflammatory monocytes, CD45+CD11b+Ly6G-Ly6C-F4/80high macrophages, CD45+CD11c+MHCIIhighF4/80 CD24+ dendritic cells and F4/80low immature macrophages by flow cytometry analysis of sorted liver and peritoneal stromal cells from athymic nude mice tumours (n=4). Student’s t-test, p-value: *<0.05. (C) Heatmap of cytokines differentially expressed in stromal cells of liver and peritoneal tumours. Numbers display log2 fold change (FC) values for each gene (Deseq, log2FC >1.5 p-value <0.05).
 
 Interestingly, the presence of immunosuppressive tumour-associated macrophages (TAMs) did not deter from other antigen-presenting cells activity in the peritoneal tumour microenvironment (TME). Indeed, our data suggested that a larger proportion of mature, activated dendritic cells (DCs), as compared to immature ones, were present in this organ (Figure 4A). Flow cytometry analyses confirmed that while the total number of DCs (defined as CD45+ CD11b+ CD11c+ MHCIIhigh CD24+F4/80-) was not significantly different between the two TME, these cells showed an increase in proliferation in the peritoneum (Figure 4C). Furthermore, the peritoneal DCs contained lower levels of the milk-fact globule-EGFVIII (MFG-E8), a factor known to limit DC immunogenic potential (Figure 4D; Baghdadi et al., 2012; Peng and Elkon, 2012).
 
@@ -87,9 +111,17 @@ The phenotypes of macrophages in matched liver and peritoneal tumours also showe
 
 We reasoned that a likely consequence of increased numbers of activated DCs would be an improved efficiency of antigen presentation, thereby allowing a more efficient tumour clearance in the peritoneum.While such phenotype is not relevant in immunodeficient mice that are unable to mount a T-cell response, it should be detectable in immunocompetent animals. In order to test this prediction, we compared the outcomes of orthotopic injections of tumour cells in immunocompetent C57BL/6 and immunodeficient nude mice. For these autologous allografts, we took advantage of a C57BL/6 primary cell line that we derived from a tumour established by a hydrodynamic gene transfer of constitutively active Ras and a simultaneous CrispR/Cas9-mediated inactivation of the p53 tumour suppressor (Bacevic et al., 2019). Orthotopic allografts of 5000 cells performed in parallel on immunocompetent and immunodeficient mice gave rise to comparable macroscopic liver tumours within 3 weeks (Figure 4G). However, in contrast to nude mice, of which 50% developed macroscopic peritoneal tumours, no growth at a metastatic location was detected in immunocompetent recipients. These results are consistent with the hypothesis that a more effective antigen presentation in the peritoneum limits metastatic tumour growth in immunocompetent animals.
 
-## Ras signalling modulates tumour cells interactions with stromal cells
+### Ras signalling modulates tumour cells interactions with stromal cells
 
 We next questioned the mechanistic bases of the tumour and stroma crosstalk that might shape the quantitative differences in the oncogenic pathway activation. To do so, we looked for genes whose expression is specifically induced by high-intensity Ras signalling, both in the parental BMEL-RasHIGH cells and in the liver, as compared, respectively, to the RasLOW cells and the peritoneal tumours (Figure 5A).Out of four genes (Ceacam1, Csn3, Selp, Tmem252) that corresponded to this criterion, we focused our attention on CEACAM1 (carcinoembryonic antigen-related cell adhesion molecule 1), a gene widely expressed in many cancer types and whose expression level has been reported to correlate with tumour progression (Dankner et al., 2017). It is also expressed on the surface of several immune cell subsets, including macrophages, T lymphocytes, and NK cells, where homophilic interactions with the CEACAM1+ tumour cells abrogate NK-mediated cytotoxicity (Helfrich and Singer, 2019; Markel et al., 2002). In order to confirm that the observed Ras-mediated transcriptional activation translates into CEACAM1 expression on the surface of cancer cells, we performed FACS analyses on cells dissociated from the liver and peritoneal tumours. As expected, the majority of the non-hematopoietic (CD45neg) cells in both tumoural locations expressed the Venus fluorescent protein and were therefore the RasG12V expressing tumoural cells. CEACAM1 expressing cells were highly enriched in this population in the liver as compared to peritoneal tumours, corresponding respectively to 30.1±2.4% (mean ± SEM) and 14.2±3% (mean ± SEM) of CD45neg cells (Figure 5B). Strikingly, the mean fluorescent intensities of the CEACAM1 labelling in the Venus+ populations were indistinguishable between the tumours at the two locations. This is consistent with the transcriptomic data indicating that high level of Ras signalling is needed to activate CEACAM1 gene expression in BMEL cells (Figure 1E and F) and confirms that the cells that have the required Ras dosage are more abundant in the liver than in the peritoneal tumours. Interestingly, while difference in the NK cell content in the primary and peritoneal tumours did not reach statistical significance in the deconvolution of stromal cells RNAseq (Figure 4A), immunofluorescence staining revealed distinct distribution of these cells: whereas NK infiltrate the hepatic tumours, they apparently tend to remain in the periphery of the peritoneal ones (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig5-v2.jpg)
+
+**Figure 5.:** (A) Venn diagram representing differentially expressed genes (log2FC >1, p-value <0.05) from RNAseq data of RasLOW versus RasHIGH bipotent mouse embryonic liver (BMEL) cells and sorted tumoural cells derived from peritoneal versus liver tumours. Bottom panel: RTqPCR quantification of the four genes upregulated both in the hepatic versus peritoneal tumours and in RasHIGH versus RasLOW cells. Upper panels: analysis of FACS-sorted cells isolated from tumours, lower panels: analysis of ex vivo grown cells. (B) Flow cytometry analysis of tumoural cells (CD45- Venus+ Ceacam1+) isolated from the liver and the peritoneal tumours. Numbers indicate percentage of cells in each quadrant. Bottom panels show quantification (left) and mean fluorescent intensity (MFI, right) of the Ceacam1 expressing tumour cells. (C) NK cytotoxicity test: NK cells isolated from the spleen of nude mice were activated with IL15 and incubated with co-cultures of RasHIGH: RasLOW clones (1:1). Synopsis of the experiment (left panel) and FACS quantification of DAPI-positive cells (right panel). Values are duplicates from two independent experiments. p-Value from two-way ANOVA test is indicated. (D) Ratios of tumour volumes from matched peritoneal and liver tumours (PerT/LiverT) originating from non-sorted BMEL-Ras cells, RasLOW or RasHIGH populations, as indicated, orthotopically inoculated into athymic nude or NOD-SCID-gamma (NSG) mice. (E) Immunohistochemical analysis of activated caspase 3 performed on liver and peritoneal tumours in athymic nude and NSG mice. Mean ± SD values of positive cells from five animals are indicated. Scale bar: 100 µm. (F) RTqPCR quantification of Ceacam1 expression in sorted tumour cells from athymic nude and NSG mice. Unpaired Student’s t-test, p-values. ns: not significant, *<0.05, **<0.01, ***<0.001, and ****<0.0001 p-values.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76294/elife-76294-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Immunhistochemistry performed on athymic nude mice liver and peritoneal tumours initiated by inoculation of RasHIGH bipotent mouse embryonic liver (BMEL) cells were analysed in respect to anti-CD31 (upper panels) and senescence-associated β-galatosidase staining (middle panels). Lower panels: immunofluorescence staining of RasHIGH (Venus-labelled, green) tumours with the NK-specific anti-Nkp46 antibody (red). Arrows show Nkp46-positive cells that infiltrated liver tumours.
 
 We reasoned that if the high Ras oncogenic dosage was instrumental in resisting NK-cell mediated cytotoxicity in the liver tumours, the different sensitivities to NK exposure should also be detected ex vivo for the RasHIGH versus RasLOW cells. We have therefore isolated clones expressing defined levels of Ras, representative of high and low populations (3.20±0.62 and 0.50±0.14 Ras/Hprt mRNA levels, respectively). NK cells were isolated from spleen of athymic nude mice and used in ex vivo cytotoxicity assays by co-culture with clones of RasHIGH-Venus and RasLOW-mCherry cells (Figure 5C). As predicted by our hypothesis, the RasHIGH cells were indeed less sensitive to NK-mediated cell death than their RasLOW counterparts.
 
@@ -119,62 +151,362 @@ A key role of NK cells in anti-tumour immunity is today well appreciated (review
 
 ## Materials and methods
 
-## BMEL preparation and cell culture
+### BMEL preparation and cell culture
 
 BMEL cells were isolated from C57BL/6xC3H E14 embryonic mouse female liver, as described in Strick-Marchand and Weiss, 2002. Briefly, livers at 14 dpc were separately dissected, and cell suspension was plated onto collagen-coated 100 mm Petri dishes in hepatocyte attachment medium (Invitrogen, Cergy Pontoise Cedex, France). The next day and thereafter, medium was replaced by RPMI 1640 (Eurobio) containing 10% fetal bovine serum (Eurobio), 50 ng/ml epidermal growth factor, 30 ng/ml insulin-like growth factor II (PeproTech, Rocky Hill, NJ), 10 mg/ml insulin (Sigma), and antibiotics. Clones were picked after 2–3 months of culture and expanded in the same medium on dishes coated with Collagen I (BD Biosciences, Le Pont de Claix, France) in humidified atmosphere with 5% CO2 at 37°C. All cells were tested negative for mycoplasma contamination every week.
 
-## Isolation of cell populations
+### Isolation of cell populations
 
 Human H-RasG12V cDNA sequence was cloned into LeGO-iV2 and LeGO-iC2 bicistronic vectors (Addgene #27344 and #27345, respectively). Retroviruses were produced by JetPEI (Polypus-Transfection) transfection of HEK293T cells with HrasG12V-iV2 and HrasG12V-iC2 constructs together with Gag/pol and pCAG-Eco packaging vectors. Culture media containing viruses were filtered (0.45 µm) and used to infect BMEL cells. Based on Venus (530/30 nm) and mCherry (610/20 nm) fluorescence intensity, Aria IIU and IIIU cell sorters (Becton Dickinson) were used to isolate HrasG12V-LOW and HrasG12V-HIGH populations from HrasG12V-iV2 and HrasG12V-iC2 BMEL cells.
 
-## Western blotting
+### Western blotting
 
 Protein lysates of cells were prepared with lysis buffer (150 mM NaCl, 50 mM Tris pH 7.5, 1% Triton, 1% SDS; freshly added protease inhibitors cocktail [Roche]). Protein concentrations were determined by BCA protein assay (Pierce Biotechnology). Five µg of proteins were separated by SDS-PAGE (Precast 4–12% gel). Proteins were transferred on nitrocellulose membrane, and loading checked by red ponceau staining. Primary antibody against RasG12V (Cell Signaling #14412, 1:2000) and Actin (Sigma A1978, 1:20,000) were incubated overnight and 1 hr respectively, and revealed with HRP-coupled secondary antibodies plus chemiluminescent detection following classical procedures.
 
-## Soft agar assay
+### Soft agar assay
 
 105 cells/well were seeded in 0.5% agar diluted in RPMI media. One ml media was added to the agar layer and was changed every 3 days. After 3 weeks, colonies were stained with 0.005% crystal violet 4% PFA. Colonies were counted automatically in ImageJ using the ‘Analyze particles’ function.
 
-## Orthotopic xenografts
+### Orthotopic xenografts
 
 All reported animal procedures were carried out in accordance with the rules of the French Institutional Animal Care and Use Committee and European Community Council (2010/63/EU). Animal studies were approved by Institutional Ethical Committee (Comité d’éthique en expérimentation animale Languedoc-Roussillon (#36)) and by the Ministère de l’Enseignement Supérieur, de la Recherche et de l’Innovation (APAFIS#11196-2018090515538313v2). ARRIVE guidelines were followed. Sample sizes were selected to allow these experiments to be sufficiently powered such that differences between experimental groups will be statistically significant with type I error rates <5% (e.g. p<0.05) and with 80% power to detect a standardized difference. Athymic nude (Crl:NU(NCr)-Foxn1nu), NSG (NOD.Cg-PrkdcSCID Il2rgtm1Wjl/SzJ) or C57BL/6J mice from Charles River were anesthetized using intraperitoneal injections of ketamine/xylazine. A 1.5 cm transversal incision of the skin was performed below the sternum’s xyphoid process and followed by a transversal incision of the peritoneum, the tip of the liver left lateral lobe was pulled out of the peritoneal cavity. BMEL cells suspension in PBS-20% Matrigel (Corning) were injected in the liver parenchyma. Stitching of the peritoneum then skin was performed using surgical suture (Monosof 5/0 3/8C 16 mm).
 
-## Analysis of tumour cellular composition
+### Analysis of tumour cellular composition
 
 Tumours were fixed in 4% PFA for 4 hr and left overnight in 30% sucrose solution. Fixed tissues were placed in OCT cryogenic matrix and frozen in liquid nitrogen. Sections were cut at –20°C and mounted on superFROST slides with ProlonGold mounting media. Whole slide scans were performed with Zeiss Axioscan at 20× magnification and DAPI (405 nm), GFP (488 nm), and Cy3 (550 nm) fluorescent channels. On average 10 sections from different regions of the tumours were analysed per mouse. Quantification was done by delimiting GFP-positive or Cy3-positive regions and measuring their area on ZEN software. Alternatively, tumours were dissociated with mouse tumour dissociation kit (Miltenyi) and analysed with Novocyte ACEA flow cytometer using FITC (530/30 BP) and mCherry (615/20 BP) filter cubes.
 
-## RNA extraction and quantification
+### RNA extraction and quantification
 
 Total RNA was isolated from cells, dissociated and sorted tumours or frozen tissue samples using Rneasy mini kit (Qiagen). cDNA was prepared from 500 ng of total RNA using QuantiTect Reverse Transcription Kit (Qiagen). SYBR green (see Table 1) or Taqman-based Quantitative PCR (hprt: Roche universal probe library #95 AGTCCCAG); Ras: Roche universal probe library #88 (CATCCTCC); Ceacam1: (TCTCACAGAGCACAAACCCTCAGC) were performed on Roche LightCycler480.
 
-## RNAseq analysis
+**Table 1.**
+ List of primers used in RTqPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Venus</td>
+      <td>AAGGCTACGTCCAGGAG</td>
+      <td>CGGTTCACCAGGGTGTC</td>
+    </tr>
+    <tr>
+      <td>mCherry</td>
+      <td>TCCGAGCGGATGTACCC</td>
+      <td>GGCCTTGTAGGTGGTCT</td>
+    </tr>
+    <tr>
+      <td>HRas</td>
+      <td>GAGGATGCCTTCTACACGTT</td>
+      <td>GCACACACTTGCAGCTC</td>
+    </tr>
+    <tr>
+      <td>HRas Taqman primers</td>
+      <td>GGCATCCCCTACATCGAGA</td>
+      <td>CTCACGCACCAACGTGTAGA</td>
+    </tr>
+    <tr>
+      <td>Hprt</td>
+      <td>GCAGTACAGCCCCAAAATGG</td>
+      <td>GGTCCTTTTCACCAGCAAGCT</td>
+    </tr>
+    <tr>
+      <td>Hprt Taqman primers</td>
+      <td>CCTCCTCAGACCGCTTTTT</td>
+      <td>AACCTGGTTCATCATCGCTAA</td>
+    </tr>
+    <tr>
+      <td>Phlda1</td>
+      <td>GGGCTACTGCTCATACCGC</td>
+      <td>AAAAGTGCAATTCCTTCAGCTTG</td>
+    </tr>
+    <tr>
+      <td>Dusp4</td>
+      <td>CGTGCGCTGCAATACCATC</td>
+      <td>CTCATAGCCACCTTTAAGCAGG</td>
+    </tr>
+    <tr>
+      <td>Dusp6</td>
+      <td>GCGTCGGAAATGGCGATCT</td>
+      <td>ATGTGTGACGACTCGTACAGC</td>
+    </tr>
+    <tr>
+      <td>Etv4</td>
+      <td>CGGAGGATGAAAGGCGGATAC</td>
+      <td>TCTTGGAAGTGACTGAGGTCC</td>
+    </tr>
+    <tr>
+      <td>Etv5</td>
+      <td>TCAGTCTGATAACTTGGTGCTTC</td>
+      <td>GGCTTCCTATCGTAGGCACAA</td>
+    </tr>
+    <tr>
+      <td>Sprty2</td>
+      <td>TCCAAGAGATGCCCTTACCCA</td>
+      <td>GCAGACCGTGGAGTCTTTCA</td>
+    </tr>
+    <tr>
+      <td>Ceacam1</td>
+      <td>CACAGGACCCTATGTGTGTGAAA</td>
+      <td>CACTGGCTCAAGGACTGTA</td>
+    </tr>
+    <tr>
+      <td>Ceacam1 Taqman primers</td>
+      <td>GGGCTGGCATATTTCCTCTATT</td>
+      <td>GTTGTCAGAAGGAGCCAGATT</td>
+    </tr>
+    <tr>
+      <td>Csn3</td>
+      <td>CAGTCTGCTGGAGTACCTTATG</td>
+      <td>AGGATTGGCCACAGTATTTACTAT</td>
+    </tr>
+    <tr>
+      <td>Selp</td>
+      <td>CACTGGCTCAAGGACTGTA</td>
+      <td>TCCAGTAGCCAGGCATCTTA</td>
+    </tr>
+    <tr>
+      <td>Tmem252</td>
+      <td>GAACAGGACTGGGCTGAT</td>
+      <td>CTCTTCATAAGCTGGAGGGTAAA</td>
+    </tr>
+    <tr>
+      <td>Arg1</td>
+      <td>CATTGGCTTGCGAGACG</td>
+      <td>CCAGCTTGTCTACTTCAGTCAT</td>
+    </tr>
+    <tr>
+      <td>IL10</td>
+      <td>TAATGCAGGACTTTAAGGGTTACT</td>
+      <td>CATCCTGAGGGTCTTCAGC</td>
+    </tr>
+    <tr>
+      <td>TGFb1</td>
+      <td>TGCTAATGGTGGACCGC</td>
+      <td>CATGTTGCTCCACACTTGATTT</td>
+    </tr>
+    <tr>
+      <td>Mrc1 (CD206)</td>
+      <td>GGTGGGCAGTCACCATA</td>
+      <td>GGTTCTCCTGTAGCCCAAG</td>
+    </tr>
+    <tr>
+      <td>Ltbeta</td>
+      <td>CCTGCTGCCCACCTCATA</td>
+      <td>CGACGTGGCAGTAGAGGTAATA</td>
+    </tr>
+    <tr>
+      <td>IL6</td>
+      <td>CTAAGGACCAAGACCATCCAAT</td>
+      <td>GATATGCTTAGGCATAACGCAC</td>
+    </tr>
+    <tr>
+      <td>TNFa</td>
+      <td>TCAGTTCTATGGCCCAGACC</td>
+      <td>GTCTTTGAGATCCATGCCG</td>
+    </tr>
+    <tr>
+      <td>IL1beta</td>
+      <td>TTCCCATTAGACAACTGCACTAC</td>
+      <td>TATTCTGTCCATTGAGGTGGAGAG</td>
+    </tr>
+    <tr>
+      <td>IL1-rn</td>
+      <td>AAGCCTTCAGAATCTGGGATAC</td>
+      <td>GGATGCCCAAGAACACACT</td>
+    </tr>
+    <tr>
+      <td>iNOS</td>
+      <td>GTGGTGACAAGCACATTTGG</td>
+      <td>GTGGTTGAGTTCTCTAAGCATGA</td>
+    </tr>
+    <tr>
+      <td>p16 INK4</td>
+      <td>GAGCAGCATGGAGTCCG</td>
+      <td>GGGTACGACCGAAAGAGTT</td>
+    </tr>
+    <tr>
+      <td>p19 ARF</td>
+      <td>TTGGTGAAGTTCGTGCGAT</td>
+      <td>TGGTCCAGGATTCCGGT</td>
+    </tr>
+    <tr>
+      <td>Csf1</td>
+      <td>AGCGACCACCCAGGAGTA</td>
+      <td>AGTTAGTGCCCAGTGAAGATT</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNAseq analysis
 
 RNAseq bank were prepared from, respectively, three and four independent biological samples for the cell lines and Venus-positive cells sorted from tumours. We used Universal Plus mRNAseq kit from NuGEN and sequenced on Illumina HiSeq 2500. After quality control the sequences were aligned to Mm9 mouse genome using TopHat2. Normalization and differential gene expression between pairs was performed with Deseq. Gene set enrichment analysis was done using pre-ranked method based on fold changed values (GSEAv.6.0) and analysed with C5 ontology gene sets (Subramanian et al., 2005). Immune cell type deconvolution was done with CIBERSORTx (https://cibersortx.stanford.edu/) based on RPKM counts that were compared with murine immune signatures from 10 cell types produced by Chen et al., 2017.
 
-## Flow cytometry analyses
+### Flow cytometry analyses
 
 Mouse tumours were dissociated into single-cell suspension using the Mouse tumour dissociation kit (Miltenyi Biotec) and the gentleMACS Octo Dissociator following the manufacturer’s instructions and as described in Taranto et al., 2021. The cell suspension was passed through a 70 μm cell strainer (Miltenyi), centrifuged at 300× g for 10 min at 4°C and washed three times in FACS buffer. GFP-negative stromal cells were isolated from cell suspensions with a FACS sorter ARIAIIu (Becton Dickinson) and frozen in foetal calf serum with 10% DMSO. Frozen samples were thawed under sterile conditions and single-cell preparations were incubated with anti-CD16/CD32 antibody (BD Biosciences) for 15 min and stained with the indicated antibodies following standard procedures. Samples were fixed with eBioscience fixation/permeabilization kit (Invitrogen) and Ki67 antibody was used for intracellular staining (see Table 2), and analysed as previously described (Wang et al., 2019). The signal was detected by a 4-laser Fortessa flow cytometer (Becton Dickinson). Analyses were carried out using FlowJo software.
 
-## Immunohistochemical analysis
+**Table 2.**
+ Flow cytometry antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies Myeloid panel</th>
+      <th>Clone</th>
+      <th>Source</th>
+      <th>Fluorochrome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-Ki67</td>
+      <td>B56</td>
+      <td>BD Biosciences</td>
+      <td>BV786</td>
+    </tr>
+    <tr>
+      <td>Anti-MHCII</td>
+      <td>M5/114</td>
+      <td>BD Biosciences</td>
+      <td>BV650</td>
+    </tr>
+    <tr>
+      <td>Anti-Ly6C</td>
+      <td>HK1.4</td>
+      <td>BioLegend</td>
+      <td>BV605</td>
+    </tr>
+    <tr>
+      <td>Anti-CD11b</td>
+      <td>M1/70</td>
+      <td>BD Biosciences</td>
+      <td>BV412</td>
+    </tr>
+    <tr>
+      <td>Anti-F4/80</td>
+      <td>BM8</td>
+      <td>BioLegend</td>
+      <td>PE-Cy7</td>
+    </tr>
+    <tr>
+      <td>Anti-CD11c</td>
+      <td>N418</td>
+      <td>Invitrogen</td>
+      <td>PE-Cy5.5</td>
+    </tr>
+    <tr>
+      <td>Anti-CD45</td>
+      <td>30-F11</td>
+      <td>BioLegend</td>
+      <td>AF700</td>
+    </tr>
+    <tr>
+      <td>Anti-Ly6G</td>
+      <td>1A8</td>
+      <td>BioLegend</td>
+      <td>APC</td>
+    </tr>
+    <tr>
+      <td>Anti-CD24</td>
+      <td>M1/69</td>
+      <td>eBioscience</td>
+      <td>PerCp-eFlour710</td>
+    </tr>
+    <tr>
+      <td>Anti-CD115</td>
+      <td>AFS98</td>
+      <td>Biolegend</td>
+      <td>PE/Dazzle</td>
+    </tr>
+    <tr>
+      <td>Anti-Ceacam1</td>
+      <td>CC1</td>
+      <td>eBioscience</td>
+      <td>PE-Cy7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Immunohistochemical analysis
 
 Three µm sections of paraffin-embedded samples were analysed using a Ventana Discovery Ultra automated staining instrument (Ventana Medical Systems), according to the manufacturer’s instructions. Briefly, slides were de-paraffinized, the epitope retrieval was performed with the reagents provided by the manufacturer, the endogenous peroxidase was blocked, and the samples were incubated with the appropriate antibodies for 60 min at 37°C (Table 3). Signal enhancement for caspase 3 and Ki67 antibodies was performed either with the OmniMap anti-rabbit detection kit or by the Discovery HQ-conjugated anti-rabbit IgG followed by Discovery amplification anti-HQ HRP Multimer, according to the manufacturer’s instructions.
 
+**Table 3.**
+ IHC antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Clone</th>
+      <th>Source</th>
+      <th>Species</th>
+      <th>Cat #</th>
+      <th>Dilution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ki67</td>
+      <td>SP6</td>
+      <td>Spring Bioscience</td>
+      <td>Rabbit</td>
+      <td>M3064</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Caspase 3</td>
+      <td>ASP175</td>
+      <td>Cell signalling</td>
+      <td>Rabbit</td>
+      <td>9661S</td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>CD31</td>
+      <td>Polyc</td>
+      <td>Abcam</td>
+      <td>Rabbit</td>
+      <td>Ab28364</td>
+      <td>1:75</td>
+    </tr>
+    <tr>
+      <td>MFG-E8</td>
+      <td>18A2-G10</td>
+      <td>MBL</td>
+      <td>Hamster</td>
+      <td>D199-3</td>
+      <td>1:1000</td>
+    </tr>
+  </tbody>
+</table>
+
 Slides were incubated with DAB chromogen and counterstained with hematoxylin II for 8 min, followed by Bluing reagent for 4 min. Brightfield stained slides were digitalized with a Hamamatsu NanoZoomer 2.0-HT scanner and images were visualized with the NDP view 1.2.47 software except for the MFG-E8 staining, for which slides were digitally processed using the Aperio ScanScope (Aperio). Nodule size was drawn by hand in HALO image analysis software (Indica Labs) and an algorithm was designed with the Multiplex IHC v1.2 module to quantify the percentage of positive cells per mouse, as indicated in figure legends.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Frozen sections were equilibrated at room temperature for 10 min and rehydrated in PBS. Sections were incubated overnight with anti-mouse NKp46/NRC1 antibody (1:500, AF2225 R&D Systems) and for 1 hr with rabbit anti-goat Alexa647-conjugated secondary antibody (Invitrogen A21446). Images were acquired using Zeiss axioimager Z1 microscope with DAPI, GFP, and Cy5 filter cubes.
 
-## NK cells cytotoxicity assays
+### NK cells cytotoxicity assays
 
 NK cells enrichment: for each independent experiment, spleen was harvested from an athymic nude mouse, mashed on a 70 μm cell strainer and NK cells were enriched using the MACS NK cell negative selection kit (#130-115-818, Miltenyi Biotec). The enriched NK cells populations were resuspended in RPMI 1640 medium supplemented with 10% FCS, 1% penicillin/streptomycin, sodium pyruvate (1 mM), HEPES (10 mM), and β-mercaptoethanol (50 μM), counted and used to set up cytotoxic assays. Efficiency of the enrichment was evaluated by flow cytometry using antibodies directed against CD45 (clone 30-F11, BD Biosciences), enrichment 90–95%; and Nkp46 (clone 29A1.4, Thermo Fisher), enrichment: 80–90%.
 
 BMEL target cells (clones RasLOW-mCherry and RasHIGH-Venus) were seeded at a 1:1 ratio in a 96-well plate (flat-bottom) pre-coated with collagen type I (BD Biosciences 354236) (in total, 20,000 target cells/well). Cells were incubated 2 hr at 37°C, then enriched NK cell suspensions were added at different ratios to the co-culture of target cells, as indicated (20,000–100,000 cells). The cytotoxicity test was performed in complete RPMI media in the presence of mIL15 (100 ng/ml, R&D Systems). Duplicates were generated for each condition tested. After 16 hr of incubation at 37°C, supernatant and cells were quickly collected by trypsinization and kept on ice. A viability dye was added extemporaneously (DAPI, 400–600 ng/ml final) and the percentage of DAPI+ cells in RasLOW-mCherry and RasHIGH-Venus cells was evaluated by flow cytometry. As a control (baseline level), the percentage of DAPI+ cells was measured in co-cultures of target cells maintained under the same media conditions but not exposed to NK cells.
 
-## Softwares
+### Softwares
 
 The following open-source code and software were used in this study: R (v.3.5.1), Default settings were used for all GSEA. R package DESeq2 (v.1.22.1), R package heatmap (v.1.0.10), and R package VennDiagram (v.1.6.20) were also used. GraphPad Prism v8 was used to make graphs and for statistical analyses.
 
-## Experimental study design and statistics
+### Experimental study design and statistics
 
 The investigators were blinded every time it was possible. Blinding was not possible when the investigators needed to have the sample identification in order to perform downstream analyses. Data sets were tested with two-tailed unpaired or paired Student’s t tests, one-sample t-tests, or two-way ANOVA using Prism Software version 8 (GraphPad). Significant p-values under 0.05 were considered as significant.

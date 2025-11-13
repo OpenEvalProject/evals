@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Biochemistry, University of Utah Salt Lake City United States
+1. Department of Biochemistry, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 

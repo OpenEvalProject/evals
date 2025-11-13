@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.37294.001 The level of copy number alteration (CNA), termed CNA burden, in the tumor genome is associated with recurrence of primary prostate cancer. Whether CNA burden is associated with prostate cancer survival or outcomes in other cancers is unknown. We analyzed the CNA landscape of conservatively treated prostate cancer in a biopsy and transurethral resection cohort, reflecting an increasingly common treatment approach. We find that CNA burden is prognostic for cancer-specific death, independent of standard clinical prognosticators. More broadly, we find CNA burden is significantly associated with disease-free and overall survival in primary breast, endometrial, renal clear cell, thyroid, and colorectal cancer in TCGA cohorts. To assess clinical applicability, we validated these findings in an independent pan-cancer cohort of patients whose tumors were sequenced using a clinically-certified next generation sequencing assay (MSK-IMPACT), where prognostic value varied based on cancer type. This prognostic association was affected by incorporating tumor purity in some cohorts. Overall, CNA burden of primary and metastatic tumors is a prognostic factor, potentially modulated by sample purity and measurable by current clinical sequencing.
+The level of copy number alteration (CNA), termed CNA burden, in the tumor genome is associated with recurrence of primary prostate cancer. Whether CNA burden is associated with prostate cancer survival or outcomes in other cancers is unknown. We analyzed the CNA landscape of conservatively treated prostate cancer in a biopsy and transurethral resection cohort, reflecting an increasingly common treatment approach. We find that CNA burden is prognostic for cancer-specific death, independent of standard clinical prognosticators. More broadly, we find CNA burden is significantly associated with disease-free and overall survival in primary breast, endometrial, renal clear cell, thyroid, and colorectal cancer in TCGA cohorts. To assess clinical applicability, we validated these findings in an independent pan-cancer cohort of patients whose tumors were sequenced using a clinically-certified next generation sequencing assay (MSK-IMPACT), where prognostic value varied based on cancer type. This prognostic association was affected by incorporating tumor purity in some cohorts. Overall, CNA burden of primary and metastatic tumors is a prognostic factor, potentially modulated by sample purity and measurable by current clinical sequencing.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ To address these questions, we first examine the genomic CNA landscape of conser
 
 ## Results
 
-## The genomic copy number landscape of conservatively treated prostate cancer
+### The genomic copy number landscape of conservatively treated prostate cancer
 
 To explore the genomic copy number landscape of conservatively treated prostate cancer, we set out to analyze copy number alteration (CNA) in cancer obtained non-surgically through biopsy and transurethral prostate resection (TURP) using a widely studied, conservatively treated primary prostate cancer cohort (Cuzick et al., 2006). This retrospective Transatlantic Prostate Group 1 (TAPG1) cohort (n = 1675) consists of men below age 76 with clinically localized prostate cancer and prostate-specific antigen (PSA) below 100 ng/ml who did not receive surgery or radiation within 6 months of diagnosis (Cuzick et al., 2006). This population-based cohort was drawn from six cancer registries in Great Britain, and the majority of the cohort was followed without treatment, while a subset received hormonal therapy. The original diagnostic samples, either biopsy or TURP, were obtained and centrally reviewed to obtain consistent pathological evaluation to the current standards. Drawing from this cohort, we carried out genome-wide CNA analysis by array-based comparative genomic hybridization (aCGH) of 107 biopsies or TURP samples from the TAPG1 cohort, as tissue availability is limited for much of the full cohort. The subset of cases used for CNA analysis, which make up our conservative treatment CNA cohort, have similar clinical characteristics to the full TAPG1 cohort, including median diagnosis age, baseline PSA, hormonal treatment, and clinical stage, with the exception of higher Gleason score distribution, likely due to selection for cases with sufficient DNA for analysis (Supplementary file 2). As expected for a cohort not subject to PSA screening, the patients are older and have higher grade at diagnosis than is typical for contemporary US cohorts. Among the cohort, 47 patients developed metastasis and 43 died of prostate cancer. The median follow-up time for survivors was 10.3 years from diagnosis.
 
@@ -61,23 +61,387 @@ The copy number alteration landscape of the conservative treatment cohort reveal
 
 **Figure 1.:** (a) Heat map of copy number alterations in conservative treatment CNA cohort, as well as TCGA, MSKCC, and IMPACT primary prostate cancer cohorts. (b) Frequency distribution of CNA burden, as log of percentage of genome copy number altered, for the conservative treatment prostate cancer cohort and three other primary prostate cancer cohorts.
 
-## Tumor CNA burden is prognostic for prostate cancer-specific death
+### Tumor CNA burden is prognostic for prostate cancer-specific death
 
 Since tumor CNA burden is associated with prostate cancer recurrence and metastasis in prostatectomy cohorts (Taylor et al., 2010; Hieronymus et al., 2014), we sought to determine whether tumor CNA burden was prognostic for cancer-specific death in biopsies of conservatively treated prostate cancer. In our conservative treatment CNA cohort, we find that tumor CNA burden as a continuous variable is significantly associated with prostate cancer-specific death (per 5% tumor CNA burden, HR 1.49; 95% CI 1.30, 1.70; p<0.0001; Table 1). Greater tumor CNA burden correlates with an increase in death from disease compared to a lower tumor CNA burden (Figure 2a). The risk of death due to prostate cancer within 5 years of diagnosis increases with tumor CNA burden over the majority of the tumor CNA burden distribution (Figure 2b). For example, the 5 year risk of death due to prostate cancer would be 13% for patients with a 2% tumor CNA burden and 28% for patients with a 10% tumor CNA burden (Figure 2b). Tumor CNA burden may therefore serve as a prognostic factor for cancer-specific death in patients who undergo increasingly common conservative treatment approaches.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-v2.jpg)
+
+**Figure 2.:** (a) Cumulative Incidence of death from disease (dashed lines) and death from other causes (solid lines) based in cases with high CNA burden (red lines, CNA Burden greater than or equal to the median CNA burden of this cohort, 1.48) or non-high CNA burden (black lines, CNA Burden < median). (b) Risk for death from prostate cancer within 5 years of diagnosis. Univariate risk for 5 year prostate cancer-specific death, calculated by locally weighted Kaplan–Meier estimates (solid black line) with 95% confidence interval (dashed black lines) overlaid on the distribution of CNA burden (gray). (c) Association of tumor CNA burden with available cancer outcomes in the conservative treatment primary prostate cancer TAPG1 cohort, TCGA primary cancer cohorts, and the MSK-IMPACT clinical sequencing prostate and pan-cancer cohorts of primary and metastatic tumors. Forest plot of hazard ratio (per 5% CNA burden) with 95% confidence interval shown for cancer-specific mortality (dark blue), overall mortality (light blue), and cancer recurrence (green). Supplementary Tables and Figures.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The highest quartile tumor CNA burden (above 75 percentile CNA burden, green) is compared to lower three quartiles (blue) with risk table showing the number of patients present at each time point.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Kaplan-Meier plot of disease free survival (left) and overall survival (right) of TCGA cohorts of (a) endometrial cancer and (b) colorectal cancer. The highest quartile CNA (above 75 percentile CNA burden, green) is compared to lower three quartiles (blue).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The relationship between CNA burden determined by IMPACT targeted sequencing and WES in a subset of pan-cancer IMPACT cohort samples analyzed by both approaches (n = 1005) is shown (rho = 0.88, p-value=0).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Kaplan-Meier plot of overall survival of IMPACT primary prostate cancer cohort by CNA burden quartile in (a) primary and (b) metastatic tumors. The highest quartile CNA (above 75 percentile CNA burden, green) is compared to lower three quartiles (blue).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/37294/elife-37294-fig2-figsupp5-v2.jpg)
+
+**Table 1.**
+ Tumor CNA burden is associated with prostate cancer-specific death in conservative treatment cohort independent of Gleason sum score and CAPRA score.Cox Regression model assessing the association between CNA burden (per 5%) and cancer specific survival. N = 107*
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Univariate, tumor CNA burden</td>
+      <td>1.49</td>
+      <td>1.30, 1.70</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multivariable – adjusting for Gleason sum (≤6, 7, ≥8)</td>
+      <td>1.44</td>
+      <td>1.24, 1.67</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multivariable – adjusting for UCSF-CAPRA score utilizing multiple imputation</td>
+      <td>1.44</td>
+      <td>1.24, 1.68</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multivariable – adjusting for UCSF-CAPRA score without utilizing multiple imputation * N = 60 (excludes 47 patients with unknown stage)</td>
+      <td>1.57</td>
+      <td>1.29, 1.92</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
 We next asked whether tumor CNA burden was associated with outcome after adjusting for established prognostic variables, including Gleason sum score and the UCSF Cancer of the Prostate Risk Assessment (CAPRA) score (Cooperberg et al., 2005; Brajtbord et al., 2017) which combines PSA, Gleason score, percentage positive biopsy cores, clinical stage, and age (Figure 2c). Tumor CNA burden is significantly associated with cancer-specific death even after adjusting for biopsy Gleason score (per 5% tumor CNA burden, HR 1.44; 95% CI 1.24, 1.67; p<0.0001) or CAPRA score (per 5% tumor CNA burden, HR 1.44; 95% CI 1.24, 1.68; p<0.0001) (Table 1, Figure 2c). The addition of tumor CNA burden into the model with the CAPRA score increased Harrell’s concordance index from 0.756 to 0.805 for cancer-specific survival in our cohort of men with conservatively treated prostate cancer.
 
-## Tumor CNA burden is prognostic for cancer-free and overall survival in multiple cancer types
+### Tumor CNA burden is prognostic for cancer-free and overall survival in multiple cancer types
 
 Large, clinically annotated cancer genomic efforts such as TCGA now provide an opportunity to examine whether CNA burden is prognostic for primary cancer outcomes across many cancer types. In the TCGA primary prostate cancer cohort (Cancer Genome Atlas Research Network, 2015), tumor CNA burden is significantly associated with biochemical recurrence individually (p<0.0001; per 5% tumor CNA burden, HR = 1.27; 95% CI, 1.13, 1.42) and after adjustment for Gleason score and mutation burden (p=0.015; per 5% tumor CNA burden, HR = 1.18; 95% CI, 1.03, 1.35), validating our findings from other prostate cancer cohorts (Figure 2c, Figure 2—figure supplement 1, Table 2). There were insufficient deaths in this cohort to analyze survival. CNA burden was still significantly associated with biochemical recurrence after adjusting for tumor sample purity determined by ABSOLUTE (p<0.003; per 5% CNA burden, HR = 1.22; 95% CI, 1.07, 1.40; Table 2). Since tumor CNA burden could potentially reflect simply the prognostic significance of aneuploidy as determined by cytometric DNA index in various cancers (Walther et al., 2008; Danielsen et al., 2016), we examined the tumor CNA burden in a multivariable model together with ploidy. Ploidy, generated by CLONET and previously published for this cohort, estimates the average DNA index of the tumor cells (Carter et al., 2012; Prandi et al., 2014). Tumor CNA burden was associated with recurrence independent of tumor ploidy (p=0.002; per 5% tumor CNA burden, HR = 1.32; 95% CI 1.11, 1.56; Table 2). Moreover, for a multivariable model that includes tumor CNA burden, Gleason grade, and mutation burden, the Harrell’s C-index is 0.691. In contrast, the C-index for a model including ploidy instead of tumor CNA burden is only 0.606, indicating that a model with clinical factors and ploidy does not perform as well as a model with the same clinical factors and tumor CNA burden.
 
+**Table 2.**
+ Tumor CNA burden is associated with recurrence and overall survival independent of disease stage in multiple cancer types
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cohort</th>
+      <th rowspan="2">Model</th>
+      <th colspan="4">Disease free Time</th>
+      <th colspan="4">Overall Survival</th>
+    </tr>
+    <tr>
+      <th>Cases</th>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th>P</th>
+      <th>Cases</th>
+      <th>HR</th>
+      <th>95% CI</th>
+      <th colspan="2">P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Prostate cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>280</td>
+      <td>1.27</td>
+      <td>1.13, 1.42</td>
+      <td>&lt;0.0001</td>
+      <td rowspan="4" colspan="4">Insufficient events</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, adjusted for Gleason grade and mutation burden</td>
+      <td>279</td>
+      <td>1.18</td>
+      <td>1.03, 1.35</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, adjusted for purity (ABSOLUTE)*</td>
+      <td>243</td>
+      <td>1.22</td>
+      <td>1.07, 1.40</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, adjusted for ploidy</td>
+      <td>243</td>
+      <td>1.32</td>
+      <td>1.11, 1.56</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Breast cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>709</td>
+      <td>1.07</td>
+      <td>1.01, 1.14</td>
+      <td>0.028</td>
+      <td>794</td>
+      <td>1.08</td>
+      <td>1.03, 1.13</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, Multivariable, adjusted for disease stage</td>
+      <td>695</td>
+      <td>1.07</td>
+      <td>1.00, 1.14</td>
+      <td>0.049</td>
+      <td>777</td>
+      <td>1.08</td>
+      <td>1.03, 1.13</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Endometrial Cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>496</td>
+      <td>1.10</td>
+      <td>1.06, 1.14</td>
+      <td>&lt;0.0001</td>
+      <td>536</td>
+      <td>1.13</td>
+      <td>1.08, 1.17</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, multivariable, adjusted for disease stage</td>
+      <td>496</td>
+      <td>1.08</td>
+      <td>1.04, 1.13</td>
+      <td>&lt;0.0001</td>
+      <td>536</td>
+      <td>1.10</td>
+      <td>1.05, 1.15</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Renal clear cell cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>425</td>
+      <td>1.05</td>
+      <td>1.01, 1.09</td>
+      <td>0.028</td>
+      <td>525</td>
+      <td>1.02</td>
+      <td>0.98, 1.06</td>
+      <td>NS (0.4)</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, multivariable, adjusted for disease stage</td>
+      <td>423</td>
+      <td>1.05</td>
+      <td>1.00, 1.11</td>
+      <td>0.035</td>
+      <td>522</td>
+      <td>1.01</td>
+      <td>0.97, 1.06</td>
+      <td>NS (0.7)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Thyroid cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>483</td>
+      <td>1.17</td>
+      <td>1.01, 1.35</td>
+      <td>0.033</td>
+      <td>497</td>
+      <td>1.30</td>
+      <td>1.04, 1.63</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, multivariable, adjusted for disease stage</td>
+      <td>481</td>
+      <td>1.18</td>
+      <td>1.00, 1.39</td>
+      <td>0.048</td>
+      <td colspan="4">Insufficient events</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Colorectal cancer TCGA</td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, univariate</td>
+      <td>512</td>
+      <td>1.05</td>
+      <td>1.00, 1.11</td>
+      <td>0.037</td>
+      <td>587</td>
+      <td>1.06</td>
+      <td>1.01, 1.12</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, multivariable, adjusted for disease stage</td>
+      <td>496</td>
+      <td>1.03</td>
+      <td>0.98, 1.09</td>
+      <td>NS (0.3)</td>
+      <td>567</td>
+      <td>1.03</td>
+      <td>0.97, 1.09</td>
+      <td>NS (0.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tumor CNA burden, per 5% tumor CNA burden, multivariable, adjusted for tumor stage</td>
+      <td>511</td>
+      <td>1.06</td>
+      <td>1.01, 1.12</td>
+      <td>0.028</td>
+      <td>585</td>
+      <td>1.07</td>
+      <td>1.02, 1.13</td>
+      <td>0.009</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Result differed with similar adjustment in IMPACT prostate cancer cohort utilizing FACETS, see Supplementary file 3._
+
 The prognostic significance of tumor CNA burden in prostate cancer led us to ask whether tumor CNA burden is prognostic in other cancer types. Towards this end, we examined published TCGA cohorts for multiple cancer types with available disease-free survival and overall survival data, including breast (Ciriello et al., 2015), endometrial (Cancer Genome Atlas Research Network et al., 2013), renal clear cell (Cancer Genome Atlas Research Network, 2013), thyroid (Cancer Genome Atlas Research Network, 2014), and colorectal (Cancer Genome Atlas Network, 2012) cancers. We found that tumor CNA burden is associated with recurrence (disease-free survival) in these cancer types (Figure 2c, Figure 2—figure supplement 2, Table 2). This association between tumor CNA burden and lower disease-free survival was independent of disease stage in all cancer types except colorectal cancer, where the association was independent of tumor stage but not disease stage (Table 2). In addition to lower disease-free survival, higher tumor CNA burden was also significantly associated with lower overall survival in breast, endometrial, thyroid, and colorectal cancer (Table 2). This association with overall survival was independent of disease stage in breast and endometrial cancer and independent of tumor stage in colorectal cancer (Table 2). There were insufficient cases of thyroid cancer with stage data for this analysis. In summary, tumor CNA burden is prognostic for recurrence and/or overall survival in multiple cancer types beyond prostate cancer, including breast, endometrial, colorectal, renal clear cell, and thyroid cancer.
 
-## Tumor CNA burden determined by clinical targeted sequencing of primary and metastatic tumors is prognostic for survival
+### Tumor CNA burden determined by clinical targeted sequencing of primary and metastatic tumors is prognostic for survival
 
 We next wanted to determine whether CNA burden’s prognostic associations could be observed using panel-based targeted sequencing assays that are increasingly entering clinical use, in contrast to CGH array-based determination of tumor CNA burden. The Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT) assay is a clinical laboratory improvement amendments (CLIA)-certified sequencing-based assay (Cheng et al., 2015) of several hundred cancer genes and 1042 common single nucleotide polymorphisms (SNPs) that has been used to profile 504 prostate tumors (Abida et al., 2017) and more than ten thousand tumors across other cancer types (Zehir et al., 2017). The IMPACT assay identifies both somatic point mutations and copy number alterations in the genes included in the panel. Overall copy number burden is calculated across the whole genome (Figure 1a) using segmentation derived from a combination of the profiled SNPs to provide low resolution copy number data and the genes sequenced in the panel (Cheng et al., 2015; Abida et al., 2017; Zehir et al., 2017). To address the possibility that CNA burden from the IMPACT panel might differ from that derived from more comprehensive sequencing, we directly compared CNA burden calculations from 1005 tumors that were profiled using both IMPACT and whole exome sequencing. CNA burden determined by the two methods were highly correlated (p-value<0.0001, rho = 0.88, n = 1005), indicating that CNA burden is not significantly affected by the reduced resolution in moving from whole exome to targeted panel sequencing (Figure 2—figure supplement 3).
 
 We find that tumor CNA burden assayed by targeted clinical sequencing is significantly associated with overall survival in primary prostate tumors (per 5% tumor CNA burden, HR = 1.17; 95% CI, 1.04, 1.3; p=0.007; Table 3, Figure 2c, Figure 2—figure supplement 4) in the IMPACT prostate cohort (Abida et al., 2017). As clinical sequencing assays such as MSK-IMPACT are principally used in the metastatic patient population, the IMPACT cohorts also provide an opportunity to investigate the prognostic significance of tumor CNA burden in late stage disease. We find that tumor CNA burden of metastatic prostate tumors assayed by clinical sequencing is also significantly associated with survival (per 5% tumor CNA burden, HR = 1.07; 95% CI, 1.01, 1.14; p=0.020; Table 3, Figure 2c, Figure 2—figure supplement 4).
+
+**Table 3.**
+ Tumor CNA burden determined by clinically approved sequencing panel is associated with overall survival in primary and metastatic tumors
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Model</th>
+      <th colspan="12">Overall Survival</th>
+    </tr>
+    <tr>
+      <th colspan="4">Primary tumors</th>
+      <th colspan="8">Metastatic tumors</th>
+    </tr>
+    <tr>
+      <th>HR</th>
+      <th colspan="2">95%</th>
+      <th>P</th>
+      <th colspan="3">HR</th>
+      <th colspan="3">95%</th>
+      <th colspan="2">P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="13">Prostate Cancer*,†</td>
+    </tr>
+    <tr>
+      <td>Univariate, tumor CNA burden, per 5%</td>
+      <td colspan="2">1.17</td>
+      <td>1.04, 1.31</td>
+      <td>0.007</td>
+      <td colspan="2">1.07</td>
+      <td colspan="3">1.01, 1.14</td>
+      <td colspan="3">0.020</td>
+    </tr>
+    <tr>
+      <td>Multivariable Tumor CNA burden, per 5% Mutation burden (per mutation)</td>
+      <td colspan="2">1.11 1.22</td>
+      <td>0.98, 1.26 1.12, 1.33</td>
+      <td>0.10 &lt;0.0001</td>
+      <td colspan="2">1.08 1.05</td>
+      <td colspan="3">1.02, 1.15 1.02, 1.08</td>
+      <td colspan="3">0.011 0.001</td>
+    </tr>
+    <tr>
+      <td>Multivariable Tumor CNA burden, per 5% TP53 CN loss or mutation</td>
+      <td colspan="2">1.17 4.12</td>
+      <td>1.04, 1.31 2.02, 8.41</td>
+      <td>0.007 &lt;0.0001</td>
+      <td colspan="2">1.06 1.24</td>
+      <td colspan="3">1.00, 1.13 0.76, 2.02</td>
+      <td colspan="3">NS (0.069) NS (0.4)</td>
+    </tr>
+    <tr>
+      <td>Multivariable Tumor CNA burden, per 5%  RB1 CN loss or mutation</td>
+      <td colspan="2">1.15 3.24</td>
+      <td>1.02, 1.30 0.70, 14.98</td>
+      <td>0.026 NS (0.13)</td>
+      <td colspan="2">1.06 1.68</td>
+      <td colspan="3">0.99, 1.13 0.94, 2.99</td>
+      <td colspan="3">NS (0.091) NS (0.080)</td>
+    </tr>
+    <tr>
+      <td>Multivariable Tumor CNA burden, per 5% PTEN CN loss or mutation</td>
+      <td colspan="2">1.17 2.38</td>
+      <td>1.04, 1.32 1.03, 5.51</td>
+      <td>0.008 0.042</td>
+      <td colspan="2">1.07 1.15</td>
+      <td colspan="3">1.01, 1.14 0.70, 1.89</td>
+      <td colspan="3">0.023 NS (0.6)</td>
+    </tr>
+    <tr>
+      <td colspan="13">Pan- Cancer</td>
+    </tr>
+    <tr>
+      <td>Univariate, tumor CNA burden, per 5%‡§</td>
+      <td colspan="2">1.04</td>
+      <td>1.02, 1.05</td>
+      <td>&lt;0.0001</td>
+      <td colspan="2">1.02</td>
+      <td colspan="5">1.01, 1.03</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Univariate, mutation burden (per five units)‡§</td>
+      <td colspan="2">0.98</td>
+      <td>0.97, 1.00</td>
+      <td>NS (0.072)</td>
+      <td colspan="2">0.99</td>
+      <td colspan="5">0.97, 1.01</td>
+      <td>NS (0.4)</td>
+    </tr>
+    <tr>
+      <td>Meta-analysis, tumor CNA burden (per 5%)#</td>
+      <td colspan="2">1.04</td>
+      <td>1.02, 1.05</td>
+      <td>&lt;0.0001**</td>
+      <td colspan="2">1.02</td>
+      <td colspan="5">1.01, 1.04</td>
+      <td>0.005††</td>
+    </tr>
+    <tr>
+      <td>Meta-analysis, tumor CNA burden (per 5%), excluding outlier cancer types‡‡</td>
+      <td colspan="2">1.05</td>
+      <td>1.03, 1.07</td>
+      <td>&lt;0.0001§§</td>
+      <td colspan="2">1.03</td>
+      <td colspan="5">1.01, 1.04</td>
+      <td>0.002##</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Prostate primary tumors: patient n = 261 for all models except multivariable model with mutation burden, where n = 227; event n = 33; median follow-up time for survivors 40 (IQR 25,81) months.†Prostate metastatic tumors: patient n = 216 for all models except multivariable model with mutation burden, where n = 205; event n = 80; median follow-up time for survivors 59.5 (IQR 32, 129) months.‡Pan-cancer primary tumors, univariate models: patient n = 6610, event n = 1535, median follow-up time for survivors 24 (IQR 11, 61) months§Pan-cancer metastatic tumors, univariate models: patient n = 4864, event n = 1467, median follow-up time for survivors 51 (IQR 23, 109) months.#Pan-cancer meta-analysis, among ten most prevalent cancer types: primary tumor patient n = 4863, metastatic tumor patient n = 3676. Estimates are based on overall fixed effects.**p-value corresponds with test of effects size. Chi-square test for heterogeneity p-value=0.003.††p-value corresponds with test of effects size. Chi-square test for heterogeneity p-value=0.024.‡‡Exclusion of cancer types to reduce heterogeneity: primary tumor patient n = 3887, metastatic tumor patient n = 3098. Estimates are based on overall fixed effects.§§Excluding pancreatic and colorectal cancer, test of effects size p-value. Chi-square test for heterogeneity p-value=0.3.##Excluding pancreatic and prostate cancer, test of effects size p-value. Chi-square test for heterogeneity p-value=0.8._
 
 Since clinical sequencing assays also provide point mutation information for several hundred cancer genes, we asked if tumor CNA burden is prognostic after adjusting for known prostate cancer driver alterations. In separate multivariable regression models adjusting for TP53, RB1, or PTEN loss and/or mutation, tumor CNA burden is still associated with overall survival independent of these alterations in primary prostate tumors (Table 3). In metastatic tumors, these specific gene mutations do not reach prognostic significance when combined with tumor CNA burden (Table 3). Notably, tumor CNA burden remains significant in metastatic tumors after adjusting for overall tumor mutation burden (per 5% tumor CNA burden, HR = 1.08; 95% CI = 1.02, 1.15; p=0.011; Table 3).
 
@@ -101,25 +465,25 @@ The prognostic significance of tumor CNA burden raises intriguing questions rega
 
 ## Materials and methods
 
-## aCGH copy number analysis of conservative-treatment TAPG cohort.
+### aCGH copy number analysis of conservative-treatment TAPG cohort.
 
 Of the TAPG1 cohort (Cuzick et al., 2006), FFPE prostate tumor tissue from 180 patients was macrodissected from slides. DNA was isolated (Agilent FFPE DNA isolation for aCGH protocol) and quantified by picogreen-based quantification. 107 cases yielded greater than 500 ug DNA and were analyzed by Agilent 180K human CGH arrays (Agilent, 4 × 180K G4449A arrays, per manufacturer's instructions). Copy number data from patients in the TAPG copy number cohort were quantified, normalized, segmented, and analyzed with RAE, as previously described (Taylor et al., 2010; Hieronymus et al., 2014). The conservative treatment TAPG copy number cohort array data was deposited in NCBI GEO under accession number GSE103665 (Gene Expression Omnibus, RRID:SCR_007303).
 
 Tumor CNA burden (tumor CNA burden) was analyzed as percent CNA burden, defined as the length of the genome altered by copy number alteration multiplied by 100. For regression analyses, tumor CNA burden was scaled as per five percent so that the estimates of our hazard ratios were more interpretable. All statistical analyses were performed using Stata 13 (RRID:SCR_012763, StataCorp, College Station, TX).
 
-## TAPG copy number cohort statistical analyses
+### TAPG copy number cohort statistical analyses
 
 For Cox regression analyses, the primary aim was to determine whether tumor CNA burden is associated with cancer specific survival (CSS). First, we assessed whether there was an association between tumor CNA burden and CSS by utilizing a univariate Cox model, censoring patients who did not die at the date of their last follow-up and patients who died of other causes at their death date. Secondly, in order to assess whether there is information from tumor CNA burden over and above biopsy Gleason score, we utilized a multivariable Cox model, adjusting for biopsy Gleason sum categorized as ≤6, 7, and ≥8. Finally, to assess whether there is an association between tumor CNA burden and CSS after accounting for the preoperative predictors of CSS, we utilized a multivariable Cox model, adjusting for the UCSF-CAPRA score, a preoperative risk score calculated by incorporating the patient’s age at diagnosis, PSA at diagnosis, primary and secondary Gleason score at biopsy and clinical tumor stage. As percent of positive biopsy cores was not available for the cohort, a modified CAPRA score was utilized not incorporating this information. Among our cohort of 107 patients, 47 patients were missing clinical tumor stage; multiple imputation was used to impute the missing values. Statistical analyses were performed utilizing the measured and imputed values combined across 10 imputations using Rubin’s method. Furthermore, to evaluate the discriminative accuracy of the model including tumor CNA burden, we calculated bootstrap optimism-corrected Harrell’s C-index. It should be noted that the discrimination of the CAPRA score is lower in the TAPG1 conservative treatment CNA cohort than seen in some other prostate cancer cohorts, and this may impact the degree to which tumor CNA burden increases the concordance index. All data used for these analyses are available in Supplementary file 4.
 
 For illustrative purposes, we utilized competing risk methods to estimate the probability of death from prostate cancer in the setting of death from other causes. Cumulative incidence was shown for patients who died from prostate cancer, or died from other causes, stratified on tumor CNA burden in relation to the median tumor CNA burden among the cohort, using the stcompet command in Stata.
 
-## Statistical analyses of IMPACT cohorts
+### Statistical analyses of IMPACT cohorts
 
 For analysis of the prostate cancer MSK-IMPACT cohort (Abida et al., 2017), the published cases were analyzed by Cox regression for association between overall survival and tumor CNA burden (Supplementary file 5 and 6). The IMPACT cases were separated into groups consisting of primary tumors or metastatic tumors, including loco-regional, non-resistant to treatment, and treatment resistant, though primary tumor samples include cases sampled after metastatic spread. Among our primary and metastatic IMPACT prostate cancer cohorts, we excluded men with unknown overall survival status and unknown time until overall survival status, leaving us with a final cohort of 261 and 216 men, respectively. Among these two groups of patients, we assessed the association between tumor CNA burden and overall survival using a univariate Cox model. Multivariable Cox models were then used to determine whether the association between tumor CNA burden and overall survival remained after accounting for purity determined by FACETS (Shen and Seshan, 2016), the overall point mutation burden, or specific somatic gene alterations (shallow or deep copy number loss or mutation) occurring in prostate cancer (BRCA1, BRCA2, ATM, TP53, RB1, and PTEN), using separate models for each alteration. As the overall point mutation burden was not available for all patients, 34 patients with primary prostate cancer and 11 patients with metastatic prostate cancer were excluded from this portion of the analysis in their respective cohorts.
 
 For analysis of our pan-cancer IMPACT cohort (MSK-IMPACT cohort (Zehir et al., 2017) and additionally accrued IMPACT samples), outcome data at time of analysis, mutation burden, and fraction genome altered data used were derived and available in updated form the cBio Portal (RRID:SCR_002877, http://www.cbioportal.org/study?id=msk_impact_2017, samples and annotation used at time of analysis available as Supplementary file 7 and 8). A cohort of 7305 primary tumor cases across 53 different cancer types and a cohort 5907 metastatic tumor cases, across 47 different cancer types, were identified. Within the primary and metastatic disease cohorts, we excluded patients with unknown tumor CNA burden, overall survival status, unreported follow-up time, death or censoring immediately after treatment, unknown cancer type, and unknown mutation burden. The final cohort used here therefore included 6610 and 4864 patients, respectively. Within both of these cohorts, univariate Cox models were used to determine whether CNA or mutation burden is associated with overall survival. Reported follow-up time was used. As it is probable that the association between tumor CNA burden and survival likely varies based on the particular cancer type, we focused on patients with the ten most prevalent cancer types in both of the respective cohorts (Supplementary file 2, 5198 and 3886 patients with primary and metastatic disease respectively) and proceeded with a meta-analysis in order to stratify by cancer type. In particular, we utilized a multivariable Cox model, adjusting for mutation burden for each cancer type and extracted the effect size. The effect size for each cancer type was then entered into a meta-analysis using the metan command in Stata. Both fixed effects and random effects estimates were calculated. Fixed effects weights were calculated using inverse-variance weighting, metan weights were calculated using the DerSimonian and Laird method.
 
-## Statistical analyses of TCGA cohorts
+### Statistical analyses of TCGA cohorts
 
 For analyses of TCGA cohorts, the following published cohorts were filtered for only primary, non-neoadjuvantly treated cases and analyzed: TCGA prostate adenocarcinoma (2015) (Cancer Genome Atlas Research Network, 2015), breast carcinoma (Ciriello et al., 2015), uterine endometriod cancer (Cancer Genome Atlas Research Network et al., 2013), renal clear cell carcinoma (Cancer Genome Atlas Research Network, 2013), papillary thyroid carcinoma (Cancer Genome Atlas Research Network, 2014), and colorectal adenocarcinoma (Cancer Genome Atlas Network, 2012). The number of cases and exclusions based on unavailable data are detailed in Supplementary file 9. Cox regression was used to test the association of tumor CNA burden as a continuous variable with (i) cancer free status and (ii) overall survival in univariate models and in multivariable models with disease stage. For the TCGA colorectal cancer cohort, tumor stage was also used. For the TCGA prostate adenocarcinoma cohort, multivariable Cox regression models that included Gleason score, mutation count, ploidy, and/or ABSOLUTE purity (Carter et al., 2012) originally reported with this cohort were also used. Analyses including purity exclude 37 patients without absolute tumor purity measured, resulting in analysis with 243 men, 29 of whom had BCR, and a median followup time for survivors of 20.1 (7.0, 37.9) months.
 

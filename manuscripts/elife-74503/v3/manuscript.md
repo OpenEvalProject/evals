@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02feahw73 Institut des Sciences de l’Evolution de Montpellier (Université de Montpellier | CNRS | IRD | EPHE), Place Eugène Bataillon Montpellier France
-2. https://ror.org/03ezemd27 Real Jardín Botánico (RJB), CSIC Madrid Spain
-3. https://ror.org/05rrcem69 Department of Anthropology, University of California Davis United States
-4. https://ror.org/039zvsn29 Mammal Section, The Natural History Museum, Cromwell Road London United Kingdom
-5. https://ror.org/055khg266 Institut Universitaire de France (IUF) Paris France
-6. https://ror.org/00ynnr806 Royal Botanic Gardens Kew United Kingdom
-7. https://ror.org/05krs5044 Ecology and Evolutionary Biology, University of Sheffield Sheffield United Kingdom
-8. https://ror.org/01tm6cn81 Gothenburg Global Biodiversity Centre, Department of Biological and Environmental Sciences, University of Gothenburg Gothenburg Sweden
-9. https://ror.org/052gg0110 Department of Plant Sciences, University of Oxford Oxford United Kingdom
+1. Institut des Sciences de l’Evolution de Montpellier (Université de Montpellier | CNRS | IRD | EPHE), Place Eugène Bataillon Montpellier France ([ROR:02feahw73](https://ror.org/02feahw73))
+2. Real Jardín Botánico (RJB), CSIC Madrid Spain ([ROR:03ezemd27](https://ror.org/03ezemd27))
+3. Department of Anthropology, University of California Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+4. Mammal Section, The Natural History Museum, Cromwell Road London United Kingdom ([ROR:039zvsn29](https://ror.org/039zvsn29))
+5. Institut Universitaire de France (IUF) Paris France ([ROR:055khg266](https://ror.org/055khg266))
+6. Royal Botanic Gardens Kew United Kingdom ([ROR:00ynnr806](https://ror.org/00ynnr806))
+7. Ecology and Evolutionary Biology, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+8. Gothenburg Global Biodiversity Centre, Department of Biological and Environmental Sciences, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+9. Department of Plant Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -41,19 +41,19 @@ Attempts to explain Neotropical diversity traditionally relied on two evolutiona
 
 **Figure 1.:** (a) Main species richness dynamics through time, and (b,c) the alternative evolutionary processes that could generate the corresponding patterns. (Sc. 1a) A gradual increase of species richness could result from constant speciation and extinction rates (1b), or through a comparable increase in speciation and extinction rates (1c). (Sc. 2a) An exponential increase in species numbers could be attained through constant extinction and increasing speciation (2b), or constant speciation and decreasing extinction rates (2c). (Sc. 3a) Saturated increase scenarios, with species accumulation rates slowing down towards the present, could result from constant extinction and decreasing speciation (3b), or through constant speciation and increasing extinction rates (3c). (Sc. 4a) Waxing and waning dynamics could result from constant extinction and decreasing speciation (4b), or constant speciation and increasing extinction (4c). Waxing and waning scenarios differ from saturated increases in that extinction exceeds speciation towards the present, such that diversification goes below 0. Scenarios (b–c) represent the simplest and most general models to explain species richness patterns in (a), but other combinations of speciation and extinction rates could potentially generate these patterns; for example, an exponential increase of species (2a) could also result from increasing speciation and punctual increases in extinction, or through increasing speciation and decreasing extinction.
 
-## Gradual expansions (Scenario 1)
+### Gradual expansions (Scenario 1)
 
 This scenario proposes that species richness accumulated gradually through time in the Neotropics until the present, due, for example, to constant speciation and extinction rates. The gradual increase model received substantial support in the early and recent literature (Wallace, 1878; Couvreur et al., 2011; Derryberry et al., 2011; Santos et al., 2009; Schley et al., 2018; Harvey et al., 2020), and is generally associated with the long-term environmental stability and large extension of the tropical biome across the South American continent (Simpson, 1980; Stebbins, 1974).
 
-## Exponential expansions (Scenario 2)
+### Exponential expansions (Scenario 2)
 
 An exponential increase in diversity model asserts that species richness accumulated faster towards the present. Such a pattern can result, for example, from constant extinction and increasing speciation rates, or constant speciation and decreasing extinction. Support for this model generally comes from studies suggesting that recent geological and climatic perturbations, mostly associated with the elevation of the Andes, promoted increases of diversification (Hoorn et al., 2010; Rull, 2011; Antonelli et al., 2018b). This diversity scenario is probably the most supported across Neotropical studies, although never quantified, with models of increasing speciation (Haffer, 1969; Richardson et al., 2001; Meseguer et al., 2020; Erkens et al., 2007; Hughes and Eastwood, 2006; Esquerré et al., 2019; Drummond et al., 2012; Lagomarsino et al., 2016; Pérez-Escobar et al., 2017; Musher et al., 2019; Olave et al., 2020) more often put forward than models of decreasing extinction (Antonelli and Sanmartín, 2011b).
 
-## Saturated or asymptotic expansions (Scenario 3)
+### Saturated or asymptotic expansions (Scenario 3)
 
 A saturated diversity model postulates that species richness accumulated more slowly towards the present than in the past, reaching a diversity plateau. This can result from constant extinction and decreasing speciation, for example, such that speciation and extinction rates become equal towards the present. Diversification decreases could be due to ecological limits (Rabosky, 2009), damped increases (Cornell, 2013; Morlon et al., 2010), or abiotic fluctuations (Condamine et al., 2019a). Some studies support this model for the Neotropics, and they generally associate it with an early burst of diversification under favourable climatic conditions, followed by decelerations due to global cooling, and dispersal constraints (Santos et al., 2009; Phillimore and Price, 2008; Fine et al., 2014; Cadena, 2007; Weir, 2006).
 
-## Declines in diversity (Scenario 4)
+### Declines in diversity (Scenario 4)
 
 Waxing and waning dynamics characterize clades that decline in diversity after periods of expansion. In a declining dynamic, diversification rates also decrease towards the present, but differ from saturated diversity in that extinction exceeds speciation, and diversity is lost. Waxing and waning dynamics may seem unlikely in a tropical context, but evidence for tropical diversity declines has been found at the global scale (Meseguer and Condamine, 2020; Quental and Marshall, 2013; Foote et al., 2007) and at the Neotropical scale in the fossil record (Hoorn et al., 1995; Jaramillo et al., 2006; Antoine et al., 2017; Archibald et al., 2010; Salas-Gismondi et al., 2015; Jansa et al., 2014; Carrillo et al., 2020). Fossil studies additionally suggest a link between decreases in Neotropical diversity and global temperature. For example, plant diversity inferred from fossil morphotypes reached its maximum levels during hyperthermal periods in the Eocene, and decreased sharply with subsequent cooling (Hoorn et al., 1995; Jaramillo et al., 2006; Wilf et al., 2005).
 
@@ -67,33 +67,249 @@ Based on an unparalleled comparative phylogenetic dataset containing 150 well-sa
 
 ## Results
 
-## Neotropical phylogenetic dataset
+### Neotropical phylogenetic dataset
 
 We constructed a dataset of 150 time-calibrated clades of Neotropical tetrapods and plants derived from densely sampled molecular phylogenies (Figure 2; Figure 2—source data 1; Meseguer, 2021). The dataset includes a total of 12,512 species, consisting of 6222 species of plants, including gymnosperms and angiosperms (66 clades, representing 5–7% of the described Neotropical seed plants); 922 mammal species (12 clades, 51–77% of the Neotropical mammals); 2216 bird species (32 clades, 47–59% of the Neotropical birds); 1148 squamate species (24 clades, 30–33% of the Neotropical squamates); and 2004 amphibian species (16 clades, 58–69% of the Neotropical amphibian diversity). Each clade in our dataset includes 7–789 species (mean = 83.4), with 53% of the phylogenies including more than 50% of the described taxonomic diversity (sampling fraction mean = 57%). Clade ages range from 0.5 to 88.5 million years (Myrs) (mean = 29.9; Figure 2—figure supplement 1). In this dataset, amphibian phylogenies are significantly larger than those of other clades (p<0.05) (Figure 2—figure supplement 1). Amphibian and squamate phylogenies are also significantly older (p<0). Groups also differ in sampling fraction: plant (p<0.01) and squamate (p<0) phylogenies are significantly less sampled than phylogenies of other groups. Our dataset triples the data presented in previous meta-analyses of the Neotropics in terms of number of species, for example, 214 clades and 4450 species in Antonelli et al., 2018c, and quadruples it in terms of sampling, with 20.8 species per tree in Antonelli et al., 2018c.
 
-## Estimating the tempo and mode of Neotropical diversification
+![Figure 2.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig2-v3.jpg)
 
-## Diversification trends based on traditional diversification rates
+**Figure 2.:** Horizontal bars represent crown ages of 150 phylogenies analysed in this study. Shaded boxes represent the approximate duration of some geological events suggested to have fostered dispersal and diversification of Neotropical organisms. Inset histograms represent summary statistics for crown age (mean = 29.9 Myrs), sampling fraction (mean = 57%), and tree size (mean = 83.4 species/tree). Mean global temperature curve from Zachos et al., 2008. Abbreviations: K, Cretaceous; P, Paleocene; E, Eocene; O, Oligocene; M, Miocene; P, Pliocene (Pleistocene follows but is not shown); GAARlandia, Greater Antilles and Aves Ridge. Animal and plant silhouettes from PhyloPic (http://-phylopic.org/). Figure 2—source data 1 includes the dataset of plant, mammal, bird, squamate, and amphibian phylogenies and the original references for this data. Figure 2—figure supplement 1 represents summary statistics for crown age, sampling fraction, and tree size for each clade. Figure 2—figure supplement 2 includes box plots showing differences in sampling fraction, clade age, and number of species per tree for the different taxonomic groups considered in this study.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The histograms represent the clade age (crown age in million years ‘Myrs’), sampling fraction (% of described species represented in the trees) and number of tips for the 150 phylogenies of plants, mammals, birds, squamates, and amphibians.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Letters are used to denote statistically differences between groups, with groups showing significant differences in mean values denoted with different letters.
+
+### Estimating the tempo and mode of Neotropical diversification
+
+#### Diversification trends based on traditional diversification rates
 
 To understand the tempo (Q1) and drivers of Neotropical diversification (Q2), we compared the fit of birth-death models applied to 150 phylogenies, including models where diversification rates are constant, vary through time, vary as a function of past global temperatures, or vary according to past Andean elevation (see Methods). When only models with constant diversification and time-varying rates were considered, constant models best fit 67% of the phylogenies (101 clades) (Supplementary file 1A). In the remaining 49 trees, we detected variation in diversification rates. Speciation decreased towards the present in 28 trees (57%), increased in 12, and remained constant (being extinction time-variable) in 9, although the proportions varied between lineages (Figure 3a). The proportion of clades that evolved at constant diversification decreased to 50.6% (76 clades) when the comparison included more complex environmental models (Figure 4; Supplementary file 1B; Meseguer, 2021). The proportion of time-variable models also increased to 74 trees.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig3-v3.jpg)
+
+**Figure 3.:** The histograms show the proportion of phylogenies for which constant vs. time-variable diversification models were the best fit, as derived from (a) canonical and (b) pulled diversification rates when comparing time-dependent models against constant models. In Figure 3a, the proportion of time-variable models is subdivided by the proportion of phylogenies in which speciation rates increase through time, decrease through time, or speciation remains constant (being extinction time-variable). In Figure 3b, speciation trends are derived from present-day pulled extinction rates μp(0): negative present-day pulled extinction rates values (μp(0)<0) indicate decreasing speciation trends through time (Louca and Pennell, 2020). Positive μp(0)>0 values are possible under both increasing and decreasing speciation rates, in which case speciation trends are designed as ‘unknown’. Figure 3—source data 1 provides the data to construct a and Figure 4a. Figure 3—source data 2 provides the data to construct Figure 3b. Figure 3—figure supplement 1 shows the proportion of phylogenies fitting different pulled diversification models for a reduced dataset including only trees with more than 20 species (N=99), or with a sampling fraction over 20% (N=137).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The histograms show the proportion of phylogenies best fitting constant vs. time-variable diversification models, as derived from pulled diversification rates for (a) the complete dataset, (b) a reduced dataset including only trees with more than 20 species (N=99), and (c) a reduced dataset including only trees with a sampling fraction over 20% (N=137). Speciation trends are derived from present-day pulled extinction rates μp(0): negative present-day pulled extinction rates values (μp(0)<0) indicate decreasing speciation trends through time (Louca and Pennell, 2020). Positive μp(0)>0 values are possible under both increasing and decreasing speciation rates, in which case speciation trends are designed as ‘unknown’.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig4-v3.jpg)
+
+**Figure 4.:** The histograms show the proportion of phylogenies for which gradual increase (Sc. 1), exponential increase (Sc. 2), saturated increase (Sc. 3), and waxing and waning (Sc. 4) scenarios were the best fit, as derived from net diversification trends when comparing (a) time-dependent models against constant models and (b) environmental (temperature- and uplift-dependent models) against time-dependent and constant models. (c) Correspondence analysis showing the association between species richness dynamics (represented by blue arrows) and major taxonomic groups (red arrows). If the angle between two arrows is acute, then there is a strong association between the corresponding variables. Figure 4—source data 1 provides the data to construct Figure 4b and c. Source data to generate Figure 4a is provided as Figure 3—source data 1, file 2; Figure 4—figure supplement 1 shows the proportion of phylogenies best fitting different species richness dynamics for a reduced dataset including only trees with more than 20 species (N=99), or with a sampling fraction over 20% (N=137).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** The histograms show the proportion of phylogenies best fitting gradual increase (Sc. 1), exponential increase (Sc. 2), saturated increase (Sc. 3), and waxing and waning (Sc. 4) species richness dynamics, as derived from diversification rates when comparing (1) time-dependent against constant models, and (2) environmental (temperature- and uplift dependent) models against time-dependent and constant models. The results are reported for (a) the complete dataset, (b) a reduced dataset including only trees with more than 20 species, and (c) a reduced dataset including only trees with a sampling fraction over 20%. Abbreviation: Cst = constant.
+
 The empirical support for the main species richness dynamics from the 150 phylogenies was as follows: gradual expansions (Sc. 1, constant diversification) were detected in 101–76 phylogenies if environmental models were considered; exponential expansions (Sc. 2, increases in diversification) were detected in 20–30 clades; and saturated expansions and declining dynamics (Sc. 3 and 4, diversification decreases) were supported in 24–31 and 5–9 clades, respectively (Table 1 and Figure 4). Diversification trends remained similar when small (<20 species) or poorly sampled (<20% of the species sampled) phylogenies were excluded from the analyses (99 and 137 trees remaining, respectively), although the proportion of constant diversification models decreased in all cases (55–35%; Figure 3—figure supplement 1; Figure 4—figure supplement 1).
+
+**Table 1.**
+ Alternative species richness dynamics (Sc. 1–4) and the corresponding diversification processes (a–c) able to explain Neotropical diversity.Species richness dynamics represent scenarios of expanding (Sc. 1–2), saturating (Sc. 3) and contracting (Sc. 4) diversity, in which speciation (λ) and/or extinction (μ) remain constant or vary through time. The number of phylogenies supporting each model is provided for all lineages pooled together, and for plants and tetrapods separately. Empirical support for each evolutionary model is based on canonical diversification rates (CDR), and pulled diversification rates (PDR), by comparing the constant model against different sets of time-variable models. For CDR, we provide as well the results (in italic) based on model comparisons including constant, time-variable, and paleoenvironmental-dependent (temperature and uplift) models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Diversity dynamics</th>
+      <th>CDR all (plant/tetra)</th>
+      <th>PDR all (plant/tetra)</th>
+      <th>Diversification process</th>
+      <th>Model parameters</th>
+      <th>CDR all (plant/tetra)</th>
+      <th>PDR all (plant/tetra)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Sc 1.Gradual increase</td>
+      <td rowspan="3">101 (47/54)76 (40/37)</td>
+      <td rowspan="3">95 (39/56)</td>
+      <td>(a) Constant λ and μ</td>
+      <td>λ(t) = λ0,μ(t) = μ0</td>
+      <td>101 (47/54)77 (40/37)</td>
+      <td rowspan="3">95 (39/56)</td>
+    </tr>
+    <tr>
+      <td>(b) Equivalent increase in λ and μ</td>
+      <td>λ(t) = λ0eαt,μ(t) = μ0eβt, λ0 = μ0,α = β</td>
+      <td>0 (0/0)0 (0/0)</td>
+    </tr>
+    <tr>
+      <td>(c) Both</td>
+      <td></td>
+      <td>0 (0/0)0 (0/0)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sc 2. Exponential increase</td>
+      <td rowspan="3">20 (17/3)30 (19/11)</td>
+      <td rowspan="9">51 (25/26) *</td>
+      <td>(a) Increasing λ, constant μ</td>
+      <td>λ(t) = λ0eαt,α&lt;0,μ(t) = μ0</td>
+      <td>9 (7/2)9 (8/1)</td>
+      <td rowspan="9">51 (25/26) *</td>
+    </tr>
+    <tr>
+      <td>(b) Constant λ, decreasing μ</td>
+      <td>λ(t) = λ0,μ(t) = μ0eβt,β&gt;0</td>
+      <td>10 (10/0)13 (11/2)</td>
+    </tr>
+    <tr>
+      <td>(c) Both</td>
+      <td></td>
+      <td>1 (0/1)8 (0/8)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sc 3.Saturated increase</td>
+      <td rowspan="3">24 (1/23)31 (3/28)</td>
+      <td>(a) Decreasing λ, constant μ</td>
+      <td>λ(t) = λ0eαt,α&gt;0,μ(t) = μ0</td>
+      <td>24 (1/23)29 (3/27)</td>
+    </tr>
+    <tr>
+      <td>(b) Constant λ, increasing μ</td>
+      <td>λ(t) = λ0,μ(t) = μ0eβt,β&lt;0</td>
+      <td>0 (0/0)0 (0/0)</td>
+    </tr>
+    <tr>
+      <td>(c) Both</td>
+      <td></td>
+      <td>0 (0/0)1 (0/1)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sc 4.Waxing and waning</td>
+      <td rowspan="3">5 (1/4)13 (5/8)</td>
+      <td>(a) Decreasing λ, constant μ</td>
+      <td>λ(t) = λ0eαt,α&gt;0,μ(t) = μ0</td>
+      <td>1 (1/0)(1/5)</td>
+    </tr>
+    <tr>
+      <td>(b) Constant λ, increasing μ</td>
+      <td>λ(t) = λ0,μ(t) = μ0eβt,β&lt;0</td>
+      <td>1 (0/0)(1/1)</td>
+    </tr>
+    <tr>
+      <td>(c) Both</td>
+      <td></td>
+      <td>3 (0/4)8 (3/2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Pulled extinction rates (μp) can be useful for inferring speciation trends, for example, a negative present-day pulled extinction rate (μp(0)<0) is indicative that λ decreases through time. But the opposite is not necessarily true, that is, a positive present-day pulled extinction rate (μp(0)>0) does not necessarily indicate that λ increases through time (Louca and Pennell, 2020). Based on pulled extinction, we cannot infer either if diversification dropped below 0, and thus differentiate between the two scenarios in which λ decreases through time (3. damped increase and 4. waxing and waning dynamics). Similarly, based on pulled diversification rates, we cannot identify increases in speciation or time changes in extinction rates (scenarios 1b,c; 2a,b,c; 3b,c; 4b,c)._
 
 Rate variation was inferred from models that can capture the dependency of speciation and/or extinction rates over time (time-dependent models) or over an environmental variable (either temperature- or uplift-dependent models). Among them, temperature-dependent models explained diversification in 40 phylogenies (26.7%). Time-dependent models best fit 17 clades (11%). Uplift-dependent models explained another 11% (Figure 5, Supplementary file 1B). The relative support for time-, temperature- and uplift-dependent models remained similar regardless of whether we compared the fit of the best or second-best models (defined based on ΔAIC values; Figure 5—figure supplement 1), although overall support for constant-rate scenarios decreased in the latter.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig5-v3.jpg)
+
+**Figure 5.:** The histograms report the proportion of (a) phylogenies whose diversification rates are best explained by a model with constant, time-dependent, temperature-dependent, or uplift-dependent diversification. The number of phylogenies (and species) per group is shown in parentheses. (b) The histograms report the number of phylogenies whose diversification rates are best explained by a model with constant, time-, temperature-, or uplift-dependent diversification according to different species richness scenarios (Exp = Exponential increase [Sc.2], Sat = Saturated increase [Sc.3], and Wax = Waxing and waning [Sc.4]), for plants, endotherm tetrapods, ectotherms, and all clades pooled together. (c) Correspondence analysis for the pooled dataset showing the association between species richness dynamics (represented by red arrows) and the environmental drivers (blue arrows). If the angle between two arrows is acute, then there is a strong association between the corresponding variables. Figure 5—source data 1 provides the data to construct this figure. Figure 5—figure supplement 1 shows the proportion of phylogenies best fitting different paleoenvironmental models based on the most supported and second most supported model. Results are also reported for a reduced dataset including only trees with more than 20 species (N=99), or with a sampling fraction over 20% (N=137). Figure 5—figure supplement 2 shows the comparison of diversification results based on different paleotemerature curves.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** The histograms report the proportion of phylogenies whose diversification rates are best explained by a model with constant, time-dependent, temperature-dependent, or uplift-dependent diversification based on (1) the most supported model (lowest AIC value), and (2) the second most supported model. The results are reported for the complete dataset (a), for a reduced dataset including only trees with more than 20 species (b), and for a reduced dataset including only trees with a sampling fraction over 20% (c).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Mean global paleotemperature estimates mostly differ in the magnitude of the changes but share the same overall trend. The histograms report (b) the proportion of phylogenies best supported by a model with diversification rates that are constant (in red), time (in blue), temperature (in green), or Andean (in orange) compared for the analyses based on different temperatures estimates.
+
 Results also remained stable regardless of the paleotemperature curve (Zachos et al., 2008; Hansen et al., 2013; Veizer and Prokoph, 2015) considered for the analyses (Figure 5—figure supplement 2). Diversification analyses based on the different paleotemperature curves produced almost identical results, in terms of model selection, parameter estimates, and main diversification trends. Therefore, we present and discuss the results based on the curve of Veizer and Prokoph, 2015, as this is the only curve spanning the full time range of all the Neotropical lineages included in our dataset (150 phylogenies).
 
-## Diversification trends based on pulled diversification rates
+#### Diversification trends based on pulled diversification rates
 
 To gain further insights in Neotropical diversification (Q1), we explored congruent diversification models defined in terms of pulled diversification rates (PDR, rp) (Louca and Pennell, 2020; Louca et al., 2018). These analyses recovered consistent diversification trends with those found above: 63% of the phylogenies (95 clades) better fit constant pulled models (Figure 3b; Supplementary file 1C). Meanwhile in 37% of the phylogenies (55 clades) we found variation in PDR through time. Diversification trends remained similar when small (<20 species) or poorly sampled (<20% of the species sampled) phylogenies were excluded from the analyses (Figure 3—figure supplement 1). We also detected negative pulled present-day extinction rates μp(0) in most of the phylogenies (51 clades, 92%) in which PDR varied through time, suggesting that speciation was decreasing. Based on PDR, we could only detect constant diversification (Sc. 1) or decreases in speciation, and thus the combined support for Sc. 2, 3, and 4 (Table 1).
 
-## Neotropical bioregionalization
+### Neotropical bioregionalization
 
 To examine the spatial variation of diversification dynamics within the Neotropics (Q3), we first had to identify geographic units of long-term Neotropical evolution suitable for comparison. We found that most clades in our study were distributed in most Neotropical WWF ecoregions (Figure 6—source data 1), suggesting that species presence-absence data might be of limited use for delimiting geographic units at the macroevolutionary scale of this study. In contrast, based on clades’ abundance patterns, we identified five clusters of regional assemblages that represent long-term clade endemism (Figure 6; Figure 6—figure supplement 1; Figure 6—source data 2): cluster 1 (including the Amazonia, Central Andes, Chocó, Guiana Shield, Mesoamerica, and Northern Andes), cluster 2 (Atlantic Forest, Caatinga, Cerrado, Chaco, and temperate South America), cluster 3 (Caribbean), cluster 4 (‘elsewhere’ region), and cluster 5 (Galapagos). An alternative clustering (Figure 6—figure supplement 2) separating Mesoamerica from cluster 1, and the Chaco and temperate South America from cluster 2, received lower support (Figure 6—figure supplement 1).
 
-## Variation of diversification dynamics across taxa, environmental drivers, and biogeographic units
+![Figure 6.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig6-v3.jpg)
+
+**Figure 6.:** (a) Principal component analysis (PCA) representation of the five biogeographic clusters identified based on K-means clustering of 13 areas (WWF ecoregions) and 150 clades. (b) Resulting clusters (1–5) in geographic space. Colours correspond with the biogeographic clusters in (a). Thick lines delineate the original 13 ecoregions used in the analyses. (c) Box plot showing differences in crown age of the phylogenies distributed in each of the biogeographic clusters. (d) Variation in diversification and (e) pulled diversification rates (derived from the constant-rate model) across geographic clusters. (f) Number of phylogenies for which species richness scenarios Sc. 1–4 (Grad = Gradual increase [Sc.1], Exp = Exponential increase [Sc.2], Sat = Saturated increase [Sc.3], and Dec = Declining diversity [Sc.4]) were the best fit, across geographic clusters as derived from canonical diversification rates. (g) Number of phylogenies for which constant vs. declining speciation rates were the best fit, across geographic clusters as derived from pulled diversification rates. Figure 6—source data 1 provides the original data to conduct K-means clustering analyses, and generate Figure 6a; Figure 6—source data 2 provides the assignation of clades to biogeographic clusters; Figure 6—source data 3 provides the data to generate (c, d, f), and Figures 7—9; Figure 6—source data 4 provides the data to generate Figure 6; for example, Figure 6—figure supplement 1 shows the Elbow curve for K-means clustering results; Figure 6—figure supplement 2 shows biogeographic clustering and diversification results if seven clusters are considered.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig6-figsupp1-v3.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74503/elife-74503-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Principal component analysis (PCA) representation of K-means clustering results for 13 areas (WWF ecoregions) and 150 clades. (b) Resulting clusters (1–5) on the geographic space. Colours correspond with the clusters of regions identified in (a), thick lines delineate the original ecoregions used in the analyses. (c) Number of phylogenies best fitting species richness scenarios Sc. 1–4 (Grad = Gradual increase [Sc.1], Exp = Exponential increase [Sc.2], Sat = Saturated increase [Sc.3], and Dec = Declining diversity [Sc.4]) across geographic clusters as derived from canonical diversification rates. (d) Variation in diversification rates (derived from the constant-rate model) across geographic clusters.
+
+### Variation of diversification dynamics across taxa, environmental drivers, and biogeographic units
 
 We evaluated the prevalence of macroevolutionary scenarios 1–4 (Figure 1) across environmental drivers (Q2), biogeographic units (Q3) and taxonomies (Q4) (see Methods). Table 2 summarize all the results. We found that species richness dynamics were related to particular environmental drivers (p=0.003; Q2). Pairwise comparisons indicated that temperature-dependent models tended to best fit clades experiencing saturating (p=0.049) and declining (p=0.05) diversity dynamics. Meanwhile, uplift- and time-dependent models tended to best fit clades with exponentially increasing diversity (p=0.03) (Figure 5c).
+
+**Table 2.**
+ Summary p value results derived from the analysis of canonical diversification (r) and pulled diversification (rp) rates.Significant differences in the proportion of clades experiencing different diversity trajectories (based on canonical diversification rates: gradual expansions, exponential expansions, saturation or declining diversity; based on pulled diversification rates: expanding vs. declining speciation) across biogeographic units, elevations, taxonomic groups, and environmental drivers as derived from Fisher’s exact tests. Significant differences in net diversification, pulled diversification, and speciation rates across biogeographic units, elevations and taxonomic groups derive from Kruskal-Wallis chi-squared analyses. Significant results are highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Diversity trajectories</th>
+      <th colspan="2">Diversification rates</th>
+      <th>Speciation rates</th>
+    </tr>
+    <tr>
+      <th>r</th>
+      <th>rp</th>
+      <th>r</th>
+      <th>rp</th>
+      <th>r</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biogeographic units (5 clusters)</td>
+      <td>0.459</td>
+      <td>0.252</td>
+      <td>0.168</td>
+      <td>0.083</td>
+      <td>0.248</td>
+    </tr>
+    <tr>
+      <td>Biogeographic units (7 clusters)</td>
+      <td>0.503</td>
+      <td>0.947</td>
+      <td>0.198</td>
+      <td>0.424</td>
+      <td>0.277</td>
+    </tr>
+    <tr>
+      <td>Elevation</td>
+      <td>0.504</td>
+      <td>0.839</td>
+      <td>0.672</td>
+      <td>0.277</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td>Elevation (lowland-montane combined)</td>
+      <td>0.062</td>
+      <td>0.062</td>
+      <td>0.332</td>
+      <td>0.869</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Taxonomic groups</td>
+      <td>0.000</td>
+      <td>0.126</td>
+      <td>0.000</td>
+      <td>0.000</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Environmental drivers</td>
+      <td>0.003</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
 
 In contrast, there is no evidence to suggest that species richness dynamics are related to a given geographic location when considering the whole dataset (Figure 6c–f, Figure 7; Q3). Results of Fisher’s exact test show no significant differences in the proportion of clades experiencing gradual expansions, exponential expansions, saturation, or declining diversity across biogeographic units (p=0.45) or elevation ranges (p=0.062). We obtained similar results when the montane category was analysed separately (p=0.5, Figure 7). Diversity trajectories derived from the analysis of PDR produce the same results, with no differences in the proportion of clades experiencing constant (i.e., expanding diversity dynamics) or declining speciation trends across biogeographic units (p=0.25), or elevation ranges (p=0.062), even when the montane category was analysed separately (p=0.839). Estimates of net diversification rates (rather than diversity trajectories) derived from the constant diversification model did not differ across biogeographic units (χ2=5.05, p=0.17) or altitudinal ranges (χ2=2.20; p=0.332) either. Speciation rates did not differ between biogeographic units (χ2=4.1, p=0.25), but did vary across altitudinal ranges (χ2=6.9, p=0.03). Speciation rates were significantly higher across highland taxa (Figure 7). In addition, PDR did not differ across biogeographic units (χ2=6.7; p=0.083) or elevations (χ2=0.28; p=0.87).
 
@@ -121,7 +337,7 @@ Finally, we found that no continuous (Kr = 0.06, p=0.6; Kλ=0.07, p=0.4; Krp = 0
 
 ## Discussion
 
-## Diversification dynamics in the Neotropics
+### Diversification dynamics in the Neotropics
 
 Neotropical biodiversity has long been considered as being in expansion through time due to high rates of speciation and/or low rates of extinction (Stebbins, 1974; Harvey et al., 2020; Meseguer et al., 2020). Yet, to our knowledge, the generality of this trend in the Neotropics has not yet been evaluated or quantified. The higher support for the expanding diversity trend found here aligns with these ideas because most Neotropical clades (between 80% and 70%, if environmental models are considered) displayed expanding diversity dynamics through time (Figure 4; Table 1). Most of these clades experienced a gradual accumulation of lineages (Sc. 1; between 67% and 50%), and a lower proportion (14% and 16%) expanded exponentially (Sc. 2), thus diversity accumulation accelerated recently. Results based on PDR support these conclusions, with the largest proportion of clades expanding diversity (63%) due to gradual increases (Sc. 1; Figure 3).
 
@@ -135,7 +351,7 @@ Support for decreasing diversification through time was larger when PDR were con
 
 Still, our study illustrates the robustness of the diversification trend in the Neotropics to different modelling approaches. Despite parameter values varying substantially for some trees between the traditional and PDR methods (Supplementary file 1), a pattern also described in recent studies (Morlon et al., 2022), our analyses support a macroevolutionary scenario of expanding diversity for most Neotropical clades (Figure 4).
 
-## Taxon-specific patterns and drivers of Neotropical diversification
+### Taxon-specific patterns and drivers of Neotropical diversification
 
 The variation in Neotropical diversification dynamics could be partially explained by the taxonomic affinity of the groups under study. Our study revealed contrasting evolutionary patterns for plants and tetrapods (Figure 4): diversity expansions (Sc. 1, 2) were more frequently detected in plants (~88%, 59 clades) than in tetrapods (~57%, 48 clades). In contrast, asymptotic increases (Sc. 3) were more frequent in tetrapods (33%, 28 clades) than in plants (4.5%, 3 clades; Tynanthus [Bignoniaceae], Chamaedoreae [Arecaceae], and Protieae [Burseraceae]). Net diversification rates were also higher in plants (Figure 8), in agreement with previous studies (Hernández-Hernández et al., 2021).
 
@@ -151,7 +367,7 @@ The Andean orogeny mostly impacted tetrapod diversification (Hagen et al., 2021)
 
 In contrast to tetrapods, plant diversity expansions were primarily associated with temperature cooling and with time, where the latter represents a null hypothesis; the better fit of a time-dependent model, in comparison to environmental models, is generally indicative of factors not being investigated here (Morlon, 2014). Many of the plant lineages fitting time-dependent models represent textbook examples of ongoing radiations; for example, centropogonids (Lagomarsino et al., 2016), Lupinus (Drummond et al., 2012), or Inga Kursar et al., 2009, whose diversification has been associated with biotic drivers, such as the evolution of key adaptations or pollination syndromes. These factors are taxon-specific and were not evaluated in this study, where we focused on global phenomena. Similarly, we did not assess the role of the emergence of angiosperm-dominated rainforests in the evolution of tetrapods. Angiosperm-dominated forests were already established in the Neotropics by the Palaeocene (Carvalho et al., 2021), while the age of origin for most clades in our study postdates this period (Figure 2). In all cases, our results add support to the role of environmental and biotic factors as non-mutually exclusive drivers of macroevolutionary changes on Neotropical plants.
 
-## Neotropical bioregionalization at macroevolutionary scales
+### Neotropical bioregionalization at macroevolutionary scales
 
 Understanding the spatial variation of Neotropical biodiversity dynamics is key to understanding the determinants of the exceptional diversity of the Neotropics. The first step towards this is the identification of evolutionary arenas of Neotropical diversification.
 
@@ -159,7 +375,7 @@ Conventional bioregionalizations schemes, such as biomes (Walter and Box, 1976),
 
 We propose an alternative bioregionalization scheme of the Neotropical region that accounts for long-term regional assemblages at macroevolutionary scales (Figure 6). We identify five biogeographic units that represent macroregions where different independent Neotropical radiations occurred over millions of years of biotic evolution. These regions are defined in terms of species richness patterns within clades (Figure 6—source data 1; Figure 6—source data 2), showing that species-rich clades in Amazonia also tend to be species-rich in the Andes, Chocó, Guiana Shield, and Mesoamerica (biogeographic cluster 1), without excluding that some species within these clades occur in other regions. Meanwhile, clades that are species-rich in the Atlantic Forest tend to be rich in the Caatinga, Cerrado, Chaco, and temperate South America (cluster 2). This regionalization roughly coincides with the Neotropical sub-regions proposed in previous studies (Morrone et al., 2022). The biogeographic cluster 1 corresponds with a broad ‘pan-Amazonian’ region that relied on the ancient Amazon Craton (Hoorn et al., 2010). Cluster 2 broadly groups different formations of the area known as the ‘Dry Diagonal’ (Prado and Gibbs, 1993; Luebert, 2021), which are geologically younger, dating from the Miocene (Pennington et al., 2006; Beerling and Osborne, 2006; Becerra, 2005). Although lineage crown ages do not differ between these regions (Figure 6). Clusters 1 and 2 include regions identified as transition zones in previous studies – Mesoamerica and temperate South America, respectively (Kreft and Jetz, 2013). Our analyses merged these regions with the core area with which it showed the greatest affinity, although other less supported classification schemes separate transition regions into individual clusters (Figure 6—figure supplement 1, Figure 6—figure supplement 2). Within each of these clusters, the contribution of in situ diversification is therefore more relevant than dispersion to explain their biotic assemblage. As such, these biogeographical clusters form distinctive units of Neotropical evolution and represent long-term clade endemism.
 
-## The geographical structure of Neotropical diversification
+### The geographical structure of Neotropical diversification
 
 The variation in Neotropical diversification dynamics described in this study (Figure 4) could not be explained by geography. We did not find evidence to reject the null hypothesis of equal diversification, with similar diversity dynamics (Sc. 1–4) found across the biogeographic units of Neotropical evolution identified here (Figure 6, Table 2). We obtained the same result when Mesoamerica and temperate South America transition zones were analysed separately (Figure 6—figure supplement 2). In addition, we did not find differences in diversification dynamics between elevational ranges. These results were consistent whether we analysed net diversification rates or their derived diversity trends (Sc. 1–4). In the former, Neotropical lineages distributed in different elevations did differ in their speciation rates, as found in previous studies: speciation increased with altitude (Drummond et al., 2012; Weir, 2006; Quintero and Jetz, 2018; Vasconcelos et al., 2020; Rahbek et al., 2019). Elevated speciation rates might result from ecological opportunities on newly formed high-altitude environments, or those newly exposed after periods of cooling (Armijo et al., 2015; Blisniuk et al., 2005; Flantua et al., 2019). However, elevated speciation rates were also accompanied by elevated extinction in these habitats, hence net diversification remains comparable. The hypothesis of comparable diversification was also supported when comparing PDR (Figure 6). Geographic diversification may vary within taxonomic groups, though small sample sizes prevent us from drawing any firm conclusions on this.
 
@@ -167,7 +383,7 @@ The use of clades (rather than species) as evolutionary units in our biogeograph
 
 These results also suggest that differences in species richness between the Neotropical bioregions defined here might not be attributable to long-term differences in diversification rates, nor to differences in diversification dynamics. Nor could time alone explain these differences, as we found no significant differences in the crown age of the phylogenies distributed in the different biogeographic clusters (Figure 6). Several studies have highlighted the role of dispersal in the configuration of modern Neotropical biotas (Carrillo et al., 2020; Smith et al., 2014; Bacon et al., 2015; Antonelli et al., 2015). By focusing exclusively on Neotropical radiations, we did not consider the role of dispersal into and out of the Neotropics (or within Neotropical regions) as an additional factor explaining Neotropical diversification. Future studies integrating biogeographic and diversification processes will be needed to provide a complete picture on the drivers of Neotropical diversification.
 
-## Limitations and perspectives
+### Limitations and perspectives
 
 The results and conclusions presented here represent our best attempt to infer complex processes in deep geological times, and need to be interpreted in light of the general challenges in estimating diversification rates from phylogenies of extant species. Louca and Pennell, 2020, have reanimated this debate by showing that there is an infinite number of ‘congruent’ models that yield the same likelihood for any combinations of speciation and extinction rates. However, when speciation and extinction rates are defined as functions of time and constrained to follow specific functional forms, such as the exponential or a biologically motivated function (such as the environmental dependency tested here), speciation and extinction rates are identifiable (Morlon et al., 2022). The time-dependent models we applied have been shown to perform well in recovering speciation and extinction parameters, including negative net diversification (Morlon et al., 2011), detecting shifts of diversification (with regularization techniques as proposed in Morlon et al., 2022), and correctly identifying the diversification model and paleodiversity dynamic (Mazet et al., 2022). The same applies to environment-dependent models (Lewitus and Morlon, 2018).
 
@@ -181,7 +397,7 @@ Similarly, we did not manage to sample evenly across all regions. Our conclusion
 
 Although these limitations are likely to bias our study, we deem the representativeness of our dataset, and the diversification models compared here, as adequate to support the general patterns and conclusions inferred in this study. We hope that our study will provide interesting and testable perspectives for future investigations in the Neotropics and other regions.
 
-## Conclusions
+### Conclusions
 
 This study represents a quantitative assessment of the prevailing macroevolutionary dynamics in the Neotropics, and their drivers, at continental and large temporal scales. Neotropical diversity has mostly expanded through time, but scenarios of saturated and declining diversity also account for a substantial proportion of Neotropical diversity. This variation in diversity trends is better explained by taxonomic rather than geographic factors, suggesting that the modern diversity observed in seed plants and tetrapods is partly a consequence of the contrasting diversification dynamics of these groups. Applying both traditional and pulled birth-death models to all phylogenies, we have shown a good consistency in the inferred models, which suggests that our study can provide meaningful estimates of diversification.
 
@@ -189,13 +405,13 @@ Whether the main pattern of diversity expansion over time can contribute to expl
 
 ## Methods
 
-## Data compilation
+### Data compilation
 
 Neotropical clades, representing independent radiations in the Neotropics, were pulled from large-scale time-calibrated phylogenies of frogs and toads (Hutter et al., 2017), salamanders (Pyron et al., 2013; Pyron, 2014), lizards and snakes (Pyron and Burbrink, 2014), birds (Jetz et al., 2012) (including only species for which genetic data was available), mammals (Bininda-Emonds et al., 2007; Kuhn et al., 2011), and plants (Zanne et al., 2014). To identify independent Neotropical radiations, species in these large-scale phylogenies were coded as distributed in the Neotropics – delimited by the World Wide Fund for Nature WWF (Olson et al., 2001) – or elsewhere using the R package speciesgeocodeR 1.0–4 (Töpel et al., 2017), and their geographical ranges extracted from the Global Biodiversity Information Facility ‘GBIF’ (https://www.gbif.org/), the PanTHERIA database (https://omictools.com/pantheria-tool), BirdLife (http://www.birdlife.org), and eBird (http://ebird.org/content/ebird), all accessed in 2018, in a procedure similar to Meseguer et al., 2020. Next, we pruned the trees to extract the most inclusive clades that contained at least 80% Neotropical species, as previously defined. This procedure ensures that the diversification signal pertains to the Neotropics. In addition, phylogenies of particular lineages not represented in the global trees (or with improved taxon sampling) were obtained from published studies or reconstructed de novo in this study (for caviomorph rodents, including 199 species; Supplementary file 2). In the case of plants and mammals, most phylogenies were obtained from individual studies, given the low taxon sampling of the plant and mammal large-scale trees. However, whenever possible, we extracted phylogenies from a single dated tree rather than performing a meta-analysis of individual trees from different sources (Hoorn et al., 2010; Jansson et al., 2013), such that divergence times would be comparable. The resulting independent Neotropical radiations could represent clades of different taxonomic ranks. We did not perform any specific selection on tree size, crown age, or sampling fraction, but tested the effect of these factors on our results.
 
-## Estimating the tempo and mode of Neotropical diversification
+### Estimating the tempo and mode of Neotropical diversification
 
-## Diversification trends based on traditional diversification rates
+#### Diversification trends based on traditional diversification rates
 
 We compared a series of birth-death diversification models estimating speciation (λ) and extinction (μ) rates for each of the 150 phylogenies with the R package RPANDA 1.9 (Morlon et al., 2016) (Q1). To make these results comparable with those derived from PDR below, we followed a sequential approach by including models of increasing complexity. We first fitted a constant-rate birth-death model and compared it with a set of three models in which speciation and/or extinction vary according to time (Morlon et al., 2011): λ(t) and μ(t). For time-dependent models, we measured rate variation for speciation and extinction rates with the parameters α and β, respectively: α and β>0 reflect decreasing speciation and extinction towards the present, respectively, while α and β<0 indicate the opposite, increasing speciation and extinction towards the present.
 
@@ -205,19 +421,19 @@ We fitted three environmental models in which speciation and/or extinction vary 
 
 For Andean paleo-elevations we retrieved a generalized model of the palaeo-elevation history of the tropical Andes, compiled from several studies (Lagomarsino et al., 2016 and references therein). The elevation of the Andes could have indirectly impacted the diversification of non-Andean groups. We thus applied uplift models to all clades in our study. Temperature variations during the Cenozoic were obtained from (i) global compilations of deep-sea oxygen benthic foraminifera (bf) isotope ratios (δ18Obf) (Zachos et al., 2008; Prokoph et al., 2008). This curve estimated by Prokoph et al., 2008, Veizer and Prokoph, 2015, and Zachos et al., 2008; Zachos et al., 2001 provides estimates for the last 540 Myrs, thus spanning the full time range over which Neotropical lineages diversified. However, recent investigations derived other paleotemperature curves for the Cenozoic (Hansen et al., 2013; Veizer and Prokoph, 2015; Cramer et al., 2011). To account for the uncertainty on global paleotemperatures on our results, we performed additional diversification analyses using other two different global curves; (ii) the temperature curve by Cramer et al., 2011; Cramer et al., 2009, which is similar to the more widely used previous curve but accounts for fluctuations in sea water (sw) δ18Osw through time and correct for ice volume. This curve provides temperature estimates for the last 62.4 Myrs; and (iii) the paleotemperature curve estimated by Hansen et al., 2013, for the last 65.6 Myrs, which accounts for ice volume and deep ocean temperature changes, and provides estimates of surface and deep-water temperature changes. These three different estimates mostly differ in the magnitude of the temperature changes but share the same overall trend (Figure 5—figure supplement 2). For this comparison, we only included groups overlapping the isotope record of the tree paleotemperature curves (<62.4 Myrs; resulting in 128 phylogenies).
 
-## Diversification trends based on pulled diversification rates
+#### Diversification trends based on pulled diversification rates
 
 To gain further insights in Neotropical diversification (Q1), we explored congruent diversification models defined in terms of pulled diversification rates (PDR, rp), and pulled extinction rates (PER, μp) (Louca and Pennell, 2020; Louca et al., 2018). Two models are congruent if they have the same rp and the same product ρλ0, in which ρ is the sampling fraction and λ0 = λ(0). rp is equal to the net diversification rate (r = λ − μ) whenever λ is constant in time (dλ/dτ=0) but differs from r when λ varies with time. The PER μp is equal to the extinction rate μ if λ is time-independent but differs from μ in most other cases. Pulled and canonical diversification parameters are thus not equivalent in most cases. Biological interpretation of pulled parameters is not obvious. However, some specific properties of PDR and PER allowed us to compare diversification dynamics estimated based on pulled and canonical diversification parameters. Specifically, changes in speciation and/or extinction rates usually lead to similarly strong changes in PDR, while constant PDR are strong indicators that both λ and μ were constant or varied only slowly over time (Louca and Pennell, 2020; Louca et al., 2018). PDR can also yield other valuable insights: if μp(0) is negative, this is evidence that speciation is currently decreasing over time (Louca and Pennell, 2020; Louca et al., 2018).
 
 We estimated PDR values using the homogenous birth-death model on the R package castor 1.5.7 with the function fit_hbd_pdr_on_grid (Louca and Doebeli, 2018). We compared constant models (one time interval) with models in which PDR values are allowed to vary independently on a grid of three time intervals. We set up the age grid non-uniformly, for example, age points were placed closer together near the present (where information content is higher), and we selected the model that best explained the lineage-through-time of the Neotropical time trees based on AIC. To avoid non-global local optima, we performed 20 independent fitting trials starting from a random choice of model parameters. The fit_hbd_pdr_on_grid function additionally provided estimates of ρλo values. Knowing ρ, λ0 could be derived as follows: λ0 = λ0ρ/ρ. Similarly, pulled extinction rates for each time interval could be derived as follows: μp: = λ0 – rp. We limited the estimates to time periods with >10 species, using the oldest_age function in castor, to avoid points in the tree close to the root, where estimation uncertainty is generally higher.
 
-## Neotropical bioregionalization
+### Neotropical bioregionalization
 
 We used a quantitative approach to identify geographic units of long-term Neotropical evolution. We divided the Neotropical region into 13 operational areas based on the WWF biome classification (Olson et al., 2001) and similar to other studies, for example, (Antonelli et al., 2018c; Hutter et al., 2017) – Amazonia, Atlantic Forest, Bahama-Antilles, Caatinga, Central Andes, Cerrado, Chaco, Chocó, Guiana Shield, Mesoamerica, the Northern Andes, temperate South America, and an ‘elsewhere’ region – and assessed the distribution in these areas of the 12,512 species included in our 150 phylogenies. Georeferenced records were downloaded for each species through GBIF using the R package rgbif 0.9.9 (Chamberlain et al., 2017). We removed points with precision below 100 km, entries with mismatched georeference and country, duplicates, points representing country capitals or centroids, using the R package CoordinateCleaner 1.0-7 (Zizka et al., 2019). Then, we created 13 georeferenced polygons delimiting each operational area using the WWF terrestrial ecoregions annotated shapefile in QGIS, and species were assigned to each polygon according to coordinate observations using the R package speciesgeocodeR 1.0-4. GBIF records can result in an overestimation of widespread ranges (Maldonado et al., 2015), so species distributions were manually inspected for completeness and accuracy with reference to databases (AmphibiaWeb 2018, Uetz et al. 2018, GBIF.org 2018, IUCN 2018). Based on the number of species belonging to each phylogenetic clade in the 13 ecoregions, we created a species abundance table (number of species per region per clade) that formed the basis for subsequent analyses.
 
 The number of species distributed in each region within each clade were transformed using Hellinger transformations to account for differences in species richness between clades, and the Morisita-horn distance metric was selected to quantify pairwise dissimilarities of regional assemblages using the R package vegan 2.5-7 (Oksanen, 2013). We used K-means cluster analyses to form groups of similar regional assemblages. We determined the optimum number of groups by the elbow method. We use the function fviz_cluster in the R package factoextra 1.0.7 (Kassambara and Mundt, 2017) to visualize K-means clustering results using principal component analysis.
 
-## Variation of diversification dynamics across taxa, environmental drivers, and biogeographic units
+### Variation of diversification dynamics across taxa, environmental drivers, and biogeographic units
 
 We classified each clade in our study according to their main taxonomic group (plant [n=66], mammal [n=12], bird [n=32], squamate [n=24], amphibian [n=16]), environmental correlate (as estimated above: time [n=17], temperature [n=40] or uplift [n=17]), species richness dynamic based on canonical diversification rates (as estimated above: Sc. 1 [n=76], Sc. 2 [n=30], Sc. 3 [n=31], Sc. 4 [n=13]), and species richness dynamic based on PDR (constant speciation [n=83] and decreasing speciation [n=51]).
 

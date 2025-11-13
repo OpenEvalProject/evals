@@ -16,18 +16,18 @@
 
 ### Affiliations
 
-1. https://ror.org/05q8wtt20 Division of Environmental Photobiology, National Institute for Basic Biology Okazaki Japan
-2. https://ror.org/01tyv8576 National Laboratory of Biomacromolecules, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences Beijing China
-3. https://ror.org/05qbk4x57 College of Life Sciences, University of Chinese Academy of Sciences Beijing China
-4. https://ror.org/0516ah480 Department of Basic Biology, School of Life Science, the Graduate University for Advanced Studies Okazaki Japan
-5. https://ror.org/048v13307 National Institute for Physiological Sciences, National Institutes of Natural Sciences Okazaki Japan
-6. https://ror.org/055n47h92 Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan
+1. Division of Environmental Photobiology, National Institute for Basic Biology Okazaki Japan ([ROR:05q8wtt20](https://ror.org/05q8wtt20))
+2. National Laboratory of Biomacromolecules, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences Beijing China ([ROR:01tyv8576](https://ror.org/01tyv8576))
+3. College of Life Sciences, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+4. Department of Basic Biology, School of Life Science, the Graduate University for Advanced Studies Okazaki Japan ([ROR:0516ah480](https://ror.org/0516ah480))
+5. National Institute for Physiological Sciences, National Institutes of Natural Sciences Okazaki Japan ([ROR:048v13307](https://ror.org/048v13307))
+6. Exploratory Research Center on Life and Living Systems (ExCELLS), National Institutes of Natural Sciences Okazaki Japan ([ROR:055n47h92](https://ror.org/055n47h92))
 
 † Corresponding author
 
 ## Abstract
 
-As a ubiquitous picophytoplankton in the ocean and an early-branching green alga, Ostreococcus tauri is a model prasinophyte species for studying the functional evolution of the light-harvesting systems in photosynthesis. Here, we report the structure and function of the O. tauri photosystem I (PSI) supercomplex in low light conditions, where it expands its photon-absorbing capacity by assembling with the light-harvesting complexes I (LHCI) and a prasinophyte-specific light-harvesting complex (Lhcp). The architecture of the supercomplex exhibits hybrid features of the plant-type and the green algal-type PSI supercomplexes, consisting of a PSI core, an Lhca1-Lhca4-Lhca2-Lhca3 belt attached on one side and an Lhca5-Lhca6 heterodimer associated on the other side between PsaG and PsaH. Interestingly, nine Lhcp subunits, including one Lhcp1 monomer with a phosphorylated amino-terminal threonine and eight Lhcp2 monomers, oligomerize into three trimers and associate with PSI on the third side between Lhca6 and PsaK. The Lhcp1 phosphorylation and the light-harvesting capacity of PSI were subjected to reversible photoacclimation, suggesting that the formation of Ot PSI-LHCI-Lhcp supercomplex is likely due to a phosphorylation-dependent mechanism induced by changes in light intensity. Notably, this supercomplex did not exhibit far-red peaks in the 77 K fluorescence spectra, which is possibly due to the weak coupling of the chlorophyll a 603- a 609 pair in Ot Lhca1-4.
+As a ubiquitous picophytoplankton in the ocean and an early-branching green alga, Ostreococcus tauri is a model prasinophyte species for studying the functional evolution of the light-harvesting systems in photosynthesis. Here, we report the structure and function of the O. tauri photosystem I (PSI) supercomplex in low light conditions, where it expands its photon-absorbing capacity by assembling with the light-harvesting complexes I (LHCI) and a prasinophyte-specific light-harvesting complex (Lhcp). The architecture of the supercomplex exhibits hybrid features of the plant-type and the green algal-type PSI supercomplexes, consisting of a PSI core, an Lhca1-Lhca4-Lhca2-Lhca3 belt attached on one side and an Lhca5-Lhca6 heterodimer associated on the other side between PsaG and PsaH. Interestingly, nine Lhcp subunits, including one Lhcp1 monomer with a phosphorylated amino-terminal threonine and eight Lhcp2 monomers, oligomerize into three trimers and associate with PSI on the third side between Lhca6 and PsaK. The Lhcp1 phosphorylation and the light-harvesting capacity of PSI were subjected to reversible photoacclimation, suggesting that the formation of OtPSI-LHCI-Lhcp supercomplex is likely due to a phosphorylation-dependent mechanism induced by changes in light intensity. Notably, this supercomplex did not exhibit far-red peaks in the 77 K fluorescence spectra, which is possibly due to the weak coupling of the chlorophyll a603-a609 pair in OtLhca1-4.
 
 ## Introduction
 
@@ -39,19 +39,563 @@ Under low light (LL) conditions, the Lhcp complexes of O. tauri can assemble wit
 
 ## Results and discussion
 
-## The PSI-LHCI-Lhcp supercomplex
+### The PSI-LHCI-Lhcp supercomplex
 
 To stabilize the photosynthetic supercomplexes from O. tauri during purification process, the detergent-solubilized thylakoid membrane was treated with amphipol A8-35, which is an amphipathic polymer to substitute for detergents, before the sucrose density gradient (SDG) ultracentrifugation (Figure 1a, Figure 1—figure supplement 1a), according to the previous protocol successfully employed to stabilize the PSII supercomplex from C. reinhardtii (Watanabe et al., 2019). Pigment composition analysis of the A3L fraction demonstrates that the most abundant light-harvesting carotenoid is prasinoxanthin (Prx, which is unique to prasinophytes), among other carotenoids of lesser abundance, including dihydrolutein (Dlt) and micromonal (Figure 1—figure supplement 1c, Table 1). Although the typical Chls (such as Chl a and Chl b) and carotenoids (violaxanthin/Vio, 9’-cis-neoxanthin/Nex and β-carotene) found in green plants were also present in O. tauri, lutein (a major carotenoid found in plant LHCII) was not detected. Polypeptides for the PSI core and its peripheral antennae in the A3 and A3L fractions were characterized by SDS-PAGE (Figure 1—figure supplement 1b) and mass spectrometry analysis (Supplementary file 1a). These findings indicate that A3 is primarily composed of polypeptides for PSI-LHCI supercomplex, whereas A3L includes Lhcp1 and Lhcp2 alongside the constituents present in A3, along with comigrated PSII polypeptides, which is essentially in agreement with a previous report (Swingley et al., 2010).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig1-v2.jpg)
+
+**Figure 1.:** (a) Sucrose density gradient showing four major bands corresponding to free LHCs (A1), PSI-LHCI supercomplex (A3), PSI-LHCI-Lhcp supercomplex and PSII-Lhcp supercomplex (A3L), and other complexes (A4). (b) 77 K steady-state fluorescence spectrum of PSI-LHCI (solid line) and PSI-LHCI-Lhcp (dotted line). (c) PSI light-harvesting capabilities in the A3 and A3L fractions. Light-induced P700 oxidation kinetics of PSI were measured in A3 and A3L fractions under 28 µmol photon m–2 s–1. The fraction of P700 oxidation was derived from Δ(A820-A870). Solid lines and shaded area represent averages of five (for A3) or ten (for A3L) technical replicates and SD, respectively. Blue lines represent fitting curves by mono-exponential functions. Data are representative of two biologically independent experiments. See another set of data in Figure 1—figure supplement 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) UV-VIS absorption spectra. Each fraction (3  μg Chl mL–1) was measured at room temperature at least three times and the representative spectra are shown. (b) SDS-PAGE analysis of each fraction (1  μg Chl mL–1) stained with Coomassie Brilliant Blue R-250. M, molecular weight marker. Red dots, PSI subunits; black open circles, PSII subunits; black rectangles, Lhcps; red squares, Lhcas; red square with *, band 1; red square with **, band 2. Polypeptides detected in bands 1 and 2 are listed in Supplementary file 1b. The experiment was repeated three times independently with similar results. (c) Pigment analysis of the A3L fraction by UPLC. The chromatogram was recorded at 440 nm. Each peak was identified by using a corresponding standard or based on absorption spectrum measured by a photo-diode array equipped in the UPLC system. Asterisks indicate the pigments identified by absorption spectra.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Cell. (b) A3 fraction. (c) A3L fraction. Fluorescence decay kinetics were fitted to a sum of exponentials with the time constants linked in a global analysis. The normalized amplitudes of FDAS are plotted against wavelength for each time constants (lifetime component).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** All conditions were the same as in Figure 1c.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The particles in the A3 and A3L were negatively stained with uranyl acetate and the projection images of EM single particles were 2D classified (Table 2). While most of the photosystem I (PSI) in A3 was smaller supercomplex, 70% of the PSI in A3L were larger supercomplex. Two-dimensional classification results of the particles from the A3 and A3L fractions are shown. 9068 particles from the A3 fraction and 10331 particles from A3L were classified into 50 classes. (a) and (b) labels represent classes categorized into small PSI, large PSI, respectively.
+
+**Table 1.**
+ Pigment composition in the A3L fraction as revealed by UPLC analysis.Mean (±STD, n=3).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pigment</th>
+      <th>Molar ratio (Chl a=100)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chl b</td>
+      <td>36.2 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>β-Carotene</td>
+      <td>13.4 (±0.5)</td>
+    </tr>
+    <tr>
+      <td>Mdp</td>
+      <td>3.8 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Uriolide</td>
+      <td>4.9 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Prx</td>
+      <td>11.8 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Nex</td>
+      <td>3.6 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Vio</td>
+      <td>3.3 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Micromonal</td>
+      <td>2.3 (±0.1)</td>
+    </tr>
+    <tr>
+      <td>Dlt</td>
+      <td>2.2 (±0.1)</td>
+    </tr>
+  </tbody>
+</table>
+
 Fluorescence properties of A3 and A3L were characterized by fluorescence decay associated spectra at 77 K (FDAS, Figure 1—figure supplement 2a–c). The fluorescence lifetimes of A3 were mainly made up of <10 and 65 ps components (Figure 1—figure supplement 2b), which correspond to the total trapping time around P700, including the energy transfer between bulk Chl and P700 and the trapping at P700 (Mimuro et al., 2010). The positive peak in the fastest lifetime component observed in A3 was similar to that previously observed in the PSI core of cyanobacteria, which reflects the fast energy transfer process to P700 from the Chl near P700 and the subsequent fast charge separation. In A3L, however, the fastest lifetime component showed different shapes from that in A3 and it is also implying PSI-LHCI-Lhcp supercomplex in A3L. Because A3L has larger light-harvesting antennae, there are more Chls further away from P700 (e.g., those bound to Lhcp) than A3. Therefore, the long-range energy transfer process from the antennae to P700 becomes dominant in the observation, and the subsequent early trapping process could be masked. The slight increase in the lifetimes of A3L compared to those of A3 (<10–20 ps, 65–90 ps) likely reflects the presence of larger antennae in A3L. The light-induced oxidation kinetics of P700 indeed showed that the PSI antenna size in A3L was larger than that of A3 (Figure 1c, Figure 1—figure supplement 3). Notably, the 77 K fluorescence spectra of PSI-LHCI and PSI-LHCI-Lhcp exhibit a peak at 690 and 680 nm, respectively (Figure 1b), and there are no distinctive far-red peaks as reported previously (Swingley et al., 2010). The blue-shifted fluorescence was more prominent in PSI-LHCI-Lhcp fraction. These results and the EM analysis of the negatively stained particles (Figure 1—figure supplement 4, Table 2) suggest that A3 almost exclusively consists of PSI-LHCI supercomplex, while A3L was mainly composed of PSI-LHCI-Lhcp supercomplex. We thus proceeded to solve the cryo-EM structure of the large PSI-LHCI-Lhcp supercomplex in A3L in order to reveal its detailed architecture.
 
-## Supramolecular assembly of OtLhcp trimers (Trimers) with PSI-LHCI complex
+**Table 2.**
+ Two-dimensional classification of the photosystem I (PSI) particles in the A3 and A3L fractions.The RELION 2.1 package (Kimanius et al., 2016) was used for automated particle picking of particles and Two-dimensional (2D) classification into 50 classes as previously described (Watanabe et al., 2019). Classes of poor quality due to aggregation, contamination, micrograph edge, or extreme proximity were discarded. 2D classification was performed on the PSI particles and manually assigned to respective small and large PSI supercomplexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fraction</th>
+      <th>A3</th>
+      <th>A3L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Small PSI (PSI-LHCI)</td>
+      <td>2675 (100%)</td>
+      <td>1030 (30%)</td>
+    </tr>
+    <tr>
+      <td>Large PSI (PSI-LHCI-Lhcp)</td>
+      <td></td>
+      <td>2437 (70%)</td>
+    </tr>
+    <tr>
+      <td>Total PSI particles</td>
+      <td>2675</td>
+      <td>3467</td>
+    </tr>
+  </tbody>
+</table>
+
+### Supramolecular assembly of OtLhcp trimers (Trimers) with PSI-LHCI complex
 
 Through the single-particle cryo-EM method, the structure of OtPSI-LHCI-Lhcp supercomplex is solved at an overall resolution of 2.94 Å and the local regions of three Lhcp trimers (namely Trimers 1–3) are refined to 2.9–3.5 Å (Figure 2—figure supplement 1, Table 3). As shown in Figure 2, the OtPSI-LHCI-Lhcp supercomplex consists of a central PSI monomer encircled by six LHCIs and three Trimers. OtPSI contains two large core subunits (PsaA and PsaB), three subunits on the stromal surface (PsaC, PsaD, and PsaE) (Figure 2a–c), nine small membrane-embedded subunits (PsaF, PsaG, PsaH, PsaI, PsaJ, PsaK, PsaL, PsaM, PsaO), one subunit on the lumenal surface (PsaN) (Figure 2d–f). In the supercomplex, a total of 314 Chls (245 Chl a, 60 Chl b, 9 magnesium 2,4-divinylpheoporphyrin a5 monomethyl ester [Mdp], 104 carotenoids, 2 phylloquinones, and 3 Fe4S4 clusters have been located [Table 4]). The densities for representative Chl, carotenoid, and lipid molecules as well as two small subunits (PsaM and PsaN) are shown in Figure 2—figure supplement 2. To our best knowledge, the structure of OtPSI has the largest number of subunits among the structures of PSI known so far (including those from plants, green algae, diatom, red algae, and cyanobacteria, Figure 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig2-v2.jpg)
+
+**Figure 2.:** (a) Top view of the supercomplex from stromal side along membrane normal. (b) and (c) Two different side views of the supercomplex along the membrane plane. While the protein backbones are shown as cartoon models, the pigment and lipid molecules are presented as stick models. The iron-sulfur clusters are presented as sphere models. The bulk region of photosystem I (PSI) core is colored in wheat, while Lhca1-6, Lhcp1, and Lhcp2, PsaC, PsaD, PsaE, PsaF, and PsaN are highlighted in different colors. The remaining small subunits are in silver. (d–f) The small subunits at the interfaces between PSI core and LHCI/Lhcp complexes. The viewing angles are the same as (a–c), whereas the color codes are different. The interfacial small subunits are highlighted in various colors, while the PSI core and LHCI/Lhcp complexes are in silver.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Data collection, processing, and refinement scheme. (b) The gold standard Fourier shell correlation (FSC) curves of the final map with criterion of 0.143. (c) The FSC curves of the refined models versus the cryo-EM map with criterion of 0.5. (d) Angular distribution of the particles used for the final three-dimensional (3D) reconstruction. (e) Estimation of local resolution of the final cryo-EM map.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Chl a, chlorophyll a; Chl b, chlorophyll b; Cl0, a chlorophyll a isomer of the special pairs of Chl a in the reaction center; Mdp, Mg-2,4,-divinyl-phaeoporphyrin a5 monomethyl ester; Bcr, beta-carotene; Dlt, dihydrolutein; Xat, violaxanthin; Nex, neoxanthin; Prx, prasinoxanthin; Pqn, phylloquinone; MGDG, monogalactosyl-diacylglycerol; DGDG, digalactosyl-diacylglycerol; PG, 1,2-dipalmitoyl-phosphatidylglycerol; SQDG, sulfoquinovosyl diacylglycerol.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The densities shown in (a–c) (Lhcp1) and (d–f) (Lhcp2) correspond to the three major characteristic motifs (labeled by * symbols in h) distinguishing Lhcp1 from Lhcp2. (g) The cryo-EM density for the amino-terminal region of OtLhcp1. (h) Alignment of the amino acid sequences of OtLhcp1 and OtLhcp2. The red box highlights the amino-terminal "RRT" motif of Lhcp1 and the corresponding region in Lhcp2.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig3-v2.jpg)
 
-**Figure 3.:** O.tauri PSI-LHCI-Lhcp supercomplex with the photosystem I (PSI) supercomplexes from other organisms.(a) OtPSI-LHCI-Lhcp supercomplex. (b–k) Structures of PSI from different species or at different states. Blue, large PSI core subunits; magenta, small PSI core subunits; yellow, Lhca5-Lhca6/Lhca2-Lhca9/Lhca0-Lhca9/Lhc1-Lhc2 and the outer belt of LHCI; cyan, Lhca1-Lhca2-Lhca3-Lhca4 and the inner belt of antenna complexes around PSI from other species; green, Lhcp or LHCII trimers; gray, symmetry-related units in trimeric or tetrameric PSI.
+**Figure 3.:** (a) OtPSI-LHCI-Lhcp supercomplex. (b–k) Structures of PSI from different species or at different states. Blue, large PSI core subunits; magenta, small PSI core subunits; yellow, Lhca5-Lhca6/Lhca2-Lhca9/Lhca0-Lhca9/Lhc1-Lhc2 and the outer belt of LHCI; cyan, Lhca1-Lhca2-Lhca3-Lhca4 and the inner belt of antenna complexes around PSI from other species; green, Lhcp or LHCII trimers; gray, symmetry-related units in trimeric or tetrameric PSI.
+
+**Table 3.**
+ Statistics of structural analysis of the OtPSI-LHCI-Lhcp supercomplex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OtPSI-LHCI-Lhcp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>130,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e- Å–2)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>from –1.8 to –2.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>5,288,217</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>80,366</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>2.94</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>2.3–4.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>5ZJI, 7D0J</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>–110.961</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Nonhydrogen atoms</td>
+      <td>64,836</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>5632</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>450</td>
+    </tr>
+    <tr>
+      <td>B factor (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>56.82</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>56.55</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.79</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>5.41</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.6</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.37</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.04</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Summarization of the components in the final structural model of the OtPSI-LHCI-Lhcp supercomplex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subunit</th>
+      <th>Number of amino acid residues traced</th>
+      <th>Chlorophylls</th>
+      <th>Carotenoids</th>
+      <th>Lipids</th>
+      <th>Others</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PsaA</td>
+      <td>742</td>
+      <td>44 Chl a1 Cl0</td>
+      <td>6 BCR</td>
+      <td>2 PG2 MGDG1 DGDG</td>
+      <td>1 PQN1 Fe4S4</td>
+    </tr>
+    <tr>
+      <td>PsaB</td>
+      <td>732</td>
+      <td>40 Chl a</td>
+      <td>8 BCR</td>
+      <td>1 PG1 DGDG</td>
+      <td>1 PQN</td>
+    </tr>
+    <tr>
+      <td>PsaC</td>
+      <td>80</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2 Fe4S4</td>
+    </tr>
+    <tr>
+      <td>PsaD</td>
+      <td>143</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaE</td>
+      <td>62</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaF</td>
+      <td>165</td>
+      <td>3 Chl a</td>
+      <td>1 BCR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaG</td>
+      <td>95</td>
+      <td>3 Chl a</td>
+      <td>1 BCR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaH</td>
+      <td>96</td>
+      <td>3 Chl a</td>
+      <td></td>
+      <td>1 SQDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaI</td>
+      <td>35</td>
+      <td></td>
+      <td>1 BCR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaJ</td>
+      <td>41</td>
+      <td>1 Chl a</td>
+      <td>1 BCR</td>
+      <td>2 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaK</td>
+      <td>87</td>
+      <td>4 Chl a</td>
+      <td>3 BCR</td>
+      <td>1 PG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaL</td>
+      <td>158</td>
+      <td>5 Chl a</td>
+      <td>4 BCR</td>
+      <td>1 PG1 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaM</td>
+      <td>31</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaN</td>
+      <td>91</td>
+      <td>2 Chl a</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PsaO</td>
+      <td>96</td>
+      <td>5 Chl a</td>
+      <td>2 DLT</td>
+      <td>2 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trimer 2</td>
+      <td>201(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT1 NEX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>225(Lhcp1)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT1 NEX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>201(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT1 NEX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trimer 1</td>
+      <td>202(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT1 NEX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>201(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>201(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>1 BCR2 PRX3 DLT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Trimer 3</td>
+      <td>201(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>1 BCR2 PRX3 DLT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>200(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>2 PRX4 DLT1 NEX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>200(Lhcp2)</td>
+      <td>8 Chl a5 Chl b1 DVP</td>
+      <td>1 PRX4 DLT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca1</td>
+      <td>195</td>
+      <td>9 Chl a2 Chl b</td>
+      <td>1 XAT1 PRX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca2</td>
+      <td>205</td>
+      <td>11 Chl a4 Chl b</td>
+      <td>1 XAT1 BCR1 DLT1 PRX</td>
+      <td>1 PG1 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca3</td>
+      <td>227</td>
+      <td>13 Chl a1 Chl b</td>
+      <td>1 XAT3 BCR1 PRX</td>
+      <td>3 PG1 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca4</td>
+      <td>205</td>
+      <td>11 Chl a4 Chl b</td>
+      <td>1 XAT1 BCR1 PRX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca5</td>
+      <td>185</td>
+      <td>9 Chl a1 Chl b</td>
+      <td>1 XAT1 PRX</td>
+      <td>1 MGDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lhca6</td>
+      <td>218</td>
+      <td>10 Chl a3 Chl b</td>
+      <td>1 XAT1 PRX</td>
+      <td>1 PG1 MGDG1 SQDG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chain Y</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4 H2O</td>
+    </tr>
+  </tbody>
+</table>
 
 Four Lhca (Lhca1-4) complexes are associated with the PSI core at the side of PsaG- F-J-K (Figure 2a and d), similar to those found in plant PSI-LHCI complexes (Mazor et al., 2017; Qin et al., 2015; Figure 3). On the other side formed by PsaG-I-M-H, an Lhca5-Lhca6 heterodimer is associated with the PSI core (Figure 2a and d). The location of Lhca5-Lhca6 heterodimer overlaps with that of Lhca9-Lhca2 heterodimer associated with C. reinhardtii PSI (Su et al., 2019; Suga et al., 2019) or Lhcr2-Lhcr1 heterodimer associated with Cyanidioschyzon merolae PSI (Pi et al., 2018), whereas the corresponding sites are vacant in plant PSI structures (Mazor et al., 2017; Pan et al., 2018; Qin et al., 2015; Yan et al., 2021). While the fourth transmembrane helix of CrLhca2 or Lhca5 from Dunaliella salina (also known as transmembrane helix F/TMF or TMH4), located at the dimerization interface of the Lhca2/Lhca9 or Lhca5-Lhca6 heterodimer, was previously proposed to replace the role of PsaM in mediating assembly of the LHCI heterodimer with PSI (Caspy et al., 2020; Suga et al., 2019), the fourth helix of OtLhca6 and PsaM coexist in O. tauri. As PsaM is also present in moss (Gorski et al., 2022) and cyanobacteria (Jordan et al., 2001), where LHCI heterodimer is absent at this position, the role and the origin of the fourth helix of the Lhca proteins might not be directly related to PsaM and need to be revisited.
 
@@ -59,7 +603,7 @@ Previously, it was found that plant and C. reinhardtii PSI complexes contain som
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig4-v2.jpg)
 
-**Figure 4.:** a603-a609 dimers in Lhca complexes among O. tauri, C. reinhardtii, and P. sativum.(a) Overall arrangement of the Chl a603-a609 dimers in six Lhca complexes of O. tauri, C. reinhardtii, and P. sativum. The chlorophylls in the photosystem I (PSI) supercomplexes are presented in surface models and those of Lhca complexes are superposed with stick models. Color code: pink, O. tauri; golden, P. sativum; light blue, C. reinhardtii. The dark labels (1–6) indicate the Lhca1-Lhca6 subunits and the dashed ovals label the locations of the a603-a609 dimer in each LHCI. (b–g) Comparison of the Chl a603-a609 dimers and their local environments in six different Lhca subunits from the three different species. Note that the axial ligands of Chl a603 in Lhca1-4 from O. tauri are all His, while the Asn in the 603 site of plant Lhca3 and Lhca4 are crucial for the formation of the red-most form chlorophyll. The Lhca5/Lhca9 and Lhca6/Lhca2 are only present in O. tauri and C. reinhardtii but absent in P. sativum. The Chl a603-a609 dimers are indicated in the black dashed ovals and the key amino acid residues around the two chlorophylls are shown as stick models. The number labeled nearby the black dashed lines indicate the Mg-Mg distances between Chl a603-a609 dimer in Lhca complexes from O. tauri, C. reinhardtii, and P. sativum. In (f) and (g), the red dashed ovals indicate the Tyr/Trp residues around the Chl a609 molecules from OtLhca5/CrLhca9 and OtLhca6/CrLhca2.
+**Figure 4.:** (a) Overall arrangement of the Chl a603-a609 dimers in six Lhca complexes of O. tauri, C. reinhardtii, and P. sativum. The chlorophylls in the photosystem I (PSI) supercomplexes are presented in surface models and those of Lhca complexes are superposed with stick models. Color code: pink, O. tauri; golden, P. sativum; light blue, C. reinhardtii. The dark labels (1–6) indicate the Lhca1-Lhca6 subunits and the dashed ovals label the locations of the a603-a609 dimer in each LHCI. (b–g) Comparison of the Chl a603-a609 dimers and their local environments in six different Lhca subunits from the three different species. Note that the axial ligands of Chl a603 in Lhca1-4 from O. tauri are all His, while the Asn in the 603 site of plant Lhca3 and Lhca4 are crucial for the formation of the red-most form chlorophyll. The Lhca5/Lhca9 and Lhca6/Lhca2 are only present in O. tauri and C. reinhardtii but absent in P. sativum. The Chl a603-a609 dimers are indicated in the black dashed ovals and the key amino acid residues around the two chlorophylls are shown as stick models. The number labeled nearby the black dashed lines indicate the Mg-Mg distances between Chl a603-a609 dimer in Lhca complexes from O. tauri, C. reinhardtii, and P. sativum. In (f) and (g), the red dashed ovals indicate the Tyr/Trp residues around the Chl a609 molecules from OtLhca5/CrLhca9 and OtLhca6/CrLhca2.
 
 Besides the six Lhca proteins, three Lhcp Trimers (Trimers 1–3) bind to the PSI-LHCI complex on the third side along the surfaces of Lhca6, PsaH, PsaL, PsaO, and PsaK subunits (Figure 2a and d). As a result, the PSI core is enclosed by an irregular annular belt formed by the LHCI, Lhcp complexes, PsaG and PsaK (Figure 2a and d). This side of the PSI core was partly filled by one LHC trimer or two LHC trimers in higher plants or green algae when they are under state 2 conditions (Huang et al., 2021; Pan et al., 2018; Pan et al., 2021).
 
@@ -67,7 +611,7 @@ Among the three trimers associated with OtPSI, Trimers 1 and 3 are both (Lhcp2)3
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig5-v2.jpg)
 
-**Figure 5.:** C. reinhardtii and plant photosystem I (PSI).(a and b) The structure of OtPSI-LHCI-Lhcp supercomplex is superposed with the PSI-LHCI-LHCII supercomplex from C. reinhardtii (PDB code: 7DZ7, a) or Z. mays (PDB code: 5ZJI, b). The three structures are superposed on the common PsaA subunits. The dash triangular rings outline the approximate boundaries of Trimers or LHCII trimers. Color code: green, OtPSI-LHCI-Lhcp; blue, CrPSI-LHCI-LHCII; magenta, ZmPSI-LHCI-LHCII. The double-headed arrows indicate the translational or rotational relationships between Lhcp trimers in O. tauri and the corresponding LHCII trimers in C. reinhardtii and in Z. mays. The number labeled nearby the arrows indicate the translation distances or rotation angles.
+**Figure 5.:** (a and b) The structure of OtPSI-LHCI-Lhcp supercomplex is superposed with the PSI-LHCI-LHCII supercomplex from C. reinhardtii (PDB code: 7DZ7, a) or Z. mays (PDB code: 5ZJI, b). The three structures are superposed on the common PsaA subunits. The dash triangular rings outline the approximate boundaries of Trimers or LHCII trimers. Color code: green, OtPSI-LHCI-Lhcp; blue, CrPSI-LHCI-LHCII; magenta, ZmPSI-LHCI-LHCII. The double-headed arrows indicate the translational or rotational relationships between Lhcp trimers in O. tauri and the corresponding LHCII trimers in C. reinhardtii and in Z. mays. The number labeled nearby the arrows indicate the translation distances or rotation angles.
 
 Trimer 1 is located nearby PsaO and the closest interfacial distances between them are 7.0 Å or larger (Figure 6a). Although Trimer 1 does not form direct interactions with PsaO, we cannot rule out the presence of unresolved lipid molecules that may mediate the interactions. On the other hand, Trimers 2 and 3 form close and direct interactions with PsaL-PsaH and PsaK, respectively (Figure 6b and c). Trimer 2 binds to PSI on three different sites (Figure 6d–f). At site 1, Lhcp1Trimer2 has its elongated N-terminal region (NTR) partially inserted into a surface pocket formed by PsaL and PsaH subunits (Figure 6b). The NTR of Lhcp1 contains an RRpT (pT, phosphorylated Thr residue) motif identical to those found in Z. mays pLhcb2 (Pan et al., 2018) and C. reinhardtii pLhcbM1 (Pan et al., 2021). The RRpT motif of Lhcp1 interacts with nearby amino acid residues through salt bridges and hydrogen bonds (Figure 6d), in a similar way as those of Z. mays pLhcb2 and C. reinhardtii pLhcbM1. Arg29 in Lhcp1 might be acetylated on its main-chain amine group as there is an extra density linked to it, and the van der Waals interactions between the putative acetyl group and nearby amino acid residues from PsaH serve to stabilize the association between Lhcp1 and the PSI core (Figure 6d). Consistently, spinach Lhcb proteins are also acetylated at their amino-terminal arginine and phosphorylated on threonine/serine in the third position (Michel et al., 1991). Sites 2 and 3 are located in the membrane-embedded regions on the stromal and lumenal sides, respectively (Figure 6b). On these two sites, Lhcp1 forms hydrogen bonds and van der Waals interactions with nearby amino acid residues and pigment molecules from PsaH and PsaL subunits (Figure 6e and f). Meanwhile, Trimer 3 associates with PsaK mainly through van der Waals interactions on the stromal and lumenal sides (Figure 6g).
 
@@ -75,17 +619,41 @@ Trimer 1 is located nearby PsaO and the closest interfacial distances between th
 
 **Figure 6.:** (a) The interface between Trimer 1 and PsaO. (b) The interface between Trimer 2 and PsaL-PsaH. (c) The interface between Trimer 3 and PsaK. (d–f) The detailed interactions between Lhcp1 of Trimer 2 and PsaL/PsaH at sites 1–3 shown in b. (g) The detailed interactions between Lhcp2 of Trimer 3 and PsaK at site 4 shown in c. The numbers labeled nearby the dash lines are distances (Å) between two adjacent groups.
 
-## Characteristic features of Lhcp1 and Lhcp2 monomers
+### Characteristic features of Lhcp1 and Lhcp2 monomers
 
 As an ancient member of the green lineage, O. tauri belongs to Mamiellales of Prasinophyceae at the basal position of the green lineage. While OtLhcp1 and OtLhcp2 are evolutionarily related to plant Lhcbs and CrLhcbMs (Six et al., 2005), they only share low sequence identity, e.g., 32–37% sequence identity with ZmLhcb2 or CrLhcbM1. The apoproteins of OtLhcp1 and OtLhcp2 adopt a classical fold of Lhc family with three transmembrane helices (A, B, and C) and three short amphipathic helices on the lumenal side (D, E, and F) (Figure 7a and b and Figure 7—figure supplement 1). While the structure of OtLhcp1 highly resembles that of OtLhcp2, it differs from those of ZmLhcb2 and CrLhcbM1 in the NTR, EC loop, AC loop, and CTR (Figure 7—figure supplement 2a–c). Besides, helices B, A, and C of OtLhcp1/2 are slightly shorter than the corresponding ones in ZmLhcb2 or CrLhcbM1 (Figure 7—figure supplement 2b, c).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig7-v2.jpg)
+
+**Figure 7.:** (a and b) Side views of OtLhcp1 (a) and OtLhcp2 (b) structures. The backbones of OtLhcp1/OtLhcp2 apoproteins are showed as cartoon models, while the pigments are presented as stick models. The phytyl chains of Chl molecules are omitted for clarity. The phosphorylated Thr residue and the acetylated Arg residue at the N-terminal region of Lhcp1 is highlighted as sphere models. A, B, and C indicate the three transmembrane helices in OtLhcp1/OtLhcp2 apoproteins, whereas D and E are the two amphipathic helices at the lumenal surface. Color codes: gray, Lhcp1 and Lhcp2 apoproteins; green, Chl a; cyan, Chl b; magenta, dihydrolutein/DLT; purple, prasinoxanthin/PRX; orange, neoxanthin/NEX. (c and d) The arrangement of pigment molecules in OtLhcp1 (c) and OtLhcp2 (d). For clarity, the apoproteins are not shown. In the upper row, only pigment molecules within the layer close to stromal surface are shown, while the lower row shows the pigment molecules within the layer close to the lumenal surface.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The overall structure of OtLhcp1 highly resembles that of OtLhcp2, except that the former one has an elongated N-terminal region with a phosphorylated Thr residues. The cofactors are omitted for clarity.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a-c) The apoprotein of OtLhcp1 superposed with those of OtLhcp2 (a), ZmLhcb1 (b), and CrLhcbM1 (c). Color codes: green, OtLhcp1; golden, OtLhcp2; light blue, ZmLhcb1; violet, CrLhcbM1. The N-terminal phosphorylated Thr residues are highlighted as stick models. A, B, and C indicate the three transmembrane helices in Lhcp/Lhcb apoproteins. Upper row, side view along membrane plane; lower row, top view from stromal side along membrane normal. The dash lines indicate the flexible linker regions not observed in cryo-EM maps. (d–f) The distribution of pigment molecules in OtLhcp1 in comparison with those in OtLhcp2 (d), ZmLhcb1 (e), and CrLhcbM1 (f). In the upper row, only chlorophyll molecules within the layer close to stromal surface are shown, while the lower row shows the chlorophyll molecules within the layer close to the luminal surface. In (e and f), the Chl and carotenoid molecules only present in OtLhcp1 but not in ZmLhcb1 or CrLhcbM1 are highlighted as sphere models. Those present in ZmLhcb1 and CrLhcbM1 but absent in OtLhcp1 are indicated by the light blue or violet labels (LHG, b601, and Vio).
 
 In terms of pigment composition, OtLhcp1 and OtLhcp2 each contain 14 Chl molecules (8 Chl a, 5 Chl b, and 1 Mdp) and 7 carotenoid molecules (4 Dlt, 2 Prx, and 1 Nex) (Figure 7a and b). The Chl b/a ratio of the structural model is 0.625, close to the previously reported value of 0.736 for the Lhcp2 preparation (Swingley et al., 2010). While the number of Prx molecules found in the structure matches the previous prediction, four (instead of one) Dlt molecules are more than expected (Swingley et al., 2010). As O. tauri OTH95 species thrives in lagoons and shallow area of the ocean frequently challenged by high light with an intensity up to 2000 μmol photons m–2 s–1 (Courties et al., 1994), incorporation of a large number of carotenoid molecules in OtLhcp1 and OtLhcp2 may help to protect the algae from the damaging effect of harmful excess excitation energy, by quenching triplet-state Chl, scavenging toxic oxygen species or quenching of the singlet excited-state Chl (Bassi and Dall’Osto, 2021; Young, 1991).
 
 The Chl molecules in OtLhcp1/OtLhcp2 are arranged into two membrane-embedded layers close to the stromal and lumenal surfaces, respectively (Figure 7c and d). The stromal and lumenal layer each has seven Chl molecules. While the stromal layer (five Chl a, one Chl b, and one Mdp) contains more Chl a than Chl b, the lumenal layer (three Chl a and four Chl b) harbors more Chl b than Chl a. In the stromal layer, six Chls (a602, a603, b608, a610, a611, and a612) can find their counterparts of the same identity in plant or C. reinhardtii LHCII (Figure 7—figure supplement 2d–f). The 609 site is occupied by an Mdp molecule in OtLhcp1/2 (Figure 2—figure supplement 2), and the free carboxyl group on the side chain of porphyrin ring IV in the Mdp609 molecule forms a salt bridge with Lys77 residue nearby. In comparison, plant LHCII has the 609 site occupied by a Chl b (Liu et al., 2004). The Chl b609 in LHCII has its C7-formyl group forming a hydrogen bond with Gln131 on the Lhcb1 protein, and the side chain amine group of Gln131 is crucial for selective binding of Chl b609 and b607 in LHCII (Bassi et al., 1999). Lhcp1 and Lhcp2 adopt a Glu residue in the position corresponding to Gln131 of the Lhcb1 protein (Figure 8). Similar change is also observed in CP29 or CP26 with lower Chl b content than LHCII, and Q131E mutation of Lhcb1 led to decrease of Chl b content and increase of Chl a content (Bassi et al., 1999). As the side chain hydroxyl group of Glu150/Glu129 residue in OtLhcp1/2 forms a hydrogen bond with Chl b607, the 609 site is occupied by an Mdp molecule with a C7-methyl group (instead of a Chl b) due to lack of hydrogen bond donor. Moreover, Chl b601 found in plant and C. reinhardtii LHCII is absent in OtLhcp1/2, mainly because the head group of a carotenoid molecule (Dlt720) occupies part of its binding site (Figure 7—figure supplement 2e, f) and the NTR adopts a conformation different from those of LHCII apoproteins (Figure 7—figure supplement 2b, c).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig8-v2.jpg)
+
+**Figure 8.:** (a) The side chain amine group of Gln131 in Lhcb1 from Spinacea oleracea (SoLhcb1) offers two hydrogen bond donors for selective binding of two Chl b molecules. (b and c) The carboxyl group of Glu150/Glu129 in OtLhcp1/2 provides only one hydrogen bond donor for selective binding of only one Chl b molecule instead of two. (d) Sequence alignment analysis of the plant Lhcb1 (Z. mays Lhcb1/ZmLhcb1 and SoLhcb1) and OtLhcp1/2. Color codes: cyan, Lhcb1; violet, Lhcp1; green, Lhcp2. The dash lines indicate the putative hydrogen bonds between the C7-formyl groups of Chl b molecules and Glu/Gln residues. The numbers labeled nearby the dash lines are the distances (Å) between hydrogen bond donor and acceptors. The pigment molecules are shown as stick models, while the protein backbones are presented as cartoon models.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The red arrow indicates the binding site of Chl b617 found in OtLhcp1 and Lhcp2. The red asterisk symbols show the position of WYXXXR motif found at the N-terminal regions of CrLhcbM1 and ZmLhcb2, but absent in OtLhcp1 and OtLhcp2.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (a and b) Van der Waals and hydrophobic interactions among the three symmetry-related Prx719 molecules in the Lhcp1-(Lhcp2)2 trimer (a) and (Lhcp2)3 trimer (b). (c and d) Interactions among the adjacent C-terminal motifs (FKFY/FGFY) of the Lhcp1-(Lhcp2)2 trimer (c) and (Lhcp2)3 (d) trimer. (e, f) Extensive interactions between the C-terminal regions of OtLhcp1(e) or OtLhcp2(f) and Prx719 from the adjacent monomers. The cartoon representations of OtLhcp1 (green) and OtLhcp2 (cyan) are shown, while the molecules and amino acid residues involved in trimerization are presented as stick models. The numbers labeled nearby the dashed lines indicate the distances (Å) between two adjacent groups.
+
 In the lumenal layer, six of the seven Chls (a604, b605, b606, b607, a613, and a614) can find their counterparts in plant LHCII. A previously unobserved Chl (Chl b617, absent in plant or C. reinhardtii LHCII) is found in the EC loop region of OtLhcp1/2 (Figure 7c and d, Figure 7—figure supplement 2d) and is likely coordinated by the backbone carbonyl of a proline residue conserved in both Lhcp1 and Lhcp2, but not in plant Lhcb2 or CrLhcbM1 (Figure 8—figure supplement 1). The binding site of Chl b617 is located in a motif of the EC loop region different from the corresponding region in plant Lhcb2 or CrLhcbM1. Among the seven carotenoid molecules, six of them span the membrane and connect the lumenal layer Chls with those in the stromal layer, whereas one (Prx719) lies parallel to the plane of the lumenal layer and contributes to trimerization of OtLhcp1 and OtLhcp2 (Figure 8—figure supplement 2). While three carotenoids (Dlt715, Dlt716, and Nex717) of OtLhcp1/2 have similarly placed counterparts in ZmLhcb2 or CrLhcbM1, the other four (Prx718, Prx719, Dlt720, and Dlt721) appear to be specific to OtLhcp1/2 and absent in ZmLhcb2 or CrLhcbM1 (Figure 7—figure supplement 2e, f). In addition, the violaxanthin molecule found at the trimerization interface of plant LHCII (Liu et al., 2004) is absent in OtLhcp1/2.
 
-## Formation of Lhcp1-(Lhcp2)2 and (Lhcp2)3 trimers
+### Formation of Lhcp1-(Lhcp2)2 and (Lhcp2)3 trimers
 
 Previously, it was suggested that Lhcp2 from O. tauri may form a hexameric unit according to the gel filtration analysis result (Swingley et al., 2010). The current work indicates that there are one Lhcp1 and eight Lhcp2 associated with OtPSI-LHCI, forming three individual trimers (Trimers 1–3, Figure 2a). Among these subunits, Trimers 1 and 2 interact with each other closely and may form a stable hexameric unit. Despite that, Trimer 2 differs from the other two trimers in terms of subunit composition [Lhcp1(Lhcp2)2 vs. (Lhcp2)3], the overall structures of the three trimers are highly similar (Figure 9a). The NTR, helix C, helix E, the E-C loop, and the C-terminal region (CTR) of Lhcp1 and Lhcp2 are located at the interfaces between adjacent monomers (Figure 9a and b). Three carotenoids, namely Prx719, Dlt720, and Dlt721, intercalate into the space between adjacent monomers and interact closely with nearby cofactors and amino acid residues (Figure 9b). Prx719 spans a Trimer by extending from the periphery to the center on the lumenal side and forms hydrogen bonds and van der Waals interactions with nearby CTR amino acid residues (FKFY/FGFY motif, Figure 8—figure supplement 1, Figure 8—figure supplement 2e–f). Meanwhile, Dlt720 and Dlt721 are mainly located at the peripheral and middle regions of the trimerization interface, respectively (Figure 9e). Thereby, we propose that the interfacial carotenoids serve as molecular staples, holding the three monomers together and stabilizing the trimeric assembly of Lhcps.
 
@@ -95,15 +663,211 @@ Previously, it was suggested that Lhcp2 from O. tauri may form a hexameric unit 
 
 Like OtLhcp, the major LHCII from plants and C. reinhardtii also exists in homotrimeric or heterotrimeric states (Caffarri et al., 2004; Kawakami et al., 2019; Standfuss and Kühlbrandt, 2004). Trimerization of LHCII is crucial for thermal stability of the complex, may modulate the pigment domains related to nonphotochemical quenching of Chl fluorescence, and allows the transfer of excitation energy between adjacent monomers through interfacial Chls (Novoderezhkin et al., 2011; Wentworth et al., 2004). While the OtLhcp2 and LHCII trimers share similar overall shapes, they differ from each other in terms of mutual positions and distances between adjacent monomers (Figure 9c and d), and the interfacial cofactors and amino acid residues (Figure 9e and f). Besides, the phosphatidylglycerol (PG) molecule, Chl b601, Vio, the WYXXXR motif (also known as trimerization motif) at the NTR (Koziol et al., 2007) and two bulky amino acid residues (Trp128 and Trp222) found at the trimerization interface of plant LHCII trimer are all absent in the OtLhcp trimers (Figure 8—figure supplement 1).
 
-## Potential transfer pathways for excitation energy between Trimers and PSI
+### Potential transfer pathways for excitation energy between Trimers and PSI
 
 Among the three Trimers associated with PSI, Trimer 1, formed by monomers S, T and U, may have a crucial role in mediating the excitation energy transfer between Trimer 2, formed by monomers P, Q, and R, and Trimer 3, formed by monomers V, W, and X. As shown in Figure 10, the Chl molecules in Trimer 1 are well connected in terms of excitation transfer with those from Trimer 2 and Trimer 3 through multiple pairs of interfacial Chls in the stromal and lumenal layers. Remarkably, the distances between adjacent Chls at the trimer-trimer interface are comparable to or even smaller than those of inter-monomer Chl pairs within the individual trimers (Figure 10a–d). In the stromal layer, the Chl a611-a612 dimer from monomer STrimer1 and the Chl a611-a612 dimer from monomer Qtrimer2 are located in close proximity to each other at 12.4 or 12.6 Å distances (Mg-Mg, Figure 10a). Meanwhile, Chl a611 from monomer TTrimer1 and Chl a611 from monomer VTrimer3 are within 18.0 Å distance. In the lumenal layer of Trimers, Chl a614 and b617 from monomer STrimer1 are close to Chl b617 and a614 from monomer QTrimer2 (at distances of 18.6 and 19.0 Å), respectively (Figure 10b). Meanwhile, Chl a614 from monomer TTrimer1 and Chl b605 from monomer UTrimer1 are in close proximity to Chl a614 and b617 from monomer VTrimer3 at 14.4 and 9.7 Å distances, respectively. These closely positioned Chl pairs at the trimer-trimer interface may allow the excitation energy to be shared efficiently among them.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig10-v2.jpg)
+
+**Figure 10.:** (a and b) The arrangement of interfacial chlorophyll molecules within the stromal (a) and lumenal (b) layers. The view is from stromal side and approximately along membrane normal. The Chl molecules at the interfaces between adjacent Trimers and between PSI and Trimers are highlighted as stick models, while the surface presentation of the supercomplex is shown in the background. The labels of P, Q, R, S, T, U, V, W, and X indicate the chain names of Lhcp1 (Q)/Lhcp2 (P, R-X) monomers, whereas those of A-O represent the chain names of PsaA-PsaO in PSI. (c and d) The arrangement of Chl molecules in the Trimer 2 within the stromal (c) and lumenal (d) layers. The Chl molecules at the interfaces between adjacent monomers of Trimer 2 are highlighted as stick models. Color codes: orange, Lhcp1; mint green, Lhcp2. The red, blue, and magenta labels indicate the close relationships between two adjacent Chl molecules at the interface between Trimers 1-3 and PSI/Lhca6 subunits, between two adjacent Trimers and between two adjacent Lhcp monomers within the trimer, respectively. The Mg-Mg distances (Å) are labeled nearby the dotted lines. The dark dashed lines define the estimated interfaces between the adjacent Lhcp monomers, while the dashed round triangles outline the approximate boundary of the trimer. Chains P, Q, and R, Trimer 2; Chains S, T, and U, Trimer 1; Chains V, W, and X, Trimer 3. The phytol tails of Chl molecules are omitted for clarity.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Relative orientation of Chl a609Lhca6 and Chl a611R/Trimer2 is shown. NB (red) and ND (blue) atoms, cryo-EM maps (gray), transition dipoles (yellow arrows).
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** (a,b) Organization of Chl molecules within the PSI-LHCI-Lhcp supercomplex and the FRET networks presenting efficient FRET processes with lifetimes of less than 10 ps (a) and 20 ps (b). The views are from the stromal side. The spheres and dotted circles represent each individual Chl molecules and the boundaries for the individual complexes, respectively. The lines between spheres represent the presence of FRET process between adjacent Chls. The width of lines represents the relative FRET rate in each network. The internal part of the PSI core is colored in wheat, while the peripheral subunits are highlighted in different colors; PsaG (brown), PsaH (purple), PsaK (blue), PsaO (pink), Lhca1-6 and Lhcp1-2 (various greenish colors).
+
 The Chls in Trimer 2 and Trimer 3 form multiple interfacial pairs with the Chls from Lhca6/PsaH and PsaK, respectively, which are likely to help provide the excitation energy for PSI (Figure 10a and b). In contrast, Trimer 1 appears to be poorly connected with PSI as it has Chl b molecules (Chls b608, b605, and b617 from monomer T) located at the interface with PsaO (Figure 10a and b) and Chl b molecules do not function as efficient bridges for EET between adjacent complexes (Croce and van Amerongen, 2020). In the stromal layer (Figure 10a), Chl b608T/Trimer1 faces Chl a2003PsaO, but they are separated at a relatively large Mg-Mg distance (23.9 Å). As the distance and orientation factor as well as the involved Chl species determine the efficiency of the inter-complex energy transfer (Croce and van Amerongen, 2020), three Chl pairs, namely Chl a612W/Trimer3-Chl a201PsaK (0.29 ps–1), Chl a612R/Trimer2 -Chl a610Lhca6 (0.15 ps–1), and Chl a611R/Trimer2 -Chl a302PsaH (0.17 ps–1), are predicted to mediate the most efficient energy transfer from Trimers to PSI (Table 5), whereas no Chl a in Trimer 1 was involved. Although the distances for Chl a610W/Trimer3-Chl a201PsaK (0.00 ps–1) and the Chl a611R/Trimer2-Chl a609Lhca6 (0.05 ps–1) are also short (18.5 or 20.8 Å), their energy transfer efficiency would be negligible due to the relatively low orientation factor (K2 <0.7, Figure 10—figure supplement 1). Thus, most of the energy collected by Trimer 1 is likely transferred to Trimer 2 or Trimer 3 and then pass through Chl a611-Chl a612R/Trimer2 or Chl a612W/Trimer3 to reach PSI core (Figure 10—figure supplement 2). Both Trimers 2 and 3 establish close connections with PSI subunits (PsaH and PsaK) through the Chl a611-a612 clusters from monomers RTrimer2 and WTrimer3, respectively. In plant LHCII, the excitation energy within a trimer is mainly populated on the Chl a610-a611-a612 cluster in equilibrium (Novoderezhkin et al., 2005). The Chl a610-a611-a612 clusters in monomer RTrimer2 and monomer WTrimer3 may have a similar function in collecting energy from the adjacent Lhcp monomers and then transfer the energy to the nearby Chls on PsaH and PsaK. Meanwhile, Lhca6 may also serve as an intermediate complex connecting the energy transfer process from RTrimer 2 to PSI.
 
-## Physiological role of the OtPSI-LHCI-Lhcp supercomplex
+**Table 5.**
+ Calculated FRET rates between Lhcp and photosystem I (PSI) core pigment pairs.In each row of the pigment pair column, on either side of the arrow, the first letter, the second value, and the third subscript represent the Chl species, the Chl number, and the polypeptide chain, respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pigment pair</th>
+      <th>FRET rate kFRET (ps–1)</th>
+      <th>Distance R (Å)</th>
+      <th>Dipole orientation factor Κ2</th>
+      <th>Chl a – Chl a pair</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>b605Q → a305L</td>
+      <td>0.27</td>
+      <td>13.53</td>
+      <td>1.00</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b605W → a2004O</td>
+      <td>0.29</td>
+      <td>13.98</td>
+      <td>1.28</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b608Q → a224H</td>
+      <td>0.19</td>
+      <td>16.56</td>
+      <td>2.38</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a612W → a201K</td>
+      <td>0.29</td>
+      <td>16.24</td>
+      <td>0.95</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>a614R → b606Lhca6</td>
+      <td>0.02</td>
+      <td>17.39</td>
+      <td>0.35</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b605T → a2003O</td>
+      <td>0.05</td>
+      <td>16.84</td>
+      <td>0.66</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a610W → a201K</td>
+      <td>0.00</td>
+      <td>18.46</td>
+      <td>0.01</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Mdp609Q → a224H</td>
+      <td>0.01</td>
+      <td>19.08</td>
+      <td>1.36</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b606Q → a224H</td>
+      <td>0.03</td>
+      <td>19.28</td>
+      <td>0.80</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b617T → a2004O</td>
+      <td>0.05</td>
+      <td>19.40</td>
+      <td>1.63</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a612R → b606Lhca6</td>
+      <td>0.00</td>
+      <td>18.87</td>
+      <td>0.70</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b617W → a203K</td>
+      <td>0.06</td>
+      <td>19.75</td>
+      <td>2.02</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b617W → a204K</td>
+      <td>0.05</td>
+      <td>20.00</td>
+      <td>1.83</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a612R → a610Lhca6</td>
+      <td>0.15</td>
+      <td>19.37</td>
+      <td>1.42</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>b605T → a2001O</td>
+      <td>0.02</td>
+      <td>19.67</td>
+      <td>0.71</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a611R → a302H</td>
+      <td>0.17</td>
+      <td>20.08</td>
+      <td>1.99</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>b605Q → a2005O</td>
+      <td>0.03</td>
+      <td>21.20</td>
+      <td>1.51</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b617R → a604Lhca6</td>
+      <td>0.02</td>
+      <td>20.83</td>
+      <td>0.87</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>a611R → a609Lhca6</td>
+      <td>0.05</td>
+      <td>20.79</td>
+      <td>0.70</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>b617W → a206K</td>
+      <td>0.02</td>
+      <td>20.86</td>
+      <td>0.79</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b605Q → a224H</td>
+      <td>0.01</td>
+      <td>21.37</td>
+      <td>0.79</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>b617W → a2004O</td>
+      <td>0.00</td>
+      <td>21.54</td>
+      <td>0.01</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+### Physiological role of the OtPSI-LHCI-Lhcp supercomplex
 
 The structure of the OtPSI-LHCI-Lhcp supercomplex, which was examined in this study, reveals the association of Lhcp trimers with the PSI core and the interfacial pigment pairs, supporting their function as peripheral antennae. In higher plants and the core chlorophyte C. reinhardtii, their LHCII trimer(s) bound to the same side of the PSI core act as conditional antennae under state 2 conditions (Huang et al., 2021; Pan et al., 2018; Pan et al., 2021). However, in the present study, the O. tauri cells were grown under white LL conditions (50 μmol photon m–2 s–1) without inducing state 2 (Minagawa, 2011). Under LL conditions, we observed a higher amount of the A3L band compared to the A3 band (Figure 1a), while this difference was not observed under HL conditions (500 μmol photon m–2 s–1, Figure 11a). These findings suggest that the PSI-LHCI-Lhcp and PSI-LHCI supercomplexes may either represent the PSI-LHCI-Lhcp supercomplex before and after photodamage caused by HL treatment, or the LL- and HL-acclimated forms of the PSI supercomplex in this primordial green alga. If the latter is the case, our results may be comparable to those observed in the moss Physcomitrella patens, where the PSI supercomplex that is predominantly formed under HL conditions shares architectural similarities with that found in higher plants (Yan et al., 2021; Gorski et al., 2022). In contrast, the other PSI supercomplex, formed under LL or mixtrophic conditions, associates several additional LHC proteins, including an LHCII trimer, to increase the antenna size (Iwai et al., 2018; Pinnola et al., 2018). This structural arrangement is postulated as a ‘constitutive state 2’ (Pinnola et al., 2018), as the binding site of the LHCII trimer to PSI appears to be constitutively occupied, which is partly supported by the low capability of state transitions in P. patens (Busch et al., 2013). While formation of the latter large-type PSI supercomplex requires expression of a unique LHC polypeptide Lhcb9 under LL conditions, which contains red-shifted absorption forms (Pinnola et al., 2018), there is no counterpart of Lhcb9 found in O. tauri.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig11-v2.jpg)
+
+**Figure 11.:** (a) Sucrose density gradient ultracentrifugation of the solubilized thylakoids (0.25 mg Chl) from O. tauri cells grown under low light (LL) and high-light (HL) conditions. (b) Immunoblot analysis of phospho-Lhcp1. Thylakoids (2 µg Chl) were isolated from LL-, HL-treated, and LL-recovered cultures (LL [black], HL-tre [red], and LL-re [blue], respectively). ATPB protein levels are shown as the loading control. Data are representative of two independent experiments. See another set of data in Figure 11—figure supplement 1, (c) Light-induced P700 oxidation kinetics measured under 22 µmol photon m–2 s–1 in the thylakoids sampled from the same cultures in (b). The fraction of P700 oxidation was derived from Δ(A820-A870). Solid lines and shaded lines represent fitting curves by mono-exponential functions and averaged lines of measurements of eight technical replicates, respectively. Data are representative of two independent experiments. See another set of data in Figure 11—figure supplement 2.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** All conditions were the same as in Figure 11b.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/84488/elife-84488-fig11-figsupp2-v2.jpg)
+
+**Figure 11—figure supplement 2.:** All conditions were the same as in Figure 11c.
 
 Alternatively, our observation of two different forms of PSI supercomplexes under LL and HL conditions may be the results of a short-term acclimation response, such as state transitions. This hypothesis is supported by a proposed mechanism for the docking and undocking of Lhcp trimers that resembles that of state transitions (Rochaix, 2014). Specifically, in O. tauri, the phosphorylated Lhcp1-(Lhcp2)2 (or Trimer 2) docks to the pocket formed by PsaH/L, which shows similarities to those observed in Z. mays (Pan et al., 2018) and C. reinhardtii (Pan et al., 2021), including the crucial RRpT motif (Figure 6d). During state transitions, LHCII trimers become phosphorylated when the plastoquinone pool is reduced, and a portion of the phospho-LHCII trimer(s) is associated with the pocket formed by PsaH/L on the PSI core using the RRpT motif (Pan et al., 2021). The architecture supporting this mechanism appears to be conserved across both branches of green plants: streptophytes including higher plants (Pan et al., 2018) and chlorophytes including C. reinhardtii (Pan et al., 2021), suggesting that it emerged early in the evolution of green plants. O. tauri, whose ancestor diversified near the branch point of chlorophytes and streptophytes, may retain some of the original features of state transitions (Lewis and McCourt, 2004).
 
@@ -113,51 +877,51 @@ In conclusion, the cryo-EM structure of the PSI supercomplex in O. tauri has rev
 
 ## Materials and methods
 
-## Strain and growth conditions
+### Strain and growth conditions
 
 O. tauri strain OTH95 (Derelle et al., 2006) was obtained from Roscoff Culture Collection (RCC745). Cells were grown in artificial seawater made with Sigma sea salt (Sigma cat#59883) supplemented with Daigo’s IMK medium (Fujifilm-Wako, Japan) at 25°C under white fluorescence bulb (Panasonic FL40SS W/37R) at the indicated light intensities with constant air-bubbling and gentle stirring. For the short-term photoacclimation experiments, cells grown at 50 µmol photon m–2 s–1 (LL-culture) were shifted to 500 µmol photon m–2 s–1 for 1 hr (HL-treated culture), then returned to 50 µmol photon m–2 s–1 and incubated for 1 hr (LL-recovered culture).
 
-## Preparations of pigment-protein complexes
+### Preparations of pigment-protein complexes
 
 Thylakoid membranes were prepared as described previously (Swingley et al., 2010), with a modified cell lysis protocol by using two rounds of nebulization by BioNeb (Glas-Col, Terre Haute, IN, USA) at 8 kg cm–2 force (of N2). The obtained membranes were solubilized with dodecyl-α-D-maltoside (Anatrace, Maumee, OH, USA), which was subsequently replaced by amphipol A8-35 (Anatrace), and the pigment-protein complexes were fractionated by the SDG ultracentrifugation as described previously (Watanabe et al., 2019).
 
-## SDS-PAGE and immunoblotting
+### SDS-PAGE and immunoblotting
 
 SDS-PAGE and immunoblotting were performed as described previously (Iwai et al., 2008). Anti-phospho-Lhcb2 (AS13 2705) and anti-ATPB (AS05 085) antibodies were obtained from Agrisera (Vännäs, Sweden).
 
-## Mass spectrometry
+### Mass spectrometry
 
 The sample was applied for trypsin digestion (Shevchenko et al., 2006) and analyzed by a UPLC system (EASY-nLC 1000, Thermo Fisher Scientific) coupled to an Orbitrap Elite mass spectrometer (Thermo Fisher Scientific). The analyzed data were submitted for protein database search using Proteome Discoverer software (Thermo Fisher Scientific) and Mascot version 2.5.1 (Matrix Science). The protein database was generated from the polypeptide sequences of O. tauri OTH95 deposited in NCBI (Derelle et al., 2006).
 
-## Pigment analysis
+### Pigment analysis
 
 Pigments were analyzed on a UPLC system as described previously (Tokutsu and Minagawa, 2013) with the following modifications. Pigments were extracted from the samples with 80% aceton. Separation was carried out on a Cadenza CD-C18 UP, 2×150 mm, 3 µm column (Imtakt, Kyoto, Japan). Gradient elution was established with three-solvent system, acetonitrile/isopropanol/water. The gradient was shifted from 65:15:20 (vol/vol) to 80:15:5 (vol/vol) at 6.5 min and to 50:50:0 (vol/vol) at 10 min before returning to 65:15:20 (vol/vol) at 15 min. The column temperature was 45°C. The system was calibrated with commercial standards as long as they were available (DHI, Hoersholm, Denmark). Concentrations of Dlt and Mdp were estimated based on the response factor of lutein and Chl c2, respectively, and uriolide and micromonal were estimated based on the response factor of Prx as previously described (Latasa et al., 2004). We used extinction coefficients from Roy et al., 2011.
 
-## UV-Vis absorption spectroscopy
+### UV-Vis absorption spectroscopy
 
 Absorption spectra were obtained at 0.5 nm intervals in the range 400–800 nm by using a UV-Vis spectrometer V-650 (JASCO Corp, Tokyo, Japan) with an integrating sphere ISV-722 (JASCO) at room temperature. Prior to the measurements, concentration of the samples was adjusted to 3 µg Chl mL–1.
 
-## Fluorescence spectroscopy
+### Fluorescence spectroscopy
 
 Time-resolved fluorescence spectra were measured at 77 K as described previously (Yokono et al., 2015a), by using a photoluminescence spectrometer FLS1000-ss-stm (Edinburgh Instruments, Livingston, UK). Prior to the measurements, concentration of the samples was adjusted to 4 µg Chl mL–1. Excitation wavelength was 405 nm. The instrumental function was measured with each sample at 405 nm with 2 nm bandwidth. Since the typical FWHM of the instrumental function was 50 ps, the theoretical temporal resolution was at most 5 ps for signals immediately after deconvolution analysis (O’Connor and Phillips, 1984). The excitation laser intensity was less than 8 µW with the repetition rate at 2 MHz, which did not interfere with measurements up to 100 ns. Time intervals is 2.44 ps channel–1 for up to 10 ns and 97.7 ps channel–1 for up to 100 ns. The optical slit was set to 10 nm and the optical filter (LOPF-25C-593) was used to cut the excitation pulse from the fluorescence signal. The signal-to-noise ratio was over 30,000:1. The fluorescence decay-associated spectra and the steady-state fluorescence spectra were constructed as described previously (Yokono et al., 2015b; Yokono et al., 2019). Briefly, the fluorescence decays were fitted using convolution and simulation method using Mathematica 12 (Wolfram Research, Champaign, IL, USA). Instrumental function and free exponential components were used to simulate fitting curves, and the determined exponential components were used to construct deconvoluted decay curves. The deconvoluted decay curves were imported to Igor 8 (WaveMetrics, Lake Oswego, OR, USA) to perform global analyses. Following a global analysis of the fluorescence kinetics, FDAS were constructed. For the PSI-LHCI and the PSI-LHCI-Lhcp supercomplexes, steady-state fluorescence spectra were reconstructed from first and second lifetime components of FDAS by integration on time axis.
 
-## PSI antenna size measurements
+### PSI antenna size measurements
 
 Thylakoids were prepared as follows. Twenty mL of cell culture was initially shock frozen with liquid N2 under the culturing light either at 50 µmol photon m–2 s–1 (LL-culture and LL-recovery-culture) or 500 µmol photon m–2 s–1 (HL-culture). The frozen cells were disrupted by adding 30 mL of disrupting buffer (25 mM HEPES [pH 7.5]), 10 mM sodium fluoride, and proteinase inhibitor PefablocSC at 0.25 mg mL–1 (Roche, Basel, Switzerland) before centrifugation at 22,000 × g for 2 min at 4°C. The pellets were resuspended in measuring buffer (25 mM HEPES [pH 7.5], 330 mM sucrose, 1.5 mM NaCl, 5 mM MgCl2, 10 mM sodium fluoride) at 60 μg Chl mL–1. A3 and A3L fractions were resuspended in measuring buffer (25 mM HEPES, pH 7.5) at 20 µg Chl mL–1. These samples were incubated in the presence of 100 µM 3-(3,4-dichlorophenyl)-1,1-dimethylurea, 5 mM sodium ascorbate and 400 μM methyl-viologen for 5 min to create a donor-limited situation (Melis, 1982) and P700 oxidation kinetics were analyzed by monitoring the difference between two transmission pulse signals at 820 and 870 nm using a Dual/KLAS-NIR spectrophotometer (Heinz Walz GmbH, Effeltrich, Germany) as previously reported (Klughammer and Schreiber, 2016). Dark-light-induced kinetics were obtained with red actinic light (16, 28, and 48 µmol photon m–2 s–1, 635 nm). Traces were normalized between the minimum (before actinic light illumination) and the maximum values and fitted with a mono-exponential function to determine the P700 oxidation rate (τ–1).
 
-## Negative staining single-particle analysis
+### Negative staining single-particle analysis
 
 Negative staining single-particle analysis was performed as described previously (Watanabe et al., 2019) with following modifications. Isolated protein samples were diluted to 2 µg Chl mL–1. Electron micrographs were obtained at ×100,000 magnification and recorded at a pixel size of 5.0 Å. In total, 50 micrographs for the A3, 200 micrographs for A3L were collected. Two-dimensional (2D) classification was performed into 50 classes. Small PSI (PSI-LHCI) and large PSI (PSI-LHCI-Lhcp) supercomplexes were assigned based on the shape of the averaged particles.
 
-## FRET calculation
+### FRET calculation
 
 FRET rate constants were computationally calculated based on the simplified FRET principle with an approximation that all Chl a and b had the identical excited-state energy levels so the spectral overlap integral for each combination was constant as previously described (Mazor et al., 2017; Sheng et al., 2019).
 
-## Cryo-EM data collection, processing, classification, and reconstruction
+### Cryo-EM data collection, processing, classification, and reconstruction
 
 A total of four datasets were collected on a 300 kV Titan Krios microscope (FEI) equipped with K2 camera (Gatan) by using four different grids prepared under similar conditions. Movies were captured with a defocus value at the range of –1.8 to –2.2 μm. The physical pixel size and total dose are 1.04 Å and 60 e- Å–2, respectively. After removing images with poor quality or evident drift, a total of 19,680 (2697, 2992, 6870, and 7121 for each dataset) images were selected and used for further processing. The beam-induced motion in each movie with 32 frames were aligned and corrected using MotionCor2 (Zheng et al., 2017). The corrected images after alignment were used for estimation of the contrast transfer function (CTF) parameters by using CTFFIND4.1 (Rohou and Grigorieff, 2015). The initial image-processing steps, including manual particle picking, reference-based particle autopicking, reference-free 2D classification and 3D classification, were performed in cryoSPARC (Punjani et al., 2017). The image subsets were divided into about 10 groups by reference-free 2D classification, which were further applied as templates for reference-based particle autopicking. Subsequently, the total of 5,288,217 raw particles were picked and further classified through the 2D classification procedure. As a result, 842,823 particles with good contrast were output from cryoSPARC and imported into Relion 3.1 (Scheres, 2012) for further processing step. The particles were subjected to 3D classification without providing any references. The selected classes (2452, 6648, 32,751 and 38,722 particles for each of the four datasets) of PSI-LHCI-Lhcp supercomplex from 3D classification were combined and used for further processing through the 3D auto-refinement with C1 symmetry, CTF refinement, and Bayesian particles polishing. The final cryo-EM density map resolution of OtPSI-LHCI-Lhcp supercomplex was estimated by using the gold standard Fourier shell correlation (FSC) of two half maps with a cutoff at 0.143. To identify each individual subunits of the three Trimers, the local refinement procedure was carried out to further improve the map quality around each of the three Trimers. The local masks around each individual Trimers were applied during the refinement and the final resolutions of Trimers 1, 2, and 3 were 3.3, 2.9, 3.5 Å, respectively.
 
-## Model building and refinement
+### Model building and refinement
 
 To build the model of OtPSI-LHCI-Lhcp supercomplex, the structure of ZmPSI-LHCI (PDB code: 5ZJI) was fitted into the PSI-LHCI region of the 2.94 Å cryo-EM map by using UCSF chimera and manually adjusted through rigid body fit zone in COOT to achieve improved matching of the model with density. Subsequently, the amino acid residues in the model of each chain were corrected and registered by referring to the sequences of corresponding proteins from O. tauri. The PsaM subunit was added manually by de novo model building with the amino acid sequence as a reference. The Lhca5 and Lhca6 model was built by referring to the corresponding ones from the CrPSI-LHCI-LHCII structure (PDB code: 7D0J) and each amino acid residues in the model were checked and corrected by referring to local density feature and the OtLhca5 and OtLhca6 sequences. The density of Lhcp1 exhibits an elongated NTR similar to the corresponding part in CrLhcbM1, and shows a well-defined side chain densities in the local part found in the surface binding pocket of PSI. The model of Lhcp1 was built by using CrLhcbM1 (PDB code: 7D0J) as an initial model, sequence registration and correction of the model was performed by referring to the map and OtLhcp1 sequence simultaneously. For the model of Lhcp2, an initial model was adapted from an LHCII monomer, which was corrected and refined according to the cryo-EM map and OtLhcp2 sequence. For pigment molecules, two different carotenoids (Prx and Dlt) and one Chl (Mdp) found in prasinophyte were identified and assigned in each Lhcp1/2 monomer by referring to their characteristic density features. As a result, each Lhcp1/2 monomer contains four Dlt, two Prx, and one Mdp in addition to one Nex, eight Chl a, and five Chl b. Among the Chls, one (Chl b617) is located at the peripheral region of each Lhcp1/2. These pigment molecules show well-defined density features useful for their identification and model building. As the unambiguous identification of Chl a from Chl b requires higher resolution at around or beyond 2.8 Å, the current models of Chl a and Chl b were tentatively assigned by considering the local features and binding environments around C7 group.
 

@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05trd4x28 Center for Mind/Brain Sciences, University of Trento, Piazza Manifattura Rovereto Italy
-2. https://ror.org/042t93s57 Center for Neuroscience and Cognitive Systems @ UniTn, Istituto Italiano di Tecnologia Rovereto Italy
-3. https://ror.org/048tbm396 Department of Molecular Biotechnology and Health Sciences, University of Torino Torino Italy
+1. Center for Mind/Brain Sciences, University of Trento, Piazza Manifattura Rovereto Italy ([ROR:05trd4x28](https://ror.org/05trd4x28))
+2. Center for Neuroscience and Cognitive Systems @ UniTn, Istituto Italiano di Tecnologia Rovereto Italy ([ROR:042t93s57](https://ror.org/042t93s57))
+3. Department of Molecular Biotechnology and Health Sciences, University of Torino Torino Italy ([ROR:048tbm396](https://ror.org/048tbm396))
 
 † Corresponding author
 
@@ -24,6 +24,26 @@ The idea that sensory stimulation to the embryo (in utero or in ovo) may be cruc
 How the brain develops left-right asymmetry is poorly understood. Some of the molecular cues that specify the left-right axis of the body are guided by genes of the Nodal cascade (Halpern et al., 2003; Rogers et al., 2013; Ocklenburg and Güntürkün, 2017). These genes are involved in the establishment of the asymmetric morphology and positioning of the visceral organs (Ramsdell and Yost, 1998), but also produce a slight torsion of the embryo with the forehead pointing to the right. This rightward spinal torsion seems to occur in all amniotes (Zhu et al., 1999) including human embryos (Ververs and Hopkins, 1994).
 
 The torsion is particularly prominent in birds. In most species, the head of the embryo is turned to the side, so that the left eye is completely occluded by the body, while the right eye faces the eggshell (see Figure 1a). Thus, light stimulation passing through the eggshell and membranes reaches mostly the right eye.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86116/elife-86116-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic representation of the impact of light (off/on) on the lateralization of projections from the left thalamus (nucleus geniculatus lateralis pars dorsalis, Gld) to the right Wulst during the sensitive window (E17–18). (b) Typical longitudinal relaxation time (T1) map of a chick’s brain after administration of manganese. Mn2+ is a paramagnetic ion and shortens the T1 of nuclear spins in brain tissue in a concentration-dependent manner. Blue-darker regions correspond to higher intracellular Mn2+ accumulation, and hence to increased neuronal activity. Left-right front-posterior coordinates (L, R, F, P) are indicated with respect to the sagittal brain axis of embryo chick brain inside the egg. (c) Brain activity is reported as lateralization index (1=activity only in the left hemisphere; –1=only in the right). Regions of the thalamofugal pathway: Wulst and thalamus (Gld); region of the tectofugal pathway: optic tectum. Asterisk between groups indicates a significant difference between experimental conditions (Dark n=8, Light n=10). Asterisk above single group indicates lateralization significantly different from chance (0, dotted line). * indicates p<0.05, *** indicates p≤0.001. To best represent data, we used a raincloud plot that combines for each region and for each group: boxplot, raw data (circles) and data distribution (half violin on the left).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86116/elife-86116-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Capital ‘B’ identifies the brain; red circle traces the outline of the eggshell; eyes are indicated with a red arrow. The brain is represented on the axial plane in the cranio-caudal direction.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86116/elife-86116-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Color labels indicate regions of interest (ROIs) in the left (red) and right (blue) hemisphere, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86116/elife-86116-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** White circles identify the head/brain complex. The colormap is inverted and optimized to emphasize Mn2+-induced T1 shortening in the brain.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86116/elife-86116-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Curves are calculated as difference between left and right thalamus for both exposure conditions and are reported as mean (continuous line) and SEM (shaded area).
 
 Fibers coming from each eye decussate almost completely at the level of the optic chiasm. In the thalamofugal pathway, they then ascend contralaterally to the thalamus (more precisely at the level of the nucleus geniculatus lateralis pars dorsalis, Gld) and from there mostly ipsilaterally to the visual Wulst (an avian equivalent of the primary visual cortex of mammals). In chicks it has been shown that a small portion of visual fibers, so called supraoptic decussation, re-cross from the thalamus (Figure 1a) and innervate the contralateral side of the Wulst. Following light stimulation in embryo during a sensitive period embryonic days E17–18 (Rogers and Deng, 1999), however, in previous experiments it has been shown that light stimulation in the embryo result, on post-hatching day 2, in more projections from the left thalamus (receiving visual input from the right eye) than from the right thalamus to the right Wulst (Rogers and Deng, 1999) (see Figure 1a for an anatomical reference). Here, we attempted to image in vivo the embryonic functional mechanisms underlying the establishment of such an asymmetry.
 
@@ -51,23 +71,31 @@ This new protocol of MEMRI allowed us for the first time to map in vivo in the e
 
 ## Materials and methods
 
-## Subjects and embryonic manipulations
+### Subjects and embryonic manipulations
 
 Fresh fertilized eggs of the Aviagen Ross 308 strain (Gallus gallus domesticus; provider: Azienda Agricola Crescenti Brescia, Italy) were incubated in the laboratory under constant temperature and humidity in the complete darkness (37.7°C; 60%; incubator: FIEM MG140/200 Rural LCD EVO). On embryonic day 17 (E17), the eggshell was pierced in correspondence of the air sac. 80 µl of manganese chloride (540 mM MnCl2 tetrahydrate, Sigma-Aldrich) dissolved in phosphate-buffered saline (0.1 M, pH = 7.4, 0.9% sodium chloride) were dropped on the chorioallantoic membrane. Paper tape was used to seal the eggshell again and eggs were placed back in the incubator. After manganese injection a group of 10 eggs were exposed to 17.30 hr of light (light group), by mean of a rectangular plastic translucent panel (36×38 cm2), with 15 LEDs (270 lm) homogeneously distributed on it placed on the roof of the incubator 15 cm above the eggs. Another group of eight eggs were incubated in the darkness (dark group). On E18 each egg was taken individually and randomly from one of the two incubators (light or dark), placed inside a dark box and moved to the fridge (4°C) for 30 min in order to avoid any movement during scanning. Sample size was determined based on previous experiments on newly hatched chicks (Halpern et al., 2003).
 
-## Image acquisition
+### Image acquisition
 
 Images were acquired at 7 T on a Bruker Pharmascan (https://www.bruker.com) with a 72 mm i.d. single-channel transmitter-receiver birdcage resonator. Pulse sequence parameters for RARE (rapid acquisition with relaxation enhancement) variable TR T1 mapping method (RARE-VTR) acquisition were set as follows: TR = [169.3; 240.6; 340.6; 440.6; 540.6; 640.6; 740.6; 840.6; 990.6; 1490.6; 1990.6; 2990.6; 4990.6] ms, TE = 6.25 ms, MTX = 200 × 200 × 9, voxel size = 0.25 × 0.25 × 1 mm, ACQtime = 18 min 30 s. In addition, a series of multislice T1W FLASH (fast low angle shot) images (TR = 91 ms, TE = 4 ms, MTX = 200 × 200 × 7, voxel size = 0.275 × 0.275 × 12  mm, ACQtime = 13.6 s) were acquired for anatomical reference and to define the optimal imaging plane for RARE-VTR. To avoid artifacts caused by spontaneous movement of the chick embryo, eggs were kept at 4°C in a temperature-controlled refrigerator for 20 min prior to the acquisition. This ensured the immobilization of the chick embryo within the egg due to mild hypothermia for about 30/45 min. In this time window, the egg was placed in a foam pad enclosure to further attenuate mechanical vibrations induced by imaging gradient switching and inserted into the birdcage coil for MR scanning procedures.
 
-## Image analyses
+### Image analyses
 
 Regions of interest (ROIs) were selected from the two main visual pathways, the thalamo- and the tectofugal pathway blinded from the experimental condition. For the thalamofugal visual pathway a portion of the dorsolateral thalamus and of the visual Wulst were selected, of which respectively three and two sections per each hemisphere were quantified. For the tectofugal visual pathway only the optic tectum was selected, of which four sections per each hemisphere were quantified. ROIs were segmented manually on the first volume of the RARE-VTR dataset of each animal using the free software ITK-SNAP (https://www.itksnap.org/; Yushkevich et al., 2006). Quantitative T1 maps were obtained by fitting the general signal recovery model in Matlab (https://www.mathworks.com) to produce voxelwise distributions of T1 relaxation time over the whole brain.
 
-## Data analyses
+### Data analyses
 
-In order to investigate region-specific increase in manganese uptake into the brain and therefore suggesting a sustained and prolonged activation, average T1 values were computed via ROI analysis and transformed using the formula:t1=(1T1)×1000
+In order to investigate region-specific increase in manganese uptake into the brain and therefore suggesting a sustained and prolonged activation, average T1 values were computed via ROI analysis and transformed using the formula:
 
-The dependent variable employed in all the analyses was a left lateralization index computed for each brain region using the formula:Lateralization index=Left t1−Right t1Left t1+Right t1
+$$
+t1=(\frac{1}{T1})\times1000
+$$
+
+The dependent variable employed in all the analyses was a left lateralization index computed for each brain region using the formula:
+
+$$
+Lateralization index=\frac{Left t1−Right t1}{Left t1+Right t1}
+$$
 
 Lateralization index values ranged from 1 (brain activity present only in the left hemisphere) to – 1 (brain activity present only in the right hemisphere).
 

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.41258.001 A hallmark of adult hematopoiesis is the continuous replacement of blood cells with limited lifespans. While active hematopoietic stem cell (HSC) contribution to multilineage hematopoiesis is the foundation of clinical HSC transplantation, recent reports have questioned the physiological contribution of HSCs to normal/steady-state adult hematopoiesis. Here, we use inducible lineage tracing from genetically marked adult HSCs and reveal robust HSC-derived multilineage hematopoiesis. This commences via defined progenitor cells, but varies substantially in between different hematopoietic lineages. By contrast, adult HSC contribution to hematopoietic cells with proposed fetal origins is neglible. Finally, we establish that the HSC contribution to multilineage hematopoiesis declines with increasing age. Therefore, while HSCs are active contributors to native adult hematopoiesis, it appears that the numerical increase of HSCs is a physiologically relevant compensatory mechanism to account for their reduced differentiation capacity with age.
+A hallmark of adult hematopoiesis is the continuous replacement of blood cells with limited lifespans. While active hematopoietic stem cell (HSC) contribution to multilineage hematopoiesis is the foundation of clinical HSC transplantation, recent reports have questioned the physiological contribution of HSCs to normal/steady-state adult hematopoiesis. Here, we use inducible lineage tracing from genetically marked adult HSCs and reveal robust HSC-derived multilineage hematopoiesis. This commences via defined progenitor cells, but varies substantially in between different hematopoietic lineages. By contrast, adult HSC contribution to hematopoietic cells with proposed fetal origins is neglible. Finally, we establish that the HSC contribution to multilineage hematopoiesis declines with increasing age. Therefore, while HSCs are active contributors to native adult hematopoiesis, it appears that the numerical increase of HSCs is a physiologically relevant compensatory mechanism to account for their reduced differentiation capacity with age.
 
 ## Introduction
 
@@ -42,17 +42,37 @@ To try to assess these potential ambiguities, we here investigated the degree to
 
 ## Results
 
-## Fgd5-CreERT2-based lineage tracing allows for assessment of HSC contributions to unperturbed hematopoiesis
+### Fgd5-CreERT2-based lineage tracing allows for assessment of HSC contributions to unperturbed hematopoiesis
 
 Using a transcriptome based screen of more than 40 different hematopoietic cell types, Fgd5 (FYVE, RhoGEF and PH domain containing 5) was identified as a HSC-expressed gene that is rapidly downregulated upon differentiation. That Fgd5 expression marks all HSCs was confirmed through functional studies using an Fgd5 knock-in reporter strain (Gazit et al., 2014). To further detail the HSC specificity of Fgd5, we first acquired transcriptome data from 11,581 individual lineage-marker negative, c-kit positive and CD45 positive bone marrow cells (Lin-kit+). The Lin-kit+ population contains a range of different immature hematopoietic progenitor cells (Pronk et al., 2007). Therefore, Lin-kit+ cells provided a benchmark to which other more defined/specific hematopoietic progenitor subsets could be compared. Next, we took advantage of an Fgd5 reporter strain in which a ZsGreen-2A-CreERT2 allele was knocked into the endogenous Fgd5 locus (hereafter Fgd5CreERT2/+ mice) (Figure 1B) (Gazit et al., 2014). We sorted either Lin-kit+Fgd5+ cells (Figure 1A middle; 793 cells, Fgd5+), or Fgd5+ cells with a stringent Lin-kit+Sca-1+CD48-CD150+ HSC phenotype (Figure 1A right, 519 cells, HSC-Fgd5+). All Fgd5+ and HSC-Fgd5+ data were aggregated with the Lin-kit+ transcriptome data, which was followed by identification of the most significant gene vectors using principal component analysis (PCA). Data was then visualized using t-distributed stochastic neighbor embedding (tSNE) dimensionality reduction (Figure 1A). Lin-kit+ cells were extensively scattered across the two dimensions (Figure 1A, left), in agreement with the heterogeneity of these cells. By contrast, Fgd5+ cells, regardless if sorted based on additional HSC markers, formed a distinct and highly overlapping cluster (Figure 1A, middle and right). This cluster localized to a region with very few cells when evaluating Lin-kit+ cells (Figure 1A, left, dotted area), emphasizing the HSC-specificity of the Fgd5 reporter and the low HSC frequency within the larger Lin-kit+ fraction.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig1-v1.jpg)
+
+**Figure 1.:** (A) Lineage negative c-kit+ cells (Lin-c-kit+, left), lineage negative c-kit+ Fgd5+ cells (Fgd5+, middle) and lineage negative Fgd5+c-kit+Sca-1+CD150+CD48- cells (HSC-Fgd5+, right) were isolated and subjected to single cell RNA-sequencing. The data was aggregated and visualized in a two-dimensional scatter plot after PCA and tSNE dimensionality reduction. Fgd5+ cells are highlighted in pink (middle), Lin-c-kit+ cells are highlighted in black (left plot) and HSC-Fgd5+ cells are highlighted in blue (right plot). The area that Fgd5+ cells occupy in relation to the transcriptomes of Lin-c-kit+ cells and HSC-Fgd5+ cells is marked by a dotted line (left and right plots). (B) Schematic representation of the Fgd5CreERT2/+; Rosa26lsl-Tomato/+ model. ZsGreen and CreERT2 are expressed from the Fgd5 locus and expression of a Tomato allele is driven by a CAG promoter from the Rosa26 locus and is preceded by a LoxP flanked STOP cassette. (C) Model description; HSCs selectively and continuously express ZsGreen in an Fgd5-dependent manner. Upon Tamoxifen (TAM) administration, HSCs express Tomato and expression of Tomato label is inherited by all progeny of Tomato-expressing HSCs. (D) Representative FACS plots showing Tomato label in BM HSPCs from Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice that were injected with Tamoxifen 48 hr prior to analysis. (D, lower right) Representative histograms depicting Tomato label in PB cells at various time points after the start of Tamoxifen administration from mice in Figure 3B (T cells 48 weeks, B cells 25 weeks, granulocytes and monocytes 8 weeks, platelets and erythrocytes 13 weeks). Numbers in FACS plots depict the mean % of Tomato labeled cells ± SD (n = 5) and dashed lines in histograms indicates the boundary for Tomato positivity. (E) FACS plots showing H2B-mCherry label retention and Tomato labeling in Lineage-c-kit+CD150+CD48- and Sca1+ or Sca1- cells from a representative mouse that had diluted H2B-mCherry label for 5 weeks and were injected with Tamoxifen 5 days prior to analysis (n = 3; 14–19 weeks old at analysis). (F) The fraction of donor-derived cells among different blood cell lineages was assessed in individual mice 16 weeks post-transplantation in recipients of 5 Tomato+ (n = 8) or 5 Tomato- (n = 7) HSCs. Abbreviations: 2A, 2A self-cleaving peptide; CAG, CAG promoter; loxP, LoxP site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The gating scheme for identification of HSCs/MPPs and myeloerythroid progenitors within the LSK and LK populations, respectively. (B) The gating scheme for identification of peripheral blood subsets. Red histogram display Ter119 expression in erythrocytes over an unlabeled control (grey histogram) and platelets identified by gating on scatter characteristics display expression of both CD41 and CD150.
 
 We next generated a lineage tracing model by crossing Fgd5CreERT2/+ mice to Rosa26-Lox-Stop-Lox-Tomato mice (hereafter Rosa26lsl-Tomato/+) (Figure 1B). In this model, HSCs can be identified based on ZsGreen expression, while Tamoxifen administration leads to irreversible and heritable Tomato labeling of HSCs and, over time, their offspring (Figure 1C). To confirm the model, we evaluated Tomato label in HSC and BM progenitor cells 48 hr after a single injection (1x) of Tamoxifen. This revealed labeling of a fraction of candidate HSCs, with virtually no labeling in other c-kit+ progenitor fractions (Figure 1D and Figure 1—figure supplement 1). This established HSC specific labeling and a relatively low differentiation rate of HSCs in steady state (Säwén et al., 2016; Wilson et al., 2008). To illustrate our ability to detect Tomato label in peripheral blood (PB) cells, we assessed Tomato expression in defined cell types from mice that had received Tamoxifen 8–48 weeks previously (Figure 1D, lower right). Complementary to immunophenotypic identification of initially labeled BM cells as HSCs (Figure 1D and data not shown), we evaluated the proliferation history of Tomato labeled HSPCs 5 days after a pulse of Tomato labeling by evaluation of transgenic H2B-mCherry label retention (Figure 1E) (Säwén et al., 2016). Among HSCs, this revealed a strong correlation between a restricted proliferative history and Tomato labeling. Of note, a single dose of Tamoxifen was insufficient to label all candidate Fgd5-expressing HSCs (Figure 1E and data not shown).
 
 Finally, to corroborate that Tomato labeled phenotypic HSCs are bona fide HSCs, we injected mice with Tamoxifen and isolated candidate Tomato positive and negative HSCs 48 hr later. Sorted cells were transplanted at limiting dilution (5 cells/mouse). This revealed long-term multilineage reconstitution in 5/8 recipients transplanted with Tomato+ HSCs (Figure 1F).
 
-## Fgd5-lineage tracing reveals that HSCs generate different types of hematopoietic progeny with distinct kinetics
+### Fgd5-lineage tracing reveals that HSCs generate different types of hematopoietic progeny with distinct kinetics
 
 Encouraged by the highly specific HSC label observed after Tamoxifen administration to Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice (Figure 1), we next set out to perform label tracing studies of hematopoietic generation from HSCs. For this, we labeled cohorts of Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice with one injection of Tamoxifen and chased groups of mice for different periods of time up to 83 weeks after labeling. At end point analyses, the fraction of Tomato+ cells was determined in various hematopoietic compartments to assess the HSC contribution to progenitor pools and mature blood cell subsets (Figure 1—figure supplement 1). The frequencies of Tomato+ cells for each investigated subset were next related to the fraction of Tomato labeled HSCs (Figure 2A, mean 13% ± 9%) in individual mice (Figure 2B, and Figure 2—figure supplement 1). The fraction of labeled HSCs was generally higher in mice analyzed beyond 4 days of chase compared to mice analyzed after shorter chase periods. However, no further increase in HSC labeling was noted after longer periods of chase (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig2-v1.jpg)
+
+**Figure 2.:** Cohorts of Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were chased for up to 83 weeks after receiving one Tamoxifen injection before endpoint analysis of the % of Tomato+ cells in HSCs (A) and hematopoietic progenitor and PB cell subsets (B). The fraction of Tomato+ cells in each indicated hematopoietic cell subset was divided by the % Tomato label in HSCs in corresponding mice to determine the ratio of Tomato+ cells relative to HSCs in individual mice. The average ratio is plotted according to time after the Tamoxifen (TAM) injection and displayed in a heat map format. Mice were analyzed at 1–4 days (n = 18) and at 4 (n = 7), 8 (n = 8), 12 (n = 8), 16 (n = 4), 28 (n = 4), 32 (n = 5) and 83 (n = 3) weeks after the Tamoxifen injection. All mice were between 5 and 11 weeks old at the time of Tamoxifen injection. (C) PCA plot of multiplexed qRT-PCR data for 48 genes from triplicates of 10 cells from each of the indicated populations. Ellipses show an area where a new observation from the same group would position itself with a probability of 0.95. Numbers indicate the % of variance in the total data set that the respective PC explains. (D) For individual animals, the % of Tomato+ cells in PB cell types was divided by the % of Tomato+ cells in the indicated progenitor cell types and this value was plotted according to the duration of the chase period. Symbols represent individual mice (number of mice analyzed as in A and B). A dashed line is drawn to indicate an equilibrium-ratio of 1. (E) Ratios calculated as in B and plotted according to the number of weeks after transplantation or after the start of Tamoxifen administration for steady state/native mice (n = 3 for WBM tx in CD45 depleted, n = 5 for WBM tx in irradiated, n = 11 for HSC tx in irradiated, n = 4–8 for 1x TAM, n = 4–9 for continous TAM). All Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice/cells were between 5 and 11 weeks old at the time of Tamoxifen administration or when used as cell donors for transplantation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Left column: percentages of Tomato+ cells among the indicated hematopoietic subsets in bone marrow and peripheral blood at the indicated time after a single Tamoxifen injection. Right column: ratio of the % of Tomato+ cells in the indicated hematopoietic cell subsets relative to the % of Tomato+ HSCs in corresponding mice. Mice were analyzed 24 hr (n = 6), 48 hr (n = 6), 96 hr (n = 6), 4 w (n = 7), 8 w (n = 8), 12 w (n = 8), 16 w (n = 4), 28 w (n = 4), 32 w (n = 5) and 83 w (n = 3) after Tamoxifen injection. Cohorts of mice were injected with Tamoxifen in five different experiments. Symbols indicate individual mice and bars indicate the mean Tomato level at each time point evaluated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Single GMLPs (n = 279), HSCs (n = 240) and LSKCD150+CD48+ cells (n = 460) were seeded into Terasaki wells and cultured for 6 days before scoring wells for erythroid cells and megakaryocytes by microscopic evaluation. The % of wells containing erythroid cells (red), megakaryocytes (orange) or cells other than erythroid or megakaryocytes (green) are plotted in filled bars from the different indicated cells evaluated.
 
 First, we investigated Tomato label progression into the immature lineage negative, Sca-1 positive and c-kit positive (LSK) compartment, fractionated further using the Slam markers CD48 and CD150 (Kiel et al., 2005) (Figure 2B and Figure 1—figure supplement 1). We used this approach to identify HSCs (LSKCD150+CD48-) and different multipotent progenitor fractions (MPPs: LSKCD150-CD48-, MPP2: LSKCD150+CD48+, MPP3/4: LSKCD150-CD48+).
 
@@ -70,7 +90,7 @@ While multiple studies have defined populations of hematopoietic progenitors tha
 
 Hematopoiesis after transplantation of HSCs is fundamentally different from unperturbed hematopoiesis (Busch et al., 2015; Sun et al., 2014). However, to what extent the pre-conditioning regimen and co-transplantation of mature cells and progenitors influence on hematopoiesis from HSCs is less established. Therefore, we next transplanted wild type recipient mice on continuous Tamoxifen diet with purified Fgd5CreERT2/+; Rosa26lsl-Tomato/+ HSCs or WBM cells. Here, recipient mice were pre-conditioned by either lethal irradiation or antibody mediated CD45-depletion (Palchaudhuri et al., 2016). Due to the HSC specificity of the model, this approach allowed us to monitor the kinetics of the HSC contribution to all lineages after transplantation and compare it to the HSC contribution in steady state (Figure 2E). Compared to steady state, label progression in transplanted mice were faster (Figure 2E). When label progression kinetics was compared between HSC and WBM transplanted animals, HSC transplantation resulted in faster label progression, especially into the B cell lineage (Figure 2E). This likely reflects a significant contribution to the regeneration of the B cell lineage by co-transplanted long-lived B-lineage progenitors and mature cells after WBM transplantation. Comparison of label progression after WBM transplantation into irradiated or non-irradiated/antibody-mediated conditioned recipient mice revealed similar label progression kinetics into most mature lineages, with the exception of platelets that displayed a faster label progression in irradiated mice. This suggests that progenitors for platelets are more effectively ablated by irradiation than antibody-mediated pre-conditioning.
 
-## Fgd5-mediated HSC lineage tracing corroborates the fetal/juvenile origin of Langerhans cells, B1a B cells and brain microglial cells
+### Fgd5-mediated HSC lineage tracing corroborates the fetal/juvenile origin of Langerhans cells, B1a B cells and brain microglial cells
 
 While a labeling regimen of one Tamoxifen injection allows for accurate kinetic evaluations (Figure 2A–B,D), this experimental strategy labels only a fraction of HSCs (Figure 1E and Figure 2A) and thus necessitates correlation of label in HSCs to other evaluated cell subsets (Busch et al., 2015) (Figure 2B). If the original HSC label is low, this might as a consequence not allow for evaluation of the activity of the entire pool of HSCs.
 
@@ -78,7 +98,7 @@ To explore whether we could label the HSC pool more extensively, Fgd5CreERT2/+; 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig3-v1.jpg)
 
-**Figure 3.:** (A) H2B-mCherry label retention in HSCs and myeloid progenitors after 5 weeks of chase in mice continuously fed Tamoxifen (TAM) containing food (blue histograms, n = 7) or normal food (red histograms, n = 6) during the chase period. Green histograms depict an unlabeled control. Dashed lines indicate the boundary for H2B-mCherry positivity. Lineage negative c-kit+Sca1- cells are denoted as myeloid progenitors. (B) Cohorts of Fgd5 mice were continuously fed Tamoxifen food for 16 weeks (TAM phase) and thereafter normal chow during a chase phase of 32 weeks (n = 5) or 41 weeks (n = 4). During the TAM and chase phases, PB was regularly analyzed for Tomato label in the indicated subsets. Data points indicate the average % of Tomato label in each indicated subset. (CreERT2/+; Rosa26lsl-Tomato/+C–E) Endpoint analysis, after 41 weeks chase, in mice from Figure 3B (n = 3). (C) Representative FACS plots showing the gating strategy to identify HSCs in lineage negative BM cells (left, middle) and depiction of the Tomato label in HSCs (right, red histogram) compared to an unlabeled control (blue histogram). Dashed line indicates the boundary for Tomato positivity, arrows indicate the gating strategy. (D) Representative FACS plots of cells isolated from skin tissue (epidermis) or the peritoneal cavity. Histograms show Tomato label (bottom left and right) or ZsGreen label (bottom middle) in the indicated subsets. Dashed line indicate the boundary for Tomato positivity, arrows indicate the gating hierarchy, gates and corresponding histograms are color matched. (E) Representative confocal images of the brain. (Left) IBA1 positive cells (green) are not labeled with Tomato (red, middle) while blood vessels are labeled with Tomato (middle). (Right) Merged images display both IBA1 staining and Tomato label. Scale bar = 50 μm. Mice in B-E were 5–6 weeks old at the start of Tamoxifen administration.
+**Figure 3.:** (A) H2B-mCherry label retention in HSCs and myeloid progenitors after 5 weeks of chase in mice continuously fed Tamoxifen (TAM) containing food (blue histograms, n = 7) or normal food (red histograms, n = 6) during the chase period. Green histograms depict an unlabeled control. Dashed lines indicate the boundary for H2B-mCherry positivity. Lineage negative c-kit+Sca1- cells are denoted as myeloid progenitors. (B) Cohorts of Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were continuously fed Tamoxifen food for 16 weeks (TAM phase) and thereafter normal chow during a chase phase of 32 weeks (n = 5) or 41 weeks (n = 4). During the TAM and chase phases, PB was regularly analyzed for Tomato label in the indicated subsets. Data points indicate the average % of Tomato label in each indicated subset. (C–E) Endpoint analysis, after 41 weeks chase, in mice from Figure 3B (n = 3). (C) Representative FACS plots showing the gating strategy to identify HSCs in lineage negative BM cells (left, middle) and depiction of the Tomato label in HSCs (right, red histogram) compared to an unlabeled control (blue histogram). Dashed line indicates the boundary for Tomato positivity, arrows indicate the gating strategy. (D) Representative FACS plots of cells isolated from skin tissue (epidermis) or the peritoneal cavity. Histograms show Tomato label (bottom left and right) or ZsGreen label (bottom middle) in the indicated subsets. Dashed line indicate the boundary for Tomato positivity, arrows indicate the gating hierarchy, gates and corresponding histograms are color matched. (E) Representative confocal images of the brain. (Left) IBA1 positive cells (green) are not labeled with Tomato (red, middle) while blood vessels are labeled with Tomato (middle). (Right) Merged images display both IBA1 staining and Tomato label. Scale bar = 50 μm. Mice in B-E were 5–6 weeks old at the start of Tamoxifen administration.
 
 The 16 weeks labeling period was followed by an extensive (up to 41 weeks) chase period, during which mice received normal chow (Figure 3B). This labeling strategy resulted in labeling of virtually all candidate HSCs (Figure 3C). The blood of labeled mice was analyzed regularly to determine the fraction of Tomato+ cells in PB cell subsets (Figure 1—figure supplement 1B). Similar to after 1x Tamoxifen labeling, we observed robust label progression into all PB cell subsets, with similar kinetics in between different lineages (Figure 3B). However, a more complete HSC labeling resulted in a somewhat faster and more robust label progression into all PB cell subsets compared to 1x Tamoxifen labeling (Figure 2E). This was most evident for the lymphoid lineages, where the majority of PB cells had been generated from HSCs at the experiment end point upon prolonged Tamoxifen administration, whereas the ratio of labeled lymphocytes vs. labeled HSCs was low (>0,5) even after 83 weeks of chase in 1x Tamoxifen labeled mice (Figure 2B, Figure 2E and Figure 3B).
 
@@ -88,11 +108,19 @@ B1a B cells represent an invariant subtype of B cells with a fetal origin that i
 
 Finally, we investigated adult HSC contribution to microglial cells of the brain, a subset of central nervous system myeloid cells that has been proposed to arise entirely from embryonic precursor cells (Alliot et al., 1999). Evaluations by confocal microscopy of the brain parenchyma revealed no detectable Tomato expression in IBA-1+ microglia (Figure 3E), while Fgd5 expressing endothelial cells (Cheng et al., 2012; Gazit et al., 2014) displayed abundant Tomato expression (Figure 3E middle).
 
-## Native hematopoiesis from HSCs declines with aging
+### Native hematopoiesis from HSCs declines with aging
 
 We next set out to investigate how chronological aging influence on HSC contribution to hematopoiesis. To achieve rapid and robust labeling of HSCs, we labeled juvenile and aged Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice by injecting Tamoxifen for five consecutive days (5x). Labeling was followed by evaluation of the fraction of Tomato positive cells in HSC and MPP fractions of the BM LSK compartment one day after the last Tamoxifen injection.
 
 In aged mice, the initial labeling was highly specific to HSCs, with only low levels of labeling in MPP2 cells. In sharp contrast, a larger fraction of LSKCD150-CD48- MPPs were labeled in juvenile mice (Figure 4A). Next, we correlated how increasing age influences on the HSC generation of other LSK/MPP subsets. Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice between 6 and 96 weeks of age were labeled using a 5x Tamoxifen injection scheme, before evaluation of Tomato label in HSCs/MPP2-421 days later. Ratios of the fraction of labeled MPPs vs. labeled HSCs in corresponding mice was calculated and plotted against mouse age at labeling (Figure 4B). This established that label progression into all MPP subsets in aged mice was substantially lower when compared to young adult mice and further revealed that the HSC contribution to MPPs and MPP3/4s gradually declines with age towards very little replenishment of in particular MPP3/4 in very old age (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cohorts of aged (11–12 months; n = 3) or young (23–25 days; n = 5,) Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were injected with Tamoxifen 5 times on consecutive days and analyzed for Tomato label in LSK-HSPCs on day 6. Bars indicate median %. (B) Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were injected with Tamoxifen for 5 consecutive days and analyzed for Tomato label in LSK-HSPCs 21 days later. The % of Tomato+ cells in MPP2-4 was divided by the % of Tomato+ HSCs in corresponding mice to determine the ratio of Tomato+ cells relative to HSCs. Ratios are plotted according to the age of mice at the time of Tamoxifen injection. (C) Indicated LSK subsets were isolated from Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice and transplanted into WT mice on continuous Tamoxifen. Multilineage hematopoiesis and Tomato contribution was assed in PB 4, 8, 12 and 16 weeks after transplantation. Values in parenthesis indicate the number of mice with Tomato+ offspring. (D) Young (29 days; n = 3) and old (16 months; n = 4) Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were injected once with Tamoxifen and analyzed for Tomato label 18 weeks later. The % of Tomato+ cells in each indicated cell type was divided by the % of Tomato+ HSCs in corresponding mice to determine the ratio of Tomato+ cells relative to HSCs. (E) Model depicting HSC contribution to native hematopoiesis. Arrow weights and arrow lengths indicate the magnitude and the kinetics of HSC contribution to the indicated cell type respectively. The declining HSC contribution to hematopoiesis with age can be traced to a reduced differentiation of HSCs to MPPs (red arrows).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41258/elife-41258-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The percentages of Tomato+ cells among the indicated hematopoietic cells in bone marrow and peripheral blood 18 weeks following injection of Tamoxifen.
 
 To evaluate the functional potential of initially Tomato-labeled MPPs, we FACS sorted HSCs and different MPP subsets isolated from non-labeled Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice and transplanted cells into lethally irradiated wild type mice. Recipient mice were provided Tamoxifen containing food pellets throughout the experiment. We analyzed donor chimerism and Tomato labeled PB cells after repetitive PB blood sampling. As expected, we did not observe any multilineage long-term reconstitution or Tomato+ cells in MPP2/MPP3/4 transplanted mice (Figure 4C). 10 out of 10 HSC transplanted mice were multi lineage reconstituted at 16 weeks post transplantation with high levels of Tomato+ donor cells in all evaluated lineages (Figure 4C). More surprisingly 2 out of 9 MPP transplanted mice displayed donor reconstitution levels > 1% in all lineages 16 weeks after transplantation (Figure 4C). This long-term multilineage reconstitution potential from MPPs was accompanied with robust Tomato labeling among donor cells and revealed that Tomato labeled phenotypic MPPs perform as bona fide HSCs after transplantation (Figure 4C). By contrast, mice that received MPP cells and displayed only transient myeloid reconstitution never displayed any Tomato+ cells. This demonstrates, in young mice, the presence of a minor CD150- HSC activity that appears exclusively coupled to Fgd5 expression.
 
@@ -116,7 +144,601 @@ In summary, we conclude that although the study of native hematopoiesis highligh
 
 ## Materials and methods
 
-## Mouse procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Fgd5-CreERT2</td>
+      <td>PMID:24958848</td>
+      <td>RRID:IMSR_JAX:027789</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26-rtTA; Col1a1-tetO- H2B-mCherry</td>
+      <td>PMID:17554301</td>
+      <td>RRID:IMSR_JAX:014602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26- Lox-Stop- Lox-Tomato</td>
+      <td>PMID:20023653</td>
+      <td>RRID:IMSR_JAX:007905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>B220 PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312994</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: RA3-6B2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>B220 biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312989</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: RA3-6B2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>B220 APC</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312997</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: RA3-6B2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD105 PECy7</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_1027700</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: MJ7/18</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD115 BV605</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2562760</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: CSF-1R</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD11b PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312793</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: M1/70</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD11b biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312787</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: M1/70</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD11b APC</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312795</td>
+      <td rowspan="2">(1:800)</td>
+    </tr>
+    <tr>
+      <td>Clone: M1/70</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD11b APC-Cy7</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_830641</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: M1/70</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD11c BV570</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_10900261</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: N418</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD150 APC</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_493460</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: TC15-12F12.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD150 PE</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313683</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: TC15-12F12.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD16/32 AL700</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_493994</td>
+      <td rowspan="2">(1:100)</td>
+    </tr>
+    <tr>
+      <td>Clone: 93</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD19 PECy7</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_657663</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 1D3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD19 BV-786</td>
+      <td rowspan="2">BD-Horizon</td>
+      <td rowspan="2">RRID:AB_2738141</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 1D3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD25 APC</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_469366</td>
+      <td rowspan="2">(1:100)</td>
+    </tr>
+    <tr>
+      <td>Clone: PC 61.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD31 PerCpCy5.5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2566761</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: MEC13.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD3e PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_312675</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: 145–2 C11</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD3e biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2563947</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 17A2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD3 AL700</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_493697</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 17A2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD4 BV711</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2562607</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: RM4-5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD4 APC eFl780</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_1272219</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: RM4-5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD41 PerCP-eFl710</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_10855042</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: MWReg30</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD45.1 AL700</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_493733</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: A20</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD45.2 PECy7</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_1186098</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 104</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD45.2 PE/ Dazzle</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2564177</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 104</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD45.2 BV785</td>
+      <td rowspan="2">Sony</td>
+      <td rowspan="2">RRID:AB_2562604</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 104</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD45.2 biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313441</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 104</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD48 PECy7</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2075049</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: HM48-1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD48 AL700</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_10612755</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: HM48-1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD5 BV-421</td>
+      <td rowspan="2">BD-Horizon</td>
+      <td rowspan="2">RRID:AB_2737758</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 53–7.3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>CD8 PerCpCy5.5</td>
+      <td rowspan="2">Sony</td>
+      <td rowspan="2">RRID:AB_2075239</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 53–6.7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>c-kit APCeFl780</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_1272177</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 2B8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>c-kit APC</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313221</td>
+      <td rowspan="2">(1:100)</td>
+    </tr>
+    <tr>
+      <td>Clone: 2B8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>F4/80 BV421</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_11203717</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: BM8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Flt3 biotin</td>
+      <td rowspan="2">eBioscience</td>
+      <td rowspan="2">RRID:AB_466600</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: AZF10</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Gr1 PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313375</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: RB6-8C5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Gr1 FITC</td>
+      <td rowspan="2">BD PH</td>
+      <td rowspan="2">RRID:AB_394643</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: RB6-8C5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Gr1 biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313369</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: RB6-8C5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Gr1 BV711</td>
+      <td rowspan="2">Sony</td>
+      <td rowspan="2">RRID:AB_2562549</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: RB6-8C5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>IL7Ra BV510</td>
+      <td rowspan="2">Sony</td>
+      <td rowspan="2">RRID:AB_2564576</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: A7R34</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Ly6G APC/Fire750</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2616733</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 1A8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>NK1.1 PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_493591</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: PK136</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>NK1.1 Pacific Blue</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2132712</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: PK136</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Sca1 Pacific Blue</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2143237</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: E13-161.7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>TcR Vγ3 APC</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_10895900</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: 536</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>TcR γ/δ BV605</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_2563356</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: GL3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Ter119 PECy5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313711</td>
+      <td rowspan="2">(1:400)</td>
+    </tr>
+    <tr>
+      <td>Clone: Ter-119</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Ter119 biotin</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_313705</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: Ter-119</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Antibody</td>
+      <td>Ter119 PerCpCy5.5</td>
+      <td rowspan="2">Biolegend</td>
+      <td rowspan="2">RRID:AB_893636</td>
+      <td rowspan="2">(1:200)</td>
+    </tr>
+    <tr>
+      <td>Clone: Ter-119</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin BV605</td>
+      <td>Biolegend</td>
+      <td></td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin- Saporin</td>
+      <td>PMID: 27272386 Advanced Targeting Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma- Aldrich</td>
+      <td>I.p. 50 mg/kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Ssniff Spezialdiäten</td>
+      <td>Food 2 g/kg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Ssniff Spezialdiäten</td>
+      <td>Food 400 mg/kg Tamoxifen Citrate</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo</td>
+      <td>FlowJo (https://www. flowjo.com/solutions/flowjo)</td>
+      <td>RRID:S CR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft Excel (https://www.microsoft.com/en-gb/)</td>
+      <td>RRID: SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse procedures
 
 For inducible marking of HSCs in vivo, we crossed Fgd5-2A-ZsGreen-CreERT2 mice (Gazit et al., 2014) (JAX 027789) to Rosa26-LoxP-Stop-LoxP-Tomato (Madisen et al., 2010) (JAX 007905) mice, resulting in Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice. For simultaneous in vivo tracking of proliferation history and marking of HSCs, Fgd5CreERT2/+; Rosa26lsl-Tomato/+ mice were crossed with Col1a1tetO-H2B-mCherry/tetO-H2B-mCherry; ROSA26rtTA/rtTA mice (JAX 014602) to generate Fgd5CreERT2/+; Rosa26lsl-Tomato/rtTA; Col1a1tetO-H2B-mCherry/+. Such mice were administered doxycycline in food pellets (2 g/kg; Ssniff Spezialdiäten) for 2 weeks followed by 5 weeks of chase before HSC marking by a single i.p. Tamoxifen injection (50 mg/kg) and analysis 5 days later.
 
@@ -128,28 +750,28 @@ H2B-mCherry labeling in Col1a1tetO-H2B-mCherry/tetO-H2B-mCherry; ROSA26rtTA/rtTA
 
 All mice were maintained at the animal facilities at BMC at Lund University and all experiments were performed with consent from the Malmö/Lund animal ethics board, reference number M186-15.
 
-## Immunophenotyping and FACS
+### Immunophenotyping and FACS
 
 Immunophenotyping by FACS was done as described (Säwén et al., 2016) (Supplementary file 1). For platelet and erythrocyte analysis, 1 μl of whole blood was taken to 300 μl PBS before FACS analysis. Cells were sorted and/or analyzed on a FACS Aria III cell sorter (Becton Dickinson) or on a LSRFortessa (Becton Dickinson).
 
-## B1a, Langerhans cells and Vg3+ T cell analysis
+### B1a, Langerhans cells and Vg3+ T cell analysis
 
 For isolation of peritoneal cells, peritoneal lavage was performed using 10 mL PBS. For isolation of skin epidermal cells, the flank of the mouse was shaved before excision of skin. The skin was incubated for 25 min at 37°C in a dissociation buffer (PBS containing 2.4 mg/ml of dispase (Roche) and 3% FCS) before separation of dermis from the epidermis. Pieces of epidermis were incubated for 30 min at 37°C in digestion buffer (PBS supplemented with 1 mg/ml collagenase IV [Sigma-Aldrich], 100 U/ml DNase I [Sigma], 2.4 mg/ml dispase [Roche] and 3% FBS) and thereafter filtered and stained against indicated markers. Before analysis, cells were incubated with Propidium Iodide (Invitrogen) to exclude dead cells.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were deeply anaesthetized with an overdose of pentobarbital and transcardially perfused with cold saline. Brains were post-fixed for 48 hr in 4% paraformaldehyde (PFA) and incubated in 20% sucrose for 24 hr before being cut in 30 μm thick coronal sections on a microtome. Sections were incubated in blocking solution (5% normal serum and 0.25% Triton X-100 in 0.1 M potassium-phosphate buffered solution) for one hour and subsequently overnight at 4°C with the primary antibody (Iba1 1:1000 Wako). Fluorophore-conjugated secondary antibody (Molecular Probes or Jackson Laboratories) was diluted in blocking solution and applied for 2 hr at room temperature. Tomato label could be detected without any staining. Nuclei were stained with Hoechst (Molecular Probes) for 10 min and sections were mounted with Dabco mounting medium. Images were obtained using confocal microscopy (Zeiss, Germany).
 
-## Cell culture
+### Cell culture
 
 Single LSKCD150+CD48+ cells, MPP3/4s and HSCs were sorted into Terasaki wells containing 20 μl of media (OptiMEM supplemented with 10% FCS, 1:1000 Gentamicin (Invitrogen), 1:100 GlutaMAX (Invitrogen) and 1:500 β-mercaptoethanol (Invitrogen) supplemented with cytokines (mSCF (Peprotech) 100 ng/ml, TPO (Peprotech) 10 ng/ml, IL-3 (Peprotech) 5 ng/ml, EPO (Janssen) 5units/ml, human G-CSF (Amgen) 10 ng/ml). After 6 days of culture at 37°C, wells were scored and evaluated for the presence of megakaryocytes and erythroid cells by visual inspection in microscope.
 
-## Gene expression analyses
+### Gene expression analyses
 
 qRT-PCR analyses using the Fluidigm Biomark HD Platform was done as described (Säwén et al., 2016) (Supplementary file 2). PCA on gene expression data from all reference populations was performed using Clustvis, (http://biit.cs.ut.ee/clustvis/).
 
 Single-cell RNA seq libraries were generated using a Chromium system (10x Genomics) according to the manufacturer’s instructions. Two consecutive sequencing runs were performed to achieve enough sequencing depth and data was combined and further analyzed using the Cell RangerTM pipeline (10x Genomics). The accession number for the single-cell RNA sequencing data reported in this paper is GSE122473.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed using Microsoft Excel (Microsoft) and Graphpad Prism (GraphPad Software). All FACS analyses were performed using Flowjo software (TreeStar).

@@ -17,15 +17,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02ttsq026 Department of Biochemistry, University of Colorado Boulder Boulder United States
-2. https://ror.org/02ttsq026 Institute for Behavioral Genetics, University of Colorado Boulder Boulder United States
-3. https://ror.org/02ttsq026 Biofrontiers Institute, University of Colorado Boulder Boulder United States
+1. Department of Biochemistry, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+2. Institute for Behavioral Genetics, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+3. Biofrontiers Institute, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
 
 † Corresponding author
 
 ## Abstract
 
-Amyotrophic Lateral Sclerosis (ALS) is a fatal neurodegenerative disease characterized by progressive motor neuron dysfunction and loss. A portion of ALS cases are caused by mutation of the proteasome shuttle factor Ubiquilin 2 ( UBQLN2 ), but the molecular pathway leading from UBQLN2 dysfunction to disease remains unclear. Here, we demonstrate that UBQLN2 regulates the domesticated gag-pol retrotransposon ‘paternally expressed gene 10 (PEG10)’ in human cells and tissues. In cells, the PEG10 gag-pol protein cleaves itself in a mechanism reminiscent of retrotransposon self-processing to generate a liberated ‘nucleocapsid’ fragment, which uniquely localizes to the nucleus and changes the expression of genes involved in axon remodeling. In spinal cord tissue from ALS patients, PEG10 gag-pol is elevated compared to healthy controls. These findings implicate the retrotransposon-like activity of PEG10 as a contributing mechanism in ALS through the regulation of gene expression, and restraint of PEG10 as a primary function of UBQLN2.
+Amyotrophic Lateral Sclerosis (ALS) is a fatal neurodegenerative disease characterized by progressive motor neuron dysfunction and loss. A portion of ALS cases are caused by mutation of the proteasome shuttle factor Ubiquilin 2 (UBQLN2), but the molecular pathway leading from UBQLN2 dysfunction to disease remains unclear. Here, we demonstrate that UBQLN2 regulates the domesticated gag-pol retrotransposon ‘paternally expressed gene 10 (PEG10)’ in human cells and tissues. In cells, the PEG10 gag-pol protein cleaves itself in a mechanism reminiscent of retrotransposon self-processing to generate a liberated ‘nucleocapsid’ fragment, which uniquely localizes to the nucleus and changes the expression of genes involved in axon remodeling. In spinal cord tissue from ALS patients, PEG10 gag-pol is elevated compared to healthy controls. These findings implicate the retrotransposon-like activity of PEG10 as a contributing mechanism in ALS through the regulation of gene expression, and restraint of PEG10 as a primary function of UBQLN2.
 
 ## Introduction
 
@@ -35,23 +35,39 @@ In a previous global proteomic study, animal models of UBQLN2-mediated fALS reve
 
 ## Results
 
-## UBQLN2 exclusively regulates degradation of the frameshifted gag-pol PEG10
+### UBQLN2 exclusively regulates degradation of the frameshifted gag-pol PEG10
 
 UBQLN2 is one of five human Ubiquilin (UBQLN) genes that facilitate proteasomal degradation of ‘client’ proteins (Hjerpe et al., 2016; Itakura et al., 2016; Lee and Brown, 2012; Suzuki and Kawahara, 2016; Whiteley et al., 2017; Zheng et al., 2020) via an N-terminal protein domain which binds to the proteasome (Finley, 2009; Saeki, 2017), and a C-terminal domain which binds to ubiquitin (Zhang et al., 2008). All five UBQLNs have similar protein domain architecture and amino acid sequences, and are widely assumed to have shared client populations. The most notable difference in Ubiquilins is their tissue expression profile: UBQLN1 and UBQLN4 are ubiquitously expressed, UBQLN3 and UBQLNL are expressed almost exclusively in the testes, and UBQLN2 is uniquely enriched in neural and muscle tissues (Marín, 2014). Additionally, UBQLN2 is unique among Ubiquilins for containing a small, proline-rich PXX repeat region that is commonly mutated in UBQLN2-mediated fALS (Deng et al., 2011). To test the specificity of the previously observed relationship between UBQLN2 and its client PEG10, human embryonic stem cells (hESCs) lacking UBQLN1, UBQLN2, or UBQLN4 genes (Figure 1—figure supplement 1) were probed by western blot for endogenous PEG10 protein expression (Figure 1A). UBQLN2-/- hESCs were the only cell line that demonstrated an increase in PEG10 protein, indicating that PEG10 is exclusively a client of UBQLN2, and no other UBQLN. Furthermore, only the gag-pol form of PEG10 accumulated, while the gag form remained unchanged upon perturbation of any UBQLN gene (Figure 1B–C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig1-v2.jpg)
+
+**Figure 1.:** (A) Human embryonic stem cells (ESCs) had individual Ubiquilin (UBQLN) genes deleted by CRISPR gene editing and clones were probed by western blot for endogenous PEG10 protein. Full-length gag-pol protein accumulates only upon UBQLN2 loss. n=4 independent experiments. Two independently generated knockout lines are shown for UBQLN1 and UBQLN4; clone identification numbers are shown at top of the blot. (B–C) Quantification of gag-pol (B) and gag (C) abundance in hESC cell lines of (A). PEG10 protein was normalized to Tubulin, then normalized to the average intensity for each individual experiment. n=4 independent experiments and significance was determined by multiple comparisons test. Mean ± SEM is shown. No differences in gag (C) were detected with an ordinary one-way ANOVA. (D) Schematic of PEG10 protein. The first reading frame (gag) contains a capsid-like (CA) region, as well as a retroviral zinc finger (‘CCHC’). The pol-like sequence contains a retroviral-type aspartic protease with one active site ‘DSG’ motif, as well as a C-terminal polyproline repeat domain (PPR). (E) WT or TKO cells stably transfected with doxycycline- (dox-) inducible constructs expressing Myc-UBQLN2, Myc-UBQLN2P497H, or Myc-UBQLN2P506T were probed for endogenous PEG10. (F) Quantitation of gag-pol abundance in mutant UBQLN2-expressing cells. Gag-pol was normalized to Tubulin and to the average intensity of each experiment. Mean ± SEM is shown for each condition. n=5 wells per condition collected from two different passages. (G) Quantitation of gag abundance. Shown is the mean ± SEM of n=5 wells. Multiple comparison tests were run with Bonferroni correction to compare WT and triple knockout (TKO) cells as well as WT OE with the two mutant lines. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Human ESCs had individual UBQLN genes deleted by CRISPR gene editing and clones were probed by western blot for each Individual UBQLN. n=3 representative blots. (B) Uncropped independent replicates of blots from Figure 1A were used for quantification in B-C. Numbers at top of the blot are clone identification numbers.
 
 Next, we sought to determine whether UBQLN2 was sufficient to control PEG10 abundance. To test this, we used a HEK293 cell line lacking expression of three abundant UBQLN genes: UBQLN1, UBQLN2, and UBQLN4 (referred to as triple knockout, or ‘TKO’ cells) (Itakura et al., 2016) and quantified endogenous PEG10 by western blot (Figure 1E). TKO cells had more than twice the amount of PEG10 gag-pol protein in cell lysate as compared to WT cells, while gag protein levels were unchanged (Figure 1F–G). In contrast, TKO cells expressing an inducible WT UBQLN2 construct were able to restrain PEG10 gag-pol to the level seen in WT cells (Figure 1F–G). Paired with the hESC data, we conclude that UBQLN2 is necessary and sufficient for the restriction of PEG10 gag-pol levels.
 
 Mutations in UBQLN2 lead to fALS (Deng et al., 2011; Williams et al., 2012), and are thought to cause both a loss of degradative function (Chang and Monteiro, 2015; Le et al., 2016; Wu et al., 2020) as well as a toxic gain of function by promoting misfolded UBQLN2 self-assembly (Dao et al., 2019; Sharkey et al., 2020; Sharkey et al., 2018). To test the ability of mutant UBQLN2 to restrain PEG10, TKO cells were also complemented with two known ALS-causing UBQLN2 missense mutant alleles (Deng et al., 2011). Expression of any of the UBQLN2 alleles reduced levels of gag-pol compared to TKO cells (Figure 1F), indicating that the two mutant UBQLN2 alleles retain some level of gag-pol degradation. Consistent with a partial loss of function, mutant UBQLN2P506T-expressing cells had significantly higher endogenous levels of PEG10 gag-pol than WT UBQLN2-rescued TKO cells (Figure 1F). In comparison, rescue with UBQLN2P497H was indistinguishable from WT UBQLN2 expression in this assay (Figure 1F). In all cases, gag levels were not dramatically elevated by mutant UBQLN2 expression (Figure 1G).
 
-## PEG10 abundance in UBQLN2-deficient cells reflects defects in proteasome-mediated degradation
+### PEG10 abundance in UBQLN2-deficient cells reflects defects in proteasome-mediated degradation
 
 Ubiquilins regulate protein abundance by facilitating interactions between the proteasome and protein destined for breakdown (Zheng et al., 2020). To examine the degradation of PEG10, we performed a cycloheximide chase assay where WT and TKO cells were transfected with tagged PEG10, protein synthesis was halted with cycloheximide, and protein abundance was followed over time by western blot. The approximate half-life of gag-pol protein in WT cells was between 4 and 8 hr, whereas the half-life of gag-pol in TKO cells was beyond the 8 hr timepoint of our chase experiment (Figure 2A). In contrast, the half-life of gag protein was longer than 8 hr for both WT and TKO cell lines (Figure 2B). In each case, the differences in PEG10 abundance between WT and TKO cells did not reach significance (Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) WT (filled squares) and UBQLN TKO (open squares) HEK cells were transfected with an HA-tagged form of PEG10 expressed under the control of a CMV promoter, treated with cycloheximide, and chased for 8 hr followed by western blot. (A) The half-life of PEG10 gag-pol is between 4–8 hr for WT cells, and more than 8 hr for UBQLN-deficient cells. (B) The half-life of the PEG10 gag is longer than 8 hr for WT and TKO cells. For (A–B) n=3 independent experiments and mean ± SEM is shown. No timepoint was deemed significantly different between WT and triple knockout (TKO) cells by paired t-test; p-value of 8 hr gag-pol timepoint (A) is shown. (C) Schematic of PEG10 protein abundance reporter. PEG10 is fused at the 3´ end to Dendra2, followed by an IRES-CFP. Right: example dot plot showing Dendra2 and CFP signal in transfected cells. (D–E) Dendra2 over CFP MFI ratio for PEG10 gag-pol (D) and gag (E) in WT and UBQLN1, 2, and 4 ‘TKO’ HEK293 cells. TKO cells were rescued with the expression of WT or mutant UBQLN2 alleles as in Figure 1E–G. Significance was determined by multiple comparisons test and mean ± SEM is shown of n=7 independent experiments. (F) WT and TKO cells were transfected with either gag-pol or gag and incubated in the presence or absence of proteasome inhibitor (PI) for 12 hr. The ratio of Dendra2/CFP was determined for each cell population and the normalized ratio of PEG10 for TKO/WT cells is shown. Values over 1.0 indicate dependence on UBQLNs for restriction. Significance was determined by Student’s t-test. n=3 independent experiments. (G) WT and truncation mutant of PEG10 gag-pol fused to the fluorophore Dendra2. ΔPPR is missing the last 27 amino acids containing the polyproline repeat. (H) Protein abundance of PEG10-Dendra2 fusions was determined for WT (filled circles) and TKO (open circles) cells by flow cytometry n=4 independent experiments. Significance was determined by multiple comparisons test and mean ± SEM is shown. (I) TKO/WT abundance values for data in (H). Values over 1.0 indicate dependence on UBQLNs for restriction. Mean ± SEM is shown. Significance was determined by Student’s t-test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example gating strategy of abundance reporter test. ‘Cells’ are gated (top), then gated on the CFP +population (bottom, with Dendra2-green fluorescence of CFP +population shown at right). A custom parameter of Dendra2/CFP is then generated on a per-cell basis and the geometric mean fluorescence intensity (MFI) of this custom parameter is averaged per sample. (B) Model of degradation pathways of gag-pol with and without the PPR. Gag-pol containing the polyproline region (PPR) requires UBQLN2 for delivery to the proteasome. Without the PPR, gag-pol can be degraded by typical proteasomal degradation pathways. (C) Western blot data of cycloheximide (CHX) chase of ΔPPR PEG10 in WT (black square) and triple knockout (TKO) (outline square) HEK cells over 8 hr. Shown is the mean ± SEM from three independent experiments.
 
 Because of the difficulty in performing kinetic assays on proteins with long half-lives, we sought an alternative readout of protein abundance that could be linked to protein degradation. In line with recently used reporters (Itakura et al., 2016; Manford et al., 2021; Whiteley et al., 2021), PEG10 was fused at the C-terminus to the fluorescent protein Dendra2 (Klementieva et al., 2016), followed by an IRES-CFP cassette, to generate a transfection-controlled measure of protein abundance (Figure 2C, Figure 2—figure supplement 1A). PEG10-reporter constructs were then transfected into WT and TKO HEK293 cells to examine the abundance of PEG10 upon UBQLN deficiency (Figure 1D–E). TKO cells accumulated significant amounts of Dendra2-tagged PEG10 gag-pol compared to WT cells (Figure 2D), while Dendra2-tagged PEG10 gag was unchanged (Figure 2E). In this model system, re-introduction of WT UBQLN2 expression was not sufficient to reduce gag-pol levels to that of WT cells (Figure 2D), but was significantly better than mutant UBQLN2 bearing a P497H or P506T mutation (Figure 2D). Neither mutation had an effect on gag protein levels (Figure 2E). From this, we conclude that both disease-associated mutations result in a loss of UBQLN2’s ability to restrain transfected PEG10 gag-pol levels.
 
 To determine how the proteasome contributes to UBQLN2-dependent restriction of gag-pol abundance, cells were transfected with Dendra2-tagged constructs and incubated in the presence or absence of the proteasome inhibitor, bortezomib. After 12 hr, the cells were harvested for analysis by flow cytometry. In the absence of proteasome inhibition, gag-pol protein accumulates in UBQLN TKO cells as compared to WT cells, shown by a ratio >1 of protein abundance (Figure 2F). Upon treatment with a proteasome inhibitor, a significant proportion of UBQLN-dependence is lost (Figure 2F), indicating that much of the accumulation is proteasome-dependent. In contrast, gag protein did not accumulate in TKO cells and was not significantly changed when cells were treated with a proteasome inhibitor.
 
-## Contribution and conservation of the C-terminal polyproline region (PPR) to PEG10 restriction
+### Contribution and conservation of the C-terminal polyproline region (PPR) to PEG10 restriction
 
 As UBQLN2 selectively regulated proteasomal degradation of the gag-pol form of PEG10, we hypothesized that a unique region of the pol domain rendered it dependent on UBQLN2 for its degradation. The gag region contains a retroviral capsid domain and CCHC-type zinc finger (Figure 1D). The pol region of PEG10 is less well understood but contains an aspartic protease domain (Clark et al., 2007) and a 27 AA C-terminal PPR region containing twelve prolines in tandem, and 18 in total (Clark et al., 2007; Figure 1D). To identify a region of PEG10 necessary for UBQLN-dependent degradation, either PEG10 gag-pol, or a construct lacking the C-terminal PPR, was expressed in HEK293 cells (Figure 2G). While gag-pol protein was more abundant in TKO cells compared to WT cells, PEG10 lacking the PPR failed to accumulate (Figure 2H–I). Removal of the PPR resulted in insignificant changes to protein abundance in WT cells, and a decrease in protein abundance in TKO cells (Figure 2H). From this, we conclude that the PPR contributes to PEG10’s ability to evade traditional proteasomal degradation pathways: when present, it renders the cell dependent on UBQLNs to facilitate degradation. When absent, the protein is capable of being degraded by pathways shared with WT cells, including traditional proteasomal degradation (Figure 2—figure supplement 1B).
 
@@ -61,15 +77,15 @@ UBQLN2 is the most recent gene duplication event of the UBQLN family. The UBQLN2
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig3-v2.jpg)
 
-**Figure 3.:** (A) Evolutionary schematic of PEG10 protein in eutherian and marsupial mammals. Monotremes (bottom) do not contain PEG10 or UBQLN2 genes. PEG10 and UBQLN2 appearances are highlighted with arrows. PEG10 schematic highlights the lack of C-terminal polyproline repeat region in marsupials. (B) Amino acid alignment of mammalian PEG10 from a diversity of mammalian species showing general conservation and lack of C-terminal polyproline domain in marsupials (starred). Colors represent the conservation of aligned amino acids; the proline is yellow. † highlights the rodent-specific extension within pol. (C) Western blot demonstrating expression of mammalian PEG10 gag and gag-pol in WT cells. PEG10 was detected by N-terminal HA-tag. (D–E) Dendra2-green over CFP MFI ratios for PEG10 from various placental mammals (D) and the marsupial Koala (E) in WT (filled circles) and triple knockout (TKO) (open circles) cells. Shown is the mean ± SEM from four independent experiments, with triplicate transfection wells for each. Human is shown in gray and is duplicated from Figure 2 for ease of visualization. Statistics were determined by multiple comparisons tests. (F) The ratio of Dendra2/CFP was determined for each cell population in (D–E) and the normalized ratio of PEG10 for TKO/WT cells is shown. Values over 1.0 indicate dependence on UBQLNs for restriction. Significance was determined by unpaired (human) or paired (koala) Student’s t-test. n=4 independent experiments. For all experiments, the mean ± SEM is shown. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 3—source data 1.Figure 3C.
+**Figure 3.:** (A) Evolutionary schematic of PEG10 protein in eutherian and marsupial mammals. Monotremes (bottom) do not contain PEG10 or UBQLN2 genes. PEG10 and UBQLN2 appearances are highlighted with arrows. PEG10 schematic highlights the lack of C-terminal polyproline repeat region in marsupials. (B) Amino acid alignment of mammalian PEG10 from a diversity of mammalian species showing general conservation and lack of C-terminal polyproline domain in marsupials (starred). Colors represent the conservation of aligned amino acids; the proline is yellow. † highlights the rodent-specific extension within pol. (C) Western blot demonstrating expression of mammalian PEG10 gag and gag-pol in WT cells. PEG10 was detected by N-terminal HA-tag. (D–E) Dendra2-green over CFP MFI ratios for PEG10 from various placental mammals (D) and the marsupial Koala (E) in WT (filled circles) and triple knockout (TKO) (open circles) cells. Shown is the mean ± SEM from four independent experiments, with triplicate transfection wells for each. Human is shown in gray and is duplicated from Figure 2 for ease of visualization. Statistics were determined by multiple comparisons tests. (F) The ratio of Dendra2/CFP was determined for each cell population in (D–E) and the normalized ratio of PEG10 for TKO/WT cells is shown. Values over 1.0 indicate dependence on UBQLNs for restriction. Significance was determined by unpaired (human) or paired (koala) Student’s t-test. n=4 independent experiments. For all experiments, the mean ± SEM is shown. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Human PEG10 gag-pol self-processes like a retrotransposon
+### Human PEG10 gag-pol self-processes like a retrotransposon
 
 The highly specific regulation of gag-pol by UBQLN2 led us to examine the unique biological properties of this protein in more depth. The pol region of PEG10 contains a retroviral aspartic protease domain with a classic ‘DSG’ active site motif (Figure 1D; Clark et al., 2007), which in the ancestral Ty3 retrotransposon results in self-cleavage of the capsid (CA) and nucleocapsid (NC) protein fragments with distinct functions (Clemens et al., 2011; Kirchner and Sandmeyer, 1993; Larsen et al., 2008; Sandmeyer and Clemens, 2010). Like Ty3, PEG10 has been reported to self-cleave (Clark et al., 2007; Lux et al., 2005), and recent reports suggested that gag was cleaved between the capsid and zinc finger regions to generate two resultant gag protein fragments (Golda et al., 2020). Transfection with an HA-tagged form of PEG10 showed that in addition to the expected gag and gag-pol bands, there were two HA-positive lower molecular weight bands, which we hypothesized were products of self-cleavage (Figure 4A). When the active site aspartate of the PEG10 protease was mutated to alanine to disrupt proteolytic activity (gag-polASG), we observed a total disappearance of the lower molecular weight HA-tagged bands (Figure 4A), indicating that the protein products were dependent on PEG10 protease activity. Detailed biochemical analysis and bioinformatic prediction were then performed to identify the precise sites of PEG10 self-cleavage (Figure 4B–D). Together, the results suggested that PEG10 cleaves itself in two locations: AA114-115, and AA260-261. The N-terminal cleavage halves the capsid region, and the C-terminal cleavage generates a zinc-finger containing fragments reminiscent of retrotransposon and retroviral nucleocapsids (Figure 4E). Furthermore, like its retrotransposon ancestors, PEG10 gag-pol was capable of cleaving PEG10 gag in trans (Figure 4F), which suggested that a large pool of proteolytic products of gag could be generated from gag-pol activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig4-v2.jpg)
 
-**Figure 4.:** (A) Mutation of the active site aspartic acid in the protease domain results in the disappearance of cleaved PEG10 products. N-terminally HA-tagged PEG10 was expressed either as WT or ‘ASG’ protease mutant in cells and probed by western blot for HA. Based on estimated molecular weight, the fragments are estimated to encompass gag-capsid (CA) and gag-capsid(NTD) (CANTD) fragments. n=4 independent experiments. (B) HA-tagged, C-terminally truncated forms of PEG10 were expressed in cells to approximate self-cleavage sites via Molecular weight. n=3 independent experiments. (C) Kyte-Doolittle (K-D) hydropathy analysis of Ty3 (left, similar to that in Kirchner and Sandmeyer, 1993) and PEG10 nucleocapsid (right) and CANTD (bottom) cleavages. Hydropathy measurements for each amino acid were plotted on a scale from P9 to P9’. Amino acid locations are shown below the amino acid alignment. Estimated cleavage locations by molecular weight in Figure 3D are close in proximity to those estimated by K-D analysis. (D) Structure prediction of PEG10 gag (blue N-terminus) shows that estimated cleavage sites appear accessible by protease. AA114-115 (purple) and AA260-261 (magenta) are highlighted to show estimated cleavages. (E) Model of PEG10 self-cleavage. PEG10 cleaves gag to generate a liberated nucleocapsid (NC) fragment. PEG10 also cleaves the gag-CA domain into CANTD and CACTD. Dotted lines indicate that the fragments are not visible by western blot due to the absence of the N-terminal HA tag. (F) PEG10 gag is capable of being cleaved by PEG10 gag-pol in trans. HA-tagged and PEG10-Dendra2 fusion constructs were co-transfected into cells and the presence of HA-tagged cleavage products was assessed by western blot. n=2 independent experiments. (G) Presence of cleaved PEG10 products in virus-like particles (VLPs). VLPs were isolated from PEG10-transfected HEK cells by ultracentrifugation and probed for cleavage products by western blot. Tubulin was used as a control for contamination of the conditioned medium with cell fragments. n=3 independent experiments. (H) Western blot of accompanying cell lysate from VLP preparations. n=3 independent experiments. (I) Visualization of the endogenously-cleaved NC fragment by western blot. HEK cells were transfected with the listed constructs and prepared for western blot using a custom-generated antibody against PEG10 AA259-325. HA-tagged NC can be seen at ~14 kDa, and endogenously cleaved NC is at ~11 kDa and is only visible upon expression of cleavage-competent gag-pol.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4F.Figure 4—source data 4.Figure 4G.Figure 4—source data 5.Figure 4H.Figure 4—source data 6.Figure 4I.
+**Figure 4.:** (A) Mutation of the active site aspartic acid in the protease domain results in the disappearance of cleaved PEG10 products. N-terminally HA-tagged PEG10 was expressed either as WT or ‘ASG’ protease mutant in cells and probed by western blot for HA. Based on estimated molecular weight, the fragments are estimated to encompass gag-capsid (CA) and gag-capsid(NTD) (CANTD) fragments. n=4 independent experiments. (B) HA-tagged, C-terminally truncated forms of PEG10 were expressed in cells to approximate self-cleavage sites via Molecular weight. n=3 independent experiments. (C) Kyte-Doolittle (K-D) hydropathy analysis of Ty3 (left, similar to that in Kirchner and Sandmeyer, 1993) and PEG10 nucleocapsid (right) and CANTD (bottom) cleavages. Hydropathy measurements for each amino acid were plotted on a scale from P9 to P9’. Amino acid locations are shown below the amino acid alignment. Estimated cleavage locations by molecular weight in Figure 3D are close in proximity to those estimated by K-D analysis. (D) Structure prediction of PEG10 gag (blue N-terminus) shows that estimated cleavage sites appear accessible by protease. AA114-115 (purple) and AA260-261 (magenta) are highlighted to show estimated cleavages. (E) Model of PEG10 self-cleavage. PEG10 cleaves gag to generate a liberated nucleocapsid (NC) fragment. PEG10 also cleaves the gag-CA domain into CANTD and CACTD. Dotted lines indicate that the fragments are not visible by western blot due to the absence of the N-terminal HA tag. (F) PEG10 gag is capable of being cleaved by PEG10 gag-pol in trans. HA-tagged and PEG10-Dendra2 fusion constructs were co-transfected into cells and the presence of HA-tagged cleavage products was assessed by western blot. n=2 independent experiments. (G) Presence of cleaved PEG10 products in virus-like particles (VLPs). VLPs were isolated from PEG10-transfected HEK cells by ultracentrifugation and probed for cleavage products by western blot. Tubulin was used as a control for contamination of the conditioned medium with cell fragments. n=3 independent experiments. (H) Western blot of accompanying cell lysate from VLP preparations. n=3 independent experiments. (I) Visualization of the endogenously-cleaved NC fragment by western blot. HEK cells were transfected with the listed constructs and prepared for western blot using a custom-generated antibody against PEG10 AA259-325. HA-tagged NC can be seen at ~14 kDa, and endogenously cleaved NC is at ~11 kDa and is only visible upon expression of cleavage-competent gag-pol.
 
 Traditionally, retrotransposon and retrovirus gag-pol self-cleavage is necessary to complete the viral lifecycle. For example, proteolytic liberation of the Ty3 retrotransposon nucleocapsid from gag is necessary for proper capsid or virus-like particle (VLP) assembly (Larsen et al., 2008; Sandmeyer and Clemens, 2010). The PEG10 gag protein has been shown to form VLPs (Abed et al., 2019; Segel et al., 2021) that resemble those formed by retrotransposons and the gag-like gene Arc/Arg3.1 Ashley et al., 2018; Pastuzyn et al., 2018; therefore, we hypothesized that PEG10 self-cleavage may be necessary for proper VLP formation and release. PEG10 was overexpressed in cells and VLPs were harvested from the cultured supernatant by ultracentrifugation. Abundance of VLPs was then probed by western blot. Self-cleavage was not a prerequisite for PEG10 VLP release, as gag and gag-polASG were capable of releasing VLPs with similar efficiency (Figure 4G–H).
 
@@ -81,15 +97,23 @@ Proteolytic self-processing enables novel functions for domains found in the gag
 
 **Figure 5.:** (A) Localization of paternally expressed gene 10 (PEG10) fragments using tagged antibodies. Cells were transfected with HA-tagged PEG10 constructs, stained, and imaged by confocal microscopy. Scale bar 10 μm. HA has been colored red and DAPI blue in merged images. Shown are representative cells from 10 fields of view of each construct. n=3 independent experiments. (B) Localization of PEG10 NC fragment using custom NC antibody. Cells were transfected either with HA-tagged NC or untagged NC construct and stained with the listed antibodies. Scale bar 10 μm. HA has been colored red, NC green, and DAPI blue in merged images. Shown are representative cells from 10 fields of view of each construct. n=1 experiment.
 
-## PEG10 nucleocapsid induces changes in gene expression
+### PEG10 nucleocapsid induces changes in gene expression
 
 The nucleocapsid fragment contains a retroviral CCHC-type zinc finger that has been reported to bind DNA (Steplewski et al., 1998) as well as RNA (Abed et al., 2019; Segel et al., 2021). This, paired with the movement of liberated nucleocapsid to the nucleus, raised the possibility that PEG10 self-cleavage may induce unique transcriptional changes. To test this hypothesis, HEK cells were transfected with either PEG10 gag-pol, gag, or nucleocapsid, and changes in gene expression were analyzed by RNA-seq. Transfection with PEG10 gag-pol induced the most gene expression changes, followed by a nucleocapsid (Figure 6A), with gag-transfected cells showing the fewest changes compared to the control (Figure 6—source data 1). Cluster profiling identified distinct groups of genes differentially regulated by specific PEG10 constructs. The first two groups consisted of genes that changed upon any type of PEG10 overexpression (Figure 6B), suggesting generalized responses to virus-like protein expression. One example of a gene upregulated by all forms of PEG10 expression was TXNIP, a regulator of oxidative stress, which is also elevated in multiple neurodegenerative conditions (Tsubaki et al., 2020; Figure 6C). The largest cluster profile (Group 3) consisted of genes upregulated upon gag-pol and nucleocapsid transfection, but not gag transfection, highlighting the ability of the small nucleocapsid fragment to induce transcriptional changes in a manner similar to full-length gag-pol protein (Figure 6A–B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig6-v2.jpg)
+
+**Figure 6.:** (A) Heatmap showing Euclidean clustering of expression profiles of HEK cells transfected with PEG10 constructs with top 200 altered genes between gag-pol and negative control plasmid. (B) Cluster profiling of gene expression effects as measured by RNA-seq analysis upon paternally expressed gene 10 (PEG10) construct overexpression. The number of genes in each group is listed in parentheses. Data are shown as box and whiskers min to max with the line at the median. (C) Normalized counts of TXNIP transcript from RNA-seq analysis of three biological replicates from PEG10 transfected or control transfected cells. (D) Top gene expression changes in NC-transfected cells by GO-term enrichment analysis. The top five GO-terms ranked by adjusted p-value are shown. Adjusted p-value is shown by color, and the size of the datapoint reflects the number of genes enriched in the pathway. (E) Heatmap of genes from the Axon extension GO-term showing Row z-score for each gene in the pathway. (F) Normalized counts of DCLK1 from RNA-seq analysis of PEG10-transfected cells. (G) RNA-seq data from the Target Amyotrophic Lateral Sclerosis (ALS) dataset of post-mortem lumbar spinal cords were analyzed for DCLK1 (left) and TXNIP (right) counts. NNC = non-neurological control. n=17 NNC and 127 ALS samples. For (C,F), data are shown as min-max floating bars with the line at mean and significance were determined by DESeq2. For (G), data are shown as a 5–95% box and whisker plot, and significance was determined by DESeq2. (H) Splice pattern changes upon PEG10 overexpression compared to control. Nucleocapsid expression does not alter patterns of splice alteration compared to gag-pol or gag expression. Splice changes were quantified and classified by MAJIQ analysis (Vaquero-Garcia et al., 2016). Total splice alteration counts are shown below in pie charts. ir = intron retention; afe/ale = alternative first/last exon; mxe = mutually exclusive exons. (I) Oligo-dT FISH showed no changes to bulk mRNA trafficking upon PEG10 overexpression. Scale bar 10 μm. Shown are representative images from 10 recorded fields of view. n=3 independent experiments. (J) Quantification of oligo-dT signal in the nucleus versus cytosol for each condition imaged in (I) showing no changes to mRNA trafficking upon PEG10 overexpression. Quantification was performed on a minimum of 60 images from each condition and is representative of 3 independent experiments. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Top gene expression changes by GO-term enrichment analysis. The top five GO-terms enriched upon the comparison of gag-pol (A) and gag (B) to control cells are shown with enriched GO-term on the left. Adjusted p-value is shown by color, and the size of the datapoint reflects the number of genes enriched in the pathway.
 
 Pathway analysis of differentially expressed genes also underscored the similarities in gene regulation between gag-pol and nucleocapsid expression. Gag-pol expression resulted in an overrepresentation of pathways including female-specific sex characteristics, consistent with the role of PEG10 in placental development (Abed et al., 2019; Ono et al., 2006), as well as those involved in axon extension and remodeling (Figure 6—figure supplement 1A). Nucleocapsid expression resulted in an even stronger overrepresentation of neuronal pathways, especially pathways involved in axon guidance and extension (Figure 6D). One notable example of an axon remodeling gene was DCLK1, which was significantly elevated in nucleocapsid and gag-pol, but unchanged in gag-expressing cells (Figure 6E–F, Figure 6—source data 1). Gag expression resulted in fewer transcript changes and did not alter neuronal gene expression, highlighting the unique effects of gag-pol and nucleocapsid (Figure 6—figure supplement 1B). Our data suggested a direct link between PEG10 abundance and changes in neuronal gene expression. To explore whether these transcripts are also altered in diseased neural tissue, we analyzed transcriptional data from a large cohort of post-mortem ALS patient spinal cord samples and observed similarly elevated levels of TXNIP and DCLK1 transcripts (Figure 6G), suggesting that ALS involves similar pathways of transcriptional disturbance.
 
 To better understand the transcriptional effects of PEG10 overexpression, splicing differences were examined across gag-pol, gag, and NC expression conditions. Consistent with changes to transcript abundance, both nucleocapsid and gag-pol expression resulted in splicing alteration of 150–200 genes, whereas gag had fewer effects (Figure 6—source data 1). However, there were no global changes to patterns of transcript splicing upon nucleocapsid expression (Figure 6H), nor were there global changes to mRNA trafficking (Figure 6I–J), indicating that the changes to transcriptional abundance are gene-specific or are unrelated to splicing and trafficking patterns.
 
-## PEG10 gag-pol protein is elevated in human ALS tissues
+### PEG10 gag-pol protein is elevated in human ALS tissues
 
 To examine PEG10 abundance in the context of neurodegenerative disease, we performed immunofluorescence on fixed lumbosacral spinal cord tissue from ALS patients and matched controls. Microtubule-associated protein 2 (MAP2) was used to distinguish the white and gray matter of the spinal cord (Figure 7A). PEG10 staining was apparent in the gray matter of the spinal cord (Figure 7A), and was enriched in the posterior horn where somatosensory neurons are located (Figure 7B) as well as in what appear to be motor neuron bodies of the anterior horn (Figure 7C, arrows). To examine the abundance of PEG10 more closely, we compared the intensity of PEG10 signal in 11 sALS cases as compared to nine non-neurological controls (post-mortem samples from individuals who did not have any known neurological disease) and saw no dramatic differences in intensity or localization (Figure 7D–F).
 
@@ -100,6 +124,14 @@ To examine PEG10 abundance in the context of neurodegenerative disease, we perfo
 A limitation of PEG10 immunofluorescence staining was a lack of antibody specificity: the anti-PEG10 antibodies tested all detected an epitope found in the gag region, meaning that immunofluorescence signal was generated from both gag and gag-pol forms of PEG10. Further, because the relative ratio of gag:gag-pol abundance has been estimated at ~60–80% gag (Clark et al., 2007; Lux et al., 2010), the majority of PEG10 signal is generated from gag protein. Because of the observed role of gag-pol in generating NC, we sought to specifically quantify the presence of gag-pol in human tissue. Unfixed post-mortem samples of the lumbosacral spinal cord were obtained for global proteomic analysis using a tandem mass tagging (TMT) approach for liquid-chromatography mass spectrometry (LC-MS). Samples were generated from two non-neurological controls, six sALS cases, and one UBQLN2P497H-mediated fALS case.
 
 Traditional data-dependent proteomics, such as those used in previous PEG10 proteomic experiments (Whiteley et al., 2021), only fragment a subset of peptide ions as predetermined by the intensity of ions in MS1. As a result, the quantification of peptides favors those that are more highly abundant. PEG10 is expressed at very low levels in spinal cord lysate, and in our experience is often below the technical limit of detection by LC-MS. Therefore, we adapted a technique used for single-cell (Budnik et al., 2018) or small-cell population experiments (Yi et al., 2019) by adding a carrier, or ‘spike-in’ channel that triggers quantitation of PEG10 specifically (Figure 8A). The carrier channel, containing 95% spinal cord lysate and 5% cell lysate from HEK cells transfected with PEG10, drives the detection of PEG10 peptides by increasing the number of PEG10 peptide ions in MS1. The ‘spike-in’ channel is uniquely identified among spinal cord samples by labeling all samples analyzed in the experiment with a tandem mass tag (TMT) approach.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic illustrating multiplexed global proteomic strategy to quantify PEG10 protein from the human lumbar spinal cord. Two non-neurological controls (NNC), one fALS case with a Ubiquilin 2 (UBQLN2) mutation, and six sporadic ALS cases were combined with a ‘spike-in’ PEG10 channel containing 5% lysate from cells transfected with HA-PEG10 gag-pol and 95% spinal cord lysate to normalize proteomic background complexity. All ten samples were labeled with tandem mass tags (TMT) and run as a 10-plex on LC-MS2. (B–D) Abundance of neurogranin (B), SV2A (C), and SNAP25 (D), in the human spinal cord. Mean ± SEM is shown and plotted for each marker. A significant decrease in neurogranin was detected between non-neurological controls NNC (n=2) and all ALS patients (n=7) by unpaired t-test (E–F) Abundance of PEG10 gag (E), and pol (F), in the human spinal cord. Mean ± SEM is shown. Significance was determined by Student’s t-test. (G) RNA-Seq counts of PEG10 from post-mortem lumbar spinal cord tissue of a larger cohort of patients with Classical ALS (n=127) or Non-Neurological Controls (NNC, n=17). Data are shown as 5–95% box and whisker plot and significance was determined by DESeq2. (H) Global proteomic analysis with 7465 individual proteins quantified. All ALS samples were grouped together, and two NNC were grouped to generate log2 ratio of protein abundance and significance calculation by homoscedastic unpaired t-test. PEG10 pol is highlighted in blue, and PEG10 gag (not significant) is highlighted in pink. (I) Quantification of neurogranin intensity (y-axis) and PEG10 pol peptides’ intensity (x-axis) are plotted for all ine spinal cord samples to demonstrate the relationship between the two markers. (J) Quantification of neurofilament medium intensity (y-axis) and PEG10 pol peptides’ intensity (x-axis) are plotted for all nine spinal cord samples to demonstrate the relationship between the two markers. *p<0.05.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/79452/elife-79452-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–B) Schematic of PEG10 protein from gag (A) and pol (B) with regions highlighted where peptides were quantified by global proteomic analysis. More detail on quantified peptides can be found in Figure 8—source data 1. Black: Non-neurological control, blue: UBQLN2-fALS, purple: sporadic Amyotrophic Lateral Sclerosis (ALS). Peptide abundance as measured by the mass spectrometer is shown on the y-axis, with a mean ± SEM of replicates.
 
 Overall, 7465 unique proteins were quantified across our samples. We observed changes in ALS tissues consistent with previously identified synaptic biomarkers of ALS and neurodegeneration, such as a significant reduction of neurogranin (Kvartsberg et al., 2019; Vijayakumar et al., 2019; Figure 8B–D, Figure 8—source data 1). Seven peptides were identified from the gag region of PEG10, and three peptides were identified from the pol region (Figure 8—figure supplement 1). While gag was not changed in UBQLN2-mediated or sporadic ALS samples (Figure 8E), peptides originating from PEG10 pol were significantly enriched in ALS compared to healthy controls (Figure 8F). This was specific to the protein level, as PEG10 transcript counts were not elevated in ALS (Figure 8G). When PEG10 gag and pol were considered as unique proteins (two peptides per protein minimum, Figure 8—source data 1), PEG10 pol was among the most upregulated proteins in all ALS cases compared to healthy controls (Figure 8H). Its abundance in spinal cord tissue was also associated with a decrease in the intensity of neurogranin and neurofilament medium (Figure 8I–J), both of which are biomarkers for neurological disease (Hellwig et al., 2015; Yuan and Nixon, 2021). Taken together, the accumulation of PEG10 gag-pol in ALS tissue, paired with our findings of PEG10 self-cleavage and effects on gene expression, suggest that this pathway may represent a novel pathological contribution to the development of ALS with promise for novel drug development strategies.
 
@@ -123,7 +155,311 @@ Additional studies are required to determine the precise contribution of PEG10 t
 
 ## Materials and methods
 
-## Custom antibody generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>Rosetta</td>
+      <td>Sigma</td>
+      <td>70954–3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Fisher Scientific</td>
+      <td>18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293 WT and UBQLN1, 2, 4 TKO cells, inducible UBQLN2 expression</td>
+      <td>Itakura et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Human ESCs (H9) WT and UBQLN1, 2, or 4 sinbgle KO cells</td>
+      <td>Harvard Medical School Cell Biology Initiative for Genome Editing and Neurodegeneration</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-UBQLN1/2 (Mouse Monoclonal M03)</td>
+      <td>Abnova</td>
+      <td>H00029978; AB_627374</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-UBQLN4 (Rabbit Polyclonal)</td>
+      <td>GeneTex</td>
+      <td>GTX85267; AB_10725990</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Myc tab (Mouse Monoclonal GT002)</td>
+      <td>Sigma</td>
+      <td>SAB2702192</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PEG10 (Rabbit Polyclonal)</td>
+      <td>Proteintech</td>
+      <td>14412–1-AP; AB_10694427</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA (Mouse Monoclonal HA-7)</td>
+      <td>Sigma</td>
+      <td>H3663; AB_262051</td>
+      <td>WB, IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NC (Rabbit Polyclonal)</td>
+      <td>Thermo Fisher (custom)</td>
+      <td>n/a</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-tubulin (Mouse Monoclonal DM1A)</td>
+      <td>Novus</td>
+      <td>NB100-690; AB_521686</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-MAP2 (Chicken Polyclonal 28225)</td>
+      <td>Biolegend</td>
+      <td>822501; AB_2564858</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>α-mouse IgG 680 (Goat Polyclonal)</td>
+      <td>Licor</td>
+      <td>926–68070; AB_10956588</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>α-mouse IgG 800 (Goat Polyclonal)</td>
+      <td>Licor</td>
+      <td>926–32210; AB_621842</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>α-rabbit IgG 680 (Goat Polyclonal)</td>
+      <td>Licor</td>
+      <td>926–68071; AB_10956166</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>α-rabbit IgG 800 (Goat Polyclonal)</td>
+      <td>Licor</td>
+      <td>926–32211; AB_621843</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa568 α-mouse (Goat Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11004; AB_2534072</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa568 α-chicken (Goat Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11041; AB_2534098</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa647 α-rabbit (Goat Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A32733; AB_AB2633282</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Saccharomyces cerevisiae)</td>
+      <td>LIFEACT (Abp140 AA1-17)</td>
+      <td>GenBank; Riedl et al., 2008</td>
+      <td>n/a</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>gag-pol; PEG10 (AA1-708)</td>
+      <td>GenBank</td>
+      <td>NP_055883.2</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>gag-polASG;PEG10 (AA1-708)* D370A</td>
+      <td>GenBank</td>
+      <td>NP_055883.2</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Gag; PEG10 (AA1-325)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>CA; PEG10 (AA1-259)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>NC; PEG10 (AA260-325)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Tag-less NC; PEG10 (AA260-325)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>gag111; PEG10(AA1-111)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>gag-pol; PEG10 (AA1-1006)</td>
+      <td>GenBank</td>
+      <td>NP_570947.2</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>gag-polASG;PEG10 (AA1-1006)* D420A</td>
+      <td>GenBank</td>
+      <td>NP_570947.2</td>
+      <td>pCDNA3.1</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>gag-pol Dendra2; PEG10 (AA1-708)-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_055883.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>gag-polASG Dendra2; PEG10 (AA1-708)* D370A-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_055883.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ΔPPR Dendra2; PEG10 (AA1-681)-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_055883.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Macaca Mulatta)</td>
+      <td>gag-pol Dendra2; PEG10 (AA1-742)-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_001165893.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Bos taurus)</td>
+      <td>gag-pol Dendra2; PEG10 (AA1-788)-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_001120682.1</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>gag-pol Dendra2; PEG10 (AA1-1006)-Dendra2</td>
+      <td>GenBank</td>
+      <td>NP_570947.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phascolarctos cinereus)</td>
+      <td>gag-pol Dendra2; PEG10 (AA1-624)-Dendra2</td>
+      <td>GenBank</td>
+      <td>XM_021000084.1 (+downstream CDS continuation to pol stop codon)</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Phascolarctos cinereus)</td>
+      <td>gag-pol Dendra2+HsPPR; Pc PEG10 (AA1-624)+Hs PEG10 (AA682-708) Dendra2</td>
+      <td>GenBank</td>
+      <td>XM_021000084.1 (+downstream CDS continuation to pol stop codon) And NP_055883.2</td>
+      <td>pDendra2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>6XHIS-SUMO2-NC; 6 X His tag + Sumo2 tag+PEG10 (AA260-325)</td>
+      <td>GenBank</td>
+      <td>NP_001035242.1</td>
+      <td>pETSUMO2</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>cycloheximide</td>
+      <td>Sigma</td>
+      <td>01810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>MP Biomedicals</td>
+      <td>IC0218385905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Prolong Gold DAPI anti-fade mounting media</td>
+      <td>Invitrogen</td>
+      <td>P36941</td>
+      <td>Mounting medium for coverslips</td>
+    </tr>
+  </tbody>
+</table>
+
+### Custom antibody generation
 
 The custom antibody used to detect the isolated NC fragment was generated via ThermoFisher. PEG10 Nucleocapsid (NC) was cloned into pET-SUMO2, and the resulting recombinant plasmid was transformed in Rosetta cells. A single colony was used to inoculate Luria broth (LB) with carbenicillin (100 µg/mL, Gold Biotechnology) and chloramphenicol (20 µg/mL, Gold Biotechnology) and grown overnight with shaking at 37 °C. Following this initial growth, 5–10 mL of the culture was used to inoculate 750 mL of LB supplemented with the same antibiotics and incubated at 37 °C with shaking until an OD600 = 0.6–0.8 was achieved. Expression was induced by the addition of 0.1 M IPTG and cultures were left shaking overnight at 16 °C. Cells were harvested by pelleting at 4500 × g for 30 min at 4 °C.
 
@@ -135,33 +471,33 @@ The dialyzed sample was subjected to another round of IMAC, with nickel-NTA resi
 
 Antibody generation via ThermoFisher involved conjugation to KLH immunogen and subsequent immunization of rabbits. Rabbits were immunized and boosted three times with protein. Rabbits were bled at 72 days and antibody reactivity was confirmed by ELISA. After ELISA confirmation, the antibody from the collected serum was column purified for downstream use.
 
-## Cell lines
+### Cell lines
 
 WT HEK293 cells and HEK cells lacking UBQLNs 1,2, and 4 (‘TKO’) were a gift from Dr. Ramanujan Hegde of the Medical Research Council Laboratory of Molecular Biology. Their identity was authenticated by examination of morphology, Ubiquilins 1, 2, and 4 expressions, and PEG10 expression by western blot. They are tested annually for mycoplasma contamination. WT and TKO HEK293 cells were cultured in Dulbecco’s modified Eagle’s medium (Gibco, cat #12800–082) supplemented with 1% penicillin/streptomycin (Gibco, cat #15140163), 1% L-glutamine (R&D Systems, Inc, cat #R90210), and 10% FBS (Peak Serum, cat #PS-FB3). HEK293 TKO cells stably transfected with doxycycline- (dox-) inducible constructs expressing Myc-UBQLN2, or Myc-UBQLN2P497H or Myc-UBQLN2P506T were provided by Dr. Hegde via Dr. Miguel Prado and are described in Itakura et al. Dox-inducible cells were cultured in DMEM (Gibco, cat #12800–082) supplemented with 1% penicillin/streptomycin (Gibco, cat #15140163), 1% L-glutamine (R&D Systems, Inc, cat #R90210), and 10% tet-system approved FBS (Gibco, cat #A4736301), as contaminating doxycycline in standard FBS was sufficient to stimulate high levels of UBQLN2 expression. Leaky expression of Myc-UBQLN2 constructs in a dox-free medium resulted in endogenous levels of tagged UBQLN2 expression.
 
 Human H9 hESCs lacking either UBQLN1, 2, or 4, were generated at the Harvard Medical School Cell Biology Initiative for Genome Editing and Neurodegeneration according to Whiteley et al., 2021. They were verified as mycoplasma-free upon shipment to CU Boulder. Their identity was authenticated by examination of morphology upon passaging, and expression of Ubiquilins 1, 2, and 4. hESCs were cultured in either E8 (Gibco, cat #A1517001) or TeSR-E8 medium (StemCell Technologies, cat #05990) on six-well tissue culture plates with Matrigel (Corning, cat #354277, Lot #0048006). Medium was changed daily. Cells were passaged by treatment in 0.5 mM EDTA (Sigma Aldrich, cat #E5134-500G) in sterile D-PBS (Gibco, cat #21600069) and replated in media at an approximate 1:6 dilution. The remaining non-passaged cells were washed in D-PBS three times and pelleted at 300 × g for analysis.
 
-## Cell transfection
+### Cell transfection
 
 WT or TKO HEK293 cells were grown to 70% confluency in 12-well plates and transfected with 1 μg plasmid DNA in Lipofectamine 2000 (Invitrogen, cat #11668027) and Opti-Mem medium (Gibco, cat #11058021), according to manufacturer’s instructions. After 48 hr, cells were harvested for western blot, qPCR, RNA-seq, or immunofluorescence. For protein degradation studies, cells were treated with 100 µg/mL cycloheximide (Sigma) starting at 24 hr post-transfection.
 
-## Human tissue samples
+### Human tissue samples
 
 Human tissue samples were acquired from the Target ALS Multicenter Human Postmortem Tissue Core. Fixed, paraffin-embedded full-thickness sections of the lumbosacral spinal cord were obtained from 11 sporadic ALS patients and nine non-neurological controls. Samples were from a mixture of males and females.
 
 Unfixed, full-thickness sections of the spinal cord from the lumbosacral region were obtained from two non-neurological controls, one ALS patient with a pathogenic UBQLN2 mutation, and seven sporadic ALS cases. All cases were from females. More detail can be found in Figure 8—source data 1.
 
-## Cloning
+### Cloning
 
 All constructs were designed with a CMV promoter using Gibson or restriction cloning (see list of constructs) and transformed into chemically competent DH5ɑ E. coli cells (Invitrogen). Transformed E. coli were plated on either 50 μg/mL kanamycin (Teknova, cat #K2151) or 100 μg/mL carbenicillin (Gold Biotechnology, cat #C-103–5) LB agar (Teknova, cat #L9115) plates overnight at 37 °C. Single colonies were picked and grown overnight in 5 mL LB Broth (Alfa Aesar, cat #AAJ75854A1) with kanamycin or carbenicillin at 37 °C with shaking at 220 rpm. The following day, shaking cultures were mini-prepped (Zymo, cat #D4212) and sent for Sanger Sequencing (Azenta). Sequence-verified plasmids were then midi-prepped (Zymo, cat #D4201) for use in transfection.
 
-## Flow cytometry
+### Flow cytometry
 
 WT and TKO HEK293 cells were transfected in 96-well plates. Cells were harvested 48 hr after transfection in FACS Buffer (D-PBS (Gibco, cat #21600069), 2% FBS (Peak Serum, cat #PS-FB3), 0.1% Sodium Azide (Millipore Sigma, cat #26628-22-8)), and analyzed on a BD FACSCelesta. Triplicate wells were transfected within a plate to serve as technical replicates, and experiments were performed four independent times. FlowJo software was used for data analysis.
 
 Cells were first gated in the FSC-A vs. SSC-A using the polygon gating tool. Within the ‘cells’ population, CFP-positive cells were gated on 405 nm vs. SSC-A. The Dendra2 Green/CFP parameter was created by deriving a novel parameter of the 488 references by the 405 references, and making a logarithmic scale with a minimum of 0.0001 and a maximum of 10. The geometric mean of the custom Dendra2 Green/CFP parameter from the CFP positive population was exported and used to generate graphs. For Dendra2 Green/CFP from HEK cell UBQLN2, rescue experiments in Figure 2, biological replicates from experiments performed on different days were normalized based on a ‘day average’ value for all samples.
 
-## Western blotting
+### Western blotting
 
 Cell pellets were collected by centrifugation, washed in PBS, and lysed in urea buffer (8 M urea (Fisher Chemical, cat #U153), 75 mM NaCl (Honeywell Fluka, cat #6003219), 50 mM HEPES (Millipore Sigma, cat #H3375) pH 8.5, 1 x tab cOmplete Mini EDTA-free protease inhibitor cocktail tablet (Roche, cat #11836170001)). Lysate was centrifuged for 10 min at 21,300 × g and the supernatant was collected.
 
@@ -169,39 +505,39 @@ Protein was quantified by BCA (Pierce, cat #23227) and 1 x Laemmli sample buffer
 
 Membranes were blocked using 1:1 LICOR blocking buffer (cat #927–70001) and 1 x TBS (50 mM Tris-Cl (MP Biomedicals, cat #MP04816100) pH 7.4, 150 mM NaCl), for 30 min at room temperature. Membranes were incubated in primary antibody overnight at 4 °C and washed in 1 x TBST (1 x TBS, 0.1% Tween VWR, cat #M147-1L) in 3-5 min intervals. Membranes were then incubated in LICOR secondary antibody for 30 min in the dark. After 3 x more washes, banding patterns were visualized using LICOR Odyssey CLx and data analysis was performed using LICOR ImageStudio Software. Each protein quantification was normalized to the average intensity across all samples in each replicate western blot to correct for technical variation across experiments.
 
-## Virus-like particle isolation
+### Virus-like particle isolation
 
 HEK293 cells (RRID: CVCL_0045) were plated in a six-well plate at a density of 4 × 105 cells per well. 24 hr after plating, cells were transfected and media was replaced 6 hr later. Cultured media was harvested 48 hr after transfection and pre-cleared by centrifugation at 2000 × g for 15 min at 4 °C. In parallel, cell lysate was collected for western blot as previously described. The VLP fraction was isolated by ultracentrifugation (Beckman Coulter L8-70M Preparative Ultracentrifuge) at 134,000 × g for 4 hr with a 30% sucrose cushion. After ultracentrifugation, media and sucrose were aspirated, and the VLP-containing pellet was resuspended in an 8 M urea lysis buffer. VLP production was analyzed by western blot.
 
-## Phylogenetic alignment of PEG10
+### Phylogenetic alignment of PEG10
 
 PEG10 protein sequences were curated from NCBI for selected eutherian mammals and manually curated from marsupial mRNA sequences from NCBI due to a lack of automatically annotated frameshifting sites. Sequences were then aligned with Geneious 3.0 using a MUSCLE-based algorithm with 8 iterations. Alignment was visualized with unique colors for each amino acid.
 
-## Structure prediction
+### Structure prediction
 
 Structure prediction for the PEG10 gag protein (AA1-325) was performed using the Phyre 2.0 webserver (Kelley et al., 2015) using the intensive modeling mode. 243 of 325 amino acids were modeled with >90% confidence, with amino acids 89–314 predicted with confidence >99% against reference structures including Saccharomyces Ty3 (PDB 6R24), Drosophila and Rattus Arc (PDB 6TAR, 6TAQ, and 6GSE), HIV (PDB 6RWG), and a partial structure of Homo sapiens PEG10 gag (PDB 7LGA). The predicted PEG10 structure was visualized using UCSF Chimera.
 
-## Immunofluorescence
+### Immunofluorescence
 
 WT HEK293 cells were either plated from 24-well plates onto Alcian blue-treated (Newcomer Supply, cat #1002 A) round coverslips (Electron Microscopy Sciences, cat #7223101SP) and transfected for 48 hr before harvesting, or were plated 24 post-transfection onto coverslips and harvested for staining after 24 hr. Coverslips were fixed at the time of harvest in 4% PFA (Thermo Scientific, cat #28906). Cells were then either submerged in 1% PFA for overnight storage or washed three times in 1 x PBS. Cells were permeabilized in 0.25% Triton-X (Sigma Aldrich, cat #X100) in PBS and incubated in blocking buffer (7.5% BSA (Gibco, cat #15260037) diluted to 5% in PBS, 0.1% tween) for 30 min. Cells were incubated for 1 hr in primary antibody before three 5 min washes in 1 x PBS-T (0.1% Tween in PBS). Cells were then incubated in secondary antibodies for 1 hr in the dark. Cells underwent three more 5 min 1 x PBS-T washes and were then rinsed three times in DEPC water. After sufficient drying, 5–10 mL of Prolong Gold DAPI anti-fade mounting media (Invitrogen, cat #P36941) was added to coverslips. Coverslips were then mounted on clear microscope slides and cured overnight in the dark at room temperature before imaging.
 
 For staining of the human spinal cord, sections of paraffin-embedded, fixed lumbosacral spinal cord tissue obtained from Target ALS were de-paraffinized and heat-induced antigen retrieval was performed by incubating slides in sodium citrate at 90 °C for 20 min. Sections were incubated overnight in primary antibodies. The following day samples were washed 3 x with PBS containing 0.1% Tween (PBS-T) and stained with secondary antibody for 1 hr in the dark at room temperature followed by three washes with PBS-T and one wash with DEPC water. Coverslips were mounted using Prolong Gold DAPI anti-fade mounting media and cured overnight prior to imaging. Microscopy was performed using a Nikon Widefield microscope maintained by the BioFrontiers Advanced Light Microscopy Core using a 10 x objective and NIS Elements software.
 
-## Oligo dT fluorescence in situ hybridization
+### Oligo dT fluorescence in situ hybridization
 
 Transfected WT HEK293 cells were cultured on round coverslips (Electron Microscopy Sciences, cat #7223101SP) and hybridized according to Stellaris protocol for hybridization of adherent cells (Biosearch Technologies). A T30 Poly A probe (Stellaris, Biosearch Technologies, Custom oligo) was used to detect polyA mRNA tails as a measure of total mRNA by cellular compartment. 10 images were obtained for each transfection condition and randomly assigned image names for blind quantification. Distinct single cells were quantified using FIJI software XOR function to quantify the mean signal intensity of the nucleus and cytoplasm. The nucleus to cytoplasmic ratio was calculated for a minimum of 60 cells for each condition.
 
-## Microscopy
+### Microscopy
 
 Confocal microscopy was performed on a Nikon AR1 LSM confocal microscope maintained by the BioFrontiers Advanced Light Microscopy Core using a 20 x Air objective and NIS Elements Nikon software. Acquisition intensity and pinhole size were fixed across samples to control for signal intensity and variability. For visualization purposes only, the image intensity of visualized channels was increased from acquisition parameters according to FIJI software parameters.
 
 For imaging of human spinal cord sections, slides were imaged using a Nikon widefield microscope maintained by the BioFrontiers Advanced Light Microscopy Core with a 10 x objective and NIS Elements Nikon software. Acquisition intensity was fixed across samples. The fluorescence images were analyzed using home-built code in the MATLAB (R2021b) language. Due to the large file sizes of the raw data, the images were loaded in quadrants, and each quadrant was reduced in size by calculating the average intensity of 2 × 2 pixel blocks. The reduced images were then reconstituted and saved as uncompressed TIFF files. These reduced files were used in the rest of the analysis. We validated that this approach did not lead to major differences in the final data by comparing the mean intensity measured using a full-sized image and the mean intensity of our reduced version. For each image, a binary mask to identify regions of interest was generated using thresholding the DAPI-stained nuclear image. Manual corrections were made as necessary to remove erroneously identified regions, e.g., pieces of detached tissue. The average fluorescence intensities of MAP2 and PEG10 signals within the masked region were then calculated.
 
-## Sample preparation for RNA sequencing
+### Sample preparation for RNA sequencing
 
 HEK293 cells were grown in 12-well plates, transfected for overexpression of genes of interest, and collected for RNA isolation 48 hr later. Cells were pelleted and RNA was extracted using the RNEasy Mini Kit (Qiagen, cat #74106) with on-column DNAse digestion (Qiagen, 79256). Isolated RNA was quantified and quality controlled by nanodrop (Thermo Fisher), concentration was normalized, and samples were stored at –80 °C.
 
-## RNA-sequencing analysis
+### RNA-sequencing analysis
 
 Poly A Selected Total RNA Library paired-end sequencing was performed at Anschutz Medical Campus on an Illumina NovaSEQ 6000. Sequencing produced between 24–104 million filtered paired-end reads across all samples. Quality of reads was determined using FastQC (the average reads/base quality for all samples in the lane was at least 88% ≥Q30) and reads were mapped to GRCh38.p13 (Frankish et al., 2019) using STAR version 2.7.3 (Dobin et al., 2013). STAR alignment.bam files were indexed and sorted before count matrix generation using Samtools 1.8 and the featureCounts software package (Li et al., 2009).
 
@@ -211,23 +547,23 @@ Pathway analysis was performed using the enrichGO program (Yu et al., 2015) on a
 
 Splicing analysis was performed using the MAJIQ Quantifier followed by the MAJIQ Builder to determine differentially spliced genes (Vaquero-Garcia et al., 2016), and visualized using the MAJIQ Voila Viewer with a Δψ threshold of 0.1 and significance of 0.05. Splice variant classification analysis was performed using the MAJIQ classifier (Vaquero-Garcia et al., 2021) with permission and assistance from Dr. Yoseph Barash.
 
-## Target ALS dataset RNA-seq analysis
+### Target ALS dataset RNA-seq analysis
 
 Raw RNA-seq reads from the lumbar spinal cord of the Target ALS: New York Genome Center dataset was obtained; at the time of analysis, this dataset included 127 Classical/Typical ALS cases, 17 non-neurological controls (deceased donors who did not exhibit neurological disease), and two known UBQLN2-mediated cases. Classical/Typical ALS refers to the process of the disease course and is comprised of a majority of sporadic ALS cases unless specifically noted to have the sequenced mutation of known ALS susceptibility genes, of which UBQLN2 was included. Approximately half of the samples were male/female. Reads were aligned to the human genome (hg38) using STAR version 2.5.2b as above (Dobin et al., 2013), and analyzed in Rstudio with DESeq2 (Love et al., 2014) including sex and ‘Subject.Group.Subcategory’ (disease type) as major variables. Significance of gene expression changes was determined with a p-adjusted cutoff of 0.05, and normalized counts was used for the visualization of target genes.
 
-## Sample preparation for mass spectrometry analysis
+### Sample preparation for mass spectrometry analysis
 
 Human spinal cord samples from two non-neurological controls, six sporadic, classical ALS cases, and one case of UBQLN2-mediated fALS were first sectioned on a cryostat (Leica) to ensure even tissue representation of protein samples. Ten to twenty 15 µm-thickness sections from each patient were homogenized in 8 M urea lysis buffer, the lysate was spun at 15,000 rpm for 15 min at 4 ° C to remove insoluble material, and supernatant protein content was quantified by BCA analysis (Pierce, cat #23227). Separately, HEK cells were transfected with Homo sapiens HA-PEG10 gag-pol, lysed 48 hr later, and mixed in a 95:5 ratio of sALS spinal cord lysate to HEK cell lysate. Approximately 100–200 μg of each sample was aliquoted and delivered to the Proteomics and Mass Spectrometry Core Facility in the Department of Biochemistry at the University of Colorado, Boulder, for TMT labeling.
 
 Human lumbar spinal cord tissue samples in 8 M urea were reduced and alkylated with the addition of 5% (w/v) sodium dodecyl sulfate (SDS), 10 mM tris(2-carboxyethylphosphine) (TCEP), 40 mM 2-chloroacetamide, 50 mM Tris-HCl, pH 8.5 and incubated shaking at 1000 rpm at room temperature for 60 min then cleared via centrifugation at 17,000 × g for 10 min at 25 °C. Lysates were digested using the SP3 method (Hughes et al., 2014). Briefly, 200 µg carboxylate-functionalized speedbeads (Cytiva Life Sciences) were added to approximately 100 µg protein lysate. Addition of acetonitrile to 80% (v/v) induced binding to the beads, then the beads were washed twice with 80% (v/v) ethanol and twice with 100% acetonitrile. Proteins were digested in 50 mM Tris-HCl buffer, pH 8.5, with 1 µg Lys-C/Trypsin (Promega) and incubated at 37 °C overnight. Tryptic peptides were desalted using HLB Oasis 1 cc (10 mg) cartridges (Waters) according to the manufacturer’s instructions and dried in a speedvac vacuum centrifuge. Approximately 30 µg of the tryptic peptide from each human tissue sample was labeled with TMT 10 plex (Thermo Scientific) reagents according to the manufacturer’s instructions. The multiplexed sample was cleaned up with an HLB Oasis 1 cc (10 mg) cartridge. Approximately 50 µg multiplexed peptides were fractionated with high pH reversed-phase C18 UPLC using a 0.5 mm × 200 mm custom packed Uchrom C18 1.8 µm 120 Å (nanolcms) column with mobile phases 10 mM aqueous ammonia, pH10 in water and acetonitrile (ACN). Peptides were gradient eluted at 20 µL/min from 2 to 40% ACN in 40 min concatenating for 12 fractions using a Waters M-class UPLC (Waters). Peptide fractions were then dried in a speedvac vacuum centrifuge and stored at –20 °C until analysis.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 High pH peptide fractions were suspended in 3% (v/v) ACN, 0.1% (v/v) trifluoroacetic acid (TFA) and approximately 1 µg tryptic peptides were directly injected onto a reversed-phase C18 1.7 µm, 130 Å, 75 mm × 250 mm M-class column (Waters), using an Ultimate 3000 nanoUPLC (Thermos Scientific). Peptides were eluted at 300 nL/min with a gradient from 4 to 6% ACN over 120 min then to 25% ACN in 5 min and detected using a Q-Exactive HF-X mass spectrometer (Thermo Scientific). Precursor mass spectra (MS1) were acquired at a resolution of 120,000 from 350 to 1500 m/z with an automatic gain control (AGC) target of 3E6 and a maximum injection time of 50 milliseconds. Precursor peptide ion isolation width for MS2 fragment scans was 0.7 m/z with a 0.2 m/z offset, and the top 15 most intense ions were sequenced. All MS2 spectra were acquired at a resolution of 45,000 with higher energy collision dissociation (HCD) at 32% normalized collision energy. An AGC target of 1E5 and 100 milliseconds maximum injection time was used. Dynamic exclusion was set for 20 s with a mass tolerance of ±10 ppm. Raw files were searched against the Uniprot Human database UP000005640 downloaded November 2, 2020 using MaxQuant v.1.6.14.0. Cysteine carbamidomethylation was considered a fixed modification, while methionine oxidation and protein N-terminal acetylation were searched as variable modifications. All peptide and protein identifications were thresholded at a 1% false discovery rate (FDR).
 
 For visualization of data, likely contaminants, reverse peptides, and proteins quantified by only one peptide were removed. p-values were calculated by Student’s t-test (unpaired, homoscedastic variance) combining both non-neurological control samples and combining all ALS cases (including sporadic and UBQLN2-mediated).
 
-## Statistical analysis
+### Statistical analysis
 
 For western blots, values (normalized to Tubulin and batch-corrected) were compared using the appropriate statistical test by determining normality using a Shapiro-Wilk test and variance using Bartlett’s test. For values that were normally distributed and had equal variance, a standard one-way ANOVA was first used to compare differences between the means across all groups. If all groups were not normally distributed a Kruskal-Wallis test was used. For all experimental approaches, appropriate multiple comparison tests were utilized to determine which groups significantly varied. For normal distributions, a Bonferroni’s multiple comparisons test was used to compare means directly. For non-normally distributed results, a Dunn’s multiple comparisons test was used.
 

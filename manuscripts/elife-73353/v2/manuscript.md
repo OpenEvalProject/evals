@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00190t495 National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States
-2. https://ror.org/00fq5cm18 National Institute on Drug Abuse, National Institutes of Health Baltimore United States
-3. https://ror.org/01cwqze88 National Institute of Mental Health, National Institutes of Health Bethesda United States
-4. https://ror.org/056d84691 Department of Clinical Neuroscience, Karolinska Institutet Solna Sweden
-5. https://ror.org/01an3r305 Department of Psychology, University of Pittsburgh Pittsburgh United States
+1. National Center for Complementary and Integrative Health, National Institutes of Health Bethesda United States ([ROR:00190t495](https://ror.org/00190t495))
+2. National Institute on Drug Abuse, National Institutes of Health Baltimore United States ([ROR:00fq5cm18](https://ror.org/00fq5cm18))
+3. National Institute of Mental Health, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+4. Department of Clinical Neuroscience, Karolinska Institutet Solna Sweden ([ROR:056d84691](https://ror.org/056d84691))
+5. Department of Psychology, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 
@@ -41,17 +41,539 @@ We asked how instructions and learning combine to dynamically shape pain and pai
 
 ## Results
 
-## Heat intensity effects on pain, autonomic responses, and brain responses to noxious heat are similar across groups
+### Heat intensity effects on pain, autonomic responses, and brain responses to noxious heat are similar across groups
 
 Prior to the fMRI experiment, all participants underwent an adaptive pain calibration procedure (Atlas et al., 2010; Mischkowski et al., 2019; Dildine et al., 2020; Amir et al., 2021) to identify each participant’s pain threshold, tolerance, and the reliability of the temperature-pain association (i.e. r2; see Materials and methods). Consistent with our IRB protocol, four participants were dismissed prior to the fMRI portion of the experiment due to low reliability (n=3) or pain tolerance above 50℃ (n=1). For each participant who continued to the fMRI phase, we used linear regression to identify temperatures associated with ratings of low pain (M=42.04 °C, SE = 0.43), medium pain (M=44.71 °C, SE = 0.37), and high pain (M=47.30 °C, SE = 0.30). There were no differences between groups in the reliability of the association between temperature and pain, as measured by r2 (M=0.803, SE = 0.022; p>0.2), or in temperatures applied during the task (all p’s>0.1).
 
 We next examined pain as a function of heat intensity (i.e. temperature level: low, medium, or high) during the fMRI experiment (see Figure 2A). Bayesian model comparison indicated that the best model included fixed effects of Heat Intensity, Cue, Phase, and Group and all possible interactions, along with random intercepts and slopes for all factors. All models revealed significant effects of Heat Intensity, Cue, Phase, Cue x Phase, and Heat Intensity x Cue x Phase interactions across participants (see Table 1). We also observed a significant Group x Cue x Phase interaction and a significant Group x Heat Intensity x Cue x Phase interaction, which were likely to be driven by the critical medium heat trials, as reported below. Bayesian posterior estimates indicated that the effects of Heat Intensity, Cue x Phase interactions, and Heat Intensity x Cue x Phase interactions were practically significant with enough evidence to reject the null (<1% in ROPE), while the main effect of Phase supported the null (i.e. no effect of Phase; 99.8% in ROPE), despite being statistically significant. All other effects were of undecided significance (i.e. not enough evidence to accept or reject the null); complete results are reported in Table 1. We observed similar results when we restricted analyses to pain ratings from the 36 participants with useable fMRI data; see Supplementary file 1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig2-v2.jpg)
+
+**Figure 2.:** (A-D) There were no differences between groups in the effect of heat intensity on pain (A), skin conductance responses (SCR; B), or pattern expression in the neurologic pain signature (NPS; C) or stimulus-intensity independent pain signature (SIIPS; D). All outcomes showed robust effects of heat intensity (see Tables 1–2 and Figure 2—source data 1). Data were visualized using the R toolboxes ggplot2 (Wickham, 2016) and Raincloud plots (Allen et al., 2021). (E-H): Whole-brain voxel-wise analyses revealed robust effects of variations in stimulus intensity on heat-evoked activation within brain regions involved in pain, controlling for group (E), which were confirmed with separate analyses within the Instructed Group (F) and the Uninstructed Group (G). FDR-corrected p-values for contrasts E-G exceeded P<.005 and therefore we used maps thresholded at P<.001 for inference. Only the left hippocampus and right S1 showed significant group differences at corrected levels (H). Differences were driven by temperature-induced deactivation in the Uninstructed Group, as depicted in G. For additional regions identified in voxelwise results, see Figure 2—figure supplement 1 and Figure 2—source data 2 and 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Results are reported in Figure 2—source data 1.
+
+**Table 1.**
+ Heat intensity effects on pain across all participants (n=40)*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Predictors</th>
+      <th colspan="3">Estimates</th>
+      <th colspan="3">Confidence intervals</th>
+      <th colspan="3">P-Value / probability of direction</th>
+      <th colspan="3">Bayesian estimates</th>
+    </tr>
+    <tr>
+      <th>LMER†</th>
+      <th>NLME‡</th>
+      <th>BRMS§</th>
+      <th>LMER†</th>
+      <th>NLME‡</th>
+      <th>BRMS§</th>
+      <th>LMER†</th>
+      <th>NLME‡</th>
+      <th>BRMS§</th>
+      <th>% in ROPE</th>
+      <th>Rhat</th>
+      <th>ESS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td>3.64</td>
+      <td>3.646</td>
+      <td>3.641</td>
+      <td>3.40–3.88</td>
+      <td>[3.408, 3.885]</td>
+      <td>[ 3.438, 3.849]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1.005</td>
+      <td>1597.656</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>0.11</td>
+      <td>0.101</td>
+      <td>0.112</td>
+      <td>–0.13–0.35</td>
+      <td>[–0.144, 0.347]</td>
+      <td>[–0.092, 0.318]</td>
+      <td>0.356</td>
+      <td>0.409</td>
+      <td>80.83%</td>
+      <td>82.783</td>
+      <td>1.001</td>
+      <td>1632.917</td>
+    </tr>
+    <tr>
+      <td>Heat Level</td>
+      <td>2.09</td>
+      <td>2.078</td>
+      <td>2.083</td>
+      <td>1.90–2.27</td>
+      <td>[1.897, 2.258]</td>
+      <td>[ 1.929, 2.238]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4205.817</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>0.32</td>
+      <td>0.293</td>
+      <td>0.323</td>
+      <td>0.17–0.47</td>
+      <td>[0.148, 0.437]</td>
+      <td>[ 0.203, 0.447]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>12.692</td>
+      <td>1</td>
+      <td>9174.052</td>
+    </tr>
+    <tr>
+      <td>Phase</td>
+      <td>0.1</td>
+      <td>0.107</td>
+      <td>0.099</td>
+      <td>0.01–0.19</td>
+      <td>[0.022, 0.193]</td>
+      <td>[ 0.026, 0.170]</td>
+      <td>0.026</td>
+      <td>0.014</td>
+      <td>98.40%</td>
+      <td>99.842</td>
+      <td>1.001</td>
+      <td>7792.54</td>
+    </tr>
+    <tr>
+      <td>Group x Heat Level</td>
+      <td>–0.04</td>
+      <td>–0.064</td>
+      <td>–0.042</td>
+      <td>–0.23–0.14</td>
+      <td>[–0.245, 0.116]</td>
+      <td>[–0.195, 0.113]</td>
+      <td>0.636</td>
+      <td>0.484</td>
+      <td>67.15%</td>
+      <td>97.225</td>
+      <td>1.001</td>
+      <td>4410.973</td>
+    </tr>
+    <tr>
+      <td>Group x Cue</td>
+      <td>0.1</td>
+      <td>0.115</td>
+      <td>0.098</td>
+      <td>–0.05–0.25</td>
+      <td>[–0.029, 0.259]</td>
+      <td>[–0.025, 0.220]</td>
+      <td>0.197</td>
+      <td>0.119</td>
+      <td>90.05%</td>
+      <td>96.508</td>
+      <td>1</td>
+      <td>8745.241</td>
+    </tr>
+    <tr>
+      <td>Heat Level x Cue</td>
+      <td>0.16</td>
+      <td>0.128</td>
+      <td>0.158</td>
+      <td>–0.03–0.35</td>
+      <td>[–0.055, 0.311]</td>
+      <td>[ 0.002, 0.307]</td>
+      <td>0.097</td>
+      <td>0.169</td>
+      <td>95.27%</td>
+      <td>79.3</td>
+      <td>1</td>
+      <td>17260.576</td>
+    </tr>
+    <tr>
+      <td>Group x Phase</td>
+      <td>0</td>
+      <td>–0.001</td>
+      <td>–4.95E-04</td>
+      <td>–0.09–0.09</td>
+      <td>[–0.086, 0.085]</td>
+      <td>[–0.074, 0.071]</td>
+      <td>0.999</td>
+      <td>0.985</td>
+      <td>50.43%</td>
+      <td>100</td>
+      <td>1</td>
+      <td>8609.937</td>
+    </tr>
+    <tr>
+      <td>Heat Level * Phase</td>
+      <td>–0.06</td>
+      <td>–0.055</td>
+      <td>–0.059</td>
+      <td>–0.15–0.04</td>
+      <td>[–0.139, 0.03]</td>
+      <td>[–0.133, 0.017]</td>
+      <td>0.23</td>
+      <td>0.205</td>
+      <td>89.04%</td>
+      <td>100</td>
+      <td>1</td>
+      <td>15179.351</td>
+    </tr>
+    <tr>
+      <td>Cue * Phase</td>
+      <td>0.58</td>
+      <td>0.615</td>
+      <td>0.575</td>
+      <td>0.39–0.77</td>
+      <td>[0.424, 0.806]</td>
+      <td>[ 0.410, 0.731]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0.025</td>
+      <td>1</td>
+      <td>9874.616</td>
+    </tr>
+    <tr>
+      <td>(Group * Heat Level) * Cue</td>
+      <td>–0.04</td>
+      <td>–0.033</td>
+      <td>–0.036</td>
+      <td>–0.22–0.15</td>
+      <td>[–0.216, 0.15]</td>
+      <td>[–0.185, 0.112]</td>
+      <td>0.709</td>
+      <td>0.724</td>
+      <td>64.35%</td>
+      <td>98.242</td>
+      <td>1</td>
+      <td>17007.967</td>
+    </tr>
+    <tr>
+      <td>(Group * Heat Level) * Phase</td>
+      <td>–0.03</td>
+      <td>–0.037</td>
+      <td>–0.029</td>
+      <td>–0.12–0.07</td>
+      <td>[–0.121, 0.047]</td>
+      <td>[–0.105, 0.049]</td>
+      <td>0.546</td>
+      <td>0.390</td>
+      <td>73.22%</td>
+      <td>100</td>
+      <td>1</td>
+      <td>14459.934</td>
+    </tr>
+    <tr>
+      <td>(Group *Cue) * Phase</td>
+      <td>0.23</td>
+      <td>0.249</td>
+      <td>0.231</td>
+      <td>0.04–0.42</td>
+      <td>[0.058, 0.44]</td>
+      <td>[ 0.073, 0.392]</td>
+      <td>0.017</td>
+      <td>0.011</td>
+      <td>98.79%</td>
+      <td>52.8</td>
+      <td>1</td>
+      <td>10768.063</td>
+    </tr>
+    <tr>
+      <td>(Heat Level *Cue) *Phase</td>
+      <td>1.79</td>
+      <td>1.774</td>
+      <td>1.782</td>
+      <td>1.60–1.97</td>
+      <td>[1.59, 1.958]</td>
+      <td>[ 1.634, 1.939]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>21294.817</td>
+    </tr>
+    <tr>
+      <td>(Group *Heat Level *Cue) *Phase</td>
+      <td>–0.2</td>
+      <td>–0.167</td>
+      <td>–0.203</td>
+      <td>–0.39 to –0.01</td>
+      <td>[–0.351, 0.018]</td>
+      <td>[-0.359,–0.054]</td>
+      <td>0.038</td>
+      <td>0.076</td>
+      <td>98.48%</td>
+      <td>63.242</td>
+      <td>1</td>
+      <td>23048.272</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table presents results of linear mixed models predicting subjective pain as a function of Heat Level (High vs Medium vs Low), Group (Instructed vs Uninstructed), Cue (Original High vs Original Low), and Phase (Original vs Reversed). All predictors were dummy-coded and mean centered to facilitate interpretation of coefficients and interactions. Model specification was based on Bayesian model comparison. We compared three types of linear mixed models: frequentist analysis using the “lmer” function of lme4 (Bates et al., 2015), frequentist analysis using the “lme” function of nlme (Pinheiro et al., 2021) accounting for autoregression, and Bayesian estimation using mildly informative conservative priors (i.e. centered on 0 for all effects). Effects that are both statistically and practically significant are bolded, whereas effects that are statistically significant but not practically significant (i.e. >2.5% in the region of partial equivalence (ROPE)) are italicized.†Estimates based on a linear mixed effects model implemented in the “lmer” function of lme4 (Bates et al., 2015) using the following code: lmer(Pain~Group*Templevels*Cue*Phase+(1+Templevels + Cue*Phase||Subject)). Confidence intervals were obtained using the “tab_model” function from sjPlot (Lüdecke, 2021) and corresponds to the 95% confidence interval.‡Estimates based on a linear mixed effects model implemented in the “lme” function of nlme (Pinheiro et al., 2021) including autoregression using the following code: lme(Pain~Group*Templevels*Cue*Phase, random = ~1 + Templevels +Cue*Phase|Subject, correlation = corAR1(), na.action=na.exclude). Confidence intervals were obtained using the ‘intervals’ function from nlme (Pinheiro et al., 2021) and corresponds to the 95% confidence interval.§Estimates based on Bayesian model linear mixed models using the “brms” function (Bürkner, 2017) using the following code: brm Pain~Group*Templevels*Cue*Phase+(1+Templevels + Cue*Phase|Subject,prior = set_prior("normal(0,2.5)", class="b"), save_all_pars = TRUE, silent = TRUE, refresh = 0, iter = 4000, warmup = 1000). Posterior estimates, including the probable direction (which is roughly equivalent to 1- frequentist p-value), 89% confidence intervals, and the ROPE were obtained using the “describe_posterior” function from the package BayesTestR (Makowski et al., 2019a) and interpreted as in Makowski et al., 2019b. The Region of Partial Equivalence (ROPE) was defined as [–0.237, 0.237]. We report the median estimate for each parameter._
+
 Next, we analyzed heat-evoked autonomic responses during the experiment. SCR and pupil dilation were both significantly influenced by Heat Intensity and exhibited Heat Intensity x Cue X Phase interactions (see Figure 2—source data 1). Both factors had practically significant effects on SCR (<1% in ROPE), whereas Bayesian analyses of pupillary outcomes indicated that evidence was not sufficient to reject the null hypothesis (100% in ROPE). Because there was no meaningful effect of temperature on pupil dilation and the number of subjects with useable pupil data was substantially less than those with useable skin conductance, we focused on SCR in subsequent analyses of cue effects on physiological arousal. There was no main effect of Group on pupil dilation or SCR, nor any interactions between Group and Heat Intensity for either outcome, suggesting that temperature effects on physiological arousal were similar regardless of whether individuals were instructed about contingencies (see Figure 2B and Figure 2—source data 1). For complete results, see Figure 2—source data 1.
 
 We also evaluated brain responses to noxious stimulation as a function of heat intensity. We note that FDR-corrected thresholds exceeded 0.001 for all voxelwise analyses apart from moderation by group; we therefore interpret main effects of heat intensity at p<0.001. We observed robust intensity-related changes within pain modulatory regions, including bilateral insula, striatum, dorsal anterior cingulate, thalamus, and other regions that did not differ between groups (see Figure 2E–G and Figure 2—source data 2 and 3). Consistent with this, we observed robust expression of both the Neurologic Signature Pattern (NPS; Wager et al., 2013) and Stimulus-Intensity Independent Pain Signature (SIIPS; Woo et al., 2017) as a function of temperature-related changes in both groups (all p’s<0.001, see Table 2) and signature pattern expression did not differ by group (all p’s>0.2; see Figure 2C&D and Table 2). Thus variations in heat intensity were positively associated with increases in pain-related activation in pain-related regions regardless of whether individuals were instructed about contingencies. Whole brain FDR-correction did reveal significant group differences in the left hippocampus and right primary somatosensory cortex driven by stronger intensity effects in the Instructed Group (see Figure 2H and Figure 2—source data 2 and 3). Within value-related ROIs, we observed positive effects of heat intensity on the bilateral striatum that did not differ by Group, whereas the VMPFC showed significant Group differences, driven by negative associations between temperature and VMPFC activation in the Uninstructed Group, but not the Instructed Group (see Table 2). There were no associations between heat intensity and amygdala activation.
 
-## Predictive cues modulate expectations and pain whether learned through instruction or experience
+**Table 2.**
+ Effects of heat, cues, and learning on responses in value-related regions of interest and pain-related signature patterns*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Effect</th>
+      <th>Left striatum</th>
+      <th>Right striatum</th>
+      <th>Left amygdala</th>
+      <th>Right amygdala</th>
+      <th>VMPFC</th>
+      <th>NPS</th>
+      <th>SIIPS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Effect of heat intensity</td>
+      <td>All participants, controlling for Group</td>
+      <td>b=0.19, p&lt;0.001</td>
+      <td>b=0.14, p&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>b=–0.27, p&lt;0.001</td>
+      <td>b=3.74, p&lt;0.001</td>
+      <td>b=439.87,p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Instructed vs Uninstructed</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>b=0.15, p=0.048</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instructed Group</td>
+      <td>CI = [0.08 0.22],t(17) = 3.05, p=0.007</td>
+      <td>CI = [0.14 0.25], t(17) = 5.37, p&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>CI = [2.39 5.49]; t(35) = 5.49; p&lt;0.001</td>
+      <td>CI = [197.59 572.36], t(35) = 4.33; p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Uninstructed Group</td>
+      <td>CI = [0.07 0.25], t(17) = 3.60, p=0.002</td>
+      <td>CI = [0.12 0.28], t(17) = 5.34, p&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>CI = [-0.67–0.19],t(17) = –3.81, p=0.001</td>
+      <td>CI = [2.28 4.91]; t(17) = 5.77; p&lt;0.001</td>
+      <td>CI = [317.40 672.13]; t(17) = 5.89; p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Mediation of current cue contingencies</td>
+      <td>Path a</td>
+      <td>a=0.05, p=0.058</td>
+      <td>a=0.05, p=0.079</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Path b</td>
+      <td>b=0.13, p=0.007</td>
+      <td>b=0.16, p&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>b=0.01, p=0.004</td>
+      <td>b=0.00, p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Path a*b</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Mediation of original cue contingencies</td>
+      <td>Path a</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>a=–0.09, p=0.015</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+    </tr>
+    <tr>
+      <td>Path b</td>
+      <td>b=0.13, p=0.006</td>
+      <td>b=0.16, p=0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>b=0.01, p=0.006</td>
+      <td>b=0.00, p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Path a*b</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>a*b=0.01, p=0.065</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Association with expected value based on fits to pain</td>
+      <td>All participants, controlling for Group</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instructed vs Uninstructed</td>
+      <td>-</td>
+      <td>b=0.24, p=0.03</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instructed Group</td>
+      <td>CI = [0.078 0.51]; t(17) = 2.85; p=0.011</td>
+      <td>CI = [0.03 0.42]; t(17) = 2.47; p=0.024</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Uninstructed Group</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Association with unsigned prediction error</td>
+      <td>All participants, controlling for Group</td>
+      <td>b=1.02, p=0.003</td>
+      <td>b=0.67, p=0.062</td>
+      <td>b=1.61, p=0.004</td>
+      <td>b=1.31, p=0.007</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instructed vs Uninstructed</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instructed Group</td>
+      <td>-</td>
+      <td>CI = [0.17 2.59]; t(17) = 2.41; p=0.028</td>
+      <td>CI = [0.57 3.40]; t(17) = 2.96; p=0.009</td>
+      <td>CI = [0.88 3.77]; t(17) = 3.39; p=0.004</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Uninstructed Group</td>
+      <td>-</td>
+      <td>CI = [0.06 1.26]; t(17) = 2.33; p=0.033</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Instructed vs feedback-driven expected value within Instructed Participants</td>
+      <td>Instruction vs Feedback-driven EV</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Instruction-based EV</td>
+      <td>CI = [0.07 0.53]; t(17) = 2.73; p=0.014</td>
+      <td>CI = [0.02 0.44]; t(17) = 2.33; p=0.03</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Feedback-driven EV</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table reports results of tests within a priori regions of interest (ROIs) involved in expected value and pain-related signature patterns, the Neurologic Pain Signature (NPS; Wager et al., 2013) and the Stimulus Intensity Independent Pain Signature (SIIPS; Woo et al., 2017). For mediation analyses, trial-level responses (i.e. area-under-the-curve estimates) were extracted and averaged across each ROI or computed as the dot-product between trial estimates and pattern expression for NPS and SIIPS, and then multilevel mediation analyses were evaluated. For regressions with heat intensity, expected value, and unsigned prediction error, we used linear models and one-sample t-tests across beta estimates and contrast maps. See Materials and Methods for additional details and Figure 5—figure supplement 1 for ROI images._
+
+### Predictive cues modulate expectations and pain whether learned through instruction or experience
 
 Analyses across all trials indicated potential influences of predictive cues and cue-based reversals on pain, as indicated by the Cue x Phase and Heat Intensity x Cue x Phase interactions. To measure cue-based expectancy effects more directly, we measured cue effects on (1) expectancy ratings and (2) pain reports on medium heat trials, which were crossed with predictive cues. We first examined expectations as a function of Cue prior to conditioning, that is immediately after instruction. Consistent with our manipulation, there was a significant Group x Cue interaction on expectancy at baseline (F(1,38) = 8.959, p=0.005), driven by significant differences in the Instructed Group (p=0.0027) but not the Uninstructed Group (p>0.3), as shown in Figure 3A. There were no main effects of Group or Cue prior to conditioning (all p’s>0.1). Following the first acquisition block, we collected a second set of expectancy ratings. We again observed a significant Group x Cue interaction (F(1,38) = 7.102, p=0.011) as well as a main effect of Cue (F(1,38) = 31.195, p<0.001). Post-hoc comparisons indicated that both groups reported higher expectancy with the high pain cue (see Figure 3A), but that differences were larger in the Instructed Group (p<0.001), relative to the Uninstructed Group (p=0.003). Thus, instructions and learning both modulated cue-based expectations about pain.
 
@@ -61,17 +583,617 @@ Analyses across all trials indicated potential influences of predictive cues and
 
 We next asked whether cue-based expectations in turn modulate subjective pain on medium heat trials. We first measured effects of cues on pain ratings during the acquisition phase, that is prior to the first reversal, and asked whether effects vary based on whether learning is paired with verbal instruction. Bayesian model comparison indicated that the best model included fixed effects of Group, Cue, and Trial, with random intercepts and random slopes for Cue and Trial. Consistent with other studies of expectancy-based pain modulation (Atlas et al., 2010; Wiech et al., 2014; Reicherts et al., 2016; Fazeli and Büchel, 2018; Michalska et al., 2018; Abend et al., 2021), all models indicated that participants reported higher pain when medium heat was preceded by high pain cues than low pain cues (main effect of Cue: see Figure 3B and Table 3), and this effect was practically significant based on Bayesian modeling (0% in ROPE). There was a significant Group x Cue interaction (see Table 3) which was of undecided significance (8% in ROPE). Importantly, post-hoc analyses within groups indicated that both groups reported practically significant effects of Cue on pain prior to the first reversal (see Figure 3B and Table 3), although effects were larger in the Instructed Group. We also observed a statistically significant Group x Cue x Trial interaction, although this was of undecided significance (35.45% in ROPE; see Table 3). Post-hoc analyses within groups indicated that Cue effects increased over time in the Instructed Group (see Figure 3C and Table 3), as did pain reports overall, whereas there were no interactions with time in Uninstructed Group participants. Together, these results indicate that instructions and learning both shape pain prior to reversal, that effects are somewhat larger in Instructed Group participants, and that the dynamics of expectancy effects on pain may differ as a function of whether individuals learn from experience or instruction. For complete results, please see Table 3.
 
-## Cue-based expectations and cue effects on pain and SCR update as contingencies reverse
+**Table 3.**
+ Multilevel model evaluating effects of Group, Cue, and Trial on medium heat pain prior to reversal*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Predictors</th>
+      <th colspan="3">Estimates</th>
+      <th colspan="3">Confidence intervals</th>
+      <th colspan="3">P-Value / probability of direction</th>
+      <th colspan="3">Bayesian estimates†</th>
+    </tr>
+    <tr>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>% in ROPE</th>
+      <th>Rhat</th>
+      <th>ESS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">All participants (n=40)</td>
+      <td>(Intercept)</td>
+      <td>3.89</td>
+      <td>3.875</td>
+      <td>3.883</td>
+      <td>3.55–4.23</td>
+      <td>[3.53, 4.221]</td>
+      <td>[ 3.598, 4.181]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4860.246</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>0.18</td>
+      <td>0.167</td>
+      <td>0.178</td>
+      <td>–0.16–0.51</td>
+      <td>[–0.183, 0.518]</td>
+      <td>[–0.106, 0.480]</td>
+      <td>0.305</td>
+      <td>0.339</td>
+      <td>83.67%</td>
+      <td>45.258</td>
+      <td>1</td>
+      <td>5043.495</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>1.27</td>
+      <td>1.254</td>
+      <td>1.261</td>
+      <td>0.89–1.66</td>
+      <td>[0.857, 1.651]</td>
+      <td>[ 0.939, 1.568]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>11882.091</td>
+    </tr>
+    <tr>
+      <td>Trial</td>
+      <td>0.11</td>
+      <td>0.107</td>
+      <td>0.11</td>
+      <td>0.02–0.21</td>
+      <td>[0.011, 0.202]</td>
+      <td>[ 0.031, 0.190]</td>
+      <td>0.023</td>
+      <td>0.029</td>
+      <td>98.39%</td>
+      <td>88.483</td>
+      <td>1</td>
+      <td>13555.299</td>
+    </tr>
+    <tr>
+      <td>Group * Cue</td>
+      <td>0.44</td>
+      <td>0.425</td>
+      <td>0.442</td>
+      <td>0.06–0.83</td>
+      <td>[0.028, 0.823]</td>
+      <td>[ 0.116, 0.758]</td>
+      <td>0.024</td>
+      <td>0.036</td>
+      <td>98.45%</td>
+      <td>8.892</td>
+      <td>1</td>
+      <td>12094.57</td>
+    </tr>
+    <tr>
+      <td>Group * Trial</td>
+      <td>0.14</td>
+      <td>0.133</td>
+      <td>0.135</td>
+      <td>0.04–0.23</td>
+      <td>[0.035, 0.231]</td>
+      <td>[ 0.049, 0.213]</td>
+      <td>0.007</td>
+      <td>0.008</td>
+      <td>99.52%</td>
+      <td>75.492</td>
+      <td>1</td>
+      <td>13395.889</td>
+    </tr>
+    <tr>
+      <td>Cue * Trial</td>
+      <td>0.14</td>
+      <td>0.132</td>
+      <td>0.142</td>
+      <td>–0.01–0.30</td>
+      <td>[–0.032, 0.296]</td>
+      <td>[ 0.005, 0.274]</td>
+      <td>0.071</td>
+      <td>0.114</td>
+      <td>95.07%</td>
+      <td>62.758</td>
+      <td>1</td>
+      <td>14333.687</td>
+    </tr>
+    <tr>
+      <td>(Group *Cue) *Trial</td>
+      <td>0.2</td>
+      <td>0.186</td>
+      <td>0.201</td>
+      <td>0.04–0.37</td>
+      <td>[0.016, 0.357]</td>
+      <td>[ 0.060, 0.343]</td>
+      <td>0.016</td>
+      <td>0.033</td>
+      <td>98.70%</td>
+      <td>35.45</td>
+      <td>1</td>
+      <td>16585.744</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Instructed Group (n=20)</td>
+      <td>(Intercept)</td>
+      <td>4.07</td>
+      <td>4.034</td>
+      <td>4.076</td>
+      <td>3.63–4.51</td>
+      <td>[3.594, 4.475]</td>
+      <td>[3.691, 4.455]</td>
+      <td>&lt;0.001</td>
+      <td>0</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4421.861</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>1.73</td>
+      <td>1.694</td>
+      <td>1.724</td>
+      <td>1.14–2.32</td>
+      <td>[1.088, 2.3]</td>
+      <td>[1.204, 2.218]</td>
+      <td>&lt;0.001</td>
+      <td>0</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1</td>
+      <td>7914.074</td>
+    </tr>
+    <tr>
+      <td>Trial</td>
+      <td>0.26</td>
+      <td>0.252</td>
+      <td>0.26</td>
+      <td>0.08–0.44</td>
+      <td>[0.073, 0.43]</td>
+      <td>[0.106, 0.422]</td>
+      <td>0.005</td>
+      <td>0.0063</td>
+      <td>99.28%</td>
+      <td>17.733</td>
+      <td>1</td>
+      <td>6993.832</td>
+    </tr>
+    <tr>
+      <td>Cue * Trial</td>
+      <td>0.35</td>
+      <td>0.294</td>
+      <td>0.361</td>
+      <td>0.04–0.66</td>
+      <td>[–0.031, 0.618]</td>
+      <td>[0.088, 0.631]</td>
+      <td>0.027</td>
+      <td>0.0755</td>
+      <td>97.65%</td>
+      <td>13.558</td>
+      <td>1</td>
+      <td>7952.078</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Uninstructed Group (n=20)</td>
+      <td>(Intercept)</td>
+      <td>3.74</td>
+      <td>3.737</td>
+      <td>3.741</td>
+      <td>3.22–4.25</td>
+      <td>[3.215, 4.259]</td>
+      <td>[ 3.261, 4.185]</td>
+      <td>&lt;0.001</td>
+      <td>0</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1.001</td>
+      <td>3062.443</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>0.89</td>
+      <td>0.885</td>
+      <td>0.874</td>
+      <td>0.40–1.38</td>
+      <td>[0.378, 1.392]</td>
+      <td>[ 0.450, 1.262]</td>
+      <td>&lt;0.001</td>
+      <td>0.0008</td>
+      <td>99.88%</td>
+      <td>0.55</td>
+      <td>1.001</td>
+      <td>9645.377</td>
+    </tr>
+    <tr>
+      <td>Trial</td>
+      <td>0</td>
+      <td>–0.005</td>
+      <td>–0.005</td>
+      <td>–0.11–0.10</td>
+      <td>[–0.113, 0.103]</td>
+      <td>[–0.095, 0.087]</td>
+      <td>0.928</td>
+      <td>0.9333</td>
+      <td>53.46%</td>
+      <td>99.433</td>
+      <td>1</td>
+      <td>8985.322</td>
+    </tr>
+    <tr>
+      <td>Cue * Trial</td>
+      <td>–0.03</td>
+      <td>–0.035</td>
+      <td>–0.035</td>
+      <td>–0.20–0.14</td>
+      <td>[–0.211, 0.142]</td>
+      <td>[–0.184, 0.112]</td>
+      <td>0.704</td>
+      <td>0.6975</td>
+      <td>65.33%</td>
+      <td>90.7</td>
+      <td>1</td>
+      <td>12054.973</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table presents results of a linear mixed model predicting subjective pain on medium heat trials as a function of Group (Instructed vs Uninstructed), Cue (Original High vs Original Low), and Trial prior to the first reversal, as well as post-hoc tests in each Group. See Table 1 for additional information about model specification and presentation.†Estimates based on Bayesian model linear mixed models using the ‘brms’ function (Bürkner, 2017) using the following code: brmPain~Group*Cue*Trial+(1+Cue*Trial|Subject,prior = set_prior("normal(0,2.5)", class="b"), save_all_pars = TRUE, silent = TRUE, refresh = 0, iter = 4000,, warmup = 1000). Posterior estimates and the Region of Partial Equivalence were obtained using the “describe_posterior” function from the package BayesTestR (Makowski et al., 2019a) and interpreted as in Makowski et al., 2019b. The Region of Partial Equivalence (ROPE) was defined as [–0.17, 0.17] across all participants, [–.172,.172] when restricted to the Instructed Group, and [–.168,.168] when restricted to the Uninstructed Group.‡Estimates based on a linear mixed effects model implemented in the ‘lmer’ function of lme4 (Bates et al., 2015) using the following code: lmer(PainMedium~Group*Cue*Trial+(1+Cue*Trial||Subject)).§Estimates based on a linear mixed effects model implemented in the ‘lme’ function of nlme (Pinheiro et al., 2021) including autoregression using the following code: lme(Pain~Group *Cue*Trial, random = ~1 + Cue*Trial|Subject, correlation = corAR1, na.action=na.exclude)._
+
+### Cue-based expectations and cue effects on pain and SCR update as contingencies reverse
 
 We next tested whether expectations and cue effects on pain updated as contingencies reversed, and whether they did so differently as a function of instruction. We computed an expectancy rating difference score (Original High Pain expectancy – Original Low Pain expectancy; see Figure 4B) for each pre-block rating and measured effects across the entire task as a function of Group and Phase (i.e. Original vs. Reversed Contingencies; see vertical dashed lines in Figures 1D and 4A). We observed a main effect of Phase (B=–2.03, p<0.001), indicating that differential expectations varied as contingencies reversed, and significant Group x Phase interaction (B=4.12, p<0.001). Post-hoc analyses indicated that only the Instructed Group reported differences in expectation that varied significantly as a function of Phase, whereas the Uninstructed Group showed weaker variations in expectations as contingencies reversed (see Figure 4A and B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig4-v2.jpg)
+
+**Figure 4.:** We analyzed cue-based expectations and the effects of cues on pain ratings in response to medium heat across the entire task, including reversals. Reversals were coded relative to instructions in the Instructed Group and relative to experience in the Uninstructed Group (see Figure 1C). (A) Expectancy ratings across the entire task. Both groups updated expectations as contingencies reversed. (B) Cue-based differences in expectancy. The Instructed Group (Red) shows larger differences in expectancy as a function of phase, although both groups show significant Cue x Phase interactions across the task, indicating that both instructions and experiential learning dynamically shape expectations. (C) Effects of current cue contingencies on subjective pain. We analyzed Cue x Phase interactions on pain to evaluate whether individuals report higher pain with the cue that is currently paired with high heat (Original High Cue on original contingency blocks, Original Low Cue on reversed blocks). Both groups reported higher pain when medium heat was paired with the current high cue relative to the current low cue. (D) Effects of current cue contingencies on heat-evoked SCR. Similar to pain, both groups displayed elevated heat-evoked SCR when medium heat was paired with the current high cue relative to the current low cue. (E) Pain reversals are larger in Instructed Group participants. As with expectancy ratings, both groups showed significant reversals of cue effects on subjective pain as contingencies changed, but reversals were larger in Instructed Group participants. Individual participants’ ratings are presented in Figure 4—figure supplement 1 and retrospective ratings are reported in Figure 4—figure supplement 2. Errors and shaded regions denote standard error of the mean (n = 20 per group).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** This figure depicts effects of Cue (original low = yellow; original high = orange) and Phase (original = ‘orig’, reversed = ‘rev”) on subjective pain on medium heat trials for each participant. Instructed Group participants are displayed with solid lines and Uninstructed Participants are displayed in dashed lines. Shaded areas denote standard error of the mean.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Following the task, participants provided retrospective ratings of affect (A) and expected pain at the beginning and end of the task (B) as a function of Cue. Error bars denote standard error of the mean (n = 20 per group).
+
 We next examined pain reports in response to medium heat across all trials, including reversals (see Figure 4). Bayesian model comparison using a normal distribution indicated the most likely model included fixed effects of Group, Cue, Phase, and Trial, with random intercepts and slopes. All models revealed significant Cue x Phase interactions on pain, indicating that cue effects on pain varied as contingencies reversed (see Figure 4C and D and Table 4), and this effect was sufficient to reject the null hypothesis of no interaction (<1% in ROPE). All models also revealed main effects of Cue, such that individuals reported higher pain in response to the original high pain cue than the original low pain cue, and main effects of Phase, such that pain was higher on original contingencies relative to reversals, and these effects were significant in frequentist analyses but were of undecided significance based on Bayesian estimates (see Table 4). Finally, frequentist analysis approaches revealed significant Group x Cue x Phase interactions, driven by stronger reversals of Cue effects in the Instructed Group (see Figure 4D). Post hoc analyses conducted separately by Group indicated nearly 100% probability of positive Cue x Phase interactions in each group, although evidence was only sufficient to reject the null hypothesis in the Instructed Group (see Table 4). We observed similar results when we restricted analyses to pain ratings from the 36 participants with useable fMRI data, although the Group x Cue x Phase interaction was marginally significant in frequentist approaches; see Supplementary file 1 for complete details. We also observed consistent findings when we tested the model with a beta distribution, which was found to provide better fits based on posterior prediction (see Supplementary file 2). Thus predictive cues shape pain perception even as contingencies change, whether or not participants are instructed about contingencies. In addition, reversals may be slightly larger in participants who are explicitly instructed about contingencies and reversals, however group differences were not practically meaningful based on Bayesian statistics.
+
+**Table 4.**
+ Multilevel model evaluating effects of Group, Cue, and Phase on medium heat pain across the entire task*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Predictors</th>
+      <th colspan="3">Estimates</th>
+      <th colspan="3">Confidence intervals</th>
+      <th colspan="3">P-Value / probability of direction</th>
+      <th colspan="3">Bayesian estimates†</th>
+    </tr>
+    <tr>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>LMER‡</th>
+      <th>NLME§</th>
+      <th>BRMS†</th>
+      <th>% in ROPE</th>
+      <th>Rhat</th>
+      <th>ESS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">All participants (n=40)</td>
+      <td>(Intercept)</td>
+      <td>3.63</td>
+      <td>3.624</td>
+      <td>3.621</td>
+      <td>3.31–3.95</td>
+      <td>[3.301, 3.948]</td>
+      <td>[ 3.342, 3.889]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1.001</td>
+      <td>2237.328</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>0.11</td>
+      <td>0.100</td>
+      <td>0.103</td>
+      <td>–0.22–0.43</td>
+      <td>[–0.233, 0.433]</td>
+      <td>[–0.162, 0.379]</td>
+      <td>0.52</td>
+      <td>0.546</td>
+      <td>73.12%</td>
+      <td>62.4</td>
+      <td>1.002</td>
+      <td>2181.022</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>0.29</td>
+      <td>0.286</td>
+      <td>0.287</td>
+      <td>0.14–0.44</td>
+      <td>[0.146, 0.426]</td>
+      <td>[ 0.160, 0.413]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>8.425</td>
+      <td>1</td>
+      <td>17294.743</td>
+    </tr>
+    <tr>
+      <td>Phase</td>
+      <td>0.1</td>
+      <td>0.100</td>
+      <td>0.104</td>
+      <td>0.00–0.20</td>
+      <td>[0.001, 0.198]</td>
+      <td>[ 0.015, 0.183]</td>
+      <td>0.046</td>
+      <td>0.047</td>
+      <td>97.38%</td>
+      <td>91.908</td>
+      <td>1</td>
+      <td>10287.406</td>
+    </tr>
+    <tr>
+      <td>Group * Cue</td>
+      <td>0.06</td>
+      <td>0.095</td>
+      <td>0.065</td>
+      <td>–0.09–0.21</td>
+      <td>[–0.045, 0.235]</td>
+      <td>[–0.062,, 0.189]</td>
+      <td>0.401</td>
+      <td>0.182</td>
+      <td>79.30%</td>
+      <td>92.3</td>
+      <td>1</td>
+      <td>17827.085</td>
+    </tr>
+    <tr>
+      <td>Group * Phase</td>
+      <td>–0.01</td>
+      <td>–0.002</td>
+      <td>–0.005</td>
+      <td>–0.11–0.09</td>
+      <td>[–0.1, 0.097]</td>
+      <td>[–0.087, 0.079]</td>
+      <td>0.907</td>
+      <td>0.974</td>
+      <td>54.11%</td>
+      <td>99.925</td>
+      <td>1</td>
+      <td>10239.068</td>
+    </tr>
+    <tr>
+      <td>Cue * Phase</td>
+      <td>0.58</td>
+      <td>0.643</td>
+      <td>0.582</td>
+      <td>0.38–0.78</td>
+      <td>[0.443, 0.843]</td>
+      <td>[ 0.415, 0.740]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0.042</td>
+      <td>1</td>
+      <td>11512.539</td>
+    </tr>
+    <tr>
+      <td>(Group * Cue) * Phase</td>
+      <td>0.24</td>
+      <td>0.248</td>
+      <td>0.241</td>
+      <td>0.04–0.44</td>
+      <td>[0.048, 0.447]</td>
+      <td>[ 0.077, 0.400]</td>
+      <td>0.018</td>
+      <td>0.015</td>
+      <td>98.97%</td>
+      <td>25.2</td>
+      <td>1</td>
+      <td>10802.199</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Instructed Group (n=20)</td>
+      <td>(Intercept)</td>
+      <td>3.74</td>
+      <td>3.732</td>
+      <td>3.731</td>
+      <td>3.32–4.16</td>
+      <td>[3.313, 4.15]</td>
+      <td>[ 3.363, 4.107]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1.001</td>
+      <td>1614.785</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>0.36</td>
+      <td>0.386</td>
+      <td>0.353</td>
+      <td>0.14–0.58</td>
+      <td>[0.182, 0.59]</td>
+      <td>[ 0.156, 0.530]</td>
+      <td>0.001</td>
+      <td>0.000</td>
+      <td>99.83%</td>
+      <td>5.775</td>
+      <td>1</td>
+      <td>13912.092</td>
+    </tr>
+    <tr>
+      <td>Phase</td>
+      <td>0.1</td>
+      <td>0.100</td>
+      <td>0.098</td>
+      <td>–0.02–0.22</td>
+      <td>[–0.03, 0.23]</td>
+      <td>[–0.003, 0.194]</td>
+      <td>0.105</td>
+      <td>0.133</td>
+      <td>94.46%</td>
+      <td>88.158</td>
+      <td>1</td>
+      <td>12203.321</td>
+    </tr>
+    <tr>
+      <td>Cue * Phase</td>
+      <td>0.84</td>
+      <td>0.904</td>
+      <td>0.836</td>
+      <td>0.52–1.17</td>
+      <td>[0.58, 1.227]</td>
+      <td>[ 0.559, 1.112]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>99.99%</td>
+      <td>0.05</td>
+      <td>1</td>
+      <td>9283.385</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Uninstructed Group (n=20)</td>
+      <td>(Intercept)</td>
+      <td>3.53</td>
+      <td>3.531</td>
+      <td>3.526</td>
+      <td>3.04–4.02</td>
+      <td>[3.04, 4.022]</td>
+      <td>[ 3.098, 3.955]</td>
+      <td>&lt;0.001</td>
+      <td>0.000</td>
+      <td>100.00%</td>
+      <td>0</td>
+      <td>1.001</td>
+      <td>2390.769</td>
+    </tr>
+    <tr>
+      <td>Cue</td>
+      <td>0.23</td>
+      <td>0.194</td>
+      <td>0.228</td>
+      <td>0.01–0.44</td>
+      <td>[–0.004, 0.391]</td>
+      <td>[ 0.058, 0.411]</td>
+      <td>0.037</td>
+      <td>0.054</td>
+      <td>98.09%</td>
+      <td>33.975</td>
+      <td>1</td>
+      <td>19966.344</td>
+    </tr>
+    <tr>
+      <td>Phase</td>
+      <td>0.11</td>
+      <td>0.099</td>
+      <td>0.107</td>
+      <td>–0.05–0.27</td>
+      <td>[–0.05, 0.248]</td>
+      <td>[–0.025, 0.245]</td>
+      <td>0.19</td>
+      <td>0.192</td>
+      <td>90.18%</td>
+      <td>81.167</td>
+      <td>1</td>
+      <td>9498.139</td>
+    </tr>
+    <tr>
+      <td>Cue * Phase</td>
+      <td>0.35</td>
+      <td>0.411</td>
+      <td>0.354</td>
+      <td>0.11–0.60</td>
+      <td>[0.169, 0.653]</td>
+      <td>[ 0.158, 0.555]</td>
+      <td>0.004</td>
+      <td>0.001</td>
+      <td>99.58%</td>
+      <td>8.133</td>
+      <td>1</td>
+      <td>12670.552</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This table presents results of a linear mixed model predicting subjective pain on medium heat trials as a function of Group (Instructed vs Uninstructed), Cue (Original High vs Original Low), and Phase (Original vs Reversed) across all participants, as well as post-hoc tests in each Group. See Table 1 for additional information about model specification and presentation.†Estimates based on Bayesian model linear mixed models using the ‘brms’ function (Bürkner, 2017) using the following code: brmPain~Group *Cue*Phase+(1+Cue*Phase|Subject,prior = set_prior("normal(0,2.5)", class="b"), save_all_pars = TRUE, silent = TRUE, refresh = 0, iter = 4000,, warmup = 1000). Posterior estimates and the Region of Partial Equivalence were obtained using the “describe_posterior” function from the package BayesTestR (Makowski et al., 2019a) and interpreted as in Makowski et al., 2019b. The Region of Partial Equivalence (ROPE) was defined as [–0.176, 0.176] across all participants, [–.170,.170] when restricted to the Instructed Group, and [–.181,.181] when restricted to the Uninstructed Group.‡Estimates based on a linear mixed effects model implemented in the ‘lmer’ function of lme4 (Bates et al., 2015) using the following code: lmer(PainMedium~Group*Cue*Phase+(1+Cue*Phase|Subject)).§Estimates based on a linear mixed effects model implemented in the ‘lme’ function of nlme (Pinheiro et al., 2021) including autoregression using the following code: lme(Pain~Group *Cue*Phase, random = ~1 + Cue*Phase|Subject, correlation = corAR1(), na.action=na.exclude)._
 
 We also tested whether cues and reversals impacted physiological responses to medium heat, as measured by heat-evoked SCR. Heat-evoked SCRs were influenced by predictive cues on medium trials and reversed as contingencies changed, but the magnitude of these differences did not differ by Group (see Figure 4D and Figure 4—source data 1). While effects were statistically significant based on frequentist models, they were not sufficient to reject the null hypothesis of no difference based on Bayesian models (see Figure 4—source data 1). Importantly, only 13 Instructed Group participants had variations in heat-evoked SCR on medium heat trials and were included in analyses; we therefore take these results with caution and did not analyze associations between trial-by-trial SCR and brain responses. We also evaluated cue effects on anticipatory SCR, that is responses to the cue in the interval prior to heat stimulation, in exploratory analyses. In contrast to other outcomes, anticipatory arousal was associated with a main effect of Cue and a significant Group x Phase interaction (see Figure 4—source data 1), but we did not observe any interactions between Cue and Phase, suggesting that anticipatory responses did not vary as contingencies change. However, analyses were limited to 29 participants and Bayesian analyses indicated that the data support the null hypothesis of no effect, and thus we do not make inference based on anticipatory arousal.
 
-## Cue effects on heat-evoked responses in pain-related regions reverse as contingencies change, irrespective of instruction, and prefrontal regions mediate cue effects on subjective pain
+### Cue effects on heat-evoked responses in pain-related regions reverse as contingencies change, irrespective of instruction, and prefrontal regions mediate cue effects on subjective pain
 
 Behavioral analyses indicated that predictive cues modulated expectations and subjective pain, and that cue effects on both outcomes updated as contingencies reversed. We next asked which brain regions mediated these effects. We were most interested in current cue effects on brain responses to medium heat, that is the Cue x Phase interaction (see Materials and methods and Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-v2.jpg)
+
+**Figure 5.:** We examined brain mediators of current contingency effects on perceived pain on medium heat trials. Results are FDR-corrected within pain modulatory regions and across the whole brain. (A) Mediation model. We tested for brain regions that mediate the effects of current cue contingencies on subjective pain, corresponding to the reversals we observed (Figure 4). (B) Path A: effects of current contingencies. Path a identifies brain regions that show greater activation with the current high pain cue (e.g. Original High Cue during original contingencies, Original Low Cue during reversed contingencies), relative to the current low pain cue. Within pain modulatory regions (see Figure 5—figure supplement 1), we observed positive Path a effects (HM >LM) in the bilateral anterior insula, dorsal anterior cingulate, right anterior prefrontal cortex, and left dorsal posterior insula, and negative Path a effects (LM >HM) in the left subgenual ACC. We extracted trial-by-trial estimates from the left anterior insula and visualized average responses as a function of Group, Cue, and Phase (bottom left; Figure 2). Both groups showed greater left insula activation when medium heat was preceded by the Current High Cue, and cue effects did not differ by group. Differences were confirmed with extracted average timecourses (see Figure 5—figure supplement 3). Whole brain FDR-correction (bottom right) additionally identified positive Path a effects in the M1, S1, and right inferior parietal lobule (see Figure 5—figure supplement 4). (C) Mediation of current cue effects on pain. We observed significant negative mediation by several pain modulatory regions, including (from left to right) the subgenual ACC, the right VMPFC/OFC, the dorsomedial prefrontal cortex, and the left DLPFC. Extracting responses from each of these regions indicated that individuals who showed larger cue effects (i.e. Path a effects) showed more negative associations between brain activation and subjective pain (i.e. Path b). This is consistent with the fact that mediation can be driven by the covariance between paths, and is consistent with a modulatory suppression effect. Representative correlations are depicted for the right OFC; r=–0.40, P<.001, with Instructed Group participants in red and Uninstructed Group in blue. (D) Path b: associations with pain controlling for cue. Path b regions are positively associated with pain, controlling for cue (and temperature, since we tested only medium heat trials). We observed positive Path b effects in the VLPFC, bilateral putamen, bilateral anterior insula, and other regions within the pain modulatory network (top). We also observed significant Path b effects on NPS and SIIPS expression. Spaghetti plots in the lower right illustrate associations between trial-level pattern expression and pain, controlling for cue, for all individuals (blue) and the entire sample (95% CI illustrated in gray). For additional regions identified in whole brain search and uncorrected results, see Figures 3—5 and Figure 5—source data 1 (whole-brain corrected results) and Figure 5—source data 2 (uncorrected results).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** We searched within two sets of a priori regions of interest (ROIs). (A) Pain modulation ROIs were identified through a meta-analysis of placebo analgesia and expectancy-based pain modulation (Atlas and Wager, 2014b). We created a mask combined across modulatory regions whose responses to noxious stimuli increase with expectations for reduced pain (red) and regions whose responses to noxious stimuli decrease with expectations for reduced pain (blue). (B) We also examined responses within value-related ROIs (right), including the bilateral striatum (cyan), bilateral amygdala (violet), and the VMPFC/OFC (yellow). See Materials and methods for details of ROI identification and ROI-wise analyses.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** This figure depicts extracted responses within pain modulatory regions for Path a and mediation of current contingency effects on medium heat pain. We extracted responses and averaged as a function of Group (Instructed vs Uninstructed), Cue (Original low = ‘Orig LM’; Original high = ‘Orig HM’), Phase (Left two lighter bars = Original contingencies; Right two darker bars = reversed contingencies). (A) Responses in pain modulatory clusters identified in analyses of Path a with positive effects, hat is higher activation in response to current high pain cues relative to current low pain cues. This confirms that these regions update responses as contingencies change and do so similarly across both groups. (B) Responses within the sgACC region that showed negative path a effects. (C) Pattern expression within the neurologic signature pattern (NPS; Wager et al., 2013). (D) Pattern expression within the stimulus-intensity independent pain signature pattern (SIIPS; Woo et al., 2017).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Images depict average baseline-corrected trial timecourse for regions identified in FDR-Corrected Path A analyses (see Figure 5—figure supplement 3) as a function of Group and temperature. Average responses to low heat trials (green) and high heat trials (red) are depicted in the left column, and responses to medium heat trials are depicted in the center column (original contingencies) and right column (reversed contingencies) as a function of original cue type.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Results are reported in Figure 5—source data 1.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Images depict average baseline-corrected trial timecourse for value-related ROIs (see Figure 5—figure supplement 1) as a function of Group and temperature. Average responses to low heat trials (green) and high heat trials (red) are depicted in the left column, and responses to medium heat trials are depicted in the center column (original contingencies) and right column (reversed contingencies) as a function of original cue type.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Results are reported in Figure 5—source data 2.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** Results are reported in Figure 5—source data 2.
 
 Path a identified regions that showed stronger activation in response to medium heat following current high pain cues relative to current low pain cues. Within pain modulatory regions, we observed significant positive Path a effects (current high cue >current low cue) in the bilateral anterior insula, left dorsal posterior insula, dACC, and right anterior prefrontal cortex, and negative associations in the left subgenual ACC (sgACC; see Figure 5B and Figure 5—source data 1). Extracting trial-level responses confirmed that regions with positive Path a activation showed greater activation when medium heat was preceded by the initial high pain cue relative to the initial low pain cue during the original contingences, whereas they showed greater activation when medium heat was paired with the initial low pain cue when contingencies were reversed, and these reversals were observed for both groups (see Figure 5B and Figure 5—figure supplements 2 and 3). Whole brain FDR correction additionally indicated positive Path a effects in left M1, S1, and right inferior parietal lobule (see Figure 5B, Figure 5—figure supplement 4, and Figure 5—source data 1). We observed marginal Path a effects on the bilateral striatum (see Table 2 and Figure 5—figure supplement 5); no other ROIs were modulated by current cue contingencies and there were no effects of current cues on the NPS or SIIPS (see Table 2).
 
@@ -81,13 +1203,37 @@ Finally, we tested for voxelwise mediation of current cue effects on pain. Withi
 
 Notably, we did not observe significant moderation by Group in any of the paths at FDR-corrected thresholds or in any of our a priori regions of interest (i.e. correction within pain modulatory regions or whole brain, ROI-wise analyses, or pain signature patterns). This suggests that the dynamic effects of predictive cues and reversals on pain-related brain responses are similar whether individuals learn through instruction or experience, despite stronger influences of cues on subjective pain within the Instructed Group. Uncorrected results, which do point to potential group differences in Path a effects in the rostral ACC, left hippocampus, and left thalamus, are presented in Figure 5—figure supplement 7 and Figure 5—source data 2.
 
-## Responses in brainstem, orbitofrontal cortex, and right prefrontal cortex maintain initial contingencies despite reversals, particularly in uninstructed participants
+### Responses in brainstem, orbitofrontal cortex, and right prefrontal cortex maintain initial contingencies despite reversals, particularly in uninstructed participants
 
 While the main mediation analysis isolated brain regions whose responses to cues on medium heat trials updated upon reversal, some regions may show sustained responses to initial contingencies. We therefore conducted a second mediation analysis to identify regions that responded to original contingencies and did not reverse as contingencies changed. We were most interested in Path a, which identified regions that showed stronger activation in response to cues that were originally paired with high pain relative to cues that were originally paired with low pain (see Figure 6), while controlling for current contingencies. No regions survived FDR correction within pain modulatory regions, and there were no effects of original cues on the NPS or SIIPS (all p’s>0.2). Whole brain correction revealed significant positive Path a effects (original high cue >original low cue) in a brainstem cluster overlapping with the rostroventral medulla (RVM; consistent with the pontine reticular nucleus based on the Brainstem Navigator; Singh et al., 2021), as well as the left medial OFC (area Fo3), right lateral prefrontal cortex, right DLPFC, medial cerebellum, and right occipital cortex (see Figure 6B, Figure 6—figure supplement 1, and Figure 6—source data 1) there were no negative Path a effects. Extracting trial-level responses from Path a regions (see Figure 6B and Figure 6—figure supplements 2 and 3) indicated that effects in most regions were driven primarily by lack of reversal in the Uninstructed Group, although we did not observe significant moderation by Group in any regions at FDR-corrected thresholds (see Figure 6—figure supplement 5 and Figure 6—source data 1), and that only the RVM maintained original contingencies in both groups. ROI-wise analyses within value-related regions indicated the VMPFC was significantly modulated by initial contingencies (see Table 2) driven by greater activation in responses to the original low pain cue. Extracting timecourses suggests that these differences were driven by the Uninstructed Group (see Figure 5—figure supplement 5) and an adjacent region of VMPFC showed significant moderation by Group in uncorrected voxelwise analyses (see Figure 6—figure supplement 4 and Figure 6—source data 2), although we did not observe significant group differences in ROI-wise analyses when we included Group as a potential moderator (p>0.6), and Path a effects remained significant when controlling for Group (a=–0.09, p=0.019).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-v2.jpg)
+
+**Figure 6.:** We conducted a second mediation analysis to isolate effects of original contingencies, controlling for current contingencies. (A) Effects of original contingencies. The goal of our second mediation analysis was to specifically identify regions that continued to respond to the original contingencies across the entire task, regardless of reversals. (B) Path a: Regions that show greater activation to original high pain contingencies despite reversals. Path a identified regions that showed greater activation to the Original High Cue (dark gray) relative to the Original Low Cue (light gray) across the entire task, while controlling for current contingencies. No voxels survived correction within pain modulatory regions. However, whole brain correction revealed that a number of regions including the brainstem’s rostroventral medulla (RVM), right DLPFC, left medial OFC (mOFC), and other regions (see Figure 6—figure supplement 2 and Figure 6—source data 1) continued to show higher activation when medium heat was paired with the original high pain cue regardless of Phase. Extracting trial-by-trial responses from the RVM (top) confirmed that this region showed greater heat-evoked activation with the Original High Cue during both original and reversed contingencies and that effects were present in both the Instructed Group and the Uninstructed Group. In the mOFC, however, responses did reverse within the Instructed Group (bottom), suggesting that failure to reverse was driven by Uninstructed Group participants. Similar effects were observed in the VMPFC region of interest (See Figure 5—figure supplement 5). See Figure 6—figure supplements 2 and 3 for means within other Path a regions. (B) Associations between original contingencies and pain were statistically mediated by a cluster in the right superior frontal gyrus, in which individuals who had larger effects of original cues on brain responses (controlling for current contingencies; i.e. Path a, x-axis) also had stronger negative associations between brain activation and subjective pain (Path b, y-axis). There were no additional mediators of original cue effects on pain based on whole brain correction identified additional effects in the right DLPFC, precuneus, and cerebellum (see Figure 6—figure supplement 1 and Figure 6—source data 1). Whole brain uncorrected results are presented in Figure 6—figure supplements 4 and 5 and Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Results are reported in Figure 6—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** This figure depicts extracted responses in clusters identified in analyses of Path a of the mediation based on original contingencies, i.e. regions identified as showing higher activation in response to original high pain cues relative to original low pain cues, regardless of phase. We extracted responses and averaged as a function of Group (Instructed vs Uninstructed), Cue (Original low = ‘Orig LM’; Original high = ‘Orig HM’), Phase (Left two lighter bars = Original contingencies; Right two darker bars = reversed contingencies). This confirms that these regions maintain initial responses despite contingency reversals and that responses are similar across both groups.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Images depict average baseline-corrected trial timecourse for regions identified in FDR-Corrected Path A analyses (see Figure 6—figure supplement 1) as a function of Group and temperature. Average responses to low heat trials (green) and high heat trials (red) are depicted in the left column, and responses to medium heat trials are depicted in the center column (original contingencies) and right column (reversed contingencies) as a function of original cue type.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Results are reported in Figure 6—source data 2.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Results are reported in Figure 6—source data 2.
+
 Path b effects were similar to those observed when controlling for current cues; see Figure 6—figure supplement 1, Figure 6—source data 1, and Table 2. Whole brain correction revealed significant negative mediation of original cue effects on pain in the right superior temporal gyrus (see Figure 6B, Figure 6—figure supplement 1, and Figure 6—source data 1). Extracting responses from this region indicated that, similar to mediators of current cues on pain, mediation was driven by the covariance between Paths a and b, such that individuals who showed stronger original cue effects on right superior temporal gyrus responses to heat also showed stronger negative associations between activation and subjective pain (see Figure 6B and Figure 6—figure supplement 2). Additional regions identified in uncorrected voxelwise analyses are reported in Figure 6—figure supplement 3 and Figure 6—source data 2. Finally, consistent with mediation of current contingencies, Group did not moderate Path b or mediation effects even at uncorrected thresholds, indicating associations between brain activation and pain were similar regardless of instruction (see Figure 6B and Figure 6—figure supplement 4).
 
-## Quantitative models reveal that instructed participants reverse expectations upon instructions and learning is faster in uninstructed participants
+### Quantitative models reveal that instructed participants reverse expectations upon instructions and learning is faster in uninstructed participants
 
 We observed no group differences in the effects of cues and reversals on brain responses to noxious stimuli in pain-related regions, suggesting that pain-related responses are mediated similarly whether or not participants are instructed about contingencies. However, we did observe possible group differences in the VMPFC and other regions that maintained original contingencies in the Uninstructed Group, but not the Instructed Group, although group differences were only evident in uncorrected voxelwise analyses. Our mediation models and behavioral analyses that include effects of Phase assume that expectations and responses update completely upon reversal, either through instruction in the Instructed Group or when contingencies reverse in the Uninstructed Group. However, these models may not capture differences if dynamic learning proceeds more gradually (i.e. continuously as a function of pairings between cues and temperatures), and it is possible that groups differ in the dynamics of learning and associations between learning and brain activation, consistent with previous work (Atlas et al., 2016).
 
@@ -99,19 +1245,59 @@ Consistent with our task manipulation, instructed reversal parameters (i.e. ρ) 
 
 **Figure 7.:** We fit a computational model of instructed reversal learning (Atlas et al., 2016) to pain reports on medium heat trials to isolate the dynamics of expected value and how expected value updates with instruction. (A) Group differences in learning parameters. Fitting models to individuals revealed group differences in learning rate (α, left), such that participants in the Uninstructed Group (blue) showed stronger updates of expected value in response to prediction errors relative to the Instructed Group (red), whereas the Instructed Group showed stronger reversals at the time when instructions were delivered, based on the instructed reversal parameter (ρ, right). (B) Predicted timecourse of expected value based on jack-knife model fits. We used model parameters from a jack-knife model fitting procedure (see Materials and Methods) to generate predicted timecourse of expected value (EV) for each group. Here we depict model predictions for an example participant in the Instructed Group (left) and the Uninstructed Group (right). As shown in the second row, EV reverses immediately upon instruction in the Instructed Group and reverses more gradually in the Uninstructed Group. We focused on responses fit to medium pain ratings (fourth row) and modeled associations between heat-evoked activation and the timecourse of EV and unsigned PE on medium heat trials (bottom row).
 
-## Expected value dynamically modulates responses to noxious stimulation, with differences between groups in the rostral anterior cortex
+### Expected value dynamically modulates responses to noxious stimulation, with differences between groups in the rostral anterior cortex
 
 We next searched for neural correlates of dynamic expected value (EV) signals on medium heat trials. We used the learning time-course generated from fits to pain ratings in each group and searched for regions that correlated with EV. Figure 7B depicts example EV timecourses using the same parameters that were used to evaluate associations between EV and medium heat-evoked brain responses in each group. We used robust regression to evaluate associations within each group, and those that were consistent while controlling for Group, or differed significantly between Groups.
 
 Whole brain correction revealed significant positive associations with instruction-based EV in the right MPFC in the Instructed Group (see Figure 8—figure supplement 1, and Figure 8—source data 1) and negative associations with feedback-driven EV in the left rACC in the Uninstructed Group (see Figure 8—figure supplement 1, and Figure 8—source data 1). Consistent with this, FDR correction within a priori pain modulatory regions revealed positive group differences (Instructed >Uninstructed) in the rACC, as well as the left anterior insula, left dorsal posterior insula, and the bilateral thalamus (see Figure 8A and Figure 8—source data 1). Extracting responses from these regions revealed that there were positive associations with EV in the Instructed Group, and negative associations in the Uninstructed Group. Whole brain correction additionally revealed positive differences in the DMPFC and left middle cingulate (see Figure 8A, Figure 8—figure supplements 1 and 2, and Figure 8—source data 1). ROI-wise tests within a priori value related regions indicated that groups differed in the left striatum, driven by positive associations in the Instructed Group (see Table 2 and Figure 8B). Robust regression did not identify any significant associations across all participants (i.e. main effect, controlling for group) between EV and responses to medium heat based on corrected voxelwise analyses or in regions of interest or signature patterns. However, uncorrected results indicate negative associations in the left lateral OFC, hippocampus, and other regions that have been implicated in prior studies (see Figure 8—figure supplement 3 and Figure 8—source data 2). Fitting models to heat-evoked autonomic responses revealed similar patterns of activation based on whole-brain and ROI-based correction (see Figure 8—figure supplement 4 and Figure 8—source data 3), and while group differences did not survive correction when we fit models to anticipatory SCR (see Figure 8—figure supplement 5 and Figure 8—source data 4), we observed group differences in associations with EV in overlapping portions of the VMPFC and left putamen at uncorrected thresholds in all three models (see Figure 8—figure supplement 2 and Figure 8—source data 2–4). For complete results of models fit to SCR, see Figure 8—figure supplements 4–5 and Figure 8—source data 3 and 4.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-v2.jpg)
+
+**Figure 8.:** We used the timecourse of expected value (EV) based on fitting computational models to pain reports from each group (see Figure 7) to isolate the neural correlates of instructed and uninstructed expected value (EV) and prediction error (PE) during pain processing. We examined associations between brain responses to medium heat and the timecourse of EV and unsigned PE (i.e. absolute value of PE) and used robust regression (Wager et al., 2005) to compare groups. (A) Group differences in expected value within pain modulatory regions. The left dorsal posterior insula, left thalamus, and rostral anterior cingulate cortex (rACC) showed positive associations with EV within the Instructed Group (red) and negative associations within the Uninstructed Group (blue). Whole brain FDR-correction additionally identified group differences in the left middle cingulate cortex (see surface map). (B) Associations with EV in value-related ROIs. Extracting contrast values within a priori value-related regions of interest (ROIs) revealed significant associations in the bilateral striatum within the Instructed Group and significant group differences in the left striatum (see Table 4). (C) Comparing instructed and feedback-driven EV within the Instructed Group. Direct comparisons of the timecourse of EV within Instructed Group participants who were exposed to both types of information revealed significant differences in the middle cingulate cortex, driven by positive associations with instruction-based EV. (D) Main effects of unsigned PE. Unsigned PE was associated with activation across groups in the right insula, striatum, and right amygdala. (E) Group differences in unsigned PE. There were stronger associations with unsigned PE in the right SII and temporal gyrus, driven by negative associations in the Instructed Group and positive associations in the Uninstructed Group. (F) Associations with PE in value-related ROIs. ROI-wise analyses revealed significant associations between unsigned PE and activation in the right striatum and bilateral amygdala. See also Figure 8—figure supplements 1–9 and Figure 8—source data 1 and 2. Error bars denote standard error of the mean (n = 18 per group).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Results are reported in Figure 8—source data 1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (I) FDR-correction revealed stronger positive associations between DMPFC activation and EV in the Instructed Group than the Uninstructed Group, whether models were fit to pain ratings (left) or SCR (right) on medium heat trials. For complete results, see Figure 8—source data 1. (II) Cluster color depicts overlaps between the three computational models based on uncorrected results. For complete results, see Figure 8—figure supplements 3–5 and accompanying Source Data.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Results are reported in Figure 8—source data 2.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Results are reported in Figure 8—source data 3.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** Results are reported in Figure 8—source data 4.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp6-v2.jpg)
+
+**Figure 8—figure supplement 6.:** Associations with Uninstructed EV did not survive whole-brain FDR correction. See Figure 7 for uncorrected results. Results are reported in Figure 8—source data 5.
+
+![Figure 8—figure supplement 7.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp7-v2.jpg)
+
+**Figure 8—figure supplement 7.:** Results are reported in Figure 8—source data 5.
+
+![Figure 8—figure supplement 8.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp8-v2.jpg)
+
+**Figure 8—figure supplement 8.:** Results are reported in Figure 8—source data 6.
+
+![Figure 8—figure supplement 9.](https://cdn.elifesciences.org/articles/73353/elife-73353-fig8-figsupp9-v2.jpg)
+
+**Figure 8—figure supplement 9.:** Results are reported in Figure 8—source data 6.
+
 We searched for correlates of instructed and feedback-driven EV signals within Instructed Group participants to test whether brain responses were preferentially related to instructed or feedback-driven learning within participants exposed to both types of information. Controlling for uninstructed EV, instructed EV was positively associated with activation near the left nucleus accumbens based on correction within pain-related regions (see Figure 8—source data 5), and ROI-wise analyses revealed significant associations with instructed EV bilaterally in the striatum (see Table 2). Whole brain correction additionally identified positive associations in the left anterior insula, left rACC, and right DMPFC (see Figure 8—figure supplement 6 and Figure 8—source data 5). There were no regions that were preferentially associated with uninstructed EV within the Instructed Group in corrected voxelwise search or ROI-wise analyses. Finally, whole brain correction revealed significant differences between instructed and uninstructed EV in the bilateral middle cingulate (see Figure 8C, Figure 8—figure supplement 6 and Figure 8—source data 5). Uncorrected voxelwise results are reported in Figure 8—figure supplement 7 and Figure 8—source data 5.
 
-## Associations with unsigned prediction error differ between groups
+### Associations with unsigned prediction error differ between groups
 
 In addition to analyses of EV, we evaluated associations between brain responses to medium heat and unsigned prediction errors (PEs). No regions showed significant associations within pain related ROIs; however, whole brain correction revealed a positive association with PE, controlling for group, in a wide swath of contiguous activation encompassing the right anterior insula, right striatum, and right amygdala (see Figure 8D). Whole brain correction also revealed a significant difference between groups in a large contiguous cluster that included the right SII, right superior temporal gyrus, and right temporo-parietal cortex (see Figure 8E) driven by negative associations with PE in the Instructed Group and positive associations in the Uninstructed Group (see Figure 8—figure supplement 8 and Figure 8—source data 6). Within value-related ROIs, unsigned PEs were positively associated with responses to heat in the right striatum and the bilateral amygdala (see Figure 8F and Table 2). Associations with right striatum were observed within each group, whereas associations with amygdala were only observed in the Instructed Group; however, group differences were not significant in any region. Finally, there was no association between PE and NPS or SIIPS expression in either group (see Table 2). Voxelwise uncorrected results are reported in Figure 8—figure supplement 9 and Figure 8—source data 6.
 
-## Post-task ratings
+### Post-task ratings
 
 We used ANOVAs to evaluate effects of Group and Cue on post-task affect ratings, and to measure effects of Group, Cue, and Phase for retrospective expectancy ratings (i.e. retrospective ratings of expected pain at the beginning and end of the task as a function of Cue). There were no differences in reported affect as a function of Group or Cue (all p’s>0.09; see Figure 4—figure supplement 2). We observed a significant Group x Phase interaction on retrospective expectancy (F(1,36) = 4.386, p=0.043) and a marginal Group x Cue x Phase interaction (F(1,36) = 3.635, p=0.065). Post-hoc pairwise comparisons indicated that the Instructed Group reported differences in expected pain as a function of Cue at the beginning of the task (padjusted = 0.041), but not the end of the task (p>0.9), whereas the Uninstructed Group did not report significant differences at any point (all p’s>0.1).
 
@@ -135,25 +1321,25 @@ We note that the amygdala’s association with PE within the Instructed Group in
 
 These results highlight that pain-related outcomes (e.g. subjective ratings, physiological arousal, learning systems, sensory circuits) may show distinct patterns of learning and sensitivity to higher order factors. Studies of expectancy-based pain modulation and predictive coding in other domains should measure parallel behavioral outcomes to capture the complexity of perceptual decision-making, rather than focusing on a single outcome measure (e.g. choices during instrumental learning).
 
-## Future directions and outstanding questions
+### Future directions and outstanding questions
 
 This work highlights several promising avenues of inquiry that should be addressed in future work, in addition to those highlighted above. Comparisons between appetitive and aversive learning would reveal whether the differences observed here are driven by threat-specific processes or general differences in adaptive learning and flexibility. One limitation of our design is that the two groups received slightly different instructions at the start of the experiment: The Instructed Group was informed about cue-heat contingencies, whereas the Uninstructed Group was instructed to pay attention and try to figure out the relationships between cues and heat outcomes. Although these differences did not impact brain mediators of expectancy or pain, the latter instruction would be more likely to engage inference and model-based learning (Doll et al., 2012; Doll et al., 2015; Dayan and Berridge, 2014). These differences should be resolved in future work by directly comparing instructed and model-based learning. In addition, future studies should include a group that undergoes initial learning in the absence of instructions and then receives instructed reversals to determine whether learned associations can be reversed on the basis of higher order knowledge, consistent with dissociations observed in studies of placebo (Benedetti et al., 2003; Schafer et al., 2015). Alternatively, future studies can include outcomes that diverge from instructions to examine the interplay between instructed and experiential learning (e.g. Doll et al., 2009). In addition, future work should manipulate not only instructions and learning but also the uncertainty of the expectation to understand how instructions, learning, uncertainty, and precision drive perception from a predictive coding framework. Prior work on placebo analgesia indicates that the precision of the expectation is linked to placebo responses in the PAG and RVM (Grahl et al., 2018); it is unknown how precision and uncertainty modulated responses in the present study.
 
 We chose to focus on within-subjects effects and did not examine how these differences vary across individuals as a function of factors such as anxiety, which has previously been shown to impact adaptive learning (Browning et al., 2015). However, we recently examined how instructed reversals impact pain expectations in youth with clinical anxiety and found that youth with and without anxiety showed similar responses to expectancy and instruction, although youth with anxiety showed greater autonomic arousal during pain anticipation (Abend et al., 2021). In exploratory analyses, we measured the association between anticipatory responses to the cues themselves and brain responses to noxious heat, however we did not observe associations between anticipatory arousal and responses within a priori networks. We also found that quantitative models fit to heat-evoked and anticipatory SCR were highly similar to models fit to subjective pain. However, as the number of participants with useable skin conductance or pupil dilation data was extremely limited due to technical malfunctions and variations in arousal, we consider these findings exploratory and do not make strong claims based on these results. Future studies should continue to compare the effects of learning, instructions, and expectations on subjective pain with effects on physiological outcome measures to determine whether autonomic responses to noxious stimuli are shaped by pain decision-making (Mischkowski et al., 2019) or whether physiological responses are shaped through independent pathways, e.g. through a dual process model (Ohman and Soares, 1993; Mineka and Ohman, 2002).
 
-## Conclusion
+### Conclusion
 
 Together, these findings reveal that instructions and learning lead to both interactive and dissociable processes even within individuals. We view these findings in light of theories on the relationship between conditioning and expectancy (Rescorla, 1988; Kirsch, 1997; Kirsch et al., 2004) and long-standing debates about whether placebo effects depend on conditioning or expectancy. We suggest that considering the brain mechanisms that mediate dynamic expectancy-based pain modulation shines new light on these distinctions. The human brain contains parallel pain modulatory circuits that (i) update as contingencies change (e.g. insula), (ii) continue to respond to initial contingencies regardless of whether they were learned through instruction or experience (e.g. RVM), or (iii) respond to experiential learning differentially as a function of whether or not individuals were exposed to instructions (e.g. rACC). These findings indicate that we gain new insights on clinically relevant outcomes from measuring how instructions and learning interact to shape outcomes, rather than assuming that circuits and processes are sensitive to either expectancy or conditioning. Understanding these processes in clinical populations may shed light directly on the mechanisms of therapeutic interventions, for example the interplay between instructed and exposure-based interventions in cognitive behavioral therapy for chronic pain and affective disorders.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Forty-nine participants (25 female, Mage = 28.04 years, SDage = 7.04) were recruited and consented to participate in an fMRI study designed to measure ‘how pain and emotions are processed in the human brain and influenced by psychological factors’. Participants provided informed consent in accordance with the Declaration of Helsinki, and the protocol was approved by the NIH’s Combined Neuroscience Institutional Review Board (Protocol 15-AT-0132, PI: Atlas). Participants were eligible to participate if they were between 18 and 50, fluent in English, healthy (i.e. had no medical conditions that affect pain or somatosensation, no psychiatric, neurological, autonomic, or cardiovascular disorders, no chronic systemic diseases, and no medication that can affect pain perception), right-handed, and had received a medical exam at NIH within the previous year. All participants underwent urine toxicology testing to ensure they had not used recreational drugs that alter pain. Participants were drawn from a pool of subjects who had completed an initial screening visit that tested whether participants reliably reported increased pain with increased temperatures (r2 >0.4) and exhibited pain tolerance at or below 50 °C (the maximum temperature we applied during the study). Nine participants who provided consent did not complete the experiment due to ineligibility based on calibration (n=4) technical failures (n=1), compliance with procedures (n=2), or anatomical abnormalities identified in a clinical scan (n=2) and were not included in the current analyses. The final sample included 40 participants (22 female; Mage = 27.00 years, SDage = 6.21). As detailed in our clinical protocol (15-AT-0132; https://clinicaltrials.gov/ identifier NCT02446262), sample size was based on power analyses from our previous studies and on a behavioral pilot experiment conducted prior to the fMRI study. We computed the effect size of cue-based differences in reported pain in a sample of 12 participants (6 per group) and determined that we need a minimum of 5–9 participants to achieve 80–95% power to detect cue-based differences in pain, including reversals (data available upon request). We therefore included 20 participants per group in the fMRI experiment. Two participants in the Uninstructed Group and two participants in the Instructed Group were excluded from fMRI analyses due to excessive head motion or technical issues during the scan (see Procedure), leaving a final sample of 36 participants for fMRI analyses (18 Uninstructed Group, 18 Instructed Group). All 40 participants were included in behavioral analyses.
 
-## Materials and procedure
+### Materials and procedure
 
-## Stimuli and apparatus
+#### Stimuli and apparatus
 
 We delivered thermal stimulation to the left (non-dominant) volar forearm using a 16x16 ATS contact heat thermode controlled with a Pathway pain and sensory evaluation system (Medoc Ltd, Ramat Yisha, Israel). Each heat stimulus lasted 8 s and consisted of three phases: a 1.5 s on-ramp phase in which the temperature of the thermode rose from 32 °C to the target temperature level, a 5 s plateau phase in which target temperature was maintained, and a 1.5 s off-ramp phase in which the temperature returned to 32 °C. Thermode placement was adjusted between each block of trials (i.e. every 12 trials) to avoid sensitization, habituation, and skin damage. Temperatures ranged from 36°C to 50°C, in increments of 0.5 °C, and were selected based on a thermal pain calibration conducted immediately prior to the experiment. Thermode temperature was maintained at 32 °C between trials.
 
@@ -161,7 +1347,7 @@ Experiment Builder (SR-Research, Ontario, Canada) was used to deliver visual and
 
 Participants also completed questionnaires prior to the experiment, including the State-Trait Anxiety Inventory (STAI Form X Gaudry et al., 1975), the Positive and Negative Affect Scale (Watson et al., 1988), and Behavioral Inhibition/Activation Scale (Carver and White, 1994). For the present manuscript, we focused on pain reports and brain responses evoked by painful heat.
 
-## Procedure
+#### Procedure
 
 Participants underwent an adaptive staircase pain calibration prior to the experimental task (see Figure 1A). The adaptive staircase calibration procedure has been described in depth in previous work (Atlas et al., 2010; Atlas et al., 2012; Mischkowski et al., 2019; Dildine et al., 2020; Amir et al., 2021). Participants experience temperatures across eight skin sites on the left volar forearm and provide ratings on a 10-point scale, where 1 denotes warmth, 2 denotes pain threshold, 5 denotes moderate pain, 8 denotes maximum tolerable pain, and 10 denotes the most pain imaginable. We use iterative regression to isolate each participant’s threshold, tolerance, and the strength of the correlation between temperature and pain (i.e. r2). All participants had previously completed the task outside of the MRI facility to establish initial eligibility, and completed the task again on the day of the fMRI scan (Amir et al., 2021). Participants were eligible to continue if they reported reliable increases in pain as a function of temperature (r2 >0.4) and reported maximum pain tolerance at 50 degrees or less. Four participants were deemed ineligible based on calibration on the day of the study. The calibration procedure also allowed us to identify four skin sites per individual that responded most similarly across temperatures (i.e. lowest average residuals based on overall temperature-pain regression) and to individually calibrate temperatures associated with ratings of low pain (2 on 10-point scale), medium pain (5 on 10-point scale), and high pain (maximum tolerable pain; 8 on 10-point scale). These temperatures and skin sites were used during the main experiment, as described below.
 
@@ -175,19 +1361,19 @@ We used two pseudorandom trial orders with three contingency reversals, which we
 
 Following the fMRI scan, participants rated affect associated with each cue and provided retrospective expectancy ratings to report how much pain they expected in response to each cue at the beginning and the end of the task.
 
-## BOLD FMRI data acquisition and preprocessing
+#### BOLD FMRI data acquisition and preprocessing
 
 BOLD fMRI data were collected on a 3T Siemens Skyra scanner at the NIH’s MRI Research Facility / Functional Magnetic Resonance Imaging Facility. After positioning the participant in the scanner bore, we collected a localizer followed by a T1-MPRAGE collected in the sagittal plane (256 slices). We collected 7 runs of multi-echo data with a 2.5 s TR and 3 mm isotropic voxels (191 volumes collected anterior to posterior; flip angle = 90°; acquisition matrix = 70 x 0 x 0x64; 1st echo = 11ms; 2nd echo = 22.72ms; 3rd echo 34.44ms).
 
 Multi-echo data were preprocessed and combined using the ‘afni_proc.py’ program in Analysis of Functional Images (AFNI; Cox, 1996). We used ‘@SSwarper’ to nonlinearly align the anatomical scans to the MNI152_T1 template (MNI152_2009_template_SSW.nii.gz in AFNI). These nonlinear transformations were passed to afni_proc.py for general preprocessing and quality control. We removed the first 4 TRs of functional data to reach magnetization steady state, leaving a total of 187 TRs of fMRI data per run during subsequent processing and analysis steps. We performed slice time correction using AFNI’s 3dTshift program then performed motion correction by aligning echo 2 volumes to a low-motion minimum outlier base image (MIN_OUTLIER, estimated by ‘3dToutcount’) and warped to align with the anatomical volume and with the template. All volumetric transformations, both linear and non-linear, were combined into a single transformation to avoid repeated resampling of the EPI volumes. Motion correction estimates were computed based on echo 2 volumes using 6 parameters (3 translations, 3 rotations) and we applied the same corrections to each echo. We made sure there was valid data for each echo and each TR prior to combining multi-echo data. We combined across the three echoes using AFNI’s @compute_OC_weights function to generate a weighted combination of the three echoes. These ‘optimally combined’ data were used for subsequent analyses. Preliminary analyses indicated that combining across the echoes with optimal combination led to better heat-related activation in pain-related regions than analyses of a single echo or using other approaches to combine multi-echo data (e.g. TE-dependent analysis Kundu et al., 2012; Lombardo et al., 2016). In future analyses, we may formally compare optimal combination with other approaches for echo combination and denoising. Following optimal combination, data were normalized to percent signal change and smoothed using a 4 mm full-width half max smoothing kernel. Data were then analyzed using single trial estimates in MATLAB (The Mathworks, Inc, Natick, MA), as described below. Four participants were excluded from fMRI analyses due to technical issues with the fMRI scanner during data collection (n=2) or excessive head motion (motion >2 mm; n=2), leaving a final sample of 36 participants for fMRI analyses (18 in Instructed Group).
 
-## Psychophysiological data processing
+#### Psychophysiological data processing
 
 Skin conductance data was preprocessed in AcqKnowledge (Biopac Systems, Inc, Goleta, CA). During preprocessing, data were smoothed (1000-sample Gaussian smoothing kernel) and filtered (25 Hz FIR low-pass filter) in AcqKnowledge, then imported into MATLAB and downsampled to 250 Hz. Data were then analyzed using Ledalab’s continuous decomposition analysis (CDA), which accounts for phasic and tonic signals and can capture multiple responses during the 8 s heat period (Benedek and Kaernbach, 2010). We analyzed both (a) cue-evoked anticipatory responses that occurred within 4 s following cue presentation; and (b) responses that occurred between heat onset and 4 s after heat offset. We used the average phasic driver (‘SCR’) in trial-wise analyses. Participants were included in analyses if they had >4 trials with measurable SCR. Thirty-six participants were included in analyses across temperatures (18 in Instructed Group); 30 participants were included in analyses of responses to medium heat (13 in Instructed Group); and 29 participants were included in analyses of anticipatory responses (15 in Instructed Group).
 
 Pupillometry data were processed in MATLAB using both publicly available software and custom code. Data were imported to MATLAB and blinks were interpolated using the ‘GazeVisToolbox’ (available at https://github.com/djangraw/GazeVisToolbox, copy archived at swh:1:rev:afbb6cb89e6fc494e0a578d44461af085fa5d46b; Jangraw et al., 2014). Consistent with our previous work (Mischkowski et al., 2019), we interpolated from 100ms prior to each blink to 100ms following each blink to avoid extreme values surrounding each blink. Data were aligned to event markers and we visualized individual trials to exclude trials that were contaminated by artifacts. Subjects with fewer than seven useable trials (n=20; 9 in Instructed Group) were excluded from analyses of pupillary data. Useable subjects had a mean of 42.9 useable trials (M=54.4% of trials). 1000 Hz data was downsampled to 10 Hz and then we computed baseline-corrected mean pupil dilation and area-under the curve as measures of pupillary response during the heat period.
 
-## Statistical analysis of expectations, pain, autonomic responses, and heat-evoked neural signature pattern expression
+#### Statistical analysis of expectations, pain, autonomic responses, and heat-evoked neural signature pattern expression
 
 We used the statistical software R (R Development Core Team, 1996) to analyze effects of our experimental manipulations on expectancy ratings, pain reports, physiological arousal, and heat-evoked brain signature pattern expression (see below, “Brain-based classifier analyses”). We measured effects across the entire task, as well as before the first reversal. We used two-way mixed ANOVAs implemented through the R function ‘anova_test’ from the package “rstatix” (Kassambara, 2021) to analyze the effects of Group and Cue on expectancy ratings prior to the task and after conditioning, as well as post-task ratings. All other analyses were conducted using multilevel linear mixed effects models in R.
 
@@ -197,9 +1383,13 @@ We evaluated linear mixed models using both Bayesian and frequentist statistics 
 
 We then evaluated the corresponding model using ‘lmer’ from the lme4 package (Bates et al., 2015) to provide frequentist statistics and using ‘lme’ from the nlme package (Pinheiro et al., 2021) to incorporate autoregression. If frequentist models corresponding to the best Bayes model did not converge, we removed the covariance between random effects (i.e. specified that slopes and intercepts are uncorrelated using ||), and we used optimizers to achieve convergence. Final models are specified in Tables 1–3. We acknowledge findings from all approaches in our Results, using guidelines for Bayesian modeling from Makowski et al., 2019b; Makowski et al., 2019a. Results across approaches were largely consistent (see Tables 1–3).
 
-## Computational modeling of pain reversal learning and modulation by instructions
+#### Computational modeling of pain reversal learning and modulation by instructions
 
-We applied a computational model of instructed reversal learning (Atlas et al., 2016; Atlas and Phelps, 2018) to predict pain reports on medium heat trials. The model is a standard reinforcement learning model (Rescorla and Wagner, 1972) that describes how expected value (EV) updates in response to prediction errors in the environment, depending on learning rate. We include an additional parameter, ρ, which guides whether cues’ expected values (EV) are exchanged when instructions are delivered. If ρ = 0, each cue’s EV remains stable (i.e. retains the same EV prior to instructions) whereas if ρ = 1, the EVs of the two respective cues are exchanged. Mathematically for two cues (a and b), this is implemented for trial (t) as:EVt+1(xb)=ρ∗Vt(xa)+(1−ρ)∗Vt(xb)
+We applied a computational model of instructed reversal learning (Atlas et al., 2016; Atlas and Phelps, 2018) to predict pain reports on medium heat trials. The model is a standard reinforcement learning model (Rescorla and Wagner, 1972) that describes how expected value (EV) updates in response to prediction errors in the environment, depending on learning rate. We include an additional parameter, ρ, which guides whether cues’ expected values (EV) are exchanged when instructions are delivered. If ρ = 0, each cue’s EV remains stable (i.e. retains the same EV prior to instructions) whereas if ρ = 1, the EVs of the two respective cues are exchanged. Mathematically for two cues (a and b), this is implemented for trial (t) as:
+
+$$
+EV_{t+1}(x_{b})=ρ∗V_{t}(x_{a})+(1−ρ)∗V_{t}(x_{b})
+$$
 
 For complete details, see Atlas et al., 2016. The present model fitting procedure differed in that we fit models to pain ratings on medium heat trials, rather than SCR on unreinforced trials, although we fit models to SCR in exploratory analyses, as described below. In the present study, we assume that pairings between predictive stimuli and high and low intensity heat engages stimulus-based learning, similar to CS-US pairings in classical conditioning experiments. Fitting to medium heat trials isolates the timecourse of expected value, since the stimulus temperature is constant, and therefore the only factor likely to guide cue-based variation in pain is presumably the cue’s dynamic expected value based on learning and/or instructions.
 
@@ -211,19 +1401,31 @@ The instructed Rescorla-Wagner model with pre-determined initial values and free
 
 We used the same approach to fit computational models to anticipatory SCR and SCR evoked during medium heat simulation.
 
-## FMRI analyses
+### FMRI analyses
 
-## Single-trial analyses
+#### Single-trial analyses
 
 Following preprocessing in AFNI, we used single trial analyses to estimate heat-evoked responses on a trial-by-trial basis and avoid assumptions about the fixed shape of the hemodynamic response. We used flexible basis functions optimized to capture heat-evoked BOLD responses, consistent with previous work on heat-evoked fMRI (Atlas et al., 2010; Atlas et al., 2012; Atlas et al., 2014a; Wager et al., 2013; Woo et al., 2017). We applied principal components analysis-based spike detection (scn_session_spike_id.m, available at https://canlab.github.io/; Wager, 2022) to identify potential spikes and noise in the data which were modeled as nuisance covariates, along with the movement parameters from AFNI’s preprocessing pipeline. We used the function single_trial_analysis.m (https://canlab.github.io/) to generate trial-by-trial estimates of height, width, delay, and area-under-the-curve (AUC) for each heat period. Trials in which subjects failed to respond were omitted from analyses (Mall = 1.69, SDall = 2.38; MInstructed = 1.11, SDInstructed = 1.08, rangeInstructed = 0–3; MUninstructed = 2.28, SDUninstructed = 3.12, rangeUninstructed = 0–11). We focused on AUC estimates in subsequent analyses, consistent with our previous work. We computed variance inflation factors (VIFs) using the single_trial_weights_vifthresh.m function to identify bad trials, that is those who coincided with spikes or motion and were therefore not reliable estimates. We excluded any trials with VIFs >2 from subsequent analyses (M=3.39, SD = 2.38), and smoothed trial estimates with a 4 mm gaussian kernel, consistent with previous work (Atlas et al., 2010; Atlas et al., 2012; Atlas et al., 2014c). Trial estimates were passed into voxel-wise second level analyses across trials and across participants using the general linear model (fit_gls_brain.m; https://canlab.github.io/) and robust regression (robfit.m; https://canlab.github.io/) to examine neural correlates of associative learning (see below, ‘Neural correlates of expected value’). Trial-level estimates were also employed in multilevel mediation analyses (see below, ‘Multilevel mediation analyses’).
 
-## Multilevel mediation analyses
+#### Multilevel mediation analyses
 
-We used multilevel mediation to examine whether brain activity mediated the effect of predictive cues on subjective pain on medium heat trials. Mediation was implemented by the MATLAB function mediation.m (https://canlab.github.io/). Cue was included as the input variable (i.e. X; coded as 1 for High cue, –1 for Low cue), pain was included as the output variable (i.e. Y), and we searched for potential mediators. Voxelwise mediation, or mediation effect parametric mapping (Wager et al., 2009; Atlas et al., 2010) yields interpretable maps that are similar to simultaneous partial regressions, although implemented using mixed effects. The mediation effect (a*b) identifies regions whose activity contributes to variance in the effect of the independent variable on the dependent variable (Path c). For individual i, trial j:.(1)Yij=d0j+cjXij+e0ij
+We used multilevel mediation to examine whether brain activity mediated the effect of predictive cues on subjective pain on medium heat trials. Mediation was implemented by the MATLAB function mediation.m (https://canlab.github.io/). Cue was included as the input variable (i.e. X; coded as 1 for High cue, –1 for Low cue), pain was included as the output variable (i.e. Y), and we searched for potential mediators. Voxelwise mediation, or mediation effect parametric mapping (Wager et al., 2009; Atlas et al., 2010) yields interpretable maps that are similar to simultaneous partial regressions, although implemented using mixed effects. The mediation effect (a*b) identifies regions whose activity contributes to variance in the effect of the independent variable on the dependent variable (Path c). For individual i, trial j:
 
-Path a denotes the effect of the input variable on the potential mediator (M; brain activation in a given voxel), thereby representing cue effects on brain responses to medium heat:.(2)Mij=d1j+ajXij+e1ij
+$$
+Y_{ij}=d_{0j}+c_{j}X_{ij}+e_{0ij}
+$$
 
-Path b measures the association between the mediator and outcome, controlling for the input variable. Here, this represents brain regions that predict pain, controlling for cue type:.(3)Yij=d2j+cj′Xij+biMij+e2ij
+Path a denotes the effect of the input variable on the potential mediator (M; brain activation in a given voxel), thereby representing cue effects on brain responses to medium heat:
+
+$$
+M_{ij}=d_{1j}+a_{j}X_{ij}+e_{1ij}
+$$
+
+Path b measures the association between the mediator and outcome, controlling for the input variable. Here, this represents brain regions that predict pain, controlling for cue type:
+
+$$
+Y_{ij}=d_{2j}+c_{j}^{′}X_{ij}+b_{i}M_{ij}+e_{2ij}
+$$
 
 In multilevel mediation, the difference between the total effect (Path c: the effect of cues on subjective pain) and the direct effect (Path c`: the effect of cues on subjective pain when controlling for the mediator, see equation 3) is equivalent to the sum of the product of Path a and Path b coefficients and their covariance (Shrout and Bolger, 2002; Kenny et al., 2003). Our mixed models included intercepts (d0-2) and error terms (e0-2) for each individual. Group level estimates are computed by treating person-level intercepts and slopes as random effects. For complete details, see Atlas et al., 2010.
 
@@ -233,7 +1435,7 @@ We focus in particular on effects of current contingencies (i.e. Cue x Phase int
 
 We ran two types of mediation analyses on medium heat trials: (a) voxel-wise mediation analyses, which search for brain regions that mediate the effects of predictive cues on pain; (b) statistical tests of whether brain responses within ROIs formally mediated cue effects on subjective pain. We evaluated mediation analyses irrespective of Group, and with Group as moderator. We used bootstrapping to estimate the significance of the mediation effect (Shrout and Bolger, 2002; Kenny et al., 2003) in analyses irrespective of Group, and used ordinary least squares to estimate moderated mediation when Group was included in the model. We omitted the first trial of each run from analyses to be consistent with behavioral results.
 
-## Neural correlates of expected value and prediction error
+#### Neural correlates of expected value and prediction error
 
 Whereas our mediation analyses tested effects of Phase, i.e. immediate changes in response to instruction or contingency reversal, we used quantitative models to test whether expected value dynamically shapes responses to noxious stimulation. We used parameters from the best-fitting models for each group, based on jack-knife estimation, to generate the timecourse of expected value (EV) for each subject based on their sequence of trials. We chose to use the mean of the group-level estimates to avoid noise that might come from individual-level model fits. We examined the neural correlates of expected value on medium heat trials only, which avoids confounds due to temperature. We focused on how expected value influenced responses to medium intensity heat, rather than responses to cues themselves, as we were most interested in how pain-related responses are influenced by learned expectations, and we did not optimize the anticipatory period to jointly estimate cue-evoked responses and responses to heat. Our main manuscript focuses on the timecourse of EV based on fits to pain reports; we include associations based on fits to heat-evoked and anticipatory SCR in Supplementary Materials.
 
@@ -241,16 +1443,16 @@ Noxious stimulation might also be accompanied by prediction errors; for example,
 
 We report three group-level analyses: (1) Analysis across all participants testing for differences by group; (2) Analyses within each group to isolate effects of instructed learning (Instructed Group) or feedback-driven learning (Uninstructed Group); (3) Comparisons of instructed and feedback-driven learning within the Instructed Group. Individual results were computed using the MATLAB function fit_gls_brain (https://canlab.github.io/) and group results were computed using robust regression (Wager et al., 2005) using the function robfit.m (https://canlab.github.io/).
 
-## Pain modulatory regions of interest
+#### Pain modulatory regions of interest
 
 We tested for cue-based modulation of brain regions that have been previously implicated in studies of expectancy-based pain modulation by applying an a priori mask generated from our previous meta-analysis of fMRI studies of placebo analgesia and expectancy-based modulation (Atlas and Wager, 2014b). We included regions that showed either expectancy-related increases or decreases in activation within the mask. Figure 5—figure supplement 1A depicts the mask, which includes regions that show increased activation with expected pain relief (i.e. activation inversely related to subjective pain) such as the DLPFC, rACC, PAG, and VMPFC, and regions that show reduced activation with expected pain relief, including the insula, thalamus, cingulate, and secondary somatosensory cortex. We report results FDR-corrected within this mask to evaluate responses within pain modulatory regions.
 
 We also tested for effects on two recently developed brain-based classifiers that have been shown to be sensitive and specific to acute pain, the Neurologic Pain Signature (NPS; Wager et al., 2013) and the Stimulus Intensity Independent Pain Signature (SIIPS; Woo et al., 2017). We used the unthresholded NPS pattern for all analyses, and the function apply_mask.m (https://canlab.github.io/) to compute dot products. We computed the dot-product of each signature with beta coefficients and contrast maps for analyses of computational models, and trial-level images to use the brain response as an outcome in our multilevel mediation analyses.
 
-## Value-processing regions of interest
+#### Value-processing regions of interest
 
 In addition to pain modulatory networks, we were also interested in testing effects of predictive cues on brain regions involved in value-based learning. To this end, we examined responses within 5 a priori regions of interest (see Figure 5—figure supplement 1B): the bilateral striatum, bilateral amygdala, and the ventromedial prefrontal cortex (VMPFC). We used the same ROI masks that were applied in our prior work on instructed reversal learning (Atlas et al., 2016). While the amygdala and striatum masks were defined based on Atlases in MNI space (amygdala ROI available at https://canlab.github.io/; striatum ROI based on combining putamen and caudate masks from the Automated Anatomical Labeling atlas for SPM8 [http://www.gin.cnrs.fr/AAL; Tzourio-Mazoyer et al., 2002]), the VMPFC ROI was functionally defined in our previous work (Atlas et al., 2016) by analyzing deactivation in response to shock. We used the same ROI mask here since analyses as a function of heat intensity elicited significant decreases in this region. We averaged trial-level AUC estimates across each ROI to conduct mediation analyses and averaged across beta coefficients and contrast maps to analyze ROI-wise associations with expected value. Results are reported in Table 4.
 
-## Whole brain exploratory analyses
+#### Whole brain exploratory analyses
 
 In addition to the analyses in a priori networks and regions of interest involved in pain, placebo, and value-based processing, we also conducted exploratory voxel-wise whole brain analyses. We report whole brain results at FDR-corrected q<0.05 in the main manuscript, and present exploratory uncorrected results at p<0.001 in Source Data accompanying each figure for completeness and for use in future meta-analyses. In cases when FDR-corrected p-values exceeded p=0.001, we use uncorrected results for inference. Anatomical labels were identified using the SPM Anatomy Toolbox (Eickhoff et al., 2005), which includes the Thalamic Connectivity Toolbox (Behrens et al., 2003; Johansen-Berg et al., 2005), and the Brainstem Navigator (http://www.nitrc.org/projects/brainstemnavig/; Singh et al., 2021).

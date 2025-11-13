@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.39123.001 Mycobacterium tuberculosis is the leading worldwide cause of death due to a single infectious agent. Existing anti-tuberculous therapies require long treatments and are complicated by multi-drug-resistant strains. Host-directed therapies have been proposed as an orthogonal approach, but few have moved into clinical trials. Here, we use the zebrafish- Mycobacterium marinum infection model as a whole-animal screening platform to identify FDA-approved, host-directed compounds. We identify multiple compounds that modulate host immunity to limit mycobacterial disease, including the inexpensive, safe, and widely used drug clemastine. We find that clemastine alters macrophage calcium transients through potentiation of the purinergic receptor P2RX7. Host-directed drug activity in zebrafish larvae depends on both P2RX7 and inflammasome signaling. Thus, targeted activation of a P2RX7 axis provides a novel strategy for enhanced control of mycobacterial infections. Using a novel explant model, we find that clemastine is also effective within the complex granulomas that are the hallmark of mycobacterial infection.
+Mycobacterium tuberculosis is the leading worldwide cause of death due to a single infectious agent. Existing anti-tuberculous therapies require long treatments and are complicated by multi-drug-resistant strains. Host-directed therapies have been proposed as an orthogonal approach, but few have moved into clinical trials. Here, we use the zebrafish-Mycobacterium marinum infection model as a whole-animal screening platform to identify FDA-approved, host-directed compounds. We identify multiple compounds that modulate host immunity to limit mycobacterial disease, including the inexpensive, safe, and widely used drug clemastine. We find that clemastine alters macrophage calcium transients through potentiation of the purinergic receptor P2RX7. Host-directed drug activity in zebrafish larvae depends on both P2RX7 and inflammasome signaling. Thus, targeted activation of a P2RX7 axis provides a novel strategy for enhanced control of mycobacterial infections. Using a novel explant model, we find that clemastine is also effective within the complex granulomas that are the hallmark of mycobacterial infection.
 
 ## Introduction
 
@@ -37,9 +37,17 @@ We identify a number of host-directed therapies with in vivo efficacy against my
 
 ## Results
 
-## An in vivo chemical screen uncovers six novel HDTs for mycobacterial infection
+### An in vivo chemical screen uncovers six novel HDTs for mycobacterial infection
 
 To identify novel host-directed therapies that reduce mycobacterial burden in vivo, we screened the 1200 FDA-approved drugs of the Prestwick Chemical Library using zebrafish larvae infected with fluorescent M. marinum (Figure 1A). Three animals per well in a 96-well format were each infected with ~ 150 CFU of M. marinum and maintained for 5 days at a 5 µM concentration of each compound. We evaluated the efficacy of each of the 1200 compounds in reducing bacterial growth by measuring mycobacterial fluorescence in whole animals over the course of a 5-day infection. Quantitation of bacterial fluorescence driven by a stable, constitutive promoter provides a validated measure of bacterial burden in zebrafish larvae (Adams et al., 2011; Takaki et al., 2013; Walton et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of chemical screen. 1200 compounds in the Prestwick Library were screened at a final concentration of 5 µM in 0.5% DMSO for substantial reductions in bacterial burden. Three larvae were placed in each well and imaged at 5 days post-infection (dpi). 1° denotes primary screen, 2° secondary, and 3° tertiary screens. Numerator represents number of hits after that screening step over the total number of compounds tested in that step. Mm = Mycobacterium marinum (B) Hits from chemical screen determined to reduce bacterial burden compared to DMSO control. All drug concentrations are 5 µM in 0.5% DMSO. Bacterial burden by fluorescence is normalized to DMSO control for each experiment. Data shown is representative of three experiments with n > 15 animals for each experiment. Error bars are s.d. *represents drugs with previously identified host-directed mechanism (C–J), Chemical structures of drugs identified as reducing bacterial burden in a host-directed manner.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Mm:tdTomato bacterial broth culture grown in the presence of compounds identified from the chemical screen (results of 2° screen in Figure 1) at 5 µM in 0.5% DMSO (shades of blue), 0.5% DMSO as a vehicle control (green) or 200 µg/mL isoniazid (red). Previously known antimicrobial agents are in purple and were excluded from further analysis, regardless of their effects on bacterial growth in broth culture.
 
 From the initial screen, we identified 51 compounds that reduced mycobacterial burden in vivo. In a secondary screen of these potential hits, we found that 23 of the 51 compounds identified resulted in reduced bacterial burdens in a second set of in vivo infections, and these 23 compounds were selected for further analysis. To distinguish between drugs that directly target bacteria and those that have host-dependent effects, we treated M. marinum cultures with each compound and monitored bacterial growth (Figure 1A). Three compounds, each previously reported to have antimicrobial activity, exhibited direct anti-mycobacterial activity at the concentrations tested (Figure 1, Figure 1—figure supplement 1A–D), validating our ability to recapitulate the effect of known anti-tubercular drugs in an in vivo model. A known antibiotic, sulfamethazine, was not effective at 5 µM in broth culture, but was effective in vivo, suggesting that in vivo distribution kinetics and/or metabolism may enhance potency. Thus, the whole animal drug screening approach was able to identify antibiotics that are effective in vivo but might be missed in screens of axenic cultures (Supplementary file 1). Due to the known antimicrobial function of sulfamethazine, we did not consider it further as a potential host-directed therapy. The Prestwick Chemical Library contains additional antimycobacterial agents that did not emerge as hits; however, a number of these compounds are ineffective in zebrafish larvae at the 5 µM concentration used during our screen (Adams et al., 2011; Takaki et al., 2013).
 
@@ -47,9 +55,17 @@ Because host-directed therapies may provide new approaches to TB treatment, we f
 
 Of the remaining eight compounds we identified as likely to be host-directed therapies (Figure 1C–J), one drug, desipramine, had been described previously as a potential HDT; it is proposed to act through inhibition of acid sphingomyelinase, which has been implicated in necroptosis and the response to mycobacterial infection in zebrafish (Roca and Ramakrishnan, 2013). Chlorpromazine is known to inhibit acid sphingomyelinase, although it also has reported anti-mycobacterial activity in culture (Amaral et al., 2007). To the best of our knowledge, none of the six remaining compounds had previously been considered as a potential host-directed therapy for mycobacterial infection. We chose to focus on the most potent of these, clemastine, an inexpensive, widely available, over-the-counter antihistamine.
 
-## Clemastine is a host-directed compound that requires host macrophages to reduce bacterial growth
+### Clemastine is a host-directed compound that requires host macrophages to reduce bacterial growth
 
 We found that clemastine consistently reduced mycobacterial growth in vivo over the course of a 5-day infection (Figure 2A–B). The effect was dose dependent (Figure 2C), and at a concentration of 5 µM resulted in a ~ 60% reduction in bacterial burden by 5 days post-infection (dpi). At 5 dpi, there were fewer total infection foci, and areas of infection were smaller (Figure 2B), indicating that clemastine reduces bacterial burden significantly after just a few days of infection. In culture conditions, clemastine had no effect on bacterial growth at concentrations up to 50 µM, although at higher concentrations that were toxic to larvae (100 µM), there was some reduction in bacterial growth in culture (Figure 2D). Thus, clemastine functions to reduce bacterial burden in whole animals in a host-dependent manner.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig2-v2.jpg)
+
+**Figure 2.:** (A) Bacterial burden per animal assessed by Mm:tdTomato fluorescence 5 days post infection (dpi) after treatment with 0.5% DMSO vehicle or 5 µM clemastine. Red dots denote the corresponding image shown in Figure 2B. Representative of five experiments. (B) Representative images from experiment in Figure 2A (red dots). Mm:tdTomato infection treated with 0.5% DMSO vehicle or 5 µM clemastine in 0.5% DMSO. White arrows denote regions of bacterial foci. Scale bar is 500 µm. (C) Quantification of Mm:tdTomato fluorescence at 5 dpi in zebrafish larvae treated with increasing concentrations of clemastine. (D) Mm:tdTomato bacterial broth culture grown in the presence of increasing concentrations of clemastine, compared to 0.5% DMSO, 1% DMSO, no vehicle (-), and 200 µg/mL isoniazid. (E) Bacterial burden of wildtype and heterozygous siblings or irf8st95 mutants, which lack macrophages, treated with 0.5% DMSO or 5 µM clemastine. Blue dots indicate animals in Figure 2F. Data are pooled from two biological replicates. (F) Representative infections from irf8st95 mutants and wildtype/heterozygous siblings from each treatment group in Figure 2E at 5 dpi. Wildtype animals (left) were equally brightened (no change in gamma settings) to show contrast of bacteria and brightfield. The irf8st95-/- example animals (right) were not brightened. (G) Number of bacteria per macrophage during treatment with 0.5% DMSO or 5 µM clemastine, 1 dpi. Each dot represents the mean number of intracellular Mm:mCerulean bacteria inside macrophages of one Tg (mfap4:tdTomato)xt11 animal at 24 hpi infected with ~ 50 CFU. Representative of three independent experiments. (A) Two-tailed, unpaired t-test. (C) Ordinary one-way ANOVA with Tukey’s multiple comparison test, ns1 = 0.0864, ns2 = 0.7799, ns3 = 0.2415. Post-test for linear trend, p<0.0001. (E) Kruskal-Wallis ANOVA for unequal variances with Dunn’s multiple comparisons test, ns1 > 0.9999 (A,C,E) Error bars are s.d. (G) Two-tailed unpaired t-test; error bars are s.e.m. p-Values from statistical tests on untransformed data are provided in Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bacterial burden per animal assessed by Mm:tdTomato fluorescence 5 days post-infection after treatment with 0.5% DMSO or 5 µM diphenhydramine. (B) Example images from quantification in Figure 2G. Bacteria are Mm:mCerulean and macrophages Tg(mfap4:tdTomato)xt12 are false colored in magenta, maximum intensity projection of 5 z stacks of 10 µm. Scale bar is 100 µm. (C) Number of infected macrophages per fish. Each dot represents the total number of infected macrophages in each animal from experiment in Figure 2G. (D) Stills from Video 1. Scale bar is 100 µm. Maximum intensity projection of 4 z-stacks of 15 µm. White arrows mark bacteria that are present in both initial and final timeframes, and yellow arrows mark individual bacteria that disappear during the timelapse. (E) Ratio of green to red fluorescent bacteria from Mm:aprA’::GFP,smyc::mCherry infection (~ 50 CFU) in wildtype zebrafish larvae over the course of a 5-day infection during treatment with 0.5% DMSO or 5 µM clemastine. (A) Unpaired t-test, ns1 = 0.3147, error bars are s.d. (C) Unpaired t-test, ns1 = 0.1907, error bars are s.d. (E) Unpaired t-tests between treatments for each day, ns1 > 0.9999, ns2 = 0.5505, error bars are s.d. p-Values from all transformed and untransformed data are provided in Supplementary file 3.
 
 Clemastine’s mechanism of action was unlikely to be attributable to its antihistamine activity. Of the 41 antihistamines in the Prestwick Chemical Library, only one other in a separate class, trimeprazine, was identified as a hit. In addition, diphenhydramine, another antihistamine of the same family as clemastine, had no effect on bacterial burden (Figure 2—figure supplement 1A). Thus, we hypothesized that clemastine’s host-directed antimycobacterial activity was due to a distinct effect of the drug unrelated to its antihistamine activity.
 
@@ -59,31 +75,75 @@ We next took advantage of the ability to perform high-resolution, longitudinal i
 
 To distinguish between growth restriction and a microbicidal effect, we performed long-term live imaging, focusing on individual macrophages within infected animals. Clemastine-treated animals consistently showed loss of bacterial fluorescence within macrophages, while control-treated animals did not, suggesting that clemastine enhances the microbicidal activity of macrophages (Video 1, Figure 2—figure supplement 1D). Together, these findings are consistent with a macrophage-dependent mechanism in which macrophage-induced mycobacterial killing is enhanced upon clemastine administration.
 
+![Video 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-video1.mp4.jpg)
+
+**Video 1.:** Split screen video of the caudal hematopoietic tissue of a Tg(mfap4:tdTomato-CAAX)xt6 (false colored magenta) zebrafish larva infected with ~50 CFU of Mm:mCerulean. Left side of the screen is an animal treated with 0.5% DMSO. Right side is an animal treated with 5 µM clemastine. In vivo timelapse is 17–34 hr post infection, with frames every 10 min. Maximum intensity projection of 4 z stacks of 15 μm, 30 frames per second. Stills of single channels are in Figure 2—figure supplement 1D.
+
 Pathogenic mycobacteria can limit acidification of the phagosome, creating a replicative niche within macrophages (Rohde et al., 2007). We sought to determine if clemastine increased the acidification of mycobacteria-containing phagosomes. The reporter aprA’::gfp has been used to probe acidification in mycobacteria (Abramovitch et al., 2011). The promoter of aprA is pH-inducible and drives expression of GFP only under acidic conditions (pH <6). Simultaneous visualization of the inducible GFP and mCherry expression from the constitutive promoter smyc (smyc’::mCherry), allows visualization of the acidification state of bacteria in vivo. We measured the ratio of green fluorescence to red fluorescence in M. marinum aprA’::GFP,smyc’::mCherry infections in vivo and observed that clemastine did not increase the proportion of bacteria that induce the aprA reporter (Figure 2—figure supplement 1E), indicating that clemastine likely does not act through increased rates of phagosome acidification.
 
-## Clemastine enhances calcium transients in infected macrophages, and its activity is dependent on P2RX7
+### Clemastine enhances calcium transients in infected macrophages, and its activity is dependent on P2RX7
 
 P2RX7 is a ligand-gated cation channel activated by extracellular ATP, which is found at sites of infection and injury (Di Virgilio et al., 2017). In humans, mice, and fish, P2RX7 is highly expressed on immune cells (Di Virgilio et al., 2017; He et al., 2013). One cell culture study had reported that clemastine can potentiate human P2X7 receptor (P2RX7) activity (Nörenberg et al., 2011). We hypothesized that, in vivo, clemastine’s effect on mycobacterial infection burden might involve potentiation of P2RX7.
 
 Using CRISPR/Cas9-based targeting, we isolated and outcrossed two different alleles predicted to abolish the second transmembrane domain of zebrafish P2RX7 receptor (P2rx7) (Figure 3A–B). Both alleles (p2rx7xt26 and p2rx7xt28) result in frameshifts in exon 10 and predicted stop codons upstream of the second transmembrane domain, suggesting that both alleles are functional nulls (Smart et al., 2003). We then examined whether these mutations affected responsiveness to clemastine treatment. Given P2RX7’s known role as a calcium channel, we first assessed intracellular calcium dynamics within macrophages in vivo during clemastine treatment.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of P2rx7 receptor, based on human structure, with CRISPR target site in exon 10 denoted with a star. (B) CRISPR/Cas9-mediated lesions in p2rx7 include a five base pair deletion (p2rx7xt26) and a two base pair deletion (p2rx7xt28) leading to a premature stop codon in exon 10. Red bar denotes p2rx7 mutants and blue bar denotes WT animals. (C) Quantification of calcium flashes observed with light-sheet microscopy in Tg(mfap4:GCaMP6F)xt25 and p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 infected with ~ 50 CFU Mm:tdTomato. Each dot represents the number of flashes observed in a single infected macrophage in an animal during a 30-min time-course during treatment with 0.5% DMSO or 5 µM clemastine, 4–5 hpi, n > 3 fish for each group. All cells counted were visibly infected with Mm:tdTomato and scoring performed blind to genotype or treatment. (D) Representative calcium transient. Panels are stills from a light-sheet video in an untreated Tg(mfap4:GCaMP6F)xt25 animal infected with Mm:tdTomato. Scale bar is 25 µm. (C) Kruskal-Wallis ANOVA for unequal variances, Dunn’s multiple comparison test. ns1 > 0.9999, ns2 = 0.7007 All error bars are s.d.; p values from statistical tests on untransformed data are provided in Supplementary file 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Enumerated calcium transients per cell per minute in six independent, uninfected Tg(mfap4:GCaMP6F)xt25 larvae. (B) Enumerated calcium transients per cell per minute in Tg(mfap4:GCaMP6F)xt25 and p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 untreated, uninfected larvae. Pooled flash counts from >3 animals per group (C) Enumerated calcium transients from uninfected cells from animals infected with Mm:tdTomato (~50 CFU), treated with 5 µM clemastine or 0.5% DMSO in Tg(mfap4:GCaMP6F)xt25 and p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 larvae, pooled from >3 animals per group. The blue line represents wildtype animals and the red line represents p2rx7 mutants. (A) Ordinary one-way ANOVA with Tukey’s multiple comparison test. All error bars are s.d., p values for all comparisons are in Supplementary file 3. (B) Unpaired t-test with Welch’s correction for unequal standard deviations, ns1 = 0.3206. (C) Kruskal-Wallis test for unequal variances, with Dunn’s multiple comparison test, ns1 = 0.2407, ns2 = 0.3357, ns3 > 0.9999. P values from all transformed and untransformed data are provided in Supplementary file 3.
+
 To examine clemastine’s effect on macrophage calcium dynamics in vivo, we generated the zebrafish transgenic line Tg(mfap4:GCaMP6F)xt25 in which the genetically encoded calcium indicator GCaMP6F is driven by a macrophage-specific promoter (Chen et al., 2013; Walton et al., 2015). Using light-sheet microscopy, we were able to examine macrophage calcium dynamics in whole animals in vivo during infection. Although calcium dynamics during mycobacterial infection have previously been studied in cultured macrophages, they have not been assessed in vertebrate models in vivo. We found that both infected and uninfected macrophages in the caudal area underwent stereotypical calcium flashes (Figure 3C–D) at ~ 0.1 flashes per minute (Figure 3—figure supplement 1A, Video 2). Administration of clemastine significantly enhanced the frequency of these macrophage calcium transients more than two-fold in infected cells (Figure 3C and Video 3).
+
+![Video 2.](https://cdn.elifesciences.org/articles/39123/elife-39123-video2.mp4.jpg)
+
+**Video 2.:** Split screen video of Tg(mfap4:GCaMP6F)xt25 (left) and p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 (right) uninfected larvae, 2 days post fertilization (dpf). 30 min light-sheet microscopy timelapse, acquiring every 8.8 s. Maximum intensity projection of 80 steps of 1 μm, 30 frames per second. Flashes are marked with either a circle (WT) or a square frame (mutant). Yellow frames represent cells that only flash once. Other colors (white, green, blue, red, green, cyan) represent cells that flash more than once, with the same cell marked in the same color throughout the timelapse. Only cells that are present during the whole video are marked. Whole cell flashes, not subcellular flickers, are marked.
+
+![Video 3.](https://cdn.elifesciences.org/articles/39123/elife-39123-video3.mp4.jpg)
+
+**Video 3.:** Split screen video of Tg(mfap4:GCaMP6F)xt25larval zebrafish 2 dpf, infected with ~ 50 CFU. Mm:TdTomato, 4 hr post infection, treated with 0.5% DMSO (left) or 5 µM clemastine (right). 30 min light-sheet microscopy timelapse, acquiring every 8.8 s. Maximum intensity projection of 80 steps of 1 μm, 30 frames per second. Flashes are marked with either a circle or a square frame. Yellow frames represent cells that only flash once. Other colors (white, green, blue, red, green, cyan) represent cells that flash more than once, with the same cell marked in the same color throughout the timelapse. Only cells that are present during the whole video are marked. Whole cell flashes, not subcellular flickers, are marked.
 
 Given the known role of P2RX7 in mediating calcium influx, we next tested whether the enhancement of calcium transients we observed with clemastine in vivo was dependent on P2r×x7. We crossed the macrophage calcium reporter line into the p2rx7xt26 background (p2rx7xt26;Tg(mfap4:GCaMP6F)xt25) and quantified calcium transients in macrophages within whole animals by light-sheet microscopy (Videos 2–4); we observed no differences in calcium dynamics between wildtype and p2rx7 mutant fish at baseline (Figure 3—figure supplement 1B, Video 2). In infected wildtype animals, clemastine increased the frequency of calcium transients more than two-fold, but this effect was abrogated in p2rx7 mutants (Figure 3C). Clemastine did not significantly increase calcium transients in uninfected cells in infected fish (Figure 3—figure supplement 1C). Thus, clemastine’s enhancement of calcium transients in Mycobacterium-infected cells may occur through potentiation, rather than direct agonism of P2rx7.
 
-## Clemastine’s anti-mycobacterial activity is dependent on p2rx7
+![Video 4.](https://cdn.elifesciences.org/articles/39123/elife-39123-video4.mp4.jpg)
+
+**Video 4.:** Split screen video of p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 larval zebrafish two dpf, infected with ~ 50 CFU Mm:TdTomato, 4 hr post infection, treated with 0.5% DMSO (left) or 5 µM clemastine (right). 30 min light-sheet microscopy timelapse, acquiring every 8.8 s. Maximum intensity projection of 80 steps of 1 μm, 30 frames per second. Flashes are marked with either a circle or a square frame. Yellow frames represent cells that only flash once. Other colors (white, green, blue, red, green, cyan) represent cells that flash more than once, with the same cell marked in the same color throughout the timelapse. Only cells that are present during the whole video are marked. Whole cell flashes, not subcellular flickers, are marked.
+
+### Clemastine’s anti-mycobacterial activity is dependent on p2rx7
 
 Having established a dependence of clemastine-enhanced calcium flux on p2rx7, we next sought to determine if the accompanying reduction in bacterial burden was also p2rx7 dependent. Using p2rx7xt26 and p2rx7xt28 mutant larvae and wildtype siblings, we tested clemastine’s effect on bacterial burden over the course of a 5-day infection. p2rx7 mutants did not show significant differences in overall bacterial burden, although there was a slight decrease in bacterial burden in p2rx7 mutants (Figure 4A). Clemastine consistently reduced burden in wildtype animals but failed to reduce bacterial burden in p2rx7 mutants (Figure 4A–B, Figure 4—figure supplement 1A–B). Thus, both the altered macrophage calcium dynamics and reduction in bacterial burden were dependent on functional P2rx7.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig4-v2.jpg)
+
+**Figure 4.:** (A) Quantification of Mm:tdTomato fluorescence at 5 days post-infection (dpi) in wildtype and p2rx7xt26 larvae treated with 0.5% DMSO or 5 µM clemastine, infected with ~ 100–150 CFU. Blue bar denotes wildtype larvae and red denotes p2rx7xt26 mutants. Red and blue dots denote the corresponding image shown in (B). Representative of 12 independent experiments, with > 15 fish per group, presented in Figure 4—figure supplement 1A–B. (B) Representative fish from each treatment group in Figure 4A, 5 dpi. Blue bar labels wildtype *AB fish; red bar labels p2rx7xt26. Scale bar is 500 µm. White arrows mark regions of bacterial foci. (A) Ordinary one-way ANOVA, Tukey’s multiple comparison test, ns1 = 0.9862, ns2 = 0.5662, ns3 = 0.2451, ns4 = 0.1652, ns5 = 0.2375. All error bars are s.d.; p values from statistical tests on untransformed data are provided in Supplementary file 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Combined experiments testing clemastine’s efficacy in wildtype and p2rx7 larvae. Each dot is the average bacterial burden for each treatment group, normalized to the experiment’s wildtype DMSO-treated group. Bacterial burdens per experiment are color-coded (e.g. all light blue squares are from the same experiment). Circles represent experiments performed with the p2rx7xt26 allele, squares represent experiments performed with the p2rx7xt28 allele, and triangles represent experiments performed with transheterozygous p2rx7xt28,xt26 larvae. The blue line represents wildtype animals and the red line represents p2rx7 mutants. Experiment in Figure 4A–B is represented by a gray square. (B) Fold change bacterial burden per experiment assessed by Mm:tdTomato fluorescence 5 dpi after treatment with 0.5% DMSO, 5 µM clemastine in wildtype and p2rx7 mutants. Each genotype is normalized to the DMSO-treated control within the genotype. Each point is color-matched to Figure 4—figure supplement 1A, representing the fold change reduction in bacterial burden within each genotype. (C) 16S rRNA qPCR, represented as the fold change over DMSO normalized within genotype from the experiment represented with green circles in Figure 4—figure supplement 1A–B. (A) Row-matching one-way ANOVA with Geissor-Greenhouse Correction, Tukey’s multiple comparison test. Error bars are s.e.m, ns1 = 0.7854, ns2 = 0.2855, ns3 = 0.0769 (B) Paired t-test, error bars are s.e.m. (C) No statistics performed, represents one biological replicate performed in triplicate.
+
 Quantitation of bacterial fluorescence has been validated as an accurate measure of bacterial burden in the zebrafish larval model (Adams et al., 2011; Takaki et al., 2013; Walton et al., 2018). However, we also analyzed burden using an independent assay. We quantitated mycobacterial 16S rRNA in a separate set of experiments and obtained similar results. Here, qRT-PCR revealed a ~ 0.5 log10 decrease with no effect in p2rx7xt26 knockout animals (Figure 4—figure supplement 1C).
 
-## Clemastine activity requires cytosolic sensing and a functional inflammasome
+### Clemastine activity requires cytosolic sensing and a functional inflammasome
 
 As a key second messenger, calcium is required for a variety of in vivo processes that may lead to increased microbicidal activity, including endosomal trafficking (Fairbairn et al., 2001) and inflammasome activation (Ferrari et al., 2006; Murakami et al., 2012). Our previous findings on unaltered acidification of mycobacteria in clemastine-treated animals (Figure 2—figure supplement 1E) led us to next consider inflammasome activation as a possible mechanism.
 
 P2RX7 signaling has been shown to promote inflammasome activation (Fairbairn et al., 2001; Piccini et al., 2008), which can result in killing of intracellular pathogens (Ferrari et al., 2006; Franceschini et al., 2015; Moreira-Souza et al., 2017). Activation of inflammasomes is dependent on cytosolic sensing of PAMPs or DAMPs (Lamkanfi and Dixit, 2014). Pathogenic mycobacteria secrete a variety of effector proteins that access the host cytosol, presumably through permeabilization of the phagosomal membrane; cytosolic access is dependent on the specialized secretion system ESX-1 (Conrad et al., 2017; Koo et al., 2008; Manzanillo et al., 2012; Wassermann et al., 2015). Because P2RX7 signaling has been closely linked to inflammasome activation, we first sought to investigate if cytosolic access is required for clemastine’s effect.
 
 Pathogenic mycobacteria have been reported to both activate and limit inflammasome activation, depending on the infection model used (Briken et al., 2013). Mycobacteria lacking the RD1 region, which encompasses the ESX-1 type VII secretion system, fail to engage cytosol-based host responses (Abdallah et al., 2011; Dorhoi et al., 2012; Volkman et al., 2004). We infected zebrafish with a M. marinum strain lacking the RD1 region (∆RD1) (Volkman et al., 2004) and asked whether clemastine retained efficacy in the absence of engagement with the host cytosol. In contrast to its effect on wildtype M. marinum, clemastine had no effect on burden in the ∆RD1 mutants (Figure 5A and Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig5-v2.jpg)
+
+**Figure 5.:** (A) Quantification of bacterial burden of Mm:Wasabi and MmΔRD1:Wasabi in wildtype larvae treated with 0.5% DMSO or 5 µM clemastine, five dpi. Representative of three independent experiments. Each dot represents an individual animal’s bacterial burden by fluorescence. Red dots denote the animals represented in Figure 5—figure supplement 1A. (B) Quantification of bacterial burden of Mm:tdTomato in pycard (asc) mutants and wildtype/heterozygous siblings after 0.5% DMSO or 5 µM clemastine treatment, 5dpi. Each dot represents an individual animal’s bacterial burden by fluorescence. Representative of three independent experiments. Blue (WT/het) and purple (asc mutants) dots denote representative larvae in Figure 5—figure supplement 2B. Fold change over DMSO for each genotype is presented in Figure 5—figure supplement 2C. (A) Ordinary one-way ANOVA with Tukey’s multiple comparison test. All error bars are s.d. ns1 > 0.9999, ns2 = 0.9452, ns3 = 0.9430. (B) One-way ANOVA with Tukey’s multiple comparison test. All error bars are s.d. ns1 = 0.9998, ns2 = 0.5798, ns3 = 0.3723. p Values from statistical tests on untransformed data are provided in Supplementary file 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative animals from the red dots in Figure 5A. Animals were infected with Mm:Wasabi (~50 CFU) and Mm:ΔRD1:Wasabi (~ 50 CFU) and treated with 0.5% DMSO or 5 μM clemastine, 5 dpi. Scale bar is 500 μm. (B) Bacterial burden per animal assessed by fluorescence 5 days post-infection after treatment with 0.5% DMSO or 5 µM clemastine. Infections were performed with Mm:tdTomato (RD1+ and cmaA2+), Tn01901:mCerulean (cmaA2-) or Mm:ΔRD1:Wasabi (RD1-). Each dot represents a single animal bacterial burden by fluorescence, represented as fold chance over DMSO in Figure 5—figure supplement 1C. Representative of two independent experiments. (C) Fold change in bacterial burden per experiment assessed by fluorescence of bacteria (left y-axis) or 16S rRNA qPCR (right y-axis, gray error bars). The experiment in Figure 5—figure supplement 1B is represented with green dots. Each bacterial strain is normalized to the DMSO-treated control within each bacterial strain. (D) Number of Mm:Wasabi or Mm:ΔRD1:Wasabi bacteria per macrophage during treatment with 0.5% DMSO or 5 μM clemastine, 1 dpi. Each dot represents the average number of Mm:Wasabi bacteria inside the macrophages of Tg(mfap4:tdTomato)xt12 of a zebrafish larva. Representative of three experiments. (B) Ordinary one-way ANOVA with Sidak’s multiple comparison test within bacterial strains, ns1 = 0.8757. Error bars are s.d. (C) Paired t-test on left y-axis. Error bars are s.e.m. No statistics were performed on the right y-axis, represents one biological replicate performed in triplicate. (D) Ordinary one-way ANOVA with Holm-Sidak’s multiple comparison test, ns1 = 0.4243, ns2 =0.1495. All error bars are s.e.m., p values from all transformed and untransformed data are provided in Supplementary file 3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) TALEN-mediated lesions in pycard, the zebrafish orthologue of asc, to generate a 14 base pair deletion in exon 1, known as ascw216. (B) Representative infected animals 5 dpi from purple and blue dots in Figure 5B. Blue bar represents wildtype animals and purple bar represents ascw216 infected with Mm:tdTomato. Scale bar is 500 μm. (C) Fold change in bacterial burden per experiment assessed by fluorescence of bacteria. The experiment in Figure 5B is represented with blue dots. Each genotype is normalized to the DMSO-treated control within that genotype. (D) Percent of bacteria decorated with GFP:LC-3 puncta, 3 dpi. Each dot represents percent of bacteria with GFP:Lc-3 puncta from a single animal. Representative of two experiments. (C) Unpaired t-test, error bars are s.e.m. (D) Unpaired t-test, error bars are s.d., ns1 = 0.4585. p Values from all transformed and untransformed data are provided in Supplementary file 3.
 
 As expected, M. marinum ∆RD1 mutants were attenuated during infection, and displayed reduced burden at later timepoints despite equivalent inocula. We therefore wanted to rule out the explanation that clemastine’s effect was merely dependent on burden. In order to test whether clemastine is effective on infections with lower bacterial load, we infected larval zebrafish with a second attenuated mycobacterial strain. We found that M. marinum transposon mutants in the gene cmaA2, which encodes a trans-cyclopropane synthetase (Glickman et al., 2001), were attenuated in the zebrafish model. Despite a burden comparable to the ∆RD1 mutants (Figure 5A and Figure 5—figure supplement 1B), clemastine still was able to reduce bacterial load, suggesting that the RD1-dependent effect was not merely due to differences in burden.
 
@@ -93,9 +153,25 @@ Given the ∆RD1 result, p2rx7 dependence, and the links to calcium signaling an
 
 To rule out the possibility that the clemastine effect was mediated via a previously reported connection between P2RX7 and autophagy (Mawatwal et al., 2017), we tested the effect of clemastine on autophagy in vivo during mycobacterial infection. We made use of the zebrafish reporter line Tg(hCMV-GFP:Lc3) (He et al., 2009). In this line, GFP-positive puncta are indicative of autophagosomes and can be enumerated during infection and treatment with DMSO or clemastine. Using spinning disk confocal microscopy, we observed that clemastine treatment does not enhance the number or frequency of LC3-decorated mycobacteria over the course of three days of infection (Figure 5—figure supplement 2D). These findings are in agreement with the observed lack of change in acidification of mycobacteria, suggesting that autophagy is not the host-directed mechanism through which clemastine reduces bacterial burden in vivo.
 
-## Clemastine is effective in established infections
+### Clemastine is effective in established infections
 
 We next examined whether clemastine was an effective host-directed therapy in established infections and whether it could function therapeutically in more complex, established granulomas. Adult zebrafish granulomas share key features with human Mtb granulomas, including a caseous necrotic core and a tight epithelialized layer that alters bacterial physiology and may restrict access to drugs (Cronan et al., 2016; Lenaerts et al., 2015; Swaim et al., 2006). To directly examine clemastine’s efficacy in mature, established granulomas, we made use of a novel granuloma explant model, termed Myco-GEM (Cronan et al., 2018). Briefly, adult animals are infected and granulomas are dissected after 2–4 weeks of infection and cultured ex vivo for a week. Because adult zebrafish are not optically transparent, this explant approach allows live visualization of granuloma and bacterial dynamics within a mature, established granuloma that contains multiple cell types. Upon multi-day (5–7 days) treatment with clemastine, we found a nearly 70% reduction in mycobacterial fluorescence relative to vehicle control granulomas, suggesting that clemastine has efficacy both in established infections (>2 weeks post infection) and in the context of a mature granuloma (Figure 6A–B and Figure 6—figure supplement 1A–B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative granuloma explants treated with 5 µM clemastine or 0.5% DMSO from wildtype or p2rx7xt26 adult animals (2 weeks post-infection) at zero days post treatment (dpt) and 5 dpt. Animals were infected with ~300 CFU Mm:mCerulean. Blue line denotes granulomas from wildtype adult fish and red line denotes granulomas from p2rx7xt26 adult fish. Images are maximum intensity projections of spinning disk confocal images, 15 steps of 10 µm. DIC and Mm:mCerulean channels are merged. Quantification in Figure 6—figure supplement 1A, averages from this experiment are denoted in the green squares of Figure 6B. (B) Quantification of 6 independent experiments in which Mm:mCerluean fluorescence at 5dpt is normalized to the DMSO treatment of wildtype granuloma explants. Each dot is the average bacterial burden at 5 dpt for each treatment group, normalized to the experiment’s wildtype explants treated with DMSO. Bacterial burdens per experiment are color-coded (e.g. red dots are all from the same experiment). Squares represent granulomas from p2rx7xt28 adult infections and circles represent granulomas fromp2rx7xt26 adult infections. The blue line represents wildtype animals and the red line represents p2rx7 mutants. Fold change of bacterial burden over DMSO-treated granulomas for each genotype is in Figure 6—figure supplement 1B using the same colors for each experiment. (C) Quantification of FLICA-positive cells from FACS analysis after treatment with DMSO or 5 µM clemastine 2 dpt. Each dot represents the treatment averages from an independent experiment, normalized to the DMSO treatment for each experiment with at least three biological replicates per experiment. Gating strategy provided in Figure 6—figure supplement 2A and individual experimental averages in Figure 6—figure supplement 2B. (D) Quantification by luminescence of Mm:Lux granulomas 7 dpt after treatment with 0.5% DMSO or 5 µM clemastine, with each dot representing a single experiment’s average luminescence for each treatment. Luminescence values are color-coded between experiments. Granuloma explants used for CFU plating are colored with green dots and represented in Figure 6E as green dots. Fold change of bacterial burden over DMSO-treated granulomas in each treatment is in Figure 6—figure supplement 3A. (E) Quantification of bacterial load by colony-forming units (CFU) 8 dpt with DMSO or 5 µM clemastine. Each dot represents a single granuloma. Fold change of bacterial burden over DMSO-treated granulomas in each treatment is in Figure 6—figure supplement 3A. (F) Quantification by luminescence of Mm:Lux granulomas seven dpt after treatment with 0.5% DMSO, 5 µM clemastine, 2 µg/mL moxifloxacin, or combination clemastine and moxifloxacin. Data are pooled from two experiments. Fold change of bacterial burden over DMSO-treated granulomas in each treatment is in Figure 6—figure supplement 3C. (B) Friedman Test (paired) ANOVA with Dunn’s multiple comparisons test ns1 > 0.9999, ns2 = 0.1521. All error bars are s.e.m. (C) Unpaired t-test, error bars are s.e.m. (D) Paired t-test, error bars are s.e.m. (E) Unpaired t-test, error bars are s.d. (F) Kruskal-Wallis ANOVA with Dunn’s multiple comparisons test, ns1 > 0.9999. All error bars are s.d. p-Values from statistical tests on untransformed data are provided in Supplementary file 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of Mm:mCerluean fluorescence of each granuloma explant at 5 dpt. This experiment contains the granulomas in Figure 6A, denoted with blue (WT) and red (p2rx7 mutants) dots. (B) Fold change over DMSO for all granuloma explant experiments (Figure 6B), with same color coding. Each point represents fluorescence averages after 5 days of treatment with 5 µM clemastine over the average fluorescence of 0.5% DMSO treatment within each genotype (WT or p2rx7 mutant) for an experiment. (A) Ordinary one-way ANOVA with Tukey’s multiple comparisons test, ns1 > 0.9999, ns2 = 0.1790, ns3 = 0.1635, ns4 = 0.4829, ns5 = 0.5220. All error bars are s.d. (B) Paired t-test, error bars are s.e.m. p-Values from all transformed and untransformed data are provided in Supplementary file 3.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Gating strategy for flow-cytometry based FLICA assay. (B) Quantification of FLICA-positive cells from FACS analysis after treatment of granuloma explants with DMSO or 5 µM clemastine 2 dpt. Each dot represents the average from an independent experiment, with at least three biological replicates per experiment. Fold change over DMSO presented in Figure 6C, with matched color-coded experiments (i.e. the dark blue dots are from the same experiment). (C) Quantification of the median fluorescence intensity (MFI) of FLICA-positive cells for each experiment. Each dot represents the averages from an independent experiment, with at least three biological replicates per experiment. Color-coded per experiment, matching Figure 6—figure supplement 2B and Figure 6C. (B) Paired t-test, error bars are s.e.m. (C) Unpaired t-test, error bars are s.e.m., ns1 = 0.8875. p-Values from all transformed and untransformed data are provided in Supplementary file 3.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/39123/elife-39123-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Fold change over DMSO from granuloma explants in Figure 6D, with same color coding. On the left-y axis, each dot represents the average of luminescence values after 7 days of treatment with 5 µM clemastine over the average luminescence of 0.5% DMSO treatment. The right y-axis represents the fold change in CFU: average CFU from 5 µM clemastine treatment over the average CFU from 0.5% DMSO treatment. Green dots represent the green dots on the left y-axis. (B) Growth curve of Mm:Lux broth culture grown in the presence of 0.5% DMSO, 5 µM clemastine, or 10 µg/mL moxifloxacin for 6 days. (C) Fold change over DMSO during treatment with 5 µM clemastine, 2 µg/mL moxifloxacin, or both. Each dot represents an experimental luminescence average of each treatment divided by the average DMSO-treatment by luminescence. Blue dots represent the data shown in Figure 6F. (A) No statistics performed. See Figure 6D for same data presented as average luminescence per experiment. (C) Repeated measures (paired) ANOVA with Tukey’s multiple comparisons test, ns1 = 0.6479, ns2 = 0.3420.
 
 Consistent with the larval experiments, we found that clemastine enhanced activation of inflammasome-dependent pathways. We used a FLICA reagent (ImmunoChemistry Technologies) that covalently binds a fluorophore to activated caspase-1; the fluorescent signal is a direct readout of caspase-1 activation. Using this tool and flow-cytometry methods developed for Myco-GEM (Cronan et al., 2018), we found that clemastine treatment significantly increased the percentage of cells positive for FLICA relative to the DMSO control (Figure 6C, Figure 6—figure supplement 2A–C).
 
@@ -131,81 +207,189 @@ Clemastine is effective both in early infections in zebrafish larvae and in long
 
 ## Materials and methods
 
-## Animal handling and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mycobacterium marinum + Photorhabdus  luminescens)</td>
+      <td>Lux</td>
+      <td>Addgene, (Andreu et al., 2010).</td>
+      <td>ID_Addgene: pMV306hsp</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>*AB</td>
+      <td>https://zfin.org/ZDB-GENO-960809-7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>mfap4: GCaMP6Fxt25</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>p2rx7xt26</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>p2rx7xt28</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>ascw216</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>mfap4:tdTomato</td>
+      <td>Walton et al., 2015, https://doi.org/10.1371/journal.pone.0138949</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mycobacterium marinum)</td>
+      <td>cmaA2</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mycobacterium marinum)</td>
+      <td>ΔRD1</td>
+      <td>Volkman et al., 2004, https://doi.org/10.1371/journal.pbio.0020367</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FLICA</td>
+      <td>ImmunoChemistry Technologies</td>
+      <td>ID_Immuno Chemistry Technologies:9122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clemastine fumarate</td>
+      <td>Sigma</td>
+      <td>ID_Sigma:SML0445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm other, Chemical Screening Platform</td>
+      <td>ImageJ</td>
+      <td>Rueden et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, Chemical Screening Platform</td>
+      <td>Prestwick Chemical Library</td>
+      <td>http://www.prestwickchemical.com/libraries-screening-lib-pcl.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal handling and maintenance
 
 All zebrafish procedures and husbandry complied with policies by the Duke University Institutional Animal Care and Use Committee (protocol A122-17-05). Eggs were collected from in-tank spawning and kept in 1X E3 medium (5 mM CaCl, 178 μM KCl, 328 μM CaCl2, 400 μM MgCl2 in dH2O) at 28.5°C. Pigmentation was prevented using 1-phenyl-2-thiourea (PTU; Alfa Aesar L06690; 45 μg/mL), beginning treatment at one dpf. Unless otherwise noted, all zebrafish are in the *AB wildtype strain.
 
-## Transgenic lines
+### Transgenic lines
 
 The transgenic line Tg(mfap4:tdTomato)xt12 and Tg(mfap4:tdTomato-CAAX)xt6 have been previously described (Walton et al., 2015). irf8st95 mutant zebrafish are described elsewhere (Shiau et al., 2015). Creation and validation of the tnf:gfp line, (TgBAC (tnfa:GFP)pd1028) has been previously described (Marjoram et al., 2015). The transgenic line Tg(mfap4:GCaMP6F)xt25 was made by injecting Tol2 transposase mRNA and tol2-containing DNA constructs into zebrafish embryos at the one cell stage. The constructs were assembled with Tol2kit reagents and subsequent Gateway Cloning (Invitrogen) (Kwan et al., 2007). The 5’ element containing the mfap4 promoter, has been previously described (Walton et al., 2015). The middle element GCaMP6F was generated by PCR amplification of the GCaMP6F coding region from the Addgene plasmid #40755 using primers containing attB1 and attB2 sites followed by recombination into pDONR221. The 3’ element was SV40polA in pDONR P2R-P3. The destination vector utilized was pDestTol2pA.
 
-## Generation of zebrafish lines possessing p2rx7 loss-of-function alleles
+### Generation of zebrafish lines possessing p2rx7 loss-of-function alleles
 
 Loss-of-function alleles of p2rx7 were generated by targeting the sequence 5’- GGTTTGATGTGATGGTGTTTGG-3’ in exon 10 using CRISPR/Cas9 genome editing. The gRNA in vitro transcription template was generated as described previously (Jao et al., 2013). Briefly, single-stranded DNA oligos 5’-GGTTTGATGTGATGGTGTT-3’ and 5’-AAACAAACACCATCACATCAA-3’ were annealed and inserted into the T7cas9sgRNA2 vector (Jao et al., 2013). The resulting plasmid was linearized with BamHI (New England Biolabs R0136S), purified, and 400 ng was used as a template for in vitro transcription using the T7 MEGAshortscript kit (ThermoFisher AM1354). gRNAs were co-injected with Cas9 mRNA into single cell *AB, wildtype embryos. CRISPR/Cas9-mediated mutations were determined by HRMA (described below) and Sanger sequencing. Two alleles were maintained: a five base pair deletion p2rx7xt26and a T to A transversion with a two base pair deletion, p2rx7xt28. Both mutations cause a premature stop codon in exon 10 (Figure 3A–B). The p2rx7 mutant lines were crossed into Tg(mfap4:GCaMP6F)xt25, Tg(mfap4:tdTomato)xt12, and Tg(mfap4:tdTomato-CAAX)xt6 and subsequently homozygosed in each transgenic background. Homozygous p2rx7 mutants were viable and exhibited no apparent anatomical or fertility defects. asc/pycard loss-of-function alleles were generated by TALEN-mediated targeting (Dahlem et al., 2012) of pycard exon 1, resulting in a 14 base pair deletion in the PYRIN domain (Figure 5—figure supplement 2A). pycard mutant animals are viable as adults and of similar size and fecundity.
 
-## Characterization and maintenance of cmaA2 transposon mutant M. marinum
+### Characterization and maintenance of cmaA2 transposon mutant M. marinum
 
-## Identification of transposon insertion sites
+#### Identification of transposon insertion sites
 
 Two transposon mutants with disruptions in the cmaA2 ORF, designated cmaA2Tn01901 and cmaA2Tn02791, were identified from a sequenced library of M. marinum transposon mutants (C. Cosma and L. Ramakrishnan). The previously identified insertion sites were confirmed by semi-random PCR and sequencing, using a pool of semi-random primers in conjunction with a pair of nested primers annealing within the 3’ end of the transposon. Primer sequences are as follows: Semi-random pool: 5’-GCAACNNNNGTCTCGTTAGCTCGCTGGCC-3’; 5’-ATATCNNNNGTCTCGTTAGCTCGCTGGCC-3’; and 5’-GTACTNNNNGTCTCGTTAGCTCGCTGGCC-3’, where N denotes random nucleotide insertion during primer synthesis (Integrated DNA Technologies). Outer transposon-specific primer (TnMarR3): 5’-ACAACAAAGCTCTCACCAACCGTG-3’; Inner transposon-specific primer (TnMarR2): 5’-CAGACACTGCTTGTCCGATATTTGATTTAGG-3’.
 
 The semi-random primer pool and TnMarR3 were used to perform an initial, unbiased amplification of a region around any possible transposon insertion junctions. A second amplification was then performed using a primer corresponding to the constant region of the semi-random pool (5’-GTCTCGTTAGCTCGCTGGCC-3’) and TnMarR2. The product of the second amplification was sequenced using TnMarR2, and the output was aligned to the M. marinum genome (BLASTn, NIH). The presence of a single sequence aligning to the cmaA2 locus confirmed the presence of only a single transposon insertion in each genome and disruption of the cmaA2 ORF for both cmaA2Tn01901 and cmaA2Tn02791. The insertion site for cmaA2Tn01901 is located ~ 14% into the ORF between the first and second bases of the 42nd codon. The insertion site for cmaA2Tn01901 is located ~ 75% into the ORF between the second and third bases of the 230th codon. CmaA2Tn01901 (Tn01901) was selected for further study.
 
-## Generation of fluorescent transposon mutant strains
+### Generation of fluorescent transposon mutant strains
 
 The mutants possess the TnMar transposon, conferring resistance to Hygromycin B. Fluorescent strains were generated by electroporating (800 Ω, 25 μF, 2.5 kV, 0.2 cm gap) msp12:mCerulean-KanR (a gift from L. Ramakrishnan, University of Cambridge) into either mutant strain. Selection on media containing Kanamycin (20 μg/ml) and Hygromycin B (50 μg/ml) yielded mutant clones expressing the mCerulean fluorescent protein.
 
-## Bacterial preparations
+### Bacterial preparations
 
 Wild-type Mycobacterium marinum (M. marinum) constitutively expressing a fluorescent protein (tdTomato, mCerulean, or Wasabi) and a Hygromycin resistance cassette driven by the msp12 promoter were grown to late log phase (OD600 = 0.8) at 33°C in liquid 7H9 complete media (Middlebrook 7H9 base, Difco BD 271310) supplemented to a final concentration of 10% OADC (50 g/L BSA, 0.5% oleic acid, 20 g/L dextrose, 8.5 g/L NaCl), 0.05% Tween-80 (Fisher BP338-500), and 50 ug/mL Hygromycin B (Sigma H0654). M. marinum ΔRD1 was a gift from Lalita Ramakrishnan (Volkman et al., 2004). Bacteria were prepared into single-cell suspensions, as described (Takaki et al., 2013). Single-cell suspension aliquots were diluted to approximately 1 × 108 cfu/mL in 5 μL 7H9 media + OADC and were stored at −80°C long-term and diluted in 7H9 to an appropriate concentration prior to injection.
 
-## Bacterial broth growth assay
+### Bacterial broth growth assay
 
 Wild-type M. marinum expressing tdTomato was grown to OD600 = 0.8 and then diluted 1:10 in 7H9 complete media supplemented with 50 ug/mL Hygromycin B in 15 mL culture tubes (Falcon). The bacterial culture was supplemented with 0.5% DMSO (MPI), 200 µg/mL Isoniazid (Sigma-Aldrich I3377), 10 µg/mL moxifloxacin (Matrix Scientific 047902) or 5 µM of each chemical and grown in a 33°C shaker for 7–8 days. Each day, 100 µL of the broth was placed in a cell culture 96-well microplate plate (GBO 655090) and analyzed with an Enspire 2300 Multilabel Plate Reader (PerkinElmer) for OD600 and fluorescence intensity, with three technical replicates per sample. The same methods were used for a growth curve in the presence of clemastine (Sigma, SML0445) for both M. marinum expressing mCerulean and M. marinum ΔRD1 expressing tdTomato (data not shown).
 
-## Larval zebrafish infection
+### Larval zebrafish infection
 
 Two dpf larvae were anaesthetized with tricaine (MS-222; Sigma-Aldrich 160 μg/ml) and injected with fluorescent M. marinum. Single-cell suspension aliquots are diluted in 7H9 with 0.5% phenol red indicator (Sigma 0290) prior to injection. Between 50 and 200 CFU of fluorescent M. marinum were injected using a borosilicate needle (Sutter Instruments BF100-58-10), pulled with a WPI PUL-1000 system (factor setting 0) and broken approximately 8 mm from the tip. Injections are performed using a FemtoJet injector (Eppendorf). After infection, larvae were recovered in E3 +PTU for 4 hr at 28°C. For examination of mutant phenotypes, infections were performed blind to larval genotype.
 
-## Drug treatments
+### Drug treatments
 
 Four hours post-infection, larvae were transferred to wells containing E3 + PTU supplemented with the compound being tested. For most studies, larvae were kept in six-well plates (COSTAR 3736) containing E3 + PTU supplemented with either 0.5% DMSO (MP Bio CAS 67-68-5) or 5 μM clemastine fumarate (Sigma-Aldrich SML0445) dissolved in 100% DMSO to a final concentration of 0.5% DMSO in each treatment group. Diphenhydramine hydrochloride (Sigma-Aldrich D3630) was dissolved in 100% DMSO and diluted to a final concentration of 5 μM. All drugs were added directly to E3 + PTU. Whenever agarose was used to mount fish, the same concentration of drug was added to the agarose prior to solidification.
 
-## Live imaging and quantification of bacterial burden
+### Live imaging and quantification of bacterial burden
 
 Epifluorescence microscopy was carried out on an inverted Zeiss Observer Z1 microscope using 2.5X, 5X, or 20X objectives, depending on experiment. Prior to imaging, larvae were anaesthetized with tricaine (160 μg/ml) and arrayed on a microscope slide or embedded in 0.75% low melting point agarose (Fisher BP165) in a 35 mm petri dish (MatTek). Bacterial burden by fluorescence is calculated using ImageJ (Rueden et al., 2017). Images are analyzed for the mean fluorescence and area of fluorescence above a threshold within the zebrafish. The threshold is empirically determined for each experiment to ensure that every infected animal has a non-zero value while not including any background autofluorescence. The threshold is kept constant between treatments within an experiment. The product of the mean fluorescence and area is computed and presented as ‘Mm Fluorescence.’ Granuloma explants were visualized on a spinning disk confocal (Andor) using 10x/0.3 UPlanFl N dry, WD: 10 mm, FN26.5, UIS2 objective, acquiring images with an Andor Ixon3 897 512 EMCCD, 1.2x auxilary magnification camera. Z stacks were taken at 10–15 μm, and images are assembled as maximum intensity projections using ImageJ (Rueden et al., 2017). During image analysis, experimenter was blinded to the genotype of the larvae.
 
-## Light-sheet microscopy
+### Light-sheet microscopy
 
 Light-sheet fluorescence microscopy experiments were carried out on a Zeiss Light-sheet Z.1 using a Plan-Apochromat 20X/1.0 NA Aqueous immersion objective, situated with a C.mos PCO.edge camera with 16bit 1920 × 1920 sensors. One track, emission selection: 488/498 (GFP) and 560/571 (tdTomato). Light-sheet thickness was 4.32 microns with a continuous drive, 1x zoom, dual side illumination. For these experiments, two dpf zebrafish larvae Tg(mfap4:GCaMP6F)xt25 and p2rx7xt26;Tg(mfap4:GCaMP6F)xt25 were infected as described and treated with DMSO or clemastine at four hpi. One to 2 hr post-treatment, larvae were placed in 1.5% low-melting point agarose, supplemented with 80 μg/ml tricaine and either 0.5% DMSO or 5 µM clemastine fumarate (Sigma-Aldrich SML0445) in a 3 mm OD glass capillary. A dual-colored z-stack was acquired every 8.8 s, collecting 80 z-steps, using a z-step size of 1 μm for 30 min.
 
 Light-sheet videos were projected as maximum intensities and analyzed using ImageJ (Rueden et al., 2017). Regions of interest (ROIs) were defined as single macrophages that expressed baseline levels of green fluorescence by GCaMP6 and flashed at least once over the course of the video. Macrophages outside of the caudal hematopoietic tissue were excluded. Only individual flashes were counted, not coordinated flashes during which every macrophage, infected and uninfected, underwent a calcium flash simultaneously. If the macrophage was not in frame for the entire 30 min, it was not included in the analysis. Quantitative analyses of macrophage calcium flashes were performed blind to the treatment type and genetic identity of the specimens under observation.
 
-## Adult infections and granuloma explants
+### Adult infections and granuloma explants
 
 Adult zebrafish (>2 months old) were infected as described (Oehlers et al., 2015). Briefly, adult fish (>2 months old) were anesthetized by immersion in 100 μg/mL tricaine and injected intraperitoneally with 300 CFU of Mm:mCerulean or Mm:tdTomato using insulin needles (BD 08290-3284-38). Adult fish were kept in 1L tanks in a dedicated infection incubator with light/dark cycles at 28°C, with water changes and feeding every day. Between two and four weeks post-infection, granulomas were harvested using a Myco-GEM method (Cronan et al., 2018). Briefly, after adult fish are euthanized with a lethal dose of tricaine, the body cavity is exposed in sterile L15 medium (Gibco 21083–027). Granulomas can be dissected out with forceps or gently removed by a glass pipette. Granulomas are serially washed in sterile L15 and size-matched for treatment groups. The bottom of an optical-bottom 96-well plate (GBO 55090) is covered with 40 μL of 5 μg/mL Matrigel Matrix (Corning 354262), in L15. Granulomas are embedded in 2.5-dimensional top media with a final concentration of 5% FBS (Sigma 2442), and 1 μg/mL Matrigel matrix (Corning 354262) in L15 (Gibco 21083–027) as described (Cronan et al., 2018). The top and bottom media are supplemented with either DMSO (0.5%) or clemastine (5 μM in 0.5% DMSO). Granulomas are imaged via microscopy at d0 and 5 days post-treatment (dpt) using epifluorescence microscopy on an inverted Zeiss Observer Z1 microscope and on a spinning disk confocal (Andor). M. marinum:Lux granulomas were imaged daily as described below. Image acquisition and analyses were performed blind to the genotype of the granulomas.
 
-## Bioluminescence assay
+### Bioluminescence assay
 
 For this assay, we used a bioluminescent reporter strain of M. marinum (Mm-Lux) as described in Cronan et al. (2018). Adult zebrafish were infected as described above and granuloma explants cultured in the same methods as described above but were kept in white 96-well cell culture microplates (GBO 675098) and luminescence was determined using an EnSpire 2300 Multilabel Plate Reader obtained from Perkin Elmer (Waltham, MA). Drug treatments were applied in the same fashion as fluorescence assays, with drug added to both bottom media and top media.
 
-## Flow cytometry and FLICA staining of granuloma explants
+### Flow cytometry and FLICA staining of granuloma explants
 
 For all flow cytometry experiments, we cultured granuloma explants as described above for 48 hr in the presence of 0.5% DMSO or 5 µM clemastine. Granulomas were rinsed in sterile L15 and PBS. Following manufacturer’s directions, 660-FLICA Caspase Assay (Immunochemistry Technologies ICT097) was reconstituted with 50 µL 100% DMSO to make 150X stock. This stock was aliquoted into single use tubes and kept at −20°C and not freeze-thawed more than once. Just prior to use, the 150X stock was diluted 1:5 in PBS to make 30X stock. Grouped granulomas (~10 per group) were placed in 1.5 mL tubes with 97 µL PBS and 3 µL of 30 × 660 FLICA stock. Granulomas were kept at 28°C for 1 hr. Granulomas were washed in 1X apoptosis buffer and spun at 1200xg for 1 min three times. Granulomas were resuspended in 1 mL 0.05% trypsin in 1X EDTA (ThermoFisher Scientific, 25300) and kept on a nutator for 40 min at 30°C. Granulomas were centrifuged for 5 min at 300xg and rinsed with 1 mL 5% FBS in PBS three times, gently pipetting off supernatant each time, resuspended in 300 µL 5%FBS in PBS and pipetted over a 30 µm cell strainer (MACS Miltenyi 130-098-458). Single cell suspensions were analyzed on a FACS Canto II (BD Biosciences) using an Apc-Cy7 laser (633 nm) excitation. Data was collected using FACSDiva Software (BD Biosciences) and analyzed using FlowJo v10 (Treestar).
 
-## Colony-forming unit (CFU) assay on granuloma explants
+### Colony-forming unit (CFU) assay on granuloma explants
 
 Granulomas were cultured as described above for up to a week. On the final day of treatment, individual granulomas were washed in sterile PBS, as in Cronan et al. (2018). Briefly, individual granulomas were homogenized in sterile 7H9 media in a microcentrifuge tube with two sterile glass beads. Homogenates were diluted incrementally to 10−6 and plated on 7H10 media (BD Difco 262710) supplemented with 20 µg/mL kanamycin (Sigma-Aldrich K0129). Plates were incubated for 12–14 days at 30°C.
 
-## Prestwick chemical library screen
+### Prestwick chemical library screen
 
 The Prestwick Chemical Library (Prestwick Chemical, Illkirch, France) was stored at −80°C at 10 mM and aliquoted manually into 1 mM working stock daughter plates in 100% DMSO. The daughter plates were stored at −20°C until used in 96-well format. Wildtype zebrafish larvae carrying a TNF reporter transgene (Tg(BAC(tnfa:GFP)pd1028) (Marjoram et al., 2015) were arrayed in 96-well optical plates (GBO 655090) with three infected and one uninfected fish per well, in 200 µL of E3 + PTU and 5 µM of each chemical. First and last rows of each plate were maintained as 0.5% DMSO controls. Each plate contained 80 drugs, with 15 plates in all. Burden was assayed by fluorescence area and mean intensity of fluorescent mycobacteria at five dpi. In the secondary screen, hits were screened again in the same format (three infected fish, one uninfected fish) and drugs that continued to reduce bacterial fluorescence area and mean intensity were tested again in a tertiary screen with 20 fish per group, with DMSO-treated fish as control.
 
-## Determination of relative M. marinum burden by 16S rRNA qRT-PCR
+### Determination of relative M. marinum burden by 16S rRNA qRT-PCR
 
 Total RNA was isolated from each group of larvae using TRIzol Reagent (Thermo Fisher Scientific 15596026). An input mass of 1 μg of RNA per group was used for cDNA synthesis using the iScript cDNA Synthesis Kit (Bio-Rad 1708890). Average relative bacterial burdens were quantified by qPCR (Power SYBR Green PCR Master Mix, Thermo Fisher Scientific 4368577) targeting the M. marinum 16S locus. F primer: 5’-CGATCTGCCCTGCACTTC-3’; R primer: 5’-CCACAGGACATGAATCCCGT-3’. Zebrafish β-actin transcript levels were used as the internal input control. F primer: 5’-CGAGCAGGAGATGGGAACC-3’; R primer: 5’-CAACGGAAACGCTCATTGC-3’ (Walton et al., 2018).
 
-## Genotyping assays
+### Genotyping assays
 
 All genotyping assays were performed on fin-clips from adult zebrafish or post-experiment on whole larval animals, using genomic DNA isolated as described (Meeker et al., 2007). p2rx7xt26 and p2rx7xt28 were genotyped via KASP assays (LGC Genomics, Middlesex UK). pycardw216 mutant larvae were genotyped using HRMA (Applied Biosystems MeltDoctor HRM 4415440). irf8 mutations were genotyped using PCR amplification and AvaI restriction digest, as described (Shiau et al., 2015). Additionally, HRMA primers were developed to more rapidly genotype irf8 mutant fish. All initial mutations were confirmed via Sanger sequencing.
 
@@ -233,6 +417,6 @@ irf8 sequencing primers:
 
 5’ GAAACATAGTGCGGTCCTCATCC 3’
 
-## Statistical analysis
+### Statistical analysis
 
 All statistics were performed using Prism (GraphPad), version 7. Statistics presented are performed on data presented for each graph (e.g. if a graph displays y=log10(y) transformation, then the p values are from a statistical test on that data). All p values from statistical tests performed on transformed and untransformed data are provided in Supplementary files 2 and 3.

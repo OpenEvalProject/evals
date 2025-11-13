@@ -11,16 +11,16 @@
 
 ### Affiliations
 
-1. https://ror.org/022kthw22 Department of Biomedical Engineering, University of Rochester Rochester United States
-2. https://ror.org/022kthw22 Department of Neuroscience, University of Rochester Rochester United States
-3. https://ror.org/05fq50484 Department of Physics and Astronomy, York University Toronto Canada
-4. https://ror.org/022kthw22 Department of Otolaryngology, University of Rochester Rochester United States
+1. Department of Biomedical Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+2. Department of Neuroscience, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+3. Department of Physics and Astronomy, York University Toronto Canada ([ROR:05fq50484](https://ror.org/05fq50484))
+4. Department of Otolaryngology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
 
 † Corresponding author
 
 ## Abstract
 
-Frequency analysis by the cochlea forms a key foundation for all subsequent auditory processing. Stimulus-frequency otoacoustic emissions (SFOAEs) are a potentially powerful alternative to traditional behavioral experiments for estimating cochlear tuning without invasive testing, as is necessary in humans. Which methods accurately predict cochlear tuning remains controversial due to only a single animal study comparing SFOAE-based, behavioral, and cochlear frequency tuning in the same species. The budgerigar ( Melopsittacus undulatus ) is a parakeet species with human-like behavioral sensitivity to many sounds and the capacity to mimic speech. Intriguingly, previous studies of critical bands, psychophysical tuning curves, and critical ratios in budgerigars show that behavioral tuning sharpness increases dramatically with increasing frequency from 1 to 3.5 kHz, doubling once per octave with peak tuning sharpness from 3.5 to 4 kHz. The pattern contrasts with slower monotonic growth of behavioral tuning sharpness with increasing frequency in other animals, including most avian species, suggesting a possible auditory specialization in budgerigars. We measured SFOAE-based and cochlear-afferent tuning in budgerigars, for comparison to previously reported behavioral results. SFOAE-based and cochlear-afferent tuning sharpness both increased monotonically and relatively slowly for higher frequencies, in contrast to the behavioral pattern. SFOAE-based tuning in budgerigars accurately predicted cochlear frequency tuning, and both measures aligned with typical patterns of cochlear tuning in other species. Divergent behavioral tuning in budgerigars is unlikely attributable to the periphery and could reflect specializations for central processing of masked signals. Our findings highlight the value of SFOAEs for estimating cochlear tuning and caution against direct inference of peripheral tuning from behavioral critical bands, psychophysical tuning curves, and critical ratios.
+Frequency analysis by the cochlea forms a key foundation for all subsequent auditory processing. Stimulus-frequency otoacoustic emissions (SFOAEs) are a potentially powerful alternative to traditional behavioral experiments for estimating cochlear tuning without invasive testing, as is necessary in humans. Which methods accurately predict cochlear tuning remains controversial due to only a single animal study comparing SFOAE-based, behavioral, and cochlear frequency tuning in the same species. The budgerigar (Melopsittacus undulatus) is a parakeet species with human-like behavioral sensitivity to many sounds and the capacity to mimic speech. Intriguingly, previous studies of critical bands, psychophysical tuning curves, and critical ratios in budgerigars show that behavioral tuning sharpness increases dramatically with increasing frequency from 1 to 3.5 kHz, doubling once per octave with peak tuning sharpness from 3.5 to 4 kHz. The pattern contrasts with slower monotonic growth of behavioral tuning sharpness with increasing frequency in other animals, including most avian species, suggesting a possible auditory specialization in budgerigars. We measured SFOAE-based and cochlear-afferent tuning in budgerigars, for comparison to previously reported behavioral results. SFOAE-based and cochlear-afferent tuning sharpness both increased monotonically and relatively slowly for higher frequencies, in contrast to the behavioral pattern. SFOAE-based tuning in budgerigars accurately predicted cochlear frequency tuning, and both measures aligned with typical patterns of cochlear tuning in other species. Divergent behavioral tuning in budgerigars is unlikely attributable to the periphery and could reflect specializations for central processing of masked signals. Our findings highlight the value of SFOAEs for estimating cochlear tuning and caution against direct inference of peripheral tuning from behavioral critical bands, psychophysical tuning curves, and critical ratios.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Because auditory-nerve tuning has not been measured in budgerigars, it remains u
 
 ## Results
 
-## Budgerigar SFOAEs
+### Budgerigar SFOAEs
 
 SFOAEs were recorded from 22 ears in 14 animals using swept-frequency tones presented at 40 dB SPL. SFOAE level (Figure 2a) typically ranged from 5 to 15 dB at stimulus frequencies below 5–6 kHz and descended into the noise floor at higher frequencies. Within the frequency of measurable emissions, SFOAEs in individual ears (Figure 2a, colored lines) typically showed three or more deep spectral notches in emission level. Frequency regions near spectral notches, or for which SFOAE level was within 10 dB of the estimated noise floor, were excluded from subsequent analyses as described below (see ‘Materials and methods: SFOAE processing’). SFOAE phase decreased monotonically with increasing frequency and was relatively consistent across individual ears (Figure 2b). Finally, SFOAE delay was estimated from the phase gradient of the response in stimulus cycles, that is, as NSFOAE (Figure 2c). So calculated, NSFOAE increased monotonically with increasing frequency, consistent with gradually increasing tuning quality along the length of the cochlea from apex to base. The local mean trendline for NSFOAE (Figure 2c, thick red line) was estimated using a Gaussian weighting with sigma of 0.25 octaves, fit to group delay (i.e., NSFOAE × frequency) because this quantity was approximately normally distributed. 95% CIs in Figure 2c and throughout are based on 1000 bootstrap repetitions.
 
@@ -52,7 +52,7 @@ SFOAEs were recorded from 22 ears in 14 animals using swept-frequency tones pres
 
 Linear mixed-effects modeling revealed a significant effect of frequency on SFOAE level (F4,84 = 18.91, p<0.0001), associated with slightly lower SFOAE level in the higher frequency bands (see Materials and methods: Statistical analysis). Moreover, a linear mixed-model analysis of NSFOAE revealed a significant effect of frequency (F4,84 = 44.05, p<0.0001) due to greater NSFOAE in higher frequency bands. The mean rate of increase in NSFOAE was 1.65 dB/octave. In summary, SFOAE results pooled across ears were consistent with monotonically increasing tuning sharpness from the cochlear apex to base.
 
-## Auditory-nerve tuning curves
+### Auditory-nerve tuning curves
 
 Auditory-nerve tuning curves (n=127) in budgerigars had CFs ranging from 0.28 to 5.65 kHz (median: 2.97 kHz; interquartile range: 1.13–3.88 kHz) and associated thresholds at CF as low as 5 dB SPL (Figure 3a, crosses). Individual tuning curves (Figure 3a, colored lines) appeared symmetric around CF on a log-frequency axis, with no clear indication of a secondary tail region of low-frequency sensitivity for stimulus levels up to 80 dB SPL (i.e., the highest level tested). Q10, the measure of tuning-curve sharpness, increased monotonically and significantly for higher CFs (Figure 3b; t125=6.542, p<0.0001; t-test of linear regression slope between log-transformed variables) as in other animal species, without an apparent peak at 3.5–4 kHz. The local mean trendline for Q10 (Figure 3b, thick black line) was calculated using a Gaussian weighting function with sigma of 0.5 octaves. The rate of increase for Q10 with increasing frequency was 0.87 dB/octave, that is, lower than the 1.65 dB/octave rate observed for NSFOAE (Figure 3b; red line) and considerably lower than the 2.65 dB/octave rate for the behavioral literature (Figure 1; see below for further comparison). QERB also increased monotonically for higher CFs (see below) and exceeded Q10 by a median factor of 1.76 (interquartile range: 1.65–1.89).
 
@@ -60,9 +60,13 @@ Auditory-nerve tuning curves (n=127) in budgerigars had CFs ranging from 0.28 to
 
 **Figure 3.:** (a) Representative tuning curves (colored lines) show the threshold for excitation of the neural response as a function of tone frequency. Tuning curves are V-shaped and are approximately symmetrical around characteristic frequency (CF) on a log-frequency axis. Black crosses show the threshold at the CF for all recorded fibers. (b) Tuning-curve Q10 increases for higher CFs across the neural population. The black trend line and gray shaded region show the weighted mean Q10 (Gaussian weighting function; sigma: 0.5 octaves) and 95% CI (1000 bootstrap repetitions), respectively. The thick red line shows NSFOAE replotted from Figure 2.
 
-## Defining the tuning ratio, r, for SFOAE-based QERB prediction
+### Defining the tuning ratio, r, for SFOAE-based QERB prediction
 
-Previous studies (e.g., Shera et al., 2002; Shera et al., 2010) established the concept of a tuning ratio, r, assumed to vary slowly with frequency and fit to the empirically derived quotient of auditory-nerve QERB and NSFOAE, as indicated in Equation 1.(1)r=QERBNSFOAE
+Previous studies (e.g., Shera et al., 2002; Shera et al., 2010) established the concept of a tuning ratio, r, assumed to vary slowly with frequency and fit to the empirically derived quotient of auditory-nerve QERB and NSFOAE, as indicated in Equation 1.
+
+$$
+r=\frac{Q_{ERB}}{N_{SFOAE}}
+$$
 
 The value of r in mammals decreases from ~3 at the apical end of the cochlea to 1 for frequencies processed more basally (Shera et al., 2010). r appears largely conserved across related species, such that multiplying NSFOAE by r from a different species or species group accurately predicts auditory-nerve QERB in many cases (Shera et al., 2010; Joris et al., 2011; Sumner et al., 2018). Given substantial differences in cochlear morphology between birds and mammals (Gleich and Manley, 2000), we calculated r from chicken (Gallus gallus domesticus) to predict QERB from NSFOAE results in the budgerigar. Chicken data were selected rather than barn owl (Tyto alba; Bergevin et al., 2015) due to greater similarity of the chicken’s cochlear morphology (Gleich and Manley, 2000) and frequency limits of hearing (chicken: 9.1–7,200 Hz [Hill et al., 2014]; budgerigar: 77–7,600 Hz [Heffner et al., 2016]; frequency ranges for which behavioral audiometric thresholds are less than 60 dB SPL). No attempt was made to adjust r for a possible species difference in the apical-basal transition (Shera et al., 2010; Shera and Charaziak, 2019) due to similar hearing ranges between chicken and budgerigar as well as uncertainty as to how this concept from the mammalian SFOAE literature might apply to the substantially shorter avian cochlea.
 
@@ -70,19 +74,19 @@ Auditory-nerve Q10 from two previous chicken studies (Manley et al., 1991; Saund
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102911/elife-102911-fig4-v1.jpg)
 
-**Figure 4.:** r, from published chicken studies.(a) Q10 values of chicken auditory-nerve fibers (ANFs; n=289; crosses: Saunders et al., 1996; circles: Manley et al., 1991) increase monotonically for higher characteristic frequencies (CFs), similar to the rate at which chicken NSFOAE (Bergevin et al., 2008; n=9 animals) increases with frequency. Thick lines and shaded regions show weighted means (Gaussian weighting function; sigma: 0.5 octaves) and 95% CIs (1000 bootstrap repetitions), respectively; back lines extending from 3 to 4.6 kHz show extrapolated Q10 (dotted: mean; solid ±1 SE; see text). (b) The tuning ratio, r, of chicken (magenta) compared to that of budgerigars (black). r is the quotient of auditory-nerve QERB over NSFOAE at the same frequency. Magenta lines extending form 3–4.6 kHz show extended-frequency r of chicken based on extrapolated Q10. r is marginally higher in the chicken than budgerigar, and trends downward with increasing frequency in both species.
+**Figure 4.:** (a) Q10 values of chicken auditory-nerve fibers (ANFs; n=289; crosses: Saunders et al., 1996; circles: Manley et al., 1991) increase monotonically for higher characteristic frequencies (CFs), similar to the rate at which chicken NSFOAE (Bergevin et al., 2008; n=9 animals) increases with frequency. Thick lines and shaded regions show weighted means (Gaussian weighting function; sigma: 0.5 octaves) and 95% CIs (1000 bootstrap repetitions), respectively; back lines extending from 3 to 4.6 kHz show extrapolated Q10 (dotted: mean; solid ±1 SE; see text). (b) The tuning ratio, r, of chicken (magenta) compared to that of budgerigars (black). r is the quotient of auditory-nerve QERB over NSFOAE at the same frequency. Magenta lines extending form 3–4.6 kHz show extended-frequency r of chicken based on extrapolated Q10. r is marginally higher in the chicken than budgerigar, and trends downward with increasing frequency in both species.
 
 Note that empirical evaluation of chicken r was limited to frequencies less than 3.35 kHz due to the scala tympani approach of the two auditory-nerve studies, which limited sampling from high-CF fibers (Manley et al., 1991; Saunders et al., 1996). We therefore extended r to 4.6 kHz by first extrapolating chicken Q10 to 4.6 kHz. Extrapolation was performed with a linear regression model fit to Q10 data from fibers with CFs greater than 1.7 kHz (Figure 4a). Extrapolated Q10 (predicted means ±1 SE; Figure 4a) trended slightly upward in frequency in accordance with the regression model slope. Extended-frequency r (Figure 4b, magenta lines from 3 to 4.6 kHz), calculated as the quotient of extrapolated Q10 over NSFOAE, trended downward with increasing frequency from 3.35 to 4.6 kHz.
 
 Finally, budgerigar r was calculated using the same empirical method, but without extrapolation due to broad sampling of CFs with our auditory-nerve approach. Budgerigar r was marginally lower than that of chickens and followed the same trajectory with increasing frequency, decreasing from a maximum of ~4 at 700 Hz to ~2 at 5.5 kHz (Figure 4b, thick black line).
 
-## SFOAEs but not behavioral measurements accurately predict auditory-nerve frequency tuning in the budgerigar
+### SFOAEs but not behavioral measurements accurately predict auditory-nerve frequency tuning in the budgerigar
 
 SFOAE-based predictions of cochlear tuning in budgerigars were made by multiplying NSFOAE by chicken r as a function of frequency (Figure 5; magenta). Budgerigar SFOAE predictions, plotted together with auditory-nerve QERB (thick black line) and average behavioral tuning sharpness in this species based on critical bands and psychophysical tuning curves (thick blue line), highlight the similarities and differences across these measures. Behavioral Q10 values from the literature (Figure 1) were scaled by a factor of 1.76 to approximate QERB. Whereas NSFOAE predictions made using both the empirical and extended-frequency forms of chicken r reasonably approximated budgerigar auditory-nerve QERB measurements, running parallel to and slightly above the mean trendline, the behavioral results show a fundamentally different pattern characterized by a noticeably greater slope from 0.5 to 3.5 kHz, distinct peak from 3.5 to 4 kHz, and steep roll off above 4 kHz. Thus, SFOAE results provided closer estimates of actual auditory-nerve QERB than did behaviorally estimated tuning measures in the budgerigar, and we find no evidence that unusual behavioral tuning in budgerigars arises peripherally.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102911/elife-102911-fig5-v1.jpg)
 
-**Figure 5.:** ERB in the budgerigar (n=127 fibers from six animals).The SFOAE prediction based on r from chicken (empirical range: thick magenta line; extended-frequency range [means ± 1SE]: thin magenta lines) slightly exceeds the upper 95% confidence limit for mean auditory-nerve QERB (Gaussian weighting function; sigma: 0.5 octaves; 1000 bootstrap repetitions) and shows the same frequency dependence. In contrast, behavioral QERB (thick blue line) shows a fundamentally different profile characterized by a peak from 3.5 to 4 kHz. Mean NSFOAE of budgerigars (thick red line) is replotted from Figure 2.
+**Figure 5.:** The SFOAE prediction based on r from chicken (empirical range: thick magenta line; extended-frequency range [means ± 1SE]: thin magenta lines) slightly exceeds the upper 95% confidence limit for mean auditory-nerve QERB (Gaussian weighting function; sigma: 0.5 octaves; 1000 bootstrap repetitions) and shows the same frequency dependence. In contrast, behavioral QERB (thick blue line) shows a fundamentally different profile characterized by a peak from 3.5 to 4 kHz. Mean NSFOAE of budgerigars (thick red line) is replotted from Figure 2.
 
 ## Discussion
 
@@ -102,11 +106,11 @@ In conclusion, SFOAE-based and auditory-nerve measures of tuning sharpness incre
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Budgerigars were sourced from a local breeder or our institutional breeding program. SFOAEs were recorded from 22 ears in 14 budgerigars (7 female). Birds were 6–32 months old with a median age of 8.5 months at the time of SFOAE experiments. Auditory-nerve responses were recorded from six ears in six budgerigars (four females). Birds were 6–22 months old at the time of the auditory-nerve recordings (median: 7.5 months). All experiments were approved by the University of Rochester Committee on Animal Resources (UCAR-2011-015).
 
-## SFOAE recordings
+### SFOAE recordings
 
 Animals were anesthetized for SFOAE recordings by subcutaneous injection of 0.08–0.12 mg/kg dexmedetomidine and 3–5.8 mg/kg ketamine. Following anesthesia, birds were placed in a stereotaxic apparatus located inside a double-walled acoustic isolation booth (Industrial Acoustics; 2 × 2.1  ×  2.2 m). Temperature was maintained at 40℃ throughout the experiment using a feedback-controlled heating pad (Harvard Apparatus Model 50-753, Edenbridge, KY, USA). Careful control of temperature was found to be critical for robust emission measurements. Breathing rate was monitored using a thermistor-based sensor.
 
@@ -116,7 +120,7 @@ Stimuli for measuring SFOAEs were swept tones, as in Kalluri and Shera, 2013. Tw
 
 After the completion of the experiments, birds were given a subcutaneous injection of 0.5 mg/kg atipamezole and placed in a heated recovery chamber until fully alert.
 
-## Auditory-nerve recordings
+### Auditory-nerve recordings
 
 The surgical procedures for neurophysiological recordings in budgerigars have been described previously (Wang et al., 2021). Equipment is described above in the section on SFOAE recordings, except where noted. Briefly, animals were anesthetized with a weight-dependent subcutaneous injection of ketamine and dexmedetomidine, as indicated above, and a head-post was mounted to the dorsal surface of the skull with dental cement to facilitate head positioning. Animals were placed in a stereotaxic device inside a sound-attenuating chamber, with the beak projected downward. The right ear was aligned with an earphone/microphone assembly and sealed with silicone grease. Body temperature was maintained at 40°C using a homeothermic control unit, and breathing rate was monitored throughout experiments. Animals were maintained in an areflexic state through continuous subcutaneous infusion of additional ketamine (3–10 mg/kg/h) and dexmedetomidine (0.08–0.2 mg/kg/h), along with physiological saline, using a syringe pump. DPOAEs were recorded periodically throughout experiments to test for possible deterioration of inner-ear function (Wong et al., 2019). Animals were euthanized at the conclusion of recordings, typically after 10–12 h.
 
@@ -124,16 +128,20 @@ Access to the auditory nerve was accomplished by aspirating the right third of t
 
 Tuning curves were determined through an automated algorithm that tracked the threshold sound level for rate excitation across frequencies. The algorithm estimated thresholds as the minimum tone level that repeatedly produced an increase in driven discharge rate compared to the most recent silent interval (Chintanpalli and Heinz, 2007). Tones were 50 ms in duration with 5 ms raised-cosine onset and offset ramps, presented once every 100 ms. Thresholds were sampled with a resolution of 28 frequencies per octave near characteristic frequency (CF), starting at 6–8 kHz and proceeding downward in frequency (typical range: 6 kHz to 200 Hz).
 
-## SFOAE processing
+### SFOAE processing
 
-Analyses were performed in MATLAB R2023a and R version 4.3.2. Occasional microphone-signal artifacts were rejected by thresholding. Surrounding each signal transient artifact, 20 ms of signal was removed. Responses to the probe, suppressor, and combined probe and suppressor were averaged across repeated presentations. PSFOAE was calculated by vector subtraction (Shera et al., 2002), as indicated in Equation 2, where P is the response waveform in Pa and subscripts denote the stimulus class.(2)PSFOAE=PProbe+PSuppressor−PProbe+Suppressor
+Analyses were performed in MATLAB R2023a and R version 4.3.2. Occasional microphone-signal artifacts were rejected by thresholding. Surrounding each signal transient artifact, 20 ms of signal was removed. Responses to the probe, suppressor, and combined probe and suppressor were averaged across repeated presentations. PSFOAE was calculated by vector subtraction (Shera et al., 2002), as indicated in Equation 2, where P is the response waveform in Pa and subscripts denote the stimulus class.
+
+$$
+P_{SFOAE}=P_{Probe}+P_{Suppressor}−P_{Probe+Suppressor}
+$$
 
 The noise floor was estimated by the spectrum of the difference between odd and even trials of SFOAEs. Magnitude and phase spectra were extracted from the mean data for each component of the signal using the generalized least-squares fit described in Long et al., 2008. Phase gradients were extracted after phase unwrapping and conversion to cycles. Two exclusion criteria were implemented prior to phase-gradient extraction, for NSFOAE estimation. Data points less than 10 dB in magnitude above the median of the estimated noise floor were rejected. Data points at the base of magnitude troughs were also rejected due to noted phase irregularities. Similar algorithms have previously been applied (e.g., Shera and Bergevin, 2012) to emphasize phase-gradient delays near magnitude maxima.
 
-## Auditory-nerve response processing
+### Auditory-nerve response processing
 
 Auditory-nerve tuning curves were first smoothed with a five-point triangular window. CF was calculated as the frequency of the lowest threshold, Q10 was calculated as CF divided by the tuning curve bandwidth 10 dB above the lowest threshold, and QERB (i.e., the tuning quality of the idealized rectangular filter with equivalent bandwidth to the measured tuning curve) was calculated based on the area under the inverted tuning curve, as in Bergevin et al., 2015.
 
-## Statistical analysis
+### Statistical analysis
 
 Linear mixed-effects models were implemented to determine the effect of frequency on SFOAE magnitude and phase-gradient responses. Magnitude and NSFOAE values were grouped into five log-spaced frequency bands, with center frequencies ranging from 1 to 5 kHz. For each ear, first-degree robust polynomials were fit to the data in each frequency band. Magnitude and phase-gradient values were defined as the value of the polynomial fit at the center frequency in each band. Frequency was treated as a categorical variable. Ear intercepts were modeled as a random effect. The Satterthwaite approximation was used to calculate degrees of freedom for F tests. Statistical analyses were conducted with a significance level of α=0.01.

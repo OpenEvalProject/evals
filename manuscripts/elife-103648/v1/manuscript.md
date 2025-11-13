@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03cve4549 Tsinghua-Peking Center for Life Sciences, Tsinghua University Beijing China
-2. https://ror.org/03cve4549 Beijing Frontier Research Center for Biological Structure, Tsinghua University Beijing China
-3. https://ror.org/03cve4549 McGovern Institute for Brain Research, Tsinghua University Beijing China
-4. https://ror.org/03cve4549 School of Life Sciences, Tsinghua University Beijing China
-5. https://ror.org/05t8y2r12 Institute of Molecular Enzymology, Soochow University Suzhou China
-6. https://ror.org/00a2xv884 Children's Hospital, National Clinical Research Center for Child Health, Zhejiang University School of Medicine Hangzhou China
-7. https://ror.org/03mq8q210 State Key Laboratory for Membrane Biology Beijing China
-8. https://ror.org/00a2xv884 Department of Cell Biology, Zhejiang University School of Medicine Hangzhou China
+1. Tsinghua-Peking Center for Life Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+2. Beijing Frontier Research Center for Biological Structure, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+3. McGovern Institute for Brain Research, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+4. School of Life Sciences, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+5. Institute of Molecular Enzymology, Soochow University Suzhou China ([ROR:05t8y2r12](https://ror.org/05t8y2r12))
+6. Children's Hospital, National Clinical Research Center for Child Health, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+7. State Key Laboratory for Membrane Biology Beijing China ([ROR:03mq8q210](https://ror.org/03mq8q210))
+8. Department of Cell Biology, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 
 † Corresponding author
 
@@ -36,37 +36,77 @@ The ‘elbow’ of a kinesin refers to a flexible region situated between two co
 
 ## Results
 
-## NEKL-3 phosphorylates the OSM-3 kinesin’s elbow
+### NEKL-3 phosphorylates the OSM-3 kinesin’s elbow
 
 To determine whether NIMA kinase family members could directly phosphorylate OSM-3, we purified prokaryotic recombinant C. elegans NEKL-3/NEKL-4 and OSM-3 protein in order to perform in vitro phosphorylation assays. We were able to obtain active recombinant NEKL-3 but not NEKL-4. The in vitro phosphorylation assays showed that NEKL-3 directly phosphorylates OSM-3 (Figure 1A, B, Supplementary file 1). Subsequent mass spectrometric analysis revealed phosphorylation at residues 487–490, which localize to the conserved ‘YSTT’ motif within OSM-3’s C-terminal tail region (Figure 1A–E, Figure 1—figure supplement 1, Supplementary file 1). To gain structural insights from this motif, we employed LocalColabFold based on AlphaFold2 to predict the dimeric structure of OSM-3 (Evans et al., 2022; Jumper et al., 2021; Mirdita et al., 2022). The highest confidence model was selected for further analysis (Figure 1C, Figure 1—figure supplement 2A, B). These four phosphorylated ‘YSTT’ residues are situated at the end of the hinge2 region, linking coiled-coil1 and coiled-coil2 (Figure 1A, C, D). In kinesin-1, this inter-coiled-coil junction is known as the ‘elbow’, essential for adopting a compact conformation for autoinhibition (Tan et al., 2023; Weijman et al., 2022). Accordingly, we have designated the region comprising amino acids 487–490 as the ‘elbow’ of OSM-3. Although the elbow region is prevalent throughout the kinesin superfamily, the molecular regulation of the elbow conformation remains to be illustrated.
 
-## Phosphorylation at the elbow inhibits the motility of the OSM-3 kinesin in C. elegans
+![Figure 1.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the full-length OSM-3. Motor domain (blue), neck (gray), and coiled-coils (green) are indicated. CC, coiled-coil. (B) Mass spectrum of an OSM-3 peptide that was phosphorylated by NEKL-3. Phosphorylated gel bands were subjected to MS analysis searching for phosphorylation modifications. Residues 487–490 of OSM-3 were phosphorylated and were marked by green color. (C) Phosphorylated residues 488–490 are at the ‘elbow’ of OSM-3. It shows the overall structure of the homodimeric OSM-3 predicted by AlphaFold2. The dashed square marks the ‘elbow’ region and is zoomed-in in D. (E) Genome-editing constructs of the elbow, showing the PD (phosphor-dead) and PM (phosphor-mimic) sequences comparing to wild type. Residues 487–490 of OSM-3 were edited to ‘FAAA’ for PD strain or edited to ‘DDEE’ for PM strain. Abbreviations: Y, Tyr; S, Ser; T, Thr; F, Phe; A, Ala; D, Asp; E, Glu.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Sequence alignment of OSM-3 and other members in the kinesin-2 family (KIF3A, KIF3B, KIF3C, and KIF17) from different model organisms as indicated. This figure shows the alignment results around the elbow region. Green arrowheads indicate the four phosphorylated residues. The position of amino acids of OSM-3 is labeled at the top of the figure. Sequences were aligned using CLUSTAL O (1.2.4) and presented by ESPript 3.0.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) PAE of OSM-3 dimer presented by LocalColabFold. A total of five predicted models were presented, and the ‘rank_1’ model was selected for the following analysis. x-axis, residue number; y-axis, A and B represent two identical OSM-3 peptide chains. (B) pLDDT for all five predicted models shown in (A).
+
+### Phosphorylation at the elbow inhibits the motility of the OSM-3 kinesin in C. elegans
 
 To investigate the in vivo effects of phosphorylation and dephosphorylation at the ‘elbow’ region of OSM-3, we utilized genome-editing techniques to generate knock-in worms harboring phospho-dead (PD) and phospho-mimic (PM) mutations. Specifically, we replaced the amino acids 487–490 YSTT with FAAA for the PD mutation and DDEE for the PM mutation in the C. elegans OSM-3::GFP genome (Figure 1D, E). The wild-type (WT) OSM-3::GFP facilitates anterograde IFT to construct the distal ciliary segments of sensory neurons, and OSM-3::GFP fluorescence localizes along the ciliary distal segment (Figure 2A, B). However, OSM-3PD::GFP was absent from cilia and excluded from cell bodies, instead forming bright puncta around the axons of sensory neurons (Figure 2A, B). By introducing an IFT marker IFT70/DYF-1::mScarlet into osm-3pd worms, we revealed a marked reduction in ciliary length to 2.15 ± 0.37 μm compared to WT animals of 7.74 ± 0.94 μm, consistent with the absence of OSM-3 kinesin within the cilia (Figure 2B, C). The shortened cilia length and the formation of abnormal puncta at the neurite tip resemble the phenotype observed in our previously characterized OSM-3G444E mutation, which disrupts autoinhibition and leads to hyperactivation of OSM-3 (Xie et al., 2024). Conversely, OSM-3PM::GFP fluorescence did not form puncta but localized within the sensory cilia, albeit with shortened cilia of 4.89 ± 1.14 μm and reduced IFT speed at both middle and distal segments, indicating impaired OSM-3 motility (Figure 2B–D, Figure 2—figure supplement 1A–D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of the phospho-dead (PD) and phospho-mimic (PM) knock-in worms showing their OSM-3 signal at amphid cilia, amphid neuronal soma, and phasmid cilia, respectively. The contours of the worms are marked by white dashed lines. Scale bar, 10 μm. (B) Representative images of the cilia from PD and PM worms marked by the ciliary marker DYF-1::mScarlet. White arrows indicate the junction between middle and distal segments, while the asterisks indicate the ciliary base. M.S., middle segment; D.S., distal segment. Scale bar, 5 μm. (C) Statistics of the cilium length of the strains shown in (B). The lengths of DYF-1::mScarlet signals were measured and analyzed. (D) Intraflagellar transport (IFT) velocities of PD and PM worms. ****p < 0.0001, analyzed by one-way ANOVA, p values were adjusted by BH method.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) IFT velocity marked by DYF-1-mScarlet. Genotypes are shown on the left. Left panel, frequency distribution of IFT particles in the middle segment. Middle panel, frequency distribution of IFT particles in the distal segment. Data were fitted with a Gaussian distribution. Right panel, overlay of the fitted curves of middle and distal segments. (D) OSM-3::GFP velocity in osm-3pm worms. N.A., not available.
 
 These findings indicate that OSM-3-PM is in an autoinhibited state capable of ciliary delivery, yet fails to achieve full activation due to defective dephosphorylation. This incomplete activation results in suboptimal motor function and intermediate ciliary length phenotypes (Figure 2B, C). In contrast, OSM-3-PD exhibits constitutive activation leading to aggregation into axonal puncta, which completely abolishes its ciliary entry capacity (Figure 2A, B). Our findings collectively suggest that NEKL-3-mediated phosphorylation of the OSM-3 elbow domain serves as a critical regulatory mechanism suppressing motor activity. Under physiological conditions, this phosphorylation-dependent autoinhibition likely prevents precocious activation during cytoplasmic transport, ensuring proper delivery of motor complexes to the cilium. Subsequent dephosphorylation at the ciliary base then activates OSM-3, enabling its processive movement required for IFT.
 
 While nekl-3 null mutants are inviable due to essential mitotic roles (Barstead et al., 2012), conditional knockout (cKO) of nekl-3 in ciliated neurons revealed its critical role in regulating OSM-3 dynamics (Huang et al., 2025). In nekl-3 cKO animals, OSM-3—normally enriched in the ciliary distal segment—redistributed uniformly along the cilium, concomitant with premature activation of anterograde motility in the middle ciliary region (Huang et al., 2025). This phenotype aligns with our model wherein NEKL-3 phosphorylation suppresses OSM-3 activity, ensuring spatiotemporal regulation of IFT.
 
-## Structural models of the OSM-3 kinesin and its mutants
+### Structural models of the OSM-3 kinesin and its mutants
 
 To explore the impact of the elbow phosphorylation on the OSM-3 kinesin, we first predicted a model of the OSM-3 monomer using LocalColabFold and relaxed the mutated models with PyRosetta to calculate the energy-minimized conformations of these mutations (Figure 3A; Chaudhury et al., 2010; Evans et al., 2022; Jumper et al., 2021; Mirdita et al., 2022). The WT and PM models resulted in similar conformations, with their tails binding to the motor head and forming a reverse β-sheet secondary structure (Figure 3A). The motor–tail interaction, reported in other motors, typically results in an autoinhibitory state (Coy et al., 1999; Dietrich et al., 2008; Espeut et al., 2008; Friedman and Vale, 1999). In contrast, the G444E mutation, a characterized hyperactive mutation, showed a head–tail dissociation conformation (Figure 3A; Imanishi et al., 2006; Xie et al., 2024). Similarly, the OSM-3PD protein also exhibited a head–tail dissociation conformational change during relaxation (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig3-v1.jpg)
 
-**Figure 3.:** (A) Relaxed structure models of OSM-3 and mutants. Black arrowheads indicate the elbow while red dashed circles mark the C-terminus of the protein. Black dashed lines showed the extending direction from the elbow toward the C-terminus. Wild-type (WT) and phosphor-mimic (PM) showed close interaction between the tail and motor domain, while G444E and phosphor-dead (PD) showed that the tails are far away from the motor. (B) Heatmaps of the energy states of the pre-relaxed structure models from amino acid 481st to 500th, as labeled on the left; the amino acids between the white lines are the elbow region; each row represents an energy item as labeled on the bottom. (C) Heatmaps comparing the energy states by direct subtraction between the mutants and WT. The PD mutant has lower ‘fa_dun’ energy while having higher ‘ref’ energy than that of the PM mutant. Energy terms are explained in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** (A) Relaxed structure models of OSM-3 and mutants. Black arrowheads indicate the elbow while red dashed circles mark the C-terminus of the protein. Black dashed lines showed the extending direction from the elbow toward the C-terminus. Wild-type (WT) and phosphor-mimic (PM) showed close interaction between the tail and motor domain, while G444E and phosphor-dead (PD) showed that the tails are far away from the motor. (B) Heatmaps of the energy states of the pre-relaxed structure models from amino acid 481st to 500th, as labeled on the left; the amino acids between the white lines are the elbow region; each row represents an energy item as labeled on the bottom. (C) Heatmaps comparing the energy states by direct subtraction between the mutants and WT. The PD mutant has lower ‘fa_dun’ energy while having higher ‘ref’ energy than that of the PM mutant. Energy terms are explained in Figure 3—source data 1.
 
 To trace the clues of the conformational changes, we evaluated the energy of pre-relaxed structures around the phosphorylated residues (Figure 3B, C, Figure 3—source data 1, Supplementary file 2). Compared to the PM model of OSM-3, the PD-mutated side chains had lower side-chain rotamer energy (the ‘fa_dun’ term) (Alford et al., 2017), likely due to the larger and higher charged residues in the PM state. However, the PD mutation residues exhibited higher folding/unfolding free energy (the ‘ref’ term) (Alford et al., 2017), indicating an unstable folding state of the mutated loop (Figure 3B, C, Figure 3—source data 1, Supplementary file 2). This instability may explain the observed conformational change leading to the autoinhibition release of OSM-3PD.
 
-## Biochemical analyses reveal the role of elbow phosphorylation in OSM-3 motility
+### Biochemical analyses reveal the role of elbow phosphorylation in OSM-3 motility
 
 To directly observe the effects of phosphor mutants in the elbow region of OSM-3 in microtubule binding and motility, we examined the microtubule-stimulated ATPase activity, microtubule gliding activity, and single-molecular movement of the WT and mutant OSM-3 variants using prokaryotic recombinant proteins (Figure 4A–F, Figure 4—figure supplement 1). The WT full-length OSM-3 exhibited minimal ATPase activity (6.97% of kinesin heavy chain [KHC]) due to its autoinhibition (Figure 4A). As previously reported, the hyperactive OSM-3G444E mutation showed a significant increase in ATPase activity (131.65% of KHC) (Figure 4A, Imanishi et al., 2006; Xie et al., 2024). Consistent with our structural predictions, the OSM-3PD mutation also led to an upregulation of ATPase activity (98.15% of KHC) to a level similar to OSM-3G444E (Figure 4A). In contrast, OSM-3PM caused a slight increase in ATPase activity (34.28% of KHC) compared to WT but was markedly lower than OSM-3G444E or OSM-3PD (Figure 4A). The PM mutant’s partial ATPase activity (34.28% of KHC) might arise from imperfect phosphomimicry—while the DDEE substitution introduces negative charges, it lacks the steric bulk of phosphorylated tyrosine (pY487). And this incomplete mimicry allows residual autoinhibition, sufficient to limit ciliary construction in vivo. Notably, the open-state OSM-3 mutants (e.g., G444E) displayed elevated ATPase activity, consistent with structural predictions of autoinhibition release (Figures 3A and 4A; Xie et al., 2024). While hydrodynamic profiling (e.g., SEC) could further resolve conformational states, our functional assays directly connect predicted structural changes to altered biochemical and cellular activity.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig4-v1.jpg)
+
+**Figure 4.:** (A) Microtubule-stimulated ATPase activity of wild-type (WT) OSM-3 and mutants. G444E, the hyperactive positive control; KHC, kinesin heavy chain. Average activity of KHC was set to 100% and others were normalized to KHC. (B) Summary of the single-molecular assay and the microtubule gliding assay. R.D., rarely detected. N.A., not available. Data are [mean ± SD (number of events)]. (C) Velocity distributions of microtubule gliding assays of the indicated OSM-3 constructs. n, total events measured. v, μm s–1, average velocity with standard deviation. (D) Statistics of microtubule gliding velocities shown in (C). (E) Representative kymographs of the single-molecular movements of WT OSM-3 and mutants as indicated. Scale bars, vertical, 10 s; horizontal, 5 μm. (F) Velocity distributions of the single-molecular assays. n, total events measured. v, μm s–1, average velocity with standard deviation. The distribution of G444E was fitted with a Gaussian distribution curve, while the distribution of phosphor-dead (PD) was fitted with a one-phase decay curve. (G) Run length distributions of the single-molecular assays. n, total events measured. l, average run length. The curves were fitted with the one-phase decay distribution. *p < 0.05, **p < 0.01, ****p < 0.0001, analyzed by one-way ANOVA, p values were adjusted by BH method.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** SDS–PAGE of the purified recombinant OSM-3::eGFP and mutants, Coomassie Blue stained. The elution peaks of each recombinant protein were shown, labeled on the top.
+
 Next, we performed microtubule gliding assays to examine the gliding activity of OSM-3 and its mutants. In support of the changes in ATPase activities, OSM-3PD exhibited increased gliding speed (0.67 ± 0.08 μm/s) compared to WT (0.52 ± 0.06 μm/s) but was slower than OSM-3G444E (0.87 ± 0.09 μm/s) (Figure 4B–D). To examine the processivity of OSM-3, we used a total internal reflection fluorescence microscope to visualize GFP-labeled motors. We did not detect any processive movement of WT OSM-3 or OSM-3PM on microtubules (Figure 4B, E–G). In contrast, OSM-3PD, similar to the hyperactive OSM-3G444E, underwent persistent movement along microtubules, albeit at a slower speed and with a lower landing rate (Figure 4B, E–G). These data indicate that the OSM-3PD mutation disrupts the autoinhibition of full-length OSM-3, providing in vitro evidence for the inhibitory effect of NEKL-3 phosphorylation at the OSM-3 elbow region in regulating its autoinhibition.
 
-## Genetic suppressor screens identified an intragenic suppressor of OSM-3PD
+### Genetic suppressor screens identified an intragenic suppressor of OSM-3PD
 
 We performed a forward genetic suppressor screen to identify mutations that could restore the ciliary function of osm-3PD (Figure 5A). After screening over 10,000 haploid genomes, we isolated two suppressor mutants that exhibited the uptake of the fluorescent dye DiI through cilia, similar to WT animals (n = 100 for each) (Figure 5B, C). Both suppressors were intragenic and led to the same A489T missense mutation in the elbow region (Figure 5B, C). Whole-genome sequencing data indicated that these two strains carried distinct mutations in many other loci (Supplementary files 3 and 4), supporting the notion that these two alleles were isolated independently from our suppressor screens.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematics of the forward genetic screen. 100% Dyf osm-3(PD)::GFP KI worms were mutated by ethyl methanesulfonate (EMS) and F2 progenies were screened for dye filling positive mutants. (B) Two independent suppressor mutants cloned from the genetic screening. (C) Amino acid sequences of the suppressor mutants at the elbow. (D) Representative images of the cilia of the suppressors and the kymographs showing the velocity of OSM-3. The rightmost panel shows the same OSM-3 version (487–489: ‘FATA’) with the suppressors but over-expressed under the ciliary Pdyf-1 promoter in osm-3(p802) worm. The arrows indicate the junction between middle and distal segments, while the asterisks indicate the ciliary base. M.S., middle segment; D.S., distal segment. Scale bars, vertical, 10 s; horizontal, 5 μm. (E) Summary of the OSM-3 velocity. M.S., middle segment. D.S. distal segment. Data are [mean ± SD (number of events)].
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) OSM-3 velocity of wild-type (WT) and mutant proteins marked by GFP. Genotypes are shown on the left. Left panel, frequency distribution of IFT particles in the middle segment. Middle panel, frequency distribution of IFT particles in the distal segment. Data were fitted with the Gaussian distribution. Right panel, overlay of the fitted curves of middle and distal segments. (D) Velocity and frequency distribution of overexpressed OSM-3 (487–489: ‘FATA’) under the ciliary Pdyf-1 promoter in osm-3(p802) worm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103648/elife-103648-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Representative images of OSM-3(T489E) and OSM-3(T489A) overexpressed in osm-3(p802) strain under the ciliary Pdyf-1 promoter, respectively. The images showed the areas around nerve rings. Scale bar, 10 μm. (C) Statistics of strains in (A, B), showing the percentage of worms with bright puncta around nerve rings for each strain. n, number of worms checked.
 
 We studied the in vivo behaviors of the OSM-3PD-A489T variant and observed that the vast majority of GFP fluorescence was localized within cilia (Figure 5D). Notably, neither of the GFP-tagged OSM-3PD-A489T mutants displayed any discernible GFP puncta throughout the entirety of the C. elegans body (N > 100 for each double mutant), indicating that the A489T mutation completely eliminated the aberrant accumulation of OSM-3PD (Figure 5D). By measuring IFT speeds, we showed that OSM-3PD-A489T moved indistinguishably from WT along the middle and distal ciliary segments (Figure 5D, E, Figure 5—figure supplement 1A–D). These observations were further confirmed in transgenic animals expressing GFP-tagged OSM-3PD-A489T in the osm-3(p802) null allele background (Figure 5D, E, Figure 5—figure supplement 1A–D).
 
@@ -96,27 +136,27 @@ This study primarily elucidates the inhibitory phosphorylation of OSM-3 prior to
 
 ## Methods
 
-## C. elegans strain culture
+### C. elegans strain culture
 
 All C. elegans strains used in this study were cultured on OP50 seeded NGM (nematode growth medium) plates at 20°C. Supplementary file 5 summarizes the strains.
 
-## Molecular biology
+### Molecular biology
 
 The knock-in osm-3-pm and osm-3-pd strains were generated by SunyBiotech in the osm-3::GFP KI (SYD0199) background by CRISPR–Cas9-based methods and confirmed by Sanger sequencing.
 
 For OSM-3 transgenic strains, point mutation constructs were generated by PCR, and the desired constructs were co-injected with rol-6[su1006] into the germ line of young adult hermaphrodites. Marker-positive F1s were singled, and the F2s with transgenes were identified as transgenic lines. Two independent lines were maintained and used for experiments.
 
-## Live imaging
+### Live imaging
 
 Live imaging was performed as described (Xie et al., 2024). Basically, young adult worms were anesthetized with 0.1 mmol/l levamisole in M9 buffer and fixed on a 3% agarose pad. For the spinning disk confocal system, imaging was performed on an Axio Observer Z1 microscope (Carl Zeiss, Oberkochen, Germany) equipped with a 100×, 1.49 NA objective, an electron-multiplying charge-coupled device camera (Andor iXon+ DU-897D-C00#BV-500), and the 488/561 nm lines of a Sapphire CW CDRH USB Laser System attached to a spinning disk confocal scan head (Yokogawa CSU-X1 Spinning Disk Unit). Images were acquired by μManager (https://micro-manager.org/) at an exposure time of 200ms and analyzed with ImageJ software.
 
-## Structure prediction and energy minimization
+### Structure prediction and energy minimization
 
 OSM-3 model was predicted using LocalColabFold (Evans et al., 2022; Jumper et al., 2021; Mirdita et al., 2022). Mutated proteins were designed by PyMOL 2.6, choosing the rotamer of the mutated residues in G444E, PM, and PD models with the least clash as the initial conformation.
 
 To predict mutation-induced conformational changes, the initial models were subjected to Pyrosetta (Chaudhury et al., 2010). The energies of pre-relaxed models were evaluated with the Rosetta Energy Function 2015 (Alford et al., 2017), and then the relax procedure was applied to the models with default parameters to obtain the relaxed models visualized by Pymol to minimize the energy of these models. In detail, to obtain the relaxed models visualized by PyMOL and minimize the energy of these models, the classic relax mover was used in the procedure mentioned above with default settings. The relax script has been uploaded to Github: https://github.com/young55775/RosettaRelax_for_OSM3, copy archived at GZY, 2025.
 
-## Protein preparation
+### Protein preparation
 
 OSM-3 was expressed in E. coli BL21 (DE3) and purified for in vitro assays using established protocols (Imanishi et al., 2006; Xie et al., 2024). SEC-MALS (Xie et al., 2024) confirmed that recombinant OSM-3 forms a homodimer (173–193 kDa) under physiological conditions, ensuring its dimeric state remained intact.
 
@@ -124,26 +164,26 @@ Basically, point mutations were introduced into the pET.M.3C OSM-3-eGFP-His6 pla
 
 C. elegans nekl-3 cDNA was cloned into pGEX-6P GST vector and expressed in E. coli BL21 (DE3) and purified for in vitro phosphorylation assays. Plasmid transformed E. coli (BL21) was cultured at 37°C and induced overnight at 18°C with 0.5 mM IPTG. Cells were lysed in lysis buffer (50 mM NaPO4 pH 8.0, 250 mM NaCl, 1 mM DTT, Complete Protease Inhibitor Cocktail (Roche)) and GST beads were applied for affinity purification. After incubation, beads were washed with wash buffer (50 mM NaPO4 pH 6.0, 250 mM NaCl, 1 mM DTT) and eluted with elute buffer (50 mM NaPO4 pH 7.2, 150 mM NaCl, 10 mM GSH, 1 mM DTT). Purified proteins were dialyzed against storage buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl). Protein concentration was determined by standard Bradford assay.
 
-## ATPase assays
+### ATPase assays
 
 Microtubule-stimulated ATPase activity assays were performed with a commercial kit (HTS Kinesin ATPase Endpoint Assay Biochem Kit, Cytoskeleton Inc) following the manufacturer’s instructions.
 
-## In vitro motility assays
+### In vitro motility assays
 
 Microtubule gliding assays and single-molecular assays were performed as described previously (Imanishi et al., 2006; Xie et al., 2024). Briefly, the elution peak fraction was applied to a Zeba Spin Desalting Column to exchange the protein into motility buffer (80 mM pipes-K pH 6.8, 200 mM KCl, 1 mM EGTA, 2 mM MgCl2, 0.1 mM ATP, 10 mM bME) before use. For microtubule gliding assays, OSM-3 was flowed into a flow cell in the desired concentration, and rhodamine-labeled microtubules were subsequently flowed-in with assay buffer (BRB80, 1 mM ATP/Mg2+, 1% β-mercaptoethanol, 0.08 mg/ml glucose oxidase, 0.032 mg/ml catalase, and 80 mM glucose). For single-molecular assays, microtubules were attached to the flow cell surface via antibodies (SAP4G5), and the motors were flowed-in in a desired concentration in assay buffer. The eGFP and the rhodamine were illuminated by 488 or 561 nm laser at 20 mW, and signals were visualized by Olympus IX83 microscopy equipped with a 150× (1.45 NA, oil, Olympus) objective lens and an ORCA-Flash4.0 V3 camera. The system was controlled by Micro-Manager 2.0.
 
-## In vitro phosphorylation assay
+### In vitro phosphorylation assay
 
 20 μM purified OSM-3 was incubated with 1 μM GST-NEKL-3 at 30°C in 100 μl reaction buffer (50 mM Tris-HCl pH 8.0, 10 mM MgCl2, 150 mM NaCl, and 2 mM ATP) for 30 min. The reaction was terminated by boiling for 5 min with an SDS-sample buffer.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Following NEKL-3 treatment, OSM-3 proteins were resolved by SDS–PAGE and visualized with Coomassie Brilliant Blue staining. Protein bands corresponding to OSM-3 were excised and subjected to digestion using the following protocol: reduction with 5 mM TCEP at 56°C for 30 min; alkylation with 10 mM iodoacetamide in darkness for 45 min at room temperature, and tryptic digestion at 37°C overnight with a 1:20 enzyme-to-protein ratio. The resulting peptides were subjected to mass spectrometry analysis. Briefly, the peptides were analyzed using an UltiMate 3000 RSLCnano system coupled to an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific). We applied an in-house proteome discovery searching algorithm to search the MS/MS data against the C. elegans database. Phosphorylation sites were determined using the PhosphoRS algorithm with manual validation of MS/MS spectra.
 
-## Genetic screening
+### Genetic screening
 
 To isolate suppressors of osm-3(PD), L4 worms were collected in 4 ml M9 and treated with 20 μl ethyl methanesulfonate for 4 hr. Adult F2 animals were subjected to the dye-filling assay, and dye-positive mutant animals were individually cultured. Dye (DiI, 1,1′-dioctadecyl-3,3,3′,3′,-tetramethylindocarbocyanine perchlorate; Sigma-Aldrich, St. Louis, MO, USA) was used at a final concentration of 20 μg/ml. Whole-genome sequencing was applied to all suppressor strains to identify candidate genes.
 
-## Quantifications and statistical analysis
+### Quantifications and statistical analysis
 
 ImageJ software was used to perform measurements and quantifications of the images. For cilium length, the indicated numbers of phasmid cilia were measured. For IFT velocity, the indicated numbers of IFT particles in amphid and phasmid cilia were randomly selected for the measurement. Microtubule-stimulated ATPase activities were derived from three assays, and the average activity of KHC was set to 100%. Single molecule and gliding data were measured using ImageJ software and all the events measured were selected randomly. Statistical analyses were performed in GraphPad Prism. The statistical differences were determined by two-tailed Student’s t-test or ANOVA analysis as described in the figure legends. The frequency distribution of IFT velocity was analyzed and fitted with a Gaussian distribution curve.

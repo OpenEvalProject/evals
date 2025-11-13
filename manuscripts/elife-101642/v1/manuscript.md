@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/04h9pn542 Department of Electrical and Computer Engineering, Seoul National University Seoul Republic of Korea
-2. https://ror.org/04q78tk20 Department of Physiology, Sungkyunkwan University School of Medicine Suwon Republic of Korea
-3. https://ror.org/04q78tk20 Department of Biomedical Engineering, Sungkyunkwan University Seoul Republic of Korea
-4. https://ror.org/04q78tk20 Department of Intelligent Precision Healthcare Convergence, Sungkyunkwan University Seoul Republic of Korea
-5. https://ror.org/02tsanh21 National Cancer Center Goyang-si Republic of Korea
+1. Department of Electrical and Computer Engineering, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+2. Department of Physiology, Sungkyunkwan University School of Medicine Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+3. Department of Biomedical Engineering, Sungkyunkwan University Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+4. Department of Intelligent Precision Healthcare Convergence, Sungkyunkwan University Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+5. National Cancer Center Goyang-si Republic of Korea ([ROR:02tsanh21](https://ror.org/02tsanh21))
 
 † Corresponding author
 
 ## Abstract
 
-Membrane potential plays a crucial role in various cellular functions. However, existing techniques for measuring membrane potential are often invasive or have limited recording depth. In contrast, MRI offers noninvasive imaging with desirable spatial resolution over large areas. This study investigates the feasibility of utilizing MRI to detect responses of cultured cells and in vivo rat cortex to membrane potential-modulating ionic solutions by measuring magnetic resonance parameters. Our findings reveal that depolarizing (or hyperpolarizing) ionic solutions increase (or decrease) the T 2 relaxation time, while the ratio of bound to free water protons shows the opposite trend. These findings also suggest a potential approach to noninvasively detect changes in membrane potential using MRI.
+Membrane potential plays a crucial role in various cellular functions. However, existing techniques for measuring membrane potential are often invasive or have limited recording depth. In contrast, MRI offers noninvasive imaging with desirable spatial resolution over large areas. This study investigates the feasibility of utilizing MRI to detect responses of cultured cells and in vivo rat cortex to membrane potential-modulating ionic solutions by measuring magnetic resonance parameters. Our findings reveal that depolarizing (or hyperpolarizing) ionic solutions increase (or decrease) the T2 relaxation time, while the ratio of bound to free water protons shows the opposite trend. These findings also suggest a potential approach to noninvasively detect changes in membrane potential using MRI.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ In this study, we investigated the possibility of using MRI to detect membrane p
 
 ## Results
 
-## In vitro changes in MR parameters induced by membrane potential
+### In vitro changes in MR parameters induced by membrane potential
 
 A non-excitable neuroblastoma cell line, SH-SY5Y, was selected to investigate the relationship between MR parameters and membrane potential modulated by ionic solutions. After culturing SH-SY5Y cells, they were suspended in extracellular media with various potassium ion concentrations ([K+]), while maintaining constant osmolarity by adjusting [Na+]. As the control condition, [K+]=4.2 mM was selected. For depolarization conditions, [K+]=20, 40, and 80 mM were used. For hyperpolarization conditions, [K+]=0.2 and 1 mM were used. The suspended cells were concentrated with centrifugation in an acrylic container and scanned in a 9.4T preclinical MRI system. The imaging slice was positioned 0.5 mm below the pellet-extracellular media interface to ensure that signals were acquired from the cell pellet. Under each condition, T2 and MT parameters such as pool size ratio (PSR) and magnetization transfer rate (kmf) were measured (Figure 1). The PSR value represents the ratio of hydrogen protons in macromolecules and free water, and kmf represents the magnetization transfer rate of hydrogen protons from macromolecules to free water. In addition, the membrane potential of SH-SY5Y cells in each condition was separately measured via patch clamp recording.
 
@@ -47,17 +47,33 @@ A non-excitable neuroblastoma cell line, SH-SY5Y, was selected to investigate th
 
 **Figure 1.:** (A) The picture on the left displays a side view of a double-sided cut spherical acrylic container with fabricated wells filled with extracellular media and cell pellets. As depicted in the top-view picture on the right, fourteen wells (matrix = 2 × 7) were created on the acrylic container, allowing each of the seven samples with six different K+ concentrations ([K+]=0.2–80 mM) and one Ba2+ concentration ([Ba2+]=10 mM) to be doubled in the same column for improved signal-to-noise ratio (SNR) in MR signal acquisition. (B) The image illustrates the configuration after loading cells into the wells and pelleting them at the bottom of the wells. The imaging slice was positioned 0.5 mm below the pellet-media interface to acquire signals predominantly from the cell pellets. (C) Representative one-dimensional T2-weighted MR signals with 5 selected echo times out of a total of 50 acquired echo times.
 
-The changes of T2, PSR, and kmf in SH-SY5Y cells when the membrane potential (Vm) was modulated by varying [K+] are shown in Figure 2, alongside the actual Vm measured via patch clamp recordings. We conducted statistical analyses to assess the effect of changes in Vm from the control condition (ΔVm) on the MR parameters. A linear mixed-effect model was applied to account for inter-sample variability and repeated measurements. This model included MR parameters as dependent variables, ΔVm as a fixed effect, and cell batch as a random effect. The analysis yielded the following relationships:(1)T2 (ms)=49.7(1+0.00687ΔVm)\begin{document}$$\displaystyle  T_2\ (\text{ms}) = 49.7 \left(1 + 0.00687\, \Delta V_m\right)$$\end{document}(2)PSR=0.0377(1−0.00542ΔVm)\begin{document}$$\displaystyle  \text{PSR} = 0.0377 \left(1 - 0.00542 \, \Delta V_m \right)$$\end{document}(3)kmf (Hz)=14.8(1+0.000648ΔVm)\begin{document}$$\displaystyle  k_{\text{mf}}\ (\text{Hz}) = 14.8 \left(1 + 0.000648\, \Delta V_m\right)$$\end{document}
+The changes of T2, PSR, and kmf in SH-SY5Y cells when the membrane potential (Vm) was modulated by varying [K+] are shown in Figure 2, alongside the actual Vm measured via patch clamp recordings. We conducted statistical analyses to assess the effect of changes in Vm from the control condition (ΔVm) on the MR parameters. A linear mixed-effect model was applied to account for inter-sample variability and repeated measurements. This model included MR parameters as dependent variables, ΔVm as a fixed effect, and cell batch as a random effect. The analysis yielded the following relationships:
+
+$$
+T_{2} (ms)=49.7(1+0.00687ΔV_{m})
+$$
+
+
+
+$$
+PSR=0.0377(1−0.00542ΔV_{m})
+$$
+
+
+
+$$
+k_{mf} (Hz)=14.8(1+0.000648ΔV_{m})
+$$
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101642/elife-101642-fig2-v1.jpg)
 
-**Figure 2.:** V) of SH-SY5Y cells versus extracellular Km+ concentrations ([K+]).Changes in (A) T2, (B) PSR, and (C) k are displayed with blue bars (n=15). Membrane potentials are plotted with red triangles (n=3). The abscissa is in logarithmic scale. Error bars denote standard deviation. Statistical significance of changes in MR parameters is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).mf
+**Figure 2.:** Changes in (A) T2, (B) PSR, and (C) kmf are displayed with blue bars (n=15). Membrane potentials are plotted with red triangles (n=3). The abscissa is in logarithmic scale. Error bars denote standard deviation. Statistical significance of changes in MR parameters is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).
 
 The effects of ΔVm on T2 and PSR were both significant (p<0.0001), indicating an increase in T2 and a decrease in PSR during depolarization at high [K+], with the opposite trend during hyperpolarization at low [K+]. On the other hand, the effect of ΔVm on kmf was not significant (P=0.360).
 
 Subsequent post-hoc analyses compared each experimental condition to the control using Dunnett’s test to account for multiple comparisons (Figure 2). During depolarization induced by the highest [K+] (80 mM, ΔVm = 30.0 mV), changes in MR parameters were observed as a 20.0% increase in T2 (ΔT2=10.1ms, p<0.0001) and a 12.9% decrease in PSR (ΔPSR = −0.00476, p<0.0001). Conversely, during hyperpolarization induced by the lowest [K+] (0.2 mM, ΔVm = −5.33 mV), T2 decreased by 4.40% (ΔT2 = −2.21ms, p<0.0001) and PSR increased by 6.28% (ΔPSR = 0.00231, p<0.0005). However, changes in kmf were not significant across all conditions (p>0.05). These findings from in vitro SH-SY5Y cell experiments suggest that MR parameters, such as T2 and PSR, exhibit sufficient sensitivity to detect alterations in membrane potential induced by varying [K+], including both depolarization and hyperpolarization.
 
-## Using a K+ channel blocker
+#### Using a K+ channel blocker
 
 In this experiment, we investigated whether depolarization induced by altering potassium permeability with barium ions (Ba2+) would affect MR parameters similarly to depolarization induced by varying [K+], thereby further validating our findings. For this purpose, we administered barium ions (Ba2+) at a concentration of 10 mM to induce depolarization while maintaining constant osmolarity by adjusting [Na+]. Ba2+ was chosen because it inhibits several types of two-pore-domain potassium channels (Lesage and Lazdunski, 2000; Ma et al., 2011), which predominantly regulate the resting membrane potential. Previous studies have confirmed that Ba2+ depolarizes the membrane potential in SH-SY5Y and Jurkat cells (Vaughan et al., 1995; Pottosin et al., 2008).
 
@@ -65,11 +81,11 @@ The Ba2+-induced depolarization condition was compared with K+-induced depolariz
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101642/elife-101642-fig3-v1.jpg)
 
-**Figure 3.:** A) T2, (B) PSR, and (C) k of SH-SY5Y cells across experimental conditions: [Kmf+]=0.2–80 mM (blue cross) and [Ba2+]=10 mM (green triangle), compared to the control condition (black cross).Data from fifteen experiments (n=15) are displayed. Linear regression lines for [K+] data (blue solid line) and [Ba2+] data (green solid line) are drawn along with dotted lines representing 95% confidence intervals. Error bars denote standard deviation. Statistical significance of changes in MR parameters with [Ba2+]=10 mM is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).
+**Figure 3.:** Data from fifteen experiments (n=15) are displayed. Linear regression lines for [K+] data (blue solid line) and [Ba2+] data (green solid line) are drawn along with dotted lines representing 95% confidence intervals. Error bars denote standard deviation. Statistical significance of changes in MR parameters with [Ba2+]=10 mM is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).
 
 Subsequent post-hoc analyses compared the [Ba2+]-induced depolarization to the control using Dunnett’s test to account for multiple comparisons (Figure 3). In response to depolarization caused by [Ba2+]=10 mM, T2 increased by 7.82% (ΔT2=3.93ms, p<0.0001) and PSR decreased by 8.06% (ΔPSR = −0.00297, p<0.0001). The change in kmf was not significant (Δkmf = −0.832 Hz, p=0.263). The depolarization of membrane potential induced by [Ba2+] was measured as ΔVm = 13.3 mV by patch clamp recording.
 
-## Using another cell type
+#### Using another cell type
 
 To investigate whether membrane potential-modulating ionic solutions produce similar changes in MR parameters across different cell types, we assessed another cell line, Jurkat, under the same experimental conditions applied to SH-SY5Y cells. These conditions included a control condition ([K+]=4.2 mM), hyperpolarization under decreased [K+] conditions ([K+]=0.2 and 1 mM), depolarization under increased [K+] conditions ([K+]=20, 40, and 80 mM), and a Ba2+-induced depolarization condition ([Ba2+]=10 mM), all maintaining consistent osmolarity by adjusting [Na+].
 
@@ -77,9 +93,9 @@ Each experimental condition was compared to the control using Dunnett’s test t
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101642/elife-101642-fig4-v1.jpg)
 
-**Figure 4.:** A) T2, (B) PSR, and (C) k of Jurkat cells across experimental conditions: [Kmf+]=0.2–80 mM (blue bar) and [Ba2+]=10 mM (green bar), compared to the control condition of [K+]=4.2 mM (n=5).Error bars denote standard deviation. Statistical significance of changes in MR parameters is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).
+**Figure 4.:** Error bars denote standard deviation. Statistical significance of changes in MR parameters is marked with asterisks (ns: p>0.05, *: p<0.05, **: p<0.01, ***: p<0.001).
 
-## In vivo changes in T2 by membrane potential
+### In vivo changes in T2 by membrane potential
 
 The relationship of T2 values and membrane potential modulated by [K+], observed in the aforementioned SH-SY5Y and Jurkat cell studies, was further explored in an in vivo rat model to validate these findings under physiological conditions. As depicted in Figure 5, a craniotomy was performed to expose a 3-mm-diameter region of the rat cerebral cortex, followed by perfusion with artificial cerebrospinal fluid (aCSF) to modulate the membrane potential. Hemodynamic responses were pharmacologically suppressed. MRI scans were performed using a 7T preclinical MRI system to measure T2 in the exposed cortical area. A total of seven rats were used in the experiment that involved modulation of [K+]. The experimental protocol included sequential application of four conditions, each lasting 12 min: a baseline condition at [K+]=3 mM, a depolarization condition at [K+]=40 mM, further depolarization at [K+]=80 mM, followed by a recovery condition using baseline aCSF. The recovery condition was applied to two of the seven rats. To distinguish the effect of aCSF perfusion on T2 from the effect of changes in membrane potential, a control experiment was also conducted using only baseline aCSF for the entire duration (48 min) with another group of five rats.
 
@@ -115,50 +131,118 @@ In summary, our study demonstrates that MR parameters such as T2 relaxation time
 
 ## Materials and methods
 
-## In vitro cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Wistar</td>
+      <td>Orient Bio</td>
+      <td>Cat #: CrlOri:WI; RRID:RGD_13508588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SH-SY5Y</td>
+      <td>American Type Cell Collection</td>
+      <td>Cat #: CRL-2266; RRID:CVCL_0019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat E6.1</td>
+      <td>American Type Cell Collection</td>
+      <td>Cat #: TIB-152; RRID:CVCL_0367</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### In vitro cell culture
 
 Two human cell lines were utilized for the experiments: SH-SY5Y, an immortalized neuroblastoma line, and Jurkat, a leukemia cell line. Both cell lines were sourced from the American Type Culture Collection (ATCC), where their identities were authenticated by STR analysis and confirmed to be negative for mycoplasma contamination, as documented in the certificate of analysis provided at the time of purchase. The SH-SY5Y cells were cultured in DMEM/F12 medium supplemented with 10% (v/v) fetal bovine serum (FBS) and 100 U/ml penicillin/streptomycin. The cells were maintained at a constant temperature of 37 °C in a humidified atmosphere containing 5% CO2. Similarly, the Jurkat cells were cultured in RPMI-1640 medium, also supplemented with 10% (v/v) FBS and 100 U/ml penicillin/streptomycin, under the same conditions of temperature and CO2 concentration.
 
-## In vitro manipulation of membrane potential with extracellular media
+### In vitro manipulation of membrane potential with extracellular media
 
 The baseline extracellular medium was prepared with the following components: KCl = 4.2 mM; NaCl = 145.8 mM; HEPES = 20 mM; glucose = 4.5 g/l; EGTA = 10 µM; pH = 7.2. This baseline medium was considered a control condition for various extracellular media used to adjust membrane potential. Two extracellular media with low K+ concentrations (KCl = 0.2 and 1 mM) were prepared to hyperpolarize the membrane potential. Three extracellular media with high K+ concentrations (KCl = 20, 40, and 80 mM) were prepared to depolarize the membrane potential. A Ba2+ medium containing 10 mM BaCl2 was also prepared to depolarize the membrane potential in a different way, i.e., as a K+ channel blocker. These seven extracellular media were used for both MR imaging and patch clamp recording in vitro. Sodium ion concentrations ([Na+]) in all media were controlled to match the osmolarity with the baseline medium. The composition of all extracellular media is detailed in Appendix 1—table 3.
 
-## Preparation of cells for in vitro MR measurement
+### Preparation of cells for in vitro MR measurement
 
 SH-SY5Y cells were dissociated from their culture plates using 0.5 mM EDTA solution, then concentrated into a pellet (~70 µl) by centrifugation at 250×g for two minutes. The pellet was resuspended in the culture medium and divided evenly into seven aliquots. Each cell suspension was centrifuged and resuspended in each of the seven different media specified in Appendix 1—table 3. Centrifugation and resuspension were repeated three more times to completely clear out the culture medium. Each cell suspension with a different extracellular medium was then loaded into two wells on the same column of an acrylic container with 14 wells (matrix = 2 × 7) and centrifuged again to concentrate into pellets (Figure 1). The acrylic container was purposely formed into a spherical segment to enhance the homogeneity of the static magnetic field (Lee et al., 2020). The preparation of Jurkat cell samples was the same as for the SH-SY5Y cell samples. The preparation required 40–60 min, followed by an incubation period of 20–30 min.
 
-## In vitro MRI experiment
+### In vitro MRI experiment
 
 In vitro MRI experiments were performed on a 9.4T MRI system (BioSpec 94/30 USR, Bruker BioSpin) at room temperature. A volume coil with an inner diameter of 86 mm was utilized for both radiofrequency (RF) pulse transmission and signal reception. Within the acrylic container, two wells on the same column (matrix = 2 × 7) contained identical cell pellets with the same extracellular media. MRI signals from seven different cell samples in the horizontal direction were separated by one-dimensional frequency encoding along that direction (Figure 1). The MRI pulse sequence employed for mapping the T2 value was a single-echo spin-echo (SESE) sequence with 50 variable echo times (TE) spaced between 9.5 and 290.5ms on a logarithmic scale. For mapping the MT parameters, an inversion recovery multi-echo spin-echo (IR-MESE) sequence was used. The inversion times (TI) for the IR-MESE sequence were optimized using the theory of Cramér-Rao lower bounds (Li et al., 2010). The optimized TIs ranged from 4 to 10,079.4ms. After each TI, 16 spin-echo trains were acquired with an echo spacing of 9.5ms. Total scan time for both sequences was 23 min. Experiments were repeated 15 times for SH-SY5Y cells and 7 times for Jurkat cells, replacing cells in each repetition. Other scan parameters are detailed in Appendix 1—table 1.
 
-## Animals
+### Animals
 
 Male Wistar rats aged 8 weeks (250–300 g, Orient Bio) were used for MRI experiments after undergoing a craniotomy. All animal experiments were approved by the Institutional Animal Care and Use Committee at the National Cancer Center Korea (NCC-22–740). The rats were housed in ventilated cages under a 12 hr/12 hr light/dark cycle and provided with ad libitum access to food and water.
 
-## In vivo manipulation of membrane potential with artificial cerebrospinal fluid (aCSF)
+### In vivo manipulation of membrane potential with artificial cerebrospinal fluid (aCSF)
 
 The membrane potential of the exposed cortex was manipulated by directly perfusing the region of interest of the cerebral cortex with aCSF after a craniotomy. The baseline aCSF was prepared with the following components: KCl = 3 mM; NaCl = 135 mM; MgCl2 = 3 mM; HEPES = 20 mM; glucose = 4.5 g/l; EGTA = 2 mM; Nω-Nitro-L-arginine=1 mM; Nifedipine = 0.1 mM; pH = 7.4. Hemodynamic effects were pharmacologically suppressed using Nω-Nitro-L-arginine, Nifedipine, and EGTA. Nω-Nitro-L-arginine suppresses depolarization-induced hemodynamic response by blocking the synthesis of nitric oxide, which acts as a vasodilator (Dreier et al., 1995). Nifedipine blocks voltage-sensitive Ca2+ channels, and EGTA chelates free Ca2+ to inhibit the hemodynamic response (Redmond et al., 2002). To induce depolarization, aCSF with high [K+] (KCl = 40 and 80 mM) was prepared. The osmolarity of the aCSF was matched with the concentration of NaCl.
 
-## Rat surgery
+### Rat surgery
 
 A craniotomy was performed on a Wistar rat. The experimental setup after a surgical procedure is illustrated in Figure 5. The surgery was performed following an established protocol (Mostany and Portera-Cailliau, 2008) alike to that used in other MRI studies (Stanisz et al., 2002; Autio et al., 2014). Anesthesia was induced with 3% isoflurane in O2 and maintained with 2–3% isoflurane during the surgical procedure. Body temperature was maintained at 36.5–37.5°C with an infrared lamp. The head was fixed with a small animal stereotaxic frame. The hair on the scalp was shaved with a veterinary clipper. The skin and periosteum over the skull were removed using a scalpel and surgical scissors. A 3.0-mm-diameter burr hole was opened using a dental drill with its center at the coordinates of 2.5 mm anterior and 2.0 mm lateral to the lambda. Then, a cylindrical chamber was implanted upon the burr hole with cyanoacrylate glue and dental composite resin. The chamber was filled with the baseline aCSF and connected to inlet and outlet perfusion tubes. The exposed cerebral cortex inside the chamber was perfused with the baseline aCSF at a flow rate of 0.6 ml/min using peristaltic pumps.
 
-## In vivo MRI experiment
+### In vivo MRI experiment
 
 The rat with a cranial chamber installed on the cortical surface was placed on a 7T MRI system (BioSpec 70/20 USR, Bruker BioSpin), fixed in a customized cradle with two ear-bars and a bite-bar. A customized surface coil (rectangular, 35 mm × 20 mm) was used for RF pulse transmission and signal reception. Body temperature was maintained at 36.5–37.5°C using a warm air blower. Anesthesia was maintained with 2% isoflurane in O2 (0.6 l/min). Respiration rate and body temperature were monitored throughout the MRI experiment. MR images were acquired in a 2 mm coronal slice through the center of the burr hole (Figure 5), using a multi-echo spin-echo (MESE) sequence with 20 TEs (7.5–150ms). Other scan parameters are detailed in Appendix 1—table 2.
 
 A total of seven rats were subjected to four sequential experimental conditions, as depicted in Figure 5. First, the exposed cerebral cortex was perfused with baseline aCSF ([K+]=3 mM). Second, as a depolarizing condition, the perfusion media was switched to depolarizing aCSF of [K+]=40 mM. Third, membrane potential was further depolarized by perfusion with aCSF of [K+]=80 mM. Finally, as a recovery condition, the perfused aCSF was changed back to baseline aCSF. During each condition, MR images were acquired with MESE sequences for 12 min. Two rats underwent the whole four conditions, while five other rats did not undergo the recovery condition. As a control experiment, another set of rats (n=5) underwent perfusion with the baseline aCSF for the same duration (48 min) as the previous experiment, and MR images were acquired with four MESE sequences, each for 12 min. Throughout the experiment, the perfusion rate was maintained at 0.6 ml/min.
 
-## Quantification of MR parameters
+### Quantification of MR parameters
 
 For the in vivo MR images acquired with a MESE sequence, echo trains were matched with a simulated dictionary of decay curves of multi-echo spin-echo signals created with the stimulated echo and slice profile correction (McPhee and Wilman, 2017) to estimate T2 values. For the in vitro one-dimensional MR images acquired with the SESE sequence, signals were fitted to a mono-exponential function to estimate T2 values. For the in vitro one-dimensional MR images acquired with the IR-MESE sequence, signals were fitted to a bi-exponential function (Edzes and Samulski, 1977; Gochberg and Gore, 2003) to estimate MT parameters. 16 spin echoes acquired after each TI were averaged to improve SNR. The MT parameters such as PSR and kmf were derived from this fitting process.
 
-A 1ms hard inversion pulse selectively inverted the magnetization of free water protons, leading to cross-relaxation between the longitudinal magnetization of free water protons (Mz,f) and macromolecular protons (Mz,m). This interaction resulted in a bi-exponential magnetization recovery characterized by a fast longitudinal relaxation rate R1+\begin{document}$R_{1}^{+}$\end{document} and a slow relaxation rate R1-\begin{document}$R_{1}^{-}$\end{document} (=1 /T1), with the latter corresponding to the conventional spin-lattice relaxation rate (Gochberg and Gore, 2003; Xu et al., 2014):(4)Mz,f(t)M∞,f=bf+exp⁡(−R1+t)+bf−exp⁡(−R1−t)+1\begin{document}$$\displaystyle  \frac{M_{z,f}(t)}{M_{\infty,f}} = b_f^+ \exp ({-R_1^+ t}) + b_f^- \exp ({-R_1^- t}) + 1$$\end{document}
+A 1ms hard inversion pulse selectively inverted the magnetization of free water protons, leading to cross-relaxation between the longitudinal magnetization of free water protons (Mz,f) and macromolecular protons (Mz,m). This interaction resulted in a bi-exponential magnetization recovery characterized by a fast longitudinal relaxation rate $R_{1}^{+}$ and a slow relaxation rate $R_{1}^{-}$ (=1 /T1), with the latter corresponding to the conventional spin-lattice relaxation rate (Gochberg and Gore, 2003; Xu et al., 2014):
 
-where M∞,f denotes the equilibrium magnetization of free water protons, and bf+\begin{document}$b_{f}^{+}$\end{document} and bf−\begin{document}$b_{f}^{-}\,$\end{document} denote the amplitudes for the exponential terms associated with R1+\begin{document}$R_{1}^{+}$\end{document} and R1-\begin{document}$R_{1}^{-}$\end{document} ,respectively. By fitting this bi-exponential model to the inversion recovery signals using least squares, estimates of R1+\begin{document}$R_{1}^{+}$\end{document}, R1−\begin{document}$R_{1}^{-}$\end{document}, bf+\begin{document}$b_{f}^{+}$\end{document}, and bf-\begin{document}$b_{f}^{-}$\end{document} were obtained. These parameters are related to the MT parameters, PSR and kmf, by the following equations:(5)2R1±=R1,f+R1,m+kfm+kmf±(R1,f−R1,m+kfm−kmf)2+4kfmkmf\begin{document}$$\displaystyle  2R_{1}^{\pm }=R_{1,f}+R_{1,m}+k_{fm}+k_{mf}\pm \sqrt{\left (R_{1,f}-R_{1,m}+k_{fm}-k_{mf}\right)^{2}+4k_{fm}k_{mf}}$$\end{document}(6)bf±=±(R1,f−R1∓)(Mz,f(0)M∞,f−1)+kfm(Mz,f(0)M∞,f−Mz,m(0)M∞,m)R1+−R1−\begin{document}$$\displaystyle  b_{f}^{\pm }=\pm \frac{\left (R_{1,f}-R_{1}^{\mp }\right)\left (\frac{M_{z,f}\left (0\right)}{M_{\mathrm{\infty },f}}-1\right)+k_{fm}\left (\frac{M_{z,f}\left (0\right)}{M_{\infty ,f}}-\frac{M_{z,m}\left (0\right)}{M_{\infty ,m}}\right)}{R_{1}^{+}-R_{1}^{-}}$$\end{document}(7)PSR=kfm/kmf\begin{document}$$\displaystyle  PSR=k_{fm}/k_{mf}$$\end{document}
+$$
+\frac{M_{z,f}(t)}{M_{∞,f}}=b_{f}^{+}exp⁡(−R_{1}^{+}t)+b_{f}^{−}exp⁡(−R_{1}^{−}t)+1
+$$
 
-where R1,f and R1,m denote the longitudinal relaxation rates of free water and macromolecular protons, respectively, in the absence of cross-relaxation. kfm and kmf denote the magnetization transfer rates from free water to macromolecules and vice versa, respectively, Mz,m (0) denotes the longitudinal magnetization of macromolecular protons immediately after the inversion pulse. M∞,m denotes the equilibrium magnetization of macromolecular protons. According to previous studies (Gochberg and Gore, 2003; Gochberg et al., 1999), Mz,m (0)/M∞,m  can be determined numerically by the Bloch equations. Assuming R1,f = R1,m (Li et al., 2010; Cabana et al., 2015), the equations [Equations 5–7] can be simplified to explicitly calculate PSR and kmf .(8)PSR=bf+bf−−Mz,m(0)M∞,m+1\begin{document}$$\displaystyle  \text{PSR} = \frac{b_f^+}{b_f^- - \frac{M_{z,m}(0)}{M_{\infty,m}} + 1}$$\end{document}(9)kmf=R1+−R1−1+PSR\begin{document}$$\displaystyle  k_{mf} = \frac{R_1^+ - R_1^-}{1 + \text{PSR}}$$\end{document}
+where M∞,f denotes the equilibrium magnetization of free water protons, and $b_{f}^{+}$ and $b_{f}^{−}$ denote the amplitudes for the exponential terms associated with $R_{1}^{+}$ and $R_{1}^{-}$ ,respectively. By fitting this bi-exponential model to the inversion recovery signals using least squares, estimates of $R_{1}^{+}$, $R_{1}^{−}$, $b_{f}^{+}$, and $b_{f}^{-}$ were obtained. These parameters are related to the MT parameters, PSR and kmf, by the following equations:
 
-## Patch clamp recordings
+$$
+2R_{1}^{\pm}=R_{1,f}+R_{1,m}+k_{fm}+k_{mf}\pm\sqrt{(R_{1,f}−R_{1,m}+k_{fm}−k_{mf})^{2}+4k_{fm}k_{mf}}
+$$
+
+
+
+$$
+b_{f}^{\pm}=\pm\frac{(R_{1,f}−R_{1}^{\mp})(\frac{M_{z,f}(0)}{M_{∞,f}}−1)+k_{fm}(\frac{M_{z,f}(0)}{M_{∞,f}}−\frac{M_{z,m}(0)}{M_{∞,m}})}{R_{1}^{+}−R_{1}^{−}}
+$$
+
+
+
+$$
+PSR=k_{fm}/k_{mf}
+$$
+
+where R1,f and R1,m denote the longitudinal relaxation rates of free water and macromolecular protons, respectively, in the absence of cross-relaxation. kfm and kmf denote the magnetization transfer rates from free water to macromolecules and vice versa, respectively, Mz,m (0) denotes the longitudinal magnetization of macromolecular protons immediately after the inversion pulse. M∞,m denotes the equilibrium magnetization of macromolecular protons. According to previous studies (Gochberg and Gore, 2003; Gochberg et al., 1999), Mz,m (0)/M∞,m  can be determined numerically by the Bloch equations. Assuming R1,f = R1,m (Li et al., 2010; Cabana et al., 2015), the equations [Equations 5–7] can be simplified to explicitly calculate PSR and kmf .
+
+$$
+PSR=\frac{b_{f}^{+}}{b_{f}^{−}−\frac{M_{z,m}(0)}{M_{∞,m}}+1}
+$$
+
+
+
+$$
+k_{mf}=\frac{R_{1}^{+}−R_{1}^{−}}{1+PSR}
+$$
+
+### Patch clamp recordings
 
 The membrane potential of SH-SY5Y cells was recorded at room temperature using the whole-cell mode of the patch clamp technique (Hamill et al., 1981). The bath solution was the same as the extracellular medium used in the MRI experiment and was constantly perfused at a flow rate of 2 ml/min. The composition of the pipette solution was as follows: KCl = 140 mM; NaCl = 5 mM; MgCl2=3 mM; HEPES = 10 mM; Mg-ATP=1 mM; Na-GTP=0.5 mM. The pH of the pipette solution was adjusted to 7.4 using KOH. Calcium ions (Ca2+) were not included in the pipette solution to minimize Ca2+-dependent currents. The resistance of the electrode was 3–5 MΩ with the internal solution filled. Recordings were performed with a patch amplifier (Axopatch-1D; Axon Instruments) and a current clamp was also used to monitor the membrane potential. The experiment was repeated three times, with cells replaced at each repetition.

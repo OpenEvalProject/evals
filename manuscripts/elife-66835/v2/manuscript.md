@@ -24,7 +24,7 @@
 
 ## Abstract
 
-While Cre-dependent viral systems permit the manipulation of many neuron types, some cell populations cannot be targeted by a single DNA recombinase. Although the combined use of Flp and Cre recombinases can overcome this limitation, insufficient recombinase activity can reduce the efficacy of existing Cre+Flp-dependent viral systems. We developed a sensitive dual recombinase-activated viral approach: tTA-driven Recombinase-Guided Intersectional Targeting (tTARGIT) adeno-associated viruses (AAVs). tTARGIT AAVs utilize a Flp-dependent tetracycline transactivator (tTA) ‘Driver’ AAV and a tetracycline response element-driven, Cre-dependent ‘Payload’ AAV to express the transgene of interest. We employed this system in Slc17a6 mice to manipulate LepRb neurons of the ventromedial hypothalamus (VMH; LepRb FlpO ;Lepr Cre VMH neurons) while omitting neighboring LepRb populations. We defined the circuitry of LepRb VMH neurons and roles for these cells in the control of food intake and energy expenditure. Thus, the tTARGIT system mediates robust recombinase-sensitive transgene expression, permitting the precise manipulation of previously intractable neural populations.
+While Cre-dependent viral systems permit the manipulation of many neuron types, some cell populations cannot be targeted by a single DNA recombinase. Although the combined use of Flp and Cre recombinases can overcome this limitation, insufficient recombinase activity can reduce the efficacy of existing Cre+Flp-dependent viral systems. We developed a sensitive dual recombinase-activated viral approach: tTA-driven Recombinase-Guided Intersectional Targeting (tTARGIT) adeno-associated viruses (AAVs). tTARGIT AAVs utilize a Flp-dependent tetracycline transactivator (tTA) ‘Driver’ AAV and a tetracycline response element-driven, Cre-dependent ‘Payload’ AAV to express the transgene of interest. We employed this system in Slc17a6FlpO;LeprCre mice to manipulate LepRb neurons of the ventromedial hypothalamus (VMH; LepRbVMH neurons) while omitting neighboring LepRb populations. We defined the circuitry of LepRbVMH neurons and roles for these cells in the control of food intake and energy expenditure. Thus, the tTARGIT system mediates robust recombinase-sensitive transgene expression, permitting the precise manipulation of previously intractable neural populations.
 
 ## Introduction
 
@@ -52,23 +52,134 @@ We therefore set out to develop a more sensitive AAV system to drive Cre+Flp-dep
 
 Our tTARGIT system utilizes ‘Driver’ and ‘Payload’ AAVs. The Driver (AAV-hSYN1-fDIO-tTA) utilizes Flp-dependent Double-Floxed Inverted Open reading frame (fDIO) cassette (Fenno et al., 2014) to Flp-dependently invert tTA, permitting its expression by a human synapsin I (hSYN1) promoter. This virus also contains two tetracycline operators (TetO) to drive a positive feedback loop and increase tTA expression (Chan et al., 2017). The Payload AAV mediates tTA/TRE-dependent transgene expression following its Cre-mediated inversion into the sense orientation. Hence, only cells that contain both recombinases express the transgene (Figure 1a). Tetracycline inhibits tTA-dependent gene expression (Das et al., 2016), so this system mediates constitutive payload expression in target cells in the absence of tetracycline.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-v2.jpg)
+
+**Figure 1.:** (a) The tTARGIT system employs the combination of ‘Driver’ (AAV-hSYN-fDIO-tTA) and ‘Payload’ (AAV-TRE-DIO-Payload) AAVs. The Driver virus encodes a Flp-dependent tetracycline transactivator (tTA) under control of the human synapsin I (hSYN1) promoter and two tetracycline operators (TetO). The Payload virus encodes a Cre-dependent Payload transgene under control of the tetracycline response element (TRE). (b,c) Experimental scheme (b) and representative images (c) showing the detection of TdTomato (DSRed-IR, red) following the co-injection of AAV-hSYN-fDIO-tTA and AAV-TRE-DIO-ChR2-TdT into the VMH of (from left to right, as labeled) wild-type (WT), Slc17a6FlpO, LeprCre, or Slc17a6FlpO;LeprCre mice. (d,e) Experimental schematic (d) and representative images (e) showing the detection of TdTomato (DSRed-IR, red) following the injection of (from left to right, as labeled): (1) AAV-hSYN-fDIO-tTA, (2) AAV-TRE-DIO-ChR2-TdT, or the two viruses combined (1+2) into the VMH of Slc17a6FlpO;LeprCre mice. Scale bars = 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative image of GFP-IR (black) in the (a) hypothalamus of adult LeprCre;Rosa26LSL-eGFP-L10a (LeprCre; left), Slc17a6FlpO;Rosa26FSF-eGFP-L10a (Slc17a6FlpO; middle), and Slc17a6FlpO;LeprCre;R26RCFL-eGFP-L10a (Slc17a6FlpO;LeprCre; right) mice. (b) GFP-IR (black) in the ventral premamillary nucleus (PMv), periaqueductal gray (PAG), and nucleus of the solitary tract (NTS) in Slc17a6FlpO;LeprCre;Rosa26RCFL-eGFP-L10a animals. Scale bar = 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Schematic of unilateral injection strategy for INTERSECT virus and injection site marker into the VMH of Slc17a6FlpO;LeprCre mice. Representative images showing mCherry-IR (red, left) and YFP-IR (green, right) in the VMH of three separate Slc17a6FlpO;LeprCre mice co-injected with a Cre-dependent hM3Dq-mCherry AAV (an injection site marker) and INTERSECT Flp-ON/Cre-ON ChR2-eYFP AAV.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative images (a) and quantification (b) of mCherry-IR in Slc17a6FlpO;LeprCre and LeprCre-only mice co-injected with AAV-hSYN1-fDIO-tTA and AAV-TRE-DIO-hM3Dq-mCherry. Data presented as mean ± SEM. Scale bar = 100 μm. 3V = third ventricle.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Experimental schematic showing unilateral co-injection of the Flp-dependent tTARGIT Driver AAV and ChR2-TdTomato-expressing tTARGIT Payload AAV targeting the VMH of Slc17a6FlpO;LeprCre mice, with optic fiber implantation. (b,c) Representative images and quantification (d) of ChR2-Tdtomato (red) and FOS-IR (cyan) with either no photostimulation (left) or 1 hr photostimulation (right); (c) a digital zoom on the boxed region in (b). Data presented as mean ± SEM. Scale bar = 100 μm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) The tTARGIT Flp-ON/Cre-OFF system is composed of a Flp-dependent tTA Driver virus (1) with a Payload virus (2) in which the transgene lies in the forward orientation unless Cre mediates its inversion. (b–d) Schematic of Flp-ON/Cre-OFF viral injection strategy, representative images (c) and quantification (d) of mCherry-IR (magenta) and GFP-IR (green) from three independent injections of the Flp-ON/Cre-OFF tTARGIT system using an hM3Dq-mCherry transgene into the VMH of Slc17a6FlpO;LeprCre; Rosa26LSL-eGFP-L10a mice (which express GFP in all LeprCre cells). Bottom images show zooms of the boxed regions in the top panels. White arrowheads indicate localization between GFP and mCherry. Data presented as mean± SEM. Scale bars = 100 μm.
+
 To test the recombinase dependence of this system, we combined the Flp-dependent Driver AAV and a Payload AAV that permits the tTA/TRE-mediated Cre-dependent expression of a ChR2-TdTomato fusion protein (ChR2-TdT; AAV-TRE-DIO-ChR2-TdT). We co-injected these viruses into the VMH of wild-type mice, mice that expressed either Slc17a6FlpO or LeprCre only, or Slc17a6FlpO;LeprCre mice (Figure 1b,c). We detected no TdT (DSRed-immunoreactivity [IR]) in the VMH of wild-type or Slc17a6FlpO animals and minimal expression in LeprCre mice (Figure 1—figure supplement 3). In contrast, the Driver+Payload combination mediated robust DSRed-IR in the VMH of Slc17a6FlpO;LeprCre mice (Figure 1c); furthermore, VMH photostimulation in these mice promoted robust colocalization of DSRed- and FOS-IR, consistent with the ability of this system to activate transduced Flp+Cre-expressing cells (Figure 1—figure supplement 4).
 
 We also tested the requirement for both the Driver and Payload viruses in this system by injecting each virus alone, or both viruses together, into the VMH of Slc17a6FlpO;LeprCre animals (Figure 1d). As expected, injecting either virus alone produced minimal or no detectable DSRed-IR, while co-injection of the two viruses yielded robust DSRed-IR (Figure 1e). Thus, robust transgene expression by the tTARGIT system requires injection of both the Driver and Payload AAVs, as well as the presence of both Flp and Cre recombinases.
 
 The tTARGIT approach can also be modified from a Flp-ON/Cre-ON system, requiring both Flp and Cre recombinases for payload expression, to a Flp-ON/Cre-OFF system, mediating transgene expression in all Flp-expressing cells that do not contain Cre (Figure 1—figure supplement 5; Table 1). Placing the payload transgene in the forward orientation within the DIO cassette permits tTA-driven transgene expression in all Flp-expressing cells that do not contain Cre because Cre inverts the Payload transgene into the antisense orientation. We tested this system with a novel Cre-inactivated Payload virus expressing a hM3Dq designer receptor exclusively activated by designer drugs (DREADD)-mCherry transgene. We co-injected this Cre-OFF Payload and the Flp-dependent Driver AAV into the VMH of Slc17a6FlpO;LeprCre animals on the Cre-dependent Rosa26LSL-GFP-L10a background (Figure 1—figure supplement 5b). As expected, this modified tTARGIT system drove hM3Dq-mCherry expression almost exclusively in cells that did not express the Cre-dependent GFP (Figure 1—figure supplement 5c). We surmise the few GFP-IR neurons with detectable mCherry, constituting 1–7% of all mCherry cells, might result from the low Cre expression mediated by LeprCre (Patterson et al., 2011) and predict that the Flp-On, Cre-Off tTARGIT system should demonstrate complete Payload inactivation when used in conjunction with a more robustly expressing Cre allele or require longer incubation periods to fully inactivate the payload transgene.
 
+**Table 1.**
+ Available tTARGIT Vectors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Driver viruses</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAV-hSYN1-fDIO-tTA</td>
+      <td>Drives expression in the absence of DOX</td>
+    </tr>
+    <tr>
+      <td>AAV-hSYN1-fDIO-rtTA</td>
+      <td>Drives expression in the presence of DOX; not tested</td>
+    </tr>
+    <tr>
+      <td>Payload viruses</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flp-ON/Cre-ON (Payload inverted)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-hM3Dq-mCherry</td>
+      <td>Tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-ChR2-TdTomato</td>
+      <td>Tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-Cas9</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-TVA-oG-mCherry</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-eGFP-2A-TetanusToxin</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-SwiChR-eYFP</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-eGFP-L10a</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-GCaMP6s</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO- proCaspase-3-TEVp</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-GFP-2A-SynmRuby</td>
+      <td>Tested; GFP expression permits tracing; limited SynmRuby expression</td>
+    </tr>
+    <tr>
+      <td>Flp ON/Cre-OFF (Payload Sense orientation)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-hM3Dq-mCherry</td>
+      <td>Tested; may require strong Cre driver for complete inactivation in Cre neurons</td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-ChR2-TdTomato</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAV-TRE-DIO-eGFP-2A-TetanusToxin</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 To define the projection targets of LepRbVMH neurons, we developed a payload virus (AAV-TRE-DIO-GFP-2A-SynmRuby) that encodes GFP plus a cotranslationally expressed synaptophysin-mRuby transgene (Figure 2a). Co-injection of this tTARGIT Payload AAV and the Driver virus into the VMH of Slc17a6FlpO;LeprCre mice promoted robust VMH-restricted GFP-IR (Figure 2b). mRuby detection (DSRed-IR) for this virus was much lower than for GFP, however (data not shown); thus, we used GFP-IR to detect projections from LepRbVMH cells. Assessing the entire CNS for the presence of GFP-IR revealed terminals in the periaqueductal gray, the arcuate, the periventricular thalamic nucleus, the periventricular hypothalamic nucleus, the bed nucleus of the stria terminalis, and the preoptic area (Figure 2c,d). These are consistent with the known projections of the VMH (Canteras et al., 1994; Meek et al., 2016; Zhang et al., 2020).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig2-v2.jpg)
 
-**Figure 2.:** VMH neurons.(a) Experimental schematic showing the injection of the Driver AAV with the Payload AAV encoding a GFP-2A-SynmRuby transgene into the VMH of Slc17a6 animals. (FlpO;LeprCreb,c) Representative image of GFP-IR (green) showing viral transduction in the VMH (b) and projections (c) in the periaqueductal gray (PAG), arcuate nucleus (ARC), paraventricular hypothalamic nucleus (PVN), bed nucleus of the stria terminalis (BNST), and preoptic area (POA). (d) Cartoon showing the projection targets of LepRbVMH neurons.
+**Figure 2.:** (a) Experimental schematic showing the injection of the Driver AAV with the Payload AAV encoding a GFP-2A-SynmRuby transgene into the VMH of Slc17a6FlpO;LeprCre animals. (b,c) Representative image of GFP-IR (green) showing viral transduction in the VMH (b) and projections (c) in the periaqueductal gray (PAG), arcuate nucleus (ARC), paraventricular hypothalamic nucleus (PVN), bed nucleus of the stria terminalis (BNST), and preoptic area (POA). (d) Cartoon showing the projection targets of LepRbVMH neurons.
 
 Ablating Lepr expression from the VMH (Nr5a1Cre-mediated) promotes obesity associated with decreased energy expenditure in high-fat-diet-fed animals, suggesting a specific role for LepRb signaling in LepRbVMH cells in the control of energy balance via the dietary modulation of energy utilization (Bingham et al., 2008; Dhillon et al., 2006). To define the function of LepRbVMH cells, rather than the function of LepRb in these cells, we developed a Payload virus containing an inverted hM3Dq-mCherry transgene. We co-injected the Driver AAV and this AAV-TRE-DIO-hM3Dq-mCherry Payload virus into the VMH of Slc17a6FlpO;LeprCre animals (LepRbVMH-Dq mice; Figure 3a). This approach promoted robust VMH-restricted expression of functional hM3Dq-mCherry as administration of the DREADD activator (Pei et al., 2008), clozapine-N-oxide (CNO), stimulated colocalization of FOS with DSRed-IR cells (Figure 3b–d).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig3-v2.jpg)
 
-**Figure 3.:** VMH neurons decreases food intake in addition to increasing brown adipose tissue (BAT) thermogenesis and energy expenditure.(a) Approach for activating LepRbVMH neurons by co-injecting the AAV-hSYN-fDIO-tTA Driver and the AAV-TRE-DIO-hM3Dq-mCherry Payload viruses into the VMH of Slc17a6 animals. (FlpO;LeprCreb–d) Representative images showing mCherry detection (DSRed-IR, red) and FOS-IR (cyan) in LepRbVMH-Dq mice administered Vehicle (b) or CNO (1 mg/kg) (c,d). The right-hand panel of (c) shows a digital zoom of the boxed region in the left panel. Scale bars = 100 μm. (e–j) Results from metabolic cage analysis of LepRbVMH-Dq mice (n = 6) treated with either vehicle (gray) or 1 mg/kg CNO (red) at 9:30 and 16:30 (dotted lines). Lines in left panels denotes mean value; shading denotes SEM. Each animal was treated with vehicle for 2 days followed by CNO for 2 days to allow pairing. Bar graphs to the right show the average for each mouse at each time point across 24 hr and separated by time in light cycle (day = light, night = dark). (k, l) Changes to intrascapular temperatures over 120 min in LepRbVMH-Dq mice (n = 8) or GFP-injected (n = 7) controls following vehicle (gray) or CNO (red; 1 mg/kg) administration at 30°C. (l) Shows area under the curve (AUC) for each treatment condition in (k). For metabolic cage studies, statistical significance was determined using either a paired t-test (full-day data) or a linear mixed model for effects by time of day. For interscapular temperature measurements, significance was determined by paired t-test. *p<0.05, **p<0.01, ***p<0.001.Figure 3—source data 1.
+**Figure 3.:** (a) Approach for activating LepRbVMH neurons by co-injecting the AAV-hSYN-fDIO-tTA Driver and the AAV-TRE-DIO-hM3Dq-mCherry Payload viruses into the VMH of Slc17a6FlpO;LeprCre animals. (b–d) Representative images showing mCherry detection (DSRed-IR, red) and FOS-IR (cyan) in LepRbVMH-Dq mice administered Vehicle (b) or CNO (1 mg/kg) (c,d). The right-hand panel of (c) shows a digital zoom of the boxed region in the left panel. Scale bars = 100 μm. (e–j) Results from metabolic cage analysis of LepRbVMH-Dq mice (n = 6) treated with either vehicle (gray) or 1 mg/kg CNO (red) at 9:30 and 16:30 (dotted lines). Lines in left panels denotes mean value; shading denotes SEM. Each animal was treated with vehicle for 2 days followed by CNO for 2 days to allow pairing. Bar graphs to the right show the average for each mouse at each time point across 24 hr and separated by time in light cycle (day = light, night = dark). (k, l) Changes to intrascapular temperatures over 120 min in LepRbVMH-Dq mice (n = 8) or GFP-injected (n = 7) controls following vehicle (gray) or CNO (red; 1 mg/kg) administration at 30°C. (l) Shows area under the curve (AUC) for each treatment condition in (k). For metabolic cage studies, statistical significance was determined using either a paired t-test (full-day data) or a linear mixed model for effects by time of day. For interscapular temperature measurements, significance was determined by paired t-test. *p<0.05, **p<0.01, ***p<0.001.
 
 To determine the potential modulation of energy expenditure, activity, and food intake by LepRbVMH neuron activation, we placed LepRbVMH-Dq animals in metabolic cages and administered either vehicle or CNO twice daily (Figure 3e–j). Compared to vehicle administration, activating LepRbVMH neurons significantly increased 24 hr oxygen consumption (VO2) and energy expenditure, both primarily due to effects during the light phase, despite decreasing ambulatory activity over 24 hr (primarily due to effects during the dark phase) (Figure 3g,h). Additionally, the hM3Dq-mediated activation of LepRbVMH neurons also suppressed 24 hr food intake, primarily due to decreased light-phase feeding, revealing a previously unsuspected role for these cells in the suppression of feeding. CNO also decreased the respiratory exchange ratio during the light phase, consistent with the increased metabolism of fat stores due to the combination of increased energy expenditure and decreased food intake.
 
@@ -78,7 +189,7 @@ As activating LepRbVMH neurons increased energy expenditure and decreased food i
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66835/elife-66835-fig4-v2.jpg)
 
-**Figure 4.:** VMH neurons promotes negative energy balance.(a–c) Body weight, food intake, and water intake of chow-fed Lepr-only controls injected with AAV-hSYN1-fDIO-tTA and AAV-TRE-DIO-hM3Dq-mCherry (black lines; VEH n = 5; CNO n = 8) and LepRbCreVMH-Dq mice (red lines n = 8 both conditions) receiving 2 days normal drinking water (days 0–2), followed by 3 days exposure to CNO-laced drinking water (days 2–5), followed by an additional 2 days of normal drinking water. Onset and termination of CNO treatment are denoted by vertical lines in each panel. Vehicle controls (dashed red and black lines) did not receive CNO on days 2–5. (d) Comparisons between body weight (closed black circles) and food intake (gray squares) over time in LepRbVMH-Dq animals. Data is presented as mean ± SEM. Significance was determined by linear mixed model; ***p<0.001 between CNO and VEH LepRbVMH-Dq animals. #p<0.05, ###p<0.001 between CNO and VEH Lepr-only Control animals.CreFigure 4—source data 1.
+**Figure 4.:** (a–c) Body weight, food intake, and water intake of chow-fed LeprCre-only controls injected with AAV-hSYN1-fDIO-tTA and AAV-TRE-DIO-hM3Dq-mCherry (black lines; VEH n = 5; CNO n = 8) and LepRbVMH-Dq mice (red lines n = 8 both conditions) receiving 2 days normal drinking water (days 0–2), followed by 3 days exposure to CNO-laced drinking water (days 2–5), followed by an additional 2 days of normal drinking water. Onset and termination of CNO treatment are denoted by vertical lines in each panel. Vehicle controls (dashed red and black lines) did not receive CNO on days 2–5. (d) Comparisons between body weight (closed black circles) and food intake (gray squares) over time in LepRbVMH-Dq animals. Data is presented as mean ± SEM. Significance was determined by linear mixed model; ***p<0.001 between CNO and VEH LepRbVMH-Dq animals. #p<0.05, ###p<0.001 between CNO and VEH LeprCre-only Control animals.
 
 Hence, the use of our dual recombinase-dependent tTARGIT AAV system permitted us to determine that LepRbVMH neuron activation increased energy expenditure and decreased food intake during the inactive phase, suggesting the diurnal control of energy balance by LepRbVMH neurons.
 
@@ -102,66 +213,249 @@ In summary, we have developed a suite of dyad AAV vectors for the study of inter
 
 ## Materials and methods
 
-## Lead contact
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FOS (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2250; RRID:AB_2247211</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Aves Laboratories</td>
+      <td>Cat# GFP1020; RRID:AB_10000240</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-dsRed (Rabbit polyclonal)</td>
+      <td>Takara</td>
+      <td>Cat # 632496; RRID:AB_10013483</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>Stbl3 E. coli</td>
+      <td>Thermofisher</td>
+      <td>Cat # C737303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-nEF Con/Fon hChR2(H134R)-EYFP</td>
+      <td>Fenno et al., 2014; Addgene</td>
+      <td>Addgene Plasmid ID:55644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-hSYN1-fDIO-tTA</td>
+      <td>This manuscript</td>
+      <td>Addgene plasmid ID: 166597</td>
+      <td>hSYN1-driven, Flp-dependent expression of tTA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-TRE-DIO-hM3Dq-mCherry (Cre-ON)</td>
+      <td>This manuscript</td>
+      <td>Addgene plasmid ID: 166599</td>
+      <td>TRE-driven, Cre-dependent expression of hM3Dq-mCherry</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-TRE-DIO-hM3Dq-mCherry (Cre-OFF)</td>
+      <td>This manuscript</td>
+      <td>Addgene plasmid ID: 166609</td>
+      <td>TRE-driven, Cre-dependent inactivation of hM3Dq-mCherry</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-TRE-DIO-ChR2-Tdtomato</td>
+      <td>This manuscript</td>
+      <td>Addgene plasmid ID: 166600</td>
+      <td>Cre-dependent expression of ChR2-TdTomato downstream of a TRE</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV-TRE-DIO-GFP-2A-SynmRuby</td>
+      <td>This manuscript</td>
+      <td>Addgene plasmid ID:166608</td>
+      <td>Cre-dependent expression of GFP-2A-Synaptophysin-mRuby downstream of a TRE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNO</td>
+      <td>Tocris</td>
+      <td>Cat# 4936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LeprIRES-Cre</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 032457</td>
+      <td>Mouse: Lepr-IRES-Cre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Slc17a6IRES-FlpO</td>
+      <td>This manuscript</td>
+      <td>N/A</td>
+      <td>Slc17a6 FlpO knockin mouse</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57Bl6J</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain #: 000664</td>
+      <td>Wild-type animals</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26LSL-eGFP-L10a</td>
+      <td>Krashes et al., 2014</td>
+      <td>N/A</td>
+      <td>Rosa26 targeted Cre-dependent eGFP_L10a allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26FSF-eGFP-L10a</td>
+      <td>This manuscript</td>
+      <td>N/A</td>
+      <td>Rosa26 targeted Flp and flp-dependent eGFP_L10a allele</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa26RCFL-eGFP-L10a</td>
+      <td>This manuscript</td>
+      <td>N/A</td>
+      <td>Rosa26 targeted Flp-dependent eGFP_L10a allele</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism V8</td>
+      <td>Graphpad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Martin Myers Jr (mgmyers@med.umich.edu).
 
-## Material availability
+### Material availability
 
 Plasmids generated by this study have been deposited to Addgene.
 
-## Animals
+### Animals
 
 Mice were bred in the Unit for Laboratory Animal Medicine at the University of Michigan. These mice and the procedures performed were approved by the University of Michigan Committee on the Use and Care of Animals and in accordance with Association for the Assessment and Approval of Laboratory Animal Care and National Institutes of Health guidelines. Unless otherwise indicated, mice were provided with ad libitum access to food (Purina Lab Diet 5001) and water in temperature-controlled (25°C) rooms on a 12 hr light–dark cycle with daily health status checks. Rosa26 LSL-eGFP-L10a mice (Krashes et al., 2014) and LeprCre mice (Leshan et al., 2006) have been described previously. Both male and female mice were used for all studies. Sample size was determined based on previous experience.
 
-## Generation of Slc17a6FlpO mouse line
+### Generation of Slc17a6FlpO mouse line
 
 Slc17a6FlpO mice were generated using recombineering techniques as previously described (Balthasar et al., 2005). Briefly, the FlpO transgene (Addgene plasmid #13793) and a LoxP-flanked neomycin selection cassette were subcloned after an optimized internal ribosome entry sequence (IRES). The IRES-FlpO-neomycin cassette was then targeted 3 bp downstream of the stop codon of Slc17a6 in a bacterial artificial chromosome. The final targeting construct containing the Slc17a6-IRES-Flpo neomycin cassette and 4 kb of flanking genomic sequence on both sides was electroporated into ES cells followed by neomycin selection. Appropriately targeted clones were identified by quantitative PCR and confirmed by southern blot analysis. Targeted clones were expanded and injected into blastocysts by the University of Michigan Transgenic Core. Chimeric offspring were then bred to confirm germline transmission of the Slc17a6-IRES-Flpo allele; the neomycin selection cassette was removed by breeding to the E2A-Cre deleter strain (Jax stock #003724).
 
-## Generation of Cre+Flp-dependent Rosa26RCFL-eGFP-L10a and Flp-dependent Rosa26RFL-eGFP-L10a mice
+### Generation of Cre+Flp-dependent Rosa26RCFL-eGFP-L10a and Flp-dependent Rosa26RFL-eGFP-L10a mice
 
 The targeting vector was developed by the Allen Brain Institute and obtained from AddGene (plasmid #61577). The neomycin resistance cassette and tdTomato sequence were removed and replaced with the eGFP:L10a coding sequences. The plasmid was then microinjected by the University of Michigan Transgenic Core into fertilized oocytes with Cas9 protein and gRNAs targeting the Rosa26 locus (actccagtctttctagaaga). Tail DNA from the resulting pups was screened with PCR for the presence and proper insertion of the targeting vector. The Flp-dependent Rosa26RFL-GFP-L10a mouse was generated by germline deletion of the lox-stop-lox cassette.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Mice were anesthetized with isoflurane (2%) and mounted in a stereotaxic frame (Kopf). Using standard surgical techniques, 150 nL of virus was injected bilaterally via a glass micropipette attached to a microinjector (picospritzer II) targeting the VMH (Anterior/Posterior −1.3 mm; Medial/Lateral ±0.25 mm, Dorsal/Ventral −5.55 mm, relative to bregma).
 
 For DREADD studies, hit sites were verified by mCherry detection (DSRed-IR) following euthanasia. Any data from mice in which mCherry was not detected within the VMH or was detected in other hypothalamic nuclei were discarded. Data from mice with either unilateral or bilateral viral hits were included.
 
-## tTARGIT AAV plasmid generation
+### tTARGIT AAV plasmid generation
 
 To generate the AAV-hSyn1-TetOx2-fDIO-tTA, the tTA transgene was placed within a fDIO cassette (Addgene plasmid #55641, a gift from Karl Deisseroth). The tTA sequence was then removed from pAAV-ihSyn1-tTA (Addgene plasmid #99120, a gift from Viviana Gradinaru) and replaced with the fDIO-tTA sequence. Similarly, AAV-hSyn1TetOx2-fDIO-rtTA was generated by first placing the rtTA sequence (using rtTA sequence from Addgene plasmid #102423, a gift from Kian Peng Koh) in a fDIO cassette (Addgene plasmid #55641, a gift from Karl Deisseroth). The tTA sequence was then removed from pAAV-ihSyn1-tTA (Addgene plasmid #99120, a gift from Viviana Gradinaru) and replaced with the fDIO-rtTA sequence.
 
 To generate the payload viruses, the GFP cassette was removed from AAV-TRE-DIO-GFP (Addgene plasmid #65449, a gift from Hongkui Zeng) and replaced with ChR2-TdTomato (Addgene plasmid #18917, a gift from Scott Sternson), hM3Dq-mCherry (Addgene plasmid #44361, a gift from Bryan Roth), GFP-2A-SynmRuby (Addgene plasmid #71760, a gift from Liqun Luo), HA-Cas9 (Addgene plasmid #61592, a gift from Feng Zhang), eGFP-L10a (provided by DPO [Allison et al., 2015]), Caspase3-2A-TEVp (Addgene plasmid #45580, a gift from Nirao Shah), GCaMP6s (Addgene plasmid #100845, a gift from Douglas Kim), SwiChRca-TS-YFP (Addgene plasmid #55631, a gift from Karl Deisseroth), or TVA-mcherry+oG (a gift from Marco Tripodi [Ciabatti et al., 2017]).
 
-## Immunostaining
+### Immunostaining
 
 For control experiments presented in Figure 1, mice were euthanized 3 weeks following viral delivery. Hit sites were verified using a marker virus (AAV-CMV-Cas9-HA(18)).
 
 Upon the completion of DREADD studies, mice were injected with CNO (1 mg/kg), sacrificed 2 h post-injection, and then perfused with 10% formalin. Brains were then removed and post-fixed in 10% formalin for 24 hr, before being moved to 30% sucrose for 24 hr. Brains were then sectioned as 30 μm thick free-floating sections. Immunohistochemical and immunofluorescent staining was performed using standard procedures using anti-FOS (1:1000, #2250, Cell Signaling Technology), GFP (1:1000, #1020, Aves Laboratories), and DSRed (1:1000, #632392, Clontech) antibodies. Images were collected on an Olympus BX51 microscope.
 
-## Indirect calorimetry studies
+### Indirect calorimetry studies
 
 Mice were singly housed 1 week prior to indirect calorimetry studies. Mice were placed into metabolic (CLAMS) cages in the University of Michigan Mouse Metabolic Phenotyping Center (UM-MMPC) and further equilibrated for 24 hr. Subsequently, mice were then injected twice daily (930 AM and 5 PM) with vehicle for 2 days followed by an additional 2 days of twice daily (930 AM and 5 PM) CNO (1 mg/kg). Data is presented as the average of the two saline days compared to the average of the two CNO days.
 
-## Effect of CNO on energy balance
+### Effect of CNO on energy balance
 
 Mice were singly housed for 1 week prior to study. Mice were given ad libitum access to standard drinking water for 48 hr. For the subsequent 72 hr, standard water was replaced by water containing CNO (2.5 mg/100 mL) and 1% glucose (to make the CNO palatable). Vehicle-treated mice received 1% glucose-containing drinking water (lacking CNO) on CNO treatment days. CNO-laced water was changed daily. For the final 48 hr, mice were returned to standard drinking water. Body weight, food mass, and water levels were recorded daily. Virus controls for this study were Slc17a6WT;LeprCre mice co-injected with AAV-hSYN1-fDIO-tTA and AAV-TRE-DIO-hM3Dq-mCherry.
 
-## Intrascapular temperature measurements
+### Intrascapular temperature measurements
 
 The UM-MMPC placed temperature transponders (IPTT-300 model with corresponding DAS-7007R reader, Bio Medic Data Systems) in the intrascapular subcutaneous tissue directly under the conjunction part of the butterfly-shaped BAT under isoflurane anesthesia. Mice were allowed to recover for 14 d before testing. One day prior to testing, ambient temperatures were increased from 22°C to 30°C. On the day of testing, mice were randomized to either CNO (1 mg/kg) or saline injections, and temperatures were recorded at −10, 10, 20, 30, 45, 60, and 120 min relative to injection time. Following 1 week, the experiment was repeated and treatment conditions (vehicle or CNO) reversed.
 
-## Optogenetic stimulation
+### Optogenetic stimulation
 
 A single fiber-optic cannula (Doric Lenses) was implanted above the VMH (A/P: 1.3 mm, M/L: 0.25 mm, D/V: 5.0 mm) and affixed to the skull using Metabond (Fisher). After 3 weeks recovery from surgery, mice were then subjected to optical stimulation using 473 nm wavelength laser using 20 mW/mm2 irradiance. Light pulses were delivered by 1 s of 20 Hz photo stimulation and 3 s resting with multiple repetitions for 1 hr.
 
-## Viral packaging
+### Viral packaging
 
 The INTERSECT pAAV-nEF Con/Fon hChR2(H134R)-EYFP plasmid (Fenno et al., 2014) was procured through Addgene (plasmid #55644). All rAAV viruses were made at the University of Michigan Vector Core using ultracentrifugation through an iodixanol gradient. rAAVs were washed three times with PBS using Amicon Ultra Centrifugal Filter Units (Millipore) and resuspended in PBS + 0.001% Pluronic F68. All viruses were packaged as AAV8 serotypes. Titers were assessed by qPCR.
 
-VirusTiter (vg/mL) AAV8-hSYN1-fDIO-tTA2.60E+13 AAV8-TRE-DIO-hM3Dq-mCherry2.05E+13 AAV8-TRE-DIO-ChR2-TdTomato5.83E+13 AAV8-TRE-DIO-GFP-2A-SynmRuby5.69E+13 AAV8-TRE-DIO-hM3Dq-mCherry (Cre-OFF)6.86E+13 AAV8-nEF Con/Fon hChR2(H134R)-EYFP4.75E+13
+<table>
+  <thead>
+    <tr>
+      <th>Virus</th>
+      <th>Titer (vg/mL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AAV8-hSYN1-fDIO-tTA</td>
+      <td>2.60E+13</td>
+    </tr>
+    <tr>
+      <td>AAV8-TRE-DIO-hM3Dq-mCherry</td>
+      <td>2.05E+13</td>
+    </tr>
+    <tr>
+      <td>AAV8-TRE-DIO-ChR2-TdTomato</td>
+      <td>5.83E+13</td>
+    </tr>
+    <tr>
+      <td>AAV8-TRE-DIO-GFP-2A-SynmRuby</td>
+      <td>5.69E+13</td>
+    </tr>
+    <tr>
+      <td>AAV8-TRE-DIO-hM3Dq-mCherry (Cre-OFF)</td>
+      <td>6.86E+13</td>
+    </tr>
+    <tr>
+      <td>AAV8-nEF Con/Fon hChR2(H134R)-EYFP</td>
+      <td>4.75E+13</td>
+    </tr>
+  </tbody>
+</table>
 
-## Statistical analysis
+### Statistical analysis
 
 All data is displayed as mean ± SEM. Replicate number is included in each figure legend. Statistical analysis was performed in either Graphpad Prism eight using either t-tests or ANOVAs with Dunnet’s post hoc test or linear mixed model. p<0.05 was considered significant.

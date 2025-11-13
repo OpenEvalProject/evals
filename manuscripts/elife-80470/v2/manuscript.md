@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/055j5q029 Department of Neurobiology, University of Utah School of Medicine Salt Lake City United States
-2. https://ror.org/0267vjk41 Biocomputation Group, Centre of Data Innovation Research, Department of Computer Science, University of Hertfordshire Hertfordshire United Kingdom
+1. Department of Neurobiology, University of Utah School of Medicine Salt Lake City United States ([ROR:055j5q029](https://ror.org/055j5q029))
+2. Biocomputation Group, Centre of Data Innovation Research, Department of Computer Science, University of Hertfordshire Hertfordshire United Kingdom ([ROR:0267vjk41](https://ror.org/0267vjk41))
 
 † Corresponding author
 
@@ -33,17 +33,37 @@ Here, we sought to identify ‘primary’ odorants (i.e. the odorant or odorants
 
 ## Results
 
-## Generating consensus maps of odorant sensitivity across dorsal OB glomeruli
+### Generating consensus maps of odorant sensitivity across dorsal OB glomeruli
 
 To map OSN inputs to OB glomeruli with high sensitivity and consistency across animals, we used tetracycline transactivator-amplified expression of the Ca2+ reporter GCaMP6s in all mature OSNs (OMP-IRES-tTA; tetO-GCaMP6s mice; see Materials and methods). Consistent with earlier reports using the OMP-IRES-tTA driver line (Ma et al., 2014; Inagaki et al., 2020), this expression strategy did not appear to affect targeting of OSNs to their cognate glomeruli (Zhu et al., 2021). Odorant-evoked GCaMP6s signals were imaged with widefield epifluorescence across the dorsal surface of both OBs simultaneously in anesthetized mice, using artificial inhalation to ensure consistent odorant sampling (Eiting and Wachowiak, 2018).
 
 We used a flexible, high-throughput odorant delivery system (Burton et al., 2019) to present a chemically diverse panel of 185 odorants (plus blank and solvent controls) to each experimental preparation. The panel covered a wide range of odorant chemical space as defined by physicochemical descriptors taken from a list of compounds curated for use in flavors and fragrances (Figure 1A; Pashkovski et al., 2020) (see Materials and methods), and included a diversity of chemical classes as defined by functional group and other structural features (Supplementary file 1). Rather than deliver odorants at a single arbitrarily- or empirically-chosen concentration, we used a rational search strategy that allowed adjusting the concentration of each odorant across a >1000 fold (sub-pico- to nanomolar) range in order to identify high-sensitivity odorant-glomerulus interactions and to, ideally, pair each glomerulus with its primary odorant. Guided by recent studies indicating mouse perceptual thresholds in the picomolar range for at least some odorants (Dewan et al., 2018; Williams and Dewan, 2020), we initially set estimated delivered odorant concentrations to ~1 pM (see Materials and methods). Across a series of pilot experiments, concentrations were then systematically increased (or occasionally decreased) by tenfold steps up to ~1 nM to identify the lowest concentration for each odorant capable of reliably activating at least one glomerulus, with responses averaged across at least three trials (typically, four) per concentration and odorant. Further increases in concentration were not considered as these were unlikely to reveal high-sensitivity interactions. The resulting concentrations were then used to screen the odorant panel across four final mice (eight OBs), with additional variations in concentration tested for many odorants (62–77 per mouse) to achieve comparable activation patterns while accounting for inter-animal variability. Final analyzed concentrations were identical across animals for the majority of odorants (145/185), and none differed by more than tenfold across the four mice.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig1-v2.jpg)
+
+**Figure 1.:** (A) Coverage of physicochemical space by the 185-odorant panel. Grey points show the projection of 2,587 odorants across the first two principal components of a matrix of physicochemical descriptors, as in Pashkovski et al., 2020 (see Materials and methods). Black points indicate the odorants tested in the 185-odorant panel. (B) Baseline fluorescence (left), maximal projection of response maps across the 185-odorant panel (middle), and ROIs of responsive glomeruli (right). (C) Estimated delivered concentrations used across the odorant panel. Histogram and black cumulative distribution function show concentrations of each presented odorant across four preparations (n=740). Red cumulative distribution function shows the minimal effective concentration for each responsive glomerulus (n=993). (D) Response maps evoked by single odorants for the preparation shown in (B). Each row shows distinct but neighboring glomeruli (demarcated by filled and open arrowheads) activated by structurally similar odorants. Estimated concentrations are rounded to single-significant digit precision. (E) Matrix of responses across all responsive glomeruli in one OB. Each row (glomerulus) is normalized to its maximal response across the odorant panel. Glomeruli are sorted in order of their maximally-activating odorant, producing a pseudo-diagonalized matrix. Odorants are ordered according to nominal structural classification (see Materials and methods). Matrix includes responses to empty and solvent controls. (F, G) Response spectra of all imaged glomeruli (rows) across the odorant panel (columns), normalized by maximal response, for 1 x concentration epifluorescence dataset and the 10 x concentration two-photon dataset (separate preparations; 10 x two-photon data imaged from a smaller field of view containing fewer glomeruli). Odorant order sorted by response amplitude; glomerular order sorted by lifetime sparseness. (H) Histogram and cumulative distribution functions of lifetime sparseness (SL) values for all responsive glomeruli for the odorant panel presented at original, 1 x concentrations (red; n=993 glomeruli) and at 10 x concentrations (blue; n=100). Shading denotes 95% confidence intervals (calculated using ‘ecdf’ function in Matlab). (I) Percent of variance in glomerular responses to the odorant panel explained by each successive PC, plotted for each OB. Red plots: 1 x concentrations, n=8 OBs; blue plots: 10 x concentrations, n=2 OBs. (J) Cumulative variance in glomerular responses to the odorant panel explained by increasing fractions of possible PCs (constrained by the number of responsive glomeruli in each OB).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Left: Overlay of all ROIs indicating odorant-responsive glomeruli (yellow) and baseline fluorescence for the four mice imaged under widefield epifluorescence. Right: Matrices of responses across all responsive glomeruli and odorants in each OB after manual segmentation as described (see Materials and methods). Glomeruli and odorants are sorted as in Figure 1E and odorants occur in the same order as in Supplementary file 1. Naming and color-coding of odorant structural classes matches those in Figures 4 and 5.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Pairwise comparison of delivered odorant concentrations in the current study (red circles) vs. select previous studies (black circles). Only odorants common across each pair of studies are plotted, with lines connecting concentrations of the same odorant. (B) Distribution of the delivered concentration of each odorant in previous studies relative to the concentration of the same odorant used in the current study. Numbers of odorants plotted is equal to the number of data points shown in (A). Dashed red line marks equal concentrations across the previous and current study. Boxes show median and interquartile range; whiskers delimit the most extreme values not considered outliers, as defined by the ‘boxplot’ function in Matlab. Both absolute (A) and relative (B) odorant concentrations are shown on a log-scale.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Histogram of number of glomeruli activated by a given odorant presentation, excluding non-responsive presentations (n=1290, 8 OBs imaged under widefield epifluorescence). (B) Cumulative distribution function of population sparseness (SP) for each odorant, plotted separately for each of the eight OBs. SP of 1 indicates a single responsive glomerulus. (C) Distribution of the number of effective odorants for each of 1004 glomeruli across the eight OBs. (D) Lifetime sparseness (SL) of glomerular tuning across the 185-odorant panel, plotted as a function of dynamic range for all glomeruli responding to more than one odorant (n=716 glomeruli). Dynamic range is conservatively defined as the ratio between the maximal response and the minimal non-zero odorant response. Red plot shows linear regression to data, with 95% confidence interval. Slope is not significantly different from 0 (linear regression t-test: p=0.89, t714=0.14). (E) SL as a function of maximal response amplitude for all imaged glomeruli (n=1004). Responses normalized to the maximal response in a given OB. Red plot shows linear regression to data, as in (D). Slope is not significantly different from 0 (linear regression t-test: p=0.42, t1002=0.81).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Epifluorescence response maps to 1 x concentrations of diagnostic odorants for functionally-identified glomeruli, imaged across one OB (new mouse, ‘mouse #6’). (B) Higher magnification two-photon imaging of the boxed area in (A) using 10 x odorant concentrations. Upper left, baseline fluorescence of glomerular imaging field. Response maps (ΔF) show activation of specific glomeruli by select odorants. Dashed grid lines added to facilitate visual inspection across maps. (C) Left: Response matrix for glomeruli imaged in (B), showing responses to the 10 x concentration odorant panel for mouse #6. Only responses to odorants tested at 10 x concentration (plus blank and solvent controls) are shown. Glomeruli are sorted in order of their maximally-activating odorant, producing a pseudo-diagonalized matrix, as in Figure 1E. Right: Response matrix for the same 10 x odorant panel imaged in a second mouse (mouse #5).
+
 Nearly all odorants tested proved effective within the picomolar-to-nanomolar concentration range: 163 of 185 odorants (88%) evoked responses in one or more dorsal glomeruli per OB per mouse, and only twelve odorants proved ineffective (i.e. failed to elicit a response in any OB). Response amplitudes were lognormally distributed (Kolmogorov-Smirnov test), with a mean ln(∆F/F) of 1.48 (corresponding to 4.4% ∆F/F, mean of means across 8 OBs; mean s.d. of responses: 1.03 ln(∆F/F); number of responses per OB: 308–484).
 
 Qualitatively, patterns of glomerular activation were remarkably consistent across all eight OBs. There were only modest differences in overall response magnitudes across mice or between left and right OBs in the same mouse (ANOVA on all nonzero ∆F/F responses for each OB (F7,3385=12.97, p<2e–16); post-hoc Tukey’s multiple comparisons of means: p=7e–7 for 1 of 4 left vs. right OB pairs; p>0.5 for 3 of 4 pairs); these differences likely reflect differences in nasal patency between mice or between sides. The cumulative number of glomeruli activated across the odorant panel ranged from 103 to 142 per OB (median: 126) and covered the extent of the dorsal OB (Figure 1B; Figure 1—figure supplement 1). A recent report mapping ORs to the OB identified ~130 ORs/trace amine-associated receptors (TAARs) from the same area of the OB imaged in the present study (Zhu et al., 2021). Allowing for failure to detect low-abundance ORs in Zhu et al., 2021 and slight mismatches in tissue area, a range of 150–160 glomeruli is a reasonable estimate of the number of glomeruli present in our imaging area. Thus we estimate that our odorant panel was able to identify 75–90% of glomeruli in the imaged area. We used the resulting dataset as a resource for defining consensus high-sensitivity response maps for this large odorant panel across the dorsal OB (Supplementary file 2).
 
-## Sensory inputs to glomeruli are highly sensitive and narrowly tuned to their primary odorants
+### Sensory inputs to glomeruli are highly sensitive and narrowly tuned to their primary odorants
 
 Across all odorants, final estimated concentrations ranged from 4 × 10–14 to 4 × 10–9 M (median: 1 × 10–10 M, 2.4 ppb) (Figure 1C; Supplementary file 1). Maximal glomerular sensitivity (i.e. the concentration at which each glomerulus responded to its primary odorant) was distributed across even lower concentrations, with a median of 2 × 10–11 M (0.5 ppb) (Figure 1C). These concentrations are, overall, substantially lower than those used to characterize odorant representations in earlier studies, by as much as 4–5 orders of magnitude (Figure 1—figure supplement 2), and indicate that high odorant sensitivity is a general feature of OSN inputs to glomeruli. We next assessed how canonical features of olfactory stimulus coding at the level of OSN input to glomeruli manifest in this concentration regime, beginning with the tuning of individual glomeruli and the nature of glomerular representations of individual odorants.
 
@@ -59,19 +79,387 @@ Previous studies examining neural responses to higher concentrations have propos
 
 Ideally, it would be useful to compare glomerular tuning and odorant representations for the low-concentration ranges tested here to the tuning and representations observed in comparable earlier studies using the exact same odorants. To that end, we took advantage of a publicly available dataset describing OSN inputs to mouse OB glomeruli, collected using near-identical imaging methods and the same OMP-IRES-tTA driver line as in the present study, but with a less-sensitive GCaMP2 reporter and higher odorant concentrations (Ma et al., 2012). We generated response matrices using the lowest effective concentrations reported in this previous study for the 31 odorants common with the current study (median: 4.3 ppm; quartiles: 1.0–15.1 ppm), which were approximately 1000 x higher than in our dataset (median: 3.4 ppb; quartiles: 0.5–25 ppb) (Supplementary file 3). As expected, odorants in this higher-concentration regime activated substantially more glomeruli across the same area of the dorsal OB, with a quartile range of 2–23 glomeruli per odorant (median: 5) compared to a range of 1.4–2.9 in our dataset (median of mean values across 8 OBs: 1.75; p=3 × 10–5, paired Wilcoxon Signed Ranks). SL of individual glomeruli across the 31 odorants was also significantly lower, with a quartile range of 0.84–0.97 (median: 0.9; n=98 glomeruli from one OB) compared to a range of 0.97–1 in our dataset (median: 1; n=273 glomeruli from 8 OBs; p=0, Mann-Whitney U test). Dimensionality of the glomerular responses across the 31 odorant panel was also substantially lower for the higher concentration data, with an ED of 5.3 compared to 13.2±1.1 (mean ± s.d., 8 OBs). This comparison thus further confirms that the narrow tuning of glomeruli and sparser, higher dimensional odorant response patterns in our dataset directly reflect differences in how odorant information is represented in this much lower concentration regime, rather than differences in odorant panel composition.
 
-## Diagnostic odorants enable widespread functional identification of glomeruli
+### Diagnostic odorants enable widespread functional identification of glomeruli
 
 The narrow tuning and high sensitivity of glomeruli to their primary odorants suggests that many glomeruli can be identified simply by their response to a single diagnostic odorant delivered at low concentration. Examples of five such diagnostic odorants evoking consistent singular- or near-singular activation of glomeruli are shown in Figure 2A. These glomeruli appear in a consistent location in each OB and exhibit near-identical response spectra across the full odorant panel (Figure 2B). For example, the aromatic ester phenyl acetate (~3 pM) strongly activated a single glomerulus in the central OB, with identical response spectra across the 8 OBs (Figure 2A and B). Likewise, the odorant methyl tiglate (~10 pM) strongly activated a single glomerulus in the central-medial OB in each of the 8 OBs imaged; this glomerulus was also strongly- and singly-activated by ethyl, hexyl, and isopropyl tiglate, as well as trans-2-methyl-2-butenal and 2-methyl-2-pentenoic acid (Figure 2A and B). These observations suggest that, in many cases, a single diagnostic odorant can be used to identify putatively cognate glomeruli across animals.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig2-v2.jpg)
+
+**Figure 2.:** (A) Response maps evoked by five odorants (columns), shown for each of four mice (rows), eliciting singular or near-singular activation of a glomerulus in a consistent location in each OB. See Text for definition of error ratio and median r. Estimated delivered concentrations are rounded to single-significant digit precision. (B) Response spectra for each glomerulus in (A) across the 185-odorant panel (columns), shown for each of the eight imaged OBs (rows). Pseudocolor scale is normalized to the maximal response in the glomerulus for each preparation. Structures of effective odorants are shown at bottom. Asterisk indicates diagnostic odorant shown in (A). Letter-number abbreviations indicate odorant identity, as listed in Supplementary file 1. (C) Mean locations of all functionally identified glomeruli, referenced to the midline and caudal sinus of the OB. Spot width and height indicate jitter (s.d.) of medial-lateral and antero-posterior location across the eight OBs. Identified glomeruli from (A) are shown in red; all other glomeruli shown in blue.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Comparison of response maps evoked by diagnostic odorants for four functionally-identified glomeruli in an anesthetized mouse (Mouse #4, top row) and in three awake, head-fixed mice (Mice #7–9). Odorants were prepared and presented identically across anesthetized and awake preparations. Awake response maps are averages of three to five presentations and are scaled as for anesthetized responses. Concentrations indicate estimated delivered concentration, as in previous Figures.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Left: Response maps for 3 amine odorants previously identified as high-potency ligands for different TAARs (see Text). Each amine most strongly activates different paired glomeruli on each OB, highlighted by magenta and grey arrowheads. Right: Response spectra for each of the paired glomeruli for each amine; the vertical axis for the posterior glomerulus is inverted for easier visual comparison. The response spectra are near-identical for each of the paired glomeruli, and distinct for each pair.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Response spectra of six functionally-identified glomeruli evoked by the original 185-odorant panel (1 x concentrations, top, red bars) and by the same odorants presented at tenfold higher concentrations (10 x, bottom, blue bars), imaged in separate preparations under widefield epifluorescence and two-photon imaging, respectively. 1 x plots show median response spectrum across the eight imaged OBs. 10 x plots show mean responses from two imaged OBs (two mice) (for glomeruli 2, 14, 18); or from a single OB (for glomeruli 6, 10, 16), each normalized to the maximum response across the odorant panel.
+
 To identify additional such glomeruli and their diagnostic odorants from the dataset, we first screened odorants using two highly conservative criteria for sparseness and response reliability. To screen for singular- or near-singular glomerular activation, we required that an odorant activate no more than two glomeruli above a 50% ΔFmax. cutoff across all eight imaged OBs. To screen for reliability, we required that an odorant activate at least one glomerulus in at least six of eight OBs, and in each of the four mice. For each of the 80 odorants passing this screen, we tested the odorant’s ability to identify glomeruli across OBs by comparing the response spectrum of the glomerulus most strongly activated by that odorant across the full 185-odorant panel with that of all other glomeruli in each OB. For 19 odorants, the strongest (or only) activated glomerulus identified the glomerulus with the highest-correlated response spectrum in 100% of comparisons (median correlation coefficient [Pearson’s r] across OBs: 0.95±0.04; mean ± s.d., n=19). Relaxing these criteria slightly to allow for inherent variability in responsiveness across the odorant panel – to a cutoff of 80% match between the strongest-activated and most-correlated glomerulus across OBs (error ratio <0.2; see Materials and methods) and a median correlation coefficient in response spectra of >0.8 – yielded 22 additional odorants. Thus, 41 odorants from the original 185-odorant panel could serve as diagnostic probes to identify 26 unique glomeruli (Table 1; Supplementary file 4). Supplementary file 5 lists the remaining odorants that elicited reliably sparse glomerular activity but which did not meet our conservative criteria for functional identification. Notably, while spatial location was not used as a diagnostic criterion, glomeruli identified with this approach appeared in a similar location on the dorsal OB, with a spatial jitter consistent with that characterized for OR-defined OSN projections (Figure 2C; Table 1; Zapiec and Mombaerts, 2015). Diagnostic odorant-concentration pairs also evoked singular activation of the same putatively identified glomeruli in awake, head-fixed mice at the same low concentrations (Figure 2—figure supplement 1), suggesting that OSNs are similarly sensitive and selective during natural odorant sampling. Thus, the high selectivity and sensitivity of OSNs for their primary odorants allows for simple and robust identification of cognate glomeruli across OBs using a single odorant-concentration pair.
+
+**Table 1.**
+ Diagnostic odorants and concentrations for functionally-identified glomeruli.Error ratio: Incidence of mismatch between strongest-activated glomeruli and glomeruli with most correlated odorant response spectra (ORS) across 2 OBs, divided by all potential 2-OB comparisons. Median ORS corr.: Median ORS correlation coefficient (Pearson’s r) across all pairwise comparisons of ORS for the maximally-activated glomerulus in each responsive OB.Mediolateral: Position of glomerulus centroid in the mediolateral axis, in units of µm from the midline (mean ± s.d.).Anteroposterior: Position of glomerulus centroid in the anterior-posterior axis, in units of µm from the transverse sinus delineating the posterior margin of the OB (mean ± s.d.).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Odorant</th>
+      <th>Est. conc. (M)</th>
+      <th>Error ratio</th>
+      <th>MedianORS corr.</th>
+      <th>Mediolateral (μm)</th>
+      <th>Anteroposterior (μm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Benzaldehyde</td>
+      <td>8E-11</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>1448.3±76.9</td>
+      <td>1298.4±82.4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Elemicin</td>
+      <td>5E-12</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>1011.6±80.9</td>
+      <td>753.2±126.7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Vanillin</td>
+      <td>3E-11</td>
+      <td>0.07</td>
+      <td>1.00</td>
+      <td>1249.6±54.8</td>
+      <td>1651±75.9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Trans-2-dodecenal</td>
+      <td>8E-10</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>514.9±54.2</td>
+      <td>2117.5±179.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">5</td>
+      <td>Ethyl phenylacetate</td>
+      <td>7E-11</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td rowspan="2">884±50.5</td>
+      <td rowspan="2">1911.9±118.9</td>
+    </tr>
+    <tr>
+      <td>Allyl phenylacetate</td>
+      <td>1E-10</td>
+      <td>0.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td rowspan="2">6</td>
+      <td>Phenyl acetate</td>
+      <td>3E-12</td>
+      <td>0.00</td>
+      <td>0.99</td>
+      <td rowspan="2">1375.6±93.3</td>
+      <td rowspan="2">1103.4±111.8</td>
+    </tr>
+    <tr>
+      <td>Phenyl propionate</td>
+      <td>1E-11</td>
+      <td>0.00</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td rowspan="2">7</td>
+      <td>Heptanoic acid</td>
+      <td>7E-11</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td rowspan="2">1026.6±60.5</td>
+      <td rowspan="2">2132.8±54.7</td>
+    </tr>
+    <tr>
+      <td>Heptanal</td>
+      <td>2E-9</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Methional</td>
+      <td>1E-11</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>1680.2±99.6</td>
+      <td>1144.1±91.3</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>3-Mercaptohexyl acetate</td>
+      <td>4E-12</td>
+      <td>0.00</td>
+      <td>0.97</td>
+      <td>1316.2±170.4</td>
+      <td>1244.5±67.3</td>
+    </tr>
+    <tr>
+      <td rowspan="6">10</td>
+      <td>Trans-2-methyl-2-butenal</td>
+      <td>1E-11</td>
+      <td>0.00</td>
+      <td>0.95</td>
+      <td rowspan="6">700.8±79.3</td>
+      <td rowspan="6">1103.7±113.9</td>
+    </tr>
+    <tr>
+      <td>2-Methyl-2-pentenal</td>
+      <td>6E-11</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Methyl tiglate</td>
+      <td>1E-11</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Ethyl tiglate</td>
+      <td>2E-12</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Isopropyl tiglate</td>
+      <td>2E-11</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Hexyl tiglate</td>
+      <td>4E-10</td>
+      <td>0.00</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td rowspan="2">11</td>
+      <td>Isovaleric acid</td>
+      <td>9E-12</td>
+      <td>0.00</td>
+      <td>0.92</td>
+      <td rowspan="2">973.5±32.4</td>
+      <td rowspan="2">1696.9±138</td>
+    </tr>
+    <tr>
+      <td>Isovaleraldehyde</td>
+      <td>4E-9</td>
+      <td>0.00</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2'-Hydroxyacetophenone</td>
+      <td>5E-12</td>
+      <td>0.00</td>
+      <td>0.86</td>
+      <td>1258.5±66.8</td>
+      <td>444±68.9</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Pyrazine</td>
+      <td>2E-9</td>
+      <td>0.03</td>
+      <td>0.91</td>
+      <td>1618±54.2</td>
+      <td>1154.8±117.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">14</td>
+      <td>2-Isobutyl-3-methoxypyrazine</td>
+      <td>3E-11</td>
+      <td>0.04</td>
+      <td>0.91</td>
+      <td rowspan="2">1007.4±93.9</td>
+      <td rowspan="2">503.6±80.8</td>
+    </tr>
+    <tr>
+      <td>(R)-(+)-pulegone</td>
+      <td>7E-13</td>
+      <td>0.04</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>4-(4-Hydroxyphenyl)–2-butanone</td>
+      <td>4E-10</td>
+      <td>0.02</td>
+      <td>0.84</td>
+      <td>1202.5±92.4</td>
+      <td>1771.8±66.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">16</td>
+      <td>2,4,5-Trimethylthiazole</td>
+      <td>5E-12</td>
+      <td>0.04</td>
+      <td>0.91</td>
+      <td rowspan="2">1242.6±128.3</td>
+      <td rowspan="2">460.8±106.6</td>
+    </tr>
+    <tr>
+      <td>Ethyl-2,5-dihydro-4-methylthiazole</td>
+      <td>3E-10</td>
+      <td>0.04</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td rowspan="2">17</td>
+      <td>4-Methoxy-2-methyl-2-butanethiol</td>
+      <td>3E-12</td>
+      <td>0.07</td>
+      <td>0.98</td>
+      <td rowspan="2">1633.1±116.8</td>
+      <td rowspan="2">853.6±107.1</td>
+    </tr>
+    <tr>
+      <td>2-Methyl-3-tetrahydrofuranthiol</td>
+      <td>2E-10</td>
+      <td>0.07</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Isoeugenol</td>
+      <td>8E-13</td>
+      <td>0.05</td>
+      <td>1.00</td>
+      <td>1162.9±86.7</td>
+      <td>746.2±105.4</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Menthone</td>
+      <td>3E-10</td>
+      <td>0.05</td>
+      <td>0.85</td>
+      <td>1058.4±76.9</td>
+      <td>701.8±93.8</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>2-Hexanone</td>
+      <td>1E-9</td>
+      <td>0.11</td>
+      <td>0.94</td>
+      <td>1372±98.3</td>
+      <td>945.6±105.8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">21</td>
+      <td>Acetophenone</td>
+      <td>1E-11</td>
+      <td>0.02</td>
+      <td>0.83</td>
+      <td rowspan="2">1317.2±81.1</td>
+      <td rowspan="2">776.9±61.6</td>
+    </tr>
+    <tr>
+      <td>2-Methylacetophenone</td>
+      <td>1E-12</td>
+      <td>0.02</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Methyl eugenol</td>
+      <td>2E-12</td>
+      <td>0.13</td>
+      <td>0.90</td>
+      <td>1491.6±107</td>
+      <td>771.2±103.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">23</td>
+      <td>2-Methylbutyraldehyde</td>
+      <td>8E-11</td>
+      <td>0.16</td>
+      <td>0.87</td>
+      <td rowspan="3">928.6±38.7</td>
+      <td rowspan="3">1497.3±126.9</td>
+    </tr>
+    <tr>
+      <td>2-Methylvaleraldehyde</td>
+      <td>1E-10</td>
+      <td>0.16</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Methyl 2-methylbutyrate</td>
+      <td>1E-10</td>
+      <td>0.16</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Hexanal</td>
+      <td>7E-10</td>
+      <td>0.18</td>
+      <td>0.97</td>
+      <td>1047.7±63.7</td>
+      <td>1977.8±66</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Fenchol</td>
+      <td>5E-10</td>
+      <td>0.16</td>
+      <td>0.98</td>
+      <td>1251±109.5</td>
+      <td>795.9±76.9</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>5-Methylfurfural</td>
+      <td>5E-10</td>
+      <td>0.19</td>
+      <td>1.00</td>
+      <td>1465±67.1</td>
+      <td>1153.3±380.5</td>
+    </tr>
+  </tbody>
+</table>
 
 Singularly-activated glomeruli presumably reflect odorant binding to a single OR species whose sensitivity to that odorant is higher than that of all other dorsally projecting ORs. OSNs expressing most ORs are expected to project to two glomeruli, only one of which would potentially be visible on the dorsal surface, with the other glomerulus located medially and inaccessible to our imaging approach (Nagao et al., 2000; Zhu et al., 2021). Notably, while a relative few ORs have been mapped to their cognate glomeruli and functionally characterized (Peterlin et al., 2014), several of the functionally-identified glomeruli had diagnostic odorants and spatial locations that were a close match to OR-defined glomeruli. For example, 2’-hydroxyacetophenone (glom. #12), 2-methylacetophenone (glom. #21) and methyl eugenol (glom. #22) selectively activated glomeruli that closely matched the reported positions of glomeruli for Olfr160 (Zhang et al., 2012), Olfr1377 (Zhu et al., 2021), and Olfr510 (Oka et al., 2006; Supplementary file 4). For TAAR-expressing OSNs, both their medial and lateral glomeruli are dorsal, such that activation of at least some TAARs should activate pairs of dorsal glomeruli (Pacifico et al., 2012; Sato et al., 2020). Indeed, several amine odorants that have been previously identified as preferred ligands for particular TAARs evoked strong but selective activity in pairs of glomeruli within the putative TAAR-projecting domain, including cadaverine, β-phenylethylamine, and isopentylamine, preferred ligands for TAAR9, TAAR4, and TAAR5, respectively (Zhang et al., 2013; Saraiva et al., 2016; Figure 2—figure supplement 2). These paired glomeruli had identical or near-identical response spectra across the full odorant panel, consistent with their representing the same TAAR. Overall, these results suggest that functionally identifying glomeruli from simple diagnostic odorant-concentration pairs may be a useful platform for linking glomeruli to their cognate, genetically defined ORs in vivo.
 
 We used the current set of identified glomeruli to further explore the logic of OSN tuning by analyzing their response spectra, compiled across the eight OBs (Figure 3A). Consensus response spectra were defined by the median response to each odorant across the eight OBs. The median SL across the 26 glomeruli was 0.99 (mean ± s.d.: 0.988±0.011), indicating that the functionally-identified glomeruli exhibited similarly narrow tuning as the general glomerular population. Seven of the 26 glomeruli responded to only a single odorant. Of the remaining 19 glomeruli, effective co-tuned odorants often shared common structural features such as functional group, carbon chain length (for aliphatic odorants), ring structure, or heteroatom. At the same time, nearly all glomeruli were exquisitely selective to their co-tuned odorants, often showing a strong response to one and no response to other structurally similar odorants. Several of the identified glomeruli appeared relatively broadly tuned to heterocyclic compounds including pyrazines and thiazoles (e.g. glomeruli 13, 14, and 16, Supplementary file 4). In addition, several glomeruli showed high sensitivity to odorants where chemical similarity was less obvious; for example, glomeruli 15, 19, and 20 were sensitive to both aromatic and aliphatic compounds, and glomerulus 14 was highly sensitive to the cyclic terpenoid (R)-(+)-pulegone as well as several pyrazines.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig3-v2.jpg)
+
+**Figure 3.:** (A) Median response spectra of all functionally-identified glomeruli. Each spectrum (row) is normalized to its maximal odorant response. Odorants ordered according to nominal structural classification (see Materials and methods), as in Figure 1E. (B) Median response spectra of functionally-identified glomeruli, with odorants ordered by physicochemical descriptor distance from the primary odorant for each glomerulus (odorant that evokes a response at the lowest concentration), using the Dragon1377 descriptor set. (C) Cumulative fraction of all odorant responses encountered with increasing ranked distance from the primary odorant, averaged across all 19 functionally identified glomeruli with co-tuning (i.e. responding to more than one odorant). Colored lines show the cumulative response fraction observed for different odorant rankings, including distance in: the Dragon1377 descriptor set (as shown in (B)), the Dragon1377 descriptor set re-ordered relative to the strongest-activating odorant (Dragon1377 (max)), and a larger 2982-element descriptor set (Alvad. 2982). Black line shows the cumulative response fraction of binarized odorant responses, with odorants ranked by response magnitude, representing the maximum achievable response prediction by odorant ranking. Grey lines show cumulative response fraction following random odorant ranking (100 iterations), representing chance prediction. (D) Same as (C) for all co-tuned glomeruli imaged across the eight OBs (n=694), relative to the primary odorant for each glomerulus, for different odorant rankings, including distance in: the Dragon1377 descriptor set, a previously optimized subset of 32 Dragon descriptors (Dragon32), a subset of descriptors defining functional groups (FG(49)), a subset of previously developed chemical feature binarized fingerprints (i.e. bits; MACCS(106)), and a novel set of chemical feature binarized fingerprints (SMARTS42). Grey line shows mean cumulative response fraction following random odorant ranking. (E) Distribution of performance metrics (see Materials and methods; 1 indicates perfect prediction, 0 indicates chance prediction) across all 694 co-tuned glomeruli for different odorant rankings. Red bar, median; Center bar, interquartile range; envelope, smoothed point density. Asterisks indicate significant difference between odorant rankings (Kruskal-Wallis test comparing all performance metrics: p<2 × 10–16; chi-squared statistic, 859; df = 6; p=0.002 for MACCS(106) vs. Dragon32; p<1 × 10–25 for MACCS(106) vs. all other rankings (post-hoc Dunn tests, Benjamani-Hochberg correction for multiple comparisons); only differences between incrementally higher medians are shown for clarity). (F) Prediction performance metrics for each of the 694 co-tuned glomeruli for the 32-element optimized Dragon descriptor subset (Dragon32; black points) and the 42-element SMARTS fingerprints (SMARTS42; red points), with glomeruli ordered by Dragon32 performance.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Median response spectra of functionally identified glomeruli, with odorants ordered by physicochemical descriptor distance from the strongest-activating odorant for each glomerulus, using the Dragon1377 descriptor set (compare with ordering relative to primary odorant, Figure 3B). (B) Median response spectra of functionally-identified glomeruli, with odorants ordered relative to distance in the space defined by the first 20 PCs of the space defined by the 2982-element alvadesc physicochemical descriptors applied to 2,624 odorant compounds in the Good Scents odorant database (see Text). (C) Median response spectra of functionally-identified glomeruli, with odorants ordered relative to distance (dice similarity) from the primary odorant using the SMARTS42 fingerprint. (D) Cumulative variance in the 2982-descriptor x 2624-odorant space explained by successive PCs (blue line), overlaid with mean prediction performance of 694 co-tuned glomerular responses by odorant ranking using increasing numbers of 2982-descriptor x 2624-odorant space PCs. The first 20 PCs explain 66% of the variance in the 2982-descriptor x 2624-odorant space, while prediction performance asymptotes at ~0.6 after 5–10 PCs. (E) Comparison of prediction performance scores for each of the 694 co-tuned glomeruli for the Dragon1377 descriptor set (black points) and the SMARTS42 set (red points), with glomeruli ordered by Dragon1377 performance. (F) Comparison of MACCS (black points) and SMARTS42 performance scores (red points) for the same 694 co-tuned glomeruli.
+
 To further test the concentration-dependence of glomerular tuning, we located six of the functionally-identified glomeruli using epifluorescence widefield imaging at their diagnostic (‘1 x’) odorant concentrations, and then characterized their response spectra to the tenfold-higher concentration odorant panel (‘10 x’) using two-photon imaging (n=1–2 OBs), as described above. Consistent with the summary analysis across all glomeruli, the response spectrum of each glomerulus at these 10 x concentrations was nearly identical to the median response spectrum at the 1 x concentrations, with smaller-magnitude responses occasionally recruited in response to some additional odorants (Figure 2—figure supplement 3). This result further supports the conclusion that narrow tuning is a robust feature of OSN inputs to OB glomeruli.
 
-## Basic structural features predict co-tuning of glomeruli to their high-sensitivity odorants
+### Basic structural features predict co-tuning of glomeruli to their high-sensitivity odorants
 
 Earlier studies have used sets of physicochemical descriptors of odorants to infer relationships between the chemical space of odorants and their neural representations, OR tuning, or odor perception (Haddad et al., 2008; Saito et al., 2009; Chae et al., 2019; Soelter et al., 2020; Gerkin, 2021). Given the exceptionally narrow tuning of glomerular inputs in our dataset, we used this approach to explore the chemical relationships between the small number of odorants to which OSN populations were most sensitive. We first focused on the 19 functionally-identified glomeruli that were responsive to more than one odorant, sorting the median response spectra of each glomerulus according to odorant distance in physicochemical descriptor space, relative to the primary odorant for that glomerulus. We initially used a subset of 1377 descriptors from the E-Dragon web app (Todeschini and Consonni, 2003; Tetko et al., 2005) chosen previously from a large-scale characterization of mammalian OR binding properties (Haddad et al., 2008; Saito et al., 2009; Chae et al., 2019; Soelter et al., 2020; Gerkin, 2021). This descriptor set appeared moderately effective at predicting glomerulus co-tuning given the primary odorant identity, although some glomeruli were co-tuned to odorants distributed across large distances in the descriptor space, and all glomeruli failed to respond to numerous odorants located more closely within this space (Figure 3B).
 
@@ -83,15 +471,241 @@ Each of the descriptor sets defined a chemical similarity space using only the 1
 
 It was notable that the chemical space defined by the set of 108 MACCS keys, which have been previously defined to describe general chemical features without regard to odorant-OR interactions, outperformed exhaustive physicochemical descriptor sets and performed equivalently to the 32-descriptor set that was optimized by fitting to odorant-evoked neural response data (Haddad et al., 2008). Inspired by this result, we defined a new set of structural features using the SMARTS chemical pattern matching language (Daylight Chemical Information Systems Inc). This set shared some features with the 49-element functional group descriptors (‘FG’), with an additional emphasis on resolving larger substructural motifs that are common in odorant compounds, including the presence and length of an aliphatic carbon chain; heteroatom substitutions; ortho-, meta- and para-substituted rings; and a number of terpenoid scaffolds (Table 2). The resulting ‘SMARTS42’ set was small (42 features), but notably had a higher predictive quality than all other descriptor sets, with higher performance metrics across the entire glomerular dataset (Figure 3E and F), as well as for the identified glomeruli (Figure 3—figure supplement 1C) (SMARTS42 vs. MACCS, p=4.0 × 10–7, corrected post-hoc Dunn test). These results suggest that, despite the extremely narrow tuning of glomeruli overall, the response spectrum of a given glomerulus in low-concentration regimes is moderately well-predicted from relatively straightforward structural features.
 
+**Table 2.**
+ SMARTS42 feature set.SMARTS42 fingerprints consist of binary keys indicating the presence or absence of each feature. ‘SMARTS Pattern’ defines each pattern using the SMARTS chemical pattern matching language (Daylight Chemical Information Systems, Inc; https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>SMARTS pattern</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>*-C(=O)-[OH1]</td>
+      <td>carboxylic acid</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>[CH1]=O</td>
+      <td>aldehyde</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>C-C(=O)-[O]-C</td>
+      <td>ester</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>C-C(=O)-[S]-C</td>
+      <td>thioester</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>[!O&amp;!S]-C(=O)-[!O&amp;!S]</td>
+      <td>ketone</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>[OX2H][CX4&amp;!$(C([OX2H])[O,S,#7,#15]),c]</td>
+      <td>alcohol</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>c1ccccc1</td>
+      <td>benzyl</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>C~C(~C)~C– C~C– C(~C)~C</td>
+      <td>monoterpene</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>[#8]1~[#6]~[#6]~[#6]~[#6]1</td>
+      <td>furanoid</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>o1cccc1</td>
+      <td>furan</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>[NH2][C]</td>
+      <td>primary amine</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>[NH](C)C</td>
+      <td>secondary amine</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>[NH0](C)(C)C</td>
+      <td>tertiary amine</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>[N,n]1~[C,c]~[C,c]~[C,c]~[C,c]~[C,c]1</td>
+      <td>pyridine</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>[n,N]1~[C,c]~[C,c]~[C,c]~[C,c]1</td>
+      <td>pyrrole</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>[N,n]1~[C,c]~[C,c]~[N,n]~[C,c]~[C,c]1</td>
+      <td>pyrazine</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>[#16]1~[#6]~[#7]~[#6]~[#6]1</td>
+      <td>thiazoline</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>[!#8]~C S-C~[!#8]</td>
+      <td>thioether</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>[$(C-S-S-C),$(C-S-S-S-C)]</td>
+      <td>sulfide</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>[#6]-[SH]</td>
+      <td>thiol</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>[#6]=[#6]</td>
+      <td>alkene</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>[#16]</td>
+      <td>sulfur</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>[#7]</td>
+      <td>nitrogen</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>[#8]</td>
+      <td>oxygen</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>[R]</td>
+      <td>ring</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>[CH3]-*-[CH2]-*</td>
+      <td>4-bond chain with C at 1 and 3</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>*!@*@*!@*</td>
+      <td>ortho-substituted rings</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>*!@*@*@*!@*</td>
+      <td>meta-substituted rings</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>*1(!@*)@*@*@*(!@*)@*@*@1</td>
+      <td>para substituted 6-ring but not fused ring</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>C~C(~C)~[R1]1~[R1]~[R1]~[R1](~C)~[R1]~[R1]~1</td>
+      <td>menthane scaffold</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>C~C(~C)~2–[R2]1~[R2]~2–[R1]~[R1](~C)~[R1]~[R1]~1</td>
+      <td>carene scaffold</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>C~C(~C)~[R2]12~[R1]~[R2]~2–[R1](~C)~[R1]~[R1]~1</td>
+      <td>thujane scaffold</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>C~C2(~C)~[R]1~[R]~[R]~2–[R](~C)~[R]~[R]~1</td>
+      <td>pinane scaffold</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>[!H]~[!H]2(~[!H])~[R]1~[R]~[R]~[R](~[!H])~2–[R]~[R]~1</td>
+      <td>camphane scaffold</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>[!H]~[!H]2(~[!H])~[R]~[R](~[!H])1~[R]~[R]~2–[R]~[R]~1</td>
+      <td>fenchane scaffold</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>C(-C)(-C)(-C)-C</td>
+      <td>quaternary carbon</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>C-C-C-C-C-C</td>
+      <td>six carbon single bond</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>C-C-C-C-C-C-C</td>
+      <td>seven carbon single bond chain</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>C-C-C-C-C-C-C-C</td>
+      <td>eight carbon single bond chain</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>C-C-C-C-C-C-C-C-C</td>
+      <td>nine carbon single bond chain</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>C-C-C-C-C-C-C-C-C-C</td>
+      <td>ten carbon single bond chain</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>C-C-C-C-C-C-C-C-C-C-C</td>
+      <td>eleven carbon single bond chain</td>
+    </tr>
+  </tbody>
+</table>
+
 Given this result we hypothesized that, despite the overall high dimensionality of odorant representations arising from narrowly-tuned glomeruli, any correlated relationships among odorant representations would reflect such basic structural features. Indeed, odorant response correlation matrices revealed blocks of correlated responses that corresponded to major structural classes of odorants. In particular, the highest correlations occurred among aliphatic acids, aldehydes and esters; primary amines; and pyrazines and thiazoles/pyrroles/pyridines (‘heterocyclic N-S’) (Figure 4A). As each odorant activated only a few glomeruli, correlation analysis was poorly suited to further investigating the structure of odorant response matrices. Instead, since correlation coefficients essentially reflected co-tuning of individual glomeruli to a few odorants, we constructed co-tuning probability matrices that reflected the likelihood of a glomerulus being responsive to any pair of odorants. As expected, the average co-tuning probability matrix across all eight OBs was very similar to the correlation matrix, with blocks of odorants to which glomeruli are most commonly co-tuned corresponding to major structurally-defined odorant classes, with occasional smaller blocks within a class (Figure 4B). To facilitate visualization of odorant co-tuning relationships, we generated a pairwise odorant co-tuning matrix based on the mean number of co-tuned glomeruli per OB, thresholded this matrix at 0.875 co-tuned glomeruli per OB (i.e. co-tuning in at least 7 of 8 OBs), and generated a network graph with odorants as nodes and mean number of co-tuned glomeruli as edge weights (Figure 5A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig4-v2.jpg)
 
-**Figure 4.:** (A) Mean glomerular response correlation matrix for the 185-odorant panel. Each value shows the Spearman’s rank correlation (ρ) between the vectors of glomerular responses evoked by two odorants, averaged across all 8 OBs. Odorants ordered and color-coded according to nominal structural classification (see Materials and methods), as in Figure 1E. (B) Odorant co-tuning probability matrix for the 185-odorant panel. Each value shows the mean probability of a glomerulus responding to each odorant pair of the matrix, averaged across all responsive glomeruli per OB and then averaged across each of the eight OBs.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Mean glomerular response correlation matrix for the 185-odorant panel. Each value shows the Spearman’s rank correlation (ρ) between the vectors of glomerular responses evoked by two odorants, averaged across all 8 OBs. Odorants ordered and color-coded according to nominal structural classification (see Materials and methods), as in Figure 1E. (B) Odorant co-tuning probability matrix for the 185-odorant panel. Each value shows the mean probability of a glomerulus responding to each odorant pair of the matrix, averaged across all responsive glomeruli per OB and then averaged across each of the eight OBs.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig5-v2.jpg)
 
-**Figure 5.:** (A) Circular network graph of the most reliable odorant co-tuning relationships, using the mean number of glomeruli co-tuned to each odorant pair. Lines connect odorant pairs with mean co-tuning values above 0.875 (i.e. ≥1 co-tuned glomerulus per OB in at least 7 of 8 OBs). Line thickness scales with co-tuning value. Colors indicate membership in odorant structural group; color of lines connecting odorants across groups chosen to match source group with the most connected members. Letter-number codes indicate odorant identity (Supplementary file 1). Odorants with mixed group-defining structural features are shown in grey. Odorants ordered according to nominal structural classification, as in previous figures. (B) Odorant panel color-coded by structural group, plotted in the first two PCs of the 2587-odorant physicochemical descriptor space, as in Figure 1A. Select odorant classes are highlighted in each replicate plot to facilitate visual comparison. Grey circles indicate all odorants in the database.Figure 5—source data 1.Figure 5A.
+**Figure 5.:** (A) Circular network graph of the most reliable odorant co-tuning relationships, using the mean number of glomeruli co-tuned to each odorant pair. Lines connect odorant pairs with mean co-tuning values above 0.875 (i.e. ≥1 co-tuned glomerulus per OB in at least 7 of 8 OBs). Line thickness scales with co-tuning value. Colors indicate membership in odorant structural group; color of lines connecting odorants across groups chosen to match source group with the most connected members. Letter-number codes indicate odorant identity (Supplementary file 1). Odorants with mixed group-defining structural features are shown in grey. Odorants ordered according to nominal structural classification, as in previous figures. (B) Odorant panel color-coded by structural group, plotted in the first two PCs of the 2587-odorant physicochemical descriptor space, as in Figure 1A. Select odorant classes are highlighted in each replicate plot to facilitate visual comparison. Grey circles indicate all odorants in the database.
 
 This visualization confirmed that glomerular tuning was dominated by particular structural relationships between co-tuned odorants. In particular, there was prominent co-tuning between carboxylic acids, aldehydes and esters; between primary amines – including both acyclic and cyclic amines; and between the heterocyclic pyrazines, thiazoles and pyrroles/pyridines (all heterocyclic aromatic compounds containing one or two nitrogens or a nitrogen and sulfur heteroatom). Notably, co-tuning relationships were not well-predicted by the chemical space of odorants defined by computed physicochemical descriptors: for example, the amine odorants were distributed across a large extent of the Good Scents/2982-descriptor space but showed almost no co-tuning to other odorant classes (Figure 5A and B). Conversely, the aromatic-containing odorants overlapped within a relatively small extent of descriptor space, but there was little co-tuning between aromatic compounds with different functional groups (Figure 5A and B). Other notable aspects of glomerular tuning appeared generalizable. For example, co-tuning among the acids, aldehydes and esters was common between odorants with the same or similar carbon chain length (e.g., butyric acid, butyraldehyde, butyric acid esters). However, these glomeruli responded to the acids at 100–1000 x lower concentrations than their aldehyde or ester counterparts (Supplementary file 1; Supplementary file 2). In addition, while glomeruli sensitive to the sulfur- and nitrogen-containing thiazoles, pyrazines and pyrrole/pyridines showed extensive co-tuning among these classes, they were not sensitive to sulfur- and nitrogen-containing thiols and amines, respectively. Overall, this analysis reveals a basic structure underlying the tuning of the OR repertoire that largely reflects relatively straightforward structural relationships among odorants spanning chemical space.
 
@@ -99,7 +713,7 @@ Finally, we analyzed the spatial organization of glomerular sensitivities with r
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80470/elife-80470-fig6-v2.jpg)
 
-**Figure 6.:** (A) Glomerular positions across all eight OBs (grey), plotted separately and identified by the structural class of their primary odorant (red). Numbers indicate odorants in each class. (B) Size of statistically significant spatial clusters for glomeruli with primary odorants in each odorant class. Radius of persistently significant Ripley’s K indicates the minimal radius (in μm) at which the Ripley’s K metric remained significant at p<0.01 as radii were progressively increased. Numbers below each bar indicate number of OBs (out of 8) showing statistically significant clustering. Boxes show median and interquartile ranges. Colors match odorant class coloration in previous figures. (C) Maximal projection of response maps elicited by odorants within four distinct structural classes: carboxylic acids, amines, pyrazines/thiazoles, and phenol/methoxy-containing aromatics. Numbers indicate number of odorants tested within each class. All data taken from the same mouse. Individual glomeruli show little to no co-tuning to odorants in different classes.Figure 6—source data 1.Figure 6A.Figure 6—source data 2.Figure 6B.
+**Figure 6.:** (A) Glomerular positions across all eight OBs (grey), plotted separately and identified by the structural class of their primary odorant (red). Numbers indicate odorants in each class. (B) Size of statistically significant spatial clusters for glomeruli with primary odorants in each odorant class. Radius of persistently significant Ripley’s K indicates the minimal radius (in μm) at which the Ripley’s K metric remained significant at p<0.01 as radii were progressively increased. Numbers below each bar indicate number of OBs (out of 8) showing statistically significant clustering. Boxes show median and interquartile ranges. Colors match odorant class coloration in previous figures. (C) Maximal projection of response maps elicited by odorants within four distinct structural classes: carboxylic acids, amines, pyrazines/thiazoles, and phenol/methoxy-containing aromatics. Numbers indicate number of odorants tested within each class. All data taken from the same mouse. Individual glomeruli show little to no co-tuning to odorants in different classes.
 
 ## Discussion
 
@@ -135,25 +749,63 @@ An important question for interpreting the ethological significance of the prese
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus, both sexes)</td>
+      <td>OMP-IRES-tTA</td>
+      <td>Yu et al., 2004 PMID:15157418</td>
+      <td>RRID:IMSR_JAX:017754</td>
+      <td>Mouse line; provided by C. Ron Yu</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus, both sexes)</td>
+      <td>tetO-GCaMP6s</td>
+      <td>Wekselblatt et al., 2016 PMID:26912600</td>
+      <td>RRID:IMSR_JAX:024742</td>
+      <td>Mouse line; provided by Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>custom image analysis GUI</td>
+      <td>this paper, WachowiakLab, 2022</td>
+      <td>https://github.com/WachowiakLab/ImageAnalysisSoftware, (copy archived at swh:1:rev:b40c6f15779fc65b47731d32f375a5f0bf90a64c )</td>
+      <td>Matlab scripts</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Experiments were performed using both male and female compound heterozygous crosses of OMP-IRES-tTA (Jackson Laboratory stock #017754) (Yu et al., 2004) and tetO-GCaMP6s (Jackson Laboratory stock #024742) (Wekselblatt et al., 2016) mice aged 2–6 months. Mice were housed up to 5 per cage on a 12 hr light/dark cycle with food and water available ad libitum. All procedures were performed following the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the University of Utah Institutional Animal Care and Use Committee. (IACUC protocols #19–06007, 19–06008).
 
-## Olfactometry
+### Olfactometry
 
 Odorants were obtained from Sigma-Aldrich, TCI America, Bedoukian Research, or ICN Biomedicals. Liquid dilutions of odorants were prepared to achieve target delivery concentrations of approximately 0.1, 1, 10, 100, or 1000 pM (within an order-of-magnitude) using 1:10 and 1:100 serial dilutions. Non-amine odorants were diluted in caprylic/capric medium chain triglyceride oil (C3465, Spectrum Chemical Mfg. Corp.) within ~1 week of experiments; amine odorants were freshly diluted in water immediately prior to each experiment to minimize odorant oxidation. Trace quantities of Sudan Black B were included in all dilutions to facilitate visual confirmation of olfactometer loading. Diluted odorants were delivered in vapor phase using a custom-built olfactometer equipped with end-stage eductor and operating with 8 L/min charcoal-filtered carrier stream, 30 kPa delivery pressure, 5 cm olfactometer-to-mouse distance, and 2-s long delivery (Burton et al., 2019). A fan at the rear of the animal removed odorants after presentation. Odorants were delivered independent of inhalation timing in pseudorandom order, typically in sets of 12 odorants, with 3–5 trials per odorant and 8–10 s inter-trial interval. Eductors were washed with non-scented Alconox detergent and thoroughly rinsed with ethanol and water in between odorant sets to minimize possible odorant adsorption and inter-trial contamination.
 
-## Imaging
+### Imaging
 
 Mice were initially anesthetized with intraperitoneal injection of pentobarbital (50 mg/kg) and subcutaneous injection of chlorprothixene (12.5 mg/kg). Subcutaneous injection of atropine (0.5 mg/kg) was further given to minimize mucus secretions and maintain nasal patency. A double tracheotomy was performed as described (Eiting and Wachowiak, 2018), and anesthesia was subsequently maintained by ~0.4–0.5% isoflurane delivered in pure O2 to the descending tracheal tube while artificial inhalation (150 ms duration, 300 mL/min flow rate) was continuously driven at 3 Hz through the ascending tracheal tube. Mice were then head-fixed and the bone over the dorsal OB thinned. For widefield imaging experiments, a large well surrounding the dorsal OB was constructed with dental cement and securely covered with a cut glass coverslip, forming a chamber with caudal opening. This chamber was filled with Ringer’s solution to render the thinned bone transparent, yielding a cranial window with stable optical plane throughout the experiment. Epifluorescence was collected through a 4×, 0.28 N.A. air objective (Olympus) at 256×256-pixel resolution and 25 Hz frame rate using a back-illuminated CCD camera (NeuroCCD-SM256; RedShirt Imaging) and Neuroplex software, with illumination provided by a 470 nm LED (M470L2, Thorlabs) and green fluorescent protein filter set (GFP-1828A-000, Semrock). For experiments involving both widefield and two-photon imaging trials, epifluorescence was collected similar to above using a 5×, 0.25 N.A. air objective (Olympus), while two-photon fluorescence was collected with 15.2 Hz frame rate using a resonant-scanning microscope (Sutter Instruments) coupled to a pulsed Ti-Sapphire laser (Mai Tai HP, Spectra Physics) tuned to 920 nm and equipped with a 16×, 0.8 N.A. water-dipping objective (Nikon) and GaAsP photomultiplier (Hamamatsu H10770B).
 
 For epifluorescence imaging in awake, head-fixed mice (Figure 2—figure supplement 1), the bone overlying both OBs was thinned and sealed with cyanoacrylate (Krazy Glue) to preserve transparency and a headbar was implanted caudal to the OBs (Wachowiak et al., 2013). Beginning 3–5 days after the surgical procedure, mice were acclimated to head fixation for periods increasing from 10 to 30 min over 3–4 days. A circular treadmill (design courtesy of D. Rinberg, New York University) allowed for locomotory movements and minimized torque on the headbar. Odorant-evoked responses were imaged on the same optical setup and using the same odorant delivery paradigm as in anesthetized mice. Data were collected over 2–3 consecutive daily sessions lasting 45–60 min.
 
-## Odorant response maps
+### Odorant response maps
 
 To generate odorant response maps, raw data from the ≥3 presentations of each odorant were first averaged, then ΔF images generated by, for each pixel, subtracting the mean of the fluorescence signal in the 1 s prior to odorant delivery onset from the mean signal in seconds 2–3 after odorant delivery onset. This time-window nearly always captured the time of the peak of the signal, except in rare cases where responses began to decline before odorant offset, presumably due to adaptation of OSNs. For presentation in the Figures, the resulting ∆F response maps were clipped at zero and a maximum equal to the mean of the highest 65 pixels, smoothed slightly by convolving with a 2D Gaussian kernel (sigma: 0.75 pixels), and the pixel resolution doubled (to 512 × 512 pixels) with bilinear interpolation. Response maps were displayed in units of ∆F as these facilitated visualization of glomerular foci without amplifying noisy signal from low-fluorescence areas such as blood vessels (quantitative analyses were performed after normalization by baseline fluorescence (i.e. on ∆F/F) or by maximal response, as described below).
 
-## Signal extraction and segmentation
+### Signal extraction and segmentation
 
 For the main dataset ('1 x concentrations', widefield epifluorescence), regions of interests (ROIs) representing single glomeruli were generated using an initial automated selection process followed by manual refinement. First, maximal ∆F projections were generated from the raw (unsmoothed) ΔF response maps across all odorants and initial ROI boundaries generated using 'Find Circles' in Matlab’s Image Segmenter App, followed by the 'bwconncomp' function. This initial ROI set was manually refined by addition or adjustment based on visual inspection of the maximal projections and, in some cases, individual odorant response maps. The mean ∆F signal of all pixels from each ROI was used to generate a response matrix (ROI x odorant) for each OB.
 
@@ -161,33 +813,41 @@ Response matrices derived from epifluorescence data required further segmentatio
 
 For the 10 x concentration dataset acquired with two-photon imaging, ROIs were selected manually from maximal ΔF projections, and the resulting ΔF/F response matrices were thresholded using a modified z-score cutoff based on the variance in non-responsive odorant trials for each ROI. Variance was calculated as the standard deviation of ΔF/F response values, excluding the top 10th and bottom 5th percentiles of responses across the 185-odorant spectrum. Responses corresponding to a z-score <9 were set to zero, and the resulting thresholded response matrix was used for further analysis.
 
-## Response matrix statistical measures
+### Response matrix statistical measures
 
 To compare response magnitudes across OBs, nonzero ΔF/F values were log-normalized to achieve a normal distribution of magnitude values, then ANOVA was performed on all values grouped by OB. Pairwise post-hoc tests (Tukey’s multiple comparison of means) were used to test for differences between OBs.
 
-Lifetime sparseness (SL), a measure of tuning of each glomerulus across the odorant response panel, was calculated as previously (Davison and Katz, 2007; Schlief and Wilson, 2007; Pashkovski et al., 2020). For a set of responses to a single glomerulus across n odorants (R={r1, r2, … rn})SL=11-1n*1-∑i=1nrin2∑i=1nri2n
+Lifetime sparseness (SL), a measure of tuning of each glomerulus across the odorant response panel, was calculated as previously (Davison and Katz, 2007; Schlief and Wilson, 2007; Pashkovski et al., 2020). For a set of responses to a single glomerulus across n odorants (R={r1, r2, … rn})
 
-Similarly, population sparseness (SP), a measure of sparseness of n glomerular responses to each odorant (G={g1, g2, … gn}), was calculated asSP=11-1n*1-∑i=1ngin2∑i=1ngi2n
+$$
+S_{L}=\frac{1}{1-\frac{1}{n}}*1-\frac{\sumi=1n\frac{r_{i}}{n}^{2}}{\sumi=1n\frac{r_{i}^{2}}{n}}
+$$
+
+Similarly, population sparseness (SP), a measure of sparseness of n glomerular responses to each odorant (G={g1, g2, … gn}), was calculated as
+
+$$
+S_{P}=\frac{1}{1-\frac{1}{n}}*1-\frac{\sumi=1n\frac{g_{i}}{n}^{2}}{\sumi=1n\frac{g_{i}^{2}}{n}}
+$$
 
 For both measures, a value of 1 indicates maximally selective tuning (a glomerular response to only one of the 185 odorants (SL), or a single glomerulus activated by an odorant (SP), while a value of 0 indicates completely nonselective tuning, i.e., equivalent responses to all odorants or equivalent activation of all glomeruli). Paired Wilcoxon signed-ranks tests were used to test for differences in SP between left and right OB responses to the same odorant presentation.
 
 PCA was performed separately on the response matrix of each OB after normalizing each glomerulus’s response spectrum to its maximal response. ED, a measure of the number of PCs required to explain a fraction of the variance in the response dataset, was calculated as described in Litwin-Kumar et al., 2017; Pashkovski et al., 2020. To compare datasets with different numbers of glomeruli (and, thus, a different maximal number of PCs), we expressed variance explained as a fraction of the total number of PCs.
 
-## Functional identification of glomeruli
+### Functional identification of glomeruli
 
 To define odorants that could be reliably used to identify putatively cognate glomeruli across OBs, we first identified odorants with reliable singular or near-singular activation of glomeruli using two criteria: no more than two glomeruli activated above a 50% ΔFmax cutoff across all imaged OBs, and activation of at least one glomerulus in at least six of eight OBs, and in each of the four mice. Next, for each potential diagnostic odorant, we identified the glomerulus maximally activated by that odorant in each imaged OB and compared the response spectra of each of these glomeruli across the full 185-odorant panel using Pearson’s correlation, taking the median of all pairwise correlations across the 6–8 OBs as a measure of consistency of response spectrum. We also measured the frequency with which the response spectrum of the maximally-activated glomerulus was the most highly correlated with that of the maximally-activated glomerulus in other OBs; this fraction reflected the reliability with which the strongest-responding glomerulus to a given odorant also identified the glomerulus with the most similar response spectrum in another OB. We defined an error ratio as 1 minus this fraction. Odorants were considered diagnostic for functionally-identified glomeruli if they had a median correlation coefficient >0.8 and an error ratio <0.2.
 
-## Odorant classification
+### Odorant classification
 
 To facilitate visual comparison of response maps across the large odorant panel, odorants were nominally grouped according to common structural classifiers including functional group, aliphatic, aromatic or cyclic structure, heteroatom substitution, etc. Odorants with mixed features are identified as such in Supplementary file 1. Within each group, odorants were ordered according to progressive changes in particular features such as carbon chain length. The ordering process was subjective and used only for data visualization. The structural classification was used only for analysis of spatial clustering (e.g. Figure 6), as described below.
 
-## Odorant concentrations
+### Odorant concentrations
 
 Concentrations are reported as estimated concentration delivered to the mouse nose based on the vapor pressure of each odorant, its dilution in liquid solvent, and prior calibrations of the olfactometer using a photoionization detector (Burton et al., 2019). We assumed that the odorant and solvent behave as an ideal mixture and that odorants reach saturated vapor concentrations in their delivery reservoir as predicted by Raoult’s Law; that is, the odorant and solvent are chemically nonreactive with each other and totally miscible at all proportions. This assumption will not hold across all odorants, but was necessary as data on activity coefficients that describe deviations from ideal behavior are extremely limited for these systems. Furthermore, calculations were based on estimated vapor pressures at 25 °C calculated using the EpiSuite ‘mpvpbp’ module (US Environmental Protection Agency, https://www.epa.gov/tsca-screening-tools/epi-suitetm-estimation-program-interface) or as reported by The Good Scents company; reported vapor pressures can vary by 30–60% depending on the source and the estimation method. Given these considerations, all reported final concentrations should be considered estimates, and are reported to one significant digit precision (Supplementary file 1).
 
 For comparison of concentrations with prior studies (Figure 1—figure supplement 2), we compared only odorants in common with our odorant panel. For comparison to Pashkovski et al., 2020 and (Davison and Katz, 2007), we used their reported values of 100 ppm and 10 ppm, respectively. For (Soucy et al., 2009; Chae et al., 2019) we used a value of 0.5% of saturated vapor (s.v.), based on a midway point of their reported range of 0.05–1% s.v. used in the bulk of experiments. For comparisons to Ma et al., 2012, we used the lowest reported effective dilutions of saturated vapor from the ‘GIA0512’ dataset, available at https://www.pnas.org/doi/full/10.1073/pnas.1117491109#supplementary-materials. The specific odorants compared along with their estimated concentrations are listed in Supplementary file 3.
 
-## Chemical descriptor sets
+### Chemical descriptor sets
 
 Glomerular response spectra were analyzed with respect to various odorant physicochemical descriptor sets, chosen from previous studies (see Text) and processed as follows: The 'Dragon1377' set was identical to that used in Haddad et al., 2008; Saito et al., 2009; Chae et al., 2019; Gerkin, 2021 and consisted of an initial set of 1664 descriptors taken from the Dragon database (Kode Systems), 1377 of which showed non-zero variance across our odorant panel. The 'Dragon32' set consisted of the subset of 32 descriptors (a subset of the original 1664) found to optimally predict odorant-OR interactions (Haddad et al., 2008). The 'FG' descriptor set consisted of the subset of 154 descriptors defining odorant functional groups (Saito et al., 2009), 49 of which had non-zero variance across our odorant panel. The 'Alvadesc2982' set was generated from an expanded list of 5666 descriptors added to the original Dragon database (Mauri, 2020), 2982 of which showed non-zero variance across our odorant set. This descriptor set included the same descriptors used in Pashkovski et al., 2020 (2873 descriptors), with additional descriptors reflecting the larger number of odorants in our panel. For all of the above descriptor sets, descriptor values were calculated using alvadesc (Alvascience, alvaDesc version 2.0.8, https://www.alvascience.com). To normalize for differences in ranges and units across the descriptor set, values for each descriptor across the odorant panel were z-scored, as done previously (Saito et al., 2009; Chae et al., 2019; Pashkovski et al., 2020).
 
@@ -195,14 +855,18 @@ We also defined odorant distances using PCs of the chemical space defined by the
 
 Odorant distances were also defined using binary feature keysets representing the presence or absence of a particular chemical feature. 'MACCS' keys (Durant et al., 2002), 59 (of 166 total keys) of which were present in our odorant panel, were extracted using alvadesc. The SMARTS42 key set was defined using the SMARTS chemical pattern matching language (Daylight Chemical Information Systems Inc; https://www.daylight.com/dayhtml/doc/theory/theory.smarts.html), as described in the Text. The SMARTS42 set consisted of 42 features (Table 2) which were chosen to capture substructures that are present in common-use odorants, including those in our panel (e.g. carboxyl, aldehyde or ketone group; ester bonds; aromatic rings; pyridine substructure; ortho-, meta- and para-substituted rings; a number of terpenoid scaffolds; and the explicit inclusion of single-bond aliphatic chains of lengths from 6 to 11 carbon atoms). In all of the above cases, pairwise (185 × 185) odorant distance matrices were generated for each odorant-descriptor set, using cosine distance as the distance metric for the z-scored physicochemical descriptor sets and [1 - dice similarity] for the binary feature keys.
 
-A performance metric derived from receiver-operating characteristic analysis, an approach commonly used to evaluate the quality of predictive models for receptor-ligand interactions (Lopes et al., 2017), was used to evaluate the quality of the different physicochemical descriptor sets as models for predicting glomerular odorant responses. For a given glomerulus, an initial 'query' odorant was defined as the odorant to which that glomerulus responded at the lowest concentration (i.e. primary odorant) or, in some cases (e.g. Figure 3C, Figure 3—figure supplement 1A) the odorant that elicited the strongest response. The remaining 184 odorants were sorted in order of increasing distance from the query odorant based on a given descriptor set, and the cumulative fraction of all odorant responses explained as a function of odorant rank was plotted, generating a model performance curve, with odorant rank as the false positive rate and fraction of responses explained as the true positive rate. This curve was compared to that derived from the measured responses, generated by sorting odorants in the order of their responsiveness. The performance metric, P, was defined asP=1-2 AUCresponse-AUCmodelAUCresponse
+A performance metric derived from receiver-operating characteristic analysis, an approach commonly used to evaluate the quality of predictive models for receptor-ligand interactions (Lopes et al., 2017), was used to evaluate the quality of the different physicochemical descriptor sets as models for predicting glomerular odorant responses. For a given glomerulus, an initial 'query' odorant was defined as the odorant to which that glomerulus responded at the lowest concentration (i.e. primary odorant) or, in some cases (e.g. Figure 3C, Figure 3—figure supplement 1A) the odorant that elicited the strongest response. The remaining 184 odorants were sorted in order of increasing distance from the query odorant based on a given descriptor set, and the cumulative fraction of all odorant responses explained as a function of odorant rank was plotted, generating a model performance curve, with odorant rank as the false positive rate and fraction of responses explained as the true positive rate. This curve was compared to that derived from the measured responses, generated by sorting odorants in the order of their responsiveness. The performance metric, P, was defined as
+
+$$
+P=1-2 \frac{AUC_{response}-AUC_{model}}{AUC_{response}}
+$$
 
 where AUCresponse is the area under the cumulative response curve and AUCmodel is the area under the cumulative model performance curve. A model perfectly predicting performance had a value of 1, and chance performance had a value of 0. For measuring model performance for the 19 identified glomeruli with non-singular tuning, median response spectra across all responsive OBs were used, and the query odorant was the primary odorant, with response spectra binarized before evaluation. For comparing performance using the strongest-activating odorant, odorants were sorted in descending order of their response amplitudes and odorant number was plotted against the cumulative fraction of the summed response amplitudes explained. For measuring performance for individual glomeruli across the full dataset, responses were thresholded at 10% of the maximal response for each glomerulus, binarized, and analysis performed only on glomeruli responding above threshold to more than one odorant (694 total glomeruli). For each glomerulus, the performance metric was calculated using each effective odorant as the query odorant (rather than the primary odorant) and the median of these values was reported.
 
-## Response matrix correlation and co-tuning analysis
+### Response matrix correlation and co-tuning analysis
 
 Odorant response correlation matrices were generated by calculating rank correlation (Spearman’s ρ) across all glomeruli in a response matrix for all odorant pairs; the resulting odorant correlation matrices were averaged across the eight imaged OBs. Because odorant response vectors typically included only a few responsive glomeruli, we also calculated pairwise odorant co-tuning matrices using a binary measure of responsiveness, where the co-tuning index was equal to the number of glomeruli responsive to a given odorant pair, at any magnitude. Pairwise co-tuning matrices were then averaged across the eight OBs and thresholded at 0.875 (corresponding to an average of at least one co-tuned glomerulus in seven of the eight OBs) to highlight the most consistent odorant co-tuning relationships. Co-tuning relationships were then visualized as a circular network graph using the mean, thresholded co-tuning matrix as the weighted adjacency matrix input. The network graph was rendered using the 'circulargraph' function in Matlab (https://www.mathworks.com/matlabcentral/fileexchange/48576-circulargraph/).
 
-## Spatial clustering analysis
+### Spatial clustering analysis
 
 To test for nonrandom spatial distribution of glomerular odorant sensitivities, we used the spatial point pattern measure Ripley’s K, which reports whether points within a given radius, r, are dispersed, clustered, or randomly distributed (Ripley, 1977). Within each preparation, each glomerulus was assigned to an odorant group based on our structural classification of its primary odorant and Ripley’s K was calculated using the set of glomeruli in a given group. Glomeruli with primary odorants having mixed classification (16 of the 185 odorants; see Supplementary file 1) were excluded from analysis. Each imaged OB was analyzed separately and treated as a replicate for statistical analysis. A minimum of three glomeruli per structural group in each OB were required to support statistical tests; nine of the 16 groups met these criteria. For these groups, K was calculated for increasing radius (r) values from 0 to ~400 μm (depending on the largest spread of glomeruli in each dataset), in 512 steps of ~0.7–0.8 μm, using the R package ‘spatstat’ (http://spatstat.org/). Statistical significance of K at each r was calculated by comparing to a Monte Carlo distribution of K values calculated from the same number of glomeruli randomly chosen from the full glomerular array (10,000 iterations). p-values were taken directly from the probability distribution of the Monte Carlo simulation. We used an alpha level of p<0.01 to identify the radius at which nonrandom spatial distributions of glomeruli existed in each dataset; significant Ripley’s K values were always greater than the random distribution, indicating spatial clustering. To prevent over-interpreting spurious significant values of r, we further required that Ripley’s K remain significant at all increasing radii to consider spatial clustering to be meaningful at a given radius.

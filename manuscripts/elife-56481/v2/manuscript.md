@@ -40,7 +40,7 @@ The aim of this paper is to further explore the possibilities of CNNs for EEG-ba
 
 ## Materials and methods
 
-## Experiment setup
+### Experiment setup
 
 The dataset used for this work was gathered previously (Das et al., 2016). EEG data was collected from 16 normal-hearing subjects while they listened to two competing speakers and were instructed to attend to one particular speaker. Every subject signed an informed consent form approved by the KU Leuven ethical committee.
 
@@ -52,15 +52,89 @@ The experiment was split into eight trials, each 6 min long. In every trial, sub
 
 In subsequent trials, subjects attended either to the second part of the same story (so they could follow the story line) or to the first part of the next story. After each trial, subjects completed a multiple-choice quiz about the attended story. In total, there was 8 × 6 min = 48 min of data per subject. For an example of how stimuli were presented, see Table 1. (The original experiment [Das et al., 2016] contained 12 additional trials of 2 min each, collected at the end of every measurement session. These trials were repetitions of earlier stimuli and were not used in this work.)
 
+**Table 1.**
+ First eight trials for a random subject.Trials are numbered according to the order in which they were presented to the subject. Which ear was attended to first was determined randomly. After that, the attended ear was alternated. Presentation (dichotic/HRTF) was balanced over subjects with respect to the attended ear. Adapted from Das et al., 2016. HRTF = head-related transfer function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trial</th>
+      <th>Left stimulus</th>
+      <th>Right stimulus</th>
+      <th>Attended ear</th>
+      <th>Presentation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Story1, part1</td>
+      <td>Story2, part1</td>
+      <td>Left</td>
+      <td>Dichotic</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Story2, part2</td>
+      <td>Story1, part2</td>
+      <td>Right</td>
+      <td>HRTF</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Story3, part1</td>
+      <td>Story4, part1</td>
+      <td>Left</td>
+      <td>Dichotic</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Story4, part2</td>
+      <td>Story3, part2</td>
+      <td>Right</td>
+      <td>HRTF</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Story2, part1</td>
+      <td>Story1, part1</td>
+      <td>Left</td>
+      <td>Dichotic</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Story1, part2</td>
+      <td>Story2, part2</td>
+      <td>Right</td>
+      <td>HRTF</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Story4, part1</td>
+      <td>Story3, part1</td>
+      <td>Left</td>
+      <td>Dichotic</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Story3, part2</td>
+      <td>Story4, part2</td>
+      <td>Right</td>
+      <td>HRTF</td>
+    </tr>
+  </tbody>
+</table>
+
 The attended ear alternated over consecutive trials to get an equal amount of data per ear (and per subject), which is important to avoid the lateralization bias described by Das et al., 2016. Stimuli were presented in the same order to each subject, and either dichotically or after head-related transfer function (HRTF) filtering (simulating sound coming from ±90 deg). As with the attended ear, the HRTF/dichotic condition was randomized and balanced within and over subjects. In this work, we do not distinguish between dichotic and HRTF to ensure there is as much data as possible for training the neural network.
 
-## Data preprocessing
+### Data preprocessing
 
 The EEG data was filtered with an equiripple FIR bandpass filter and its group delay was compensated for. For use with linear models, the EEG was filtered between 1 and 9 Hz, which has been found to be an optimal frequency range for linear attention decoding (Pasley et al., 2012; Ding and Simon, 2012). For the CNN models, a broader bandwidth between 1 and 32 Hz was used, as Taillez et al., 2017 show that this is more optimal. In both cases, the maximal bandpass attenuation was 0.5 dB while the stopband attenuation was 20 dB (at 0–1 Hz) and 15 dB (at 32–64 Hz). After the bandpass filtering, the EEG data was downsampled to 20 Hz (linear model) and 128 Hz (CNN). Artifacts were removed with the generic MWF-based removal algorithm described in Somers et al., 2018.
 
 Data of each subject was divided into a training, validation, and test set. Per set, data segments were generated with a sliding window equal in size to the chosen window length and with an overlap of 50%. Data was normalized on a subject-by-subject basis, based on statistics of the training set only, and in such a way that proportions between EEG channels were maintained. Concretely, for each subject we calculated the power per channel, based on the 10% trimmed mean of the squared samples. All channels were then divided by the square root of the median of those 64 values (one for each EEG channel). Data of each subject was thus normalized based on a single (subject-specific) value.
 
-## Convolutional neural networks
+### Convolutional neural networks
 
 A convolutional neural network (CNN) consists of a series of convolutional layers and nonlinear activation functions, typically followed by pooling layers. In convolutional layers, one or more convolutional filters slide over the data to extract local data features. Pooling layers then aggregate the output by computing, for example, the mean. Similar to other types of neural networks, a CNN is optimized by minimizing a loss function, and the optimal parameters are estimated with an optimization algorithm such as stochastic gradient descent.
 
@@ -68,19 +142,92 @@ Our proposed CNN for decoding the locus of auditory attention is shown in Figure
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56481/elife-56481-fig1-v2.jpg)
 
-**Figure 1.:** T samples).Input: T time samples of a 64-channel EEG signal, at a sampling rate of 128 Hz. Output: two scalars that determine the attended direction (left/right). The convolution, shown in blue, considers 130 ms of data over all channels. EEG = electroencephalography, CNN = convolutional neural network, ReLu = rectifying linear unit, FC = fully connected.
+**Figure 1.:** Input: T time samples of a 64-channel EEG signal, at a sampling rate of 128 Hz. Output: two scalars that determine the attended direction (left/right). The convolution, shown in blue, considers 130 ms of data over all channels. EEG = electroencephalography, CNN = convolutional neural network, ReLu = rectifying linear unit, FC = fully connected.
 
 In the average pooling step, data is averaged over the time dimension, thus reducing each time series to a single number. After the pooling step, there are two fully connected (FC) layers. The first layer contains five neurons (one for each time series) and is followed by a sigmoid activation function, and the second layer contains two (output) neurons. These two neurons are connected to a cross-entropy loss function. Note that with only two directions (left/right), a single output neuron (coupled with a binary cross-entropy loss) would have sufficed as well. With this setup, it is easier to extend to more locations, however. The full CNN consists of approximately 5500 parameters.
 
 The implementation was done in MATLAB 2016b and MatConvNet (version 1.0-beta25), a CNN toolbox for MATLAB (Vedaldi and Lenc, 2015). The source code is available at https://github.com/exporl/locus-of-auditory-attention-cnn (copy archived at swh:1:rev:3e5e21a7e6072182e076f9863ebc82b85e7a01b1; Vandecappelle, 2021).
 
-## CNN training and evaluation
+### CNN training and evaluation
 
 The model was trained on data of all subjects, including the subject it was tested on (but without using the same data for both training and testing). This means we are training a subject-specific decoder, where the data of the other subjects can be viewed as a regularization or data augmentation technique to avoid overfitting on the (limited) amount of training data of the subject under test.
 
 To prevent the model from overfitting to one particular story, we cross-validated over the four stories (resulting in four folds). That is, we held out one story and trained on the remaining three stories (illustrated in Table 2). Such overfitting is not an issue for simple linear models, but may be an issue for the CNN we propose here. Indeed, even showing only the EEG responses to a part of a story could result in the model learning certain story-specific characteristics. That could then lead to overly optimistic results when the model is presented with the EEG responses to another (albeit different) part of the same story. Similarly, since each speaker has their own 'story-telling' characteristics (e.g., speaking rate or intonation), and a different voice timbre, EEG responses to different speakers may differ. Therefore, it is possible that the model gains an advantage by having 'seen' the EEG response to a specific speaker, so we retained only the folds wherein the same speaker was never simultaneously part of both the training and the test set. In the end, only two folds remained (see Table 2). We refer to the combined cross-validation approach as leave-one-story+speaker-out.
 
-In an additional experiment, we investigated the subject dependency of the model, where, in addition to cross-validating over story and speaker, we also cross-validated over subjects. That is, we no longer trained and tested on N subjects, but instead trained on N-1 subjects and tested on the held-out subject. Such a paradigm has the advantage that new subjects do not have to undergo potentially expensive and time-consuming retraining, making it more suitable for real-life applications. Whether it is actually a better choice than subject-specific retraining depends on the difference in performance between the two paradigms. If the difference is sufficiently large, subject-dependent retraining might be a price one is willing to pay.
+**Table 2.**
+ Cross-validating over stories and speakers.With the current dataset, there are only two folds that do not mix stories and speakers across training and test sets. Top: Story 1 as test data; story 2, 3, and 4 as training data and validation data (85/15% division, per story). Bottom: similarly, but now with a different story and speaker as test data. In both cases, the story and speaker are completely unseen by the model. The model is trained on the same training set for all subjects and tested on a unique, subject-specific, test set.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Story</th>
+      <th>Speaker</th>
+      <th>Subject 1</th>
+      <th>Subject 2</th>
+      <th>…</th>
+      <th>Subject 16</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>test</td>
+      <td>test</td>
+      <td>…</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td colspan="4">train/val</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3</td>
+      <td colspan="4">train/val</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td colspan="4">train/val</td>
+    </tr>
+    <tr>
+      <td>Story</td>
+      <td>Speaker</td>
+      <td>Subject 1</td>
+      <td>Subject 2</td>
+      <td>…</td>
+      <td>Subject 16</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td colspan="4">train/val</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>test</td>
+      <td>test</td>
+      <td>…</td>
+      <td>test</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3</td>
+      <td colspan="4">train/val</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td colspan="4">train/val</td>
+    </tr>
+  </tbody>
+</table>
+
+In an additional experiment, we investigated the subject dependency of the model, where, in addition to cross-validating over story and speaker, we also cross-validated over subjects. That is, we no longer trained and tested on $N$ subjects, but instead trained on $N-1$ subjects and tested on the held-out subject. Such a paradigm has the advantage that new subjects do not have to undergo potentially expensive and time-consuming retraining, making it more suitable for real-life applications. Whether it is actually a better choice than subject-specific retraining depends on the difference in performance between the two paradigms. If the difference is sufficiently large, subject-dependent retraining might be a price one is willing to pay.
 
 We trained the network by minimizing the cross-entropy between the network outputs and the corresponding labels (the attended ear). We used mini-batch stochastic gradient descent with an initial learning rate of 0.09 and a momentum of 0.9. We applied a step decay learning schedule that decreased the learning rate after epoch 10 and 35 to 0.045 and 0.0225, respectively, to assure convergence. The batch size was set to 20, partly because of memory constraints, and partly because we did not see much improvement with larger batch sizes. Weights and biases were initialized by drawing randomly from a normal distribution with a mean of 0 and a standard deviation of 0.5. Training ran for 100 epochs, as early experiments showed that the optimal decoder was usually found between epoch 70 and 95. Regularization consisted of weight decay with a value of 5 × 10–4, and, after training, of selecting the decoder in the iteration where the validation loss was minimal. Note that the addition of data of the other subjects can also be viewed as a regularization technique that further reduces the risk of overfitting.
 
@@ -88,7 +235,7 @@ All hyperparameters given above were determined by running a grid search over a 
 
 Note that in this work the decoding accuracy is defined as the percentage of correctly classified decision windows on the test set, averaged over the two folds mentioned earlier (one for each story narrated by a different speaker).
 
-## Linear baseline model (stimulus reconstruction)
+### Linear baseline model (stimulus reconstruction)
 
 A linear stimulus reconstruction model (Biesmans et al., 2017) was used as baseline. In this model, a spatio-temporal filter was trained and applied on the EEG data and its time-shifted versions up to 250 ms delay, based on least-squares regression, in order to reconstruct the envelope of the attended stimulus. The reconstructed envelope was then correlated (Pearson correlation coefficient) with each of the two speaker envelopes over a data window with a predefined length, denoted as the decision window (different lengths were tested). The classification was made by selecting the position corresponding to the speaker that yielded the highest correlation in this decision window. The envelopes were calculated with the 'powerlaw subbands' method proposed by Biesmans et al., 2017; that is, a gammatone filter bank was used to split the speech into subbands, and per subband the envelope was calculated with a power law compression with exponent 0.6. The different subbands were then added again (each with a coefficient of 1) to form the broadband envelope. Envelopes were filtered and downsampled in the same vein as the EEG recordings.
 
@@ -96,7 +243,7 @@ For a fairer comparison with the CNN, the linear model was also trained in a lea
 
 Note that the results of the linear model here merely serve as a representative baseline, and that a comparison between the two models should be treated with care – in part because the CNN is nonlinear, but also because the linear model is only able to relate the EEG to the envelopes of the recorded audio, while the CNN is free to extract any feature it finds optimal (though only from the EEG, as no audio is given to the CNN). Additionally, the preprossessing is slightly different for both models. However, that preprocessing was chosen such that each model would perform optimally – using the same preprocessing would, in fact, negatively impact one of the two models.
 
-## Minimal expected switch duration
+### Minimal expected switch duration
 
 For some of the statistical tests below, we use the minimal expected switch duration (MESD) proposed by Geirnaert et al., 2020 as a relevant metric to assess AAD performance. The goal of the MESD metric is to have a single value as measure of performance, resolving the trade-off between accuracy and the decision window length. The MESD was defined as the expected time required for an AAD-based gain control system to reach a stable volume switch between both speakers, following an attention switch of the user. The MESD is calculated by optimizing a Markov chain as a model for the volume control system, which uses the AAD decision time and decoding accuracy as parameters. As a by-product, it provides the optimal volume increment per AAD decision.
 
@@ -104,7 +251,7 @@ One caveat is that the MESD metric assumes that all decisions are taken independ
 
 ## Results
 
-## Decoding performance
+### Decoding performance
 
 Seven different decision window lengths were tested: 10, 5, 2, 1, 0.5, 0.25, and 0.13 s. This defines the amount of data that is used to make a single left/right decision. In the AAD literature, decision windows range from approximately 60 to 5 s. In this work, the focus lies on shorter decision windows. This is done for practical reasons: in neuro-steered hearing aid applications, the detection time should ideally be short enough to quickly detect attention switches of the user.
 
@@ -128,7 +275,7 @@ The minimal expected switch duration (MESD) (Geirnaert et al., 2020) outputs a s
 
 It is not entirely clear why the CNN fails for 2 of the 16 subjects. Our analysis shows that the results depend heavily on the story that is being tested on: for the two subjects with below 50% accuracy, the CNN performed poorly on story 1 and 2, but performed well on stories 3 and 4 (80% and higher). Our results are based on stories 1 and 2, however, since stories 3 and 4 are narrated by the same speaker and we wanted to avoid having the same speaker in both the training and test set. It is possible that the subjects did not comply with the task in these conditions.
 
-## Effect of decision window length
+### Effect of decision window length
 
 Shorter decision windows contain less information and should therefore result in poorer performance compared to longer decision windows. Figure 4 visualizes the relation between window length and detection accuracy.
 
@@ -138,7 +285,7 @@ Shorter decision windows contain less information and should therefore result in
 
 A linear mixed-effects model fit for decoding accuracy, with decision window length as fixed effect and subject as random effect, shows a significant effect of window length for both the CNN model (df = 96, p < 0.001) and the linear model (df = 94, p < 0.001). The analysis was based on the decision window lengths shown in Figure 4; that is, seven window lengths for the CNN and six for the linear model.
 
-## Interpretation of results
+### Interpretation of results
 
 Interpreting the mechanisms behind a neural network remains a challenge. In an attempt to understand which frequency bands of the EEG the network uses, we retested (without retraining) the model in two ways: (1) by filtering out a certain frequency range (Figure 5, left); (2) by filtering out everything except a particular frequency range (Figure 5, right). The frequency ranges are defined as follows: δ = 1–4 Hz; θ = 4–8 Hz; α = 8–14 Hz; β = 14–32 Hz.
 
@@ -154,7 +301,7 @@ The results are shown in Figure 6. We see primarily activations in the frontal a
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56481/elife-56481-fig6-v2.jpg)
 
-## Effect of validation procedure
+### Effect of validation procedure
 
 In all previous results, we used a leave-one-story+speaker-out scheme to prevent the CNN from gaining an advantage by already having seen EEG responses elicited by the same speaker or different parts of the same story. However, it is noted that in the majority of the AAD literature, training and test sets often do contain samples from the same speaker or story (albeit from different parts of the story).
 
@@ -170,7 +317,7 @@ For decision windows of 1 s, using data from all trials, in addition to applying
 
 It appears that having the same speaker and story in both the training and test set is less problematic than we had anticipated, and employing a classical scheme wherein both sets draw from the same trials (though use different parts) is fine, but only on the condition that they are preprocessed in a trial-independent way.
 
-## Subject-independent decoding
+### Subject-independent decoding
 
 In a final experiment, we investigated how well the CNN performs on subjects that were not part of the training set. Here, the CNN is trained on N – 1 subjects and tested on the held-out subject – but still in a leave-one-story+speaker out manner, as before. The results are shown in Figure 8. For windows of 1 s, a Wilcoxon signed-rank test shows that leaving out the test subject results in a significant decrease in decoding accuracy from 80.8% to 69.3% (W = 14, p = 0.0134). Surprisingly, for one subject the network performs better when its data was not included during training. Other window lengths show similar results.
 
@@ -182,7 +329,7 @@ In a final experiment, we investigated how well the CNN performs on subjects tha
 
 We proposed a novel CNN-based model for decoding the direction of attention (left/right) without access to the stimulus envelopes, and found it to significantly outperform a linear decoder that was trained to reconstruct the envelope of the attended speaker.
 
-## Decoding accuracy
+### Decoding accuracy
 
 The CNN model resulted in a significant increase in decoding accuracy compared to the linear model: for decision windows as low as 1 s, the CNN’s median performance is around 81%. This is also better than entropy-based direction classification presented in literature (Lu et al., 2018), in which the average decoding performance proved to be insufficient for real-life use (less than 80% for decision windows of 60 s). Moreover, our network achieves an unprecedented median MESD of only 0.819 s, compared to 22.6 s for the linear method, allowing for robust neuro-steered volume control with a practically acceptable latency.
 
@@ -194,7 +341,7 @@ As usual with deep neural networks, it is hard to pinpoint exactly which informa
 
 Lastly, we evaluated our system using a leave-one-story+speaker-out approach, which is not commonly done in the literature. The usual approach is to leave out a single trial without consideration for speaker and/or story. This is probably fine for linear models, but we wanted to see whether the same would hold for a more complex model such as a CNN. Our results demonstrate that, when properly preprocessing the data, there is no significant difference in decoding accuracy between the leave-one-story+speaker-out approach and the classical approach. However, strong overfitting effects were observed when a per-trial (data-driven) preprocessing is performed, for example, for artifact removal. This implies that the data-driven procedure generates intertrial differences in the spatio-temporal data structure that can be exploited by the network. We conclude that one should be careful when applying data-driven preprocessing methods such as independent component analysis, principal component analysis, or MWF in combination with spatio-temporal decoders. In such cases, it is important not to run the preprocessing on a per-trial basis, but run it only once on the entire recording to avoid adding per-trial fingerprints that can be discovered by the network.
 
-## Future improvements
+### Future improvements
 
 We hypothesize that much of the variation within and across subjects and stories currently observed is due to the small size of the dataset. The network probably needs more examples to learn to generalize better. However, a sufficiently large dataset, one which also allows for the strict cross-validation used in this work, is currently not available.
 
@@ -202,7 +349,7 @@ Partly as a result of the limited amount of data available, the CNN proposed in 
 
 Also, for a practical neuro-steered hearing aid, it may be beneficial to make soft decisions. Instead of the translation of the continuous softmax outputs into binary decisions, the system could output a probability of left or right being attended, and the corresponding noise suppression system could adapt accordingly. In this way the integrated system could benefit from temporal relations or the knowledge of the current state to predict future states. The CNN could for example be extended by a long short term memory (LSTM) network.
 
-## Applications
+### Applications
 
 The main bottleneck in the implementation of neuro-steered noise suppression in hearing aids thus far has been the detection speed (state-of-the-art algorithms only achieve reasonable accuracies when using long decision windows). This can be quantified through the MESD metric, which captures both the effect of detection speed and decoding accuracy. While our linear baseline model achieves a median MESD of 22.6 s, our CNN achieves a median MESD of only 0.819 s, which is a major step forward.
 

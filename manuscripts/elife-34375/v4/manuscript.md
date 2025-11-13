@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.34375.001 In amyotrophic lateral sclerosis (ALS) and animal models of ALS, including SOD1-G93A mice, disassembly of the neuromuscular synapse precedes motor neuron loss and is sufficient to cause a decline in motor function that culminates in lethal respiratory paralysis. We treated SOD1-G93A mice with an agonist antibody to MuSK, a receptor tyrosine kinase essential for maintaining neuromuscular synapses, to determine whether increasing muscle retrograde signaling would slow nerve terminal detachment from muscle. The agonist antibody, delivered after disease onset, slowed muscle denervation, promoting motor neuron survival, improving motor system output, and extending the lifespan of SOD1-G93A mice. These findings suggest a novel therapeutic strategy for ALS, using an antibody format with clinical precedence, which targets a pathway essential for maintaining attachment of nerve terminals to muscle.
+In amyotrophic lateral sclerosis (ALS) and animal models of ALS, including SOD1-G93A mice, disassembly of the neuromuscular synapse precedes motor neuron loss and is sufficient to cause a decline in motor function that culminates in lethal respiratory paralysis. We treated SOD1-G93A mice with an agonist antibody to MuSK, a receptor tyrosine kinase essential for maintaining neuromuscular synapses, to determine whether increasing muscle retrograde signaling would slow nerve terminal detachment from muscle. The agonist antibody, delivered after disease onset, slowed muscle denervation, promoting motor neuron survival, improving motor system output, and extending the lifespan of SOD1-G93A mice. These findings suggest a novel therapeutic strategy for ALS, using an antibody format with clinical precedence, which targets a pathway essential for maintaining attachment of nerve terminals to muscle.
 
 ## Introduction
 
@@ -36,13 +36,21 @@ Although defects in the MuSK signaling pathway are not associated with ALS, incr
 
 ## Results
 
-## Agonist antibodies to MuSK
+### Agonist antibodies to MuSK
 
 A previous study identified twenty-one single chain antibodies (scFvs) that recognize mouse MuSK and raised the idea that a subset of these antibodies may function as MuSK agonists in vivo (Xie et al., 1997). We studied the activity of two antibodies, #13 and #22, reported to stimulate MuSK in cultured myotubes, as well as antibody #21, reported to bind but not stimulate MuSK. We confirmed that antibodies #13 and #22, re-engineered as human IgG1 molecules, stimulated MuSK tyrosine phosphorylation in the C2 mouse muscle cell line (Figure 1A), whereas antibody #21, as well as a control IgG1 antibody to ragweed pollen, failed to stimulate MuSK phosphorylation (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig1-v4.jpg)
+
+**Figure 1.:** (A) C2 myotubes were treated with neural Agrin or antibodies for the indicated times. MuSK was immunoprecipitated, and Western blots were probed for MuSK or phosphotyrosine. Neural Agrin and MuSK antibodies #13 and #22 stimulate MuSK tyrosine phosphorylation in C2 myotubes, whereas MuSK antibody #21 and a control antibody to Ragweed pollen (Rw) failed to stimulate MuSK phosphorylation. (B) We used a solid-phase binding assay to measure binding of His-tagged MuSK proteins to microtiter wells coated with MuSK agonist antibody #13. The scatter plot shows that full-length ecto-MuSK (), as well as the MuSK Fz-like domain alone () bind MuSK antibody #13 in a dose-dependent and saturable manner; in contrast, the first three Ig-like domains in MuSK () fail to bind the MuSK agonist antibody (n = 3). (C) Wild type and Lrp4 mutant myotubes were treated with neural Agrin or MuSK agonist antibody #13. Agrin stimulates MuSK phosphorylation in wild type but not Lrp4 mutant myotubes, whereas MuSK agonist antibody #13 stimulates MuSK phosphorylation in both wild type and Lrp4 mutant myotubes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The MuSK agonist antibody (Ab #13) failed to stimulate MuSK phosphorylation in innervated (Inn) muscle, suggesting that MuSK may be maximally phosphorylated at synapses by Agrin and Lrp4. (B) Following denervation (Den), non-synaptic regions of muscle express MuSK, but not neural Agrin. Ab #13 stimulated MuSK phosphorylation in denervated muscle by 2.2-fold, demonstrating that Ab #13 activates MuSK in vivo. (C) Following denervation, MuSK expression increases 7.5-fold, but expression of Dok-7, an essential, inside-out activator of MuSK, increases only 2.0-fold. Thus, the activity of Ab #13 in denervated muscle may be limited by low non-synaptic Dok-7 expression. (A, B) The ratio of MuSK-P/MuSK in the absence of Ab #13 was assigned a value of 1.0. (C) The level of MuSK and Dok-7 expression in innervated muscle was assigned a value of 1.0. The SEMs (n = 3) are shown in (A, C); values and averages from two experiments are shown in (B).
+
 Agrin stimulates MuSK phosphorylation by binding Lrp4, which promotes association between Lrp4 and MuSK, requiring the first of three Ig-like domains in MuSK (Zhang et al., 2011). In contrast to the Agrin-dependent mechanism for activating MuSK, the agonist antibody binds the Fz-like domain in MuSK, force-dimerizing and stimulating MuSK phosphorylation, independent of Lrp4 (Figure 1B,C and Figure 1—figure supplement 1). Importantly, the Fz-like domain is dispensable for synapse formation in mice (Remédio et al., 2016).
 
-## MuSK agonist antibodies engage MuSK in vivo
+### MuSK agonist antibodies engage MuSK in vivo
 
 To determine whether agonist antibody #13 could engage MuSK in vivo, we intraperitoneally (IP) injected varying amounts of the MuSK agonist antibody on a human IgG1 backbone, or a control human IgG1 antibody to ragweed pollen, into wild type mice. Several days later, we stained whole mounts of the diaphragm muscle to determine whether the agonist antibody engaged MuSK at the synapse. Figure 2A shows that neuromuscular synapses were labeled specifically by the MuSK agonist antibody. MuSK staining was evident as early as 3 days (Figure 2Aiv-vi), and staining persisted for at least 7 days after the single injection (Figure 2A,vii-ix). The organization of AChRs and nerve terminals appeared normal (Figure 2A,ii,v,viii), indicating that the MuSK agonist antibody did not disturb major features of synaptic differentiation. Moreover, visual observation of the antibody-injected mice did not reveal overt behavioral abnormalities, indicating that the MuSK agonist antibody was well tolerated by the mice. Two mg/kg of the agonist antibody was sufficient to saturate MuSK labeling at the synapse (Figure 2B) and increase MuSK tyrosine phosphorylation in vivo (Figure 1—figure supplement 1).
 
@@ -52,35 +60,67 @@ To determine whether agonist antibody #13 could engage MuSK in vivo, we intraper
 
 We measured the pharmacokinetic properties of the injected antibody and found that the half-life of the injected antibody in blood was ~12 days (Figure 2C). The antibody exhibited linear clearance for 21 days after antibody injection, indicating that exposure could be maintained over several weeks. In addition, these results demonstrated that the mouse immune system did not recognize and clear the antibody, which contained a human Fc region, from the circulation over this three-week time period (Figure 2C).
 
-## Single dose of MuSK agonist antibody decreases denervation in SOD1-G93A mice
+### Single dose of MuSK agonist antibody decreases denervation in SOD1-G93A mice
 
 We studied female and male SOD1-G93A mice, on a C57BL/6 background, with 21–26 copies of the human SOD1-G93A gene (Figure 3—figure supplement 1). In SOD1-G93A mice, denervation of limb muscles begins at P50, whereas denervation of the diaphragm muscle begins a month later (Pun et al., 2006; Rocha et al., 2013). Because denervation of the diaphragm muscle is responsible for lethal respiratory paralysis, we focused our analysis on innervation of this muscle. We first quantified the extent of innervation in the diaphragm muscle at P90 by staining for nerve terminals and postsynaptic AChRs, which remain even at denervated synaptic sites (Figure 3A). Denervation was evident in SOD1-G93A mice as early as P90 (Figure 3B,C). From P90 to P110, the extent of full innervation, defined as perfect apposition of nerve terminals and the AChR-rich postsynaptic membrane, decreased from 77.3% to 18.1% in female and from 53.1% to 16.1% in male SOD1-G93A mice (Figure 3B). Likewise, the extent of complete denervation increased from 2.3% to 41% in female and from 16.7% to 24.4% in male SOD1-G93A mice over this twenty-day period (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig3-v4.jpg)
+
+**Figure 3.:** (A) AChRs are concentrated in the postsynaptic membrane at innervated and fully denervated synapses (scale bar = 20 μm). (B, C) Denervation is evident in female and extensive in male SOD1-G93A mice at P90 (). Over the next twenty days, the extent of full denervation increases and the number of fully innervated synapses decreases (). A single injection of agonist antibody #13 () reduces the extent of denervation and the loss of innervation. The scatter plot shows the values for individual mice (n = 4 or 5), as well as the mean values and SEM; **p<0.01, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig3-figsupp1-v4.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The copy number of the human SOD1-G93A gene was quantified by real-time PCR and normalized to GAPDH. All mice included in this study had 21–26 copies of hSOD1-G93A. The normalized hSOD1-G93A Ct values are shown for 25 samples (filled circles).
+
 SOD1-G93A mice were injected with the MuSK agonist antibody at P90. Because the antibody had a half-life of 12 days and 2 mg/kg of antibody saturated MuSK at the synapse (Figure 2B,C), we injected SOD1-G93A mice with 10 mg/kg of agonist antibody, ensuring that the antibody concentration in blood would remain at saturating levels for MuSK-binding over the 20 day period. We found that a single dose of the MuSK agonist antibody increased the number of fully innervated synapses by 2.7- and 2.5-fold in female and male SOD1-G93A mice, respectively, and decreased the number of fully denervated synapses by 3.7- and 2.3-fold in female and male SOD1-G93A mice, respectively (Figure 3B,C). These findings demonstrated that the MuSK agonist antibody, introduced after disease onset, decreased motor axon withdrawal from the diaphragm muscle.
 
-## Chronic dosing with the MuSK agonist antibody halts further denervation in SOD1-G93A mice for over two months
+### Chronic dosing with the MuSK agonist antibody halts further denervation in SOD1-G93A mice for over two months
 
 To determine whether the MuSK agonist antibody could preserve neuromuscular synapses over a longer time period, we chronically dosed SOD1-G93A mice. To avoid host recognition and clearance of the antibody during chronic exposure, we used a MuSK #13 antibody on a murine IgG2a backbone that also lacked effector functions (Lo et al., 2017). The ability of this ‘reverse chimera’ to bind and stimulate MuSK was similar to the antibody with a human IgG backbone (Figure 4—figure supplement 1). Moreover, the ‘reverse chimera’ had a half-life similar to the human agonist antibody in vivo (Figure 4—figure supplement 2).
 
 SOD1-G93A mice were injected with 10 mg/kg of the reverse chimera agonist antibody at P90 and every 24 days thereafter, and we sacrificed chronically injected mice every 24 days to quantify innervation of the diaphragm muscle (Figure 4A). Because 2 mg/kg of antibody saturated MuSK at the synapse and because the antibody had a 11 day half-life in blood, this dosing schedule ensured that saturating levels of the MuSK agonist antibody were maintained at all times (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig4-v4.jpg)
+
+**Figure 4.:** (A) The reverse chimera MuSK agonist antibody #13 was injected at P90 () (B) The extent of full innervation decreases progressively from P90 to P162 in female and male SOD1-G93A injected with a control antibody to GP120 (). The reverse chimera MuSK agonist antibody #13 () halts this progressive loss, as the number of fully innervated synapses is unchanged between P114 and P162. (C) Full denervation increases progressively from P90 to P162 in female and male SOD1-G93A injected with a control antibody to GP120 (). The reverse chimera MuSK agonist antibody #13 prevents this progressive increase in denervation, as the number of fully denervated synapses is unchanged between P114 and P162 (). At disease end-stage, the number of fully innervated and denervated synapses was identical in SOD1-G93A mice injected with the MuSK agonist or control antibody. The scatter plot shows the values for individual mice (n = 3 to 8), as well as the mean values and SEM; *p<0.05, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Human (h) and reverse chimera (rc) MuSK #13 antibodies are similarly effective in stimulating AChR clustering in C2C12 myotubes (n = 3). (B,C) C2C12 myotubes were treated with rc MuSK #13 or a Fab from MuSK #13 for 16 hr at the indicated concentrations and stained with α-BGT. We found that the Fab fragment from antibody #13, unlike the intact IgG or the scFv, was unable to stimulate clustering of AChRs, indicating that antibodies must be dimeric and force-dimerize MuSK and promote an orientation that is favorable for trans-phosphorylation. (C) The rc antibody #13 stimulates AChR clustering in a dose-dependent and saturable manner, whereas Fab #13 fails to stimulate AChR clustering (n = 3).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig4-figsupp2-v4.jpg)
+
+**Figure 4—figure supplement 2.:** Rc MuSK antibody #13 was produced to minimize the occurrence of an immune response to a human antibody, as well as to eliminate the danger of eliciting an immune response at the neuromuscular synapse. (A) Following a single 10 mg/kg injection of reverse chimera MuSK agonist antibody #13 in wild type mice, the amount of antibody in the blood decreased over time as a single exponential with a half-life of 11 days. (B) Repeated 10 mg/kg injections of reverse chimera MuSK agonist antibody #13, every 24 days, in SOD1-G93A mice restored antibody levels and maintained the antibody at levels that were sufficient to saturate MuSK at the synapse. The mean values for individual mice (n = 5) and the SEM are shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig4-figsupp3-v4.jpg)
+
+**Figure 4—figure supplement 3.:** (A) The number (~50%) of partially innervated synapses in SOD1-G93A mice is not altered by chronic injection of reverse chimera MuSK agonist antibody #13 (). The inset shows a representative partially innervated synapse (scale bar = 20 μm). (B) The extent of the AChR-rich postsynaptic membrane that is apposed by nerve terminals (NT) is greater in SOD1-G93A mice injected with the MuSK agonist antibody () than with a control antibody to GP120 (). The scatter plot shows the values for individual mice, as well as the mean values and SEM; *p<0.05, **p<0.01, ****p<0.0001.
+
 In SOD1-G93A mice injected with a control antibody to GP120, synaptic loss continued to decline from P114 through P162, so that only 11% of the synapses were fully innervated at P162 (Figure 4B). This progressive loss was halted by injection of the MuSK agonist antibody, as the number of fully innervated synapses was largely unchanged (40–50%) from P114 to P162 in SOD1-G93A mice injected with the MuSK agonist antibody (Figure 4B). Similarly, the number of fully denervated synapses continued to increase from P114 through P162 in SOD1-G93A mice injected with the control antibody, whereas this progressive increase was prevented by the MuSK agonist antibody (Figure 4C). These findings indicate that the MuSK agonist antibody prevented further synaptic loss and preserved synapses for at least 50 days after signs of denervation and disease were evident in SOD1-G93A mice.
 
 During disease progression, synapses transition through a partially innervated phase, when only a portion of the AChR-rich postsynaptic membrane is apposed by motor nerve terminals (Figure 4—figure supplement 3). Although the number of partially innervated synapses was similar in SOD1-G93A mice injected with the control or MuSK agonist antibody (Figure 4—figure supplement 3), the extent of nerve terminal coverage was 34% greater at partially innervated synapses in mice injected with the MuSK agonist antibody (Figure 4—figure supplement 3). Thus, the MuSK agonist antibody increased both full innervation as well as nerve terminal coverage at partially innervated synapses in SOD1-G93A mice.
 
-## Improved motor system output of the diaphragm muscle
+### Improved motor system output of the diaphragm muscle
 
 To determine whether maintaining neuromuscular synapses led to improved motor system output, we used an ex-vivo phrenic nerve/diaphragm muscle preparation to measure the compound muscle action potentials (CMAPs), following phrenic nerve stimulation. We studied SOD1-G93A mice three to four weeks prior to end-stage (Figure 5). We stimulated the phrenic nerve to the diaphragm muscle and recorded CMAPs, which elicit muscle contraction (Figure 5—figure supplement 1). We found no significant difference in the amplitude of the first CMAP between SOD1-G93A mice injected with the MuSK agonist antibody or the control antibody to GP120 (anti-GP120-treated males: 5.95 ± 1.14 mV; anti-MuSK-treated males: 5.93 ± 0.52 mV; anti-GP120-treated females: 4.95 ± 0.54 mV; anti-MuSK-treated females: 5.81 ± 0.63 mV). We next measured the reliability of synaptic transmission at the neuromuscular junction by repetitively stimulating the phrenic nerve at a physiological frequency (20 Hz). We found a rapid and severe decline in the amplitude of the CMAP, indicative of synaptic dysfunction and denervation, in SOD1-G93A mice chronically injected with the control antibody to GP120. In contrast, the decline in CMAP amplitude was far less severe in SOD1-G93A mice treated with the MuSK agonist antibody, demonstrating that the MuSK agonist antibody improved neuromuscular function (Figure 5). Moreover, repetitive stimulation of the phrenic nerve at a more challenging frequency (50 Hz) led to frequent failures to elicit a CMAP in SOD1-G93A mice injected with the control antibody to GP120. Such failures were less frequent in SOD1-G93A mice injected with the MuSK agonist antibody, similar to wild type mice (Figure 5). These CMAP failures are likely due to presynaptic mechanisms, such as conduction block or impaired neurotransmitter release, rather than the inability of motor end plates to generate an action potential. In either case, the maintenance of neuromuscular synapses, stimulated by the MuSK agonist antibody, led to improved reliability of synaptic transmission and output of the critically important diaphragm muscle in SOD1-G93A mice.
 
-## MuSK agonist antibody decreases motor neuron loss in SOD1-G93A mice
+![Figure 5.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig5-v4.jpg)
+
+**Figure 5.:** (A,B) 20 Hz stimulation (arrow) of the phrenic nerve from SOD1-G93A mice injected with the control antibody to GP120 led to a rapid and severe decline in the CMAP amplitude. In contrast, the CMAP amplitude decreased gradually and modestly in SOD1-G93A mice injected with the MuSK agonist antibody. After 5 s, the MuSK agonist improved CMAP amplitude by 13.6% in females and by 31.7% in males (n = 6–7; p<0.0001). The faint grey and blue lines indicate the SEMs. (C,D) 50 Hz stimulation (S, arrow) of the phrenic nerve in SOD1-G93A mice injected with the control antibody to GP120 led to frequent failures (F, arrow) to elicit a CMAP, whereas CMAPs were reliably elicited in SOD1-G93A mice injected with the MuSK agonist antibody, similar to the number of failures seen in wild type mice. The MuSK agonist antibody reduced the number of failures by 88% in females and 70% in males during 1 min of stimulation. The scatter plot shows the values for individual mice, as well as the mean values and SEM; *p<0.05, **p<0.01, ***p<0.001. The baseline CMAP amplitude data are as follows: anti-GP120-treated males, 5.95 ± 1.14 mV; MuSK agonist antibody-treated males, 5.93 ± 0.52 mV; anti-GP120-treated females, 4.95 ± 0.54 mV; MuSK agonist antibody-treated females, 5.81 ± 0.63 mV.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig5-figsupp1-v4.jpg)
+
+**Figure 5—figure supplement 1.:** The phrenic nerve was placed in a bipolar suction electrode for stimulation. CMAPs were recorded from a suction recording electrode placed in the same place (dotted circle) across the different animals used in this study. The phrenic nerve is shown in blue, the blood vessels in red and the area with acetylcholine receptors in grey.
+
+### MuSK agonist antibody decreases motor neuron loss in SOD1-G93A mice
 
 We next assessed whether preserving neuromuscular synapses in SOD1-G93A mice reduced motor neuron death. During embryonic development motor neuron death is regulated by innervation and reduced when motor neurons make additional synapses with muscle (Hollyday and Hamburger, 1976; Tanaka and Landmesser, 1986; Landmesser, 1992), whereas survival of adult motor neurons is less dependent upon muscle innervation (Lowrie and Vrbová, 1992). We quantified the number of motor neurons, stained for choline acetyltransferase (ChAT), in the lumbar spinal cord of SOD1-G93A mice injected chronically either with the control antibody to GP120 or the MuSK agonist antibody (Figure 6A). The MuSK agonist antibody increased the number of motor neurons by 31% to 57% at P138 (Figure 6B), during the peak period of motor neuron cell death in SOD1-G93A mice when approximately half of spinal motor neurons have been lost (Vinsant et al., 2013a). These findings demonstrate that increasing retrograde signaling after disease onset not only preserves neuromuscular synapses but also promotes survival of spinal motor neurons in SOD1-G93A mice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34375/elife-34375-fig6-v4.jpg)
 
-**Figure 6.:** SOD1-G93A mice.(A) Representative images of lumbar spinal cords stained with antibodies to ChAT (scale bar = 100 μm). (B) At P138, during the peak period of motor neuron cell death, the number of spinal motor neurons in the lumbar enlargement is greater in SOD1-G93A mice treated with the agonist antibody to MuSK () than in mice treated with the control antibody to GP120 (). The scatter plot shows the values for individual mice (n = 3 to 5), as well as the mean values and SEM; *p<0.05, **p<0.01, ***p<0.001. (C, D) Female and male SOD1-G93A mice chronically injected with the control antibody to GP120 have a life span of 169 and 157.5 days, respectively (dotted line). Chronic injection of the reverse chimera MuSK agonist antibody prolongs longevity by 7 and 10 days in female and male SOD1-G93A mice, respectively (solid line). n ≥ 13; *p<0.05, **p<0.01, ***p<0.001.
+**Figure 6.:** (A) Representative images of lumbar spinal cords stained with antibodies to ChAT (scale bar = 100 μm). (B) At P138, during the peak period of motor neuron cell death, the number of spinal motor neurons in the lumbar enlargement is greater in SOD1-G93A mice treated with the agonist antibody to MuSK () than in mice treated with the control antibody to GP120 (). The scatter plot shows the values for individual mice (n = 3 to 5), as well as the mean values and SEM; *p<0.05, **p<0.01, ***p<0.001. (C, D) Female and male SOD1-G93A mice chronically injected with the control antibody to GP120 have a life span of 169 and 157.5 days, respectively (dotted line). Chronic injection of the reverse chimera MuSK agonist antibody prolongs longevity by 7 and 10 days in female and male SOD1-G93A mice, respectively (solid line). n ≥ 13; *p<0.05, **p<0.01, ***p<0.001.
 
-## MuSK agonist antibody extends lifespan of SOD1-G93A mice
+### MuSK agonist antibody extends lifespan of SOD1-G93A mice
 
 Denervation of the diaphragm muscle is responsible for lethal respiratory paralysis in SOD1-G93A mice and ALS. We therefore asked whether maintaining neuromuscular synapses and improving output of the diaphragm muscle extended the lifespan of SOD1-G93A mice. Female SOD1-G93A mice injected with the control antibody to GP120 had an average lifespan of 169 days (see Materials and methods), whereas male SOD1-G93A mice injected with the control antibody had an average lifespan of 157.5 days (Figure 6C,D). Chronic injection with the MuSK agonist antibody prolonged survival of female and male SOD1-G93A mice by 7 (p<0.05) and 10 days (p<0.001), respectively (Figure 6C,D). Thus, the MuSK agonist antibody, introduced after disease onset, slowed the disassembly of neuromuscular synapses, improved motor output of the diaphragm muscle and extended the lifespan of SOD1-G93A mice.
 
@@ -102,21 +142,199 @@ Although we used an agonist antibody to MuSK to stimulate retrograde signaling f
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background ()</td>
+      <td>Mouse: B6.Cg-Tg(SOD1*G93A)1Gur/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:004435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background ()</td>
+      <td>Mouse: C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line ()</td>
+      <td>Mouse C2C12 skeletal muscle cells</td>
+      <td>Burden lab</td>
+      <td>ATCC Cat# CRL-1772, RRID:CVCL_0188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line ()</td>
+      <td>Mouse: Immortalized wild type muscle cells</td>
+      <td>Burden lab</td>
+      <td>PMID: 18848351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line ()</td>
+      <td>Mouse: Immortalized Lrp4 mutant muscle cells</td>
+      <td>Burden lab</td>
+      <td>PMID: 18848351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Neurofilament-L</td>
+      <td>SYnaptic SYstems</td>
+      <td>Cat# 171 002, RRID:AB_887743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Synapsin 1/2</td>
+      <td>SYnaptic SYstems</td>
+      <td>Cat# 106 002, RRID:AB_887804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa 647-anti-human IgG</td>
+      <td>Life Technologies</td>
+      <td>Cat# A-21445, RRID: AB_2535862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Choline Acetyltransferase</td>
+      <td>Millipore</td>
+      <td>Cat# AB144P-200UL, RRID:AB_90661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-NeuN</td>
+      <td>Millipore</td>
+      <td>Cat# MAB377, RRID: AB_2298772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-MuSK</td>
+      <td>Burden lab</td>
+      <td>PMID: 10781064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-MuSK</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF3904, RRID:AB_2147242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-Dok-7</td>
+      <td>Burden lab</td>
+      <td>PMID: 18848351</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-phosphotyrosine 4G10</td>
+      <td>Millipore</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Alexa 594-alpha-bungarotoxin</td>
+      <td>Life Technologies</td>
+      <td>Cat#B13423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Alexa 488-alpha-bungarotoxin</td>
+      <td>Life Technologies</td>
+      <td>Cat#B13422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 62249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Recombinant Rat Agrin Protein</td>
+      <td>R and D Systems</td>
+      <td>Cat#550-AG-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>GAPDH TaqMan Assay Mm00186822_cn</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 4400291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism 7.0</td>
+      <td>http://www.graphpad.com/scientific-software/prism/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Volocity 3D Image Analysis Software</td>
+      <td>http://www.perkinelmer.com/pages/020/cellularimaging/products/volocity.xhtml</td>
+      <td>RRID:SCR_002668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>pCLAMP Software Suite</td>
+      <td>https://www.moleculardevices.com/systems/axon-conventional-patch-clamp/pclamp-11-software-suite</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>DietGel 76A</td>
+      <td>ClearH20</td>
+      <td>Cat#72-07-5022</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 The investigators were blinded from knowing whether mice were treated with the MuSK agonist or control antibody while acquiring and initially analyzing data. Data are presented as mean ±SEM. Statistical comparisons between groups were analyzed using an unpaired, two-tailed Student’s t-test, log-rank test (survival), linear regression (CMAPs), or two-way ANOVA (failures). Statistical analyses were conducted using Prism 7.0 software (GraphPad Software). The number (n) of mice used to calculate the mean, SEM values and the confidence limits (p values) are indicated in the figure legends.
 
-## Mice
+### Mice
 
 The copy number of the human SOD1-G93A gene was routinely quantified by TaqMan real-time PCR and normalized to GAPDH (Life Technologies Assay# Mm00186822_cn). All mice included in this study had 21–26 copies of hSOD1-G93A (Figure 3—figure supplement 1). DietGel 76A (ClearH20) was placed on the cage floor so that mice had ready access to nourishment. Others have measured the lifespan SOD1-G93A mice by placing mice on their side and sacrificing mice if they were unable to right themselves in 15 s. Because we were concerned that this assay reported on limb muscle function and may not be temporally aligned with the time of death, we used a variant assay, which provided an accurate measure of longevity. When mice were unable to right themselves to eat or drink over the course of several hours, they invariably succumbed within a day; we defined this time as disease end-point and sacrificed mice at this time. Mice were housed and maintained according to Institutional Animal Use and Care Committee (IACUC) guidelines.
 
-## Histology
+### Histology
 
 Diaphragm muscles were stained with Alexa 594-conjugated α-bungarotoxin (α-BGT) (Life Technologies, Carlsbad, CA) to mark AChRs and rabbit antibodies to Neurofilament-L (SYnaptic Systems, Goettingen, Germany) and Synapsin 1/2 (SYynaptic Systems, Goettingen, Germany) to label axons and nerve terminals, as described previously (Jaworski and Burden, 2006; Friese et al., 2007). At fully innervated synapses, nerve terminal staining completely overlapped with postsynaptic AChRs, whereas nerve terminals were absent from original synaptic sites, marked by AChRs, at fully denervated synapses. At partially innervated synapses, nerve terminals occupied only a portion of the postsynaptic membrane. We examined a minimum of 50 synapses in the diaphragm muscle from each mouse and designated each synapse as fully innervated, partially innervated, or fully denervated. At each partially innervated synapse, the percentage of AChR-stained postsynaptic membrane that was apposed by Synapsin-stained nerve terminals was quantified using Volocity imaging software (PerkinElmer, Waltham, MA). To visualize and quantify staining of the agonist antibody, containing human Fc, at the neuromuscular junction, we used an Alexa 647-conjugated anti-human secondary (Life Technologies, Carlsbad, CA). Whole mounts of muscles were imaged with a Zeiss LSM800 confocal microscope, and the fluorescent signal was quantified as described previously (Jaworski and Burden, 2006; Friese et al., 2007).
 
 Spinal cords were dissected from mice perfused with 4% formaldehyde. Frozen sections (20 μm) of the lumbar region were stained with antibodies to choline acetyltransferase (ChAT) (AB144P-200UL from Millipore, Billerica, MA). We defined motor neurons as cells in the ventral horn of the lumbar spinal cord that were positive for ChAT, excluding ChAT-positive preganglionic and Pitx2-positive neurons. We only counted ChAT-stained cells with a clearly defined nucleus in order to avoid double-counting motor neurons in multiple sections. We analyzed ~10 sections, evenly spaced in the lumbar enlargement, which together contained >50 motor neurons in each mouse.
 
-## Antibody-binding and MuSK phosphorylation
+### Antibody-binding and MuSK phosphorylation
 
 Chimeric antibodies were produced by transferring cDNAs encoding the variable regions of MuSK agonist antibody #13 to expression vectors containing the mouse kappa and IgG2a constant region. MuSK agonist antibodies were produced in CHO cells and purified by Protein A and size exclusion chromatography. The activity of the reverse chimera antibody for stimulating clustering of AChRs in C2 myotubes was similar to that for the human agonist antibody to MuSK (Figure 4—figure supplement 1). Fab fragments were prepared by protease digestion of human IgG1 followed by removal of uncleaved IgG and Fc fragments on a Protein A Sepharose column and size exclusion chromatography.
 
@@ -126,7 +344,7 @@ C2C12 muscle cells were purchased from the ATCC and were not tested for mycoplas
 
 Hind-limb muscles were denervated by cutting the sciatic nerve, as described previously (Simon et al., 1992). Four days after denervation, mice were injected with MuSK agonist antibody #13, and we measured MuSK expression and MuSK tyrosine phosphorylation 3 days later. MuSK and Dok-7 were immunoprecipitated from lysates, and their expression levels were determined by Western blotting (Herbst and Burden, 2000; Hallock et al., 2010). MuSK tyrosine phosphorylation was measured by probing Western blots with antibody 4G10, as described previously (Herbst and Burden, 2000; Hallock et al., 2010).
 
-## Recording and evaluation of compound muscle action potentials (CMAPs) from the diaphragm muscle
+### Recording and evaluation of compound muscle action potentials (CMAPs) from the diaphragm muscle
 
 To assess the function of neuromuscular junction in the mouse diaphragm muscle (Figure 5—figure supplement 1), we developed an ex vivo phrenic nerve-diaphragm preparation. We studied the diaphragm muscle from ~P140 male and ~P150 female mice, which is three to four weeks prior to end-stage, respectively. We did not use the in vivo preparation, described by others (Lepore et al., 2011), because we were concerned that in vivo stimulation of the phrenic nerve, at moderate to high frequencies, would lead to variable and unreliable CMAP recordings, likely due to changes in the electrode position caused by muscle contraction. Moreover, a related method, reported to record from the mouse diaphragm muscle, uses a surface recording electrode, and likely monitors the activity of multiple thoracic muscles (Martin et al., 2015). Thus, following anesthesia with 5% isoflurane, mice were decapitated, and the diaphragm muscle, together with the phrenic nerve, was quickly isolated and transferred to a customized recording chamber. The chamber was perfused continuously with oxygenated (95% O2 and 5% CO2) artificial cerebrospinal fluid solution (128.25 mM NaCl, 4 mM KCl, 0.58 mM NaH2PO4, 21 mM NaHCO3, 30 mM D-glucose, 1.5 mM CaCl2, and 1 mM MgSO4) at a rate of ~10 ml/min at room temperature (~20–24°C). The phrenic nerve that innervates the left hemi-diaphragm muscle was stimulated by drawing the distal part of the left phrenic nerve into a suction electrode (Figure 5—figure supplement 1). We validated proper positioning of the stimulating electrode by visually inspecting muscle contractions following stimulation of the phrenic nerve. EMG activity was recorded using a suction electrode placed in the upper left quadrant of the muscle, 1 mm toward the costal side of the main intramuscular nerve and endplate zone in the middle of the muscle. A light suction was applied to the recording electrode to secure a tight seal between the tip of the electrode and the muscle fibers. In this manner, damage to the diaphragm muscle was avoided, which was confirmed by observing muscle contractions during stimulation. The phrenic nerve was stimulated with square pulses (0.2 ms in duration) at several frequencies (1 Hz to 50 Hz) for 60 s. The intensity of stimulation was progressively increased from the threshold, defined as the minimum response in three out of five trials, until the CMAP reached a maximal response.
 

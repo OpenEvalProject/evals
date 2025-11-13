@@ -71,6 +71,45 @@ The control of human birth timing remains enigmatic, largely because of our limi
 
 **Figure 3.:** The steroids estrogen and progesterone are conserved components, but the tissues involved and superimposed innovations, such as CRH in humans, likely result in divergence of final pathways for birth.
 
+**Table 1.**
+ Comparative analysis of P4 source, maintenance, and role in parturition initiation for rodent, sheep, and human pregnancy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>P4 Source</th>
+      <th>Pregnancy Maintenance</th>
+      <th>Parturition Initiation</th>
+      <th>Mechanism of Initiation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rodent</td>
+      <td>CL</td>
+      <td>P4</td>
+      <td>Systemic P4 withdrawal</td>
+      <td>Endometrium production of PGF2α. CL regression.</td>
+    </tr>
+    <tr>
+      <td>Sheep</td>
+      <td>CL transition to Placenta</td>
+      <td>P4</td>
+      <td>Systemic P4 withdrawal</td>
+      <td>Increased activity of the fetal HPA axis. Increase of cortisol. Decrease P4 production.</td>
+    </tr>
+    <tr>
+      <td>Human</td>
+      <td>CL transition to Placenta</td>
+      <td>P4</td>
+      <td>No systemic P4 withdrawal (tissue or target cell resistance)</td>
+      <td>Potential contributors: Change in progesterone receptor isoforms. Change in PR cofactors. PR post translational modifications. Local metabolism of P4.</td>
+    </tr>
+  </tbody>
+</table>
+
 In contrast, glucocorticoids do not induce labor in mice or humans. In mice, parturition is initiated after upregulation of endometrial cyclooxygenase (COX)–one encoded by PTGS1, which subsequently generates prostaglandin F2α (Gross et al., 2000; Gross et al., 1998; Sugimoto et al., 1997). PGF2α from the endometrium then acts on the corpus luteum of the murine ovary to induce luteolysis, a fall in serum progesterone and the induction of contractile proteins in the uterine myometrium (Figure 3 and Table 1).
 
 Cortisol plays a key role in promoting fetal organ maturation in humans, however, parturition in women is not initiated by fetal HPA activity. Although the work of Liggins and colleagues in sheep was groundbreaking for understanding hormonal pathways that may promote parturition, the specific pathways operating in the sheep do not appear to operate in the same way in women (Liggins et al., 1977). The ancestral initiating signal for determining the time for mammalian birth remains elusive and as a consequence of this knowledge gap, rational effective interventions to prevent preterm labor and preterm birth in humans have been limited. Nonetheless, the work of Liggins and colleagues in sheep led to the widespread clinical use of synthetic glucocorticoid therapy to promote fetal lung maturation in women that are either experiencing preterm labor and that are at risk for preterm birth, which significantly improved survival of preterm neonates.
@@ -95,7 +134,7 @@ The insights derived from recent evolutionary genomic analyses of mammalian preg
 
 It is important to note that the four models aim to explain the maintenance of pregnancy and initiation of parturition, which should be distinguished from the contractile mechanism to expel the fetus. The contractile mechanism is downstream of the initiation signal, is likely to involve redundant uterotonic pathways, and is probably going to be much more challenging to target effectively for preterm birth prevention compared to initiator pathways (Goldenberg et al., 2008). We encourage researchers to test these models or other models with empirical data to determine detailed mechanisms, confirming, refining or refuting their predictions, including how social stress, racism, and health behaviors affect risk for preterm birth.
 
-## Fixed clock model
+### Fixed clock model
 
 The onset of parturition is determined by the mother or the fetus based upon a hard-wired clock. The fixed gestation clock hypothesis posits a time-measuring or counting process that accrues from the point of fertilization. In this model, parturition begins when a certain time or count is achieved (Menon et al., 2016). The timing mechanism may reside in the conceptus (e.g. the number of cell divisions after syngamy) and/or involve an isochronous measure linked to circadian signals or photoperiod. Genetic and epigenetic polymorphisms between individuals or different environmental exposures may modify the clock, leading to variation in gestation length and timing of parturition.
 
@@ -103,7 +142,7 @@ The fixed clock model would be selectively advantageous if birth timing is linke
 
 Is there evidence suggesting that human birth timing is linked to the fetal development program? Support for linkage of the two processes comes from sheep, where parturition is trigged exclusively by a surge of cortisol produced by the fetal hypothalamic-pituitary-adrenal (HPA) axis late in pregnancy. Importantly, the cortisol also stimulates functional maturation of fetal organ systems, especially the lungs, gastrointestinal tract and liver, thus ensuring the newborn lamb is equipped for life outside the uterus. However, studies in multiple species show that although the effect of fetal cortisol to promote organ system maturation appears to be conserved across species (e.g. prepartum glucocorticoid therapy to accelerate fetal lung development in cases of threatened preterm birth has significantly improved outcomes for human preterm infants), its role as a driver of parturition is not conserved (Figure 3 and Table 1).
 
-## Parturition block model
+### Parturition block model
 
 Retention of the conceptus in the uterus is a hallmark trait of eutherian mammals and requires that the uterine tissues accept and accommodate the developing conceptus for the gestation time needed to complete the fetal development program. The parturition block model posits that a blocking agent or system dominates for most of pregnancy to actively prevent parturition, and that labor and delivery ensue when the block is removed. This implies that if not for the block, the uterus would expel its contents. Interestingly, uterine emptying is not limited to parturition. Large uterine fibroids can be spontaneously expelled through a process that includes myometrial contraction and dilation of the cervix (De Cure et al., 2013; Sagoo et al., 2015). In cases of uterine fibroid expulsion, the fibroid mass is necrotic and patients exhibit signs of intrauterine infection and inflammation. It is plausible that the same inflammation-associated mechanism could operate at parturition to overcome the block to labor.
 
@@ -115,17 +154,17 @@ In most eutherian mammals, parturition is associated with a systemic decrease in
 
 The parturition block model reflects the balance between maternal and fetal/paternal genetic interests in the pregnancy condition. Natural selection would favor a conceptus that can maintain pregnancy and extract resources form the mother for the longest amount of time. Studies of imprinted genes suggest that this trait is in part conferred by paternally imprinted genes. In contrast, the interests of the mother include surviving the current pregnancy and maintaining her reproductive competence for future pregnancies and caring for current dependent offspring. In this context, it would be logical that a parturition block signal would be coming from the fetus. However, the block cannot be absolute and would need to be counterbalanced by maternal signal(s) to stimulate parturition when maternal interests and/or fetal viability are compromised. Thus, a fetal-based parturition block would be expected to eventually diminish and/or be overcome by a maternal-based parturition stimulator signal. Indeed, a conserved trait in eutherian mammalian species is that parturition is promoted by withdrawal of the P4-block to labor, suggesting that the stimulatory signal(s) for parturition converge on nullifying the P4 block.
 
-## Parturition stimulation model
+### Parturition stimulation model
 
 This model posits that the labor state is actively induced by acute or gradually accumulating signals. The signals may be linked to the size of the conceptus and the amount of uterine wall and cervical distention (Rosenberg and Trevathan, 2002), stressors of fetal or maternal origin when fetal growth rate exceeds energy availability (Dunsworth et al., 2012), signals derived from the maturation of fetal organ systems (Condon et al., 2004; Mendelson, 2009), or signals derived from the maternal stress load. Parturition is associated with uterine tissue-level inflammation especially at the chorion-decidua interface. Clinical studies show that human parturition can be induced by inflammation/infection and that ~ 50% of preterm births are associated with intrauterine inflammation or infection (Goldenberg et al., 2008; Goldenberg et al., 2000; Romero et al., 2006). Further, animal studies show that pro-labor inflammatory cytokines and bacterial infection induce parturition (Hirsch and Muhle, 2002; Elovitz and Mrinalini, 2004). It is likely, therefore, that one element of the parturition stimulation model is maternal/fetal inflammatory signaling. In this context it is notable that P4/PR action is thought to block parturition by exerting anti-inflammatory effect on the uterine tissues. Recent studies suggest that inflammatory stimuli modulate PR signaling in human myometrial cells to induce functional P4/PR withdrawal (Amini et al., 2016). This suggests that the P4/PR anti-inflammatory activity can be overcome by inflammatory stimuli. Although counterintuitive, such a mechanism could operate if an inflammatory stress threshold exists, above which the P4/PR block is removed. A threshold-limited mechanism that balances pro-gestational actions of the P4/PR block against the magnitude of stress-related parturition signals would provide room for the adaptation of multiple maternal/fetal stress-related pathways to induce parturition.
 
-## Crossover combined model
+### Crossover combined model
 
 This model posits that a combination of restraining and promoting signals leads to parturition when a crossover threshold is reached for dominant labor-promoting actions, as suggested in a more specific manner for the relationship of P4 and inflammation signals (Brubaker et al., 2016). This model also suggests that the gestation clock, parturition block and parturition stimulatory models co-exist as part of a complementary, overlapping, and fail-safe system to control birth timing.
 
 The importance of birth timing on species-level reproductive efficiency would have favored multiple signals for parturition depending on lineage-specific selective pressure. In this scenario natural selection would favor mechanisms promoting robustness and phenotypic stability that would include buffering by genetic networks, epigenetic canalization, and complementary, partially overlapping or redundant actions across pathways or genes as described for other developmental systems (Hallgrimsson et al., 2019). In general, the parturition mechanism attributed to a species is that which is observed to operate at term. Other mechanisms may, however, be available and operational if needed based on physiologic and environmental conditions. This concept is apparent in mice. Although term parturition in the mouse is timed by a gestation clock that causes systemic P4 withdrawal secondary to CL regression, it can also occur without systemic P4 withdrawal in response to an inflammatory challenge (Hirsch and Muhle, 2002; Hirsch et al., 1995). This suggests that multiple mechanisms for P4 withdrawal may co-exist and be invoked depending on upstream physiology. Crossover between models could be threshold-limited. Effectiveness of the P4/PR block may be gradually lost in response to a gestation clock signal or the gradual increase maternal stress load. At different gestational stages, the various mechanisms may impact the onset of partition differently. For example, the failure of the P4 block signal could cause early pregnancy loss or preterm birth, whereas a labor-promoting signal might play an important role in the fine control of the timely onset of term parturition.
 
-## Testing the four models
+### Testing the four models
 
 Can the four proposed models be experimentally distinguished? A useful starting exercise is to determine if existing data refute one or more of the models. Significant divergence in mechanisms may exist across species, so whether one species follows a specific model cannot be completely understood by findings in another. For example, one clear piece of evidence that argues against the Fixed Maternal Clock Model comes from examining the timing of birth in cross-species hybrids. Matings between female horses and male donkeys produce mules. Under the Fixed Maternal Clock Model, the time to birth in such pregnancies would be expected to reflect the mother’s clock. However, mules are delivered on average between (11.4 months) when a horse (11.2 months) and donkey (12 months) would normally deliver (Giger et al., 1997), consistent with expectations that both maternal and fetal genomes and parental effects govern the timing of parturition. To further distinguish between maternal and fetal fixed clocks regulating birth timing, generating pregnancies where maternal and fetal gestational duration are discordant may prove revealing. One such experiment could be to produce females that are pseudopregnant for different temporal windows, and transfer fertilized embryos of different gestational ages into their uteri. This experiment would test whether the day of delivery reflects the gestational duration of the mother or the fetus. A limitation of this experiment is the potential of these pre-implantation embryos to synchronize or re-set development at the time of implantation, which could be measured by counting somite number several days into the pregnancy (Tam, 1981) or using other staging measures.
 

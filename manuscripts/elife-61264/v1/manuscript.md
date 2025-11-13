@@ -35,33 +35,77 @@ Here we identified the deubiquitylase Ubp15 as an RNAPII CTD-interacting protein
 
 ## Results
 
-## Ubp15 associates with RNAPII and the NPC
+### Ubp15 associates with RNAPII and the NPC
 
 To identify new factors interacting with RNAPII in a CTD phosphorylation-dependent manner, we performed a proteomic analysis of RNAPII complexes, affinity-purified from wild type (WT) and fcp1-1 cells (Figure 1A, Figure 1—figure supplement 1). Fcp1 is a major CTD phosphatase and its mutation leads to increased CTD phosphorylation at serines 2, 5, and 7 (Bataille et al., 2012). Quantitative analysis of the RNAPII-associated proteins identified 45 proteins differentially associated with the polymerase in fcp1-1 cells (35 being more abundant and 10 being less abundant by at least twofold; Figure 1B, Supplementary file 1). One RNAPII-interacting protein identified in this experiment is Ubp15, a deubiquitylase known for its role in the regulation of endocytosis (Ho et al., 2017; Kouranti et al., 2010), progression into the S phase (Álvarez et al., 2016; Ostapenko et al., 2015), peroxisomal export (Debelyy et al., 2011), and methylmercury susceptibility (Hwang et al., 2012), but with no known roles in transcription. The association of Ubp15 with RNAPII is increased in the fcp1-1 mutant, suggesting it is recruited (directly or indirectly) to the elongating polymerase via CTD phosphorylation. To confirm this interaction, we performed a reciprocal affinity purification experiment where Ubp15 was affinity-purified in WT cells and analyzed by mass spectrometry (Figure 1C) and western blot (Figure 1D). This experiment confirmed the interaction between Ubp15 and the phosphorylated form of RNAPII (Figure 1D) and, surprisingly, revealed the enrichment of almost the entire NPC (Figure 1C). Collectively, these experiments identified Ubp15 as an interactor of the phosphorylated RNAPII and the NPC.
 
-## Ubp15 genetically interacts with elongation factors
+![Figure 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig1-v1.jpg)
+
+**Figure 1.:** (A) A schematic representation of the proteomic experiment shown in panel B. (B) Volcano plot showing the average intensity versus relative abundance (log2) of proteins identified in RNAPII complexes purified from fcp1-1 versus WT cells using spectral counts as a proxy for relative protein abundance. RNAPII subunits are shown in black and other proteins of interest are indicated. Ubp15 is circled in red. In the interest of clarity, the maximum value of the y-axis was set at 100, resulting in Rpb1 and Rpb2 not appearing on the graph. See Supplementary file 1 for the complete list of values. (C) Spectral counts of the proteins identified in a TAP-tag purification of Ubp15. (D) Western blot confirming that Ubp15 is associated with a phosphorylated form of RNAPII (Rpb1-Ser5P).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A silver-stained SDS-PAGE gel showing RNAPII complexes purified from WT and fcp1-1 cells. Lanes 1 and 2 are control purifications from cells non-expressing Rpb1-TAP protein. The bait (Rpb1-TAP), the IgG (from the beads used to purify the complexes), and the TEV (used to cleave within the TAP-tag and eluate the complexes from the beads) are indicated. (B) Western blot showing Rpb1, Rpb1-Ser2P, Rpb3, and Spt16 in RNAPII complexes purified from WT and fcp1-1 cells. Lanes 1 and 2 are control purifications from cells non-expressing Rpb1-TAP protein.
+
+### Ubp15 genetically interacts with elongation factors
 
 Interestingly, the histone chaperone and elongation factor FACT (Spt16 and Pob3) is also enriched in RNAPII purified from fcp1-1 cells (Figure 1B, Figure 1—figure supplement 1B, Supplementary file 1) and both FACT and Rpb1 are substrates of Ubp15 in Schizosaccharomyces pombe (Beckley et al., 2015). In addition, the association of Asr1, a ubiquitin ligase known to bind the CTD and to ubiquitylate RNAPII in the context of elongation (Daulny et al., 2008; McCann et al., 2016), is decreased in fcp1-1 cells (Figure 1B, Supplementary file 1). These results prompted us to investigate the possible role for Ubp15 in transcription elongation.
 
 First, we looked for sensitivity to 6-azauracil (6AU), an inhibitor of GTP biosynthesis commonly used to test for mutations that affect transcriptional elongation (Riles et al., 2004). While the ubp15Δ mutant did not show significant sensitivity to 6AU on its own, it rescued the 6AU sensitivity of several elongation factor mutants including dst1Δ (TFIIS), spt4Δ and spt5-CTRΔ (DSIF), spt6-1004 and hpr1Δ (THO) (Figure 2A, Figure 2—figure supplement 1A). Interestingly, the 6AU sensitivity of other elongation factors such as bur2Δ, ctk1Δ, rtf1Δ, and cdc73Δ mutants was not affected by the deletion of UBP15 (Figure 2—figure supplement 1A). Then, we used a Ubp15 catalytic dead mutant, ubp15-C214A (Debelyy et al., 2011), to test whether the observed genetic interactions were mediated by its catalytic activity. Double mutants ubp15Δ/dst1Δ and ubp15Δ/spt4Δ were complemented with plasmids expressing WT or C214A versions of Ubp15 and spotted on 6AU. The ubp15-C214A mutant, but not the WT UBP15, rescued the dst1Δ and spt4Δ sensitivities to 6AU (Figure 2B), demonstrating that the effect of Ubp15 on elongation depends on its catalytic activity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig2-v1.jpg)
+
+**Figure 2.:** (A) Serial-dilution growth assays assessing the 6AU sensitivity of WT, dst1Δ, and spt4Δ cells, alone and in combination with ubp15Δ. The indicated yeast strains were grown to saturation in YNB medium lacking uracil (−URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on –URA in the absence or presence of 6AU as indicated. Plates were incubated at 30°C for 3 days. (B) Top: Serial-dilution growth assays assessing the requirement of the catalytic activity of Ubp15 for its effect on the 6AU sensitivity of WT, dst1Δ, and spt4Δ cells. Strains were deleted for UBP15, DST1, and SPT4, alone or in combinations, and transformed with empty vector, plasmids expressing Ubp15-3Flag (UBP15) or catalytic dead Ubp15-C214A-3Flag (ubp15-C214A) and spotted on −URA lacking histidine (−URA /−HIS) in the absence or presence of 6AU as indicated. Bottom: Equal expression levels of WT and catalytic dead versions of Ubp15-3Flag in WT, dst1Δ, and spt4Δ cells were confirmed by western blot. Note that the 6AU concentration varies and has been optimized for each mutant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Deletion of UBP15 suppresses the 6AU sensitivity of spt5-CTRΔ, spt6-1004, and hpr1Δ cells but not of bur2Δ, ctk1Δ, rtf1Δ, and cdc73Δ cells. Cells were grown, diluted, and spotted as described for Figure 2A. Note that the 6AU concentration varies and has been optimized for each mutant. (B) Serial-dilution growth assays assessing the sensitivity of WT and ubp15Δ cells to various conditions. Cells were grown to saturation in YPD medium, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on the indicated media. For growth at 37°C and 15°C, spt6-11 was used as a positive control. For heat-shock, plates were placed for 30 min at 50°C before incubation at 30°C and mex67-5 was used as a positive control. For ultraviolet light (UV), the plates were subjected to the indicated doses of UV (UV Stratalinker 1800) right after spotting and rad6Δ was used as a positive control. For hydroxyurea (HU), bur2Δ was used as a positive control. For formamide and caffeine, rad6Δ was used as a positive control.
+
 Noteworthy, we also looked at the phenotype of ubp15Δ cells under several other growth conditions and confirmed previously described sensitivity to cold temperature and hydroxyurea (HU) (Amerik et al., 2000; Ostapenko et al., 2015), while elevated temperature, ultraviolet light, formamide or caffeine had no detectable effect (Figure 2—figure supplement 1B). Collectively, these genetic interactions confirm the previous literature on Ubp15 and demonstrate a functional link between Ubp15 deubiquitylase activity and transcription elongation.
 
-## Ubp15 does not regulate RNAPII processivity
+### Ubp15 does not regulate RNAPII processivity
 
 The suppression of the 6AU sensitivity of several elongation factors is consistent with a role for Ubp15 in transcription elongation. In S. cerevisiae, elongation factors affect the processivity of RNAPII (i.e. the capacity of the polymerase to reach the end of the gene) but have no measurable impact on the elongation rate (Mason and Struhl, 2005). We, therefore, tested the effect of UBP15 deletion on RNAPII processivity in WT and dst1Δ cells. We first compared RNAPII occupancy at the beginning and the end of YLR454W (a ~ 8 kb-long gene) by chromatin immunoprecipitation (ChIP) followed by quantitative PCR (qPCR) as described before (Mason and Struhl, 2003; Mason and Struhl, 2005; Schwabish and Struhl, 2004; Strässer et al., 2002). Surprisingly, we found that the deletion of UBP15 did not rescue the processivity defect of dst1Δ cells in the presence of 6AU (Figure 3A). To extend this analysis to the whole genome, we performed ChIP followed by hybridization on tiling microarrays (ChIP-chip) experiments in WT, ubp15Δ, dst1Δ, and ubp15Δ/dst1Δ cells and mapped average RNAPII occupancy over transcribed genes (Figure 3B, Figure 3—figure supplement 1). These experiments confirmed the processivity defect of dst1Δ cells but, consistently with our ChIP-qPCR analysis of the YLR454W gene (Figure 3A), revealed no effect of UBP15 deletion on RNAPII processivity in WT or dst1Δ cells. This result was somewhat unexpected given the genetic interactions described in Figure 2 and suggests that UBP15 deletion may rescue the 6AU sensitivity of elongation factor mutants indirectly. Alternatively, Ubp15 may affect elongation rate, a parameter not investigated here, but this appears unlikely since no elongation factor has been shown to affect this parameter in yeast (Mason and Struhl, 2005). One attractive possibility, given the interaction between Ubp15 and the NPC, is that UBP15 deletion affects a post-transcriptional process in a way that compensates for elongation defects of elongation factor mutants.
 
-## Ubp15 controls nuclear polyA RNA accumulation
+![Figure 3.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig3-v1.jpg)
+
+**Figure 3.:** (A) RNAPII processivity, defined as the ratio of the % of Input detected in the 3’ amplicon divided by the % of Input detected in the 5’ amplicon, after 30 min treatment with 6AU (dark gray) and absence of 6AU (light gray), as determined by ChIP-qPCR. Experiments were performed in two biological replicates. Bars show the average and circles show individual replicates. The position of PCR amplicons over the YLR454W gene used for the qPCR is indicated on the sketch above the graphs. (B) Aggregate profiles of RNAPII (Rpb3) occupancy over highly expressed yeast genes longer than 1 kb (n = 234) as determined by ChIP-chip after 1 hr treatment with 6AU. TSS, transcription start site; pA, polyadenylation site.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** All genes with measurable values are shown (n = 4889).
+
+### Ubp15 controls nuclear polyA RNA accumulation
 
 To identify a role for Ubp15 that may explain its indirect elongation phenotype, we looked for an E3 ligase that would oppose its function. Through testing several candidates (Figure 4A, Figure 4—figure supplement 1A), we noticed that a mutant of the E3 ligase Rsp5 (rsp5-1) exacerbated the 6AU sensitivity of dst1Δ cells (Figure 4A). This effect of rsp5-1 on the dst1Δ 6AU sensitivity is opposite to that of ubp15Δ (Figure 2A) suggesting that Rsp5 and Ubp15 may oppose each other in regulating a process genetically connected to transcription elongation. Furthermore, the deletion of UBP15 can partially rescue the 6AU sensitivity of rsp5-1/dst1Δ mutant (Figure 4A). The antagonistic relationship between Rsp5 and Ubp15 is also supported by the fact that the deletion of UBP15 rescued the thermosensitivity phenotype of rsp5-ts mutants (Figure 4B and Figure 4—figure supplement 1B). Importantly, the rescue of rsp5-1 thermosensitivity was also observed with the ubp15-C214A mutant indicating it is dependent on the catalytic activity of Ubp15 (Figure 4C). Because we found that overexpression of Rps5-1 can rescue the rsp5-1 thermosensitivity phenotype (Figure 4—figure supplement 1C), we next tested whether Rsp5 protein levels were affected by the deletion of UBP15. As shown in Figure 4—figure supplement 1D, Rsp5 protein levels in rsp5-1 cells are actually decreased upon deletion of UBP15. This result suggests that UBP15 deletion suppresses the rsp5-1 thermosensitivity phenotype by other mechanisms, as explored further below.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig4-v1.jpg)
+
+**Figure 4.:** (A) Serial-dilution growth assays assessing the sensitivity of rsp5-1 cells, alone or in combination with dst1Δ and or ubp15Δ, to 6AU. The indicated yeast strains were grown to saturation in YNB medium lacking uracil (−URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on –URA in the absence or presence of 6AU as indicated. Plates were incubated at 30°C for 3 days. (B) Serial-dilution growth assays assessing the effect of UBP15 deletion on the viability of rsp5-1 cells at 33°C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30°C or 33°C as indicated. (C) Serial-dilution growth assays assessing the contribution of the catalytic activity of Ubp15 to the genetic interaction between RSP5 and UBP15 shown in panel B. Strains deleted for UBP15, alone or in combination with the rsp5-1 mutation, were transformed with empty vector, plasmids expressing Ubp15-3Flag (UBP15) or catalytic dead Ubp15-C214A-3Flag (ubp15-C214A), spotted on YNB medium lacking histidine (−HIS), and incubated at 30°C or 33°C as indicated. (D) RNA FISH experiments looking at bulk polyA RNAs in WT, ubp15Δ, rsp5-1, and ubp15Δ/rsp5-1 cells (FY genetic background). The indicated strains were grown at 30°C in YPD then shifted to 37°C for 3 hr before being analyzed by FISH using Cy5-oligo-dT45. DNA was stained with DAPI. Scale bar, 10 µm. The percentage of cells (from at least 200 cells in each strain) with retention of polyA RNA in the nucleus is indicated on the graphic shown at the bottom (WT: 0/200, ubp15Δ: 0/200, rsp5-1: 172/222, ubp15Δ/rsp5-1: 11/227).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Serial-dilution growth assays to screen various E3 ligases for genetic interaction with DST1. The indicated yeast strains were grown to saturation in YNB lacking uracil (−URA), washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on −URA in the absence or presence of 6AU as indicated. Plates were incubated for 3 days at 30°C. (B) Serial-dilution growth assays assessing the effect of UBP15 deletion on the viability of rsp5-1, rsp5-sm1, and rsp5-3 cells at 33°C or 37°C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30°C or 33°C as indicated. (C) Serial-dilution growth assays assessing the effect of Rsp5-1 overexpression (when expressed under the ADH1 promoter) on the viability of rsp5-1 cells at 33°C. The indicated yeast strains were grown to saturation in YPD, washed, resuspended at the same density in water, serially diluted (fivefold series), and spotted on YPD. Plates were incubated for 3 days at 30°C or 33°C as indicated. (D) Western blot showing HA-Rsp5 levels in WT, rsp5-1, ubp15Δ, and ubp15Δ/rsp5-1 cells. The expression of Rsp5-1 under the control of the ADH1 promoter (used in ‘C’) is also shown.
+
 Rsp5 is an E3 ligase involved in DNA damage (Beaudenon et al., 1999) and mRNA export (Rodriguez et al., 2003). At high temperatures, the rsp5-1 mutant accumulates mRNA in the nucleus (Rodriguez et al., 2003). We, therefore, compared polyA RNA localization in rsp5-1 and ubp15Δ/rsp5-1 cells by RNA fluorescent in situ hybridization (FISH) using a Cy5-labeled oligo-dT45 probe. Interestingly, these experiments showed that the deletion of UBP15 suppressed the mRNA export defect of the rsp5-1 mutant (Figure 4D). Indeed, the deletion of UBP15 reduced the number of cells retaining polyA RNAs in their nucleus from around 75% (172/222) to less than 5% (11/227). This suppression of mRNA export defect likely explains how UBP15 deletion restored the viability of rsp5 mutants and clearly establishes a role for Ubp15 in mRNA export.
 
-## Ubp15 and Rsp5 have opposite effects on Mex67 ubiquitylation
+### Ubp15 and Rsp5 have opposite effects on Mex67 ubiquitylation
 
 To identify potential substrates for Ubp15 in the mRNA export pathway, we measured ubiquitylation levels of Mex67 (Figure 5B,C), six NPC components (Nup82, Nup133, Nup57, Nup120, Nup145, and Nup159) (Figure 5—figure supplement 1A) and four nuclear export factors (Hpr1, Nab2, Npl3, and Mtr2) (Figure 5—figure supplement 1B) in ubp15Δ cells using a previously described in vivo ubiquitylation assay (Figure 5A; Gwizdek et al., 2005). These experiments identified Mex67 as a likely substrate of Ubp15 (Figure 5B,C). Interestingly, Mex67 ubiquitylation levels decreased in rsp5-1 (Figure 5B), suggesting that Rsp5 and Ubp15 may oppose each other in the control of Mex67 ubiquitylation. To assess this possibility more directly, we tested Mex67 ubiquitylation levels in ubp15Δ/rsp5-1 double mutant and found that the deletion of UBP15 normalized Mex67 ubiquitylation of rsp5-1 cells (Figure 5C). Collectively, these experiments established Rsp5 and Ubp15 as an E3 ligase/deubiquitylase tandem regulating Mex67 ubiquitylation.
 
-## Ubp15 regulates the interaction of Mex67 with THO and the cap-binding complex
+![Figure 5.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-v1.jpg)
+
+**Figure 5.:** (A) A schematic representation of the in vivo ubiquitylation assay used in panels B and C. A plasmid expressing polyhistidine-tagged ubiquitin (6His-Ub) under the control of a copper-inducible promoter was transformed in WT and mutant cells. 6His-Ub expression was induced with copper sulfate (CuSO4) and His-tagged ubiquitin-conjugated proteins were purified using Ni-NTA beads and analyzed by western blot. (B) Western blots for Mex67-6HA levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (−) 6His-Ub in WT, ubp15Δ, and rsp5-1 cells. (C) Same as panel B but for WT, ubp15Δ, rsp5-1, and ubp15Δ/rsp5-1 cells. (D) Ubp15 regulates the interaction of THO and CBC with Mex67. A volcano plot showing the significance versus the log2 fold change for the proteins identified in Mex67-3Flag purifications by MS in ubp15Δ versus WT cells. Gray dots show the bulk of the data and the regions for significant (p value<0.1) twofold changes are boxed. THO, CBC, and NPC subunits are labeled in red, gold, and blue, respectively. See Supplementary file 2 for the complete list of values. (E) A graphical model illustrating how the ubiquitylation/deubiquitylation of Hpr1 and Mex67 by Rps5, Ubp15, and likely other deubiquitylases, may enable dynamic interactions between THO and Mex67. Both promoting and disrupting these interactions are surmise to be required for the mRNPs to mature into export-competent particles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blots for NPC components (Nup82-6HA, Nup133-6HA, Nup57-6HA, Nup120-6HA, Nup145-6HA, and Nup159-6HA) levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (−) 6His-Ub in WT and ubp15Δ cells. (B) Western blots for nuclear export factors (Hpr1-6HA, Nab2-6HA, Npl3-6HA, and Mtr2-6HA) levels from His-tagged ubiquitin-conjugated protein pulldowns (Ni-NTA) and their inputs expressing (+) or not (−) 6His-Ub in WT and ubp15Δ cells.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61264/elife-61264-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Lanes 1 and 2 are control purifications from cells non-expressing any Mex67-3Flag protein. The bait (Mex67-3Flag) and IgG (from the beads used to purify the complexes) are indicated.
+
+### Ubp15 regulates the interaction of Mex67 with THO and the cap-binding complex
 
 Our data so far show that Rsp5 and Ubp15 oppose each other in the regulation of mRNA export and ubiquitylation of Mex67. Since Mex67 is known to function as part of a large and dynamic protein interaction network, we hypothesized that its ubiquitylation may modulate its interactome. Hence, we tested whether the proteome associated with Mex67 is modified in ubp15Δ cells. We performed a proteomic analysis of Mex67, affinity-purified from WT and ubp15Δ cells (Figure 5D, Figure 5—figure supplement 2). As expected, based on previous studies (Batisse et al., 2009; Gwizdek et al., 2006; Oeffinger et al., 2007; Santos-Rosa et al., 1998; Saroufim et al., 2015; Strässer and Hurt, 2000b; Zenklusen et al., 2001), we found a large number of Mex67-interacting proteins including Mtr2, Nab2, Yra2, the THO complex and nearly the entire NPC (Supplementary file 2). Among those, only seven were differentially associated with Mex67 in ubp15Δ cells by at least twofold (Figure 5D). Interestingly, all those interactors were less associated with Mex67 in ubp15Δ cells, suggesting that the ubiquitylation of Mex67 negatively regulates its association with these factors. Strikingly, these proteins include all four subunits of the THO complex (Hpr1, Tho2, Mft1, and Thp2) and both subunits of the heterodimeric cap-binding complex (CBC; Sto1 and Cbc2) known to recruit THO/TREX to the 5’-cap of nascent pre-mRNAs (Figure 5D) in yeast and humans (Cheng et al., 2006; Sen et al., 2019; Viphakone et al., 2019). We noted also that several subunits of the NPC, including the nuclear basket protein Mlp1, showed a slightly increased association with Mex67 in ubp15Δ cells compared to WT cells (although below our significance threshold) (Figure 5D). Together, these results support a model where Mex67 ubiquitylation, controlled by Rsp5 and Ubp15, regulates the association of Mex67 to pre-mRNAs via interactions with THO and cap binding factors (Figure 5E).
 
@@ -79,15 +123,109 @@ Interestingly, Hpr1 ubiquitylation is mediated by Rsp5 (Gwizdek et al., 2005; Gw
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Various</td>
+      <td>This paper</td>
+      <td>NCBITaxon:4932</td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Various</td>
+      <td>This paper</td>
+      <td>Plasmids</td>
+      <td>See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Flag M2 mouse monoclonal antibody</td>
+      <td>Sigma</td>
+      <td>Cat# F3165, RRID:AB_259529</td>
+      <td>34 µg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rpb3 mouse monoclonal antibody (W0012)</td>
+      <td>Neoclone/Biolegend</td>
+      <td>Cat# 665003, RRID:AB_2564529</td>
+      <td>3 μL per ChIP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA F7 mouse monoclonal antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7392, RRID:AB_627809</td>
+      <td>(1:1000) for WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit IgG</td>
+      <td>Sigma</td>
+      <td>Cat# I5006, RRID:AB_1163659</td>
+      <td>50 mg coupled to 2 × 1010 Dynabeads M-270 Epoxy</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pan Mouse Dynabeads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11042</td>
+      <td>50 μL per ChIP 200 µL per IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads M-270 Epoxy</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14302D</td>
+      <td>200 µL per IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni-NTA agarose beads</td>
+      <td>Qiagen</td>
+      <td>Cat# 30210</td>
+      <td>100 µL per purification</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mono-reactive NHS ester fluorescent Cy5 and Cy3 dyes</td>
+      <td>GE Healthcare</td>
+      <td>Cat# PA23001 Cat# PA25001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Versatile Aggregate Profiler (version 1.1.0)</td>
+      <td>Brunelle et al., 2015; Coulombe et al., 2014</td>
+      <td></td>
+      <td>http://lab-jacques.recherche.usherbrooke.ca/vap</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and plasmids
 
 Genotypes for the yeast strains used in this study are listed in Supplementary file 3. All tagged and deletion strains were done by homologous recombination of appropriate PCR cassettes. The catalytic dead ubp15 mutation (C214A) was introduced into pFR559 by inverted PCR (forward: p-GCCTATTTGAATTCGTTATTGC, reverse: TGTGGCACCCTGATTTCGGAAGCCA) to generate pFR560 (see Supplementary file 4). Each construct was validated by sequencing and their expression tested by western blot analysis.
 
-## Serial-dilution growth assays
+### Serial-dilution growth assays
 
 Cells were grown to saturation in the indicated media at 30°C, washed, and resuspended to an OD600 of 1.0 in H2O. Cells were then subjected to fivefold serial dilutions and spotted onto the appropriate media. Plates were incubated at 30°C for 3 days unless specified otherwise. Images presented in figures are representative examples of at least two biological replicates, except for the cold sensitivity (15°C) assay in Figure 2—figure supplement 1B and thermosensitivity assays in Figure 4—figure supplement 1B–C, which were done once. In addition, several phenotypes were confirmed in two different yeast genetic backgrounds.
 
-## Purification of proteins associated with RNAPII, Ubp15, and Mex67
+### Purification of proteins associated with RNAPII, Ubp15, and Mex67
 
 TAP-tagged Rpb1 subunit of RNAPII from WT and fcp1-1 cells was purified in two biological replicates by one-step affinity purification essentially as published previously (Jeronimo et al., 2015). In brief, following cryogenic disruption of cells (Trahan et al., 2016), frozen cell grindate (5 g) was thawed into nine volumes of EB150 extraction buffer (20 mM Tris-HCl pH 7.5, 150 mM KOAc, 1 mM EDTA pH 8.0, 0.5% Triton X-100, 10% glycerol, 1 mM DTT, protease and phosphatase inhibitors, and 1:5000 Antifoam B [Sigma]), vortexed for 30 s and homogenized (Polytron PT 1200E; Kinematica AG) for another 30 s, to allow for maximal recovery of chromatin proteins. The cleared extract was incubated for 1 hr at 4 °C with 200 µL of pre-washed magnetic Dynabeads M-270 Epoxy (Thermo Fisher Scientific) conjugated to rabbit IgG (Sigma). Dynabeads were then collected and washed five times with EB150 buffer and two times with TEV150 protease cleavage buffer (10 mM Tris-HCl pH 8.0, 150 mM KOAc, 0.5 mM EDTA pH 8.0, 0.1% Triton X-100, 10% glycerol, and 1 mM DTT). The isolated protein complex was eluted by incubating the beads overnight at 4 °C with 200 units of TEV protease (Thermo Fisher Scientific) in 500 µL of TEV150 buffer. After digestion, the collected eluate was incubated with pre-washed nickel-nitrilotriacetic acid (Ni-NTA) agarose beads (Qiagen) for 90 min at 4°C to remove the His-tagged TEV protease. The collected eluate was concentrated to ~300 µl by dialysis in PEG dialysis buffer (10 mM HEPES-KOH pH 7.9, 0.1 mM EDTA pH 8.0, 100 mM KOAc, 20% glycerol, 20% PEG-8000 and 1 mM DTT) and then dialyzed in No-PEG dialysis buffer (10 mM HEPES-KOH pH 7.9, 0.1 mM EDTA pH 8.0, 100 mM KOAc, 20% glycerol and 1 mM DTT). A fraction of the purified proteins was separated by SDS-PAGE on a 4–12% NuPAGE Novex Bis-Tris precast gel (Thermo Fisher Scientific) and visualized by silver staining and western blot analysis with the indicated antibodies. Proteins were precipitated with TCA before mass spectrometry analysis.
 
@@ -95,11 +233,11 @@ For the purification of the Ubp15-TAP complex, the same one-step affinity purifi
 
 For the purification of the proteins associated with Mex67-3Flag from WT and ubp15Δ cells, frozen cell grindates (1 g), from three biological replicates, were thawed into nine volumes of TBT extraction buffer (20 mM HEPES-KOH pH 7.5, 110 mM KOAc, 1 mM MgCl2, 0.5% Triton X-100, 0.1% Tween 20, 1 mM DTT, protease inhibitor mixture, SUPERaseIn RNase inhibitor [Thermo Fisher Scientific] and 1:5000 Antifoam B [Sigma]) as previously described (Oeffinger et al., 2007). The cell extracts were then vortexed for 30 s, homogenized (Polytron PT 1200E; Kinematica AG) for another 30 s, and clarified by centrifugation at 3500 rpm for 10 min at 4°C. The Mex67-3Flag tagged protein was isolated using 200 µL of pre-washed magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific) coupled to 34 µg of anti-Flag M2 mouse monoclonal antibody (Sigma). After binding for 1 hr at 4°C, Dynabeads were collected and washed five times with TBT extraction buffer and five times with TBT washing buffer (20 mM HEPES-KOH pH 7.5, 110 mM KOAc, 1 mM MgCl2). The isolated protein complex was eluted twice by incubating each time the beads 20 min at room temperature with 500 µL of NH4OH elution buffer (0.5 M NH4OH, 1 mM EDTA pH 8.0). The pooled eluates were split into four aliquots, then dried in a speed-vac at room temperature. One aliquot of purified proteins was separated by SDS-PAGE on a 4–12% NuPAGE Novex Bis-Tris precast gel and visualized by silver staining. Another aliquot was analyzed by mass spectrometry.
 
-## Protein identification by mass spectrometry
+### Protein identification by mass spectrometry
 
 The experiments were essentially performed as described previously (Bataille et al., 2012). Protein samples were re-solubilized in 6 M urea buffer followed by reduction and alkylation before digestion with trypsin (Promega) at 37°C for 18 hr. The digested peptide mixtures were dried down in a vacuum centrifuge and stored at −20°C until LC-MS/MS analysis. Prior to LC-MS/MS, the digested peptide mixtures were resolubilized in 0.2% formic acid and desalted/cleaned up by using C18 ZipTip pipette tips according to the manufacturer’s instructions (Millipore). Eluates were dried down in a vacuum centrifuge and then re-solubilized in 2% ACN/1% formic acid. The LC column used was a C18 reversed-phase column packed with a high-pressure packing cell. A 75 µm i.d. Self-Pack PicoFrit fused silica capillary column of 15 cm long (New Objective) was packed with the C18 Jupiter 5 µm 300 Å reverse-phase material (Phenomenex). This column was installed on the Easy-nLC II system (Proxeon Biosystems) and coupled to the LTQ Orbitrap Velos or the Orbitrap Fusion (Thermo Fisher Scientific) equipped with a Proxeon nanoelectrospray ion source.
 
-## Mass spectrometry data analysis
+### Mass spectrometry data analysis
 
 Protein database searching was performed with Mascot 2.2 or 2.6 (Matrix Science) against the S. cerevisiae NCBInr protein database (2010-12-14 release) or the UniProt_Saccharomyces_cerevisiae (559292 - strain ATCC 204508/S288 c) database. The mass tolerances for precursor and fragment ions were set to 15 ppm and 0.60 Da, respectively. Trypsin was used as the enzyme allowing for up to two missed cleavages. Carbamidomethyl and oxidation of methionine were allowed as variable modifications. Data interpretation was performed using Scaffold 3.1.2 or 4.8 (Proteome Software). Spectral counts values were exported in Excel and processed as follows.
 
@@ -109,26 +247,26 @@ For the Ubp15-TAP purification, spectral counts from Ubp15-TAP and a no-tag cont
 
 For Mex67-3Flag purifications in WT and ubp15Δ cells, spectral counts from three biological replicates of Mex67-3Flag from WT, ubp15Δ and a no-tag control were used as a measure of protein abundance. Proteins with less than fivefold enrichment in tagged versus no-tag, and with an average of less than eight spectral counts in tagged experiments were removed. This analysis resulted in 47 proteins displayed in Figure 5D. The data were normalized to set the ratio of the spectral count of the bait (Mex67) to one between the WT and ubp15Δ samples. The log2 of the ratio between the normalized average spectral count in ubp15Δ and WT cells were computed and a t-test on the spectral counts of the three WT and three ubp15Δ samples was used to assess significance.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 To assess RNAPII (Rpb3) binding along the YLR454W gene, ChIP experiments were performed in two biological replicates as previously described (Collin et al., 2019). In brief, yeast cells containing the GAL1 promoter controlling the YLR454W gene were inoculated from an overnight preculture in 100 mL of yeast nitrogen-based (YNB) medium lacking uracil (−URA) supplemented with 2% galactose and 2% raffinose (to induce YLR454W gene expression). Cells were grown at 30°C until OD600 reaches 0.6–0.8 and then 50 mL were treated with 100 µg/mL 6AU for 30 min while the rest was left untreated. Cells were cross-linked with 1% formaldehyde for 30 min at room temperature and quenched with 125 mM glycine. Immunoprecipitation of RNAPII was done using 3 μL of Rpb3 antibody (W0012 from Neoclone) coupled to magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific). ChIP DNA was analyzed by qPCR using primers targeting the 5’ (forward: ACGCAAAGGAACTAGAGAACG, reverse: AATAGGACTCTCCGCCTTGTT) and 3’ (forward: GGTCACAGATCTATTACTTGCCC, reverse: TTCAGGCTCCGTGTAGGAATTA) regions of the YLR454W open reading frame. 1% of each Input sample was analyzed in parallel and enrichments were expressed as a percent of Input using the following formula: 100*2[CtInput-6.644-CtIP].
 
-## ChIP-chip
+### ChIP-chip
 
 ChIP-chip experiments from WT, ubp15Δ, dst1Δ, and ubp15Δ/dst1Δ cells were performed in two biological replicates (except for the ubp15Δ/dst1Δ strain in the absence of 6AU which was done only once) as previously described (Collin et al., 2019). In brief, yeast cells were inoculated from an overnight preculture in 50 mL of YNB−URA supplemented with 2% glucose. Cells were grown at 30°C until OD600 reaches 0.6–0.8 and treated (or not) with 100 µg/mL 6AU for 60 min. Cells were cross-linked with 1% formaldehyde for 30 min at room temperature and quenched with 125 mM glycine. Immunoprecipitation of RNAPII was done using 3 μL of Rpb3 antibody (W0012 from Neoclone) coupled to magnetic Pan Mouse Dynabeads (Thermo Fisher Scientific). ChIP and Input samples were labeled with mono-reactive NHS ester fluorescent Cy5 and Cy3 dyes (GE Healthcare), respectively, combined and hybridized for at least 18 hr on custom-designed Agilent microarrays containing 180,000 Tm-adjusted 60-mer probes covering the entire yeast genome with virtually no gaps between probes (Jeronimo and Robert, 2014). Microarrays were washed and scanned using an InnoScan900 (Innopsys) at 2 μm resolution.
 
-## ChIP-chip data analysis
+### ChIP-chip data analysis
 
 The ChIP-chip data were normalized using the Limma Loess method and replicates were combined as described previously (Ren et al., 2000). The data were subjected to one round of smoothing using a Gaussian sliding window with a standard deviation of 100 bp to generate data points in 10 bp intervals (Guillemette et al., 2005). Aggregate profiles were generated using the Versatile Aggregate Profiler (VAP) (Brunelle et al., 2015; Coulombe et al., 2014). In these analyses, only genes that are at least 1 kb long and with an average RNAPII enrichment log2 ratio over one were retained. Genes were virtually split in the middle and their 5’ and 3’ halves were aligned on the TSS and polyA site, respectively. The signal was then averaged in 10 bp bins. Coordinates of TSS and polyA sites are from Xu et al., 2009. Violin plots of RNAPII processivity were built by calculating the log2 ratio of Rpb3 occupancy in the last versus first 300 bp for each gene using VAP. The plots were generated using PlotsOfData (Postma and Goedhart, 2019).
 
-## RNA FISH
+### RNA FISH
 
 RNA FISH was performed as described previously (Babour et al., 2016) with a few modifications. Briefly, cells were grown in 50 mL of YPD medium to an OD600 of 0.6–0.8 and fixed with 4% paraformaldehyde for 45 min at room temperature on a rotating wheel. Cells were washed twice with cold phosphate buffer (100 mM KHPO4 pH 6.4) and once with cold spheroplast buffer (phosphate buffer supplemented with 1.2 M sorbitol). Digestion of yeast cell wall was performed at 30°C with 250 µg of zymolyase 100T (US Biological). Spheroplasts were carefully washed twice and resuspended in 1 mL of cold spheroplast buffer and 200 µL were attached to poly-L-lysine (Sigma)-coated coverslips for 30 min at room temperature. Unadhered cells were washed off and coverslips were stored in 70% ethanol at −20°C for at least 2 hr. Hybridization was carried out in hybridization buffer (50% formamide, 10% dextran sulfate, 4× SSC, 1× Denhardts, 125 μg/mL E. coli tRNA, 500 μg/mL ssDNA, 10 mM ribonucleoside-vanadyl complex [NEB]) supplemented with 50 ng of Cy5-oligo-dT45 probe for 12 hr at 37°C in the dark. Coverslips were washed twice with 2× SSC at 37°C for 15 min, once with 1× SSC at room temperature for 15 min and twice with 0.5× SSC at room temperature for 15 min, and finally with 1× PBS buffer containing 0.5 µg/mL 4′,6-diamidino-2-phenylindole (DAPI) and mounted onto ProLong Gold antifade reagent (Thermo Fisher Scientific) mounting media.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 FISH images were acquired with a Retiga EXi aqua camera (mount on 0.70×) mounted on a DM5500B upright microscope (Leica) and magnified through a 100× oil immersion objective (NA = 1.3). Images of fluorescent probes were excited using an X-Cite Series 120Q light source (Lumen Dynamics) with the appropriate filters. All hardware parts were controlled with Volocity v5.0 software. Data presented in figures are representative fields of images from two biological replicates. For calculating the percentage of mRNA accumulation in the different strains, we manually visualized 150 to 300 cells and counted the ones with visible polyA RNA accumulation in the nucleus.
 
-## In vivo ubiquitylation assay
+### In vivo ubiquitylation assay
 
 Ubiquitylated proteins were detected essentially as described previously (Muratani et al., 2005) with some modifications. Yeast strains transformed with a plasmid expressing polyhistidine-tagged ubiquitin (6His-Ub) under the control of a copper-inducible promoter (pFR453) or its non-tagged control (pFR452) (see Supplementary file 4) were grown in 50 mL of YNB−URA. When OD600 reached 0.6–0.8, cells were induced with 500 µM CuSO4 for 2–3 hr at 30°C. Cell cultures were centrifuged and washed twice with ice-cold water, flash-frozen, and stored at −80°C. Cell pellets were resuspended in 1 mL of freshly prepared A2 buffer (6 M guanidine-HCl, 100 mM Na2HPO4/NaH2PO4 pH 8.0, 10 mM imidazole, 250 mM NaCl, 0.5% NP40) and lysed by glass bead beating 5 min twice. Cell Lysates were then clarified by centrifuging for 15 min at max speed at 4°C. 10 µL of the cleared extract was kept as Input and the rest was used for Ni-NTA purification. His-tagged ubiquitin-conjugated proteins were purified by adding 100 µL of 50% Ni-NTA agarose beads (Qiagen) equilibrated in A2 buffer to 1 mL of cleared extracts and incubated with rotation for 2–4 hr at room temperature. Beads were pelleted and washed twice with 1 mL of A2 buffer, twice with 1 mL of A2/T2 buffer (1 vol A2 buffer + three volumes T2 buffer [50 mM Na2HPO4/NaH2PO4 pH 8.0, 20 mM imidazole, 250 mM NaCl, 0.5% NP40]) and twice with 1 mL of T2 buffer. Samples were rotated 5 min at room temperature for each wash. After the final wash, all liquid was removed from beads, and beads were resuspended in 50 µL of 2× Laemmli buffer supplemented with 250 mM imidazole. Inputs were prepared as previously described (Pepinsky, 1991). Briefly, 800 µL of 100% ethanol was added to 10 µL of cleared extract, vortexed, and incubated for 1 hr at −20°C. Inputs were then centrifugated and washed twice with 100% ethanol for 15 min at −20°C. Ethanol was removed and, when completely dry, pellets were resuspended in 100 µL of 2× Laemmli buffer. All samples were boiled for 5 min, centrifuged and supernatants were run on SDS-PAGE for western blot analysis with anti-HA F7 mouse monoclonal antibody (Santa Cruz Biotechnology). Images presented in figures are representative examples of at least three (Figure 5) or two (Figure 5—figure supplement 1) biological replicates, except for Nup133, which was assayed only once.

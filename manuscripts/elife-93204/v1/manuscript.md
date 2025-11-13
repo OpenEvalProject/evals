@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Molecular and Integrative Physiology, University of Michigan–Ann Arbor Ann Arbor United States
-2. https://ror.org/00jmfr291 Elizabeth W. Caswell Diabetes Institute, University of Michigan–Ann Arbor Ann Arbor United States
-3. https://ror.org/00jmfr291 Department of Internal Medicine, Division of Metabolism, Endocrinology and Diabetes, University of Michigan–Ann Arbor Ann Arbor United States
-4. https://ror.org/00jmfr291 Department of Obstetrics and Gynecology, University of Michigan–Ann Arbor Ann Arbor United States
+1. Department of Molecular and Integrative Physiology, University of Michigan–Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+2. Elizabeth W. Caswell Diabetes Institute, University of Michigan–Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+3. Department of Internal Medicine, Division of Metabolism, Endocrinology and Diabetes, University of Michigan–Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+4. Department of Obstetrics and Gynecology, University of Michigan–Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
 ## Abstract
 
-The hypothalamic ventral premammillary nucleus (PMv) is a glutamatergic nucleus essential for the metabolic control of reproduction. However, conditional deletion of leptin receptor long form (LepRb) in vesicular glutamate transporter 2 (Vglut2) expressing neurons results in virtually no reproductive deficits. In this study, we determined the role of glutamatergic neurotransmission from leptin responsive PMv neurons on puberty and fertility. We first assessed if stimulation of PMv neurons induces luteinizing hormone (LH) release in fed adult females. We used the stimulatory form of designer receptor exclusively activated by designer drugs (DREADDs) in Lepr (LepRb-Cre) mice. We collected blood sequentially before and for 1 hr after intravenous clozapine- Cre N -oxide injection. LH level increased in animals correctly targeted to the PMv, and LH level was correlated to the number of Fos immunoreactive neurons in the PMv. Next, females with deletion of Slc17a6 (Vglut2) in LepRb neurons ( Lepr ΔVGlut2 ) showed delayed age of puberty, disrupted estrous cycles, increased gonadotropin-releasing hormone (GnRH) concentration in the axon terminals, and disrupted LH secretion, suggesting impaired GnRH release. To assess if glutamate is required for PMv actions in pubertal development, we generated a Cre-induced reexpression of endogenous LepRb ( Lepr ) with concomitant deletion of loxTB Slc17a6 (Vglut2 ) mice. Rescue of flox Lepr and deletion of Slc17a6 in the PMv was obtained by stereotaxic injection of an adeno-associated virus vector expressing Cre recombinase. Control Lepr mice with PMv LepRb rescue showed vaginal opening, follicle maturation, and became pregnant, while loxTB Lepr ;Vglut2 loxTB mice showed no pubertal development. Our results indicate that glutamatergic neurotransmission from leptin sensitive neurons regulates the reproductive axis, and that leptin action on pubertal development via PMv neurons requires Vglut2. flox
+The hypothalamic ventral premammillary nucleus (PMv) is a glutamatergic nucleus essential for the metabolic control of reproduction. However, conditional deletion of leptin receptor long form (LepRb) in vesicular glutamate transporter 2 (Vglut2) expressing neurons results in virtually no reproductive deficits. In this study, we determined the role of glutamatergic neurotransmission from leptin responsive PMv neurons on puberty and fertility. We first assessed if stimulation of PMv neurons induces luteinizing hormone (LH) release in fed adult females. We used the stimulatory form of designer receptor exclusively activated by designer drugs (DREADDs) in LeprCre (LepRb-Cre) mice. We collected blood sequentially before and for 1 hr after intravenous clozapine-N-oxide injection. LH level increased in animals correctly targeted to the PMv, and LH level was correlated to the number of Fos immunoreactive neurons in the PMv. Next, females with deletion of Slc17a6 (Vglut2) in LepRb neurons (LeprΔVGlut2) showed delayed age of puberty, disrupted estrous cycles, increased gonadotropin-releasing hormone (GnRH) concentration in the axon terminals, and disrupted LH secretion, suggesting impaired GnRH release. To assess if glutamate is required for PMv actions in pubertal development, we generated a Cre-induced reexpression of endogenous LepRb (LeprloxTB) with concomitant deletion of Slc17a6 (Vglut2flox) mice. Rescue of Lepr and deletion of Slc17a6 in the PMv was obtained by stereotaxic injection of an adeno-associated virus vector expressing Cre recombinase. Control LeprloxTB mice with PMv LepRb rescue showed vaginal opening, follicle maturation, and became pregnant, while LeprloxTB;Vglut2flox mice showed no pubertal development. Our results indicate that glutamatergic neurotransmission from leptin sensitive neurons regulates the reproductive axis, and that leptin action on pubertal development via PMv neurons requires Vglut2.
 
 ## Introduction
 
@@ -37,9 +37,74 @@ In the attempt to untangle these apparent inconsistencies, we used chemogenetics
 
 ## Results
 
-## Chemogenetic activation of LeprCre cells in the PMv induces LH secretion
+### Chemogenetic activation of LeprCre cells in the PMv induces LH secretion
 
 To examine if activation of PMv LepRb neurons induces LH release in fed adult mice, we stereotaxically injected an adeno-associated virus vector (AAV) carrying the stimulatory form of designer receptor exclusively activated by designer drugs (DREADDs), hM3Dq, fused to mCherry (AAV-hM3Dq) unilaterally into the PMv of LeprCre mice, followed by intravenous (iv.) injection of clozapine-N-oxide (CNO) or its metabolite, clozapine, after 4 weeks. Successful infection was confirmed by localized expression of mCherry and Fos immunoreactivity (ir) in the PMv following CNO or clozapine injection. For clarification, Table 1 shows the different experimental, positive and negative control groups, according to AAV and drug delivered, injection site and LH response.
+
+**Table 1.**
+ Experimental groups in the study of chemogenetic activation of LeprCre cells in the ventral premammillary nucleus (PMv).Corresponding to Figures 1—3. The number of animals in each group is indicated in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>AAV vector</th>
+      <th>Drug</th>
+      <th>Injection site</th>
+      <th>LH increase 10–20 min</th>
+      <th>Group name</th>
+      <th>Color in Figure 1E–H, Figures 2 and 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">AAV-hM3Dq (18)</td>
+      <td rowspan="4">CNO</td>
+      <td rowspan="2">Hit in PMv (15)</td>
+      <td>Yes (8)</td>
+      <td>‘PMv-hit’ with LH increase</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No (7)</td>
+      <td>‘PMv-hit’ with no LH increase</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Missed PMv (2)</td>
+      <td>No</td>
+      <td>Negative controls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">No Fos in mCherry cells. Removed from analysis (1).</td>
+    </tr>
+    <tr>
+      <td>AAV-mCherry (5)</td>
+      <td>CNO</td>
+      <td>Hit in PMv</td>
+      <td>No</td>
+      <td>Negative controls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AAV-hM3Dq (4)</td>
+      <td>Clozapine</td>
+      <td>Hit in PMv</td>
+      <td>Yes</td>
+      <td>Clozapine hM3Dq</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No AAV (7)</td>
+      <td>Clozapine</td>
+      <td>No injection</td>
+      <td>(2/7)</td>
+      <td>Clozapine no AAV</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 From the AAV-hM3Dq animals that received CNO, 15 out of 18 LeprCre diestrous females had successful AAV-hM3Dq injections (mCherry- and Fos-ir) in the PMv and were considered ‘PMv-hits’ (Figure 1A, B). Two mice showed injections outside the PMv (n = 2) and were considered ‘PMv-misses’. The remaining mouse had a very small injection in the PMv (few mCherry-ir neurons, but no Fos-ir) and was removed from the analysis (Table 1). An additional group of five mice was injected with an AAV-mCherry vector and received iv. CNO, serving as negative controls. All five mice showed successful viral target in the PMv. For representation, this group is shown together with the PMv-misses as ‘negative controls’ (Table 1). An additional group of four mice carrying the AAV-hM3Dq received instead iv. clozapine to test the effect of the CNO metabolite. All four females showed successful viral target and Fos-ir in PMv neurons, and minimal Fos-ir in other hypothalamic sites (Table 1, Figure 2A, B). An additional negative control group (n = 7) did not receive an AAV injection and was injected with clozapine, to evaluate the effect of clozapine alone on LH release (Table 1).
 
@@ -59,19 +124,19 @@ The number of Fos-ir neurons per section in the PMv was variable between groups,
 
 All mice with AAV-hM3Dq targeting the PMv (Fos-ir) and injected with clozapine also showed an increase in LH 10 min after the injection (0.87–1.18 ng/ml, Figure 2A, B), whereas two out of seven (28.5 %) control mice with no AAV showed an increase in LH following the clozapine injection (Figure 2C). The positive AUC between −10 to 20 min showed a significant increase in LH levels in the clozapine AAV-hM3Dq group, but not in the group with no AAV (Figure 2D, E). The number of Fos-ir neurons per section in the PMv was higher in animals with hM3Dq than in those with no AAV, in which virtually no Fos-ir cells were observed (Figure 2F). Whether this variability is due to spontaneous LH release (Czieselsky et al., 2016) is not known. However, the consistently higher proportion of animals showing increased LH in AAV-hM3Dq PMv-hits injected with CNO (55 %) or clozapine (100 %) vs. PMv-misses and AAV-mCherry, and no-AAV control groups (0 and 28.5%, respectively), together with the strong activation of Fos in the PMv only in animals showing increased LH, make it unlikely that the observed rise in LH in experimental groups are a consequence of spontaneous LH pulsatile release.
 
-## AAV-hM3Dq contamination of the posterior Arc produces inconsistent CNO-stimulated LH secretion
+### AAV-hM3Dq contamination of the posterior Arc produces inconsistent CNO-stimulated LH secretion
 
 As expected, the PMv-hit group showed some variability in the injection size, often contaminating to different extent LepRb neurons in areas adjacent to the PMv, including the posterior region of the Arc. Because this region has several neuronal populations involved in the control of reproduction, we evaluated the number of Fos-ir neurons in the Arc that coexpressed mCherry to assess if Arc neuronal activation was either direct or secondary to PMv neuronal activation (Ross et al., 2018). The total number of neurons coexpressing both Fos- and mCherry-ir per section in the posterior Arc was higher in PMv-hit animals, whether they showed an increase in LH, than in negative control animals (PMv-miss and AAV-mCherry combined) (Figure 3A–D). As observed for the PMv, peak LH levels were positively correlated to the number of Fos-ir + mCherry ir neurons in the Arc (Figure 3D), but not with the total number of Fos-ir neurons alone in the Arc (r = 0.3; p = 0.16). This observation suggested that LepRb-expressing neurons in the Arc may have contributed to the increase in LH observed following CNO treatment.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93204/elife-93204-fig3-v1.jpg)
 
-**Figure 3.:** N-oxide (CNO) induction of luteinizing hormone (LH) secretion may have a mild contribution of pro-opiomelanocortin (POMC), but not KNDy, neurons.Representative images of (A) mCherry-immunoreactivity (-ir) and (B) Fos-ir of an animal with strong AAV contamination of the posterior Arc. (C) Number of Fos-ir neurons with mCherry-ir colocalization per section in the posterior Arc in the three groups 2 hr after the CNO injection. (Kruskal–Wallis test = 14.63; p < 0.0001), ***p < 0.001 vs. PMv-hit LH increase group, #p < 0.05 vs. PMv-hit no LH increase group. (D) Correlation between the number of mCherry-/Fos-ir neurons observed in the posterior Arc and the peak LH level in the three groups (Pearson r = 0.62; p = 0.002). (E) POMC-ir (green) in a mouse with viral contamination of the posterior Arc. Arrows: Fos-ir neurons (black) that coexpressed POMC and mCherry (magenta). Arrowheads: Fos-ir neurons that coexpressed POMC, but no mCherry, (F) Confocal high magnification image of a Fos-ir neuron coexpressing POMC and mCherry. (G) Confocal high magnification image of a Fos-ir neuron coexpressing POMC, but not mCherry. (H) GFP-ir (green) in a Kiss1 animal with viral contamination of the posterior Arc. Arrows: Fos-ir (black) neurons that coexpressed hrGFPKiss1 (green) and mCherry (magenta). (hrGFPI, J) Confocal high magnification images of a Fos-ir neuron (arrow in H) coexpressing Kiss1 (green) and mCherry (magenta). Scale bars: 50 µm.hrGFP
+**Figure 3.:** Representative images of (A) mCherry-immunoreactivity (-ir) and (B) Fos-ir of an animal with strong AAV contamination of the posterior Arc. (C) Number of Fos-ir neurons with mCherry-ir colocalization per section in the posterior Arc in the three groups 2 hr after the CNO injection. (Kruskal–Wallis test = 14.63; p < 0.0001), ***p < 0.001 vs. PMv-hit LH increase group, #p < 0.05 vs. PMv-hit no LH increase group. (D) Correlation between the number of mCherry-/Fos-ir neurons observed in the posterior Arc and the peak LH level in the three groups (Pearson r = 0.62; p = 0.002). (E) POMC-ir (green) in a mouse with viral contamination of the posterior Arc. Arrows: Fos-ir neurons (black) that coexpressed POMC and mCherry (magenta). Arrowheads: Fos-ir neurons that coexpressed POMC, but no mCherry, (F) Confocal high magnification image of a Fos-ir neuron coexpressing POMC and mCherry. (G) Confocal high magnification image of a Fos-ir neuron coexpressing POMC, but not mCherry. (H) GFP-ir (green) in a Kiss1hrGFP animal with viral contamination of the posterior Arc. Arrows: Fos-ir (black) neurons that coexpressed Kiss1hrGFP (green) and mCherry (magenta). (I, J) Confocal high magnification images of a Fos-ir neuron (arrow in H) coexpressing Kiss1hrGFP (green) and mCherry (magenta). Scale bars: 50 µm.
 
 Within the Arc, pro-opiomelanocortin (POMC) neurons coexpress LepRb and have been shown to stimulate the reproductive axis (Manfredi-Lozano et al., 2016). To understand if direct activation of these neurons could have played a role in the induction of LH, we evaluated the percentage of activated neurons that expressed POMC peptide and the extent of mCherry colocalization in Fos-ir POMC neurons in PMv-hit group with higher contamination of the Arc, that also had some of the highest LH peaks, and in three hM3Dq clozapine animals with elevated LH levels but low mCherry contamination in the Arc. Coexpression of POMC-ir was observed in 9.3 ± 2.6% (12.3 ± 5.0 neurons) of the Fos-ir neurons of the posterior Arc in the PMv-hit animals and 9.6 ± 3.1% (2.3 ± 1.3 neurons) in the hM3Dq clozapine animals. Of these POMC-/Fos-ir neurons, about 50% also coexpressed mCherry-ir (7.3 ± 3.2 neurons) in the PMv-hit animals, but almost none in the hM3Dq clozapine animals (0.3 ± 0.3 neurons, Figure 3E–G). The small number of mCherry/Fos-ir neurons suggests that contamination of POMC neurons may have only mild (if any) contribution to the higher increases in LH observed in some animals, but it is not determinant for inducing LH release.
 
 We and others have previously shown that only about 10% of Arc Kiss1 (KNDy) neurons of female mice coexpress LepR (Cravo et al., 2013; Donato et al., 2011; Louis et al., 2011; True et al., 2011). To assess if contamination of KNDy neurons could have contributed to the induction of LH, we used LeprCre; Kiss1hrGFP mouse model to access the expression of Fos-ir and/or mCherry-ir in KNDy neurons following AAV-hM3Dq injections in the PMv (n = 4 PMv-hits, Figure 1C). In these animals, only 2.5 ± 0.95% of Fos-ir neurons in the posterior Arc were also Kiss1hrGFP positive (1.8 ± 0.3 neurons), and most of these expressed mCherry, suggesting that one or two KNDy neurons were directly activated by the virus. The low numbers of KNDy neurons expressing Fos-ir in Kiss1hrGFP PMv-hit mice indicates the increase in LH does not require KNDy neuronal activation (Figure 3H–J) in agreement with previous studies from our group showing that direct leptin action in Kiss1 neurons is neither required nor sufficient for puberty and reproduction (Cravo et al., 2013).
 
-## Glutamate neurotransmission in LepRb cells is necessary for typical pubertal timing and estrous cycles
+### Glutamate neurotransmission in LepRb cells is necessary for typical pubertal timing and estrous cycles
 
 As most of LepRb PMv neurons are glutamatergic (Donato et al., 2011; Zuure et al., 2013), we generated mice that lack Slc17a6 in LepRb neurons (LeprΔVglut2 mice) to assess whether glutamatergic neurotransmission from LepRb cells is necessary for reproductive function.
 
@@ -79,13 +144,13 @@ As observed in a previous publication (Tong et al., 2007), virtually no Slc17a6 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93204/elife-93204-fig4-v1.jpg)
 
-**Figure 4.:** LeprΔVglut2 animals show an obese phenotype.(A–D) Micrographs of in situ hybridization showing colocalization between Lepr (cyan) and Slc17a6 (magenta) gene expression. Dorsomedial region of the ventromedial hypothalamic nucleus (VMHdm) in control Lepr (CreA), but no colocalization in experimental LeprΔVglut2 (B) females. Insets show high magnification images for the area in the dashed rectangles (C, D). Ventral premammillary nucleus (PMv) at large magnification in control Lepr (CreC), and experimental LeprΔVglut2 (D). Scale bars: 50 µm for A, B and 20 µm for insets and C, D. (E) Body mass in adult Lepr and CreLeprΔVglut2 males (genotype main effect; F1,10 = 13.1; p = 0.0047, post hoc comparison: week 20: t140 = 3.27; p = 0.019; week 26: t140 = 5.47; p < 0.0001). (F) Body mass in adult Lepr and CreLeprΔVglut2 females (genotype main effect; F1,11 = 4.34; p = 0.06; post hoc comparisons: week 23: t154 = 4.05; p = 0.0011; week 25: t154 = 3.1; p = 0.03; week 26: t154 = 5.59; p < 0.0001). The arrow indicates the age at which estrus cycling follow-up finished in this cohort. (G) Body composition in males (fat mass: t9 = 3.77; p = 0.004) and (H) in females (fat mass: t11 = 3.7; p = 0.0035). *p < 0.05, **p < 0.01, ***p < 0.001.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A–D) Micrographs of in situ hybridization showing colocalization between Lepr (cyan) and Slc17a6 (magenta) gene expression. Dorsomedial region of the ventromedial hypothalamic nucleus (VMHdm) in control LeprCre (A), but no colocalization in experimental LeprΔVglut2 (B) females. Insets show high magnification images for the area in the dashed rectangles (C, D). Ventral premammillary nucleus (PMv) at large magnification in control LeprCre (C), and experimental LeprΔVglut2 (D). Scale bars: 50 µm for A, B and 20 µm for insets and C, D. (E) Body mass in adult LeprCre and LeprΔVglut2 males (genotype main effect; F1,10 = 13.1; p = 0.0047, post hoc comparison: week 20: t140 = 3.27; p = 0.019; week 26: t140 = 5.47; p < 0.0001). (F) Body mass in adult LeprCre and LeprΔVglut2 females (genotype main effect; F1,11 = 4.34; p = 0.06; post hoc comparisons: week 23: t154 = 4.05; p = 0.0011; week 25: t154 = 3.1; p = 0.03; week 26: t154 = 5.59; p < 0.0001). The arrow indicates the age at which estrus cycling follow-up finished in this cohort. (G) Body composition in males (fat mass: t9 = 3.77; p = 0.004) and (H) in females (fat mass: t11 = 3.7; p = 0.0035). *p < 0.05, **p < 0.01, ***p < 0.001.
 
 We then assessed if the lack of Vglut2 in LepRb cells alters pubertal maturation and adult reproduction. A thorough assessment of the metabolic and reproductive phenotype of the LeprCre mouse was performed before (Garcia-Galiano et al., 2017), and we found that they are indistinguishable from littermates negative for Cre. Female LeprΔVglut2 and control LeprCre littermates had similar age of vaginal opening and showed no differences in body weight at puberty onset (Figure 5A, B). The day of first estrus, however, was delayed in LeprΔVglut2 mice (Figure 5C). Of note, no differences in body weight were observed at vaginal opening (puberty onset) and first estrus (puberty completion) between experimental and control groups (Figure 5D). In males, balanopreputial separation (BPS) was monitored from P25 as a sign of advancement of sexual maturation. No differences in age at BPS were found between LeprCre and LeprΔVglut2 littermates (Figure 5E). LeprΔVglut2 male mice showed larger body weight than LeprCre mice at the time of BPS (Figure 5F).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93204/elife-93204-fig5-v1.jpg)
 
-**Figure 5.:** LeprΔVglut2 females.(A) Age of vaginal opening (VO; t18 = 0.84; p = 0.41) and (B) body mass at vaginal opening (VO) (t18 = 1.47; p = 0.16) in females. (C) Age of first estrus (t14 = 2.45; p = 0.028) and (D) body mass at first estrus (t14 = 0.59; p = 0.56) in females. (E) Age of complete balanopreputial separation (BPS; t11 = 1.80; p = 0.1) and (F) body mass at BPS (t11 = 2.43; p = 0.033) in males. (G) Representative estrus cycle profiles from control Lepr and (CreH) experimental LeprΔVglut2 females (E: estrus, P: proestrus, M/D: metestrus/diestrus). (I) Cycle duration in adult females (t25 = 3.71; p = 0.001). (J) Time spent in each phase of the cycle during the 30 days studied. Estrus (t26 = 1.97; p = 0.059), proestrus (t26 = 2.81; p = 0.009), and diestrus (t26 = 2.39; p = 0.024). (K) Days spent from mating until the first litter was observed in females paired with proven male breeders (Mann–Whitney test; p = 0.32). *p < 0.05, **p < 0.01.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Age of vaginal opening (VO; t18 = 0.84; p = 0.41) and (B) body mass at vaginal opening (VO) (t18 = 1.47; p = 0.16) in females. (C) Age of first estrus (t14 = 2.45; p = 0.028) and (D) body mass at first estrus (t14 = 0.59; p = 0.56) in females. (E) Age of complete balanopreputial separation (BPS; t11 = 1.80; p = 0.1) and (F) body mass at BPS (t11 = 2.43; p = 0.033) in males. (G) Representative estrus cycle profiles from control LeprCre and (H) experimental LeprΔVglut2 females (E: estrus, P: proestrus, M/D: metestrus/diestrus). (I) Cycle duration in adult females (t25 = 3.71; p = 0.001). (J) Time spent in each phase of the cycle during the 30 days studied. Estrus (t26 = 1.97; p = 0.059), proestrus (t26 = 2.81; p = 0.009), and diestrus (t26 = 2.39; p = 0.024). (K) Days spent from mating until the first litter was observed in females paired with proven male breeders (Mann–Whitney test; p = 0.32). *p < 0.05, **p < 0.01.
 
 Length of estrous cycles was longer (10–16 weeks of age, before the difference in body weight, Figure 5G–I) and the number of cycles completed in 30 days was lower in LeprΔVglut2 mice compared to controls (LeprCre: 4.47 ± 0.30 cycles; LeprΔVglut2: 3.31 ± 0.36 cycles; t26 = 2.45; p = 0.021). Female LeprΔvglut2 spent similar time in estrus, less time in proestrus and more time in diestrus (Figure 5J). Analysis of female fertility showed that 75% of LeprΔVglut2 against 100% of control mice produced at least one litter for 60 days since mating. Comparing fertile females, no differences were observed in latency to pregnancy (Figure 5K) or in the number of pups in the first litter (LeprCre: 7.86 ± 1.14 pups; LeprΔVglut2: 7.50 ± 1.41 pups; t11 = 0.20; p = 0.85).
 
@@ -95,11 +160,11 @@ To gain insights into the underlying mechanisms associated with the disrupted re
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93204/elife-93204-fig6-v1.jpg)
 
-**Figure 6.:** LeprΔVglut2 female mice.Representative fluorescent photomicrograph of GnRH-immunoreactivity (-ir) in the arcuate nucleus (Arc) and median eminence (ME) in (A) control Vglut2 and (floxB) LeprΔVglut2 diestrous females. Scale bar: 100 µm. (C) GnRH-ir integrated density in the Arc in Vglut2 (floxn = 4) and LeprΔVglut2 (n = 3) females (t5 = 8.01; p = 0.0005). (D) Basal LH levels in Vglut2 (floxn = 7) and LeprΔVglut2 (n = 5) females (t10 = 1.91; p = 0.08). (E) LH levels in Lepr (Cren = 7) and LeprΔVglut2 (n = 6) females before and after a kisspeptin-10 (65 µ/kg) intraperitoneal (ip.) injection of kisspeptin at time = 0. Light gray: individual Lepr females, Light yellow: individual CreLeprΔVglut2 females. After the injection (time 7–28), LH levels were higher in control than in floxed females Mixed effects model: main effect for ‘time’ F1.14, 12.19 = 15.91, p = 0.001; ‘genotype’ F1, 11 = 8.26, p = 0.015; ‘time × genotype’ interaction: F3, 32 = 5.00, p = 0.006; Sidak’s post hoc effect for 7 min (t10.97 = 3.79, p = 0.01) and for 14 min (t9.4 = 3.22, p = 0.04). (F) Area under the curve (AUC) of LH levels after the kisspeptin injection (t11 = 3.14; p = 0.009). (G) Gnrhr (t10 = 0.86, p = 0.41), (H) Lhb (t10 = 1.47, p = 0.17), and (I) Fshb (t9 = 1.63, p = 0.14) relative to Actin B (Actb) mRNA levels in the pituitary of Vglut2 (floxn = 7) and LeprΔVglut2 (n = 5) females. (J) Kiss1 (t8 = 1.42, p = 0.19), (K) Pdyn (t8 = 0.02; p = 0.98), (L) Kiss1r (t8 = 1.44, p = 0.19), (M) Tac3r (t8 = 0.99, p = 0.35) and (N) Tac2 (t8 = 3.39, p = 0.009), relative to β-2-microglobulin (B2m) mRNA levels in the mediobasal hypothalamus of Vglut2 (floxn = 5) and LeprΔVglut2 (n = 5) females. *p < 0.05; **p < 0.01; ***p < 0.001.Figure 6—source data 1.Figure 6.
+**Figure 6.:** Representative fluorescent photomicrograph of GnRH-immunoreactivity (-ir) in the arcuate nucleus (Arc) and median eminence (ME) in (A) control Vglut2flox and (B) LeprΔVglut2 diestrous females. Scale bar: 100 µm. (C) GnRH-ir integrated density in the Arc in Vglut2flox (n = 4) and LeprΔVglut2 (n = 3) females (t5 = 8.01; p = 0.0005). (D) Basal LH levels in Vglut2flox (n = 7) and LeprΔVglut2 (n = 5) females (t10 = 1.91; p = 0.08). (E) LH levels in LeprCre (n = 7) and LeprΔVglut2 (n = 6) females before and after a kisspeptin-10 (65 µ/kg) intraperitoneal (ip.) injection of kisspeptin at time = 0. Light gray: individual LeprCre females, Light yellow: individual LeprΔVglut2 females. After the injection (time 7–28), LH levels were higher in control than in floxed females Mixed effects model: main effect for ‘time’ F1.14, 12.19 = 15.91, p = 0.001; ‘genotype’ F1, 11 = 8.26, p = 0.015; ‘time × genotype’ interaction: F3, 32 = 5.00, p = 0.006; Sidak’s post hoc effect for 7 min (t10.97 = 3.79, p = 0.01) and for 14 min (t9.4 = 3.22, p = 0.04). (F) Area under the curve (AUC) of LH levels after the kisspeptin injection (t11 = 3.14; p = 0.009). (G) Gnrhr (t10 = 0.86, p = 0.41), (H) Lhb (t10 = 1.47, p = 0.17), and (I) Fshb (t9 = 1.63, p = 0.14) relative to Actin B (Actb) mRNA levels in the pituitary of Vglut2flox (n = 7) and LeprΔVglut2 (n = 5) females. (J) Kiss1 (t8 = 1.42, p = 0.19), (K) Pdyn (t8 = 0.02; p = 0.98), (L) Kiss1r (t8 = 1.44, p = 0.19), (M) Tac3r (t8 = 0.99, p = 0.35) and (N) Tac2 (t8 = 3.39, p = 0.009), relative to β-2-microglobulin (B2m) mRNA levels in the mediobasal hypothalamus of Vglut2flox (n = 5) and LeprΔVglut2 (n = 5) females. *p < 0.05; **p < 0.01; ***p < 0.001.
 
 Pituitary expression of Gnrhr, Lhb, Fshb (Figure 6G–I) and the common glycoprotein alpha subunit (Cga, Vglut2flox: 100 ± 17.47%; LeprΔVglut2: 245.3 ± 89.91%; t8 = 1.20; p = 0.26) relative to actin b (Actb) expression was similar between genotypes. Mediobasal hypothalamic expression of Kiss1, Pdyn, Kiss1r, and Tac3r relative to β-2-microglobulin (B2m) expression was similar between control and experimental females (Figure 6J–M). However, relative Tac2 expression was about 50% lower in LeprΔVglut2 compared to controls (Figure 6N).
 
-## The action of LepRb PMv neurons in sexual maturation requires glutamate
+### The action of LepRb PMv neurons in sexual maturation requires glutamate
 
 In previous studies, we showed that endogenous reexpression of LepRb in the PMv-induced puberty and improved fertility of LepRb null mice (Donato et al., 2011; Mahany et al., 2018). To evaluate if glutamate neurotransmission is required for leptin-induced pubertal development, we produced a dual-floxed mouse model. LeprloxTB mice that lack LepRb were crossed with a Vglut2flox line, to generate the LeprloxTB;Vglut2flox mice, in which stereotaxic delivery of AAV-Cre restores Lepr while deleting Slc17a6 in the PMv.
 
@@ -107,7 +172,7 @@ The LeprloxTB mice show no leptin-induced pSTAT3-ir (Figure 7A, B, Q, S). Expres
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93204/elife-93204-fig7-v1.jpg)
 
-**Figure 7.:** (A, B, I, M) Microphotographs of the PMv showing pSTAT3-ir following leptin administration. Note lack of pSTAT3-ir in Lepr mouse. (loxTBC, D, J, N) Darkfield microphotographs showing Slc17a6 mRNA (silver grains) in the PMv. Note decreased Slc17a6 mRNA expression in Lepr;Vglut2loxTB mice injected with AAV-Cre. (floxE, F, K, O) Microphotographs of representative single uterine horns. Note lack of uterine growth in Lepr mouse and in loxTBLepr;Vglut2loxTB mouse injected with AAV-Cre. (floxG, H, L, P) Microphotographs of representative ovary sections. Note lack of corpora lutea in Lepr mouse and in loxTBLepr;Vglut2loxTB mouse injected with AAV-Cre. 3V: third ventricle, Arc: arcuate nucleus, f: fornix, CL: floxCorpus luteum. Scale bars: 100 µm. (Q) Number of pSTAT3 expressing cells in the PMv in wild-type (n = 5), Lepr (loxTBn = 5), AAV-CRE injected LepR (loxTBn = 4), and AAV-CRE injected Lepr;Vglut2loxTB (floxn = 3) (F3,13 = 73.53, p < 0.0001). Different capital letters indicate groups that are significantly different to the others (at least p<0.01) (R) Quantification of the Slc17a6 hybridization signal in the PMv AAV-CRE injected Lepr (loxTBn = 4), and AAV-CRE injected Lepr;Vglut2loxTB (floxn = 6) (t8 = 4.20; p = 0.003). (S) Number of pSTAT3 expressing cells in the Arc (F3,16 = 171.8, p < 0.0001). (T) Number of corpora lutea in the ovary (F3,17 = 31.16, p < 0.0001). **p < 0.01; ***p < 0.001.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A, B, I, M) Microphotographs of the PMv showing pSTAT3-ir following leptin administration. Note lack of pSTAT3-ir in LeprloxTB mouse. (C, D, J, N) Darkfield microphotographs showing Slc17a6 mRNA (silver grains) in the PMv. Note decreased Slc17a6 mRNA expression in LeprloxTB;Vglut2flox mice injected with AAV-Cre. (E, F, K, O) Microphotographs of representative single uterine horns. Note lack of uterine growth in LeprloxTB mouse and in LeprloxTB;Vglut2flox mouse injected with AAV-Cre. (G, H, L, P) Microphotographs of representative ovary sections. Note lack of corpora lutea in LeprloxTB mouse and in LeprloxTB;Vglut2flox mouse injected with AAV-Cre. 3V: third ventricle, Arc: arcuate nucleus, f: fornix, CL: Corpus luteum. Scale bars: 100 µm. (Q) Number of pSTAT3 expressing cells in the PMv in wild-type (n = 5), LeprloxTB (n = 5), AAV-CRE injected LepRloxTB (n = 4), and AAV-CRE injected LeprloxTB;Vglut2flox (n = 3) (F3,13 = 73.53, p < 0.0001). Different capital letters indicate groups that are significantly different to the others (at least p<0.01) (R) Quantification of the Slc17a6 hybridization signal in the PMv AAV-CRE injected LeprloxTB (n = 4), and AAV-CRE injected LeprloxTB;Vglut2flox (n = 6) (t8 = 4.20; p = 0.003). (S) Number of pSTAT3 expressing cells in the Arc (F3,16 = 171.8, p < 0.0001). (T) Number of corpora lutea in the ovary (F3,17 = 31.16, p < 0.0001). **p < 0.01; ***p < 0.001.
 
 We obtained six LeprloxTB;Vglut2flox female mice with AAV-Cre centered in the PMv and two mice with AAV-Cre outside the PMv. Reexpression of LepRb was confirmed by the presence of leptin-induced pSTAT3-ir in the PMv neurons and the deletion of Vglut2 was confirmed by a decreased Slc17a6 mRNA expression, compared to the LeprloxTB with AAV-Cre. Mice with successful injections (n = 6) showed an increased number of leptin-induced pSTAT3-ir neurons, similar to that obtained in AAV-Cre injected LeprloxTB (Figure 7M, Q). Mice with AAV-Cre injections outside the PMv (n = 2) showed pSTAT3-ir in adjacent nuclei, that is, dorsomedial and ventromedial nuclei of the hypothalamus and were removed from the analysis. Variable contamination of the Arc was evident but the number of pSTAT3-ir was similarly negligible in AAV-Cre injected LeprloxTB and LeprloxTB;Vglut2flox mice (Figure 7I, M, S). Comparing AAV-Cre injected groups, Slc17a6 mRNA was decreased only in LeprloxTB;Vglut2flox mice with injections successfully targeting PMv neurons (Figure 7N, R).
 
@@ -141,59 +206,241 @@ LepRb PMv neurons also express nitric oxide synthase (nNOS, Nos1 gene) required 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The Lepr-null (LeprloxTB, kindly provided by Dr. Elmquist, UTSW Medical Center, Dallas, TX, available in JAX, stock 018989) (Berglund et al., 2012), the LeprCre knock-in (Lepr-Cre, JAX; stock 032457) (Leshan et al., 2006), Kiss1hrGFP (Kiss1-hrGFP; JAX, stock 023425) (Cravo et al., 2013), Vglut2flox (Slc17a6 or Vglut2 gene, JAX; Stock 012898) (Tong et al., 2007), and C57BL/6 (JAX; Stock 000664) mice were used for experiments. They were held in a 12:12 light:dark cycle (lights on at 6 AM), temperature-controlled (21–23°C) environment with ad libitum access to water and food. Mice were fed a low-phytoestrogen diet (Envigo 2016 diet) and a higher protein and fat phytoestrogen reduced diet (Envigo 2019 Teklad diet) when breeding. A phytoestrogen-reduced diet was used to avoid the exogenous effect of estrogen on reproductive physiology. Animals were bred and housed in our colony under the guidelines of the University of Michigan IACUC (PRO00010420). Procedures and experiments were carried out in accordance with the guidelines established by the National Institutes of Health ‘Guide for the Care and Use of Laboratory Animals’ and approved by the University of Michigan Committee on Use and Care of Animals.
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 Unilateral stereotaxic injections of pAAV8.CMV.HI.eGFP-Cre.WPRE.SV40 (AAV-Cre) and pAAV2/7.CMV.PI.EGFP.WPRE.bGH (AAV-GFP) (Vector Core, University of Pennsylvania) in LeprloxTB, LeprloxTB;Vglut2flox and wild-type females, and unilateral stereotaxic injections of pAAV8-hSyn-DIO-hM3D(Gq)-mCherry (AAV-hM3Dq, Addgene plasmid # 44361) (Krashes et al., 2011) from Bryan Roth, and of pAAV8-hSyn-DIO-mCherry (AAV-mCherry, Addgene plasmid # 50459) in LeprCre females were performed using a picospritzer attached to a glass pipette under isoflurane anesthesia in a stereotaxic apparatus (Kopf) (Sáenz de Miera et al., 2023). The stereotaxic coordinates for injection in PMv, measured from the rostral rhinal vein were [anteroposterior: −5.4 mm], the exposed superior sagittal sinus [mediolateral: ±0.5 mm], and from the top of the dura-mater [dorsoventral −5.4 mm]. Mice were followed twice daily for the first 3 days after surgery and daily for 7 more days for appropriate recovery. Experiments were performed 1 month after surgery.
 
-## Activation of PMv LepRb neurons and its effect on LH release
+### Activation of PMv LepRb neurons and its effect on LH release
 
 Adult LeprCre females (8–10 weeks old) received unilateral stereotaxic injections of ~50 nl of AAV-hM3Dq in the PMv. One month later mice were transferred to the Mouse Metabolic Phenotyping Center-Live (U2C – NIDDK) where they were cannulated in the aortic artery for serial blood sampling and the jugular vein for iv. injections (Sáenz de Miera et al., 2023). They were then connected to the Culex Automated Blood Sampling System 3 days after surgery. The following day, three blood samples were taken every 10 min to establish baseline hormonal levels, followed by iv. injection of either CNO (n = 19) or clozapine (n = 4) at (0.5 mg/kg in 50 µl, time 0). All injections were performed at the same time of the day, 1:00 PM. Blood samples were sequentially taken following the injection every 10 min for 1 hr. A negative control group received a stereotaxic injection of AAV-mCherry then a month later they were cannulated and the same protocol for blood collection was used. These animals received an injection of CNO on the day of the experiment (n = 5). An additional group of LeprCre females with no AAV injections were cannulated and received an iv. injection of clozapine (n = 7) and were used as additional controls for blood collection. All animals were disconnected from the sampling system 2 hr after injection, a vaginal smear was collected to assess the phase of the estrous cycle and they were perfused under isoflurane anesthesia. Brains were collected and processed for histology. Blood samples were removed from the Culex machine immediately following the 2 hr mark and kept on ice. Samples were centrifuged at 14,000 × g for 30 s at 4°C and plasma removed and stored at −80°C until hormone analysis.
 
-## Assessment of body weight and reproductive phenotype
+### Assessment of body weight and reproductive phenotype
 
 To inactivate glutamate in leptin responsive cells, LeprCre mice were crossed with mice carrying loxP-modified Slc17a6 alleles. Our experimental mice were homozygous for the LeprCre allele (LeprCre/Cre) and homozygous for the Vglut2-loxP allele (Vglut2fl/fl). Our controls consisted of mice homozygous for the Cre allele (LeprCre/Cre;Vglut2+/+, named LeprCre) or homozygous for the Vglut2-loxP allele (Lepr+/+;Vglut2fl/fl, named Vglut2flox). Both experimental (LeprCre/Cre;Vglut2fl/fl, named LeprΔVglut2) and control mice were derived from the same litters with parents homozygous for one of the genes and heterozygous for the other gene (LeprCre/Cre;Vglut2fl/+ or LeprCre/+;Vglut2fl/fl). Mice were genotyped at weaning (21 days) and again at the end of the experiments.
 
 Timing of puberty onset was monitored daily in experimental (LeprΔVglut2) and control (LeprCre) mice for external signs of puberty (n = 7–13). In females, vaginal opening was monitored from postnatal day 19 (P19), followed by the timing for the occurrence of first estrus, a sign of puberty completion defined by the identification of keratinized cells for 2 consecutive days after 2 previous days with leukocytes in the vaginal lavage or by an estrus stage preceded by a proestrus stage (Garcia-Galiano et al., 2017). In males, the day of BPS was monitored from P25. Body weight for each animal was obtained on the day these events were observed. Animals were grown in normalized litters (5–7 pups/litter). Estrous cycles were assessed in young adult virgin mice. Females were housed with proven male breeders and monitored for fertility, latency to pregnancy, and number of pups per litter. Body weight of adult male and female mice was monitored weekly from 13 to 26 weeks of age. At the end of the experiment, total body weight, body fat, and lean mass were measured in conscious mice using a nuclear magnetic resonance-based analyzer (EchoMRI, 4in1-900).
 
-## Kisspeptin injections
+### Kisspeptin injections
 
 Adult LeprCre and LeprΔVglut2 females (3–6 months) were transferred to the Mouse Metabolic Phenotyping Center-Live where they were cannulated in the aortic artery for serial blood sampling. Blood samples for baseline LH were taken every 7 min for 30 min before the injection. They then received an ip. injection of kisspeptin 65 µg/kg (kisspeptin-10, #048-56 Phoenix Pharmaceuticals) (Wang et al., 2019) and blood was then sampled every 7 min for 30 min.
 
-## Endogenous reexpression of Lepr and concomitant deletion ofSlc17a6 in PMv neurons
+### Endogenous reexpression of Lepr and concomitant deletion ofSlc17a6 in PMv neurons
 
 The LepR null (LeprloxTB) mouse model has a loxP-flanked transcription-blocking cassette (loxTB) inserted between exons 16 and 17 of the Lepr gene (Berglund et al., 2012; Donato et al., 2011). The LeprloxTB mice lack the LepR intracellular domain and are obese, diabetic, and infertile. Cre-mediated excision of loxP sites generates LepR with signaling capacity. The LeprloxTB mice were crossed with the Vglut2-floxed mice, which carry loxP sites flanking exon 2 of Slc17a6, to generate the LeprloxTB;Vglut2flox allowing for Cre-induced restoration of LepR and deletion of Vglut2 in PMv neurons. Mice were monitored for puberty and fertility as described above. Sixty days after introduction of the male breeders, females were anesthetized, perfused and brains were processed as described below.
 
 Unilateral stereotaxic injections of AAV-Cre were used to restore LepR signaling in the PMv in homozygous LeprloxTB 7- to 10-week-old females mice (previously described in Mahany et al., 2018) to restore LepR signaling and to selectively delete Slc17a6 in the PMv of LeprloxTB;Vglut2flox homozygous females (n = 9). An additional cohort of LeprloxTB was injected with AAV-Cre and included as the positive control (n = 5). WT mice were used as positive (fertile) controls (n = 13, six with AAV-GFP injection; seven without injections) (Mahany et al., 2018) and LeprloxTB (n = 4) mice were used as negative (infertile) controls. Six to eight weeks after surgery, animals were ip. injected with leptin (3 mg/kg) 1.5 hr before perfusion. Brain, uterus, and ovaries were collected. Reproductive maturation was assessed by vaginal opening, uterus size and presence of ovarian corpus lutea. Brain tissue was processed for GFP immunohistochemistry and Slc17a6 in situ hybridization (ISH).
 
-## Tissue collection and histology
+### Tissue collection and histology
 
 Mice were deeply anesthetized with isoflurane (Fluriso, VetOne) and intracardially perfused with 0.1 M phosphate-buffered saline (PBS) followed by 10% normal buffered formalin. Brains were dissected and kept in post-fixative (20% sucrose in fixative) for 4 hr and cryoprotected overnight in 20% sucrose in PBS. Brains were cut into four series of 30 µm coronal sections using a freezing microtome (Leica SM 2010R) and stored at −20°C in cryoprotectant until used. Brains of animals treated with leptin were postfixed for only 2 hr and were processed for pSTAT3-ir to validate LepR reexpression (Münzberg et al., 2003; Williams et al., 2011). Reproductive organs were fixed in 10% formalin and processed using paraffin-embedded protocol and Hematoxylin and Eosin (H&E) staining (Donato et al., 2011; Mahany et al., 2018).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Floating sections were rinsed with PBS and blocked with 3% normal donkey serum in PBS + % Triton X-100 for 1 hr at room temperature. Sections were incubated overnight at 4°C with primary antibodies in blocking buffer. Primary antibodies used are listed in Table 2. Sections were rinsed and incubated with secondary antibodies for 1 hr and rinsed in PBS. Secondary antibodies used are listed in Table 2. Sections were mounted on gelatin-precoated slides and coverslipped with Fluoromont-G (Electron Microscopy Sciences) mounting medium.
 
+**Table 2.**
+ Antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Protein target</th>
+      <th>Host organism</th>
+      <th>Dilution used</th>
+      <th>Vendor and cat#</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anti-GFP (Chicken Antibodies, IgY Fraction)</td>
+      <td>Recombinant GFP null</td>
+      <td>Chicken</td>
+      <td>1:10,000</td>
+      <td>Aves LabsCat# GFP-1010</td>
+      <td>RRID:AB_2307313</td>
+    </tr>
+    <tr>
+      <td>mCherry monoclonal (16D7)</td>
+      <td>mCherry tag</td>
+      <td>Rat</td>
+      <td>1:5000</td>
+      <td>Thermo Fisher ScientificCat# M11217</td>
+      <td>RRID:AB_2536611</td>
+    </tr>
+    <tr>
+      <td>ABE457 | Anti-cFos</td>
+      <td>N-terminus cFos</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>MilliporeCat# ABE457</td>
+      <td>RRID:AB_2631318</td>
+    </tr>
+    <tr>
+      <td>Pro-opiomelanocortin Precursor POMC (27-52) antibody</td>
+      <td>Aminoacids 27–52 of porcine POMC peptide null</td>
+      <td>Rabbit</td>
+      <td>1:10,000</td>
+      <td>Phoenix PharmaceuticalsCat# H-029-30,</td>
+      <td>RRID:AB_2307442</td>
+    </tr>
+    <tr>
+      <td>Anti LHRH (GnRH)</td>
+      <td>Synthetic LHRH</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Immunostar Cat# 20075</td>
+      <td>RRID:AB_572248</td>
+    </tr>
+    <tr>
+      <td>Phospho-Stat-3 (tyr705)</td>
+      <td>Phospho-Stat-3 (tyr705)</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Cell Signaling Technology Cat# 9131</td>
+      <td>RRID:AB_331586</td>
+    </tr>
+    <tr>
+      <td>Goat anti-Chicken IgY, Alexa Fluor 488</td>
+      <td>Chicken, IgY (H+L)</td>
+      <td>Goat</td>
+      <td>1:500</td>
+      <td>Thermo Fisher ScientificCat# A-11039</td>
+      <td>RRID:AB_2534096</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-Rat IgG, AlexaFluor 594</td>
+      <td>Rat IgG (H+L)</td>
+      <td>Donkey</td>
+      <td>1:500</td>
+      <td>Thermo Fisher ScientificCat# A-21209</td>
+      <td>RRID:AB_2535795</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-Rabbit IgG, AlexaFluor 488</td>
+      <td>Rabbit IgG (H+L)</td>
+      <td>Donkey</td>
+      <td>1:500</td>
+      <td>Thermo Fisher ScientificCat# A-21206</td>
+      <td>RRID:AB_2535792</td>
+    </tr>
+    <tr>
+      <td>Biotin-SP-conjugated AffiniPure Donkey Anti-Rabbit IgG</td>
+      <td>Rabbit IgG (H+L)</td>
+      <td>Donkey</td>
+      <td>1:1000</td>
+      <td>Jackson ImmunoResearch Labs Cat# 711-065-152</td>
+      <td>RRID:AB_2340593</td>
+    </tr>
+  </tbody>
+</table>
+
 pSTAT3 immunoreactivity was performed to assess reactivation of functional leptin receptor. Brain sections were pretreated with 30% H2O2 to block endogenous peroxidase activity, 0.3% glycine, and 0.03% sodium dodecyl sulphate prior to primary antibody incubation. Tissue was blocked in 3% normal donkey serum + 0.25% Triton in PBS for 1 hr and incubated in primary rabbit anti-pSTAT3 (Table 2) for 48 hr at 4°C. Primary antibody was detected using a biotinylated secondary antibody (Table 2) by avidin–biotin peroxidase method (ABC Kit, Vector Laboratories) using diaminobenzidine (Sigma) as chromogen.
 
-## In situ hybridization
+### In situ hybridization
 
 Single ISH was performed to determine deletion of Slc17a6 in PMv neurons (n = 9 experimental vs. n = 4 control). Briefly, a series of brain sections were mounted onto SuperFrost plus slides (Thermo Fisher Scientific), fixed in 10% NBF for 20 min and cleared with xylene for 15 min. Slides were boiled in sodium citrate buffer (pH 6.0) for 10 min. The Slc17a6 DNA template was generated from mouse hypothalamic RNA by polymerase chain reaction(PCR) amplification. The following primers were used to amplify a 909 base-pair sequence in the gene encoding Slc17a6 (exon 2 of the Scl7a6 gene): forward (5′ CCGGGGAAAGAGGGGATAAAG 3′) and reverse (5′ GTAGACGGGCATGGATGTGA 3′). The antisense radio-labeled 35S- Slc17a6 riboprobe was generated by in vitro transcription using a T7 RNA polymerase (Promega). 35S-labeled riboprobe was diluted in hybridization solution (50% formamide, 10 mM Tris–HCl pH 8.0, 5 mg tRNA, 10 mM dithiothreitol, 10% dextran sulfate, 0.3 M NaCl, 1 mM ethylenediaminetetraacetic acid (EDTA), and 1× Denhardt’s solution), and brain slices were hybridized overnight at 57°C. Slides were then incubated in 0.002% RNase A followed by stringency washes in SSC (sodium chloride-sodium citrate buffer). Sections were dipped in NTB autoradiographic emulsion (Kodak) and stored in light-protected slide boxes at 4°C for 2 weeks. Signal was developed with developer and fixer (Carestream, Rochester, NY, USA), and the slides were cover-slipped with DPX (Electron Microscopy Sciences) mounting medium.
 
 To confirm the deletion of Slc17a6 in LepR neurons we did chromogenic ISH using BaseScope Duplex (n = 4 LeprCre vs. n = 4 LeprΔVglut2). Fresh frozen 16 µm coronal sections were collected on Superfrost Excell slides (Fisher) and stored at −80°C. Tissue sections were fixed in 10% NBF for 30 min and then dehydrated with a series of graded alcohols. The rest of the procedure was done with BaseScope Duplex Reagent Kit (ACD, #323800). Briefly, endogenous peroxidase was blocked with H2O2 for 10 min and tissue was digested with Protease IV for 10 min at room temperature. Sections were hybridized with BaseScope probes targeting Lepr (BA-Mm-Lepr-1zz-st, catalog # 895341) and a probe designed against exon 2 of Slc17a6 (BA-Mm-Slc17a6-1zz-st-C2, # 1240891-C2) for 2 hr at 40°C. Following hybridization, amplification, and detection were done using the BaseScope Duplex Detection Reagents ACD, #323810, and probes were detected using Green (Lepr) and Fast Red (Slc17a6) and counterstained with 50% Gill’s hematoxylin for 30 s.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Vglut2flox (n = 7) and LeprΔVglut2 (n = 5) females in diestrus were euthanized to collect blood for basal LH analysis and dissect tissues for quantitative PCR (qPCR). Fresh frozen pituitaries and mediobasal hypothalamus were homogenized in Qiazol (QIAGEN) and total RNA was extracted using chloroform and precipitated with isopropanol. Complementary DNA (cDNA) was synthetized using MultiScribe reverse transcriptase and random primers (Invitrogen) from 1.5 or 2 µg of RNA and diluted to 10 ng/µl. Gene expression was analyzed by qPCR in 20 ng of cDNA in triplicate 10 µl reactions using SYBR Green Taq MasterMix (Bio-Rad), following the manufacturer’s instructions in a CFX-384 Real-Time PCR thermocycler (Bio-Rad). The primers used are specified in Table 3. mRNA expression in mutant vs. control samples was determined using relative gene copy numbers by the comparative threshold (Ct) method. The fold gene expression was calculated as 2−ΔΔCt and shown as a percentage of relative gene expression in the control group.
 
-## Hormone profile
+**Table 3.**
+ Quantitative PCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer sequence</th>
+      <th>NCBI accession No.</th>
+      <th>Vendor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actb</td>
+      <td>Fwd 5′-GGCTGTATTCCCCTCCATCG-3′Rev 5′-CCAGTTGGTAACAATGCCATGT-3′</td>
+      <td>NM_007393.5</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>B2m</td>
+      <td>Fwd 5′-TCTCACTGACCGGCCTGTAT-3′Rev 5′-GATCACATGTCTCGATCCCAGT-3′</td>
+      <td>NM_009735.3</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Cga</td>
+      <td>Fwd 5′-CCTCAGATCGACAATCACCTG-3′Rev 5′-AGCATGACCAGAATGACAGC-3′</td>
+      <td>NM_009889.2</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Fshb</td>
+      <td>Fwd 5′-CTGGTGCTGGAGAGCAATCT-3′Rev 5′- ACTTTCTGGGTATTGGGCCG-3′</td>
+      <td>NM_008045.3</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Kiss1</td>
+      <td>Fwd 5′-GGCAAAAGTGAAGCCTGGAT-3′Rev 5′-GATTCCTTTTCCCAGGCATT-3′</td>
+      <td>NM_178260.4</td>
+      <td>MWG|operon</td>
+    </tr>
+    <tr>
+      <td>Kiss1r</td>
+      <td>Fwd 5′-TGGCTGGTTCCCCTGTTTTT-3′Rev 5′-GCAGCCAGGTTAGCGATGTA-3′</td>
+      <td>NM_053244.5</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Gnrhr</td>
+      <td>Fwd 5′-TCTTCATCATCCCCCTCCTC-3′Rev 5′-GGAGTCCAGCAGACGACAAA-3′</td>
+      <td>NM_010323.2</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Lhb</td>
+      <td>Fwd 5′-CCAGTCTGCATCACCTTCAC-3′Rev 5′- CAGCTGAGGGCTACAGGAAAG-3′</td>
+      <td>NM_008497.2</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Pdyn</td>
+      <td>Fwd 5′-CGTTGCTGTCAAGATCTGTTG-3′Rev 5′-AGGCAGTCCGCCATAACATT-3′</td>
+      <td>NM_001286502.1</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Tac2</td>
+      <td>Fwd 5′-TCTGTGTGGGATGTAAAGGAGGG-3′Rev 5′-GACAGCCGCAAACAGCATGG-3′</td>
+      <td>NM_001199971.1</td>
+      <td>IDT</td>
+    </tr>
+    <tr>
+      <td>Tac3r</td>
+      <td>Fwd 5′-TAAAAGTCATGCCAGGCCGT-3′Rev 5′-AGGTGACACCCATGATGAGC-3′</td>
+      <td>NM_021382.6</td>
+      <td>IDT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Hormone profile
 
 For LH assay, sera were sent to the University of Virginia Ligand Assay and Core of the Center for Research in Reproduction (Charlottesville, Virginia, USA), where serum LH was measured by ultra-sensitive LH ELISA. This in-house method is based on Steyn et al., 2013. The capture monoclonal antibody (anti-bovine LH β subunit, 518B7) was provided by Janet Roser, University of California. The detection polyclonal antibody (rabbit LH antiserum, AFP240580Rb) was provided by the National Hormone and Peptide Program (NHPP). HRP-conjugated polyclonal antibody (goat anti-rabbit) was purchased from DakoCytomation (Glostrup, Denmark; D048701-2). Mouse LH reference prep (AFP5306A; NHPP) was used as the assay standard. The Limit of Quantitation (Functional Sensitivity) was defined as the lowest concentration that demonstrates accuracy within 20% of expected values and intra-assay coefficient of variation (%CV)<20% and was determined by serial dilutions of a defined sample pool. Intra-assay %CV is 2.2%. Inter-assay %CVs were 7.3% (Low QC, 0.13 ng/ml), 5.0% (Medium QC, 0.8 ng/ml), and 6.5% (High QC, 2.3 ng/ml). Functional sensitivity was 0.016 ng/ml. with an assay reportable range of 0.016–4.0 ng/ml and intra-assay CV of 6.24%.
 
-## Image and data analysis
+### Image and data analysis
 
 Photomicrographs were acquired using Axio Imager M2 (Carl Zeiss Microscopy). Confocal microscopy images were acquired using NIS-Elements on a Nikon N-SIM+ A1R microscope with a resonance scanner. For cell quantification, ×40 images were used. Neuronal counting and coexpression analysis were done using the ‘Freehand selection’ tool to outline the areas of interest and the ‘Multi-point selection’ and ‘Region of Interest manager’ tools in ImageJ (NIH) to compare the same neurons across different color channels. Sections containing the PMv were analyzed (Bregma ~−2.3/−2.70, Paxinos Brain atlas) and adjacent nuclei were also analyzed to determine the degree of viral contamination. Quantification of GnRH fibers was performed in 2 consecutive ×20 images of the Arcuate nucleus (Bregma ~−2.06, Paxinos Brain atlas). For each image, a background value was measured and subtracted from the image. A 250 µm wide × 140 µm high rectangle was placed on the edge of the 3V wall to cover Arc GnRH-ir, carefully avoiding the saturated expression in the tuberoinfundibular sulcus region, and integrated density (mean pixel intensity × area) of the signal was quantified.
 

@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02ws1xc11 Neuropsychology and Functional Neuroimaging; Jaume I University Castellón de la Plana Spain
+1. Neuropsychology and Functional Neuroimaging; Jaume I University Castellón de la Plana Spain ([ROR:02ws1xc11](https://ror.org/02ws1xc11))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ The primary aim of this study was to investigate the relationship between the la
 
 ## Results
 
-## Inhibitory control shifts its lateralization according to language production
+### Inhibitory control shifts its lateralization according to language production
 
 Inhibitory control components during the stop-signal task were defined using four Regions Of Interest (ROIs) and subsequently analyzed through a MANOVA. This analysis included Hemisphere and Region as within-subject factors and Group (typical/atypical) as a between-subject factor. Examination of the simple effects across each level of Region revealed that all the tested structures displayed a statistically significant Hemisphere × Group interaction (pars opercularis F1,84=25.59, p<0.001; pars triangularis F1,84=19.95, p<0.001; preSMA F1,84=7.63, p=0.028; STN F1,84=14.24, p<0.001; p values Bonferroni-adjusted; see Figure 1a). In other words, depending on the lateralization group, all four regions appeared to exhibit a leftward (atypical group) or rightward (typical group) lateralization of their BOLD signal during the ‘correct stop >correct go’ condition of the stop-signal task.
 
@@ -46,11 +46,148 @@ Finally, the Pearson’s correlation between the frontal LIs (pars opercularis +
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86797/elife-86797-fig2-v1.jpg)
 
-**Figure 2.:** r = −0.583, two-tailed p<0.001, R=0.339. Negative values indicate rightward lateralization, whereas positive values indicate leftward lateralization. Segregated and ambilateral phenotypes are also depicted according to the background color. The green area corresponds to segregated individuals (both functions strongly lateralized), and the red area corresponds to integrated individuals (at least one function ambilaterally controlled). Numbers inside each quadrant denote the number of individuals (n) contained in it. Each individual datapoint is symbolized according to its functional organization: 〇=typical segregation; ⬤=reversed segregation; △=ambilateral inhibition; ▽=ambilateral language; ◇=ambilateral language and inhibition.2
+**Figure 2.:** r = −0.583, two-tailed p<0.001, R2=0.339. Negative values indicate rightward lateralization, whereas positive values indicate leftward lateralization. Segregated and ambilateral phenotypes are also depicted according to the background color. The green area corresponds to segregated individuals (both functions strongly lateralized), and the red area corresponds to integrated individuals (at least one function ambilaterally controlled). Numbers inside each quadrant denote the number of individuals (n) contained in it. Each individual datapoint is symbolized according to its functional organization: 〇=typical segregation; ⬤=reversed segregation; △=ambilateral inhibition; ▽=ambilateral language; ◇=ambilateral language and inhibition.
 
-## Laterality indexes correlate to interhemispheric functional connectivity, callosal volume and preclinical markers
+### Laterality indexes correlate to interhemispheric functional connectivity, callosal volume and preclinical markers
 
 Correlational analyses revealed certain links between the functional lateralization of both tasks and behavioral, neuroanatomical and connectivity measures (Table 1).
+
+**Table 1.**
+ Spearman’s partial correlations between task LIs and neuroanatomical plus behavioral variables.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Verb generation task LI</th>
+      <th colspan="2">Stop-signal task LI</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Spearman’s ρ</th>
+      <th>p</th>
+      <th>Spearman’s ρ</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Callosal genu volume</td>
+      <td>−0.249</td>
+      <td>0.021*</td>
+      <td>0.251</td>
+      <td>0.02*</td>
+    </tr>
+    <tr>
+      <td>Callosal body volume</td>
+      <td>−0.258</td>
+      <td>0.017*</td>
+      <td>0.132</td>
+      <td>0.224</td>
+    </tr>
+    <tr>
+      <td>Callosal splenium volume</td>
+      <td>−0.249</td>
+      <td>0.021*</td>
+      <td>0.118</td>
+      <td>0.279</td>
+    </tr>
+    <tr>
+      <td>Pars Opercularis VMHC</td>
+      <td>−0.062</td>
+      <td>0.584</td>
+      <td>0.148</td>
+      <td>0.192</td>
+    </tr>
+    <tr>
+      <td>Pars Triangularis VMHC</td>
+      <td>−0.119</td>
+      <td>0.295</td>
+      <td>0.258</td>
+      <td>0.022*</td>
+    </tr>
+    <tr>
+      <td>preSMA VMHC</td>
+      <td>0.052</td>
+      <td>0.647</td>
+      <td>0.037</td>
+      <td>0.748</td>
+    </tr>
+    <tr>
+      <td>STN VMHC</td>
+      <td>0.033</td>
+      <td>0.772</td>
+      <td>0.217</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>‘Go’ reaction time</td>
+      <td>0.125</td>
+      <td>0.251</td>
+      <td>−0.041</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>‘Go’ accuracy</td>
+      <td>−0.076</td>
+      <td>0.489</td>
+      <td>0.039</td>
+      <td>0.724</td>
+    </tr>
+    <tr>
+      <td>SSRT</td>
+      <td>0.173</td>
+      <td>0.111</td>
+      <td>−0.038</td>
+      <td>0.726</td>
+    </tr>
+    <tr>
+      <td>Reading length accuracy</td>
+      <td>−0.237</td>
+      <td>0.028*</td>
+      <td>0.214</td>
+      <td>0.047*</td>
+    </tr>
+    <tr>
+      <td>Reading familiarity accuracy</td>
+      <td>−0.232</td>
+      <td>0.032*</td>
+      <td>0.301</td>
+      <td>0.005**</td>
+    </tr>
+    <tr>
+      <td>Reading length time</td>
+      <td>0.054</td>
+      <td>0.622</td>
+      <td>−0.184</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>Reading familiarity time</td>
+      <td>0.091</td>
+      <td>0.403</td>
+      <td>−0.198</td>
+      <td>0.091</td>
+    </tr>
+    <tr>
+      <td>SPQ</td>
+      <td>−0.194</td>
+      <td>0.078</td>
+      <td>0.247</td>
+      <td>0.023*</td>
+    </tr>
+    <tr>
+      <td>AQ</td>
+      <td>−0.247</td>
+      <td>0.023*</td>
+      <td>0.075</td>
+      <td>0.498</td>
+    </tr>
+  </tbody>
+</table>
+
+_General intelligence and age were included as covariates of no interest. Callosal volume correlations were additionally corrected for total intracranial volume._
 
 First, we studied how the inter-hemispheric functional connectivity and callosal size behaved in relation to LI. Volume in the genu, body and splenium of the corpus callosum was inversely related with language LI (respectively: ρ83 = −0.25, p=0.02; ρ83 = −0.26, p=0.02; and ρ83 = −0.25, p=0.02). However, only the callosal genu was found related with inhibition LI (ρ83=0.25, p=0.02). That is, the volume of the callosal genu increased as functional organization of the IFC became more atypical, extending this effect to the whole corpus callosum when considering exclusively language lateralization. On the same line, ROI interhemispheric functional connectivity analyses at rest revealed that VMHC of the pars triangularis also increased as a function of inhibition LI (ρ77=0.26, p=0.02), but a similar relation failed to be found for language LI (ρ77 = −0.12, p=0.3). No statistically significant linear relationships were found when exploring the VMHC of the pars opercularis, the preSMA, or the STN. It should be mentioned, however, that the association between VMHC of the STN and inhibition LI was close to significance (ρ77=0.22, p=0.054).
 
@@ -78,7 +215,7 @@ In conclusion, our study demonstrates a strong connection between the lateraliza
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Eighty-six participants were included in the present study. They were selected following a functional magnetic resonance imaging (fMRI) language lateralization assessment via a verb generation task. Hence, 50 were typically lateralized for language – left-dominant – (mean ± SD age=22.4 ± 3.6 years; 24 male, 26 female) and 36 were atypically lateralized (mean ± SD age=23.4 ± 4 years; 16 male, 20 female).
 
@@ -86,25 +223,25 @@ All the participants were non-right-handed, according to the Edinburgh Handednes
 
 Regarding their bilingual status, we found three categories: Spanish monolinguals (n=6 typical and 2 atypical), Spanish-Catalan bilinguals (n=27 typical and 23 atypical); and Spanish-Catalan passive bilinguals (n=17 typical and 11 atypical). Passive bilingualism refers to the fact that some residents of this region (Valencian Community) understand Spanish and Catalan, but their frequency of use of one language is extremely low when compared to the other. No significant between-group differences were found in bilingual status when comparing the typical and atypical groups (χ2=1.2; p=0.55).
 
-## Experimental design
+### Experimental design
 
 Participants were recruited via multiple advertisements across Castellón and Valencia universities (bulletin boards, mass emailing, etc.) asking for the collaboration of left-handers in an fMRI brain study. Persons older than 36 years or younger than 16 years were discarded. Valid participants were cited for a first fMRI session, in which they completed the verb generation task and the resting-state acquisition. During this session, we used the BrainWave software (GE HealthCare Technologies Inc) to visualize real-time data and roughly categorize participants as potentially typical or potentially atypical. Forty-three participants were found potentially atypical for language lateralization, and were invited to a second fMRI session, along with 43 potentially typical participants. During this second session, participants completed the stop-signal task (scanner) and a reading skill test (out of scanner). Also, data regarding schizotypy personality and autistic spectrum was gathered via self-questionnaires. Note that classification of participants as potentially typical or potentially atypical was used for screening purposes, and it did not completely match the final assessment.
 
-## Verb generation task
+#### Verb generation task
 
 Expressive language function was measured via fMRI during a computerized verb generation task (Sanjuán et al., 2010; Villar-Rodríguez et al., 2020) that consists of a two-block design paradigm with intercalating activation and control blocks. In the activation blocks, participants are asked to overtly say the first verb that comes to mind when visually presented with a concrete noun. In the control blocks, they have to read visually-presented letter pairs aloud. This task lasted for 6 min, with a block duration of 30 s (6 activation blocks and 6 control blocks), a stimulus duration of 1500 ms, and a blank inter-stimulus interval of 1500 ms. Before entering the scanner, participants practiced with a different version of the task for 1 min. Stimuli were presented using MRI-compatible goggles (VisuaStim Digital, Resonance Technology Inc), and responses were recorded with a noise-cancelling microphone (FOMRI III+, Optoacoustics Ltd.) to verify that each participant was engaged correctly in the task.
 
-## Stop-signal task
+#### Stop-signal task
 
 Response inhibition was measured via fMRI during a computerized stop-signal task adapted from another study (Xue et al., 2008). The task consists of an event-related design paradigm with ‘Go’ and ‘Stop’ trials. In the ‘Go’ trials, participants are asked to manually answer by pressing a button if the visually presented string is a word (has a meaning) or a pseudoword (mimics typical word structure but has no meaning). Words require an index button press, whereas pseudowords require a thumb button press. However, on the ‘Stop’ trials, the string is followed by a ‘beep’ noise that signals to the participants to inhibit their response and refrain from pressing any button. The instructions emphasized the importance of going correctly and stopping correctly. However, participants were asked to respond as quickly and accurately as possible and avoid withholding their responses in anticipation of a possible ‘beep’.
 
 This task took 13 min and 28 s, and it was divided into two runs that lasted 6 min and 14 s each, separated by a 1 min rest. Each run consisted of 135 trials, of which 32 (23.7%) were ‘Stop’ trials. All the trials randomly presented words or pseudowords. The trial structure consisted of a fixation crosshair (500ms), a word or pseudoword (1000ms, during which the ‘beep’ may or may not be presented at some point), and a blank inter-stimulus interval (ranging from 500 to 4000ms, sampled from an exponential distribution truncated at 4000ms, with mean of 1000ms). The Stop Signal Delay or SSD (the amount of time after the onset of the word or pseudoword when the ‘beep’ is presented during ‘Stop’ trials) changed dynamically during the task after each ‘Stop’ trial, depending on whether inhibition was successful (+25ms) or unsuccessful (−25ms), with a minimum of 100ms and a maximum of 800ms. The lower the SSD, the easier it is to inhibit the response, and vice versa. Hence, a dynamic SSD normalizes the task’s difficulty across all participants based on their performance, aiming at a 50% successful inhibition rate. The SSD used for the first ‘Stop’ trial was estimated for each participant based on their practice session before entering the scanner. This practice session lasted 6 min and used a different set of words and pseudowords. Stimuli were presented using MRI-compatible goggles and headset (VisuaStim Digital, Resonance Technology Inc), and responses were recorded via an MRI-compatible response-grip (ResponseGrips, NordicNeuroLab). The ‘beep’ volume was kept at a comfortable level and was constant across participants.
 
-## Resting-state
+#### Resting-state
 
 Functional connectivity was measured via fMRI during a resting-state session (Biswal et al., 1995). In this paradigm, participants were presented with a fixation crosshair and instructed to just lie in the scanner with their eyes open and try not to sleep or think about anything in particular. This session lasted for 7 min. Seven participants did not complete this session due to time constraints, and they were subsequently removed from the functional connectivity analyses. It is important to highlight that the exclusion of these seven participants across all analyses does not notably impact the overall results.
 
-## Behavioral measures
+#### Behavioral measures
 
 Individual inhibition speed was estimated by calculating the Stop-Signal Reaction Time (SSRT; Verbruggen et al., 2019). SSRT was computed as the difference between the median reaction time (RT) on correct ‘go’ trials and the mean SSD on the stop-signal task. We chose to employ the median RT instead of the mean RT, in accordance with the approach used in the study from which we adapted our stop-signal task (Xue et al., 2008). This choice was made for two specific reasons: (1) when working with RT, using the median helps reduce the impact of outlier responses during the task; and (2) using the median RT allowed our sample’s SSRT to align more closely with a normal distribution. It should be noted that technical problems involving the MRI-compatible response-grip invalidated the SSD and RT data of four participants, and so their SSRT was estimated using the data from the practice session instead. This practice session, which lasted for 6 min, took place outside of the scanner in a different room, but using an identical set of response-grip. So, for these four participants, the resulting SSD and RT after those 6 min of practice was used for their SSRT calculation.
 
@@ -114,13 +251,13 @@ Schizotypal traits were explored with the SPQ (Raine and Raine, 1991), a preclin
 
 Autistic spectrum traits were explored with the AQ (Baron-Cohen et al., 2001), a preclinical self-report questionnaire modeled after DSM-IV criteria (Association, 1994). This questionnaire evaluates autistic spectrum based on the ‘triad’ of impaired communication, impaired social skills, and a restricted and repetitive way of acting (Rutter, 1978), plus two sub-scales for imagination and attention to detail. For two participants, these data were not collected due to time constraints.
 
-## Image acquisition
+### Image acquisition
 
 Images were acquired on a 3T General Electric Signa Architect magnetic resonance imaging (MRI) scanner using a 32-channel head coil. All slices were acquired in the sagittal plane. A 3D structural MRI was acquired for each subject using a T1-weighted magnetization-prepared rapid gradient-echo sequence (TR/TE = 8.5/3.3ms; flip angle = 12; matrix = 512 × 512 × 384; voxel size = 0.47 × 0.47 × 0.5). For the fMRI, a gradient-echo T2*-weighted echo-planar imaging sequence was used in the acquisition of 150 functional volumes on the verb generation task (TR/TE = 2500/30ms; flip angle = 70; matrix = 64 × 64 × 30; voxel size = 3.75 × 3.75 × 4), and a different sequence was used in the acquisition of 374 functional volumes during the stop-signal task and 210 functional volumes in the resting-state (TR/TE = 2000/30ms; flip angle = 70; matrix = 64 × 64 × 27; voxel size = 3.75 × 3.75 × 4.5).
 
-## Image processing
+### Image processing
 
-## Task-based fMRI processing
+#### Task-based fMRI processing
 
 Task functional images were processed using the Statistical Parametric Mapping software package (SPM12; Wellcome Trust Centre for Neuroimaging, London, UK). Preprocessing followed the default pipeline and included: (a) alignment of each participant’s fMRI data to the AC‐PC plane by using the anatomical image; (b) head motion correction, where the functional images were realigned and resliced to fit the mean functional image; (c) co-registration of the anatomical image to the mean functional image; (d) re‐segmentation of the transformed anatomical image using a symmetric tissue probability map; (e) spatial normalization of the functional images to the MNI (Montreal Neurological Institute, Montreal, Canada) space with 3 mm3 resolution; and (f) spatial smoothing (FWHM = 4 mm).
 
@@ -130,31 +267,31 @@ After that, we utilized the VOI analysis function within SPM12 to extract the fi
 
 Lastly, we computed whole-brain voxel-wise functional asymmetry maps from the stop-signal contrast images. To do so, stop-signal contrast images were flipped at midline, inverting the right and left hemispheres, and subsequently subtracted from the original unflipped contrast images (Kurth et al., 2015).
 
-## Resting-state fMRI processing
+#### Resting-state fMRI processing
 
 Resting-state functional images were processed using the Data Processing Assistant for the Resting‐State toolbox (DPARSFA; Chao-Gan and Yu-Feng, 2010), which is based on SPM and the Data Processing & Analysis of Brain Imaging toolbox (DPABI; Yan et al., 2016). Preprocessing steps included: (a) slice‐timing correction for interleaved acquisitions; (b) head motion correction (no participant had a head motion of more than 2 mm maximum displacement in any direction or 2° of any angular motion throughout the scan); (c) co-registration of the anatomical image with the mean functional image; (d) new segmentation to DARTEL; (e) removal of nuisance variance through linear regression: six parameters from the head motion correction, white matter signal, cerebrospinal fluid signal, and global mean signal; (f) spatial normalization to the MNI (3 mm3); (g) spatial smoothing (FWHM = 4 mm); (h) removal of the linear trend in the time series; (i) band‐pass temporal filtering (0.01–0.1); (j) normalization to a symmetric template; (k) Voxel-Mirrored Homotopic Computation (VMHC) (Zuo et al., 2010), calculated as the Pearson correlation coefficient of every voxel with its hemispheric counterpart; and (l) normalization of all voxel-wise time courses to Fisher z values. Finally, mean VMHC values were extracted for the pars opercularis, pars triangularis, preSMA, and STN. ROI definition can be found in the previous section.
 
-## Structural MRI processing
+#### Structural MRI processing
 
 Structural images were processed via voxel-based morphometry (VBM) using the CAT12 toolbox (Gaser and Kurth, 2016), which is based on SPM. Preprocessing steps followed the recommended pipeline and included: (a) segmentation into grey matter, white matter, and cerebrospinal fluid; (b) registration to the ICBM standard template; (c) modulated normalization of grey matter and white matter segments to the MNI template; (d) spatial smoothing (FWHM = 6 mm); and (e) extraction of Regions of Interest (ROIs) values from native space. Three ROIs were delimited by the voxels mapped as genu, body and splenium of the corpus callosum according to the Mori atlas (Oishi et al., 2009). Total intracranial volume was also extracted for use as covariate of no interest.
 
-## Individual assessment of functional lateralization
+### Individual assessment of functional lateralization
 
 Individual functional lateralization was assessed by calculating the Laterality Index (LI) on the unflipped contrast images (Sanjuán et al., 2010; Villar-Rodríguez et al., 2020). We used the bootstrap method implemented in the LI-toolbox (Wilke and Lidzba, 2007), based on SPM. LI is a proportion of the brain activation between the two hemispheres, thus giving us information about the direction and degree of hemispheric specialization during a particular function in a single individual. LI ranges from +1 (totally leftward function) to −1 (totally rightward function). For both the verb generation task and the stop-signal task, we explored the LI of the inferior frontal region roughly corresponding to the classic Broca’s area: pars opercularis and pars triangularis of the inferior frontal gyrus, according to the Harvard-Oxford atlas (Frazier et al., 2005; Desikan et al., 2006; Makris et al., 2006; Goldstein et al., 2007). This region is critical for both language production (Price, 2012) and response inhibition (Aron et al., 2014), depending on the hemisphere. During the verb generation task, language production was classified as typically lateralized (LI higher than +0.4) or atypically lateralized (LI lower than +0.4). We used +0.4 as a cut-off point (contrary to the more traditional +0.2), based on previous findings that emphasized the importance of lateralization strength when grouping individuals (Mazoyer et al., 2014; Labache et al., 2020).
 
-## Statistical analyses
+### Statistical analyses
 
-## Task-based region-wise analysis
+#### Task-based region-wise analysis
 
 We performed different analyses to investigate the hypothesis that the atypical group would show a mirrored brain organization during the stop-signal task. First, we conducted a region-wise analysis to compare the functional asymmetry of the primary components within the inhibitory control network between the typically and atypically lateralized groups. To achieve this, we employed a repeated-measures MANOVA, with Hemisphere (left/right) and Region (pars opercularis/pars triangularis/preSMA/STN) as within-subject factors and Group (typical/atypical) as the between-subject factor. Subsequently, to assess potential hemispheric differences in any of these regions between both groups, we contrasted the simple effects of the Hemisphere × Group interaction across the Region factor. All resulting p-values were adjusted using a Bonferroni correction.
 
-## Task-based voxel-wise analyses
+#### Task-based voxel-wise analyses
 
 Previous analysis was complemented with whole-brain functional asymmetry contrast maps (extracted from the stop-signal task) that were compared in typically and atypically lateralized groups. To do so, we performed a whole-brain two-sample t-test (voxel-wise p<0.001; FWE cluster-corrected at p<0.05) via SPM12.
 
 We also explored the functional overlap between both tasks in the subgroup of participants that presented an ambilateral organization of at least one function (n=48). To do so, we overlayed two one-sample t-tests restricted to the IFC: one for the stop-signal task (voxel-wise p<0.001; FWE cluster-corrected at p<0.05), and one for the verb generation task (voxel-wise p<0.05; uncorrected). Functional overlap was then expressed as the proportion of overlapped voxels for every function and hemisphere.
 
-## Correlational analyses
+#### Correlational analyses
 
 The relationship between the hemispheric specialization of the verb generation task and the stop-signal task at the IFC was also examined linearly. More precisely, we conducted a Pearson’s correlation between the LI from the verb generation task and the LI from the stop-signal task used in the individual lateralization classification (p<0.05, two-tailed).
 

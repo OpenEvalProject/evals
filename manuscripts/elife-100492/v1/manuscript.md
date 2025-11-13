@@ -12,7 +12,7 @@
 ### Affiliations
 
 1. Harvard Medical School, Department of Neurobiology Boston United States
-2. https://ror.org/01tm9b530 Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States
+2. Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States ([ROR:01tm9b530](https://ror.org/01tm9b530))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Perception depends on the ability of neurons to encode discrete features of the 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig1-v1.jpg)
 
-**Figure 1.:** (A) Illustration of spiral ganglion neuron (SGN) central axons branching within a parasagittal section of the mouse cochlear nucleus complex (CNC). SGN somas in the cochlea are tonotopically organized according to frequency. Axons remain organized throughout the ventral (VCN) and dorsal (DCN) divisions of the CNC. Octopus cells are found in the octopus cell area (OCA) of the VCN. (B) Excitatory SGN puncta labeled with a VGLUT1 antibody (left) and glycinergic puncta labeled with Slc6a5Cre-dependent syp/tdT (Slc6a5-syp/tdT; right) in a parasagittal section of the CNC. The teardrop-shaped OCA is not devoid of inhibitory inputs, although they are less prominent than in the surrounding CNC. (C) A Thy1 sparsely labeled octopus cell with excitatory SGN (VGLUT1) and inhibitory (Slc6a5-syp/tdT) puncta. Micrographs of 3 µm confocal z-stacks show puncta on the medial surface of a soma (top) and a dendrite (bottom). (D) Representative reconstruction of excitatory SGN puncta labeled with Foxg1Cre-dependent syp/tdT (Foxg1-syp/tdT; blue) onto a Thy1 sparsely labeled octopus cell (white). (E) Representative reconstruction of inhibitory puncta labeled with Slc6a5-syp/tdT (green) onto a Thy1 sparsely labeled octopus cell (white). (F) Puncta density for excitatory SGN (Foxg1-syp/tdT; black: 10.7 ± 3.0, n=8 cells, 4 mice) and glycinergic puncta (Slc6a5-syp/tdT; green: 4.2 ± 0.8, n=8 cells, 3 mice) on octopus cell dendrites. Data are presented as mean ± SD. (G) Puncta density on somas for excitatory SGN (black: 13.3 ± 2.2, n=8 cells, 4 mice) and glycinergic puncta (green: 1.8 ± 0.1, n=8 cells, 3 mice) and the density along the length of dendrites. Data are presented as mean ± SEM. (H) Top: Illustration of an octopus cell and the ratio between excitatory SGN puncta and glycinergic puncta. Inset: Illustration of an octopus cell and the relative innervation densities of excitatory SGNs (blue) and inhibitory puncta (green).Figure 1—source data 1.Figure 1F.Figure 1—source data 2.Figure 1G.
+**Figure 1.:** (A) Illustration of spiral ganglion neuron (SGN) central axons branching within a parasagittal section of the mouse cochlear nucleus complex (CNC). SGN somas in the cochlea are tonotopically organized according to frequency. Axons remain organized throughout the ventral (VCN) and dorsal (DCN) divisions of the CNC. Octopus cells are found in the octopus cell area (OCA) of the VCN. (B) Excitatory SGN puncta labeled with a VGLUT1 antibody (left) and glycinergic puncta labeled with Slc6a5Cre-dependent syp/tdT (Slc6a5-syp/tdT; right) in a parasagittal section of the CNC. The teardrop-shaped OCA is not devoid of inhibitory inputs, although they are less prominent than in the surrounding CNC. (C) A Thy1 sparsely labeled octopus cell with excitatory SGN (VGLUT1) and inhibitory (Slc6a5-syp/tdT) puncta. Micrographs of 3 µm confocal z-stacks show puncta on the medial surface of a soma (top) and a dendrite (bottom). (D) Representative reconstruction of excitatory SGN puncta labeled with Foxg1Cre-dependent syp/tdT (Foxg1-syp/tdT; blue) onto a Thy1 sparsely labeled octopus cell (white). (E) Representative reconstruction of inhibitory puncta labeled with Slc6a5-syp/tdT (green) onto a Thy1 sparsely labeled octopus cell (white). (F) Puncta density for excitatory SGN (Foxg1-syp/tdT; black: 10.7 ± 3.0, n=8 cells, 4 mice) and glycinergic puncta (Slc6a5-syp/tdT; green: 4.2 ± 0.8, n=8 cells, 3 mice) on octopus cell dendrites. Data are presented as mean ± SD. (G) Puncta density on somas for excitatory SGN (black: 13.3 ± 2.2, n=8 cells, 4 mice) and glycinergic puncta (green: 1.8 ± 0.1, n=8 cells, 3 mice) and the density along the length of dendrites. Data are presented as mean ± SEM. (H) Top: Illustration of an octopus cell and the ratio between excitatory SGN puncta and glycinergic puncta. Inset: Illustration of an octopus cell and the relative innervation densities of excitatory SGNs (blue) and inhibitory puncta (green).
 
 In the mammalian auditory system, precise encoding of broadband timing information begins with the octopus cells of the CNC. Octopus cells are excitatory neurons that bind together co-occurring frequency information on a submillisecond timescale and send this information along one of the parallel ascending pathways in the auditory brainstem. Octopus cells are named for their large-diameter tentacle-like dendrites (Osen, 1969a; Osen, 1969b), which are oriented unidirectionally across a tonotopic array of SGNs such that each neuron integrates inputs from a wide range of frequencies (Godfrey et al., 1975; Recio-Spinoso and Rhode, 2020; Rhode et al., 1983; Ritz and Brownell, 1982). SGNs provide the major excitatory inputs onto octopus cells. Biophysically, octopus cells have low input resistances near rest (~4 MΩ; Golding et al., 1999; Bal and Oertel, 2000), fast time constants (~200 µs; Golding et al., 1999; Bal and Oertel, 2000; Bal and Oertel, 2001), and large low‐voltage‐activated potassium (~40 nS at rest; Golding et al., 1999; Bal and Oertel, 2001), and hyperpolarization activated (~62 nS at rest; Golding et al., 1999; Bal and Oertel, 2000) conductances. Together these properties give octopus cells impressively narrow windows of coincidence detection on the order of 1 ms (Cao and Oertel, 2017; Golding et al., 1995; Golding and Oertel, 2012; Manis and Marx, 1991; Oertel, 1983). This combination of receiving SGN innervation from broad frequencies and their biophysical specializations establish octopus cells as spectrotemporal coincidence detectors that can reliably encode the timing of complex stimuli, such as the broadband transients found in speech and other natural sounds (Golding et al., 1999; McGinley, 2014; McGinley et al., 2012). Fittingly, in vivo recordings from octopus cells demonstrate their ability to phase lock to broadband transients at rates up to 1 kHz (Lu et al., 2018; Smith et al., 2005; Smith et al., 1993). Moreover, computational models of octopus cells demonstrate that onset responses are governed by the cell’s biophysical specializations and are, in large part, the result of temporal summation of excitation (Cai et al., 2000; Cai et al., 1997; Kipke and Levy, 1997; Levy and Kipke, 1998; Levy and Kipke, 1997; Rebhan and Leibold, 2021; Spencer et al., 2012). The simplicity of its connectivity combined with the precision of its temporal computations makes the octopus cell an attractive model for understanding how specialized anatomical and electrophysiological properties contribute to neuronal computations.
 
@@ -36,15 +36,31 @@ Here, we sought to define the circuit mechanisms that allow octopus cells to act
 
 ## Results
 
-## The balance of excitatory and inhibitory synapses is different in somatic and dendritic domains
+### The balance of excitatory and inhibitory synapses is different in somatic and dendritic domains
 
 To determine the wiring pattern that drives octopus cell computations, we generated a detailed map of excitatory and inhibitory synaptic inputs (Figure 1). Overall, octopus cells receive abundant excitatory VGLUT1+ innervation from SGNs (Gómez-Nieto and Rubio, 2009; Zhou et al., 2007) and sparse inhibitory innervation from glycinergic neurons, as visualized using the glycinergic Cre driver Slc6a5Cre and the Ai34 synaptophysin-tdTomato (syp/tdT) fusion protein reporter (Figure 1B). The Slc6a5-syp/tdT inhibitory inputs nestle between SGN inputs, especially on octopus cell dendrites (Figure 1C).
 
 Quantification of the number and distribution of presynaptic puncta onto octopus cells revealed marked differences in the ratio of excitation and inhibition in the somatic and dendritic compartments. Since innervation patterns have never been systematically analyzed, we made three-dimensional reconstructions of 16 octopus cells and their excitatory SGN (n=8 cells, 4 mice) and inhibitory (n=8 cells, 3 mice) inputs. Octopus cells were visualized using a Thy1 reporter and presynaptic puncta were labeled with the syp/tdT reporter driven either by Foxg1Cre (Figure 1D) or Slc6a5Cre (Figure 1E). Consistent with qualitative assessment, the density of SGN inputs was higher (10.7 ± 3.0 SGN puncta/100 µm2) than that of inhibitory inputs (4.2 ± 0.8 puncta/100 µm2, Figure 1F). Moreover, the relative proportions of excitatory and inhibitory inputs differed in the soma and dendrites (Figure 1G). On somas, SGNs provided dense innervation that continued on the proximal dendrite, then gradually declined with distance from the soma. By contrast, somas received very few inhibitory inputs. On dendrites, inhibitory puncta were evenly distributed. As a result, octopus cells have a strikingly different average ratio of excitatory and inhibitory puncta on the soma (7:1) and on the dendrite (5:2), suggesting that each compartment contributes differentially to the final computation made by the octopus cell (Figure 1H).
 
-## The majority of excitatory synapses on octopus cells are from type Ia SGNs
+### The majority of excitatory synapses on octopus cells are from type Ia SGNs
 
 Although uniformly glutamatergic, SGNs exhibit stereotyped physiological differences in response thresholds that could affect the nature of their inputs onto octopus cells and hence coincidence detection (Liberman, 1991; Liberman, 1993; Rouiller et al., 1986; Rouiller and Ryugo, 1984). There are three molecularly distinct SGN subtypes, referred to as Ia, Ib, and Ic SGNs, which correlate with previously shown physiological groups (Liberman, 1978; Liberman et al., 2011; Liberman, 1982; Petitpré et al., 2018; Shrestha et al., 2018; Siebald et al., 2023; Sun et al., 2018; Figure 2A). Therefore, we further categorized excitatory inputs based on SGN subtype identity. These can be identified with the presence of Ntng1Cre-dependent reporter expression (Bolding et al., 2020) in Ib and Ic SGNs (Ib/c) and its absence in Ia SGNs (Petitpré et al., 2018; Shrestha et al., 2018; Sun et al., 2018), coupled with very low to undetectable levels of calretinin (CR-) in Ic SGNs, and moderate to high levels of calretinin (CR+, CR++) in Ib and Ia SGNs (Figure 2B). As determined using the Ai14 tdTomato (tdT) reporter, Ntng1Cre-labeled Ib/c SGNs accounted for 60.1 ± 2.6% of the entire population, with 28.5 ± 12.2% Ib SGNs, 31.6% Ic SGNs, and 39.9 ± 2.6% Ia SGNs (Figure 2C: n=1599 neurons, 4 mice; mean ± SD). These proportions matched scRNA-seq estimates (Figure 2C, dotted lines), indicating that this approach provides full coverage. SGN subtype identity was further confirmed by examining the spatial organization of SGN peripheral processes en route to the inner hair cells (IHCs) in the cochlea, with Ia processes positioned deeper than Ib and Ic processes (Figure 2A, Figure 2—figure supplement 1A-C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig2-v1.jpg)
+
+**Figure 2.:** (A) Ia (yellow), Ib (orange), and Ic (magenta) spiral ganglion neuron (SGN) axons innervate the cochlear nucleus complex (CNC). SGN peripheral processes with different properties are grossly organized along the pillar-modiolar axis as they travel through the habenula and terminate on inner hair cells (IHCs). Ntng1-expressing Ib/c fibers are positioned on the modiolar side (closest to the ganglion). Strongly calretinin immunopositive Ia fibers are on the other side (closest to the pillar cells). This organization correlates with spontaneous rates (SR) and thresholds (thresh) measured in vivo. Somas of all SGN subtypes are found at all tonotopic locations. (B) Calretinin (CR) immunolabeling distinguishes SGN subtypes. Ia/b somas label with high (CR++) and medium (CR+) levels of CR, respectively. Ic somas label with low to undetectable levels of CR (CR-). Ntng1Cre-mediated expression of tdT (Ntng1-tdT) labels Ib/c SGNs. (C) Ia SGNs (tdT-, CR++) make up 39.9 ± 2.6% of the SGN population. Ib/c SGNs (tdT+) make up 60.1 ± 2.6% of the SGN population. Ib SGNs (tdT+CR+) make up 28.5 ± 12.2% of the SGN population (n=1599 neurons, 4 mice). Data are presented as mean ± SD; individual points represent percent coverage per animal, lines connect measurements from the same animal. Dotted lines indicate percentages from 1: Petitpré et al., 2018, 2: Shrestha et al., 2018 3: Sun et al., 2018. (D) Representative reconstruction of Ib/c puncta labeled with Ntng1Cre-dependent syp/tdT (Ntng1-syp/tdT; magenta) onto a Thy1 sparsely labeled octopus cell (white). (E) Puncta density for all SGNs (Foxg1-syp/tdT; black: data from Figure 1F), Ia SGNs (Foxg1 - Ntng1; yellow: 6.6 ± 1.0), and Ib/c SGNs (Ntng1-syp/tdT; magenta: 4.1 ± 1.0, n=9 cells, 5 mice) along the total dendritic length. Ia density was calculated by subtracting Ib/c density from total SGN density; lines connect measurements from the same reconstruction. Data are presented as mean ± SD. (F) Puncta density on somas for all SGNs (Foxg1-syp/tdT; black: data from Figure 1E), Ia SGNs (Foxg1 - Ntng1; yellow: 8.4 ± 2.3), and Ib/c SNGs (Ntng1-syp/tdT; magenta: 4.9 ± 1.2, n=8 cells, 4 mice) and the density along the length of dendrites. Data are presented as mean ± SEM. (G) Illustration of an octopus cell and the relative innervation densities of Ia SGNs (yellow), Ib/c SGNs (magenta), and inhibitory puncta (green).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Calretinin immunopositive (CR+) Ia/b spiral ganglion neuron (SGN) peripheral fibers (CR, yellow) preferentially innervate the pillar side of inner hair cells (IHCs). Ib/c SGN peripheral fibers with Ntng1Cre-mediated expression of tdTomato (Ntng1-tdT; magenta) preferentially innervate the modiolar side of IHCs. IHCs also immunolabel for CR. (B) CR+ Ia/b SGN fibers (yellow) pass through the pillar side of the habenula while Ntng1-tdT+ Ib/c SGN fibers (magenta) pass through the modiolar side. Arrowhead highlights a Ntng1-tdT fiber passing through the pillar side of the habenula but ultimately terminating on the modiolar side of the IHC. (C) Normalized position of CR+ Ia/b (yellow) and Ntng1-tdT+ Ib/c (magenta) fibers in the habenula (n=124 fibers, 5 mice). (D) In the central nervous system, Ntng1-tdT is present throughout the brain, but is restricted to SGN axons in the ventral cochlear nucleus where the octopus cell area (OCA) is found. (E) A coronal section of the cochlear nucleus highlights Ntng1-tdT SGN axons in the ventral cochlear nucleus (VCN) and scattered Ntng1-tdT somas in the dorsal cochlear nucleus (DCN). (F) In the octopus cell area, CR immunolabel is present in Ia/b SGN axons and puncta. As in the ganglion, CR co-labels with some Ib/c puncta (Ntng1-syp/tdT).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cochlear sections with calretinin (CR) immunolabeling of hair cells and type Ia/b spiral ganglion neurons (SGNs) and Myo15iCre-mediated expression of tdTomato (Myo15-tdT) in hair cells and a subset of type Ic SGNs. (B) CR+ Ia/b SGN fibers (yellow) preferentially innervate the pillar side of inner hair cells (IHCs). The sparse subset of Ic SGN fibers labeled by Myo15-tdT (magenta) preferentially innervate the modiolar side of IHCs. IHCs label with both tdT and CR. (C) CR+ Ia/b SGN fibers (yellow) pass through the pillar side of the habenula while sparsely labeled Myo15-tdT+ Ic SGN fibers (magenta) pass through the modiolar side. (D) Normalized position of CR+ Ia/b (yellow) and Myo15-tdT+ Ic (magenta) SGN fibers along the pillar to modiolar axis of the habenula (n=90 fibers, 4 mice). (E) 65 µm cochlear section containing SGN somas. SGNs have variable levels of calretinin (CR) immunolabeling corresponding to the three molecular subtypes. Ia/b SGN somas label with high and medium levels of CR, respectively. Ic somas label with very low levels of CR. Myo15-tdT is sparsely found in Ic SGNs. All SGN somas are labeled with Foxg1Flp-mediated expression of EYFP (Foxg1-EYFP). (F) tdT+CR- SGNs make up 4.7 ± 2.3% of the SGN population (n=2150 neurons, 5 mice), indicating sparse reporter expression. Data are presented as mean ± SD; individual data points signify percent coverage per animal. Dotted lines are estimated percentages for type Ic SGNs from 1: Petitpré et al., 2018, 2: Shrestha et al., 2018 3: Sun et al., 2018. (G) A Thy1 octopus cell has few Myo15-syp/tdT puncta near its soma and dendrites. (H) Puncta density of all SGN (Foxg1-syp/tdT; black: data from Figure 1F), Ib/c SGN (Ntng1-syp/tdT; magenta: data from Figure 2E), and sparse Ic SGN inputs (Myo15-syp/tdT; open magenta circles: 1.1 ± 0.6, n=6 cells, 3 mice). Data are presented as mean ± SD. Markers represent the total puncta density computed per reconstructed octopus cell. (I) Puncta density per 100 µm2 of soma surface area for all SGN (Foxg1-syp/tdT; black: data from Figure 1G) and sparse Ic inputs (Myo15-syp/tdT; magenta open circles: 0.7 ± 0.4, n=6 cells, 3 mice) and density along the length of the dendritic tree, relative to the soma. Data are presented as mean ± SEM. Blue dashed line visualizes puncta density for 4.7% of the total SGN inputs, which is the expected innervation of Myo15-syp/tdT puncta if all SGN subtypes made a proportional number of contacts with octopus cells.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Total length of reconstructed dendritic arbors for 31 octopus cells. (B) Total surface area of reconstructed dendritic arbors for 31 octopus cells. (C) Octopus cell reconstructions were normalized to the longest reconstructed dendrite. Total length of reconstructed dendrites correlated with the longest branch per neuron. (D) Total length of reconstructed dendrites correlated with total dendritic surface area. (E–G) Longest branch length, total dendrite length, and total surface area compared to estimated position of the octopus cell soma in the tonotopic organization of the octopus cell area. (H–J) Total number of reconstructed spiral ganglion neuron (SGN) puncta (Foxg1-syp/tdT; black), inhibitory puncta (Slc6a5-syp/tdT; green), Ib/c SGN puncta (Ntng1-syp/tdT; magenta), and sparse Ic SGN puncta (Myo15-syp/tdT; open magenta circles) compared to the longest branch length, total dendrite length, and total dendrite surface area. (K–M) Density of reconstructed SGN puncta (Foxg1-syp/tdT; black), inhibitory puncta (Slc6a5-syp/tdT; green), Ib/c SGN puncta (Ntng1-syp/tdT; magenta), and sparse Ic SGN puncta (Myo15-syp/tdT; open magenta circles) compared to longest branch length, total dendrite length, and total dendrite surface area.
 
 Within the ventral cochlear nucleus (VCN), where octopus cells reside, Ntng1Cre labeling was restricted to SGN central axons (Figure 2—figure supplement 1D–E). There is sparse labeling in the deep layer of the dorsal cochlear nucleus (DCN) and strong labelling throughout the thalamus, hippocampus, and cortex (Figure 2—figure supplement 1D–E). It is unlikely that the Ntng1Cre-labeled cells outside of the cochlea make synapses with octopus cells. When Ntng1Cre-driven tdT is co-expressed with Foxg1Flp-driven EYFP, all tdT-labeled axons in the VCN also expressed EYFP, suggesting that all our Ntng1Cre labeled inputs are a part of the Foxg1Flp labeled population, which are very likely to be only from SGNs in the cochlea. Additionally, in the octopus cell area, CR+ SGN central axons were segregated from Ntng1-tdT labeled central axons, consistent with the moderate to undetectable levels of CR in Ntng1-tdT SGN somas in the periphery (Figure 2—figure supplement 1F). Thus, Ntng1Cre-driven expression of syp/tdT is an appropriate tool for mapping subtype-specific connectivity onto octopus cells.
 
@@ -52,19 +68,27 @@ Reconstruction of Ntng1Cre-labeled Ib/c puncta (Figure 2D) demonstrated that oct
 
 Octopus cell reconstructions showed the same basic wiring patterns regardless of where each cell was positioned in the octopus cell area. The tonotopic position of all reconstructed octopus cell somas was estimated in 3D reconstructions aligned to a normalized CNC model of tonotopy. Octopus cells had similar morphologies (Figure 2—figure supplement 3E–G) and patterns of synaptic innervation (Figure 2—figure supplement 3H–M) regardless of where they were positioned along the tonotopic axis. Thus, Ia SGN synapses are the primary inputs to both the soma and dendrites of octopus cells. Additionally, the whole-neuron wiring diagram identifies a dendritic domain where inhibitory synapses are approximately equal in number to the Ib/c excitatory synapses from the periphery.
 
-## SGN inputs to octopus cells facilitate at high stimulation frequencies
+### SGN inputs to octopus cells facilitate at high stimulation frequencies
 
 Whether or not an octopus cell responds to its inputs depends on when and how EPSPs travel to and then summate in the soma. To determine if SGN subtypes transmit information differently to their central targets, we performed in vitro whole-cell current clamp recordings of octopus cells (Figure 3A) while using Cre-dependent Channelrhodopsin-2 (ChR2) to evoke EPSPs from all SGNs (Foxg1-ChR2) or only Ib/c SGNs (Ntng1-ChR2). Octopus cells have short action potentials (~5–15 mV) that resemble their large, well-timed EPSPs (Golding et al., 1995; Oertel et al., 1990). Therefore, we evoked small EPSPs that were below spike threshold and distinguishable from action potentials using a phase plot analysis. Trains of ChR2-evoked EPSPs, ranging from 5 to 50 Hz, in both the total SGN population (Figure 3B, black: n=8 cells, 5 mice) and the Ib/c SGN population (Figure 3B, magenta: n=7 cells, 6 mice) exhibited no differences in paired-pulse plasticity at any frequency of stimulation (p>0.35 at all interstimulus intervals, Tukey’s HSD), although the Ib/c population exhibited higher variability than the total SGN population (at 20ms: total SGN SD=0.11, Ib/c SGN SD=0.24).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig3-v1.jpg)
 
-**Figure 3.:** (A) Illustration of the experimental paradigm and representative EPSP traces recorded during in vitro whole-cell current-clamp recordings of octopus cells. Spiral ganglion neuron (SGN) central axon stimulation methods included electrical stimulation or full-field, light-evoked activation of Foxg1-ChR2 or Ntng1-ChR2 SGNs. TTL trigger pulses are shown in gray. (B) Paired pulse ratios for electrically stimulated SGNs (open circles: n=5 cells, 3 mice), ChR2 stimulated SGNs (Foxg1-ChR2; black: n=8 cells, 5 mice), and ChR2 stimulated Ib/c SGNs (Ntng1-ChR2; magenta: n=7 cells, 6 mice) at three interstimulus intervals. With electrical stimulation, SGN inputs to octopus cells were stable and exhibited slight facilitation at 50 Hz (20ms interstimulus interval). ChR2 stimulation caused paired pulse depression not seen with electrical stimulation. Data are presented as mean ± SD. Each data point represents the average paired pulse ratio for a cell. p values from ANOVA and subsequent Tukey HSD test are reported for comparisons between methods of SGN activation (electrical and ChR2) and SGN subpopulation composition within method of activation (SGN-ChR2 and Ib/c-ChR2). Welch’s ANOVA was used for comparisons at 20ms interstimulus interval (50 Hz) as data in this condition did not meet the homogeneity of variance assumption. (C) Pulse ratios at 50 Hz for electrically stimulated SGNs with physiological 1.4 mM Ca2+ ACSF (open circles: n=5 cells, 3 mice), electrically stimulated SGNs with 2.4 mM Ca2+ ACSF (grey: n=3 cells, 2 mice) and ChR2 stimulated SGNs with physiological ACSF (Foxg1-ChR2; black: n=8 cells, 5 mice). Data are presented as mean ± SD. p<0.001 from ANOVA and subsequent Tukey HSD test for all comparisons between methods of SGN activation (SGN-Elect. and SGN-ChR2). There were no statistically significant differences for all comparisons between 1.4 mM (SGN-Elect.) and 2.4 mM Ca2+ (SGN-Elect. + ↑[Ca2+]) (p>0.100, ANOVA).Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3C.
+**Figure 3.:** (A) Illustration of the experimental paradigm and representative EPSP traces recorded during in vitro whole-cell current-clamp recordings of octopus cells. Spiral ganglion neuron (SGN) central axon stimulation methods included electrical stimulation or full-field, light-evoked activation of Foxg1-ChR2 or Ntng1-ChR2 SGNs. TTL trigger pulses are shown in gray. (B) Paired pulse ratios for electrically stimulated SGNs (open circles: n=5 cells, 3 mice), ChR2 stimulated SGNs (Foxg1-ChR2; black: n=8 cells, 5 mice), and ChR2 stimulated Ib/c SGNs (Ntng1-ChR2; magenta: n=7 cells, 6 mice) at three interstimulus intervals. With electrical stimulation, SGN inputs to octopus cells were stable and exhibited slight facilitation at 50 Hz (20ms interstimulus interval). ChR2 stimulation caused paired pulse depression not seen with electrical stimulation. Data are presented as mean ± SD. Each data point represents the average paired pulse ratio for a cell. p values from ANOVA and subsequent Tukey HSD test are reported for comparisons between methods of SGN activation (electrical and ChR2) and SGN subpopulation composition within method of activation (SGN-ChR2 and Ib/c-ChR2). Welch’s ANOVA was used for comparisons at 20ms interstimulus interval (50 Hz) as data in this condition did not meet the homogeneity of variance assumption. (C) Pulse ratios at 50 Hz for electrically stimulated SGNs with physiological 1.4 mM Ca2+ ACSF (open circles: n=5 cells, 3 mice), electrically stimulated SGNs with 2.4 mM Ca2+ ACSF (grey: n=3 cells, 2 mice) and ChR2 stimulated SGNs with physiological ACSF (Foxg1-ChR2; black: n=8 cells, 5 mice). Data are presented as mean ± SD. p<0.001 from ANOVA and subsequent Tukey HSD test for all comparisons between methods of SGN activation (SGN-Elect. and SGN-ChR2). There were no statistically significant differences for all comparisons between 1.4 mM (SGN-Elect.) and 2.4 mM Ca2+ (SGN-Elect. + ↑[Ca2+]) (p>0.100, ANOVA).
 
 ChR2-evoked synaptic responses are known to undergo synaptic depression (Jackman et al., 2014; Zhang and Oertner, 2007). To determine if the paired-pulse depression measured in ChR2-stimulated experiments was physiological, we used electrical stimulation to evoke EPSPs from SGNs. Electrically-evoked EPSPs had higher paired-pulse ratios than ChR2-evoked EPSPs and were mildly facilitating at short (20 ms) intervals (Figure 3B–C, open circles: n=5 cells, 3 mice), consistent with an octopus cell’s ability to respond reliably to click trains in vivo (Godfrey et al., 1975; Rhode et al., 1983; Smith et al., 2005; Oertel et al., 2000). In contrast, previous results using electrical stimulation demonstrated short-term depression of SGN inputs to octopus cells (Cao et al., 2008; Cao and Oertel, 2010). However, these experiments were carried out in the presence of higher, non-physiological levels of extracellular calcium. We repeated paired-pulse plasticity experiments with non-physiological calcium concentrations (2.4 mM) and similarly found that electrically evoked EPSPs from SGNs resulted in short-term depression at 50 Hz of electrical stimulation (Figure 3C, grey: n=3 cells, 2 mice), although not to the degree observed when using full-field, ChR2-evoked inputs (Figure 3C, black: n=8 cells, 5 mice).
 
-## Glycine evokes inhibitory post synaptic potentials that are occluded by a low input resistance
+### Glycine evokes inhibitory post synaptic potentials that are occluded by a low input resistance
 
 Given the high density of inhibitory synapses on octopus cell dendrites, we considered the possibility that somatic and dendritic compartments contribute differently to the temporal computation made by octopus cells. A role for inhibition has not been incorporated into octopus cell models as previous efforts failed to reveal physiological evidence of functional inhibitory synapses either in vitro (Golding et al., 1995; Bal et al., 2009; Oertel et al., 1990) or in vivo (Lu et al., 2022). Similarly, we did not observe light-evoked (Slc6a5-ChR2) inhibitory post synaptic potentials (IPSPs) in octopus cell somas during whole-cell current clamp recordings from P30-45 mice. Since inhibitory synapses are located primarily on octopus cell dendrites, we posited that their voltage spread to the soma is limited given the extremely low input resistance of octopus cells. To decrease electrotonic isolation of the dendrites and increase input resistance, we pharmacologically reduced conductances from voltage-gated potassium (Kv) and hyperpolarization-activated cyclic nucleotide-gated (HCN) channels using 100 µM 4-Aminopyridine (4-AP) and 50 µM ZD 7288 (ZD), respectively. This cocktail increased octopus cell membrane resistance and hyperpolarized the resting membrane potential by ~8–10 mV (Figure 4A). To compensate for this change, membrane potentials were adjusted to within 3 mV of the original resting membrane potential with a holding current. To isolate inhibition, AMPA receptor activation was blocked using 15 µM 2,3-dioxo-6-nitro-7-sulfamoyl-benzo[f]quinoxaline (NBQX). Consistent with our hypothesis, the increase in input resistance unveiled light-evoked IPSPs in recordings from octopus cell somas (Figure 4B). Additionally, these IPSPs were fully abolished by bath application of 500 nM strychnine (STN) (Figure 4C), confirming the presence of functional glycinergic inhibitory synaptic transmission onto octopus cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig4-v1.jpg)
+
+**Figure 4.:** (A) Voltage responses to a –200 pA current injection. This representative neuron hyperpolarized 0.7 mV (black) in control conditions. After bath application of 100 µM 4-Aminopyridine (4-AP) and 50 µM ZD 7288 (ZD), hyperpolarizing responses to the same –200 pA current injection increased to 8.8 mV at steady state (green). (B) Postsynaptic responses to ChR2 stimulation of glycinergic terminals (Slc6a5-ChR2) with a 5 Hz train (gray) of 1ms full-field blue light pulses before (black) and after bath application of 100 µM 4-AP, 50 µM ZD, and 15 µM NBQX (green: n=9 cells, 8 mice). Increased input resistance reveals inhibitory potentials that are otherwise difficult to detect. (C) Postsynaptic responses to Slc6a5-ChR2 stimulation after bath application of 100 µM 4-AP, 50 µM ZD, and 15 µM NBQX (green), with further sequential addition of 20 µM picrotoxin (PTX, pink), 100 µM cyclothiazide (CTZ, blue), and 500 nM strychnine (STN, orange: n=6 cells, 5 mice). (D) Change in membrane voltage in response to hyperpolarizing somatic current steps in a morphologically and biophysically realistic model of octopus cells before (black) and after removal of voltage-gated potassium (Kv) and hyperpolarization-activated cyclic nucleotide-gated (HCN) channels (blue). As in in vitro current-clamp recordings (A), removing Kv and HCN channels increased the magnitude of voltage responses (ΔVm) to hyperpolarizing current. (E) IPSP magnitude in experimental data (green) and the model (dark and light blue) as a function of input resistance. In somatic measurements, IPSP size increases with input resistance. Modeled IPSPs are shown for two conductance levels (1nS, dark blue; 100nS light blue). (F) IPSPs measured at the soma of a modeled octopus cell before (black) and after removal of Kv and HCN channels (blue). As in in vitro current-clamp recordings, this allows for somatic IPSP detection. (G) Change in the magnitude of soma-measured IPSPs after removal of Kv and HCN channels. IPSP magnitude increases with Kv and HCN block for all glycine conductance levels. (H) Change in the magnitude of locally measured IPSCs at proximal (orange) and distal (blue) dendritic locations after removal of Kv and HCN channels. IPSC magnitude at the synapse decreases with Kv and HCN block for all glycine conductance levels. Change in IPSC magnitude is largest on distal dendrites.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Subthreshold somatic voltage response to a –800 pA hyperpolarizing current injection in an in vitro whole-cell current clamp recording of an octopus cell. (B) Somatic voltage responses from a morphologically realistic octopus cell model to a –800 pA current injection for various scaling factors (scl) of maximal conductances of ḡKLT, ḡKHT, ḡKA, and ḡh. (C) Comparison of somatic hyperpolarizations to a –800 pA current injection in the model reproducing experimental data during control (black) and Kv and HCN block conditions (blue). (D) Illustration of injection and recording locations for panels E-G in a morphologically realistic octopus cell model. (E) Current-voltage (IV) relationships from a representative experimental octopus cell recorded in control ACSF and with Kv and HCN block. Dotted lines plot linear fits of the experimental data. The slope of the dotted line estimates Rin. (F–G) Impact of leak conductance (ḡleak) and scaling factor (scl) on passive properties of the model with ḡleak=0pS (F) and ḡleak=1.67pS (G) for various scaling factor values (indicated in different colors). (H) Illustration of injection and recording locations for panels I-K in a morphologically realistic octopus cell model. (I) Inhibitory post synaptic currents (IPSCs) from glycinergic synapses located in the proximal (orange) and distal (blue) dendritic tree during control (solid) and Kv and HCN block (dotted) conditions. IPSCs decrease in size after Kv and HCN block. (J) IPSC peak magnitude at different glycine conductances located in the proximal (orange) and distal (blue) dendritic tree during control (solid) and Kv and HCN block (dotted) conditions. Kv and HCN channel blockade causes IPSC reduction at distal synapses but no change at proximal synapses. (K) Transfer impedance as function of frequency from proximal dendrites to soma (orange) and distal dendrites to soma (blue) during control (solid) and Kv and HCN block (dotted) conditions.
 
 To determine the types of glycinergic receptors contributing to IPSPs, we pharmacologically blocked subsets of glycine receptors (Figure 4C). IPSPs were reduced upon addition of 20 µM picrotoxin (PTX), which blocks homomeric glycine receptors (Pribilla et al., 1992; Wang et al., 2006; Lynch et al., 1995). Sequential addition of 100 µM cyclothiazide (CTZ), which blocks α2-containing homomeric and heteromeric glycine receptors (Zhang et al., 2008; Hruskova et al., 2012), nearly abolished the remaining IPSPs, and responses were fully abolished with further application of 500 nM STN. These results indicate that relevant glycine receptors include both large conductance extrasynaptic β-subunit lacking homomeric receptors and synaptically localized α2β receptors with slower kinetics (Lynch, 2009; Veruki et al., 2007; Dutertre et al., 2012).
 
@@ -72,9 +96,17 @@ To confirm whether the electrical confinement of IPSPs to the dendrites is consi
 
 While blocking Kv and HCN allowed us to reveal IPSPs at the soma, it is possible that reduced electrotonic isolation does not entirely explain the increase in somatically-measured IPSP amplitude. Changes in driving force could increase the magnitude of synaptic currents and therefore increase the magnitude of experimentally measured synaptic potentials. We used the model to explore if changes in driving force under Kv and HCN block contribute to larger IPSPs recorded at the soma. We simulated dendritic glycinergic conductances over a range of values and in the presence of blocked Kv and HCN channels (Figure 4—figure supplement 1H–K). Kv and HCN block and the resulting change in input resistance increased the magnitude of soma-measured IPSPs for all glycine conductances (Figure 4G). In contrast, following the pharmacological blockade of Kv and HCN channels, we observed either a reduction in the amplitude of inhibitory postsynaptic currents (IPSCs) at distal synapses (Figure 4H, blue) or little change in IPSC amplitude at proximal synapses (Figure 4H, orange). These findings indicate that alterations in IPSCs are unlikely to account for the observed increase in inhibitory postsynaptic potential (IPSP) magnitude recorded at the soma after Kv and HCN channel block (Figure 4—figure supplement 1I–J). Transfer impedance (ZT), a measure of signal transmission efficiency, was dramatically increased after Kv and HCN block (Figure 4—figure supplement 1K). Results from the model provide evidence of functional glycinergic synaptic transmission that is difficult to detect with in vitro somatic recordings due to substantial attenuation of IPSPs as they travel from the dendrites to the soma.
 
-## Inhibition decreases the magnitude and advances the timing of dendritic SGN inputs
+### Inhibition decreases the magnitude and advances the timing of dendritic SGN inputs
 
 SGN synapses onto octopus cell dendrites are arranged tonotopically, with higher frequency SGNs from the base of the cochlea terminating on distal dendrites and lower frequency SGNs from more apical positions terminating proximally (Figure 1A). This organization has been proposed to re-synchronize coincidentally firing SGNs that are activated at slightly different times due to the time it takes for the sound stimulus to travel from the base to the apex of the cochlea (McGinley et al., 2012). To test how inhibition in the dendrites shapes coincidence detection, we first used our model to explore the influence of simultaneous activation of inhibitory and excitatory synapses at varying locations along the dendritic tree (Hao et al., 2009; Koch et al., 1983). We modelled how somatically recorded EPSPs are affected by the location of inhibition by moving the site of excitation relative to inhibitory synapses placed either on proximal or distal dendrites (Figure 5A, Figure 5—figure supplement 1). In our model, inhibitory synapses that are located proximally to excitation (Figure 5—figure supplement 1A) had less of an influence on excitation recorded at the soma compared to those inhibitory synapses located distally to excitation (Figure 5—figure supplement 1B). We analyzed the effect of inhibitory synapse location on somatically measured EPSPs using varying excitatory and inhibitory synaptic weight values (Figure 5—figure supplement 1C–F) and determined that inhibitory conductances (GGly) between 6 and 10 nS produced values within experimental ranges. For both inhibition proximal to excitation (Figure 5B–C) and inhibition distal to excitation (Figure 5D–E), the model predicted that inhibition reduces EPSP amplitude and accelerates EPSP peak timing at the soma. Thus, the presence of inhibition could modulate EPSP timing in dendritic compartments during continuous auditory stimuli, when inhibition can be recruited after the onset of a sound and thus allow for adaptable temporal processing during the sound’s duration.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig5-v1.jpg)
+
+**Figure 5.:** (A) The impact of distance between excitatory and inhibitory synapses was measured in a computational model of octopus cells. Inhibitory synapses were placed either proximally or distally to excitation. Excitatory synapses were placed at varying locations along the dendritic arbor to change the anatomical distance (Δd) where d=0 is the location of inhibition (GGly) and d=1 is the condition where excitation (GAMPA) and inhibition are maximally separated. EPSPs were measured at the soma in all conditions (green). (B–E) Quantification of the percent change in soma-measured EPSP magnitude (B, D; GAMPA=5 nS) and the shift in EPSP peak timing (C, E; GAMPA=2 nS) in models of proximal (B–C) and distal (D–E) inhibition. Inhibitory conductances (GGly) between 6 and 10 nS produced values within experimental ranges. Example traces show EPSPs with (green) and without (black) inhibition at d=0 and d=1. Distal dendrites (d=1) have higher local input resistance and lower IPSP attenuation due to the sealed end. Inset scale bars are 1 mV, 200 ms. (F–H) Coincident stimulation of excitation and inhibition changes EPSP shape. (F) Representative responses to independent stimulation of excitatory spiral ganglion neurons (SGNs; black), independent stimulation of inhibitory inputs (light blue), coincident stimulation of both excitation and inhibition (green), and independent stimulation of excitatory SGNs with the addition of 1 µM strychnine (STN). Quantification of the percent change in EPSP height (G) and the shift in EPSP peak timing (H) during coincident Slc6a5-ChR2 activation of inhibitory inputs (green: n=8 cells, 6 mice), bath application of 25 µM glycine (dark blue: n=4 cells, 3 mice), and bath application of 1 µM STN (orange: n=5 cells, 4 mice). Activation of glycinergic receptors during excitation decreased EPSP heights and advanced EPSP peaks. Blocking of tonically active glycine receptors slowed and delayed EPSPs. Data are presented as mean ± SD. Markers represent the average quantification for a cell.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100492/elife-100492-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Illustration of injection and recording locations for proximal (A) and distal (B) inhibition paradigms and the normalized relative distance (d) between excitatory synapses. The impact that the location of dendritic inhibition has on somatic EPSPs is primarily determined by the local potential change by an EPSP and the attenuation or the length constant (λ) of the IPSP towards the excitatory synaptic location. The exponential decay of membrane voltage is asymmetric, with lower λ for the open end and higher λ for sealed end propagation. Distal parts of the dendrites have higher local input resistance and lower attenuation of IPSP due to the sealed end. (C–D) Percentage change in somatic EPSP height with dendritic glycinergic inhibition as function of normalized distance between excitatory and inhibitory synapses in proximal (C) and distal (D) inhibition for various E/I ratio with excitatory AMPA conductance (GAMPA) set at 5 nS. (E–F) Somatic EPSP peak time shift with dendritic glycinergic inhibition as function of normalized distance between excitatory and inhibitory synapses in proximal (E) and distal (F) inhibition for various E/I ratio with excitatory AMPA conductance (GAMPA) set at 2 nS.
 
 To directly test if the prediction that temporally coincident excitation and inhibition affects the timing and amplitude of EPSPs as they travel towards the octopus cell soma, we coincidently activated SGNs and glycinergic inputs in vitro. In these experiments, the octopus cell properties were not altered pharmacologically and inhibition was undetectable or only visible with averaging over many sweeps (Figure 5F, blue). When synaptic inhibition was evoked together with excitation (Figure 5F, green), EPSPs recorded in the soma were smaller and faster than when excitation was evoked alone (Figure 5F, black: n=8 cells, 6 mice). ChR2-evoked inhibition decreased EPSP heights by 25.2 ± 9.0% (Figure 5G, green) and shifted the peak of EPSPs forward 57.5 ± 26 µs (Figure 5H, green). This effect was mimicked by bath application of 25 µM glycine (Figure 5G–H, blue: n=4 cells, 3 mice). Further, bath application of 1 µM STN had the opposite effect, resulting in larger EPSPs and delayed peak times (Figure 5F–H, orange: n=5 cells, 4 mice). These findings suggest that the timing of EPSP arrival in the soma may be shaped both by tonically active glycine channels and the release of synaptic glycine onto the dendrite. Of note, many SGNs also terminate on the octopus cell soma, where inhibition is minimal. This suggests that the octopus cell’s ability to act as a coincidence detector depends on two stages of compartmentalized computations, one in the dendrite that combines excitation and inhibition to provide important information about which frequencies co-occur in a complex sound stimulus and one in the soma that is restricted by the rigid temporal summation window for coincidence detection. Together with the electrotonic properties of the octopus cell and the dominance of low threshold, low jitter Ia SGN inputs, these combined computations can enable reliable coincidence detection and cross-frequency binding needed for perception of sound.
 
@@ -96,7 +128,220 @@ Although this work uncovers a role for inhibition, a deeper understanding of oct
 
 ## Materials and methods
 
-## Animal use and transgenic mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Foxg1Cre/+: Foxg1tm1.1(cre)Ddmo</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:029690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Foxg1tm1.1Fsh</td>
+      <td>Miyoshi and Fishell, 2012</td>
+      <td>MGI:5441367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Tg(EIIa-cre)C5379Lmgd</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Ntng1Cre/+: Ntng1em1(cre)Kfra</td>
+      <td>Bolding et al., 2020</td>
+      <td>MGI:6740547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Myo15 iCre/+: Myo15atm1.1(cre)Ugds</td>
+      <td>Caberlotto et al., 2011</td>
+      <td>MGI:4361284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Slc6a5Cre/+: Slc6a5tm1.1(cre)Ksak</td>
+      <td>Kakizaki et al., 2017</td>
+      <td>MGI:6382286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Ai14: Gt(ROSA)26Sortm14(CAG-tdTomato)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Ai34: Gt(Rosa)26Sortm34.1(CAG-Syp/tdTomato)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:012570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>RCE:FRT: Gt(Rosa)26Sortm1.2(CAG-EGFP)Fsh</td>
+      <td>Sousa et al., 2009</td>
+      <td>RRID:MMRRC_032038-JAX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Ai32: Gt(Rosa)26Sortm32(CAG-COP4*H134R.EYFP)</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:01256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Thy1: Tg(Thy1-YFP)HJrs</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1020; RRID:AB_10000240</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RFP</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379; RRID:AB_2209751</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Calretinin</td>
+      <td>Swant</td>
+      <td>Cat# CG1; RRID:AB_1000034</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea Pig polyclonal anti-VGlut1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 135 304; RRID:AB_887878</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Amynopyridine</td>
+      <td>Tocris</td>
+      <td>CAS: 504-24-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-dioxo-6-nitro-7-sulfamoyl-benzo[f]quinoxaline (NBQX)</td>
+      <td>Tocris</td>
+      <td>CAS: 479347-86-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD 7288</td>
+      <td>Tocris</td>
+      <td>CAS: 133059-99-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclothiazide</td>
+      <td>Tocris</td>
+      <td>CAS: 2259-96-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine</td>
+      <td>Sigma Aldrich</td>
+      <td>S0532, CAS: 57-24-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td>Imaris</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.net/ij/</td>
+      <td>ImageJ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp9</td>
+      <td>Molecular Devices</td>
+      <td>pClamp9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>Igor Pro</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>http://www.neuromatic.thinkrandom.com/</td>
+      <td>NeuroMatic</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON simulation environment</td>
+      <td>https://neuron.yale.edu/neuron/</td>
+      <td>NEURON simulation environment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON simulation code</td>
+      <td>https://modeldb.science/2018259</td>
+      <td>NEURON simulation code</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td>Imaris</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal use and transgenic mouse lines
 
 All procedures were approved by and conducted in accordance with Harvard Medical School Institutional Animal Care and Use Committee (Protocol Number IS00000067-9). Male and female mice (Mus musculus) were bred on a C57BL/6 background at the Harvard Center for Comparative Medicine or obtained from Jackson Laboratories. Mice were housed in groups of up to five animals and maintained on a 12 hr light/dark cycle. Transgenic alleles were heterozygous for each transgene for all experimental animals. Descriptions of allele combinations for all experiments can be found in Supplementary file 1.
 
@@ -110,25 +355,25 @@ Ib/c SGNs were targeted using the Ntng1em1(Cre)Kfra (Ntng1Cre) mouse line, which
 
 Fluorescent reporters included Gt(Rosa)26Sortm14(CAG-tdTomato) (Ai14, tdT; Madisen et al., 2010), Gt(Rosa)26Sortm34.1(CAG-Syp/tdTomato) (Ai34, syp/tdT), and Gt(Rosa)26Sortm1.2(CAG-EGFP)Fsh (RCE:FRT, EYFP; Sousa et al., 2009). We also used Gt(Rosa)26Sortm32(CAG-COP4*H134R.EYFP) (Ai32, ChR2; Madisen et al., 2012) to drive synaptic activity in in vitro slice experiments.
 
-## Histology and reconstructions
+### Histology and reconstructions
 
 For immunohistochemical labeling, mice were deeply anesthetized with isoflurane and transcardially perfused with 15 mL of 4% paraformaldehyde (PFA) in 0.1 M phosphate-buffered saline (PBS) using a peristaltic pump (Gilson). Whole skulls containing brain and cochlea were immediately transferred to 20 mL of 4% PFA and post-fixed overnight at 4 °C. Fixed brains and cochlea were removed from the skulls and washed with 0.1 M PBS.
 
-## Brain sections
+### Brain sections
 
 Brains were collected from mice of both sexes, aged 28–38 days, and embedded in gelatin-albumin hardened with 5% glutaraldehyde and 37% PFA (Connelly et al., 2017). Sections were cut at 35, 65, or 100 μm with a vibrating microtome (Leica VT1000S) and free-floating tissue was collected in 0.1 M PBS. For sections less than 65 μm, tissue was permeabilized and nonspecific staining was blocked in a solution of 0.2% Triton X-100 and 5% normal donkey serum (NDS, RRID:AB_2337258) in 0.1 M PBS for 1 hr. After blocking, tissue was treated with primary antibody in a solution containing 0.2% Triton X-100 and 5% NDS in PBS for 1–2 nights at room temperature. Primary antibodies used were: chicken anti-GFP (1:1000, RRID:AB_10000240), rabbit anti-RFP (1:1000, RRID:AB_2209751), goat anti-calretinin (1:1000, RRID:AB_1000034), and guinea pig anti-VGLUT1 (1:500, RRID:AB_887878). Sections were washed in 0.1 M PBS then incubated in a secondary antibody solution (1:1000) containing 0.2% Triton X-100 and 5% NDS for 2–3 hr at room temperature. Tissue sections were mounted on charged slides and coverslipped (Vectashield Hardset Antifade Mounting Medium with DAPI), and imaged using a Zeiss Observer.Z1 confocal microscope.
 
 For 100 μm sections, tissue was washed in CUBIC-1A solution (Susaki et al., 2015) for 1 hr for strong permeabilization and delipidization (Matsumoto et al., 2019; Susaki et al., 2015). Tissue was then further permeabilized and nonspecific staining was blocked in a solution of 0.2% Triton X-100 and 5% NDS in 0.1 M PBS for 1 hr. After blocking, tissue was treated with primary antibody in a solution containing 0.2% Triton X-100 and 5% NDS in PBS for 4 nights at 37 °C. Primary antibodies used were: chicken anti-GFP (1:1000, RRID:AB_10000240), and rabbit anti-RFP (1:1000, RRID:AB_2209751). Sections were then incubated in a secondary antibody solution (1:400) containing 0.2% Triton X-100 and 5% NDS for 4 nights at 37 °C. Tissue sections were pre-incubated in CUBIC2 solution, then temporarily mounted on uncharged slides with CUBIC2 solution for immediate imaging using a Zeiss Observer.Z1 confocal microscope.
 
-## 3D reconstructions
+### 3D reconstructions
 
 Octopus cells and synaptic puncta were reconstructed in Imaris (Oxford Instruments). YFP signal from the target octopus cell was used to generate a surface reconstruction and mask syp/tdT signal. Dendrites were reconstructed using the masked YFP signal and separated into 10 μm increments. Masked syp/tdT puncta were marked and localized to a 10 μm increment of the dendritic tree. Synapse counts, dendrite metrics, and masked channels were exported to Excel (Microsoft) for further analysis.
 
-## Cochlea sections
+### Cochlea sections
 
 Cochlea were collected from mice of both sexes, aged 28–42 days. The bony labyrinth of the inner ear was decalcified in 0.5 M ethylenediamine tetraacetic acid (EDTA) for 3 nights at 4 °C and embedded in gelatin-albumin hardened with 5% glutaraldehyde and 37% PFA. Sections were cut at 65 μm with a vibrating microtome (Leica VT1000S) and free-floating tissue was collected in 0.1 M PBS. Sections were washed in CUBIC-1A solution for 1 hr for strong permeabilization and delipidization. Tissue was further permeabilized and nonspecific staining was blocked in a solution of 0.2% Triton X-100 and 5% NDS in 0.1 M PBS for 1 hr. After blocking, tissue was treated with primary antibody in a solution containing 0.2% Triton X-100 and 5% NDS in PBS for 2 nights at room temperature. Primary antibodies used were: chicken anti-GFP (1:1000, RRID:AB_10000240), rabbit anti-RFP (1:1000, RRID:AB_2209751), goat anti-calretinin (1:1000, RRID:AB_1000034). Sections were then incubated in a secondary antibody solution (1:500) containing 0.2% Triton X-100 and 5% normal goat serum for 2–3 hr at room temperature. Tissue sections were mounted on charged slides, coverslipped (Vectashield Hardset Antifade Mounting Medium with DAPI), and imaged using a Zeiss Observer.Z1 confocal microscope.
 
-## Acute slice electrophysiology
+### Acute slice electrophysiology
 
 Data were obtained from mice of both sexes, aged 24–47 days. Mice were deeply anesthetized with isoflurane and perfused transcardially with 3 mL of 35 °C artificial cerebral spinal fluid (ACSF; 125 mM NaCl, 25 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 1.25 mM NaH2PO4, 1.4 mM CaCl2, and 1.6 mM MgSO4, pH adjusted to 7.45 with NaOH). For high calcium concentration experiments presented in Figure 3C, ACSF contained 125 mM NaCl, 25 mM glucose, 25 mM NaHCO3, 2.5 mM KCl, 1.25 mM NaH2PO4, 2.4 mM CaCl2, and 1.3 mM MgSO4. Mice were rapidly decapitated and the brain was removed and immediately submerged in ACSF. Brains were bisected and 250 μm slices were prepared in the sagittal plane with a vibrating microtome (Leica VT1200S; Leica Systems). Prepared slices were incubated for 30 min at 35 °C, then allowed to recover at room temperature for at least 30 min. ACSF was continuously bubbled with 95% O2/5% CO2.
 
@@ -136,12 +381,12 @@ Whole-cell recordings were conducted at 35 °C using a Multiclamp 700B (Molecula
 
 For optogenetic activation, full-field 475 nm blue light was presented through a 20x immersion objective (Zeiss Examiner.D1). Onset, duration, and intensity of light was controlled by a Colibri5 LED Light Source (Zeiss). Light intensity at the focal plane ranged between 1.9 and 4.1 mW/mm2, corresponding to 6% and 10% intensity on the Colibri5 system. For electrical stimulation, glass stimulating electrodes were placed in the auditory nerve root and 20µs current pulses were generated with a DS3 current stimulator (Digitimer). Light or electrical stimulation intensity was adjusted during the experiment to evoke subthreshold EPSPs, not spikes. During analysis, EPSPs and spikes were distinguished by screening all events with a phase plot analysis. Only stimulation events that evoked EPSPs unambiguously were included for analysis. When presenting electrical and light stimulation together, a series of stimulation pairings with shuffled onset timings was presented to account for cell to cell variability in EPSP and IPSP timings. Data presented is for the stimulation pairings that evoked a maximal shift in EPSP timings.
 
-## Analysis and statistical tests
+### Analysis and statistical tests
 
 Cell counts and habenula measurements were performed in ImageJ/FIJI software (National Institutes of Health). Electrophysiology data were analyzed using custom scripts and NeuroMatic analysis routines (Rothman and Silver, 2018) in Igor Pro (Wavemetrics).
 
 For data with equal variance (Levene’s test), one-way ANOVAs with Tukey’s HSD post hoc test were used where appropriate to determine statistical significance. For data with non-homogenous variances, one-way ANOVAs with a Welch F test were used with a Tukey’s HSD post hoc test. Errors and error bars report standard deviation (SD) or standard error of the mean (SEM) as noted in figure legends and throughout the text.
 
-## Computational modelling
+### Computational modelling
 
 Computer simulations were performed using the NEURON 8.2 simulation environment (Hines and Carnevale, 1997), with an integration time constant of 25µs. The morphology of the octopus neuron was obtained from McGinley et al., 2012. The active and passive properties of the model were optimized to match the experimental recordings. We set the passive parameters as follows: internal or axial resistance (Ri or Ra) to 150 Ω.cm, membrane resistance (Rm) to 5 KΩ.cm2, capacitance (Cm) to 0.9 µF/Cm2 and resting membrane potential (Vm) to –65 mV. Ion-channel kinetics, maximum conductance densities, Q10 (3), and temperature (22 °C) were obtained from and matched to Manis and Campagnola, 2018 and the maximal conductances were adjusted using a scaling factor (scl) to align qualitatively with experimental data (Figure 4—figure supplement 1): fast Na+ (ḡNa=0.83), fast transient K+ (ḡKA=0.07), high threshold K+ (ḡKHT=0.1875), low-voltage activated K+ (ḡKLT=0.75), hyperpolarization-activated cyclic nucleotide-gated (HCN; ḡh=0.07) and leak K+ (ḡleak=0.0017). All conductances were uniformly distributed across dendrites and soma, except for HCN conductance, which was only present in dendrites. A baseline scaling factor of 1 was applied under control conditions and 0 under Kv+HCN block conditions. AMPA conductance (GAMPA) was set to 5nS to align with experimental data (Figure 5F), and glycine conductance (GGly) was set to 1nS to match experimental observations (Figure 4E). Reversal potentials for HCN, Na+, and K+ respectively were (in mV), Eh=–38, ENa=50 and EK=–70. Excitatory AMPA synaptic conductance and inhibitory glycine synaptic conductance were introduced in the proximal and distal dendrites to test the impact of dendritic inhibition on the EPSP height and peak time. The magnitudes of synaptic conductances were tuned to fall within the range seen during experimental data collection. The rise and decay time of AMPA and glycine conductances were tuned to 0.3ms and 3ms respectively, to match experimental data. The reversal potential of AMPA and glycine conductance was set to 0 mV and –80 mV, respectively.

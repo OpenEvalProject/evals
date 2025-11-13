@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.29086.001 Beta oscillations (15-29Hz) are among the most prominent signatures of brain activity. Beta power is predictive of healthy and abnormal behaviors, including perception, attention and motor action. In non-averaged signals, beta can emerge as transient high-power 'events'. As such, functionally relevant differences in averaged power across time and trials can reflect changes in event number, power, duration, and/or frequency span. We show that functionally relevant differences in averaged beta power in primary somatosensory neocortex reflect a difference in the number of high-power beta events per trial, i.e. event rate. Further, beta events occurring close to the stimulus were more likely to impair perception. These results are consistent across detection and attention tasks in human magnetoencephalography, and in local field potentials from mice performing a detection task. These results imply that an increased propensity of beta events predicts the failure to effectively transmit information through specific neocortical representations.
+Beta oscillations (15-29Hz) are among the most prominent signatures of brain activity. Beta power is predictive of healthy and abnormal behaviors, including perception, attention and motor action. In non-averaged signals, beta can emerge as transient high-power 'events'. As such, functionally relevant differences in averaged power across time and trials can reflect changes in event number, power, duration, and/or frequency span. We show that functionally relevant differences in averaged beta power in primary somatosensory neocortex reflect a difference in the number of high-power beta events per trial, i.e. event rate. Further, beta events occurring close to the stimulus were more likely to impair perception. These results are consistent across detection and attention tasks in human magnetoencephalography, and in local field potentials from mice performing a detection task. These results imply that an increased propensity of beta events predicts the failure to effectively transmit information through specific neocortical representations.
 
 ## Introduction
 
@@ -31,9 +31,17 @@ Here, we find that functionally relevant differences in averaged prestimulus bet
 
 ## Results
 
-## Mean prestimulus beta power is higher on non-detected and attend-out trials
+### Mean prestimulus beta power is higher on non-detected and attend-out trials
 
 We have previously shown that prestimulus beta rhythms source localized to the hand representation in human SI are predictive of tactile perception. Beta (15–29 Hz) power averaged 1 s prestimulus shows a negative relationship to the probability of detecting a brief perceptual threshold-level (50% detection) tap to the contralateral middle finger tip (Jones et al., 2010). Figure 1Aii illustrates this result, showing that the rate of detection (hit rate, measured as percent change from mean [PCM]) decreases as averaged prestimulus beta power increases. Further, beta power plotted as a function of time was higher on non-detected trials throughout the prestimulus window (Figure 1Ai). Human detection data were obtained from an MEG dipole source localized to the contralateral hand area of SI in the post-central gyrus in all subjects (N = 10 subjects), see Figure 1—figure supplement 1A for the evoked response and further details in the Materials and methods.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig1-v3.jpg)
+
+**Figure 1.:** (i) Mean prestimulus beta power as a function of time relative to stimulus onset in (A) human MEG during a tactile detection task (source localized data from hand area of SI; N = 10 subjects, 100 detected and non-detected trials per subject), (B) mouse LFP during a vibrissae deflection detection task (barrel cortex; N = 10 sessions, a mean of 120 (range 106 ~ 160) detected and non-detected trials per session, in each session the number and stimulus amplitude for detected and non-detected trials were matched), and (C) human MEG during a cued spatial attention task (source localized data from the hand area of SI; N = 10 subjects, 100 detected and non-detected trials per subject). 7-cycle Morlet wavelet was convolved across the 1 s prestimulus window on each trial and shown only for −900~−100 ms of the 1 s prestimulus period to circumvent regions affected by edge effects. Mean ±standard error of the mean (SEM) error bar across subjects/sessions for non-detected/attend out (red) and detected/attend in (blue) trials. Grey shaded regions show significance across subjects/sessions at p<0.05 (pointwise right-tailed Wilcoxon signed rank test). (ii) Trials were sorted from low to high trial mean prestimulus beta power (21-trial bins sliding in 1-trial steps). For each bin, hit rate and attend-in rate were calculated as percent change from mean (PCM) (mean ±SEM across subjects/sessions). (iii) Trial mean prestimulus beta power pooled across each behavioral condition (units are factor of median, FOM; grey open circles: individual subject/session means; red and blue x: grand mean ±SEM across subjects/sessions). Asterisks denote p<0.05 right-tailed paired t-test, and d = Cohen’s d effect size. (iv) Box and whisker plots of distribution of detect probability (DP)/attend probability (AP) across subjects/sessions (colored ○: each subject/session). The numbers in parentheses at the top denote the percentage of subjects/sessions with DP/AP significantly less than 0.5 (as determined by 95% confidence interval, calculated from bootstrapping 1000 times). One-sample left-tailed Wilcoxon signed rank test was applied to test whether the median across subjects/sessions was significantly less than 0.5; p-value is denoted, with asterisk if p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (i) Human MEG evoked response to a suprathreshold tap to the fingertip of the third digit of the right hand. (reproduced from Jones et al., 2007) (ii) Mouse LFP evoked response to a suprathreshold vibrissae deflection. (B) Catch trials in the Mouse Detection dataset. (i) Number of trials and (ii) trial mean prestimulus beta power in correct rejection (CR) and false alarm (FA) trials; in the mouse dataset for each session (grey connected open circles), and for mean (x marks, blue for CR and red for FA) with ±SEM error bars across sessions. Effect size (Cohen’s d) and right-tailed paired t-test p-value is denoted.
 
 Beta power recorded as LFP from SI of mice performing a similar vibrissae task (Figure 1Bi–ii) also shows a negative relationship to detection. These data were obtained from the SI ‘barrel’ neocortex contralateral to the stimulated vibrissae (N = 10 sessions from two mice), see Figure 1—figure supplement 1A for evoked response and further details in the Materials and methods.
 
@@ -45,7 +53,7 @@ To further investigate the potential impact of prestimulus beta power on behavio
 
 To determine if the difference in prestimulus beta power between non-detected and detected trials might be due to a lower criterion for perception and/or enhanced motor readiness, we assessed the relationship between correct reject and false alarm trials and beta power in the mouse dataset. Averaged beta power was not significantly higher in correct rejections compared to false alarms across sessions, arguing strongly against the possibility that the difference was due to modulation of the criterion or motor readiness (Figure 1—figure supplement 1B; right-tailed paired t-test). This analysis was not possible in the human detection data due to task design and low false alarm rates. We restricted all further analyses to trials at perceptual threshold.
 
-## Beta emerges as brief events on individual trials
+### Beta emerges as brief events on individual trials
 
 The results in Figure 1 establish that prestimulus beta power is predictive of perception and attentional allocation. Such averaging of power across time, frequency and trials is typical for the investigation of the relationship between brain rhythms and function. A key step in understanding how beta impacts function is to identify features in the non-averaged signal that contribute to this relationship.
 
@@ -67,13 +75,45 @@ To quantify these high-power transient beta events and their features in the non
 
 **Figure 4.:** (i) Pearson’s correlation coefficient between mean prestimulus beta power and the percent area (i.e. percentage of pixels in the spectrogram) above cutoff in the non-averaged spectrogram, for various cutoffs calculated as factors of median and plotted on a log scale, in each dataset (A–C) (thin colored curves for individual subjects/sessions; thick black curve for average across subjects.). Inset in A shows an example spectrogram (top) with illustration of percent area above cutoff for a 6X median cutoff (below). (ii) Distribution of maxima power for all beta-band local maxima in non-averaged spectrograms. 1-CDF shows proportion of local maxima above the cutoff (thin colored curves for individual subjects/sessions; thick black curve for aggregate of all local maxima across subjects/sessions). Insets show the same data as histograms.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig5-v3.jpg)
+
+**Figure 5.:** Probability histogram for each prestimulus beta event feature; (i) event number, (ii) event power, (iii) event duration, (iv) event frequency span; defined at 6X median cutoff in each dataset (A–C). Probability was calculated per trial for event number, and per event for event power, duration and frequency span. Probability histograms are plotted for each subject/session (colored); and for aggregate of all trials (for i) or events (for ii-iv) across subjects/sessions (black). Bin intervals for each histogram were as follows; 1 for event number; 0.2 (FOM) for event power; 10 (ms) for duration; and 1 (Hz) for frequency span.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Scatter plots of all local maxima aggregated across all subjects/sessions in each dataset.
+
 The probability histogram of the number of events in the prestimulus period, and the event power, duration and frequency span, are plotted in Figure 5. Event power was defined as the spectrogram value at the maxima, and duration and frequency span were defined as full-width-at-half-maximum of the beta event in time and frequency dimensions, respectively. There was homology in the distribution of beta event features across tasks and species: In almost all trials,<4 beta events occurred in the 1 s prestimulus period; the event power probability histogram fell off monotonically after the power cutoff; the event duration was confined to a restricted range around a stereotypical value (mean ±SEM across events: human detection 167 ± 1.6 ms; mouse detection 145 ± 1.3 ms; human attention 153 ± 1.4 ms); and, the event frequency span was confined around a stereotypical value (mean ±SEM across events: human detection 8.6 ± 0.07 Hz; mouse detection 10.6 ± 0.11 Hz; human attention 8.9 ± 0.07 Hz). Below the 6X median threshold, event duration and frequency span become more distributed (Figure 5—figure supplement 1).
 
-## The rate of prestimulus beta events had the highest correlation with trial mean prestimulus power and was the most consistent predictor of behavior
+### The rate of prestimulus beta events had the highest correlation with trial mean prestimulus power and was the most consistent predictor of behavior
 
-Next, we assessed the impact of each beta event feature (number, power, duration, frequency span) on the trial mean prestimulus beta power, and on behavioral measures of perception and attention. Figure 6 shows for all subjects and sessions in each dataset the Pearson’s correlation between trial mean prestimulus power and the trial summary of each beta event feature in the prestimulus period (event number per trial, trial mean event power, duration and frequency span). Again, there was consistency across species and tasks. The correlation coefficient distributions showed significant differences in all three datasets (Friedman test: human detection p=3.92×10-6, df=3, χ2=27.8; mouse detection p=5.89×10-6, df=3, χ2=27; human attention p=2.33×10-6, df=3, χ2=28.9). In each dataset, the number of beta events in the prestimulus period (i.e. rate) showed a significantly higher correlation with trial mean prestimulus beta power than the trial mean event power, duration or frequency span (Figure 6 asterisks denote p<0.05, Holm-Bonferroni corrected post-hoc Wilcoxon signed rank test; see also Figure 6—figure supplement 1 for scatterplots of example subject data and Figure 6—figure supplement 2 for variations in power cutoff).
+Next, we assessed the impact of each beta event feature (number, power, duration, frequency span) on the trial mean prestimulus beta power, and on behavioral measures of perception and attention. Figure 6 shows for all subjects and sessions in each dataset the Pearson’s correlation between trial mean prestimulus power and the trial summary of each beta event feature in the prestimulus period (event number per trial, trial mean event power, duration and frequency span). Again, there was consistency across species and tasks. The correlation coefficient distributions showed significant differences in all three datasets (Friedman test: human detection $p=3.92\times10^{-6},df=3,χ^{2}=27.8$; mouse detection $p=5.89\times10^{-6},df=3,χ^{2}=27$; human attention $p=2.33\times10^{-6},df=3,χ^{2}=28.9$). In each dataset, the number of beta events in the prestimulus period (i.e. rate) showed a significantly higher correlation with trial mean prestimulus beta power than the trial mean event power, duration or frequency span (Figure 6 asterisks denote p<0.05, Holm-Bonferroni corrected post-hoc Wilcoxon signed rank test; see also Figure 6—figure supplement 1 for scatterplots of example subject data and Figure 6—figure supplement 2 for variations in power cutoff).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig6-v3.jpg)
+
+**Figure 6.:** Box and whisker plots over subjects/sessions depicting the Pearson’s correlation coefficients ($R$) between the trial summary of each beta event feature and trial mean prestimulus beta power. Note, for all analyses involving trial mean event power, duration and frequency span, only the trials with one or more events were considered. Friedman test followed by right-tailed Wilcoxon signed-rank test for each pair of event features, with Holm-Bonferroni correction for multiple comparisons; significance was determined at p<0.05 (asterisks).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Scatter plot showing trial-by-trial relationship between trial mean prestimulus beta power and trial summary of each event feature. Data shown for one representative subject (A, C)/session (B) from each dataset.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** Pearson’s correlation with trial mean prestimulus power for event number per trial (blue), trial mean event power (red), trial mean event duration (yellow) and trial mean event frequency span (purple); mean across subjects/sessions with±SEM as error bars over a range of cutoffs. For all analyses involving trial mean event power, duration and frequency span, only the trials with at least one beta event over cutoff in the 1 s prestimulus period were considered.
 
 The number of beta events in the prestimulus period was also the most consistent predictor of behavior across datasets. Figure 7i shows that prestimulus beta event rate mirrors the beta power (Figure 1i), where the event rate is higher in non-detected compared to detected trials throughout most of the 1 s prestimulus window. In Figure 7ii, we sorted the trials in ascending order per trial summary of each beta event feature in the prestimulus period (event number per trial, trial mean event power, duration and frequency span), and calculated the percentage of detected or attend-in trials as PCM in 21-trial sliding bins (as in Figure 1ii). This visualization shows that the negative trend is more prominent in event number in all three datasets. To determine whether these negative relationships produced a significant difference across behavioral conditions, we compared the pooled average of each feature across conditions (Figure 7iii). In the human data, only the number of events per trial was significantly higher in non-detected (miss)/attend out conditions (Figure 7iii, asterisks p<0.05, right-tailed paired t-test), and only the number of events had DP/AP distributions that were significantly less than 0.5 across subjects (Figure 7iv, asterisks p<0.05, one-sample left-tailed Wilcoxon signed rank test). The number of beta events was also predictive of behavior in the mouse LFP. In this dataset, trial mean event power and frequency span were also predictive of non-detection, possibly due to the different signal to noise ratio stemming from the different recording modalities. However, in all three datasets, the effect size of the difference across behavioral conditions was higher for event number than any other event feature (see Cohen’s d values in Figure 7iii). Further, the percent of subjects/sessions that had DP/AP significantly less than 0.5 was highest for event number in all three datasets (as determined by 95% confidence interval, constructed from bootstrapping 1000 times; see parentheses Figure 7iv). Taken together, these results suggest that the event number (i.e. rate) was the most consistent predictor of behavior across tasks and species.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig7-v3.jpg)
+
+**Figure 7.:** (i) Probability time histogram of beta event occurrence in the 1 s prestimulus window. Data binned in 50 ms windows, sliding in 1 ms steps. All other notations are same as Figure 1i. (ii-iv) Analogous analyses to Figure 1ii-iv were done for ii-iv, for each trial summary event feature (number, power, duration, frequency span) separately. Only trials with one or more events were considered for trial mean event power, duration and frequency span.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Percentage of subjects with DP/AP significantly less than 0.5 (i.e. beta is miss predictive) for trial summary of each beta event feature, over a range of cutoffs (significance determined by 95% confidence interval, calculated from bootstrapping 1000 times). For each dataset, feature, and power cutoff, we tested whether the DP/AP distribution across subjects/sessions was significantly less than 0.5 (one-sample left-tailed Wilcoxon signed-rank test, p<0.05 indicated with solid bars on top part of the panel for each feature, in corresponding colors).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** A-C (i) Probability histogram of event number across conditions (blue: detected/attend in; red: non-detected/attend out; mean ± SEM across subjects/sessions). (ii) % subjects/sessions with optimal event number criterion at each value. Here, we considered a binary classifier that categorized trials as non-detected/attend out when (event number ≥ criterion). The optimal criterion for each subject/session was the criterion at which the binary classifier achieved the highest performance, as measured by (True Positive Rate – False Positive Rate). (iii) Mean event timing in trials with only one event, pooled across detected (blue) and non-detected (red) trials, as in Figures 1iii, 7iii and 8iii. (D) Cohen’s d quantifying the effect size of the difference between behavioral conditions, for the proportion of trials with various event numbers, across subjects/sessions in each dataset.
 
 As stated above, we chose a 6X median power cutoff to define beta events because this value consistently showed the highest correlation between percent area (in spectrogram) above power cutoff and averaged prestimulus power (Figure 4). We investigated the impact of varying the power cutoff on the correlation between each beta event feature and trial mean prestimulus power, and on the relationship between each beta event feature and behavior. We found that as the beta event power cutoff was lowered, the trial mean event power became more strongly correlated with mean prestimulus power, while event number became less correlated (the two curves cross at ~3X median cutoff, Figure 6—figure supplement 2). This result might be expected from including a greater number of local maxima in the spectrogram that are within the beta frequency, but smaller in amplitude and closer to the signal to noise boundary. Similarly, event power was a stronger predictor of behavior than event number for low power cutoffs (~<3X median, Figure 7—figure supplement 1).
 
@@ -81,11 +121,19 @@ Given that event number was the most consistent predictor of detection/attention
 
 Next, we considered a binary classifier that categorized trials as non-detected/attend out when event number was at or above a certain criterion value (trials categorized as detected/attend in when event number was less than the criterion). The optimal criterion for each subject/session was the criterion at which the binary classifier achieved best separability between its true positive rate and its false positive rate. Consistent with the distributions and effect sizes, in each dataset, the optimal event number criterion was two events for most subjects/sessions (Figure 7–figure supplement 2ii; 60% of subjects in human and mouse detection, and 50% of subjects in human attention). Put another way, trials with ≥2 prestimulus events predict non-detection/attend out conditions and trials with 0 events predict detection/attend in conditions, while trials with one event are not predictive without additional information about event features.
 
-## Non-detected trials were more likely to have a prestimulus beta event closer to the time of the stimulus
+### Non-detected trials were more likely to have a prestimulus beta event closer to the time of the stimulus
 
 We next asked whether the event timing relative to the stimulus onset may influence detection, such that the closer in time the beta event is to the sensory stimulus, the more likely for the stimulus to not be detected. We found that in trials with one event, the event timing was significantly closer to stimulus onset on non-detected trials across human detection subjects, and trended towards significance (p<0.1) in the mouse detection sessions (right-tailed paired t-test, Figure 7–figure supplement 2iii, A and B). We would not expect a difference in timing relative to the stimulus onset in the different attention conditions, as the timing of the attentional cue relative to the stimulus onset was randomized (confirmed in Figure 7–figure supplement 2Ciii).
 
 Based on these results, we hypothesized that, for any number of events in the prestimulus period, the timing of the beta event occurring closest to stimulus onset (i.e. ‘most recent beta event’) mattered for detection. The probability time histogram of the ‘most recent beta event’ per trial showed that beta events were more likely to happen closer to stimulus onset on non-detected trials (Figure 8i). The probability time histogram profiles were significantly different out to ~200 ms prestimulus in the human and mouse data, suggesting that beta events’ influence on function may have an effective period that lasts about ~200 ms (pointwise left-tailed Wilcoxon signed rank test, p<0.05).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig8-v3.jpg)
+
+**Figure 8.:** For each trial, the event occuring closest to the stimulus onset was termed the ‘most recent beta event’. All analyses are analogous to Figure 7, in the human (A) and mouse (B) detection datasets, but for features of the ‘most recent beta event’ (event timing relative to the stimulus, event power, duration and frequency span). For analyses in ii-iv, only the trials with one or more events were considered.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** Same as in Figure 7—figure supplement 1, but for ‘most recent beta event’ features.
 
 We further assessed the relationship between detection performance and features of the ‘most recent beta event’, including its timing relative to stimulus onset, and its power, duration and frequency span. Detection performance was quantified with the same measures as in Figure 7. In the human data, the ‘most recent beta event’ timing (relative to the stimulus onset) was the only significant feature, such that the closer the ‘most recent beta event’ was to the stimulus the less likely the subject was to detect (Figure 8Aii-iv; right-tailed paired t-test comparing the pooled average between behavioral conditions, and one-sample left-tailed Wilcoxon signed rank test of the DP distribution). In the mouse data, the timing of the ‘most recent beta event’ predicted detection as well (Figure 8Bii-iv). As in Figure 7Biii-iv, ‘most recent beta event’ power and frequency span also showed significance in the mouse data. However, the effect size was consistently highest for ‘most recent beta event’ timing in humans and mice (Figure 8iii), and the percent of subjects/sessions with DP significantly less than 0.5 was highest for ‘most recent beta event’ timing (as determined by 95% confidence interval, constructed from bootstrapping 1000 times; see parentheses Figure 8iv). Hence, the timing of the ‘most recent beta event’ influenced detection more consistently than its power, duration or frequency span.
 
@@ -99,13 +147,13 @@ Given that both the event number and the ‘most recent event’ timing signific
 
 We similarly assessed whether event number affected detection independent of the timing of the event closest to stimulus onset, that is the ‘most recent event’ timing. The ‘most recent event’ timing histogram in trials with at least one event was forced to be the identical via an analogous random trial trimming process (Figure 9ii left panels black curves, matched in bin resolution of 20 ms). After matching, approximately 33% of all trials remained (mean ±SEM across subjects/sessions: human detection 34.5 ± 2.3%; mouse detection 32.4 ± 0.9%). In the mouse dataset, the pooled average of event number was significantly higher in the non-detected trials (right-tailed paired t-test, p=0.034), and trended towards significance in the human detection dataset (p=0.075). Hence, these results provide support for the hypothesis that event number can be predictive of detection independent of event timing.
 
-## Beta events did not occur rhythmically
+### Beta events did not occur rhythmically
 
-We next assessed whether beta events occurred rhythmically in the prestimulus period, and if the degree of rhythmicity impacted behavior. For this purpose, we quantified the inter-event interval (IEI) as the difference in timing between two consecutive events, in trials that had two or more events (~30% of trials). The IEI distributions did not differ between detected versus non-detected or attend-in versus attend-out conditions (Figure 10i). Moreover, there was no clear evidence in the IEI distribution that beta events occur rhythmically in 1 s prestimulus windows. The lack of rhythmicity was further supported by analyses of the Fano Factor and squared coefficient of variation (CV2). The Fano Factor quantifies the trial-to-trial variability in event number (i.e. rate), and the CV2 quantifies the variability in IEI. For a Poisson process, the Fano Factor and CV2 would be 1, whereas for a more regular (rhythmic) process, both values would be less than 1. In all three datasets, CV2 was around 1 (Figure 10ii). The CV2 distributions were not significantly different from one across human subjects (two-tailed Wilcoxon signed rank test: human detection p=0.106; human attention p=0.375) and trended towards being higher than one across mouse detection sessions (p=0.065). The Fano Factor values were above one in all subjects/sessions across all three datasets (Figure 10ii, one-sample right-tailed Wilcoxon signed rank test: p=9.77×10-4 for all three datasets). To further investigate the characteristics underlying the beta event generation process, we looked at the relationship between the Fano Factor and CV2. A renewal process, defined as a process by which the time of occurrence of an event only depends on the time of occurrence of the previous event, would have similar values for Fano Factor and CV2. However, in each dataset, almost all data points had Fano Factors larger than CV2, indicating that the driver underlying beta event generation was not a renewal process.
+We next assessed whether beta events occurred rhythmically in the prestimulus period, and if the degree of rhythmicity impacted behavior. For this purpose, we quantified the inter-event interval (IEI) as the difference in timing between two consecutive events, in trials that had two or more events (~30% of trials). The IEI distributions did not differ between detected versus non-detected or attend-in versus attend-out conditions (Figure 10i). Moreover, there was no clear evidence in the IEI distribution that beta events occur rhythmically in 1 s prestimulus windows. The lack of rhythmicity was further supported by analyses of the Fano Factor and squared coefficient of variation ($CV^{2}$). The Fano Factor quantifies the trial-to-trial variability in event number (i.e. rate), and the $CV^{2}$ quantifies the variability in IEI. For a Poisson process, the Fano Factor and $CV^{2}$ would be 1, whereas for a more regular (rhythmic) process, both values would be less than 1. In all three datasets, $CV^{2}$ was around 1 (Figure 10ii). The $CV^{2}$ distributions were not significantly different from one across human subjects (two-tailed Wilcoxon signed rank test: human detection p=0.106; human attention p=0.375) and trended towards being higher than one across mouse detection sessions (p=0.065). The Fano Factor values were above one in all subjects/sessions across all three datasets (Figure 10ii, one-sample right-tailed Wilcoxon signed rank test: $p=9.77\times10^{-4}$ for all three datasets). To further investigate the characteristics underlying the beta event generation process, we looked at the relationship between the Fano Factor and $CV^{2}$. A renewal process, defined as a process by which the time of occurrence of an event only depends on the time of occurrence of the previous event, would have similar values for Fano Factor and $CV^{2}$. However, in each dataset, almost all data points had Fano Factors larger than $CV^{2}$, indicating that the driver underlying beta event generation was not a renewal process.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/29086/elife-29086-fig10-v3.jpg)
 
-**Figure 10.:** (i) IEI distributions (20 ms bins) on detected/attend in (blue) and non-detected/attend out (red) conditions; mean across subjects with ± SEM as error bars. (ii) Fano factor and  for each subject are plotted as ○, for all trials (black), for only the detected/attend in trials (blue); and only the non-detected/attend out trials (red). The mean across subjects are plotted as х, with ± SEM as error bars.CV2
+**Figure 10.:** (i) IEI distributions (20 ms bins) on detected/attend in (blue) and non-detected/attend out (red) conditions; mean across subjects with ± SEM as error bars. (ii) Fano factor and $CV^{2}$ for each subject are plotted as ○, for all trials (black), for only the detected/attend in trials (blue); and only the non-detected/attend out trials (red). The mean across subjects are plotted as х, with ± SEM as error bars.
 
 Figure 10i shows that many of the IEIs were concentrated at <150 ms, while a typical event duration was ~150 ms (Figure 5). This result suggests there were cases where multiple events occurred within one continuous high-power region (i.e. above the power cutoff, see Figure 2ii for examples). To determine whether multiple events happening in quick succession (i.e. multi-maxima events within one continuous suprathreshold region) constituted a separate class of events with a different functional meaning, we considered an alternative definition of events. Here, each continuous supra-cutoff temporal region was defined as an event, and they were referred to as ‘non-overlapping beta events’ (Figure 11). Most supra-cutoff regions had a single local maximum (~80%) and the probability of a given number of maxima per event was not significantly different across behavioral conditions (Figure 11i). This suggests that multi-maxima events did not constitute a distinct class of events, with respect to how they influenced behavior.
 
@@ -117,7 +165,7 @@ Successive supra-cutoff temporal regions were by definition separated by periods
 
 Results on the relationships between beta event features and power and behavior also held under the ‘non-overlapping events’ definition, such that event number showed the highest correlation with mean prestimulus power (Figure 11iii) and was the most consistent predictor of detection/attention (Figure 11iv). This high congruency can be attributed to the fact that, as stated above, in all three datasets ~ 80% of non-overlapping events have only one local maximum, meaning they were also considered to be an event in the original definition.
 
-## Beta events are generated by a bursty mechanism, rather than by dynamic amplitude modulation of a sustained beta oscillation
+### Beta events are generated by a bursty mechanism, rather than by dynamic amplitude modulation of a sustained beta oscillation
 
 The lack of evidence for rhythmicity of beta events (Figure 10i and Figure 11ii), together with the Fano Factors being well over 1 (Figure 10ii), implies that the underlying mechanism generating beta events was less regular than a Poisson process and more akin to a ‘bursty’ process. We investigated this possibility further by considering two mechanisms that could underlie transient surges in beta power in the spectrogram (Figure 2), a Dynamic Amplitude Modulation mechanism versus a Bursty Generator mechanism (Figure 12 schematic). A Dynamic Amplitude Modulation hypothesis predicts the existence of an ongoing continuous rhythm whose amplitude (and hence power) was dynamically modulated. Under this hypothesis, the rhythmicity of the beta component of the signal would be independent of its amplitude. In contrast, the Bursty Generator hypothesis assumes that the generator that triggers the beta waveform also causes the transient surge in beta amplitude. Under this hypothesis, beta rhythmicity is only present when this generator triggers the system: If so, rhythmicity would be restricted to high beta power regions of the data. The contrasting predictions of these two competing hypotheses were tested by choosing an amplitude cutoff, and comparing the rhythmicity in time lags above and below the cutoff.
 
@@ -147,7 +195,7 @@ There are several plausible mechanisms by which the accumulation and/or the timi
 
 Based on the following, we conjecture that the mechanisms of generation of high-power beta events may be distinct from lower-power beta transients, and thus separable in their impact on function. While the distribution of power of all beta local maxima did not show bimodality (Figure 4ii inset), several other factors indicated high power beta events were distinct from noise. First, high power beta events were stereotyped in their waveforms (Sherman et al., 2016) and in their spectral features, i.e. the event duration and frequency span (Figure 5—figure supplement 1). Second, sliding power cutoff analyses showed that despite the lack of clear bimodality in the full distribution of beta event power, there was a clear switch in the relative importance of event features as the beta event power cutoff was varied. For lower power cutoffs (<~3X median) beta event power is more predictive of averaged prestimulus power and behavior than beta event rate, while for higher cutoffs (>3X median) beta event rate is more predictive. Third, we found that the intervals between consecutive high power beta events were consistent with a bursty process, as opposed to dynamic amplitude modulation of a continuous process. Taken together, our prior (Sherman et al., 2016) and current results suggest that the mechanisms underlying the high-power beta events that dominate fluctuations in the averaged prestimulus beta power are distinct in their generation and relationship to function.
 
-An open question is whether properties of transient rhythms in other frequency bands or sub-bands of beta may underlie observed differences across behavioral conditions. Indeed, transient rhythms emerging for a few cycles have been reported in other bands, including gamma (Burns et al., 2011; Greenwood et al., 2015; Lundqvist et al., 2016) and alpha (Jones et al., 2009; Sherman et al., 2016; Ziegler et al., 2010). In our human data, power-spectral density analysis shows a single ‘bump’ in the alpha band (7–14 Hz) and a single bump in the beta band (15–29 Hz); whereas the gamma (30–80 Hz) power is not distinquishable from the 1/fn trend (Jones et al., 2009). The bump in the beta band emerges primarily between 18–22 Hz, also known as the beta 2 range, and we do not observe a separate bump for the beta 1 range (typically ~15 Hz; [Kopell et al., 2014]). We conjecture that this isolated increase in the power spectral density in the beta band is indicative of a singular underlying mechanism. In further support, as discussed above, we have previously shown evidence for a unique mechanism that generates stereotyped and homogeneous beta-band activity (Sherman et al., 2016). As a follow-up, the current study assessed the behavioral impact of beta’s transient manifestation in detail. Of note, our data also show high power alpha band activity (Jones et al., 2010; Jones et al., 2009). We have observed that alpha and beta have separable correlations with attention and perception. Shifts in averaged alpha power occur sooner after attentional cues than shifts in beta power, and beta showed a stronger linear relationship to detectability (Jones et al., 2010; Sacchet et al., 2015). A full quantification of the potential transient nature of alpha and its relationship to beta events would be an interesting future direction.
+An open question is whether properties of transient rhythms in other frequency bands or sub-bands of beta may underlie observed differences across behavioral conditions. Indeed, transient rhythms emerging for a few cycles have been reported in other bands, including gamma (Burns et al., 2011; Greenwood et al., 2015; Lundqvist et al., 2016) and alpha (Jones et al., 2009; Sherman et al., 2016; Ziegler et al., 2010). In our human data, power-spectral density analysis shows a single ‘bump’ in the alpha band (7–14 Hz) and a single bump in the beta band (15–29 Hz); whereas the gamma (30–80 Hz) power is not distinquishable from the $1/f^{n}$ trend (Jones et al., 2009). The bump in the beta band emerges primarily between 18–22 Hz, also known as the beta 2 range, and we do not observe a separate bump for the beta 1 range (typically ~15 Hz; [Kopell et al., 2014]). We conjecture that this isolated increase in the power spectral density in the beta band is indicative of a singular underlying mechanism. In further support, as discussed above, we have previously shown evidence for a unique mechanism that generates stereotyped and homogeneous beta-band activity (Sherman et al., 2016). As a follow-up, the current study assessed the behavioral impact of beta’s transient manifestation in detail. Of note, our data also show high power alpha band activity (Jones et al., 2010; Jones et al., 2009). We have observed that alpha and beta have separable correlations with attention and perception. Shifts in averaged alpha power occur sooner after attentional cues than shifts in beta power, and beta showed a stronger linear relationship to detectability (Jones et al., 2010; Sacchet et al., 2015). A full quantification of the potential transient nature of alpha and its relationship to beta events would be an interesting future direction.
 
 The transient nature of high-power spontaneous beta events observed here has direct implications for brain stimulation studies, such as transcranial alternating current (tACS) or magnetic stimulation (TMS), aimed at entraining ‘rhythms’ to causally modulate behavior. Causal manipulations may be more effective if they are designed to match the intermittent character and specific temporal characteristics of the beta events observed. Our results suggest the rate and timing of beta events is a key target for modulation. Specifically, stimulation protocols that drive two or more events in the 1 s prestimulus period may impair perception, whereas blocking such events may benefit perception. Our data predict that driving single events could impair throughput in the aligned somatotopic area, but only if it arrives close to the time of the stimulus.
 
@@ -155,13 +203,13 @@ In summary, cumulative evidence across tasks, recording modalities, and species 
 
 ## Materials and methods
 
-## Human recordings
+### Human recordings
 
-## MEG data collection
+#### MEG data collection
 
 Details of the human MEG recordings and source localization for both the detection and attention tasks have been previously reported (Jones et al., 2010; Jones et al., 2007). In brief, we used the 306-channel Vectorview system. For both the detection and attention dataset signals were sampled at 600 Hz with the band-pass set to 0.01 to 200 Hz. Dipole activity from a suprathreshold level stimulus to the third digit of the right hand was localized to the postcentral gyrus in the contralateral hand area of SI using least-squares fit inverse methods and individualized structural MRIs, or a spherically symmetric conductor model of the head (Hämäläinen and Sarvas, 1989). All analyses presented in this paper are derived from the forward solution from this source-localized region of interest. The evoked response elicited by the brief tap to the finger was reported in a prior report (Jones et al., 2007) and reproduced in Figure 1—figure supplement 1Ai.
 
-## Detection task
+#### Detection task
 
 Subject recruitment, experimental protocol, and data acquisition have been described in prior reports from our group (Jones et al., 2010; Jones et al., 2007). In brief, the stimulus was a single cycle of a 100 Hz sine wave (i.e. 10 ms duration) generated by piezoelectric benders (Noliac). The stimulus was applied to the third digit fingertip of the right hand. Individual subjects’ perceptual thresholds were obtained before imaging by employing a parameter estimation by sequential testing (PEST) convergence procedure (Dai, 1995; Leek, 2001), which estimated the threshold to <5 μm precision.
 
@@ -169,29 +217,29 @@ During MEG imaging, 70% of the trials were maintained at perceptual threshold (5
 
 10 subjects underwent eight runs, 120 trials each, in one data collection session. To minimize within-session training effects, we limited our analysis to the last 100 trials of perceived and nonperceived threshold level stimuli for each subject (Wan et al., 2011).
 
-## Cued attention task
+#### Cued attention task
 
 Subject recruitment, experimental protocol, and data acquisition have been explained in detail previously (Jones et al., 2010). In brief, 10 subjects were instructed to fixate on a cross on a projection screen. Each trial lasted 3500 ms, and began with a 60 dB, 2 kHz tone delivered to both ears, simultaneously accompanied by the fixation cross changing into a visual word cue instructing the subject where to attend; either ‘Hand’ (attend-in condition), ‘Foot’ (attend-out condition) or ‘Either’ location. The tactile stimulus was delivered to the cued location at a randomized time between 1100 ms and 2100 ms after the cue onset. The stimulus was a single cycle of a 100 Hz sine wave (10 ms duration) generated by piezoelectric benders, as in the detection task. Stimuli were applied to the distal pads of the third digit of the left hand or first digit of the left foot, and PEST procedure (Dai, 1995; Leek, 2001) was employed before the task to estimate subject’s initial detection threshold for both the hand and the foot. Both the auditory tone and the visual cue ceased after 2500 ms. Subjects then had 1000 ms to report detection or non-detection of the stimulus at the cued location, with button presses using the second and third digits of the right hand, respectively.
 
 The task consisted of at least 5 cued detection runs, where each run consisted of 40 of each attention condition randomly intermixed (i.e. 120 trials per run), in one data collection session. Similar to the detection task, all analyses were limited to the last 100 perceived trials of attend-in and attend-out conditions for each subject. Note, limiting to perceived trials allowed us to dissect attention effects independent of detection performance.
 
-## Mouse recordings
+### Mouse recordings
 
-## Chronic extracellular electrophysiology in mice
+#### Chronic extracellular electrophysiology in mice
 
 All electrophysiology data was collected using the Open Ephys system. Continuous data was sampled at 30 kHZ, and off-line downsampled to 1000 Hz. To reject common noise shared across channels, such as muscle artifact, independent component analysis (ICA; https://research.ics.aalto.fi/ica/fastica/code/dlcode.shtml) was applied to the downsampled continuous data collected across all 64 channels throughout the entire duration of the session. Components resembling artifact were manually chosen, and denoised signal was reconstructed with the exclusion of the rejected components. This reconstructed signal was used for all further analyses. As all electrodes were located in the barrel cortex and showed highly correlated LFP, one electrode was chosen for each mouse for all analyses.
 
-## Detection task
+#### Detection task
 
-## Animals
+##### Animals
 
 Two neurologically healthy male mice were used in this experiment (5 sessions from each mouse). Mice were 8–15 weeks at the time of surgery. Animals were individually housed with enrichment toys and maintained on a 12 hr reversed light-dark cycle. All experimental procedures and animal care protocols were approved by Brown University Institutional Animal Care and Use Committees and were in accordance with US National Institutes of Health guidelines.
 
-## Surgical procedure
+##### Surgical procedure
 
 Naive mice were induced with isofluorane gas anesthesia (0.5–2% in oxygen 1 L/min) and secured in a stereotaxic apparatus. We injected slow-release buprenorphine subcutaneously (0.1 mg/kg; as an analgesic) and dexamethasone intraperitoneally (IP, 4 mg/kg; to prevent tissue swelling). Hair was removed from scalp with hair-removal cream, followed by scalp cleansing with iodine solution and alcohol. Then, skull was exposed by incision. After the skull was cleaned, muscle resection was performed on the left side. A titanium headpost was affixed to the skull with adhesive luting cement (C and B Metabond). Two small stainless-steel watch screws were implanted in the skull plates; one anterior to bregma, one on the right hemisphere. Next, a ~ 1.5 mm–diameter craniotomy was drilled over barrel cortex of the left hemisphere, and subsequently duratomy was performed. The guide tube array (8 by 2 arrangement of 33ga polyimide tubes; 2 mm by 0.5 mm) was centered at 1.25 mm posterior to bregma and 3.25 mm lateral to the midline and angled 45 degrees relative to midline. The drive body was angled 30 degrees relative to the perpendicular direction to compensate for the curvature of barrel cortex. Once the implant was stably positioned, C and B Metabond and dental acrylic (All for Dentist) was placed around its base to seal its place. A drop of surgical lubricant (Surgilube) prevented dental acrylic from contacting the cortical surface. Mice were given at least 3 days to recover before the start of water restriction.
 
-## Trial structure and behavior control
+##### Trial structure and behavior control
 
 The behavioral task setup was adapted from a previous study from our group (Siegle et al., 2014) with slight modifications. Each trial consisted of right-side (contralateral) vibrissae stimulation in the caudorostral direction, with 20 Hz deflections that lasted 500 ms (10 pulses with the same amplitude). The stimulus was delivered through piezoelectric benders (Noliac). Vibrissae on the right side were tied up with a suture loop fed through a glass capillary tube (0.8 mm outer diameter) attached to the piezoelectric bender. Most of the vibrissae were secured about 3 mm from the mystacial pad.
 
@@ -199,7 +247,7 @@ If the mouse licked within 700 ms relative to the onset of the stimulus, a drop 
 
 All behavioral events including piezoelectric control, reward delivery, and lick measurements were monitored and controlled in Matlab and interfaced with a combination of Arduino and PCI DIO board (National Instruments, Austin, Texas).
 
-## Behavioral training
+##### Behavioral training
 
 Mice were water restricted for at least 7 days before start of training, during which time mice were acclimated to the head-fixed setup where mice could freely run on a fixed-axis styrofoam ball. Mice were given at least 1 ml per day, calibrated such that mice would not lose weight further than 80% of their original weight before water restriction.
 
@@ -211,7 +259,7 @@ Correct rejection trials were trials where the mouse did not lick during the rew
 
 If mouse did not consume enough water during the behavior session, supplementary water was given several hours after the conclusion of the session, such that mouse would have drank at least 1 ml of water each day. Mouse weight was monitored throughout the entire duration of training such that their weight would not fall below 80% of their original post-surgery weight. Mice performing the detection task was recorded over a period of ~3 months.
 
-## Behavioral analysis
+##### Behavioral analysis
 
 Only the behavior sessions that exhibited well-trained behavior were selected for analysis, based on the following criteria: (1) Stereotyped reaction time, as assessed by a clear peak in the reaction time histogram. (2) Goodness of fit for the Boltzmann distribution fit of psychometric performance over the entire session (mean of R-squared across the 10 sessions was 0.91, range was 0.77 ~ 0.99; mean of root mean squared error (RMSE) was 0.12, range 0.04 ~ 0.18).
 
@@ -219,101 +267,109 @@ Threshold level stimulus trials were chosen offline from periods within the <2.
 
 We chose stimulus amplitude-matched threshold level detected and non-detected trials for all analyses, with the exception of Figure 1—figure supplement 1. To do this, we binned all submaximal stimulus amplitude into 15 bins. Detected and non-detected trials were chosen from the high-performance periods to maximize trial count while matching the stimulus amplitude histogram. In all of the sessions analyzed, there were at least 100 stimulus amplitude-matched detected and non-detected trials each (mean 120 trials, range 106 ~ 160).
 
-## Common data analysis procedures for human and animal recordings
+#### Common data analysis procedures for human and animal recordings
 
-## Evoked response
+##### Evoked response
 
 The evoked response to suprathreshold tactile stimulus was averaged first for each subject/session, then averaged across subjects/sessions. The source localized human MEG evoked response (Figure 1—figure supplement 1Ai) from a suprathreshold level brief tap to the contralateral third finger-tip is reproduced from (Jones et al., 2007), which is the average of 7 (out of 10) subjects in the human detection dataset analyzed in this paper. The mouse LFP evoked response from a 500 ms, 20 Hz deflection of contralateral vibrissae is depicted as the across-sessions average of the mean evoked response in maximal stimulus amplitude trials (Figure 1—figure supplement 1Aii).
 
-## Spectral analysis
+##### Spectral analysis
 
-For all three tasks, we analyzed for each trial the −1000 to 0 ms window relative to the stimulus onset. The spectrograms of the spontaneous data were calculated for each prestimulus window by convolving the signals with a complex Morlet wavelet of the form:wt,f0=Aexp-t22σt2exp⁡(2iπf0t)
+For all three tasks, we analyzed for each trial the −1000 to 0 ms window relative to the stimulus onset. The spectrograms of the spontaneous data were calculated for each prestimulus window by convolving the signals with a complex Morlet wavelet of the form:
 
-for each frequency of interest f0, where σ=m/2πf0 and i is the imaginary unit. For both the human datasets, the spectrogram was calculated from 1 to 60 Hz, whereas for the mouse dataset, the spectrogram was calculated from 1 to 100 Hz. The normalization factor was A=1/σt2π.
+$$
+wt,f_{0}=Aexp-\frac{t^{2}}{2\sigma_{t}^{2}}exp⁡(2i\pif_{0}t)
+$$
 
-Consistent with prior publications from our group (Sherman et al., 2016), we chose 7 for constant m (number of Morlet wavelet cycles). Time-frequency representations of power (TFR) were calculated as the squared magnitude of the complex wavelet-convolved data.
+for each frequency of interest $f_{0}$, where $\sigma=m/2\pif_{0}$ and $i$ is the imaginary unit. For both the human datasets, the spectrogram was calculated from 1 to 60 Hz, whereas for the mouse dataset, the spectrogram was calculated from 1 to 100 Hz. The normalization factor was $A=1/\sigma_{t}\sqrt{2\pi}$.
+
+Consistent with prior publications from our group (Sherman et al., 2016), we chose 7 for constant $m$ (number of Morlet wavelet cycles). Time-frequency representations of power (TFR) were calculated as the squared magnitude of the complex wavelet-convolved data.
 
 In all analyses involving the Morlet spectrogram, the TFR was normalized by the median power value for each frequency. This median was calculated from all power values, at each frequency, in the −1000 to 0 ms prestimulus TFR concatenated across trials. Normalized TFR values are calculated in factors of median (FOM) for each frequency, separately for each subject/session.
 
-## Trial mean prestimulus beta power
+##### Trial mean prestimulus beta power
 
 For trial mean prestimulus power, the normalized prestimulus TFR was averaged across time (−1000 to 0 ms window) and frequency band (15 to 29 Hz, inclusive), in each trial.
 
-## Defining beta events and features
+#### Defining beta events and features
 
-## Power cutoff for beta events
+##### Power cutoff for beta events
 
 In all Figures except Figures 11 and 12, beta events were defined as local maxima in the trial-by-trial TFR matrix for which the frequency value at the maxima fell within the beta band (15–29 Hz) and the power exceeded a set cutoff. Local maxima were found using the Matlab function ‘imregionalmax’. Custom software for identifying beta events and calculating event features is written in Matlab and available at https://github.com/hs13/BetaEvents (Shin, 2017; copy available at https://github.com/elifesciences-publications/BetaEvents). ‘Non-overlapping beta event’ definition and analysis and Dynamic amplitude modulation versus bursty generator analysis below for beta event definitions in Figures 11 and 12, respectively.
 
 To choose the power cutoff that best captures variability in trial mean prestimulus power, we calculated the percent area in −1000 to 0 ms prestimulus beta-band spectrogram above power cutoff. That is, for the −1000 to 0 ms prestimulus beta-band TFR matrix in each trial, we quantified the percentage of matrix elements (i.e. pixels in spectrogram) that has power above cutoff. For all analyses shown, except Figure 4, Figure 5—figure supplement 1, Figure 6—figure supplement 2, Figure 7—figure supplement 1, and Figure 8—figure supplement 1, the power cutoff was set to be 6X the median power.
 
-## Beta event number
+##### Beta event number
 
 Beta event number was calculated as the number of beta events in the −1000 to 0 ms window for each trial.
 
-## Beta event power
+##### Beta event power
 
 Beta event power is defined as the normalized TFR value (unit of FOM) at the local maximum that defines each event. The trial mean event power was defined as the power of all events averaged in the −1000 to 0 ms prestimulus period. For all analyses of trial mean event power, only trials that had at least one event were considered.
 
-## Beta event duration and frequency span
+##### Beta event duration and frequency span
 
 Beta event duration and frequency span were defined as full-width-at-half-maximum from the beta event maximima in the time and frequency domain, respectively. Edge cases in the time domain were handled in the following way: for maxima happening near the edge time points (−1000 ms and 0 ms), if the power did not fall below the half-maximum at the edge, event duration was calculated by doubling the half-width of the side that was not cut by the relevant edge. The same method was used to handle edge cases for frequency span; if the power did not fall below half-maximum at either the lower boundary (1 Hz) or at the upper boundary (60 Hz for human, 100 Hz for mice), frequency span was calculated by doubling the half-width of the side that was not cut by the boundary.
 
 The trial mean event duration and frequency span were defined as the averaged values in the −1000 to 0 ms prestimulus window. For all analyses of trial mean beta event duration and frequency span, only the trials that had at least one event was considered.
 
-## ‘Most recent beta event’ timing and other features
+##### ‘Most recent beta event’ timing and other features
 
 The ‘most recent event’ for each trial was defined as the event that happened closest to the stimulus onset in the −1000 to 0 ms prestimulus window. ‘Most recent event’ timing was defined as the timing of the maximum of that event. Other features of the ‘most recent event’ (power, duration and frequency span) were calculated as defined above. With the exception of Figure 8i, only the trials that had at least one event was considered for all analyses pertaining to the ‘most recent event’.
 
-## Details of data analyses
+#### Details of data analyses
 
-## Temporal evolution of beta power
+##### Temporal evolution of beta power
 
 In Figure 1i, mean prestimulus beta power as a function of time relative to stimulus onset was calculated by first averaging the prestimulus TFR in each trial across the frequency band (15 to 29 Hz, inclusive). The resulting time-dependent beta-band power was then averaged for each behavioral condition, for each subject/session. At each timepoint, a left-tailed Wilcoxon signed rank test was applied across subjects/sessions to test beta power was higher on non-detected trials. We only show −900 to −100 ms, as the Morlet wavelet convolution introduces edge effects.
 
-## Time histogram of event rate
+##### Time histogram of event rate
 
 In Figure 7i, the probability time histogram of beta event occurrence in the 1 s prestimulus window was calculated in 50 ms windows sliding in 1 ms steps, for each behavioral condition and each subject/session. For each window, a left-tailed Wilcoxon signed rank test was applied across subjects/sessions to test whether an event was more likely to happen within that window on non-detected trials. We only show −900 to −100 ms, as the Morlet wavelet convolution introduces edge effects.
 
-## ‘Most recent event’ probability time histogram
+##### ‘Most recent event’ probability time histogram
 
 Figure 8i depicts the probability of the ‘most recent event’ happening at a certain time bin, given a detected/non detected trial, for each subject/session. Therefore, we included all detected/non detected trials (at perceptual threshold) for this analysis. The probability histogram was calculated in 50 ms windows sliding in 1 ms steps. For each window, a left-tailed Wilcoxon signed rank test was applied across subjects/sessions to test whether the ‘most recent event’ was more likely to happen within that window on non-detected trials. We only show −900 to −100 ms, as the Morlet wavelet convolution introduces edge effects.
 
-## Trial percentile and hit rate/attend in rate relationship
+##### Trial percentile and hit rate/attend in rate relationship
 
 Figure 1ii, 7ii and 8ii were intended for the visualization of the relationship between each variable under consideration (e.g. prestimulus trial mean power) and the hit rate/attend in rate. First, all trials were sorted in increasing order of the variable under consideration. Then, the detection/attention rate was calculated in boxcar windows of 21 trials, sliding in 1-trial steps; where the first bin was 21 bottom-ranking trials and the last bin was 21 top-ranking trials. If multiple trials had the same value (e.g. multiple trials with one event), the sorted trial order was shuffled to prevent artificial correlation. Detection/attention rate was then normalized as percent change from mean (PCM).
 
 The human data was analyzed across 100 trials per behavioral condition in a single session, as described above. The mouse data had an uneven number of trials across sessions. Therefore, we used the Matlab ‘interp1’ function to resample 100 bins of the detection/attention rate. The resampled detection/attention rates were averaged across sessions/sessions, and the standard error of the mean were calculated.
 
-## Pooled average analysis
+##### Pooled average analysis
 
 For each pooled average analysis reported, all prestimulus data under consideration for a given behavioral condition were averaged. Only trials with at least one event were considered, with the exception of trial mean prestimulus beta power and event number. Right-tailed paired t-test was used to test whether the pooled averages of non-detected trials was significant higher than detected (attend-out was significantly higher than attend-in) across subject/sessions.
 
-## Effect size (Cohen’s d)
+##### Effect size (Cohen’s d)
 
-The effect size quantifies the difference between behavioral conditions. For the human and the mouse detection datasets, we quantified the (miss – hit) difference; for the human attention dataset, we quantified the (attend out – attend in) difference. We employed the Cohen’s d measure, which was defined as follows:d=x-1-x-2n1-1s12+n2-1s22n1+n2-2
+The effect size quantifies the difference between behavioral conditions. For the human and the mouse detection datasets, we quantified the (miss – hit) difference; for the human attention dataset, we quantified the (attend out – attend in) difference. We employed the Cohen’s d measure, which was defined as follows:
 
-where x-1 and x-2 denote the mean of the two populations (e.g. miss versus hit or attend-out versus attend-in) being compared, an n1 and n2 denotes the number of sessions in each population, and s1 and s2 are the standard deviation of each population.
+$$
+d=\frac{x-_{1}-x-_{2}}{\sqrt{\frac{n_{1}-1s_{1}^{2}+n_{2}-1s_{2}^{2}}{n_{1}+n_{2}-2}}}
+$$
 
-## Detect Probability/Attend Probability analysis.
+where $x-_{1}$ and $x-_{2}$ denote the mean of the two populations (e.g. miss versus hit or attend-out versus attend-in) being compared, an $n_{1}$ and $n_{2}$ denotes the number of sessions in each population, and $s_{1}$ and $s_{2}$ are the standard deviation of each population.
+
+##### Detect Probability/Attend Probability analysis.
 
 Detect probability (DP)/attend probability (AP) was calculated as the area under a receiver operating characteristic (ROC) curve, where the ROC curve was defined by applying a binary classification of each variable under consideration (e.g. trial mean prestimulus beta power) to the behavioral condition. The area under the ROC curve analysis was performed with the Matlab function ‘perfcurve’. For all analyses, only trials with at least one event were considered, with the exception of trial mean prestimulus beta power and event number.
 
 DP/AP of 0.5 indicates that the beta event feature under consideration cannot dissociate between the behavioral condition. DP/AP under 0.5 signifies that beta event feature under consideration is significantly predictive of non-detected/attend out trials. One-sample left-tailed Wilcoxon signed-rank test was used to determine whether the median of the DP/AP distribution was significantly less than 0.5. To quantify the percentage of significant subjects/sessions, a 95% confidence interval was determined individually for each subject/session by bootstrapping 1000 times. If the upper boundary of the 95% confidence interval was below 0.5, the beta event feature under consideration was considered significantly predictive of non-detected/attend out trials for that subject/session.
 
-## Correlation with prestimulus trial mean power
+##### Correlation with prestimulus trial mean power
 
 In Figure 6, Pearson’s correlation with trial mean prestimulus beta power was calculated on a trial-by-trial basis for trial summary of each beta event feature (i.e. beta event number per trial, trial mean beta event power, duration and frequency span). To determine which beta event feature best correlated with trial mean prestimulus beta power, we first ran a Friedman test to assess significant differences in correlation coefficient distributions. When Friedman test returned significance, we ran a post-hoc Wilcoxon signed-rank test, corrected for multiple comparisons using a Holm-Bonferroni method.
 
-## Power cutoff variation analysis
+##### Power cutoff variation analysis
 
 Correlation with trial mean prestimulus beta power (Figure 6—figure supplement 2) and % subjects with DP/AP significantly over cutoff (Figure 7—figure supplement 1, Figure 8—figure supplement 1) were calculated for a wide range of thresholds, including: 0.25, 0.5, 1 ~ 16 (integer values). For each dataset, feature, and cutoff, we tested whether the DP/AP distribution across subjects/sessions was significantly less than 0.5 (one-sample left-tailed Wilcoxon signed-rank test).
 
-## Optimal event number criterion analysis
+##### Optimal event number criterion analysis
 
 In Figure 7–figure supplement 2ii, we considered a binary classifier that categorized trials as non-detected/attend out when (event number ≥criterion). The optimal criterion for each subject/session was the criterion at which the binary classifier achieved the highest performance, as measured by (True Positive Rate – False Positive Rate).
 
-## Histogram matching for event number and ‘most recent event’ timing
+##### Histogram matching for event number and ‘most recent event’ timing
 
 Histogram matching was achieved by random trial trimming process for Figure 9.
 
@@ -329,31 +385,39 @@ The ‘most recent event’ timing matching was done as follows:
 
 (ii) In ‘most recent event’ timing bin, we looked at trials that had the ‘most recent event’ in that time bin; if there were more detected (N = h trials) than non-detected (N = m trials, h < m) trials in that time bin, we randomly selected h trials out of non-detected trials, and vice versa if h ≥ m.
 
-## Inter-Event Interval (IEI)
+##### Inter-Event Interval (IEI)
 
 In Figure 10i, the IEI was calculated as the time difference between two consecutive events, in trials that had two or more events. Note that because of the 1000 ms window limit, IEI exceeding the window size could not be captured. The theoretical lower limit (resolution) of IEI was determined by the 7-cycle Morlet wavelet we used to generate the TFR matrices. All IEI values were pooled across trials within subjects/sessions, and the probability histograms were calculated in 15 ms bins.
 
-## Coefficient of variation (CV2) and Fano Factor (FF)
+##### Coefficient of variation (CV2) and Fano Factor (FF)
 
-In Figure 10ii, Coefficient of variation of the inter-event intervals was defined as follows:CV2=Var[IEI]E[IEI]2
+In Figure 10ii, Coefficient of variation of the inter-event intervals was defined as follows:
 
-where Var[IEI] is the variance, and E[IEI] is the mean.
+$$
+CV^{2}=\frac{Var[IEI]}{E[IEI]^{2}}
+$$
 
-Fano factor was used to quantify the trial-to-trial variability of event number per trial (EpT), and was defined in the following way:[EpT]FF=Var[EpT]E[EpT]
+where $Var[IEI]$ is the variance, and$E[IEI]$ is the mean.
+
+Fano factor was used to quantify the trial-to-trial variability of event number per trial (EpT), and was defined in the following way:
+
+$$
+FF=\frac{Var[EpT]}{E[EpT]}
+$$
 
 Renewal processes are defined as point processes with independent and identically distributed waiting times. Renewal processes are characterized as having equal CV2 and FF values for appropriately long trial lengths. Our results are limited by the fact that all analysis is restricted to −1000 to 0 ms prestimulus.
 
-## ‘Non-overlapping beta event’ definition and its features
+##### ‘Non-overlapping beta event’ definition and its features
 
 In Figure 11, each continuous supra-cutoff temporal region was defined to be a ‘non-overlapping event’, using the 6X median power cutoff.
 
 With this definition, multiple local maxima in the beta band (i.e. the original definition of beta events) could occur within one ‘non-overlapping beta event’. Therefore, the number of local maxima per ‘non-overlapping beta event’ was quantified, for each behavioral condition (Figure 11i). The ‘non-overlapping beta event’ power, duration and frequency span were defined in the same way as the original definition of beta events: Power was defined as the maximum power within the supra-cutoff region; and the ‘non-overlapping beta event’ duration and frequency span were defined as the full-width at half-maximum in the time and frequency domain, respectively (edge cases were handled the same way as section Beta event duration and frequency span). The ‘non-overlapping beta event’ timing was defined as the timing of the maximal power within each supra-cutoff region.
 
-## ‘Non-overlapping beta event’ IEI calculation and jitter method
+##### ‘Non-overlapping beta event’ IEI calculation and jitter method
 
 In Figure 11ii, the ‘non-overlapping beta event’ IEI was defined as the difference in timing of each successive ‘non-overlapping beta events’. The jittered ‘non-overlapping beta event’ IEI distribution was generated by randomly jittering the timing of ‘non-overlapping beta events’, within the 1 s prestimulus window of the events’ respective trials. The limiting conditions for the jittering was that (i) the independent events stayed non-overlapping; and (ii) the relative order in which the events occurred within a trial was preserved. This jitter process was repeated 1000 times and averaged for each subject/session.
 
-## Dynamic amplitude modulation versus bursty generator analysis
+##### Dynamic amplitude modulation versus bursty generator analysis
 
 For the analysis in Figure 12, we first band-pass filtered the raw 1 s prestimulus data for each trial separately, in the beta band (15–29 Hz) using a 150 ms long Hamming window based FIR filter (eegfilt function in EEGlab https://sccn.ucsd.edu/eeglab/index.php). We then determined beta phase and amplitude by Hilbert-transformation of the band-pass filtered data. We chose the Hilbert-amplitude cutoff to be 2X median of beta band-passed Hilbert amplitude cutoff. This cuttoff approximately matched the 6X median of Morlet spectral power cutoff used to define beta events throughout the paper, in that the proportion of timepoints above the cutoff in the 1 s prestimulus window was approximately 10% across subjects/sessions in both cases.
 

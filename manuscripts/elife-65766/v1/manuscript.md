@@ -32,7 +32,7 @@ Here, we use pathway-specific optogenetics to directly test whether (and how) BL
 
 ## Results
 
-## Perturbation of BLA→GC axons (BLA→GCx) impacts taste responses
+### Perturbation of BLA→GC axons (BLA→GCx) impacts taste responses
 
 We analyzed AAV-induced gene expression via immunohistochemical evaluation of the presence of GFP. A representative example of these data is shown in Figure 1. Note the cell body staining in BLA, and the utter lack of cell body staining in GC, where expression is restricted to axon filaments. ArchT (which in this case co-expresses with GFP) is carried from the injection site in BLA in a purely anterograde direction, and a subset of infected axons terminate in the ventral part of GC—a result consistent with earlier rat and mouse data (Haley et al., 2016; Levitan et al., 2019). Rats in which GFP expression was not found in BLA and GC, or in which opto-trodes were misplaced, were excluded from further data analysis.
 
@@ -54,7 +54,7 @@ Furthermore, the response changes wrought by the laser did not simply reflect th
 
 Below, we unpack and test these observed impacts of BLA→GCx on taste response firing in whole sample analyses—first examining the magnitudes and directions of the firing rate changes, and then the epoch-specific nature of the changes.
 
-## Both enhancement and suppression of GC taste response firing are wrought by optogenetic perturbation of BLA→GC axons
+### Both enhancement and suppression of GC taste response firing are wrought by optogenetic perturbation of BLA→GC axons
 
 A total of 55.7% of the recorded GC neurons (78 out of 140) produced taste responses that were impacted by BLA→GCx (Figure 3A: pie chart on the left). Herein, we defined a neuron as impacted by laser stimulation if one or more of its control-trial taste-evoked responses (NaCl, Sucrose, Acid, or QHCl) were significantly different from those in perturbed trials. The modal result was broad changes—in 46.1% of the neurons affected, the perturbation changed responses to all four taste stimuli, although in other above-chance fractions of recorded neurons BLA→GCx altered responses to fewer tastants (Figure 3B). In total, ~40% of the individual taste responses were impacted by the perturbation (Figure 3C).
 
@@ -80,7 +80,7 @@ While these results suggest that perturbation of BLA→GC axons alters GC taste 
 
 The effect of BLA→GCx is further differentiated from that of direct GC neuron perturbation with regard to the dynamics described above (Figure 2)—most notably, by the relatively late latency of BLA→GCx’s impact on GC taste responses (Figure 5C; red sigmoid fit), and the accordingly late asymptotic effect (approximately 500 ms after taste delivery). When GC somas are themselves led to express ArchT channels, in contrast, laser illumination of GC causes immediate, steeply developing changes that reach asymptote within ~250 ms. We conclude that the changes in GC activity observed in the current experiment were not caused by perturbation of GC somas.
 
-## Despite tonic laser illumination, the impact of BLA→GCx on GC firing rates is epoch-specific
+### Despite tonic laser illumination, the impact of BLA→GCx on GC firing rates is epoch-specific
 
 As already noted, while the laser was turned on at the time of taste delivery, in the majority of cases optogenetic perturbation of BLA-GC axonal activity impacted GC taste response only after substantial delays, leaving the initial 200 ms of the responses unaltered (Figures 2 and 5C). In many cases, the latency of the effect was much longer. As an initial exploration of this phenomenon, we summarized the distribution of laser impact latencies across the entire sample of taste responses (Figure 6A; the red dashed line is the distribution smoothed with a Gaussian). Inspection of this panel reveals that the onset of changes caused by BLA→GCx is neither uniform nor a simple decay function (which would be the two most likely results if BLA input played no role in GC temporal coding). Instead, there are multiple peaks in the function, reflecting multiple ‘most likely times’ for the onset of perturbation-related changes. One such peak appeared between 300 and 350 ms after taste delivery, and a second appeared approximately 750 ms after taste delivery. A bi-modal fit of the data suggested the timing these peaks to be 347.28 (SD = 110) and 754.39 ms (SD = 179), and attempts to fit the data with an exponential decay function produced a lower coefficient of determination (an index of absolute goodness of a fit) than that of the Gaussian mixture model; moreover, the error scores at each time bin (i.e. estimated values – raw values) were significantly smaller with the bi-modal Gaussian fit than those with exponential fit (t(24) = −2.39, p<0.05).
 
@@ -94,7 +94,7 @@ We next asked whether this ‘epoch-wise’ impact implied ‘single-epoch’ im
 
 In summary, 2.5 s perturbations of BLA input to GC change taste-driven activity in ways that are both non-random and complex—firing is modulated in specific relation to the dynamics that characterize GC taste processing. Such results imply, consistent with previous work (Schoenbaum et al., 1998; Paré et al., 2002; Piette et al., 2012), that disruptions of the BLA→GC pathway might have distinct consequences for different functional aspects of GC taste responses (aspects that have been shown to ‘live’ in the different response epochs; see Sadacca et al., 2016; Mukherjee et al., 2019); more speculatively, they imply that the dynamic nature of GC taste responses might itself be the product of interactions between the cortex and amygdala. Below, we test these two hypotheses.
 
-## Perturbing BLA→GC axons selectively impacts (late epoch) palatability coding
+### Perturbing BLA→GC axons selectively impacts (late epoch) palatability coding
 
 Unlike taste responses in GC, those in BLA contain only two epochs, with the early detection epoch transitioning directly into the palatability-rich information epoch at ~200 ms following taste delivery (Fontanini et al., 2009). The lack of identity-related activity in BLA, the well-known involvement of BLA in value coding (e.g. Johnson et al., 2009; Beyeler et al., 2016; Malvaez et al., 2019), and epoch-specific laser impact on firing rates (Figure 6) together led us to hypothesize that: (1) taste discriminability would be at most only minimally altered by perturbation of BLA→GC axons—that our ability to identify the administered taste stimuli on the basis of GC single-neuron responses (and more particularly from responses in the middle, ‘Identity’ epoch) would survive the perturbation of BLA input, despite changes in absolute firing rates; and that (2) palatability processing, which is part and parcel of the Late epoch, would in contrast be greatly affected by BLA→GCx.
 
@@ -124,7 +124,7 @@ But this result, whereby inhibition of BLA→GC axons changes firing without hav
 
 While in some cases BLA→GCx actually increased palatability-relatedness of GC neurons (see the example in Figure 8B1-2), overall the number of neurons for which Late-epoch taste response firing rates were significantly correlated with palatability decreased with the perturbation (Figure 8C; between-condition X2 = 5.49, p<0.05). Figure 8D reveals further details, showing that a far larger number (and percentage) of neurons lost palatability-related firing with BLA→GCx than gained (compare Figure 8C & D to Figure 7A & C). This result was corroborated by a direct comparison of the correlation between firing and palatability, which was lower—for Late epoch firing only—in perturbed trials (time x condition F(1,139) = 5.70, p<0.05). Clearly, there was an overall loss of palatability-related firing in GC, in the absence of significant loss of identity-related information, when input from BLA was perturbed.
 
-## Perturbation of BLA input to GC attenuates the ensemble properties of GC taste activity
+### Perturbation of BLA input to GC attenuates the ensemble properties of GC taste activity
 
 The above single-neuron analyses support our hypothesis that direct inputs to GC from BLA are involved in GC palatability processing, but they also make it clear that this involvement is far from the whole story. Palatability-relatedness in the firing of some single neurons was not utterly eliminated by our input manipulation; in some cases it was even enhanced. This fact is perhaps somewhat surprising given the well-known importance of amygdala for emotion processing (e.g. Quirk et al., 1995; Schoenbaum et al., 1998; LeDoux, 2000; Wang et al., 2005; Wassum and Izquierdo, 2015; Beyeler et al., 2018), and findings suggesting that BLA-GC circuitry is vital for palatability-related behavior (CTA learning and taste neophobia; Gallo et al., 1992; Lin and Reilly, 2012; Levitan et al., 2020). Our recent data suggest a possible explanation, however: as previously discussed, the emergence of Late-epoch palatability coding is revealed, using single-trial analyses involving Hidden Markov Modeling (HMM), to be a sudden transition into a new ensemble state, in which firing-rate changes occur simultaneously in multiple GC neurons (Jones et al., 2007; Miller and Katz, 2010; Sadacca et al., 2016); it is this sudden transition itself that directly drives behavior (Mukherjee et al., 2019). Perhaps, the true extent of the perturbation effect is best apprehended, not in terms of changes in the magnitudes of palatability coding, but in terms of the ensemble coherence and/or suddenness of the transition into palatability-related firing.
 
@@ -176,15 +176,102 @@ In summary, as revealed in our 20 years of research, taste processing in GC is c
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>AAV9-CAG-ArchT-GFP</td>
+      <td>UNC Vector Core</td>
+      <td>Lot #: AV6221E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP-rabbit IgG (rabbit Polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>Cat#: A11122 RRID:AB_221569</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Flour 488 donkey anti-rabbit IgG (Donkey Polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>Cat#: A21206 RRID:AB_2535792</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (female Long Evans Rat)</td>
+      <td></td>
+      <td>Charles River Laboratories</td>
+      <td>Strain code: 006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#: S271-500</td>
+      <td>0.1M (0.29 g/50 ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#: S5-500</td>
+      <td>0.3M (5.14 g/50 ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Citric acid</td>
+      <td>Fisher Scientific</td>
+      <td>Cat#: A104-500</td>
+      <td>0.1M (1.05 g/50 ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quinine hydrochloride dihydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: Q1125-5G</td>
+      <td>1 mM (0.0198 g/50 ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Conda</td>
+      <td>Conda</td>
+      <td>RRID:SCR_018317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Vector Laboratories, Inc</td>
+      <td>Cat#: H-1200–10</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 The experimental subjects were female Long-Evans rats (Charles River Laboratory, Raleigh, NC), singly housed in a vivarium with controlled temperature and 12:12 hr light-dark cycle (lights on at 7:00 am). Given that several previous studies have failed to reveal any significant male/female differences, we chose to use female rats—a decision that maximized the validity of comparisons to our previous papers (many of which have used female rats) and allowed us to take advantage of the fact that female rats are relatively docile to handle (and therefore allow better recording quality than the males). The rats were given ad libitum food and water until experimentation. All procedures complied with the regulations of the Institutional Animal Care and Use Committee (IACUC) at Brandeis University.
 
-## Apparatus
+### Apparatus
 
 Neural recordings were made in a custom Faraday cage (6 × 24×33 cm) connected to a PC and Raspberry Pi computer (Model 3B). The Pi controlled opening time and duration of solenoid taste delivery valves, and an iris allowing laser stimulation (Laserglow Technologies, Toronto, CA). The PC controlled and saved electrophysiological recordings taken from opto-trode bundles via connections to an Intan system (RHD2000 Evaluation System and Amplifier Boards; Intan Technologies, LLC, LA). Each bundle consisted of 32 microwires (0.0015inch formvar-coated nichrome wire; AM Systems) and one optical fiber (0.22 numerical aperture, 200 mm core, inserted through a 2.5 mm multimode stainless-steel ferrule; Thorlabs). The microwire bundle was glued to a custom-made electrode-interface board (San Francisco Circuits) and soldered to a 32-channel Omnetics connector, which was fixed to an adjustable drive (movable along the dorsal-ventral axis) so that multiple recording sessions could be done from a single rat.
 
-## Surgery
+### Surgery
 
 Each rat received a pair of surgeries. In the first surgery, rats were anesthetized with an intraperitoneal (ip) ketamine/xylazine mixture (100 mg/kg, 5.2 mg/kg, respectively), and then mounted in a stereotaxic instrument (David Kopf Instruments; Tujunga, CA) with blunt ear bars. A midline incision exposed the skull and a trephine hole (~2 mm diameter) was drilled above BLA in each hemisphere. Thereafter, the construct (AAV-CAG-ArchT-GFP; http://www.med.unc.edu/genetherapy/vectorcore) was infused through a glass pipette (tip ~30 µm) bilaterally into BLA with the following coordinates: Site 1: AP −2.0 mm, ML ±4.9 mm, DV −7.8 mm; Site 2: AP −3.0 mm, ML ±5.1 mm, DV −8.1 mm; all measurements relative to bregma. At each site, 0.5 µl of ArchT virus was infused with a speed of 50 nl/10 s. Approximately 5 min after each infusion, the micropipette was slowly raised out of the brain. After the last infusion, the incision was closed with wound clippers, and the rat was returned to its home cage in the vivarium.
 
@@ -192,25 +279,25 @@ For the second surgery, which took place 3–4 weeks after the first, the skull 
 
 The rat’s body temperature was monitored and maintained at ~37°C by a heating pad throughout the duration of the surgery.
 
-## Experimental design
+### Experimental design
 
 Following 5 days of recovery from the second surgery, rats were placed on a mild water restriction regimen (25 ml of water offered during the dark portion of the light-cycle). Three days into this schedule, rats began 2 days of habituation to liquid delivered directly to the tongue via IOC, with 120 40 µl infusions of water delivered per session. Thereafter, tastes replaced water, and in vivo electrophysiology recording sessions commenced. All recording sessions took place in the mornings. In each trial during these sessions, one of four gustatory stimuli (0.1M NaCl, 0.3M Sucrose, 0.1M Citric Acid [Acid] and 1 mM Quinine-HCl [QHCl]) was pseudo-randomly chosen for delivery; these stimuli and concentrations were chosen because they ensured, in addition to a range of distinct taste identities, a wide range of palatabilities, thereby facilitating our analyses (see below).
 
 Rats received 30 trials of each taste, each trial consisting of 40 µl infusions; inter-trial intervals were 20 s, which we have found is long enough to allow rats to self-rinse. On 50% of trials for each tastant, activity in BLA→GC axons was perturbed via the opto-trodes; analyses compared perturbation to non-perturbation trials, within-session. Perturbation (nominally inactivation) was induced with a 532 nm (30–40 mW at tip, ArchT) laser, turned on for the 2500 ms following taste delivery.
 
-## Histology
+### Histology
 
 At the completion of the experiment, rats were deeply anesthetized with ketamine/xylazine (120:15 mg/kg, IP) and then perfused transcardially with physiological saline followed by 10% formalin. The brains were extracted and stored in a 10% formalin/30% sucrose solution for at least 3 days, after which they were frozen and sliced on a sliding microtome (Leica SM2010R, Leica Microsystems; thickness 50 µm). Slices were stained and mounted using an established protocol (Flores et al., 2018; Li et al., 2016), and ArchT-expression in GC and BLA was evaluated via inspection of fluorescence (eGFP) under a Keyence fluorescence microscope.
 
-## Neural data collection and analyses
+### Neural data collection and analyses
 
 Electrophysiological signals from the micro-electrodes were sampled at 30 kHz using a 32-channel analog-to-digital converter chip (RHD2132) from Intan Technologies. The signals were digitalized online at the head stage and saved to the hard drive of the PC. The collected recordings were then sorted and analyzed off-line with a set of Python analysis scripts (cf. https://github.com/narendramukherjee/blech_clust). Putative single-neuron waveforms (3:1 signal-to-noise ratio) were sorted using a semi-supervised methodology: recorded voltage data were filtered between 300–3000 Hz, grouped into potential clusters by a Gaussian Mixture Model (GMM), and clusters were labeled and/or refined manually (to enhance conservatism) by the experimenters (for details see Mukherjee et al., 2017).
 
-## Taste responsivity
+### Taste responsivity
 
 A neuron was deemed to be taste responsive if taste-driven firing rates (from 0 to 2 s post-taste delivery) were significantly higher or lower (paired-sample t-tests) than pre-stimulus baseline activity (2 s before taste delivery). This analysis collapses across all four tastes, such that ‘taste responsivity’ indicates purely that a GC neuron responds to taste delivery and reveals nothing about taste specificity (which is described below).
 
-## Taste specificity
+### Taste specificity
 
 To determine whether a GC neuron responds distinctly to some subset of the four taste stimuli, we performed two-way repeated measures analyses of variance (ANOVA), with Taste and Time as variables, on 2 s of post-delivery firing rates (broken into four 500 ms bins, to facilitate comparison with previous reports of taste dynamics; Katz et al., 2001). Significance of either the taste main effect or the taste x time Interaction indicates that the firing of the neurons conveys information specific to the taste stimulus—that is, the response to at least one taste differs significantly from the response to at least one other taste.
 
@@ -218,23 +305,23 @@ Note that a neuron may potentially fail to be identified as ‘taste responsive�
 
 A jack-knife classification algorithm was also employed to further evaluate the impact of BLA→GCx on how well tastes could be identified (Foffani and Moxon, 2004). Single trials of ensemble taste responses taken from 250 to 1750 ms post-stimulus time were first binned into 250 ms bins and compared to the average responses of all other trials for each taste (the single trial being compared was left out/jack-knifed). Using the number of units in each ensemble as the space dimension, Euclidean distance was then calculated from each single trial to the taste template (average responses of each taste). A trial was classified as correct when the minimal distance occurred between the trial and the same taste’s template. Performance greater than 25% (i.e. the chance level) indicates taste specificity.
 
-## Taste palatability
+### Taste palatability
 
 Correlation coefficients were calculated to evaluate the degree to which taste-driven firing rates reflect the hedonic value of tastes. As hedonic value can be treated as a ranked variable, we used the nonparametric Spearman’s rho test to compute these correlations. A great deal of prior literature (e.g. Sinclair et al., 2015; Tordoff et al., 2015), including data collected in our laboratory (Sadacca et al., 2012; Li et al., 2013), confirms that the palatability order of the four tastes used here is reliably sucrose >NaCl > Acid>QHCl.
 
 To reveal the dynamics of palatability-relatedness in GC single-neuron activity, we conducted a 'moving window analysis'—extracting 250 ms segments of each neuron’s evoked response to each taste, evaluating the response-palatability correlation, sliding the time window 25 ms forward, performing the analysis again, etc. Responses were deemed palatability-related if this correlation was significant (p <.05) for 3 or more consecutive bin windows.
 
-## Determining the impact of BLA→GCx on neuronal firing
+### Determining the impact of BLA→GCx on neuronal firing
 
 We built a hierarchical Poisson generalized linear model (GLM) to estimate the change in taste-evoked GC activity induced by laser stimulation. For each neuron, we specifically compared the mean firing rates during the laser duration (0–2500 ms post-taste delivery) in control and perturbed trials for each taste stimulus. Taking advantage of the Poisson distribution’s suitability for spiking data (Kass and Ventura, 2001; Trousdale et al., 2013), this GLM model can accurately estimate the significance of changes in neural firing. Model parameters include the mean firing rates for every taste and optogenetic perturbation condition, that are in turn composed of taste- and perturbation- specific effects (‘random effects’) and means across tastes and perturbation conditions (‘fixed effects’). For each neuron n in our dataset, we aggregated the spikes produced on trial i of taste T in optogenetic perturbation condition O. There were four levels for T, corresponding to the four tastes used in our dataset (sucrose, NaCl, Acid, and QHCl). The number of levels for O were two (control and perturbed trials).
 
 We used Markov Chain Monte Carlo methods (MCMC; specifically, the No-U-Turn sampler) to sample the posterior distribution of firingn;T;O for every taste and condition. We performed this analysis for every neuron in our dataset, and ultimately calculated the impact of perturbation on firing as the difference in firingn;T;O between control and perturbation trials. A significant impact of laser stimulation on neuronal firing was concluded if the 95% Bayesian credible interval for these differences in firingn;T;O for a neuron did not overlap 0 (see Mukherjee et al., 2019 for details).
 
-## Hidden Markov Models (HMMs)
+### Hidden Markov Models (HMMs)
 
 Initially developed for speech recognition, HMM has recently gained attention as a way to analyze in vivo electrophysiology with the utility of determining whether population neuronal activity shifts from ensemble state to ensemble state (Rabiner, 1989; Seidemann et al., 1996; Gat et al., 1997; Jones et al., 2007; Kemere et al., 2008; Miller and Katz, 2010). In accordance with our well-tested model of dynamic GC taste responses, HMM reveals the degree to which data can be described as reflecting a sequence of two taste-specific (first identity- and then palatability-related) states. Trained on neural ensemble data containing neurons from both hemispheres, the algorithm returns its best estimate of the set of underlying states, each defined as a vector of firing rates—one for each neuron—as well as the probability of transitioning from any one state to any other.
 
-## Post-HMM realignment
+### Post-HMM realignment
 
 For each hidden Markov model, we determined the putative underlying state with the highest probability of occurring across all trials within a time window identified, on the basis of current results (Figure 8) and previous work (Katz et al., 2001; Grossman et al., 2008; Sadacca et al., 2016), as being the time at which rising ramps of palatability, observed using analyses keyed to stimulus delivery, reach asymptote (between 0.5–1.5 s after taste delivery). These states were deemed the most likely candidate ‘palatability’ states. The onset time of these 'palatability' states was determined as the time at which the identified state reached the 0.5 probability threshold on each trial. The ensemble data were then re-aligned to these onset times as the ‘zero’ time point of each trial. Following data alignment, we repeated the above-described palatability analyses that had already been brought to bear on stimulus-aligned data (taste palatability section).
 

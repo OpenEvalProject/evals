@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.31579.001 Malaria has been a major driving force in the evolution of the human genome. In sub-Saharan African populations, two neighbouring polymorphisms in the Complement Receptor One ( CR1 ) gene, named Sl2 and McC , occur at high frequencies, consistent with selection by malaria. Previous studies have been inconclusive. Using a large case-control study of severe malaria in Kenyan children and statistical models adjusted for confounders, we estimate the relationship between b Sl2 and McC and malaria phenotypes, and find they have opposing associations. The b Sl2 polymorphism is associated with markedly reduced odds of cerebral malaria and death, while the McC polymorphism is associated with increased odds of cerebral malaria. We also identify an apparent interaction between b Sl2 and α + thalassaemia, with the protective association of Sl2 greatest in children with normal α-globin. The complex relationship between these three mutations may explain previous conflicting findings, highlighting the importance of considering genetic interactions in disease-association studies.
+Malaria has been a major driving force in the evolution of the human genome. In sub-Saharan African populations, two neighbouring polymorphisms in the Complement Receptor One (CR1) gene, named Sl2 and McCb, occur at high frequencies, consistent with selection by malaria. Previous studies have been inconclusive. Using a large case-control study of severe malaria in Kenyan children and statistical models adjusted for confounders, we estimate the relationship between Sl2 and McCb and malaria phenotypes, and find they have opposing associations. The Sl2 polymorphism is associated with markedly reduced odds of cerebral malaria and death, while the McCb polymorphism is associated with increased odds of cerebral malaria. We also identify an apparent interaction between Sl2 and α+thalassaemia, with the protective association of Sl2 greatest in children with normal α-globin. The complex relationship between these three mutations may explain previous conflicting findings, highlighting the importance of considering genetic interactions in disease-association studies.
 
 ## Introduction
 
@@ -56,11 +56,11 @@ CR1 has been implicated in the pathogenesis of multiple diseases, with epidemiol
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/31579/elife-31579-fig2-v2.jpg)
 
-**Figure 2.:** Sl and McC alleles(A) Shows the global frequencies of the Sl alleles. Sl1 is represented in blue and Sl2 in red. (B) Shows the global frequencies of the McC alleles. McC is represented in green and aMcC in purple. The two samples in North and South America showing high frequencies of bSl2 and McC alleles are both derived from populations with African heritage. Numbers in parentheses indicate the studies from which the bSl and McC allele frequencies were derived, with * indicating data derived from this study. [1] Thathy et al., 2005; [2] Zimmerman et al., 2003; [3] Moulds et al., 2004; [4] Noumsi et al., 2011; [5] Fitness et al., 2004; [6] Covas et al., 2007; [7] Gandhi et al., 2009; [8] Yoon et al., 2013; [9] Hansson et al., 2013; [10] Kariuki et al., 2013; [11] Eid et al., 2010.
+**Figure 2.:** (A) Shows the global frequencies of the Sl alleles. Sl1 is represented in blue and Sl2 in red. (B) Shows the global frequencies of the McC alleles. McCa is represented in green and McCb in purple. The two samples in North and South America showing high frequencies of Sl2 and McCb alleles are both derived from populations with African heritage. Numbers in parentheses indicate the studies from which the Sl and McC allele frequencies were derived, with * indicating data derived from this study. [1] Thathy et al., 2005; [2] Zimmerman et al., 2003; [3] Moulds et al., 2004; [4] Noumsi et al., 2011; [5] Fitness et al., 2004; [6] Covas et al., 2007; [7] Gandhi et al., 2009; [8] Yoon et al., 2013; [9] Hansson et al., 2013; [10] Kariuki et al., 2013; [11] Eid et al., 2010.
 
 ## Results
 
-## The Sl2/Sl2 genotype is associated with protection against cerebral malaria and death in the Kenyan case-control study
+### The Sl2/Sl2 genotype is associated with protection against cerebral malaria and death in the Kenyan case-control study
 
 Data were obtained from 5545 children enrolled in a case-control study of severe malaria (Figure 3). The general characteristics of the cases and controls are shown in Supplementary file 1A, and the characteristics of the dataset by Sl and McC genotype are shown in Supplementary file 1B. The Sl2 and McCb allele frequencies (0.68 and 0.16 respectively) were comparable to other African populations (Figure 2). There was no significant deviation from Hardy-Weinberg equilibrium for the Sl or McC genotypes among controls (Supplementary file 1C).
 
@@ -70,39 +70,283 @@ Using a simple logistic regression model containing only Sl and McC genotypes (r
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31579/elife-31579-fig4-v2.jpg)
 
-**Figure 4.:** Sl2 and McC alleles have opposing associations with cerebral malaria (CM) and death.bForest plot showing the associations between Sl and McC polymorphisms and severe malaria in Kilifi, Kenya. Filled boxes: adjusted Odds Ratios (aOR) for the Sl2 genotype in the recessive form (i.e. Sl2/Sl2 vs all other Sl genotypes). Open boxes: McC in the additive form (i.e. change in odds ratio with each additional bMcC allele). bSl and McC genotype were included together in a statistical model to examine their associations with malaria susceptibility. aORs displayed are adjusted for ethnicity, location of residence, sickle cell genotype, α+thalassaemia genotype and ABO blood group. An interaction term between Sl genotype and α+thalassaemia is included in the model. Model outputs following 2000 bootstrapped iterations are shown.
+**Figure 4.:** Forest plot showing the associations between Sl and McC polymorphisms and severe malaria in Kilifi, Kenya. Filled boxes: adjusted Odds Ratios (aOR) for the Sl2 genotype in the recessive form (i.e. Sl2/Sl2 vs all other Sl genotypes). Open boxes: McCb in the additive form (i.e. change in odds ratio with each additional McCb allele). Sl and McC genotype were included together in a statistical model to examine their associations with malaria susceptibility. aORs displayed are adjusted for ethnicity, location of residence, sickle cell genotype, α+thalassaemia genotype and ABO blood group. An interaction term between Sl genotype and α+thalassaemia is included in the model. Model outputs following 2000 bootstrapped iterations are shown.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31579/elife-31579-fig5-v2.jpg)
 
-**Figure 5.:** Sl2 with cerebral malaria and death is only evident in children with normal α-globin.Interaction plots showing the interaction between Sl (recessive) and α+thalassaemia for the proportion of children suffering (A) cerebral malaria and (B) death. For α+thalassaemia status, 0 = wild type α-globin; 1 = heterozygote or homozygote for α+thalassaemia. For Sl (recessive) status, 0 = Sl1/Sl1 or Sl1/Sl2 genotype; 1 = Sl2/Sl2 genotype.
+**Figure 5.:** Interaction plots showing the interaction between Sl (recessive) and α+thalassaemia for the proportion of children suffering (A) cerebral malaria and (B) death. For α+thalassaemia status, 0 = wild type α-globin; 1 = heterozygote or homozygote for α+thalassaemia. For Sl (recessive) status, 0 = Sl1/Sl1 or Sl1/Sl2 genotype; 1 = Sl2/Sl2 genotype.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/31579/elife-31579-fig6-v2.jpg)
 
-**Figure 6.:** Sl and McC genotypes.Geometric mean parasite densities in the Kenyan case-control study (severe malaria) and longitudinal disease cohort study (uncomplicated malaria and asymptomatic parasitaemia) by A) Sl genotypes and B) McC genotypes. The data on severe malaria includes 1695 children: (Sl1/Sl1 (175), Sl1/Sl2 (793), Sl2/Sl2 (727) and McC (1167), a/McCaMcC (478) and a/McCbMcC/bMcC (50). The data on uncomplicated malaria includes 162 children: (bSl1/Sl1 (16) , Sl1/Sl2 (75), Sl2/Sl2 (71) contributing 124, 488 and 461 episodes respectively and McC (107), a/McCaMcC (49) and a/McCbMcC/bMcC (6) contributing 699, 349 and 25 episodes, respectively. The data on asymptomatic parasitaemia includes 57 children: (bSl1/Sl1 (5), Sl1/Sl2 (26), Sl2/Sl2 (26) contributing 6, 35 and 35 episodes, respectively, and McC (34), a/McCaMcC (20) and a/McCbMcC/bMcC (3) contributing 47, 25 and 4 episodes, respectively. Differences in parasite densities by genotype were tested by linear regression analysis with adjustment for HbAS, age as a continuous variable and ABO blood group in the severe malaria cases, HbAS and season (defined into 3-monthly blocks) in the uncomplicated malaria samples and HbAS and ABO blood group in the asymptomatic parasitaemia samples. Data were adjusted for within-person-clustering of events in the uncomplicated malaria and asymptomatic parasitaemia studies. Bars represent 95% confidence intervals.b
+**Figure 6.:** Geometric mean parasite densities in the Kenyan case-control study (severe malaria) and longitudinal disease cohort study (uncomplicated malaria and asymptomatic parasitaemia) by A) Sl genotypes and B) McC genotypes. The data on severe malaria includes 1695 children: (Sl1/Sl1 (175), Sl1/Sl2 (793), Sl2/Sl2 (727) and McCa/McCa (1167), McCa/McCb (478) and McCb/McCb (50). The data on uncomplicated malaria includes 162 children: (Sl1/Sl1 (16) , Sl1/Sl2 (75), Sl2/Sl2 (71) contributing 124, 488 and 461 episodes respectively and McCa/McCa (107), McCa/McCb (49) and McCb/McCb (6) contributing 699, 349 and 25 episodes, respectively. The data on asymptomatic parasitaemia includes 57 children: (Sl1/Sl1 (5), Sl1/Sl2 (26), Sl2/Sl2 (26) contributing 6, 35 and 35 episodes, respectively, and McCa/McCa (34), McCa/McCb (20) and McCb/McCb (3) contributing 47, 25 and 4 episodes, respectively. Differences in parasite densities by genotype were tested by linear regression analysis with adjustment for HbAS, age as a continuous variable and ABO blood group in the severe malaria cases, HbAS and season (defined into 3-monthly blocks) in the uncomplicated malaria samples and HbAS and ABO blood group in the asymptomatic parasitaemia samples. Data were adjusted for within-person-clustering of events in the uncomplicated malaria and asymptomatic parasitaemia studies. Bars represent 95% confidence intervals.
 
-## The McCballele is associated with increased susceptibility to cerebral malaria and death in the Kenyan case-control study
+**Table 1.**
+ Adjusted Odds Ratios (aOR) for severe malaria by Sl2 (recessive) and McCb (additive) genotype in Kenya.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical outcome</th>
+      <th>Sl2 aORs (95% CI)*</th>
+      <th>P value</th>
+      <th>McCb aORs (95% CI)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All severe malaria† (n = 1716)</td>
+      <td>0.78 (0.64–0.95)</td>
+      <td>0.011</td>
+      <td>1.10 (0.97–1.25)</td>
+      <td>0.108</td>
+    </tr>
+    <tr>
+      <td>CM§ (n = 943)</td>
+      <td>0.67 (0.52–0.87)‡</td>
+      <td>0.006</td>
+      <td>1.19 (1.02–1.38)</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Severe without CM (n = 674)</td>
+      <td>1.00 (0.76–1.30)</td>
+      <td>0.994</td>
+      <td>0.98 (0.82–1.17)</td>
+      <td>0.811</td>
+    </tr>
+    <tr>
+      <td>Died (n = 180)†</td>
+      <td>0.50 (0.30–0.80)‡</td>
+      <td>0.002</td>
+      <td>1.31 (0.95–1.72)</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>Died with CM (n = 131)</td>
+      <td>0.44 (0.23–0.78)‡</td>
+      <td>0.007</td>
+      <td>1.34 (0.94–1.88)</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>Died without CM (n = 42)</td>
+      <td>0.73 (0.18–2.30)</td>
+      <td>0.636</td>
+      <td>1.00 (0.48–1.94)</td>
+      <td>0.940</td>
+    </tr>
+    <tr>
+      <td>SMA# (n = 483)</td>
+      <td>0.76 (0.55–1.05)</td>
+      <td>0.099</td>
+      <td>0.96 (0.78–1.17)</td>
+      <td>0.688</td>
+    </tr>
+    <tr>
+      <td>SMA without CM (n = 223)</td>
+      <td>0.82 (0.51–1.26)</td>
+      <td>0.366</td>
+      <td>0.91 (0.67–1.20)</td>
+      <td>0.553</td>
+    </tr>
+    <tr>
+      <td>Died with SMA¶ (n = 56)</td>
+      <td>0.65 (0.21–1.67)</td>
+      <td>0.374</td>
+      <td>1.35 (0.77–2.20)</td>
+      <td>0.229</td>
+    </tr>
+    <tr>
+      <td>RD** (n = 522)</td>
+      <td>0.81 (0.59–1.10)</td>
+      <td>0.181</td>
+      <td>1.12 (0.92–1.35)</td>
+      <td>0.225</td>
+    </tr>
+    <tr>
+      <td>RD without CM (n = 192)</td>
+      <td>1.06 (0.66–1.68)</td>
+      <td>0.805</td>
+      <td>1.07 (0.80–1.43)</td>
+      <td>0.615</td>
+    </tr>
+    <tr>
+      <td>Died with RD†† (n = 73)</td>
+      <td>0.39 (0.14–0.88)‡</td>
+      <td>0.027</td>
+      <td>1.01 (0.59–1.61)</td>
+      <td>0.948</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Adjusted Odds Ratios (aOR) and 95% Confidence Intervals (CI) are presented for the Sl2 genotype in the recessive form (i.e. Sl2/Sl2 vs all other Sl genotypes) and McCb genotype in the additive form (i.e. change in aOR with each additional McCb allele). Sl and McC genotype were included together in a statistical model to examine their associations with malaria susceptibility. aORs displayed are adjusted for ethnicity, location of residence, sickle cell genotype, α+thalassaemia genotype and ABO blood group. An interaction term between Sl genotype and α+thalassaemia was included in the model. Model outputs following 2000 bootstrapped iterations are shown.†99 children (7 of whom died) were severe malaria cases whose CM status was not recorded, hence these children are included in the numbers for ‘All severe malaria’ and ‘Died’ but not in ‘with CM’ or ‘without CM’ categories.‡Models that showed significant evidence of interaction between Sl2 and α+thalassaemia.§CM, cerebral malaria (P. falciparum infection with a Blantyre coma score of < 3).#SMA, severe malarial anaemia (P. falciparum infection with Hb < 5 g/dl).¶34/56 cases who died with SMA also had CM.**RD, respiratory distress (P. falciparum infection with abnormally deep breathing).††56/73 cases who died with RD also had CM._
+
+### The McCballele is associated with increased susceptibility to cerebral malaria and death in the Kenyan case-control study
 
 The unadjusted analysis showed a borderline significant association between McCb and increased susceptibility to severe malaria overall (OR 1.17; 1.00–1.25; p=0.056, Supplementary file 1D), and significant associations with increased risk of cerebral malaria (OR 1.21; 1.05–1.39; p=0.008) and death (OR 1.34; 1.00–1.77; p=0.046, Supplementary file 1D). Similar associations were seen in the full adjusted analysis, although this only reached statistical significance for cerebral malaria (aOR 1.19; 1.10–1.38; p=0.025 (additive model), Figure 4 and Table 1). We found no association between McCb and any other clinical form of severe malaria (Table 1 and Supplementary file 1D) or with P. falciparum parasite density (Figure 6).
 
-## Analysis of haplotypic effects and genotype combinations
+### Analysis of haplotypic effects and genotype combinations
 
 We considered whether the observed results for Sl and McC could be consistent with the effect of a single haplotype spanning Sl and McC, or with the effect of a specific genotype combination. Sl and McC are 33 bp apart and are in linkage disequilibrium, with only three of four possible haplotypes observed in our data. We therefore reanalyzed the data under a haplotype model in which the per-individual count of each of the three observed haplotypes was included as a predictor along with the potential confounding factors, as well as under a genotypic model in which the count of each of the six possible Sl/McC genotype combinations was included as a predictor (Appendix 2). These analyses suggest an additive protective association with the Sl2/McCa haplotype (aOR = 0.85; 0.75–0.96; p=0.007), with broadly consistent results observed for analysis of genotype combinations (Supplementary file 1E and 1F). Thus, the opposing effects of Sl2 and McCb observed above could plausibly result from the protective association of a single haplotype at the locus, although this is difficult to distinguish from the individuals SNPs acting independently and additively based on the statistical evidence alone.
 
-## The Sl2/Sl2 genotype was associated with protection against uncomplicated malaria in the Kenyan longitudinal cohort study
+### The Sl2/Sl2 genotype was associated with protection against uncomplicated malaria in the Kenyan longitudinal cohort study
 
 We next examined the association between Sl2 and McCb alleles and uncomplicated malaria in a longitudinal prospective study of 208 Kenyan children. General characteristics of the cohort study population by Sl and McC genotypes are shown in Supplementary file 1G. After adjusting for variables known to influence malaria susceptibility, the Sl2 allele was associated with a >50% reduction in the incidence of uncomplicated malaria (additive model) (Table 2; the number of episodes, incidence and unadjusted Incidence Rate Ratios for the diseases studied in the longitudinal cohort are shown in Supplementary file 1H, I and J). Once again, a significant interaction was seen with α+thalassaemia, such that the protective association of Sl2 was only demonstrated in children of normal α-globin genotype (Table 3). We found no significant association between the McCb allele and uncomplicated malaria (Table 2).
 
-## The McCb allele was associated with protection from common non-malarial childhood diseases in the Kenyan longitudinal cohort study
+**Table 2.**
+ Adjusted Incidence Rate Ratios (aIRR) for uncomplicated malaria and non-malarial diseases in Kenya by Sl and McC genotype*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical Outcomes</th>
+      <th>Sl2 aIRRs† (95% CI)</th>
+      <th>P value</th>
+      <th>McCb aIRRs (95% CI)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Uncomplicated malaria</td>
+      <td>0.49 (0.34–0.72)‡</td>
+      <td>&lt;0.001 4</td>
+      <td>1.24 (0.90–1.70)</td>
+      <td>0.184 1</td>
+    </tr>
+    <tr>
+      <td>All non-malaria clinical visits</td>
+      <td>1.13 (0.96–1.32)</td>
+      <td>0.140 1</td>
+      <td>0.76 (0.61–0.96)‡</td>
+      <td>0.020 4</td>
+    </tr>
+    <tr>
+      <td>LRTI§</td>
+      <td>1.09 (0.81–1.47)</td>
+      <td>0.561 1</td>
+      <td>0.39 (0.16–0.96)</td>
+      <td>0.040 1</td>
+    </tr>
+    <tr>
+      <td>URTI#</td>
+      <td>1.21 (0.98–1.50)</td>
+      <td>0.073 1</td>
+      <td>0.79 (0.63–0.99)</td>
+      <td>0.047 3</td>
+    </tr>
+    <tr>
+      <td>Gastroenteritis</td>
+      <td>0.66 (0.43–1.03)</td>
+      <td>0.066 2</td>
+      <td>0.55 (0.31–0.97)‡</td>
+      <td>0.038 2</td>
+    </tr>
+    <tr>
+      <td>Skin infection</td>
+      <td>1.33 (0.79–2.26)</td>
+      <td>0.285 2</td>
+      <td>0.42 (0.16–1.13)</td>
+      <td>0.086 1</td>
+    </tr>
+    <tr>
+      <td>Helminth infection</td>
+      <td>1.98 (0.83–4.71)</td>
+      <td>0.122 2</td>
+      <td>0.68 (0.43–1.07)</td>
+      <td>0.094 4</td>
+    </tr>
+    <tr>
+      <td>Malaria negative fever</td>
+      <td>0.83 (0.58–1.18)</td>
+      <td>0.293 2</td>
+      <td>1.03 (0.80–1.33)</td>
+      <td>0.828 3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data were collected from 22 Sl1/Sl1, 94 Sl1/Sl2 and 92 Sl2/Sl2 individuals during 49.4, 213.8 and 188.8 cyfu (child-years of follow-up), respectively, and 137 McCa/McCa, 63 McCa/McCb and 8 McCb/McCb individuals during 294.5, 143.2 and 14.3 cyfu, respectively. Both Sl2 and McCb alleles were tested for their association with the disease outcomes of interest using Poisson regression in the 1recessive, 2dominant, 3heterozygous and 4additive models. The best fitting models as examined using the Akaike information criterion (AIC) were used in the final analysis that included adjustment for McC genotype (for Sl analyses), Sl genotype (for McC analyses) α+thalassaemia and sickle cell genotype, ABO blood group, season (divided into 3 monthly blocks), ethnicity, age as a continuous variable and within-person clustering of events.†aIRRs: adjusted Incidence Rate Ratios.‡Models that showed significant evidence of interaction between either Sl2 or McCb and α+thalassaemia.§LRTI: Lower Respiratory Tract Infection.#URTI: Upper Respiratory Tract Infection._
+
+**Table 3.**
+ Incidence of uncomplicated malaria by Sl genotype and α+thalassaemia status in the Kenyan longitudinal cohort study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Sl1/Sl1</th>
+      <th colspan="2">Sl1/Sl2</th>
+      <th colspan="2">Sl2/Sl2</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Number of episodes</th>
+      <th>Incidence</th>
+      <th>Number of episodes</th>
+      <th>Incidence</th>
+      <th>Number of episodes</th>
+      <th>Incidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All samples</td>
+      <td>124</td>
+      <td>2.51</td>
+      <td>493</td>
+      <td>2.31</td>
+      <td>461</td>
+      <td>2.44</td>
+    </tr>
+    <tr>
+      <td>Normal α globin</td>
+      <td>73</td>
+      <td>4.18</td>
+      <td>238</td>
+      <td>2.87</td>
+      <td>77</td>
+      <td>1.64</td>
+    </tr>
+    <tr>
+      <td>Heterozygous α+thalassaemia</td>
+      <td>32</td>
+      <td>1.58</td>
+      <td>209</td>
+      <td>1.92</td>
+      <td>302</td>
+      <td>2.88</td>
+    </tr>
+    <tr>
+      <td>Homozygous α+thalassaemia</td>
+      <td>19</td>
+      <td>1.63</td>
+      <td>46</td>
+      <td>2.09</td>
+      <td>82</td>
+      <td>2.20</td>
+    </tr>
+  </tbody>
+</table>
+
+_Incidence = number of episodes per child-year of follow up (cyfu). Data were collected from 22 Sl1/Sl1, 94 Sl1/Sl2 and 92 Sl2/Sl2 individuals during 49.4, 213.8 and 188.8 child-years of follow-up, respectively._
+
+### The McCb allele was associated with protection from common non-malarial childhood diseases in the Kenyan longitudinal cohort study
 
 The data shown above are incompatible with malaria being the selective pressure for McCb in the Kenyan population, and suggest that other life-threatening childhood diseases may have been responsible for selection of McCb. We therefore used the same longitudinal cohort study to investigate whether the McCb and Sl2 alleles influence the risk of other childhood diseases. McCb was associated with borderline significant protection against several common infectious diseases including LRTIs, URTIs and gastroenteritis (Table 2). Sl2 was associated with a borderline reduced incidence of gastroenteritis (Table 2). The association of McCb with gastroenteritis was predominantly seen in children of normal α-globin genotype, echoing the interaction seen with Sl2 and malaria.
 
-## The Sl2 allele was associated with reduced ex vivo rosette frequency in P. falciparum clinical isolates from Mali
+### The Sl2 allele was associated with reduced ex vivo rosette frequency in P. falciparum clinical isolates from Mali
 
 A previous in vitro study based on a culture-adapted P. falciparum parasite line suggested that RBC from Sl2 genotype donors had a reduced ability to form rosettes, providing a possible mechanism for protection against severe malaria (Rowe et al., 1997). P. falciparum clinical isolates were not available from the Kenyan case-control study to investigate this potential mechanism in that population. However, the association of Sl and McC genotypes with ex vivo P. falciparum rosette frequency could be examined using 167 parasite isolates from a case-control study of children with clinical malaria in Mali (Doumbo et al., 2009). Analysis of this small case-control study suggested a protective association between the Sl2/Sl2 genotype and cerebral malaria (aOR 0.35, 95% CI 0.12–0.89, p=0.024) and the Sl2/Sl2-McCa/McCa genotype combination was associated with protection against cerebral malaria (aOR 0.14, 95% CI 0.02–0.84, p=0.031, Appendix 1). As such, we considered samples from this population to be appropriate for testing rosetting as a potential mechanism of action. The median rosette frequency (percentage of iRBC that form rosettes) was significantly lower in P. falciparum isolates from malaria patients with one or more Sl2 alleles than in isolates from Sl1/Sl1 donors (Figure 7), whereas McC genotype had no significant associations with P. falciparum rosette frequency (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31579/elife-31579-fig7-v2.jpg)
 
-**Figure 7.:** Sl2 allele is associated with reduced ex vivo rosette frequency of P. falciparum clinical isolates.Parasite isolates were collected from 167 malaria patients in Mali and matured in culture for 18–36 hr before assessment of rosette frequency (percentage of infected erythrocytes forming rosettes with two or more uninfected erythrocytes). Red bars show the median rosette frequency and interquartile range (IQR) for each genotype. (A) Rosetting by patient Sl genotype. Sl1/Sl1 (n = 22, median 20.0, IQR 8.3–36.5), Sl1/Sl2 (n = 82, median 4.0, IQR 0–20.3), Sl2/Sl2 (n = 63, median 5.0, IQR 0–17.0); *p<0.05, Kruskal Wallis with Dunn’s multiple comparison test; (B) Rosetting by McC genotype. McC (n = 81, median 9.0, IQR 0–22.0), a/McCaMcC (n = 73, median 6.0, IQR 0–20.0), a/McCbMcC (n = 13, median 4.0, IQR 1–14.5); not significant, Kruskal Wallis with Dunn’s multiple comparison test.b/McCb
+**Figure 7.:** Parasite isolates were collected from 167 malaria patients in Mali and matured in culture for 18–36 hr before assessment of rosette frequency (percentage of infected erythrocytes forming rosettes with two or more uninfected erythrocytes). Red bars show the median rosette frequency and interquartile range (IQR) for each genotype. (A) Rosetting by patient Sl genotype. Sl1/Sl1 (n = 22, median 20.0, IQR 8.3–36.5), Sl1/Sl2 (n = 82, median 4.0, IQR 0–20.3), Sl2/Sl2 (n = 63, median 5.0, IQR 0–17.0); *p<0.05, Kruskal Wallis with Dunn’s multiple comparison test; (B) Rosetting by McC genotype. McCa/McCa (n = 81, median 9.0, IQR 0–22.0), McCa/McCb (n = 73, median 6.0, IQR 0–20.0), McCb/McCb (n = 13, median 4.0, IQR 1–14.5); not significant, Kruskal Wallis with Dunn’s multiple comparison test.
 
 ## Discussion
 
@@ -122,23 +366,23 @@ In conclusion, we show that two high frequency CR1 polymorphisms have opposing a
 
 ## Materials and methods
 
-## Datasets studied
+### Datasets studied
 
 This study uses data from a Kenyan case-control study of severe malaria, with samples collected between 2001 and 2010, a Kenyan longitudinal cohort study, with samples collected between 1998 and 2001 and a Malian case-control study performed between July 2000 and December 2001. Historic datasets (i.e. >10 years old) are widely used in genetic epidemiological studies of malaria due to the logistical challenges of sample collection in malaria endemic countries and the changing epidemiological patterns of disease.
 
-## The Kenyan study area
+### The Kenyan study area
 
 All epidemiological and clinical studies in Kenya were carried out in the area defined by the Kilifi Health and Demographic Surveillance System (KHDSS), with Kilifi County Hospital (KCH) serving as the primary point of care (Scott et al., 2012). Malaria transmission is seasonal in this region following the long and short rains. An Entomological Inoculation Rate (EIR) of up to 50 infective bites per person per year was measured in the late 1990s (Mbogo et al., 2003), but transmission has since declined (O'Meara et al., 2008).
 
-## The Kenyan case-control study
+### The Kenyan case-control study
 
 Between January 2001 and January 2008, children aged <14 years who were admitted to KCH with severe malaria were recruited as cases, as described previously (Rockett et al., 2014), except that children who were resident outside the KHDSS were excluded (Figure 3). Severe malaria was defined as the presence of blood-film positive P. falciparum infection complicated by one or more of the following features: cerebral malaria (CM) (a Blantyre coma score (BCS) of <3) n = 943; severe malarial anaemia (SMA) (hemoglobin concentration of <5 g/dl) n = 483; respiratory distress (RD) (abnormally deep breathing) n = 522 or ‘other severe malaria’ (no CM, SMA or RD but other features including prostration (BCS 3 or 4), hypoglycemia and hyperparasitemia) n = 318. Controls (n = 3829) consisted of children 3–12 months of age who were born consecutively within the KHDSS study area between August 2006 and September 2010 and were recruited to an ongoing genetic cohort study (Williams et al., 2009). As such, controls were representative of the general population in terms of ethnicity and residence but not of age. The use of controls who are considerably younger than cases differs from the classical structure of a case-control study. However, this method (using cord blood or infant samples as controls) has been widely used in African genetic association studies (e.g. [Band et al., 2013; Busby et al., 2016; Clarke et al., 2017]) and is the most logistically feasible way of collecting sufficiently large numbers of control samples in many sub-Saharan African settings.
 
-## Sample processing and quality control for the Kenyan case-control study
+### Sample processing and quality control for the Kenyan case-control study
 
 The Sl and McC polymorphisms were originally typed as part of a larger study by Rockett et al., 2014, which included case-control data from 12 global sites. In Kenya, 0.5 ml blood samples were collected into EDTA tubes and DNA extracted using Qiagen DNeasy blood kits (Qiagen, Crawley, UK). DNA was stored at −20°C and shipped frozen to Oxford. Sample processing is described in detail in the supplementary methods of Rockett et al., 2014. Briefly, samples underwent a whole-genome amplification step using Primer-Extension Pre-Amplification. Genotyping was performed using SEQUENOM iPLEX Gold with 384 samples processed per chip. In Rockett et al.’s study, samples were typed for 73 SNPs; 55 of these SNPs were chosen on the basis of a known association with severe malaria, 3 SNPs were used to confirm gender and the remaining 15 SNPs to aid quality control. Samples were excluded if they did not have clinical data for gender or if genotypic gender of the sample did not match clinical gender. Samples were included if they were successfully genotyped for more than 90% of 65 ‘analysis’ SNPs. The Kenyan samples studied by Rockett et al. originally comprised 2741 cases of severe malaria and 4183 controls. After the quality control of both phenotypic and genotypic data described above, 2268 cases and 3949 controls were analysed by Rockett et al., 2014.
 
-## Comparison between this study and Rockett et al., 2014.
+### Comparison between this study and Rockett et al., 2014.
 
 The 2268 Kenyan cases and 3949 controls that were analyzed by Rockett et al., 2014 were the starting point for our study. Children living outside the KHDSS were excluded, because this allowed us to use ‘location’ as a random effect in the final statistical model, which greatly improved model fit. Children with missing genotypes (Sl, McC, sickle cell, α+thalassaemia or ABO blood group) were also excluded (Figure 3). After applying these exclusion criteria, 1716 severe malaria cases and 3829 community controls were available for analysis.
 
@@ -146,23 +390,23 @@ Hence, the number of severe malaria cases differs between our study and Rockett 
 
 Our analytical methods differed from Rockett et al., 2014, in that we included both Sl and McC in the same statistical model and adjusted for confounders, whereas Rockett et al. examined each SNP independently.
 
-## The Kenyan longitudinal cohort study
+### The Kenyan longitudinal cohort study
 
 This study has been described in detail previously (Nyakeriga et al., 2004). Briefly, this study was established with the aim of investigating the immuno-epidemiology of uncomplicated clinical malaria and other common childhood diseases in the northern part of the KHDSS study area, approximately 15 km from KCH (Williams et al., 2005b). The study was carried out between August 1998 and August 2001 involving children aged 0–10 years recruited either at the start of the study or at birth when born into study households during the study period. They were actively followed up on a once-weekly basis for both malaria and non-malaria related clinical events. In addition, on presentation with illnesses, cohort members were referred to a dedicated outpatient clinic for more detailed diagnostic tests. The cohort was monitored for the prevalence of asymptomatic P. falciparum infection through four cross-sectional surveys carried out in March, July and October 2000 and June 2001. Exclusion criteria included migration from the study area for more than 2 months, the withdrawal of consent and death. Uncomplicated clinical malaria was defined as fever (axillary temperature of > 37.5°C) in association with a P. falciparum positive slide at any density. The most common non-malaria-related clinical events reported during the study period included upper respiratory tract infections (URTIs), lower respiratory tract infections (LRTIs), gastroenteritis, helminth infections and skin infections, as defined in detail previously (Williams et al., 2005b). Malaria negative fever was defined as an axillary temperature of > 37.5°C in association with a slide negative for P. falciparum. This analysis includes 208 children aged < 10 years for whom full Sl, McC, sickle cell genotype, α+thalassaemia genotype and ABO blood group data were available.
 
-## The Malian case-control study
+### The Malian case-control study
 
 This study has been described in detail previously (Lyke et al., 2003). Briefly, between July 2000 and December 2001, children ranging from 1 month to 14 years of age were recruited into a case-control study in the Bandiagara region in East Central Mali, an area of intense and seasonal P. falciparum malaria infection. In order to address the specific question of whether the Sl2/Sl2 genotype is associated with protection against cerebral malaria in Mali, only the subset of children suffering strictly defined cerebral malaria (a BCS of <3, with other obvious causes of coma excluded, n = 34) or uncomplicated malaria (n = 184, symptomatic children with P. falciparum parasitemia and an axillary temperature ≥37.5°C, in the absence of other clear cause of fever), and for whom Sl and McC genotyping was available were analyzed.
 
-## Ex vivo rosetting
+### Ex vivo rosetting
 
 The rosette frequency (percentage of mature infected erythrocytes forming rosettes with two or more uninfected erythrocytes) of P. falciparum isolates from patients recruited into the Mali case-control study was determined by microscopy after short term culture (18–36 hr), as described in detail previously (Doumbo et al., 2009). Of the 209 isolates studied previously (Doumbo et al., 2009), 167 were successfully genotyped for the Sl and McC alleles and are analysed here. The rosetting assays were performed before we genotyped the study participants, excluding observer bias. The rosette frequency of parasites from hosts with differing Sl and McC genotypes were compared by a Kruskal-Wallis test with Dunn’s multiple comparisons (Prism v6.0, Graphpad Inc, San Diego, CA).
 
-## Laboratory procedures
+### Laboratory procedures
 
 DNA was extracted either from fresh or frozen whole blood by proprietary methods using either the semi-automated ABI PRISM 6100 Nucleic acid prep station (Applied Biosystems, Foster City, CA) or using QIAamp DNA Blood Mini Kits (Qiagen, West Sussex, UK). SNPs giving rise to the Sl and McC alleles were genotyped using either the SEQUENOM iPLEX Gold multiplex system (Agena Biosciences, Hamburg, Germany) (Kenyan study) (Rockett et al., 2014) or by an established PCR-RFLP method as described previously (Malian study) (Moulds et al., 2004). Genotyping for sickle cell trait (HbAS) and the common African α+thalassaemia variant caused by a 3.7 kb deletion in the HBA gene were performed by PCR as described in detail elsewhere (Chong et al., 2000; Waterfall and Cobb, 2001).
 
-## Statistical analysis
+### Statistical analysis
 
 The effects of the Sl and McC alleles were examined in genotypic, dominant, recessive and additive models of inheritance, with the best fitting model selected based on Akaike information criterion (AIC). Analyses for the Kilifi case-control study were performed in R (R Foundation for Statistical Computing, Vienna, Austria) (R Development Core Team, 2010) using the ‘ggplot2’, ‘lme4’, and ‘HardyWeinberg’ packages (Wickham, 2009; Bates et al., 2015; Graffelman and Camarena, 2008), while analyses for the longitudinal study were performed in Stata v11.2 (StataCorp, Texas, USA). In both studies, a p value of < 0.05 was considered statistically significant. Graphs were generated using R or Prism v6.0 (Graphpad Inc, San Diego, CA).
 

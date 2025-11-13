@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.44245.001 In mice, memory B (B mem ) cells can be divided into two subpopulations: CD80 hi B mem cells, which preferentially differentiate into plasma cells; and CD80 lo B mem cells, which become germinal center (GC) B cells during a recall response. We demonstrate that these distinct responses can be B-cell-intrinsic and essentially independent of B-cell receptor (BCR) isotypes. Furthermore, we find that the development of CD80 hi B mem cells in the primary immune response requires follicular helper T cells, a relatively strong CD40 signal and a high-affinity BCR on B cells, whereas the development of CD80 lo B mem cells does not. Quantitative differences in CD40 stimulation were enough to recapitulate the distinct B cell fate decisions in an in vitro culture system. The quantity of CD40 signaling appears to be translated into NF-κB activation, followed by BATF upregulation that promotes B mem cell differentiation from GC B cells.
+In mice, memory B (Bmem) cells can be divided into two subpopulations: CD80hi Bmem cells, which preferentially differentiate into plasma cells; and CD80lo Bmem cells, which become germinal center (GC) B cells during a recall response. We demonstrate that these distinct responses can be B-cell-intrinsic and essentially independent of B-cell receptor (BCR) isotypes. Furthermore, we find that the development of CD80hi Bmem cells in the primary immune response requires follicular helper T cells, a relatively strong CD40 signal and a high-affinity BCR on B cells, whereas the development of CD80lo Bmem cells does not. Quantitative differences in CD40 stimulation were enough to recapitulate the distinct B cell fate decisions in an in vitro culture system. The quantity of CD40 signaling appears to be translated into NF-κB activation, followed by BATF upregulation that promotes Bmem cell differentiation from GC B cells.
 
 ## Introduction
 
@@ -29,25 +29,49 @@ At present, it is not clear how these two subsets diverge during the primary im
 
 ## Results
 
-## Characterization of CD80hi and CD80lo memory B cells
+### Characterization of CD80hi and CD80lo memory B cells
 
 On the basis of previous reports showing that IgG1+ Bmem cells are mainly composed of CD80+ PD-L2+ and CD80– PD-L2+ Bmem cells and that CD80– PD-L2+ and CD80– PD-L2– Bmem cells are functionally similar (He et al., 2017; Zuccarino-Catania et al., 2014), we hypothesized that the proposed Bmem cell subsets could be distinguished simply by the expression of CD80, as CD80hi or CD80lo Bmem cells. Consistent with these reports, most of the CD80hi Bmem cells expressed PD-L2 and CD73, thus constituting the reported affinity-matured subset (He et al., 2017; Tomayko et al., 2010; Zuccarino-Catania et al., 2014), whereas the CD80lo Bmem cells consisted of PD-L2+ and PD-L2−, as well as CD73+ and CD73− subpopulations (Figure 1a). Although CD62L was reported to be expressed on Bmem cells (Anderson et al., 2007), the majority of CD80hi Bmem cells express a lower level of CD62L (a phenotype that somewhat resembles TEM cells), whereas most CD80lo Bmem cells express a higher level of CD62L (a phenotype that somewhat resembles TCM cells). Both CD80hi and CD80lo Bmem cells expressed FAS (also called CD95 or APO1) at a higher level than naïve B cells, as previously reported (Anderson et al., 2007), but at a lower level than GC B cells, and, as expected, they were GL7–.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig1-v2.jpg)
+
+**Figure 1.:** (a) Splenocytes from B6 mice immunized with NP-CGG in alum 4 weeks earlier were analyzed by flow cytometry (FCM). The gating strategy for naïve B cells (CD19+ IgM+), GC B cells (CD19+ IgM− IgG1+ CD38−), and CD80lo and CD80hi Bmem cells (CD19+ IgM− IgG1+ CD38+) is shown in the top panels, and the expression of the indicated cell-surface proteins in each population is shown in the bottom panels. Data are representative of two independent experiments with similar results. (b) Outline of the experimental protocol (top). Splenic B cells from CD45.1 B1-8 ki mice were transferred into B6 mice (CD45.2), which were then immunized with NP-CGG in alum. Four weeks later, four subsets of donor-derived Bmem cells (CD45.1+ CD19+ CD38+), defined by the expression of IgG1 and CD80, were sorted from recipient spleens, cultured on 40LB feeder layers with IL-21 for 2 days, and analyzed by FCM. The frequency of CD138+ GL7− plasmablasts or PCs and CD138− GL7+ GC B cells in each subset is represented by a dot (bottom; combined data from two triplicate experiments). (c) Splenocytes from Cd4-Cre, Bcl6+/+ or Bcl6f/f mice immunized with NP-CGG in alum 6 weeks earlier were analyzed by FCM. The representative data indicate the gating strategy with percentages of the gated population. (d) The frequency (%) and absolute number (#) of CD80hi and CD80lo cells among IgG1+ Bmem cells in each spleen from individual recipient mice, as analyzed in (c) (n = 8). ﻿The mean of the values in each group is indicated by a horizontal bar (b, d). n.s., not significant (p>0.05); *, p<0.05; ***, p<0.001; ****, p<0.0001; as determined by one-way ANOVA followed by Tukey’s multiple comparisons test (b) and unpaired Student’s t test (d). All data are representative of two independent experiments, except (b and d), where data from two independent experiments are combined.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Sorting strategy for Figure 1b. Splenic B cell from CD45.1 B1-8 ki mice were transferred into B6 mice (CD45.2), which were then immunized with NP-CGG in alum. Four weeks later, donor-derived cells were enriched from pooled splenocytes by magnetic sorting, and further sorted into four Bmem cell subsets, as described in the text. (b) Gating strategy for Figure 1b. Four Bmem subsets, sorted as above, were cultured on 40LB feeder layers with IL-21 for 2 days, and analyzed by FCM. Feeder cells were gated out as CD45.1–cells. The expression of GL7 and CD138 in CD45.1+ cells is shown.
+
 In order to examine in vitro whether the CD80hi and CD80lo Bmem cells are intrinsically biased in their differentiation fate toward PCs or GC B cells, we transferred into B6 mice allotypically marked (CD45.1+) B cells of B1-8 knock-in (ki) mice, whose knock-in IgH chain, when combined with the λL chain, forms an NP-specific BCR, and immunized these mice with NP-CGG. From these mice, we sorted CD80hi and CD80lo Bmem cells, either IgG1+ or IgG1−, and cultured them with IL-21 on feeder cells that express exogenous CD40L and BAFF (40LB) (Nojima et al., 2011; Takatsuka et al., 2018). Under these conditions, CD80hi Bmem cells differentiated more preferentially into CD138+ plasmablasts or PCs and less into GL7+ GC-like B cells, as compared with CD80lo Bmem cells, regardless of their BCR isotype (Figure 1b and Figure 1—figure supplement 1a,b). These in vitro data were consistent with the previous in vivo data (Zuccarino-Catania et al., 2014), and further revealed that the biased differentiation of the CD80hi or CD80lo Bmem cells is determined in a cell-intrinsic manner, and is essentially independent of BCR isotype and BCR affinity for antigen.
 
-## Strong CD40 signaling induced by TFH cells is required for the development of CD80hi Bmem cells
+### Strong CD40 signaling induced by TFH cells is required for the development of CD80hi Bmem cells
 
 We next sought to clarify a need for GC in the development of CD80hi and CD80lo Bmem cells. A previous report indicated that CD80 and PD-L2 were expressed at normal levels on Bmem cells in B-cell-specific BCL6-deficient mice that lack GCs (Kaji et al., 2012). To examine a role for the GC environment in Bmem cell development from normal B cells, we used CD4+ T-cell-specific BCL6-deficient mice, which lack TFH cells and GCs (Kaji et al., 2012). Six weeks after immunization, the number of CD80hi Bmem cells decreased by approximately ten-fold in Cd4-Cre Bcl6f/f mice as compared to the control Cd4-Cre Bcl6+/+ mice, while the number of CD80lo Bmem cells was essentially unchanged (Figure 1c,d). These data suggested that the GC environment, or more specifically TFH cells, facilitate the development of CD80hi Bmem cells.
 
 TFH cells differ from naïve or effecter CD4+ T cells in that they express a much higher level of CD40L (Breitfeld et al., 2000), as we confirmed using purified T-cell subsets (Figure 2a and Figure 2—figure supplement 1a). As previously indicated (Lenschow et al., 1994; Ranheim and Kipps, 1993), stimulation of B cells through CD40, but not BCR, induced CD80 expression in a time- and dose-dependent manner (Figure 2—figure supplement 1b,c). Supposing that CD80 expression on B cells that is induced during the primary response is maintained until the Bmem cell stage, we hypothesized that TFH cell stimulation through CD40 promotes CD80hi Bmem cell development. To test this, we first used CD40L-deficient mice as recipients of antigen-specific (BCR-knock-in) naïve B cells. After immunization of such mice, however, Bmem cell development from the donor B cells was abrogated altogether in the absence of CD40L, indicating that CD40L-mediated stimulation is indispensable for Bmem cell development (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig2-v2.jpg)
+
+**Figure 2.:** (a) Naïve T (CD4+ CD62L+ CXCR5− PD-1−), effector T (CD4+ CD62L− CXCR5− PD-1−), and TFH (CD4+ CD62L− CXCR5+ PD-1+) cells were sorted from spleens of mice immunized with NP-CGG in alum 7 days earlier and then stimulated with phorbol myristate acetate (PMA) and ionomycin for 2 hr. CD40L expression on each cell subset was analyzed by FCM (left) and represented as geometric mean fluorescence intensity (gMFI, right) (mean + s.d. of triplicates). (b) Cd40lg+/+ or Cd40lg−/− mice were transferred with splenic B cells from B1-8 ki mice, and immunized with NP-CGG in alum. Six weeks later, the frequency of donor-derived (CD45.1+) NP+ CD19+ B cells (representative data on the left) and the number of the donor-derived Bmem cells (CD19+ CD45.1+ NP+ CD38+; plotted on the right; n = 7) in each spleen were analyzed by FCM. (c, d) B6 mice were transferred with splenic B cells from B1-8 ki mice, immunized with NP-CGG in alum, and injected subcutaneously (s.c.) with an inhibitory CD40L (MR-1: 1 mg/kg) mAb (αCD40L) or an isotype-matched control (ctrl IgG) Ab every day from day −1 to day 5 after immunization. Ten days or 6 weeks after immunization, splenocytes of the recipient mice were analyzed by FCM. (c) Representative data (day 10) of the analysis showing the gating strategy. (d) The frequency (%) of CD80hi and CD80lo cells in the donor-derived, class-switched Bmem cells (CD45.1+ NP+ CD19+ CD38+ IgM−), and their absolute numbers (#) at 10 days (top, n = 9) and 6 weeks (bottom, n = 8) after immunization are plotted. (e, f) B6 mice transferred with B1-8 ki B cells and immunized as in (c, d) were injected intraperitoneally (i.p.) with PBS or a stimulatory CD40 mAb (αCD40) (FGK4.5: 250 μg) at 8 days after immunization. Ten days after immunization, splenocytes from the recipient mice were analyzed by FCM. (e) Representative data of the analysis showing the gating strategy. (f) The frequency (%) and absolute numbers (#) of CD80hi and CD80lo cells in the donor-derived, IgG1+ Bmem cells (CD45.1+ NP+ CD138– CD19+ IgG1+ CD38+), and the numbers of the donor-derived GC B cells (CD45.1+ NP+ CD19+ IgG1+ CD38−) or of plasmablasts (CD45.1+ NP+ CD138+) in splenocytes are plotted (n = 5). (g–i) B6 mice, co-transferred on day −1 with B1-8 ki B cells (1 × 105) and OT-II T cells (1 × 105) that had been transduced with control (shCtrl) or shCd40lg retroviral vectors on the previous day, were immunized with NP-OVA in alum. Ten days after immunization, spleen cells from the recipient mice were analyzed by FCM. (g) Outline of the experimental protocol. (h) Representative data showing the gating strategy. (i) The frequencies of CD80hi and CD80lo cells among the donor-derived, class-switched Bmem cells, defined as in (d) (n = 8). The mean of the values in each group is indicated by a horizontal bar (b, d, f, i). n.s., not significant (p>0.05); *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; unpaired Student’s t test (b, d, f, i). All data are representative of two independent experiments except (b) and (i), where data from two independent experiments are combined.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Naïve T (CD4+ CD62L+ CXCR5− PD-1−), effector T (CD4+ CD62L− CXCR5− PD-1dull), and TFH (CD4+ CD62L− CXCR5+ PD-1+) cells were sorted from spleen of mice immunized 10 days previously, for the experiments whose results are summarized in Figure 2a. The FCM profiles that are shown demonstrate the purity of the sorted fractions. (b) Naïve B cells were cultured with anti-CD40 Ab (10 μg/ml), anti-IgM Ab (10 μg/ml), or medium alone, for the indicated length of time, then stained with anti-CD80 antibody, and analyzed by FCM. gMFI of the CD80 staining was normalized to that of staining with isotype-matched control Ab. Mean ± s.d. of triplicates. (c) Naïve B cells were cultured with the indicated concentration of anti-CD40 Ab for 3 days, and analyzed as in (b). Mean ± s.d. of triplicates. (d) The concentration of anti-NP13.6 IgG1 Ab in the sera at 10 days after the immunization of the mice shown in Figure 2c,d and Figure 2b (Cd40lg−/− recipients) (n = 4). (e) Absolute number (#) of GC B cells (CD45.1+ NP+ CD19+ CD38−) in the spleens at 10 days after immunization of the mice shown in Figure 2c,d (n = 4). (f–h) Splenic B cells from CD45.1 B1-8 ki mice were transferred into B6 mice (CD45.2), which were then immunized with NP-CGG in alum. Splenocytes from the recipient mice at day 10 after immunization were analyzed by FCM. (f) Gating strategy for (g). (g) The frequency (%) of IgG1+ CD138− and CD138+ cells in CD45.1+ CD19+ CD38+ IgM− cells (n = 5). (h) Representative FCM data showing the expression of CD80 (left) and the frequency (%) of CD80hi cells (right; n = 5) in Bmem cells (CD45.1+ NP+ CD19+ CD38+) of the indicated isotype. (i) Knock-down efficiency of shCd40lg vector in TFH cells. Intracellular (i.c.) CD40L expression in shCtrl- or shCd40lg-transduced TFH cells and CD4− cells in the mice described in Figure 2g–i was analyzed by FCM. (j) CD40 expression on CD80hi and CD80lo Bmem cells (CD45.1+ NP+ CD19+ CD38+ IgM−) was analyzed by FCM at day 10 after immunization. gMFI of the CD40 staining is plotted (n = 5).
+
 Next, we treated immunized mice with anti-CD40L blocking antibody (Ab) in a dose that we had determined only partially inhibited Ab production and GC B-cell formation (Figure 2—figure supplement 1d,e). This treatment preferentially affected CD80hi Bmem cell development. At 10 days after immunization, the frequency of CD80hi Bmem cells was significantly reduced among class-switched Bmem cells, of which ~90% were IgG1+ and ~10% were IgM– IgG1–, both normally containing the CD80hi cells at a similar frequency (Figure 2c,d and Figure 2—figure supplement 1f–h). The absolute number of the CD80hi Bmem cells was also severely reduced while there was only a moderate reduction in the absolute number of CD80lo Bmem cells, in a condition where the number of GC B cells was reduced by about ten-fold (Figure 2d and Figure 2—figure supplement 1e). The frequency and the number of the CD80hi Bmem cells were somewhat recovered by 6 weeks after immunization, presumably because of generation of such cells in the late GC after the lapse of the injected anti-CD40L Ab (Figure 2d). In order to focus on Bmem cell generation, avoiding possible effects of alteration in GC formation or Bmem cell maintenance, we hereafter mainly analyzed Bmem cells by 10 days after immunization, referring to previous reports (Suan et al., 2017; Wang et al., 2017; Weisel et al., 2016). As an opposite experiment, administration of agonistic anti-CD40 Ab to immunized mice markedly increased the frequency and the number of CD80hi Bmem cells, while the numbers of CD80lo Bmem cells, GC B cells and plasmablasts remained unchanged (Figure 2e,f).
 
 Finally, antigen (NP)-specific B cells and carrier [ovalbumin (OVA)]-specific (OT-II) CD4+ T cells, which had been transduced with short hairpin (sh) RNA targeting CD40L (shCd40lg) or unrelated control (shCtrl), were co-transferred into B6 mice, which were then immunized with NP-OVA (Figure 2g). Among the generated donor-derived class-switched Bmem cells, the frequency of CD80hi Bmem cells was significantly lower in mice that had received the CD40L-knockdown T cells as compared to those that had received the control T cells (Figure 2g–i and Figure 2—figure supplement 1i). These data together suggest that, although CD40L-mediated stimulation is required for development of both Bmem cell types, stronger CD40 stimulation by TFH cells selectively facilitates the development of CD80hi Bmem cells.
 
-## CD40 signal strength in vitro affects differentiation into CD80hi or CD80lo Bmem cells in vivo
+### CD40 signal strength in vitro affects differentiation into CD80hi or CD80lo Bmem cells in vivo
 
 The data discussed above strongly suggested that quantitative differences in CD40 signaling in B cells during the primary response determine their developmental fate into either CD80hi or CD80lo Bmem cells. However, these in vivo experiments cannot exclude the possibility that some other factors that are affected by the CD40/CD40L manipulation might contribute to the fate decision. In order to demonstrate a direct contribution of CD40 signaling quantity in B cells, we utilized our in vitro induced GC B (iGB) cell culture system, in which naïve B cells massively proliferate, efficiently switch to IgG1, and differentiate into GC-like B (iGB) cells after being cultured with IL-4 on a feeder layer of 40LB cells (Nojima et al., 2011). In addition, these iGB cells differentiate into memory-like B cells [termed induced memory B (iMB) cells] in vivo when transferred into irradiated mice (Nojima et al., 2011). To stimulate B cells through CD40 at different levels in this in vitro system, we derived 40LB sublines that express CD40L at low, intermediate and high levels, termed 40LB-lo, 40LB-mid, and 40LB-hi, respectively (Figure 3a). As expected, B cells cultured on 40LB-hi (iGB-hi cells) expressed the highest level of CD80, whereas those on 40LB-mid (iGB-mid cells) or 40LB-lo (iGB-lo cells) exhibited intermediate or the lowest levels of CD80 expression, respectively (Figure 3b). The iGB-hi, iGB-mid and iGB-lo cells underwent class switching to IgG1 or IgE to similar extents and were mostly CD138– (Figure 3—figure supplement 1a). It is of note that the iGB-lo cells expressed Fas at a lower level than iGB-hi and iGB-mid cells, whereas they expressed CD38 and CD62L at higher levels than iGB-hi and iGB-mid cells, perhaps reflecting their relatively lower activation status (Figure 3—figure supplement 1b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig3-v2.jpg)
+
+**Figure 3.:** (a) Expression of CD40L on 3T3-BAFF cells and 40LB sublines (40LB-lo, 40LB-mid, and 40LB-hi) was analyzed by FCM. (b) Splenic B cells were cultured with IL-4 for the indicated number of days on feeder layers of each 40LB subline. The expression of CD80 on the expanded B (iGB) cells was analyzed by FCM and presented as gMFI (mean of triplicates). (c) A schematic representation of a method used to generate the induced memory B (iMB) cells. Splenic B cells from CD45.1+ congenic B6 mice were cultured for 4 days, as in (b). The resultant iGB-lo, iGB-mid, or iGB-hi cells were transferred intravenously (i.v.) into γ-irradiated mice (CD45.2+), and the donor-derived Bmem-like cells (CD19+ CD45.1+ CD38+) detected in the recipient spleens 2 weeks after the transfer were designated iMB-lo, iMB-mid or iMB-hi cells, respectively. (d–f) Expression of CD80 on IgG1+ or IgG1– iMB cells (iMB-lo, iMB-mid or iMB-hi) generated as in (c) was analyzed by FCM. (d) Representative data showing the gating strategy. (e) The frequencies of CD80hi and CD80lo cells among the IgG1+ or IgG1– iMB cells (%) and their absolute number per spleen (#) are plotted (n = 8). (f) Expression of the indicated surface markers on the recipient total B cells (CD45.1− CD19+), spontaneous GC B cells (CD45.1− CD19+ CD38− GL7+), the iMB-lo and the iMB-hi cells (CD19+ CD45.1+ CD38+). The mean of the values in each group is indicated by a horizontal bar (e). n.s., not significant (p>0.05); *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; as determined by one-way ANOVA followed by Tukey’s multiple comparisons test (e). All data are representative of two independent experiments except (e), where data from two independent experiments are combined.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The frequencies of IgG1+ vs IgE+ cells, or of CD138+ cells, in naïve and the indicated iGB cells on day 4 of culture. (b) The expression of the indicated protein on naïve and the indicated iGB cells. (c) Cumulative fold increasein the numbers of B cells cultured on the feeder layer of each 40LB subline (hi, mid, lo). (d) qRT-PCR analysis of the expression of Bcl6 and Prdm1 mRNAs in the indicated iGB cells (mean + s.d. of triplicates). (e, f) iGB-lo and iGB-hi cells on day 2 or day 4 of the culture were transferred into irradiated B6 mice to generate iMB cells. Two weeks later, spleen cells of the recipient mice were analyzed by FCM. (e) A representative FCM data showing the gating strategy. (f) The frequency (%) of CD80hi cells in iMB cells (CD19+ CD45.1+ CD38+) derived from the iGB-lo and iGB-hi cells on day 2 or day 4 (n = 3). (g) The frequency (%) of CD80hi cells in iMB cells derived from iGB cells cultured for 1 day on 40LB-lo or 40LB-hi feeder cells (n = 3). (h, i) iMB cells were generated from iGB-lo and iGB-hi cells that were cultured with IL-4 and IL-21, or IL-4 alone, for 4 days. (h) Representative FCM data showing the gating strategy. (i) The frequency (%) of CD80hi cells among the iMB cells derived from the iGB cells cultured in the indicated condition.
 
 These iGB cells were then transferred into irradiated mice and, 2 weeks later, B cells in the spleen were analyzed by FCM (Figure 3c). The B cells derived from all of these iGB cells were mostly CD38+ (iMB) cells and contained similar percentages of IgG1+ cells. However, the iMB cells derived from iGB-hi cells (iMB-hi cells) contained almost exclusively CD80hi cells, whereas iMB cells from iGB-lo cells (iMB-lo cells) were dominated by CD80lo cells, irrespective of their BCR isotypes (IgG1+ or IgG1–). iMB cells derived from iGB-mid cells exhibited an intermediate phenotype (Figure 3d,e). In addition, iMB-hi cells expressed PD-L2, CD73 and FAS at higher levels than iMB-lo cells, whereas both expressed equally low levels of GL7 (Figure 3f). Thus, iMB-hi and iMB-lo cells phenotypically resembled CD80hi and CD80lo Bmem cells, respectively, that are generated in a physiological immune response (Figure 1a).
 
@@ -55,19 +79,49 @@ iGB-hi cells grow far more extensively than iGB-lo cells beyond two days of cult
 
 In order to examine whether the iMB-hi and iMB-lo cells recapitulate the functional differences seen in CD80hi and CD80lo Bmem cells, we analyzed their differentiation in culture on the 40LB feeder cells with IL-21. Regardless of their BCR isotype, iMB-lo cells preferentially differentiated toward GC B cells, as clearly seen on day 2, whereas iMB-hi cells preferentially differentiated into plasmablasts or PCs, becoming evident on day 3. The behavior of the iMB-mid cells was intermediate (Figure 4a,b and Figure 4—figure supplement 1). Next, we investigated the in vivo fate of these iMB cells in response to immunization with a cognate antigen. We sorted allotypically marked NP-binding iMB-lo and iMB-hi cells, derived from iGB-lo and iGB-hi cells of B1-8ki Igκ−/− mice, respectively, and co-transferred the iMB-lo and the iMB-hi cells at an equal ratio into B6 mice together with carrier (CGG)-primed T cells. The recipient mice were immunized with NP-CGG, and their spleen cells were analyzed 4 or 10 days later by FCM (Figure 4c,d). Four days after immunization, most donor-derived, NP-binding plasmablasts were derived from iMB-hi cells. By contrast, the vast majority of donor-derived, NP-binding GC B and Bmem cells at day 10 were found to originate from iMB-lo cells (Figure 4e,f). These in vitro and in vivo data together indicate that iMB-hi and iMB-lo cells functionally represent CD80hi and CD80lo Bmem cells, respectively. Taken together, these data indicate that the quantity of CD40 signaling in B cells determines their differentiation fate toward phenotypically and functionally distinct Bmem cell subsets.
 
-## Higher BCR affinity for antigen favors the development of CD80hi Bmem cells
+![Figure 4.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig4-v2.jpg)
+
+**Figure 4.:** (a, b) Splenic B cells from each recipient mouse (containing iMB cells), generated as in Figure 3 (d), were cultured on 40LB feeder layers with IL-21 for 2 (a) or 3 (b) days. The expression of GL7 (a, b) and CD138 (b) on gated IgM+ or IgG1+ CD45.1+ (iMB cell-derived) cells was analyzed by FCM. (c–f) iMB-lo and iMB-hi cells were generated from B1-8 ki Igκ−/− CD45.1/CD45.2 or B1-8 ki Igκ−/− CD45.1 iGB cells, respectively, as in Figure 3 (d). 2.5 × 104 (for ‘day 4’) or 1 × 104 (for ‘day 10’) of NP+ iMB-lo and iMB-hi cells were mixed and co-transferred into WT B6 recipient mice with 1 × 107 CGG-primed splenocytes. The recipient mice were then immunized with NP-CGG in alum and analyzed 4 or 10 days after immunization. (c) A schematic of the experimental procedure. (d) A representative FCM profile of the mixture of iMB-lo (CD45.2+) and iMB-hi (CD45.2−) cells, gated on CD45.1+ NP+ cells, before the transfer. (e) Representative FCM data at day 4 and day 10 after immunization showing the gating strategy. (f) The frequencies of iMB-lo- and iMB-hi-derived cells among CD45.1+ NP+ CD138− or CD138+ cells at day 4, and among CD45.1+ NP+ Bmem cells (CD138− GL7− CD38+) or GC B cells (CD138− GL7+ CD38−) at day 10. The mean of the values in each group is indicated by a horizontal bar (f). n.s., not significant (p>0.05); **, p<0.01; ****, p<0.0001; as determined by paired Student’s t tests (f). All data are representative of two independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Spleen cells containing donor-derived (CD45.1+) iMB cells (left) were cultured as shown in Figure 4a,b. FCM profiles of the gated iMB cell-derived cells on day 3, with the gating strategy for the cell fractions used in Figure 4b, are shown (right). The analysis on day 2 in Figure 4a was gated in the same manner.
+
+### Higher BCR affinity for antigen favors the development of CD80hi Bmem cells
 
 On the basis of the data described above, it is likely that the CD40 signaling quantity is primarily determined by the expression level of CD40L on cognate T cells. As CD40L on T cells was shown to be induced in an antigen-dose-dependent manner (Jaiswal and Croft, 1997), it seemed plausible that the quantity of antigen presented on B cells would determine the expression level of CD40L on cognate T cells, which in turn determines the differentiation fate toward each Bmem subset. To confirm that antigen presentation by B cells induces CD40L on cognate T cells in a dose-dependent manner, OT-II-mouse-derived activated T cells were co-cultured with B cells and various concentrations of OVA peptide (Figure 5a and Figure 5—figure supplement 1). CD40L expression on the T cells was rapidly induced and its levels positively correlated with antigen dose (Figure 5b), as was also the case for CD80 expression on B cells on day 2 (Figure 5c). This CD80 induction was suppressed by blocking with anti-CD40L mAb, confirming that the CD40L–CD40 interaction leads to CD80 induction on B cells (Figure 5d).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig5-v2.jpg)
+
+**Figure 5.:** (a–d) OT-II-derived Th0 cells and splenic B cells were co-cultured with the indicated concentration of OVA peptide for 6 hr or 2 days and analyzed by FCM. (a) An outline of the procedure for the T-B co-culture (see Materials and methods). (b) Expression levels of CD40L on CD4+ T cells after 6 hr co-culture are presented as gMFI (mean + s.d. of triplicates). (c) Expression levels of CD80 on CD19+ B cells after 2 days co-culture are presented as gMFI (mean + s.d. of triplicates). (d) Expression levels of CD80 on B cells after 2 days co-culture with 5 μM OVA peptide in the presence of the indicated concentration of anti-CD40L blocking Ab. Data are shown as in (c). (e, f) 1 × 105 NP+ splenic B cells from B1-8hi ki (CD45.1/45.2) or B1-8 ki (CD45.1) mice were co-transferred into the recipient B6 mice, which were immunized with NP-CGG in alum on the next day and analyzed by FCM 7 days later. (e) Representative FCM data showing the gating strategy. (f) The frequency (%) of CD80hi among IgG1+ Bmem cells (CD19+ CD38+) derived from either B1-8hi ki or B1-8 ki cells is plotted (n = 7). (g–j) B6 mice transferred with B1-8 ki B cells and immunized as in (e, f) were analyzed by FCM at 10 days after immunization. (g, i) Representative FCM data showing the gating strategy. (h, j) The frequencies (%) of CD80hi cells among NPmedhi or NPmedlo cells in Igλ+ (h) or IgG1+ (j) Bmem cells (CD19+ CD45.1+ CD38+), gating of each as shown in (g) and (i), respectively (n = 8). The mean of the values in each group is indicated by a horizontal bar (f, h, j). ****, p<0.0001; as determined by paired Student’s t tests (f, h, j). All data are representative of two independent experiments except (f, h, j), where data from two independent experiments are combined.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig5-figsupp1-v2.jpg)
 
 During an immune response, B cells expressing a high-affinity BCR would take up more of the cognate antigen, and thus would present a larger amount of antigenic peptide–MHC complex to cognate T cells (Schwickert et al., 2011). This would lead to greater CD40L induction than would occur on T cells interacting with B cells with a lower affinity BCR. To investigate the correlation between BCR affinity and B cell differentiation fate, we used B1-8hi ki mice whose λ+ B cells express BCR with ten-fold higher NP affinity than BCR expressed on λ+ B1-8 ki B cells (Allen et al., 1988). B cells from B1-8hi ki and B1-8 ki mice, expressing discriminating allotypic markers, were co-transferred into B6 mice, and immunized with NP-CGG in alum. FCM analysis on day 7 after the immunization revealed that IgG1+ Bmem cells developed from B1-8hi ki B cells contained a higher frequency of CD80hi cells than those from B1-8 ki B cells (Figure 5e,f).
 
 In the next experiment, we stained Bmem cells with NPmed-APC, allophycocyanin (APC) conjugated with NP at a relatively lower valency, which only binds to high affinity anti-NP BCRs (Nishimura et al., 2011). Mice were transferred with B1-8 ki B cells, immunized with NP-CGG in alum, and analyzed by FCM 10 days later. Among donor-derived Igλ+ or IgG1+ Bmem cells, those stained more brightly with NPmed (NPmedhi) contained a higher frequency of CD80hi Bmem cells than those stained less brightly (NPmedlo) (Figure 5g–j). These data indicated that B cells with higher antigen affinity preferentially differentiate into CD80hi Bmem cells rather than CD80lo Bmem cells, probably through more extensive antigen presentation to cognate T cells, which results in greater induction of CD40L. Alternatively, B cells with lower affinity may be excluded from the GC and therefore fail to access to CD40L on TFH cells. In any case, BCR affinity appears to be a primary determinant for the differential Bmem subset development that is dependent on CD40 signaling quantity.
 
-## Possible mechanisms through which CD40 signaling facilitates GC B-cell differentiation into CD80hi Bmem cells
+### Possible mechanisms through which CD40 signaling facilitates GC B-cell differentiation into CD80hi Bmem cells
 
 We next investigated the CD40 signaling mechanisms that are responsible for the development of the CD80hi Bmem cell subset. NF-κB is a typical transcription factor that are induced by CD40 stimulation (Berberich et al., 1994), and the p50/p65 heterodimer was reported to bind to the Cd80 gene locus and to induce CD80 expression in a B cell line after stimulation (George et al., 2006). In accord with these data, among the constitutively active (CA) forms of protein kinases that are known to be activated by CD40 stimulation, CA-IKKβ, an activator of the canonical NF-κB pathway (Mercurio et al., 1997), but not CA-Akt or CA-MKK4, upregulated CD80 expression on iGB-lo cells (Figure 6a). Stimulation of splenic B cells with a higher concentration (10 μg/ml), but not a lower concentration (1 μg/ml), of anti-CD40 Ab induced the nuclear translocation of the NF-κB subunits c-Rel and RelA (Figure 6b). Furthermore, knockdown of Rel and Rela gene expression in iGB-hi cells resulted in downregulation of surface CD80 expression (Figure 6c,d and Figure 6—figure supplement 1a). These data indicated that CD80 expression on B cells induced by strong CD40 signaling is mediated by NF-κB, c-Rel and RelA. We next examined whether a similar signaling pathway is involved in the generation of Bmem cells. By using the iGB cell system, we showed that c-Rel- and Rela-knockdown iGB-hi cells generated fewer CD80hi iMB cells than mock-treated iGB-hi cells in vivo (Figure 6c–f and Figure 6—figure supplement 1b). Furthermore, we transferred NP-specific B cells transduced with the Rela-knockdown vector or a mock vector into mice, which were then immunized with NP-CGG. The knockdown of Rela selectively suppressed the development of CD80hi Bmem cells among the B cells that had responded to an immunized antigen (Figure 6g,h and Figure 6—figure supplement 1c). These data indicated that canonical NF-κB signaling plays a role in CD80hi Bmem cell development that is facilitated by stronger CD40 stimulation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig6-v2.jpg)
+
+**Figure 6.:** (a) Constitutively active (CA) variants of Akt, IKKβ or MKK4 were retrovirally transduced into B cells cultured on 40LB-lo feeder cells (iGB-lo cells) on day 2 of the culture. The expression of CD80 on the gated IgG1+ CD138− infection-marker-positive iGB-lo cells was then analyzed by FCM on day 5. The number on each histogram indicates gMFI. (b) Cytoplasmic and nuclear lysates from B cells stimulated with CD40 mAb (1 or 10 mg/ml) for the indicated time periods were analyzed by immunoblotting using Abs against c-Rel and p65/RelA. Tubulin and Lamin B were used as loading controls for cytoplasmic or nuclear proteins, respectively. (c) B cells cultured on 40LB-hi feeder cells (iGB-hi cells) were transduced with shCtrl, shRel, or shRela retroviral vectors, each carrying a GFP gene as an infection marker. Three days after the transduction, the expression of Rel and Rela mRNA in the sorted GFP+ cells was analyzed by qRT-PCR (mean + S.D. of triplicates). (d) Expression of CD80 on the GFP+ IgG1+ CD138− iGB-hi cells analyzed by FCM at 3 days after gene transduction, as in (c). (e, f) The iGB-hi cells transduced with the knock-down constructs as shown in (c,d) were transferred into γ-irradiated mice, spleens of which were analyzed by FCM 2 weeks later. (e) Outline of the experimental procedure. (f) Representative FCM data showing the the expression of CD80 (above) and the frequency (%) of CD80hi cells (bottom; n = 3) in the gene-transduced iMB cells (CD19+ CD45.1+ CD38+ GFP+) formed in the recipients’ spleens. (g, h) In vivo activated B cells derived from B1-8hi ki mice were transduced with shCtrl or shRela vectors, as described in the Materials and methods, and the resultant B cells (1 × 106) were transferred into WT B6 mice. The recipient mice were immunized with NP-CGG in alum on the next day. Splenocytes from these mice were analyzed by FCM at 10 days after immunization. (g) Outline of the experimental procedure. (h) Representative FCM data showing the gating strategy (left). The frequencies (%) of CD80hi cells among donor-derived, vector-transduced, and class-switched Bmem cells (CD45.1+ NP+ GFP+ IgM− CD19+ CD38+) at 10 days after immunization (right; n = 4). The mean of the values in each group is indicated by a horizontal bar (f, h). *, p<0.05; **, p<0.01; ***, p<0.001; as determined by unpaired Student’s t tests. All data are representative of two independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) A representative FCM data showing the gating strategy for the gene-transduced IgG1+ CD138− iGB cells analyzed in Figure 6d. (b) Representative FCM data showing the gating strategy for the gene-transduced iMB cells analyzed in Figure 6f. (c) The frequencies of GC B cells (CD19+ CD38−) in the donor-derived, antigen-specific, class-switched, gene-transduced B cells (CD45.1+ NP+ IgM− GFP+) (left), and the frequencies of CD80lo cells in the gene-transduced Bmem cells (CD45.1+ NP+ GFP+ IgM− CD19+ CD38+), for the mice shown in Figure 6h (n = 4).
+
 It has been observed that CD40 stimulation induces IRF4 in B cells and that bone marrow-derived dendritic cells from IRF4-deficient mice express a reduced level of CD80 upon LPS stimulation (Saito et al., 2007; Suzuki et al., 2004). It was also reported that transient or intermediate expression of IRF4 induced GC-related genes through the formation of heterodimers with BATF or PU.1, whereas its sustained or high expression induced PC-related genes through an IRF4 homodimer (Ochiai et al., 2013). Thus, we examined whether these transcription factors are involved in CD40 signaling in GC B cells. When ex-vivo GC B cells were cultured with anti-CD40 or anti-BCR Abs, of either high or low doses, or with various cytokines, IRF4 expression was found to be upregulated by a high dose of anti-CD40 or anti-BCR Abs, whereas BATF expression was selectively upregulated by a high dose of anti-CD40 Ab (Figure 7a,b and Figure 7—figure supplement 1a). Then, we tested whether BATF and IRF4 are involved in the induction of CD80 by using tamoxifen-inducible ERT2-BATF or ERT2-IRF4 constructs. Induced activation of BATF selectively upregulated CD80 expression in iGB-lo cells, although IRF4 alone did not, and co-activation of BATF and IRF4 slightly enhanced CD80 expression (Figure 7c and Figure 7—figure supplement 1b,c). In addition, a BATF mutant (BATF- HKE), which is defective in IRF4 binding (Tussiwand et al., 2012), failed to upregulate CD80 expression regardless of exogenous IRF4 (Figure 7d), suggesting that the exogenous BATF formed a heterodimer with endogenous IRF4 for CD80 upregulation. These data together indicate that the BATF–IRF4 heterodimer that is induced by strong CD40 signaling enhances CD80 expression in activated B cells. As an IKKβ inhibitor suppressed CD40-induced expression of CD80 as well as of BATF and IRF4, the canonical NF-κB pathway appears to upregulate the expression of BATF and IRF4 (Figure 7e).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig7-v2.jpg)
+
+**Figure 7.:** (a, b) GC B cells (CD19+ CD138− CD38− GL7+) were sorted from splenocytes of mice at 7 days after immunization with NP-CGG in alum and cultured without (−) or with the addition of the following reagents for 6 hr: anti-IgM plus anti-IgG Abs (αBCR, 10 μg/ml or 1 μg/ml), anti-CD40 Ab (αCD40, 10 μg/ml or 1 μg/ml), IL-4 (10 ng/ml), IL-21 (10 ng/ml) or BAFF (10 ng/ml). Expression of the indicated proteins in these B cells (CD19+ CD138−) was analyzed by intracellular staining followed by FCM. (a) Representative FCM data. (b) gMFIs of the histograms shown in (a). Data are mean + s.d. of triplicates. (c) Splenic B cells cultured on 40LB-lo feeder cells (iGB-lo) were transduced with a mock vector or with the indicated vectors expressing each factor fused with ERT2 (generated as described in the Materials and methods) on day 2 of the culture, and then treated with vehicle (EtOH) alone or with 4-OHT from day 3 to day 5. The expression of CD80 on these cells was analyzed on day 5, and shown as in (a). (d) iGB-lo cells were transduced with the indicated combination of the ERT2–fusion vectors and treated with 4-OHT as in (c). The CD80 expression on these cells is shown as in (c). (e) Splenic B cells were cultured with anti-CD40 Ab (20 μg/ml) for 2 days without (−) or with an IKKβ inhibitor (BAY11-7082). Expression of the indicated proteins in these cells was analyzed by FCM. The shadowed histograms represent the cells cultured with medium alone. (f, g) Splenic B cells from B1-8 ki CD45.1 mice were transferred into WT B6 mice, which were immunized with NP-CGG in alum on the next day. At 10 days after immunization, splenocytes from the recipients were analyzed by FCM. (f) A representative data showing the gating strategy. (g) gMFI of the indicated proteins in the donor-derived GC B cells (CD19+ CD45.1+ IgM− GL7+ Ephrin B1+ CD38−), pre-Bmem cells (CD19+ CD45.1+ IgM− GL7+ Ephrin B1+ CD38+), and Bmem cells (CD19+ CD45.1+ IgM− GL7− CD38+) (n = 5). (h–j) iGB-lo cells were transduced with the retroviral vectors expressing ERT2-BATF-ires-GFP and ERT2-IRF4-ires-CFP (BATF-GFP +IRF4 CFP), or with empty vectors expressing GFP and CFP (mock) on day 2 of culture treated with 4-OHT from day 3 to day 5, and then transferred into γ-irradiated mice. Two weeks after the transfer, spleen cells of the recipient mice were analyzed by FCM. (h) Outline of the experimental procedure. (i) A representative data showing the gating strategy. (j) The frequency (%) of CD80hi cells in the ERT2-BATF gene-transduced iMB cells formed in the recipients’ spleens (CD19+ CD45.1+ CD38+ GFP+) (n = 6). The mean of the values in each group is indicated by a horizontal bar (g, j). *, p<0.05; **, p<0.01; as determined paired Student’s t tests. All data are representative of two independent experiments except (j), in which data from two independent experiments are combined.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) GC B cells magnetically enriched from splenocytes of the mice immunized 1 week previously (top) and further purified by fluorescence-activated cell sorting (FACS) sorting (bottom) were used for the analyses in Figure 7a. (b) Representative FCM data of iGB-lo cells on day 5 of the culture shown in Figure 7h. (c) The expression of CD80 on the indicated populations of IgG1+ iGB-lo cells shown in (b). (d) A representative FCM data for the analyses in Figure 7g. Cells were stained extra- (CD80) or intra-cellularly (BATF, IRF4) with antibodies against the indicated proteins (top) or with isotype-matched control antibodies (bottom). (e) The frequency of CD80hi Bmem cells in GFP+ CFP− fractions of iMB cells, as defined in the second panels from the left in Figure 7i, and in the experiment in Figure 7h–j. Legend for Supplementary file 1.
 
 Considering that the NF-κB pathway upregulates CD80 expression on iGB cells and facilitates CD80hi Bmem cell development in vivo (Figure 6), it is possible that the BATF–IRF4 heterodimer plays a role in the strong CD40 signal that drives GC B cell differentiation into CD80hi Bmem cells. This idea was supported by our finding that GL7+ Efnb1+ CD38+ GC-derived memory precursors (pre-Bmem) cells (Laidlaw et al., 2017) expressed BATF and CD80 at higher levels than GL7+ Efnb1+ CD38− GC B cells at 10 days after immunization (Figure 7f,g and Figure 7—figure supplement 1d).
 
@@ -87,7 +141,7 @@ Although the B cells cultured on 40LB feeder cells (iGB cells) mimic some aspect
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/44245/elife-44245-fig8-v2.jpg)
 
-**Figure 8.:** hi and CD80lo Bmem cells.(Top) In the pre-GC phase of the primary response, the BCR affinity to antigen or the amount of available antigen determine the quantity of antigen presentation to T cells, and the extent of the induction of CD40L on T cells. Thus, the strength of CD40 signaling in B cells is determined by the interacting T cells, which then directs the differentiation fate to distinct Bmem subsets: relatively stronger CD40 signal commits B cells towards CD80hi Bmem cells, whereas weaker CD40 signal commits B cells towards CD80lo Bmem cells. After GC formation, TFH cells, being able to express a high level of CD40L after TCR stimulation, strongly stimulate CD40 on relatively high-affinity B cells and facilitate their differentiation to CD80hi Bmem cells. (Bottom) Activation of NF-κB, and the downstream BATF–IRF4 heterodimer, may transmit the strong CD40 signaling into a mechanism that facilitates the differentiation towards CD80hi Bmem cells.
+**Figure 8.:** (Top) In the pre-GC phase of the primary response, the BCR affinity to antigen or the amount of available antigen determine the quantity of antigen presentation to T cells, and the extent of the induction of CD40L on T cells. Thus, the strength of CD40 signaling in B cells is determined by the interacting T cells, which then directs the differentiation fate to distinct Bmem subsets: relatively stronger CD40 signal commits B cells towards CD80hi Bmem cells, whereas weaker CD40 signal commits B cells towards CD80lo Bmem cells. After GC formation, TFH cells, being able to express a high level of CD40L after TCR stimulation, strongly stimulate CD40 on relatively high-affinity B cells and facilitate their differentiation to CD80hi Bmem cells. (Bottom) Activation of NF-κB, and the downstream BATF–IRF4 heterodimer, may transmit the strong CD40 signaling into a mechanism that facilitates the differentiation towards CD80hi Bmem cells.
 
 Thus, stronger CD40 signaling in the GC may direct the development of CD80hi Bmem cells, as supported by our data. Despite this supposition, it was reported that strong T cell help and CD40 signaling in vivo induce the differentiation of GC B cells into PCs (Ise et al., 2018; Schwickert et al., 2011), raising a question as to the mechanism for the differentiation of GC B cells into either CD80hi Bmem cells or PCs. The fact that CD40 stimulation suppresses PC generation in vitro (Hawkins et al., 2013; Randall et al., 1998; Satpathy et al., 2010) suggests that the strong CD40 signaling alone does not directly promote PC differentiation in the GC. It is possible that additive BCR signaling affects the differentiation of GC B cells into PCs (Kräutler et al., 2017), although it has been reported that BCR signaling is inactive in most GC B cells (Khalil et al., 2012). Supposing that TFH cells are heterogeneous in terms of cytokine production (Weinstein et al., 2016), a cytokine produced from a particular TFH cell subset that interacts with the GC B cells may play a key role. Thus, a combination and integration of signaling pathways, one from the strong CD40 stimulation, the other from a particular cytokine, and maybe more, may ultimately determine the fate of GC B cells. IL-21 is known to induce B cell differentiation into PCs, while IL-21R-defficiency attenuated PC development and accelerated Bmem cell development (Zotos et al., 2010). In addition, we previously reported that iGB cells that were secondarily cultured with IL-21 preferentially develop into bone marrow PCs but not Bmem cells in vivo after adoptive transfer (Nojima et al., 2011). Thus, when GC B cells interact with IL-21-producing TFH cells, and receive a strong CD40 signal, they will differentiate into PCs. A TFH cell subset that induces the differentiation of GC B cells into CD80hi Bmem cells has yet to be defined. IL-4-producing TFH cells may be this subset, because iGB cells that are cultured with IL-4 on the CD40Lhigh feeder preferentially differentiated into CD80hi iMB cells in vivo. Considering a report showing that Bmem cells develop from B cells in the earlier GC, whereas long-lived PCs are generated during the later GC (Weisel et al., 2016), it is possible that distinct TFH subsets may work dominantly in B cell selection along the time course of the GC reaction.
 
@@ -103,52 +157,181 @@ What would be the survival advantage for individuals of generating bifurcated B
 
 ## Materials and methods
 
-## Mice and immunization
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B1-8ki</td>
+      <td>Lam et al., 1997</td>
+      <td></td>
+      <td>Dr. Rajewsky (Max Delbrück Center for Molecular Medicine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B1-8hiki</td>
+      <td>Shih et al., 2002</td>
+      <td>IMSR Cat# JAX:007775; RRID:IMSR_JAX:007775</td>
+      <td>Dr. Nussenzweig (The Rockefeller University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Bcl6flox</td>
+      <td>Kaji et al., 2012</td>
+      <td>IMSR Cat# RBRC05663; RRID:IMSR_RBRC05663</td>
+      <td>Dr. Takemori (RIKEN)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd4-Cre</td>
+      <td>Lee et al., 2001</td>
+      <td>IMSR Cat# JAX:017336; RRID:IMSR_JAX:017336</td>
+      <td>Dr. Kubo (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd40lg−/−</td>
+      <td>Xu et al., 1994</td>
+      <td>RRID:MGI:2449454</td>
+      <td>Dr. Flavell (Yale School of Medicine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Igκ−/−</td>
+      <td>Chen et al., 1993</td>
+      <td></td>
+      <td>Dr. Tsubata (Tokyo Medical and Dental University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>OT-II</td>
+      <td>Barnden et al., 1998</td>
+      <td>IMSR Cat# JAX:004194; RRID:IMSR_JAX:004194</td>
+      <td>Dr. Kubo (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>40LB</td>
+      <td>Nojima et al., 2011</td>
+      <td></td>
+      <td>Dr. Kitamura (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>40LB-hi</td>
+      <td>Takatsuka et al., 2018</td>
+      <td></td>
+      <td>Dr. Kitamura (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>40LB-lo</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Dr. Kitamura (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>40LB-mid</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Dr. Kitamura (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat monoclonal anti-mouse CD40; FGK4.5</td>
+      <td>Bio X Cell</td>
+      <td>Bio X Cell Cat# BE0016-2; RRID:AB_1107647</td>
+      <td>250 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>armenian hamster monoclonal anti-mouse CD40L; MR-1</td>
+      <td>Noelle et al., 1992</td>
+      <td>ATCC Cat# HB-11048; RRID:CVCL_8964</td>
+      <td>1 mg/kg; Dr. Abe (Tokyo University of Science)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and immunization
 
 C57BL/6 NCrSlc (B6) mice were purchased from Sankyo Labo Service. All of the following mice were backcrossed to B6 or congenic B6 CD45.1+ mouse strains: B1-8 ki (Lam et al., 1997), B1-8hi ki (Shih et al., 2002), Bcl6f/f (Kaji et al., 2012), Cd4-Cre (Lee et al., 2001), Cd40lg−/− (Xu et al., 1994), Igκ−/− (Chen et al., 1993), and OT-II (Barnden et al., 1998). Mice were immunized i.p. with 100 μg of NP32-CGG, or NP14-OVA where indicated, in alum. Sex-matched, 7-week-old or older mice were used for all experiments. All mice were bred and maintained under specific pathogen-free conditions, and all animal experiments were performed under protocols approved by the Animal Care and Use Committee of the Tokyo University of Science (Approval No.: S15021, S16019, S17004, S18018).
 
-## Flow cytometry
+### Flow cytometry
 
 For all the flow cytometry (FCM) analyses, single-cell suspensions were depleted of red blood cells (RBC) by ammonium chloride lysis, blocked with anti-CD16/32 (FcγRII/III) Ab (2.4G2), and then stained with the appropriate mAbs listed in Supplementary file 1, in PBS supplemented with 0.5% BSA, 2 mM EDTA, and 0.05% sodium azide. Stained cells were analyzed using FACSCalibur or FACSCantoII (BD Biosciences) instruments. The data were analyzed using Flowjo (Tree Star). Dead cells, detected by using propidium iodide or Fixable Viability Dye (eBioscience), were gated out in all FCM experiments. For intracellular staining, cells were fixed and permeabilized using a Foxp3 staining kit (eBioscience) before staining.
 
-## Cell purification and culture
+### Cell purification and culture
 
 Naïve B cells were purified as described previously (Nojima et al., 2011). Naïve T cells were purified from OT-II mice as follows: RBC-depleted splenocytes were stained with fluorochrome-conjugated mAbs to CD4, CD25, CD44, and CD62L, and then naïve T cells (CD4+ CD25− CD44− CD62L+) were sorted using FACSAriaII or FACSAriaIII (BD Biosciences) instruments. GC B cells were purified from the mice immunized with NP-CGG in alum 7 days previously as follows. Cells from pooled spleens were stained with FITC-conjugated anti-GL7 and anti-FITC microbeads (Miltenyi Biotec), and GL7+ cells were enriched using a MACS system (Miltenyi Biotec). The enriched cells were stained with anti-CD19, anti-CD38 and anti-CD138, and then GC B cells (CD19+ CD38− CD138− GL7+) were sorted using FACSAriaII or FACSAriaIII.
 
 B and T cells were cultured in 37°C/5% CO2 conditions in complete medium: RPMI-1640 medium (Wako) supplemented with 10% heat-inactivated fetal bovine serum, 1 mM sodium pyruvate, 50 μM 2-mercaptoethanol, 10 mM HEPES pH7.5, 100 U/ml penicillin and 100 μg/ml streptomycin (GIBCO). Naïve B cells (5 × 106/ml) were cultured with anti-CD40 (1C10; Southern Biotech) or IKKβ inhibitor (BAY11-7082; Merck). Sorted T cell subsets (2.5 × 105/ml) were cultured with PMA (20 ng/ml; Sigma) and ionomycin (1 μg/ml; Sigma) for 2 hr. To generate Th0 cells, naïve OT-II T cells (1 × 106/ml) were cultured in six-well plates (Corning) coated with anti-CD3ε (8 μg/ml; 145–2 C11; Biolegend) and anti-CD28 (8 μg/ml; 37.51; Biolegend) for 3 days, and then cultured without Abs for 1 day. The resultant Th0 cells (1 × 106/ml) and naïve B cells (1 × 106/ml) were co-cultured with OVA peptide (Figure 4a). GC B cells (1 × 106/ml) were cultured with anti-IgM (10 or 1 μg/ml; Jackson ImmunoResearch), anti-IgG (10 or 1 μg/ml; Jackson ImmunoResearch), anti-CD40 (1C10; 10 or 1 μg/ml), IL-4 (10 ng/ml; PeproTech), IL-21 (10 ng/ml; PeproTech) or BAFF (10 ng/ml) for 6 hr.
 
-## Adoptive transfer and memory B cell purification
+### Adoptive transfer and memory B cell purification
 
 Naïve B cells were purified from B1-8ki CD45.1 mice and the frequency of NP+ cells was determined by FCM. The naïve B cells containing 1 × 104 NP+ B cells per mouse were transferred into B6 mice, which were then immunized i.p. with NP-CGG in alum on the next day. Four weeks after the immunization, Bmem cells were purified from pooled spleens through two-step negative sorting and final positive sorting: cells stained with biotinylated antibodies against CD4, CD8a, CD11b, CD43, CD45.2, CD49b, and Ter119, followed by streptavidin particle DM (BD Biosciences), were negatively sorted sequentially with the iMag (BD) and MACS systems. The resultant cells were stained with fluorochrome-conjugated CD19, CD38, CD45.1 mAbs, and NP-BSA, and then Bmem cells (all positive) were sorted using FACSAriaII or FACSAriaIII.
 
-## In vivo administration of antibodies
+### In vivo administration of antibodies
 
 To inhibit CD40 signaling, mice were injected s.c. with the antagonistic CD40L mAb MR-1, (in house; 30 μg per mouse) or with control IgG (IR-AHT-GF, Innovative Research), every day from day −1 to day 5 after immunization. To activate CD40 signaling, mice were injected i.p. with agonistic CD40 mAb (FGK4.5, Bio X Cell; 250 μg per mouse) or PBS at day 8 after immunization.
 
-## Cell lines, iGB cell culture and iMB cell generation
+### Cell lines, iGB cell culture and iMB cell generation
 
 Production of cell lines, iGB cell culture and iMB cell generation were performed as previously described (Nojima et al., 2011). 40LB-hi cells were generated by repeated transduction of a CD40L expression vector (pMXs-CD40L-IRES-GFP) into 40LB cells (Takatsuka et al., 2018). 40LB-mid and 40LB-lo cells were subclones of 40LB cells made by cell sorting followed by limiting dilution. The CD40L expression level in 40LB-mid cells was equivalent to that of the parental 40LB cells. A parental cell line for 40LB, BALB/c 3T3 fibroblast (clone A31), was provided by RIKEN BRC, Japan. All the BALB/c 3T3-derived cell lines were checked routinely using the PCR Mycoplasma Detection Set (Takara) and proved to be mycoplasma-free.
 
-## Adoptive transfer of iMB cells for immunization
+### Adoptive transfer of iMB cells for immunization
 
 Splenocytes from mice that had been transfected with iGB cells 2 week earlier were analyzed by FCM to estimate the numbers of donor-derived (CD45.1+) iMB cells. To examine the response of the iMB cells to a NP antigen in vivo, spleen B cells, including a fixed number of iMB cells derived from B1-8 ki B cells, were co-transferred with CGG-primed spleen cells into WT B6 mice, which were immunized i.p. with NP-CGG in alum on the next day.
 
-## Plasmid constructions
+### Plasmid constructions
 
 BATF and IRF4 cDNAs were cloned by PCR using iGB cell mRNA. The ERT2 segment was fused to the 5′-terminus of the BATF or IRF4 cDNAs by ligations using PCR-generated de novo restriction enzyme sites. The BATF-HKE mutant (H55Q, K63D, and E77K) was generated by PCR-based mutagenesis (Iwata et al., 2017; Tussiwand et al., 2012). Constructs encoding BATF or BATF-HKE, each fused with ERT2, were cloned into a pMXs-IRES-GFP vector. A construct encoding IRF4 fused with ERT2 was cloned into a pMXs-IRES-CFP vector, derived from the pMXs-IRES-GFP, in which the GFP sequence was replaced with CFP. CA-IKKβ (S177E and S188E) (Mercurio et al., 1997), CA-Akt (E40K) (Arimura et al., 2004), and CA-MKK4 (S257E, T261D) constructs were cloned into the pMXs-IRES-GFP. For RNAi, the target sequences of shRNAs, as listed in Supplementary file 1, were inserted into a pSIREN-GFP vector, which was made by replacing a puromycin resistance gene in a pSIREN-RetroQ vector (Clontech) with an EGFP sequence.
 
-## Retroviral transduction
+### Retroviral transduction
 
 Retroviral transduction of iGB cells was performed as previously described (Haniuda et al., 2016). For T cells, naïve T cells were stimulated with plate-coated anti-CD3ε (8 μg/mL) and anti-CD28 (8 μg/mL) for 36 hr, and then transduced with retrovirus vectors by spin-infection (Haniuda et al., 2016). Retroviral transduction of in-vivo-activated primary B cells and their transfer into mice were performed as previously described (Inoue et al., 2017). In brief, B1-8hi ki mice were injected i.p. with NP-Ficoll (50 μg), and then B cells were purified from the spleens of these mice 6 hr later and stimulated in vitro with anti-CD40 Ab (2 μg/ml) for 18 hr. Cultured B cells were spin-infected with retroviral vectors and further cultured for 3 hr. The resultant viable B cells (1 × 106) were transferred into WT mice for immunization with NP-CGG.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cells were lysed in cytoplasmic extraction (CE) buffer (10 mM HEPES pH 7.9, 10 mM KCl, 0.1 mM EDTA pH 8.0, 0.1 mM EGTA, and 1 mM DTT) for 10 min at 4°C and then NP-40 were added to the final concentration of 0.5%. The cell lysates were centrifuged and supernatants were collected as the cytosolic fraction. Precipitates were washed twice with CE buffer and the final precipitates were lysed in a nuclear extraction buffer (20 mM HEPES pH7.9, 400 mM NaCl, 1 mM EDTA pH 8.0, 1 mM EGTA, 25% glycerol, and 1 mM DTT) for 40 min at 4°C with aggressive mixing every 10 min. The lysates were centrifuged and the supernatants were used as the nuclear fractions. The cytosolic and nuclear fractions were mixed with SDS sample buffer, boiled, and used for SDS-PAGE, followed by immunoblotting using Abs listed in the Supplementary file 1.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 The procedures for RNA extraction and reverse transcription to cDNA have been described previously (Nojima et al., 2011). Quantitative real-time PCR was performed with a 7500 fast Real-time PCR system or with QuantStudio 3 (Applied Biosystems). Gene expression levels were determined by the relative standard curve method and normalized to that of Gapdh.
 
-## ELISA
+### ELISA
 
 NP-specific IgG1 was detected by ELISA using NP-BSA as a plate-coated antigen as described previously (Nojima et al., 2011).

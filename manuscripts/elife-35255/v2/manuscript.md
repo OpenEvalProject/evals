@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.35255.001 RNA-catalyzed RNA replication is widely believed to have supported a primordial biology. However, RNA catalysis is dependent upon RNA folding, and this yields structures that can block replication of such RNAs. To address this apparent paradox, we have re-examined the building blocks used for RNA replication. We report RNA-catalysed RNA synthesis on structured templates when using trinucleotide triphosphates (triplets) as substrates, catalysed by a general and accurate triplet polymerase ribozyme that emerged from in vitro evolution as a mutualistic RNA heterodimer. The triplets cooperatively invaded and unraveled even highly stable RNA secondary structures, and support non-canonical primer-free and bidirectional modes of RNA synthesis and replication. Triplet substrates thus resolve a central incongruity of RNA replication, and here allow the ribozyme to synthesise its own catalytic subunit ‘+’ and ‘–’ strands in segments and assemble them into a new active ribozyme.
+RNA-catalyzed RNA replication is widely believed to have supported a primordial biology. However, RNA catalysis is dependent upon RNA folding, and this yields structures that can block replication of such RNAs. To address this apparent paradox, we have re-examined the building blocks used for RNA replication. We report RNA-catalysed RNA synthesis on structured templates when using trinucleotide triphosphates (triplets) as substrates, catalysed by a general and accurate triplet polymerase ribozyme that emerged from in vitro evolution as a mutualistic RNA heterodimer. The triplets cooperatively invaded and unraveled even highly stable RNA secondary structures, and support non-canonical primer-free and bidirectional modes of RNA synthesis and replication. Triplet substrates thus resolve a central incongruity of RNA replication, and here allow the ribozyme to synthesise its own catalytic subunit ‘+’ and ‘–’ strands in segments and assemble them into a new active ribozyme.
 
 ## Introduction
 
@@ -28,9 +28,21 @@ We wondered whether this paradox might be avoided through a re-consideration of 
 
 ## Results
 
-## In vitro evolution of triplet polymerase activity
+### In vitro evolution of triplet polymerase activity
 
 We set out to explore the potential of short RNA oligonucleotides as substrates for RNA-catalyzed RNA replication. To do this, we required a ribozyme capable of general, iterative RNA-templated oligonucleotide ligation. Previously-described RNA polymerase ribozymes such as the ‘Z’ RPR (Wochner et al., 2011) can use NTPs to iteratively extend a primer hybridized to an RNA template, but do not accommodate oligonucleotides bound downstream of the primer or accept them as substrates. However, we detected a weak templated ligation activity in a truncated version of the Z RPR comprising its catalytic core domain (Zcore) (Figure 1a), which supported incorporation of oligonucleotide substrates as short as three nt (Figure 1—figure supplement 1) when incubated in the eutectic phase of water ice (Attwater et al., 2010; Mutschler et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme outlining initial derivation of a triplet polymerase activity from a mononucleotide polymerase ribozyme via directed evolution. Z RPR truncation effects are shown in Figure 1—figure supplement 1, the selection cycle is outlined in Figure 1—figure supplement 2, and the selection conditions of rounds 1–7 are listed in Figure 1—source data 1. Below, modes of action and secondary structures of the mononucleotide polymerase ribozyme (Z RPR) and a triplet polymerase ribozyme (0core), both depicted surrounding primer (tan)/template (grey) duplexes with a mononucleoside triphosphate (NTP) or trinucleotide triphosphate (triplet) substrate present (red). Here, the templates are hybridised to the ribozyme upstream of the primer binding site, flexibly tethered to enhance local concentration and activity (via L repeats of an AACA sequence, for example L = 5 in templates SR1-4 below). Z RPR residues comprising its catalytic core (Zcore) are black; mutations in 0core arising from directed evolution of Zcore are in teal. (B) Primer extension by the Z RPR using monomers (1 mM NTPs) or by 0core using triplets (5 μM pppAUA and pppCGC), on a series of 6-nucleotide repeat templates (SR1-4, examples below) with escalating secondary structure potential that quenches Z RPR activity beyond the shortest template SR1 (−7˚C ice 17 days, 0.5 μM/RNA). Extension by the triplet polymerase ribozyme 0core can overcome these structure tendencies up to the longest template SR4. (C) Triplet concentration dependence of extension using templates SR1 (grey circles) and SR3 (black triangles) by 0core (pppAUA and pppCGC, 0.1 μM of primer A10, template and ribozyme, −7˚C supercooled 15 days, ± s.d., n = 3); shown below is a model of cooperative triplet-mediated unfolding of template SR3 structure to explain the sigmoidal triplet concentration dependence (red curve) of extension upon it. Numerical values are supplied in Figure 1—source data 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Extension of primer A11 on template HTI by the Z RPR (Wochner et al., 2011) and a 3’ truncation of it (Zcore, Figure 1a) at −7˚C in ice for 8 days (0.5 μM of each RNA), adding as substrates either a long oligonucleotide (‘11 nt’, pppGCGAAGCGUGU at 0.5 μM), a triplet (‘3 nt’, pppGCG at 5 μM), or NTPs (‘1 nt’, at 1 mM each). Gel densitometry was used to calculate the percentage of primer extended (shown below each lane). Z RPR has only a very limited template ligation activity (slightly exceeding background nonenzymatic ligation [Rohatgi et al., 1996]). In contrast, 3’ truncation (which abolished mononucleotide polymerase activity) accommodated and enhanced templated ligation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Illustration of the in vitro evolution strategy to enrich iterative templated ligase activity from libraries of selection constructs. Centre, an example selection construct is shown comprising Zcore with a 3’ 30 nt random domain followed by a fixed hairpin-forming reverse transcription site (1). This construct is flexibly tethered at its 5’ in cis (Tagami et al., 2017; Attwater et al., 2010) (via L repeats (3-8) of a flexible AACA linker) to a template region (grey) bound to 5’-dual biotin modified primer (tan). This construct requires successive polymerisation of two pppUCG triplet substrates (red) in −7˚C ice followed by self-ligation to its triphosphorylated 5’ terminus to attach itself to the biotinylated primer (2). Active triplet polymerases are then identified and size-purified by denaturing PAGE to deplete unreacted ribozymes and primer (3), then captured on streptavidin beads and subjected to a denaturing wash to ensure covalent linkage to primer. Remaining dual-purified bead-linked ribozymes were then reverse transcribed (4). cDNAs were eluted with NaOH and neutralised, before acting as templates for ‘+’ strand DNA synthesis from 5’ biotinylated ‘rescue’ oligonucleotides that only prime correctly on the complete synthesised sequence (5), ensuring that constructs that deviated from the specified templated triplet polymerization fail to prime on cDNA preventing their ‘+’ strand synthesis. ‘+’ strands were then captured on fresh streptavidin beads, stripped of cDNAs, reamplified and diversified to generate selection construct for a new round of selection (6). See Materials and Methods for protocol details and Figure 1—source data 1, Figure 2—source data 1, Figure 4—source data 1 and Supplementary file 3 for oligonucleotides used in selections.
 
 To be able to properly examine such RNA trinucleotide triphosphates (triplets) as replication substrates, we first sought to convert Zcore into an effective triplet polymerase ribozyme using in vitro evolution. We devised a selection strategy that required iterative templated triplet ligation by ribozymes to achieve their covalent linkage to a tagged primer (Figure 1—figure supplement 2). This enables their recovery, amplification and mutagenesis before further rounds of selection to enrich the selection pool in improved triplet polymerase ribozyme variants.
 
@@ -38,33 +50,101 @@ We initiated selections from a library of 1.5 × 1015 Zcore variants with a ne
 
 Significantly, we found that 0core could catalyze triplet polymerisation on a series of structured templates, which had proven intractable to the parental Z RPR (Figure 1b). Here, primer extension exhibited a steep sigmoidal dependence upon triplet concentrations (Figure 1c), suggestive of a cooperative invasion and unraveling of template secondary structures by the triplet substrates themselves. Although still inefficient, the fact that the nascent activity of the 0core ribozyme could already copy templates that had confounded an established RPR encouraged us to continue to seek improved triplet polymerase ribozymes to leverage this substrate behaviour.
 
-## Emergence of cooperativity and characterisation of a ribozyme heterodimer
+### Emergence of cooperativity and characterisation of a ribozyme heterodimer
 
 We continued selections for a further 14 rounds. At this point, the type 0 ribozyme had gone extinct, replaced by six new types of RNA each characterised by a unique 3’ domain (Figure 2a, Figure 2—figure supplement 1). Type 1 RNAs were the most abundant, comprising ~50% of pool sequences, but mysteriously were catalytically inactive with diverse mutations in their core domains. In contrast, the type 2–6 RNAs all displayed triplet polymerase activity, but fell short of the polyclonal activity of the selection pool (Figure 2—figure supplement 2). To attempt to explain this discrepancy, we explored potential interactions among the different pool lineages, and found that addition of an equimolar amount of type 1 RNA substantially enhanced triplet polymerase activity of all the other ribozyme types 2–6 (Figure 2b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig2-v2.jpg)
+
+**Figure 2.:** (A) Composition of the round 21 selection pool as a % of total pool sequences; selection conditions of rounds 8–21 are listed in Figure 2—source data 1. Secondary structures of ribozyme type 1–6 archetypes are shown in Figure 2—figure supplement 1, and comparison of their activities to that of the polyclonal selection pool is shown in Figure 2—figure supplement 2. (B) Primer extension with triplets by these emergent triplet polymerase ribozyme types 2–6 (‘Rz’, alongside the starting Zcore ribozyme with ‘cap+’ sequence from selection, see Figure 3a), alone or with added truncated type 1 (+1, see Figure 3a) which boosted their triplet polymerase activities (0.5 μM Rzs/A10 primer/SR3 template, 5 μM pppAUA and pppCGC, −7˚C ice 16 hr).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The archetypes shown are active truncations of the most common/enriched variants of each type. Types 2–6 are depicted hybridised to a flexibly tethered primer (tan)/template (grey)/substrate (red) duplex analogous to the selection construct (Figure 1—figure supplement 2), supporting extension on the SR1-4 templates (Figure 2b). Coloured bases deviate from Zcore or derive from the random sequence region. Type 1, the most common type in the output, displayed a high degree of sporadic mutation in the catalytic core domain, consistent with a loss of catalytic function. Shown here are the four most common core mutations, which were each present in >45% of type 1 sequences.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Type 1 and 2 RNAs, and the indicated polyclonal ribozyme pools late in the selection, were transcribed as selection constructs generated with Tri8AUAM (then annealed to primer A10). Their abilities to incorporate eight pppAUA triplets then self-ligate in this selection construct context were compared (left, 0.1 μM each RNA, 2 μM pppAUA, in −7˚C ice for 5 days; right, 0.2 μM each RNA, 2 μM pppAUA and pppAUG3’d, in −7˚C ice for 9 days). Left: Despite being the most active type (Figure 2b), type two activity fell far short of the round 19 pool polyclonal activity. Right: The incorporation of wobble pairing 3’-deoxy ‘terminator’ triplet pppAUG3’d (see results section on fidelity, yielding a faster-migrating band than incorporation of the cognate pppAUA triplet) was decreased sharply after round 19, as calculated by densitometry and averaging amongst the ligation junctions in each lane, indicative of enrichment of higher fidelity triplet polymerases in the selection pool.
+
 Dissecting type 1 RNA function, we found that 5’ truncation of the region that previously contacted the primer/template duplex (Shechner et al., 2009) did not affect its cofactor activity (Figure 3a, Figure 3—figure supplement 1). As judged by gel mobility shift (Figure 3b) and activity enhancement (Figure 3—figure supplement 1), type 1 RNA appears to form a 1:1 heterodimeric complex directly with active triplet polymerase ribozymes. Our attention was drawn to their selection construct-derived 5’ hairpin elements, which differed between active triplet polymerases (‘cap+’, Figure 3a, Figure 2—figure supplement 1) and the most common type 1 variants in the selection pool where this hairpin had acquired a mutation (yielding ‘cap–’, Figure 3a). ‘cap–’ was dispensible for type 1’s cofactor activity, but when replacing ‘cap+’ in active triplet polymerases it abolished both their activity enhancement by type 1 (Figure 3—figure supplement 1) and complex formation (Figure 3b). This points to the ‘cap+’ hairpin as the critical site of interaction with type 1; ‘cap–’ in type 1 presumably served to deter its homodimerisation during selection.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig3-v2.jpg)
+
+**Figure 3.:** (A) Secondary structures of the most common type 1 and type 5 clones from the selection, with in vitro-selected 3’ domain and core mutations coloured orange (type 1) or blue (type 5). 5’ truncation of type 1 (faded, including its putative primer/template interacting region), yielding the minimal type 1 variant ‘1’, maintained its enhancement activity (see Figure 3—figure supplement 1). The effects of transplanting the indicated 5’ hairpin ‘cap+’ element from type 5 to other ribozymes are shown in Figure 3—figure supplement 2. The inset shows type 5 ‘cap+’ hairpin element alteration to ‘cap–’ (yielding type 5cap-). (B) Gel mobility shift characteristic of complex formation resulting from mixing of type 5 ribozyme with type 1 RNA (equimolar, or with the indicated equivalents). Type 5cap- loses this shift and its susceptibility to type 1 activity enhancement (Figure 3—figure supplement 1). Below, shifted band intensities with increasing type 1 addition are plotted (quantified relative to the indicated type 5+1 lane intensities, n = 4 ± s.d.), signifying 1:1 heterodimer formation; numerical values are supplied in Figure 3—source data 1. (C) Type 1 enhancement allows type 5 variants to synthesise long RNAs using triphosphorylated oligonucleotide (11 nt) or short triplet (3 nt) substrates (Sub, 3.6 or 5 μM each, substrate sequences in grey beside lanes; 0.4 μM primer A11/template I-8, 2 μM each Rz, −7˚C ice for 16 days). This activity is independent of template tethering (Wochner et al., 2011), as comparable synthesis is achieved by versions of type 5 whose 5’ regions allow or avoid hybridisation to the template (type 5cis or type 5trans respectively, schematic above, sequences in Supplementary file 1). The average extent of ligation at the end of the reaction amongst all junctions in a lane is shown beneath each lane.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) PAGE of primer extension reactions comprising combinations of type 5 and type 1 variants (0.2 μM primer A10, template SR3, and type 5 variant, here annealed together and combined with 0.2 μM of separately-annealed type 1 variant after buffer addition; −7˚C in ice for 63 hr, 2 μM each pppAUA, pppAUG3’d, pppCGC). Full-length type 1 enhanced the activity of type 5 as did 5’ truncated type 1 (‘1’, Figure 3a) without its duplex-interacting A-minor motif (Shechner et al., 2009) and its ‘cap−’ sequence (originally present on some type 1 sequences in the selection). Replacing the type 5 ribozyme’s selected 5’ ‘cap+’ sequence with ‘cap-’ (type 5cap-) abolished its enhancement by type 1 RNA. (B) Stoichiometry of type 1 enhancement of type 3 activity (0.5 μM primer A10, template SR3, 2 μM each pppAUA, pppGUA3’d, pppCGC in −7˚C ice for 20 hr); quantification of average extension per primer in each lane is consistent with the 1:1 stoichiometry implied by type 1’s ~ 50% abundance in the round 21 selection pool.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Left, transplanting the conserved 5’ ‘cap+’ sequence from types 2–6 allows the Zcore but not the 0core ribozyme triplet polymerase activity to be enhanced by type 1; shown are PAGE of extensions of primer A10 on template CCCMisAUG by the indicated ribozyme cores (5 μM of pppAUG and pppCCC, 0.5 μM of each RNA with type 1 annealed and added separately, −7˚C in ice for 22 hr). Right, RNA polymerase activity of Z RPR using NTPs is enhanced by type 1 addition, but only when modified with the 5’ ‘cap+’ sequence (Z RPRcap+), extending primer A10 on tethered template HTI (0.5 μM of each RNA, 4 mM of each NTP, at 4˚C for 68 hr).
 
 Indeed, transplanting the ‘cap+’ element could make the parental ribozymes (Zcore and Z RPR) receptive to activity enhancement by type 1 RNA (Figure 2b, Figure 3—figure supplement 2). The catalytically inert type 1 RNA thus represents a general, mutualistic RNA species. This molecular symbiont appears to have emerged spontaneously during in vitro evolution by forming a heterodimeric holoenzyme with triplet polymerase ribozymes, enhancing their activity to boost the recovery prospects of both complex components.
 
 In complex with type 5 (the fastest enriching triplet polymerase ribozyme in the final selection pool), type 1 boosts polymerization of triplets (or longer oligonucleotides) to enable synthesis of long RNAs (Figure 3c). Here, it became apparent that type 1 also obviates the need for ribozyme-template tethering. Due to their poor affinity for primer/template duplex (Lawrence and Bartel, 2003), RPRs generally depend upon such tethering to template (Attwater et al., 2010; Wochner et al., 2011; Horning and Joyce, 2016), which enhances local ribozyme concentration and promotes formation of the RPR-primer/template holoenzyme (Attwater et al., 2010; Attwater et al., 2013a). In contrast, the triplet polymerase heterodimer appears to have a capacity for true intermolecular, sequence-general interaction with primer-template duplexes, which enables holoenzyme formation and copying of RNA templates without requiring specific ribozyme-template hybridization sites.
 
-## Secondary structure invasion by triplet substrates
+### Secondary structure invasion by triplet substrates
 
 We performed an additional five rounds of in vitro evolution to further evolve the type 5 triplet polymerase ribozyme (now in the presence of truncated type 1 RNA), diversifying the previously-fixed 3’ domain reverse transcription primer binding sequence. This reselection yielded a shorter final heterodimeric triplet polymerase holoenzyme, hereafter termed ‘t5+1’ (Figure 4). This robust triplet polymerase activity now proved suitable for exploring the scope and potential of triplet-based RNA replication.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig4-v2.jpg)
+
+**Figure 4.:** Top, scheme outlining derivation of the final t5+1 triplet polymerase archetype from the type 1 and type 5 RNAs (shown in Figure 3a) by reselection using the conditions in Figure 4—source data 1. Below, the secondary structure of this ribozyme heterodimer, 135 nt (1) and 153 nt (t5) long, is depicted operating in trans on a non-tethered primer/template duplex. Type 5 3’ domain bases that re-emerged after randomisation during reselection are coloured black in the t5 3’ domain. Ribozyme development is summarized in Figure 4—figure supplement 1; all ribozyme sequences are listed in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Left, map of triplet polymerase selection and engineering. Ribozyme sequences are listed in Supplementary file 1. Right, secondary structures of the central ribozymes in this work.
+
 As a first examination of t5+1 activity, we revisited triplet-based RNA synthesis on structured templates. To provide a stringent test of template structure inhibition, we now examined hairpin-containing templates (4S, 6S, 8S) with increasing RNA hairpin stability and estimated TMs of up to 93˚C (8S). The latter had previously strongly arrested even the most advanced mononucleotide RPRs at higher temperatures (Horning and Joyce, 2016). However, using triplets as substrates t5+1 robustly copied all of these (Figure 5a), even when templates were pre-folded allowing RNA secondary structures to form prior to triplet addition (Figure 5—figure supplement 1). The triplet concentration-dependent cooperative structure invasion and unraveling (previously observed with the simpler 0core domain and partly wobble-paired RNA template structures [Figure 1b,c]) was recapitulated with t5+1 and the highly stable 8S hairpin template (Figure 5—figure supplement 2). In contrast, dinucleotide triphosphate substrates yielded extension only up to the structured region (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig5-v2.jpg)
+
+**Figure 5.:** (A) Extension on three structured hairpin templates (4S, 6S, 8S) with increasing stability. Top, the mfold-predicted (Markham and Zuker, 2005) structure and TM of the most stable 8S template; below, primer extensions on these templates by t5+1 triplet polymerase (with 5 μM each encoded triplet) or type 1-enhanced Z polymerase ribozyme (Z RPRcap+ +1, with 1 mM each NTP) (2 μM ribozyme, 0.5 μM 4S, 6S or 8S template and primer A9, −7˚C ice 25 days). The self-complementary region in each template is indicated between each pair of lanes (shaded by triplet), with the encoded triplet substrate sequences at the left (in grey, with 5’ template overhangs in brackets). Syntheses using different substrate compositions and concentrations are shown in Figure 5—figure supplement 1 and Figure 5—figure supplement 2. While all hairpin templates are robustly copied by t5+1, synthesis by the Z RPR is completely arrested by the 6S and 8S hairpins. (B) Synthesis of the broccoli aptamer. The native secondary structure is shown above (Tan: bases from ‘+’ strand synthesis primer. Green: bases from triplets. Outlined green: primer binding site for the ‘−’ strand synthesis). Below left, t5+1-catalysed synthesis of fluorescent broccoli aptamer, run alongside standard (Broc+, synthesized by in vitro transcription), and stained for RNA with SYBR Gold (magenta) or folded with DFHBI-1T ligand (green fluorescence) (2 μM t5+1, 1 μM BBrc10/TBrc, 5 μM each triplet (in grey), −7˚C ice 22 days). Below right, ‘−’ strand synthesis on Broc + standard (0.5 μM without ligand in ribozyme extension buffer, 0.5 μM FBrcb6 primer, 2 μM t5+1, 5 μM each triplet (in grey), −7˚C ice 38 days). t5+1 is able to synthesise both full-length functional (fluorescent) Broccoli ‘+’ and encoding ‘–’ strands.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Primer extension reactions are shown using sets of defined triplet substrates (above the lanes), or random pools of all 64 triplets (pppNNN), each at the indicated concentrations on three templates with progressively longer, more stable secondary structure elements (right, TMs estimated using [Zuker, 2003]) (0.5 μM primer A9, 0.5 μM 4S, 6S, 8S templates, 2 μM t5+1,–7˚C ice for 25 days). Structure invasion and primer extension across the structured template region (beginning at the dotted red line on the image) occurred in all cases (with increased efficiency at higher substrate concentrations for the 8S template (5 µM)), including extensions where template secondary structures were allowed to form in the absence of triplets (*, triplets added last after 30 min supercooled at −7˚C).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Extension on the 8S structured template with a defined set of complementary triplets (left) or dinucleotides (right), at the indicated substrate concentrations (0.5 μM primer A9, template 8S, 2 μM t5+1, –7 ˚C ice for 25 days). Left, quantification of the extent of extension into the structured template region below each lane (measured by the fraction of third triplet addition to primers already extended by two) recapitulates a sigmoidal relationship with triplet concentration. Right, dinucleotides (like mononucleotides) exhibit negligible extension into the template hairpin structure.
 
 We began to explore whether triplet-based RNA synthesis by t5+1 might exhibit the generality required not just for synthesis of arbitrary structured sequences, but for replication of functional sequences (requiring synthesis of both ‘+’ and ‘−’ strands). Encouragingly, t5+1 could synthesise both a functional fluorescent ‘+’ strand of the 52 nt Broccoli RNA aptamer (Filonov et al., 2014) and its encoding ‘−’ strand template from their 13 (+) and 12 (−) different constitutive triplets (Figure 5b).
 
-## Ribozyme sequence self-synthesis and assembly
+### Ribozyme sequence self-synthesis and assembly
 
 We next turned to the critical test of generality: could triplet substrates allow self-synthesis? As t5+1 currently lacks the efficiency to synthesise RNAs its own length, we divided the catalytic t5 ribozyme into five segments α, β, γ, δ and ε. This segmentation strategy (akin to that used by some RNA viruses e.g. influenza) could reduce tertiary structures (Doudna et al., 1991; Mutschler et al., 2015) and ease product separation during RNA replication (Szostak, 2012). Starting from ~8 nt RNA primers, t5+1 achieved synthesis of the β+, γ+, and δ+ segments from their constitutive triplets as well as all of the ‘−’ strand segments α-, β-, γ-, δ- and ε-, but required some triplets pre-linked (as e.g. hexa- or nonanucleotides) for synthesis of full-length α+ and ε+ segments (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-v2.jpg)
+
+**Figure 6.:** (A) t5+1-catalysed syntheses of the five catalytic domain ‘+’ and ‘−’ segments via triplet extension of primers (grey) in −7˚C ice. Triplets are coloured by segment and shown alongside the lanes; longer oligonucleotide substrates (faded) were provided for α+ and ε+ syntheses to combat ribozyme-template pairing as shown in Figure 6—figure supplement 2 and Figure 6—figure supplement 3. The triplets were supplied at 5 μM (α+ to ε+), 10 μM (β− to ε−), or 20 μM (α−) each, with 0.5 μM primer/template (P/T; 1 μM for Fβ6/Tβ) and oligonucleotides equimolar to template sites. Use of substrates of more heterogenous compositions and lengths is shown in Figure 6—figure supplement 4 and Figure 6—figure supplement 5, respectively. Densitometry gave yields of full-length products (boxed, by % of total primer), and a geometric mean of the final extents of ligation across all 70 junctions in this self-synthesis context (78%). These segment sequences derive from t5b, a t5 variant with a neutral signature mutation (Supplementary file 1). (B) Secondary structure representation of a t5 catalytic domain (αβ+/γδε+, t5b sequence), formed via non-covalent assembly of t5+1-synthesised ‘+’ strand fragments in Figure 6—figure supplement 1, coloured by segment and synthesis substrate as in (A). (C) Activity of ribozyme-synthesised αβ+/γδε+ (B), compared to protein-synthesised αβ+/γδε+ and full-length t5b equivalents. These were assayed for synthesis of a δ- strand segment on a ribozyme-synthesised δ+ template, with added in vitro transcribed type 1 (2 μM each Rz, 5 μM triplets, 0.5 μM P/T, −7˚C 0.25× ice 10 days). The ribozyme-synthesized and assembled αβ+/γδε+ ribozyme is as active as in vitro transcribed equivalents, and can efficiently utilize ribozyme-synthesized RNA (δ+) as a template.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Top, conditions and yields for self-synthesis and assembly of the catalytic t5 domain (as αβ+ and γδε+ fragments, Figure 6b) by t5+1. To obtain maximal amounts of fully synthesized and assembled t5b ribozyme for activity testing (Figure 6c), we implemented t5 ‘+’ strand synthesis using sequence-specified triplet substrates for segment syntheses (as shown). The synthesis scale corresponds to the limiting component present. *: Unlike other segment ligation steps, the δε ligation was carried out using freeze-thaw cycling (Mutschler et al., 2015) (2.5 hr at −30˚C, 21 hr at −7˚C, then 0.5 hr at 37˚C), which modestly improved yield. Below, scheme of t5+1-catalysed t5 synthesis and assembly reactions. PAGE separations of syntheses (xt) alongside purified reference segments and fragments (in bold) were stained with SYBR Gold to quantify boxed full-length products. These were excised for use in subsequent assembly steps (illustrated by dashed black arrows). Synthetic schemes of colour-coded segments are shown beside corresponding lanes, denoting ‘+’ strand synthesis (bold primer and dashes) on ‘–’ strand template. Fully synthesized segments are shown as bold lines. Assembly reactions involve use of fully synthesized segments as the final substrate in a primer extension reaction (α + β, γ + δε) or direct templated ligation of synthesized segments (δ + ε). The αβ+ and γδε+ fragments associate spontaneously to form an active triplet polymerase ribozyme (Figure 6b), tested for activity in Figure 6c. The synthesised segment sequences were derived from the t5b variant of t5, which differs by one neutral signature mutation from t5 in the α segment, and by another neutral signature mutation from t5a in the ε segment (mutations highlighted in Supplementary file 1); these neutral mutations, not present in the t5 and t5a used to synthesise the segments (above), allowed verification of the synthetic origin of the product fragments by sequencing, which revealed the correct signature mutations in each fragment ruling out contamination of the synthesized ‘+’ strand products by the synthesizing (‘+’ strand) triplet polymerase ribozyme.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Longer oligonucleotide substrates are required to maximise synthesis of full-length ε+ segment (0.5 µM Fε9 primer/Tε template/oligonucleotide substrate and 5 µM each triplet (left, omitted where equivalent oligonucleotide substrate was present), 13 days in −7˚C ice). Replacing two triplets with a preformed hexanucleotide substrate (pppUGAAUG) boosts full-length ε+ product synthesis by t5+1 (left panel), but not by the type 6s+1 ribozyme - with a different accessory domain (see Figure 2—figure supplement 1, sequence in Supplementary file 1) - which synthesizes ε+ independent of this hexanucleotide (right panel, allowing some full-length ε+ synthesis with only triplets). This likely reflects unfavourable competition between the t5 ribozyme’s own ε+ domain and triplet substrates for complementary pairing to the ε- RNA used as template. Consistent with this hypothesis, increasing t5+1 concentrations with this template is counterproductive (middle panel). For both ribozymes, using a preformed nonanucleotide substrate pppUUUUUCAUG at the end of the template boosted full-length product over use of a pppUUCAUG hexanucleotide +pppUUU triplet, or just the three constituent triplets (S = 9 vs. 6/3 vs. 3/3/3); this is not due to the individual triplet sequences as t5+1 can efficiently incorporate both pppUUU and pppUUC (see Figure 5b, Figure 6a). (B) Doubling triplet concentrations to 10 µM can attenuate t5+1’s requirement for the pppUGAAUG hexanucleotide substrate during ε+ synthesis. This suggests that at higher triplet concentrations they successfully compete with this part of t5 for ε- template hybridisation (0.5 µM Fε9 primer/Tε template/longer oligonucleotide substrates, 13 days in −7˚C ice). With a fourfold excess of primer/template duplex and substrates (right lane), the amount of full-length segment generated exceeds the ribozyme added, evidence of multiple turnover of full-length ε+ product.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Left, δ+ synthesis using 5 μM of each complementary triplet substrate (−hex) or 1 μM of pppUGACAU (+hex) replacing the final two triplets (0.25 μM primer Fδ7/template HTδ, 0.5 μM each ribozyme, 6 days in −7˚C ice). Type 5 with the initially isolated ε domain (type 5s) needs hexamer substrate for δ+ synthesis, but with the reselected ε domain (t5a) does not. See Supplementary file 1 for ribozyme sequences. Right, model of substrate/ribozyme competition for template binding. The region at the end of the δ segment exhibits irregular pairing in the initially isolated ε domain (above), and appears vulnerable to δ- template pairing during δ synthesis with triplet substrates. Reselection strengthened base-pairing in the corresponding ε domain stem (below), replacing a G-U wobble with a cognate G-C pair and a U.U mispair with a cognate U-A pair, stabilizing the δ - ε domain junction and potentially reducing competition with triplets during δ segment synthesis.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** For maximum self-synthesis yield, we had used specific triplet substrate sets. Here we compare synthesis by 0.5 µM t5+1 of the five t5 ‘+’ segments (30 days in −7˚C ice) using specific triplets vs. random triplet pools or reduced G-content random triplet pools. Reactions included 5 µM of each triplet in specific triplet sets (‘tri’, as in Figure 6a ‘+’ syntheses), random pppNNN, or a low-G pppNNN. The low-G pppNNN had the same overall triplet concentration as pppNNN, but individual triplets were five-fold less common for each constituent G (~10/2/0.4/0.08 µM for 0/1/2/3 Gs per triplet; some primer/template (P/T) concentrations were reduced here to ensure excess substrate over template). Synthesis is compared with and without some longer oligonucleotide substrates (indicated below, equimolar to template sites, replacing the corresponding triplets in ‘tri’ substrate mixes). Importantly, for all ‘+’ strand segments, full-length products are generated using pppNNN with yields approaching those obtained when using specific triplets (calculated by densitometry, above the gel); intriguingly the low-G pppNNN pools often gave superior yields, possibly helped by the higher concentrations of weaker-binding AU-rich triplets therein.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** δ+ (left) or γ+ (right) syntheses were performed (using 0.5 µM each of t5+1 and the primer/templates above, 15 days in −7˚C ice) with their constitutive triplet sets alone (*, see Figure 6a) or the random-sequence substrate mixes indicated. Introduction of dinucleotide and mononucleotide substrates (pppNN, pppN i.e. NTPs) decreases full-length product band intensity but not ligations performed (here quantified whilst assuming each extension product was formed from the fewest substrates possible), with increasing numbers of extension products deviating from the starting triplet register. Dinucleotides and mononucleotides appear poor substrates in the absence of triplets.
 
 Operating across 70 distinct ligation junctions in these reactions including AU-rich sequences, t5+1demonstrates the sequence generality for self-synthesis using triplet substrates. Notably, the average extent of ligation per junction during synthesis of t5 ‘+’ and ‘−’ strands (78%) was similar to that observed when t5+1 used an unstructured model template (74%, Figure 3c) upon which the parental Z and other RPRs excel (Attwater et al., 2013b; Horning and Joyce, 2016).
 
 At this point, we tested whether the broad oligonucleotide ligation capacity of t5+1 (Figure 3c) might allow assembly of synthesised ‘+’ strand segments. Indeed, t5+1 could assemble these into αβ+ and γδε+ fragments, guided only by partially overlapping ‘−’ strands (Figure 6b, Figure 6—figure supplement 1). Through non-covalent association (Vaish et al., 2003; Mutschler et al., 2015), the ribozyme-synthesised αβ+ and γδε+ fragments spontaneously reconstituted a new catalytically active triplet polymerase ribozyme (with in vitro transcribed type 1 RNA). We found that this synthesis product could regenerate fresh δ- segment using t5+1 ribozyme-synthesised δ+ (left over from ribozyme assembly) as a template (Figure 6c), recapitulating elements of a self-replication cycle. However, while the t5+1 ribozyme displays a nascent capacity for templated synthesis of its own catalytic domain ‘+’ strands (and ‘−’ strands), efficiency of both segment synthesis and assembly will need to be increased significantly to realise a full self-replication cycle (which would also require synthesis and replication of the type 1 subunit).
 
-## Primer-free RNA synthesis
+### Primer-free RNA synthesis
 
 Templated ‘+’ strand self-synthesis is a central element of ribozyme self-replication. However, a limitation of our above strategy in the context of triplet-based self-replication is the continued requirement for some pre-synthesized longer oligonucleotides to act as primers and occasional substrates (together providing here the equivalent of ~25% of triplet junctions pre-ligated). In particular, some specific oligonucleotide substrates were required for efficient synthesis of α+ and ε+ segments to compete out inhibitory mutual hybridisation between ‘−’ strand template and corresponding ‘+’ strand unstructured elements in the t5 ribozyme (Figure 6—figure supplement 2). In vitro selections that stabilise the ribozyme tertiary structure (Figure 6—figure supplement 3) may contribute to attenuating this requirement. Additionally, more concentrated triplet substrates can successfully compete with ribozyme unstructured elements for hybridization to ‘−’ strand templates (Figure 6—figure supplement 2).
 
@@ -78,7 +158,7 @@ Unexpectedly, triplet substrates provide a route to bypass the ‘primer problem
 
 Thus, the capacity of triplet substrates to pre-organise themselves on a template not only enables replication of structured templates but also allows complete copying of some RNA sequences exclusively from triplet building blocks, suggesting an alternative to the canonical end-primed replication strategies inspired by PCR. Such a ribozyme operating in a more distributive polymerisation mode might be able to replicate RNA sequences directly from the putative pools of short random RNA oligonucleotides furnished by prebiotic chemistry.
 
-## Fidelity of triplet-based RNA synthesis
+### Fidelity of triplet-based RNA synthesis
 
 Next, we investigated the consequences of using analogues of such prebiotic pools as a source of substrates for the t5+1 triplet polymerase ribozyme. Random sequence triplet pools (‘pppNNN’, comprising equimolar amounts of all 64 triplets) could be used as substrates by t5+1 in segment syntheses in place of defined triplet sets (Figure 6—figure supplement 4). Furthermore, extension activity remained robust upon pool supplementation with noncanonical dinucleotide and mononucleotide substrates (Figure 6—figure supplement 5).
 
@@ -86,17 +166,145 @@ However, a replicase must incorporate the correct template-complementary substra
 
 In order to assess the fidelity of triplet polymerase ribozymes of widely differing activity, we identified the triplets incorporated from random pppNNN triplet pools using 12 different compositionally representative N′N′N′ triplet sequences as templates. These were examined in a consistent sequence context (5’-GGG-N′N′N′-GGG-3’) and collated, which allowed an estimation of ribozyme misincorporation tendencies. On average, the starting Zcore ribozyme exhibited ~91% fidelity per position (Figure 8a), lower than that described for RPRs (92% – 97% [Attwater et al., 2013b; Horning and Joyce, 2016]). Furthermore, its accuracy exhibited a pronounced downward gradient from the first (5’) to the third (3’) triplet position, highlighting escalating risks to fidelity of synthesis founded on longer building blocks.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig8-v2.jpg)
+
+**Figure 8.:** (A) To estimate its fidelity, each ribozyme was provided with an equimolar mix of all 64 triplet substrates (pppNNN at 5 μM each) for primer extension using templates containing twelve representative trinucleotide sequences (N′N′N′). Deep sequencing of extension products identified the triplets added opposite each template trinucleotide, yielding position-specific error tendencies; the overall fidelity was calculated as a geometric mean of positional errors at each triplet position (n and s.d. of this value shown for ribozymes assayed multiple times, see Figure 8—source data 1 for analysis of collated errors). The triplet polymerases exhibit diverse fidelity profiles; fidelity profiles of other type 5 variants are shown in Figure 8—figure supplement 1. (B) Collation of error rates by base type and position for type 5 with (t5+1) and without (αβγδ+1) the ε fidelity domain. Positional and overall fidelities are calculated as geometric means (see Figure 8—source data 1); individual positional fidelities are plotted in Figure 8—figure supplement 2. (C) Schematic summary of effects of triplet minor groove modification upon the fidelity phenotype. In the depicted trinucleotide RNA duplex segment, spheres represent minor groove groups potentially available for hydrogen bonding in a sequence-general manner. For three of these groups (highlighted in black), we assayed whether their modification in substrates (2’F = 2’ fluoro, 2S = 2-thio) affected the fidelity domain’s mismatch discrimination capabilities (detailed in Figure 8—figure supplement 3, with data and calculations in Figure 8—source data 2). These groups are labelled with the fraction of fidelity phenotype retained (ϕ) when discriminating between the indicated modified substrates. Colour reflects the impact of that group’s modification upon the fidelity phenotype, with red denoting a strong disruptive effect, and yellow weak or negligible effects.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Positional error rates and fidelities (determined as in Figure 8a) for type 5 ribozyme variants; the overall fidelity was calculated as a geometric mean of positional errors at each triplet position (n and s.d. of this value shown for ribozymes assayed multiple times, see Figure 8—source data 1). Fidelity of the initial type 5 isolate (tethered to the assay templates) is modestly improved in the absence of type 1. However, with type 1, fidelity is improved when operating fully in trans (type5s +1). Reselection and stabilisation of the ε domain yields a further fidelity improvement (t5+1) but ε truncation (αβγδ+1) reverts the pattern of error tendencies along the triplet towards that of the starting core. See Supplementary file 1 for ribozyme sequences.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** At each position in each of the twelve triplet templates (top) tested in the fidelity assay (Figure 8a), three different errors are possible after analysis of sequence composition of added triplets (see Figure 8—source data 1). Errors are represented by discs, coloured by mutation (e.g. A to G: green; A to C: blue; G to C: blue). Disc size is proportional to error frequency without the fidelity domain (its occurrence using αβγδ+1). The effect of the ε fidelity domain upon these error tendencies is plotted on the y-axis (by comparison of error rates between t5+1 and αβγδ+1). Many of the most significant errors (using αβγδ+1) exhibit the greatest proportional reductions with the fidelity domain, including substantial (>10 fold) reductions in several misincorporations at the third position. Improvements in fidelity are variable but focused on the second and third triplet positions, while the first triplet position shows an increase specifically in A to G mutations, indicative of a tolerance for G-U wobble pairing.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Top: framework for estimation of residual fidelity phenotype (ϕ). Shown are model logistic curves for incorporation of a triplet, for example GAU (at a fixed concentration, opposite 3’-AUC-5’), versus increasing concentrations of a mismatching triplet, for example GGU. A ribozyme ‘+’ with a fidelity function (e.g. t5a, blue curve) will incorporate equal amounts of the matched and mismatched triplets at a different concentration of the mismatched triplet compared to a ribozyme ‘−’ without a fidelity function (e.g. αβγδ, red curve). x+ and x− represent the lns of these concentrations for + and −; their separation (x+ - x−) is a proxy for the strength of the ‘+’ fidelity phenotype. We measured the relative incorporation (W) of triplet pairs by the two triplet polymerases at test concentrations (t) of mismatched triplet, chosen to maximise the difference in the ribozymes’ resulting fractional incorporations (marked by a blue dot vs. a red dot on respective curves). If a triplet modification (*, right) interferes with mismatch discrimination by ‘+’, it would shift the ‘+’ relative incorporation curve (blue) towards that of ‘−’ (red), reducing the difference in fractional incorporation. Assuming curve steepness (k) remains constant, the residual phenotype (ϕ) for that modification is described by the new separation (x+* - x−*) as a proportion of the original separation (x+ - x−); numerical values and calculations from the measurements described below are supplied in Figure 8—source data 2. Middle: measurements of ratios of incorporation vs. misincorporation (W) for unmodified and modified triplet pairs (at the indicated test concentrations) by the t5a +1 triplet polymerase compared to the ε fidelity domain-truncated αβγδ+1 (at 0.5 μM each). The expected triplet additions are in grey along the left of each gel; the average W from n independent experiments, calculated via densitometry of products containing slower-migrating G misincorporations, is shown below each lane along with the average ϕ. Primers (P), templates (T) and additional triplets were at 0.5/0.5/5 μM, incubated for three days in −7˚C ice. Left: presence of a 2-thiouracil (2SU) at the third position of the triplet abolishes the fidelity domain’s ability to discriminate against a second position wobble pair (P: A10, T: CCCMisGAU, +5 μM pppCCC). Centre-left: the same third position modification (2SU) also abolished the fidelity domain’s preference for G misincorporation at the first position (P: Fγ7, T: TγAGU, +5 μM HOCUG). Centre-right: in contrast, a 2SU at the first position of the triplet exerted no clear influence upon third position wobble discrimination (P: A10, T: CCCMisUGA, +5 μM pppCCC). Right: replacement of a 2’ hydroxyl group with a 2’ fluoro (2’F) at the first triplet position likewise had no effect upon third position mismatch discrimination (P: Fγ7, T: TγAGU, +5 μM HOCUG). Below: Measurement of fidelity phenotype in the presence or absence of a downstream triplet. Residual phenotypes indicate attenuation or abolishment of third position (left panel, P Fγ7, T TγAGU), second position (middle panel, P Fγ7, T TγGAU), and third position (right panel, P Fγ7, T TγAGU) fidelity effects from downstream triplet absence. No effects are seen (upon third position discrimination) from the presence or absence of a 5’ triphosphate on the downstream triplet (ϕppp). In the absence of a triplet bound downstream on the template, the fidelity phenotype is severely compromised, suggesting this adjacent triplet:template duplex plays a critical role in positioning the fidelity domain relative to the incoming triplet.
+
 To investigate if ribozymes could exhibit higher triplet incorporation fidelity, we had included a persistent adaptive pressure for fidelity during in vitro evolution, spiking in an excess of mispairing 3’-deoxy ‘terminator’ triplets from round nine onwards, precluding recovery of ribozymes that incorporated these mispairs (Figure 2—source data 1, Figure 4—source data 1, Figure 2—figure supplement 2). This yielded reshaped and improved fidelity profiles in the ‘surviving’ type 2–6 ribozymes (Figure 8a). Notably, the final t5+1 ribozyme achieves an average positional fidelity of 97.4% using pppNNN in this sequence context, higher than the best RPR fidelity with NTPs under comparable eutectic conditions (Attwater et al., 2013b). Deep sequencing of internal triplet positions of a defined sequence (β+ segment) synthesised by t5+1 using pppNNN indicated similar aggregate fidelity could be achieved during longer product synthesis excluding the final triplet (Table 1).
 
-## Molecular basis of triplet polymerase ribozyme fidelity
+**Table 1.**
+ Sequencing of ribozyme-synthesised β+ segment.Shown are the individual base fidelities (%) along the β+ sequences (top) synthesised by t5+1, using the six specific triplets (tri), or random (pppNNN) or compositionally-biased random (low-G pppNNN, see Figure 6—figure supplement 4) substrate pools, from Fβ6 primer (the first six positions at the left) with template Tβ (1 μM each RNA, 13 days −7˚C ice). For their sequencing, extension products were eluted from templates, and full-length products were gel-purified, ligated to adaptor, reverse-transcribed and PCR amplified. For compositional analysis, a small percentage of unrelated amplified products were excluded (those with >9 mutations vs. the expected β+ sequence; similar levels were excluded if a > 6 mutation threshold was applied, 0.2%/0.2–3.7%/4.2% and 3.7%/3.8% for tri & pppNNN and low-G pppNNN). These sequences mostly appeared to derive from off-target priming and extension of Fβ6 on the ribozyme in the presence of pppNNN. The sequencing of products generated from specific triplets provides an estimate of background error arising from amplification and sequencing. The final triplet constitutes an error hot-spot - likely to mutate to a more mutationally stable triplet during self-replication - exacerbated in pppNNN samples by the inability of the fidelity domain to operate in the absence of a downstream triplet (Figure 8—figure supplement 3). The geometric average of internal triplet position fidelities is used to gauge overall t5+1 fidelity during RNA synthesis. While overall fidelity drops from defined to random triplets (98.8 to 96.7%), much of this loss in fidelity can be recovered by adjusting the triplet composition to a low-G random pool, where reductions in G-U wobble pairing more than compensate for increases in rarer misincorporations opposite template C.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>G</th>
+      <th>C</th>
+      <th>C</th>
+      <th>A</th>
+      <th>U</th>
+      <th>C</th>
+      <th>A</th>
+      <th>A</th>
+      <th>A</th>
+      <th>G</th>
+      <th>C</th>
+      <th>U</th>
+      <th>U</th>
+      <th>G</th>
+      <th>A</th>
+      <th>G</th>
+      <th>A</th>
+      <th>G</th>
+      <th>C</th>
+      <th>A</th>
+      <th>U</th>
+      <th>C</th>
+      <th>U</th>
+      <th>U</th>
+      <th>Internal triplets’ average:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">10 μM each tri:</td>
+      <td>93.3</td>
+      <td>99.4</td>
+      <td>99.5</td>
+      <td>97.8</td>
+      <td>99.8</td>
+      <td>99.4</td>
+      <td>99.6</td>
+      <td>97.9</td>
+      <td>99.1</td>
+      <td>99.3</td>
+      <td>99.5</td>
+      <td>99.1</td>
+      <td>99.8</td>
+      <td>98.9</td>
+      <td>99.5</td>
+      <td>98.2</td>
+      <td>96.0</td>
+      <td>96.3</td>
+      <td>98.79</td>
+    </tr>
+    <tr>
+      <td colspan="6">10 μM each PPPNNN:</td>
+      <td>92.8</td>
+      <td>97.0</td>
+      <td>98.8</td>
+      <td>99.2</td>
+      <td>99.5</td>
+      <td>99.3</td>
+      <td>99.1</td>
+      <td>97.8</td>
+      <td>98.6</td>
+      <td>99.4</td>
+      <td>99.1</td>
+      <td>98.7</td>
+      <td>94.3</td>
+      <td>81.4</td>
+      <td>96.6</td>
+      <td>97.4</td>
+      <td>59.8</td>
+      <td>42.3</td>
+      <td>96.65</td>
+    </tr>
+    <tr>
+      <td colspan="6">10 μM average, low-G PPPNNN:</td>
+      <td>97.3</td>
+      <td>98.2</td>
+      <td>99.5</td>
+      <td>97.3</td>
+      <td>99.7</td>
+      <td>99.4</td>
+      <td>99.6</td>
+      <td>97.8</td>
+      <td>99.0</td>
+      <td>99.3</td>
+      <td>98.9</td>
+      <td>98.8</td>
+      <td>97.6</td>
+      <td>97.3</td>
+      <td>98.8</td>
+      <td>97.4</td>
+      <td>73.2</td>
+      <td>43.2</td>
+      <td>98.56</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular basis of triplet polymerase ribozyme fidelity
 
 Having established that accurate triplet-based copying is possible (in at least some sequence contexts), we sought to understand how the triplet polymerase ribozyme achieves it. Investigating the fidelity contributions of different t5+1 ribozyme components, we found that the type 1 RNA cofactor did not contribute; rather, fidelity gains appeared to be mediated by the newly-evolved t5 ‘ε’ 3’-domain, as its deletion (yielding the truncated ‘αβγδ’ ribozyme) reverted the fidelity profile towards that of Zcore (Figure 8—figure supplement 1). Presence of the ε domain did not uniformly increase fidelity, but selectively reduced the most acute errors at the second and third triplet positions (with over 10-fold reductions for some errors, Figure 8b, Figure 8—figure supplement 2). Overall error rates at the second and third triplet positions were reduced by 4-fold and 9-fold compared to Zcore (Figure 8a), though increased (1.3-fold) at the first triplet position due to a localised asymmetric tolerance of G:U wobble pairing (Figure 8b). The ε domain fidelity function is contingent upon the presence of a downstream triplet, operating only with basal fidelity for final triplet incorporation (Figure 8—figure supplement 3).
 
 Dissecting the molecular determinants of the fidelity phenotype, we found that using triplet substrates modified at the third position with a 2-thiouracil in place of a uracil (disrupting minor groove hydrogen bonding capabilities) rendered the ε fidelity domain unable to discriminate mismatches (Figure 8c, Figure 8—figure supplement 3). Previously, a similar replacement of a uracil 2-keto group with a 2-thio modification had been shown to impair Z RPR activity when present upstream in the primer/template region (Attwater et al., 2013a), where Z is thought to rely upon sequence-general minor groove contacts through an ‘A-minor’ motif (Shechner et al., 2009). Modification at the third triplet position reverts ε’s divergent effects on fidelity at the adjacent second and the distal first triplet positions (Figure 8—figure supplement 3); disruption of this minor groove contact site thus abolishes overall ε fidelity domain operation. ε sensitivity to minor groove composition may be critical to its recognition of cognate Watson-Crick base pairs, reminiscent of Tetrahymena group I intron folding (Battle and Doudna, 2002) and the decoding centre of the ribosome (which also tolerates wobble pairing at the analogous (5’) triplet position) (Ogle et al., 2001).
 
-## Systems-level properties of triplet pools
+### Systems-level properties of triplet pools
 
 An important contribution to triplet fidelity also appears to arise from unexpected behaviours of the triplet substrates themselves. We observed that in some direct pair-mispair triplet contests, inclusion of their complementary triplets caused a striking (~3 fold) drop in misincorporation errors (Figure 9). A potential explanation may arise from differential formation of triplet:anti-triplet dimers in the reaction: for example, more extensive pppGCC:pppGGC (than pppACC:pppGGU) dimer formation would selectively reduce the effective concentration of free pppGCC vs. pppACC upon inclusion of their complementary pppGGC and pppGGU.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig9-v2.jpg)
+
+**Figure 9.:** Applying the fidelity assay (Figure 8a, using t5+1) to single templates with only an encoded triplet and a mispairing one as substrates (at 5 μM each), we observed that relative mispair incorporation was proportionally reduced (by 61% (left) and 73% (right)) upon introduction of complementary triplets. Using all 64 triplets (pppNNN) has an analogous effect upon these pair/mispair comparisons with fidelity progressively improved upon increasing overall pppNNN concentrations, with examples of effects on other triplets and overall fidelity presented in Figure 9—figure supplement 1, and comprehensive error rates and ratios in Figure 9—source data 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/35255/elife-35255-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Left: 0.2 µM t5+1 was tested in the fidelity assay at a series of pppNNN concentrations. The observed overall error rate (black circles) in these reactions halved as pppNNN concentrations were increased to 7 µM each (after which extension activity began to reduce and error rates increase). Diverse patterns were observed in the concentration dependence of individual triplet positional errors, of which a selection are displayed here (×) coloured according to whether they raise (red-yellow) or lower (blue) the GC content of the expected triplet, and coloured more intensely for higher GC content triplets. Right: For a broader set of errors with 0.5 µM t5+1 (those with >0.3% incidence at 5 µM pppNNN, x-axes) the changes in their incidences from raising concentrations of each pppNNN from 2 to 10 µM substrate are plotted on the y-axes. The frequencies of several mutations that increase triplet GC content in GC-rich triplets are reduced at 10 µM pppNNN concentrations (top panel). Conversely, the frequencies of some mutations that reduce GC content are increased at 10 µM pppNNN concentrations (bottom panel); these suggest relative depletion of available GC rich triplets as overall triplet concentrations rise. Such pool behaviour can explain the reduction of overall error rates in ~5 µM pppNNN triplet pools, as misincorporations that increase GC content (e.g. G opposite U) are responsible for more errors than those that decrease it (bottom left). Values and ratios for a wider range of errors are supplied in Figure 9—source data 1.
 
 These pairwise reductions were recapitulated in the presence of random pppNNN substrate pools (Figure 9). Indeed, counterintuitively, raising pppNNN concentrations from 0.5 to 5 μM each almost halved the overall error rate (Figure 9—figure supplement 1). Although diverse effects upon individual misincorporations were observed, this fidelity enhancement was driven by pronounced reductions in errors where the mismatched triplet has a high GC content compared to the cognate triplet, including common G-U wobble mispairs (Figure 9—figure supplement 1). Dimer formation among pppNNN substrate pools would be expected to selectively buffer the free concentrations of the more strongly-pairing GC-rich triplets, which could promote both fidelity and sequence generality through normalization of triplet availability against template (and complementary triplet) binding strength.
 
@@ -120,7 +328,7 @@ In conclusion, the unexpected emergent properties of triplets – including coop
 
 ## Materials and methods
 
-## Templated RNA-catalysed RNA synthesis
+### Templated RNA-catalysed RNA synthesis
 
 Standard ribozyme activity assays (modified where specified) comprise 5 pmol of each ribozyme annealed in 2.5 μl water (80˚C 2 min, 17˚C 10 min), with 2 μl of 1 M MgCl2 and 0.5 μl of 1 M tris•HCl pH 8.3 (at 25˚C, pH raised to 9.2 at −7˚C) then added on ice, and left for >5 min to ensure folding. This was added to 5 pmol each of primer and template and 50 pmol of each triplet pre-annealed in 5 μl water, then frozen on dry ice (10 min) and incubated at −7˚C in a R4 series TC120 refrigerated cooling bath (Grant (Shepreth, UK)) to allow eutectic phase formation and reaction.
 
@@ -130,7 +338,7 @@ Some substrate mixes (e.g. pppNNN) led to a higher final reaction volume, but eu
 
 Figure 1c extensions were set up by adding buffer, then RNAs (preannealed together, 0.1 μM final concentrations) to triplets. RNAs for ε+ syntheses were chilled on ice instead of annealing, with ribozyme/MgCl2/tris•HCl pH 8.3 mixed with the other RNAs at −7˚C. Oligonucleotide substrates were added equimolar to template binding sites in the primer/template/substrate anneal. NTPs, on the other hand, were added with the MgCl2/tris•HCl pH 8.3 to the ribozyme polymerase.
 
-## Extension product separation
+### Extension product separation
 
 At the end of standard incubations, reactions were thawed and 2 μl aliquots added to stop buffer (1 μl 0.44 M EDTA (pH 7.4), with urea to a 6 M final concentration and a 10–20 fold molar excess over template of complementary competing oligonucleotide (see Supplementary file 3) to prevent long product/template reannealing). Samples were denatured (94˚C 5 min) and RNAs separated by 8 M urea 1 × TBE denaturing PAGE.
 
@@ -138,7 +346,7 @@ To avoid using potentially confounding competing oligonucleotide when purifying 
 
 For gel mobility shift assays (Figure 3b), ribozymes were mixed at 0.5 μM, pre-annealed and buffer added on ice as for extension reactions, then mixed with 5 × loading buffer (50% glycerol, 250 mM tris•HCl pH 8.3, 125 mM MgCl2) for separation by native PAGE (0.5 × TB, 8% 59:1 acrylamide:bisacrylamide, 25 mM MgCl2, run in a Hoefer SE600 Chroma (ThermoFisher, Waltham, USA) (upper chamber: 0.5 × TB 50 mM NaOAc, lower chamber: 0.5 × TB 25 mM Mg(OAc)2) kept at 4˚C in a circulator bath for 6–8 hr at 10 W), then SYBR Gold stained as below.
 
-## Extension product detection, quantification and purification
+### Extension product detection, quantification and purification
 
 Fluorescent primer extension products were detected using the appropriate laser wavelength on a Typhoon Trio scanner (GE Healthcare (GE) (Chicago, USA)); gel densitometry allowed quantification of RNA synthesis efficiency. Gel contrasts in figures were linearly adjusted to optimize display of bands of differing intensities.
 
@@ -146,11 +354,11 @@ The gel in Figure 5b (middle panel) was washed thrice (5 min) in water, incubate
 
 Full-length product yields in the Figure 6—figure supplement 1 plus-strand syntheses were calculated by running samples of bead-eluted products (or raw reaction for δε+) alongside known amounts of the positive controls indicated, followed by SYBR-Gold staining. To purify, bead-eluted products were run similarly, and excised using UV shadowing. Products were then eluted from the gel fragments in 10 mM tris•HCl pH 7.4, and Spin-X column filtrate (Costar (Sigma-Aldrich, UK)) precipitated in 75% ethanol with 1 μl 1% glycogen carrier (omitted for β+). Recovered full-length product yields were calculated similarly to reaction yields for αβ+/δε+/γδε+, or using A260s for β+, δ+, ε+.
 
-## Fragment sequencing
+### Fragment sequencing
 
 Purified ribozyme- and TGK-synthesized αβ+/γδε+ fragments were sequenced by first ligating a 3’ adaptor (10 U/μl T4 RNA Ligase 2 truncated KQ in 1 × RNA ligase buffer (New England Biolabs (NEB), (Ipswich, USA)) with 15% PEG-8000 and 2 μM AdeHDVLig at 10˚C overnight). These reactions were bound to MyOne C1 microbeads (ThermoFisher (Invitrogen)), washed with BB to remove unligated adaptor, and reverse transcribed (50˚C 30 min) with 1 μM HDVrec primer using Superscript III (Invitrogen). Beads were washed again then PCR amplified (five cycles with a 40˚C annealing step, then 20 cycles with a 50˚C annealing step) using GoTaq HotStart master mix (Promega (Madison, USA)) and 0.8 μM each of primers P3HDV, and P5Xα8 or P5Xγ7, for high-throughput sequencing (Illumina (San Diego, USA) MiSeq or HiSeq) after PCR product agarose gel purification. β+ syntheses’ cDNAs were amplified with P3HDV and P5Xβ6.
 
-## Fidelity assay
+### Fidelity assay
 
 To estimate RNA synthesis fidelity, ribozymes extended primers using pppNNN on templates encoding CCC-XXX-CCC, where XXX were 12 different triplet sequences evenly exploring base composition and distribution (see Supplementary file 3; for XXX = ACC, template encodes CCC-ACC-UCC to avoid a terminal run of Gs).
 
@@ -164,7 +372,7 @@ After processing and 3’ adaptor trimming, sequences corresponding to primer ex
 
 For each template, counts were then collated at the first/second/third positions to yield base-specific mutation rates for each position (Figure 8—figure supplement 2, Figure 8—source data 1). Across the 12 triplets, A, C, G, and U were encoded at each position three times; linear averages were calculated to map the position’s error profile (Figure 8b) and geometric means of the four nucleobases yielded the position’s overall fidelity (Figure 8a, Figure 8—figure supplement 1).
 
-## Triphosphorylated triplet synthesis
+### Triphosphorylated triplet synthesis
 
 Triplets (and some other short oligonucleotides) were prepared from NTPs by T7 RNA polymerase run-off transcription of a 5’ single-stranded DNA overhang downstream of a DNA duplex T7 promoter sequence. In most cases, the 5’ overhang encoded (was the reverse complement of) the desired oligonucleotide. These oligonucleotides were short enough to synthesise during the abortive initiation stage of transcription, attenuating sequence constraints on the first bases of the transcript. However, T7 RNA polymerase exhibited tendencies to skip the first (or even second) base (most severe for U > C > A > G before second position purines: encoding CGU yielded some pppGU, encoding UAC yielded just pppAC) or use oligonucleotides generated during transcription to re-initiate (e.g. encoding GAG yielded pppGAGAG, encoding AAA yielded pppA6-9, encoding UCC yielded pppCCC, encoding CGC yielded some pppGCGC; this tendency was most severe when the oligonucleotide could be accommodated opposite the final template bases of the promoter).
 
@@ -176,7 +384,7 @@ Each 30 μl transcription reaction contained 72 nmol of each desired product bas
 
 Longer triphosphorylated oligonucleotides used in ribozyme self-synthesis were generated similarly, but using ~200 ng of fully double stranded DNA as a template. Candidate product bands were purified and the desired oligonucleotide identified by ribozyme-catalysed in-frame incorporation and, for some, fragment sequencing.
 
-## RNA oligonucleotide/ribozyme preparation
+### RNA oligonucleotide/ribozyme preparation
 
 Transcriptions were performed on ~15 ng/μl dsDNA using MegaShortScript enzyme and buffer (ThermoFisher) with 7.8 mM of each NTP, or, to yield a 5’ monophosphate on the product to avoid aberrant ligation, 10 mM GMP (guanosine monophosphate) and 2 mM of each NTP (‘GMP transcription’).
 
@@ -186,7 +394,7 @@ Some 5’ biotinylated RNAs were synthesized using the TGK polymerase (Cozens et
 
 3’ biotinylation of RNAs was achieved in two stages: 3’ azidylation (at 2 μM with 25 U/μl yeast poly-A polymerase (ThermoFisher) and 0.5 mM 2’-azido-2’-deoxycytidine triphosphate (Trilink Biotechnologies) for 1 hr at 37˚C) with subsequent acidic phenol/chloroform extraction and 75% ethanol precipitation, then copper-catalysed biotin-(PEG)4-alkyne (ThermoFisher) cycloaddition (Winz et al., 2012) with subsequent 75% ethanol precipitation followed by resuspension and buffer exchange in Ultracel 3K filters (Amicon) to remove residual biotin-alkyne.
 
-## Selection library synthesis
+### Selection library synthesis
 
 Round one libraries were synthesised by mutual extension of 4 nmol of oligonucleotides 1baN30 and 1GMPfo or 1GTPfo at 1 μM each in 1 × isothermal amplification buffer (NEB) with 250 μM each dNTP, annealed (80˚C 3 min, 65˚C 5 min) before addition of 0.4 U/μl Bst 2.0 (NEB) and 30 min 65˚C incubation.
 
@@ -194,7 +402,7 @@ After purification, 375 μg of each DNA (~1.5 × 1015 molecules) were transcri
 
 For round 8, 700 pmol DNA was formed, with Tri3CUUQ amplifying round seven merged output (50 pmol), round seven merged output recombined by StEP (Zhao and Zha, 2006) (200 pmol), and 0core ribozyme with the starting 3’ N30 library domain added (450 pmol, but extinct at the end of selection). DNA encoding type 5s amplified with AACAt5s was used to generate reselection libraries by PCR amplification using primers TriGAA7GAAM and T5ba13N/T5ba20N/T5ba28N; 5 pmol of the three dsDNA products were transcribed to generate reselection constructs.
 
-## In vitro evolution cycle
+### In vitro evolution cycle
 
 An outline of the selection strategy is shown in Figure 1—figure supplement 2, with detailed lists of selection oligonucleotides and extension parameters in Figure 1—source data 1, Figure 2—source data 1, Figure 4—source data 1 and Supplementary file 3. First, selection construct was annealed with equimolar dual-5’ biotinylated primer in water (80˚C 2–4 min, 17˚C 10 min), then chilled extension buffer and triplets were added before freezing and −7˚C incubation.
 

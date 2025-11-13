@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Wolfson Centre for Mathematical Biology, Oxford University Oxford United Kingdom
+1. Wolfson Centre for Mathematical Biology, Oxford University Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 2. Children's Mercy Kansas City Kansas City United States
-3. https://ror.org/04bgfm609 Stowers Institute for Medical Research Kansas City United States
-4. https://ror.org/01an3r305 Swanson School of Engineering, University of Pittsburgh Pittsburgh United States
-5. https://ror.org/001tmjg57 Department of Anatomy and Cell Biology, University of Kansas School of Medicine Kansas City United States
-6. https://ror.org/00mkhxb43 Department of Biological Sciences, University of Notre Dame Notre Dame United States
+3. Stowers Institute for Medical Research Kansas City United States ([ROR:04bgfm609](https://ror.org/04bgfm609))
+4. Swanson School of Engineering, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+5. Department of Anatomy and Cell Biology, University of Kansas School of Medicine Kansas City United States ([ROR:001tmjg57](https://ror.org/001tmjg57))
+6. Department of Biological Sciences, University of Notre Dame Notre Dame United States ([ROR:00mkhxb43](https://ror.org/00mkhxb43))
 
 † Corresponding author
 
@@ -43,21 +43,69 @@ In this paper, we develop an agent-based model (ABM; also known as an individual
 
 ## Results
 
-## FN protein expression within the mesoderm is unorganized and punctate prior to cranial NCC emigration, but filamentous after it has been traversed by leader cells
+### FN protein expression within the mesoderm is unorganized and punctate prior to cranial NCC emigration, but filamentous after it has been traversed by leader cells
 
 We confirmed that FN throughout the head, neck and cardiovascular regions in the chick embryo is distributed in patterns that overlap with NCC migratory pathways (Figure 1; Duband and Thiery, 1982). To assess the in vivo distribution of FN protein at higher spatial resolution, we examined transverse cryosections (Figure 1A; Hamburger and Hamilation, 1951) at developmental stages (HH12–13) midway through cranial NCC migration to reveal that NCCs are in close association with a heterogeneous meshwork of FN (Figure 1B). Punctate FN, not yet fibrils, are found both distal to the invasive NCC migratory front and adjacent to the leader NCC subpopulation (Figure 1C). By contrast, elongated FN fibrils are located behind the leading edge of invasive NCC streams (Figure 1D). FN fibrils proximal to the invasive NCC migratory front did not reveal a preferred directional orientation. Similar punctate FN was also visible in regions outside the NCC migratory pathway, subjacent to the surface ectoderm (Figure 1C).
 
-## Gain- or loss-of-function of FN leads to reduced NCC migration
+![Figure 1.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of a typical neural crest cell (NCC) migratory stream in the vertebrate head of the chick embryo, at developmental stage HH12–13 (Hamburger and Hamilation, 1951) at the axial level of the second branchial arch (ba2). (B) Transverse section through the NCC migratory stream at the axial level of rhombomere 4 (r4) triple-labeled for FN (green), nuclei (DAPI-blue) and migrating NCCs (HNK1-red). NCCs migrate subjacent to the surface ectoderm after emerging from the dorsal neural tube (NT). The arrowhead points to the surface ectoderm. The yellow boxes highlight the tissue subregions that contain the leader NCCs (box 1) and are distal to the leader NCCs (box 2), marking distinct shapes of the FN in each box with an asterisk (box 1) and open circle (box 2). (C) FN only. (D) The fibrous (box 1-asterisk) and punctate (box 2-open circle) appearance of FN in the NCC microenvironment. (E) NCC distance migrated in FN morpholino-injected embryos and (F) percentage area of the NCC migratory stream after microinjection of soluble FN into the r4 paraxial mesoderm prior to NCC emigration. NT = neural tube. The scale bars are 50 µm (B–C) and 10 µm (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Control fluorescein morpholino (MO; green) co-injected with H2B-mCherry (red) at HH8 into the cranial dorsal neural tube, harvested and stained 24 hr later with HNK-1 (blue) to label all migrating neural crest cells. (B) Control-MO and H2B-mCherry. Dashed line shows entire rhombomere 4 (r4) structure. (C) Fibronectin-1 (FN1) morpholino (green) co-injected with H2B-mCherry (red) and stained with HNK-1 (blue) antibody as above. (D) FN1-MO and H2B-mCherry. Dashed line shows entire r4 structure. Scale bars = 100 µm. nt = neural tube, ov = otic vesicle.
+
+### Gain- or loss-of-function of FN leads to reduced NCC migration
 
 Functional analysis confirms FN is required for normal NCC migration. Knockdown of FN expression introduced into premigratory NCCs within the neural tube led to a significant reduction (nearly 30%) in the total distance migrated by NCCs enroute to BA2 (Figure 1E). Microinjection of soluble FN into the cranial NCC migratory domain, for example, into the paraxial mesoderm adjacent to rhombomere 4 (r4) prior to NCC delamination, also led to a dramatic reduction (by 70%) in NCC migration as indicated by a decrease in the area typically covered by the invading NCCs (Figure 1F). Thus, decreasing the expression of FN – presumably by decreasing the rate at which FN is secreted by motile NCCs – or increasing the FN density in the microenvironment led to significant changes in the NCC migration pattern. We conclude that a balance of FN within the migratory microenvironment is required to promote proper migration.
 
-## An individual-based model of NCC migration and ECM remodeling produces collectively migrating streams in silico
+### An individual-based model of NCC migration and ECM remodeling produces collectively migrating streams in silico
 
-Our observations led us to hypothesize that migrating NCCs remodel punctate FN into a fibrous scaffold for trailing cells. We evaluated this idea in a theoretical setting by constructing a mathematical model in which NCCs are represented as discrete off-lattice point masses, that is, agents, that freely move in a two-dimensional (2D) plane (Figure 2—figure supplement 1). Each agent responds to, and influences, the remodeling of an initially punctate ECM (Figure 2; Figure 2—figure supplement 2). Their velocities are determined using an overdamped version of Newton’s second law. The three types of forces that alter agent trajectories arise from friction (which is proportional to the cell velocity), cell-ECM interactions (specifically, those from haptotaxis and contact guidance), and cell-cell repulsion. Neighboring NCCs, FN puncta, and FN fibers generate the latter two forces and affect the motion of an agent only when they are within a user-specified distance, Rfilo , of the agent center (this distance represents the length of cell filopodia protrusions).
+Our observations led us to hypothesize that migrating NCCs remodel punctate FN into a fibrous scaffold for trailing cells. We evaluated this idea in a theoretical setting by constructing a mathematical model in which NCCs are represented as discrete off-lattice point masses, that is, agents, that freely move in a two-dimensional (2D) plane (Figure 2—figure supplement 1). Each agent responds to, and influences, the remodeling of an initially punctate ECM (Figure 2; Figure 2—figure supplement 2). Their velocities are determined using an overdamped version of Newton’s second law. The three types of forces that alter agent trajectories arise from friction (which is proportional to the cell velocity), cell-ECM interactions (specifically, those from haptotaxis and contact guidance), and cell-cell repulsion. Neighboring NCCs, FN puncta, and FN fibers generate the latter two forces and affect the motion of an agent only when they are within a user-specified distance, $R_{filo}$ , of the agent center (this distance represents the length of cell filopodia protrusions).
 
-The cell-repulsion (resp. cell-ECM) force accounts for the collective interactions that an agent experiences from neighboring NCCs (resp. FN puncta and fibers). The magnitude of the total cell-cell repulsion force is determined from the sum of radially oriented forces from all neighboring NCCs, whose strength, modulated by a user-defined constant, ci , decreases quadratically with respect to the distance from the agent center of mass. To represent the finding that chick cranial NCCs do not always repel each other upon contact (Kulesa and Fraser, 1998; Kulesa et al., 2004), we adjust the direction of the resultant force by stochastically sampling from a von Mises distribution (Mardia and Jupp, 1999). The parameters of the distribution depend on the number and location of NCCs sensed by the agent. They ensure it is uniform when few NCCs are present but cause it to resemble a periodic normal distribution biased in the direction of lowest NCC density when many cells are sensed (for details, see the Materials and methods section). Thus, when cells sense each other at longer ranges, they may align. When cells are close enough to be overlapping, however, they are more likely to repel each other along the direction of contact, similarly to other implementations of cell-cell repulsion (Colombi et al., 2020). We have verified that increasing the magnitude of the cell-cell repulsion forces increases the average nearest neighbor distance between cells in the ABM (Figure 2—figure supplement 5; Figure 3—figure supplement 4).
+![Figure 2.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-v2.jpg)
 
-The magnitude of the total cell-ECM force is similarly determined by summing radially oriented forces originating from neighboring FN puncta and fibers, with the strengths of such forces decreasing quadratically with respect to distance from the agent center. The resultant cell-ECM force direction is determined by a linear combination of signals arising from haptotaxis and contact guidance, which are weighted by a parameter, χ. The haptotaxis and contact guidance cues are both represented as unit vectors. Haptotaxis biases the total cell-ECM force toward increasing FN densities and its cue is sampled from a von Mises distribution whose parameters depend on the number and location of neighboring FN puncta and fibers sensed by the cell. The distribution is biased such that the cell is likely to travel toward the greatest FN concentration sampled. Contact guidance aligns the cell-ECM force along the direction of FN fibers. The unit vector corresponding to this cue is computed from the average orientation of FN fibers sensed by the agent.
+**Figure 2.:** Individual snapshots (A) of an example ABM realization reveals that the model can generate a single anisotropically migrating stream over a simulated time of 12 hr. Different realizations generated using the same parameter values but different random seeds (B), however, may produce streams that exhibit the formation of multiple branches and demonstrate the range of possible model behaviors. Black circles denote leader cells, which can secrete new FN, red cells signify follower non-secretory cells, and blue squares correspond to FN puncta. Arrows denote cell velocities or fiber orientations. The extra column of FN at the right boundary is an artifact of visualization. Sobol indices (C) and scatter plots (D) of the horizontal distance traveled by NCCs indicate that this metric is most sensitive to the haptotaxis-contact guidance weight, $χ$, and the filopodial length, $R_{filo}$ , but is less dependent on parameters related to cell-cell repulsion ($c_{i}$). Statistical significance in (C) is determined from a two-sample $t$-test that compares the Sobol indices produced by the parameter of interest to those obtained from a dummy parameter (red asterisks indicate significant first-order indices, black asterisks indicate significant total order indices, p<0.01). Each data point in (D) represents the average of 20 ABM realizations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A neural crest cell (NCC) agent (A, blue circle) has a cell body radius, $R_{cell}$ (solid red line), and a filopodial radius, $R_{filo}$ (solid black line). The latter denotes the maximum area of interaction (dashed black circle), in which a cell can sense extracellular matrix (ECM) molecules and its neighbors. The ABM initial condition (B) places leader cells (black circles) along a subset of the left-hand boundary that has a user-specified height, $l_{entr}$. An equally spaced lattice of FN puncta (blue squares) is placed just to the right of the leader cell column. The parameters used to generate the configuration in (B) are $\lambda_{FN}=20\mum$, $l_{entr}=120 \mum$, and $R_{cell}=7.5 \mum$ (see the main text and Table 1 of the Materials and methods section for a description of these parameter values). The neural tube entrance strip, along which new cells enter the domain, is denoted by a green rectangle. When new trailing NCCs enter the domain, they will be placed at the locations marked by the black circles, provided they do not overlap with another cell. The flowchart (C) summarizes the relationships between the cell velocity, contact guidance cue, haptotaxis cue, NCC-ECM force, and the cell-cell repulsion force. We refer to the text for a discussion of how each cue is determined from the current NCC/FN configurations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A cartoon depiction of a neural crest cell (NCC) (solid black circle) at time $t_{0}$ (left), moving with a given velocity (black arrow) toward a collection of FN puncta (blue squares) and fibers (blue squares with blue arrowheads). Over a time $Δt$ (right), the NCC passes over an FN punctum and a fiber, remodeling their orientations (red arrowheads). For the punctum, this is done by equipping it with a unit vector aligned in the direction of the current cell velocity. The fiber orientation is updated using the equations listed in the Materials and methods section. The NCC must cover FN puncta and fibers to adjust their orientations. The dashed circle around the NCC represents the maximum length of its filopodial extensions.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The distribution of fibronectin is shown at the final time $t=720$ min for (A) the in silico experiment corresponding to Figure 2A and (B) the experiment visualized in Figure 2B of the main text. Blue squares denote fibronectin puncta, while blue arrows show fibronectin fibers and their orientations. Due to the density of fibronectin that is secreted by leader cells, there may be difficulties in visualizing specific arrowheads. Panels (C) and (D) compensate for this by presenting polar histograms of the fibronectin fiber orientations shown in panels (A) and (B), respectively. The distribution in panel (C) suggests that most fibers are oriented along the horizontal axis, while the distribution in panel (D) shows that most fibers are oriented about 15–30 degrees below the horizontal axis (along the direction of the second stream branch). For this parameter regime, the average FN fiber angle with respect to the horizontal axis was equal to –0.01 ± 0.26 radians (–0.5 ± 14 degrees).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Scatter plots demonstrate how the average angle that fibers make with the horizontal axis changes in response to (A) $R_{filo}$ , the filopodial radius, (B) $χ$, the parameter controlling the extent to which haptotaxis or contact guidance dominates the direction of the cell-extracellular matrix (ECM) force, and (C) $c_{i}$ , the parameter controlling the magnitude of the cell-cell repulsion force. There are very few (if any) correlations between the statistic and the three parameter values considered here. Data points represent the average of 20 agent-based model realizations for each parameter regime. The average fiber orientation appears to lie between about 0 and –0.1 radians (0 and –5 degrees), which suggests that fibronectin fibers are largely oriented along the horizontal axis.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Scatter plots, Sobol indices, and partial rank correlation coefficient (PRCC) values corresponding to the average nearest neighbor distance. The scatter plots demonstrate how this statistic changes in response to (A) $R_{filo}$ , the filopodial radius, (B) $χ$, the parameter controlling the extent to which haptotaxis or contact guidance dominates the direction of the cell-extracellular matrix (ECM) force, and (C) $c_{i}$ , the parameter controlling the magnitude of the cell-cell repulsion force. Data points in the scatter plots are the average of 20 agent-based model realizations. (D) Bar charts of the first-order (blue) and total-order (orange) Sobol indices present the fraction by which the variance of the summary statistic would be reduced if the respective parameter values were fixed. Differences in heights between the orange and blue bars indicate the presence of synergistic effects that arise from changing multiple parameters simultaneously. Asterisks designate whether the first-order (red) or total-order asterisk (black) are statistically significant (p<0.01) from those obtained from a dummy parameter using a two-sample t-test. Parameters related to cell-cell repulsion and the direction of the cell-ECM force are found to significantly affect the variance of the statistic. (E) Bar charts of the PRCC values for each parameter indicate whether each parameter has a positive or negative monotonic relationship with the statistic. Asterisks indicate whether the PRCC is statistically significant (p<0.01) from that of the dummy parameter, as determined from a two-sample t-test. There is a positive relationship between the statistic and $c_{i}$ , the cell-cell repulsion force parameter, and a negative monotonic relationship between the statistic and $χ$, the parameter controlling the direction of the cell-ECM force.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Scatter plots, Sobol indices, and partial rank correlation coefficient (PRCC) values corresponding to the maximum range of neural crest cells (NCCs) along the vertical axis (the ‘lateral spread’). The scatter plots demonstrate how this statistic changes in response to (A) $R_{filo}$ , the filopodial radius, (B) $χ$, the parameter controlling the extent to which haptotaxis or contact guidance dominates the direction of the cell-ECM force, and (C) , the parameter controlling the magnitude of the cell-cell repulsion force. Data points in the scatter plots are each computed from the average of 20 agent-based model realizations. (D) Bar charts of the first-order (blue) and total-order (orange) Sobol indices present the fraction by which the variance of the summary statistic would be reduced if one of these parameters was to be held constant. Differences in heights between the orange and blue bars indicate the presence of synergistic effects that arise from changing multiple parameters simultaneously. Asterisks designate whether the first-order (red) or total-order asterisk (black) are statistically significant (p<0.01) from those obtained from a dummy parameter as determined from a two-sample t-test. Parameters related to the filopodial sensing radius and the direction of the cell-ECM force are found to significantly affect the variance of the statistic. (E) Bar charts of the PRCC values for each parameter indicate whether each parameter has a positive or negative monotonic relationship with the statistic. Asterisks indicate whether the PRCC is statistically significant (p<0.01) from that of the dummy parameter, as determined from a two-sample t-test. There is a weak positive correlation between the statistic and $R_{filo}$, the filopodial radius, a weak negative relationship with $c_{i}$ , the cell-cell repulsion force parameter, and a strong negative relationship with $χ$, the parameter controlling the direction of the cell-ECM force.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Scatter plot showing the relationship between the average nearest neighbor distance between cells and the maximum distance that they travel in the horizontal direction. The graph reveals a weak positive correlation (Pearson correlation coefficient: 0.53, p=2.6e-112; partial Spearman rank correlation coefficient: 0.53, p=7.2e-115), such that larger distances typically correspond to larger distances between neighbors and vice versa. Data points in the scatter plots are the average of 20 agent-based model realizations. p-Values were computed from a Student’s t distribution, under the null hypothesis that there is no correlation between the two variables.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** The data creating this histogram were extracted from the 31,440 agent-based model realizations used to create the scatter plots and Sobol indices in Figure 2 of the main text and Figure 2—figure supplements 4–7.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** Asterisks indicate whether the PRCC is statistically significant (p<0.01) from that of the dummy parameter, as determined from a two-sample t-test. Data in this case were generated from 1000 parameter regimes using Latin hypercube sampling (Helton and Davis, 2003). The range of values from which parameter regimes were sampled are as follows: $20\leqR_{filo}\leq75$, $20\leq\lambda_{FN}\leq75$, $0.25\leqχ\leq1$, $15\leqT_{ave}\leq90$, $2\leqT_{half}\leq90$, $30\leql_{entr}\leq500$, $7.5\leqR_{cell}\leq17.5$, $0.5\leq s_{FN}^{max}\leq1.25$, $10^{-5}\leqc_{i}\leq5$. All other parameter values were set to the same values listed in Table 1 of the Materials and methods section in the main text.
+
+The cell-repulsion (resp. cell-ECM) force accounts for the collective interactions that an agent experiences from neighboring NCCs (resp. FN puncta and fibers). The magnitude of the total cell-cell repulsion force is determined from the sum of radially oriented forces from all neighboring NCCs, whose strength, modulated by a user-defined constant, $c_{i}$ , decreases quadratically with respect to the distance from the agent center of mass. To represent the finding that chick cranial NCCs do not always repel each other upon contact (Kulesa and Fraser, 1998; Kulesa et al., 2004), we adjust the direction of the resultant force by stochastically sampling from a von Mises distribution (Mardia and Jupp, 1999). The parameters of the distribution depend on the number and location of NCCs sensed by the agent. They ensure it is uniform when few NCCs are present but cause it to resemble a periodic normal distribution biased in the direction of lowest NCC density when many cells are sensed (for details, see the Materials and methods section). Thus, when cells sense each other at longer ranges, they may align. When cells are close enough to be overlapping, however, they are more likely to repel each other along the direction of contact, similarly to other implementations of cell-cell repulsion (Colombi et al., 2020). We have verified that increasing the magnitude of the cell-cell repulsion forces increases the average nearest neighbor distance between cells in the ABM (Figure 2—figure supplement 5; Figure 3—figure supplement 4).
+
+The magnitude of the total cell-ECM force is similarly determined by summing radially oriented forces originating from neighboring FN puncta and fibers, with the strengths of such forces decreasing quadratically with respect to distance from the agent center. The resultant cell-ECM force direction is determined by a linear combination of signals arising from haptotaxis and contact guidance, which are weighted by a parameter, $χ$. The haptotaxis and contact guidance cues are both represented as unit vectors. Haptotaxis biases the total cell-ECM force toward increasing FN densities and its cue is sampled from a von Mises distribution whose parameters depend on the number and location of neighboring FN puncta and fibers sensed by the cell. The distribution is biased such that the cell is likely to travel toward the greatest FN concentration sampled. Contact guidance aligns the cell-ECM force along the direction of FN fibers. The unit vector corresponding to this cue is computed from the average orientation of FN fibers sensed by the agent.
 
 Cells migrate through an initially isotropic, equi-spaced, square lattice of FN puncta that approximates the matrix distribution prior to NCC migration. Leader cells are represented by a fixed number of ‘secretory’ cells that generate new FN puncta at their centers according to times drawn from an exponential distribution with user-specified mean. The cells start at the left-hand boundary of the lattice, which we take to represent the section of the neural tube located along r4. Non-secretory cells, which cannot create new FN puncta, enter the domain at later times, provided sufficient space is available. We note that the terms ‘secretory’ and ‘non-secretory’ refer only to the ability of cells to secrete new FN puncta, as both cell types can create and align fibers emanating from puncta they pass over.
 
@@ -65,47 +113,71 @@ Observations of individual ABM simulations indicate that ECM remodeling, haptota
 
 NCCs do not always maintain a single mass as they migrate collectively. In some cases, ABM streams split into two or more ‘branches’ that colonize regions along the vertical axis (Figure 2B; Figure 2—videos 2 and 4). Streams split because there is no signal specifically guiding NCCs in a direction parallel to the horizontal axis. Thus, in some cases cells may sense and travel toward FN puncta located perpendicular to the target corridor. We conclude that additional signals are required to prevent NCC stream branching. In later sections, we will investigate how such signals affect the robustness of patterns formed by NCCs.
 
-## Global sensitivity analysis suggests a key role for contact guidance in establishing long-distance NCC migration
+### Global sensitivity analysis suggests a key role for contact guidance in establishing long-distance NCC migration
 
 To determine how collective migration depends on ABM parameters, we next applied extended Fourier amplitude sensitivity testing (eFAST; Saltelli et al., 1999) to examine summary statistics for collective migration. This analysis calculates Sobol indices (Figure 2C), which measure the fraction by which the variance of a given summary statistic is attributable to changes in a parameter value of interest (larger values indicate that the statistic is more sensitive to the parameter). The eFAST analysis produces two types of Sobol indices: first-order indices, which record the fraction of variance directly attributable to a parameter of interest, and total-order indices, which include additional synergistic effects that arise when other parameters are altered.
 
-The resulting Sobol indices indicate that the distance NCCs travel in the horizontal direction (i.e. along the target corridor) is most sensitive to χ, the parameter determining the degree to which NCC directional migration in response to the FN matrix is dominated by haptotaxis (χ=1), contact guidance (χ=0), or a linear combination of the two. Increasing the value of this parameter decreases the distance cells travel (partial Spearman rank correlation coefficient, PRCC: –0.91, p<0.0001). The cell filopodial radius, Rfilo , supplies the next largest Sobol indices and exhibits a monotonically increasing relationship with the statistic (PRCC: 0.63, p<0.0001). This make sense, as increasing the number of FN puncta and fibers that the cell senses would be expected to generate more persistent and faster migration in the ABM. The parameter for the cell-cell repulsion force strength, ci , presents a small but statistically significant first-order index. Subsequent analysis of its scatter plot (Figure 2D) reveals that when contact guidance dominates the cell-ECM force (χ<0.5), increasing the cell-cell repulsion strength decreases the distance that the streams migrate (PRCC: –0.64, p<0.0001). When haptotaxis dominates the direction of the force (χ>0.8), this relationship is weaker but remains monotonically decreasing (PRCC: –0.59, p<0.0001). Hence, the distance traveled by NCCs is most sensitive to the mechanism by which cells respond to the ECM, with contact guidance favoring longer streams, while haptotaxis and cell-cell repulsion are negatively correlated with the distance that NCCs travel.
+The resulting Sobol indices indicate that the distance NCCs travel in the horizontal direction (i.e. along the target corridor) is most sensitive to $χ$, the parameter determining the degree to which NCC directional migration in response to the FN matrix is dominated by haptotaxis $(χ=1$), contact guidance ($χ=0$), or a linear combination of the two. Increasing the value of this parameter decreases the distance cells travel (partial Spearman rank correlation coefficient, PRCC: –0.91, p<0.0001). The cell filopodial radius, $R_{filo}$ , supplies the next largest Sobol indices and exhibits a monotonically increasing relationship with the statistic (PRCC: 0.63, p<0.0001). This make sense, as increasing the number of FN puncta and fibers that the cell senses would be expected to generate more persistent and faster migration in the ABM. The parameter for the cell-cell repulsion force strength, $c_{i}$ , presents a small but statistically significant first-order index. Subsequent analysis of its scatter plot (Figure 2D) reveals that when contact guidance dominates the cell-ECM force ($χ<0.5$), increasing the cell-cell repulsion strength decreases the distance that the streams migrate (PRCC: –0.64, p<0.0001). When haptotaxis dominates the direction of the force ($χ>0.8$), this relationship is weaker but remains monotonically decreasing (PRCC: –0.59, p<0.0001). Hence, the distance traveled by NCCs is most sensitive to the mechanism by which cells respond to the ECM, with contact guidance favoring longer streams, while haptotaxis and cell-cell repulsion are negatively correlated with the distance that NCCs travel.
 
-We observed similar results for a summary statistic, the maximum extent of the migrating stream in directions perpendicular to the target corridor, that indicates the lateral spread of cells in the ABM from the target corridor (Figure 2—figure supplement 6; we will hereafter refer to this statistic as the ‘lateral spread’). The cell-ECM weight, χ, again generates the largest Sobol indices for this statistic and exhibits a strong negative monotonic relationship (PRCC: –0.90, p<0.0001), indicating that lateral migration increases with upregulation of contact guidance. By contrast, scatter plots suggest this statistic is weakly correlated with the filopodial radius (PRCC: 0.12) and cell-cell repulsion strength (PRCC: –0.08).
+We observed similar results for a summary statistic, the maximum extent of the migrating stream in directions perpendicular to the target corridor, that indicates the lateral spread of cells in the ABM from the target corridor (Figure 2—figure supplement 6; we will hereafter refer to this statistic as the ‘lateral spread’). The cell-ECM weight, $χ$, again generates the largest Sobol indices for this statistic and exhibits a strong negative monotonic relationship (PRCC: –0.90, p<0.0001), indicating that lateral migration increases with upregulation of contact guidance. By contrast, scatter plots suggest this statistic is weakly correlated with the filopodial radius (PRCC: 0.12) and cell-cell repulsion strength (PRCC: –0.08).
 
-Analysis of Sobol indices for the average distance between neighboring cells reveals the importance of haptotaxis and cell-cell repulsion on cell clustering. The cell-ECM weight and the cell-cell repulsion strength parameter both yield significant first-order Sobol indices (Figure 2—figure supplement 5), with the latter parameter generating larger values. Only the total-order Sobol index is significant for the filopodial radius, which implies that this parameter affects cell-cell separation largely via its higher-order interactions with the other two parameters. This makes sense, given that the cell-ECM and cell-cell repulsion forces are indirectly affected by changing the number of FN puncta and NCCs sensed. Scatter plots (Figure 2—figure supplement 5) suggest a monotonically decreasing relationship between the nearest neighbor distance and the cell-ECM weight, χ (PRCC: –0.74, p<0.0001), a monotonically increasing relationship with the cell-cell repulsion parameter, ci (PRCC: 0.78, p<0.0001) and almost no correlation for the filopodial radius (PRCC: 0.05, p=0.07).
+Analysis of Sobol indices for the average distance between neighboring cells reveals the importance of haptotaxis and cell-cell repulsion on cell clustering. The cell-ECM weight and the cell-cell repulsion strength parameter both yield significant first-order Sobol indices (Figure 2—figure supplement 5), with the latter parameter generating larger values. Only the total-order Sobol index is significant for the filopodial radius, which implies that this parameter affects cell-cell separation largely via its higher-order interactions with the other two parameters. This makes sense, given that the cell-ECM and cell-cell repulsion forces are indirectly affected by changing the number of FN puncta and NCCs sensed. Scatter plots (Figure 2—figure supplement 5) suggest a monotonically decreasing relationship between the nearest neighbor distance and the cell-ECM weight, $χ$ (PRCC: –0.74, p<0.0001), a monotonically increasing relationship with the cell-cell repulsion parameter, $c_{i}$ (PRCC: 0.78, p<0.0001) and almost no correlation for the filopodial radius (PRCC: 0.05, p=0.07).
 
-## Leading NCCs drive collective migration by secreting and remodeling ECM substrates
+### Leading NCCs drive collective migration by secreting and remodeling ECM substrates
 
 To identify combinations of parameters that might regulate collective migration, we simulated experimental manipulations that affect cell synthesis of new FN (Figure 3A; see Materials and methods) while leaving cell assembly of fibers from existing puncta unchanged. When leader secretory cells secrete FN puncta more rapidly, we find that the stream travels further, by roughly 18%. By contrast, if neither cell type secretes new FN puncta, then the average distance the stream travels decreases by about 5% (collective migration still occurs because cells can respond to pre-existing FN). Finally, if both cell types secrete FN, such that there is no difference between cell phenotypes, then the average distance migrated by cells decreases from the baseline levels regardless of whether secretion occurs at the baseline rate (21% decrease) or is elevated (19% decrease). Similar results hold for statistics measuring the lateral spread of NCCs (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig3-v2.jpg)
+
+**Figure 3.:** Violin plots for experiments in which (A) fibronectin (FN) secretion is perturbed, (B) secretion and fiber assembly (FN remodeling) are altered, and (C) cells invade a sparser (60 µm) FN lattice suggest that the extracellular matrix (ECM) plays an important role in NCC migration. Overexpression experiments (++) decrease the average timescale over which a cell makes new FN from 30 to 10 min, respectively. Contact guidance and cell-cell repulsion upregulation in (C) correspond to $χ=0.33$ and $c_{i}=5$, respectively. Asterisks indicate whether distributions are significantly different (p<0.01) from that of the baseline (WT) parameter regime using a Mann-Whitney U-test. Two-hundred agent-based model (ABM) realizations are used to generate each violin plot.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Violin plots showing how (A) the maximum range of neural crest cells (NCCs) in the vertical direction and (B) average nearest neighbor distance change for the in silico experiments in which FN secretion is perturbed (see Figure 3A of the main text). Overexpression experiments (++) decrease the average time for another FN secretion event to 10 min. Asterisks indicate whether distributions are significantly different (p<0.01) from that of the baseline (WT) parameter regime using a Mann-Whitney U-test. Two-hundred agent-based model (ABM) realizations are used to generate each violin plot.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Asterisks indicate whether distributions are significantly different (p<0.01) from that of the baseline (WT) parameter regime using a Mann-Whitney U-test. Two-hundred agent-based model (ABM) realizations are used to generate each violin plot.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Overexpression of FN secretion (leader FN ++) decrease the average time that it takes a secretory ‘leader’ cell to secrete FN from 30 to 10 min. Contact guidance and cell-cell repulsion upregulation correspond to setting $χ=0.33$ and $c_{i}=5$, respectively. Asterisks indicate whether distributions are significantly different (p<0.01) from that of the baseline (WT) parameter regime using a Mann-Whitney U-test. Two-hundred agent-based model (ABM) realizations are used to generate each violin plot.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Violin plots showing how (A) the maximum distance neural crest cells (NCCs) travel in the horizontal direction, (B) the maximum range of NCCs in the vertical direction, and (C) average nearest neighbor distance change for in silico experiments in which parameters related to cell-cell repulsion, $c_{i}$ , are altered.Leader FN secretion++ denotes experiments that decrease the average time for FN secretion in leader cells to 10 min. Contact guidance++ denotes experiments in which $χ=0.33$. No Rep. denotes experiments for which $c_{i}=0$, Rep.+++ to experiments in which $c_{i}=2$, and Rep.++++ to cases in which $c_{i}=5$. Asterisks indicate whether distributions are significantly different (p<0.01) from that of the baseline (WT) parameter regime using a Mann-Whitney U-test. Two-hundred agent-based model (ABM) realizations are used to generate each violin plot.
 
 We next modulate how cells alter the FN matrix, by eliminating both FN secretion and fiber assembly in leader and/or follower cells (Figure 3B). When leading secretory cells (or both cell types) are unable to remodel the matrix, the average distance traveled by the NCC stream decreases by 47% (resp. 51%). When follower ‘non-secretory’ cells are prevented from assembling and reorienting FN fibers, however, the effect is minimal with only a 2% reduction in distance traveled. Similar results are observed for statistics measuring the nearest neighbor distance and the lateral spread of NCCs (Figure 3—figure supplement 2).
 
 These results demonstrate that, within the ABM, FN remodeling by leading NCCs plays a key role in determining long-distance collective migration. By contrast, no discernible differences are observed when trailing cells cannot remodel the matrix. Our findings suggest that collective migration may be made more effective when leading and trailing NCCs perform specialized roles, with leading cells remodeling the ECM.
 
-## The initial FN matrix distribution is crucial to establishing long-distance collective cell migration
+### The initial FN matrix distribution is crucial to establishing long-distance collective cell migration
 
 ECM remodeling can direct collective cell migration, but the degree to which the pre-existing ECM affects cell trajectories remains unclear. Increasing the initial lattice spacing between FN puncta from 20 to 60 µm hinders collective migration in the ABM, decreasing the distance that the stream migrates by 36%. The lateral spread of NCCs is similarly reduced within sparser matrices (Figure 3—figure supplement 3). We conclude that if NCCs are less likely to sense FN in their local environment, then they are consequently less likely to migrate as far. Additionally, the nearest neighbor distance between cells decreases (Figure 3—figure supplement 3). Such an increased cell density and low motility state resembles a ‘jamming’ scenario in which cells are tightly packed, resistant to movement, and behave like a solid (Sadati et al., 2013). These similarities lead us to classify cells in the ABM as being in a ‘jammed’ state when they collectively travel less than 100 µm over 12 hr, as we have found a moderate but statistically significant positive correlation between the nearest neighbor distance and the distance traveled in the horizontal direction (Figure 2—figure supplement 7; Figure 3—figure supplement 4).
 
-Cells can, however, upregulate certain mechanisms to compensate for sparser FN distributions and re-establish long-distance collective migration (Figure 3C). If contact guidance is upregulated in the ABM (e.g. if the weight χ decreases from 0.5 to 0.33), then the NCC migration distance in sparse FN increases by 67%. The distance exceeds that obtained in the denser (20 µm) FN lattice by 7%. Increasing the cell-cell repulsion strength or the rate at which secretory cells produce FN also cause NCCs to travel greater distances within the sparser FN matrix (by 44% and 28%, respectively), but these changes do not rescue migration to distances comparable to those in denser environments. These results highlight the importance of contact guidance, ECM remodeling, and/or cell-cell repulsion in rescuing long-distance migration, even when cells are in a jammed state where migration is otherwise hindered.
+Cells can, however, upregulate certain mechanisms to compensate for sparser FN distributions and re-establish long-distance collective migration (Figure 3C). If contact guidance is upregulated in the ABM (e.g. if the weight $χ$ decreases from 0.5 to 0.33), then the NCC migration distance in sparse FN increases by 67%. The distance exceeds that obtained in the denser (20 µm) FN lattice by 7%. Increasing the cell-cell repulsion strength or the rate at which secretory cells produce FN also cause NCCs to travel greater distances within the sparser FN matrix (by 44% and 28%, respectively), but these changes do not rescue migration to distances comparable to those in denser environments. These results highlight the importance of contact guidance, ECM remodeling, and/or cell-cell repulsion in rescuing long-distance migration, even when cells are in a jammed state where migration is otherwise hindered.
 
-## Adding directional guidance correctly steers cells along their target corridor, but renders the model sensitive to stream breaks and cell separation
+### Adding directional guidance correctly steers cells along their target corridor, but renders the model sensitive to stream breaks and cell separation
 
-As noted above, mechanisms that generate collective migration do not guarantee that cells robustly travel along a single target corridor. Thus far, our ABM simulations have generated NCC streams that typically spread out to widths almost double that of the neural tube corridor from which they emerge. By contrast, in vivo streams typically maintain a constant width from the neural tube and do not branch (Szabó et al., 2016; Kulesa et al., 2004). Such discrepancies motivate us to introduce a new force (a ‘guiding force’) that steers cells along the target corridor. This force may represent signals previously neglected in the ABM, such as chemotaxis (McLennan et al., 2010; McLennan et al., 2012) or domain growth (Shellard and Mayor, 2019; McKinney et al., 2020). For simplicity, we direct this force along the horizontal axis by introducing a weight, z, to control the degree to which the cell velocity is aligned along the corridor track, countering off-axis forces arising from haptotaxis, contact guidance, and cell-cell repulsion. We consider cases for which the guiding force acts on both cell types in the ABM and others for which it only affects leading secretory cells. The second case aims to determine whether leading cells alone can guide the entire migrating collective, even if trailing cells are free to move laterally from the stream.
+As noted above, mechanisms that generate collective migration do not guarantee that cells robustly travel along a single target corridor. Thus far, our ABM simulations have generated NCC streams that typically spread out to widths almost double that of the neural tube corridor from which they emerge. By contrast, in vivo streams typically maintain a constant width from the neural tube and do not branch (Szabó et al., 2016; Kulesa et al., 2004). Such discrepancies motivate us to introduce a new force (a ‘guiding force’) that steers cells along the target corridor. This force may represent signals previously neglected in the ABM, such as chemotaxis (McLennan et al., 2010; McLennan et al., 2012) or domain growth (Shellard and Mayor, 2019; McKinney et al., 2020). For simplicity, we direct this force along the horizontal axis by introducing a weight, $z$, to control the degree to which the cell velocity is aligned along the corridor track, countering off-axis forces arising from haptotaxis, contact guidance, and cell-cell repulsion. We consider cases for which the guiding force acts on both cell types in the ABM and others for which it only affects leading secretory cells. The second case aims to determine whether leading cells alone can guide the entire migrating collective, even if trailing cells are free to move laterally from the stream.
 
-The guiding force indeed reduces lateral migration from the target corridor as its ‘strength’, z, increases. The NCC stream narrows by as much as 71% when the guiding force acts on both cell types or by 88% when the force only affects leading cells (Figure 4A). Cells also migrate longer distances along the corridor (Figure 4B). As we expected, the distance migrated is linearly correlated with the guiding force strength, regardless of whether the guiding force acts on leader cells or on both cell types (leader-only Pearson correlation coefficient: 0.9793, p=0.02; both cell types PCC: 0.9993, p=0.007).
+The guiding force indeed reduces lateral migration from the target corridor as its ‘strength’, $z$, increases. The NCC stream narrows by as much as 71% when the guiding force acts on both cell types or by 88% when the force only affects leading cells (Figure 4A). Cells also migrate longer distances along the corridor (Figure 4B). As we expected, the distance migrated is linearly correlated with the guiding force strength, regardless of whether the guiding force acts on leader cells or on both cell types (leader-only Pearson correlation coefficient: 0.9793, p=0.02; both cell types PCC: 0.9993, p=0.007).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig4-v2.jpg)
+
+**Figure 4.:** Violin plots for (A) the range of NCCs along the vertical axis, (B) the horizontal distance traveled by NCCs, and (C) the average minimum distance from secretory to non-secretory cells in experiments when the guiding force strength, $z$, changes (guiding force +/++/+++: $z=0.25$ / $z=0.5$ / $z=0.75$) in both cell types or only leader secretory cells (LO). Asterisks indicate significantly different (p<0.01) distributions compared to the baseline (WT, $z=0$) parameter regime according to a Mann-Whitney U-test. Snapshots in (D) present the results of an agent-based model (ABM) realization over 12 hr when the guiding force ($z=0.75$) affects only secretory cells. Two-hundred ABM realizations are used to generate each violin plot.
 
 Improvements in the NCC stream trajectory, however, can also drive leader secretory cells to separate from non-secretory follower cells if the former are the only cell type to experience guiding forces. In such cases, the distance between leader and follower cells (Figure 4C) increases with the guiding force strength by up to 160%, indicating fragmentation of the NCC stream. However, no breaks occur when the guiding force acts on both cell types, as the distance between leader and follower cells decreases slightly with the guiding force strength (by about 15% from its baseline value). Individual simulations (Figure 4D; Figure 4—video 1) also show NCC streams can exhibit chain-like migration, with two or more branches forming that are one to two cells in width. Such chains still follow paths of remodeled FN fibers created by leader cells, even when leaders and followers become physically separated. This observation supports the idea that remodeled ECM can provide a long-range cue for follower cells.
 
-## Increased contact guidance and/or cell-cell repulsion in trailing cells promotes robustness in collective migration
+### Increased contact guidance and/or cell-cell repulsion in trailing cells promotes robustness in collective migration
 
 The emergence of stream breaks (i.e. separation between leading and trailing cells) in our simulations leads us to ask whether NCCs can recover coherent stream patterns by upregulating or downregulating certain migratory mechanisms. We address this question by simulating conditions that drive breaks and identifying parameter combinations that can rescue them. A successful rescue experiment is defined to occur when the distance between leader and follower cells is less than two NCC diameters (here, 30 µm). This threshold represents a distance slightly larger than that at which NCCs can interact through cell filopodia, here, 27.5 µm.
 
-Of all the tested combinations of perturbations (Figure 5A), we find that stream breaks can be rescued by increasing the degree to which cell trajectories are influenced by contact guidance. Upregulating contact guidance in either non-secretory cells or in both cell types (by decreasing the cell-ECM weight, χ, from 0.5 to 0.33) reduces distances between leader and follower cells, regardless of what other ABM parameters are altered. Thus, stream resistance to fragmentation is sensitive to the strength of the contact guidance cues NCCs receive from nearby ECM. Simulations demonstrate that enhancing contact guidance in both cell types (Figure 5B) creates a robust single, ribbon-like stream, with approximately constant width and density.
+Of all the tested combinations of perturbations (Figure 5A), we find that stream breaks can be rescued by increasing the degree to which cell trajectories are influenced by contact guidance. Upregulating contact guidance in either non-secretory cells or in both cell types (by decreasing the cell-ECM weight, $χ$, from 0.5 to 0.33) reduces distances between leader and follower cells, regardless of what other ABM parameters are altered. Thus, stream resistance to fragmentation is sensitive to the strength of the contact guidance cues NCCs receive from nearby ECM. Simulations demonstrate that enhancing contact guidance in both cell types (Figure 5B) creates a robust single, ribbon-like stream, with approximately constant width and density.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83792/elife-83792-fig5-v2.jpg)
 
-**Figure 5.:** A summary (A) of experiments that either successfully (checkmarks) or unsuccessfully (X) prevent secretory and non-secretory cells from separating more than two cell diameters (30 µm) in at least 100 of 200 agent-based model (ABM) realizations (n/a means that the parameter combination is impossible to implement). Individual simulations suggest that cells can migrate as a single discrete stream, as when both cell types upregulate contact guidance (B), or as multiple single-cell chains as in the case where secretory cells downregulate cell-cell repulsion (C). Abbreviations in (A): CG ++, Both cells (both cell types upregulate contact guidance, ); CG ++, FO (only non-secretory cells upregulate contact guidance, χ=0.33); leader FN ++ (leader secretory cells secrete FN puncta more often, χ=0.33 min); follower FN + (trailing cells are enabled to secrete FN at a rate Tave=10 min); Rep. –/+, both cells (both cell types downregulate cell-cell repulsion, Tave=90); Rep. ++, both cells (both cell types upregulate cell-cell repulsion, ci=0.05); Rep. –/+, LO (only leader secretory cells downregulate cell-cell repulsion, ci=2); Rep. ++, LO (only leader secretory cells upregulate cell-cell repulsion, ci=0.05); Rep. –/+, FO (only follower non-secretory cells downregulate cell-cell repulsion, ci=2); Rep. ++, FO (only follower non-secretory cells upregulate cell-cell repulsion, ci=0.05); Hap. Bias ++ (both cell types sample less noisy haptotaxis cues from the von Mises distribution, ci=2); Hap. Bias ++, FO (only follower non-secretory cells sample less noisy haptotaxis cues from the von Mises distribution, γFN=3000).γFN=3000
+**Figure 5.:** A summary (A) of experiments that either successfully (checkmarks) or unsuccessfully (X) prevent secretory and non-secretory cells from separating more than two cell diameters (30 µm) in at least 100 of 200 agent-based model (ABM) realizations (n/a means that the parameter combination is impossible to implement). Individual simulations suggest that cells can migrate as a single discrete stream, as when both cell types upregulate contact guidance (B), or as multiple single-cell chains as in the case where secretory cells downregulate cell-cell repulsion (C). Abbreviations in (A): CG ++, Both cells (both cell types upregulate contact guidance, $χ=0.33$); CG ++, FO (only non-secretory cells upregulate contact guidance, $χ=0.33$); leader FN ++ (leader secretory cells secrete FN puncta more often, $T_{ave}=10$ min); follower FN + (trailing cells are enabled to secrete FN at a rate $T_{ave}=90$ min); Rep. –/+, both cells (both cell types downregulate cell-cell repulsion, $c_{i}=0.05$); Rep. ++, both cells (both cell types upregulate cell-cell repulsion, $c_{i}=2$); Rep. –/+, LO (only leader secretory cells downregulate cell-cell repulsion, $c_{i}=0.05$); Rep. ++, LO (only leader secretory cells upregulate cell-cell repulsion, $c_{i}=2$); Rep. –/+, FO (only follower non-secretory cells downregulate cell-cell repulsion, $c_{i}=0.05$); Rep. ++, FO (only follower non-secretory cells upregulate cell-cell repulsion, $c_{i}=2$); Hap. Bias ++ (both cell types sample less noisy haptotaxis cues from the von Mises distribution, $\gamma_{FN}=3000$); Hap. Bias ++, FO (only follower non-secretory cells sample less noisy haptotaxis cues from the von Mises distribution, $\gamma_{FN}=3000$).
 
 The only other perturbation that successfully prevents the formation of stream breaks occurs when leader cells exert weaker repulsive forces than followers. However, these streams are less robust to perturbations in other mechanisms. Furthermore, individual realizations suggest that when leaders exert weaker repulsive forces than followers (Figure 5C), multiple stream branches and/or single-file cell chains may form, even though the distance between cells is approximately constant. Thus, when trailing cells exert stronger repulsive forces than leading cells, additional mechanisms may be required to prevent the emergence of multiple branches and/or single-file cell chains.
 
@@ -129,110 +201,288 @@ Despite these limitations, the ABM proved useful in providing experimentally tes
 
 ## Materials and methods
 
-## Description of the mathematical model
+### Description of the mathematical model
 
-## Overview
+#### Overview
 
-The mathematical model depicts individual cells as agents that are spherically symmetric with a user-specified constant cell body radius, Rcell , that determines their surface area and volume (Figure 2—figure supplement 1A). Such frameworks are known as ‘overlapping spheres’ models in the literature because the spheres can potentially intersect, with the area of overlap between two cells being proportional to the repulsive force between them. We implemented and solved the ABM using PhysiCell (version 1.7.1), a C++ library for simulating overlapping spheres models (Ghaffarizadeh et al., 2018), because this software specializes in efficiently running this type of framework and has fewer dependencies compared to other libraries such as Chaste (Mirams et al., 2013).
+The mathematical model depicts individual cells as agents that are spherically symmetric with a user-specified constant cell body radius, $R_{cell}$ , that determines their surface area and volume (Figure 2—figure supplement 1A). Such frameworks are known as ‘overlapping spheres’ models in the literature because the spheres can potentially intersect, with the area of overlap between two cells being proportional to the repulsive force between them. We implemented and solved the ABM using PhysiCell (version 1.7.1), a C++ library for simulating overlapping spheres models (Ghaffarizadeh et al., 2018), because this software specializes in efficiently running this type of framework and has fewer dependencies compared to other libraries such as Chaste (Mirams et al., 2013).
 
-Each cell in the ABM is equipped with another radius, Rfilo>Rcell , which represents the maximum distance that a cell can extend a filopodium from its cell center (Figure 2—figure supplement 1A). This is intended to represent the fact that cells have variable filopodia lengths, as NCCs can sense all FN puncta and fibers located between their cell body and filopodial radii. Puncta and fibers within a cell body radius are ‘covered’ by the NCC and not able to be sensed. We incorporate the filopodial radius in PhysiCell by setting the default radius of interaction to be equal to Rfilo.
+Each cell in the ABM is equipped with another radius, $R_{filo}>R_{cell}$ , which represents the maximum distance that a cell can extend a filopodium from its cell center (Figure 2—figure supplement 1A). This is intended to represent the fact that cells have variable filopodia lengths, as NCCs can sense all FN puncta and fibers located between their cell body and filopodial radii. Puncta and fibers within a cell body radius are ‘covered’ by the NCC and not able to be sensed. We incorporate the filopodial radius in PhysiCell by setting the default radius of interaction to be equal to $R_{filo}$.
 
 We consider two cell phenotypes in the ABM: ‘leader’ or ‘secretory’ cells, which are initially placed at the front of migrating collectives and can deposit new FN puncta, and ‘follower’ or ‘non-secretory cells’ which enter the domain at later time points and cannot create new FN puncta (Figure 2—figure supplement 1). The ability to introduce new FN puncta in the domain constitutes the only difference between the two cell types, as both may establish fibers from existing puncta (see below for more details).
 
-We idealize NCC migration as a 2D process occurring in a plane, due to observations in the chick head that suggest the environment in which cells migrate is shallow, that is, approximately three to four cell diameters in depth (Kulesa and Fraser, 1998). Unlike existing frameworks for NCC migration, which use rectangular domains confining cells to a migratory corridor of up to 150 µm in width (McLennan et al., 2012; Szabó et al., 2016), cells in the ABM invade an open square domain of area 250,000 μm2 , where the left-hand boundary represents the neural tube. Since the FN matrix prior to NCC entry does not appear to favor a particular migration direction, we model the initial FN matrix as a punctate isotropic square lattice and specify the uniform spacing, λFN , between puncta (Figure 2—figure supplement 1B). We assume that FN does not diffuse or decay, as these processes occur on a longer timescale than that of NCC migration (Kulesa et al., 2004; McKinney et al., 2020). Prior research indicates that at most 10% of NCCs undergo mitosis during the first 12 hr of migration (Ridenour et al., 2014), which suggests cell division is a negligible contributor to collective cell migration and hence can be ignored in the mathematical model.
+We idealize NCC migration as a 2D process occurring in a plane, due to observations in the chick head that suggest the environment in which cells migrate is shallow, that is, approximately three to four cell diameters in depth (Kulesa and Fraser, 1998). Unlike existing frameworks for NCC migration, which use rectangular domains confining cells to a migratory corridor of up to 150 µm in width (McLennan et al., 2012; Szabó et al., 2016), cells in the ABM invade an open square domain of area 250,000 $\mum^{2}$ , where the left-hand boundary represents the neural tube. Since the FN matrix prior to NCC entry does not appear to favor a particular migration direction, we model the initial FN matrix as a punctate isotropic square lattice and specify the uniform spacing, $\lambda_{FN}$ , between puncta (Figure 2—figure supplement 1B). We assume that FN does not diffuse or decay, as these processes occur on a longer timescale than that of NCC migration (Kulesa et al., 2004; McKinney et al., 2020). Prior research indicates that at most 10% of NCCs undergo mitosis during the first 12 hr of migration (Ridenour et al., 2014), which suggests cell division is a negligible contributor to collective cell migration and hence can be ignored in the mathematical model.
 
-## Determining cell velocities in the mathematical model
+#### Determining cell velocities in the mathematical model
 
-In the ABM, the velocity, v(i) , of cell i is determined by an overdamped Newton’s law. This assumes that cells can be approximated as point particles, that their movement can be determined by balancing forces acting on their centers of mass, and that inertial effects are negligible compared to forces arising from friction, cell-cell repulsion, and cell-ECM interactions. Incorporating the above assumptions leads to the following equation for the velocity:v(i)≈1ηFECM(i)+1ηFrep(i).
+In the ABM, the velocity, $v^{(i)}$ , of cell $i$ is determined by an overdamped Newton’s law. This assumes that cells can be approximated as point particles, that their movement can be determined by balancing forces acting on their centers of mass, and that inertial effects are negligible compared to forces arising from friction, cell-cell repulsion, and cell-ECM interactions. Incorporating the above assumptions leads to the following equation for the velocity:
 
-We have further assumed without loss of generality throughout this work that the coefficient of friction, η, is equal to one. We remark that the model is formulated in dimensional (not dimensionless) units. The positions of the cell centers are computed from their respective velocities using a second-order Adams-Bashforth method.
+$$
+v^{(i)}≈\frac{1}{η}F_{ECM}^{(i)}+\frac{1}{η}F_{rep}^{(i)}.
+$$
+
+We have further assumed without loss of generality throughout this work that the coefficient of friction, $η$, is equal to one. We remark that the model is formulated in dimensional (not dimensionless) units. The positions of the cell centers are computed from their respective velocities using a second-order Adams-Bashforth method.
 
 To prevent unrealistic cell velocities, we specify a maximum cell speed that depends on whether a cell senses an FN punctum or fiber. Cells that sense at least one FN punctum or fiber within their vicinity admit a larger maximum speed than cells that do not sense FN. This is intended to model a chemokinesis-like mechanism observed in vivo, where cells appear to travel faster in FN-rich areas.
 
-In the ensuing paragraphs, we describe how the cell-ECM force for cell i, FECM(i) , and the cell-cell repulsive force, Frep(i) , are determined in the ABM from all neighboring NCCs, FN puncta, and FN fibers sensed by the agent. A flowchart depicting how cell velocities are calculated is provided in Figure 2—figure supplement 1C.
+In the ensuing paragraphs, we describe how the cell-ECM force for cell $i$, $F_{ECM}^{(i)}$ , and the cell-cell repulsive force, $F_{rep}^{(i)}$ , are determined in the ABM from all neighboring NCCs, FN puncta, and FN fibers sensed by the agent. A flowchart depicting how cell velocities are calculated is provided in Figure 2—figure supplement 1C.
 
-## Description of how the cell-ECM force is calculated
+#### Description of how the cell-ECM force is calculated
 
-The direction of the cell-ECM force is determined by two vectors of unit length. The first, F^hap , corresponds to haptotaxis and biases NCC migration toward increasing densities of FN puncta and fibers. The second, F^cg , represents contact guidance and aligns cell velocities along the direction of FN fibers. For simplicity, we take the direction of the resultant cell-ECM force, F^ECM(i) , as a linear combination of these vectors weighted by a fixed parameter 0≤χ≤1:F^ECM(i)=(χF^hap+(1−χ)F^cg)‖χF^hap+(1−χ)F^cg‖,
+The direction of the cell-ECM force is determined by two vectors of unit length. The first, $F^_{hap}$ , corresponds to haptotaxis and biases NCC migration toward increasing densities of FN puncta and fibers. The second, $F^_{cg}$ , represents contact guidance and aligns cell velocities along the direction of FN fibers. For simplicity, we take the direction of the resultant cell-ECM force, $F^_{ECM}^{(i)}$ , as a linear combination of these vectors weighted by a fixed parameter $0\leqχ\leq1$:
 
-where ⋅ is the Euclidean norm. The magnitude of the cell-ECM force, FECMi, is determined by the number and position of neighboring FN puncta and fibers sensed by the cell. For simplicity, we have assumed that the force exerted by a single puncta or fiber decreases quadratically with increasing distance from the cell center. The magnitude of the total cell-ECM force is given byFECM(i)=‖∑j=1NFN(1−‖xi−pj‖Rfilo)2(xi−pj)‖xi−pj‖‖ ,
+$$
+F^_{ECM}^{(i)}=\frac{(χF^_{hap}+(1−χ)F^_{cg})}{‖χF^_{hap}+(1−χ)F^_{cg}‖},
+$$
 
-where ⋅ is the Euclidean norm, NFN the number of FN puncta and fibers sensed within an annular region of inner and outer radii Rcell and Rfilo , respectively, pj the position of punctum/fiber j, and xi the position of cell i. Note that this assumes any FN puncta or fibers that are ‘covered’ by a cell cannot be sensed. The total cell-ECM force is given by FECMi= FECMiF^ECMi.
+where $⋅$ is the Euclidean norm. The magnitude of the cell-ECM force, $F_{ECM}^{i},$ is determined by the number and position of neighboring FN puncta and fibers sensed by the cell. For simplicity, we have assumed that the force exerted by a single puncta or fiber decreases quadratically with increasing distance from the cell center. The magnitude of the total cell-ECM force is given by
 
-## Description of ECM remodeling in the ABM and how this determines the direction of contact guidance
+$$
+F_{ECM}^{(i)}=‖\sumj=1N_{FN}(1−\frac{‖x_{i}−p_{j}‖}{R_{filo}})^{2}\frac{(x_{i}−p_{j})}{‖x_{i}−p_{j}‖}‖ ,
+$$
 
-The direction of contact guidance is given by the average orientation of all FN fibers sensed within an annular region of inner radius Rcell and outer radius Rfilo of the cell:Fcg=1Nfibers∑j=1Nfibers(cos⁡(ϕj)sin⁡(ϕj)),
+where $⋅$ is the Euclidean norm, $N_{FN}$ the number of FN puncta and fibers sensed within an annular region of inner and outer radii $R_{cell}$ and $R_{filo}$ , respectively, $p_{j}$ the position of punctum/fiber $j$, and $x_{i}$ the position of cell $i$. Note that this assumes any FN puncta or fibers that are ‘covered’ by a cell cannot be sensed. The total cell-ECM force is given by $F_{ECM}^{i}= F_{ECM}^{i}F^_{ECM}^{i}$.
 
-where ϕj represents the angle fiber j makes with the x-axis and Nfibers the number of fibers located within the annular region described previously. The unit contact guidance direction, F^cg, can be obtained from the above vector by dividing by the magnitude of Fcg. Since FN fibers do not initially exist in the model, however, we must stipulate how they are assembled from immature FN puncta by motile NCCs. We thus distinguish between two types of FN in our modeling framework: puncta and fibers. Fibers are nearly identical to FN puncta but are equipped with an additional orientation, ϕ. Migrating cells assemble fibers from existing puncta when they pass over them (Figure 2—figure supplement 2). The initial orientation of the new fiber is chosen to be aligned along the direction of the cell velocity. Any NCC may further alter the orientation of existing fibers by passing over it: in this case, the cell alters the fiber orientation, ϕ, to its current velocity direction, θ, according to the ordinary differential equationdϕdt=ln⁡(2)Thalfsin⁡(θ−ϕ),
+#### Description of ECM remodeling in the ABM and how this determines the direction of contact guidance
 
-where the user-defined parameter Thalf represents the approximate time it takes to halve the angle between the fiber orientation and cell velocity vectors (Dallon et al., 1999). A cartoon depiction of this process is shown in Figure 2—figure supplement 2.
+The direction of contact guidance is given by the average orientation of all FN fibers sensed within an annular region of inner radius $R_{cell}$ and outer radius $R_{filo}$ of the cell:
 
-Additional ECM remodeling can occur when secretory cells deposit new FN puncta. This action, which creates a new FN punctum at the cell center location, occurs according to time intervals drawn from an exponential distribution with user-specified mean Tave. After a cell deposits an FN punctum, it samples a time interval, tr , from this distribution. The cell then secretes another FN puncta when the time since its last secretion event exceeds tr , provided at least one other FN molecule is located within an annular region of inner radius Rcell and outer radius Rfilo of the cell. The latter criterion models in vivo observations of FN deposition.
+$$
+F_{cg}=\frac{1}{N_{fibers}}\sumj=1N_{fibers}(\frac{cos⁡(ϕ_{j})}{sin⁡(ϕ_{j})}),
+$$
 
-## Description of how the direction of haptotaxis is determined
+where $ϕ_{j}$ represents the angle fiber $j$ makes with the $x$-axis and $N_{fibers}$ the number of fibers located within the annular region described previously. The unit contact guidance direction, $F^_{cg},$ can be obtained from the above vector by dividing by the magnitude of $F_{cg}.$ Since FN fibers do not initially exist in the model, however, we must stipulate how they are assembled from immature FN puncta by motile NCCs. We thus distinguish between two types of FN in our modeling framework: puncta and fibers. Fibers are nearly identical to FN puncta but are equipped with an additional orientation, $ϕ$. Migrating cells assemble fibers from existing puncta when they pass over them (Figure 2—figure supplement 2). The initial orientation of the new fiber is chosen to be aligned along the direction of the cell velocity. Any NCC may further alter the orientation of existing fibers by passing over it: in this case, the cell alters the fiber orientation, $ϕ$, to its current velocity direction, $\theta$, according to the ordinary differential equation
 
-The direction in which the cell biases its cell-ECM force in response to haptotaxis, F^hap , is sampled from a von Mises distribution (Mardia and Jupp, 1999) with parameters Arg(∇SFN) and ∇SFN , where∇SFN=γFN[∑j=1NFN∇{exp⁡(−‖xi−pj‖22(Rfilo−Rcell)2)}].
+$$
+\frac{dϕ}{dt}=\frac{ln⁡(2)}{T_{half}}sin⁡(\theta−ϕ),
+$$
+
+where the user-defined parameter $T_{half}$ represents the approximate time it takes to halve the angle between the fiber orientation and cell velocity vectors (Dallon et al., 1999). A cartoon depiction of this process is shown in Figure 2—figure supplement 2.
+
+Additional ECM remodeling can occur when secretory cells deposit new FN puncta. This action, which creates a new FN punctum at the cell center location, occurs according to time intervals drawn from an exponential distribution with user-specified mean $T_{ave}$. After a cell deposits an FN punctum, it samples a time interval, $t_{r}$ , from this distribution. The cell then secretes another FN puncta when the time since its last secretion event exceeds $t_{r}$ , provided at least one other FN molecule is located within an annular region of inner radius $R_{cell}$ and outer radius $R_{filo}$ of the cell. The latter criterion models in vivo observations of FN deposition.
+
+#### Description of how the direction of haptotaxis is determined
+
+The direction in which the cell biases its cell-ECM force in response to haptotaxis, $F^_{hap}$ , is sampled from a von Mises distribution (Mardia and Jupp, 1999) with parameters $Arg(\nablaS_{FN})$ and $\nablaS_{FN}$ , where
+
+$$
+∇S_{FN}=\gamma_{FN}[\sumj=1N_{FN}∇{exp⁡(−\frac{‖x_{i}−p_{j}‖^{2}}{2(R_{filo}−R_{cell})^{2}})}].
+$$
 
 This approach follows that originally introduced by Binny et al., 2016, to yield directional information from discrete distributions. In this case, the parameters are chosen such that cell migration is biased toward increasing densities of FN molecules but becomes more random if the cell senses FN located far from its center of mass.
 
-## Description of how the cell-cell repulsive force is calculated
+#### Description of how the cell-cell repulsive force is calculated
 
-The direction of the cell-cell repulsion force, F^repi , is similarly sampled from a von Mises distribution with parameters Arg(-∇Scell) and -∇Scell , where∇Scell=γcell[∑j=1Ncell∇{exp⁡(−‖xi−xj‖22(Rcell)2)} ],
+The direction of the cell-cell repulsion force, $F^_{rep}^{i}$ , is similarly sampled from a von Mises distribution with parameters $Arg(-\nablaS_{cell})$ and $-\nablaS_{cell}$ , where
 
-and Ncell is the number of cells within a neighborhood of radius Rfilo around cell i. This allows cells to bias their migration toward low-density regions, while still enabling cells to align with each other when they are further away. The magnitude of the force is determined in a similar fashion to that of the cell-ECM force, and is given byFrep(i)=‖∑j=1Ncellci (1−‖xi−xj‖Rfilo)2(xi−xj)‖xi−xj‖‖ ,
+$$
+∇S_{cell}=\gamma_{cell}[\sumj=1N_{cell}∇{exp⁡(−\frac{‖x_{i}−x_{j}‖^{2}}{2(R_{cell})^{2}})} ],
+$$
 
-where ci denotes the strength of cell-cell repulsion. The total cell-ECM force is given by Frepi= FrepiF^repi.
+and $N_{cell}$ is the number of cells within a neighborhood of radius $R_{filo}$ around cell $i$. This allows cells to bias their migration toward low-density regions, while still enabling cells to align with each other when they are further away. The magnitude of the force is determined in a similar fashion to that of the cell-ECM force, and is given by
 
-## Initial and boundary conditions of the model
+$$
+F_{rep}^{(i)}=‖\sumj=1N_{cell}c_{i} (1−\frac{‖x_{i}−x_{j}‖}{R_{filo}})^{2}\frac{(x_{i}−x_{j})}{‖x_{i}−x_{j}‖}‖ ,
+$$
 
-We model NCC migration from the neural tube by initializing a column of non-intersecting secretory cells a distance Rcell away from a sub-interval of the left-hand boundary (with user-defined width lentr centered along the line y=0), as depicted in Figure 2—figure supplement 1B. This ‘entrance strip’ is intended to represent the emergence of NCCs from a discrete subset of the neural tube. To guarantee that each NCC senses at least one FN punctum at the beginning of simulations, so that migration can occur, the first column of the FN lattice is placed a distance Rcell+0.5Rfilo to the right of the secretory cell centers. Non-secretory trailing cells subsequently enter the domain at the same locations as the initial secretory cells, provided space is available. For the parameter values listed in Table 1, seven leader cells were initialized. We found that the number of trailing cells that enter the domain using these parameter values ranged from 1 to 140, depending on the success of migration (Figure 2—figure supplement 8).
+where $c_{i}$ denotes the strength of cell-cell repulsion. The total cell-ECM force is given by $F_{rep}^{i}= F_{rep}^{i}F^_{rep}^{i}$.
+
+#### Initial and boundary conditions of the model
+
+We model NCC migration from the neural tube by initializing a column of non-intersecting secretory cells a distance $R_{cell}$ away from a sub-interval of the left-hand boundary (with user-defined width $l_{entr}$ centered along the line $y=0$), as depicted in Figure 2—figure supplement 1B. This ‘entrance strip’ is intended to represent the emergence of NCCs from a discrete subset of the neural tube. To guarantee that each NCC senses at least one FN punctum at the beginning of simulations, so that migration can occur, the first column of the FN lattice is placed a distance $R_{cell}+0.5R_{filo}$ to the right of the secretory cell centers. Non-secretory trailing cells subsequently enter the domain at the same locations as the initial secretory cells, provided space is available. For the parameter values listed in Table 1, seven leader cells were initialized. We found that the number of trailing cells that enter the domain using these parameter values ranged from 1 to 140, depending on the success of migration (Figure 2—figure supplement 8).
+
+**Table 1.**
+ Parameter values corresponding to the baseline parameter regime listed in the main text.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value (units)</th>
+      <th>Meaning</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rfilo</td>
+      <td>27.5 (μm)</td>
+      <td>Filopodial radius of cells (measured from the cell center of mass)</td>
+      <td>Colombi et al., 2020; McLennan and Kulesa, 2010</td>
+    </tr>
+    <tr>
+      <td>Rcell</td>
+      <td>7.5 (μm)</td>
+      <td>Cell body radius</td>
+      <td>Szabó et al., 2019; McLennan et al., 2020</td>
+    </tr>
+    <tr>
+      <td>lentr</td>
+      <td>120 (μm)</td>
+      <td>Length of neural tube section from which cells emerge</td>
+      <td>Szabó et al., 2019; McLennan et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Tave</td>
+      <td>30 (min)</td>
+      <td>Average time for cells to secrete FN</td>
+      <td>Rozario et al., 2009; Davidson et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Thalf</td>
+      <td>30 (min)</td>
+      <td>Average time it takes for cells to adjust the orientation of FN fibers</td>
+      <td>Rozario et al., 2009; Davidson et al., 2008</td>
+    </tr>
+    <tr>
+      <td>sFNmax</td>
+      <td>0.8 (μm/min)</td>
+      <td>Maximum cell speed when cells sense FN</td>
+      <td>Ridenour et al., 2014</td>
+    </tr>
+    <tr>
+      <td>soffmax</td>
+      <td>0.05 (μm/min)</td>
+      <td>Maximum cell speed when cells do not sense FN</td>
+      <td>Selected to be an order of magnitude smaller than sFNmax</td>
+    </tr>
+    <tr>
+      <td>Δt</td>
+      <td>0.1 (min)</td>
+      <td>Time step</td>
+      <td>Selected based on preliminary ABM simulations</td>
+    </tr>
+    <tr>
+      <td>γFN</td>
+      <td>300 (a.u.)</td>
+      <td>Height of Gaussian function used to parameterize the von Mises distribution for the haptotaxis force</td>
+      <td>Selected based on preliminary ABM simulations</td>
+    </tr>
+    <tr>
+      <td>γcell</td>
+      <td>100 (a.u.)</td>
+      <td>Height of Gaussian function used to parameterize the von Mises distribution for the cell-cell repulsion force</td>
+      <td>Selected based on preliminary ABM simulations</td>
+    </tr>
+    <tr>
+      <td>λFN</td>
+      <td>20 (μm)</td>
+      <td>Spacing between FN puncta of the initial lattice</td>
+      <td>Selected to ensure cells sense at least one FN puntum at all times</td>
+    </tr>
+    <tr>
+      <td>χ</td>
+      <td>0.5 (a.u.)</td>
+      <td>Fraction by which the cell-ECM force is weighted in the direction of the haptotaxis force</td>
+      <td>Selected based on global sensitivity analysis results</td>
+    </tr>
+    <tr>
+      <td>ci</td>
+      <td>0.5 (a.u.)</td>
+      <td>Cell-cell repulsion force strength</td>
+      <td>Selected based on global sensitivity analysis results</td>
+    </tr>
+  </tbody>
+</table>
 
 Cells already within the domain experience reflective conditions at all boundaries, which in practice is implemented as if they ‘bounce back’ from the wall. This ensures that no cell can exit the domain and is a discrete analogue of a no-flux boundary condition.
 
-## Computational performance
+#### Computational performance
 
 The walltime for a single ABM realization varied between about 90 s and 2 min, depending on the number of cells that enter the domain and the number of FN puncta secreted. Simulations were performed on a workstation composed of four cores (Intel(R) Core(TM) i5-7500T CPU @ 2.70 GHz).
 
-## Data analysis
+#### Data analysis
 
 Violin plots were generated with Matlab (version 2021a), using open-source methods from Bechtold, 2016. Violin plots are designed to yield the same information as box plots, but also use kernel density estimation to calculate the approximate distribution of the summary statistic. Statistical significance of different summary statistic distributions compared to the baseline (WT) parameter regime was assessed via a Mann-Whitney U-test using the ranksum function in Matlab (version 2021a). The Mann-Whitney U-test determines whether two distributions are significantly different by measuring the probability that a given sample from one distribution is less than that of the other. We have also corrected p-values for multiple comparisons by applying a conservative Bonferroni correction, in which we multiply the raw p-values by the number of statistical tests performed, to reduce the false discovery rate (Goeman and Solari, 2014).
 
-## Parameter values
+#### Parameter values
 
 Table 1 presents a list of the parameters used for the ‘baseline parameter regime’ discussed in the Results section (a.u.=arbitrary units). The sources of these values are listed in the table.
 
-## Guiding force implementation in the discrete model
+### Guiding force implementation in the discrete model
 
-The ‘guiding force’ discussed in the Results section is oriented along the horizontal axis, such that its vector of unit magnitude is given byF^guid=(10).
+The ‘guiding force’ discussed in the Results section is oriented along the horizontal axis, such that its vector of unit magnitude is given by
 
-Since we cannot deduce the magnitude of the guiding force a priori, we opt to have the guiding force only affect the direction, not the speed, of cell motion. The cell velocity is generalized such that its unit direction is given byv^(i)≈(1−z)(1ηFECM(i)+1ηFrep(i))+zF^guid‖(1−z)(1ηFECM(i)+1ηFrep(i))+zF^guid‖,
+$$
+F^_{guid}=(\frac{1}{0}).
+$$
 
-where 0≤z≤1 is a user-defined weight controlling the ‘strength’ of the guiding force, and ⋅ denotes the Euclidean norm. The speed of cell i is given byv(i)=min{smax,  ‖1ηFECM(i)+1ηFrep(i)‖},
+Since we cannot deduce the magnitude of the guiding force a priori, we opt to have the guiding force only affect the direction, not the speed, of cell motion. The cell velocity is generalized such that its unit direction is given by
 
-where smax denotes the user-defined maximum possible cell speed. When z=0, cells move without a guiding force. By contrast, when z=1, cells move strictly to the right.
+$$
+v^^{(i)}≈\frac{(1−z)(\frac{1}{η}F_{ECM}^{(i)}+\frac{1}{η}F_{rep}^{(i)})+zF^_{guid}}{‖(1−z)(\frac{1}{η}F_{ECM}^{(i)}+\frac{1}{η}F_{rep}^{(i)})+zF^_{guid}‖},
+$$
 
-## Computational model pseudocode
+where $0\leqz\leq1$ is a user-defined weight controlling the ‘strength’ of the guiding force, and $⋅$ denotes the Euclidean norm. The speed of cell $i$ is given by
 
-## Sensitivity analysis
+$$
+v^{(i)}=min{s_{max},  ‖\frac{1}{η}F_{ECM}^{(i)}+\frac{1}{η}F_{rep}^{(i)}‖},
+$$
+
+where $s_{max}$ denotes the user-defined maximum possible cell speed. When $z=0$, cells move without a guiding force. By contrast, when $z=1$, cells move strictly to the right.
+
+### Computational model pseudocode
+
+<table>
+  <tbody>
+    <tr>
+      <td>Create initial distributions of FN puncta and secretory NCCs.Initialize edge agents (these agents are located at the same initial position of leader cells, but are stationary, do not interact with NCCs, and are only used to determine when new cells enter the domain – see Step 5(e) below).For all secretory cells:Sample a time interval tr from an exponential distribution, with user-specified mean Tave.Set t=0.While t&lt;720 min:For all cells, compute their new velocities:For all FN puncta and fibers that lie outside a distance Rcell and within a distance Rfilo :Compute the gradient of the FN density, ∇SFN.Record that the cell senses FN and set the maximum cell speed to sFNmax.Sample F^hap ∼ von Mises ∇SFN, ∇SFN.If there are any FN fibers, compute Fcg using the equation listed in the Materials and methods section and divide by its magnitude to determine the corresponding unit vector, F^cg. Otherwise, set F^cg equal to 0.Compute the direction of the resulting cell-ECM force, F^ECM(i) , and its magnitude, FECM(i) , to obtain the total force FECM(i)=FECM(i)F^ECM(i).For all neighboring cells whose centers lie within a distance Rfilo :Compute the gradient of the cell density, ∇Scell.Sample F^rep ∼ von Mises -∇Scell, -∇Scell.Compute the magnitude of the resulting cell-cell repulsive force, Frep(i) , to obtain the total force Frep(i)=Frep(i)F^rep(i).If the cell did not sense any FN puncta or fibers in step (i)(2), then set its maximum cell speed to be soffmax. If it also did not sense any neighboring cells in step (ii), then do not change its current velocity and proceed to step 5(b).If the cell sensed at least one FN punctum/fiber or at least one other cell, then compute the new cell velocity, v(i).Reset the magnitude of the cell velocity to the maximum cell speed if the former quantity exceeds that value.If the cell experiences a guiding force, adjust the direction of the velocity according to the equation listed above.Record the new cell velocity.Apply a second-order Adams-Bashforth algorithm to update the position of all cell centers, given their velocities.Secrete new FN puncta in the domain:For all secretory NCCs:If the time since the cell last secreted FN exceeds tr AND the cell has sensed at least one FN punctum or fiber:Place a new FN punctum at the cell center.Sample a new time interval tr from an exponential distribution with mean Tave.Apply reflective boundary conditions to all cells that have exited the domain.Add non-secretory cells to the domain:For all edge agents (see step 2):If the edge agent center is not covered by another NCC, then add a new non-secretory cell whose center coincides with that of the edge agent.Remodel the FN matrix:For all FN puncta and fibers that lie within a distance Rcell of an NCC:If the FN substrate is a punctum, then convert it to a fiber by equipping it with an orientation in the direction of the current velocity of the cell.If the FN substrate is a fiber, then use Euler’s method to solve the ODE for dϕdt to find its new orientation.Set t=t+Δt.End while loop</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sensitivity analysis
 
 Pearson and partial Spearman rank correlation coefficients were computed using the corrcoef and partialcorr functions in Matlab version 2022a, respectively. Sobol indices were calculated with eFAST, which exploits periodic sampling strategies and fast Fourier transforms to accelerate the computation of these metrics (Saltelli et al., 1999). The eFAST algorithm calculates Sobol indices in the following manner: first, the algorithm samples parameter values from periodic distributions that ensure the values are approximately uniform within user-defined ranges; the frequencies of such periodic distributions (and their higher-order harmonics) are unique for each parameter. After computing model outputs and summary statistics for each parameter regime, the algorithm next performs a Fourier transform on the variance of each statistic. The algorithm finally calculates Sobol indices by measuring the fraction of the variance that is generated by the Fourier coefficients uniquely associated to each parameter.
 
-We examined the sensitivities of Rfilo , the maximum filopodial length, χ, the ABM weight controlling the extent to which NCC responses to the ECM are dominated by haptotaxis or contact guidance, and ci , the cell-cell repulsion force strength. Table 2 presents a list of the ranges of each parameter considered with eFAST. The range for the filopodial radius was chosen based on in vivo measurements of NCCs (Colombi et al., 2020; McLennan et al., 2012). Ranges for the cell-ECM weight, χ, and the cell-cell repulsive force strength, ci , were selected based on observations of preliminary ABM simulations, as the qualitative behavior of streams did not seem to be affected much when χ<0.25 and ci>5. All other ABM parameter values are fixed at the values stated in Table 1, with the exceptions of Rcell (10 μm), lentr (150 μm), Thalf (60 min), sFNmax (0.75 μm/min), and λFN (35 μm). We fixed these latter parameter values because their PRCCs (Figure 2—figure supplement 9) suggest relatively weak correlations with the maximum distance that cells travel compared to the parameters χ and Rfilo. We therefore do not expect that fixing these parameter values will greatly affect the conclusions obtained from the eFAST analysis.
+We examined the sensitivities of $R_{filo}$ , the maximum filopodial length, $χ$, the ABM weight controlling the extent to which NCC responses to the ECM are dominated by haptotaxis or contact guidance, and $c_{i}$ , the cell-cell repulsion force strength. Table 2 presents a list of the ranges of each parameter considered with eFAST. The range for the filopodial radius was chosen based on in vivo measurements of NCCs (Colombi et al., 2020; McLennan et al., 2012). Ranges for the cell-ECM weight, $χ$, and the cell-cell repulsive force strength, $c_{i}$ , were selected based on observations of preliminary ABM simulations, as the qualitative behavior of streams did not seem to be affected much when $χ<0.25$ and $c_{i}>5$. All other ABM parameter values are fixed at the values stated in Table 1, with the exceptions of $R_{cell}$ (10 $\mum$), $l_{entr}$ (150 μm), $T_{half}$ (60 min), $s_{FN}^{max}$ (0.75 $\mum$/min), and $\lambda_{FN}$ (35 $\mum$). We fixed these latter parameter values because their PRCCs (Figure 2—figure supplement 9) suggest relatively weak correlations with the maximum distance that cells travel compared to the parameters $χ$ and $R_{filo}$. We therefore do not expect that fixing these parameter values will greatly affect the conclusions obtained from the eFAST analysis.
+
+**Table 2.**
+ Parameter values and ranges used to generate the extended Fourier amplitude sensitivity testing (eFAST) results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Range of values considered in eFAST</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rfilo</td>
+      <td>[30, 75]</td>
+      <td>μm</td>
+    </tr>
+    <tr>
+      <td>χ</td>
+      <td>[0.25, 1]</td>
+      <td>Arbitrary units</td>
+    </tr>
+    <tr>
+      <td>ci</td>
+      <td>[0, 5]</td>
+      <td>Arbitrary units</td>
+    </tr>
+  </tbody>
+</table>
 
 We perform parameter sampling and eFAST analysis using the SALib library in Python (version 3.9.1), which provides unit-tested and open-source functions for global sensitivity analysis (Herman and Usher, 2017). One-hundred and thirty-one values for all three parameters (in addition to a dummy variable) were sampled from uniform distributions, with summary statistics averaged across 20 ABM replicates to reduce noise. The algorithm was repeated another two times to ensure statistical significance of the Sobol indices. Statistical significance was assessed for each parameter of interest by comparing its Sobol indices with those of the dummy variable via a two-sample t-test (Marino et al., 2008). p-Values for PRCCs were computed via a two-tailed t-test against the null hypothesis that the PRCC is equal to zero.
 
-## Embryos
+#### Embryos
 
 Fertilized White Leghorn chicken eggs (Centurion Poultry, Inc, Lexington, GA, USA) were incubated in a humidified incubator at 37°C to the desired developmental stage, measured by counting somite pairs in reference to HH stage (Hamburger and Hamilation, 1951).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Embryos were incubated in a humidified incubator at 37°C until the appropriate stage of development, then harvested and fixed overnight with 4% paraformaldehyde in PBS. After removal of extraneous tissue, embryos were prepared for whole-mount IHC by bisecting the head down the midline. Immunohistochemistry was performed by blocking in 4% bovine serum albumen and 0.01% TritonX for 2 hr at room temperature. Primary antibodies B3/D6 (Developmental Studies Hybridoma Bank) and HNK-1 (1:25, TIB-200, ATCC) overnight at 4°C in block as described in McLennan and Kulesa, 2007. Secondary antibody used for HNK1 was goat anti-mouse IgM (heavy stream) Alexa Fluor 488 (A-21042, Thermo Fisher Scientific) at 1:500. The samples were washed with PBS and then imaged.
 
-## FN expression analysis
+#### FN expression analysis
 
 Transverse 15 µm cryosections through the r4 axial level of chick embryos stage 9 through 12 were stained with HNK1 and FN antibodies as described above. Collection of 3D confocal z-stacks (Zeiss LSM 800) and maximum z-projection of images were performed. We measured the total distance migrated by NCCs in control and morpholino-injected embryos (Figure 1E). We calculated the percentage of area covered using the ‘Surfaces’ function of Imaris (Bitplane) to create a surface mask by manually drawing the outline of the entire second branchial arch (ba2). We then calculated the area of the HNK1 fluorescence signal using the masked ba2 surface. We set a consistent intensity threshold to the same value for each dataset, a surface grain size of 1 µm was set, the diameter of the largest sphere was set to 1 µm, and the automatic ‘Surfaces’ function was applied. When the percentage of area was calculated using a signal other than HNK1, we manually measured the area of the ba2 and separately manually measured the area surrounding the signal within the ba2, creating a ‘Surfaces’. We calculated the percentage of the total arch the HNK-1 signal covered by comparing the two values. The percentage of distance the cells migrated was calculated by measuring the total distance to the ba2 and measured the distance migrated. The box plots in each figure (Figure 1E and F) were generated by using the values from each dataset indicated. The box plots and whiskers indicate the quartiles and range, respectively, of each dataset. p-Values were calculated using a standard Student’s t-test.
 
-## Gain- and loss-of-function experiments
+#### Gain- and loss-of-function experiments
 
 Loss-of-function of FN was accomplished by morpholino, introduced into premigratory cranial NCCs at HH10 (n=15 embryos/method), eggs re-incubated for 12 hr, and intact embryos subsequently harvested for 3D confocal static imaging. For gain-of-function experiments, soluble FN was microinjected into the mesoderm adjacent to r4 at HH9 prior to NCC emigration. Eggs were re-incubated until HH13, harvested and mounted for 3D confocal static imaging. The non-injected sides of embryos were used for control comparisons. We include control morpholino images (Figure 1—figure supplement 1).

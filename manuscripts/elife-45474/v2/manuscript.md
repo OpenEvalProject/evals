@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.45474.001 One of the challenges faced by global disease surveillance efforts is the lack of comparability across systems. Reporting commonly focuses on overall incidence, despite differences in surveillance quality between and within countries. For most immunizing infections, the age distribution of incident cases provides a more robust picture of trends in transmission. We present a framework to estimate transmission intensity for dengue virus from age-specific incidence data, and apply it to 359 administrative units in Thailand, Colombia, Brazil and Mexico. Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk, and correlate with known environmental drivers of transmission. We show how this approach could be used to guide the implementation of control strategies such as vaccination. Since age-specific counts are routinely collected by masany surveillance systems, they represent a unique opportunity to further our understanding of disease burden and risk for many diseases.
+One of the challenges faced by global disease surveillance efforts is the lack of comparability across systems. Reporting commonly focuses on overall incidence, despite differences in surveillance quality between and within countries. For most immunizing infections, the age distribution of incident cases provides a more robust picture of trends in transmission. We present a framework to estimate transmission intensity for dengue virus from age-specific incidence data, and apply it to 359 administrative units in Thailand, Colombia, Brazil and Mexico. Our estimates correlate well with those derived from seroprevalence data (the gold standard), capture the expected spatial heterogeneity in risk, and correlate with known environmental drivers of transmission. We show how this approach could be used to guide the implementation of control strategies such as vaccination. Since age-specific counts are routinely collected by masany surveillance systems, they represent a unique opportunity to further our understanding of disease burden and risk for many diseases.
 
 ## Introduction
 
@@ -36,7 +36,17 @@ Here, we use dengue virus as an example to illustrate how age-specific incidence
 
 We estimated the average forces of infection (FOI) over the last 20 years for 148 administrative level one units where age specific case data was available (Table 1, Figure 1B): 72/76 provinces of Thailand, 28/32 departments of Colombia, 21/27 states of Brazil, and 27/31 states of Mexico. These administrative units comprise 90%, 99%, 90% and 91% of the population at risk of these countries respectively. We also estimated forces of infection for 211 municipalities (administrative level two units) of Colombia where at least 200 cases were reported over the period covered by the data.
 
-The average FOI (the rate at which susceptible individuals that will become infected in a year by any dengue serotype) was 0.096 in Thailand (95%CI 0.092-0.100), 0.132 (95%CI 0.128-0.136) in Colombia, 0.124 (95%CI 0.116-0.128) in Brazil, and 0.052 (95%CI 0.048-0.056) in Mexico. This implies that on average 9.6% of the susceptible population in Thailand gets infected every year by any of the circulating serotypes (1-e-FOI). Similarly, 12% of the susceptible population of Colombia and Brazil, and 5% of the susceptible population of Mexico get infected yearly.
+![Figure 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-v2.jpg)
+
+**Figure 1.:** (A) Examples of the age-specific incidence of dengue observed in two settings with very high endemic transmission (Thailand 1- Udon Thani, Thailand; Brazil 1 Pernambuco, Brazil) and two settings with lower and very low transmission (Thailand 2 = Chiang Mai, Thailand; Brazil 2 = Parana, Brazil). (B) Maps of our estimates of the FOI for the four countries. (C) Correlation between our estimates of the force of infection, with estimates derived from age-stratified serological data (gold standard) for 16 settings where we had both types of data (Thailand: Rayong (Rodríguez-Barraquer et al., 2014); Bangkok (Imai et al., 2015); Ratchaburi (Imai et al., 2015); Lop Buri, Narathiwat, Trang, Ayuttayah (Vongpunsawad et al., 2017). Brazil: Pernambuco (Rodriguez-Barraquer et al., 2011); Salvador (Wilson et al., 2007). Colombia (unpublished). Mexico: Morelos (Amaya-Larios et al., 2014), Yucatan (Hladish et al., 2016). The locations of the specific cities are shown in the maps in panel B.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Red = Thailand, blue = Colombia, purple = Brazil, orange = Mexico.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig1-figsupp2-v2.jpg)
+
+The average FOI (the rate at which susceptible individuals that will become infected in a year by any dengue serotype) was 0.096 in Thailand (95%CI 0.092-0.100), 0.132 (95%CI 0.128-0.136) in Colombia, 0.124 (95%CI 0.116-0.128) in Brazil, and 0.052 (95%CI 0.048-0.056) in Mexico. This implies that on average 9.6% of the susceptible population in Thailand gets infected every year by any of the circulating serotypes ($1-e^{-FOI}$). Similarly, 12% of the susceptible population of Colombia and Brazil, and 5% of the susceptible population of Mexico get infected yearly.
 
 However, as expected, transmission intensity varied greatly within countries, ranging between 0.04 and 0.15 (coefficient of variation (CV) = 0.27) across provinces of Thailand; between 0.02 and 0.20 across departments of Colombia (CV = 0.37), between 0.02 and 0.24 across states of Brazil (CV = 0.56); and between 0.01 and 0.092 across states of Mexico (CV = 0.45). Transmission was highest in the North East of Brazil (average FOI of 0.152) and in the Caribbean region of Colombia (average FOI of 0.156). There was also substantial heterogeneity within departments of Colombia. The mean CV for 15 departments where we had estimates for more than 5 municipalities was 0.4.
 
@@ -44,23 +54,35 @@ For the 16 locations where we had access to both age-stratified serological data
 
 Since estimates of transmission intensity derived from seroprevalence data are only available for a small number of locations, to further validate our method we also explored the association between our estimates of the FOI for 211 Colombian municipalities (administrative level 2) with known environmental drivers of dengue transmission including temperature, elevation, precipitation a published metric of Aedes aegypti abundance and population density (Figure 2, Figure 2—figure supplement 1). Models were weighted by the number of cases used to estimate the FOI. On average, the FOI increased by 0.006 (95% CI 0.004–0.007, R2 = 0.19) for each additional °C in temperature and, similarly, it decreased by 0.005 (95% CI 0.003, 0.006, R2 = 0.21) for each 100 m increase in elevation (Table 2). While population density was not associated with FOI estimates in unadjusted analyses, a twofold increase in density was associated with a 0.007 (95% 0.004–0.009) increase in FOI in the best fitting adjusted model. This model included elevation, population density and precipitation, and explained 35% (95%CI 23–50%) of the variance.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-v2.jpg)
+
+**Figure 2.:** Top panels show correlation between estimates of the FOI for 211 municipalities (administrative level 2) of Colombia and mean temperature (A), elevation (B) and Aedes abundance (C). Size of symbols is proportional to the number of cases available to estimate the FOI. Bottom panels shows lack of correlation between environmental drivers and recent incidence, the most commonly used metric of transmission intensity. R2 values reported were obtained by fitting weighted linear regression models, with weights proportional to the number of cases used to derive the FOI estimate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Top panels show correlation between estimates of the FOI for 211 municipalities (administrative level 2) of Colombia and precipitation (A) and Population density (B). Size of symbols is proportional to the number of cases available to estimate the FOI. Bottom panels show correlation between these two environmental drivers and recent incidence. R2 values reported were obtained by fitting weighted linear regression models, with weights proportional to the number of cases used to derive the FOI estimate.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Filled circles show the estimates for each municipality (administrative level two unit) within the department that reported > 200 cases. Hollow circles indicate the mean force of infection for those municipalities that reported < 200 cases. Size of circles is proportional to the number of cases available to estimate the FOI. Triangles indicate the mean estimate for each department.
+
 In contrast, the recent incidence of dengue in these municipalities was not correlated with temperature, elevation or Aedes aegypti abundance (R2 0.01, 0.01, and 0.00 respectively, Table 3). We did find a negative association between population density and incidence, indicating a 6% (95%CI 2–10%) decrease in log incidence for each 2-fold increase in population density.
 
-## Application: Guiding dengue vaccination policy
+### Application: Guiding dengue vaccination policy
 
 The only available dengue vaccine (Dengvaxia) has been licensed for use in children 9 years or older in 20 countries including Thailand, Brazil and Mexico. The WHO currently recommends confirmation (by virology or serology) of prior dengue infection at the individual level before vaccinating individuals, and therefore there is interest in identifying populations with high seropositivity to target pre-vaccination screening (WHO, 2018). In the absence of appropriate rapid serological assays that would allow implementing this individual screening strategy, an alternative that has been discussed is rolling out the vaccine in settings with 80% or greater seropositivity among 9 year olds. Using our estimates of the FOI, we calculated the proportion of the population expected to be seropositive at age 9 years for each of the subnational units represented in our data. Our results suggest that only a small minority of locations in Colombia and Brazil have > 80% seropositivity in this age group (Figure 3, Figure 3—source data 1). The expected proportion seropositive at 9 years of age ranged between 0.35 and 0.75 in provinces of Thailand; 0.13 and 0.85 in departments of Colombia; 0 and 0.88 in states of Brazil; and 0.07 and 0.56 in states of Mexico. The seroprevalence was estimated to be high enough in only 2/28 Colombian departments, 4/25 Brazilian states and none of the 72 Thai provinces or 27 Mexican states. Furthermore, even within the two Colombian departments that met the 80% seroprevalence threshold, only 9/13 (70%) of the municipalities evaluated reached this level. This proportion would probably be much lower had we considered all the municipalities in these departments, as those excluded had, on average, lower FOI (Figure 2—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/45474/elife-45474-fig3-v2.jpg)
 
-**Figure 3.:** Estimated dengue seroprevalence at 9 years of for administrative level 1 units of Thailand, Colombia, Brazil and Mexico Expected seroprevalence of dengue among children aged 9 years, derived from the FOI estimates (see Materials and methods for more details), for administrative level 1 units of Thailand (A), Colombia (B), Brazil (C) and Mexico (D). For each country, administrative units were ranked by their FOI. Dashed lines indicate 50% and 80% seroprevalence levels. Therefore, units above the 80% line are those where, according to the WHO-SAGE recommendation from 2018, it might be reasonable target children aged 9 years old for vaccination. Units below the 50% line are those where vaccination of this age-group would not be recommended. The axis on the right of the plot indicates the minimum age-group that would need to be targeted in each location to ensure at least 80% seropositivity.10.7554/eLife.45474.009Figure 3—source data 1.
+**Figure 3.:** Estimated dengue seroprevalence at 9 years of for administrative level 1 units of Thailand, Colombia, Brazil and Mexico Expected seroprevalence of dengue among children aged 9 years, derived from the FOI estimates (see Materials and methods for more details), for administrative level 1 units of Thailand (A), Colombia (B), Brazil (C) and Mexico (D). For each country, administrative units were ranked by their FOI. Dashed lines indicate 50% and 80% seroprevalence levels. Therefore, units above the 80% line are those where, according to the WHO-SAGE recommendation from 2018, it might be reasonable target children aged 9 years old for vaccination. Units below the 50% line are those where vaccination of this age-group would not be recommended. The axis on the right of the plot indicates the minimum age-group that would need to be targeted in each location to ensure at least 80% seropositivity.
 
 In locations where seroprevalence among 9 year olds was estimated to be less than 80%, we calculated the age-group that could be targeted to ensure a seroprevalence > 80%. Our results suggest that, to comply with the WHO-SAGE recommendations, it would be necessary to target children 14 years of age or older in over 70% (108/148) of locations. Furthermore, in approximately 50% of the locations evaluated, it would be necessary to target individuals aged 18 years or older, precluding school-based vaccination strategies.
 
-## Alternative metrics
+### Alternative metrics
 
 Both the incidence and the mean adjusted incidence performed very poorly in ranking spatial units compared to the FOI (Figure 1—figure supplement 1). In contrast, the proportion of incidence under 10 years and the mean age of cases (to a lesser degree) performed quite well at ranking spatial units within countries. However, none of these metrics performed as well as the FOI when comparing spatial units from different countries, and they did not correlate as well with the gold standard (FOI estimates derived from seroprevalence data) (Figure 1—figure supplement 2).
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 Since different surveillance systems have different reporting practices, we compared FOI estimates obtained when using data from severe cases alone (DHF or severe dengue) to estimates obtained when all dengue cases were considered jointly (Figure 4). This comparison was limited to Colombia, Brazil and Mexico because we only had DHF data from Thailand.
 
@@ -88,43 +110,243 @@ Targeting control interventions against dengue and other communicable diseases r
 
 ## Materials and methods
 
-## Data used
+### Data used
 
 We used data on the yearly age-specific reported number of dengue cases for administrative level 1 units of Thailand, Colombia, Brazil and Mexico (Ministério da Saude, 2017; Bureau of Epidemiology, Department of Disease Control, 2019; Direccion General de Epidemiología, 2017; Instituto Nacional de Salud Colombia, 2016) as well as administrative level two units from Colombia. The period of time available varied between countries, but ranged between 5 years in Colombia and 25 years in Thailand. Where possible (Thailand and Brazil) we used age-specific case reports on dengue hemorrhagic fever (DHF) for our analyses. However, for both Colombia and Mexico, we had to use data on all reported dengue cases because the number of DHF cases reported by a substantial number of spatial units (9/32 units in Colombia and 10/31 in mexico) were insufficient to estimate the FOI. We also used population data from each administrative unit analyzed, available from the national statistical office of each country. Information on the type (e.g. DHF vs. all dengue), source and years of data used are provided in Table 1.
 
-## Statistical analyses
+**Table 1.**
+ Data sources used
 
-## Estimating the force of infection
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Years of data available</th>
+      <th>Type of report available</th>
+      <th>Type of report used</th>
+      <th>No. admin units analyzed*</th>
+      <th>Source of dengue data</th>
+      <th>Source of census data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Thailand</td>
+      <td>1985–2010</td>
+      <td>DHF</td>
+      <td>DHF</td>
+      <td>72</td>
+      <td>(Bureau of Epidemiology, Department of Disease Control, 2019)</td>
+      <td>(National Statistical Office Thailand, 2017)</td>
+    </tr>
+    <tr>
+      <td>Colombia</td>
+      <td>2007–2012</td>
+      <td>DHF/DF</td>
+      <td>All cases</td>
+      <td>28/211</td>
+      <td>(Instituto Nacional de Salud Colombia, 2016)</td>
+      <td>(DANE, 2019)</td>
+    </tr>
+    <tr>
+      <td>Brazil</td>
+      <td>1998–2015</td>
+      <td>DHF/DF†</td>
+      <td>DHF</td>
+      <td>21</td>
+      <td>(Ministério da Saude, 2017)</td>
+      <td>(Instituto Brasileiro de Geografia e Estadistica, 2017)</td>
+    </tr>
+    <tr>
+      <td>Mexico</td>
+      <td>2000–2009</td>
+      <td>DHF/DF</td>
+      <td>All cases</td>
+      <td>27</td>
+      <td>(Direccion General de Epidemiología, 2017)</td>
+      <td>(Instituto Nacional de Estadistica y Geografia, 2016)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Admin level one/Admin level two units with at least 150 cases reported†Data from Brazil is on hospitalized dengue fever and dengue hemorrhagic fever cases._
+
+**Table 2.**
+ Association between environmental variables and dengue force of infection for 211 municipalities in Colombia
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable</th>
+      <th colspan="2">Unadjusted</th>
+      <th colspan="2">Adjusted</th>
+    </tr>
+    <tr>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elevation (per 100 m)</td>
+      <td>−0.005</td>
+      <td>−0.003,–0.006</td>
+      <td>−0.007</td>
+      <td>−0.008,–0.006</td>
+    </tr>
+    <tr>
+      <td>Mean temperature (per °C)</td>
+      <td>0.006</td>
+      <td>0.004, 0.007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean weekly precipitation</td>
+      <td>0.0001</td>
+      <td>−0.000, 0.001</td>
+      <td>−0.0005</td>
+      <td>−0.0008, −0.0002</td>
+    </tr>
+    <tr>
+      <td>Population density</td>
+      <td>−0.001</td>
+      <td>−0.003, 0.001</td>
+      <td>0.007</td>
+      <td>0.004, 0.009</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Association between environmental variables and the log incidence of dengue (over the last 5 years) for 211 municipalities in Colombia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable</th>
+      <th colspan="2">Unadjusted</th>
+      <th colspan="2">Adjusted*</th>
+    </tr>
+    <tr>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elevation (per 100 m)</td>
+      <td>−0.02</td>
+      <td>−0.03, 0</td>
+      <td>0.01</td>
+      <td>−0.01, 0.03</td>
+    </tr>
+    <tr>
+      <td>Mean temperature (per °C)</td>
+      <td>0.01</td>
+      <td>0, 0.05</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean weekly precipitation</td>
+      <td>0</td>
+      <td>0, 0</td>
+      <td>−0.002</td>
+      <td>−0.01, 0</td>
+    </tr>
+    <tr>
+      <td>Population density</td>
+      <td>−0.04</td>
+      <td>−0.07,–0.01</td>
+      <td>−0.06</td>
+      <td>−0.10, −0.02</td>
+    </tr>
+    <tr>
+      <td colspan="2">* R2 of adjusted model: 0.04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analyses
+
+#### Estimating the force of infection
 
 We estimated the average force of infection (FOI, λ) of dengue, over the last 20 years, for each administrative unit for which we had available data. The FOI is a metric used to characterize the transmission intensity in a specific setting and estimates the per capita rate at which susceptible individuals are infected. Methods to estimate transmission intensity from age-specific incidence data have been previously used to reconstruct the transmission history of measles and dengue (Grenfell and Anderson, 1985; Cummings et al., 2009). Briefly, these methods rely on the fact that, for immunizing infections, accumulation of immunity shapes the age distribution of future cases. In settings with high endemic transmission, incident cases are expected to be concentrated in younger age groups, as adults are likely to be already immune (Figure 1A). In contrast, in places where there is less population immunity, the age distribution of cases is more likely to resemble the age distribution of the population itself, with cases in in both children and adult populations.
 
 Methods to estimate dengue forces of infection from case data have been applied to settings where dengue is thought to be close to endemic circulation (Cummings et al., 2009; Imai et al., 2016). These methods generally rely on the cumulative incidence proportion, and therefore assume that all individuals are infected by dengue at some point in their lifetime. They also often assume that the distribution of cases (of dengue hemorrhagic fever cases in particular) is representative of the distribution of secondary cases. Here, we extend these methods to accommodate settings where transmission hazards are lower or where dengue may have been more recently introduced. We do this by modeling directly the age-specific incidence of cases, rather than the cumulative incidence proportion.
 
-The fraction of the population susceptible to all dengue serotypes at age a and t, x(a,t) is given by,(1)x(a,t)=e∫0a−4λ(t−τ)dτ.where λ(t) is the average FOI per serotype at time t and 4λ(t) is the total FOI assuming four circulating serotypes. The proportion of individuals of age a who have been infected with only serotype at time t, but are still susceptible to all other serotypes is denoted z1(a,t) and is given by:(2)z1(a,t)=4(e−∫0a3λ(t−τ)dτ)(1−e−∫0aλ(t−τ)dτ).
+The fraction of the population susceptible to all dengue serotypes at age a and t, x(a,t) is given by,
 
-Assuming that the age-specific incidence of cases is representative of the distribution of secondary infections, the expected incidence rate among individuals age a at time t is given by(3)I(a,t)=3λ(t)z1(a,t)and the expected reported number of cases is(4)(a,t)=(I(a,t)P(a,t)ϕ(t)),where P(a,t) is the size of the population aged a at time t, and Φ(t) represents a time specific reporting rate/scaling factor.
+$$
+x(a,t)=e^{\int_{0}^{a}−4\lambda(t−\tau)d\tau}.
+$$
 
-## Likelihood and estimation
+where λ(t) is the average FOI per serotype at time t and 4λ(t) is the total FOI assuming four circulating serotypes. The proportion of individuals of age a who have been infected with only serotype at time t, but are still susceptible to all other serotypes is denoted z1(a,t) and is given by:
 
-Assuming that the observed age-specific case counts C(a,t) follow a Poisson distribution, the likelihood of the data can be expressed as(5)L(C|λ,ϕ)=∏t∏a(Λ(a,t)C(a,t)e−Λ(a,t))C(a,t)!,
+$$
+z_{1}(a,t)=4(e^{−\int_{0}^{a}3\lambda(t−\tau)d\tau})(1−e^{−\int_{0}^{a}\lambda(t−\tau)d\tau}).
+$$
 
-We fit the model in a Bayesian Markov chain Monte Carlo (MCMC) framework using the RStan package in R (Stan development Team, 2019) (The R Foundation, 2019). Both the annual hazards of infection (λ) and the reporting rates (Φ) were estimated on a logit scale using wide priors (Normal distribution with mean 0 and standard deviation of 1000). We simulated four independent chains, each of 30000 iterations and discarded the firs 10000 iterations as warm-up. We assessed convergence visually and using Rubin’s R statistic. We obtained 95% credible intervals from the 2.5% and 97.5% percentiles of the posterior distributions. Code to implement the model is available at https://github.com/isabelrodbar/dengue_foi. (Rodriguez-Barraquer, 2019; copy archived at https://github.com/elifesciences-publications/dengue_foi).
+Assuming that the age-specific incidence of cases is representative of the distribution of secondary infections, the expected incidence rate among individuals age a at time t is given by
+
+$$
+I(a,t)=3\lambda(t)z_{1}(a,t)
+$$
+
+and the expected reported number of cases is
+
+$$
+(a,t)=(I(a,t)P(a,t)ϕ(t)),
+$$
+
+where P(a,t) is the size of the population aged a at time t, and Φ(t) represents a time specific reporting rate/scaling factor.
+
+#### Likelihood and estimation
+
+Assuming that the observed age-specific case counts C(a,t) follow a Poisson distribution, the likelihood of the data can be expressed as
+
+$$
+L(C|\lambda,ϕ)=\prodt\proda\frac{(Λ(a,t)^{C(a,t)}e^{−Λ(a,t)})}{C(a,t)!},
+$$
+
+We fit the model in a Bayesian Markov chain Monte Carlo (MCMC) framework using the RStan package in R (Stan development Team, 2019) (The R Foundation, 2019). Both the annual hazards of infection ($\lambda$) and the reporting rates (Φ) were estimated on a logit scale using wide priors (Normal distribution with mean 0 and standard deviation of 1000). We simulated four independent chains, each of 30000 iterations and discarded the firs 10000 iterations as warm-up. We assessed convergence visually and using Rubin’s R statistic. We obtained 95% credible intervals from the 2.5% and 97.5% percentiles of the posterior distributions. Code to implement the model is available at https://github.com/isabelrodbar/dengue_foi. (Rodriguez-Barraquer, 2019; copy archived at https://github.com/elifesciences-publications/dengue_foi).
 
 A limitation of this approach is that, due to the large number (often in the thousands) that are characteristic of the data for some settings, the estimated confidence intervals produced are extremely narrow and do not reflect the underlying uncertainty adequately. The observed counts can also be assumed to follow a negative binomial distribution to account for some overdispersion.
 
-## Parameters estimated
+#### Parameters estimated
 
 Since it is known that the FOI has varied substantially over time in many of the settings considered, we allowed λ(t) to vary as a function of time. To limit the number of parameters estimated, we assumed constant λ(t) for periods of 20 years. Thus, if for a given setting we were estimating hazards for the period 1935–2015, we assumed piecewise-constant λ(t)s for the periods 1935–1954, 1955–1974, 1975–1994, 1995–2015. Given the objective of this study was to characterize recent transmission in endemic settings, we focused our results on the estimate of the average λ(t) for the most recent 20-year period but present other estimates in the supplementary material (Appendix 1-Figure 1). Rather than reporting λ(t), we focus on reporting the total FOI (4λ(t)).
 
-## Estimating the proportion expected to be seropositive at a given age
+#### Estimating the proportion expected to be seropositive at a given age
 
-Using our estimates of the average FOI, we estimated the proportion of individuals expected to be seropositive by age y(x) as:y(x)=1−x(a)=1−e−4λawhere x(a) is the proportion of the population susceptible at age a and λ is the average FOI per serotype (assuming four serotypes circulating). Since the vaccine has been registered for use in children 9 years of age or older, we report the proportion of individuals expected to be seropositive by age 9 years for each of the settings.
+Using our estimates of the average FOI, we estimated the proportion of individuals expected to be seropositive by age y(x) as:
 
-## Estimating the minimum age to achieve a given level of seropositivity
+$$
+y(x)=1−x(a)=1−e^{−4\lambdaa}
+$$
 
-Given that the WHO recommended using this vaccine in places where at least 80% of the target age group is seropositive, we estimated the minimum age at which this level of seropositivity is expected for each of the settings. For a given level of transmission λ it is possible to estimate the minimum age (A) at which a given level of seropositivity (s) is expected as:A(s)=−log(1−s)4λ
+where x(a) is the proportion of the population susceptible at age a and λ is the average FOI per serotype (assuming four serotypes circulating). Since the vaccine has been registered for use in children 9 years of age or older, we report the proportion of individuals expected to be seropositive by age 9 years for each of the settings.
 
-## Validation and sensitivity analyses
+#### Estimating the minimum age to achieve a given level of seropositivity
+
+Given that the WHO recommended using this vaccine in places where at least 80% of the target age group is seropositive, we estimated the minimum age at which this level of seropositivity is expected for each of the settings. For a given level of transmission λ it is possible to estimate the minimum age (A) at which a given level of seropositivity (s) is expected as:
+
+$$
+A(s)=\frac{−log(1−s)}{4\lambda}
+$$
+
+### Validation and sensitivity analyses
 
 We validated our estimates of the FOI by comparing them to estimates obtained from age-stratified serological data (the gold standard) for 16 locations for which both serologic and age-specific case data was available. Methods to estimate forces of infection from seroprevalence data have been previously described (Ferguson et al., 1999; Rodriguez-Barraquer et al., 2011).
 
@@ -132,11 +354,11 @@ Since dengue transmission is known to be highly spatially heterogeneous, we also
 
 As stated above, a key assumption of this model is that the age distribution of cases represents the age distribution of secondary infections. Data from Thailand has consistently suggested that the majority of dengue hemorrhagic fever (DHF) cases arise from secondary infections (Burke et al., 1988) and therefore we limited our analysis to reports of DHF where possible (Thailand, Brazil). However, for Colombia and Mexico we used data from severe and non severe cases because the severe dengue data alone was too sparse. To assess the impact of the data type, we compared estimates obtained from DHF/severe cases alone, to those obtained when all dengue cases were considered.
 
-## Alternative metrics
+### Alternative metrics
 
 Since estimating the FOI requires fitting parametric models to the data, we explored whether alternative summary metrics, computed directly from the age-specific case data, could be equally useful in ranking spatial units within and across countries. The metrics considered included some that are commonly used by surveillance systems such as a) crude incidence and b) standardized mean incidence, but also alternative metrics that are not commonly used such as c) mean age of cases, d) cumulative proportion of incidence occurring by age 10 years and e) age at peak incidence. For each spatial unit, we computed these metrics using the most recent 5 years of data available.
 
-## Application: guiding dengue vaccination policy
+### Application: guiding dengue vaccination policy
 
 The first dengue vaccine has been licensed for use in children over 9 years of age in 20 countries. Due to uncertainty regarding the vaccine’s benefits and risks in individuals who haven’t been previously infected by dengue, the WHO’s scientific advisory group of experts (SAGE) committee recommended in April 2016 that this vaccine only be used in settings with known high endemicity, defined as places where seroprevalence is greater than 70% in the target vaccination age-group (SAGE, 2016), and should not be used in places where seroprevalence is under 50%.
 

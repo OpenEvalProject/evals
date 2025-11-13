@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/050gn5214 Sorbonne Université, Paris Brain Institute (Institut du Cerveau, ICM), Institut National de la Santé et de la Recherche Médicale U1127, Centre National de la Recherche Scientifique Unité Mixte de Recherche 7225, Assistance Publique–Hôpitaux de Paris, Campus Hospitalier Pitié-Salpêtrière Paris France
-2. https://ror.org/05f82e368 Université Paris Cité, CNRS, MAP5 Paris France
-3. https://ror.org/013cjyk83 Paris Sciences et Lettres (PSL) University, Institut Curie, Sorbonne Université Paris France
-4. https://ror.org/013cjyk83 Paris Sciences et Lettres (PSL) University, Collège de France Paris France
-5. https://ror.org/00hj54h04 Dell Pediatrics Research Institute, The University of Texas at Austin Austin United States
+1. Sorbonne Université, Paris Brain Institute (Institut du Cerveau, ICM), Institut National de la Santé et de la Recherche Médicale U1127, Centre National de la Recherche Scientifique Unité Mixte de Recherche 7225, Assistance Publique–Hôpitaux de Paris, Campus Hospitalier Pitié-Salpêtrière Paris France ([ROR:050gn5214](https://ror.org/050gn5214))
+2. Université Paris Cité, CNRS, MAP5 Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+3. Paris Sciences et Lettres (PSL) University, Institut Curie, Sorbonne Université Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+4. Paris Sciences et Lettres (PSL) University, Collège de France Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+5. Dell Pediatrics Research Institute, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
 ## Abstract
 
-The Reissner fiber (RF) is an acellular thread positioned in the midline of the central canal that aggregates thanks to the beating of numerous cilia from ependymal radial glial cells (ERGs) generating flow in the central canal of the spinal cord. RF together with cerebrospinal fluid (CSF)-contacting neurons (CSF-cNs) form an axial sensory system detecting curvature. How RF, CSF-cNs and the multitude of motile cilia from ERGs interact in vivo appears critical for maintenance of RF and sensory functions of CSF-cNs to keep a straight body axis, but is not well-understood. Using in vivo imaging in larval zebrafish, we show that RF is under tension and resonates dorsoventrally. Focal RF ablations trigger retraction and relaxation of the fiber’s cut ends, with larger retraction speeds for rostral ablations. We built a mechanical model that estimates RF stress diffusion coefficient D at 5 mm 2 /s and reveals that tension builds up rostrally along the fiber. After RF ablation, spontaneous CSF-cN activity decreased and ciliary motility changed, suggesting physical interactions between RF and cilia projecting into the central canal. We observed that motile cilia were caudally-tilted and frequently interacted with RF. We propose that the numerous ependymal motile monocilia contribute to RF’s heterogenous tension via weak interactions. Our work demonstrates that under tension, the Reissner fiber dynamically interacts with motile cilia generating CSF flow and spinal sensory neurons.
+The Reissner fiber (RF) is an acellular thread positioned in the midline of the central canal that aggregates thanks to the beating of numerous cilia from ependymal radial glial cells (ERGs) generating flow in the central canal of the spinal cord. RF together with cerebrospinal fluid (CSF)-contacting neurons (CSF-cNs) form an axial sensory system detecting curvature. How RF, CSF-cNs and the multitude of motile cilia from ERGs interact in vivo appears critical for maintenance of RF and sensory functions of CSF-cNs to keep a straight body axis, but is not well-understood. Using in vivo imaging in larval zebrafish, we show that RF is under tension and resonates dorsoventrally. Focal RF ablations trigger retraction and relaxation of the fiber’s cut ends, with larger retraction speeds for rostral ablations. We built a mechanical model that estimates RF stress diffusion coefficient D at 5 mm2/s and reveals that tension builds up rostrally along the fiber. After RF ablation, spontaneous CSF-cN activity decreased and ciliary motility changed, suggesting physical interactions between RF and cilia projecting into the central canal. We observed that motile cilia were caudally-tilted and frequently interacted with RF. We propose that the numerous ependymal motile monocilia contribute to RF’s heterogenous tension via weak interactions. Our work demonstrates that under tension, the Reissner fiber dynamically interacts with motile cilia generating CSF flow and spinal sensory neurons.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ In this study, we took advantage of the transparency of transgenic zebrafish lar
 
 ## Results
 
-## The Reissner fiber under tension spontaneously oscillates in vivo
+### The Reissner fiber under tension spontaneously oscillates in vivo
 
 To investigate the dynamical properties of the Reissner fiber, we performed high-speed imaging of the central canal in the transgenic reporter knock-in zebrafish line Tg(sspo:sspo-GFP) (Troutwine et al., 2020), in which the fiber is GFP-tagged (Figure 1). In 3 days post fertilization (dpf) Tg(sspo:sspo-GFP) larvae after paralysis (see Materials and methods), we observed that RF was straight and taut in the sagittal plane and rapidly changed position along the dorsoventral axis over time in the central canal (Figure 1A and B). These observations indicate that the fiber is under tension in vivo. In contrast, RF of larvae after fixation was slack and stationary (Figure 1C; see also Video 1 in paralyzed live larvae, Video 2 after fixation, Video 3 in unparalyzed live larvae). We developed a script to track the position of the fiber in the dorsoventral axis (Figure 1D; see also Materials and methods) as a function of its position in the rostrocaudal axis, discretized in 2 μm bins (Figure 1E1 and E2). We estimated that the dorsoventral displacement of the fiber from its mean position in the central canal (on average median ± standard deviation for all values provided hereafter: 74 nm ± 68 nm) was significantly larger in paralyzed living larvae than in euthanized larvae after fixation (on average: 32 nm ± 39 nm; unpaired two-tailed t-test: p < 10-4; Figure 1F1), whose perceived displacement may be due to noise in our imaging setup and artifacts of detection of the center position of the fiber. The amplitude of RF dorsoventral displacement was largest in the middle portion (125 nm ± 108 nm), followed by the fiber displacement on the rostral side (100 nm ± 103 nm; Tukey’s HSD Test for multiple comparisons: p < 10-4; Figure 1F1). The median of the amplitudes of RF displacement in the caudal end (70 nm ± 68 nm; Tukey’s HSD Test for multiple comparisons: p < 10-4; Figure 1F2) was the closest to the fiber displacement of fixed larvae, possibly partly reflecting that the fiber is anchored on both the rostral and caudal ends of the fish. Recordings from rostral, middle and caudal portions of different fish showed a greater variability in dorsoventral displacement from the mean position in the middle portion of the fish than on the rostral and caudal portions (Figure 1F3). Performing a spatial principal component analysis over all pixels in the video revealed that the first two components after dimensionality reduction represented dorsoventral translation and local rotation of the fiber, respectively (Figure 1G; see also Video 4). These observations uncover that RF under tension in vivo demonstrates dynamic dorsoventral oscillations with graded amplitudes of oscillations along the rostrocaudal axis.
 
@@ -47,7 +47,23 @@ To investigate the dynamical properties of the Reissner fiber, we performed high
 
 **Figure 1.:** (A) Spinning disk confocal microscopy setup using a 40X objective with 3 dpf Tg(sspo:sspo-GFP) zebrafish larvae for live imaging. Schema of zebrafish larva designates rostral (blue), middle (green) and caudal (red) sections, corresponding to somites 1–10, 11–20, 21–30, respectively. (B) Immunohistochemistry with anti-GFP antibodies in 3 dpf Tg(sspo:sspo-GFP) larva after fixation shows RF with the floor plate (FP) visible within the caudal somites of the spinal cord. (C) Live imaging snapshot of RF in the rostral somites of a 3 dpf Tg(sspo:sspo-GFP) paralyzed, living larva (top) and larva after fixation (bottom). (D) Example tracking of continuous motion of RF through the development of a script to model its movements in the dorsoventral axis. (E1) Example trace of the change in dorsoventral position of RF in one paralyzed, living larva (red) and another euthanized larva after fixation (black) over a 25 s timelapse acquired at 40 Hz. Data was discretized in 2 μm bins along the rostrocaudal axis before plotting. (E2) Zoomed-in display of the highlighted area marked on E1, showing a trace of the dorsoventral position of RF over 1 s for both the paralyzed, living larva and the euthanized larva after fixation, respectively, with circles indicating the sampling points. (F1) Displacement in the dorsoventral axis for paralyzed larvae (N=4 rostral, 4 middle, 4 caudal recordings) is significantly larger than that of fixed (N=4 recordings) larvae on average median ± standard deviation provided hereafter: in paralyzed living larvae = 74 nm ± 68 nm versus in fixed larvae = 32 nm ± 39 nm; unpaired two-tailed t-test: p < 10-4. The displacement was calculated from data that was discretized in 2 μm bins along the rostrocaudal axis. (F2) Dorsoventral displacement of RF is significantly different among rostral, middle and caudal segments of paralyzed larvae (on average median ± standard deviation in rostral somites = 100 nm ± 103 nm versus in middle somites = 125 nm ± 108 nm versus in caudal somites = 70 nm ± 68 nm versus in fixed larvae = 32 nm ± 39 nm; Tukey’s HSD Test for multiple comparisons: p < 10-4). (F3) Median dorsoventral displacement of RF from the mean position per fish, with each color representing a different fish (on average mean of median dorsoventral displacement ± standard deviation in rostral somites = 107 nm ± 25 nm versus in middle somites = 117 nm ± 37 nm versus in caudal somites = 72 nm ± 12 nm versus in fixed larvae = 28 nm ± 7 nm; Tukey’s HSD Test for multiple comparisons: p < 0.05). (G1–G2) A principal component analysis was computed on one image sequence of one fish (with each image corresponding to one observation) to understand the most significant movements of the fiber. The G1 component corresponds to a dorsoventral translation (the fiber borders are black on the ventral side, white on the dorsal side) and G2 to a small local rotation around a point (in red). These two components account respectively for 21.9% (G1) and 3.4% (G2) of the total temporal variability in the video. * p < 0.05, **** p < 10-4. Scale bar is 10 μm (B, C, D) and 20 μm (G1, G2).
 
-## The Reissner fiber enhances spontaneous calcium activity in cerebrospinal fluid-contacting neurons
+![Video 1.](https://cdn.elifesciences.org/articles/86175/elife-86175-video1.mp4.jpg)
+
+**Video 1.:** Data was acquired at 40 Hz for 25 s. Rostral, left and dorsal, top. Video is replayed in real time (40 Hz). Scale bar represents 15 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/86175/elife-86175-video2.mp4.jpg)
+
+**Video 2.:** Data was acquired at 40 Hz for 25 s. Rostral, left and dorsal, top. Video is replayed in real time (40 Hz). Scale bar represents 15 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/86175/elife-86175-video3.mp4.jpg)
+
+**Video 3.:** Data was acquired at 10 Hz for 30 s. Rostral, left and dorsal, top. Video is replayed in real time (10 Hz). Scale bar represents 10 μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/86175/elife-86175-video4.mp4.jpg)
+
+**Video 4.:** The first principal component (top) corresponds to translation along the dorsoventral axis, and the second (bottom) corresponds to a small local rotation around the point in red in Figure 1G2. Data was acquired at 40 Hz for 25 s. Rostral, left and dorsal, top. Video is replayed in real time (40 Hz). Scale bar represents 20 μm.
+
+### The Reissner fiber enhances spontaneous calcium activity in cerebrospinal fluid-contacting neurons
 
 Given that the fiber in paralyzed, living larvae exhibits spontaneous dorsoventral movements, we investigated whether these oscillations contribute to the spontaneous calcium activity of the CSF-cNs (Figure 2). We performed acute 2-photon ablations of RF and tested whether it impacted the spontaneous calcium activity of CSF-cNs in triple transgenic Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G) paralyzed larvae (Figure 2A1 and A2; see also Video 5 before RF ablation, Video 6 after RF ablation and Materials and methods). To record the spontaneous activity of CSF-cNs before and after RF photoablation, we monitored calcium transients of ventral CSF-cNs located in the sagittal plane of RF (Figure 2B). Overall, fewer cells were active after RF photoablation (on average 11% compared to 28%; paired two-tailed t-test: p < 0.05; Figure 2C), and calcium activity decreased by 45% on average across larvae (Figure 2D), with a subset of ventral CSF-cNs showing decreased activity after RF photoablation. The number of calcium events occurring within those cells decreased after RF ablation (Figure 2E, on average 0.94 events/min before and 0.87 events/min after in active cells; paired two-tailed t-test: p < 0.005). Altogether, our results indicate that the presence of an intact RF in the central canal enhances the spontaneous calcium activity of ventral CSF-cNs.
 
@@ -55,41 +71,101 @@ Given that the fiber in paralyzed, living larvae exhibits spontaneous dorsoventr
 
 **Figure 2.:** (A1) Time-series standard deviation projection in the sagittal plane from two-photon laser scanning microscope showing the signal from the Reissner fiber and CSF-cNs in the central canal of 3 dpf Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G) zebrafish larva before RF photoablation. (A2) Time-series standard deviation projection in the sagittal plane from two-photon laser scanning microscope showing the signal from CSF-cNs after RF ablation performed by spiral scanning photoablation with an infrared pulsed laser tuned at 800 nm over 0.5 μm on RF (see Materials and methods). (B) ROI selection for ventral CSF-cNs to analyze activity before and after RF photoablation within the same cells (top). Example calcium activity traces normalized to baseline for each of the ROIs before (red) and after (black) RF photoablation over 75 s imaged at 3.45 Hz (see Materials and methods). (C) Percentage of active ventral CSF-cNs (active is defined as having at least 1 calcium transient during the recording) before and after RF photoablation (N=109 cells total from 8 fish from two independent clutches; mean percent active before ablation = 27.72% ± 6.34% versus mean percent active after ablation = 10.59% ± 3.1%; paired two-tailed t-test: p < 0.05). (D) The ratio of active ventral CSF-cNs after RF photoablation to those active before RF photoablation, illustrating on average, a fraction (on average ± SEM: 45% ± 14%) of active ventral CSF-cNs before photoablation remain active after RF photoablation. The purple lines on the graph represent the mean and the error bars indicate the SEM. (E) Pie charts illustrating the number of events per ventral CSF-cN before and after RF photoablation (mean number of events in active cells before RF photoablation = 0.94 events/min versus mean number of events in active cells after RF photoablation = 0.87 events/min; paired two-tailed t-test: p < 0.005). * p < 0.05, **p < 0.005. Scale bar is 20 μm (A1, A2), 10 μm (B).
 
-## Estimation of the elastic properties of the Reissner fiber from acute ablation
+![Video 5.](https://cdn.elifesciences.org/articles/86175/elife-86175-video5.mp4.jpg)
+
+**Video 5.:** Calcium imaging was recorded between 3 and 4 Hz over 75 s. Rostral, left and dorsal, top. Video is replayed in real time (3.5 Hz). Scale bar represents 20 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/86175/elife-86175-video6.mp4.jpg)
+
+**Video 6.:** Calcium imaging was recorded between 3 and 4 Hz over 75 s. Rostral, left and dorsal, top. Video is replayed in real time (3.5 Hz). Scale bar represents 20 μm.
+
+### Estimation of the elastic properties of the Reissner fiber from acute ablation
 
 To gain a deeper understanding of the elastic properties of RF, we explored its response to acute photoablation. We performed RF photoablations via a UV-pulsed laser system in triple transgenic Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G) zebrafish larvae (N=74 fish). We then tracked the relaxation dynamics of the two cut ends of the fiber (Figure 3; see Videos 7–9; see also Materials and methods). We observed diverse kinetics and retraction patterns upon RF photoablation. The majority of fiber retractions (88% of 148 total retractions, Figure 3A1 and A2) demonstrated complete fiber retraction out of the 97 μm-wide field of view in less than 500 ms (initial retraction speed of on average ~328 μm/s), with 96% of fibers remaining straight as the cut ends of the fiber retracted to the rostral and caudal ends of the larvae. However, in a few cases (12% of 148 total retractions, Figure 3B) we observed the two cut ends of the fiber relax very slowly (initial retraction speed of on average ~50 μm/s), often with the cut ends remaining still in the field of view for over 20 s (Figure 3C1–3C3). In a third of these relaxed cases, we could observe that slow-retracting ablated fibers displayed at the tip snake-like deformations during their relaxation (Figure 3B). As an analogy with the dynamic model of DNA molecules (Brochard-Wyart, 1995), we refer to the deformed section of the fiber as the ‘flower’, which suggests the fiber was no longer under tension (Figure 3B2). In this analogy, the flower contrasts with the straight ‘stem’ section of the fiber that remained under tension (Figure 3B3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86175/elife-86175-fig3-v3.jpg)
 
-**Figure 3.:** (A) Frame-by-frame instantaneous speed calculations for the rostral and caudal ends of the cut RF during retraction after photoablation by UV-pulsed laser in 3 dpf triple transgenic Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G) paralyzed larvae. Pink spiral indicates the site of RF ablation. Instantaneous speeds of the fiber for both rostral and caudal ends were calculated using the change in position of the fiber between two consecutive frames, divided by the exposure time (25 ms) and converted to μm/s. (A1, A2) specifically depict an example of a fiber in the ‘rigid case’, where the fiber retracts straight on both ends without distortion. (B) Instantaneous speed calculations for both rostral and caudal ends of a cut fiber in the ‘relaxed case’, where there is distortion of the fiber (B1 left cut end, B2 right cut end) due to no more tension on one or both ends of the fiber. By analogy with the dynamics of DNA molecules, one can refer to the completely relaxed portion of the fiber as the ‘flower’, while the remaining taut portion of the fiber would be the ‘stem’. (C) Instantaneous speed calculations for both rostral and caudal ends of a cut fiber that remains stuck in the central canal, remaining in the field of view for about 25 s. (D) Retraction position plotted across the square root of time for all fish (N=74 fish from 7 independent clutches), color-coded to illustrate the examples in (A–C), and indicating if a flower was seen in the 38 s-long recordings along the rostrocaudal axis.  is provided by the slopes of the two dotted lines (blue and red), indicating a fast retraction or a slow retraction of the rostral and caudal ends of the cut fiber in the central canal. Inset: initial retraction speed (the distance the cut fiber retracted in between 50 ms and 75 ms after photoablation, after UV laser artifacts) is larger in the fibers classified under the fast retraction group than those in the slow retraction group. (D×Δ⁢LLE) Rostral and caudal ends of the fiber in cases with and without flowers plotted against each other, demonstrating that rostral and caudal end dynamics generally tend to mirror each other (N=74 fish). (F) Maximum retraction speed for rostral and caudal ends of the cut RF classified using the schema in Figure 1A, grouping the ablations that occurred in the rostral somites (N=9 fish), middle somites (N=34 fish), and caudal somites (N=34 fish). Mean for ablation in rostral somites = 448 μm/s ± 168 μm/s versus in middle somites = 253 μm/s ± 166 μm/s versus in caudal somites = 211 μm/s ± 165 μm/s; Tukey’s HSD Test for multiple comparisons: p < 10-4. ****p < 10-4. Scale bar is 10 μm (A, B,C).
+**Figure 3.:** (A) Frame-by-frame instantaneous speed calculations for the rostral and caudal ends of the cut RF during retraction after photoablation by UV-pulsed laser in 3 dpf triple transgenic Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G) paralyzed larvae. Pink spiral indicates the site of RF ablation. Instantaneous speeds of the fiber for both rostral and caudal ends were calculated using the change in position of the fiber between two consecutive frames, divided by the exposure time (25 ms) and converted to μm/s. (A1, A2) specifically depict an example of a fiber in the ‘rigid case’, where the fiber retracts straight on both ends without distortion. (B) Instantaneous speed calculations for both rostral and caudal ends of a cut fiber in the ‘relaxed case’, where there is distortion of the fiber (B1 left cut end, B2 right cut end) due to no more tension on one or both ends of the fiber. By analogy with the dynamics of DNA molecules, one can refer to the completely relaxed portion of the fiber as the ‘flower’, while the remaining taut portion of the fiber would be the ‘stem’. (C) Instantaneous speed calculations for both rostral and caudal ends of a cut fiber that remains stuck in the central canal, remaining in the field of view for about 25 s. (D) Retraction position plotted across the square root of time for all fish (N=74 fish from 7 independent clutches), color-coded to illustrate the examples in (A–C), and indicating if a flower was seen in the 38 s-long recordings along the rostrocaudal axis. $\sqrt{D}\times\frac{Δ⁢L}{L}$ is provided by the slopes of the two dotted lines (blue and red), indicating a fast retraction or a slow retraction of the rostral and caudal ends of the cut fiber in the central canal. Inset: initial retraction speed (the distance the cut fiber retracted in between 50 ms and 75 ms after photoablation, after UV laser artifacts) is larger in the fibers classified under the fast retraction group than those in the slow retraction group. (E) Rostral and caudal ends of the fiber in cases with and without flowers plotted against each other, demonstrating that rostral and caudal end dynamics generally tend to mirror each other (N=74 fish). (F) Maximum retraction speed for rostral and caudal ends of the cut RF classified using the schema in Figure 1A, grouping the ablations that occurred in the rostral somites (N=9 fish), middle somites (N=34 fish), and caudal somites (N=34 fish). Mean for ablation in rostral somites = 448 μm/s ± 168 μm/s versus in middle somites = 253 μm/s ± 166 μm/s versus in caudal somites = 211 μm/s ± 165 μm/s; Tukey’s HSD Test for multiple comparisons: p < 10-4. ****p < 10-4. Scale bar is 10 μm (A, B,C).
 
-To estimate the elastic properties of the fiber, in particular its mechanical diffusion coefficient, we developed a simple model for the ablation of an elastic fiber inspired by the dynamic model for DNA molecules (Brochard-Wyart, 1995). The RF can be seen as an elastic rod-like polymer in the central canal with a radius rf of ~100 nm (Orts-Del’Immagine et al., 2020). The relation between the pulling force Fp acting on the fiber and its deformation can be described as:(1)Fp=πrf2EΔLL
+![Video 7.](https://cdn.elifesciences.org/articles/86175/elife-86175-video7.mp4.jpg)
 
-with E describing the elastic Young modulus and Δ⁢L the elongation of the fiber stretched away from its original full length L when it is under tension in vivo. When the fiber is cut, the deformation relaxes from the free end over a distance x (e.g. ‘the flower’ while the rest of the fiber e.g. ‘the stem’ remains under tension). The size of the flower is deduced from a balance between the pulling force (Equation 1) and the friction force Fv acting on the flower, which can be written as:(2)Fv=2πηln⁡Lrf×∂x∂t×ΔLL∼ηx×∂x∂t×ΔLL
+**Video 7.:** Position of RF was tracked using a spinning disk operating at 40 Hz for 25 s. Rostral, left and dorsal, top. Videos are replayed in real time (150 Hz). Scale bar represents 5 μm.
 
-with x being the size of the relaxed fiber (the flower), η the CSF viscosity and ∂⁡x∂⁡t×Δ⁢LL the retraction velocity that leads to friction. Using the slender-body approximation of the drag coefficient, the natural logarithm can be treated as a constant numerically. The force balanced, Fp=Fv leads to a diffusion equation and therefore:(3)x2∼Dt
+![Video 8.](https://cdn.elifesciences.org/articles/86175/elife-86175-video8.mp4.jpg)
 
-where D is given by D=π⁢rf2⁢Eη=rf2τ with the characteristic time τ for the fiber’s mechanical relaxation τ-1=π⁢Eη. Based on our model, the retraction distance upon ablation should increase as a function of t. Because the deformation of the cut fiber is relaxed in the flower section, the retraction X of the fiber given by the position of the free end is:(4)X=x×ΔLL=2π×Dt×ΔLL=2π×rftτ×ΔLL
+**Video 8.:** Position of RF was tracked using a spinning disk operating at 40 Hz for 25 s. Rostral, left and dorsal, top. Videos are replayed in real time (150 Hz). Scale bar represents 5 μm.
 
-By plotting the retraction position as a function of t (Figure 3C1), we indeed found as expected from our simple model a linear relationship (Figure 3C1). The slope of this relationship defined by 2π×D×Δ⁢LL enabled us to group the fibers with fast retraction slope = 161 μm/√s and slow retraction slope = 10 μm/√s (Figure 3C1). To assess whether the retraction kinematics of the fiber differ along the rostrocaudal axis, we compared the kinematics of retraction after acute RF photoablation performed at different sites (using the same terminology ‘rostral’, ‘middle’ and ‘caudal’, see Figure 1A). When ablations occurred in the rostral side, we only observed fast retraction kinetics (N=105 fiber retractions, Figure 3D). In contrast, ablations in the middle and caudal somites showed slower relaxation speeds (Figure 3D). The retraction speed for the rostral and caudal cut ends of a given fiber were highly correlated in individual larvae despite the diversity of retraction patterns observed overall across fish (y = 0.9x + 2; R2 = 0.7; simple linear correlation: p < 10-4; Figure 3D), indicating that the retraction kinematics after ablation reveals the inherent physical properties of the fiber and the tension applied on it that differs as a function of the rostrocaudal position.
+![Video 9.](https://cdn.elifesciences.org/articles/86175/elife-86175-video9.mp4.jpg)
 
-From the slope α=2π×D×Δ⁢LL of the retraction distance as a function of t, we can extract from the information on the change of RF length (Δ⁢LL) from the mechanical diffusion coefficient D. In ablation cases with retention of the fiber that remained in the field of view, we estimated Δ⁢L, the change of length of the fiber as it stretches away by the distance between the retention position of the cut end once immobile and the ablation locus. Δ⁢L was negatively correlated with the position of the ablation locus along the rostrocaudal axis (y = -0.9x + 41; R2 = 0.2; simple linear regression: p < 0.06; Figure 3E). Accordingly, maximum retraction speeds were greater in the rostral somites of the larvae (on average ± standard deviation for all values provided hereafter: 448 μm/s ± 168 μm/s) than those in the middle or caudal somites (253 μm/s ± 166 μm/s and 211 μm/s ± 165 μm/s, respectively; Tukey’s HSD Test for multiple comparisons; p < 10-4; Figure 3F).
+**Video 9.:** Position of RF was tracked using a spinning disk operating at 40 Hz for 25 s. Rostral, left and dorsal, top. Videos are replayed in real time (150 Hz). Scale bar represents 5 μm.
 
-In 13 cases of ablation on the caudal side, the cut ends of the fiber remained in the field of view during the 38 s-long recording and we could therefore measure Δ⁢L as low as 10 μm. For rostral ablations, based on our field of view of 97 μm, we can estimate ΔL > 150 μm (rostral ablation) on each side. These values indicate that for a fiber length of approximately 3 mm long, Δ⁢LLR⁢o⁢s⁢t⁢r⁢a⁢l≃120 and Δ⁢LLM⁢i⁢d⁢d⁢l⁢e/C⁢a⁢u⁢d⁢a⁢l≃1300.
+To estimate the elastic properties of the fiber, in particular its mechanical diffusion coefficient, we developed a simple model for the ablation of an elastic fiber inspired by the dynamic model for DNA molecules (Brochard-Wyart, 1995). The RF can be seen as an elastic rod-like polymer in the central canal with a radius rf of ~100 nm (Orts-Del’Immagine et al., 2020). The relation between the pulling force $F_{p}$ acting on the fiber and its deformation can be described as:
 
-Using the slope α, we grouped the fibers with fast retraction (slope = 161 μm/√s) versus the fibers with slow retraction (slope = 10 μm/√s; see Figure 3D). We found a remarkably-similar estimation of the mechanical diffusion coefficient for both groups with D≃5.6⁢m⁢m2/s for fibers ablated on the rostral side and showing fast retraction: slope = 0.161 mm/√s, ΔLLRostral≃120; DRostral≃5.7mm2/s; and for fibers ablated in the more caudal position and showing slow retraction: slope = 0.010 mm/√s; ΔLLMiddle/Caudal≃1300; DMiddle/Caudal≃5.2mm2/s. Consequently, the characteristic time for the fiber mechanical relaxation is τ=2π×rf2D≃2⁢n⁢s. The total retraction time is Tr⁢u⁢p=2π×L2D=τ and L2rf2≃200 ms, as observed experimentally.
+$$
+F_{p}=\pir_{f}^{2}E\frac{ΔL}{L}
+$$
 
-The fit with experimental data shows that D is uniform along the fiber, and faster retraction dynamics in the rostral rather than the caudal region demonstrates that the fiber tension increases along the rostrocaudal axis, from caudal to rostral. We can suggest two interpretations: the first one is the stretching of the fiber by frictional forces of the cerebrospinal fluid flowing from rostral to caudal with velocity U. At a distance l from the caudal end, the hydrodynamic pulling force 2⁢π⁢η⁢l⁢UL⁢n⁢Lrf≃η⁢l⁢U, increasing from caudal (l=0) to rostral (l=L), is balanced by the fiber tension Fp⁢(l)=π⁢rf2⁢E⁢∂⁡u∂⁡l, where ∂⁡u∂⁡l is the fiber deformation. It leads to an increase in rostral deformation Δ⁢LL=η⁢U⁢Lπ⁢rf2⁢E≃U⁢LD. The second contribution may be due to the stretching by the cilia of ependymal radial glial cells (the most numerous) exerting a force fp on the fiber in the flow direction. If ν is the linear density of the cilia-fiber links pulling with the force fp, the resulting pulling force at a distance l from the caudal end is Fp⁢(l)=∫ν⁢fp⁢∂⁡l=ν⁢fp⁢l. The pulling force increases from the caudal to the rostral end, leading to a maximal rostral deformation Δ⁢LL=ν⁢fp⁢Lπ⁢rf2⁢E. From the value of D, we can estimate the value of the fiber elastic modulus E∼Dnπrf2∼106 Pascal. Estimation of the Young's modulus of biopolymers of the cytoskeleton gives E ranging from 1 to 4 GPa (Brochard-Wyart et al., 2019), a thousand times stiffer than the RF. Overall, the RF in larval zebrafish can be described as a soft elastic polymer that is maintained under tension in the CSF and exhibits a mechanical diffusion coefficient of about 5 mm2/s, a characteristic time in the order of 2 ns and an elastic modulus of 106 Pascal – a value that would correspond to rubber rather than a rigid proteinaceous fiber.
+with $E$ describing the elastic Young modulus and $Δ⁢L$ the elongation of the fiber stretched away from its original full length $L$ when it is under tension in vivo. When the fiber is cut, the deformation relaxes from the free end over a distance $x$ (e.g. ‘the flower’ while the rest of the fiber e.g. ‘the stem’ remains under tension). The size of the flower is deduced from a balance between the pulling force (Equation 1) and the friction force $F_{v}$ acting on the flower, which can be written as:
 
-## The Reissner fiber in the larva interacts with motile cilia along the central canal
+$$
+F_{v}=\frac{2\piη}{ln⁡\frac{L}{r_{f}}}\times\frac{∂x}{∂t}\times\frac{ΔL}{L}∼ηx\times\frac{∂x}{∂t}\times\frac{ΔL}{L}
+$$
+
+with $x$ being the size of the relaxed fiber (the flower), $η$ the CSF viscosity and $\frac{\partial⁡x}{\partial⁡t}\times\frac{Δ⁢L}{L}$ the retraction velocity that leads to friction. Using the slender-body approximation of the drag coefficient, the natural logarithm can be treated as a constant numerically. The force balanced, $F_{p}=F_{v}$ leads to a diffusion equation and therefore:
+
+$$
+x^{2}∼Dt
+$$
+
+where $D$ is given by $D=\frac{\pi⁢r_{f}^{2}⁢E}{η}=\frac{r_{f}^{2}}{\tau}$ with the characteristic time $\tau$ for the fiber’s mechanical relaxation $\tau^{-1}=\frac{\pi⁢E}{η}$. Based on our model, the retraction distance upon ablation should increase as a function of $\sqrt{t}$. Because the deformation of the cut fiber is relaxed in the flower section, the retraction $X$ of the fiber given by the position of the free end is:
+
+$$
+X=x\times\frac{ΔL}{L}=\frac{2}{\sqrt{\pi}}\times\sqrt{Dt}\times\frac{ΔL}{L}=\frac{2}{\sqrt{\pi}}\timesr_{f}\sqrt{\frac{t}{\tau}}\times\frac{ΔL}{L}
+$$
+
+By plotting the retraction position as a function of $\sqrt{t}$ (Figure 3C1), we indeed found as expected from our simple model a linear relationship (Figure 3C1). The slope of this relationship defined by $\frac{2}{\sqrt{\pi}}\times\sqrt{D}\times\frac{Δ⁢L}{L}$ enabled us to group the fibers with fast retraction slope = 161 μm/√s and slow retraction slope = 10 μm/√s (Figure 3C1). To assess whether the retraction kinematics of the fiber differ along the rostrocaudal axis, we compared the kinematics of retraction after acute RF photoablation performed at different sites (using the same terminology ‘rostral’, ‘middle’ and ‘caudal’, see Figure 1A). When ablations occurred in the rostral side, we only observed fast retraction kinetics (N=105 fiber retractions, Figure 3D). In contrast, ablations in the middle and caudal somites showed slower relaxation speeds (Figure 3D). The retraction speed for the rostral and caudal cut ends of a given fiber were highly correlated in individual larvae despite the diversity of retraction patterns observed overall across fish (y = 0.9x + 2; R2 = 0.7; simple linear correlation: p < 10-4; Figure 3D), indicating that the retraction kinematics after ablation reveals the inherent physical properties of the fiber and the tension applied on it that differs as a function of the rostrocaudal position.
+
+From the slope $\alpha=\frac{2}{\sqrt{\pi}}\times\sqrt{D}\times\frac{Δ⁢L}{L}$ of the retraction distance as a function of $\sqrt{t}$, we can extract from the information on the change of RF length ($\frac{Δ⁢L}{L}$) from the mechanical diffusion coefficient $D$. In ablation cases with retention of the fiber that remained in the field of view, we estimated $Δ⁢L$, the change of length of the fiber as it stretches away by the distance between the retention position of the cut end once immobile and the ablation locus. $Δ⁢L$ was negatively correlated with the position of the ablation locus along the rostrocaudal axis (y = -0.9x + 41; R2 = 0.2; simple linear regression: p < 0.06; Figure 3E). Accordingly, maximum retraction speeds were greater in the rostral somites of the larvae (on average ± standard deviation for all values provided hereafter: 448 μm/s ± 168 μm/s) than those in the middle or caudal somites (253 μm/s ± 166 μm/s and 211 μm/s ± 165 μm/s, respectively; Tukey’s HSD Test for multiple comparisons; p < 10-4; Figure 3F).
+
+In 13 cases of ablation on the caudal side, the cut ends of the fiber remained in the field of view during the 38 s-long recording and we could therefore measure $Δ⁢L$ as low as 10 μm. For rostral ablations, based on our field of view of 97 μm, we can estimate $ΔL$ > 150 μm (rostral ablation) on each side. These values indicate that for a fiber length of approximately 3 mm long, $\frac{Δ⁢L}{L}_{R⁢o⁢s⁢t⁢r⁢a⁢l}≃\frac{1}{20}$ and $\frac{Δ⁢L}{L}_{M⁢i⁢d⁢d⁢l⁢e/C⁢a⁢u⁢d⁢a⁢l}≃\frac{1}{300}$.
+
+Using the slope $\alpha$, we grouped the fibers with fast retraction (slope = 161 μm/√s) versus the fibers with slow retraction (slope = 10 μm/√s; see Figure 3D). We found a remarkably-similar estimation of the mechanical diffusion coefficient for both groups with $D≃5.6⁢m⁢m^{2}/s$ for fibers ablated on the rostral side and showing fast retraction: slope = 0.161 mm/√s, $\frac{ΔL}{L}_{Rostral}≃\frac{1}{20}$; $D_{Rostral}≃5.7mm^{2}/s$; and for fibers ablated in the more caudal position and showing slow retraction: slope = 0.010 mm/√s; $\frac{ΔL}{L}_{Middle/Caudal}≃\frac{1}{300}$; $D_{Middle/Caudal}≃5.2mm^{2}/s$. Consequently, the characteristic time for the fiber mechanical relaxation is $\tau=\frac{2}{\sqrt{\pi}}\times\frac{r_{f}^{2}}{D}≃2⁢n⁢s$. The total retraction time is $T_{r⁢u⁢p}=\frac{2}{\sqrt{\pi}}\times\frac{L^{2}}{D}=\tau$ and $\frac{L^{2}}{r_{f}^{2}}≃200 ms$, as observed experimentally.
+
+The fit with experimental data shows that $D$ is uniform along the fiber, and faster retraction dynamics in the rostral rather than the caudal region demonstrates that the fiber tension increases along the rostrocaudal axis, from caudal to rostral. We can suggest two interpretations: the first one is the stretching of the fiber by frictional forces of the cerebrospinal fluid flowing from rostral to caudal with velocity $U$. At a distance $l$ from the caudal end, the hydrodynamic pulling force $\frac{2⁢\pi⁢η⁢l⁢U}{L⁢n⁢\frac{L}{r_{f}}}≃η⁢l⁢U$, increasing from caudal ($l=0$) to rostral ($l=L$), is balanced by the fiber tension $F_{p}⁢(l)=\pi⁢r_{f}^{2}⁢E⁢\frac{\partial⁡u}{\partial⁡l}$, where $\frac{\partial⁡u}{\partial⁡l}$ is the fiber deformation. It leads to an increase in rostral deformation $\frac{Δ⁢L}{L}=\frac{η⁢U⁢L}{\pi⁢r_{f}^{2}⁢E}≃\frac{U⁢L}{D}$. The second contribution may be due to the stretching by the cilia of ependymal radial glial cells (the most numerous) exerting a force fp on the fiber in the flow direction. If $ν$ is the linear density of the cilia-fiber links pulling with the force fp, the resulting pulling force at a distance $l$ from the caudal end is $F_{p}⁢(l)=\intν⁢f_{p}⁢\partial⁡l=ν⁢f_{p}⁢l$. The pulling force increases from the caudal to the rostral end, leading to a maximal rostral deformation $\frac{Δ⁢L}{L}=\frac{ν⁢f_{p}⁢L}{\pi⁢r_{f}^{2}⁢E}$. From the value of $D$, we can estimate the value of the fiber elastic modulus $E∼\frac{Dn}{\pir_{f}^{2}}∼10^{6} Pascal$. Estimation of the Young's modulus of biopolymers of the cytoskeleton gives E ranging from 1 to 4 GPa (Brochard-Wyart et al., 2019), a thousand times stiffer than the RF. Overall, the RF in larval zebrafish can be described as a soft elastic polymer that is maintained under tension in the CSF and exhibits a mechanical diffusion coefficient of about 5 mm2/s, a characteristic time in the order of 2 ns and an elastic modulus of 106 Pascal – a value that would correspond to rubber rather than a rigid proteinaceous fiber.
+
+### The Reissner fiber in the larva interacts with motile cilia along the central canal
 
 The RF appears to directly interact with CSF-CN cilia in fixed tissues (Orts-Del’Immagine et al., 2020). Given that the RF displays diverse retraction patterns along the rostrocaudal axis after photoablation, we investigated whether the fiber may dynamically interact with cilia in the central canal in vivo (Figure 4). Ciliated cells in contact with the CSF include CSF-cNs, which project a short motile kinocilium (Böhm et al., 2016) and are known to be about a hundred at this stage (Prendergast et al., 2023), as well as ependymal radial glial cells, which project a longer monocilium (Borovina et al., 2010; Becker and Becker, 2015) and are estimated via electron mictroscopy (Orts-Del’Immagine et al., 2020) and the transgenic Tg(ß-actin:Arl13b-GFP) line Sternberg et al., 2018 to have a density of about 60 cilia per 10 μm along the 3.5 mm-long central canal, encompassing at least ~20,000 cilia at this stage. We asked whether the latter may interact with RF to elicit the apparent friction and build a heterogenous tension along the fiber.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86175/elife-86175-fig4-v3.jpg)
+
+**Figure 4.:** (A) Schematic illustrating motile cilia (white) lining the walls of the central canal beside CSF-cNs (red) with RF (green) bathing in the spinal cord of a zebrafish larva. (B1) Z-stack projection in the sagittal plane showing the immunostaining against GFP and glutamylated tubulin in a Tg(sspo:sspo-GFP;-ß-actin:Arl13b-GFP) larva fixed at 3 dpf revealing respectively RF and cilia labeled by the ß-actin promoter (both in green here) and motile cilia (red). Rostral to the left, ventral displayed on the bottom. (B2) Single optical section in the sagittal plane showing RF surrounded by cilia protruding in the central canal in 3 dpf Tg(sspo:sspo-GFP;ß-actin:Arl13b-GFP) paralyzed larva out of the streaming video acquired at 40 Hz using spinning disk confocal microscopy setup equipped with a 40X objective. (C1) Right: example single optical section of a dorsal motile cilium from the highlighted box in (B1). Dark green arrow indicates RF. Light green and red dots indicate the base and tip of the cilium, respectively. Left: average projection over 25 s of the dorsal cilium brushing against RF. (C2) Right: example single optical section of a dorsal motile cilium whose tip tends to stick to RF. Left: average projection over 25 s of the dorsal cilium. (D1) Right: example single optical section of a ventral motile cilium whose tip tends to brush against RF. Left: average projection over 25 s of the ventral cilium. (D2) Right: example single optical section of a ventral motile cilium whose tip tends to stick to RF. Left: average projection over 25 s of the ventral cilium. (E) Schematic illustrating the geometric calculation of ciliary orientation versus the dorsoventral axis. (F) Representative analysis process for the dorsal cilium in (C2). A mask was first drawn over a single cilium to calculate the frequency and orientation in a specific region of interest (left). A temporal mean of that region (middle) was then used to calculate the orientation of the cilium in respect to the dorsoventral axis (right; see also Materials and methods). (G1) Distribution of the orientation in respect to the dorsoventral axis of dorsal mean ± standard deviation provided hereafter: (64.8° ± 44.4°; N=49 cilia across 8 fish) and ventral (43.9° ± 35.8°; N=27 cilia across 9 fish) motile cilia. (G2) Distribution of main ciliary beating frequency for dorsal (mean ± standard deviation provided hereafter: 11.8 Hz ± 2.7 Hz; N=49 cilia) and ventral (11.6 Hz ± 2.8 Hz; N=27 cilia) motile cilia. (H) The orientation of motile cilia in the central canal was not significantly different after RF photoablation (mean ± standard deviation provided hereafter: 55.1° ± 39.3°) from that before RF photoablation (57.4° ± 42.5°), illustrating that cilia orientation is, on average, not significantly affected by RF photoablation (N=76 cilia from 9 fish; paired two-tailed t-test: p > 0.3). (J) Overall rostrocaudal polarity of motile cilia remained similar before and after RF photoablation, with about 90% of motile cilia polarized toward the caudal end of the fish, and the remaining 10% either polarized toward the dorsal end of the fish or beating in the Z axis (N=76 cilia from 9 fish; paired two-tailed t-test: p > 0.3). ns = not significant. Scale bar is 10 μm (B1, B2) and 2 μm (C1, C2, D1, D2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86175/elife-86175-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The main beating frequencies of dorsal and ventral motile cilia after RF photoablation (mean ± standard deviation provided hereafter: 11.9 Hz ± 2.0 Hz) compared to those before RF photoablation (11.7 Hz ± 2.4 Hz), illustrating that cilia main beating frequency was on average not significantly affected by RF photoablation (N=76 cilia from 9 fish; paired two-tailed t-test: p > 0.3). (B1–B3) Select examples from (A), depicting fish whose response to RF photoablation significantly changed the main ciliary beating frequencies but in different ways. B1 and B3 illustrate an increase in main ciliary beating frequency after RF photoablation (B1: mean ± standard deviation provided hereafter: 11.9 Hz ± 2.5 Hz; B3: 12.5 Hz ± 1.4 Hz) from that before RF photoablation (B1: 10.9 Hz ± 2.5 Hz; N=12 cilia; paired two-tailed t-test: p < 0.05; B3: 11.3 Hz ± 2.3 Hz; N=8 cilia; paired two-tailed t-test: p < 0.05). B2 illustrates a decrease in main ciliary beating frequency after RF photoablation (11.6 Hz ± 2.2 Hz) from that before RF photoablation (12.6 Hz ± 1.9 Hz; N=11 cilia; paired two-tailed t-test: p < 0.01). * p < 0.05, ** p < 0.01.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86175/elife-86175-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic illustrating the geometric calculation of ciliary orientation versus the dorsoventral axis. (B1) Top: two k-means clusters of a single optical section in the sagittal plane demonstrating a dorsal motile cilium brushing along the RF in the central canal in a 3 dpf Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) paralyzed larva out of the streaming video acquired at 40 Hz using spinning disk confocal microscopy setup equipped with a 40X objective. Dark green arrow indicates the RF. Light green and red dots indicate the base and tip of the cilium, respectively. Rostral to the left, ventral displayed on the bottom. Bottom: frequency distributions of the two dorsal cilium clusters (found by performing k-means clustering using two clusters for RF position in the dorsoventral axis) plotted according to the two RF clusters corresponding to oscillatory up and down movements. The cilium and RF positions were found dependent (Fisher’s exact test: p < 0.05). (B2) Top: two k-means clusters of a single optical section in the sagittal plane demonstrating a ventral motile cilium brushing along the RF for the same paralyzed larva in (A1). Bottom: frequency distributions of the two k-means ventral cilium clusters plotted according to the RF position (k-means clusters corresponding to up or down RF movement in the dorsoventral axis). The cilium and RF positions were found dependent (Fisher’s exact test: p < 0.01). (C) Left: orientation of the two k-means clusters (average) for dorsal cilia plotted as a function of the RF position in the dorsoventral axis (two k-means clusters representing up and down movements), whose histograms (as in B1) were statistically significant (blue; N=7 dorsal cilia across 5 fish) and those that were not statistically significant (black; N=15 dorsal cilia across 5 fish). Right: orientation of the two k-means clusters (average) for ventral cilia plotted as a function of the RF position in the dorsoventral axis (two k-means clusters representing up and down movements of the fiber), whose histograms (as in B2) were statistically significant (blue; N=4 ventral cilia across 5 fish) and those that were not statistically significant (black; N=9 ventral cilia across 5 fish). * p < 0.05, ** p < 0.01. Scale bar is 2 μm (B1, B2).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86175/elife-86175-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Example of a single optical section showing a dorsal cilium from Figure 4C2. Dark green arrow indicates the RF. Light green and red dots indicate the base and tip of the cilium, respectively. (B) A mask drawn over the single cilium to calculate only the frequency and orientation in a specific region of interest. (C) The raw fluorescence trace of the inside of the mask over 25 s video (left) and zoomed in over 1 $s$ (right), corresponding to the highlighted area on the left panel, was used to detect peaks and estimate the ciliary beating frequency by counting the number of oscillations per second. (D) The temporal mean of the time series was calculated to see a temporally smoothed overview of the video. (E) Standard deviation projection over 25 s before temporal smoothing. (F) A principal component analysis was performed to grasp which movements of the cilium could explain the most variability, which appeared in PC1 (left) and PC2 (right). (G) Ciliary orientation calculation. Left: window to calculate the orientation manually. Green dot represents the predetermined cilium center from the polyfit function in MATLAB. Black and red dots represent the manual inputs for the base and tip of the cilium, respectively. Right: The value for the manual calculation of orientation was compared to the orientation output of the two MATLAB functions and the one determined to best explain the data (in this case, a tilt of 52.7°) was kept for further analyses. Scale bar is 2 μm (A).
 
 We investigated whether we could find evidence for an interaction between RF and motile cilia using high-speed imaging in double transgenic Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) larvae, in which many cilia in the central canal are labeled with GFP (Figure 4A and B1; see also Methods).
 
 Immunohistochemistry staining against glutamylated tubulin and GFP showed that motile cilia are densely packed along the dorsal and ventral walls of the central canal and are oriented with a caudal tilt (Figure 4B1). In contrast to the embryo, in which only ventral cilia are motile and tilted towards the caudal end (Thouvenin et al., 2020), we observed that motile cilia in 3 dpf larvae are located both on the ventral and dorsal walls of the central canal at larval stage (Figure 4B2; see also Video 10). When we took a closer look at isolated motile cilia labeled in 3 dpf Tg(β-actin:Arl13b-GFP) larvae and beating in the sagittal plane of imaging (see Materials and methods), we observed that numerous motile cilia brushed against RF in sweeping motions (Figure 4B2, C1 and D1; see also star symbol in Video 10), while others appear to almost stick to RF with a glob of fluorescent material at their tip (Figure 4C2 and D2; see also Video 10). We quantified the orientation of cilia in an angle relative to the horizontal (Figure 4E and F), and observed an overall tilt towards the caudal end both for dorsal inserted cilia (mean ± standard deviation provided hereafter: 64.8° ± 44.4°; N=49 cilia across 8 fish) and ventral inserted cilia (43.9° ± 35.8°; N=27 cilia across 9 fish; Figure 4G). We estimated the main ciliary beating frequency to be on average 11.2 Hz ± 2.4 Hz overall (Figure 4H; dorsal: 11.8 Hz ± 2.7 Hz; ventral: 11.6 Hz ± 2.8 Hz). However, we were limited in our acquisition frequency (40 Hz) in the setup that was suitable for ablation with a pulsed laser, thus the range of main beating frequencies up to only 20 Hz for both dorsal and ventral motile cilia may not reflect the actual beating frequency of these cilia (Figure 4H).
 
+![Video 10.](https://cdn.elifesciences.org/articles/86175/elife-86175-video10.mp4.jpg)
+
+**Video 10.:** Position of the cilia and RF were tracked using a spinning disk operating at 40 Hz for 25 s. Note the star symbol indicates an example motile cilium brushing against RF in sweeping motions. Rostral, left and dorsal, top. Video is replayed in real time (40 Hz). Scale bar represents 5 μm.
+
 To investigate the impact of the RF on the beating frequency of motile cilia in the central canal, we performed acute focal ablations of the RF (see Methods). We quantified the orientation and main beating frequency of the cilia before and after RF photoablation (Figure 4H; see also Figure 4—figure supplement 1A and Video 11). The tilt of cilia was not significantly different after RF photoablation (mean ± standard deviation provided hereafter: 55.1° ± 39.3°) from that before RF photoablation (57.4° ± 42.5°), illustrating that cilia orientation was, on average, not significantly affected by RF photoablation (Figure 4J; N=76 cilia from 9 fish; paired two-tailed t-test: p > 0.3). In contrast, the impact of acute RF photoablation on ciliary beating frequency showed different responses among individuals (Figure 4—figure supplement 1B1–B3). The fact that motile cilia densely surround the fiber along the walls of the central canal and brush along the fiber with a caudal tilt suggests that cilia-fiber interactions may generate friction promoting the oscillatory deflections of RF observed in vivo (Figure 1) and the deformations of the ‘flower’ ends of the cut RF during RF relaxation after photoablation (Figure 3B, B1 and B2).
+
+![Video 11.](https://cdn.elifesciences.org/articles/86175/elife-86175-video11.mp4.jpg)
+
+**Video 11.:** Orientation of the cilia relative to the horizontal were tracked from data acquired on a spinning disk operating at 40 Hz for 25 $s$. Rostral, left and dorsal, top. Video is replayed in real time (40 Hz). Scale bar represents 5 μm.
 
 To investigate this further, we performed independent k-means clustering to relate the beating orientation versus the dorsoventral axis of individual cilia along the rostrocaudal axis with the dorsoventral oscillatory motion of RF (Figure 4—figure supplement 2). While dorsal and ventral motile cilia position profiles differ with RF dorsoventral oscillation position, a minority of cilia (N=7/15 dorsal and N=4/9 ventral) show significant differences in their beating orientation depending on the up or down position of RF (Figure 4—figure supplement 2B1, B2; Fisher’s exact test: p < 0.05 and p < 0.01 for dorsal and ventral example cilia, respectively). Of these cilia, both dorsal and ventral cilia were closer to the vertical orientation when the fiber was down compared to when it is up (mean ± standard deviation from hereafter: 60° ± 10° when RF down versus 48° ± 16° when RF up for dorsal cilia, and 55° ± 23° when RF down versus 33° ± 16° when RF up for ventral cilia; Figure 4—figure supplement 2C). Our current dataset should be extended in 3D to find out whether beating cilia collectively exert push or pull interactions onto the fiber, in order to explain the heterogenous and graded tension we observed on RF, with larger tension on the rostral side.
 
@@ -97,17 +173,17 @@ To investigate this further, we performed independent k-means clustering to rela
 
 Our work reveals that the Reissner fiber (RF) is a dynamic structure under tension in vivo in the central canal with elastic properties and spontaneous oscillatory activity. Our mechanical model reveals that the Reissner fiber in larval zebrafish can be described as a soft elastic polymer that is maintained under tension in the CSF and exhibits a mechanical diffusion coefficient of 5 mm2/s, a characteristic time in the order of 2 ns and an elastic modulus of 106 Pascal, which would fit more with the fiber acting as a low density gel rather than a rigid proteinaceous fiber. At baseline, in paralyzed animals with a straight body axis, we found evidence that the Reissner fiber interacts with the numerous long, beating monocilia of ependymal radial glial cells (ERGs), which we estimated to have a density of at least 20,000 cilia at this stage (Orts-Del’Immagine et al., 2020; Sternberg et al., 2018) as well as with some ciliated sensory neurons (CSF-cNs), known to be only about a hundred at this stage (Prendergast et al., 2023), whose activity decreases upon photoablation of the fiber.
 
-## The Reissner fiber under tension oscillates along the dorsoventral axis in the central canal
+### The Reissner fiber under tension oscillates along the dorsoventral axis in the central canal
 
 By investigating the dynamical properties of the Reissner fiber in the central canal, we observed that the fiber is under tension in vivo, confirming previous observations of RF being rectilinear (Troutwine et al., 2020), which contrasts with observations in the tissue after fixation, in which it curls and bends across the rostrocaudal axis (Orts-Del’Immagine et al., 2020). Our observations demonstrate that RF can be modeled as a taut polymer under a heterogeneous tension in vivo. In addition to the spontaneous slow translation of RF previously observed along the rostrocaudal axis with material continually added and retracted from its surface (Troutwine et al., 2020), our observations further reveal spontaneous oscillatory activity of the fiber over the dorsoventral axis. We observe large spontaneous oscillatory activity of RF in the middle portion of the fish, away from the attachment points in the rostral end (SCO) and caudal end (ampulla caudalis) (Meiniel and Meiniel, 2007; Gobron et al., 2000), akin to oscillatory behaviors of a plucked guitar string.
 
 To capture enough photons from the GFP-tagged fiber in our recordings, we sampled displacements of the fiber along the dorsoventral axis at 40 Hz at most. However, we have indications that the dorsoventral oscillations of the fiber probably occur at higher frequency than the 20 Hz we could observe in these conditions. Previously, the coordinated beating of motile cilia in the central canal has been reported up to 45 Hz, generating CSF flow estimated at a velocity of 10 μm/s in the embryo (Thouvenin et al., 2020). Such beating of cilia may influence locally how the Reissner fiber oscillates across the dorsoventral axis. Furthermore, interactions between motile cilia and the fiber may contribute to maintaining the fiber under tension, with graded tension on the rostral end. Further investigations of the 3D interactions between the Reissner fiber and motile cilia in the CSF will be necessary to better understand the role of these interactions for the dynamic and physical properties of the Reissner fiber.
 
-## Elastic properties of the Reissner fiber subject to a heterogeneous tension decreasing along the rostrocaudal axis
+### Elastic properties of the Reissner fiber subject to a heterogeneous tension decreasing along the rostrocaudal axis
 
-Acute focal ablation of RF allowed for the estimation of its elastic properties in the central canal. Upon ablation, the fiber retracted both further and faster when the ablation occurred on the rostral side of the fish compared to when the fiber was cut in the middle or caudal portions. A simple model of RF represented as an elastic polymer under tension enabled us to estimate RF mechanical diffusion coefficient D∼ 5⁢m⁢m2/s and RF characteristic mechanical time τ∼2⁢n⁢s. The full retraction time after RF rupture is proportional to τ and to a huge factor (Lrf)2, with rf of ∼100⁢n⁢m and L=1⁢m⁢m. The value of the stress diffusion coefficient D being highly conserved in the rostral and middle/caudal portions of the fiber suggests that the diameter of the fiber is constant along the rostrocaudal axis. In contrast, the faster retraction speeds observed after fiber ablation on the rostral side reveals that the pulling force on the fiber may not be uniform along the rostrocaudal axis. A higher tension in the rostral portion may be due to external factors increasing tension on the rostral side, such as the CSF flow going in the rostrocaudal direction (Tumani et al., 2018; Zhang et al., 2018) and/or the friction associated with the numerous interactions occurring between the fiber and the beating cilia along the central canal.
+Acute focal ablation of RF allowed for the estimation of its elastic properties in the central canal. Upon ablation, the fiber retracted both further and faster when the ablation occurred on the rostral side of the fish compared to when the fiber was cut in the middle or caudal portions. A simple model of RF represented as an elastic polymer under tension enabled us to estimate RF mechanical diffusion coefficient $D∼ 5⁢m⁢m^{2}/s$ and RF characteristic mechanical time $\tau∼2⁢n⁢s$. The full retraction time after RF rupture is proportional to $\tau$ and to a huge factor $(\frac{L}{r_{f}})^{2}$, with rf of $∼100⁢n⁢m$ and $L=1⁢m⁢m$. The value of the stress diffusion coefficient $D$ being highly conserved in the rostral and middle/caudal portions of the fiber suggests that the diameter of the fiber is constant along the rostrocaudal axis. In contrast, the faster retraction speeds observed after fiber ablation on the rostral side reveals that the pulling force on the fiber may not be uniform along the rostrocaudal axis. A higher tension in the rostral portion may be due to external factors increasing tension on the rostral side, such as the CSF flow going in the rostrocaudal direction (Tumani et al., 2018; Zhang et al., 2018) and/or the friction associated with the numerous interactions occurring between the fiber and the beating cilia along the central canal.
 
-## Interactions between the Reissner fiber and ciliated cells in the central canal
+### Interactions between the Reissner fiber and ciliated cells in the central canal
 
 We observed in streaming acquisitions of RF and cilia labeled in GFP that some motile cilia brush and interact with the fiber. Accordingly, we measured that motile cilia from different fish have different beating frequencies in response to RF photoablation. Altogether, our observations indicate that RF interacts with motile cilia, a mechanism that can lead to a reduction of ciliary beating as well as to friction between RF and the cilia. The impact of RF ablation on cilia beating frequency is still elusive, which is consistent with our previous observations that the absence of a fiber did not lead to a massive change in particle velocity profile in the embryo (Cantaut-Belarif et al., 2018). However, the fiber could nonetheless slightly alter the CSF flow profile in a transverse section by adding a point of null flow at the center of the central canal. Adding a point of null velocity can increase the velocity gradient in the CSF, and thereby increase the phenomenon of shearing at the level of the CSF-cN apical extension - in line with their functional coupling as reported was critical to mediate mechanoreception in vivo (Orts-Del’Immagine et al., 2020).
 
@@ -119,51 +195,236 @@ In zebrafish with genetic mutations, silencing or acute manipulations affecting 
 
 ## Materials and methods
 
-## Materials availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Zebrafish)</td>
+      <td>Tg(sspo: sspo-GFP)</td>
+      <td>ut24Tg; Troutwine et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Zebrafish)</td>
+      <td>Tg(pkd2l1: tagRFP)</td>
+      <td>icm17Tg; Böhm et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Zebrafish)</td>
+      <td>Tg(pkd2l1: GCaMP5G)</td>
+      <td>icm07Tg; Böhm et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Zebrafish)</td>
+      <td>Tg(β-actin: Arl13b-GFP)</td>
+      <td>hsc5Tg; Borovina et al., 2010</td>
+      <td>ZFIN: ZDB-ALT-100721–1</td>
+      <td>Referred to as Tg(β-actin: Arl13b-GFP) in this paper</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970; RRID: AB-300798</td>
+      <td>IHC(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Polyglutamylation Modification (GT335) (Mouse monoclonal)</td>
+      <td>Adipogen</td>
+      <td>Cat# AG-20B-0020-C100; RRID: AB-2490210</td>
+      <td>IHC(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor-488 (Goat anti-chicken polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11039; RRID: AB-2534096</td>
+      <td>IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor-568 (Goat anti-mouse polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11004; RRID: AB-2534072</td>
+      <td>IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α-Bungarotoxin</td>
+      <td>TOCRIS</td>
+      <td>Cat# 2133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tricaine (MS 222)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E10521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde solution (PFA)</td>
+      <td>Delta Microscopy</td>
+      <td>Cat# 15714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate buffered saline</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# BR0014G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Merck</td>
+      <td>Cat# 1086031000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin (BSA)</td>
+      <td>Sigma</td>
+      <td>Cat# A7030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Goat Serum (NGS)</td>
+      <td>Sigma</td>
+      <td>Cat# NS02L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma</td>
+      <td>Cat# D8418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# H-1000–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>VWR</td>
+      <td>Cat# 24387.292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>VWR</td>
+      <td>Cat# 20066.296</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>https://imagej.net/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>The MathWorks Inc.</td>
+      <td>https://www.mathworks.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Molecular Probes</td>
+      <td>Cat# D1306; RRID: AB-2629482</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>iLas Pulse</td>
+      <td>Gataca Systems</td>
+      <td>gataca-systems.com</td>
+      <td>UV Laser Ablation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials availability statement
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the corresponding author Claire Wyart (claire.wyart@icm-institute.org). Note that this study did not generate new unique reagents. All data and codes generated and analyzed during this study can be found on Dryad (https://doi.org/10.5061/dryad.573n5tbc2).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All imaging procedures were performed on 3 days post fertilization (dpf) zebrafish larvae in accordance with the European Communities Council Directive (2010/63/EU) and French law (87/848) and approved by the Paris Brain Institute (Institut du Cerveau, ICM). All experiments were performed on Danio rerio embryos of AB, Tüpfel long fin (TL) and nacre background. Animals were raised at 28.5 °C under a 14/10 light / dark cycle until the start of the experiment. All analyses were performed on animals that were in good health during the experiments.
 
-## Method details
+### Method details
 
 All imaging experiments were done on 3 dpf Tg(sspo:sspo-GFP), Tg(sspo:sspo-GFP;pkd2l1:tagRFP;pkd2l1:GCaMP5G), and Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) zebrafish larvae. Their respective siblings were used as controls (i.e., wild-type and heterozygous mutants from the same clutch). For all experiments, larvae were laterally mounted in glass-bottom dishes (MatTek, Ashland, Massachusetts, USA), filled with 1.5% low-melting point agarose. Unless otherwise noted, larvae were paralyzed by injecting 1–2 nL of 500 mM alpha-bungarotoxin (TOCRIS) in the caudal muscles of the trunk via glass micropipette held by a micromanipulator (Märzhäuser Wetzlar MM-33), using a pneumatic Pico-pump (World Precision Instruments PV-820).
 
-## Live imaging of the Reissner fiber
+#### Live imaging of the Reissner fiber
 
 Three dpf larvae from Tg(sspo:sspo-GFP) incrosses were laterally mounted and paralyzed. An inverted spinning disk confocal microscope (Leica/Andor) equipped with a 40X water immersion objective (N.A.=0.8) was used to acquire images at 40 Hz for 25 s. Fish were laterally sampled along the rostrocaudal axis from somites 1–30 to gain a holistic understanding of the Reissner fiber’s movements over the dorsoventral axis. The same procedure was performed with 3 dpf larvae from Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) double-transgenic larvae to image the interaction between the Reissner fiber with motile cilia in the central canal.
 
-## Tracking of the Reissner fiber
+#### Tracking of the Reissner fiber
 
-To estimate the fiber curve x↦y⁢(x) on each image, we implemented the following algorithm.
+To estimate the fiber curve $x↦y⁢(x)$ on each image, we implemented the following algorithm.
 
-Step 1: First, we estimated the background level by analyzing the histogram of the whole sequence. Calling I0 the intensity associated to the maximum value in the histogram (an approximation of the average background level), and I1 the average of all intensities smaller than I0 (so that D=I0-I1 is an approximation of the average absolute deviation of the background), we subtracted the value I0+D to the whole sequence and set negative values to 0. This first step removes a lot of background noise from the sequence, without affecting much of the fiber signal. Then, we applied the following processing to each image of the sequence.
+Step 1: First, we estimated the background level by analyzing the histogram of the whole sequence. Calling I0 the intensity associated to the maximum value in the histogram (an approximation of the average background level), and I1 the average of all intensities smaller than I0 (so that $D=I_{0}-I_{1}$ is an approximation of the average absolute deviation of the background), we subtracted the value $I_{0}+D$ to the whole sequence and set negative values to 0. This first step removes a lot of background noise from the sequence, without affecting much of the fiber signal. Then, we applied the following processing to each image of the sequence.
 
-Step 2: We convoluted the image with a two-dimensional (non-isotropic) Gaussian filter to increase the signal-to-noise ratio. Since the fiber local orientation is always close to horizontal and has slow variations, we used a rather large horizontal width σx=1532∼3.5 pixels and a moderate vertical width σy=832∼1.9 pixels.
+Step 2: We convoluted the image with a two-dimensional (non-isotropic) Gaussian filter to increase the signal-to-noise ratio. Since the fiber local orientation is always close to horizontal and has slow variations, we used a rather large horizontal width $\sigma_{x}=\frac{15}{3\sqrt{2}}∼3.5 pixels$ and a moderate vertical width $\sigma_{y}=\frac{8}{3\sqrt{2}}∼1.9 pixels$.
 
-Step 3: For each column x, we computed the integer position y0 of the pixel with maximal intensity I⁢(x,y0), and used the intensities of the pixels above and underneath to get a sub-pixellic refinement yr⁢a⁢w⁢(x) of y0 using a second order polynomial fit: yr⁢a⁢w⁢(x)=y0(x)+min(1,max(-1,(I(x,y0+1)-I(x,y0-1))4⁢I⁢(x,y0)-2⁢I⁢(x,y0-1)-2⁢I⁢(x,y0+1).
+Step 3: For each column x, we computed the integer position y0 of the pixel with maximal intensity $I⁢(x,y_{0})$, and used the intensities of the pixels above and underneath to get a sub-pixellic refinement $y_{r⁢a⁢w}⁢(x)$ of y0 using a second order polynomial fit: $y_{r⁢a⁢w}⁢(x)=\frac{y_{0}(x)+min(1,max(-1,(I(x,y_{0}+1)-I(x,y_{0}-1))}{4⁢I⁢(x,y_{0})-2⁢I⁢(x,y_{0}-1)-2⁢I⁢(x,y_{0}+1)}$.
 
-Step 4: At this stage, we also estimated the local fiber width as the diameter of the (one-dimensional) region obtained by thresholding the intensity at half the maximum value encountered on the current column. This value was used to classify columns as valid (domain D) when the width was less than 10 p⁢i⁢x⁢e⁢l⁢s, and invalid otherwise. This step is useful to remove uncertain position estimates due to firing neighboring cells: if both the fiber and a firing cell are visible (with similar intensity levels) on a given column x, the estimated width is too large and x will not belong to D.
+Step 4: At this stage, we also estimated the local fiber width as the diameter of the (one-dimensional) region obtained by thresholding the intensity at half the maximum value encountered on the current column. This value was used to classify columns as valid (domain $D$) when the width was less than 10 $p⁢i⁢x⁢e⁢l⁢s$, and invalid otherwise. This step is useful to remove uncertain position estimates due to firing neighboring cells: if both the fiber and a firing cell are visible (with similar intensity levels) on a given column $x$, the estimated width is too large and $x$ will not belong to $D$.
 
-Step 5: We then initialized y⁢(x) to yr⁢a⁢w⁢(x) for all x and iterated until convergence a 2-step procedure: y⁢(x)←yr⁢a⁢w⁢(x) for all x in D (enforce valid values for y) y⁢(x)←(y∗G)⁢(x)(1∗G)⁢(x) (smooth y using a convolution with a Gaussian kernel G). It is not difficult to prove that this iterative algorithm converges (independently of the initialization of y), and the convergence is quite fast. In practice, we use a Gaussian kernel G with σ∼5.8, and 100 iterations were more than enough. Step 5 has two effects: it smooths the function yr⁢a⁢w and extrapolates it outside the domain D.
+Step 5: We then initialized $y⁢(x)$ to $y_{r⁢a⁢w}⁢(x)$ for all $x$ and iterated until convergence a 2-step procedure: $y⁢(x)←y_{r⁢a⁢w}⁢(x)$ for all $x$ in $D$ (enforce valid values for $y$) $y⁢(x)←\frac{(y∗G)⁢(x)}{(1∗G)⁢(x)}$ (smooth $y$ using a convolution with a Gaussian kernel $G$). It is not difficult to prove that this iterative algorithm converges (independently of the initialization of $y$), and the convergence is quite fast. In practice, we use a Gaussian kernel $G$ with $\sigma∼5.8$, and 100 iterations were more than enough. Step 5 has two effects: it smooths the function $y_{r⁢a⁢w}$ and extrapolates it outside the domain $D$.
 
-Step 6: In the (rare, but possible) case when there is a firing cell and an non-visible (or too faint) fiber on a given column x, Step 4 may wrongly classify x as a valid column. We can detect such a column x using the fact that the wrong estimate yr⁢a⁢w⁢(x) will generally be inconsistent with the expected fiber smoothness, and thus depart significantly from its corresponding smooth estimate y⁢(x). In practice, we removed from set D all columns x for which |y⁢(x)-yr⁢a⁢w⁢(x)| was larger than 1 pixel. With this restricted set D, we repeated the previous algorithm of Step 5 (iteration until convergence of the 2-steps procedure) to obtain the final estimate of the fiber curve x↦y⁢(x).
+Step 6: In the (rare, but possible) case when there is a firing cell and an non-visible (or too faint) fiber on a given column $x$, Step 4 may wrongly classify $x$ as a valid column. We can detect such a column $x$ using the fact that the wrong estimate $y_{r⁢a⁢w}⁢(x)$ will generally be inconsistent with the expected fiber smoothness, and thus depart significantly from its corresponding smooth estimate $y⁢(x)$. In practice, we removed from set $D$ all columns $x$ for which $|y⁢(x)-y_{r⁢a⁢w}⁢(x)|$ was larger than 1 pixel. With this restricted set $D$, we repeated the previous algorithm of Step 5 (iteration until convergence of the 2-steps procedure) to obtain the final estimate of the fiber curve $x↦y⁢(x)$.
 
 The algorithm is made available as a MATLAB function. To prepare the acquired raw data to run the script, videos were cropped to the dimensions of roughly 15 μm x 100 μm, to have the Reissner fiber in the middle of the field of view with its surrounding background. Videos were discretized into 2 μm bins along the rostrocaudal axis prior to running the script. When calculating dorsoventral displacement from the mean position of the fiber, videos were pieced apart and cropped to the dimensions of roughly 15 μm x 20 μm over 25 s five times, to encompass the whole recording cropped to 15 μm x 100 μm. The script was then run and dorsoventral displacement was saved to different variables and concatenated in the end to see the holistic dorsoventral displacement from the mean of the fiber for each fish.
 
-## Two-photon ablation of the Reissner fiber and calcium imaging of ciliated sensory neurons
+#### Two-photon ablation of the Reissner fiber and calcium imaging of ciliated sensory neurons
 
-3 dpf larvae from Tg(sspo:sspo-GFP;pkd2l1:tagRFP; pkd2l1:GCaMP5G) incrosses were laterally mounted and paralyzed. Two-photon spiral scanning ablations at 800 n⁢m were performed with a two-photon laser scanning microscope (2p-vivo, Intelligent Imaging Innovations, Inc, Denver, Colorado, USA) equipped with a 20X objective (N.A.=1.0). A spiral scanning ablation at 800 nm over 0.5 μm was programmed within the two-photon photomanipulation settings before capturing the acquisition. Fish were laterally sampled using a 920 nm IR laser at an imaging frequency between 3–4 Hz over 75 s along the rostrocaudal axis from somites 1–30 to gain a holistic understanding of the impact of RF ablation on CSF-cN activity before and after ablation along the central canal. Calcium transients of the CSF-cNs were analyzed by improving a previously developed MATLAB function in order to reduce variability in the detection of the baseline in larvae compared to embryos (Sternberg et al., 2018). Videos were first renamed and renumbered in order to perform the analyses blindly. Videos were then registered to correct for any motion artifacts, and then run through the script to determine CSF-cN ROIs and their respective baselines for their calcium transient traces. CSF-cNs were only designated as active if there was a completed calcium transient greater than 3 standard deviations above the baseline over the 75 s recording.
+3 dpf larvae from Tg(sspo:sspo-GFP;pkd2l1:tagRFP; pkd2l1:GCaMP5G) incrosses were laterally mounted and paralyzed. Two-photon spiral scanning ablations at 800 $n⁢m$ were performed with a two-photon laser scanning microscope (2p-vivo, Intelligent Imaging Innovations, Inc, Denver, Colorado, USA) equipped with a 20X objective (N.A.=1.0). A spiral scanning ablation at 800 nm over 0.5 μm was programmed within the two-photon photomanipulation settings before capturing the acquisition. Fish were laterally sampled using a 920 nm IR laser at an imaging frequency between 3–4 Hz over 75 s along the rostrocaudal axis from somites 1–30 to gain a holistic understanding of the impact of RF ablation on CSF-cN activity before and after ablation along the central canal. Calcium transients of the CSF-cNs were analyzed by improving a previously developed MATLAB function in order to reduce variability in the detection of the baseline in larvae compared to embryos (Sternberg et al., 2018). Videos were first renamed and renumbered in order to perform the analyses blindly. Videos were then registered to correct for any motion artifacts, and then run through the script to determine CSF-cN ROIs and their respective baselines for their calcium transient traces. CSF-cNs were only designated as active if there was a completed calcium transient greater than 3 standard deviations above the baseline over the 75 s recording.
 
-## Ablation of the Reissner fiber with a UV pulsed laser for kinematic analysis of retraction
+#### Ablation of the Reissner fiber with a UV pulsed laser for kinematic analysis of retraction
 
 Three dpf larvae from Tg(sspo:sspo-GFP;pkd2l1:tagRFP; pkd2l1:GCaMP5G) incrosses were laterally mounted and paralyzed. An inverted CSU-X1 microscope (Yokogawa, Japan) equipped with a 40X oil immersion objective (N.A.=1.3) was used to acquire images at 40 Hz for 25 s. A live FRAP photoablation (iLas Pulse, Gataca Systems, Massy, France) of RF with an 8 nm pulse diameter and 20 ms duration was manually triggered in the middle of the acquisition. Prior to ablation, approximately 20 μm Z stacks (step size = 0.3 μm) were taken of the field of view at 10 Hz to gain a sense of the surroundings of the Reissner fiber at that position in the central canal. Fish were laterally sampled along the rostrocaudal axis from somites 1–30 to gain a holistic understanding of the Reissner fiber’s behavior upon ablation along the central canal. Subsequent analysis consisted of measuring the frame-by-frame relaxation of each end of the cut fiber, which was performed by a MATLAB function. Prior to running the script, videos were first rotated to have the Reissner fiber aligned horizontally at 0°, and then cropped to only include frames just before the UV ablation and until the fiber is out of the field of view.
 
-## Ablation of the Reissner fiber with a UV-pulsed laser with motile cilia imaging and analysis
+#### Ablation of the Reissner fiber with a UV-pulsed laser with motile cilia imaging and analysis
 
-A similar protocol as above was employed to ablate the Reissner fiber while observing the dynamics of the motile cilia. 3 dpf larvae from Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) double-transgenic larvae were laterally mounted and paralyzed. An inverted CSU-X1 microscope (Yokogawa, Japan) equipped with a 40X oil immersion objective (N.A.=1.3) was used to acquire images for 25 s. Previous work at an imaging frequency of 100 Hz has shown main beating frequencies of motile cilia in the central canal ranging up to 45 Hz in 30 hours post fertilization zebrafish embryos (Thouvenin et al., 2020; Thouvenin et al., 2021); however, in order to see the fluorescent signal of RF at the larval stage, we performed these experiments at an imaging frequency of 40 Hz. A live FRAP photoablation (iLas Pulse, Gataca Systems, Massy, France) of RF with an 8 nm pulse diameter and 20 m⁢s duration was manually triggered in the middle of the acquisition. To analyze the resulting images, we implemented the following process:
+A similar protocol as above was employed to ablate the Reissner fiber while observing the dynamics of the motile cilia. 3 dpf larvae from Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) double-transgenic larvae were laterally mounted and paralyzed. An inverted CSU-X1 microscope (Yokogawa, Japan) equipped with a 40X oil immersion objective (N.A.=1.3) was used to acquire images for 25 s. Previous work at an imaging frequency of 100 Hz has shown main beating frequencies of motile cilia in the central canal ranging up to 45 Hz in 30 hours post fertilization zebrafish embryos (Thouvenin et al., 2020; Thouvenin et al., 2021); however, in order to see the fluorescent signal of RF at the larval stage, we performed these experiments at an imaging frequency of 40 Hz. A live FRAP photoablation (iLas Pulse, Gataca Systems, Massy, France) of RF with an 8 nm pulse diameter and 20 $m⁢s$ duration was manually triggered in the middle of the acquisition. To analyze the resulting images, we implemented the following process:
 
 Step 1: First, we selected individual dorsal and ventral motile cilia in sparse areas of each video across 9 fish. Cilia that were chosen fulfilled the following criteria: (1) the individual cilium could be seen in focus (even if dimly fluorescent) during the duration of the video, and (2) the cilium was in a sparse enough environment to analyze only its behavior. Cilia that were overlapping were therefore excluded from our analyses, since we could not distinguish distinct features from one cilium at a time if they were in this configuration. On average, approximately nine individual cilia were selected in each recording and cropped in an approximately 10 μm x 10 μm square, to only get one specific cilium in the field of view (Figure 4—figure supplement 3).
 
@@ -175,9 +436,9 @@ Step 4: The cilium’s orientation in respect to the dorsoventral axis was then 
 
 Quantifications of cilia orientation in respect to the dorsoventral axis, cilia polarity direction and main ciliary beating frequency were then calculated for specific cilia before and after RF photoablation.
 
-The clustering of the fiber and cilia patches (cropped images) was obtained by applying the standard k-means algorithm with k=2 (two clusters). Considering each image i (with 1≤i≤p) as a vector xi∈ℝn (n being the number of pixels of each image, and p the number of images), we initialized the cluster centers cj (1≤j≤k) with cj=xj and then iterated the classical two-steps k-means procedure until convergence: (1) for each i, associate image i to the cluster j such that ∥xi-cj∥ is minimal; (2) for each j, recompute the center cj as the average of all xi that are associated to cluster j.
+The clustering of the fiber and cilia patches (cropped images) was obtained by applying the standard k-means algorithm with $k=2$ (two clusters). Considering each image $i$ (with $1\leqi\leqp$) as a vector $x_{i}\inℝ^{n}$ ($n$ being the number of pixels of each image, and $p$ the number of images), we initialized the cluster centers cj ($1\leqj\leqk$) with $c_{j}=x_{j}$ and then iterated the classical two-steps k-means procedure until convergence: (1) for each $i$, associate image $i$ to the cluster $j$ such that $∥x_{i}-c_{j}∥$ is minimal; (2) for each $j$, recompute the center cj as the average of all xi that are associated to cluster $j$.
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Experiments were done on 3 dpf Tg(sspo:sspo-GFP;β-actin:Arl13b-GFP) double transgenic larvae. Larvae were first euthanized with 0.2% Tricaine and then fixed in a solution containing 4% paraformaldehyde solution (PFA), 1% DMSO and 0.3% Triton X-100 in PBS (0.3% PBSTx) at 4 °C overnight. The samples were then washed once with 0.3% PBSTx to remove any traces of the fixation solution. For permeabilization, samples were incubated for 10 min at –20 °C with acetone. Subsequently, samples were washed with 0.3% PBSTx (3x10 min) and blocked in a solution containing 0.1% BSA and 0.3% PBSTx for 2 hr at room temperature. Samples were incubated overnight at 4 °C with glutamylated tubulin (GT335, 1:400, Adipogen) for staining motile cilia, and GFP antibody (AB13970, 1:400, Abcam) to amplify the signals of the Reissner fiber and motile cilia in the primary antibody solution containing 0.1% BSA and 0.3% PBSTx. The next day, samples were washed with 0.3% PBSTx (3x1 hr) and subsequently incubated overnight at 4 °C with the secondary antibodies, Goat anti-Chicken Alexa Fluor Plus 488 (1:500) and Goat anti-Mouse Alexa Fluor 568 (1:500) (Thermofisher Scientific), with DAPI (1:1000) to stain for neuronal markers. After incubation with the secondary antibody, the larvae were washed (0.3% PBSTx, 3x1 hr) and mounted on glass slides in Vectashield (Vector Laboratories, Burlingame, California, USA) to then be imaged using an inverted confocal SP8X White Light Laser Leica microscope with a 20X objective (N.A.=1).
 

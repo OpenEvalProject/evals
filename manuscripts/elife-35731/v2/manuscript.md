@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.35731.001 Molecular chaperones alter the folding properties of cellular proteins via mechanisms that are not well understood. Here, we show that Trigger Factor (TF), an ATP-independent chaperone, exerts strikingly contrasting effects on the folding of non-native proteins as it transitions between a monomeric and a dimeric state. We used NMR spectroscopy to determine the atomic resolution structure of the 100 kDa dimeric TF. The structural data show that some of the substrate-binding sites are buried in the dimeric interface, explaining the lower affinity for protein substrates of the dimeric compared to the monomeric TF. Surprisingly, the dimeric TF associates faster with proteins and it exhibits stronger anti-aggregation and holdase activity than the monomeric TF. The structural data show that the dimer assembles in a way that substrate-binding sites in the two subunits form a large contiguous surface inside a cavity, thus accounting for the observed accelerated association with unfolded proteins. Our results demonstrate how the activity of a chaperone can be modulated to provide distinct functional outcomes in the cell.
+Molecular chaperones alter the folding properties of cellular proteins via mechanisms that are not well understood. Here, we show that Trigger Factor (TF), an ATP-independent chaperone, exerts strikingly contrasting effects on the folding of non-native proteins as it transitions between a monomeric and a dimeric state. We used NMR spectroscopy to determine the atomic resolution structure of the 100 kDa dimeric TF. The structural data show that some of the substrate-binding sites are buried in the dimeric interface, explaining the lower affinity for protein substrates of the dimeric compared to the monomeric TF. Surprisingly, the dimeric TF associates faster with proteins and it exhibits stronger anti-aggregation and holdase activity than the monomeric TF. The structural data show that the dimer assembles in a way that substrate-binding sites in the two subunits form a large contiguous surface inside a cavity, thus accounting for the observed accelerated association with unfolded proteins. Our results demonstrate how the activity of a chaperone can be modulated to provide distinct functional outcomes in the cell.
 
 ## Introduction
 
@@ -32,17 +32,226 @@ We have taken advantage of recent advances in NMR spectroscopy and isotope label
 
 ## Results
 
-## Characterization of TF dimerization
+### Characterization of TF dimerization
 
 Escherichia coli TF consists of 432 amino acids, comprising RBD (residues 1 to 112), PPD (residues 150 to 246), and SBD (residues 113 to 149 and 247 to 432) (Figure 1A). Both multi-angle light scattering (MALS) and NMR studies show that TF forms
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structure of E. coli TF (PDB code: 1W26). PPD, SBD, and RBD are shown in green, pink, and blue, respectively. The residue boundaries for each one of the three domains are shown in parentheses. SBD is discontinuous and is formed primarily by the C-terminal domain. (B) Size exclusion chromatography (SEC)-MALS of unliganded TF shows that the protein forms a dimer (Theoretical molar mass: 96 kDa) in solution.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Observation of PRE for TF K46C attached with MTSL in the presence and absence of its substrate PhoA. Overlay of 1H-13C methyl HMQC spectra of [U-2H; Met-13CH3; Ile-δ1-13CH3; Leu,Val-13CH3/13CH3]-labeled TF K46C attached with MTSL in oxidized (paramagnetic) and reduced (diamagnetic) conditions. Reduced spectra were acquired in the presence of ascorbic acid. A number of resonances of unliganded TF broadened out in paramagnetic spectrum indicate strong intermolecular PRE due to dimer formation. Addition of unfolded substrate protein PhoA retrieved the broadened resonances, indicating the dissociation of the dimer by the interaction with the substrate. (B) SEC-MALS of TF injected at varying concentrations. Injection at lower concentration resulted lower molecular mass, indicating increase of monomer fraction at lower concentration. (C) Plots of molar mass as a function of concentration. The molar mass was estimated by SEC-MALS for TF and TFmon (TF V39E/I76E/I80A) injected at varying concentrations. The solid line represents the fit of the data to a model of monomer-dimer equilibrium. (D) Sedimentation velocity-AUC isotherm of TF. Best-fit isotherms of the weight-average s-values, sw(c), obtained by integration of c(s) distributions of TF over the entire s-range for each loading concentration in a dilution series. The solid line is the fitted isotherm to a reversible monomer-dimer self-association model. The dissociation constant Kd is 1.687 [1.482, 1.914] µM. Errors of the constants represent the 68.3% confidence interval (CI) using an automated surface projection method. (E) SEC-MALS of TF in complex with PhoA1-141 shows that TF binds to PhoA as a monomer (TF-PhoA theoretical molar mass: 66 kDa). (F) Schematic showing the monomerization of TF upon substrate-binding. (G) Dissociation kinetics of the TF dimer. Dissociation of the dimer was initiated by 10-fold dilution of TF to final concentration of 0.1 μM at 22°C. Solid line represents the fit of the data to a single exponential function yielding the dissociation rate (kdiss) of ~ 10 s−1.
 
 a dimer of ~ 100 kDa in solution (Figure 1B and Figure 1—figure supplement 1A). MALS and analytical ultracentrifugation (AUC) experiments yielded a dimerization dissociation constant (Kd) of ~ 2 μM (Figure 1—figure supplement 1B–D), which is similar to previously reported values (Kaiser et al., 2006; Maier et al., 2003; Morgado et al., 2017). TF monomerization induced by substrate binding was previously reported (Saio et al., 2014) and has been further corroborated in the present work by MALS and NMR (Figure 1—figure supplement 1A,E and F). The intrinsic dissociation rate (kdiss) of the dimer was measured by tryptophan fluorescence following rapid dilution of TF (Figure 1—figure supplement 1G). Fitting of the data to a single exponential function resulted in kdiss of ~10 s−1, which indicates that the dimer is quite dynamic and thus the exchange between formation and dissociation of the dimer can be a major cause of the line broadening observed for the resonances located in RBD (Morgado et al., 2017) (Saio et al., 2014). This is further supported by the observation that line broadening at the interface of dimeric TF is suppressed in concentrated TF samples (~1 mM; Figure 1—figure supplement 1A). Previous studies employing fluorescent labeling (Kaiser et al., 2006) or (1-oxyl-2,2,5,5-tetramethyl-3-pyrroline-3-methyl)-ethanethiosulfonate (MTSL) spin labeling tags (Morgado et al., 2017) reported slower dissociation rates, likely due to the strong hydrophobic nature of the tag.
 
 Structure of dimeric TF. We used NMR spectroscopy to determine the structure of the 100 kDa dimeric form of TF in solution (see Materials and methods). We used U-12C,15N-labelled TF samples that contained specifically protonated methyl groups of Ala, Val, Leu, Met, Thr and Ile (δ1) and protonated aromatic residues Phe, and Tyr in an otherwise deuterated background (Huang and Kalodimos, 2017; Tzeng et al., 2012) (Figure 2—figure supplement 1). The high sensitivity and resolution of the methyl region, combined with the high abundance of these eight amino acids in TF (Figure 2—figure supplement 1) and in the dimeric TF interface provided a large number of intra- and inter-molecular nuclear Overhauser effects (NOEs) (Table 1).
 
+**Table 1.**
+ Structural and NMR statistics of TF dimer.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Distance restraints*</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NOEs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Short range (intraresidue and sequential)</td>
+      <td>870</td>
+    </tr>
+    <tr>
+      <td>Medium range (2 &lt; | i-j | &lt; 5)</td>
+      <td>467</td>
+    </tr>
+    <tr>
+      <td>Long range ( | i-j | &gt; 5 )</td>
+      <td>1230</td>
+    </tr>
+    <tr>
+      <td>Intermolecular</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Hydrogen bonds</td>
+      <td>374</td>
+    </tr>
+    <tr>
+      <td>Dihedral angle restraints (cp and</td>
+      <td>1358</td>
+    </tr>
+    <tr>
+      <td>Violations (mean and SD)*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Distance restraints (A)</td>
+      <td>0.005 ± 0.025</td>
+    </tr>
+    <tr>
+      <td>Dihedral angle restraints (°)</td>
+      <td>0.02 ±</td>
+    </tr>
+    <tr>
+      <td>0.23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Structural coordinates rmsd*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RBD core (1-39, 51-112)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chain A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>1.50 ± 0. A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>2.04 ± 0.29 A</td>
+    </tr>
+    <tr>
+      <td>Chain B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>1.56 ± 0.41 A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>2.07 ± 0.38 A</td>
+    </tr>
+    <tr>
+      <td>PPD core (157-190,195-241)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chain A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>0.87 ± 0.09 A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>1.38 ± 0.07 A</td>
+    </tr>
+    <tr>
+      <td>Chain B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>0.82 ± 0.14 A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>1.30 ± 0.11 A</td>
+    </tr>
+    <tr>
+      <td>SBD core (115-149, 250-321, 329-428)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chain A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>1.40 ± 0.21A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>2.17 ± 0.23 A</td>
+    </tr>
+    <tr>
+      <td>Chain B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>1.34 ± 0.16A</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms</td>
+      <td>2.14 ± 0.20 A</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Most-favored regions</td>
+      <td>85.4%</td>
+    </tr>
+    <tr>
+      <td>Additionally allowed regions</td>
+      <td>14.3%</td>
+    </tr>
+    <tr>
+      <td>Generously allowed regions</td>
+      <td>0.3%</td>
+    </tr>
+    <tr>
+      <td>Disallowed regions</td>
+      <td>0.0%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The statistics apply to the 20 lowest-energy structures._
+
 The structure of dimeric TF is shown in Figure 2. TF forms a symmetric dimer in a head-to-tail orientation. Part of RBD inserts into a large cavity that is formed between the SBD and PPD of the other subunit (Figure 2A and B) and the arrangement results in three major interfaces that hold the dimer together (Figure 2C). The three helices in RBD (α1-α3) form extensive contacts with PPD and the SBD arm 1 and arm 2 regions. Specifically, a hydrophobic patch in SBD arm 1 consisting of bulky hydrophobic residues (Leu314, Phe322, Leu332, Leu336, and Phe337) forms intimate nonpolar contacts with the C-terminal region of RBD helix α1 (Val35, Ala36, Val39, and Ile41) (Figure 2C). This binding interface is further strengthened by a salt bridge between Arg40 and Glu339 and a hydrogen bond between Lys38 and Gln340. SBD arm 1 also interacts with the N-terminal part of RBD helix α3 exclusively via polar contacts (e.g. between Asp65 and Arg321) (Figure 2C). 2,540 Å2 (1,620 Å2 nonpolar and 920 Å2 polar) of surface are buried in this interface of the dimer. A large hydrophobic patch in PPD consisting of aromatic and bulky nonpolar residues (Phe168, Phe185, Met194, Ile195, Tyr221) engages the long loop in RBD connecting helices α1 and α3, which also features a short helix (α2). Residues Phe44, Val49, Ile53, and Tyr58 in RBD appear to establish the most important contacts with PPD, including two salt bridges (between Arg57 and Asp184 and between Lys48 and Glu199) (Figure 2C). 2,650 Å2 (1,900 Å2 nonpolar and 750 Å2 polar) of surface are buried in this interface. The third major dimeric interface is mediated by SBD arm 2 and the C-terminal region of RBD helix α3. Similar to the other two, this interface is made up primarily of nonpolar residues (RBD residues Ile76, Ile79, Ile80 and Ile84; SBD residues Val384, Tyr388, Phe387, and Leu394) with additional salt bridges at the periphery of the binding site. 1,480 Å2 (1,050 Å2 nonpolar and 430 Å2 polar) are buried at this dimeric interface, which is the smallest among the three ones. A total surface of 6,670 Å2 is buried upon dimer formation. The extensive interface seen in the structure to mediate the dimer was tested by mutagenesis and a triple amino-acid substitution variant (V39E/I76E/I80A; hereafter TFmon) was identified that abolishes TF dimerization (Figure 2—figure supplement 2). A recently reported low-resolution structural model of TF dimer also showed a head-to-tail orientation of the two subunits (Morgado et al., 2017). However, the dimeric interface is very different from the one observed in our structure (Figure 2—figure supplement 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig2-v2.jpg)
+
+**Figure 2.:** (A) The lowest-energy structure of the TF dimer is shown as space-filling model. TF forms a dimer in a head-to-tail orientation. RBD, SBD, and PPD are shown in blue, magenta, and green, respectively. (B) One of the TF subunits is shown as space-filling model and the other subunit shown in ribbon. The helices of the RBD and the two arm regions are labeled. (C) Expanded views of the dimeric interfaces highlighting contacts between the two subunits. Residues involved in mediating dimerization are shown as ball-and-stick.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 1H–13C methyl HMQC spectrum of [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu,Val-13CH3/13CH3; Thr-13CH3]-labelled TF. (B) TF is enriched in hydrophobic amino acids, such as methyl-bearing (Ala, Ile, Leu, Met, Thr and Val) and aromatic (Phe, Tyr and Trp).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** SEC-MALS profiles of TFG348E/G352E (A), TFM374A/Y378A/V384A/F387A (B), TFM140E (C), TFΔPPD (D), TFΔRBD (E), TFV39E/I76E/I80A (TFmon) (F), and TFF44A/R45A/K46A (G) are shown. Proteins were injected at the concentration of 100 μM unless otherwise stated. TFG348E/G352E, TFM374A/Y378A/V384A/F387A, and TFM140E have mutations on the substrate-binding site A, B, and D, respectively. TFF44A/R45A/K46A has mutation at the ribosome-binding loop containing the signature motif. Destabilization of the dimer by the introduction of mutations on the substrate-binding site B as well as by deletion of PPD containing site E supports the engagement of these substrate-binding sites in the dimerization (Figure 3B). Moderate effect of the deletion of PPD to dimerization implies that the contribution of the interaction between PPD and RBD in the formation of the dimer is less significant and is auxiliary. The mutations in the signature motif have little effect to the dimer formation, which is consistent with the fact that only a part of the ribosome-binding loop is involved in the dimer formation and the rest is floating in the cavity formed by PPD and SBD (Figure 3—figure supplement 1A and B).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The structure of TF dimer superimposed with previously reported PRE-based docking models (Morgado et al., 2017); conformer 1 [PDB code: 5OWI] (A), and conformer 2 [PDB code: 5OWJ] (B). PPD, SBD, and RBD in the structure of TF dimer are shown in green, pink, and blue, respectively. The docking model is shown in orange and gold. The coordinates are superimposed on the backbone heavy atoms of SBD. Differences in rotation and translation of the helices in RBD between the previously reported PRE-based docking model and the current dimer structure are indicated. Most of the contacts, which are seen in the current structure of the TF dimer and were validated by mutagenesis and chemical shift perturbation mapping, are not present in the PRE-based models. In the PRE-derived conformer 1, RBD makes contacts with the arm 1 and the PPD of the other subunit, which were also seen in the current dimer TF structure. However, in the PRE-derived conformer 1 the RBD makes no significant contacts with the arm 2, which is not consistent with the significant effect that mutations in the arm 2 have on the dimerization as shown by SEC-MALS (Figure 2—figure supplement 2B). The PRE-derived conformer 2 has RBD snagged on the tips of the arm 1 and arm 2, as well as on the edge of PPD. A very small overlap between the substrate-binding sites and the dimer interface is seen in the PRE-derived conformer 2. In contrast, in the current structure of TF dimer, RBD is buried inside the cradle formed by SBD and PPD of the other subunit, thus explaining why the TF dimer dissociates upon binding to the substrate protein (Figure 1—figure supplement 1A,E and F). In addition to the significant differences in the overall domain orientation between the PRE-derived models and the current TF structure, the RBD structure itself appears to be loosely packed in the PRE-derived models.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Representative strips from 13C-edited NOESY-HMQC and HMQC-NOESY-HMQC NMR experiments. The intermolecular NOE cross peaks are designated by a dashed-line red rectangle.
+
 Superposition of the crystallographically determined structure of the monomeric TF (Ferbitz et al., 2004) on one of the subunits of the dimeric TF demonstrates that TF undergoes major conformational changes as it transitions from the monomeric to the dimeric state (Figure 3A). With respect to SBD, RBD undergoes a 60° rotation and a 21 Å translation, whereas PPD undergoes a 74° rotation and a 19 Å translation. As a result, PPD moves closer to SBD within the same subunit, and the two domains form a large cavity wherein the RBD of the other subunit inserts into (Figures 2 and 3A). These conformational changes results in a more compact TF structure in the dimeric form, which is consistent with small-angle X-ray scattering (SAXS) data (Ries et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig3-v2.jpg)
+
+**Figure 3.:** (A) The structure of one subunit in the TF dimer (colored as in Figure 1A) and the crystal structure of monomeric TF (colored grey) [Protein Data Bank (PDB) code: 1W26] are superimposed for SBD. The changes in rotation and translation of the RBD and PPD between the monomer and the dimer are indicated. (B) View of the structure of dimeric TF highlighting the positioning of the substrate-binding sites (colored orange). The five main substrate-binding sites are labeled A, B, C, D, and E.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Close-up view of the ribosome-binding loop in the TF dimer (A) or TF in complex with the ribosome (PDB ID: 1W2B) (B). The amino acid residues of the ribosome-binding loop involved in the interaction are shown in ball-and-stick. PPD, SBD, and RBD are shown in green, pink, and blue, respectively. The ribosome is represented as yellow surface model. (C) ITC traces of the titration of TF (right) and RBD (left) to the ribosome. Titration of RBD indicated slightly stronger affinity than that of TF, which is consistent with the fact that RBD is responsible for the binding to the ribosome and the ribosome-binding loop is protected in the TF dimer. The experiments were performed at 22°C.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) SEC-MALS of E. coli S7 in complex with TF indicating two S7 molecules bind to the monomer of TF. (B) SEC-MALS of E. coli reverse transcriptase (RT)-Ec86 255–320 in complex with TF indicating one RT molecule binds to the monomer of TF. Unliganded dimeric TF eluted before TF-RT complex, resulting in a shoulder on the left side of the main peak. (C) 1H-13C methyl HMQC of [U-2H; Met-13CH3; Ala-13CH3; Ile-δ1-13CH3; Leu,Val-13CH3/13CH3]-labeled S7 in complex with unlabeled TF showing narrow dispersion of the resonances of methyl groups in S7. (D) Overlay of 1H-13C methyl HMQC of [U-2H; Met-13CH3; Ala-13CH3; Ile-δ1-13CH3; Leu,Val-13CH3/13CH3]-labeled TF (blue) and TF-RT complex (red). Several resonances that broaden out in complex with RT are located at the substrate-binding sites on TF. Most of the dispersed resonances observed in the spectrum of TF-RT complex match to the resonances of TF and no dispersed resonances are found for RT, which suggests that RT in complex with TF does not form a folded structure. The results indicate that both of RT and S7 binds to monomeric TF as an unfolded state, although the possibility of the existence of minor folded population cannot be excluded.
 
 Dimerization buries the ribosome- and substrate-binding sites. The structural data suggest that TF dimerization has profound impact on the function of TF because the ribosome-binding region as well as several of the substrate-binding sites are buried in the dimer (Figure 3B and Figure 3—figure supplement 1). The RBD loop, which contains the signature motif (G43FRxGxxP50) mediating the interaction of TF with the ribosome, is sequestered by the PPD of the other subunit in the TF dimer and thus is not available for binding to the ribosome. This finding explains why TF must monomerize upon binding to the ribosome (Ferbitz et al., 2004). The intrinsic affinity of TF for the ribosome (Kaiser et al., 2006; Maier et al., 2003) (Kd ~0.5 μM; Figure 3—figure supplement 1C) is comparable to the dimerization Kd (~2 μM); therefore, there is a strong competition between TF dimerization and ribosome binding. Because the affinity of TF for ribosome-nascent-chain (RNC) complexes is substantially stronger (Kd <0.01 μM) (Bornemann et al., 2014; Rutkowska et al., 2008) than for vacant ribosomes, translating ribosomes will be invariably bound, and thus protected by TF.
 
@@ -50,9 +259,33 @@ TF uses five distinct binding sites (Figure 3B) to interact with unfolded substr
 
 Dimerization modulates the chaperone activities of TF. The concentration of TF in the cell (~50 μM) is 2 to 3-fold that of the ribosome (Patzelt et al., 2002), and given the low Kd of dimerization (~2 μM) the vast majority of free TF in the cytoplasm will exist in the dimeric form. The dissociation rate (kdiss) of the dimer is ~ 10 s−1 indicating a rather dynamic TF dimer with a residence time of ~ 100 ms (Figure 1—figure supplement 1G). We sought to investigate whether the chaperone activity of TF is affected as it transitions between the monomeric and dimeric forms. To characterize the chaperone activity of the monomeric form of TF, we used the TFmon variant (Figure 2—figure supplement 2). The amino acid substitutions that abolish dimerization in this variant are located in RBD and thus do not affect protein substrate binding. First, we performed aggregation assay using the 35 kDa protein glyceraldehyde-3-phosphate dehydrogenase (GAPDH) in the absence and presence of TF or TFmon. Denatured GAPDH was diluted into buffer and its aggregation was monitored by light scattering. The results showed that dimeric TF was substantially more efficient at suppressing aggregation than the monomeric TF (Figure 4A and Figure 4—figure supplement 1). Interestingly, decreased anti-aggregation activity of another monomeric variant, TFΔRBD (Figure 2—figure supplement 2E), has also been reported previously (Merz et al., 2006). Note that the results for TFΔRBD and TF monomeric mutant are essentially identical in our GAPDH aggregation and MBP refolding assays. The anti-aggregation assay was also performed using a shorter substrate protein OmpA1-192 (Figure 4B). The results showed that in the case of shorter substrate, which has a smaller number of hydrophobic regions (Figure 4—figure supplement 2), the difference in the anti-aggregation activity between the dimeric TF and monomeric TF is much less pronounced and both species are equally efficient in suppressing aggregation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig4-v2.jpg)
+
+**Figure 4.:** Aggregation of GAPDH in the absence or presence of TF and TFmon at 0.5 μM (A) and OmpA in the absence or presence of TF and TFmon at 4 μM (B). (C) Refolding of MBP in the absence or presence of TF and TFmon. The solid line represents the fit of the data to a single exponential function. (D) Folding rates of MBP from the analysis of the curves shown in panel C. (E) Refolding of the slowly-folding MBPY283D variant in the absence or presence of TF and TFmon.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The aggregation of GAPDH was monitored by 90° light scattering at 620 nm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Hydrophobicity plot of PhoA as a function of its primary sequence. TF-binding sites determined by NMR (Saio et al., 2014) are highlighted in green. (B) Hydrophobicity plot of GAPDH (left panel) and OmpA1-192 (right panel) as a function of their primary sequences. The hydrophobic stretches that are expected to bind to TF are highlighted in light blue.
+
 Next, we examined the efficiency of TF in assisting with the folding of MBP. Denatured MBP was diluted into buffer and its refolding was monitored by the characteristic increase in tryptophan fluorescence intensity in the absence and presence of TF or TFmon (Figure 4C) (Apetri and Horwich, 2008; Chakraborty et al., 2010). At 1:1 stoichiometric ratio with MBP, TFmon had a minimal effect on MBP folding whereas dimeric TF had a pronounced effect (Figure 4C). Specifically, dimeric TF increased the apparent folding rate of MBP and at the same time increased the yield of the soluble fraction substantially (Figure 4C and D). The increase in the apparent folding rate is likely due to the most efficient suppression of aggregation by the dimeric TF (Apetri and Horwich, 2008). Notably, a much higher TFmon concentration was needed to match the chaperone activity of the dimeric TF (Figure 4C and D). We also tested the effect of TF on an aggregation-prone, slowly folding mutant of MBP (MBPY283D) (Huang et al., 2016; Saio et al., 2014). The dimeric TF was observed to have a strong ‘holdase’ effect on the mutant MBP as evidenced by the suppression of the folding of MBPY283D (Figure 4E). In contrast, TFmon slightly accelerated folding (Figure 4E). Because refolding of MBPY283D was performed in a chloride-free buffer in which MBP does not aggregate (Apetri and Horwich, 2008), any contribution of an anti-aggregation effect can be excluded. Taken together, all assays showed that the monomeric and dimeric TF states have distinct chaperone activities.
 
 TF dimerization accelerates its association rate with substrates. To understand how the oligomeric state of TF affects chaperone activity, we sought to determine how the monomeric and dimeric TF species interact with protein substrates. ITC showed that TFmon has a 5-fold higher affinity (Kd ~ 6 μM) for protein substrates than the dimeric TF (Kd ~ 35 μM) (Figure 5—figure supplement 1). This is expected given that a sizable fraction of the substrate-binding surface is buried in the dimeric TF (Figure 3B and Figure 5—figure supplement 2A). Next, we measured the kinetics of substrate binding to TF using stopped-flow fluorescence spectroscopy. Notably, the rates of protein substrate association and dissociation are very different for the dimeric (Figure 5A–C) and monomeric TF (Figure 5D and E). Specifically, unfolded PhoA binds TFmon with a kon ~ 0.5 × 106 M−1 s−1 and dissociates with a koff ~ 6 s−1. In comparison, dimeric TF binds PhoA with a 2-fold faster association rate (kon ~ 1.1 × 106 M−1 s−1) and dissociates with a 5-fold faster dissociation rate (koff ~ 30 s−1). The faster association of non-native proteins with the dimeric TF over the monomeric TF is consistent with the stronger holdase activity of dimeric TF (Figure 4E). Note that the holdase activity of a chaperone is determined by the difference between the folding rate of the substrate protein and the association rate between the chaperone and the unfolded substrate protein, as shown by kinetic experiments on SecB and TF (Huang et al., 2016). Thus the association rate of dimeric TF for the substrate appears to be fast enough to delay the folding of the slowly folding mutant MBPY283D, but not fast enough to delay the folding of wild type MBP (Figure 4C and E). Although three out of the five substrate-binding sites are partially occluded in the dimeric TF, assembly of the dimer brings next to each other substrate-binding sites A, B, and D in the two subunits. The sites are located within a large cavity that is accessible to unfolded proteins (Figure 5—figure supplement 2) and present to the substrate a large contiguous binding surface that may account for the enhanced association rates of substrates with the dimeric TF.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig5-v2.jpg)
+
+**Figure 5.:** (A) Association of unfolded PhoA with TF monitored by tryptophan fluorescence. (B) Fitting of the data for the association of PhoA with TF by a single exponential function (gray line) or the sum of two exponential functions (black line), indicating that two exponential functions are required to fit the data. (C) Plots of the observed rate constant (kobs) as a function of the concentration of the dimer (left) and the monomer (right) of TF. (D) Association of PhoA with TFmon monitored by tryptophan fluorescence. (E) Plot of the observed rate constant (kobs) as a function of the concentration of monomeric TF.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ITC traces of the titration of PhoA220-310 (A) into TF (left panel), TFmon (middle panel), and TFΔRBD (right panel), or MBP198-265 (B) into TF (left panel) and TFΔRBD (right panel), Monomeric variants of TF indicated stronger affinity to the unfolded substrates, which is consistent with the fact that the three of the substrate-binding sites are buried in the dimer. The titration of PhoA220-310 and MBP198-265 were performed at 8°C and 22°C, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35731/elife-35731-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Accessible surface area of the substrate-binding sites in monomeric and dimeric TF. (B) The residues identified by NMR to interact with unfolded MBP are colored blue on the surface of TF dimer. (C) Cut-away view of the TF dimer with the mapping of substrate-binding sites as in the panel B. Substrate-binding sites A, B and D are assembled on the inner surface of the cavity in the dimer, forming a single broad substrate-binding site. (D) Mapping of hydrophobic residues colored green on the surface of TF dimer. The pore of the dimer is paved with a large hydrophobic surface on RBD that leads into the cavity. (E) Cut-away view of the TF dimer with the mapping of hydrophobic residues as in the panel D. (F) The mapping of the substrate-binding sites colored blue on the surface of the crystal structure of monomeric TF [PDB code: 1W26].
 
 ## Discussion
 
@@ -64,7 +297,83 @@ Our findings demonstrate how changes in the oligomerization state of a molecular
 
 ## Materials and methods
 
-## Sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>NIPPON GENE CO., LTD.</td>
+      <td>ECOS Competent E. coli BL21 (DE3)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PhoA</td>
+      <td>Saio et al. (2014),PMID: 24812405</td>
+      <td>NCBIGene:945041</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>OmpA</td>
+      <td>Tsirigotaki et al., (2018),PMID: 29606594</td>
+      <td>NCBIGene:945571</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RT</td>
+      <td>Inouye et al., (1999),PMID: 10531319</td>
+      <td>UniProtKB: P23070</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP</td>
+      <td>Huang et al. (2016), PMID: 27501151</td>
+      <td>NCBIGene: 948538</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TF</td>
+      <td>Takara Bio inc.</td>
+      <td>pCold-TF (TKR 3365)</td>
+    </tr>
+    <tr>
+      <td>S7</td>
+      <td>S7</td>
+      <td>GenScript</td>
+      <td>Gene synthesis</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GAPDH</td>
+      <td>Sigma-Aldrich</td>
+      <td>G-2267</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CYANA3.97</td>
+      <td>Güntert (2004),PMID: 15318003</td>
+      <td>RRID:SCR_014229</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CNS</td>
+      <td>Brunger (2007), PMID: 18007608</td>
+      <td>RRID:SCR_014223</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample preparation
 
 The E. coli TF, RBD (residues 1 to 117), PPD (residues 148 to 249), SBD (residues 113–432Δ150–246), TFΔRBD (residues 113 to 246), TFΔPPD (residues 1–432Δ150–243), OmpA1-192, and PhoA were expressed and purified as described previously (Saio et al., 2014). TF, PPD, TFΔRBD, and TFΔPPD were cloned into the pCold vector (Takara Bio). RBD and SBD were cloned into pET16b vector (Novagen) and fused to His6-MBP and a tobacco etch virus (TEV) protease cleavage site. TF mutants were constructed by site-directed mutagenesis using PfuTurbo High Fidelity DNA polymerase (Agilent) as well as PrimeSTAR Max (Takara Bio). OmpA1-192 was fused with N-terminal His6-tag and cloned into pET16b. Precursor form of maltose-binding protein (preMBP) and MBPY283D were expressed and purified as described previously (Huang et al., 2016). E. coli reverse transcriptase (RT)-Ec86 255–320 was cloned into pCold-TF (Takara Bio) including a ~ 25 a.a. linker between TF and RT. E. coli S7 was cloned into pET16b vector and fused to His6-MBP, including a tobacco etch virus (TEV) protease cleavage site. All constructs were transformed into E. coli BL21 (DE3) cells.
 
@@ -72,44 +381,48 @@ For the unlabeled protein samples, cells were grown in Luria-Bertani (LB) medium
 
 Cells were harvested and resuspended in the lysis buffer containing 50 mM Tris-HCl pH 8.0, 500 mM NaCl. Cells were disrupted by a high-pressure homogenizer or sonicator and centrifuged at 50,000 g for 45 min. TF, TF variants, and PhoA fragments were purified using Ni Sepharose 6 Fast Flow resin (GE Healthcare). In the case of RBD, SBD, and PhoA fragments that contain TEV cleavage site, the His6-MBP tag was removed by TEV protease at 4°C (incubation for 16 hr). The proteins were further purified by gel filtration using Superdex 75 16/60 or 200 16/60 columns (GE Healthcare). TF-RT complex was purified using Ni Sepharose 6 Fast Flow resin, followed by gel filtration using Superdex 200 16/60 column equilibrated with a solution containing 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, 0.05% NaN3. S7 was purified using Ni Sepharose 6 Fast Flow resin, followed by the removal of His6-MBP tag by TEV protease digestion at 4°C in the presence of TF. TF-S7 complex was further purified by gel filtration using Superdex 200 16/60 column equilibrated with a solution containing 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, 0.05% NaN3. MBPY283D and preMBP was purified using Ni Sepharose 6 Fast Flow resin, followed by gel filtration using Superdex 200 16/60 column equilibrated with a solution containing 100 mM HEPES, pH 7.5, 20 mM potassium acetate, 5 mM magnesium acetate. For OmpA1-192, the cell pellet was resuspended in a solution containing 50 mM Tris-HCl (pH 8.0), 500 mM NaCl, and 8 M urea and incubated for 1 hr at room temperature, followed by centrifugation at 50,000 g for 45 min. The solubilized protein was purified using Ni Sepharose 6 Fast Flow resin, and eluted with a solution containing 50 mM Tris-HCl (pH 8.0), 500 mM NaCl, 400 mM imidazole, and 8 M urea.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 For NMR titrations and NOE measurement, NMR samples were prepared in 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, 0.05% NaN3, and 7% 2H2O. The proteins were concentrated to 0.3 ~ 2.2 mM for NOESY measurements. NMR spectra were recorded on Agilent UNITY Inova 600 and 800 MHz NMR spectrometers and Bruker Avance III 600, 700, and 800 MHz NMR spectrometers. Bruker Avance III 700 was equipped with cryogenic probe. The experiments were run at 10, 22, and 35°C. Spectra were processed using the NMRPipe program (Delaglio et al., 1995), and data analysis was performed with Olivia (fermi.pharm.hokudai.ac.jp/olivia). NOE distance restraints for the dimer was collected by 13C-edited NOESY-HMQC, 3D (1H)-13C HMQC-NOESY-1H-13C HMQC, 3D-SOFAST-(1H)-13C HMQC-NOESY-1H-13C HMQC and 13C-edited SOFAST-NOESY-HMQC (Rossi et al., 2016) recorded on [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3; Phe-13C15N; Tyr-13C15N]-labeled TF or on 1:1 mixture of [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3]-labeled TF and [Leu/Val-13CH3/13CH3; Phe-13C15N; Tyr-13C15N]-labeled TF. The 1:1 mixture of the TF proteins with different labeling schemes enabled us to unambiguously identify the intermolecular NOEs: For example, an NOE observed between Ile and Leu can be unambiguously classified as an intermolecular NOE. Although the resonances from the interface, especially from RBD, undergo severe line broadening, high sensitivity of methyl resonances in deuterated background as well as high solubility and stability of TF at wide range of temperature enabled observation of substantial number of NOEs. NOEs were further collected by 3D (1H)-13C HMQC-NOESY-1H-13C HMQC, 3D-SOFAST-(1H)-13C HMQC-NOESY-1H-13C HMQC, and 13C-edited SOFAST-NOESY-HMQC recorded on [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3; Phe-13C15N; Tyr-13C15N]-labeled RBD in complex with [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3]-labeled TFΔRBD. To corroborate intra-molecular distance restraints, 3D (1H)-13C HMQC-NOESY-1H-13C HMQC, 3D (1H)-15N HMQC-NOESY-1H-13C HMQC, 3D (1H)-13C HMQC-NOESY-1H-15N HMQC, 13C-edited NOESY-HMQC, 13C-edited NOESY-HSQC, 13C-edited HSQC-NOESY, 15N-edited NOESY-HMQC, and 15N-edited NOESY-HSQC were recorded on [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3; Phe-13C15N; Tyr-13C15N]-labeled RBD, [U-2H; Ala-13CH3; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3; Phe-13C15N; Tyr-13C15N]-labeled SBD, or 13C15N-labeled PPD.
 
-## Paramagnetic Relaxation Enhancement experiment
+### Paramagnetic Relaxation Enhancement experiment
 
 To observe paramagnetic relaxation enhancement (PRE), nitroxide spin label 1-oxyl-2,2,5,5-tetramethyl-3-pyrroline-3-methyl)-ethanethiosulfonate (MTSL, Toronto Research Chemicals Inc.) were introduced via cysteine-specific modification of TF K46C. Wild type TF has no cysteine residues. K46 mutant and its MTSL derivatives were determined not to perturb the TF structure, as assessed by 1H-13C HMQC spectra. After purification, [U-2H; Met-13CH3; Ile-δ1-13CH3; Leu/Val-13CH3/13CH3]-labeled TF K46C was exchanged into tris buffer (50 mM Tris-HCl pH 7.0, 50 mM KCl, and 1 mM β-mercaptoethanol). β-mercaptoethanol was removed by Zeba spin desalting column (Thermo Scientific, Waltham, MA) according to the manufacturer's protocol. MTSL was added from a concentrated stock in acetonitrile at a 10-fold excess, and the reaction was allowed to proceed at 4°C for ~12 hr. Excess MTSL was extensively removed by an Amicon stirred cell. PREs were observed from 1H-13C HMQC spectra of TF in the absence and presence of PhoA by measuring peak intensities before (paramagnetic) and after (diamagnetic) reduction of the nitroxide spin label with ascorbic acid.
 
-## Structure determination of TF dimer
+### Structure determination of TF dimer
 
 The resonances of the full-length dimeric TF (~100 kDa) were assigned by a domain-parsing approach as reported previously (Saio et al., 2014). Near-complete assignment of TF was achieved for the resonances from methyl side chain, aromatic side chain, and amide group. The structure of TF dimer was calculated by CYANA 3.97 (Güntert, 2004) using the NOE-derived distance restraints, dihedral angle-restraints, and hydrogen bond restraints. PREs were solely used to monitor TF monomerization upon the addition of the substrate protein (Figure 1—figure supplement 1A), and were not used in the structure calculation. NOE peak lists were obtained from 3D (1H)-13C HMQC-NOESY-1H-13C HMQC, 3D (1H)-15N HMQC-NOESY-1H-13C HMQC, 3D (1H)-13C HMQC-NOESY-1H-15N HMQC, 3D-SOFAST-(1H)-13C HMQC-NOESY-1H-13C HMQC and 13C-edited SOFAST-NOESY-HMQC, 13C-edited NOESY-HMQC, 13C-edited NOESY-HSQC, 13C-edited HSQC-NOESY, 15N-edited NOESY-HMQC, and 15N-edited NOESY-HSQC. Substantial number of inter- and intra-molecular NOEs were observed from NOESY spectra recorded on full length TF. The NOE restraints were further corroborated by the NOEs observed from isolated RBD in complex with TFΔRBD. The chemical shift perturbation profiles as well as NOEs observed for RBD-TFΔRBD complex were consistent with those observed for full length TF, supporting the idea that the binding mode in the TF dimer is preserved in the interaction between the isolated domains. The intramolecular restraints obtained from NOESY experiments on full length TF were also corroborated by NOEs observed from the isolated domains of PPD, SBD and RBD. Note that most of the intramolecular NOEs from the isolated domains were consistent with the NOEs observed from TF dimer. A few intra-molecular NOEs observed from the isolated domains especially from the regions close to the dimer interface and the hinge regions were excluded in the calculation. Accordingly more than 2500 intramolecular NOEs as well as 54 intermolecular NOEs were collected for structure calculation (Table 1) (Figure 2—figure supplement 4). NOE restraints were corroborated by dihedral angle restraints derived from TALOS+ (Shen et al., 2009) and hydrogen bond restraints added for the regions forming secondary structures as judged by the NOEs and TALOS+-derived dihedral angles. Intermolecular hydrogen bond restraints were added for the pair of atoms located close in the majority of the conformers in the NOE-derived preliminary structure. For the core region of RBD remote to the dimer interface, distance restraints from the crystal structure (Ferbitz et al., 2004) were loosely added to maintain overall fold of RBD. The 20 lowest-energy structures resulted from CYANA calculation were refined by restrained molecular dynamics in explicit water with CNS (Brunger, 2007). All of the intermolecular NOEs were well satisfied in the structure. The coordinates, restraints, chemical shift assignments have been deposited to PDB and BMRB.
 
-## SEC-MALS experiments
+### SEC-MALS experiments
 
-Size-exclusion chromatography with multi-angle light scattering (SEC-MALS) was measured using DAWN HELEOS-II (Wyatt Technology Corporation) downstream of a Shimadzu liquid chromatography system connected to Superdex 200 10/300 GL (GE Healthcare) gel filtration column, or using DAWN HELEOS8+ (Wyatt Technology Corporation) downstream of TOSOH liquid chromatography system connected to TSKgel G3000SWXL (TOSOH Corporation) gel filtration column. In both instruments, the differential refractive index (Shimadzu Corporation) downstream of MALS was used to obtain protein concentration. The running buffer was 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, and 0.5 mM EDTA. 100 ~ 200 µL of the sample was injected with a flow rate of 0.5 ~ 1.0 mL min−1. The data were analyzed with ASTRA version 6.0.5 or 7.0.1 (Wyatt Technology Corporation). To obtain the dissociation constant (Kd) of TF dimer, TF was injected at varying concentrations, followed by Kd estimation based on the weight-averaged molar mass as determined by SEC-MALS and protein concentration at the peak top, using the following equation.(1)Mw=Mm(8[M]T+kd−kd2+8[M]Tkd4[M]T)
+Size-exclusion chromatography with multi-angle light scattering (SEC-MALS) was measured using DAWN HELEOS-II (Wyatt Technology Corporation) downstream of a Shimadzu liquid chromatography system connected to Superdex 200 10/300 GL (GE Healthcare) gel filtration column, or using DAWN HELEOS8+ (Wyatt Technology Corporation) downstream of TOSOH liquid chromatography system connected to TSKgel G3000SWXL (TOSOH Corporation) gel filtration column. In both instruments, the differential refractive index (Shimadzu Corporation) downstream of MALS was used to obtain protein concentration. The running buffer was 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, and 0.5 mM EDTA. 100 ~ 200 µL of the sample was injected with a flow rate of 0.5 ~ 1.0 mL min−1. The data were analyzed with ASTRA version 6.0.5 or 7.0.1 (Wyatt Technology Corporation). To obtain the dissociation constant (Kd) of TF dimer, TF was injected at varying concentrations, followed by Kd estimation based on the weight-averaged molar mass as determined by SEC-MALS and protein concentration at the peak top, using the following equation.
+
+$$
+M_{w}=M_{m}(\frac{8[M]_{T}+k_{d}−\sqrt{k_{d}^{2}+8[M]_{T}k_{d}}}{4[M]_{T}})
+$$
 
 where Mw is the weight average molar mass obtained by SEC-MALS, [M]T is the molar concentration of protein (as measured by change in refractive index), and Mm is molecular mass of the monomer. Nonlinear least square fitting was performed using Prism 5 (GraphPad Software).
 
-## Analytical ultracentrifugation experiments
+### Analytical ultracentrifugation experiments
 
 Sedimentation velocity experiments were conducted in a ProteomeLab XL-I analytical ultracentrifuge (Beckman Coulter, Indianapolis, IN) following standard protocols unless mentioned otherwise (Benfield et al., 2011). The samples, dialyzed overnight against the reference buffer (50 mM sodium phosphate pH 7.0, 100 mM NaCl) were loaded into a cell assembly comprised of a double sector charcoal-filled centerpiece with a 12 mm path length and sapphire windows. Buffer density and viscosity were determined in a DMA 5000 M density meter and an AMVn automated micro-viscometer (both Anton Paar, Graz, Austria), respectively. The partial specific volumes and the molecular masses of the proteins were calculated based on their amino acid compositions in SEDFIT (https://sedfitsedphat.nibib.nih.gov/software/default.aspx). The cell assembly, containing identical sample and reference buffer volumes of 360 µL, was placed in a rotor and temperature equilibrated at rest at 20°C for 2 hr before it was accelerated from 0 to 50,000 rpm. Absorbance scans at 230 and 280 nm were collected continuously for 12 hr. The velocity data were modeled with diffusion-deconvoluted sedimentation coefficient distributions c(s) in SEDFIT (https://sedfitsedphat.nibib.nih.gov/software/default.aspx), using algebraic noise decomposition and with signal-average frictional ratio and meniscus position refined with non-linear regression. The s-values were corrected for time and finite acceleration of the rotor was accounted for in the evaluation of Lamm equation solutions (Benfield et al., 2011). Maximum entropy regularization was applied at a confidence level of P-0.68.
 
 Sedimentation velocity isotherm data that is the signal-weighted average sedimentation coefficients, sw(c), of the total sedimenting system derived from integration of the complete c(s) distributions at various concentrations (40.18, 12.13, 3.83 and 0.596 µM) of TF were fitted to a monomer-dimer self-association model using SEDPHAT (https://sedfitsedphat.nibib.nih.gov/software/default.aspx). For interacting systems, sw represents the average sedimentation property of the species under investigation. The association scheme used in this analysis was A + A ↔ A2 with equilibrium dissociation constant Kd. All plots were generated with the program GUSSI (kindly provided by Dr. Chad Brautigam).
 
-## Stopped-flow experiments
+### Stopped-flow experiments
 
 Kinetic measurements were performed on FP-8300 Fluorescence Stopped Flow System (JASCO Corporation). The excitation and emission wavelengths were set at 280 nm (band width 10 nm) and 350 nm (band width 20 nm), respectively, so that the intrinsic tryptophan-fluorescence of PhoA220-310 containing two Trp residues or that of TF containing one tryptophan residue can be monitored. All measurements were carried out in the buffer containing 20 mM potassium phosphate (pH 7.0), 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, 0.05% NaN3. Individual kinetics were typically measured 40 times and averaged. The data were analyzed with Prism 5 (GraphPad Software). To account for photobleaching, an exponential baseline was defined using the data after 1000 ms of the mixing, by which the dissociation or association has completed and reached to the equilibrium. Dissociation of TF dimer was initiated by 10-fold dilution of TF at 1 µM. The temperature was set to 22°C. The protein solution was placed in 2.5 mL syringe and the buffer was placed in 10 mL syringe. The dissociation kinetics was analyzed using a single exponential function. Binding between TF and PhoA220-310 was monitored after rapid mixing by the stopped-flow instrument. Association of PhoA220-310 and TF or TFmon was initiated by mixing equal volumes of 4 µM PhoA220-310 and 0–80 µM TF or TFmon resulting in final concentrations of 2 µM PhoA220-310 and 0–40 µM TF or TFmon. A single tryptophan residue in TF (W151) was mutated to phenylalanine in order to selectively monitor the change in the fluorescence from PhoA220-310 containing two residues both located in the binding sites for TF (Saio et al., 2014). Both samples were placed in the 10 mL syringe. The temperature was set to 18°C. The fluorescence intensity of PhoA220-310 increased upon binding to TF as seen in the previous report using reduced and carboxymethylated form of α-lactalbumin (RCM-La). When PhoA220-310 was mixed with the monomeric mutant TFmon, each of the time traces was well explained by a single exponential curve. The time traces at varying concentration of TFmon showed linear dependence of the observed rate kobs on the concentration of TFmon, and kon and koff were extracted by fit of the data to the linear function of kobs = kon[TF]+koff. On the other hand, the time traces of the binding between PhoA220-310 and TF were best represented as the sum of the two exponential curves. The fit of the time traces to two exponential functions resulted the fraction of the fast phase more than 80% that increased as the concentration of TF increased. The fraction for the fast phase coincides with the fraction of the dimer as estimated by the Kd of dimerization (2 µM) determined by the AUC experiment, and thus we concluded that the fast and slow phases are attributed to the binding of PhoA220-310 to the dimer and the monomer fractions of TF, respectively. The concentration for the plots of kobs was calculated for each of the dimer and the monomer, using the Kd of dimerization (2 µM). The kinetic parameters determined for the monomer fraction of TF roughly correspond to those determined for the monomeric mutant TFmon.
 
-## ITC experiments
+### ITC experiments
 
 For the ribosome and TF, calorimetric titrations were carried out on iTC200 microcalorimeter (GE healthcare) at 22°C. All protein samples were dialyzed against ITC buffer containing 20 mM HEPES, pH 7.5, 50 mM potassium acetate, 20 mM MgCl2, and 1 mM tris(2-carboxyethyl)phosphine (TCEP). The 200 µL sample cell was filled with 12 µM solution of the ribosome, and 40 µL injection syringe was filled with 160 to 190 µM solution of TF or RBD. The titrations were carried out with a preliminary 0.2 µL injection, followed by 14 injections of 2.5 µL each with time intervals of 5 min. The solution was stirred at 1000 rpm. For unfolded substrates (PhoA220-310 or MBP198-265) and TF, TFmon, or TFΔRBD, calorimetric titrations were carried out on Auto-iTC200 microcalorimeter (GE healthcare). The calorimetric titrations for PhoA220-310 and MBP198-265 were performed at 8°C and 22°C, respectively. All protein samples were purified in ITC buffer containing 20 mM potassium phosphate (pH 7.0), 100 mM KCl by gel filtration. For titration of PhoA220-310, the 200 µL sample cell was filled with 90 µM solution of TF, TFmon, or TFΔRBD, and 40 µL injection syringe was filled with 1.1 mM solution of PhoA220-310. For titration of MBP198-265, the 200 µL sample cell was filled with 110 µM solution of TF or TFΔRBD, and 40 µL injection syringe was filled with 1.1 mM solution of MBP198-265. The titrations were carried out with a preliminary 0.2 µL injection, followed by 8 injections of 4.2 µL each with time intervals of 5 min. The solution was stirred at 1000 rpm. Data for the preliminary injection, which are affected by diffusion of the solution from and into the injection syringe during the initial equilibration period, were discarded. Binding isotherms were generated by plotting heats of reaction normalized by the modes of injectant versus the ratio of total injectant to total protein per injection. The data were fitted with Origin 7.0 (OriginLab Corporation, Northampton, MA).
 
-## Anti-aggregation assays
+### Anti-aggregation assays
 
 Aggregation of denatured GAPDH from rabbit muscle (Sigma; G-2267) was measured as described previously (Saio et al., 2014). 125 µM GAPDH was denatured by 3 M guanidine-HCl in 20 mM potassium phosphate, pH 7.0, 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, and 0.05% NaN3 for 12 hr at 4°C. The denatured GAPDH was diluted 50-fold into the buffer that does not contain guanidine-HCl and aggregation was monitored by 90° light scattering at 620 nm on a spectrofluorometer (FP-8500, JASCO Corporation) in the absence or presence of TF or TFmon at the concentration of 0.5 µM or 1 µM. The experiment was carried out at 20°C. The reproducibility was confirmed by independent assays repeated three times.
 
 In anti-aggregation assay on OmpA1-192, 62 µM OmpA1-192 in 50 mM Tris-HCl pH 8.0, 500 mM NaCl, 400 mM imidazole, and 8 M urea was diluted 20-fold into 20 mM potassium phosphate, pH 7.0, 100 mM KCl, 4 mM β-mercaptoethanol, 0.5 mM EDTA, and 0.05% NaN3. Aggregation was monitored by 90° light scattering at 620 nm on a spectrofluorometer (FP-8500, JASCO Corporation) in the absence or presence of TF or TFmon at the concentration of 4 µM. The experiment was carried out at 25°C.
 
-## MBP refolding assay
+### MBP refolding assay
 
 Refolding experiments of the precursor form of MBP, preMBP, and slower folding mutant, MBPY283D, were performed as described before (Huang et al., 2016) with some modifications. The proteins were denatured in the buffer containing 100 mM HEPES, pH 7.5, 20 mM potassium acetate, 5 mM magnesium acetate, and 8 M urea. PreMBP and MBPY283D were concentrated to 80 and 32 µM, respectively. Refolding of preMBP was initiated by 20-fold rapid dilution into the buffer containing 50 mM sodium phosphate, pH 7.0, 150 mM NaCl, and 0.05% NaN3. Refolding process of preMBP in the absence and presence of TF or TFΔRBD at the concentration of 4 or 20 µM was monitored by an increase in tryptophan fluorescence intensity. Fluorescence intensity was measured using a microplate reader (Infinite 200 PRO, Tecan). The excitation and emission wavelengths were set at 295 nm (band width 5 nm) and 335 nm (band width 20 nm), respectively. The refolding was performed three times and averaged. All measurements were performed at 25°C. Data were analyzed by Prism 5 (GraphPad Software) using single exponential function. Refolding of MBPY283D was initiated by 20-fold rapid dilution into the buffer containing 100 mM HEPES, pH 7.5, 20 mM potassium acetate, 5 mM magnesium acetate and the refolding process of MBPY283D in the absence and presence of TF or TFmon at the concentration of 10 or 20 µM was monitored by an increase in tryptophan fluorescence intensity. Fluorescence intensity was measured using a spectrofluorometer (FP-8500, JASCO Corporation). The excitation and emission wavelengths were set at 295 nm (band width 2.5 nm) and 335 nm (band width 5 nm), respectively. The refolding was performed three times and averaged. All measurements were performed at 25°C.

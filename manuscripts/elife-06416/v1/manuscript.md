@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.06416.001 The bacteriophage population is large, dynamic, ancient, and genetically diverse. Limited genomic information shows that phage genomes are mosaic, and the genetic architecture of phage populations remains ill-defined. To understand the population structure of phages infecting a single host strain, we isolated, sequenced, and compared 627 phages of Mycobacterium smegmatis . Their genetic diversity is considerable, and there are 28 distinct genomic types (clusters) with related nucleotide sequences. However, amino acid sequence comparisons show pervasive genomic mosaicism, and quantification of inter-cluster and intra-cluster relatedness reveals a continuum of genetic diversity, albeit with uneven representation of different phages. Furthermore, rarefaction analysis shows that the mycobacteriophage population is not closed, and there is a constant influx of genes from other sources. Phage isolation and analysis was performed by a large consortium of academic institutions, illustrating the substantial benefits of a disseminated, structured program involving large numbers of freshman undergraduates in scientific discovery. DOI: http://dx.doi.org/10.7554/eLife.06416.001
+The bacteriophage population is large, dynamic, ancient, and genetically diverse. Limited genomic information shows that phage genomes are mosaic, and the genetic architecture of phage populations remains ill-defined. To understand the population structure of phages infecting a single host strain, we isolated, sequenced, and compared 627 phages of Mycobacterium smegmatis. Their genetic diversity is considerable, and there are 28 distinct genomic types (clusters) with related nucleotide sequences. However, amino acid sequence comparisons show pervasive genomic mosaicism, and quantification of inter-cluster and intra-cluster relatedness reveals a continuum of genetic diversity, albeit with uneven representation of different phages. Furthermore, rarefaction analysis shows that the mycobacteriophage population is not closed, and there is a constant influx of genes from other sources. Phage isolation and analysis was performed by a large consortium of academic institutions, illustrating the substantial benefits of a disseminated, structured program involving large numbers of freshman undergraduates in scientific discovery.
 
 ## Introduction
 
@@ -40,87 +40,1150 @@ Here we describe the comparative analysis of a large number of completely sequen
 
 ## Results and discussion
 
-## A genome-by-genome approach to defining phage diversity
+### A genome-by-genome approach to defining phage diversity
 
 Exploring phage diversity using a genome-by-genome approach has notable advantages and some potential disadvantages. The main advantage is that complete genome sequences give information about genome length and composition, providing key insights into genome mosaicism and how genome segments are shared and exchanged. A difficulty is that there are not large extant phage collections available for most bacterial hosts, and isolation, purification, and characterization of phages can be slow and time-consuming. Because isolation typically requires plaque formation and growth in the laboratory, some naturally occurring phages may escape isolation using standard methods. Thus, although the diversity of phages isolated and propagated in the laboratory may not capture all types of phage, it represents a minimum, not a maximum, index of diversity.
 
-## Authentic research in a CRE
+### Authentic research in a CRE
 
 The 2012 report from the President's Council of Advisors on Science and Technology (PCAST) focused on the poor retention of undergraduate students in science, technology, engineering and mathematics (STEM) as an impediment to meeting US economic demands (PCAST, 2012). One of the PCAST recommendations is to replace traditional introductory laboratory courses with research-based experiences that would inspire freshman students and promote STEM retention. A powerful strategy is to engage students in scientific discovery through CREs. The successful implementation of this strategy depends on (i) identifying research questions that can engage students in contributing genuine advances in scientific knowledge without requiring prior expert knowledge, and (ii) designing the project so that large numbers of students can participate in a meaningful fashion.
 
 We have previously described the Howard Hughes Medical Institute (HHMI) Science Education Alliance Phage Hunters Advancing Genomics and Evolutionary Science (SEA-PHAGES) program, in which beginning undergraduate students isolate, purify, sequence, annotate, and compare bacteriophages, and have described its educational advantages (Jordan et al., 2014). By taking advantage of the massive diversity of the phage population so that each student can isolate a unique phage, the program encourages student ownership of their science. And because the collective discoveries by many students generate new scientific insights, the program creates a scientific community of students engaged in authentic research.
 
-The SEA-PHAGES program has contributed to the growth of the collection of sequenced mycobacteriophages to nearly 700 individual isolates (
+The SEA-PHAGES program has contributed to the growth of the collection of sequenced mycobacteriophages to nearly 700 individual isolates (http://phagesdb.org), of which 627 were selected for a detailed analysis (Supplementary file 1). This is by far the largest collection of sequenced phage genomes for any single host and thus promises to substantially advance our understanding of phage diversity. The phages were isolated using either direct plating or by enrichment using Mycobacterium smegmatis mc2155 as a host, and sequenced using next-generation approaches (see ‘Materials and methods’). More than 5000 students—primarily freshmen—at 74 institutions have been involved since inception of the SEA-PHAGES program in 2008, and the phages isolated represent a broad geographical distribution (Figure 1) and a variety of viral morphotypes (http://phagesdb.org). The new insights gained from comparative genomic analyses of these phages—as described below—demonstrate the effectiveness of viral discovery and genomics as a model for CRE development.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig1-v1.jpg)
 
-**Figure 1.:** (A) Locations of sequenced mycobacteriophages across the globe. (B) Locations of sequenced mycobacteriophages across the United States. Colors and letter designations on the isolates refer to the cluster to which the genomes belong. Data from www.phagesdb.org.DOI: http://dx.doi.org/10.7554/eLife.06416.003
+**Figure 1.:** (A) Locations of sequenced mycobacteriophages across the globe. (B) Locations of sequenced mycobacteriophages across the United States. Colors and letter designations on the isolates refer to the cluster to which the genomes belong. Data from www.phagesdb.org.
 
-## Assembling mycobacteriophages into clusters and subclusters
+### Assembling mycobacteriophages into clusters and subclusters
 
-Using previously reported parameters based primarily on nucleotide sequence similarity spanning >50% genome length (
+Using previously reported parameters based primarily on nucleotide sequence similarity spanning >50% genome length (Hatfull et al., 2006), the 627 genomes were assembled into 20 clusters (A–T) and eight singletons (with no close relatives) (Figure 2, Supplementary file 1); 11 clusters were subdivided into 2 to 11 subclusters (Table 1). There is considerable variation in cluster size with substantial differences in the numbers of genomes in each cluster (2–232), but there is relatively little variation in either genome length or the numbers of genes per genome in any given cluster (Table 1). Cluster assignment is of practical utility and is generally robust, with clustered phages typically sharing genome architectures, as noted for the Enterobacteriacea (Grose and Casjens, 2014). For example, Cluster A phages are similar in size and transcriptional organization, and share an unusual immunity system (Brown et al., 1997; Pope et al., 2011b). Cluster M phages all contain large numbers of tRNA genes (Pope et al., 2014a), Cluster K (Pope et al., 2011a) and Cluster O (Cresawn et al., 2015) phages have different but characteristic repeated sequences, and Cluster J phages have an unusual capsid with a triangulation (T) number of 13 (Pope et al., 2013). Therefore, the organization of related mycobacteriophages into clusters provides a framework for identifying and interpreting gene trafficking within and among potentially distinct groups of genomes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig2-v1.jpg)
 
-**Figure 2.:** Complete genome sequences of 627 mycobacteriophages were concatenated into a single file which was compared with itself using Gepard (Krumsiek et al., 2007) and displayed as a dotplot using default parameters (word length, 10). The order of the genomes is as listed in Supplementary file 1. Nucleotide similarity is a primary component in assembling phages into clusters, which typically requires evident DNA similarity spanning more than 50% of the genome lengths.DOI: http://dx.doi.org/10.7554/eLife.06416.00410.7554/eLife.06416.005Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.005
+**Figure 2.:** Complete genome sequences of 627 mycobacteriophages were concatenated into a single file which was compared with itself using Gepard (Krumsiek et al., 2007) and displayed as a dotplot using default parameters (word length, 10). The order of the genomes is as listed in Supplementary file 1. Nucleotide similarity is a primary component in assembling phages into clusters, which typically requires evident DNA similarity spanning more than 50% of the genome lengths.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** A dotplot was generated using a concatenated file of genome sequences using Gepard (Krumsiek et al., 2007). The complexity of the genome relationships is illustrated by the Cluster I phages which share varying degrees of similarity to phages in Clusters N and P, as well as the singleton Sparky. Because inclusion of a phage in a cluster typically requires sharing a span of similarity over half of the genome lengths, these phages are not assembled into a single larger cluster.DOI: http://dx.doi.org/10.7554/eLife.06416.006
+**Figure 2—figure supplement 1.:** A dotplot was generated using a concatenated file of genome sequences using Gepard (Krumsiek et al., 2007). The complexity of the genome relationships is illustrated by the Cluster I phages which share varying degrees of similarity to phages in Clusters N and P, as well as the singleton Sparky. Because inclusion of a phage in a cluster typically requires sharing a span of similarity over half of the genome lengths, these phages are not assembled into a single larger cluster.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** The dotplot of concatenated genome sequences illustrates the ambiguity of whether the singleton Dori warrants inclusion in Cluster B. Dori shares DNA sequence similarity with its closest relative Kheth (Subcluster B2), but it does not span 50% of the genome lengths. Dori also shares DNA sequence similarity with Che9c (Cluster I2) and Carcharodon (Cluster N).DOI: http://dx.doi.org/10.7554/eLife.06416.007
+**Figure 2—figure supplement 2.:** The dotplot of concatenated genome sequences illustrates the ambiguity of whether the singleton Dori warrants inclusion in Cluster B. Dori shares DNA sequence similarity with its closest relative Kheth (Subcluster B2), but it does not span 50% of the genome lengths. Dori also shares DNA sequence similarity with Che9c (Cluster I2) and Carcharodon (Cluster N).
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** The dotplot of concatenated genome sequences illustrates the complex relationships between the singleton MooMoo and other phages. MooMoo shares DNA sequence similarity with SG4 (Subcluster F1) and Yoshi (Subcluster F2), but also with Brujita (Subcluster I1). MooMoo has barely detectable DNA sequence similarity with Corndog (Cluster O), but has a similar prolate virion morphology.DOI: http://dx.doi.org/10.7554/eLife.06416.008
+**Figure 2—figure supplement 3.:** The dotplot of concatenated genome sequences illustrates the complex relationships between the singleton MooMoo and other phages. MooMoo shares DNA sequence similarity with SG4 (Subcluster F1) and Yoshi (Subcluster F2), but also with Brujita (Subcluster I1). MooMoo has barely detectable DNA sequence similarity with Corndog (Cluster O), but has a similar prolate virion morphology.
 
-## Gene content relationships among sequenced mycobacteriophages
+**Table 1.**
+ Diversity and genetic isolation of mycobacteriophage genome clusters
 
-Genome mosaicism is more apparent from comparison of gene product amino acid sequences than nucleotide sequence comparisons because of the accumulation of genome rearrangements over a longer period of evolution, during which indications of DNA similarity are lost. To compare mycobacteriophage gene contents we grouped related genes into protein families (‘phamilies’ or ‘phams’) using Phamerator (
+
+<table>
+  <thead>
+    <tr>
+      <th>Cluster</th>
+      <th># Subclusters</th>
+      <th># Genomes</th>
+      <th>Average # genes*</th>
+      <th>Average length (bp)</th>
+      <th>Total phams†</th>
+      <th>Total genes</th>
+      <th>CLASP‡</th>
+      <th>CAP§</th>
+      <th>CCI#</th>
+      <th>CII¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>11</td>
+      <td>232</td>
+      <td>90 ± 5.3</td>
+      <td>51,514</td>
+      <td>1085</td>
+      <td>20,880</td>
+      <td>38.3</td>
+      <td>12.4</td>
+      <td>0.08</td>
+      <td>80.2</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>5</td>
+      <td>109</td>
+      <td>100.4 ± 4.5</td>
+      <td>68,653</td>
+      <td>421</td>
+      <td>10,944</td>
+      <td>66.2</td>
+      <td>23.2</td>
+      <td>0.24</td>
+      <td>81.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>2</td>
+      <td>45</td>
+      <td>231 ± 5.9</td>
+      <td>155,504</td>
+      <td>486</td>
+      <td>10,395</td>
+      <td>89.3</td>
+      <td>29.4</td>
+      <td>0.48</td>
+      <td>84.6</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>2</td>
+      <td>10</td>
+      <td>89.3 ± 6.4</td>
+      <td>64,965</td>
+      <td>147</td>
+      <td>893</td>
+      <td>88.1</td>
+      <td>64.3</td>
+      <td>0.61</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>1</td>
+      <td>35</td>
+      <td>141.9 ± 3.4</td>
+      <td>75,526</td>
+      <td>236</td>
+      <td>4967</td>
+      <td>87.2</td>
+      <td>63.8</td>
+      <td>0.60</td>
+      <td>59.3</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>3</td>
+      <td>66</td>
+      <td>105.3 ± 5.3</td>
+      <td>57,416</td>
+      <td>658</td>
+      <td>6950</td>
+      <td>54.4</td>
+      <td>4.9</td>
+      <td>0.16</td>
+      <td>55.8</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>1</td>
+      <td>14</td>
+      <td>61.5 ± 1.2</td>
+      <td>41,845</td>
+      <td>72</td>
+      <td>861</td>
+      <td>96.0</td>
+      <td>91.1</td>
+      <td>0.85</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>2</td>
+      <td>5</td>
+      <td>98.4 ± 5.7</td>
+      <td>69,469</td>
+      <td>207</td>
+      <td>492</td>
+      <td>61.6</td>
+      <td>31.5</td>
+      <td>0.48</td>
+      <td>67.6</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>2</td>
+      <td>4</td>
+      <td>78 ± 3.7</td>
+      <td>49,954</td>
+      <td>147</td>
+      <td>312</td>
+      <td>58.9</td>
+      <td>35.0</td>
+      <td>0.53</td>
+      <td>23.8</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td>1</td>
+      <td>16</td>
+      <td>239.8 ± 9.3</td>
+      <td>110,332</td>
+      <td>530</td>
+      <td>3776</td>
+      <td>70.8</td>
+      <td>40.1</td>
+      <td>0.45</td>
+      <td>58.5</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>5</td>
+      <td>32</td>
+      <td>95.7 ± 4.6</td>
+      <td>59,720</td>
+      <td>411</td>
+      <td>3069</td>
+      <td>51.8</td>
+      <td>20.0</td>
+      <td>0.23</td>
+      <td>73.5</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>3</td>
+      <td>13</td>
+      <td>127.9 ± 6.5</td>
+      <td>75,177</td>
+      <td>246</td>
+      <td>1663</td>
+      <td>78.2</td>
+      <td>50.8</td>
+      <td>0.52</td>
+      <td>72.4</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>2</td>
+      <td>3</td>
+      <td>141 ± 8.8</td>
+      <td>81,636</td>
+      <td>201</td>
+      <td>423</td>
+      <td>73.5</td>
+      <td>63.0</td>
+      <td>0.70</td>
+      <td>69.2</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>1</td>
+      <td>7</td>
+      <td>69.1 ± 2.2</td>
+      <td>42,888</td>
+      <td>152</td>
+      <td>484</td>
+      <td>64.1</td>
+      <td>45.6</td>
+      <td>0.45</td>
+      <td>40.8</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>1</td>
+      <td>5</td>
+      <td>124.2 ± 3.1</td>
+      <td>70,651</td>
+      <td>151</td>
+      <td>621</td>
+      <td>90.6</td>
+      <td>83.3</td>
+      <td>0.82</td>
+      <td>64.2</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>2</td>
+      <td>9</td>
+      <td>78.8 ± 2.1</td>
+      <td>47,668</td>
+      <td>159</td>
+      <td>709</td>
+      <td>76.1</td>
+      <td>42.3</td>
+      <td>0.50</td>
+      <td>34.0</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>1</td>
+      <td>5</td>
+      <td>85.2 ± 3.7</td>
+      <td>53,755</td>
+      <td>90</td>
+      <td>426</td>
+      <td>96.6</td>
+      <td>90.4</td>
+      <td>0.95</td>
+      <td>73.3</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>1</td>
+      <td>4</td>
+      <td>101.5 ± 2.5</td>
+      <td>71,348</td>
+      <td>117</td>
+      <td>406</td>
+      <td>91.4</td>
+      <td>84.8</td>
+      <td>0.87</td>
+      <td>71.8</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>1</td>
+      <td>2</td>
+      <td>109 ± 2.0</td>
+      <td>65,172</td>
+      <td>117</td>
+      <td>218</td>
+      <td>91.7</td>
+      <td>91.7</td>
+      <td>0.93</td>
+      <td>70.9</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>1</td>
+      <td>3</td>
+      <td>66.7 ± 2.4</td>
+      <td>42,833</td>
+      <td>83</td>
+      <td>200</td>
+      <td>86.1</td>
+      <td>82.5</td>
+      <td>0.80</td>
+      <td>62.7</td>
+    </tr>
+    <tr>
+      <td>Dori</td>
+      <td>1</td>
+      <td>1</td>
+      <td>94</td>
+      <td>64,613</td>
+      <td>94</td>
+      <td>94</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>35.8</td>
+    </tr>
+    <tr>
+      <td>DS6A</td>
+      <td>1</td>
+      <td>1</td>
+      <td>97</td>
+      <td>60,588</td>
+      <td>96</td>
+      <td>97</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>58.3</td>
+    </tr>
+    <tr>
+      <td>Gaia</td>
+      <td>1</td>
+      <td>1</td>
+      <td>194</td>
+      <td>90,460</td>
+      <td>193</td>
+      <td>194</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>58.0</td>
+    </tr>
+    <tr>
+      <td>MooMoo</td>
+      <td>1</td>
+      <td>1</td>
+      <td>98</td>
+      <td>55,178</td>
+      <td>98</td>
+      <td>98</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>31.6</td>
+    </tr>
+    <tr>
+      <td>Muddy</td>
+      <td>1</td>
+      <td>1</td>
+      <td>71</td>
+      <td>48,228</td>
+      <td>70</td>
+      <td>71</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>71.4</td>
+    </tr>
+    <tr>
+      <td>Patience</td>
+      <td>1</td>
+      <td>1</td>
+      <td>109</td>
+      <td>70,506</td>
+      <td>109</td>
+      <td>109</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>57.8</td>
+    </tr>
+    <tr>
+      <td>Sparky</td>
+      <td>1</td>
+      <td>1</td>
+      <td>93</td>
+      <td>63,334</td>
+      <td>93</td>
+      <td>93</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>48.4</td>
+    </tr>
+    <tr>
+      <td>Wildcat</td>
+      <td>1</td>
+      <td>1</td>
+      <td>148</td>
+      <td>78,296</td>
+      <td>148</td>
+      <td>148</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>69.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Average number of protein-coding genes per genome, with standard deviation.†Total phams is the sum of all phamilies (groups of homologous mycobacteriophage genes) in that cluster.‡The Cluster Averaged Shared Phamilies (CLASP) index is the average of the percentages of phamilies shared pairwise between genomes within a cluster.§The Cluster-Associated Phamilies (CAP) index is the percentage of the average number of phamilies per genome within a cluster whose phamilies are present in every cluster member.#The Cluster Cohesion Index (CCI) is generated by dividing the average number of genes per genome by the total number of phamilies (phams) in that cluster.¶The Cluster Isolation Index (CII) is the percentage of phams that are present only in that cluster, and not present in other mycobacteriophages.N/A: Not applicable._
+
+### Gene content relationships among sequenced mycobacteriophages
+
+Genome mosaicism is more apparent from comparison of gene product amino acid sequences than nucleotide sequence comparisons because of the accumulation of genome rearrangements over a longer period of evolution, during which indications of DNA similarity are lost. To compare mycobacteriophage gene contents we grouped related genes into protein families (‘phamilies’ or ‘phams’) using Phamerator (Cresawn et al., 2011), which we modified to use kClust (Hauser et al., 2013) so as to easily accommodate the large numbers of comparisons. The 69,633 genes assembled into 5205 phams of which 1613 (31%) are orphams (single-gene phamilies [Hatfull et al., 2010]). Approximately 25% of phams can be assigned functions in viral structure and assembly, DNA metabolism, integration, lysis, and regulation, but the vast majority are of unknown function. Representation of gene content relationships among all 627 phages as a network phylogeny reveals relationships that are in accord with the cluster and subcluster designations derived from nucleotide sequence comparisons (Figure 3). The multiple branches between clusters/subclusters reflect the phylogenetic complexities that arise from genome mosaicism, where genes within a genome have distinct evolutionary histories.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig3-v1.jpg)
 
-**Figure 3.:** Genomes of 627 mycobacteriophages were compared according to shared gene content using the Phamerator (Cresawn et al., 2011) database Mykobacteriophage_627, and displayed using SplitsTree (Huson and Bryant, 2006). Colored circles indicate grouping of phages labeled according to their cluster designations generated by nucleotide sequence comparison (Figure 2); singleton genomes with no close relatives are labeled but not circled. Micrographs show morphotypes of the singleton MooMoo, the Cluster F phage Mozy, and the Cluster O phage Corndog. With the exception of DS6A, all of the phages infect Mycobacterium smegmatis mc2155.DOI: http://dx.doi.org/10.7554/eLife.06416.01010.7554/eLife.06416.011Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.011
+**Figure 3.:** Genomes of 627 mycobacteriophages were compared according to shared gene content using the Phamerator (Cresawn et al., 2011) database Mykobacteriophage_627, and displayed using SplitsTree (Huson and Bryant, 2006). Colored circles indicate grouping of phages labeled according to their cluster designations generated by nucleotide sequence comparison (Figure 2); singleton genomes with no close relatives are labeled but not circled. Micrographs show morphotypes of the singleton MooMoo, the Cluster F phage Mozy, and the Cluster O phage Corndog. With the exception of DS6A, all of the phages infect Mycobacterium smegmatis mc2155.
 
-The distribution of orphams (genes without mycobacteriophage homologues) provides additional support for cluster/subcluster assignments;
+The distribution of orphams (genes without mycobacteriophage homologues) provides additional support for cluster/subcluster assignments; Figure 4). A relatively high proportion of orphams is a characteristic of both singleton genomes and single-genome subclusters (Figure 4). At least 30% of genes in all of the singleton genomes are orphams, and the single-genome subclusters have a minimum of 15% orphams; genomes in other clusters and subclusters typically have fewer than 10% orphams (Figure 4). The presence of numerous orphams ensures that the lack of cluster inclusion did not result from sequence errors or insufficient or inappropriate gene annotation. Notable exceptions are Predator (Subcluster H1) and Mendokysei (Cluster T), both of which are in very small clusters/subclusters, and KayaCho (Subcluster B4). KayaCho may warrant separation into a new subcluster (e.g., B6), but overall the orpham distribution is consistent with the cluster/subcluster designations.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig4-v1.jpg)
 
-**Figure 4.:** The proportions of genes that are orphams (i.e., single-gene phamilies with no homologues within the mycobacteriophage dataset) are shown for each phage. The order of the phages is as shown in Supplementary file 1. All of the singleton genomes have >30% orphams, and most of the other genomes with relatively high proportions of orphams are the single-genome subclusters (Table 2) including Hawkeye (D2), Myrna (C2), Squirty (F3), Barnyard (H2), Che9c (I2), Whirlwind (L3), Rey (M2), and Purky (P2). Three phages shown in red type are not singletons or single-genome subclusters but have relatively high proportions of orphams. Predator and Mendokysei are members of the diverse and small clusters (five or fewer genomes) H and T, respectively; KayaCho is a member of Subcluster B4 but has a sufficiently high proportion of orphams to arguably warrant formation of a new subcluster, B6.DOI: http://dx.doi.org/10.7554/eLife.06416.01210.7554/eLife.06416.013Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.013
+**Figure 4.:** The proportions of genes that are orphams (i.e., single-gene phamilies with no homologues within the mycobacteriophage dataset) are shown for each phage. The order of the phages is as shown in Supplementary file 1. All of the singleton genomes have >30% orphams, and most of the other genomes with relatively high proportions of orphams are the single-genome subclusters (Table 2) including Hawkeye (D2), Myrna (C2), Squirty (F3), Barnyard (H2), Che9c (I2), Whirlwind (L3), Rey (M2), and Purky (P2). Three phages shown in red type are not singletons or single-genome subclusters but have relatively high proportions of orphams. Predator and Mendokysei are members of the diverse and small clusters (five or fewer genomes) H and T, respectively; KayaCho is a member of Subcluster B4 but has a sufficiently high proportion of orphams to arguably warrant formation of a new subcluster, B6.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Average percentages of phamilies shared between Dori and other mycobacteriophages. (B) Average percentages of phamilies shared between MooMoo and other mycobacteriophages. Genomes on the x axis are listed in the same order as in Supplementary file 1 and the cluster designations are indicated.DOI: http://dx.doi.org/10.7554/eLife.06416.014
+**Figure 4—figure supplement 1.:** (A) Average percentages of phamilies shared between Dori and other mycobacteriophages. (B) Average percentages of phamilies shared between MooMoo and other mycobacteriophages. Genomes on the x axis are listed in the same order as in Supplementary file 1 and the cluster designations are indicated.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Average percentages of phamilies shared between Gaia and other mycobacteriophages. (B) Average percentages of phamilies shared between Sparky and other mycobacteriophages. Genomes on the x axis are listed in the same order as in Supplementary file 1 and the cluster designations are indicated.DOI: http://dx.doi.org/10.7554/eLife.06416.015
+**Figure 4—figure supplement 2.:** (A) Average percentages of phamilies shared between Gaia and other mycobacteriophages. (B) Average percentages of phamilies shared between Sparky and other mycobacteriophages. Genomes on the x axis are listed in the same order as in Supplementary file 1 and the cluster designations are indicated.
 
-## The diversity of different clusters is highly varied
+### The diversity of different clusters is highly varied
 
-To determine the extent to which the various clusters/subclusters represent discrete groups, we generated a heat map showing pairwise shared gene content (
+To determine the extent to which the various clusters/subclusters represent discrete groups, we generated a heat map showing pairwise shared gene content (Figure 5) and quantified the cluster/subcluster diversity (Table 1, Figure 6). The heat map strikingly illustrates that diversity is non-uniform, with genomes in some clusters (e.g., Subclusters B1, C1) being very closely related, whereas in others they display substantial differences (e.g., Subclusters A1, F1). The variation is also evident within the large Cluster A group, with some subclusters having low diversity (e.g., A4, A5, A6), some being highly diverse (e.g., A1, A2), and some plausibly further splitting into subgroups (A3) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig5-v1.jpg)
 
-**Figure 5.:** The percentages of pairwise shared genes was determined using a Phamerator (Cresawn et al., 2011) database (Mykobacteriophage_627) populated with 627 completely sequenced phage genomes. The 69,574 genes were assembled into 5205 phamilies (phams) of related sequences using kClust, and the average proportions of shared phams calculated. Genomes are ordered on both axes according to their cluster and subcluster designations (Supplementary file 1) determined by nucleotide sequence similarities (Figure 2). The values (proportions of pairwise shared phams averaged between each partner) are colored as indicated.DOI: http://dx.doi.org/10.7554/eLife.06416.01610.7554/eLife.06416.017Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.017
+**Figure 5.:** The percentages of pairwise shared genes was determined using a Phamerator (Cresawn et al., 2011) database (Mykobacteriophage_627) populated with 627 completely sequenced phage genomes. The 69,574 genes were assembled into 5205 phamilies (phams) of related sequences using kClust, and the average proportions of shared phams calculated. Genomes are ordered on both axes according to their cluster and subcluster designations (Supplementary file 1) determined by nucleotide sequence similarities (Figure 2). The values (proportions of pairwise shared phams averaged between each partner) are colored as indicated.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig6-v1.jpg)
 
-**Figure 6.:** (A) The CLuster Averaged Shared Phamilies (CLASP; blue), Cluster Associated Phamilies (CAP; red) and Cluster Cohesion Index (CCI; green) values are plotted for each mycobacteriophage cluster. (B) The Cluster Isolation Index (CII) and CLASP values (both shown as percentages) are plotted for each phage cluster. Singletons (white circles) are not individually labeled but correspond to the values shown in Table 1.DOI: http://dx.doi.org/10.7554/eLife.06416.01810.7554/eLife.06416.019Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.019
+**Figure 6.:** (A) The CLuster Averaged Shared Phamilies (CLASP; blue), Cluster Associated Phamilies (CAP; red) and Cluster Cohesion Index (CCI; green) values are plotted for each mycobacteriophage cluster. (B) The Cluster Isolation Index (CII) and CLASP values (both shown as percentages) are plotted for each phage cluster. Singletons (white circles) are not individually labeled but correspond to the values shown in Table 1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** CLuster Averaged Shared Phamilies (CLASP) values were calculated for Clusters A, B, C, E, F, and K by resampling random subsets of the genomes. The size of the subsets is shown on the x axis and each point is the average of 20 iterations. The minimum and maximum variations among the iterations are shown.DOI: http://dx.doi.org/10.7554/eLife.06416.020
+**Figure 6—figure supplement 1.:** CLuster Averaged Shared Phamilies (CLASP) values were calculated for Clusters A, B, C, E, F, and K by resampling random subsets of the genomes. The size of the subsets is shown on the x axis and each point is the average of 20 iterations. The minimum and maximum variations among the iterations are shown.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** The CAP and CPV values are plotted for each cluster.DOI: http://dx.doi.org/10.7554/eLife.06416.021
+**Figure 6—figure supplement 2.:** The CAP and CPV values are plotted for each cluster.
 
-We quantified the cluster diversity using three different measures, CLuster Average Shared Phamilies (CLASP), Cluster Associated Phamilies (CAP), and Cluster Cohesion Index (CCI) (Tables 1, 2, Figure 6A). Both CAP (the number of phams present in all genomes within a cluster divided by the average number of genes per genome) and CCI (the average number of genes per genome as a percentage of the total number of phams in that cluster) show substantial variation between clusters (Table 1, S2), and little evidence for commonly conserved ‘core genes’, as suggested for T4-related phages (Petrov et al., 2010). However, both of these parameters are somewhat influenced by cluster/subcluster size, which varies from cluster to cluster. In contrast, CLASP (the percentage of phamilies shared between two genomes, then averaged across all possible pairs within a cluster or subcluster) is relatively insensitive to cluster/subcluster size (as seen by a resampling analysis; Figure 6—figure supplement 1), but still shows substantial variation from one cluster to another (Table 1, Figure 6A).10.7554/eLife.06416.022Table 2.Genometrics and Cluster Cohesion Indexes of mycobacteriophagesDOI: http://dx.doi.org/10.7554/eLife.06416.022ClusterSubcluster# GenomesAverage # genesAverage length (bp)# PhamsCLASP*CAP†CCI‡A23290.051,514108538.312.48.0A17291.251,95441672.336.922.0A22893.452,80531264.730.130.0A33787.750,32516381.148.854.0A44687.451,37612592.770.670.0A51686.050,53115281.458.757.0A61197.851,67712890.275.176.0A7384.352,94111574.964.473.0A8497.851,59710793.586.891.0A9496.052,83810692.783.491.0A10780.049,17411281.660.971.0A11498.552,26011393.688.387.0B108100.468,65342166.223.224.0B177101.868,53214493.272.971.0B2889.967,26710194.984.689.0B312102.868,69812196.384.785.0B4896.170,61916679.945.858.0B5396.370,03310891.787.289.0C45231.0155,50448689.329.448.0C144231.0155,29734591.973.267.0C21229.0164,602227N/AN/AN/AD1089.364,96514788.164.361.0D1987.364,69710094.988.887.0D21107.067,383107N/AN/AN/AE35141.975,52623587.263.860.0F66105.357,41665854.44.916.0F160104.857,48657359.620.618.0F25110.855,99620765.749.054.0F31107.060,285105N/AN/AN/AG1461.541,8457296.091.185.0H598.469,46920761.631.548.0H1495.869,13713181.967.973.0H21109.070,797110N/AN/AN/AI478.049,95414758.935.053.0I1376.047,58810177.566.775.0I2184.057,05084N/AN/AN/AJ16239.8110,33253070.840.145.0K3395.759,72041151.820.023.0K11594.359,87716685.547.957.0K2496.356,59712885.277.775.0K3398.261,32211192.289.588.0K4594.057,86510693.787.289.0K5698.262,15414482.168.268.0L13127.975,17724678.250.852.0L13123.774,05013592.688.892.0L29129.375,45617090.172.276.0L31128.076,050126N/AN/AN/AM3141.081,63620173.563.070.0M12135.080,59313896.696.698.0M21153.083,724152N/AN/AN/AN769.142,88815264.145.645.0O5124.270,65115190.683.382.0P978.847,66815976.142.350.0P1878.447,31312682.952.962.0P2182.050,51382N/AN/AN/AQ585.253,7559096.690.495.0R4101.571,34811791.484.887.0S2109.065,17211791.791.793.0T366.742,8338386.182.580.0*Cluster Averaged Shared Phamilies.†Cluster Associated Phamilies.‡Cluster Cohesion Index.
+We quantified the cluster diversity using three different measures, CLuster Average Shared Phamilies (CLASP), Cluster Associated Phamilies (CAP), and Cluster Cohesion Index (CCI) (Tables 1, 2, Figure 6A). Both CAP (the number of phams present in all genomes within a cluster divided by the average number of genes per genome) and CCI (the average number of genes per genome as a percentage of the total number of phams in that cluster) show substantial variation between clusters (Table 1, S2), and little evidence for commonly conserved ‘core genes’, as suggested for T4-related phages (Petrov et al., 2010). However, both of these parameters are somewhat influenced by cluster/subcluster size, which varies from cluster to cluster. In contrast, CLASP (the percentage of phamilies shared between two genomes, then averaged across all possible pairs within a cluster or subcluster) is relatively insensitive to cluster/subcluster size (as seen by a resampling analysis; Figure 6—figure supplement 1), but still shows substantial variation from one cluster to another (Table 1, Figure 6A).
 
-## The discreteness of different clusters is highly varied
+**Table 2.**
+ Genometrics and Cluster Cohesion Indexes of mycobacteriophages
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cluster</th>
+      <th>Subcluster</th>
+      <th># Genomes</th>
+      <th>Average # genes</th>
+      <th>Average length (bp)</th>
+      <th># Phams</th>
+      <th>CLASP*</th>
+      <th>CAP†</th>
+      <th>CCI‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td></td>
+      <td>232</td>
+      <td>90.0</td>
+      <td>51,514</td>
+      <td>1085</td>
+      <td>38.3</td>
+      <td>12.4</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A1</td>
+      <td>72</td>
+      <td>91.2</td>
+      <td>51,954</td>
+      <td>416</td>
+      <td>72.3</td>
+      <td>36.9</td>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A2</td>
+      <td>28</td>
+      <td>93.4</td>
+      <td>52,805</td>
+      <td>312</td>
+      <td>64.7</td>
+      <td>30.1</td>
+      <td>30.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A3</td>
+      <td>37</td>
+      <td>87.7</td>
+      <td>50,325</td>
+      <td>163</td>
+      <td>81.1</td>
+      <td>48.8</td>
+      <td>54.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A4</td>
+      <td>46</td>
+      <td>87.4</td>
+      <td>51,376</td>
+      <td>125</td>
+      <td>92.7</td>
+      <td>70.6</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A5</td>
+      <td>16</td>
+      <td>86.0</td>
+      <td>50,531</td>
+      <td>152</td>
+      <td>81.4</td>
+      <td>58.7</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A6</td>
+      <td>11</td>
+      <td>97.8</td>
+      <td>51,677</td>
+      <td>128</td>
+      <td>90.2</td>
+      <td>75.1</td>
+      <td>76.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A7</td>
+      <td>3</td>
+      <td>84.3</td>
+      <td>52,941</td>
+      <td>115</td>
+      <td>74.9</td>
+      <td>64.4</td>
+      <td>73.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A8</td>
+      <td>4</td>
+      <td>97.8</td>
+      <td>51,597</td>
+      <td>107</td>
+      <td>93.5</td>
+      <td>86.8</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A9</td>
+      <td>4</td>
+      <td>96.0</td>
+      <td>52,838</td>
+      <td>106</td>
+      <td>92.7</td>
+      <td>83.4</td>
+      <td>91.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A10</td>
+      <td>7</td>
+      <td>80.0</td>
+      <td>49,174</td>
+      <td>112</td>
+      <td>81.6</td>
+      <td>60.9</td>
+      <td>71.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A11</td>
+      <td>4</td>
+      <td>98.5</td>
+      <td>52,260</td>
+      <td>113</td>
+      <td>93.6</td>
+      <td>88.3</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td></td>
+      <td>108</td>
+      <td>100.4</td>
+      <td>68,653</td>
+      <td>421</td>
+      <td>66.2</td>
+      <td>23.2</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B1</td>
+      <td>77</td>
+      <td>101.8</td>
+      <td>68,532</td>
+      <td>144</td>
+      <td>93.2</td>
+      <td>72.9</td>
+      <td>71.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B2</td>
+      <td>8</td>
+      <td>89.9</td>
+      <td>67,267</td>
+      <td>101</td>
+      <td>94.9</td>
+      <td>84.6</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B3</td>
+      <td>12</td>
+      <td>102.8</td>
+      <td>68,698</td>
+      <td>121</td>
+      <td>96.3</td>
+      <td>84.7</td>
+      <td>85.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B4</td>
+      <td>8</td>
+      <td>96.1</td>
+      <td>70,619</td>
+      <td>166</td>
+      <td>79.9</td>
+      <td>45.8</td>
+      <td>58.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>B5</td>
+      <td>3</td>
+      <td>96.3</td>
+      <td>70,033</td>
+      <td>108</td>
+      <td>91.7</td>
+      <td>87.2</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td></td>
+      <td>45</td>
+      <td>231.0</td>
+      <td>155,504</td>
+      <td>486</td>
+      <td>89.3</td>
+      <td>29.4</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C1</td>
+      <td>44</td>
+      <td>231.0</td>
+      <td>155,297</td>
+      <td>345</td>
+      <td>91.9</td>
+      <td>73.2</td>
+      <td>67.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>C2</td>
+      <td>1</td>
+      <td>229.0</td>
+      <td>164,602</td>
+      <td>227</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td></td>
+      <td>10</td>
+      <td>89.3</td>
+      <td>64,965</td>
+      <td>147</td>
+      <td>88.1</td>
+      <td>64.3</td>
+      <td>61.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>D1</td>
+      <td>9</td>
+      <td>87.3</td>
+      <td>64,697</td>
+      <td>100</td>
+      <td>94.9</td>
+      <td>88.8</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>D2</td>
+      <td>1</td>
+      <td>107.0</td>
+      <td>67,383</td>
+      <td>107</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td></td>
+      <td>35</td>
+      <td>141.9</td>
+      <td>75,526</td>
+      <td>235</td>
+      <td>87.2</td>
+      <td>63.8</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td></td>
+      <td>66</td>
+      <td>105.3</td>
+      <td>57,416</td>
+      <td>658</td>
+      <td>54.4</td>
+      <td>4.9</td>
+      <td>16.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>F1</td>
+      <td>60</td>
+      <td>104.8</td>
+      <td>57,486</td>
+      <td>573</td>
+      <td>59.6</td>
+      <td>20.6</td>
+      <td>18.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>F2</td>
+      <td>5</td>
+      <td>110.8</td>
+      <td>55,996</td>
+      <td>207</td>
+      <td>65.7</td>
+      <td>49.0</td>
+      <td>54.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>F3</td>
+      <td>1</td>
+      <td>107.0</td>
+      <td>60,285</td>
+      <td>105</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td></td>
+      <td>14</td>
+      <td>61.5</td>
+      <td>41,845</td>
+      <td>72</td>
+      <td>96.0</td>
+      <td>91.1</td>
+      <td>85.0</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td></td>
+      <td>5</td>
+      <td>98.4</td>
+      <td>69,469</td>
+      <td>207</td>
+      <td>61.6</td>
+      <td>31.5</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>H1</td>
+      <td>4</td>
+      <td>95.8</td>
+      <td>69,137</td>
+      <td>131</td>
+      <td>81.9</td>
+      <td>67.9</td>
+      <td>73.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>H2</td>
+      <td>1</td>
+      <td>109.0</td>
+      <td>70,797</td>
+      <td>110</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td></td>
+      <td>4</td>
+      <td>78.0</td>
+      <td>49,954</td>
+      <td>147</td>
+      <td>58.9</td>
+      <td>35.0</td>
+      <td>53.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I1</td>
+      <td>3</td>
+      <td>76.0</td>
+      <td>47,588</td>
+      <td>101</td>
+      <td>77.5</td>
+      <td>66.7</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>I2</td>
+      <td>1</td>
+      <td>84.0</td>
+      <td>57,050</td>
+      <td>84</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>J</td>
+      <td></td>
+      <td>16</td>
+      <td>239.8</td>
+      <td>110,332</td>
+      <td>530</td>
+      <td>70.8</td>
+      <td>40.1</td>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td></td>
+      <td>33</td>
+      <td>95.7</td>
+      <td>59,720</td>
+      <td>411</td>
+      <td>51.8</td>
+      <td>20.0</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>K1</td>
+      <td>15</td>
+      <td>94.3</td>
+      <td>59,877</td>
+      <td>166</td>
+      <td>85.5</td>
+      <td>47.9</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>K2</td>
+      <td>4</td>
+      <td>96.3</td>
+      <td>56,597</td>
+      <td>128</td>
+      <td>85.2</td>
+      <td>77.7</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>K3</td>
+      <td>3</td>
+      <td>98.2</td>
+      <td>61,322</td>
+      <td>111</td>
+      <td>92.2</td>
+      <td>89.5</td>
+      <td>88.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>K4</td>
+      <td>5</td>
+      <td>94.0</td>
+      <td>57,865</td>
+      <td>106</td>
+      <td>93.7</td>
+      <td>87.2</td>
+      <td>89.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>K5</td>
+      <td>6</td>
+      <td>98.2</td>
+      <td>62,154</td>
+      <td>144</td>
+      <td>82.1</td>
+      <td>68.2</td>
+      <td>68.0</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td></td>
+      <td>13</td>
+      <td>127.9</td>
+      <td>75,177</td>
+      <td>246</td>
+      <td>78.2</td>
+      <td>50.8</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L1</td>
+      <td>3</td>
+      <td>123.7</td>
+      <td>74,050</td>
+      <td>135</td>
+      <td>92.6</td>
+      <td>88.8</td>
+      <td>92.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L2</td>
+      <td>9</td>
+      <td>129.3</td>
+      <td>75,456</td>
+      <td>170</td>
+      <td>90.1</td>
+      <td>72.2</td>
+      <td>76.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L3</td>
+      <td>1</td>
+      <td>128.0</td>
+      <td>76,050</td>
+      <td>126</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td></td>
+      <td>3</td>
+      <td>141.0</td>
+      <td>81,636</td>
+      <td>201</td>
+      <td>73.5</td>
+      <td>63.0</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1</td>
+      <td>2</td>
+      <td>135.0</td>
+      <td>80,593</td>
+      <td>138</td>
+      <td>96.6</td>
+      <td>96.6</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M2</td>
+      <td>1</td>
+      <td>153.0</td>
+      <td>83,724</td>
+      <td>152</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td></td>
+      <td>7</td>
+      <td>69.1</td>
+      <td>42,888</td>
+      <td>152</td>
+      <td>64.1</td>
+      <td>45.6</td>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td></td>
+      <td>5</td>
+      <td>124.2</td>
+      <td>70,651</td>
+      <td>151</td>
+      <td>90.6</td>
+      <td>83.3</td>
+      <td>82.0</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td></td>
+      <td>9</td>
+      <td>78.8</td>
+      <td>47,668</td>
+      <td>159</td>
+      <td>76.1</td>
+      <td>42.3</td>
+      <td>50.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P1</td>
+      <td>8</td>
+      <td>78.4</td>
+      <td>47,313</td>
+      <td>126</td>
+      <td>82.9</td>
+      <td>52.9</td>
+      <td>62.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P2</td>
+      <td>1</td>
+      <td>82.0</td>
+      <td>50,513</td>
+      <td>82</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td></td>
+      <td>5</td>
+      <td>85.2</td>
+      <td>53,755</td>
+      <td>90</td>
+      <td>96.6</td>
+      <td>90.4</td>
+      <td>95.0</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td></td>
+      <td>4</td>
+      <td>101.5</td>
+      <td>71,348</td>
+      <td>117</td>
+      <td>91.4</td>
+      <td>84.8</td>
+      <td>87.0</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td></td>
+      <td>2</td>
+      <td>109.0</td>
+      <td>65,172</td>
+      <td>117</td>
+      <td>91.7</td>
+      <td>91.7</td>
+      <td>93.0</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td></td>
+      <td>3</td>
+      <td>66.7</td>
+      <td>42,833</td>
+      <td>83</td>
+      <td>86.1</td>
+      <td>82.5</td>
+      <td>80.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cluster Averaged Shared Phamilies.†Cluster Associated Phamilies.‡Cluster Cohesion Index._
+
+### The discreteness of different clusters is highly varied
 
 The heat map of genome comparisons (Figure 5) also illustrates the degrees to which clusters and subclusters share gene content, a reflection of cluster discreteness, or how isolated discrete clusters are from each other. For example, although the Cluster A phages are highly diverse, they also appear relatively isolated and share relatively few genes with other clusters (Figure 5). In contrast, phages in Cluster E share substantial numbers of genes with other clusters, including those in Clusters F, J, L, P, and several singletons. We have quantified these relationships with the Cluster Isolation Index (CII, the percentage of phams present within a cluster that are not present in other mycobacteriophage genomes), which demonstrates the considerable variation in isolation from phages of other clusters/subclusters (Table 1, Figure 6B). For example, at one extreme, 84.6% of Cluster C gene phamilies are found only in Cluster C and not elsewhere. At the other extreme, only 23.8% of Cluster I gene phamilies are constrained to that cluster, with the remainder having relatives present in genomes in other clusters. Other clusters form a spectrum of relationships between these extremes (Table 1, Figure 6B), and clusters such as I and P—which share recognizable DNA sequence similarity (Figure 2—figure supplement 1)—share >60% of their genes with other phages (low CII values; Table 1). Thus, although some clusters could be considered as discrete groups—as reported for the Synechococcus phages (Deng et al., 2014)—this is far from being a universal or characteristic feature of groups of related phages.
 
@@ -128,41 +1191,41 @@ Cluster isolation analyses reveal additional complexities arising from highly mo
 
 Taken together, the analyses of both cluster diversity and cluster isolation show that mycobacteriophage populations contain a continuum of diversity, with non-uniform abundance of different types of phages. The prevalence of isolated phages may not necessarily reflect the proportions of different types of phages in the environment, but the availability of a large collection of isolated phages enables capture and whole genome analysis of relatively rare phages that are critical to understanding the complexities of genome relationships. We recently reported genomic analysis of the singleton mycobacteriophage Patience, which has a substantially lower GC% than its host (50.3% vs 67.4%), has a different codon usage profile, but is undergoing codon selection for growth in a high GC% environment (Pope et al., 2014b). If there is a flux of phage genomes and genes entering the mycobacterial neighborhood, then we predict that the phages of a single host do not reflect a closed system with discrete populations, but one that is open with ever-expanding diversity.
 
-## The mycobacteriophage population is not a closed system
+### The mycobacteriophage population is not a closed system
 
-Both the huge diversity of phamilies in mycobacteriophages and the high frequency of orphams suggest that genes are constantly added to phage genomes from outside sources just as genes are added to the genomes of their bacterial hosts via horizontal gene transfer. Such gene influx—for example, from host-jumping phages such as Patience (
+Both the huge diversity of phamilies in mycobacteriophages and the high frequency of orphams suggest that genes are constantly added to phage genomes from outside sources just as genes are added to the genomes of their bacterial hosts via horizontal gene transfer. Such gene influx—for example, from host-jumping phages such as Patience (Pope et al., 2014b)—would provide genetic novelty and enable phages to adapt to their ever-changing hosts. To examine gene flux into the mycobacteriophage population, we performed a rarefaction analysis by re-sampling the gene phamilies within the phage population (Figure 7). Remarkably, the rarefaction curves of the entire collection—including the 95% confidence limits—do not fit a hyperbola as would be expected if the mycobacteriophages were limited to an isolated set of genes, and about 2.5 new gene phamilies are predicted to be identified with each newly isolated phage (Figure 7A). Similar independent analyses on the phages of Cluster A or the phages of Cluster B show that this is also observed within these clusters (Figure 7B,C). Thus both individual clusters and the collection as a whole are not genetically fixed, but are in constant flux. While a hyperbola can model sampling of gene phamilies from a finite pool, it does not accommodate the influx of new phamilies. The addition of a linear term (see ‘Materials and methods’), representing the introduction of new phamilies from outside sources, results in a non-asymptotic curve which predicts the continual identification of new phams even after large numbers of genomes have been sampled (R > 0.999; Figure 7D). This linear term acts as a surrogate for the linear range of a second hyperbolic curve, one representing the resampling of a much larger set of gene phamilies available for introduction into mycobacteriophage genomes. Unfortunately, the current dataset remains insufficient to confidently extrapolate to give an estimate of the total number of viral protein families in the biosphere, which has been previously estimated to be anywhere between a half a million and 2 billion (Rohwer, 2003; Ignacio-Espinoza et al., 2013).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/06416/elife-06416-fig7-v1.jpg)
 
-**Figure 7.:** (A) The numbers of phamilies are reported for between 1 and 627 phage genomes sampled at random without replacement; the mean of 10,000 iterations is shown in red; gray lines indicate a confidence interval of two standard deviations. The black line shows a hyperbolic curve fit to the data from phage counts 1 to 314. The inset shows the number of new phams encountered upon the inclusion of each phage, with the mean number for the 10,000 iterations shown in blue and the predicted value from the hyperbolic curve shown in black. (B) Rarefaction analysis of 232 Cluster A phages. The total numbers of phamilies are reported for between 1 and 232 phages sampled at random without replacement from Cluster A; the mean of 10,000 iterations is shown in red; gray lines indicate a confidence interval of two standard deviations. The black line shows a hyperbolic curve fit to the data from phage counts 1 to 117. The inset shows the number of new phams encountered upon the inclusion of each phage, with the mean number for 10,000 iterations shown in blue and the predicted value from the hyperbolic curve shown in black. (C) Rarefaction analysis of 108 Cluster B phages; the hyperbolic curve was fit to the data from phage counts 1 to 54. (D) Fits of the hyperbolic (Equation 1) and hyperbolic with linear (Equation 2) models for phamily identification within genome samples.DOI: http://dx.doi.org/10.7554/eLife.06416.02310.7554/eLife.06416.024Figure 7—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06416.024
+**Figure 7.:** (A) The numbers of phamilies are reported for between 1 and 627 phage genomes sampled at random without replacement; the mean of 10,000 iterations is shown in red; gray lines indicate a confidence interval of two standard deviations. The black line shows a hyperbolic curve fit to the data from phage counts 1 to 314. The inset shows the number of new phams encountered upon the inclusion of each phage, with the mean number for the 10,000 iterations shown in blue and the predicted value from the hyperbolic curve shown in black. (B) Rarefaction analysis of 232 Cluster A phages. The total numbers of phamilies are reported for between 1 and 232 phages sampled at random without replacement from Cluster A; the mean of 10,000 iterations is shown in red; gray lines indicate a confidence interval of two standard deviations. The black line shows a hyperbolic curve fit to the data from phage counts 1 to 117. The inset shows the number of new phams encountered upon the inclusion of each phage, with the mean number for 10,000 iterations shown in blue and the predicted value from the hyperbolic curve shown in black. (C) Rarefaction analysis of 108 Cluster B phages; the hyperbolic curve was fit to the data from phage counts 1 to 54. (D) Fits of the hyperbolic (Equation 1) and hyperbolic with linear (Equation 2) models for phamily identification within genome samples.
 
 We note that because of the generally slow pace of the advancement of phage genomics, we have little insight into the phage populations of other hosts. We retrieved all double-stranded DNA tailed phage genomes in GenBank that we could identify (a total of 1781), corresponding to about 120 host bacterial genera, with a median number of phages per host genus of two. Using similar parameters for pham building as described above, the 181,717 predicted genes assemble into 47,479 phamilies. The relatively low representation of each phamily (3.8 genes/phamily) compared to the mycobacteriophages (13.4 genes/phamily) is a further reflection of the gross under-sampling of the phage population as a whole.
 
-## Implications for bacteriophage taxonomy
+### Implications for bacteriophage taxonomy
 
 Bacteriophage taxonomic classification reflecting phylogeny presents substantial challenges because of genome mosaicism (Lawrence et al., 2002). Classification by viral morphology is well established, but may not accurately reflect the genetic relationships, as illustrated for the prolate-headed MooMoo (Figure 3). We also note that the mycobacteriophage myoviruses have a high CII and form a discrete group (Table 1) as do the Synechococcus myophages (Deng et al., 2014), perhaps reflecting a virulent lifestyle that constrains productive gene exchange; T4-related phages from diverse hosts share a core set of 15–20% of their genes, and whole genome comparisons reveal extensive mosaicism (Petrov et al., 2010). Host range mutability thus may differ in phages with different morphotypes, limiting access to the gene pool, and although grouping phages into clusters and subclusters provides analytical advantages because of the wide range in prevalence of different phages (Table 1), it is not suitable as a broadly applicable hierarchical taxonomic system. The comparative analysis of these mycobacteriophages thus supports reticulate taxonomies that more accurately reflect the phylogenetic complexities (Lawrence et al., 2002; Lima-Mendez et al., 2007).
 
-## Implications for student learning through research experiences
+### Implications for student learning through research experiences
 
 A research experience can be a powerful vehicle that enables a person to gain an understanding of the process of science (Hunter et al., 2007). When the research experience occurs early and at a large scale, as described here, the focus can shift from selecting a few ‘qualified’ students to exploring the potential interests of many students. Clearly, an essential ingredient is the nature of the research project, as definitions of research may vary from an inquiry-based exercise to authentic research with the potential to contribute publishable findings. To optimize the educational benefits, the research project must be intellectually and technically accessible to beginning students (i.e., few prerequisites) and scalable so that many students can simultaneously make progress in parallel, yet independently (Hatfull et al., 2006). Importantly, each student's findings should contribute to a scientific question with integration of all students' discoveries advancing a scientific question of significance, as judged by scientific peer review. This, we believe, defines an ‘authentic’ research experience. We note that in the SEA-PHAGES platform, substantial student effort is invested in arriving at high-quality genome annotations by close manual inspection followed by expert verification, a critical component of the detailed comparative analysis of phage gene content described here.
 
-## Concluding comments
+### Concluding comments
 
 Bacteriophage genomics has progressed relatively slowly compared to that of other microbes in spite of their relatively small genome sizes. Here we have demonstrated that programmatically integrating the research and education missions at large scale provides an effective solution to expanding our knowledge of viral diversity, with a multitude of insights gained as a consequence of the scale of phage discovery. The nature of different genomic types, the variations of the diversity both within clusters and shared genome content among clusters, and the expanse of the mycobacteriophage population can be viewed at an unprecedented level of resolution. Our conclusions align well with comparative analyses of phages of Enterobacteriacea (Grose and Casjens, 2014) and Bacillus spp. (Grose et al., 2014) and we predict that these are general parameters of bacteriophage diversity, at least when sampling broadly across the environment. Both the rarefaction analysis described here and preliminary analysis of phamilies of all sequenced DNA phages illustrate how little of the global phage population has been genomically sampled. With a near endless supply of diverse viruses readily accessible for isolation and analyses, integrated research/education programs will continue to play substantial roles in defining the nature of the virosphere.
 
 ## Materials and methods
 
-## Phages and genomes
+### Phages and genomes
 
 In addition to extant GenBank sequence information, mycobacteriophages were isolated, sequenced, and annotated in the Phage Hunters Integrating Research and Education (PHIRE) or SEA-PHAGES programs. Phage genomes were shotgun sequenced using either 454, Ion Torrent, or Illumina platforms to at least 20-fold coverage. Shotgun reads were assembled de novo with Newbler versions 2.1 to 2.9. Assemblies were checked for low coverage or discrepant areas, and targeted Sanger reads were used to resolve weak areas and identify genome ends. All genome sequences are publically available at phagesDB.org or in GenBank. Nucleotide comparisons used BLASTN or Gepard (Krumsiek et al., 2007).
 
-## Database construction
+### Database construction
 
 To create Phamerator database Mykobacteriophage_627, phamilies were constructed by first clustering the entire database of 69,574 genes using strict kClust parameters (70% clustering threshold and 0.25 alignment coverage of the longer sequence). This was followed by multiple sequence alignment of each preliminary cluster using Kalign (Lassmann and Sonnhammer, 2005). Consensus sequences were then extracted using HHmake and HHconsensus (Remmert et al., 2012). The resulting list of sequences was subjected to a second—and less strict—round of clustering via kClust (30% clustering threshold and 0.5 alignment coverage of the longer sequence) to obtain the final phamily assignments.
 
 Network phylogeny constructions were made using the NeighborNet function with default parameters in SplitsTree (Huson, 1998; Huson and Bryant, 2006).
 
-## Cluster diversity and isolation indices
+### Cluster diversity and isolation indices
 
 Four parameters were used to evaluate cluster diversity. The first is the CLASP index that calculates the percentage of phamilies shared between two genomes, then averages across all possible pairs within a cluster or subcluster. Because the pairwise similarities are averaged, CLASP is relatively insensitive to either the overall size of the cluster, or the heterogeneity of its diversity (such as in Cluster C in which of the 45 genomes in total, 44 are in Cluster C1, and only one is in Cluster C2). CLASP robustness with respect to cluster size was demonstrated through a resampling analysis. For each cluster with more than 30 members, a random subset (of 5, 10, 20, or 30 genomes) was selected and CLASP was calculated. For each sample size, 20 iterations were performed with replacement. As expected, there is substantial deviation among the iterations, especially at smaller sizes. However, there is little change in the average CLASP values with different sample sizes (Figure 4—figure supplement 1), showing that cluster size is not a primary driver of diversity. The resampling analyses also suggest that while a greater number of genomes helps refine the CLASP value, there is still predictive power when only 10 genomes are compared. On average, the maximum and minimum iteration values at a sample size of 10 genomes were within 8% of the whole-cluster CLASP value. This implies that, for example, increasing Cluster D from 10 to 50 or 100 genomes may raise or lower its current CLASP value of 88.1, but that value is likely to remain between ∼80 and ∼96.
 
@@ -174,10 +1237,22 @@ The CCI is calculated as the average number of genes per genome as a percentage 
 
 The CII is the percentage of phams present within a cluster that are not present in other mycobacteriophage genomes.
 
-## Rarefaction analysis
+### Rarefaction analysis
 
-Rarefaction analysis was performed by randomly selecting subsets (without replacement) of between 1 and 627 (all), 232 (Cluster A) or 108 (Cluster B) mycobacteriophages and determining the numbers of phamilies represented. This was repeated 10,000 times to generate a mean number of phamilies observed given a number of phage genomes selected. The means of the accumulated numbers of phams and the numbers of new phages identified are plotted as the function of the number of genomes selected at random. The observed numbers were fit to a hyperbolic function for 50% of the sample (i.e., 1 to 314, 116 or 54 genomes for all, Cluster A or Cluster B phages, respectively); Hanes-Woolf regression was used to estimate PhamMax and Km of the hyperbola:(1)NPhams=PhamMax×NGenomesKm+NGenomes,where NGenomes is the number of genomes sampled, NPhams is the number of total phams seen within those genomes, PhamMax is the total number of phams among all mycobacteriophage genomes, and Km is the number of genomes required to sample one half of PhamMax.
+Rarefaction analysis was performed by randomly selecting subsets (without replacement) of between 1 and 627 (all), 232 (Cluster A) or 108 (Cluster B) mycobacteriophages and determining the numbers of phamilies represented. This was repeated 10,000 times to generate a mean number of phamilies observed given a number of phage genomes selected. The means of the accumulated numbers of phams and the numbers of new phages identified are plotted as the function of the number of genomes selected at random. The observed numbers were fit to a hyperbolic function for 50% of the sample (i.e., 1 to 314, 116 or 54 genomes for all, Cluster A or Cluster B phages, respectively); Hanes-Woolf regression was used to estimate PhamMax and Km of the hyperbola:
+
+$$
+N_{Phams}=\frac{Pham_{Max}\timesN_{Genomes}}{K_{m}+N_{Genomes}},
+$$
+
+where NGenomes is the number of genomes sampled, NPhams is the number of total phams seen within those genomes, PhamMax is the total number of phams among all mycobacteriophage genomes, and Km is the number of genomes required to sample one half of PhamMax.
 
 The lack of fit of the observed data to the hyperbola—with the observed data reflecting infinite size—suggests that the overall population is dynamic. The lack of hyperbolic fit of the data does not result from outliers such as phages with highly deviant GC%, because removing these does not improve the fit. The fit is also not substantially improved by analysis of the two largest clusters, Cluster A and Cluster B (Figure 7), suggesting that the dynamic nature of the gene pool is not an artifact of examining independent phage clusters with separate gene pools.
 
-To model this behavior, we modified Equation 1 to include the introduction of novel phams via recombination with outside, non-mycobacteriophage genomes:(2)NPhams=NGenomes×CPhage+PhamMax×NGenomesKm+NGenomes,where CPhage is the number of outside phams seen in each phage. The value of CPhage was estimated from Figure 7B and new values for PhamMax and KPham were estimated by Hanes-Woolf regression following data normalization.
+To model this behavior, we modified Equation 1 to include the introduction of novel phams via recombination with outside, non-mycobacteriophage genomes:
+
+$$
+N_{Phams}=N_{Genomes}\timesC_{Phage}+\frac{Pham_{Max}\timesN_{Genomes}}{K_{m}+N_{Genomes}},
+$$
+
+where CPhage is the number of outside phams seen in each phage. The value of CPhage was estimated from Figure 7B and new values for PhamMax and KPham were estimated by Hanes-Woolf regression following data normalization.

@@ -17,14 +17,14 @@
 
 ### Affiliations
 
-1. https://ror.org/04jztag35 Department of Endocrinology, Key Laboratory of Endocrinology, National Health and Family Planning Commission, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China
-2. https://ror.org/038z7hb11 Key Laboratory of Human Disease Comparative Medicine, NHFPC, Institute of Laboratory Animal Science,Chinese Academy of Medical Sciences & Comparative Medical Center, Peking Union Medical College Beijing China
+1. Department of Endocrinology, Key Laboratory of Endocrinology, National Health and Family Planning Commission, Peking Union Medical College Hospital, Chinese Academy of Medical Sciences and Peking Union Medical College Beijing China ([ROR:04jztag35](https://ror.org/04jztag35))
+2. Key Laboratory of Human Disease Comparative Medicine, NHFPC, Institute of Laboratory Animal Science,Chinese Academy of Medical Sciences & Comparative Medical Center, Peking Union Medical College Beijing China ([ROR:038z7hb11](https://ror.org/038z7hb11))
 
 † Corresponding author
 
 ## Abstract
 
-Plastin 3 (PLS3), a protein involved in formation of filamentous actin (F-actin) bundles, is important in human bone health. Recent studies identify PLS3 as a novel bone regulator and PLS3 mutations can lead to a rare monogenic early-onset osteoporosis. However, the mechanism of PLS3 mutation leading to osteoporosis is unknown, and its effective treatment strategies have not been established. Here, we have constructed a novel rat model with clinically relevant hemizygous E10-16del mutation in PLS3 ( PLS3 ) that recapitulates the osteoporotic phenotypes with obviously thinner cortical thickness, significant decreases in yield load, maximum load, and breaking load of femora at 3, 6, 9 months old compared to wild-type rats. Histomorphometric analysis indicates a significantly lower mineral apposition rate in E10-16del/0 PLS3 rats. Treatment with alendronate (1.0 µg/kg/day) or teriparatide (40 µg/kg five times weekly) for 8 weeks significantly improves bone mass and bone microarchitecture, and bone strength is significantly increased after teriparatide treatment (p＜0.05). Thus, our results indicate that E10-16del/0 PLS3 plays an important role in the regulation of bone microstructure and bone strength, and we provide a novel animal model for the study of X-linked early-onset osteoporosis. Alendronate and teriparatide treatment could be a potential treatment for early-onset osteoporosis induced by PLS3 mutation.
+Plastin 3 (PLS3), a protein involved in formation of filamentous actin (F-actin) bundles, is important in human bone health. Recent studies identify PLS3 as a novel bone regulator and PLS3 mutations can lead to a rare monogenic early-onset osteoporosis. However, the mechanism of PLS3 mutation leading to osteoporosis is unknown, and its effective treatment strategies have not been established. Here, we have constructed a novel rat model with clinically relevant hemizygous E10-16del mutation in PLS3 (PLS3E10-16del/0) that recapitulates the osteoporotic phenotypes with obviously thinner cortical thickness, significant decreases in yield load, maximum load, and breaking load of femora at 3, 6, 9 months old compared to wild-type rats. Histomorphometric analysis indicates a significantly lower mineral apposition rate in PLS3E10-16del/0 rats. Treatment with alendronate (1.0 µg/kg/day) or teriparatide (40 µg/kg five times weekly) for 8 weeks significantly improves bone mass and bone microarchitecture, and bone strength is significantly increased after teriparatide treatment (p＜0.05). Thus, our results indicate that PLS3 plays an important role in the regulation of bone microstructure and bone strength, and we provide a novel animal model for the study of X-linked early-onset osteoporosis. Alendronate and teriparatide treatment could be a potential treatment for early-onset osteoporosis induced by PLS3 mutation.
 
 ## Introduction
 
@@ -36,13 +36,33 @@ So far, the animal models carrying patient-derived PLS3 mutations have not been 
 
 ## Results
 
-## The rats with hemizygous E10-16del mutation were successfully generated
+### The rats with hemizygous E10-16del mutation were successfully generated
 
 A large fragment deletion of exon 10–16 in PLS3 was introduced into the genome of rats, and a 9626 bp deletion from 84,172 to 93,797 bp (NC_051356.1) was confirmed by genotyping and Sanger sequencing (Figure 1A and B). PLS3 antibody used in this study targeted the KO region of PLS3 protein (deleted amino acid region: 331–630). Therefore, using western blotting of equivalent amounts of total proteins from wild-type (WT) and PLS3E10-16del/0 rats, we observed a band of appropriate size for PLS3 (~70 kDa) in membranes of WT rats, which was lacking in membranes of PLS3E10-16del/0 rats (Figure 1C). Immunohistochemical staining of femoral sections also unraveled that PLS3 was present in osteocytes, osteoblasts, and osteoclasts in cortical and trabecular bone of WT rats, while PLS3 was not seen in bone cells of the PLS3E10-16del/0 rats (Figure 1E). Moreover, quantitative polymerase chain reaction (qPCR) results also indicated that the expression level of PLS3 E10-16 was extremely low in PLS3E10-16del/0 rats. However, we found a similar expression level of PLS3 E1-9 between PLS3E10-16del/0 and WT rats, which indicated a possible presence of truncated PLS3 variants (Figure 1D). Together, these results indicated that rats with hemizygous E10-16 deletion in PLS3 were successfully built.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of targeted PLS3 gene deletion using CRISPR/Cas9 and Sanger sequencing analysis. Four specific CRISPR target sites near the genomic region of exon 10–16 were designed. CRISPR/Cas9 systems specifically cleaved the target sites. Sanger sequence confirmed the genomic deletion of exon 10–16 (No. 84172–93797 bp) and two base pair insertions at the target site due to non-homologous end joining after the DNA cleavage. (B) Polymerase chain reaction (PCR) genotyping of PLS3E10-16del/0 rats. DNA from tail snips was subjected to PCR using P-KO-F/P-KO-R and P-WT-F/P-WT-R primers for mutant and WT allele, respectively. Amplification of mutant samples resulted in one copy of the upper 554 bp fragment, while WT samples yield one copy of the lower 450 bp fragment. (C) PLS3 gene deletion confirmed by western blot. PLS3 protein expression was absent in various tissues of the PLS3E10-16del/0 rats compared to age-matched WT rats, indicating the whole-body deletion of the PLS3 gene. (D) Quantitative PCR (qPCR) confirmation of PLS3 E10-16 deletion. The results of PLS3-KO indicated the expression level of PLS3 E10-16 (knockout region). The results of PLS3 indicated the expression level of PLS3 E1-9 (uneditable region). The expression level of PLS3 E10-16 was extremely low in PLS3E10-16del/0 rats while the expression level of PLS3 exon 1–9 was similar to WT rats. Data were pooled from three independent experiments and were presented as mean ± SEM. Data were analyzed using unpaired two-tailed Student t test. *p ＜0.05 vs WT groups. (E) Representative image of PLS3 immunohistochemistry in the femoral sections. Os, osteocytes; Ob, osteoblasts; Oc, osteoclasts. Immunohistochemical staining images revealed that PLS3 was present in osteocytes, osteoblasts, and osteoclasts in the cortical (left) and trabecular (right) bone of WT rats. Loss of staining in osteocytes, osteoblasts, and osteoclasts in the PLS3E10-16del/0 rats confirmed the successful deletion of the PLS3 gene in bone. WT: wild-type.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** WT: wild-type.
 
 Rats carrying mutant allele were born close to the expected Mendelian ratio (PLS3E10-16del/+: 28.6%, PLS3E10-16del/0: 28.5%, WT: 42.4%). The PLS3E10-16del/0 rats showed similar movement, locomotor activities, and longitudinal growth to WT rats (Figure 1—figure supplement 1). Moreover, the life span of WT and PLS3E10-16del/0 rats was similar and no rats died during the experimental period. There were also no statistical differences in body weight change between WT and PLS3E10-16del/0 rats during the whole experimental period (Figure 1—figure supplement 1).
 
 The biomechanical properties of PLS3E10-16del/0 rats were significantly impaired. Compared to age- and gender-matched WT group, PLS3E10-16del/0 rats exhibited a decrease by 24.8% in yield load (p＜0.001), 19.4% in maximum load (p＜0.01), and 25.3% in breaking load (p<0.05) of femur of 3-month-old PLS3E10-16del/0 rats, which continued to 6 and 9 months old of mutant rats (Figure 2A and B). Notably, the stiffness (108.18±11.28 vs 501.20±84.97 N/mm, p＜0.001) and breaking load (155.99±39.92 vs 227.75±27.06 N, p＜0.01) of femur of 9-month-old PLS3E10-16del/0 rats were pronouncedly lower than those of WT rats. Significantly reduced maximum load of vertebrae was also found in PLS3E10-16del/0 rats (Figure 2C). Compared with WT rats, the average maximum load of the fifth lumbar vertebra decreased by 28.5% (p＜0.01) and 43.6% (p＜0.001) at 3 and 6 months old of PLS3E10-16del/0 rats. No significant difference was found in the stiffness, work-to-failure, and post-yield displacement between 3-month-old PLS3E10-16del/0 rats and WT rats (Figure 2A, Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mechanical three-point bending tests of femora from PLS3E10-16del/0 and WT rats (n=5-8 per group). (B) Typical load-displacement curves of PLS3E10-16del/0 and WT rats. (C) Indentation tests of L5 from PLS3E10-16del/0 and WT rats (n=5 per group). Data were analyzed using unpaired two-tailed Student t test. *p＜0.05, **p ＜0.01, ***p ＜0.001 vs WT groups. (D) Three-dimensional reconstruction images of femurs from PLS3E10-16del/0 and WT rats. (E) Micro-CT assessment of the distal femurs from PLS3E10-16del/0 and WT rats (n=5-8 per group). BV/TV: bone volume/tissue volume, Ct.Th: cortical thickness, Tb.Th: trabecular thickness, Tb.N: trabecular number. (F) Representative von Kossa-stained sections of tibia diaphysis of PLS3E10-16del/0 and WT rats. Scale bar = 2000 μm. WT: wild-type. (G) Typical images of unstained and uncalcified vertebra of PLS3E10-16del/0 rats and comparison of mineral apposition rate (n=4 per group). Scale bar = 10 μm. Data were analyzed using unpaired two-tailed Student t test. *p＜0.05 vs WT groups. Tb.MAR: mineral apposition rate of lumbar trabeculae. (H) Expression level of COL1A1 and photomicrographs of picrosirius red-stained sections of cortical bone regions of femur visualized through polarized light microscopy. Scale bar = 100 μm. Data were pooled from three independent experiments and were presented as mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mechanical three-point bending tests of femora from PLS3E10-16del/0 and WT rats (n=5-8 per group). WT: wild-type. (B) Micro-CT assessment of the distal femur from PLS3E10-16del/0 and WT rats. BS/BV: bone surface/bone volume, Tb.Sp: trabecular separation. (C) Histomorphometric evaluation of L4 from PLS3E10-16del/0 and WT rats (n=5-7 per group). %Tb.Ar: trabecular area, Tb.Th: trabecular thickness, Tb.N: trabecular number, Tb.Sp: trabecular separation. Scale bar = 2000 μm. (D) Analysis of mineral apposition rate (MAR) in tibial cortices of PLS3E10-16del/0 rats (n=4-5 per group). Ec.MAR: mineral apposition rate of endocortical surface of tibia cortex. Ps.MAR: mineral apposition rate of periosteal surface of tibia cortex. (E) Measurements of osteoclasts, osteocytes, and osteoblasts of PLS3E10-16del/0 rats (n=5-8 per group). N.Oc./B.Pm: osteoclast number per bone perimeter, N.Ot./B.Ar: osteocyte number per bone area; N.Ob/B.Pm: osteoblast number/bone perimeter.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images of osteocalcin (Ocn) immunohistochemistry in the femur bone sections and its quantification data (n=3-5 per group). Scale bar: 100 μm. (B) Measurements of adipocytes of PLS3E10-16del/0 rats (n=3-5 per group). N.Ad/Mr: number of adipocytes in the distal marrow per tissue area. %Ad.Ar: area of adipocytes in the distal marrow per tissue area. Scale bar: 100 μm.Data were analyzed using unpaired two-tailed Student t test. **p＜0.01 vs WT groups. (C) Serum levels of bone metabolic markers in Pls3E10-16del/0 and wild-type (WT) rats (n=5-8 per group). Ca: calcium, P: phosphorus, β-CTX: β-C-telopeptide of type Ⅰ collagen, bone resorption marker, ALP: alkaline phosphatase. ELISAs were used to determine the levels of CTX-I. An automated chemistry analyzer was used to measure the levels of the Ca, P, and ALP. (D) Parameters of glucose and lipid metabolism in PLS3E10-16del/0 rats (n=5-8 per group). Glu: glucose, TC: total cholesterol, LDL: low-density lipoprotein, TG: total glycerides. All parameters were measured by an automated chemistry analyzer.
 
 The microstructure of cortical bone was deteriorated in PLS3E10-16del/0 rats. Femoral Ct.Th of 3-, 6-, 9-month-old PLS3E10-16del/0 rats were 79.9% (p＜0.001), 86.3% (p＜0.05), 72.6% (p＜0.001) of age-matched WT rats, respectively. However, bone volume/tissue volume (BV/TV), bone surface area/bone volume (BS/BV), trabecular thickness (Tb.Th), trabecular number (Tb.N), and trabecular separation (Tb.Sp) in femur of PLS3E10-16del/0 rats were similar to WT rats at all ages (Figure 2D and E, Figure 2—figure supplement 1B). No significant differences were found in %Tb.Ar, Tb.Th, Tb.N, and Tb.Sp of lumbar vertebrae between the PLS3E10-16del/0 rats and WT rats (Figure 2—figure supplement 1C).
 
@@ -52,13 +72,21 @@ Since no difference was found in bone mass between WT and PLS3E10-16del/0 rats, 
 
 No difference was found in the area of adipocytes in the distal marrow per tissue area. However, 3-month-old PLS3E10-16del/0 rats had more adipocytes than WT rats of the same age (Figure 2—figure supplement 2B). We also investigated the parameters of glucose and lipid metabolism and found similar levels of serum glucose (Glu), triglycerides (TG), cholesterol (TC), low-density lipoprotein (LDL) between PLS3E10-16del/0 rats and WT at all ages (Figure 2—figure supplement 2D). Besides, PLS3 mutations were reported to have patent ductus arteriosus (Qiu et al., 2022). However, no obvious abnormalities were found in ultrasonic cardiogram and hematoxylin and eosin (H&E) staining about the cardiac structure and function of PLS3E10-16del/0 rats.
 
-## Effects of anti-osteoporotic treatment on PLS3E10-16del/0 rats
+### Effects of anti-osteoporotic treatment on PLS3E10-16del/0 rats
 
 ALN or TPTD treatment for 8 weeks significantly improved bone microstructure of PLS3E10-16del/0 rats. Compared to vehicle (VEH) group, Tb.N and BV/TV values were increased by 38.4% and 38.7% in ALN group and by 35.9% and 29.3% in TPTD group, while Tb.Sp was decreased by 49.3% and 40.1% in ALN and TPTD group, respectively (all p＜0.05), and cancellous BMD of femur increased by 43.0% in ALN group (p＜0.01) and 33.3% in TPTD group (p＜0.01). ALN or TPTD treatment significantly increase 7.4% and 4.8% of Ct.Th of PLS3E10-16del/0 rats (all p＜0.05 vs VEH group) (Figure 3A and B). A significant histomorphometric increase by 31.7% and 60.3% in %Tb.Ar and Tb.Th of L4 was observed in TPTD group (all p＜0.05 vs VEH group), but not in ALN group (Figure 4A and B). Tibial Ec.MAR of TPTD group was higher than VEH group (p＜0.01), and the lowest Ec.MAR (2.75 μm/day) in the tibia was found in rats of ALN group (Figure 4E). Ps.MAR of the tibia was similar among ALN, TPTD, and VEH group (Figure 4—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig3-v2.jpg)
 
-**Figure 3.:** PLS3 rats.E10-16del/0(A) Three-dimensional reconstruction images of femurs after treatment. (B) Microstructural parameters of femurs by micro-CT after treatment (n=8 per group). ALN: alendronate, TPTD: teriparatide, BV/TV: bone volume/tissue volume, BS/BV: bone surface area/bone volume, Tb.Th: trabecular thickness, Tb.N: trabecular number, Tb.Sp: trabecular separation, Ct.Th: cortical thickness, BMD: tissue bone mineral density. Data were shown as the mean ± SD, evaluated by one-way ANOVA followed by Tukey’s post hoc test. *p<0.05; **p<0.01; ***p<0.001.Figure 3—source data 1.
+**Figure 3.:** (A) Three-dimensional reconstruction images of femurs after treatment. (B) Microstructural parameters of femurs by micro-CT after treatment (n=8 per group). ALN: alendronate, TPTD: teriparatide, BV/TV: bone volume/tissue volume, BS/BV: bone surface area/bone volume, Tb.Th: trabecular thickness, Tb.N: trabecular number, Tb.Sp: trabecular separation, Ct.Th: cortical thickness, BMD: tissue bone mineral density. Data were shown as the mean ± SD, evaluated by one-way ANOVA followed by Tukey’s post hoc test. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig4-v2.jpg)
+
+**Figure 4.:** (A) Typical images of unstained and uncalcified vertebra of PLS3E10-16del/0 rats after treatment. Scale bar = 1000 μm. (B) Histomorphometric analysis of L4 after treatment (n=5 per group). %Tb.Ar: trabecular area, Tb.Th: trabecular thickness, Tb.N: trabecular number, Tb.Sp: trabecular separation. (C) Effects of treatment on the mechanical strength of femoral diaphysis (n=8 per group). The diaphysis was subjected to three-point bending test to failure, which provided data on yield load, maximum load, breaking load. (D) Effects of treatment on the mechanical strength of L5 (n=7-8 per group). The vertebral body was subjected to indentation test to acquire maximum load. (E) Comparison of Ec.MAR in the tibial cortex among three treatment groups (n=5 per group). Scale bar = 100 μm. ALN: alendronate, TPTD: teriparatide, control: saline. Ec.MAR: mineral apposition rate of endocortical surface of tibia cortex. Data were shown as the mean ± SD, evaluated by one-way ANOVA followed by Tukey’s post hoc test. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80365/elife-80365-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Body mass and length of rats at the initiation and end of the treatment (n=8 per group). Body mass were comparable among three groups at the initiation and end of the treatment. No differences were found in body length, tail length, and total length of rats at the completion of 2 months of therapy. ALN: alendronate group; TPTD: teriparatide. (B) Serum levels of bone metabolic markers during treatment (n=8 per group). Ca: calcium, P: phosphorus, β-CTX: β-C-telopeptide of type Ⅰ collagen, bone resorption marker, ALP: alkaline phosphatase. Bone metabolic markers were measured at 0 and 8 weeks of treatment. (C) Comparison of Ps.MAR in the tibial cortex among three treatment groups (n＞3 per group). Ps.MAR: mineral apposition rate of periosteal surface of tibia cortex.
 
 Moreover, TPTD treatment significantly increased maximum load (182.2±8.7 N vs 154.2±15.9 N, p＜0.001), yield load (117.5±22.8 N vs 87.8±16.6 N, p＜0.05), and breaking load (165.3±9.5 N vs 142.2±20.8 N, p＜0.01) of femur and maximum load of the fifth lumbar vertebrae (69.5±18.3 N vs 32.1±5.1 N, p＜0.01) than VEH group (Figure 4C and D). The bone strength of femur and lumbar vertebrae was not significantly improved in ALN group.
 
@@ -80,48 +108,218 @@ In conclusion, PLS3 plays major roles in bone metabolism and bone integrity. Imp
 
 ## Materials and methods
 
-## Generation of PLS3 KO rat model and genetic identification
+### Generation of PLS3 KO rat model and genetic identification
 
 General PLS3 KO rat model was generated using the CRISPR/Cas9 system at the Institute of Laboratory Animal Sciences, Chinese Academy of Medical Sciences & Peking Union Medical College. Five specific guide RNAs were used to target the exons 10–16 of PLS3 (Table 1), which were annealed and cloned into the PUC57-gRNA expression vector (Addgene 51132, Cambridge, MA, USA) with a T7 promoter. In vitro, transcription of gRNA template was accomplished using the MEGAshortscript Kit (AM1354, Ambion). The pST1374-NLS-flag-linker-Cas9 vector (Addgene 44758) was linearized using the Age I enzyme and transcribed with a T7 Ultra Kit (Ambion, AM1345). After purified with the MEGAclear Kit (AM1908, Ambion), a mixture of transcribed Cas9 mRNA and gRNA was microinjected into the cytoplasm of zygotes of Sprague Dawley (SD) rats which were obtained commercially from Beijing Vital River Laboratory Animal Technology Co., Ltd. A male founder was backcrossed with WT rats to generate female heterozygous KO rats (PLS3E10-16del/+), which were subsequently crossed with WT male rats. As being located on the X chromosome, PLS3-induced osteoporosis was more severe in males than females, male hemizygous KO rats (PLS3 E10-16del/0) of the offspring were selected to be further studied. Since PLS3-related osteoporosis had its disease onset early in childhood and adolescence, and rats reached the peak bone mass at 6–9 months of age, we chose rats at age of 3, 6, and 9 months for further investigation. All rats were registered and preserved on an SD genetic background in a specific pathogen-free environment without surpassing six animals in ventilated cages. Rats were provided with standard chow and water ad libitum.
 
+**Table 1.**
+ Small guide RNA (gRNA) sequence for PLS3 gene knockout.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Targeting site</th>
+      <th>Name</th>
+      <th>Sequence (5’–3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="2">ATGTATTCTGGCGCCATCT TGG</td>
+      <td>PLS3-gRNA-UP1</td>
+      <td>TAGGatgtattctggcgccatct</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-DOWN1</td>
+      <td>aaacAGATGGCGCCAGAATACAT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td rowspan="2">TACATACATACATAGATGA TGG</td>
+      <td>PLS3-gRNA-UP2</td>
+      <td>TAGGtacatacatacatagatga</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-DOWN2</td>
+      <td>aaacTCATCTATGTATGTATGTA</td>
+    </tr>
+    <tr>
+      <td rowspan="4">3</td>
+      <td rowspan="4">TCTCAGGTGAAGTGCACA TGG</td>
+      <td>PLS3-gRNA-UP3</td>
+      <td>TAGGtctcaggtgaagtgcaca</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-down3</td>
+      <td>aaacTGTGCACTTCACCTGAGA</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-UP4</td>
+      <td>TAGGATCCAGGTCTACAGGAAAG</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-down4</td>
+      <td>aaacctttcctgtagacctggat</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td rowspan="2">CCT CTTTCCTGTAGACCTGGAT</td>
+      <td>PLS3-gRNA-UP5</td>
+      <td>TAGGATCCAGGTCTACAGGAAAG</td>
+    </tr>
+    <tr>
+      <td>PLS3-gRNA-down5</td>
+      <td>AAACCTTTCCTGTAGACCTGGAT</td>
+    </tr>
+  </tbody>
+</table>
+
+_The gRNAs were designed based on Rattus norvegicus (Norway rat) genome assembly Rnor_6.0 (rn6), using CRISPR Design Tool (http://tools.genome-engineering.org).Gene ID: 81748; Location: Chromosome X - NC_005120.4.The words in red represented the protospacer adjacent motif (PAM) sequences (5’–3’)._
+
 Genomic DNA was isolated from tail snips using E.Z.N.A. Tissue DNA Kit (Omega Bio-tek, Norcross, GA, USA). Genotyping was performed using PCR amplification. The allele-specific primers were listed in Table 2. Primers P-KO-F/P-KO-R were used to amplify PLS3 KO allele, and a 554 bp PCR production would be generated. Primers P-WT-F/P-WT-R were used to amplify WT allele, and a 450 bp PCR production would be generated. Thermal cycling conditions consisted of an initial denaturation at 95°C for 3 min, followed by 38 cycles at 95°C for 30 s, 52–58°C for 30 s, and 72°C for 1 min. Sanger sequencing of PCR products was further completed.
 
-## Western blot analysis
+**Table 2.**
+ Primers used for Sanger sequencing, genotyping, and qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5’–3’)</th>
+      <th>GenBank accession number</th>
+      <th>Nucleotide position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P-WT-F</td>
+      <td>CCCATAAGTTGTTCCTTGATTTCC</td>
+      <td>NC_051356.1</td>
+      <td>88350–88373</td>
+    </tr>
+    <tr>
+      <td>P-WT-R</td>
+      <td>CACTGCCTGAATAAGACCCACTC</td>
+      <td>NC_051356.1</td>
+      <td>88777–88799</td>
+    </tr>
+    <tr>
+      <td>P-WT-F’</td>
+      <td>CCTTGTGGAAGTAAAACCGAA</td>
+      <td>NC_051356.1</td>
+      <td>93529–93549</td>
+    </tr>
+    <tr>
+      <td>P-WT-R’</td>
+      <td>TACAAAGGCCAAGTTCAG</td>
+      <td>NC_051356.1</td>
+      <td>84492–84510</td>
+    </tr>
+    <tr>
+      <td>P-KO-F</td>
+      <td>CTTCATTCCCTTTGCACGTT</td>
+      <td>NC_051356.1</td>
+      <td>84092–84111</td>
+    </tr>
+    <tr>
+      <td>P-KO-R</td>
+      <td>TACAAAGGCCAAGTTCAG</td>
+      <td>NC_051356.1</td>
+      <td>94242–94262</td>
+    </tr>
+    <tr>
+      <td>PLS3-KO-F</td>
+      <td>AAATTCTCCTTGGTTGGCATT</td>
+      <td>NM_031084.1</td>
+      <td>1507–1527</td>
+    </tr>
+    <tr>
+      <td>PLS3-KO-R</td>
+      <td>TCCAGCTTCACTCAATGTTCC</td>
+      <td>NM_031084.1</td>
+      <td>1672–1692</td>
+    </tr>
+    <tr>
+      <td>PLS3-F</td>
+      <td>GAAAATGATCCCGATTGCAG</td>
+      <td>NM_031084.1</td>
+      <td>496–515</td>
+    </tr>
+    <tr>
+      <td>PLS3-R</td>
+      <td>CTCTCATCAATTGTATCGGGAA</td>
+      <td>NM_031084.1</td>
+      <td>605–626</td>
+    </tr>
+    <tr>
+      <td>COL1A1-F</td>
+      <td>TCCTGACGCATGGCCAAGAA</td>
+      <td>NM_053304.1</td>
+      <td>164–183</td>
+    </tr>
+    <tr>
+      <td>COL1A1-R</td>
+      <td>CATAGCACGCCATCGCACAC</td>
+      <td>NM_053304.1</td>
+      <td>289–308</td>
+    </tr>
+    <tr>
+      <td>GAPDH-F</td>
+      <td>TTCAACGGCACAGTCAAGG</td>
+      <td>NM_017008.4</td>
+      <td>235–253</td>
+    </tr>
+    <tr>
+      <td>GAPDH-R</td>
+      <td>CTCAGCACCAGCATCACC</td>
+      <td>NM_017008.4</td>
+      <td>331–348</td>
+    </tr>
+  </tbody>
+</table>
+
+_Primers PLS3-KO-F/PLS3-KO-R were selected to amplify a fragment spanning from exon 13 to exon 14 of the rat PLS3 cDNA. The qPCR results were used to indicate the expression level of PLS3 E10-16 (knockout region). Primers PLS3-F/PLS3-R were selected to amplify a fragment spanning from exon 5 to exon 6 of the rat PLS3 cDNA. The qPCR results were used to indicate the expression level of PLS3 E1-9 (uneditable region).F: forward, R: reverse, WT: wild-type, KO: knockout._
+
+### Western blot analysis
 
 In order to confirm the general deletion of PLS3 protein, proteins from bone, muscle, heart, lung, renal, and liver of PLS3E10-16del/0 and WT rats were extracted for western blot. Briefly, the tissues were separately homogenized in RIPA buffer containing 1 mM PMSF and Halt Protease and Phosphatase Inhibitor cocktail (Thermo Fisher Scientific, Waltham, MA, USA). The protein concentration was determined with BCA Protein Assay Kit (Thermo Fisher Scientific). Protein samples (30 µg each) were loaded onto a 4–12% gradient SDS-PAGE gel and then transferred to PVDF membranes. After being blocked with 5% BSA, the membranes were incubated with primary antibody against PLS3 (Cat# ab233104, Abcam, 1:1000 dilution) or GAPDH (Cat# ab8245, Abcam, 1:1000 dilution) and washed with TBST three times, which were then incubated with a horseradish peroxidase-conjugated anti-rabbit or anti-mouse secondary antibody. Finally, the immunoblots were visualized by enhanced chemiluminescence.
 
-## Real-time qPCR
+### Real-time qPCR
 
 Total RNA was extracted from the tibia of WT and PLS3E10-16del/0 rats with TRIzol reagent and was reversely transcribed to cDNA using the PrimeScript RT Reagent Kit (Takara, Kusatsu, Japan). The gene expression levels were quantified by qPCR using TB Green Premix Ex Taq II (Tli RNase H Plus, Takara) on a Viia 7 Real-Time PCR System (Life Technologies, USA). Primer sequences for RT-qPCR were listed in Table 2. Relative mRNA expression levels were calculated using the 2−ΔΔCT method and normalized to the internal control GAPDH.
 
-## Treatment
+### Treatment
 
 A total of 24 PLS3E10-16del/0 male rats at 3 months of age were randomized either to VEH, ALN, or TPTD therapy (n=8 in each group) for 8 weeks. ALN (Merck and Co., Inc, Rahway, NJ, USA) 1.0 µg/kg body weight was subcutaneously injected daily into rats in ALN group (Diab et al., 2011; Iwata et al., 2006). In the TPTD group, the agent (recombinant human parathyroid hormone 1–34, provided by Salubris Biotherapeutics, Inc, Shenzhen, China) was subcutaneously injected at the dose of 40 µg/kg body weight, five times weekly (Komrakova et al., 2010; Lane et al., 1996). Rats in the VEH group received 0.9% saline and acted as control groups.
 
 All animal experiments were approved by the Institutional Animal Care and Use Committee of the Peking Union Medical College Hospital (XHDW-2021-027).
 
-## Bone microstructure assessment
+### Bone microstructure assessment
 
 The left femur was fixed in 4% paraformaldehyde, of which microarchitecture was assessed by micro-computed tomography (μCT) (Inveon MM CT, Siemens, Erlangen, Germany) according to the recommended protocol (Bouxsein et al., 2010). In vitro scans were operated with an X-ray tube voltage of 60 kV, a current of 400 μA, an exposure time of 800 ms, and a voxel size of 20 μm. The region of interest for trabecular bone was drawn in the distal epiphysis, starting 1.5 mm below the growth plate and extending 100 slices to proximal end. Cortical bone was analyzed in a 1000-μm-long volume situated in the middle of the diaphysis. BMD, BV/TV, BS/BV, Ct.Th, Tb.Th, Tb.N, and Tb.Sp were measured. The Inveon Research Workplace software (Siemens) was used for reconstruction and analysis of two-dimensional (2D) and 3D image.
 
-## Assessment of biomechanical properties of bone
+### Assessment of biomechanical properties of bone
 
 The right femur and the fifth lumbar vertebrae (L5) were wrapped in saline-soaked gauze and stored at –20°C, which were thawed at room temperature 2 hr before the mechanical test. Three-point binding tests and indentation testing were implemented on a fatigue-testing machine (BOSE ElectroForce 3200, TA Instruments, New Castle, DE, USA). From the load-displacement curves of femurs, stiffness, yield load, maximum load, breaking load, post-yield displacement, and work-to-fracture were generated. Force‐displacement measurement was also performed on the fifth lumbar vertebral bodies, and maximum load was measured.
 
-## Measurement of bone metabolic markers and metabolic parameters
+### Measurement of bone metabolic markers and metabolic parameters
 
 Under abdominal anesthesia, blood samples were collected via cardiac puncture. Concentrations of serum calcium (Ca), phosphorus (P), and ALP (a bone formation marker) were measured by an automated chemistry analyzer (AU5800, Beckman Coulter Inc, Brea, CA, USA). Serum level of C-telopeptide of type Ⅰ collagen (β-CTX, bone resorption marker) was measured by ELISA (Cat# CSB-E12776r, Cusabio Biotech Co., Wuhan, China). To determine whether PLS3 KO affected other metabolism, we measured the levels of serum Glu, TC, LDL, and TG using the automated chemistry analyzer.
 
-## Analysis of histology and histomorphometry
+### Analysis of histology and histomorphometry
 
 All rats received intraperitoneal injection of calcein (10 mg/kg body mass, Sigma-Aldrich, Co., St. Louis, MO, USA) for histomorphometric analysis on the second and the sixth day before euthanization. The left femur was decalcified after μCT scanning and were embedded in paraffin and cut into 4 μm sections using a microtome (Leica RM2016, Leica Microsystems). H&E staining and tartrate-resistant acid phosphatase staining (Servicebio, Cat# G1050) were performed. The osteoclast number per bone perimeter (N.Oc/B.Pm), osteocyte number per bone area (N.Ot/B.Ar), and osteoblast number/bone perimeter (N.Ob/B.Pm), number and area of adipocytes in the distal marrow per tissue area were calculated. Bone slices were also subjected to the picrosirius red staining for the evaluation of the organization of collagen fibers through polarized light microscopy (Axio Imager D2, Zeiss, Germany).
 
 The right tibia and the fourth vertebrae (L4) were fixed in 70% alcohol and embedded in modified methyl methacrylate without decalcification. The embedded samples were cut into 10 μm thick sections, which were de-plasticized and stained with von Kossa stain kit (Servicebio, Cat# G1043) to calculate trabecular area (%Tb.Ar), Tb.Th, Tb.N, and Tb.Sp. For unstained slices, the MAR was calculated by dividing the distance between the two calcein labels by the inter-labeling period. Analysis was performed with ImageJ software according to the recommendation of ASBMR (Dempster et al., 2013).
 
-## Immunohistochemical staining
+### Immunohistochemical staining
 
 Paraffin-embedded femur samples were subjected to immunostaining for PLS3 and osteocalcin (Ocn). Slides were subjected to 0.05% trypsin at 37°C for 30 min for antigen retrieval and blocked in 3% hydrogen peroxide and 3% bovine serum albumin. Rabbit anti-PLS3 antibody (Cat# ab23310, Abcam, 1:200 dilution) or anti-Ocn antibody (Cat# ab93876, Abcam, 1:200 dilution) were applied, followed by incubation with HRP-labeled secondary antibody (ZSGB-BIO). PLS3 and Ocn expression were visualized using 3,3'-diaminobenzidine staining. Counterstaining was performed using hematoxylin. Ocn-positive area was quantified using ImageJ software.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were repeated at least thrice independently. Results were reported as means ± SD (standard difference). Comparisons of parameters between transgenic and WT rats were completed using Student’s t test. Parameters of rats at different ages or in different treatment groups were compared with one-way ANOVA followed by Tukey’s post hoc test. Statistical analysis was performed using SPSS Statistics 26.0 (IBM, Armonk, NY, USA), GraphPad Prism 8 (Statcon). Statistical significance was determined when p values equal to or less than 0.05.

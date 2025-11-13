@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/040af2s02 Organismal and Evolutionary Biology Research Program, Faculty of Biological and Environmental Sciences, University of Helsinki Helsinki Finland
-2. https://ror.org/013meh722 Department of Zoology, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/03yj89h83 Ecology and Genetics Research Unit, University of Oulu Oulu Finland
-4. https://ror.org/05n3dz165 Department of Biological and Environmental Science, University of Jyväskylä Jyväskylä Finland
-5. https://ror.org/05n3dz165 Department of Chemistry, University of Jyväskylä Jyväskylä Finland
-6. https://ror.org/046f6cx68 Institute for Melanin Chemistry, Fujita Health University Toyoake Japan
+1. Organismal and Evolutionary Biology Research Program, Faculty of Biological and Environmental Sciences, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+2. Department of Zoology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Ecology and Genetics Research Unit, University of Oulu Oulu Finland ([ROR:03yj89h83](https://ror.org/03yj89h83))
+4. Department of Biological and Environmental Science, University of Jyväskylä Jyväskylä Finland ([ROR:05n3dz165](https://ror.org/05n3dz165))
+5. Department of Chemistry, University of Jyväskylä Jyväskylä Finland ([ROR:05n3dz165](https://ror.org/05n3dz165))
+6. Institute for Melanin Chemistry, Fujita Health University Toyoake Japan ([ROR:046f6cx68](https://ror.org/046f6cx68))
 
 † Corresponding author
 
 ## Abstract
 
-Colour is often used as an aposematic warning signal, with predator learning expected to lead to a single colour pattern within a population. However, there are many puzzling cases where aposematic signals are also polymorphic. The wood tiger moth, Arctia plantaginis , displays bright hindwing colours associated with unpalatability, and males have discrete colour morphs which vary in frequency between localities. In Finland, both white and yellow morphs can be found, and these colour morphs also differ in behavioural and life-history traits. Here, we show that male colour is linked to an extra copy of a yellow family gene that is only present in the white morphs. This white-specific duplication, which we name valkea, is highly upregulated during wing development. CRISPR targeting valkea resulted in editing of both valkea and its paralog, yellow-e, and led to the production of yellow wings. We also characterise the pigments responsible for yellow, white, and black colouration, showing that yellow is partly produced by pheomelanins, while black is dopamine-derived eumelanin. Our results add to a growing number of studies on the genetic architecture of complex and seemingly paradoxical polymorphisms, and the role of gene duplications and structural variation in adaptive evolution.
+Colour is often used as an aposematic warning signal, with predator learning expected to lead to a single colour pattern within a population. However, there are many puzzling cases where aposematic signals are also polymorphic. The wood tiger moth, Arctia plantaginis, displays bright hindwing colours associated with unpalatability, and males have discrete colour morphs which vary in frequency between localities. In Finland, both white and yellow morphs can be found, and these colour morphs also differ in behavioural and life-history traits. Here, we show that male colour is linked to an extra copy of a yellow family gene that is only present in the white morphs. This white-specific duplication, which we name valkea, is highly upregulated during wing development. CRISPR targeting valkea resulted in editing of both valkea and its paralog, yellow-e, and led to the production of yellow wings. We also characterise the pigments responsible for yellow, white, and black colouration, showing that yellow is partly produced by pheomelanins, while black is dopamine-derived eumelanin. Our results add to a growing number of studies on the genetic architecture of complex and seemingly paradoxical polymorphisms, and the role of gene duplications and structural variation in adaptive evolution.
 
 ## Introduction
 
@@ -37,27 +37,47 @@ The wood tiger moth, Arctia plantaginis, has a complex polymorphism that has bee
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig1-v2.jpg)
 
-**Figure 1.:** Arctia plantaginis.(A) Sampling locations and frequencies of yellow and white males in Finland, Scotland, and Estonia. (B) Males of the white and yellow colour morphs (credit: Samuel Waldron).
+**Figure 1.:** (A) Sampling locations and frequencies of yellow and white males in Finland, Scotland, and Estonia. (B) Males of the white and yellow colour morphs (credit: Samuel Waldron).
 
 Despite the large body of research on A. plantaginis colour morphs, the genetic basis of this polymorphism is unknown. Here, we explore male hindwing colour variation using linkage mapping, whole-genome data, and gene expression analyses, with wild populations and lab crosses, to identify the locus controlling the colour polymorphism. We use CRISPR/Cas9 gene knockouts to determine the function of the identified gene, and then characterise the pigments producing yellow, white, and black colouration on the wings of male A. plantaginis. Our findings aim to provide an example of the genetic architecture controlling a trait that is part of a complex polymorphism.
 
 ## Results
 
-## A narrow genomic region is associated with hindwing colour
+### A narrow genomic region is associated with hindwing colour
 
 To investigate the genetic basis of male hindwing colouration in A. plantaginis, we carried out a quantitative trait locus (QTL) mapping analysis using crosses between heterozygous Wy males and homozygous yy females. We used RADseq data aligned to the yellow A. plantaginis reference genome from 172 male offspring (90 white and 82 yellow) from four families. The QTL analysis identified a single marker associated with male hindwing colour (Figure 2A). This marker was found on scaffold YY_tarseq_206_arrow at position 9,887,968 bp (95% confidence intervals 9,349,978–9,888,009 bp) and had a LOD score of 32.8 (p<0.001). The significant marker explains around 75% of the phenotypic variation and, with one exception, yellow individuals all had a homozygous yy genotype at this marker.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-v2.jpg)
+
+**Figure 2.:** (A) Quantitative trait locus (QTL) analysis of white and yellow F1 males (n = 172) reveals a 500 kb region significant on scaffold 206 of the yellow reference, part of linkage group 9. The dotted line indicates the significance threshold determined by permutation tests (p=0.05). (B) A genome-wide association study (GWAS) of wild samples (n = 46) showed SNPs associated with hindwing colour along the same scaffold. The dotted line shows the Bonferroni corrected significance threshold. (C) Alignment of the white and yellow reference genomes reveals an insertion in the white reference sequence that contains a copy of the yellow-e gene which we named valkea, in addition to the yellow-e present in both white and yellow morphs. (D) Mean read depth across the candidate region in all Finnish white (WW and Wy) and yellow (yy) samples.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** MQ is lower within the duplicated region (between the dotted lines): average MQ for the duplication including all samples is 36.52, whereas for the rest of the scaffold, not including the duplication, it is 44.16.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Top: Yellow alleles have the larger 163 bp band, while white alleles have a 35 bp deletion producing the smaller ~128 bp band. Heterozygotes have a copy of each. Bottom: A 449 bp region within the duplication amplifies only in samples with one or two white alleles.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Yellow-e sequences from D. melanogaster and H. melpomene are also included. Values are substitutions per site.
 
 To further narrow down this region, we ran a genome-wide association study (GWAS) using whole-genome sequences of males from four populations: polymorphic Southern Finland (5 white, 5 yellow) and Central Finland (10 white, 10 yellow), Estonia (4 white), where males are mostly white, and monomorphic Scotland (12 yellow), where all males are yellow. This identified a region of associated SNPs also on scaffold 206 (Figure 2B). Two SNPs, 137 bp apart (at positions 9,885,384 and 9,885,521), were significant above a strict Bonferroni corrected threshold. A total of 162 SNPs were over the threshold of p<0.0001 and, of these, 155 are within a 99 kb region on scaffold 206 (9,833,387–9,932,264 bp). The top SNPs are within 2.5 kb from the top QTL marker, and the SNP at this marker has a p-value<0.0001.
 
 The 538 Kb QTL interval contains 21 genes (Supplementary file 1A) which were annotated with reference to Drosophila melanogaster. Of these genes, four are part of the yellow gene family. The top two SNPs from the GWAS, and the top marker from the QTL, fall in a non-coding region upstream of the gene, yellow-e, and are also close to an additional yellow gene, yellow-g.
 
-## Identifying structural variation in this region
+### Identifying structural variation in this region
 
 The trio binning method used by Yen et al., 2020 to assemble the A. plantaginis reference genome produced two reference sequences, one for a white allele and one for a yellow allele. We extracted the region containing the QTL interval from the yellow reference and aligned it against the white reference. The alignment showed a duplicated region approximately 117 kb long on scaffold 419 of the white reference from around 6,941,000–7,058,000 bp (Figure 2—figure supplement 1). The yellow-e gene and its flanking regions are within this sequence and are therefore duplicated in the white reference (Figure 2C). One copy of the gene (named jg1310 in the W annotation) has seven exons and is similar to the yellow-e gene in the yellow reference (99.7% identity in coding sequences). The second copy unique to the white scaffold (jg1308) has only the first five exons (81.8% identical to the gene in the yellow reference), possibly due to a stop codon mutation in the fifth exon. For clarity, we named this duplicated white-specific copy valkea, in reference to a Finnish word for ‘white’. While all white samples had consistent coverage of reads across the duplicated region, coverage was patchy in yellow samples, with many regions having no and very low coverage in yellow samples (Figure 2D). Those reads that map in the valkea region in yellow samples are likely to be mapping errors, because the sequence similarity is high and mapping quality is reduced within the duplication (Figure 2—figure supplement 2). When increasing the mapping quality filtering, read depth decreases more in yellow samples compared to white samples in this region (Figure 2—figure supplement 3). We confirmed the absence of this region in yellow individuals by designing primers within the duplication (Supplementary file 1B, Figure 2—figure supplement 4), which only amplified in WW and Wy samples, including Finnish, Estonian, and lab populations.
 
 To confirm that both of these gene copies are related to yellow-e, we compared them to yellow-e orthologues found in Bombyx mori, Heliconius melpomene, and D. melanogaster, along with other yellow genes from A. plantaginis and B. mori. Both of the tiger moth genes were most closely related to the H. melpomene yellow-e (Figure 2—figure supplement 5). Between valkea and yellow-e, there is an additional gene which showed highest similarity to Drosophila yellow-g2 (when extracted from both the white and yellow references). This gene is not part of the duplicated sequence and is present as a single copy in both morphs. Coverage across yellow-g and yellow-e genome regions in wild samples is similar in both morphs (Figure 2D). Upstream of the duplication is an unnamed gene (listed as jg6744 in the yellow annotation and jg1307 in the white). This is the same orthologous gene in both reference genomes, having 99.3% identity. Similarly, if we look at the 150 kb upstream region, sequence identity is 99.98%. There are no non-synonymous mutations between coding sequences of yellow-e when comparing the white and yellow references, although there are differences in the first exon of yellow-g. The absence of this duplicated region in the yellow morphs means we cannot determine if there is a change in linkage disequilibrium across white and yellow morphs.
 
-## Valkea is differentially expressed between morphs
+### Valkea is differentially expressed between morphs
 
 To pinpoint which of these candidate genes is associated with male wing polymorphism in A. plantaginis, we next performed gene expression analyses across several developmental stages. Based on knowledge of the expression patterns of yellow genes (Ferguson et al., 2011) and other melanin pathway genes such as pale, ebony and ddc in Lepidoptera (Zhang et al., 2017b), we hypothesised that changes in gene regulation that control the development of wing colour morphs in the tiger moth most likely occur during pupal development. Pupal development in the wood tiger moth lasts for approximately 8 days, and no colour is present in the wings until day 7, when the yellow pigment appears. A few hours later, black melanin pigmentation is deposited. We sampled two stages early in development when no colouration is present in the wings (72 hr post-pupation, and 5-day-old pupae), and two stages later in development: the point when yellow appears in yy morphs (Pre-mel, 7-day-old pupae) and the other after black melanin has also been deposited (Mel, 7–8-day-old). Forty individuals were sampled in total – five per genotype and stage.
 
@@ -65,23 +85,67 @@ First, we explored the general patterns of expression by mapping RNAseq reads to
 
 We next compared gene expression between yy and WW individuals at each of the developmental stages. Overall, 99 genes were differentially expressed (FDR < 0.05) between the two morphs (Figure 3A). Two of these DE genes, yellow-e and valkea, are two of the 22 genes identified in the GWAS and QTL analysis. Valkea was overexpressed in white individuals in the pre-melanin stage with a log fold change of 10.32 and a p-value of 2.18e-06. As valkea is only fully present in the W genome, it is not expected to be expressed at all in the Y genome. Yellow-e was also overexpressed in white individuals during the pre-melanin stage with a log fold change of 3.86 and adjusted p-value of 5.62e-06. In other developmental stages, neither valkea nor yellow-e showed differences in expression between morphs (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig3-v2.jpg)
+
+**Figure 3.:** (A) In pink are genes that are significantly differentially expressed between yellow and white morphs at the pre-melanin stage. Valkea is the most differentially expressed (DE) gene (i.e. gene with the highest log fold change). (B) Expression of valkea across developmental timepoints shows that it has higher expression measured in Log2 CPM (counts per million) in white individuals compared to yellow ones. Expression of valkea in yellow morphs is around 0.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Multidimensional scaling of gene expression shows that samples cluster by developmental stage rather than male colour morph. Developmental stage names have been abbreviated: 72h = 72 hours, 5d = 5 days, Premel = pre-melanin, and Mel = melanin.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig3-figsupp2-v2.jpg)
+
 Of the 99 genes differentially expressed between white and yellow individuals across development, 49 were upregulated in the yy morph, while the remaining 50 were upregulated in WW individuals. The earliest developmental stage, 72 hr, was the stage with the highest number of DE genes (n = 48), while the 5-day-old stage had the fewest (n = 7). One gene which encodes a C2H2 zinc finger transcription factor in D. melanogaster, ‘jg15945’, was over-expressed in yy in the first three stages (Figure 3—figure supplement 2).
 
 Finally, the GWAS and QTL peaks of association are situated in scaffold 419 of the WW reference assembly, which in a WW linkage map forms a linkage group along with six more scaffolds (472, 487, 515, 531, 540, and 609). We found that 12 genes present in this linkage group were differentially expressed, including valkea and yellow-e (Supplementary file 1C), and identified their orthologues in D. melanogaster.
 
-## CRISPR/Cas9 knockouts of valkea produce yellow hindwings
+### CRISPR/Cas9 knockouts of valkea produce yellow hindwings
 
 To confirm the function of valkea in wing colouration, we used CRISPR/Cas9 to knock out the gene in white morphs. We tested five different guides to target the first three exons of valkea, and injected Cas9/sgRNA duplexes into a total of 1223 eggs. Of 143 larvae that hatched, only six developed to adults (Supplementary file 1D). However, of the five males that did eclose, four had a visible change in phenotype. Males produced yellow scales instead of white on the dorsal side of both the forewings and the hindwings (Figure 4). Forewings were more yellow than in the wildtype yellow males, which usually have lighter forewings compared to hindwings. White scales on the ventral side of the wings also became yellow, similar to wildtype yellows. Black melanin patterning did not seem to be affected. Variation in the amount of melanin can be attributed to the populations from which the individuals originated, with the darker samples coming from the Finnish population (Figure 4—figure supplement 1). Wildtype white morphs also reflect UV, particularly on the hindwings, but this is not seen in the CRISPR males (Figure 4—figure supplement 2). This could suggest a change in scale structure, or that the yellow pigment covers the UV-reflecting structures. To quantify changes in visible and UV colour, we took spectral measurements of the mutant males and compared them to wildtype males (Figure 4—figure supplement 4). The reflectance spectra for the hindwings of the CRISPR males most closely resembled that of wildtype yellow males, in both visible and UV wavelengths.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig4-v2.jpg)
+
+**Figure 4.:** Wildtype WW and yy morphs (top), and the dorsal and ventral sides of one of the CRISPR knockout males (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Variation in melanin amount is likely due to the lineage, with (A) coming from the Estonian line, and (B–D) coming from the Finnish line. (E) Female showing a mosaic knockout phenotype with left forewing showing similar colour to the male mutants. (F) Wildtype female with the pale-yellow colour on both forewings. Hindwing colour in females varies continuously from yellow/orange to red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The brighter pink colour in the UV photos (right) shows the areas with highest UV reflectance. UV reflectance is lost in the CRISPR knockout males.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The top row of each block shows the reference sequence, and the rows underneath are the mutant individuals. Pink sequences denote the guide RNA sequence. Four different guides produced mutants (one in each of exons 1 and 2, and two in the third exon). Red arrows show insertions. (A) Three out of five samples show small deletions in valkea close to the target sites, and another showed a deletion in some reads. One sample had an insertion. (B) In the corresponding sites in yellow-e, two samples showed evidence of deletions and three had insertions. 064-4 is ID of the female mutant.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The coloured section of the wings were measured on male forewings (A), male hindwings (B), female forewings (C), and female hindwings (D). (E) shows measurements for each wing of the one CRISPR female mutant.
 
 Four out of the five guides tested produced a mutant phenotype, with no differences in the male phenotype between guides. We used whole-genome sequences of the mutants to confirm that the correct sites in valkea had been targeted (Figure 4—figure supplement 3). All samples also showed evidence of editing at the corresponding yellow-e exons, which mainly involved insertions. As all genotypes have similar forewing colour in the wildtypes, we do not expect valkea to affect the forewing and thus the change in forewing colour could be attributed to a yellow-e mutation. Only one female survived to adulthood, and this had a mosaic phenotype. Female colour does not correlate with the male colour genotypes, and the forewings of females are a pale-yellow colour. This individual with a mosaic phenotype had one mutant forewing which was much more yellow/orange than the wildtype. The rest of the wings and body resembled a wildtype female (Figure 4—figure supplement 1/Figure 4—figure supplement 4). Reflectance spectra show that the mutant left forewing is closer in colour to the yellow/orange on the hindwings, than to the colour of the opposite forewing (Figure 4—figure supplement 4). Since a valkea knockout is not expected to affect female phenotypes as they always have orange/red hindwings, this could be further evidence for the effect of yellow-e on forewing colour. We also checked for potential off-target effects of the CRISPR on other yellow genes. There was no evidence of editing (insertions, deletions or mutations) in the yellow genes c, d2, f, f2, g2, h, and yellow itself.
 
 Survival of the eggs varied between the guides, although this was largely affected by the female, as hatching rate between females ranged from 0 to 70%. Females often lay unfertilised eggs, so we expect that hatching rate will be low in some crosses. Using two guides in combination did not produce any pupae or adults.
 
-## Pigment analysis
+### Pigment analysis
 
 Since the yellow gene family, to which valkea is related, is known to be responsible for the production of melanin pigments, we further investigated the identity of the wing pigmentation. First, we ruled out the presence of several non-melanin pigment types in the hindwings, including pterins and carotenoids. Pterins are commonly found in insects and, along with purine derivatives, papiliochromes and flavonoids, are soluble in strong acids and bases or in organic solvents (Umebachi, 1975; Kayser, 1985; Shamim et al., 2014). We placed wing samples from each morph in NaOH overnight, then measured the absorbance of the supernatant using a spectrophotometer. We also left wings in methanol overnight before measuring the supernatant. The spectra did not show any peaks indicative of any pigment dissolved in the sample. Similarly, we found no evidence for carotenoid pigments after dissolving in a hexane:tert-butyl methyl ether solution (Figure 5—figure supplement 1). Wings did not fluoresce under UV light, providing further evidence for the lack of fluorescent pigments including pterins, flavonoids, flavins, and papiliochromes (Umebachi, 1975; Kayser, 1985). Ommochromes are red and yellow pigments; high-performance liquid chromatography (HPLC) ruled out the presence of these pigments on the moth wings, which we compared to data from ommochrome-containing Heliconius wings and a xanthurenic acid standard (Figure 5—figure supplement 2).
 
 HPLC analysis showed peaks characteristic of pheomelanin (Figure 5). Pheomelanins produce red-brown colour in grasshoppers and wasps (Galván et al., 2015; Jorge García et al., 2016), and orange-red colours in ants and bumblebees (Hines et al., 2017; Polidori et al., 2017). Insects generally have dopamine-derived pheomelanin and a breakdown product of this is 4-amino-3-hydroxyphenylethylamine (4-AHPEA) (Barek et al., 2018). Yellow wings showed large peaks for 4-AHPEA. White wings had around 27% of the 4-AHPEA levels seen in yellow wings, and black sections of the wings had 16%. Hydrogen iodide hydrolysis of wings produced the isomer 3-AHPEA, which may come from 3-nitrotyramine originating from the decarboxylation of 3-nitrotyrosine. Reduction of 3-nitrotyrosine produces 3-AHP, another marker of pheomelanin (Wakamatsu et al., 2002).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig5-v2.jpg)
+
+**Figure 5.:** Measurements for yellow, white, and black portions of the hindwing, plus the standard (Std) are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** White (A) and yellow (B) A. plantaginis morphs are compared to ommochrome-containing Heliconius wings (C) and a Xanthurenic acid standard (D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80116/elife-80116-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** The black portions of the wings show the presence of dopamine-derived eumelanin components pyrrole-2,3-dicarboxylic acid (PDCA) and pyrrole-2,3,5-tricarboxylic acid (PTCA). Phthalic acid is the internal standard (Istd). Below are results of eumelanin-containing samples for comparison – sepia, synthetic material, and human hair.
 
 Analysis of the black portions of the wing found pyrrole-2,3-dicarboxylic acid (PDCA) and pyrrole-2,3,5-tricarboxylic acid (PTCA) (Figure 5—figure supplement 3). Both are components of eumelanin (Barek et al., 2018), suggesting that the black colouration seen in the wood tiger moth is predominantly eumelanin derived from dopamine. This is common in producing black colouration and providing structural components of the exoskeleton. In addition, dopamine is acylated to both N-β-alanyldopamine (NBAD) and N-acetyldopamine (NADA) sclerotins. NADA sclerotins are colourless and likely to be present on the white wings. This analysis of pigmentation is therefore consistent with a role for yellow family genes in regulating the colour polymorphism.
 
@@ -109,21 +173,21 @@ In summary, we identified a structural variant which is only present in white mo
 
 ## Methods
 
-## Sampling
+### Sampling
 
 Homozygous lines of white (WW) and yellow (yy) A. plantaginis moths were created from Finnish populations at the University of Jyväskylä, Finland. Larvae were fed with wild dandelion (Taraxacum sp.) and reared under natural light conditions, with an average day temperature of 25°C and night temperature between 15 and 20°C. For the crosses, a heterozygous male, created from crossing a heterozygous male with a homozygous yy female, was backcrossed with a yy female. This was repeated to obtain four families totalling 172 offspring and 8 parents (Supplementary file 1E). Samples from wild populations were caught in Southern Finland (n = 10) and Central Finland (n = 20), where male morphs are either white or yellow, Estonia (n = 4), where males are mostly white, and Scotland (n = 4), where males are yellow (Supplementary file 1F). In addition, we included eight samples which are F1 offspring of wild Scottish samples. Forty pupae with known genotypes from lab populations (20 WW and 20 yy) were used for the RNA extractions.
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 For the lab crosses, DNA was extracted from two legs crushed with sterilised PVC pestles using a QIAGEN DNeasy Blood & Tissue kit, following the manufacturer’s instructions. Library preparation and GBS sequencing were performed by BGI Genomics on an Illumina HiSeq X Ten. For the wild samples, DNA was extracted from the thoraces also with a QIAGEN kit. Library preparation and sequencing were performed by Novogene (Hong Kong, China). 150 bp paired-end reads were sequenced on an Illumina NovaSeq 6000 platform.
 
-## Linkage mapping analysis
+### Linkage mapping analysis
 
 FASTQ reads were mapped using bowtie v2.3.2 (Langmead and Salzberg, 2012) to the yellow A. plantaginis scaffold-level genome assembly (Yen et al., 2020). BAM files were sorted and indexed using SAMtools v.1.9 (Li et al., 2009) and duplicates removed using PicardTools MarkDuplicates (RRID:SCR_006525). Twelve samples which had aligned <30% were removed. Reads of the remaining samples had an average alignment of 94%. SNPs were called using SAMtools mpileup with minimum mapping quality set to 20 and bcftools call function. Lep-MAP3 (Rastas, 2017) was used for linkage map construction and we ran the following modules: ParentCall2 which called 105,622 markers, Filtering2, SeparateChromosomes2 with lodLimit = 5 and sizeLimit = 100, JoinSingles2All and OrderMarkers2 with recombination2 = 0 to denote the lack of female recombination. Genotypes were phased using the map2genotypes.awk script included with Lep-MAP3. Markers were named based on the genomic positions of the SNPs in the reference genome and the map.awk script, and this was used to further order the markers within the linkage groups. This resolved 30 linkage groups. Although we expect that there are 31 chromosomes in the moth genome, we suspect that the sex chromosome is missing in this assembly as the yy individual used in the genome assembly was female (Yen et al., 2020). A small number of markers which caused long gaps at the beginning or end of linkage groups were manually removed, leaving the final map 948.7 cM long with 19,803 markers. Markers were well distributed so we began the first analyses with this map. A linkage map was also assembled using sequences aligned to the white reference and this separated into 31 linkage groups.
 
 The QTL analysis was carried out in R/qtl (Broman et al., 2003). Genotype probabilities were calculated before running a genome scan using the scanone function with the Haley–Knott method and binary model parameters, and including family as an additive covariate. The phenotype was labelled as either 0 (Wy) or 1 (yy). We ran 5000 permutations to determine the significance level for the QTL LOD scores. The bayesint function calculated the 95% Bayesian confidence intervals around the significant marker.
 
-## Analysis of whole-genome sequences
+### Analysis of whole-genome sequences
 
 FASTQ reads were mapped to the yellow A. plantaginis genome assembly (Yen et al., 2020) using BWA-MEM v7.17 (Li, 2013). As before, BAM files were sorted and indexed, and duplicates were removed. Genotyping and variant calling was carried out with the Genome Analysis Toolkit (GATK) (McKenna et al., 2010). Variants were called using HaplotypeCaller (v.3.7) in GVCF mode, then gVCFs combined with GenomicsDBImport (v.4.0). Joint genotyping was run with GenotypeGVCFs, set with a heterozygosity of 0.01, and SNPs were called using SelectVariants. Finally, the set of 20,787,772 raw SNPs were filtered using VariantFiltration and thresholds: quality by depth (QD > 2.0), root mean square mapping quality (MQ > 50.0), mapping quality rank sum test (MQRankSum > −12.5), read position rank sum test (ReadPosRankSum > −8.0), Fisher strand bias (FS < 60.0), and strand odds ratio (SOR < 3.0). A set of 5,227,288 SNPs passed the filtering.
 
@@ -133,13 +197,13 @@ In Yen et al., 2020, many of these samples were processed in the same way but al
 
 For analysis of structural variants, sequences from the white and yellow genome assemblies were aligned using MAFFT v7.450 (Katoh and Standley, 2013) and viewed with Geneious. Our focal sequence, scaffold 419 in the white genome, is the reverse complement of scaffold 206 in the yellow genome. Figure 2C was plotted with pafr (Winter et al., 2020).
 
-## Identification of candidate genes and tree construction
+### Identification of candidate genes and tree construction
 
 To identify candidate genes in the QTL interval and GWAS region, we ran a protein BLASTP v.2.4.0 search to identify H. melpomene (Hmel2.5) proteins homologous to predicted A. plantaginis proteins in the region from the genome annotation. Informative gene names were obtained by performing a BLASTP search with the H. melpomene proteins against all D. melanogaster proteins in FlyBase v.FB2020_01 (flybase.org/blast).
 
 For the yellow gene tree, we used Lepbase (Challi et al., 2016) to search for yellow genes in B. mori (ASM15162v1). We identified yellow-e in H. melpomene by searching for major royal jelly proteins, then comparing protein sequences of these against Drosophila proteins in FlyBase. The sequence for Dmel yellow-e was downloaded from FlyBase. To make the tree, coding sequences of all genes were aligned in Geneious using MAFFT v7.450 (Katoh and Standley, 2013), then the tree was constructed with PhyML using 10 bootstraps (Guindon et al., 2010).
 
-## Differential gene expression
+### Differential gene expression
 
 We dissected the wings out of the pupae in Cambridge, UK. Pupae and larvae were sent to Cambridge from Jyväskylä and were kept between 22 and 30°C. Pupae were sexed and only males were used. Dissections were made at four different stages: 72 hr after pupation (72 hr), 5 d after pupation (5 d; counting 0–24 first hours after pupation as day 1), pre-melanin deposition (Pre-mel), and post-melanin deposition (Mel). We sampled five individuals per stage and genotype. Hindwings and forewings were stored separately in RNA-later (Sigma-Aldrich) at 4°C for 2 wk and later transferred to –20°C, while the rest of the body was stored in pure ethanol. Only hindwings were used for RNAseq analysis.
 
@@ -149,31 +213,31 @@ We performed quality control and low-quality base and adapter trimming of the se
 
 To identify the gene or genes controlling the development of wing colour in A. plantaginis, we performed a genome-wide differential expression analysis using limma-voom (Ritchie et al., 2015). First, we defined a categorical variable, ‘GenStage’, with eight levels containing the genotype and stage information of every individual sample (e.g. YY72h, WW72h, YY5days, etc.). Then, we built the design matrix fitting a model with GenStage as the only fixed effect factor contributing to the variance in gene expression and included family as a random effect factor (gene expression ~ 0 + GenStage + (1|Family)). We then filtered lowly expressed genes using the filterByExpr function in limma, which resulted in a reduction of the number of tested genes from 17,615–11,330 genes in the Y-mapped analysis and 17,930–10,920 in the W-mapped one. Then, we normalised the expression of the genes using the calcNormFactors function with TMM normalisation in limma and fit the design matrix using the voom function. We built a contrast matrix including the comparisons of interest, in which we compared the expression of the genotypes in each stage (i.e. h72 = WW72h-YY72h, d5 = WWd5-YYd5, Premel = WWPremel-YYPremel, Mel = WWMel-YYMel), and fit the contrast matrix to the data using the contrasts.fit function. Finally, we used the eBayer function on the fit dataset and we extracted the list of genes that are differentially expressed in each stage using the Benjamini–Hochberg procedure to correct for multiple testing. We evaluated the genome-wide gene expression using MDS using the plotMDS function of the limma package.
 
-## Orthology assignment
+### Orthology assignment
 
 To infer genome-wide orthology between A. plantaginis and D. melanogaster, we used OrthoFinder (v2.5.4) (Emms and Kelly, 2019). We used proteomes from six Lepidoptera species, Plutela xylostella (GCA_905116875_2), B. mori (GCF_014905235_1), Spodoptera frugiperda (GCF_011064685_1), Parnassius apollo (GCA_907164705_1), Pieris macdunnoughi (GCA_905332375_1), Pararge aegeria (GCF_905163445_1), and D. melanogaster (GCF_000001215_4). We ran the primary_transcript.py utility from OrthoFinder to extract only one transcript per protein, and then ran OrthoFinder with default settings.
 
-## CRISPR/Cas9 genome editing
+### CRISPR/Cas9 genome editing
 
 Guide RNAs were designed within the first three exons of valkea in the white genome annotation using Geneious (v. 2022.1.1). Guides were chosen with minimal off-target effects, high activity scores, and high specificity scores based on the Geneious algorithm (Supplementary file 1G). Guides in the first two exons of valkea showed off-target sites in yellow-e; however, those in exon 3 showed no off-target sites. Guide RNAs were synthesised by Sigma-Aldrich. Moths from the greenhouse populations, originating from Finnish and Estonian populations, at the University of Helsinki, Finland, were genotyped using DNA extracted from leg tissue using the Chemagic DNA tissue kit (Chemagen) and the primers detailed below. They were paired and left to mate overnight. Females were watched over the next 3–4 d for egg laying, and the eggs were removed and injected less than 6 hours after laying. Eggs were glued to microscope slides and injected with a 1:1 sgRNA/Cas9 mix with phenol red dye using pulled borosilicate glass capillaries. The injection mix contained 1 ug/ul Cas9, 500 ng/ul sgRNA, and 0.5% phenol red. Guides and Cas9 were diluted using low concentration TE buffer. Different combinations of guides were also injected in some samples, in which case these were mixed in a 1:1 ratio. Injections were performed using a MPPI-3 pressure injector with back pressure unit (ASI). In total, we injected 1223 eggs from 18 [WW × WW] or [WW × Wy] crosses. Larvae were kept individually in Petri dishes and fed daily with dandelion leaves. After eclosion, legs were taken from adults for DNA extraction. Library preparation and whole-genome sequencing (using Illumina NovaSeq 6000) of five CRISPR mutants were performed by CeGaT (Tübingen, Germany). We used these whole-genome sequences to confirm the editing of the valkea gene in the mutants. Sequences were aligned to the white reference genome using BWA-MEM as detailed earlier. We visualised the valkea gene sequences using Geneious and looked for insertions and deletions within and around the locations of the guides. This was repeated for the other yellow family genes (b, c, d2, e, f, f2, g2, h, and yellow).
 
-## Genotyping white and yellow alleles
+### Genotyping white and yellow alleles
 
 We used Primer3 to design primers within the duplicated region. Primers were expected to only amplify in WW and Wy individuals. The alignment of the white and yellow sequences was then used to design primers for genotyping the locus (Supplementary file 1B). We looked for short insertions or deletions that were fixed between the WW and yy within the valkea/yellow-e region, and put primers around these structural variants. Primers were tested on DNA extractions from moths of known genotypes, including both sexes, wild and lab samples. We used Sanger sequencing of the PCR product to confirm the correct sequences were amplified. A set of primers successfully amplified a 449 bp region downstream of valkea within the duplication. This amplified in WW and Wy samples, but not in yy (Figure 2—figure supplement 4—source data 1). We found that white alleles have a 35 bp deletion within an intron of the yellow-e gene. We amplified a 163 bp region around this (YY_tarseq_206_arrow:9,846,212–9,846,375) using a standard PCR protocol which allowed us to identify the allele based on the size of the PCR product. Yellow alleles produce the full 163 bp sequence, while white alleles produce a smaller 128 bp product (Figure 2—figure supplement 4). Heterozygotes have a copy of each and show both bands on a gel.
 
-## Photography and spectrophotometry
+### Photography and spectrophotometry
 
 Photographs of CRISPR mutant and wildtype moths were taken under standard lighting conditions with a Samsung NX1000 digital camera converted to full-spectrum with no quartz filter to enable ultraviolet (UV) sensitivity fitted with a Nikon 80 mm lens. A UV and infrared blocking filter was used for the human-visible photos, which transmits wavelengths between 400and 680 nm (Baader UV/IR Cut Filter). For the UV images, a UV pass filter was used (Baader U filter), which transmits wavelengths between 320 and 380 nm. Images were standardised using grey-scale reflectance standards (Avian Technologies, Micro FSS08).
 
 Reflectance spectra of coloured regions of the forewings and hindwings of 22 lab stock (including WW, Wy, and yy genotypes) and five CRISPR mutant moths were recorded with a UV-VIS spectrometer (Ocean Insight HR4PRO) connected to a xenon light source (Ocean Insight PX-2). Measurements were normalised using a diffuse white standard (Spectralon 99%). We used the OceanView software (v.2.0.8) to record scans with a boxcar width of 5 and integration time of 5000 ms. Measurements were repeated three times and the mean used. Reflectance spectra were plotted and analysed using the R package pavo (Maia et al., 2013).
 
-## Pigment analysis
+### Pigment analysis
 
-## Solubility and fluorescence tests
+#### Solubility and fluorescence tests
 
 Five hindwings from each morph were placed in two separate solvents (0.1 M NaOH and 90% MeOH) and left overnight. The supernatant was analysed with an Agilent Cary 8454 UV-Visible spectrophotometer and the spectra compared to known spectra for various pigments. A UV lamp (Philips TL8W/08F8T5/BLB) was used to test for fluorescence on the wings. The presence of carotenoids was tested by placing wings into 1 ml of pyridine and leaving at 95°C for 4 hr (McGraw et al., 2002). To these we added 1 ml of 1:1 hexane:tert-butyl methyl ether and 2 ml of water before shaking and leaving overnight. Again, the supernatant was measured with the spectrometer.
 
-## HPLC test for eumelanin and ommochrome pigments
+#### HPLC test for eumelanin and ommochrome pigments
 
 To determine the type of melanin producing the black colour on the wings, we cut out approximately 5 mg of the black sections of the wings, from both females and males. Eumelanin analysis was carried out according to Borges et al., 2001. Each sample was added to a tube containing 820 μl 0.5 M NaOH, 80 μl 3% H2O2 and an internal standard (48 nmol phthalic acid) and heated in a boiling water bath for 20 min. Once cool, 20 μl of 10% Na2SO3 and 250 μl of 6 M HCl were added. Samples were then extracted twice with 7 ml of ethyl acetate. Ethyl acetate was dried at 45°C under a stream of nitrogen. The residue was dissolved into 0.5 ml of 0.1% formic acid.
 
@@ -181,7 +245,7 @@ We carried out HPLC on an Agilent 1100 HPLC. 20 μl of the sample was injected i
 
 HPLC was also applied to observe the possible presence of ommochrome pigments. Injection volume was 10 µl and for the separation we used the same Waters Atlantis T3 column (100 × 3.0 mm i.d.) set to 30°C. Solvent A was UHQ-water and B was acetonitrile (ACN), both containing 0.1% formic acid. Flow rate was 0.4 ml/min and the used gradient was as follows: initial flow ratio was 98/2 water/ACN (v/v) ramping then evenly from time 1–15 min to 30:70 water:ACN (v/v), held for 1.5 min and then ramped evenly back to initial eluent composition over 0.5 min. The column was stabilised for 7 min before a new run.
 
-## Pheomelanin analysis
+#### Pheomelanin analysis
 
 Samples were analysed for pheomelanin content according to the method of Kolb et al., 1997 with modiﬁcations. A 2 mg sample was placed in a screw-capped tube with 100 μl water, 500 μl ~55–58% hydrogen iodide (HI), and 20 μl 50% hypophosphorous acid (H3PO2). Samples were capped tightly and hydrolysed for 20 hr at 130°. After cooling, samples were evaporated under nitrogen flow, then dissolved in 1 ml of 0.1 M HCl and purified with solid-phase extraction. Strata SCX cartridges were preconditioned with 2 ml of methanol, 3 ml of water, and 1 ml of 0.1 M HCl. Sample was then applied to the cartridge, washed with 1 ml of 0.1 M HCl, and finally eluted with 1 ml of methanol (MeOH): 0.5 M ammonium acetate (NH4CH3CO2) (20:80 v/v).
 

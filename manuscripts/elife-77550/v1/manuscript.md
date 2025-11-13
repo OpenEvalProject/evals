@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04gh4er46 Institute of Brain Cognition and Brain Disease, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences Shenzhen China
+1. Institute of Brain Cognition and Brain Disease, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences Shenzhen China ([ROR:04gh4er46](https://ror.org/04gh4er46))
 
 † Corresponding author
 

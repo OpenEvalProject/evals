@@ -47,17 +47,51 @@ Using this in vitro reconstitution approach, we describe key mechanistic require
 
 ## Results
 
-## Assay validation
+### Assay validation
 
 We purified long and short forms of human Opa1 expressed in Pichia pastoris. Briefly, Opa1 was extracted from membranes using n-dodecyl-β-D-maltopyranoside (DDM) and purified by Ni-NTA and Strep-tactin affinity chromatography, and size exclusion chromatography (Figure 2A). A series of short isoforms are observed in vivo (MacVicar and Langer, 2016; Del Dotto et al., 2018). In this study, we focused on a short form corresponding to the S1 isoform resulting from Oma1 cleavage (Figure 2B). GTPase activity of purified Opa1 was confirmed by monitoring free phosphate release (Figure 2C and D). Opa1 activity was enhanced by the presence of cardiolipin, consistent with previous reports (Figure 2C and D, Figure 2—figure supplement 1) (Ban et al., 2010).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative size-exclusion chromatograph and SDS-PAGE gel of human l-Opa1 purified from P. pastoris. (B) SDS-PAGE gel of human s-Opa1 purified from P. pastoris. l-Opa1 activity, with velocity (C) and specific activity (D) of GTP hydrolysis in the presence and absence of cardiolipin, while varying protein concentration of Opa1. Data are shown as mean ± SD, with error bars from three independent experiments. Representative single-liposome photobleaching steps (E and F) and histogram of step sizes (distribution for 110 liposomes shown) (G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** GTP hydrolysis (GTPase) activity of l-Opa1 (A) and s-Opa1 (B) in the presence and absence of cardiolipin. Both G300E l-Opa1 and G300E s-Opa1 do not show any GTPase activity (C and D). Mixing G300E s-Opa1 with WT l-Opa1 at 1:1 molar ratio (E) does not alter the GTPase activity of, detergent solubilized, WT l-Opa1 significantly (E and A, p>0.2, t-test). A similar effect is seen upon addition of G300E l-Opa1 to WT s-Opa1 at 1:1 ratio (F). Under these conditions, s-Opa1 GTPase activity is similar to s-Opa1 alone (F and B, p>0.2, t-test). Data shown as mean ± SD, error bars from three experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Liposome co-flotation analysis: Reconstituted l-Opa1 co-floats with liposomes both with and without cardiolipin (A and D). Liposomes were labeled with 0.2% (mol) TexasRed-DHPE, and their distribution was confirmed by liposome dye absorbance at 590 nm. Opa1 distribution was analyzed by western blot. Opa1/liposome fractions was mostly found near 15 ~ 30% sucrose. This reconstitution is stable under high salt (B and E) or carbonate conditions (C and F). s-Opa1 interacts with liposomes in a cardiolipin-dependent manner (G-L). This interaction is resistant to high salt (H) but sensitive to carbonate treatment (I), where the protein was found in the bottom fractions lacking liposome (60% sucrose). s-Opa1 does not associate with DOPC liposomes (J-L). These results indicate that l-Opa1 was successfully reconstituted through integral transmembrane region, whereas the s-Opa1 bilayer-association is through a cardiolipin:s-Opa1 peripheral membrane interaction.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Epifluorescence image of polymer-tethered lipid bilayers before (A) and after Opa1 reconstitution (B), showing a homogeneous lipid bilayer. Scale bar: 10 µm. FCS profiles of TexasRed-PE and TexasRed labeled anti-Opa1 antibody show slower diffusion for reconstituted l-Opa1 (C), indicating successful reconstitution, and that the reconstituted l-Opa1 diffuses freely.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Blue native (BN-PAGE) gels show WT l-Opa1 and s-Opa1 can self-assemble as oligomers in DDM. (B) Mixtures of WT l-Opa1 and WT s-Opa1 show a range of species from ~480 KDa - ~ 1 MDa. G300E l-Opa1, in the presence of WT s-Opa1, does not alter this gel migration pattern. In contrast, complexes comprising WT l-Opa1 and G300E s-Opa1 show a slight shift to a population mainly containing a ~ 480 Kda and 720 KDa species.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Fluorescence autocorrelation profiles of TexasRed labeled anti-His antibody in the presence of unlabeled liposomes (A), and TexasRed-PE-labeled liposomes (B), showing diffusion coefficients of unbound antibody versus liposomes. FCS profile of reconstituted l-Opa1 (detected with a TexasRed labeled antibody) (C) is similar to that of dye-labeled liposomes (B), indicating successful reconstitution of Opa1.
 
 We reconstituted l-Opa1 into 200 nm liposomes and supported bilayers generated by Langmuir-Blodgett/Langmuir-Schaefer methods (Naumann et al., 2002). l-Opa1 was added to liposomes and a supported bilayer at an estimated protein:lipid molar ratio of 1:5000 and 1:50000, respectively. Membranes comprised DOPE (20%), Cardiolipin (20%), PI (7%), and DOPC (52.8%). Reporter dyes (e.g. Cy5-PE, TexasRed-PE) were introduced into the supported bilayer and liposome membranes, respectively, at ~0.2% (mol). A surfactant mixture stabilized the protein sample during incorporation. Excess detergent was removed using Bio-Beads and dialysis. We confirmed successful reconstitution by testing the stability of l-Opa1 incorporation under high salt and sodium carbonate conditions, and contrasting these results with s-Opa1 peripheral membrane association (Figure 2—figure supplement 2).
 
 We evaluated reconstitution of l-Opa1 into both the polymer-tethered supported lipid bilayers and proteoliposomes using two approaches. First, using Fluorescence Correlation Spectroscopy (FCS), we measured the diffusion of dye-conjugated lipids and antibody-labeled protein. FCS intensity measurements confirmed ~75% of l-Opa1 reconstituted into the bilayer in the accessible orientation. Bilayer lipid diffusion was measured as 1.46 ± 0.12 µm2/s, while the diffusion coefficient of bilayer-reconstituted l-Opa1 was 0.88 ± 0.10 µm2/s (Figure 2—figure supplement 3), which is in agreement with previous reports of lipid and reconstituted transmembrane protein diffusion (Siegel et al., 2011). These measurements indicate the reconstituted l-Opa1 in the bilayer can freely diffuse, and has the potential to self-associate and oligomerize. Blue native polyacrylamide gel electrophoresis (BN-PAGE) analysis also show the potential for the purified material to self-assemble (Figure 2—figure supplement 4). FCS experiments were also performed on liposomes. FCS intensity measurements confirmed 86.7% of total introduced l-Opa1 successfully reconstituted into the liposomes. The diffusion coefficient of free antibody was 163.87 ± 22.27 µm2/s. The diffusion coefficient for liposomes labeled with a lipid dye was 2.22 ± 0.33 µm2/s, and the diffusion coefficient for l-Opa1 proteoliposomes bound to a TexasRed labeled anti-His antibody was 2.12 ± 0.36 µm2/s (Figure 2—figure supplement 5). Second, we measured the number of l-Opa1 incorporated into liposomes by fluorescent step-bleaching of single proteoliposomes (Figure 2E and F). We found an average step number of 2.7 for individual l-Opa1-containing proteoliposomes labeled with TexasRed conjugated anti-His antibody, when tethered to cardiolipin containing lipid bilayers (Figure 2G).
 
-## Nucleotide-dependent bilayer tethering and docking
+### Nucleotide-dependent bilayer tethering and docking
 
 Using the supported bilayer/liposome assay sketched in Figure 1C, we found that l-Opa1 tethers liposomes in a homotypic fashion (Figure 3A), as reported by the appearance of TexasRed puncta in the TIRF field above a l-Opa1-containing bilayer. This interaction occurred in the absence of nucleotide (apo, nucleotide-free) but was enhanced by GTP. We next investigated requirements for Opa1 tethering. In the absence of cardiolipin, addition of GTP did not change the number of tethered particles under otherwise identical conditions (Figure 3B). In contrast, with cardiolipin-containing liposomes and bilayers, homotypic l-Opa1:l-Opa1 tethering is enhanced by GTP. Non-hydrolyzable analogues (GMPPCP) disrupt tethering (Figure 3C), and a hydrolysis-dead mutant (G300E) l-Opa1 shows little tethering (Figure 3—figure supplement 1B), supporting a role for the hydrolysis transition-state in tethering, as observed for atlastin (Liu et al., 2015; O'Donnell et al., 2017). Bulk light scattering measurements of liposome size distributions (by NTA Nanosight) show l-Opa1-mediated liposome clustering requires the presence of GTP (Figure 3—figure supplement 2). These bulk measurements show a GTP-dependent increase in observed particle size.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative images of liposomes tethered on lipid bilayer (both containing cardiolipin) before (apo, or nucleotide free) and after GTP addition. Scale bar: 5 µm. (B) Bar graph: In the presence of cardiolipin, addition of GTP doubles the number of liposomes. (***p<0.001, two way ANOVA). (C) Addition of GMPPCP decreases amount of tethered l-Opa1 liposomes (apo, indicating nucleotide free) (p<0.005, two-way ANOVA). (D) l-Opa1 in the liposome bilayer alone is sufficient to tether liposomes to a cardiolipin containing bilayer. Tethering is enhanced in the presence of GTP (apo, indicating nucleotide free) (p<0.005, two-way ANOVA). (E) s-Opa1 tethers liposomes to a cardiolipin-containing bilayer. Number of tethered liposomes when both bilayer and liposomes contain 20% (mol) cardiolipin. Before addition of GTP (apo, indicating nucleotide-free), a moderate amount of liposome tethering was observed. The addition of GTP enhances this tethering effect (p<0.005, two-way ANOVA). Data are shown as mean ± SD. Error bars are from five independent experiments (>10 images across one bilayer per for each experiment).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Addition of G300E s-Opa1 detaches the l-Opa1 proteoliposomes tethered to l-Opa1-containing supported lipid (A). G300E l-Opa1 does not tether liposomes to a supported bilayer (B). G300E l-Opa1 in the presence of G300E s-Opa1 also does not tether membranes. Addition of WT s-Opa1 to G300E l-Opa1 proteoliposomes and a l-Opa1-containing supported lipid tethers liposomes (A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig3-figsupp2-v2.jpg)
 
 Ban, Ishihara and colleagues have observed a heterotypic, fusogenic interaction between l-Opa1 on one bilayer and cardiolipin in the opposing bilayer (Ban et al., 2017). Inspired by this work and our own observations, we considered if a heterotypic interaction between l-Opa1 and cardiolipin on the opposing membrane could contribute to l-Opa1-mediated tethering (Figure 3D). Indeed, we find that proteoliposomes containing l-Opa1 will tether to a cardiolipin-containing bilayer lacking any protein binding partner, presumably mediated by the lipid-binding ‘paddle’ insertion in the helical stalk region (Faelber et al., 2019). This tethering is cardiolipin-dependent, as l-Opa1 containing bilayers do not tether DOPC liposomes (Figure 4—figure supplement 1B).
 
@@ -65,13 +99,37 @@ We next measured whether s-Opa1, lacking the transmembrane anchor, could tether 
 
 Our experiments indicate that s-Opa1 alone can induce tethering. Is s-Opa1 competent for close docking of membranes? To answer this, we evaluated close bilayer approach using a reporter for when membranes are brought within FRET distances (~40–60 Å). This FRET signal reports on close membrane docking when a TexasRed conjugated PE is within FRET distance of a Cy5-conjugated PE. We observed a low FRET signal for tethered membranes, when the FRET pair is between two supported bilayers tethered via PEG spacer (average distance between the bilayer centers of ~7 nm) (Minner et al., 2013), compared to a single bilayer containing both of the FRET pair (Figure 4—figure supplement 1A). When l-Opa1 is present on both bilayers (homotypic arrangement), or on only one bilayer (heterotypic arrangement), efficient docking occurs in the presence of cardiolipin, as reported by a FRET signal with efficiencies of ~40% (Figure 4B and C and Figure 4—figure supplement 1A). Efficient homotypic docking requires GTP hydrolysis. GMPPCP prevents homotypic docking of l-Opa1, and abolishes the heterotypic l-Opa1 signal) (Figure 4A). In contrast, s-Opa1 alone does not bring the two bilayers within FRET distance, consistent with observations for s-Mgm1 tethered bilayers (Figure 4A) (Abutbul-Ionita et al., 2012). The distances between two paddles in the s-Mgm1 dimer is ~120 Å. Tethering mediated by two paddle interactions would be compatible with our observed low FRET signal when s-Opa1 engages two bilayers (Faelber et al., 2011).
 
-## Hemifusion and pore opening
+![Figure 4.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig4-v2.jpg)
+
+**Figure 4.:** (A) Homotypic l-Opa1 docks liposomes in a GTP-hydrolysis dependent manner. s-Opa1, alone is insufficient to closely dock liposomes. l-Opa1 in a heterotypic format (on the liposome alone) is competent to closely dock to a bilayer, but this docking is not stimulated by nucleotide. Bar graphs shown as mean ± SD (p<0.0001, one-way ANOVA). Error bars are from 3 to 5 independent experiments (each experiment with >150 particles in a given bilayer). (B) In the presence of cardiolipin on both bilayers, FRET signal reports on close liposome docking mediated by l-Opa1. Left: Green = Cy5 emission signal upon excitation at 543 (TexasRed excitation). Red = Cy5 emission signal in membrane upon excitation at 633 (Cy5 excitation). Right: Green = TexasRed emission upon excitation at 543 nm (TexasRed excitation). Scale bar: 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Controls for intra-membrane and inter-membrane FRET: When both TexasRed and Cy5 PE are present in the same bilayer, high FRET efficiency is observed. When TexasRed and Cy5 PE are present in two different bilayers, with a ~ 7 nm tethering distance (from bilayer center to bilayer center in the double bilayer stack), FRET efficiency was low (data analyzed from 10 random spots in two bilayers (p<0.0001, t test). Analysis of ~20 particles shows ~40% FRET efficiency for both homotypic and heterotypic tethering. This indicates that l-Opa1 is able to bring the two membranes within close proximity (<7 nm) without mixing the two membranes. (B) Quantification of DOPC liposomes tethered to a DOPC bilayer containing reconstituted l-Opa1. Liposomes do not tether to the supported bilayer, indicating that in the absence of cardiolipin, l-Opa1 does not tether liposomes alone. The lack of liposome docking to exposed regions also argues that few defects were introduced into the bilayer following reconstitution. Data from three different bilayers.
+
+### Hemifusion and pore opening
 
 We find that l-Opa1, when present on only one bilayer, in a heterotypic format, can mediate close membrane docking (Figure 4A). To quantify hemifusion (lipid exchange), we measured the fluorescence intensity decay times for the liposome dye (TexasRed) as it diffuses into the bilayer during lipid mixing. Analysis of particle dye diffusion kinetics shows that in this heterotypic format, l-Opa1 can induce hemifusion (Figure 5A). The hemifusion efficiency (percentage of total particles where the proteoliposome dye diffuses into the supported bilayer) for heterotypic l-Opa1 was <5% (Figure 6A). Previously published in vitro bulk liposome-based observations for heterotypic l-Opa1 lipid mixing observed hemifusion efficiencies of 5–10%, despite higher protein copy number per liposome (Ban et al., 2017). We next compared homotypic l-Opa1 catalyzed hemifusion and observed shorter mean dwell times than heterotypic l-Opa1 (Figure 5B and C, Figure 5—figure supplement 1). In our assay, we observe homotypic l-Opa1 induces hemifusion more efficiently than heterotypic l-Opa1. We measured a homotypic l-Opa1 hemifusion efficiency of ~15% (Figure 6A). For comparison, in vitro measurements of viral membrane hemifusion, show efficiencies of ~25–80% (Chao et al., 2014; Ivanovic et al., 2013). This comparison is imperfect, as viral particles have many more copies of their fusion proteins on their membrane surface and viral fusogens do not undergo multiple cycles of nucleotide hydrolysis, like Opa1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heterotypic hemifusion. Top panels: time trace of proteo-liposome lipid dye diffusion (TexasRed). Bottom panels: no content release is observed for this particle (calcein signal remains quenched). Scale bar: 1 µm. (B) Homotypic hemifusion. Top panels: time trace of liposome lipid dye diffusion (TexasRed). Bottom panels: no content release is observed for this particle (calcein signal remains quenched). Scale bar: 1 µm. (C) Representative intensity traces of a control particle not undergoing fusion (black), with heterotypic hemifusion event (solid red), and homotypic hemifusion event (dotted red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Control particle trace shown in black. Hemifusion trace shown in red.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig6-v2.jpg)
+
+**Figure 6.:** (A) Hemifusion (lipid mixing) and full fusion (content release and pore opening) efficiency for homotypic l-Opa1, heterotypic l-Opa1 and s-Opa1 (p<0.001, two-way ANOVA). Bar graphs shown as mean ± SD. Error bars are from five different experiments (50–200 particles were analyzed per bilayer in each experiment). B. Full fusion (pore opening) efficiency at different s-Opa1:l-Opa1 ratios. Data are shown as mean ± SD. Error bars are from 4 to 6 experiments (80–150 particles per bilayer in each experiment). The significance of the data was confirmed using one-way ANOVA (Prism 8.3) where p<0.0001. C. Mean pore opening time in the absence of s-Opa1 and at equimolar s-Opa1. Significance of the difference was confirmed using t-test (Prism 8.3, p<0.0001). D. Representative hemifusion and pore opening fluorescence time series for homotypic l-Opa1 experiment, in the absence of s-Opa1, top and bottom panels, respectively. Scale bar: 1 µm. E: representative traces of TexasRed (liposome signal) and calcein (content signal) intensity for homotypic l-Opa1 experiment. F. Representative hemifusion and pore opening fluorescence traces for a homotypic l-Opa1 experiment in the presence of equimolar s-Opa1. Scale bar: 1 µm. G: Representative trace of TexasRed (liposome signal) and calcein (content signal) intensity for a homotypic l-Opa1 experiment in the presence of equimolar s-Opa1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50973/elife-50973-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Hemifusion (TexasRed) trace show in red. Pore opening (calcein, content release) trace shown in green.
+
 Following hemifusion, pore opening is the key step where both leaflets merge and content from the two compartments can mix. We observed pore opening by monitoring content dye (calcein) release under these conditions (Rawle et al., 2011). Of all homotypic tethered particles,~18% undergo hemifusion. Of these particles undergoing hemifusion, approximately half proceed to full fusion (8% of all homotypic tethered particles). Both s-Opa1 alone (at 0.16 µg/ml, or 2 × 10−3 nmol concentration), or l-Opa1 in the heterotypic format did not release content (Figure 6A). In contrast,~8% of homotypic l-Opa1:l-Opa1 particles undergo pore opening and content release. These observations indicate, l-Opa1 alone is sufficient for pore opening, while s-Opa1 alone or heterotypic l-Opa1 are insufficient for full fusion.
 
-## Ratio of s-Opa1:l-Opa1 regulate pore opening efficiency and kinetics
+### Ratio of s-Opa1:l-Opa1 regulate pore opening efficiency and kinetics
 
 Our observation that l-Opa1 is sufficient for pore opening leaves open the role of s-Opa1 for fusion. Previous studies suggest an active role for s-Mgm1 (the yeast orthologue of s-Opa1) in fusion (DeVay et al., 2009). In this work, l-Mgm1 GTPase activity was dispensable for fusion in the presence of wild-type s-Mgm1 (DeVay et al., 2009). Work in mammalian cells suggests different roles for s-Opa1. Studies from the Chan group showed Opa1 processing helps promote a tubular mitochondrial network (Mishra et al., 2014). In contrast, other studies showed upregulated Opa1 processing in damaged or unhealthy mitochondria, resulting in accumulation of s-Opa1 and fragmented mitochondria (Mishra et al., 2014; Ban et al., 2017; Griparic et al., 2007). The interpretation of the latter experiments was that, in contrast to the yeast observations, s-Opa1 suppresses fusion activity. Furthermore, studies using Opa1 mutations that abolish processing of l-Opa1 to s-Opa1 suggest the short form is dispensable for fusion, and s-Opa1 may even mediate fission (Lee et al., 2017; Baker et al., 2014). These different, and at times opposing, interpretations of experimental observations have been difficult to reconcile.
 
@@ -95,15 +153,375 @@ Key questions remain in understanding the function of different Opa1 conformatio
 
 ## Materials and methods
 
-## Expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>18:1 (Δ9-Cis) PC (DOPC)</td>
+      <td>Avanti Polar lipids</td>
+      <td>Cat #: 850375P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1',3'-bis[1,2-dioleoyl-sn-glycero-3-phospho]-glycerol (sodium salt)</td>
+      <td>Avanti Polar lipids</td>
+      <td>Cat #: 710335P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-[methoxy(polyethylene glycol)−2000] (ammonium salt)</td>
+      <td>Avanti Polar lipids</td>
+      <td>Cat #: 880130P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-lysophosphatidylinositol (Liver, Bovine) (sodium salt)</td>
+      <td>Avanti Polar lipids</td>
+      <td>Cat #: 850091P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti Polar lipids</td>
+      <td>Cat #: 850757P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Texas Red 1,2-Dihexadecanoyl-sn-Glycero-3-Phosphoethanolamine, Triethylammonium Salt (Texas Red DHPE)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: T1395MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(Cyanine 5)</td>
+      <td>Avanti polar lipid</td>
+      <td>Cat #: 810335C1mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: C0875; PubChem Substance ID: 24892279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain</td>
+      <td>Pichia pastoris SMD1163 (his4,pep, prb1)</td>
+      <td>Rapoport lab; Harvard Medical School.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPICZ A-TwinStrep-lOPA1-H10</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>plasmid to transform and express human WT l-Opa1 (isoform1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPICZ A-TwinStrep-sOPA1-H10</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>plasmid to transform and express human WT s-Opa1 (s1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPICZ A-TwinStrep-lOPA1 (G300E)-H10</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>plasmid to transform and express G300E mutant of l-Opa1 (isoform 1).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPICZ A-TwinStrep-sOPA1 (G300E)-H10</td>
+      <td>GenScript</td>
+      <td></td>
+      <td>plasmid to transform and express G300E mutant of s-Opa1 (s1).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Opa1 antibody</td>
+      <td>NOVUS BIOLOGICALS</td>
+      <td>Cat #: NBP2-59770</td>
+      <td>Western Blot 2 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse 6x-His Tag Monoclonal Antibody (HIS.H8)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: MA1-21315</td>
+      <td>Western Blot 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse StrepMAB-Classic, HRP conjugate (2-1509-001)</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat #: 2-1509-001</td>
+      <td>Western Blot 1:2500/1:32000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG HRP Linked Whole Ab</td>
+      <td>SIGMA-ALDRICH INC</td>
+      <td>Cat #: GENA934-1ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG HRP Linked Whole Ab</td>
+      <td>SIGMA-ALDRICH INC</td>
+      <td>Cat #: GENA931-1ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTP Disodium salt</td>
+      <td>SIGMA-ALDRICH INC</td>
+      <td>Cat #: 10106399001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>EnzChek Phosphate Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat #: E6646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GppCp (Gmppcp), Guanosine-5'-[(β,γ)-methyleno]triphosphate, Sodium salt</td>
+      <td>Jena Bioscience</td>
+      <td>Cat #: NU-402–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-D-Maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>Cat #: D310 25 GM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Octyl-α-D-Glucopyranoside</td>
+      <td>Anatrace</td>
+      <td>Cat #: O311HA 25 GM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lauryl Maltose Neopentyl Glycol (LMNG)</td>
+      <td>Anatrace</td>
+      <td>Cat #: NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LMNG-CHS Pre-made solution</td>
+      <td>Anatrace</td>
+      <td>Cat #: NG310-CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zeocin</td>
+      <td>Invivogen</td>
+      <td>Cat #: ant-zn-1p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni-NTA</td>
+      <td>Biorad</td>
+      <td>Cat #: 7800812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>StrepTactin XT</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat #: 2-4026-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat #: 2-1016-005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Superose 6 Increase 10/300 GL</td>
+      <td>GE</td>
+      <td>Cat #: 29091596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TEV protease</td>
+      <td>Prepared in lab, purchased from GenScript</td>
+      <td>Cat #: Z03030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzonase Nuclease</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: E1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>Cat #: 05056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leupeptin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: L2884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pepstatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: P5318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzamidine hydrochloride hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: B6506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylmethylsulfonyl fluoride (PMSF)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: 10837091001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aprotinin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: A1153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin inhibitor</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: T9128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bestatin</td>
+      <td>GoldBio</td>
+      <td>Cat #: B-915–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E-64</td>
+      <td>GoldBio</td>
+      <td>Cat #: E-064–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphoramidon disodium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: R7385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>3–12% Bis-Tris Protein Gels</td>
+      <td>ThermoFisher Scientific</td>
+      <td>BN1003BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NativePAGE Running Buffer Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>BN2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NativePAGE 5% G-250 Sample Additive</td>
+      <td>ThermoFisher Scientific</td>
+      <td>BN2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NativePAGE Sample Buffer (4X)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>BN2003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slidebook</td>
+      <td>Intelligent imaging</td>
+      <td>RRID: SCR_014300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ</td>
+      <td>Fiji</td>
+      <td>SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FCS analysis tool</td>
+      <td>Smith Lab, University of Akron</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification
 
 Genes encoding l- (residues 88–960) or s- (residues 195–960) OPA1 (UniProt O60313-1) were codon optimized for expression in Pichia pastoris and synthesized by GenScript (NJ, USA). The sequences encode Twin-Strep-tag, HRV 3C site, (G4S)3 linker at the N-terminus and (G4S)3 linker, TEV site, deca-histidine tag at the C-terminus. The plasmids were transformed into the methanol inducible SMD1163 strain (gift from Dr. Tom Rapoport, Harvard Medical School) and the clones exhibiting high Opa1 expression were determined using established protocols. For purification, cells expressing l-Opa1 were resuspended in buffer A (50 mM sodium phosphate, 300 mM NaCl, 1 mM 2-mercaptoethanol, pH 7.5) supplemented with benzonase nuclease and protease inhibitors and lysed using an Avestin EmulsiFlex-C50 high-pressure homogenizer. The membrane fractions were collected by ultracentrifugation at 235,000 x g for 45 min. at 4°C. The pellet was resuspended in buffer A containing 2% DDM, (Anatrace, OH, USA) 0.1 mg/ml 18:1 cardiolipin (Avanti Polar Lipids, AL, USA) and protease inhibitors and stirred at 4°C for 1 hr. The suspension was subjected to ultracentrifugation at 100,000 x g for 1 hr at 4°C. The extract containing l-Opa1 was loaded onto a Ni-NTA column (Biorad, CA, USA), washed with 40 column volumes of buffer B (50 mM sodium phosphate, 350 mM NaCl, 1 mM 2-mercaptoethanol, 1 mM DDM, 0.025 mg/ml 18:1 cardiolipin, pH 7.5) containing 25 mM imidazole and 60 column volumes of buffer B containing 100 mM imidazole. The bound protein was eluted with buffer B containing 500 mM imidazole, buffer exchanged into buffer C (100 mM Tris-HCl, 150 mM NaCl, 1 mM EDTA, 1 mM 2-mercaptoethanol, 0.15 mM DDM, 0.025 mg/ml 18:1 cardiolipin, pH 8.0). In all the functional assays, the C-terminal His tag was cleaved by treatment with TEV protease and passed over the Ni-NTA and Strep-Tactin XT Superflow (IBA Life Sciences, Göttingen, Germany) columns attached in tandem. The Strep-Tactin XT column was detached, washed with buffer C and eluted with buffer C containing 50 mM biotin. The elution fractions were concentrated and subjected to size exclusion chromatography in buffer D (25 mM BIS-TRIS propane, 100 mM NaCl, 1 mM TCEP, 0.025 mg/ml 18:1 cardiolipin, pH 7.5, 0.01% LMNG, 0.001% CHS). s-OPA1 was purified using a similar approach but with one difference: post lysis, the DDM was added to the unclarified lysate at 0.5% concentration and stirred for 30 min. – 1 hr. at 4°C prior to ultracentrifugation. The supernatant was applied directly to the Ni-NTA column.
 
-## GTPase activity assay
+### GTPase activity assay
 
 The GTPase activity of purified Opa1 was analyzed using EnzCheck Phosphate Assay Kit (Thermo Fisher, USA) according to the vendor’s protocol. Each condition was performed in triplicate. The GTPase assay buffers contained 25 mM HEPES, 60 mM NaCl, 100 mM KCl, 0.5 mM MgCl2 with 0.15 mM DDM. 60 µM GTP was added immediately before data collection. To compare the effect of cardiolipin on GTPase activity, additional 0.5 mg/ml Cardiolipin was dissolved in the reaction buffer and added to the reaction to a final concentration of 0.02 mg/ml. The absorbance at 340 nm of each reaction mixture was recorded using SpectraMax i3 plate reader (Molecular Devices) every 30 s. Experiments were performed in triplicate. Resulting Pi concentration was fitted to a single-phase exponential-decay, specific activity data were fitted to a Michaelis-Menten equation (GraphPad Prism 8.1).
 
-## Preparation of polymer-tethered lipid bilayers
+### Preparation of polymer-tethered lipid bilayers
 
 Lipid reagents, including 1,2-dioleoyl-sn-glycero-3-phosphocholine, (DOPC); 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-[methoxy(polyethylene glycol)−2000] (DOPE-PEG2000), L-α-phosphatidylinositol (Liver PI) and 1',3'-bis[1,2-dioleoyl-sn-glycero-3-phospho]-glycerol (cardiolipin) were purchased from Avanti Polar Lipids (AL, USA). To fabricate the polymer-tethered lipid bilayers, we combined Langmuir-Blodgett and Langmuir-Schaefer techniques, using a Langmuir-Blodgett Trough (KSV-NIMA, NY, USA) (Siegel et al., 2011; Ge et al., 2014). For cardiolipin-free lipid bilayers, a lipid mixture with DOPC with 5% (mol) DOPE-PEG2000% and 0.2% (mol) Cy5-DSPE at the total concentration of 1 mg/ml was spread on the air water interface in a Langmuir trough. The surface pressure was kept at 30 mN/m for 30 min before dipping. The first lipid monolayer was transferred to the glass substrate (25 mm diameter glass cover slide, Fisher Scientific, USA) through Langmuir-Blodgett dipping, where the dipper was moved up at a speed of 22.5 mm/min. The second leaflet of the bilayer was assembled through Langmuir-Schaefer transfer after 1 mg/ml of DOPC with 0.2% (mol) Cy5-PE (Avanti Polar Lipids, AL, USA) was applied to an air-water interface and kept at a surface pressure of 30 mN/m.
 
@@ -111,11 +529,11 @@ Lipid bilayer with cardiolipin was fabricated in a similar manner, where the bot
 
 Double bilayers were fabricated according to previous reports (Minner et al., 2013). The first bilayer containing DOPC with 5% (mol) DSPE-PEG2000-Maleimide (Avanti Polar Lipids, AL, USA) and 0.2% (mol) Cy5-DOPE in both inner and outer leaflets was made using Langmuir-Blodgett/Langmuir-Schaefer methods. The second planar lipid bilayer was formed by fusion of lipid vesicles and removal of non-fused vesicles. Lipid vesicles were formed by hydrating dried lipid films with DOPC, 0.2% (mol) TexasRed-DHPE and 5% (mol) of linker lipid (DPTE, AL, USA) in a 0.1 mM sucrose/1 mM CaCl2 solution. The lipid suspension was heated for 1.5 hr at 75°C, and added to the first bilayer in a 0.1 mM glucose/1 mM CaCl2 solution. After 2 hr of incubation, additional vesicles were removed by extensive rinsing. The bilayer was then imaged by TIRF microscope.
 
-## Reconstitution of l-Opa1 into lipid bilayers
+### Reconstitution of l-Opa1 into lipid bilayers
 
 Purified l-Opa1 was first desalted into 25 mM Bis-Tris buffer with 150 mM NaCl containing 1.2 nM DDM and 0.4 µg/L of cardiolipin to remove extra surfactant during purification. The resulting protein was added to each bilayer to the total amount of 1.3 × 10−12 mol (protein:lipid 1:10000) together with a surfactant mixture of 1.2 nM of DDM and 1.1 nM n-Octyl-β-D-Glucopyranoside (OG, Anatrace, OH, USA). The protein was incubated for 2 hr before removal of the surfactant. To remove the surfactant, Bio-Beads SM2 (Bio-Rad, CA, USA) was added to the solution at a final concentration of 10 µg beads per mL of solution and incubated for 10 min. Buffer with 25 mM Bis-Tris and 150 mM NaCl was applied to remove the Bio-beads with extensive washing. Successful reconstitution was determined using fluorescent correlation spectroscopy assay as described in the supplemental materials.
 
-## Preparation of liposomes and proteoliposomes
+### Preparation of liposomes and proteoliposomes
 
 To prepare calcein (MilliporeSigma, MA, USA) encapsulated liposomes, lipid mixtures (7% (mol) PI, 20% cardiolipin, 20% PE, 0.2% TexasRed-PE, DOPC (52.8%)), were dissolved in chloroform and dried under argon flow for 25 min. The resulting lipid membrane was mixed in 25 mM Bis-Tris with 150 mM NaCl and 50 mM calcein through vigorous vortexing. Lipid membranes were further hydrated by incubating the mixtures under 70°C for 30 min. Large unilamellar vesicles (LUVs) were prepared by extrusion (15 to 20 times) using a mini-extruder with 200 nm polycarbonate membrane.
 
@@ -125,13 +543,27 @@ To evaluate l-Opa1 reconstitution into proteoliposomes, dye free liposome was pr
 
 For the co-flotation analysis, 200 µl of 20 mg/ml TexasRed-DHPE (0.2% (mol)) labeled proteoliposome (reconstitution ratio, protein:lipid 1:5000) was loaded to sucrose gradient (with steps of 0%, 15%, 30%, 60%). The volume of each fraction was 800 µl. Sucrose solutions were prepared in Bis-Tris buffer (25 mM Bis-Tris, 150 mM NaCl, pH 7.4). Samples were then centrifuged using a high-speed centrifuge equipped with SW 55i rotor (Beckmann Coulter, CA, USA) for 2.5 hr at a speed of 30000 xg. For high salt and carbonate treatment, the same amount of proteoliposome was redistributed in Bis-Tris buffer with 500 mM NaCl (pH 7.4) and buffer containing 50 mM Na2CO3 and 50 mM NaCl (pH 8.2), respectively. The resulting suspension was loaded in gradient for separation. After centrifugation, all fractions were collected and concentrated to 40 µl. Fractions were detected by western blot and then analyzed by ImageJ. The presence of liposomes was detected by absorbance at 590 nm using a DeNovix FX photometer (DeNovix, Inc).
 
-## Fluorescent correlation spectroscopy
+### Fluorescent correlation spectroscopy
 
 Fluorescence correlation spectroscopy (FCS) was performed using a home-built PIE-FCCS system (Huang et al., 2016; Comar et al., 2014). Two pulsed laser beams with wavelengths of 488 nm (9.7 MHz, five ps) and 561 nm (9.7 MHz, five ps) were filtered out from a supercontinuum white light fiber laser (SuperK NKT Photonics, Birkerod, Denmark) and used as excitation beams. The laser beams were sent through a 100X TIRF objective (NA 1.47, oil, Nikon Corp., Tokyo, Japan) to excite the samples in solution or on bilayer. The emission photons were guided through a common 50 μm diameter pinhole. The light was spectrally separated by a 560 nm high-pass filter (AC254-100-A-ML, Thorlabs), further filtered by respective bandpass filters (green, 520/44 nm [FF01-520/44-25]; red, 612/69 nm [FF01-621/69-25], Semrock), and finally reach two single photon avalanche diode (SPAD) detectors (Micro Photon Devices). The synchronized photon data were collected using a time correlated single photon counting (TCSPC) module (PicoHarp 300, PicoQuant, Berlin, Germany).
 
-The collected photon data were transformed into correlation functions with a home written MATLAB code. The correlation functions were fitted using two-dimensional (Hoppins et al., 2007) or three-dimensional (Cipolat et al., 2006) Brownian diffusion model for bilayer or solution samples respectively.(1)Gτ= 1N11+ττD(2)Gτ= 1N11+ττD11+ω2∙ττD
+The collected photon data were transformed into correlation functions with a home written MATLAB code. The correlation functions were fitted using two-dimensional (Hoppins et al., 2007) or three-dimensional (Cipolat et al., 2006) Brownian diffusion model for bilayer or solution samples respectively.
 
-Where N is the average number of particles in the system, ω is the waist of the excitation beam, and τD is the dwell time that can be used to calculate the diffusion coefficient (D) of the particles (Huang et al., 2016).τD= ω24D
+$$
+G\tau=\frac{1}{N}\frac{1}{1+\frac{\tau}{\tau_{D}}}
+$$
+
+
+
+$$
+G\tau=\frac{1}{N}\frac{1}{1+\frac{\tau}{\tau_{D}}}\frac{1}{\sqrt{1+\omega^{2}∙\frac{\tau}{\tau_{D}}}}
+$$
+
+Where N is the average number of particles in the system, $\omega$ is the waist of the excitation beam, and τD is the dwell time that can be used to calculate the diffusion coefficient (D) of the particles (Huang et al., 2016).
+
+$$
+\tau_{D}=\frac{\omega^{2}}{4D}
+$$
 
 Measurements were made on buffers with evenly distributed liposomes, proteoliposomes and antibodies in a glass-bottom 96 well plate at room temperature. The plates were pre-coated with lipid bilayer fabricated from 100 nm DOPC liposomes. For each solution, data were collected in five successive 15 s increments.
 
@@ -139,7 +571,7 @@ For characterization of l-Opa1 reconstitution into planar bilayers, an anti-Opa1
 
 To estimate reconstitution efficiency, 0.002% (mol) l-Opa1 was added to the bilayer. In a separate experiment 0.002% (mol) TexasRed-PE was introduced to the bilayer. The reconstitution efficiency was calculated from the anti-l-Opa1 antibody TexasRed fluorophore density divided by the TexasRed-PE fluorphore density, normalized by the antibody labeling efficiency (1.5 dye molecules/antibody).
 
-## Total Internal Reflection Fluorescent Microscopy (TIRF)
+### Total Internal Reflection Fluorescent Microscopy (TIRF)
 
 Liposome docking and lipid exchange events were imaged using a Vector TIRF system (Intelligent Imaging Innovations, Inc, Denver, CO, USA) equipped with a W-view Gemini system (Hamamatsu photonics, Bridgewater, NJ). TIRF images were acquired using a 100X oil immersion objective (Ziess, N.A 1.4). A 543 nm laser was used for the analysis of TexasRed-PE embedded liposomes and proteoliposomes, while a 633 nm laser was applied for the analysis of Cy5-PE embedded in the planar lipid bilayer. Fluorescent emission was simultaneously observed through a 609-emission filter with a band width of 40 nm and a 698-emission filter with a band width of 70 nm. The microscope system was equipped with a Prime 95B scientific CMOS camera (Photometrics), maintained at −10°C. Images were taken at room temperature, before adding any liposome or proteoliposome, after 15 mins of addition, and after 30 mins of adding GTP (1 mM) and MgCl2 (1 mM). Each data point was acquired from five different bilayers, each bilayer data contains 5–10 particles on average.
 
@@ -147,10 +579,10 @@ Dwell times for hemifused particles were recorded from the moment of GTP additio
 
 For analysis of protein reconstitution in proteoliposome (stoichiometry), a TIRF microscope modified from an inverted microscope (Nikon Eclipse Ti, Nikon Instruments) was used. A 561 nm diode laser (OBIS, Coherent Inc, Santa Clara, USA) was applied at TIRF angle through a 100X TIRF objective (NA 1.47, oil, Nikon) and the fluorescence signals were collected by an EMCCD camera (Evolve 512, Photometrics).
 
-## Nanosight NTA analysis
+### Nanosight NTA analysis
 
 A NTA300 Nanosight instrument was used to evaluate size distribution of liposome and proteoliposome under different conditions. The equipment was equipped with a 405 nm laser and a CMOS camera. 1 ml of 0.1 µg/ml sample was measured, to reach the recommended particle number of 1 × 108 particles/mL (corresponding to the dilution factor of 1:100,000). Image acquisition was conducted for 40 s for each acquisition and repeated for 10 times for every injection. Three parallel samples were examined for the determination of size distribution. Under each run, the camera level was set to 12 and the detection threshold was set at 3.
 
-## Blue native polyacrylamide gel electrophoresis (BN-PAGE)
+### Blue native polyacrylamide gel electrophoresis (BN-PAGE)
 
 Bis-Tris gradient gels (3–12%) were purchased from ThermoFisher Scientific (Cat. No. BN1003BOX) and BN-PAGE was performed according to manufacturer’s instructions. Gel samples (10 μl) were prepared by mixing indicated quantity of Opa1 with sample buffer containing 0.25% Coomassie G-250 and 1 mM DDM. For experiments involving l-Opa1 and s-Opa1 mixtures, the samples were incubated on ice for 10 min before loading. The cathode buffer contained 1 mM DDM and electrophoresis was performed at 4°C with an ice jacket surrounding the apparatus.

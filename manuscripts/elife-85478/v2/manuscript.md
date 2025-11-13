@@ -15,9 +15,9 @@
 ### Affiliations
 
 1. Clinical Pharmacology and Quantitative Pharmacology, Clinical Pharmacology and Safety Sciences, R&D, AstraZeneca Cambridge United Kingdom
-2. https://ror.org/04xs57h96 Institute of Systems, Molecular and Integrative Biology, University of Liverpool Liverpool United Kingdom
-3. https://ror.org/04yzcpd71 Preclinical Sciences and Translational Safety, Janssen Beerse Belgium
-4. https://ror.org/04td3ys19 Gut Microbes and Health Programme, Quadram Institute Norwich United Kingdom
+2. Institute of Systems, Molecular and Integrative Biology, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))
+3. Preclinical Sciences and Translational Safety, Janssen Beerse Belgium ([ROR:04yzcpd71](https://ror.org/04yzcpd71))
+4. Gut Microbes and Health Programme, Quadram Institute Norwich United Kingdom ([ROR:04td3ys19](https://ror.org/04td3ys19))
 5. Clinical Pharmacology and Safety Sciences, AstraZeneca Cambridge United Kingdom
 
 † Corresponding author
@@ -38,7 +38,7 @@ Several agent-based models (ABMs) have been proposed to describe the complexity 
 
 ## Results
 
-## Modelling a self-organizing crypt using an ABM
+### Modelling a self-organizing crypt using an ABM
 
 We have modelled the mouse intestinal crypt as a self-organizing system where cell dynamics and cell composition arise from local interactions between single cells and the mesenchyme through signalling pathways with behaviours (proliferation, differentiation, fate decision, migration, etc.) determined largely by endogenous intracellular and intercellular interactions.
 
@@ -56,7 +56,7 @@ The Wnt gradient in the crypt is opposed by a gradient of bone morphogenic prote
 
 Altogether our model describes single cells that generate and respond to signals and mechanical pressures in the crypt–villus geometry to give rise to a self-organizing crypt which has stable spatial cell composition over time (Figure 1D) and reproduces reported experimental data (Buske et al., 2011). An extended description of these modelling features is provided in Appendix 1.
 
-## The cell cycle protein network governs proliferation in each single cell of the ABM and responds to mechanical cues
+### The cell cycle protein network governs proliferation in each single cell of the ABM and responds to mechanical cues
 
 We have used the model of Csikász-Nagy et al., 2006, which is based on the seminal work of Novak and Tyson, 1993; Novak et al., 2001; Novák and Tyson, 2004 and available in BioModels (Le Novère and Csikasz-Nagy, 2006), to recreate the dynamics of the main proteins governing the mammalian cell cycle in each single proliferative cell of the ABM. In this model, a dividing cell begins in G1, with low levels of cyclins A, B, and E and a high level of Wee1, and progresses to S-phase when cyclin E increases. S-phase ends and G2 begins when Wee1 falls. The decrease in cyclin A expression defines the start of M-phase, while falling cyclin B implies the end of M-phase, when the cell divides into two daughter cells with half the final mass value and re-enters the cell cycle (Figure 2A–D).
 
@@ -72,7 +72,7 @@ Ki-67 is a protein produced by actively proliferating cells during the S-, G2-, 
 
 In summary, proliferative cells in the ABM respond to mechanical cues by adjusting the cell cycle protein network to dynamically change the duration of the cycle while migrating along the crypt. With this feature, the model replicates spatiotemporal patterns of cell proliferation, differentiation, and migration observed in mouse experiments.
 
-## Cell plasticity/de-differentiation enables crypt regeneration following damage of the stem cell niche
+### Cell plasticity/de-differentiation enables crypt regeneration following damage of the stem cell niche
 
 Marker-based lineage-tracing studies have demonstrated numerous potential sources available for intestinal stem cell regeneration (Hageman et al., 2020). In line with these studies, our model assumes that cell fate decisions are reversible and both secretory and absorptive cells are able to revert into stem cells when regaining sufficient Wnt and Notch signals.
 
@@ -80,13 +80,17 @@ To investigate the potential of the ABM to describe and explore cell plasticity 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85478/elife-85478-fig3-v2.jpg)
 
-**Figure 3.:** (A–C) (Tan et al., 2021).Analysis time denotes 6 hr after ablation interruption for comparison with reported results (Tan et al., 2021). All cell lineages are recorded during treatment and few days after recovery of the simulated crypt for comparison with homeostasis. A simulated 3D image of a crypt in homeostasis can be found in Figure 4A. (A) shows the total number of cells, absorptive progenitors, and enterocytes in the crypt; (B) shows the number of Paneth, stem cells, and uncommitted progenitors, mostly found in the niche; and (C) shows villus cells. (D) Relative frequency of crypt cells moving towards the villus (darker colour) and towards the crypt base, that is, retrograde motion (lighter colour), in homeostasis (blue) and during stem cell ablation (red) at each cell position, showing increased retrograde cellular motion in the niche following stem cell ablation. (E) Leftmost: trajectories (cell position on crypt–villus longitudinal axis vs time) of the progeny of one stem cell, with both daughters leaving the niche and giving rise to a cascade of absorptive and secretory cells that eventually leave the crypt. Rightmost: trajectories of the progeny of an absorptive progenitor dedifferentiating into a stem cell during recovery after stem cell ablation.
+**Figure 3.:** Analysis time denotes 6 hr after ablation interruption for comparison with reported results (Tan et al., 2021). All cell lineages are recorded during treatment and few days after recovery of the simulated crypt for comparison with homeostasis. A simulated 3D image of a crypt in homeostasis can be found in Figure 4A. (A) shows the total number of cells, absorptive progenitors, and enterocytes in the crypt; (B) shows the number of Paneth, stem cells, and uncommitted progenitors, mostly found in the niche; and (C) shows villus cells. (D) Relative frequency of crypt cells moving towards the villus (darker colour) and towards the crypt base, that is, retrograde motion (lighter colour), in homeostasis (blue) and during stem cell ablation (red) at each cell position, showing increased retrograde cellular motion in the niche following stem cell ablation. (E) Leftmost: trajectories (cell position on crypt–villus longitudinal axis vs time) of the progeny of one stem cell, with both daughters leaving the niche and giving rise to a cascade of absorptive and secretory cells that eventually leave the crypt. Rightmost: trajectories of the progeny of an absorptive progenitor dedifferentiating into a stem cell during recovery after stem cell ablation.
+
+![Video 1.](https://cdn.elifesciences.org/articles/85478/elife-85478-video1.mp4.jpg)
+
+**Video 1.:** Plots depict changes in the number of cells in the crypt and villus during the simulation. Colour code of cell types is included below plots.
 
 We next studied the type of cells that were dedifferentiating during the simulated repeated ablation of stem cells and found that in agreement with experimental reports, Paneth cells (Yu et al., 2018), absorptive progenitors (Tetteh et al., 2016), and quiescent stem cells located just above the stem cell niche at the fourth cell position from the crypt base (Tian et al., 2011) dedifferentiated into stem cells. Specifically, from all dedifferentiated cells, about 60% were Paneth cells, 30% absorptive progenitors, and 10% secretory progenitors, which are considered quiescent stem cells as previously suggested (Buczacki et al., 2013). Furthermore, we used our model to explore the retrograde motion, reported using intravital microscopy (Azkanaz et al., 2022), of cells returning to the niche to de-differentiate into stem cells. For cells outside the niche, movement is retrograde when its velocity is negative in the z direction, that is, they move towards the niche across the longitudinal crypt–villus axis. For cells in the hemispherical niche, we consider a cell to move forwards, towards the villus, or backwards, towards the crypt base, if the rate of change of its polar angle is positive or negative, respectively. This implies that cells can be recorded to move backwards despite being located at the crypt base. We observed that the frequency of retrograde, or backward, movements is relatively high at low positions in a crypt in homeostasis (Figure 3D) and increases further after stem cell ablation, reflecting increased retrograde cellular motion as cells repopulate the niche. While in homeostasis the progeny of a stem cell generally differentiates into a cascade of absorptive and secretory progenitors that migrate towards the villus and eventually leave the crypt (Figure 3E). Following the interruption of stem cell ablation, during recovery absorptive progenitors return to the niche and dedifferentiate to regenerate multiple stem and Paneth cells as well as progenitors (Figure 3E).
 
 Taken together, our model recapitulates cellular reprogramming of both multipotent precursors and committed progeny in the crypt and replicates the reported crypt injury dynamics following persistent ablation of stem cells (Tan et al., 2021).
 
-## Disturbance of cell cycle proteins spans across scales to impact on crypt and villus organization
+### Disturbance of cell cycle proteins spans across scales to impact on crypt and villus organization
 
 The model of Csikász-Nagy et al., 2006 enables the simulation of the disruption of the main proteins governing the cell cycle in each single proliferative cell of the ABM. CDKs play important roles in the control of cell division (Malumbres, 2014), and the development of CDK inhibitors for cancer treatment is an active field of research (Zhang et al., 2021).
 
@@ -98,9 +102,13 @@ To explore the effect of the disruption of the cell cycle on epithelial integrit
 
 It has been experimentally demonstrated that the selective inhibition of CDK1 activity in cells programmed to endoreduplicate (i.e. cells that can duplicate their genome in the absence of intervening mitosis) leads to the formation of stable nonproliferating giant cells, whereas the same treatment triggers apoptosis in cells that are not developmentally programmed to endoreduplicate (Ullah et al., 2008). Although endoreduplication is not expected in crypt cells, enlarged polynucleated cells have been reported to remain in the epithelium without dying in a recent light-sheet organoid imaging study tracking the progeny of a cell after cytokinesis failure induced by the inhibition of LATS1 (de Medeiros et al., 2022), which is phosphorylated by CDK1 during mitosis (Furth and Aylon, 2017). Thus, we chose to replicate this phenotype to show the capacity of our model to predict possible complex responses in the intestine. Following CDK1 inhibition, we detected oversized cells in the ABM (Figure 4A). The inhibition of the activation of cyclins A and B altered the modelled protein profiles, disturbing progression through G2 and M-phase and preventing the cell mass from dividing before reinitiating a new cycle (Figure 4B). Thus, a cell could either be (i) unaffected if it was at the early stages of the cycle (Figure 4C); or (ii) restart the cell cycle if CDK1 was inhibited while the cell was at the end of G2 and unable to enter M-phase or in M-phase and unable to complete cytokinesis. In this case, the inhibition of cyclins A and B led to an early increase in cyclin E and the premature restart of G1 with the generation of oversized cells, which are ultimately arrested (Figure 4D); or (iii) cells in M-phase can undergo mitotic death if the reduction of cyclins A and B severely disrupts the protein network (Figure 4E). Hence, the failure to culminate M-phase resulted in cell death or generation of oversized, nonproliferating cells, which led to a reduction of the crypt overall cell number (Figure 4F) and the turnover of villus cells (Figure 4G). Appendix 1—figure 1 shows the response of all cell lineages to CDK1 inhibition, and Video 2 shows the 3-D visualization of the crypt during this treatment.
 
+![Video 2.](https://cdn.elifesciences.org/articles/85478/elife-85478-video2.mp4.jpg)
+
+**Video 2.:** Plots depict changes in the number of cells in the crypt and villus during the simulation. Colour code of cell types is included below plots.
+
 Altogether our ABM enables the simulation of how disruptions of the cell cycle protein network span across scales to generate complex phenotypes, such as giant cells, and impact on the integrity of the crypt and villus structure.
 
-## A practical application of the ABM to describe 5-fluorouracil (5-FU)-induced epithelial injury at multiple scales
+### A practical application of the ABM to describe 5-fluorouracil (5-FU)-induced epithelial injury at multiple scales
 
 5-FU is a well-studied and commonly administered cancer drug (Longley et al., 2003) with reported high incidence of gastrointestinal adverse effects in treated patients (Stein et al., 2010). 5-FU is a pyrimidine antimetabolite cytotoxin which has multiple mechanisms of action upon conversion to several nucleotides that induce DNA and RNA damage (Longley et al., 2003). Antimetabolites resemble nucleotides and nucleotide precursors that inhibit nucleotide metabolism pathways, and hence DNA synthesis, as well as impair the replication fork progression after being incorporated into the DNA (Helleday et al., 2008).
 
@@ -113,6 +121,10 @@ To explore the performance of our ABM to predict epithelial injury, we used resu
 Figure 5C shows the cell cycle protein dynamics and fate decision when 5-FU challenge took place at the beginning of S-phase and led to the accumulation of relatively high levels of DNA damage which triggered cell death at the G2-M-phase checkpoint. When the challenged cell was at the end of S-phase, the accumulated levels of DNA damage were not high enough to be detected at the G2-M-phase checkpoint and the cell finished the cycle and restarted a new cycle at a slower rate due to concurrent RNA damage and relatively low level of DNA damage (Figure 5D).
 
 Figure 5E shows that predicted and observed Ki-67-positive cells declined gradually over time at all positions in the crypt during the 5-FU high-dose treatment. However, the numbers recovered, reaching values above baseline, 2 d after the interruption of 5-FU administration. The increased rebound of the proliferative crypt compartment after treatment was captured in our ABM by the implemented BMP-mediated feedback mechanism from mature enterocytes to proliferative cells (see Appendix 1, Section 1.7.4). For this treatment, both simulated and observed total number of cell,s in the crypt followed the same pattern as the proliferative compartment (Figure 5F), while the decline in villus cells started later and took longer to achieve full recovery (Figure 5G). Appendix 1—figure 2A and B shows the response of all cell lineages during this treatment, and Video 3 shows the 3-D visualization of the simulated crypt and changes in signalling pathways and cell composition during the high-dose 5-FU challenge. The low dose of 5-FU had a minor impact on crypt proliferation and villus integrity, which was also recapitulated by the model (Appendix 1—figure 2C–E).
+
+![Video 3.](https://cdn.elifesciences.org/articles/85478/elife-85478-video3.mp4.jpg)
+
+**Video 3.:** Plots depict changes in signal abundance across the crypt longitudinal axis (z), in the number of cells in the crypt and villus, and concentration of 5-FU and metabolites during the simulation. Signals expressed in arbitrary units (A.U.). Colour code of cell types is included below plots.
 
 Overall, the ABM recapitulates DNA and RNA damage, resulting in cell cycle disruption associated with 5-FU administration and describes the propagation of the injury across scales to disturb epithelial integrity. The loss of epithelial barrier integrity is widely accepted to be the triggering event of chemotherapy-induced diarrhoea (McQuade et al., 2016) which is reported in mice at the doses used in this study (Jardi et al., 2023) as well as observed in patients undergoing equivalent treatments (Morawska et al., 2018).
 
@@ -132,10 +144,10 @@ While most of the crypt biology understanding integrated in our model derives fr
 
 ## Materials and methods
 
-## Mouse experiments
+### Mouse experiments
 
 We used BrdU tracking and Ki-67 immunostaining data from previously published experiments in healthy mice (Parker et al., 2017; Parker et al., 2019) and following 5-FU treatment (Jardi et al., 2023). The samples from this later study (Jardi et al., 2023) were analysed again to count Ki-67-positive cells at each position along the longitudinal crypt axis for 30–50 individual hemi crypt units per tissue section per mouse as previously described (Williams et al., 2016).
 
-## ABM development
+### ABM development
 
 A comprehensive description of the model can be found in Appendix 1 and Appendix 1—table 1. The model has been made available through BioModels (MODEL2212120002) (Malik-Sheriff et al., 2020)

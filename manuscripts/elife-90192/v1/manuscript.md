@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01q1z8k08 Department of Oral Biology, School of Dental Medicine, University at Buffalo, The State University of New York Buffalo United States
-2. https://ror.org/0130frc33 Division of Chemical Biology and Medicinal Chemistry, Eshelman School of Pharmacy, University of North Carolina Chapel Hill United States
-3. https://ror.org/00j4k1h63 Macromolecular Structure Group, Epigenetics and Stem Cell Biology Laboratory, National Institute of Environmental Health Sciences, National Institutes of Health Research Triangle Park United States
-4. https://ror.org/00j4k1h63 Genome Integrity and Structural Biology Laboratory, National Institute of Environmental Health Sciences, National Institutes of Health Research Triangle Park United States
+1. Department of Oral Biology, School of Dental Medicine, University at Buffalo, The State University of New York Buffalo United States ([ROR:01q1z8k08](https://ror.org/01q1z8k08))
+2. Division of Chemical Biology and Medicinal Chemistry, Eshelman School of Pharmacy, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. Macromolecular Structure Group, Epigenetics and Stem Cell Biology Laboratory, National Institute of Environmental Health Sciences, National Institutes of Health Research Triangle Park United States ([ROR:00j4k1h63](https://ror.org/00j4k1h63))
+4. Genome Integrity and Structural Biology Laboratory, National Institute of Environmental Health Sciences, National Institutes of Health Research Triangle Park United States ([ROR:00j4k1h63](https://ror.org/00j4k1h63))
 
 † Corresponding author
 
 ## Abstract
 
-TRAIL (TNF-related apoptosis-inducing ligand) is a potent inducer of tumor cell apoptosis through TRAIL receptors. While it has been previously pursued as a potential anti-tumor therapy, the enthusiasm subsided due to unsuccessful clinical trials and the fact that many tumors are resistant to TRAIL. In this report, we identified heparan sulfate (HS) as an important regulator of TRAIL-induced apoptosis. TRAIL binds HS with high affinity ( K D = 73 nM) and HS induces TRAIL to form higher-order oligomers. The HS-binding site of TRAIL is located at the N-terminus of soluble TRAIL, which includes three basic residues. Binding to cell surface HS plays an essential role in promoting the apoptotic activity of TRAIL in both breast cancer and myeloma cells, and this promoting effect can be blocked by heparin, which is commonly administered to cancer patients. We also quantified HS content in several lines of myeloma cells and found that the cell line showing the most resistance to TRAIL has the least expression of HS, which suggests that HS expression in tumor cells could play a role in regulating sensitivity towards TRAIL. We also discovered that death receptor 5 (DR5), TRAIL, and HS can form a ternary complex and that cell surface HS plays an active role in promoting TRAIL-induced cellular internalization of DR5. Combined, our study suggests that TRAIL-HS interactions could play multiple roles in regulating the apoptotic potency of TRAIL and might be an important point of consideration when designing future TRAIL-based anti-tumor therapy.
+TRAIL (TNF-related apoptosis-inducing ligand) is a potent inducer of tumor cell apoptosis through TRAIL receptors. While it has been previously pursued as a potential anti-tumor therapy, the enthusiasm subsided due to unsuccessful clinical trials and the fact that many tumors are resistant to TRAIL. In this report, we identified heparan sulfate (HS) as an important regulator of TRAIL-induced apoptosis. TRAIL binds HS with high affinity (KD = 73 nM) and HS induces TRAIL to form higher-order oligomers. The HS-binding site of TRAIL is located at the N-terminus of soluble TRAIL, which includes three basic residues. Binding to cell surface HS plays an essential role in promoting the apoptotic activity of TRAIL in both breast cancer and myeloma cells, and this promoting effect can be blocked by heparin, which is commonly administered to cancer patients. We also quantified HS content in several lines of myeloma cells and found that the cell line showing the most resistance to TRAIL has the least expression of HS, which suggests that HS expression in tumor cells could play a role in regulating sensitivity towards TRAIL. We also discovered that death receptor 5 (DR5), TRAIL, and HS can form a ternary complex and that cell surface HS plays an active role in promoting TRAIL-induced cellular internalization of DR5. Combined, our study suggests that TRAIL-HS interactions could play multiple roles in regulating the apoptotic potency of TRAIL and might be an important point of consideration when designing future TRAIL-based anti-tumor therapy.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Heparan sulfate (HS) is a linear, negatively charged polysaccharide found at the
 
 ## Results
 
-## TRAIL is a HS binding protein and binding involves three specific basic residues
+### TRAIL is a HS binding protein and binding involves three specific basic residues
 
 To investigate whether TRAIL is an HS-binding protein, we first examined the binding of the recombinant, soluble, extracellular domain of TRAIL to heparin using heparin–Sepharose chromatography. We found that both human TRAIL (hTRAIL) and murine TRAIL (mTRAIL) bind well to the heparin column, and the binding of mTRAIL (eluted by 775 mM NaCl) to the heparin-Sepharose column was stronger than that of hTRAIL (eluted by 560 mM NaCl) (Figure 1A). To investigate the HS–TRAIL interaction in greater detail, we performed surface plasmon resonance (SPR) analysis of the binding between hTRAIL and immobilized HS dodecasaccharide (HS 12mer, Table 1). Our results showed that hTRAIL binds HS 12mer with a KD of 73 nM (Figure 1B). To explicitly determine the HS-binding site of TRAIL, we performed site-directed mutagenesis of seven conserved lysine and arginine residues on mTRAIL, some of which (Arg119, Arg122, and Lys125) cluster (in triplicate) near the ‘top’ of the trimer and likely form the HS-binding site (Figure 1C). Binding of these mTRAIL mutants to heparin was evaluated by heparin–Sepharose chromatography. Among tested mutants, only three (R119A, R122A, and K125A) displayed a substantial reduction in binding to heparin (Figure 1D). Interestingly, these three residues are located at the N-terminus of the soluble TRAIL, which likely adopts a random coil structure because it was not visible in the crystal structure of soluble TRAIL (Figure 1C). Among the identified residues, Arg119 apparently makes the most significant contribution to HS-binding (Figure 1E). To confirm that human TRAIL utilizes a similar HS-binding site, we mutated Arg115 of human TRAIL (structurally homologous to murine Arg119) (Cha et al., 2000) to alanine and found indeed, human R115A also display a dramatic reduction in HS-binding (Figure 1F).
 
@@ -45,7 +45,48 @@ To investigate whether TRAIL is an HS-binding protein, we first examined the bin
 
 **Figure 1.:** (A) Binding of murine TRAIL (mTRAIL) and human TRAIL (hTRAIL) to heparin-Sepharose column. The gray line represents the salt gradient (in conductivity mS/cm, from 150 mM to 1 M). (B) Surface plasmon resonance (SPR) analysis of binding between hTRAIL and HS GlcNS6S- GlcA-GlcNS6S-(IdoA2S-GlcNS6S)4-GlcA dodecamer oligosaccharide. (C) Residues potentially involved in HS- binding. Crystal structure of mTRAIL homotrimer is shown in the cartoon. The three monomers are displayed in green, salmon, and gold, respectively. Because residues 118–123 were disordered in our mTRAIL structure, these residues (118PRGGRP123, backbone shown in gray random coils, enclosed in the red dashed rectangle) were manually modeled onto the last visible N-terminal residue (Q124) of the crystal structure of mTRAIL to allow displaying R119 and R122. (D) Salt elution position of wild-type (WT) or mutants mTRAIL on HiTrap heparin- Sepharose column. (E) Chromatogram of WT and R119A mTRAIL binding to heparin column. (F) Chromatogram of WT and R115A hTRAIL binding to heparin column.
 
-## HS induces TRAIL to form higher-order oligomers in a length-dependent manner
+**Table 1.**
+ List of heparan sulfate (HS) oligosaccharides used in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligosaccharides</th>
+      <th>Structure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-IdoA2S-GlcNS6S-GlcA-pNP*</td>
+    </tr>
+    <tr>
+      <td>8mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-(IdoA2S-GlcNS6S)2-GlcA-pNp</td>
+    </tr>
+    <tr>
+      <td>10mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-(IdoA2S-GlcNS6S)3-GlcA-pNP</td>
+    </tr>
+    <tr>
+      <td>12mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-(IdoA2S-GlcNS6S)4-GlcA-pNP</td>
+    </tr>
+    <tr>
+      <td>14mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-(IdoA2S-GlcNS6S)5-GlcA-pNP</td>
+    </tr>
+    <tr>
+      <td>18mer</td>
+      <td>GlcNS6S-GlcA-GlcNS6S-(IdoA2S-GlcNS6S)7-GlcA-pNP</td>
+    </tr>
+  </tbody>
+</table>
+
+_*pNP = p-nitrophenol. pNP has an UV absorbance peak at 310 nm, which also has significant absorbance at UV 280 nm._
+
+### HS induces TRAIL to form higher-order oligomers in a length-dependent manner
 
 To understand the structural details of HS-TRAIL interaction, we examined complex-formation between mTRAIL and structural-defined HS oligosaccharides (6mer to 18mer, Table 1) by size exclusion chromatography (SEC). We found that when HS 6mer was incubated with mTRAIL, it failed to induce any visible shift in the elution position of TRAIL (retention volume 15.8 ml), and that unbound, excess 6mer could be found eluted at 18.6 ml (Figure 2A). When HS 8mer was incubated with mTRAIL, we observed a slight shift in the retention volume of TRAIL, which possibly indicates the complex formation between mTRAIL and 8mer. When larger HS oligosaccharides (10mer to 18mer) were incubated with mTRAIL, we observed they had progressively stronger effects on the retention position of TRAIL, clearly indicating complex formation between TRAIL and these larger HS oligosaccharides (Figure 2A). In this experiment we noticed that the retention position of the apo form of mTRAIL (predicted trimer MW = 60 kDa) was much later than the retention position of similar-sized proteins based on MW standards (Figure 2A). To confirm that our recombinant mTRAIL truly exists as a homotrimer, and to determine the oligomeric states of the complexes formed by mTRAIL and HS oligosaccharides, we performed multiangle light scattering (MALS) analysis of mTRAIL, mTRAIL/12mer complex and mTRAIL/18mer complex (Figure 2B). SEC-MALS analysis found that the apo form of mTRAIL has a MW of 63 kDa, which confirms that it is indeed a homotrimer. The MW of mTRAIL/12mer complex was found to be 72.8 kDa, which indicates that 12mer (MW = 3.2 kDa) could form a stable complex with mTRAIL homotrimer but could not induce mTRAIL to form a larger oligomer. In contrast, the MW of mTRAIL/18mer complex is significantly larger (102 kDa), which is close to the predicted MW of a mTRAIL hexamer (dimer of trimers, 120 kDa). This result suggests that longer HS oligosaccharides may induce mTRAIL to form larger oligomers. Indeed, we found that mTRAIL can form oligomers that appeared even bigger when incubated with low molecular weight heparin (LMWH, average 24mer) or full-length heparin (average 50mer) (Figure 2C). Of note, when we tried to perform similar experiments with hTRAIL, 12mer interaction caused rapid precipitation of hTRAIL, suggesting that HS also may induce hTRAIL oligomerization that is unstable in in vitro settings.
 
@@ -53,7 +94,7 @@ To understand the structural details of HS-TRAIL interaction, we examined comple
 
 **Figure 2.:** (A) Size exclusion chromatography (SEC) analysis of murine TRAIL (mTRAIL) in complex with HS oligosaccharides of different sizes (6mer, 8mer, 10mer, 12mer, 14mer, and 18mer) on Superdex200 Increase column. Elution position of the molecular weight standards (IgG, 155 kDa; BSA, 66 kDa, and ovalbumin, 44 kDa) are indicated with black triangles. (B) MW determination of TRAIL, TRAIL/12mer complex, and TRAIL/18mer complex by SEC-MALS. The MW data was plotted as dotted lines (left Y-axis) and the relative light scatter signals were plotted as solid lines (right Y-axis) (C) SEC analysis of mTRAIL in complex with low molecular weight heparin (LMWH) and full-length heparin.
 
-## Crystallization of mTRAIL
+### Crystallization of mTRAIL
 
 We determined the crystal structure of soluble mTRAIL to better compare to hTRAIL and understand the biophysical characterization of HS and mTRAIL interactions (Table 2). Though a HS 12mer was present in the crystallization conditions, the oligosaccharide was not visible in the electron density. Similar to hTRAIL, mTRAIL exists as a trimer composed of three β-scaffold core protomers with one protomer comprising the asymmetric unit (Figure 3A and B). A zinc ion, critical for activity (Hymowitz et al., 2000), is located on the threefold axis bound by cysteine 240 from each protomer and a chloride ion (Figure 3B). A major difference between TRAIL and other TNF family members is an insertion of ~12–16 residues between β-strands A and Aʺ known as the A-Aʺ loop (or AAʺ loop, Figure 3A; Cha et al., 1999). The N-terminal β-strand A of mTRAIL is found sandwiched between β-stands H and Aʺ of the neighboring protomer’s central β-scaffold core, a pattern repeated for each protomer (Figure 3A and B). Clear electron density can be traced between this strand and β-strand Aʺ confirming the swapping of the N-terminal strand between the protomers. Interestingly, this swap has not been reported in other structures of TRAIL or TNF family members. In most structures of TRAIL reported some component of this loop is disordered (Cha et al., 1999; Cha et al., 2000; Hymowitz et al., 1999; Hymowitz et al., 2000). When we overlay the crystal structure of hTRAIL (PDB_ID:1DU3, co-crystal structure with DR5) with our structure of mTRAIL, we found that in the 1DU3 coordinates (Cha et al., 2000), the A-Aʺ loop is disordered between residues T135 and A146, however, the distance (36 Å) between them is likely too great for eleven amino acids to span (Figure 3C). Yet, T135 is located ~8 Å from A146 of the neighboring protomer, suggesting a strand swap might also be possible in hTRAIL.
 
@@ -61,17 +102,154 @@ We determined the crystal structure of soluble mTRAIL to better compare to hTRAI
 
 **Figure 3.:** (A) mTRAIL is observed as a strand-swapped homotrimer. Note the N-terminus strand A of one monomer (salmon) is inserted into the β-sheet of the neighboring monomer (yellow). Beta strands A and A" of the salmon monomer, and the strands A" and H of the yellow monomers are labeled. The loop connecting strands A and A” (The A-A" loop) of the salmon monomer is shown in red. Zinc and chloride are shown in cyan and gray spheres, respectively. (B) Looking down from the threefold axis of domain-swapped mTRAIL homotrimer. Side chains of Cys240, which are responsible for chelating Zn2+, are shown in sticks. (C) Overlay of the crystal structure of human TRAIL (hTRAIL) (1DU3) and mTRAIL. To facilitate visualization, only two monomers of hTRAIL (orange and gray) and two monomers of mTRAIL (green and yellow) are shown in the ribbon representation. In the hTRAIL structure, the fragment between T135 and A146 is missing, whereas the homologous fragment in mTRAIL structure is visible (yellow cartoon representation). Note the T135 of the orange human monomer is 36 Å away from A146, where it is only 8 Å from A146 of the neighboring gray human monomer.
 
-## Small angle X-ray scattering (SAXS) analysis of TRAIL/oligosaccharide complexes
+**Table 2.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>mTRAIL*,†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID code</td>
+      <td>8SLR</td>
+    </tr>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P4132</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>147.35, 147.35, 147.35</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50.00–2.40 (2.44-2.40)‡</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>11.0 (93.0)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>4.6 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100.0)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>9.4 (9.9)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>40.50 (2.40)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>21,811</td>
+    </tr>
+    <tr>
+      <td>Rwork / Rfree (%)</td>
+      <td>15.48/18.06</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>1314</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>46.57</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>51.61</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>86.98</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.817</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.31</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*A single crystal was used to collect each dataset.†These crystals were collected on the Southeast Regional Collaborative Access Team (SER-CAT) 22-ID beamline at the Advanced Photon Source at Argonne National Laboratory.‡Values in parentheses are for the highest-resolution shell._
+
+### Small angle X-ray scattering (SAXS) analysis of TRAIL/oligosaccharide complexes
 
 To gain better structural insights into HS-induced TRAIL oligomerization, we performed SAXS analysis of mTRAIL alone and mTRAIL in complex with either a 12mer or 18mer. In these experiments, the complexes were first resolved by size exclusion chromatography and the SAXS data were collected from the eluent in-line in real-time (Figure 4—source data 1). From the P(r) (paired distribution) plot (Figure 4A), it is obvious that compared to TRAIL alone, mTRAIL/18mer complex has substantially increased radius of gyration (Rg), and dramatically increased maximum dimension (Dmax) (Figure 4A), indicating that mTRAIL/18mer complex likely adopts a larger oligomeric state. Consistent with the MW estimation of SEC-MALS analysis (Figure 2B), MW estimation based on SAXS data showed that the predicted MW of the mTRAIL/18mer complex almost doubles the predicted MW of TRAIL alone (105.5 vs 53.7 kDa), which strongly suggests that the TRAIL/18mer complex is likely a stable hexamer (dimer of homotrimers). Also consistent with our SEC-MALS analysis, SAXS data indicate that the dimension of mTRAIL/12mer is much smaller than mTRAIL/18mer but larger than the apo form of mTRAIL, suggesting that mTRAIL and HS 12mer likely formed a stable complex but the binding did not alter the oligomeric state of mTRAIL.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90192/elife-90192-fig4-v1.jpg)
 
-**Figure 4.:** (A) SAXS analysis of size exclusion chromatography (SEC)-purified TRAIL (red), TRAIL/12merNS2S6S complex (blue), and TRAIL/18merNS2S6S complex (green). Shown are overlays of P(r) function plots, along with Rg, Dmax, and MW values were determined from SAXS data. (B) GASBOR-generated ab initio model of TRAIL/18mer complex (with a χ2=0.93) is shown in transparent gray beads. The crystallographic hexamer is manually superimposed onto the GASBOR model with one trimer green and the other yellow.Figure 4—source data 1.
+**Figure 4.:** (A) SAXS analysis of size exclusion chromatography (SEC)-purified TRAIL (red), TRAIL/12merNS2S6S complex (blue), and TRAIL/18merNS2S6S complex (green). Shown are overlays of P(r) function plots, along with Rg, Dmax, and MW values were determined from SAXS data. (B) GASBOR-generated ab initio model of TRAIL/18mer complex (with a χ2=0.93) is shown in transparent gray beads. The crystallographic hexamer is manually superimposed onto the GASBOR model with one trimer green and the other yellow.
 
 Using the scattering data of the mTRAIL/18mer complex, which we predict to be a dimer of homotrimers, we generated an ab initio molecular envelope using GASBOR software, based on P2 symmetry (Figure 4B). The best-fit GASBOR model (χ2=0.93) adopt a dumbbell shape that can accommodate two TRAIL trimers. For perspective we have modeled this in Figure 4B based on the lattice contact between two trimers found in the mTRAIL crystal structure. However, the relative orientation of the two trimers in the SAXS model cannot be definitively determined. This is due to the fact the TRAIL trimer has similar dimensions vertically and horizontally (55–60 Å), which makes it possible for many different relative orientations to fit reasonably well into the GASBOR model.
 
-## HS contributes to cell surface binding of TRAIL
+### HS contributes to cell surface binding of TRAIL
 
 Next, we sought to determine to what extent HS is involved in the binding of soluble TRAIL to breast cancer cells by using a flow-cytometry-based cell surface binding assay. As shown in Figure 5A, mTRAIL bound to the cell surface of murine breast cancer 4T1 cells in a dose-dependent manner. After removing cell surface HS with heparin lyase III (HL-III), we found binding of mTRAIL was reduced by 55% at 300 ng/ml (relative fluorescence units (RFU)=90 vs 40 in untreated and HL-III cells), and by 70% at 100 ng/ml (RFU reduced from 65 to 20). Similar HS-dependent binding was also observed in hTRAIL binding to human breast cancer MDA-MB-453 cells, which after HL-III treatment displayed 60% reduction in binding at 300 ng/ml and 67% reduction at 100 ng/ml (Figure 5B). Using the same assay, we also examined the binding of hTRAIL R115A mutant to MDA-MB-453 cells. Consistent with its greatly reduced binding to heparin-Sepharose (Figure 1F), R115A displayed 60% reduction in binding to cell surface compared to WT hTRAIL (RFU reduced from 10 to 4) (Figure 5C). Of note, after cells are treated with HL-III, there is no difference in binding between WT and R115A hTRAIL, suggesting the R115A mutant fully retains its HS-independent binding capability to cell surface TRAIL receptors but completely lacks HS-dependent interaction with the cell surface (Figure 5C).
 
@@ -79,45 +257,125 @@ Next, we sought to determine to what extent HS is involved in the binding of sol
 
 **Figure 5.:** Binding of mouse TRAIL (100 ng/ml and 300 ng/ml) to 4T1 breast cancer cells (A) and human TRAIL to MDA-MB-453 breast cancer cells (B), with or without heparin lyase III (HL-III) pretreatment, were determined by a FACS-based binding assay. The bound TRAIL were detected by staining with a goat anti-TRAIL antibody, followed by anti-goat-IgG Alexa-647. The shaded histogram is from cells stained only with primary and secondary antibodies. (C) Binding of wild-type (WT) and R115A hTRAIL (300 ng/ml) to MDA-MB-453 cells, with or without HL-III pretreatment were determined by a FACS-based binding assay.
 
-## Cell surface HS promotes TRAIL-induced breast cancer cell apoptosis
+### Cell surface HS promotes TRAIL-induced breast cancer cell apoptosis
 
 Since HS contributes to the binding of TRAIL to tumor cell surfaces, we wondered if HS plays a role in TRAIL-induced tumor cell apoptosis. We first tested this on the adherent breast cancer cell line MDA-MB-453 cells using Annexin V-FITC apoptosis assays. At 30 ng/ml, which we found is sufficient to induce maximum apoptosis in these cells, hTRAIL alone could induce around 8% of cells to undergo apoptosis (Figure 6A and B, Figure 6—source data 1). However, when cell surface HS was first removed by heparin lyase III (HL-III), TRAIL failed to induce apoptosis above the background level (Figure 6A and B). This result suggests that cell surface HS is essential for TRAIL-induced apoptosis in MDA-MB-453 cells. We further tested the impact of the addition of exogenous heparin in TRAIL-induced apoptosis. When heparin was added together with TRAIL to MDA-MB-453 cells, TRAIL-induced apoptosis was completely blocked (Figure 6A and B) presumably by competitively inhibiting TRAIL binding to HS on the cell surface. Combined, these results strongly suggest that cell surface HS can play a critical role in promoting the activity of TRAIL, and such a role is impaired when exogenous heparin is present, which can directly compete with cell surface HS for binding to TRAIL.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90192/elife-90192-fig6-v1.jpg)
 
-**Figure 6.:** (A) The representative Annexin V-FITC apoptotic assay plots and gating method of MDA-MB-453 cells treated with human TRAIL (hTRAIL) (30 ng/ml), in the presence or absence of heparin lyase III (HL-III) and exogenous heparin. Analysis was performed after cells were treated with hTRAIL for 6 hr. (B) Statistical analysis of TRAIL-induced early apoptotic cell population with various treatments. *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays. (C) MDA-MB-453 cells were treated with TRAIL (30 ng/ml) in the presence or absence of HL-III and exogenous heparin for 6 hr. TUNEL staining was performed to visualize apoptosis. Apoptotic cells were stained red. Nuclei were stained blue with DAPI. Scale bar: 50 μm. (D) Statistical analysis of TUNEL staining.Figure 6—source data 1.Figure 6B.Figure 6—source data 2.Figure 6D.
+**Figure 6.:** (A) The representative Annexin V-FITC apoptotic assay plots and gating method of MDA-MB-453 cells treated with human TRAIL (hTRAIL) (30 ng/ml), in the presence or absence of heparin lyase III (HL-III) and exogenous heparin. Analysis was performed after cells were treated with hTRAIL for 6 hr. (B) Statistical analysis of TRAIL-induced early apoptotic cell population with various treatments. *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays. (C) MDA-MB-453 cells were treated with TRAIL (30 ng/ml) in the presence or absence of HL-III and exogenous heparin for 6 hr. TUNEL staining was performed to visualize apoptosis. Apoptotic cells were stained red. Nuclei were stained blue with DAPI. Scale bar: 50 μm. (D) Statistical analysis of TUNEL staining.
 
 As an alternative method to examine apoptosis, we also performed TUNEL staining to examine the role of HS in TRAIL-induced apoptosis. Consistent with what we saw with Annexin V assay--there were many apoptotic cells in the TRAIL alone group, while very few apoptotic cells could be seen in the HL-III pretreated or heparin/TRAIL groups (Figure 6C and D, Figure 6—source data 2).
 
-## Cell surface HS promotes TRAIL-induced myeloma cell apoptosis
+### Cell surface HS promotes TRAIL-induced myeloma cell apoptosis
 
 To investigate whether the dependence of TRAIL on cell surface HS also applies to other types of tumor cells, we examined RPMI-8226 cells, a widely used human myeloma cell line. As reported, RPMI-8226 cells are highly sensitive to TRAIL-induced apoptosis (Mitsiades et al., 2001), requiring only 1 ng/ml hTRAIL to induce around 25% early apoptosis (Figure 7A and C, Figure 7—source data 1). As expected, the removal of cell surface HS significantly reduced TRAIL-induced apoptosis in RPMI-8226 cells (Figure 7B and C). After subtracting the background level of apoptosis (6%), we found that removal of cell surface HS resulted in 55% reduction in apoptosis at 1 ng/ml TRAIL and 44% reduction in apoptosis at 3 ng/ml TRAIL (Figure 7B, Figure 7—source data 2). Next, we examined the effect of adding exogenous heparin and found that only 1 µg/ml heparin was able to abolish TRAIL-induced apoptosis (Figure 7D, Figure 7—source data 3). HS 12mer was also effective in inhibiting apoptosis, albeit to a lesser degree compared to heparin (Figure 7D). This is perhaps unsurprising, given that longer oligosaccharide chains often compete better for binding than shorter chains, and cell surface HS is longer than either heparin or short, synthesized compounds. Finally, we examined the pro-apoptotic capacity of our HS binding-deficient mutant R115A. R115A showed significantly lower induction of apoptosis compared with WT hTRAIL at both 20 ng/ml and 100 ng/ml (Figure 7E, Figure 7—source data 4). While only 20 ng/ml of WT hTRAIL is sufficient to induce 20% apoptosis, the mutant TRAIL requires 100 ng/ml to induce the same level of apoptosis, indicating a fivefold reduction in potency. This result also supports the hypothesis that interaction between cell surface HS and TRAIL greatly enhances TRAIL activity.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90192/elife-90192-fig7-v1.jpg)
 
-**Figure 7.:** (A) TNF-related apoptosis-inducing ligand (TRAIL)-induced apoptosis (at 1, 3, 10, 30 ng/ml) was tested using RPMI-8226 myeloma cells by Annexin V-FITC assay. Cells were analyzed after incubation with human TRAIL (hTRAIL) for 3 hr. (B) hTRAIL (1 or 3 ng/ml)- induced RPMI-8226 cell apoptosis with or without heparin lyase III (HL-III) treatment (5 mU/ml) were determined by Annexin V-FITC assay. (C) Representative scatter plots and gating method of Annexin V-FITC assay. Cells are treated with 1 ng/ml TRAIL in the presence of absence of HL-III (5 mU/ml) and heparin (1 μg/ml). (D) The effects of heparin and HS oligosaccharides 12mer towards TRAIL-induced RPMI8226 cell apoptosis were determined by Annexin V-FITC assay. (E) WT hTRAIL and R115A hTRAIL-induced RPMI8226 cell apoptosis were determined by Annexin V-FITC assay. Error bars represent S.D. ** represents p<0.01, *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays.Figure 7—source data 1.Figure 7A.Figure 7—source data 2.Figure 7B.Figure 7—source data 3.Figure 7D.Figure 7—source data 4.Figure 7E.
+**Figure 7.:** (A) TNF-related apoptosis-inducing ligand (TRAIL)-induced apoptosis (at 1, 3, 10, 30 ng/ml) was tested using RPMI-8226 myeloma cells by Annexin V-FITC assay. Cells were analyzed after incubation with human TRAIL (hTRAIL) for 3 hr. (B) hTRAIL (1 or 3 ng/ml)- induced RPMI-8226 cell apoptosis with or without heparin lyase III (HL-III) treatment (5 mU/ml) were determined by Annexin V-FITC assay. (C) Representative scatter plots and gating method of Annexin V-FITC assay. Cells are treated with 1 ng/ml TRAIL in the presence of absence of HL-III (5 mU/ml) and heparin (1 μg/ml). (D) The effects of heparin and HS oligosaccharides 12mer towards TRAIL-induced RPMI8226 cell apoptosis were determined by Annexin V-FITC assay. (E) WT hTRAIL and R115A hTRAIL-induced RPMI8226 cell apoptosis were determined by Annexin V-FITC assay. Error bars represent S.D. ** represents p<0.01, *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays.
 
-## Cell surface HS level contributes to the sensitivity of myeloma cells towards TRAIL
+### Cell surface HS level contributes to the sensitivity of myeloma cells towards TRAIL
 
 Studies indicate that the sensitivities of myeloma cell lines to TRAIL varies substantially (Gómez-Benito et al., 2007; Mitsiades et al., 2001). In order to understand whether HS plays a role in regulating the sensitivity of different myeloma cells to TRAIL, we compared the HS contents in three different myeloma cell lines. Compared to RPMI-8226 cells (requiring only 1 ng/ml of TRAIL to induce 25% apoptosis, Figure 7A), U266 cells are moderately sensitive to TRAIL, while IM-9 cells are highly resistant to TRAIL (Figure 8A, Figure 8—source data 1). Despite the difference in sensitivity, removal of cell surface HS reduced 50–60% of TRAIL-induced apoptosis in both IM-9 and U266 cells, suggesting cell surface HS promotes TRAIL-induced myeloma cell apoptosis regardless of the sensitivity levels (Figure 8B, Figure 8—source data 2). To determine whether the expression of TRAIL receptors determines their relative sensitivities towards TRAIL, we determined the cell surface expression levels of DR4 and DR5. It turns out that both receptors are abundantly expressed in all three cell lines. For DR5, the highest expression was observed in IM-9 (32 x background), followed by RPMI-8226 (10 x background), and U266 (5 x background). For DR4, the highest expression was observed in RPMI8226 (26 x background), followed by U266 (18 x background) and IM-9 (5 x background) (Figure 8C). Thus, the expression level of TRAIL receptors may not be a major determining factor for the dramatic differences in sensitivity among these lines.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/90192/elife-90192-fig8-v1.jpg)
 
-**Figure 8.:** (A) The sensitivity of U266 and IM-9 cells to TRAIL (10, 30, 100, 300 ng/ml) was determined by Annexin V-FITC assay. (B) TRAIL (100 ng/ml)-induced apoptosis of IM-9 and U266 cells, with or without heparin lyase III (HL-III) pretreatment, were determined by Annexin V-FITC assay. (C) Expression of TRAIL receptor DR4 and DR5 on U266B1, RPMI-8226, and IM-9 cells were determined with PE conjugated mAbs against DR4 and DR5 using FACS. The shaded histograms are from cells stained with mouse IgG1-PE conjugate. (D) Expressions of cell surface HS on untreated cells or cells pretreated with HL-III were determined by a human anti-HS mAb, followed by an anti-human-IgG Alexa-594 secondary antibody. The shaded histogram is from cells stained with secondary antibody only. (E) Expression of cell surface syndecan-1 was determined by a mouse anti- syndecan-1 mAb followed by an anti-mouse-IgG Alexa-488 secondary antibody. The shaded histogram is from cells stained with secondary antibody only. Error bars represent S.D. ** represents p<0.01 and *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays.Figure 8—source data 1.Figure 8A.Figure 8—source data 2.Figure 8B.
+**Figure 8.:** (A) The sensitivity of U266 and IM-9 cells to TRAIL (10, 30, 100, 300 ng/ml) was determined by Annexin V-FITC assay. (B) TRAIL (100 ng/ml)-induced apoptosis of IM-9 and U266 cells, with or without heparin lyase III (HL-III) pretreatment, were determined by Annexin V-FITC assay. (C) Expression of TRAIL receptor DR4 and DR5 on U266B1, RPMI-8226, and IM-9 cells were determined with PE conjugated mAbs against DR4 and DR5 using FACS. The shaded histograms are from cells stained with mouse IgG1-PE conjugate. (D) Expressions of cell surface HS on untreated cells or cells pretreated with HL-III were determined by a human anti-HS mAb, followed by an anti-human-IgG Alexa-594 secondary antibody. The shaded histogram is from cells stained with secondary antibody only. (E) Expression of cell surface syndecan-1 was determined by a mouse anti- syndecan-1 mAb followed by an anti-mouse-IgG Alexa-488 secondary antibody. The shaded histogram is from cells stained with secondary antibody only. Error bars represent S.D. ** represents p<0.01 and *** represents p<0.0001 by Student’s t-test. Data are representative of at least three separate assays.
 
 Next, we examined the abundance of cell surface HS by using a monoclonal anti-HS antibody (HS20), which preferably recognizes highly sulfated HS (Gao et al., 2016). Here, we found while RPMI-8226 and U266 cells both express abundant HS (Figure 8D), IM-9 cells express very small amounts of highly sulfated HS at the cell surface (1.5 x background). Because syndecan-1 has been shown to be the predominant HS proteoglycan expressed by most myeloma cells (Sanderson and Yang, 2008), we performed FACS analysis of cell surface syndecan-1. Interestingly, while syndecan-1 is abundantly expressed by both U266 and RPMI8226 cells, only a portion of IM-9 cells express syndecan-1 at a much lower level (Figure 8E). These observations suggest that reduced syndecan-1 expression could be the main contributor to the limited cell surface presentation of HS.
 
 To examine whether the overall biosynthesis of HS differs among these three myeloma lines, we quantified the total amounts and disaccharide compositions of HS expressed by these cells. We found that the total amount of HS expressed by IM-9 cells is substantially lower, amounting to only 36% and 23% of total HS expressed by U266 and RPMI-8226 cells, respectively (Table 3). In sum, our result suggests that the greatly reduced syndecan-1 expression, combined with a reduced overall production of HS, contributes to the dramatic reduction of cell surface expression of HS in IM-9 cells, which might be a contributing factor to the resistance displayed by this cell line.
 
+**Table 3.**
+ Compositional analysis of heparan sulfate (HS) expressed by myeloma cell lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Disaccharides</th>
+      <th colspan="3">ng/106 cells</th>
+    </tr>
+    <tr>
+      <th>IM-9</th>
+      <th>RPMI 8226</th>
+      <th>U266</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>△UA2S-GlcNS6S</td>
+      <td>1.53</td>
+      <td>4.16</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>△UA-GlcNS6S</td>
+      <td>0.26</td>
+      <td>5.12</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>△UA2S-GlcNS</td>
+      <td>1.38</td>
+      <td>2.43</td>
+      <td>3.30</td>
+    </tr>
+    <tr>
+      <td>△UA-GlcNS</td>
+      <td>2.66</td>
+      <td>14.33</td>
+      <td>9.74</td>
+    </tr>
+    <tr>
+      <td>△UA2S-GlcNAc6S</td>
+      <td>0.07</td>
+      <td>0.16</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>△UA-GlcNAc6S</td>
+      <td>0.26</td>
+      <td>7.57</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>△UA2S-GlcNAc</td>
+      <td>0.59</td>
+      <td>0.76</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>△UA-GlcNAc</td>
+      <td>19.38</td>
+      <td>77.95</td>
+      <td>54.70</td>
+    </tr>
+    <tr>
+      <td>Total amount of HS</td>
+      <td>26.13</td>
+      <td>112.48</td>
+      <td>71.44</td>
+    </tr>
+    <tr>
+      <td>Disaccharides with ≥2 sulfations</td>
+      <td>3.24</td>
+      <td>11.87</td>
+      <td>5.51</td>
+    </tr>
+  </tbody>
+</table>
+
 With regard to the difference in sensitivity between RPMI-8226 and U266 cells, cell surface HS expression level and sulfation level might also play a role based on two observations. First, the amount of highly sulfated HS expressed by RPMI8226 cells is 2.2-fold higher than U266 cells (Table 3). Second, cell surface HS staining suggests that the RPMI8226 cells display highly homogeneous expression of highly sulfated HS structures (Figure 8D, HS-20 staining gave a narrow peak), while the HS expression patten of U266 cells are more heterogeneous, including both high-expression and medium expression cells (Figure 8D, HS-20 staining gave a very broad peak).
 
-## HS forms a complex with TRAIL and DR5 and regulates TRAIL-induced DR5 internalization
+### HS forms a complex with TRAIL and DR5 and regulates TRAIL-induced DR5 internalization
 
 To have a more complete understanding of the role of HS in regulating TRAIL signaling, we investigated whether HS directly interacts with TRAIL receptor. When recombinant extracellular domain of DR5 was applied onto heparin Sepharose column, we found that no DR5 was retained on the heparin column (Figure 9A, left half, Figure 9—source data 1), suggesting there is no direct binding between DR5 and HS. However, when DR5 was premixed with TRAIL and then applied onto heparin column, we found DR5 and TRAIL both bound heparin column and were co-eluted in 500 mM and 1 M salt fractions (Figure 9A, right half, Figure 9—source data 1). This result strongly suggests that TRAIL-DR5 interaction and TRAIL-HS interaction are fully compatible with each other, which is consistent with the fact that the DR5 binding site and the HS-binding sites are spatially separated (Figure 9B). This finding raised the possibility that HS, a molecule that is commonly involved in the internalization of HS-binding proteins (Christianson and Belting, 2014; Payne et al., 2007), might regulate the internalization of DR5 after it is bound by TRAIL. On RPMI-8226 cells, we found that DR5 undergoes rapid internalization after stimulation with TRAIL (Figure 9C), while the internalization of DR4 is very limited (Figure 9D). Focusing on TRAIL-induced DR5 internalization, we compared the internalization kinetics between intact cells and cells pre-treated with HL-III from 15 min to 1 hr. Interestingly, the removal of cell surface HS significantly reduced the rate of DR5 internalization (Figure 9E). By 60 mins, the internalization level of DR5 on HL-III treated cells was less than the internalization level of DR5 of cells without HL-III treatment at 15 min, which represents a reduction of internalization rate of at least fourfold after removal of cell-surface HS. This result suggests HS might regulate TRAIL signaling by altering TRAIL-induced DR5 internalization.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/90192/elife-90192-fig9-v1.jpg)
 
-**Figure 9.:** (A) While DR5 does not bind heparin by itself (left half of the gel), DR5-TRAIL complex can bind heparin (right half of the gel), indicating DR5-TRAIL-heparin can form a ternary complex through TRAIL. Representative of three experiments with identical results (B) DR5 and HS bind to different surfaces on TRAIL. Crystal structure of hTRAIL-DR5 complex (IDU3). Human TRAIL (hTRAIL) is shown in the cartoon and the three monomers are displayed in green, salmon and gold, respectively. The three DR5 molecules are shown in gray cartoon. Because residues 114–119 of hTRAIL are disordered in this structure, these residues (114VRERGP119, backbone shown in gray random coils) were manually modeled onto the last visible N-terminal residue (Q120) of the hTRAIL. Sidechains responsible for HS binding (from R115, R117, and R121) are shown in sticks. (C–E) TRAIL-dependent internalization of DR4 and DR5 was determined by a FACS-based assay. Cell surface levels of TRAIL receptor DR5(C) and DR4 (D) were determined before TRAIL stimulation, and 30 min and 1 hr after TRAIL stimulation. The shaded histograms are from cells stained mouse IgG1-PE conjugate. (E) Plot of time-dependent internalization of cell surface DR5, with or without HL-III treatment. n=3. *** represents p<0.0001. Data is representative of three experiments with similar results.Figure 9—source data 1.Figure 9A.Figure 9—source data 2.Figure 9A with relevant lanes labeled.Figure 9—source data 3.Figure 9E.
+**Figure 9.:** (A) While DR5 does not bind heparin by itself (left half of the gel), DR5-TRAIL complex can bind heparin (right half of the gel), indicating DR5-TRAIL-heparin can form a ternary complex through TRAIL. Representative of three experiments with identical results (B) DR5 and HS bind to different surfaces on TRAIL. Crystal structure of hTRAIL-DR5 complex (IDU3). Human TRAIL (hTRAIL) is shown in the cartoon and the three monomers are displayed in green, salmon and gold, respectively. The three DR5 molecules are shown in gray cartoon. Because residues 114–119 of hTRAIL are disordered in this structure, these residues (114VRERGP119, backbone shown in gray random coils) were manually modeled onto the last visible N-terminal residue (Q120) of the hTRAIL. Sidechains responsible for HS binding (from R115, R117, and R121) are shown in sticks. (C–E) TRAIL-dependent internalization of DR4 and DR5 was determined by a FACS-based assay. Cell surface levels of TRAIL receptor DR5(C) and DR4 (D) were determined before TRAIL stimulation, and 30 min and 1 hr after TRAIL stimulation. The shaded histograms are from cells stained mouse IgG1-PE conjugate. (E) Plot of time-dependent internalization of cell surface DR5, with or without HL-III treatment. n=3. *** represents p<0.0001. Data is representative of three experiments with similar results.
 
 ## Discussion
 
@@ -137,72 +395,229 @@ In conclusion, our study has provided strong evidence that HS plays an essential
 
 ## Materials and methods
 
-## Expression and purification of the extracellular domain of mouse TRAIL (aa118-291) and human TRAIL (aa115-281) in E. coli
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Origami-B (DE3)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#: 70837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MDA-MB-453</td>
+      <td>ATCC</td>
+      <td>Cat#: HTB-131</td>
+      <td>Identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>RPMI-8226</td>
+      <td>ATCC</td>
+      <td>Cat#: CCL-155</td>
+      <td>Identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>U266B1</td>
+      <td>ATCC</td>
+      <td>Cat#: TIB-196</td>
+      <td>Identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>IM-9</td>
+      <td>ATCC</td>
+      <td>Cat#: CCL-159</td>
+      <td>Identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse TRAIL (goat polyclonal)</td>
+      <td>R&amp;D systems</td>
+      <td>Cat#: AF1121</td>
+      <td>FC: 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human TRAIL (goat polyclonal)</td>
+      <td>R&amp;D systems</td>
+      <td>Cat#: AF375</td>
+      <td>FC: 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human DR4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: B376455</td>
+      <td>FC: 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human DR5 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: B347680</td>
+      <td>FC: 1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HS human monoclonal (HS-20)</td>
+      <td>PMID:27185050</td>
+      <td>Gift from Dr. Ho (NCI)</td>
+      <td>FC: 2 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human syndecan-1 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: B280312</td>
+      <td>FC: 10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21b (plasmid)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#: 69741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Murine TRAIL (E. coli)</td>
+      <td>Produced in the lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Human TRAIL (E. coli)</td>
+      <td>Produced in the lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Human TRAIL (mammalian)</td>
+      <td>Biolegend</td>
+      <td>B294007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Mouse DR5-Fc fusion</td>
+      <td>R&amp;D systems</td>
+      <td>721-DR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL staining kit</td>
+      <td>Thermofisher</td>
+      <td>Cat#: C10619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Annexin-FITC staining kit</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#: 4830–250 K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (v1.50i)</td>
+      <td>PMID:22930834</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of the extracellular domain of mouse TRAIL (aa118-291) and human TRAIL (aa115-281) in E. coli
 
 Recombinant mouse or human TRAIL was generated in Escherichia coli. The coding sequence of mouse TRAIL (aa118-291) or human TRAIL (aa115-281) was amplified from its cDNA and was cloned into pET21b (Novagen) using NdeI and XhoI sites. Expression was carried out at 18 °C in Origami-B cells (Novagen) carrying the pGro7 (Takara) plasmid expressing chaperonin proteins GroEL and GroES following an established protocol (Zhang et al., 2021). Purification was carried out using HiTrap SP cation exchange chromatography (with Buffer A: 25 mM MES, pH 6.5, 50 mM NaCl; and Buffer B: 25 mM MES, pH 6.5, 1 M NaCl), followed by gel permeation chromatography with HiLoad 16/60 Superdex 200 (GE healthcare) in 25 mM HEPES, pH 7.1, 150 mM NaCl. After purification, TRAIL was >99% pure, as judged by silver staining.
 
-## Heparin–sepharose chromatography
+### Heparin–sepharose chromatography
 
 To characterize the binding of WT TRAIL and TRAIL mutants to heparin, 100 μg of purified WT or mutant TRAIL was applied to a 1 ml HiTrap heparin–Sepharose column (Cytiva Lifesciences) and eluted with a salt gradient from 150 mM to 1 M NaCl at pH 7.1 in 25 mM HEPES buffer. The conductivity measurements at the peak of the elution were converted to the concentration of NaCl based on a standard curve.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 TRAIL mutants were prepared using a previously published method (Zheng et al., 2004). Mutations were confirmed by Sanger sequencing, and recombinant protein was expressed as described for WT TRAIL. Purification was carried out using HiTrap SP cation exchange column at pH 7.1 (HEPES buffer), followed by gel permeation chromatography as described for WT TRAIL.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 SPR was performed on an OpenSPR instrument (Nicoya). Biotinylation of chemoenzymatically synthesized HS 12merNS2S6S was prepared as previously described (Arnold et al., 2020). Biotinylated 12merNS2S6S was immobilized to a streptavidin sensor chip (Nicoya) based on the manufacturer’s protocol. In brief, 150 µl of solution of the biotin-12merNS2S6S (18 µg/ml) in HBS-running buffer (25 mM HEPES, pH 7.1, 150 mM NaCl, 0.05% Tween-20) was injected to channel 2 of the flow cell of the sensor chip at a flow rate of 20 µl/min. The successful immobilization of biotin-12merNS2S6S was confirmed by the observation of a 100–200 resonance unit increase in the sensor chip. The flow cell channel 1 was used as the background control, which was not immobilized with biotin-12merNS2S6S. Different dilutions of hTRAIL (concentrations from 68 to 1088 nM) in HBS-running buffer were injected at a flow rate of 20 µl/min. At the end of the sample injection, the same buffer was flowed over the sensor surface to facilitate dissociation. After a 5 min dissociation time, the sensor surface was regenerated by injecting with 150 µl regeneration buffer (25 mM HEPES, pH 7.1, 2 M NaCl) at a flow rate of 150 µl/min to get a fully regenerated surface. The sensorgrams were fit with 1:1 Langmuir binding model from TraceDrawer 1.9.2.
 
-## Analytical size-exclusion chromatography (SEC)
+### Analytical size-exclusion chromatography (SEC)
 
 For analysis of mTRAIL and HS oligosaccharide complexes, purified mTRAIL (100 µg) was incubated with HS oligosaccharides (molar ratio 1:1) in 25 mM HEPES, 150 mM NaCl, pH 7.1, at room temperature for 1 hr. For analysis of mTRAIL and low molecular weight/full-length heparin complex, purified mTRAIL (100 ug) was incubated with heparin (molar ratio 1:1) in 25 mM HEPES, 150 mM NaCl, pH 7.1, at room temperature for 1 hr. All complexes were resolved on a Superdex 200 Increase filtration column (Cytiva Lifesciences) using 25 mM HEPES, 150 mM NaCl, pH 7.1, at 4 °C. Presence of a para-nitrophenyl group in the reducing end of the oligosaccharides allows excess oligosaccharides to be visible in the A280 elution profile.
 
-## SEC-multiangle light scattering (MALS)
+### SEC-multiangle light scattering (MALS)
 
 SEC-MALS analysis was performed using a DAWN MALS detector (Wyatt Technology) connected to an AKTA FPLC system (GE Healthsciences). mTRAIL, mTRAIL/12mer complex and mTRAIL/18mer complex were prepared as describe above and concentrated to ~4 mg/ml, and 100 µl was resolved on Superdex 200 Increase SEC column using 25 mM HEPES, 150 mM NaCl, pH 7.1. The MALS data was analyzed using ASTRA software (ver. 7.3.2.17).
 
-## Crystallization of mTRAIL
+### Crystallization of mTRAIL
 
 TRAIL was crystallized using the sitting drop vapor diffusion technique by mixing 400 nl of protein solution consisting of 4.4 mg/ml TRAIL, 1 mM HS 12merNS2S6S, 25 mM HEPES pH 7.1, and 150 mM NaCl with 250 nl of the reservoir consisting of 85 mM HEPES pH 7.5, 8.5% PEG 8000 (w/v), and 8.5% ethylene glycol (v/v). Crystals were harvested by adding 1 ul of cryo solution, consisting of 90% reservoir and an additional 10% ethylene glycol, directly to the crystal drop prior to mounting the crystal and flash freezing in liquid nitrogen. Data were collected on the Southeast Regional Collaborative Access Team (SER-CAT) 22-ID beamline at the Advanced Photon Source, Argonne National Laboratory (Table 2). Data were integrated and scaled using HKL2000 (Otwinowski and Minor, 1997). The structure was solved by performing molecular replacement using PDB coordinates 1DU3 Cha et al., 2000 followed by iterative cycles of refinement in Phenix and manual model building in Coot (Adams et al., 2010; Emsley and Cowtan, 2004; Emsley et al., 2010; Zwart et al., 2008). Model statistics and quality were evaluated using MolProbity (Chen et al., 2010) and are presented in (Table 2).
 
-## Small-angle X-ray scattering
+### Small-angle X-ray scattering
 
 Scattering data were collected at the beamline 12.3.1 at the Lawrence Berkeley National Laboratory using a SEC-SAXS mail-in service (Classen et al., 2013). mTRAIL-12mer and mTRAIL-18mer complexes were prepared by mixing 1 mg mTRAIL with 160 µg 12mer or 240 µg 18mer (molar ratio 1:1 for both) for 1 h in HEPES buffer (25 mM HEPES, pH 7.1, 0.15 M NaCl, pH 7.1) at room temperature. The complexes, and free mTRAIL, were concentrated to 6 mg/ml for data collection. The proteins were resolved on an SEC column (Protein KW-802.5, Shodex) on an Agilent 1260 series HPLC. SAXS data were collected from in-line eluent as the samples come off the column, and 3 s exposures were collected for each frame over the course of 33 min (~660 frames for the entire run). The scattering data of the frames corresponding to the protein peak (10 frames) were averaged and used for data analysis. Determination of Guinier plot, P(r) function plot, and MW estimation was performed using RAW (version 2.14) (Hopkins et al., 2017; Putnam et al., 2007). The ab initio model of the mTRAIL-18mer complex was generated by GASBOR (Svergun et al., 2001), based on P2 symmetry. The whole set of experiments were performed twice using two different mTRAIL preparations with similar results.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 4T1 cells and MDA-MB-453 cells were incubated with 100 or 300 ng/mL mTRAIL or hTRAIL, respectively, in PBS containing 0.1% BSA for 1 hr at 4 °C. Bound TRAIL was stained with goat anti-mTRAIL (1 ug/ml, AF1121, R&D systems) or goat anti-hTRAIL (1 ug/ml, AF375, R&D systems) for 1 hr at 4 °C, followed by anti-goat IgG–Alexa647 (1:1000, Thermo Fisher Scientific) for 30 min, and washed and fixed in 2% PFA for flow cytometry analysis. The cell surface expression levels of DR4 and DR5 on RPMI8226, U266B1, and IM-9 cells were evaluated directly with PE-conjugated anti-human DR4 antibody (B376455, Biolegend) and PE-conjugated anti-human DR5 antibody (B347680, Biolegend), both at 1 µg/ml. For control, cells were stained with PE-conjugated Rat IgG1. The cell surface expression level of HS on RPMI-8226, U266B1, and IM-9 cells were evaluated by incubating cells with 2 µg/ml HS20 antibody (gift from Dr. Michell Ho, NCI) for 1 hr at 4 °C, followed by anti-human IgG–Alexa594 (1:1000, Thermo Fisher Scientific) for 30 min and analyzed by flow cytometry. For control, cells were stained with anti-human IgG–Alexa594 only. The cell surface expression level of syndecan-1 was evaluated by incubating cells with anti-syndecan-1 antibody (10 µg/ml, B280312, Biolegend) for 1 hr at 4 °C, followed by anti-mouse IgG–Alexa488 (1:1000, Thermo Fisher Scientific) for 30 min and analyzed by flow cytometry. For control, cells were stained with anti-mouse IgG–Alexa488 only. In some experiments, cells were pretreated with recombinant HL-III (5 milliunits/ml, produced in our lab) for 15 min at room temperature prior to binding experiments.
 
-## Annexin V-FITC assay
+### Annexin V-FITC assay
 
 Apoptosis of tumor cells was determined with an Annexin-FITC staining kit (R&D Systems) as per the manufacturer’s instructions and analyzed by flow cytometry. Briefly, breast cancer cells and myeloma cells were treated with recombinant hTRAIL (B294007, Biolegend, 1–300 ng/ml for different cells) for 3 hr in the presence or absence of either HL-III (5 milliunits/ml), heparin (1–20 µg/ml) or HS 12mer (10 µg/ml). The treated cells were harvested and incubated with a reaction mixture containing Annexin-FITC and Propidium iodide in the dark for 15–30 min for labeling. Annexin-FITC binds phosphatidylserine that are exposed in apoptotic cells. Propidium iodide (PI) is a membrane-impermeant DNA dye and only stains cells that have lost membrane integrity (necrotic cells) but not early apoptotic cells. Fluorescence of PI often increase at least 30-fold after binding to DNA. In our hands, after HL-III or heparin treatments the PI signal often decreased ~twofold on viable cells (Figures 6A and 7C). Because PI is positively charged, it is likely that cell surface HS binds PI and such interaction might contribute to the background staining of PI on live cells. We also observed viable cells that were treated with TRAIL alone had a 1.5–2 fold increase in PI signal. The reason for this increase is unknown. In all experiments, early apoptotic cells (labeled apoptotic cells for simplicity) were identified as PI low (in the PE channel), Annexin-FITC high cells; while necrotic cells were identified as PI high, Annexin-FITC high cells.
 
-## TUNEL assay
+### TUNEL assay
 
 MAD-MB-453 cells were treated with recombinant hTRAIL (30 ng/ml, B294007, Biolegend) for 6 hr, in the presence of absence of HL-III (5 milliunits/ml) or heparin (1 µg/ml). TUNEL staining was performed using an apoptosis terminal deoxynucleotidyl transferase (TdT) DNA fragment detection kit (ThermoFisher), according to the manufacturer’s instructions. Briefy, cells were fixed with 4% paraformaldehyde in PBS and permeabilized with 0.25% Triton X-100. Cells were then incubated with TdT reaction mixture for 60 min at 37 °C, followed by incubation with Click-iT Plus TUNEL reaction cocktail (with Alexa647 dye) for 30 min at 37 °C. Slides were mounted with Prolong mounting medium with DAPI and images were taken with a Nikon Ci-S fluorescence microscope.
 
-## Disaccharide analysis of myeloma cell HS
+### Disaccharide analysis of myeloma cell HS
 
-## Sample preparation
+#### Sample preparation
 
 RPMI-8226, U266B1 and IM-9 cells were cultured to subconfluence in RPMI-1640 medium supplemented with 15% FBS, and 8 × 106 cells were harvested to purify cellular HS. Cell pellets were resuspended in 750 μL of water and digested with 150 μL pronase E (20 mg/mL, Sigma-Aldrich) at 55 °C for 24 hr. After proteolyzed, the solution was boiled at 100 °C for 10 min, and centrifuged at 14,000 rpm for 10 min. Before loading to DEAE column, 2 μL13C-labeled N-sulfated K5 polysaccharide (45 ng/μl) was added to the supernatant. DEAE column buffer A contained 20 mM Tris, pH 7.5, and 50 mM NaCl, and buffer B contained 20 mM Tris, pH 7.5 and 1 M NaCl. After loading the sample into the DEAE column, the column was washed with 1.5 mL buffer A, followed by 1.5 mL buffer B to elute the HS. The eluted HS was desalted using an YM-3-kDa spin device using deionized water, and the desalted HS was dried for heparin lyases digestion. Samples were digested in 100 μL heparin lyases digestion buffer (100 mM sodium acetate, 2 mM calcium acetate buffer, and 0.1 g/L BSA, pH 7.0) containing heparin lyase I (60 µg/ml), II (340 µg/ml), and III (500 µg/ml). The digestion solution was incubated at 37 °C for 12 hr, after which it was boiled at 100 °C for 10 min. Before recovering the digests from the digest solution, a known amount of 13C-labeled disaccharide calibrants (△[13C]UA-GlcNAc, △[13C]UA2S-GlcNAc, △[13C]UA-GlcNAc6S, △[13C]UA2S-GlcNAc6S, △[13C]UA-GlcNS, △[13C]UA2S-GlcNS, △[13C]UA-GlcNS6S, and△[13C]UA2S-GlcNS6S) were added to the digestion solution. The HS disaccharides were recovered by centrifugation, and supernatant were freeze-dried before the AMAC derivatization.
 
-## Chemical derivatization of HS disaccharides
+#### Chemical derivatization of HS disaccharides
 
 The 2-Aminoacridone (AMAC) derivatization of lyophilized samples was performed by adding 10 μL of 0.1 M AMAC solution in DMSO/glacial acetic acid (17:3, v/v) and incubating at room temperature for 15 min. Then 10 μL of 1 M aqueous sodium cyanoborohydride (freshly prepared) was added to this solution. The reaction mixture was incubated at 45 °C for 2 hr. After incubation, the reaction solution was centrifuged to obtain the supernatant that was subjected to the LC-MS/MS analysis.
 
-## LC-MS/MS analysis
+#### LC-MS/MS analysis
 
 The analysis of AMAC-labeled disaccharides was performed on a Vanquish Flex UHPLC System (Thermo Fisher Scientific) coupled with TSQ Fortis triple-quadrupole mass spectrometry as the detector. The C18 column (Agilent InfinityLab Poroshell 120 EC-C18 2.7  μm, 4.6 × 50  mm) was used to separate the AMAC-labeled disaccharides. Buffer A was 50  mM ammonium acetate in water and buffer B is methanol. The elution gradient was from 5–45% buffer B in 10  min, followed by 100% buffer B in 4  min, at a flow rate of 0.3  ml/min. Online triple-quadrupole mass spectrometry operating in the multiple-reaction-monitoring (MRM) mode was used as the detector. The ESI-MS analysis was operated in the negative-ion mode using the following parameters: Neg ion spray voltage at 4.0 kV, sheath gas at 45 Arb, aux gas 15 arb, ion transfer tube temp at 320  °C, and vaporizer temp at 350  °C. TraceFinder software was applied for data processing.
 
-## Binding of DR5-TRAIL complex to heparin-sepharose
+### Binding of DR5-TRAIL complex to heparin-sepharose
 
 Recombinant mouse DR5 (aa53-177)-Fc fusion protein (721-DR, R&D) alone (10 µg), or DR5–mTRAIL complex (10 µg each pre-incubated for 1 hr at room temperature), were loaded onto heparin-Sepharose (Cytiva) gravity column (200 µl bed volume). Column was first washed with 2 ml buffer A (25 mM HEPES, pH7.1, 150 mM NaCl), followed by four elution steps (800 µl each) using buffers containing 300 mM, 500 mM, 1 M, and 2 M NaCl, respectively. 30 µl of eluents from each step were resolved on a 4–20% SDS-PAGE gel and the gel was visualized by silver staining.
 
-## DR5 and DR4 internalization assay
+### DR5 and DR4 internalization assay
 
 RPMI-8226 cells were treated with 50 ng/ml recombinant hTRAIL at 37 C for 15, 30, or 60 min, Selected samples were pretreated with HL-III for 15 min prior to the addition of hTRAIL. Cell surface expression DR5 and DR4 were determined by flow cytometry as described above.
 
-## Statistical analysis
+### Statistical analysis
 
 All data are expressed as means ± SDs. Statistical significance was assessed using two-tailed Student’s t-tests or analysis of variance (ANOVA) using GraphPad Prism software (GraphPad Sofware Inc). p--value <0.05 was considered significant.

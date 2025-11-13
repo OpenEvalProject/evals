@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04cvxnb49 Department of Psychology, Goethe University Frankfurt Frankfurt Germany
-2. https://ror.org/03angcq70 Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom
-3. https://ror.org/03angcq70 Institute for Mental Health, School of Psychology, University of Birmingham Birmingham United Kingdom
-4. https://ror.org/03angcq70 Centre for Developmental Science, School of Psychology, University of Birmingham Birmingham United Kingdom
-5. https://ror.org/03prydq77 Social, Cognitive and Affective Neuroscience Unit, Department of Cognition, Emotion, and Methods in Psychology, Faculty of Psychology, University of Vienna Vienna Austria
-6. https://ror.org/02pp7px91 Max Planck Research Group Biosocial, Max Planck Institute for Human Development Berlin Germany
-7. https://ror.org/001w7jn25 Charité – Universitätsmedizin Berlin, Institute of Medical Psychology Berlin Germany
-8. https://ror.org/0387jng26 Max Planck School of Cognition, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-9. https://ror.org/05vmv8m79 Frankfurt Institute for Advanced Studies (FIAS) Frankfurt am Main Germany
-10. https://ror.org/04p491231 Center for Safe & Healthy Children, The Pennsylvania State University University Park United States
+1. Department of Psychology, Goethe University Frankfurt Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+2. Centre for Human Brain Health, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+3. Institute for Mental Health, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+4. Centre for Developmental Science, School of Psychology, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+5. Social, Cognitive and Affective Neuroscience Unit, Department of Cognition, Emotion, and Methods in Psychology, Faculty of Psychology, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+6. Max Planck Research Group Biosocial, Max Planck Institute for Human Development Berlin Germany ([ROR:02pp7px91](https://ror.org/02pp7px91))
+7. Charité – Universitätsmedizin Berlin, Institute of Medical Psychology Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
+8. Max Planck School of Cognition, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+9. Frankfurt Institute for Advanced Studies (FIAS) Frankfurt am Main Germany ([ROR:05vmv8m79](https://ror.org/05vmv8m79))
+10. Center for Safe & Healthy Children, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
@@ -49,7 +49,7 @@ This study aimed to explore the development of value-based learning in children 
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 First, we were interested in whether children showed behavioral differences between waves and feedback timing. A descriptive overview is provided in Table 1 and Figure 2. The details of the reported GLMM models, including the random effects structure and the effects of age and sex, are described in the Appendix 2. Since some children were poor learners who failed to reach 50% average accuracy in their last 20 trials (13 children at wave 1 and 6 children at wave 2), we also performed behavioral analyses with a reduced dataset in which results remained unchanged (Appendix 6).
 
@@ -57,27 +57,286 @@ First, we were interested in whether children showed behavioral differences betw
 
 **Figure 2.:** (A) Accuracy did not differ by feedback timing and increased between waves. (B) Win-stay and lose-shift proportion did not differ by feedback timing, and win-stay increased and lose-shift proportion decreased between waves. (C) Reaction time (in ms) differed by feedback timing, in which decisions for cues learned with delayed feedback were faster, and reaction times were faster at wave 2 compared to wave 1. (D) Correlations between behavioral outcomes reveal that learning accuracy was primarily correlated with the win-stay and lose-shift probabilities both within and between waves, but was uncorrelated to reaction time. Significant correlations are circled, p-values were adjusted for multiple comparisons using bonferroni correction.
 
-## Children’s learning improved between waves
+**Table 1.**
+ Behavioral learning outcomes and mixed model fixed effects that predicted the outcomes.
 
-With the complete dataset, we found that increased learning accuracy (i.e. the probability of choosing the more rewarding option) was predicted at wave 2 compared to wave 1, but there were no differences in accuracy by feedback timing (βwave=2 = .550, SE = .061, z = 8.97, p < 0.001, βfeedback=delayed = 0.013, SE = 0.024, z = 0.54, p = 0.590). Furthermore, win-stay probability increased and lose-shift probability decreased longitudinally, again without differences by feedback timing (WS: βwave=2 = 0.586, SE = 0.071, z = 8.22, p < 0.001, βfeedback=delayed = 0.023, SE = 0.033, z = 0.69, p = 0.489; LS: βwave=2 = –0.252, SE = 0.037, z = –6.87, p < 0.001, βfeedback=delayed = 0.030, SE = 0.022, z = 1.37, p = 0.169). Reaction times were faster at wave 2 compared to wave 1, and they were faster for delayed compared to immediate feedback trials (βwave=2 = –0.221, SE = 22.8, t(135) = –9.70, p < 0.001, βfeedback=delayed = –13.8, SE = 6.59, t(136) = –2.10, p = 0.038). To summarize, children’s average accuracy improved over 2 years, while their win-stay probability increased and their lose-shift probability decreased between waves. Children were able to respond faster to cues paired with delayed feedback compared to cues paired with immediate feedback, and they became faster in their decision-making across waves (see mixed model effects overview in Table 1). Of note, reaction times were largely uncorrelated with accuracy and switching behavior (win-stay, lose-shift), while accuracy and switching behavior showed significant correlations at both waves (Figure 2D).
 
-## Modeling results
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Descriptive Results</th>
+      <th colspan="2">Mixed Model Effects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Wave 1</td>
+      <td></td>
+      <td>Wave 2</td>
+      <td></td>
+      <td>Wave</td>
+      <td>Feedback</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Immediate</td>
+      <td>Delayed</td>
+      <td>Immediate</td>
+      <td>Delayed</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACC</td>
+      <td>0.69 (0.46)</td>
+      <td>0.70 (0.46)</td>
+      <td>0.79 (0.41)</td>
+      <td>0.80 (0.40)</td>
+      <td>↑ W2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WS</td>
+      <td>0.81 (0.39)</td>
+      <td>0.80 (0.40)</td>
+      <td>0.88 (0.32)</td>
+      <td>0.88 (0.32)</td>
+      <td>↑ W2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>0.47 (0.50)</td>
+      <td>0.50 (0.50)</td>
+      <td>0.42 (0.49)</td>
+      <td>0.42 (0.49)</td>
+      <td>↓ W2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RT</td>
+      <td>2.10 (1.31)</td>
+      <td>2.07 (1.29)</td>
+      <td>1.70 (1.02)</td>
+      <td>1.67 (1.00)</td>
+      <td>↓ W2</td>
+      <td>↓ Delayed</td>
+    </tr>
+  </tbody>
+</table>
 
-## Children’s behavior was best described by value-based learning
+_Note. Mean (standard deviation of accuracy) (ACC, probability correct), win-stay probability (WS), lose-shift probability (LS), and reaction time (RT, in seconds), split by wave and feedback timing. Mixed model effects and their directionality of effect (increasing ↑ or decreasing ↓). W2 = Wave 2._
 
-We conducted a 2-step sequential procedure for model development and model selection. Model comparison using leave-one-out cross validation showed evidence in favor of the value-based learning model, reflected in the highest expected log pointwise predictive density and highest model weights, confirming that children’s learning behavior in the longitudinal data can generally be better described by a value-based rather than by a heuristic strategy model (elpdloo = –15154.9, Pseudo-BMA+ = 1, Table 2). Children whose individual fit was better for a heuristic model (wsls) than for the value-based model (vbm1), were at both waves more likely to be poor learners (defined as an accuracy below 50% in the last 20 trials). Taken together, children’s learning behavior was best described by a value-based model, and a heuristic strategy model captured more poor learners compared to a value-based model.
+#### Children’s learning improved between waves
 
-## Feedback timing modulated choice stochasticity
+With the complete dataset, we found that increased learning accuracy (i.e. the probability of choosing the more rewarding option) was predicted at wave 2 compared to wave 1, but there were no differences in accuracy by feedback timing ($\beta_{wave=2}$ = .550, SE = .061, z = 8.97, p < 0.001, $\beta_{feedback=delayed}$ = 0.013, SE = 0.024, z = 0.54, p = 0.590). Furthermore, win-stay probability increased and lose-shift probability decreased longitudinally, again without differences by feedback timing (WS: $\beta_{wave=2}$ = 0.586, SE = 0.071, z = 8.22, p < 0.001, $\beta_{feedback=delayed}$ = 0.023, SE = 0.033, z = 0.69, p = 0.489; LS: $\beta_{wave=2}$ = –0.252, SE = 0.037, z = –6.87, p < 0.001, $\beta_{feedback=delayed}$ = 0.030, SE = 0.022, z = 1.37, p = 0.169). Reaction times were faster at wave 2 compared to wave 1, and they were faster for delayed compared to immediate feedback trials ($\beta_{wave=2}$ = –0.221, SE = 22.8, t(135) = –9.70, p < 0.001, $\beta_{feedback=delayed}$ = –13.8, SE = 6.59, t(136) = –2.10, p = 0.038). To summarize, children’s average accuracy improved over 2 years, while their win-stay probability increased and their lose-shift probability decreased between waves. Children were able to respond faster to cues paired with delayed feedback compared to cues paired with immediate feedback, and they became faster in their decision-making across waves (see mixed model effects overview in Table 1). Of note, reaction times were largely uncorrelated with accuracy and switching behavior (win-stay, lose-shift), while accuracy and switching behavior showed significant correlations at both waves (Figure 2D).
 
-Model vbm3 (1α2τ) showed the largest model evidence, reflected in the highest expected log pointwise predictive density and highest model weights and suggests that feedback timing affected the inverse temperature, but not the learning rate or outcome sensitivity (elpdloo = –15045.3, pseudo-BMA+ = 0.73, Table 2). Table 3 and Figure 3A provide a descriptive overview of the winning model parameters. Of note, there were only small differences in model fit (elpdloo) to the second-best model (vbm7,1α2ρ, Δelpdloo = –2.93, elpd_SEloo = 2.92, Pseudo-BMA+ = 0.24), which suggests a potential separable feedback timing effect on outcome sensitivity. We also performed the model comparison with a reduced dataset in which the winning model remained the same (Appendix 6). The average inverse temperature did not differ by feedback condition, but showed large within-person condition differences at both waves, indicating individual differences in feedback timing modulation (wave 1: ∆τdel-ime Mean = 0.22, SD = 3.80, Range = 21.74, wave 2: ∆τdel-ime Mean = 0.35, SD = 3.70, Range = 24.03). The correlations between the parameters are reported in Appendix 3.
+### Modeling results
+
+#### Children’s behavior was best described by value-based learning
+
+We conducted a 2-step sequential procedure for model development and model selection. Model comparison using leave-one-out cross validation showed evidence in favor of the value-based learning model, reflected in the highest expected log pointwise predictive density and highest model weights, confirming that children’s learning behavior in the longitudinal data can generally be better described by a value-based rather than by a heuristic strategy model ($elpd_{loo}$ = –15154.9, Pseudo-BMA+ = 1, Table 2). Children whose individual fit was better for a heuristic model ($wsls$) than for the value-based model ($vbm_{1}$), were at both waves more likely to be poor learners (defined as an accuracy below 50% in the last 20 trials). Taken together, children’s learning behavior was best described by a value-based model, and a heuristic strategy model captured more poor learners compared to a value-based model.
+
+**Table 2.**
+ Model comparison results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Parameters</th>
+      <th>Δelpdloo[SE]</th>
+      <th>Σelpdloo[mean]</th>
+      <th>Pseudo-BMA+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Step 1: heuristic strategy models and value-based learning model</td>
+    </tr>
+    <tr>
+      <td>vbm1</td>
+      <td>1α, 1τ</td>
+      <td>0 [0]</td>
+      <td>–15154.9 [-0.45]</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ws</td>
+      <td>1τws</td>
+      <td>–1327.7 [159.5]</td>
+      <td>–16482.7 [-0.49]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>wsls</td>
+      <td>1τwsls</td>
+      <td>–4247.3 [284.8]</td>
+      <td>–19402.3 [-0.58]</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="5">Step 2: value-based learning models</td>
+    </tr>
+    <tr>
+      <td>vbm3</td>
+      <td>1α, 2τ</td>
+      <td>0 [0]</td>
+      <td>–15045.3 [-0.45]</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>vbm7</td>
+      <td>1α, 2ρ</td>
+      <td>–2.93 [2.92]</td>
+      <td>–15048.2 [-0.45]</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>vbm6</td>
+      <td>2α, 1ρ</td>
+      <td>–24.34 [8.85]</td>
+      <td>–15069.6 [-0.45]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>vbm8</td>
+      <td>2α, 2ρ</td>
+      <td>–29.71 [15.95]</td>
+      <td>–15075.0 [-0.45]</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>vbm4</td>
+      <td>2α,2τ</td>
+      <td>–43.34 [14.89]</td>
+      <td>–15088.6 [-0.45]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>vbm2</td>
+      <td>2α, 1τ</td>
+      <td>–46.45 [13.97]</td>
+      <td>–15091.7 [-0.45]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>vbm5</td>
+      <td>1α, 1ρ</td>
+      <td>–59.01 [7.59]</td>
+      <td>–15104.3 [-0.45]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>vbm1</td>
+      <td>1α, 1τ</td>
+      <td>–109.63 [11.98]</td>
+      <td>–15154.9 [-0.45]</td>
+      <td>&lt; 0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Model = heuristic (ws, wsls) and value-based models (vbm1-8) that were compared against each other. Parameters = corresponding model parameters learning rate α, inverse temperature τ and outcome sensitivity ρ. Δelpdloo[SE] = difference in the Bayesian leave-one-out cross-validation estimate of the expected log pointwise predictive density relative to the winning model and its standard errors. Σelpdloo[mean] = sum of expected log pointwise predictive density of all 33,460 trials, including all participants and waves, and trial mean. Pseudo-BMA+ = model weight for relative model evidence using Bayesian model averaging stabilized by Bayesian bootstrap with 100,000 iterations._
+
+#### Feedback timing modulated choice stochasticity
+
+Model $vbm_{3}$ ($1\alpha2\tau$) showed the largest model evidence, reflected in the highest expected log pointwise predictive density and highest model weights and suggests that feedback timing affected the inverse temperature, but not the learning rate or outcome sensitivity ($elpd_{loo}$ = –15045.3, pseudo-BMA+ = 0.73, Table 2). Table 3 and Figure 3A provide a descriptive overview of the winning model parameters. Of note, there were only small differences in model fit ($elpd_{loo}$) to the second-best model ($vbm_{7},1\alpha2ρ$, $Δelpd_{loo}$ = –2.93, $elpd_SE_{loo}$ = 2.92, Pseudo-BMA+ = 0.24), which suggests a potential separable feedback timing effect on outcome sensitivity. We also performed the model comparison with a reduced dataset in which the winning model remained the same (Appendix 6). The average inverse temperature did not differ by feedback condition, but showed large within-person condition differences at both waves, indicating individual differences in feedback timing modulation (wave 1: $\Delta\tau_{del-ime}$ Mean = 0.22, SD = 3.80, Range = 21.74, wave 2: $\Delta\tau_{del-ime}$ Mean = 0.35, SD = 3.70, Range = 24.03). The correlations between the parameters are reported in Appendix 3.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89483/elife-89483-fig3-v1.jpg)
 
-**Figure 3.:** (A) Individual differences in the learning rate and inverse temperature of the winning model and their longitudinal change. The inverse temperature  but not learning rate τ was separated by feedback timing, and both increased between waves in their values (top panel). The condition difference in the inverse temperature did not differ on average, but showed individual differences (bottom left panel). (αB) The condition differences in the inverse temperature correlated with reaction time, that is higher delayed compared to immediate inverse temperature was related to faster delayed compared to immediate reaction time.
+**Figure 3.:** (A) Individual differences in the learning rate and inverse temperature of the winning model and their longitudinal change. The inverse temperature $\tau$ but not learning rate $\alpha$ was separated by feedback timing, and both increased between waves in their values (top panel). The condition difference in the inverse temperature did not differ on average, but showed individual differences (bottom left panel). (B) The condition differences in the inverse temperature correlated with reaction time, that is higher delayed compared to immediate inverse temperature was related to faster delayed compared to immediate reaction time.
+
+**Table 3.**
+ Description of computational model parameters from the winning value-based model $vbm_{3}$ .
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Wave 1</th>
+      <th></th>
+      <th colspan="5">Wave 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>α</td>
+      <td>τImmediate</td>
+      <td>τDelayed</td>
+      <td>lsImmediate</td>
+      <td>lsDelayed</td>
+      <td>α</td>
+      <td>τImmediate</td>
+      <td>τDelayed</td>
+      <td>lsImmediate</td>
+      <td>lsDelayed</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>0.02</td>
+      <td>14.6</td>
+      <td>14.8</td>
+      <td>0.73</td>
+      <td>0.73</td>
+      <td>0.05</td>
+      <td>16.2</td>
+      <td>16.5</td>
+      <td>0.82</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>0.02</td>
+      <td>2.04</td>
+      <td>2.37</td>
+      <td>0.12</td>
+      <td>0.13</td>
+      <td>0.04</td>
+      <td>2.37</td>
+      <td>2.21</td>
+      <td>0.13</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Min</td>
+      <td>&lt; 0.01</td>
+      <td>6.73</td>
+      <td>5.25</td>
+      <td>0.53</td>
+      <td>0.53</td>
+      <td>&lt; 0.01</td>
+      <td>4.37</td>
+      <td>6.85</td>
+      <td>0.53</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Max</td>
+      <td>0.09</td>
+      <td>17.5</td>
+      <td>17.9</td>
+      <td>0.94</td>
+      <td>0.94</td>
+      <td>0.22</td>
+      <td>18.6</td>
+      <td>18.7</td>
+      <td>0.96</td>
+      <td>0.96</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. α = learning rate across feedback timing, τ/ls = inverse temperature and learning score separated by conditions of feedback timing._
 
 Since reaction times were predicted by feedback timing behaviorally, and inverse temperature is assumed to reflect decision-making, we were interested in whether differences in reaction time were related to inverse temperature differences. Indeed, at both waves, children who responded faster during delayed compared to immediate feedback had a higher inverse temperature at delayed compared to immediate feedback (wave 1: r = –0.261, t(138) = –3.18, p = 0.002, wave 2: r = –0.345, t(124) = –4.10, p < 0.001, Figure 3B). Taken together, children’s learning behavior was best described by a value-based model, where feedback timing modulated individual differences in the choice rule during value-based learning. Interestingly, the differences in the choice rule and reaction time were correlated. Specifically, more value-guided choice behavior (i.e. higher inverse temperature) was related to faster responses during delayed feedback relative to immediate feedback, suggesting a link between model parameter and behavior in relation to feedback timing.
 
-## Children’s value-based learning became more optimal
+#### Children’s value-based learning became more optimal
 
 Next, we compared the parameter space according to model simulation (Figure 4A) with the empirical posterior parameters fitted by the winning model (Table 3, Figure 4B) to determine whether children increased their value-based learning towards more optimal parameter combinations. Both fitted and simulated parameter combinations allowed us to derive a learning score that captured learning performance according to the winning value-based model. Note that the learning score was defined as the average choice probability for the more rewarded choice option. We refer to these model-derived choice probabilities as learning score, since they reflect value-based learning and combine information of learned values, that depend on the learning rate, and values translated into choice probabilities, that depend on the inverse temperature. Thus, a higher learning score reflects more optimal value-based learning. We simulated 10,000 parameter combinations and created a learning score map according to each parameter combination (Figure 4A). The optimal parameter combination was at a learning rate α = 0.29, and an inverse temperature τ = 19.8, and with an average learning score of 96.5% (Figure 4A). Children’s fitted learning rates ranged 0.01–0.22 and inverse temperature 6.73–18.70 and were outside the parameter space of a learning score above 96% (Table 3 and Figure 4A). The average longitudinal increases in learning rate and inverse temperature were mirrored by average increases in the learning scores, confirming our prediction that their parameters developed towards optimal value-based learning (arrow in Figure 4B). We further found that the average longitudinal change in win-stay and lose-shift proportion also developed towards more optimal value-based learning (Appendix 4).
 
@@ -85,37 +344,221 @@ Next, we compared the parameter space according to model simulation (Figure 4A) 
 
 **Figure 4.:** (A) The model simulation depicts parameter combinations and simulation-based average learning scores. The cyan ‘X’ in the middle top depicts the optimal parameter combination where average learning scores were at 96.5%, and the cyan rectangle depicts the space of the fitted parameter combinations, (B) Enlarged view of the space of fitted parameter combinations. The colored arrows depict mean change (bold arrow) and individual change (transparent arrows) of the fitted parameters. The greyscale gradient-filled dots, that are connected by the arrows, depict the individual learning score, while the the greyscale gradient in the background depicts the simulated average learning score. The mean change reveals an overall change towards the higher, that is, more optimal, learning scores. (C) One-step-ahead posterior predictions of the winning model for each wave. The colored lines depict averaged trial-by-trial task behavior for each feedback condition, and a cyan ribbon indicates the 95% highest density interval of the one-step-ahead prediction using the entire posterior distribution, which included 6000 iterations for each of the 33,460 trials.
 
-## Model validation
+#### Model validation
 
-To validate our winning model vbm3 , we estimated its predictive accuracy by comparing one-step-ahead model predictions with the choice data. The one-step ahead predictions of the winning model captured children’s choices overall well, with predictive accuracies of 65.3% at wave 1 and 75.7% at wave 2 (Figure 4C). Further, our winning model showed a good parameter recovery for learning rate (r = 0.85) and inverse temperature (r = 0.75–0.77). Our winning model showed excellent on the group level (100%) when comparing it to a set of models used during model comparison (vbm1, vbm7,wsls). The individual model recovery was lower (58%), with 35% of the simulated winning model fitting best on our baseline model vbm1 with a single inverse temperature, which likely reflects the noisy property of the inverse temperature (Appendix 1).
+To validate our winning model $vbm_{3}$ , we estimated its predictive accuracy by comparing one-step-ahead model predictions with the choice data. The one-step ahead predictions of the winning model captured children’s choices overall well, with predictive accuracies of 65.3% at wave 1 and 75.7% at wave 2 (Figure 4C). Further, our winning model showed a good parameter recovery for learning rate (r = 0.85) and inverse temperature (r = 0.75–0.77). Our winning model showed excellent on the group level (100%) when comparing it to a set of models used during model comparison ($vbm_{1}$, $vbm_{7},wsls$). The individual model recovery was lower (58%), with 35% of the simulated winning model fitting best on our baseline model $vbm_{1}$ with a single inverse temperature, which likely reflects the noisy property of the inverse temperature (Appendix 1).
 
-## Longitudinal brain-cognition links
+### Longitudinal brain-cognition links
 
-## Significant longitudinal change in brain and cognition
+#### Significant longitudinal change in brain and cognition
 
 We first performed univariate LCS model analyses to estimate a latent change score of immediate and delayed learning scores as well as striatal and hippocampal volumes (see descriptive changes in Figure 5B, C). All four variables of interest showed significant positive mean changes and variances, and all univariate models provided a good fit to the data (see Appendix 5). This allowed us to further relate the differences in structural brain changes to changes in learning.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89483/elife-89483-fig5-v1.jpg)
 
-**Figure 5.:** (A) Recognition memory (corrected recognition = hits - false alarms) for objects presented during delayed feedback was only enhanced at trend. (B) Learning scores depicted here were used in the LCS analyses. Learning scores were the model-derived choice probability of the contingent choice using fitted posterior parameters. (C) Hippocampal and striatal volumes increased between waves, while hippocampal volume increased most. (D) A four-variate latent change score (LCS) model that included striatal and hippocampal volumes as well as immediate and delayed learning scores. Depicted are significant paths cross-domain (brain-cognition, dashed lines) and within-domain (brain or cognition, solid lines), other paths are omitted for visual clarity and are summarized in Table 4. Depicted brain-cognition links included  (covariance between striatal volume and immediate learning score at wave 1), as well as ϕSTRw1,LSime,w1 and ϕHPCw1,LSdel,w1  (covariances between hippocampal and striatal volumes and delayed learning score at wave 1). Brain links included ϕSTRw1,LSdel,w1 and ϕSTRw1,HPCw1  (wave 1 covariance and change-change covariance), and similarly, cognition links included ρ∆STR,∆HPC and ϕLSime,w1,LSdel,w1  . Covariates included age, sex and estimated total intracranial volume. ** denotes significance at ρ∆LSime,∆LSdel α < 0.001, * at α < 0.05.
+**Figure 5.:** (A) Recognition memory (corrected recognition = hits - false alarms) for objects presented during delayed feedback was only enhanced at trend. (B) Learning scores depicted here were used in the LCS analyses. Learning scores were the model-derived choice probability of the contingent choice using fitted posterior parameters. (C) Hippocampal and striatal volumes increased between waves, while hippocampal volume increased most. (D) A four-variate latent change score (LCS) model that included striatal and hippocampal volumes as well as immediate and delayed learning scores. Depicted are significant paths cross-domain (brain-cognition, dashed lines) and within-domain (brain or cognition, solid lines), other paths are omitted for visual clarity and are summarized in Table 4. Depicted brain-cognition links included $ϕ_{STR_{w1},LS_{ime,w1}}$ (covariance between striatal volume and immediate learning score at wave 1), as well as $ϕ_{HPC_{w1},LS_{del,w1} }$ and $ϕ_{STR_{w1},LS_{del,w1}}$ (covariances between hippocampal and striatal volumes and delayed learning score at wave 1). Brain links included $ϕ_{STR_{w1},HPC_{w1} }$ and $ρ_{\DeltaSTR,\DeltaHPC}$ (wave 1 covariance and change-change covariance), and similarly, cognition links included $ϕ_{LS_{ime,w1},LS_{del,w1} }$ and $ρ_{\DeltaLS_{ime},\DeltaLS_{del} }$ . Covariates included age, sex and estimated total intracranial volume. ** denotes significance at α < 0.001, * at α < 0.05.
 
-## Hippocampal volume exhibited more protracted development during middle childhood
+#### Hippocampal volume exhibited more protracted development during middle childhood
 
 We next fitted a bivariate LCS model to compare striatal and hippocampal change scores. We theorized that by middle childhood, the striatum would be relatively mature, whereas the hippocampus continues to develop. We progressively constructed multiple LCS models to test this idea. First, the bivariate LCS model provided a good data fit (χ² (14) = 10.09, CFI = 1.00, RMSEA (CI) = 0 (0-0.06), SRMR = 0.04). We then further fitted two constrained models, to see whether setting the mean striatal change or the mean hippocampal change to 0 would lead to a drop in the model fit. Compared to the unrestricted model, the constrained model that assumed no striatal change did not lead to a drop in model fit (Δχ² (1) = 2.74, p = 0.098), whereas the model that assumed hippocampal change dropped in model fit (Δχ² (1) = 12.69, p < 0.001). Finally, we tested a more stringent assumption of equal change for striatal and hippocampal volumes, in which the model dropped in model fit compared to the unrestricted model (Δχ² (1) = 18.04, p < 0.001) and suggests that striatal and hippocampal change differed. Together, these results support our postulation of separable maturational brain trajectories in our study sample, suggesting that the hippocampus continued to grow in middle childhood, whereas striatal volume increased less.
 
-## Hippocampal and striatal volume showed distinct associations to learning
+#### Hippocampal and striatal volume showed distinct associations to learning
 
-We fitted a four-variate LCS model to test our prediction of selective brain-cognition links. Specifically, we assumed a larger contribution of striatal volume at immediate learning, and a larger contribution of hippocampal volume at delayed learning. The LCS model provided good data fit (χ² (27) = 15.4, CFI = 1.00, RMSEA (CI) = 0 (0 –0.010, SRMR = 0.045)), and all relevant paths are shown in Figure 5D (see Table 4 for a detailed model overview). For the striatal associations to cognition, we found that wave 1 striatal volume covaried with both immediate learning score and delayed learning score (ϕSTRw1,LSi,w1 = 0.19, z = 2.52, SE = 0.07, p = 0.012, ϕSTRw1,LSd,w1 = 0.18, z = 2.37, SE = 0.07, p = 0.018). Constraining the striatal association to immediate learning to 0 worsened the model fit relative to the unrestricted model (Δχ² (1) = 5.66, p = 0.017), which was the same when constraining the striatal association to delayed learning to 0 (Δχ² (df 1) = 5.14, p = 0.023). In summary, larger striatal volume was associated with better learning scores for both immediate and better delayed feedback. This pattern remained the same in the results of the reduced dataset (Appendix 6).
+We fitted a four-variate LCS model to test our prediction of selective brain-cognition links. Specifically, we assumed a larger contribution of striatal volume at immediate learning, and a larger contribution of hippocampal volume at delayed learning. The LCS model provided good data fit (χ² (27) = 15.4, CFI = 1.00, RMSEA (CI) = 0 (0 –0.010, SRMR = 0.045)), and all relevant paths are shown in Figure 5D (see Table 4 for a detailed model overview). For the striatal associations to cognition, we found that wave 1 striatal volume covaried with both immediate learning score and delayed learning score ($ϕ_{STR_{w1},LS_{i,w1}}$ = 0.19, z = 2.52, SE = 0.07, p = 0.012, $ϕ_{STR_{w1},LS_{d,w1}}$ = 0.18, z = 2.37, SE = 0.07, p = 0.018). Constraining the striatal association to immediate learning to 0 worsened the model fit relative to the unrestricted model (Δχ² (1) = 5.66, p = 0.017), which was the same when constraining the striatal association to delayed learning to 0 (Δχ² (df 1) = 5.14, p = 0.023). In summary, larger striatal volume was associated with better learning scores for both immediate and better delayed feedback. This pattern remained the same in the results of the reduced dataset (Appendix 6).
 
-Hippocampal volume, on the other hand, only covaried with delayed learning at wave 1 (ϕHPCw1,LSd,w1 = 0.14, z = 2.05, SE = 0.07, p = 0.041), not with immediate learning score (ϕHPCw1,LSi,w1 = 0.12, z = 1.68, SE = 0.07, p = 0.092). Fixing the path between hippocampal volume and delayed learning to 0 worsened the model fit relative to the unrestricted model (Δχ² (1) = 4.19, p = 0.041), but not when its path to immediate learning was constrained to 0 (Δχ² (1) = 2.94, p = 0.086). This suggests that larger hippocampal volume was specifically associated with better delayed learning. In the results of the reduced dataset, the hippocampal association to the delayed learning score was no longer significant, suggesting a weakened pattern when excluding poor learners (Appendix 6). It is likely that the exclusion reduced the group variance for hippocampal volume and delayed learning score in the model.
+**Table 4.**
+ Parameter estimates of a four-variate latent change score model that includes brain (striatal and hippocampal volume) and cognition domains (immediate and delayed learning score).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>STR</th>
+      <th>LSime</th>
+      <th>HPC</th>
+      <th>LSdel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Model fit: χ² = 15.4, df = 27, CFI = 1, RMSEA (CI) = 0 (0–0.01), SRMR = 0.045</td>
+    </tr>
+    <tr>
+      <td>Mean change Δ</td>
+      <td>0.06* (0.03)</td>
+      <td>0.76** (0.08)</td>
+      <td>0.38** (0.04)</td>
+      <td>0.75** (0.08)</td>
+    </tr>
+    <tr>
+      <td>wave 1 variance σ</td>
+      <td>fixed to 1</td>
+      <td>fixed to 1</td>
+      <td>fixed to 1</td>
+      <td>fixed to 1</td>
+    </tr>
+    <tr>
+      <td>change variance σΔ</td>
+      <td>0.07** (0.01)</td>
+      <td>0.88** (0.10)</td>
+      <td>0.18* (0.07)</td>
+      <td>0.83** (0.10)</td>
+    </tr>
+    <tr>
+      <td>Intercept-change regression β</td>
+      <td>–0.04 (0.04)</td>
+      <td>–0.83* (0.29)</td>
+      <td>–0.16* (0.06)</td>
+      <td>–0.73* (0.27)</td>
+    </tr>
+    <tr>
+      <td>Wave 1 covariates</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age onto Intercept ϕ</td>
+      <td>0.19 (0.10)</td>
+      <td>–0.05 (0.08)</td>
+      <td>0.29* (0.08)</td>
+      <td>0.08 (0.08)</td>
+    </tr>
+    <tr>
+      <td>sex onto Intercept ϕ</td>
+      <td>–0.42** (0.07)</td>
+      <td>–0.14 (0.07)</td>
+      <td>–0.47** (0.07)</td>
+      <td>–0.11 (0.07)</td>
+    </tr>
+    <tr>
+      <td>eTIV onto Intercept ϕ</td>
+      <td>0.68** (0.05)</td>
+      <td>–</td>
+      <td>0.70** (0.05)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Brain-cognition links (cross-domain)</td>
+      <td>STR−LSime</td>
+      <td>STR−LSdel</td>
+      <td>HPC−LSime</td>
+      <td>HPC−LSdel</td>
+    </tr>
+    <tr>
+      <td>wave 1 covariation ϕ</td>
+      <td>0.19* (0.07)</td>
+      <td>0.18* (0.07)</td>
+      <td>0.12 (0.07)</td>
+      <td>0.14* (0.07)</td>
+    </tr>
+    <tr>
+      <td>change-change covariance ρ</td>
+      <td>&lt; 0.01 (0.03)</td>
+      <td>&lt; 0.01 (0.03)</td>
+      <td>–0.06 (0.05)</td>
+      <td>–0.07 (0.05)</td>
+    </tr>
+    <tr>
+      <td>wave 1 brain onto cognition change γ</td>
+      <td>0.25 (0.13)</td>
+      <td>0.22 (0.12)</td>
+      <td>0.05 (0.11)</td>
+      <td>0.06 (0.10)</td>
+    </tr>
+    <tr>
+      <td>wave 1 cognition onto brain change γ</td>
+      <td>–0.19 (0.13)</td>
+      <td>0.21 (0.13)</td>
+      <td>0.05 (0.10)</td>
+      <td>&lt; 0.01 (0.10)</td>
+    </tr>
+    <tr>
+      <td>Brain links (within-domain)</td>
+      <td>STR−HPC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 covariation ϕ</td>
+      <td>0.53** (0.07)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>change-change covariance ρ</td>
+      <td>0.03* (0.01)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 striatum onto hippocampal change γ</td>
+      <td>0.06 (0.05)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 hippocampus onto striatal change γ</td>
+      <td>0.02 (0.03)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cognition links (within-domain)</td>
+      <td>LSime−LSdel</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 covariation ϕ</td>
+      <td>0.95** (0.10)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>change-change covariance ρ</td>
+      <td>0.82** (0.10)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 LSime onto LSdel change γ</td>
+      <td>–0.07 (0.27)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>wave 1 LSdel onto LSime change γ</td>
+      <td>0.06 (0.28)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Parameter estimates in bold are the paths of interest depicted in Figure 5D. Standard errors are shown in parentheses. eTIV = estimated total intracranial volume. ** denotes significance at α < 0.001, * at α < 0.05. sex coded as 1 = girls, –1 = boys._
+
+Hippocampal volume, on the other hand, only covaried with delayed learning at wave 1 ($ϕ_{HPC_{w1},LS_{d,w1}}$ = 0.14, z = 2.05, SE = 0.07, p = 0.041), not with immediate learning score ($ϕ_{HPC_{w1},LS_{i,w1}}$ = 0.12, z = 1.68, SE = 0.07, p = 0.092). Fixing the path between hippocampal volume and delayed learning to 0 worsened the model fit relative to the unrestricted model (Δχ² (1) = 4.19, p = 0.041), but not when its path to immediate learning was constrained to 0 (Δχ² (1) = 2.94, p = 0.086). This suggests that larger hippocampal volume was specifically associated with better delayed learning. In the results of the reduced dataset, the hippocampal association to the delayed learning score was no longer significant, suggesting a weakened pattern when excluding poor learners (Appendix 6). It is likely that the exclusion reduced the group variance for hippocampal volume and delayed learning score in the model.
 
 As a next step, the associations between striatum and hippocampus to immediate or delayed learning was directly compared against each other. A model equal-constraining striatal and hippocampal paths to immediate learning (Δχ² (1) = 0.41, p = 0.521) and another model equal-constraining these paths to delayed learning (Δχ² (1) = 0.14, p = 0.707) did not lead to a worse model fit compared to the unrestricted model, which suggests that the brain-cognition links have considerable overlap. This is in line with the high wave 1 covariance and change-change covariance within the brain and cognition domain (see Table 4). We found no longitudinal links between the brain and cognition domains, which suggests that the found brain-cognition links at wave 1 remained longitudinally stable (see Appendix 5 for an exploratory LCS model that related the model parameters to striatal and hippocampal volume).
 
 Taken together, the confirmatory LCS model results were in line with our predictions of a relatively larger involvement of the hippocampus during delayed feedback learning, but the findings on striatal volume disconfirmed a selective association with immediate feedback learning and suggest a more general role of the striatum in both learning conditions.
 
-## No evidence for enhanced episodic memory during delayed feedback
+#### No evidence for enhanced episodic memory during delayed feedback
 
-Finally, we investigated whether a hippocampal contribution at delayed feedback would selectively enhance episodic memory. Episodic memory, as measured by individual corrected object recognition memory (hits - false alarms) of confident (‘sure’) ratings, showed at trend better memory for items shown in the delayed feedback condition (βfeedback=delayed = 0.009, SE = 0.005, t(137) = 1.80, p = 0.074, see Figure 5A). Note that in the reduced dataset, delayed feedback predicted enhanced item memory significantly (Appendix 6). The inclusion of poor learners in the complete dataset may have weakend this effect because their hippocampal function was worse and was not involved in learning (nor encoding), regardless of feedback timing. To summarize, there was inconclusive support for enhanced episodic memory during delayed compared to immediate feedback, calling for future study to test the postulation of a selective association between hippocampal volume and delayed feedback learning.
+Finally, we investigated whether a hippocampal contribution at delayed feedback would selectively enhance episodic memory. Episodic memory, as measured by individual corrected object recognition memory (hits - false alarms) of confident (‘sure’) ratings, showed at trend better memory for items shown in the delayed feedback condition ($\beta_{feedback=delayed}$ = 0.009, SE = 0.005, t(137) = 1.80, p = 0.074, see Figure 5A). Note that in the reduced dataset, delayed feedback predicted enhanced item memory significantly (Appendix 6). The inclusion of poor learners in the complete dataset may have weakend this effect because their hippocampal function was worse and was not involved in learning (nor encoding), regardless of feedback timing. To summarize, there was inconclusive support for enhanced episodic memory during delayed compared to immediate feedback, calling for future study to test the postulation of a selective association between hippocampal volume and delayed feedback learning.
 
 ## Discussion
 
@@ -139,68 +582,92 @@ Another key question is whether developmental trajectories observed cross-sectio
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Children and their parents took part in 2 waves of data collection with an interval of about 2 years (Mean = 2.07, SD = 0.17, Range = 1.69–2.68). The inclusion criteria for wave 1 were children attending first or second grade, no psychiatric or physical health disorders, at least one parent speaking fluent German, and born full-term (≥37 weeks of gestation). At wave 1, 142 children (46% female, age Mean = 7.19, SD = 0.46, Range = 6.07–7.98) and their parents or caregivers participated in the study. 140 children were included in the analysis (one child did not complete the probabilistic learning task, and another child was later excluded due to technical problems during the task). A subgroup of 90 children (49% female, 100% right-handed), who was randomly selected, completed magnetic resonance imaging (MRI) scanning at wave 1, and 82 of them contributed to structural data after removing scans with excessive movement. At wave 2, 127 children (46% female, age Mean = 9.25, SD = 0.45, Range = 8.30–10.2) continued taking part in the study, while families of the remaining children were unable to be contacted or decided not to return to the study. A total of 126 children at wave 2 completed the reinforcement learning task and were included in the analysis. All children at wave 2 were invited for MRI scanning, and 104 of them completed scanning (45% female, 92% right-handed). Ninety-nine children contributed to structural data, after removing scans with excessive movement. In total, 73 children contributed to the longitudinal MRI data and 126 children contributed to the longitudinal learning data. As previously reported for this study sample, we found no systematic bias due to wave 2 dropout (Raffington et al., 2019).
 
-## Procedure
+### Procedure
 
 The study consisted of a series of cognitive tasks tested during two behavioral sessions, including a reinforcement learning task, and one MRI session at wave 1 (Raffington et al., 2019; Raffington et al., 2020). Two years later, the children underwent one behavioral and one MRI session. MRI scanning was performed within 3 weeks of the behavioral task session. Each session lasted between 150 and 180 min and was scheduled either on weekdays between 2 p.m. and 6 p.m. or during weekends. Before participation, the parents provided written informed consent and children’s verbal assent at both waves. All children were compensated with an honorarium of 8 euro per hour.
 
-## Measures
+### Measures
 
-## Reinforcement learning task
+#### Reinforcement learning task
 
 Children completed an adapted reinforcement learning task (Foerde and Shohamy, 2011) in which they learned the preferred associations between four cues (cartoon characters) and two choices (round-shaped or square-shaped lolli) through probabilistic feedback (87.5% contingent and 12.5% non-contingent reward probability). In each trial, after an initial inter-trial interval of 0.5 s, a cue and its choice options were presented for up to 7 s until the child made a choice (Figure 1, choice phase). In the delay phase, we manipulated feedback timing. For two cues, the selected choice remained visible for 1 s (immediate feedback condition), whereas for the other two cue characters, it remained visible for 5 s before feedback was given (delayed feedback condition). A final feedback phase of 2 s indicated a reward by a green frame, and a punishment by a red frame. Inside each frame, a unique object picture was shown, which was incidentally encoded and irrelevant to the task. The child was instructed to pay attention to the feedback indicated by the frame color. In an initial practice phase of 32 trials, the child practiced the task with a fifth cartoon character not included in the actual task to avoid practice effects. The experimenter instructed the child to select the choice that was most likely to result in a reward. The Experimenter checked whether the child learned the more rewarded choice during practice and let it repeat the practice task otherwise to ensure understanding of the task. In the actual task, 128 trials were presented in four blocks and with small breaks in between. Cues were presented in a mixed, pseudo-randomized order. A total of 64 unique objects were shown in the feedback phase, each one twice within the same feedback condition. In both delay phases, contingent choice and choice location remained the same for each cue within the task, but were balanced across participants by using four different task versions. At wave 2, four new cues replaced the previous ones to rule out memory effects.
 
-## Object recognition test
+#### Object recognition test
 
 At wave 1, children were additionally tested for recognition memory on the object pictures that were incidentally encoded during reinforcement learning. A total of 80 objects (48 old objects and 32 new objects) were presented in randomized order. The 48 old objects (24 for each feedback condition) were selected from the 64 old objects shown during learning based on two lists to balance the shown and omitted old objects across task versions. Each old object was shown twice during learning, but if the child failed to respond during learning, no feedback or object was shown in the trial, so some objects only appeared once. These objects were excluded at the individual level (individually missing object Mean = 2.71). At recognition, children had 4 response options (‘old sure’, ‘old unsure’, ‘new unsure’, ‘new sure’) with up to 7 s to respond. The children answered verbally, and the experimenter entered their response. At wave 2, this test was excluded due to time constraints.
 
-## Brain volume
+#### Brain volume
 
 We extracted the bilateral brain volumes for our regions of interest, which were striatum and hippocampus. The striatum regions included nucleus accumbens, caudate and putamen. For our imaging data, structural MRI images were acquired on a Siemens Magnetom TrioTim syngo 3 Tesla scanner with a 12-channel head coil (Siemens Medical AG, Erlangen, Germany) using a 3D T1–weighted Magnetization Prepared Rapid Gradient Echo (MPRAGE) sequence, with the following parameters: 192 slices; field of view = 256 mm, voxel size = 1 mm3, TR = 2500ms; TE = 3.69ms, flip angle = 7°, TI = 1100ms. Volumetric segmentation was performed using the Freesurfer 6.0.0 image analysis suite (Fischl, 2012). Previous studies suggested that software tools based on adult brain templates provide inaccurate segmentation for pediatric samples, which can be improved through the use of study-specific template brains (Phan et al., 2018; Schoemaker et al., 2016). Thus, we created two study-specific template brains (one for each wave) using Freesurfer’s ‘make_average_subject’ command. This pipeline utilized the default adult template brain registrations of the ‘recon–all–all’ command to average surfaces, curvatures, and volumes from all subjects into a study–specific template brain. All subjects were then re-registered to this study-specific template brain to improve segmentation accuracy. Segmented images were manually inspected for accuracy and 8 cases at wave 1 and 5 cases at wave 2 were excluded for inaccurate or failed registration due to excessive motion.
 
-## Data analysis
+### Data analysis
 
-## Behavioral learning performance
+#### Behavioral learning performance
 
 As a first step, we calculated learning outcomes diretly from the raw data, which where learning accuracy, win-stay and lose-shift behavior as well as reaction time. Learning accuracy was defined as the proportion to choose the more rewarding option, while win-stay and lose-shift refer to the proportion of staying with the previously chosen option after a reward and switching to the alternative choice after receiving a punishment, respectively. We used these outcomes as our dependent variables to examine the effect of the predictors feedback timing (immediate, delayed), wave (1, 2), wave 1 age, and sex (girls, boys), utilizing generalized linear mixed models (GLMM) with the R package lme4 (Bates et al., 2015). All reported models included random slopes for within-subject factors feedback timing and wave (see Appendix 2 for the model structure). We systematically tested main effects and interactions between the predictors and their interaction had to statistically improve the predictive ability of the model to be included in the final reported model. All predictor variables were grand-mean-centered to interpret the interaction effects independent from other predictors.
 
-## Reinforcement learning models
+#### Reinforcement learning models
 
-As a next step, we used computational modeling to compare the learning models of basic heuristic strategies and value-based learning and to determine the model that could best capture children’s trial-by-trial learning behavior. For heuristic strategies, we considered models that reflected a Win-stay-lose-shift (wsls) or a Win-stay (ws) strategy. Win-stay is a heuristic strategy in which the same action is repeated if it leads to a positive outcome in the previous trial, and Win-stay-lose-shift additionally switches to a different action if the previous outcome is negative. Note that these model-based outcomes are not identical to the win-stay and lose-shift behavior that were calculated from the raw data. The use of such model-based measure offers the advantage in discerning the underlying hidden cognitive process with greather nuance, in contrast to classical approaches that directly use raw behavioral data. The models quantified the learning behavior for each individual I for each cue c and trial t. The heuristic models consisted of a weight w that reflected its degree in strategy use. In the case of reward r = 1, w was equal to 1 for the chosen option (e.g. choice A), and 0 for the unchosen option (e.g. choice B), thus maximizing win-stay, i.e., choosing A at the subsquent trial t+1:(1)wi,c,t+1,A|r=1=1andwi,c,t+1,B|r=1=0
+As a next step, we used computational modeling to compare the learning models of basic heuristic strategies and value-based learning and to determine the model that could best capture children’s trial-by-trial learning behavior. For heuristic strategies, we considered models that reflected a Win-stay-lose-shift (wsls) or a Win-stay (ws) strategy. Win-stay is a heuristic strategy in which the same action is repeated if it leads to a positive outcome in the previous trial, and Win-stay-lose-shift additionally switches to a different action if the previous outcome is negative. Note that these model-based outcomes are not identical to the win-stay and lose-shift behavior that were calculated from the raw data. The use of such model-based measure offers the advantage in discerning the underlying hidden cognitive process with greather nuance, in contrast to classical approaches that directly use raw behavioral data. The models quantified the learning behavior for each individual I for each cue c and trial t. The heuristic models consisted of a weight w that reflected its degree in strategy use. In the case of reward r = 1, w was equal to 1 for the chosen option (e.g. choice A), and 0 for the unchosen option (e.g. choice B), thus maximizing win-stay, i.e., choosing A at the subsquent trial $t+1$:
 
-For trials r = 0 (applicable only to the wsls model), model weights were the opposite, maximizing lose-shift:(2)wi,c,t+1,A|r=0=0andwi,c,t+1,B|r=0=1
+$$
+w_{i,c,t+1,A|r=1}=1andw_{i,c,t+1,B|r=1}=0
+$$
 
-The initial weights for both choices were set to  wi,c,t=1 = 0.5. The weight w then scaled the parameter τ_wsls or τ_ws to estimate the individual strategy use during decision-making. The choice probabilities were calculated using the softmax function, for example., for the chosen option A:(3)p(A)=expwi,c,t,A∗τ_wslsiexpwi,c,t,A∗τ_wslsi+expwi,c,t,B∗τ_wslsi
+For trials r = 0 (applicable only to the wsls model), model weights were the opposite, maximizing lose-shift:
 
-Thus, a higher probability of strategy use was reflected by a larger value of τ_wsls or τ_ws.
+$$
+w_{i,c,t+1,A|r=0}=0andw_{i,c,t+1,B|r=0}=1
+$$
 
-For value-based learning, we considered a Rescorla-Wagner model and several variants based on our theoretical conceptions. The baseline value-based model vbm1 updated the value v of the selected choice (A or B) for the next trial t. This value update was determined by calculating the difference between the received reward r and the expected value v of the selected choice, which was the reward prediction error. The value update was further scaled by a learning rate α(0<α<1):(4)vi,c,t+1,A=vi,c,t,A+αi(ri,c,t-vi,c,t,A)
+The initial weights for both choices were set to  $w_{i,c,t=1}$ = 0.5. The weight w then scaled the parameter $\tau_wsls$ or $\tau_ws$ to estimate the individual strategy use during decision-making. The choice probabilities were calculated using the softmax function, for example., for the chosen option A:
 
-When the outcome sensitivity parameter ρ(0<ρ<20) was included, the reward was additionally scaled at the value update:(5)vi,c,t+1,A=vi,c,t,A+αi(ρi*ri,c,t-vi,c,t,A)
+$$
+p(A)=\frac{exp^{w_{i,c,t,A}∗\tau_wsls_{i}}}{exp^{w_{i,c,t,A}∗\tau_wsls_{i}}+exp^{w_{i,c,t,B}∗\tau_wsls_{i}}}
+$$
 
-The inverse temperature parameter τ(0<τ<20) was included in the softmax function to compute choice probabilities:(6)p(A)=expvi,c,t,A∗τiexpvi,c,t,A∗τi+expvi,c,t,B∗τi
+Thus, a higher probability of strategy use was reflected by a larger value of $\tau_wsls$ or $\tau_ws$.
 
-Note, however, that outcome sensitivity and inverse temperature are difficult to fit simultaneously due to non-identifiability issues (Brown et al., 2021). Therefore, models including the inverse temperature fixed outcome sensitivity at 1 (inverse temperature model family), assuming no individual differences in outcome sensitivity. For the outcome sensitivity model family, outcome sensitivity was freely estimated, and the inverse temperature was fixed at 1, asssuming the same degree of value-based decision behavior across individuals. Even though outcome sensitivity is usually restricted to an upper bound of 2 to not inflate outcomes at value update, this configuration led to ceiling effects in outcome sensitivity and non-converging model results. Further, this issue was not resolved when we fixed the inverse temperature at the group mean of 15.47 of the winning inverse temperature family model. It may be that in children, individual differences in outcome sensitivity are more pronounced, leading to more extreme values. Therefore, we decided to extend the upper bound to 20, parallel to the inverse temperature, and all our models converged with Rhat < 1.1. Each model family consisted of 4 model variants vbm1-4 (1α1τ, 2α1τ,1α2τ,2α2τ) and vbm5-8 (1α1ρ, 2α1ρ,1α2ρ,2α2ρ), in which each parameter was either separated by feedback timing or kept as a single parameter across feedback conditions. Our baseline value-based model vbm1 included a single learning rate and a single inverse temperature (1α1τ).
+For value-based learning, we considered a Rescorla-Wagner model and several variants based on our theoretical conceptions. The baseline value-based model $vbm_{1}$ updated the value v of the selected choice (A or B) for the next trial t. This value update was determined by calculating the difference between the received reward r and the expected value v of the selected choice, which was the reward prediction error. The value update was further scaled by a learning rate $\alpha(0<\alpha<1)$:
 
-## Parameter estimation
+$$
+v_{i,c,t+1,A}=v_{i,c,t,A}+\alpha_{i}(r_{i,c,t}-v_{i,c,t,A})
+$$
+
+When the outcome sensitivity parameter $ρ(0<ρ<20)$ was included, the reward was additionally scaled at the value update:
+
+$$
+v_{i,c,t+1,A}=v_{i,c,t,A}+\alpha_{i}(ρ_{i}*r_{i,c,t}-v_{i,c,t,A})
+$$
+
+The inverse temperature parameter $\tau(0<\tau<20)$ was included in the softmax function to compute choice probabilities:
+
+$$
+p(A)=\frac{exp^{v_{i,c,t,A}∗\tau_{i}}}{exp^{v_{i,c,t,A}∗\tau_{i}}+exp^{v_{i,c,t,B}∗\tau_{i}}}
+$$
+
+Note, however, that outcome sensitivity and inverse temperature are difficult to fit simultaneously due to non-identifiability issues (Brown et al., 2021). Therefore, models including the inverse temperature fixed outcome sensitivity at 1 (inverse temperature model family), assuming no individual differences in outcome sensitivity. For the outcome sensitivity model family, outcome sensitivity was freely estimated, and the inverse temperature was fixed at 1, asssuming the same degree of value-based decision behavior across individuals. Even though outcome sensitivity is usually restricted to an upper bound of 2 to not inflate outcomes at value update, this configuration led to ceiling effects in outcome sensitivity and non-converging model results. Further, this issue was not resolved when we fixed the inverse temperature at the group mean of 15.47 of the winning inverse temperature family model. It may be that in children, individual differences in outcome sensitivity are more pronounced, leading to more extreme values. Therefore, we decided to extend the upper bound to 20, parallel to the inverse temperature, and all our models converged with Rhat < 1.1. Each model family consisted of 4 model variants $vbm_{1-4}$ ($1\alpha1\tau$, $2\alpha1\tau,1\alpha2\tau,2\alpha2\tau$) and $vbm_{5-8}$ ($1\alpha1ρ$, $2\alpha1ρ,1\alpha2ρ,2\alpha2ρ$), in which each parameter was either separated by feedback timing or kept as a single parameter across feedback conditions. Our baseline value-based model $vbm_{1}$ included a single learning rate and a single inverse temperature ($1\alpha1\tau$).
+
+#### Parameter estimation
 
 All choice data were fitted in a hierarchical Bayesian analysis using the Stan language in R (Stan Development Team, 2021; R Development Core Team, 2021) adopted from the hBayesDM package (Ahn et al., 2017). Posterior parameter distributions were estimated using Markov chain Monte Carlo (MCMC) sampling running four chains each with 3000 iterations, using the first half of the chain as warmup, and group-level parameters and individual-level parameters were estimated simoultaneously. The hierarchical Bayesian approach provides more stable and reliable parameter estimates as opposed to point-estimation approaches like maximum likelihood estimation (Brown et al., 2020). Each model fit both wave 1 and wave 2 data at once, considering the correlation structure of the same parameter across waves, to account for within-subject dependency using the Cholesky decomposition. The Cholesky decomposition used a Lewandowski-Kurowicka-Joe prior of 2, and all other group-level parameters had a prior normal distribution, Normal (0, 0.5). Non-response trials (wave 1 = 2.41%, wave 2 = 0.97% on average) were excluded in advance.
 
-## Model simulation and model-derived learning score
+#### Model simulation and model-derived learning score
 
 To appropriately interpret the parameter results with respect to the optimal parameter combination of the winning model, we simulated 5,000,000 individual datasets using 10,000 different parameter value combinations (covering the whole range of each parameter) to identify the optimal parameter combination of the winning model that was selected by model comparison. In addition, we computed the model-derived mean choice probability of the contingent, that is, the more rewarded option, and we referred to it as the model-derived learning score. This model-derived choice probability differs from the observed empirical choice probability (i.e. the accuracy of selecting the more rewarded option), because the model-derived learning score combines the model with the data by incorporating latent information carried out by key learning parameters. Thus, the learning score captures observed behavior based on trial-by-trial latent processes predicted by value-based models. We used this as metric to interpret the fitted posterior parameters in relation to the optimal parameter combination of our probabilistic learning task.
 
-## Model selection and validation
+#### Model selection and validation
 
-We conducted a two-step sequential procedure for the model development and model selection. As a first step, we compared model evidence for the baseline value-based model that does not separate learning rate and inverse temperature by feedback timing (vbm1:1α,1τ) to the non-value-based, heuristic strategy models that reflect Win-stay or Win-stay-lose-shift strategy behavior (ws, wsls). As a second step, we compared model evidence for 8 value-based model variants, 4 of the model family with learning rate and inverse temperature (1α1τ, 2α1τ,1α2τ,2α2τ) and 4 of the model family with learning rate and outcome sensitivity (1α1ρ, 2α1ρ,1α2ρ,2α2ρ). This allowed us to compare whether children showed separable effects of feedback timing on one of the model parameters. We compared the model fit using Bayesian leave-one-out cross-validation and obtained the expected log pointwise predictive density (elpdloo) using the R package loo (Vehtari et al., 2017). We further computed the model weights (Pseudo-BMA+) using Pseudo Bayesian model averaging stabilized by Bayesian bootstrap with 100,000 iterations (Yao et al., 2018). To validate our models, we estimated predictive accuracy by comparing one-step-ahead model predictions with the choice data (Zhang et al., 2020; Crawley et al., 2020). We performed parameter recovery for the winning model and model recovery by comparing it to a set of models used during model comparison (Appendix 1; Wilson and Collins, 2019).
+We conducted a two-step sequential procedure for the model development and model selection. As a first step, we compared model evidence for the baseline value-based model that does not separate learning rate and inverse temperature by feedback timing ($vbm_{1}$:$1\alpha,1\tau$) to the non-value-based, heuristic strategy models that reflect Win-stay or Win-stay-lose-shift strategy behavior ($ws$, $wsls$). As a second step, we compared model evidence for 8 value-based model variants, 4 of the model family with learning rate and inverse temperature ($1\alpha1\tau$, $2\alpha1\tau,1\alpha2\tau,2\alpha2\tau$) and 4 of the model family with learning rate and outcome sensitivity ($1\alpha1ρ$, $2\alpha1ρ,1\alpha2ρ,2\alpha2ρ$). This allowed us to compare whether children showed separable effects of feedback timing on one of the model parameters. We compared the model fit using Bayesian leave-one-out cross-validation and obtained the expected log pointwise predictive density ($elpd_{loo}$) using the R package loo (Vehtari et al., 2017). We further computed the model weights (Pseudo-BMA+) using Pseudo Bayesian model averaging stabilized by Bayesian bootstrap with 100,000 iterations (Yao et al., 2018). To validate our models, we estimated predictive accuracy by comparing one-step-ahead model predictions with the choice data (Zhang et al., 2020; Crawley et al., 2020). We performed parameter recovery for the winning model and model recovery by comparing it to a set of models used during model comparison (Appendix 1; Wilson and Collins, 2019).
 
-## Episodic memory at wave 1
+### Episodic memory at wave 1
 
 We predicted the individual corrected recognition memory (hits-false alarms) by feedback condition in a linear mixed effects model using the R package lme4 (Bates et al., 2015). Only confident (‘sure’) ratings were included in the analysis, which were 98.1% of all given responses. A total of 140 children completed the recognition memory test and 138 were included in the analysis, with two being excluded due to negative corrected recognition memory value (i.e. poor recognition memory). Age and sex were controlled for as covariates.
 
-## Longitudinal brain-cognition links
+### Longitudinal brain-cognition links
 
 We used latent change score (LCS) models to examine the longitudinal relationships between brain and learning score measures. LCS models are longitudinal structural equation models that have been widely applied to estimate developmental changes and coupling effects across domains such as the brain and cognition (Kievit et al., 2018; Ferrer and McArdle, 2010). LCS models allow the definition of specific paths between multiple variables to test explicit hypotheses and estimate latent change from the observed variables that account for measurement error and increase testing power (van der Sluis et al., 2010). We compiled univariate LCS models for each variable separately (learning scores and brain volumes) to examine whether there was significant individual variance and change, which could be related within a multivariate LCS model as a next step. Model fit had to be at least acceptable, with a comparative fit index (CFI) >0.95, standardized root mean square residual (SRMR) < 0.08 and root mean square error of approximation (RMSEA) < 0.08 (Little, 2013). Age and sex were included as covariates at wave 1, as well as the estimated total intracranial volume (eTIV) when brain volume was included in the model. Multivariate LCS models allow to estimate meaningful brain-cognition relationships: a wave 1 covariance between brain and cognition, brain predicting change onto cognition, or vice versa, and a covariance in both brain and cognition change scores (wave 1 to wave 2). Before compiling the variables into an LCS model, they were checked for outliers ± 4 SD around the mean. We identified one outlier for the learning rate at wave 2, which was removed for the explorative LCS model that included model parameters. There were no further outliers in other cognitive variables or brain volumes. Continuous variables were standardized to the wave 1 measure so that wave 2 values represent the change from wave 1, sex was contrast-coded (girls = 1, boys = –1).

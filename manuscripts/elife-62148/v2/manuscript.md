@@ -36,25 +36,326 @@ iSAIL is available as a user-friendly web-accessible resource to help elucidate 
 
 ## Results
 
-## Background and motivation
+### Background and motivation
 
 The prototypical combination treatment experiment comprises -omics data obtained from the following conditions: a vehicle control (denoted by 0), two individual stimuli (X, Y), and their combination (X+Y), Figure 1A, left subpanel. The goal of this experiment is to discover cellular processes regulated by positive (synergistic) and negative (antagonistic) interactions. This requires a fine-grained analysis able to distinguish between biologically relevant and artifactual interactions, and able to aggregate similar interactions to delineate coherent functional programs. The standard approach, which classifies interactions as positive or negative, does not do this adequately, leading to a loss of important biological information. For example, biologically meaningful positive interactions such as emergent responses (e.g. an increase or decrease with the combination in the absence of any effect in the individual treatment conditions), would not be distinguished from nominal interactions with low biological significance related to saturation effects. Furthermore, the aggregation of all the positive (or negative) interactions obscures the inference of coherent biological processes as typically obtained through pathway enrichment analysis, because this crude aggregation confounds very diverse interaction effects.
 
-## Machine learning framework to map interaction effects from -omics data from combination treatment studies
+![Figure 1.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig1-v2.jpg)
+
+**Figure 1.:** (A) We developed iSAIL (immune Synergistic/Antagonistic Interaction Learner), a machine learning framework to decipher the effect of combination treatments. iSAIL accommodates -omics datasets from the four prototypical conditions of combination treatments: 0 (control), stimulus X, stimulus Y, and the combination X+Y (left subpanel). The dataset is analyzed by a classifier previously trained to map each gene into a complete taxonomy of theoretically possible interaction profiles (middle subpanel, see also Figure 1—figure supplement 1). The slanting of a single profile rendition in the middle subpanel is to indicate that the slanted pattern is one of an entire deck of synergistic or antagonistic patterns classified by iSAIL. The taxonomy helps infer the functional role of different types of positive and negative interactions (right subpanel). (B) By applying iSAIL to combination treatments from diverse immune cell types (right subpanel), we built a combinatorial landscape of immunity comprising ~30,000 interactions. Global analysis of the landscape and of user-generated data drive new hypotheses on the role of interactions in immune cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each card corresponds to a possible response profile of a standard combination treatment experiment involving the conditions 0 (control), X, Y, and the combination X+Y. The color code keeps track of the sign of interaction: red for positive interactions, blue for negative interactions, gray for additive. The taxonomy includes all the qualitative responses defined in our previous work (Cappuccio et al., 2015), as well as additional profiles that capture the semi-quantitative effect of X, Y in case these two signals have opposite effects (one gene is upregulated by X and downregulated by Y or vice versa). In this case, we introduce new profiles by comparing the magnitude of the opposing effect.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) We generated a training set of simulated interaction profiles. Each profile was simulated multiple times with realistic group means for the conditions 0, X, Y, X+Y. Variability around the group means was assumed to be normally distributed. To build a robust classifier, we simulated three noise levels: low, medium, high. From each simulated profile i, instance j, and noise level n, we extracted a vector vi,j (n)of statistical features including the p-values for all possible pairwise contrasts from the groups 0, X, Y, X+Y. (B) The vectors vi,j (n), labeled with their originating profiles, provided a training set. The training set was used to develop a machine learning classifier that takes as input a vector of statistical features, and predicts as output the most probable profile. We compared three classification algorithms: Deterministic Match, Linear Discriminant Analysis (LDA), and Random Forests (RF). (C) To compare their performance, we measured the classification accuracy -defined as the fraction of correct predictions- on independent test sets. RF provided the most consistent distribution of accuracy over the different profiles in the three noise regimes. (D) To further compare LDA and RF, we computed the multiclass log gain, a metric that accounts for the overall distribution of class probabilities returned by these classifiers. Again, RF showed the best performance and was selected as the most robust model.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** To evaluate the performance of LDA and RF, we measured the distribution of precision (A) and recall (B) over all the 123 elements in the taxonomy of response profiles to combination treatments (Figure 1—figure supplement 1). These metrics were evaluated on independent test sets simulating three levels of noise: low, medium, and high. The results show that LDA fails to detect certain response profiles even in the low noise range. Overall, RF provides higher precision and recall, and a more consistent performance over the different classes.
+
+### Machine learning framework to map interaction effects from -omics data from combination treatment studies
 
 To improve the extraction of biological insight from a combination experiment, we develop a machine learning framework within the immune Synergistic and Antagonistic Interaction Learner (iSAIL) resource. The framework increases the resolution of a standard approach by using an abstract, pre-defined taxonomy of 123 distinguishable response profiles that can theoretically occur in a combination treatment experiment (Figure 1—figure supplement 1). These profiles represent qualitatively different scenarios for the expression of a gene in a combination treatment experiment. To analyze data on combination treatment, iSAIL applies a machine learning classifier trained to robustly classify the experimental gene response across the taxonomy (Figure 1A, middle subpanel). Interaction classification makes it possible to resolve the most meaningful interactions (e.g. emergent responses), while automatically excluding from downstream analysis all the nominal interactions (e.g. saturation effects) that carry minimal biological information. Importantly, genes classified in the same interaction profile are likely to share a coherent functional program. These coherent gene groups are then interrogated for mechanistic insight via pathway enrichment analysis (Figure 1A, right subpanel). By breaking down the combinatorial effects into these functional units, we greatly improve the functional interpretation of biological processes regulated by interactions.
 
 A key problem we address is to robustly classify gene response from noisy -omics data across. To solve this problem, the classifier generates a probabilistic assignment of the response for each gene to the taxonomy-defined profiles. This solution is more robust to noise than the deterministic matching previously used for related problems (Cappuccio et al., 2015). We systematically validate our approach by evaluating the classification performance on simulated data. Furthermore, in order to select the optimal framework, we investigate multiple machine learning models and compare their probabilistic output using the synthetic data under different noise regimes. These analyses identify Random Forest as a robust method with high predictive accuracy across all noise regimes (Figure 1—figure supplements 2 and 3).
 
-## A resource to analyze user-generated or public immunological combination treatment datasets
+### A resource to analyze user-generated or public immunological combination treatment datasets
 
 The taxonomy of interaction profiles used by the learning framework provides a standardized abstract space, independent of any specific dataset, where interactions from multiple datasets can be mapped and integrated for global analysis. Based on immunological relevance and data quality (see Materials and methods), we select a compendium of 25 human and 7 murine combination treatment studies for inclusion in the resource (Table 1). These datasets include studies of innate immune cells including several dendritic cell populations, macrophages, and monocytes, as well as epithelial cells and adaptive immune cells. Stimuli include diverse combinations of cytokines, Toll-Like Receptor (TLR) ligands, and drugs. We apply our classification framework to each dataset from the compendium and agglomerate the results in an overall interaction landscape, including it as a component of the resource (Figure 1B).
 
+**Table 1.**
+ Datasets used to construct the combinatorial landscape of immunity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Accession</th>
+      <th>Species</th>
+      <th>Cell type</th>
+      <th>Signal X</th>
+      <th>Signal Y</th>
+      <th>Time point</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSE5054</td>
+      <td>Human</td>
+      <td>Thyroid cells</td>
+      <td>IFNγ</td>
+      <td>IL1β</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE36331</td>
+      <td>Human</td>
+      <td>ARPE-19 cells</td>
+      <td>IFNγ</td>
+      <td>TNF</td>
+      <td>2d</td>
+    </tr>
+    <tr>
+      <td>GSE43409</td>
+      <td>Human</td>
+      <td>Innate lymphoid cells</td>
+      <td>cocktail (IL-1/IL-7/IL-23)</td>
+      <td>aNKp44</td>
+      <td>3.5 hr</td>
+    </tr>
+    <tr>
+      <td>GSE53712</td>
+      <td>Human</td>
+      <td>Monocytic THP-1</td>
+      <td>LPS</td>
+      <td>SB203580</td>
+      <td>4h</td>
+    </tr>
+    <tr>
+      <td>GSE53712</td>
+      <td>Human</td>
+      <td>Monocytic THP-1</td>
+      <td>LPS</td>
+      <td>SB203580</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE59179</td>
+      <td>Human</td>
+      <td>Hut78 cells</td>
+      <td>Enzastaurin</td>
+      <td>AR-A014418</td>
+      <td>3d</td>
+    </tr>
+    <tr>
+      <td>GSE63038</td>
+      <td>Human</td>
+      <td>NK cells</td>
+      <td>FcR activation</td>
+      <td>IL-12</td>
+      <td>12 hr</td>
+    </tr>
+    <tr>
+      <td>GSE79077</td>
+      <td>Human</td>
+      <td>MDMs</td>
+      <td>Dexamethasone</td>
+      <td>IFNγ</td>
+      <td>20 hr</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>pDC</td>
+      <td>IL3</td>
+      <td>Flu</td>
+      <td>6h</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>pDC</td>
+      <td>GM-CSF</td>
+      <td>Flu</td>
+      <td>6h</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>pDC</td>
+      <td>GM-CSF</td>
+      <td>Flu</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>pDC</td>
+      <td>GM-CSF</td>
+      <td>LL37</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>Monocytes</td>
+      <td>NOD2</td>
+      <td>TLRs</td>
+      <td>6h</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>Monocytes</td>
+      <td>NOD2</td>
+      <td>TLRs</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE57915</td>
+      <td>Human</td>
+      <td>Monocytes</td>
+      <td>IFNγ</td>
+      <td>TLRs</td>
+      <td>6h</td>
+    </tr>
+    <tr>
+      <td>GSE46903</td>
+      <td>Human</td>
+      <td>Macrophage</td>
+      <td>IFNγ</td>
+      <td>TNF</td>
+      <td>3d</td>
+    </tr>
+    <tr>
+      <td>GSE46903</td>
+      <td>Human</td>
+      <td>Macrophage</td>
+      <td>TNF</td>
+      <td>P3C</td>
+      <td>3d</td>
+    </tr>
+    <tr>
+      <td>GSE36323</td>
+      <td>Human</td>
+      <td>Monocytic THP-1</td>
+      <td>D3</td>
+      <td>TsA</td>
+      <td>2.5 hr</td>
+    </tr>
+    <tr>
+      <td>GSE52819</td>
+      <td>Human</td>
+      <td>Macrophage</td>
+      <td>Vitamin D</td>
+      <td>H37Rv</td>
+      <td>24 hr</td>
+    </tr>
+    <tr>
+      <td>GSE44392</td>
+      <td>Human</td>
+      <td>CD4+ T cell</td>
+      <td>edelfosine</td>
+      <td>beads</td>
+      <td>30 hr</td>
+    </tr>
+    <tr>
+      <td>GSE24767</td>
+      <td>Human</td>
+      <td>Keratinocyte</td>
+      <td>IL-17</td>
+      <td>TNF</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE77814</td>
+      <td>Human</td>
+      <td>BMSC</td>
+      <td>IFNγ</td>
+      <td>TNF (1.5 ng/ml)</td>
+      <td>2d</td>
+    </tr>
+    <tr>
+      <td>GSE77814</td>
+      <td>Human</td>
+      <td>BMSC</td>
+      <td>IFNγ</td>
+      <td>TNF (15 ng/ml)</td>
+      <td>2d</td>
+    </tr>
+    <tr>
+      <td>GSE134209</td>
+      <td>Human</td>
+      <td>moDC</td>
+      <td>TNF</td>
+      <td>IFNβ</td>
+      <td>1h</td>
+    </tr>
+    <tr>
+      <td>GSE134209</td>
+      <td>Human</td>
+      <td>moDC</td>
+      <td>TNF</td>
+      <td>IFNβ</td>
+      <td>2.5 hr</td>
+    </tr>
+    <tr>
+      <td>GSE20302</td>
+      <td>Mouse</td>
+      <td>DC</td>
+      <td>Lact acidophilus</td>
+      <td>Bifid bifidum</td>
+      <td>10 hr</td>
+    </tr>
+    <tr>
+      <td>GSE28994</td>
+      <td>Mouse</td>
+      <td>Lung</td>
+      <td>Pam2CSK4</td>
+      <td>ODN2395</td>
+      <td>4h</td>
+    </tr>
+    <tr>
+      <td>GSE32986</td>
+      <td>Mouse</td>
+      <td>DC</td>
+      <td>Curdlan (1 mg/ml)</td>
+      <td>GM-CSF</td>
+      <td>4h</td>
+    </tr>
+    <tr>
+      <td>GSE32986</td>
+      <td>Mouse</td>
+      <td>DC</td>
+      <td>Curdlan (100 mg/ml)</td>
+      <td>GM-CSF</td>
+      <td>4h</td>
+    </tr>
+    <tr>
+      <td>GSE35291</td>
+      <td>Mouse</td>
+      <td>HSPCs</td>
+      <td>Valproic acid</td>
+      <td>lithium</td>
+      <td>7d</td>
+    </tr>
+    <tr>
+      <td>GSE53986</td>
+      <td>Mouse</td>
+      <td>macrophage</td>
+      <td>IFNγ</td>
+      <td>LPS</td>
+      <td>1d</td>
+    </tr>
+    <tr>
+      <td>GSE62249</td>
+      <td>Mouse</td>
+      <td>SB-3123p cells</td>
+      <td>Cocktail (TNF/IFNγ)</td>
+      <td>Vemurafenib</td>
+      <td>4d</td>
+    </tr>
+  </tbody>
+</table>
+
+_Non-standard abbreviations: MDM = Monocyte Derived Macrophages; P3C = Pam3 CSK; D3 = nuclear hormone 1,25(OH)2D3; TsA = trichostatin A; BMSC = Bone Marrow Stromal Cells; HSPCs = hematopoietic stem/progenitor cells; Lact = Lactobacillus; Bifid = Bifidobacterium._
+
 The implemented interaction classification methodology, along with the interaction landscape, is made available in a user-friendly platform. The platform allows researchers to upload and analyze interactions from newly generated data, or to mine the interaction landscape, derived from our compendium, for global insight. To facilitate the functional interpretation of interactions, the platform is integrated with external resources including ImmPort (Bhattacharya et al., 2014), Gene Cards (Stelzer et al., 2016), and enrichR (Kuleshov et al., 2016), that provide extensive single-gene and pathway level annotations. The iSAIL resource has the capacity to generate insight into combinatorial immunity and help guide hypothesis generation and further experimentation.
 
-## Exploring and visualizing the interaction landscape
+### Exploring and visualizing the interaction landscape
 
 To build the interaction landscape, we systematically applied our interaction classification framework (Figure 2A) to the data compendium, mapping a total of 29,479 interactions. The number of interactions vary widely with the different cell types and combinations of stimuli (Figure 2—figure supplement 1). The landscape, extensively annotated using external databases, is an information-rich object that can be mined to gain new insight on general properties of interactions and on the immunological functions they regulate.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig2-v2.jpg)
+
+**Figure 2.:** (A) We developed a strategy to map and investigate combinatorial effects from multiple combination treatment experiments. Using public repositories, we selected 32 -omics datasets of combination treatment experiments from diverse immune cells and combinations of stimuli. For each dataset, we applied iSAIL and classified a total of ~30,000 interaction effects. (B) The first seven cards represent the most frequent interactions across datasets. The last two cards represent interactions that occur with vanishingly low frequency. (C) To integrate interactions from different datasets, we created a 3D structure with axes representing datasets, genes, and scores quantifying the intensity and robustness of the effects. The resulting landscape, supplemented with metadata and prior knowledge, makes it possible to comprehensively investigate the effect of combination treatments on immune cells. (D) The plane shows a 2D projection of the landscape focusing on immune checkpoints in selected datasets: (stimulat = stimulatory; inhibit = inhibitory). The size and color of the rectangles keep track respectively of the interaction score and sign (blues: positive interactions, red: negative interactions). The immune checkpoint IDO1 is synergistically induced in multiple datasets. Non-standard abbreviations: P3C = Pam3 CSK; vD = vitamin D; GM = GM CSF; edelf = edelfosine; Flu = influenza virus. (E) By looking at the specific nature of these synergies, we found two cases of potentiation in human moDC (top) and pDC (bottom).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62148/elife-62148-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Quantification of the ~30,000 interactions included in combinatorial landscape aggregated by immune cell type (A) and by type of combination (B). Non-standard abbreviations: host = host derived factors (e.g. cytokines).
 
 For example, mining the landscape enables a systematic quantification of the prevalence of interactions that may occur with combination treatments, which is currently unknown. We find that the most frequent interactions likely represent range limitations of the assay or biological responses, which we refer to as floor and ceiling effects (Figure 2B, top subpanel). These effects provide limited biological information in the absence of dose-response curves (Chou, 2006), unavailable in our context. Our approach segregates floor and ceiling effects from less frequent but more biologically relevant interactions, including suppression (9%), inhibition (8%), restoration (4%), emergence (4%), and potentiation (3%) (Figure 2B, middle subpanel). Our analysis also reveals that several theoretically possible combinatorial effects were nearly absent (<0.04%). These rare profiles include reversals, where two signals with the same individual effect (e.g. upregulation of a gene separately by X and Y) are reversed by the combination (e.g. downregulation of the same gene by X+Y) (Figure 2B, bottom subpanel).
 
@@ -64,7 +365,7 @@ For example, slicing by gene family allows systematic identification of positive
 
 Our results show that mining the interaction landscape can reveal new insight on combinatorial interactions and their immunological functions.
 
-## Interactions determine a context-dependent TNF biology
+### Interactions determine a context-dependent TNF biology
 
 To further illustrate how the interaction landscape can be analyzed, we study how TNF biology can be altered by the presence of cofactors. To this end, we sliced the combinatorial landscape along two axes (Figure 3, top-left). From the dataset axis, we selected combination treatments involving TNF with other stimuli, including IFNγ and IFNβ in four human cell models (Figure 3, left-margin). From the interaction axis, we extracted interaction profiles that encoded a qualitative change of the TNF effect when considered as a mono-treatment. We started by considering three types of qualitative changes: suppression, antagonistic reversal, and synergistic reversal of TNF effects (Figure 3, top-margin).
 
@@ -76,7 +377,7 @@ For each pair of dataset and profile, we processed the corresponding gene list w
 
 Our results suggest that TNF biology can be qualitatively altered by other stimuli through a variety of interaction effects including suppression, reversal, and the emergence of entirely new functions. This provides a new insight into the function of a cytokine.
 
-## Prediction and validation of TNF and IFNβ interaction effects in human monocyte-derived dendritic cells
+### Prediction and validation of TNF and IFNβ interaction effects in human monocyte-derived dendritic cells
 
 Finally, we investigate in-depth the interactions in our newly generated dataset of TNF combined with the cytokine IFNβ (see Materials and methods), and illustrate the hypothesis generation and validation cycle enabled by iSAIL. Although TNF and IFNβ are key modulators of immune function whose individual effects have been extensively studied, their interactions remain poorly understood. We previously reported that TNF and IFNβ act synergistically to induce an antiviral state in monocyte-derived dendritic cells (moDC) (Hartmann et al., 2014). To study the systems level impact of TNF and IFNβ co-treatment on human moDC, we applied iSAIL to this transcriptomic combination treatment experiment.
 
@@ -112,43 +413,43 @@ Finally, insight into combination treatment experiments is relevant to the field
 
 ## Materials and methods
 
-## Definition and simulation of interaction profiles
+### Definition and simulation of interaction profiles
 
-The notion of interaction profile was introduced in our previous work (Cappuccio et al., 2015) and is briefly summarized here. Figure 1—figure supplement 1 shows the taxonomy of 123 profiles used in this study. Mathematically, each of these profiles corresponds to a linear system of inequalities satisfied by the mean expression levels of a gene in the conditions 0, X, Y, X+Y. These mean expression levels are respectively denoted by eO¯, eX¯, eY¯, eX+Y¯. The system that defines a given profile admits infinitely many solutions, each of which can be seen as a particular instance of the profile. For example, an emergent synergy (Figure 1—figure supplement 1, profile 3) is satisfied by the vectors (2.2, 2.2, 2.2, 5.5), (4.1, 4.1, 4.1, 7.8), as well as by infinitely many other qualitatively similar vectors.
+The notion of interaction profile was introduced in our previous work (Cappuccio et al., 2015) and is briefly summarized here. Figure 1—figure supplement 1 shows the taxonomy of 123 profiles used in this study. Mathematically, each of these profiles corresponds to a linear system of inequalities satisfied by the mean expression levels of a gene in the conditions 0, X, Y, X+Y. These mean expression levels are respectively denoted by $e_{O}¯$, $e_{X}¯$, $e_{Y}¯$, $e_{X+Y}¯$. The system that defines a given profile admits infinitely many solutions, each of which can be seen as a particular instance of the profile. For example, an emergent synergy (Figure 1—figure supplement 1, profile 3) is satisfied by the vectors (2.2, 2.2, 2.2, 5.5), (4.1, 4.1, 4.1, 7.8), as well as by infinitely many other qualitatively similar vectors.
 
 To simulate a profile, our strategy starts by sampling the solution space of the corresponding system of inequalities. The solution space is sampled within a range of admissible values, calibrated to mimic the typical numerical ranges of -omics data. Next, a noise term is added to each instance of a profile using a random number generator. To account for the relatively small number of samples in -omics data, we simulated four replicates for each of the conditions 0, X, Y, X+Y. The noise term is assumed to be normally distributed. This assumption is widely held in the analysis of microarray data, and still applicable to RNA-seq data upon a suitable transformation (Law et al., 2014). Increasing noise levels correspond to a decreasing effect size, which is defined in terms of the standardized differences between the group means in the four conditions, as further described below.
 
 The steps to simulate interaction profiles are as follows:
 
-## Training and testing of the machine learning classifier
+### Training and testing of the machine learning classifier
 
-To train the machine learning classifiers, we generated a training set by simulating multiple instances of every profile in the admissible range of expression values. Each instance of a simulated profile was represented as a vector of statistical features. These include the estimated mean values e0¯, eX¯, eY¯, eX+Y¯, the p-values of all possible pairwise contrasts among these four values, and additional statistics returned by the Limma package (Ritchie et al., 2015) served as predictors of the true class.
+To train the machine learning classifiers, we generated a training set by simulating multiple instances of every profile in the admissible range of expression values. Each instance of a simulated profile was represented as a vector of statistical features. These include the estimated mean values $e_{0}¯$, $e_{X}¯$, $e_{Y}¯$, $e_{X+Y}¯$, the p-values of all possible pairwise contrasts among these four values, and additional statistics returned by the Limma package (Ritchie et al., 2015) served as predictors of the true class.
 
-The training set comprised different noise regimes. These were simulated by fixing different values for the parameter δ/σ, as described in the previous section. We considered the following values: low noise (δ/σ = 4), medium noise (δ/σ = 2.5), high noise (δ/σ = 2). Training of the machine learning classifiers was done using the R packages Caret and RandomForest.
+The training set comprised different noise regimes. These were simulated by fixing different values for the parameter $\delta/\sigma$, as described in the previous section. We considered the following values: low noise ($\delta/\sigma$ = 4), medium noise ($\delta/\sigma$ = 2.5), high noise ($\delta/\sigma$ = 2). Training of the machine learning classifiers was done using the R packages Caret and RandomForest.
 
-To select the best model, we generated additional simulated data and measured the out-of-sample classification accuracy per profile and for the same values of δ/σ that were used to build the training set. For each of these values, the accuracy was quantified as the proportion of correct predictions. An advantage of RF and LDA over the deterministic match is the possibility for a ‘soft’ (i.e. probabilistic) classification of an input profile into any element of the taxonomy. The quality of the full probabilistic output of RF and LDA was quantified for all noise levels using the multi-class log gain (Figure 1—figure supplement 2D). To further assess the performance of RF and LDA for the different classes, the distribution of precision and recall over all taxonomy classes was examined (Figure 1—figure supplement 2). All these criteria indicated RF as the most robust classifier. The multiclass log-gain, and the class-specific precision and recall were computed with the R packages MLmetrics and mltest.
+To select the best model, we generated additional simulated data and measured the out-of-sample classification accuracy per profile and for the same values of $\delta/\sigma$ that were used to build the training set. For each of these values, the accuracy was quantified as the proportion of correct predictions. An advantage of RF and LDA over the deterministic match is the possibility for a ‘soft’ (i.e. probabilistic) classification of an input profile into any element of the taxonomy. The quality of the full probabilistic output of RF and LDA was quantified for all noise levels using the multi-class log gain (Figure 1—figure supplement 2D). To further assess the performance of RF and LDA for the different classes, the distribution of precision and recall over all taxonomy classes was examined (Figure 1—figure supplement 2). All these criteria indicated RF as the most robust classifier. The multiclass log-gain, and the class-specific precision and recall were computed with the R packages MLmetrics and mltest.
 
-## Generating the combinatorial landscape of immunity
+### Generating the combinatorial landscape of immunity
 
-Public combination treatment datasets were retrieved from Gene Expression Omnibus using the package GEOquery (Davis and Meltzer, 2007). The relevant datasets were identified using key terms typically associated with combination treatments such as 'synergy', 'antagonism', 'combinatorial', and similar. This approach was designed to facilitate automatic update of the resource as new -omics data from combination treatment experiments become publicly available. To facilitate comparisons, all the datasets were imported in the format of the original publications. The datasets were preprocessed as follows. First, if different probes were available for the same gene, the probe with the largest coefficient of variation was selected. Second, genes with low coefficient of variation (lower than the median across all genes) were filtered out. Next, differentially expressed genes were determined with the Limma package. A significance cutoff of 0.05 was applied on the p-values corrected for multiple testing. An additional cutoff was imposed on the δ (defined above): genes with δ lower than the median value computed across all differentially expressed genes were filtered out. The resulting differentially expressed genes were then analyzed by the machine learning classifier which assigned to each gene the predicted element of the taxonomy. For each identified interaction, a score was defined to measure its magnitude as well as its significance. The magnitude of the interaction b was measured as the average Bliss index, defined as the average deviation from additivity b=ΔeX+Y¯−(ΔeX¯+ΔeY¯), where Δei¯=ei¯−e0¯ (i = X, Y, X+Y), b>0 for positive interactions and b<0 for negative interactions. The significance of the interaction was measured as the class probability p returned by the classifier. To account for both the significance and the magnitude of an interaction, an overall score was defined as the product b⋅p.
+Public combination treatment datasets were retrieved from Gene Expression Omnibus using the package GEOquery (Davis and Meltzer, 2007). The relevant datasets were identified using key terms typically associated with combination treatments such as 'synergy', 'antagonism', 'combinatorial', and similar. This approach was designed to facilitate automatic update of the resource as new -omics data from combination treatment experiments become publicly available. To facilitate comparisons, all the datasets were imported in the format of the original publications. The datasets were preprocessed as follows. First, if different probes were available for the same gene, the probe with the largest coefficient of variation was selected. Second, genes with low coefficient of variation (lower than the median across all genes) were filtered out. Next, differentially expressed genes were determined with the Limma package. A significance cutoff of 0.05 was applied on the p-values corrected for multiple testing. An additional cutoff was imposed on the δ (defined above): genes with δ lower than the median value computed across all differentially expressed genes were filtered out. The resulting differentially expressed genes were then analyzed by the machine learning classifier which assigned to each gene the predicted element of the taxonomy. For each identified interaction, a score was defined to measure its magnitude as well as its significance. The magnitude of the interaction $b$ was measured as the average Bliss index, defined as the average deviation from additivity $b=Δe_{X+Y}¯−(Δe_{X}¯+Δe_{Y}¯)$, where $Δe_{i}¯=e_{i}¯−e_{0}¯$ (i = X, Y, X+Y), $b>0$ for positive interactions and $b<0$ for negative interactions. The significance of the interaction was measured as the class probability $p$ returned by the classifier. To account for both the significance and the magnitude of an interaction, an overall score was defined as the product $b⋅p.$
 
 The identified interactions were annotated using a manually curated list of stimulatory and inhibitory immune checkpoints, as well as the gene lists provided by the ImmPort database (Bhattacharya et al., 2014).
 
-## Enrichment analysis
+### Enrichment analysis
 
 The functional enrichment of interactions was done using the Enrichr library (Kuleshov et al., 2016). Four annotation databases were considered: GO Biological Processes (2017b), KEGG (2016), Wikipathways (2016), Reactome (2016). Enrichment was considered significant if the enrichment p-value adjusted for multiple testing was lower than 0.05.
 
 To analyze the synergies induced by IFNβ and TNF co-treatment, we focused on annotation terms with size lower than 500 genes, to increase the specificity of the identified functions and pathways. Moreover, we imposed a minimum threshold on the overlap between the annotation term and the gene set being analyzed. This threshold was meant to identify annotation terms covering a minimum proportion of the gene set being analyzed. We chose a minimum coverage of 2%.
 
-## DC differentiation
+### DC differentiation
 
 All human subjects research protocols were reviewed and approved by the IRB of the Icahn School of Medicine at Mount Sinai. Monocyte-derived DCs were obtained from healthy human blood donors following a standard protocol described elsewhere (Hartmann et al., 2017). All experiments were replicated using cells obtained from different donors.
 
-## Microarray data of human moDC treated with TNF and IFNβ
+### Microarray data of human moDC treated with TNF and IFNβ
 
 DC were treated with 4500 pg/mL TNF, 3000 pg/mL IFNβ, or the combination of both for either 1 hr or 2.5 hr. Untreated DC served as a negative control. Three samples were taken per treatment and time point. RNA was extracted with the RNeasy plus kit (Qiagen) following the manufacturer’s instructions. Gene expression was assayed using broad human genome specific HG-U133_Plus_2 GeneChip expression probe arrays (Affymetrix). Affymetrix microarray data were normalized using gcRMA (Wu and Irizarry, 2004). Additional data processing was done as described above (see in Materials and methods section ‘Generating the combinatorial landscape of immunity’).
 
-## Experimental validation of TNF and IFNβ synergistic effects
+### Experimental validation of TNF and IFNβ synergistic effects
 
 To test the involvement of VCAM-1 in mediating TNF and IFNβ induced synergy, DCs were exposed to TNF, IFNβ, the combination of TNF and IFNβ or control as described above. Four hours after treatment DCs were exposed to allogeneic T cells in a 1:3 ratio for an additional 4 hr and then fixed with paraformaldehyde. Cells were stained with fluorochrome labeled antibodies against CD11c (DCs) and CD3 (T cells) and analyzed by imaging flow cytometry. DCs interacting with T cells were identified in images where one or multiple T cells had a direct contact with a DC.
 

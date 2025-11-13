@@ -18,12 +18,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03qxff017 Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel-Canada, the Hebrew University-Hadassah Medical School Jerusalem Israel
-2. https://ror.org/04d0szq68 Neuropediatric Unit, Shaare Zedek Medical Center Jerusalem Israel
-3. https://ror.org/02wcqs336 Jerusalem Mental Health Center, Eitanim Psychiatric Hospital Jerusalem Israel
-4. https://ror.org/03qxff017 Hebrew University-Hadassah School of Medicine Jerusalem Israel
-5. https://ror.org/056d84691 Karolinska Institute, Department of Cell and Molecular Biology Stockholm Stockholm Sweden
-6. https://ror.org/03qxff017 Endocrinology and Metabolism Service, Hadassah Medical Organization and Faculty of Medicine, Hebrew University of Jerusalem Jerusalem Israel
+1. Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel-Canada, the Hebrew University-Hadassah Medical School Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+2. Neuropediatric Unit, Shaare Zedek Medical Center Jerusalem Israel ([ROR:04d0szq68](https://ror.org/04d0szq68))
+3. Jerusalem Mental Health Center, Eitanim Psychiatric Hospital Jerusalem Israel ([ROR:02wcqs336](https://ror.org/02wcqs336))
+4. Hebrew University-Hadassah School of Medicine Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
+5. Karolinska Institute, Department of Cell and Molecular Biology Stockholm Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+6. Endocrinology and Metabolism Service, Hadassah Medical Organization and Faculty of Medicine, Hebrew University of Jerusalem Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ Schizophrenia is a common, severe, and debilitating psychiatric disorder. Despit
 
 ## Introduction
 
-## Early diagnosis in schizophrenia
+### Early diagnosis in schizophrenia
 
 Schizophrenia is a complex and chronic psychiatric disorder affecting around 1% of the global population. It is associated with increased disability, mortality, and high private and social economic burden (Laursen et al., 2014; Chong et al., 2016; Insel, 2010).
 
@@ -43,7 +43,7 @@ The etiology of schizophrenia is multifactorial, with a complex interaction of p
 
 Other potential biomarkers were studied, including neurotransmitters and their metabolites (Davison et al., 2018), associated endophenotypes such as smooth pursuit eye movement (SPEM) (Morita et al., 2017) and sensory gating defects (P150) (Suh et al., 2021). Results of those studies are somewhat inconsistent and are not specific enough to allow their use as a diagnostic tool. Brain imaging has demonstrated notable structural changes mostly in late and more chronic stages of the disease, too late for useful intervention (McCutcheon et al., 2020).
 
-## Cell-free DNA as a biomarker for diseases
+### Cell-free DNA as a biomarker for diseases
 
 Circulating cell-free DNA (cfDNA) in the blood plasma was first discovered by Mandel and Metais in 1948 (Liu, 2018). Over the years it was established that these typically ~150 bp fragments of double-stranded DNA are released into the bloodstream during the process of cell death (Lo et al., 2021). cfDNA molecules are rapidly cleared from the circulation with a half-life of ~15 min, thus reflecting events taking place at the time of blood draw (Lo et al., 1999; Sherwood and Weimer, 2018). Although the mechanism underlying the release and rapid clearance of the cfDNA is still unclear, many researchers have been trying to develop methods that will enable the use of these short fragments for the diagnosis and follow-up of various medical conditions. For example, cfDNA-based methods of prenatal diagnosis have been developed (Lo et al., 1997; Wong and Lo, 2003), and ongoing work is advancing approaches for cancer liquid biopsy (Volckmar et al., 2018; Schwarzenbach et al., 2011; Corcoran and Chabner, 2018) and for detection of rejection in organ transplant recipients (Sherwood and Weimer, 2018; Lehmann-Werman et al., 2018; Gala-Lopez et al., 2018).
 
@@ -51,7 +51,7 @@ The possibility of using cfDNA as a biomarker in the medical conditions detailed
 
 We and others have recently described an approach to identify the tissue origins of cfDNA, based on tissue-specific methylation patterns. Such cell-type-specific markers allow the inference of cell death in multiple settings, for example, cardiomyocyte cell death following myocardial infarction or hepatocyte death in patients with liver metastasis (Lehmann-Werman et al., 2018; Lehmann-Werman et al., 2016; Zemmour et al., 2018; Sun et al., 2015; Gai et al., 2018; Lubotzky et al., 2022).
 
-## Brain cell death in psychosis and schizophrenia
+### Brain cell death in psychosis and schizophrenia
 
 Neuro-anatomical changes are known in schizophrenia. Numerous longitudinal and cross-sectional imaging studies recruited individuals at high and ultra-high risk for developing a psychotic illness and demonstrated dynamic brain changes emerging around onset and over the years of schizophrenia. The studies generally demonstrate gray matter reduction in the frontal and temporo-limbic regions (Takahashi and Suzuki, 2018; Dietsche et al., 2017; Pantelis et al., 2007). Structural brain abnormalities in psychosis occur prior to full blown symptoms and progressively worsen as psychosis develops. Although the underlying causes and the exact timing of the morphologic changes in the brain remain obscure, apoptosis has been proposed as a potential mechanism that could contribute to this progressive pathology. This idea is also supported by post-mortem evidence of regional reduction of neuronal and glia density. Apoptosis in the CNS occurs rapidly, and apoptotic cells are typically cleared within 24 hr. The process occurs without inflammation and does not involve gliosis (Jarskog et al., 2005; Jarskog, 2006). Ershove et al. demonstrated dysregulation of apoptosis in schizophrenia through considerably increased oxidated levels of cfDNA (Ershova et al., 2017). Thus, we hypothesized that brain-derived cfDNA levels increase in patients with acute psychosis and schizophrenia, reflecting ongoing cell death, especially in early and active phases of diseases. We further hypothesized that brain cfDNA levels would be increased in patients, unrelated to treatment with antipsychotic medications.
 
@@ -59,21 +59,33 @@ In this proof-of-concept study we examined plasma samples from patients with a f
 
 ## Results
 
-## Identification of brain methylation markers
+### Identification of brain methylation markers
 
 Tissue-specific methylation markers were selected after a comparison of extensive genome-wide DNA methylation datasets generated using Illumina Infinium HumanMethylation450k BeadChip array. Datasets used included publicly available methylation profiles from The Cancer Genome Atlas and Gene Expression Omnibus repositories, along with data that we generated locally. Using this comparative analysis we selected 13 genomic loci, which are unmethylated specifically in neurons (four markers), oligodendrocytes (three markers), or astrocytes (three markers) and in all brain-derived cell types (three markers), and methylated in all other examined cell types. Data describing the development and validation of these 10 cell-specific markers (neurons, oligodendrocytes, and astrocytes) were published in a recent paper (Lubotzky et al., 2022). To test our in silico predictions regarding the three whole brain markers specificity, we applied bisulfite treatment, multiplex PCR, and next-generation sequencing to determine the methylation status of each marker in a panel of DNA samples obtained from multiple human tissues, as previously described (Neiman et al., 2020; Figure 1—figure supplement 1A). To determine assay sensitivity, we serially diluted brain DNA into leukocyte DNA, and found that the brain markers allowed the detection of as little as 0.1% brain DNA in a mixture, or just one brain genome in a mixture of a thousand genomes (Figure 1—figure supplement 1B).
 
-## Noninvasive detection of brain-derived cfDNA among patients with first psychotic episode
+### Noninvasive detection of brain-derived cfDNA among patients with first psychotic episode
 
 We determined the plasma concentrations of brain-derived cfDNA (including methylation markers of neurons, astrocytes, and oligodendrocytes and whole brain) in 31 healthy controls, and 29 patients with first psychotic episode.
 
 Total levels of cfDNA circulating in plasma were higher in patients with first psychotic episode compared with healthy controls (Mann-Whitney test for controls vs. patients, p-value = 0.017, Figure 1A). cfDNA levels from all brain cell combined were higher in patients with first psychotic episode compared with healthy (Figure 1B and C). cfDNA levels from each brain cell type separately or from whole brain markers were also significantly elevated in patients (Mann-Whitney test for patients vs. controls, neurons p-value = 0.0013, astrocytes p-value = 0.0016, oligodendrocytes p-value = 0.0129, whole brain markers p-value = 0.0012). Elevated brain-derived cfDNA was seen when measuring either its absolute concentration (Figure 1D) or its fraction (Figure 1—figure supplement 2A-D). This is consistent with elevated release of brain-derived cfDNA in patients with first psychotic episode, reflecting brain pathology, rather than a non-specific effect.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76391/elife-76391-fig1-v2.jpg)
+
+**Figure 1.:** (A) Plasma concentrations of total cfDNA. Total levels of cfDNA in healthy controls and patients with first psychotic episode. Mann-Whitney test for controls vs. patients, p-value = 0.017. (B–C) Plasma concentrations of brain-derived cfDNA. Brain cfDNA levels in healthy controls (n=31) and patients with first psychotic episode (n=29), represented as the cumulative sum of the average signals from neuron, oligodendrocyte, and astrocyte markers. In panel B, graph retaining the value of each component; in panel C, graph combining all average signals to one value for statistical analysis. (D) Signals from distinct brain cell types. Mann-Whitney test for controls vs. patients, neurons p-value = 0.0013, astrocytes p-value = 0.0016, oligodendrocytes p-value = 0.0129, and whole brain markers p-value = 0.0012. Shown are the average levels in plasma of four neuronal markers, three astrocyte markers, three oligodendrocyte markers, and three general brain markers. cfDNA was treated with bisulfite, PCR amplified, and sequenced, and the molecules that are fully unmethylated were scored. The fraction of brain-specific molecules was multiplied by the total cfDNA concentration. Each dot represents one plasma sample. (E) Receiver operating characteristic (ROC) curve for distinguishing patients with first psychotic episode from healthy controls. A combined score of all brain markers, area under the curve (AUC) 0.77; 95% CI=0.64–0.9; p-value = 0.0003.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76391/elife-76391-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Methylation status of 13 brain-derived markers in genomic DNA from multiple human tissues. Each color represents a different locus that is differentially hypomethylated in a specific brain cell type. Shown is the methylation score of multiple CpG sites in each block (i.e. the fraction of molecules that are fully unmethylated in a given sample). (B) Sensitivity of brain-derived methylation markers. Brain DNA was spiked into leukocyte DNA as indicated and the fraction of brain DNA was assessed using bisulfite conversion, multiplex PCR amplification of brain markers, and sequencing. Left: 20 brain cell genome equivalents (GE) (120 pg brain DNA) were mixed with blood DNA (0–10 ng). Right: brain cell DNA (20–0.2 GE) was diluted into 10 ng of blood DNA.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76391/elife-76391-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Percentage of brain-derived cfDNA. Brain cfDNA levels expressed as percentage of cfDNA derived from the indicated brain cell type. Mann-Whitney test for controls vs. patients, neurons p-value = 0.0048, astrocytes p-value = 0.0074, oligodendrocytes p-value = 0.0186, and whole brain markers p-value = 0.0018. (E–H) ROC curves for distinguishing patients with first psychotic episode from healthy controls, using markers of individual brain cell types. (E) Neuronal markers; area under the curve (AUC) 0.73, 95% CI = 0.6 to 0.86; p-value. (G) Oligodendrocyte markers; AUC 0.65; 95% CI = 0.51 to 0.79; p-value. (H) Whole brain markers; AUC 0.71; 95% CI = 0.58 to 0.84; p-value.
+
 To determine how well brain-derived cfDNA markers can distinguish patients with first psychotic episode from healthy controls, we generated a receiver operating characteristic (ROC) curve for the combined signal from all brain cell types. The brain cfDNA score was able to identify the plasma of patients with a first psychotic episode with an area under the curve (AUC) of 0.77 (p-value = 0.0003). At 90% specificity, the sensitivity for identifying patients with first psychotic episode was 65% (Figure 1E). The markers of each brain cell type were able to identify the plasma of patients with first psychotic episode with an AUC of 0.65–0.73 (Figure 1—figure supplement 2E-H).
 
 There was no significant correlation between brain markers and clinical parameters including the duration of the current episode, duration of hospitalization, or the number of psychotic episodes (see Source data 1).
 
-## Relationship to psychiatric drugs
+### Relationship to psychiatric drugs
 
 Since previous studies found a correlation between the use of antipsychotic drugs and anatomic changes in the brain (Huhtaniska et al., 2017), we examined whether the increase of brain-derived cfDNA levels in patients is related to their psychiatric drug intake. To this effect, we considered (1) the amount of antipsychotic drugs taken on the day of the patient’s blood test for cfDNA and (2) the total amount of antipsychotic drugs taken throughout the hospitalization until the blood test. These data were taken from medical records. In order to generate a single score for all patients, independently of the type of drugs they took, we converted the various antipsychotic medication dosages into an equivalent dosage of olanzapine, following the expert-consensus-based method used in Gardner et al., 2010. We then ran various statistical tests (Pearson and Spearman correlation coefficients, and t-test and Mann-Whitney for categorical comparisons), to examine potential correlations with the total amount of cfDNA, and the level of cfDNA originating from astrocytes, neurons, oligodendrocytes, and from the whole brain. We considered 13 individual biomarkers for brain cell types, as well as their average for each cell type, for a total of 18 variables.
 
@@ -89,7 +101,7 @@ The development and validation of brain-specific cfDNA methylation markers can s
 
 ## Materials and methods
 
-## Clinical samples
+### Clinical samples
 
 We recruited men and women over 18 years of age, who have developed psychotic symptoms for the first time in their life within the last year and were admitted to the acute psychiatric units of the Jerusalem Mental Health Center in Israel. Diagnosis of a psychotic disorder was given by treating psychiatrists and verified by a senior psychiatrist from the research team (IP). Blood samples were obtained after the initial stabilization and partial remission of the psychotic symptoms which enabled the patients to give written informed consent for participation in the study. The time achieving stability was different for each individual patient, but the majority stabilized within 4 weeks (79%). The patients were asked to complete a short questionnaire regarding demographic details, current physical condition, the onset of present symptoms, and drug use. The recruitment was done following the approval of the study’s protocol by the Jerusalem Mental Health Center Institutional Review Board. Patients with acute medical conditions in the week prior to the blood sampling were excluded from the study.
 
@@ -101,13 +113,13 @@ This study was conducted according to protocols approved by the Jerusalem Mental
 
 Patient demographics, clinical data, and cfDNA data are detailed in Source data 1.
 
-## cfDNA analysis
+### cfDNA analysis
 
 Blood samples were collected in cfDNA BCT (Streck) tubes and centrifuged at 1500 g for 10 min at 25°C within 1 week of collection. Plasma was removed and re-centrifuged at 3000 g for 10 min at 25°C to remove any remaining cells. Plasma was then stored at −80°C until assay. Cell-free DNA was extracted using the QIAsymphony SP instrument and its dedicated QIAsymphony Circulating DNA Kit (Qiagen) according to the manufacturer’s instructions. DNA concentration was measured using the Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific). cfDNA was treated with bisulfite using EZ DNA Methylation-Gold (Zymo Research), and PCR amplified with primers specific for bisulfite-treated DNA but independent of methylation status at the monitored CpG sites, as described (Neiman et al., 2020). Treatment with bisulfite led to degradation of 60–90% of the DNA (average, 75% degradation), consistent with previous reports (Grunau et al., 2001). Note that while DNA degradation does reduce assay sensitivity (since fewer DNA molecules are available for PCR amplification), it does not significantly harm assay specificity since methylated and unmethylated molecules are equally affected. Primers were bar-coded using TruSeq Index Adapters (Illumina), allowing the mixing of samples from different individuals when sequencing PCR products using NextSeq sequencers (Illumina). Sequenced reads were separated by barcode, aligned to the target sequence, and analyzed using custom scripts written and implemented in R. Reads were quality filtered based on Illumina quality scores, and identified by having at least 80% similarity to target sequences and containing all the expected CpGs in the sequence. CpGs were considered methylated if CG was read and were considered unmethylated if TG was read. The fraction of unmethylated molecules in a sample was multiplied by the total concentration of cfDNA in the sample, to assess the number of brain genome equivalents per ml of plasma. The concentration of cfDNA was measured prior to bisulfite conversion, rendering the assay robust to potential inter-sample fluctuations in the extent of bisulfite-induced DNA degradation.
 
 The computational pipeline used to interpret sequence reads as well as a representative set of data were uploaded to GitHub (https://github.com/Joshmoss11/btseq; copy archived at swh:1:rev:efc75ddd347c20392cf0a034706a7b5b6090be75, Moss, 2021).
 
-## Data availability
+### Data availability
 
 All relevant data including information on the markers used (coordinates and primer sequences), detailed information on patients and donors, and the raw data on values of each methylation marker in each sample are provided in Source data 1. These data were used to generate the graphs shown in the paper.
 

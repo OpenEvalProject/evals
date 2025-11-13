@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Center for Biomedical Modeling, Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States
-2. https://ror.org/05pd35d11 The African Comprehensive HIV/AIDS Partnerships (ACHAP) Gaborone Botswana
-3. https://ror.org/02en5vm52 Sorbonne Université, INSERM, Institut Pierre Louis d’Epidémiologie et de Santé Publique Paris France
+1. Center for Biomedical Modeling, Department of Psychiatry and Biobehavioral Sciences, Semel Institute for Neuroscience and Human Behavior, David Geffen School of Medicine, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+2. The African Comprehensive HIV/AIDS Partnerships (ACHAP) Gaborone Botswana ([ROR:05pd35d11](https://ror.org/05pd35d11))
+3. Sorbonne Université, INSERM, Institut Pierre Louis d’Epidémiologie et de Santé Publique Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
 
 † Corresponding author
 
@@ -38,11 +38,11 @@ A great deal is known about the epidemiology of HIV in Botswana in terms of the 
 
 ## Results
 
-## Estimated incidence of internal migration
+### Estimated incidence of internal migration
 
 We estimated the Crude Migration Intensity (CMI) (Bell et al., 2002) for Botswana in the 12 mo before each census was conducted (i.e., between 1980 and 1981, 1990 and 1991, 2000 and 2001, and 2010 and 2011). The CMI represents the overall incidence, or level of internal migration, per hundred residents over a specified time interval (Bell et al., 2002); it is an indicator of the propensity of the population to move and is a measure of migration both between districts and within districts. The CMI remained markedly high and constant: 9.04 per hundred persons between 1980 and 1981, 10.45 per hundred persons between 1990 and 1991, 10.73 per hundred persons between 2000 and 2001, and 10.32 per hundred persons between 2010 and 2011. We found that migrants were more likely to move between districts than to move within districts; this propensity, calculated as a ratio (the number of migrants moving between districts relative to the number of migrants moving within districts), increased over time from 1.25 (1981) to 2.40 (2001 and 2011).
 
-## Age profiles of migrants
+### Age profiles of migrants
 
 Gender-stratified age profiles of migrants are presented in Figure 2. These results show that the type of individual who migrated within Botswana at the time of each census was markedly similar, with respect to gender and age. Approximately 50% of migrants were women, and the most common age to migrate (for both women and men) was between 16 and 20 years old.
 
@@ -50,9 +50,21 @@ Gender-stratified age profiles of migrants are presented in Figure 2. These resu
 
 **Figure 2.:** (A) 1981, (B) 1991, (C) 2001, and (D) 2011.
 
-## Migratory flows, district size, and migration metrics
+### Migratory flows, district size, and migration metrics
 
 To reconstruct the internal migration networks, we first calculated migratory flows between districts. We define a district-level migratory flow as the number of migrants who changed their residency from one district to another during the 12 mo prior to the census. The migratory flows for each district (within district, in-flow, and out-flow) and the size of each district are listed for 1980–1981 (Supplementary file 1a), 1990–1991 (Supplementary file 1b), 2000–2001 (Supplementary file 1c), and 2010–2011 (Supplementary file 1d). All of the districts had an in-flow, and/or out-flow, of migrants at all four census periods (Figure 3 and Supplementary file 1). Over the three decades (i.e., between 1981 and 2011), the number of migrants more than doubled, as did the population of Botswana.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85435/elife-85435-fig3-v1.jpg)
+
+**Figure 3.:** (A) 1981, (B) 1991, (C) 2001, and (D) 2011. Maps show the net migratory flows between any two districts (pink and green lines). Line thickness indicates the magnitude of the flow between districts, line color indicates the flow direction. Pink lines denote eastward flows, green lines denote westward flows. For example, in 1991, the thickest green line indicates a large (westward) migratory flow from Ngamiland East to Ngamiland West. Each district is shaded to indicate the total net flow of all migrations into and out of it. Cities and towns are represented with circles. Districts for the Okavango Delta and Central Kgalagadi Game Reserve have been geographically incorporated into Ngamiland West and Ghanzi, respectively, due to their small population sizes.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85435/elife-85435-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) 1981, (B) 1991, (C) 2001, and (D) 2011. The turnover rate provides a measure of net flow for a district per hundred residents. Botswana’s two cities and five towns are denoted with circles. Districts for the Okavango Delta and Central Kgalagadi Game Reserve have been geographically incorporated into Ngamiland West and Ghanzi, respectively, due to their small population sizes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85435/elife-85435-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) 1981, (B) 1991, (C) 2001, and (D) 2011. The WDMI for each district is the number of internal movements per hundred residents. Botswana’s two cities and five towns are denoted with circles. Districts for the Okavango Delta and Central Kgalagadi Game Reserve have been geographically incorporated into Ngamiland West and Ghanzi, respectively, due to their small population sizes.
 
 Notably, our analysis of the micro-census data show that, in 1981, the population of the two cities and four towns were very small. The capital, Gaborone, had a population of 56,860 and Francistown had a population of only 31,120. The populations of the four towns ranged in size from 5,200 to 27,430. The number of individuals who lived in the other districts ranged in size from 1,050 in the Okavango Delta to 111,820 in Kweneng. In the early time periods, there was a large migration into many of the cities and towns; by 2011, there was a large migration out of many of them.
 
@@ -60,7 +72,7 @@ Using the migratory flows, we estimated the annual turnover rate in each distric
 
 More than half of the districts also had a fairly high within district migration intensity (WDMI) (Figure 3—figure supplement 2): for example, in Central Bobonong, ~7% of residents moved from one rural village to another between 1980 and 1981. The cities and towns have very low levels of within-district movement due to their small geographic size. In general, levels of WDMI were higher on the west side of the country, lower in the southeast, and fairly stable over time.
 
-## Reconstructed internal migration networks
+### Reconstructed internal migration networks
 
 The chord diagrams (Figure 4) show the reconstructed internal migration networks, based on the micro-census data, between 1980–1981 (Figure 4A), 1990–1991 (Figure 4B), 2000–2001 (Figure 4C), and 2010–2011 (Figure 4D). Each district is a node in the network. Networks are shown in terms of the magnitude of the migratory in-flows and out-flows between districts, and the effect of these flows on connecting different districts throughout the country: two districts are connected if they have a migratory flow between them. Even the earliest migration network in 1981 – when Botswana was predominantly rural – can be seen to be fairly complex and shows a high degree of connectivity amongst the districts, although the migratory flows and counter-flows are fairly small. Notably, in all four networks, many of the flows and counter-flows are similar in magnitude. Both the magnitude of the migratory flows and counter-flows increased with time (between 1981 and 2011) as the population increased in size.
 
@@ -68,7 +80,7 @@ The chord diagrams (Figure 4) show the reconstructed internal migration networks
 
 **Figure 4.:** (A) 1981, (B) 1991, (C) 2001, and (D) 2011. Each diagram shows the internal migration network of the general population in the 12 mo prior to the census. Each color represents a different district. The thickness of each line is proportional to the number of migrants that moved between the two connected districts. The angular width of each district is proportional to the total number of migrants who moved into, or out of, that district. For clarity, in (A–C) only connections with greater than 200 migrants are shown, and in (D) only connections with greater than 400 migrants are shown. Consequently, some districts are not shown in the chord diagram. The total number of migrants (in and out) of every district is listed in Supplementary file 1.
 
-## In-flow and out-flow migration hubs
+### In-flow and out-flow migration hubs
 
 The top five in-flow and out-flow migration hubs are shown in Figure 5. Of note, all five towns (Jwaneng, Selebi Phikwe, Sowa, Lobatse, and Orapa) were amongst the top five out-flow and in-flow migration hubs at every census period.
 
@@ -86,7 +98,7 @@ In 1991, 2001, and 2011, the top in-flow (and out-flow) hub was the mining town,
 
 Notably, Francistown was an important in-flow and out-flow hub between 1980 and 1981. In 1981, 15% of the population consisted of migrants who had moved to the town in the previous 12 mo (Figure 5A); in that same time period, 13% of the town’s population moved to another district (Figure 5B). The city was also an important in-flow hub in 1991 (Figure 5C) and out-flow hub in 2011 (Figure 5H). Gaborone was also an important in-flow hub in 1981 and 2001 (Figure 5A and E), but only an important out-flow hub in 1991 and 2001 (Figure 5D and F).
 
-## Understanding and visualizing the role of migration networks in urbanization
+### Understanding and visualizing the role of migration networks in urbanization
 
 The internal migration networks for each of the four time periods (1981, 1991, 2001, and 2011) are presented in terms of the classification system for our migration-urbanization framework, both as schemata (Figure 7) and as Sankey diagrams (Figure 8). The framework consists of five classes (see ‘Methods’). The class designation (city, town, predominantly urban, partially urban, predominantly rural) of each district over time is provided in Supplementary file 1. Both the schemata and the Sankey diagrams show the magnitude of the migratory flows amongst the five classes in the 12 mo before each census. Between 1981 and 2011, the overall percentage of the population living in urban areas increased more than 3.5-fold (from ~18% to ~64%), and the internal migration networks changed substantially.
 
@@ -106,7 +118,7 @@ By 2001, considerably more in situ urbanization had occurred: since 1981, four d
 
 By 2011, 12 districts had become predominantly or partially urbanized (Supplementary file 1d). The growth rate of cities had decreased to 1.2-fold, and the towns had not increased substantially in size. At this time, while most flows were symmetric, migrants were disproportionately leaving the cities in favor of towns and urban villages (Figure 7D and Figure 8D). Approximately 42% of the population were living in these urban villages; there was at least one urban village in every district.
 
-## The impact of internal migration on the geographic distribution of the population
+### The impact of internal migration on the geographic distribution of the population
 
 We evaluated the impact of internal migration on the geographic distribution of the population by calculating two metrics: the Migration Effectiveness Index (MEI) and the Aggregate Net Migration Rate (ANMR). The MEI, which ranges from 0 to 100, quantifies the balance between the migratory flows and counter-flows (Shryock et al., 1975). Low values of the MEI indicate that the migratory flows and counter-flows are fairly balanced; the higher the value of the MEI, the greater the asymmetry between flows and counter-flows. The ANMR measures the impact of internal migration on geographically redistributing the population (Bell et al., 2002): it identifies the net shift of population between districts per hundred residents per year. The ANMR is determined by both the intensity of migration (as specified by the CMI) and the balance between the migratory flows and counter-flows (as specified by the MEI).
 
@@ -132,41 +144,49 @@ All HIV epidemics in SSA are generalized; HIV can only diffuse through a populat
 
 ## Methods
 
-## Data
+### Data
 
 To conduct our analyses, we used representative samples of micro-census data extracted from the IPUMS-International database (Minnesota Population, 2020): these data are anonymized individual-level data (Ruggles et al., 2015). IPUMS-International currently disseminates data from 547 censuses and surveys in 103 countries worldwide (Minnesota Population, 2020). The Botswana dataset consists of representative 10% samples from the original censuses and includes anonymized individual-level data on age, gender, and residence (current, as well as 12 mo prior). The data also includes individual survey weights that allow for population-level estimation (Ruggles et al., 2015).
 
 To examine historical trends in internal migration networks and urbanization, we analyzed data collected in the 1981, 1991, 2001, and 2011 censuses. We used data on internal migration that had occurred in the 12 mo prior to each census: an individual was classified as a migrant if they had changed their permanent residency within that 1-year interval.
 
-## Estimating the incidence of internal migration
+### Estimating the incidence of internal migration
 
-We estimated the incidence of internal migration by calculating the CMI. This statistic represents the overall incidence, or level of internal migration (between district plus within district), per hundred residents over a year. The mathematical definition of the CMI is given in Equation (1):(1)CMI=100⋅MP
+We estimated the incidence of internal migration by calculating the CMI. This statistic represents the overall incidence, or level of internal migration (between district plus within district), per hundred residents over a year. The mathematical definition of the CMI is given in Equation (1):
 
-where M is the total number of internal migrants and P is the population size of Botswana in a given year. M is calculated as either the total in-flow of migrants into all of the districts or the total out-flow of migrants from all of the districts. These two quantities are equivalent as the in-flow of migrants to any district results from an out-flow of migrants from one or more other districts. Therefore, M=∑iDi=∑iOi, where Di denotes the number of migrants who move into each district i, and Oi denotes the number of migrants who move out of each district i.
+$$
+CMI=100⋅\frac{M}{P}
+$$
 
-## Constructing gender-stratified age structure pyramids
+where $M$ is the total number of internal migrants and $P$ is the population size of Botswana in a given year. $M$ is calculated as either the total in-flow of migrants into all of the districts or the total out-flow of migrants from all of the districts. These two quantities are equivalent as the in-flow of migrants to any district results from an out-flow of migrants from one or more other districts. Therefore, $M=\sum_{i}D_{i}=\sum_{i}O_{i}$, where $D_{i}$ denotes the number of migrants who move into each district $i$, and $O_{i}$ denotes the number of migrants who move out of each district $i$.
+
+### Constructing gender-stratified age structure pyramids
 
 We aggregated the migration data from each census by gender and age (using 5-year age groupings) to construct population pyramids; these pyramids show the age-gender demographics of all individuals internally migrating in the 12 mo prior to each census.
 
-## Calculating migratory flows
+### Calculating migratory flows
 
 We define a district-level migratory flow as the number of migrants who change their residency from one district to another during the 12 mo prior to the census. We calculated migratory flows between each pair of districts. The country consists of 28 administrative districts (Okano et al., 2021). Each city and town are separate administrative districts.
 
-## Calculating annual turnover rates
+### Calculating annual turnover rates
 
-We defined the annual turnover rate for a district as the net change in its annual migration rate per hundred residents.(2)TOi=100⋅[Di−Oi]Pi
+We defined the annual turnover rate for a district as the net change in its annual migration rate per hundred residents.
 
-Here the turnover rate TOi for district i is a function of the number of in-migrants Di and out-migrants Oi within the past year, and its population Pi at the beginning of the year.
+$$
+TO_{i}=100⋅\frac{[D_{i}−O_{i}]}{P_{i}}
+$$
 
-## Reconstructing migration networks
+Here the turnover rate $TO_{i}$ for district $i$ is a function of the number of in-migrants $D_{i}$ and out-migrants $O_{i}$ within the past year, and its population $P_{i}$ at the beginning of the year.
+
+### Reconstructing migration networks
 
 We used the micro-census data to construct Origin-Destination (OD) matrices: the origin was the district that an individual lived in 12 mo prior to the census, the destination was the district they lived in at the time of the census. Coefficients of these matrices specify the number of migrants who moved between each pair of districts in the 12 mo prior to each census. We defined the within district migration intensity (WDMI) for each district as the number of internal movements per hundred residents.
 
-## Identifying in-flow and out-flow migration hubs
+### Identifying in-flow and out-flow migration hubs
 
 Migration hubs are those districts where recent migration has a sizeable impact on the size of the resident population by either bringing it down (out-flow hubs) or increasing it (in-flow hubs) above the average. In-flow migration hubs were identified by calculating the total number of in-migrants to a node/district and dividing by the district’s population that year. Out-flow migration hubs were identified by calculating the total number of out-migrants to a node/district and dividing by the district’s population that year. We list the top five in-flow and out-flow hubs for each census year.
 
-## Understanding and visualizing the role of migration networks in urbanization
+### Understanding and visualizing the role of migration networks in urbanization
 
 To understand, and visualize, the role of migration networks in urbanization, we developed a classification system for a migration-urbanization framework. The framework consists of five classes that are defined (at any point in time) based on the degree of urbanization of the district at the time of the most recent census: (i) predominantly rural (<40% of the population live in urban areas), (ii) partially urban (40–60% of the population live in urban areas), (iii) predominantly urban (>60% of the population live in urban areas), (iv) town (100% of the population live in urban areas), or (v) city (100% of the population live in urban areas). Classes (i)–(iii) only include urban areas that develop by in situ urbanization, that is, rural villages transforming into urban villages. There are migratory flows between the five classes, and flows within each of the five classes: therefore, 25 migratory flows are possible.
 
@@ -174,8 +194,16 @@ The migration-urbanization framework can be visualized in two formats: (i) a sch
 
 We used the micro-census data to parameterize the framework for Botswana. Specifically, we estimated – at the time of each census – the population size of each district and determined how many individuals lived in rural and urban areas. We used these estimates to classify all districts into one of the five classes. We then calculated the migratory flows and counter-flows between, and within, districts in the 12 mo prior to each survey. These parameter estimates are given for the 1981 census (Supplementary file 1a), the 1991 census (Supplementary file 1b), the 2001 census (Supplementary file 1c), and the 2011 census (Supplementary file 1d). Between each census, districts change in size due to births, deaths and migration. Also, between each census, districts can be reclassified based upon their increased level of urbanization.
 
-## Evaluating the impact of internal migration on the geographic distribution of the population
+### Evaluating the impact of internal migration on the geographic distribution of the population
 
-We evaluated the impact of internal migration on geographically redistributing the population by calculating two metrics: the MEI and the ANMR. The MEI indicates the effectiveness (or efficiency) of migration as a mechanism for population redistribution. The mathematical definition of the MEI is given in Equation (3):(3)MEI=100∙0.5∑iDi-OiM
+We evaluated the impact of internal migration on geographically redistributing the population by calculating two metrics: the MEI and the ANMR. The MEI indicates the effectiveness (or efficiency) of migration as a mechanism for population redistribution. The mathematical definition of the MEI is given in Equation (3):
 
-The ANMR measures the impact of migration on population redistribution; it identifies the net shift of the population between regions per hundred residents in the country. The mathematical definition of the ANMR is given in Equation (4):(4)ANMR=CMI∙MEI100
+$$
+MEI=100∙0.5\sum_{i}\frac{D_{i}-O_{i}}{M}
+$$
+
+The ANMR measures the impact of migration on population redistribution; it identifies the net shift of the population between regions per hundred residents in the country. The mathematical definition of the ANMR is given in Equation (4):
+
+$$
+ANMR=CMI∙\frac{MEI}{100}
+$$

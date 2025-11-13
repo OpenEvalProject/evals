@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38675.001 The standard reference Caenorhabditis elegans strain, N2, has evolved marked behavioral changes in social feeding behavior since its isolation from the wild. We show that the causal, laboratory-derived mutations in two genes, npr-1 and glb-5, confer large fitness advantages in standard laboratory conditions. Using environmental manipulations that suppress social/solitary behavior differences, we show the fitness advantages of the derived alleles remained unchanged, suggesting selection on these alleles acted through pleiotropic traits. Transcriptomics, developmental timing, and food consumption assays showed that N2 animals mature faster, produce more sperm, and consume more food than a strain containing ancestral alleles of these genes regardless of behavioral strategies. Our data suggest that the pleiotropic effects of glb-5 and npr-1 are a consequence of changes to O 2 -sensing neurons that regulate both aerotaxis and energy homeostasis. Our results demonstrate how pleiotropy can lead to profound behavioral changes in a popular laboratory model.
+The standard reference Caenorhabditis elegans strain, N2, has evolved marked behavioral changes in social feeding behavior since its isolation from the wild. We show that the causal, laboratory-derived mutations in two genes, npr-1 and glb-5, confer large fitness advantages in standard laboratory conditions. Using environmental manipulations that suppress social/solitary behavior differences, we show the fitness advantages of the derived alleles remained unchanged, suggesting selection on these alleles acted through pleiotropic traits. Transcriptomics, developmental timing, and food consumption assays showed that N2 animals mature faster, produce more sperm, and consume more food than a strain containing ancestral alleles of these genes regardless of behavioral strategies. Our data suggest that the pleiotropic effects of glb-5 and npr-1 are a consequence of changes to O2 -sensing neurons that regulate both aerotaxis and energy homeostasis. Our results demonstrate how pleiotropy can lead to profound behavioral changes in a popular laboratory model.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ As a model for understanding laboratory adaptation in a multicellular organism, 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig1-v2.jpg)
 
-**Figure 1.:** (a) Overview of life history of the standard reference N2 strain since its isolation from the wild. Derived alleles in npr-1 and glb-5 arose and fixed after 1957 and before 1969 when methods for cryopreservation were developed. These two alleles were identified for their role in changing foraging behavior on bacterial lawns from social to solitary behavior. (b) Schematic of pairwise competition experiments used throughout the paper to quantify fitness differences between two strains. (c) Relative proportion of each strain as ascertained by Droplet Digital PCR using a custom TaqMan probe (dots) is used to estimate the relative fitness between the two strains (line). (d) Silent mutations were edited into the 90th or 92nd amino acid of the dpy-10 gene using CRISPR/Cas9 to create a common SNV for Droplet Digital PCR. We refer to these as barcoded strains. (e) Competition experiments between the parent strain (top) and the same strain containing one of the silent mutations. We display the result from each competition experiment as a single dot overlaid on top of a boxplot showing the mean, first, and third quartiles of all replicates.10.7554/eLife.38675.004Figure 1—source data 1.Figure 1c.10.7554/eLife.38675.005Figure 1—source data 2.dpy-10 silent mutation shown in Figure 1e.
+**Figure 1.:** (a) Overview of life history of the standard reference N2 strain since its isolation from the wild. Derived alleles in npr-1 and glb-5 arose and fixed after 1957 and before 1969 when methods for cryopreservation were developed. These two alleles were identified for their role in changing foraging behavior on bacterial lawns from social to solitary behavior. (b) Schematic of pairwise competition experiments used throughout the paper to quantify fitness differences between two strains. (c) Relative proportion of each strain as ascertained by Droplet Digital PCR using a custom TaqMan probe (dots) is used to estimate the relative fitness between the two strains (line). (d) Silent mutations were edited into the 90th or 92nd amino acid of the dpy-10 gene using CRISPR/Cas9 to create a common SNV for Droplet Digital PCR. We refer to these as barcoded strains. (e) Competition experiments between the parent strain (top) and the same strain containing one of the silent mutations. We display the result from each competition experiment as a single dot overlaid on top of a boxplot showing the mean, first, and third quartiles of all replicates.
 
 We have previously proposed that the derived alleles of glb-5 and npr-1 were fixed by selection as solitary animals are more likely to be picked when propagating animals to new plates (McGrath et al., 2009). However, aggregation behavior in the ancestral npr-1 strain appears to create local food depletion leading to a weak starvation state, which reduces reproduction and growth (Andersen et al., 2014). Potentially, this starvation difference could be responsible for the fitness differences of the strains. Consistent with both hypotheses, a number of experimental crosses or competition experiments between parental strains that are polymorphic for npr-1 have resulted in enrichment of the derived allele of npr-1, suggesting it confers a fitness advantage under standard lab husbandry (Gloria-Soria and Azevedo, 2008; Noble et al., 2017; Weber et al., 2010).
 
@@ -41,7 +41,7 @@ In order to distinguish between these hypotheses, we performed pairwise competit
 
 ## Results
 
-## Derived alleles of npr-1 and glb-5 increase fitness in laboratory conditions
+### Derived alleles of npr-1 and glb-5 increase fitness in laboratory conditions
 
 In previous reports, we have used multigenerational pairwise competition experiments to compare the relative fitness of two strains (Figure 1b) utilizing Droplet Digital PCR with a custom TaqMan probe to quantify the proportion of each genotype (Evans et al., 2017; Greene et al., 2016; Large et al., 2016). To quantify this change, we used a generic selection model to estimate the relative fitness difference (w) between the two strains (Figure 1c). In this context, relative fitness measures the generational change in relative abundance of each of the two strains. We also used CRISPR-enabled genome engineering to create strains with a silent mutation in the dpy-10 gene using a previously published high-efficiency guide RNA (Figure 1d) (Arribere et al., 2014), which we will refer to as barcoded strains. These strains allow us to use a common Taqman probe to quantify the relative fitness of a test strain against these barcoded strains. We confirmed that the dpy-10 silent mutation had no statistically significant effect on fitness in two genetic backgrounds studied throughout this report (Figure 1e).
 
@@ -49,17 +49,33 @@ In order to test the fitness effect of the derived alleles of npr-1 and glb-5, w
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig2-v2.jpg)
 
-**Figure 2.:** npr-1 and glb-5 are beneficial.(a) The bordering rate of the N2 reference strain compared to three near isogenic lines (NILs) containing ancestral alleles of npr-1 and/or glb-5 introgressed from the CB4856 wild strain. Bordering rate is defined as the fraction of animals on the edge of the bacterial lawn at a single timepoint. Schematic of each NIL shown below along with the allele of npr-1 and glb-5 they contain. Orange represents N2-derived DNA and blue represents CB4856-derived DNA. These strains are referred to by the ancestral alleles they contain (e.g. N2=CX10744, which is an introgression surrounding glb-5glb-5). To ascertain statistical significance, ANOVA was used followed by a Tukey's Honest Significant Difference test for multiple comparison tests. NS, not significant, **p<0.01, ***p<0.001. (b) Competition experiments between NILs shown in panel a against barcoded strains shown in Figure 1d,e. Green box indicates the strain contains the barcoded allele of dpy-10. Positive values indicate Strain one is more fit; negative values indicate Strain two is more fit. NS not significant, **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test or Wilcoxon-Mann-Whitney nonparametric test. (c) Competition experiments between strains containing two loss-of-function alleles of npr-1 (ad609 and ky13) along with controls. **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.10.7554/eLife.38675.007Figure 2—source data 1.npr-1 and/or glb-5 introgressed from the CB4856 wild strain shown in Figure 2a.10.7554/eLife.38675.008Figure 2—source data 2.Figure 2b.10.7554/eLife.38675.009Figure 2—source data 3.npr-1 (ad609 and ky13) along with N2 shown in Figure 2c.
+**Figure 2.:** (a) The bordering rate of the N2 reference strain compared to three near isogenic lines (NILs) containing ancestral alleles of npr-1 and/or glb-5 introgressed from the CB4856 wild strain. Bordering rate is defined as the fraction of animals on the edge of the bacterial lawn at a single timepoint. Schematic of each NIL shown below along with the allele of npr-1 and glb-5 they contain. Orange represents N2-derived DNA and blue represents CB4856-derived DNA. These strains are referred to by the ancestral alleles they contain (e.g. N2glb-5=CX10744, which is an introgression surrounding glb-5). To ascertain statistical significance, ANOVA was used followed by a Tukey's Honest Significant Difference test for multiple comparison tests. NS, not significant, **p<0.01, ***p<0.001. (b) Competition experiments between NILs shown in panel a against barcoded strains shown in Figure 1d,e. Green box indicates the strain contains the barcoded allele of dpy-10. Positive values indicate Strain one is more fit; negative values indicate Strain two is more fit. NS not significant, **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test or Wilcoxon-Mann-Whitney nonparametric test. (c) Competition experiments between strains containing two loss-of-function alleles of npr-1 (ad609 and ky13) along with controls. **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.
 
 While the introgressions surrounding the npr-1 and glb-5 genes are relatively small, these NIL strains carry additional polymorphisms in surrounding genes from the CB4856 strain. We also performed competition experiments using two previously published npr-1 loss-of-function alleles (ad609 and ky13) (de Bono and Bargmann, 1998) against the N2 barcoded strains. Both the npr-1(ad609) and npr-1(ky13) loss-of-function alleles decreased the animal’s relative fitness in an amount comparable to the ancestral allele (Figure 2c). We did not perform similar experiments on the glb-5 gene. Altogether, our work suggests that the npr-1 derived allele increases fitness of animals in laboratory conditions and also suggests that the derived allele of glb-5 increases the fitness of animals in a npr-1-dependent manner.
 
-## Suppression of social/solitary behavior differences between N2 and CX12311 does not suppress their fitness differences
+### Suppression of social/solitary behavior differences between N2 and CX12311 does not suppress their fitness differences
 
 Animals with reduced function of npr-1 sense environmental O2 levels and aerotax towards their preferred O2 levels (10%) in the presence of foods, which results in aggregation of animals at the borders of the lawn (Chang et al., 2006; Cheung et al., 2005; Gray et al., 2004). This behavior can be suppressed by lowering environmental O2 levels to the animals preferred O2 concentrations (Gray et al., 2004). We decided to use this environmental manipulation to test the hypothesis that the social foraging behavior was necessary for the fitness disadvantage experienced by strains containing the ancestral alleles of npr-1 and glb-5. Our above experiments hinted that this hypothesis might be incorrect as the derived glb-5 allele reduced bordering behavior in the ancestral npr-1 background without an associated increase in fitness. We first confirmed that we could suppress the bordering behavior differences between N2glb-5, npr-1 and N2 by reducing environmental O2 levels to 10% or 3% using a Biospherix chamber (Figure 3a and Videos 1–4). N2glb-5, npr-1 animals did not form any social groups in the center of the lawn at the lowered O2 levels and were also indistinguishable from N2 by visual inspection. We also verified that this O2 manipulation also suppressed roaming/dwelling behavior (Figure 3b). While feeding, C. elegans worms alternate between bouts of active exploration (roaming) and periods of inactive movement (dwelling). Animals that are mutant for npr-1 show increased amounts of roaming behavior (Stern et al., 2017).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig3-v2.jpg)
 
-**Figure 3.:** (a and b). Environmental O2 levels were manipulated using a Biospherix chamber. Differences in (a) bordering behavior and (b) roaming and dwelling behavior were suppressed in N2 at lower environmental Oglb-5, npr-12 levels. NS not significant, *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (c). Fitness advantage of N2 over the barcoded N2 strain was independent of environmental Oglb-5, npr-12. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (d and e) Fitness differences of N2 and N2 on (glb-5, npr-1d) uniform bacterial lawns (UBL) where animals were unable to border, on plates containing agarose to prevent burrowing behaviors (NS, not significant, *p<0.05 by ANOVA with Tukey’s Honest Significant Difference test), and (e) on UV-killed bacteria (*p<0.05 by Wilcoxon-Mann-Whitney nonparametric test).10.7554/eLife.38675.011Figure 3—source data 1.2 levels shown in Figure 3a.10.7554/eLife.38675.012Figure 3—source data 2.2 levels shown in Figure 3b.10.7554/eLife.38675.013Figure 3—source data 3. strain was independent of environmental Oglb-5, npr-12 shown in Figure 3c.10.7554/eLife.38675.014Figure 3—source data 4. on uniform bacterial lawns (UBL) and on plates containing agarose shown in glb-5, npr-1Figure 3d.10.7554/eLife.38675.015Figure 3—source data 5. on UV-killed bacteria shown in glb-5, npr-1Figure 3e.
+**Figure 3.:** (a and b). Environmental O2 levels were manipulated using a Biospherix chamber. Differences in (a) bordering behavior and (b) roaming and dwelling behavior were suppressed in N2glb-5, npr-1 at lower environmental O2 levels. NS not significant, *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (c). Fitness advantage of N2 over the barcoded N2glb-5, npr-1 strain was independent of environmental O2. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (d and e) Fitness differences of N2 and N2glb-5, npr-1 on (d) uniform bacterial lawns (UBL) where animals were unable to border, on plates containing agarose to prevent burrowing behaviors (NS, not significant, *p<0.05 by ANOVA with Tukey’s Honest Significant Difference test), and (e) on UV-killed bacteria (*p<0.05 by Wilcoxon-Mann-Whitney nonparametric test).
+
+![Video 1.](https://cdn.elifesciences.org/articles/38675/elife-38675-video1.mp4.jpg)
+
+**Video 1.:** A single generation (3 days) of growth of the N2glb-5, npr-1 strain in the presence of 10% environmental O2.
+
+![Video 2.](https://cdn.elifesciences.org/articles/38675/elife-38675-video2.mp4.jpg)
+
+**Video 2.:** A single generation (3 days) of growth of the N2glb-5, npr-1 strain in the presence of 21% environmental O2.
+
+![Video 3.](https://cdn.elifesciences.org/articles/38675/elife-38675-video3.mp4.jpg)
+
+**Video 3.:** A single generation (3 days) of growth of the N2 strain in the presence of 10% environmental O2.
+
+![Video 4.](https://cdn.elifesciences.org/articles/38675/elife-38675-video4.mp4.jpg)
+
+**Video 4.:** A single generation (3 days) of growth of the N2 strain in the presence of 21% environmental O2.
 
 Despite the behavioral similarity of these animals at these lower O2 levels, the relative fitness differences between the N2 and N2glb-5, npr-1 strains remained (Figure 3c). To further confirm that aggregation behavior was not necessary for the fitness differences, we also performed competition experiments on uniform bacterial lawns (UBLs), which are constructed so that the entire plate is covered with a thin bacterial lawn to remove the O2 gradients created by the unequal thickness of bacteria in normal lawns. UBLs have been used to suppress npr-1-dependent differences in survival in response to bacterial pathogens (Reddy et al., 2009); however, the UBLs were unable to suppress the fitness advantage of N2 animals (Figure 3d).
 
@@ -71,15 +87,15 @@ These experiments motivated us to also test the relative fitness differences of 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig4-v2.jpg)
 
-**Figure 4.:** C.elegans strains.(a) A panel of 11 wild strains was tested for bordering behavior. Each of these wild strains contains ancestral alleles of glb-5 and npr-1. ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (b) Competition experiments between 11 wild strains and barcoded N2 animals. Despite the similarity of bordering behavior, these wild strains displayed a range of relative fitness. NS, not significantglb-5, npr-1, *p<0.05, **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.10.7554/eLife.38675.021Figure 4—source data 1.Figure 4a.10.7554/eLife.38675.022Figure 4—source data 2. animals shown in glb-5, npr-1Figure 4b.
+**Figure 4.:** (a) A panel of 11 wild strains was tested for bordering behavior. Each of these wild strains contains ancestral alleles of glb-5 and npr-1. ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (b) Competition experiments between 11 wild strains and barcoded N2glb-5, npr-1 animals. Despite the similarity of bordering behavior, these wild strains displayed a range of relative fitness. NS, not significant, *p<0.05, **p<0.01, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.
 
-## Development speed and spermatogenesis are increased in N2 in an O2-independent manner
+### Development speed and spermatogenesis are increased in N2 in an O2-independent manner
 
 To gain more insight into the phenotypes that could be responsible for the fitness increases of the N2 strain, we performed RNA sequencing to analyze the transcriptomes of bleach-synchronized N2 and N2glb-5, npr-1 animals grown in either 10% O2 or 21% ambient O2 levels. Animals were allowed to develop to the L4 stage and harvested at identical times. We first performed Principal Component Analysis (PCA) analysis on differentially expressed genes to analyze how the environmental and genetic differences globally regulated the transcriptomes of the animals. If environmental O2 and the genetic background had independent effects on the transcriptomes, we expected to find two major components in the PCA analysis. However, the PCA analysis identified a single component that explained the majority of the variance (77.9%). The genetic and environmental perturbations had similar effects on the first component in an additive manner (Figure 5a). Reducing O2 levels from 21% to 10% had similar effects on the transcription profiles as changing the background from N2glb-5, npr-1 to N2. Consequently, the animals that differed in both genetic background and environmental O2 levels (N2–21% O2 vs N2glb-5, npr-1–10% O2) also showed the most similar transcriptional profiles. These patterns were also seen in Hierarchical Clustering using the 1202 differentially expressed genes (Figure 5b). These results suggest that the foraging behavioral differences are not responsible for the underlying transcriptomics differences between the different strains and environmental conditions.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig5-v2.jpg)
 
-**Figure 5.:** strain.glb-5,npr-1(a) PCA analysis of transcriptional profiles of bleach-synchronized N2 and N2 animals grown in 10% or 21% environmental Oglb-5,npr-12 (six replicates per strain/condition). The largest two eigenvectors are shown, along with the amount of variance they explain. Developmental age of animals is approximately L4 stage. (b) Hierarchical clustering of normalized, differentially expressed genes. Columns show strain and conditions; rows show gene expression. (c) Averaged effect of genotype (y-axis) vs environment (x-axis) for each gene (Supplementary file 1). A small cluster of 652 genes with similar changes is circled in red. (d) The developmental expression of these 652 genes was further investigated using a previously published dataset. Columns show developmental stage and rows show each gene. Most of these gene peaked in expression in L4 hermaphrodite animals and was further enriched in male L4 animals (Male). Soma indicates expression levels from somatic cells, suggesting this cluster is enriched in germline cells. (e) Animals identified with mature sperm. x-axis indicates time since synchronization using hatch-off. Strain/condition shown in legend. p=0.0076 by Friedman test. (f) Number of sperm produced by each strain as determined by DAPI straining. Representative images are shown below. Scale bar = 10 μm. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (g) Averaged total number of offspring produced by each strain when grown in different environmental O2 levels. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (h) Averaged egg-laying rate of L4-synchronized N2 and N2 animals when grown at different Oglb-5,npr-12 levels. x-axis indicates time since L4 stage. NS, not significant, *p<0.05, **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (i) Number of animals observed with fertilized eggs in their uterus. x-axis indicates time from synchronized egg-lay. p=0.0109 by Friedman test.10.7554/eLife.38675.024Figure 5—source data 1.The dataset is used for PCA analysis and Hierarchical clustering for Figure 5a and Figure 5b.10.7554/eLife.38675.025Figure 5—source data 2.Figure 5c.The dataset is used to show Figure 5d. The soruce of the gene expression data across all of the developmental stages is from previous research: Boeck et al. (2016) .10.7554/eLife.38675.026Figure 5—source data 3.Figure 5e.10.7554/eLife.38675.027Figure 5—source data 4.Figure 5f.10.7554/eLife.38675.028Figure 5—source data 5.2 levels shown in Figure 5g.10.7554/eLife.38675.029Figure 5—source data 6. animals when grown at different Oglb-5,npr-12 levels shown in Figure 5h.10.7554/eLife.38675.030Figure 5—source data 7.Figure 5i.
+**Figure 5.:** (a) PCA analysis of transcriptional profiles of bleach-synchronized N2 and N2glb-5,npr-1 animals grown in 10% or 21% environmental O2 (six replicates per strain/condition). The largest two eigenvectors are shown, along with the amount of variance they explain. Developmental age of animals is approximately L4 stage. (b) Hierarchical clustering of normalized, differentially expressed genes. Columns show strain and conditions; rows show gene expression. (c) Averaged effect of genotype (y-axis) vs environment (x-axis) for each gene (Supplementary file 1). A small cluster of 652 genes with similar changes is circled in red. (d) The developmental expression of these 652 genes was further investigated using a previously published dataset. Columns show developmental stage and rows show each gene. Most of these gene peaked in expression in L4 hermaphrodite animals and was further enriched in male L4 animals (Male). Soma indicates expression levels from somatic cells, suggesting this cluster is enriched in germline cells. (e) Animals identified with mature sperm. x-axis indicates time since synchronization using hatch-off. Strain/condition shown in legend. p=0.0076 by Friedman test. (f) Number of sperm produced by each strain as determined by DAPI straining. Representative images are shown below. Scale bar = 10 μm. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (g) Averaged total number of offspring produced by each strain when grown in different environmental O2 levels. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (h) Averaged egg-laying rate of L4-synchronized N2 and N2glb-5,npr-1 animals when grown at different O2 levels. x-axis indicates time since L4 stage. NS, not significant, *p<0.05, **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (i) Number of animals observed with fertilized eggs in their uterus. x-axis indicates time from synchronized egg-lay. p=0.0109 by Friedman test.
 
 The effects of the derived npr-1 and glb-5 alleles mimics the effects of lowering environmental O2 from 21% to 10%. To further gain insight into this connection, we plotted the average transcriptional change between the strain backgrounds vs the average transcriptional change between the environmental O2 concentrations for each gene (Figure 5c, Supplementary file 1). Surprisingly, we observed a bimodal distribution of values, with a cluster of 652 genes centered at 1.2 log2-fold change (Figure 5c – red circle). This is unexpected, as it suggests that the environmental and genetic perturbations had identical effects on transcription for all these genes. When we inspected this list of genes, we noticed a large number of genes that are known to be involved in spermatogenesis. We further investigated the developmental regulation of these 652 genes using previously published transcriptomics data isolated from hermaphrodites or males at specific developmental time points (Boeck et al., 2016) (Figure 5d). The expression of the majority of these genes peaked during the L4 stage in hermaphrodites, was further enriched in L4 males, and suppressed in somatic cells isolated from L4 animals. These observations are consistent with this cluster of genes being involved in spermatogenesis, which occurs during the L4 stage (when RNA was isolated) in hermaphrodite animals.
 
@@ -89,9 +105,17 @@ The timing of sexual maturity is an important factor in determining the fitness 
 
 These experiments suggest that the differences in transcription between N2 and N2glb-5, npr-1 could be caused by differences in sexual maturity. We are unable, however, to explain the differences in transcription we observed between 10% and 21% O2 as mature sperm was observed at similar times in these different environmental conditions (Figure 5e). Potentially, the rate of spermatogenesis or expression levels of genes are modified by O2 levels that are not reflected in the timing of the presence of mature sperm.
 
-## Derived alleles of npr-1 and/or glb-5 increase food consumption in an O2-independent manner
+### Derived alleles of npr-1 and/or glb-5 increase food consumption in an O2-independent manner
 
 Life-history tradeoffs have been proposed in evolutionary theory to account for the linkage between two different traits. Assuming an individual can acquire a finite amount of energy, the investment of energy into one trait leads to consequential changes in other traits as energy resources are shunted into different directions. For example, artificial selection experiments on early fecundity in C. elegans resulted in decreased reproduction late in life (Anderson et al., 2011). The N2 strain seems to violate this tradeoff, as it sexually matures earlier than N2glb-5, npr-1, but also produces more eggs later on in life. We measured the size of N2 and N2glb-5, npr-1 animals and found that N2 animals were also larger than N2glb-5, npr-1 animals at synchronized time points (Figure 6a). These observations suggest that the assumption of a fixed energy acquisition for N2glb-5, npr-1 and N2 might be violated. This would be consistent with Andersen et al’s observation that metabolism genes were upregulated by the derived npr-1 allele, which they proposed represented differences in food intake (Andersen et al., 2014). It would also be consistent with the role of orthologs of npr-1 in other species. npr-1 encodes an ortholog to neuropeptide Y receptors, which are reported to regulate feeding behavior in fishes, birds, and mammals (Ando et al., 2001; Lecklin et al., 2002; Matsuda, 2009).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig6-v2.jpg)
+
+**Figure 6.:** (a) N2 and N2glb-5,npr-1 animals were synchronized by hatch-off and allowed to grow at the indicated O2 levels for 72 hr. Video recordings were used to estimate the size of the animals. *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (b) A previously published liquid, bacterial clearing assay was used to estimate food consumption for the N2glb-5,npr-1 and N2 animals. On day 4, N2 animals had consumed more bacteria than N2glb-5,npr-1animals. NS, not significant, ***p<0.001 by Wilcoxon-Mann-Whitney nonparametric test. (c). To test food consumption on agar plates, we developed a new assay by seeding 24-well agar plates with defined amounts of OP50-GFP bacteria. The number of bacteria on the plate could be estimated using a microplate reader. (d) N2 animals consumed more food than N2glb-5,npr-1 regardless of foraging behaviors. ***p<0.001 by Wilcoxon-Mann-Whitney nonparametric test. (e) Schematic of CB4856 wild strain (blue) and a NIL (CX11400) containing the N2 allele of npr-1 from N2 (orange). (f) We tested the fitness effect of the N2 allele of npr-1 in the CB4856 wild strain using the CX11400 NIL strain. NS, not significant by Wilcoxon-Mann-Whitney nonparametric test. (g) Food consumption assays between CB4856 and N2 strains or CB4856 and the CX11400 NIL. ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (h) Pharyngeal pumping rates of N2, CB4856 and two NIL strains. *p<0.05, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Schematic of measurements made for the pharynx. (b) Pharyngeal sizes of adult animals, normalized to the N2 strain. ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test.
 
 To test this hypothesis, we first utilized a previously described feeding assay to measure the ability of a strain to clear E. coli OP50 bacteria from liquid S-media (Gomez-Amaro et al., 2015). In this assay, individual wells are seeded with a defined number of bacteria and 20 worms. Each day, the optical density of each well is measured to estimate the amount of food consumed by the worms. In these conditions, N2 cleared the bacteria faster than N2glb-5, npr-1 animals (Figure 6b). While these assays supported our hypothesis, liquid media is fundamentally different from the conditions experienced on agar plates, making it difficult to generalize the results from one condition to the other. To this end, we developed a new food consumption assay on agar media in 24-well plates. In this assay, each well was seeded with a defined amount of OP50-GFP, which we found could be quantified in a linear manner using a plate reader (Figure 6c). When we tested N2 and N2glb-5, npr-1 animals in 10% or 21% environmental O2 levels, we found N2 consumed more food than N2glb-5, npr-1 in both environmental conditions (Figure 6d). Interestingly, we found animals grown in 10% O2 also consume more food than animals grown in 21% O2. These experiments indicate that N2 animals consume more food than N2glb-5, npr-1.
 
@@ -101,25 +125,25 @@ Food is consumed from the environment by the periodic contraction and relaxation
 
 We also measured a number of size parameters of the pharynx but found no obvious differences that could account for the increased food consumption (Figure 6—figure supplement 1). Potentially, the pharynx is more efficient at bringing food in from the external environment due to stronger pump strength, more efficient filtering processes or other unknown behavioral differences that contribute to food intake.
 
-## Fitness gains of the derived alleles require the URX, AQR, and/or PQR neurons
+### Fitness gains of the derived alleles require the URX, AQR, and/or PQR neurons
 
 We next decided to gain insight into the cellular mechanisms by which npr-1 and glb-5 increased fitness of the strains. Previous studies have shown that npr-1 and glb-5 regulate social behavior through the URX-RMG neuronal circuit (Figure 7a). glb-5 tunes O2-sensititivies of the URX oxygen-sensing neuron pair through regulation of O2-sensing guanylyl cyclases, leading to changes in influx of Ca++ into the cell body (Abergel et al., 2016; Gross et al., 2014; McGrath et al., 2009; Oda et al., 2017; Persson et al., 2009). The derived allele of npr-1 inhibits the activity of the RMG hub interneuron which suppresses aerotaxis and social behavior (Laurent et al., 2015; Macosko et al., 2009). The RMG neurons connect to URX and a number of other sensory neurons through gap junctions, which are necessary for foraging behaviors (Jang et al., 2017). URX neurons also integrate O2 with internal nutrient reserves (Witham et al., 2016). To test the role of URX in the fitness gains of the npr-1 and glb-5 derived alleles, we used the qaIs2241 integrated cassette that specifically kills the O2-sensing neurons URX, AQR and PQR (Chang et al., 2006). We crossed this cassette into the N2npr-1, N2glb-5 and N2glb-5, npr-1 strains and repeated the pairwise competition experiments performed in Figure 2a using strains that now also contained the qaIs2241 cassette. In all cases, the relative fitness gains of the derived alleles were decreased by the presence of the neuronal ablation (Figure 7b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig7-v2.jpg)
 
-**Figure 7.:** 2-sensing neurons contribute to fitness differences of N2 and N2.glb-5,npr-1(a) Schematic showing putative cellular sites of action for glb-5 and npr-1. glb-5 modulates O2 responses in the URX body cavity neurons. npr-1 is thought to modulate electrical signaling in the RMG hub-and-spoke neuron which forms gap junctions onto URX. (b and c) Competition experiments between indicated strains. qaIs2241 is an integrated genetic cassette that ablates the URX, AQR, and PQR neurons. Green indicates the presence of the cassette (and loss of URX, AQR, and PQR neurons). *p<0.05, **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (d) Bordering rates of indicated strains. The qaIs2241 cassette suppresses bordering of the N2 strains. NS not significant, *p<glb-5,npr-10.05 by Wilcoxon-Mann-Whitney nonparametric test. (e) Pharyngeal pumping rates of N2, and N2 strains carrying the qaIs2241 cassette. *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (f) Relative food consumption rates between the indicated strains. ***p<0.001 by Wilcoxon-Mann-Whitney nonparametric test. (g) Number of animals observed with fertilized eggs in their uterus. x-axis indicates time from synchronized egg-lay. p=0.0455 by Friedman test.10.7554/eLife.38675.042Figure 7—source data 1.qaIs2241 cassette shown in Figure 7b.10.7554/eLife.38675.043Figure 7—source data 2.qaIs2241 cassette shown in Figure 7c.10.7554/eLife.38675.044Figure 7—source data 3.Figure 7d.10.7554/eLife.38675.045Figure 7—source data 4.qaIs2241 cassette shown in Figure 7e.10.7554/eLife.38675.046Figure 7—source data 5.qaIs2241 cassette shown in Figure 7f.10.7554/eLife.38675.047Figure 7—source data 6.Figure 7g.
+**Figure 7.:** (a) Schematic showing putative cellular sites of action for glb-5 and npr-1. glb-5 modulates O2 responses in the URX body cavity neurons. npr-1 is thought to modulate electrical signaling in the RMG hub-and-spoke neuron which forms gap junctions onto URX. (b and c) Competition experiments between indicated strains. qaIs2241 is an integrated genetic cassette that ablates the URX, AQR, and PQR neurons. Green indicates the presence of the cassette (and loss of URX, AQR, and PQR neurons). *p<0.05, **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (d) Bordering rates of indicated strains. The qaIs2241 cassette suppresses bordering of the N2glb-5,npr-1 strains. NS not significant, *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (e) Pharyngeal pumping rates of N2, and N2 strains carrying the qaIs2241 cassette. *p<0.05 by Wilcoxon-Mann-Whitney nonparametric test. (f) Relative food consumption rates between the indicated strains. ***p<0.001 by Wilcoxon-Mann-Whitney nonparametric test. (g) Number of animals observed with fertilized eggs in their uterus. x-axis indicates time from synchronized egg-lay. p=0.0455 by Friedman test.
 
 These experiments suggest that the derived alleles either activate or disinhibit the URX, AQR, and or PQR neurons which leads to increases in fitness. To distinguish between these possibilities, we competed N2 and N2glb-5, npr-1 strains with and without the qaIs2241 against each other. Strains that carried the qaIs2241 cassette were dramatically less fit than the control worms, suggesting that URX, AQR, and PQR promote fitness in laboratory conditions (Figure 7c).
 
 We and others have shown that glb-5 and npr-1 are pleiotropic, regulating social behavior and food consumption. Potentially this pleiotropy arises from the ability of the URX, AQR, and PQR neurons to these biological traits. To test this, we phenotyped strains that carried the qaIs2241 cassette for social behaviors, food consumption and reproductive timing (Figure 7d–g). These experiments indicated that these neurons are required for each of these three traits. Interestingly, food consumption in the qaIs2241 strains was reduced without a corresponding change in pharyngeal pumping rate, further confirming that these phenotypes could be separated from each other at a genetic and cellular level.
 
-## Fitness gains, increased food consumption, and earlier reproductive timing in N2 require the daf-22 gene
+### Fitness gains, increased food consumption, and earlier reproductive timing in N2 require the daf-22 gene
 
 We also decided to test whether ascaroside pheromones were necessary for the fitness differences between N2 and N2glb-5,npr-1. Nematodes release a number of ascaroside molecules, which are in turn sensed by a distributed neural circuit that integrates and modifies a number of behavioral and developmental phenotypes (Butcher, 2017; Ludewig and Schroeder, 2013). There are a few reasons to think that ascaroside pheromones might be involved in the fitness gains of the N2 strain. First, work by Andersen et. al indicated that population density directly impacts lifetime fecundity and adult body length differences between N2 and CB4856 strains (Andersen et al., 2014). Second, our previous studies of C. elegans domestication to liquid cultures has found that pheromone signaling was modified by fixed genetic changes (Large et al., 2016; McGrath et al., 2011). Finally, the derived alleles of npr-1 and glb-5 have been shown to modify pheromone valence in a variety of contexts (Fenk and de Bono, 2017; Jang et al., 2012; Macosko et al., 2009; Oda et al., 2017). To test the role of ascaroside pheromones, we followed previous publications using a genetic knockout of the daf-22 gene, which encodes a peroxisomal enzyme required for the biosynthesis of C. elegans pheromones (Butcher et al., 2009) and accumulation of lipid droplets (Zhang et al., 2010), using CRISPR-Cas9 enabled genome editing to create a large deletion of daf-22 in the N2 strain, which was then crossed to the N2glb-5,npr-1background. Competition experiments demonstrated that daf-22 was necessary for the fitness advantage of derived npr-1 and glb-5 alleles (Figure 8a). In addition, daf-22 was necessary for the faster sexual maturity (Figure 8b) and increased food intake (Figure 8c) of the N2 strain compared to N2glb-5,npr-1. These data suggest that npr-1 and glb-5 reprogram pheromone responses resulting in increased sexual maturity and ability to consume food.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/38675/elife-38675-fig8-v2.jpg)
 
-**Figure 8.:** daf-22 is required for fitness differences of N2 and N2.glb-5,npr-1(a) Competition experiments between indicated strains. daf-22 encodes a sterol carrier protein, which is required for biosynthesis of most ascaroside pheromones. Red indicates the strain contain a deletion that spans the gene. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (b) Number of animals that carry fertilized eggs at the indicated timepoints. p=6.61×10−4 by Friedman test. (c) On plate feeding assays of the indicated strains. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (d and e) Attempts to rescue the relative food intake and reproductive timing defects of the daf-22 strain using crude pheromone. Neither of two concentrations of crude pheromone isolated from animals grown in liquid cultures had a significant effect on the two traits. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. p=7.45×10 by Friedman test.−610.7554/eLife.38675.049Figure 8—source data 1.Figure 8a.10.7554/eLife.38675.050Figure 8—source data 2.Figure 8b.10.7554/eLife.38675.051Figure 8—source data 3.Figure 8c.10.7554/eLife.38675.052Figure 8—source data 4.Figure 8d.10.7554/eLife.38675.053Figure 8—source data 5.Figure 8e.
+**Figure 8.:** (a) Competition experiments between indicated strains. daf-22 encodes a sterol carrier protein, which is required for biosynthesis of most ascaroside pheromones. Red indicates the strain contain a deletion that spans the gene. **p<0.01 by Wilcoxon-Mann-Whitney nonparametric test. (b) Number of animals that carry fertilized eggs at the indicated timepoints. p=6.61×10−4 by Friedman test. (c) On plate feeding assays of the indicated strains. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. (d and e) Attempts to rescue the relative food intake and reproductive timing defects of the daf-22 strain using crude pheromone. Neither of two concentrations of crude pheromone isolated from animals grown in liquid cultures had a significant effect on the two traits. NS, not significant, ***p<0.001 by ANOVA with Tukey’s Honest Significant Difference test. p=7.45×10−6 by Friedman test.
 
 daf-22 encodes a peroxisomal fatty acid β-oxidation enzyme. Besides its role in the biosynthesis of ascaroside pheromones, daf-22 has recently been shown to play a distinct role in ASK neurons, where it is required for the metabolization of fatty acids that stimulate the endoplasmic reticulum stress response, promoting the transcription of insulin-like peptides that regulate dauer formation and other biological processes (Park and Paik, 2017). daf-22 mutants also accumulate massive amounts of fatty acids and fatty acyl-CoAs in their intestines (Butcher et al., 2009; Joo et al., 2009; Li et al., 2016), which can potentially regulate feeding behavior through homeostasis mechanisms (Hyun et al., 2016). To determine if the differences observed in the daf-22 mutants were caused by the lack of ascaroside pheromones, we attempted to rescue these phenotypes using two concentrations of crudely purified pheromones isolated from animals grown in liquid cultures. Neither of these concentrations were able to rescue the differences in food consumption or reproductive timing (Figure 8d,e). These experiments suggest that the effects of the daf-22 mutants we have observed might be independent of their role in producing ascaroside pheromones.
 
@@ -139,15 +163,466 @@ Our work underscores issues with growing organisms in the laboratory for multipl
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
 
-## The following strains were used in this study
 
-## Wild strains
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source of reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>npr-1</td>
+      <td>Worm base</td>
+      <td>Wormbase ID: WBGene00003807</td>
+      <td>Sequence: C39E6.6</td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>glb-5</td>
+      <td>Worm base</td>
+      <td>Wormbase ID: WBGene00015964</td>
+      <td>Sequence: C18C4.1</td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>dpy-10</td>
+      <td>Worm base</td>
+      <td>Wormbase ID: WBGene00001072</td>
+      <td>Sequence: T14B4.7</td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>daf-22</td>
+      <td>Worm base</td>
+      <td>Wormbase ID: WBGene00013284</td>
+      <td>Sequence: Y57A10C.6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis genetics center (CGC)</td>
+      <td>RRID:WB-STRAIN:OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50 GFP</td>
+      <td>Caenorhabditis genetics center (CGC)</td>
+      <td>RRID:WB-STRAIN:OP50-GFP</td>
+      <td>with pFPV25.1 express GFP.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>Cori Bargmann Lab (The Rockefeller University)</td>
+      <td>RRID:WB-STRAIN:N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CB4856</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:CB4856</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DL238</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:DL238</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>JU258</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:JU258</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>JU775</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:JU775</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>MY16</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:MY16</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>MY23</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:MY23</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX11314</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:CX11314</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>LKC34</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:LKC34</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>ED3017</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:ED3017</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>JT11398</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:JT11398</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>EG4725</td>
+      <td>Caenorhabditis elegans Natural Diversity Resource (CeNDR)</td>
+      <td>RRID:WB-STRAIN:EG4725</td>
+      <td>Website: https://www.elegansvariation.org/</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM229</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM229</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM288</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM288</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM289</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM289</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM95</td>
+      <td>PMID: 27467070</td>
+      <td>RRID:WB-STRAIN:PTM95</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX12311</td>
+      <td>PMID: 21849976</td>
+      <td>RRID:WB-STRAIN:CX12311</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>QG1</td>
+      <td>PMID: 27172189</td>
+      <td>RRID:WB-STRAIN:QG1</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX10774</td>
+      <td>PMID: 19285466</td>
+      <td>RRID:WB-STRAIN:CX10774</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX11400</td>
+      <td>PMID: 23284308</td>
+      <td>RRID:WB-STRAIN:CX11400</td>
+      <td>Strain Background: CB4856</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX4148</td>
+      <td>PMID: 9741632</td>
+      <td>RRID:WB-STRAIN:CX4148</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DA609</td>
+      <td>PMID: 9741632</td>
+      <td>RRID:WB-STRAIN:DA609</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CX7102</td>
+      <td>PMID: 16903785</td>
+      <td>RRID:WB-STRAIN:CX7102</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM400</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM400</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM401</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM401</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM402</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM402</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM403</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM403</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM404</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM404</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM405</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM405</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>PTM408</td>
+      <td>This paper</td>
+      <td>RRID:WB-STRAIN:PTM408</td>
+      <td>Strain Background: N2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pDD162 PrU6::dpy-10_sgRNA</td>
+      <td>PMID: 27467070</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing sgRNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Plasmid)</td>
+      <td>Plasmid: pDD162 Preft3::Cas9</td>
+      <td>PMID: 27467070</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing Cas9</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Oligonucleotide)</td>
+      <td>dpy-10 (cn64)</td>
+      <td>PMID: 25161212</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing DNA repair oligo for inducing dpy-10 cn64 mutation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Oligonucleotide)</td>
+      <td>dpy-10 (kah82/kah83)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing DNA repair oligo for inducing dpy-10 Thr90 slient mutation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents (Oligonucleotide)</td>
+      <td>dpy-10 (kah84)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR/Cas9 gene editing DNA repair oligo for inducing dpy-10 Arg92 slient mutation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1x Antibiotic-Antimycotic</td>
+      <td>ThermoFisher</td>
+      <td>Cat. No.: 15240062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FUDR</td>
+      <td>Sigma</td>
+      <td>Cat. No.: F0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman probe: dpy-10 (kah82/kah83)</td>
+      <td>ThermoFisher: Custom TaqMan SNP Genotyping Assays</td>
+      <td>PTM09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman probe: dpy-10 (kah84)</td>
+      <td>ThermoFisher: Custom TaqMan SNP Genotyping Assays</td>
+      <td>PTM10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman probe: npr-1(g320)</td>
+      <td>ThermoFisher: Custom TaqMan SNP Genotyping Assays</td>
+      <td>PTM08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman probe: WBVar00209467</td>
+      <td>ThermoFisher: Custom TaqMan SNP Genotyping Assays</td>
+      <td>PTM11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TruSeq Stranded mRNA kit</td>
+      <td>Illumina</td>
+      <td>Cat. No.: 20020595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zymo DNA isolation kit</td>
+      <td>Zymo</td>
+      <td>Cat. No.: D4071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Zymo DNA cleanup kit</td>
+      <td>Zymo</td>
+      <td>Cat. No.: D4064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ddPCR Supermix for Probes</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Droplet Generation Oils</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ddPCR Droplet Reader Oil</td>
+      <td>BIORAD</td>
+      <td>Cat. No.: 1863004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>VECTASHIELD antifade Mounting Medium with DAPI</td>
+      <td>VECTOR</td>
+      <td>Cat. No.: H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>edgeR</td>
+      <td>PMID: 19910308</td>
+      <td>RRID:SCR_012802</td>
+      <td>Opensource: https://bioconductor.org/packages/release/bioc/html/edgeR.html</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>SARTools</td>
+      <td>PMID: 27280887</td>
+      <td>RRID:SCR_016533</td>
+      <td>Opensource: https://github.com/PF2-pasteur-fr/SARTools</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Rstudio</td>
+      <td>Rstudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>https://www.rstudio.com/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>JMP12</td>
+      <td>SAS JMP</td>
+      <td>RRID:SCR_014242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td>Opensource: https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MetaMorph</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Custom TaqMan Assay Design Tool</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td>https://www.thermofisher.com/order/custom-genomic-products/tools/genotyping/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
+
+#### The following strains were used in this study
+
+##### Wild strains
 
 N2; CB4856; DL238; JU258; JU775; MY16; MY23; CX11314; LKC34; ED3017; JT11398; EG4725. The N2 strain originated from the Bargmann lab (The Rockefeller University). The remaining eleven wild strains came from the Caenorhabditis elegans Natural Diversity Resource (Cook et al., 2017).
 
-## Barcoded strains
+##### Barcoded strains
 
 PTM229 dpy-10 (kah82)II; PTM288 dpy-10 (kah83)II kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2); PTM289 dpy-10 (kah84)II kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2); The barcoded strains were generated using previously published reagents for modifying the dpy-10 gene (Arribere et al., 2014). Two modified repair oligos with the following sequence were used to edit silent mutations into the 90th (Thr) or 92nd amino acid (Arg):
 
@@ -159,86 +634,118 @@ dpy-10 92nd silent mutation:
 
 5’-CACTTGAACTTCAATACGGCAAGATGAGAATGACTGGAAACCGTACCGCTCGCGGTGCCTATGGTAGCGGAGCTTCACATGGCTTCAGACCAACAGCCTAT-3’
 
-## The microinjection mix was
+##### The microinjection mix was
 
 50 ng/uL Peft3::Cas9, 25 ng/uL dpy-10 sgRNA, 500 nM dpy-10(cn64) repair oligo, and one of the 500 nM dpy-10(90/92) repair oligo. This mix was injected into N2 or CX12311 and so-called ‘jackpot broods’ were identified by the presence of a large number of F1 animals with the roller phenotype. From these plates, wildtype animals were singled and genotyped using Sanger-sequencing. kah82 and kah83 contain the 90th Thr silent mutation (ACC - > ACT). kah84 contains the 92nd Arg silent mutation (CGT - > CGC).
 
-## Near isogenic lines
+##### Near isogenic lines
 
 CX12311 kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2); QG1 qgIR1(X, CB4856 >N2); CX10774 kyIR1(V, CB4856 >N2); CX11400 kyIR9(X, N2 >CB4856). These strains were originally described in previous studies (Bendesky et al., 2012; Bernstein and Rockman, 2016; McGrath et al., 2009; McGrath et al., 2011).
 
-## npr-1 loss of function
+##### npr-1 loss of function
 
 CX4148 npr-1(ky13)X; DA609 npr-1(ad609)X; these strains were previously described (de Bono and Bargmann, 1998).
 
-## URX, AQR, PQR genetic ablation strains
+##### URX, AQR, PQR genetic ablation strains
 
 qaIs2241[Pgcy-35::GFP Pgcy-36::egl-1 lin15+] is an integrated transgene that genetically ablates URX, AQR, and PQR neurons (Chang et al., 2006). This transgene was crossed into a number of introgressed regions using standard genetic techniques. CX7102 qaIs2241X; PTM400 qaIs2241X; PTM401 qgIR1(X, CB4856 >N2) qaIs2241X; PTM402 kyIR1 (V, CB4856 >N2) qaIs2241X; PTM403 kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2) qaIs2241X;.
 
-## daf-22 strains
+##### daf-22 strains
 
 daf-22(kah8)II is a daf-22 gene disruption made by CRISPR/Cas9 genome editing (Large et al., 2016). The deletion of daf-22 spans the 6th Pro to 219th Glu (The deleted sequence is: 5’-caaaggtatacatcgttggagtcggtatgacaaagttttgtaagccggga…ggatcaggtgatcaatgcccgtaagatctacgactttatgggtctcctcg-3’). This transgene was crossed into a number of introgressed regions using standard genetic techniques. PTM95 daf-22(kah8)II kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2); PTM404 daf-22(kah8)II dpy10(kah83)II; PTM405 daf-22(kah8)II; PTM408 daf-22(kah8)II kyIR1(V, CB4856 >N2) qgIR1(X, CB4856 >N2).
 
-## Growth conditions
+### Growth conditions
 
 Animals were grown following standard conditions. With exceptions listed below, animals were cultivated on modified nematode growth medium (NGM) plates containing 2% agar seeded with 200 μl of an overnight culture of the E. coli strain OP50 in an incubator set at 20°C. Strains were grown for at least three generations without starvation before any assays were conducted. For assays manipulating the environmental O2 levels, animals were grown inside a BioSpherix C474 chamber using a BioSpherix C21 single chamber controller to control ambient O2 levels. For these assays, animals were not grown in temperature incubators, and the room temperature was typically kept ~21°C. For competition experiments on non-burrowing plates, 1.25% agarose and 0.75% agar replaced the agar concentrations of normal growth plates. To create uniform lawns, liquid cultures of OP50 bacteria were poured onto plates to cover the entire surface area of the plate and then poured off.
 
-## UV treatment
+#### UV treatment
 
 9 cm NGM plates were seeded with 300 μL of an overnight culture of the E. coli strain OP50 and placed at room temperature for 2 days. Then plates were placed in Stratagene UV Stratalinker 2400 with 254 nm radiation. The lids were removed and the plates were irradiated at 9999 mJ/cm2. The efficacy of the killing was measured as described previously {Gems and Riddle (2000) #82}.
 
-## Pairwise fitness measurements
+### Pairwise fitness measurements
 
 Competition experiments were performed as previously (Large et al., 2016). Briefly, Ten L4 stage animals from each strain were picked onto 9 cm NGM plates seeded with 300 μL of an overnight E. coli OP50 culture and incubated at room temperature for 3 days. After 5 days, animals were transferred to an identically prepared NGM plate and then subsequently transferred every 4 days for five to seven generations. For transfers, animals were washed off from the test plates using M9 buffer and collected into 1.5 mL centrifuge tube. The animals were mixed by inversion and allowed to stand for approximately one minute to settle adult animals. 50 uL of the supernatant containing ~1000–2000 L1-L2 animals were seeded on next plates. The remaining animals were concentrated and placed in a −80°C freezer for future genomic DNA isolation. Genomic DNA was collected from every odd generation using a Zymo DNA isolation kit (D4071).
 
-To quantify the relative proportion of each strain, we used a digital PCR based approach using a custom TaqMan probe (Applied Biosciences). Genomic DNA was digested with EcoRI for 30 min at 37°C. The digested products were purified using a Zymo DNA cleanup kit (D4064) and diluted to ~1 ng/μL for the following Taqman assay. Four TaqMan probes were designed using ABI custom software that targeted the dpy-10 (kah82), dpy-10 (kah84), npr-1(g320), or SNP WBVar00209467 in glb-5. These probes were validated using defined concentrations of DNA from animals containing each allele. The Taqman digital PCR assays were performed using a Biorad QX200 digital PCR machine with standard probe absolute quantification protocol. The relative allele proportion was calculated for each DNA sample using count number of the droplet with fluorescence signal (Equation 1). To calculate the relative fitness of the two strains using three to four measurements of relative fitness, we used linear regression to fit this data to a one-locus generic selection model (Equations 2 and 3), assuming one generation per transfer.(1)P(A)t= No. Allele ANo. Allele A+ No. Allele a(2)P(A)t= P(A)0WAAtP(A)0WAAt+ (1- P(A)0)Waat(3)log(P(A)0P(A)t − P(A)01− P(A)0)= (log(WaaWAA))t
+To quantify the relative proportion of each strain, we used a digital PCR based approach using a custom TaqMan probe (Applied Biosciences). Genomic DNA was digested with EcoRI for 30 min at 37°C. The digested products were purified using a Zymo DNA cleanup kit (D4064) and diluted to ~1 ng/μL for the following Taqman assay. Four TaqMan probes were designed using ABI custom software that targeted the dpy-10 (kah82), dpy-10 (kah84), npr-1(g320), or SNP WBVar00209467 in glb-5. These probes were validated using defined concentrations of DNA from animals containing each allele. The Taqman digital PCR assays were performed using a Biorad QX200 digital PCR machine with standard probe absolute quantification protocol. The relative allele proportion was calculated for each DNA sample using count number of the droplet with fluorescence signal (Equation 1). To calculate the relative fitness of the two strains using three to four measurements of relative fitness, we used linear regression to fit this data to a one-locus generic selection model (Equations 2 and 3), assuming one generation per transfer.
 
-## Aerotaxis assays
+$$
+P(A)_{t}=\frac{No.AlleleA}{No.AlleleA+No.Allelea}
+$$
+
+
+
+$$
+P(A)_{t}=\frac{P(A)_{0}W_{AA}^{t}}{P(A)_{0}W_{AA}^{t}+(1-P(A)_{0})W_{aa}^{t}}
+$$
+
+
+
+$$
+log(\frac{\frac{P(A)_{0}}{P(A)_{t}} − P(A)_{0}}{1− P(A)_{0}})= (log(\frac{W_{aa}}{W_{AA}}))t
+$$
+
+### Aerotaxis assays
 
 To measure bordering rates, 2-week-old NGM plates were removed from a 4°C cold room, seeded with 200 μL of E. coli OP50 and incubated for 2 days at room temperature. 150 adult animals were picked onto these assay plates and placed in either a 20°C incubator or a BioSpherix chamber for 3 hr. Bordering behavior was quantified using a dissecting microscope by identifying animals whose whole body resided within 1 mm of the border of the bacteria lawn.
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 N2 and CX12311 L4 hermaphrodites were picked to fresh agar plates. Their adult progeny were synchronized using alkaline-bleach to isolate eggs. These eggs were washed three times using M9 buffer and placed on a tube roller overnight to allow eggs to hatch. About 400 L1 animals were placed on NGM agar plates seeded with non-uniform lawns of E. coli OP50 and incubated in a BioSpherix chamber set at 10% O2 or 21% O2 levels for 48 hr. The ~L4 stage animals were washed off and used for standard Trizol RNA isolation. Replicates were performed on different days. The RNA libraries for next-generation sequencing were prepared using an Illumina TruSeq Stranded mRNA kit (20020595) following its standard protocol. These libraries were sequenced using an Illumina NextSeq 500 platform. Reads were aligned using HISAT2 using default parameters for pair-end sequencing. Transcript abundance was calculated using HTseq and then used as inputs for the SARTools (Varet et al., 2016). Within this R package, edgeR is used for normalization and differential analysis. N2 cultured at 21% O2 is treated as wild type (Chen et al., 2014). The genes showing significantly different expression (log2(fold) >1 or log2(fold) < −1, FDR adjusted p-value<0.01) were selected to perform Hierarchical Cluster analysis, and Principal Component analysis. Sequencing reads were uploaded to the SRA under PRJNA437304.
 
-## Food consumption assays
+### Food consumption assays
 
-## Liquid food consumption
+#### Liquid food consumption
 
 The 96 well-plates were prepared by pipetting 150 μL S media containing E. coli OP50 with density OD600 of 1.0 (CFU ~ 0.8×109/mL), 500 uM FUDR and 1 x Antibiotic-Antimycotic (ThermoFisher 15240062). 20 synchronized animals (L4 stage or young adult) were put into each well, pipetting to mix each well completely before using BioTek Synergy H4 multimode plate reader to record OD600 optical density every 24 hr from Day one to Day 5.
 
-## Plate food consumption
+#### Plate food consumption
 
-The 24-well plates were prepared by pipetting 0.75mL NGM agar contain 25 μM FUDR and 1x Antibiotic-Antimycotic (ThermoFisher 15240062) to each well. The freshly prepared plates were placed in fume hood and dried with air flow for 1.5 hr. 20 μL of freshly cultured OD600 of 4.0 (CFU ~ 3.2×109/mL) E. coli OP50-GFP(pFPV25.1) were seeded in the center of each well. Animals were synchronized using alkaline-bleach. The eggs were washed by M9 buffer for three times and rotating on tube roller overnight to allow eggs to hatch. About 200 L1 animals were placed on NGM agar plates seeded with E. coli OP50 and cultivate at 20o C or BioSpherix chamber at 21o C for 50 hr. Ten animals (Late L4 stage or young adult) were transferred to each well of the first five columns of the food consumption assay 24 well-plates. The remaining four wells were used as control wells to measure the GFP signal degradation. After placing animals on the food consumption assay plates, the fluorescence signal of OP50-GFP from each well was quantified by area scanning protocol using BioTek Synergy H4 multimode plate reader at 6 mm height as the starting time point. The 24-well plates were then incubated in incubator or BioSpherix chamber for 18 hr and the fluorescence signal were quantified again as the ending time point. The fluorescence signal at end time point from each well was normalized using the fluorescence signal degradation amount of control wells. The normalization was performed using the equation as below:(1)Fluorescence_Control(0hr)=β.Fluorescence_Control(18hrs)
+The 24-well plates were prepared by pipetting 0.75mL NGM agar contain 25 μM FUDR and 1x Antibiotic-Antimycotic (ThermoFisher 15240062) to each well. The freshly prepared plates were placed in fume hood and dried with air flow for 1.5 hr. 20 μL of freshly cultured OD600 of 4.0 (CFU ~ 3.2$\times$109/mL) E. coli OP50-GFP(pFPV25.1) were seeded in the center of each well. Animals were synchronized using alkaline-bleach. The eggs were washed by M9 buffer for three times and rotating on tube roller overnight to allow eggs to hatch. About 200 L1 animals were placed on NGM agar plates seeded with E. coli OP50 and cultivate at 20o C or BioSpherix chamber at 21o C for 50 hr. Ten animals (Late L4 stage or young adult) were transferred to each well of the first five columns of the food consumption assay 24 well-plates. The remaining four wells were used as control wells to measure the GFP signal degradation. After placing animals on the food consumption assay plates, the fluorescence signal of OP50-GFP from each well was quantified by area scanning protocol using BioTek Synergy H4 multimode plate reader at 6 mm height as the starting time point. The 24-well plates were then incubated in incubator or BioSpherix chamber for 18 hr and the fluorescence signal were quantified again as the ending time point. The fluorescence signal at end time point from each well was normalized using the fluorescence signal degradation amount of control wells. The normalization was performed using the equation as below:
 
-All the signals from control wells were used to do linear regression and estimate coefficient β. The estimated amounts of bacteria at 18 hr for each test is:(2)Fluorescence(18hrs_normalized)=βFluorescence(18hrs)
+$$
+Fluorescence_Control(0hr)=\beta.Fluorescence_Control(18hrs)
+$$
 
-The food consumption for each well was calculated by:(3)Foodconsumptionamount=Fluorescence(0hr)−Fluorescence(18hr_normalized).
+All the signals from control wells were used to do linear regression and estimate coefficient β. The estimated amounts of bacteria at 18 hr for each test is:
 
-## Pharyngeal pumping and size assays
+$$
+Fluorescence(18hrs_normalized)=\betaFluorescence(18hrs)
+$$
+
+The food consumption for each well was calculated by:
+
+$$
+Foodconsumptionamount=Fluorescence(0hr)−Fluorescence(18hr_normalized).
+$$
+
+### Pharyngeal pumping and size assays
 
 Animals were synchronized using alkaline-bleach. The eggs were washed by M9 buffer for three times and rotating on tube roller overnight to allow eggs to hatch. About 200 L1 animals were placed on NGM agar plates seeded with E. coli OP50 and cultivated at 20°C for 72 hr. In the pharyngeal pumping rates assays, the pharynges of 10 young adult animals (72 hr after place L1 on NGM agar plate) were observed for 30 s each in three separate trails. To measure the pharyngeal size, young adult animals were placed onto agar pad and immobilized by 25 mM NaN3. For each strain, pharyngeal sizes of 30 animals from three different plates were imaged under 40x objective lens using z-stack DIC microscope. The diameter of pharyngeal metacorpus, diameter of terminal bulb diameter, procorpus length, and isthmus length were measured using ImageJ software.
 
-## Reproductive timing and growth assays
+### Reproductive timing and growth assays
 
 To measure reproductive timing, animals were synchronized by picking 10 adult animals onto an NGM plate, allowing them to lay eggs for two hours, and then removing the adult animals from the plate. These offspring were then monitored using a 12x dissecting microscope at indicated time points to count the number of animals with oocytes and fertilized eggs in their uterus. A subset of these animals was washed off at indicated time points and fixed in 95% ethanol. The nuclei were stained with 1.5 μg/mL DAPI solution in Vectashield antifade mounting medium (VECTOR H-1200) for 10 min in the dark before visualization. Each spermatheca was imaged by z-stack fluorescence microscopy using a 100x lens to determine whether spermatogenesis had started or to count the number of sperm produced by the hermaphrodite.
 
 Reproductive rate and body size measurements were measured as described previously (Large et al., 2016).
 
-## Modifications for pheromone assays
+### Modifications for pheromone assays
 
 For crude pheromone assays, crude pheromone was prepared as described previously (Zhuo et al., 2017). The crude pheromone was resuspended in ethanol and stored in −20°C. A dauer formation assay was performed to test the efficacy of crude pheromone. A 1/333 (v/v) crude pheromone level could induce a high >80% rate of dauer formation in N2 animals grown on 20 uL of heat killed E. coli OP50 bacteria (5 mg/mL).
 
 For the feeding assay and reproductive timing assays, the animals were grown on NGM plates for three generations on plates containing the indicated concentrations of crude pheromone (or ethanol control).+indicates a 1/10,000 (v/v) crude pheromone and ++indicated a 1/2000 (v/v) ratio of crude pheromones. The plates were then dried in biosafety cabinet for 1.5 hr, seeded with 200 μL of overnight culture of the E. coli strain OP50, incubated overnight, and used immediately for experiments.
 
-## Exploration assay
+### Exploration assay
 
-35 mm Petri dishes evenly seeded with OP50 E. coli Bacteria for 24 hr before the start of assay. Individual L4 hermaphrodites were placed in the center of the plate and cultivated in BioSpherix chamber in 10% O2 or 21% O2 level at 21o C for 3 hr. The plates were placed on a grid that has 105 squares which cover the whole plate. The number of full or partial squares that contained animal’s tracks was quantified and the exploration fraction was calculated (Equation 1).(1)Exploration fraction= No.  grids contained tracks105
+35 mm Petri dishes evenly seeded with OP50 E. coli Bacteria for 24 hr before the start of assay. Individual L4 hermaphrodites were placed in the center of the plate and cultivated in BioSpherix chamber in 10% O2 or 21% O2 level at 21o C for 3 hr. The plates were placed on a grid that has 105 squares which cover the whole plate. The number of full or partial squares that contained animal’s tracks was quantified and the exploration fraction was calculated (Equation 1).
 
-## Statistics
+$$
+Explorationfraction=\frac{No.gridscontainedtracks}{105}
+$$
+
+### Statistics
 
 All raw data are included in figure source data tables. All replicates were biological replicates using animals grown independently for multiple generations. The number of biological replicates were chosen using power analysis based upon the standard deviation from previous assays. To assess statistical significance, we performed one-way ANOVA tests followed by Tukey’s honest significant difference test to correct for multiple comparisons or the Wilcoxon-Mann-Whitney nonparametric test for pairwise comparisons. The Friedman test was used to compare the reproductive timing assays. The exact test used is listed in the legend for each panel.
 
-## Video files
+### Video files
 
 These files show a single generation (3 days) of growth of the N2 or CX12311 grown strain in the presence of 21% or 10% environmental O2.

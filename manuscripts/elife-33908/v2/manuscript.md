@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.33908.001 Gene control systems sometimes interpret multiple signals to set the expression levels of the genes they regulate. In rare instances, ligand-binding riboswitch aptamers form tandem arrangements to approximate the function of specific two-input Boolean logic gates. Here, we report the discovery of riboswitch aptamers for phosphoribosyl pyrophosphate (PRPP) that naturally exist either in singlet arrangements, or occur in tandem with guanine aptamers. Tandem guanine-PRPP aptamers can bind the target ligands, either independently or in combination, to approximate the function expected for an IMPLY Boolean logic gate to regulate transcription of messenger RNAs for de novo purine biosynthesis in bacteria. The existence of sophisticated all-RNA regulatory systems that sense two ancient ribonucleotide derivatives to control synthesis of RNA molecules supports the hypothesis that RNA World organisms could have managed a complex metabolic state without the assistance of protein regulatory factors.
+Gene control systems sometimes interpret multiple signals to set the expression levels of the genes they regulate. In rare instances, ligand-binding riboswitch aptamers form tandem arrangements to approximate the function of specific two-input Boolean logic gates. Here, we report the discovery of riboswitch aptamers for phosphoribosyl pyrophosphate (PRPP) that naturally exist either in singlet arrangements, or occur in tandem with guanine aptamers. Tandem guanine-PRPP aptamers can bind the target ligands, either independently or in combination, to approximate the function expected for an IMPLY Boolean logic gate to regulate transcription of messenger RNAs for de novo purine biosynthesis in bacteria. The existence of sophisticated all-RNA regulatory systems that sense two ancient ribonucleotide derivatives to control synthesis of RNA molecules supports the hypothesis that RNA World organisms could have managed a complex metabolic state without the assistance of protein regulatory factors.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ Third, we noticed that the consensus sequence and structural models for ppGpp ri
 
 ## Results
 
-## Variant riboswitch aptamers selectively bind the nucleotide precursor phosphoribosyl pyrophosphate (PRPP)
+### Variant riboswitch aptamers selectively bind the nucleotide precursor phosphoribosyl pyrophosphate (PRPP)
 
 To evaluate PRPP binding and riboswitch aptamer function, we examined a 106 nucleotide singlet aptamer arbitrarily derived from the purC gene of the bacterium Facklamia ignava (Figure 2A) by using in-line probing (Soukup and Breaker, 1999; Regulski and Breaker, 2008). This method takes advantage of the inherent chemical instability of phosphodiester linkages in unstructured regions of an RNA and the folding differences in aptamers brought about by ligand binding to provide details on riboswitch function.
 
@@ -53,21 +53,29 @@ To evaluate PRPP binding and riboswitch aptamer function, we examined a 106 nucl
 
 The 106 purC RNA construct exhibits structural modulation at highly conserved nucleotide positions upon the addition of PRPP (Figure 2B). In contrast, no structural modulation of the RNA is observed when the known ligands for the other ykkC subtypes (guanidine and ppGpp) or for the guanine riboswitch (guanine) are added. Importantly, the structural changes selectively brought about by PRPP largely occur in regions equivalent to those previously implicated in ligand binding by guanidine-I (Nelson et al., 2017; Reiss et al., 2017; Battaglia et al., 2017) and ppGpp riboswitch classes. This observation strongly suggests that these binding site nucleotides have changed to alter ligand specificity, and that PRPP is recognized by this converted binding pocket.
 
-## PRPP triggers riboswitch-mediated regulation of transcription termination
+### PRPP triggers riboswitch-mediated regulation of transcription termination
 
 Due to the well-characterized instability of the PRPP molecule (Dennis et al., 2000; Meola et al., 2003), especially under alkaline conditions and high Mg2+, PRPP extensively degrades into multiple breakdown products over the course of our binding experiments. As a result, in-line probing assays will not yield accurate dissociation constants. Therefore, to evaluate the effects of PRPP on riboswitch function, we performed single-turnover in vitro transcription termination experiments (Wickiser et al., 2005a), which involve briefer incubations under milder conditions.
 
 The P3 helix of the PRPP aptamer (Figure 1A) is predicted to act as an antiterminator stem, which should increase the number of full-length mRNA transcripts when PRPP is bound. Transcription of a singlet PRPP riboswitch derived from the purB gene of Heliobacterium modesticaldum (Figure 3A) produces a greater yield of full-length RNA when PRPP is added to the reaction (Figure 3B). The concentration of PRPP necessary to achieve half maximal termination (T50) is less than 100 µM (Figure 3C and Figure 3—figure supplement 1). In contrast, an RNA construct (M1) with disruptive mutations within the highly-conserved aptamer sequence yields the same fraction of terminated and full-length transcripts regardless of PRPP concentration (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig3-v2.jpg)
+
+**Figure 3.:** (A) Sequence and secondary structure of the natural PRPP singlet riboswitch derived from the purB gene from H. modesticaldum. An alternative RNA structure is depicted in which the terminator stem forms followed by a U-rich tract, which only forms in the absence of PRPP. (B) PAGE analysis of a single-round transcription termination assay of WT and mutant H. modesticaldum purB riboswitches at the indicated ligand concentration. FL and T denote full length and terminated transcripts, respectively. Values for the fraction of full-length transcripts relative to the total transcription yield is listed for each reaction. (C) Plot of the fraction of full length WT H. modesticaldum purB RNA riboswitch transcripts contributing to the total number of transcripts (FL plus T) as a function of the logarithm (base 10) of the molar PRPP concentration. The concentration of PRPP required to cause half-maximal termination efficiency (T50) was determined by a sigmoidal curve fit (see METHODS). Inset: PAGE analysis of single round transcription termination assays of the WT H. modesticaldum purB RNA with either no ligand (–) or PRPP ranging from 200 nM to 10 mM. Data for replicates of this transcription termination assay are presented in Figure 3—figure supplement 1. (D) Reporter gene expression of WT and ΔpurF [BKE06490 (depicted) and BKK06490 (not shown)] B. subtilis cells containing wild-type (WT) or mutant (M2) H. modesticaldum purB riboswitch-lacZ reporter fusion constructs as described in A. Cells were grown in glucose minimal medium (GMM) containing 50 µg mL-1 X-gal.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** modesticaldum purB riboswitch construct. Assays are conducted as described for the data generated in Figure 3C. T50 values are estimated to be 40 μM (left) and 80 μM (right).
+
 Importantly, T50 values should not be considered equivalent to KD values. Riboswitches evaluated by transcription termination assays operate under kinetic limitations, whereas KD values established by in-line probing can reach thermodynamic equilibrium (Wickiser et al., 2005a; Wickiser et al., 2005b; Gilbert et al., 2006; Rieder et al., 2007). Thus, the KD for PRPP binding to the H. modesticaldum aptamer is likely to be far better than the T50 values we measured for the H. modesticaldum purB construct, which range between 40 and 90 µM (Figure 3C and Figure 3—figure supplement 1).
 
-## In vivo regulation of gene expression by a PRPP riboswitch
+### In vivo regulation of gene expression by a PRPP riboswitch
 
 The same singlet PRPP riboswitch sequence from H. modesticaldum (Figure 3A) was fused to lacZ in wild-type (WT) and ΔpurF Bacillus subtilis cells. Deletion of the purF gene, which encodes the enzyme that catalyzes the first committed step of de novo purine biosynthesis (Figure 1C), causes PRPP to accumulate when cells are starved for purines. Accordingly, the lacZ gene is expressed (blue) in glucose minimal medium in the ΔpurF strain, but not (clear) in the parental B. subtilis strain with a functional purF gene (Figure 3D).
 
 Notably, the cells range from completely clearto a robust blue under these two conditions, indicating that gene expression is fully suppressed when no ligand is present. Thus, the riboswitch appears to sample a much greater dynamic range for gene expression in vivo than is observed with in vitro transcription termination assays. A riboswitch-reporter fusion carrying a mutation (M2) in the terminator stem expresses lacZ under both conditions. These results demonstrate that PRPP accumulation in cells induce gene expression, which parallels our findings in vitro that PRPP binding by ykkC subtype 2b RNAs promotes transcription elongation (Figure 3B and Figure 3C).
 
-## Natural examples of tandem riboswitch aptamers for guanine and PRPP bind these ligands to induce mutually-exclusive structures
+### Natural examples of tandem riboswitch aptamers for guanine and PRPP bind these ligands to induce mutually-exclusive structures
 
 We next sought to characterize the tandem arrangement of the guanine and PRPP aptamers by in-line probing analysis of the 208 nucleotide RNA derived from the codA gene of Bacillus megaterium (Figure 4A). Each aptamer appears to independently fold to form its characteristic structure and each exhibits typical structural modulation (Figure 4B) upon addition of its cognate ligand as previously observed for singlet guanine (Mandal et al., 2003) or PRPP (Figure 2B) aptamers.
 
@@ -79,9 +87,17 @@ Only the aptamer regions of the RNA were examined by these in-line probing exper
 
 The precise mechanism by which the guanine and PRPP aptamers work in opposition to control the formation of the terminator stem has yet to be fully experimentally evaluated. However, bioinformatic and in-line probing data already might provide clues regarding the structural interplay between the two aptamers. First, guanine aptamers are always located almost immediately adjacent to the conserved nucleotides at the 5´ terminus of the PRPP aptamer in tandem arrangements (Figure 1B). Specifically, there are typically only 5 to 7 nucleotides separating the P1 stems of the guanine and PRPP aptamers, suggesting this juxtaposition is important for logic gate function. Second, the addition of PRPP to the tandem construct causes a reduction in spontaneous RNA cleavage within the conserved nucleotides at the 5´ terminus of the PRPP aptamer (Figure 4B, region 5), whereas guanine addition causes this same region to experience a dramatic increase in scission. These results suggest that guanine binding to its aptamer destabilizes an important structural feature necessary for ligand binding by the PRPP aptamer. Thus, each aptamer might interfere with its neighboring aptamer upon ligand binding, perhaps by causing steric clashes due to their proximity. Additional experiments will need to be conducted to more fully evaluate this mechanistic hypothesis.
 
-## Boolean logic function by a riboswitch carrying tandem guanine and PRPP aptamers
+### Boolean logic function by a riboswitch carrying tandem guanine and PRPP aptamers
 
 To evaluate the proposed two-input logic gate function, the same guanine-PRPP tandem aptamer system including its associated expression platform from B. megaterium (Figure 5A) was subjected to in vitro transcription termination assays. Consistent with results from the singlet aptamer, the addition of PRPP increases the fraction of RNA transcripts that pass beyond the intrinsic terminator stem and reach full length (Figure 5B). Also as predicted, the addition of guanine causes an increase in the fraction of terminated transcripts. When both guanine and PRPP are at high levels, the predicted genetic override occurs, and the fraction of terminated products approaches zero.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig5-v2.jpg)
+
+**Figure 5.:** (A) Sequence and secondary structure of the tandem guanine-PRPP riboswitch derived from the codA gene of B. megaterium. An alternative RNA structure is depicted to include the terminator stem followed by a U-rich tract, which forms based on the relative abundance of each ligand. (B) PAGE analyses of single-round transcription termination assays of WT and various mutant B. megaterium codA tandem riboswitches in the presence or absence of the two ligands. FL and T denote full length and terminated transcripts, respectively. (C) Reporter gene expression of B. subtilis containing wild-type (WT) and mutant (M3 through M5) B. megaterium tandem riboswitch-lacZ reporter fusion constructs as described in (A). Cells were grown in rich (lysogeny broth) medium or glucose minimal medium (GMM) containing either no (–) or 10 µM additional guanine (gua) and 50 µg mL-1 X-gal. (D) Plot of the fraction of full length B. megaterium codA tandem riboswitch transcripts contributing to the total number of transcripts as a function of both guanine and PRPP concentrations. Data shown are the average of three experiments (see Figure 5—figure supplement 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33908/elife-33908-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data for three separate transcription termination ‘trials’ are plotted for six conditions tested as noted in panel A. Panels (A) through (F) include the PRPP concentrations used in the assays in the lower left of each plot. Details are as described in the legend to Figure 5.
 
 Separate and simultaneous mutations to each aptamer (constructs M3 through M5) confirm the OFF and ON function of the guanine and PRPP aptamers, respectively. Specifically, the mutations in M3 alter two highly-conserved nucleotides in the core of the guanine aptamer that are known to be essential for forming its ligand-binding core (Batey et al., 2004; Serganov et al., 2004). As expected, the addition of guanine does not increase transcription termination. Similarly, the mutations in M4 alter two highly-conserved nucleotides in PRPP aptamer, which we expect to disrupt PRPP binding. Again as expected, the amount of transcription termination product increases, and PRPP addition has no effect on the distribution of transcription products. Construct M5 combines the M3 and M4 mutations to generate an RNA that should fail to bind either ligand. Indeed, the M5 construct appears to be unaffected by the addition of either guanine or PRPP (Figure 5B). Similar results are observed in vivo when the WT and M3 through M5 tandem guanine-PRPP riboswitch constructs from B. megaterium were fused to the lacZ reporter gene and transformed into WT B. subtilis cells (Figure 5C).
 
@@ -95,7 +111,7 @@ At the single molecule level, each riboswitch aptamer in this tandem construct f
 
 When transcription termination or gene expression is observed as the average output from a population of RNA constructs, the resulting data do not represent a perfect Boolean function because the output yields intermediate values between zero and maximal values. Whereas each of the individual RNAs operates as a binary logic gate that is either on or off, a population of these RNAs exceeds the function of an individual Boolean logic gate. Together, the output of the tandem riboswitch population functions more like a molecular rheostat to tune gene expression based on relative ligand concentrations, rather than as an all-or-nothing binary switch. Regardless, when ligand concentrations are at their extreme values, the output of the tandem system (Figure 5D) approaches the binary logic of an IMPLY gate.
 
-## The biological utility of the opposing guanine and PRPP signals evaluated by tandem riboswitch aptamers
+### The biological utility of the opposing guanine and PRPP signals evaluated by tandem riboswitch aptamers
 
 A situation in cells in which both guanine and PRPP are scarce would indicate an extremely starved state. Ordinarily, one might expect guanine and PRPP levels to be negatively correlated, such that an excess of guanine would deplete PRPP as a result of the synthesis of 5′-guanosine monophosphate, and vice versa, either through de novo purine biosynthesis or the purine salvage pathway (Figure 1B). If true, then why is it necessary to form this complex tandem arrangement to override the gene control function of a guanine riboswitch? This apparent regulatory paradox is addressed in more detail below.
 
@@ -103,7 +119,7 @@ During the stringent response in Firmicutes, nutrient starvation is signaled by 
 
 Under these conditions the guanine-PRPP tandem riboswitch still turns on expression of its downstream genes, despite the mechanisms in place to keep GTP levels low. At first this appears counterintuitive, but the genes associated with the tandem riboswitch system only include those for catalyzing the steps of de novo purine synthesis up to the production of inosine monophosphate (IMP), the branch point between AMP and GMP production (Figure 1C). Thus, the riboswitch promotes AMP synthesis, but will not turn on genes specific for GDP or GTP synthesis that are already being inhibited by ppGpp. ATP is known to be present in elevated quantities during the stringent response because it is used as the initiating nucleotide for transcription of genes under the ppGpp superregulon, whereas rRNA transcripts utilize GTP as the initiating nucleotide to suppress protein production (Krásný et al., 2008).
 
-## Expansion of natural Boolean logic devices made of RNA
+### Expansion of natural Boolean logic devices made of RNA
 
 As noted above, the guanine-PRPP tandem riboswitch arrangement at its functional limits most closely approximates an IMPLY logic gate (Figure 6A). This all-RNA system joins the NOR gate formed by tandem S-adenosylmethionine (SAM) and adenosylcobalamin (AdoCbl or coenzyme B12) riboswitches (Sudarsan et al., 2006) (Figure 6B) and the AND gate formed by tandem T box and ppGpp riboswitch RNAs (Figure 6C) as sophisticated regulatory RNAs that approximate Boolean logic functions.
 
@@ -131,23 +147,23 @@ The IMPLY gate described herein involves a riboswitch RNA with aptamers for the 
 
 ## Materials and methods
 
-## Chemicals and reagents
+### Chemicals and reagents
 
 Chemicals were purchased from Sigma-Aldrich with the exceptions of phosphoribosyl pyrophosphate (Santa Cruz Biotech) and guanosine 5′,3′-bisdiphosphate (TriLink Biotech). [γ-32P]-ATP and [α-32P]-UTP were purchased from Perkin Elmer and used within two weeks of receipt. Bulk chemicals were purchased from J.T. Baker and enzymes from New England Biolabs, unless otherwise noted. All solutions were prepared using deionized water (dH2O) and were either autoclaved or filter sterilized (using 0.22 µm filters, Millipore) prior to use. DNA oligonucleotides were purchased from Sigma-Aldrich and Integrated DNA Technologies. A list of oligonucleotides used in this study can be found in Supplementary file 1.
 
-## Bioinformatics analyses
+### Bioinformatics analyses
 
 Additional examples of ykkC motif RNAs were identified using Infernal 1.1 (Nawrocki and Eddy, 2013) to search RefSeq version 76 plus additional environmental microbial databases as described previously (Weinberg et al., 2015). Iterative searches for new sequences were performed based on the previously published alignment of ykkC subtype 2 RNAs (Nelson et al., 2017). These sequences were sorted by nucleotide identity at a specific position as previously indicated (Nelson et al., 2017) to exclude guanidine-I riboswitches, then further manually sorted by downstream gene association, as described above. This revealed 257 unique examples of subtype 2b RNAs (PRPP riboswitches), 127 of which are found in tandem with a guanine aptamer. The consensus sequence and secondary structure model was constructed using R2R software (Weinberg and Breaker, 2011).
 
-## RNA oligonucleotide preparation
+### RNA oligonucleotide preparation
 
 Double-stranded DNA (dsDNA) templates for RNA transcription were produced either by extension of overlapping synthetic DNAs (Supplementary file 1) using SuperScript II reverse transcriptase (Thermo Fisher Scientific) for the F. ignava construct or by PCR from genomic DNA for B. megaterium construct. Primers were designed to contain a 5′-terminal T7 RNA polymerase (T7 RNAP) promoter to enable transcription. The desired RNA constructs were prepared from these dsDNAs by in vitro transcription, purified, and subsequently 5′ 32P-labeled as previously described (Nelson et al., 2017; Sherlock et al., 2017).
 
-## RNA in-line probing analyses
+### RNA in-line probing analyses
 
 In-line probing assays (Soukup and Breaker, 1999; Regulski and Breaker, 2008) were performed precisely as described previously (Nelson et al., 2017; Sherlock et al., 2017).
 
-## Single-round transcription termination assays
+### Single-round transcription termination assays
 
 DNA constructs for single-round in vitro transcription were designed to carry the riboswitch of interest spanning from the predicted natural transcription start site to 55 (H. modesticaldum construct) or 26 (B. megaterium construct) nucleotides following the terminator stem. The promoter from the B. subtilis lysC gene, which is compatible with E. coli RNA polymerase, was used for both in vitro transcription termination as well as the lacZ reporter experiments detailed below. Mutations were incorporated in the region of the B. megaterium construct before the guanine aptamer so that it contained no cytidines, while the H. modesticaldum construct was naturally cytidine-deficient. Synthetic double-stranded DNA templates were designed, purchased (Integrated DNA Technologies) and subsequently amplified by PCR for the H. modesticaldum constructs whereas constructs for the WT and M3 through M5 B. megaterium riboswitch were amplified from the plasmids containing those inserts for the reporter gene fusion, as described below.
 
@@ -155,7 +171,7 @@ Approximately 2 pmol of the resulting, purified DNA template was added to a tran
 
 The transcription products were subsequently analyzed via denaturing (8 M urea) 10% PAGE and visualized using a phosphorimager (GE Healthcare Life Sciences). Fraction full length values were calculated by varying the ligand concentration in separate reactions and quantifying the changes in band intensity of both full length (FL) and terminated (T) transcription products using the formula (FL)/(FL +T). The T50 values were determined by plotting the fraction FL as a function of the logarithm of ligand concentration and using a sigmoidal four parameter logistic fit in GraphPad Prism 7.
 
-## Riboswitch reporter assays
+### Riboswitch reporter assays
 
 Riboswitch-reporter constructs consisting of the B. subtilis lysC gene promoter and either the H. modesticaldum or B. megaterium riboswitch fused upstream of the E. coli lacZ gene were inserted into the vector pDG1661 as described previously (Sudarsan et al., 2003; Nelson et al., 2017) and integrated into the amyE locus of wild-type WT (1A1 strain 168 Δtrp) or ΔpurF strains (BKE06490 [erythromycin resistant] and BKK06490 [kanamycin resistant]) obtained from the Bacillus Genetic Stock Center, The Ohio State University) B. subtilis (Meyer et al., 2011). The resulting transformed strains were verified to exhibit the expected resistance to chloramphenicol as well as kanamycin for the ΔpurF::kan strains. Additionally, each strain was confirmed to contain the desired riboswitch reporter sequence by colony PCR amplification followed by sequencing. For example, PCR amplification using primers flanking the purF locus followed by sequencing confirmed either the WT purF gene (WT strains) or kanamycin-resistance gene (ΔpurF::kan strains) as expected. Mutations were incorporated into the B. megaterium reporter construct by using Quikchange site-directed mutagenesis (Agilent Technologies).
 

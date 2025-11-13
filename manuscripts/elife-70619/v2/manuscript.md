@@ -20,7 +20,7 @@
 
 ## Abstract
 
-N 1 -methylation of G37 is required for a subset of tRNAs to maintain the translational reading-frame. While loss of m 1 G37 increases ribosomal +1 frameshifting, whether it incurs additional translational defects is unknown. Here, we address this question by applying ribosome profiling to gain a genome-wide view of the effects of m 1 G37 deficiency on protein synthesis. Using E coli as a model, we show that m 1 G37 deficiency induces ribosome stalling at codons that are normally translated by m 1 G37-containing tRNAs. Stalling occurs during decoding of affected codons at the ribosomal A site, indicating a distinct mechanism than that of +1 frameshifting, which occurs after the affected codons leave the A site. Enzyme- and cell-based assays show that m 1 G37 deficiency reduces tRNA aminoacylation and in some cases peptide-bond formation. We observe changes of gene expression in m 1 G37 deficiency similar to those in the stringent response that is typically induced by deficiency of amino acids. This work demonstrates a previously unrecognized function of m 1 G37 that emphasizes its role throughout the entire elongation cycle of protein synthesis, providing new insight into its essentiality for bacterial growth and survival.
+N1-methylation of G37 is required for a subset of tRNAs to maintain the translational reading-frame. While loss of m1G37 increases ribosomal +1 frameshifting, whether it incurs additional translational defects is unknown. Here, we address this question by applying ribosome profiling to gain a genome-wide view of the effects of m1G37 deficiency on protein synthesis. Using E coli as a model, we show that m1G37 deficiency induces ribosome stalling at codons that are normally translated by m1G37-containing tRNAs. Stalling occurs during decoding of affected codons at the ribosomal A site, indicating a distinct mechanism than that of +1 frameshifting, which occurs after the affected codons leave the A site. Enzyme- and cell-based assays show that m1G37 deficiency reduces tRNA aminoacylation and in some cases peptide-bond formation. We observe changes of gene expression in m1G37 deficiency similar to those in the stringent response that is typically induced by deficiency of amino acids. This work demonstrates a previously unrecognized function of m1G37 that emphasizes its role throughout the entire elongation cycle of protein synthesis, providing new insight into its essentiality for bacterial growth and survival.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Here, we seek to determine whether m1G37 plays additional roles beyond maintaini
 
 ## Results
 
-## E. coli strains with conditional m1G37 deficiency
+### E. coli strains with conditional m1G37 deficiency
 
 Because m1G37 is essential for cell viability, a simple knock-out of the gene responsible for its biosynthesis cannot be made. Previous studies of cellular functions of m1G37 relied on temperature-sensitive variants of the gene responsible for m1G37 biosynthesis whose protein product became inactivated at elevated temperatures (Björk and Nilsson, 2003; Masuda et al., 2013). Because elevated temperatures induce changes in gene expression, we took a different approach to conditionally deplete m1G37 to study its role in protein synthesis. Interestingly, while m1G37 is conserved in evolution, the genes responsible for its biosynthesis are distinct – being trmD in bacteria and trm5 in archaea and eukaryotes (Christian et al., 2004). The protein products of trmD and trm5 are fundamentally different from each other in structure and mechanism (Christian and Hou, 2007; Christian et al., 2010a; Christian et al., 2010b; Christian et al., 2016; Lahoud et al., 2011; Sakaguchi et al., 2014). We recently constructed conditional m1G37-deficient strains of E. coli and Salmonella, in which the trmD locus is deleted from the chromosome and cell viability of the trmD-knock-out (trmD-KO) strain is maintained by a plasmid-borne human trm5 that is under arabinose (Ara)-controlled expression (Gamper et al., 2015a; Masuda et al., 2019). Upon induction with Ara, expression of human trm5 is sufficient to supply m1G37-tRNAs to support bacterial viability (trmD-KO (trm5+)) (Christian et al., 2004), whereas upon replacement of Ara with glucose (Glc), expression of human trm5 is arrested and the human enzyme is degraded inside bacterial cells (trmD-KO (trm5–)) (Christian et al., 2013). As a control, a trmD-wild-type (trmD-WT) strain was created, where trmD remains on the chromosome and expression of the plasmid-borne trm5 in the presence of Ara (trmD-WT (trm5+)), or its repression in the presence of Glc (trmD-WT (trm5–)), did not affect cell viability.
 
@@ -42,9 +42,17 @@ To avoid the possibility of artifacts by studying only one conditional m1G37-def
 
 Overnight cultures of trmD-deg and trmD-cont strains were grown in LB + Glc and were spotted onto an LB + Ara plate to turn on expression of clpXP. Analysis of a serial dilution of each strain confirmed that trmD-deg cells rapidly lost viability, whereas trmD-cont cells retained viability (Figure 1A). In liquid culture, in which each strain was freshly diluted into LB + Ara at OD600 0.1 and grown to 0.3–0.4, followed by a second round of dilution and re-growth, we observed that the re-growth of the trmD-deg strain was retarded in the third round, whereas that of the trmD-cont strain was robust (Figure 1B). Although the growth defect of the trmD-deg strain only manifested in the third cycle of dilution, the level of TrmD protein drastically decreased in 30 min after the first dilution into fresh LB + Ara (as in Figure 1B), whereas that in the trmD-cont strain remained stable up to 90 min (Figure 1C) and longer (Figure 1—figure supplement 1C). We speculate that it takes time for cultures to express clpXP to a threshold level, after which TrmD is rapidly degraded. A similar pattern of drastic reduction of the target protein following clpXP induction was reported previously (Carr et al., 2012). We also speculate that the clpXP expression plasmid, which has the strongest expression strength among a library of plasmids varying in Shine-Dalgarno sequences (Materials and methods), could also contribute to the drastic degradation of TrmD.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig1-v2.jpg)
+
+**Figure 1.:** (A) Growth of trmD-deg and trmD-cont G78 cells on an LB plate. An overnight culture of trmD-deg and trmD-cont cells in LB + Glc was serially diluted, spotted on an LB + Ara plate to turn on clpXP expression, and incubated at 37°C overnight. (B) Representative growth of trmD-deg and trmD-cont G78 cells in a liquid LB culture. An overnight culture of trmD-deg and trmD-cont G78 cells in LB + Glc was grown in LB for 1–2 hr, then diluted into LB + Ara at OD600 of 0.1 and grown to OD600 of 0.3 at 37°C. The cycle of dilution and re-growth was repeated three times to observe a growth defect of the trmD-deg strain. (C) Western blot analysis of TrmD protein. An overnight culture of trmD-deg and trmD-cont cells in LB + Glc was diluted to LB + Ara at T = 0, and was sampled at the indicated time points. Cell lysates were separated on a 12% SDS-PAGE and TrmD protein was detected by primary antibody against E. coli TrmD and a secondary antibody against rabbit IgG. (D) Primer-extension inhibition analysis. An overnight culture of trmD-deg and trmD-cont cells in LB + Glc was diluted to LB + Ara at T = 0 and the fresh culture was taken through three cycles of dilution and re-growth. Total RNA was extracted over the time course, probed with a 5'-[32P]-labeled DNA primer targeting E. coli tRNALeu/CAG, and analyzed by a 12% PAGE/7 M urea gel and phosphorimaging. Primer extension would terminate in the control at 1 nt downstream of m1G37, generating a 15 nt fragment, whereas primer extension would continue to the 5'-end in TrmD deficiency, generating a 53 nt fragment. The fraction of m1G37 in each sample is calculated based on all primer-extension products as shown in the source file, not including the primer. Because the same amount of cell culture was used for extraction of RNA, an increased primer-extension stop at the 15 nt band relative to the primer position was observed in trmD-cont cells, reflecting an increased cell density 0–3 hr and increased synthesis of m1G37-tRNA. In all samples collected for trmD-cont cells, no synthesis of the read-through 53 nt band was observed, indicating 100% methylation. At the time of cell harvest, the m1G37 level was 100% for trmD-cont cells at T = 3 hr, but was below 25% for trmD-deg cells at T = 4 hr.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Construction of E. coli trmD-deg and trmD-cont strains based on the genomic context. A PCR product was amplified to contain nucleotide sequences for a FLAG tag, a 6xHis tag, the degron peptide YALAA, and a tetracycline resistance marker with its promoter. This PCR product contained terminal extensions that were homologous to the 3'-end and the 3'-flanking region of E. coli chromosomal trmD and it was integrated into the chromosome trmD locus by λRed recombination, generating the trmD-deg strain. To generate the trmD-cont strain, the same PCR product was used except that a stop codon TAA was added before the sequence for the YALAA tag. (B) Genotype confirmation by PCR for trmD-deg and trmD-cont strains. Colony PCR using primers targeting the 5'-terminal and 3'-flanking regions of trmD (shown by arrows) confirmed clones of trmD-deg and trmD-cont strains. The deg-tag adds to the C-terminus of TrmD with the YALAA peptide, which is targeted by the ClpXP degradation system, whereas the cont-tag does not. The clones were streak-purified until the WT band was completely removed. The mutant genomic trmD locus was introduced by P1 transduction to G78 cells, which lack the chromosomal clpX gene. (C) Western blot analysis of TrmD protein over an extended time course. E. coli trmD-deg and trmD-cont strains were inoculated to LB + Ara (0.2%) grown at 37°C for 4 hr. Each culture was diluted to OD = 0.1 at the indicated time to maintain cells in the log phase and TrmD was probed by Western blot as in Figure 1C.
+
 To measure cellular levels of m1G37 during this series of dilution and re-growth, we designed a 5'-[32P]-labeled primer of 14 nucleotides (14 nt) complementary to E. coli tRNALeu(CAG). The presence of m1G37 would inhibit primer extension, producing a 15 nt product, whereas the absence of m1G37 would permit primer extension to the 5'-end, producing a 53 nt product. The level of m1G37 was calculated as the fraction of the 15 nt product in the sum of all of the primer-extension products of each reaction. The primer was not included in the calculation due to its molar excess in these reactions. Analysis of total RNA samples, collected after the first dilution into fresh LB + Ara in the time course (as in Figure 1B), showed that the 15 nt product progressively decreased in trmD-deg cells, indicating gradual loss of m1G37, but that it remained stable in trmD-cont cells (Figure 1D). At the time of cell harvesting, m1G37 in trmD-deg cells was at or below 25% (T = 4.2 hr), whereas that in trmD-cont cells was 100% (T = 3 hr). Collectively, these results demonstrate the ability of the degron approach to control the stability of TrmD and to produce conditional m1G37 deficiency in E. coli cells.
 
-## Codon-specific ribosome stalling in m1G37 deficiency
+### Codon-specific ribosome stalling in m1G37 deficiency
 
 We performed ribosome profiling and RNA-seq analyses on two biological replicates of the trmD-deg and trmD-cont strains, which were cultured in the presence of clpXP expression with three cycles of dilution and re-growth and were harvested at OD600 of 0.3. We also obtained a third set of samples using trmD-KO (trm5–) and trmD-WT (trm5–) strains, which were cultured in the absence of trm5 expression in three cycles of dilution and re-growth and were harvested at OD600 of 0.3. Given that m1G37 is associated with a specific set of E. coli tRNAs, we looked in the ribosome profiling data for local differences in the A site occupancy for each codon in m1G37 deficiency. If loss of m1G37 impaired tRNA decoding, we expected that the ribosome would linger on affected codons to accumulate higher levels of density. To quantify these codon-specific effects, we defined a pause score for each codon as the ribosome density at the first nt of the codon normalized by the average ribosome density on the gene where that codon occurs. We computed the pause score for all of the 61 sense codons by averaging the pause score at thousands of instances of each codon across the entire transcriptome. Strikingly, we observed significant increases in the pause score for a set of codons when each was positioned at the ribosomal A site during decoding (Figure 2). Most notably, ribosome density at Pro codons was dramatically increased in m1G37 deficiency, showing an increase in the pause score from 1.4 in trmD-cont cells to 3.5 in trmD-deg cells (Figure 2A, left). Similarly, the pause score at Pro codons increased from 1.2 in trmD-WT (trm5–) cells to 2.5 in trmD-KO (trm5–) cells (Figure 2A, right). The increase in the pause score for all Pro codons indicates that m1G37 deficiency affected decoding by some or all of the isoacceptors of tRNAPro, leading to strong ribosome pausing during elongation.
 
@@ -60,11 +68,19 @@ The increase in the average pause scores in m1G37 deficiency indicates accumulat
 
 Interestingly, we observed increased ribosome density ~25 nt upstream of affected codons in trmD-deg relative to trmD-cont samples (Figure 2C–D, top). This distance is roughly equivalent to the footprint length of a single ribosome, indicating that the increased density was due to collision of an upstream ribosome with a paused ribosome that was struggling to decode an affected codon. The collision of two ribosomes suggests that the pausing of the downstream ribosome at the affected codon is significantly prolonged. These findings are consistent with our prior observation of pausing and formation of disomes upon treatment of cells with mupirocin, an antibiotic that blocks aminoacylation of tRNAIle (Mohammad et al., 2019).
 
-## Reduced aminoacylation and A-site peptide-bond formation of m1G37-deficient tRNAs
+### Reduced aminoacylation and A-site peptide-bond formation of m1G37-deficient tRNAs
 
 The observed ribosome pausing at specific codons in m1G37 deficiency raised two possibilities for the tRNAs translating these codons. First, m1G37 deficiency may reduce aminoacylation of these tRNAs by the respective aminoacyl-tRNA synthetases (aaRSs), preventing them from forming a ternary complex (TC) with EF-Tu-GTP and entering the ribosomal A site. Second, m1G37 deficiency may prevent these tRNAs from peptide-bond formation at the A site, leading to ribosome stalling. We addressed these two possibilities, which are not mutually exclusive, with all three isoacceptors of tRNAPro and the tRNAArg(CCG) isoacceptor. To isolate the effect of m1G37, we prepared tRNAs as T7 RNA polymerase (RNAP) transcripts lacking m1G37 or any other post-transcriptional modification (the G37-state) and compared their activity to transcripts that were subsequently modified with m1G37 by TrmD in vitro (the m1G37-state). We confirmed that the level of methylation in the m1G37-state was high, reaching nearly 100% for the m1G37-state of E. coli tRNAPro(UGG) and nearly 70% for the m1G37-state of E. coli tRNAArg(CCG) (Figure 3—figure supplement 1A). In addition, we also purified some of these tRNAs from cells (the native-state) containing the full complement of natural post-transcriptional modifications.
 
 Aminoacylation of tRNAPro with Pro was performed with purified E. coli ProRS under steady-state multi-turnover conditions (Zhang et al., 2006). The initial rate as a function of the concentration of each tRNA was measured and the data were fit to the Michaelis-Menten equation to derive kinetic parameters Km (tRNA) and kcat. For all three isoacceptors of tRNAPro, the catalytic efficiency kcat/Km was decreased from the m1G37-state to the G37-state by 3- to 10-fold (Figure 3A and Figure 3—source data 1). The reduction in kcat/Km was driven by an increase in Km for all three tRNAs, indicating that m1G37 may be important for binding of each tRNA to ProRS (Figure 3—source data 1A). This apparent binding defect makes sense structurally because m1G37 is immediately downstream of the two conserved anticodon nucleotides G35-G36, which are the major determinants of tRNAPro binding to ProRS (Cusack et al., 1998; Yaremchuk et al., 2000; Yaremchuk et al., 2001). The largest decrease in kcat/Km (10-fold) upon loss of m1G37 was observed for the UGG isoacceptor. Unique among the isoacceptors of tRNAPro, the UGG isoacceptor is required for cell growth and survival (Nasvall et al., 2004) and is most critically dependent on m1G37 for maintaining the translational reading-frame (Gamper et al., 2015a). The critical role that m1G37 plays in the UGG isoacceptor was further highlighted by the finding that aminoacylation reaction with the m1G37-state tRNA has the same kcat/Km values as the native-state tRNA (Figure 3—source data 1A), indicating that all other post-transcriptional modifications played little or no role in aminoacylation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fold-change in the loss of kcat/Km of tRNA aminoacylation from the m1G37-state to the G37-state. Bar graphs are shown for the UGG, the CGG, and the GGG isoacceptors of E. coli tRNAPro, and for the CCG isoacceptor of E. coli tRNAArg, with the fold-change value displayed at the bottom of each bar. The bars are SD of three independent replicates (n = 3), and the data are presented as the mean ± SD for each sample. (B) Fold-change in the loss of kobs from the m1G37-state to the G37-state in overall reaction at the A site leading to peptide-bond formation. Bar graphs are shown for the UGG, CGG, and GGG isoacceptors of E. coli tRNAPro, and for the CCG isoacceptor of E. coli tRNAArg. Each tRNA is paired to the cognate codon, and the fold-change value is displayed at the bottom of each bar as the mean ± SD of three independent replicates (n = 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Efficiency of m1G37 methylation by TrmD in vitro to generate the m1G37-state tRNA substrates for biochemical assays performed in Figure 3. Reactions were performed with 6 μM of each tRNA and 1 μM purified recombinant E. coli TrmD over time. The results showed nearly 100% methylation of the transcript of E. coli tRNAPro(UGG) and nearly 70% methylation of the transcript of E. coli tRNAArg(CCG). (B) An example of a time course of the overall peptide-bond formation at the A site for E. coli tRNAPro(UGG) at the CCA codon assayed at the G37-state and at the m1G37-state. The reaction was performed under substrate-limiting conditions in an in vitro reconstituted translation system that encompasses all intermediate steps leading to peptidyl transfer from [35S]-fMet at the P site to the prolyl moiety at the A site. The synthesized [35S]-fMet-Pro was separated from [35S]-fMet by electrophoretic thin layer chromatography (eTLC). The migration positions of [35S]-fMet, [35S]-fMet-Pro, and the unformylated [35S]-Met were indicated. Consistent with all of our peptide-bond formation assays, [35S]-fMet migrated at two positions. The % of peptide-bond formation was calculated by the band intensity of the dipeptide over the total intensity of the dipeptide and both species of fMet. (C) A linear time course of synthesis of [35S]-fMet-Pro from [35S]-fMet based on the raw data in (B). The kinetic parameter kobs is shown for both the G37-state and the m1G37-state, with no major difference between the two at this anticodon-codon pair. (D) An example of a time course of the overall peptide-bond formation at the A site for E. coli tRNAArg(CCG) at the CGG codon assayed at the G37-state and at the m1G37-state. The reaction was performed under substrate-limiting conditions as in (B). The synthesized [35S]-fMet-Arg was separated from [35S]-fMet by eTLC. The migration positions of [35S]-fMet, [35S]-fMet-Arg, and the unformylated [35S]-Met were indicated. The % of peptide-bond formation was calculated by the band intensity of the dipeptide over the total intensity of the dipeptide and both species of fMet. (E) A linear time course of synthesis of [35S]-fMet-Arg from [35S]-fMet based on the raw data in (D). The kinetic parameter kobs is shown for both the G37-state and the m1G37-state, with a clear difference between the two at this anticodon-codon pair.
 
 Aminoacylation of the tRNAArg(CCG) isoacceptor with Arg was performed with purified E. coli ArgRS under steady-state multi-turnover conditions. The kcat/Km of aminoacylation was decreased from the m1G37-state to the G37-sate by 5.6-fold (Figure 3A and Figure 3—source data 1A). This decrease was largely driven by a loss in kcat (Figure 3—source data 1A), indicating that m1G37 contributed to catalysis, which is a different effect than that observed for tRNAPro, where loss of m1G37 likely reduced tRNA binding to ProRS. Additionally, we observed a loss of 14.3-fold in kcat/Km from the native-state to the G37-state (Figure 3—source data 1A), greater than the 5.6-fold loss due to m1G37 alone, indicating that other post-transcriptional modifications played a role in aminoacylation of this tRNAArg, which also contrasts the observation that m1G37 alone is sufficient for rapid aminoacylation of tRNAPro. Together, these results show that m1G37 is required for efficient aminoacylation of all three isoacceptors of tRNAPro and the tRNAArg(CCG) isoacceptor, and that loss of m1G37 reduces aminoacylation in all cases, although by apparently different mechanisms.
 
@@ -72,13 +88,13 @@ To determine whether m1G37 deficiency reduced peptide-bond formation with affect
 
 For tRNAPro, the UGG isoacceptor was assayed at all four Pro codons CCN, the CGG isoacceptor was assayed at the codon CCG, and the GGG isoacceptor was assayed at the codons CC[C/U] (Figure 3B and Figure 3—source data 1B). The results of these assays showed that, of all of the tested anticodon-codon pairs, loss of m1G37 only had a significant effect on kobs with the UGG isoacceptor at the CCC codon, decreasing kobs by 14.4-fold from the m1G37-state to the G37-state (Figure 3B and Figure 3—source data 1B). Thus, in contrast to aminoacylation, where all isoacceptors of tRNAPro were affected by loss of m1G37, loss of m1G37 only affected the overall reaction of dipeptide formation for one isoacceptor at one codon. Likewise, the CCG isoacceptor of tRNAArg was assayed at the cognate codon CGG, showing a significant decrease of kobs by 14.3-fold from the m1G37-state to the G37-state (Figure 3B and Figure 3—source data 1B). Thus, for the single isoacceptor of tRNAArg, loss of m1G37 reduced the activity of both aminoacylation and the overall reaction of dipeptide formation at the A site.
 
-## Loss of aminoacylation in m1G37-deficient cells
+### Loss of aminoacylation in m1G37-deficient cells
 
 Following up on the results of kinetic studies in vitro, we investigated whether m1G37 deficiency led to loss of aminoacylation of affected tRNAs in vivo. Total RNA was extracted from E. coli trmD-KO (trm5+) and trmD-KO (trm5–) cells using an acid buffer (pH 4.5) and run on an acid-urea gel to preserve the levels of charged aa-tRNA vs. uncharged tRNA at the time of harvest. Northern blots with probes against tRNAPro(UGG) and tRNAArg(CCG) showed that both had reduced aa-tRNA levels, decreasing from 84% to 68% and from 74% to 62% respectively in m1G37 deficiency (Figure 4A, left and middle panels). We confirmed that the loss of aminoacylation of these two tRNAs was specific to m1G37 deficiency. Acid-urea gel analysis of E. coli tRNATyr(QUA) (Q: queuosine), which contains ms2i6A37 (2-methyl-thio-N6-isopentenyl adenosine) and is not methylated by TrmD, showed that its aa-tRNA level was similar (78% vs. 81%) whether m1G37 was abundant or deficient (Figure 4A, right panel).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig4-v2.jpg)
 
-**Figure 4.:** 1G37-deficient E. coli cells.(A) Northern blots of acid-urea gels showing the fractional distribution of charged (aa-tRNA) vs. uncharged (tRNA) in total RNA prepared from trmD-KO cells complemented by the Ara-controlled trm5. Three E. coli tRNAs were probed: tRNAPro(UGG) (left panel), tRNAArg(CCG) (middle panel), and tRNATyr(QUA) (right panel), each under m1G37-abundant (+) and m1G37-deficient (–) conditions. Of the three, the m1G37-dependent tRNAPro(UGG) and tRNAArg(CCG) were further probed in m1G37-deficient cells with over-expression (O/E) of proS and argS, respectively. In contrast, the m1G37-independent tRNATyr(QUA) served as a control and was not probed for O/E of tyrS. The % of aa-tRNA in each case is calculated from the sum of the charged aminoacyl-tRNA (aa-tRNA) and the uncharged tRNA and is shown in the bar graph below for three biological replicates (n = 3). (B) Relative levels of expression of E. coli proS and argS in RNA-seq and ribosome-profiling analysis in m1G37+ and m1G37– conditions of two biological replicates. (C) Aminoacylation activity in E. coli cell lysates prepared in m1G37+ and m1G37– conditions. Three enzymes, encoded by proS (left panel), argS (middle panel), and tryS (right panel), were each tested against the cognate tRNA (i.e., m1G37-state tRNAPro(UGG), m1G37-state tRNAArg(CCG), and A37-state tRNATyr(QUA), respectively). Data are the average of three biological replicates (n = 3). Aminoacylation was performed under substrate-limiting conditions to obtain a linear line of product formation over time. (D) Viability of E. coli trmD-KO (trm5+) and trmD-KO (trm5–) cells harboring an empty vector, or the vector over-expressing E. coli proS or argS, was evaluated by spotting a serial dilution of cells onto an M9 plate with or without Ara for creating trmD-KO (trm5+) and trmD-KO (trm5–) conditions.
+**Figure 4.:** (A) Northern blots of acid-urea gels showing the fractional distribution of charged (aa-tRNA) vs. uncharged (tRNA) in total RNA prepared from trmD-KO cells complemented by the Ara-controlled trm5. Three E. coli tRNAs were probed: tRNAPro(UGG) (left panel), tRNAArg(CCG) (middle panel), and tRNATyr(QUA) (right panel), each under m1G37-abundant (+) and m1G37-deficient (–) conditions. Of the three, the m1G37-dependent tRNAPro(UGG) and tRNAArg(CCG) were further probed in m1G37-deficient cells with over-expression (O/E) of proS and argS, respectively. In contrast, the m1G37-independent tRNATyr(QUA) served as a control and was not probed for O/E of tyrS. The % of aa-tRNA in each case is calculated from the sum of the charged aminoacyl-tRNA (aa-tRNA) and the uncharged tRNA and is shown in the bar graph below for three biological replicates (n = 3). (B) Relative levels of expression of E. coli proS and argS in RNA-seq and ribosome-profiling analysis in m1G37+ and m1G37– conditions of two biological replicates. (C) Aminoacylation activity in E. coli cell lysates prepared in m1G37+ and m1G37– conditions. Three enzymes, encoded by proS (left panel), argS (middle panel), and tryS (right panel), were each tested against the cognate tRNA (i.e., m1G37-state tRNAPro(UGG), m1G37-state tRNAArg(CCG), and A37-state tRNATyr(QUA), respectively). Data are the average of three biological replicates (n = 3). Aminoacylation was performed under substrate-limiting conditions to obtain a linear line of product formation over time. (D) Viability of E. coli trmD-KO (trm5+) and trmD-KO (trm5–) cells harboring an empty vector, or the vector over-expressing E. coli proS or argS, was evaluated by spotting a serial dilution of cells onto an M9 plate with or without Ara for creating trmD-KO (trm5+) and trmD-KO (trm5–) conditions.
 
 The loss of aminoacylation of tRNAPro(UGG) and tRNAArg(CCG) is not due to the loss of the corresponding charging enzymes encoded by proS and argS, respectively. RNA-seq and ribosome profiling data showed that the expression level of these two enzymes was unaffected by m1G37 deficiency (Figure 4B). Moreover, cell lysates in m1G37-abundant (trm5+) and m1G37-deficient (trm5–) conditions exhibited a similar aminoacylation activity when assayed with the methylated m1G37-tRNAPro(UGG) or m1G37-tRNAArg(CCG) (Figure 4C, left and middle panels), indicating that the enzymatic activity of proS and argS was similar between the two growth conditions. As expected, aminoacylation of the control tRNATyr(QUA) was also similar between the two cell lysates (Figure 4C, right panel), validating that equivalent amounts of cell lysates were added to the different reactions.
 
@@ -86,13 +102,13 @@ Additional data showed that the lost aminoacylation of tRNAPro(UGG) and tRNAArg(
 
 Taken together, these findings show that m1G37 deficiency reduces the aminoacylation level of all tRNAPro species and tRNAArg(CCG) in vitro and in vivo. This loss of aminoacylation levels compromises cell viability but can be overcome by over-expression of proS and to a lesser extent over-expression of argS.
 
-## Changes in gene expression by m1G37 deficiency
+### Changes in gene expression by m1G37 deficiency
 
 We next asked what changes in gene expression took place in m1G37 deficiency. Using the DESeq algorithm (Love et al., 2014) to analyze the RNA-seq data, we identified genes whose steady-state levels of mRNAs were altered with statistical significance by loss of m1G37. We found 220 genes with more than 2-fold higher expression (p < 0.01) in the trmD-deg strain (shown in red, Figure 5A). Conversely, we identified 166 genes that were repressed by more than 2-fold (p < 0.01, colored in blue, Figure 5A). For both the up- and down-regulated genes, we identified several pathways that are affected and whose genes are enriched at statistically significant levels (Figure 5C). We also observed changes at the translational level. Using the Xtail algorithm (Xiao et al., 2016) to identify changes in ribosome occupancy (RO = Ribo-seq density/RNA-seq density), we found 71 genes with higher levels of apparent ribosome occupancy (1.7- to 6.5-fold increase) in the trmD-deg strain relative to the trmD-cont strain (p < 0.01, Figure 5B). Because the magnitude of transcriptional changes was greater than that of translational changes, yielding clearer results on which pathways are affected, we focused on the transcriptional changes arising from m1G37 deficiency.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig5-v2.jpg)
 
-**Figure 5.:** 1G37 deficiency.(A) Volcano plot showing differences in steady-state RNA levels (from RNA-seq data analyzed by DESeq) using samples of two replicates of trmD-deg and trmD-cont strains upon ClpXP induction. Genes that are more than 2-fold higher in the mutant with p < 0.01 are colored red (n = 220); those that are more than 2-fold lower with p < 0.01 are colored blue (n = 166). (B) Volcano plot showing differences in ribosome occupancy (Ribo-seq/RNA-seq analyzed by Xtail) using samples from two replicates of trmD-deg and trmD-cont strains upon ClpXP induction. Of these, 95 genes that are up-regulated (p < 0.1) are colored red. (C) Gene ontology categories for genes enriched in the up-regulated genes (red) and down-regulated genes (blue) from (A). (D) Gene model showing ribosome reads (in rpm) and RNA-seq density (in rpm, reads per million mapped reads) at the leuL leader sequence upstream of the leuABCD operon. (E) Gene model showing ribosome reads (in rpm) and RNA-seq density (in rpm) at the ilvL leader sequence upstream of the ilvGMEDA operon. (F) A plasmid reporter construct that demonstrates the codon-specific effect in the leuL leader sequence on expression of the downstream leuA gene. The plasmid reporter encodes the genomic sequence of leuL, followed by the first 100 codons of leuA, in the native sequence or with substitution of the four consecutive CUA codons with four UUA codons. The 100 codons of leuA are then fused to the nano-luciferase (nLuc) gene in-frame. Expression of nLuc, normalized by co-expression of mCherry in a separate plasmid within the same cell, is shown for m1G37+ and m1G37– conditions for the average of three biological replicates (n = 3). (G) Analysis of the CCA-CCG (Pro-Pro) codons in the genomic locus of ilvL as the determinant of regulation of gene expression of the downstream ilvG gene. A variant Escherichia coli strain was created that changed the CCA-CCG (Pro-Pro) codons to GCA-GCG (Ala-Ala) codons at the natural genomic locus, using CRISPR/Cas editing. Expression of ilvG was monitored by qPCR analysis in m1G37+ and m1G37– conditions and in m1G37– condition with over-expression of proS as shown as the average of three biological replicates (n = 3).
+**Figure 5.:** (A) Volcano plot showing differences in steady-state RNA levels (from RNA-seq data analyzed by DESeq) using samples of two replicates of trmD-deg and trmD-cont strains upon ClpXP induction. Genes that are more than 2-fold higher in the mutant with p < 0.01 are colored red (n = 220); those that are more than 2-fold lower with p < 0.01 are colored blue (n = 166). (B) Volcano plot showing differences in ribosome occupancy (Ribo-seq/RNA-seq analyzed by Xtail) using samples from two replicates of trmD-deg and trmD-cont strains upon ClpXP induction. Of these, 95 genes that are up-regulated (p < 0.1) are colored red. (C) Gene ontology categories for genes enriched in the up-regulated genes (red) and down-regulated genes (blue) from (A). (D) Gene model showing ribosome reads (in rpm) and RNA-seq density (in rpm, reads per million mapped reads) at the leuL leader sequence upstream of the leuABCD operon. (E) Gene model showing ribosome reads (in rpm) and RNA-seq density (in rpm) at the ilvL leader sequence upstream of the ilvGMEDA operon. (F) A plasmid reporter construct that demonstrates the codon-specific effect in the leuL leader sequence on expression of the downstream leuA gene. The plasmid reporter encodes the genomic sequence of leuL, followed by the first 100 codons of leuA, in the native sequence or with substitution of the four consecutive CUA codons with four UUA codons. The 100 codons of leuA are then fused to the nano-luciferase (nLuc) gene in-frame. Expression of nLuc, normalized by co-expression of mCherry in a separate plasmid within the same cell, is shown for m1G37+ and m1G37– conditions for the average of three biological replicates (n = 3). (G) Analysis of the CCA-CCG (Pro-Pro) codons in the genomic locus of ilvL as the determinant of regulation of gene expression of the downstream ilvG gene. A variant Escherichia coli strain was created that changed the CCA-CCG (Pro-Pro) codons to GCA-GCG (Ala-Ala) codons at the natural genomic locus, using CRISPR/Cas editing. Expression of ilvG was monitored by qPCR analysis in m1G37+ and m1G37– conditions and in m1G37– condition with over-expression of proS as shown as the average of three biological replicates (n = 3).
 
 Many of the genes with higher RNA levels upon TrmD depletion are involved in amino acid biosynthesis and transport (Figure 5C). For example, induction of the Leu operon (leuA, leuB, leuC, and leuD) was particularly strong (~16-fold). This Leu operon is regulated by transcriptional attenuation depending on the efficiency of translation of the upstream leuL leader sequence (Wessler and Calvo, 1981; Wohlgemuth et al., 2013). As with leader sequences of other amino acid biosynthesis operons (Kolter and Yanofsky, 1982), translation of leuL serves as a sensitive genetic switch that has evolved to sense levels of aa-tRNAs and to respond to amino acid starvation by up-regulating the downstream biosynthetic pathways (Wohlgemuth et al., 2013). We observed ribosomal pausing in leuL at the four consecutive Leu CUA codons in m1G37 deficiency (Figure 5D), consistent with our observation of ribosome pausing at CUA codons (Figure 2B), suggesting that the pausing would prevent transcriptional termination and allow transcription elongation into the downstream Leu biosynthetic genes, resulting in elevated RNA levels. In agreement with this transcriptional attenuation mechanism, we observed in the control trmD-cont strain efficient transcriptional termination downstream of leuL, where the average RNA-seq density (adjusted for length) decreased 29-fold from the leuL leader sequence to the first gene in the operon (leuA), whereas we observed in the trmD-deg strain only a 4-fold decrease (Figure 5D). These results support the notion that ribosome pausing at the four consecutive Leu CUA codons in leuL during m1G37 deficiency reduced transcriptional termination of the downstream leuA gene (Figure 5D).
 
@@ -104,7 +120,7 @@ To examine the effect of the ilvL leader sequence on expression of ilvG, we alte
 
 In addition to Leu, Ile, and Val, the biosynthetic pathways for Trp, His, and Cys were highly up-regulated in the trmD-deg strain (Figure 5C), even though there is no evidence of ribosome stalling at the 5'-leader of the relevant operons. The up-regulation of these pathways suggests that they are activated by a genome-wide response due to ribosome stalling at Pro CCN, Arg CGG, and Leu CUA codons (Figure 2B). The increase in expression of the Cys biosynthesis pathway is correlated with the enrichment in gene ontology (GO) terms for genes involved in sulfate assimilation and hydrogen sulfide biosynthesis (Figure 5C) and is consistent with the notion that cysteine is synthesized from serine in bacteria by incorporation of sulfide to O-acetylserine (Kredich and Tomkins, 1966).
 
-## Changes of gene expression in m1G37 deficiency consistent with the stringent response
+### Changes of gene expression in m1G37 deficiency consistent with the stringent response
 
 The high levels of expression of amino acid biosynthesis genes in m1G37 deficiency was reminiscent of the bacterial stringent response, which is triggered in nutrient starvation by uncharged tRNAs binding to the ribosomal A site, activating synthesis of ppGpp catalyzed by the RelA protein (Gourse et al., 2018). In the stringent response, ppGpp binds to two sites on RNA polymerase (RNAP) and re-programs the transcriptional landscape (Gourse et al., 2018; Ross et al., 2016; Ross et al., 2013), shutting down gene expression of rRNAs and ribosome proteins, while up-regulating amino acid biosynthesis genes to respond to amino acid starvation. Our observation that m1G37 deficiency reduced aminoacylation of all isoacceptors of tRNAPro and the tRNAArg(CCG) isoacceptor raised the possibility that these effects would induce the programmatic changes in gene expression similar to those in the stringent response.
 
@@ -112,11 +128,11 @@ To test this possibility, we compared the changes in RNA levels in m1G37 deficie
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig6-v2.jpg)
 
-**Figure 6.:** 1G37 induces gene expression similar to that of the bacterial stringent response.(A) A set of genes published previously by Gourse et al. (Sanchez-Vazquez et al., 2019), whose steady-state RNA levels changed more than 2-fold upon induction of the stringent response by RelA over-expression (down n = 401 genes, up n = 321 genes, other = 3036 genes). Using these same sets of genes, the ratio of RNA levels in trmD-deg and trmD-cont strains upon ClpXP induction are shown. (B) Changes in expression in genes involved in amino acid biosynthesis (n = 89), genes encoding ribosomal proteins (n = 47), and other genes.
+**Figure 6.:** (A) A set of genes published previously by Gourse et al. (Sanchez-Vazquez et al., 2019), whose steady-state RNA levels changed more than 2-fold upon induction of the stringent response by RelA over-expression (down n = 401 genes, up n = 321 genes, other = 3036 genes). Using these same sets of genes, the ratio of RNA levels in trmD-deg and trmD-cont strains upon ClpXP induction are shown. (B) Changes in expression in genes involved in amino acid biosynthesis (n = 89), genes encoding ribosomal proteins (n = 47), and other genes.
 
 Following up on this observation, we next asked to what extent two characteristic pathways known to be regulated by the stringent response were also affected by m1G37 deficiency. In nutrient starvation, bacterial cells down-regulate ribosome biosynthesis due to the reduced demand for protein production, but up-regulate amino acid biosynthesis (Gourse et al., 2018). As expected, the published RNA-seq data upon relA over-expression showed that 89 genes associated with amino acid biosynthesis in the EcoCyc database were more highly expressed than other genes (log2(median) = 0.59, Mann-Whitney p = 4.8 × 10–12). Intriguingly, we found that these genes were also up-regulated to a similar extent in m1G37 deficiency (log2(median) = 0.58, Mann-Whitney p = 1.2 × 10–8) (Figure 6B), consistent with the enrichment of these genes in our GO annotation (Figure 5C). Likewise, 47 ribosome protein genes were down-regulated upon relA over-expression (log2(median) = –1.48, Mann-Whitney p = 1.6 × 10–24) and they were also down-regulated in m1G37 deficiency, although to a lesser extent (log2(median) = –0.64, Mann-Whitney p = 1.1 × 10–12) (Figure 6B). As a control, we also found that the genes that were not induced in these sets (i.e., not ribosome proteins and not involved in amino acid biosynthesis) were less responsive to relA over-expression, and that they were also less responsive in m1G37 deficiency (Figure 6B). Collectively, the parallel changes in steady-state RNA levels between m1G37 deficiency and relA over-expression were remarkable, suggesting that loss of m1G37 triggers a response similar to that of the relA-dependent stringent response.
 
-## Metabolic changes
+### Metabolic changes
 
 Some of the most striking changes in gene expression in m1G37 deficiency occurred in central metabolic pathways: glycolysis, the citric acid (the tricarboxylic acid [TCA]) cycle, and fatty acid oxidation. For example, 10 genes associated with the TCA cycle were significantly up-regulated in the trmD-deg strain, making this pathway the most enriched in the GO terms (Figure 5C). Genes in the glyoxylate cycle are also up-regulated. Notably, because the glyoxylate cycle bypasses the decarboxylation reactions and instead replenishes TCA cycle intermediates, it is reasonable that these changes may be to build up metabolic intermediates for amino acid biosynthesis. The two-carbon units entering the TCA cycle likely arise primarily from fatty acid oxidation, whose enzymes are highly up-regulated in m1G37 deficiency, as opposed to the glycolysis pathway, whose genes are strongly repressed (Figure 5C). Thus, it appears that m1G37 deficiency shifts metabolism away from consuming Glc toward consuming fatty acids and that cells prioritize building up metabolic intermediates to support amino acid biogenesis.
 
@@ -128,7 +144,7 @@ Using ribosome profiling, we show that m1G37 deficiency causes ribosome stalling
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70619/elife-70619-fig7-v2.jpg)
 
-**Figure 7.:** 1G37 impairs the elongation cycle of protein synthesis in bacteria.A cloverleaf structure of tRNA, showing the position of m1G37 in red. Loss of m1G37 reduces aminoacylation, lowering levels of aa-tRNAs at the ribosome A site, stalling the ribosome, and activating programmatic changes in gene expression similar to those induced by the bacterial stringent response upon RelA sensing of uncharged tRNA and synthesis of ppGpp. Ribosome stalling at the A site is prolonged if the m1G37-deficient aa-tRNA is delayed in peptide-bond formation, leading to ribosome collision. Even if the m1G37-deficient tRNA manages to enter the A site and participates in peptide-bond formation, it would promote +1 frameshifting during translocation from the A site to the P site and during occupancy within the P site, while also destabilizing the P site structure and possibly falling off from the P site to prematurely terminate protein synthesis. Accumulation of these defects ultimately collapses the entire elongation cycle and leads to cell death.
+**Figure 7.:** A cloverleaf structure of tRNA, showing the position of m1G37 in red. Loss of m1G37 reduces aminoacylation, lowering levels of aa-tRNAs at the ribosome A site, stalling the ribosome, and activating programmatic changes in gene expression similar to those induced by the bacterial stringent response upon RelA sensing of uncharged tRNA and synthesis of ppGpp. Ribosome stalling at the A site is prolonged if the m1G37-deficient aa-tRNA is delayed in peptide-bond formation, leading to ribosome collision. Even if the m1G37-deficient tRNA manages to enter the A site and participates in peptide-bond formation, it would promote +1 frameshifting during translocation from the A site to the P site and during occupancy within the P site, while also destabilizing the P site structure and possibly falling off from the P site to prematurely terminate protein synthesis. Accumulation of these defects ultimately collapses the entire elongation cycle and leads to cell death.
 
 An important finding of this work is that ribosome stalling in m1G37 deficiency is primarily driven by loss of aminoacylation of affected tRNAs, which is shown in enzyme-based kinetic assays for all isoacceptors examined, and in cell-based acid-urea assays for tRNAPro(UGG) and tRNAArg(CCG), two major TrmD-dependent species in bacteria. While the loss of aminoacylation in m1G37 deficiency is not due to the loss of ProRS or ArgRS in cells, it can be restored by over-expression of either enzyme, which improves cell viability. These results clearly demonstrate that the loss of aminoacylation in m1G37 deficiency, and consequently the accumulation of uncharged tRNAs, is the underlying basis of ribosome stalling that induces significant changes in gene expression. Direct changes include up-regulation of the leuABCD and ilvGMEDA operons. Indirect changes include hundreds of genes that are activated and similar to those in the bacterial stringent response – the central bacterial response to nutrient starvation upon RelA sensing of uncharged tRNAs binding to the A site of translating ribosomes. These changes certainly make sense given that we see higher levels of deacylated tRNAs accumulating in m1G37 deficiency and that the binding of deacylated tRNA to the A site is known to induce (p)ppGpp synthesis by RelA on the ribosome. We did not test the role of RelA in the indirect changes in gene expression in m1G37 deficiency, because the trmD-deg and trmD-KO (trm5–) cells are already substantially compromised in cell viability and the deletion of relA is expected to further reduce viability. Another confounding factor is that E. coli contains two genes responsible for ppGpp synthesis: relA and spoT, which have overlapping functions. Upon relA deletion, the protein product of spoT can still synthesize ppGpp in response to some of the metabolic changes that are observed here. Nonetheless, the changes in gene expression in trmD deficiency largely parallel with those observed during the stringent response, consistent with the notion that the loss of aminoacylation in m1G37 deficiency activates the stringent response.
 
@@ -140,31 +156,265 @@ In summary, we show here that m1G37 is required for the ribosomal activity at th
 
 ## Materials and methods
 
-## Construction of trmD-deg and trmD-cont strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>G78 trmD-deg</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TrmD is fused with a C-terminal YALAA degron tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>G78 trmD-cont</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Control strain without a degron tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MG1655 trmD-KO</td>
+      <td>Masuda et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MG1655 trmD-KO ilvL Ala-Ala mutant</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CRISPR mutant possessing GCA-GCG codons replacing CCA-CCG codons on ilvL gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>JM109 trmD-KO</td>
+      <td>Demo et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) trmD-KO</td>
+      <td>Gamper et al., 2015a</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>CGSC</td>
+      <td>CGSC#: 12504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TrmD (Rabbit polyclonal)</td>
+      <td>Li and Björk, 1999 doi: 10.1017/S1355838299980834</td>
+      <td></td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG (Goat polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A0545</td>
+      <td>WB(1:160000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>Promega</td>
+      <td>Cat#: V302B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Micrococcal nuclease</td>
+      <td>Roche</td>
+      <td>Cat#: 10107921001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Superscript III reverse transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 18080–044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RQ1 RNase-free DNase</td>
+      <td>Promega</td>
+      <td>Cat#: M6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded Total RNA kit</td>
+      <td>Illumina</td>
+      <td>Cat#: 20020598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 34080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Cloning Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: E5520S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nano-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat#: N1110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep Kits</td>
+      <td>Zymo Research</td>
+      <td>Cat#: R2051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RevertAid First Strand cDNA synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: K1622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>Cat#: 04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Skewer</td>
+      <td>Jiang et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bowtie</td>
+      <td>Langmead et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xtail</td>
+      <td>Xiao et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID</td>
+      <td>Huang et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pathway Tools</td>
+      <td>Karp et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaleidagraph</td>
+      <td>Synergy software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MOPS EZ Rich Defined</td>
+      <td>Teknova</td>
+      <td>Cat#: M2105</td>
+      <td>Growth medium</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of trmD-deg and trmD-cont strains
 
 E. coli trmD-deg strain was constructed as described (Carr et al., 2012). The degron tag was amplified from the template DNA (provided by Dr Sean Moore), which encodes a FLAG tag, a His6 tag, and the degron sequence YALAA followed by the promoter and the coding sequence of the Tet resistance gene. This region was amplified with primers homologous to the 3'-end and flanking sequence of the chromosomal trmD locus. The PCR product was purified and electroporated into competent cells of the recombinogenic E. coli strain SM1405 expressing λRed recombinase (Datsenko and Wanner, 2000). Recombination was confirmed by PCR analysis of colonies on plates containing Tet using primers homologous to the 3'-end of the chromosomal trmD locus. The P1 lysate of the confirmed trmD-deg strain was used for transduction into the recipient E. coli G78 strain whose chromosomal clpX was deleted (Carr et al., 2012). A resultant P1 transductant was selected on plates with Tet, confirmed by PCR, and transformed with a library of the plasmid pclpPX harboring a cassette encoding clpP and clpX and random mutations at the promoter and SD region that control expression of the cassette (Carr et al., 2012). Transformants were screened on LB + Ara (0.2%) plates to turn on expression of the cassette and to identify the clone with the highest efficiency of the degron activity as indicated by Western blots (Figure 1C). E. coli trmD-cont strain was created similarly, except that the degron tag coding for the YALAA sequence was placed after the stop codon of trmD. The P1 transductant harboring trmD-cont in the G78 strain was transformed with the pclpPX plasmid that showed the highest degron activity, generating the trmD-cont control strain. The primer sequences are shown below (5' to 3'):
 
-## Growth conditions
+### Growth conditions
 
 E. coli G78 strains of trmD-deg and trmD-cont were grown in LB + Glc at 37°C overnight, inoculated into 20 mL of fresh LB + Ara at 1:100, and grown for 2 hr at 37°C into the start of the log phase. This growth cycle was repeated three times. In the first cycle, cells were inoculated into 20 mL of LB + Ara (0.2%) and 10 mM Ser at OD600 of 0.1 and grown for 1 hr at 37°C to OD600 of ~0.4, at which point TrmD protein was no longer detected by Western blots. In the second cycle, cells were inoculated into 100 mL of LB + Ara (0.2%) and 10 mM Ser at OD600 of 0.1 and grown for 1 hr at 37°C to OD600 of ~0.4. In the third cycle, cells were inoculated into 500 mL at OD600 of 0.1 and grown for 2–3 hr at 37°C to OD600 of ~0.3. Cells of 200–300 mL were harvested by rapid filtration (see below). Strains of trmD-KO (trm5–) and trmD-WT (trm5–) were grown in LB + Ara (0.2%) at 37°C overnight and were then taken through three cycles of growth in MOPS Medium (EZ Rich Defined, Teknova) containing Glc as the only carbon source. In the first cycle, cells in the overnight culture were inoculated into 10 mL of MOPS at OD600 of 0.1 and grown for 4 hr at 37°C to turn off the Ara-dependent expression of trm5 and to deplete m1G37-tRNAs. In the second cycle, cells were inoculated into 25 mL of MOPS + Glc and grown for 3 hr, and in the third cycle, cells were inoculated into 300 mL of MOPS + Glc and grown 2–4 hr at 37°C until OD600 of ~0.3. Cells of 200–300 mL were harvested by rapid filtration (see below).
 
-## Western blots
+### Western blots
 
 E. coli G78 strains of trmD-deg and trmD-cont were grown overnight in LB and then diluted 1:100 into fresh LB + Ara (0.2%). Cells were grown at 37°C and were lysed 0, 15, 30, 45, 60, and 90 min after inoculation. Cell lysate of 15 μg of protein was separated on 12% SDS-PAGE and levels of TrmD were probed by an anti-TrmD primary antibody (provided by Dr Glenn Bjork) at a dilution of 1:10,000 and a secondary anti-rabbit IgG antibody (Sigma-Aldrich) at a dilution of 1:160,000. Signals were detected by the SuperSignal West Pico Chemiluminescent Substrate (Thermo Fisher Scientific in the Chemi-Doc XRS+ System [Bio-Rad]).
 
-## Primer-extension assays
+### Primer-extension assays
 
 Primer-extension analyses of E. coli tRNALeu(CAG) were performed as described (Masuda et al., 2019) on trmD-deg and trmD-cont lysates generated from the same volume of cells collected at the indicated time points after switching to LB + Ara. A DNA primer targeting nucleotides 40–54 of the tRNA was chemically synthesized, [32P]-labeled at the 5'-end by T4 polynucleotide kinase, annealed to the tRNA, and extended by Superscript III reverse transcriptase (Invitrogen) at 200 U/µL with 6 μM each dNTP in 50 mM Tris-HCl, pH 8.3, 3 mM MgCl2, 75 mM KCl, and 1 mM dithiothreitol (DTT) at 55°C for 30 min. The reaction was quenched with 10 mM EDTA at 70°C for 15 min. cDNA products were separated by 12% PAGE/7 M urea and visualized by phosphorimaging. The extension product of the read-through cDNA is 53 nt in length, whereas the extension inhibition product is 15 nt in length.
 
-## Cell harvesting and lysis
+### Cell harvesting and lysis
 
 We used two different cell harvesting strategies to arrest ribosomes and block translation after cell lysis. The strategy of cell harvesting can influence the quality of ribosome profiling data (Mohammad et al., 2019). Cultures of trmD-deg and trmD-cont were harvested by rapid filtration on a Kontes 99 mm filtration apparatus and 0.45 µm nitrocellulose filter (Whatman) and the cells were flash-frozen in liquid nitrogen. Cells were lysed in lysis buffer (20 mM Tris-HCl, pH 8.0, 10 mM MgCl2, 100 mM NH4Cl, 5 mM CaCl2, 100 U/mL RNase-free DNase I, and 1 mM chloramphenicol). Due to sequence-specific inhibition by chloramphenicol (Marks et al., 2016; Mohammad et al., 2016; Nakahigashi et al., 2014; Orelle et al., 2013), this cell harvesting strategy was more prone to artifacts at the codon level, creating apparent pauses when the smaller amino acids Ala, Gly, and Ser were at the penultimate position in nascent polypeptide chains. Furthermore, chloramphenicol does not fully arrest translation in cell lysates, blurring the signal (Mohammad et al., 2019). In contrast, cultures of trmD-KO (trm5–) and trmD-WT (trm5–), while also harvested by rapid filtration and flash-freezing, were lysed in a buffer lacking chloramphenicol but containing high concentrations of MgCl2 (20 mM Tris-HCl, pH 8.0, 150 mM MgCl2, 100 mM NH4Cl, 5 mM CaCl2, 0.4% Triton X-100, 0.1% NP-40, and 100 U/mL RNase-free DNase I). In this lysis buffer, the high MgCl2 inhibits translation by preventing ribosomal conformational changes required for elongation (Mohammad et al., 2019). After lysis, the samples in the high MgCl2 buffer were centrifuged over a sucrose cushion to collect polysomes, which were resuspended in the standard lysis buffer without the high salt to allow micrococcal nuclease (MNase) digestion and isolation of ribosome-protected mRNA fragments for deep sequencing analysis.
 
-## Library preparation
+### Library preparation
 
 A 10–54% sucrose density gradient was prepared in the Gradient Master 108 (Biocomp) in the gradient buffer (20 mM Tris-HCl, pH 8.0, 10 mM MgCl2, 100 mM NH4Cl, and 2 mM DTT). A cell lysate of 5–20 AU was loaded onto the sucrose density gradient and centrifuged in an SW41 rotor at 35,000 rpm for 2.5 hr at 4°C. Fractionation was performed on a Piston Gradient Fractionator (Biocomp). Libraries for ribosome profiling and RNA-seq were prepared as described (Mohammad et al., 2016; Woolstenhulme et al., 2015) on RNA fragments 15–45 nt in length, with the exception of RNA-seq libraries for the trmD-KO (trm5–) and trmD-WT (trm5–) samples, which were prepared using the TruSeq Stranded Total RNA kit (Illumina). The libraries were analyzed on a high-sensitivity BioAnalyzer (Agilent) and sequenced on the HiSeq2500 Illumina instrument.
 
-## Analysis of sequencing data
+### Analysis of sequencing data
 
 The adaptor sequence CTGTAGGCACCATCAATAGATCGGAAGAGCACACGTCTGAA-CTCCAGTCA was removed by Skewer version 0.2.2 (Jiang et al., 2014). After reads mapping onto tRNA and rRNA were removed, the remaining reads were aligned to E. coli MG1655 genome NC_000913.2 using bowtie version 1.1.2, requiring unique mapping sites and allowing two mismatches (Langmead et al., 2009). The position of the ribosome was assigned using the 3'-end of reads. Reads 10–40 nt in length were included in analyses unless otherwise specified for all samples except for RNA-seq samples from trmD-KO (trm5–) and trmD-WT (trm5–) prepared using the TruSeq kit, which were 50 nt in length.
 
@@ -172,21 +422,21 @@ For calculating pause scores, only reads 24–40 nt in length were used in trmD-
 
 For analyses of changes in gene expression, we calculated for each gene the density of the RNA-seq or Ribo-seq in units of RPKM and then used the DESeq and Xtail packages in R with two replicates of the trmD-deg and trmD-cont samples to compute the log2 fold change in expression and the –log(padj) value shown in Figure 5. Enrichment for GO terms was determined using the functional annotation tools in DAVID at david.ncifcrf.gov (Huang et al., 2007). RNA-seq data were mapped onto metabolic pathways using the Pathway Collage tool at ecocyc.org (Karp et al., 2021; Keseler et al., 2017).
 
-## Aminoacylation of tRNA in vitro
+### Aminoacylation of tRNA in vitro
 
 Each tRNA was aminoacylated with the cognate amino acid by the cognate aaRS enzyme that had been over-expressed in BL21 (DE3) and purified via binding to a Ni-NTA resin and elution with imidazole (Zhang et al., 2006). Each tRNA was heat-denatured at 85°C for 3 min and re-annealed at 37°C for 15 min. Aminoacylation in steady-state conditions was performed at 37°C in a 30 μL reaction of 0.25–20 μM tRNA, 5 nM aaRS, and 20 μM [3H]-amino acid (Perkin Elmer, 7.5 Ci/mmol) in the aminoacylation buffer of 20 mM KCl, 10 mM MgCl2, 4 mM DTT, 0.2 mg/mL bovine serum albumin, 2 mM ATP (pH 8.0), and 50 mM Tris-HCl, pH 7.5 (Liu et al., 2011). Reaction aliquots of 5 µL were removed at different time intervals and precipitated with 5% (w/v) trichloroacetic acid (TCA) on filter pads for 10 min twice. Filter pads were washed with 95% ethanol twice, with ether once, air-dried, and measured for radioactivity in Tri-Carb 4910 TR scintillation counter (Beckman). Counts were converted to pmoles using the specific activity of the [3H]-amino acid after correcting for signal quenching by filter pads. Data corresponding to the initial rate of aminoacylation as a function of the tRNA substrate concentration were fit to the Michaelis-Menten equation to derive the Km (tRNA), kcat (catalytic turnover of the enzyme), and kcat/Km (tRNA) (the catalytic efficiency of aminoacylation).
 
-## Peptide-bond formation assays in vitro
+### Peptide-bond formation assays in vitro
 
 Peptide-bond formation assays were performed on mRNAs that varied in the second codon position (shown as XXX below) but maintained all other nucleotides, including the SD sequence (underlined) and the AUG start codon (bold face).
 
 Each reaction was carried out in 50 mM Tris-HCl, pH 7.5, 70 mM NH4Cl, 30 mM KCl, 3.5 mM MgCl2, 1 mM DTT, and 0.5 mM spermidine at 20°C as described (Gamper et al., 2015a; Liu et al., 2011). E. coli 70S ICs were formed by incubating 70S ribosomes, mRNA, [35S]-fMet-tRNAfMet, and initiation factors (IFs) 1, 2, and 3 with GTP for 25 min at 37°C in the reaction buffer. Each E. coli tRNA (4 μM) was aminoacylated with the cognate amino acid by the cognate aaRS (1 μM) to rapidly achieve plateau level of aminoacylation as confirmed by enzymatic assays. To form a TC, the aminoacylation reaction was incubated with activated EF-Tu-GTP, which was formed separately for 15 min at 37°C, and incubated in an ice bath for 15 min. To monitor peptide-bond formation, 70S ICs templated with an mRNA were mixed with a TC in an RQF-3 Kintek chemical quench apparatus. Final concentrations in each reaction (30 μL) were 0.1 µM for the 70S IC; 1.0 µM for mRNA; 0.5 µM each for IFs 1, 2, and 3; 0.25 µM for [35S]-fMet-tRNAfMet; 1.0 µM for EF-Tu for each aa-tRNA; 0.2 µM each for the aa-tRNAs; and 1 mM for GTP. Reactions were conducted at 20°C and were quenched by adding 60 μL of KOH to 0.5 M. After a brief incubation at 37°C in the quench (90 μL), aliquots of 1.8 µL were spotted onto a cellulose-backed plastic thin layer chromatography sheet and electrophoresed at 1000 V in PYRAC buffer (62 mM pyridine, 3.48 M acetic acid, pH 2.7) until the marker dye bromophenol blue (BPB) reached the water-oil interface at the anode. The position of the origin was adjusted to maximize separation of the expected oligopeptide products. The separation of unreacted [35S]-fMet from each of the [35S]-fMet-peptide products was visualized by phosphor-imaging and quantified by ImageQuant (GE Healthcare) and kinetic plots were fitted using Kaleidagraph (Synergy software).
 
-## Acid-urea gel and Northern analysis
+### Acid-urea gel and Northern analysis
 
 Total RNA was extracted from cells in an acidic condition (pH 4.5) to maintain aa-tRNA levels (Parker et al., 2020). Cell cultures at the appropriate OD were mixed at a 1:1 vol ratio with 10% TCA and incubated on ice for 10 min. Cells were spun down at 8000 rpm (=7600× g) for 5 min at 4°C, resuspended in the extraction buffer (0.3 M NaOAc, pH 4.5, and 10 mM EDTA), and mixed with an equal volume of ice-cold phenol-chloroform-isoamyl alcohol (83:17:3.4), pH 5.0. The mixture was vortexed for five cycles of 1 min vortex and 1 min rest on ice, and spun at 12,000 rpm (=13,500× g) for 10 min at 4°C. Samples with proS over-expression were extracted one more time with phenol-chloroform-isoamyl alcohol (83:17:3.4) pH 5.0 for five cycles of 1 min vortex and 1 min rest on ice. The aqueous phase was separated by spinning at 12,000 rpm (=13,500× g) for 10 min at 4°C, and was mixed with an equal volume of cold isopropanol and incubated at −20°C for 30 min for precipitation. The RNA-containing pellet was collected after centrifugation at 14,000 rpm for 20 min at 4°C, washed with 70% ethanol in 30% 10 mM NaOAc, pH 4.5, dried, and dissolved in the gel-loading buffer (10 mM NaOAc, pH 4.5, and 1 mM EDTA). The RNA of proS over-expression samples dissolved in the gel-loading buffer was incubated with Proteinase K (V302B, Promega) at the final protease concentration of 0.1 mg/mL on ice for 5 min. Due to the high lability of the prolyl linkage in Pro-tRNAPro to hydrolysis (Peacock et al., 2014), total RNA was immediately separated on an acid-urea gel. Assuming that tRNA accounts for 10% of total RNA, we made calculation to load 700 ng of total tRNA of each sample, mixed with two volumes of the acid-urea loading buffer (0.1 M NaOAc, pH 5.0, 9 M urea, 0.05% BPB, and 0.05% xylene cyanol [XC]). An intermediate size of acid-urea gel (14 × 17 cm) was used to resolve Pro-tRNAPro from uncharged tRNAPro, whereas a Bio-Rad standard size mini gel was used to resolve Arg-tRNAArg and Tyr-tRNATyr from uncharged tRNA. Each acid-urea gel was made with 6.5% polyacrylamide, 7 M urea, and 0.1 M NaOAc, pH 5.0, and run at 250 V for 3 hr 45 min at 4°C for the intermediate size gel and at 100 V for 2 hr 30 min for the mini gel. Following electrophoresis, the region between BPB and XC was excised and washed in 1× Tris-borate pH 8.0 and EDTA (TBE) buffer. Gels were transferred to a wetted nitrocellulose membrane in 1× TBE using Trans-Blot Turbo Transfer System (1704150, Bio-Rad) at constant 25 V for 20 min. The electroblotted membranes were briefly air-dried before crosslinking the RNA on the membrane using an ‘optimal crosslink’ in a UV crossliker (FB-UVXL-1000, Thermo Fisher Scientific). The membranes were pre-incubated in a hybridization buffer (0.9 M NaCl, 90 mM Tris-HCl, pH 7.5, 6 mM EDTA, 0.3% SDS, and 1% dry milk) at 37°C for 1 hr. Three DNA oligonucleotide probes, one targeting positions 18–36 of E. coli tRNAPro(UGG) (5'-CCAAACCAGTTGCGCTACCA-3'), one targeting positions 19–36 of E. coli tRNAArg(CCG) (5'-CGGAGGGCAGCGCTCTAT-3'), and the third targeting positions 18–36 of E. coli tRNATyr(QUA) (5'-TACAGTCTGCTCCCTTTGGC-3') were each [32P]-labeled at the 5′-end. These probes (each at 106 cpm) were incubated with the pre-washed membrane in the hybridization buffer for 12 hr while shaking. The probes were washed off by a 2× SSC buffer (0.3 M NaCl, 30 mM Na-citrate) at 37°C two times, each time with mild shaking for 10 min. The membranes were then dried and exposed to an imaging plate overnight. Imaging analysis was performed with a phosphor-imager (Typhoon IP, GE Healthcare) and the bands were quantified using ImageJ software (NIH). The charged fraction was calculated as the area encompassing the charged band divided by the sum of the charged and uncharged bands.
 
-## Analysis of aaRS activity in cell lysates
+### Analysis of aaRS activity in cell lysates
 
 Harvested cells were resuspended in a lysis buffer (50 mM Tris-HCl pH 8.0 and 150 mM NaCl) and were disrupted by a Bioruptor Pico device (Diagenode) through 12 cycles of sonication and intermittent rest at 10 and 45 s, respectively. The generated cell lysate was cleared of debris by ultracentrifugation through MTX-150 with the S100-AT4 rotor (Thermo Fisher Scientific) at 500,000× g for 2 hr at 4°C, and was concentrated through Amicon Ultra-4 Centrifugal Filter Units (Millipore) to ~0.5 mL. The concentrated lysate was washed with 4 mL of the binding buffer (10 mM Tris-HCl pH 7.5, 30 mM KCl, 10 mM MgCl2, and 1 mM DTT) and concentrated again through the same Amicon unit to 1.6 mL. To prepare for post-DEAE fraction of the lysate, two aliquots of 300 µL DEAE sepharose were washed with 1 mL water by spinning at 3000× g for 2 min, and two washes with 1 mL of the binding buffer each. The 1.6 mL concentrated cell lysate was divided into two, and each was mixed with the washed DEAE sepharose and incubated at 4°C with rotation for 1 hr. The slurry was transferred to a gravity column and washed with 10 volumes of 1.2 mL of the binding buffer. The aaRS-containing fraction was eluted by 4 mL of the elution buffer (10 mM Tris-HCl pH 7.5, 400 mM KCl, 10 mM MgCl2, and 1 mM DTT), concentrated by two steps of Amicon Ultra-0.5 mL centrifugal filtering down to 100 µL, exchanged with the dialysis buffer (20 mM Tris-HCl pH 7.5, 130 mM KCl, 10 mM MgCl2, and 1 mM DTT), and followed by dialysis in a Slide-A-Lyzer MINI Dialysis Device, 10 k MWCO (Thermo Fisher Scientific) to remove small molecules. This post-DEAE fraction was determined for protein concentration by the Bradford assay. Molar concentration of proteins in the post-DEAE cell lysate was estimated based on an average molecular weight of E. coli proteins at 40 kDa.
 
@@ -194,14 +444,14 @@ Transcripts of E. coli tRNAPro(UGG), tRNAArg(CCG), and tRNATyr(QUA) were made by
 
 To investigate the effect of over-expression of aaRSs, E. coli trmD-KO strain in BL21(DE3) maintained by human trm5 (Gamper et al., 2015a; Masuda et al., 2019) was transformed with plasmid pET22b expressing E. coli proS, argS, or an empty vector. Overnight cultures in MOPS medium with 0.15% Ara + 0.05% Glc were inoculated 1:100 to fresh MOPS medium with 0.15% Ara + 0.05% Glc to induce the m1G37+ condition, or to MOPS with 0.2% Glc to induce the m1G37– condition, each harboring 0.025 mM isopropyl-β-D-thiogalactoside (IPTG) to induce expression of the plasmid-borne gene. After two cycles of growth and dilution at 37°C, cells were harvested at OD600 = 0.3–0.5 for isolation of total RNA and for preparation of cell lysate. To assay viability on a plate, overnight cultures in LB medium supplemented with 0.2% Ara were inoculated to fresh LB without Ara and grown for 3 hr to deplete pre-existing Trm5 protein and m1G37-tRNAs. After depletion, cells were made by a 10-fold serial dilution, spotted on M9 plates containing 0.025 mM IPTG, and 0.2% Ara or 0.2% Glc as the only carbon source, and grown at 37°C for overnight.
 
-## Reporter assay
+### Reporter assay
 
 The leuL-leuA genes from the leu operon was cloned from the E. coli MG1655 genomic DNA into pKK223-3 by NEBuilder HiFi DNA Assembly Cloning Kit (NEB) and the first 300 bp portion of leuA was translationally fused with the nLuc reporter gene. The four consecutive Leu codons CUA in leuL were mutated into the synonymous UUA codons by inverse PCR and self-ligation. The WT (CUA) and mutant (UUA) plasmids were transformed into E. coli JM109 trmD-KO cells maintained by human trm5 (Demo et al., 2021) together with pZS2R-mCherry plasmid for constitutive expression of mCherry for normalization. Cells were grown overnight in MOPS medium in the m1G37+ condition and inoculated 1:100 to fresh MOPS medium containing 0.1 mM IPTG and grown in m1G37+ and m1G37− conditions for 6 hr at 37°C. The nLuc readout was measured using Nano-Glo Luciferase Assay System (Promega), followed by normalization by the mCherry fluorescence level.
 
-## qPCR analysis
+### qPCR analysis
 
 To test the effect of the Pro-Pro CCA-CCG codon motif on gene expression of ilvL, mutations were introduced to change the motif to Ala-Ala GCA-GCG on the E. coli chromosome of trmD-KO/MG1655 strain, using CRISPR-Cas9 mutagenesis (Reisch and Prather, 2017). WT and CRISPR-edited mutant cells were grown and harvested for total RNA extraction using TRIzol (Invitrogen) and Direct-zol RNA MiniPrep Kits (Zymo Research) per manufacturer’s instructions. It was processed to remove genomic DNA using RQ1 RNase-free DNase (M6101, Promega), followed by cDNA synthesis using RevertAid First Strand cDNA synthesis Kit (K1622, Thermo Fisher Scientific) per manufacturer’s instructions. qPCR was carried out using LightCycler 96 Instrument. For each targeted gene, 18 µL of qPCR master mix containing 10 µL of SYBR Green I Master (04707516001, Roche), 7.6 µL of nuclease-free PCR grade water, 0.2 pmoles of gene-specific forward primer, and 0.2 pmoles of gene-specific reverse primer was combined with 2 µL of cDNA template into each well of a 96-well plate (LightCycler 480 Multiwell Plate 96, white, 04729692001, Roche). qPCR amplification was performed using the following cycling conditions: preincubation for 10 min at 95°C, followed by 45 cycles of three steps of amplification with 10 s at 95°C, 10 s at 48°C, and 10 s at 72°C. The transcript level for each gene was determined using the standard curve generated from the control template by plotting the Cq values (y-axis) against the log initial concentration (x-axis). Results were confirmed by normalization with idnT mRNA. Primers used are shown below (5' to 3'):
 
-## Data availability
+### Data availability
 
 Sequencing data have been deposited in raw FASTQ files at the SRA and processed WIG files at the GEO under accession code GSE165592. Custom Python scripts used to analyze the ribosome profiling and RNA-seq data is freely available at https://github.com/greenlabjhmi/2021_TrmD (copy archived at swh:1:rev:034808ee3fd651b0cf94d091b52aff7c6955ef1c) (Buskirk, 2021).

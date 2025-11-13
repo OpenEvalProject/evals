@@ -31,9 +31,86 @@ Cross-modal temporal biases exhibit a paradoxical characteristic, they are remar
 
 A potential reason for the high stability of cross-modal temporal biases is that they are shaped during a sensitive period of development. Sensitive periods are limited periods during brain development in which the influence of sensory experience on the brain is particularly strong (Knudsen, 2004). During a sensitive period, the architecture of a neural circuit is shaped to meet an individual’s environment. The long-term result is a preference of the neural circuits for certain states of activity even if the environment dramatically changes (Röder et al., 2007; Röder et al., 2004; Sourav et al., 2019), without prohibiting short-term changes in the neural circuits’ activity patterns (Knudsen, 2004; Knudsen, 2002). The role of early sensory experience for the genesis of perceptual biases is extremely difficult to address in humans; only individuals whose early sensory environments were atypical due to natural causes open a window into the role of experience in perceptual development. We tested the hypothesis of a sensitive period for cross-modal perceptual biases by asking individuals born with dense, bilateral cataracts whose sight was restored 6 to 168 months after birth (Table 1) to temporally order spatially separated events across vision, audition and touch.
 
+**Table 1.**
+ Sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>Sex</th>
+      <th>Handedness</th>
+      <th>Visual acuity of the better eye</th>
+      <th>Age at testing</th>
+      <th>Age at surgery</th>
+      <th>Time period between surgery and testing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CC – Expt. 1 visual-auditory</td>
+      <td>10</td>
+      <td>8 males</td>
+      <td>10 right-handed</td>
+      <td>0.16–1.3 logMAR, mean 0.84 logMAR</td>
+      <td>9–46 years, mean 30 years</td>
+      <td>6–168 months, mean 60 months</td>
+      <td>24–528 months, mean 296 months</td>
+    </tr>
+    <tr>
+      <td>DC – Expt. 1 visual-auditory</td>
+      <td>9</td>
+      <td>7 males</td>
+      <td>9 right-handed</td>
+      <td>−0.5–0.8 logMAR, mean 0.25 logMAR</td>
+      <td>8–19 years, mean 13 years</td>
+      <td>74–183 months, mean 120 months</td>
+      <td>12–66 months, mean 30 months</td>
+    </tr>
+    <tr>
+      <td>CC – Expt. 2 visual-tactile</td>
+      <td>10</td>
+      <td>10 males</td>
+      <td>10 right-handed</td>
+      <td>0.16–1.3 logMAR, mean 0.75 logMAR</td>
+      <td>11–45 years, mean 30 years</td>
+      <td>5–216 months, mean 57 months</td>
+      <td>93–516 months, mean 296 months</td>
+    </tr>
+    <tr>
+      <td>DC – Expt. 2 visual-tactile</td>
+      <td>9</td>
+      <td>6 males</td>
+      <td>9 right-handed</td>
+      <td>0–0.5 logMAR, mean 0.22 logMAR</td>
+      <td>9–19 years, mean 14 years</td>
+      <td>30–183 months, mean 102 months</td>
+      <td>13–174 months, mean 63 months</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
 Thirteen individuals with a history of congenital bilateral, dense cataracts which had been surgically removed (CC-group) participated in two spatial temporal order judgement tasks, ten in a visual-auditory task (Expt. 1) and ten in a visual-tactile task (Expt. 2). To test for the role of vision during infancy as well as to control for effects related to having had eye surgery and persisting visual impairments, sixteen individuals, nine per experiment, who had undergone surgery for cataracts which had developed during childhood served as controls (DC-group). As both cataract-reversal groups differed in age (Table 1) and age is known to influence cross-modal temporal perception (Röder et al., 2013; Noel et al., 2016), their performance was not directly compared but each group was contrasted separately against age-matched typically sighted individuals (MCC- and MDC-groups). In every trial, two successive stimuli were presented, one in each hemifield (Figure 1A). Stimulus order and the time interval between the two stimuli (stimulus onset asynchrony; SOA) varied randomly across trials. Visual-auditory and visual-tactile stimulus pairs were randomly interleaved with unimodal stimulus pairs. Participants reported the side of the first stimulus irrespective of its modality (Zampini et al., 2003). For the CC-group, we predicted that due to their history of visual loss and persisting visual impairments participants would give auditory and tactile stimuli a higher preference than visual stimuli. Such a preference would result in a shift of the point of perceived simultaneity (PSS) –the SOA at which auditory-visual or tactile-visual pairs are perceived as simultaneous– towards SOAs with greater auditory or tactile lags, and an overall lower proportion of ‘visual first’-responses compared to their controls. Additionally, we predicted a lower visual spatio-temporal resolution resulting in a lower proportion of correct temporal order judgments for the CC-group.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61238/elife-61238-fig1-v2.jpg)
+
+**Figure 1.:** Thirteen individuals with surgically removed congenital, bilateral dense cataracts (CC) and sixteen individuals whose reversed cataracts had developed later in life (DC) as well as normally sighted individuals matched for age, gender, and handedness (MCC, MDC) took part in the study (see Table 1 for details about the samples). (A) Participants judged the spatio-temporal order of two successive stimuli –one presented in each hemifield– by indicating the location of the first stimulus. In Expt. 1, visual-visual, auditory-auditory, and visual-auditory stimulus pairs were presented, in Expt. 2, visual-visual, tactile-tactile, and visual-tactile stimulus pairs. (B) Psychometric curves: group average probabilities of a ‘right side first’-response as a function of SOA (negative values indicate ‘left side first’-stimulation). Data are split by the modality presented at the right side (visual = grey, auditory = dark blue, tactile = dark red) and the modality at the other side (rows, bimodal = different modality, unimodal = same modality). Curves display cumulative Gaussian distributions fitted to the group data for illustrative purposes. Error bars indicate standard errors of the mean in all panels. (C) Probit analysis: Group mean probits (CC = filled circle, MCC = open circle, DC = filled square, MDC = open square) of the probability for a ‘visual first’-response as a function of SOA (positive values indicate ‘visual first’-stimulation) in bimodal trials (visual-auditory = light blue, visual-tactile = light red). Lines show group averages of linear regression lines fitted to individual participant’s data. The longest SOA was excluded from the linear regression, if a participant’s performance had reached an asymptote. (D) Point of cross-modal subjective simultaneity (PSS): Box-and-whisker plots show the distribution (median, quartiles, minimum and maximum bounded at 1.5 x interquartile range, outliers) of individual PSS values; big circles indicate group mean values. Positive PSS values indicate that stimulus pairs in which the visual stimulus was presented first were perceived as simultaneous. (E) ‘Visual first’-bias: Box-and-whisker plots show the distribution of the proportion of ‘visual first’-responses per participant; big circles indicate group mean values. All SOAs were presented equally often, thus, a PSS of zero and a proportion of ‘visual first’-responses equal to 0.5 would have been correct. A positive PSS corresponds to a proportion of ‘visual first’-responses below 0.5 and vice versa. (F) Temporal order judgment accuracy: Distribution and group average probabilities of correct responses separately for each group and modality condition for each of three different modality combinations per experiment (light blue: visual-auditory, light red: visual-tactile, grey: visual-visual, dark blue: auditory-auditory, dark red: tactile-tactile). (G) Bias-accuracy relation: Single participants’ proportion of correct responses (x-axis) plotted against the absolute value of their ‘visual first’-bias (y-axis; markers as in (C)). Lines show linear regressions and 95% confidence intervals. (H) Reaction time (RT) distributions: Individually normalized RT in bimodal trials as a function of SOA (positive values indicate ‘visual first’-stimulation) per group. Markers and lines show group mean values (markers and line styles as in (C)).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61238/elife-61238-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Participant-level mean proportions of ‘right side first’-responses are shown as a function of the stimulus onset asynchrony (SOA) of the two stimuli, with negative values indicating ‘left side first’-stimulation. The data are split into responses to bimodal (top row) and unimodal (bottom row) stimulus pairs and according to the modality presented at the right side (visual = grey, auditory = dark blue, tactile = dark red). Sigmoid curves fitted to the group mean data reported in Figure 1B are shown as a reference for participants for whom the onset of the cataract could be identified.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61238/elife-61238-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Five additional, typically sighted participants (all female and right-handed, 23–50 years old, mean age 34 years) completed the visual-auditory experiment. Here, a visual stimulus consisted of three activated LEDs whereas in the main experiment for typically sighted controls only one LED had been activated. Group mean proportions of ‘right side first’-responses are shown as a function of the stimulus onset asynchrony (SOA) of the two stimuli, with negative values indicating ‘left side first’-stimulation. The data are split into responses to bimodal (top row) and unimodal (bottom row) stimulus pairs and according to the modality presented at the right side (visual = grey, auditory = dark blue). Participants showed a typical bias of perceiving visual stimuli as delayed compared to auditory stimuli.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61238/elife-61238-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Box-and-whisker plots show the distribution (median, quartiles, minimum and maximum bounded at 1.5 x interquartile range, outliers) of individual JND values; big circles indicate group mean values.
 
 Most strikingly and contrary to our predictions, CC-individuals showed a bias toward perceiving visual stimuli as occurring earlier than auditory (Figure 1D,E; CC-group, Expt. 1, PSS, t(9) = −1.51, p=0.033, requiv = 0.57; ‘visual first’-response probability, χ2 (1)=4.31, p=0.038, requiv = 0.55; see Supplementary file 1 for full statistical models) and tactile stimuli (CC-group, Expt. 2, PSS, t(9) = −3.04, p=0.009, requiv = 0.69; ‘visual first’-response probability, χ2(1)=12.46, p<0.001, requiv = 0.85), respectively. CC-individuals’ bias toward perceiving visual stimuli as earlier stood in contrast to the bias observed for their matched controls (CC- vs. MCC-group, Expt. 1, visual-auditory, PSS, t(18) = −2.34, p=0.005, requiv = 0.56; ‘visual first’-response probability, χ2 (1)=8.48, p=0.004, requiv = 0.57; Expt. 2, visual-tactile, PSS, t(18) = −2.47, p=0.008, requiv = 0.53; ‘visual first’-response probability, χ2 (1)=5.31, p=0.021, requiv = 0.45) who perceived auditory stimuli as occurring earlier than visual stimuli (MCC-group, Expt. 1, visual-auditory, PSS, t(9) = 2.30, p=0.009, requiv = 0.69; ‘visual first’-response probability, χ2 (1)=4.18, p=0.041, requiv = 0.55) and did not show a significant bias for visual-tactile comparisons (MCC-group, Expt. 2, visual-tactile, PSS, t(9) = −0.48, p=0.321, requiv = 0.16; ‘visual first’-response probability, χ2 (1)=0.15, p=0.701, requiv = 0.17). In contrast to the CC-group, DC-individuals showed the typical bias toward perceiving visual stimuli as occurring later than auditory and tactile stimuli (DC-group, Expt. 1, visual-auditory, PSS, t(8) = 1.42, p=0.017, requiv = 0.67; ‘visual first’-response probability, χ2 (1)=7.14, p=0.008, requiv = 0.74; Expt. 2, visual-tactile, PSS, t(8) = 2.31, p=0.017, requiv = 0.67; ‘visual first’-response probability, χ2 (1)=8.86, p=0.003, requiv = 0.79). In fact, their spatio-temporal bias toward perceiving visual stimuli as later than tactile stimuli was stronger than the bias of their matched controls (DC- vs. MDC-group, Expt. 1, visual-auditory, PSS, t(18) = 1.40, p=0.123, requiv = 0.29; ‘visual first’-response probability, χ2 (1)=1.84, p=0.174, requiv = 0.23; Expt. 2, visual-tactile, PSS, t(18) = 2.17, p=0.019, requiv = 0.49; ‘visual first’-response probability, χ2 (1)=8.08, p=0.004, requiv = 0.60; MDC-group, Expt. 1, visual-auditory, PSS, t(8) = 1.32, p=0.152, requiv = 0.36; ‘visual first’-response probability, χ2 (1)=0.83, p=0.362, requiv = 0.13; Expt. 2, visual-tactile, PSS, t(8) = −0.36, p=0.361, requiv = 0.13; ‘visual first’-response probability, χ2=0.85, p=0.356, requiv = 0.15).
 
@@ -65,21 +142,21 @@ In conclusion, congenital but not late transient visual deprivation was associat
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 The sample of the visual-auditory experiment (Expt. 1) comprised ten individuals who were born with bilateral dense cataracts (congenital cataracts, CC) and whose vision was restored later in life (for details see Table 1) and nine individuals with transient, bilateral cataracts which had developed during childhood (developmental cataracts, DC). The sample tested in the visual-tactile experiment (Expt. 2) comprised ten CC- and nine DC-individuals. For each CC- and DC-participant an age-, gender- and handedness-matched control participant was recruited. Seven CC- and two DC-individuals as well as 13 control participants took part in both experiments. The majority of participants with a history of cataracts were recruited and tested at the LV Prasad Eye Institute in Hyderabad, India. Three CC-individuals and all control participants were recruited and tested at the University of Hamburg, Germany. The presence of congenital cataracts was affirmed through an analysis of the medical records by the participant’s optometrist and ophthalmologists. Since cataracts were sometimes diagnosed at a progressed age, additional criteria such as presence of nystagmus, strabismus, the density of the lenticular opacity, the lack of fundus visibility prior to surgery, a family history of congenital cataracts, and parents’ reports were employed to confirm the onset of the cataract. Data of five additional participants were excluded from all analyses because (a) the onset of the cataract remained unclear (two participants, one took part in the visual-auditory experiment and one in the visual-tactile experiment), (b) the time period between surgery and testing was shorter than 12 months (one participant from the CC-group who took part in both experiments and one participant from the DC-group who took part in the visual-auditory experiment), or because (c) additional neurological problems were suggested by medical records (one participant from the CC-group who took part in both experiments). Data of two further participants (one CC- and one DC-individual) were excluded because they performed even in the easiest 400-ms-long SOA condition at chance level or below in the visual-auditory experiment. The 400-ms-long SOA was included to check whether participants had understood the task, which was explained to them by an interpreter. All excluded data are shown in the supplementary information (Figure 1—figure supplement 1) and are in accordance with the results presented in the main text. Adult participants and legal guardians of minors were reimbursed for travel expenses, accommodation, and absence from work, if applicable; adult participants tested in Hamburg received a small monetary compensation or course credit. Children received a small present. All participants or, if applicable, their legal guardian, provided written informed consent before beginning the experiment. The study was conducted in accordance with the ethical guidelines of the Declaration of Helsinki and was approved by the ethical board of the German Psychological Society as well as the local ethical committee of the LV Prasad Eye Institute.
 
-## Apparatus and stimuli
+### Apparatus and stimuli
 
 Participants sat at a table, facing two speakers, positioned at 14° visual angle (15 cm at 60 cm distance) to the left and to the right of the participant’s midline (Figure 1A). Three LEDs were mounted on top of each speaker. In the visual-tactile experiment, custom-made, noise-attenuated tactile stimulators were attached to the dorsal sides of both index fingers. A stimulus lasted 15 ms, independent of modality. During a stimulus, the LEDs emitted red light, the speakers played white noise, and the tactile stimulators vibrated at a frequency of 100 Hz. All three LEDs were used for cataract-reversal participants, but only one LED for typically sighted participants, to roughly compensate for persistent visual impairments in cataract-reversal participants. To rule out that typically sighted participants perceived vision as delayed due to the lower number of LEDs, we tested five additional typically sighted participants (all female and right-handed, 23–50 years old, mean age 34 years) in the visual-auditory experiment while using all three LEDs. These participants showed a significant typical bias towards perceiving vision as delayed (t(4)=6.36, p=0.003, Figure 1—figure supplement 2). Constant white noise was presented from a centrally located speaker, to mask residual noise produced by the tactile stimulators. During the experiment, participants fixated a mark placed centrally between the loudspeakers and rested both hands on buttons aligned with the loudspeakers (visual-auditory experiment) or both feet on foot pedals (visual-tactile experiment). Younger participants sometimes experienced problems activating the response devices in a controlled manner. These participants (visual-auditory experiment: one CC- individual; visual-tactile experiment: two DC-individuals) and their controls responded by waving one hand and the experimenter entered the response. The experiment was controlled by Presentation (Version 17.1.05, Neurobehavioral Systems, Inc, Berkeley, CA, www.neurobs.com), which recorded responses and interfaced with custom-built hardware to drive the stimulators.
 
-## Task, procedure, and design
+### Task, procedure, and design
 
 In each trial, two stimuli were presented in close succession; one stimulus in each hemifield. Participants indicated at which side they perceived the first stimulus. Responses had to be withheld until the second stimulus had been presented. Response times were not restricted, and the next trial started 2 s after the response had been registered.
 
 The modality of the stimulus presented at either side (visual or auditory, Expt. 1; visual or tactile, Expt. 2) and the stimulus onset asynchrony (SOA;±30,±90,±135,±400 ms, with negative SOAs indicating ‘left side first’-stimulus pairs) of the two stimuli varied pseudo-randomly across trials. Each of the 32 stimulus conditions (2 modalities x 2 sides x 8 SOAs) was repeated 10 times; the 320 trials were divided into 10 blocks. Participants additionally completed ten practice trials with an SOA of ±400 ms at the beginning of the experiment. If necessary, the practice trials were repeated until participants felt confident about the task. In the visual-tactile experiment, a subsample of participants was additionally tested while holding the hands crossed (data not reported here). Participants were encouraged to take breaks in between blocks. Some of the cataract-reversal participants did not complete the full experiment, mostly due to time constraints. Except for practice trials, participants did not receive feedback.
 
-## Data analysis
+### Data analysis
 
 Data and analysis scripts are made available online (Badde et al., 2019). Trials with reaction times shorter than 100 ms and more than 2.5 standard deviations above the participant’s mean reaction time (RT) were excluded from the analysis (2.1% of trials; responses entered by the experimenter were not filtered).
 

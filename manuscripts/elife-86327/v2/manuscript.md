@@ -10,14 +10,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Centre for Functional and Metabolic Mapping, Robarts Research Institute, University of Western Ontario London Canada
-2. https://ror.org/02grkyz14 Department of Physiology and Pharmacology, University of Western Ontario London Canada
+1. Centre for Functional and Metabolic Mapping, Robarts Research Institute, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Physiology and Pharmacology, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
 ## Abstract
 
-Theory of Mind (ToM) refers to the cognitive ability to attribute mental states to other individuals. This ability extends even to the attribution of mental states to animations featuring simple geometric shapes, such as the Frith-Happé animations in which two triangles move either purposelessly (Random condition), exhibit purely physical movement (Goal-directed condition), or move as if one triangle is reacting to the other triangle’s mental states (ToM condition). While this capacity in humans has been thoroughly established, research on nonhuman primates has yielded inconsistent results. This study explored how marmosets ( Callithrix jacchus ), a highly social primate species, process Frith-Happé animations by examining gaze patterns and brain activations of marmosets and humans as they observed these animations. We revealed that both marmosets and humans exhibited longer fixations on one of the triangles in ToM animations, compared to other conditions. However, we did not observe the same pattern of longer overall fixation duration on the ToM animations in marmosets as identified in humans. Furthermore, our findings reveal that both species activated extensive and comparable brain networks when viewing ToM versus Random animations, suggesting that marmosets differentiate between these scenarios similarly to humans. While marmosets did not mimic human overall fixation patterns, their gaze behavior and neural activations indicate a distinction between ToM and non-ToM scenarios. This study expands our understanding of nonhuman primate cognitive abilities, shedding light on potential similarities and differences in ToM processing between marmosets and humans.
+Theory of Mind (ToM) refers to the cognitive ability to attribute mental states to other individuals. This ability extends even to the attribution of mental states to animations featuring simple geometric shapes, such as the Frith-Happé animations in which two triangles move either purposelessly (Random condition), exhibit purely physical movement (Goal-directed condition), or move as if one triangle is reacting to the other triangle’s mental states (ToM condition). While this capacity in humans has been thoroughly established, research on nonhuman primates has yielded inconsistent results. This study explored how marmosets (Callithrix jacchus), a highly social primate species, process Frith-Happé animations by examining gaze patterns and brain activations of marmosets and humans as they observed these animations. We revealed that both marmosets and humans exhibited longer fixations on one of the triangles in ToM animations, compared to other conditions. However, we did not observe the same pattern of longer overall fixation duration on the ToM animations in marmosets as identified in humans. Furthermore, our findings reveal that both species activated extensive and comparable brain networks when viewing ToM versus Random animations, suggesting that marmosets differentiate between these scenarios similarly to humans. While marmosets did not mimic human overall fixation patterns, their gaze behavior and neural activations indicate a distinction between ToM and non-ToM scenarios. This study expands our understanding of nonhuman primate cognitive abilities, shedding light on potential similarities and differences in ToM processing between marmosets and humans.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To investigate whether marmoset monkeys, like humans, exhibit distinct processin
 
 **Figure 1.:** Two different conditions of video clips resulting in eight animations were used during the scanning (ToM and Random animations), and an additional condition with four animations was used for the eye-tracking (ToM, GD and Random animations). In the ToM animations, one triangle reacted to the other triangle’s mental state, whereas in the Random animations the same two triangles did not interact with each other. In the GD animations, the two triangles interact with simple intentions. Each animation video lasted 19.5 s and was separated by baseline blocks of 15 s where a central dot was displayed in the center of the screen. In the fMRI task, several runs were used with a Randomized order of the two conditions whereas in the eye-tracking task one run containing all the twelve animations once was used.
 
-## Gaze patterns for Frith-Happé’s ToM, GD and Random animations in humans and marmosets
+### Gaze patterns for Frith-Happé’s ToM, GD and Random animations in humans and marmosets
 
 We first investigated in both humans and marmosets whether fixation durations differed between the three conditions (Figure 2A). By conducting mixed analyses of variance (ANOVA), with factors of species (Human vs Marmoset) and condition (ToM vs GD vs Random animation videos), we found a significant interaction between species and condition (F(2,40)=13.9, p=<0.001, ηp2p2.410). Here we observed longer fixation durations for ToM animation videos (M=432.6ms) as compared to GD videos (M=279.9ms, p=0.008) and Random videos (M=308.2ms, p=0.01) for humans (p=0.029) but not for marmosets (233.7ms for ToM videos, 219.6ms for GD videos and 235.6ms for Random videos, ToM vs GD: p=0.90 and ToM vs Random: p=1).This finding confirms that humans fixate longer in the ToM condition (Klein et al., 2009), whereas marmosets, like macaques (Schafroth et al., 2021), do not show this effect.
 
@@ -53,11 +53,23 @@ For the small blue triangle, we also observed a significant interaction of speci
 
 These results highlight the variation in gaze patterns observed in both humans and marmosets when their focus is directed towards the large red triangle during the viewing of ToM, GD, and Random videos. Notably, humans show a gradient of proportion of time spent looking at the red triangle across the three conditions, with the smallest proportion in Random videos and the greatest proportion in ToM videos. In contrast, marmosets exhibit a different pattern, spending more time looking at the red triangle in ToM videos, but allocating the same proportion of time to look at the red triangle in both Random and GD videos. This finding suggests that while humans demonstrate distinct attentional preferences for the red triangle across the three conditions, marmosets exhibit a similar attentional focus on the red triangle in the Random and GD conditions, but their pattern differs in the ToM condition. This suggests that marmosets process the Random and GD conditions in a similar manner, but their processing of the ToM condition is distinct, indicating a differential response to stimuli representing social interactions.
 
-## Functional brain activations while watching ToM and Random Frith-Happé’s animations in humans
+### Functional brain activations while watching ToM and Random Frith-Happé’s animations in humans
 
 Given that humans exhibited only minor differences, and marmosets showed no differences in eye movements between the Random and GD animations, coupled with task design constraints, we only used the Random and ToM animations for the fMRI studies in both humans and marmosets (see Materials and methods).
 
 We first investigated ToM and Random animations processing in humans. Figure 3 shows group activation maps for ToM (A) and Random (B) conditions as well as the comparison between ToM and Random conditions (C) obtained for human participants.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86327/elife-86327-fig3-v2.jpg)
+
+**Figure 3.:** Group functional maps displayed on right fiducial (lateral and medial views) and left and right fiducial (dorsal and ventral views) of human cortical surfaces showing significant greater activations for ToM condition (A), Random condition (B) and the comparison between ToM and Random conditions (C). The white line delineates the regions based on the recent multi-modal cortical parcellation atlas (Glasser et al., 2016). The maps depicted are obtained from 10 human subjects with an activation threshold corresponding to z-scores >2.57 for regions with yellow/red scale or z-scores <–2.57 for regions with purple/green scale (AFNI’s 3dttest++, cluster-forming threshold of p<0.01 uncorrected and then FWE-corrected α=0.05 at cluster-level from 10000 Monte-Carlo simulations).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86327/elife-86327-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Group functional maps showing significant greater activations for the comparison between ToM animations and Random animations displayed on the left and right fiducial human cortical surfaces (lateral and medial views) as well as on coronal slices, to illustrate the activations in subcortical areas. The white line delineates the regions based on the recent multi-modal cortical parcellation atlas (Glasser et al., 2016). (A) The map depicted is obtained from 10 human subjects with an activation threshold corresponding to z-scores>2.57 (AFNI’s 3dttest++, cluster-forming threshold of p<0.01 uncorrected and then FWE-corrected α=0.05 at cluster-level from 10000 Monte-Carlo simulations). The subcortical maps correspond to an activation threshold of z-scores>3.29 (AFNI’s 3dttest++, threshold of p<0.001 uncorrected). (B) The map depicted has been downloaded from https://identifiers.org/neurovault.image:3179 and is described in the study of Barch et al., 2013. The brain areas reported have activation threshold corresponding to z-scores>6, uncorrected.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86327/elife-86327-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A). Image SNR maps from gradient-echo-images obtained from Gilbert et al., 2021. (B) Temporal SNR (i.e. ratio of the mean signal to the standard deviation through the time course) for EPI BOLD images obtained from one run of one participant. The mean tSNR calculated within peripheral brain regions nearest the coil elements is 10% higher for right hemisphere than tSNR produced by left hemisphere.
 
 Both ToM (Figure 3A) and Random (Figure 3B) videos activated a large bilateral network. While the same larger areas were activated in both conditions, the specific voxels showing this activation within those areas were typically distinct. In some cases, both conditions activated the same voxels, but the degree of activation differed. This suggests a degree of both spatial and intensity variation in the activations for the two conditions within the same areas. The activated areas included visual areas (V1, V2, V3, V3CD, V3B, V4, V4T, V6A, V7, MT, MST), lateral occipital areas 1, 2, and 3 (LO1, LO2, LO3), temporal areas (FST, PH, PHT, TE2, posterior inferotemporal complex PIT and fusiform face complex FFC), temporo-parietal junction areas (TPOJ2 and TPOJ3), lateral posterior parietal areas also comprising the parietal operculum (supramarginal areas PF, PFt, angular areas PGp and PGi, superior temporal visual area STV, perisylvian language area PSL, medial intraparietal area MIP, ventral and dorsal lateral intraparietal areas LIPv and LIPd, anterior intraparietal area AIP, IPS1, IPS0, 7PC and 5 L), medial superior parietal areas (7am, PCV, 5 mv), secondary somatosensory cortex (S2), premotor areas (6, 55b, premotor eye field PEF, frontal eye field FEF), and frontal areas (8Av, 8 C, IFJp, IFIa).
 
@@ -71,7 +83,7 @@ As we used shorter modified versions of the Frith-Happé animations (i.e. videos
 
 This comparison is shown in Figure 3—figure supplement 1. Overall, we observed similar distinct patterns of brain activations (Figure 3—figure supplement 1A and B), including a set of areas in occipital, temporal, parietal and frontal cortices, as described previously (Figure 3C). The main differences were stronger activations in the left hemisphere in the HCP dataset. Therefore, these results show that our stimuli and our protocol are appropriate to investigate mental state attribution to animated moving shapes.
 
-## Functional brain activations while watching ToM and Random Frith-Happé’s animations in marmosets
+### Functional brain activations while watching ToM and Random Frith-Happé’s animations in marmosets
 
 Having identified the brain regions activated during the processing of ToM or Random videos in human subjects and validated our protocol, we proceeded to use the same stimuli in marmosets. Figure 4 illustrates the brain network obtained for the ToM condition (A), Random condition (B), and the contrast between ToM and Random conditions (C) in six marmosets.
 
@@ -87,9 +99,17 @@ The ToM condition (Figure 4A) also recruited bilateral activations in areas V5, 
 
 Next, we examined the difference between ToM and Random animations (i.e. ToM condition >Random condition contrast, Figure 4C and Figure 5B). We found enhanced bilateral activations for the ToM condition across a range of regions. These encompassed occipital areas V1, V2, V3, V3A, V4, V4t, V5, V6, 19DI, 19M, temporal areas TH, TE2, TE3, FST, MST, TPt, and parietal areas LIP, MIP, VIP, AIP, PE, PG, PFG, OPt, V6A, PEC. Moreover, these activations extended to the somatosensory cortex (areas 1/2, 3 a, 3b, S2I, S2PV), the primary motor cortex (areas 4ab and 4c), lateral frontal areas 6DC, 8C, 6Va, 8Av, 8Ad (left hemisphere), and insular areas (ReI, S2I, S2PV, DI, AI). Additional activations were observed in the OPAI area, medial frontal area 32 and posterior cingulate areas (23 a, 23b, 29d, 30). Contrarily, we did not find any regions exhibiting stronger activations for the Random condition compared to the ToM condition. This further emphasizes the distinctive neural recruitment and processing associated with ToM animations within the marmoset brain.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/86327/elife-86327-fig5-v2.jpg)
+
+**Figure 5.:** Group functional maps showing significant greater activations for ToM animations compared to Random animations. (A) Group map obtained from 10 human subjects displayed on the left and right human cortical flat maps. The white line delineates the regions based on the recent multi-modal cortical parcellation atlas (Glasser et al., 2016). (B) Group map obtained from 6 marmosets displayed on the left and right marmoset cortical flat maps. The white line delineates the regions based on the Paxinos parcellation of the NIH marmoset brain atlas (Liu et al., 2018). The brain areas reported in A and B have activation threshold corresponding to z-scores >2.57 (yellow/red scale) or z-scores <–2.57 (purple/green scale) (AFNI’s 3dttest++, cluster-forming threshold of p<0.01 uncorrected and then FWE-corrected α=0.05 at cluster-level from 10,000 Monte-Carlo simulations).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86327/elife-86327-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Group subcortical functional maps showing significant greater activations for ToM condition (A), Random condition (B) and the comparison between ToM and Random conditions (C). Group maps displayed on coronal slices obtained from ten humans (left side) and 6 marmosets (right side). The brain areas reported have activation threshold corresponding to z-scores>3.29 (AFNI’s 3dttest++, threshold of p<0.001 uncorrected). CeB, cerebellum; THA-VP, ventroposterior thalamus; THA-DA, dorsoanterior thalamus; THA-VA, ventroanterior thalamus; Amyg, amygdala; Hipp, hippocampus; Pul, pulvinar; SC, superior colliculus; LGN, lateral geniculate nucleus.
+
 At the subcortical level (see Figure 5—figure supplement 1A, right panel), the ToM condition showed involvement of several areas including the bilateral hippocampus, bilateral pulvinar (lateral, medial and inferior parts), bilateral amygdala, and left caudate. On the other hand, the Random condition recruited only the pulvinar (Figure 5—figure supplement 1B, right panel). Upon comparison of the ToM and Random conditions, the ToM animations showed stronger activations in the right superior colliculus (SC), right lateral geniculate nucleus (LGN), left caudate, left amygdala, left hippocampus and certain portions of the right and left pulvinar (lateral and inferior pulvinar; Figure 5—figure supplement 1C, right panel).
 
-## Comparison of functional brain activations in humans and marmosets
+### Comparison of functional brain activations in humans and marmosets
 
 As described earlier, both humans (Figure 5A) and marmosets (Figure 5B) displayed an extended network of activations across the occipital, temporal, parietal, and frontal cortices in response to ToM animations compared to Random animations. Overall, there were substantial similarities between the two species, with both exhibiting enhanced activations for ToM animations compared to Random animations within visual areas, inferior and superior temporal areas, the inferior parietal lobe, and AIP area encircling the IPS in the superior parietal lobe. We also found parallel activations in the somatosensory cortex, although the activation was more widespread in marmosets compared to humans, where it was confined to the secondary somatosensory cortex. Additional similarities were identified in the premotor cortex and certain regions of the lateral prefrontal cortex. Overall, left and right hemisphere activations demonstrated greater congruity in marmosets compared to humans. However, this might be attributed to our human head coil, which had a lower signal-to-noise ratio (SNR) in the left hemisphere (see Figure 3—figure supplement 2). Indeed, similar bilateral activations in humans have been observed in the human HCP dataset (Barch et al., 2013; see Figure 3—figure supplement 1B).
 
@@ -127,7 +147,7 @@ Nonetheless, it is crucial to emphasize that even though marmosets respond to th
 
 ## Materials and methods
 
-## Common marmosets
+### Common marmosets
 
 All experimental procedures were in accordance with the Canadian Council of Animal Care policy and a protocol approved by the Animal Care Committee of the University of Western Ontario Council on Animal Care #2021–111.
 
@@ -135,35 +155,59 @@ Eleven adult marmosets (4 females, 32–57 months, mean age: 36.6 months) were s
 
 Six of these animals (four females - weight 315–442 g, age 30–34 months - and two males - weight 374–425 g, age 30 and 55 months) were implanted with an MRI-compatible machined PEEK head post (Gilbert et al., 2023). Two weeks after the surgery, these marmosets were acclimatized to the head-fixation system in a mock MRI environment.
 
-## Human participants
+### Human participants
 
 Eleven healthy humans (4 females, 25–42 years, mean age: 30.7 years) participated in the eye tracking experiment. Among these, five individuals, along with five additional subjects (4 females, 26–45 years), took part in the fMRI experiment. All subjects self-reported as right-handed, had normal or corrected-to-normal vision and had no history of neurological or psychiatric disorders. Importantly, all subjects confirmed they had not previously been exposed to the Frith-Happé animation videos used in our study. Subjects were informed about the experimental procedures and provided informed written consent. These studies were approved by the Ethics Committee of the University of Western Ontario.
 
-## Stimuli
+### Stimuli
 
 Eight animations featuring simple geometric shapes with distinct movement patterns were used (Figure 1). These animations, originally developed by Abell and colleagues (Abell et al., 2000), presented two animated triangles - a large red triangle and a small blue triangle - moving within a framed white background. The original social animation task included three conditions: ToM, Goal-Directed (GD), and Random. In the ToM animations, one triangle displayed behaviors indicative of mental interactions by reacting to the mental state of the other triangle. The GD animations depicted simple interactions between the two triangles, while the Random animations showed the triangles moving and bouncing independently.
 
 The ToM animations portrayed various scenarios, such as one triangle attempting to seduce (Video 1) or persuade the other mocking it behind its back (Video 2), surprising it by hiding behind a door (Video 3), or coaxing it out of an enclosure (Video 4). In the GD animations, the triangles could dance together (Video 5), fight together (Video 6), or one triangle could chase (Video 7) or lead the other (Video 8). The Random animations featured independent movements of the triangles, following patterns such as billiard (Video 9), drifting (Video 10), star (Video 11), or tennis (Video 12). Similar to the approach used in the HCP study (Barch et al., 2013), we modified the original video clips and shortened each animation to 19.5 s using custom video-editing software (iMovie, Apple Incorporated, CA).
 
-## Eye tracking task and data acquisition
+![Video 1.](https://cdn.elifesciences.org/articles/86327/elife-86327-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/86327/elife-86327-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/86327/elife-86327-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/86327/elife-86327-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/86327/elife-86327-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/86327/elife-86327-video6.mp4.jpg)
+
+![Video 7.](https://cdn.elifesciences.org/articles/86327/elife-86327-video7.mp4.jpg)
+
+![Video 8.](https://cdn.elifesciences.org/articles/86327/elife-86327-video8.mp4.jpg)
+
+![Video 9.](https://cdn.elifesciences.org/articles/86327/elife-86327-video9.mp4.jpg)
+
+![Video 10.](https://cdn.elifesciences.org/articles/86327/elife-86327-video10.mp4.jpg)
+
+![Video 11.](https://cdn.elifesciences.org/articles/86327/elife-86327-video11.mp4.jpg)
+
+![Video 12.](https://cdn.elifesciences.org/articles/86327/elife-86327-video12.mp4.jpg)
+
+### Eye tracking task and data acquisition
 
 To investigate potential behavioral differences during the viewing of Frith-Happé animations, we presented all ToM, GD and Random video clips once each in a pseudorandomized manner to both marmoset and human subjects. The presentation of stimuli was controlled using Monkeylogic software (Hwang et al., 2019). All stimuli were presented on a CRT monitor (ViewSonic Optiquest Q115, 76 Hz non-interlaced, 1600 x 1280 resolution). Eye position was digitally recorded at 1 kHz via video tracking of the left pupil (EyeLink 1000, SR Research, Ottawa, ON, Canada).
 
 At the beginning of each session, horizontal and vertical eye positions of the left eye were calibrated by presenting a 1 degree dot at the display centre and at 6 degrees in each of the cardinal directions for 300–600ms. Monkeys were rewarded at the beginning and end of each session. Crucially, no rewards were provided during the calibration or while the videos were played.
 
-## fMRI task
+### fMRI task
 
 For the fMRI experiment, it was crucial for us to ensure that the subjects remained alert and focused throughout the entire scanning session, which becomes increasingly difficult with longer runs. There, we used only the ToM and Random conditions in our functional runs, as the GD condition is situated between these two extremes, depicting physical interaction among the triangles without suggesting any mental state attribution. The limitation to ToM and random conditions is consistent with the design of previous fMRI studies in humans and macaques that employed Frith-Happé animations (Gobbini et al., 2007; Barch et al., 2013; Bliksted et al., 2019; Vandewouw et al., 2021; Weiss et al., 2021; Chen et al., 2023; Roumazeilles et al., 2021).
 
 Humans and marmosets were presented with ToM and Random video clips in a block design. Each run consisted of eight blocks of stimuli (19.5 s each) interleaved by baseline blocks (15 s each). ToM or Random animations were presented pseudorandomly, and each condition was repeated four times (Figure 1). For each run, the order of these conditions was randomized leading to 14 different stimulus sets, counterbalanced within and between subjects. In baseline blocks, a 0.36° circular black cue was displayed at the center of the screen against a gray background. We found previously that such a stimulus reduced the vestibulo-ocular reflex evoked by the strong magnetic field.
 
-## fMRI experimental setup
+### fMRI experimental setup
 
 During the scanning sessions, the marmosets sat in a sphinx position in a custom-designed plastic chair positioned within a horizontal magnet (see below). Their head was restrained using a head fixation system allowing to secure the surgically implanted head post to a clamping bar (Gilbert et al., 2023). After the head was immobilized, the two halves of the coil housing were positioned on either side of the head. Inside the scanner, monkeys faced a translucent screen placed 119 cm from their eyes where visual stimuli were projected with an LCSD-projector (Model VLP-FE40, Sony Corporation, Tokyo, Japan) via a back-reflection on a first surface mirror. Visual stimuli were presented with the Keynote software (version 12.0, Apple Incorporated, CA) and were synchronized with MRI TTL pulses triggered by a Raspberry Pi (model 3B+, Raspberry Pi Foundation, Cambridge, UK) running via a custom-written Python program. No reward was provided to the monkeys during the scanning sessions. Animals were monitored using an MRI-compatible camera (Model 12M-I, MRC Systems GmbH). Horizontal and vertical eye movements were monitored at 60 Hz using a video eye tracker (ISCAN, Boston, Massachusetts). While we were able to obtain relatively stable eye movement recordings from a few runs per animal (min 1, max 5 runs per animal), the quality of the recordings was not sufficient for a thorough analysis. The large marmoset pupil represents a challenge for video eye tracking when the eyes are not fully open. Data from functional runs with more stable eye signals (n=15) show good compliance in the marmosets. The percentage of time spent in each run looking at the screen in the two experimental conditions (ToM, Random) and during the Baseline periods (fixation point in the center of the screen) was higher than 85% (88.2%, 88.6% and 93.4% respectively for ToM, Random and Baseline conditions). There was no significant differences between the ToM and Random condition (paired t-test, t(14)=-0.374, p=0.71), ruling out the possibility that any differences in fMRI activation between the ToM and Random condition were simply due to a different exposure to the videos.
 
 Human subjects lay in a supine position and watched the stimuli presented via a rear projection system (Avotech SV-6011, Avotec Incorporated) through a surface mirror affixed to head coil. As for marmosets, visual stimuli were presented with the Keynote software (version 12.0, Apple Incorporated, CA) and were synchronized with MRI TTL pulses triggered by a Raspberry Pi (model 3B+, Raspberry Pi Foundation, Cambridge, UK) running via a custom-written python program.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Marmoset and human imaging were performed at the Center for Functional and Metabolic Mapping at the University of Western Ontario.
 
@@ -171,7 +215,7 @@ For marmoset subjects, fMRI data were acquired on a 9.4T 31 cm horizontal bore m
 
 For human subjects, fMRI data were acquired on a 7T 68 cm MRI scanner (Siemens Magnetom 7T MRI Plus) with an AC-84 Mark II gradient coil, an in-house 8-channel parallel transmit, and a 32-channel receive coil (Gilbert et al., 2021). Functional images were acquired during 3 functional runs for each participant using Multi-Band EPI BOLD sequences with the following parameters: TR = 1.5 s, TE = 20ms, flip angle = 30°, field of view = 208 × 208 mm, matrix size = 104 × 104, resolution of 2 mm3 isotropic, number of slices = 62, GRAPPA acceleration factor: 3 (anterior-posterior), multi-band acceleration factor: 2. Field map images were also computed from the magnitude image and the two phase images. An MP2RAGE structural image was also acquired for each subject during the sessions with the following parameters: TR = 6 s, TE = 2.13ms, TI1 /TI2=800 / 2700ms, field of view = 240 × 240 mm, matrix size = 320 × 320, resolution of 0.75 mm3 isotropic, number of slices = 45, GRAPPA acceleration factor (anterior posterior): 3.
 
-## MRI data preprocessing
+### MRI data preprocessing
 
 Marmoset fMRI data were preprocessed using AFNI (Cox, 1996) and FSL (Smith et al., 2004) software packages. Raw MRI images were first converted to NIfTI format using dcm2nixx AFNI’s function and then reoriented to the sphinx position using fslswapdim and fslorient FSL’s functions. Functional images were despiked using 3Ddespike AFNI’s function and time shifted using 3dTshift AFNI’s function. Then, the images obtained were registered to the base volume (i.e., corresponding to the middle volume of each time series) with 3dvolreg AFNI’s function. The output motion parameters obtained from volume registration were later used as nuisance regressors. All fMRI images were spatially smoothed with a 1.5 mm half-maximum Gaussian kernel (FWHM) with 3dmerge AFNI’s function, followed by temporal filtering (0.01–0.1 Hz) using 3dBandpass AFNI’s function. The mean functional image was calculated for each run and linearly registered to the respective anatomical image of each animal using FMRIB’s linear registration tool (FLIRT).
 
@@ -179,13 +223,13 @@ The transformation matrix obtained after the registration was then used to trans
 
 Human fMRI data were preprocessed using SPM12 (Wellcome Department of Cognitive Neurology). After converting raw images into NifTI format, functional images were realigned to correct for head movements and underwent slice timing correction. A field map correction was applied to the functional images from the magnitude and phase images with the specify toolbox implemented in SPM. Then, the anatomical and functional volumes corrected were coregistered with the MP2RAGE structural scan from each individual participant and normalized to the Montreal Neurological Institute (MNI) standard brain space. Anatomical images were segmented into white matter, gray matter, and CSF partitions and also normalized to the MNI space. The functional images were then spatially smoothed with a 6 mm FWHM isotropic Gaussian kernel. A high-pass filter (128 s) was also applied to the time series.
 
-## Statistical analysis
+### Statistical analysis
 
-## Behavioral eye tracking data
+#### Behavioral eye tracking data
 
 To evaluate gaze patterns during observation of ToM and Random videos, we used mixed analyses of variance (ANOVA), with factors of species (Human vs Marmoset) and condition (ToM vs Random videos) on the overall fixation duration and on the proportion of time when the radial distance between the subject’s gaze position and each triangle was less than 4 degrees. Partial eta squared (ηp2) was computed as a measure of effect size and post-hoc comparisons were Bonferroni corrected.
 
-## fMRI data
+#### fMRI data
 
 For each run, a general linear regression model was defined: the task timing was convolved to the hemodynamic response (AFNI’s ‘BLOCK’ convolution for marmosets’ data and SPM12 hemodynamic response function for humans’ data) and a regressor was generated for each condition (AFNI’s 3dDeconvolve function for marmosets and SPM12 function for humans). The two conditions were entered into the same model, corresponding to the 19.5 s presentation of the stimuli, along with polynomial detrending regressors and the marmosets’ motions parameters or human’s head movement parameters estimated during realignment.
 

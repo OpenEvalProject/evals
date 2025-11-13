@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
+1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
 ## Abstract
 
-The formation of heterochromatin at HML , HMR , and telomeres in Saccharomyces cerevisiae involves two main steps: the recruitment of Sir proteins to silencers and their spread throughout the silenced domain. We developed a method to study these two processes at single basepair resolution. Using a fusion protein between the heterochromatin protein Sir3 and the nonsite-specific bacterial adenine methyltransferase M.EcoGII, we mapped sites of Sir3–chromatin interactions genome-wide using long-read Nanopore sequencing to detect adenines methylated by the fusion protein and by ChIP-seq to map the distribution of Sir3–M.EcoGII. A silencing-deficient mutant of Sir3 lacking its Bromo-Adjacent Homology (BAH) domain, sir3-bah∆ , was still recruited to HML , HMR , and telomeres. However, in the absence of the BAH domain, it was unable to spread away from those recruitment sites. Overexpression of Sir3 did not lead to further spreading at HML , HMR , and most telomeres. A few exceptional telomeres, like 6R, exhibited a small amount of Sir3 spreading, suggesting that boundaries at telomeres responded variably to Sir3-M.EcoGII overexpression. Finally, by using a temperature-sensitive allele of SIR3 fused to M.ECOGII , we tracked the positions first methylated after induction and found that repression of genes at HML and HMR began before Sir3 occupied the entire locus.
+The formation of heterochromatin at HML, HMR, and telomeres in Saccharomyces cerevisiae involves two main steps: the recruitment of Sir proteins to silencers and their spread throughout the silenced domain. We developed a method to study these two processes at single basepair resolution. Using a fusion protein between the heterochromatin protein Sir3 and the nonsite-specific bacterial adenine methyltransferase M.EcoGII, we mapped sites of Sir3–chromatin interactions genome-wide using long-read Nanopore sequencing to detect adenines methylated by the fusion protein and by ChIP-seq to map the distribution of Sir3–M.EcoGII. A silencing-deficient mutant of Sir3 lacking its Bromo-Adjacent Homology (BAH) domain, sir3-bah∆, was still recruited to HML, HMR, and telomeres. However, in the absence of the BAH domain, it was unable to spread away from those recruitment sites. Overexpression of Sir3 did not lead to further spreading at HML, HMR, and most telomeres. A few exceptional telomeres, like 6R, exhibited a small amount of Sir3 spreading, suggesting that boundaries at telomeres responded variably to Sir3-M.EcoGII overexpression. Finally, by using a temperature-sensitive allele of SIR3 fused to M.ECOGII, we tracked the positions first methylated after induction and found that repression of genes at HML and HMR began before Sir3 occupied the entire locus.
 
 ## Introduction
 
@@ -29,9 +29,25 @@ Characterization of SIR complex nucleation and spread is limited by techniques l
 
 ## Results
 
-## The Sir3–M.EcoGII fusion protein strongly and specifically methylated HML and HMR
+### The Sir3–M.EcoGII fusion protein strongly and specifically methylated HML and HMR
 
 To achieve a higher-resolution method for assessing SIR complex binding, we made a fusion protein between Sir3 and M.EcoGII (Figure 1A), a nonsite-specific bacterial N6-methyladenosine methyltransferase (Murray et al., 2018; Woodcock et al., 2020). In principle, wherever Sir3 binds chromatin, even transiently, M.EcoGII has the opportunity to methylate nearby accessible adenines to make m6A. S. cerevisiae has no endogenous DNA methylation and no demethylases, allowing us to attribute m6A only to the activity of the fusion protein, reflecting where it resides as well as where it has been. M.EcoGII has no specific recognition sequence, which should provide more resolution than methyltransferases like E. coli Dam, which has a four basepair recognition site. The positions of Sir3–M.EcoGII can be determined conventionally by immunoprecipitation with an antibody against m6A followed by sequencing the precipitated DNA using Illumina sequencing. The more powerful implementation would come from distinguishing between individual m6A bases and unmodified A bases using long-read Nanopore sequencing (Xu and Seki, 2020).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sir3–M.EcoGII is a fusion protein that nonspecifically methylates adenines in regions that Sir3 binds. (B) RT-qPCR of HMLα2 and HMRa1 mRNA, normalized to ACT1 mRNA, in strains expressing no fusion proteins (wild type, JRY11699, JRY9316), sir3∆::M.ECOGII (JRY13029, JRY13030), SIR2-M.ECOGII (JRY13625, JRY13626), SIR3-M.ECOGII (JRY12840, JRY13027), and SIR4-M.ECOGII (JRY13021, JRY13022). Data are the average of three biological replicates, and bars mark one standard deviation. (C) ChIP-seq of Sir3-M.EcoGII-3xV5 (top row, JRY12839) and DNA m6A immunoprecipitation and sequencing (DIP-seq) of no EcoGII (row two, JRY11699), sir3∆::M.ECOGII (row three, JRY12838), and SIR3-M.ECOGII (row four, JRY12840). Shown are 10 kb regions centered at HML (left) and HMR (right). Input results are plotted but not visible due to the strong ChIP-seq and DIP-seq signals. (D) Aggregate results from long-read Nanopore sequencing of sir3∆::M.ECOGII (black line, JRY12838), SIR2-M.ECOGII (green line, JRY13625), SIR3-M.ECOGII (purple line, JRY13027), and SIR4-M.ECOGII (pink line, JRY13021). The y-axis represents the percentage of reads in each position called as methylated by the modified base-calling software Megalodon (see Materials and methods). Shown are 25 kb windows at a control region on chromosome III to show background methylation (top row), at HML (middle row), and at HMR (bottom row). (E) Single-read plots from long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027). Each row of the plots is a single read the spans the entire query region, ordered by lowest average methylation on the top to highest average methylation on the bottom. Methylated adenines are colored purple, and unmethylated adenines are colored gray. Shown are 5 kb windows at a control region on chromosome III to show background methylation (top row), at HML (middle row), and at HMR (bottom row). M.EcoGII nor a strain expressing unfused M.EcoGII from the SIR3 promoter showed appreciable DIP-seq signal (C, Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Biological replicates of DIP-seq of no EcoGII (top row, JRY09316), sir3∆::M.ECOGII (middle row, JRY12838), and SIR3-M.ECOGII (bottom row, JRY13027).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Aggregate results from long-read Nanopore sequencing of sir3∆::M.ECOGII (black line, JRY12838, same as Figure 1D), SIR3-M.ECOGII (blue line, JRY13027, same as Figure 1D), and a biological replicate of SIR3-M.ECOGII (purple line, JRY12840). Plots are as described in Figure 1D. (B) Single-read plots from a biological replicate of long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027). Plots are as described in Figure 1E.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Aggregate methylation signal by Nanopore sequencing (purple line) of SIR3-M.ECOGII (JRY13027) plotted against nucleosome occupancy (gray line, Chereji et al., 2018) over a 3 kb window at HML (top) and HMR (bottom). The y-axis represents the signal of both % of reads methylated and nucleosome occupancy scaled to fit in the same plot. Data were smoothed using a loess function. (B) The average % of methylated reads from SIR3-M.ECOGII (JRY13027) in linker regions at HML and HMR (nucleosome occupancy below a threshold of 0.4 from Chereji et al., 2018) compared to nucleosomal regions at HML and HMR (nucleosome occupancy above a threshold of 0.4 from Chereji et al., 2018). The center line of each box plot represents the median. The boxes represent the 25th and 75th percentiles. Whiskers represent the range of values within 1.5× the interquartile range. p value was calculated using a quasibinomial general linear model (glm, see Source code 5).
 
 To test this concept, we first assessed the silencing ability of Sir3–M.EcoGII by measuring mRNA expression of HMLα2 and HMRa1. Strains expressing Sir3–M.EcoGII could silence HML and HMR as well as wild-type strains compared to sir3∆ strains that displayed a full loss of silencing (Figure 1B). Thus, the fusion protein retained full function of Sir3.
 
@@ -39,27 +55,63 @@ To compare the binding profile of Sir3–M.EcoGII to the distribution of methyla
 
 Methylation by Sir3–M.EcoGII measured by Nanopore sequencing agreed well with DIP-seq, showing strong methylation over HML and HMR with little background methylation outside of these regions (Figure 1D, Figure 1—figure supplement 2A). Fusions of Sir2 and Sir4 with M.EcoGII were also fully silencing competent (Figure 1B) and produced methylation signals that matched Sir3–M.EcoGII at HML and HMR (Figure 1D), suggesting that all three members of the SIR complex were equally distributed, as expected. In addition to the aggregate methylation signal (% of reads methylated at each position), we analyzed methylation of single adenines on single reads across HML and HMR (Figure 1E, Figure 1—figure supplement 2B). Sir3–M.EcoGII methylated most strongly near the E and I silencers and at the HMLα1/α2 promoter, with lower, but significant, methylation between these sites (Figure 1E, Figure 1—figure supplement 2B). Analysis of single reads revealed a periodicity of methylation across HML and HMR (Figure 1E, Figure 1—figure supplement 2B). These small regions of higher methylation corresponded to linker regions between nucleosomes (Figure 1—figure supplement 3). Sir3–M.EcoGII did methylate within nucleosome-occupied regions at HML and HMR but at a lower frequency (Figure 1—figure supplement 3), consistent with in vitro studies that use methylation by M.EcoGII or another nonspecific adenine methyltransferase, Hia5, as a measurement of chromatin accessibility (Abdulhay et al., 2020; Brady et al., 2021; Shipony et al., 2020; Stergachis et al., 2020).
 
-## Nucleosome binding was required for spreading, but not recruitment, of Sir3
+### Nucleosome binding was required for spreading, but not recruitment, of Sir3
 
 The recruitment of the SIR complex to silencers is sequence specific. Rap1, Abf1, and ORC bind at these recruitment sites and recruit the Sir proteins directly through protein–protein interactions. In contrast, SIR complex binding away from recruitment sites is sequence independent and instead relies on interactions with nucleosomes and among the Sir proteins themselves.
 
 We therefore hypothesized that the interaction between Sir3 and nucleosomes would not be required for nucleation at recruitment sites but would be required for binding outside of those recruitment sites. Sir3 has multiple recognized domains (Figure 2A): The Bromo-Adjacent Homology (BAH) domain, which interacts with nucleosomes (Armache et al., 2011; Buchberger et al., 2008; Norris et al., 2008; Onishi et al., 2007; Rudner et al., 2005; Sampath et al., 2009), the AAA+ domain, which interacts with Sir4 (Ehrentraut et al., 2011; King et al., 2006; Samel et al., 2017), and the winged helix (wH) domain, which allows for homodimerization (King et al., 2006; Liaw and Lustig, 2006; Oppikofer et al., 2013). We deleted the BAH domain of Sir3–M.EcoGII (bah∆), which largely abrogates Sir3–nucleosome interactions in vitro (Buchberger et al., 2008; Onishi et al., 2007; Sampath et al., 2009). Previous studies established that deletion of the BAH domain causes a phenotypic loss of silencing, likely due to a loss of interaction with nucleosomes (Buchberger et al., 2008; Gotta et al., 1998; Onishi et al., 2007), but did not characterize its binding at regions of heterochromatin. Importantly for what follows, deletion of the BAH domain did not destabilize Sir3 (Figure 2B). We also confirmed that sir3-bah∆-M.ECOGII strains displayed a loss of silencing, but found that the loss was more severe at HML than at HMR (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of Sir3 protein domains. (B) Protein immunoblotting in strains expressing Sir3 (no tag, JRY11699), Sir3-3xV5 (JRY12601), and sir3-bah∆–3xV5 (JRY13621). Top row are 3xV5-tagged Sir3 proteins, and bottom row is the loading control Hxk2. The unedited blot is in Figure 2—source data 1. (C) RT-qPCR of HMLα2 and HMRa1 mRNA, normalized to ACT1 mRNA, in strains expressing SIR3-M.ECOGII (JRY12840, JRY13027), sir3∆::M.ECOGII (JRY13029, JRY13030), and sir3-bah∆-M.ECOGII (JRY13438, JRY13439). Data are the average of three biological replicates, and bars mark one standard deviation. (D) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of sir3∆::M.ECOGII (JRY13029, JRY13030), SIR3-M.ECOGII (JRY12840, JRY13027), and sir3-bah∆-M.ECOGII (JRY13438). Plots are as described in Figure 1D. (E) Single-read plots from long-read Nanopore sequencing of sir3-bah∆-M.ECOGII (JRY13438) at HML (top) and HMR (bottom). Plots are as described in Figure 1E. (F) Aggregate methylation results at four representative telomeres (1 L, 2 L, 4 R, and 11 R) from long-read Nanopore sequencing of the same strains as D. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. (G) Single-read plots from long-read Nanopore sequencing of SIR3-M.ECOGII (JRY13027) and sir3-bah∆-M.ECOGII (JRY13438) at two representative telomeres (1 L and 2 L). Shown are 10 kb windows of each telomere.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Input results are plotted but not visible due to the strong DIP-seq signals. (A) Shown are 10 kb regions centered at HML (left) and HMR (right). (B) Shown are 10 kb regions at two representative telomeres (1 L and 2 L).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Aggregate methylation results from long-read Nanopore sequencing of the same strains as Figure 2D. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. Highlighted in yellow are windows shorter than 15 kb due to discrepancies between the S288C and W303 genomes (see Ellahi et al., 2015).
+
 Despite the loss of silencing at HML and HMR in the sir3-bah∆-M.ECOGII strain, there was still detectable methylation across the two loci (Figure 2D, E, Figure 2—figure supplement 1A). At the aggregate level, sir3-bah∆-M.EcoGII methylated silencers at HML and HMR at the same level as Sir3–M.EcoGII but showed decreased methylation between them (Figure 2D). Analysis of single reads spanning HML and HMR in the bah∆ mutant showed similarly strong levels of methylation at silencers, and revealed strong methylation both at the promoters of HML and HMR and the recognition site for the HO endonuclease (Figure 2E). In contrast, little methylation was seen over gene bodies between these sites (Figure 2E).
 
 The ability of Nanopore to sequence long reads also allowed mapping and analysis of Sir3 occupancy on the repetitive and highly homologous telomeres, an issue with short-read Illumina sequencing. In addition to methylating HML and HMR (Figure 1), Sir3–M.EcoGII strongly methylated telomeres at TG repeats and X elements (Figure 2F, Figure 2—figure supplement 1B, Figure 2—figure supplement 2), and the periodicity of methylation was apparent on single reads as well (Figure 2G), likely corresponding to more-accessible linker regions. The loss of binding outside of recruitment sites of sir3-bah∆-M.EcoGII was more striking at telomeres than HML and HMR, where methylation by the bah∆ mutant matched wild-type levels at TG and X repeats but dropped off steeply centromere-proximal to the X elements (Figure 2F, G, Figure 2—figure supplement 1B, Figure 2—figure supplement 2). The results at telomeres, supported by the data at HML and HMR, suggested that the nucleosome-binding activity of Sir3 was required for Sir3 to spread away from recruitment sites, but not for its initial recruitment.
 
-## SIR3 expression level did not limit its spread from recruitment sites
+### SIR3 expression level did not limit its spread from recruitment sites
 
 In addition to understanding what enables Sir3 spreading, we were also interested in what limits its spread. One common feature of heterochromatin proteins is that their activity is dose dependent: lowered expression causes loss of heterochromatin whereas elevated expression can cause silencing of genes near heterochromatin (Henikoff, 1996; Locke et al., 1988). Indeed, it was previously reported that overexpression of Sir3 results in its spread beyond wild-type boundaries, accompanied by repression of genes in those extended regions (Hecht et al., 1996; Hocher et al., 2018; Ng et al., 2003; Renauld et al., 1993; Strahl-Bolsinger et al., 1997). To provide an independent test of those conclusions, we tested whether the expression level of Sir3 limited how far it could spread beyond recruitment sites at HML, HMR, and telomeres. mRNA levels of SIR3-M.ECOGII on a multicopy 2μ plasmid was tenfold higher than from the chromosomal SIR3-M.ECOGII locus in a strain carrying an empty 2μ plasmid (Figure 3A). We confirmed the overexpression of SIR3-M.ECOGII in these strains by protein immunoblotting (Figure 3B). Overexpression of SIR3-M.ECOGII had no effect on silencing at HML and HMR (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-v2.jpg)
+
+**Figure 3.:** (A) RT-qPCR of SIR3 and M.ECOGII mRNA normalized to ACT1 mRNA in SIR3-M.ECOGII strains carrying an empty multicopy 2μ vector (JRY13670, JRY13671) and strains carrying a multicopy 2μ SIR3-M.ECOGII plasmid (JRY13672, JRY13673). Data are the average of four biological replicates, and bars mark one standard deviation. (B) Protein immunoblotting in the same strains as A (JRY13670-JRY13671) as well as SIR3-M.ECOGII (no plasmid, JRY13027) and sir3∆::M.ECOGII (JRY13029). Top row is Sir3, and bottom row is the loading control Pgk1. The unedited blot is in Figure 3—source data 1. (C) RT-qPCR of HMLα2 and HMRa1 mRNA normalized to ACT1 mRNA in the same strains as A as well as sir3∆::M.ECOGII (JRY13029, JRY13030). Data are the average of four biological replicates, and bars mark one standard deviation. (D) Aggregate methylation results at a control region on chromosome III to show background levels of methylation (top row), at HML (middle row) and HMR (bottom row) from long-read Nanopore sequencing of the same strains in A. The two colors for each genotype correspond to two biological replicates. Plots are as described in D. (E) RT-qPCR of CHA1 and OCA4 mRNA normalized to ACT1 mRNA in the same strains as C. (F) Aggregate methylation results at three representative telomeres (6 R, 15 R, and 10 R) from long-read Nanopore sequencing of the same strains as A. The two colors for each genotype correspond to two biological replicates. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** ChIP-seq of two biological replicates of Sir3–M.EcoGII strains carrying an empty 2μ plasmid (top two rows of each panel, JRY13670 and JRY13671) and two biological replicates of Sir3–M.EcoGII strains carrying a SIR3-M.ECOGII 2μ plasmid (bottom two rows of each panel, JRY13672 and JRY13673). Input signal is black, and immunoprecipitated signal is green. Note that each row is scaled to the maximum signal in the window shown to compare the relative levels of Sir3–M.EcoGII at recruitment and spreading sites across samples. (A) ChIP-seq signal at HML (left) and HMR (right). (B) ChIP-seq signal at telomere 6 R (left), telomere 15 R (center), and telomere 10 R (right).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Aggregate methylation results from long-read Nanopore sequencing of the same strains as Figure 3B. Shown are 15 kb windows of each telomere. Plots are as described in Figure 1D. Highlighted in yellow are windows shorter than 15 kb due to discrepancies between the S288C and W303 genomes (see Ellahi et al., 2015).
 
 Overexpression of SIR3-M.ECOGII had little effect on the boundaries of methylation at HML and HMR. Strains overexpressing SIR3-M.ECOGII displayed increased methylation over both loci and between HML and telomere 3 L, but no new sites of methylation appeared outside the bounds of strains expressing only one copy of SIR3-M.ECOGII (Figure 3D). The changes in methylation upon overexpression of Sir3–M.EcoGII matched changes in occupancy of the fusion protein by ChIP-seq, suggesting that methylation reflects binding of the protein well (Figure 3—figure supplement 1). There was some increase in methylation over the promoters of two genes closest to HML and HMR (CHA1 and OCA4, respectively), but it did not result in any change in the level of their expression (Figure 3E).
 
 Surprisingly, the results at telomeres were qualitatively similar but revealed three categories of effects. Some telomeres showed a large increase in the amount of methylation upon overexpression of SIR3-M.ECOGII with a small extension of binding farther into the chromosome (Figure 3F, top row, Figure 3—figure supplement 2). Some telomeres showed a modest increase in the amount methylation upon overexpression of SIR3-M.ECOGII with little, if any, extension of range (Figure 3F, middle row, Figure 3—figure supplement 2). Finally, some telomeres showed no appreciable change in methylation (Figure 3F, bottom row, Figure 3—figure supplement 2). As at HML and HMR, the changes in methylation seen with Nanopore sequencing matched with changes in occupancy measured by ChIP-seq (Figure 3—figure supplement 1). Only three of the 32 telomeres, including the paradigmatic telomere 6 R from earlier studies (Hecht et al., 1996; Renauld et al., 1993; Strahl-Bolsinger et al., 1997), showed convincing spread of methylation to new sites compared to telomeres in strains expressing one copy of SIR3-M.ECOGII (Figure 3F, Figure 3—figure supplement 2). Therefore, the expression level of SIR3 was not a universal limiting factor in heterochromatin spread. These results imply the existence of other chromatin features that create boundaries for Sir3 spreading.
 
-## Repression of HML and HMR preceded heterochromatin maturation
+### Repression of HML and HMR preceded heterochromatin maturation
 
 To evaluate the dynamics of Sir3 recruitment and spreading during the establishment of heterochromatin over time, we used a temperature-sensitive allele of SIR3, sir3-8, fused to M.ECOGII and took samples at various time points for Nanopore sequencing after switching from the restrictive (37°C) to the permissive (25°C) temperature (Figure 4A). In agreement with previous studies (Stone et al., 2000), growth at 37°C caused lower protein levels of sir3-8 (Figure 4B). Over the course of 150 min, the protein levels of sir3-8 slowly increased to 63% of the level in constitutive 25°C growth conditions (Figure 4B). In cells grown at 37°C, sir3-8-M.ECOGII did not methylate HML and HMR, but when grown constitutively at 25°C, there was strong methylation over both loci (Figure 4C, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of temperature-shift time course with sir3-8-M.ECOGII. (B) Protein immunoblotting in a strain expressing sir3-8-3xV5 (JRY13467) constitutively at 25°C (first lane), constitutively at 37°C (second lane), and at 30, 60, 90, 120, and 150 min after a shift to 25°C. Top row is 3xV5-tagged sir3-8 protein, the middle row is the same as the top row but at a higher exposure, and the bottom row is the loading control Hxk2. The unedited blot is in . (C) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of strains expressing sir3-8-M.ECOGII (JRY13114) grown constitutively at 25 or 37°C. Plots are as described in Figure 1D. (D) Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of a strain expressing sir3-8-M.ECOGII (JRY13134) grown constitutively at 25°C (dotted gray line) and collected at 0, 15, 45, and 90 min after a temperature switch from 37 to 25°C. (E) RT-qPCR of HMLα2 (left) and HMRa1 (right) mRNA in strains expressing SIR3-M.ECOGII (black, JRY13027, JRY12840), sir3∆::M.ECOGII (green, JRY13029, JRY13030), or sir3-8-M.ECOGII (purple, JRY13114, JRY13134) collected at 0, 30, 60, 90, 120, and 150 min after a temperature switch from 37 to 25°C. Points are the average of three biological replicates and bars mark one standard deviation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Shown are 10 kb regions centered at HML (left) and HMR (right). Cells were grown constitutively at either 25 or 37°C. Input results are plotted but not visible due to the strong DIP-seq signals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75653/elife-75653-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Aggregate methylation results at HML (top) and HMR (bottom) from long-read Nanopore sequencing of a strain expressing sir3-8-M.ECOGII (JRY13114) grown constitutively at 25°C (dotted gray line) and collected at 0, 15, 45, and 90 min after a temperature switch from 37 to 25°C.
 
 Over a 90-min time course, methylation increased only over the silencers and promoters of HML and HMR (Figure 4D, Figure 4—figure supplement 2, solid lines). Methylation at the promoter of HML during the time course and in the sir3-bah∆ mutant was expected, as it contains a Rap1-binding site, and Rap1 interacts directly with Sir3 and Sir4. However, methylation at the promoter of HMR at these early time points and in the sir3-bah∆ mutant was a surprise, as there is not a known SIR complex-interacting protein that binds at the promoter. In the absence of Sir3, Sir4 is still bound at silencers (Goodnight and Rine, 2020; Hoppe et al., 2002; Rusché et al., 2002), so the faster recruitment at these sites, and perhaps the promoters as well, might be due to the interaction of Sir3 with Sir4 and Rap1.
 
@@ -81,65 +133,362 @@ We focused our efforts on the heterochromatin protein Sir3 in S. cerevisiae, but
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Various</td>
+      <td>This paper</td>
+      <td>NCBITaxon:4932</td>
+      <td>W303 Background; see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # R960-25</td>
+      <td>(5 µl for ChIP, 1:5000 for Western)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hexokinase (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat # 100-4159</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-m6A (rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat # 202-003</td>
+      <td>300 ng per 1 μg IP DNA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pgk1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat # 459,250</td>
+      <td>(1:40,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sir3 (rabbit polyclonal)</td>
+      <td>N. Dhillon &amp; R. Kamakaka</td>
+      <td></td>
+      <td>(10 μl for ChIP, 1:1000 for Western)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIR2-M.ECOGII</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fusion of SIR2 and bacterial adenine methyltransferase M.ECOGII</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIR3-M.ECOGII</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fusion of SIR3 and bacterial adenine methyltransferase M.ECOGII</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIR4-M.ECOGII</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fusion of SIR4 and bacterial adenine methyltransferase M.ECOGII</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YEp24</td>
+      <td>doi:https://doi.org/10.1016/0378-1119(79)90004-0</td>
+      <td></td>
+      <td>Empty 2 μm overexpression plasmid; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMB34</td>
+      <td>This paper</td>
+      <td></td>
+      <td>M.ECOGII inserted into pFA6a-natMX6; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMB54</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SIR3-M.ECOGII inserted into YEp24; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-natMX6</td>
+      <td>doi:10.1002/yea.1291</td>
+      <td></td>
+      <td>natMX6 marker integration cassette; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Various oligonucleotides</td>
+      <td>This paper</td>
+      <td>qPCR and cloning primers</td>
+      <td>See Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat # E7645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Multiplex Oligos for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat # E7335/E7500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS</td>
+      <td>Invitrogen</td>
+      <td>Cat # Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiaquick PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat # 28,104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Accel-NGS 1S Plus DNA Library Kit</td>
+      <td>Swift Biosciences</td>
+      <td>Cat # 10,024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Swift Single Indexing Primers Set A</td>
+      <td>Swift Biosciences</td>
+      <td>Cat # X6024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>YeaStar Genomic DNA Kit</td>
+      <td>Genesee Scientific</td>
+      <td>Cat # 11-323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Covaris g-TUBE</td>
+      <td>Covaris</td>
+      <td>Cat # 520,079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB Oxford Nanopore Companion</td>
+      <td>New England Biolabs</td>
+      <td>Cat # E7180S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Quick Ligation Reaction Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat # B6058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEB Blunt/TA Ligase Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat # M0367</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Oxford Ligation Sequencing Kit</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Cat # SQK-LSK109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Oxford Native Barcoding Expansion 1–12</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Cat # EXP-NBD104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen RNeasy kit</td>
+      <td>Qiagen</td>
+      <td>Cat # 74,104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>Cat # 18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DyNAmo HS SYBR Green kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # F410L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase-free DNase set</td>
+      <td>Qiagen</td>
+      <td>Cat # 79,254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>doi:10.1093/bioinformatics/btp352</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>doi:10.1038/nmeth.1923</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV</td>
+      <td>doi:10.1093/bib/bbs017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Guppy Basecaller</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Megalodon</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td></td>
+      <td>https://github.com/nanoporetech/megalodon</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>All-context rerio model</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>res_dna_r941_min_modbases-all-context_v001.cfg</td>
+      <td>For Megalodon modified base-calling; https://github.com/nanoporetech/rerio</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Protein A Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 10,002D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K</td>
+      <td>New England Biolabs</td>
+      <td>Cat # P8107S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNase A</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # EN0531</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 All strains in this study were derived from W303 (Supplementary file 1). For biological replicates, independent cultures were started from the same strain or isogenic strains as indicated by strain numbers in figure legends. M.ECOGII integrations were created by one-step integration of a PCR-amplified M.ECOGII-natMX cassette from pJR3525 using the primers listed in Supplementary file 3. Deletion of the BAH domain of SIR3 was done using CRISPR-Cas9 gene editing using the guide RNA and repair template listed in Supplementary file 3. The guide RNA target and nontarget strands were integrated into a single guide RNA dropout-Cas9 expression plasmid (pJR3428, Brothers and Rine, 2019) by Golden Gate cloning, using the restriction enzyme BsmBI as described in Lee et al., 2015. The repair template was made by annealing oligos described in Supplementary file 3 and extending the 3′ ends using Phusion Polymerase (New England Biolabs, Beverly, MA). SIR3 overexpression strain and its control strain were created by transformation and maintenance of 2 µm plasmids pJR3526 and YEp24, respectively.
 
-## Plasmids
+### Plasmids
 
 Plasmids used in this study are listed in Supplementary file 2. The M.ECOGII-NatMX6 tagging plasmid (pJR3525) was made using standard Gibson cloning into pFA6a-natMX6 (Hentges et al., 2005). The codon-optimized M.ECOGII ORF with homology to the vector backbone was on a gene block (Supplementary file 3) from Integrated DNA Technologies (IDT, Coralville, IA) and was inserted into pFA6a-natMX6 linearized by PCR. The SIR3p-SIR3-M.ECOGII overexpression plasmid (pJR3526) was made using standard Gibson cloning into YEp24, a 2μ yeast expression plasmid carrying a URA3 selectable marker (Botstein et al., 1979). The sequences for each plasmid are available in Supplementary Materials as fasta and.dna files.
 
-## ChIP-seq
+### ChIP-seq
 
-## Sample collection
+#### Sample collection
 
 Strains were grown to mid-log phase in YPD at 30°C. Approximately 109 cells were collected, washed, and fixed for 15 min at 30°C in a final concentration of 1% formaldehyde. Fixation was quenched with a final concentration of 300 mM glycine for 10 min at 30°C. Cells were washed 1× with PBS and 2× with FA lysis buffer (50 mM HEPES, pH7.5, 150 mM NaCl, 1 mM EDTA, 1% [vol/vol] Triton X-100, 0.1% [wt/vol] sodium deoxycholate, 0.1% sodium dodecyl sulfate [SDS]) before flash freezing pellets in a 2-ml screw-cap tube. Pellets were resuspended in 1 ml FA lysis buffer and 500 μl of 0.5 mm zirconium ceramic beads (BioSpec Products, Bartlesville, OK, Cat # 11079105z) were added. Resuspended cells were bead beat with in a FastPrep-24 (MP Biomedicals, Burlingame, CA) at 5.5 amplitude, four cycles of 40 s ON/2 min on ice. Each tube was punctured at the bottom with a hot 20-G needle and placed into a new 1.5 ml tube, and sample was spun out of the tube into the new tube by spinning at 150 × g for 1 min. The sample was moved into a 15-ml Bioruptor sonication conical tube with 100 μl of Bioruptor sonication beads (Diagenode, Denville, NJ, Cat # C01020031) and sonicated using the Bioruptor Pico (Diagenode) for 10 cycles of 30 s ON/30 s OFF.
 
-## Immunoprecipitation
+#### Immunoprecipitation
 
 The sonicated extract was moved into a new 1.5 ml tube and spun at 16,000 × g for 15 min at 4°C. The supernatant was moved into a new 1.5 ml tube and adjusted to 1 ml volume with FA lysis buffer. 50 μl of sample was taken aside as input, and then 25 μl of 20 mg/ml BSA and 5 μl of mouse anti-V5 antibody (Invitrogen, Waltham, MA, Cat # R960-25) or 10 μl of polyclonal rabbit anti-Sir3 antibody (from N. Dhillon & R. Kamakaka) was added to the rest of the sample and rotated overnight at 4°C. 50 μl of Protein A magnetic Dynabeads (Thermo Fisher, Waltham, MA, Cat # 10,002D) were added to the sample and rotated at 4°C for 1 hr. Magnetic beads were immobilized using a magnetic rack and washed by resuspension in 1 ml of various buffers in the following order: FA lysis buffer + 0.05% Tween-20, FA lysis buffer + 0.05% Tween-20 + 0.25 mM NaCl, ChIP wash buffer (10 mM Tris, pH 8.0, 0.25 M LiCl, 1 mM EDTA, 0.5% Nonidet P-40, 0.5% sodium deoxycholate, 0.05% Tween-20), and TE (10 mM Tris, pH 8.0, 1 mM EDTA) + 0.05% Tween-20. The washed beads were resuspended in 130 μl of ChIP elution buffer (10 mM Tris, pH 7.5, 1 mM EDTA, 1% SDS) and incubated at 65°C shaking at 900 rpm overnight. The next day, 2.5 μl of 10 mg/ml Proteinase K (New England Biolabs, Ipswich, MA, Cat # P8107S) and 2.5 μl of 10 mg/ml RNase A (Thermo Fisher, Cat # EN0531) were added to the elution and incubated at 42°C for 2 hr. Beads were immobilized on a magnetic rack and the supernatant containing the desired DNA to be sequenced was taken and purified using 1× (vol/vol) SPRI Select magnetic beads (Beckman Coulter, Brea, CA, Cat # B23317) according to the manufacturer’s instructions.
 
-## Library preparation and sequencing
+#### Library preparation and sequencing
 
 Samples were prepared for sequencing using NEBNext Ultra II DNA Library Prep Kit for Illumina (New England Biolabs, Cat # E7645) according to the manufacturer’s instructions. Samples were multiplexed using NEBNext Multiplex Oligos for Illumina (New England Biolabs, Cat # E7335/E7500). Library-prepped samples were sequenced on a MiniSeq System (Illumina, San Diego, CA).
 
-## Analysis
+#### Analysis
 
 Sequencing reads were aligned to the S288C sacCer3 reference genome (release R64-2-1_20150113, http://yeastgenome.org/), modified to include mat∆ using Bowtie2 with the options ‘--local --soft-clipped-unmapped-tlen --no-unal --no-mixed --no-discordant’ (Langmead and Salzberg, 2012). Reads were normalized to the genome-wide median, excluding rDNA, chromosome III, and subtelomeric regions (the first and last 10 kb of each chromosome). Analysis was performed using custom Python scripts modified from Goodnight and Rine, 2020 (Source code 1, Source code 2) and displayed using IGV (Thorvaldsdóttir et al., 2013).
 
-## DIP-seq
+### DIP-seq
 
-## DNA extraction
+#### DNA extraction
 
 Cells were grown to mid-log phase in YPD, Complete Supplement Mixture (CSM), or CSM without Uracil (Sunrise Science Products, Knoxville, TN) at 30°C. Approximately 109 cells were pelleted by centrifugation at 3200 × g for 2 min, washed with 1 ml of water, moved to a 2-ml screw-cap tube, and flash frozen. Cells were resuspended in 400 μl of Triton SDS Lysis Buffer (10 mM Tris, pH 8.0, 100 mM NaCl, 1 mM EDTA, 2% Triton X-100, 1% SDS), and 400 μl of phenol:chloroform:isoamyl alcohol 25:24:1 and 300 μl of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) were added to the resuspension. Cells were lysed by bead beating with in a FastPrep-24 (MP Biomedicals) at 5.5 amplitude, 4 cycles of 40 s ON/2 min on ice. The aqueous and organic phases were separated by centrifugation at 21,000 × g for 5 min, and the aqueous phase was moved to a new 1.5 ml tube. 400 μl of chloroform was added, vortexed at top speed for ~10 s, and spun down at 21,000 × g for 5 min to separate the aqueous and organic phases. The aqueous phase was moved to a new 1.5 ml tube, and 1 ml of 100% ethanol was added to precipitate nucleic acids. The sample was incubated at 4°C for 10–15 min and then spun down at 21,000 × g for 2 min to pellet the precipitated nucleic acids. Supernatant was discarded, the pellet was air-dried, and then the pellet was resuspended in 400 μl of TE (10 mM Tris–HCl, pH 8.0, 1 mM EDTA) + 4 μl of 10 mg/ml RNase A (Thermo Fisher, Cat # EN0531) and incubated at 37°C for 1 hr. 1 ml of 100% ethanol + 10 μl of 4 M ammonium acetate were added to the RNase solution and incubated at 4°C for 10–15 min to precipitate DNA. The precipitate was pelleted by centrifugation at 21,000 × g for 2 min, washed 1× with 70% ethanol, air-dried, and resuspended in 150–300 μl of water.
 
-## Sonication
+#### Sonication
 
 DNA concentration was measured using Qubit dsDNA HS reagents (Invitrogen, Cat #Q32854), and 6 μg of DNA was diluted to 20 ng/µl in 300 μl of water in 1.5 ml Bioruptor Pico Microtubes for sonication (Diagenode, Cat # C30010016). DNA was sonicated using a Bioruptor Pico (Diagenode) for 18 cycles of 15 s ON/90 s OFF. The sonicated DNA was moved to a new 1.5 ml tube.
 
-## m6A IP
+#### m6A IP
 
 DNA was denatured by incubating at 95°C for 10 min and then immediately placed on ice for 5 min. 200 μl of cold water and 500 μl of cold 5× DIP buffer (50 mM NaPO4, pH 7.0, 700 mM NaCl, 0.25% Triton X-100) were added to bring the volume up to 1 ml. 50 μl was taken aside as input. 25 μl of 20 mg/ml BSA and 1.8 μg of antibody (Synaptic Systems rabbit anti-m6A, Cat 202–003) were added to the rest of the sample and rotated overnight at 4°C. 50 μl of Protein A magnetic Dynabeads (Thermo Fisher, Cat # 10,002D) were added to the sample and rotated at 4°C for 1 hr. Magnetic beads were immobilized using a magnetic rack and washed by resuspension and rotation for 5 min at 4°C in 1 ml of various cold buffers in the following order: 2× with 1× DIP buffer + 0.05% Tween-20, 1× with 1× DIP buffer. For elution, beads were resuspended in 190 μl of DIP digestion buffer (50 mM Tris–HCl, pH 8.0, 10 mM EDTA, 0.5% SDS) + 10 μl of 10 mg/ml Proteinase K (New England Biolabs, Cat # P8107S). DIP digestion buffer was added to input samples up to 200 μl. Both the input and IP samples were incubated at 50°C for 2 hr and then cleaned up using the Qiaquick PCR Purification Kit (Qiagen, Hilden, Germany, Cat # 28104) and eluted in 35 μl of water.
 
-## Library preparation and sequencing
+#### Library preparation and sequencing
 
 Samples were prepared for sequencing using Accel-NGS 1S Plus DNA Library Kit (Swift Biosciences, Ann Arbor, MI, Cat # 10024) according to the manufacturer’s instructions. Samples were multiplexed using Swift Single Indexing Primers Set A (Swift Biosciences, Cat # X6024). Library-prepped samples were sequenced on a MiniSeq System (Illumina).
 
-## Analysis
+#### Analysis
 
 Analysis was done as described in the section on ChIP-seq above.
 
-## Nanopore sequencing
+### Nanopore sequencing
 
-## DNA extraction
+#### DNA extraction
 
 Cells were grown to mid-log phase in YPD, CSM (Sunrise Science Products), or CSM without Uracil at 30°C. Approximately 108 cells were pelleted, washed with 1 ml of water, and pellets were flash frozen. gDNA was extracted using the YeaStar Genomic DNA Kit (Genesee Scientific, San Diego, CA, Cat #11-323) according to the manufacturer’s ‘Protocol 1’. Specifically, thawed cell pellets were resuspended in 240 μl of YD digestion buffer + 10 μl R-Zymolyase and incubated at 30°C for 1 hr. 240 μl of YD Lysis buffer was added to the solution and vortexed at top speed for 15 s. 500 μl of chloroform was added to the solution and vortexed at top speed for 10 s and then inverted 10 times. The aqueous and organic phases were separated by centrifugation at 10,000 × g for 2 min, and the aqueous phase was equally separated into two ZymoSpin columns. ZymoSpin columns were spun at 10,000 × g, washed 2× with 300 μl of DNA wash buffer, and DNA was eluted from each column with 75 μl of water. Eluates were combined. DNA was sheared to ~15–20 kb by spinning through a Covaris g-TUBE (Covaris Inc, Woburn, MA, Cat # 520079) at 4200 rpm for 1 min, and repeating 1× with the tube flipped the other way in an Eppendorf Centrifuge 5424, according to the Covaris protocol. DNA was purified and concentrated using 1× (vol/vol) SPRI Select beads (Beckman Coulter, Cat # B23317) and eluted in 50 μl of water according to the manufacturer’s instructions. DNA concentration was measured using Qubit dsDNA HS reagents (Invitrogen, Cat # Q32854).
 
-## Library preparation and sequencing
+#### Library preparation and sequencing
 
 Approximately 1–3 μg of purified, sheared genomic DNA was library prepped using the following reagents: NEB Oxford Nanopore Companion (New England Biolabs, Cat # E7180S), NEB Blunt/TA Ligase Master Mix (New England Biolabs, Cat # M0367), NEBNext Quick Ligation Reaction Master Mix (New England Biolabs, Cat # B6058), Oxford Ligation Sequencing Kit (Oxford Nanopore Technologies, Oxford, UK, Cat # SQK-LSK109), and the Oxford Native Barcoding Expansion 1–12 (Oxford Nanopore Technologies, Cat # EXP-NBD104). The library was prepared and sequenced according to Oxford Nanopore’s protocol for Ligation Sequencing Kit + Native Barcoding Expansion 1–12. Sequencing was done on a MinION sequencer with v9.4 flow cells (Oxford Nanopore Technolgies, Cat # FLO-MIN106).
 
-## Analysis
+#### Analysis
 
 Base-calling was first done using Guppy v5.0.11 using the high-accuracy model (dna_r9.4.1_450bps_hac.cfg), and reads were demultiplexed using guppy_barcoder. Read IDs corresponding to each barcode were extracted and written to a.txt file using a custom Python script (Source code 3). Reads corresponding to each barcode were aligned to the S288C reference genome (release R64-2-1_20150113, yeastgenome.org, modified to include mat∆) and modifications called with Megalodon (https://github.com/nanoporetech/megalodon, v2.3.3; Stoiber, 2021a) using the all-context rerio model (https://github.com/nanoporetech/rerio, res_dna_r941_min_modbases-all-context_v001.cfg; Stoiber, 2021b) and the flags --mod-motif ‘Y A 0’, --files_out ‘basecalls mod_mappings per_read_mods’, and --read-ids-filename ‘barcodeXX_readIDs.txt’ (the file that contained the extracted list of readIDs for a given barcode).
 
@@ -151,20 +500,20 @@ The per-read database from Megalodon was converted into a.txt file using ‘mega
 
 The R scripts (as.html files) used to create each figure can be found in Source code 5.
 
-## Limitations
+#### Limitations
 
 This method showed possible limitations for some contexts: (1) The expression level of the fusion protein could increase the levels of background methylation. We found this to be true with the Sir2–M.EcoGII fusion protein, which is likely expressed at a higher level than Sir3–M.EcoGII due to the higher level of endogenous Sir2 expression. The level of methylation by Sir2–M.EcoGII in heterochromatin regions was higher than by Sir3–M.EcoGII, and background levels of methylation outside of heterochromatin regions were also higher than by Sir3–M.EcoGII. Importantly, the signal at heterochromatin was evident above even this raised background methylation. (2) Methylation at the level of single reads was variable and spotty, possibly due to at least two contributors. There may be occupancies that are too transient to allow methylation. Secondly, computational limitations for calling modified adenines without a guiding sequence motif meant that lower-confidence (probably <0.8) m6A calls were not considered methylated. At present, qualitative conclusions based on single-read data can be made with confidence, but as Nanopore technology improves, single-read data will become more amenable to statistical and spatial analysis. (3) Because this method can capture transient interactions better than methods like ChIP-seq it may overestimate degrees of occupancy unless combined with DIP- or ChIP-seq.
 
-## Reverse Transcription and Quantitative PCR (RT-qPCR)
+### Reverse Transcription and Quantitative PCR (RT-qPCR)
 
-## RNA extraction
+#### RNA extraction
 
 Cells were grown to mid-log phase in YPD, CSM (Sunrise Science Products), or CSM–Uracil at 30°C, and RNA was extracted using the Qiagen RNeasy kit (Qiagen, Cat # 74104) according to the manufacturer’s instructions for purification of total RNA from yeast. Briefly, ~6 × 107 cells were resuspended in 600 μl of buffer RLT, 500 μl of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) were added, and cells were lysed by bead beating with in a FastPrep-24 (MP Biomedicals) at 5.5 amplitude, 3 cycles of 40 s ON/2 min on ice. Cells were pelleted by spinning at 21,000 × g for 2 min, and the supernatant was moved to a new tube. One volume of 70% ethanol was added to the supernatant and the sample was spun through an RNeasy spin column. The column was washed with 350 μl of buffer RW1, then 10 μl of DNase + 70 μl of buffer RDD (Qiagen, Cat # 79256) were added to the column and incubated for 15 min at room temperature. 500 μl of buffer RW1 was added and spun through the column. The column was then washed with 500 μl of buffer RPE 2×, and RNA was eluted with 80–150 μl of RNase-free water.
 
-## RT-qPCR
+#### RT-qPCR
 
 Complementary DNA was synthesized using the SuperScript III First-Strand Synthesis System (Invitrogen, Cat # 18080051) and oligo(dT) primers according to the manufacturer’s protocols. Quantitative PCR of complementary DNA was performed using the DyNAmo HS SYBR Green kit (Thermo Fisher, Cat # F410L) on an Mx3000P machine (Stratagene, La Jolla, CA) using the primers listed in Supplementary file 3. Standard curves were generated using a tenfold dilution series of one of the prepared samples.
 
-## Protein immunoblotting
+### Protein immunoblotting
 
 Each strain was grown to saturation overnight in 5 ml YPD. Overnight cultures were diluted to ~2 × 105 cells/ml in fresh YPD, grown to mid-log phase, and ~108 cells were harvested and pelleted. Pellets were resuspended in 1 ml of 5% trichloroacetic acid and incubated at 4°C for 10–30 min. The precipitates were pelleted, washed once with 1 ml of 100% acetone, and air-dried. Dried pellets were resuspended in 100 μl of protein breakage buffer (50 mM Tris–HCl, pH 7.5, 1 mM EDTA, 3 mM DTT) and an equal volume of 0.5 mm zirconium ceramic beads (BioSpec Products, Cat # 11079105z) followed by four cycles of 40 s bead beating/2 min on ice in a FastPrep-24 (MP Biomedicals). 100 μl of 2× Laemmli buffer (120 mM Tris–HCl, pH 7.5, 20% glycerol, 4% SDS, 0.02% bromophenol blue, 10% beta-mercaptoethanol) was added to each sample and incubated at 95°C for 5 min. Insoluble material was pelleted by centrifugation and an equal volume of the soluble fraction from each sample was run on an SDS–polyacrylamide gel (Mini-PROTEAN TGS Any kD precast gel; BioRad, Hercules, CA Cat # 4569033) and transferred to a nitrocellulose membrane using a TransBlot Turbo Mini 0.2 μm Nitrocellulose Transfer Pack (BioRad, Cat # 1704158) on the High MW setting of a TransBlot Turbo machine (BioRad). The membrane was blocked in Intercept Blocking Buffer (LI-COR Biosciences, Lincoln, NE, Cat # 927-70001), and the following primary antibodies and dilutions were used for detection: V5 (R960-25, 1:5000; Invitrogen), Hxk2 (#100-4159, 1:20,000; Rockland Immunochemicals Inc, Pottstown, PA), Sir3 (1:1000; rabbit polyclonal from N. Dhillon & R. Kamakaka), and Pgk1 (Cat # 459250, 1:40,000; Invitrogen). The secondary antibodies used were IRDye 800CW (926-32210) and 680RD (926-68071) (1:20,000; LI-COR Biosciences), and the membrane was imaged on a LI-COR Odyssey Imager. All washing steps were performed with PBS + 0.1% Tween-20.

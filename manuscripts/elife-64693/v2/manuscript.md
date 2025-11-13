@@ -34,19 +34,51 @@ Using 3D whole-tissue imaging, we have begun to decipher the timing of the inter
 
 ## Results
 
-## Sympathetic innervation of iWAT is established during early postnatal development
+### Sympathetic innervation of iWAT is established during early postnatal development
 
 To better understand adipocyte-sympathetic neurite interactions, we investigated whether the association between beige adipocytes and dense sympathetic innervation is developmentally determined. We first mapped the developmental timing of the sympathetic nervous system in iWAT using Adipo-Clear coupled with light sheet fluorescent imaging. Given that iWAT undergoes active tissue morphogenesis during late embryonic and early postnatal stages (Wang et al., 2013), we first performed whole tissue immunostaining and imaging in iWAT isolated from postnatal day (P) two mice using an antibody targeting tyrosine hydroxylase (TH), a maker for sympathetic fibers, which acts as the rate-limiting enzyme in the catecholamine biosynthesis pathway. At this stage, adipocytes appeared fully vascularized and organized into distinct lobular structures, as shown by the endothelial cell marker PECAM (also known as CD31) (Figure 1—figure supplement 1A,C and F), consistent with previous reports (Hong et al., 2015). While we could detect TH-positive (TH+) signals resembling nerve fascicles as well as fibers wrapping around large blood vessels, dense parenchymal innervation in close apposition to adipocytes, which was reported in adult iWAT (Chi et al., 2018b; Jiang et al., 2017), was not obvious at this age (Figure 1—figure supplement 1A–F).
 
 At P6, more distinct features of sympathetic innervation in iWAT were observed: (a) travelling in parallel within nerve fascicles and (b) wrapping around main blood vessels in a dense mesh-like morphology (Figure 1A–C, Figure 1—figure supplement 2A–D). Upon further analyzing the innervation pattern across the entire tissue, we observed that these structures were all interconnected to form a continuous sympathetic network. Specifically, we found several convergence points where TH+ nerve fibers within a nerve fascicle deviated from the bundle and merged with the innervation of the central blood vessel (Figure 1B–C, Figure 1—figure supplement 2A and C, Figure 1—video 1), suggesting that sympathetic fibers leave the nerve fascicle and wrap around the main blood vessel as the first order of innervation. Subsequently, the main blood vessel innervation extended around branching arterioles and venules as the second order of innervation (Figure 1D, Figure 1—figure supplement 2E–F, Figure 1—video 1). Lastly, discrete nerve fibers became apparent at the terminals of the second-order innervation to project into tissue parenchyma, where adipocytes are located. Notably, the majority of these nerve fibers appeared to follow capillaries to arrive in the tissue parenchyma (Figure 1E–F, Figure 1—figure supplement 2G–J). Although nerve endings were visible in the tissue parenchyma at P6, we did not observe any extensive innervation surrounding adipocytes. In addition, both the dorsolumbar and inguinal regions of iWAT showed similar innervation patterns at this stage (Figure 1—figure supplement 3A–B, Figure 1—video 2). The results from P2 and P6 samples indicate that the sympathetic axons in iWAT first grow along the vasculature before reaching the tissue parenchyma, consistent with previous findings showing that developing sympathetic axons follow the vasculature to reach their target organs (Glebova and Ginty, 2005).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic view of iWAT. Red lines represent main blood vessels. Using the lymph node and blood vessels as landmarks, iWAT depot is divided into the inguinal and dorsolumbar regions. Dorsolumbar region is further divided into medial and lateral subregions, hereafter referred to as the dorsomedial and dorsolateral regions. Dotted lines indicate boundaries of each region. (B–F) Representative images of iWAT from a P6 C57BL6/J mouse immunolabeled with TH (green) and CD31 (magenta). (B) Maximum intensity projection (MIP) from a 1000 μm z-stack. Arrows indicate convergence points where nerve fibers deviate from nerve bundles to establish blood vessel innervation. (C) High-magnification image of the indicated (*) convergence point in (B). Arrows indicate distinct features of sympathetic innervation in iWAT: (a) nerve fascicle, (b) blood vessel innervation, (c) a nerve fiber departing from a nerve fascicle to join blood vessel innervation. (D) High-magnification image showing sympathetic innervation from main blood vessel extending to arterioles or venules. (E–F) High-magnification images showing discrete nerve endings project into tissue parenchyma. (G–J) Representative whole-tissue images of iWAT from (G) P10, (H) P14, (I) P21, and (J) P28 C57BL6/J mice immunolabeled with TH. MIPs from 50 μm z-stacks are shown. Lymph nodes are indicated as LN. Scale bars are indicated. All imaging studies were performed in at least three independent animals, and representative images are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Representative whole-tissue maximum intensity projections (MIPs) of 50 μm z-stacks of iWAT from a P2 mouse. (A) TH (green) and CD31 (magenta). (B) TH only. (C–F) High-magnification images showing distinct sympathetic innervation patterns: (a) fibers wrapping around blood vessel, (b) nerve fascicle, and (c) fibers reaching lobules. (C) TH (green), CD31 (magenta). (D) TH (green), tissue autofluorescence (magenta). (E) TH. (F) CD31. Lymph nodes are indicated as LN. Scale bars are indicated.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Single channel images corresponding to Figure 1B: (A) TH, (B) CD31. (C–D) Single channel images corresponding to Figure 1C: (C) TH, (D) CD31. (E–F) Single channel images corresponding to Figure 1D: (E) TH, (F) CD31. (G–H) Single channel images of Figure 1E: (G) TH, (H) CD31. (I–J) Single channel images of Figure 1F: (I) TH, (J) CD31. Scale bars are indicated. (K–L) Photographs of iWAT with various regions labeled. Dotted lines correspond to region boundaries shown in Figure 1A and cutting sites to isolate various regions for molecular analysis as described in Materials and methods. Lymph nodes are indicated as LN.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** High-magnification images corresponding to Figure 1G,H,I & J. MIPs of 50 μm z-stacks from iWAT of (A–B) P6, (C–D) P10, (E–F) P14, (G–H) P21, and (I–J) P28 immunolabeled with TH. (A, C, E, G, and I) Images of the dorsolumbar region. (B, D, F, H, and J) Images of the inguinal region. Scale bars are indicated.
+
 Remarkably, adipocyte-innervating neurites became apparent four days later. In the inguinal region, dense parenchymal neurites surrounding adipocytes were first found at P10, in particular within lobules at the core of this region (Figure 1G, Figure 1—figure supplement 2K, Figure 1—figure supplement 3D, Figure 1—video 2). At P14, the number of lobules that contain dense parenchymal neurites dramatically increased, spreading outwards from the core of the inguinal region (Figure 1H, Figure 1—figure supplement 3F, Figure 1—video 2). From P21 and onwards, more inguinal lobules were found to harbor dense parenchymal innervation (Figure 1I–J, Figure 1—figure supplement 3H & J, Figure 1—video 2), with the pattern comparable to that of adult iWAT (Chi et al., 2018b). Interestingly, the emergence of dense parenchymal neurites in the dorsomedial region lagged behind. While parenchymal neurites were detectable in the dorsomedial region at P14 and P21 (Figure 1H–I, Figure 1—figure supplement 2K–L, Figure 1—figure supplement 3E & G, Figure 1—video 2), we did not observe densely innervated lobules that resemble the adult innervation pattern in this region until P28 (Figure 1J, Figure 1—figure supplement 3I, Figure 1—video 2). Notably, the dorsolateral region of iWAT remained sparsely innervated relative to the inguinal region and the dorsomedial region throughout the early postnatal period (Figure 1G–J, Figure 1—figure supplement 2K–L, Figure 1—figure supplement 3A,C,E,G & I, Figure 1—video 2).
 
-## UCP1+ beige adipocytes and dense sympathetic parenchymal innervation emerge together during early postnatal development
+### UCP1+ beige adipocytes and dense sympathetic parenchymal innervation emerge together during early postnatal development
 
 As our previous findings suggest that beige adipocytes interact with sympathetic projections and modulate the density of sympathetic parenchymal innervation (Chi et al., 2018b), we next investigated whether early postnatal development of sympathetic innervation may also be regulated by beige adipocytes. We analyzed the localization of beige adipocytes using an antibody against uncoupling protein 1 (UCP1), a widely accepted marker for thermogenic adipocytes, and compared their distribution in relation to the sympathetic parenchymal innervation in iWAT using whole-tissue imaging. As expected, we observed a strong association between beige adipocytes and parenchymal innervation, even during early postnatal development.
 
 Specifically, we found that beige adipocytes first emerge in iWAT of P6 animals that were born and housed at room temperature, as shown by a few UCP1+ adipocytes sparsely distributed in the core of the inguinal region, close to the inguinal lymph node (Figure 2A–B, Figure 2—figure supplement 1D). At P10, we detected clusters of UCP1+ adipocytes located in distinct lobules in the core of the inguinal region (Figure 2C–D, Figure 2—figure supplement 1E). Four days later, at P14, the lobules containing UCP1+ adipocytes further expanded from the core (Figure 2E & G, Figure 2—figure supplement 1F). At P21 and P28, extensive UCP1+ lobules occupied a significant portion of the inguinal region, comparable to the extent of UCP1+ cells only seen in adult animals after cold exposure (Figure 2H and J, Figure 2—figure supplement 1A,C,G, & H). On the other hand, the emergence of UCP1+ adipocytes in the dorsolumbar region again lagged behind. UCP1+ adipocytes in the dorsomedial region first emerged in small clusters at P14 and then as distinct lobules at P21 (Figure 2E–F & and H–I). At P28, the same region contained a large number of lobules harboring UCP1+ adipocytes (Figure 2—figure supplement 1A–B). Interestingly, the dorsolateral region was devoid of UCP1+ adipocytes at all stages analyzed (Figure 2A,C,E and H, Figure 2—figure supplement 1A & D–H).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig2-v2.jpg)
+
+**Figure 2.:** (A–J) Representative optical sections of iWAT from P6, P10, P14, and P21 C57BL6/J mice immunolabeled with UCP1. (A) Whole-tissue optical section of a P6 iWAT. (B) High-magnification view of the boxed inguinal region in (A). (C) Whole-tissue optical section of a P10 iWAT. (D) High-magnification view of the boxed inguinal region in (C). (E) Whole-tissue optical section of a P14 iWAT. (F) High-magnification view of the boxed dorsolumbar region in (E). (G) High-magnification view of the boxed inguinal region in (E). (H) Whole-tissue optical section of a P21 iWAT. (I) High-magnification view of the boxed dorsolumbar region in (H). (J) High-magnification view of the boxed inguinal region in (H). Lymph nodes are indicated as LN. Dotted lines indicate tissue boundaries based on tissue autofluorescence signals shown in Figure 2—figure supplement 1D–H. Scale bars are indicated. All imaging studies were performed in at least three independent animals, and representative images are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Representative optical sections of iWAT from a P28 C57BL6/J mouse immunolabeled with UCP1. (A) Whole-tissue optical section of a P28 iWAT. (B) High-magnification view of the boxed dorsolumbar region in (A). (C) High-magnification view of the boxed inguinal region in (A). (D–H) Two-channel images corresponding to Figure 2A,C,E,H, and (A). Tissue autofluorescence (magenta) and UCP1 (green) are shown. Lymph node is indicated as LN. Scale bars are indicated. Imaging was performed in three independent animals, and representative images are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Normalized gene expression of dorsolumbar vs. inguinal regions in iWAT from P6, P8, P10, P12, P14, P16, P21, and P28 C57BL6/J mice, n = 4. Representative genes involved in (A) the thermogenic program, (B) transcriptional regulation of beige adipocyte development and function, and (C) the adipogenic program. Data are presented as mean ± SEM and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 dorsolumbar vs. inguinal region at each time point. # denotes p<0.05 inguinal region at P14 in comparison to inguinal regions at other time points.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–J) High-magnification MIPs of 50 μm z-stacks from iWAT of (A–B) P6, (C–D) P10, (E–F) P14, (G–H) P21, and (I–J) P28 immunolabeled with TH (green) and UCP1 (magenta), corresponding to Figure 1—figure supplement 3. (K–L) High-magnification MIPs of 50 μm z-stacks from iWAT of a P14 C57BL6/J mouse housed at thermoneutrality (30°C), immunolabeled with TH (green) and UCP1 (magenta). (A, C, E, G, I and K) Images of the dorsolumbar region. (B, D, F, H, J and L) Images of the inguinal region. Scale bars are indicated.
 
 To obtain a quantitative measure of these early postnatal beige adipocytes, we also examined mRNA levels of brown and beige adipocyte-enriched genes in the inguinal and dorsolumbar regions of iWAT. In line with the imaging results, Ucp1 mRNA expression showed a gradual increase from P6 to P14 in the inguinal region (Figure 2—figure supplement 2A). To our surprise, although we observed more extensive UCP1+ adipocytes in the inguinal region at P21 and P28 by imaging, Ucp1 mRNA levels peaked around P12-P16, with the expression level at P14 being fourfold and eightfold higher than that of P21 and P28, respectively (Figure 2—figure supplement 2A). Other thermogenic genes (Cidea and Cox8b) also gradually increased their mRNA expression from P6 to P14, followed by a small downward trend after P21 (Figure 2—figure supplement 2A). These quantitative transcriptional data suggest that the beige adipocytes arising in the inguinal region of iWAT during early postnatal development may exhibit peak thermogenic potential around 2–3 weeks of age and gradually become less active as animals mature. On the other hand, all thermogenic genes showed significantly lower mRNA expression in the dorsolumbar region compared to the inguinal region at most time points (Figure 2—figure supplement 2A). Of note, Prdm16, the transcriptional coregulator that determines beige adipocyte phenotype, showed a consistent 1.5- to twofold increase in mRNA levels in the inguinal relative to the dorsolumbar region across all time points (Figure 2—figure supplement 2B). Other transcriptional regulators of beige adipocyte development, such as Cebpb and Ppargc1a, showed similarly consistent regional differences (around 1.5-fold for Cebpb and twofold for Ppargc1a) during early development (Figure 2—figure supplement 2B). Furthermore, we did not observe any significant regional differences in markers of adipocyte maturation and function (Fabp4, Pparg, and Adipoq) (Figure 2—figure supplement 2C). Taken together, these data suggest that adipocytes from the two regions of iWAT are equally differentiated, but the inguinal region may harbor more beige progenitor cells or mature adipocytes with the potential to emerge as beige adipocytes.
 
@@ -54,19 +86,51 @@ When we overlaid the UCP1 and TH signals, we observed a dramatic overlap between
 
 Additionally, as room temperature is considered a mild cold stress to mice, particularly in developing animals that do not have their adult fur pattern, it is possible that early postnatal beige adipocytes arise as a result of cold-induced sympathetic stimulation. When mice were born and raised at a warmer temperature (30°C), at which cold-induced sympathetic firing is minimized, early postnatal beige adipocytes and sympathetic neurites arise in iWAT with the same patterning as that of room temperature-housed mice (Figure 2—figure supplement 3K–L). In addition, a recent study using genetic sympathetic ablation showed that early postnatal beige adipocytes develop normally in the absence of sympathetic innervation (Wu et al., 2020b). Together, these data suggest that the development of beige adipocytes is likely not dependent on sympathetic activation, but rather based on a developmentally hard-wired program.
 
-## Prdm16 regulates the emergence of early postnatal beige adipocytes and dense sympathetic parenchymal innervation
+### Prdm16 regulates the emergence of early postnatal beige adipocytes and dense sympathetic parenchymal innervation
 
 We have previously shown that dense parenchymal innervation that localizes to the inguinal region of adult iWAT is significantly reduced by constitutive deletion of Prdm16 in adipocytes (Chi et al., 2018b). To examine whether early postnatal beige adipocytes and their regulation of dense sympathetic innervation are also dependent on Prdm16, we analyzed iWAT of adipocyte-specific Prdm16 knockout mice (Adipoq-Cre; Prdm16lox/lox; hereafter noted as constitutive Prdm16KO or cPrdm16KO mice) at postnatal days 6, 14, and 21, key time points in the course of beige adipocyte and sympathetic innervation development.
 
 At P6, we observed minimal beige adipocytes and scant parenchymal innervation in both control and cPrdm16KO mice (Figure 3—figure supplement 1A–H), suggesting that the sympathetic nervous system develops similarly in both models prior to the emergence of beige adipocyte clusters. At P14, the deletion of Prdm16 completely ablated beige adipocytes that normally arise in the inguinal region of control mice, both at the mRNA and protein levels (Figure 3I, Figure 3—figure supplement 1I, Figure 3—figure supplement 2A–D). Correspondingly, the increase seen in parenchymal innervation density in the inguinal region of control mice was not observed in cPrdm16KO mice (Figure 3A–D, Figure 3—figure supplement 2A–D). At P21, we observed similar ablation of beige adipocytes and lack of growth in parenchymal innervation in cPrdm16KO relative to control samples (Figure 3E–I, Figure 3—figure supplement 1I, Figure 3—figure supplement 2E–H). These results indicate that early postnatal beige adipocytes indeed depend on PRDM16, the well-characterized transcriptional determinant of brown and beige adipocytes. Importantly, these data strongly suggest that sympathetic axon growth during early iWAT morphogenesis may be regulated by PRDM16-dependent signals.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Representative images of iWAT from (A–B) control and (C–D) cPrdm16KO mice at P14, immunolabeled with TH. MIPs from 50 μm z-stacks are shown. (E–H) Representative images of iWAT from (E–F) control and (G–H) cPrdm16KO mice at P21, immunolabeled with TH. MIPs from 50 μm z-stacks are shown. (A, C, E and G) Images of the dorsolumbar region. (B, D, F and H) Images of the inguinal region. Scale bars are indicated. Imaging was performed in at least three independent animals per genotype, and representative images are shown. (I) Normalized gene expression of dorsolumbar vs. inguinal regions in iWAT from control and cPrdm16KO mice at P6, P14, and P21, n = 2–3. Representative genes involved in the thermogenic program are shown. Data are presented as mean ± SEM and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 dorsolumbar vs. inguinal regions of control samples at each time point. # denotes p<0.05 inguinal regions of control vs. cPrdm16KO samples at each time point. & denotes p<0.05 inguinal region at P14 in comparison to inguinal regions at P21.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Representative images of iWAT from (A–B) control and (C–D) cPrdm16KO mice at P6, immunolabeled with TH. MIPs from 50 μm z-stacks are shown. (E–H) Overlay of TH (green) and UCP1 (magenta), corresponding to (A–D). (A, C, E, and G) Images of the dorsolumbar region. (B, D, F, and H) Images of the inguinal region. Scale bars are indicated. Imaging was performed in at least three independent animals per genotype, and representative images are shown. (I) Normalized gene expression of dorsolumbar vs. inguinal regions in iWAT from control and cPrdm16KO mice at P6, P14, and P21, n = 2–3. Representative genes involved in the adipogenic program are shown. Data are presented as mean ± SEM and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Overlay of TH (green) and UCP1 (magenta), corresponding to Figure 3A–D. (E–H) Overlay of TH (green) and UCP1 (magenta), corresponding to Figure 3E–H. (I) qPCR analysis of Prdm16 mRNA levels in inguinal and dorsolateral regions of control and cPrdm16KO mice at P14, n = 4. Data are normalized to cPrdm16KO dorsolateral group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. **** denotes p<0.0001 control inguinal vs. the rest of the groups. (J) Western blot of PRDM16 and lamin A/C of various fat depots from WT and cPrdm16KO 8-week-old mice. (K–L) Representative images of iBAT sections from (K) control and (L) cPrdm16KO 8-week-old mice, immunolabeled with TH. MIPs of 5 μm z-stacks are shown. Scale bars are indicated.
+
 Although PRDM16 is known to be important for beige adipocyte function, it remains possible that ablation of Prdm16 in all adipocytes by Adipoq-Cre altered white adipocyte function and therefore affected sympathetic innervation. To address this, we assessed Prdm16 mRNA and protein levels in the inguinal and dorsolateral regions of iWAT, which are predominantly beige and white regions, respectively (Figure 2). We performed qPCR on the two regions isolated from control and cPrdm16KO mice at P14 (Figure 3—figure supplement 2I). The control dorsolateral region showed significantly lower expression level of Prdm16 mRNA than the control inguinal region. Importantly, the Prdm16 mRNA level in the control dorsolateral region was indistinguishable from that in cPrdm16KO dorsolateral or inguinal regions, suggesting that the wild-type dorsolateral region naturally expresses very low levels of Prdm16 mRNA with levels indistinguishable from Prdm16 knockout samples. We further assessed PRDM16 protein levels across multiple fat depots of young adult mice (Figure 3—figure supplement 2J). Consistently, the dorsolateral region exhibited a considerably lower level of PRDM16 compared with the inguinal region in wild-type iWAT, while there were no detectable levels of PRDM16 in the iWAT of cPrdm16KO mice or wild-type eWAT. Although there was still a minimal level of PRDM16 protein in the dorsolateral region of iWAT, this may be attributed to the small number of beige adipocytes in this region. Altogether, Prdm16 appears to be minimally expressed in white adipocytes in iWAT, and thus its deletion in white adipocytes is likely to contribute minimally to the changes in sympathetic innervation.
 
 Interestingly, although PRDM16 also plays a critical role in brown adipocyte determination and function, deletion of Prdm16 in interscapular brown fat (iBAT) does not affect its development or thermogenic function in young adults (Cohen et al., 2014; Harms et al., 2014). Previous studies have shown that the role of PRDM16 in iBAT formation and function is compensated for by PRDM3, a transcriptional regulator closely related to PRDM16 (Harms et al., 2014). Consistent with these findings, we detected similarly extensive sympathetic parenchymal innervation in iBAT of both control and cPrdm16KO mice (Figure 3—figure supplement 2K–L).
 
-## Prdm16 deletion during early development causes decreased sympathetic parenchymal innervation
+### Prdm16 deletion during early development causes decreased sympathetic parenchymal innervation
 
 To further delineate the critical time window for sympathetic innervation patterning in iWAT, we generated an inducible Prdm16 knockout mouse model (AdipoqrtTA; TRE-Cre; Prdm16lox/lox; hereafter noted as inducible Prdm16KO or iPrdm16KO mice), where Prdm16 can be deleted in adipocytes in a doxycycline-dependent manner (Figure 4A). To test whether sympathetic parenchymal innervation may be developmentally determined during a defined time window, doxycycline was delivered to mice from embryonic day (E) 14 until P21, the period of time when both beige adipocytes and parenchymal innervation development become clearly apparent. Following doxycycline treatment, iPrdm16KO and littermate control mice were switched back to chow diet for 2 weeks and subsequently exposed to either room temperature (RT) or 8°C for 2 days (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic representation of the genetic components of the control and iPrdm16KO mice. iPrdm16KO mice carry floxed Prdm16 alleles (Prdm16lox/lox), two copies of AdipoqrtTA transgene, and one copy of TRE-Cre transgene. Littermates carrying only Prdm16lox/lox and AdipoqrtTA (i.e. Cre-) were used as the control animals. (B) Control (Cre-) and iPrdm16KO (Cre+) mice housed at RT (23°C) were kept on a doxycycline-containing chow diet from E14 until P21 before being switched to a regular chow diet for another 2 weeks. Control and iPrdm16KO mice were either maintained at RT (23°C) or exposed to cold (8°C) for 2 days at P35. (C) Normalized gene expression of inguinal regions from control and iPrdm16KO (perinatal, 5 weeks) mice exposed to RT or cold, n = 3–5. Data are presented as mean + SEM and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples at RT. # denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples at cold. & denotes p<0.05 cold- vs. RT-exposed control samples. (D–I) Representative optical sections of iWAT from (D–E) control and (F–G) iPrdm16KO (perinatal, 5 weeks) mice maintained at RT, immunolabeled with TH. (D and F) Images of the dorsolumbar region. (E and G) Images of the inguinal region. (H) High-magnification optical section of the boxed region in (E). (I) High-magnification optical section of the boxed region in (G). Scale bars are indicated. (J and K) Quantification of sympathetic parenchymal innervation in inguinal regions with total neurite length normalized to (J) regional volume or (K) adipocyte density. N = 3 biological replicates per genotype were analyzed. Average neurite density from five to seven randomly selected tissue volumes (technical replicates) contributes to neurite density measurement of one biological sample. Data are presented as mean + SEM and analyzed by Student’s t test. ** and *** denote p<0.01 and p<0.001, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Normalized Prdm16 mRNA expression of the indicated tissue types from control and iPrdm16KO (perinatal, 5 weeks) mice maintained at RT, n = 4–5. Data are presented as mean + SEM and analyzed by Student’s t test. * denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples for each tissue type. (B) Western blot of PRDM16 and lamin A/C from nuclear extracts of iWAT and iBAT of control (Cre-) and iPrdm16KO (perinatal, 5 weeks) (Cre+) samples. (C) Body weights of control and iPrdm16KO (perinatal, 5 weeks) mice before sacrifice. Data are presented as mean + SEM and analyzed by Student’s t test. (D–E) Normalized gene expression of inguinal regions of iWAT from control and iPrdm16KO (perinatal, 5 weeks) mice exposed to RT or cold for 2 days, n = 3–5. (D) Representative genes involved in the thermogenic program and (E) the adipogenic program. Data are normalized to control RT group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples at RT. # denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples at cold. & denotes p<0.05 cold- vs. RT-exposed control samples. (F–K) Visualization of additional tissue structures, corresponding to Figure 4H–I. (F and I) Overlay between TH and tissue autofluorescence. (G and J) Tissue autofluorescence. (H and K) CD31. (F–H) Correspond to Figure 4H. (I–K) Correspond to Figure 4I. Scale bars are indicated.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–F) Illustration of sympathetic parenchymal neurite density quantification with random sampling and filament tracing. (A) In each inguinal region as shown in Figure 4H–I and Figure 5G–H, small squares contained within lobules are randomly selected based on tissue autofluorescence using Surfaces in Imaris. (B) Randomly selected squares are then reconstructed into cuboids to represent volumes in the specific lobules. Specific channels within cuboids were generated by using Mask option in Imaris. (C–D) Computational reconstruction of TH signal to obtain total neurite length in individual cuboids using Filament in Imaris. (C) TH signal in one representative cuboid. (D) Overlay between reconstructed filaments (magenta) and TH signal (green). The total neurite length of each cuboid can be estimated by measuring the total length of the reconstructed filaments. (E) Adipocyte number is manually counted based on the tissue autofluorescence signal. Average count of every 10 slices (in the xy plane) within a cuboid is taken as average adipocyte number per slice. Adipocyte density is estimated by multiplying average adipocyte number per slice and cuboid height (z-length). (F) Neurite density normalized by volume is presented as the ratio of total neurite length (mm) by cuboid volume (mm3). Neurite density normalized by adipocyte density is presented as the ratio of total neurite length (mm) by adipocyte density (arbitrary unit).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Normalized gene expression of iBAT from control and iPrdm16KO (perinatal, 5 weeks) mice exposed to RT or cold, n = 3–5. (A) Representative genes involved in the thermogenic program and (B) the adipogenic program. Data are normalized to control RT group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 iKO (perinatal, 5 weeks) vs. control samples at RT. & denotes p<0.05 cold- vs. RT-exposed control samples. % denotes p<0.05 cold- vs. RT-exposed iKO (perinatal, 5 weeks) samples. (C–D) Representative images of iBAT sections from (C) control and (D) iPrdm16KO (perinatal, 5 weeks) mice, immunolabeled with TH. MIPs of 10 μm z-stacks are shown. Scale bars are indicated.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Control (Cre-) and iPrdm16KO (Cre+) mice housed at RT (23°C) were kept on a doxycycline-containing chow diet from E14 until P21 before being switched to a regular chow diet and maintained until 8 weeks old. Control and iPrdm16KO mice were either maintained at RT (23°C) or exposed to cold (8°C) for 2 days at P56. (B–D) Normalized gene expression of inguinal regions of iWAT from control and iPrdm16KO (perinatal, 8 weeks) mice exposed to RT or cold for 2 days, n = 3–5. (B–C) Representative genes involved in the thermogenic program and (D) the adipogenic program. Data are normalized to control RT group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 iKO (perinatal, 8 weeks) vs. control samples at RT. # denotes p<0.05 iKO (perinatal, 8 weeks) vs. control samples at cold. & denotes p<0.05 cold- vs. RT-exposed control samples. (E–J) Representative optical sections of iWAT from (E and G) control and (F and I) iPrdm16KO (perinatal, 8 weeks) mice maintained at RT, immunolabeled with TH. (E and F) Images of the whole iWAT. (G) High-magnification optical section of the boxed region in (E). (I) High-magnification optical section of the boxed region in (F). (H and J) Tissue autofluorescence images corresponding to (G) and (I), respectively. Scale bars are indicated.
 
 We first confirmed that perinatal doxycycline treatment led to a strong reduction in Prdm16 in adipose depots at the mRNA (70% reduction in the inguinal region of iWAT, 65% reduction in iBAT) and protein levels (Figure 4—figure supplement 1A–B). Both iPrdm16KO (perinatal, 5 weeks) and littermate control mice developed similarly, with no difference in body mass (Figure 4—figure supplement 1C). To examine whether the perinatal deletion of Prdm16 led to changes in downstream thermogenic gene expression, we analyzed mRNA levels of thermogenic markers that are induced by cold in wild-type iWAT. Since we have consistently observed that the inguinal region of iWAT is enriched in both early postnatal and cold-inducible beige adipocytes (Chi et al., 2018b), we hereafter focused on analyzing changes in the inguinal region. As expected, the control inguinal regions exhibited robust increases in the entire panel of thermogenic markers following 2 days of cold exposure (e.g. 35-fold induction in Ucp1) (Figure 4C, Figure 4—figure supplement 1D). In contrast, the cold-induced increases were almost completely blocked following perinatal deletion of Prdm16 (Figure 4C, Figure 4—figure supplement 1D), mirroring our previous findings in constitutive Prdm16KO mice (Cohen et al., 2014). On the other hand, the transient Prdm16 deletion did not significantly alter adipocyte differentiation or function, as shown by Pparg, Fabp4, and Adipoq mRNA levels (Figure 4—figure supplement 1E).
 
@@ -76,9 +140,21 @@ Similar to our previous findings with the cPrdm16KO model, perinatal Prdm16 knoc
 
 To assess whether the innervation defect following perinatal deletion of Prdm16 may be rescued as animals age, we performed the same perinatal deletion of Prdm16 but let animals reach 8 weeks of age on a chow diet, hereafter referred to as iPrdm16KO (perinatal, 8 weeks) (Figure 4—figure supplement 4A). As iWAT continues to expand in young adult mice, we reasoned that newly developed adipocytes during iWAT expansion might also affect sympathetic innervation. Consistent with the results from the iPrdm16KO (perinatal, 5 weeks) experiment, we observed significantly reduced expression of Prdm16 and other thermogenic genes at the mRNA level in iPrdm16KO (perinatal, 8 weeks) relative to control (Figure 4—figure supplement 4B–D). Importantly, TH+ fibers still appeared substantially sparser in iPrdm16KO (perinatal, 8 weeks) than control (Figure 4—figure supplement 4E–J). Taken together, these results demonstrate that interactions between beige adipocytes and sympathetic nerve endings during an early critical developmental window are required for establishment of the sympathetic network in iWAT, as perturbations during this window lead to lasting effects on parenchymal innervation density.
 
-## Prdm16 is not required for maintaining dense sympathetic parenchymal innervation in mature iWAT
+### Prdm16 is not required for maintaining dense sympathetic parenchymal innervation in mature iWAT
 
 Next, we assessed whether PRDM16 is also important for maintaining sympathetic parenchymal innervation in adult animals. To that end, we started doxycycline treatment when mice were 8 weeks of age. Following 4 weeks of doxycycline treatment, iPrdm16KO (adult deletion) and littermate control mice were placed at either RT or 8°C for 2 days to allow subsequent analysis of the thermogenic gene program (Figure 5A). As expected, doxycycline treatment in adult mice led to a robust reduction in Prdm16 at the mRNA (83% in the inguinal region of iWAT at RT) and protein levels (Figure 5B, Figure 5—figure supplement 1A). No body mass difference was observed between iPrdm16KO (adult deletion) and control mice (Figure 5—figure supplement 1B). We also observed significant attenuation of cold-induced upregulation in all thermogenic markers following Prdm16 deletion (Figure 5B, Figure 5—figure supplement 1C). Consistent with our previous findings, Prdm16 deletion did not significantly alter markers of adipocyte differentiation (Figure 5—figure supplement 1D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig5-v2.jpg)
+
+**Figure 5.:** (A) Control (Cre-) and iPrdm16KO (Cre+) mice housed at RT (23°C) were kept on a regular chow diet until 8 weeks of age before being switched to a doxycycline-containing chow diet for 4 weeks. Control and iPrdm16KO mice were either maintained at RT (23°C) or exposed to cold (8°C) for 2 days at the end of doxycycline treatment. (B) Normalized gene expression of inguinal regions from control and iPrdm16KO (adult) mice exposed to RT or cold, n = 3–5. Data are normalized to control RT group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. * denotes p<0.05 iKO (adult) vs. control samples at RT. # denotes p<0.05 iKO (adult) vs. control samples at cold. & denotes p<0.05 cold- vs. RT-exposed control samples. (C–F) Representative optical sections of iWAT from (C–D) control and (E–F) iPrdm16KO (adult deletion) mice maintained at RT, immunolabeled with TH. (C and E) Images of the dorsolumbar region. (D and F) Images of the inguinal region. (G) High-magnification optical section of the boxed region in (D). (H) High-magnification optical section of the boxed region in (F). Scale bars are indicated. (I–J) Quantification of sympathetic parenchymal innervation in inguinal regions with total neurite length normalized to (I) regional volume or (J) adipocyte density. N = 3 biological replicates per genotype were analyzed. Average neurite density from four to eight randomly selected tissue volumes (technical replicates) contributes to neurite density measurement of one biological sample. * denotes p<0.05 analyzed by Student’s t test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot of PRDM16 and lamin A/C (loading control) from nuclear extracts of iWAT from control (Cre-) and iPrdm16KO (adult) (Cre+) samples. (B) Body weights of control and iPrdm16KO (adult) mice maintained at RT before sacrifice. Data are presented as mean + SEM and analyzed by Student’s t test. (C–D) Normalized gene expression of inguinal regions of iWAT from control and iPrdm16KO (adult) mice exposed to RT or cold, n = 3–5. (C) Representative genes involved in the thermogenic program and (D) the adipogenic program. Data are normalized to control RT group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. # denotes p<0.05 iKO (adult) vs. control samples at cold. & denotes p<0.05 cold- vs. RT-exposed control samples. % denotes p<0.05 cold- vs. RT-exposed iKO (adult) samples. (E–J) Visualization of additional tissue structures, corresponding to Figure 5G–H. (E and H) Overlay between TH and tissue autofluorescence. (F and I) Tissue autofluorescence. (G and J) CD31. (E–G) Correspond to Figure 5G. (H–J) Correspond to Figure 5H. Scale bars are indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64693/elife-64693-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) Representative images of iWAT from a P8 C57BL6/J mouse immunolabeled with LYVE1 (magenta) and TH (green). MIPs of 50 μm z-stacks are shown. (A) LYVE1. (B) TH. (C) Autofluorescence. (D) Overlay of TH (green) and LYVE1 (magenta). (E) Zoomed-in view of the peri-lymph node region in (D). (F) qPCR analysis of S100b and Tgfb1 mRNA levels in inguinal and dorsolateral regions of control and cPrdm16KO mice at P14, n = 4. Data are normalized to control dorsolateral group, presented as mean + SEM, and analyzed by two-way ANOVA followed by Bonferroni’s multiple comparisons test. **** denotes p<0.0001 control inguinal vs. the rest of the groups. # denotes p<0.05 control dorsolateral vs. cKO inguinal.
 
 Interestingly, we found dense sympathetic parenchymal innervation present in the inguinal regions of iWAT from both iPrdm16KO (adult deletion) and control samples (Figure 5C–H, Figure 4—video 1). Quantitative analysis of the parenchymal neurite density (normalized by volume) from the 3D images resulted in a small, insignificant decrease (17.6%) in neurite density in adult iPrdm16KO relative to control samples (Figure 5I). Furthermore, as the adipocytes appeared larger in adult iPrdm16KO samples (Figure 5—figure supplement 1E–J), we normalized neurite length by adipocyte density. As a result, we observed a reverse relationship with the neurite density in adult iPrdm16KO being slightly higher (1.23-fold) than that of controls (Figure 5J). These results suggest that the small density difference when normalized by volume is likely driven by a scaling effect rather than actual neurite remodeling. Importantly, these data indicate that deleting Prdm16 in adipocytes of adult animals causes minimal changes in sympathetic parenchymal neurite density, strongly supporting the early postnatal period being the critical window during which interactions between beige adipocytes and sympathetic nerve endings occur.
 
@@ -104,42 +180,178 @@ Thermogenic adipocytes have been demonstrated to provide metabolic benefits that
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Adipoq-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:028020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Adipoq-rtTA</td>
+      <td>PMID:22451920</td>
+      <td>RRID:IMSR_JAX:033448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>TRE-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Prdm16lox/lox</td>
+      <td>PMID:24439384</td>
+      <td>RRID:IMSR_JAX:024992</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB152, RRID:AB_390204</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (Sheep polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB1542, RRID:AB_90755</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31/PECAM-1 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF3628, RRID:AB_2161028</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UCP1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab10983, RRID:AB_2241462</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LYVE1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab14917, RRID:AB_301509</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PRDM16 (Sheep polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF6295, RRID:AB_10717965</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Lamin A/C (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-376248, RRID:AB_10991536</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L), Alexa Fluor 568 (Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A10042, RRID:AB_2534017</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L), Alexa Fluor 647 (Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A32795, RRID:AB_2762835</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sheep IgG (H+L), Alexa Fluor 647 (Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21448, RRID:AB_2535865</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat IgG (H+L), Alexa Fluor 568 (Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11057, RRID:AB_2534104</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>http://www.bitplane.com/imaris/imaris; RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FilamentTracer</td>
+      <td>Bitplane</td>
+      <td>http://www.bitplane.com/imaris/filamenttracer; RRID:SCR_007366</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Young wild-type mice of various ages were generated by crossing male and female mice from the C57BL/6J background (C57BL/6J, JAX 000664) obtained from the Jackson Laboratories and maintained in our facilities. The constitutive Prdm16KO (cPrdm16KO) mice were generated as previously described (Cohen et al., 2014) by crossing Adipoq-Cre mice (JAX 028020) with Prdm16lox/lox mice. The inducible Prdm16KO (iPrdm16KO) mice were generated by crossing Adipoq-rtTA (provided by Dr. Philipp E. Scherer) (Sun et al., 2012), TRE-Cre (B6.Cg-Tg(tetO-cre)1Jaw/J, JAX 006234), and Prdm16lox/lox mice. All animals in this study were male mice on a pure C57BL/6J background.
 
 All mice were maintained on a 12 hr light/dark cycle with free access to food and water. To generate mice born and raised at thermoneutrality, pregnant female mice were housed at 30°C 14 days after vaginal plug formation until the pups reach the indicated ages. All other mice were housed at 23°C. For perinatal Prdm16 deletion, pregnant female mice were fed with a chow diet containing 600 mg/kg doxycycline (Bio-Serv, S4107) 14 days after vaginal plug formation until the pups reach P21. For adult Prdm16 deletion, the inducible Prdm16KO (Cre+ and Cre-) mice were placed on a doxycycline-containing chow diet for the indicated time. All other mice were fed with a standard rodent chow diet. For cold exposure experiments, mice were placed at 8°C for 48 hr with two mice in each cage. Animal care and experimentation were performed according to procedures approved by the Institutional Animal Care and Use Committee at the Rockefeller University.
 
-## iWAT regional dissection
+### iWAT regional dissection
 
 Various regions of iWAT were dissected for qPCR or western blot analyses as illustrated in Figure 1A and Figure 1—figure supplement 2K. After removal of the lymph node, the region between the bottom two dotted lines, guided by the entry of the main blood vessel in the inguinal portion and the upper boundary of the lymph node, was dissected as the inguinal region. The region from the upper boundary of the lymph node to the back was considered as the dorsolumbar region. When indicated, the dorsolumbar region was further divided into dorsomedial and dorsolateral regions by making a cut alongside the blood vessel that travel through the dorsolumbar region.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Total RNA was extracted from tissue using TRIzol (Invitrogen) along with RNeasy kits (QIAGEN). An RNeasy mini kit was used for adult tissue samples, while an RNeasy micro kit was used for small tissue samples from young mice. For qPCR analysis, RNA was reverse transcribed using the high-capacity cDNA reverse transcription kit (Applied Biosystems). cDNA was used in qPCR reactions containing SYBR-green fluorescent dye (Applied Biosystems). Relative mRNA expression was determined by normalization with Tbp (TATA-box binding protein) levels using the ΔΔCt method. The sequences of primers used in this study are listed in Supplementary file 1.
 
-## Nuclear extraction and immunoblotting
+### Nuclear extraction and immunoblotting
 
 Frozen iWAT and iBAT were minced and homogenized in a hypotonic buffer (10 mM HEPES, 10 mM KCl, 1.5 mM MgCl2, 0.5 mM DTT, and 1x protease inhibitor cocktail (cOmplete Mini, Roche)) by a dounce homogenizer. Homogenate was incubated on ice for 10 min and then mixed with 1/20 vol of 10% IGEPAL CA-630 (Sigma-Aldrich, I8896). Samples were then filtered through a 100 μm cell strainer and centrifuged at 1000 x g for 10 min. After centrifugation, lipid and cytoplasmic fractions were removed and nuclear pellets were resuspended in lysis buffer (20 mM HEPES, 1.5 mM MgCl2, 0.42 M NaCl, 0.2 mM EDTA, 0.5 mM DTT, 1x protease inhibitor cocktail, and 20% Glycerol). Samples were incubated on ice for 30 min and vortexed for 15 s every 10 min during the incubation. After lysis, samples were centrifuged at 20,000 x g for 10 min and the supernatant was taken as the nuclear extract. The following antibodies were used in immunoblotting: anti-PRDM16 (1:500, R and D systems, AF6295), anti-Lamin A/C (1:2000, Santa Cruz, sc-376248).
 
-## Adipo-Clear
+### Adipo-Clear
 
 Adipo-Clear was performed following a previously published protocol (Chi et al., 2018a; Chi et al., 2018b). In this study, primary antibodies including anti-UCP1 (1:200, abcam, ab10983), anti-TH (1:200, Millipore, AB1542 and AB152), anti-CD31 (1:200, R and D systems, AF3628), and anti-LYVE1 (1:200, abcam, ab14917), as well as secondary antibodies conjugated with Alexa-568 and Alexa-647 (1:200, Thermo Fisher Scientific, A10042, A21448, A32795, A11057) were used.
 
 Immunostaining and imaging with iBAT cryo-sections were dissected from mice perfused and fixed with 1x PBS followed by 4% PFA. Harvested iBAT samples were post-fixed in 4% PFA at 4°C overnight and subsequently washed with 1x PBS for 1 hr at RT three times. Samples were then delipidated and permeabilized as described in the Adipo-Clear protocol (Chi et al., 2018a). Fully delipidated samples were incubated in 25% sucrose/PBS solution for 2 hr until sinking, and then frozen in Tissue-Tek O.C.T Compound (Sakura Finetek USA, 4583). Frozen iBAT samples were sectioned into 40 μm slices using a Leica CM3050 S cryostat. Cryo-sections were blocked with PBS/0.1% Triton X-100/0.05% Tween 20/2 μg/ml heparin (PtxwH buffer) containing 3% donkey serum for 1 hr at RT, and then incubated with primary antibodies diluted in PtxwH buffer at RT overnight. Samples were then rinsed in PtxwH buffer for 5 min, 10 min, and 30 min to remove unbound antibodies. Secondary antibodies diluted in PtxwH buffer were then applied to samples at RT for 4 hr. Samples were next rinsed with PtxwH buffer for 5 min, 10 min, and 30 min, followed by 1x PBS for 10 min twice. Finally, samples were immersed in antifade mountant (ProLong Gold, ThermoFisher Scientific, P10144) and sealed with a coverslip. Anti-TH (1:200, Millipore, AB152) and Alexa-647 conjugated anti-rabbit secondary (1:200, Invitrogen, A32795) antibodies were used for staining cryo-sections. Fluorescently labeled samples were imaged on an inverted LSM 880 NLO laser scanning confocal and multiphoton microscope (Zeiss) with a 20X lens (NA 0.8).
 
-## Light sheet microscopy
+### Light sheet microscopy
 
 Whole-tissue iWAT samples were all imaged on a light sheet microscope (Ultramiscroscope II, LaVision Biotec) equipped with 1.3X and 4X objective lenses and an sCMOs camera (Andor Neo). Images were acquired with the ImspectorPro software (LaVision BioTec). Samples were positioned in an imaging chamber filled with benzyl ether and illuminated from one side by the laser light sheet with 488, 561, and 640 nm laser channels. Samples were scanned at a step-size of 4 μm for the 1.3x objective and 3 μm for the 4x objective.
 
-## Image processing
+### Image processing
 
 All images and videos were generated using Imaris software (version 9.5.1, Bitplane). 3D tissue reconstruction was generated using the ‘Volume’ function. Maximum intensity projections and optical slices were obtained using the ‘Ortho Slicer’ function. All images were captured using the ‘Snapshot’ tool, while all videos were made using the ‘Animation’ tool.
 
-## Neurite density quantification
+### Neurite density quantification
 
 Inguinal regions of iWAT from iKO and control iWAT samples were imaged with the 4X objective lens on the light sheet microscope. Three animals from each group were imaged and analyzed. In each 3D image, we randomly isolated small cuboidal volumes (4–8 volumes per sample) that were completely contained within lobules using the ‘Surfaces’ tool followed by the mask channel option of Imaris. Volumes of the isolated segments were automatically generated by ‘Surfaces’. To sample parenchymal neurites, we avoided placing volumes in areas that contain nerve bundles or blood vessel innervation. Using the ‘Filament’ tool, we computationally reconstructed parenchymal neurites by automatically tracing the TH signal and calculated the total neurite length within each volume. We presented the ratio of total neurite length (mm) by regional volume (mm3) as neurite density within a volume. To adjust for adipocyte size/number, we manually counted adipocyte number as shown by the tissue autofluorescence signal from multiple representative slices within each volume. The average adipocyte number per slice was then multiplied by the height (z depth) of that volume to generate a factor representing adipocyte density. The ratio of total neurite length (mm) by adipocyte density (arbitrary unit) is presented (Figure 4—figure supplement 2).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism 8 (GraphPad Software, San Diego, CA, USA). For gene expression analysis, neurite density quantification, and body weight measurement, we estimated the approximate effect size based on independent preliminary studies. When indicated, an unpaired two-tailed Student’s t test was used to analyze statistical differences. Two-way ANOVA followed by Bonferroni’s multiple comparisons test was applied to determine the statistical differences for the rest of the analyses. The statistical details for each experiment can be found in the figure legends. p Values below 0.05 were considered significant throughout the study.

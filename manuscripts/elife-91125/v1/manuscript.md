@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/042nb2s44 Department of Biology and Department of Chemistry, Massachusetts Institute of Technology Cambridge United States
-2. https://ror.org/03x1ewr52 Thermo Fisher Scientific San Jose United States
+1. Department of Biology and Department of Chemistry, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+2. Thermo Fisher Scientific San Jose United States ([ROR:03x1ewr52](https://ror.org/03x1ewr52))
 
 † Corresponding author
 
@@ -28,13 +28,60 @@ The logic of the Wzx/Wzy-dependent glycoconjugate biosynthesis pathways is highl
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig1-v1.jpg)
 
-**Figure 1.:** S.enterica serovar typhimurium.The pathway is initiated by the transfer of a phospho-Gal onto undecaprenol phosphate (UndP), catalyzed by the LgPGT WbaP. A series of glycosyltransferases (GTs) add additional sugars to the nascent repeat unit (RU). The repeat unit is then flipped across the membrane by a Wzx-class flippase, and RUs are polymerized through the coordinated action of the Wzy polymerase and Wzz chain-length regulatory protein.
+**Figure 1.:** The pathway is initiated by the transfer of a phospho-Gal onto undecaprenol phosphate (UndP), catalyzed by the LgPGT WbaP. A series of glycosyltransferases (GTs) add additional sugars to the nascent repeat unit (RU). The repeat unit is then flipped across the membrane by a Wzx-class flippase, and RUs are polymerized through the coordinated action of the Wzy polymerase and Wzz chain-length regulatory protein.
 
 PGTs belong to one of two superfamilies based on the membrane topology of the catalytic core structure (Figure 2, Table 1). Polytopic PGTs (polyPGTs), such as MraY, (Chung et al., 2013; Oluwole et al., 2022) have a catalytic domain comprising multiple transmembrane helices (TMHs). while the catalytic core of monotopic PGTs (monoPGTs) contains only a single reentrant membrane helix (RMH) (O’Toole et al., 2021a). Analysis of the monoPGT superfamily utilizing a sequence similarity network (SSN) recently classified several family members each featuring variation around the core catalytic domain (O’Toole et al., 2021b). Small monoPGTs (Sm-PGTs), such as PglC from the Campylobacter protein glycosylation pathways only include the catalytic core (Lukose et al., 2015; Ray et al., 2018). Bifunctional monoPGTs (Bi-PGTs) include functional domains fused to either the N- or C-terminus of the monoPGT catalytic domain. Finally, large monoPGTs (Lg-PGTs), which are the most abundant, include both a predicted transmembrane four-helix bundle and a domain of unknown function (DUF) N-terminal to the monoPGT core catalytic domain. The DUF is highly conserved (PF13727) and has been computationally annotated as a CoA-binding domain, however, the roles of the conserved accessory domains in the Lg-PGTs remain unclear. The S. enterica WbaP is a prototypic Lg-PGT that has been biochemically characterized (Wang et al., 1996; Wang and Reeves, 1994; Patel et al., 2012; Patel et al., 2010; Saldías et al., 2008; Dodge et al., 2023). Initial computational assignment of the topology of Lg-PGTs misassigned the topology of the RMH as a TMH, confounding interpretations of biological data, as well as the subcellular localization of the DUF in these proteins (James et al., 2013; Furlong et al., 2015; Entova et al., 2018). Currently, although the structure of PglC, a sm-PGT from Campylobacter concisus has been determined by X-ray crystallography, (Ray et al., 2018) there is no experimental structure determination of any Lg-PGT to provide insight into the roles of the auxiliary domains or their interactions with the catalytic core. Furthermore, PglC was purified using detergent, potentially obscuring interactions that depend on the native membrane-bound environment of PglC.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig2-v1.jpg)
 
 **Figure 2.:** Sm-monoPGTs do occupy one leaflet of the membrane, comprise only the catalytic core of monotopic PGTs (monoPGTs) (blue surface), and are exemplified by the structurally characterized PglC from Campylobacter concisus (dark blue cartoon). Large monoPGTs (Lg-PGTs) feature the C-terminal conserved catalytic core domain (blue surface) and two uncharacterized N-terminal domains. These domains feature a predicted transmembrane helix bundle (purple surface) and a domain of unknown function (gold surface). Poly-PGTs such as MraY from Aquifex aeolicus (magenta cartoon) comprise a catalytic domain, which is structurally distinct Sm- or Lg-PGTs and have been demonstrated to dimerize in their active form.
+
+**Table 1.**
+ Summary of the differences between phosphoglycosyl transferase (PGT) superfamilies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sm-PGT</th>
+      <th>Lg-PGT</th>
+      <th>Poly-PGT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Catalytic Domain Topology</td>
+      <td>Monotopic</td>
+      <td>Monotopic</td>
+      <td>Polytopic</td>
+    </tr>
+    <tr>
+      <td>Domains</td>
+      <td>PGT only</td>
+      <td>PGT &amp; uncharacterized accessory domains</td>
+      <td>PGT only</td>
+    </tr>
+    <tr>
+      <td>Evolutionary Conservation</td>
+      <td>Prokaryotic</td>
+      <td>Prokaryotic</td>
+      <td>Prokaryotic &amp; eukaryotic</td>
+    </tr>
+    <tr>
+      <td>Oligomeric State</td>
+      <td>Monomer Ray et al., 2018; Anderson et al., 2023</td>
+      <td>Unknown</td>
+      <td>Dimer Chung et al., 2013; Oluwole et al., 2022</td>
+    </tr>
+    <tr>
+      <td>monoPGT SSN Abundance in superfamily O’Toole et al., 2021b</td>
+      <td>38%</td>
+      <td>47%</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
 
 Amphiphilic PrenPs such as UndP and decaprenol phosphate are central to glycoconjugate assembly in bacteria and represent an essential cellular resource with no other known function (Barreteau et al., 2009). The low abundance of UndP (ca. 0.1% of membrane lipids) (Barreteau et al., 2009; Entova et al., 2019) suggests that PrenP-dependent pathways must be subject to regulation to ensure that UndP supplies are maintained for critical pathways. For example, sequestration of UndP by disruption of O-antigen production in E. coli results in gross morphological defects and cell lysis (Jorgenson and Young, 2016). Despite this, our understanding of the regulation of Wzx/Wzy-dependent glycoconjugate biosynthesis remains limited. PGTs are likely to be subject to regulation, as they act as the initial ‘gatekeeper’ enzyme to transfer glycosyl phosphates from soluble NDP-sugar substrates onto the membrane-embedded UndP. NDP-sugars used by PGTs are often highly modified or are shared with fundamental cellular processes such as glucose metabolism, placing a further metabolic burden on organisms to modulate PGT activity. Recently, the sm-PGT CapM from capsular polysaccharide biosynthesis in Staphylococcus aureus was demonstrated to be activated via phosphorylation by a regulatory kinase (Rausch et al., 2019). Studies of a WbaP ortholog from Streptococcus pneumoniae suggest that residues in the DUF may modulate PGT function or overall pathway flux, raising the possibility that the accessory domains found in Lg-PGT may serve a regulatory function (James et al., 2013; Cartee et al., 2005).
 
@@ -44,33 +91,75 @@ Here, we build upon the successful membrane protein solubilization techniques to
 
 ## Results
 
-## Production of Lg-PGTs in Styrene maleic acid liponanoparticles (SMALP)
+### Production of Lg-PGTs in Styrene maleic acid liponanoparticles (SMALP)
 
-## Characterization of S. enterica WbaP in SMALP
+#### Characterization of S. enterica WbaP in SMALP
 
 We took a multipronged approach to investigate the putative oligomerization state of S. enterica in liponanoparticles (Figure 3, Figure 3—figure supplement 1A). As SMALPs may display high heterogeneity we turned to size-exclusion chromatography (SEC) to remove aggregated material or free SMA polymer that had carried over through initial purification. A small peak was observed corresponding to the void volume of the column, but most of the material eluted in a sharp peak with a retention time of 11.09 min corresponding to a molecular weight of 464 kDa (Figure 3—figure supplement 1B). The predicted molecular weight of the expression construct of WbaP is 61.2 kDa. However, as the SMA and lipid accompanying WbaP in the SMALP may influence separation on SEC relative to globular standards, we sought alternative methods to accurately determine the mass of the WbaP SMALPs in solution. Size exclusion chromatography with multi-angle light scattering (SEC-MALS), mass photometry, and Direct Mass Technology mode (Orbitrap-enabled charge detection mass spectrometry) (Kafader et al., 2019) were utilized to assess the molar mass of WbaP in SMALP. In agreement with the initial SEC experiments, WbaP eluted in a sharp peak on an analytical SEC column in line with MALS (Figure 3A). The polydispersity of this peak was calculated to 1.001, and the molar mass was calculated to 255±9 kDa. Accurate determination of the mass of a species analyzed by SEC-MALS requires a precise assignment of the refractive index increment (dn/dc) of each component of the analyte, however, the refractive index increment (dn/dc) for SMA polymers is under debate in the literature (Hesketh et al., 2020; Thomsen, 2020) Despite the low polydispersity and narrow mass range assigned to this peak, the three-component nature (protein, lipid, and polymer) of WbaP-embedded SMALPs prevents deconvolution of the mass of the protein component. To this end, we turned to Direct Mass Technology mode and mass photometry, techniques that can accurately determine the mass of macromolecules in solution regardless of their composition (Kafader et al., 2019; Olerinyova et al., 2021) When analyzed by mass photometry or Direct Mass Technology mode, WbaP-containing SMALPs were determined to have a molecular weight of ~240 kDa (Figure 3B and C). As the monomer molecular weight of the WbaP construct was calculated to 61.2 kDa, and the SMA along with encapsulated lipids can add a variable amount of mass depending on the solubilized protein, we reasoned that WbaP could exist as a dimer or trimer in SMALP.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig3-v1.jpg)
+
+**Figure 3.:** (A) WbaP in styrene-maleic acid liponanoparticles (SMALP) analyzed by size exclusion chromatography with multi-angle light scattering (SEC-MALS). A small peak is observed at the void volume of the column, while the main peak has a calculated molecular weight of 255 ± 8 kDa, with a polydispersity value of 1.001. (B) WbaP in SMALP analyzed by mass photometry. The sample is monodisperse, and the main species has an apparent molecular weight of 239 ± 28 kDa. (C) Mass spectrum of WbaP in SMALP analyzed by Direct Mass Technology mode. (D) Western blot analysis of Lysine-reactive dithiobis(succinimidyl propionate) (DSP) crosslinker reacted with WbaP in SMALP. Lanes: 1: Control, 2: 0.1 mM DSP, 3: 0.25 mM DSP, 4: 1 mM DSP, 5: 5 mM DSP, 7: 0.1 mM DSP reduced, 8: 0.25 mM DSP reduced, 9: 1 mM DSP reduced, 10: 5 mM DSP reduced.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Coomassie-stained sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE) of large-scale WbaP purification. Lanes: 1: Lysate, 2: Cell envelope fraction (CEF), 3: SMA30-solubilized CEF, 4: StreptactinXT flowthrough, 5: Wash 1, 6: Wash 2, 7–14: Biotin elution. (B) Purified WbaP separated on an Enrich SEC 650 column. Peak 1 corresponds to the void volume of the column, Peak 2 elutes at 11.09 mL, corresponding to a molecular weight of 464 kDa.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A cartoon scheme depicting the results of crosslinking for either a WbaP monomer, or a WbaP dimer. Crosslinking efficiency is read out by sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE) or western blot. (B) Panel of crosslinking compounds screened. DMA: dimethyl adipimidate, DMS: dimethyl suberimidate, BSOCOES: bis[2-(succinimidyloxycarbonyloxy)ethyl]sulfone, DSP: dithiobis(succinimidyl propionate), DTSSP: 3,3'-dithiobis(sulfosuccinimidyl propionate).
+
 To further define the oligomeric state of WbaP in SMALP, we utilized amine-reactive crosslinking probes. By selecting crosslinkers of a defined length, we reasoned that we could covalently trap oligomers and distinguish dimer from trimer using non-reducing sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE) (Figure 3—figure supplement 2A). A small panel of commonly used crosslinkers was selected to screen against WbaP in SMALP (Figure 3—figure supplement 2B). Of these, the crosslinker dithiobis(succinimidylpropionate) (DSP), with a spacer length of 12.0 Å, readily crosslinked WbaP (Figure 2D, Supplementary file 1A). Crosslinking efficiency was dependent on DSP concentration, with complete crosslinking observed with 5 mM DSP after a 5 min reaction. Crosslinking could be reversed by the addition of a Dithiothreitol (DTT). Fully crosslinked WbaP migrated at ~2 x the molecular weight of the non-crosslinked species, confirming a WbaP dimer in SMALP.
 
-## CryoEM of S. enterica WbaP in SMALP
+#### CryoEM of S. enterica WbaP in SMALP
 
 With high confidence in the monodispersity of our sample and the oligomeric state of S. enterica WbaP in SMALP, we continued with CryoEM structure analysis. Prior to this work, only a small screening dataset had been collected on a Talos Arctica instrument (Dodge et al., 2023) Grids were prepared using the highly purified eluent from SEC, movies were collected using a Titan Krios G3i microscope. 2D classes from extracted particles closely matched those observed earlier, and initial ab-initio 3D models displayed features consistent with a liponanoparticle, as well as two distinct protein lobes outside of the membrane. However, various refinement strategies failed to yield even moderate-resolution reconstructions. Reasoning that the auto-generated refinement mask may include SMA and lipid regions, we sought to generate a reasonable model to assist in manual masking during data processing.
 
-## Creation and validation of S. enterica WbaP dimer model
+#### Creation and validation of S. enterica WbaP dimer model
 
 We turned to AlphaFold to generate models suitable for docking and refinement (Jumper et al., 2021) Although the prediction of S. enterica WbaP available from the AlphaFold protein structure database has high confidence throughout most of the model (Figure 4A, Figure 4—figure supplement 1A, B), we noted a region of moderate confidence between the DUF and the PGT catalytic domain. In particular, the placement of a predicted β-hairpin motif from Asn251 to Gln268 stood out as anomalous, as this motif was flipped away from the remainder of the protein, approximately 25 Å from the DUF, and ~37 Å from the PGT domain (Figure 4A). As the AlphaFold multimer routine has been reported to successfully predict oligomeric complexes, (Evans et al., 2021; Mirdita et al., 2022) we assessed whether a dimer model of S. enterica WbaP would represent a better starting point for docking and refinement into the CryoEM reconstruction. The dimer was also predicted with high overall confidence (Figure 4B, Figure 4—figure supplement 1A). Unexpectedly, the β-hairpin motif that had poor placement in the monomer model was predicted to mediate domain swapping within the dimer model, (Bennett et al., 1994; Liu and Eisenberg, 2002) with the β-hairpin from chain A continuing a β-sheet structure present in the DUF of chain B (Figure 4B and C). The predicted local distance difference test (pLDDT) score assigned to each amino acid by AlphaFold can be used to judge the quality of a predicted model on a per-residue basis (Jumper et al., 2021; Evans et al., 2021) Amino acids with pLDDT scores >70 are considered to have high confidence (Akdel et al., 2022) For the β-hairpin domain swap region, the average pLDDT score is 78, indicating high confidence in the placement of this motif (Figure 4—figure supplement 1A). Significantly, the prediction of structures of other Lg-PGTs reveals that this β-hairpin domain swap within a homodimer is highly conserved (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig4-v1.jpg)
+
+**Figure 4.:** (A) WbaP monomer prediction. (B) WbaP dimer prediction. (C) Close-up view of predicted dimer interface showing the interdigitating β-hairpin motifs between DUFA and DUFB. Phosphoglycosyl transferase (PGT) domains hidden for clarity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) AlphaFold predicted local distance difference test (pLDDT) plots and predicted aligned error (PAE) plots for S. enterica WbaP monomer and dimer predictions. The overall confidence in both models is high. (B) Topology diagram of AlphaFold S. enterica WbaP prediction. Structural domains are shaded in gray. TMH: transmembrane helix, DUF: domain of unknown function, PGT: phosphoglycosyl transferase, RMH: re-entrant membrane helix.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** β-hairpin-mediated domain swaps are observed for each prediction. While the estimated quality of predictions varies from protein to protein, the overall confidence in the models is satisfactory, with the majority of the regions of the proteins having a pLDDT score ≥70.
 
 Based on the earlier success with crosslinking S. enterica WbaP in SMALP, we further investigated the predicted domain swapping using a targeted crosslinking strategy. A set of Cys-pair variants of WbaP were constructed such that thiol-reactive crosslinkers with limited crosslinking length could be used to ‘staple’ the WbaP dimer at the predicted domain swap interface (Figure 5A–C). For these experiments, we employed two different crosslinking strategies. For the first Cys-crosslinking experiment, we utilized Cu phenanthroline to catalyze the direct oxidation of Cys residues to form a disulfide bond between Cys residues within 2.05 Å. For the second strategy, we utilized dibromobimane (bBBr) (Kim and Raines, 1995) to form a covalent crosslink between Cys residues within 4.88 Å. We observed concentration-dependent crosslinking for two discrete sets of crosslinking pairs along the predicted domain swap interface using either Cu phenanthroline or bBBr (Figure 5D and E). No crosslinking was observed for wild-type protein using either crosslinking strategy, demonstrating that there are no native cysteines within crosslinking distance, (Figure 5E) as predicted by the AlphaFold dimer model.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig5-v1.jpg)
 
-**Figure 5.:** (A, B) AlphaFold prediction with Cys pair variants modeled as sticks. The β-hairpin of one monomer is shown in sky blue and the continuing β- strand of the other monomer is shown in orange. (C) Structure and crosslinking radii of thiol-reactive crosslinkers. (D) Crosslinking of Cys pair WbaP variants in styrene-maleic acid liponanoparticle (SMALP) using dibromobimane (bBBr) and Cu Phenanthroline. (E) bBBr crosslinking of single and double WbaP Cys variants in SMALP.Figure 5—source data 1.Figure 5D.Figure 5—source data 2.Figure 5E.
+**Figure 5.:** (A, B) AlphaFold prediction with Cys pair variants modeled as sticks. The β-hairpin of one monomer is shown in sky blue and the continuing β- strand of the other monomer is shown in orange. (C) Structure and crosslinking radii of thiol-reactive crosslinkers. (D) Crosslinking of Cys pair WbaP variants in styrene-maleic acid liponanoparticle (SMALP) using dibromobimane (bBBr) and Cu Phenanthroline. (E) bBBr crosslinking of single and double WbaP Cys variants in SMALP.
 
 As a final validation of the predicted dimer model, we used crosslinking mass spectrometry (XLMS). Both DSS and tBu-PhoX were chosen for crosslinking, as DSS is commonly used for XLMS, (Chavez and Bruce, 2019; Piersimoni et al., 2022) and tBu-PhoX has membrane-penetrating properties (Figure 6A; Jiang et al., 2022). After crosslinking, WbaP was exchanged into DDM micelles (Hesketh et al., 2020), and subjected to protease digestion. In-solution digestion resulted in fragments covering 93.86% S. enterica WbaP, and 49 unique crosslinking sites were identified (Figure 6B, Figure 6—figure supplement 1). The majority of the DSS crosslinks localized to the solvent-accessible areas of the PGT domain, while several of the tBu-PhoX crosslinks localized to the membrane-adjacent regions at the putative dimer interface (Figure 6C). Inter vs intra-molecular crosslinks were assigned by XMAS (Lagerwaard et al., 2022) based on distance constraints for each crosslinker (Figure 6A). The Cα−Cα distances bridged by either crosslinker should not exceed 35 Å. The observed inter-chain crosslinks agreed with the predicted dimer interface, with Lys273 proximal to Lys146, Lys148, and Lys81. In addition, Lys81 and Lys451 were within crosslinking range (Figure 6C). With targeted crosslinking experiments validating the predicted domain swapping and XLMS validating the dimeric oligomerization state, we proceeded with the AlphaFold dimer model for CryoEM data processing and refinement.
 
-## S. enterica WbaP structure
+![Figure 6.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig6-v1.jpg)
+
+**Figure 6.:** (A) Structures of amino reactive crosslinkers used for XLMS analysis. (B) Overview of identified WbaP crosslinks from different protease treatments and crosslinkers. (C) Identified crosslinks mapped onto S. enterica WbaP AlphaFold dimer model. Disuccinimidyl suberate (DSS) crosslinks are shown in black, tert-butyl disuccinimidyl phenyl phosphonate (tBu-PhoX) crosslinks are shown in gray. (D) Residues linked by intermolecular crosslinks. The distance between these residues within a single monomer and between monomers is shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Top: Coverage and detected modifications across the WbaP construct a primary sequence. Residues highlighted in green were detected in fragments after proteolytic degradation. Bottom: Example of MS/MS spectrum of the disuccinimidyl suberate (DSS) inter-chain crosslinked fragment between Lys148 and Lys273.
+
+### S. enterica WbaP structure
 
 A soft mask was generated using the AlphaFold dimer model of WbaP to mask around phospholipid and SMA density in the best unmasked CryoEM reconstruction. Subsequent masked refinement and cleaning of particle stacks led to a moderate-resolution (~4.1 Å by GSFSC) reconstruction from 196,663 particles which was consistent with the AlphaFold model (Figure 7A and B, Figure 7—figure supplement 1, Figure 7—figure supplement 2). Docking and real-space refinement led to the placement of 796 out of 1056 residues of the dimer (Figure 7A and B). Superposition between the refined model and the AlphaFold dimer prediction results in an RMSD of 2.83 Å, demonstrating close agreement between the two models (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig7-v1.jpg)
+
+**Figure 7.:** WbaP dimer colored in blue and orange (A) Unsharpened map displaying clear density for stabilizing liponanoparticle. Unsharpened density colored light gray. (B) Sharpened map after masked local refinement. Sharpened density colored light gray. (C) Superposition of refined WbaP model and full-length AlphaFold prediction, RMSD: 2.83 Å. AlphaFold dimer colored gray. A predicted helix-turn-helix motif lacks density in the experimental map.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Areas buried within the membrane tend to exhibit an overall lower local resolution than more surface-exposed regions.
 
 The overall architecture of the WbaP dimer is T-shaped, with the two four-TMH bundles forming the central stalk, each capped by a DUF. The dimer interface comprises ~780 Å2 of buried surface area, involving 7.1% of the residues of the protein. A modest (176 Å2) interface is found along the four TMH bundles, with the C-terminal half of helix 3 (Ile99 – Phe107) mediating contacts. While the C-terminal regions of helix 3 are within interacting distance, the N-termini (Pro82) are ~32 Å apart, creating a large void in the center of the dimer, which is presumably occupied by phospholipid. The remainder of the dimer interface occurs at the DUF domains, mediated almost entirely by the β-hairpin domain crossover discussed above. Based on previous experiments establishing the topology of monoPGT catalytic domains, the DUF domains cap the cytosolic loops between the four TMH bundles (Ray et al., 2018; Furlong et al., 2015; Entova et al., 2018).
 
@@ -78,19 +167,31 @@ The catalytic domains of the Lg-PGT protrude away from the dimer interface, plac
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig8-v1.jpg)
 
-**Figure 8.:** S. enterica WbaP phosphoglycosyl transferase (PGT) domain and PglC from Campylobacter concisus (PDBid 8G1N).WbaP is shown in light blue, PglC is in magenta. (A) Superposition of WbaP and PglC. While the overall RMSD is 1.83 Å, regions in PglC which can be used to computationally assign substrate are significantly different in WbaP. A loop region in PglC is replaced with a helix-turn-helix motif in WbaP, and the C-terminus of WbaP is significantly shorter than that of PglC. (B) Top: an aromatic box motif in PglC is conserved among PGTs that utilize UDP-diNAcBac. Aromatic box residues are shown as dark green sticks. Bottom: Residues found in S. enterica WbaP at homologous positions to aromatic box residues in PglC are shown as dark green sticks. Aromatic box residues are non-conserved in WbaP.
+**Figure 8.:** WbaP is shown in light blue, PglC is in magenta. (A) Superposition of WbaP and PglC. While the overall RMSD is 1.83 Å, regions in PglC which can be used to computationally assign substrate are significantly different in WbaP. A loop region in PglC is replaced with a helix-turn-helix motif in WbaP, and the C-terminus of WbaP is significantly shorter than that of PglC. (B) Top: an aromatic box motif in PglC is conserved among PGTs that utilize UDP-diNAcBac. Aromatic box residues are shown as dark green sticks. Bottom: Residues found in S. enterica WbaP at homologous positions to aromatic box residues in PglC are shown as dark green sticks. Aromatic box residues are non-conserved in WbaP.
 
 During the course of this work, a structural description of a WbaP ortholog from E. coli (NCBI:taxid562) by CryoEM was published (Uchański et al., 2021). This protein was purified using both detergent and amphipols, and was complexed with a nanobody fusion to facilitate particle identification and alignment during 3D-reconstruction. Although the maps and models associated with this data are not yet publicly available, visual comparison between S. enterica WbaP and published images of the E. coli WbaP reveals an overall similar architecture, including disorder in the helix-turn-helix region. However, the handedness of the E. coli WbaP reconstruction is inverted compared to S. enterica WbaP as well as the predicted AlphaFold model. Notably, AlphaFold multimer was not available at the time of publication of the E. coli structure and the handedness may be ambiguous at the observed resolution without a model for guidance.
 
 With a clear idea of the overall architecture of WbaP, we sought to better understand the role of the DUF beyond the stabilization of the dimer interface. To this end, we used both the CryoEM reconstruction and AlphaFold structural models to guide the generation of truncated constructs of WbaP encoding only the DUF. A construct encoding residues 146–272 resulted in the production of soluble protein (Figure 9—figure supplement 1), which was then used to screen for potential nucleotide ligands by nano differential scanning fluorimetry (nDSF, Figure 9—figure supplement 2). This screen identified UMP, UDP, and UTP as potential stabilizing ligands, and also demonstrated that the UDP-Gal substrate of the catalytic domain destabilized the truncated DUF construct. These results imply that the DUF plays a role in allosteric regulation by sensing nucleotides and nucleotide sugars. Indeed, full-length WbaP was found to be strongly inhibited by UMP, with an apparent IC50 of 4.1 μM (Figure 9). This is in close agreement with studies on the WbaP ortholog CpsE, for which UMP has an apparent Ki of 3 μM (Cartee et al., 2005). The unusual profile of the UMP inhibition curve may reflect UMP binding both competitively to UDP-Gal at the active site, as well as to an allosteric site within the DUF. Thus, it appears that the DUF may act as a regulatory domain, preventing the overuse of limited UndP resources by modulating PGT activity in response to excess UMP production.
 
-## Relationship between Lg-PGTs and PglF-like dehydratases
+![Figure 9.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig9-v1.jpg)
+
+**Figure 9.:** Left: Percent activity vs UMP concentration. A UMP-dependent decrease in WbaP activity is observed. Right: Curve-fitting of UMP inhibition data yields an IC50 apparent of 4.1 μM. Data were collected in triplicate with error bars representing standard deviation.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Top: Sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE) gel monitoring purification. The final purified material is indicated by a red star. Predicted molecular weight: 14.83 kDa. Lanes: 1: Lysate, 2: Soluble, 3: Pellet, 4: flowthrough, 5: wash, 6–8: Elution, 9: Post-TEV flowthrough, 10: low imidazole Elution, 11: high imidazole elution, 12: S200 peak 1, 13: S200 peak 2. Bottom: FPLC chromatogram of S200 separation.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Top: Incubation of DUF with selected nucleotide triphosphates (NTPs). Middle: Incubation of DUF with selected nucleotide diphosphates (NDPs) and nucleotide monophosphates (NMPs). Bottom: Incubation of DUF with additional putative small molecule ligands. (B) Top: UMP titration, change in Trp/Tyr fluorescence 1st derivative indicated with an asterisk. Bottom: TMP titration, change in Trp/Tyr fluorescence 1st derivative indicated with an asterisk. See Supplementary file 1C for tabulated shifts in melting temperature and full ligand names.
+
+### Relationship between Lg-PGTs and PglF-like dehydratases
 
 The N-terminal domains found in WbaP are highly conserved across the Lg-PGT family, (O’Toole et al., 2021b) however, a search of the PDB for structural homologs of the domain alone returned only nucleotide-binding domains with limited homology to the DUF. To sample a larger set of structural models, we utilized the recently described Foldseek tool to parse the AlphaFold model database (AFDB proteome) (van Kempen et al., 2023). In this analysis, although most of the aligned models were other PGTs, the N-terminal domains of WbaP also exhibited structural homology to models generated from a class of NDP-sugar dehydratases involved in glycoconjugate biosynthesis (Figure 10). Homologs identified by Foldseek include PglF from Campylobacter and Cap5D from Staphylococcus. This family of DHs is well characterized both structurally and mechanistically, however, constructs used for most structural studies are truncated at the N-terminus and do not include the transmembrane domain or DUF technical reasons (Riegert et al., 2017; Olivier et al., 2006). As these two classes of enzymes are functionally unrelated, the conservation of their N-terminal domains is puzzling, and warrants re-examination of full-length constructs of PglF-like DHs.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/91125/elife-91125-fig10-v1.jpg)
 
-**Figure 10.:** C.jejuni PglF (Uniprot: Q0P9D4), a nucleotide sugar dehydratase, and S. enterica WbaP.(A) AlphaFold prediction of full-length PglF. (B) Superposition of C. jejuni PglF and S. enterica WbaP 4TMH domain. RMSD: 4.3 Å. Dehydratase domain is omitted for clarity. (C) Superposition of C. jejuni PglF and S. enterica WbaP domain of unknown function (DUF) domain. RMSD: 2.3 Å. Dehydratase domain is omitted for clarity.
+**Figure 10.:** (A) AlphaFold prediction of full-length PglF. (B) Superposition of C. jejuni PglF and S. enterica WbaP 4TMH domain. RMSD: 4.3 Å. Dehydratase domain is omitted for clarity. (C) Superposition of C. jejuni PglF and S. enterica WbaP domain of unknown function (DUF) domain. RMSD: 2.3 Å. Dehydratase domain is omitted for clarity.
 
 ## Discussion
 
@@ -106,100 +207,127 @@ The liponanoparticle-based approach for purification of S. enterica WbaP provide
 
 ## Materials and methods
 
-## Cloning and expression
+### Cloning and expression
 
-## Expression of full-length Lg-PGTs
+#### Expression of full-length Lg-PGTs
 
 WbaP from S. enterica LT2 (Uniprot: P26406) was purified as previously described (Dodge et al., 2023). Briefly, C43 cells harboring pAM174 (Sjodt et al., 2018) were transformed with a plasmid encoding S. enterica WbaP with an N-terminal SUMO tag – linker – dual-strep tag sequence. Protein was expressed using autoinduction (Studier, 2005) in 0.5 L terrific broth (Tartof, 1987) supplemented with 150 μg/mL kanamycin and 25 μg/mL chloramphenicol. Cells were incubated at 37 °C until the OD600 reached ~1.5, and then the temperature was adjusted to 18 ° C and 1 g solid (L)-arabinose was added to each culture. After 18–20 hr expression, cells were pelleted via centrifugation, pellets were transferred to 1-gallon Ziplock freezer bags, manually spread to a uniform thin layer, and frozen at –80 °C.
 
-## WbaP DUF expression and purification
+#### WbaP DUF expression and purification
 
 The region encoding residues 146–272 from S. enterica WbaP was ordered as a synthetic gene, and cloned into pMCSG7 (Eschenfeldt et al., 2009) using Gibson assembly (Gibson et al., 2009). The resulting plasmid was transformed into E. coli Bl21 (DE3), and protein was expressed using autoinduction (Studier, 2005) in 0.5 L cultures supplemented with 100 μg/mL ampicillin at 37 °C. The temperature was adjusted to 18 °C once the OD600 reached 1.5, and cultures were incubated for 18 hr. After expression, cells were harvested via centrifugation, transferred to 1-gallon Ziplock freezer bags, spread to a thin layer, and stored at –80 °C.
 
-## Mutagenesis
+#### Mutagenesis
 
 S. enterica WbaP Cys-pair variants were generated using primers designed in the QuikChange primer tool (Agilent). Successful mutations were confirmed by Sanger sequencing. Forward and reverse primers are shown below.
 
-## Protein purification
+<table>
+  <thead>
+    <tr>
+      <th>Mutant</th>
+      <th>Primers (5’–3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T239C</td>
+      <td>5'-GCGAAATGACGGAACTACGCAGACGGAGCGACAGTGATG-3' 5'-CATCACTGTCGCTCCGTCTGCGTAGTTCCGTCATTTCGC-3'</td>
+    </tr>
+    <tr>
+      <td>V240C</td>
+      <td>5'-GCGAAATGACGGAACGCATGTGACGGAGCGACAGTGATG-3' 5'-CATCACTGTCGCTCCGTCACATGCGTTCCGTCATTTCGC-3'</td>
+    </tr>
+    <tr>
+      <td>L265C</td>
+      <td>5'-CAGGTTATTCTGAATGCGGCACAACATCACCTCGTGGGAG-3' 5'-CTCCCACGAGGTGATGTTGTGCCGCATTCAGAATAACCTG-3'</td>
+    </tr>
+    <tr>
+      <td>R266C</td>
+      <td>5'-GGTTATTCTGAATGCAAAGCAACATCACCTCGTGG-3’ 5'-CCACGAGGTGATGTTGCTTTGCATTCAGAATAACC-3'</td>
+    </tr>
+  </tbody>
+</table>
 
-## WbaP in SMALP
+### Protein purification
+
+#### WbaP in SMALP
 
 WbaP was purified in SMALP200 liponanoparticles as previously described (Dodge et al., 2023). Frozen cells were resuspended in buffer A (50 mM HEPES pH 8.0, 300 mM NaCl) at 4 mL per g pellet. Resuspended pellets were supplemented with 2 mM MgCl2, 0.06 mg/mL lysozyme (RPI), and 0.5 mg/mL DNase I (Millipore Sigma) and incubated on ice for 30 min. Cells were disrupted via sonication (2 × 90 s, 50% amplitude, 1 s on 2 s off), and the cell membrane was isolated via differential centrifugation (Ti-45 rotor, 9000 g 45 min, reserve supernatant, 140,000 g 65 min). Isolated membranes were diluted to 50 mg/mL using buffer A (assessed by UV absorbance at 280 nm), flash frozen in liquid N2, and stored at –80 °C. Isolated membranes were thawed on ice, and mixed 1:1 (v/v) with a 2% stock solution of SMALP200 (Polyscope) or buffer A and rotated at room temperature for 1 hr. Soluble liponanoparticles were isolated by centrifugation (Ti45 rotor, 160,000 × g 65 min). After centrifugation, pellets were discarded, and the supernatant was flowed over 1 mL Strep-Tactin XT 4flow resin (IBA Biosciences) pre-equilibrated with buffer A. The flowthrough was re-run over the column bed, and the column was washed with 5 mL buffer A. Protein was eluted using 3 mL Buffer A + 50 mM Biotin (buffer B). Protein-containing fractions were identified by UV-vis (Nanodrop) and pooled. Biotin was removed using 3 x tandem 5 mL HiTrap desalting columns (Cytiva) equilibrated with 25 mM HEPES pH 8.0, 150 mM NaCl (buffer C). Protein purity was assessed via SDS-PAGE, and protein concentration was determined via BCA assay (Pierce). Protein was concentrated to 4 mg/mL, and flash frozen in liquid N2, then stored at 80 °C.
 
-## Soluble WbaP truncation
+#### Soluble WbaP truncation
 
 All purification steps were performed on ice. Frozen cell pellets were resuspended in buffer D (50 mM HEPES pH 7.5, 300 mM NaCl, 20 mM imidazole pH 7.5, 5% glycerol) at 4 mL per g cell pellet. Resuspended pellets were brought to 2 mM MgCl2, 0.06 mg/mL lysozyme (RPI), and 0.5 mg/mL DNase I (Millipore Sigma). Cells were incubated on ice for 30 min. Cells were then disrupted via sonication (2 × 90 s, 50% amplitude, 1 s on 2 s off). Insoluble material was removed via centrifugation (Ti45 rotor, 42,000 RPM 60 min). The supernatant was sterile filtered and loaded onto a 5 mL NiNTA His-Trap column using an Akta FPLC pre-equilibrated with buffer D. Protein was eluted using a linear gradient from 0–100% buffer E (50 mM HEPES pH 7.5, 300 mM NaCl, 400 mM imidazole pH 7.5, 5% glycerol) over five column volumes. Peak fractions were pooled, supplemented with TEV protease at a 1:7 TEV:protein ratio, and dialyzed overnight at 4 °C against 3 L buffer F (25 mM HEPES pH 7.5, 150 mM NaCl, 5% glycerol). Inverse NiNTA purification was used to remove the TEV protease and the cleaved 6x His tag. Flowthrough and low-imidazole wash from inverse NiNTA purification were pooled, concentrated to 5 mL, and injected on a Superdex S200 column pre-equilibrated with buffer F (25 mM HEPES pH 7.5, 150 mM NaCl, 5% glycerol). Peak fractions were analyzed via SDS-PAGE, and fractions containing the S. enterica WbaP DUF were pooled, concentrated to 2 mg/mL, flash frozen in liquid N2, and stored at –80 °C.
 
-## Characterization of Lg-PGTs in SMALP
+### Characterization of Lg-PGTs in SMALP
 
-## Size exclusion chromatography
+#### Size exclusion chromatography
 
 S. enterica WbaP in SMALP was analyzed to assess monodispersity via size exclusion chromatography (SEC) using an Enrich S650 column (Biorad) pre-equilibrated with buffer C. A 500 μL sample was injected, and peak fractions were pooled and concentrated to 10 mg/mL.
 
-## Size exclusion chromatography with multi-angle light scattering (SEC-MALS)
+#### Size exclusion chromatography with multi-angle light scattering (SEC-MALS)
 
 A 50 μL aliquot of 0.5 mg/mL S. enterica WbaP in SMALP was injected onto a WTC-030 fused silica column pre-equilibrated with HEPES buffered saline pH 7.5 (HBS). Eluate was flowed through a DAWN MALS detector (Wyatt) and an Optilab differential refractive index detector (Wyatt). Data were analyzed using ASTRA software (Wyatt), and the system was pre-calibrated with a BSA standard.
 
-## Mass photometry
+#### Mass photometry
 
 The S. enterica WbaP in SMALP was diluted to 40 nM in buffer C to a final volume of 50 μL. A CultureWell gasket (Grace Bio-Labs) was attached to a 24 mm × 50 mm glass coverslip (Electron Microscopy Sciences), and 10 μL buffer C was dispensed into a well to acquire focus. A 10 μL aliquot of 40 nM WbaP solution was added to the buffer well to achieve a final concentration of 20 nM WbaP. Following this a 120 s dataset was collected, and the data was analyzed using DiscoverMP (Refyn Ltd). A standard curve was generated using NativeMark unstained protein ladder (Thermo Fisher Scientific).
 
-## Crosslinking experiments
+### Crosslinking experiments
 
-## Crosslinking panel
+#### Crosslinking panel
 
 SMALPs containing S. enterica WbaP were reacted with a panel of lysine-reactive crosslinkers with variable chemistries, solubilities, and spacer lengths. Stock solutions were made of each crosslinker as follows: 50 mM dimethyl adipimidate (DMA) in water, 50 mM dimethyl suberimidate (DMS) in water, 25 mM bis[2-(succinimidyloxycarbonyloxy)ethyl]sulfone (BSOCOES) in dry DMSO, and 10 mM 3,3’-dithiobis(sulfosuccinimidyl propionate) (DTSSP) in water. Crosslinkers were immediately added to 15 µM WbaP in buffer C at a 20–40 fold molar excess. After incubation at room temperature for 30 min, the reaction was quenched by the addition of 1 µL of 1.5 M Tris-HCl, pH 8. Samples were analyzed by Western blot to detect the presence of crosslinked oligomers. Crosslinking efficiency was annotated as high (>30% total protein crosslinked to dimer), moderate (<30% total protein crosslinked to dimer), or none (no protein crosslinked to dimer).
 
-## Dithiobis(succinimidylpropionate) (DSP) crosslinking
+#### Dithiobis(succinimidylpropionate) (DSP) crosslinking
 
 DSP was dissolved in dry DMSO to a stock concentration of 25 mM and immediately added to a final concentration of 0.1–5 mM to 20 µL of WbaP in SMALP. After incubation at room temperature for 30 min, the reaction was quenched by the addition of 1 µL of 1.5 M Tris-HCl, pH 8. The sample was then divided into two aliquots and reducing (+ DTT) or nonreducing loading dye was added to each sample. Crosslinking was analyzed by SDS-PAGE followed by anti-Strep Western blot analysis.
 
-## Cys-pair variant crosslinking
+#### Cys-pair variant crosslinking
 
 A 2.5 mM stock solution of bBBr in 20% acetonitrile was prepared. bBBr was added to 15 µM WbaP to a final concentration of either 75 or 300 µM. After incubation at room temperature for 20 min, loading dye was added and SDS-PAGE was performed to assess the WbaP oligomerization state.
 
 A 10 mM 1,10-phenanthroline DMSO stock and a 5 mM CuSO4 aqueous stock were prepared. CuSO4 and 1,10 phenanthroline were added to 20 µL of 15 µM WbaP to final concentrations of 50 and 100 µM or 200 and 400 µM, respectively. The reactions were allowed to proceed at room temperature for 20 min, followed by the addition of non-reducing loading dye and SDS-PAGE analysis.
 
-## Structural biology experiments
+### Structural biology experiments
 
-## Electron microscopy details
+#### Electron microscopy details
 
 Data were collected at the MIT Characterization.nano facility. Optimal freezing conditions were screened using the Vitrobot system (Thermo Fisher Scientific). Grids were clipped and screened on a Talos Arctica G2 (Thermo Fisher Scientific) equipped with a Falcon 3EC camera (Thermo Fisher Scientific). Optimal particles were observed in grid GD5-3, containing 2 mg/mL S. enterica WbaP. Based on these preliminary results, 4481 movies of SMA30-solubilized S. enterica WbaP were collected on a Titan Krios G3i (Thermo Fisher Scientific, Supplementary file 1B) equipped with a K3 camera (Gatan, Inc). Motion correction, CTF estimation, particle extraction, ab-initio reconstruction, and all refinement steps were conducted using Cryosparc V4 Punjani, 2020; Punjani et al., 2017.
 
-## AlphaFold modelling
+#### AlphaFold modelling
 
 Lg-PGTs from T. thermophilus (Uniprot: A0A510HWX9), A. hydrophila (Uniprot: B3FN88), E. coli (Uniprot: P71241), and S. pneumoniae (Uniprot: Q9ZII5) were selected for structure prediction. AlphaFold models were generated as described previously Dodge et al., 2023. Sequences containing two chains of each Lg-PGT were used as input for a local installation of colabfold Mirdita et al., 2022, and predictions were generated using the flags --amber, --templates, --num-recycle 3, --use-gpu-relax activated.
 
-## Structure refinement and modeling
+#### Structure refinement and modeling
 
 PHENIX version 1.20.1 was used to process the AlphaFold prediction, dock, rebuild, and real-space refine the processed model, and validate the resulting structural model of S. enterica WbaP (Adams et al., 2010; Afonine et al., 2018). UCSF ChimeraX was used to visualize CryoEM volumes (Pettersen et al., 2021). Structural figures were generated using PyMOL (Schrodinger, 2015). The protein topology cartoon was generated using Pro-origami (Stivala et al., 2011). The EMBL PISA server was used to analyze the dimer interface (Krissinel and Henrick, 2007).
 
-## Mass spectrometry
+### Mass spectrometry
 
-## Cross-linking, protein digestion, and IMAC enrichment
+#### Cross-linking, protein digestion, and IMAC enrichment
 
 S. enterica WbaP in SMALP nanoparticles was prepared in 20 mM HEPES buffer pH 7.0 at a concentration of 0.6 mg/mL. 5 mM disuccinimidyl suberate (DSS) or 2 mM tert-butyl disuccinimidyl phenyl phosphonate (tBu-PhoX)(Thermo Fisher Scientific) in DMSO was added to the solution and incubated for 1 hr at room temperature. Reactions were quenched with 20 mM of Tris-HCl, pH 8.0, for 15 min. N-dodecyl β-D-maltoside (DDM, 10% stock, Thermo Fisher Scientific) was added to the sample to a final concentration of 1% and the mixture was incubated on ice for 30 min. To remove SMA, MgCl2 (50 mM stock) was added to a final concentration of 4 mM, and the resulting solution was incubated at 4 °C for 1 hr, and then centrifuged at 21,000 × g at 4 °C for 1 hr. The supernatants were transferred to fresh microfuge tubes and diluted 1:1 with 0.1% SDS, 25 mM DTT, and incubated at 50 °C for 1 hr. Chloroacetamide was added to 25 mM and incubated at RT for 30 min in the dark before acetone precipitation overnight at –20 °C. The samples were washed twice with 90% acetone and the pellet was vortexed with 25 mM ammonium bicarbonate until re-solubilized. Enzymatic digestion was carried out with either trypsin in 0.1% Rapigest (Waters) (1:20 ratio) or pepsin (1:50 ratio). The trypsin digestion was stopped after 16 hr with 1% formic acid (FA). Cross-linked peptides were desalted using Pierce peptide desalting spin column (Thermo Fisher Scientific) and dried. The tBu-PhoX cross-linked peptides were enriched as described previously (Jiang et al., 2022).
 
-## XL-MS data acquisition
+#### XL-MS data acquisition
 
 Samples were separated by reverse phase-HPLC using a Thermo Scientific Vanquish Neo system connected to an EASY-Spray PepMap 75 µm x 25 cm column over a 60 min 3–65% gradient (A: water, 0.1% formic acid; B: 80% acetonitrile, 0.1% formic acid) at 300 nL/min flow rate. The crosslinked samples were analyzed on the Orbitrap Eclipse Tribrid mass spectrometer with Instrument Control Software version 4.0. 0. Cross-linked samples were analyzed using an HCD-MS2 acquisition strategy with 30% normalized collision energy (NCE). MS1 and MS2 scans were acquired in the orbitrap with a respective mass resolution of 60,000 and 30,000. MS1 scan range was set to m/z 375–1,400 at 100% AGC target, 118 ms maximum injection time, and 60 s dynamic exclusion. MS2 scans were set to an AGC target of 200%, 70ms injection time, isolation window of 1.2 m/z. Only cross-linked precursors at charged states +3 to+8 were subjected to MS2.
 
-## Direct Mass Technology mode measurements
+#### Direct Mass Technology mode measurements
 
 Single ion measurement using Direct Mass Technology mode was performed on Thermo Scientific Q Exactive UHMR. Prior to Direct Mass Technology mode MS analysis, sample was buffer exchanged into 100 mM ammonium acetate using Zeba spin column (7 kDa MWCO, Thermo Fisher Scientific). Sample was loaded into Au/Pd-coated borosilicate emitters (Thermo Scientific, ES388) for nano-ESI. For Instrument parameters, ion transfer target m/z and detector optimization were set to ‘high m/z.’ In-source trapping was set at −100 V. Trapping gas pressure readout was ~2 × 10−11 mbar. Data were acquired at 200 K @m/z400 resolution setting. Data analysis was done by STORIBoard software (Proteinaceous).
 
-## Data analysis
+### Data analysis
 
 Spectral raw data files were analyzed using Proteome Discoverer 3.0 software (Thermo Fisher Scientific) with XlinkX node 3.0 using the non-cleavable or non-cleavable fast search algorithms for cross-linked peptides and SEQUEST HT search engine for unmodified peptides and loop-links/mono-links. MS1 ion mass tolerance: 10 ppm; MS2 ion mass tolerance: 20 ppm. Maximal number of missed cleavages: 2; minimum peptide length: 6; max. modifications: 4; peptide mass: 500–8,000 Da. Carbamidomethylation (+57.021 Da) of cysteines was used as a static modification. PhoX or DSS cross-linked mass modifications for lysine, the protein N-terminus, and methionine oxidation (+15.995 Da) were used as variable modifications. Data were searched for cross-links against a protein database generated from protein identifications using WbaP and the E. coli proteome retrieved from UniProt as search space. The false discovery rate (FDR) was set to 1% at CSM and cross-link levels. The maximum XlinkX score was set to be greater or equal to 40. Post-processing and visualization were carried out using the XMAS plug-in for ChimeraX (Lagerwaard et al., 2022; Pettersen et al., 2021).
 
-## Nano differential scanning fluorimetry (nDSF) of truncated S. enterica WbaP
+### Nano differential scanning fluorimetry (nDSF) of truncated S. enterica WbaP
 
 Data were collected using a Prometheus Panta nDSF instrument (Nanotemper). An initial panel of 20 nucleotides was chosen to screen for potential DUF ligands (Supplementary file 1C). Purified DUF at 1 mg/mL was diluted 1:1 with buffer C supplemented with 400 μM ligand, resulting in a final protein concentration of 0.5 mg/mL and 200 μM ligand. Data were processed using Pr.Analysis software (Nanotemper).
 
-## WbaP inhibition assay
+### WbaP inhibition assay
 
 WbaP activity assays were carried out as described previously, (Dodge et al., 2023) with the following modifications. Prior to the addition of [3H]-labeled UDP-Gal, reactions were incubated at room temperature with UMP for 5 min. A twofold serial dilution of UMP concentrations from 100 μM to 0.78 μM was utilized to assess UMP inhibition compared to a control reaction containing no additional UMP. Reactions were quenched after 10 min. Data were collected in triplicate (biological replicates), normalized to percent activity of the control, and fit using the [inhibitor] vs normalized response –variable slope function in GraphPad Prism Version 9.5.1 for Windows, GraphPad Software, San Diego California, USA, https://www.graphpad.com/.
 
-## Materials availability
+### Materials availability
 
 All plasmids described in this work will be made available upon request to the corresponding author.

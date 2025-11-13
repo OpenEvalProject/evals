@@ -35,13 +35,25 @@ To determine the wiring rules underlying the integration of retinal information 
 
 ## Results
 
-## Transsynaptic tracing of retinal ganglion cells from targets of the superior colliculus
+### Transsynaptic tracing of retinal ganglion cells from targets of the superior colliculus
 
 To determine if visual features are selectively sampled by two targeted output pathways of the mouse superior colliculus, we used rabies-based viral tools to label retinal ganglion cells innervating either the colliculo-parabigeminal or colliculo-pulvinar circuit. Three properties of the labeled ganglion cells were characterized. First, we reconstructed each cell’s anatomy, with a particular focus on quantifying its dendritic depth profile within the retina. If available, this was combined with information about each cell’s molecular identity based on labeling by different antibodies, and subsequently matched to cell types within the database of the Eyewire Museum (http://museum.eyewire.org; Bae et al., 2018). Finally, the visual response properties of a subset of labeled neurons were measured.
 
 To perform these experiments, we injected the parabigeminal nucleus or lateral pulvinar (Figure 1 and Figure 1—figure supplements 1 and 2) with herpes-simplex virus (HSV) expressing rabies-G, TVA and mCherry, and subsequently injected EnvA-coated rabies virus coding for GCaMP6s (EnvA-SADΔG-GCaMP6s) into the superficial layers of the superior colliculus (see Materials and methods). This transsynaptic viral infection strategy resulted in the expression of GCaMP6s in several dozen retinal ganglion cells per retina that specifically innervate the targeted circuit. To infect neurons projecting to the lateral pulvinar we utilized a floxed version of the HSV virus (hEF1a-LS1L-TVA950-T2A-RabiesG-IRES-mCherry) in combination with the Ntsr1-GN209Cre mouse line, which ensured labeling of wide-field neurons of the superior colliculus that project to the lateral pulvinar and not adjacent thalamic nuclei (Gale and Murphy, 2018; Gale and Murphy, 2014).
 
-## Anatomy of retinal inputs to the colliculo-parabigeminal and colliculo-pulvinar circuits
+![Figure 1.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig1-v1.jpg)
+
+**Figure 1.:** (A–C). Labeling retinal inputs to the colliculo-parabigeminal circuit. (A) Injection strategy for labeling the circuit connecting the retina to the parabigeminal nucleus, via the superior colliculus. (B) Example retina with labeled ganglion cells innervating the colliculo-parabigeminal circuit. Scale bar: 500 µm. (C) Zoom into cyan box in B. Scale bar: 50 µm. (D) Eight example retinal ganglion cells from either injection approach (parabigeminal nucleus or pulvinar). Left: en-face view of the dendritic tree. Right: side-view of the dendritic tree. Location of the ChAT-bands is indicated with two gray lines. The cells are separated into four stratification groups: bistratified (first column), below (second column), between (third column), and above the ChAT-bands (last column). (E) Distribution of dendritic tree diameter of retinal ganglion cells that are part of the colliculo-pulvinar (LP; orange) and the colliculo-parabigeminal (Pbg; green) circuit. **p<0.01 Kolmogorov-Smirnov and Wilcoxon rank sum test. (F) Retinal ganglion cell diameters for cells stratifying below, between, and above ChAT-bands. **p<0.01 Kolmogorov-Smirnov and Wilcoxon rank sum test. (G) Retinal ganglion cells of each circuit were grouped into four stratification groups based on the peak of their dendritic profile. *p<0.05, **p<0.01 two proportion z-test. See also Figure 1—figure supplements 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Injection strategy for labeling of the circuit connecting the retina to the pulvinar, via the superior colliculus. (B) Example retina with labeled ganglion cells innervating the colliculo-pulvinar circuit. Scale bar = 500 μm. (C) Zoomed-in version of B. Scale bar = 50 μm. (D) Whole-mount retina stained with antibody for GCaMP6s after EnvA-coated SAD-△G-GCaMP6s rabies virus injection to superior colliculus alone without first injection of HSV. No labeled cells are observed 11 days after injection. Scale bar: 500 µm. (E) Injection of conditional HSV into the pulvinar of a wild-type mouse without any Rabies injection. Very few labeled cells are observed 21 days after injection. (F–G) Injection of conditional HSV into the pulvinar (F) and non-conditional HSV into the parabigeminal nuclei (G) labeled superior colliculus neurons. Neurons were stained with anti-mCherry antibody, showed in magenta. Scale bar = 200 µm. (H) Side-view of z-stack scans of four example retinal ganglion cells (green) and the ChAT-bands (magenta). Scale bar = 20 µm. (I–K) Retinal position and dendritic tree diameter of retinal ganglion cells that are part of the colliculo-parabigeminal circuit (I), cells innervating the colliculo-pulvinar circuit (J), and bistratified ganglion cells of both circuits (K). To determine if the differences in size between the colliculo-parabigeminal and colliculo-pulvinar circuit are due to a bias in the retinotopic location of the sampled ganglion cells, we analyzed the spatial distribution of the labeled neurons across the retina. For each circuit, we sampled evenly from each retinal quadrant (15.6% naso-dorsal, 30.4% dorso-temporal, 28.3% temporo-ventral, 24.6% ventro-nasal. In addition, we sampled at all retinal eccentricities: 52% of labeled ganglion cells were sampled from the central third of the retina (within 30° of the optic nerve), 43% from the middle third (30°−60° from the optic nerve) and 5% from the peripheral third (60°−90° from the optic nerve). This indicates that the observed difference in size between the two circuits is not due to a sampling bias in retinotopic location. N = nasal, D = dorsal, T = temporal, V = ventral. The optic nerve is indicated with a black disc. (L) The distribution of the dendritic tree in depth was summed to create a stratification profile. (M) Stratification depth and dendritic tree diameter of all 658 labeled retinal ganglion cells from both experimental conditions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Histological section of four examples pulvinar injection sites. The pipette (indicated as a yellow line) was coated with a fluorescent dye (DiD) and the fluorescent signal coincides with the location of the pulvinar (LP). A-C were from sagittal sections and D was from coronal section. Scale bar = 1 mm. (E–H) Histological section of four example prabigeminal nucleus injection sites. All of them were from coronal sections. Scale bar = 1 mm.
+
+### Anatomy of retinal inputs to the colliculo-parabigeminal and colliculo-pulvinar circuits
 
 The morphology of 658 ganglion cells innervating the colliculo-parabigeminal (n = 241) and colliculo-pulvinar (n = 417) circuit were extracted. The anatomy of labeled ganglion cells was recovered by staining the retinas with antibodies against GFP (binding to the GCaMP6s) and ChAT, an internal marker of depth formed by starburst amacrine cells (Sanes and Masland, 2015; Sümbül et al., 2014a). A semi-automated image processing routine was applied to high-resolution confocal image stacks of each ganglion cell that enables a precise quantification of their dendritic morphology (Sümbül et al., 2014a; Sümbül et al., 2014b). The cells showed a variety of morphologies:~7% had bistratified dendritic trees (n = 49), either co-stratifying with the ChAT-bands, or stratifying outside the ChAT bands (Figure 1D);~17% were mono-stratified with dendrites below the ChAT-bands (n = 110);~50% had their dendrites restricted to the region between the ChAT-bands (n = 326); and ~26% had dendrites stratifying exclusively above the ChAT-bands (n = 173; Figure 1). We calculated for each cell the area covered by the dendrites and created a depth profile of the dendritic tree (Figure 1—figure supplement 1). Our data set contains cells with dendritic field diameters ranging from 57 to 468 µm (median: 194 µm), similar to the reported range of 80 to 530 µm (Badea and Nathans, 2004; Bae et al., 2018; Coombs et al., 2006; Kong et al., 2005; Sun et al., 2002).
 
@@ -49,9 +61,9 @@ Comparing the size and stratification of retinal ganglion cells innervating the 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig2-v1.jpg)
 
-**Figure 2.:** (A) Individual and median stratification profiles of 550 cells for the 14 cell types that innervate the colliculo-parabigeminal and colliculo-pulvinar circuit. Cluster names and additional names refer to the classification and assignment in Bae et al. (2018). (B) Percentages of cells in each cluster for both circuits (100% equals the total number of cells in a given circuit, n = 196 for Pbg and n = 354 for LP). Darker shading represents the molecularly identified neurons. (C) Biases for the two circuits expressed as percentage differences. Black lines span 2.5% to 97.5% of the data. Red dots indicate the ratio calculated from B. *p<0.05, ***p<0.001, bootstrap analysis; † p<0.05, ††† p<0.01, two proportion z-test. (D) En-face view of example cells. Scale bar: 100 µm. See also Figure 2—source data 1.Figure 2—source data 1.Positive cluster numbers are ones included in main text. Negative cluster numbers are clusters assigned less than 1% of the total population. Scale bar: 100 µm.
+**Figure 2.:** (A) Individual and median stratification profiles of 550 cells for the 14 cell types that innervate the colliculo-parabigeminal and colliculo-pulvinar circuit. Cluster names and additional names refer to the classification and assignment in Bae et al. (2018). (B) Percentages of cells in each cluster for both circuits (100% equals the total number of cells in a given circuit, n = 196 for Pbg and n = 354 for LP). Darker shading represents the molecularly identified neurons. (C) Biases for the two circuits expressed as percentage differences. Black lines span 2.5% to 97.5% of the data. Red dots indicate the ratio calculated from B. *p<0.05, ***p<0.001, bootstrap analysis; † p<0.05, ††† p<0.01, two proportion z-test. (D) En-face view of example cells. Scale bar: 100 µm. See also Figure 2—source data 1.
 
-## Biased sampling of retinal ganglion cell types by the colliculo-parabigeminal and the colliculo-pulvinar circuit
+### Biased sampling of retinal ganglion cell types by the colliculo-parabigeminal and the colliculo-pulvinar circuit
 
 To estimate the number of cell types innervating the colliculo-pulvinar and colliculo-parabigeminal circuits, we assigned our morphological data to one of the 47 putative retinal ganglion cell types documented in the Eyewire museum (http://museum.eyewire.org) (Bae et al., 2018). In addition we took into consideration information about genetically identified cell types including M2, sustained OFF-alpha cells, high-definition (HD)1, HD2, vertical OS cells and the four FOXP2+ cells (Jacoby and Schwartz, 2017; Nath and Schwartz, 2017; Nath and Schwartz, 2016; Rousso et al., 2016; Sümbül et al., 2014a). The first step in our decision process was to find the most likely set of potential corresponding types based on stratification peak (above, below or between the ChAT bands) and, if available, molecular information (136/658 ganglion cells; n = 109 were SMI32+; n = 7 were CART+; n = 20 were FOXP2+). Second, the potential set of matching types was refined using a quantitative comparison of dendritic stratification profiles (see Materials and methods). Subsequently, we assigned each cell to its most likely cell type within the stratification based on quantifiable characteristics of the dendritic tree, as well as the shape and size of the soma (see Materials and methods for details). Finally, each cell was visually inspected to control for classification errors. Of the 47 cell types in the Eyewire museum, we were unable to reliably distinguish between a set of four pairs of cell types (1ni/1no, 4i/4on, 5ti/51 and 8n/9n), as well as the subtypes of direction-selective cells (ON-OFF: 37c,37d,37r,37v; ON: 7id,7ir,7iv,7o). This resulted in 37 possible cell types to which a ganglion cell could be assigned (see Materials and methods). Using this process, 599 of the 658 cells were assigned to one of 37 classes.
 
@@ -65,21 +77,37 @@ The cell types preferentially innervating the colliculo-pulvinar circuit include
 
 The two circuits share non-biased inputs from six cell types, clusters 1, 6, 8, 9, 12 and 14. These contain the two SMI32+, OFF-alpha types, sustained OFF-alpha (cluster 1, EM C-1wt) and transient OFF-alpha (cluster 6, EM C-4ow). Further, they are innervated by the FOXP2+ ON-cells, the Fmini-ON in cluster 9 (EM C-63) and the Fmidi-ON in cluster 12 (EM C-6t). The medium sized cells (median diameter: 191 µm) in cluster 8 (EM C-5si) stratify between the ChAT-bands and are potentially HD1 or HD2 cells (Jacoby and Schwartz, 2017). The final cluster 14 (EM C-8n/9n) consists of an ON-cell type that stratifies below the ChAT-bands.
 
-## Retinal inputs to the parabigeminal and the pulvinar circuit differ in molecular signature
+### Retinal inputs to the parabigeminal and the pulvinar circuit differ in molecular signature
 
 In our anatomical classification, we found different innervation patterns of alpha retinal ganglion cell types for the two circuits. To be able to trace the whole dendritic tree, cells were chosen for morphological analysis based on being separate from neighboring cells. To confirm the observed differences in circuit biases (Figure 2), we performed a survey of histological staining against molecular markers of ganglion cell types that was independent of how separated cells were. Here, we counted the number of double-positive cell bodies to establish the overall number of molecularly identified cells in each circuit and analyzed local confocal scans around the soma to determine the distribution of alpha cell types. The four alpha cell types were labeled using the SMI32-antibody (Bleckert et al., 2014; Coombs et al., 2006; Huberman et al., 2008; Krieger et al., 2017; Peichl et al., 1987). We found that around half of all rabies-labeled cells innervating the two circuits are alpha-cells (colliculo-parabigeminal median: 42%, n = 3 retinas; colliculo-pulvinar median: 53%, n = 4 retinas; Figure 3 and Figure 3—figure supplement 1). To identify which of the four alpha cell types innervate each circuit, we acquired local z-stacks of SMI32+/GCaMP6s+ double labeled neurons (n = 91 cells in three mice for the colliculo-parabigeminal circuit; n = 90 cells in three mice for the colliculo-pulvinar circuit). Each neuron was manually classified based on dendritic stratification depth: sustained ON-alpha cells have dendrites below the ChAT-bands; the transient ON- and transient OFF-alpha cells have dendrites between the ChAT-bands, and the sustained OFF-alpha cell has dendrites above the ChAT-bands (Bleckert et al., 2014; Krieger et al., 2017). Both circuits sample from sustained and transient OFF-alpha cells (parabigeminal vs pulvinar median: 13% vs 20% sustained; 32% vs 29% transient OFF-cells; 100% corresponds to all GFP+ cells). In contrast, transient ON-cells mostly innervate the colliculo-pulvinar circuit (parabigeminal vs pulvinar median: 4% vs 17%; p<0.05 two proportion z-test), while sustained ON-cells are almost exclusively labeled in the parabigeminal circuits (parabigeminal vs pulvinar median: 10% vs <0.5%; p<0.05 two proportion z-test).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Example retinas with SMI32–positive labeled retinal ganglion cells innervating the colliculo-parabigeminal and colliculo-pulvinar circuit. (A1, B1) Example whole-mount view of the retina with SMI32-positive cells (blue dots) and SMI32-negative cells (other labeled retinal ganglion cells after virus injections; black crosses). Scale bar: 500 µm. (A2, B2) Histological staining against GCaMP6s. Yellow arrows indicate SMI32-positive retinal ganglion cells. (A3, B3) SMI32 histological staining against neurofilament. A2-3 and B2-3 are zoomed-in versions of the magenta square in A1 and B1. Scale bar: 50 µm. (C–D) ON-OFF direction-selective cells labeled with CART. Scale bar: 500 µm. (C1, D1) Example whole-mount view of the retinas with CART-positive (dots) and CART-negative (crosses) retinal ganglion cells. (C2-3) Histological staining against CART. Yellow arrows indicate a CART-positive retinal ganglion cell and its side-view. The cell has been labeled by the rabies virus (GFP-positive; top) and is CART-positive (middle). Bottom: overlay of GFP, CART, and ChAT-staining. C2-3 are zoomed-in versions of the magenta square in C1. (D2-3) No CART-positive neurons were labeled in the example retina from pulvinar experiments. D2-3 are zoomed-in versions of the magenta square in D1. Scale bar: 50 µm. (E) Percentage of CART-positive cells and the four different alpha ganglion cell types labeled in each circuit (100% corresponds to all GCaMP6s-expressing cells). Bars indicate standard errors. *p<0.05, **p<0.01 two proportion z-test. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Number of SMI32-positive and GFP-positive neurons (colored bars) innervating the colliculo-prabigeminal and colliculo-pulvinar circuits, respectively. Each bar is representative of one retina. Gray indicates the total number of GFP positive neurons labeled after virus injection in each retina. On top of each bar is the percentage of the double-labeled neurons of all the GFP-positive neurons. (C–D) Number of CART-positive and GFP-positive neurons innervating the two circuit. (E–F) Number of CART-positive and GFP-positive neurons innervating the two circuits.
 
 In our data set, the bistratified cells with dendritic density peaks aligned with the ChAT-bands strongly resemble the morphology of ON-OFF direction-selective cells (Sanes and Masland, 2015). In the mouse retina, there are four types of ON-OFF direction-selective ganglion cells, each responding to one of the four cardinal directions. Three of the four types can be labeled with anti-CART antibodies (Dhande et al., 2013). We performed anti-CART histological staining in a subset of the retinas (Figure 3). Double-labeled neurons (GCaMP6s+ and CART+) are found almost exclusively after retrograde tracing from the parabigeminal nucleus (Figure 3E; median: 6.9% of all GCaMP6s-postive cells, range: 4.3% to 9.1%, n = 3 retinas). In the pulvinar experiments, a negligible percentage of the labeled ganglion cells are CART+ (Figure 3E and Figure 3—figure supplement 1; median: 1.3%, range: 0% to 2.1%, n = 6 retinas).
 
 The percentages of CART+ and SMI32+ cells in each circuit from these experiments are consistent with the proportions observed in our single-cell analysis (Figure 2), where we found that 7% of all labeled cells in the colliculo-parabigeminal circuit were in cluster 4 (putative ON-OFF direction-selective cells), and 44% were in clusters 1, 6, 11 and 13 (putative alpha ganglion cells). Similarly, in the colliculo-pulvinar circuit <0.1% of the ganglion cells were classified as ON-OFF direction-selective and 51% were alpha cells. Furthermore, the distribution of each alpha cell type between the two circuits matches the distributions we found after anatomical classification, where the OFF types were innervating both circuits, while the transient ON-alpha cells showed a strong preference for the colliculo-pulvinar and the sustained ON-alpha for the colliculo-parabigeminal circuit. We found that transient OFF-alpha cells were underrepresented and sustained OFF-alpha cells overrepresented in our anatomical data set (Figure 2), compared to the molecular analysis (Figure 3). Despite the different proportions among the SMI32+ cells, in both data sets, both OFF types are found to innervate each circuit.
 
-## Functional properties of retinal ganglion cells support anatomical classification
+### Functional properties of retinal ganglion cells support anatomical classification
 
 To determine if the functional response properties of cells within a cluster are consistent, we performed two-photon targeted patch-clamp recordings from transsynaptically labeled neurons (Figure 4 and Figure 4—figure supplement 1). We presented each neuron with a set of visual stimuli that included the ‘chirp’ stimulus and a moving bar (Baden et al., 2016). For a subset of 48 of the recorded cells, we were able to retrieve the anatomy after recording. These cells are part of the data set that was assigned to anatomical cell types (Figure 2). In order to test if cells in a given anatomical cluster have consistent light responses, we used the ‘chirp’ stimulus which can be used to distinguish between different ganglion cell types (Baden et al., 2016; Jouty et al., 2018; Roson et al., 2019). For each of the clusters containing at least one of the 48 both traced and patched cells, we calculated the average response to the ‘chirp’ stimulus and used it as a template (see Materials and methods). We then assigned each of the remaining retrogradely labeled patched retinal ganglion cells without anatomical data (n = 75) to one of the anatomical clusters based on the similarity between the average response of the neuron and the templates, using three distance metrics (see Materials and methods). A cell was assigned to a cluster if at least two distance measurements ranked the cluster in the top two, if the distance measurements did not agree with each other, the cluster with the highest linear correlation coefficient was taken (see Materials and methods).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left: maximum intensity projection of a two-photon image stack of a GCaMP6-expressing cell assigned to each cluster. Cluster number, assigned cluster in the Eyewire museum and the putative name are indicated in the left column. na+p indicates the number of cells in this cluster with both anatomy and patch recordings. Middle: en-face view of a confocal microscope z-stack (maximum intensity projection) showing the same cell after staining (green: GCaMP6). Scale bar: 50 μm. Right: en-face and stratification view of this example cell after tracing. Scale bar: 100 μm. (B) Mean ± standard error of the mean (SEM) of responses to ‘chirp’ stimulus for cells assigned to an anatomical cluster. Top: raster plot of one example cell. ntotal indicates the number of cells with patch recordings. (C) Mean ± SEM of average response to a white bar moving in eight directions. The average response across all eight directions is plotted. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the setup for the two-photon targeted patch-clamp recording. (B) Top: Maximum intensity projection of a two-photon image stack showing a GCaMP6-expressing cell after the rabies injection. En-face view (middle) and side-view (bottom) of a confocal microscope z-stack (maximum intensity projection) showing the same cell after the staining process (green: GCaMP6, magenta: ChAT). Scale bar: 50 μm. (C) Response of this cell to the chirp stimulus. The black trace representing the mean firing rates (50 ms bins) across 10 trials, which are shown below in the raster plot (red). (D) Response to the black fast moving bar. (E) Response to spot stimuli consisting of a black spot presented for 2 s with 120, 240, 360, 480, 600 and 1200 μm diameter. The gray bars indicate stimulus duration. The blue line represents the spot size tuning curve. (F) Response to a linearly expanding black dot. (G) Response to a large dot that linearly dimmed from gray to black. (H–J) Responses to non-linearly expanding black dots at different speeds.
+
 We report the visual responses for the seven cell types that contained at least four assigned cells (containing a total of n = 93 of the 123 patched cells with or without anatomy; n = 20 for cluster 1, n = 4 for cluster 4, n = 8 for cluster 5, n = 28 for cluster 6, n = 8 for cluster 7, n = 13 for cluster 11, n = 12 for cluster 13; Figure 4). We found that the visual responses to the ‘chirp’ stimulus were consistent with the predicted response based on published data (Baden et al., 2016) (Figure 4B). To test for responses to small moving objects we used a white bar moving with its short edge across the center of the cell’s receptive field (Figure 4C). The average responses to the first, white and the second, black edge are consistent with published results for the different cell types (Baden et al., 2016; Bae et al., 2018). The single cell recordings to the ‘chirp’ and moving bar stimulus confirm that cells within a cluster show consistent visual responses, suggesting correct assignment of cells to the template clusters, and are consistent with the expected response properties of the anatomical cell type.
 
-## Spatial distribution of cell types across the retina confirms correct classification
+### Spatial distribution of cell types across the retina confirms correct classification
 
 As an additional confirmation for the correct assignment of cells to the Eyewire clusters, we tested whether putative cell types showed the expected spatial distribution across the retina. For each of the retinal ganglion cell, we mapped its size onto its position within the retina. This revealed the expected general increase of dendritic size with distance from the optic nerve head for the whole ganglion cell population (Figure 5A,E and I). We then checked the spatial distribution of dendritic sizes of the sustained OFF and ON-alpha ganglion cells and the transient OFF-alpha cells (Figure 5B–D). It has previously been demonstrated that sustained ON and OFF-alpha cells, but not transient OFF-alpha cells show a strong asymmetric decrease of dendritic size along the naso-temporal axis (Bleckert et al., 2014). We found that the two sustained types show the previously reported negative correlation along the naso-temporal axis with small neurons found preferentially in the temporal retina (Figure 5F–G), and also replicated the equal distribution with respect to the distance from the optic nerve head (Figure 5J–K). As expected, we did not observe any asymmetry in dendritic size of transient OFF-alpha cells along the naso–temporal axis (Figure 5H–L) (Bleckert et al., 2014). In addition, while transient OFF-alpha cells do not show an asymmetric distribution of dendritic size, they do display an increasing response duration along the ventral – dorsal axis of the retina (Warwick et al., 2018). We found a similar increase in response duration for transient OFF-alpha neurons along this axis of the retina that was consistent, though with a weaker correlation, with Warwick et al. (2018) (Figure 5M–P). Taken together, these results demonstrate that our assignment of cell types based on anatomy are consistent with the known spatial distributions of anatomical and physiological characteristics of ganglion cells across the retina.
 
@@ -87,11 +115,19 @@ As an additional confirmation for the correct assignment of cells to the Eyewire
 
 **Figure 5.:** (A–D) Distribution of dendritic field diameter of all labeled cells (A), sustained OFF (sOFF) alpha cells from cluster 1 (B), sustained (sON) alpha cells from cluster 13 (C) and transient OFF (tOFF) alpha cells from cluster 6 (D) at their retinotopic location. (E–H) Dendritic field diameter of all labeled cells (E), sOFF-alpha cells (F), sON alpha cells (G) and tOFF-alpha cells (H) are plotted along the nasal - temporal axis. sOFF- and sON-alpha cells showed negative correlation (sOFF: r = −0.28, p<0.004; sON: r = −0.46, p<0.003; two-tailed Pearson correlation coefficient test). (I–L) Dendritic field size of all labeled cells (I), sOFF-alpha cells (J), sON-alpha cells (K) and tOFF-alpha cells (L) relative to eccentricity (from optic nerve to periphery). tOFF-alpha cells and the whole labeled cell population showed positive correlation (tOFF: r = 0.41, p<0.0001; all cells: r = 0.25, p<0.0001; two-tailed Pearson correlation coefficient test) M) Positions of 18 labeled retinal ganglion cells that were assigned to the tOFF-alpha cell group. D, dorsal; V, ventral; T, temporal; N, nasal. Color bar indicated response duration time. (N) Mean responses of 3 representative retinal ganglion cells from the tOFF-alpha cell group, whose locations are indicated in M. (O–P) Response durations are plotted across the ventral-dorsal axis (O) and nasal-temporal axis (P). Response transients gradually change along the ventral – dorsal axis (r = 0.45, p<0.03, Pearson correlation coefficient test).
 
-## Some visual responses of pulvinar and parabigeminal nucleus are explained by selective innervation of retinal ganglion cell types
+### Some visual responses of pulvinar and parabigeminal nucleus are explained by selective innervation of retinal ganglion cell types
 
 Taken together, the anatomical, physiological and molecular results indicate that different output pathways of the superior colliculus sample distinct sets of retinal inputs, where some inputs are biased towards a single pathway and others shared. We therefore asked if we could explain any of the response properties in the collicular targets by their preferential or shared sampling of ganglion cells.
 
 To characterize the visual response properties of neurons in the pulvinar and parabigeminal nucleus, we performed single-unit recordings using Neuropixels high-density multichannel silicon probes (Jun et al., 2017) in awake, head-fixed mice (Figure 6 and Figure 6—figure supplement 1). In each recording session, stereotaxic coordinates were used to target the parabigeminal nucleus or pulvinar. The recording locations were verified by histological reconstruction of the electrode tracts (Figure 6B–C and Figure 6—figure supplement 1). In the pulvinar, we only included recordings from its posterior portion, which receives input from the superior colliculus and does not respond well to full-field stimuli (Figure 6 and Figure 6—figure supplement 1) (Beltramo and Scanziani, 2019; Bennett et al., 2019). We recorded the brain activity on 384 electrodes spanning ~3800 µm in depth during visual stimulation (Figure 6D and E) and extracted the spikes from single units (Figure 6F). The receptive field centers of the recorded neurons were between −35° and +35° elevation and −65° and +25° azimuth.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the setup for Neuropixels recordings in awake, head-fixed mice. (B) Tracks of DiI- and DiD-coated probes (green and magenta) visible in the pulvinar. Retina targets, including the LGN, were labeled using Choleratoxin-b-Alexa488 injections into the eye (green). (C) Track of DiD-coated probe in parabigeminal nucleus. (D) Heatmap of activity on all 384 electrodes (300 Hz high-pass filtered data, 20 ms bins) and traces of example electrodes at different locations. The orange bar indicates the location of the pulvinar. (E) High-pass filtered activity only on the electrodes in the pulvinar during the presentation of an expanding disc. (F) Waveform footprints of four sorted neurons. Their location is indicated with colored bars in E. (G) Example responses from parabigeminal and pulvinar recordings to 10 repetitions of different stimuli. Stimuli were: Big-fast black square (53° side length, moving at 150°/s); small-fast black dot (4° diameter, moving at 150°/s); expanding black disc (expanded from 2° to 50° of diameter within 300 ms). The vertical lines indicate the stimulus beginning and end. (H) Percentage of responding Pbg (green) and pulvinar (orange) units for six tested visual stimuli. The dashed lines correspond to 100%, that is the total number of light responsive units (n = 70 pulvinar; n = 115 Pbg). **p<0.01 two proportion z-test. (I–K) Direction-selectivity was measured with a big-fast black square moving in eight directions. Pbg example unit (I) responding preferentially to a stimulus moving to the front and to stimuli moving to the back/down. Pulvinar example unit (J) without direction preference. Distribution of direction-selectivity indices (DSI) and two example cells with a DSI around the population average (K). *p<0.05 Kolmogorov-Smirnov test. (L–M) Median ± octiles of responses from Pbg (L) and pulvinar (M) recordings to an expanding disc. Pbg: n = 84; LP: n = 34. (N) Cumulative distributions are shown for response amplitude during the expansion. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50697/elife-50697-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Probe location of two pulvinar recordings; one in the posterior LP (top) and one in the more anterior LP (bottom). Green and magenta indicate DiI and DiD that dissolved from the coated probe. Middle and right: responses to chirp stimulus from 80 neurons in the posterior LP (middle) and the anterior LP (right). (B) Population response to the chirp stimulus of all light responsive neurons in the Pbg (left) and LP (right). (C) Population response (mean ± SD) to a big, fast stimulus (53°, 150°/s). (D) Population response to a small, fast stimulus (4°, 150°/s). (E) Population response to a small, slow stimulus (4°, 21°/s).
 
 We found that neurons in both the posterior pulvinar and parabigeminal nucleus responded reliably to a set of visual stimuli (Figure 6G) that includes: a large fast moving square (‘big-fast’, 53° side length, 150°/s); a small, fast moving spot (‘small-fast’, 4° diameter, 150°/s) and expanding discs (expanding from 2° to 50° of diameter within 300 ms). However, the percentages of responding units (maximal response > mean spontaneous firing rate + two std) differed for the different stimuli between the parabigeminal nucleus and the pulvinar (Figure 6F and Figure 6—figure supplement 1). Both responded to small, slow stimuli (diameter = 4°, speed = 21°/s) and expanding discs, however, more parabigeminal neurons responded to fast stimuli (150°/s) while the number of neurons responding to large, slow (size = 53°, speed = 21°/s) and dimming objects was larger in the pulvinar.
 
@@ -113,13 +149,245 @@ Comparing the morphological, molecular and visual response properties of retinal
 
 **Figure 8.:** In total, 14 ganglion cell types are sampled by parabigeminal- and pulvinar-projecting collicular neurons. Four cell types are biased for the LP-circuit, four have a preference for the Pbg-circuit, and six have no bias for either circuit. The color and the number of the retinal ganglion cell types corresponds to the clusters defined in Figure 2. All the other cell types of the EM data set are not sampled by our data set. The relative response properties routed to the pulvinar and/or parabigeminal nucleus are indicated with the relative color and number.
 
-## Ganglion cell types innervating the colliculo-parabigeminal and colliculo-pulvinar circuits
+### Ganglion cell types innervating the colliculo-parabigeminal and colliculo-pulvinar circuits
 
 The identification of the ganglion cells innervating the colliculo-parabigeminal and colliculo-pulvinar circuit was accomplished by finding the best match of each ganglion cell in our data to the cell types in the Eyewire data base using a combination of morphological and molecular cues (Table 1). Of the 14 clusters, 8 (clusters 1, 2, 4, 6, 9, 11, 12 and 13) include molecularly identified cells (Figures 2 and 3). Briefly, the cells in cluster 4 are ON-OFF direction-selective cells, based on their characteristic co-stratification with the ChAT bands and positive CART labelling (Dhande et al., 2013; Sanes and Masland, 2015). The four alpha ganglion cell types (cluster 13, sustained ON-alpha; cluster 11, transient ON-alpha; cluster 6, transient OFF-alpha; cluster 1, sustained OFF-alpha) were positively identified based on a combination of positive SMI32 staining, dendritic anatomy and large cell body size (Bleckert et al., 2014; Krieger et al., 2017), as well as their visual response properties (Baden et al., 2016). In addition, three out of the four FOXP2-positive cell types were identified (cluster 2, Fmini-OFF; cluster 9, Fmini-ON; cluster 12, Fmidi-ON), where Fmini-OFF cells are likely PV7 cells (Farrow et al., 2013; Rousso et al., 2016).
 
+**Table 1.**
+ Overview of the retinal inputs to the colliculo-parabigeminal and colliculo-pulvinar circuits.Top: Average stratification profile for each cluster. In bold are associations with published retinal ganglion cell types that are supported by molecular markers and the assignments in Bae et al. (2018). The best matches defined by visual inspection of the published anatomical and functional ganglion cell libraries are listed in normal font.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Parabigeminal nucleus</th>
+      <th colspan="6">Shared</th>
+      <th colspan="4">Pulvinar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="14"></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Anatomy</td>
+      <td>Cluster #</td>
+      <td>3</td>
+      <td>4</td>
+      <td>7</td>
+      <td>13</td>
+      <td>1</td>
+      <td>6</td>
+      <td>8</td>
+      <td>9</td>
+      <td>12</td>
+      <td>14</td>
+      <td>2</td>
+      <td>5</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>EM name</td>
+      <td>27</td>
+      <td>37</td>
+      <td>5to</td>
+      <td>8w</td>
+      <td>1wt</td>
+      <td>4ow</td>
+      <td>5si</td>
+      <td>63</td>
+      <td>6t</td>
+      <td>8n/9n</td>
+      <td>2an</td>
+      <td>4i/4on</td>
+      <td>6sn</td>
+      <td>6sw</td>
+    </tr>
+    <tr>
+      <td>Marker</td>
+      <td></td>
+      <td>CART</td>
+      <td></td>
+      <td>SMI32</td>
+      <td>SMI32</td>
+      <td>SMI32</td>
+      <td></td>
+      <td>FOXP2</td>
+      <td>FOXP2</td>
+      <td></td>
+      <td>FOXP2</td>
+      <td></td>
+      <td></td>
+      <td>SMI32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putative type</td>
+      <td></td>
+      <td>onoff-DS</td>
+      <td></td>
+      <td>sONa</td>
+      <td>sOFFa</td>
+      <td>tOFFa</td>
+      <td>HD1/ HD2</td>
+      <td>Fmini-ON</td>
+      <td>Fmidi-ON</td>
+      <td></td>
+      <td>Fmini-OFF</td>
+      <td></td>
+      <td></td>
+      <td>tONa</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Putative anatomical types</td>
+      <td>Sümbül et al. 2014</td>
+      <td></td>
+      <td>D</td>
+      <td></td>
+      <td></td>
+      <td>I</td>
+      <td>F</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>B</td>
+      <td>H</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Völgyi et al. 2009</td>
+      <td>G16</td>
+      <td>G20/22</td>
+      <td></td>
+      <td>G2</td>
+      <td>G3</td>
+      <td>G4/5</td>
+      <td>G14</td>
+      <td></td>
+      <td></td>
+      <td>G6</td>
+      <td>G18</td>
+      <td></td>
+      <td>G8</td>
+      <td>G9</td>
+    </tr>
+    <tr>
+      <td>Krieger et al. 2017</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>sONa</td>
+      <td>sOFFa</td>
+      <td>tOFFa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>tONa</td>
+    </tr>
+    <tr>
+      <td>Rousso et al. 2018</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fmini-ON</td>
+      <td>Fmidi-ON</td>
+      <td></td>
+      <td>Fmini-OFF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Jacoby et al. 2017</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HD1, HD2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Farrow et al. 2013</td>
+      <td></td>
+      <td>PV0</td>
+      <td></td>
+      <td>PV1</td>
+      <td>PV6</td>
+      <td>PV5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>PV7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Baden et al. 2016</td>
+      <td>G26</td>
+      <td>G12</td>
+      <td>G4</td>
+      <td>G24</td>
+      <td>G5</td>
+      <td>G8</td>
+      <td>G11/14</td>
+      <td>G18</td>
+      <td>G15/20</td>
+      <td>G22/30</td>
+      <td>G2</td>
+      <td>G9</td>
+      <td>G17</td>
+      <td>G19</td>
+    </tr>
+    <tr>
+      <td>Known functional properties</td>
+      <td></td>
+      <td>ON responses</td>
+      <td>Direction-selective; small objects; expansion responses</td>
+      <td>Sustained OFF; big objects</td>
+      <td>Big, fast objects</td>
+      <td>Big, fast objects</td>
+      <td>‘looming detector’, preference for big objects</td>
+      <td>ON-OFF responses; small objects; ‘high-definition’</td>
+      <td>Small, rather slow objects</td>
+      <td>Small, rather slow objects</td>
+      <td>Very sustained ON-responses</td>
+      <td>Small objects</td>
+      <td>Expansion response</td>
+      <td>(local stimuli)</td>
+      <td>Strong responses to big and small objects</td>
+    </tr>
+  </tbody>
+</table>
+
 For the remaining six cell types (clusters 3, 5, 7, 8 10 and 14), we manually inspected published collections of anatomical and functional retinal ganglion cell types (Baden et al., 2016; Sümbül et al., 2014a; Völgyi et al., 2009). These included the small cells in cluster 8 that resemble the HD1 or HD2 cells (Bae et al., 2018; Jacoby and Schwartz, 2017). The large ON-cells in cluster 14 might correspond to type G6 (Völgyi et al., 2009), and resemble the Ka-cells (Sümbül et al., 2014a). Based on their size and the reported responses to a moving bar (Bae et al., 2018), they best fit the ON sustained (G22) or ON local sustained (G30) type (Baden et al., 2016). We found the best morphological match for cluster 3 and cluster 10 to be G16 and G8, respectively (Völgyi et al., 2009), and the best functional match to be G26 (ON DS sustained) and G17 (ON local transient) (Baden et al., 2016). Finally, the chirp response profiles of cluster 5 and 7 best fit the chirp responses of the mini OFF-transient cells (G9) and OFF-slow cells (G4), respectively (Baden et al., 2016). Although our identification of cell types is well grounded, the relationship between anatomical data sets (Bae et al., 2018), physiological data sets (Baden et al., 2016) and molecular identity of cell types remains incomplete (Dhande et al., 2015; Sanes and Masland, 2015).
 
-## Retrograde transsynaptic labelling of retinal ganglion cells
+### Retrograde transsynaptic labelling of retinal ganglion cells
 
 Transsynaptic rabies tracing using injections of herpes-simplex virus (HSV-rabiesG-TVA-mCherry) to target nuclei, and subsequent injection of EnvA-coated rabies virus (EnvA-SADΔG-GCaMP6s) to the superior colliculus proved to be a suitable tool to determine the circuit specificity of collicular projecting retinal ganglion cells. First, HSV has a strictly synaptic uptake mechanism that prevents infection of passing axons, ensuring that we labeled neurons that synapse within the pulvinar or parabigeminal nucleus (Antinone and Smith, 2010; McGavern and Kang, 2011). Labeling of passing axons is an issue with other retrograde tracers (Ellis et al., 2016). Second, G-deleted rabies has been demonstrated to reliably label retinal ganglion cells innervating the superior colliculus, dorsal lateral geniculate nucleus or medial terminal nucleus (Cruz-Martín et al., 2014; Ellis et al., 2016; Farrow et al., 2013; Rompani et al., 2017; Yonehara et al., 2013). Finally, injection of EnvA-coated rabies virus into the superior colliculus, without previous injection of HSV-rabiesG-TVA-mCherry into either the pulvinar or parabigeminal nucleus resulted in no labeling of retinal ganglion cells in the retina or neurons in the superior colliculus (Figure 1—figure supplement 1). We therefore believe that this combination of tools reliably and specifically labels retinal ganglion cells innervating the different targeted pathways of the superior colliculus.
 
@@ -131,7 +399,7 @@ Given these potential biases due to technical limitations, we have more cells fr
 
 A second tool used to limit infecting off-target brain nuclei during the injection of HSV was the Ntsr1-GN209Cre mouse line (Gerfen et al., 2013). This mouse line ensured that we exclusively labeled wide-field neurons projecting to the pulvinar (Gale and Murphy, 2014). This may bias our results as it is possible that unknown collections of other cell types also project to the pulvinar from the superior colliculus. However, two pieces of evidence suggest this is unlikely. First, in a screen of different Cre-mouse lines, Ntsr1-GN209Cre positive neurons were found to only innervate the pulvinar, while other cell types were found to not innervate the pulvinar (Gale and Murphy, 2018; Gale and Murphy, 2014). In addition, unbiased retrograde labeling of collicular neurons, using HSV, from the pulvinar has predominantly revealed wide-field neurons, though a small number of neurons that might be of a different type were also seen (Zhou et al., 2017). Shang et al. (2018) report that a subpopulation of neurons in the PV-Cre mouse line projects to the posterior portion of the pulvinar. As these pulvinar projecting PV+ neurons have a similar projection pattern and cell body position within the superior colliculus to Ntsr1-GN209Cre neurons, we think it likely that they are a subpopulation of wide-field neurons. However, while in mice only one wide-field neuronal cell type has been described, two types of wide-field neurons have been found in ground squirrels that have distinct anatomies and project to different regions within the pulvinar (Fredes et al., 2012; Major et al., 2000). The description of cell types within the mouse superior colliculus remains immature compared to that of mouse retinal ganglion cell types.
 
-## Functional responses of retinal ganglion cells and target nuclei
+### Functional responses of retinal ganglion cells and target nuclei
 
 One question we attempted to answer here was whether we could explain the different visual response properties of neurons in the parabigeminal nucleus and pulvinar by their distinct retinal inputs. While some of the differences were indeed consistent (e.g. direction-selective neurons innervate the colliculo-parabigeminal circuit and looming sensitive neurons innervate both circuits), we found clear differences in the visual responses in the retina and the pulvinar and parabigeminal nucleus. The classification of retinal ganglion cells was based on their generally robust responses to a full-field chirp stimulus, which fails to evoke visual responses in either the posterior pulvinar or parabigeminal nucleus (Figure 6—figure supplement 1). In addition, the colliculo-pulvinar circuit receives inputs from ganglion cells that respond well to big and fast objects (cluster 11 and shared inputs from cluster 1), but responses to such stimuli were weak or absent in the pulvinar neurons. These differences might reflect strong non-linearities in how retinal inputs are integrated, or they might be a result of balanced excitatory and inhibitory inputs that cancel each other out.
 
@@ -143,23 +411,677 @@ The two neural circuits investigated here are each known to mediate visually gui
 
 Determining the link between the visual responses of retinal ganglion cells, their central brain targets and behavior remains a central question in visual neuroscience (Hillier et al., 2017; Hubel and Wiesel, 1961; Lettvin et al., 1959; Liang et al., 2018; Roson et al., 2019; Temizer et al., 2015). The approaches used to achieve this have predominantly involved recording responses in the retina independent of recording in the brain, or during behavior (Hillier et al., 2017; Lettvin et al., 1959; Usrey et al., 1998). While attempts to link particular cell types in the retina with responses in central brain structures and behavior have been undertaken, clear mechanistic relationships remain limited (Chen et al., 2011; Hillier et al., 2017; Liang et al., 2018; Roson et al., 2019; Shi et al., 2017; Yonehara et al., 2016). We believe development of approaches that enable simultaneous recordings of identified retinal cell types and central brain activity in awake behaving animals will allow us to better understand these relationships (de Malmazet et al., 2018; Hong et al., 2018; Liang et al., 2018).
 
-## Visual pathways through the superior colliculus
+### Visual pathways through the superior colliculus
 
 Studies investigating the organization of retinal inputs to single cells in the lateral geniculate nucleus have suggested that there is a large degree of fuzziness/variability in the information each neuron receives from the retina (Hammer et al., 2015; Liang et al., 2018; Morgan et al., 2016; Rompani et al., 2017; Roson et al., 2019). Here, we demonstrate that in the superior colliculus a high degree of regularity exists if one considers the projection targets. This data suggests there are strict limits on the degree of mixing of retinal ganglion cell inputs that occurs in the superior colliculus, where each output pathway has access to a distinct, only partially overlapping, set of visual information encoded by the retina. The observed regularity could exist either because the superior colliculus has a more ‘hard-wired’ architecture; or because we focused on projection-specific disynaptic circuits. When considering the layer-specific targets of the lateral geniculate nucleus in the visual cortex, Cruz-Martin et al. suggest that direction-selective neurons are preferentially sampled by layer one projecting neurons of the thalamus (Cruz-Martín et al., 2014). We propose that understanding the specific input structure to neurons and cell types with different projection profiles will greatly enhance our ability to create mechanistic models of how information from the sensory periphery informs the triggering of behaviors and decision making.
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent (type) or Resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Jackson laboratory</td>
+      <td>JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>PV-Cre (B6;129P2-Pvalbtm1(cre)Arbr/J)</td>
+      <td>Jackson laboratory</td>
+      <td>JAX:008069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J</td>
+      <td>The Jackson laboratory</td>
+      <td>JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gad2-IRES-CRE</td>
+      <td>The Jackson laboratory</td>
+      <td>JAX: 10802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tg(Ntsr1-cre)GN209Gsat/Mmucd</td>
+      <td>Laboratory of Keisuke Yonehara</td>
+      <td>RRID:MMRR_030780-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11122; RRID:AB_221569</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-10262; RRID:AB_2534023</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ChAT (goat, polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB144P RRID:AB_11214092</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMI32 (mouse, monoclonal)</td>
+      <td>Biolend</td>
+      <td>Cat# 801701; RRID:AB_2564642</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CART (rabbit, polyclonal)</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>H-003–62; RRID:AB_2313614</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FOXP2 (goat, polyclonal)</td>
+      <td>abcam</td>
+      <td>Cat# 1307; RRID:AB_1268914</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCherry (chicken, polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat# NBP2-25158 RRID:AB_2636881</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 donkey anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21206; RRID:AB_2535792</td>
+      <td>1:500–1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 donkey anti-chicken</td>
+      <td>Immuno-Jackson</td>
+      <td>Cat# 703-545-155 RRID:AB_2340375</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 633 donkey anti-goat</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21082 RRID:AB_10562400</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 donkey anti-mouse</td>
+      <td>Immuno-Jackson</td>
+      <td>Cat# 715-165-151 RRID:AB_2315777</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555 donkey anti-goat</td>
+      <td>abcam</td>
+      <td>Cat# ab150130</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 405 donkey anti-rabbit</td>
+      <td>Immuno-Jackson</td>
+      <td>Cat# 715-475-150 RRID:AB_2340839</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 donkey anti-chicken</td>
+      <td>Immuno-Jackson</td>
+      <td>Cat# 703-166-155 RRID:AB_2340364</td>
+      <td>1:800–1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>435/455 Nissl Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# N21479</td>
+      <td>1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DAPI</td>
+      <td>Roche</td>
+      <td>Cat# 10276236001</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cholera Toxin Subunit B conjugated with Alexa488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C22841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipophilic tracers DiI, DiD, DiO</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# D7776, D7757, D275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SAD-B19 rabies virus)</td>
+      <td>Rabies virus: G-coated SAD-△G-GCaMP6s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Is available upon request or from Laboratory of Botond Roska</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SAD-B19 rabies virus)</td>
+      <td>Rabies virus: EnvA-coated SAD-△G-GCaMP6s</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Is available upon request or from Laboratory of Botond Roska</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (herpes simplex virus)</td>
+      <td>HSV: hEF1a-TVA950-T2A-RabiesG-IRES-mCherry</td>
+      <td>MIT core</td>
+      <td>RN714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (herpes simplex virus)</td>
+      <td>HSV: hEF1a-LS1L-TVA950-T2A-RabiesG-IRES-mCherry</td>
+      <td>MIT core</td>
+      <td>RN716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10x PBS</td>
+      <td>VWR</td>
+      <td>Cat# 437117K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1x PBS</td>
+      <td>VWR</td>
+      <td>Cat# 444057Y</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histofix 4%</td>
+      <td>Roche</td>
+      <td>Cat# P087.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal Donkey Serum</td>
+      <td>Millipore</td>
+      <td>Cat# 30–100 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>10% Bovine Albumin</td>
+      <td>Sigma</td>
+      <td>Cat# SRE0036-250ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>DABCO</td>
+      <td>Sigma</td>
+      <td>Cat# 290734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM, high-glucose</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 41965062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin 0.05%</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 25300054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10270106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2'-thiodiethanol (TDE)</td>
+      <td>Sigma</td>
+      <td>Cat# 166782–500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold Antifade Mounting Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P36934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Azide (NaN3)</td>
+      <td>Sigma</td>
+      <td>Cat# S2002-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat# S8875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Chloride (NaCl)</td>
+      <td>Sigma</td>
+      <td>Cat# S7653-250G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium Chloride (KCl)</td>
+      <td>Sigma</td>
+      <td>Cat# P5405-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium Chloride (CaCl2)</td>
+      <td>Sigma</td>
+      <td>Cat# C5670-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium Chloride (MgCl2)</td>
+      <td>Sigma</td>
+      <td>Cat# 4880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-glucose (Dextrose)</td>
+      <td>Sigma</td>
+      <td>Cat# D9434-250G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium phosphate monobasic (NaH2PO4)</td>
+      <td>Sigma</td>
+      <td>Cat# S5011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Hydroxide (NaOH)</td>
+      <td>Sigma</td>
+      <td>Cat# 655104–500G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium bicarbonate (NaHCO3)</td>
+      <td>Sigma</td>
+      <td>Cat# S8875-1KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Mesocricetus auratus)</td>
+      <td>BHK cells</td>
+      <td>Laboratory of Botond Roska/Laboratory of Karl-Klaus Conzelmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Mesocricetus auratus)</td>
+      <td>B7GG cells</td>
+      <td>Laboratory of BotondRoska/Laboratory of Karl-Klaus Conzelmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Mesocricetus auratus)</td>
+      <td>BHK-EnvA cells</td>
+      <td>Laboratory of Botond Roska/Laboratory of Karl-Klaus Conzelmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>HEK293T-TVA cells</td>
+      <td>Laboratory of Botond Roska/Laboratory of Karl-Klaus Conzelmann</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al. (2012)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen lite</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CAFFE</td>
+      <td></td>
+      <td>caffe.berkeleyvision.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChAT band detector</td>
+      <td>This paper</td>
+      <td>https://github.com/ farrowlab/ChATbandsDetection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VNET</td>
+      <td></td>
+      <td>github.com/faustomilletari/VNet</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PYTHON</td>
+      <td>Python Software Foundation</td>
+      <td>www.python.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>t-distributed Stochastic Neighbor Embedding</td>
+      <td>Maaten and Hinton, 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CANDLE</td>
+      <td>Coupé et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sparse PCA</td>
+      <td></td>
+      <td>http://www2.imm.dtu.dk/projects/spasm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nanconv</td>
+      <td>Benjamin Kraus</td>
+      <td>http:// mathworks.com/matlabcentral/fileexchange/41961-nanconv</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>retistruct</td>
+      <td>Sterratt et al., 2013</td>
+      <td>http://davidcsterratt.github.io/retistruct/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SpikeGLX</td>
+      <td></td>
+      <td>https://billkarsh. github.io/SpikeGLX/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNU Octave</td>
+      <td>Free Software Foundation</td>
+      <td>www.gnu.org/software/octave</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychophysics Toolbox</td>
+      <td>Psychtoolbox</td>
+      <td>http://psychtoolbox.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SpyKING CIRCUS</td>
+      <td>Yger et al. 2018</td>
+      <td>https://spyking-circus.readthedocs.io</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phy</td>
+      <td>Cortex Lab at University College London</td>
+      <td>https://phy-contrib.readthedocs.io https://github.com/kwikteam/phy</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WaveSurfer (version: 0.918)</td>
+      <td>Janelia Research Campus</td>
+      <td>http://wavesurfer.janelia.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage</td>
+      <td>Vidrio Technoloies</td>
+      <td>http://scanimage. vidriotechnologies.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Allen CCF Tools</td>
+      <td>Shamash et al. (2018)</td>
+      <td>https://github.com/cortex-lab/allenCCF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TREES toolbox</td>
+      <td>Cuntz et al. (2011)</td>
+      <td>https://github.com/cuntzlab/treestoolbox</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rapid Flow Filters 0.2 µm pore size</td>
+      <td>VWR</td>
+      <td>Cat# 514–0027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Premium Standard Wall Borosilicate capillary glass</td>
+      <td>Warner Instrument</td>
+      <td>Cat# G100-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wiretrol II capillary micropipettes</td>
+      <td>Drumond Scientific</td>
+      <td>Cat# 5-000-2005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Borosilicate glass</td>
+      <td>Sutter Instrument</td>
+      <td>Cat# BF100-20-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Laser-Based Micropipette Puller</td>
+      <td>Sutter Instrument</td>
+      <td>Cat# P-2000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Small Animal Stereotaxic Workstation</td>
+      <td>Narishige</td>
+      <td>Cat# SR-5N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereotaxic Micromanipulator</td>
+      <td>Narishige</td>
+      <td>Cat# SM-15R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hydraulic Oil Micromanipulator</td>
+      <td>Narishige</td>
+      <td>Cat# MO-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oil Microinjector</td>
+      <td>Narishige</td>
+      <td>Cat# IM-9B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Two-photon microscope</td>
+      <td>Scientifica</td>
+      <td>Serial# 14200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>780 nm LED light source</td>
+      <td>Thorlabs</td>
+      <td>Cat# M780L3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Patch-Clamp amplifier</td>
+      <td>Molecular Device</td>
+      <td>Axon Multiclamp 700B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Patch-Clamp microscope</td>
+      <td>Scientifica</td>
+      <td>Slice Scope</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Patch-Clamp manipulator</td>
+      <td>Scientifica</td>
+      <td>Serial# 301311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zeiss LSM 710 confocal microscope</td>
+      <td>Zeiss</td>
+      <td>Cat# LSM710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neuropixels phase 3A system</td>
+      <td>Imec</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FPGA Kintex-7 KC705</td>
+      <td>Xilinx</td>
+      <td>EK-K7-KC705-G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Micromanipulator</td>
+      <td>Sensapex</td>
+      <td>Cat# uMp-1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 In total, 97 mice (3–5 weeks old for virus injections, 2–3 months for in vivo physiology) of either sex were used in our experiments including PvalbCre, PvalbCre x Ai9, Ntsr1-GN209Cre, Ntsr1-GN209Cre x Ai9, and Gad2Cre. PvalbCre mice (JAX: 008069) (Hippenmeyer et al., 2005) express Cre recombinase in parvalbumin-expressing neurons. Ntsr1-GN209Cre mice (Genset: 030780-UCD) express Cre recombinase in Ntsr1-GN209-expressing neurons. Gad2Cre mice (JAX: 010802) express Cre recombinase in Gad2-expressing neurons. Ai9 (JAX: 007909) is a tdTomato reporter mouse line (Madisen et al., 2010). Animals were maintained on a 12 hr light/dark cycle, and fed with sterilized food, water, bedding and nesting material. All animal procedures were performed in accordance with standard ethical guidelines of KU Leuven and European Communities Guidelines on the Care and Use of Laboratory Animals (004–2014/EEC, 240–2013/EEC, 252–2015/EEC).
 
-## Method details
+### Method details
 
-## Rabies virus production
+#### Rabies virus production
 
 Rabies production method was similar to previously published methods (Osakada and Callaway, 2013; Yonehara et al., 2013). Glycoprotein G-coated, G-deleted B19 rabies virus (G-coated SAD-ΔG-GCaMP6s RV) was amplified in B7GG cells, which express rabies glycoprotein G. For amplification, approximately 106 infectious units of G-coated SAD-ΔG-GCaMP6s RV were used to infect five 10 cm plates of 80% confluent B7GG cells followed by 2–6 hr of incubation. Then, infected B7GG cells were treated with 0.05% trypsin (Thermo, 25300054) and split into twenty-five 10 cm plates. To harvest the virus, we collected the supernatant of the infected cells every 3 days. 5–6 harvests were performed. To concentrate the virus, the supernatant was firstly centrifuged at 2500 RPM and filtered (VWR, 514–0027) to get rid of the cell debris. Then the virus was spun in an ultracentrifuge for 5–12 hr at 25,000 RPM and at 4°C. After ultracentrifugation, the supernatant was discarded, and the pellet was dissolved in 200 µl of the original cell culture supernatant. The virus was tittered by counting a culture of infected BHK cells. To produce EnvA-coated SAD-ΔG-GCaMP6s RV, approximately 106 infectious units of G-coated SAD-ΔG-GCaMP6s RV were used to infect BHK-EnvA cells. The same procedure as for the G-coated RV amplification was then applied. EnvA-coated SAD-ΔG-GCaMP6s RV was tittered by infection of HEK293T-TVA cells. The titer used for injection ranged from 107 to 109 infectious units/ml (IU/ml).
 
-## Surgical procedures
+#### Surgical procedures
 
 Animals were quickly anesthetized with Isoflurane (Iso-vet 1000 mg/ml) and then injected with a mixture of Ketamine and Medetomidine (0.75 mL Ketamine (100 mg/mL) + 1 mL Medetomidine (1 mg/mL) + 8.2 mL Saline). Mice were placed in a stereotaxic workstation (Narishige, SR-5N). Dura tear (NOVARTIS, 288/28062–7) was applied to protect the eyes. To label the ganglion cells in the parabigeminal nucleus circuit, we performed the surgery on wild type mice and injected herpes-simplex-virus (HSV, hEF1a-TVA950-T2A-rabiesG-IRES-mCherry, MIT viral core, RN714) and EnvA-coated SAD-ΔG-GCaMP6s RV. In our experiment, we used PV-Cre mice as wild type mice. For the first injection of HSV into the parabigeminal nucleus, we used micropipettes (Wiretrol II capillary micropipettes, Drumond Scientific, 5-000-2005) with an open tip of around 30 µm and an oil-based hydraulic micromanipulator MO-10 (Narishige) for stereotactic injections. Alternatively, we used an oil-based microinjector IM-9B (Narishige) with the corresponding micropipettes (Warner Instrument, G100-4) with an open tip of 30 µm. The injection coordinates for a 4 weeks old mouse with a bregma-lambda distance of 4.7 mm were AP: −4.20; ML:±1.95; DV: 3.50 mm. As the mice were different in body size, we adjusted the coordinates for each mouse according to their bregma-lambda distance. To label the injection sites, DiD (Thermo, D7757) was used to coat the pipette tip. We injected in total 100–400 nl HSV in single doses of up to 200 nl with a waiting time of 5–10 min after each injection. Twenty-one days later, we injected rabies virus (EnvA-coated SAD-ΔG-GCaMP6s) into the superior colliculus using the same method as for the HSV injections. The retinotopic location of the first injection into the parabigeminal nucleus or the pulvinar is unknown. To maximize the labelling of ganglion cells in the retina, we thus covered as much as possible of the superficial layer of the superior colliculus during the second injection. We injected 100–200 nl of rabies virus at a depth of 1.7–1.8 mm at four different locations within a 1 mm2 field anterior of lambda and starting at the midline.
 
@@ -167,163 +1089,163 @@ To label the pulvinar circuit, we performed the surgery on Ntsr1-GN209Cre mice a
 
 Following injection, the wound was closed using Vetbond tissue adhesive (3M,1469). After surgery, mice were allowed to recover on top of a heating pad and were provided with soft food and water containing antibiotics (emdotrim, ecuphar, BE-V235523).
 
-## Retina immunohistochemistry
+#### Retina immunohistochemistry
 
 Mouse retinas were extracted eight days after the rabies virus injection into the superior colliculus. After deep anesthesia (120 µl of Ketamine (100 mg/ml) and Xylamine (2%) in saline per 20 g body weight), eyes were gently touched with a soldering iron (Weller, BP650) to label the nasal part of the cornea and then enucleated. The retinas were extracted in 1x PBS (Diluted from 10x PBS (VWR, 437117K), pH 7.4) and three cuts were made to label the nasal, dorsal and ventral retina.
 
 The dissected retinas were fixed in 4% paraformaldehyde (Histofix, ROTH, P087.5mm) with 100 mM sucrose for 30 min at 4°C, and then transferred to a 24-well plate filled with 1x PBS and washed three times for 10 min at room temperature or transferred into 15 ml 1x PBS and washed overnight or longer at 4°C. After washing, retinas were transferred to wells containing 10% sucrose in 1x PBS with 0.1% NaN3 (w/v) and allowed to sink for a minimum of 30 min at room temperature. Then retinas were transferred to wells containing 20% sucrose in 1x PBS with 0.1% NaN3 (w/v) and allowed to sink for a minimum of 1 hr at room temperature. Finally, retinas were put into 30% sucrose in 1x PBS with 0.1% NaN3 (w/v) and allowed to sink overnight at 4°C. The next day, freeze-cracking was performed: retinas were frozen on a slide fully covered with 30% sucrose for 3–5 min on dry ice. The slides were then thawed at room temperature. The freeze–thaw cycle was repeated two times. Retinas were washed 3 times for 10 min each in 1x PBS, followed by incubation with blocking buffer (10% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS) for at least 1 hr at room temperature. Primary antibody solution was added after blocking and retinas were incubated for 5–7 days under constant gentle shaking at room temperature. Primary antibodies were rabbit anti-GFP (Invitrogen, A-11122, 1:500) and goat anti-ChAT (Chemicon, Ab144P, 1:200). They were prepared in 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS. After incubation, retinas were washed three times for 10 min in 1x PBS with 0.5% TritonX-100 before being transferred into the secondary antibody solution (Alexa488 donkey anti-rabbit (Invitrogen, A21206, 1:500) and Alexa633 donkey anti-goat (Invitrogen A-21082, 1:500); prepared in 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS). Nuclei were stained with DAPI (Roche, 10236276001, 1:500) together with the secondary antibody solution. The retinas were incubated in the secondary antibody with DAPI solution overnight at 4°C. Retinas were then washed three times in 1x PBS with 0.5% TritonX-100 and 1 time in 1x PBS. For mounting, we used 2,2′-Thiodiethanol (TDE) (Sigma, 166782–500G) (Staudt et al., 2007) to exchange the water in the sample. To achieve this, retinas were incubated in different concentration of TDE buffer (10% - > 25% - > 50% - > 97%) for at least 30 min each. Then the retinas were embedded in ProLong Gold Antifade Mountant (Thermo, P36934) and gently covered with a #0 coverslip (MARIENFEL, 0100032, No.0, 18*18 mm). To avoid squeezing the retinas, we put four strips of Parafilm (Parafilm, PM999) around the retina before adding the coverslip. Some of the retinas were mounted in 97% TDE with DABCO (Sigma, 290734) after immersion into TDE. Some retinas were mounted with ProLong Gold Antifade Mountant directly after washing. Afterwards, nail polish was used to prevent evaporation and the samples were stored in darkness at 4°C.
 
-## Retina immunohistochemistry (SMI32, CART and FOXP2)
+#### Retina immunohistochemistry (SMI32, CART and FOXP2)
 
 Similar procedures were used to stain the retinas for neurofilament or CART. After fixation, freeze-cracking and blocking, primary antibody solution was added and the retinas were incubated for 5–7 days with gentle shaking at room temperature. Primary antibodies used were chicken anti-GFP (Invitrogen, A-10262, 1:500), goat anti-ChAT (Chemicon, Ab144P, 1:200), mouse SMI32 (Biolend, 801701,1:1000) and rabbit anti-CART (Phoenix, H-003–62,1:500). They were prepared in 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS. Retinas were washed three times, 15 min each, in 1x PBS with 0.5% TritonX-100 before being transferred into the secondary antibody solution consisting of Alexa488 donkey anti-chicken (ImmunoJackson, 703-545-155, 1:500) and Alexa633 donkey anti-goat (Invitrogen A-21082, 1:500), Cy3 donkey anti-mouse (ImmunoJackson, 715-165-151, 1:400) and DyLight 405 donkey anti-rabbit (ImmunoJackson, 715-475-150, 1:200) with 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS. Retinas were incubated in secondary antibody solution overnight at 4°C. Slices were washed three times for 10–15 min each in 1x PBS with 0.5% TritonX-100 and 1 time in 1x PBS. Mounting procedures are the same as listed above.
 
 To stain the retina for FOXP2, we used a slightly different staining procedure. After fixation and freeze-cracking, retinas were washed three times for 10 min each in 1x PBS, followed by incubation with blocking buffer (5% NDS, 0.3% TritonX-100 in 1x PBS) overnight at 4°C. Primary antibody against FOXP2 (abcam1307, 1:2000) was added after blocking and retinas were incubated for 5–7 days under constant gentle shaking at 4°C. They were prepared in 5% NDS, 0.3% TritonX-100 in 1x PBS. After incubation, retinas were washed three times for 15 min in 1x PBS with 0.3% TritonX-100 before being transferred into the secondary antibody solution (Alexa555 donkey anti-goat abcam150130, 1:300); prepared in 1xPBS overnight at 4°C. The second day, retinas were washed three times in 1x PBS and incubated in the second primary antibody solution for 5–7 days under constant gentle shaking at room temperature. The second primary antibodies were rabbit anti-GFP (Invitrogen, A-11122, 1:500) and goat anti-ChAT (Chemicon, Ab144P, 1:200), which were prepared in 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS. After incubation, retinas were washed three times for 10 min in 1x PBS with 0.5% TritonX-100 before being transferred into the secondary antibody solution (Alexa488 donkey anti-rabbit (Invitrogen, A21206, 1:500) and Alexa633 donkey anti-goat (Invitrogen A-21082, 1:500); prepared in 3% NDS, 1% BSA, 0.5% TritonX-100, 0.02% NaN3 in 1x PBS. Retinas were then washed three times in 1x PBS with 0.5% TritonX-100 and once in 1x PBS. Mounting procedures are the same as listed above.
 
-## Brain immunohistochemistry
+#### Brain immunohistochemistry
 
 After removing the eyes, mice were immediately perfused with 1x PBS and 4% paraformaldehyde (PFA) and brains were post-fixed in 4% PFA overnight at 4°C. Vibratome sections (100–200 µm) were collected in 1x PBS and were incubated in blocking buffer (1x PBS, 0.3% Triton X-100, 10% Donkey serum) at room temperature for 1 hr. Then slices were incubated with primary antibodies in blocking buffer overnight at 4°C. The next day, slices were washed three times for 10 min each in 1x PBS with 0.3% TritonX-100 and incubated in secondary antibody solution diluted in blocking buffer for 2 hr at room temperature or overnight at 4°C. Primary antibodies used were rabbit anti-GFP (Thermo Fisher, A-11122, 1:500) and chicken anti-mCherry (Novus, NBP2-25158, 1:1000) and secondary antibodies used were Alexa488 donkey anti-rabbit (Thermo Fisher, A21206, 1:500–1000) and Cy3 donkey anti-chicken (ImmunoJackson, 703-166-155, 1:800–1000). Nuclei were stained with DAPI (Roche, 10236276001, 1:500) together with the secondary antibody solution. Sections were then again washed three times for 10 min in 1x PBS with 0.3% TritonX-100 and once in 1x PBS, covered with mounting medium (Dako, C0563) and a glass coverslip. For the Pbg experiments, we applied Nissl stain instead of the DAPI stain, where the Pbg can be identified as a cell-dense area. Nissl stain was applied after the secondary antibody staining. After washing with 1x PBS, the brain slices were incubated with Nissl in 1x PBS (NeuronTrace 435/455, Thermo, N21479, 1:150) for at least 20 min at room temperature. Afterwards, the sections were rinsed for 10 min in 1x PBS with 0.1% TritonX-100, followed by another two times washing for 5 min each in 1x PBS. Finally, the sections were washed on a shaker for 2 hr at room temperature or overnight at 4°C in 1x PBS.
 
-## Confocal microscopy
+#### Confocal microscopy
 
 Confocal microscopy was performed on a Zeiss LSM 710 microscope. Overview images of the retina and brain were obtained with a 10x (plan-APOCHROMAT 0.45 NA, Zeiss) objective. The following settings were used: zoom 0.7, 4 × 4 tiles with 0% to 15% overlap, 2.37 µm/pixel resolution. For single retina ganglion cell scanning, we used a 63x (plan-APOCHROMAT 1.4 NA, Zeiss) objective. The following settings were used: zoom 0.7, 2 × 2 tiles or more (depending on size and number of cells) with 0% to 15% overlap. This resulted in an XY-resolution of 0.38 µm/pixel and a Z-resolution between 0.25 and 0.35 µm/pixel. The Z-stacks covered approximately 50 µm in depth.
 
-## In vivo electrophysiology
+### In vivo electrophysiology
 
-## Surgical procedure
+#### Surgical procedure
 
 Eight PV-Cre mice of either sex at the age of 2–2.5 months were quickly anesthetized with Isoflurane (Iso-vet 1000 mg/ml) and then either maintained under Isoflurane anesthesia or injected with a mixture of Ketamine and Medetomidine (0.75 mL Ketamine (100 mg/mL) + 1 mL Medetomidine (1 mg/mL) + 8.2 mL Saline). Lidocaine (0.5%, 0.007 mg/g body weight) was injected under the skin above the skull, the animal’s head was shaved, the skin and muscle tissue removed, and a titanium head plate fixed to the skull using dental cement (Metabond, Crown and Bridge). After recovery from anesthesia animals were single-housed and were administrated Buprenorphine and Cefazolin for 60 hr post-surgery (Buprenorphine 0.2 mg/kg I.P. and Cefazolin 15 mg/kg I.P. in 12 hr intervals) and Dexamethasone (max. 0.2 ml of 0.1 mg/ml/day) depending on the condition of the animal. After this recovery phase animals were habituated for 3–4 days to the recording setup in sessions of increasing head-fixed time. One day before the first recording, the animals were anesthetized with Isoflurane and small craniotomies were performed (approximately 100 µm diameter, elongated to up to 300 µm laterally for parabigeminal coordinates and posteriorly for pulvinar coordinates). Coordinates were adjusted to each mouse’s skull size based on standard coordinates for a bregma-lambda distance of 4.7 mm. Standard coordinates pulvinar: bregma −2.0/1.7 lateral. Parabigeminal nucleus: bregma −4.2/2.0 lateral.
 
-## Data acquisition
+#### Data acquisition
 
 Silicone Neuropixels probes phase 3A (Imec, Belgium) (Jun et al., 2017) were used to record light responses in the pulvinar and parabigeminal nucleus. The Neuropixels probes consist of a single shaft with 960 recording electrodes arranged in 480 rows with two electrodes each. The spacing between electrodes within a row (x) is 16 µm, and rows are 20 µm apart from each other (y) resulting in recording site length of 9600 µm. The 384 electrodes at the tip of the probe were recorded simultaneously in all experiments. Signals were split online into high-frequency (>300 Hz) and low-frequency (<300 Hz) and recorded separately at 30 kHz using the Neuropixels headstage (Imec), base-station (Imec) and a Kintex-7 KC705 FPGA (Xilinx). SpikeGLX was used to select recording electrodes, to calculate gain corrections and to observe and save the data. Stimulus timing information was recorded simultaneously using the digital ports of the base-station.
 
-## Presentation of visual stimuli
+#### Presentation of visual stimuli
 
 A calibrated 32-inch LCD monitor (Samsung S32E590C, 1920 × 1080 pixel resolution, 60 Hz refresh rate, average luminance of 2.6 cd/m2) was positioned 35 cm in front of the right eye, so that the screen was covering 90° of azimuth and 70° of altitude of the right visual field. Visual stimuli were presented on a gray background (50% luminance), controlled by Octave (GNU Octave) and Psychtoolbox (Kleiner et al., 2007). The following visual stimuli were used:
 
-## Large moving square
+##### Large moving square
 
 A black square of 53° side length moved with a speed of 150 °/sec across the screen in eight direction (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°). Each direction was repeated 10 times.
 
-## Fast-small dot
+##### Fast-small dot
 
 A black dot of 4° diameter moved with 150°/s in two direction (left-right, right-left) at three different positions (center, upper quarter, lower quarter) across the screen. Each position and direction was repeated 10 times.
 
-## Small-slow dot
+##### Small-slow dot
 
 Similar to the fast-small objects, a black dot of 4° diameter moved with 21°/s in two directions at three positions across the screen.
 
-## Expansion
+##### Expansion
 
 A small disc linearly expanded from 2° to 50° of diameter within 300 ms at the centre of the screen. The stimulus was repeated 10 times.
 
-## Full-field ‘chirp’ modulation
+##### Full-field ‘chirp’ modulation
 
 A full-field stimulus based on the ‘chirp’ stimulus (Baden et al., 2016) starting with slow transitions gray-black-gray-white-gray (3 s at each level), followed by a temporal modulation between black and white starting at 0.5 Hz and increasing to 8 Hz over a time of 6 s. After 3 s at a gray screen, the contrast was modulated from 0% to 100% over a time period of 5.5 s at 2 Hz. The stimulus was repeated 10 times.
 
-## Experimental design
+#### Experimental design
 
 Head-posted animals were fixed on a treadmill in front of the screen. For all pulvinar and some parabigeminal recordings, we coated the Neuropixels probe with a fluorescent dye (DiI, DiD or DiO, Thermo Fisher). The coordinates for the pulvinar (N = 4 recordings) or parabigeminal nucleus (N = 5) were measured again and the probe was slowly lowered into the brain using a micromanipulator. Some artificial cerebrospinal fluid (150 mM NaCl, 5 mM K, 10 mM D-glucose, 2 mM NaH2PO4, 2.5 mM CaCl2, 1 mM MgCl2, 10 mM HEPES adjusted to pH 7.4 with NaOH) was used to cover the skull. Then, the probe was lowered to the desired depth. In most cases, the probe was inserted further than the targeted brain area to ensure that the whole nucleus was covered. After 20–30 min, visual stimulation and recording of neural activity was started. The setup was covered with black curtains during the whole experiment.
 
-## Brain histology for probe location
+#### Brain histology for probe location
 
 To facilitate the identification of the pulvinar and the correct location of the probe, we injected Cholera Toxin Subunit B conjugated with Alexa488 (Thermo Fisher) into the contralateral eye to label retinal targets such as the laterogeniculate nucleus of the thalamus. Then, the brain was fixed and Vibratome sections (coronal at 100 µm) were collected in 1x PBS. The slices were washed in 1x PBS with 0.3% TritonX-100, then washed in 1x PBS and incubated for 20 min at RT with fluorescent Nissl Stain (NeuroTrace 435/455, Thermo Fisher, 1:150). Afterwards, the slices were washed in 1x PBS with 0.3% TritonX-100 and for at least 2 hr in 1x PBS. Brain slices were covered with mounting medium (Dako) and a glass coverslip, and imaged using a confocal microscope.
 
 Probe trajectories were mapped by following DiI tracks that were typically visible across multiple slices. Recording locations along the track were manually identified by comparing structural aspects of the histological slice with features in the Allen Brain Atlas. This identification was aided by reconstruction of the track in the Allen CCF coordinates (Shamash et al., 2018). To achieve this, an initial guess was made of the 3D Allen CCF coordinate for each DiI track. This was aided by a control-point registration of the histological slice to an atlas slice. Once the coordinates were identified for each DiI mark along the track, a line was fitted to these coordinates in and the atlas labels were extracted from along this line. This resulted in identification of the list of brain regions each probe track and recording site passed through.
 
-## Retinal electrophysiology
+### Retinal electrophysiology
 
-## Preparation of retinas
+#### Preparation of retinas
 
 For in vitro recordings of retinal ganglion cells, we used mice that had been injected with herpes-simplex virus into the Pbg or pulvinar and rabies virus into the superior colliculus to label circuit specific retinal ganglion cells as described above. For pulvinar experiments, we analyzed 64 cells from 20 Ntsr-Cre mice. For Pbg-specific ganglion cells, we recorded 50 cells in retinas from PV-Cre (N = 14) or Gad2-Cre (N = 3) mice. Retinas were isolated from mice that were dark-adapted for a minimum of 30 min. Retina isolation was done under deep red illumination in Ringer’s medium (110 mM NaCl, 2.5 mM KCl, 1 mM CaCl2, 1.6 mM MgCl2, 10 mM D-glucose, 22 mM NaHCO3, bubbled with 5% CO2/95% O2, pH 7.4). The retinas were then mounted ganglion cell-side up on filter paper (Millipore, HAWP01300) that had a 3.5 mm wide rectangular aperture in the center, and superfused with Ringer’s medium at 32–36°C in the microscope chamber for the duration of the experiment.
 
-## Electrophysiology
+#### Electrophysiology
 
 Electrophysiological recordings were made using an Axon Multiclamp 700B amplifier (Molecular Devices) and borosilicate glass electrodes (BF100-50-10, Sutter Instrument). Signals were digitized at 20 kHz (National Instruments) and acquired using WaverSurfer software (version: 0.918) written in MATLAB. The spiking responses were recorded using the patch clamp technique in loose cell-attached mode with electrodes pulled to 3–5 MΩ resistance and filled with Ringer’s medium. To visualize the pipette, Alexa 555 was added to the Ringer’s medium.
 
-## Targeted recordings using two-photon microscopy
+#### Targeted recordings using two-photon microscopy
 
 Fluorescent cells were targeted for recording using a two-photon microscope (Scientifica) equipped with a Mai Tai HP two-photon laser (Spectra Physics) integrated into the electrophysiological setup. To facilitate targeting, two-photon fluorescent images were overlaid with the IR image acquired through a CCD camera. Infrared light was produced using the light from an LED. For some cells, z-stacks were acquired using ScanImage (Vidrio Technologies).
 
-## Presentation of visual stimuli
+#### Presentation of visual stimuli
 
 Stimuli were generated with an LCD projector (Samsung, SP F10M) at a refresh rate of 60 Hz, controlled with custom software written in Octave based on Psychtoolbox. The projector produced a light spectrum that ranged from ~ 430 nm to ~ 670 nm. The power produced by the projector was 240 mW/cm2 at the retina. Neutral density filters were used to control the stimulus intensity in logarithmic steps. Recordings were performed with filters decreasing the stimulus intensity by 1–2 log units. The following visual stimuli were used for retinal recordings:
 
-## Full-field ‘chirp’ modulation
+##### Full-field ‘chirp’ modulation
 
 A full-field stimulus based on the ‘chirp’ stimulus (Baden et al., 2016) starting with slow transitions gray-black-gray-white-gray (3 s at each level), followed by a temporal modulation between black and white starting at 0.5 Hz and increasing to 8 Hz over a time of 6 s. After 3 s at a gray screen, the contrast was modulated from 0% to 100% over a time period of 5.5 s at 2 Hz. The stimulus was repeated 10 times.
 
-## Spot-size
+##### Spot-size
 
 A black or white spot of 6 sizes (4°, 8°, 12°, 16°, 20°, 40°) was shown for 2 s at the center of the gray screen. Both the colors and the sizes were shown in random sequence.
 
-## Large moving bar
+##### Large moving bar
 
 A black bar with a width of 40° moved with a speed of 150°/sec across the screen in eight directions (0°, 45°, 90°, 135°, 180°, 225°, 270°, 315°). Each direction was repeated 5 times. The directions were randomized.
 
-## Expansion
+##### Expansion
 
 A black disc linearly expanded from 2° to 50° of diameter within 300 ms (150°/sec) at the center of the screen. The stimulus was repeated 10 times.
 
-## Dimming
+##### Dimming
 
 A disc of 50° diameter linearly dimmed from background gray to black within 300 ms (150°/sec) at the center of the screen. The stimulus was repeated 10 times.
 
-## Looming objects
+##### Looming objects
 
 A small disc non-linearly expanded from 2° to 50° of diameter at a slow (18.5°/sec), medium (92°/sec) and fast speed (150°/sec). Each condition was repeated 10 times.
 
-## Slow-small objects
+##### Slow-small objects
 
 A black disc of 4° diameter moved with 21°/sec in two direction (left-right, right-left) at the center line across the screen. Each direction was repeated 5 times.
 
-## Morphology of patched cells
+#### Morphology of patched cells
 
 After patching, retinas were fixed and stained as described above. If the rabies labelling density allowed it, the morphology of the patched cells was imaged using a confocal microscope.
 
-## Morphology of individual ganglion cells
+### Morphology of individual ganglion cells
 
 To label the dendritic trees of the imaged cells in the confocal Z-stacks, we either applied a thresholding approach to identify pixels belonging to the cells, or we sent the data set to Ariadne-service GmbH (Switzerland; ariadne.ai) for tracing of the dendritic tree. The position of the ChAT-planes was extracted and used to warp both the ChAT-signal as well as the binary Z-stack of the labeled cell. Then, dendrites from other cells, noise, and axons were removed and the position of the cell body was measured. The resulting warped dendritic tree was used for further analysis such as computation of the dendritic profile, area measurements and dendritic statistics. All code can be found on github (https://github.com/farrowlab/Reinhard_2019; copy archived at https://github.com/elifesciences-publications/Reinhard_2019; https://github.com/farrowlab/ChATbandsDetection; copy archived at https://github.com/elifesciences-publications/chATbandsDetection).
 
-## Down-sampling and binarization/tracing
+#### Down-sampling and binarization/tracing
 
 The confocal Z-stacks of individual ganglion cells were denoised using the CANDLE package for MATLAB (Coupé et al., 2012) and down-sampled to have a resolution of XYZ = 0.5×0.5 x (0.25 to 0.35) µm per pixel and saved as MATLAB files. We then manually selected a threshold to transform the GFP-signal (i.e. the labeled cell) into a binary version where the whole dendritic tree was visible but noise was reduced as much as possible using an adapted version of the method described in Sümbül et al. (2014a) and Sümbül et al. (2014b). Alternatively, the confocal Z-stacks were sent to Ariadne-service GmbH where the dendritic tree of each neuron was traced.
 
-## Extraction of ChAT-positions
+#### Extraction of ChAT-positions
 
 ChAT-band positions were either extracted manually or automatically using a convolutional neural network. For manual extraction, the ChAT-signal was smoothed using a two-dimensional standard-deviation filtering approach in the XY plane with a size of 21 × 21 pixels. The resulting Z-stacks were loaded into Fiji (Schindelin et al., 2012). ChAT-band positions were marked as described in Sümbül et al. (2014a). Briefly, we labeled points in the ON- and OFF-band with an approximate spacing of 20 µm in X- and Y-direction. For automated labeling, an end-to-end 3D Convolutional Neural Network called V-Net with a Dice Loss Layer (Milletari et al., 2016) was trained on noisy greyscale images of ChAT-images, to denoise and remove any cell bodies, creating a probability map of background and foreground, with foreground being voxels that might belong to the ChAT-bands. Two smoothness-regularized-least squares surfaces were fitted to manually labeled data to train the algorithm and to create ground truth binary masks. Then, Otsu's thresholding method combined with connected component analysis was performed on the resulting probability map to automatically locate the points that belong to the ChAT-bands in new data-sets. Finally, two surfaces were independently fit to the corresponding data points to approximate the two ChAT-bands (https://github.com/farrowlab/ChATbandsDetection; copy archived at https://github.com/elifesciences-publications/chATbandsDetection).
 
-## Warping
+#### Warping
 
 An adapted version of the code developed in the lab of Sebastian Seung was used to warp the GFP-signal (Sümbül et al., 2014a). Briefly, the ChAT-band locations were used to create a surface map, which then was straightened in 3D-space. Then, the binarized GFP-signal was warped accordingly.
 
-## Soma position and removal of noise
+#### Soma position and removal of noise
 
 After warping, the soma position was determined by filtering the GFP-signal with a circular kernel (adapted from Sümbül et al., 2014a). If this method detected the soma, it was used to remove the soma from the GFP-data and the center of mass was taken as the soma position. If this automated method failed, the soma position was marked manually. Afterwards, dendrites of other cells, axons, and noise were removed manually: The warped GFP-signal was plotted in side-view and en-face view in MATLAB and pixels belonging to the cell were selected manually.
 
-## Computation of the dendritic profile and area
+#### Computation of the dendritic profile and area
 
 The distribution of the cell’s dendritic tree was computed (Sümbül et al., 2014a). Briefly, the Z-positions of all GFP-positive pixels were normalized to be between −0.5 and 0.5. Then the Fourier transform of an interpolating low-pass filter was used to filter the Z-positions. This resulted in a vector containing the distribution of pixels in the Z-direction. If necessary, this profile was used to manually remove remaining axonal or somal pixels. In this case, the dendritic profile was computed again after cleaning of the data. The area of the dendritic tree was approximated by computing a convex hull (regionprops function in MATLAB). When diameters are given, they were calculated as D = 2*(area / π)1/2.
 
-## Computation of the dendritic statistics
+#### Computation of the dendritic statistics
 
 To compute the dendritic statistics a minimal spanning tree model was created of each imaged dendritic tree using the TREES toolbox with a branching factor of 0.4. From this tree we calculated a set of five statistics including: the mean ratio of path length and Euclidean distance; maximum metric path length; mean branch lengths; mean path length and z-range against width of spanning field (Cuntz et al., 2011).
 
-## Down-sampling of dendritic tree for plotting
+#### Down-sampling of dendritic tree for plotting
 
 For en-face plots of the dendritic arbor, they were down-sampled by calculating the local neighborhood median of all labeled pixels in patches of 50 × 50 pixels and with a sliding window of 10 pixels.
 
-## Ganglion cell type assignment
+#### Ganglion cell type assignment
 
-## Preparation of dendritic profile templates
+##### Preparation of dendritic profile templates
 
 Templates of each cell type were created from the 381 traced retinal ganglion cells from EM sections of the museum.eyewire.org data basw. The EM data set was complemented by three additional data sets: Dendritic trees of examples of HD1, HD2 (Jacoby and Schwartz, 2017) and ventral OFF OS cells (Nath and Schwartz, 2017) were obtained from Greg Schwartz (Feinberg School of Medicine, Northwestern); examples of M2 (Cdh3) and sustained OFF-alpha cells (W7b) were obtained from Uygar Sümbül (Sümbül et al., 2014a), and dendritic profiles four FOXP2-positive cell types were extracted from Rousso et al. (2016). Except for the FOXP2-positive cells, all data were processed in the same way as our data (warping, removal of axons) and average dendritic profiles were calculated for each cell type resulting in 56 profile templates.
 
-## Correlation measurements
+##### Correlation measurements
 
 For each of our traced retinal ganglion cell, we calculated the linear correlation coefficient (corrcoef function in Matlab) and Euclidean distance (pdist function in Matlab) of its dendritic profile to each of the 56 templates. If the molecular identity of the cell was known, the set of compared templates was reduced to matching candidates, for example to the alpha cells of the EM data set (cluster 1wt, 4ow, 6sw, 8w) and the W7b profile of the Sümbül data set for an SMI32+ cell. All clusters with a correlation coefficient or an Euclidean distance above a set threshold were considered as potential types for this cell. Thresholds were defined as the squared lower quartile of coefficients/distances of all molecularly identified cell types. For molecularly identified cells without any correlation or distance above threshold, the best match was kept. Other cells without any correlation coefficient or distance measurement above the threshold were assigned as non-classifiable.
 
-## Decision tree
+##### Decision tree
 
 The correlation and distance measurements strongly reduced the number of potential matching templates. Cells were then assigned to one of the remaining templates based on a decision tree considering aspects of the dendritic profile, dendritic and soma size, and principal component analysis of the complete dendritic tree (pca function in Matlab). All cluster numbers (C-) used in the following text refer to the EM clusters in Bae et al. (2018). Below is a detailed description of how cells lying within the same stratification were assigned.
 
@@ -335,73 +1257,73 @@ Cells stratifying above the OFF-ChAT band: a) Cells in C-25 separate from other 
 
 Cells that did not fulfil the criterions of any cluster within their group were considered ‘non-classifiable’. We did not distinguish between different types of ON-OFF-DS (37 c,d,r,v) and ON-DS cells (7id,ir,iv,o).
 
-## Visual inspection
+##### Visual inspection
 
 After assigning each cell to an EM-cluster, the en-face and side-views of all cells in a given cluster were visually inspected. For potential outliers, we compared the dendritic statistics of this cells to the statistics of its current and two next best candidate cell types. If the statistics were closer to the average statistics of an alternative cluster, this cell was reassigned. In addition, some cells of C-8n and C-8w could not be clearly assigned based on their soma. However, the sustained alpha cells in C-8n have a particular soma shape and pattern of dendritic roots. In these cases, the detailed dendritic and soma morphology in the original confocal scans were inspected and reassigned by an expert.
 
-## Size distribution analysis
+#### Size distribution analysis
 
 For retinotopic size distribution calculations, we computed a moving median diameter within a circular window of 250 µm radius, using a step size of 100 µm. The resulting 50 × 50 median size matrix was convolved with a gaussian with sigma = 200 µm (using MATLAB function fspecial and nanconv).
 
-## Quantification of SMI32+ cells, CART+ cells and FOXP2+ cells
+#### Quantification of SMI32+ cells, CART+ cells and FOXP2+ cells
 
-## Numbers of double-labeled cells
+##### Numbers of double-labeled cells
 
 To quantify the number of double-positive cells for CART/GCaMP6s and SMI32/GCaMP6s, we scanned a z-stack (1 to 5 µm Z-resolution) of the whole retina using the confocal microscope with an 10x objective. Images of the anti-CART, SMI32 or FOX2 and the anti-GFP staining were opened in Fiji. For counting CART+ cells, cells were marked using the point tool and counted manually. Note that the anti-CART antibody also labels a group of amacrine cells, therefore the complete Z-stack should be checked for each CART+ cell to make sure that the labelling truly overlaps with the anti-GFP signal. The CART expression pattern was consistent with previous reports (Kay et al., 2011). In total we counted three retinas for parabigeminal experiments and six retinas for pulvinar experiments. For SMI32 stainings, cells were counted manually using the cell counter plugin. In total, we counted three retinas for parabigeminal experiments and four retinas for pulvinar experiments. For FOXP2 stainings, cells were counted manually using the cell counter plugin. In total, we counted five retinas for parabigeminal experiments and eight retinas for pulvinar experiments.
 
-## Numbers of cells for types of alpha cells
+##### Numbers of cells for types of alpha cells
 
 To test which of the four alpha cell types were part of each circuit, we acquired small high-resolution Z-stacks (2.5 µm/pixel) of XY = 103×103 µm size (128 × 128 pixel, 63x objective) covering the full depth of the dendritic tree and centered around the soma of 91 SMI32+ / GCaMP6s+ cells in n = 3 retinas from parabigeminal experiments and 90 SMI32+ / GCaMP6s+ cells in n = 3 retinas from pulvinar experiments. We plotted top and side views of each Z-stack in MATLAB and manually decided for each cell if it was a sustained ON-alpha cell (dendrites below the ON- ChAT band), a transient ON-alpha (dendrites just above the ON- ChAT band), a transient OFF-alpha (dendrites just below or on the OFF- ChAT band) or a sustained OFF-alpha cell (dendrites above the OFF- ChAT band).
 
-## Spike sorting
+#### Spike sorting
 
 The high-pass filtered in-vivo data was automatically sorted into individual units using SpyKING CIRCUS (Yger et al., 2018). The following parameters were used: cc_merge = 0.95 (merging if cross-correlation similarity > 0.95), spike_thresh = 6.5 (threshold for spike detection), cut_off = 500 (cut-off frequency for the butterworth filter in Hz). Automated clustering was followed by manual inspection, merging of units if necessary and discarding of noise and multi-units using phy (https://phy-contrib.readthedocs.io). Units were evaluated based on the average waveform shape and auto-correlogram. Only cells with <1% of inter-spike intervals of ≤1 ms were considered. In addition, we tested if their cross correlograms with nearby neurons showed evidence for being spikes from the same neurons (Segev et al., 2004; Yger et al., 2018).
 
-## Analysis of in vivo recordings
+#### Analysis of in vivo recordings
 
 Unless otherwise noted, firing rates were calculated as the number of spikes in 50 ms bins averaged across the 10 stimulus repetitions. Z-scores were calculated as the number of standard deviations from the mean spontaneous activity before stimulus onset. All sorted units were grouped into cells with a maximal response amplitude > 2 standard deviations above the mean spontaneous firing rate (‘potentially responding’) and cells without such a peak (‘non-responding’). The activity to each stimulus repetitions was inspected for the ‘potentially responding’ cells to identify truly responding cells manually, which then were used for further analysis, average response calculations and visualization. For small stimuli shown at three different locations and moving in two different directions, only the strongest response was considered for population analysis.
 
-## DSI
+##### DSI
 
-Direction-selectivity was calculated based on the summed, back-ground subtracted activity during the time from the onset of the fast moving square until the end of the presentation for each direction α. These eight response measurements Rk were normalized to the maximum and the DSI was calculated according to: ∑kRk∙eaik/∑kRk.
+Direction-selectivity was calculated based on the summed, back-ground subtracted activity during the time from the onset of the fast moving square until the end of the presentation for each direction α. These eight response measurements Rk were normalized to the maximum and the DSI was calculated according to: $\sumkR_{k}∙e^{a_{ik}}/\sumkR_{k}$.
 
-## Half-width of response to small, slow dot
+##### Half-width of response to small, slow dot
 
 Mean firing rates for each cell were background subtracted and the MATLAB function findpeaks was used to find the half-width of the highest peak.
 
-## Analysis of patch-clamp recordings
+#### Analysis of patch-clamp recordings
 
 The loose-patch extracellular recording traces were high-pass filtered. Events that exceeded an amplitude threshold were extracted. Unless otherwise noted, firing rates were calculated as the number of spikes in 50 ms bins averaged across the 5–10 stimulus repetitions.
 
-## Chirp
+##### Chirp
 
 Average responses were calculated based on the mean number of spikes during the stimulus across 10 trials.
 
-## Frequency responses
+##### Frequency responses
 
 Spikes produced in response to the frequency part of the chirp stimulus were binned in 1 ms bins and the Fourier Transform was calculated using the Matlab function fft. The mean Fourier Transform amplitude for different frequency ranges was calculated for Figure 6A.
 
-## Spot-size tuning curve
+##### Spot-size tuning curve
 
 Firing rates were background subtracted and peak responses during the first 0.4 s after each stimulus onset were calculated and used to plot a spot-size tuning curve.
 
-## DSI/OSI
+##### DSI/OSI
 
-Direction-selectivity was calculated as for the in-vivo recordings. Firing rates were background subtracted and peak responses during the first 1 s after each stimulus onset were calculated. The direction-selectivity of a ganglion cell was defined as the vector sum of these peak responses for each of the eight different directions α. These eight response measurements Rk were normalized to the maximum and the DSI was calculated according to: ∑kRk∙eaik/∑kRk. Similarly, the orientation-selectivity index (OSI) was calculated according to: ∑kRk∙ea2ik/∑kRk.
+Direction-selectivity was calculated as for the in-vivo recordings. Firing rates were background subtracted and peak responses during the first 1 s after each stimulus onset were calculated. The direction-selectivity of a ganglion cell was defined as the vector sum of these peak responses for each of the eight different directions α. These eight response measurements Rk were normalized to the maximum and the DSI was calculated according to: $\sumkR_{k}∙e^{a_{ik}}/\sumkR_{k}$. Similarly, the orientation-selectivity index (OSI) was calculated according to: $\sumkR_{k}∙e^{a_{2ik}}/\sumkR_{k}$.
 
-## Assigning recorded retinal ganglion cells
+#### Assigning recorded retinal ganglion cells
 
 To assign patched ganglion cells (n = 123) to the anatomical clusters, we assigned their ‘chirp’ responses to templates of identified ‘chirp’ responses. The set of templates included all 49 clusters of Baden et al. (2016) and the average response of patched cells that were assigned to one of our 14 clusters based on their morphology. We had such cells with both anatomy and physiology for clusters 1, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14 (n = 48 cells in total). For comparison with the calcium imaging traces of the published data set, we convolved the chirp responses of the remaining 75 patched cells with the Kernel of the calcium indicator ogb1 used in Baden et al. (2016). Three distance measurements were calculated for each of these patched cells to compare them to the 49 + 12 templates. The distance measurements consisted of linear correlation coefficient (corrcoef function in Matlab), Euclidean distance (pdist function in Matlab) and residuals (subtraction of the response from each template). If a cluster was in the top two for at least two distance measurements, the cell was assigned to this cluster. If the distance measurements did not agree with each other, the best cluster with the highest linear correlation coefficient was taken. For each of our anatomical clusters, we plotted and further analyzed the visual response if it contained at least four patched cells. This led to the analysis of a total of 93 patched cells.
 
-## Comparison of in vitro and in vivo data
+#### Comparison of in vitro and in vivo data
 
 To compare the response properties of different retinal ganglion cell types and neurons in the Pbg and pulvinar, we calculated z-scores for each responding neuron as described above. Median firing rates were plotted for the different brain nuclei and retinal ganglion cell types.
 
-## Cell body size measurements
+#### Cell body size measurements
 
 To separate sustained ON-alpha cells from non-alpha cells, we loaded the original z-stack into Fiji, calculated a maximal projection and used the ellipse tool to fit an ellipse to the cell body and measure its area.
 
-## Statistics
+#### Statistics
 
 To compare dendritic tree diameter distributions, we applied the Kolmogorov-Smirnov test (kstest2 function in MATLAB). Medians were compared by the Wilcoxon rank sum test (ranksum function in MATLAB). We used Pearson correlation (corr function in MATLAB) to test for significant gradients in the retinotopic distribution of dendritic tree diameters.
 

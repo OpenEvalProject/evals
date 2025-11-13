@@ -36,25 +36,41 @@ A fortuitous observation that HSV-1 UL25, a capsid protein that decorates the ve
 
 ## Results
 
-## Generation of UL25 variants
+### Generation of UL25 variants
 
 HSV-1 UL25 can be expressed in soluble form in E. coli only when residues 1–44 are deleted (Bowman et al., 2006). Residues 1–50 are necessary and sufficient for capsid binding (Cockrell et al., 2009), and in the cryoEM structure of the HSV-1 capsid, these residues mediate extensive interactions with another capsid protein, UL17 (Dai and Zhou, 2018). This suggests that these residues are likely disordered in free UL25, potentially leading to aggregation and poor solubility. Therefore, we generated and expressed an HSV-1 UL25∆44 construct, which lacks residues 1–44. UL25∆44 was soluble and could be purified, in agreement with the previous report (Bowman et al., 2006), but was proteolytically cleaved during purification despite the presence of protease inhibitors (Figure 1b). N-terminal sequencing of the single proteolytic product by Edman degradation yielded the amino acid sequence AAELPV, corresponding to residues 73–78. This suggested that UL25∆44 was cleaved between residues Q72 and A73. To prevent heterogeneity due to cleavage, we generated two constructs: UL25∆44 Q72A, which has a single point mutation designed to eliminate the cleavage site, and UL25∆73, which corresponds to the cleavage product. Both constructs yielded a single UL25 species after purification (Figure 1b).
 
-## UL25∆44 Q72A inhibits NEC-mediated budding
+![Figure 1.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig1-v2.jpg)
+
+**Figure 1.:** (a) The UL25 structure and a diagram of domain organization is shown along with a multiple sequence alignment of UL25 residues 45–74 from five alphaherpesviruses. Sequence alignment was generated using Clustal Omega45 and displayed using ESPript 3.046. Identical residues are shown as white letters on a red background. Similar residues are shown as red letters in a blue box. Secondary structure derived from the cryoEM reconstruction of capsid-bound HSV-1 UL25 is shown above the alignment. The following herpesvirus sequences were used (GenBank GeneID numbers in parentheses): HSV-1, herpes simplex virus type 1, strain 17 (2703377); HSV-2, herpes simplex virus type 2, strain HG52 (1487309); BHV-1, bovine herpesvirus-1 (4783418); EHV-4, equine herpesvirus-4, strain NS80567 (1487602); and VZV, varicella-zoster virus, strain Dumas (1487687). (b) SDS-PAGE of purified UL25 constructs: UL25∆44 (cleaved product; 57 kDa), UL25∆44 Q72A (single product; 57 kDa), UL25∆58 Q72A (56 kDa) and UL25∆73 (54 kDa). (c) UL25∆44 Q72A inhibits NEC budding, whereas other UL25 constructs do not. For each condition, NEC-mediated budding was tested at 1:1, 1:6, 1:8, 1:10, and 1:20 NEC:UL25 molar ratios. Each construct was tested in at least two biological replicates, consisting of three technical replicates. Symbols show average budding efficiency of each biological replicate relative to NEC220 (100%; pink). Error bars represent the standard error of measurement for at least two individual experiments. Significance compared to NEC220 was calculated using an unpaired t-test against NEC220. *p-value<0.1. The source file with all raw data values is provided in Figure 1—source data 1. (d) UL25∆44 Q72A does not bind to acidic lipid membranes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** SPR binding of UL25Δ44 Q72A (a) and UL25Δ73 (b) to NEC220-His indicating UL25 can bind the NEC if the NEC is able to form a type of scaffold. (c) ITC of NEC220 and UL25Δ44 showing these two proteins do not bind in solution. (d) Size-exclusion chromatography of NEC185Δ50 (crystallization construct) and UL25Δ44 shows these proteins also do not bind in solution.
+
+### UL25∆44 Q72A inhibits NEC-mediated budding
 
 To assess the effect of UL25 on NEC-mediated budding, we used an established in-vitro budding assay utilizing recombinant, soluble NEC220 (full-length UL31 and UL34 residues 1–220), fluorescently labelled giant unilamellar vesicles (GUVs), and membrane-impermeable fluorescent dye, Cascade Blue (Bigalke et al., 2014). NEC220 and UL25∆44 Q72A were added to the GUVs in 1:1, 1:6, 1:8, 1:10, or 1:20 molar ratios, and budding events were quantified. UL25∆44 Q72A inhibited NEC-mediated budding in a dose-dependent manner, and at 1:10 or 1:20 NEC:UL25 molar ratios, few budding events were observed (Figure 1c). By contrast, UL25∆73 did not inhibit budding even at a 1:20 ratio of NEC:UL25 (Figure 1c), which suggested that residues 45–73 were necessary for inhibition.
 
 UL25∆44 consists of a long N-terminal α-helix (residues 48–94), followed by a flexible linker unresolved in the cryoEM structure, and a C-terminal globular core (residues 134–580) (Figure 1a). Residues 45–73 encompass the N-terminal half of the long α-helix. To further narrow down the inhibitory region within UL25, we analyzed its sequence conservation. Sequence alignment of UL25 homologs from five alphaherpesviruses revealed a divergent N terminus followed by a highly conserved alanine-rich region, residues 61–69 (Figure 1a). We generated the UL25∆58 Q72A construct lacking the divergent N terminus of the α-helix (Figure 1b). UL25∆58 Q72A did not inhibit NEC220 budding (Figure 1c). We also generated a UL25∆50 Q72A construct (as a control for studies using eGFP-UL25 chimera described below), which inhibited budding at a 1:10 NEC:UL25 ratio, the minimal UL25 concentration for budding inhibition (Figure 2a). Thus, residues 51–73 appear essential for inhibition, whereas residues 45–50 are dispensable.
 
-## UL25 does not bind synthetic membranes
+![Figure 2.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig2-v2.jpg)
+
+**Figure 2.:** (a) Quantification of NEC budding in the presence of either eGFP-UL25∆50 or eGFP-UL25∆73. Each construct (except in the absence of NEC220) was tested in at least two biological replicates, each consisting of three technical replicates. Symbols show the average budding efficiency of each biological replicate relative to NEC220 (100%). Error bars represent the standard error of measurement for at least two individual experiments. Significance compared to NEC220 was calculated using an unpaired t-test against NEC220. **p-value<0.01 and ***p-value<0.001. The source file with all raw data values is provided in Figure 2—source data 1. (b) Confocal image of eGFP-UL25∆50 bound to NEC-coated vesicles. No budding is observed. (c) Confocal image of eGFP-UL25∆73 either bound to or budded into vesicles with the NEC. (d) Confocal image of eGFP-UL25∆73 aggregating on the surface of NEC-coated vesicles. All scale bars = 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Both the ATTO-594 and eGFP channels are shown. The scale bar represents 5 μm.
+
+### UL25 does not bind synthetic membranes
 
 We first tested whether UL25 inhibited NEC-mediated budding by competing with the NEC for binding to membranes. We utilized an established co-sedimentation assay utilizing multilamellar vesicles (MLVs) of the same composition as the GUVs used in the budding assay (Bigalke et al., 2014). Unlike NEC220, UL25∆44 Q72A did not bind synthetic lipid vesicles (Figure 1d) and, therefore, could not compete with the NEC220 for binding to membranes.
 
-## UL25∆44 and NEC do not interact in solution
+### UL25∆44 and NEC do not interact in solution
 
 UL25 does not bind membranes (Figure 1d), so, to inhibit NEC-mediated budding, UL25 must instead bind to the NEC. However, no binding was detected in solution, either between UL25∆44 and NEC220 by isothermal titration calorimetry (Figure 1—figure supplement 1) or between UL25∆44 and NEC185∆50 [a truncated construct that was crystallized previously (Bigalke and Heldwein, 2015)] by size-exclusion chromatography (Figure 1—figure supplement 1). Therefore, to bind UL25, NEC may need to be bound to the membrane. Surface plasmon resonance experiments were also performed, but significant nonspecific binding precluded clear data interpretation (Figure 1—figure supplement 1).
 
-## Both inhibitory UL25∆44 Q72A and non-inhibitory UL25∆73 colocalize with membranes in the presence of the NEC
+### Both inhibitory UL25∆44 Q72A and non-inhibitory UL25∆73 colocalize with membranes in the presence of the NEC
 
 To visualize UL25 localization in the presence of NEC and membranes by confocal microscopy, we generated the eGFP-tagged versions of the inhibitory and non-inhibitory UL25 constructs, eGFP-UL25∆44 Q72A and eGFP-UL25∆73. However, eGFP-UL25∆44 Q72A construct was unstable during purification, so eGFP-UL25∆50 Q72A was generated instead. eGFP-UL25∆50 Q72A (as well as its untagged version UL25∆50 Q72A) efficiently inhibited NEC-mediated budding, whereas eGFP-UL25∆73 did not (Figure 2a). When eGFP-tagged UL25 constructs were incubated with the fluorescently labelled GUVs, no eGFP signal was detected on the GUV membranes (Figure 2—figure supplement 1), confirming that UL25 did not bind membranes directly.
 
@@ -64,23 +80,43 @@ In the presence of the NEC220, eGFP-UL25∆73 also colocalized with the GUV memb
 
 In many cases, however, the eGFP-UL25∆73 was clustered around the unbudded GUVs, probably due to its aggregation (Figure 2d). Such aggregation was not observed for eGFP-UL25∆50 Q72A (Figure 2b). It is conceivable that eGFP-UL25∆73 aggregates on NEC-coated GUVs because it lacks half of the long N-terminal helix of UL25 (Figure 1a). Although such aggregation inhibits budding locally (Figure 2d), bulk measurements show that NEC-mediated budding remains efficient in the presence of eGFP-UL25∆73 (Figure 2a). We hypothesize that sequestration of large amounts of aggregated eGFP-UL25∆73 on a few NEC-coated GUVs reduces its concentration throughout the sample, allowing budding to proceed. Taken together, these results suggested that while both inhibitory and non-inhibitory UL25 constructs could bind the membrane-bound NEC, the binding of the inhibitory UL25 construct blocked NEC-mediated budding, whereas the binding of the non-inhibitory UL25 construct did not.
 
-## Mutations within the putative capsid-binding site on the NEC reduce the extent of UL25 inhibition
+### Mutations within the putative capsid-binding site on the NEC reduce the extent of UL25 inhibition
 
 Residues D275, K279, and D282 at the membrane-distal tip of UL31 have been implicated in capsid binding in PRV (Rönfeldt et al., 2017) and in HSV-1 (Takeshima et al., 2019). We generated a quadruple UL31 mutant in which D275, K279, D282, and a nearby C278 were replaced with alanines. The corresponding mutant NEC220, termed capsid-binding mutant (NEC220-CBM), mediated budding at levels similar to the WT NEC220 (Figure 3a) but was much less sensitive to inhibition by UL25∆44 Q72A (Figure 3a) as demonstrated by the 25% reduction in budding of NEC220-CBM compared to 75% for NEC220 (Figure 1c). Moreover, eGFP-UL25∆50 Q72A did not co-localize with the GUV membranes in the presence of the NEC220-CBM (Figure 3b). These results suggested that UL25∆44 Q72A bound to the membrane-distal tip of UL31 and that this interaction was essential for its inhibitory activity.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig3-v2.jpg)
 
-**Figure 3.:** (a) NEC220-CBM budding is not inhibited to the same extent as NEC220 budding by either UL25Δ44 Q72A or eGFP-UL25Δ50 Q72A. Budding was tested at 1:1, 1:6 and 1:10 NEC220-CBM:UL25 molar ratios for UL25Δ44 Q72A and at a 1:10 NEC-CBM:UL25 molar ratio for eGFP-UL25Δ50 Q72A. Each condition was tested in at least two biological replicates, each consisting of three technical replicates. Symbols represent average budding efficiency of each biological replicate relative to NEC220 (100%). Error bars represent the standard error of measurement for at least two individual experiments. Significance compared to NEC220 was calculated using an unpaired t-test against NEC220. *p-value<0.1. The source file with all raw data values is provided in Figure 3—source data 1. (b) Confocal microscopy image showing eGFP-UL25Δ50 Q72A does not bind to NEC220-CBM coated GUVs as indicated by the lack of green signal on the membranes of intraluminal vesicles (ILVs) formed by NEC220-CBM budding (indicated by white arrows). Top panel shows red (ATTO-594 DOPE), green (eGFP), and blue (Cascade Blue) channels. Bottom panel shows red (ATTO-594 DOPE) and green (eGFP) channels only. Scale bars = 5 μm.Figure 3—source data 1.The reported biological replicate average values (%) are the points presented in Figure 3.
+**Figure 3.:** (a) NEC220-CBM budding is not inhibited to the same extent as NEC220 budding by either UL25Δ44 Q72A or eGFP-UL25Δ50 Q72A. Budding was tested at 1:1, 1:6 and 1:10 NEC220-CBM:UL25 molar ratios for UL25Δ44 Q72A and at a 1:10 NEC-CBM:UL25 molar ratio for eGFP-UL25Δ50 Q72A. Each condition was tested in at least two biological replicates, each consisting of three technical replicates. Symbols represent average budding efficiency of each biological replicate relative to NEC220 (100%). Error bars represent the standard error of measurement for at least two individual experiments. Significance compared to NEC220 was calculated using an unpaired t-test against NEC220. *p-value<0.1. The source file with all raw data values is provided in Figure 3—source data 1. (b) Confocal microscopy image showing eGFP-UL25Δ50 Q72A does not bind to NEC220-CBM coated GUVs as indicated by the lack of green signal on the membranes of intraluminal vesicles (ILVs) formed by NEC220-CBM budding (indicated by white arrows). Top panel shows red (ATTO-594 DOPE), green (eGFP), and blue (Cascade Blue) channels. Bottom panel shows red (ATTO-594 DOPE) and green (eGFP) channels only. Scale bars = 5 μm.
 
-## UL25 binds membrane-bound NEC
+### UL25 binds membrane-bound NEC
 
 To understand how UL25 inhibits NEC-mediated budding, we turned to cryoEM. Previously, we showed that NEC-mediated budding of synthetic large unilamellar vesicles (LUVs) resulted in the formation of smaller vesicles containing ~11 nm thick internal NEC coats (Bigalke et al., 2014). Here, UL25∆44 Q72A and NEC220 (at a 1:10 molar ratio of NEC to UL25) were incubated with LUVs of the same composition as the GUVs used in the budding assay and visualized by cryoEM. In the presence of UL25∆44 Q72A and NEC220, the LUVs were mostly spherical, and their external surface was coated with ~17 nm thick coats (Figure 4a), although these typically did not cover the entire surface (Figure 4a and Figure 4—figure supplement 1). The external coats formed in the presence of UL25∆44 Q72A were ~6 nm thicker than the internal NEC coats, and the diameter of the globular portion of UL25 is also ~6 nm. Therefore, we hypothesize that the external coats are composed of a UL25∆44 Q72A layer positioned on top of the membrane-bound NEC220 layer (Figure 4a). Very few budded vesicles were observed under these conditions, which is consistent with the inefficient budding observed by confocal microscopy (Figure 1c). Thus, binding of UL25∆44 Q72A to the NEC220 on the surface of the lipid vesicles correlated with its ability to inhibit NEC-mediated budding.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig4-v2.jpg)
+
+**Figure 4.:** (a) UL25∆44 Q72A bound to the NEC220 on the outside of the unbudded lipid vesicles, forming a fence-like array (~17 nm). In the presence of UL25∆73, three scenarios have been observed: (b) NEC220 alone bound to the inner surface of the budded lipid vesicles (~11 nm); (c) UL25∆73 bound to the NEC220, which is itself bound to the inner surface of the budded lipid vesicles (~17 nm), and (d) UL25∆73 aggregates bound to the NEC on the outside of the unbudded lipid vesicles (>29 nm). Budded lipid vesicles in panels b and c are no longer contained within a ‘mother’ lipid vesicle and represent the end-product of budding. Scale bars = 100 nm. Inset scale bars = 20 nm. All inset panels are shown on the same scale. White arrows in insets define measurement boundaries of vesicle-bound proteins displayed in the corresponding cartoon models.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Slices of selected tomograms of NEC220/UL25∆44 Q72A-bound vesicles used to generate cryoET averages in Figure 5. Regions of either protein binding or lack of protein binding are indicated by pink arrows. Scale bar represents 100 nm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Selected regions of UL25∆73 aggregation are indicated by brackets along with the corresponding measurements of each selection. Scale bars represent 200 nm.
+
 Co-incubation of UL25∆73 and NEC220 with LUVs yielded budded vesicles (Figure 4b and c), some of which contained ~17 nm thick internal coats (Figure 4c), presumably containing UL25∆73 bound to the NEC220. We also observed budded vesicles containing ~11 nm thick internal coats (Figure 4b), presumably containing only NEC220, in accordance with our previous report (Bigalke et al., 2014). Last but not least, we observed unbudded LUVs containing >29 nm thick heterogeneous protein aggregates on the external surface (Figure 4d and Figure 4—figure supplement 2) that were similar to UL25∆73 aggregates observed by confocal microscopy (Figure 2d) in the sense that both ranged in thickness and distribution of the protein aggregates around the vesicles. This aggregation precluded cryoET data collection on LUVs coated with UL25∆73 and NEC220 as described below for UL25∆44 Q72A and NEC220.
 
-## UL25∆44 Q72A forms a net of stars bound to NEC pentagons
+### UL25∆44 Q72A forms a net of stars bound to NEC pentagons
 
 Interactions between UL25∆44 Q72A and membrane-bound NEC220 were visualized in three dimensions by cryoET (Figure 5). Sub-tomographic averaging of the 3D reconstructions of unbudded LUVs coated with NEC220 and UL25∆44 Q72A (Figure 5a) revealed that UL25∆44 Q72A formed a net of five-pointed stars (Figure 5c) covering the surface of membrane-bound NEC220 that, in turn, formed pentagons (Figure 5d). Five-pointed stars of UL25 were positioned directly on top of the NEC pentagons (Figure 5c,d). The pentagonal arrangement was observed during averaging even prior to imposing five-fold symmetry (Figure 5—figure supplement 1). Within the NEC220/UL25Δ44 Q72A dataset, we only observed five-fold symmetry in the protruding densities, whereas in the NEC220 only dataset, we observed only six-fold symmetry (Figure 5b). Therefore, as far as we can tell, when bound to UL25Δ44 Q72A, the NEC220 only forms pentagons and is not a mixture of pentagons and hexagons.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig5-v2.jpg)
+
+**Figure 5.:** (a) CryoET averages of NEC220 in the presence of UL25Δ44 Q72A (top and side views). Corresponding 3D models are shown with NEC220 (pink) and UL25Δ44 Q72A (green). The vesicle bilayer is shown in beige. The models show the UL25 layer coating the NEC layer in five-pointed stars on the outside of the vesicles. The length of the NEC-UL25 spikes is 12.5 nm. Black arrows indicate the point of tilt within the NEC layer. (b) CryoET averages of NEC220 forming hexameric lattices in the presence of membranes (bottom and side views). Corresponding 3D models are shown with NEC (pink) and the vesicle bilayer (beige). The diameter of the hexameric rings is ~11 nm, while the length of the spikes is 7.8 nm. (c) CryoET model and averages of the UL25 layer (green) highlighting the five-pointed star formation of UL25 (represented here as a pentamer of dimers) in the presence of NEC. (d) CryoET model and averages of the NEC layer showing NEC220 forming a pentagonal lattice (pink pentagons), rather than hexagonal (as seen for wild-type in panel b). Green triangles indicate location of UL25 binding to the NEC.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56627/elife-56627-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Corresponding 3D models are shown with NEC220 (pink) and UL25Δ44 Q72A (green). The vesicle bilayer is shown in beige. The models show the UL25 layer coating the NEC layer in five-pointed stars on the outside of the vesicles (a) and that the NEC layer forms a pentagonal lattice (b), similar to what is observed after symmetry is applied.
 
 The ability of the NEC to form pentagons was unexpected because prior to that point, only hexagonal NEC coats had been observed on budded vesicles formed in vitro (Figure 5b; Bigalke et al., 2014) and on perinuclear vesicles formed in vivo in NEC-expressing uninfected cells (Hagen et al., 2015). The NEC pentagons and hexagons have similar dimensions, ~10.5 nm vs. ~11 nm in width (Figure 5b,d) with ~6.5 nm vs. ~6.3 nm sides (Figure 5d; Bigalke et al., 2014). From the crystal structure, we know that the hexagons are hexamers of the NEC heterodimers (Bigalke and Heldwein, 2015). Therefore, we hypothesize that the pentagons are pentamers of the NEC heterodimers.
 
@@ -90,7 +126,7 @@ It should be noted that an entirely pentagonal lattice would yield a small spher
 
 The intrinsic ability of the NEC to deform and bud membranes and to oligomerize into a hexagonal coat is well established (reviewed in Bigalke and Heldwein, 2016; Bigalke and Heldwein, 2017; Mettenleiter, 2016; Roller and Baines, 2017). However, it is unclear how the capsid triggers the formation of the NEC coat around it or how the NEC coat is anchored to the capsid. Moreover, a purely hexagonal lattice is flat, so it remains unknown how the curvature is generated within the hexagonal NEC coat. Here, we have made two key observations. First, UL25 binds the NEC on lipid vesicles in vitro and inhibits NEC-mediated budding in a dose-dependent manner. Second, the NEC forms pentagons when bound to UL25. We hypothesize that UL25/NEC interactions observed in vitro mimic UL25/NEC interactions that anchor the NEC coat to the capsid vertices. We further hypothesize that NEC pentagons formed at the points of contact with the capsid vertices could nucleate the assembly of the otherwise hexagonal NEC coats and introduce curvature into them.
 
-## UL25 inhibits NEC-mediated budding in vitro by forming a star-shaped net over the membrane-bound NEC layer
+### UL25 inhibits NEC-mediated budding in vitro by forming a star-shaped net over the membrane-bound NEC layer
 
 We found that UL25∆44 Q72A construct inhibited NEC220-mediated budding in vitro in a dose-dependent manner. We also observed that this UL25 construct formed five-pointed stars linked into a loose net on the surface of the membrane-bound NEC220 layer. To understand the nature of inhibition by UL25, we modelled UL25 interactions within the stars by examining UL25 interactions on the capsids. The five-pointed UL25 stars formed in vitro resemble the five-pointed stars crowning each capsid vertex that are composed of five copies of the capsid-associated tegument complex (CATC) (Dai and Zhou, 2018; Figure 6a). Each CATC, in turn, is composed of two copies of UL25, one copy of UL17, and two copies of the C-terminal portion of the tegument protein UL36 (Dai and Zhou, 2018) and has a characteristic antiparallel four-helix bundle composed of two UL25 helices and two UL36 helices (Figure 6a). Therefore, we hypothesize that UL25∆44 Q72A also forms an antiparallel four-helix bundle when bound to the NEC220 on the membrane surface in vitro. However, in this case, the helical bundle is composed of two pairs of UL25 helices from adjacent stars (Figure 6b), linking them into a net. Each UL25 ‘star’ would then consist of 10 copies of UL25, with cores arranged in the center and five pairs of helices radiating out (Figure 6b).
 
@@ -108,13 +144,13 @@ We propose that UL25∆44 Q72A inhibits NEC220-mediated budding in vitro by bind
 
 It is tempting to speculate that free UL25, which is likely present within the nucleus, could inhibit the budding activity of the NEC during infection. Both in vitro and in NEC-expressing uninfected cells, the NEC is constitutively active. However, during infection, the NEC budding activity is controlled, presumably by a viral protein, to ensure budding of only mature capsids and to prevent premature, non-productive budding. It would be interesting to test whether co-expression of UL25 along with the NEC could inhibit NEC-mediated budding.
 
-## UL25/NEC interactions in vitro may mimic interactions between CATC at the capsid vertices and the NEC coats during infection
+### UL25/NEC interactions in vitro may mimic interactions between CATC at the capsid vertices and the NEC coats during infection
 
 How the NEC coat is anchored to the capsid is yet unclear. Nevertheless, interactions between UL25 and UL31 have been implicated in this process. UL31 from HSV-1 infected cell lysates was shown to co-immunoprecipitate with UL25 (Yang and Baines, 2011) and bind nucleocapsids (Yang et al., 2014). More recently, NEC185∆50 (a previously crystallized truncated construct with an intact membrane-distal UL31 region) from E. coli was shown to bind purified nucleocapsids from HSV-1 infected cells in a pull-down assay (Takeshima et al., 2019). This interaction requires UL25 because the VP5, VP23, and UL17 capsid proteins were only detected if UL25 was present on capsids, suggesting NEC binds capsid-bound UL25. UL25 likely binds to the membrane-distal tip of UL31 because capsid binding to the NEC requires UL31 residues R281 and D282, which are located in this region (Takeshima et al., 2019). Other charged residues within the membrane-distal region of UL31 have also been implicated in capsid interactions in PRV (Rönfeldt et al., 2017). Our work showed that four mutations within this membrane-distal region (NEC22-CBM) rendered this mutant less sensitive to inhibition by UL25 relative to the WT NEC220. Collectively, these observations implicate interactions between UL25 and the membrane-distal end of UL31 in NEC/capsid interactions during nuclear egress.
 
 In our cryoET reconstruction, UL25 cores sit on the membrane-distal ends of the NEC (Figure 6b). Therefore, we hypothesize that the interactions between UL25 and membrane-bound NEC that we observed by cryoET in vitro (Figure 6b and d) mimic how the NEC interacts with UL25 on the capsid vertices (Figure 6a and c). Although the distance between the presumed locations of the cores within the UL25 stars observed in vitro (Figure 6b) is shorter than between the cores of the innermost UL25 copies within the CATC (Figure 6a), the cores could move into most favorable orientations for NEC binding. Indeed, in cryoEM reconstruction of the HSV-1 capsid, the cores are connected to the N-terminal helices by long, flexible linkers and appear dynamic (Dai and Zhou, 2018). On the other hand, the NEC may be able to tilt relative to the membrane surface (Figure 5a), which would also allow each NEC to adopt the optimal orientation for binding the UL25 cores at the capsid vertices. The model shown in Figure 6a and c illustrates how the NEC coat may be anchored to the capsid.
 
-## The NEC pentagons could introduce curvature into the hexagonal NEC lattice
+### The NEC pentagons could introduce curvature into the hexagonal NEC lattice
 
 The ability of the NEC to oligomerize into a hexagonal lattice in vitro and in vivo is well documented (Bigalke and Heldwein, 2015; Bigalke et al., 2014; Hagen et al., 2015) and is an important feature of its membrane deformation mechanism (Bigalke and Heldwein, 2015; Bigalke et al., 2014; Roller et al., 2010). But how the hexagonal NEC lattice accommodates curvature is yet unclear.
 
@@ -130,13 +166,13 @@ Here, for the first time, we observed that the NEC can form not only hexagons bu
 
 In vitro and in NEC-expressing cells, curved NEC coats are assembled even in the absence of a capsid, and we do not yet understand how the curvature can be achieved in these cases. Hexagonal NEC coats formed in in vitro or in NEC-expressing cells have a smaller diameter than those formed around the capsid (Figure 8), however, they may achieve coat curvature by other means, for example, by having irregular defects. Incorporation of irregular defects into curved hexagonal lattices has been observed for immature HIV capsids formed by Gag protein (Briggs et al., 2009; Schur et al., 2015) and in early poxvirus envelopes formed by the D13 protein (Heuser, 2005; Hyun et al., 2011). NEC could, potentially, use a similar strategy in the absence of a capsids.
 
-## The NEC pentagon could nucleate the formation of the NEC coats
+### The NEC pentagon could nucleate the formation of the NEC coats
 
 We further hypothesize that the first NEC pentagon formed upon initial contact with the capsid vertex could nucleate formation of the NEC coat (Figure 8), helping explain why in infected cells, NEC-mediated budding requires the capsid. Although in vitro or in NEC-expressing cells, the NEC budding does not require either the capsid or UL25, in both cases, the NEC is already in its active, uninhibited form. In contrast, during infection, the budding activity of the NEC is somehow inhibited until the capsid comes along. Binding to UL25 on the capsid could potentially serve as a trigger for releasing the NEC from its inhibited state, allowing budding to occur.
 
 While UL25 is not required for NEC-mediated budding in vitro and in large amounts even inhibits it, small amounts of UL25 may be expected to stimulate budding in vitro by promoting formation of a limited number of NEC pentagons that could nucleate the coat assembly and promote coat curvature. Although we did not observe any stimulation of NEC-mediated budding by small amounts of UL25, this could be because in vitro, the NEC is already active. Perhaps, the stimulatory effect of UL25 only manifests itself with the inhibited NEC. In the future, the knowledge of the mechanism by which the virus inhibits the NEC budding activity during infection would allow one to test if UL25 alone could overcome this inhibition in vitro. Alternatively, this inhibition can only be overcome by the capsid.
 
-## A model of NEC-mediated capsid budding during infection
+### A model of NEC-mediated capsid budding during infection
 
 Based on our observations, we propose the following model of NEC-mediated capsid budding during nuclear egress in infected cells (Figure 8). Binding of the cores of five neighboring copies of CATC at the capsid vertices to the NEC at the INM would promote formation of NEC pentagons, which would serve as a nucleation event for the assembly of the NEC coat around the capsid and also help anchor the capsid to the INM. As the hexagonal NEC coat continues to grow, the incorporation of pentagons into the coat at the points of contact with the vertices would both help attach the NEC coat to the capsid and introduce curvature into the NEC coat (Figure 8).
 
@@ -144,7 +180,213 @@ In both HSV-1 and PRV, removal of UL25 results in an accumulation of capsids at 
 
 ## Materials and methods
 
-## Cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (HSV-1 KOS)</td>
+      <td>UL25</td>
+      <td>Geneart</td>
+      <td>JQ673480.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Kerafast</td>
+      <td>LoBSTr</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>eGFP-N2 (plasmid)</td>
+      <td>Clontech</td>
+      <td>eGFP-N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKH90 (plasmid)</td>
+      <td>PMID:24916797</td>
+      <td>UL31 1–306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJB02 (plasmid)</td>
+      <td>PMID:24916797</td>
+      <td>UL34 1–220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJB104 (plasmid)</td>
+      <td>This paper</td>
+      <td>UL25∆44</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJB118 (plasmid)</td>
+      <td>This paper</td>
+      <td>NEC-CBM</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJB123 (plasmid)</td>
+      <td>This paper</td>
+      <td>UL25∆73</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pED03 (plasmid)</td>
+      <td>This paper</td>
+      <td>UL25∆44 Q72A</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pED05 (plasmid)</td>
+      <td>This paper</td>
+      <td>eGFP-UL25∆73</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pED13 (plasmid)</td>
+      <td>This paper</td>
+      <td>UL25∆50</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pED14 (plasmid)</td>
+      <td>This paper</td>
+      <td>eGFP-UL25∆50</td>
+      <td>See Materials and methods, Cloning</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UL25∆44</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UL25∆44 Q72A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UL25∆50 Q72A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UL25∆58 Q72A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UL25∆73</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>eGFP-UL25∆50 Q72A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>eGFP-UL25∆73</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEC220</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NEC-CBM</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from E. coli BL21(DE3) LoBSTr cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cascade Blue hydrazide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: C687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>IMOD</td>
+      <td>RRID:SCR_003297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids:850857</td>
+      <td>POPA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1-palmitoyl-2-oleoyl-glycero-3-phosphocholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids:850457</td>
+      <td>POPC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids:840034</td>
+      <td>POPS</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning
 
 All primers used in cloning are listed in Supplementary file 1. Codon-optimized UL25 gene from HSV-1 strain KOS was synthesized by GeneArt. Digested PCR fragments encoding UL25Δ44 were subcloned by restriction digest into the pJP4 plasmid, which contains a His6-SUMO-PreScission tag in frame with the BamHI restriction site of the multiple-cloning site in a pET24b vector, creating the pJB104 plasmid. DNA fragments encoding UL25Δ50 and UL25Δ73 were amplified by PCR from pJB104 (UL25Δ44) and subcloned into pJP4 by restriction digest using BamHI and XhoI, creating the UL25Δ50 (pED13) and UL25Δ73 (pJB123) plasmids. Site-directed mutagenesis of pJB104 yielded the UL25Δ44 Q72A mutant plasmid (pED03).
 
@@ -152,32 +394,32 @@ DNA encoding the eGFP sequence was PCR amplified out of the eGFP-N2 plasmid (Clo
 
 Site-directed mutagenesis of pKH90 (UL31 1–306) using a splicing by overlap extension protocol Heckman and Pease, 2007 followed by restriction digest into the pJP4 vector was used to create the UL31 D275A/C278A/K279A/D282A mutant (pJB118) used to produce the capsid-binding mutant of NEC220, NEC220-CBM.
 
-## Expression and purification of NEC constructs
+### Expression and purification of NEC constructs
 
 Plasmids encoding HSV-1 UL31 1–306 (pKH90) and UL34 1–220 (pJB02) were co-transformed into Escherichia coli BL21(DE3) LoBSTr cells (Kerafast) to generate NEC220 (Bigalke et al., 2014). Plasmids encoding HSV-1 UL31 1–306 D275A/C278A/K279A/D282A (pJB118) and UL34 1–220 (pJB02) were co-transformed into E. coli BL21(DE3) LoBSTr cells (Kerafast) to generate NEC220-CBM. All constructs were expressed using autoinduction at 37°C in Terrific Broth (TB) supplemented with 100 µg/mL kanamycin, 100 µg/mL ampicillin, 0.2% lactose and 2 mM MgSO4 for 4 hr. The temperature was then reduced to 25°C for 16 hr. Cells were harvested at 5000 x g for 30 min. NEC220 proteins were purified as previously described (Bigalke et al., 2014) with slight modifications. The NEC220 and NEC220-CBM constructs were passed over 2 × 1 mL HiTrap Talon columns (GE Healthcare), rather than ion exchange as previously described, to remove excess cleaved His6-SUMO before injection onto size-exclusion chromatography (as previously described).
 
-## Expression and purification of UL25 constructs
+### Expression and purification of UL25 constructs
 
 Plasmids encoding either HSV-1 UL25 or eGFP-UL25 constructs were transformed into E. coli BL21(DE3) LoBSTr cells and expressed using autoinduction at 37°C in TB supplemented with 100 µg/mL kanamycin, 0.2% lactose, and 2 mM MgSO4 for 4 hr. The temperature was then reduced to 25°C for 16 hr. Cells were harvested at 5000 x g for 30 min. All purification steps were performed at 4°C. UL25 constructs were purified in lysis buffer (50 mM Na HEPES pH 7.5, 500 mM NaCl, 1 mM TCEP, and 10% glycerol). Cells were resuspended in lysis buffer supplemented with Complete protease inhibitor (Roche) and lysed with a microfluidizer (Microfluidics). The cell lysate was clarified by centrifugation at 13,000 x g for 35 min and was passed over Ni-NTA sepharose (GE Healthcare) column. The column was subsequently washed with 20 mM and 40 mM imidazole lysis buffer and bound proteins were eluted with 250 mM imidazole lysis buffer. The His6-SUMO tag was cleaved for 16 hr using PreScission Protease produced in-house from a GST-PreScission fusion protein expression plasmid. As a final purification step, UL25 constructs were purified with size-exclusion chromatography using either a Superdex 75 or 200 column (GE Healthcare) equilibrated with gel filtration buffer (20 mM Na HEPES, pH 7.0, 100 mM NaCl, and 1 mM TCEP). The UL25 constructs were purified to homogeneity as assessed by 12% SDS-PAGE and Coomassie staining. Fractions containing UL25 were concentrated up to ~30 mg/mL and stored at −80°C to prevent degradation observed at 4°C. Protein concentration was determined by absorbance measurements at 280 nm. The typical yield was 35 mg/L of TB culture.
 
-## Co-sedimentation assay
+### Co-sedimentation assay
 
 Co-sedimentation of UL25∆44 to acidic multilamellar vesicles (MLVs) was performed as previously described (Bigalke et al., 2014). MLVs were prepared in a 3:1:1 ratio of 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine (POPC):1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine (POPS):1-palmitoyl-2-oleoyl-sn-glycero-3-phosphate (POPA) (Avanti Polar Lipids). Background signal in the absence of liposomes is due to protein aggregation during centrifugation. The reported values represent the percentage (0–100%) of either NEC220 or UL25 bound to membranes. The standard error of the mean is reported for each measurement. Each condition was tested in two biological replicates each with two technical replicates. Biological replicates are experiments performed individually at separate times. Technical replicates are multiple repeats of the same experiment within a biological replicate.
 
-## In vitro GUV budding assays
+### In vitro GUV budding assays
 
 Giant unilamellar vesicles (GUVs; used for their large size and ease of identification at the microscope) were prepared as previously described (Bigalke et al., 2014). For NEC220 only budding quantification, a total of 10 μL of GUVs with a 3:1:1 ratio of POPC:POPS:POPA containing ATTO-594 DOPE (ATTO-TEC GmbH) at a concentration of 0.2 μg/μL was mixed with 1 μM NEC220 (final concentration), and 0.2 mg/mL (final concentration) Cascade Blue Hydrazide (ThermoFisher Scientific). For the NEC and UL25 titration experiments, 10 μL of GUVs and either 1, 6, 8, 10 or 20 μM of UL25Δ44 Q72A, UL25∆58 Q72A or UL25Δ73 (final concentration) were incubated with 1 μM of NEC220 (final concentration) along with Cascade Blue. For NEC220-CBM and UL25 titration experiments, 10 μL of GUVs and either 1, 6, or 10 μM of UL25Δ44 Q72A (final concentration) were incubated with 1 μM of NEC220-CBM (final concentration) along with Cascade Blue. The total volume of each sample during imaging for all experiments was brought to 100 μL with gel filtration buffer and the reaction was incubated for 5 min at 20°C. Samples were imaged in a 96-well chambered cover-glass. Images were acquired using a Nikon A1R Confocal Microscope with a 60x oil immersion lens at the Tufts Imaging Facility in the Center for Neuroscience Research at Tufts University School of Medicine. Images of NEC budding in the presence of eGFP-UL25 constructs were recorded after incubation of 10 μL of GUVs with 10 μM (final concentration) of either eGFP-UL25Δ50 Q72A or eGFP-UL25Δ73 and 1 μM of NEC220 (final concentration). Quantification was performed by counting vesicles in 15 different frames of the sample (~300 vesicles total). Raw data values for all experiments are given in each corresponding source data file. Each condition was tested in at least two biological replicates. Prior to analysis, the background was subtracted from the raw values. The reported values represent the average budding activity relative to NEC220 (100%). The standard error of the mean is reported for each measurement. Significance compared to NEC220 was calculated using an unpaired one-tailed t-test against NEC220.
 
-## Isothermal titration calorimetry (ITC)
+### Isothermal titration calorimetry (ITC)
 
 ITC measurements were recorded using a Microcal ITC200 (Malvern Panalytical) at the Center for Macromolecular Interactions at Harvard Medical School. A solution of UL25∆44 (200 μM) was titrated into a solution of NEC220 (20 μM) in 20 mM Na HEPES, pH 7.0, 150 mM NaCl, 1 mM TCEP. Control experiments were performed by injecting UL25∆44 into buffer. Thermograms were plotted by subtracting heats of the control experiments from the sample experiments. The data were not fit due to no detectable binding.
 
-## Cryoelectron microscopy and tomography
+### Cryoelectron microscopy and tomography
 
 A volume of 10 μL of a 1:1 mixture of 400 nm and 800 nm large unilamellar vesicles (LUVs) made of 3:1:1 POPC:POPS:POPA [prepared as previously described (Bigalke et al., 2014) were mixed on ice with a 30 μL solution of NEC220 and either UL25∆44 Q72A or UL25∆73, yielding an NEC:UL25 ratio of 1:10 (NEC220 concentration was at 1 mg/mL). After 30 min, 3 μL of sample was applied to glow-discharged (30 s) Quantifoil copper grids (R2/2, 200 mesh, Electron Microscopy Sciences), blotted on both sides for 4 s, and vitrified by rapid freezing in liquid ethane (Vitrobot). Grids were stored in liquid nitrogen until loaded into a Tecnai F20 transmission electron microscope (FEI) via a cryo holder (Gatan). The microscope was operated in low dose mode at 200 keV using SerialEM (Mastronarde, 2005) and images were recorded with a 4k × 4 k charge coupled device camera (Ultrascan, Gatan) at 29,000-fold magnification (pixel size: 0.632 nm). 2D cryo-EM images were recorded at defocus values of −4 to −8 μm and an electron dose ~15 e/Å2. Images are displayed using ImageJ (RRID:SCR_003070) (Schindelin et al., 2015).
 
 For single-axis cryoET data used to generate 3D EM data, samples were incubated on ice for 30 min, and 0.8 μL of 10 nm colloidal gold coated with protein A (Cell Microscopy Core, University Medical Center Utrecht, Department of Cell Biology) was added to the solution and mixed. The mixture (2.5 μL) was applied to freshly glow-discharged (30 s) Quantifoil R 3.5/1 grids (Electron Microscopy Sciences) and manually blotted before being flash-frozen in liquid ethane. Grids were loaded into an FEI Titan Krios electron microscope equipped with a Gatan imaging filter (GIF) and a Gatan K2 summit direct electron detection camera (Roper Technologies, Inc), operated at 300 kV. The acquisition for automated cryoET tilt series collection was performed using SerialEM (Mastronarde, 2005). A tilt series was collected in which the sample was tilted from 0° to +60° degrees and then from 0° to −60°, each in a stepwise fashion with 2° increments. Tilt series were acquired at a magnification of x53,000 (corresponding to a calibrated pixel size of 2.6 Å) with a maintained defocus value of −3 to −4 μm. The total electron dose was ~100 e/Å2.
 
-## 3D reconstruction and subtomographic averaging
+### 3D reconstruction and subtomographic averaging
 
 The detailed steps of the 3D reconstruction and subtomographic averaging were previously described (Imhof et al., 2019; Si et al., 2018). Briefly, frames from each recorded tilt series were drift-corrected and averaged with Motioncorr (Mastronarde, 2005) and was further reconstructed with contrast transfer function (CTF) correction using the IMOD software package (RRID:SCR_003297) (Kremer et al., 1996). Two resulting tomograms were produced by the weighted back projection and simultaneous iterative reconstruction technique (SIRT) methods. High-contrast SIRT tomograms were binned 4x by the binvol program of IMOD to facilitate particle picking. A total of 1200 particles were picked manually in IMOD for tomograms containing LUVs, NEC220 and UL25∆44 Q72A as follows. Distinct spike-like projections radiating outwards from the vesicle bilayer were assigned particles selected for analysis. Each spike was assigned two points (head and tail) in one contour where the head and the tail are the membrane-proximal and the membrane-distal ends of the density protruding from the vesicle. Only spikes of similar length were selected to ensure that each contained both NEC220 and UL25∆44 Q72A. 3D sub-tomographic averaging was completed as described (Imhof et al., 2019; Si et al., 2018) using the PEET (particle estimation for electron tomography) software (Nicastro et al., 2006). Five-fold symmetry was only applied after five-fold symmetry was apparent in the averaged structure. The original dataset was split into two separate groups, even group and odd group, and averaged independently. Gold standard Fourier Shell Correlation (FSC) analysis for the averaged structure was performed by calcUnbiasedFSC in PEET when the two averaged structures converged. The reported resolution is 29 Å based on the 0.143 gold-standard FSC criterion. EM maps will be deposited into the Electron Microscopy Data Bank (EMDB) for immediate access upon publication.

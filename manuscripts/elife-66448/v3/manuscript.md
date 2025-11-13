@@ -36,45 +36,118 @@ Clarifying the determinants of infectious disease transmission is important for 
 
 ## Results
 
-## Outbreak characteristics and data set composition
+### Outbreak characteristics and data set composition
 
 We generated genome sequences for 110 PCR-positive mumps samples collected throughout Washington State during 2016/2017, and 56 samples collected in Wisconsin, Ohio, Missouri, Alabama, and North Carolina between 2006 and 2018 (Supplementary file 1a). The Washington State outbreak began in October 2016 and peaked in winter of 2017, culminating in 889 confirmed and probable cases across Washington (Figure 1). Individuals aged <1 to 64 years were affected, but incidence was highest among children aged 10–14 (44.9 cases per 100,000) and 15–19 (47.0 per 100,000) (Supplementary file 1b). Among outbreak cases 5–19 years of age, 91% of individuals were considered up-to-date on mumps vaccine. Adults in the age group most likely to be parents of school aged children (20–39 years old) were infected at a rate of only 12.9 cases per 100,000, but comprised a significant proportion (29%) of total cases (Supplementary file 1b). While Marshallese individuals comprise only ~0.3% of Washington’s total population, they accounted for 52% of reported mumps cases (Supplementary file 1c). Among Marshallese cases aged 5–19, 93% were up-to-date on vaccination, suggesting that this over-representation is not attributable to poor vaccine coverage.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig1-v3.jpg)
 
-**Figure 1.:** The first mumps case in Washington was reported on October 30, 2016, and case counts peaked in the winter of 2017. Here we show recorded numbers of confirmed and probable cases by epidemiologic (epi) week. Blue dots above the epidemiologic curve represent the number of Washington genome sequences sampled from viruses collected during that epi week.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** The first mumps case in Washington was reported on October 30, 2016, and case counts peaked in the winter of 2017. Here we show recorded numbers of confirmed and probable cases by epidemiologic (epi) week. Blue dots above the epidemiologic curve represent the number of Washington genome sequences sampled from viruses collected during that epi week.
 
-## Outbreaks across North America are related
+### Outbreaks across North America are related
 
 We combined our sequence data with publicly available full genome sequences sampled from North America between 2006 and 2018 and built a time-resolved phylogeny, inferring migration history among 27 US states and Canadian provinces (Figure 2, Figure 2—figure supplement 1; Figure 2—figure supplement 2). Sequences from samples collected between 2006 and 2014 clustered with other North American mumps viruses sampled from the same times. Nine Washington sequences were highly divergent from other North American genotype G viruses, with a time to the most recent common ancestor (TMRCA) of ~22 years (Figure 2, blue tips with long branches clustered toward the top of the tree). To place these genomes in context, we built a divergence tree using all publicly available global full genome mumps sequences (Figure 2—figure supplement 3). Seven of these divergent Washington sequences cluster with viruses sampled from New Zealand (Figure 2—figure supplement 3), suggesting they could be travel-related. The other two sequences cluster with other divergent genotype G viruses sampled from geographically disparate locations (Figure 2—figure supplement 3). The remaining Washington sequences nest within the diversity of other North American viruses, and descend from the same mumps lineage that has circulated in North America since 2006 (Figure 2). We observe substantial geographic mixing along the tree. While viruses from the northeast (teal tips and branches) seeded outbreaks in the Northeast and Midwest, we also infer transmission from the Northeast to Southern US states and British Columbia. Despite the close geographic proximity between British Columbia and Washington, most British Columbia sequences form a distinct cluster on a long branch (Figure 2), suggesting seeding from an unsampled location. Although viruses from Washington are scattered throughout the phylogeny, most cluster within a clade of viruses sampled in Arkansas (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-v3.jpg)
+
+**Figure 2.:** We combined all publicly available North American mumps genomes and built a time-resolved phylogeny. We inferred geographic transmission history between each US state and Canadian province using a discrete trait model, but have grouped these locations into regions for plotting purposes. A tree colored by the full geographic transmission history across all 27 locations is shown in Figure 2—figure supplement 2. Here, we display the maximum clade credibility tree, where color represents geographic location. We grouped the US states by geography as follows: non-Washington West include California and Montana; Midwest USA includes North Dakota, Kansas, Missouri, Iowa, Wisconsin, Indiana, Michigan, Ohio, and Illinois; South USA includes North Carolina, Alabama, Virginia, Georgia, Texas, Arkansas, and Louisiana; Northeast USA includes New York, Massachusetts, Pennsylvania, New Hampshire, and New Jersey. Canadian provinces are also grouped by geographic area. The x-axis represents the collection date (for tips), or the inferred time to the most recent common ancestor (for internal nodes). The internal node coloring represents the sum of the posterior probabilities for each inferred geographic division within the most probable region. For example, since we group Manitoba and Ontario into the same Canadian region, if a node was inferred with highest probability to circulate in Manitoba, then the node would be colored red to represent that Canadian region. The opacity of the color then corresponds to the sum of the probabilities that the node circulated in Manitoba or that the node circulated in Ontario. The posterior probability is expressed by the color gradient, where increasingly gray tone represents decreasing certainty of the inferred geographic state. The ancestral state at the root was poorly resolved and is therefore colored mostly gray.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** We inferred a maximum likelihood phylogeny using IQTREE for all available complete mumps genomes of genotype G, sampled from North America between 2006 and 2018. We inferred the root-to-tip distance with TempEst and plot the root to tip divergence vs. sample collection date. Color represents geographic location (either Canadian province or US state), with colors corresponding to those in Figure 2. We infer that mumps genomes accumulate mutations at a rate of 3.75 × 10–4 substitutions per site per year.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** The same phylogenetic tree as shown in Figure 2, except that each color represents a single US state or Canadian province. The full transmission history was inferred between each US state and Canadian province using a discrete trait model. The color of each internal node represents the posterior probability that the ancestral node was inferred to be labelled that US state or province.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** To place the divergent Washington genomes and non-genotype G Washington and Wisconsin genomes in the context of global mumps diversity, we generated a full genome divergence phylogeny using all publicly available mumps genotypes collected from anywhere in the world. The branch point for genotype G viruses is marked with a black circle and annotated with text. Color indicates the geographic region from which the sample was collected and the x-axis represents substitutions per site. For ease of viewing, we have collapsed all sequences that fall within the main genotype G lineage of North American mumps that is shown in Figure 2 into the blue triangle. This includes all sequences descending from the 2006 midwest outbreak sequences, but does not include the divergent Washington lineages shown at the top of Figure 2. The genotype H and A genomes from Wisconsin are highlighted in callouts 1 and 2. The Washington genotype K sequence is shown in callout 3, while the nine divergent Washington genomes shown in Figure 2 are highlighted here in callouts 4 and 5.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** We inferred a maximum likelihood phylogeny using IQTREE for all available complete mumps genomes of genotype G, sampled from North America between 2006 and 2018. Color represents geographic location, and the x-axis displays divergence in substitutions per site per year. To reduce the number of displayed colors, we grouped the US states by geography as follows: non-Washington West include California and Montana; Midwest USA includes North Dakota, Kansas, Missouri, Iowa, Wisconsin, Indiana, Michigan, Ohio, and Illinois; South USA includes North Carolina, Alabama, Virginia, Georgia, Texas, Arkansas, and Louisiana; Northeast USA includes New York, Massachusetts, Pennsylvania, New Hampshire, and New Jersey. Canadian provinces are also grouped by geographic area.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** To compare whether we would recover similar tree topologies if we had only sequenced the SH gene, we downloaded all available complete mumps genomes of genotype G, sampled from North America between 2006 and 2018 and truncated our sequences to include only the coding region for SH. We then inferred a maximum likelihood phylogeny using the same procedure as in Figure 2—figure supplement 2. The vast majority of North American mumps sequences are identical and form a single polytomy, suggesting that SH sequencing alone provides limited resolution for inferring geographic spread. Color represents geographic location, and the x-axis displays divergence in substitutions per site per year. To reduce the number of displayed colors, we grouped the US states by geography as follows: non-Washington West include California and Montana; Midwest USA includes North Dakota, Kansas, Missouri, Iowa, Wisconsin, Indiana, Michigan, Ohio, and Illinois; South USA includes North Carolina, Alabama, Virginia, Georgia, Texas, Arkansas, and Louisiana; Northeast USA includes New York, Massachusetts, Pennsylvania, New Hampshire, and New Jersey. Canadian provinces are also grouped by geographic area.
+
 Mumps is classified into 12 genotypes (labeled A–N, excluding E and M) based on its SH gene sequence. There is some evidence that mumps genotypes are geographically associated (Nomenclature, 2020), and the vast majority of mumps viruses circulating in North America since 2006 have been genotype G viruses. Although most samples in our data set are also genotype G, we did sequence three viruses that group in different genogroups. One sample from Wisconsin in 2006 grouped with genotype A viruses, another sample from Wisconsin in 2015 grouped with genotype H viruses, and one sample from Washington in 2017 grouped with genotype K viruses (Figure 2—figure supplement 3). The Washington genotype K virus (Washington.USA/9.17/FH94/K) is closely related to a genotype K mumps virus collected during a mumps outbreak in Massachusetts from an individual who reported international travel (Wohl et al., 2020; Figure 2—figure supplement 3). These divergent, non-genotype G genomes were excluded from further phylogenetic analysis.
 
-## Mumps was introduced into Washington multiple independent times
+### Mumps was introduced into Washington multiple independent times
 
 Estimating the number and timing of viral introductions is important for estimating epidemiologic parameters and evaluating public health surveillance systems, but detecting these dynamics may be challenging with case count data alone (Faria et al., 2017; Grubaugh et al., 2017). The Washington Department of Health had identified a single potential index case infected in October 2016. To determine whether the genomic data similarly supported a single introduction of mumps to Washington state, we separated each introduction inferred in the maximum clade credibility tree and plotted each as its own transmission chain (Figure 3a). We enumerated the number of transitions into Washington in each tree in the posterior set, and plotted the distribution of Washington introductions consistent with the phylogeny (Figure 3b).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig3-v3.jpg)
 
-**Figure 3.:** (a) We separated each introduction into Washington inferred on the maximum clade credibility tree (Figure 2) and plotted them independently. Large, colored dots represent the inferred geographic location that the Washington introduction was seeded from. Branches that extend further back in time than April 2016 (approximately 6 months prior to the first reported case in Washington) are dotted to represent that transmission likely occurred via other, unsampled locations. The nine tips at the very top without inferred geographic ancestry represent the highly divergent nine Washington genomes with a TMRCA of ~22 years that are highlighted in Figure 2—figure supplement 3 and shown in Figure 2. For reference, the cumulative case counts from Arkansas and Washington are plotted below. (b) For each tree in the posterior set, we inferred the number of introductions into Washington. We plot the proportion of trees in the posterior set in which that number of introductions was inferred.Figure 3—source data 1.
+**Figure 3.:** (a) We separated each introduction into Washington inferred on the maximum clade credibility tree (Figure 2) and plotted them independently. Large, colored dots represent the inferred geographic location that the Washington introduction was seeded from. Branches that extend further back in time than April 2016 (approximately 6 months prior to the first reported case in Washington) are dotted to represent that transmission likely occurred via other, unsampled locations. The nine tips at the very top without inferred geographic ancestry represent the highly divergent nine Washington genomes with a TMRCA of ~22 years that are highlighted in Figure 2—figure supplement 3 and shown in Figure 2. For reference, the cumulative case counts from Arkansas and Washington are plotted below. (b) For each tree in the posterior set, we inferred the number of introductions into Washington. We plot the proportion of trees in the posterior set in which that number of introductions was inferred.
 
 Genomic data show that mumps was introduced into Washington State approximately 13 independent times (95% highest posterior density, HPD: 12–15), from geographically disparate locations (Figure 3). In addition to the nine highly divergent Washington tips (Figure 2—figure supplement 3), we detect one introduction from Massachusetts that descends from a long branch. Prior to being sampled in Washington, this lineage was last inferred to circulate in Massachusetts in late 2015. Thus rather than representing a direct introduction from Massachusetts to Washington, this lineage likely moved through other geographic locations that lack genomic sampling. We infer introductions from Ontario and Missouri that each lead to one to three sampled cases (Figure 3b), suggesting limited onward transmission following these introductions. In contrast, four introductions from Arkansas account for 92/110 sequenced cases, suggesting that these introductions led to more sustained chains of transmission following introduction (Figure 3b). We refer to the largest cluster as the ‘primary outbreak clade', and infer its introduction from Arkansas to Washington around August 2016 (August 7, 2016, 95% HPD: July 11, 2016 to September 19, 2016, Figure 3b), 3.5 months before Washington’s first reported case. These data reveal that what had appeared to be a single outbreak based on case surveillance data was in fact a series of multiple introductions, primarily from Arkansas, sparking overlapping and co-circulating transmission chains.
 
-## SH gene sequencing is insufficient for fine-grained geographic inference
+### SH gene sequencing is insufficient for fine-grained geographic inference
 
 Mumps virus surveillance and genotyping rely on the SH gene (Centers for Disease Control and Prevention, 2019a), a short, 316 bp gene that is simple and rapid to sequence. To determine whether SH gene sequencing would have produced similar results, we built a divergence tree using our set of North American full genomes (Figure 2—figure supplement 4), and then truncated that data to include only SH gene sequences (Figure 2—figure supplement 5). Almost all North American SH genes were identical, resulting in a single, large polytomy (Figure 2—figure supplement 5). This indicates that SH sequences lack sufficient resolution to elucidate fine-grained patterns of geographic spread, consistent with previous findings (Gouma et al., 2016; Wohl et al., 2020).
 
-## Quantifying differences in transmission patterns within Washington
+### Quantifying differences in transmission patterns within Washington
 
 In both Arkansas and Washington, Marshallese individuals comprised over 50% of mumps cases, despite accounting for a much lower proportion of the population in both states. Phylogenetic reconstruction links the outbreaks in Washington and Arkansas, placing most sampled mumps genomes in Washington as descendant from Arkansas. We sought to investigate how mumps transmission may have differed within Marshallese and non-Marshallese communities within the same outbreak. Phylogenetic trees reflect the transmission process and can be used to quantify differences in transmission patterns among population groups. If transmission rates were distinct between Marshallese and non-Marshallese mumps cases, we would expect the following: 1. Sequences from the high-transmitting group should be more frequently detected upstream in transmission chains. 2. Introductions seeded into the high-transmitting group should result in larger and more diverse clades in the tree. 3. The internal nodes of the phylogeny should be predominantly composed by members of the high-transmitting group, while members of the low-transmitting group should primarily be found at terminal nodes, since less propagated transmission will cause the lineage to die out.
 
-## Marshallese cases are enriched upstream in transmission chains
+### Marshallese cases are enriched upstream in transmission chains
 
 We developed a transmission metric to quantify whether Marshallese cases were enriched at the beginnings of successful transmission chains. We traverse the full genome divergence phylogeny (Figure 2—figure supplement 4) from root to tip. When we encounter a tip that lies on an internal node, we enumerate the number of tips that descend from its parent node. We then classify each tip in the phylogeny as either a ‘basal tip’ (i.e., there are tips detected downstream of that tip) or a ‘terminal tip’ (there are not tips detected downstream), and compare the proportion of basal and terminal tips among groups (Figure 4a, see Materials and methods for more details). Given our sampling proportion (110 sequences/889 total cases, ~12%), we do not expect to have captured true parent/child infection pairs. Rather, we expect to have preferentially sampled long, successful transmission chains within the state. This allowed us to test whether community membership, vaccination status, and age were associated with sustained transmission via logistic regression (see Materials and methods for details and statistical model). While those with unknown vaccination status were more likely to be basal in the tree than those with known up-to-date vaccination, the confidence interval could not exclude a null or positive association between vaccination status and basal/terminal status (Table 1). Having an age of at least 20 years predicted a mean lowered odds of being basal in the tree, but a wide range of effects is plausible given our sample. Resolving the precise effects of vaccination status and age would likely require a larger data set. However, we do find evidence for community status as a strong predictor for being basal on the phylogeny. Marshallese cases were significantly more likely to be basal than non-Marshallese cases (odds ratio = 3.2, p=0.00725, Table 1). While only 27% (14/52) of non-Marshallese tips were ancestral to downstream samples, 56% (32/57) of Marshallese tips were ancestral in lineages with sampled propagated transmission (Supplementary file 1d). These results suggest that community membership was a significant determinant of sustained transmission while controlling for vaccination status and age.
 
+**Table 1.**
+ Associations between basal tip position in the phylogeny and possible predictors of transmission.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor variable</th>
+      <th>Estimated coefficient (standard error)</th>
+      <th>Odds ratio (95% CI)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Not up-to-date</td>
+      <td>−0.76 (0.69)</td>
+      <td>0.47 (0.11, 1.73)</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Vaccination status unknown</td>
+      <td>0.72 (0.77)</td>
+      <td>2.04 (0.47, 10.15)</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Age ≥20 years</td>
+      <td>−0.38 (0.51)</td>
+      <td>0.69 (0.25, 1.86)</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>Community status</td>
+      <td>1.21 (0.42)</td>
+      <td>3.36 (1.49, 7.91)</td>
+      <td>0.0042</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig4-v3.jpg)
+
+**Figure 4.:** (a) A schematic for quantifying tips that lie ‘upstream’ in transmission chains. For tips that lie on an internal node, meaning that they have a branch length separating them from their parent internal node of less than one mutation, we infer the number of child tips that descend from that tip’s parental node. For each tip in the example tree, its classification as either a ‘basal tip’ or a ‘terminal tip’ is annotated alongside it. All tips that have a nonzero branch length are annotated as terminal tips. We can then compare whether sequences of particular groups (here, blue vs. red) are more likely to be basal or terminal via logistic regression. (b) We separated all Washington tips and classified them into Marshallese and not Marshallese. We then performed a rarefaction analysis and plotted the number of inferred Washington clusters (y-axis) as a function of the number of sequences included in the analysis (x-axis). Dark blue represents not Marshallese sequences, and light blue represents Marshallese sequences. Each dot represents the number of trials in which that number of clusters was inferred, and the solid line represents the mean across trials. (c) The exploded tree as shown in Figure 3a is shown, but tips are now colored by whether they represent Marshallese or non-Marshallese cases. For reference, the number of Washington cases (y-axis) is plotted over time (x-axis), where bar color represents whether those cases were Marshallese or not.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** We repeated the rarefaction analysis shown in Figure 4b for vaccination status. We separated all Washington tips and classified them by vaccination status into up-to-date, not up-to-date, or unknown vaccination status. We then performed a rarefaction analysis and plot the number of inferred Washington clusters (y-axis) as a function of the number of sequences included in the analysis (x-axis). Dark green represents unknown vaccination status, light green represents not up-to-date, and green represents up-to-date. The majority of sequences in our data set were derived from individuals who were up-to-date for mumps vaccine. Each dot represents the number of trials in which that number of clusters was inferred, and the solid line represents the mean across trials.
+
 We evaluated the impact of vaccination status, age, and community membership on the probability that a sampled virus was basal in the tree. Coefficients represent the increase in the log odds of being basal in the tree for each given predictor variable while controlling for the others. Coefficients were exponentiated to produce odds ratios. We evaluated the impacts of having an unknown vaccination status, having a vaccination status that is not up-to-date, having an age of at least 20 years, and being Marshallese as binary predictor variables.
 
-## Longer transmission chains are associated with community status
+### Longer transmission chains are associated with community status
 
 In the absence of recombination, closely linked infections will cluster together on the tree, while unrelated infections should fall disparately on the tree, forming multiple smaller clusters. We inferred the number of Washington-associated clades in the tree as a function of whether sampled infections came from Marshallese or non-Marshallese individuals. Using the full North American phylogeny, we removed all Washington sequences and separated them into viruses sampled from cases noted as Marshallese or non-Marshallese. Then, separately for each group, we added sequences back into the tree one by one, until all sequences for that group had been added. For each number of sequences, we performed 10 independent trials (see Materials and methods for complete details), and at each step, we enumerated the number of inferred Washington clusters in the phylogeny. For comparison, we also grouped tips by vaccination status and repeated this analysis.
 
@@ -82,19 +155,39 @@ For viruses sampled from non-Marshallese individuals, the number of inferred clu
 
 We next separated each Washington introduction and colored each tip by community membership. Every introduction that was not seeded from Arkansas led to exclusively non-Marshallese infections, while introductions from Arkansas defined lineages that circulated for longer and were enriched with Marshallese tips (Figure 4c). The primary outbreak clade is particularly enriched, containing 43 Marshallese tips and 26 non-Marshallese tips, hinting that transmission chains are longer when Marshallese cases are present in a cluster.
 
-## Mumps transmitted efficiently within the Marshallese community
+### Mumps transmitted efficiently within the Marshallese community
 
 Internal nodes on a phylogeny represent ancestors to subsequently sampled tips, while terminal nodes represent viral infections that did not give rise to sampled progeny. If the mumps outbreak was primarily sustained by transmission within one group, the backbone of the phylogeny and the majority of internal nodes should be inferred as circulating in that group. We selected the four introductions that contained both Marshallese and non-Marshallese tips (Figure 4c, the four Arkansas introductions), and reconstructed ancestral states along the phylogeny and migration/transmission rates between Marshallese and non-Marshallese groups using a structured coalescent model.
 
 Of 88 internal nodes, 74 were inferred to circulate within the Marshallese community with posterior probability of at least 0.95 (Figure 5a,b). Movement of a lineage from the Marshallese deme into the non-Marshallese deme subsequently caused the lineage to die out quickly (Figure 5a, dark blue branches). This suggests that transmission was overwhelmingly maintained within the Marshallese community, and that infections seeded into the non-Marshallese community did not sustain prolonged transmission chains. We estimate substantially more transmission from Marshallese to non-Marshallese groups than the opposite: within the primary outbreak clade, we estimate 29 transmission events from Marshallese to non-Marshallese groups (95% HPD: 21, 37), and only 6 (95% HPD: 0, 14) from non-Marshallese to Marshallese groups (Figure 5d). This strongly suggests that transmission predominantly occurred in one direction: transmission events leading to non-Marshallese infections usually died out and did not typically re-seed circulation within the Marshallese community. These results hold true regardless of migration rate prior (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig5-v3.jpg)
+
+**Figure 5.:** (a) Using the four Washington clusters that had a mixture of Marshallese and non-Marshallese cases, we inferred phylogenies using a structured coalescent model. Each group of sequences shared a clock model, migration model, and substitution model, but each topology was inferred separately, allowing us to incorporate information from all four clusters into the migration estimation. For each cluster, the maximum clade credibility tree is shown, where the color of each internal node represents the posterior probability that the node is Marshallese. (b) For each internal node shown in panel (a), we plot the posterior probability of that node being Marshallese. Across all four clusters, 74 out of 88 internal nodes (84%) are inferred as Marshallese with a posterior probability of at least 0.95. (c) The posterior distribution of the number of ‘jumps’ or transmission events from Marshallese to not Marshallese (light blue) and not Marshallese to Marshallese (dark blue) inferred for the primary outbreak clade.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** The results are shown for the exact same analyses displayed in Figure 5, except inferred under a model with a higher migration rate prior (mean of 10 instead of mean of 1). (a) Using the four Washington clusters that had a mixture of Marshallese and non-Marshallese cases, we inferred phylogenies using a structured coalescent model. Each group of sequences shared a clock model, migration model, and substitution model, but each topology was inferred separately, allowing us to incorporate information from all four clusters into the migration estimation. For each cluster, the maximum clade credibility tree is shown, where the color of each internal node represents the posterior probability that the node is Marshallese. (b) For each internal node shown in panel (a), we plot the posterior probability of that node being Marshallese. Across all four clusters, almost every internal node is inferred as Marshallese with high probability. (c) The posterior distribution of the number of ‘jumps’ or transmission events from Marshallese to not Marshallese (light blue) and not Marshallese to Marshallese (dark blue) inferred for the primary outbreak clade.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** To ensure that our results were robust to differences in sampling of Marshallese and non-Marshallese tips within the clusters used for this analysis, we subsampled our data set three independent times, and ran three independent chains per unique subsampling. In each subsampled data set, the number of Marshallese tips was randomly subsampled to be equal to the number of non-Marshallese tips in each of the four clusters. We then ran each of these subsampled data sets with the exact same model as run with the full data set. In subsampled data sets 1 and 2, two out of three chains converged, and results were combined and displayed here. In the third subsampled data set, none of the three chains converged, so those results are not shown. (a) For each subsampled data set, we plot the inferred maximum clade credibility tree from the combined tree outputs from the two converged chains. The color of each tip represents whether that sample was derived from a Marshallese or non-Marshallese case, and the color of the internal node represents the posterior probability of that internal node being Marshallese. (b) For each tree shown in (a), the posterior probability that each internal node is labeled as Marshallese is shown. The number of the subsampled data set is shown on the x-axis and the posterior probability is shown on the y-axis.
+
 To ensure that our results were not driven by unequal sampling within the analyzed clades, we generated three data sets in which the number of Marshallese and non-Marshallese tips were subsampled to be equal. For each of these three subsampled data sets, we ran three independent chains under the same model described above. Chains converged for two of the three subsampled data sets. In the converged chains, we recover very similar tree topologies (Figure 5—figure supplement 2a) with equivalent phylogenetic reconstructions of lineage circulation within Marshallese and non-Marshallese demes. We also recovered maximum clade credibility trees in which the vast majority of the internal nodes are inferred to circulate within the Marshallese deme (Figure 5—figure supplement 2a,b), confirming that our findings are robust to sampling, consistent with the past observations of model performance (De Maio et al., 2015; Dudas et al., 2018; Vaughan et al., 2014).
 
 The above structured coalescent model requires both groups to be present in each cluster, which meant that we had to exclude several small Washington introductions composed entirely of non-Marshallese tips (Figure 4c). To assess whether our findings would change if we analyzed all sequenced samples, we performed an additional analysis incorporating all Washington genotype G sequences in our data set and estimated a single tree using an approximate structured coalescent model (Müller et al., 2018). All Washington sequences were annotated as either Marshallese or not Marshallese. To provide a ‘source’ population for the extensive diversity among our disparate Washington introductions, we also specified a third, unsampled deme, for which migration was only allowed to proceed outward. As above, we inferred very few non-Marshallese internal nodes (Figure 6 and Figure 6—figure supplement 1). All internal nodes in the primary outbreak group are inferred as Marshallese with high probability, while non-Marshallese cases are present as terminal nodes. We recovered support for a single non-Marshallese cluster, indicating limited sustained transmission in the non-Marshallese population.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig6-v3.jpg)
+
+**Figure 6.:** To ensure that excluding non-Marshallese clusters did not skew our findings, we inferred a single tree using all Washington sequences. We performed a structured coalescent analysis specifying three groups: Marshallese, not Marshallese, and not Washington. Each internal node is colored by its most probable group, with its opacity specifying the posterior probability of being in that group (fully opaque being probability = 1, fully transparent being probability = 0).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66448/elife-66448-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) For the tree shown in Figure 6, each internal node is plotted. For each internal node, its color and placement on the x-axis represent its inferred most probable group (Marshallese, not Marshallese, or not Washington). The posterior probability of being labeled its most probable group is shown on the y-axis. We recover moderate support for a small number of non-Marshallese internal nodes, while the vast majority of internal nodes remain inferred as Marshallese. (b) The 95% highest posterior density intervals of the inferred effective population sizes for Marshallese, non-Marshallese, and not Washington demes.
+
 Structured coalescent models infer the effective population size (Ne) for each group, which reflects the number of infections necessary to generate the observed genetic diversity. Differences in Ne can result from different transmission rates or different numbers of infected individuals (Volz, 2012) and can therefore approximate differences in disease frequency between groups. While the total number of Marshallese and non-Marshallese cases reported through the public health surveillance system were similar (Supplementary file 1b), we estimate that Ne for the non-Marshallese group is approximately three times higher than that of the Marshallese group. Assuming the same number of infected individuals in each group, lower Ne’s suggest higher transmission rates (Volz, 2012), suggesting more transmission within the Marshallese deme. Taken together, our results suggest that the outbreak was primarily sustained by transmission within the Marshallese community. While we do observe spillover into the non-Marshallese community, transmission was generally not as successful there, resulting in short, terminal transmission chains.
 
-## Viruses infecting individuals in different vaccination groups are genetically similar
+### Viruses infecting individuals in different vaccination groups are genetically similar
 
 Although only 9.7% of reported mumps cases in Washington were not up-to-date for mumps vaccination, infection of these individuals could have disproportionately impacted transmission in the state. Emergence of an antigenically novel strain of mumps could also allow infection of previously vaccinated individuals, and result in different virus lineages infecting individuals in different vaccination categories. We colored the tips of all Washington cases in our phylogeny to represent whether they were derived from individuals who were up-to-date, not up-to-date, or whose vaccination status was unknown. Mirroring overall vaccination coverage in Washington, the vast majority of samples in our data set were from up-to-date individuals. The not up-to-date individuals present in our data set are dispersed throughout the phylogeny and do not cluster together (Figure 7), suggesting that there is no genetic difference between viruses infecting individuals with different vaccination statuses.
 
@@ -120,55 +213,341 @@ Our findings highlight that social networks can be the primary risk factor for a
 
 ## Materials and methods
 
-## Data and code availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mumps virus)</td>
+      <td>110 buccal swabs from mumps positive patients in Washington</td>
+      <td>Washington StateDepartment of Health</td>
+      <td>Sequences were deposited in Genbank under accessions MT859507-MT859672. Raw reads were deposited under SRA project number PRJNA641715</td>
+      <td>Full metadata for each sequence is available in the manuscript in Supplementary file 1a</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mumps virus)</td>
+      <td>56 buccal swabs from mumps positive patients from other US states</td>
+      <td>Wisconsin State Lab of Hygiene</td>
+      <td>Sequences were deposited in Genbank under accessions MT859507-MT859672. Raw reads were deposited under SRA project number PRJNA641715</td>
+      <td>Full metadata for each sequence is available in the manuscript in Supplementary file 1a</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mumps virus)</td>
+      <td>Publicly available mumps genomes</td>
+      <td>NIAID Virus Pathogen Database and Analysis Resource (ViPR) (Pickett et al., 2012)</td>
+      <td>http://www.viprbrc.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>mumps_1.5 kb primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Full list of PCR primer sequences is available in the Materials and methods section under ‘Viral RNA extraction, cDNA synthesis, and amplicon generation’</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QiAmp Viral RNA Mini Kit</td>
+      <td>Qiagen, Valencia, CA, USA</td>
+      <td>Cat #: 52904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protoscript II First strand synthesis kit</td>
+      <td>New England Biolabs, Ipswich MD, USA</td>
+      <td>Cat #: E6560L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Hotstart DNA polymerase</td>
+      <td>New England Biolabs, Ipswich, MD, USA</td>
+      <td>Cat #: M0493L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ampure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat #: A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library Prep Kit</td>
+      <td>Illumina, San Diego, CA, USA</td>
+      <td>Cat #: FC-131–1096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td>RRID:SCR_016368</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAFFT</td>
+      <td>Katoh et al., 2002</td>
+      <td>https://mafft.cbrc.jp/alignment/software/</td>
+      <td>RRID:SCR_016368</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TreeTime</td>
+      <td>Sagulenko et al., 2018</td>
+      <td>https://github.com/neherlab/treetime</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEAST (versions 1.8.4 and 2.6.2)</td>
+      <td>Drummond et al., 2012, Lemey et al., 2009, Bouckaert et al., 2019</td>
+      <td>https://beast.community/ and https://www.beast2.org/</td>
+      <td>RRID:SCR_010228</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQTREE</td>
+      <td>Nguyen et al., 2015</td>
+      <td>http://www.iqtree.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Github repo with protocols for generating mumps sequences from buccal swabs</td>
+      <td>This paper</td>
+      <td>https://github.com/blab/mumps-seq</td>
+      <td>This github repository contains documentation and protocols for all lab procedures and bioinformatics pipelines used to generate consensus genomes from mumps buccal swabs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Github repo with scripts used to analyze data and generate figures for this manuscript</td>
+      <td>This paper</td>
+      <td>https://github.com/blab/mumps-wa-phylodynamics</td>
+      <td>This github repository contains all of the code used to generate figures and perform the analyses described in this manuscript. This repository also contains xml files used for input for BEAST analyses and alignments and tree files used to generate and plot phylogenetic trees</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data and code availability
 
 All code used to analyze data, input files for BEAST, and all code used to generate figures for this manuscript are publicly available at https://github.com/blab/mumps-wa-phylodynamics; swh:1:rev:b8358a0d49d70670dbab9eeffa9972c277b3021b; Moncla, 2021b. Raw FASTQ files with human reads removed are available under SRA project number PRJNA641715. All protocols for generating sequence data as well as the consensus genomes are available at https://github.com/blab/mumps-seq; swh:1:rev:3309d1535804a71e6d9e7cc55295b6ea61bde730; Moncla, 2021a. Consensus genomes have also been deposited to Genbank under accessions MT859507-MT859672.
 
-## Community feedback
+### Community feedback
 
 In order to ensure that this study was faithful to the experience of the Marshallese community in Washington State, we sought paid consultation from a local Marshallese community health advocate. We conducted video and telephone interviews to directly address the impacts of mumps transmission on the Marshallese community, community healthcare goals and priorities, and the impacts of the mumps outbreak on stigmatization. This feedback informed what is being presented herein, provided crucial context for understanding mumps transmission, and allowed us to work with the community to determine how best to discuss Marshallese involvement in the outbreak.
 
-## Mumps surveillance in Washington State
+### Mumps surveillance in Washington State
 
 Mumps is a notifiable condition in Washington State. Therefore, per the Washington Administrative Code (WAC), as specified in WAC Chapter 246-101 (Washington State Legislature, 2014), healthcare providers, healthcare facilities, and laboratories must report cases of mumps or possible mumps to the local health jurisdiction (LHJ) of the patient’s residence. LHJ staff initiate case investigations and facilitate optimal collection and testing of diagnostic specimens. Buccal swabs and urine are acceptable specimens for real-time reverse transcription polymerase chain reaction (qRT-PCR), a preferred diagnostic test for mumps. Most mumps rRT-PCR tests for Washington State residents are performed at the Washington State Public Health Laboratories, where all positive specimens are archived.
 
 Individuals testing positive for mumps ribonucleic acid (RNA) by qRT-PCR are classified as confirmed mumps cases if they have a clinically compatible illness (i.e., an illness involving parotitis or other salivary gland swelling lasting at least 2 days, aseptic meningitis, encephalitis, hearing loss, orchitis, oophoritis, mastitis, or pancreatitis). During case investigations, case-patients or their proxies are interviewed. Information about demographics, illness characteristics, vaccination history, and potential for exposure to and transmission of mumps are solicited from each case-patient. In concordance with CDC guidelines (Centers for Disease Control and Prevention, 2019b), only vaccine doses for which there was written documentation with the date of vaccine receipt were considered valid. Individuals for whom such documentation could not be provided were classified as having an unknown vaccination status. For individuals with documented vaccine doses, they were further characterized as up-to-date or not up-to-date based on their age. The Washington State Department of Health (DOH) receives, organizes, performs quality control on, and analyzes data from, LHJ case reports and supports investigations upon request.
 
-## Sample collection and IRB approval
+### Sample collection and IRB approval
 
 This study was approved by the Fred Hutchinson Cancer Research Center (FHCRC) Institutional Review Board (IR File #: 6007–944) and by the Washington State Institutional Review Board, and classified as not involving human subjects. Samples were selected for sequencing to maximize temporal and epidemiologic breadth and to ensure successful sequencing. As such, samples were chosen based on the date of sample collection, the PCR cycle threshold (Ct), case vaccination status, and community status (Marshallese or non-Marshallese). Samples were selected for sequencing in two batches. In the first, samples were selected based on covering a wide geographic range within Washington, a full range of dates covering the outbreak, and having a Ct value <36. This initial sampling regime resulted in a sample set skewed slightly toward samples from Marshallese individuals. To ensure that the proportion of samples in our data closely matched the distribution of cases in the outbreak, we then selected a second batch of samples using the same criteria as above, but excluded samples from Marshallese individuals. We then randomly sampled an additional 30 samples from non-Marshallese individuals. This sampling regime resulted in a data set that closely mirrors the distribution of metadata categories in the outbreak overall. All metadata, including case vaccination status, were transferred from WA DOH to FHCRC in a de-identified form.
 
 We also sequenced an additional set of 56 samples collected in Wisconsin, Ohio, Missouri, Alabama, and North Carolina provided by the Wisconsin State Laboratory of Hygiene. Ten of these samples were collected in Wisconsin during the 2006/2007 Midwestern college campus outbreaks, six samples were collected in 2014, and the rest were collected between 2016 and 2018. For these samples, we received metadata describing sample Ct value and date of collection. All metadata were received by FHCRC in de-identified form.
 
-## Viral RNA extraction, cDNA synthesis, and amplicon generation
+### Viral RNA extraction, cDNA synthesis, and amplicon generation
 
 Viral RNA was extracted from buccal swabs using either the QiAmp Viral RNA Mini Kit (Qiagen, Valencia, CA, USA) or the Roche MagNA Pure 96 DNA and viral NA small volume kit (Roche, Basel, Switzerland). For samples extracted with the QiAmp Viral RNA Mini Kit, 500 μl of buccal swab fluid was spun at 5000 × g for 5 min at 4°C to pellet host cells. The supernatant was then removed and centrifuged at 14,000 rpm for 90 min at 4°C to pellet virions. Excess fluid was discarded, and the pelletted virions were resuspended in 150–200 μl of fluid. Resuspended viral particles were then used as input to the QiAmp Viral RNA Mini Kit (Qiagen, Valencia, CA, USA), following manufacturer’s instructions, and eluting in 30 μl of buffer AVE. For extraction with the MagNA Pure, we followed manufacturer’s instructions. cDNA was generated with the Protoscript II First strand synthesis kit (New England Biolabs, Ipswich MD, USA), using 8 μl of vRNA as input and priming with 2 μl of random hexamers. vRNA and primers were incubated at 65°C for 5 min. Following this incubation, 10 μl of Protoscript II reaction mix (2×) and 2 μl of Protoscript II enzyme mix (10×) were added to each reaction and incubated at 25°C for 5 min, then 42°C for 1 hr, followed by a final inactivation step at 80°C for 5 min. To amplify the full mumps genomes, we used Primal Scheme (http://primal.zibraproject.org/) to design overlapping,~1500 base pair amplicons spanning the entirety of the mumps virus genome, where each tiled set of primes overlapped by ~100 base pairs. Primers are listed below.
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Primer sequence</th>
+      <th>Forward/reverse</th>
+      <th>Primer pool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mumps_1.5 kb_1F</td>
+      <td>ACCAAGGGGAAAATGAAGATGGG</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_1R</td>
+      <td>TAACGGCTGTGCTCTAAAGTCAT</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_2_F</td>
+      <td>TTGTTGACAGGCTTGCAAGAGG</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_2_R</td>
+      <td>TTGTTCAAGATGTTGCAGGCGA</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_3_F</td>
+      <td>TGCAACCCCATATGCTCACCTA</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_3_R</td>
+      <td>AGTTTGTTCCTGCCTTTGCACA</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_4_F</td>
+      <td>AGTGAGAGCAGTTCAGATGGAAGT</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_4_R</td>
+      <td>CCCTCCATTAGACCGGCACTTA</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_5_F</td>
+      <td>AACAACAGTGTTCCAGCCACAA</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_5_R</td>
+      <td>GGTGGCACTGTCCGATATTGTG</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_6_F</td>
+      <td>TGCCGTTCAATCATGAGACATAAAGA</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_6_R</td>
+      <td>CGTAGAGGAGTTCATACGGCCA</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_7_F</td>
+      <td>TGTCTGTGCCTGGAATCAGATCT</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_7_R</td>
+      <td>CGTCCTTCCAACATATCAGTGACC</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_8_F</td>
+      <td>CCAAAAGACAGGTGAGTTAACAGATTT</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_8_R</td>
+      <td>ACGAGCAAAGGGGATGATGACT</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_9_F</td>
+      <td>TTTGGCACACTCCGGTTCAAAT</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_9_R</td>
+      <td>TGACAATGGTCTCACCTCCAGT</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_10_F</td>
+      <td>ACTCGCACAGTATCTATTAGATCGTGA</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_10_R</td>
+      <td>GCCCAGCCAGAGTAAACAAACA</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_11_F</td>
+      <td>GCCAAGCAGATGGTAAACAGCA</td>
+      <td>Forward</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_11_R</td>
+      <td>GGCTCTCTCCAACATGCTGTTC</td>
+      <td>Reverse</td>
+      <td>pool 1</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_12_F</td>
+      <td>GCGGGGCCTCTATGTCACTTAT</td>
+      <td>Forward</td>
+      <td>pool 2</td>
+    </tr>
+    <tr>
+      <td>mumps_1.5 kb_12_R</td>
+      <td>CCAAGGGGAGAAAGTAAAATCAAT</td>
+      <td>Reverse</td>
+      <td>pool 2</td>
+    </tr>
+  </tbody>
+</table>
 
 Primers were pooled into two pools as follows: the first contained primer pairs 1, 3, 5, 7, 9, and 11, all pooled at 10 μM. The second pool contained primer pairs 2, 4, 6, 8, 10, and 12. All primers in pool two were pooled at 10 μM, except for primer pair 4, which was added at a 20 μM concentration.
 
 PCR was performed with the Q5 Hotstart DNA polymerase (New England Biolabs, Ipswich, MD, USA), using 11.75 μl of nuclease-free water, 5 μl of Q5 reaction buffer, 0.5 μl of 10 mM dNTPs, 0.25 μl, 2.5 of pooled primers, and 5 μl of cDNA. Amplicons were generated with the following PCR cycling conditions: 98°C for 30 s, followed by 30 cycles of: 98°C for 15 s, then 67°C for 5 min. Cycling was concluded with a 10°C hold. PCR products were run on a 1% agarose gel, and bands were cut out and purified using the QiAquick gel extraction kit (Qiagen, Valencia, CA, USA), following the manufacturer's protocol. All optional steps were performed, and the final product was eluted in 30 µl of buffer EB. For samples extracted on the MagNA Pure, amplicons were cleaned using a 1× bead cleanup with Ampure XP beads. Final cleaned amplicons were quantified using the Qubit dsDNA HS Assay kit (Thermo Fisher, Waltham, MA, USA).
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 For each sample, pool 1 and pool 2 amplicons were combined in equimolar concentrations to a total of 0.5 ng in 2.5 µl. Libraries were prepared using the Nextera XT DNA Library Prep Kit (Illumina, San Diego, CA, USA), following manufacturer’s instructions, but with reagent volumes halved for each step, for the majority of samples in our data set. For samples processed in our last sequencing run, several samples had higher Ct values. We therefore chose to process these samples using the standard 1× reagent volumes for the library preparation step. All libraries were purified using Ampure XP beads (Beckman Coulter, Brea, CA, USA), using a 0.6× cleanup, a 1× cleanup, and a final 0.7× cleanup. At each step, beads were washed twice with 200–400 µl of 70% ethanol. The final product was eluted off the beads with 10 µl of buffer EB. Tagmentation products were quantified with the Qubit dsDNA HS Assay kit (Thermo Fisher, Waltham, MA, USA), and run on a Tapestation with the TapeStation HighSense D5K assay (Agilent, Santa Clara, CA, USA) to determine the average fragment length. All but eight samples and negatives were pooled together in 6 nM libraries and run on 300 bp × 300 bp v3 kits on the Illumina MiSeq, with a 1% spike-in of PhiX. The remaining eight samples (MuVs/Washington.USA/1.17/FH77[G], MuVs/Washington.USA/12.17/FH78[G], MuVs/Washington.USA/16.17/FH79[G], MuVs/Washington.USA/19.17/FH80[G], MuVs/Washington.USA/20.17/FH81[G], MuVs/Washington.USA/20.17/FH82[G], MuVs/Washington.USA/29.17/FH83[G], and MuVs/Washington.USA/2.17/FH84[G]) were pooled to a 1.2 nM library, and run as a 50 pM library with 2% PhiX on the Illumina iSeq, with a 151 bp × 151 bp v3 kit.
 
-## Negative controls
+### Negative controls
 
 A negative control (nuclease-free water) was run for each viral RNA extraction, reverse transcription reaction, and for each pool for each PCR reaction. These negative controls were carried through the library preparation process and sequenced alongside actual samples. Any samples whose negative controls from any step in the process resulted in >10× mumps genome coverage were re-extracted and sequenced.
 
-## Bioinformatic processing of sequencing reads
+### Bioinformatic processing of sequencing reads
 
 Human reads were removed from raw FASTQ files by mapping to the human reference genome GRCH38 with bowtie2 (Langmead and Salzberg, 2012)(RRID: SCR_016368) version 2.3.2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml). Reads that did not map to the human genome were output to separate FASTQ files and used for all subsequent analyses. Illumina data was analyzed using the pipeline described in detail at https://github.com/lmoncla/illumina_pipeline. Briefly, raw FASTQ files were trimmed using Trimmomatic (Bolger et al., 2014) (http://www.usadellab.org/cms/?page=trimmomatic), trimming in sliding windows of 5 base pairs and requiring a minimum Q-score of 30. Reads that were trimmed to a length of <100 base pairs were discarded. Trimming was performed with the following command: java -jar Trimmomatic-0.36/trimmomatic-0.36.jar SE input.fastq output.fastq SLIDINGWINDOW:5:30 MINLEN:100. Trimmed reads were mapped to a consensus sequence from Massachusetts (Genbank accession: MF965301) using bowtie2 (Langmead and Salzberg, 2012) version 2.3.2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml), using the following command: bowtie2 -x reference_sequence.fasta -U read1.trimmed.fastq,read2.trimmed.fastq -S output.sam --local. We selected this Massachusetts sequence as an initial reference sequence because at the time, it represented one of the only available genomes of a genotype G mumps virus that had been sampled during a US outbreak in 2016. Mapped reads were imported into Geneious (https://www.geneious.com/) for visual inspection and consensus calling. To avoid issues with mapping to an improper reference sequence, we then remapped each sample's trimmed FASTQ files to its own consensus sequence. These bam files were again manually inspected in Geneious, and a final consensus sequence was called, with nucleotide sites with <20× coverage output as an ambiguous nucleotide (‘N’). All genomes with >50% Ns were discarded. In total, we generated 140 genomes with at least 80% non-N bases, and 26 genomes with 50–80% non-N bases. Our median completeness (percent of bases that are not Ns) across the data set is 90%. All genomes used in these analyses are available at https://github.com/blab/mumps-seq/tree/master/data.
 
-## Data set curation and maximum likelihood divergence tree generation
+### Data set curation and maximum likelihood divergence tree generation
 
 We downloaded all currently available (as of June 2020), complete mumps genomes from North America, and separately from any country in the world, from the NIAID Virus Pathogen Database and Analysis Resource (ViPR) (Pickett et al., 2012) through http://www.viprbrc.org/. We also obtained mumps genomes from British Columbia, Ontario, and Arkansas. We obtained written permission from sequence authors for any sequence that had not previously been published on. In total, this data set includes 437 full mumps genomes from North America. Sequences and metadata were cleaned and organized using fauna, a database system that is part of the Nextstrain platform. Sequences were processed using Nextstrain’s augur software (Hadfield et al., 2018), and filtered to include only those with at least 8000 bases and were sampled in North America in 2006 or later. Genomes were aligned with MAFFT (Katoh et al., 2002)(RRID: SCR_016368) and trimmed to the reference sequence (MuV/Gabon/13/2[G], GenBank accession: KM597072). We inferred a maximum likelihood phylogeny using IQTREE (Nguyen et al., 2015) with a GTR nucleotide substitution model, and inferred a molecular clock and temporally resolved phylogeny using TreeTime (Sagulenko et al., 2018). Sequences with an estimated clock rate that deviated from the other sequences by >4 times the interquartile distance were removed from subsequent analysis. We inferred the root-to-tip distance with TempEst version 1.5.1 (Rambaut et al., 2016) with the best fitting root by the heuristic residual mean squared function. Trees were output in JSON format and are available at https://github.com/blab/mumps-wa-phylodynamics/blob/master/auspice.
 
-## Phylogenetic analysis of full North American mumps genomes
+### Phylogenetic analysis of full North American mumps genomes
 
 Using the same set of genome sequences used for divergence tree estimation, we aligned sequences with MAFFT and inferred time-resolved phylogenies in BEAST version 1.8.4 (Drummond et al., 2012)(RRID: SCR_010228). We used a skygrid population size prior with 100 bins, and a skygrid cutoff of 25 years, allowing us to estimate four population sizes each year. We used an HKY nucleotide substitution model with four gamma rate categories, and a strict clock with a CTMC prior. We used a discrete trait model (Lemey et al., 2009) and estimated migration rates using BSSVS and ancestral states with 27 geographic locations. Here, ‘state’ refers to the inferred ancestral identity of an internal node, where the inferred identity could be any of the 27 geographic locations (US states and Canadian provinces) in the data set. For the prior on non-zero rates for BSSVS, we specified an exponential distribution with a mean of 26. As a prior on each pairwise migration rate, we used an exponential distribution with mean 1. All other priors were left at default values. We ran this analysis for 100 million steps, sampling every 10,000, and removed the first 10% of sampled states as burn-in. A maximum clade credibility tree was summarized with TreeAnnotator, using the mean heights option. All tree plotting was performed with baltic (https://github.com/evogytis/baltic). Input XML files and output results are available at https://github.com/blab/mumps-wa-phylodynamics/tree/master/phylogeography.
 
-## Quantifying transmission in divergence trees using basal and terminal tips: formulation and rationale
+### Quantifying transmission in divergence trees using basal and terminal tips: formulation and rationale
 
 To determine whether specific groups were more likely to be part of sustained, serially sampled transmission chains, we developed a statistic to quantify transmission in the tree. Our aim was to develop a heuristic method that would capture patterns similar to those captured by more complex structured coalescent models. In a population with high rates of transmission and high sampling intensity, it is possible that sampled individuals may represent true ancestors to subsequent infections (Gavryushkina et al., 2014). While this is theoretically possible in our data set, we expect this to be rare. Because viruses accumulate mutations at a constant rate over time, a tip’s branch length should correlate with its position along the underlying transmission chain, that is, a short branch length should indicate that the tip is closer to the true ancestral infection than a longer branch. Plotting the number of mutations on each branch vs. its estimated branch length in time units confirms that mutations and time-calibrated branch length are correlated (Figure 8). This suggests that on average, branches with fewer mutations also tend to represent shorter periods of time. For our data set, most tips with an estimated branch length within the mumps serial interval of ~18 days Vink et al., 2014 have 0 mutations (Figure 8, circles below dashed line). In a population with high rates of transmission in which true ancestral infections are not directly sampled, we therefore expect that tips that are genetically closer to the ancestral node should be closer to the true ancestral infection than tips that are genetically dissimilar.
 
@@ -186,17 +565,23 @@ Given a divergence tree, we next categorized tips by how close they are to their
 
 We expect that requiring branches to have 0 mutations should be robust regardless of mutation rate and serial interval, because a branch length of 0 will always be the closest in sequence to the true ancestor. However, variation in the substitution rate will impact the power of the analysis for detecting associations. Because mumps has a low substitution rate, some internal nodes contain stacks of identical genomes that cannot be ordered in terms of their placement along the underlying transmission chain. Instead, we treat each of these nodes as basal with equal probability of being upstream in the transmission chain. A higher substitution rate would jitter these polytomies and increase resolution, while a lower substitution rate would further reduce power. Our application is therefore conservative, but likely underpowered. Future work will be necessary to define the precise interaction between mutation rate, serial interval, sampling intensity, and effect sizes in determining the power of this test.
 
-## Regression model for quantifying a tip’s probability of being basal
+### Regression model for quantifying a tip’s probability of being basal
 
-For each Washington tip in the tree, we classified it as either being basal (coded as a 1) or being terminal (coded as 0). For each tip, we coded its corresponding age, vaccination status, and community membership as a predictor variable input into a logistic regression model. We coded these attributes as follows: For community membership, non-Marshallese tips were coded as 0 and Marshallese tips were coded as 1. For age, we split our data set into adults and children, with individuals aged <20 coded with a 0 and ≥20 coded with a 1. In our data set, there were three classifications for vaccination status: up-to-date, not up-to-date, and unknown vaccination status. According to the Advisory Committee on Immunization Practices (ACIP) (McLean, 2013), individuals aged 5–18 had to have received both recommended doses of mumps-containing vaccine, children aged 15 months to 5 years required one dose of mumps-containing vaccine, and adults over 18 had to have received at least one dose of mumps-containing vaccine to be classified as up-to-date for mumps vaccination. Individuals under 15 months are considered up-to-date without any doses of mumps-containing vaccine. Not up-to-date individuals are those with a known vaccination status who did not qualify under criteria to be classified as up-to-date. Individuals who could not provide documentation regarding their MMR vaccination history were considered to have ‘unknown’ vaccination status. Individuals with ‘known’ vaccination status could either be fully up-to-date, undervaccinated, or unvaccinated. To ensure that we measured the effect of vaccination among individuals who knew their vaccination status, we coded vaccination information using two dummy variables in our logistic regression, one signifying whether vaccination status was known or not, and one indicating whether vaccination was up-to-date or not. We then fit a logistic regression model to this data using the glm package in R (https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm), specifying a binomial model as:Pr(beingbasal)∼β0+β1×1+β2×2+β3×3+β4×4,where x1 represents 0 or one value for member of Marshallese community (not Marshallese coded as a 0, Marshallese coded as a 1), x2 represents a 0 or one value for age, where individuals were classified as adults (≥20 years of age, coded as a 1) or children (<20 years of age, coded as a 0). x3 represents a 0 or one value for whether vaccination status is unknown (having a known vaccination status coded as a 0, having an unknown vaccination status coded as a 1), and x4 represents 0 or one value for whether vaccination status is up-to-date (up-to-date coded as a 0 and not up-to-date coded as a 1). Under this formulation, an individual with unknown vaccination status would be coded as x3 = 1, x4 = 0, an individual who is up-to-date would be coded as x3 = 0, x4 = 0, and an individual who is not up-to-date is coded as x3 = 0, x4 = 1. This encoding allows us to evaluate the effects of having an unknown vaccination status and a vaccination status that is not up-to-date.
+For each Washington tip in the tree, we classified it as either being basal (coded as a 1) or being terminal (coded as 0). For each tip, we coded its corresponding age, vaccination status, and community membership as a predictor variable input into a logistic regression model. We coded these attributes as follows: For community membership, non-Marshallese tips were coded as 0 and Marshallese tips were coded as 1. For age, we split our data set into adults and children, with individuals aged <20 coded with a 0 and ≥20 coded with a 1. In our data set, there were three classifications for vaccination status: up-to-date, not up-to-date, and unknown vaccination status. According to the Advisory Committee on Immunization Practices (ACIP) (McLean, 2013), individuals aged 5–18 had to have received both recommended doses of mumps-containing vaccine, children aged 15 months to 5 years required one dose of mumps-containing vaccine, and adults over 18 had to have received at least one dose of mumps-containing vaccine to be classified as up-to-date for mumps vaccination. Individuals under 15 months are considered up-to-date without any doses of mumps-containing vaccine. Not up-to-date individuals are those with a known vaccination status who did not qualify under criteria to be classified as up-to-date. Individuals who could not provide documentation regarding their MMR vaccination history were considered to have ‘unknown’ vaccination status. Individuals with ‘known’ vaccination status could either be fully up-to-date, undervaccinated, or unvaccinated. To ensure that we measured the effect of vaccination among individuals who knew their vaccination status, we coded vaccination information using two dummy variables in our logistic regression, one signifying whether vaccination status was known or not, and one indicating whether vaccination was up-to-date or not. We then fit a logistic regression model to this data using the glm package in R (https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/glm), specifying a binomial model as:
+
+$$
+Pr(beingbasal)∼\beta_{0}+\beta_{1\times1}+\beta_{2\times2}+\beta_{3\times3}+\beta_{4\times4},
+$$
+
+where x1 represents 0 or one value for member of Marshallese community (not Marshallese coded as a 0, Marshallese coded as a 1), x2 represents a 0 or one value for age, where individuals were classified as adults (≥20 years of age, coded as a 1) or children (<20 years of age, coded as a 0). x3 represents a 0 or one value for whether vaccination status is unknown (having a known vaccination status coded as a 0, having an unknown vaccination status coded as a 1), and x4 represents 0 or one value for whether vaccination status is up-to-date (up-to-date coded as a 0 and not up-to-date coded as a 1). Under this formulation, an individual with unknown vaccination status would be coded as x3 = 1, x4 = 0, an individual who is up-to-date would be coded as x3 = 0, x4 = 0, and an individual who is not up-to-date is coded as x3 = 0, x4 = 1. This encoding allows us to evaluate the effects of having an unknown vaccination status and a vaccination status that is not up-to-date.
 
 p-values were assigned via a Wald test, and inferred coefficients were exponentiated to return odds ratios. All codes used to parse the divergence tree and formulate and fit the regression model are available at https://github.com/blab/mumps-wa-phylodynamics/blob/master/divergence-tree-analyses/Regression-analysis-on-descendants-in-divergence-tree.ipynb.
 
-## Rarefaction analysis to estimate transmission clusters
+### Rarefaction analysis to estimate transmission clusters
 
 Using the full set of North American mumps sequences, we designated all non-Washington North American sequences as ‘background’ sequences. We then separated Washington sequences into Marshallese tips (57 total sequences) and non-Marshallese tips (52 total sequences). For this analysis, we excluded the genotype K sequence in our data set due to its extreme divergence from other viruses sampled in Washington, which were all genotype G. For each group (Marshallese vs. non-Marshallese), we then generated subsampled data sets comprised of a random sample of 1 to n sequences, where n is the number of total sequences available for that group. For each number of sequences, we performed 10 independent subsampling trials. Subsampling was performed without replacement. So, for community members, we generated 10 data sets in which one community member sequence was sampled, then 10 data sets in which two community members sequences were sampled, etc. up to 10 data sets in which all 57 community members sequences were sampled. For each subsampled data set, we then combined these subsampled data sets with the background North American sequences, and reran the Nextstrain pipeline. For each subsample and trial, we infer geographic transmission history across the tree and enumerate the number of introductions into Washington. Geographic transmission history was inferred using a discrete trait model in TreeTime (Sagulenko et al., 2018). For each number of sequences tested, n, we report the number of trials resulting in that number of inferred introductions, and the mean number of inferred introductions across the 10 trials. Each resulting ‘cluster’ consisted of a set of sequences that are related to one another that descend from a single inferred introduction of mumps into Washington.
 
-## Inference of community transmission dynamics using a structured coalescent model
+### Inference of community transmission dynamics using a structured coalescent model
 
 To infer the rates of migration between community and non-community members and to infer ancestral states of Washington internal nodes, we employed a structured coalescent model. Here, ‘state’ refers to the inferred ancestral identity of an internal node, where the identity could be inferred as ‘Marshallese’ or ‘not Marshallese’. The multitype tree model (Vaughan et al., 2014) in BEAST 2 v2.6.2 (Bouckaert et al., 2019) infers the effective population sizes of each deme and the migration rates between them. Because the multitype tree model requires that all partitions contain all demes, we could only analyze four clades that circulated in Washington State and included both Marshallese and non-Marshallese tips. We generated an XML in BEAUti v2.6.2 with four partitions and linked the clock, site, and migration models. We used a strict, fixed clock, set to 4.17 × 10−4 substitutions per site year and used an HKY substitution model with four gamma-distributed rate categories. This clock rate was set based on the inferred substitutions per site per year from all North American mumps genomes on nextstrain.org/mumps/na. Migration rates were inferred with the prior specified as a truncated exponential distribution with a mean of 1 and a maximum of 50. Effective population sizes were inferred with the prior specified as a truncated exponential distribution with a mean of 1, a minimum value of 0.001, and a maximum value of 10,000. All other priors were left at default values. In order to improve convergence, we employed three heated chains using the package CoupledMCMC (Müller and Bouckaert, 2019), where proposals for chains to swap were performed every 100 states. The analysis was run for 100 million steps, with states sampled every 1 million steps. We ran this analysis three independent times, and combined log and tree file output from those independent runs using LogCombiner, with the first 10% (1000 states) of each run discarded as burn-in. We then summarized these combined output log and tree files. A maximum clade credibility tree was inferred using TreeAnnotator with the mean heights option. To ensure that results were not appreciably altered by the migration rate prior, we also repeated these analyses with migration rates inferred with the prior specified as a truncated exponential distribution with a mean of 10 and a maximum of 50.
 

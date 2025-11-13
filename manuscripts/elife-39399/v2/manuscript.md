@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39399.001 Invariant floral forms are important for reproductive success and robust to natural perturbations. Petal number, for example, is invariant in Arabidopsis thaliana flowers. However, petal number varies in the closely related species Cardamine hirsuta , and the genetic basis for this difference between species is unknown. Here we show that divergence in the pleiotropic floral regulator APETALA1 ( AP1 ) can account for the species-specific difference in petal number robustness. This large effect of AP1 is explained by epistatic interactions: A. thaliana AP1 confers robustness by masking the phenotypic expression of quantitative trait loci controlling petal number in C. hirsuta . We show that C. hirsuta AP1 fails to complement this function of A. thaliana AP1 , conferring variable petal number, and that upstream regulatory regions of AP1 contribute to this divergence. Moreover, variable petal number is maintained in C. hirsuta despite sufficient standing genetic variation in natural accessions to produce plants with four-petalled flowers.
+Invariant floral forms are important for reproductive success and robust to natural perturbations. Petal number, for example, is invariant in Arabidopsis thaliana flowers. However, petal number varies in the closely related species Cardamine hirsuta, and the genetic basis for this difference between species is unknown. Here we show that divergence in the pleiotropic floral regulator APETALA1 (AP1) can account for the species-specific difference in petal number robustness. This large effect of AP1 is explained by epistatic interactions: A. thaliana AP1 confers robustness by masking the phenotypic expression of quantitative trait loci controlling petal number in C. hirsuta. We show that C. hirsuta AP1 fails to complement this function of A. thaliana AP1, conferring variable petal number, and that upstream regulatory regions of AP1 contribute to this divergence. Moreover, variable petal number is maintained in C. hirsuta despite sufficient standing genetic variation in natural accessions to produce plants with four-petalled flowers.
 
 ## Introduction
 
@@ -39,47 +39,238 @@ In this study, we investigate the evolutionary transition from a robust phenotyp
 
 ## Results
 
-## Petal number variation in C. hirsuta flowers
+### Petal number variation in C. hirsuta flowers
 
 The flowers of A. thaliana and other Brassicaceae species are readily distinguished by their four petals. This phenotype is robust to natural genetic variation; for example, flowers from genetically diverse A. thaliana accessions consistently produce four petals (Figure 1a). C. hirsuta lacks this robustness and shows variation in petal number. For example, we found similar frequencies of each petal number between zero and four in flowers from 39 C. hirsuta accessions sampled from across the species range (Figure 1b) (Hay et al., 2014). Therefore, petal number varies within C. hirsuta and is a species-level trait that distinguishes C. hirsuta from A. thaliana.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig1-v2.jpg)
+
+**Figure 1.:** Four-petalled A. thaliana flower compared with C. hirsuta flowers containing 0, 1, 2, 3 or 4 petals. (a, b) Histograms showing petal number on the x-axis and frequency of flowers of the y-axis for (a) 17 A. thaliana accessions (n = 3725 flowers from 149 plants) and (b) 39 C. hirsuta accessions (n = 3362 flowers from 143 plants). (c, e) Scanning electron micrographs of stage eight flowers with covering sepals dissected away to show medial stamen primordia and small petal primordia (dashed circles) present in A. thaliana (c) and absent in C. hirsuta (e). (d, f) Longitudinal sections of stage eight flowers showing small petal primordia present in A. thaliana (d) and absent in C. hirsuta (f). Abbreviations: pe, petal; st, stamen. Scale bars: 20 µm (c–f).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Covering sepals are dissected away to show two small petal primordia (dashed circles) at the base of medial stamens. Scale bar: 20 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig1-figsupp2-v2.jpg)
+
 Petals initiate in the second whorl of A. thaliana and C. hirsuta flowers, each positioned between two outer sepals, with the inner whorls being occupied by male and female reproductive organs (stamens and carpels) (McKim et al., 2017; Smyth et al., 1990). Small petal primordia are readily observed in the second whorl of A. thaliana floral buds, located between first-whorl sepals and third-whorl stamens (Figure 1c,d). In contrast to this, petal primordia were often missing in C. hirsuta flowers at similar developmental stages (Figure 1e). Instead, we observed a flat surface in the second whorl with no indication of outgrowths (Figure 1f). However, when we found petal primordia in C. hirsuta flowers, their development appeared indistinguishable from those in A. thaliana (Figure 1—figure supplement 1). These petals occupied any of the four positions available in the second whorl, with a slightly higher frequency in abaxial positions (Figure 1—figure supplement 2). Therefore, the number of petals in a C. hirsuta flower is determined at early stages of petal initiation and outgrowth.
 
-## Auxin activity maxima fail to form in whorl two of C. hirsuta floral meristems
+### Auxin activity maxima fail to form in whorl two of C. hirsuta floral meristems
 
 To study the earliest stages of petal initiation, we tracked floral meristem development using time-lapse confocal laser scanning microscopy and analysed growth in these 4-dimensional image stacks (Barbier de Reuille et al., 2015). We followed the formation of auxin activity maxima during petal initiation in A. thaliana and C. hirsuta using the DR5::VENUS and DR5v2::VENUS auxin activity sensors (Barkoulas et al., 2008; Heisler et al., 2005; Liao et al., 2015). At sites of petal initiation in A. thaliana, auxin activity maxima formed in 2 – 3 epidermal cells on the floral meristem flank prior to growth of these cells (Figure 2a,b; 83% DR5::VENUS observation rate, Figure 2—figure supplement 1). However, in C. hirsuta, auxin activity maxima often failed to form on the floral meristem, and instead were either absent or aberrantly located in the first whorl between sepals (Figure 2c,d; 36% DR5v2::VENUS observation rate, Figure 2—figure supplement 1). Therefore, four sites of petal initiation are usually marked by auxin activity maxima in the second whorl of the floral meristem in A. thaliana, but not C. hirsuta.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig2-v2.jpg)
+
+**Figure 2.:** (a–d) Heat maps of change in relative cell area of floral primordia over 24 hr of growth (a, c) and surface projections of DR5::VENUS expression (b, d) in A. thaliana (a, b) and C. hirsuta (c, d). Colour bars: percentage increase (warm colours) and decrease (cool colours) of cell area (a, c) and signal intensity (yellow) in arbitrary units (b, d). Dashed circles indicate expression maxima that correspond to initiating petals. Floral primordia are shown in side view facing a lateral sepal. (e) Beeswarm plot of average petal number in A. thaliana ptl-1 (n = 149 flowers, 10 plants) and ptl-1; AtPTL::AtPTL:YFP (n = 266 flowers, 19 independent insertion lines), and C. hirsuta Ox (n = 145 flowers, 10 plants) and AtPTL::AtPTL:YFP (n = 110 flowers, eight independent insertion lines). Red lines indicate means. (f, g) CLSM projections showing AtPTL::AtPTL:YFP expression (yellow) in the regions between sepals in stage 3–4 flowers of C. hirsuta (f) and A. thaliana (g). (h) C. hirsuta ag flower. (i) Barplot of mean petal number in whorls 2 and 3 of C. hirsuta ag flowers (n = 136 flowers, four plants). Note that mean stamen number is distributed between 4 – 5 in C. hirsuta, reflecting variation in lateral stamen number (Hay et al., 2014), and third whorl petals show similar variation in ag. (j) Relative expression of C. hirsuta AP1 in floral organs pooled from whorls 1, 2 (w1/w2) and whorls 3, 4 (w3/w4), in Ox compared to ag flowers, determined by quantitative RT-PCR and reported as means of three biological replicates (Student’s t-test: p<0.001). Error bars represent s.e.m. Scale bars: 20 μm (a–d, f–g), 0.5 mm (h).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a–b) Six stage-5 A. thaliana flowers expressing DR5::VENUS (green, (a) and C. hirsuta flowers expressing DR5v2::VENUS (green, (b) with cells outlined by propidium iodide (PI) staining (red). Top view and left and right side views are shown for each sample to allow DR5 expression peaks to be observed on the flanks of the floral meristem where petals will initiate. Peaks located between sepals but in the sepal whorl rather than on the floral meristem are not scored here. In the A. thaliana samples, 83% of petal initiation sites show a DR5 peak, which quantifies the reliability of DR5 as a marker of petal initiation. In the C. hirsuta samples, 36% of petal initiation sites on the floral meristem show a DR5 peak. Although DR5v2::VENUS is a more sensitive reporter than DR5::VENUS, allowing weak auxin responses to be visualized (Liao et al., 2015), the DR5 peaks in C. hirsuta are generally less intense and harder to detect than in A. thaliana. (c–d) Dynamics of DR5::VENUS expression in a growing A. thaliana flower (c) and DR5v2::VENUS expression in a growing C. hirsuta flower (d) from stage 4 to stage 6. The time points are separated by 24 hr of growth. Side views of the T2 time points show visible DR5 peaks on the floral meristem that are maintained through to stage 6. These DR5 peaks are weaker in C. hirsuta than in A. thaliana flowers.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) A. thaliana ptl-1 and (b) ptl-1; AtPTL::AtPTL:YFP, and (c) C. hirsuta AtPTL::AtPTL:YFP. Scale bar: 0.5 mm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Flowers, observed in transverse section through an inflorescence meristem, consistently showed four spots of PTL expression between sepals. Scale bar: 100 µm.
 
 The ptl mutant in A. thaliana mimics the variable petal number found in C. hirsuta and shows a similar distribution of auxin activity during petal initiation as wild-type C. hirsuta (Figure 2d) (Griffith et al., 1999; Lampugnani et al., 2013). Therefore, we tested whether differences in PTL function could explain why petal number is robust in A. thaliana but variable in C. hirsuta. A functional fusion protein of A. thaliana PTL (AtPTL::AtPTL:YFP) was sufficient to restore four petals in the ptl mutant, but did not alter petal number when expressed in C. hirsuta (Figure 2e; Figure 2—figure supplement 2). Given that AtPTL::AtPTL:YFP expressed correctly in the regions between sepals in C. hirsuta and A. thaliana flowers (Figure 2f,g), similar to the endogenous PTL transcripts in C. hirsuta and A. thaliana (Figure 2—figure supplement 3) (Brewer et al., 2004; Lampugnani et al., 2012; Lampugnani et al., 2013), these results indicate that differences in PTL function are unlikely to account for the variation in petal number between C. hirsuta and A. thaliana.
 
 Petals are defined by both their identity and position within a flower. To test whether the variable number of petals in C. hirsuta is dependent on their identity or on the location where they arise in the second whorl, we used the homeotic mutant agamous (ag), to alter floral organ identity. In C. hirsuta ag mutants, four petals replaced the four stamens normally found in the third whorl of wild-type flowers, while petal number remained variable and lower than four in the second whorl (Figure 2h,i). This means that floral organs with petal identity show no variation in number if they arise outside the second whorl. As predicted by the ABC model (Coen and Meyerowitz, 1991), we found AP1 ectopically expressed in third whorl petals of ag mutants in C. hirsuta (Figure 2j). Therefore, ectopic expression of AP1 is associated with an invariant number of petals, whereas endogenous AP1 expression in whorl two of the C. hirsuta floral meristem is associated with variable petal number.
 
-## A. thaliana AP1 confers robust petal number in C. hirsuta and masks natural variation
+### A. thaliana AP1 confers robust petal number in C. hirsuta and masks natural variation
 
 We reasoned that AP1 might be a good candidate to contribute to petal number variation in C. hirsuta, particularly given that ap1 mutants in both C. hirsuta and A. thaliana show variable petal loss (Bowman et al., 1993; Monniaux et al., 2017). To test this possibility, we used a genomic construct of A. thaliana AP1 (AtAP1::AtAP1:GFP (Urbanus et al., 2009)), which was sufficient to restore four petals in the ap1 mutant (Mann-Whitney U test, p=1.07e-06) and eliminate the ectopic flowers that characterize the partial loss of floral meristem identity of ap1 mutants (Mann-Whitney U test, p=2.92e-06; Figure 3a–c). We found that this transgene was sufficient to convert C. hirsuta petal number from variable to robust, elevating petal number towards the A. thaliana value of four petals (pairwise Mann-Whitney U test with Bonferroni correction, p=2.4e-08; Figure 3a,d,e). In contrast to this, the distribution of petal number remained variable in C. hirsuta lines expressing the endogenous AP1 locus (ChAP1::ChAP1:GFP; pairwise Mann-Whitney U test with Bonferroni correction, p=0.07: Figure 3a). This suggests that the function of the endogenous AP1 locus to confer four petals is attenuated in C. hirsuta. Therefore, divergence in AP1 function likely contributed to the variation in petal number between A. thaliana and C. hirsuta.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig3-v2.jpg)
 
-**Figure 3.:** A. thaliana AP1 confers robust petal number in C. hirsuta and masks natural variation.(a) Beeswarm plot of average petal number (black) and average number of ectopic flowers (grey) in A. thaliana ap1-12 (n = 375 flowers, 15 plants) and ap1-12; gAtAP1-GFP (AtAP1::AtAP1:GFP; n = 472 flowers, 19 plants, two independent insertion lines), and average petal number (black) in C. hirsuta wild-type (wt; n = 331 flowers, 14 plants), gAtAP1-GFP (n = 1286 flowers, 57 plants, five independent insertion lines) and gChAP1-GFP (ChAP1::ChAP1:GFP) (n = 628 flowers, 26 plants, two independent insertion lines). Red lines indicate means. Differences between C. hirsuta genotypes assessed by pairwise Mann-Whitney U test with Bonferroni correction: ***p=2.4e-08; *p=0.015; n.s. p=0.07. (b–e) Representative flowers of A. thaliana ap1-12 (b), ap1-12; gAtAP1-GFP (c), and C. hirsuta wild type (d), gAtAP1-GFP (e). Scale bars: 0.5 mm. (f) QTL for average petal number detected in the C. hirsuta Ox gAtAP1-GFP × Nz F2 mapping population are shown as arrows on the 8 chromosomes of the genetic map. Positions with the most significant effects are indicated by horizontal black lines and the length of the arrows is scaled to the 2(Log(p)) interval for each QTL. Arrow direction indicates whether the Ox allele for each QTL increases (upward pointing) or decreases (downward pointing) petal number. Positions of the AP1 endogenous locus (blue line) and the gAtAP1-GFP transgene (orange line) are indicated on the genetic map. Scale bar: 25 cM. (g) Distribution of average petal number in plants of the Ox × Nz F2 population that segregate homozygous for the gAtAP1-GFP transgene (left histogram) or without the transgene (right histogram).
+**Figure 3.:** (a) Beeswarm plot of average petal number (black) and average number of ectopic flowers (grey) in A. thaliana ap1-12 (n = 375 flowers, 15 plants) and ap1-12; gAtAP1-GFP (AtAP1::AtAP1:GFP; n = 472 flowers, 19 plants, two independent insertion lines), and average petal number (black) in C. hirsuta wild-type (wt; n = 331 flowers, 14 plants), gAtAP1-GFP (n = 1286 flowers, 57 plants, five independent insertion lines) and gChAP1-GFP (ChAP1::ChAP1:GFP) (n = 628 flowers, 26 plants, two independent insertion lines). Red lines indicate means. Differences between C. hirsuta genotypes assessed by pairwise Mann-Whitney U test with Bonferroni correction: ***p=2.4e-08; *p=0.015; n.s. p=0.07. (b–e) Representative flowers of A. thaliana ap1-12 (b), ap1-12; gAtAP1-GFP (c), and C. hirsuta wild type (d), gAtAP1-GFP (e). Scale bars: 0.5 mm. (f) QTL for average petal number detected in the C. hirsuta Ox gAtAP1-GFP × Nz F2 mapping population are shown as arrows on the 8 chromosomes of the genetic map. Positions with the most significant effects are indicated by horizontal black lines and the length of the arrows is scaled to the 2(Log(p)) interval for each QTL. Arrow direction indicates whether the Ox allele for each QTL increases (upward pointing) or decreases (downward pointing) petal number. Positions of the AP1 endogenous locus (blue line) and the gAtAP1-GFP transgene (orange line) are indicated on the genetic map. Scale bar: 25 cM. (g) Distribution of average petal number in plants of the Ox × Nz F2 population that segregate homozygous for the gAtAP1-GFP transgene (left histogram) or without the transgene (right histogram).
 
 This raises the question whether petal number variation both between and within species may be caused by similar genetic changes. If AP1 divergence contributed to petal number variation between species, do AP1 polymorphisms contribute to this phenotype within C. hirsuta? To address this question, we inspected the locations of petal number QTL previously identified in five mapping populations derived from bi-parental crosses of different C. hirsuta accessions (Pieper et al., 2016), and an additional population constructed in this study (Figure 3f). We found that none of the QTL mapped to the AP1 locus, which was represented by a specific genetic marker on chromosome 2 (Figure 3f, Table 1) (Pieper et al., 2016). Therefore, allelic variation at AP1 does not contribute to the quantitative variation in petal number mapped in C. hirsuta.
 
+**Table 1.**
+ A. thaliana AP1 masks the effects of C. hirsuta petal number QTL
+
+
+<table>
+  <thead>
+    <tr>
+      <th>QTL</th>
+      <th>Chromosome</th>
+      <th>Position</th>
+      <th colspan="4">QTL effects</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>(cM)</th>
+      <th colspan="2">Wild-type plants</th>
+      <th colspan="2">gAtAP1 homozygous plants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>additive</td>
+      <td>dominance</td>
+      <td>additive</td>
+      <td>dominance</td>
+    </tr>
+    <tr>
+      <td>Q1</td>
+      <td>1</td>
+      <td>147.8</td>
+      <td>−0.18</td>
+      <td>0.28</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q2 (gAtAP1)</td>
+      <td>2</td>
+      <td>11.9</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>Q3</td>
+      <td>4</td>
+      <td>1.6</td>
+      <td>-</td>
+      <td>0.32</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q4</td>
+      <td>4</td>
+      <td>53.9</td>
+      <td>−0.19</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q5</td>
+      <td>4</td>
+      <td>98.6</td>
+      <td>−0.33</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q6</td>
+      <td>5</td>
+      <td>25.7</td>
+      <td>0.28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q7</td>
+      <td>6</td>
+      <td>74.8</td>
+      <td>−0.28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q8</td>
+      <td>6</td>
+      <td>116.6</td>
+      <td>0.82</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q9</td>
+      <td>8</td>
+      <td>63.5</td>
+      <td>−0.27</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Q10</td>
+      <td>8</td>
+      <td>105.6</td>
+      <td>0.38</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.a. – not available because the effects of all other QTL were determined conditional on zygosity at this QTL. '– '– No significant effect._
+
 However, an alternative possibility is that AP1 divergence indirectly caused petal number to vary within C. hirsuta by altering the robustness of this phenotype to genetic variation. Given that petal number is a canalized trait in A. thaliana and robust to genetic variation (Figure 1a), we hypothesized that AP1 divergence may have decanalized petal number in C. hirsuta, giving phenotypic expression to formerly cryptic variation (Figure 1b) (Félix, 2007; Paaby and Rockman, 2014). A key prediction of this hypothesis is that A. thaliana AP1 should canalize petal number in C. hirsuta via epistatic interactions with petal number QTL. We tested this genetic prediction in an F2 population created by crossing C. hirsuta Ox containing the A. thaliana AP1 genomic locus (AtAP1::AtAP1:GFP), with the Nz accession (Figure 3f). We detected nine petal number QTL in addition to the A. thaliana AP1 transgene locus (Table 1, Figure 3f). Strikingly, the allelic effects of these 9 QTL were undetectable in the presence of the A. thaliana AP1 genomic locus (Table 1). This epistasis was readily observed in the distribution of petal number between plants homozygous for the A. thaliana AP1 transgene, which had four petals, and plants that lacked the transgene, which had variable petal number (Figure 3g). Thus, A. thaliana AP1 canalized C. hirsuta petal number by masking the phenotypic effects of at least 9 QTL.
 
-## Changes in AP1 expression contribute to species-specific petal number
+### Changes in AP1 expression contribute to species-specific petal number
 
 Our findings suggest that the AP1 genes from A. thaliana and C. hirsuta may have a differential ability to confer four petals. To test whether or not C. hirsuta AP1 could fully complement the function of A. thaliana AP1, we introduced a ChAP1::ChAP1:GFP transgene into an ap1 mutant background in A. thaliana. Rather than restoring four petals like ap1-12; AtAP1::AtAP1:GFP (Figure 3a), we found that the distribution of petal number remained variable in ap1-12; ChAP1::ChAP1:GFP flowers (homogeneity of variance accepted by Levene’s test, p=0.282; Figure 4a,b), mimicking the variable petal number found in C. hirsuta. Petal number varied between zero and four, and the average petal number was significantly lower in ap1 plants expressing the AP1 genomic clone from C. hirsuta rather than A. thaliana (Figures 3a and 4a,b, Mann-Whitney U test p=2.08e-07). In contrast, ChAP1::ChAP1:GFP expression was sufficient to reduce the ectopic flowers in ap1 mutants (Figure 4b), indicating that AP1 divergence between C. hirsuta and A. thaliana affected petal number independently of floral meristem identity. Therefore, the results of these gene swaps indicate that C. hirsuta AP1 has a reduced ability to promote four petals when compared to A. thaliana AP1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-v2.jpg)
+
+**Figure 4.:** (a) A. thaliana flowers of ap1-12; gChAP1-GFP (ChAP1::ChAP1:GFP) genotype. (b) Beeswarm plot of average petal number (black) and average number of ectopic flowers (grey) in A. thaliana wild-type (n = 369 flowers, 15 plants), ap1-12 (n = 375 flowers, 15 plants) and ap1-12; gChAP1-GFP (n = 598 flowers, 25 plants, two independent insertion lines). Red lines indicate means. Levene’s test showed that the variance in petal number differed between wild-type and ap1-12 (***p=5.588e-05) and wild-type and ap1-12; gChAP1-GFP (**p=0.005823), but not between ap1-12 and ap1-−12; gChAP1-GFP (p=0.282). (c) Beeswarm plot of average petal number in A. thaliana ap1-12 plants either untransformed or transformed with chimeric AP1 constructs comprising the promoter sequences from either AtAP1 (A. thaliana) or ChAP1 (C. hirsuta) and the cDNA sequences from either AtAP1 or ChAP1. A two-way ANOVA test on ranked data showed a significant effect of promoter sequence on petal number (p=9.45e-08) but no effect of coding sequence (p=0.103) and no interaction effect between the promoter and coding sequences (p=0.258). Post-hoc Tukey's HSD tests showed that AP1 constructs containing the A. thaliana promoter had significantly higher petal number than those containing the C. hirsuta promoter, and all transgenic genotypes had higher petal number than ap1-12 at 0.05 level of significance. ap1-12: n = 375 flowers, 15 plants; ap1-12; pAtAP1::AtAP1: n = 1454 flowers, 37 plants, 10 independent insertion lines; ap1-12; pAtAP1::ChAP1: n = 1414 flowers, 36 plants, nine independent insertion lines; ap1-12; pChAP1::AtAP1: n = 986 flowers, 25 plants, five independent insertion lines; ap1-12; pChAP1::ChAP1: n = 717 flowers, 18 plants, five independent insertion lines. (d) Beeswarm plot of relative AP1 expression levels in inflorescences of C. hirsuta transgenic lines of gChAP1-GFP (black) and gAtAP1-GFP (orange) with 2 or four transgene copies. AP1 expression is quantified by qRT-PCR in three biological replicates of each sample and expressed relative to AP1 expression in wild-type inflorescences (dashed line). Relative AP1 expression is higher for gAtAP1-GFP lines, both for two (Student’s t-test, p<0.01) and four (p<0.05) transgene copies. n = 26 plants from six independent insertion lines for gAtAP1-GFP; n = 24 plants from five independent insertion lines for gChAP1-GFP. (e–f) Surface projections showing nuclear expression (green) of gAtAP1-GFP (d) and gChAP1-GFP (e) in stage 4 C. hirsuta flowers viewed from the lateral sepal. The dashed circle indicates the petal initiation domain on the floral meristem. (g) Boxplot of the size of inter-sepal regions (Physical) and the extent of AP1 expression along these transects into whorl 2 (AP1 expr) in C. hirsuta stage four floral meristems of gAtAP1-GFP and gChAP1-GFP. Size of the AP1 expression domain differs significantly between genotypes (Wilcoxon test, p<0.001; n = 7 samples each genotype) but physical size does not (p=0.44). Box and whiskers: quartiles, circles: outliers, black lines: median. Scale bars: 0.5 mm (a), 20 µm (e, f).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Beeswarm plot shows the average number of ectopic flowers in ap1-12 plants either untransformed or transformed with chimeric AP1 constructs comprising the promoter sequences from either A. thaliana (AtAP1) or C. hirsuta (ChAP1) and the cDNA sequences from either A. thaliana (AtAP1) or C. hirsuta (ChAP1). A two-way ANOVA test on ranked data showed no significant effect of the promoter sequence (p=0.0665), the coding sequence (p=0.97), and no interaction effect between promoter and coding sequence (p=0.0956) on ectopic flowers number. ap1-12: n = 375 flowers, 15 plants; ap1-12; pAtAP1::AtAP1: n = 1454 flowers, 37 plants, 10 independent insertion lines; ap1-12; pAtAP1::ChAP1: n = 1414 flowers, 36 plants, nine independent insertion lines; ap1-12; pChAP1::AtAP1: n = 986 flowers, 25 plants, five independent insertion lines; ap1-12; pChAP1::ChAP1: n = 717 flowers, 18 plants, five independent insertion lines.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Samples were imaged every 24 hr from stage 3 to stage 5–6. The rate of growth and the size of the flower vary between samples and do not characterize a particular genotype. Scale bar: 20 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) After surface extraction and projection of the epidermal signal in MorphoGraphX (see Materials and methods), a snapshot of the flower meristem was taken from a top view. The flower lateral length (Fll) and flower median length (Fml) were defined as the longest planar distance from one side of the flower to the other, in lateral and median orientations respectively. (b) The AP1 expression boundary size was measured as the shortest distance from the outside of the meristem to the most internal nucleus expressing GFP in the petal initiation domain. (c) The boundary between the sepals and the floral meristem was a precise landmark represented here by red dots. The lines between the red dots define the meristem lateral length (Mll) and meristem median length (Mml). The extremities of these lines were connected by an ellipse, whose area defined the meristem size as measured in Figure 4f. (d) The physical boundary size (red lines) was measured as the shortest distance from the outside of the meristem to the ellipse. Ad. left: adaxial left boundary; Ab. left: abaxial left boundary; Ad.right: adaxial right boundary; Ab.right: abaxial right boundary. Scale bar: 20 µm.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Measurements were performed three times on two pictures of the same sample of AtAP1::AtAP1:GFP C. hirsuta stage-4 flower to estimate reproducibility. Error was calculated to be 0.47 µm (i.e. 1.7% of the average boundary size) when measuring the same picture three times, and 2.05 µm (i.e. 7.5% of the average boundary size) when measuring two different pictures from the same sample.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp6-v2.jpg)
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Arrows point to enrichment of ChAP1-RFP in the regions between sepals. Scale bars: 20 µm.
+
 Next, we considered the relative contributions of regulatory and coding sequences to this species-specific difference in AP1 function. To address this question, we expressed endogenous and chimeric versions of A. thaliana and C. hirsuta AP1, swapping the promoter and coding sequences, in an ap1 mutant background in A. thaliana. We found that petal number was significantly elevated by the A. thaliana AP1 promoter, compared to the C. hirsuta AP1 promoter, irrespective of the AP1 coding sequence driven by these promoters (Figure 4c). Whereas all constructs functioned equivalently to rescue the ectopic flowers found in ap1 mutants (Figure 4—figure supplement 1). Therefore, functional differences in AP1 that are responsible for petal number variation between A. thaliana and C. hirsuta, are more likely to reside in regulatory regions of the gene rather than coding sequences.
 
-## Species-specific AP1 expression
+### Species-specific AP1 expression
 
 Since upstream regulatory regions contributed to AP1 divergence, we investigated whether expression differed between C. hirsuta and A. thaliana AP1. We reasoned that the reduced function of C. hirsuta AP1 to promote four petals may reflect reduced levels of gene expression. To test this prediction, we compared AP1 expression between C. hirsuta lines with matched copy numbers of either AtAP1::AtAP1:GFP or ChAP1::ChAP1:GFP transgenes, and found that expression levels were significantly lower in floral tissues of ChAP1::ChAP1:GFP than AtAP1::AtAP1:GFP lines (Figure 4d). To visualize the spatiotemporal dynamics of expression, we localized AP1::AP1:GFP fusion proteins from each species in the four-dimensional context of the growing C. hirsuta flower (Figure 4—figure supplement 2). In stage four floral buds, we observed A. thaliana AP1::AP1:GFP nuclear signal in the sepal whorl and on the flanks of the floral meristem, in the small regions where petals initiate in whorl two (Figure 4e). In contrast to this, C. hirsuta AP1::AP1:GFP was essentially restricted to the sepal whorl throughout stages 4 and 5 (Figure 4f, Figure 4—figure supplement 2). Using top-view, two-dimensional snapshots of these curved surface images, we measured how far the AP1::AP1:GFP signal extended into whorl two in each transgenic line (Figure 4—figure supplements 3–5). We found that the expression of A. thaliana AP1::AP1:GFP extended significantly further than C. hirsuta AP1::AP1:GFP (approximately 5 µm, Figure 4g). Moreover, we found no significant change in size or geometry between flowers expressing either the A. thaliana or C. hirsuta AP1 genomic constructs (Figure 4g, Figure 4—figure supplement 6). This contrasts with the changes in growth and maturation of floral buds that are associated with the regulation of C. hirsuta petal number by seasonal changes in temperature (McKim et al., 2017). Therefore, the expression domain of ChAP1::ChAP1:GFP is reduced compared to AtAP1::AtAP1:GFP, comprising fewer cells in the petal whorl on the flanks of the floral meristem in C. hirsuta.
 
 By co-localizing the expression of both AtAP1::AtAP1:GFP and ChAP1::ChAP1:RFP in stage 4 flowers of C. hirsuta and A. thaliana, we also found that C. hirsuta AP1::AP1:RFP expression is enriched in the regions between sepals (Figure 4—figure supplement 7). Since peaks of auxin activity are displaced away from the petal whorl to the region between sepals in C. hirsuta flowers (Figure 2d), and since distortions of this region have been shown to influence petal initiation in A. thaliana (Baker et al., 2005; Lampugnani et al., 2012; Lampugnani et al., 2013; Laufs et al., 2004; Mallory et al., 2004), the enrichment of C. hirsuta AP1 in this domain might be relevant for petal number variation in C. hirsuta.
 
-## Maintaining variable petal number in C. hirsuta
+### Maintaining variable petal number in C. hirsuta
 
 Our findings suggest that petal number is a robust phenotype in A. thaliana that became decanalized in C. hirsuta, such that AP1 divergence allowed previously cryptic loci to quantitatively affect petal number. Allelic variation at these QTL maintains the distribution of petal numbers found among natural accessions of C. hirsuta (Pieper et al., 2016). A striking feature of this distribution is the absence of natural accessions with four petals (Figure 5a). Moreover, few accessions have an average petal number approaching four (Figure 5a). To explore the genetic basis of this phenotypic distribution, we constructed experimental populations from founder accessions with phenotypes close to the mean (arrowheads, Figure 5a). These recombinant inbred populations contained a high frequency of lines with high average petal numbers, including four petals (Figure 5b, and other examples in (Pieper et al., 2016)). This shows that there is sufficient standing genetic variation to produce phenotypes through recombination that are not observed in natural accessions.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig5-v2.jpg)
+
+**Figure 5.:** (a–b) Distributions of C. hirsuta petal number in 45 natural accessions (a) and a population of RILs derived from Ox and Wa accessions (b, reproduced from (Pieper et al., 2016)). Mean petal number of Ox and Wa are indicated in (a). (c) Average petal number (±s.e.m.) at every floral node in homozygous wild-type and fp2 plants (genotyped at SNP:2:2905982) in field conditions (n = 10 plants from each genotype). Flowers 1–10 were removed from every plant (indicated by dashed line) since petal number in these flowers did not differ significantly between genotypes (p>0.05, Mann-Whitney U test). Seeds produced from remaining flowers on the main inflorescence were harvested. (d) Progeny of 10 wild-type and 10 fp2 mothers were genotyped at SNP:2:2905982 to determine their paternity (n = 1703 wild-type and 1610 fp2 seedlings). Pollination events were considered as selfing when the genotype of the progeny corresponded to the maternal genotype; outcrossing when the genotype of the progeny was heterozygous; and contaminant when the genotype of the progeny corresponded to the other parental genotype. These were likely seed contaminants from the outside of collection bags. Rates of outcrossing were significantly different between genotypes, p<0.05, whereas rates of contaminations were not p>0.05 (Chi-square test with Yates’ continuity correction). Moreover, outcrossing and contaminations per parent plant were not correlated (r2 = 0.025), suggesting that they are independent events.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** 40 plants of each genotype were grown in standard growth conditions. Average petal number was measured for all flowers of 20 plants, and average seed weight and number of seeds per plant were measured on the 20 remaining plants. Fitness traits were not significantly different between genotypes (Student’s t-test, p>0.05), whereas petal number was (Mann-Whitney U test, p<0.001).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Experimental design: two plots were designed, each containing 25 plants of each genotype in a random layout. Each plant was genotyped for SNP:2:2905982 (position 2,905,982 on chromosome 2), which is linked to the high petal number phenotype of fp2. Wild-type plants were homozygous for the G allele while fp2 plants were homozygous for the A allele at this SNP. The plants were separated by 17 cm in every direction to prevent adjacent plants from touching. Ten plants of each genotype were phenotyped for petal number along the main inflorescence. (b) Monte-Carlo permutation test shows that the difference in heterozygote offspring (ΔHrandom) between wild-type and fp2 mothers is greater than expected from random assignment of the data to two groups. The observed ΔHrandom (14 heterozygote offspring, red dashed line) differs significantly from the distribution of ΔHrandom from 10000 permutations of the data (p=3e-04). (c) Number of heterozygote offspring per mother plant of wild-type and fp2 genotypes. The increased rate of heterozygosity in fp2 offspring is not due to a single parent but rather reflects a general property of this genotype.
 
 To explore this finding, we reasoned that producing four-petalled flowers could incur an energetic cost. However, in standard growth conditions, we could not detect any difference in seed output between C. hirsuta wild-type and AtAP1::AtAP1:GFP plants that differed in petal number (Figure 5—figure supplement 1). Alternatively, variable petal number could be the cause or consequence of variation in other trait(s) that contribute to maintaining petal number within its variable range. Given that petals are responsible for the opening of most flowers (van Doorn and Van Meeteren, 2003), thus allowing cross-pollination, we tested whether petal number was associated with outcrossing rate in C. hirsuta. Using field conditions to grow two genotypes that differed significantly in petal number (2.65 ± 0.08 vs 3.45 ± 0.05, Mann-Whitney U test p<0.001; Figure 5c, Figure 5—figure supplement 2), we paternity-tested the progeny of these plants and found a significantly higher outcrossing rate in the genotype with higher petal number (Chi-square test p<0.05, Monte-Carlo permutation test p<0.001, Figure 5d, Figure 5—figure supplement 2). Therefore, outcrossing frequency is associated with petal number in C. hirsuta.
 
@@ -93,7 +284,7 @@ We showed that differences in AP1 expression are associated with the functional 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/39399/elife-39399-fig6-v2.jpg)
 
-**Figure 6.:** AP1 in phenotypic buffering and canalization.(a) Non-linear relationship between AP1 expression and petal number (black line). The range of AtAP1 expression (orange) is within a zone of high phenotypic robustness, while the range of ChAP1 expression (brown) is outside of this robust zone, such that petal number is sensitive to perturbations. (b) Left: decanalization of petal number in C. hirsuta from an invariant phenotype of four petals, typified by A. thaliana. AP1 divergence (orange arrow) allowed phenotypic expression of QTL (blue arrows) in the C. hirsuta genome to quantitatively affect petal number. Right: cartoons of Waddington’s landscape depicting petal number as a canalized phenotype in A. thaliana (ball rolls down path of least resistance shaped by canals in the landscape); this landscape is underpinned by a genetic network including AP1 (orange rope) and QTL (blue ropes). Decanalization of petal number in C. hirsuta involved regulatory changes in AP1 (cut orange rope) that relaxed its epistasis over QTL that cause petal number to vary (deformations in the landscape). Based on (Waddington, 1957; Paaby and Rockman, 2014).
+**Figure 6.:** (a) Non-linear relationship between AP1 expression and petal number (black line). The range of AtAP1 expression (orange) is within a zone of high phenotypic robustness, while the range of ChAP1 expression (brown) is outside of this robust zone, such that petal number is sensitive to perturbations. (b) Left: decanalization of petal number in C. hirsuta from an invariant phenotype of four petals, typified by A. thaliana. AP1 divergence (orange arrow) allowed phenotypic expression of QTL (blue arrows) in the C. hirsuta genome to quantitatively affect petal number. Right: cartoons of Waddington’s landscape depicting petal number as a canalized phenotype in A. thaliana (ball rolls down path of least resistance shaped by canals in the landscape); this landscape is underpinned by a genetic network including AP1 (orange rope) and QTL (blue ropes). Decanalization of petal number in C. hirsuta involved regulatory changes in AP1 (cut orange rope) that relaxed its epistasis over QTL that cause petal number to vary (deformations in the landscape). Based on (Waddington, 1957; Paaby and Rockman, 2014).
 
 Waddington’s model of canalization invokes a similar concept of phenotypic buffering against natural variation. In his classical metaphor of marbles rolling down canals, he depicted the surface of the landscape being pulled down by guy ropes and fastened to anchors that represented genes (Waddington, 1957). Like this, the genetic underpinnings of the landscape may vary, but produce a consistent phenotype (e.g. A. thaliana petal number, Figure 6b) (Paaby and Rockman, 2014). Petal number is invariant among natural accessions of A. thaliana, reflecting its robustness to genetic variation. However, we could change A. thaliana petal number to variable by complementing ap1 mutants with the AP1 genomic locus from C. hirsuta. These flowers mimicked the variable petal number found in C. hirsuta, suggesting that there may be variability in the gene regulatory network controlling petal number in A. thaliana that is hidden beneath the uniformity of wild-type development.
 
@@ -101,23 +292,243 @@ In C. hirsuta, petal number is decanalized, such that natural genetic variation 
 
 ## Materials and methods
 
-## Accession numbers and plant material
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Cardamine hirsuta)</td>
+      <td>AP1</td>
+      <td>Gan et al. (2016)</td>
+      <td>CARHR062020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. hirsuta)</td>
+      <td>PTL</td>
+      <td>Gan et al. (2016)</td>
+      <td>CARHR209620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. hirsuta)</td>
+      <td>AG</td>
+      <td>Gan et al. (2016)</td>
+      <td>CARHR225900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. hirsuta)</td>
+      <td>Clathrin/AP2M</td>
+      <td>Gan et al. (2016)</td>
+      <td>CARHR174880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (C. hirsuta)</td>
+      <td>Ox</td>
+      <td>Hay and Tsiantis (2006)</td>
+      <td>herbarium specimen voucher Hay 1 (OXF)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>Col-0</td>
+      <td></td>
+      <td>CS60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>pDR5rev::3XVENUS-N7</td>
+      <td>Heisler et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>pDR5rev::3XVENUS-N7</td>
+      <td>Barkoulas et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>DR5-v2::3xVenus</td>
+      <td>Liao et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>ap1-12</td>
+      <td>N6232</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>ptl-1</td>
+      <td>N276</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>ag-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>EMS mutant</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>fp2</td>
+      <td>Pieper et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>AtPTL::AtPTL:YFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb genomic sequence of PTL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>AtPTL::AtPTL:YFP; ptl-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb genomic sequence of PTL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>AtPTL::AtPTL:YFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb genomic sequence of PTL</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A.thaliana)</td>
+      <td>AtAP1::AtAP1:GFP</td>
+      <td>Urbanus et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>AtAP1::AtAP1:GFP</td>
+      <td>Urbanus et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>ChAP1::ChAP1:GFP</td>
+      <td>Monniaux et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>ChAP1::ChAP1:GFP; ap1-12</td>
+      <td>Monniaux et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>AtAP1::AtAP1:GFP; ap1-12</td>
+      <td>Urbanus et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>ChAP1::ChAP1:RFP; AtAP1::AtAP1:GFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>6.6 kb genomic sequence of AP1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>ChAP1::ChAP1:RFP; AtAP1::AtAP1:GFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>6.6 kb genomic sequence of AP1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pAtAP1::AtAP1; ap1-12</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb promoter sequence of AP1 driving AP1 cDNA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pAtAP1::ChAP1; ap1-12</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb promoter sequence of AP1 driving AP1 cDNA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pChAP1::ChAP1; ap1-12</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb promoter sequence of AP1 driving AP1 cDNA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pChAP1::AtAP1; ap1-12</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2.9 kb promoter sequence of AP1 driving AP1 cDNA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. hirsuta)</td>
+      <td>Ox gAtAP1-GFP × Nz F2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>312 individuals used for QTL analysis</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MorphoGraphX</td>
+      <td>Barbier de Reuille et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Accession numbers and plant material
 
 The wild-type genotype in C. hirsuta is the reference Oxford (Ox) accession, herbarium specimen voucher Hay 1 (OXF) (Hay and Tsiantis, 2006), and in A. thaliana, the reference Col-0 accession. DR5::VENUS transgenic lines in A. thaliana (Heisler et al., 2005) and C. hirsuta (Barkoulas et al., 2008) have been described previously. NASC accession numbers for A. thaliana mutants: ap1-12 (N6232), ptl-1 (N276). Additional A. thaliana and C. hirsuta accessions have been described previously (1001 Genomes Consortium. Electronic address: magnus.nordborg@gmi.oeaw.ac.at and 1001 Genomes Consortium, 2016; Hay et al., 2014). C. hirsuta genome assembly gene identifiers: ChAP1 (CARHR062020), ChPTL (CARHR209620), ChAG (CARHR225900), Clathrin/AP2M (CARHR174880) (Gan et al., 2016).
 
-## Plant growth conditions and petal number scoring
+### Plant growth conditions and petal number scoring
 
 All plants were grown in long day conditions unless otherwise stated. Greenhouse: 16 hr light (22°C), 8 hr dark (20°C); controlled environment room long days: 16 hr light (21°C), 8 hr dark (20°C) and short days: 10 hr light (21°C), 14 hr dark (21°C); growth cabinet short days: 8 hr light (22°C), 16 hr dark (20°C). Petal number was generally scored on 10–15 plants from each genotype, except when scoring the T1 generation of transgenic lines. Flowers were scored every second day by removing them from the plant with tweezers, and observing them with a head band magnifier or stereo microscope. For the C. hirsuta ag mutant, flowers from four plants were removed every second day and scored with a binocular loop. Whorl one was removed to allow scoring of whorl two organs, which were then removed to score whorl three organs.
 
-## EMS mutagenesis and ag mutant isolation
+### EMS mutagenesis and ag mutant isolation
 
 C. hirsuta Ox seeds were mutagenized by agitation with ethyl methanesulfonate (EMS, Sigma), sown on soil, harvested as pools of five M1 plants, and M2 plants were screened for floral phenotypes as described previously (Pieper et al., 2016). The four petals 2 (fp2) (Pieper et al., 2016) and agamous (ag-1) mutants were isolated and backcrossed twice to Ox. The ag-1 sequence bears a C to T single nucleotide change predicted to convert a Gln residue to a stop codon and produce a truncated 33 AA protein. Expressing an AtAG:GFP translational fusion (gift from G. Angenent (Urbanus et al., 2009)) complemented the C. hirsuta ag-1 mutant phenotype.
 
-## Quantitative RT-PCR (qPCR) and transgene copy number determination
+### Quantitative RT-PCR (qPCR) and transgene copy number determination
 
 Five and ten flowers from one plant of C. hirsuta wild-type and ag-1, respectively, were pooled to generate one biological replicate for RNA extraction. Three biological replicates were generated per genotype. For quantification of AP1 expression levels in C. hirsuta AtAP1::AtAP1:GFP and ChAP1::ChAP1:GFP lines, a secondary inflorescence from 29 and 24 plants from five independent lines, respectively, was used for RNA extraction, together with three wild-type biological replicates. For these plants, transgene copy number was determined from genomic DNA by a Taqman qPCR assay using the Hygromycin resistance gene (IDna Genetics, Norwich, UK). RNA was extracted using Spectrum Plant Total RNA kit (Sigma) and DNA was digested by on-column DNase I digestion (Sigma). Reverse Transcription was performed with SuperScript III Reverse Transcriptase (ThermoFisher Scientific) using 1 µg of RNA template. Quantitative PCR was performed with the Power SYBR Green Master Mix (ThermoFisher Scientific) with the following primers: AP1-qPCR-F (5’- CCAGAGGCATTATCTTGGGGAAGACTTG) and AP1-qPCR-R (5’- GCTCATTGATGGACTCGTACATAAGTTGGT) to amplify either ChAP1 or AtAP1, and Clathrin-qPCR-F (5’- TCGATTGCTTGGTTTGGAAGATAAGA) and Clathrin-qPCR-R (5’- TTCTCTCCCATTGTTGAGATCAACTC) to amplify the reference gene Clathrin/AP2M. Expression was calculated with the ΔΔCt method (Pfaffl, 2001), normalized against the reference gene, and expressed relative to wild-type levels.
 
-## Transgenic plant construction
+### Transgenic plant construction
 
 For the AtPTL::AtPTL:YFP construct, a 2.8 kb PTL promoter up to the second exon, driving functional PTL expression (Lampugnani et al., 2012), was amplified with primers pPTL-F (5’-ATATATTGAGAAGAGATTAAAAACTTAG) and pPTL-R (5’-GTATCCATGTTCCTCGGACA) from Col-0 genomic DNA and cloned into the multiSite Gateway donor vector pDONR-P4-P1R. The full 2.9 kb genomic sequence of PTL was amplified with primers gPTL-F (5’-ATGGATCAAGATCAGCATC) and gPTL-R (5’-CTGATTCTCTTCTTTACTGAGC) from Col-0 genomic DNA and cloned into the multiSite Gateway donor vector pDONR-221. The YFP coding sequence was cloned into the multiSite Gateway donor vector pDONR-P2R-P3. The AtPTL::AtPTL:YFP construct was created by recombining together the three previous vectors into the pGII-0229 destination vector, as described in the MultiSite Gateway manual (Thermo Fisher Scientific). Eight and nineteen independent lines of AtPTL::AtPTL:YFP were generated in C. hirsuta wild type and A. thaliana ptl-1 respectively. Petal number was scored on all independent lines in the T1 generation, together with C. hirsuta wild type and A. thaliana ptl-1.
 
@@ -131,26 +542,26 @@ The DR5-v2::3xVENUS plasmid was a gift from Dolf Weijers (Liao et al., 2015). El
 
 All binary vectors were transformed into C. hirsuta or A. thaliana by Agrobacterium tumefaciens (strains GV3101 or C58)-mediated floral dip.
 
-## Scanning electron microscopy (SEM)
+### Scanning electron microscopy (SEM)
 
 Shoot apices were induced to flower by a shift from short to long day conditions and fixed in FAA, post-fixed in osmium tetraoxide, dehydrated, critical point dried and dissected before coating with gold/palladium for viewing in a JSM-5510 microscope (JEOL). Floral primordia were staged according to (Smyth et al., 1990).
 
-## Confocal laser scanning microscopy (CLSM) and quantitative image analysis
+### Confocal laser scanning microscopy (CLSM) and quantitative image analysis
 
 Time-lapse imaging was performed using 4–5 week old plants grown on soil in long day conditions. The inflorescence was cut and flowers were dissected off to uncover young floral primordia at the shoot apex. Dissected shoots (around 0.5 cm long sections) were transferred to ½ MS medium supplemented with 1.5% plant agar, 1% sucrose and 0.1% Plant Preservative Mixture (Plant Cell Technology). To outline cells, samples were stained with 0.1% propidium iodide (PI, Sigma) for 2 – 5 min before each observation. Floral primordia were immersed in water and imaged from the top at 24 hr intervals. Confocal imaging was performed using a Leica SP8 up-right confocal microscope equipped with a long working-distance water immersion objective (L 40x/0.8 W) (Leica) and HyD hybrid detectors (Leica). Excitation was achieved using an argon laser with 514 nm for VENUS and PI. Images were collected at 526 – 545 nm for VENUS, and 600 – 660 nm for PI. Between imaging, samples were transferred to a growth cabinet and cultured in vitro in standard long day conditions at 20°C. Confocal image stacks of time-lapse series were analyzed using MorphoGraphX software (Barbier de Reuille et al., 2015; Kierzkowski et al., 2012). The outer 10 Full datasets of A. thaliana and C. hirsuta time-lapse series used to track growth and DR5::VENUS and DR5v2::VENUS expression shown in Figure 2—figure supplement 1. To measure physical boundary size and size of AP1-GFP expression, the epidermal (2 to 5 µm) GFP signal was projected on the surface of the sample with MorphoGraphX. Top-view snapshots of the flower meristem with GFP-projected signal were acquired and subsequently analyzed with FiJi (Schindelin et al., 2012) as described in Figure 4—figure supplement 3.
 
-## Histology and in situ hybridization
+### Histology and in situ hybridization
 
 Shoot apices were induced to flower by a shift from short to long day conditions. Digoxigenin-labeled antisense RNA probes to C. hirsuta ChPTL were generated by mixing together three synthetic probes covering the whole ChPTL cDNA (GenScript HK Limited, USA). 8 – 10 µm inflorescence cross-sections were fixed, embedded in paraffin and hybridized with the ChPTL probe as previously described (Vlad et al., 2014). The signal was observed and images were acquired with a Zeiss AxioImager.M2 light microscope equipped with an Axiocam HR color camera. To cover the entire hybridization pattern in depth, images of two consecutive sections were registered and minimal projections generated using the image processing package Fiji (Schindelin et al., 2012). Cropping, gamma and colour correction were done using Photoshop CS5 and performed on entire images only. For semi-thin sections, apices were fixed in 2.5% glutaraldehyde in phosphate buffer, dehydrated, step-wise infiltrated with and embedded in TAAB Low Viscosity resin (TAAB) and 1.5 μm sections were stained with 0.05% toluidine blue.
 
-## Quantitative trait locus (QTL) analysis
+### Quantitative trait locus (QTL) analysis
 
 QTL analysis of petal number was performed on a C. hirsuta F2 population derived from a cross between an AtAP1::AtAP1:GFP transgenic line in the Ox accession and the Nz accession. Petal number was quantified in 312 individuals that were pre-screened by PCR amplification of the GFP sequence such that approximately 1/4 of the plants were wild-type. The first 25 flowers on each plant were removed on the day they opened and petal number was counted using a dissecting microscope. The 312 F2 plants were genotyped with 155 Sequenom markers (Welcome Trust Center for Human Genetics, High Throughput Genomics, Oxford, UK) designed to cover the whole genome according to an early version of the C. hirsuta genome assembly (Gan et al., 2016), and a dCAPS marker was generated for the C. hirsuta AP1 locus using primers AP1cisF1 (5’-TCCCTAAAACCGCTCTTAGC) and AP1cisR1 (5’-AGAGAGATAAAGAAGAGTTCAGGC) and the restriction enzyme AluI. The genetic map was made using JoinMap 4 (Van Ooijen, 2006), including the genotype for AtAP1::AtAP1:GFP as a dominant marker to determine the location of the transgene, and had a total length of 910 centiMorgans in eight linkage groups. QTL analyses were performed with Genstat 13th Edition (VSN International, Hemel Hempstead, UK) using all 312 F2 plants. Genetic predictors were calculated with a maximum distance of 2 cM between them from the molecular marker data and the genetic map. Average petal number per F2 plant was used as a phenotype for QTL analysis. Simple interval mapping and composite interval mapping were performed. The latter procedure was repeated several times while adding and/or removing cofactors until no further improvement could be made. The resulting set of 10 cofactors was used in a final QTL model to estimate QTL effects. A model with nine cofactors, when excluding the AtAP1::AtAP1:GFP locus, was fitted to data from F2 plants that were either homozygous for the AtAP1::AtAP1:GFP transgene or wild-type.
 
-## Field experiment and paternity testing of C. hirsuta wild type and four petals 2 (fp2)
+### Field experiment and paternity testing of C. hirsuta wild type and four petals 2 (fp2)
 
 Seeds from Ox and fp2 (Pieper et al., 2016) were stratified for 1 week at 4°C and sown on 15.03.2016 on hydrated Jiffy plugs. Seedlings were first grown in a greenhouse without temperature or light control, and later transferred to the field on 13.04.2016. More details on experimental design can be found in Figure 5 and Figure 5—figure supplement 2. Genomic DNA was extracted from parent and progeny plants with Edwards Buffer and isopropanol precipitation and amplified with primers m458 (5’-GCCTAATCTTGCACAACACGAAATCT) and m459 (5’-GATTCTAAAGTTCTGTCAAAAGGAGAAACCTGA), designed with dCAPS Finder (http://helix.wustl.edu/dcaps/dcaps.html), to genotype SNP:2:2905982 by dCAPS. PCR was performed with Mango Taq polymerase (Bioline) under the following conditions: initial denaturation of 5 min at 95°C, 40 cycles of 30 s at 95°C, 30 s at 56°C and 30 s at 72°C, final extension of 10 min at 72°C. 1/5th volume of the reaction was digested with 2.5 units of DdeI (New England Biolabs) for 2 hr at 37°C and migrated on a 3% agarose gel to resolve the uncut 141 bp amplicon for fp2, and the two cut fragments of 116 bp and 25 bp for Ox.
 
-## Fitness measurements
+### Fitness measurements
 
 40 plants of C. hirsuta wild type and a homozygous T4 line of AtAP1::AtAP1:GFP were grown in a greenhouse with standard conditions (20°C, long days). 20 of these plants were scored for petal number, and the other 20 were bagged carefully to recover all seeds. A fraction of the seeds was counted and weighed with the seed analyser MARVIN (GTA Sensorik GmbH) and total seed number was estimated by proportionality with the total seed weight.

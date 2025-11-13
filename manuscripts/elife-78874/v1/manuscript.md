@@ -14,16 +14,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01k9xac83 Department of Physiology and Biophysics, Rush University Chicago United States
-2. https://ror.org/01k9xac83 Department of Internal Medicine, Division of Nephrology, Rush University Chicago United States
-3. https://ror.org/03dbr7087 Department of Anesthesia & Pain Management, University of Toronto Toronto Canada
-4. https://ror.org/04374qe70 Cell Biology Program, The Hospital for Sick Children Toronto Canada
+1. Department of Physiology and Biophysics, Rush University Chicago United States ([ROR:01k9xac83](https://ror.org/01k9xac83))
+2. Department of Internal Medicine, Division of Nephrology, Rush University Chicago United States ([ROR:01k9xac83](https://ror.org/01k9xac83))
+3. Department of Anesthesia & Pain Management, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+4. Cell Biology Program, The Hospital for Sick Children Toronto Canada ([ROR:04374qe70](https://ror.org/04374qe70))
 
 † Corresponding author
 
 ## Abstract
 
-Calcium ion movements between cellular stores and the cytosol govern muscle contraction, the most energy-consuming function in mammals, which confers skeletal myofibers a pivotal role in glycemia regulation. Chronic myoplasmic calcium elevation (“calcium stress”), found in malignant hyperthermia-susceptible (MHS) patients and multiple myopathies, has been suggested to underlie the progression from hyperglycemia to insulin resistance. What drives such progression remains elusive. We find that muscle cells derived from MHS patients have increased content of an activated fragment of GSK3β — a specialized kinase that inhibits glycogen synthase, impairing glucose utilization and delineating a path to hyperglycemia. We also find decreased content of junctophilin1, an essential structural protein that colocalizes in the couplon with the voltage-sensing Ca V 1.1, the calcium channel RyR1 and calpain1, accompanied by an increase in a 44 kDa junctophilin1 fragment (JPh44) that moves into nuclei. We trace these changes to activated proteolysis by calpain1, secondary to increased myoplasmic calcium. We demonstrate that a JPh44-like construct induces transcriptional changes predictive of increased glucose utilization in myoblasts, including less transcription and translation of GSK3β and decreased transcription of proteins that reduce utilization of glucose. These effects reveal a stress-adaptive response, mediated by the novel regulator of transcription JPh44.
+Calcium ion movements between cellular stores and the cytosol govern muscle contraction, the most energy-consuming function in mammals, which confers skeletal myofibers a pivotal role in glycemia regulation. Chronic myoplasmic calcium elevation (“calcium stress”), found in malignant hyperthermia-susceptible (MHS) patients and multiple myopathies, has been suggested to underlie the progression from hyperglycemia to insulin resistance. What drives such progression remains elusive. We find that muscle cells derived from MHS patients have increased content of an activated fragment of GSK3β — a specialized kinase that inhibits glycogen synthase, impairing glucose utilization and delineating a path to hyperglycemia. We also find decreased content of junctophilin1, an essential structural protein that colocalizes in the couplon with the voltage-sensing CaV1.1, the calcium channel RyR1 and calpain1, accompanied by an increase in a 44 kDa junctophilin1 fragment (JPh44) that moves into nuclei. We trace these changes to activated proteolysis by calpain1, secondary to increased myoplasmic calcium. We demonstrate that a JPh44-like construct induces transcriptional changes predictive of increased glucose utilization in myoblasts, including less transcription and translation of GSK3β and decreased transcription of proteins that reduce utilization of glucose. These effects reveal a stress-adaptive response, mediated by the novel regulator of transcription JPh44.
 
 ## Introduction
 
@@ -45,33 +45,271 @@ Given these precedents and the presence in the sequence of JPh44 of segments cap
 
 ## Results
 
-## JPh1 is cleaved in MH-susceptible patients
+### JPh1 is cleaved in MH-susceptible patients
 
 A large increase in [Ca2+]cyto has been found in muscle fibers from MHS individuals (Lopez et al., 1992), myotubes derived from MHS patient biopsies (Figueroa et al., 2019) and in MHS animal models (Lopez et al., 1986). MHS animals also showed increased calpain activity (Michelucci et al., 2017). Given that junctophilins are targets of Ca2+-activated calpain proteases (Guo et al., 2018; Lahiri et al., 2020), we hypothesized that excess [Ca2+]cyto, by promotion of calpain activity, enhances JPh1 cleavage in MHS individuals. As a test, JPh1 was quantified by Western blotting (WB) on the same 25-lane gel, in total protein extracts from biopsied muscle of 13 MHN (normal) and 12 MHS subjects. The immunoblot, stained using a polyclonal antibody raised against a human JPh1 immunogen (residues 387–512), referred to here as ‘A’, is shown in Figure 1A. A visible reduction in the MHS of a~72 kDa stained band revealed an almost twofold, statistically significant difference in content (Figure 1C). Because the 72–75 kDa migration weight is consistent with the full JPh1 sequence, we refer to this band as ‘JPh1’. That the band is in some columns a doublet, and that it migrates slightly faster than the corresponding band in mouse muscle gels (Figure 1—figure supplement 1) indicates that proteolytic degradation may take place in the human biopsies and this band may not correspond to the full sequence of JPh1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot (WB) of whole protein fraction from individual subjects’ biopsies, stained with antibody A. Subjects were diagnosed as MHN or MHS as indicated. Numbers identify individuals. (Sample #144, an MHN, is misplaced). (B) WB of a 2nd gel, using antibody B, which specifically stains JPh44 (see Figure 1—figure supplement 2). (C, D) Plots of signal in the 13 MHN and 12 MHS bands of panels A and B, respectively. p of no difference is <0.001 and 0.06, respectively for JPh1 and JPh44. (E) JPh1 vs JPh44 WB signals for all patients. The correlation is poor (R=–0.16). (F) WB of whole protein fraction from the same biopsies, stained for GSK3β. (G, H) Box plots of the signal in the ~47 and~40 kDa bands for MHN and MHS subjects. The difference is highly significant for the light band signal (p=0.015) but not for the 47 kDa band (P=0.14). (I) 40 kDa vs. 47 kDa signals for all patients. The correlation is highly significant (R=–0.69, p<0.001). Data trace. Raw data and statistical calculations in GSK3β graphs and statistics.JNB, sections 1 and 2 (all data in Harvard Dataverse described in Materials and methods). See also Figure 1—figure supplements 1–3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The antibody tags two proteins at ~72 and~44 kDa in the human sample, and at ~80 and 44 kDa in the mouse.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Ponceau-stained gel. Human biopsied muscle was lysed in RIPA buffer. Protein extract was exposed for 5 min at room T to 0.3 U calpain/30 μg of total protein. The reaction was stopped with loading buffer. 20, 40, and 80 μg of boiled extract, at 2 μg/μl, was loaded into PAGE wells as shown. (B, C), Blots, from left and right halves of gel A, stained with junctophilin antibodies A and B. (D, E) Filled circle, signal in main band at ~70 kDa (‘JPh1’); open circle, band at ~43 kDa ‘JPh44’; triangle, at ~30 kDa. Red circle in D ratio of JPh1 to JPh44 signals, indicating rough proportionality of both ab A signals with well load. By contrast, ab B (panel E) does not react with JPh1. Due to its lack of proportionality with load, the signal at 30 kDa is difficult to assign. Arrows in A mark location of actin, recognizable by its abundance. Red arrows in B and C are transferred from panel A, to show that the blot signals at~43kDa mark a different protein. Data trace: images 103022a; subject ID #175 (MHS). Graphs in patient175byA_B_load.JNB.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The variables are positively correlated; R=0.45 for panel A and 0.38 for panel B. The probabilities p of no correlation are 0.02 and 0.06, respectively.
 
 A blot from a different gel, stained with anti-JPh1 antibody ‘B’ (raised against a more distal mouse JPh1 immunogen, 509–622) showed a greater content of a band with an effective migration size of ~44 kDa, referred to as JPh44 (Figure 1B and D, p=0.06). Blots in Figure 1—figure supplement 2 demonstrate that ab A reacts with both JPh1 and JPh44, while ab B fails to react with the 72 kDa protein, therefore constituting a useful tool for detection of JPh44 by immunofluorescence. The 72 kDa protein is overwhelmingly more abundant than its fragments, including JPh44 in nearly every condition (as shown in Figure 1, Figure 1—figure supplement 2 and multiple documents later). Accordingly, the fluorescence of ab A can be used as a monitor of JPh1, with minimal error. Herein and unless noted differently, the labels ‘JPh1’ and ‘JPh44’ tag images of fluorescence of ab A and B, respectively.
 
 While these results suggest that a greater cleavage of JPh1 leads to a reduction in its content, with consequent increase in the 44 kDa fragment, there is a poor negative correlation in individual subjects between the two changes (Figure 1E). A tentative explanation is that the cleavage process, which may operate at multiple sites and sequentially on cleaved products, results in faster degradation of the full protein, blurring any detailed correspondence between its disappearance and the increase in content of some fragments.
 
-## Fragmentation of glycogen synthase kinase 3 (GSK3β) is increased in MHS patients
+### Fragmentation of glycogen synthase kinase 3 (GSK3β) is increased in MHS patients
 
 Phosphorylase kinase (PhK) reciprocally activates glycogen phosphorylase and inhibits glycogen synthase (GS). In previous work we demonstrated that this enzyme is activated in the muscle of MHS patients (Tammineni et al., 2020). Its effects are consistent with an observed shift of the glycogen ←→glucose balance towards glycogenolysis (Tammineni et al., 2020), which is presumed responsible for the hyperglycemia and diabetes that develops in many of these patients (Tammineni et al., 2020; Altamirano et al., 2019). Here, we compared the contents of GSK3β, a serine/threonine protein kinase that directly inhibits GS by phosphorylation. The kinase activity of GSK3β is controlled by its phosphorylation at Ser 9 and also promoted by truncation of the original ~47 kDa molecule to a form of ~40 kDa (Jin et al., 2015; Goñi-Oliver et al., 2007; Ma et al., 2012).
 
 WB of protein extracts (Figure 1F) from muscle biopsies of the same patients of Figure 1A, reveal both forms of GSK3β. The signal in the 47 kDa band of full-size GSK3β was reduced in MHS, while that of the activated 40 kDa fragment was increased. The changes in the two proteins were highly negatively correlated (Figure 1I); consequently, the ratio of signals (40 kDa/47 kDa) was more than 3-fold greater in the MHS group, with high statistical significance. Regardless of diagnosis (MHS or MHN), there was a significant positive correlation between content of the activated GSK3β form and serum glucose (Figure 1—figure supplement 3). These results are consistent with activation of the GS kinase by calpain proteolysis, which contributes to the shift in glycogen ←→glucose balance in favor of glycogenolysis, adding to the previously reported effect of inhibitory phosphorylation of GS (Tammineni et al., 2020).
 
-## Localization of the 44 kDa fragment of JPh1in skeletal muscle
+### Localization of the 44 kDa fragment of JPh1in skeletal muscle
 
 In cardiac muscle, the full-length JPh2 protein is located at terminal cisternae of the SR, while cleaved JPh2 fragments can be found inside nuclei (Guo et al., 2018; Lahiri et al., 2020). Here we defined the location of JPh1 and JPh44 by immunostaining combined with 3D high-resolution imaging (a procedure used for every fluorescence image shown in this study, consisting in acquisition of vertical ‘z-stacks’ of confocal x-y images, followed by a correction algorithm described in Materials and methods). Moderately stretched thin myofiber bundles were fixed in PFA and stained with antibodies A or B. As shown in Figure 2 (panels A), the ab A signal was largely located at T-SR junctions, where it was highly colocalized with RyR1. In contrast, ab B (JPh44-specific) detected discrete particles at variable locations within the sarcomeric I band, as well as nuclei (panel 2Bb), and accordingly failed to colocalize with RyR1 (panels 2 Cc, Cd).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Images respectively stained with antibodies A and B, in cells co-stained for RyR1 (Overlay panels add nuclear staining). JPh1 (ab A) and Ryr1 (panels Ab, c) are highly colocalized at T-SR junctions. JPh44 (ab B) moves away into the I band (panels Bb, d). Colocalization between JPh1 and RyR1 is high, as demonstrated by the Van Steensel’s and Li’s analyses (panels Ca, b), leading to 4 measures (R, VS shift, FWHM and ICQ) listed in Table 1. As indicated in Ca, VS shift is 21 nm and FWHM is 0.44 µm. Colocalization of JPh44 and RyR2 is lost, as indicated by a VS shift of 154 nm, a FWHM of 1.8 µm defined on a Gaussian that fits poorly an oscillating VS plot and a Li plot characteristic of no colocalization and exclusion (compare panels Cb and Cd). (D, E) Primary myotubes derived from patients’ muscle, stained respectively with abs A and B, and co-stained for RyR1. Note in panels D, overlap of JPh1 (ab Al) with cytosolic RyR1. In (E) JPh44 (ab B) is largely intra-nuclear, with no colocalization with RyR1. Visual impression is supported by colocalization analyses (panels F, replication results in Table 1). Data trace. Average colocalization measures are listed in Table 2. Experiment identifiers: panel A, 102919La Series 010 (ID 167, HH); panel B, 102519 L Series 018; panels D, G, 072420Lb Series 002; panel E, 030120Lb Series 001. Data in Summary ratios.xlsx.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Row A shows strong colocalization of ab A and RyR1 signals, and weak or no staining at nuclei. B and C show detail in two regions of the same bundle: in B from a region with conserved structure and triad alignment, and no intra-nuclear ab A staining at this gain. In C, an area of disrupted structure, near visible damage, shows misaligned protein markers and ab A intra-nuclear staining. Based on the ab A signal, the intra-nuclear protein could be JPh1 or its 44 kDa fragment. The strong ab B signal inside nuclei (Figure 2) and its specificityfor JPh44 (Figure 1—figure supplements 1 and 2) identify the intranuclear signal in panel Ca as the JPh44 fragment. Data trace: Patient ID 167 (HH; same as in Figure 2), images in 102422La, series 003 (A), 005 (B) and 002 (C). All images from z stacks corrected for optical dispersion.
+
 Colocalization between the junctophilin forms and RyR1 was quantified by four measures, with average results listed in Table 1. First: R, Pearson’s correlation coefficient of immunofluorescence intensities, calculated pixel by pixel after subtraction of a small background signal. This index had high value for the ab A fluorescence, (indicating a much greater quantity of full-size JPh1 than JPh44) and low for ab B (JPh44), with high statistical significance of the difference. Second: the Intensity Correlation Quotient (ICQ), emergent from an approach by Li et al., 2004 illustrated in panel 2Cb, whereby the intensity of fluorescence of ab A (JPh1) is plotted, pixel by pixel, against the covariance of ab A and RyR1 intensities (Materials and methods). The comma-shaped cloud with negative curvature, shown in 2Cb, is a characteristic of high colocalization, contrasting with the funnel-shaped cloud found for ab B vs RyR1 (panel 2 Cd), which includes pixels with negative covariance, reflecting mutual exclusion rather than colocalization. The ICQ, which varies between –0.5 (reflecting exclusion) and 0.5 (perfect colocalization), was close to 0.5 for ab A, while that of ab B was smaller but still positive, a difference with high statistical significance (Table 1; here and elsewhere significance was established through biological replications).
+
+**Table 1.**
+ Colocalization of JPh1 (as reported by the ab A signal) and its fragment (ab B) with RyR1 in muscle or muscle-derived myotubes.Col. 1: Pearson’s pixel-by-pixel correlation coefficient. 2: Van Steensel’s shift in the x direction (parallel to fiber axis, arbitrary direction for myotubes). 3: Van Steensel’s FWHM of Gaussian fit. 4: Li’s Intensity Correlation Quotient. Definitions in Materials and methods. p, probability of no difference between values for JPh44 and JPh1. There was no statistically significant difference between colocalization measures of the same protein in myotubes vs myofibers (p’s not shown). Data trace: raw data and statistics. In JPh/manuscript /ColocalizJP44andRyR.JNB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4"></th>
+      <th>1</th>
+      <th></th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"></td>
+      <td>N subjects</td>
+      <td>N, fibers or myotubes</td>
+      <td>R</td>
+      <td>ICQ</td>
+      <td>VS shift, nm</td>
+      <td>FWHM,µm</td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh44 in myofibers</td>
+      <td>average</td>
+      <td rowspan="3">3</td>
+      <td rowspan="3">10</td>
+      <td>0.31</td>
+      <td>0.22</td>
+      <td>66</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.26</td>
+      <td>0.23</td>
+      <td>54</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.04</td>
+      <td>0.02</td>
+      <td>15</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh1 in myofibers</td>
+      <td>average</td>
+      <td rowspan="3">3</td>
+      <td rowspan="3">8</td>
+      <td>0.88</td>
+      <td>0.4</td>
+      <td>16</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.9</td>
+      <td>0.42</td>
+      <td>12</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.03</td>
+      <td>0.02</td>
+      <td>3</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td colspan="4">p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td colspan="8"></td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh44 in myotubes</td>
+      <td>average</td>
+      <td rowspan="3">2</td>
+      <td rowspan="3">9</td>
+      <td>0.37</td>
+      <td>0.22</td>
+      <td>168</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.36</td>
+      <td>0.22</td>
+      <td>164</td>
+      <td>1.69</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.05</td>
+      <td>0.03</td>
+      <td>36</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh1 in myotubes</td>
+      <td>average</td>
+      <td rowspan="3">3</td>
+      <td rowspan="3">29</td>
+      <td>0.73</td>
+      <td>0.32</td>
+      <td>38</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.77</td>
+      <td>0.32</td>
+      <td>38</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>4</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="4">p</td>
+      <td>&lt;0.001</td>
+      <td>0.003</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Fate of doubly tagged protein GFP (N) – JPh1 – FLAG (C).Distribution of GFP (N terminal) and FLAG (C-terminal) in different preparations, quantified by the ratio of densities in extranuclear (‘cytosol’) and nuclear areas. N, numbers of culture experiments, patients or mice. n, numbers of images. nn, numbers of nuclei included in calculations. p, probability of no difference between GFP and FLAG distributions in two-tailed t tests. To correct for data clustering (or pseudoreplication), average and dispersion parameters in mouse myofibers were derived by hierarchical analysis. Data trace: Raw data listed in depository under the following identifiers: C2C12: 091620 a. Series 2, 5, 7. Patient-derived myotubes: 091020 a. Series 1–4. Mice: 092420 a, 100520 a, 100520b. All series. Murine in summary flag-gfp.JNB. Patient in ColocalizJP44and RyR.JNB in JPh/Manuscript Data2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Cytosolic/ nuclear density</th>
+      <th colspan="3">GFP</th>
+      <th colspan="3">FLAG</th>
+    </tr>
+    <tr>
+      <th>C2C12</th>
+      <th>Patient-derived myotubes</th>
+      <th>Murine myofibers</th>
+      <th>C2C12myotubes</th>
+      <th>Patient-derived myotubes</th>
+      <th>Murine myofibers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>avg</td>
+      <td>2.32</td>
+      <td>3.13</td>
+      <td>139</td>
+      <td>0.84</td>
+      <td>1.44</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>2.47</td>
+      <td>2.62</td>
+      <td>45.5</td>
+      <td>0.87</td>
+      <td>1.4</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.47</td>
+      <td>0.59</td>
+      <td>38.5</td>
+      <td>0.12</td>
+      <td>0.26</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>N, n, nn</td>
+      <td>1, 3, 6</td>
+      <td>1, 4, 38</td>
+      <td>3, 16, 20</td>
+      <td>1, 3, 6</td>
+      <td>1, 4, 38</td>
+      <td>3, 16, 20</td>
+    </tr>
+    <tr>
+      <td colspan="4">P</td>
+      <td>0.039</td>
+      <td>0.028</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 A third approach, introduced by van Steensel et al., 1996 and illustrated in Figure 2 panels Ca, c, plots the correlation coefficient of the two signals, averaged over all pixels, vs. a variable shift of one of the images in one direction (in the example, the shift is in the x direction, parallel to the fiber axis). The curve generated is then fitted by a Gaussian. The x-axis location of the apex of the Gaussian (or that of the actual correlation, when the fit is poor), named ‘VS shift’, provides a rough measure of the average separation of the two fluorescent species in the x direction. In the example, the distance was 21 nm for JPh1 (antibody A, panel 2Ca) and 154 nm for JPh44 (2 Cc), a significant difference (Table 1). Fourth: the FWHM of the fitted Gaussian is a second measure of dispersion or de-localization, also greater for the JPh fragment. Further use of these techniques will show that the calculation of four different measures provides a multidimensional view of colocalization — or its absence — revealing differences between proteins and treatments not reflected in the usual correlation analysis.
 
 Images of patient-derived primary myotubes, stained with antibodies A and B and co-stained for RyR1, are illustrated in Figure 2D and E. Here too, the differences were clear. Ab A staining in cytosol was highly colocalized with RyR1 (2D, 2 F, quantification in Table 1), in clusters that presumably correspond to developing junctions. In agreement with the observation in myofibers, ab B did not colocalize with RyR1 and was found mostly within nuclei, in fine granular form (panel 2Eb). Unlike myofibers, myotubes had some intra-nuclear staining with ab A, which adopted a fine granular pattern similar to that of ab B. Observations presented later assign this ab A signal to JPh44.
 
-## The 44-kDa fragment internalized in nuclei includes the C terminus of JPh1
+### The 44-kDa fragment internalized in nuclei includes the C terminus of JPh1
 
 In earlier studies of JPh2, both N-terminal (Guo et al., 2018) and C-terminal fragments (Lahiri et al., 2020) were shown to translocate to nuclei, in conditions of heart stress. To identify the JPh1 segment cleaved as JPh44 and follow its movements, a fusion of JPh1 with GFP (at the N terminus) and the FLAG tag (at the C terminus) was expressed in myotubes derived from patients’ muscle or a C2C12 line, and in mouse adult myofibers. Panels A and B in Figure 3, of myotubes expressing GFP-JPh1-FLAG, show GFP fluorescence (green) largely in the cytosol, in the form of small clusters or puncta. Instead, the C-terminal FLAG (red) appeared in both nuclear and extra-nuclear regions — corresponding to the cytosol and other organelles. The intensity of the intranuclear FLAG signal was highly variable in individual nuclei (Figure 3—figure supplement 1). Within the cytosol, the FLAG tag was distributed in two forms: punctate, colocalized with (N-terminal) GFP fluorescence, as well as a finely particulate disperse form, away from GFP, obviously corresponding to a fragment cleaved at a position distal to the N terminus.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig3-v1.jpg)
+
+**Figure 3.:** (A-C) Confocal images of cells expressing the (N)GFP-JPh1-FLAG(C) construct. In myotubes (A, B), GFP is exclusively in the cytosol, while FLAG, marking the full-size protein and its C-terminal fragment(s), red, distributes widely, including inside nuclei. The different distribution is also evident in adult myofibers (panels C), with the additional observation of accumulation of the N-terminal fragment in perinuclear regions (Cd). Panels Aa, Ba and Ca -- 3D views of the image stacks -- show the intranuclear location of FLAG. Full stacks are viewable as Supp. videos to Figure 3. The distribution differences are highly significant (details in Table 3). (D-F) Effect of extracellular Ca2+ on JPh1 content of permeabilized muscle from four subjects. JPh1 (ab A) and the 44 kDa fragment (ab B) changed reciprocally in muscles exposed to 500 vs 100 nM [Ca2+]. (G) JPh44 (stained by ab B) in whole muscle nuclear fraction extracted from 12 MHN and 12 MHS individuals. H, the average content is more than twofold greater in MHS (p<0.001). (I) JPh44 content in nuclei (from WB in panel G) vs. [Ca2+]cyto in primary myotubes from the same muscle samples, showing a statistically significant positive correlation (R=0.48, p=0.04). (J) Ratio JPh content in nuclei / JPh in cytosol, in images of myotubes stained with ab A, vs. [Ca2+]cyto. The correlation is positive and statistically significant (R=0.88, p=0.004). Data trace: A: experimental record 091620 a Series 5 Lng; B: 091020 a Series 4 Lng, from patient MHN #179; C: 100520 a Series 2. F, H–J in JPh vs Ca and GSK3b vs FSB.JNB. F in Section 1, I in Section 2, J in Section 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Illustrates location of JPh and its fragments inside nuclei, null for N terminus and variable but scarce for C terminus. Data trace: 100520La_004.
 
 The asymmetry was quantified by the ratio of signal densities, extranuclear (loosely called ‘cytosolic’)/nuclear, which in C2C12 myotubes was approximately threefold greater for GFP, a highly significant difference (Table 2). When the plasmid was expressed in myotubes derived from human muscle, a difference greater than twofold, again in favor of GFP, was found (panels 3B and Table 2). A clear nuclear internalization of FLAG, with exclusion of GFP, was also found in adult mouse muscle expressing the plasmid (Figure 3C). In this case, the ratio (cytosolic/nuclear) of signal densities was nearly 1000-fold greater for the N-terminal GFP than for the C-terminal FLAG (Table 2).
 
@@ -79,21 +317,41 @@ An additional observation (illustrated with panels 3Ca, d, e, and repeated in re
 
 In the transfected mouse myofibers we also found the N-terminal GFP strictly colocalized with endogenous RyR1 at triads, reproducing the high colocalization of endogenous JPh1 and RyR1 found in human myofibers (illustrated with Figure 2 and Figure 2—figure supplement 1). These observations allow three conclusions: (1) in both developing and adult tissue, the full-size protein is attached to junctions between plasma or T membrane and SR. (2) The C terminus is part of the cleaved fragment that migrates into the I band and enters nuclei. (3) The N terminus of JPh1 stays with the plasma or T membrane, whether as part of the full protein or after cleavage.
 
-## Elevated cytosolic calcium concentration mediates the increase in JPh1 cleavage
+### Elevated cytosolic calcium concentration mediates the increase in JPh1 cleavage
 
 Resting [Ca2+]cyto in myofibers of MHN and MHS human subjects was reported as 112 nM and 485 nM, respectively (Lopez et al., 1992). (Murphy et al., 2013) reported some cleavage of JPh1 at [Ca2+]cyto of 500 nm. Hypothesizing that the increased cleavage of JPh1 in MHS subjects is associated with increased [Ca2+]cyto, we quantified the effect of this level of cytosolic [Ca2+] on the fragmentation of JPh1. Biopsied myofiber bundles from three subjects, pinned in chambers and exposed to saponin for permeabilization, were superfused with either 100 or 500 nM [Ca2+]. After 10 min of exposure, the bundles were processed separately to extract protein (hereon ‘whole-protein extracts’). Quantitative WB of the extract found increased JPh1 cleavage upon exposure to higher [Ca2+] (Figure 3D–F).
 
 Together with an excess JPh44 in whole-protein extracts from MHS patients’ muscle, we found a significantly higher JPh44 content in nuclear fractions from these biopsies (Figure 3G and H). The altered phenotype of MHS patients, including elevated [Ca2+]cyto, is reproduced to a large extent in myotubes derived from their muscle biopsies (Figueroa et al., 2019; Figueroa et al., 2021). Two remarkable observations affirm the relevance of the elevated cytosolic calcium in defining the altered phenotype. First, there was a positive correlation between the nuclear JPh44 content in the muscle of patients and [Ca2+]cyto in their derived myotubes (Figure 3I). There was also a significant positive correlation between nuclear content of JPh in the myotubes (as quantified by the nuclear/cytosolic ratio of JPh densities) and their [Ca2+]cyto (Figure 3J). Taken together, the observations indicate that cleavage of JPh1 and nuclear internalization of the 44 kDa fragment are higher in MHS muscle, driven by the higher [Ca2+]cyto found in these patients.
 
-## Calpain1 cleaves JPh1 to produce a 44 kDa C-terminal fragment
+### Calpain1 cleaves JPh1 to produce a 44 kDa C-terminal fragment
 
 Murphy et al., 2013 showed that activation of calpain 1, a heterodimer that incudes a main (~80 kDa) subunit, is associated with autocatalytic proteolysis and results in cleavage of junctophilins 1 and 2. Later studies confirmed that JPh2 in mammalian heart is cleaved by calpains (Guo et al., 2018; Lahiri et al., 2020), most effectively by calpain1 (Yoshimura et al., 1983), activated upon autolysis to a~76 kDa isoform (Goll et al., 2003; Suzuki et al., 1981; Moldoveanu et al., 2002). Because this activation is reported to occur in the 50–300 nM range of [Ca2+]cyto, we tested whether calpain1 autolysis occurs and is responsible for the increased cleavage of JPh1 in MHS.
 
 The prediction tool GPS-CCD 1.0 (Liu et al., 2011) applied to JPh1 — the human sequence of which (Yang et al., 2022) is diagrammed in Figure 4A — revealed several conserved calpain1 cleavage sites in multiple JPh1 orthologs (Figure 4B). The one with highest score is at R240-S241, within the cytosolic domain, in-between MORN motifs 6 and 7 (Figure 4A–C). In all these orthologs, cleavage at the R-S site will generate a C-terminal fragment of between 45.92 and 46.28 kDa, consistent with the ~44 kDa migration size of JPh44 and its C-terminal location in the sequence of JPh1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig4-v1.jpg)
+
+**Figure 4.:** (A) JPh1 sequence indicating conserved stretches and the two calpain cleavage sites with highest priority score, located between MORN motifs VI and VII. (B) The 5 top-priority cleavage sites predicted by GPS-CCD 1.0 (Li et al., 2004). (C) JPh1 secondary structure, showing location of the highest priority cleavage site (R240-S241), helix-turn-helix DNA interaction site and TMD in SR junctional membrane. (D) Conservation of the preferred cleavage sites R240-S241 and S233-S234 in mammalian orthologs, which produce in every case a C-terminal fragment of ~44 kDa. (E) WB of whole-tissue protein fraction in biopsied muscle of 13 MHN and 12 MHS patients, showing a dual band at ~80 kDa (details in Figure 4—figure supplement 1). (F) Box plot of full-size and 76 kDa truncated forms, compared in the MHN and MHS groups. (G) Distribution of ratios of 76/80 kDa forms. Median ratio in MHS (1.97) is 74% greater than that in MHN (1.13) with p=0.029 of no difference. Automatic quantification of the WB is in Figure 4—figure supplement 2. (H, I, J) Correlation of ratios of 76/80 kDa junctophilin 1 with contents of full-length JPh1 and GSK3β, and ratio of activated to full-length forms of GSK3β, derived by WB of the same muscle fractions used for the blot in panel E. The correlation coefficients R and p of no correlation are: for H –0.65 and <0.001; for I –064 and <0.001; for J 0.61 and 0.001. Data trace: Panels E-G and H-J respectively in sections 6 and 5 of Calpain files with correlations ER IDL. JNB.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The method introduced by Tammineni et al., 2020 was modified for objective analysis of closely placed double bands. (A) Western blot, stained for calpain1 (reproduced from Figure 4E, at ×4 magnification in the vertical direction, converted to ‘positive’, that is, with pixel values corresponding to reporter intensity signal), shows closely placed bands at approx. 80 and 76 kDa. (B) The originating gel, at the original magnification. On WB (panel A), working on one column at a time, the user selects a background region ‘b’ and starts the definition of two active region of interest (ROIs) ‘a’ by marking points 1 and 2 (inset), which define the width of the ROIs. The program then locates automatically a border between the two close bands (yellow segment), at the minimum of the bands signal, averaged in the horizontal direction. For columns where the minimum used to define the border in A is ill-defined, the user defines the lower ROI by clicking two diagonal corners, lower left and upper right; the border between the two bands is then defined by the upper corner. Two symmetrical ROIs (red rectangles) are thus defined, where the signals of the two bands are integrated. For normalization to total quantity of protein, the signals are then normalized by the total signal in the corresponding column of the Ponceau-stained gel, calculated as the difference between the signal integrated over active area ‘a’ (in B), after subtraction of background ‘b’. All ROIs ‘a’ in B have the same area. Program code, written in the IDL environment (Geospatiale, Paris, France), is attached as text file ‘Blot_n_rot_double.txt’.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Same as in Figure 4E, extending range to show multiple low-weight fragments. The region of fragments is shown in the bottom panel, developed at higher exposure.
+
 To test whether the greater cleavage of JPh1 in MHS is due to activation of calpain1, we analyzed by Western blotting the calpain1 content of muscle from the subjects with JPh content represented in Figure 1. The immunoblot revealed a double band, with a component at ~80 kDa and another at ~76 kDa, the sizes of the protease and its activated fragment (Figure 4E). We adapted a custom method to quantify immunoblots (Tammineni et al., 2020) to automatically compute the signal in closely placed double bands. Details of the procedure are in Figure 4—figure supplement 1. Comparisons of the signal in the two bands between MHS and MHN patients are represented in Figure 4F. The signal differences between MHS and MHN were not statistically significant for either calpain band. However, the paired ratios of band signals (76 kDa / 80 kDa, Figure 4G) were on average 74% higher in the MHS (p=0.029). This ratio, which can be taken as a measure of calpain activation, was negatively correlated with both the (72 kDa) JPh1 and GSK3β contents, and positively correlated with content of the 40 kDa GSK3β fragment, quantified in the same muscle samples (Figure 4H–J). The relative increase in the 76 kDa fragment was also accompanied by a higher content of smaller polypeptides detected by the calpain1 antibody (Figure 4—figure supplement 2).
 
 To test the ability of calpain1 to cleave human JPh1, total protein extracts from patients’ muscle were incubated with 0.5 units of calpain1 at different time intervals (Figure 5A and B). Incubation resulted in cleavage, as reflected in reduction in content of full-length JPh1 and increase of the JPh1 44 kDa fragment (still referred to as ‘JPh44’, even though it was here obtained by a different procedure). The changes were essentially completed in 5 min.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) time dependent changes in content of JPh1 and JPh44 in total protein extracts from patients’ muscle, incubated with 0.5 units of calpain1 for different intervals (ab A). (B) Quantities normalized to initial value. Colors represent different experiments, on tissue from different individuals (2 replicates). (C, D) Effect of different doses of calpain1 incubated 10 min with the same extract (n=5 replicates in extracts from 5 subjects). Bars depict SEM. (E, F) Effect of calpain at 0.5 units for 10 min, with or without MDL28170 (n=5). In C and E, ab B was used in the JPh44 blot. (G, H) Confocal images of JPh1 and JPh44 (abs A and B), in muscle co-stained for calpain 1. Gd and Hd are 3D representations of the full z-stack, showing movement of JPh44 away from T-SR junctions (the location of calpain) and into the I band. (I, J) Van Steensel’s plots show large differences in colocalization parameters VS shift and FWHM, quantifying movement of JPh44 away from calpain. (K) Correlation between calpain and JPh1 or JPh44 signals. As shown by statistical analysis of replicates in Table 5, the differences in colocalization parameters are highly significant. Data trace. A, B, and E, F in Calpain files with correlations ER IDL.JNB (sections 1 and 4). G, H, experiment 081020 a Series 5 and 081020b Series2, patient ID #183, MHS. IF images from a MHN subject, to show similar colocalization of JPh1 and calpain, are in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Muscle bundle co-stained with JPh1 ab A and calpain 1 antibody. Images from z-stacks after correction for optical dispersion. The location at triads and partial colocalization of both markers does not differ visibly from that in Figure 6, in muscle from an MHS patient. Data trace: 113021La_Series004. Subject ID #220.
 
 The effects of calpain 1 on the two forms were large and reciprocal, and increased with protease concentration (5 C, D).
 
@@ -101,9 +359,222 @@ Finally, calpain-dependent JPh1 fragmentation was effectively inhibited in the p
 
 While calpain1 is freely diffusible in the presence of normal cytosolic concentrations of Ca2+, it binds to cellular structures immediately upon elevation of [Ca2+]cyto, which implies that its proteolytic activity can only be exerted on substrates that are close-by at the time of activation (Murphy et al., 2006b; Murphy, 2009). Therefore, to target JPh1 effectively, calpain1 must be present near T-SR junctions. To define this location precisely, human myofibers and human-derived primary myotubes were stained for calpain1, junctophilin (using antibodies A or B), and RyR1 as junction marker, and 3D-imaged at high resolution. Images of endogenous calpain1 in myofibers show that it colocalized with JPh1 (Figure 5G, Figure 5—figure supplement 1) — confirming the presence of the protease near junctions — while JPh44 was found in the I band, not colocalized with calpain1 (5 H). The quantitative measures described for colocalization of JPh and RyR1 were also indicative of colocalization of calpain1 with JPh1, but not with JPh44 (Figure 5I–K and Table 3).
 
-## Effects of exogenous calpain on living cells
+**Table 3.**
+ Colocalization measures of junctophilin vs calpain in patients’ myofibers.p: probabilities in two-tailed t test or * non-parametric difference of medians. Data trace: images of experiments 051220, 113020, 081020 a (JPh1) & 081120b & 120121 (JPh44). Data trace: Section 3 in colocalizationJPhandRyR.JNB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th rowspan="2">R</th>
+      <th colspan="2">VS shift, nm</th>
+      <th rowspan="2">FWHM,µm</th>
+      <th rowspan="2">ICQ</th>
+      <th rowspan="2">N, subjects n, stacks</th>
+    </tr>
+    <tr>
+      <th>longitudinal</th>
+      <th>transversal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">JPh1 vs calpain</td>
+      <td>mean</td>
+      <td>0.718</td>
+      <td>31.67</td>
+      <td>44.67</td>
+      <td>0.63</td>
+      <td>0.297</td>
+      <td rowspan="3">39</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.701</td>
+      <td>28.00</td>
+      <td>39.00</td>
+      <td>0.62</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.036</td>
+      <td>6.41</td>
+      <td>6.18</td>
+      <td>0.02</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh44 vs calpain</td>
+      <td>mean</td>
+      <td>0.387</td>
+      <td>66.14</td>
+      <td>103.86</td>
+      <td>1.89</td>
+      <td>0.191</td>
+      <td rowspan="3">27</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.42</td>
+      <td>60.00</td>
+      <td>89.00</td>
+      <td>1.30</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.045</td>
+      <td>18.19</td>
+      <td>23.24</td>
+      <td>0.77</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td colspan="8"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p</td>
+      <td>*&lt;0.001</td>
+      <td>*0.151</td>
+      <td>*0.08</td>
+      <td>0.02</td>
+      <td>0.007</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Effects of exogenous calpain on living cells
 
 The effects were studied by heterologous expression of tagged calpain1 in patient-derived myotubes. The main effect of the overexpressed calpain1 was an increase in intranuclear localization of JPh (Table 4), illustrated in Figure 6 with images of a human-derived culture transfected with FLAG-calpain1 and additional comparisons with control cultures in Figure 6—figure supplement 1. Panels 6A-D are 3D renderings of the z-stacks of confocal images. A and B show FLAG-calpain1 and junctophilin stained with ab A. Panel C renders RyR1 in the same cells. The images allow direct comparison, within the same field, of a myotube (Cell 1) that expressed strongly the FLAG-tagged calpain1, and one (Cell 2) that had no trace of the protein. Calpain1 (panel A) was widely distributed in the cytosol; nuclei can be recognized in A and C by the absence of calpain1 and RyR1. While the ab A signal (panel B) was widely distributed in Cell 2, in Cell 1 it resided mostly inside nuclei, presumably because it tagged largely JPh44, cleaved by the excess calpain. The intranuclear junctophilin in Cell 1 adopted a diffuse, fine-grained form, while the cytosolic junctophilin in Cell 2 often formed puncta or clusters. The increase in nuclear junctophilin in cells expressing calpain was large and highly significant (Table 5).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig6-v1.jpg)
+
+**Figure 6.:** (A-D) 3D rendering of a z-stack of images from a culture of primary myotubes transfected with FLAG-calpain 1 (panel A), co-stained for junctophilin with antibody A, which tags both JPh1 and JPh44 (panel B) and RyR1 (panel C). While one of the myotubes (Cell 1) expresses calpain 1 abundantly, the other (Cell 2) does not. In Cell 1, junctophilin adopts a fine-grained appearance and occupies nuclei (e.g. ellipse in B), recognizable by the absence of RyR1 (C, D). In Cell 2 junctophilin is distributed in the cytoplasm, partly colocalized with RyR1. (E-G) An individual x-y image (slice) in the z-stack, with sub-sections magnified and superimposed to illustrate colocalization. (H) Calpain colocalizes poorly with ab A in Cell 1, as junctophilin is largely in cleaved, JPh44 form. (I) Calpain colocalizes highly with RyR1, forming clusters. (J) In Cell 2, which does not express calpain, ab A colocalizes highly with RyR1, indicating full-size JPh1. (K-N) Van Steensel’s and Li’s plots, showing poor colocalization of the junctophilin antibody and RyR1 in Cell 1 (K, L), contrasting with that in Cell 2 (M, N). Statistics of colocalization measures, comparing cultures with and without calpain, are in Table 6. Further evidence of the effect of calpain is provided with Figure 6—figure supplement 1. Data trace: Experiment 073020La Series 5. Myotubes derived from patient #180, tested as MHN. Data in ColocalizJp44andRyR.JNB sections 5 and 11.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Primary myotubes derived from subject # 180 (MHN) were stained with nuclear and RyR1 markers, and JPh1 ab A. JPh1 distributed both in cytosol and nuclei (Ab, e, Bb, e). JPh puncta in cytosol likely corresponds to JPh1, as they colocalized with RyR1. (C, D) Myotubes of the same individual, transfected with FLAG-calpain 1. Note loss of the JPh punctated pattern in cytosol and intense JPh ab A signals, of diffuse pattern, inside nuclei. FLAG-calpain is colocalized with RyR in puncta or clusters that likely correspond to developing junctions (Dd, e). As observed in Figure 6, expression of calpain seems to improve expression and clustering of RyR1. Data trace: (A) 073020Lb series 011; (B) 073020Lb series 012; (C) 073020La series 002; (D) 073020La series 003. All images taken from z-stacks corrected for optical dispersion.
+
+**Table 4.**
+ Effect of FLAG-calpain expression on location of JPh1 antibody A (which detects full-size and 44 kDa fragment) in patient-derived myotubes.Location evaluated as ratio of nuclear/cytosolic density of antibody signal. Data trace: Section 5 in colocalizationJPhandRyR.JNB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>With FLAG-calpain</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Average</td>
+      <td>3.7411</td>
+      <td>1.1816</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>3.4118</td>
+      <td>1.1839</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>0.3292</td>
+      <td>0.0923</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Subjects, z-stacks</td>
+      <td>3, 19</td>
+      <td>4, 18</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Effect of heterologous calpain on colocalization of JPh (detected with antibody A) and RyR1 in human-derived myotubes.p calculated by Mann-Whitney Rank Sum Test. Data trace: Experiments 073020 a (calpain) & b (reference). 010422 a (calpain). 010422 a (reference). Data in colocalizationJPhRyR.JNB, Section #11.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N, subjects</th>
+      <th>n, cells</th>
+      <th></th>
+      <th>R</th>
+      <th>VS shift, nm</th>
+      <th>FWHM, µm</th>
+      <th>ICQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">ExpressingFLAG-Cp1</td>
+      <td rowspan="3">2</td>
+      <td rowspan="3">13</td>
+      <td>avg</td>
+      <td>0.44</td>
+      <td>278</td>
+      <td>3.49</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.42</td>
+      <td>130</td>
+      <td>2.24</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.05</td>
+      <td>127</td>
+      <td>0.96</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Reference</td>
+      <td rowspan="3">2</td>
+      <td rowspan="3">16</td>
+      <td>avg</td>
+      <td>0.72</td>
+      <td>44</td>
+      <td>0.58</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.73</td>
+      <td>48</td>
+      <td>0.52</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.03</td>
+      <td>5</td>
+      <td>0.04</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td>p*</td>
+      <td>&lt;0.001</td>
+      <td>0.008</td>
+      <td>&lt;0.001</td>
+      <td>0.023</td>
+    </tr>
+  </tbody>
+</table>
 
 RyR1 is clustered in both cells (Figure 6C and G). The overlay (D) shows that the ab A signal colocalizes with RyR1 (red) in Cell 2, corresponding to the more abundant JPh1 full-size form, but not in calpain-expressing Cell 1, where the signal is largely inside nuclei, presumably marking the JPh44 fragment. As illustrated with Figure 6—figure supplement 1, colocalization of JPh and RyR1 was stronger in control cells (not transfected with FLAG-calpain1), with highly significant differences in all 4 measures (Table 5).
 
@@ -111,11 +582,87 @@ Panels 6E-G show fluorescence in one slice of the z-stack, with pairwise overlay
 
 In Cell 1, where calpain1 was expressed, the protease was also clustered (panel E), highly colocalized with RyR1, that is, located at T-SR junctions (panel 6 I, colocalization quantified in Table 6). As argued by Murphy, 2009, the location of calpain1 at calcium release sites is consistent with the idea that Ca2+ activation of calpain1 causes its binding to structures, an effect that places the protease at an ideal location for cleaving JPh1.
 
+**Table 6.**
+ Colocalization of JPh and calpain (Cp1) with RyR1 in human-derived myotubes expressing FLAG calpain.Patient #180 MHN. 073020 a. * p calculated by Mann-Whitney Rank Sum Test. Data trace: in ColocalizJP44 and RyR.JNB section 9. 073020b. 010422 a.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Colocalizationwith RyR1</th>
+      <th>N, subjects</th>
+      <th>n, cells</th>
+      <th>R</th>
+      <th>VS shift, nm</th>
+      <th>FWHM,µm</th>
+      <th>ICQ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">JPh</td>
+      <td>avg</td>
+      <td rowspan="3">2</td>
+      <td rowspan="3">10</td>
+      <td>0.72</td>
+      <td>44</td>
+      <td>0.58</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.73</td>
+      <td>48</td>
+      <td>0.52</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.03</td>
+      <td>5</td>
+      <td>0.04</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cp1</td>
+      <td>avg</td>
+      <td rowspan="3">2</td>
+      <td rowspan="3">14</td>
+      <td>0.76</td>
+      <td>126</td>
+      <td>1.13</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.76</td>
+      <td>120</td>
+      <td>0.95</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>0.03</td>
+      <td>25</td>
+      <td>0.15</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">p*</td>
+      <td>0.336</td>
+      <td>0.01</td>
+      <td>&lt;0.001</td>
+      <td>0.206</td>
+    </tr>
+  </tbody>
+</table>
+
 Figure 6 illustrates an additional, frequent observation that we did not pursue further: the cell that expressed the calpain construct (Cell 1) had much greater density of RyR1, consistent with other evidence of a role of the protease in control and promotion of muscle development (e.g. Goll et al., 1992).
 
 Together, the results reflect calpain1 activation and autolysis in MHS patients by virtue of their elevated [Ca2+]cyto, accompanied by localization of the protease at T-SR junctions, where it cleaves JPh1 to produce JPh44. The activated calpain1 also produces the 40 kDa, activated form of GSK3β.
 
-## Effects of a JPh1 deletion mutant in mouse muscle and a muscle cell line
+### Effects of a JPh1 deletion mutant in mouse muscle and a muscle cell line
 
 The presence of the JPh44 fragment in the nucleus suggested that it plays a role in gene transcription. The calpain algorithm locates the likely cleavage site at between R240 and S241. To test the prediction and produce a stand-in for the JPh44 fragment, we generated the plasmid GFP-∆(1-240) JPh1, coding for the N-terminal fusion of GFP with the human JPh1 deletion variant that starts at S241, and studied its expression in FDB muscles of adult mice transfected by electroporation. Panels A and B in Figure 7 compare expression of GFP-JPh1, the full-size construct, with the GFP-tagged deletion variant in myofibers co-stained for RyR1. While GFP-JPh1 remained near RyRs, in triad junctions, the variant moved away, into the I band, in a manner reminiscent of the movement of JPh44 (compare with Figure 2A and B). The movement away from triads (marked by RyR1) was quantified by colocalization metrics (Table 7). Panels 7 C and D demonstrate intranuclear localization of the deletion variant, reaching concentrations that saturate the light detector at the excitation intensities required to reveal the sarcomeric expression of the protein (e.g. 7 C).
 
@@ -123,19 +670,203 @@ The presence of the JPh44 fragment in the nucleus suggested that it plays a role
 
 **Figure 7.:** (A) Confocal images of mouse FDB myofibers electroporated with plasmids encoding GFP-tagged, full-length JPh1, co-stained for RyR1. (B) Mouse FDB myofibers electroporated with plasmids encoding GFP-∆(1-240) JPh1. (C, D) Demonstrate the nuclear distribution of the protein upon electroporation of GFP-JPh1 ∆(1-240). (E, F) Van Steensel and Li plots, showing absence of colocalization between the exogenous construct and RyR1. Statistics of colocalization measures are in Table 7. Data trace: Source files: A, experiment 111220Lb, Series 1. B-D, 110920La, Series 1, 8, 9.
 
+**Table 7.**
+ Colocalization of exogenous GFP-Δ(1-240) JPh1 with RyR1 in muscle of adult mice.For ease of comparison, the table includes values of JPh1 and JPh44 in human muscle, from Table 1. Bottom row: p of no difference between values for fragments vs. JPh1 (Mann Whitney Rank Sum for all but ICQ). Data trace: in ColocalizJP44andRyR.JNB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>N subjects</th>
+      <th>n fibers</th>
+      <th>R</th>
+      <th>VS shift, nm</th>
+      <th>FWHM,</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">JPh1</td>
+      <td>average</td>
+      <td rowspan="3">3</td>
+      <td rowspan="3">8</td>
+      <td>0.88</td>
+      <td>16</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.9</td>
+      <td>12</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.03</td>
+      <td>3</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td rowspan="3">JPh44</td>
+      <td>average</td>
+      <td rowspan="3">3</td>
+      <td rowspan="3">10</td>
+      <td>0.31</td>
+      <td>66</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.26</td>
+      <td>54</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.04</td>
+      <td>15</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">p</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td rowspan="3">GFP- D(1-240) JPh1</td>
+      <td>average</td>
+      <td rowspan="3">1</td>
+      <td rowspan="3">6</td>
+      <td>0.54</td>
+      <td>50</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>0.53</td>
+      <td>36</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>S.E.M.</td>
+      <td>0.09</td>
+      <td>23</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="3">p</td>
+      <td>0.001</td>
+      <td>0.057</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
 The similarity of movements, cellular location and antibody reactivity between the native JPh44 and the exogenous deletion mutant are consistent with a tentative identification of JPh44 as the C-terminal piece of JPh1 with N terminus at S241. The sole alternative sequence consistent with the predictive algorithm, starting at S234, would only differ for having 7 additional residues at the N terminus. Based on this likely identification, we used GFP-JPh1 ∆(1-240) as surrogate to uncover the effects of the native JPh44 fragment on gene transcription and translation.
 
 To this end, GFP ∆(1-240) JPh1 was transfected into C2C12 cells, where its expression was compared with that of GFP-JPh1, using antibodies A and B (Figure 8—figure supplement 1). The deletion construct expressed well and could be found inside nuclei (Figure 8A). Gene expression analysis revealed that, relative to control cells, 121 and 39 genes were respectively repressed or induced (p<0.01) in the transfected myoblasts (Figure 8B). KEGG pathway-enrichment analysis identified these genes as intimately related to multiple processes, including regulation of the PI3K-Akt-glucose signaling pathway, energy metabolism, muscle growth and lipid metabolism (8 C). Specifically, transcription of GSK3β and proteins inhibitory of phosphorylation of Akt/protein kinase B (Pck1 (phosphoenolpyruvate carboxykinase 1, PEPCK-C)) (Gómez-Valadés et al., 2008), RBP4 (retinol-binding protein 4) (Graham et al., 2006), Repin1 (replication initiator 1) (Kern et al., 2014), APOC3 (guanidinylated apolipoprotein C3) (Botteri et al., 2017), TRAF3 (TNF receptor-associated factor 3) (Chen et al., 2015), Ces3a/TGH (carboxylesterase 3 A or triacylglycerol hydrolase) (Lian et al., 2012), and NGFR (nerve growth factor receptor) (Baeza-Raja et al., 2012; Baeza-Raja and Akassoglou, 2012) were inhibited in response to expression of the construct.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig8-v1.jpg)
+
+**Figure 8.:** (A) Confocal images of cells transfected with GFP-∆(1-240) JPh1 vector (‘∆-construct’) showing the expressed protein inside nucleus. (B) Heat map of significantly altered genes in myoblasts expressing GFP-empty vector or ∆-construct. (C) KEGG pathway enrichment analysis of transcripts significantly altered by the construct (analysis by LC Sciences, Houston, TX, USA). (D) Validation of 4 results in B by PCR in our laboratory. Samples from cultures transfected with ∆-construct. Significant differences for GSK3β, p=0.007; TRAF3, p=0.012; NGRF, pP=0.015. For Repin1, p=0.053. (E) Western blot of GSK3β in total cell extracts from cells expressing GFP-empty vector or ∆ construct. (F) GSK3β protein signal in WB of panel E. (G) Confocal image of GSk3β immuno-fluorescence (red), in C2C12 cells transfected with GFP-empty vector, to compare cells that expressed the marker (green) with those that did not. (H) Image for similar comparison of GSK3β content in cultures transfected with ∆ construct, showing deficit of GSK3β in expressing cells (green). (J) Comparison of ratios of GSK3 β signal in cells showing the GFP tag over those not expressing it. Statistics in Table 8 shows high significance of the difference. Data trace. Source files: A, 110121La series 003. B, C, gene expression profiling data in Dropbox / JPh / manuscript / F9 panels. D, in D:/Jph/ manuscript /f9 panels/ qPCR.JNB. E, uncropped blots and gels in raw western blots and gels.doc. F, in GSK3B levels.JNB in D:/JPh /manuscript/ F9 panels. G, 102921La series9. H, 110321 Lb series7. J, D:/Jph/manuscript/Fig1/GSK3B graphs and statistics.JNB, section 4.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/78874/elife-78874-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A-D) Immunofluorescence images of fields of C2C12 cultures expressing either GFP-JPh1 (full-size, rows A, C) or GFP-JPh1 Δ (1-240) (B, D) and stained with ab A (rows A, B) or ab B (C, D). Images show respectively GFP fluorescence, the signal with abs A or B, the overlay of GFP and ab signal, nuclear staining and the triple overlay. Images are single slices from ‘z-stacks’ of 45 x-y images at 60 nm interval, after correction for optical dispersion. Note the lesser colocalization of ab B with GFP in GFP-JPh1-transfected cells (Cc and e). E-H. Colocalization analysis of IF images in A-D. Two measures of colocalization, the correlation coefficient R and the Intensity Correlation Quotient were calculated (Methods). The plots compare their distributions between cultures expressing the two fusion proteins (n=4 or 5 fields). For brevity, the GFP- JPh1 Δ (1-240) data is labeled ‘GFP-JPh44’. Ab B (E, G) colocalized with GFP-JPh1 much more than with GFP-JPh44 (p=0.001 for R, 0.005 for ICQ). Ab A (F, H) did not show preference for either construct (p=0.941 for R and 0.564 for ICQ. two-tailed t-tests in all cases). Note also that the colocalization values of ab B with the JPh44 construct are similar to those of ab A with either construct. Data trace: A, 100522Lc_Series005_Lng_adaptSnap1. B, 100722La_Series004_Lng_adaptSnap1. C, 100522Lb_ series001_Lng_adapt#22. D, 100522La_Series004_Lng_adaptSnap6. Graphs in JPh/C2C12 JPh1 and 44 by abs B and A.
 
 These results were validated via qRT-PCR. Consistent with the digital gene expression sequencing analysis, quantification of mRNA content by RT-PCR indicated that the contents of mRNAs for GSK3β, TRAF3, NGFR, and Repin1 were significantly reduced by 50% in cells transfected with GFP-∆(1-240) JPh1 relative to that in control cells transfected with empty vector (Figure 8D). (Transcription of the other antagonists of Akt phosphorylation listed above could not be evaluated due to failure of all primers tested).
 
 As expected from the effects on transcription, we found by Western blot analysis a reduction in GSK3β content in cells transfected with GFP-∆(1-240) JPh1, by 40% of the content in cells expressing GFP alone (Figure 8E). The difference was significant (Figure 8F). By high-resolution imaging we found that cells expressing the JPh deletion construct had reduced levels of GSK3β compared to the neighboring non transfected cells, whereas cells expressing the vector coding for GFP and otherwise empty had similar GSK3β levels to its neighboring cells (Figure 8Hc and Table 8).
 
+**Table 8.**
+ Effect of expression of GFP-Δ(1-240) JPh1 (Δ construct) on density of GSK3β in C2C12 myoblasts.The reference, in Cols 4–6, is a culture transfected with the empty vector (GFP-EV). The numbers are averages of densities and their ratios calculated individually for 10 and 8 images, respectively for Δ construct and empty vector. The number of expressing cells per image varied between 1 and 3; that of non-expressing cells between 6 and 10. p is the probability of a ratio of 1, that is, no effect of the expression, based on a two-tailed t-test on the sample of 10 or 8 ratios. An alternative t-test (of paired differences in density between non-expressing and expressing areas) yielded a p of no difference = 0.002 and 0.930 respectively for the Δ construct and the empty vector. Data trace: in GSK3B graphs and statistics.JNB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GSK3β density, a. u.</td>
+      <td>Cells expressing Δ construct</td>
+      <td>Cells not expressing Δ construct</td>
+      <td>Ratio col1/col2</td>
+      <td>Cells expressing GFP-EV</td>
+      <td>Cells not expressing GFP-EV</td>
+      <td>Ratio col4/col5</td>
+    </tr>
+    <tr>
+      <td>avg</td>
+      <td>441</td>
+      <td>729</td>
+      <td>0.62</td>
+      <td>1548</td>
+      <td>1553</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>median</td>
+      <td>353</td>
+      <td>547</td>
+      <td>0.61</td>
+      <td>1513</td>
+      <td>1355</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>sem</td>
+      <td>75.1</td>
+      <td>138</td>
+      <td>0.03</td>
+      <td>268</td>
+      <td>281</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>N, images</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>n, cells</td>
+      <td>15</td>
+      <td>73</td>
+      <td></td>
+      <td>11</td>
+      <td>42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">p</td>
+      <td>&lt;0.001</td>
+      <td colspan="2"></td>
+      <td>0.958</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 Starting from the observation of reciprocal differences in content of the structural protein JPh1 and its fragment JPh44 in muscle of patients with chronically elevated cytosolic Ca2+, we here identified the pathogenic mechanism leading to these differences. We also demonstrated gene regulatory roles of JPh44, potentially compensatory of the pathogenic consequences of the elevated [Ca2+]cyto.
 
-## Junctophilin1, calpain1 and the kinase of glycogen synthase undergo fragmentation in MHS patients
+### Junctophilin1, calpain1 and the kinase of glycogen synthase undergo fragmentation in MHS patients
 
 Junctophilin (Takeshima et al., 2000) is one of the five proteins deemed essential for functional, skeletal-muscle-style calcium signaling for EC coupling. We now show that a 72 kDa form of JPh1 (the top size detected in our samples) was reduced by ~50% in total protein extracts of muscles of MHS patients (Figure 1A and C). A 44 kDa fragment increased in the same patients, albeit in a lesser proportion, a discrepancy that we attribute to proteolysis at other sites in the full-length molecule (Figure 1B, D and E).
 
@@ -145,11 +876,11 @@ The present study used techniques for imaging protein localization that, as docu
 
 The fate of JPh44 was further followed on primary myotubes derived from patients’ muscle, where it was seen to migrate inside nuclei (Figure 2E and F). By contrast, JPh1 remained outside, largely in clusters corresponding to developing T-SR junctions, as revealed by high colocalization with RyR1 (Figure 2Dd, Fa, b and Table 1). To define the primary sequence of JPh44, the construct (N)GFP-JPh1-FLAG(C) was expressed in myotubes and adult mouse muscle. The consistent presence of the FLAG tag inside nuclei (Figure 3A–C and Table 2) plus the persistence of the N-terminal GFP in the cytosol, forming clusters analogous to those of JPh1 and RyR1 (Figure 2) in myotubes, and staying aligned with junctional triads in myofibers (Figure 3C), unambiguously indicate that the doubly-tagged exogenous protein undergoes cleavage similar to the endogenous JPh1, and that the cleaved fraction that enters nuclei -- corresponding to JPh44 -- includes the C terminus of JPh1. The persistence of GFP outside nuclei indicates that the N-terminal fragment cleaved from JPh1 conserves at least some of the features, presumably the MORN motifs, by which JPh1 attaches to T tubule and plasma membranes (Rossi et al., 2019). However, the stable location of the N-terminal cleavage fragment of JPh1 at triad junctions is inconsistent with the proposal that assigns the specific triadic location of JPh1 to its ability to dimerize (Rossi et al., 2019), as this ability is likely lost in the N-terminal fragment.
 
-## [Ca2+]cyto determines JPh1 fragmentation and relocation
+### [Ca2+]cyto determines JPh1 fragmentation and relocation
 
 Direct perfusion of permeabilized human myofiber bundles with elevated Ca2+ concentrations resulted in reciprocal changes in JPh1 and JPh44 content (Figure 3D–F). While the application of Ca2+ was only transient, the major, statistically significant changes that resulted are consistent with a causative involvement of the chronically elevated [Ca2+]cyto in the pathogenic process that takes place in MHS muscle. This process included a large increase in JPh44 content in blots of the nuclear fraction extracted from MHS patients muscle (Figure 3G and H), which positively correlated with the [Ca2+]cyto measured in myotubes derived from the same patients (Figure 3I). This correlation linked a feature of adult muscle with a measure in the derived culture, and notably also applied to JPh localization in patients’ myotubes relative to their [Ca2+]cyto values (Figure 3J and Figure 3—videos 1–3).
 
-## Probable identification of the cleavage site in junctophilin1
+### Probable identification of the cleavage site in junctophilin1
 
 The identification of elevated [Ca2+]cyto as mediator of the MHS cellular phenotype pointed at the Ca2+-activated calpains as enzymatic agents of JPh proteolysis. An algorithm predictive of calpain cleavage sites within protein sequences (Liu et al., 2011) contributed evidence of involvement of calpain1. Among the predicted cleavage sites in JPh1 (Figure 4B), the one with the highest score, at R240-S241, is highly conserved in mammals (Figure 4C), producing in every ortholog a C-terminal fragment of approximately 46 kDa. This exercise proposes JPh44 as the C-terminal fragment of JPh1 with N terminus at S241. The cleavage site S233-S234, also of high probability score, suggests an alternative sequence, identical except for 7 additional aminoacid residues at the N terminus. The extra residues would neither cause a difference in molecular weight detectable by electrophoresis nor be likely to change other physicochemical properties, including putative gene regulatory functions suggested by the nuclear localization. Both cleavage sites predict an N-terminal fragment that contains 6 MORN motifs, a prediction consistent with the observation that the N-terminal fragment of JPh1 stays at T-SR junctions (Figure 3). Recent cryo-EM evidence of the tertiary structure of JPh isoforms 1 and 2 (Yang et al., 2022) contradicts the conventional view of the helical backbone as spanning the inter-membrane gap (Lehnart and Wehrens, 2022), suggesting instead a detailed, presumably tight association of this region with the β sheet formed by the MORNs. If this were the case, a single cut at either site might not be sufficient to allow separation of the distal fragment, suggesting instead that both cuts might be necessary to free JPh44.
 
@@ -161,7 +892,7 @@ Additional evidence linking calpain activation to JPh1 cleavage was obtained by 
 
 Previous studies reported that calpains cleave couplon proteins, including RyR1 (Place et al., 2015) and STAC3 (Ashida et al., 2021). The present findings show that the protease is at the right location for those actions. Both endogenous calpain1, imaged by immunofluorescence in human muscle (Figure 5G and Figure 5—figure supplement 1), and FLAG-tagged calpain1 (Figure 6I) were found precisely located at triad junctions; the location was confirmed by its high colocalization scores with JPh1 and with RyR1 (Tables 3 and 6). The observations support the proposal that the protease is freely diffusible in apo form but binds to cellular structures immediately upon exposure to high [Ca2+] (van Steensel et al., 1996). Indeed, the quantitative measures of colocalization with RyR1, especially the spatial shift and Gaussian spread obtained with the Van Steensel method, show that the junctional protein JPh1 has a tighter overlap with RyR1 than calpain1 (Table 6), which suggests the coexistence of bound and diffusible forms of the protease.
 
-## From Ca2+ dysregulation to hyperglycemia and diabetes
+### From Ca2+ dysregulation to hyperglycemia and diabetes
 
 The results reviewed above establish with a high degree of confidence that the reduction in JPh1 content observed in MHS patients is caused by calpain1, activated by excess cytosolic calcium, and that the activated calpain also cleaves the specific kinase of glycogen synthase GSK3β, with inhibitory consequences on glycogen synthesis. This effect, together with the putative cleavage of the regulated glucose transporter GLUT4 (Otani et al., 2004), impair glucose utilization by muscle.
 
@@ -177,7 +908,7 @@ The link between the high activity of GSK3β and diabetes in human skeletal musc
 
 Taken together, the present observations and those in Tammineni et al., 2020 identify a multi-lane pathway, where Ca2+ activation, proteolysis and phosphorylation, involving at a minimum calpain 1, GSK3β, GS, GP, PhK, and GLUT4, lead from the primary Ca2+ dysregulation to hyperthermia and diabetes (Figure 9).
 
-## The Ca2+-promoted cleavage of junctophilin1 produces an adaptive transcription regulator
+### The Ca2+-promoted cleavage of junctophilin1 produces an adaptive transcription regulator
 
 Calpains 1 and 2 activate in heart muscle damaged by ischemia (e.g. Singh et al., 2004; Singh et al., 2012) or in conditions of heart failure, to proteolyze JPh2 (Murphy et al., 2013; Lahiri et al., 2020; Guo et al., 2013). The lysis of JPh2 is associated with structural remodeling, loss of dyadic junctions and deficit of EC coupling function, all expected from the breakage of a structural brace of the junction (Wu et al., 2014). Surprisingly, however, L-S Song’s group went on to demonstrate that a large N-terminal calpain1-cleaved fragment of JPh2, named JPH2-NTP, enters nuclei, where it regulates transcription of multiple genes, with consequences that oppose the damaging effects of activated proteases (Guo et al., 2018). In contrast, Lahiri et al., 2020 reported the presence of a ~25 kDa C-terminal product of cleavage by calpain2, which was shown to be causative of cellular hypertrophy, rather than compensatory.
 
@@ -189,59 +920,202 @@ The many signaling pathways regulated by Akt importantly include glucose uptake 
 
 In spite of the similarity, there are many differences between the putatively regulatory fragments of the two junctophilin isoforms. Unlike JPH2-NTP, JPh44 loses an N-terminal portion and with it the main stretch of MORN motifs. If the helical backbone were tightly bound to the MORN β sheet, as argued in Yang et al., 2022, separation from the N-terminal fragment that includes most MORNs would free the helix for its putative interactions with DNA inside nuclei. Unlike JPH2-NTP, JPh44 retains a second NLS (K588-L614, Figure 4A). Therefore, the skeletal muscle fragment appears to have advantages over JPH2-NTP, to leave the junctional location (by losing most T-membrane anchors), and to reach inside nuclei, by having an additional NLS.
 
-## Limitations
+### Limitations
 
 The degree of autolysis of calpain in the samples that we analyzed is substantially greater than that reported for muscle tissue processed immediately after excision (Murphy et al., 2013; Murphy et al., 2006a; Murphy et al., 2007). This fact indicates protein degradation in the human samples after excision, and is consistent with the difference in gel migration between our mouse and human samples (Figure 1—figure supplement 1). While these indications introduce some uncertainty about the molecular sequence of the JPh fragments of interest, they do not preclude the comparisons between samples from individuals with different diagnosis, as they are all treated in the same manner.
 
-## Ideas and speculations
+### Ideas and speculations
 
 An additional difference between the MHS condition and the stress of heart failure reported to unleash calpain cleavage of JPh2 is that the cardiac condition is accompanied by structural remodeling with loss of couplons and reduction in JPh2 content (Wu et al., 2014; Zhang et al., 2013), while no structural remodeling has been reported in muscle of MHS patients. Moreover, studies of Ca2+ release function revealed an increase in muscle sensitivity to stimuli (membrane voltage or calcium, e.g., Figueroa et al., 2019; Figueroa et al., 2021) rather than the major deficits expected to arise from a loss of functional junctions (Perni et al., 2017) upon JPh1 loss in the proportion observed here.
 
 A speculative explanation recalls the expression of both JPh1 and 2 in skeletal muscle, both capable of sustaining calcium release function (Perni and Beam, 2022). The presence of two molecules that share a function — a redundancy of paralogs — would combine with a different level of redundancy, the presence of multiple copies of the same protein, perhaps polymerized (Rossi et al., 2019), to provide a ‘sentinel’ role. When proteolysis is activated in pathophysiological situations, limited JPh1 cleavage would cause minimal or no deterioration of structure or function, while producing an adaptive gene-regulatory messenger.
 
-## Conclusion
+### Conclusion
 
 We report that the elevated [Ca2+]cyto in skeletal muscle of individuals with MHS activates calpain1, which associates to T-SR junctions. The protease then cleaves a kinase that inhibits glycogen synthase, an effect that correlates with and probably contributes to an increase in blood glucose concentration. Cleavage of the kinase and that of GLUT4 promote the transition to hyperglycemia and diabetes found in many of these patients. It also cleaves junctophilin1, to produce a C-terminal fragment of ~44 kDa that abandons junctions and enters nuclei. There, the fragment modulates transcription of multiple genes, resulting in effects opposing the deleterious alteration of the glucose utilization pathway. Borrowing a term applied to a fragment of junctophilin2 found to enter nuclei in myocytes of failing hearts (Guo et al., 2018), the JPh44 fragment is therefore ‘stress-adaptive’.
 
 ## Materials and methods
 
-## Patients
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-JPh1‘antibodyA’(Rabbit Polyclonal)</td>
+      <td>Thermo Fisher scientific</td>
+      <td>Catalog # PA5-52639</td>
+      <td>Dilution:IF: (1:200),WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- JPh1‘antibody’(Rabbit Polyclonal)</td>
+      <td>Thermo Fisher scientific</td>
+      <td>Catalog#40–5100,</td>
+      <td>Dilution:IF: (1:200),WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- GSK3β(Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Catalog #9315</td>
+      <td>Dilution:WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- calpain1 (Mouse Monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog # MA1-12434</td>
+      <td>Dilution:IF: (1:100),WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ryr1 (Mouse polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Catalog#MA3-925</td>
+      <td>Dilution:IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG(Mouse Monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog #MA1-91878</td>
+      <td>Dilution:IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-JPh1-FLAG Plasmid</td>
+      <td>OriGene Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-∆(1-240) JPh1 Plasmid</td>
+      <td>OriGene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p3XFlag-CAPN1 plasmid</td>
+      <td>Addgene</td>
+      <td>Catalog # #60941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo-sapiens)</td>
+      <td>Gracilis muscle</td>
+      <td>Toronto General Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers (5’ to 3’)Fw: ATGGACTGATTATGGACAGGACTGRev: TCCAGCAGGTCAGCAAAGAAC</td>
+      <td>IDT</td>
+      <td>Hprt</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers (5’ to 3’)Fw: GAGCCACTGATTACACGTCCAGRev: CCAACTGATCCACACCACTGTC</td>
+      <td>IDT</td>
+      <td>Gsk3b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers (5’ to 3’)Fw: CCCATGATCAAACTGCAGAAACRev: GCACTCAACTCACTCCTTAGAA</td>
+      <td>IDT</td>
+      <td>Traf3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers (5’ to 3’)Fw: GTCTTCAGGCAGAGGAAGAACRev: GATTTGCCCTGGTACCTCAA</td>
+      <td>IDT</td>
+      <td>Repin1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers (5’ to 3’)Fw: CTGACAACCTCATTCCTGTCTATTRev: CTTGCAGCTGTTCCATCTC</td>
+      <td>IDT</td>
+      <td>Ngfr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell lines</td>
+      <td>C2C12 Myoblasts</td>
+      <td>ATCC</td>
+      <td>CRL-1722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>Calpain 1 protein from human Erythrocytes</td>
+      <td>Millipore Sigma</td>
+      <td>Catalog # 208713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drug</td>
+      <td>Calpain Inhibitor MDL-28170</td>
+      <td>Cayman</td>
+      <td>Item No #14283</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Patients
 
 All patients were recruited and studied in the Malignant Hyperthermia Investigation Unit (MHIU) of the Canadian University Health Network, at Toronto General Hospital, in Toronto, Canada, under protocol 12–5474, last reviewed on 11/08/21. All patients consented to all aspects of the study, including publication. The use of tissue and the language of the informed consent were also approved by the Institutional Review Board of Rush University under protocol 16050502-IRB01. Patients were diagnosed with the CHCT and studied over the last 5 years. Criteria for recruitment of subjects included one or more of the following: a previous adverse anesthetic reaction, family history of MH without a diagnostic MH mutation (https://www.emhg.org), a variant of unknown significance (VUS) in RYR1 or CACNA1S, recurrent exercise- or heat-induced rhabdomyolysis and idiopathic elevation of serum creatine kinase.
 
 The anonymized demographic data of the 44 individuals whose tissues were used for analyses, imaging or development of cultures, is provided in Supplementary file 1.
 
-## Primary cultures
+### Primary cultures
 
 Biopsied segments of human Gracilis muscle were shipped to Rush University at 4 °C overnight in an optimized solution of composition described in Figueroa et al., 2019. Primary cultures, derived from the biopsies as described by Censier et al., 1998, were maintained at 37 °C in a humid atmosphere containing 5% CO2. After 8–15 days, cells derived from the explants were transferred to a culture dish for proliferation in a growth medium. Myoblasts were expanded through up to four passages. For calcium concentration measurements in live cells, myoblasts were reseeded on collagen-coated dishes (MatTek, Ashland, MA, USA). For immunostaining experiments, myoblasts were seeded on 13 mm coverslips in 24-well plates. At 70% confluence, the cells were switched to a differentiation medium (DMEM-F12 with 2.5%horse serum). Studies were carried out 5–10 days thereafter, in myotubes showing a similar degree of maturation.w.
 
-## C2C12 cultures
+### C2C12 cultures
 
 The mouse myogenic C2C12 cell line was obtained from ATCC (http://www.atcc.org/) and cells were used until passage number 20. Myoblasts were cultured in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 15% fetal bovine serum and 1% penicillin-streptomycin in a humidified incubator kept at 37 °C and 5% CO2. C2C12 myotubes were obtained by culturing 70% confluent myoblasts in differentiation medium (DMEM, 2% horse serum, 1% penicillin-streptomycin) for at least 4days. Authentication of the cells can rely on that done by the supplier, as most were used within a year of their purchase. We also authenticated C2C12 cell lines based on the morphology observed during experiments. Indeed, these cells turned to multinucleated myotubes upon differentiation, the formation of which is a unique feature of C2C12 cell lines. The cells were tested for Mycoplasma contamination with a detection kit (MycoStrip, Invivogen) that uses isothermal polymerase chain reaction (PCR) and can detect over 95% of commonly occurring mycoplasma species contaminating cell line. Results were negative.
 
-## Transfections and vectors
+### Transfections and vectors
 
 Transient transfections of C2C12 myoblasts were performed upon reaching 70% confluence using the K2 Transfection System (Biontex Laboratories GmbH, Munich, Germany) as described by the manufacturer. C2C12 myotubes and biopsy-derived human primary myotubes were transfected with plasmids using lipofectamine 3000 (Thermofisher, Waltham, MA, USA) following the supplier’s instructions.
 
 Plasmids used in this study such as empty vector for GFP-JPh1, dual tagged JPh1 plasmid (GFP-JPh1-FLAG), and GFP tagged plasmid with JPh44 translating region (GFP-∆(1-240) JPh1) were created by OriGene Technologies (Rockville, MD, USA). p3XFlag-CAPN1 was a gift from Yi Zhang (Addgene plasmid # 60941; http://n2t.net/addgene:60941; RRID:Addgene_60941).
 
-## Use of murine muscle
+### Use of murine muscle
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All the animals were handled according to approved institutional animal care and use committee (IACUC) of Rush University under protocols (#17–035, 18–065 and 21–068.) 6- to 10-week-old mice, Mus musculus, of the Black Swiss strain, sourced at Charles River Laboratories (Boston, MA, USA), were used to define the localization of JPh1 and JPh44 in living cells. Hind paws were transfected with plasmid vector for GFP-JPh1, dual tagged JPh1 plasmid (GFP-JPh1-FLAG), and GFP-tagged plasmid with JPh44 translating region (GFP-∆(1-240) JPh1) as described in Pouvreau et al., 2007. Transfection required electroporation via intramuscular electrodes, which was performed under anesthesia. Animals were euthanized and muscles collected and processed for imaging as in Manno et al., 2017. Every effort was made to minimize animal suffering and discomfort.
 
-## Diagnosis of malignant hyperthermia susceptibility
+### Diagnosis of malignant hyperthermia susceptibility
 
 Susceptibility to MH was diagnosed at the MHIU following the North American CHCT protocol (Larach, 1989). Increases in baseline force in response to caffeine and halothane (FC and FH) were measured on freshly excised biopsies of Gracilis muscle with initial twitch responses that met viability criteria. Three muscle bundles were exposed successively to 0.5-, 1-, 2-, 4-, 8-, and 32 mM caffeine; three separate bundles were exposed to 3% halothane. The threshold response for a positive diagnosis was either FH ≥0.7 g or FC (in 2 mM caffeine)≥0.3 g. Patients were diagnosed as ‘MH-negative’ (MHN) if the increase in force was below threshold for both agonists, and ‘MH-susceptible’ (MHS) if at least one exposure exceeded the threshold. While prior work distinguishes the muscles that respond excessively to halothane but not to caffeine (named ‘HH’) from those that respond to both (the “HS”), in the present work the distinction is not made, and both groups together are classified as MHS.
 
-## Cytosolic calcium concentration
+### Cytosolic calcium concentration
 
 Cytosolic Ca2+ concentration, [Ca2+]cyto, was monitored in myotubes by shifted excitation and emission ratioing (Launikonis et al., 2005) of indo-1 fluorescence as described in Zhou et al., 2006. Imaging was by confocal microscopy (scanner TCS SP2; Leica Microsystems; Buffalo Grove, IL, USA), using a 63X, 1.2 numerical-aperture water-immersion objective. [Ca2+]cyto was derived from fluorescence signals (Figueroa et al., 2012). Indo-1 was procured from Invitrogen, Waltham, MA, USA.
 
-## Analysis of calpain activity
+### Analysis of calpain activity
 
 For in vitro JPh1 cleavage experiments, the whole biopsied muscles from human subjects were homogenized in RIPA lysis buffer (Santa Cruz Biotechnology, Dallas, TX, USA) with protease and phosphatase inhibitors, and the supernatant of centrifugation at 13,000 g for 15 min was used for further process. The cleavage of JPh1 was induced by incubating 100 micrograms of protein supernatants with 0.3–1.0 µg of purified human erythrocyte calpain1 of activity 1 unit/µg (MilliporeSigma, Burlington, MA, USA) at 30 °C for 15 min. Supernatants are treated with or without DMSO dissolved 10 µg calpain inhibitor (MDL28170, Cayman Chemical Co., Ann Arbor, MI, USA). SDS sample buffer was added to stop the reaction.
 
-## Protein fractionation and Western blotting
+### Protein fractionation and Western blotting
 
 Human biopsied muscle segments received from the MHIU were quick-frozen for biochemical studies and storage. For measuring total content of proteins in muscle, the tissue was chopped into small pieces in RIPA lysis buffer (Santa Cruz Biotechnology, Dallas, TX, USA) containing protease and phosphatase inhibitors, and homogenized using a Polytron disrupter. The homogenate was centrifuged at 13,000 g for 10 min and supernatant aliquots were stored in liquid nitrogen. Nuclear and cytosolic protein fractions from muscle biopsies were prepared using NE-PER Nuclear and Cytoplasmic Extraction Kit (Catalog. No 78835; ThermoFisher) according to the manufacturer instructions, using a Dounce homogenizer.
 
@@ -253,39 +1127,47 @@ Quantitative analysis of Western blots was done with a custom application (writt
 
 Two anti-JPh1 antibodies, A and B, both supplied by ThermoFisher, serendipitously showed different reactivity. When used in Western blots, antibody A (#PA5-52639) reacted approximately equally with the full-size, ~72 kDa molecule and its 44 kDa fragment, while antibody B (#40–5100) marked exclusively JPh44 (Figure 1—figure supplement 1).
 
-## Immunostaining of human and mice myofibers, and skeletal muscle cell cultures
+### Immunostaining of human and mice myofibers, and skeletal muscle cell cultures
 
 Immunofluorescence imaging was done on thin myofiber bundles dissected from human muscle biopsies, FDB muscles from mice, primary human myotubes, C2C12-line myotubes and C2C12 myoblasts. Human or mouse muscles were mounted moderately stretched in relaxing solution, on Sylgard-coated dishes. Relaxing solution was replaced by fixative containing 4% PFA for 20 min. Myotubes or myoblasts on coverslips were washed in 1 X PBS and fixed with 2% PFA for 20 min. Tissues or cell cultures on coverslips were transferred to a 24-well plate and washed three times for 10 min in PBS, then permeabilized with 0.1% Triton X-100 (Sigma) for 30 min at room temperature and blocked in 5% goat serum (Sigma) with slow agitation for 1 hr. The primary antibody was applied overnight at 4 °C with agitation, followed by three PBS washes for 10 min. Fluorescent secondary antibody was applied for 2 hr at room temperature. Dehydrated tissues or cell culture coverslips were mounted with anti-fade medium (Prolong Diamond, ThermoFisher). Immunofluorescence imaging used the following antibodies (antigen, commercial ID number, concentration, supplier): JPh1 ‘antibody A’, #PA5-52639, 1:100, ThermoFisher; JPh1 ‘antibody B’, #40–5100, 1:100, ThermoFisher; calpain1, #MA1-12454, 1:1000, ThermoFisher; Ryr1, #34 C, 1:200, ThermoFisher.
 
-## High-resolution imaging of fluorescence
+### High-resolution imaging of fluorescence
 
 Immunostained myofibers and cell cultures, as well as live tissues expressing fluorescently tagged proteins were imaged confocally using a Falcon SP8 laser scanning system (Leica Microsystems) with a 1.2-numerical aperture, water-immersion, 63 x objective. Resolution was enhanced by high sensitivity hybrid GaAsP detectors (HyD, Leica), which allowed low intensity illumination for image averaging with minimum bleaching, optimal confocal pinhole size (below 1 Airy disk), collection of light in extended ranges (e.g. 470–580 nm), and acquisition of z-stacks (vertical sets of x-y images) at oversampled x–y–z intervals. The stacks usually included 40 x-y images at 120 nm z separation and 60 nm x-y pixel size or, for highest resolution imaging, 20 x-y images at 120 nm z and 36 nm x-y pixel size. Dual images were interleaved by line. Most cells were triply stained and correspondingly monitored at (excitation/emission) (405/430–470 nm), (488/500–550 nm) and (555/570–620 nm). The stacks were acquired starting nearest the objective, at or closely outside the lower surface of the myofiber.
 
 Availability of stacks allowed for offline deblurring by a constrained iterative deconvolution algorithm that used all images in the stack (Voort and Strasters, 1995; Agard et al., 1989) and the point spread function (PSF) of the system, which was determined using 170 nm beads. PSF FWHM was 350 nm in x–y and 480 nm in z. After deblurring, the separation effectively resolved in the x-y plane was approximately 0.1 μm (Supplement 11 in Tammineni et al., 2020). The deblurred set was represented or ‘rendered’ in three dimensions using the ‘Simulated Fluorescence Process’ (Messerli et al., 1993) applied to the full deblurred stack. Determination of the point spread function (PSF) of the imaging system, deblurring, and rendering were done in the HuPro (SVI, Amsterdam, The Netherlands) programming environment.
 
-## Location and colocalization analyses
+### Location and colocalization analyses
 
 Location analysis defined densities of protein content within nuclei or in extranuclear areas (named ‘cytosol’), by the ratio of integrated fluorescence signal over area in the respective regions. For comparisons among replications the ratio (nuclear/cytosolic) was used, as it was insensitive to inter-preparation variance in expression or staining intensity.
 
-Colocalization (of JPh1, its fragment JPh44, its expressed constructs GFP-JPh1-FLAG, (N)Myc-JPh1 and GFP-Δ(1-240)JPh1, calpain1, its expressed construct (N)FLAG-calpain1 and RyR1) was evaluated by 4 techniques: (Stern et al., 1997) the Pearson correlation coefficient, calculated as:(1)R=∑i(Ai−A¯i)(Bi−B¯i)(Ai−A¯i)2(Bi−B¯i)2
+Colocalization (of JPh1, its fragment JPh44, its expressed constructs GFP-JPh1-FLAG, (N)Myc-JPh1 and GFP-Δ(1-240)JPh1, calpain1, its expressed construct (N)FLAG-calpain1 and RyR1) was evaluated by 4 techniques: (Stern et al., 1997) the Pearson correlation coefficient, calculated as:
 
-where Ai and Bi are intensities of two signals in the same pixel i, A¯i and B¯i the averages over all pixels, and the summation is extended to all pixels, or a ROI when the entire image is not usable. Subtler, but statistically significant differences in colocalization were detected using the Intensity Correlation Analysis (ICA) introduced by Li et al., 2004. This analysis produces a quantitative measure, the Intensity Correlation Quotient, ICQ, a correlation measure with a definition that reduces the influence of heterogeneous staining of protein expression.(2)ICQ=∑iSign[(Ai−A¯i)(Bi−B¯i)]N(pixels)−0.5
+$$
+R=\frac{\sumi(A_{i}−A¯_{i})(B_{i}−B¯_{i})}{\sqrt{(A_{i}−A¯_{i})^{2}(B_{i}−B¯_{i})^{2}}}
+$$
 
-The numerator contributes a 1 for every pixel where both signals are above or below average and a –1 for the situation where the differences are opposite. The ratio is normalized to 1 and the subtraction of 0.5 moves the range to [–0.5, 0.5], with the extremes corresponding to perfect exclusion and perfect colocalization. The ICA approach includes a graph, (with examples in panels Figure 2Cb, d), that plots for every pixel the product (Ai−A¯i)(Bi−B¯i) , or ‘pixel covariance’ of A and B, vs. the intensity of either A or B. The result is strikingly different for cases of colocalization, where the points draw a noisy parabola (e.g. 2Cb) or lack of it (e.g. 2 Cd), where points to the left of the abscissa 0 correspond to mutual exclusion of the two signals.
+where $A_{i}$ and $B_{i}$ are intensities of two signals in the same pixel i, $A¯_{i}$ and $B¯_{i}$ the averages over all pixels, and the summation is extended to all pixels, or a ROI when the entire image is not usable. Subtler, but statistically significant differences in colocalization were detected using the Intensity Correlation Analysis (ICA) introduced by Li et al., 2004. This analysis produces a quantitative measure, the Intensity Correlation Quotient, ICQ, a correlation measure with a definition that reduces the influence of heterogeneous staining of protein expression.
+
+$$
+ICQ=\frac{\sumiSign[(A_{i}−A¯_{i})(B_{i}−B¯_{i})]}{N(pixels)}−0.5
+$$
+
+The numerator contributes a 1 for every pixel where both signals are above or below average and a –1 for the situation where the differences are opposite. The ratio is normalized to 1 and the subtraction of 0.5 moves the range to [–0.5, 0.5], with the extremes corresponding to perfect exclusion and perfect colocalization. The ICA approach includes a graph, (with examples in panels Figure 2Cb, d), that plots for every pixel the product $(A_{i}−A¯_{i})(B_{i}−B¯_{i})$ , or ‘pixel covariance’ of A and B, vs. the intensity of either A or B. The result is strikingly different for cases of colocalization, where the points draw a noisy parabola (e.g. 2Cb) or lack of it (e.g. 2 Cd), where points to the left of the abscissa 0 correspond to mutual exclusion of the two signals.
 
 The conventional correlation analyses have no provision for identifying the anisotropic de-localization of particles, which, if systematic, may reflect an actual association, with systematic displacement. This sensitivity to vectorial displacement is achieved here using an approach of van Steensel et al., 1996, which again produces a plot and, in this case, two numerical outputs of interest. The approach (illustrated in Figure 2 Ca, c) plots the correlation coefficient R between image A and image B shifted in one direction (say, x, defined as the longitudinal direction in myofibers) by variable amounts dx. The ‘Van Steensel plot’ thus plots R (dx) vs. dx. represented by individual symbols in Figure 2Ca. When the two signals are colocalized, the plot is narrow, and centered at dx = 0. If not, the plot displaces its peak (when the delocalization occurs in a preferred direction) and its width increases. Two numerical quantifiers can be derived on a Gaussian fitted to the points: the abscissa of the maximum (here the ‘VS shift’) and the FWHM. These quantifiers reveal vectorial aspects of the relationship between the two markers. The VS shift gives a rough measure of distance when the separation of the molecules has some vectorial regularity and sidedness. The FWHM is a measure of dispersion of one marker or both. Combined with the high spatial resolution achieved in our images, it allows to detect effects of interventions that fail to cause significant changes by conventional colocalization measurements.
 
 Colocalization measures and plots were implemented with custom programs written in the IDL platform or with the ImageJ ‘plugin’ JACoP (Bolte and Cordelières, 2006).
 
-## Digital gene expression sequencing
+### Digital gene expression sequencing
 
 RNA was isolated from GFP-empty-vector-transfected and GFP-∆(1-240) JPh1-transfected C2C12 myoblasts using the RNeasy plus mini kit (Qiagen, Hilden, Germany), based on manufacturer instructions. Samples were processed by LC Sciences (Houston, TX, USA). Processing included the generation of a library and sequencing of transcripts and their identification in the mouse genome (UCSC mm10). A cDNA library constructed from the pooled RNA from C2C12 cell samples of mouse species was sequenced run with Illumina Novaseq TM 6000 sequence platform. Raw paired-end RNA-seq data were firstly subjected to Cutadapt v1.9 to remove reads with adaptor contamination, low quality bases and undetermined bases. Filtered reads were aligned using HISAT2 to generate alignments tailored for transcript assembler. The mapped reads of each sample were assembled using StringTie with default parameters. Then, all transcriptomes from all samples were merged to reconstruct a comprehensive transcriptome using Gffcompare. After the final transcriptome was generated, StringTie and Ballgown were used to estimate the expression levels of all transcripts and perform expression abundance for mRNAs, by calculating FPKM (fragment per kilobase of transcript per million mapped reads). Differential expression analysis was performed by DESeq2 software between two groups. The genes with the parameter of false discovery rate (FDR) below 0.05 and absolute fold change ≥2 were considered differentially expressed. Differentially expressed genes were then subjected to enrichment analysis of GO functions and KEGG pathways.
 
-## qRT-PCR assays
+### qRT-PCR assays
 
 RNA extraction and real-time quantitative PCR (qPCR): For qPCR, total RNA was isolated from C2C12 myoblasts transfected with GFP-empty vector or GFP-∆(1-240)JPh1 using the RNeasy-plus mini kit (QIAGEN) according to the manufacturer’s instructions. cDNA was synthesized using the iScript gDNA clear cDNA synthesis kit (BIORAD) according to the manufacturer’s instructions. The cDNA was then analyzed via real-time qPCR using the SYBR Green qPCR Master (BIORAD) with the ViiA 7 Real-Time PCR System, equipped with a FAST 96-well heated block (Applied Biosystems, Life Technologies). Expression levels of HPRT were used as an internal control to normalize the expression of different genes. Quantification was performed by the 2−ΔΔCt method. The qPCR primers used in this study are provided in the ‘Resources’ table.
 
-## Replications and statistics
+### Replications and statistics
 
 With few exceptions, due to limitations in the availability of human samples or their derived cultures, imaging and quantitative analyses were replicated in multiple cells from multiple individuals (biological replicates). In figures and tables, the numbers of individuals (patients, mice) is represented by N and the total numbers of cells by n. When multiple cells derive from multiple individuals, statistical measures are derived by hierarchical (nested) analysis implemented in the R environment (Sikkel et al., 2017). Significance of differences of averages or paired differences is established using the two-tailed Student’s t test, or, when the distributions of compared measures do not satisfy tests of normality and equal variance, the Mann-Whitney Rank Sum test. Correlation between variables is quantified by the first-order correlation coefficient R; this number is always accompanied by an estimate p of the probability of no correlation, a function of R and the sample size, calculated as described in Tammineni et al., 2020. In tables, sample medians are always provided after sample averages, to afford a first idea of the distribution.
 
@@ -293,6 +1175,6 @@ The human samples for protein quantification include 12 ‘normal’ and 13 ‘H
 
 There was no blinding and no exclusion criteria other than adequate size and preservation of the sample — no discoloration or gross damage — evaluated visually upon receipt of the biopsy.
 
-## Availability of raw data
+### Availability of raw data
 
 All quantitative raw data, as well as statistical processing are contained in ‘JNB’ (Sigmaplot) and ‘XLSX’ (Excel) annotated worksheets, publicly available in Harvard Dataverse as ‘Study on junctophilin 1 and calcium stress’ at https://dataverse.harvard.edu/dataverse/Junctophilin1_and_calcium included in dataset ‘Raw and processed numerical data’. All raw image sets are in the same Dataverse, included in dataset ‘Raw image sets for Junctophilin 1 and calcium stress’. For ease of access, a ‘data trace’ line is added to every figure and table legend, identifying the corresponding raw data in the Dataverse and storage in the Rush University lab. Individual files in the Dataverse contain annotations for traceback to figures and tables in the article.

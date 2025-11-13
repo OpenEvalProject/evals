@@ -32,45 +32,130 @@ Here, we aimed to characterize the reliability of both salivary and plasmatic si
 
 ## Results
 
-## Baseline salivary and plasmatic oxytocin concentrations across visits
+### Baseline salivary and plasmatic oxytocin concentrations across visits
 
 We did not identify any significant differences in mean concentration of baseline oxytocin in saliva or plasma samples across the four visits of dataset A (Plasma: F(1.47, 22.04) = 0.51, p=0.55; Saliva: F(1.06, 12.82) = 0.88, p=0.38) (Figure 1—figure supplement 1). We also did not observe any differences in mean concentrations of baseline oxytocin in plasma across the two visits of dataset B (T(19) = 0.63, p=0.54). However, in a quick inspection of Figure 1, we can observe that the levels of baseline salivary and plasmatic oxytocin fluctuated considerably from one visit to another in most individuals (Figure 1).
 
-## Reliability of single oxytocin measurements in the plasma and saliva
+![Figure 1.](https://cdn.elifesciences.org/articles/62456/elife-62456-fig1-v1.jpg)
 
-## Dataset A
+**Figure 1.:** Baseline plasmatic and salivary oxytocin fluctuate from one visit to another for most individuals (Dataset A). We replicated this trend in an independent dataset for plasma (Dataset B). Each colored line represents one individual.
 
-## Between-visits reliability analysis across the four visits
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62456/elife-62456-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We tested for differences in mean baseline plasmatic and salivary oxytocin across the four visits of dataset A in a repeated measures one-way analysis of variance. In dataset B, we tested for differences in mean baseline plasmatic oxytocin across the two visits using a paired T-test. Statistical significance was set to p<0.05 (two-tailed). Box plots and violin plots depicting oxytocin concentrations for each visit; middle horizontal lines represent the median; boxes indicate the 25 and 75th percentiles.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62456/elife-62456-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Color grading represents Pearson’s coefficient of correlation (r), with bootstrapping 1000 samples. Statistical significance was set to p<0.05 (two-tailed). Black crosses identify correlations that did not reach significance.
+
+### Reliability of single oxytocin measurements in the plasma and saliva
+
+#### Dataset A
+
+##### Between-visits reliability analysis across the four visits
 
 We estimated the intra-class correlation coefficient (ICC) of single oxytocin measurements in saliva to be 0.23 and in plasma 0.29. The mean coefficient of variation (CV) was 63% for saliva and 57% for plasma measurements. We estimated the number of measurements that would have been required to achieve good reliability (ICC = 0.80) of a putative averaged measure to be 13.39 for saliva and 9.79 for plasma (Table 1).
 
-## Between-visits reliability analysis for each pair of visits
+**Table 1.**
+ Estimates of absolute and relative between-visits reliability of oxytocin measurements in saliva and plasma samples.Absolute and relative reliability were analyzed using the within-subject coefficient of variation (CV) and the intra-class correlation coefficient (ICC), respectively. We also present the number of additional measurements of the same individual that would be theoretically required to achieve different levels of reliability (ICC = X) of a hypothetical averaged measure, based on the initial reliabilities estimated for our datasets A and B. This number was calculated using the Spearman-Brown prediction formula. CI – confidence interval; SD – Standard Deviation; *H0: ICC is not significantly different from 0. N represents the actual size of the sample used to calculate the ICCs and the CVs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th></th>
+      <th colspan="4">ICC</th>
+      <th rowspan="3">CV mean (SD)</th>
+      <th colspan="3">Number of samples necessary to achieve an ICC = X of the averaged measurements in a design including multiple samples per individual</th>
+    </tr>
+    <tr>
+      <th rowspan="2" colspan="3"></th>
+      <th rowspan="2">N</th>
+      <th colspan="2">95% CI</th>
+      <th rowspan="2">F test*</th>
+      <th rowspan="2">p-value</th>
+      <th rowspan="2">X = 0.80 (good reliability)</th>
+      <th rowspan="2">X = 0.70 (moderate)</th>
+      <th rowspan="2">X = 0.50 (fair)</th>
+    </tr>
+    <tr>
+      <th>Lower</th>
+      <th>Upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Study A</td>
+      <td>Plasma (N = 16)</td>
+      <td>0.29</td>
+      <td>16</td>
+      <td>0.06</td>
+      <td>0.59</td>
+      <td>F(15, 45) = 2.61</td>
+      <td>0.01</td>
+      <td>57 %</td>
+      <td>9.79</td>
+      <td>5.71</td>
+      <td>2.45</td>
+    </tr>
+    <tr>
+      <td>Saliva (N = 13)</td>
+      <td>0.23</td>
+      <td>13</td>
+      <td>− 0.01</td>
+      <td>0.58</td>
+      <td>F(12, 36) = 2.22</td>
+      <td>0.32</td>
+      <td>63 %</td>
+      <td>13.39</td>
+      <td>7.81</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <td>Study B</td>
+      <td>Plasma (N = 19)</td>
+      <td>0.49</td>
+      <td>19</td>
+      <td>0.06</td>
+      <td>0.76</td>
+      <td>F(18, 18) = 2.84</td>
+      <td>0.01</td>
+      <td>42 %</td>
+      <td>4.16</td>
+      <td>2.43</td>
+      <td>1.05</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Between-visits reliability analysis for each pair of visits
 
 Detailed descriptions of the ICCs and CV estimated for each pair of the four visits included in our analysis of dataset A are presented in Supplementary file 1 – Table 1. For plasma, we found higher estimates of ICC for the following pairs: visits 1–2: 0.80 and visits 3–4: 0.66 (Supplementary file 1 – Table 1). The CVs were 31% for visits 1–2% and 45% for visits 3–4. The estimated ICC for any of the other pairs of visits was not significantly different from 0 (Supplementary file 1 – Table 1). For saliva, we only found higher estimates of ICC for the pair visits 2–3: 0.82 (Supplementary file 1 – Table 1). The estimated ICC for the remaining pairs was not significantly different from 0 (Supplementary file 1 – Table 1). Please see Figure 1—figure supplement 2 and Supplementary file 1 – Table 1 for correlations between baseline concentrations of oxytocin for each pair of visits of dataset A.
 
-## Between-visits reliability analysis controlling for the time-interval between visits
+##### Between-visits reliability analysis controlling for the time-interval between visits
 
 In line with our main analysis, we found poor reliabilities for both salivary and plasmatic oxytocin in a subset of our sample where two consecutive saliva and plasma samples were collected with an exact gap of 7 days. For both plasma and saliva, the estimated ICCs were not significantly different from 0 and the CVs were 40% and 49%, respectively (Supplementary file 1 – Table 2). Variance in the within-subject intervals between samples did not correlate with within-participant variance in oxytocin concentrations across participants neither for plasma (Spearman Rho = 0.406, p=0.118) or saliva (Spearman Rho = −0.524, p=0.065).
 
-## Within-visit reliability (placebo visit)
+##### Within-visit reliability (placebo visit)
 
 We estimated the within-visit ICC to be excellent 0.92 and the CV to be 20% in the placebo session (Supplementary file 1 – Table 3).
 
-## Dataset B
+#### Dataset B
 
 We estimated the ICC to be 0.49 for single measurements of baseline plasmatic oxytocin across the two visits. The mean CV was 42%. The number of measures that would have been required to achieve good reliability of a putative averaged measure was estimated to be 4.16 (Table 1).
 
-## Effects of intranasal and intravenous oxytocin administration on salivary and plasmatic oxytocin concentrations
+### Effects of intranasal and intravenous oxytocin administration on salivary and plasmatic oxytocin concentrations
 
 For salivary oxytocin, we found a significant treatment × time interaction (F(3, 36) = 18.29, p<0.001). Post-hoc analyses revealed that the administration of oxytocin either by intranasal spray or nebuliser, but not the administration of intravenous oxytocin or placebo, resulted in significant increases of salivary oxytocin levels from baseline (Baseline vs Post-administration: Spray – t(12) = 7.06, adjusted p<0.001; Nebuliser - t(12) = 7.61, adjusted p<0.001; Intravenous - t(12) = 0.07, adjusted p=0.99; Placebo - t(12) = 0.15, adjusted p=0.99) (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62456/elife-62456-fig2-v1.jpg)
 
-**Figure 2.:** A) and plasmatic (B) oxytocin.We examined the effects of treatment, time and treatment × time on salivary and plasmatic oxytocin in a two-way analysis of variance. Post-administration samples were collected at 115 min post-dosing. Statistical significance was set to p<0.05. **p=0.001 and ****p<0.001, using Tukey for multiple testing correction during post-hoc investigation of significant interaction effects. Please note that although all the statistical analyses were conducted on log-transformed oxytocin concentrations, here we plot the raw values to facilitate interpretation.
+**Figure 2.:** We examined the effects of treatment, time and treatment × time on salivary and plasmatic oxytocin in a two-way analysis of variance. Post-administration samples were collected at 115 min post-dosing. Statistical significance was set to p<0.05. **p=0.001 and ****p<0.001, using Tukey for multiple testing correction during post-hoc investigation of significant interaction effects. Please note that although all the statistical analyses were conducted on log-transformed oxytocin concentrations, here we plot the raw values to facilitate interpretation.
 
 For plasmatic oxytocin, we found a significant time × treatment interaction (F(3, 45) = 3.99, p=0.02). Post-hoc investigations revealed that the intravenous administration of oxytocin resulted in a significant increase in plasmatic oxytocin, but placebo or intranasal administration of oxytocin using either the spray or the nebuliser did not produce any changes from baseline at this time-point (Baseline vs Post-administration: Spray – t(15) = 1.38, adjusted p=0.52; Nebuliser - t(15) = 0.25, adjusted p=0.99; Intravenous - t(15) = 3.73, adjusted p=0.001; Placebo - t(15) = 1.54, adjusted p=0.41) (Figure 2).
 
-## Association between salivary and plasmatic oxytocin at baseline and after administration of exogenous oxytocin
+### Association between salivary and plasmatic oxytocin at baseline and after administration of exogenous oxytocin
 
 We did not find a significant correlation between oxytocin concentrations measured in saliva and plasma at baseline (r = 0.10 – Bootstrap 95% CI [−0.23,0.37], p=0.18, BF = 3.02, N = 63) (Figure 3) or following the administration of exogenous oxytocin (spray: r = −0.21 Bootstrap 95% CI [−0.64,0.32], p=0.43, BF = 2.43, N = 16; nebuliser: r = 0.07 Bootstrap 95% CI [−0.45, 0.57], p=0.65, BF = 3.32, N = 14; intravenous: r = −0.05 Bootstrap 95% CI [−0.52, 0.43], p=0.84, BF = 3.27, N = 17; placebo: r = −0.20 Bootstrap 95% CI [−0.64, 0.32], p=0.45, BF = 2.48, N = 16) (Figure 4). Changes in oxytocin concentrations from baseline to post-administration also did not correlate between saliva and plasma, in any of our treatment conditions (spray: r = 0.134 – Bootstrap 95% CI [−0.25,0.67], p=0.62, BF = 4.68, N = 16; nebuliser: r = 0.10 Bootstrap 95% CI [−0.50, 0.45], p=0.73, BF = 4.71, N = 14; intravenous: r = 0.08 Bootstrap 95% CI [−0.36, 0.68], p=0.76, BF = 5.19, N = 17; placebo: r = −0.16 Bootstrap 95% CI [−0.39, 0.27], p=0.56, BF = 4.47, N = 16).
 
@@ -114,13 +199,13 @@ In summary, single measurements of baseline levels of endogenous oxytocin in sal
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Dataset A included 17 healthy, right-handed, male volunteers (mean age (SD) = 23.75 (5.10); range = 18–34) who contributed samples over four visits, as part of a larger study. Dataset B (independent replication study) included 20 healthy, right-handed, male volunteers (mean age (SD) = 24.8 (3.70); range = 21–37), who contributed samples over two visits as part of a different study (both studies described below). All participants had no history of psychiatric disorders or substance abuse, scored negatively on a screening test for recreational drug use, and did not currently use any medication. In dataset A, we screened participants for psychiatric conditions using the Symptom Checklist-90-Revised (Ruis et al., 2014) and the Beck Depression Inventory-II (Sacco et al., 2016) questionnaires. In dataset B, we used the MINI International Neuropsychiatric Interview (Sheehan et al., 1998). Participants were advised to avoid heavy exercise, alcohol, or smoking the day before scanning and avoid any drink or food within 2 hr before scanning. Both studies were approved by King’s College London Research Ethics Committee (Dataset A: PNM/13/14–163; Dataset B: PNM/14/15–32). For both studies, our sample size and number of samples collected per individual would have allowed us to detect intra-class correlation coefficients (ICC) of at least 0.70 (moderate reliability) with 80% of power (Bujang and Baharum, 2017).
 
-## Study design
+### Study design
 
-## Dataset A
+#### Dataset A
 
 Participants were recruited to participate in a double-blind, placebo-control, triple-dummy, cross-over MRI study exploring the effects of various methods of exogenous oxytocin administration on cerebral physiological responses at rest (Martins et al., 2020). Participants received, in counterbalanced order, over four consecutive visits spaced on average 8.80 days apart (SD 5.72; range 3–28), approximately 40IU of intranasal oxytocin, either with a nasal spray or the SINUS nebulizer (PARI GmbH), 10IU of oxytocin intravenously, or placebo. The administration of 10IU of oxytocin intravenously produces sustained increases in the levels of plasmatic oxytocin over a 2 hr course (Martins et al., 2020). This aspect of our design would allow us to discard the possibility that lack of changes in salivary oxytocin are due to under dosing. In each visit, blood samples were collected at baseline, immediately after each treatment administration, and at six time points post-administration, with the last sample acquired when participants came out of the scanner at about 115 min post-administration (Figure 6). Saliva samples were acquired at baseline and together with the last blood sample. For the purposes of this report, we use the plasmatic and salivary oxytocin measurements that were obtained at baseline and at 115 min after the end of our last treatment administration (this means that our post-administration samples were collected 115 min after the intranasal administrations and 120 mins after the intravenous administration of oxytocin). The full time course of changes in plasmatic oxytocin after the administration of intranasal and intravenous oxytocin in this study has been reported elsewhere (Martins et al., 2020).
 
@@ -130,23 +215,23 @@ Participants were recruited to participate in a double-blind, placebo-control, t
 
 All visits were conducted during the morning to avoid the potential confounding of circadian variations in oxytocin levels (Amico et al., 1989; Reppert et al., 1984). In addition, we also made sure that each participant was tested at approximately the same time across all four visits (all participants were tested in sessions with less than one hour difference in their onset time, except for one participant where the difference in the onset of one session compared to the other three sessions was 1.5 hr). All visits were identical in structure (duration ~3.5 hr). Upon arrival, participants gave consent and completed the required questionnaires. We then fitted an intravenous cannula on each arm of our participants (one for the intravenous administration and another for blood-sampling). Treatment was administered according to the study protocol (Figure 6). At the end of the treatment administration, participants were taken to an MRI scanner where we obtained a number of resting state and structural scans over the course of the next 2 hr.
 
-## Dataset B
+#### Dataset B
 
 Participants were recruited to participate in a study examining the effects of MDMA on social cognition (Gabay et al., 2019). Briefly, baseline blood samples were obtained 15 min before MDMA/placebo administration on two separate occasions, spaced on average 9.30 days apart (SD = 5.70 days; range: 7–31 days).
 
-## Saliva and plasma collections
+### Saliva and plasma collections
 
 Blood was collected in 5 ml ethylenediaminetetraacetic acid vacutainers (Kabe EDTA tubes 078001), placed in iced water and centrifuged at 1300 × g for 10 min at 4°C within 20 min of collection and then 0.5 ml of plasma was immediately pipetted into 2 ml Eppendorf vials. Samples were immediately stored −80°C until analysis. Saliva samples were collected using a salivette (Sarstedt 51.1534.500). Participants were instructed to place the swab from the Salivette kit in their mouth and chew it gently for 1 min to soak as much saliva as possible. After this, the swab was then returned back to the Salivette, centrifuged, 0.5 ml of saliva was aliquoted to 1.5 ml Eppendorf vials and then stored in the same manner as blood samples. Salivettes allow for a collection of mean saliva volumes in the range of 1.1 ± 0.3 ml (according to the manufacturer); high recovery of the concentrations of small peptides in saliva are consistently achieved when the sampled volumes are larger than 0.25 ml (Gröschl et al., 2008; Harmon et al., 2007). For both saliva and plasma, we followed the RIAgnosis standard operating procedures.
 
 We followed this strict protocol, putting all samples in iced water until centrifugation with immediate storage at −80°C until analysis to minimize the impact putative differences in degradation of the peptide related to differences in the processing of the samples might have on the reliability of the estimated concentrations of oxytocin. Minimizing the time-interval samples were kept in the collection devices also allowed us to keep potential absorption to the walls of these recipients to a minimum (Gröschl et al., 2008).
 
-## Quantification of oxytocin in plasma and saliva samples
+### Quantification of oxytocin in plasma and saliva samples
 
 For both datasets, plasma and saliva oxytocin levels were analysed by a third party (RIAgnosis, Munich, Germany) using a Radioimmunoassay (RIA), as previously described (Kagerbauer et al., 2013). Plasma samples were extracted before quantification. Saliva samples were not extracted prior to quantification since unpublished data from RIAgnosis found no differences in oxytocin concentrations between extracted and simply evaporated saliva samples. RIA has been previously standardised and validated and represents the gold-standard for oxytocin measurement in biological fluids (Kagerbauer et al., 2013; Landgraf, 1981; Landgraf and Günther, 1983; Landgraf et al., 1982a; Landgraf et al., 1983; Landgraf et al., 1982b; Martin et al., 2014). The detection limit is in the 0.1–0.5 pg/sample range, depending on the age of the tracer. Cross-reactivity with vasopressin, ring moieties and terminal tripeptides of both oxytocin and vasopressin and a wide variety of peptides comprising 3 (alpha-melanocyte-stimulating hormone) up to 41 (corticotrophin-releasing factor) amino acids are <0.7% throughout. The intra- and inter-assay variabilities are <10% (Kagerbauer et al., 2013).
 
-## Dataset A
+### Dataset A
 
-## Between-visits reliability analysis
+#### Between-visits reliability analysis
 
 Reliability refers to the reproducibility of values of a measurement in repeated trials on the same individuals (Hopkins, 2000). Reliability can be quantified using two sets of metrics providing complementary information: absolute and relative reliability. Absolute reliability is the degree to which repeated measurements within the same subject vary over time (Hopkins, 2000). Relative reliability is the degree to which individuals maintain their position in a sample of subjects measured over time (Hopkins, 2000). Absolute and relative reliability of plasma and salivary oxytocin measurements were estimated using the within-subject CV and the ICC, respectively. ICC was estimated in a two-way mixed model, single measures, absolute agreement (Koo and Li, 2016). We first estimated the reliability across all four sessions, and subsequently for each pair of visits to assess if time-interval between sample collections may impact on reliability indexes estimation. Only participants presenting baseline measures across all four sessions were included in the reliability analysis, as previously suggested (Cuesta Izquierdo and Fonseca Pedrero, 2014).
 
@@ -154,42 +239,42 @@ Since there was considerable variability in the time-interval between visits acr
 
 Correlations are often used as an index for reliability, even though they cannot provide information about the absolute agreement of two sets of measurements (Qin et al., 2019). Hence, to facilitate comparisons with previous reports, we also calculated Pearson’s correlation coefficients, with bootstrapping (1000 samples), to evaluate correlations between baseline concentrations of oxytocin for each pair of visits. The results of this analysis are presented below in the Table S1 and Figure S2.
 
-## Within-visit reliability analysis (placebo visit)
+#### Within-visit reliability analysis (placebo visit)
 
 To investigate the reliability of salivary and plasmatic oxytocin concentration within the same visit, we calculated the ICC and CV as described above for two samples acquired before any treatment administration and the intravenous infusion of saline during the placebo session. These samples where acquired with an approximate 15 min interval in between them.
 
-## Mean concentrations across visits
+#### Mean concentrations across visits
 
 Mean concentrations of saliva and plasma oxytocin across the four visits were compared using repeated-measures one-way analysis of variance.
 
-## Treatment effects
+#### Treatment effects
 
 The effect of treatment on blood/saliva oxytocin concentration were assessed using a 4 × 2 repeated-measures two-way analysis of variance Treatment (four levels: Spray, Nebuliser, Intravenous and Placebo) × Time (two levels: Baseline and post-administration). Post-hoc comparisons to clarify a significant interaction were corrected for multiple comparisons following the Tukey procedure.
 
-## Association between salivary and plasmatic oxytocin levels
+#### Association between salivary and plasmatic oxytocin levels
 
 We assessed correlations between salivary and plasmatic concentrations of oxytocin sampled at baseline and post-administration. For the baseline measurements, we pooled data across treatment levels because there were no differences between groups on mean baseline concentrations of oxytocin. To account for the non-independence among the four data points within each subject, we used multilevel correlation, where we modeled participant as a random effect. For the post-administration measurements, we calculated Pearson’s correlation coefficient for each treatment level separately because group differences in mean scores on these measures might result in illusory correlations if the drug and placebo samples were pooled together (Paloyelis et al., 2010). As a final sanity check, we also investigated correlations between the changes from baseline to post-administration in saliva and plasma in each of our treatment conditions separately. Since our sample was relatively small and therefore the lack of significant correlations between salivary and plasmatic oxytocin could simply reflect lack of sensitivity, we followed this frequentist correlation analysis with Bayesian statistics to quantify relative evidence for both the null and alternative hypotheses.
 
-## Outliers and missing values
+#### Outliers and missing values
 
 Salivary oxytocin concentrations were missing for three participants, and plasmatic oxytocin concentration for one participant. One measure of baseline oxytocin in saliva and two post-administration measures in the nebuliser condition were discarded after they had been identified as outliers. Outliers were identified using the outlier labelling rule (Kwak and Kim, 2017); this means that a data point was identified as an outlier if it was more than 1.5 x interquartile range above the third quartile or below the first quartile. A total of 13 and 16 participants were included in the reliability analysis of salivary and plasmatic oxytocin, respectively.
 
-## Dataset B
+### Dataset B
 
-## Mean concentrations across visits
+#### Mean concentrations across visits
 
 Mean concentrations of plasma oxytocin across the two visits were compared using a paired T-test.
 
-## Reliability analysis
+#### Reliability analysis
 
 Absolute and relative reliability of plasma oxytocin measurements were analysed for the two baseline measures obtained from each of the two visits, following the methods described for dataset A.
 
-## Outliers and missing values
+#### Outliers and missing values
 
 There were no missing values. One baseline measure for one of the visits was discarded after being identified as an outlier. A total of 19 participants were included in the reliability analysis.
 
 Increasing the number of observations per individual and averaging across several samples collected on different occasions is an approach commonly used to control within-individual variation and maximize reliability (Walker, 2008). Hence, we expanded our reliability analysis by asking how many additional measures of the same individual would be theoretically required to achieve different levels of reliability of a hypothetical averaged measure, based on the initial reliabilities estimated in the studies A and B. This number was calculated using the Spearman-Brown prediction formula (de Vet et al., 2017). For these calculations, we considered cut-offs of ICC = 0.50 (fair reliability), 0.70 (moderate), and 0.80 (good) as suggested by Koo and Li, 2016.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were conducted on log-transformed oxytocin concentrations given the deviations of these measurements from a Gaussian distribution. The statistical analysis investigating treatment effects on salivary and plasmatic oxytocin were performed using SPSS (version 24, IBM, Armonk, NY, USA). The frequentist and Bayesian correlations were implemented in the correlation package from R (version 3.5.3), using bootstrapping 1000 samples. For the bayesian correlations, we used beta priors’ distributions centred around zero, with a width parameter of 1. An increase in Bayes Factor (BF) in our analyses corresponds to an increase in evidence in favor of the null hypothesis. To interpret BF, we used the Lee and Wagenmakers’ classification scheme (Lee MD, 2014): BF <1/10, strong evidence for alternative hypothesis; 1/10 < BF < 1/3, moderate evidence for alternative hypothesis; 1/3 < BF < 1, anecdotal evidence for alternative hypothesis; BF >1, anecdotal evidence for the null hypothesis; 3 < BF < 10, moderate evidence for the null hypothesis; BF >10, strong evidence for the null hypothesis. Figures were produced using the ggplot package from R (version 3.5.3). p<0.05 (two-tailed) was set as threshold of statistical significance for all analyses.

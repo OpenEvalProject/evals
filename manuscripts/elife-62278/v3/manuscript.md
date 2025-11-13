@@ -58,11 +58,903 @@ We enrolled 987 children in 495 compounds during the baseline phase (February 20
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62278/elife-62278-fig1-v3.jpg)
 
-**Figure 1.:** *Eligible for enrollment at baseline and/or 12 months but traveling at time of visit. †Children removed from 24-month analysis because their compound received an intervention after completion of the baseline phase. Source files available in Figure 1—source data 1 and Figure 1—source code 1.Figure 1—source code 1.Figure 1—source data 1.
+**Figure 1.:** *Eligible for enrollment at baseline and/or 12 months but traveling at time of visit. †Children removed from 24-month analysis because their compound received an intervention after completion of the baseline phase. Source files available in Figure 1—source data 1 and Figure 1—source code 1.
 
 At baseline enrollment, intervention compounds had more residents, households, and on-premise water taps than controls, though the number of shared latrines was similar (Table 1). Animals were observed in over half of all compounds. Intervention and control households had similar wealth scores, though intervention households had more members and were more crowded while control households more often had walls made of sturdy materials. All households used a municipal water tap as their primary drinking water source with 78% reporting use of a tap on the compound grounds. At baseline, latrines used by intervention households more often had pedestals or slabs, drop-hole covers, and sturdy walls compared with controls. Consistent with previous estimates in urban Maputo (Satterthwaite et al., 2019), open defecation was rare in our study population with only one control household reporting open defecation at baseline. Baseline characteristics of intervention and control children were similar: the average age at enrollment was 23 months (SD = 13), 51% were female, and 32% were still breastfeeding (Table 1). The age distributions of intervention and control children were similar at baseline and both follow-up phases (Appendix 1—figure 3).
 
+**Table 1.**
+ Baseline characteristics of enrolled children, households, and compounds.Table 1—source code 1.Baseline characteristics.Table 1—source data 1.Baseline characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Control</th>
+      <th colspan="2">Intervention</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>n (%) or mean (SD)</th>
+      <th>N</th>
+      <th>n (%) or mean (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Child level variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age at survey, days*</td>
+      <td>520</td>
+      <td>700 (405)</td>
+      <td>441</td>
+      <td>694 (403)</td>
+    </tr>
+    <tr>
+      <td>Sex, female</td>
+      <td>520</td>
+      <td>266 (51%)</td>
+      <td>444</td>
+      <td>227 (51%)</td>
+    </tr>
+    <tr>
+      <td>Child is breastfed with or without complementary feeding</td>
+      <td>526</td>
+      <td>169 (32%)</td>
+      <td>448</td>
+      <td>143 (32%)</td>
+    </tr>
+    <tr>
+      <td>Child is exclusively breastfed</td>
+      <td>526</td>
+      <td>49 (9.3%)</td>
+      <td>448</td>
+      <td>37 (8.3%)</td>
+    </tr>
+    <tr>
+      <td>Child feces reported to be disposed of in a latrine</td>
+      <td>526</td>
+      <td>148 (28%)</td>
+      <td>448</td>
+      <td>141 (31%)</td>
+    </tr>
+    <tr>
+      <td>Child wears diapers</td>
+      <td>526</td>
+      <td>342 (65%)</td>
+      <td>447</td>
+      <td>294 (66%)</td>
+    </tr>
+    <tr>
+      <td>Caregiver completed primary school</td>
+      <td>528</td>
+      <td>287 (54%)</td>
+      <td>451</td>
+      <td>239 (53%)</td>
+    </tr>
+    <tr>
+      <td>Child's mother is alive</td>
+      <td>513</td>
+      <td>503 (98%)</td>
+      <td>435</td>
+      <td>426 (98%)</td>
+    </tr>
+    <tr>
+      <td>Respondent is child's mother</td>
+      <td>519</td>
+      <td>368 (71%)</td>
+      <td>443</td>
+      <td>284 (64%)</td>
+    </tr>
+    <tr>
+      <td>Household level variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Household population</td>
+      <td>441</td>
+      <td>5.4 (2.4)</td>
+      <td>365</td>
+      <td>6.1 (3.0)</td>
+    </tr>
+    <tr>
+      <td>Household wealth score, 0 (poorer) - 1 (wealthier)†</td>
+      <td>440</td>
+      <td>0.45 (0.10)</td>
+      <td>365</td>
+      <td>0.44 (0.10)</td>
+    </tr>
+    <tr>
+      <td>Household crowding, &gt;3 persons/room</td>
+      <td>440</td>
+      <td>54 (12%)</td>
+      <td>365</td>
+      <td>60 (17%)</td>
+    </tr>
+    <tr>
+      <td>Household floor is covered‡</td>
+      <td>440</td>
+      <td>426 (97%)</td>
+      <td>365</td>
+      <td>333 (91%)</td>
+    </tr>
+    <tr>
+      <td>Household wall made of bricks, concrete, or similar‡</td>
+      <td>440</td>
+      <td>304 (69%)</td>
+      <td>365</td>
+      <td>215 (59%)</td>
+    </tr>
+    <tr>
+      <td>Household drinking water source inside compound</td>
+      <td>435</td>
+      <td>324 (74%)</td>
+      <td>360</td>
+      <td>294 (82%)</td>
+    </tr>
+    <tr>
+      <td>Latrine used by household has a ceramic or masonry pedestal‡</td>
+      <td>432</td>
+      <td>153 (35%)</td>
+      <td>359</td>
+      <td>142 (40%)</td>
+    </tr>
+    <tr>
+      <td>Latrine used by household has a drop-hole cover‡</td>
+      <td>434</td>
+      <td>232 (53%)</td>
+      <td>359</td>
+      <td>224 (62%)</td>
+    </tr>
+    <tr>
+      <td>Compound level variables</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of compound members</td>
+      <td>287</td>
+      <td>14 (6.2)</td>
+      <td>208</td>
+      <td>19 (12)</td>
+    </tr>
+    <tr>
+      <td>Number of households</td>
+      <td>287</td>
+      <td>3.8 (2.1)</td>
+      <td>208</td>
+      <td>4.4 (3.7)</td>
+    </tr>
+    <tr>
+      <td>Number of water taps in compound</td>
+      <td>283</td>
+      <td>0.98 (0.95)</td>
+      <td>207</td>
+      <td>1.4 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Number of latrines in compound</td>
+      <td>287</td>
+      <td>1.0 (0.20)</td>
+      <td>207</td>
+      <td>1.1 (0.57)</td>
+    </tr>
+    <tr>
+      <td>Number of people sharing a latrine</td>
+      <td>285</td>
+      <td>14 (6.2)</td>
+      <td>197</td>
+      <td>17 (8.9)</td>
+    </tr>
+    <tr>
+      <td>Number of households sharing a latrine</td>
+      <td>285</td>
+      <td>3.7 (1.8)</td>
+      <td>197</td>
+      <td>4.0 (2.8)</td>
+    </tr>
+    <tr>
+      <td>Latrine walls made of brick, concrete or similar‡</td>
+      <td>282</td>
+      <td>72 (26%)</td>
+      <td>204</td>
+      <td>67 (33%)</td>
+    </tr>
+    <tr>
+      <td>Compound population density, persons/square meter§</td>
+      <td>281</td>
+      <td>0.071 (0.04)</td>
+      <td>205</td>
+      <td>0.087 (0.05)</td>
+    </tr>
+    <tr>
+      <td>Compound has electricity that normally functions</td>
+      <td>287</td>
+      <td>251 (87%)</td>
+      <td>208</td>
+      <td>189 (91%)</td>
+    </tr>
+    <tr>
+      <td>Compound is prone to flooding</td>
+      <td>287</td>
+      <td>184 (64%)</td>
+      <td>208</td>
+      <td>120 (58%)</td>
+    </tr>
+    <tr>
+      <td>Any animals observed in compound‡</td>
+      <td>287</td>
+      <td>170 (59%)</td>
+      <td>208</td>
+      <td>132 (63%)</td>
+    </tr>
+    <tr>
+      <td>Dog(s) observed‡</td>
+      <td>287</td>
+      <td>14 (4.9%)</td>
+      <td>208</td>
+      <td>14 (6.7%)</td>
+    </tr>
+    <tr>
+      <td>Chicken(s) or duck(s) observed‡</td>
+      <td>287</td>
+      <td>40 (14%)</td>
+      <td>208</td>
+      <td>30 (14%)</td>
+    </tr>
+    <tr>
+      <td>Cat(s) observed‡</td>
+      <td>287</td>
+      <td>149 (52%)</td>
+      <td>208</td>
+      <td>116 (56%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are n (%) or mean (standard deviation) and collected by questionnaire unless otherwise noted.* Age range 32–1819 days, IQR 339–1021 days. Age distributions available in Appendix 1—figure 3.†Assessed using Simple Poverty Scorecard for Mozambique (http://www.simplepovertyscorecard.com/MOZ_2008_ENG.pdf).‡Data collected by direct observation.§Calculated as # of people living in the compound divided by the area of the compound in square meters. Source files available in Table 1—source data 1 and Table 1—source code 1._
+
 We used the Luminex Gastrointestinal Pathogen Panel (GPP), a qualitative multiplex molecular assay, to simultaneously test for 15 enteric pathogens in stool samples, including nine bacteria, three protozoa, and three viruses. We detected ≥1 bacterial or protozoan enteric infection, our pre-defined primary outcome, in 78% (591/753) of children with stools available at baseline. We measured our pre-defined secondary outcome, ≥1 STH re-infection, using the Kato-Katz microscope method and detected ≥1 STH in 45% (308/698) of stools at baseline. The prevalences of pre-defined outcomes, individual pathogens, and pathogen types were similar between the intervention and control arms at baseline (Table 2). The prevalence of most bacterial, protozoan, and STH infections increased with age while the prevalence of enteric viruses decreased with age (Appendix 1—table 2 and Appendix 1—figure 4).
+
+**Table 2.**
+ Effect of the intervention on bacterial, protozoan, viral, and STH infection and diarrhea at 12 and 24 months post-intervention.Table 2—source code 1.Intervention effect at 12 and 24 months.Table 2—source data 1.Intervention effect at 12 and 24 months.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Prevalence</th>
+      <th colspan="2">12-month Prevalence ratio (95% CI), p-value *</th>
+      <th colspan="2">24-month Prevalence ratio (95% CI), p-value†</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Baseline</th>
+      <th>12 month</th>
+      <th>24 month</th>
+      <th>Unadjusted</th>
+      <th>Adjusted§</th>
+      <th>Unadjusted</th>
+      <th>Adjusted§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any bacterial or protozoan infection‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>313/392 (80%)</td>
+      <td>334/395 (85%)</td>
+      <td>403/459 (88%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>278/361 (77%)</td>
+      <td>347/408 (85%)</td>
+      <td>392/462 (85%)</td>
+      <td>1.04 (0.94–1.15), p=0.41</td>
+      <td>1.04 (0.94–1.15), p=0.41</td>
+      <td>1.00 (0.91–1.10), p=1.0</td>
+      <td>0.99 (0.91–1.09), p=0.89</td>
+    </tr>
+    <tr>
+      <td>Any STH infection‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>170/360 (47%)</td>
+      <td>143/283 (51%)</td>
+      <td>142/253 (56%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>138/329 (42%)</td>
+      <td>150/305 (49%)</td>
+      <td>136/292 (47%)</td>
+      <td>1.12 (0.89–1.40), p=0.33</td>
+      <td>1.11 (0.89–1.38), p=0.35</td>
+      <td>0.94 (0.75–1.17), p=0.59</td>
+      <td>0.95 (0.77–1.17), p=0.62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Diarrhea‡</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>67/526 (13%)</td>
+      <td>40/430 (9.3%)</td>
+      <td>53/390 (14%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>59/448 (13%)</td>
+      <td>59/436 (14%)</td>
+      <td>53/410 (13%)</td>
+      <td>1.41 (0.80–2.48), p=0.24</td>
+      <td>1.69 (0.89–3.21), p=0.11</td>
+      <td>0.92 (0.55–1.54), p=0.76</td>
+      <td>0.84 (0.47–1.51), p=0.56</td>
+    </tr>
+    <tr>
+      <td>Any bacteria</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>271/392 (69%)</td>
+      <td>285/395 (72%)</td>
+      <td>345/459 (75%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>227/361 (63%)</td>
+      <td>292/408 (72%)</td>
+      <td>324/462 (70%)</td>
+      <td>1.09 (0.95–1.25), p=0.25</td>
+      <td>1.09 (0.95–1.26), p=0.20</td>
+      <td>1.03 (0.90–1.18), p=0.69</td>
+      <td>1.00 (0.87–1.15), p=0.96</td>
+    </tr>
+    <tr>
+      <td>Shigella</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>179/392 (46%)</td>
+      <td>204/395 (52%)</td>
+      <td>269/459 (59%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>152/361 (42%)</td>
+      <td>218/408 (53%)</td>
+      <td>245/462 (53%)</td>
+      <td>1.13 (0.91–1.39), p=0.28</td>
+      <td>1.12 (0.92–1.38), p=0.27</td>
+      <td>0.98 (0.80–1.20), p=0.86</td>
+      <td>0.95 (0.79–1.16), p=0.64</td>
+    </tr>
+    <tr>
+      <td>ETEC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>116/392 (30%)</td>
+      <td>142/395 (36%)</td>
+      <td>127/459 (28%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>110/361 (30%)</td>
+      <td>143/408 (35%)</td>
+      <td>126/462 (27%)</td>
+      <td>0.93 (0.68–1.28), p=0.66</td>
+      <td>0.96 (0.69–1.33), p=0.81</td>
+      <td>0.95 (0.67–1.35), p=0.77</td>
+      <td>0.83 (0.57–1.19), p=0.31</td>
+    </tr>
+    <tr>
+      <td>Campylobacter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>39/392 (9.9%)</td>
+      <td>32/395 (8.1%)</td>
+      <td>48/459 (10%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>21/361 (5.8%)</td>
+      <td>35/408 (8.6%)</td>
+      <td>34/462 (7.4%)</td>
+      <td>1.78 (0.89–3.56), p=0.10</td>
+      <td>1.68 (0.82–3.45), p=0.16</td>
+      <td>1.20 (0.60–2.39), p=0.60</td>
+      <td>1.28 (0.62–2.62), 0.50</td>
+    </tr>
+    <tr>
+      <td>C. difficile</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>22/392 (5.6%)</td>
+      <td>13/395 (3.3%)</td>
+      <td>13/459 (2.8%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>13/361 (3.6%)</td>
+      <td>17/408 (4.2%)</td>
+      <td>11/462 (2.4%)</td>
+      <td>1.95 (0.71–5.35), p=0.20</td>
+      <td>2.09 (0.77–5.64), p=0.15</td>
+      <td>1.32 (0.47–3.73), p=0.60</td>
+      <td>1.41 (0.46–4.30), p=0.54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E. coli O157</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>13/392 (3.3%)</td>
+      <td>19/395 (4.8%)</td>
+      <td>25/459 (5.5%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>18/361 (5.0%)</td>
+      <td>14/408 (3.4%)</td>
+      <td>16/462 (3.5%)</td>
+      <td>0.48 (0.18–1.27), p=0.14</td>
+      <td>0.46 (0.18–1.21), p=0.12</td>
+      <td>0.43 (0.15–1.29), p=0.13</td>
+      <td>0.52 (0.17–1.59), p=0.25</td>
+    </tr>
+    <tr>
+      <td>STEC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>3/392 (0.77%)</td>
+      <td>9/395 (2.3%)</td>
+      <td>17/459 (3.7%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>10/361 (2.8%)</td>
+      <td>5/408 (1.2%)</td>
+      <td>15/462 (3.3%)</td>
+      <td>0.14 (0.03–0.67), p=0.014</td>
+      <td>0.15 (0.03–0.70), p=0.016</td>
+      <td>0.23 (0.05–1.03), p=0.055</td>
+      <td>0.24 (0.05–1.01), p=0.052</td>
+    </tr>
+    <tr>
+      <td>Any protozoa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>205/392 (52%)</td>
+      <td>236/395 (60%)</td>
+      <td>303/459 (66%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>195/361 (54%)</td>
+      <td>259/408 (63%)</td>
+      <td>296/462 (64%)</td>
+      <td>1.04 (0.87–1.24), p=0.69</td>
+      <td>1.03 (0.86–1.22), p=0.76</td>
+      <td>0.93 (0.78–1.11), p=0.40</td>
+      <td>0.91 (0.76–1.09), p=0.29</td>
+    </tr>
+    <tr>
+      <td>Giardia</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>201/392 (51%)</td>
+      <td>230/395 (58%)</td>
+      <td>294/459 (64%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>186/361 (52%)</td>
+      <td>251/408 (62%)</td>
+      <td>289/462 (63%)</td>
+      <td>1.06 (0.88–1.27), p=0.55</td>
+      <td>1.05 (0.88–1.25), p=0.58</td>
+      <td>0.96 (0.80–1.14), p=0.61</td>
+      <td>0.93 (0.78–1.11), p=0.44</td>
+    </tr>
+    <tr>
+      <td>Cryptosporidium</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>8/392 (2%)</td>
+      <td>8/395 (2%)</td>
+      <td>14/459 (3.0%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>16/361 (4.4%)</td>
+      <td>15/408 (3.7%)</td>
+      <td>15/462 (3.3%)</td>
+      <td>0.89 (0.23–3.43), p=0.87</td>
+      <td>0.89 (0.24–3.31), p=0.86</td>
+      <td>0.46 (0.11–1.93), p=0.29</td>
+      <td>0.53 (0.13–2.14), p=0.37</td>
+    </tr>
+    <tr>
+      <td>Any virus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>53/392 (14%)</td>
+      <td>52/395 (13%)</td>
+      <td>59/459 (13%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>52/361 (14%)</td>
+      <td>45/408 (11%)</td>
+      <td>62/462 (13%)</td>
+      <td>0.77 (0.45–1.32), p=0.35</td>
+      <td>0.75 (0.44–1.27), p=0.29</td>
+      <td>0.96 (0.55–1.68), p=0.88</td>
+      <td>1.03 (0.57–1.86), p=0.92</td>
+    </tr>
+    <tr>
+      <td>Norovirus GI/GII</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>38/392 (9.7%)</td>
+      <td>44/395 (11%)</td>
+      <td>47/459 (10%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>39/361 (11%)</td>
+      <td>37/408 (9.1%)</td>
+      <td>55/462 (12%)</td>
+      <td>0.71 (0.38–1.33), p=0.28</td>
+      <td>0.68 (0.36–1.27), p=0.23</td>
+      <td>1.00 (0.52–1.93), p=0.99</td>
+      <td>1.10 (0.55–2.18), p=0.79</td>
+    </tr>
+    <tr>
+      <td>Adenovirus 40/41</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>13/392 (3.3%)</td>
+      <td>9/395 (2.3%)</td>
+      <td>7/459 (1.5%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>9/361 (2.5%)</td>
+      <td>9/408 (2.2%)</td>
+      <td>6/462 (1.3%)</td>
+      <td>1.34 (0.34–5.23), p=0.68</td>
+      <td>1.24 (0.32–4.83), p=0.76</td>
+      <td>1.18 (0.23–5.98), p=0.84</td>
+      <td>0.97 (0.18–5.19), p=0.97</td>
+    </tr>
+    <tr>
+      <td>Coinfection, ≥2 GPP pathogens</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>206/392 (53%)</td>
+      <td>237/395 (60%)</td>
+      <td>302/459 (66%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>185/361 (51%)</td>
+      <td>257/408 (63%)</td>
+      <td>282/462 (61%)</td>
+      <td>1.08 (0.90–1.29), p=0.39</td>
+      <td>1.08 (0.91–1.29), p=0.37</td>
+      <td>0.95 (0.80–1.12), p=0.54</td>
+      <td>0.93 (0.79–1.10), p=0.41</td>
+    </tr>
+    <tr>
+      <td>Trichuris</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>139/360 (39%)</td>
+      <td>116/283 (41%)</td>
+      <td>124/253 (49%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>117/329 (36%)</td>
+      <td>120/305 (39%)</td>
+      <td>117/292 (40%)</td>
+      <td>1.05 (0.82–1.35), p=0.68</td>
+      <td>1.01 (0.79–1.28), p=0.96</td>
+      <td>0.89 (0.69–1.16), p=0.40</td>
+      <td>0.86 (0.67–1.10), p=0.22</td>
+    </tr>
+    <tr>
+      <td>Ascaris</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>95/360 (26%)</td>
+      <td>82/283 (29%)</td>
+      <td>78/253 (31%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>68/329 (21%)</td>
+      <td>87/305 (29%)</td>
+      <td>56/292 (19%)</td>
+      <td>1.26 (0.87–1.82), p=0.22</td>
+      <td>1.33 (0.92–1.93), p=0.13</td>
+      <td>0.80 (0.52–1.21), p=29</td>
+      <td>0.83 (0.54–1.27), p=0.39</td>
+    </tr>
+    <tr>
+      <td>Coinfection, ≥2 STH</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>64/360 (18%)</td>
+      <td>55/283 (19%)</td>
+      <td>60/253 (24%)</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>47/329 (14%)</td>
+      <td>57/305 (19%)</td>
+      <td>37/292 (13%)</td>
+      <td>1.16 (0.76–1.77), p=0.50</td>
+      <td>1.17 (0.76–1.79), p=0.49</td>
+      <td>0.67 (0.40–1.13), p=0.13</td>
+      <td>0.63 (0.37–1.07), p=0.084</td>
+    </tr>
+  </tbody>
+</table>
+
+_Prevalence results are presented as (n/N (%)). All effect estimates are presented as prevalence ratios (ratio of ratios) and estimated using generalized estimating equations to fit Poisson regression models with robust standard errors.*Analysis includes all children measured at baseline and 12-month visits.†Analysis includes all children measured at baseline and 24 month visits.‡Outcome was pre-specified in trial registration. All other outcomes are exploratory.§Pathogen outcomes adjusted for child age and sex, caregiver’s education, and household wealth index. Reported diarrhea was also adjusted for baseline presence of a drop-hole cover and reported use of a tap on compound grounds as primary drinking water source. Sample sizes for adjusted analyses are slightly smaller than numbers presented in prevalence estimates due to missing covariate data. Y. enterocolitica, V. cholerae, E. histolytica, and rotavirus were detected in <2% of samples in each arm at each phase. Descriptive data for these pathogens are available in the Appendix 1—table 2. Source files available in Table 2—source data 1 and Table 2—source code 1._
 
 The characteristics of children with repeated observations (including baseline) were similar to characteristics of children measured at baseline only (Appendix 1—table 3 and Appendix 1—table 4) and to characteristics of children measured at 12 month and/or 24 month only with the exception of age-related characteristics (Appendix 1—table 5 and Appendix 1—table 6). Over half of the children enrolled after baseline were born into study sites (336/622 [54%], Figure 1).
 
@@ -77,6 +969,451 @@ Point estimates of effect and associated confidence intervals were largely simil
 In addition to the main analyses which included all enrolled children, we also performed two sub-group analyses. The first included children who were born after the intervention was implemented (or after baseline in control compounds) and present at the 12- and/or 24-month follow-up visit. This analysis allowed us to evaluate the impact of the intervention on young children who were never exposed to poor sanitation at baseline. The second sub-group analysis included only children with repeated measures at baseline and 12- and/or 24-month follow-up.
 
 In sub-group analyses comparing children born into study compounds before the 24-month visit with children of similar ages at baseline (<2 years old), there was suggestive evidence that the intervention reduced the prevalence of infection with any STH by 49% (n = 522; adjusted prevalence ratio 0.51, [95% CI 0.27–0.95]), Trichuris by 76% (n = 522; 0.24, [0.10–0.60]), and Shigella by 51% (n = 630; 0.49, [0.28–0.85]) (Table 3). These effects were attenuated in sub-group analyses restricted to older children (>24 months) who were born before the intervention was implemented and present at the 24-month phase (Appendix 1—table 12). We did not observe intervention effects among children born into the study by the 12-month visit, but the sample size was small, resulting in high uncertainty in effect estimates (Appendix 1—table 13).
+
+**Table 3.**
+ Effect of intervention on bacterial, protozoan, viral, and STH infection and reported diarrhea in children born into study sites post-intervention (post-baseline) but by 24-month visit compared with children of a similar age at baseline (<2 years old).Table 3—source code 1.Intervention effect on children born after implementation.Table 3—source data 1.Intervention effect on children born after implementation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Prevalence (&lt;2 years old)</th>
+      <th colspan="2">Prevalence ratio (95% CI), p-value</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Baseline</th>
+      <th>24 month, Born-in</th>
+      <th>Unadjusted</th>
+      <th>Adjusted†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Any bacterial or protozoan infection*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>158/228 (69%)</td>
+      <td>79/106 (75%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>129/201 (64%)</td>
+      <td>71/107 (66%)</td>
+      <td>0.96 (0.77–1.21), p=0.74</td>
+      <td>0.99 (0.80–1.22), p=0.92</td>
+    </tr>
+    <tr>
+      <td>Any STH infection*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>67/205 (33%)</td>
+      <td>25/68 (37%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>52/183 (28%)</td>
+      <td>13/75 (17%)</td>
+      <td>0.52 (0.26–1.05), p=0.069</td>
+      <td>0.51 (0.27–0.95), p=0.035</td>
+    </tr>
+    <tr>
+      <td>Diarrhea*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>46/283 (16%)</td>
+      <td>18/105 (17%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>43/238 (18%)</td>
+      <td>22/100 (22%)</td>
+      <td>1.20 (0.57–2.5), p=0.64</td>
+      <td>1.37 (0.47–4.03), p=0.57</td>
+    </tr>
+    <tr>
+      <td>Any bacteria</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>142/228 (62%)</td>
+      <td>70/106 (66%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>102/201 (51%)</td>
+      <td>51/107 (48%)</td>
+      <td>0.89 (0.66–1.20), p=0.44</td>
+      <td>0.90 (0.67–1.19), p=0.45</td>
+    </tr>
+    <tr>
+      <td>Shigella</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>67/228 (29%)</td>
+      <td>36/106 (34%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>49/201 (24%)</td>
+      <td>15/107 (14%)</td>
+      <td>0.48 (0.28–0.83), p=0.009</td>
+      <td>0.49 (0.28–0.85), p=0.011</td>
+    </tr>
+    <tr>
+      <td>ETEC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>70/228 (31%)</td>
+      <td>30/106 (28%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>58/201 (29%)</td>
+      <td>24/107 (22%)</td>
+      <td>0.84 (0.46–1.52), p=0.56</td>
+      <td>0.85 (0.48–1.51), p=0.58</td>
+    </tr>
+    <tr>
+      <td>Campylobacter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>27/228 (12%)</td>
+      <td>14/106 (13%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>14/201 (7%)</td>
+      <td>13/107 (12%)</td>
+      <td>1.75 (0.63–4.87), p=0.29</td>
+      <td>1.75 (0.61–4.98), p=0.30</td>
+    </tr>
+    <tr>
+      <td>C. difficile</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>20/228 (8.8%)</td>
+      <td>7/106 (6.6%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>13/201 (6.5%)</td>
+      <td>7/107 (6.5%)</td>
+      <td>1.33 (0.36–4.86), p=0.67</td>
+      <td>1.49 (0.41–5.44), p=0.55</td>
+    </tr>
+    <tr>
+      <td>E. coli O157</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>7/228 (3.1%)</td>
+      <td>3/106 (2.8%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>9/201 (4.5%)</td>
+      <td>2/107 (1.9%)</td>
+      <td>0.45 (0.06–3.66), p=0.46</td>
+      <td>0.53 (0.07–4.24), p=0.55</td>
+    </tr>
+    <tr>
+      <td>STEC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>1/228 (0.44%)</td>
+      <td>2/106 (1.9%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>9/201 (4.5%)</td>
+      <td>1/107 (0.93%)</td>
+      <td>0.05 (0.00–1.13), p=0.059</td>
+      <td>0.05 (0.00–1.26), p=0.070</td>
+    </tr>
+    <tr>
+      <td>Any protozoa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>82/228 (36%)</td>
+      <td>47/106 (44%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>74/201 (37%)</td>
+      <td>43/107 (40%)</td>
+      <td>0.84 (0.55–1.28), p=0.42</td>
+      <td>0.90 (0.62–1.30), p=0.58</td>
+    </tr>
+    <tr>
+      <td>Giardia</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>79/228 (35%)</td>
+      <td>44/106 (42%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>68/201 (34%)</td>
+      <td>41/107 (38%)</td>
+      <td>0.90 (0.58–1.39), p=0.63</td>
+      <td>0.93 (0.64–1.36), p=0.70</td>
+    </tr>
+    <tr>
+      <td>Cryptosporidium</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>7/228 (3.1%)</td>
+      <td>5/106 (4.7%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>12/201 (6%)</td>
+      <td>5/107 (4.7%)</td>
+      <td>0.45 (0.08–2.57), p=0.37</td>
+      <td>0.64 (0.12–3.51), p=0.61</td>
+    </tr>
+    <tr>
+      <td>Any virus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>34/228 (15%)</td>
+      <td>18/106 (17%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>36/201 (18%)</td>
+      <td>18/107 (17%)</td>
+      <td>0.83 (0.37–1.83), p=0.64</td>
+      <td>0.83 (0.37–1.87), p=0.66</td>
+    </tr>
+    <tr>
+      <td>Norovirus GI/GII</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>26/228 (11%)</td>
+      <td>12/106 (11%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>26/201 (13%)</td>
+      <td>17/107 (16%)</td>
+      <td>1.24 (0.48–3.17), p=0.66</td>
+      <td>1.29 (0.49–3.41), p=0.61</td>
+    </tr>
+    <tr>
+      <td>Adenovirus 40/41</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>7/228 (3.1%)</td>
+      <td>4/106 (3.8%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>7/201 (3.5%)</td>
+      <td>0/107 (0.0%)</td>
+      <td>..§</td>
+      <td>..§</td>
+    </tr>
+    <tr>
+      <td>Coinfection, ≥2 GPP pathogens</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>92/228 (40%)</td>
+      <td>52/106 (49%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>74/201 (37%)</td>
+      <td>39/107 (36%)</td>
+      <td>0.82 (0.56–1.21), p=0.33</td>
+      <td>0.86 (0.59–1.24), p=0.41</td>
+    </tr>
+    <tr>
+      <td>Trichuris</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>48/205 (23%)</td>
+      <td>18/68 (26%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>41/183 (22%)</td>
+      <td>5/75 (6.7%)</td>
+      <td>0.25 (0.09–0.68), p=0.006</td>
+      <td>0.24 (0.10–0.60), p=0.002</td>
+    </tr>
+    <tr>
+      <td>Ascaris</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>45/205 (22%)</td>
+      <td>16/68 (24%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>29/183 (16%)</td>
+      <td>9/75 (12%)</td>
+      <td>0.70 (0.30–1.64), p=0.42</td>
+      <td>0.68 (0.30–1.54), p=0.36</td>
+    </tr>
+    <tr>
+      <td>Coinfection, ≥2 STH</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>26/205 (13%)</td>
+      <td>9/68 (13%)</td>
+      <td>..</td>
+      <td>..</td>
+    </tr>
+    <tr>
+      <td>Intervention</td>
+      <td>18/183 (9.8%)</td>
+      <td>1/75 (1.3%)</td>
+      <td>0.13 (0.02–1.08), p=0.059</td>
+      <td>0.12 (0.01–1.02), p=0.052</td>
+    </tr>
+  </tbody>
+</table>
+
+_Analysis includes children < 2 years old at baseline and children born into the study after baseline and <2 years old at the time of the 24-month visit. Prevalence results are presented as (n/N (%)). All effect estimates are presented as prevalence ratios (ratio of ratios) and estimated using generalized estimating equations to fit Poisson regression models with robust standard errors.*Outcome was pre-specified in trial registration. All other outcomes are exploratory.†Pathogen outcomes adjusted for child age and sex, caregiver’s education, and household wealth index. Reported diarrhea was also adjusted for baseline presence of a drop-hole cover and reported use of a tap on compound grounds as primary drinking water source. Sample sizes for adjusted analyses are slightly smaller than numbers presented in prevalence estimates due to missing covariate data.§Models would not converge due to sparse data. Y. enterocolitica, V. cholerae, E. histolytica, and rotavirus were detected in <2% of samples in each arm at each phase and excluded. Descriptive data for these pathogens are available in the Appendix 1—table 2. Source files available in Table 3—source data 1 and Table 3—source code 1._
 
 Longitudinal sub-group analyses explored the effect of the intervention on children with repeated measures at baseline and 12 month (for unadjusted analyses: n = 870 data points [435 children with repeat measures] for GPP outcomes, n = 572 [286] for Kato-Katz outcomes, and n = 1112 [556] for diarrhea) and at baseline and 24 month (n = 716 (358), n = 402 (201), n = 834 (417)). Effect estimates were consistent with results from the main analyses (Appendix 1—table 14 and Appendix 1—table 15) but less precise due to the reduced sample numbers.
 
@@ -136,7 +1473,7 @@ The need for effective sanitation solutions may be most urgent in densely popula
 
 ## Materials and methods
 
-## Study design and intervention
+### Study design and intervention
 
 MapSan was a controlled before-and-after trial, and details of the study design and analysis plan have been published previously (Brown et al., 2015). We conducted the study in 16 densely populated, low-income, informal neighborhoods in Maputo, Mozambique. The intervention was delivered to compounds, typically groups of three to five households (although larger and smaller compounds exist) often delineated by a wall or barrier, that shared sanitation and outdoor living space. Shared compound sanitation facilities are not considered public facilities. We collected data in an open cohort of children in intervention and control compounds at three time-points: baseline (pre-intervention), 12 months post-intervention, and 24 months post-intervention.
 
@@ -144,11 +1481,11 @@ The NGO Water and Sanitation for the Urban Poor selected intervention compounds 
 
 Intervention compounds were located in 11 neighborhoods of the Nhlamankulu and KaMaxakeni districts of Maputo (Appendix 1—figure 9). The NGO selected intervention compounds using the following criteria: (1) residents shared sanitation in poor condition as determined by an engineer; (2) the compound was located in the pre-defined implementation neighborhoods; (3) there were no fewer than 12 residents; (4) residents were willing to contribute financially to construction costs; (5) sufficient space was available for construction of the new facility; (6) the compound was accessible for transportation of construction materials and tank-emptying activities; (7) the compound had access to a legal piped water supply; and (8) the groundwater level was deep enough for construction of a septic tank. Intervention compounds were expected to pay approximately 10–15% of the construction costs (~$64 for shared latrines and ~$97 for CSBs) within one year of construction, with 25% of the total due upfront. Presence of a child was not a selection criterion and therefore not all intervention sites were included in the study. Opening of newly constructed intervention latrines occurred between February 2015 and February 2016. The study team used criteria 1, 3, 4, and 7 to select control sites that had at least one child younger than 48 months old in residence. We enrolled intervention and control compounds concurrently to limit any differential effects of seasonality or other secular trends on the outcomes (Appendix 1—figure 2). Additionally, we attempted to enroll control compounds with similar numbers of residents as intervention compounds. Willingness to pay for facilities among controls was assessed using hypothetical versions of questions posed to interventions. Control compounds were located within the 11 intervention neighborhoods and 5 adjacent but similar neighborhoods due to the limited availability of eligible compounds remaining within intervention neighborhoods (Appendix 1—figure 9). Intervention selection criteria (5, 6) and (8) were not used to select control sites as they were deemed to be related to intervention construction and maintenance and unlikely to influence our outcomes. It was not possible to blind participants or enumerators to intervention status.
 
-## Participants
+### Participants
 
 We enrolled eligible children at three time points: baseline (0 months), 12 months post-intervention, and 24 months post-intervention. Children aged 1–48 months old were eligible for baseline enrollment if we received written informed consent from a parent or guardian and if the head of the compound provided verbal assent for the compound to be included in the study. Children were eligible for enrollment at 12- and 24-month visits if they were aged 1–48 months or if they were eligible for enrollment at baseline but absent during that study visit. Children who moved into the compound fewer than 6 months before the 12-month or 24-month visit were not eligible for enrollment during that phase given their limited exposure to their new compound.
 
-## Procedures
+### Procedures
 
 Trained field enumerators completed consent procedures and surveys in the participant’s preferred language (Portuguese or Changana) and collected biological sampless from enrolled children (Appendix 1- Consent procedures, survey administration, and sample collection and analysis). At baseline we aimed to visit intervention compounds 2 weeks prior to the opening of the new latrines. We scheduled follow-up visits to be 12 months (±2 weeks) and 24 months (±2 weeks) from the date compound members began using their new latrines, with visits to control compounds made concurrently (±2 weeks).
 
@@ -158,16 +1495,16 @@ Samples were shipped frozen with temperatures monitors to the Georgia Institute 
 
 Representatives of the National Deworming Campaign (NDC) at the Mozambican Ministério da Saúde (MISAU) offered single-dose albendazole (400 mg, 200 mg for children aged 6–12 months) to all eligible members of intervention and control compounds following sample collection activities of each phase. Eligibility was defined by the NDC and included compound members older than 6 months who were not pregnant.
 
-## Outcomes
+### Outcomes
 
 For the 12-month analysis, we pre-specified the primary outcome as infection with one or more of the 12 bacterial or protozoan enteric pathogens detected by the GPP and secondary outcomes as re-infection with one or more STH as detected by Kato-Katz (following albendazole treatment at baseline), and 7-day period prevalence of caregiver-reported diarrhea. All three outcomes were considered secondary outcomes in the 24-month analysis. We defined diarrhea as the passage of three or more loose or liquid stools in a 24 hr period or any stool with blood (Arnold et al., 2013; Baqui et al., 1991). We excluded viral enteric pathogens from the primary outcome definition. The intervention may not have interrupted virus transmission due to their low infectious doses, high concentration shed in feces and extended period of shedding, environmental persistence, and capability for direct person-to-person transmission (Julian, 2016). Following reported specificity issues with the Salmonella target of the GPP, we removed it from our GPP-based outcome definitions (Duong et al., 2016; Kellner et al., 2019). In addition to the pre-specified outcomes, we evaluated the effect of the intervention on specific pathogen types (bacterial, protozoan, viral) and on individual pathogens. The results for other secondary outcomes listed in the trial registration (growth and environmental enteric dysfunction) will be published separately.
 
-## Statistical analysis
+### Statistical analysis
 
 Our sample size calculation has been described previously (Brown et al., 2015). We included all enrolled children at each visit and analysed data as repeated cross-sectional observations. We examined the effect of the intervention at the 12-month and 24-month phases separately. We conducted two sets of exploratory sub-group analyses. The first assessed the effect of the intervention on children with repeat observations at baseline and 12 months and at baseline and 24 months visits. These longitudinal analyses also served as sensitivity analyses of the impact of participant migration on effect estimates. The second sub-group analysis compared children who were born into study sites after the intervention (or after baseline in controls) but before the 12-month or 24-month visit with children of a similar age group at baseline. For example, children born after baseline but before the 24-month visit were compared with children aged 2 years old or younger at baseline. These analyses allowed us to explore whether exposure to the intervention from birth would reduce enteric pathogen infection during the first 1–2 years of life.
 
 We used a DID approach to assess the impact of the intervention on all outcomes at the 12- and 24-month visits. We used generalized estimating equations (GEE) to fit Poisson regression models with robust standard errors. Our GEE models accounted for clustering at the compound level because it was the highest level of nested data and the level of the intervention allocation (Bottomley et al., 2016). We estimated the effect of the intervention as the interaction of variables representing treatment status (intervention versus control) and phase (pre- or post-intervention). Therefore, effect estimates from our DID analysis are presented as ratio measures (ratio of prevalence ratios) instead of absolute differences. Multivariable models were adjusted for covariates determined a priori as potentially predictive of our outcomes, including child age and sex, caregiver’s education, and household wealth. Given the important and potentially non-linear relationship between age and pathogen prevalence (Appendix 1—figure 4), we also considered inclusion of a higher order age term (age squared) in our models (Appendix 1—table 10). Additional covariates (Appendix 1—table 9) were considered for inclusion in multivariable models if they were imbalanced between arms at baseline (>0.1 standardized difference in prevalence or mean) and resulted in a meaningful change in the DID effect estimate (±10% change in 12-month DID prevalence ratio). We assessed the potential impact of seasonality on our results in three ways: (1) inclusion of binary indicator of wet (November – April) and dry (May – October) season in multivariable models, (2) inclusion of a variable representing cumulative rainfall (mm) 30 days prior to sample or survey collection in multivariable models, and (3) inclusion of sine and cosine functions of sample and survey dates in multivariable models (Appendix 1—table 9 and Appendix 1—table 11). We used the same statistical approach for sub-group analyses. All analyses were performed on complete case data, and a missing data table is presented in Appendix 1 (Appendix 1—table 16). We performed all statistical analyses with Stata version 16 (StataCorp, College Station, USA).
 
-## Registration
+### Registration
 
 The trial was pre-registered at ClinicalTrials.gov (NCT02362932).

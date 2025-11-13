@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Wellcome Centre for Integrative Neuroimaging, Dept of Experimental Psychology, University of Oxford Oxford United Kingdom
-2. https://ror.org/04cw6st05 Department of Psychology, Royal Holloway, University of London, Egham Hill London United Kingdom
-3. https://ror.org/00cvxb145 Department of Speech and Hearing Sciences, University of Washington Seattle United States
-4. https://ror.org/013meh722 MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom
-5. https://ror.org/0080acb59 Nuffield Department of Clinical Neurosciences, John Radcliffe Hospital Oxford United Kingdom
-6. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
-7. https://ror.org/05f8d4e86 NeuroPoly Lab, Biomedical Engineering Department, Polytechnique Montreal Montreal Canada
-8. https://ror.org/052gg0110 Wellcome Centre for Integrative Neuroimaging, FMRIB Centre, Nuffield Department of Clinical Neuroscience, University of Oxford Oxford United Kingdom
+1. Wellcome Centre for Integrative Neuroimaging, Dept of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Department of Psychology, Royal Holloway, University of London, Egham Hill London United Kingdom ([ROR:04cw6st05](https://ror.org/04cw6st05))
+3. Department of Speech and Hearing Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+5. Nuffield Department of Clinical Neurosciences, John Radcliffe Hospital Oxford United Kingdom ([ROR:0080acb59](https://ror.org/0080acb59))
+6. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+7. NeuroPoly Lab, Biomedical Engineering Department, Polytechnique Montreal Montreal Canada ([ROR:05f8d4e86](https://ror.org/05f8d4e86))
+8. Wellcome Centre for Integrative Neuroimaging, FMRIB Centre, Nuffield Department of Clinical Neuroscience, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -46,29 +46,184 @@ In the present study, we used the MPM quantitative imaging protocol to map contr
 
 As part of the Oxford BOLD study, we collected brain imaging data from 162 children between the ages of 10 and 15 years, as well as performing a detailed characterisation of their language and cognitive skills. All children in the study had a nonverbal IQ >70. Children were categorised as DLD if they scored 1SD below the mean on two or more language tests (N = 57), and TD (N = 77) if they scored ±1 SD of the mean on language tests (see Methods for more detail). Behavioural testing in a further 28 revealed that they did not meet our criteria for DLD but presented with a history of speech and language (HSL) problems. After quality control, we retained MPM data from 109 of these children, including 56 TD children, 33 children with DLD, and 20 children with HSL. The children in the HSL group were excluded from comparisons of TD and DLD, but were included in continuous analyses which allow us to examine language variability. The three groups (TD, HSL, and DLD) did not differ in terms of age (see Table 1).
 
-## Whole-brain comparisons of neural microstructure in children with DLD with TD children
+**Table 1.**
+ Descriptive data for the typically developing (TD), developmental language disorder (DLD), and history of speech and language (HSL) difficulties groups.Means are shown below, with standard deviations in parentheses. Language proficiency and memory factor scores are derived from a factor analysis (for a full description, see Krishnan et al., 2021). Nonverbal IQ is a scaled score (M = 10, SD = 3) representing an average of performance on block design and matrix reasoning tasks. The last column shows whether there were significant group differences when using t-tests (p < 0.05), no correction for multiple comparisons is applied.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TD</th>
+      <th>DLD</th>
+      <th>HSL</th>
+      <th>Group differences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>12.41(1.62)</td>
+      <td>12.48(1.80)</td>
+      <td>12.40(1.67)</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>28 F:28 M</td>
+      <td>11 F:22 M</td>
+      <td>3 F:17 M</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Total intracranial volume (mm3)</td>
+      <td>1329.24 (145.98)</td>
+      <td>1345.39 (145.43)</td>
+      <td>1411.51 (158.99)</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Language proficiency</td>
+      <td>0.8 (0.45)</td>
+      <td>−0.95 (0.55)</td>
+      <td>−0.06 (0.48)</td>
+      <td>TD &gt; HSL &gt; DLD</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>0.58 (0.80)</td>
+      <td>−0.74 (0.79)</td>
+      <td>0.07 (0.77)</td>
+      <td>TD &gt; HSL &gt; DLD</td>
+    </tr>
+    <tr>
+      <td>Nonverbal IQ</td>
+      <td>12.3 (1.91)</td>
+      <td>8.65 (2.09)</td>
+      <td>11.0 (1.83)</td>
+      <td>TD &gt; HSL &gt; DLD</td>
+    </tr>
+  </tbody>
+</table>
+
+### Whole-brain comparisons of neural microstructure in children with DLD with TD children
 
 We first compared children who met criteria for DLD and TD children. There were no group differences in mean MTsat and R2* values for grey and white matter, or in total intracranial volume. The groups did differ in mean R1 values for grey matter (see Table 2), in that children with DLD had lower R1 than the TD group across all grey matter. We created averages of MTsat, R1, and R2* for each group. Across all three maps, we observed high values in primary motor, visual, and auditory cortex (see Figure 3—figure supplement 1), in line with our expectations. Additionally, we observed a close correspondence between average values of MTsat, R1, and R2* in grey and white matter in our two groups and published values (Weiskopf et al., 2013), see Table 2.
 
+**Table 2.**
+ Group mean and standard deviation of parameter values in grey and white matter in children who were typically developing (TD), had developmental language disorder (DLD), and published mean and standard deviation in adults, mean 24.2 years, SD 1.6 years (Weiskopf et al., 2013).Values in bold indicate a global difference between the TD and DLD groups (p < 0.05), uncorrected for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TD</th>
+      <th>DLD</th>
+      <th>Published values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Grey matter</td>
+    </tr>
+    <tr>
+      <td>MT</td>
+      <td>0.828 (0.018)</td>
+      <td>0.821 (0.019)</td>
+      <td>0.794 (0.014)</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>0.615 (0.012)</td>
+      <td>0.608 (0.014)</td>
+      <td>0.609 (0.008)</td>
+    </tr>
+    <tr>
+      <td>R2*</td>
+      <td>15.192 (0.437)</td>
+      <td>15.234 (0.544)</td>
+      <td>15.200 (0.400)</td>
+    </tr>
+    <tr>
+      <td colspan="4">White matter</td>
+    </tr>
+    <tr>
+      <td>MT</td>
+      <td>1.720 (0.052)</td>
+      <td>1.714 (0.053)</td>
+      <td>1.764 (0.066)</td>
+    </tr>
+    <tr>
+      <td>R1</td>
+      <td>0.973 (0.025)</td>
+      <td>0.962 (0.025)</td>
+      <td>1.036 (0.036)</td>
+    </tr>
+    <tr>
+      <td>R2*</td>
+      <td>20.672 (0.659)</td>
+      <td>20.679 (0.704)</td>
+      <td>21.000 (0.800)</td>
+    </tr>
+  </tbody>
+</table>
+
 We then investigated whether there were group differences in neural microstructure by assessing each of the parameter maps using nonparametric permutation methods and established significant clusters using the threshold-free cluster enhancement method, setting a whole-brain corrected threshold of p<.05. Children with DLD had lower MTsat values than TD children in the inferior frontal gyrus (pars opercularis), ventral sensorimotor cortex, insular cortex, lateral Heschl’s gyrus, planum temporale, and posterior superior temporal sulcus of the left hemisphere, and in portions of lateral and dorsomedial occipital cortex bilaterally. Subcortically, the children with DLD also had reduced MTsat in the dorsal caudate nucleus bilaterally; these differences were seen mainly in the body and were more extensive on the left than the right (Figure 1 and Supplementary file 1a). Consistent with the mean global differences in R1 in children with DLD (see Table 2), examination of the R1 maps revealed widespread reduction over the lateral convexities of the frontal and parietal lobes bilaterally (but slightly more on the right), the medial frontal cortex including SMA and extending to paracentral lobule and left posterior temporal cortex extending from the superior temporal plane to posterior inferior temporal cortex. Subcortically, there were differences in R1 in the dorsal striatum and thalamus bilaterally, and in anterior portions of the medial temporal lobe (Figure 2). We did not find any significant group differences when examining the R2* maps. There were also no regions where children with DLD showed greater MT, R1, or R2* values relative to TD children.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig1-v1.jpg)
+
+**Figure 1.:** Coloured maps resampled and overlaid on the fsaverage surface (reconstructed using the HCP workbench) show TD > DLD differences in MTsat values (whole-brain corrected threshold p < 0.05). Axial slices (coloured maps are overlaid on an average MTsat image from all participants) show additional group differences subcortically in the caudate nuclei. The inset shows a boxplot of MTsat values drawn from the cluster in the caudate nuclei by group, with this cluster split into right and left using a hemispheric mask (orange – DLD, green – TD).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** See legend to Figure 1 for details.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Average MTsat in the left and right caudate nucleus for individual participants are plotted against age or TIV. Dots show data for individual participants, colour represents group (orange - DLD, green - TD). All correlations are non-significant (p>.35), as shown by the statistics above.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig2-v1.jpg)
+
+**Figure 2.:** Coloured maps resampled and overlaid on the fsaverage surface (reconstructed using the HCP workbench) show TD > DLD differences in R1 maps (whole-brain corrected threshold p < 0.05). Axial slices (coloured maps are overlaid on an average MTsat image from all participants) show additional subcortical group differences in the striatum and thalamus bilaterally.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** See legend to Figure 2 for details.
+
 Given that MTsat and R1 maps are particularly sensitive to myelin, and the R2* maps did not differ between the groups, we then examined if there were regions where we would see convergence of differences across MTsat and R1. A conjunction analysis was performed, where we assessed which voxels showed significant TD > DLD differences in both MTsat and R1 maps. We found conjoint differences in the MT and R1 maps across several brain regions, including the caudate nuclei bilaterally, and in the left ventral sensorimotor cortex, insula, lateral Heschl’s gyrus, planum temporale, posterior superior temporal sulcus, and middle temporal gyrus (Figure 3 and Supplementary file 1b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig3-v1.jpg)
+
+**Figure 3.:** Coloured maps resampled and overlaid on the fsaverage surface (reconstructed using the HCP workbench) show convergence of TD > DLD differences in MTsat and R1 maps thresholded at p < 0.05. Axial slices (coloured maps are overlaid on an average MTsat image from all participants) show the differences subcortically in the dorsal striatum in particular.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Maps are overlaid on the fsaverage surface reconstructed using the HCP workbench. Left (L) and right (R) lateral and medial surfaces are shown on the left and right side of the figure respectively.
 
 The CATALISE definition of DLD (Bishop et al., 2016; Bishop et al., 2017) rightly removes the criterion requiring a discrepancy between verbal and nonverbal skills, which in practice means broadening the phenotype to include children with low nonverbal IQ. To determine whether our group differences were in fact driven by the inclusion of children with low nonverbal IQs in addition to low language ability, we assessed differences only in children with nonverbal IQ scores >85. Group differences in MTsat and R1 maps were observed even when removing the five children with DLD who had nonverbal IQs between 70 and 85 (see Figure 1—figure supplement 1 and Figure 2—figure supplement 1), indicating the differences reported here were not driven by the inclusion of children with low nonverbal IQs. Consequently, all following analyses include these children.
 
 Given our interest in the dorsal striatum in relation to DLD (see Introduction), we extracted average MTsat values for each participant from the caudate nuclei bilaterally (the region where we observed TD > DLD differences). Using a hemispheric mask, we separated this cluster into left and right components. We then assessed if group differences in average MTsat values in the left and right caudate nuclei could be accounted for by age or total intracranial volume. Age and total intracranial volume were not significant predictors of MTsat values in the caudate nuclei clusters, see Figure 1—figure supplement 2.
 
-## Whole-brain correlation analysis of neural microstructure with language proficiency
+### Whole-brain correlation analysis of neural microstructure with language proficiency
 
 We have previously found continuous measures of language proficiency to be more sensitive to neural differences than diagnostic categories (Krishnan et al., 2021). Using a continuous measure of language ability also gave us the opportunity to include the group of children with HSL problems who did not meet criteria for DLD on testing (HSL; N = 20). We constructed language and memory factor scores from our neuropsychological battery (see Krishnan et al., 2021 for further detail on model construction), using data from the full sample in whom behavioural data were available in the BOLD study. We then assessed if these factors, as well as nonverbal IQ, were predictors of our three parameter values across our whole sample (N = 109) using whole-brain analyses. Given the strong correlation between the language and memory factors (r = 0.7, p < 0.001), we entered these predictors separately into our statistical models. We found that language proficiency was strongly positively correlated with MTsat values focally in the left caudate nucleus (Figure 4). In the R1 maps, poorer language proficiency was once again associated with widespread reduction over the lateral convexities of the frontal and parietal lobes bilaterally (as seen before in the TD > DLD differences, which were slightly more right lateralised), the medial frontal cortex including SMA and extending to paracentral lobule, and left posterior temporal cortex extending from the superior temporal plane to posterior inferior temporal cortex (see Figure 4—figure supplement 1). Subcortically, language proficiency was positively associated with R1 values in the dorsal striatum and thalamus bilaterally, and in anterior portions of the medial temporal lobe. This pattern of results was similar to those derived in the TD > DLD contrast. Lower R1 values in a more focal but overlapping set of regions (perisylvian cortex including the inferior frontal gyrus, insula, superior temporal gyrus, extending to the anterior temporal pole, bilaterally, but more extensive on the left, and the dorsal striatum bilaterally) were associated with poor memory proficiency, suggesting that these cognitive differences were reflecting the globally lowered values of R1 in children with DLD. There were no significant relationships between R2* values in grey matter and language or memory proficiency.
 
-## Associations with language proficiency, memory, and IQ in the dorsal striatum
+![Figure 4.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig4-v1.jpg)
+
+**Figure 4.:** Coloured maps are overlaid on axial slices through the average MTsat image from all participants (top) showing significant relationship subcortically in the left caudate nucleus. Average MTsat values for the left caudate nucleus in individual participants are plotted against the Language Proficiency Factor score. The solid line is the regression line with shaded areas showing the 95% confidence interval. Groups are plotted in different colours (green - TD, orange - DLD. purple - HSL) for illustration.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74242/elife-74242-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** See legend to Figure 4 for details.
+
+### Associations with language proficiency, memory, and IQ in the dorsal striatum
 
 The DLD and TD groups differed on language proficiency, memory, and nonverbal IQ (see Table 1). We consequently assessed whether variation in language proficiency, memory, or nonverbal IQ best explained the variation in R1 and MTsat values in the portions of the caudate nucleus where we observed TD > DLD group differences. We constructed stepwise regressions to evaluate the contribution of each of these factors, including children from the HSL group to maximise power (the pattern of analysis was the same when we limited our analyses to children in the TD and DLD groups).
 
 For MTsat values in the caudate nucleus, we found that a model with language proficiency alone (β = 0.014, p < 0.001) was the best fitting model, explaining 14.57% of the variance, F(1,106) = 18.08, p < 0.001. For R1 values in the caudate nucleus, we again observed that a model with language proficiency alone (β = 0.015, p < 0.001) was the best fitting model, explaining 13.19% of the variance, F(1,106) = 16.11, p < 0.001.
 
-## TD vs. DLD group differences in voxel-based morphometry
+### TD vs. DLD group differences in voxel-based morphometry
 
 Finally, to assess if the parametric differences reported here were also observed in standard morphometric analysis, we performed a voxel-based morphometry (VBM) analysis comparing regional amounts of grey matter in TD vs. DLD using T1 scans from the same participants (note these were collected using an MPRAGE T1-weighted sequence and were not the T1-weighted scan from the MPM protocol). We did not observe any group differences that survived our statistical threshold (p < 0.05), and indeed no group differences were observed at a lower statistical threshold p < 0.2. Thus, our parametric differences cannot be explained by morphometric differences in the amount of grey matter.
 
@@ -78,13 +233,13 @@ In this study, we used semiquantitative structural MRI to provide a detailed acc
 
 Importantly, these results allow us to understand the cellular mechanisms driving this change. MTsat and R1 are considered in vivo markers of macromolecular content, and within the brain, these measures are particularly sensitive to myelin content in grey matter. Although most of the brain’s myelin is found in the white matter where it sheaths the long axons travelling in white matter fibre tracts, it can also be measured in grey matter where it myelinates axons or parts of axons in the cortex and in subcortical structures like the thalamus and basal ganglia (Nieuwenhuys, 2013). Indeed, myelin is a strong contributor to MR signal in these regions (Glasser and Van Essen, 2011; Sereno et al., 2013; Shafee et al., 2015). Given myelin’s role in enabling fast and reliable communication in the brain, reduced myelin content may explain why children with DLD struggle with speech and language processing. Below, we discuss these findings, contextualising why myelin may be altered in these specific regions in DLD.
 
-## Interpretation of MPM scans
+### Interpretation of MPM scans
 
 Myelin is known to increase throughout the brain during adolescence (Paquola et al., 2019; Whitaker et al., 2016), and has been linked to improved behavioural performance (Kwon et al., 2020). Previous morphometric studies have typically drawn inferences about myelin from cortical thinning, but shrinkage of grey matter does not allow us to distinguish if T1 change is due to shorter T1 times associated with reduced synaptic density, or an increase in the proportion of myelinated neurons (Paus, 2005). More recently, MTsat and R1 measures have been used as an in vivo marker for myelin. These have been validated as markers of myelin through postmortem imaging, as well as histological studies of patients with multiple sclerosis (Weiskopf et al., 2021). Importantly, these maps agree with histological maps showing greater myelin in primary motor and sensory cortex (Carey et al., 2017; Dick et al., 2012; Sereno et al., 2013; Whitaker et al., 2016), as can be seen in our maps as well (Figure 3—figure supplement 1). It is therefore unsurprising to find some convergence over MTsat and R1. R2* is also considered a measure of myelin, but the T2* contrast is particularly sensitive to iron, especially within the basal ganglia. Despite R2* differences being noted in adults with speech problems in the putamen and cortical speech motor network (developmental stuttering, Cler et al., 2021), and observed links between verbal memory and R2* in the ventral striatum (Steiger et al., 2016), we did not see any evidence for R2* differences anywhere in the brain when comparing our TD and DLD groups.
 
 Our findings also strongly suggest that there is an advantage to using MPM to probe microstructure relative to standard T1 measures. While previous studies reported differences using morphometric measures, we did not observe evidence for morphometric differences in our sample. As others have argued, MPM is sensitive to microstructural differences that would not be detected by a standard voxel-based morphometry (VBM) analysis, as VBM is sensitive to differences in regional amounts of grey matter based on T1 weighting rather than quantitative measurements (Lorio et al., 2014; Lorio et al., 2016). Using MPMs allows us to more closely interrogate the histological processes involved in neural changes.
 
-## Group differences in the striatum
+### Group differences in the striatum
 
 Our findings clearly indicate that there are microstructural abnormalities in the caudate nuclei bilaterally in children with DLD, and more broadly, that reduced myelin in the left caudate nucleus is associated with lower language proficiency. The convergence across MT and R1 differences in the caudate nuclei strongly suggest these are linked to abnormal levels of myelin.
 
@@ -94,11 +249,11 @@ Our findings are generally consistent with previous smaller-scale work linking v
 
 Although some previous work suggested that striatal differences were normalised by adolescence in children with DLD (Soriano-Mas et al., 2009), our analyses do not show any evidence of group differences being modulated by age (Figure 1—figure supplement 2). Using the MPM protocols may give us a more sensitive marker of change to differences in DLD. In these analyses, it is perhaps surprising that we did not see age-related change in the striatum within the time frame we sampled. Longitudinal work using MTsat has demonstrated that the striatum continues to mature through adolescence, from 14 to 24 years of age (Paquola et al., 2019). However, it may be that the time frame we sampled was too short, or that within-subject longitudinal studies, which are more sensitive to changes over time, are needed.
 
-## Genetic mechanisms underlying group differences in the striatum
+### Genetic mechanisms underlying group differences in the striatum
 
 The genetic mechanisms that might drive these striatal changes are currently unclear. DLD is a highly heritable disorder but identification of genetic pathways has been difficult due to the broad phenotype and changes in diagnostic criteria (for a recent review, see Mountford et al., 2022). In terms of monogenic disorders, the best known case is that of the KE family, the affected members of which had a rare point mutation in the gene FOXP2 causing verbal dyspraxia as well as the kinds of language learning difficulties seen in DLD. The mutation in FOXP2 was associated with reduced volumes of the caudate nuclei bilaterally in the KE family (Watkins et al., 2002b), but it is unknown whether this was related to a quantitative difference in myelin content as seen here in DLD. FOXP2 is strongly expressed in the medium-spiny neurons of the striatum in humans and other species, and in many other neural and non-neural tissues (Lai et al., 2003). FOXP2 is a transcription factor affecting the function of many downstream target genes, including CNTNAP2 and FOXP1, which in turn have been linked to phenotypic features of DLD (Lozano et al., 2015; Vernes et al., 2008). Aside from identifying rare monogenic causes of DLD, other approaches have yielded common risk variants that explain variances in phenotypic features of DLD, including phonological skills (Newbury et al., 2009). A recent meta-analysis of DLD genome-wide association studies (GWAS) of reading and language traits with an N > 30,000 found significant genome-wide association with word reading and distinct genetic variation of word and nonword reading, spelling, and phoneme awareness that correlated with cortical surface area of the left superior temporal sulcus (Eising et al., 2021). Interestingly, in our study, the posterior part of the superior temporal sulcus in the left hemisphere showed significantly reduced MTsat and R1 values in children with DLD (see Figures 1—3).
 
-## Neural differences beyond the striatum
+### Neural differences beyond the striatum
 
 We also observed MTsat changes indicative of myelin-related differences in the posterior part of the inferior frontal gyrus, ventral sensorimotor cortex, insula, planum temporale, lateral Heschl’s gyrus, and the superior temporal sulcus, all in the left hemisphere. Regions such as the inferior frontal cortex and posterior superior temporal cortex are considered core parts of the speech and language network (Malik-Moraleda et al., 2021; Fedorenko et al., 2011; Hickok and Poeppel, 2007; Rauschecker and Scott, 2009), and ventral sensorimotor cortex and insula are regions that are clearly implicated in speech motor control (Bouchard et al., 2013; Carey et al., 2017; Dronkers, 1996; Wise et al., 1999). Our findings here of abnormal microstructure in these regions are somewhat consistent with those from previous studies in DLD that report structural differences in perisylvian regions (Badcock et al., 2012; Gauger et al., 1997; Jäncke et al., 2007; Plante, 1991; Preis et al., 1998) with two notable differences – one, that these differences did not emerge in a VBM analysis, and two, on average, children with DLD had lower MTsat or R1 values than TD children, indicative of slower maturation or abnormal developmental trajectories. Such differences in these regions therefore may be correlates of either auditory or motor inefficiency or both that have been observed in some children with DLD (Halliday et al., 2017; Hill, 2001; McArthur and Bishop, 2004).
 
@@ -110,7 +265,7 @@ The broad constellation of challenges faced by children with DLD might also expl
 
 Finally, it is important to note that we previously hypothesised that the microstructure of grey and white matter in the medial temporal lobe would be relatively normal in children with DLD (Krishnan et al., 2016). However, we observed differences in R1 values in these regions (see Figure 2, medial surface of the left hemisphere). This fits with the emerging picture that children with DLD can struggle with aspects of learning thought to depend on the medial temporal lobe, for example declarative memory tasks such as list learning (Bishop and Hsu, 2015; Earle and Ullman, 2021; Jackson et al., 2020; McGregor et al., 2017).
 
-## Implications for theories of DLD
+### Implications for theories of DLD
 
 The striatal differences we report are broadly consistent with our views on the dorsal striatum being involved in language learning (Krishnan et al., 2016), as well as with theories such as the procedural deficit hypothesis (Lum et al., 2014; Ullman and Pierpont, 2005), and the procedural deficit circuit hypothesis (Ullman et al., 2020). This may be linked to difficulties extracting and retaining the sequential regularities for language, or challenges in automatising the use of language rules. Our sample with DLD shows differences in linguistic tasks that draw upon these abilities, such as nonword repetition or oromotor sequencing, even though they were not selected on this basis. Orpella et al., 2021 recently demonstrated that the dorsal and ventral striatum were crucial for developing and acting upon predictions in a statistical learning task. The use of such sensitive functional tasks may be important to demonstrate the functional consequences of these changes. Understanding such learning mechanisms may also help us understand how to design better intervention for children with DLD, for example, this may be a reason to simplify and repeat rules during learning, providing greater opportunities for practice and habituation. We are now testing the role of repetition in enhancing language comprehension in DLD (Parker et al., 2021).
 
@@ -118,21 +273,21 @@ Our more global differences in myelination would also be consistent with theoret
 
 There has also been significant theoretical debate about whether DLD represents the tail end of a spectrum of language ability or if it represents a group or several subgroups that are biologically distinguishable from those with typical language ability (Tomblin, 2011). Broadly speaking, there is now consensus in the field that these children represent the extreme end of a distribution (Bishop et al., 2016; Lancaster and Camarata, 2019; Tomblin and Zhang, 1999). We examined if our data were consistent with this idea by examining the distribution. When plotted, the average values of striatal myelination for individual participants indicated overlap between the DLD and TD groups (see Figure 1). So not all children with DLD had values outside of the range of values for the TD groups, as might be expected if we were observing a distinct subtype. However, our continuous analysis does indicate that those who have the lowest values for striatal myelination have the lowest language factor scores (see Figure 4). Our limited exploration of how these measures are distributed both within the DLD group and across the cohort is consistent with the idea that DLD is a spectrum disorder. Even so, further theoretically driven analyses that relate specific behaviour to these quantitative measures of brain microstructure might provide insight into whether there are distinct subtypes within DLD. Future studies should focus on understanding the full spectrum of DLD using large datasets, establishing if there are distinct brain–behaviour relationships within this broad category.
 
-## Limitations and future directions
+### Limitations and future directions
 
 The differences we see here are observed at a group level. In other words, as noted above, lower MTsat or R1 values in the caudate nuclei are not observed in every child with DLD. In future studies, we are keen to use structural connectivity analyses, as they will allow us to understand how differences across a network of brain areas may make children susceptible to DLD. It is also unclear whether the neural changes we observe are the cause of DLD, or a consequence of having a language disorder. Longitudinal studies where children are followed over time are the best way to shed light on this issue. A pertinent issue when considering longitudinal studies is the amount of data we were able to retain from children we tested (between approximately 65% and 80% based on whether children were in the TD, HSL, or DLD group, see Methods). We were concerned that systematic biases might affect retention, with children with severe language problems being more likely to be excluded. Consequently, in our sample, we assessed if there were any differences between children whose scans were excluded, relative to those we retained for our analysis. We found that children with DLD whose scans were excluded were younger than those who were selected, but they were not more severely affected in terms of their language learning (Supplementary file 1c). However, it is worth noting our analysis does not account for the children who we recruited but were unable to scan. Dropout and data quality are factors to consider if scanning younger children with this protocol. Finally, the relationship between structure and function is complex. We need to understand how these structural differences might affect specific aspects of function. For instance, we did not observe differences in dorsal striatal activity for a simple language task of verb generation in the same group of children (Krishnan et al., 2021). This may signal the task was not sensitive to differences, or alternately, that we need to tap different aspects of language processing.
 
-## Summary and conclusions
+### Summary and conclusions
 
 Understanding the neural basis of DLD is particularly challenging given the developmental nature of the disorder, as well as the lack of animal models for understanding language. Novel semiquantitative MPM protocols allow us an unparalleled in vivo method to investigate microstructural neural changes in these children. Our findings using this protocol suggest that the caudate nucleus, as well as regions in the wider speech and language network, show alterations in myelin in children with DLD. These findings strongly point to a role for the striatum in the development of DLD. This role is likely to be in the learning of habits and sequences, but future work is necessary to test this hypothesis given the anatomical localisation in our study. Additionally, myelin patterns can change over development, and myelination can be observed after successful training. In next steps, it is important to assess whether these differences in myelin persist over development in DLD, and if they can be targeted through training using behavioural interventions.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 As part of the Oxford BOLD study, we recruited and tested 175 children between the ages of 10 and 15 years. All children had to meet certain inclusion/exclusion criteria; specifically, they had to have: (1) normal hearing (defined as passing audiometric screening at 25 dB at 500, 1000, and 2000 Hz, in the better ear); (2) a nonverbal IQ >70 (assessed using the WISC-IV Matrix Reasoning and Block Design Tests – Wechsler, 2004); and (3) have grown up in the UK speaking English. Children were excluded if they had another neurodevelopmental disorder such as autism or attention-deficit hyperactivity disorder, or history of neurological disorder. Participants who met inclusionary/exclusionary criteria were categorised as having DLD if they presented with a history of language problems and scored at least 1 SD below the normative mean on two or more standardised tests of language ability. Children were categorised as HSL if they presented with HSL problems but did not meet criteria for DLD. Those who were categorised as TD had no history of speech and language problems. If these children scored 1 SD or more below the mean on more than one standardised test score of language ability, they were excluded from the TD group. Of the 175 children we recruited, a total of 162 children completed both behavioural testing and MRI scans and met our inclusionary criteria (77 TD children, 57 children with DLD, and 28 who had a history of speech and language (HSL) difficulties but did not meet our criteria for DLD at time of testing), for further details, see Krishnan et al., 2021. From this sample, we acquired MPM data in 72 TD children, 51 children with DLD, and in 25 children with HSL.
 
-## Data acquisition
+### Data acquisition
 
 MR data were collected with a 3T Siemens Prisma scanner with a 32-channel head coil. Participants wore noise-cancelling headphones (Optoacoustics OptoActive II Active Noise Cancelling Headphones). Foam padding was placed around the head for comfort and to restrict movement; the headphones were held in place with inflatable pads.
 
@@ -140,13 +295,13 @@ Whole-brain images at an isotropic resolution of 1 mm were obtained using an MPM
 
 We did collect other imaging data as part of the Oxford BOLD study, including fMRI data (Krishnan et al., 2021). Notably, we also obtained a T1-weighted MPRAGE scan (magnetisation prepared low angle spoiled gradient echo, TR 1900 ms, TE 3.97 ms, flip angle 8°, field of view 208 × 256 × 256 mm) with 1-mm in-plane resolution and 1-mm slice thickness.
 
-## Procedure
+### Procedure
 
 MPM data were collected at the end of the scanning session. The session also included two task fMRI scans, a resting state scan, and a diffusion-weighted scan; these data are not reported here. During the MPM scans, participants were given the option of either closing their eyes or watching an animated film; nearly all participants chose the film.
 
 Participants also completed a comprehensive neuropsychological battery outside of the scanner, focusing on their linguistic and cognitive abilities (see Krishnan et al., 2021 for further details). In brief, language ability was assessed using five tests, assessing aspects of expressive and receptive grammar, narrative, and vocabulary. Specifically, grammatical comprehension was assessed using the Test for Reception of Grammar – 2 or its electronic counterpart (TROG-E, Bishop, 2005). Expressive grammar was evaluated using the Recalling Sentences subtest of the Clinical Evaluation of Language Fundamentals – 4th Edition (CELF-4; Semel et al., 2004). Children’s narrative production and comprehension were assessed using the Expression, Reception and Recall of Narrative Instrument (ERNNI; Bishop, 2004). Receptive and expressive vocabulary were assessed using the Receptive One-Word Picture Vocabulary Test – 4th Edition (ROWPVT-4; Martin and Brownell, 2011b) and Expressive One-Word Picture Vocabulary Test – 4th Edition (EOWPVT-4; Martin and Brownell, 2011a), respectively. In addition to the language measures, children also completed the phonological decoding and sight word reading efficiency subtests of the Test Of Word Reading Efficiency (TOWRE; Torgesen et al., 1999); the block design, matrix reasoning, and coding subtests of the Wechsler Intelligence Scale for Children – 4th Edition (WISC-IV; Wechsler, 2004), the forward and backward digit span subtests, as well as the word lists subtest, from the Children’s Memory Scale (CMS; Cohen, 1997), a nonword repetition test (Norbury et al., 2016), and the oromotor sequences subtest of the NEuroPSYchology (NEPSY) test battery (Korkman et al., 1998).
 
-## Data pre-processing
+### Data pre-processing
 
 Data were processed using the hMRI toolbox within SPM12 (Balteau et al., 2018; Tabelow et al., 2019). The default toolbox settings were used. This processing results in the MT saturation, R1 and R2* maps, which index different aspects of tissue microstructure. Briefly, R1 (1/T1) maps were estimated from the PD- and T1-weighted images using the process described in Weiskopf et al., 2013, extended by using correction for RF transmit field inhomogeneities and imperfect spoiling. Regression of the log signal from the signal decay over echoes across all three MPM contrasts was used to calculate a map of R2* (=1/T2*) (Weiskopf et al., 2013). RF transmit field maps were calculated from the 3D EPI acquisition and corrected for off-resonance effects as described in Lutti et al., 2014. The semi-quantitative MT saturation parameter (MTsat) calculated is relatively robust against differences in relaxation times and RF transmit and receive field inhomogeneities, and small residual higher dependencies are further corrected for within the toolbox.
 
@@ -154,7 +309,7 @@ Using quality assessment metrics obtained from the toolbox, we removed images wh
 
 Using pipelines implemented in the hMRI toolbox, MTsat maps from each participant were further segmented into grey and white matter probability maps. These grey and white matter maps were used to create a DARTEL template. Each participant’s MTsat, R1, and R2* maps were registered to this DARTEL template and were then normalised to a standard MNI template. A tissue-weighted smoothing kernel of 6-mm full-width-at-half-maximum was applied using the voxel-based quantification approach (Draganski et al., 2011), which aims to preserve quantitative values for interpretation.
 
-## Data analyses
+### Data analyses
 
 We analysed group differences in MTsat, R1, and R2* maps using FSL’s randomise tool using 5000 permutations. For assessing statistical differences across groups, we employed threshold-free cluster enhancement, setting p < 0.05 as our threshold. Data from regions of interest were extracted using fslstats, and further analyses were carried out using R (R Development Core Team, 2020).
 

@@ -40,32 +40,32 @@
 
 ### Affiliations
 
-1. https://ror.org/03taz7m60 Department of Population and Public Health Sciences, University of Southern California Los Angeles United States
-2. https://ror.org/007ps6h72 Public Health Sciences, Fred Hutchinson Cancer Research Center Seattle United States
-3. https://ror.org/05gvnxz63 Argonne National Laboratory Lemont United States
+1. Department of Population and Public Health Sciences, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+2. Public Health Sciences, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+3. Argonne National Laboratory Lemont United States ([ROR:05gvnxz63](https://ror.org/05gvnxz63))
 4. Yale School of Medicine New Haven United States
-5. https://ror.org/000rgm762 VA Connecticut Healthcare System West Haven United States
-6. https://ror.org/00a0jsq62 London School of Hygiene and Tropical Medicine London United Kingdom
-7. https://ror.org/02jzgtq86 Harvard TH Chan School of Public Health and Division of Population Sciences, Dana Farber Cancer Institute Boston United States
-8. https://ror.org/040gcmg81 Laboratory of Human Carcinogenesis, Center for Cancer Research, National Cancer Institute Bethesda United States
-9. https://ror.org/04b6nzv94 Department of Surgery, Urology Division, Brigham and Women’s Hospital, Harvard Medical School Boston United States
-10. https://ror.org/03vek6s52 Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States
-11. https://ror.org/04v00sg98 VA Boston Healthcare System Boston United States
-12. https://ror.org/04b6nzv94 Division of Aging, Brigham and Women's Hospital Boston United States
+5. VA Connecticut Healthcare System West Haven United States ([ROR:000rgm762](https://ror.org/000rgm762))
+6. London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
+7. Harvard TH Chan School of Public Health and Division of Population Sciences, Dana Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+8. Laboratory of Human Carcinogenesis, Center for Cancer Research, National Cancer Institute Bethesda United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+9. Department of Surgery, Urology Division, Brigham and Women’s Hospital, Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+10. Department of Epidemiology, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+11. VA Boston Healthcare System Boston United States ([ROR:04v00sg98](https://ror.org/04v00sg98))
+12. Division of Aging, Brigham and Women's Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 13. Hôpital Général Idrissa Pouye Dakar Senegal
-14. https://ror.org/03wx2rr30 College of Medicine, University of Ibadan and University College Hospital Ibadan Nigeria
-15. https://ror.org/007e69832 College of Health Sciences, University of Abuja, University of Abuja Teaching Hospital and Cancer Science Center Abuja Nigeria
-16. https://ror.org/00txnqh94 37 Military Hospital Accra Ghana
-17. https://ror.org/01vzp6a32 Korle-Bu Teaching Hospital Accra Ghana
-18. https://ror.org/01n1j0f20 Laboratoires Bacteriologie et Virologie, Hôpital Aristide Le Dantec Dakar Senegal
-19. https://ror.org/01zkghx44 School of Biological Sciences, Georgia Institute of Technology Atlanta United States
+14. College of Medicine, University of Ibadan and University College Hospital Ibadan Nigeria ([ROR:03wx2rr30](https://ror.org/03wx2rr30))
+15. College of Health Sciences, University of Abuja, University of Abuja Teaching Hospital and Cancer Science Center Abuja Nigeria ([ROR:007e69832](https://ror.org/007e69832))
+16. 37 Military Hospital Accra Ghana ([ROR:00txnqh94](https://ror.org/00txnqh94))
+17. Korle-Bu Teaching Hospital Accra Ghana ([ROR:01vzp6a32](https://ror.org/01vzp6a32))
+18. Laboratoires Bacteriologie et Virologie, Hôpital Aristide Le Dantec Dakar Senegal ([ROR:01n1j0f20](https://ror.org/01n1j0f20))
+19. School of Biological Sciences, Georgia Institute of Technology Atlanta United States ([ROR:01zkghx44](https://ror.org/01zkghx44))
 20. Department of Medicine, Harvard Medical School Boston United States
 
 † Corresponding author
 
 ## Abstract
 
-We recently developed a multi-ancestry polygenic risk score (PRS) that effectively stratifies prostate cancer risk across populations. In this study, we validated the performance of the PRS in the multi-ancestry Million Veteran Program and additional independent studies. Within each ancestry population, the association of PRS with prostate cancer risk was evaluated separately in each case–control study and then combined in a fixed-effects inverse-variance-weighted meta-analysis. We further assessed the effect modification by age and estimated the age-specific absolute risk of prostate cancer for each ancestry population. The PRS was evaluated in 31,925 cases and 490,507 controls, including men from European (22,049 cases, 414,249 controls), African (8794 cases, 55,657 controls), and Hispanic (1082 cases, 20,601 controls) populations. Comparing men in the top decile (90–100% of the PRS) to the average 40–60% PRS category, the prostate cancer odds ratio (OR) was 3.8-fold in European ancestry men (95% CI = 3.62–3.96), 2.8-fold in African ancestry men (95% CI = 2.59–3.03), and 3.2-fold in Hispanic men (95% CI = 2.64–3.92). The PRS did not discriminate risk of aggressive versus nonaggressive prostate cancer. However, the OR diminished with advancing age (European ancestry men in the top decile: ≤55 years, OR = 7.11; 55–60 years, OR = 4.26; >70 years, OR = 2.79). Men in the top PRS decile reached 5% absolute prostate cancer risk ~10 years younger than men in the 40–60% PRS category. Our findings validate the multi-ancestry PRS as an effective prostate cancer risk stratification tool across populations. A clinical study of PRS is warranted to determine whether the PRS could be used for risk-stratified screening and early detection. This work was supported by the National Cancer Institute at the National Institutes of Health (grant numbers U19 CA214253 to C.A.H., U01 CA257328 to C.A.H., U19 CA148537 to C.A.H., R01 CA165862 to C.A.H., K99 CA246063 to B.F.D, and T32CA229110 to F.C), the Prostate Cancer Foundation (grants 21YOUN11 to B.F.D. and 20CHAS03 to C.A.H.), the Achievement Rewards for College Scientists Foundation Los Angeles Founder Chapter to B.F.D, and the Million Veteran Program-MVP017. This research has been conducted using the UK Biobank Resource under application number 42195. This research is based on data from the Million Veteran Program, Office of Research and Development, and the Veterans Health Administration. This publication does not represent the views of the Department of Veteran Affairs or the United States Government.
+Background:We recently developed a multi-ancestry polygenic risk score (PRS) that effectively stratifies prostate cancer risk across populations. In this study, we validated the performance of the PRS in the multi-ancestry Million Veteran Program and additional independent studies.Methods:Within each ancestry population, the association of PRS with prostate cancer risk was evaluated separately in each case–control study and then combined in a fixed-effects inverse-variance-weighted meta-analysis. We further assessed the effect modification by age and estimated the age-specific absolute risk of prostate cancer for each ancestry population.Results:The PRS was evaluated in 31,925 cases and 490,507 controls, including men from European (22,049 cases, 414,249 controls), African (8794 cases, 55,657 controls), and Hispanic (1082 cases, 20,601 controls) populations. Comparing men in the top decile (90–100% of the PRS) to the average 40–60% PRS category, the prostate cancer odds ratio (OR) was 3.8-fold in European ancestry men (95% CI = 3.62–3.96), 2.8-fold in African ancestry men (95% CI = 2.59–3.03), and 3.2-fold in Hispanic men (95% CI = 2.64–3.92). The PRS did not discriminate risk of aggressive versus nonaggressive prostate cancer. However, the OR diminished with advancing age (European ancestry men in the top decile: ≤55 years, OR = 7.11; 55–60 years, OR = 4.26; >70 years, OR = 2.79). Men in the top PRS decile reached 5% absolute prostate cancer risk ~10 years younger than men in the 40–60% PRS category.Conclusions:Our findings validate the multi-ancestry PRS as an effective prostate cancer risk stratification tool across populations. A clinical study of PRS is warranted to determine whether the PRS could be used for risk-stratified screening and early detection.Funding:This work was supported by the National Cancer Institute at the National Institutes of Health (grant numbers U19 CA214253 to C.A.H., U01 CA257328 to C.A.H., U19 CA148537 to C.A.H., R01 CA165862 to C.A.H., K99 CA246063 to B.F.D, and T32CA229110 to F.C), the Prostate Cancer Foundation (grants 21YOUN11 to B.F.D. and 20CHAS03 to C.A.H.), the Achievement Rewards for College Scientists Foundation Los Angeles Founder Chapter to B.F.D, and the Million Veteran Program-MVP017. This research has been conducted using the UK Biobank Resource under application number 42195. This research is based on data from the Million Veteran Program, Office of Research and Development, and the Veterans Health Administration. This publication does not represent the views of the Department of Veteran Affairs or the United States Government.
 
 ## Introduction
 
@@ -79,11 +79,104 @@ In each of the replication studies included in our analysis, the PRS was constru
 
 The multi-ancestry PRS was strongly associated with prostate cancer risk in the three populations (Figure 1, Figure 1—source data 1). In European ancestry men, ORs were 3.78 (95% CI = 3.41–3.81) and 7.32 (95% CI = 6.76–7.92) for men in the top PRS decile (90–100%) and top percentile (99–100%), respectively, compared to men with average genetic risk (40–60% PRS category). In African ancestry men, ORs were 2.80 (95% CI = 2.49–2.95) and 4.98 (95% CI = 4.27–5.79) for men in the top PRS decile and percentile, respectively. In Hispanic men, ORs were 3.22 (95% CI = 2.64–3.92) and 6.91 (95% = 4.97–9.60) for men in the top PRS decile and percentile, respectively. PRS associations within each ancestry population were generally consistent across individual replication studies (Figure 1—figure supplement 1). The area under the curve (AUC) increased 0.136 on average across populations upon adding the PRS to a base model of age and principal components of ancestry (Appendix 1—table 1). Compared to the mean PRS in European ancestry controls, African ancestry controls had a mean PRS associated with a relative risk of 2.19 (95% CI = 2.17–2.21), while Hispanic controls had a relative risk of 1.16 (95% CI = 1.15–1.18), consistent with previous findings (Conti et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78304/elife-78304-fig1-v2.jpg)
+
+**Figure 1.:** The European ancestry replication studies included Million Veteran Program (MVP), UK Biobank (Conti, Darst et al., Nature Genetics, 2021), and Mass General Brigham (MGB) Biobank (Plym et al., JNCI, 2021). The African ancestry replication studies included MVP, California and Uganda Prostate Cancer Study (CA UG) (Conti, Darst et al., Nature Genetics, 2021), Men of African Descent and Carcinoma of the Prostate (MADCaP) Network, Maryland Prostate Cancer Case–Control Study (NCI-MD), and MGB Biobank (Plym et al., JNCI, 2021). Replication in Hispanic men was conducted in MVP. Results from individual replication studies are shown in Figure 1—figure supplement 1. The x-axis indicates the PRS category. Additional analysis was performed to evaluate the PRS association in men with extremely high genetic risk (99–100%). The y-axis indicates OR with error bars representing 95% CIs for each PRS category compared to the 40–60% PRS. The dotted horizontal line corresponds to an OR of 1. ORs and 95% CIs for each decile are provided in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78304/elife-78304-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Replication studies in men of European and African ancestry included Million Veteran Program (MVP) (13,643 cases and 210,214 controls of European ancestry and 6353 cases and 53,362 controls of African ancestry), UK Biobank (6852 cases and 193,117 controls of European ancestry), Mass General Brigham (MGB) Biobank (67 cases and 457 controls of African ancestry and 1554 cases and 10,918 controls of European ancestry), California and Uganda Prostate Cancer Study (CA UG) (1586 cases and 1047 controls of African ancestry), Men of African Descent and Carcinoma of the Prostate (MADCaP) Network (405 cases and 396 controls of African ancestry), and Maryland Prostate Cancer Case–Control Study (NCI-MD) (383 cases and 395 controls of African ancestry). The x-axis indicates the PRS category. Additional analysis was performed to evaluate the PRS association in men with extremely high genetic risk (99–100%) in all individual studies except the MGB Biobank. The y-axis indicates OR with error bars representing the 95% CIs for each PRS category compared to the 40–60% PRS category. The dotted horizontal line corresponds to an OR of 1.
+
 Previously, we found that PRS associations were significantly stronger in younger men (aged ≤ 55 years) than in older men (aged > 55 years) (Conti et al., 2021). In the two large replication studies, UK Biobank and MVP, we further explored effect modification by age (Figure 2, Figure 2—figure supplement 1, Figure 2—source data 1). In European ancestry men, for the top PRS decile, the OR was 7.11 (95% CI = 5.82–8.70) in men aged ≤55, 4.26 (95% CI = 3.77–4.81) in men aged 55–60, and 2.79 (95% CI = 2.50–3.11) in men aged >70. The gradient in PRS risk by age was greater for men in the top PRS percentile, with ORs of 17.2 (95% CI = 13.0–22.8), 9.18 (95% CI = 7.52–11.2), and 5.43 (95% CI = 4.50–6.55) estimated for men ≤55, 55–60, and >70 years of age, respectively. Attenuation of PRS associations with age was also observed in African ancestry men as the OR for men in the top PRS decile decreased from 3.75 (95% CI = 3.04–4.64) in men aged ≤55 to 2.16 (95% CI = 1.76–4.68) in men aged >70. For African ancestry men in the top PRS percentile, the OR decreased from 8.80 (95% CI = 6.16–12.6) in men aged ≤55 to 2.87 (95% CI = 1.76–4.68) in men aged >70. A similar trend was observed in Hispanic men (OR = 6.37, 95% CI = 3.26–12.44 for men ≤55 and OR = 2.15, 95% CI = 1.39–3.32 for men >70 in the top PRS decile). Compared to men in the 40–60% PRS category, men from European, African, and Hispanic populations in the top PRS decile reached 5% absolute risk of prostate cancer 12 years earlier (age 57 vs. 69), 8 years earlier (age 55 vs. 63), and 11 years earlier (age 60 vs. 71), respectively (Table 1, Figure 3). For men in the top PRS percentile, 5% absolute risk was reached by ages 51, 52, and 53 for European, African, and Hispanic populations, respectively.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78304/elife-78304-fig2-v2.jpg)
+
+**Figure 2.:** PRS associations in men of European ancestry (A) were meta-analyzed from UK Biobank (6852 cases and 193,117 controls) and Million Veteran Program (MVP) (13,643 cases and 210,214 controls; Figure 2—figure supplement 1), whereas PRS associations in men of African ancestry (B) were estimated from MVP (6353 cases and 53,362 controls). The x-axis indicates the PRS category. Additional analyses were performed to evaluate the PRS association in men with extremely high genetic risk (top percentile, 99–100%). The y-axis indicates the OR with error bars representing the 95% CIs for each PRS category compared to the 40–60% PRS category. The dotted horizontal line corresponds to an OR of 1. The number of cases and controls, ORs, and 95% CIs for each PRS category in each age stratum are provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78304/elife-78304-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The x-axis indicates the PRS category. Additional analysis was performed to evaluate the PRS association in men with extremely high genetic risk (99–100%). The y-axis indicates OR with error bars representing the 95% CIs for each PRS category compared to the 40–60% PRS category. The dotted horizontal line corresponds to an OR of 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78304/elife-78304-fig3-v2.jpg)
 
-**Figure 3.:** A), African (B), and Hispanic populations (C).The absolute risks were estimated using the age- and population-specific PRS associations from Figure 2—source data 1, the Surveillance, Epidemiology, and End Results (SEER) incidence rates, and the CDC mortality rates corresponding to non-Hispanic White, Black, and Hispanic men. The dotted line indicates the 5% absolute risk of prostate cancer.
+**Figure 3.:** The absolute risks were estimated using the age- and population-specific PRS associations from Figure 2—source data 1, the Surveillance, Epidemiology, and End Results (SEER) incidence rates, and the CDC mortality rates corresponding to non-Hispanic White, Black, and Hispanic men. The dotted line indicates the 5% absolute risk of prostate cancer.
+
+**Table 1.**
+ Age at which 5% absolute risk of prostate cancer is reached in men from European, African, and Hispanic populations.Absolute risks of prostate cancer were estimated using age- and population-specific Surveillance, Epidemiology, and End Results (SEER) incidence rates, CDC National Center for Health Statistics mortality rates, and polygenic risk score (PRS) associations from Figure 2—source data 1 based on Million Veteran Program (MVP) and the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PRS category</th>
+      <th>European</th>
+      <th>African</th>
+      <th>Hispanic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[0–10]</td>
+      <td>&gt;85</td>
+      <td>74</td>
+      <td>&gt;85</td>
+    </tr>
+    <tr>
+      <td>(10–20%]</td>
+      <td>81</td>
+      <td>70</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>(20–30%]</td>
+      <td>75</td>
+      <td>67</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>(30–40%]</td>
+      <td>72</td>
+      <td>66</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>(40–60%]</td>
+      <td>69</td>
+      <td>63</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>(60–70%]</td>
+      <td>66</td>
+      <td>61</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>(70–80%]</td>
+      <td>65</td>
+      <td>59</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>(80–90%]</td>
+      <td>62</td>
+      <td>58</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>(90–100%]</td>
+      <td>57</td>
+      <td>55</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>(99–100%]</td>
+      <td>52</td>
+      <td>51</td>
+      <td>53</td>
+    </tr>
+  </tbody>
+</table>
 
 Similar to previous findings (Conti et al., 2021; Plym et al., 2022), the multi-ancestry PRS did not consistently differentiate aggressive and nonaggressive prostate cancer risk (Appendix 1—table 2). For men in the top PRS decile, ORs were 3.17 (95% CI = 2.77–3.63) and 3.71 (95% CI = 3.48–3.94) for aggressive and nonaggressive prostate cancer in comparison to controls, respectively, in European ancestry men (P-heterogeneity = 0.04), and 1.92 (95% CI = 1.17–3.15) and 3.30 (95% CI = 2.64–4.12), respectively, in Hispanic men (P-heterogeneity = 0.05). In African ancestry men, the association was greater for aggressive (OR = 3.31, 95% CI = 2.71–4.03) than nonaggressive disease (OR = 2.66, 95% CI = 2.43–2.92), although confidence intervals overlapped (P-heterogeneity = 0.05).
 
@@ -95,13 +188,13 @@ The PRS is an effective risk stratification tool for prostate cancer at both end
 
 ## Materials and methods
 
-## Participants and genetic data
+### Participants and genetic data
 
 We replicated the association between the multi-ancestry PRS and prostate cancer risk in three independent case–control samples from the VA MVP, the MADCaP Network, and the NCI-MD, as described below. Previously, this multi-ancestry PRS was replicated by our group and others in the CA UG (1586 cases and 1047 controls of African ancestry), the UK Biobank (6852 cases and 193,117 controls of European ancestry; updates to the UK Biobank led to slightly different sample sizes in this study of 8483 cases and 193,744 controls of European ancestry), and the MGB (formerly known as the Partners Healthcare Biobank, 67 cases and 457 controls of African ancestry and 1554 cases and 10,918 controls of European ancestry). Results from these studies are described in detail elsewhere (Conti et al., 2021; Plym et al., 2022). To provide a comprehensive assessment of the PRS validation, we meta-analyzed all replication studies, which included a total of 22,049 cases and 414,249 controls of European ancestry (UK Biobank, MGB Biobank, and MVP) and 8794 cases and 55,657 controls of African ancestry (MGB Biobank, MADCaP Network, NCI-MD, and MVP). In men of Hispanic ancestry, the multi-ancestry PRS was only assessed in MVP (1,082 cases and 20,601 controls).
 
 All study protocols were approved by each site’s Institutional Review Board, and informed consent was obtained from all study participants in accordance with the principles outlined in the Declaration of Helsinki.
 
-## MVP
+### MVP
 
 The design of the MVP has been previously described (Gaziano et al., 2016). Briefly, participants were recruited from approximately 60 Veteran Health Administration (VHA) facilities across the United States since 2011 with the current enrollment at >800,000. Informed consent was obtained for all participants to provide a blood sample for genetic analysis and access their full clinical and health data. The study received ethical and study protocol approval from the VA Central Institutional Review Board in accordance with the principles outlined in the Declaration of Helsinki.
 
@@ -109,15 +202,15 @@ A total of 485,856 samples from participants enrolled between 2011 and 2017 were
 
 We identified a total of 21,078 cases and 284,177 controls from MVP, of whom 13,643 cases and 210,214 controls were of European ancestry (73.3%), 6353 cases and 53,362 controls were of African ancestry (19.6%), and 1082 cases and 20,601 controls were Hispanic (7.1%). Prostate cancer cases were identified from the Veterans Affairs Central Cancer Registry (VACCR), which collects cancer diagnosis, extent of disease and staging, first course of treatment, and outcomes from 132 VA medical centers. In this analysis, we only included cases from the VACCR who have a confirmed cancer diagnosis based on their diagnostic code, procedure code, and information from other clinical documents. Among the MVP participants without any prostate cancer diagnostic codes, we limited controls to those aged 45–95 years and had at least one prostate-specific antigen (PSA) test after enrollment. For prostate cancer cases, we obtained additional information on cancer staging and Gleason score to define aggressive prostate cancer phenotypes. Specifically, prostate cancer was considered aggressive if one of the following criteria was met: tumor stage T3/T4, regional lymph node involvement (N1), metastatic disease (M1), or Gleason score ≥8.0. Nonaggressive cases were defined as tumor stage T1/T2 and Gleason score <7.
 
-## MADCaP
+### MADCaP
 
 The MADCaP Network dataset included 405 prostate cancer cases and 396 controls from sub-Saharan Africa, as previously described (Harlemon et al., 2020; Andrews et al., 2018), with a substantial proportion of cases diagnosed at late stages. The study protocol was approved by each study site’s Institutional Review Board/Ethnic Review Board. Written informed consent was obtained from all participants, and studies were conducted in concordance with the Declaration of Helsinki and the U.S. Common Rule. The MADCaP samples were genotyped on a customized array designed to capture common genetic variation in diverse African populations, and genotyping and quality control have been described in detail elsewhere (Harlemon et al., 2020). GWAS data were imputed using the 1000 Genomes Project Phase 3 reference panel (1000 Genomes Project Consortium, 2015).
 
-## NCI-MD
+### NCI-MD
 
 The NCI-MD Study included 383 prostate cancer cases identified from two Maryland hospitals and 395 population-based controls from Maryland and its neighboring states (Smith et al., 2017). The study was approved by the NCI (protocol # 05C-N021) and the University of Maryland (protocol #0298229) Institutional Review Boards. Informed consent was obtained from all participants. About 87% of the cases in this study were considered nonaggressive, with pathologically confirmed T1 or T2 tumor and a Gleason score ≤7. All samples from this study were genotyped on the Illumina InfiniumOmni5Exome array and were imputed to the 1000 Genomes Project Phase 3 reference panel (1000 Genomes Project Consortium, 2015).
 
-## PRS construction and association analyses
+### PRS construction and association analyses
 
 PRSs were constructed by summing variant-specific weighted allelic dosages from 269 previously identified prostate cancer risk variants (Conti et al., 2021). Variants were weighted using the multi-ancestry conditional weights generated from our previous trans-ancestry GWAS for prostate cancer (Conti et al., 2021). Variants and weights used to generate the PRS can be found in the PGS Catalog: https://www.pgscatalog.org/publication/PGP000122/.
 
@@ -131,14 +224,14 @@ In the two large replication studies, UK Biobank and MVP, logistic regression an
 
 In the three ancestry populations from MVP, we also performed stratified analyses by disease aggressiveness, where cases were stratified as aggressive or nonaggressive and all controls were used in the corresponding stratified analysis. In both the aggressive cases vs. controls and nonaggressive cases vs. controls analyses, logistic regression was performed with the case–control status as the outcome (a binary dependent variable) and the PRS categories as independent predictors, adjusting for age and the up to 10 principal components of ancestry, with the (40–60%] category as the reference. Heterogeneity across strata was assessed via a Q statistic between effects estimates with corresponding tests of significance (Schwarzer et al., 2015).
 
-## Estimation of absolute risk
+### Estimation of absolute risk
 
 The absolute risk of prostate cancer was calculated for a given age for each PRS category in European, African, and Hispanic ancestry men (Antoniou et al., 2010; Kuchenbaecker et al., 2017; Amin Al Olama et al., 2015; Antoniou et al., 2001). The approach constrains the PRS-specific absolute risks for a given age to be equivalent to the age-specific incidences for the entire population, such that age-specific incidence rates are calculated to increase or decrease based on the estimated risk of the PRS category and the proportion of the population within the PRS category. The calculation accounts for competing causes of death.
 
-Specifically, for a given population and PRS category k (e.g., 80–90%, 90–100%), the absolute risk by age t is computed as ARkt=∑0tPNDtSktIkt . This calculation consists of three components:
+Specifically, for a given population and PRS category k (e.g., 80–90%, 90–100%), the absolute risk by age t is computed as $AR_{k}t=\sum_{0}^{t}P_{ND}tS_{k}tI_{k}t$ . This calculation consists of three components:
 
-Prostate cancer incidence for age t for the reference category, I0t, was obtained by constraining the weighted average of the population cancer incidences for the PRS categories to the population age-specific prostate cancer incidence, μt . I0t=μt∑KfkSkt-1∑KfkSkt-1exp⁡βk , where fk is the frequency of the PRS category k with fk=0.1 for all nonreference categories in our primary PRS analysis by deciles (e.g., 0–10%, 10–20%, 20–30%, etc.).
+Prostate cancer incidence for age t for the reference category, $I_{0}t,$ was obtained by constraining the weighted average of the population cancer incidences for the PRS categories to the population age-specific prostate cancer incidence, $\mut$ . $I_{0}t=\mut\frac{\sum_{K}f_{k}S_{k}t-1}{\sum_{K}f_{k}S_{k}t-1exp⁡\beta_{k}}$ , where $f_{k}$ is the frequency of the PRS category k with $f_{k}=0.1$ for all nonreference categories in our primary PRS analysis by deciles (e.g., 0–10%, 10–20%, 20–30%, etc.).
 
-By leveraging the definition that Skt=0=1, for all k, the absolute risks were calculated iteratively by first getting I0t=1 , then Ikt=1 , then Skt=1, and finally ARkt=1 . Subsequent values were then calculated recursively for all t.
+By leveraging the definition that $S_{k}t=0=1$, for all k, the absolute risks were calculated iteratively by first getting $I_{0}t=1$ , then $I_{k}t=1$ , then $S_{k}t=1$, and finally $AR_{k}t=1$ . Subsequent values were then calculated recursively for all t.
 
-For each population, absolute risks by age t were calculated using age- and population-specific prostate cancer incidence, μt , from theSEER program (1999–2013) and age- and population-specific mortality rates, μDt , from the National Center for Health Statistics, CDC (1999–2013).
+For each population, absolute risks by age t were calculated using age- and population-specific prostate cancer incidence, $\mut$ , from theSEER program (1999–2013) and age- and population-specific mortality rates, $\mu_{D}t$ , from the National Center for Health Statistics, CDC (1999–2013).

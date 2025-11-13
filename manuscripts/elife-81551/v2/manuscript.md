@@ -14,19 +14,19 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States
-2. https://ror.org/017zqws13 Department of Plant and Microbial Biology, and BioTechnology Institute, University of Minnesota St. Paul United States
-3. https://ror.org/02ygzhr13 Division of Computing and Software Systems, University of Washington Bothell Bothell United States
-4. https://ror.org/04gyf1771 Department of Chemistry, University of California, Irvine Irvine United States
-5. https://ror.org/04gyf1771 Department of Materials Science and Engineering, University of California Irvine United States
-6. https://ror.org/04gyf1771 Department of Molecular Biology and Biochemistry, University of California Irvine United States
-7. https://ror.org/04gyf1771 Department of Chemical and Biomolecular Engineering, University of California Irvine United States
+1. Department of Biochemistry and Molecular Genetics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Department of Plant and Microbial Biology, and BioTechnology Institute, University of Minnesota St. Paul United States ([ROR:017zqws13](https://ror.org/017zqws13))
+3. Division of Computing and Software Systems, University of Washington Bothell Bothell United States ([ROR:02ygzhr13](https://ror.org/02ygzhr13))
+4. Department of Chemistry, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+5. Department of Materials Science and Engineering, University of California Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+6. Department of Molecular Biology and Biochemistry, University of California Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+7. Department of Chemical and Biomolecular Engineering, University of California Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
 
 † Corresponding author
 
 ## Abstract
 
-While early genetic and low-resolution structural observations suggested that extracellular conductive filaments on metal-reducing organisms such as Geobacter were composed of type IV pili, it has now been established that bacterial c -type cytochromes can polymerize to form extracellular filaments capable of long-range electron transport. Atomic structures exist for two such cytochrome filaments, formed from the hexaheme cytochrome OmcS and the tetraheme cytochrome OmcE. Due to the highly conserved heme packing within the central OmcS and OmcE cores, and shared pattern of heme coordination between subunits, it has been suggested that these polymers have a common origin. We have now used cryo-electron microscopy (cryo-EM) to determine the structure of a third extracellular filament, formed from the Geobacter sulfurreducens octaheme cytochrome, OmcZ. In contrast to the linear heme chains in OmcS and OmcE from the same organism, the packing of hemes, heme:heme angles, and between-subunit heme coordination is quite different in OmcZ. A branched heme arrangement within OmcZ leads to a highly surface exposed heme in every subunit, which may account for the formation of conductive biofilm networks, and explain the higher measured conductivity of OmcZ filaments. This new structural evidence suggests that conductive cytochrome polymers arose independently on more than one occasion from different ancestral multiheme proteins.
+While early genetic and low-resolution structural observations suggested that extracellular conductive filaments on metal-reducing organisms such as Geobacter were composed of type IV pili, it has now been established that bacterial c-type cytochromes can polymerize to form extracellular filaments capable of long-range electron transport. Atomic structures exist for two such cytochrome filaments, formed from the hexaheme cytochrome OmcS and the tetraheme cytochrome OmcE. Due to the highly conserved heme packing within the central OmcS and OmcE cores, and shared pattern of heme coordination between subunits, it has been suggested that these polymers have a common origin. We have now used cryo-electron microscopy (cryo-EM) to determine the structure of a third extracellular filament, formed from the Geobacter sulfurreducens octaheme cytochrome, OmcZ. In contrast to the linear heme chains in OmcS and OmcE from the same organism, the packing of hemes, heme:heme angles, and between-subunit heme coordination is quite different in OmcZ. A branched heme arrangement within OmcZ leads to a highly surface exposed heme in every subunit, which may account for the formation of conductive biofilm networks, and explain the higher measured conductivity of OmcZ filaments. This new structural evidence suggests that conductive cytochrome polymers arose independently on more than one occasion from different ancestral multiheme proteins.
 
 ## Introduction
 
@@ -42,15 +42,130 @@ In this work, we describe the cryo-EM structure of G. sulfurreducens OmcZ, and s
 
 ## Results
 
-## Cryo-EM of the OmcZ filament
+### Cryo-EM of the OmcZ filament
 
 To obtain OmcZ filaments, we grew a ΔomcS strain of G. sulfurreducens on graphite electrodes poised at +0.24 vs. SHE. Filaments were enriched via shearing, DNAse treatment and salt precipitation, similar to protocols used for OmcS and OmcE, except that higher pH buffers were found to increase the recovery of OmcZ (Figure 1—figure supplement 1). Using cryo-EM (Figure 1a), we determined the structure of these filaments. Unlike OmcS filaments (Wang et al., 2019), OmcZ filaments did not show as strong a sinusoidal morphology (Figure 1b and c). An averaged power spectrum from raw segments (Figure 1—figure supplement 2A) showed a meridional layer-line at ~1/(58 Å), corresponding to the rise per subunit in the filament, and another layer-line near the equator at ~1/(132 Å) corresponding to the 132 Å pitch of a 1-start helix. After refining those parameters in the helical and subsequent non-uniform refinement, a ~4.2 Å resolution reconstruction was obtained, judged by a map:map Fourier shell correlation (FSC, Figure 1—figure supplement 2b). The model:map FSC gives a similar resolution estimation (Table 1). OmcZ filaments are ~50 Å at their widest point and coordinate eight heme molecules per cytochrome subunit.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81551/elife-81551-fig1-v2.jpg)
+
+**Figure 1.:** (a) Cryo-EM image of the purified OmcZ filaments from ΔomcS G. sulfurreducens strain grown on electrodes. The sample was treated with DNase I prior to freezing. Scale bar = 50 nm. The upper right is a two-dimensional class average of the OmcZ filament, showing the rise of 58 Å between adjacent subunits. (b) The cryo-EM reconstruction (transparent gray) with backbone trace of the OmcZ subunits. The density of heme molecules is shown in red. One OmcZ subunit is colored in blue and the rest are yellow. (c) The atomic model of OmcZ filaments. The protein backbone trace is shown and the heme molecules are shown in ball and stick representation. (d) A zoomed region to show the heme array in OmcZ, with the minimum observed edge-to-edge distances indicated between adjacent porphyrin rings. Heme molecules are labeled with numbers in circles, The superscripts ‘+1’ and ‘–1’ indicate protein subunits above and below the central subunit, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81551/elife-81551-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Silver stain and (b) heme stain of filament preparations after dialysis. (c) Coverage of OmcZ forms and related GSU1334 protein by tandem mass spectrometry(MS/MS) after dialysis with 300 kDa filter. (d) MALDI-TOF of preparation and (e) detected peptides within the heme domain (‘OmcZs’) of OmcZ. (f) Heme stain showing effect the of pH 7.5 Tris vs. pH 10.5 ethanolamine buffer on raw filament recovery from biofilms prior to further enrichment, dialysis, or purification from sheared biofilms, and (g) Western blot using anti-OmcZ antibodies of the same preparations. Arrow indicates a region consistent with OmcZs. Raw, uncropped images are provided for the gels in (a ,b, f and g) as Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81551/elife-81551-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Averaged power spectra from OmcZ filaments. (b) The map:map Fourier shell correlation (FSC) calculation of OmcZ filament (0.143 cutoff). (c) Cryo-EM model of single OmcZ subunits (red), aligned by the full-length OmcZ prediction, generated by AlphaFold (cyan). The AlphaFold predicted subunit contains tandem Ig-domains at the C-terminus that are cleaved and not present in the filament.
+
+**Table 1.**
+ Cryo-EM and refinement statistics of OmcZ filaments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>OmcZ filament</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e− Å−2)</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.08</td>
+    </tr>
+    <tr>
+      <td>Particle images (n)</td>
+      <td>92,170</td>
+    </tr>
+    <tr>
+      <td>Shift (pixel)</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td colspan="2">Helical symmetry</td>
+    </tr>
+    <tr>
+      <td>Point group</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Helical rise (Å)</td>
+      <td>58.1</td>
+    </tr>
+    <tr>
+      <td>Helical twist (°)</td>
+      <td>–158.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Map resolution (Å)</td>
+    </tr>
+    <tr>
+      <td>Map:map Fourier shell correlation (FSC, 0.143)</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>Model:map FSC (0.5)</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement and model validation</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>88.0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Real space correlation coefficient</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>22.1</td>
+    </tr>
+    <tr>
+      <td>Bonds RMSD, length (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Bonds RMSD, angles (°)</td>
+      <td>0.990</td>
+    </tr>
+    <tr>
+      <td>Deposition ID</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein Data Bank (model)</td>
+      <td>8D9M</td>
+    </tr>
+    <tr>
+      <td>Electron Microscopy Data Bank (map)</td>
+      <td>EMD-27266</td>
+    </tr>
+  </tbody>
+</table>
 
 Building an atomic model de novo at such resolution is typically challenging, especially when protein secondary structure elements are sparse (Wang et al., 2022). Fortunately, highly accurate protein structure prediction is now possible with AlphaFold2, even when the protein of interest has minimal similarity with any known protein structure (Jumper et al., 2021). The AlphaFold2 predicted full-length OmcZ model had a signal peptide, an N-terminal domain with eight pairs of histidines coordinating hemes that reasonably matched the cryo-EM map, and tandem Ig-domains (β-sandwiches) at the C-terminus (Figure 1—figure supplement 2c). Using the AlphaFold prediction as a starting model and iterative model refinements, residues P27 to S284 could fit into the map, with the signal peptide (residues 1–26) and the C-terminal Ig-domains missing. The RMSD between the cryo-EM model (255 Cα atoms) and the AlphaFold prediction is 5.9 Å, while the best aligned 113 atom pairs have an RMSD of 1.1 Å. It has been previously shown that OzpA, a subtilisin-like serine protease, cleaves the C-terminal part of OmcZ (Kai et al., 2021). While prior data detected amino acids consistent with residues 280–282 (amino acids FGN) at the C-terminus of purified OmcZ, the last visible C-terminal residues in the cryo-EM map extended to residue 284 (amino acids FGNSS) suggesting this could be the cleavage site. The next serine towards the C-terminus is S298, in the middle of a β-sandwich in the predicted model. The only other protein in G. sulfurreducens predicted by AlphaFold to have a similar structure is GSU1334, a putative octaheme c-type cytochrome. However, OmcZ was the only 30 kDa cytochrome detected by mass spectrometry of sodium-dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) separated filament preparations (Figure 1—figure supplement 1), consistent with transcriptional analysis showing OmcZ is induced to levels over 75-fold higher than GSU1334 during electrode growth (~50 RPKM for GSU1334 vs. 4200 RPKM for omcZ) (Jiménez Otero et al., 2018). An OmcZ model generated from homology modeling has been previously reported (Yalcin et al., 2020). However, neither its protein fold nor heme arrangements bear any resemblance to our experimentally determined model.
 
 For all eight hemes per OmcZ subunit, two histidines axially coordinate iron at the center of each heme, and the vinyl groups of each heme form covalent thioether bonds with cysteines. Most heme-heme arrangements in OmcZ are either T-shaped or anti-parallel (Figure 1d). However, heme 6 (Figure 1d), in each OmcZ subunit does not fit into the closely packed central linear heme chain. The edge-to-edge distances between adjacent porphyrin rings in the main heme chain are between 3.6 Å and 5.7 Å, comparable to those in OmcS and OmcE filaments. All hemes in OmcZ are thus close to two other hemes, with the exception of heme 6 which is only close to one other heme, heme 5, at an edge-to-edge distance of 4.6 Å.
 
-## OmcZ structurally differs from OmcS and OmcE
+### OmcZ structurally differs from OmcS and OmcE
 
 OmcZ filaments represent the third experimentally determined atomic structure of an extracellular cytochrome filament. Our first question was whether the protein fold or heme arrangement had been seen in other proteins. We have shown that OmcS and OmcE, while lacking sequence or protein fold similarity, share a conserved heme arrangement (Wang et al., 2022). In contrast, OmcZ shares no similarity to OmcS or OmcE in sequence, protein fold, or heme arrangement (Figure 2a and b). When we used the DALI (Holm, 2020) and Foldseek servers (van Kempen et al., 2022) to find structures with a similar fold to OmcZ, both servers returned no hits, suggesting the fold of OmcZ has not been previously observed. This may be due to the low percentage of secondary structure in OmcZ (18.2% helices and 4.7% β-strands), as the DALI and Foldseek servers also returned no hits for OmcS and OmcE, except for themselves and their homologs sharing extensive sequence similarity.
 
@@ -62,7 +177,7 @@ In the conserved heme packing of OmcS and OmcE (Figure 2b), the heme-heme intera
 
 The protein-protein interface in OmcZ filaments is also quite different from OmcS and OmcE. In the latter cases, a heme molecule is coordinated by a histidine coming from an adjacent subunit. In OmcZ, all eight hemes are coordinated by histidines within the same subunit. The interfacial buried area in OmcZ is ~1200 Å2, comparable to the interface in OmcE (~1100 Å2) but much smaller than the interface in OmcS (~1900 Å2). Similar to OmcS and OmcE, an anti-parallel heme pair is observed at the interface (Figure 2d). Also unique to OmcZ is the motif binding heme 1, which lies at the N-terminal interface. Instead of the canonical CxxCH motif, additional amino acids form a 14-residue loop between C77 and C92 (rather than the expected pattern of C89, C92, and H93). This additional loop is involved in the subunit-subunit interface (Figure 2d).
 
-## OmcZ filaments possess solvent-accessible hemes
+### OmcZ filaments possess solvent-accessible hemes
 
 In OmcZ, heme 6 is largely solvent-exposed in every subunit in the filament (Figure 3a). In contrast, the only solvent-exposed hemes in the OmcE and OmcS polymers are those at the two ends of a filament, similar to the chain inside the 10 heme MtrAB membrane-spanning complex from Gram-negative Shewanella baltica (Edwards et al., 2020), where hemes are only solvent-exposed at the ends of a linear ‘molecular wire’ (Figure 3b). In contrast to the highly polymerized cytochromes in OmcS, OmcE, and OmcZ, the MtrABC complex is a dimer of two 10-heme cytochromes, MtrA and MtrC, with MtrB acting as a surrounding insulator. It has been shown that the Mtr complex is capable of sustaining bidirectional electron transport rates greater than 8500 e s–1 (White et al., 2013) and thus may provide some insights into the expected transport rates for the cytochrome filaments. The exposure of hemes in OmcZ was more analogous to the MtrC portion of the MtrABC complex, which has a branched heme chain introducing additional solvent-exposed hemes at the sides (Figure 3b and c). For comparison, the solvent-exposed area of heme 6 in OmcZ is 326 Å2, while the most exposed heme in MtrABC (heme 901, the heme molecule exposed in the periplasm) has a solvent-exposed area of 292 Å2. The other heme molecules in OmcZ are not comparable with heme 6 in terms of the solvent-exposed area, ranging from 12 Å2 to 147 Å2. As a control, the solvent-exposed area of heme molecules in OmcE ranges from 27 Å2 to 85 Å2; in OmcS they range from 52 Å2 to 142 Å2.
 
@@ -96,7 +211,7 @@ With the availability of these new cytochrome filament structures, it is temptin
 
 ## Materials and methods
 
-## G. sulfurreducens growth and OmcZ filament preparation
+### G. sulfurreducens growth and OmcZ filament preparation
 
 G. sulfurreducens were grown in an anoxic basal medium with acetate (20 mM) as the electron donor and fumarate (40 mM) as the electron acceptor with 0.38 g/L potassium chloride, 0.2 g/L ammonium chloride, 0.069 g/L monosodium phosphate, 0.04 g/L calcium chloride dihydrate, 0.2 g/L magnesium sulfate heptahydrate and 10 mL mineral mix (Chan et al., 2015). The pH of the medium was adjusted to 6.8, buffered with 2 g/L sodium bicarbonate, and sparged with N2:CO2 gas (80:20) passed over a heated copper column to remove trace oxygen. For all experiments, G. sulfurreducens strains were revived anaerobically from frozen dimethyl sulfoxide stocks for single colony isolates on 1.2% agar plates. All cultures were grown at 30°C.
 
@@ -104,26 +219,30 @@ OmcZ filaments were isolated from electrode-grown G. sulfurreducens PCA ΔomcS s
 
 G. sulfurreducens biofilms were harvested when the current density reached ~1 mA/cm2. Biofilm from eight 9 cm2 electrodes was scraped into 80 ml of 150 mM ethanolamine buffer pH 10.5 (Wang et al., 2017) with 0.25 U/mL benzonase, as the higher pH buffers were found to increase recovery compared to pH 6.5 buffers used for OmcS and OmcE (Figure 1—figure supplement 1). OmcZ filaments were sheared using a Waring Commercial blender (Cat. No. 7011 S) for 3 min on low setting, then 1 min on high setting. Cell debris was removed by centrifugation at 8000 × g for 20 min.
 
-## SDS-PAGE of filaments sample
+### SDS-PAGE of filaments sample
 
 The sheared filaments mixture was filtered and concentrated using 100 kDa and 300 kDa concentrator units (Sartorius Vivaspin) after multiple washing with buffer and subsequently ultrapure water. The concentrated filaments sample was diluted to 0.3 mg/mL with 50 mM ammonium bicarbonate (pH 7.8) buffer. The filaments sample was analyzed by SDS-PAGE to assess the separation as previously described (Wang et al., 2019). Briefly, Acryl/Bis (37.5:1, 40% w/v) solution (VWR) was used to prepare 4–16% Tricine-SDS-PAGE (Schägger, 2006) gels. Diluted filament samples with a final concentration of 0.15 mg/mL from each 100 kDa and 300 kDa filtration step were mixed with sample buffer with 0.5% and 2% w/v final concentrations of SDS. Before loading the samples into the gel, samples were boiled for 20 min before cooling to room temperature, followed by spinning at 2000 × g for 1 min. The samples were allowed to run with an initial voltage of 50 V for 10 min and the next voltage step of 200 V for 2.5 hr. A Spectra Multicolor Broad Range Protein Ladder (ThermoFisher) was used as mass standards for the protein bands. After washing the gels with ultrapure water three times, gels were stained with silver stain (Kavran and Leahy, 2014) or with 3,3′,5,5′-tetramethylbenzidine (Thomas et al., 1976).
 
-## In-solution digestion by Trypsin/Chymotrypsin
+### In-solution digestion by Trypsin/Chymotrypsin
 
 In-solution digestion protocol was adapted from Promega protocols for Trypsin Gold and Chymotrypsin (Promega). A 0.3 mg/mL of filaments sample obtained after the 300 kDa filtration step was digested with a combination of Trypsin Gold and Chymotrypsin. For Trypsin Gold, 50 µg was mixed with 50 mM acetic acid to reach 1 µg/µL and diluted to 20 µg/mL in 50 mM ammonium bicarbonate (pH 7.8). For Chymotrypsin, 25 µg was resuspended in 1 mM HCl to a final concentration of 1 µg/µL and diluted to 20 µg/mL in 50 mM ammonium bicarbonate (pH 7.8). 5 µL of 100 mM DL-dithiothreitol (Sigma-Aldrich) was used to reduce 30 µL of the filaments sample followed by incubation at 37°C for 1 hr. The reduced sample was spiked with 10 µL of 100 mM iodoacetamide (Sigma-Aldrich) and incubated in the dark at room temperature for 45 min. Then, the mixture was diluted with 90 µL of 50 mM ammonium bicarbonate (pH 7.8) before adding 15 µL of the combination of Chymotrypsin and Trypsin Gold. The filamen sample was incubated for 3 hr at 37°C.
 
-## Mass spectrometry of filament samples
+### Mass spectrometry of filament samples
 
 The proteolyzed peptides mixture of filament sample was quenched after 3 hr incubation by adding 30 µL of 1% trifluoroacetic acid before MALDI-TOF/TOF (UltrafleXtreme, Bruker) characterization in positive ion mode. A saturated solution of α-cyano-4-hydroxycinnamic acid (Sigma-Aldrich) was used for the matrix solution by dissolving with a 2:1 solution of ultrapure water:acetonitrile (Ing et al., 2017). The sample spot was recrystallized on the MALDI plate with a 1:1 ratio of 0.1% of trifluoroacetic acid and acetonitrile. The data were analyzed using mMass protein identification software (Niedermeyer and Strohalm, 2012; Strohalm et al., 2008; Strohalm et al., 2010).
 
-## Cryo-EM conditions and image processing
+### Cryo-EM conditions and image processing
 
 The cell appendage sample (ca. 3.5–4.0 μl) was applied to glow-discharged lacey carbon grids, and then plunge frozen using an EM GP Plunge Freezer (Leica). The cryo-EMs were collected on a 300 keV Titan Krios with a K3 camera (University of Virginia) at 1.08 Å/pixel and a total dose of ca. 48 e/Å2. Motion corrections and contrast transfer function (CTF) estimations were done in cryoSPARC (Punjani et al., 2017; Rohou and Grigorieff, 2015; Zheng et al., 2017). Particles were auto-picked by ‘Filament Tracer’ with a shift of 60 pixels between adjacent boxes. All auto-picked particles underwent multiple rounds of 2D classification, and all particles in bad 2D class averages were removed. After this, the OmcZ dataset had 92,170 particles remaining. The helical symmetry was originally determined in our previous study (Wang et al., 2019). After a helical refinement applying and optimizing the helical symmetry, a non-uniform refinement was performed to improve the resolution in the central area of the map. The resulting half maps were then sharpened by ‘highres’ mode in DeepEMhancer (Sanchez-Garcia et al., 2021), and the cryo-EM parameters are listed in Table 1.
 
-## Model building of OmcZ filaments
+### Model building of OmcZ filaments
 
 The hand of the OmcZ filaments was determined by the hand of an α-helix. The hand assignment also agreed with the AlphaFold (Jumper et al., 2021) predictions of OmcZ. Part of the AlphaFold prediction (P27-S284), without N-terminal signal peptide and C-terminal β-sandwich domains, was docked into the cryo-EM map, and the regions that did not fit well were manually adjusted in Coot (Emsley and Cowtan, 2004). The de novo placement of heme molecules in the cryo-EM map at this resolution is challenging, especially since ligands are not included in the AlphaFold prediction. Therefore, to better refine heme-interacting areas at this resolution, bond/angle restraints for the heme molecule itself, His-Fe and Cys-heme thioester bonds were restricted based on the geometries obtained in high-resolution crystal structures such as NrfB20 (PDB 2P0B) and NrfHA21 (PDB 2J7A). Real-space refinement was performed with those restraints (Afonine et al., 2018). To clean up the protein geometry, OmcZ models were further rebuilt using Rosetta (Wang et al., 2015). MolProbity (Williams et al., 2018) was used to evaluate the quality of the filament model, and the refinement statistics are shown in Table 1.
 
-## Structural analysis of heme c pairs
+### Structural analysis of heme c pairs
 
-All structural coordinates with heme ligand (HEC or/and HEM) were downloaded from the Protein Data Bank. All possible heme pairs were then filtered with a minimum distance less than or equal to 6 Å, with the ‘contact’ command in UCSF-ChimeraX (Pettersen et al., 2021). For each qualified pair, the rotation matrix between two porphyrin rings was generated in ChimeraX using the ‘align’ command. The rotation angle θ was then calculated from the rotation matrix with the following equation, where tr is the trace of the rotation matrix:.|θ|=arccos(tr(R)−12)
+All structural coordinates with heme ligand (HEC or/and HEM) were downloaded from the Protein Data Bank. All possible heme pairs were then filtered with a minimum distance less than or equal to 6 Å, with the ‘contact’ command in UCSF-ChimeraX (Pettersen et al., 2021). For each qualified pair, the rotation matrix between two porphyrin rings was generated in ChimeraX using the ‘align’ command. The rotation angle θ was then calculated from the rotation matrix with the following equation, where tr is the trace of the rotation matrix:
+
+$$
+|\theta|=arccos(\frac{tr(R)−1}{2})
+$$

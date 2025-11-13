@@ -40,9 +40,21 @@ In this study, we utilized an interactome-based approach to isolate Regnase-1 pr
 
 ## Results
 
-## Regnase-1 interactome analysis revealed dynamic recruitment of 14-3-3 upon stimulation
+### Regnase-1 interactome analysis revealed dynamic recruitment of 14-3-3 upon stimulation
 
 To comprehensively uncover Regnase-1-associating proteins in steady state and under inflammatory conditions, we stimulated HeLa cells expressing FLAG-HA-tagged Regnase-1 with or without IL-1β and immunoprecipitated Regnase-1 immediately after the treatment with a crosslinking reagent, Dithiobis(succinimidyl propionate) (DSP) (Figure 1A). Consistent with the previous reports, mass spectrometry analysis revealed that Regnase-1 interacted with translation-related proteins such as ribosomal proteins in unstimulated cells (Mino et al., 2015). Whereas IL-1β stimulation reduced the association between Regnase-1 and translation-related proteins, the stimulation strongly induced the association between Regnase-1 and SCF complex proteins such as βTRCP1/2, CUL1, and SKP1 (Iwasaki et al., 2011). In addition to these proteins, we identified 14-3-3 family proteins as novel Regnase-1-associating proteins under IL-1β-stimulated conditions (Figure 1B). Consistently, immunoprecipitation analysis revealed that endogenous Regnase-1 was co-precipitated with Myc-tagged 14-3-3ε as well as with HA-tagged βTRCP in HeLa cells in response to IL-1β stimulation (Figure 1C and Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the DSP-crosslinking workflow. (B) Protein-protein interaction of the Regnase-1 (Reg1)-associating proteins. Each node represents Regnase-1 associating protein. The proteins whose association with Regnase-1 is weakened or enhanced in IL-1β-stimulated cells are colored in blue or red, respectively. (C) Immunoblot analysis of immunoprecipitates (IP: Myc or IP: HA) and WCL (whole cell lysates) from HeLa cells transiently expressing Myc-14-3-3ε and HA-βTRCP1 stimulated with IL-1β (10 ng/ml) for indicated time. (D) Immunoblot analysis of immunoprecipitates (IP: Myc) and WCL from RAW264.7 or RAW264.7 stably expressing Myc-14-3-3ε stimulated with Pam3CSK4 (10 ng/ml), poly I:C (100 μg/ml), LPS (100 ng/ml), R848 (100 nM), or CpG DNA (1 μM) for 4 hr.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Immunoblot analysis of immunoprecipitates (IP: Myc or IP: HA) and WCL from HeLa cells transiently expressing Myc-14-3-3ε and HA-βTRCP1 stimulated with IL-1β (10 ng/ml) for indicated time. The immunoprecipitates and corresponding WCL samples, both of which were used in Figure 1C, were applied to the same gel and the membranes were blotted with anti Regnase-1 antibody as well as anti-Actin antibody.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Immunoblot analysis of immunoprecipitates (IP: HA) and WCL from HeLa cells transiently expressing HA-14-3-3β, γ, ε, ζ, η, θ, or σ stimulated with IL-1β (10 ng/ml) for 4 hr.
 
 As the 14-3-3 family consists of seven paralogs in human and mouse (Aitken, 2006), we investigated the binding of these members to Regnase-1 via immunoprecipitation (Figure 1—figure supplement 2). Among seven of the 14-3-3 proteins, 14-3-3-β, γ, and ε strongly interacted with Regnase-1, while 14-3-3-ζ, η, and θ showed weak interaction. Interestingly, Regnase-1 failed to associate with 14-3-3-σ, the latter of which was reported to exclusively form a homodimer but not a heterodimer with other 14-3-3 isoforms (Verdoodt et al., 2006).
 
@@ -50,9 +62,45 @@ To investigate if stimulation with TLR ligands also induces Regnase-1-14-3-3 bin
 
 Collectively, these results demonstrate that IL-1R/TLR stimulation induces dynamic remodeling of the Regnase-1-associating protein complex from translation machineries to SCF complexes and/or 14-3-3 proteins.
 
-## Phosphorylation of Regnase-1 at S494 and S513 is necessary for Regnase-1-14-3-3 binding
+### Phosphorylation of Regnase-1 at S494 and S513 is necessary for Regnase-1-14-3-3 binding
 
 Since 14-3-3 proteins are known to recognize phosphorylated proteins (Muslin et al., 1996), we investigated if 14-3-3-bound Regnase-1 is phosphorylated by inflammatory stimuli. SDS-PAGE analysis revealed that Regnase-1 band migration was slower in samples stimulated with IL-1β or TLR ligands (except for a TLR3 ligand, poly I:C) - a hallmark of Regnase-1 phosphorylation (Figures 1C–D and 2A, and Figure 2—figure supplement 1; Iwasaki et al., 2011; Tanaka et al., 2019). Indeed, the mobility change of Regnase-1 was abolished when the cell lysates were treated with λ-protein phosphatase (λPP) (Figure 2A–B). Furthermore, the Regnase-1 band in the 14-3-3-precipitate migrated slower; λPP treatment of the 14-3-3-precipitate abolished this phenomenon (Figure 2A–B). Thus, 14-3-3 specifically binds to phosphorylated Regnase-1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-v3.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of λPP-treated immunoprecipitates (IP: HA) and WCL from HeLa cells transiently expressing HA-14-3-3ε stimulated with IL-1β (10 ng/ml) for 4 hr. S.E.: short exposure, L.E.: long exposure. (B) The intensity of Regnase-1-bands in (A). (C) Quantitation of phosphosites on Regnase-1 in HeLa cells stimulated with or without IL-1β (10 ng/ml) for 4 hr. Each dot shows phosphosite quantitative ratio between IL-1β + and IL-1β -. Phosphosites with log2 ratio > one were colored with red. Black horizontal line shows Regnase-1 protein quantitative ratio derived from the average of non-phosphopeptide quantitative ratios, and its error bars show the standard deviation. (D) Immunoblot analysis of immunoprecipitates (IP: HA) and WCL from HeLa cells transiently expressing HA-14-3-3ε and FLAG-Regnase-1-WT or indicated mutants stimulated with IL-1β (10 ng/ml) for 4 hr. (E) Schematic illustration of Regnase-1 protein. The amino acid sequence including S494 and S513 shown in (F) is highlighted in green. NTD: N-terminal domain, ZF: Zinc finger domain, CTD: C-terminal domain. (F) The amino acid sequences including S494 and S513 of Regnase-1 from mouse and other indicated vertebrates. (G) Immunoblot analysis of immunoprecipitates (IP: Myc) and WCL from HeLa cells transiently expressing Myc-14-3-3ε, HA-IRAK1/2, and FLAG-Regnase-1-WT or indicated mutants. (H) Schematic illustration of IRAK1 protein. The amino acid sequence in CSD of IRAK1 and IRAK2 from mouse and other indicated vertebrates are also shown. DD: Death domain, CSD: C-terminal structural domain. (I) Immunoblot analysis of immunoprecipitates (IP: HA) and WCL from HeLa cells transiently expressing FLAG-Regnase-1-WT, HA-14-3-3ε, and Myc-IRAK1-WT or indicated mutants.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Immunoblot analysis of Zc3h12aWT/WT and Zc3h12a–/– thioglycollate-elicited PECs stimulated with LPS (100 ng/ml) for indicated time.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Only quantitatively altered phosphopeptides are shown. Fragment ions containing the N-(b-type ions) or C-(y-type ions) terminus are labeled with red (without neutral loss) or orange (with neutral-loss).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** HeLa cells were transfected with pX459 to knockout IRAK1 and IRAK2. After the selection with puromycin, the cells were transfected with 14-3-3ε and stimulated with IL-1β (10 ng/ml) for 4 hr. Immunoblot analysis of immunoprecipitates (IP: HA) and WCL is shown.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** The result of secondary structure prediction is shown below. DD: Death domain, CSD: C-terminal structural domain.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** Luciferase activity of HeLa cells transiently transfected with NF-κB luciferase reporter plasmid together with expression plasmids of IRAK1-WT or indicated mutants.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** Quantitation of phosphosites on Regnase-1 in HeLa cells stimulated with or without IL-17A (50 ng/ml) for 4 hr. Each dot shows phosphosite quantitative ratio between IL-17A+ and IL-17A-. Phosphosites with log2 ratio > 1 were colored with red. Black horizontal line shows Regnase-1 protein quantitative ratio derived from the average of non-phosphopeptide quantitative ratios, and its error bars show the standard deviation.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** Only quantitatively altered phosphopeptides are shown. Fragment ions containing the N-(b-type ions) or C-(y-type ions) terminus are labeled with red (without neutral loss) or orange (with neutral-loss).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Immunoblot analysis of immunoprecipitates (IP: HA) and WCL from HeLa cells transiently expressing HA-14-3-3γ and FLAG-Regnase-1-WT or indicated mutants stimulated with IL-17A (50 ng/ml) for 4 hr.
 
 We next scrutinized Regnase-1 phosphorylation sites induced by IL-1β stimulation to identify phosphorylation sites critical for the Regnase-1-14-3-3 interaction. We purified FLAG-HA-Regnase-1 from HeLa cells stimulated with or without IL-1β and identified IL-1β-inducible phosphorylation sites by LC-MS/MS (Figure 2C and Figure 2—figure supplement 2). We found that the phosphorylation at S21, S61, S62, S362, S439, S470, S494, and S513 of Regnase-1 was increased in response to IL-1β stimulation. To identify Regnase-1 phosphorylation sites responsible for binding with 14-3-3, we mutated serine residues on Regnase-1 phosphorylation sites into alanine and probed its association with 14-3-3. Among the Regnase-1-SA mutants, S494A and S513A mutants failed to be co-precipitated with 14-3-3 (Figure 2D), indicating that phosphorylation at both of S494 and S513 is necessary for the Regnase-1-14-3-3 interaction. Both phosphorylation sites harbor a pSxP sequence, which shows similarity with a known 14-3-3-binding motif, RxxpSxP, mode 1 (Yaffe et al., 1997). Noteworthy, amino acid sequences surrounding S494 and S513 are highly conserved among many species (Figure 2E–F).
 
@@ -62,7 +110,7 @@ S494 and S513 of Regnase-1 are also reported to be phosphorylated by overexpress
 
 Collectively, these data demonstrate that the IRAK-dependent phosphorylation of Regnase-1 at S494 and S513 is necessary for the association between Regnase-1 and 14-3-3.
 
-## βTRCP binds to 14-3-3-free Regnase-1
+### βTRCP binds to 14-3-3-free Regnase-1
 
 MyD88-dependent signaling also induces IKK-mediated phosphorylation of Regnase-1 at S435 and S439, which allows recognition of Regnase-1 by βTRCP (Iwasaki et al., 2011). With this, we examined the relationship between the association of Regnase-1 to 14-3-3 and to βTRCP. We found that Regnase-1 harboring S435A and S439A mutations permitted the interaction with 14-3-3 but failed to recruit βTRCP (Figure 3A–B). Reciprocally, the S494A or S513A mutation of Regnase-1 did not inhibit the association between Regnase-1 and βTRCP (Figure 3B), indicating that the phosphorylation of Regnase-1 at S494 or S513 or the Regnase-1-14-3-3 binding is dispensable for the Regnase-1-βTRCP association. We next compared the phosphorylation status of βTRCP-bound and 14-3-3-bound Regnase-1. Since βTRCP-mediated polyubiquitination potentially alters the molecular weight of Regnase-1, we utilized a βTRCP mutant which is unable to induce polyubiquitination due to the lack of the F-box domain (βTRCP-ΔF). Interestingly, the SDS-PAGE analysis revealed that βTRCP-ΔF-bound Regnase-1 migrated faster than 14-3-3-bound Regnase-1 (Figure 3C–D), indicating that βTRCP likely binds to 14-3-3-free Regnase-1.
 
@@ -72,9 +120,33 @@ MyD88-dependent signaling also induces IKK-mediated phosphorylation of Regnase-1
 
 These results demonstrate that the binding of Regnase-1 to 14-3-3 and βTRCP occurs independently although IL-1β stimulation simultaneously induces phosphorylation of Regnase-1 at S494 and S513 as well as S435 and S439. In addition, 14-3-3 inhibits the Regnase-1-βTRCP binding.
 
-## The S513A mutation destabilizes Regnase-1 protein without affecting target mRNA abundance
+### The S513A mutation destabilizes Regnase-1 protein without affecting target mRNA abundance
 
 To evaluate the functional roles of Regnase-1-14-3-3 interaction, we generated Zc3h12aS513A/S513A knock-in mice (Figure 4—figure supplement 1). Zc3h12aS513A/S513A mice did not show gross abnormality, nor did they exhibit alteration in the numbers of T, B cells or macrophages (data not shown). We stimulated mouse embryonic fibroblasts (MEFs) derived from Zc3h12aWT/WT and Zc3h12aS513A/S513A mice with IL-1β and checked Regnase-1 expression (Figure 4A). Immunoblot analysis revealed that Regnase-1 was degraded 30 min after stimulation in both WT and S513A mutant MEFs. Following this, Regnase-1 levels increased in WT MEFs at 2 and 4 hr after stimulation (Figure 4A). Notably, most of the newly synthesized Regnase-1 showed slow migration, consistent with the immunoprecipitation experiment using HeLa cells or RAW264.7 cells shown in Figure 1C and D. On the other hand, the slowly migrating Regnase-1 band did not appear in Zc3h12aS513A/S513A MEFs after IL-1β stimulation. Interestingly, the amount of Regnase-1 at lower bands, which are not the binding target of 14-3-3 (Figure 2A), was comparable between WT and Zc3h12aS513A/S513A at corresponding time points. Consequently, total Regnase-1 protein expression was severely reduced in Zc3h12aS513A/S513A MEFs compared with WT after IL-1β stimulation (Figure 4A). Similar results were also obtained when bone marrow-derived macrophages (BMDMs) and thioglycollate-elicited peritoneal exudate cells (PECs) derived from Zc3h12aWT/WT and Zc3h12aS513A/S513A mice were stimulated with LPS (Figure 4B–C). Nevertheless, Zc3h12a mRNA levels were comparable between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells (Figure 4D–F), suggesting that S513A mutation affects the protein stability of Regnase-1. To address this, we examined the kinetics of Regnase-1 degradation following LPS stimulation by treating cells with cycloheximide (CHX). Indeed, Regnase-1-S513A was more rapidly degraded than Regnase-1-WT in PECs after LPS stimulation (Figure 4—figure supplement 2). Furthermore, treatment of Zc3h12aS513A/S513A PECs with MG-132, a proteasome inhibitor, resulted in the increase of smearing in the band patterns of Regnase-1 in LPS-stimulated cells (Figure 4C), possibly due to the inhibition of degradation of polyubiquitinated Regnase-1. These data indicate that the phosphorylation of Regnase-1 at S513 stabilizes Regnase-1 protein after IL-1β or LPS stimulation by binding with 14-3-3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-v3.jpg)
+
+**Figure 4.:** (A–C) Immunoblot analysis of Zc3h12aWT/WT and Zc3h12aS513A/S513A MEFs stimulated with IL-1β (10 ng/ml) (A), BMDMs stimulated with LPS (100 ng/ml) (B), and thioglycollate-elicited PECs stimulated with LPS (100 ng/ml) (C) for indicated time. PECs were pretreated with MG-132 (5 μM) 2 hr before the stimulation. (D)-(F) mRNA expression of Zc3h12a and Il6 in Zc3h12aWT/WT and Zc3h12aS513A/S513A MEFs stimulated with IL-1β (10 ng/ml) for 4 hr (D), BMDMs stimulated with LPS (100 ng/ml) for 4 hr (E), and thioglycollate-elicited PECs stimulated with LPS (100 ng/ml) for indicated time (F). (G)-(I) IL-6 secretion in Zc3h12aWT/WT and Zc3h12aS513A/S513A MEFs stimulated with IL-1β (10 ng/ml), IL-17A (50 ng/ml), or TNF (10 ng/ml) for 24 hr (G), BMDMs stimulated with Pam3CSK4 (1 or 10 ng/ml), poly I:C (10 or 100 μg/ml), LPS (10 or 100 ng/ml), R848 (10 or 100 nM), or CpG DNA (0.1 or 1 μM) for 24 hr (H), and thioglycollate-elicited PECs stimulated with LPS (100 ng/ml), R848 (100 nM), or IL-1β (10 ng/ml) for 24 hr (I). (J) Schematic representation of Model 1 in which 14-3-3-bound Regnase-1 does not have the function of degrading its target mRNAs. This model could explain the experimental observations. (K) Schematic representation of Model 2 in which 14-3-3-bound Regnase-1 maintains some ability to degrade its target mRNAs. This model is not consistent with the experimental observations. In (D)-(I), bars represent mean values of biological replicates (n = 3), and error bars represent standard deviation. Data is representative of two independent experiments, each with three biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** The result of Sanger sequencing around S513 of Regnase-1 are shown below.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Immunoblot analysis of Zc3h12aWT/WT and Zc3h12aS513A/S513A thioglycollate-elicited PECs treated with LPS (100 ng/ml) and CHX (100 μg/ml) for indicated time. CHX and LPS were added at the same time.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Bars represent mean values of biological replicates (n = 3), and error bars represent standard deviation.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** The remaining mRNA levels of indicated genes in Zc3h12aWT/WT and Zc3h12aS513A/S513A MEFs. Actinomycin D (ActD, 10 μg/ml) was added after 4 hr stimulation with IL-1β (10 ng/ml). Dots represent mean values of biological replicates (n = 3), and error bars represent standard deviation.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** Transcriptome analysis of Zc3h12aWT/WT and Zc3h12aS513A/S513A thioglycollate-elicited PECs stimulated with LPS (100 ng/ml) for indicated time. Several known Regnase-1 target transcripts are annotated. None of transcripts shows significant (adjusted p value < 0.05) difference between Zc3h12aWT/WT and Zc3h12aS513A/S513A.
 
 We next checked whether the altered Regnase-1 expression by the S513A mutation affects Regnase-1-mediated mRNA decay. Despite the huge difference in Regnase-1 expression, the expression of Il6, a transcript degraded by Regnase-1 (Figure 4—figure supplement 3), was comparable between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells (Figure 4D–I). In addition, the stability of Regnase-1 target mRNAs including Il6, Zc3h12a, and Nfkbiz was equivalent between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells (Figure 4—figure supplement 4). Furthermore, even when we analyzed gene expression profile comparing Zc3h12aWT/WT and Zc3h12aS513A/S513A macrophages by an RNA-seq analysis (Figure 4—figure supplement 5), we did not identify any differentially expressed genes (adj p<0.05) between Zc3h12aWT/WT and Zc3h12aS513A/S513A macrophages irrespective of the stimulation with LPS.
 
@@ -82,15 +154,27 @@ To examine the mechanisms underlying these observations, we developed two mathem
 
 These results imply that the phosphorylation at S513 and the following association with 14-3-3 nullifies Regnase-1’s ability in degrading target mRNAs, although it stabilizes and significantly upregulates the abundance of Regnase-1.
 
-## 14-3-3 inactivates Regnase-1 by inhibiting Regnase-1-RNA binding
+### 14-3-3 inactivates Regnase-1 by inhibiting Regnase-1-RNA binding
 
 The mathematical analysis suggests that 14-3-3-bound Regnase-1 is inactive as the S513A mutation failed to affect Il6 expression in MEFs or macrophages. To examine if this comparable Il6 expression was due to increased degradation of Regnase-1-S513A protein via βTRCP, we further mutated βTRCP-recognition sites, S435 and S439, to alanine in Regnase-1-S513A (Regnase-1-S435/439/513A). As shown in Figure 5A, the Regnase-1-S435/439/513A mutant was more abundantly expressed than Regnase-1-S513A after IL-1β stimulation, indicating that Regnase-1-S513A is degraded via the association with βTRCP. It is noteworthy that most of Regnase-1-S435/439/513A showed fast migration, whereas the majority of Regnase-1-S435/439A migrated slowly in response to the stimulation. To verify if 14-3-3-bound Regnase-1 is functional or not, we assessed the target mRNA suppression activity of each mutant by checking the expression of Il6 co-transfected with Regnase-1. Regnase-1-S435/439/513A was more potent in suppressing Il6 expression compared to WT or other SA mutants, S513A and S435/439A, in response to IL-1β stimulation (Figure 5B). These results indicate that IL-1β stimulation regulates the activity of Regnase-1 by two independent mechanisms via 14-3-3 and βTRCP, respectively.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig5-v3.jpg)
+
+**Figure 5.:** (A) Immunoblot analysis of ZC3H12A-KO HeLa cells transiently expressing Regnase-1-WT or indicated mutants. Cells were stimulated with IL-1β (10 ng/ml) for indicated time. (B) mRNA expression of Il6 in HeLa cells transiently expressing Regnase-1-WT or indicated mutants together with Il6. Cells were stimulated with IL-1β (10 ng/ml) for indicated time. (C) Immunoblot analysis of immunoprecipitates (IP: FLAG) and WCL from HeLa cells transiently expressing FLAG-Regnase-1-WT or indicated mutants. For the IL-1β stimulation, cells were stimulated with IL-1β (10 ng/ml) for 4 hr. L.C.: light chain. (D) Schematic illustration of Regnase-1 and the amino acid sequences of Regnase-1-WT, -ExoSx2, and ExoSAAAx2. NTD: N-terminal domain, ZF: Zinc finger domain, CTD: C-terminal domain. (E) mRNA expression of Il6 in HeLa cells transiently expressing Regnase-1-WT or indicated mutants together with Il6. (F) Secreted IL6 concentration in (E). (G) mRNA expression of Il6 in HeLa cells transiently expressing Regnase-1-WT and IRAK1-WT or indicated mutants together with Il6. (H) The amount of IL6 mRNAs immunoprecipitated with FLAG-Regnase-1-D141N or other indicated mutants in HeLa cells. In (B), (E)-(H), bars represent mean values of biological replicates (n = 3), and error bars represent standard deviation. p-Values were calculated using unpaired, two-sided t-test. Data is representative of two independent experiments, each with three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Immunoblot analysis of immunoprecipitates (IP: FLAG) and WCL from HeLa cells transiently expressing FLAG-Regnase-1-D141N or indicated mutants. L.C.: light chain.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71966/elife-71966-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** The amount of mRNAs immunoprecipitated with FLAG-Regnase-1-D141N or other indicated mutants in HeLa cells. The binding targets of Regnase-1 are denoted with *. Bars represent mean values of biological replicates (n=3), and error bars represent standard deviation. p-Values were calculated using unpaired, two-sided t-test.
 
 To further examine the mechanism of how 14-3-3 inactivates Regnase-1, we attempted to generate a Regnase-1 mutant which constitutively binds to 14-3-3 even without stimulation. We generated a phospho-mimic mutant of Regnase-1 (S494D/S513D). However, this mutant failed to bind 14-3-3 (Figure 5C), indicating that the phosphate moiety, but not negative charge, is recognized by 14-3-3. Then we utilized a sequence of Exoenzyme S (ExoS), which is a bacterial protein derived from Pseudomonas aeruginosa and is known to bind to 14-3-3 without phosphorylation (Fu et al., 1993; Karlberg et al., 2018; Masters et al., 1999). The 22 amino acids of Regnase-1 covering S494 and S513 were substituted with two ExoS (419-429) sequences (Figure 5D). As a control, we additionally mutated Regnase-1-ExoSx2 by substituting its core sequences for 14-3-3 binding (L426, D427, and L428) with alanine residues (Regnase-1-ExoSAAAx2) (Ottmann et al., 2007; Yasmin et al., 2006). We observed that Regnase-1-ExoSx2, but not Regnase-1-ExoSAAAx2, interacted with endogenous 14-3-3 without any stimulation (Figure 5C). Using these mutants, we investigated whether 14-3-3 binding alters the activity of Regnase-1 to suppress Il6 expression. Consistent with its 14-3-3 binding capacity, Regnase-1-ExoSx2, but not Regnase-1-ExoSAAAx2 and -S494D/S513D, lost the activity to inhibit Il6 expression (Figure 5E). Furthermore, the production of IL-6 protein was similarly inhibited depending on the capacity of Regnase-1 to bind 14-3-3 (Figure 5F). In addition, Regnase-1-mediated suppression of Il6 expression was impaired by the overexpression of IRAK1-WT and E541/E584/E704A mutants, both of which induce Regnase-1-14-3-3 association (Figure 5G). On the other hand, IRAK1 mutants that failed to induce the Regnase-1-14-3-3 association (T209A, Δ1–103, Δ619–710, and R663/K665A) did not affect the activity of Regnase-1.
 
 We next examined how 14-3-3 inhibits the activity of Regnase-1 by investigating Regnase-1-mRNA binding activity using various Regnase-1 mutants in HeLa cells. To stabilize Regnase-1-RNA binding, we generated a nuclease inactive version of Regnase-1 by introducing the D141N mutation to each of Regnase-1 mutant (Matsushita et al., 2009; Figure 5—figure supplement 1). As shown in Figure 5H, forced interaction of Regnase-1-D141N with 14-3-3 by the ExoSx2 mutation in HeLa cells abrogated the binding with IL6 mRNA, whereas IL6 was co-precipitated with Regnase-1-D141N, -ExoSAAAx2-D141N and -S494D/S513D-D141N (Figure 5H). In addition to IL6, Regnase-1-ExoSx2 failed to bind to other reported target mRNAs such as NFKBIZ, PTGS2, and CXC chemokines (Figure 5—figure supplement 2). Collectively, these data demonstrate that 14-3-3 inhibits Regnase-1-mRNA binding, thereby abrogating Regnase-1-mediated mRNA degradation.
 
-## 14-3-3 inhibits nuclear import of Regnase-1
+### 14-3-3 inhibits nuclear import of Regnase-1
 
 We have previously shown that Regnase-1 interacts with CBP80-bound, but not eIF4E-bound, mRNAs (Mino et al., 2019), indicating that Regnase-1 degrades mRNAs immediately after the export from the nucleus to the cytoplasm (Maquat et al., 2010; Müller-McNicoll and Neugebauer, 2013). Although Regnase-1 mainly localizes in the cytoplasm (Mino et al., 2015), we hypothesized Regnase-1 shuttles between the nucleus and the cytoplasm to recognize its target mRNAs in association with their nuclear export. To test this hypothesis, we examined the subcellular localization of Regnase-1 following the treatment with Leptomycin B (LMB), which inhibits CRM1 (also known as Exportin-1)-mediated protein export from the nucleus to the cytoplasm (Yashiroda and Yoshida, 2003). Although Regnase-1 localized in the cytoplasm in the steady state condition, LMB treatment induced rapid accumulation of Regnase-1 in the nucleus within 30 min (Figure 6A). These results suggest that Regnase-1 dynamically changes its localization between the cytoplasm and the nucleus. Given that Regnase-1 dominantly localizes in the cytoplasm in the steady state conditions, the frequency of its nuclear export seems to be higher than its nuclear import.
 
@@ -124,17 +208,447 @@ In summary, Regnase-1 interactome analysis revealed dynamic 14-3-3-mediated regu
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Zc3h12a</td>
+      <td>NA</td>
+      <td>Gene ID: 230738</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ZC3H12A</td>
+      <td>NA</td>
+      <td>Gene ID: 80149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Zc3h12aWT/WT</td>
+      <td>CLEA Japan</td>
+      <td>C57BL/6</td>
+      <td>C57BL/6JJcl</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Zc3h12a-/-</td>
+      <td>https://doi.org/10.1038/nature07924</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Zc3h12aS513A/S513A</td>
+      <td>this paper</td>
+      <td></td>
+      <td>generated using CRISPR-Cas9 system</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX330)</td>
+      <td>this paper</td>
+      <td>CACCGCGGCTCAGACCAGTACTCTC</td>
+      <td>for Zc3h12aS513A/S513A generation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX330)</td>
+      <td>this paper</td>
+      <td>AAACGAGAGTACTGGTCTGAGCCGC</td>
+      <td>for Zc3h12aS513A/S513A generation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Donor single strand oligo</td>
+      <td>this paper</td>
+      <td>GAAGGACAGGAGTGGGTGGGGGTAATGGGTACGGCTCAGCCCAGTACTCTCTGGATGGGTAGGTGGGTGGCGGGGGCACA</td>
+      <td>for Zc3h12aS513A/S513A generation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX459-IRAK1KO)</td>
+      <td>https://doi.org/10.1093/bioinformatics/btu743</td>
+      <td>CACCGGTCTGGTCGCGCACGATCA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX459-IRAK1KO)</td>
+      <td>https://doi.org/10.1093/bioinformatics/btu743</td>
+      <td>AAACTGATCGTGCGCGACCAGACC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX459-IRAK2KO)</td>
+      <td>https://doi.org/10.1038/nbt.3437</td>
+      <td>CACCGAAAACCGCAAAATCAGCCAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA oligo (for pX459-IRAK2KO)</td>
+      <td>https://doi.org/10.1038/nbt.3437</td>
+      <td>AAACCTGGCTGATTTTGCGGTTTTC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-Regnase-1 (rabbit polyclonal)</td>
+      <td>MBL life science</td>
+      <td></td>
+      <td>custom antibody production (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human-Regnase-1 (rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>Cat # HPA032053</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-14-3-3 (pan) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat # sc-1657</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IκB-α (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat # sc-371</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IRAK1 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat # sc-5288</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # F3165</td>
+      <td>(WB:1:2000, IF:1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # F7425</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # H3663</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # H6908</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anit-Myc (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # M4439</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # C3956</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin-HRP (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat # sc-47778-HRP</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG-HRP F(ab')2 (sheep polyclonal)</td>
+      <td>cytiva</td>
+      <td>Cat # NA9310-1ML</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG-HRP F(ab')2 (donkey polyclonal)</td>
+      <td>cytiva</td>
+      <td>Cat # NA9340-1ML</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F(ab')2-anti-Mouse IgG (H+L)-AF488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat # A11017</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)-2A-Puro (PX459) V2.0</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_62988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMDLg/pRRE</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRSV-Rev</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_44012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-puro</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NeoR of pInducer20 (Addgene_44012) was replaced with PuroR</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV2</td>
+      <td>Sigma</td>
+      <td>Cat # E7033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLAG Peptide</td>
+      <td>Sigma</td>
+      <td>Cat # F3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HA peptide</td>
+      <td>MBL Life science</td>
+      <td>Cat # 3320</td>
+      <td>HA tagged Protein PURIFICATION KIT</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human IL-1β</td>
+      <td>R and D Systems</td>
+      <td>Cat # 201-LB-005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant mouse IL-1β</td>
+      <td>BioLegend</td>
+      <td>Cat # 575102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human IL-17A</td>
+      <td>BioLegend</td>
+      <td>Cat # 570502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human TNF</td>
+      <td>BioLegend</td>
+      <td>Cat # 570104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Invitrogen</td>
+      <td>Cat # 10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lambda Protein Phosphatase</td>
+      <td>NEB</td>
+      <td>Cat # P0753S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Signal Enhancer HIKARI</td>
+      <td>nacalai tesque</td>
+      <td>Cat # 02270-81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilon Forte Western HRP Substrate</td>
+      <td>Millipore</td>
+      <td>Cat # WBLUF0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat # 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator-5</td>
+      <td>Zymo Research</td>
+      <td>Cat # R1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat # A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-6 Mouse Uncoated ELISA Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat # 88-7064-88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSP (dithiobis(succinimidyl propionate))</td>
+      <td>TCI</td>
+      <td>Cat # D2473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pam3CSK4</td>
+      <td>InvivoGen</td>
+      <td>Cat # tlrl-pms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly I:C</td>
+      <td>cytiva</td>
+      <td>Cat # 27473201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>InvivoGen</td>
+      <td>Cat # tlrl-smlps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R848</td>
+      <td>InvivoGen</td>
+      <td>Cat # tlrl-r848-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CpG DNA</td>
+      <td>InvivoGen</td>
+      <td>Cat # tlrl-1668-1</td>
+      <td>ODN 1668</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG-132</td>
+      <td>Sigma</td>
+      <td>Cat # 474790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Sigma</td>
+      <td>Cat # A9415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leptomycin B</td>
+      <td>Sigma</td>
+      <td>Cat # L2913</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Zc3h12a-deficient mice have been described previously (Matsushita et al., 2009). Zc3h12aS513A/S513A knock-in mice were generated using CRISPR/Cas9-mediated genome-editing technology as previously described (Fujihara and Ikawa, 2014). Briefly, a pair of complementary DNA oligos was annealed and inserted into pX330 (Addgene plasmid # 42230) (Cong et al., 2013). The plasmid was injected together with the donor single strand oligo into fertilized eggs of C57BL/6J mice. Successful insertion was confirmed by direct sequencing.
 
 All mice were grown under specific pathogen-free environments. All animal experiments were conducted in compliance with the guidelines of the Kyoto University animal experimentation committee (Approval number: MedKyo21057).
 
-## Reagents
+### Reagents
 
 Recombinant cytokines, TLR ligands, and chemical compounds were listed in the key resources table.
 
-## Cell culture
+### Cell culture
 
 HeLa cells, HEK293T cells, RAW264.7 cells, and MEFs were maintained in DMEM (nacalai tesque) with 10% fetal bovine serum (FBS), 1% Penicillin/Streptomycin (nacalai tesque), and 100 µM 2-Mercaptoethanol (nacalai tesque). Mycoplasma contamination was routinely tested and found negative.
 
@@ -142,7 +656,7 @@ For the preparation of bone marrow-derived macrophages (BMDMs), bone marrow cell
 
 For the preparation of thioglycolate-elicited peritoneal exudate cells (PECs), mice were intraperitoneally injected with 2 ml of 4% (w/v) Brewer’s thioglycollate medium. 3.5 days after the injection, peritoneal macrophages were collected and cultured in RPMI-1640 with 10% FBS, 1% Penicillin/Streptomycin, and 100 μM 2-mercaptoethanol.
 
-## Plasmids
+### Plasmids
 
 For the expression of FLAG-tagged proteins, pFLAG-CMV2 (Sigma) was used as a backbone. For the expression of HA- or Myc-tagged proteins, the FLAG sequence of pFLAG-CMV2 was replaced by HA- or Myc-sequence. Mouse Zc3h12a cDNA was inserted into these vectors as previously described (Matsushita et al., 2009). The coding sequences of 14-3-3 and βTRCP were amplified by using cDNAs derived from HeLa cell as templates and inserted into vectors above using In-Fusion HD Cloning Kit (Takara Bio). For Myc-IRAK1 expression vector, coding sequence of IRAK1 derived from HA-IRAK1 expression vector (Iwasaki et al., 2011) was used. For the mouse Il6 expression vector, the EGFP sequence in pEGFP-C1 was replaced with Il6 gene.
 
@@ -152,23 +666,23 @@ For the lentiviral packaging vectors, pInducer20 (Addgene plasmid #44012) (Meerb
 
 For the Cas9 and gRNA expression plasmids (pX459-IRAK1 and pX459-IRAK2), pX459 (Addgene Plasmid #62988) was digested at BbsI sites, and the annealed oligo coding guide sequence (key resources table) was inserted.
 
-## Plasmid transfection
+### Plasmid transfection
 
 Plasmids were transfected to HeLa cells or HEK293T cells using Lipofectamine 2000 (Invitrogen) or PEI max (Polysciences) respectively according to manufacturer's instructions.
 
-## Generation of doxycycline-inducible FLAG-HA-Regnase-1-expressing HeLa cells
+### Generation of doxycycline-inducible FLAG-HA-Regnase-1-expressing HeLa cells
 
 HeLa cells expressing FLAG-HA-Regnase-1 in a doxycycline-dependent manner were generated by lentiviral transduction. To produce lentivirus, HEK293T cells were transfected with pInducer20-puro-FLAG-HA-Regnase1 together with third generation lentiviral packaging vectors. 6 hr after the transfection, the medium was changed to fresh medium and then the cells were incubated at 37°C for 48 hr. After the incubation, the medium containing lentivirus was harvested and filtrated through 0.45 μm filter. HeLa cells were incubated with the virus-containing medium at 37°C for 24 hr, followed by 48-hr-incubation with fresh medium. The transduced cells were selected by 0.5 μg/ml of puromycin (InvivoGen). Single clones were picked and evaluated for their expression of FLAG-HA-Regnase-1 in a dox-dependent manner by immunoblotting.
 
-## Knockout of IRAK1 and IRAK2
+### Knockout of IRAK1 and IRAK2
 
 HeLa cells were transfected with two pX459 plasmids which contains gRNA sequence for IRAK1 and IRAK2. As the negative control, empty pX459 plasmid was transfected. Forty-eight hr after the pX459 transfection, puromycin (2 μg/ml) was added to the medium. After 48 hr selection with puromycin, the same number of cells were seeded to new dishes and incubated in fresh media without antibiotics for 48 hr. Knockout efficiency was check by immunoblotting using WCL samples.
 
-## DSP-crosslinking
+### DSP-crosslinking
 
 Doxycycline-inducible FLAG-HA-Regnase-1-expressing HeLa cells were treated with doxycycline (1 μg/ml, Sigma) and incubated at 37°C for 4 hr before the DSP-crosslinking. As a negative control, cells were incubated without doxycycline, and for the IL-1β-stimulated sample, cells were stimulated with human IL-1β (10 ng/ml, R and D Systems) 2 hr before the crosslinking. After the incubation, cells were washed twice with pre-warmed PBS, and then incubated in PBS containing 0.1 mM DSP (TCI) at 37°C for 30 min. After crosslinking, cells were washed once with pre-warmed PBS and incubated in STOP solution (PBS containing 1 M Tris-HCl pH 7.4) at room temperature for 15 min. Cells were then washed with ice-cold PBS twice, followed by cell lysis and immunoprecipitation.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Before immunoprecipitation, pre-washed Dynabeads Protein G (Invitrogen) were incubated with either anti-FLAG antibody (Sigma), anti-HA antibody (Sigma), or anti-Myc antibody (Sigma) at 4°C with rotation for 1 hr.
 
@@ -180,11 +694,11 @@ For detecting protein-protein binding, cells were lysed in IP Buffer with cOmple
 
 For detecting protein-RNA binding, cells were lysed in IP Buffer with cOmplete Mini EDTA-free and RNaseOut (Invitrogen) and immunoprecipitated as described above using indicated antibodies. Some of the precipitates were eluted in the mixture of IP Buffer and SDS sample buffer (2:1) to elute proteins and the others were eluted in TRIzol Reagent (Invitrogen) for RNA isolation.
 
-## LC-MS/MS
+### LC-MS/MS
 
 LC/MS/MS analyses were performed with an Orbitrap Fusion Lumos (Thermo Fisher Scientific) connected to an Ultimate 3000 pump (Thermo Fisher Scientific) and an HTC-PAL autosampler (CTC analytics). Peptides were separated by a self-pulled needle column (150 mm length, 100 μm ID, 6 μm needle opening) packed with Reprosil-Pur 120 C18-AQ 3 μm reversed-phase material (Dr. Maisch GmbH), using a 20 min or 65 min gradient of 5–40% B (mobile phase A: 0.5% acetic acid, mobile phase B: 0.5% acetic acid / 80% acetonitrile) at a flow rate of 500 nL/min. The applied ESI voltage was 2.4 kV. For TMT-labeled samples, the following parameters were applied: MS scan range of 375–1500, MS1 orbitrap resolution of 120,000, quadrupole isolation window of 0.7, HCD (higher-energy collision dissociation) collision energy of 38%, MS2 orbitrap resolution of 50,000, AGC target value of 50000. For non-labeled samples, the following parameters were applied: MS scan range of 300–1500, MS1 orbitrap resolution of 120,000, quadrupole isolation window of 1.6, HCD collision energy of 30%, MS2 orbitrap resolution of 15,000, MS2 AGC target value of 50,000.
 
-## Database searching and data processing
+### Database searching and data processing
 
 For DSP-crosslinked samples, peptides were identified with Mascot version 2.6.1 (Matrix Science) against the sequence of Mouse Regnase-1 in addition to the human database from UniprotKB/Swiss-Prot release 2017/04 and with a precursor ion mass tolerance of 5 ppm and a product ion mass tolerance of 20 ppm. Carbamidomethyl (C), TMT6plex (K) and TMT6plex (N-term) were set as a fixed modification, oxidation (M) was allowed as a variable modification, and up to two missed cleavages are allowed with strict Trypsin/P specificity. Identified peptides were rejected if the Mascot score was below the 95% confidence limit based on the identity score of each peptide. The quantification of peptides was based on the TMT reporter ion intensities in MS2 spectra. Protein quantitative values were calculated by summing the corresponding peptide intensity values. Only proteins with at least two unique peptides were used for further analysis.
 
@@ -192,94 +706,316 @@ For the identification of phosphorylation sites of Regnase-1, peptides were iden
 
 Protein-protein interaction network of the Regnase-1-associating proteins (Log2 fold change over negative control > 2) was analyzed using STRING database (Szklarczyk et al., 2019) and visualized in Cytoscape (Shannon et al., 2003). Keratins contaminated in the samples were omitted from the analysis.
 
-## λ-protein phosphatase (λPP) treatment
+### λ-protein phosphatase (λPP) treatment
 
 HeLa cells transiently expressing HA-14-3-3ε were stimulated with or without IL-1β (10 ng/ml) for 4 hr and lysed in IP Buffer. Some of the lysates were used in immunoprecipitation as described above. The proteins were eluted using 250 μg/ml of HA peptides as described above. The lysate and the precipitates were treated with Lambda Protein Phosphatase (NEB) according to manufacturer's instructions. For the λPP-negative samples, the same amount of IP Buffer was added instead of λPP.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were lysed in IP Buffer or RIPA buffer (1% (vol/vol) NP-40, 0.1% (wt/vol) SDS, 1% (wt/vol) sodium deoxycholate, 150 mM NaCl, 20 mM Tris-HCl pH 8.0, and 10 mM EDTA) with cOmplete Mini EDTA-free and PhosSTOP. The lysates were incubated on ice for 5 min and centrifuged at 15,000 rpm for 5 min. The supernatants were mixed with SDS sample buffer (2:1) and incubated at 95°C for 5 min. SDS-PAGE was performed using e-PAGEL 7.5% or 5~20% (ATTO) and the proteins were transferred onto 0.2 μm pore size Immun-Blot PVDF membranes (Bio-Rad), followed by blocking with 5% skim milk. The antibodies used in immunoblotting were listed in the key resources table. Luminescence was detected with Amersham Imager 600 (cytiva) and the images were analyzed with Fiji (Schindelin et al., 2012).
 
-## RNA isolation and RT-qPCR
+### RNA isolation and RT-qPCR
 
 Cells were lysed in TRIzol Reagent, and the RNA was isolated according to manufacturer's instructions. For the isolation of the RNA precipitated with Regnase-1, RNA was isolated using RNA Clean and Concentrator-5 (Zymo Research). RNA was reverse transcribed by using ReverTra Ace (TOYOBO). cDNA was amplified by using PowerUp SYBR Green Master Mix (Applied Biosystems) and measured with StepOnePlus Real-Time PCR System (Applied Biosystems). To analyze mRNA expression, each RNA level was normalized with 18S or ACTB. The primers used in qPCR were listed in Supplementary file 1.
 
-## RNA sequencing
+### RNA sequencing
 
 PECs were harvested from Zc3h12aWT/WT and Zc3h12aS513A/S513A mice as described above. PECs were stimulated with LPS (100 ng/ml) for indicated time and the RNA was collected and isolated using TRIzol Reagent. cDNA library was prepared using NEBNext Ultra RNA Library Prep Kit for Illumina (NEB) and sequenced on NextSeq 500 System (Illumina) according to the manufacturer’s instructions. Acquired data was analyzed using Galaxy (Afgan et al., 2018). Briefly, identified reads were mapped on the murine genome (mm10) using HISAT2 (paired end, unstranded) (Galaxy Version 2.1.0), and the mapped reads were counted using featureCounts (Galaxy Version 1.6.3).
 
-## ELISA
+### ELISA
 
 Cytokine concentration was measured by using IL-6 Mouse Uncoated ELISA Kit (Invitrogen) according to manufacturer's instructions. Luminescence was detected with iMark Microplate Reader (Bio-Rad).
 
-## Luciferase assay
+### Luciferase assay
 
 5xNF-κB firefly luciferase reporter vector, Renilla luciferase vector, and IRAK1-expressing vector were transfected in HeLa cells and the luciferase activity was measured by using PicaGene Dual Sea Pansy Luminescence Kit (TOYO B-Net). NF-κB activation was calculated by normalizing Firefly luciferase activity with Renilla luciferase activity.
 
-## Mathematical model
+### Mathematical model
 
 We developed two dynamical models for the inflammation system regulated by Regnase-1 based on different assumptions of the functions of 14-3-3-bound Regnase-1.
 
-## Model 1
+### Model 1
 
-In the first model, we assumed that the 14-3-3-bound Regnase-1 does not have the function of degrading its target mRNAs (Figure 4J). The ordinary differential equations are given as follows:(1.1)dx1dt=k1signalt-d1x1x3-d4x1dx2dt=k2signalt-d2x2x3-d5x2dx3dt=k3x2-(d3+d6signalt+d7signalt)x3+d9x4dx4dt=d7signaltx3-(d8+d9)x4where x1, x2, x3, and x4 is the abundance of Il6 mRNA, Zc3h12a mRNA, Reg1 Protein, and 14-3-3-bound Reg1 Protein, respectively; k1 and k2 is the transcription rate constant of Il6, and Zc3h12a, respectively; k3 is the translation rate constant of Zc3h12a; d1 and d2 is the Reg1-induced degradation rate constant of Il6 mRNA and Zc3h12a mRNA, respectively; d3, d4, and d5 is the Reg1-independent degradation rate constant of Reg1 protein, Il6 mRNA, and Zc3h12a mRNA, respectively; d6 is the ubiquitin-dependent degradation rate constant of Reg1 protein; d7 is the binding rate constant of Reg1 protein to 14-3-3; d8 is the natural degradation rate constant of 14-3-3-bound Reg1 protein; d9 is the dissociation rate constant of Reg1 from 14-3-3. signalt is the strength of TLR stimulation, which is given as the following form (Mino et al., 2019):(1.2)signal(t)={sbase(if 0≤t≤tdelay),sinput−sbasetraise(t−tdelay)+sbase(if tdelay≤t≤tdelay+traise),sinput(if tdelay+traise≤t≤tdelay+traise+tpulse),(sinput−sbase)×exp⁡(−−t(tdelay+traise+tpulse)tdelay)+sinput(if t>tdelay+traise+tpulse)
+In the first model, we assumed that the 14-3-3-bound Regnase-1 does not have the function of degrading its target mRNAs (Figure 4J). The ordinary differential equations are given as follows:
 
-## Model 2
+$$
+\frac{dx_{1}}{dt}=k_{1}signalt-d_{1}x_{1}x_{3}-d_{4}x_{1}
+$$
 
-We also developed an alternative model in which the 14-3-3-bound Regnase-1 maintains functions of degrading its target mRNAs (Figure 4J). The ordinary differential equations are given as follows:(1.3)dx^1dt=k1signal(t)−d1x^1x^3−d1′x^1x^4−d4x^1dx^2dt=k2signal(t)d2−x^2x^3−d2′x^2x^4−d5x2dx^3dt=k3x2−(d3+d6signal(t)+d7signal(t))x^3+d9x^4dx^4dt=d7signal(t)x^3−(d8+d9)x^4where x^1, x^2, x^3, and x^4 is the abundance of Il6 mRNA, Zc3h12a mRNA, Reg1 Protein, 14-3-3-bound Reg1 Protein, respectively; d1′ and d2′ is the 14-3-3-bound Reg1-induced degradation rate constant of Il6 mRNA and Zc3h12a mRNA, respectively. The other parameters are defined in the same way as Model 1.
+
+
+$$
+\frac{dx_{2}}{dt}=k_{2}signalt-d_{2}x_{2}x_{3}-d_{5}x_{2}
+$$
+
+
+
+$$
+\frac{dx_{3}}{dt}=k_{3}x_{2}-(d_{3}+d_{6}signalt+d_{7}signalt)x_{3}+d_{9}x_{4}
+$$
+
+
+
+$$
+\frac{dx_{4}}{dt}=d_{7}signaltx_{3}-(d_{8}+d_{9})x_{4}
+$$
+
+where $x_{1}$, $x_{2}$, $x_{3}$, and $x_{4}$ is the abundance of Il6 mRNA, Zc3h12a mRNA, Reg1 Protein, and 14-3-3-bound Reg1 Protein, respectively; $k_{1}$ and $k_{2}$ is the transcription rate constant of Il6, and Zc3h12a, respectively; $k_{3}$ is the translation rate constant of Zc3h12a; $d_{1}$ and $d_{2}$ is the Reg1-induced degradation rate constant of Il6 mRNA and Zc3h12a mRNA, respectively; $d_{3}$, $d_{4}$, and $d_{5}$ is the Reg1-independent degradation rate constant of Reg1 protein, Il6 mRNA, and Zc3h12a mRNA, respectively; $d_{6}$ is the ubiquitin-dependent degradation rate constant of Reg1 protein; $d_{7}$ is the binding rate constant of Reg1 protein to 14-3-3; $d_{8}$ is the natural degradation rate constant of 14-3-3-bound Reg1 protein; $d_{9}$ is the dissociation rate constant of Reg1 from 14-3-3. $signalt$ is the strength of TLR stimulation, which is given as the following form (Mino et al., 2019):
+
+$$
+signal(t)={s_{base}(if 0\leqt\leqt_{delay}),\frac{s_{input}−s_{base}}{t_{raise}}(t−t_{delay})+s_{base}(if t_{delay}\leqt\leqt_{delay}+t_{raise}),s_{input}(if t_{delay}+t_{raise}\leqt\leqt_{delay}+t_{raise}+t_{pulse}),(s_{input}−s_{base})\timesexp⁡(−\frac{−t(t_{delay}+t_{raise}+t_{pulse})}{t_{delay}})+sinput(if t>t_{delay}+t_{raise}+t_{pulse})
+$$
+
+### Model 2
+
+We also developed an alternative model in which the 14-3-3-bound Regnase-1 maintains functions of degrading its target mRNAs (Figure 4J). The ordinary differential equations are given as follows:
+
+$$
+\frac{dx^_{1}}{dt}=k_{1}signal(t)−d_{1}x^_{1}x^_{3}−d_{1}^{′}x^_{1}x^_{4}−d_{4}x^_{1}
+$$
+
+
+
+$$
+\frac{dx^_{2}}{dt}=k_{2}signal(t)d_{2}−x^_{2}x^_{3}−d_{2}^{′}x^_{2}x^_{4}−d_{5}x_{2}
+$$
+
+
+
+$$
+\frac{dx^_{3}}{dt}=k_{3}x_{2}−(d_{3}+d_{6}signal(t)+d_{7}signal(t))x^_{3}+d_{9}x^_{4}
+$$
+
+
+
+$$
+\frac{dx^_{4}}{dt}=d_{7}signal(t)x^_{3}−(d_{8}+d_{9})x^_{4}
+$$
+
+where $x^_{1}$, $x^_{2}$, $x^_{3}$, and $x^_{4}$ is the abundance of Il6 mRNA, Zc3h12a mRNA, Reg1 Protein, 14-3-3-bound Reg1 Protein, respectively; $d_{1}^{′}$ and $d_{2}^{′}$ is the 14-3-3-bound Reg1-induced degradation rate constant of Il6 mRNA and Zc3h12a mRNA, respectively. The other parameters are defined in the same way as Model 1.
 
 To determine which model is consistent with the experimental observations, we focus on the experimental findings that there was no difference in the abundance of Il6 mRNA, Zc3h12a mRNA, and Reg1- protein (without 14-3-3 bound) between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells in the late phase of stimulation (Figure 4A,B,D and E). We will show that in Model 2 (Equation 1.3), the abundance of the Il6 mRNAs should be different between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells under the condition that amount of the 14-3-3-free Reg1 protein is comparable between them.
 
-## Analysis of the equilibrium
+### Analysis of the equilibrium
 
-## Lemma 1
+#### Lemma 1
 
-For Zc3h12aWT/WT cells, there exists only one nonnegative (biologically meaningful) equilibrium of the system (Equation 1.3) if and only if d3+d6sinput+d7sinput-d7d9sinputd7sinput+d9≥0. If d3+d6sinput+d7sinput−d7d9sinputd7sinput+d9<0, there is no equilibrium. For Zc3h12aS513A/S513A cells, there always exists only one nonnegative (biologically meaningful) equilibrium.
+For Zc3h12aWT/WT cells, there exists only one nonnegative (biologically meaningful) equilibrium of the system (Equation 1.3) if and only if $d_{3}+d_{6}s_{input}+d_{7}s_{input}-\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}\geq0$. If $d_{3}+d_{6}s_{input}+d_{7}s_{input}−\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}<0$, there is no equilibrium. For Zc3h12aS513A/S513A cells, there always exists only one nonnegative (biologically meaningful) equilibrium.
 
-## Proof of lemma 1
+#### Proof of lemma 1
 
-Setting all the derivatives of Equation (1.3) equal to zero yields(1.4)0=k1sinput−d1X^1WTX^3WT−d1′X^1WTX^4WT−d4X^1WT0=k2sinput−d2X^2WTX^3WT−d2′X^2WTX^4WT−d5X^2WT0=k3X^2WT−(d3+d6sinput+d7sinput)X^3WT+d9X^4WT0=d7sinputX^3WT−(d8+d9)X^4WTwhere X^1WT, X^2WT, X^3WT, and X^4WT are fixed points of x^1, x^2, x^3, and x^4, respectively. Given that signalt→sinput as t→∞, we assume signalt≈sinput at the equilibrium.
+Setting all the derivatives of Equation (1.3) equal to zero yields
 
-It follows from Equation (1.4) that(1.5a)(d2+d7sinputd8+d9d2′)K(X^3WT)2+d5KX^3WT−k2sinput=0(1.5b)X^4WT=d7sinputd8+d9X^3WT(1.5c)X^2WT=KX^3WT(1.5d)X^1WT=k1sinputd1X^3WT+d1′X^4WT+d4whereK:=1k3d3+d6sinput+d7sinput-d7d9sinputd7sinput+d9
+$$
+0=k_{1}s_{input}−d_{1}X^_{1}^{WT}X^_{3}^{WT}−d_{1}^{′}X^_{1}^{WT}X^_{4}^{WT}−d_{4}X^_{1}^{WT}
+$$
 
-It is easy to see that the quadratic Equation (1.5a) has a nonnegative solution if K≥0, that is, d3+d6sinput+d7sinput-d7d9sinputd7sinput+d9≥0. If K<0, Equation (1.5a) has no nonnegative solution. If X^3WT≥0, it follows from (Equation 1.5b), (Equation 1.5c), and (Equation 1.5d) that X^4WT, X^2WT, X^1WT≥0.
 
-For Zc3h12aS513A/S513A cells, we assume that d7=d8=d9=0. Substituting this equation into Equation (1.4) yields(1.6)0=k1sinput−d1X^1SAX^3SA−d4X^1SA0=k2sinput−d2X^2SAX^3SA−d5X^2SA0=k3X^2SA−(d3+d6sinput)X^3SA0=X^4SAwhere X^1SA, X^2SA, X^3SA, and X^4SA are fixed points of x^1, x^2, x^3, and x^4 in Zc3h12aS513A/S513A cells, respectively.
 
-It follows from (1.6) that(1.7a)d2k3d3+d6sinput(X^2SA)2+d5X^2SA−k2sinput=0(1.7b)X^3SA=k3d3+d6sinputX^2SA(1.7c)X^1SA=k1sinputd1X^3SA+d4
+$$
+0=k_{2}s_{input}−d_{2}X^_{2}^{WT}X^_{3}^{WT}−d_{2}^{′}X^_{2}^{WT}X^_{4}^{WT}−d_{5}X^_{2}^{WT}
+$$
 
-It is easy to see that the quadratic Equation (1.7a) has a nonnegative solution. If X^2SA≥0, it follows from (Equation 1.7b) and (Equation 1.7c) that X^3SA X^1SA≥0.
 
-Lemma 2. There exists only one nonnegative (biologically meaningful) equilibrium of the system (Equation 1.1) if and only if d3+d6sinput+d7sinput-d7d9sinputd7sinput+d9≥0. If d3+d6sinput+d7sinput−d7d9sinputd7sinput+d9<0, there is no equilibrium. For Zc3h12aS513A/S513A cells, there always exists only one nonnegative (biologically meaningful) equilibrium.
+
+$$
+0=k_{3}X^_{2}^{WT}−(d_{3}+d_{6}s_{input}+d_{7}s_{input})X^_{3}^{WT}+d_{9}X^_{4}^{WT}
+$$
+
+
+
+$$
+0=d_{7}s_{input}X^_{3}^{WT}−(d_{8}+d_{9})X^_{4}^{WT}
+$$
+
+where $X^_{1}^{WT}$, $X^_{2}^{WT}$, $X^_{3}^{WT}$, and $X^_{4}^{WT}$ are fixed points of $x^_{1}$, $x^_{2}$, $x^_{3}$, and $x^_{4}$, respectively. Given that $signalt→s_{input}$ as $t→∞$, we assume $signalt≈s_{input}$ at the equilibrium.
+
+It follows from Equation (1.4) that
+
+$$
+(d_{2}+\frac{d_{7}s_{input}}{d_{8}+d_{9}}d_{2}^{′})K(X^_{3}^{WT})^{2}+d_{5}KX^_{3}^{WT}−k_{2}s_{input}=0
+$$
+
+
+
+$$
+X^_{4}^{WT}=\frac{d_{7}s_{input}}{d_{8}+d_{9}}X^_{3}^{WT}
+$$
+
+
+
+$$
+X^_{2}^{WT}=KX^_{3}^{WT}
+$$
+
+
+
+$$
+X^_{1}^{WT}=\frac{k_{1}s_{input}}{d_{1}X^_{3}^{WT}+d_{1}^{′}X^_{4}^{WT}+d_{4}}
+$$
+
+where
+
+$$
+K:=\frac{1}{k_{3}}d_{3}+d_{6}s_{input}+d_{7}s_{input}-\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}
+$$
+
+It is easy to see that the quadratic Equation (1.5a) has a nonnegative solution if $K\geq0$, that is, $d_{3}+d_{6}s_{input}+d_{7}s_{input}-\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}\geq0$. If $K<0$, Equation (1.5a) has no nonnegative solution. If $X^_{3}^{WT}\geq0$, it follows from (Equation 1.5b), (Equation 1.5c), and (Equation 1.5d) that $X^_{4}^{WT}$, $X^_{2}^{WT}$, $X^_{1}^{WT}\geq0$.
+
+For Zc3h12aS513A/S513A cells, we assume that $d_{7}=d_{8}=d_{9}=0$. Substituting this equation into Equation (1.4) yields
+
+$$
+0=k_{1}s_{input}−d_{1}X^_{1}^{SA}X^_{3}^{SA}−d_{4}X^_{1}^{SA}
+$$
+
+
+
+$$
+0=k_{2}s_{input}−d_{2}X^_{2}^{SA}X^_{3}^{SA}−d_{5}X^_{2}^{SA}
+$$
+
+
+
+$$
+0=k_{3}X^_{2}^{SA}−(d_{3}+d_{6}s_{input})X^_{3}^{SA}
+$$
+
+
+
+$$
+0=X^_{4}^{SA}
+$$
+
+where $X^_{1}^{SA}$, $X^_{2}^{SA}$, $X^_{3}^{SA}$, and $X^_{4}^{SA}$ are fixed points of $x^_{1}$, $x^_{2}$, $x^_{3}$, and $x^_{4}$ in Zc3h12aS513A/S513A cells, respectively.
+
+It follows from (1.6) that
+
+$$
+d_{2}\frac{k_{3}}{d_{3}+d_{6}s_{input}}(X^_{2}^{SA})^{2}+d_{5}X^_{2}^{SA}−k_{2}s_{input}=0
+$$
+
+
+
+$$
+X^_{3}^{SA}=\frac{k_{3}}{d_{3}+d_{6}s_{input}}X^_{2}^{SA}
+$$
+
+
+
+$$
+X^_{1}^{SA}=\frac{k_{1}s_{input}}{d_{1}X^_{3}^{SA}+d_{4}}
+$$
+
+It is easy to see that the quadratic Equation (1.7a) has a nonnegative solution. If $X^_{2}^{SA}\geq0$, it follows from (Equation 1.7b) and (Equation 1.7c) that $X^_{3}^{SA}$ $X^_{1}^{SA}\geq0$.
+
+Lemma 2. There exists only one nonnegative (biologically meaningful) equilibrium of the system (Equation 1.1) if and only if $d_{3}+d_{6}s_{input}+d_{7}s_{input}-\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}\geq0$. If $d_{3}+d_{6}s_{input}+d_{7}s_{input}−\frac{d_{7}d_{9}s_{input}}{d_{7}s_{input}+d_{9}}<0$, there is no equilibrium. For Zc3h12aS513A/S513A cells, there always exists only one nonnegative (biologically meaningful) equilibrium.
 
 Proof of lemma2:
 
-With d1′=d2′=0 in lemma 1, we get the same conclusion.
+With $d_{1}^{′}=d_{2}^{′}=0$ in lemma 1, we get the same conclusion.
 
-## Consistency with the experiments
+### Consistency with the experiments
 
-The experimental observation shows that there was no difference in the abundance of Reg1 protein between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells at the late phase of stimulation (Figure 4A–C), which implies(1.8)X^3WT≈X^3SAbased on the alternative model (1.3).
+The experimental observation shows that there was no difference in the abundance of Reg1 protein between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells at the late phase of stimulation (Figure 4A–C), which implies
 
-From (Equation 1.4) and (Equation 1.6), we get(1.9a)X^1WT=k1sinputd1X^3WT+d1′X^4WT+d4X^2WT=k2sinputd2X^3WT+d2′X^4WT+d5(1.9b)X^1SA=k1sinputd1X^3SA+d4X^2SA=k2sinputd2X^3SA+d5
+$$
+X^_{3}^{WT}≈X^_{3}^{SA}
+$$
 
-By (Equation 1.8), (Equation 1.9a), and (Equation 1.9b), we obtain(1.10a)X^1WT<X^1SA(1.10b)X^2WT<X^2SA
+based on the alternative model (1.3).
+
+From (Equation 1.4) and (Equation 1.6), we get
+
+$$
+X^_{1}^{WT}=\frac{k_{1}s_{input}}{d_{1}X^_{3}^{WT}+d_{1}^{′}X^_{4}^{WT}+d_{4}}
+$$
+
+
+
+$$
+X^_{2}^{WT}=\frac{k_{2}s_{input}}{d_{2}X^_{3}^{WT}+d_{2}^{′}X^_{4}^{WT}+d_{5}}
+$$
+
+
+
+$$
+X^_{1}^{SA}=\frac{k_{1}s_{input}}{d_{1}X^_{3}^{SA}+d_{4}}
+$$
+
+
+
+$$
+X^_{2}^{SA}=\frac{k_{2}s_{input}}{d_{2}X^_{3}^{SA}+d_{5}}
+$$
+
+By (Equation 1.8), (Equation 1.9a), and (Equation 1.9b), we obtain
+
+$$
+X^_{1}^{WT}<X^_{1}^{SA}
+$$
+
+
+
+$$
+X^_{2}^{WT}<X^_{2}^{SA}
+$$
 
 Equation 1.10a and Equation 1.10b implies that in Model 2, the abundance of Il6 and Zc3h12a mRNA in Zc3h12aWT/WT cells should be smaller than that in Zc3h12aS513A/S513A cells at the late phase under the condition that amount of the Reg1 protein is comparable (Equation 1.8) between these two cells. It contradicts experimental observation that the abundance of the Il6 and Zc3h12a mRNAs did not differ between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells (Figure 4D–I). Thus, Model 2 (Equation 1.3) is not consistent with the experimental findings.
 
-In contrast, in Model 1 (Equation 1.1), we assume from experimental findings that(1.11)X3WT≈X3SAjust like (Equation 1.8), where X3WT is the fixed point of x3 in Zc3h12aWT/WT cells and X3SA is the fixed point of x3 in Zc3h12aS513A/S513A cells based on the model (Equation 1.1).
+In contrast, in Model 1 (Equation 1.1), we assume from experimental findings that
 
-By substituting d7=d8=d9=0 into (Equation 1.9a) and (Equation 1.9b), we obtain(1.12a)X1WT=k1sinputd1X3WT+d4X2WT=k2sinputd2X3WT+d5(1.12b)X1SA=k1sinputd1X3SA+d4X2SA=k2sinputd2X3SA+d5where X1WT and X2WT are fixed points of x1 and x2, respectively in Zc3h12aWT/WT cells and X1SA and X2SA are fixed points of x1 and x2, respectively in Zc3h12aS513A/S513A cells.
+$$
+X_{3}^{WT}≈X_{3}^{SA}
+$$
 
-By (Equation 1.11), (Equation 1.12a), and (Equation 1.12b), we obtain(1.13a)X1WT≈X1SA(1.13b)X2WT≈X2SA
+just like (Equation 1.8), where $X_{3}^{WT}$ is the fixed point of $x_{3}$ in Zc3h12aWT/WT cells and $X_{3}^{SA}$ is the fixed point of $x_{3}$ in Zc3h12aS513A/S513A cells based on the model (Equation 1.1).
+
+By substituting $d_{7}=d_{8}=d_{9}=0$ into (Equation 1.9a) and (Equation 1.9b), we obtain
+
+$$
+X_{1}^{WT}=\frac{k_{1}s_{input}}{d_{1}X_{3}^{WT}+d_{4}}
+$$
+
+
+
+$$
+X_{2}^{WT}=\frac{k_{2}s_{input}}{d_{2}X_{3}^{WT}+d_{5}}
+$$
+
+
+
+$$
+X_{1}^{SA}=\frac{k_{1}s_{input}}{d_{1}X_{3}^{SA}+d_{4}}
+$$
+
+
+
+$$
+X_{2}^{SA}=\frac{k_{2}s_{input}}{d_{2}X_{3}^{SA}+d_{5}}
+$$
+
+where $X_{1}^{WT}$ and $X_{2}^{WT}$ are fixed points of $x_{1}$ and $x_{2}$, respectively in Zc3h12aWT/WT cells and $X_{1}^{SA}$ and $X_{2}^{SA}$ are fixed points of $x_{1}$ and $x_{2}$, respectively in Zc3h12aS513A/S513A cells.
+
+By (Equation 1.11), (Equation 1.12a), and (Equation 1.12b), we obtain
+
+$$
+X_{1}^{WT}≈X_{1}^{SA}
+$$
+
+
+
+$$
+X_{2}^{WT}≈X_{2}^{SA}
+$$
 
 In this case, (Equation 1.13a) and (Equation 1.13b) are in agreement with the experimental facts that that the abundance of the target mRNAs did not differ between Zc3h12aWT/WT and Zc3h12aS513A/S513A cells.
 
 These mathematical analyses indicate that Model 1 (Equation 1.1), but not Model 2 (Equation 1.3), is consistent with the experimental findings.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were cultured on cover glass, fixed with 4%-Paraformaldehyde Phosphate Buffer Solution (nacalai tesque), and permeabilized with 0.5% (vol/vol) Triton X-100 (nacalai tesque) in PBS, followed by incubation in blocking solution (2% (vol/vol) goat serum (FUJIFILM Wako Pure Chemical) and 0.1% (wt/vol) gelatin in PBS). The antibodies used in Immunofluorescence were listed in the key resources table. DNA was stained with Hoechst 33342 (Invitrogen). Fluorescence was detected with TCS SPE (Leica). Acquired images were analyzed with Fiji (Schindelin et al., 2012).
 
-## Amino acid sequence analysis
+### Amino acid sequence analysis
 
 Amino acid sequence of each protein was obtained from NCBI. The results of T-coffee alignment (Notredame et al., 2000) were visualized by using Jalview (Waterhouse et al., 2009). Secondary structure was predicted by using PSIPRED 4.0 (Buchan and Jones, 2019; Jones, 1999). NES prediction was performed by using LocNES (Xu et al., 2015).

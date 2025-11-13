@@ -34,23 +34,618 @@ The six single neucleotide polymorphisms (SNPs) mimicking effects of statin (rs1
 
 There were 179,918 men with 25,410 cases of IHD and 212,080 women with 12,511 cases of IHD in the UK Biobank.
 
-## Instrument strength
+### Instrument strength
 
 The F-statistics for SNPs used to genetically mimic the effects of statins, PCSK9 inhibitors and ezetimibe were all >10 in men and women (Supplementary file 1a), as were the F-statistics for the SNPs used to mimic the effects of anakinra and tocilizumab (Supplementary file 1b). The F-statistics for the 125 and 254 SNPs predicting testosterone in men and women were all greater than 10, with mean 128.6 and 83.3, respectively.
 
-## Sex-specific associations of genetically mimicked lipid modifiers with testosterone
+### Sex-specific associations of genetically mimicked lipid modifiers with testosterone
 
 Genetically mimicked effects of statins reduced testosterone in men but not women (Table 1). Genetically mimicked effects of PCSK9 inhibitors and of ezetimibe did not affect testosterone in men or women (Table 1). Findings were similar in sensitivity analysis including correlated SNPs, where available (Table 1). PCSK9 inhibitors and ezetimibe were not investigated further, given the lack of association with testosterone in men and women.
 
-## Sex-specific associations of genetically mimicked statin use and testosterone with IHD
+**Table 1.**
+ Sex-specific Mendelian randomization estimates (where possible) for effects of genetically mimicked statins, PCSK9 inhibitor and ezetimibe (in effect sizes of LDL-cholesterol) on testosterone (effect size) in men and women using the UK Biobank .
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">Mendelian Randomization estimates</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Therapy</th>
+      <th># SNPs</th>
+      <th>Method</th>
+      <th>Beta</th>
+      <th>95% CI</th>
+      <th>P value</th>
+      <th>MR-Egger intercept p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Men</td>
+      <td>Statin</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>−0.15</td>
+      <td>−0.23 to −0.06</td>
+      <td>0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin</td>
+      <td>6</td>
+      <td>Inverse variance weighted</td>
+      <td>−0.15</td>
+      <td>−0.23 to −0.07</td>
+      <td>0.0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>Inverse variance weighted</td>
+      <td>0.04</td>
+      <td>−0.11 to 0.18</td>
+      <td>0.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>Weighted median</td>
+      <td>0.07</td>
+      <td>−0.13 to 0.27</td>
+      <td>0.29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>MR-Egger</td>
+      <td>0.34</td>
+      <td>0.09 to 0.60</td>
+      <td>0.01</td>
+      <td>−0.01 (0.01)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>7</td>
+      <td>Inverse variance weighted</td>
+      <td>0.05</td>
+      <td>−0.05 to 0.15</td>
+      <td>0.29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>0.04</td>
+      <td>−0.15 to 0.23</td>
+      <td>0.68</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>3</td>
+      <td>Inverse variance weighted</td>
+      <td>0.05</td>
+      <td>−0.12 to 0.22</td>
+      <td>0.55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>3</td>
+      <td>Weighted median</td>
+      <td>0.03</td>
+      <td>−0.13 to 0.18</td>
+      <td>0.72</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>3</td>
+      <td>MR-Egger</td>
+      <td>0.24</td>
+      <td>−0.52 to 1.0</td>
+      <td>0.54</td>
+      <td>−0.01 (0.52)</td>
+    </tr>
+    <tr>
+      <td>Women</td>
+      <td>Statin</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>0.04</td>
+      <td>−0.06 to 0.14</td>
+      <td>0.45</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin</td>
+      <td>6</td>
+      <td>Inverse variance weighted</td>
+      <td>0.03</td>
+      <td>−0.07 to 0.13</td>
+      <td>0.52</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>Inverse variance weighted</td>
+      <td>0.01</td>
+      <td>−0.11 to 0.14</td>
+      <td>0.85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>Weighted median</td>
+      <td>0.01</td>
+      <td>−0.13 to 0.15</td>
+      <td>0.91</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>3</td>
+      <td>MR-Egger</td>
+      <td>0.09</td>
+      <td>−0.38 to 0.56</td>
+      <td>0.71</td>
+      <td>−0.003 (0.74)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PCSK9 inhibitor</td>
+      <td>7</td>
+      <td>Inverse variance weighted</td>
+      <td>−0.004</td>
+      <td>−0.14 to 0.13</td>
+      <td>0.95</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>0.18</td>
+      <td>−0.05 to 0.40</td>
+      <td>0.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ezetimibe</td>
+      <td>3</td>
+      <td>Inverse variance weighted</td>
+      <td>0.12</td>
+      <td>−0.08 to 0.31</td>
+      <td>0.24</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account their correlations.Three PCSK9 inhibitor SNPs are rs11206510, rs2149041 and rs7552841, and 7 PCSK9 inhibitor SNPs additionally included rs10888897, rs2479394, rs2479409 and, rs562556 taking into account all their correlations.One ezetimibe SNP is rs2073547 (proxied by rs10260606), and three ezetimibe SNPs additionally included rs7791240 and rs217386 taking into account all their correlations.The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._
+
+### Sex-specific associations of genetically mimicked statin use and testosterone with IHD
 
 Genetically mimicked effects of statins reduced the risk of IHD in men and possibly women (Table 2) using IVW. Steiger filtering indicated directionality from testosterone to IHD in men and women. Genetically predicted testosterone was positively associated with IHD in men, but was not significantly associated with IHD in women, with similar estimates using IVW, the weighted median and MR-Egger. MR-Egger intercepts did not suggest the IVW estimates were invalid, but had wider confidence intervals (Table 2).
 
+**Table 2.**
+ Mendelian randomization estimates for effects of genetically mimicked statins (effect sizes of LDL-cholesterol) and of genetically predicted testosterone (effect size) on IHD in men and women using the UK Biobank. Table 2—source data 1.Genetic associations for men.  Table 2—source data 2.genetic associations for women.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">Mendelian randomization estimates</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Exposure</th>
+      <th># SNPs</th>
+      <th>Method</th>
+      <th>OR</th>
+      <th>95% CI</th>
+      <th>P value</th>
+      <th>MR-Egger intercept p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Men</td>
+      <td>Statin mimic</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>0.55</td>
+      <td>0.38 to 0.79</td>
+      <td>0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>6</td>
+      <td>Inverse variance weighted</td>
+      <td>0.54</td>
+      <td>0.33 to 0.89</td>
+      <td>0.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125</td>
+      <td>Inverse variance weighted</td>
+      <td>1.11</td>
+      <td>1.04 to 1.19</td>
+      <td>0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125</td>
+      <td>Weighted median</td>
+      <td>1.18</td>
+      <td>1.06 to 1.31</td>
+      <td>0.002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125</td>
+      <td>MR-Egger</td>
+      <td>1.10</td>
+      <td>0.98 to 1.23</td>
+      <td>0.09</td>
+      <td>0.01 (0.84)</td>
+    </tr>
+    <tr>
+      <td>Women</td>
+      <td>Statin mimic</td>
+      <td>1</td>
+      <td>Inverse variance weighted</td>
+      <td>0.87</td>
+      <td>0.59 to 1.27</td>
+      <td>0.46</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>6</td>
+      <td>Inverse variance weighted</td>
+      <td>0.79</td>
+      <td>0.54 to 1.13</td>
+      <td>0.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254</td>
+      <td>Inverse variance weighted</td>
+      <td>0.96</td>
+      <td>0.89 to 1.03</td>
+      <td>0.29</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254</td>
+      <td>Weighted median</td>
+      <td>1.03</td>
+      <td>0.92 to 1.14</td>
+      <td>0.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254</td>
+      <td>MR-Egger</td>
+      <td>1.08</td>
+      <td>0.94 to 1.23</td>
+      <td>0.27</td>
+      <td>−0.004 (0.05)</td>
+    </tr>
+  </tbody>
+</table>
+
+_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account all their correlations. The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._
+
 Considering genetically mimicked effects of statin together with genetically predicted testosterone, in men the multivariable estimates for genetically mimicked effects of statins on IHD allowing for testosterone we attenuated (Table 3) compared to the univariable estimates for effects of statins on IHD (Table 2). As a result, the multivariable MR-Egger estimates for genetically mimicked effects of statins on IHD, allowing for testosterone, were very similar for men and women (odds ratio 0.72, 95% confidence interval 0.57 to 0.90 for men and women meta-analyzed together). The multivariable associations of genetically predicted testosterone with IHD in men and women, allowing for genetically mimicked statins, (Table 3) were very similar to the respective univariable estimates for men and women (Table 2), but differed by sex (z-test p-value 0.01). The conditional F-statistics were 58.2 (men) and 68.5 (women) for testosterone and 3.5 (men) and 6.8 (women) for effects of genetically mimicked statins. The Q statistics for instrument validity were significant (212.5 in men and 323.1 in women), and the multivariable MR-Egger intercepts were significant in men and women, substantiating the use of the MR-Egger estimates.
 
-## Sex-specific associations of genetically mimicked Anakinra and tocilizumab with testosterone and IHD
+**Table 3.**
+ Multivariable Mendelian randomization estimates for effects of genetically mimicked statins (effect sizes of LDL-cholesterol) and of testosterone (effect size) together on IHD in men and women using the UK Biobank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">Mendelian randomization estimates</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Sex</th>
+      <th>Exposures</th>
+      <th>Instrumented by</th>
+      <th>Adjusted for</th>
+      <th>Method</th>
+      <th>OR</th>
+      <th>95% CI</th>
+      <th>P value</th>
+      <th>MR-Egger intercept p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Men</td>
+      <td>Statin mimic</td>
+      <td>1 Statin SNP on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>Inverse variance weighted</td>
+      <td>1.05</td>
+      <td>0.74 to 1.47</td>
+      <td>0.79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>Inverse variance weighted</td>
+      <td>1.11</td>
+      <td>1.04 to 1.20</td>
+      <td>0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>1 Statin SNP on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>MR-Egger</td>
+      <td>0.73</td>
+      <td>0.48 to 1.11</td>
+      <td>0.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>MR-Egger</td>
+      <td>1.09</td>
+      <td>1.02 to 1.17</td>
+      <td>0.02</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>6 Statin SNPs on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>Inverse variance weighted</td>
+      <td>1.02</td>
+      <td>0.72 to 1.43</td>
+      <td>0.91</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>125 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>Inverse variance weighted</td>
+      <td>1.11</td>
+      <td>1.04 to 1.20</td>
+      <td>0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Women</td>
+      <td>Statin mimic</td>
+      <td>1 Statin SNP on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>Inverse variance weighted</td>
+      <td>0.98</td>
+      <td>0.75 to 1.16</td>
+      <td>0.53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>Inverse variance weighted</td>
+      <td>0.96</td>
+      <td>0.90 to 1.04</td>
+      <td>0.33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>1 Statin SNP on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>MR-Egger</td>
+      <td>0.72</td>
+      <td>0.55 to 0.94</td>
+      <td>0.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>MR-Egger</td>
+      <td>0.96</td>
+      <td>0.89 to 1.03</td>
+      <td>0.27</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Statin mimic</td>
+      <td>6 Statin SNPs on LDL-cholesterol</td>
+      <td>Testosterone</td>
+      <td>Inverse variance weighted</td>
+      <td>0.92</td>
+      <td>0.74 to 1.16</td>
+      <td>0.49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Testosterone</td>
+      <td>254 SNPs on testosterone</td>
+      <td>statin</td>
+      <td>Inverse variance weighted</td>
+      <td>0.97</td>
+      <td>0.90 to 1.04</td>
+      <td>0.36</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_One statin SNP is rs12916, and six statin SNPs additionally included rs5909, rs10066707, rs17238484, rs2006760 and rs2303152 taking into account all their correlations. The unit of LDL-cholesterol is approximately 0.83 mm/L. An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._
+
+### Sex-specific associations of genetically mimicked Anakinra and tocilizumab with testosterone and IHD
 
 Genetically mimicked effects of anakinra increased both the risk of IHD and testosterone in men but not women (Table 4). Genetically mimicked effects of tocilizumab were not clearly associated with testosterone in men or women (Table 4), so were not investigated further. Investigation of whether testosterone mediates the genetically mimicked effect of anakinra on IHD was not possible because sex-specific genetic associations of testosterone SNPs with IL-1Ra from suitably large GWAS are not available.
+
+**Table 4.**
+ Mendelian randomization inverse variance weighted estimates for genetically mimicked effects of the anti-inflammatory anakinra raising IL-1Ra (effect size) (Swerdlow et al., 2012) on testosterone (effect size) and ischemic heart disease and for genetically mimicked effects of tocilizumab raising serum IL-6r (ng/ml) (Rafiq et al., 2007) on testosterone in men and women using the UK Biobank .
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Therapy</th>
+      <th>Target</th>
+      <th>Outcome</th>
+      <th># SNPs</th>
+      <th>Measure</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Men</td>
+      <td>Anakinra</td>
+      <td>IL-1Ra</td>
+      <td>testosterone</td>
+      <td>2</td>
+      <td>beta</td>
+      <td>0.022</td>
+      <td>0.01 to 0.04</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IHD</td>
+      <td>2</td>
+      <td>OR</td>
+      <td>1.08</td>
+      <td>1.01 to 1.15</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tocilizumab</td>
+      <td>IL-6r</td>
+      <td>testosterone</td>
+      <td>1</td>
+      <td>beta</td>
+      <td>0.003</td>
+      <td>−0.06 to 0.13</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Women</td>
+      <td>Anakinra</td>
+      <td>IL-1Ra</td>
+      <td>testosterone</td>
+      <td>2</td>
+      <td>beta</td>
+      <td>−0.01</td>
+      <td>−0.04 to 0.01</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>IHD</td>
+      <td>2</td>
+      <td>OR</td>
+      <td>0.99</td>
+      <td>0.91 to 1.08</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tocilizumab</td>
+      <td>IL-6r</td>
+      <td>testosterone</td>
+      <td>1</td>
+      <td>beta</td>
+      <td>0.002</td>
+      <td>−0.02 to 0.02</td>
+      <td>0.84</td>
+    </tr>
+  </tbody>
+</table>
+
+_SNPs mimicking anakinra are rs6743376 and rs1542176.The SNP mimicking tocilizumab is rs7529229.An effect size of testosterone is approximately, 0.23 nmol/L in women (Haring et al., 2012) and 3.1 nmol/L in men (Mohr et al., 2005)._
 
 ## Discussion
 
@@ -72,31 +667,31 @@ Here, we present a hypothesis driven study examining the role of testosterone in
 
 Taken together these complimentary findings for statins and anakinra raise the possibility that modulating testosterone, by whatever means, is a relevant feature for modulating IHD in men, with potential relevance to the development of new interventions, side-effects of existing interventions, re-purposing and appropriate use. Statins lowering testosterone could also be relevant to the muscle weakness or pain experienced on statins (Collins et al., 2016). Recognition that statins lower testosterone might also provide greater impetus for investigation of their role in other relevant conditions, such as prostate cancer (Alfaqih et al., 2017). Conversely, statins and anakinra did not clearly affect testosterone in women (Table 1) nor did testosterone mediate the effect of statins on IHD in women (Table 3). These differences by sex highlight the need for sex-specific approaches to IHD prevention and management, specifically in terms of the use of statins and investigation more broadly of causes of IHD.
 
-## Conclusion
+### Conclusion
 
 Genetic variants mimicking effects of statins and anakinra had opposite effects on testosterone and IHD in men, consistent with the effects of statins on IHD in men being partially mediated by testosterone. This insight that the pleiotropic effects of statins could be mediated by testosterone in men has implications for the use of existing interventions to prevent and treat IHD, the development of new interventions for IHD and the re-use of statins for other androgen related conditions. Genetic confirmation that anakinra raises testosterone suggests its use in rheumatoid arthritis might have cardiovascular side-effects, particularly in men. It also highlights the importance of considering whether vulnerability to major diseases and interventions to promote lifespan need to be sex-specific.
 
 ## Materials and methods
 
-## Genetic predictors mimicking effects of lipid and interleukin modifiers
+### Genetic predictors mimicking effects of lipid and interleukin modifiers
 
 Established genetic variants mimicking effects of statins, PCSK9 inhibitors and ezetimibe were taken from published sources (Ference et al., 2019) which selected SNPs from genes encoding proteins of the targets of each lipid modifier (HMGCR for statins, PCSK9 for PCSK9 inhibitors and NCP1L1 for ezetimibe) that lowered LDL-cholesterol. Genetic effects mimicking statins, PCSK9 inhibitors and ezetimibe were expressed in sex-specific effect sizes of LDL-cholesterol reduction taken from the largest available sex-specific GWAS summary statistics, that is the UK Biobank (http://www.nealelab.is/uk-biobank). The study was restricted to people of white British ancestry adjusted for the first 20 principal components, age, and age2. In the main analysis for each lipid modifier, we only used independent (r2 <0.05) SNPs most strongly associated with LDL-cholesterol. We obtained correlations between SNPs for each lipid modifier based on the 1000 Genomes catalog from LDlink (https://ldlink.nci.nih.gov). In sensitivity analysis, we used all the relevant SNPs for each lipid modifier, along with a matrix of their correlations. Established genetic variants mimicking effects of anakinra and tocilizumab and their effects on IL-1Ra and IL-6r respectively were also taken from published sources (Swerdlow et al., 2012; Rafiq et al., 2007).
 
-## Sex-specific genetic predictors of testosterone
+### Sex-specific genetic predictors of testosterone
 
 Strong (p-value<5 × 10−8), independent (r2 <0.05), sex-specific genetic predictors of testosterone were extracted from a published genome wide association study (GWAS) based on the UK Biobank and replicated in three independent studies (CHARGE Consortium, Twins UK and EPIC-Norfolk) (Ruth et al., 2020; Sinnott-Armstrong et al., 2019). Genetic associations with testosterone in this study were adjusted for genotyping chip/release of genetic data, age at baseline, fasting time and ten genetically derived principal components (Ruth et al., 2020). We used all 125 genetic variants given for bioavailable testosterone, hereafter testosterone, in men and all 254 genetic variants given for testosterone in women, as previously (Zhao and Schooling, 2020), because these had little correlation with sex hormone binding globulin (0.05 in men and 0.06 in women) (Ruth et al., 2020).
 
-## Sex-specific genetic associations with IHD
+### Sex-specific genetic associations with IHD
 
 Sex-specific genetic associations with IHD were taken from the UK Biobank individual data after excluding those with inconsistent self-reported and genotyped sex, excess relatedness (more than 10 putative third-degree relatives), abnormal sex chromosomes (such as XXY), or poor-quality genotyping (heterozygosity or missing rate >1.5%). The sex-specific associations with IHD obtained using logistic regression were adjusted for the first 20 principal components, age, and assay array. IHD was based on self-report at baseline, subsequent hospitalization diagnoses (primary or secondary) of International Classification of Diseases (ICD) 9 410–4 or ICD10 I20-5 and death registration causes (primary or secondary) of ICD10 I20-5 up until December 2019.
 
-## Statistical analysis
+### Statistical analysis
 
 The F-statistic was used to assess instrument strength, obtained using an approximation (mean of square of SNP-exposure association divided by square of its standard error) (Bowden et al., 2016a). A conventional threshold for the F-statistic is 10. SNPs with an F-statistic <10 were dropped.
 
 Steiger filtering was used to check the directionality between testosterone and IHD. (Hemani et al., 2017) Sex-specific estimates of the associations of genetically predicted exposures (i.e., genetically mimicked effects of statins, PCSK9 inhibitors, ezetimibe, anakinra and tocilizumab) with testosterone and IHD, as well as estimates of the associations of genetically predicted testosterone with IHD were obtained by combining SNP-specific Wald estimates (SNP on outcome divided by SNP on exposure) using inverse variance weighting (IVW) with multiplicative random effects (Burgess et al., 2013). Multivariable MR was used to assess sex-specific associations of genetically predicted exposures with IHD allowing for testosterone, accounting for correlations between SNPs on the same chromosome obtained from LDlink. In the multivariable MR, we pooled the genetic instruments mimicking statins and the genetic instruments for testosterone together, extracted their associations with LDL-cholesterol and testosterone and fitted one multivariable model. We estimated the Sanderson-Windmejier multivariable conditional F-statistic (Sanderson and Windmeijer, 2016) to obtain a lower bound of the strength for each instrument conditional on the other exposure, and the Q statistics to asses pleiotropy, using the WSpiller/MVMR package (Sanderson et al., 2019). Given this analysis is multivariable by design with few genetic variants available to mimic the effects of statins, we used the multivariable MR-Egger estimates (Rees et al., 2017).
 
-## Sensitivity analysis
+### Sensitivity analysis
 
 Where possible we used methods with different assumptions to assess the validity of the univariable MR estimates from IVW, which assumes balanced pleiotropy. MR-Egger is valid as long as the instrument strength independent of direct effect assumption holds (Bowden et al., 2015). We also used a weighted median which gives valid estimates when more than 50% of information comes from valid SNPs (Bowden et al., 2016b). However, for exposures instrumented by correlated SNPs we did not give the weighted median or MR-Egger estimates because of concerns about their interpretability (Burgess and Thompson, 2017).
 

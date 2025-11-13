@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03b6f4629 Instituto de Investigación en Recursos Cinegéticos (IREC), CSIC-UCLM-JCC Ciudad Real Spain
-2. https://ror.org/039ssy097 Instituto Pirenaico de Ecologia (IPE), CSIC, Avda. Nuestra Señora de la Victoria Jaca Spain
-3. https://ror.org/012p63287 University of Groningen Groningen Netherlands
+1. Instituto de Investigación en Recursos Cinegéticos (IREC), CSIC-UCLM-JCC Ciudad Real Spain ([ROR:03b6f4629](https://ror.org/03b6f4629))
+2. Instituto Pirenaico de Ecologia (IPE), CSIC, Avda. Nuestra Señora de la Victoria Jaca Spain ([ROR:039ssy097](https://ror.org/039ssy097))
+3. University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
 
 † Corresponding author
 
@@ -19,7 +19,7 @@ Glucocorticoid (GC) variation has long been thought to reflect variation in orga
 
 ## Introduction
 
-## The accepted – but often overlooked – metabolic role of glucocorticoids
+### The accepted – but often overlooked – metabolic role of glucocorticoids
 
 Glucocorticoid hormones (GCs; e.g. cortisol, corticosterone) were identified by Hans Selye (1907–1982) as the key molecular mediators of the ‘stress reaction’ and named in reference to their capacity to increase glucose in blood. Selye highlighted the fundamental role of GCs in the ‘general adaptation syndrome,’ that is, ‘the physiological mechanisms that help to raise resistance to damage as such, irrespective of the specific nature of the damaging agents’ (Selye, 1950). In this view, GCs play a role in ‘adapting’ to the challenge by triggering mechanisms that help the organism return to, or maintain, homeostasis after an environmental challenge. Indeed, towards the later stages of his career, Selye’s definition of stress was ‘the nonspecific response of the body on any demand on it’ (Selye, 1976), making the point that very different stimuli (i.e. ‘stressors’) triggered the same response. However, in the literature this perspective has changed over time, and ‘stress’ and, by extension, GCs have been widely linked to negative outcomes (but see Koolhaas et al., 2011; Herman, 2022; MacDougall-Shackleton et al., 2019). Consequently, researchers in fields from biomedicine to conservation physiology and animal husbandry have focused on GCs to find proxies of ‘physiological and/or psychological stress’ to evaluate physical and/or welfare status. Indeed, GCs have predominated over other traits throughout the stress physiology literature, to the point of being referred to as vertebrate ‘stress hormones’ (Madliger et al., 2015; Madliger and Love, 2014; McCormick and Romero, 2017). While several authors have argued against this simplified view of GC regulation during the past decades (e.g. Koolhaas et al., 2011; MacDougall-Shackleton et al., 2019; Herman, 2022; Romero, 2004; Landys et al., 2006; Bonier et al., 2009), such association prevails, in the sense that publications still abound in which GC levels are assumed to provide information on organismal stress.
 
@@ -27,7 +27,7 @@ The focus on GCs to measure organismal stress can be understood from their role 
 
 Selye, 1976 emphasized that homeostatic challenges of any kind lead to increases in body demands, loosely defined as ‘the rate at which we live at any one moment.’ Activation of the hypothalamus–pituitary–adrenal (HPA) axis represents a primary hormonal response to homeostatic challenges that, through the release of GCs, mobilizes the resources needed to fuel the current or anticipated rise in energy expenditure (current and anticipatory responses) or recover from an immediate threat that induced an unanticipated increase in energy expenditure (reactive response) (Herman et al., 2016; McEwen and Wingfield, 2003). In this context, GCs are involved in the metabolism of most types of energy reserves, modulating glucose, fat, and protein metabolism in liver, skeletal muscle, and other target tissues (Box 1). Allusions to the energetic role of GCs and their tight link to energy expenditure are common in physiological and ecological studies, especially those using approaches which underline the adaptive function of GC responses (McEwen and Wingfield, 2003; Landys et al., 2006; Romero et al., 2009; Deviche et al., 2017), but the extent to which GC variation can be quantitatively explained as facilitator of variation in energy expenditure has rarely been addressed (but see Jimeno et al., 2018; Malkoc et al., 2021 supplementary information). We here schematically review the role of GCs in energy metabolism (Box 1) and investigate this link quantitatively through meta-analysis.
 
-## Revisiting the associations between GCs and metabolic rate: A meta-analytic approach
+### Revisiting the associations between GCs and metabolic rate: A meta-analytic approach
 
 Although previous evidence supports the link between energy expenditure and GC secretion (e.g. Koolhaas et al., 2011; Sapolsky et al., 2000; Beerling et al., 2011; Buwalda et al., 2012; Jimeno et al., 2018; Malkoc et al., 2021 supplementary information), the qualitative importance of both this association and the underlying processes to explain GC variation remains unexplored; this is, however, fundamental towards accurately interpreting GC variation. We here test whether changes in energetic demands are associated with variation in GC levels. Specifically, we (i) use a meta-analytic approach to test whether experimental manipulations leading to increases in metabolic rate (MR) in endotherms also lead to an increase in GCs (qualitative approach). We included only experimentally induced increases of energy expenditure to avoid potential masking effects of anticipatory responses or delayed effects of GCs. Because MR and GCs can fluctuate rapidly, we targeted MR and GC measurements taken simultaneously or when animals could be assumed to be in the same physiological state (e.g. within the same day and experimental treatment). We further investigated (ii) whether the magnitude of the experimentally induced changes in MR and GCs was correlated (quantitative approach) through meta-regression. Our predictions are that (i) increases in MRs are associated with increases in plasma GC concentrations, (ii) changes in GCs are proportional to induced changes in MR, and (iii) the association between increases in MR and GCs is independent of the treatment used to increase the MR.
 
@@ -35,7 +35,111 @@ Although previous evidence supports the link between energy expenditure and GC s
 
 Among the studies selected for inclusion in the analysis, the treatment effect size on MR was on average 1.85 ± 0.87 (Figure 1—figure supplement 1). In accordance with prediction, effects on GCs were positive in the majority of cases (32/35; Figure 1), and consequently the overall average effect size deviated significantly from zero, with the average GC effect size estimated at 0.73 ± 0.11 (Table 1). There was a strong association between MR effect sizes and GC effect sizes (Table 1, Figure 2), thus confirming prediction (ii). It is further worth noting that the residual heterogeneity did not exceed the level expected by chance (Table 1). MR Cohen’s D was ln-transformed (see ‘Materials and methods’) to normalize the distribution (Figure 2), and AICc of models including ln MR were significantly lower compared to models including untransformed MR Cohen’s D (AICc = 70.58 vs. 74.97, respectively).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88205/elife-88205-fig1-v1.jpg)
+
+**Figure 1.:** Area of squares is proportional to the experiment sample size (1/s.e.).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88205/elife-88205-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Area of squares is proportional to the experiment sample size (1/s.e.).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88205/elife-88205-fig2-v1.jpg)
+
+**Figure 2.:** Area of dots is proportional to the experiment sample size (i.e. square root of the number of individuals in which GCs were measured).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88205/elife-88205-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Panels show the association without ln-transforming metabolic rate effect sizes (left panel) and when ln-transforming them (right panel). Size of dots is proportional to the experiment sample size (i.e. square root of the number of individuals in which glucocorticoids were measured). Shaded areas represent 95% CI. Note that the number of data points in the graph is higher than the number of studies as some of the studies included multiple experimental treatments (Study ID was included as random factor in statistical analyses).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88205/elife-88205-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Size of dots is proportional to the experiment sample size (i.e. square root of the number of individuals in which glucocorticoids were measured). Shaded areas represent 95% CI. Note that the number of data points in the graph is higher than the number of studies as some of the studies included multiple experimental treatments (Study ID was included as random factor in statistical analyses). Before/after effect and experiment/control effect results should be interpreted with caution as most studies do include within-individual variation and do not include time effect.
+
+**Table 1.**
+ Meta regression model testing the association between metabolic rate (MR) effect sizes and glucocorticoid effect sizes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimate</th>
+      <th>s.e.</th>
+      <th>Z</th>
+      <th>p</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>0.72</td>
+      <td>0.11</td>
+      <td>6.40</td>
+      <td>&lt;0.0001</td>
+      <td>0.50–0.95</td>
+    </tr>
+    <tr>
+      <td>MR effect size (ln)</td>
+      <td>0.31</td>
+      <td>0.10</td>
+      <td>2.94</td>
+      <td>0.003</td>
+      <td>0.10–0.51</td>
+    </tr>
+  </tbody>
+</table>
+
+_Variance components: Study.ID (Sigma^2)– Estimate = 0.00, sqrt = 0.00, n = 21.Residual heterogeneity: QE(df = 33) = 28.40, p=0.70.Test of moderators: QM(df = 1) = 8.64, p=0.003._
+
 The association between MR and GC effect sizes remained statistically significant when adding taxa, before/after, experiment/control effect, metabolic variable, or treatment type one by one to the model. Furthermore, none of these variables had a significant effect on GC effect size, nor did the association between MR and GC effect sizes depend on those factors (i.e. interactions between these variables and MR effect sizes were always nonsignificant; Table 2, Supplementary file 4, Figure 2—figure supplements 1 and 2). The latter result confirms prediction (iii). Given that none of these effects significantly improved the model, the final model when removing all factors was the one including MR effect size as only predictor of GC effect size (Table 1). Despite these modulators being nonsignificant, the associations were in the expected directions, with studies including within-individual variation (i.e. experiment/control effect), and not including a before/after effect reporting higher GC effect sizes (table in Supplementary file 4, Figure 2—figure supplement 2).
+
+**Table 2.**
+ Table showing the main effects of all variables considered (metabolic rate [MR], taxa, time effect, within-individual variation, metabolic variable, and treatment type) to modulate glucocorticoid effect sizes across studies.Full models are shown in Supplementary file 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MR effect size (ln)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Taxa</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Before/after</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Experiment/control</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Metabolic variable</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Treatment type</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Treat. 2</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>Treat. 3</td>
+      <td>0.60</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -57,19 +161,19 @@ Authors who assumed GC levels to be a proxy of physiological stress have struggl
 
 ## Materials and methods
 
-## Literature search
+### Literature search
 
 We reviewed the literature to identify empirical studies reporting measurements of both MR and plasma GCs. We compiled studies that met all following criteria: (1) including an experimental manipulation of any kind leading to increases in MR which was quantified (i.e. both significant and nonsignificant increases). Among these, we also included those studies reporting heart rate as a metabolic measure as heart rate and MR are strongly correlated (Bevan et al., 1994; Bevan et al., 1995; Butler et al., 2004; Word et al., 2022). (2) Including measurements of natural GC concentrations in plasma (i.e. not exogenous or chemically induced; e.g. with ACTH or CRH). (3) measurements of GCs and metabolism had to be on the same individuals and measured in the same physiological state. The latter condition excludes, for example, studies with daily energy expenditure measurements combined with GCs measured at one time point. Finally, we only included studies on endotherms (birds and mammals) because metabolic regulation differs strongly between endotherms and ectotherms.
 
 We conducted a database search (Web of Science, July 20, 2021) to identify candidate studies using the following two combinations of search terms: “energy expenditure” AND (glucocorticoid OR cortisol OR corticosterone) and “metabolic rate” AND (glucocorticoid OR cortisol OR corticosterone). After the search, we consecutively selected articles after (1) abstract review, (2) full-text review, and (c) data availability for effect size calculations. Using this approach, we identified a total of 14 studies that met all our criteria (see Supplementary file 1 for additional information on the number of studies obtained on each of the search steps). We also systematically checked the reference list of these 14 papers, which yielded an additional 7 papers. Thus, we included a total of 21 papers (Supplementary file 2) in our analyses, of which 12 were on birds and 9 on mammals. Also, 9 of the 22 papers included more than one experimental treatment, yielding a total of 35 effect sizes. For each of these studies, we extracted information on study species or metabolic and GC variables reported, among others (Supplementary file 2). Additionally, we recorded variation related to the experimental design, the variables that were quantified, and the type of treatment used: (1) before/after design: whether the experimental manipulation included a time effect (i.e. individuals served as their own control, being measured before and after the experimental manipulation); (2) experiment/control design: whether the experiment accounted for within-individual variation (i.e. all individuals went through all experimental treatments); (3) whether MR or heart rate was the metabolic variable; and (4) the type of treatment that induced an increase in MR (see below) (Supplementary file 2).
 
-## Effect size calculations
+### Effect size calculations
 
 To estimate effect sizes of metabolism and GCs, we used the web-based effect size calculator Practical Meta-Analysis Effect Size Calculator, following Lipsey and Wilson, 2001 and Nakagawa and Cuthill, 2007. We calculated standardized mean-difference effect sizes (Cohen’s D), which we computed from means and standard deviations (19 studies) or t-test (2 studies). When metrics were presented graphically only, we extracted data from the figure(s) using the GetData Graph Digitizer software (http://getdata-graph-digitizer.com/). See Supplementary file 3 for details on data extraction and effect size calculations.
 
 For each study, we compared the mean MR and level of plasma GCs of individuals in the treatment group(s) to that of individuals in the control group. For studies in which treatment was confounded with time, because pretreatment measurements were used as control and compared with measurements during treatment, the pretreatment measure was used as control when calculating effect sizes in studies where there was a single treatment. When studies with a before-after design included more than one experimental treatment, the treatment yielding the lowest metabolism was taken as control for the effect size calculations. Thus, confounding time with treatment was avoided whenever possible.
 
-## Statistical analyses
+### Statistical analyses
 
 We conducted all meta-analyses using the rma.mv function from the metafor package (Viechtbauer, 2010), implemented in R (version 4.0.1, R Development Core Team, 2020). Standard errors were used for the weigh factor. All models contained a random intercept for study identity to account for inclusion of multiple experimental treatments or groups from the same study. Most species were used in a single study, and we therefore did not include species as a random effect in addition to study identity. The number of species was, however, insufficient to reliably estimate phylogenetic effects; we, therefore, limited the analysis in this respect with a comparison between birds and mammals (see below). The dependent variable was either the MR or the GC effect size. One model was fitted with the MR effect size as a dependent variable to estimate the average effect on MR across all studies in the analyses. All other models had the GC effect size as dependent variable and MR effect size as a moderator. Distribution of MR effect sizes was skewed, which was resolved by ln-transformation, which yielded a better fit compared to a model using the linear term (evaluated using AIC, see ‘Results’ for details). Our first GC model contained only the MR effect size as a fixed independent variable. This model provides a qualitative test of whether GC levels increase when MR is increased and tests prediction (i) by providing an estimate of the intercept, which represents the average GC effect size because we mean centered the ln-transformed MR effect size (Schielzeth, 2010). The same model tests prediction (ii) whether the GC effect increases with an increasing MR effect size, which will be expressed in a significant regression coefficient of the MR effect size.
 

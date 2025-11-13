@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.32785.001 Cell differentiation is controlled by individual transcription factors (TFs) that together activate a selection of enhancers in specific cell types. How these combinations of TFs identify and activate their target sequences remains poorly understood. Here, we identify the cis -regulatory transcriptional code that controls the differentiation of serotonergic HSN neurons in Caenorhabditis elegans . Activation of the HSN transcriptome is directly orchestrated by a collective of six TFs. Binding site clusters for this TF collective form a regulatory signature that is sufficient for de novo identification of HSN neuron functional enhancers. Among C. elegans neurons, the HSN transcriptome most closely resembles that of mouse serotonergic neurons. Mouse orthologs of the HSN TF collective also regulate serotonergic differentiation and can functionally substitute for their worm counterparts which suggests deep homology. Our results identify rules governing the regulatory landscape of a critically important neuronal type in two species separated by over 700 million years.
+Cell differentiation is controlled by individual transcription factors (TFs) that together activate a selection of enhancers in specific cell types. How these combinations of TFs identify and activate their target sequences remains poorly understood. Here, we identify the cis-regulatory transcriptional code that controls the differentiation of serotonergic HSN neurons in Caenorhabditis elegans. Activation of the HSN transcriptome is directly orchestrated by a collective of six TFs. Binding site clusters for this TF collective form a regulatory signature that is sufficient for de novo identification of HSN neuron functional enhancers. Among C. elegans neurons, the HSN transcriptome most closely resembles that of mouse serotonergic neurons. Mouse orthologs of the HSN TF collective also regulate serotonergic differentiation and can functionally substitute for their worm counterparts which suggests deep homology. Our results identify rules governing the regulatory landscape of a critically important neuronal type in two species separated by over 700 million years.
 
 ## Introduction
 
@@ -33,9 +33,21 @@ The study of the transcriptional regulatory mechanisms underlying neuronal subty
 
 ## Results
 
-## Transcription factors from six different families are required for HSN neuron terminal differentiation
+### Transcription factors from six different families are required for HSN neuron terminal differentiation
 
 Serotonergic neurons are characterized by the coordinated expression of a battery of phylogenetically conserved enzymes and transporters known as the 5HT pathway genes (Figure 1A). C. elegans adult hermaphrodites contain three functionally distinct serotonergic neuron subclasses: the NSM neurosecretory neuron, the ADF chemosensory neuron and the HSN motor neuron (Figure 1B), which arise from different progenitors and, with the exception of the 5HT pathway genes, express different effector genes (Figure 1—figure supplement 1). The HSN neuron is, by far, the best characterized, thus we focused on dissecting the transcriptional rules governing the differentiation of this subclass.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig1-v3.jpg)
+
+**Figure 1.:** (A) Phylogenetically conserved serotonin biosynthetic pathway. C. elegans protein names appear in black case, mammalian in grey. AADC: aromatic L-amino acid decarboxylase; GCH: GTP cyclohydrolase; TPH: tryptophan hydroxylase; Trp: tryptophan; VMAT: vesicular monoamine transporter; 5HTP: 5-hydroxytryptophan; 5HT: serotonin. (B) C. elegans hermaphrodite serotonergic system is composed of three subclasses of bilateral neurons (NSM, ADF and HSN, L: left, R: right). See Figure 1—figure supplement 1 for expression profiles of serotonergic subclasses. (C) Micrographs showing HSN 5HT staining and tph-1::gfp reporter expression defects of ast-1(ot417), unc-86(n846), sem-4(n1971), hlh-3(tm1688), egl-46(sy628) and egl-18(ok290) mutant animals (quantified in E). Scale bar: 5 μm. (D) Micrographs showing expression defects in the K+/Cl- cotransporter kcc-2::gfp reporter, a terminal feature of HSN not related to 5HT signaling, and normal expression of the extracellular matrix gene kal-1, indicating HSN is still present. (E) Heatmap summary of single TF mutant characterization. Statistically significant expression defects compared to wild type are indicated with a black frame. flp-19: FMRF-like peptide; ida-1: Tyr phosphatase-like receptor; lgc-55: amine-gated Cl- channel; nlg-1: neuroligin; rab-3: ras GTPase; unc-17: vesicular acetylcholine transporter; unc-40: netrin receptor. n.a: not analyzed. See Source data 1 for primary data and Fisher's exact test p-values and Figure 1—figure supplement 2 and Supplementary file 1 for analysis of additional alleles. n > 100 cells per condition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Heat map representation of known HSN, NSM and ADF expressed genes [from (Hobert et al., 2016)]. Only the 5HT pathway genes and one additional gene (nlp-3) are expressed by the three serotonergic subclasses.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** See Supplementary file 1 for phenotype description.
 
 The HSN motor neuron controls vulval muscle contraction and its dysfunction leads to an egg laying defective (egl) phenotype. To identify the TF combination controlling HSN terminal differentiation, we selected among previously described egl mutants, those that both code for TFs and had reduced or no staining of 5HT in HSN. At least four genes matched this criteria: the POU domain TF unc-86, the Spalt-type Zn finger TF sem-4, the bHLH domain TF hlh-3 and the Insm-type Zn finger TF egl-46 (Basson and Horvitz, 1996; Doonan et al., 2008; Sze et al., 2002; Wu et al., 2001). In addition to previous reports, we found that the GATA factor egl-18, a regulator of HSN migration (Desai et al., 1988) and the ETS TF ast-1, a regulator of dopaminergic fate (Flames and Hobert, 2009), also exhibit an HSN 5HT staining phenotype not previously published. Thus, although additional TFs with subtler egl phenotypes or with pleiotropic lethal effects and no available hypomorphic alleles are likely to be required for correct HSN differentiation, we initially focused our study in this set of six TFs that we refer as the HSN TF combination.
 
@@ -43,9 +55,17 @@ To confirm previous observations, we analyzed null alleles for each member of th
 
 We next assessed whether the HSN TF combination is also required for the expression of non-5HT related genes by analyzing nine additional reporters. We observed expression defects in all mutant strains (Figure 1D,E and Source data 1). Although most terminal features were affected, the expression of some genes remained normal indicating that, in each single mutant, HSN neuron is present and shows broad but partial differentiation defects (Figure 1D,E). HSN neuron is born embryonically and remains in a quiescent undifferentiated state until fourth larval stage (L4), when it activates the expression of most effector genes, including the 5HT pathway genes. We did not observe precocious expression of any of the analyzed terminal features in any of the single mutant backgrounds, suggesting that the HSN TF combination acts mainly as activator of transcription. Most notably, the phenotypic profile of each mutant was slightly different from the others, which suggests that these TFs do not function in a cascade-like linear pathway (Figure 1E).
 
-## AST-1 acts as temporal switch for HSN maturation
+### AST-1 acts as temporal switch for HSN maturation
 
 The expression of the HSN TF combination has only been partially studied (Basson and Horvitz, 1996; Doonan et al., 2008; Finney et al., 1988; Wu et al., 2001). We used fosmid reporter strains (for unc-86, sem-4 and egl-18), endogenous locus tagging (for ast-1 and hlh-3, Figure 2—figure supplement 1) and a transcriptional reporter strain (for egl-46) to analyze their expression pattern in HSN throughout development. We find that all six TFs are expressed in the HSN at L4 coinciding with the onset of differentiation (Figure 2A). The HSN TF combination is also expressed in other neurons, including expression of UNC-86, EGL-18 and EGL-46 in the NSM serotonergic neuron, while none of them are expressed in the ADF serotonergic neuron.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig2-v3.jpg)
+
+**Figure 2.:** (A) Micrographs showing expression of the HSN TF combination at L4 larval stage and adult animals. (B) Analysis of HSN TF expression across all developmental stages in the HSN neuron. n > 30 cells for each developmental point. Error bars are SEP values. See Figure 2—figure supplement 1 for more detailed hlh-3 developmental expression. (C) Heat-shock-induced expression of hlh-3 at L4 larval stage is able to rescue tph-1::gfp expression defects in the HSN neuron. n > 100 cells per condition. See Source data 1 for primary data and Fisher's exact test p-values. *: p-value <0.05. (D) Precocious L1 onset of expression of ast-1, hlh-3 or both using an early active HSN-specific promoter (also expressed in NSM, ADF and VC4/5 neurons). Precocious ast-1 advances tph-1::gfp expression, while hlh-3 alone or in combination with ast-1 delays tph-1::gfp expression and produces expression defects. YA: young adult. n > 30 cells per time point and condition. See Source data 1 for primary data and Fisher's exact test p-values. *: p-value <0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schema of the modified ast-1 and hlh-3 locus to produce the corresponding fluorescent fusion proteins. (B) HSN lineage representation. (C) HLH-3 expression reappears postembryonically at L3 stage, peaks at late L3 and quickly disappears at the end of L4 stage. N > 100 cells each stage. (D) Alignment of the bHLH domain of C. elegans HlH-3, D. melanogaster SCUTE and M. musculus ASCL1 (EMBOSS Needle alignment tool default parameters). HLH-3 shows 48.3% identity and 63.8% similarity with SCUTE and 56.9% identity and 65.5% similarity with ASCL1.
 
 A deeper analysis of the developmental expression of each TF shows a very diverse array of expression dynamics (Figure 2B). Some HSN TFs are expressed embryonically (such as UNC-86, HLH-3 or EGL18). SEM-4 is widely expressed in the embryo in the area were HSN is located, although it is likely to be expressed at this early stage in HSN, we could not unequivocally identify it. In contrast, AST-1 and EGL-46 initiate their expression at different postnatal stages (Figure 2B). Interestingly, HLH-3 shows two waves of expression: it is present in the mother cell of HSN (around 280 min of embryonic development, see lineage in Figure 2—figure supplement 1) and its expression becomes fainter in postmitotic HSN and PHB neurons (data not shown). At first larval stage (L1), HLH-3 expression is undetectable in HSN and expression reappears at third larval stage (L3), preceding AST-1 onset of expression and HSN maturation and is quickly downregulated at the end of L4 [Figure 2B, Figure 2—figure supplement 1 and (Doonan et al., 2008)].
 
@@ -55,27 +75,55 @@ Little is known about the temporal control of HSN differentiation. Heterochronic
 
 Additionally, these experiments underscored the importance of the dynamic regulation of hlh-3 expression. HLH-3 is a proneural TF of the asc family, ortholog of mouse Ascl1 and Drosophila Scute (Figure 2—figure supplement 1). Proneural factors regulate both neural progenitor specification and neuronal differentiation and their functions are conserved through evolution from cnidarians to mammals (Guillemot and Hassan, 2017). Ascl1 is required for correct mouse serotonergic specification (Pattyn et al., 2004) and its activity is required to induce serotonergic fate from human fibroblasts (Vadodaria et al., 2016; Xu et al., 2016). HLH-3 shows several features common to ASCL1: (1) HLH-3 is transiently expressed in all neuronal progenitors and differentiating neuroblasts and it is required for correct differentiation of several neuronal types, including HSN (Doonan et al., 2008; Gruner et al., 2016; Krause et al., 1997; Luo and Horvitz, 2017; Murgan et al., 2015). (2) Both HLH-3 and ASCL1 are required to induce correct neurotransmitter identity (Pattyn et al., 2004; Sommer et al., 1995). (3) As will be explained in a later section, Ascl1 can rescue HSN differentiation defects of hlh-3 mutants, supporting its functional conservation. (4) As would be expected for a proneural gene, HLH-3 is also required for correct expression of panneuronal features in the HSN (Figure 1, rab-3 expression defects). (5) We find that HLH-3 expression needs to be tightly temporally regulated to correctly induce HSN fate. Temporal regulation of ASCL1 and SCUTE activities is also required for correct neuronal specification (Andersen et al., 2014; Imayoshi et al., 2013; Quan et al., 2016; Urbán et al., 2016). (6) HLH-3 regulates egl-46 expression (discussed in next section, Figure 3A) and similarly, Insm1 (ortholog of egl-46) is a direct target of Ascl1 (Castro et al., 2011). Taken together, our data suggests that HLH-3 acts as a proneural factor in HSN specification. Future experiments will determine if, similar to ASCL1 (Wapinski et al., 2013), HLH-3 acts as a pioneer factor to facilitate binding of other TFs and promote neural differentiation.
 
-## UNC-86 is a master regulator of the HSN transcription factor combination
+![Figure 3.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig3-v3.jpg)
+
+**Figure 3.:** (A) Expression of the HSN TFs in different mutant backgrounds. All scorings were performed at adult stages except for HLH-3, where early L4 larvae were scored. Embryonic HLH-3 expression is unaffected in unc-86 mutants (data not shown). Graphs show the percentage of TF expression in mutant animals relative to wild type expression. n > 100 cells per condition, Fisher's exact test, *: p-value<0.05, See Source data 1 for raw data and exact p-values. (B) Summary of relationships among the HSN TF combination, black arrows mean strong effect (more than 50% loss of expression) and grey arrows depicts the rest of significant defects. (C) Loss-of-function (RNAi) experiments after HSN differentiation show that AST-1, UNC-86, SEM-4, EGL-46 and EGL-18 are required to maintain proper tph-1::yfp and cat-1::MDM2::gfp (unstable GFP) reporter expression. Worms were also scored prior to RNAi treatment to confirm correct HSN differentiation before starting the experiment. n > 100 cells per condition, Fisher's exact test, *: p-value <0.05. See Source data 1 for raw data and Figure 3—figure supplement 1 for maintenance analysis with temperature-sensitive alleles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Three temperature-sensitive alleles ast-1(ot417), unc-86(n848) and sem-4(n2654) were used to perform temperature shifts to restrictive temperatures after HSN has fully differentiated (young adult). Temperature shifts (red lines) lead to reporter expression defects. Red asterisks refer to the comparison between mutant values before and after the temperature shift and blue asterisks refer to the comparison at the same time point between shifted animals (red line) and animals kept at permissive temperature (blue line) (n > 100 cells per condition). Fisher's exact test, *: p-value<0.05. Related to Figure 3.
+
+### UNC-86 is a master regulator of the HSN transcription factor combination
 
 We next examined whether these TFs could exhibit cross regulation by analyzing their expression in each of the six different TF mutant backgrounds. In most cases, expression of each TF was largely independent of the integrity of the rest of the HSN TFs (Figure 3A and Source data 1). However, UNC-86 is a notable exception as it is required for the expression of most factors (Figure 3A). Noteworthy, SEM-4, that is downstream UNC-86, is also required for AST-1 and partially for HLH-3 expression. Thus, UNC-86 effects could be, at least in part due to SEM-4 regulation. Finally, additional more modest effects are also observed between other TF pairs, such as the regulation of AST-1 and EGL-46 by HLH-3 (Figure 3A and summarized in Figure 3B).
 
 Since TFs required for neuronal terminal differentiation are often also required to maintain the correct differentiated state (Deneris and Hobert, 2014), we explored whether this was also the case for the HSN TFs. We find that UNC-86, SEM-4, AST-1, EGL-46 and EGL-18 expression is maintained in HSN after differentiation while HLH-3 expression is not observed after larval L4 stage (Figure 2A and B). RNAi experiments to knock down the expression of the adult expressed TFs after HSN maturation produce defects in the maintenance of tph-1 and cat-1 expression (Figure 3C). Additionally, the use of temperature-sensitive alleles for ast-1, unc-86 and sem-4 leads to similar maintenance defects (Figure 3—figure supplement 1). Our results revealed that these five TFs are continuously required to maintain the correct HSN differentiated state.
 
-## Distinct cis-regulatory modules control serotonin pathway gene expression in different subclasses of serotonergic neurons
+### Distinct cis-regulatory modules control serotonin pathway gene expression in different subclasses of serotonergic neurons
 
 We next performed a comprehensive, in vivo analysis of the cis-regulatory modules (CRMs) for 5HT pathway genes to analyze how the HSN TFs regulate HSN terminal differentiation.
 
 First, we dissected the regulatory regions of the 5HT pathway genes by in vivo reporter analysis and isolated the minimal CRMs able to direct expression in each serotonergic neuron subclass (Figure 4 and Figure 4—figure supplement 1). We found that for each gene, different CRMs were active in specific subclasses of serotonergic neurons (HSN, NSM or ADF). This suggests that expression of the same 5HT pathway gene is independently regulated in each of the three serotonergic neuron subclasses. These results, together with previous reports of different TF mutants affecting specific subclasses of serotonergic neurons (Desai et al., 1988, Olsson-Carter and Slack, 2010, Zhang et al., 2014, Zheng et al., 2005) support the presence of subclass-specific serotonergic differentiation programs. Of note, 5HT pathway gene CRMs in some cases partially overlap (Figure 4). This overlap might be due to the presence of shared TFBS among serotonergic neuron subclasses and indeed, UNC-86 regulates both NSM and HSN differentiation (Sze et al., 2002). We found that disruption of POU TFBS in tph-1 and bas-1 HSN CRMs but not in cat-1 CRM (discussed in the following section) affects both HSN and NSM expression. TFs are pleiotropic and it is known that the same TF can act with different combinations of TFs in different neuronal types to control neuron-type-specific genetic programs (Hobert, 2016).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig4-v3.jpg)
+
+**Figure 4.:** White boxes underneath each gene summarize the smallest CRM that drive expression in each serotonergic neuron subclass. Thick black lines symbolize the genomic region placed upstream of GFP (green box) and dashed lines are used to place each construct in the context of the locus. OA: other aminergic cells (RIC, RIM, AIM, RIH, CEPs, ADE, PDE, VC4/5) that also share the expression of some 5HT pathway genes. Numbers in brackets represent the coordinates of each construct referred to the ATG. +: >60% GFP positive cells; +/−: 20–60% GFP cells; −: <20% GFP cells. x/y represents the number of lines with the expression pattern (x) from the total lines analyzed (y). n > 60 cells per line. See Figure 4—figure supplement 1 for raw values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Thick black lines symbolize the genomic region placed in front of GFP (green box) and dashed lines are used to place each construct in the context of the locus. White boxes underneath each gene summarize the smallest CRM that drives expression in each serotonergic neuron subclass. Numbers in brackets represent the coordinates of each construct referred to the ATG. Each number represents the % of GFP cells in a particular transgenic line. +: >60% GFP-positive cells; +/−: 20–60% GFP cells; - < 20% GFP cells. n > 60 cells per line.
+
 The observed serotonergic subclass independent regulation of 5HT pathway genes is in sharp contrast with our previous study of the dopaminergic regulatory logic in which all four subclasses of dopaminergic neurons are regulated by the same combination of TFs and through unique CRMs (Doitsidou et al., 2013; Flames and Hobert, 2009). Dopaminergic neuron subclasses are functionally similar (mechanosensory neurons), which may explain why they can share a unique TF combination to select a similar transcriptome. Conversely, the functional and molecular diversity of serotonergic neuron subclasses would require independent TF programs to select diverse terminal transcriptomes.
 
-## HSN transcription factor combination acts directly on target genes
+### HSN transcription factor combination acts directly on target genes
 
 Next, to assess whether the action of the HSN TF combination was direct on the serotonergic regulatory regions, we focused our analyses on the HSN minimal CRMs from the three 5HT pathway genes that showed the strongest phenotypes in our previous mutant analysis: tph-1 (TPH), cat-1 (VMAT) and bas-1 (AADC). We performed site-directed mutagenesis on predicted TFBS in these CRMs and analyzed in vivo the effect of the mutations.
 
 Our analysis, explained in detail below, revealed that all members of the HSN TF combination act directly upon 5HT pathway gene CRMs. Each CRM has a different disposition of TFBS arrangements supporting the flexible function of the HSN TFs. Additionally, we found examples of redundancy between TFBS that provide robustness of expression to the system and whose functionality can only be revealed in the context of smaller CRMs or mutant backgrounds. Notably, redundancy is specific to the CRM architecture as two TFs can act redundantly in one CRM but not in others. Finally, we also found that short HSN CRMs that lack TFBS for some HSN TF members can drive partially penetrant HSN expression, while longer CRMs with functional binding sites for additional members of HSN TFs drive more robust expression. This direct but flexible action of a combination of TFs to directly regulate cell type specification has been previously termed ‘TF collective’ mode of regulation (Junion et al., 2012; Spitz and Furlong, 2012), accordingly, we termed this set of TFs the ‘HSN TF collective’.
 
 The HSN minimal CRM for tph-1 (TPH) (tph-1prom2, Figure 4A) contained predicted binding sites for all six HSN TF members (Figure 5A). In vivo mutation reporter analyses revealed that all except the SPALT- and GATA-binding sites were required for proper tph-1 expression in HSN (Figure 5A and Figure 5—figure supplement 1). SEM-4 (SPALT) is required for ast-1 expression thus its effect on tph-1 expression could be indirect. Paradoxically, egl-18 (GATA) mutants showed defects in tph-1prom2 expression, similar to what was observed for the full-length reporter (Figure 5B). Taking into account that EGL-18 does not regulate the expression of any member of the HSN TF collective, it may act upstream of another unidentified TF to regulate tph-1prom2 expression. Alternatively, EGL-18 may be recruited to the tph-1 promoter even in the absence of functional GATA -binding sites, perhaps through interactions with other members of the HSN TF collective. Similar binding site-independent recruitment of TFs, when combinatorially binding in a TF collective, has been reported for other combinations of TFs (Junion et al., 2012; Uhl et al., 2016).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig5-v3.jpg)
+
+**Figure 5.:** (A) tph-1 minimal HSN CRM (tph-1prom2) mutational analysis. Black crosses represent point mutations to disrupt the corresponding TFBS. +: > 60% of mean wild type construct values; +/−: expression values 60–20% lower than mean wild type expression values; −: values are less than 20% of mean wild type values. n > 60 cells per line. x/y represents the number of lines with the expression pattern (x) from the total lines analyzed (y). See Figure 5—figure supplement 1 for raw values and nature of the mutations and Figure 5—figure supplement 2 for in vitro binding. (B) tph-1prom2::gfp expression is partially affected in egl-18(ok290) mutants. In red, significant defects relative to wild type. n > 100 cells for each genotype. (C) cat-1 minimal HSN CRM (cat-1prom14) mutational analysis. (D) cat-1prom14::gfp expression is unaffected in egl-46 mutants, which coincides with the lack of phenotype when INSM binding sites are mutated in this construct. cat-1prom14::gfp contains functional GATA sites and, as expected, its expression is affected in egl-18 mutants. Expression of a longer reporter (cat-1prom1::gfp) is independent of egl-18 revealing compensatory effects in the context of big regulatory sequences. (E) bas-1 minimal HSN CRM (bas-1prom18) mutational analysis. (F) A longer bas-1 construct (bas-1prom13) is more robustly expressed in HSN (90% expression compared to mean 48% expression of bas-1prom18 reporter lines). This construct contains functional INSM binding sites. (G) bas-1prom18::gfp expression is affected in ast-1(ot417) and egl-18(ok290) mutants. Expression of a longer reporter (bas-1::prom1) is independent of ast-1 and egl-18 revealing compensatory effects in the context of big regulatory sequences. (H) GATA-binding site point mutation does not significantly affect bas-1::gfp expression in the wild type background (no significant difference between mean expression of three lines of bas1prom1 and three lines of bas1prom18). However, it synergizes with ast-1 mutant background leading to a complete loss of GFP expression. These results unravel a direct role for GATA sites in bas-1 gene expression and synergy between egl-18 and ast-1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Each number represents the % of GFP cells in a particular transgenic line. +: > 60% of mean wild type construct expression, +/−: values indicate a penetrance of 20–60% the mean wild type expression value; −: values are less than 20% of mean wild type values. n > 60 cells per line. Above each construct, the wild type consensus sequences are included in capital letters in a longer region context and after the arrow the point mutations are highlighted in red. Related to Figure 5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Purified UNC-86 binds tph-1, cat-1 and bas-1 CRMs in a concentration dependent manner (depicted by arrowheads). UNC-86 binding is aboDlished by point mutation in the POU-binding site (mut lanes). (B) Similarly, purified AST-1 binds to cat-1 and bas-1 CRMs in a concentration-dependent manner (arrowheads). AST-1 binding is lost upon ETS-binding site mutation (mut lanes). (C) Cellular extracts from HEK293T cells overexpressing EGL-18:HIS bind the cat-1 CRM. HIS antibody but not GFP antibody causes a shift in EGL-18:HIS band (compare Shift to Supershift bands) indicating that binding involves EGL-18 protein. Moreover, point mutation of GATA site abolishes cat-1 sequence binding by the cellular extract (mut lanes).
 
 The HSN minimal CRM for cat-1 (VMAT) (cat-1prom14, Figure 4B) also contained predicted binding sites for the HSN TF collective (Figure 5C). Point mutation analyses revealed functionality of all but INSM-binding sites (Figure 5C and Figure 5—figure supplement 1). In agreement with this observation, we found that cat-1prom14 expression does not require EGL-46 (INSM) factor (Figure 5D). However, the penetrance of HSN expression for the minimal cat-1prom14 was much lower than for the full-length reporter (55% versus 100% expression, respectively, Figure 5D). This indicates that additional TFBS outside of the minimal CRM are required to promote robust HSN expression. Indeed, full-length reporter (cat-1prom1) expression was affected in egl-46 mutants (Figure 5D). These results suggest that, although partial expression from cat-1 can be achieved without EGL-46, this TF is required for robust expression in the context of the full cat-1 promoter.
 
@@ -89,11 +137,19 @@ We did not find functional GATA-binding sites in bas-1 CRMs, and egl-18 (GATA) m
 
 Of note, despite the fact that HLH-3 expression is not maintained during adulthood (Figure 2B) we find functional bHLH-binding sites both in tph-1 and in cat-1 CRMs. These results suggest that HLH-3 is directly required to initiate expression of some HSN effector genes. Similar direct action on effector genes has been described for mouse ortholog ASCL1 in the regulation of neuronal differentiation (Raposo et al., 2015).
 
-## HSN TF collective shows enhancer-context dependent synergistic relationships
+### HSN TF collective shows enhancer-context dependent synergistic relationships
 
 Our cis-regulatory analysis revealed compensatory effects among the HSN TF collective, thus, to increase our understanding of the TF collective action, we performed double mutant analysis. We analyzed tph-1, cat-1 and bas-1 reporters because their HSN CRMs contain functionally verified binding sites for all six factors (Figure 5). unc-86 and sem-4 null mutants show complete loss of expression of tph-1, cat-1 and bas-1, thus we used hypomorphic alleles with partial phenotypes for double mutant analysis.
 
 Synergism was the most common effect in our double mutant analysis, although we also found epistatic effects, additivity and suppression (Figure 6, Figure 6—figure supplement 1 and Figure 6—source data 1). We found synergism among different members of the HSN TF collective in their action upon tph-1, cat-1 and bas-1 reporters (Figure 6A–H). Interestingly, the same pair of TFs acting synergistically in the regulation of one reporter can show a different genetic relationship in the regulation of a different gene (Figure 6E–H). For example, while unc-86 acts synergistically with sem-4 and hlh-3 in the regulation of cat-1 expression, it shows additive effects with both TFs in the regulation of tph-1 reporter (Figure 6E,F). Similarly, hlh-3 shows synergy with egl-18 and egl-46 in the regulation of cat-1 and tph-1 respectively, while it is epistatic to egl-18 in the regulation of bas-1 (Figure 6G,H). Reporter specific synergistic effects have been previously described (Doitsidou et al., 2013; Zhang et al., 2014) and are likely a direct consequence of the flexibility of the TF collective mode of action that shows different disposition of functional binding sites in each enhancer. Unexpectedly, hlh-3 mutation suppresses egl-46 phenotype in the regulation of cat-1 expression (Figure 6H). Genetic suppression is an intriguing phenotype that could reflect complex effects of competition for protein-protein interactions. We found additional examples of suppression in our double mutant analysis (Figure 6—figure supplement 1)
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig6-v3.jpg)
+
+**Figure 6.:** (A–H) Double mutant analysis of different pairs of the HSN TF collective. Expression level expected from additive effects (calculated as the product of single mutant expression values) is marked with a dotted line. Double mutant phenotypes statistically different from additive effect (Pearson’s chi-squared test) are classified as synergistic (if phenotype is stronger than additive), epistatic (if phenotype is similar to one of the single mutants) or suppression (if phenotype is milder than the expected for additivity or the single mutants). The majority of the double mutant combinations show synergistic effects. n > 100 cells each genotype. See Figure 6—figure supplement 1 and Figure 6—source data 1 for raw values, statistics and additional double mutant combinations. (I) Cis-trans mutant analysis. TFBS mutations are combined with single mutants of the HSN TF collective. n > 100 cells each genotype. See Figure 6—source data 1 raw values and statistics.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) TFBS whose mutation leads to partial or no defects on gene expression were combined in double TFBS mutations. Combined mutations are epistatic to single TFBS mutation effects. (B) Two additional examples of HSN TF collective double mutants that show genetic suppression. (C) Summary of the HSN TF collective pairs in which we were able to identify synergistic effects. See Figure 6—source data 1 for raw values and statistics.
 
 The HSN TF collective has pleiotropic functions. To try to avoid pleiotropic effects, we took advantage of our cis-regulatory data to perform combinations of TFBS mutations. To check for TFBS interactions, our analysis was limited to those sites which mutations produced only partial defects (Figure 5). We tested three out of the four possible combined TFBS mutations; however, none of these constructs showed synergistic effects (Figure 6—figure supplement 1). Interestingly, double cis SPALT- and GATA- BS mutations do not show synergy in the context of the minimal tph-1 CRM despite the synergistic effect observed for sem-4, egl-18 double mutants in the regulation of tph-1 full length reporter. As these two factors do not regulate each other's expression (Figure 3B), it is possible that TFBS mutations are more easily compensated than mutations in the corresponding trans-activating factors.
 
@@ -101,9 +157,25 @@ As we were limited by the lack of additional BS mutations with partial effects, 
 
 Altogether, the emerging picture is that of a joint action of the HSN TF collective upon their direct target genes. This regulation is flexible and often partially redundant showing synergistic relationships among different members of the HSN TF collective. Importantly, specific relationships and dependencies are determined by the CRM context and by the specific TF pairs tested.
 
-## The HSN regulatory signature allows de novo identification of HSN expressed genes
+### The HSN regulatory signature allows de novo identification of HSN expressed genes
 
 Our results suggest that the HSN TF collective is required for broad activation of HSN effector genes (and not only for 5HT pathway gene expression) (Figure 1) and it acts directly on the regulatory regions of their target genes (Figure 5). Since the members of the HSN TF collective belong to six different TF families that recognize very different binding sites (Figure 7A), we wondered whether the clustering of binding sites for the HSN TF collective in regulatory regions of HSN effector genes might confer sufficient specificity to impose a defining regulatory signature.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig7-v3.jpg)
+
+**Figure 7.:** (A) Position weight matrix logos of the HSN TF collective calculated from the functional binding sites in Figure 5. (B) HSN regulatory signature is more prevalent in the set of 96 known HSN expressed genes (yellow dot) compared to the distribution in 10,000 sets of random comparable genes (grey violin plot) (p<0.05). Considering phylogenetic conservation of HSN regulatory signature increases the enrichment of the HSN regulatory signature in the HSN expressed genes (p<0.01). See also Figure 7—figure supplement 1 for additional data. (C) HSN regulatory signature is enriched in neuronal genes compared to the non-neuronal genome. Inclusion of the conservation criteria in the HSN regulatory signature analysis strongly increases the difference between neuronal and non-neuronal genome. Pearson’s chi-squared test. ***p-value<0.0001. See also Figure 7—figure supplement 2 for additional data. (D) Gene ontology analysis of genes with HSN regulatory signature. p-values and number of genes corresponding to the biological processes enriched in genes with HSN regulatory signature. (E) Four representative examples of de novo identified HSN active enhancers. Black lines represent the coordinates covered by bioinformatically predicted HSN regulatory signature windows (indicated by ‘w’ and a number). Green lines mark the region used in our analysis. Dark blue bar profiles represent sequence conservation in C. briggsae, C. brenneri, C. remanei and C. japonica. n > 60 cells per line. See Figure 7—source data 1 for a list of all reporters and raw scoring data. Expression level of most of these reporters is regulated by unc-86 (Figure 7—figure supplement 3).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) No significant difference was found in the functional distribution of all HSN expressed genes compared tothe subset og genes with HSN regulatory signature or HSN expressed genes with conserved signature (chi-squared test computing p-values by Monte Carlo simulation p-value=0.59). (B) Reporter analysis to test functionality of HSN signature windows in HSN expressed genes. Black lines represent the coordinates covered by bioinformatically predicted HSN signature windows (indicated by w and a number). Light blue lines indicate the published reporter construct(PMID:18408008, PMID: 15177025, PMID: 10926783 and PMID:19675228) . Green lines mark the region used in our analysis. Dark blue bar profiles represent sequence conservation in C. briggsae, C. brenneri, C. remanei and C. japonica. See Figure 7—source data 1 for a list of all reporters and raw scoring data.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) HSN regulatory signature distribution in HSN expressed gene set (yellow dot) compared to 10,000 random sets of genes (grey violin plot). HSN signature windows with all six types of motifs (6-motif regulatory signature) are more prevalent in HSN expressed genes compared to random sets but this difference is not present when analyzing windows with only five types or four types of motifs (5-motif and 4-motif regulatory signature). (B) 5-motif and 4-motif regulatory signature is not preferentially found in HSN expressed genes even after filtering for conservation. (C) Genome distribution of 6-motif HSN regulatory signature windows compared to the signature distribution considering windows with five or more different types of motifs and windows with four or more types of motifs. Distribution of windows with six different motifs shows the highest enrichment in neuronal genes compared to the rest of the genome. (D) After filtering for conservation 6-motif windows still show the strongest bias towards neuronal genome. (E) Comparative GO term analysis of genes with 6-motif, >5-motif or >4-motif HSN regulatory signature. 6-motif signature distribution is associated with neuronal functions related to HSN while new GO terms identified by including >5-motif or >4-motif HSN windows are not related to neuronal functions.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** Expression of HSN regulatory window reporter constructs is affected in unc-86(n846) mutants. Reporter constructs with onset of expression at larval L4 are more dependent on unc-86 function than constructs already expressed at earlier stages. n > 100 cells per condition. Fisher's exact test, *: p-value<0.05.
 
 There are 96 genes known to be expressed in the HSN neuron (Supplementary file 2) (Hobert et al., 2016), excluding pan-neuronal features which are regulated in a very redundant manner (Stefanakis et al., 2015). We analyzed upstream and intronic sequences of HSN expressed genes in search of DNA windows (up to 700 bp length) containing at least one position weight matrix match for all six members of the HSN TF collective (termed the ‘HSN regulatory signature’) (Figure 7A). We found that known HSN expressed genes contained large upstream and intronic sequences, thus, for comparison purposes, we built ten thousand sets of 96 random genes with similar upstream and intronic length distribution. A significantly higher percentage of HSN expressed genes contain the HSN regulatory signature compared to the random sets of genes (p<0.05) (Figure 7B, Figure 7—source data 1).
 
@@ -121,13 +193,365 @@ Finally, to analyze if the activity of the identified HSN regulatory windows was
 
 Our results reveal that the presence of a conserved HSN regulatory signature can be successfully used to de novo identify HSN expressed genes. However, our high level of false positives (63%) indicates that the signature itself is not sufficient to induce HSN expression. Additional TFs might be part of the HSN TF collective and thus active HSN regulatory signature windows would contain additional TFBS. Repressive elements or chromatin accessibility could also block HSN expression of non-functional HSN regulatory signature windows, indeed members of the SWI/SNF chromatin remodeling complex are required for correct HSN terminal differentiation (Weinberg et al., 2013). It is also possible that specific syntactic rules (TFBS order, distance and disposition) discriminate functional from non-functional HSN regulatory signature windows. Future studies will help identify additional players and rules for HSN terminal differentiation.
 
-## Deep homology between HSN and mouse raphe serotonergic neurons
+### Deep homology between HSN and mouse raphe serotonergic neurons
 
 Mouse orthologs for four out of the six TFs of the HSN TF collective are involved in mammalian serotonergic specification: ASCL1 (bHLH TF ortholog of HLH-3) (Pattyn et al., 2004), GATA2/3 (GATA TF ortholog of EGL-18) (Haugas et al., 2016), INSM1 (Zn Finger Insm TF ortholog of EGL-46) (Jacob et al., 2009) and PET1 (ETS TF ortholog of AST-1) (Hendricks et al., 2003). Additionally, BRN2 (also known as POU3F2, a POU TF from the same family that UNC-86) has been associated with serotonergic specification, although its expression in serotonergic neurons has not been studied (Nasu et al., 2014). We analyzed BRN2 expression in serotonergic differentiating neurons and found it expressed in serotonergic progenitors and serotonergic newborn neurons at embryonic stage E11.5, when serotonergic neurons are differentiating (Figure 8A and B). Finally, SALL2 is the closest mouse ortholog for C. elegans SEM-4, but there is no known role for any SALL TFs in serotonergic specification. We found that SALL2 is also expressed in serotonergic progenitors and serotonergic newborn neurons at embryonic stage E11.5 (Figure 8A and C).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig8-v3.jpg)
+
+**Figure 8.:** (A) Micrograph of mouse embryonic day 11.5 hindbrain coronal section with DAPI staining. Square box indicates the region in A', B and C panels. VZ: ventricular zone, where progenitors are located. Scale bar: 100 μm. (B) BRN2 and 5HT co-staining. BRN2 is expressed in progenitors and differentiating serotonergic neurons. Arrowheads indicate double labeled cells. Scale bar: 20 μm. (C) SALL2 and 5HT co-staining. SALL2 is expressed in progenitors and differentiating serotonergic neurons. Arrowheads indicate double labeled cells. Scale bar: 20 μm. (D) Hierarchical clustering analysis of C. elegans neuron expression profiles with mouse serotonergic raphe neurons shows that HSN (in green) is closest to mouse serotonergic neurons (in blue). Other C. elegans serotonergic neuron classes (ADF and NSM in red) do not show a close relationship with mouse serotonergic raphe. R1D: Dorsal serotonergic neurons from rhombomere r1; R1M: Medial serotonergic neurons from rhombomere r1; R2: serotonergic neurons from rhombomere r2; R3: serotonergic neurons from rhombomere r3; R5: serotonergic neurons from rhombomere r5; R6: serotonergic neurons from rhombomere r6. See also Figure 8—figure supplement 1. (E) Micrographs showing tph-1::gfp expression in wild type animals, ast-1(ot417) mutants, and ast-1(ot417) mutants rescued with ast-1 cDNA or mouse Pet1 cDNA expressed under the bas-1 promoter whose expression in not affected in this mutant background. (F) Quantification of tph-1::gfp HSN expression rescue of different HSN TF collective mutants with worm and mouse ortholog cDNAs. n > 100 cells per condition. Fisher's exact test, *: p-value<0.05. ‘L’ indicates the transgenic line number.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32785/elife-32785-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) pvclust was performed after removing 5HT pathway genes (cat-1, tph-1, bas-1 and cat-4) from the HSN to show that proximity between HSN and mouse raphe is not only due to 5HT pathway genes. (B) Clustering of worm neurons and mouse non-serotonergic control regions [cortical neurons from (Molyneaux et al., 2015) show that HSN expression data cluster with raphe transcriptome is specific as it does not occur with other mouse transcriptomic data. P1_cpn: Postnatal day 1 cortical projection neurons; P1_corticothal: Postnatal day 1 cortical thalamic neurons; P1_subcereb: Postnatal day 1 cortical subcerebral neurons. (C) 100 simulated 'HSN-like' neurons were obtained by assigning to each one the four 5HT pathway genes (cat-1, tph-1, bas-1 and cat-4) and 92 additional genes at random. None of these random profiles shows close proximity to the Raphe mouse neurons.
 
 In evolutionary biology, the term deep homology refers to the relationship between two structures that share the genetic mechanisms governing their differentiation (Shubin et al., 1997). As C. elegans HSN and mouse raphe serotonergic neurons share many of the TFs required for their differentiation, we hypothesized that they might be homologous structures. If this were the case, then HSN neurons and mouse serotonergic raphe should not merely share the expression of 5HT pathway genes, which are also present in the other C. elegans serotonergic neuron classes, but also be more broadly similar in molecular terms.
 
 To address this, we used available gene expression data from the WormBase to generate partial expression profiles for the 118 neuronal classes of the C. elegans hermaphrodite. This partial expression profile can be successfully used to reproduce the anatomical classification of C. elegans neuron subtypes (Hobert et al., 2016). We assigned mouse orthologs to C. elegans neuronal genes and merged the resulting table with another one featuring the available mouse raphe serotonergic neuron transcriptome (Okaty et al., 2015). Hierarchical clustering of this data set shows that HSN is, molecularly, the closest neuron to the mouse raphe neurons (Figure 8D). Importantly, hierarchical clustering generated from mouse orthologs of C. elegans genes resembles the neuron class clustering generated directly from C. elegans genes (Hobert et al., 2016). HSN and mouse raphe close relationship is not merely due to 5HT pathway genes expression because NSM and ADF serotonergic neurons are molecularly more distant to the mouse raphe serotonergic neurons than HSN (Figure 8D and Source Data 5). Moreover, HSN remained the most similar neuron to mouse serotonergic raphe neurons even after removing the 5HT pathway genes from the HSN expression profile (Figure 8—figure supplement 1). Shared orthologous genes between HSN and mouse raphe serotonergic neurons belong to different functional categories including axon guidance and migration, neurotransmission, or transcriptional regulation (Table 1). Importantly, HSN proximity to mouse serotonergic neurons was not maintained with other mouse neuronal populations (Figure 8—figure supplement 1).
+
+**Table 1.**
+ C. elegans HSN and mouse raphe serotonergic neuron homology
+
+
+<table>
+  <thead>
+    <tr>
+      <th>C. elegans gene name</th>
+      <th>Description</th>
+      <th>Mammalian gene name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Serotonergic biosynthetic pathway</td>
+    </tr>
+    <tr>
+      <td>bas-1 a</td>
+      <td>Dopamine decarboxylase</td>
+      <td>Ddc</td>
+    </tr>
+    <tr>
+      <td>cat-1a</td>
+      <td>Vesicular monoamine transporter</td>
+      <td>Slc18a2</td>
+    </tr>
+    <tr>
+      <td>cat-4</td>
+      <td>GTP cyclohydrolase 1</td>
+      <td>Gch1</td>
+    </tr>
+    <tr>
+      <td>tph-1 a</td>
+      <td>Tryptophan hydroxylase</td>
+      <td>Tph2</td>
+    </tr>
+    <tr>
+      <td colspan="3">Axon guidance and Migration</td>
+    </tr>
+    <tr>
+      <td>ebax-1 a</td>
+      <td>Elongin-B/C E3 ligase</td>
+      <td>Zswim5/6/8</td>
+    </tr>
+    <tr>
+      <td>egl-43 a</td>
+      <td>PR domain containing</td>
+      <td>Prdm16</td>
+    </tr>
+    <tr>
+      <td>fmi-1</td>
+      <td>Flamingo homolog</td>
+      <td>Celsr2/3, Fat1/3, Dchs1</td>
+    </tr>
+    <tr>
+      <td>madd-2 a</td>
+      <td>Trim protein</td>
+      <td>Trim9/36/46, Fsd1/1 l, Mid2</td>
+    </tr>
+    <tr>
+      <td>mau-2 a</td>
+      <td>Chromatid cohesion factor</td>
+      <td>Mau2</td>
+    </tr>
+    <tr>
+      <td>mig-10 a</td>
+      <td>Protein with an RA-like, PH domains and proline-rich motif</td>
+      <td>Raph1, Grb10</td>
+    </tr>
+    <tr>
+      <td>nck-1</td>
+      <td>SH2/SH3 domain-containing protein</td>
+      <td>Nck1</td>
+    </tr>
+    <tr>
+      <td>rig-6 a</td>
+      <td>neuronal IgCAM</td>
+      <td>Cntn1, 2, 3, 4, 5, 6</td>
+    </tr>
+    <tr>
+      <td>tbb-4 a</td>
+      <td>Tubulin</td>
+      <td>Tubb2a/2b/4a/4b/5</td>
+    </tr>
+    <tr>
+      <td>unc-40 a</td>
+      <td>Netrin receptor</td>
+      <td>Dcc, Neo1</td>
+    </tr>
+    <tr>
+      <td>unc-51 a</td>
+      <td>Serine/threonine protein kinase</td>
+      <td>Ulk1/2</td>
+    </tr>
+    <tr>
+      <td>unc-53 a</td>
+      <td>Neuron navigator</td>
+      <td>Nav1/2/3</td>
+    </tr>
+    <tr>
+      <td colspan="3">Neurotransmission/Synaptogenesis</td>
+    </tr>
+    <tr>
+      <td>abts-1 a</td>
+      <td>Anion/Bicarbonate Transporter family</td>
+      <td>Slc4a7/8/10</td>
+    </tr>
+    <tr>
+      <td>clh-3</td>
+      <td>Voltage sensitive cloride channel</td>
+      <td>Clcn2</td>
+    </tr>
+    <tr>
+      <td>eat-16</td>
+      <td>Regulator of G protein signaling</td>
+      <td>Rgs11/19</td>
+    </tr>
+    <tr>
+      <td>gar-2 a</td>
+      <td>G-protein-coupled acetylcholine receptor</td>
+      <td>Hrh3</td>
+    </tr>
+    <tr>
+      <td>ggr-2 a</td>
+      <td>GABA/Glycine Receptor</td>
+      <td>Glra1/2, Glrb</td>
+    </tr>
+    <tr>
+      <td>glr-5 a</td>
+      <td>Glu Receptor</td>
+      <td>Grid1/2, Grik1</td>
+    </tr>
+    <tr>
+      <td>gsa-1 a</td>
+      <td>G protein, Subunit Alpha</td>
+      <td>Gnal, Gnas</td>
+    </tr>
+    <tr>
+      <td>ida-1 a</td>
+      <td>Protein tyrosine phosphatase-like receptor</td>
+      <td>Ptprn, Ptpm2</td>
+    </tr>
+    <tr>
+      <td>irk-1 a</td>
+      <td>Inward Rectifying K (potassium) channel family</td>
+      <td>Kcnj3/5/6/9/11/16/</td>
+    </tr>
+    <tr>
+      <td>kcc-2 a</td>
+      <td>K/Cl cotransporter</td>
+      <td>Slc12a5/6</td>
+    </tr>
+    <tr>
+      <td>mpz-1 a</td>
+      <td>Multiple PDZ domain protein</td>
+      <td>Mpdz, Pdzd2, Inadl, Lnx1</td>
+    </tr>
+    <tr>
+      <td>nhx-5</td>
+      <td>Na/H exchanger</td>
+      <td>Slc9a6/7/9</td>
+    </tr>
+    <tr>
+      <td>nid-1 a</td>
+      <td>Nidogen (basement membrane protein)</td>
+      <td>Lrp1/1b</td>
+    </tr>
+    <tr>
+      <td>nra-4</td>
+      <td>Nicotinic Receptor Associated</td>
+      <td>Nomo1</td>
+    </tr>
+    <tr>
+      <td>rsy-1</td>
+      <td>Regulator of synapse formation</td>
+      <td>Pnisr</td>
+    </tr>
+    <tr>
+      <td>syg-1 a</td>
+      <td>Ig transmembrane protein</td>
+      <td>Kirrel, Kirrel3</td>
+    </tr>
+    <tr>
+      <td>nlg-1 a</td>
+      <td>Neuroligin family</td>
+      <td>Nlg1/2/3</td>
+    </tr>
+    <tr>
+      <td>unc-2 a</td>
+      <td>Calcium channel alpha subunit</td>
+      <td>Cacna1a/1b/1e</td>
+    </tr>
+    <tr>
+      <td>unc-77</td>
+      <td>Voltage-insensitive cation leak channel</td>
+      <td>Nalcn</td>
+    </tr>
+    <tr>
+      <td>unc-103 a</td>
+      <td>K + channel</td>
+      <td>Kcnh2/7</td>
+    </tr>
+    <tr>
+      <td colspan="3">Transcriptional regulation</td>
+    </tr>
+    <tr>
+      <td>ceh-20 a</td>
+      <td>PBX TF</td>
+      <td>Pbx1/2/3</td>
+    </tr>
+    <tr>
+      <td>egl-44 a</td>
+      <td>TEA domain TF</td>
+      <td>Tead1</td>
+    </tr>
+    <tr>
+      <td>gei-8</td>
+      <td>Nuclear receptor co-repressor</td>
+      <td>Ncor1</td>
+    </tr>
+    <tr>
+      <td>hlh-3 a</td>
+      <td>bHLH TF</td>
+      <td>Ascl1</td>
+    </tr>
+    <tr>
+      <td>ife-4 a</td>
+      <td>Initiation factor 4E</td>
+      <td>Eif4e2</td>
+    </tr>
+    <tr>
+      <td>sem-4 a</td>
+      <td>Spalt TF</td>
+      <td>Sall2,Zfp236/Znf236</td>
+    </tr>
+    <tr>
+      <td colspan="3">Morphogenetic pathways</td>
+    </tr>
+    <tr>
+      <td>dsh-1 a</td>
+      <td>Homolog of disheveled</td>
+      <td>Dvl1/3</td>
+    </tr>
+    <tr>
+      <td>plr-1 a</td>
+      <td>Ring finger protein</td>
+      <td>Rnf215</td>
+    </tr>
+    <tr>
+      <td>prkl-1 a</td>
+      <td>Drosophila Prickle homolog</td>
+      <td>Prickle1/2</td>
+    </tr>
+    <tr>
+      <td>sel-10 a</td>
+      <td>Suppressor/Enhancer of Lin-12(Notch)</td>
+      <td>Fbxw7</td>
+    </tr>
+    <tr>
+      <td colspan="3">Others</td>
+    </tr>
+    <tr>
+      <td>aak-2 a</td>
+      <td>AMP-activated protein kinases</td>
+      <td>Prkaa1/2</td>
+    </tr>
+    <tr>
+      <td>ags-3</td>
+      <td>G protein singalling modulator</td>
+      <td>Gpsm1</td>
+    </tr>
+    <tr>
+      <td>aho-3 a</td>
+      <td>Hydrolase</td>
+      <td>Abhd17a/17b</td>
+    </tr>
+    <tr>
+      <td>ari-1</td>
+      <td>Ubiquitin-protein transferase</td>
+      <td>Arih1</td>
+    </tr>
+    <tr>
+      <td>arr-1</td>
+      <td>G protein singaling adaptor</td>
+      <td>Arrb1/2</td>
+    </tr>
+    <tr>
+      <td>arrd-17 a</td>
+      <td>Arrestin domain protein</td>
+      <td>Arrdc3</td>
+    </tr>
+    <tr>
+      <td>baz-2</td>
+      <td>Bromodomain adjacent to zinc finger domain</td>
+      <td>Baz2a/2b</td>
+    </tr>
+    <tr>
+      <td>elpc-1</td>
+      <td>Elongator complex protein component</td>
+      <td>Ikbkap</td>
+    </tr>
+    <tr>
+      <td>elpc-3</td>
+      <td>Elongator complex protein component</td>
+      <td>Elp3</td>
+    </tr>
+    <tr>
+      <td>goa-1 a</td>
+      <td>G protein,O, Alpha subunit</td>
+      <td>Gnao1</td>
+    </tr>
+    <tr>
+      <td>kin-20</td>
+      <td>Protein kinase</td>
+      <td>Csnk1d/1e</td>
+    </tr>
+    <tr>
+      <td>puf-9</td>
+      <td>Pumilio/FBF domain-containing</td>
+      <td>Pum1/2</td>
+    </tr>
+    <tr>
+      <td>pxf-1 a</td>
+      <td>Rap guanine nucleotide exchange factor</td>
+      <td>Rapgef2/6</td>
+    </tr>
+    <tr>
+      <td>rep-1</td>
+      <td>Rab escort protein</td>
+      <td>Chm, Chml</td>
+    </tr>
+    <tr>
+      <td>ten-1 a</td>
+      <td>Type II transmembrane EGF-like repeats</td>
+      <td>Tenm1/3/4</td>
+    </tr>
+    <tr>
+      <td>top-1 a a : gene with assigned HSN regulatory signature</td>
+      <td>Topoisomerase</td>
+      <td>Top1/1mt</td>
+    </tr>
+  </tbody>
+</table>
 
 Finally, to test if there is deep homology between HSN and mouse raphe serotonergic neurons, we tested if mouse orthologs of the HSN TF collective can functionally substitute for their worm counterparts. We performed cell-specific rescue experiments of C. elegans mutants and found that mouse Pet1, Ascl1, Insm1, Gata2 and Sall2 could respectively substitute ast-1, hlh-3, egl-46, egl-18 and sem-4, which suggest that this regulatory program could be phylogenetically conserved (Figure 8E and F). Of note, our rescue experiments, both with C. elegans or mouse genes, restore tph-1 expression but do not rescue egg-laying defects. The HSN TF collective has pleiotropic actions in other tissues that also contribute to the egg laying phenotype (Basson and Horvitz, 1996; Doonan et al., 2008; Eisenmann and Kim, 2000; Koh et al., 2002) what could explain the persistence of egg-laying defects in the HSN specific rescue experiments.
 
@@ -137,17 +561,17 @@ In sum, these results revealed an unexpected level of regulatory and molecular p
 
 Our extensive analysis of the HSN regulatory logic has revealed insights into how the complement of cell-type-specific enhancers is selected. We found that numerous TFs (here we identify six but likely additional TFs are required) act in conjunction to directly activate the HSN regulatory landscape. HSN TF collective acts through the HSN regulatory signature, which is found preferentially associated to genes of the neuronal genome that are related to HSN function.
 
-## Regulation of C. elegans neuron specification is unexpectedly complex
+### Regulation of C. elegans neuron specification is unexpectedly complex
 
 Neuronal terminal differentiation programs have been best characterized in C. elegans. So far, relatively simple TF combinations, composed of two or three members, were shown to be required, and in some contexts sufficient, to select specific neuronal types. These TFs have been termed Terminal Selectors (Doitsidou et al., 2013; Serrano-Saiz et al., 2013; Van Buskirk and Sternberg, 2010; Zhang et al., 2002). In some cases, additional TFs act together with Terminal Selectors to partially modulate the transcriptomes of specific neuronal subclasses (Kerk et al., 2017; Kratsios et al., 2017). Accordingly, it has been suggested that, in C. elegans, a rather simple organization of CRMs control the expression of neuronal terminal features (Holmberg and Perlmann, 2012). Our results, however, demonstrate a more complex scenario in the regulation of the HSN transcriptome. We have identified six TFs required for HSN terminal differentiation acting directly upon the regulatory regions of HSN expressed genes. Nonetheless, additional unidentified factors are likely to compose the HSN TF collective. We found that the HSN TF collective includes a proneural TF (hlh-3) that is required to initiate HSN differentiation but whose expression, like all proneural factors (Guillemot and Hassan, 2017), is not maintained in the mature neuron. Future experiments should determine if, as has been proven for its mouse ortholog Ascl1 (Wapinski et al., 2013), hlh-3 acts as a pioneer factor for HSN terminal differentiation. In light of our findings, nematode neuronal terminal differentiation programs are not necessarily simpler than those found in vertebrates, as previously proposed (Holmberg and Perlmann, 2012).
 
 Considering the technical advantages of C. elegans as a simple model system, our work is an example on how its study may help to identify rules of terminal differentiation in eumetazoa. The combination of our extensive cis-regulatory analysis and the double mutant characterization allowed us to describe the flexible action of the HSN TF collective that can activate enhancers with very different dispositions of TFBS. This flexibility is also made evident by the specific synergistic relationships in the regulation of some enhancers and not others. We propose that these redundant actions, globally considered, confer robustness of expression to the system.
 
-## The HSN regulatory signature identifies HSN expressed genes
+### The HSN regulatory signature identifies HSN expressed genes
 
 Co-binding of specific combinations of TFs to the same genomic region, assessed by ChIP-seq, has been successfully used to identify, de novo, cell-type-specific enhancers in Drosophila embryos (Busser et al., 2015; Junion et al., 2012; Zinzen et al., 2009). However, this approach fails to address why specific genomic regions work as enhancers. Recently, massively parallel reporter assays (MPRA) have been used to identify generic rules of enhancer function. The analysis of synthetic enhancers revealed that highest levels of expression are achieved with clusters of binding sites for different TFs (Smith et al., 2013). Another MPRA study has analyzed enhancer activity of regions bound by the adipocyte terminal selector PPARγ and has determined that the best predictor for enhancer functionality is the presence of nearby TFBS for more than 30 different TFs expressed in adipocytes (Grossman et al., 2017). In accordance to this complex scenario of combinatorial action of multiple TFs in the global selection of cell type regulatory landscapes, we found that clusters of bioinformatically predicted TFBS for the HSN TF collective can be used for the de novo identification of HSN enhancers. Of note, our analysis still shows a high rate of false positives, which suggests that additional features are present in HSN functional enhancers. Future analyses based on more complex paradigms should facilitate the identification of such features that could include additional TFBS (or the absence of repressor sites) or specific syntactic rules.
 
-## Deep homology, molecular homology and functional homology between C. elegans HSN and mouse serotonergic neurons
+### Deep homology, molecular homology and functional homology between C. elegans HSN and mouse serotonergic neurons
 
 The diversity of C. elegans serotonergic neuronal classes (NSM, ADF and HSN) contrasts with that of tetrapod vertebrates, in which serotonergic neurons are limited to the raphe system (Flames and Hobert, 2011). Other chordates contain additional serotonergic populations (Flames and Hobert, 2011) and serotonergic subclass diversity is also prevalent in other phyla such as arthropoda and mollusca (Flames and Hobert, 2011), which suggests a loss of serotonergic diversity in the tetrapod branch. As in nematodes, serotonergic subclass specification in other organisms is likely to be independently regulated. For instance, in Drosophila, the TFs islet, hunchback and engrailed are required for serotonergic specification of the ventral ganglion, while are dispensable for fly brain serotonergic specification (Lundell et al., 1996; Thor and Thomas, 1997). Similarly, in zebrafish, Pet1 regulates raphe serotonergic specification but is dispensable for the specification of other serotonergic subclasses (Lillesaar et al., 2007).
 
@@ -159,35 +583,369 @@ Deep homology of specific nervous system structures has been previously proposed
 
 ## Materials and methods
 
-## C. elegans strains and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>C. elegans: Strain N2</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>WormBase: N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>Strain names and genotypes</td>
+      <td>Supplementary file 3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C57Bl/6JRccHsd strain</td>
+      <td>ENVIGO, Harlan. (Huntingdon, Cambridgeshire, UK)</td>
+      <td>C57Bl/6JRccHsd</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Strain OP50</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>OP50</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2(DE3) Singles Competent Cells: BL21 derivatives</td>
+      <td>Novagen, Merck Group. (Darmstadt, Germany)</td>
+      <td>Cat#71400</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Strain: HT115(DE3)</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>HT115</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Human: HEK293T</td>
+      <td>Laboratory of Oliver Hobert</td>
+      <td>ATCC: CRL-3216</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (C.elegans)</td>
+      <td>Plasmid: pCDNA3-egl-18</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GFP IgG1K</td>
+      <td>Sigma Aldrich, Merck Group. (Darmstadt, Germany)</td>
+      <td>Cat#11814460001</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6X His tag antibody [HIS.H8]</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>Cat#ab18184</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-5HT</td>
+      <td>Sigma Aldrich</td>
+      <td>S5545</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-5HT</td>
+      <td>Abcam</td>
+      <td>Ab66047</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Sall2</td>
+      <td>Sigma Aldrich</td>
+      <td>sc-6029</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555-conjugated donkey anti-rabbit</td>
+      <td>Molecular Probes, Invitrogen (Eugene, OR)</td>
+      <td>A-31572</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555-conjugated donkey anti-goat</td>
+      <td>Molecular Probes</td>
+      <td>A-21432</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated donkey anti-rabbit</td>
+      <td>Molecular Probes</td>
+      <td>A-21206</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated donkey anti-goat</td>
+      <td>Molecular Probes</td>
+      <td>A-11055</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pPD95.75</td>
+      <td>Dr Oliver Hobert Laboratory</td>
+      <td>Addgene Plasmid #1494</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pRF4 (rol-6 (su1006))</td>
+      <td>(Mello et al., 1991)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: ttx-3prom::mcherry</td>
+      <td>(Bertrand and Hobert, 2009)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pBluescript</td>
+      <td>Dr Oliver Hobert Laboratory</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pJJR82</td>
+      <td>Dr Mike Boxem Laboratory</td>
+      <td>Addgene #75027</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pDD162</td>
+      <td>Dr Mike Boxem Laboratory</td>
+      <td>Addgene #4754</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pDD268</td>
+      <td>(Dickinson et al., 2015)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pJW1219</td>
+      <td>(Ward, 2015)</td>
+      <td>Addgene # #61250</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pCFJ90</td>
+      <td>Dr Mike Boxem Laboratory</td>
+      <td>Addgene #19328</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid pPD129.36 (L4440)</td>
+      <td>Dr Andrew Fire Laboratory</td>
+      <td>Addgene #1654</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pET-21b-ast-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pET-21b-unc-86</td>
+      <td>(Zhang et al., 2014)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: HSNearlyprom::ast-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: HSNearlyprom::hlh-3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: HSNearlyprom::ast-1, HSNearlyprom::hlh-3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: bas-1prom::ast-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: bas-1prom::Pet1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: cat-4prom::hlh-3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: cat-4prom::Ascl-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: cat-4prom::egl-46</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: cat-4prom::Insm1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: cat-4prom::Gata2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: kal-1prom::Sall2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oligonucleotides</td>
+      <td>Supplementary file 4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HisTrap HP Column</td>
+      <td>GE Healthcare Life Sciences (Marlborough, MA)</td>
+      <td>Cat#17-5248-01</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange XL Site-Directed Mutagenesis Kit</td>
+      <td>Agilent (Santa Clara, CA)</td>
+      <td>Cat# 200516</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EasyTides Adenosine 5'-triphosphate (ATP [γ−32P])</td>
+      <td>Perkin Elmer (Waltham, MA)</td>
+      <td>Cat#NEG502A250UC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Power Broth Medium</td>
+      <td>Molecular Dimensions (Maumee, OA)</td>
+      <td>Cat#MD12-106-1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen (Carlsbad, CA)</td>
+      <td>Cat#11668027</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropyl-β-D-thiogalactopyranoside (IPTG)</td>
+      <td>Acros Organics, ThermoFisher Scientific (Waltman, MA)</td>
+      <td>Cat#BP1755-100</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type IV</td>
+      <td>Sigma Aldrich</td>
+      <td>C-5138</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FluorSaveReagent</td>
+      <td>Merck Millipore (Darmstadt, Germany)</td>
+      <td>345789–20 ML</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gorilla</td>
+      <td>(Eden et al., 2009)</td>
+      <td>http://cbl-gorilla.cs.technion.ac.il</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>(Team, 2016)</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor</td>
+      <td>(Huber et al., 2015)</td>
+      <td>https://www.bioconductor.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pvclust (R package)</td>
+      <td>(Suzuki and Shimodaira, 2006)</td>
+      <td>www.sigmath.es.osaka-u.ac.jp/shimo-lab/prog/pvclust</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and genetics
 
 C. elegans culture and genetics were performed as described (Brenner, 1974). Strains used in this study are listed in Supplementary file 3.
 
-## Mouse samples
+### Mouse samples
 
 Animals of C57Bl/6JRccHsd genetic background were housed in an animal care facility with a 12 hr dark/light cycle and had free access to food and water. All experiments were performed according to the animal care guidelines of the European Community Council (86 ⁄ 609 ⁄ EEC) and to Spanish regulations (RD1201 ⁄ 2005), following protocols approved by the ethics committees of the Consejo Superior Investigaciones Científicas (CSIC).
 
-## Generation of C. elegans transgenic lines
+### Generation of C. elegans transgenic lines
 
 Gene constructs for cis-regulatory analyses were generated by cloning into the pPD95.75 vector. For the identification of the putative binding sites the following consensus sequences were used: ETS: CGGAWR (Wyler et al., 2016), GATA: GATA (Merika and Orkin, 1993); HLH: CAGAA/ACGTG MatInspector Software (Cartharius et al., 2005); INSM: KNNWGSGG (Breslin et al., 2002); SPALT: TTGTST (Toker AS 2003) and MatInspector Software (Cartharius et al., 2005); POU: WTKCAT (Weirauch et al., 2014) and (Sze et al., 2002). Mutagenesis was performed by Quickchange II XL site-directed mutagenesis kit (Stratagene, Santa Clara, CA). Reporters for HSN regulatory signature analysis were generated by fusion PCR (Hobert, 2002). Generated strains and primers are listed in the Supplementary file 3 and 4. For hlh-3 mutant rescue experiments, the entire coding sequence of hlh-3 was cloned in front of the heat shock inducible promoter (hsp16-2). The transgenic DNA mix was composed by hlh-3 cDNA (50 ng/µl), together with the co-injection markers rol-6(su1006) (50 ng/µl) and ttx-3::mCherry (50 ng/µl). For HSN precocious maturation experiments, cDNAs of ast-1 and hlh-3 were amplified by PCR and cloned in front of an HSN-specific promoter that drives early expression in the HSN (see promoter sequence below) and the transgenic DNA mix concentrations were the same as above. When both cDNAs were co-injected, we used 25 ng/µl for co-injection markers. For rescue experiments, cDNAs corresponding to the entire coding sequence of ast-1, hlh-3, egl-46, Pet1, Ascl1, Insm1, Sall2 and Gata2 were amplified by PCR and cloned in front of cell-specific promoters: bas-1prom, cat-4prom and kal-1prom (primers in Supplementary file 4). The transgenic DNA mix was composed by the DNA of interest [ast-1 (50 ng/µl in HSN early maturation experiments and 5 ng/µl in HSN rescue experiments), hlh-3 (50 ng/µl), egl-46 (50 ng/µl), Pet1 (10 ng/µl), Ascl1 (50 ng/µl), Insm1 (50 ng/µl), Gata2(50 ng/ul) and Sall2 (20 ng/µl)], the co-injection markers rol-6(su1006) (50 ng/µl) and ttx-3::mCherry (50 ng/µl) and, when necessary, pBlueScript as carrier DNA. DNA was injected into N2 animals and then crossed with their respective mutant strains. ast-1 and hlh-3 reporter strains were generated using CRISPR/Cas9-mediated fluorescent protein knock-in, as described in (Dickinson et al., 2013; Dickinson et al., 2015). For homology arm recombination, we used plasmids containing a self-excising selection cassette: the GFP-containing pJJR82 plasmid (Addgene, Cambridge, MA) in the case of ast-1, and the mNeonGreen-containing pDD268 plasmid (Dickinson et al., 2015) in the case of hlh-3. To target Cas9 to the specific genomic locus, we used the single guide RNA sequence GGGGTGACTATCGATAAAGA for ast-1, and GCTATGATGATCACCAGAAG for hlh-3, cloned in the pDD162 (Addgene) and the pJW1219 (Addgene) plasmids respectively. Injection mixes consisted on the Cas9–sgRNA plasmid (50 ng/µl for ast-1 and 100 ng/µl for hlh-3), the repair template (10 ng/µl for ast-1 and 20 ng/µl for hlh-3), and a pharyngeal co-injection marker [2.5 ng/μl pCFJ90 (Pmyo-2::mCherry); Addgene].
 
-## Scoring
+### Scoring
 
 Scoring and images were performed using 60X objective in a Zeiss Axioplan2 microscope. Lack of GFP signaling was considered OFF phenotype. As we observed no appreciable bias in reporter expression between left and right HSN neurons, percentages were calculated regardless of side. cis-regulatory reporter and mutant scoring was performed using young adult worms maintained at 25°C, unless indicated. For cis-regulatory analysis a minimum of 30 animals (60 HSN cells) per line were scored. For mutant analysis at least 100 HSN cells, roughly corresponding to 50 animals, were scored for each genotype. For double mutant analysis, we scored young adult worms and we included an extra phenotype category termed ‘dim’ whenever fluorescence was obviously reduced but still detectable. For HSN regulatory signature analysis, the three lines showing strongest GFP under the dissecting scope were selected for scoring under the microscope. To prepare figures for publication, images were cropped and rotated, brightness and contrast were adjusted, and maximum intensity projections (where applicable) were performed using FIJI. No other image manipulations were performed.
 
 For wild type TF expression analysis at HSN birth, an unc-86 fosmid reporter was crossed with the desired TF reporter in order to construct double reporter strains, when possible. UNC-86 is expressed in the HSN after cell cycle exit, approximately 400 min after fertilization and coinciding with embryonic comma stage, which was chosen as analytical time point (Desai et al., 1988; Finney and Ruvkun, 1990). In the particular case of hlh-3, 1 to 2 cell-stage embryos with the endogenous gene tagged were selected and mounted [0 hr post-fertilization (hpf) to 0.8 hpf, respectively], incubated at 25°C and analyzed at different time points. We determined that HLH-3 is initially expressed in the HSN/PHB precursor cell (approximately five hpf) and maintained in the postmitotic HSN. HSN cells were identified relative to nearby landmark cell deaths (Sulston et al., 1983). The rest of developmental stages of the worm were identified by standard anatomical features. For hlh-3 mutant time-specific rescue experiments using the hsp16-2 promoter, synchronized worms were grown until early L4 larva stage, when they received three heat shock pulses (30 min at 37°C) with 2 hr resting intervals. Animals were analyzed the next morning at young adult stage.
 
-## Statistical analysis for HSN scorings
+### Statistical analysis for HSN scorings
 
 Data was categorically classified as ‘on’ or ‘off’ and the significance of the association was examined using the two tailed Fisher’s exact test. For double mutant analysis, ‘phenotype’ vs. ‘no phenotype’ was compared and thus, ‘dim’ and ‘off’ were considered under the category ‘phenotype’. The null hypothesis was that the level of expression in the double mutant would be equal to the product of the levels of expression in single mutants (Mani et al., 2008). Whatever statistically deviated from the expected, was considered genetic interaction; Pearson’s chi-squared test was used.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 C. elegans serotonin antibody staining was performed using the tube fixation protocol (McIntire et al., 1992). Briefly, synchronized young adult hermaphrodites were fixed in 4% paraformaldehyde (PFA) for 18 hr, with β-mercapto-ethanol for another 18 hr, with 1 mg/ml collagenase (Sigma Aldrich, Merk, Darmstadt, Germany) for 90 min and incubated for 24 hr with rabbit anti-5HT antibody (1:5000; Sigma Aldrich). Alexa 555-conjugated donkey anti-rabbit (1:500; Molecular probes) was used as secondary antibody.
 
 For mouse immunohistochemistry, freshly isolated E11.5 embryos from C57Bl/6JRccHsd were fixed by immersion in 4% PFA. Rabbit anti-Sall2 (1:100; Sigma Aldrich), goat anti-Brn2 (1:100; Santa Cruz Biotechnology, Santa Cruz, CA), rabbit anti-5HT (1:5000; Sigma Aldrich) and goat anti-5HT (1:200; Abcam, Cambridge, UK) antibodies were used. As secondary antibodies Alexa 555-conjugated donkey anti-rabbit and anti-goat, and Alexa 488-conjugated donkey anti-rabbit and anti-goat were used (1:600; Molecular probes, Invitrogen, Eugene, OR). Immunofluorescence samples were analyzed and photographed using a confocal TCS-SP8 Leica microscope.
 
-## Promoter sequences required for the generation of transgenic lines
+### Promoter sequences required for the generation of transgenic lines
 
 HSN early promoter was generated from tph-1prom2 in which we incidentally found a point mutation that caused L1 expression:
 
@@ -209,11 +967,11 @@ TCTCTTCAATCAT
 
 * Mutated nucleotides with respect to tph-1prom2 are indicated in lowercase letters.
 
-## RNAi experiments
+### RNAi experiments
 
 RNAi experiments were performed by the standard feeding protocol (Kamath et al., 2003). rrf-3 (pk1426) background was used to sensitize worms to the RNAi effects. For maintenance experiments, animals were grown under normal food (OP50) until young adult stage. At this stage we scored tph-1::yfp and cat-1::MDM2::gfp expression in the HSN to confirm that all animals expressed the fluorescent protein and then we transferred animals to RNAi plates with HT115 bacteria (Novagen) transfected with RNAi clones. Worms were incubated at 15°C for 72 hr and then HSN fluorescent expression was scored. For F1 RNAi scoring, we bleached gravid adults in OP50 plates, eggs were allowed to hatch and worms grew in RNAi treated food. We scored their progeny, which had developed under the embryonic effects of RNAi knock down (F1 scoring). The experiment was performed in two independent replicates with similar results. As a negative control the L4440 empty vector was used (pPD129.36, Addgene).
 
-## Electrophoretic mobility assays
+### Electrophoretic mobility assays
 
 Full-length unc-86 and ast-1 cDNA into the pET-21b His tag expression vector (EMD Millipore, Merk) were kindly provided be Oliver Hobert. They were transformed into E. coli Rosetta2 (DE3) (Novagen) strain. Overexpression was done by first growing the cells at 37°C in LB and Power Broth medium (Molecular Dimensions) respectively, supplemented with 100 μg/ml ampicillin, 100 μg/ml chloramphenicol to OD600 = 0.5–0.6 and then inducing expression with 0.5 mM iso-propyl-b-D thiogalactopyranoside (IPTG, Acros Organics, Thermo Fisher, Waltham, MA) at 37°C for 3 hr or 20°C for 16 hr, respectively.
 
@@ -225,7 +983,7 @@ egl-18 cDNA was cloned into pcDNA.3 vector followed by His tag sequence and tran
 
 EMSAs were performed incubating UNC-86 and AST-1 proteins in a buffer containing 10 mM Tris [pH 7.5], 50 mM NaCl, 1 mM MgCl2, 4% glycerol, 0.5 mM DTT, 0.5 mM EDTA, 1 µg of poly(dIdC), 6 µg of bovine serum albumin and labeled probes for 20 min at room temperature. For EGL-18, protein extracts were incubated in 20 mM Hepes, 50 mM NaCl, 5 mM MgCl2, 5% glycerol, 1 mM DTT, 0.1 mM EDTA, 1 µg of poly(dIdC), 6 µg of bovine serum albumin and 1 µg anti-6xhistag antibody (Abcam) at 4°C for 30 min. As negative control, anti-GFP antibody (Roche, Basel, Switzerland) was used. Then, labeled probes were added and incubated for 20 min at room temperature. Finally, samples were loaded onto a 6% (37.5:1 acrylamide: bisacrylamide) gel and run at 150 V for 4 hr. Gels were then dried and visualized using Fujifilm FLA-500. Probe sequences are listed in Supplementary file 4. Primers were annealed and end-labeled with ATP [γ−32P] (Perkin Elmer, Waltham, MA) using T4 PNK (Thermo Scientific) according to the manufacturer’s specifications.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 Unless otherwise indicated, all the analyses were performed using R and Bioconductor (Huber et al., 2015).
 

@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.42549.001 Current technologies used to generate CRISPR/Cas gene perturbation reagents are labor intense and require multiple ligation and cloning steps. Furthermore, increasing gRNA sequence diversity negatively affects gRNA distribution, leading to libraries of heterogeneous quality. Here, we present a rapid and cloning-free mutagenesis technology that can efficiently generate covalently-closed-circular-synthesized (3Cs) CRISPR/Cas gRNA reagents and that uncouples sequence diversity from sequence distribution. We demonstrate the fidelity and performance of 3Cs reagents by tailored targeting of all human deubiquitinating enzymes (DUBs) and identify their essentiality for cell fitness. To explore high-content screening, we aimed to generate the largest up-to-date gRNA library that can be used to interrogate the coding and noncoding human genome and simultaneously to identify genes, predicted promoter flanking regions, transcription factors and CTCF binding sites that are linked to doxorubicin resistance. Our 3Cs technology enables fast and robust generation of bias-free gene perturbation libraries with yet unmatched diversities and should be considered an alternative to established technologies.
+Current technologies used to generate CRISPR/Cas gene perturbation reagents are labor intense and require multiple ligation and cloning steps. Furthermore, increasing gRNA sequence diversity negatively affects gRNA distribution, leading to libraries of heterogeneous quality. Here, we present a rapid and cloning-free mutagenesis technology that can efficiently generate covalently-closed-circular-synthesized (3Cs) CRISPR/Cas gRNA reagents and that uncouples sequence diversity from sequence distribution. We demonstrate the fidelity and performance of 3Cs reagents by tailored targeting of all human deubiquitinating enzymes (DUBs) and identify their essentiality for cell fitness. To explore high-content screening, we aimed to generate the largest up-to-date gRNA library that can be used to interrogate the coding and noncoding human genome and simultaneously to identify genes, predicted promoter flanking regions, transcription factors and CTCF binding sites that are linked to doxorubicin resistance. Our 3Cs technology enables fast and robust generation of bias-free gene perturbation libraries with yet unmatched diversities and should be considered an alternative to established technologies.
 
 ## Introduction
 
@@ -43,9 +43,17 @@ Here, we demonstrate the applicability of Kunkel mutagenesis in the generation o
 
 ## Results
 
-## Circular synthesized gRNAs are high-quality CRISPR/Cas reagents
+### Circular synthesized gRNAs are high-quality CRISPR/Cas reagents
 
 In classical Kunkel mutagenesis (Kunkel, 1985; Kunkel, 2001), the circular ssDNA isolated from filamentous phage is hybridized with a complementary oligonucleotide that is extended and ligated to obtain a double-stranded DNA plasmid. As Kunkel mutagenesis is performed on ssDNA, we anticipated that it would be insensitive to the secondary DNA structures of viral sequence elements and therefore should enable the PCR and cloning-free generation of lentiviral gene perturbation reagents (Huang et al., 2012; Kunkel, 1985). We therefore hypothesized that the generation of lentiviral CRISPR/Cas gRNA libraries using circular ssDNA and Kunkel mutagenesis would reduce the coupling of gRNA diversity to gRNA distribution and would generate reagents of high quality (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig1-v2.jpg)
+
+**Figure 1.:** (A) The general 3Cs workflow. The individual steps of the protocol (grey arrows), time requirements (on top of arrow) and used or expected DNA yields (below arrow) are highlighted. Time requirements are separated by total versus hands-on time (grey scaled bars). Please note that the protocol contains two possible break points (red stop signs) at which purified phages can be stored at 4°C (break point #1) or bacterial pellets/purified plasmid DNA can be stored at −20°C (break point #2). In more detail, f1-origin containing double-stranded CRISPR/Cas plasmids are converted to dU-containing circular ssDNA. Guide RNA sequence (orange triangle) containing oligonucleotides (orange arrows) are annealed to ssDNA, and extended and ligated by T7 DNA polymerase and T4 ligase, respectively. Heteroduplex dU-3Cs-DNA is transformed into base-excision-repair-sufficient bacteria to deplete template DNA (grey strand) and to amplify the newly synthesized DNA (orange) selectively. (B) Lentiviral CRISPR/Cas plasmids (pLentiGuide, pLentiCRISPRv2) and the mammalian cDNA expression plasmid pcDNA3 (positive control) were converted to dU-containing circular ssDNA and analyzed by gel electrophoresis. Although identical in size, circular ssDNA appears as a single band and migrates faster than the corresponding dsDNA form. (C) The lentiviral circular ssDNA of panel (B) was annealed with a pool of six oligonucleotides, encoding six GFP-targeting gRNAs, to generate a pool of 3Cs-dsDNA and analyzed by gel electrophoresis. A successful 3Cs in vitro reaction is indicated by three distinct 3Cs-dsDNA product bands (Huang et al., 2012). (D) Bar graph showing the degree of template remnants in the final 3Cs products in the presence and absence of additional Uridine in the phage culture medium as well as an I-SceI clean-up step. The gRNA libraries from panel (C) were sequenced by NGS before and after I-SceI restriction enzyme digest. Although the effect of Uridine is marginal, an enzymatic digest with I-SceI removes template plasmid remnants. (E, F) gRNA distribution displayed as raw read count data points (E) and normalized values in box plot format (F). The coefficient of variation was calculated by dividing the standard deviation by the mean of the library’s read counts and is displayed as percentage above the box plot (F). Data were derived from the NGS data shown in panel (D). The final GFP-targeting 3Cs-gRNA library is free of sequence bias, as demonstrated by the low coefficient of variation of 33.18%, and by the uniform sequence distribution ((E), also see Figure 1—figure supplement 1H). (G) GFP-expressing hTERT–RPE1 cells were transduced with lentiviral 3Cs-gRNA constructs (non-targeting control gRNA (non-human target sequences (NHT)), a single GFP-targeting 3Cs-gRNA (GFP#1) or a pool of six GFP-targeting 3Cs-gRNAs (GFP#1–6)), and selected with puromycin before GFP gene editing was analyzed by T7 endonuclease I assay (Guschin et al., 2010). Individual band intensities were quantified (black numbers). An empty control (–) served as the reference. (H) A dose-dependent reduction of GFP fluorescence was determined by the flow cytometry of GFP-expressing hTERT–RPE1 cells and transduced with increasing volumes of lentiviral supernatant containing a pool of six GFP-targeting 3Cs-gRNAs (GFP#1–6). Error bars represent standard deviations (SDs) over three biological replicates (n = 3). (I) Immunoblot analysis of hTERT–REP1 cells treated as in panel (G) demonstrates that GFP-targeting 3Cs-gRNAs induce a 3- to 4-fold reduction in total GFP protein levels over three biological replicates (n = 3, for quantification see also Figure 1—figure supplement 1I).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lentiviral circular ssDNA of pLentiGuide was annealed with gRNA-encoding oligonucleotides of increasing homology (5′ and 3′, 10 to 18 nucleotides (nts)) and annealing temperatures (28°C to 45°C) to produce 3Cs-dsDNA, which was analyzed by gel electrophoresis. (B, C) 3Cs-dsDNA was generated efficiently within a few hours of incubation. Lentiviral circular ssDNA of pLentiGuide was annealed with a single oligonucleotide (18 nts, 45°C) to produce 3Cs-dsDNA. Individual time points were collected by removing 2 µl of the reaction mixture and transferring them to −20°C before all samples were analyzed by gel electrophoresis (B). To visualize the kinetics of 3Cs reactions, 3Cs-dsDNA band intensities were determined and normalized to time point 0 before plotting against the time of their harvest, revealing (C) time-dependent 3Cs-dsDNA generation. Overnight 3Cs reactions have been performed routinely, but 2 hr of incubation time is sufficient. (D) 3Cs-dsDNA generated on templates pLentiGuide and plentiCRISPRv2-Puro with a pool of six GFP-targeting gRNA oligonucleotides was transformed and individual colonies were analyzed by SANGER sequencing to identify template remnants (NHT) and gRNA-containing (GFP#1–6) plasmids. (E–F) Removal of template remnants with an I-SceI restriction digest. Circular ssDNA of pLentiGuide containing an I-SceI restriction site as a gRNA placeholder sequence was annealed with a pool of six GFP-targeting gRNA oligonucleotides for 3Cs-dsDNA generation (E). Template remnant removal by I-SceI digest (F). (G) NGS data derived from Figure 1D were used to generate Lorenz curves and to determine the area under the curve (AUC). The AUC value of 0.56 indicates a uniform distribution of GFP-targeting gRNA sequences. (H) Bar graph showing the reduction of immunoblot GFP–protein intensities related to Figure 1I. Error bars represent the standard deviation over two biological replicates (n = 2).
 
 To demonstrate its general applicability to lentiviral CRISPR/Cas plasmids, we transformed Escherichia coli CJ236 bacteria with the commonly used pLentiGuide and pLentiCRISPRv2 plasmids (Sanjana et al., 2014), both of which contain a U6 promoter-controlled non-human targeting (NHT) placeholder gRNA followed by a SpCas9 tracrRNA sequence (Doench et al., 2014; Sanjana et al., 2014). Importantly, F-factor-containing CJ236 bacteria lack dUTPase (dut–) and uracil-glycosylase (ung–), and therefore tolerate the presence of deoxyuridine (dU) in genomic and plasmid DNA (Kim and Wilson, 2012). Superinfection of single-colony CJ236 culture with M13KO7 bacteriophage (108 cfu/mL) facilitated the generation of >30 µg of dU-containing circular ssDNA. Although circular ssDNA is identical in length to dsDNA, the circular ssDNA of lentiviral CRISPR/Cas plasmids migrated faster and appeared as a single band in gel electrophoresis (Figure 1B). Circular dU-ssDNA was hybridized with a gRNA-encoding complementary oligonucleotide that contained sequence homology regions (3Cs homology) at its 5′ and 3′ ends, and then extended and ligated with T7 polymerase and T4 ligase, respectively (Figure 1A). This resulted in heteroduplexed 3Cs DNA (3Cs-dsDNA), which were composed of dU-template ssDNA and deoxythymidine-containing newly synthesized complementary DNA that also includes the gRNA-encoding oligonucleotide (Figure 1A) (Huang et al., 2012; Kunkel, 1985; Kunkel, 2001). To gain insights into the oligonucleotide requirements and kinetics of 3Cs reactions, we tested different 3Cs homology lengths of 10, 13, 15, and 18 nucleotides, performed a 3Cs reaction time series, and demonstrated that 18 nucleotides of homology (above 45°C annealing temperature) and 2 hr of 3Cs reaction time were sufficient (Figure 1—figure supplement 1A–C) (Kunkel, 2001).
 
@@ -53,25 +61,49 @@ Using rule set 2 (RS2) (Doench et al., 2014, Doench et al., 2016), we designed 
 
 To test for the cellular functionality of 3Cs gRNAs, we used the plentiCRISPRv2 GFP-targeting 3Cs gRNA constructs to generate infectious lentiviral particles and transduced GFP-positive human telomerase-immortalized retinal pigmented epithelial (hTERT–RPE1) cells. Seven days post-transduction, we performed a T7 Endonuclease I assay and observed robust GFP gene editing, both by a single GFP-targeting 3Cs gRNA (3Cs-gRNA) and by the pool of six 3Cs-gRNAs, whereas un-transduced (–) and an NHT control gRNA failed to edit the GFP gene (Figure 1G). GFP gene editing translated to a lentiviral dose-dependent loss of GFP protein when analyzed by fluorescence flow-cytometry and immunoblotting (Figure 1H–I and Figure 1—figure supplement 1H). Taken together, we demonstrate that the 3Cs technology enables the rapid and cloning-free generation of high-quality single and pooled CRISPR/Cas gRNAs.
 
-## 3Cs uncouples sequence diversity from sequence distribution
+### 3Cs uncouples sequence diversity from sequence distribution
 
 The absence of PCR amplification and cloning steps, in combination with the uniform distribution of the six GFP-targeting 3Cs-gRNAs, led us to reason that 3Cs may uncouple sequence diversity from sequence distribution during gRNA library generation. To test this hypothesis, we designed six degenerated 3Cs oligonucleotides with increasing numbers of randomized nucleotides to mimic gRNA sequence pools with diversities ranging from 256 to 262,144 individual sequences (Figure 2A). The six pools were applied in parallel 3Cs syntheses on a dU-ssDNA template of pLentiCRISPRv2 (Figure 2B and Figure 2—figure supplement 1A). Independent of an oligonucleotide’s diversity, NGS and computational analyses identified all of the individual sequences and uniform distributions with area under the curve values between 0.6 and 0.73 (Figure 2—figure supplement 1B and Supplementary file 2). Despite the uniform distribution, we observed a prominent cytosine (C) bias in the randomized libraries, with C contents of above 40% within the top 10% of the most abundant gRNAs (Figure 2C). We reasoned that the C bias is probably due to incomplete phosphoramidite mixing during oligonucleotide synthesis and should therefore be absent from gRNA libraries containing nonrandom gRNA sequences (Ellington and Pollard, 2009). To test this hypothesis, we designed and generated a nonrandom 3Cs-gRNA library targeting all 105 human DUBs, each with three gRNAs (DUB library). NGS and nucleotide content analysis confirmed our hypothesis and revealed the absence of C bias from the nonrandom DUB library (Figure 2C and Supplementary file 3). To correct the randomized libraries for the C bias, we determined the individual nucleotide frequency at every randomized position and used these frequencies to normalize the original read counts, leading to improved AUC values and sequence distributions (Figure 2D and Supplementary file 2) and further confirming the uncoupling of sequence diversity and distribution in 3Cs reactions. Taken together, these findings lead us to conclude that 3Cs is a robust technology that uncouples sequence distribution from sequence diversity and, therefore, is a powerful alternative technology to conventional gRNA cloning methods for generating gRNA libraries.
 
-## 3Cs-gRNA libraries are of high fidelity: the proliferative essentiality of human DUBs
+![Figure 2.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig2-v2.jpg)
+
+**Figure 2.:** (A) To determine the sequence distribution of 3Cs-gRNA libraries with increasing gRNA diversity, an increasing number of randomized nucleotides (orange) were incorporated into 3Cs oligonucleotides to mimic gRNA diversities ranging from 256 to 262,144 sequences (4–9N libraries). A range of four to nine randomized nucleotides (orange) were introduced into an NHT gRNA sequence. Randomization of the central nucleotides ensures the replacement of the template I-SceI restriction site in order to prevent the digestion of correctly synthesized 3Cs synthesis products. (B) The 3Cs synthesis products of the combination of randomized primers and pLentiGuide were resolved by gel electrophoresis. (C) The Scatter plot displays ranked gRNA abundances per library against the gRNA cytosine content (C). The gRNA libraries that are shown are derived from (A) and (B) and the library with gRNAs targeted against DUBs (DUBs library). All libraries were processed by I-SceI-dependent removal of template plasmid remnants and subjected to NGS and computational analysis. Importantly, all gRNA libraries were complete, irrespective of their individual gRNA diversity. However, the partially randomized gRNA libraries displayed a strong C bias within the most abundant gRNA sequences. In fact, the top 5% of most abundant gRNAs had a C content of above 60%. The DUBs library did not show this C bias, strongly suggesting incomplete phosphoramidite mixing during oligonucleotide synthesis as the main cause of the C bias. (D) Lorenz curves displaying the cumulative fraction of represented NGS reads versus the gRNAs ranked by abundance of each partially randomized (4–9N) and nonrandomized (DUB) library revealed a uniform distribution of gRNA sequences. Area under the curve values (AUC, number next to library name) confirm the uniform gRNA distribution of these libraries and demonstrate that 3Cs uncouples sequence diversity from sequence distribution.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gel electrophoresis of P1 3Cs libraries, generated with randomized nucleotide positions (related to Figure 2A). Template pLentiCRISPRv2 is linearized by I-SceI digests, whereas only P1 libraries are partially I-SceI digested. P2 libraries are unaffected by I-SceI digests, demonstrating their high purity. (B) The distribution of the randomized nucleotide libraries, derived from panel (A), visualized with Lorenz curves. The AUC values indicate that 3Cs uncouples sequence distribution from sequence diversity.
+
+### 3Cs-gRNA libraries are of high fidelity: the proliferative essentiality of human DUBs
 
 Next, we investigated the performance of 3Cs-gRNA reagents in cellular screenings. To do so, we generated infectious lentiviral particles of the 3Cs-gRNA DUB library and applied them to a proliferation screen in non-transformed hTERT–RPE1 cells in biological duplicates (multiplicity of infection (MOI) 0.2, coverage 1,000). Two days after lentiviral transduction, cells were either collected (day 0, reference time point) or selected by puromycin and kept in culture for 11 days (day 11) or 21 days (day 21) in cycling conditions representing at least a 1,000-fold library coverage (Figure 3A). Cells collected at day 0, 11, or 21 were subjected to genomic DNA extraction and amplicon-based NGS library preparation, as has been reported previously (Doench et al., 2016; Koike-Yusa et al., 2014). We performed single-read sequencing on an Illumina NextSeq500 with an averaged read count per gRNA of above 35,000 across all biological samples and replicates (Supplementary file 4). As in previously reported CRISPR analysis algorithms, and to enable a comparison of individual time points, we summed all individual gRNA read counts per gene and normalized each gene read count per sample to the total number of read counts within that sample (Supplementary file 4) (Li et al., 2014; Spahn et al., 2017). In line with reports of the high experimental reproducibility of CRISPR/Cas screenings (Evers et al., 2016; Morgens et al., 2016), we determined R2 values of 0.95, 0.88, and 0.90 for time points day 0, 11, and 21, respectively (Figure 3—figure supplement 3A–C). Spearman correlation and Shapiro–Wilk confidence tests revealed correlations of above 0.88 and p-values of below 0.001, respectively, demonstrating a high experimental confidence in the level of gRNA representation (Figure 3B and Figure 3—figure supplement 3A–C) (Shapiro and Wilk, 1965). To analyze the reproducibility of our screen in terms of the level of gene phenotypes, we applied MAGeCK and PinAPL-Py, two established algorithms for the analysis of CRISPR/Cas screens, to raw gRNA read counts of both replicates and calculated aggregated positive and negative proliferation phenotypes by means of log2-fold changes with associated p-values (Figure 3C–E and Figure 3—figure supplement 3D–H and Supplementary file 5–6) (Li et al., 2014; Spahn et al., 2017). Consistent over both time points, cells depleted of USP28 or BRCC3 proliferated more rapidly than cells harboring non-human target sequences (NHTs), identifying both as negative regulators of hTERT–RPE1 proliferation (Figure 3C–D and Figure 3F and Supplementary file 4–5). By contrast, cells that were depleted of PSMD14, USP7 or COPS6 proliferated less rapidly than cells harboring non-human target sequences (NHTs), identifying them as positive regulators of hTERT–RPE1 proliferation (Figure 3C–D and Figure 3F and Supplementary file 4–5).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the performed CRISPR screen. Highlighted are the experimental conditions under which the screen was performed (MOI of 0.2, library coverage of 1,000). In brief, hTERT–RPE1 cells were transduced with lentivirus for 48 hr in duplicates, after which the cells of one duplicate were harvested (day 0) to extrapolate the baseline gRNA distribution. Simultaneously, cells of the second duplicate were subject to puromycin selection for 11 days, after which time all cells were harvested (day 11), counted and plated back in low density to the original library representation of 1,000-fold coverage. Plated cells remained in cycling conditions until day 21, when all cells were collected (day 21). After harvesting the cells, their genomic DNA was extracted and processed for gRNA NGS. (B) ﻿Graph showing the distribution of individual sgRNAs. Means ± standard deviation are highlighted. (C–E) Volcano plots visualizing log2-fold changes of gene phenotypes and their associated p-values. Data are derived from MAGeCK analyses, corresponding to day 11 (C), day 21 (D) and day11/21 (E). The dashed red line shows p=0.05 with points above the line having p<0.05 and points below the line having p>0.05. Data points with p>0.05 are displayed as translucent symbols. Genes of interest are highlighted. (F) Venn diagram of significantly enriched (blue) or depleted (orange) DUBs. The time point overlap visualizes DUB genes with time independent (overlap of three) and time dependent (overlap of two) proliferation phenotypes. (G) ﻿Fold increase in cell number after shRNA-mediated depletion of target genes. Data are means of duplicates.
+
+![Figure 3—figure supplement 1](https://cdn.elifesciences.org/articles/42549/elife-42549-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1:** (A–C) 3Cs DUB gRNA screens are highly reproducible, as visualized by scatter plots comparing biological replicates (Exp#1/Exp#2) of normalized gRNA read counts at each time point: day 0 (A), days 11 (B) and day 21 (C). High linear regression (R2 between 0.8842 and 0.9552), spearman correlation (SC between 0.8863 and 0.9731), and Shapiro–Wilk confidence (W between 0.4437 and 0.9416), including highly significant statistical testing (p<0.0001), demonstrate high biological reproducibility. (D–F) gRNA read count tables of 3Cs DUB gRNAs were used as input for PinAPL-Py to perform positive and negative computational analyses. Experimental reproducibility is visualized by individual scatter plot at each time point: day 0 (D), day 11 (E), and day 21 (F). Please note, PinAPL-Py computes Pearson and Spearman correlations, both of which values are above 0.8 for all time points and biological replicates, demonstrating high experimental reproducibility. (G–H) Scatter plot of MAGeCK-derived positive and negative gene ranks, corresponding to data in Figure 3E. Genes of interest are highlighted. (I) Scatter plot showing normalized gene ranks at day 11 versus day 21. Data corresponding to Figure 3E.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Gel electrophoresis of ssDNA from the conventional shRNA-expressing lentiviral plasmid pLKO.1. (B) 3Cs-shRNA oligonucleotide design. Regions with homology to pLKO.1 are shown in light grey, whereas complementary shRNA sequences are displayed in dark grey. 3Cs-shRNAs have a length of 78 nucleotides. (C) Two different amounts of pLKO.1 circular ssDNAs (60 ng and 120 ng) were annealed with a single 3Cs-shRNA oligonucleotide, encoding a GFP-targeting shRNA, to produce 3Cs-dsDNA, which was analyzed by gel electrophoresis. (D) 3Cs-dsDNA derived as for panel (C) was amplified in E. coli. SANGER-sequencing of the amplified plasmid DNA confirmed the successful integration of the GFP-targeting shRNA sequences (highlighted in red). (E) GFP-expressing hTERT–RPE1 cells were transduced with either a scrambled or a GFP-targeting shRNA and analyzed by flow-cytometry in biological replicates (n = 2). Please note, the GFP intensity was reduced by more than 60%, indicating functionality of 3Cs-shRNA reagents.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) A 3Cs synthesis with ssDNA template of pLKO.1 and a pool of 3Cs oligonucleotides, encoding for shRNAs targeting all human ubiquitin E2 ligases (each E2 with two shRNAs), yielded 3Cs-dsDNA that is resolved by gel electrophoresis. (B) Like 3Cs-gRNA reagents, 3Cs-shRNA reagents are subjected to the removal of template remnants by performing an initial (E2.1) and an analytical (E2.2) Bsu36I restriction enzyme digest. Please note the absence of the 3-kb DNA fragment from the E2.2 library. (C) SANGER sequencing of the final E2 3Cs-shRNA library (E2.2) confirmed a randomization of forward- and reverse-complement shRNA sequences. (D) Initial and final E2 3Cs-shRNA libraries were subjected to high-throughput sequencing. Individual shRNA distributions were displayed as a box plot with their respective coefficients of variation (CV, percent number above the box plots). (E) The distribution of both pools visualized as Lorenz curves, comparing E2.1 and E2.2. Data derived from panel (D). Importantly, while effectively removing template plasmid remnants, the Bsu36I digest does not affect the distribution of 3Cs-shRNAs. (F) Scatter plot of normalized read counts of data derived from panel (D), visualizing individual shRNA abundance before (–) and after (+) Bsu36I digest. The Pearson correlation coefficient of R2 is 0.9687, demonstrating high correlation of individual shRNA abundances and no effect of the clean-up digestion on the final distribution.
 
 CRISPR/Cas drop out screens are performed with varying experimental durations, ranging from 5 to 15 days (Joung et al., 2017; Potting et al., 2018). However, recent work demonstrates that CRISPR/Cas induces a G1 phase arrest in p53 proficient hTERT–RPE1 cells that impacts hit calling (Haapaniemi et al., 2018), suggesting that later screening time points are beneficial for hit calling. Indeed, when comparing normalized gene ranks, we observed a trend of increased phenotype resolution among negative gene ranks over time, although this effect was largely absent from positive gene ranks (Figure 3—figure supplement 1I and Figure 3—figure supplement 2 and 3). This effect has been reported previously and can potentially be explained by the disproportional assay window of positive and negative cell proliferation phenotypes, leading to a higher phenotypic resolution among negative proliferative effects (Shalem et al., 2014; Wang et al., 2014).
 
 Stable and robust proliferative phenotypes are time-independent, so the phenotype resolution enhances over time (Figure 3—figure supplement 3I). However, multiple mechanisms and cellular backgrounds can influence phenotype strength, timing and orientation. To identify time-dependent phenotypes, we analyzed the MAGeCK-derived log2-fold changes with associated p-values for time points day 11 and day 21, and identified genes whose deletion phenotype significantly changed between day 11 and day 21 (Figure 3E–F). Depletion of USP28 and USP46 induced the strongest positive change, whereas deletion of USP22, USP48 or TNFAIP3 induced the most significant negative change, in phenotype between day 11 and day 21, suggesting a time-dependent absence of compensatory mechanisms to accommodate an early loss-of-function phenotype (Figure 3E–F and Figure 3—figure supplement 3I). In order to validate our findings, we chose two positive and negative proliferation-inducing DUBs, generated lentiviral supernatant to deliver shRNA sequences targeting the selected DUBs, and transduced hTERT–RPE1 cells. Over the course of the 2 weeks after transduction, we measured cell numbers by AlamarBlue staining. When compared to negative- (Luciferase) and positive-control (Plk1) shRNA sequences, depletion of USP28 and BRCC3 induced a rapid positive proliferation effect (Figure 3G). By contrast, depletion of USP7 and COPS6 induced an instant and strong negative proliferation effect (Figure 3G), validating the gRNA-mediated knockout phenotypes. Collectively, our analysis demonstrates the quality and fidelity of 3Cs reagents in functional genomics applications.
 
-## 3Cs is versatile and generates arrayed and pooled 3Cs-shRNA reagents
+### 3Cs is versatile and generates arrayed and pooled 3Cs-shRNA reagents
 
 Owing to its versatility,CRISPR/Cas technology has become the method of choice for gene perturbation experiments, yet classical short hairpin RNAs (shRNA, RNAi) are still widely used. However, shRNA oligonucleotides contain complementary sequences that form stable secondary structures that render the generation of shRNA reagents inefficient (McIntyre and Fanning, 2006). A crucial step in our improved Kunkel mutagenesis technology is the denaturation of the gRNA-encoding oligonucleotides and their subsequent annealing to template ssDNA (see 'Materials and methods' section). Owing to this denaturation and annealing step, we anticipated that improved Kunkel mutagenesis would circumvent the secondary structures of shRNA oligonucleotide and enable the generation of shRNA reagents. We chose pLKO.1 (Stewart et al., 2003), one of the most widely used lentiviral and shRNA-expressing plasmids to generate circular dU-ssDNA. Similar to circular ssDNA of CRISPR/Cas plasmids, the circular ssDNA of pLKO.1 migrated as a single band in agarose gel electrophoresis (Figure 3—figure supplement 2A). Next, we designed a GFP-targeting 3Cs shRNA (3Cs-shRNA) primer consisting of 5′ and 3′ 3Cs homology and two complementary GFP–shRNA sequences separated by a six-nucleotide hairpin sequence (Figure 3—figure supplement 2B). We performed two parallel 3Cs reactions using 60 ng and 120 ng of ssDNA, and both reactions yielded the characteristic 3Cs-DNA band pattern with no major difference in bacterial transformation efficiency between the two tested scales (Figure 3—figure supplement 2C).
 
 To demonstrate the successful integration of the GFP–shRNA sequence into pLKO.1, we amplified single bacterial clones carrying 3Cs-DNA of shRNA reactions and analyzed their plasmid DNA by SANGER sequencing. This resulted in the expected GFP–shRNA sequence and the absence of adjacent nucleotide changes (Figure 3—figure supplement 2D), from which we concluded that 3Cs is a versatile technology that generates high-quality gRNA and shRNA reagents. To demonstrate 3Cs-shRNA fidelity, we generated infectious lentiviral particles of the GFP-targeting 3Cs-shRNA and transduced GFP-positive hTERT–RPE1 cells. Strikingly, 96 hr after lentiviral transduction, we observed a reduction in GFP-fluorescence, confirming the functionality of the 3Cs-shRNAs in cells (Figure 3—figure supplement 2E). Moreover, we investigated the performance of improved Kunkel mutagenesis in generating 3Cs-shRNA libraries. On the basis of the principles described above, we designed a 3Cs-shRNA library targeting all human ubiquitin-conjugating E2 enzymes (E2s), each with two shRNAs (Supplementary file 7). To generate the library, individually synthesized oligonucleotides were pooled in equimolar ratios and applied to a pooled 3Cs reaction. The resulting products were resolved by gel electrophoresis (Figure 3—figure supplement 3A). Like the I-SceI-mediated depletion of wildtype remnants from CRISPR/Cas 3Cs-gRNA constructs, a Bsu36I restriction enzyme clean-up step removed pLKO.1 wildtype remnants, and SANGER sequencing of the final E2 3Cs-shRNA library (E2.2) confirmed a randomization of forward- and reverse-complement shRNA sequences (Figure 3—figure supplement 3B–C). To determine the E2 3Cs-shRNA distribution more accurately, we performed NGS sequencing with an average shRNA read count of >8,300 and determined a wildtype remnant level of 0.04%, a CV of 37.9% and an AUC of 0.68, demonstrating an almost uniform distribution (Figure 3—figure supplement 3D–E). To correlate 3Cs-shRNA abundance and the distribution of the E2 3Cs-shRNA libraries before and after Bsu36I enzyme digest, we determined the ratios of their respective normalized read counts. Importantly, all ratios were close to one and lined up close to the respective diagonal with a linear regression R2 of 0.9687 (Figure 3—figure supplement 5F), demonstrating a high correlation of individual data points and no influence of the Bsu36I digest on 3Cs-shRNA sequence distribution. In summary, this demonstrates that our 3Cs technology can be adapted to generate high-quality shRNA reagents in single and pooled formats.
 
-## A partially randomized 3Cs gRNA library to target the coding and noncoding genome simultaneously
+### A partially randomized 3Cs gRNA library to target the coding and noncoding genome simultaneously
 
 The 3Cs method does not require the PCR-amplification of gRNA-encoding oligonucleotides, is free of conventional cloning steps and uncouples sequence diversity from sequence distribution. Thus, we hypothesized that 3Cs gRNA library diversity is mostly limited by the number of distinguishable oligonucleotides within a 3Cs reaction and the subsequent bacterial electroporation efficiencies. Limitations in electroporation efficiencies can be overcome by accumulating the individual efficiencies of multiple parallel reactions, as routinely performed to amplify phage libraries with diversities beyond 109 (Smith and Scott, 1993). The number of distinguishable oligonucleotides is limited by the capacity of synthetic oligonucleotide synthesis, rendering truly genome-wide gene perturbation libraries unfeasible.
 
@@ -83,15 +115,35 @@ Previously identified SpCas9 nucleotide preferences included a preference for 
 
 The 3Cs technology enables the generation of gRNA libraries with sequence diversities exceeding those that can be captured by coverage-based screenings. Being aware of the coverage limitations, we explored a TGW library screen in the context of a strong positive selection pressure. In hTERT–RPE1 cells, doxorubicin induces a robust, irreversible and dose-dependent reduction of cell viability within 4 days (Figure 5—figure supplement 1A). We therefore generated 5.5 × 108 infectious lentiviral particles of the TGW library and applied them to screen for resistance to doxorubicin (Figure 5A–B). In three biologically independent experiments, we transduced a total of 5.5 × 108 hTERT–RPE1 cells with a MOI of 1, added 1 µM doxorubicin 7 d post transduction and replaced the media every 7 d for 21 consecutive days. Cells that survived the treatment were harvested and their genomic DNA was extracted for NGS (Figure 5B). Although the experimental reproducibility was low (0.004%), we identified an experimental overlap of 4,232 gRNAs, with associated Spearman ranking and Pearson correlations of above 0.75 (Figure 5C and Figure 5—figure supplement 1B). To validate these sequences, we designed and generated a new 3Cs-gRNA validation library consisting of the identified 4,232 gRNAs and repeated the doxorubicin resistance screen with established experimental parameters (coverage of 1,000 and MOI of 0.2) (Figure 5—figure supplement 2A–B). As a result, we reidentified 2,716 gRNAs of which 795 were more than two-fold enriched after 21 d of doxorubicin treatment when compared to the untreated control (Figure 5D and Supplementary file 11). In order to map the 795 gRNA sequences to a location within the human genome, we applied Cas-OFFinder and used the Ensembl, ENCODE, Roadmap Epigenomics and Blueprint databases for sequence annotation (Bernstein et al., 2010; Dunham et al., 2012; Fernández et al., 2016; Zerbino et al., 2018). We identified seven gRNAs to target five genes (PDE8B, AVPR2, CYSLTR2, IL3RA, and POLE2), of which PDE8B and AVPR2 were targeted by two gRNAs, and a single gRNA sequence matched a noncoding location within chromosome 8 (chr8:93022800) (Figure 5E and Figure 5G and Supplementary file 12–13). The coding hits that we identified included CysLTR2, a Leukotriene C4 G-protein-coupled eicosanoid receptor that was recently reported to induce doxorubicin resistance by abolishing the accumulation of reactive oxygen species (Dvash et al., 2015). To validate CysLTR2 as a doxorubicin-resistance inducing hit, we chemically inhibited CysLTR2 with increasing concentrations of Bay-CysLT2 or Bay-u9773 in the presence of doxorubicin and quantified cell viability by AlamarBlue staining. Importantly, both drugs reverted the doxorubicin-induced toxicity in a dose-dependent manner (Figure 5F), suggesting that the loss of CysLTR2 causes doxorubicin resistance.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scheme illustrating the workflow used to generate the pooled lentivirus of the TGW library. The DNA of eight independent TGW 3Cs syntheses was pooled and used to transfect HEK293T cells to produce 5.5 × 108 infectious lentiviral particles. (B) Experimental workflow of the doxorubicin screen in hTERT–RPE1 cells. hTERT–RPE1 cells were transduced with TGW lentivirus with an MOI of 1, selected with puromycin for 7 days, and treated with 1 µM doxorubicin. After three weeks of continuous doxorubicin treatment, all surviving cells were collected and processed for further analysis. (C) Genomic DNA derived from three independent experiments (n = 3), performed according to the scheme illustrated in panel (B), was used to perform NGS and gRNA sequence identification. Computational analysis identified an experimental overlap of 4,232 gRNAs (see also Supplementary file 10). (D) A 3Cs library containing the experimental overlap of 4,232 gRNAs (the validation library) was generated and screened with an experimental coverage of 1,000 and an MOI of 0.1 (similar to the workflow shown in panel (B); see also Figure 5—figure supplement 2). NGS of all surviving cells and computational analysis identified 795 gRNAs that were enriched more than two-fold (orange) when compared to an untreated control. (E) Pie chart visualizing the distribution of coding target regions with respect to SpCas9 off-target rate (0 to 2 mismatches). A total of 192 gRNAs (22.38% of 795 gRNAs) could be mapped to coding regions. Color code represents degree of nucleotide mismatch. (F) Chemical inhibition of cells rescued by CysLTR2 from doxorubicin-mediated toxicity. hTERT–RPE1 cells were treated for 4 d with increasing concentrations of doxorubicin and two chemical inhibitors of CysLTR2 (Bay-CysLT2 and Bay-u9773) before cellular viability was determined by AlamarBlue assays. Averaged values over three biological replicates (n = 3) in arbitrary units (AU) are displayed. (G) Pie chart visualizing the distribution of noncoding target regions with respect to SpCas9 off-target rate (0 to 2 mismatches). A total of 222 gRNAs (27.92% of 795 gRNAs) could be mapped to noncoding regions. Color codingshows the degree of nucleotide mismatch. (H) Molecular signature analysis of coding gRNA target sites identifies a set of genes that are downregulated in cells expressing mutant forms of ERCC3 as the top hit. From among the 178-coding gRNA target site-associated genes, 25 genes are part of the ERCC3 group (which has a total of 855 genes) with high confidence (p=3.7e-17). (I) A list of the 25 ‘down in ERCC3 mutated cells’ genes (light green), as well as their known first- and second-degree interacting genes (grey), identifies cytokinesis (DOCK1/4 genes) and vesicle transport (SEC24B/TRAPPC8 genes) gene interactions. Interaction data adapted from String 10.5. (J) Pie chart visualizing the distribution of noncoding gRNA target site annotations, including their frequency (as percentages of total noncoding hits). Please note: for 52.7% of all noncoding gRNA target sites, no annotation is available. (K) Molecular signature analysis of noncoding gRNA target sites, using adjacently located genes (one for each, 5′ and 3′). 33 genes, out of the 211 genes analyzed, are part of the ‘Biosynthetic process’ group (which includes a total of 1,805 genes) with high confidence (p=3.4e-10).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Doxorubicin toxicity in hTERT–RPE1 cells. Cells were incubated for four consecutive days with increasing concentrations of doxorubicin before cellular viability was assessed by AlamarBlue assay (orange). To quantify cellular recovery after 4 d of doxorubicin treatment, cells were exposed to doxorubicin with increasing concentrations ranging from 0 to 1,000 nM for four consecutive days, after which the treatment was stopped and the cells were cultivated for another 4 d without doxorubicin. After a total of 8 d, cellular viability was determined with an AlamarBlue assay (green). Concentrations of doxorubicin above 250 nM induced robust and irreversible toxicity in hTERT–RPE1 cells. Error bars represent standard deviations (SD) over two biological replicates (n = 2). (B) Scatter plot correlating the abundance of the identified TGW gRNAs between biological replicates of the TGW validation screen with 4,232 gRNAs. gRNA read counts of each experiment were normalized towards the sum of all reads per sample and ranked according to their experimental abundance. Spearman correlations of ranked gRNA abundances between experimental replicates were computed. Colors indicate the correlation between experiments: orange (Exp. 1:2), blue (Exp. 1:3), and green (Exp. 2:3) and numbers indicate the respective Spearman correlation efficient (R2 values between 0.75 and 0.82).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Gel electrophoresis visualizing the quality of P1 and P2 preparations of the TGW validation library (4,232 gRNAs). Please note the absence of the 3-kb DNA fragment in the final (P2) validation library. (B) The distributions of the TGW validation library P1 and P2 preparations visualized as Lorenz curves. The pre-I-SceI-digested library (P1) and the post-I-SceI-digested library (P2) have similar gRNA distributions. The low area under the curve (AUC) values of 0.65 (P1) and 0.64 (P2) indicate that the I-SceI clean-up digestion does not affect the distribution of gRNAs in the final product.
+
 To account for sequence differences between rRNAs from hTERT–RPE1 cells and the reference genome (GRCh38.86), as well as SpCas9 off-target activity (Cho et al., 2014; Hsu et al., 2013; Pattanayak et al., 2013), we extended our computational analysis by allowing up to two mismatches during Cas-OFFinder-based target sequence identification. As expected, the number of gRNAs that could be mapped to the reference genome increased to 192 and 222 for coding and noncoding target sites, respectively, accounting for 50.3% of the 795 gRNAs (Figure 5E and Supplementary file 12). Interestingly, when mismatches are allowed, we identified three gRNAs that targeted two different coding positions within the AKAP6 gene (chr14:32671632, chr14:32784395), as well as five different gRNAs that targeted the exact same coding position within the ASPA2 gene (chr2:9229295) (Figure 5E and Supplementary file 12). Within the noncoding gRNA target sites, we identified four gRNAs that targeted four different positions on chromosome X (56546543, 57766898, 63133046, 63245878), all of which are in close proximity to the SPIN2A gene (Figure 5G and Supplementary file 13), suggesting a doxorubicin-tolerance-inducing function in this locus.
 
 In order to reveal whether the identified set of coding genes correlated with reported phenotypes or gene ontologies, we performed a molecular signature analysis of the 178 coding target regions and identified 25 genes that match the UV_RESPONSE_VIA_ERCC3 (downregulated in mutant ERCC3-expressing fibroblasts) group as the most significant hit (p-value of 6.11E-17) (Figure 5H–I and Supplementary file 14). Importantly, doxorubicin-induced interstrand crosslinks are repaired by ERCC3-dependent nucleotide excision repair (NER), and NER-deficient cells have been shown to display greater tolerance to adduct-forming anthracycline treatment, connecting these 25 genes to an increased doxorubicin tolerance (Bret et al., 2013; Spencer et al., 2008; van Brabant et al., 2000). Furthermore, mutations in noncoding sequences have been linked to the misregulation of adjacently located genes by disrupting cis-regulatory elements (Hnisz et al., 2016; Katainen et al., 2015; Weinhold et al., 2014). Therefore, we searched for available biotypes that are associated with the identified noncoding target regions and were able to identify target sites matching ‘predicted promoter’ (12.6%), ‘lincRNAs’ (11.3%) as well as ‘processed pseudogenes’ (4.5%) and ‘CTCF binding sites’ (3.6%) annotations (Figure 5J and Supplementary file 13). However, no biotype or genomic annotation was available for 52.7% of the noncoding gRNAs, and we therefore identified the nearest 5′ and 3′ located genes and used them to perform a molecular signature analysis (Figure 5K and Supplementary file 15). Among the four most enriched molecular signatures, we identified genes that are regulated by the transcription factors FOXO4, KLF1, and NFAT, noting that FOXO4 and NFAT downregulation has previously been reported to increase doxorubicin tolerance (Figure 5K and Supplementary file 15).
 
 In summary, we explored the possibility of generating a partially degenerated SpCas9-gRNA library and its application in positive selection screens. Despite the limitations attributed to the generation of such a reagent and its applicability in cellular screens, we identified previously known and unknown genes that are presumably linked to doxorubicin resistance. In addition, we identified noncoding sequence regions and their neighboring genes for which gene set enrichment analyses revealed an enrichment for transcription factors that are connected to increased doxorubicin tolerance.
 
-## An optimized truly genome-wide 3Cs gRNA library
+### An optimized truly genome-wide 3Cs gRNA library
 
 A library’s sequence diversity and distribution directly dictates the experimental scale for positive and negative selection screens. Therefore, reducing the size of the TGW library to enable coverage-based screens is highly desirable. In line with this, gRNAs that are truncated to 17 nt have been demonstrated to maintain on-target efficiencies while reducing off-target effects (Fu et al., 2014; Wyvekens et al., 2015). We therefore truncated the degenerated TGW oligonucleotide sequence to 17 nt(optimized TGA, oTGW), approximating to a a total oligonucleotide diversity of 1.5 × 109 (Figure 6A). Importantly, the oTGW sequence diversity is 50-times smaller than the TGW sequence diversity, while the 1.65 × 107 unique target sequences in the human genome remain identical (Figure 6A and Supplementary file 8). As for the TGW oligonucleotide, we used hand-mixed phosphoramidite pools to synthesize the oTGW oligonucleotide and performed 3Cs reactions by combining this nucleotide with a ssDNA dU-template of the three conventionally used lentiviral CRISPR/Cas plasmids: pLentiGuide, pLentiCRISPRv2(Puro) and pLentiCRISPR(GFP-Puro). We then determined successful 3Cs reactions by gel electrophoresis (Figure 6B). Subsequent to bacterial amplification, an I-SceI clean-up step was performed before the three oTGW libraries were analyzed by NGS with an average of 28.4 million reads per library (Figure 6C–E and Supplementary file 8). Importantly, extracted gRNA-position nucleotide frequencies were extracted and translated to IUPAC nomenclature, revealing the initial oTGW degenerated oligonucleotide sequence (Figure 6F–H). Furthermore, an average wildtype remnant rate of 0.2% was determined and AUC values were 0.54 or below (Figure 6—figure supplement 1), suggesting a uniform distribution of represented gRNA sequences in all three oTGW libraries (Makowski and Soares, 2003). Thus, these oTGW libraries are the first of their kind, have the potential to elevate functional genomics approaches and will be made available to the scientific community by the Goethe University Depository (http://www.innovectis.de/INNOVECTIS-Frankfurt/Technologieangebote/Depository).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig6-v2.jpg)
+
+**Figure 6.:** (A) oTGW oligonucleotide sequence, based on reported SpCas9 nucleotide preferences. The truncation of three 5′ nucleotides results in 17-mer gRNAs with a total oligonucleotide diversity of 1.5 × 109. (B) oTGW 3Cs-dsDNA was synthesized on a ssDNA-template of pLentiGuide, pLentiCRISPRv2-Puro and pLentiCRISPRv2-GFP/Puro. 3Cs products are analyzed by gel electrophoresis on a 0.8% TAE/agarose gel. (C–E) Removal of template plasmid remnants with an I-SceI restriction enzyme digest. oTGW 3Cs-dsDNA was electroporated with efficiencies above 6.31 × 109 and amplified for DNA purification (P1). A subsequent I-SceI restriction enzyme digest and an electroporation of P1 yielded the final 3Cs libraries containing no detectable template plasmid (P2). An analytical restriction enzyme digest with I-SceI and EcoRV removes a 2.5-kb DNA fragment from the template plasmid (empty) and to a minor degree from P1 DNA pools. No 2.5-kb fragment could be observed in the final P2 DNA library pools, demonstrating the high purity of the final libraries (see also Figure 6—figure supplement 1). (F–H) High-throughput sequencing data derived from panels (C–E) were used to compute the nucleotide frequency of each gRNA nucleotide position, which are visualized as heat maps. The identified nucleotide frequencies closely resemble the pattern of the degenerated oTGW oligonucleotide shown in panel (A). Color coding illustrates the nucleotide frequencies (0% in blue to 50% in red).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42549/elife-42549-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Bar graph visualizing the low rate of template plasmid remnants in the final oTGW gRNA libraries. The rate of template plasmid remnants is below 0.3% in all libraries. NGS data derived from Figure 6F–H. (B–D) The distribution of each oTGW library visualized as a series of Lorenz curves. Please note the low AUC values of between 0.5 and 0.54, demonstrating the uniform gRNA distributions of the represented gRNAs.
 
 ## Discussion
 
@@ -111,43 +163,383 @@ Furthermore, our computational approach for coding and noncoding hit-calling is 
 
 ## Materials and methods
 
-## Cloning of 3Cs template plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>RRID identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT-RPE1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_4388</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>RPE1</td>
+      <td>Ian Cheeseman</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (B-2)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_627695</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha Tubulin</td>
+      <td>DSHB</td>
+      <td>RRID:AB_2315509</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Secondary Antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_228307</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H + L) Secondary Antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_228341</td>
+    </tr>
+    <tr>
+      <td>Bacteria (E. coli)</td>
+      <td>K12 CJ236</td>
+      <td>NEB (E4141)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bacteria (E. coli)</td>
+      <td>10 beta</td>
+      <td>NEB (C3020K)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiGuide</td>
+      <td>Addgene (52963)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCRISPRv2</td>
+      <td>Addgene (52961)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PLKO.1</td>
+      <td>Addgene (8453)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPax2</td>
+      <td>Addgene (12260)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene (12259)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>E.Z.N.A. M13 DNA Mini Kit</td>
+      <td>Omega Bio-Tek (D69001-01)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>GeneJET Gel extraction kit</td>
+      <td>Thermo Fisher (K0692)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Plasmid Maxi Kit</td>
+      <td>Qiagen (12163)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>PureLink Genomic DNA Mini Kit</td>
+      <td>Invitrogen (K1820-01)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Roth (K029.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloramphenicol</td>
+      <td>Roth (3886.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kanamycin</td>
+      <td>Roth (T832.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Roth (31434)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>NEB (756)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT</td>
+      <td>Cell Signaling Technology Europe (7016)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dNTP mix</td>
+      <td>Roth (0178.1/2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Sigma-Aldrich (P4333)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin</td>
+      <td>Capricorn Scientific (HYG-H)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamin 2000</td>
+      <td>Thermo Fisher (11668019)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma Aldrich (H9268)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin</td>
+      <td>Selleckchem (S1208)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bay-CysLT2</td>
+      <td>Cayman Chemical (10532)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bay-u9773</td>
+      <td>Tocris Bioscience (3138)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 DNA ligase</td>
+      <td>NEB (M0202)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T7 DNA polymerase (unmodified)</td>
+      <td>NEB (M0274)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 mm electroporation cuvette</td>
+      <td>BTX (45–0125)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gene Pulser electroporation system</td>
+      <td>BioRad (164–2076)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>I-SceI</td>
+      <td>NEB (R0694)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM</td>
+      <td>Thermo Fisher (41965–039)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM/F12</td>
+      <td>Thermo Fisher (11320–074)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS</td>
+      <td>Thermo Fisher (10270)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M13KO7 helper phage</td>
+      <td>NEB (N0315)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Polyethylene glycol</td>
+      <td>Roth (263.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SOC outgrowth medium</td>
+      <td>Thermo Fisher (15544034)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2YT medium</td>
+      <td>Roth (6676.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 polynucleotide kinase</td>
+      <td>NEB (M0201)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T7 endonuclease</td>
+      <td>NEB (M0302)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>OneTaq DNA polymerase</td>
+      <td>NEB (M0480)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Next High-Fidelity 2x PCR Master Mix</td>
+      <td>NEB (M0541)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NextSeq 500</td>
+      <td>Illumina</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2fastq</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_015058</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt v.1.15</td>
+      <td>Martin, 2011</td>
+      <td>RRID:SCR_011841</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CasOFFinder v2.4</td>
+      <td>Bae et al., 2014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnpEff 4.3T</td>
+      <td>Cingolani et al., 2012</td>
+      <td>RRID:SCR_005191</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAGeCK</td>
+      <td>Li et al., 2014</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning of 3Cs template plasmids
 
 The NHT and I-SceI gRNA sequences (see 'DNA oligonucleotides') were annealed and cloned into pLentiGuide (Addgene 52963) and pLentiCRISPRv2 (Addgene 52961) via BsmBI restriction enzyme digest (NEB, R0580) and subsequent ligation with T4 ligase (NEB, M0202). Correct clones were identified by Sanger sequencing at Microsynth SeqLab, Switzerland, using a U6 primer (see 'DNA oligonucleotides').
 
-## 3Cs oligonucleotide design
+### 3Cs oligonucleotide design
 
 All of the 3Cs oligonucleotides that were used in experiments are listed in 'DNA oligonucleotides'. DNA oligonucleotides were purchased from Sigma-Aldrich and Integrated DNA Technologies (IDT) as single or pooled oligonucleotides, and from Twist Bioscience or CustomArray Inc. as oligonucleotide pools. The 3Cs oligonucleotides were designed with two homology regions flanking the intended 20-nt gRNA sequence. The homology regions were at least 15 nt in length (Tm above 50°C) and matched the 3′ end of the U6 promoter region and the 5′ start of the gRNA scaffold in the template plasmids. The TGW and the oTGW 3Cs oligonucleotides were designed on the basis of a pattern of nucleotide preferences as previously determined (Doench et al., 2014; Doench et al., 2016). The observed nucleotide preferences were translated into a degenerated 17-nt DNA sequence (oTGW, see 'DNA oligonucleotides'). The randomized oligonucleotides for the six libraries of increasing diversity each had stretches of an increasing number of fully randomized nucleotides (see 'DNA oligonucleotides'). The oligonucleotide with four randomized positions was designed to contain the stretch of four consecutive Ns beginning at position 30 of the oligonucleotide. Oligonucleotides with increasing randomization were designed by extending the randomized pattern in an alternating fashion left and right by one randomized position each. The randomized segments and the flanking constant regions were designed to replace the I-SceI recognition site in the template plasmid to enable the clean-up digestion step. In general, every gRNA was designed to avoid the occurrence of the I-SceI recognition site.
 
-## Overview of reagents and equipment needed for the synthesis of 3Cs
+### Overview of reagents and equipment needed for the synthesis of 3Cs
 
-## Equipment
+#### Equipment
 
 Desktop microcentrifuge, shaking incubator at 37°C, 1.5 ml collection tubes, filtered sterile pipette tips, thermoblocks at 90°C and 50°C (e.g., Thermo Fisher, 88870004), an ultracentrifuge capable of spinning 50 ml falcon tubes at 10,000 rpm (Beckman Coulter Avanti J-30 I ultracentifuge and a Beckman JA-12 fixed angle rotor), falcon tubes (polypropylene, 50 ml (Corning 352070)), a Bio-Rad Gene Pulser electroporation system (BioRad 164–2076), electroporation cuvettes Plus (2 mm, Model no. 620 (BTX)), a gel electrophoresis chamber, and erlenmeyer flasks (glass, 100 ml).
 
-## KCM Transformation
+##### KCM Transformation
 
 5x KCM buffer (0.5M KCl, 0.15M CaCl2, 0.25M MgCl2), Escherichia coli strain K12 CJ236 (NEB, E4141), SOC outgrowth medium (ThermoFisher Scientific, 15544034), LB-agar plates supplemented with 100 µg/ml ampicillin (Roth, K029.2).
 
-## Phage amplification and ssDNA purification
+##### Phage amplification and ssDNA purification
 
 2YT media (Roth, 6676.2), M13KO7 helper phage (NEB, N0315), ampicillin (Roth, K029.2), chloramphenicol (Roth, 3886.1), kanamycin (Roth, T832.3), uridine (Sigma-Aldrich, U3750), 20% PEG/NaCl (20% polyethylene glycol (Roth, 0263.2), 2.5 M NaCl (Roth, 31434)), Dulbecco’s phosphate-buffered saline (PBS, Sigma, D8662), E.Z.N.A. M13 DNA Mini Kit (Omega Bio-Tek, D69001-01), store purified phage in PBS at 4°C.
 
-## 3Cs-DNA synthesis
+##### 3Cs-DNA synthesis
 
 10x TM buffer (0.1 M MgCl2, 0.5 M Tris-HCl, pH 7.5), 10 mM ATP (NEB, 0756), 100 mM DTT (Cell Signaling Technology Europe, 7016), T4 polynucleotide kinase (NEB, M0201), 100 mM dNTP mix (Roth, 0178.1/2), T4 DNA ligase (NEB, M0202), T7 DNA polymerase (unmodified) (NEB, M0274), Thermo Fisher Scientific GeneJET Gel Extraction Kit (Thermo Fisher, K0692), 3M sodium acetate (Sigma-Aldrich, 71196).
 
-## Electroporation and I-SceI clean-up digest
+##### Electroporation and I-SceI clean-up digest
 
 2 mm cuvette (BTX, 45–0125), electrocompetent E. coli (10-beta, NEB, C3020K), SOC outgrowth medium (Thermo Fisher, 15544034), LB-media (Roth, X964.3) supplemented with 100 µg/ml ampicillin, Qiagen Plasmid Maxi Kit (Qiagen, 12163), I-SceI (NEB, R0694), NEB CutSmart buffer (NEB, B7204), 0.5% TAE/agarose gel, Thermo Fisher Scientific GeneJET Gel Extraction Kit.
 
-## dU-ssDNA template amplification
+### dU-ssDNA template amplification
 
 Bacteria (Escherichia coli strain K12 CJ236, NEB, E4141) were transformed with 500 ng of template plasmid according to the following protocol: DNA was mixed with 2 µl of 5x KCM buffer (0.5M KCl, 0.15M CaCl2, 0.25M MgCl2) set to 10 µl with water and chilled on ice for 10 min. An equal volume of CJ236 bacteria was added to the DNA/KCM mixture, gently mixed, and incubated on ice for 15 min. The bacteria–DNA mixture was then incubated at room temperature for 10 min, and subsequently inoculated into 200 µl of prewarmed SOC media (ThermoFisher Scientific, 15544034). Bacteria were incubated at 37°C and 200 rpm for 1 hr and then selected with ampicillin (100 µg/ml) on LB-agar plates overnight at 37°C.
 
 The next morning, a single colony of transformed CJ236 was picked into 1 ml of 2YT media (Roth, 6676.2) supplemented with M13KO7 helper phage (NEB, N0315) to a final concentration of 1 × 108 pfu/ml, chloramphenicol (final concentration 35 µg/ml), and ampicillin (final concentration 100 µg/ml) to maintain the host F′ episome and the phagemid, respectively. Supplementation of uridine (Sigma-Aldrich, U3750) was set to 2.5 µM. After 2 hr of shaking at 200 rpm and 37°C, kanamycin was added to a final concentration of 25 µg/ml to select for bacteria that have been infected with M13KO7 helper phage. Bacteria were kept at 200 rpm and 37°C for an additional 6 hr before the culture was transferred to 30 ml of 2YT media supplemented with ampicillin (final concentration 100 µg/ml) and kanamycin (final concentration 25 µg/ml). After 20 hr of shaking at 200 rpm and 37°C, the bacterial culture was centrifuged for 10 min at 10,000 rpm and 4°C in a Beckman JA-12 fixed angle rotor. To precipitate phage particles, the supernatant was transferred to 6 ml (1/5 of culture volume) PEG/NaCl (20% polyethylene glycol 8,000, 2.5 M NaCl), incubated for 1 hr at room temperature and subsequently centrifuged for 10 min at 10,000 rpm and 4°C in a Beckman JA-12 fixed angle rotor. The phage pellet was resuspended in 1 ml Dulbecco’s phosphate-buffered saline (PBS, Sigma, D8662) and centrifuged at 13,000 rpm for 5 min, before the phage-containing supernatant was stored at 4°C. Circular ssDNA was purified from the resuspended phages with the E.Z.N.A. M13 DNA Mini Kit (Omega Bio-Tek, D69001-01) according to the manufacturer’s protocol, and purified ssDNA was stored at 4°C.
 
-## 3Cs-DNA synthesis
+### 3Cs-DNA synthesis
 
 The oligonucleotides that were used for 3Cs reactions and the suppliers are listed separately (see 'DNA oligonucleotides'). 3Cs oligonucleotides for specific pools were mixed in equimolar ratios. 600 ng of pooled oligonucleotides were phosphorylated by mixing them with 2 µl 10x TM buffer (0.1 M MgCl2, 0.5 M Tris-HCl, pH 7.5), 2 µl 10 mM ATP (NEB, 0756), 1 µl 100 mM DTT (Cell Signaling Technology Europe, 7016), 20 units of T4 polynucleotide kinase (NEB, M0201) and water to a total volume of 20 µl. The mixture was incubated for 1 hr at 37°C.
 
@@ -155,7 +547,7 @@ Phosphorylated oligonucleotides were annealed to the circular dU-ssDNA template 
 
 3Cs-DNA was generated by adding 10 µl of 10 mM ATP, 10 µl of 100 mM dNTP mix (Roth, 0178.1/2), 15 µl of 100 mM DTT, 2000 ligation units of T4 DNA ligase (NEB, M0202), and 30 units of T7 DNA polymerase (NEB, M0274) to the annealed oligonucleotide–ssDNA mixture. The 3Cs synthesis mix was incubated for 12 hr (overnight) at room temperature. The 3Cs synthesis product was then affinity purified and desalted using a Thermo Fisher Scientific GeneJET Gel Extraction Kit (Thermo Fisher, K0692) according to the following protocol: 600 µl of binding buffer and 5 µl 3M sodium acetate (Sigma-Aldrich, 71196) were added to the synthesis product, mixed and applied to two purification columns, which were centrifuged for 3 min at 460 g (2,500 rpm in a Sigma-Aldrich 1–14 table top centrifuge). The flow-through was applied a second time to the same purification column to maximize yield and centrifuged for 3 min at 460 g. DNA was eluted in 40 µl warm water. The 3Cs reaction product was analyzed by gel electrophoresis alongside the dU-ssDNA template on a 0.8% TAE/agarose gel (100 V, 30 min). 3Cs-shRNA libraries were synthesized according to the protocol described above with the following modifications: in two setups, either 60 ng or 120 ng of circular template dU-ssDNA of pLKO.1 (Addgene: 1864) was used.
 
-## Electroporations and I-SceI clean-up digest
+### Electroporations and I-SceI clean-up digest
 
 To generate pool 1 (P1) of a library, 3Cs-DNA constructs were electroporated with a cold 2 mm cuvette (BTX, 45–0125) into electrocompetent E. coli (10-beta, NEB, C3020K) using a Bio-Rad Gene Pulser with the following settings: resistance 200 Ohm, capacity 25 F, voltage 2.5 kV. 2 µg of DNA was mixed with 400 µl of freshly thawed cells. Electroporated cells were rescued in 25 ml of pre-warmed SOC media and incubated for 30 min at 37°C and 200 rpm.
 
@@ -163,43 +555,43 @@ After 30 min of incubation, a dilution series was performed to determine the tra
 
 To generate the final pool 2 (P2) of a library, 10 µg of purified P1 DNA was digested with 50 units I-SceI (NEB, R0694) and 5 µl NEB CutSmart buffer (NEB, B7204) in a reaction volume of 50 µl for 1.5 hr at 37°C. The digestion reaction was subjected to gel electrophoresis on a 0.5% TAE/agarose gel (100 V, 30 min) to separate the undigested 3Cs synthesis product from linearized template plasmid. The band resembling the undigested correct 3Cs synthesis product was purified using a Thermo Fisher Scientific GeneJET Gel Extraction Kit according to the manufacturer’s protocol. In a second step, the purified 3Cs synthesis product was electroporated according to the electroporation protocol described above. The final P2 library preparation was purified from liquid culture using a Qiagen Plasmid Maxi Kit according to the manufacturer’s protocol and quality controlled with analytical restriction enzyme digests. 3Cs-shRNA pools were generated according to the above protocol with the following modifications. Instead of using I-SceI for the clean-up digestion, we used Bsu36I to digest template plasmid remnants in the first DNA pool (P1). P1 was electroporated using the settings described above to yield the final pool (P2). Both 3Cs-shRNA pools were purified from liquid culture using a Qiagen Plasmid Maxi Kit according to the manufacturer’s protocol and were quality controlled with analytical restriction enzyme digests and Sanger sequencing.
 
-## Cell culture
+### Cell culture
 
 HEK293T cells (ATCC, CRL-3216) were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM, Thermo Fisher Scientific, 41965–039) and hTERT–RPE1 cells (ATCC, CRL-4000 and Ian Cheeseman’s) in DMEM: Nutrient Mixture F-12 (DMEM/F12, Thermo Fisher Scientific, 11320–074), each supplemented with 10% fetal bovine serum (FBS, Thermo Fisher Scientific, 10270) and 1% penicillin-streptomycin (Sigma-Aldrich, P4333) at 37°C with 5% CO2. In addition, hTERT–RPE1 cells were supplemented with 0.01 mg/ml hygromycin B (Capricorn Scientific, HYG-H). hTERT–RPE1 cells were obtained from ATCC/LGC (CRL-4000) and Ian Cheeseman. No method to ensure the state of authentication has been applied. Mycoplasma contamination testing was performed immediately after the arrival of the cells and multiple times during the course of the experiments.
 
-## Cell extracts and antibodies
+### Cell extracts and antibodies
 
 Preparation of lysates and immunoblot analyses were performed as described previously using Tris lysis buffer (50 mM Tris–HCl (pH 7.8), 150 mM NaCl, 1% IGEPAL CA-630) containing 20 mM NaF, 20 mM β-glycerophosphate, 0.3 mM Na-vanadate, 20 μg/ml RNase A, 20 μg/ml DNase and 1/300 protease inhibitor cocktail (Sigma-Aldrich, P8340) and phosphatase inhibitor cocktail #2 (Sigma-Aldrich, P5726) (Kaulich et al., 2015). The antibodies used in this study were purchased from the following sources: mouse anti-GFP (GFP (B-2): sc-9996, 1:2,000, Santa Cruz Biotechnology, Inc.), mouse anti-Tubulin (clone 12G10, 1:1,000, Developmental Studies Hybridoma Bank, University of Iowa). Secondary antibodies used for western blot analysis were goat anti-mouse (Thermo Scientific, 31430) and goat anti-rabbit (Thermo Scientific, 31460). The mouse anti-Tubulin hybridoma cell line (clone #12G10) was developed by J. Frankel and E.M. Nelson under the auspices of the NICHD and maintained by the Developmental Studies Hybridoma Bank. Protein levels were visualized with Pierce ECL Western Blotting Substrate on a BioRad ChemiDoc MP imaging system and analyzed with Bio-Rad Image Lab software (version 4.1 build 16).
 
-## Generation and quantification of lentiviral particles
+### Generation and quantification of lentiviral particles
 
 The day before transfection, HEK293T cells were seeded to 5 × 105 cells/ml. To transfect HEK293T cells, transfection media containing 1/10 of culture volume Opti-MEM I (Thermo Fisher Scientific, 31985–047), 10.5 µl Lipofectamin 2000 (Thermo Fisher Scientific, 11668019), 1.65 µg/ml transfer vector, 1.35 µg/ml pPAX2 (Addgene, 12260) and 0.5/ml µg pMD2.G (Addgene, 12259) was prepared. The mixture was incubated for 30 min at room temperature and added drop-wise to the media. The next morning, the transfection medium was replaced with fresh media to remove the transfection reagent. Lentiviral supernatant was harvested at 24 hr and 48 hr after transfection, pooled and stored at −80°C.
 
-To determine the lentiviral titer, hTERT–RPE1 cells were plated in a 24-well plate with 20,000 cells per well. The following day, cells were transduced using 8 µg/ml polybrene (Sigma, H9268) and a series of 0.5, 1, 5, and 10 µl of viral supernatant. After 3 days of incubation at 37°C, the percentage of fluorescence-positive cells was determined by flow cytometry. The following formula was used to calculate the viral titer: Virustiter(transducingunits/mL)=20.000targetcells×\% ofGFPpositivecells100volumeofsupernatant(mL).
+To determine the lentiviral titer, hTERT–RPE1 cells were plated in a 24-well plate with 20,000 cells per well. The following day, cells were transduced using 8 µg/ml polybrene (Sigma, H9268) and a series of 0.5, 1, 5, and 10 µl of viral supernatant. After 3 days of incubation at 37°C, the percentage of fluorescence-positive cells was determined by flow cytometry. The following formula was used to calculate the viral titer: $Virustiter(transducingunits/mL)=\frac{20.000targetcells\times\frac{\% ofGFPpositivecells}{100}}{volumeofsupernatant(mL)}$.
 
 Alternatively, lentiviral titers were determined by colony formation titering assay for lentivirus.
 
-## Flow cytometry
+### Flow cytometry
 
 All samples were analyzed on a FACSCanto II flow cytometer (BD Biosciences), and data were processed by FlowJo software (FlowJo, LLC). Gating was carried out on the basis of viable and single cells that were identified on the basis of their scatter morphology.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 hTERT–RPE1 cells were seeded at an appropriate density for each experiment with a maximal confluency of 60–70% in DMEM/F12, supplemented with 10% FBS, 0.02 µg/ml hygromycin, and 1% penicillin-streptomycin. On the day of transduction, polybrene was added to the media to a final concentration of 8 µg/ml. The volume of lentiviral supernatant was calculated on the basis of the diversity of the respective library and of the desired coverage and multiplicity of infection (MOI) of the experiment. The number of cells that were transduced at the beginning of an experiment was calculated by multiplying the diversity of the library with the desired coverage and the desired MOI. For example, the parameters for the DUB library screen were set at a coverage of 1.000 and an MOI of 0.2, that is one lentiviral particle per five cells. The total number of cells that were transduced was calculated as follows: 363 * 1,000 * 5 = 1,815,000. The next morning, the medium was replaced with fresh media and the cells were subjected to antibiotic selection or experimental analysis.
 
-## Homology arm lengths and 3Cs reaction times
+### Homology arm lengths and 3Cs reaction times
 
 To test different homology arm lengths, four 3Cs reactions were performed using four different oligonucleotides with increasing lengths of homology to the pLentiGuide NHT, according to the 3Cs synthesis protocol described above. The reaction products were analyzed by gel electrophoresis.
 
 To monitor the 3Cs synthesis process over time, we annealed the TGW oligonucleotide to the pLentiGuide NHT and generated 3Cs-dsDNA. 2 µl of the reaction was sampled from the reaction tube and transferred to −20°C at different timepoints from 0 hr to 20 hr. All samples were analyzed together by agarose gel electrophoresis. To visualize the kinetics of the 3Cs reactions, 3Cs-dsDNA band intensities were determined and normalized to time point 0 before plotting against the time of their harvest using the Bio-Rad Image Lab software (version 4.1 build 16).
 
-## eGFP gene editing and T7 endonuclease I assay
+### eGFP gene editing and T7 endonuclease I assay
 
 The efficiency of eGFP gene editing was analyzed by transducing eGFP-expressing hTERT–RPE1 cells with 3Cs gRNA constructs based on pLentiCRISPRv2, a subsequent T7 Endonuclease I assay, and immunoblotting. The experiment was performed in triplicates using a control gRNA (NHT), a single GFP-targeting 3Cs-gRNA (GFP#1) or a pool of six GFP-targeting 3Cs-gRNAs (GFP#1–6). After 7 d of incubation at 37°C without antibiotic selection, cells were trypsinized and the genomic DNA was purified using a PureLink Genomic DNA Mini Kit (Invitrogen, K1820-01) according to the manufacturer’s protocol.
 
 To assess the genome targeting efficiency of the 3Cs reagents, we analyzed the four cell populations that were transduced with the NHT-gRNA, the GFP#1 gRNA or the GFP#1–6 pool, or that were not transduced at all. We PCR-amplified the GFP locus with OneTaq DNA polymerase (NEB, M0480) using 1 µg of genomic DNA, 40 µM dNTPs (final concentration), 0.2 µM of each forward and reverse amplification primer (see 'DNA oligonucleotides: eGFP T7 forward and eGFP T7 reverse'), 10x OneTaq standard buffer, and 2.5 units of OneTaq DNA polymerase. The cycles were set up as follows: initial denaturation at 94°C for 3 min, 39 cycles of denaturation at 94°C for 20 s, annealing at 55°C for 30 s, strand extension at 68°C for 2 min, and final strand extension at 68°C for 5 min. The PCR products were analyzed on a 0.8% TAE/agarose gel (100 V, 30 min) and purified using a Thermo Fisher Scientific GeneJET Gel Extraction Kit according to the manufacturer’s protocol. The T7 endonuclease I digestion was assembled with 6 µg of purified PCR product, 10x NEBuffer 2 water to 48 µl, denatured at 95°C for 5 min, and annealed in two steps from 95–85°C with −2 °C/second, and from 85–25°C with −0.1 °C/second. To the annealed PCR product, 7 µl of T7 Endonuclease I (NEB, M0302) was added and incubated for 15 min at 37°C. The fragmented PCR products were analyzed on a 0.8% TAE/agarose gel (100 V, 30 min) and band intensities were determined using the Bio-Rad Image Lab software (version 4.1 build 16).
 
-## DUB proliferation screen
+### DUB proliferation screen
 
 The DUB proliferation screen was performed in biological duplicates. hTERT–RPE1 cells were transduced with lentiviral supernatant with a MOI of 0.2 and a library coverage of 1,000. For each replicate and time point, 2.5 million cells were seeded. Cells corresponding to the control time point were harvested 2 d post-transduction. All remaining cells were kept in growing and library-diversity-maintaining conditions in the presence of 10 µg/ml puromycin. After 11 d and 21 d, cells were harvested and their genomic DNA purified and processed for NGS. Validation of DUB screen hit candidates was performed in hTERT–RPE1 cells with 3Cs-shRNA-mediated target gene knockdown and the subsequent assessment of cell proliferation used an AlamarBlue assay (Bio-Rad, BUF012A).
 
@@ -207,40 +599,40 @@ Doxorubicin-resistance-screen hTERT–RPE1 cells were treated with increasing co
 
 To screen for doxorubicin resistance, the TGW library was delivered in triplicates to a total of 5.5 × 108 hTERT–RPE1 cells with doxycycline-inducible Cas9 expression via lentiviral transduction at a MOI of 1. Transduced cells were cultured for 7 d in standard medium supplemented with 1 µM doxycycline (Sigma-Aldrich) and 10 µg/ml puromycin. At day 7, the medium was changed to selection medium containing 1 µM doxorubicin (Selleckchem, S1208). After 3 wk of selection (fresh doxorubicin every 4 d), surviving cells were harvested and processed for NGS.
 
-## NGS of plasmid and genomic DNA
+### NGS of plasmid and genomic DNA
 
 To purify genomic DNA, surviving cells were trypsinized and pelleted. Genomic DNA was extracted using the PureLink Genomic DNA Mini Kit according to the manufacturer’s protocol. For NGS library preparation, 100 ng of plasmid or up to 2 µg of genomic DNA per reaction was used in a 50 µl PCR reaction using Next High-Fidelity 2x PCR Master Mix (NEB, M0541) (according to the manufacturer’s protocol) and 1 µl of 10 µM primers each of forward and reverse primers. Primer sequences are listed separately (see 'DNA oligonucleotides'). The sequencing primers contained an 8-nt long barcode sequence, enabling the multiplexing of several samples in a single sequencing run and Illumina adapter sequences. Thermal cycler parameters were set as follows: initial denaturation at 98°C for 5 min, 19 cycles of denaturation at 98°C for 30 s, annealing at 55°C for 30 s, extension at 72°C for 1 min, and final extension at 72°C for 5 min. PCR products were purified from a 0.5% TAE/agarose gel using a Thermo Fisher Scientific GeneJet Gel Extraction Kit according to the manufacturer’s protocol. The purified PCR product was prepared to a final concentration of 2.4 pM in a total volume of 2.2 ml and loaded onto a NextSeq 500 sequencer (Illumina), according to the manufacturer’s protocol. Sequencing was performed with single end reads, 75 cycles and 8 cycles of single index reading.
 
-## Data processing and analysis
+### Data processing and analysis
 
-All data obtained from NGS were demultiplexed using the Illumina command line tool bcl2fastq, v2.17. gRNA representation of all libraries was assessed using cutadapt v1.15 (Martin, 2011) and custom Python scripts. In brief, 3′ sequencing adapters were trimmed using a prefix of the 3′ homology sequence; trimmed reads were further trimmed by keeping only the last 20 nucleotides for all libraries except the oTGW, for which the last 17 nt were kept. Only reads with no ambiguously sequenced nucleotides were considered for further analyses. For the TGW and the oTGW, the resulting sequences were compared to the TGW or oTGW DNA sequence pattern, respectively, using Python and regular expressions. The reads obtained from sequencing the six randomized libraries with diversities ranging from 256 to 262,144 gRNAs were processed similarly by comparing the trimmed reads with the gRNA pattern of the respective library. For the GFP and DUB libraries, the reads were aligned to the respective sequence library. Matching sequences were counted to determine the read count distribution of a sample. The read counts of individual gRNAs for a sample were normalized by the total number of read counts that could be assigned to the respective library. The screening of samples after treatment of the cells was carried out in the same way. To determine the dispersion of the read counts, the coefficient of variation was computed by dividing the standard deviation of the normalized read counts by the mean of the normalized read count x¯, CV=sx¯. To assess the uniformity of each library distribution, we generated Lorenz curves of gRNA representation. The Lorenz curves of gRNA representation rank gRNAs by abundance scaled to 1 and show the fraction of total sequencing reads that are represented by the sum of gRNA read counts. The area under the curve (AUC) was computed in GraphPad Prism 5.0b for Mac (GraphPad Software, La Jolla California USA, www.graphpad.com) or with a custom Python script using Numpy 1.14.2 (Oliphant, 2010). Heat maps were generated by accumulating the nucleotide frequency at each position of the sequenced reads and normalized by the total number of read counts.
+All data obtained from NGS were demultiplexed using the Illumina command line tool bcl2fastq, v2.17. gRNA representation of all libraries was assessed using cutadapt v1.15 (Martin, 2011) and custom Python scripts. In brief, 3′ sequencing adapters were trimmed using a prefix of the 3′ homology sequence; trimmed reads were further trimmed by keeping only the last 20 nucleotides for all libraries except the oTGW, for which the last 17 nt were kept. Only reads with no ambiguously sequenced nucleotides were considered for further analyses. For the TGW and the oTGW, the resulting sequences were compared to the TGW or oTGW DNA sequence pattern, respectively, using Python and regular expressions. The reads obtained from sequencing the six randomized libraries with diversities ranging from 256 to 262,144 gRNAs were processed similarly by comparing the trimmed reads with the gRNA pattern of the respective library. For the GFP and DUB libraries, the reads were aligned to the respective sequence library. Matching sequences were counted to determine the read count distribution of a sample. The read counts of individual gRNAs for a sample were normalized by the total number of read counts that could be assigned to the respective library. The screening of samples after treatment of the cells was carried out in the same way. To determine the dispersion of the read counts, the coefficient of variation was computed by dividing the standard deviation of the normalized read counts by the mean of the normalized read count $x¯$, $CV=\frac{s}{x¯}$. To assess the uniformity of each library distribution, we generated Lorenz curves of gRNA representation. The Lorenz curves of gRNA representation rank gRNAs by abundance scaled to 1 and show the fraction of total sequencing reads that are represented by the sum of gRNA read counts. The area under the curve (AUC) was computed in GraphPad Prism 5.0b for Mac (GraphPad Software, La Jolla California USA, www.graphpad.com) or with a custom Python script using Numpy 1.14.2 (Oliphant, 2010). Heat maps were generated by accumulating the nucleotide frequency at each position of the sequenced reads and normalized by the total number of read counts.
 
 To correct the read counts of the six randomized libraries with diversities ranging between 256 and 262,144 gRNAs for C bias, we determined the nucleotide frequencies for each sequence position of the trimmed and final reads and normalized the observed frequencies to the expected nucleotide frequency of 25%. Each read was then scored by summing the normalized frequencies for all reads individually. The observed read count per gRNA was then multiplied with this score, divided by the sum of all read counts that matched the respective gRNA pattern, and normalized to the sum of all corrected and normalized read counts. Lorenz curves were generated on the basis of the corrected and normalized read counts.
 
 Read count data from the DUB screen were analyzed by summing all individual gRNA read counts per gene and normalizing each gene read count per sample to the total number of read counts within that sample. Spearman correlation and Shapiro-Wilk confidence tests were performed to assess the reproducibility of the DUB screen replicates. MAGeCK and PinAPL-Py were used to analyze the read counts of both replicates and to calculate aggregated positive and negative proliferation phenotypes by means of log2 fold changes with associated p-values.
 
-## Analysis of gRNA on- and off-target locations
+### Analysis of gRNA on- and off-target locations
 
 To determine the on- and off-targets of the 4232 hits from the doxorubicin resistance screen, Cas-OFFinder (v2.4) was applied to search the human genome (GRCh38.86) for gRNA target sites with up to two mismatches (Bae et al., 2014). The genomic positions of each on- and off-target were annotated with Ensembl genome assembly GRCh38.86, using SnpEff 4.3T (Cingolani et al., 2012) and custom Python scripts. Multiple annotations for a location were collapsed onto a single gene type and the corresponding gene name, if available. Genomic locations associated with an intergenic region were not considered to be annotated. Additional noncoding, regulatory, and pseudogene information was annotated using the Ensembl regulatory and motif features from release 91 and the Gencode consensus pseudogenes dataset from release 27 (GRCh38.p10). Additional standard annotation data from Gencode, release 27, were also included. Spearman rank and Pearson correlation were computed with NumPy (1.14.2). To determine the putative effect of gRNA off-targets on previously identified on-target locations, we mapped the gene names that were associated with off-targets back to the genes that were associated with on-target hits.
 
-## Validation of TGW doxorubicin-resistance screening hits
+### Validation of TGW doxorubicin-resistance screening hits
 
 To validate CysLTR2 as a doxorubicin-resistance-inducing gene, we applied the CysLT2 receptor antagonists Bay-CysLT2 (Cayman Chemical, 10532) and Bay-u9773 (Tocris Bioscience, 3138). In two different triplicates, cells were treated with with increasing concentrations (0 µM, 0.01 µM, 0.05 µM, 0.1 µM, 0.25 µM, 0.5 µM, 0.5 µM, 1 µM) of each inhibitor as well as with increasing doxorubicin concentrations (0 µM, 1 µM, and 10 µM). After 4 d, cell survival was assessed with an AlamarBlue assay. 10% AlamarBlue was added to the cultured cells and incubated for 2 hr at 37°C, and fluorescence was measured with an excitation wavelength of 560 nm and a fluorescence emission of 590 nm on a BioTek Synergy H1 microplate reader. The given measured fluorescence emissions were averaged over all replications for each experiment.
 
 The 4,232 hits that were found in the TGW doxorubicin screen were compiled into an individual 3Cs library (validation library). The validation library was generated according to the 3Cs DNA synthesis protocol described above. We seeded 1 × 106 hTERT–RPE1 in T175 cell culture flasks in DMEM/F12 and transduced them the next day with lentivirus of the validation library using 8 µg/ml polybrene with an MOI of 0.1 and an experimental coverage of 1,000. After 3 d, the control cells were harvested. The screen was conducted with 2.5 µg/ml (final concentration) puromycin selection and 1 µM doxorubicin treatment. The medium was changed every third day to maintain constant puromycin and doxorubicin concentrations. After three weeks of selection, surviving cells were harvested and processed for NGS according to the procedures described above.
 
-## Molecular signatures of coding and noncoding hits
+### Molecular signatures of coding and noncoding hits
 
 Hits for targets with zero, one and two mismatches were merged and divided in two subsets according to the annotation, consisting of protein coding hits and noncoding hits, respectively. For the coding hits gene set, a set of 159 non-redundant genes was created from all hits with target sites in protein-coding genes. The frequency of each gene was determined. For the remaining hits, the five closest genes upstream and the five closest genes downstream of the target site were determined using GRCh.93 Ensembl gene data. The starting position of a gene and the starting position of a target site was taken as measure for proximity. A noncoding-hits gene set of 1,805 non-redundant genes was created and the frequency of each gene was determined. Overlaps between both gene sets and all gene sets in the Molecular Signatures Database (MSigDB) were computed using the MiSigDB Web Application to Investigate Gene Sets with a FDR q-value below 0.05 (Subramanian et al., 2005; Liberzon et al., 2011), Heatmaps with the top four overlapping gene sets were created using the resulting Excel tables (Figure 5H, Supplementary files 13–14 and the Python visualization library seaborn 0.9.0 (Waskom et al., 2014).To collect interaction data, we searched the 25 genes that were associated with 'down in ERCC3 mutated cells’ in the String 10.5 database by choosing up to five interactors in the first and second shell (Szklarczyk et al., 2017) (Figure 5I).
 
-## Data availability
+### Data availability
 
 NGS data are provided as raw read count tables as Supplementary files 1, and 17–23. Please note, raw read count tables associated with TGW and the three oTGW libraries are available from Dryad, https://doi.org/10.5061/dryad.rs432pr. Plasmids encoding oTGW 3Cs-gRNA libraries will be available through the Goethe University Depository (http://www.innovectis.de/INNOVECTIS-Frankfurt/Technologieangebote/Depository).
 
-## Code availability
+### Code availability
 
 Custom software is publicly available from GitHuB, https://github.com/GEG-IBC2/3Cs (GEG-IBC2, 2019; copy archived at https://github.com/elifesciences-publications/3Cs).
 
-## DNA oligonucleotides
+### DNA oligonucleotides
 
 DNA oligonucleotides were purchased from Sigma-Aldrich and Integrated DNA Technologies (IDT) as single or pooled oligonucleotides, and from Twist Bioscience or CustomArray Inc. as oligonucleotide pools. A detailed list of all oligonucleotides can be found as supplementary information (Supplementary file 16).

@@ -39,13 +39,57 @@ As organisms have evolved, it has been essential that they acquire the means to 
 
 We performed fiber photometry recordings from CeA Vgat neurons in awake, behaving mice to assess the activity of CeA neurons in relation to evoked itch/scratch behaviors. To record real-time Ca2+ dynamics in the CeA (Cui et al., 2013), we expressed the genetically encoded calcium indicator, GCaMP6s, in CeA GABAergic neurons using viral delivery of Cre-dependent GCaMP6s in Vgat-IRES-Cre mice (Figure 1a, Figure 1—figure supplement 1a–c). As the majority of CeA neurons are GABAergic (Swanson and Petrovich, 1998), this approach allows us to target the CeA and avoid picking up photometry signals from neighboring BLA neurons, as could occur if we used non Cre-dependent GCaMP6. Subcutaneous injection of chloroquine in the nape of the neck induced scratching behavior and resulted in robust increases in CeA neuronal activity (Figure 1b). This activity commenced with initiation of scratching and stabilized whenever scratching stopped (Figure 1c–e), suggesting that the elevated activity was tightly coupled with the act of scratching. Consistent with these real-time dynamic recordings, activity-dependent mapping studies show robust cFos labeling bilaterally in the CeA following chloroquine injection in the nape of the neck compared to saline-injected mice (Figure 2—figure supplement 1a–c). We observed no significant differences in cFos labeling between right and left CeA (Figure 2—figure supplement 1d).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig1-v2.jpg)
+
+**Figure 1.:** (a) Scheme demonstrating viral injection strategy and fiber placement to record CeA Vgat neural activity in response to chloroquine. (b) Raw Ca2+ dynamics recorded from CeA Vgat neurons and their relationship to chloroquine-evoked scratching bouts (orange bars). (c) Heatmap showing Ca2+ dynamics of all trials of Vgat+ve vlPAG neurons relative to the initiation of chloroquine-evoked scratching bouts (time zero). (d) Averaged GCaMP6s fluorescence signal of CeA Vgat neurons showing rapid increases in fluorescence on the initiation of scratching bouts. Trace plotted as mean (blue line) ± SEM (gray shading), and the vertical line indicates initiation of scratching bouts. (e) Chloroquine-evoked scratching resulted in a significant increase in CeA Vgat neuronal activity as measured by this change in GCaMP6s fluorescence (N = 8, t test, t = 5.923, df = 14, p<0.0001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Scheme demonstrating viral injection strategy and fiber placement to record CeA Vgat neural activity in response to chloroquine. (b) Representative image of the CeA of Vgat Cre mice in which AAV-DJ-DIO-GCaMP6s is expressed and fiber placement for photometry. Scale bar, 200 μm. (c) Illustration showing the CeA viral spread of AAV-DJ-DIO-GCaMP6S injection.
+
 These observations provide cellular confirmation of prior reports (Mochizuki et al., 2014; Mochizuki et al., 2003; Papoiu et al., 2013) that indicated a possible role for the CeA in itch processing, but the underlying neural circuitry remains to be identified. If CeA neurons function as a key node in the circuit that tightly regulates sensory and affective component of itch, then their activation should trigger potentiation of the itch-scratching cycle and its aversive state. CeA neurons are molecularly heterogeneous and mediate diverse behaviors generally related to negative affect (John et al., 2015; Kalin et al., 2004; LeDoux, 2003; Ressler and Mayberg, 2007; Roozendaal et al., 2009; Tye et al., 2011), so we reasoned global manipulation of CeA neuronal activity would not provide the specificity needed to test the specific roles of chloroquine-activated neurons. To enable the desired selective manipulation of itch-specific neuronal populations in the CeA, we used ‘Targeted Recombination in Active Populations’ mice (Guenthner et al., 2013). These mice express the tamoxifen-dependent CreERT2 recombinase from the Fos promoter. CreERT2 expression is induced in neurons that were recently active. Catalytic activity of CreERT2 is stabilized in the presence of 4-hydroxytamoxifen (4-OHT), resulting in transgene recombination. By timing the administration of 4-OHT to coincide with recently increased neuronal activity during acute chloroquine stimuli, we can gain permanent genetic access to chloroquine-responsive CeA neurons (aka FosTRAP mice). To test the validity of this approach, we crossed FosTRAP mice to a Cre-dependent tdTomato flox-stop reporter line (Madisen et al., 2010). We injected chloroquine or saline into the nape of the neck, paired with injection of 4-OHT to induce Cre-mediated recombination of the tdTomato in activated (cFos-expressing) neurons (Figure 2a, b). FosTRAPing with chloroquine treatment produced robust tdTomato expression in both the right and left CeA (Figure 2c–e), and small number of neurons in saline-treated controls (Figure 2—figure supplement 1e–g), consistent with our cFos staining results above. This small population of saline TRAPed neurons could be due to the needle stick during the injection itself, and thus could label some pain-responsive CeA neurons. To confirm that the FosTRAPed neurons are specific to the chloroquine-evoked scratching, 1-week post-FosTRAP, we immunostained for c-Fos protein in mice that received an additional chloroquine injection just prior to sacrificing (Figure 2c, f). The majority of the tdTomato-positive CeA FosTRAPed neurons faithfully overlap with cFos-positive cells. These results demonstrate that we can efficiently gain genetic access to neurons that are activated by chloroquine.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig2-v2.jpg)
+
+**Figure 2.:** (a) FosTRAP strategy to selectively label chloroquine-activated neurons in the CeA. (b) Scheme illustrating experimental strategy. (c) FosTRAPing with chloroquine-evoked scratching produces robust tdTomato expression in the CeA. Colocalization of chloroquine-TRAPed neurons (red) in the CeA with cFos immunoreactivity (green) following a second administration of chloroquine 7 days post. Scale bar = 85 and 250 μm. (d) Quantification of the number of FosTRAPed neurons in left and right CeA after chloroquine injection. n = 3 per group. t test, t = 0.4339, df = 2, p=0.70. (e) Rostro-caudal distribution of chloroquine-TRAPed CeA neurons after chloroquine injection. (f) Colocalization of chloroquine-activated cFos with tdTomato+ve chloroquine-TRAPed neurons. Relative percentages of Fos+ve neurons that are tdTomato+ve and tdTomato+ve neurons that are Fos+ve. n = 6 per group. t test, t = 2.04 df = 10, p=0.048. (g) Scheme to selectively express optogenetic constructs in chloroquine-TRAPed CeA neurons. Illustration and representative section showing fiber optic placement above FosTRAPed CeA neurons expressing ChR2-eYFP (green). Scale bar, 100 μm. (h) Photostimulation (20 Hz) of chloroquine-TRAPed CeA neurons produces robust spontaneous scratching. n = 6–11 per group. Pre vs. Stim, F (1,30) = 3; eYFP vs. ChR2, F (1,14) = 3.24, p=0.0001, ANOVA and Bonferroni's for post hoc tests. (i) Increases in scratching are frequency dependent. n = 6 per group. (j) Optical activation of chloroquine-TRAPed CeA neurons potentiates chloroquine-evoked scratching while no changes were observed in control mice. n = 7 per group. Pre vs. Stim, F (1,12) = 33.15; BL vs. Stim in ChR2, F (1, 6) = 6.915, p=0.0391, ANOVA and Bonferroni's for post hoc tests.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Representative sections showing cFos labeling at low and high magnification following chloroquine injection in the nape of the neck. Scale bar 250 μm in left panel, 50 μm in the right panel. (b) Rostro-caudal distribution of CeA cFos+ ve neurons in CeA. (c) Number of c-Fos+ve neurons in the CeA after administering either saline or chloroquine. n = 4 per group, t = 4.801 df = 6, **p<0.01. (d) Quantification of total number of c-Fos+ve neurons in the left and the right CeA after administering chloroquine stimuli. n = 3 per group, t test, t = 0.01779, df = 4, p=0.9867. (e) FosTRAPing with saline produced very few tdTomato+ve cells. Scale bar, 75 μm. (f) Quantification of total number of saline FosTRAPed neurons in left and right CeA. n = 3 per group, t test, t = 0.188, df = 2, p=0.85. Scale bar, 75 μm. (g) FosTRAPing with chloroquine significantly increased the number of tdTomato+ve neurons compared to saline. n = 3 per group, t test, t = 3.155, df = 6, ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Viral strategy to selectively express ChR2 or eYFP in chloroquine-activated neurons of the left CeA. Experimental timeline to FosTRAP ChR2/eYFP in CeA. (b) Viral strategy to selectively express optogenetic constructs in CeA FosTRAPed neurons. (c) Photostimulation of chloroquine-activated neurons in the left CeA produces significant scratching in ChR2 FosTRAPed mice, but not in eYFP FosTRAPed controls. n = 6–8 per group, p<0.05, ANOVA and Bonferroni's for post hoc tests.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Viral strategy to selectively express excitatory DREADDs in chloroquine-activated CeA neurons. (b) Experimental timeline to FosTRAP DREADDs in CeA. (c) Representative section showing CeA FosTRAPed neurons expressing hM3Dq-mCherry (red). Scale bar, 300 μm. (d) IR DIC image of CeA FosTRAPed neurons expressing hM4Di-mCherry. In hM4Di+ve CeA neurons, clozapine N-oxide (CNO) bath application increased neuronal excitability in response to a 1 s current injection at 1× rheobase. Black trace is pre-CNO, red trace is after bath application of CNO (10 μM). (e) Chemogenetic activation of CeA chloroquine-TRAPed neurons significantly increases spontaneous scratching. CNO had no effect on chloroquine-evoked scratching in mice expressing mCherry. n = 8–11 per group, p=0.0001, ANOVA and Bonferroni's for post hoc tests. Chemogenetic activation of CeA chloroquine-TRAPed neurons had no significant effects on biting (f) or grooming behaviors (g). t test, n = 7–8 per group, n-0.0641 for biting, t test, n = 7–8 per group, n-0.141 for grooming. (h) Chemogenetic activation of CeA chloroquine-TRAPed neurons potentiates chloroquine-evoked scratching. CNO had no effect on chloroquine-evoked scratching in mice expressing mCherry. n = 9 per group, p=0.0039, ANOVA and Bonferroni's for post hoc tests.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Viral strategy to selectively express excitatory and inhibitory DREADDs in itch-activated CeA neurons. (b) Chemogenetic activation of chloroquine-TRAPed CeA neurons does not significantly alter thermal paw withdrawal latencies. n = 7–9 per group, p=0.46, but significantly increases paw withdrawal sensitivity to mechanical (von Frey) stimulation (c). n = 7–9 per group, *p<0.05, ANOVA and Bonferroni's for post hoc tests. Chemogenetic inhibition of chloroquine-TRAPed CeA neurons has no significant effect on thermal (d) or mechanical (e) sensitivity. n = 7–9 per group, p=0.22 and p=0.38, ANOVA and Bonferroni's for post hoc tests.
 
 To test whether reactivating chloroquine-responsive CeA neurons can recapitulate itch behaviors, we expressed the Cre-dependent excitatory opsin, ChR2 (AAV5-EF1a-DIO-ChR2-eYFP), or a control virus (AAV5-EF1a-DIO-eYFP) in the right CeA of FosTRAP mice and FosTRAPed with chloroquine treatment as above (Figure 2g). This produces expression of ChR2 specifically in CeA neurons responsive to itch, enabling their selective light-dependent activation. Optogenetic reactivation of FosTRAPed (ChR2+) right CeA neurons resulted in significant spontaneous scratching and grooming behaviors compared to pre-stimulation baseline and photostimulation of eYFP-expressing control mice. Interestingly, although ChR2 was FosTRAPed by injecting chloroquine into the nape of the neck, we observed spontaneous scratching and grooming behaviors directed all over the body (data not shown) in a stimulation frequency-dependent manner (Figure 2h, i). Even though some functions of the CeA are lateralized (Carrasquillo and Gereau, 2007), elicitation of scratching behaviors is not lateralized to the right CeA as optical stimulation of FosTRAPed ChR2+ neurons in the left CeA also resulted in significant spontaneous scratching behaviors compared to pre-stimulation baseline and photostimulation of eYFP-expressing controls (Figure 2—figure supplement 2). This result is consistent with the observation that chloroquine injection induces cFos expression in left and right CeA (Figure 2—figure supplement 1d). To further confirm these results and as a complementary approach, we expressed the Cre-dependent excitatory DREADD, hM3Dq (AAV5-hSyn-DIO-hM3Dq-mCh), or a control virus (AAV5-hSyn-DIO-mCh) in the CeA of FosTRAP mice. Chemogenetic activation of FosTRAPed CeA neurons also resulted in significant spontaneous scratching behaviors (Figure 2—figure supplement 3e), consistent with the optogenetic results.
 
 In contrast, stimulation of FosTRAPed neurons has no significant effect on hindpaw thermal sensitivity (Figure 2—figure supplement 4b) or licking and biting behaviors. However, stimulation of FosTRAPed neurons slightly increased mechanical sensitivity, suggesting that these neurons can encode generalized scratching behavior and hypersensitivity to mechanical stimuli (Figure 2—figure supplement 4c). These results suggest that FosTRAPed neurons might be involved in nociceptive processing (Neugebauer and Li, 2002). To further determine how reactivation of chloroquine-activated (ChR2+) FosTRAPed neurons (hereafter referred to as ‘chloroquine-TRAPed neurons’) can affect ongoing scratching behaviors, we administered chloroquine and optically activated chloroquine-TRAPed CeA neurons. Chloroquine-evoked scratching was potentiated with optical reactivation of CeA chloroquine-TRAPed neurons while no changes were observed in the eYFP controls (Figure 2j). Chemogenetic stimulation of chloroquine-TRAPed neurons produced similar results (Figure 2—figure supplement 3h).
 
 Itch is an aversive sensory experience in humans and rodents (Desbordes et al., 2015; Mochizuki et al., 2015; Mochizuki et al., 2014; Papoiu et al., 2012; Papoiu et al., 2013), and the CeA mediates aversive phenotypes (Carrasquillo and Gereau, 2007; Ciocchi et al., 2010; Ehrlich et al., 2009; Haubensak et al., 2010; Tovote et al., 2016). Therefore, we wanted to assess whether chloroquine-TRAPed CeA neurons encode negative valence associated with itch. We performed closed-loop real-time place-testing (RTPT) to assess affective state, where an animal freely explores two chambers but receives photostimulation of ChR2+ve chloroquine-TRAPed neurons in only one chamber. Reactivation of chloroquine-TRAPed neurons produced robust place aversion to the stimulated side of the chamber while eYFP-FosTRAPed controls did not (Figure 3b–d), thus demonstrating that chloroquine-activated CeA neurons carry negative reinforcement signals.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig3-v2.jpg)
+
+**Figure 3.:** (a) Illustration of strategy to express ChR2/eYFP selectively in chloroquine-TRAPed neurons of the CeA. Experimental schematic of closed loop real-time assay and elevated zero maze (EZM). (b) Real-time place aversion assay with spatial location heatmaps of ChR2 and eYFP mice during closed loop optical stimulation. (c) Total time spent and (d) distance traveled in the photostimulation-paired chamber for ChR2 and eYFP mice. n = 7 per group, t test, t = 2.806, df = 12, p=0.0159, t test, t = 0.7510, df = 12, p=0.4142. (e) Representative occupancy heatmap showing spatial location in the EZM of a control mouse (eYFP) and a mouse injected with DIO-ChR2. (f) Optogenetic activation of chloroquine-TRAPed CeA neurons causes a significant reduction in time spent in open arms in EZM. Light stimulation was delivered entire time mice were on EZM n = 6–10 per group. t test, t = 5.922, df = 12, p=0.0086.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Viral strategy to selectively express various constructs in chloroquine-activated CeA neurons. (b) Chemogenetic activation of chloroquine-TRAPed CeA neurons significantly reduces time spent in open arms in an elevated zero maze (EZM). n = 6–10 per group. t test, t = 2.439, df = 14, p=0.029. (c) Representative occupancy heatmap showing spatial location of a control mouse (mCh) and a mouse injected with DIO-hM3Dq in the EZM. (d) Optogenetic and (f) chemogenetic activation of chloroquine-TRAPed CeA neurons causes a significant decrease in time spent in center in the open-field test (OFT). n = 7–10 per group. t test, t = 2.86, df = 14, p=0.012, for optogenetic group and n = 6–10 per group. t test, t = 2.331, df = 14, p=0.036 for chemogenetic group. (e, g) Optogenetic and chemogenetic activation of chloroquine-TRAPed CeA neurons had no effect on mean velocity in the OFT. n = 7–10 per group. t test, t = 0.4346, df = 13, p=0.67, for optogenetic group and n = 6–10 per group. t test, t = 1.043, df = 14, p=0.31 for chemogenetic group. (h, i) Representative occupancy heatmap showing spatial location of a control mouse (eYFP, mCh) and a mouse injected with DIO-ChR2 and DIO-hM3Dq in the OFT. (j) Chemogenetic inhibition of chloroquine-TRAPed CeA neurons has no effect on time spent in open arms in EZM, n = 7–9 per group. t test, t = 0.18, df = 14, p=0.70; and (k) time spent in center in OFT. n = 7–9 per group. t test, t = 0.39, df = 14, p=0.85 (l) Chemogenetic inhibition of chloroquine-TRAPed CeA neurons has no effect on mean velocity of mice in OFT. n = 8–9 per group. t test, t = 1.59, df = 15, p=0.13. (m, n) Representative occupancy heatmap showing spatial location of a control mouse (mCh) and mouse injected with DIO-hM4Di in the EZM and OFT. n = 8–9 per group.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a, b) Viral constructs used and schematic of experimental timeline. Chemogenetic activation (c) or inhibition (d) of chloroquine-TRAPed CeA neurons has no effect on food intake. n = 6–9 per group. t test, t = 0.52, df = 13, p=0.60 for activation; n = 7–9 per group. t test, t = 0.67, df = 14, p=0.50 for inhibition.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Viral strategy to selectively express excitatory and inhibitory DREADDs in itch-activated CeA neurons. (b) Experimental timeline (FR1 = fixed ratio 1; FR3 = fixed ratio 3; PR = progressive ratio). (c) Sucrose pellet training paradigm. Chemogenetic activation (d, e) and inhibition (f, g) of chloroquine-TRAPed CeA neurons does not alter performance in FR1 or FR3 paradigms where nose pokes are used to obtain sucrose pellets. Activation of these neurons also has no effect on the number of inactive nose pokes. For activation (n = 8–9 per group, F(6,60) = 5.95, p=0.28 for active nose pokes and F(6,60) = 1.25, p=0.95 for inactive nose pokes) and for inhibition (n = 7–9 per group, F(6,84) = 1.23, p=0.73 for active nose pokes and F(6,84) = 8.20, p=0.11 for inactive nose pokes), ANOVA and Bonferroni's for post hoc tests. (h–k) Chemogenetic activation/inhibition of chloroquine-TRAPed CeA neurons has no effect on performance in the sucrose progressive ratio (PR) schedule, and also has no effect on the number of inactive nose pokes (not shown). t test, t = 1, df = 10, p=0.62, t test, t = 1.63, df = 10, p=0.13.
 
 Patients with pruritic skin disorders exhibit heightened anxiety (Ginsburg, 1995), and prior studies have shown CeA as a critical hub in coordinating anxiety states (Ahrens et al., 2018; Shackman and Fox, 2016). Therefore, we evaluated if reactivation of chloroquine-TRAPed CeA neurons can drive anxiety-like behavior using the elevated zero maze (EZM) assay and open-field test (OFT). Optogenetic and chemogenetic reactivation of chloroquine-TRAPed neurons leads to a profound decrease in time spent in the open arms of EZM compared to controls, indicating anxiogenic-like behavioral state (Figure 3e, Figure 3—figure supplement 1b, c). Reactivation of these neurons also leads to decreased time spent in the center during the OFT, further suggesting that these neurons can drive anxiety-like behavior (Figure 3—figure supplement 1d–i). Notably, opto- and chemogenetic reactivation of FosTRAPed neurons did not drive freezing or flight responses in OFT (Figure 3—figure supplement 1e, g), suggesting that these neurons are not involved in fear-like behaviors. We used distance and velocity traveled as surrogate measures of freezing and flight behaviors. Although in our experiments assessing itch and pain behaviors we did not observe obvious freezing or flight behaviors, we did not more formally attempted quantify freezing or flight behaviors. Furthermore, stimulation of these neurons also had no effect on feeding and other appetitive behaviors the CeA is reported to evoke (Douglass et al., 2017; Han et al., 2017; Kim et al., 2017; Li et al., 2017; Figure 3—figure supplements 2 and 3).
 
@@ -57,7 +101,27 @@ Having shown that chloroquine-TRAPed CeA neurons are sufficient to drive itch-re
 
 We next sought to understand the circuit context of these chloroquine-activated CeA neurons and explored the downstream nodes that might mediate expression of scratching behaviors. We found that chloroquine-TRAPed CeA neurons send notably dense axonal projections in the ventral periaqueductal gray (vPAG) (Figure 5a–d). We also observed projections to the bed nucleus of stria terminalis (BNST), lateral hypothalamus and faint projection in substantia nigra and parabrachial nucleus (PBN). We confirmed vPAG projections by injection CTB into the vPAG (Figure 5—figure supplement 1a, b) and also by injecting retro Cre DIO GFP in to the vPAG in Vgat Cre mice (Figure 5—figure supplement 1c, d). Injection of RV-GFP into vlPAG of Vgat and Vglut2 Cre mice labeled monosynaptic projections from the CeA consistent with prior work (Avegno et al., 2018; Fadok et al., 2018; Haubensak et al., 2010; Xu et al., 2016; Figure 5—figure supplement 1e–k). Because the vPAG has previously been shown to contribute to pruritic behaviors (Gao et al., 2019; Samineni et al., 2019), we focused our functional studies on this CeA→vPAG circuit. If this CeA→vPAG circuit mediates scratching behaviors elicited by the chloroquine-TRAPed CeA neurons, then stimulating this projection should recapitulate these behaviors. As predicted, photostimulating ChR2-expressing chloroquine-TRAPed CeA neuronal terminals in the vPAG recapitulated spontaneous scratching behaviors (Figure 5e). Activating chloroquine-TRAPed CeA neuronal terminals in the vPAG did not produce freezing or flight responses. To determine if reactivation of chloroquine-TRAPed CeA→vPAG projections (ChR2+) can influence ongoing chloroquine-evoked scratching behaviors, we administered chloroquine and optically activated chloroquine-TRAPed CeA→vPAG projections. Chloroquine-evoked scratching was potentiated with optical reactivation of CeA→vPAG projections while no changes were observed in the eYFP controls (Figure 5f). These results show that the CeA→vPAG neuronal circuit is crucial node in mediating pruritic behaviors.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig5-v2.jpg)
+
+**Figure 5.:** (a) Scheme showing expression of ChR2 in chloroquine-TRAPed CeA neurons and their axonal photostimulation in the ventral periaqueductal gray (vPAG). (b) FosTRAPed CeA neurons expressing ChR2-eYFP. Scale bar, 125 μm. (c, d) Chloroquine-TRAPed ChR2+ve CeA axonal terminals ramify densely in the vPAG. Scale bar, 100 and 25 μm. (e) Optogenetic stimulation of FosTRAPed ChR2+ve axonal projections from CeA in the vPAG resulted in significant spontaneous scratching, whereas photostimulation had no effect on scratching in control mice. Pre vs. Stim, F (1,12) = 33.15, p<0.0001, n = 5–7 per group, ANOVA and Bonferroni's for post hoc tests. (f) Optical activation of chloroquine-TRAPed CeA neurons potentiates chloroquine-evoked scratching while no changes were observed in control mice. n = 7 per group. BL vs. Stim in eYFP, F (1,6) = 0.019, p=0.8924; BL vs. Stim in ChR2, F (1, 6) = 9.109, p=0.0235, ANOVA and Bonferroni's for post hoc tests.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Retrograde tracer CTB 488 injection into the ventral periaqueductal gray (vPAG) to confirm projections from CeA in C57BL/6J mice. Representative image of vPAG showing CTB488 injection. (b) CeA neurons show clear CTB 488 labeling following injection into the vPAG in C57BL/6J mice. (c) Cre-dependent retrograde virus AA2-DIO-eYFP is injected into the vPAG of Vgat Cre mice. (d) CeA neurons show expression of Cre-dependent eYFP in Vgat+ve neurons following injection into vPAG. (e) Strategy for monosynaptic retrograde rabies tracing to confirm the CeA→PAG connection. (f, g) mCherry fluorescence from Vglut2 neurons selectively transduced with TVA in the vPAG. GFP fluorescence in PAG following SADΔG-GFP(EnvA) injection into the PAG. (h) SADΔG-GFP expression in the CeA following injection into the vPAG in a mouse expressing TVA in Vglut2 neurons. (i, j) mCherry fluorescence from Vgat neurons selectively transduced with TVA in the vPAG. GFP fluorescence in the PAG following SADΔG-GFP(EnvA) injection into the PAG. Scale bar, 75 μm and 250 μm. (k) SADΔG-GFP expression in the CeA following injection into the vPAG in a mouse expressing TVA in Vgat neurons. Scale bar, 300 μm.
+
 Lastly, we performed RNA-seq to identify transcriptional profiles of chloroquine-activated CeA cells (Figure 6a). To do this, we TRAPed tdTomato in chloroquine-activated CeA neurons as described above and separated the chloroquine-TRAPed neurons from adjacent tdTomato-ve cells for comparative RNA-seq analysis (Figure 6—figure supplement 1). Correlation analysis of RNA-seq data revealed chloroquine-TRAPed tdTomato+ve cells and TRAPed tdTomato-ve cells are clustered apart from each other (Figure 6—figure supplement 2c). In our sequencing results, we observed that both the tdTomato+ve and tdTomato-ve cells expressed Slc32A1 transcript (VGAT, a marker for GABAergic neurons), consistent with the notion that the majority of CeA neurons are GABAergic. Hierarchical clustering analysis of genes shows highly correlated gene expression patterns that show unique expression profiles in FosTRAPed+ve CeA neurons vs. FosTRAPed-ve CeA neurons (Figure 6—figure supplement 2d). We identified numerous highly correlated gene clusters based on their expression levels in FosTRAPed+ve neurons (Figure 6—figure supplement 2e). Subsequent analysis of chloroquine-TRAPed neurons revealed significant enrichment of several unique transcripts in the chloroquine-activated neurons (Figure 6b). Weighted gene correlation network analysis (WGCNA) of genes identified a cluster of upregulated genes 99% correlated and highly significant for chloroquine-activated neurons (Figure 6—figure supplement 2f–h). To link transcriptional profiles of FosTRAPed cells to known CeA functional pathways, we performed pathway analysis. From KEGG and Gene Set Enrichment Analysis (GSEA), we have identified changes in the expression of functionally related candidate genes that are enriched in several pathways (Figure 6c). We have identified significantly enriched CeA candidate genes that might be associated with pruritus regulation, as well as significantly genes expressed at significantly lower levels relative to the non-TRAPed cells that could be involved in the suppression of pruritus. To independently confirm our RNA-seq findings, we performed dual-color fluorescent in situ hybridization (FISH) to visualize mRNA expression of several candidate genes enriched specifically only in the Fos-positive cells induced by pruritic stimuli. We observed considerable overlap between Ntsr2+ve (75.31% cells per four sections), Gpr88+ve (69.35% cells per four sections) and Gabrg1+ve (62.32% cells per four sections) cells with chloroquine activated Fos+ve cells in the CeA (Figure 6d), which were shown to be significantly enriched in chloroquine-TRAPed tdTomato+ve cells. To confirm whether this overlap is specific only to the enriched gene cluster, we also assessed the overlap between chloroquine-activated Fos+ve cells in the CeA and cluster of genes with significantly lower expression in the chloroquine-TRAPed neurons observed from RNA-seq data. We find their partial overlap of Fos+ve cells in the CeA (Figure 6e) with cells that express Oprm1+ve (26.47% cells per four sections) Penk+ve (30.77% cells per four sections) and Chrm1+ve (36.50% cells per four sections). These results confirm our findings of differentially expressed genes in chloroquine-activated CeA cells and suggesting that further mining of these sequencing data by the community will reveal important new findings related to chloroquine and its comorbidities.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig6-v2.jpg)
+
+**Figure 6.:** (a) Experimental workflow outlining fluorescence-activated cell sorting (FACS) of the FosTRAPed tdTomato+ve and tdTomato-ve CeA neurons for whole-cell transcriptomics analyses. (b) Volcano plot of log2-fold change (x axis) and p values (y axis) showing the transcripts that are differentially expressed in the chloroquine-TRAPed tdTomato+ve CeA cells. Significantly differentially expressed genes are color coded, and genes that have p≤0.001 are indicated on the plot. (c) Candidate genes identified by fold change in expression of genes in significantly enriched KEGG pathways from the FosTRAPed tdTomato+ve CeA cells. (d) Multiplexed fluorescent in situ hybridization (FISH) was used in validating the expression of NTSR2, GPR88 and GABARG1 in itch-activated Fos+ve CeA cells. We observed considerable overlap between NTSR2+ve (75.31% cells), GPR88+ve (69.35%) and Gabrg1+ve (62.32% cells) cells with itch-activated Fos+ve cells in the CeA. (e) Multiplexed FISH was used to verify the overlap of OPRM1, Penk and Chrm1 in itch-activated Fos+ve CeA cells. We find their partial overlap of Fos+ve cells in the CeA with cells that express OPRM1+ve (26.47% cells), Penk+ve (30.77% cells) and Chrm1+ve (36.50% cells). Right corner of each image shows magnification of the inset (yellow box).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Schematic showing dissociation and FACS of CeA FosTRAPed neurons. (b, d) Labeling of dissociated neurons with Neurotrace reveals a clear subset of events that can be found in the bottom of the scatterplot. (c, e) Absence of Neurotrace staining confirms labeling and rules out an autofluorescence artifact. (f, h) Selection of the identified Neurotrace subset in the FACS scatterplot reveals that it contains 93.6% of all Neurotrace-positive events. (g, i) Absence of Neurotrace staining confirms labeling and rules out an autofluorescence artifact. (j) Negative fluorescence FACS control using dissociated tdTomato (Ai9)-negative tissue from C57BL/6J animals. (k) Positive fluorescence FACS control using dissociated tdTomato (Ai9)-positive tissue from Vgat/Ai9 animals. (l) PCR validation of sorted samples, demonstrating enrichment of population of interest (Vgat). (m, o) Assessment of neuron viability after dissociation. (n, p) Positive dead control for neuronal viability. (q, s) Example of CeA cFos TRAP FACS #1. (r, t) Example of CeA FosTRAP FACS #2.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68130/elife-68130-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Total (a) mapped and (b) unique mapped reads per million are similar between tdTomato+ve and tdTomato-ve neurons. t test, t = 0.07, df = 4, p=0.94 for mapped reads and t = 0.08, df = 4, p=0.93 for unique mapped reads. (c) Correlation analysis of RNA quality obtained from tdTomato+ve and tdTomato-ve neurons. This matrix supports our prior expectation that the summation of expressed isoforms to the level of their parent genes in the data follows a positive trend with high correlation. This also highlights that there is no cross-contamination from different sorting events. (d) Sample cluster dendrogram of tdTomato+ve neurons showing all weighted gene correlation network analysis de novo modules of genes identified as random color names where each module eigengene was correlated to tdTomato treatment. The GreenYellow module is uniquely 99% correlated and significant for tdTomato+ve neurons. (e) Heatmap of significantly correlated genes filtered from the GreenYellow module. (f) Bar plots showing Gene Ontology (GO) biological processes that are significantly upregulated in the tdTomato+ve neurons compared to the tdTomato-ve neurons. (g, h) Top-enriched GO biological processes and molecular function for upregulated genes (log2FC > 0.5) and downregulated (log2FC < 0.5) in the tdTomato+ve neurons.
 
 ## Discussion
 
@@ -75,89 +139,316 @@ The CeA a is highly molecularly heterogeneous region that is known to express a
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Species (Mus musculus), strain</td>
+      <td>Ai9-tdTomato mice (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>007909</td>
+      <td>Ai9</td>
+    </tr>
+    <tr>
+      <td>Species (Mus musculus), strain</td>
+      <td>FosCreERT2 mice (B6.129(Cg)-Fostm1.1(cre/ERT2)Luo/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>21882</td>
+      <td>FosCreER</td>
+    </tr>
+    <tr>
+      <td>Species (Mus musculus), strain</td>
+      <td>Vgat-ires-Cre (Slc32a1tm2Lowl)</td>
+      <td>The Jackson Laboratory</td>
+      <td>028862</td>
+      <td>Vgat Cre</td>
+    </tr>
+    <tr>
+      <td>Species (Mus musculus), strain</td>
+      <td>Vglut2-ires-Cre (Slc17a6tm2)</td>
+      <td>The Jackson Laboratory</td>
+      <td>028863</td>
+      <td>Vglut2 Cre</td>
+    </tr>
+    <tr>
+      <td>Species (Mus musculus), strain</td>
+      <td>C57BL\6J</td>
+      <td>In bred</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5/hSyn-DIO-hM3Dq-mCherry</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>75 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5/hSyn-DIO-hM4Di-mCherry</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>75 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5-DIO-ChR2-eYFP</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>100 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5/hSyn-DIO-mCherry</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>75 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5-DIO-eYFP</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>100 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5/EF1α-FLEX-TVAmCherry</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>75 nL of virus (1:1 with RG)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV5/CAG-FLEX-RG</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>75 nL of virus (1:1 with TVA)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EnvA G-deleted Rabies-GFP</td>
+      <td>University of North Carolina Vector Core</td>
+      <td>NA</td>
+      <td>100 nL of virus</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine-N-oxide (CNO)</td>
+      <td>Enzo Life Sciences</td>
+      <td>BML-NS105</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma–Aldrich</td>
+      <td>H6278-10MG</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine</td>
+      <td>Sigma–Aldrich</td>
+      <td>C6628</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rb-mCherry</td>
+      <td>Clontech</td>
+      <td>Cat. #: 632543</td>
+      <td>1:1000, RRID:AB_2307319</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ch-GFP</td>
+      <td>AVES</td>
+      <td>A11122</td>
+      <td>1:2000, AB_10000240</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rb-cFos</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: D82C12</td>
+      <td>1:1000, RRID:AB_10557109</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm-Fos</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>316921</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm- Ntsr2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>452311</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm- GPR88</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>317451</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm-Penk</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>318761</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm-Gabarg1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>501401</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm-Oprm1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>315841</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (smFISH)</td>
+      <td>mm-Chrm1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>495291</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT</td>
+      <td>Noldus</td>
+      <td>https://www.noldus.com/ethovision-xt</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism7</td>
+      <td>GraphPad</td>
+      <td>https://identifiers.org/RRID/RRID:SCR_002798</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB, 2018b</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RZ5P</td>
+      <td>Tucker-Davis Technologies</td>
+      <td>https://www.tdt.com/system/fiber-photometry-system/</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were conducted in accordance with the National Institute of Health guidelines and with approval from the Animal Care and Use Committee of Washington University School of Medicine (approved protocol 20-0078). Mice were housed on a 12 hr light-dark cycle (6:00 am to 6:00 pm) and were allowed free access to food and water. All animals were bred onto C57BL/6J background, and no more than five animals were housed per cage. Male littermates between 8 and 12 weeks old were used for experiments. We conducted a pilot experiment using both male and female mice. We did not observe any differences between groups, and thus did not account for sex differences in our power analysis when we designed the comprehensive study. As this is a resource-intensive study, we proceeded to focus the full study on a single sex, and in this case we used only male mice. FosCreERT2 mice (B6.129(Cg)-Fostm1.1(cre/ERT2)Luo/J); stock #21882, Ai9-tdTomato mice (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J); stock #007909, Vgat-ires-Cre (Slc32a1tm2Lowl; stock #028862.), Vglut2-ires-Cre (Slc17a6tm2Lowl; stock # 028863) and C57BL\6J mice were purchased from Jackson Laboratories and colonies were established in our facilities. For all the behavioral experiments, heterozygous cFos-Cre male mice were used, and for Cfos co-staining and sequencing experiments were performed on heterozygous cFos-Cre male mice crossed to homozygous Ai9mice from Jackson Laboratory. Litters and animals were randomized at the time of assigning experimental conditions for the whole study. Experimenters were blind to treatment and genotype.
 
-## Viral constructs
+### Viral constructs
 
 Purified and concentrated adeno-associated viruses coding for Cre-dependent hM3Dq-mCherry (rAAV5/hSyn-DIO-hM3Dq-mCherry; 6 × 1012 particles/mL, lot number: AV4495c and lot date: 02/23/2012) and hM4D-mCherry (rAAV5/hSyn-DIO-hM4Di-mCherry; 6 × 1012 particles/mL, lot number: AV4496c and lot date: 11/20/2012), control mCherry (rAAV5/hSyn-DIO-mCherry; 3.4 × 1012 particles/mL, lot number: AV5360 and lot date: 04/09/2015), ChR2- eYFP (rAAV5-DIO-ChR2-eYFP; 4.8 × 1012 particles/mL, lot number: AV4313Y and lot date: 04/21/2017) and control eYFP (rAAV5-DIO-eYFP; 3.3 × 1012 particles/mL, lot number: AV4310i and lot date: 07/21/2016) were used to express in the FosCreERT2 mice. Helper virus, AAV1-EF1α-FLEX-TVAmCherry (rAAV5/EF1α-FLEX-TVAmCherry; 4 × 1012 particles/mL) and AAV1-CAG-FLEX-RG (rAAV5/CAG FLEX-RG; 3 × 1012 particles/mL) were mixed at a ratio of 1:3 and then injected into the vPAG. Three weeks later, EnvA G-deleted Rabies-GFP (3.9 × 109 particles/mL) was injected in the vPAG. All vectors except rabies virus were packaged by the University of North Carolina Vector Core Facility. Rabies virus was purchased from Salk Gene Transfer, Targeting and Therapeutics Core. All vectors were aliquoted and stored in −80°C until use.
 
-## Stereotaxic surgeries
+### Stereotaxic surgeries
 
 Mice were anesthetized with 1.5–2.0% isoflurane in an induction chamber using isoflurane/breathing air mix. Once deeply anesthetized, mice were secured in a stereotactic frame (David Kopf Instruments, Tujunga, CA) where surgical anesthesia was maintained using 2% isoflurane. Mice were kept on a heating pad for the duration of the procedure. Preoperative care included application of sterile eye ointment for lubrication, administration of 1 mL of subcutaneous saline and surgery-site sterilization with iodine solution. A small midline dorsal incision was performed to expose the skull and viral injections were performed using the following coordinates: CeA, −1.24 mm from bregma,±2.8 mm lateral from midline and 4.5 mm ventral to skull. Viruses were delivered using a stereotaxic-mounted syringe pump (Micro4 Microsyringe Pump Controller from World Precision Instruments) and a 2.0 µL Hamilton syringe. Injections of 75–100 nL of the desired viral vectors into the area of interest were performed at a rate of 1 µL per 10 min. We allowed for a 10 min period post injection for bolus diffusion before removing the injection needle. Postoperative care included closure of the cranial incision with sutures and veterinary tissue adhesive, and application of topical triple antibiotic ointment to the incision site. Animals were monitored while on a heating pad until they full recovery from the anesthetic.
 
-## Cannula implantation
+### Cannula implantation
 
 The surgical protocol was the same as described above for viral injections. Fiber optic implants were fabricated using zirconia ferrules (Thorlabs) and from 100 μm diameter fiber (0.22 numerical aperture [NA], Thorlabs). Fiber optic cannulas (length 5 mm) were implanted at the CeA and the PAG and fixed to the skull using two bone screws (CMA anchor screws, #7431021) and dental cement. The following coordinates were used for implantation: CeA, −1.24 mm from bregma, ±2.8 mm lateral from midline and 4.25 mm ventral to skull and the PAG, −4.84 mm from bregma, ±0.5 mm lateral from midline and 2.7 mm ventral to skull. Mice were allowed to recover for 14 days before behavioral analysis. Animals in which cannulas placement missed the CeA or vlPAG target were excluded from the study.
 
-## Chemogenetic manipulation
+### Chemogenetic manipulation
 
 For chemogenetic control of CeA FosTRAPed neurons, cFos-Cre mice were injected with Cre-dependent control mCh, hM3Di or hM4Dq viruses. DREADD constructs used in this study were validated previously in our lab for their functional expression in the PAG, including their ability to increase (hM3Dq) or decrease (hM4Di) neuronal firing in slices from animals expressing these viral constructs (Samineni et al., 2017a). Three weeks later, mice were injected with 4-OHT to express Cre-dependent DREADDs, CNO (BML-NS105 from Enzo Life Sciences) was injected 30 min before doing behavioral experiments and data were collected between 30 min and 2 hr post-injection. All baselines for pruritic responses were recorded 3 weeks after the FosTRAP and 1 week prior to the CNO administration. We used 5 mg/kg CNO as a dose of CNO and showed no signs of behavioral changes in control vector-expressing animals.
 
-## Optogenetic manipulations
+### Optogenetic manipulations
 
 For all the behavioral experiments, mice were acclimated to tethered fibers for 5 days before initiation of the experiments. Mice were habituated to tethering with lightweight patch cables (components: Doric Lenses) that are connected to a laser (Shanghai laser, 475 nm). To prevent impediment of movement from the tethered cables, we coupled patch cables to an optical commutator (Doric Lenses). An arduino was programed and connected to the laser to deliver 5, 10, 20 and 30 Hz (5 ms width, 10 mW/mm2) photostimulation in FosCre mice.
 
-## Activity-dependent FosTRAP labeling
+### Activity-dependent FosTRAP labeling
 
-## 4-OHT preparation and delivery
+#### 4-OHT preparation and delivery
 
 We dissolved 10 mg of 4-OHT (Sigma, Cat# H6278-10MG) in 500 µL ethanol (100%) (20 mg/mL stock) first by vortexing and then sonicating. We then add autoclaved corn oil (1:4) to dissolve 4-OHT (previously heated to 45°C) to 5 mg/mL and sonicate until solution cloudiness clears. As a final step, vacuum centrifuge for 10 min to evaporate the alcohol from the final injection solution. Male FosTRAP (FosCreER+/-, FosCreER+/-, Ai9+/-) mice were used. Mice were single housed and gently handled for 7–10 days prior to the experiment to minimize the unwanted labeling of neurons associated with stress of handling. On the experiment day, mice were given 4-OHT 20 mg/kg in their homecage environment. 60 min post 4-OHT, we injected either saline or chloroquine (200 µg/50 µL) subcutaneously in the nape of the neck to TRAP neurons that are activated by pruritic stimuli. In FosCreER+/-, Ai9 ±mice, robust tdTomato expression was seen 1 week post TRAPing. In the FosCreER ± mice injected with the optogenetic or chemogenetic constructs, robust labeling was seen 4 weeks post TRAPing. All the TRAPs for behavioral experiments were performed between October and March, between 9.00 am and 1.00 pm.
 
-## Pruritic agent-induced scratching behaviors
+### Pruritic agent-induced scratching behaviors
 
 As previously described by our group (O'Brien et al., 2013; Valtcheva et al., 2015), the nape of the neck of mice was shaved 1 day prior to experiments. Mice were then placed in clear plexiglass behavioral boxes for at least 2 hr for acclimation. For chemogenetic manipulations, CNO was administered before placing the mice in the plexiglass behavioral boxes and chloroquine (200 µg/50 µL, nape of the neck)-induced scratching behavior was performed 90 min after the CNO administration.
 
-## Pain behavior assessment
+### Pain behavior assessment
 
 Mechanical sensitivity was measured by counting the number of withdrawal responses to 10 applications of von Frey filaments (North Coast Medical, Inc, Gilroy, CA; 0.02, 0.08, 0.32 and 1.28 g von Frey filaments) to both hindpaws as described (Samineni et al., 2017b). Each mouse was allowed at least 15 s between each application and at least 5 min between each size filament. Animals were acclimated to individual boxes on a plastic screen mesh for at least 1 hr before testing. The Hargreaves test was performed to evaluate heat sensitivity thresholds as previously described (Samineni et al., 2017a). Briefly, we measured latency of withdrawal to a radiant heat source (IITC Life Science, Model 390). We applied the radiant heat source to both hindpaws and measured the latency to evoke a withdrawal. Three replicates were acquired per hindpaw per mouse and values for both paws were averaged.
 
-## Open-field test
+### Open-field test
 
 Before testing, mice were habituated to the test room in their home cages for 2 hr. Control and mice injected with either hM3Dq, hM4Di or ChR2 in the CeA were then placed in the open field during individual trials and allowed to freely explore after the experimenter exited the room (behaviors were video recorded). Open field locomotor activity was assessed in a square enclosure (55 × 55 cm) within a sound attenuated room for 30 min (Shin et al., 2017). Total distance traveled and movements were video recorded and analyzed using Ethovision XT (Noldus Information Technologies, Leesburg, VA).
 
-## Elevated zero maze
+### Elevated zero maze
 
 Anxiety was measured in low-light conditions (~20 lux) using a modified zero maze (Stoelting Co., Wood Dale, IL) placed 70 cm off of the ground and consisting of two closed sections (wall height, 30 cm) and two open sections (wall height, 1.3 cm) on a circular track (diameter of track, 60 cm) (Montana et al., 2011). On the experiment day, mice were habituated to testing room for 1 hr before beginning of the behavioral session. For hM3Dq- and hM4Di-injected mice 60 min after CNO injection, mice were placed individually at the intersection of the closed/open area of the zero maze for a 6 min trial. For Chr2 and eYFP FosTRAP mice, mice were connected to the fiber optic and placed at the intersection of the closed/open area of the zero maze for a 6 min trial. Mice received 20 Hz (5 ms width) photostimulation for the duration of the EZM trial. Movement during the trial was video recorded using digital camera (Floureon HD) mounted on the ceiling of the room. Total distance traveled, number of entries into open sections and time spent in the open sections were scored, video recorded and analyzed using Ethovision XT (Noldus Information Technologies).
 
-## Real-time place aversion testing
+### Real-time place aversion testing
 
 Place aversion was tested in a custom-designed two-compartment chamber (52.5 × 25.5 × 25.5 cm) with a layer of corn cob bedding (Shin et al., 2017). Each mouse was placed in the neutral area of the chamber and given free access to roam across both chambers. Activity was continuously recorded through a video camera for a period of 20 min. Entry into light-paired chamber triggered constant photostimulation at either 5 Hz, 10 Hz, 20 Hz or 30 Hz (473 nm, 5 ms pulse width, ~10 mW light power). Entry into the other chamber terminated the photostimulation. Photostimulation was counterbalanced across mice. ‘Time-in-chamber’ and heatmaps were generated for data analysis using Ethovision XT software (Noldus Information Technology).
 
-## Conditioned place aversion
+### Conditioned place aversion
 
 CPA was performed using an unbiased, counterbalanced three-compartment conditioning apparatus as described (Land et al., 2009). Each chamber had a unique combination of visual properties (one side had black and white vertical walls, whereas the other side had black and white horizontally striped walls). On the pre-conditioning day (day 1), mice were allowed free access to all three chambers for 20 min. Behavioral activity in each compartment was monitored and recorded with a video camera and analyzed using Ethovision 8.5 (Noldus Information Technology) or ANY-Maze software. Mice were randomly assigned to saline and chloroquine compartments and received a saline injection (50 µL) in the nape of the neck and on the mouse caudal back, in the morning and a chloroquine injection (200 µg/50 µL) in the nape of the neck and on the mouse caudal back in the afternoon, at least 4 hr after the morning training on three consecutive days (days 2–4). To enhance the association of chloroquine-induced scratching behavior with the paired chamber, we administered chloroquine and left the mice in their holding cage for 4 min, then placed them in the paired chamber during the time of the peak scratching response (20 min in the chamber). To assess for place aversion, the mice were then allowed free access to all three compartments on day 5 for 30 min (Tzschentke, 2007). Scores were calculated by subtracting the time spent in the chloroquine-paired compartment, post-test minus the pre-test. To test the effect of DREADD hM4Di activation on chloroquine-induced place aversion, mice injected with AAV5-DIO-hM4Di–mCherry and AAV5-DIO-mCherry were allowed free access to all three chambers for 30 min on the pre-conditioning day (day 1). On days 2–4, both cohorts received a saline injection (50 µL) in the nape of the neck and on the mouse caudal back, and this chamber was paired with systemic saline injection 1 hr before they were placed in the compartment in the morning and a chloroquine injection (200 µg/50 µL) in the nape of the neck and on the caudal back, and this chamber was paired with systemic CNO injection 1 hr before they were placed in the compartment in the afternoon. To test the effect of DREADD hM4Di activation on chloroquine-induced place aversion, the mice were allowed free access to the three compartments on day 5 for 30 min. Scores were calculated by subtracting the time spent in the chloroquine-paired compartment, post-test minus the pre-test.
 
-## Operant conditioning
+### Operant conditioning
 
 Mice are food-deprived to reach 90% of their body weight and trained to nose poke for sucrose pellets for 7 days during daily 60 min sessions in a modular test chamber (Med Associates) on a fixed ratio 1 (FR1) schedule of reinforcement as previously described by Seo et al., 2016, Shin et al., 2017. A correct nose poke response in the active hole resulted in a sucrose pellet delivery where an incorrect nose poke within the inactive hole resulted in no sucrose pellet. On the experiment day, mice were administered CNO followed by a 60 min operant self-stimulation session. To determine if DREADD manipulation of FosTRAPed CeA neurons has any effect on FR1 schedule of reinforcement, mice were given free access to nose poke the ports, three successive nose pokes (FR3) to the active portal rewarded the mouse a sucrose pellet delivery where an incorrect nose poke within the inactive hole resulted in no sucrose pellet. On the experiment day, mice were administered CNO followed by a 60 min operant self-stimulation session to determine if DREADD manipulation of FosTRAPed CeA neurons has any effect on fixed ratio 3 (FR3) schedule of reinforcement.
 
-## Feeding behavior
+### Feeding behavior
 
 Mice were given free access to a novel empty cage prior to the experiment day. Mice were food-deprived overnight prior to the experiment day (Cai et al., 2014). Mice were reintroduced into the same empty cage they had access to the prior day but with food pellets and allowed to feed freely for 20 min on the experiment day. At the end of the session, weight of the food pellet and the food debris left on the cage floor was measured to calculate the food intake. To determine whether FosTRAPed CeA neurons modulate feeding behaviors, mice were injected with CNO 60 min before the feeding test. Feeding tests were performed between 2 pm and 7 pm.
 
-## Fiber photometry
+### Fiber photometry
 
 For in vivo calcium imaging of CeA GABAergic neurons, we injected the CeA of Vgat-Cre mice with Cre-dependent GCaMP6s (AAV-DJ EF1a-DIO-GCaMP6s, 3 × 1013 particles/mL, Stanford vector core). Fiber optic probes were unilaterally implanted above the right CeA (−1.24 mm from bregma, ±2.84 mm lateral from midline and 4.4 mm ventral to skull). After 4 weeks of viral expression, mice were handled and acclimated by tethering as will occur during imaging sessions for 7 days in the test behavioral chamber. On the test day, mice were habituated with the tethered fiber optic patch cord (0.48 NA, BFH48-400, Doric Lenses) in the test chamber (15 × 15 cm) for 60 min and then injected with chloroquine (200 µg/50 µL) in the nape of the neck and recordings were performed.
 
 A fiber optic patch cord was used to connect to the fiber implant and deliver light to excite and record the GCAMP signal using a custom-built fiber photometry rig, built with some modifications to previously described specifications (Cui et al., 2013). Fluorescence excitation was provided by two LEDs at 211 and 537 Hz to avoid picking up room lighting (M405FP1, M470F1; LED driver: LEDD1B; Thorlabs). Light was bandpass filtered (FMC1 + (405/10) -(475/28)_(525/45)_FC, Doric Lenses) and delivered to the CeA to excite GCaMP6s. The emitted light was bandpass filtered (FMC1 +_(405/10) - (475/28)_(525/45)_FC, Doric lenses) and sent to a photoreceiver to detect the signal (Newport, 2151). The signal from the photoreceiver was recorded using a RZ5P real-time processor (TDT). Data were acquired at 10 kHz and then demodulated at 211 and 537 Hz. The demodulated signal was then low-pass filtered (4 Hz) in a custom MATLAB script. The extracted 405 nm signal was then scaled to fit the GCaMP signal for the recording session. To isolate the movement-corrected GCaMP signal from channel, we subtracted the signal at 405 nm from the 475 nm GCaMP signal. dF/F was obtained by dividing the final signal with its mean value. Behavioral event timestamps associated with chloroquine-evoked scratching behavior were scored and aligned with GCaMP signal in the MATLAB script to create pre- and peri-stimulus time bins. To obtain pre- and peri-stimulus chloroquine-evoked scratching events, if the scratching events happened close to each other (in a 30 s window), they were combined and scored as one bout. Z-score was obtained by subtracting the mean of the GCaMP signal from the bin value of the GCaMP signal and dividing it with the standard deviation of the bin value of the GCaMP signal.
 
-## Acute slice electrophysiology
+### Acute slice electrophysiology
 
 To determine the functional effects of chemogenetic manipulations in the chloroquine FosTRAPed CeA neurons, we performed targeted whole-cell patch-clamp recordings in acute coronal slices from cFos-Cre mice expressing either hM3Dq or hM4Di receptors as previously described (Samineni et al., 2017a). Mice used for electrophysiology and behavioral studies were between 8 and 16 weeks of age. Three weeks after viral injections, we performed chloroquine TRAP and waited 3 weeks for expression of hM3Dq or hM4Di in the CeA. Coronal slices containing the CeA were prepared and CeA neurons were visualized through a 40× objective using IR-DIC microscopy on an Olympus BX51 microscope, and mCherry+ cells were identified using epifluorescent illumination with a green LED (530 nm; Thorlabs), coupled to the back-fluorescent port of the microscope. Whole-cell recordings of itch FosTRAPed CeA neurons expressing hM3Dq-mCherry and hM4Di-mCherry were performed using a Heka EPC 10 amplifier (Heka) with Patchmaster software (Heka). Following stable 5 min whole-cell recordings (baseline), the effects of either hM3Dq or hM4Di receptor activation on cellular excitability were isolated by blocking AMPA/KARs (10 µM NBQX, Abcam), NMDARs (50 µM D-APV, Abcam), GABAARs (100 µM picrotoxin, Abcam), and GABABRs (50 µM baclofen, Abcam), and aCSF solution containing 10 µM CNO added to the antagonist cocktail above was bath applied to the brain slice.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Adult mice were deeply anesthetized using a ketamine/xylazine cocktail and then perfused with 20 mL of phosphate-buffered saline (PBS) and 4% paraformaldehyde (weight/volume) in PBS (PFA; 4°C). For Fos staining: To determine the causal contribution of the CeA neuron in itch processing, we gave chloroquine to the nape of the neck and 90 min later mice were perfused. To verify whether chloroquine TRAPed tdTomato+ CeA neurons are faithfully TRAPed to pruritic stimulus and rule out non-specific labeling, 1 week after the TRAP, we gave a second chloroquine injection, and 90 min later mice were perfused. Brains were carefully removed, post fixed in 4% PFA overnight and later cryoprotected by immersion in 30% sucrose for at least 48 hr. Tissues were mounted in OCT while allowing solidification of the mounting medium at −80°C. Using a cryostat, 30 μm tissue sections were collected and stored in PBS1 × 0.4% sodium azide at 4°C. After washing the sections in PBS1×, we blocked using 5% normal goat serum and 0.2% Triton-X PBS 1× for 1 hr at room temperature. Primary antibodies against mCherry (Rabbit, Clontech, 632543; 1/1000), GFP (Chicken Monoclonal anti-GFP, Aves A11122; 1/2000) and cFos (Rabbit monoclonal anti-phospho-cFos, Cell Signaling Ser32 D82C12; 1:2000) were diluted in blocking solution and incubated overnight at 4°C. After three 10 min washes in PBS1×, tissues were incubated for 1 hr at room temperature with secondary antibodies (Life Technologies: Alexa Fluor488 donkey anti rabbit IgG [1/500]; Alexa Fluor 488 goat anti rabbit [1/500]; Alexa Fluor 555 goat anti mouse [1/500]; Alexa Fluor 555 goat anti rabbit [1/500]) and Neurotrace (435/455 nm, 1/500) at room temperature. Three PBS1× washes followed before sections were mounted with Vectashield (H-1400) hard-mounting media and imaged after slides cured. Images were obtained on a Nikon Eclipse 80i epifluorescence microscope.
 
-## Tissue preparation for RNA-seq and Fac sorting
+### Tissue preparation for RNA-seq and Fac sorting
 
 Animals (8–10-week-old, 7–10 days post TRAP) were used for this experiment to ensure robust Ai9 reporter expression, while assuring fully developed brains. RNA-seq of the TRAPed neurons was performed using protocols modified from prior published work to improve neuronal survival (Arttamangkul et al., 2006; Guez-Barber et al., 2012; Hempel et al., 2007). Animals were anesthetized with ketamine cocktail, perfused with aCSF (124 mM NaCl, 24 mM NaHCO3, 12.5 mM glucose, 2.5 mM KCl, 1.25 mM NaH2PO4, 2 mM CaCl2, 1 mM MgCl2, 5 mM HEPES, pH 7.4, 300–310 mOsm) and decapitated for brain removal. The brains were allowed to rest in cold oxygenated (95% O2/5% CO2) aCSF and then sliced coronally using a vibratome (Leica VT1000 S). Brain slices (400-μm-thick sections) were collected and kept in cold oxygenated aCSF. Tissues were micro-dissected under a microscope (Leica S9i) using a reusable 0.5 mm biopsy punch (WPI 504528). HBSS+H and Papain solution (45U, Worthington, Lakewood, NJ) was incubated for 5 min at 37°, followed by the addition of tissue punches for 10–15 min. Tissue punches were then transferred to ice, and mechanical trituration of tissue punches was performed using ~600, 300 and 150 μm fire-polished Pasteur pipettes. The resulting cell suspension was then centrifuged at 5k RPM for 5 min to obtain a pellet, and cells were resuspended in fresh aCSF. This process happened twice to wash any remnants of Papain. Cells were ultimately resuspended for FACS sorting into cold oxygenated aCSF and kept on ice for the duration of the experiment.
 
 Cell suspensions were kept cold throughout the FACS, and cells were sorted in aCSF. In order to determine gating criteria for selecting cell bodies while excluding debris, we performed FACS on fixed/permeabilized neurons stained with Neurotrace 435/455 nm (Nissl stain). Samples were treated with 2% PFA for 20 min, pelleted down for 5 min at 5k RPM, and then resuspended in PBS1 × 0.3% Triton X-100. This processed was done an additional time to get rid of any remnant of PFA. Cells were then resuspended in aCSF and incubated with Neurotrace 435/455 (Thermo Fisher, #N211479) for FACS sorting. We gated for events that had high levels of Neurotrace, and then mapped these events in the scatter plot (forward scatter [FSC] vs. side scatter [SSC]). We were able to map events that had high Neurotrace expression to a small subset of events, which represent the population of cell bodies and not debris. In addition, this population was sensitive to PFA fixation and labeling with the nuclear staining DAPI or 7-AAD, which is characteristic of post-fixative dead cells. As for DAPI/7-AAD (dead) control samples, these were incubated in 2% PFA for 20 min, pelleted down for 5 min at 5k RPM, and then resuspended in PBS1 × 0.3% Triton X-100; this process was done an additional time to get rid of any remnant PFA. Cells were then resuspended in aCSF and incubated with DAPI (1:1000 dilution of 1 mg/mL DAPI, Thermo Fisher, #62248 or 7-AAD 7-Aminoactinomycin D, A1310, Thermo Fisher) for FACS sorting. We performed control experiments to set the appropriate gates for florescence, Ai9 (tdtomato) expression. Negative control samples were obtained from c57BL6/J animals, while positive controls were obtained from Vgat Ai9. FosCre × Ai9 brains were used for isolation of the neuronal population of interest. The CeA was dissociated as previously described (Guez-Barber et al., 2012), and cells were sorted into a 96-well plate. Up to a maximum of 50 cells were sorted into one well filled with 9 µL of Clontech lysis buffer (Single-cell lysis buffer 10×, #635013 Takara Bio) + 5% RNAse inhibitor (40 U/µL, Promega RNAsin inhibitor N2511). Samples were then transferred to a tube for processing by our Genome Technology Access Center (GTAC) core facility. ds-cDNA was prepared using the SMARTer Ultra Low RNA kit for Illumina Sequencing (Takara-Clontech) per manufacturer’s protocol using the lysis buffer as substrate for the reaction. cDNA was fragmented using a Covaris E220 sonicator using peak incident power 18, duty factor 20%, cycles/burst 50, time 120 s. cDNA was blunt ended, had an A base added to the 3′ ends and then had Illumina sequencing adapters ligated to the ends. Ligated fragments were then amplified for 15 cycles using primers incorporating unique index tags. Fragments were sequenced on an Illumina HiSeq-3000 using single reads extending 50 bases.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq reads were aligned to the Ensembl top-level assembly with STAR version 2.0.4b. Gene counts were derived from the number of uniquely aligned unambiguous reads by Subread:featureCount version 1.4.5. Transcript counts were produced by Sailfish version 0.6.3. Sequencing performance was assessed for the total number of aligned reads, total number of uniquely aligned reads, genes and transcripts detected, ribosomal fraction known junction saturation and read distribution over known gene models with RSeQC version 2.3.
 
@@ -167,10 +458,10 @@ The biological interpretation of the genes found in the Limma results was then q
 
 To find the most critical genes, the raw counts were variance stabilized with the R/Bioconductor package DESeq2 and were then analyzed via WGCNA with the R/Bioconductor package WGCNA. Briefly, all genes were correlated across each other by Pearson correlations and clustered by expression similarity into unsigned modules using a power threshold empirically determined from the data. An eigengene was then created for each de novo cluster, and its expression profile was then correlated across all coefficients of the model matrix. Because these clusters of genes were created by expression profile rather than known functional similarity, the clustered modules were given the names of random colors where gray is the only module that has any preexisting definition of containing genes that do not cluster well with others. The information for all clustered genes for each module was then combined with their respective statistical significance results from Limma to determine whether or not those features were also found to be significantly differentially expressed. Raw and analyzed data can be found at GEO: GSE130268.
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 C57BL/6J mice were injected with chloroquine on the nape of the neck. Thirty minutes post-chloroquine administration, mice were rapidly decapitated, brains were dissected and flash frozen in −50°C 2-methylbutane and stored at −80°C for further processing (Samineni et al., 2017a). Coronal sections of the brain corresponding to the CeA were cut at 15 μM at −20°C and thaw-mounted onto Super Frost Plus slides (Fisher). Slides were stored at −80°C until further processing. FISH was performed according to the RNAScope 2.0 Fluorescent Multiple Kit v2 User Manual for Fresh Frozen Tissue (Advanced Cell Diagnostics, Inc). Slides containing CeA sections were fixed in 4% PFA, dehydrated and pretreated with protease IV solution for 30 min. Sections were then incubated with target probes for mouse cFos (mm-Fos, catalog number 316921, Advanced Cell Diagnostics), Ntsr2 (mm-Ntsr2, catalog number 452311, Advanced Cell Diagnostics), GPR88 (mm-GPR88, catalog number 317451, Advanced Cell Diagnostics), Penk (mm-Penk, catalog number 318761, Advanced Cell Diagnostics), Gabarg1 (mm-Gabarg1, catalog number 501401, Advanced Cell Diagnostics), Oprm1 (mm-Oprm1, catalog number 315841, Advanced Cell Diagnostics) and Chrm1 (mm-Chrm1, catalog number 495291, Advanced Cell Diagnostics). Following probe hybridization, sections underwent a series of probe signal amplification steps (AMP1–4) followed by incubation of fluorescent probes (Opal 470, Opal 570, Opal 670), designed to target the specified channel associated with the probes. Slides were counterstained with DAPI and coverslips were mounted with Vectashield Hard Set mounting medium (Vector Laboratories). Images were obtained on a Leica TCS SPE confocal microscope (Leica), and Application Suite Advanced Fluorescence (LAS AF) software was used for analyses. To quantify number of cFos+ve cells, we counted DAPI-stained nuclei that coexpress minimum of five cFos puncta as a cFos+ve cell. We did not include any cFos puncta that does not overlay on top of the DAPI-stained nuclei as part of our analysis.
 
-## Statistics
+### Statistics
 
 Throughout the study, researchers were blinded to all experimental conditions. Exclusion criteria for our study consisted of a failure to localize expression in our experimental models or off-site administration of virus or drug. At least three replicates measurements were performed and averaged in all behavioral assays. The number of animals used is indicated by the ‘N’ in each experiment. When paired t test was used for comparing paired observations, we evaluated for normality using the D’Agostino and Pearson omnibus normality test for all datasets. Therefore, only when normality could be assumed we used a parametric test to analyze out data. If normality could not be assumed, a nonparametric test or a Wilcoxon matched pairs text was used to evaluate differences between the means of our experimental groups. Two-way ANOVA was used for comparing between different control and treatment groups. Bonferroni's post hoc tests were used (when significant main effects were found) to compare effects of variables. A value of p<0.05 was considered statistically significant for all statistical comparisons.

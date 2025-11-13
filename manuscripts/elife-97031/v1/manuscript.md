@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02j1xr113 Department of Biology, Ashoka University Sonipat India
-2. https://ror.org/02j1xr113 Simons Ashoka Fellowship Program, Trivedi School of Biosciences, Ashoka University Sonipat India
-3. https://ror.org/02j1xr113 Koita Centre for Digital Health, Trivedi School of Biosciences, Ashoka University Sonipat India
+1. Department of Biology, Ashoka University Sonipat India ([ROR:02j1xr113](https://ror.org/02j1xr113))
+2. Simons Ashoka Fellowship Program, Trivedi School of Biosciences, Ashoka University Sonipat India ([ROR:02j1xr113](https://ror.org/02j1xr113))
+3. Koita Centre for Digital Health, Trivedi School of Biosciences, Ashoka University Sonipat India ([ROR:02j1xr113](https://ror.org/02j1xr113))
 
 † Corresponding author
 

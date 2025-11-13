@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01yq9ya27 Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
-2. https://ror.org/03qryx823 Department of Physiology, Biophysics & Systems Biology, Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel
-3. https://ror.org/010pmpe69 Faculty of Biology, Lomonosov Moscow State University Moscow Russian Federation
+1. Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:01yq9ya27](https://ror.org/01yq9ya27))
+2. Department of Physiology, Biophysics & Systems Biology, Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+3. Faculty of Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
 
 † Corresponding author
 
@@ -31,9 +31,17 @@ Here, we present a new MNase-based C-method, MChIP-C, which allows measuring pro
 
 ## Results
 
-## MChIP-C: antibody-based targeted measurement of genome architecture at single-nucleosome resolution
+### MChIP-C: antibody-based targeted measurement of genome architecture at single-nucleosome resolution
 
 We developed MChIP-C, a novel MNase-based proximity ligation technique which combines the genome-wide throughput of HiChIP with the exceptional resolution and sensitivity of MCC (Figure 1a). The protocol starts similar to MCC, where cells are crosslinked with formaldehyde and permeabilized with digitonin. This milder cell permeabilization procedure has been shown to provide higher sensitivity for detecting E-P interactions (Hua et al., 2021). Next, chromatin is digested with micrococcal nuclease, DNA ends are blunted and proximity ligated. This is followed by sonication and chromatin immunoprecipitation with a specific antibody, as in HiChIP or PLAC-seq (Figure 1a). Crosslinks are then reversed, and DNA is purified, followed by library preparation and sequencing. As in MCC, we avoided using biotin to enrich for ligated fragments, potentially increasing library complexity, but also resulting in a low proportion of informative chimeric read pairs in the sequencing libraries. To partially mitigate this, we decreased the level of DNA fragmentation and selected for longer DNA fragments (see Methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig1-v1.jpg)
+
+**Figure 1.:** (a) An overview of the MChIP-C experimental procedure. (b) General MChIP-C analysis pipeline. A 250 kb genomic region surrounding the TAL1 gene is shown with H3K4me3 MChIP-C profiles in K562 cells. Positions of individual viewpoints are highlighted by green rectangles and anchors. Identified MChIP-C interactions are shown as magenta (P-PIR) and dark violet (P-P) arcs. (c) Summary statistics for all 241,073 promoter-centered MChIP-C interactions identified in K562 cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) 1.5% agarose gel electrophoresis of MChIP-C MNase digestion and ligation controls. (b) Mapping and filtering statistics of four biological replicates of H3K4me3 MChIP-C experiments. (c) 1 Mb region on chromosome 16 with mononucleosomal MChIP-C profiles of 4 MChIP-C replicates reflecting H3K4me3 occupancy, positions of consensus MChIP-C mononucleosomal peaks, viewpoints and conventional H3K4me3 ChIP-seq profile. (d) Hexagonal heatmaps representing pairwise comparison of mononucleosomal MChIP-C profiles in four replicates and a conventional H3K4me3 ChIP-seq profile. Signals in K562 DHS sites are used for correlation and plotting. Pearson’s correlation coefficient (r) for each pair is shown. (e) Heatmaps and average profile plots of DNase sensitivity, H3K4me3 ChIP and CAGE signal in 10 kb windows centered on either MChIP-C viewpoints or distal DHS sites (not overlapping MChIP-C viewpoints). (f) Hexagonal heatmaps representing pairwise comparison of distal MChIP-C profiles in four replicates (either merged or separated by viewpoints). Pearson’s correlation coefficient (r) for each pair is shown. (g). Distance-dependent decay of distal MChIP-C signal in four replicates. Signal is calculated in 30 distance bins of equal size on a log10 scale between 3.5 (3,162 bp) and 6.5 (3,162 kbp). (h) Observed and expected numbers of cross-TAD boundary MChIP-C interactions. SDs of simulated expected numbers are indicated.
 
 We performed four biological replicates of MChIP-C experiment on K562 cells using anti-H3K4me3 antibodies to focus on spatial interactions of active promoters. The MChIP-C libraries were paired-end sequenced with a total of ~3.5 B read pairs, yielding ~3 B uniquely mapped reads (Figure 1b; Figure 1—figure supplement 1b; Supplementary file 1). ~91.5% (~2.77 B) of these mapped within 1 kb of each other and ~4% (~120 M) mapped further than 5 kb away from each other. While the 4% fraction of informative reads was low relative to restriction enzyme-based C-methods (e.g. >60% informative reads in PLAC-seq), it is comparable to MCC (0.5–5% informative reads, see Methods).
 
@@ -43,33 +51,65 @@ We then proceeded to map promoter interactions. We defined the H3K4me3 peaks as 
 
 The obtained interaction profiles demonstrate that promoters interact with each other and with non-promoter regions (Figure 1b). We systematically identified localized interactions by searching for 250 bp bins with significantly higher than expected MChIP-C signal. For each of the replicates, we found that 70–87% of its interactions were present in at least one other replicate (corresponding to the amount of sequencing per replicate; see Methods), suggesting that called interactions were generally reproducible. Overall, we detected 112,087 promoter-promoter bin (P-P) interactions and 128,986 promoter-nonpromoter bin interactions (Figure 1c; Supplementary file 1). Both types of interactions were mostly localized within TADs (Figure 1—figure supplement 1h). We excluded P-P interactions from subsequent analyses and focused on 128,986 promoter-nonpromoter interactions linking 10,721 viewpoints with 99,315 unique nonpromoter bins (Supplementary file 1) which we refer to as PIRs (Promoter Interacting Regions).
 
-## MChIP-C provides a sensitive genome-wide view of promoter-centered interactions
+### MChIP-C provides a sensitive genome-wide view of promoter-centered interactions
 
 We then asked how MChIP-C compares to similar approaches based on standard restriction enzymes. HiChIP and PLAC-seq are directly comparable to MChIP-C, as both HiChIP and PLAC-seq combine Hi-C with chromatin immunoprecipitation. Specifically, we compared our data to those of Chen et al., 2022, who used PLAC-seq with anti-H3K4me3 antibodies in K562 cells. We first visually compared the PLAC-seq and MChIP-C proximity ligation profiles of a number of genes with well-described regulatory landscape in K562 cells: MYC (Fulco et al., 2016; Lin et al., 2022), GATA1 (Fulco et al., 2016; Fulco et al., 2019), HBG2 (Moon and Ley 1991; Liu et al., 2017), MYB (Xie et al. 2019), and VEGFA (Aran et al. 2016; Dahan et al. 2021). We found that MChIP-C profiles showed clear highly-localized interaction peaks corresponding to the CTCF-bound sites and enhancers known to control the expression of these genes (Figure 2a; Figure 2—figure supplement 1a). For instance, the MYC gene has seven well-characterized K562-specific enhancer elements (e1-e7) spread along the 2 Mb region downstream of the gene and MChIPC allowed detection of interactions between MYC promoter and five of these sites. PLAC-seq profiles are by contrast much noisier and lack clear peaks corresponding to either CTCF sites or known enhancers of the interrogated genes. In addition, we visually compared standard Micro-C data previously reported for K562 (Barshad et al., 2023) to our MChIP-C data at these five loci, using only the promoter-centered interactions from the Micro-C dataset (see Methods). Interestingly, while the Micro-C data also looks cleaner than PLAC-seq, it still misses some interactions which are obvious from the MChIP-C data.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig2-v1.jpg)
+
+**Figure 2.:** (a) Top: MChIP-C, PLAC-seq and Micro-C interaction profiles of the MYC promoter in K562 cells. MChIP-C interactions of the MYC promoter are shown as magenta arcs. Positions of 7 (e1–e7) CRISPRi-verified K562 MYC enhancers are highlighted as orange rectangles. Bottom: zoom in on two enhancer clusters. (b) Systematic comparison of merged MChIP-C, merged PLAC-seq and merged promoter-anchored Micro-C signals in distal regulatory sites. Top: Merged MChIP-C, merged PLAC-seq and merged promoter-anchored Micro-C profiles in a 150 kb genomic region surrounding the α-globin gene domain. Viewpoints are highlighted as green rectangles. Positions of CTCF-bound and CTCF-less DNase hypersensitive sites outside viewpoints are depicted as blue and orange circles. Bottom: Heatmaps and averaged profiles of DNase sensitivity, CTCF ChIP, H3K4me3 ChIP, merged MChIP-C, merged PLAC-seq and merged promoter-anchored Micro-C signals centered on distal CTCF-bound and CTCF-less DNase hypersensitive sites.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) MChIP-C, PLAC-seq and Micro-C interaction profiles for GATA1, HBG2, MYB and VEGFA genes. Viewpoints are highlighted by anchor symbols and green rectangles, K562 known enhancers are highlighted by orange rectangles (only enhancers localized within 5 kb-1Mb of the viewpoints are shown). (b) Aggregate ligation signal between all active promoters and CTCF-bound (bottom) and CTCF-less (top) distal DNase hypersensitive sites measured with various C-methods in K562 cells. Genomic bins separated by 1 and 5 kb from DHS center were used as background. ICE denotes iteratively balanced Micro-C and Hi-C datasets.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Quantity and overlap between promoter-DHS (P-DHS, left) and promoter-CTCF (P-CTCF, right) interactions identified by MChIP-C, PLAC-seq and Micro-C in K562 cells. Violin plots represent distances between centers of identified PIRs and centers of overlapping DHS/CTCF sites. (b) Heatmaps, aggregate profiles and violin plots reflecting ligation signal (to cognate promoter exclusively) around DHS (top) and CTCF (bottom) sites for consensus P-DHS and P-CTCF pairs measured with various C-methods. In violin plots genomic bins separated by 1 and 5 kb from DHS/CTCF center were used as background. ICE denotes usage of iteratively balanced Micro-C dataset. (c) The same as in b, but for PLAC-seq-specific interactions. (d) The same as in b, but for Micro-C-specific interactions.
 
 Next, we compared MChIP-C, PLAC-seq and Micro-C in a more systematic way by examining their merged interaction profiles around promoter-distal DHSs (Figure 2b). First, we observed that in MChIP-C 20.6% of PIRs colocalize with CTCF-bound sites (Figure 1c; Supplementary file 1). We thus separately examined DHSs with and without CTCF, and found that both types of DHSs show increased interaction signal relative to background. To quantify this, we compared the MChIP-C signal at DHS centers to MChIP-C “background” signal within 1–5 kb of the DHS (Figure 2—figure supplement 1b), and found a 2.66 median fold enrichment of DHS centers relative to 5 kb background (3.23 with CTCF, and 2.07 without CTCF). In contrast, we found that PLAC-seq shows a very weak enrichment of interactions at DHSs, even for those bound by CTCF (1.25 median fold enrichment with CTCF and 1.33 without CTCF). Although better than PLAC-Seq, Micro-C shows a reduced signal-to-noise ratio at DHSs compared to MChIP-C (1.51 median fold enrichment with CTCF and 1.37 without CTCF). We also compared MChIP-C, PLAC-Seq and Micro-C interaction signal at promoter interacting CTCF and DHS sites, separated into consensus sites (called by all three methods) and method-specific sites (called by only one method; Figure 2—figure supplement 2). Remarkably, MChIP-C shows better sensitivity and resolution not only on the consensus sites but also on sites which we failed to call, suggesting that additional interactions could be discoverable by improving the interaction-calling strategy. Importantly, we note that these aggregate analyses of method sensitivity and resolution should not be affected by differences in sequencing depths.
 
 Thus, in line with other recent reports on MNase-based C-methods (Hsieh et al., 2020; Krietenstein et al., 2020; Hua et al., 2021; Aljahani et al., 2022; Goel et al., 2022; Ramasamy et al., 2022), our results suggest that MChIP-C achieves superior sensitivity and resolution compared to C-methods based on standard restriction enzymes. Additionally, in the context of promoter-centered interactions, our results suggest that MChIP-C also outperforms standard whole-genome Micro-C.
 
-## CTCF orientation-biased interaction of CTCF-bound sites and promoters
+### CTCF orientation-biased interaction of CTCF-bound sites and promoters
 
 As we observed an abundance of CTCF-bound PIRs in MChIP-C data, we asked whether these CTCF-promoter interactions correspond to loop extrusion-driven loops between convergent CTCF sites easily noticeable on the Hi-C heatmaps (Rao et al., 2014; Sanborn et al., 2015; Fudenberg et al., 2016; Rao et al., 2017). About half of the identified promoter-CTCF interactions (19,773 out of 38,271) showed CTCF binding at the promoter side as well. Interestingly, only 540 (~2.7%) of those directly correspond to CTCF-CTCF loops reported in a previous Hi-C study (Rao et al., 2014). The other half of the MChIP-C interactions containing a CTCF-bound PIR (18,498/38,271) do not show CTCF binding at the promoter side at all. For this set of CTCF-less promoters, we analyzed the orientation of CTCF motifs in PIRs relative to the position of the promoter. We found that promoters preferentially interact with CTCF-bound sites if CTCF motifs are oriented towards the promoter (79% towards vs 21% away) (Figure 3a). This bias holds true regardless of the position of the CTCF site relative to the transcription direction (80% vs 20% for upstream CTCF sites and 79% vs 21% for downstream sites). We also observed this bias if both the promoter and the PIR have CTCF ChIP-seq signal, but CTCF motifs are not in convergent/divergent orientation (Figure 3—figure supplement 1). We conclude that interactions of promoters with CTCF-bound sites are biased by CTCF orientation, regardless of CTCF binding at the promoter side. This orientation bias suggests the possible involvement of loop extrusion.
 
-## Promoter-interacting enhancers bind a distinct and diverse set of protein factors
+![Figure 3.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig3-v1.jpg)
+
+**Figure 3.:** (a) Left: CTCF-motif orientation bias in regions interacting with CTCF-less promoters. The majority (~79%) of CTCF motifs are oriented towards the interacting promoter. Right: Schematic of two hypothetical loop extrusion dependent mechanisms that can account for the observed pattern: promoter LE-barrier activity (i) or CTCF-originating interaction stripes (ii).(b) Enrichment of transcription-related factor (TRF) binding in MChIP-C PIRs. Y-axis represents enrichment (log2 observed/expected) of binding for 271 examined TRFs, x-axis – proportion of TRF-bound PIRs, color – enrichment of corresponding motifs in PIRs (grey color is assigned to TRFs lacking DNA-binding motif). (c) Hierarchical clustering of PIR-overlapping DHSs (N=19,129). The binding status of 164 TRFs highly enriched in PIRs are used as binary features. Binding of 27 selected TRFs (see Methods) in each PIR-overlapping DHS is shown as a heatmap. ChromHMM chromatin state distributions in each cluster are shown. DHSs overlapping CRISPRi-verified K562 enhancers (Fulco et al., 2019; Gasperini et al., 2019) are shown as orange dots. (d) Predictive performance (3-fold cross-validation R2/AUC) of random forest models predicting MChIP-C signal for DHS-promoter pairs. Starting with an initial model based on distance and CTCF, the most predictive TRF features are added incrementally to the model (left to right).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The graph demonstrates CTCF-motif orientation bias in regions interacting with CTCF-occupied promoters. A significant portion of these promoters does not contain canonical CTCF binding motifs. CTCF-bound promoters tend to interact with CTCF-motifs oriented towards them whether the CTCF-binding motif is present (right diagram) or absent (left diagram) in these promoters. Note that the bias holds even for codirectional CTCF motifs while one of them is localized within a promoter and the other within a PIR.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Heatmap showing the binding of all 164 TRFs used for hierarchical clustering of promoter-interacting DHS. Columns corresponding to proteins associated with clusters 1 and 2 (RAD21, SMC3, ZNF143 and CTCF) as well as to enhancer-associated factors potentially involved in physical E-P interactions (BRD4, H3K27ac, SMARCE1, SMARCA4, ARID1B, DPF2, TEAD4, EP300, YY1, MED1, PolII-S5P, CDK8) are highlighted. (b) Distance distribution boxplots for MChIP-C P-PIR interactions anchored in DHSs from identified clusters. (c) Predictive power (3-fold cross-validation R2) of various enhancer-associated factors in the random forest model of MChIP-C signal strength. The predictive power of the initial model +RAD21 (6 features total) is shown as a dashed line. The predictive power of each factor is shown after adding the factor to the 6 features and retraining the model.
+
+### Promoter-interacting enhancers bind a distinct and diverse set of protein factors
 
 We next asked whether the sensitivity and resolution of MChIP-C could allow us to examine the molecular underpinnings of promoter-centered interactions which are not CTCF-based. While the question of what factors underlie P-E interactions is fundamental, this type of analysis would be problematic with restriction enzyme-based C-methods due to their inability to precisely map loop anchors to protein binding sites. To determine protein factors associated with PIRs, we first overlaid MChIP-C PIRs with 271 ChIP-seq profiles for K562 cells (Supplementary file 1). Most of the analyzed transcription-related factors and histone post-translational modifications are substantially enriched in MChIP-C PIRs (4–25 X; Figure 3b; Supplementary file 1). Notable exceptions are facultative heterochromatin-associated histone mark H3K27me3 (1137 overlaps, 1953 [SD = 44] expected by chance) and LINE1-binding protein ZNF146 (183 overlaps, 180 [SD = 12] expected by chance). As expected, CTCF (22,943/1679 [SD = 41]), cohesin subunits RAD21 (10,702/413 [SD = 23]) and SMC3 (12,956/576 [SD = 27]) are among the most highly enriched factors.
 
 Rather than separately consider each factor associated with a PIR, we next used hierarchical clustering to partition PIR-overlapping DHSs (i.e. promoter interacting DHSs; N=19,129) into groups according to the factor binding profile of each DHS. We identified four major clusters (Figure 3c; Figure 3—figure supplement 2a; Supplementary file 1). Clusters 1 (N=4447) and 2 (N=4791) were almost universally bound by the structural factors CTCF (98.1% and 93.6% in clusters 1 and 2 correspondingly), cohesin subunits SMC3 (87.5% and 66.9%) and RAD21 (73.6% and 52.9%) as well as zinc finger protein ZNF143 (87.3% and 66.3%). A total of 24,331 interactions with a median distance of ~92 kb were anchored in DHSs from these two clusters (Figure 3—figure supplement 2b). DHSs from clusters 3 (N = 3168) and 4 (N=6723) contained almost no CTCF- or cohesin-bound sites but they were enriched in dozens of transcription-related factors. Notably, CRISPRi-confirmed enhancers (Fulco et al., 2019; Gasperini et al., 2019) were significantly overrepresented in cluster 3 DHSs (171/297 overlaps; one-sided binomial test, p=1.64*10–57), and we thus labeled P-cluster 3 DHS interactions as regulatory interactions. Overall, there were 7214 regulatory interactions, which tended to be shorter (median length ~47 kb) than structural ones (Figure 3—figure supplement 2b). Interestingly, cohesin subunits were absent in the vast majority of class 3 DHSs. In agreement with a number of recent observations (Thiecke et al., 2020; Hsieh et al., 2022) this may indicate that cohesin is not involved in the maintenance of the regulatory interactions, albeit such a role was suggested earlier (Kagey et al., 2010; Phillips-Cremins et al., 2013). In conclusion, we find diverse types of promoter interacting DHSs associated with the binding of different sets of factors. However, the clustering analysis was not able to pinpoint a specific factor, beyond CTCF and cohesin, which would parsimoniously explain the observed promoter-DHS interactions.
 
-## Genomic distance, CTCF, cohesin and EP300 are key determinants of promoter-centered interactions
+### Genomic distance, CTCF, cohesin and EP300 are key determinants of promoter-centered interactions
 
 We next sought to pinpoint additional factors which underlie promoter-centered interactions and to directly test their predictive power. We used a greedy forward feature selection approach, based on a random forest regression model trained to predict the strength of MChIP-C interactions between promoters and DHS sites (N=107,570). The initial random forest model consisted of five features: DHS-promoter genomic distance, CTCF ChIP-seq signal at both the promoter and the DHS, and motif orientations on both the promoter and the DHS. This initial model was able to explain ~37% of variance in the MChIP-C signal. Then, we iteratively added the most predictive feature out of a set of 270 ChIP-seq profiles, where predictivity is calculated as R2 in threefold cross-validation. Using this strategy, cohesin subunit RAD21 and histone acetyltransferase EP300 were automatically selected, after which predictive performance plateaued at an R2 of ~43% (Figure 3d). We also found the same factors as the most predictive of binary outcomes (high/low MChIP-C signal) reaching an AUC of 0.825.
 
 As CTCF and RAD21 are mostly associated with structural loops, we asked whether EP300 mainly underlies regulatory interactions. Indeed, we find that EP300 was threefold enriched in cluster 3 DHSs and 92.2% of cluster 3 DHSs showed EP300 binding. Interestingly, we noticed that the only proteins that had more binding sites in cluster 3 DHSs are subunits of the SWI/SNF remodeling complex: DPF2 (97.8%), ARID1B (95.6%), and SMARCE1 (94.3%; Figure 3c). EP300 has been found to directly interact with SWI/SNF-complex (Alver et al., 2017; Blümli et al., 2021) and their chromatin binding profiles are highly correlated (Pearson correlation 0.65–0.70). Revisiting the binding profiles of these SWI/SNF subunits, we found their predictive power to be very close to that of EP300 (Figure 3—figure supplement 2c). We also specifically examined the predictive power of RNA polymerase II, mediator complex, YY1 and BRD4, which were previously suggested to be associated with enhancer-promoter interaction (Papantonis and Cook, 2011; Kagey et al., 2010; Weintraub et al., 2017; Hnisz et al., 2017), and find that while they individually have some predictive power, they are weaker predictors of MChIP-C signal than EP300 and the SWI/SNF subunits (Figure 3—figure supplement 2c). Thus, we suggest that EP300 and/or the SWI/SNF complex might be involved in the formation of regulatory chromatin interactions independently of СTCF and cohesin.
 
-## MChIP-C data are largely consistent with the looping model of enhancer activity
+### MChIP-C data are largely consistent with the looping model of enhancer activity
 
 The apparent lack of interaction between experimentally-validated enhancers and their cognate promoters in some studies employing C-methods has raised doubts regarding the classical promoter-enhancer looping model. We thus asked whether the enhanced sensitivity and resolution of MChIP-C could shed some light on the fundamental question of whether enhancers should interact with their targets in order to activate them. To address this, we systematically compared MChIP-C profiles with functionally verified E-P pairs identified by CRISPRi screens in K562 (Fulco et al., 2019; Gasperini et al., 2019). We compared 366 functionally verified E-P pairs, in which targeting CRISPRi to the enhancer changed the expression of the target, with 54,811 putative non-regulatory DHS-P pairs, in which CRISPRi showed no effect. Notably, we found that 60.7% (222/366, 95% CI [55.7%; 65.7%]) of the verified pairs have underlying spatial interactions detected with MChIP-C, while only 6.5% (3,554/54,811, 95% CI [6.3%; 6.7%]) of non-regulatory DHS-P pairs show such interactions (Figure 4a and b; Supplementary file 1). Thus, we conclude that a majority of experimentally validated enhancers exhibit interaction with their target promoters.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig4-v1.jpg)
+
+**Figure 4.:** (a) Bar plots representing the proportion of MChIP-C interacting pairs among nonfunctional DHS-P pairs and CRISPRi-verified E-P pairs. Heatmaps and average profiles of MChIP-C signal are shown for individual subsets. CRISPRi-verified enhancers shown in panel b are indicated by roman numerals. (b) Examples of MChIP-C, Micro-C and PLAC-seq profiles for promoters physically interacting with their functionally verified enhancers (i.e. MChIP-C interaction has been found) (i-iii) and not interacting with them (i.e. MChIP-C interaction has not been found) (iv-vi). Viewpoints are highlighted by anchor symbols and green rectangles, enhancers are highlighted by orange rectangles. (c) Distance distribution boxplots for verified E-P pairs with and without MChIP-C interactions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91596/elife-91596-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Analysis of the downsampled MChIP-C datasets. (a) Bar plots representing the proportion of interacting pairs according to PLAC-seq, Micro-C, and Hi-C among nonfunctional DHS-P pairs and CRISPRi-verified E-P pairs. Heat maps and average profiles of proximity ligation signal are shown for separate subsets in each individual method. DHS-P and E-P pairs with interactions in the Micro-C dataset are also shown as pileups of Micro-C heatmap fragments. (b) Precision-Recall plot and ROC plot for various C-methods aiming to distinguish between nonfunctional DHS-P pairs and CRISPRi-verified E-P pairs in K562 cells. Stars denote the performance of distance-based predictors in which each analyzed DHS is assigned as an enhancer to the nearest active gene (1) or to the two nearest active genes (2). Curves represent the performance of the distance-based predictor using thresholds inversely proportional to the genomic distance between the DHS/enhancer and TSS of the target gene. Downsampled MChIP-C datasets are denoted as ‘50% MChIP-C’, ‘25% MChIP-C’ and ‘10% MChIP-C’. (c) Numbers of raw and deduplicated distal (>5 kb apart) read pairs upon MChIP-C data downsampling. (d) UpSet plots depicting gradual loss of identifiable promoter-DHS (left) and promoter-CTCF (right) interactions upon downsampling of the MChIP-C data.
 
 Next, we attempted to reproduce this analysis with PLAC-seq, Micro-C, and Hi-C as an additional evaluation of their power to detect enhancer-promoter interactions (Figure 4—figure supplement 1a and b; Supplementary file 1). We used PLAC-seq interactions reported previously by Chen et al., 2022, and for Hi-C and Micro-C we used the entire genome-wide datasets to identify interactions using Mustache (Roayaei Ardakany et al., 2020). With respect to recall/sensitivity, the recall of MChIP-C (60.7%, as mentioned above) was superior to those of PLAC-seq (14.0%), Micro-C (19.9%), and Hi-C (2.2%). In spite of this, the precision of the methods was comparable, with 5.9% for MChIP-C, 4.0% for PLAC-seq, 7.4% for Micro-C, and 2.4% for Hi-C. In terms of the false positive rate, MChIP-C was the highest with 6.5%, compared to 1.9% for PLAC-seq, 1.7% for Micro-C, and 0.6% for Hi-C. To control for sequencing depth, we also repeated the analysis with our data down-sampled to 50% so that the valid MChIP-C reads approximately matched the number of valid PLAC-seq reads and the respective number in Micro-C (see Methods). We also further down-sampled the MChIP-C data to 25% and 10% (approximately the amount of total sequenced reads in PLAC-seq). We first observe that although the down-sampling suggests our MChIP-C data is not yet saturated by sequencing depth (Figure 4—figure supplement 1c), 50% downsampling still maintains 76.3% of the detected interactions (Figure 4—figure supplement 1d). Evaluating predictive performance after down-sampling, we find that 50% down-sampled MChIP-C maintains a high recall of 56.1%, with slightly better precision (6.3%) and false positive rate (5.5%). Even at 10% down-sampling, MChIP-C achieves a better precision (10.4%) and false positive rate (1%) than the competing methods, while its recall (18.2%) is slightly worse than that of Micro-C but better than those of PLAC-Seq and Hi-C. In summary, these results suggest that the enhanced sensitivity of MChIP-C enables detection of a larger and more precise set of enhancer-promoter interactions than the alternatives.
 
@@ -99,7 +139,388 @@ In order to identify proteins that may be involved in E-P interaction, we assess
 
 ## Methods
 
-## MChIP-C experimental procedure
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>ATCC:CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K4me3 (rabbit polyclonal)</td>
+      <td>Active Motif</td>
+      <td>Active Motif:39016</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:D-5628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Bimake</td>
+      <td>Bimake:B14001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Micrococcal Nuclease</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:EN0181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 Polynucleotide Kinase</td>
+      <td>New England Biolabs</td>
+      <td>New England Biolabs:M0201L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNA Polymerase I, Klenow Fragment</td>
+      <td>New England Biolabs</td>
+      <td>New England Biolabs:M0210L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA Ligase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:EL0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein A/G Magnetic Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:88802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II DNA Library Prep Kit</td>
+      <td>New England Biolabs</td>
+      <td>New England Biolabs:E7645</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq DNA Single Indexes</td>
+      <td>Illumina</td>
+      <td>Illumina: 20015960 and Illumina:20015961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HiFi HotStart PCR Kit</td>
+      <td>Roche</td>
+      <td>Roche:07958897001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bwa, v.0.7.17</td>
+      <td>Li, 2013</td>
+      <td>RRID:SCR_010910</td>
+      <td>https://github.com/lh3/bwa</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2, v.2.3.4</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_016368</td>
+      <td>https://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pairtools, v.0.3.0</td>
+      <td>Abdennur et al., 2023</td>
+      <td>RRID:SCR_023038</td>
+      <td>https://github.com/open2c/pairtools</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools, v.1.15.1</td>
+      <td>Danecek et al., 2021</td>
+      <td>RRID:SCR_002105</td>
+      <td>https://github.com/samtools/samtools</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools, v2.26.0</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID:SCR_006646</td>
+      <td>https://github.com/arq5x/bedtools2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python, v.3.7.12</td>
+      <td></td>
+      <td>RRID:SCR_008394</td>
+      <td>https://www.python.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>numpy, v.1.21.6,</td>
+      <td>Harris et al., 2020</td>
+      <td>RRID:SCR_008633</td>
+      <td>https://github.com/numpy/numpy</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pandas, v.1.3.5</td>
+      <td></td>
+      <td>RRID:SCR_018214</td>
+      <td>https://github.com/pandas-dev/pandas</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>matplotlib, v.3.5.3</td>
+      <td>Hunter, 2007</td>
+      <td>RRID:SCR_008624</td>
+      <td>https://github.com/matplotlib/matplotlib</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cooler, v.0.9.1</td>
+      <td>Abdennur and Mirny, 2020</td>
+      <td>RRID:SCR_024194</td>
+      <td>https://github.com/open2c/cooler</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cooltools, v.0.5.1</td>
+      <td>Abdennur et al., 2024</td>
+      <td>RRID:SCR_026118</td>
+      <td>https://github.com/open2c/cooltools</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R, v. 4.2.1</td>
+      <td></td>
+      <td>RRID:SCR_001905</td>
+      <td>https://cran.r-project.org</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>dplyr, v.1.0.9</td>
+      <td></td>
+      <td>RRID:SCR_016708</td>
+      <td>https://github.com/tidyverse/dplyr</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tidyr, v.1.2.0</td>
+      <td></td>
+      <td>RRID:SCR_017102</td>
+      <td>https://github.com/tidyverse/tidyr</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2, v.3.3.6</td>
+      <td></td>
+      <td>RRID:SCR_014601</td>
+      <td>https://github.com/tidyverse/ggplot2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gplots, v. 3.1.3</td>
+      <td></td>
+      <td>RRID:SCR_025035</td>
+      <td>https://github.com/talgalili/gplots</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>data.table, v.1.14.8</td>
+      <td></td>
+      <td>RRID:SCR_026117</td>
+      <td>https://github.com/Rdatatable/data.table</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenomicRanges, v.1.48.0</td>
+      <td>Lawrence et al., 2013</td>
+      <td>RRID:SCR_000025</td>
+      <td>https://github.com/Bioconductor/GenomicRanges</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>reshape2, v.1.4.4</td>
+      <td></td>
+      <td>RRID:SCR_022679</td>
+      <td>https://github.com/cran/reshape2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fitdistrplus, v.1.1–8</td>
+      <td>Delignette-Muller and Dutang, 2015</td>
+      <td>RRID:SCR_024274</td>
+      <td>https://github.com/lbbe-software/fitdistrplus</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RColorBrewer, v.1.1–3</td>
+      <td></td>
+      <td>RRID:SCR_016697</td>
+      <td>https://github.com/cran/RColorBrewer</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dendextend, v.1.17.1</td>
+      <td>Galili, 2015</td>
+      <td>RRID:SCR_026116</td>
+      <td>https://github.com/talgalili/dendextend</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dendroextras, v.0.2.3</td>
+      <td></td>
+      <td>RRID:SCR_026115</td>
+      <td>https://github.com/jefferis/dendroextras</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GGally, v.2.1.2</td>
+      <td></td>
+      <td>RRID:SCR_026114</td>
+      <td>https://github.com/ggobi/ggally</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gridExtra, v.2.3</td>
+      <td></td>
+      <td>RRID:SCR_025249</td>
+      <td>https://github.com/baptiste/gridExtra</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>eulerr, v.7.0.1</td>
+      <td>Larsson and Gustafsson, 2018</td>
+      <td>RRID:SCR_022753</td>
+      <td>https://github.com/jolars/eulerr</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ranger, v.0.16.0</td>
+      <td>Wright and Ziegler, 2017</td>
+      <td>RRID:SCR_022521</td>
+      <td>https://github.com/imbs-hl/ranger</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>caret, v.6.0–93</td>
+      <td>Kuhn, 2008</td>
+      <td>RRID:SCR_022524</td>
+      <td>https://github.com/topepo/caret</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRROC, v.1.3.1</td>
+      <td></td>
+      <td>RRID:SCR_026113</td>
+      <td>https://github.com/cran/PRROC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UpSetR, v.1.4.0</td>
+      <td>Conway et al., 2017</td>
+      <td>RRID:SCR_026112</td>
+      <td>https://github.com/hms-dbmi/UpSetR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER, v.4.11.1</td>
+      <td>Heinz et al., 2010</td>
+      <td>RRID:SCR_010881</td>
+      <td>http://homer.ucsd.edu/homer/motif/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CrossMap, v.0.6.0</td>
+      <td>Zhao et al., 2014</td>
+      <td>RRID:SCR_001173</td>
+      <td>https://github.com/liguowang/CrossMap</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nextflow, v.22.10.4</td>
+      <td>Di Tommaso et al., 2017</td>
+      <td>RRID:SCR_024135</td>
+      <td>https://github.com/nextflow-io/nextflow</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ditiller-nf pipeline, v.0.3.4</td>
+      <td></td>
+      <td>RRID:SCR_026111</td>
+      <td>https://github.com/open2c/distiller-nf</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mustache, v.1.3.2</td>
+      <td>Roayaei Ardakany et al., 2020</td>
+      <td>RRID:SCR_026110</td>
+      <td>https://github.com/ay-lab/mustache</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedGraphToBigWig</td>
+      <td></td>
+      <td></td>
+      <td>http://hgdownload.soe.ucsc.edu/admin/exe/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>liftOver</td>
+      <td></td>
+      <td></td>
+      <td>http://hgdownload.soe.ucsc.edu/admin/exe/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>wigToBigWig</td>
+      <td></td>
+      <td></td>
+      <td>http://hgdownload.soe.ucsc.edu/admin/exe/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer, v.2.8.0</td>
+      <td>Robinson et al., 2011</td>
+      <td></td>
+      <td>https://igv.org/doc/desktop/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator, v.23.0.1</td>
+      <td></td>
+      <td></td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### MChIP-C experimental procedure
 
 K562 cells (ATCC) were cultivated in DMEM medium supplemented with 10% fetal bovine serum and 1×penicillin/streptomycin in a humidified 37 °C incubator with 5% CO2. ~3.5 M cells were crosslinked for 10 min at room temperature in 2.5 mL of fresh full growth medium supplemented with 2% formaldehyde (Sigma-Aldrich, F8775). To quench the reaction, glycine was added to reach a final concentration of 0.2 M; the suspension was immediately transferred to ice and incubated there for 5 min. Crosslinked cells were centrifuged at 300 × g and 4 °C, washed with cold phosphate-buffered saline (PBS) and centrifuged again. Pellets were resuspended in 350 μL of cold PBS supplemented with 0.5×protease inhibitor cocktail (PIC; Bimake, B14001) and 0.5 mM PMSF. Digitonin (Sigma-Aldrich, D-5628) stock solution (1% in DMSO) was added to cells to reach a final concentration of 0.01%. A 1 mL tip was used to carefully mix the suspension. Cells were permeabilized on ice for 7 min then centrifuged at 300 × g and 4 °C and resuspended in 800 μL of MNase digestion buffer (10 mM Tris-HCl pH 7.5, 1 mM CaCl2). To achieve a sufficient level of chromatin digestion (50–75% of DNA in mononucleosomal fragments) we added 35–40 U of MNase (Thermo Scientific, EN0181) and incubated the cells at 37 °C with shaking for 1 h. EGTA was added to reach a final concentration of 5 mM in order to stop digestion. Cells were centrifuged at 300 × g and room temperature, resuspended with a low-retention tip in PBS and transferred to a new, low-retention, tube. We pelleted the material once again at 1000 × g and resuspended it in 530 μL 1.05×ligation buffer (ThermoScientific, EL0012) supplemented with 0.105 mM dNTPs and 2.1 mM ATP. 50 μL of the material at this stage was separated as a control of digestion efficiency. 100 U of T4 Polynucleotide Kinase (NEB, M0201L) and 50 U of Klenow fragment of DNA I polymerase (NEB, M0210L) were added to the remaining material in order to repair DNA ends; the mix was incubated at 37 °C with shaking. After 1 hr 37.5 U of T4 DNA ligase (ThermoScientific, EL0012) were added to the reaction and incubation was continued at 37 °C for an additional hour. Before leaving the ligation reaction overnight, the mixer was cooled to 20 °C and 37.5 U more of T4 DNA ligase were added.
 
@@ -109,11 +530,11 @@ MChIP-C NGS libraries were prepared from immunoprecipitated DNA with the NEBNext
 
 Overall, we performed 4 biological replicates of H3K4me3 MChIP-C. The libraries were paired-end sequenced (PE100) on Illumina NovaSeq 6000 and BGI DNBSEQ-T7 devices with ~0.5–1.5 B read pairs per library (Figure 1—figure supplement 1b, Supplementary file 1).
 
-## H3K4me3 ChIP-seq
+### H3K4me3 ChIP-seq
 
 ~3.5M K562 cells were crosslinked and permeabilized as described above. Permeabilized cells were resuspended in 550 μL of ice cold ChIP lysis buffer (50 mM Tris-HCl pH 8.0, 1% SDS, 10 mM EDTA) supplemented with 0.5×PIC (Bimake, B14001) and 0.5 mM PMSF. Chromatin was sheared with 4 30 s ultrasound pulses on ‘15’ power setting of VirSonic 100 (VirTis) sonicator. Incubation with antibodies, immunoprecipitation, DNA isolation and NGS library preparation were performed as described MChIP-C protocol, except for the pre-PCR clean-up step where DNA was cleaned with 35 μL (0.76×) of AMPure XP beads (Beckman Coulter, A63881). 12 cycles of PCR were used to amplify the ChIP-seq library, and it was paired-end sequenced (PE100) on an Illumina NovaSeq 6000 sequencer with ~6 M read pairs. The sequencing reads were aligned to the hg19 genome build and a genome-wide H3K4me3 occupancy profile was generated as described previously (Golov et al., 2021).
 
-## MChIP-C data primary processing
+### MChIP-C data primary processing
 
 The sequenced reads of each replicate were mapped to the hg19 genome build with BWA-MEM (with -SP5M flags) (Li, 2013) and parsed with the pairtools package (v.0.3.0; Abdennur et al., 2023). Mononucleosomal (>100 bp and <201 bp apart; convergent) and distal (>5000 bp apart; cis) read pairs were isolated for downstream analysis.
 
@@ -127,7 +548,7 @@ To evaluate reproducibility of the distal MChIP-C signal in replicates and to id
 
 Using cooler (v.0.9.1; Abdennur and Mirny, 2020), we converted files containing MChIP-C pairs into replicate-specific mcool files with a minimal resolution of 250 bp. We also pooled the 4 mcool files into a single genome-wide contact matrix.
 
-## MChIP-C interaction calling
+### MChIP-C interaction calling
 
 Before calling interactions, we normalized MChIP-C signal in each replicate by the replicate-matched mononucleosomal signal. We did this to account for differences of genomic regions in their propensity to be immunoprecipitated with H3K4me3 antibodies. To consider both viewpoint and other-end bin H3K4me3 occupancy, we normalized by mean mononucleosomal coverage of these two regions (we used ‘samtools bedcov’ command to estimate coverage of each viewpoint and each genomic bin).
 
@@ -137,21 +558,21 @@ We combined all viewpoint-other-end pairs identified as significant interactions
 
 Next, we identified significantly interacting viewpoint-other-end pairs in an aggregate MChIP-C dataset. We summarized all replicate-specific distal MChIP-C signals in each viewpoint-other-end pair and performed the interaction-calling procedure described above with a minor modification: we increased to 6 the threshold for minimal number of raw reads in bins which we considered to call viewpoint interacting bins. Finally, we divided all identified interactions into two groups: promoter-promoter (P-P) and promoter-nonpromoter (P-PIR) – depending on whether the other-end bin was localized within a viewpoint (Supplementary file 1; Figure 1c).
 
-## Analysis of MChIP-C interactions crossing TAD boundary
+### Analysis of MChIP-C interactions crossing TAD boundary
 
 We used K562 TAD boundaries from Rao et al., 2014. The expected number of interactions crossing TAD boundaries was defined as a mean count of cross-boundary interactions in 100 independent random permutations changing the positions of the interaction other-ends while preserving the interaction distance distribution. The position of other-end bins in each permutation was established by random reshuffling of distances separating viewpoints from their original interaction partners (bins within other viewpoints or PIRs).
 
-## MCC data reanalysis
+### MCC data reanalysis
 
 To estimate the typical proportion of valid ligation pairs in MCC sequencing output, we reanalyzed publicly available datasets from Hua et al., 2021 and Downes et al., 2021. We downloaded fastq files for at least three biological replicates from each interrogated cell type and mapped them to hg19 or mm10 genomes with bwa (bwa mem -SP5M). Then we parsed reads with pairtools and calculated the fraction of cis-read pairs separated by more than 5000 bp.
 
-## PLAC-seq data reanalysis
+### PLAC-seq data reanalysis
 
 To compare MChIP-C data with a similar restriction-endonuclease based C-method, we reanalyzed publicly available H3K4me3 PLAC-seq experiments (Chen et al., 2022). Raw sequencing reads were downloaded from the 4D Nucleome Data portal (here) and processed similarly to MChIP-C reads. We relied on MChIP-C-defined viewpoints to obtain merged PLAC-seq profiles and viewpoint-specific PLAC-seq profiles. We used restriction fragment-length bins to build viewpoint-specific PLAC-seq profiles and fixed 250 bp bins to build merged profiles.
 
 For downstream analysis, we utilized PLAC-seq interactions identified by the authors of the original publication (GEO, GSE161873). We merged interactions identified in two individual experimental replicates in one set and lifted them to hg19 genome assembly with the UCSC liftOver tool.
 
-## Micro-C data reanalysis
+### Micro-C data reanalysis
 
 We also compared MChIP-C with a recently published K562 Micro-C data (Barshad et al., 2023). Raw Micro-C sequencing reads were downloaded from GEO (GSE206131) and analyzed with the pipeline we used for MChIP-C and PLAC-seq data processing. We once again relied on MChIP-C-defined viewpoints to extract merged promoter-anchored Micro-C profiles and viewpoint-specific Micro-C profiles. The data was binned in 100 bp or 250 bp bins to plot viewpoint-specific interaction profiles. In all other types of analysis we used fixed 250 bp bins.
 
@@ -159,37 +580,37 @@ We also created all-to-all Micro-C proximity ligation matrices using conventiona
 
 To identify point interactions in the Micro-C dataset, we used Mustache algorithm (v 1.0.1; Roayaei Ardakany et al., 2020). We called interactions in balanced contact matrices at resolutions of 250 bp, 500 bp, 1 kb, 2 kb, 5 kb, and 10 kb using -pt 0.1 and -st 0.88 options. We combined interactions called at all resolutions in one set; if an interaction was detected at multiple resolutions, we retained a variant with coarser boundaries and discarded finer ones.
 
-## Hi-C data reanalysis
+### Hi-C data reanalysis
 
 Raw Hi-C sequencing reads were downloaded from GEO (GSE63525) and all-to-all Hi-C proximity ligation matrices were generated with the distiller-nf pipeline. To obtain raw and iteratively balanced promoter-anchored Hi-C profiles, we dumped 1 kb binned cooler matrix to a text stream (‘cooler dump’ command) and then selected both raw and balanced signals from the bins residing within MChIP-C viewpoints. We then aggregated these signals into two separate merged genome-wide bedgraph files (one containing raw signal and another containing balanced signal) and converted them to bigwig profiles with bedGraphToBigwig UCSC utility.
 
 To identify point interactions in the Hi-C dataset, we used Mustache algorithm. We called interactions in balanced contact matrices at resolutions of 1 kb, 2 kb, 5 kb, 10 kb, and 20 kb using -pt 0.1 and -st 0.88 options. We combined interactions called at all resolutions into one set; if an interaction was detected at multiple resolutions, we retained a variant with coarser boundaries and discarded finer ones.
 
-## Comparison of merged MChIP-C, PLAC-seq, promoter-anchored Micro-C and promoter-anchored Hi-C signals around distal DNase hypersensitive sites
+### Comparison of merged MChIP-C, PLAC-seq, promoter-anchored Micro-C and promoter-anchored Hi-C signals around distal DNase hypersensitive sites
 
 DNase sensitivity, CTCF ChIP, H3K4me3 ChIP, merged MChIP-C, merged PLAC-seq and merged promoter-anchored Micro-C and Hi-C signals spanning 5 kb regions flanking distal CTCF sites and CTCF-less DHSs were plotted as heatmaps and average profiles with deeptools (Figure 2b). Distal CTCF sites with the peak score (the 5th column of CTCF peak file) less than 250 and DHS sites with the signalValue (the 7th column of DHS peak file) less than 200 were excluded from the analysis. In all subsequent analysis concerning DHSs, we used the same signalValue cutoff.
 
 To plot violin graphs for proximity ligation signal in and around distal DHSs, we used 250 bp binned signal matrices generated by deeptools as intermediaries during heatmap generation. For each proximity ligation method, we compiled a set of signal bins and two sets of background bins, 1 kb and 5 kb away from the peak centers. For the signal set, we carved out from the matrix a pair of central columns corresponding to bins surrounding each individual analyzed distal DHS. For each background set, we selected 2 columns corresponding to bins separated by either 1 or 5 kb from the center of DHSs (1 column from each side of the DHSs). We defined the average enrichment of the signal in CTCF sites and CTCF-less DHS for each method as the ratio between median signal in the center and median signal in the 5 kb background bin. To assess the resolution of the methods, we also calculated the ratio between the median signal in the 1 kb background bin and the median signal in the 5 kb background bin.
 
-## Comparison of promoter-DHS and promoter-CTCF interactions identified in MChIP-C, PLAC-seq and Micro-C data
+### Comparison of promoter-DHS and promoter-CTCF interactions identified in MChIP-C, PLAC-seq and Micro-C data
 
 For an even more detailed comparison of MChIP-C data to the data generated with the previously described protocols (Micro-C and PLAC-seq), we focused on the promoter-centered interactions identified with each method in K562 cells. First, we selected unique promoter-CTCF (P-CTCF) and promoter-DHS (P-DHS) interactions by overlapping promoter-interacting regions detected with each of these three techniques individually, with the sets of distal CTCF sites and distal CTCF-less DHS sites. For each interacting pair in each method, we calculated the distance between the center of the DHS or CTCF site and the center of the overlapping promoter interacting region and analyzed the distribution of such distances for each method (Figure 2—figure supplement 2a, violin plots). Then, we compiled a non-redundant list of P-DHS interactions identified by at least one of the methods, and split this combined list into seven groups in accordance with the ability of each individual P-DHS pair to be identified by a certain set of methods (Figure 2—figure supplement 2a, Venn diagrams). We also performed the same analyses for P-CTCF interactions.
 
 Next, we focused on 3 specific groups of interactions: common (identified in all 3 datasets), PLAC-seq-specific, and Micro-C-specific (Figure 2—figure supplement 2b-d). To visualize MChIP-C, PLAC-seq and Micro-C signals around promoter-interacting DHS and CTCF-sites in these 3 groups, we plotted 250 bp binned signal of ligation to the corresponding anchor promoters as heatmaps and average profiles. For these same sets of P-DHS and P-CTCF pairs, we also plotted the distribution of proximity ligation signals in the centers of the sites and in two different sets of background bins (1 kb and 5 kb apart from the centers of the sites). We used normalized MChIP-C signal, raw PLAC-seq and Micro-C signals in this analysis. For average profiles and violin plots, we also included ICE-normalized Micro-C signal. Next, we defined the average enrichment of the signal in each group of sites for each method as the ratio between mean signal in the center and mean signal in the 5 kb background bin. To assess the resolution of the methods, we also calculated the ratio between the mean signal in the 1 kb background bin and the mean signal in the 5 kb background bin.
 
-## Analysis of CTCF motif orientation in viewpoints and PIRs
+### Analysis of CTCF motif orientation in viewpoints and PIRs
 
 The presence of CTCF motifs in viewpoints and PIR bins, as well as their orientation, were determined with HOMER (v4.11.1; Heinz et al., 2010) (‘annotatePeaks.pl’). To compare MChIP-C-identified CTCF-based interactions with Hi-C loops, we used the list of 6,057 K562 Hi-C loops identified by Rao et al., 2014.
 
 To evaluate the number and orientation of CTCF-motifs in randomized sets of PIRs, we performed 100 independent random permutations, changing the positions of the PIRs while preserving P-PIR distance distribution. Then we assessed the presence and orientation of CTCF motifs in each generated set of PIRs and averaged the obtained results to get the number and distribution of motifs per randomization.
 
-## Transcription related factor enrichment analysis in PIRs
+### Transcription related factor enrichment analysis in PIRs
 
 To assess transcription-related factor (TRF) enrichment in PIRs, we exploited a compendium of publicly available K562 ChIP-seq profiles (see Supplementary file 1 for a complete list of ChIP-seq datasets used in the present study). The majority of the analyzed datasets were downloaded from the ENCODE portal (268 out of 271). CDK8 (Pelish et al., 2015; CistromeDB: 56379) and MED1 (CistromeDB: 74667) occupancy data were downloaded from the Cistrome database, BRD4 (Liu et al., 2017) – from GEO (GSM2635249). Hg38 datasets were lifted to hg19 with CrossMap (v.0.6.0; Zhao et al., 2014). All ChIP-seq TRF peaks with the signalValue (the 7th column of each peak file) less than 25 were excluded from all the TRF-related analysis.
 
 First, we overlapped MChIP-C PIRs with TRF binding sites. To estimate relative enrichment, we calculated the expected number of overlaps. We did this for each individual TRF by averaging the overlap counts in 100 independent random permutations, changing the positions of the PIRs while preserving P-PIR distance distribution. The position of PIRs in each permutation was established by random reshuffling of distances separating viewpoints from their original PIRs. Enrichment of TRF binding was then calculated as log2 of the ratio between the experimentally observed and the expected number of overlaps (Supplementary file 1; Figure 3b). Enrichment of TRF motifs in PIRs was evaluated with the HOMER package (‘findMotifsGenome.pl’ command).
 
-## PIR-overlapping DHS clustering and cluster annotation
+### PIR-overlapping DHS clustering and cluster annotation
 
 To separate 19,129 PIR-overlapping DHSs (promoter interacting DHSs) into biologically-relevant groups according to their TRF binding, we used hierarchical clustering with binary features reflecting the binding status of the analyzed TRFs. Here we used only 164 TRFs bound to more than 1,000 promoter interacting DHSs and PIR enrichment higher than 2 (Figure 3—figure supplement 2a). We used the Ward’s Minimum Variance distance metric for clustering and chose a cutoff of four clusters.
 
@@ -197,23 +618,23 @@ For each cluster, we calculated the number of DHSs bound by each of the analyzed
 
 To calculate the number and distance distributions of MChIP-C interactions associated with the identified DHS clusters (Figure 2—figure supplement 2b), we overlapped the complete set of P-PIR interactions with positions of the promoter-interacting DHSs.
 
-## Random forest regression for modeling of MChIP-C signal
+### Random forest regression for modeling of MChIP-C signal
 
 We used a random forest regression model (R library ‘ranger’; Wright and Ziegler, 2017) to predict normalized MChIP-C signal and to identify predictive features. We focused on a subset of viewpoint-DHS pairs separated by <250 kb. We identified 107,570 such viewpoint-DHS pairs with a non-zero count of MChIP-C reads and filtered out two outliers (chr16:214,895–215,045 and chr5:693,455–693,605) which were 175 and 82 IQRs above the third quartile. For training the initial model, we used the following features: viewpoint-DHS distance, CTCF motif orientation on both the viewpoint and DHS and CTCF ChIP-seq signal on both the viewpoint and DHS. Training parameters were default with mtry = 3, num.trees=100.
 
 Next, we used a greedy forward feature selection approach to add 10 features out of a set of 270 TRF ChIP-seq signals on the DHSs (Figure 3d; Figure 3—figure supplement 2c). At each feature selection step, we evaluated all features and added the most predictive feature to the model. To assess the predictive power of a feature, we retrained the model with the feature and used threefold cross-validation to evaluate either R2 or AUC (where MChIP-C was partitioned as higher/lower than the median). To assess reproducibility of the greedy feature selection, we repeated the entire procedure three times.
 
-## Estimating correlation between chromatin binding of EP300 and SWI/SNF-complex
+### Estimating correlation between chromatin binding of EP300 and SWI/SNF-complex
 
 To compare chromatin binding profiles of histone acetyltransferase EP300 and of the ARID1B, DPF2, SMARCE1 subunits of SWI/SNF-complex in K562 cells, we first calculated ChIP-seq read coverage in K562 DHSs for each of the proteins with deeptools (‘multiBigwigSummary BED-file’ command). Then we calculated Pearson’s correlation between EP300 coverage and coverages of each of the studied SWI/SNF subunits.
 
-## Downsampling of MChIP-C data and analysis of the downsampled datasets
+### Downsampling of MChIP-C data and analysis of the downsampled datasets
 
 For a more thorough comparison of MChIP-C with other C-methods in terms of their ability to detect increased ligation frequency between distal regulatory elements and their target promoters, we downsampled generated MChIP-C dataset. We wanted to decrease the total number of unique distal pairs mapping to the viewpoints in the downsampled MChIP-C dataset so that it would be equal to the number of such reads in the complete PLAC-seq and Micro-C datasets. First, we evaluated the numbers of such pairs for all three approaches. We found that PLAC-seq and Micro-C datasets contained approximately two times less useful pairs than complete MChIP-C dataset (~19.75 million and ~23.15 million vs ~42.7 million). Thus, we sampled 50% of raw reads from each of the 4 biological replicates of MChIP-C (‘pairtools sample’ command). The downsampled dataset contained ~24.86 million useful pairs. We performed interaction calling in the downsampled MChIP-C dataset with the exact same pipeline we used previously for the MChIP-C datasets from individual replicates. Then, we downsampled MChIP-C data even further to 25% (~13.95 million useful pairs) and 10% (~6.04 million useful pairs) of the original read depth and again performed the interaction calling procedure used previously. Note that the number of raw reads in the 10% downsampled dataset (~354 million) was close to the number of raw reads in the PLAC-seq experiment (~314 million) and approximately ten times lower than in the Micro-C dataset we used for the comparison (~3,229 million).
 
 To assess the robustness of the MChIP-C interactions to downsampling, we first classified identified loops into P-DHS and P-CTCF classes as described previously (see the definition of P-DHS and P-CTCF interactions above). Then, we pooled all P-DHS interactions identified in the full dataset and in all downsampled datasets into a combined non-redundant set. We also performed similar pooling with P-CTCF loops. To visualize the reproducibility of the interaction calls, we plotted the resulting data as UpSet plots using UpSetR (v.1.4.0; Conway et al., 2017) R package (Figure 4—figure supplement 1d).
 
-## Comparing MChIP-C interactions with functionally verified E-P pairs
+### Comparing MChIP-C interactions with functionally verified E-P pairs
 
 We used K562 CRISPRi datasets from Fulco et al., 2019 and Gasperini et al., 2019 to compile a list of 366 verified E-P pairs and 54,811 non-regulatory DHS-P pairs (Supplementary file 1). In order to directly compare these pairs to MChIP-C identified chromatin interactions, we included in this list only pairs with promoters overlapping MChIP-C viewpoints and pairs with distal sites within 5 kb-1Mb of the promoter.
 
@@ -221,6 +642,6 @@ Then we overlapped the obtained E-P and DHS-P pairs with interactions identified
 
 We calculated sensitivity (recall), precision and false positive rate for the predictors based on the presence of interactions between promoters and their potential regulatory elements (E/DHS) identified with each of the analyzed C-methods (Figure 4—figure supplement 1b). As a reference, we used predictors based on the assignment of each DHS to the closest active gene (TPM >0.5, from ENCODE ENCFF934YBO dataset) as its enhancer or the assignment of each DHS to the two closest active genes as their enhancer. Also as a reference we built a precision-recall and receiver operating characteristic curves for a predictor based on the thresholds inversely proportional to the genomic distance between the DHS/enhancer and TSS of the potential target gene.
 
-## Data processing and visualization
+### Data processing and visualization
 
 The following software and packages were used for analysis and visualization: bwa (v.0.7.17), Bowtie2 (v.2.3.4), pairtools (v.0.3.0), samtools (v.1.15.1), bedtools (v2.26.0), deeptools (v.3.5.1), MACS2 (v.2.2.7.1), Python (v.3.7.12; numpy v.1.21.6, pandas v.1.3.5, matplotlib v.3.5.3, cooler v.0.9.1, cooltools v.0.5.1), R (v. 4.2.1; dplyr v.1.0.9, tidyr v.1.2.0, ggplot2 v.3.3.6, gplots v. 3.1.3, data.table v.1.14.8, GenomicRanges v.1.48.0, reshape2 v.1.4.4, fitdistrplus v.1.1–8, RColorBrewer v.1.1–3, dendextend v.1.17.11.16.0, dendroextras v.0.2.3, GGally v.2.1.2, gridExtra v.2.3, eulerr v.7.0.1, ranger v.0.16.00.14.1, caret v.6.0–93, PRROC v.1.3.1, UpSetR v.1.4.0), HOMER (v.4.11.1), CrossMap (v.0.6.0), nextflow (v.22.10.4.5836), ditiller-nf pipeline (v.0.3.4), Mustache (v.1.3.2), UCSC utilities (bedGraphToBigWig, liftOver, wigToBigWig), Integrative Genomics Viewer (v.2.8.0), Adobe Illustrator (v.23.0.1).

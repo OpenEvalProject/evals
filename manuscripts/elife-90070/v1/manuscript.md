@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/003109y17 Department of Biomedical Sciences, University of Cagliari, Cittadella Universitaria Monserrato Italy
-2. https://ror.org/05v62cm79 School of Biological Sciences, University of Reading Reading United Kingdom
-3. https://ror.org/003109y17 Department of Life and Environmental Sciences, University of Cagliari, Cittadella Universitaria Monserrato Italy
+1. Department of Biomedical Sciences, University of Cagliari, Cittadella Universitaria Monserrato Italy ([ROR:003109y17](https://ror.org/003109y17))
+2. School of Biological Sciences, University of Reading Reading United Kingdom ([ROR:05v62cm79](https://ror.org/05v62cm79))
+3. Department of Life and Environmental Sciences, University of Cagliari, Cittadella Universitaria Monserrato Italy ([ROR:003109y17](https://ror.org/003109y17))
 
 † Corresponding author
 
@@ -38,19 +38,27 @@ However, we propose that taste and flavour perception of botanical drugs links h
 
 ## Results
 
-## Diversity of chemosensory qualities and therapeutic uses
+### Diversity of chemosensory qualities and therapeutic uses
 
 We used 22 descriptors to represent perceived chemosensory qualities of 700 botanical drugs and identified 46 therapeutic uses across 25 categories as described in DMM (Figure 1; Supplementary files 1 and 4). A group of 11 panellists conducted 3973 sensory trials (see Methods) and reported 10,463 individual perceptions of qualities. The most frequently reported qualities were bitter (1556 reports; 39% of all assessed samples), herby/leafy (1146 reports; 29%), aromatic (795 reports; 20%), and stinging (730 reports; 18%), while the least was mucilaginous (128 reports; 3.2%). Weak qualities were most frequently reported (5244 reports; 50%); 3899 (37%) of reports were of medium strength and 1320 (13%) were perceived as strong. Balsamic (69 reports; 24%), burning/hot (41 reports; 22%), and fresh/cooling (49 reports; 21%) were the qualities most often perceived as strong, while smoky (87 reports; 61%), sour (224 reports; 60%), and starchy (190 reports; 59%) the qualities most often perceived as weak. Panellists perceived between zero (e.g. Anemone coronaria, root) and ten (Cinnamomum verum, bark) individual qualities per drug. The mean number of therapeutic uses per botanical drug was 6.3 and the most frequently mentioned therapeutic use being ‘gynaecology – abortion and menses’ (272 use records) and the least frequently mentioned ‘cardiac problems’ (7 use records).
 
-## Simple and intense chemosensory perception is associated with therapeutic versatility
+### Simple and intense chemosensory perception is associated with therapeutic versatility
 
 The relationship between intensity of chemosensation (the sum of all chemosensory scores across all qualities, Figure 2a; see Methods) and therapeutic versatility is positive (px < 0.001; Figure 2c). On the other hand, chemosensory complexity (the number of taste and flavour qualities a botanical drug is scored for, Figure 2b; see Methods) is negatively associated with how many different out of the 25 categories of therapeutic use botanical drugs are used for (e.g. cardiac, gynaecological, humoral, henceforth referred to as ‘therapeutic versatility’; px = 0.026; Figure 2d). Importantly, the multiple regression framework we use allows for each trait to covary whilst simultaneously predicting their underlying relationship with therapeutic versatility.
 
-## Strength of specific chemosensory qualities predicts therapeutic versatility
+![Figure 2.](https://cdn.elifesciences.org/articles/90070/elife-90070-fig2-v1.jpg)
+
+**Figure 2.:** We show the distribution of intensity (a) and complexity (b) at the tips of the phylogenetic tree. As some species are represented by multiple parts, an average is shown here for representative purposes; each plant part is considered separately in the analysis. We plot the mean regression line as estimated from the parameter estimates of our Bayesian phylogenetic regression analyses (dark line) along with 100 random samples of the posterior distribution (faded lines). For graphical representation, the slopes are estimated holding other effects at their mean. We do this for both the significant positive association between intensity and therapeutic versatility (c, px = <0.001) and the significant negative association between chemosensory complexity and therapeutic complexity (d, px = 0.008).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90070/elife-90070-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Chemosensory intensity and complexity were significantly associated with 17 uses. No therapeutic use was predicted by weaker qualities. An arrow is shown indicating the direction of any significant association (px < 0.05) with either chemosensory intensity (left) or chemosensory complexity (right). An arrow points upward if a drug is more likely to be used for a given purpose with increasing chemosensory intensity or complexity. Arrows are shaded by the strength of the relationship (magnitude of estimated parameter, see scale). For seven individual uses more intense and less complex chemosensation increased the probability of a drug being used, i.e., there was a preference for stronger and simpler qualities. Nine uses had a significant positive association with chemosensory intensity and were predicted by stronger qualities alone. A single use (various urinary problems) was uniquely significantly associated with increased chemosensory complexity. No therapeutic use was predicted by weaker qualities.
+
+### Strength of specific chemosensory qualities predicts therapeutic versatility
 
 All models we analyse have strong phylogenetic signal (modal h2 > 0.9, see Methods) which may have led to misleading impressions about medicinal tastes and flavours in the past in analyses which did not account for such statistical non-independence. Indeed, while we do find a significant positive association between the strength of bitterness and therapeutic versatility (px = 0.013), the most versatile drugs were not only the bitter-tasting ones; contrary to popular concepts of bad-tasting medicine (Mennella et al., 2013). We also find that the perceived strengths of starchy (px = 0.017), musky (px = 0.013), sweet (px = <0.018), and soapy (px = 0.002) qualities were positively associated with therapeutic versatility while the intensity of perceived sourness was negatively associated with versatility (px = <0.001).
 
-## Associations between specific chemosensory qualities and specific uses
+### Associations between specific chemosensory qualities and specific uses
 
 All therapeutic uses (with the exception of ‘gynaecology – other’) are significantly associated with at least one specific chemosensory quality, whether positively (99 instances) or negatively (50 instances) and often with high magnitude of effect (Figure 3; Supplementary file 5). Thus, the perceived presence or absence of several specific qualities significantly confer the chemosensory perception of medicine (less than 5% of their estimated parameter distribution crosses zero, px < 0.05) with high magnitude of effect (Figure 3).
 
@@ -80,25 +88,25 @@ While chemosensory qualities of botanical drugs and their physiological effects 
 
 ## Methods
 
-## Botanical fieldwork
+### Botanical fieldwork
 
 A total of 700 botanical drugs (ca. 70% of the botanical drugs described in DMM) associated with 407 species were collected from the wild, cultivated in home gardens, or purchased from commercial sources between 2014 and 2016. Plant collection included at least one voucher per species and one or more bulk samples of the therapeutic plant part (botanical drug). Latin binomials follow https://powo.science.kew.org/. Botanical vouchers were deposited at the herbarium of the University of Geneva (G) and the herbarium of the National and Kapodistrian University of Athens (ATHU). Bulk samples for sensory analysis were dried at 40–60°C and stored in plastic containers. Collection permits were obtained from the Greek Ministry of Environment and Energy (6Ω8Κ4653Π8-ΑΚ7).
 
-## Data extraction from DMM
+### Data extraction from DMM
 
 Information about the therapeutic uses (use records) of botanical drugs were extracted from Matthioli’s 1568 edition of Dioscorides’ De Materia Medica (Matthioli, 1970; Staub et al., 2016). Botanical drugs were arranged into 46 therapeutic uses defined by organ, therapeutic function, disease, and symptom across 25 broader categories of use (Figure 1; Supplementary files 1 and 4). Each of the 700 botanical drugs was then assigned a binary variable defining whether it was recommended (1) or not (0) for each of the 46 therapeutic uses based on their descriptions in DMM. When the description in DMM permitted identification (Taxon ID; Supplementary file 1) only to genus level (due to ambiguities or the possibility that different closely related taxa were subsumed), we chose one species as the representative for the whole genus (Supplementary file 1: ‘Taxon panel’). Unidentified taxa or taxa identified only to the family level were not considered in this analysis. The category ‘food’ includes only those drugs where edibility was specifically mentioned in DMM and by far not all those that are used as food. As a measure of therapeutic versatility, we summed up the total number of broader categories of therapeutic use each botanical drug was recommended for.
 
-## Tasting panel
+### Tasting panel
 
 The chemosensory qualities of each of the 700 botanical drugs were assessed experimentally by trained human subjects using the sensory analysis technique Conventional Profiling (International Standard, 1994) performed in accordance with the Declaration of Helsinki (World Medical Association, 2013) and the ethics guidelines of the Institute of Food Science & Technology (Institute of Food Science and Technology, 2020). The design of the tasting panel was approved by the Ethics Committee of the University Hospital of Cagliari (NP/2016/4522). Informed consent was obtained from all panellists. We used 22 chemosensory descriptors to represent taste and flavour perception (Figure 1; Supplementary files 2 and 3). The evaluation took place at the Hospital of San Giovanni di Dio (Cagliari, Italy) during a period of 5 months in 2016. The panel consisted of 11 healthy Caucasian volunteers (six males and five females; age 30.7 ± 7.4). Working language was Italian. Based on a random subset of 40 (out of 700) samples, four initial training sessions were held to establish a consensus regarding chemosensory terminology. Hedonic (e.g. ‘good’ or ‘bad’), self-referential (e.g. ‘minty’ for mint), and infrequent descriptors were excluded to reduce subjectivity and to increase discriminatory power of the analysis. Synonymous and closely related descriptors (e.g. ‘astringent’ and ‘tannic’) were pooled to reduce attribute redundancy.
 
 Samples (0.1–2 g of dried drug pieces) were labelled randomly (using a random number generator) with three-digit codes, assigned randomly and double-blinded (in case of common drugs impossible) to individual panellists. Not all drugs were tasted by all panellists while random distribution permitted that individual panellists were challenged with repeated samples. Samples were presented in identical 125 ml plastic containers at room temperature. The relatively big range in quantity of dispensed samples owes to toxicological concerns and practical reasons but in any case, were tailored to permit the perception of their chemosensory qualities. Panellists were instructed to chew the amount of sample necessary for chemosensory perception, to annotate perceived qualities and intensities and to spit out residues of samples, and finally rinse their mouth with drinking water. The breaks between tasting different samples depended on the persistence of chemosensory perception. For each sensory trial a separate evaluation sheet was used. Quality intensities were evaluated on a 4-point ordinal scale: absent (0), weak (1), medium (2), and strong (3). Overall, 3973 individual sensory trials were conducted, with an average of 361 ± 153 trials per panellist and 5.7 ± 1.3 trials per botanical drug. On average each panellist tasted 17.2 drugs per hour using 10.5 sessions (18 sessions in total) lasting approximately 2 hr each. From the ordinal data, two additional metrics were calculated to represent chemosensory complexity (the total number of different chemosensory qualities a botanical drug was assigned to as non-zero by each panellist) and chemosensory intensity (the sum of all chemosensory scores assigned across all qualities by each panellist).
 
-## Phylogenetic tree
+### Phylogenetic tree
 
 We used the species-level supertree of land plants to represent the relationships among the taxa extracted from DMM (Zanne et al., 2014). Some species were not found in the tree; in these cases, species were attached to the most recent common ancestor of the respective genus or, if absent, the family. Branch lengths of added taxa were set to retain ultrametricity. Tree manipulations were made in R (R Development Core Team, 2016) using the packages ape and phytools (Paradis et al., 2004; Revell, 2012). The trees are represented in Figure 2 alongside the chemosensory intensity and complexity data.
 
-## Statistical procedure
+### Statistical procedure
 
 In order to determine whether chemosensation and therapeutic uses were linked, we used two sets of phylogenetic linear mixed models implemented in a Bayesian framework within the R package MCMCglmm (Hadfield, 2010). The first set of models considered therapeutic versatility (number of categories of therapeutic use) modelled as a zero-truncated Poisson distributed response variable. We ran two models: (1) considering all 22 individual chemosensory qualities as ordinal-scale independent variables and (2) considering chemosensory intensity and complexity as independent variables. Together, these models tell us whether any particular chemosensory quality as well as whether intense or complex chemosensation predict how often a drug is used for any therapeutic purpose. We then ran a second set of probit models which considered each individual therapeutic use as a binary response. That is, we ran 46 models examining the relationship between individual chemosensory qualities and therapeutic uses (one for each use, where all qualities are included as independent variables) and an additional 46 to test the relationship between each therapeutic use and chemosensory intensity and complexity.
 

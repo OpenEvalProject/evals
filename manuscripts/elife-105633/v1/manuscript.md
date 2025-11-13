@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03490as77 School of Pharmacy, Federal University of Rio de Janeiro Rio de Janeiro Brazil
-2. https://ror.org/03490as77 Institute of Medical Biochemistry Leopoldo de Meis, Federal University of Rio de Janeiro Rio de Janeiro Brazil
-3. https://ror.org/04wffgt70 Department of Biochemistry and Tissue Biology, Institute of Biology, State University of Campinas Campinas Brazil
+1. School of Pharmacy, Federal University of Rio de Janeiro Rio de Janeiro Brazil ([ROR:03490as77](https://ror.org/03490as77))
+2. Institute of Medical Biochemistry Leopoldo de Meis, Federal University of Rio de Janeiro Rio de Janeiro Brazil ([ROR:03490as77](https://ror.org/03490as77))
+3. Department of Biochemistry and Tissue Biology, Institute of Biology, State University of Campinas Campinas Brazil ([ROR:04wffgt70](https://ror.org/04wffgt70))
 
 † Corresponding author
 

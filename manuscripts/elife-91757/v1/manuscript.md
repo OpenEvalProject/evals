@@ -26,22 +26,22 @@
 
 ### Affiliations
 
-1. https://ror.org/029ycp228 Laboratory of Stem Cells and Neuroregeneration, Institute of Anatomy, Histology and Pathology, Faculty of Medicine, Universidad Austral de Chile Valdivia Chile
-2. https://ror.org/029ycp228 Center for Interdisciplinary Studies on the Nervous System (CISNe), Universidad Austral de Chile Valdivia Chile
-3. https://ror.org/013meh722 Wellcome-MRC Cambridge Stem Cell Institute & Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/040af2s02 Translational Regenerative Neurobiology Group (TReN), Molecular and Integrative Biosciences Research Programme (MIBS), Faculty of Biological and Environmental Sciences, University of Helsinki Helsinki Finland
-5. https://ror.org/00txsqk22 Escuela de Ciencias Agrícolas y Veterinarias, Universidad Viña del Mar Viña del Mar Chile
-6. https://ror.org/013meh722 Department of Haematology and NHS Blood and Transplant, University of Cambridge Cambridge United Kingdom
-7. https://ror.org/03z3mg085 Institute of Molecular Regenerative Medicine, Paracelsus Medical University Salzburg Austria
-8. https://ror.org/029ycp228 Instituto de Bioquímica y Microbiología, Facultad de Ciencias, Universidad Austral de Chile Valdivia Chile
-9. https://ror.org/029ycp228 Laboratory of Cellular Pathology, Institute of Anatomy, Histology & Pathology, Faculty of Medicine, Universidad Austral de Chile Valdivia Chile
-10. https://ror.org/04ycpbx82 School of Life Sciences, University of Westminster London United Kingdom
+1. Laboratory of Stem Cells and Neuroregeneration, Institute of Anatomy, Histology and Pathology, Faculty of Medicine, Universidad Austral de Chile Valdivia Chile ([ROR:029ycp228](https://ror.org/029ycp228))
+2. Center for Interdisciplinary Studies on the Nervous System (CISNe), Universidad Austral de Chile Valdivia Chile ([ROR:029ycp228](https://ror.org/029ycp228))
+3. Wellcome-MRC Cambridge Stem Cell Institute & Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Translational Regenerative Neurobiology Group (TReN), Molecular and Integrative Biosciences Research Programme (MIBS), Faculty of Biological and Environmental Sciences, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+5. Escuela de Ciencias Agrícolas y Veterinarias, Universidad Viña del Mar Viña del Mar Chile ([ROR:00txsqk22](https://ror.org/00txsqk22))
+6. Department of Haematology and NHS Blood and Transplant, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+7. Institute of Molecular Regenerative Medicine, Paracelsus Medical University Salzburg Austria ([ROR:03z3mg085](https://ror.org/03z3mg085))
+8. Instituto de Bioquímica y Microbiología, Facultad de Ciencias, Universidad Austral de Chile Valdivia Chile ([ROR:029ycp228](https://ror.org/029ycp228))
+9. Laboratory of Cellular Pathology, Institute of Anatomy, Histology & Pathology, Faculty of Medicine, Universidad Austral de Chile Valdivia Chile ([ROR:029ycp228](https://ror.org/029ycp228))
+10. School of Life Sciences, University of Westminster London United Kingdom ([ROR:04ycpbx82](https://ror.org/04ycpbx82))
 
 † Corresponding author
 
 ## Abstract
 
-Revealing unknown cues that regulate oligodendrocyte progenitor cell (OPC) function in remyelination is important to optimise the development of regenerative therapies for multiple sclerosis (MS). Platelets are present in chronic non-remyelinated lesions of MS and an increase in circulating platelets has been described in experimental autoimmune encephalomyelitis (EAE) mice, an animal model for MS. However, the contribution of platelets to remyelination remains unexplored. Here we show platelet aggregation in proximity to OPCs in areas of experimental demyelination. Partial depletion of circulating platelets impaired OPC differentiation and remyelination, without altering blood-brain barrier stability and neuroinflammation. Transient exposure to platelets enhanced OPC differentiation in vitro, whereas sustained exposure suppressed this effect. In a mouse model of thrombocytosis ( Calr ), there was a sustained increase in platelet aggregation together with a reduction of newly-generated oligodendrocytes following toxin-induced demyelination. These findings reveal a complex bimodal contribution of platelet to remyelination and provide insights into remyelination failure in MS. +/-
+Revealing unknown cues that regulate oligodendrocyte progenitor cell (OPC) function in remyelination is important to optimise the development of regenerative therapies for multiple sclerosis (MS). Platelets are present in chronic non-remyelinated lesions of MS and an increase in circulating platelets has been described in experimental autoimmune encephalomyelitis (EAE) mice, an animal model for MS. However, the contribution of platelets to remyelination remains unexplored. Here we show platelet aggregation in proximity to OPCs in areas of experimental demyelination. Partial depletion of circulating platelets impaired OPC differentiation and remyelination, without altering blood-brain barrier stability and neuroinflammation. Transient exposure to platelets enhanced OPC differentiation in vitro, whereas sustained exposure suppressed this effect. In a mouse model of thrombocytosis (Calr+/-), there was a sustained increase in platelet aggregation together with a reduction of newly-generated oligodendrocytes following toxin-induced demyelination. These findings reveal a complex bimodal contribution of platelet to remyelination and provide insights into remyelination failure in MS.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ Platelets are small, anucleate cells essential for haemostatic plug formation (S
 
 ## Results
 
-## Circulating platelets transiently accumulate in response to demyelination and accumulate in close proximity to OPCs
+### Circulating platelets transiently accumulate in response to demyelination and accumulate in close proximity to OPCs
 
 We first assessed the distribution of platelets during remyelination. We created lysolecithin (LPC)-induced demyelinating lesions in the spinal cord white matter of wild type (WT) mice and collected tissue sections at 1-, 3-, 5-, 7-, 10, and 14 days post-lesion (dpl). We observed CD41+ platelet aggregates within and around the lesion early after demyelination (3 dpl) (p-value <0.01; Figure 1A and B). However, this was transient as platelet aggregates subsequently decreased until no aggregates were detected at 14 dpl (Figure 1A and B). To assess whether platelet recruitment was specific to demyelination we injected PBS containing DAPI directly into the spinal cord. No signs of demyelination were observed under these conditions and platelet aggregation was minimal at 1- and 3 days post-PBS injection (Figure 1C). We next evaluated the localization of platelets within the lesion. Large platelet aggregates were found within the blood vessels and within the tissue parenchyma at 5 dpl (Figure 1D). Platelets often localized with Olig2+ cells around blood vessels, a scaffold used by OPCs for migration (Tsai et al., 2016; Figure 1D).
 
@@ -59,15 +59,27 @@ We first assessed the distribution of platelets during remyelination. We created
 
 **Figure 1.:** (A) LPC induced demyelinating lesions in spinal cord white matter of WT mice at 1, 3, 7, and 14 dpl, stained for platelets (CD41+). Scale bar 100 μm. (B) Quantification of CD41+ signal within the demyelinated lesion at 1 (n=6), 3 (n=5), 5 (n=5), 7 (n=6), 10 (n=4), and 14 dpl (n=4), and in NAWM (n=3). (C) Platelet staining (CD41+) in spinal cord white matter injected with PBS/DAPI. Scale bar 50 μm. (D) Upper left panel: localization of platelets within blood vessels (ColIV+) and in close proximity with OPCs (Olig2+) at 5 dpl. Upper right panel: IMARIS 3D projection shows the spatial distribution of platelets. Scale bar 10 μm. Lower panels: magnification of the IMARIS projection showing platelet aggregation within the blood (left panel) and penetration into the parenchyma (right panel). Scale bars: 5 μm (left panel) and 7 μm (right panel). Data were analysed using a Kruskal Wallis test. Data represent the mean ± SD. ** p<0.01; ns (not significant), p>0.05.
 
-## Depletion of circulating platelets alters OPC differentiation and remyelination in vivo
+### Depletion of circulating platelets alters OPC differentiation and remyelination in vivo
 
 To investigate whether circulating platelets modulate OPC function in vivo, we used a platelet depletion model (Figure 2A). LPC-induced focal demyelinating lesions were performed in WT mice followed by the administration of anti-CD42b at 3 dpl and every second day to prevent further platelet recruitment (Morodomi et al., 2020; de Sousa et al., 2023). We first confirmed that this depletion strategy leads to decreased numbers of recruited platelets, with no accumulation in the lesion (p-value <0.05; Figure 2B). At 7 dpl, there was no difference in the number of Olig2+ cells within the lesion between the platelet depleted and untreated group (Figure 2C, upper panels, and D), indicating that platelets do not alter OPC recruitment in response to demyelination. Through the detection of CC1 expression, a marker that identifies mature oligodendrocytes (Figure 2C, lower panels), we found that platelet depletion significantly decreased the number and percentage of Olig2+/CC1+ cells compared to untreated mice (p-value <0.05; Figure 2E and F), indicating that platelet depletion impairs OPC differentiation. Consistently, at 14 dpl we observed a significant decrease in the extent of remyelination (p-value <0.01; Figure 2G and H) and the percentage of remyelinated axons compared to untreated animals (p-value <0.05; Figure 2I). Previous studies have shown that decreasing the number of circulating platelets increases blood vessel leakiness (Cloutier et al., 2012; Gupta et al., 2020). To assess whether impaired OPC differentiation might be due to fibrinogen extravasation (Petersen et al., 2017) or enhanced demyelination due to neutrophil infiltration (Rüther et al., 2017), we evaluated their presence within the lesion parenchyma after platelet depletion. There were no significant differences between neutrophil (Figure 2—figure supplement 1A, B) and fibrinogen extravasation (Figure 2—figure supplement 1C, D) after platelet depletion at 7 dpl, indicating that remyelination impairment likely derives from low numbers of circulating platelets rather than increased vascular leakiness.
 
-## Depletion of circulating platelets does not alter macrophage/microglia numbers and polarization during remyelination
+![Figure 2.](https://cdn.elifesciences.org/articles/91757/elife-91757-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the LPC-induced demyelination model coupled with platelet depletion using anti-CD42b. (B) Quantitative analysis of CD41+ signal at 5 dpl in untreated (n=5) and platelet depleted mice (n=3). (C) Representative images of immunofluorescence staining of oligodendroglial lineage cells in untreated and platelet depleted mice at 7 dpl using Olig2+ (upper panels) and mature oligodendrocytes using Olig2+/CC1+ (lower panels). Boxed areas represent high magnification images. (D–F) Quantitative analysis of oligodendroglia at 7 dpl in untreated (n=3) and platelet depleted mice (n=5). (G) Representative images of toluidine blue staining of remyelination in untreated (n=6) and platelet depleted mice (n=3) at 14 dpl and (H–I) its quantification by relative ranking analysis. Data were analysed using an Unpaired Student’s t-test or Mann-Whitney U test. Data represent mean ± SD. * p<0.05; ** p<0.01; ns (not significant), p>0.05. Scale bars, 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91757/elife-91757-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative immunofluorescence images of neutrophils (NIMP-R14+) and (B) number of neutrophils in LPC-induced white matter spinal cord lesion at 7 dpl in untreated (n=3) and platelet depleted mice (n=5). (C) Representative immunofluorescence images of Fibrinogen and (D) Quantification of Fibrinogen signal within the demyelinated lesion at 7 dpl in untreated and platelet depleted mice (n=4). Scale bar 50 μm. Data were analysed using an unpaired t-test. Data represent the mean ± SD. ns (not significant), p>0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91757/elife-91757-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Platelets (CD41+) are located in close proximity to the macrophage/microglia population (IBA-1+) at 5 dpl. Scale bar 10 μm. (B) Total macrophage/microglia population (IBA-1+), M1 (CD16/32+) and M2 (Arg-1+) cell subpopulations at 10 dpl. Scale bar 50 μm. (C–E) Quantitative analysis of total, M1 and M2 cell subpopulations in untreated (n=6), platelet depleted (n=3), and Calr+/- mice (n=4). (F) Representative Oil-Red O staining of myelin debris at 10 dpl. (G) Quantification of Oil-Red O (ORO) staining in untreated (n=6) and platelet depleted mice (n=3). Scale bar 100 μm. Data were analysed using an ordinary one-way ANOVA and or an unpaired t-test. Data represent the mean ± SD. ns (not significant), p>0.05.
+
+### Depletion of circulating platelets does not alter macrophage/microglia numbers and polarization during remyelination
 
 Blood-borne macrophages and CNS-resident microglia are essential for OPC differentiation during remyelination (Kotter et al., 2006; Miron et al., 2013). As platelets regulate macrophage function in neuroinflammation (Langer and Chavakis, 2013; Carestia et al., 2019; Rolfes et al., 2020) and since platelets are located near macrophages/microglia upon demyelination (Figure 2—figure supplement 2A), we evaluated whether platelet depletion affects these cell populations (Figure 2—figure supplement 2B). At 10 dpl, platelet depletion did not alter the total number of IBA-1+ (Figure 2—figure supplement 2C), pro-inflammatory IBA-1+/CD16/32+ (Figure 2—figure supplement 2D) or anti-inflammatory IBA-1+/Arg-1+ (Figure 2—figure supplement 2E) macrophages/microglia present within the remyelinating lesion. Furthermore, platelet depletion did not influence macrophage/microglia phagocytic activity as no difference in myelin debris clearance, detected by Oil-Red O, was observed (Figure 2—figure supplement 2F, G). Therefore, circulating platelets likely impact OPC differentiation without interfering with macrophage/microglia numbers/polarization during remyelination.
 
-## Transient in vitro exposure to platelets enhances OPC differentiation
+### Transient in vitro exposure to platelets enhances OPC differentiation
 
 To confirm whether transient platelet exposure directly enhances OPC differentiation, OPCs were briefly exposed to washed platelets (WP) for 3 days (pulse) and differentiation was assessed 3 days after WP withdrawal. OPCs briefly exposed to 10% WP exhibited a significant increase in the percentage of Olig2+/MBP+ mature oligodendrocytes compared to the vehicle treated control (p-value <0.0001; Figure 3A and B), indicating that transient contact to platelets directly promotes OPC differentiation. Similar increases in the proportion of Olig2+/MBP+ mature oligodendrocytes were observed when OPCs were transiently exposed to 1% platelet lysate (PL) compared to vehicle-treated control, indicating that this effect is, at least in part, mediated through platelet-contained factors and direct cell-cell contact is not essential (p-value <0.05; Figure 3C, D).
 
@@ -75,7 +87,7 @@ To confirm whether transient platelet exposure directly enhances OPC differentia
 
 **Figure 3.:** (A) Representative fluorescence images of OPCs co-cultured with 1 (n=6), 5 (n=6), and 10% (n=6) washed platelets (WP) for 3 days in vitro (DIV), followed by WP removal for an additional 3 DIV (Pulse). Additionally, OPCs were co-cultured in the presence of 10% WP for 6 DIV (n=5) (Sustained). Vehicle treated OPCs represents the control condition (n=6). (B) Graph represents the percentage of Olig2+MBP+ oligodendrocytes within the total Olig2 population (quantitative analysis of OPC differentiation). (C) Representative images of OPCs exposed to 1% platelet lysate (PL) (n=5) for 6 DIV. Vehicle treated OPCs represents the control condition (n=5). (D) Graph represents the quantitative analysis of OPC differentiation as in B. (E) Representative images of OPCs exposed to either PL for 9 DIV (Sustained) (n=5) or 6 DIV with PL followed by its removal for an additional 3 more DIV (Withdrawn) (n=5). Vehicle-treated OPCs represents the control condition (n=5). (F) Graph shows the quantitative analysis of OPC differentiation as in B and D. Data were analysed using one-way ANOVA followed by Tukey’s post-hoc test, a Mann-Whitney U test, or Kruskal-Wallis test. Data represent the mean ± SD. * p<0.05; *** p<0.001; **** p<0.0001; ns (not significant), p>0.05. Scale bars, 50 μm.
 
-## Sustained increase in circulating platelets hampers OPC differentiation during remyelination
+### Sustained increase in circulating platelets hampers OPC differentiation during remyelination
 
 Chronically-demyelinated MS lesions have been reported to contain a substantial number of platelets and their derived molecules (Lock et al., 2002; Han et al., 2008; Langer et al., 2012; Simon, 2012; Steinman, 2012). To explore the effects of prolonged platelet exposure on OPC differentiation, we conducted experiments with sustained exposure to 10% WP. Contrary to the 3-day pulse-based exposure, 6 days of sustained exposure to 10% WP suppressed the ability of platelets to enhance OPC differentiation (p-value <0.0001; Figure 3A and B). Similar findings were observed upon 9 days of sustained exposure to 1% PL (Figure 3E and F), indicating effects mediated by platelet-contained factors. To test whether this effect is reversible, PL was withdrawn upon 6 days of sustained exposure, and OPC differentiation was evaluated 3 days later. Interestingly, PL withdrawal rescued the capability of platelets to enhance OPC differentiation when compared to the vehicle-treated control and the sustained condition (p-value <0.05; Figure 3E, F - F).
 
@@ -83,7 +95,7 @@ To assess whether a permanent increase of circulating platelets may hamper OPC d
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91757/elife-91757-fig4-v1.jpg)
 
-**Figure 4.:** (A) Representative fluorescence images of platelets (CD41+) in LPC induced demyelinating lesions of spinal cord white matter of WT and Calr mice at 5 and 10 dpl. Scale bar 50 μm. (+/-B) Quantification of circulating platelets in WT vs Calr mice at 5 (n=4 and n=5, respectively) and 10 dpl (n=5 and n=6, respectively). (+/-C) Quantification of CD41+ signal in demyelinated lesions of WT vs Calr mice at 5 dpl (n=5 and n=+/-5, respectively) and 10 dpl (n=4 and n=4, respectively). (D) Representative immunofluorescence staining of oligodendroglial lineage cells in untreated and platelet depleted mice at 10 dpl using Olig2+ (upper panels) and mature oligodendrocytes using Olig2+/CC1+ (lower panels) (n=4). Scale bar 100 μm. (E–G) Quantitative analysis of oligodendroglia at 10 dpl. (H) Correlation between the circulating platelet number with the number of Olig2+/CC1+ cells within the demyelinated lesion. Data were analysed using a two-way ANOVA followed by Bonferroni’s post-hoc test, an unpaired t-test, Welch’s t-test, a Mann-Whitney U test, or Pearson’s correlation coefficient analysis. Data represent the mean ± SD. * p<0.05; ** p<0.01; ns (not significant), p>0.05.
+**Figure 4.:** (A) Representative fluorescence images of platelets (CD41+) in LPC induced demyelinating lesions of spinal cord white matter of WT and Calr +/-mice at 5 and 10 dpl. Scale bar 50 μm. (B) Quantification of circulating platelets in WT vs Calr +/-mice at 5 (n=4 and n=5, respectively) and 10 dpl (n=5 and n=6, respectively). (C) Quantification of CD41+ signal in demyelinated lesions of WT vs Calr +/-mice at 5 dpl (n=5 and n=5, respectively) and 10 dpl (n=4 and n=4, respectively). (D) Representative immunofluorescence staining of oligodendroglial lineage cells in untreated and platelet depleted mice at 10 dpl using Olig2+ (upper panels) and mature oligodendrocytes using Olig2+/CC1+ (lower panels) (n=4). Scale bar 100 μm. (E–G) Quantitative analysis of oligodendroglia at 10 dpl. (H) Correlation between the circulating platelet number with the number of Olig2+/CC1+ cells within the demyelinated lesion. Data were analysed using a two-way ANOVA followed by Bonferroni’s post-hoc test, an unpaired t-test, Welch’s t-test, a Mann-Whitney U test, or Pearson’s correlation coefficient analysis. Data represent the mean ± SD. * p<0.05; ** p<0.01; ns (not significant), p>0.05.
 
 ## Discussion
 
@@ -93,31 +105,153 @@ Although there is a need to reveal the underlying mechanism(s) by which platelet
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>CD41 rat monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab33661;RRID:AB_726487</td>
+      <td>Working dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD16/32rat monoclonal</td>
+      <td>BD Biosciences</td>
+      <td>Cat # BD 553142RRID:AB_394656</td>
+      <td>Working dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Iba-1 rabbit polyclonal</td>
+      <td>WAKO</td>
+      <td>Cat#019–19741;RRID:AB_839504</td>
+      <td>Working dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Arg-1 goat polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-18351;RRID:AB_2258542</td>
+      <td>Working dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NIMP-R14 rat monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab2557;RRID:AB_303154</td>
+      <td>Working dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Olig2 rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat# Ab109186;RRID:AB_10861310</td>
+      <td>Working dilution(1:200 in vivo)(1:500 in vitro)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CC1 mouse monoclonal</td>
+      <td>Millipore</td>
+      <td>Cat# OP80;RRID:AB_2057371</td>
+      <td>Working dilution (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MBP rat monoclonal</td>
+      <td>Bio-rad</td>
+      <td>Cat# MCA409S;RRID:AB_325004</td>
+      <td>Working dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Collagen IV (ColIV) goat polyclonal</td>
+      <td>Millipore</td>
+      <td>CAT# AB769;RRID:AB_92262</td>
+      <td>Working dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fibrinogen rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab34269RRID:AB_732367</td>
+      <td>Working dilution (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-lysophosphatidylcholine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # L1381</td>
+      <td>Demyelinating agent, Working concentration 1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CD42b (mixture of rat monoclonal antibodies)</td>
+      <td>Emfret Analytics; Evans et al., 2021</td>
+      <td>Cat #R300RRID:AB_2721041</td>
+      <td>Platelet depletion antibody, Working concentration 0.6 μg/g</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C7BL/6</td>
+      <td>Charles River Laboratories</td>
+      <td>RRID:SCR_003792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: Calrfl/+:Vav1-Cre mice</td>
+      <td>Li et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Rat:Sprague Dawley</td>
+      <td>Charles River Laboratories</td>
+      <td>RRID:SCR_003792</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal work at University of Cambridge complied with the requirements and regulations of the United Kingdom Home Office (Project Licenses PCOCOF291 and P667BD734). All the experiments at Universidad Austral de Chile were conducted in agreement with the Chilean Government’s Manual of Bioethics and Biosafety (CONICYT: The Chilean Commission of Scientific and Technological Research, Santiago, Chile) and according to the guidelines established by the Animal Protection Committee of the Universidad Austral de Chile (UACh). The animal study was reviewed and approved by the Comité Institucional de Cuidado y Uso de Animales (CICUA)-UACh (Report Number # 394/2020). All the experiments at University of Helsinki followed the guidelines posed by the Academy of Finland and the University of Helsinki on research ethics and integrity (under Internal License KEK23-022) and accordingly to the National Animal Ethics Committee of Finland (ELLA). Mice and rats had access to food and water ad libitum and were exposed to a 12 hr light cycle. For all in vivo studies animals were grouped randomly (treatment and time) as well as for all in vitro experiments.
 
-## Human subjects
+### Human subjects
 
 Human platelets were obtained from blood samples of healthy volunteers who signed a consent form before sampling. All procedures were approved by the Comité Ético y Científico del Servicio de Salud de Valdivia (CEC-SVS; ORD N° 510) to carry experiments at Universidad Austral de Chile and by the Ethical Committee of the University of Cambridge to perform experiments at this institution. The blood donors at Cambridge were approved by the human biology research ethics committee (reference number: HBREC.2018.13.).
 
-## Focal demyelination lesions
+### Focal demyelination lesions
 
 A focal demyelinating lesion was induced in C57BL/6 and Calr+/- mice between 2 and 4 months of age. Animals were anesthetized using Isoflurane/Oxygen (2–2.5%/1000 ml/min O2) and buprenorphine (0.05 mg/kg) was injected subcutaneously immediately before surgery. Local Lysolecithin-driven demyelination in mice was induced as previously described in Fancy et al., 2009. Briefly, the spinal cord was exposed between two vertebrae of the thoracic column and demyelination was induced by injecting 1 µL of 1% lysolecithin (L-lysophosphatidylcholine, Sigma) into the ventral funiculus at a rate of approximately 0.5 µl/min–1. The incision was then sutured, and the animal was left to recover in a thermally controlled chamber. Animals were monitored for 72 hr after surgery. Any signs of pain, dragging of limbs, or weight loss of more than 15% of pre-surgery weight, resulted in cessation of the experiment. Mice were sacrificed at 1, 3, 5, 7, 10, and 14 dpl by transcardial perfusion of 4% PFA or glutaraldehyde under terminal anaesthesia.
 
-## Platelet depletion
+### Platelet depletion
 
 For platelet depletion, mice received an intraperitoneal injection (IP) of 0.6 µg/g of antiCD42b (Emfret Analytics) (Evans et al., 2021), diluted in saline solution, at 3 dpl, followed by IP injections every 48 hr until the end of the experiment period. The effectiveness of platelet depletion was confirmed by measuring the number of circulating platelets using a VetAnalyzer (scil Vet abc Plus). Mice with a circulating platelet number below 200,000 platelets/µL were considered successfully depleted.
 
-## Preparation of washed platelets and platelet lysate
+### Preparation of washed platelets and platelet lysate
 
 Washed platelets (WP) were prepared as described (Cazenave et al., 2004). Briefly, human blood samples were taken from the median cubital vein and collected in sodium citrate followed by centrifugation for 20 min at 120 x g to separate the red blood cells from the plasma. Plasma was collected and centrifuged at 1400 x g to pellet platelets. Plasma was removed without disrupting the platelet pellet. PGI2 and sodium citrate were carefully added, followed by resuspension in Tyrode’s buffer. Platelet number was quantified using a Vet Analyzer and adjusted to a concentration of 1,000,000 platelets/µL. WP were used fresh, meanwhile for the platelet lysate (PL) preparation, the suspension underwent two freeze-thaw overnight cycles. Platelet fragments were then eliminated by centrifugation at 4000 x g for 15 min and the supernatant was collected and stored at - 20 °C.
 
-## Primary OPC cultures
+### Primary OPC cultures
 
 OPCs were obtained from Sprague-Dawley postnatal rats (p3 – p6) from both genders. Rat OPCs were isolated and prepared as described by Neumann et al., 2019. Cells were then seeded onto glass plates pre-coated with Poly-D-Lysine (PDL) in 24-well plates, with a seeding density of 7000 cells for differentiation assays. For differentiation conditions, T3 was added to the culture media. All experimental conditions were replicated using two independent technical replicates. OPCs were either subjected to various concentrations of washed platelets (1%, 5%, and 10%) or to 1% of platelet lysate of the final volume.
 
-## Histology and immunofluorescence
+### Histology and immunofluorescence
 
 After transcardial perfusion with 4% PFA, tissue was post-fixed overnight in 4% PFA at 4 °C. After fixation, spinal cords were left in 30% sucrose overnight. Tissue was then embedded in OCT and cut in 15 µm transverse sections on a Leica Cryostat. Samples were stored at - 80 °C until use.
 
@@ -127,14 +261,14 @@ For immunofluorescence staining of cell cultures, samples were initially washed 
 
 Images were captured using a Leica SP8 Laser Confocal, a Zeiss LSM 980 Confocal or an Olympus IX81FV1000. For cell culture imaging, 8–10 photos per well were quantified for each well using an automated macro in ImageJ/Fiji. For in vivo imaging, three to five photos were quantified per animal by a blinded observer. For tissue image analysis and 3D reconstruction of platelet localisation, ImageJ/Fiji (version 2.1.0/1.53 hr) and Imaris (Bitplane, version 9.3.1, and 9.9.0) were used.
 
-## Oil-Red O staining
+### Oil-Red O staining
 
 To analyse myelin debris clearance, tissue sections were stained with Oil-Red O as previously described by Kotter et al., 2005. Briefly, sections were stained with freshly prepared Oil-Red O and incubated at 37 degrees for 30 min. Slides were washed and mounted using an aqueous mounting medium. Image J was used to threshold and quantify Oil-Red O images.
 
-## Remyelination ranking analysis
+### Remyelination ranking analysis
 
 For remyelination studies, tissue was fixed with 4% glutaraldehyde and embedded in resin. Semi-thin sections of the lesion were cut and stained with Toluidine Blue. Three blinded observers ranked the level of remyelination for each biological individual, giving the most remyelinated individual the highest score, and the individual with the lowest degree of remyelination the lowest. The average for each animal was calculated from the three independent observer rankings.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 10. In vivo data were obtained from three to six animals per groups (n value). In vitro studies were performed considering, at least, three technical replicates and statistical analysis was performed from five to six independent biological experiments (n value). The distribution of data were first tested using a Shapiro-Wilks test. Two-way ANOVA, One-way ANOVA or a Kruskal Wallis one-way analysis, with the corresponding post-hoc test, were used to compared multiple groups, and a Mann-Whitney U-test, an unpaired t-test or Welch’s t-test were used to compare between groups. Pearson’s correlation coefficient analysis was used for studies involving data correlation. p-Values were represented as *<0.05, **<0.01, ***<0.001, ****<0.0001.

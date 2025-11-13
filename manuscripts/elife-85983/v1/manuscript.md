@@ -21,10 +21,10 @@
 
 ### Affiliations
 
-1. https://ror.org/010826a91 Department of Otolaryngology, Head and Neck Surgery, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
-2. https://ror.org/0220qvk04 Ear Institute, Shanghai Jiao Tong University School of Medicine Shanghai China
+1. Department of Otolaryngology, Head and Neck Surgery, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:010826a91](https://ror.org/010826a91))
+2. Ear Institute, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 3. Shanghai Key Laboratory of Translational Medicine on Ear and Nose diseases Shanghai China
-4. https://ror.org/010826a91 Department of Radiology, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China
+4. Department of Radiology, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China ([ROR:010826a91](https://ror.org/010826a91))
 5. MR Collaboration, Siemens Healthineers Ltd Shanghai China
 6. MR Scientific Marketing, Siemens Healthineers Ltd Shanghai China
 
@@ -50,17 +50,156 @@ In the present study, we introduced a new pipeline for reconstructing the human 
 
 ## Results
 
-## Demographics
+### Demographics
 
 Twenty-three children aged under 6 years old including 13 patients with bilateral profound congenital SNHL (mean [SD] of age, 30.92 [6.115] mo; nine males) and 10 normal hearing volunteers (mean [SD] of age, 42.90 [4.270] months; five males) matched on age and gender were included (Mann–Whitney U test: p-value for age = 0.077, 95% confidence interval for the difference in age = [–32.0, 6.5] mo; p-value for gender = 0.446, 95% confidence interval for the difference in male counts = [–1, 4]).
 
 The audiological profiles of these patients, including newborn hearing testing results, initial diagnoses, interventions, and recent preoperative audiometric examination results, are presented in detail in Supplementary file 1. Nearly half of the patients (6 out of 13) had IEMs and cochlear nerve deficiencies: two of them underwent ABI surgeries; the other four were ABI candidates. The remaining half exhibited normal structures and underwent CI surgeries (see Table 1).
 
+**Table 1.**
+ Demographic information for patients with congenital bilateral profound sensorineural hearing loss.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gender</th>
+      <th>Age (mo)</th>
+      <th>Gestational weeks</th>
+      <th>Birth weight (kg)</th>
+      <th>Inner ear structure (CT)</th>
+      <th>Cochlear nerve (CISS)</th>
+      <th>Surgery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M</td>
+      <td>26</td>
+      <td>39</td>
+      <td>3.25</td>
+      <td>Cochlear aplasia</td>
+      <td>Deficiency</td>
+      <td>ABI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>24</td>
+      <td>39</td>
+      <td>2.7</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>56</td>
+      <td>39</td>
+      <td>3.2</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>65</td>
+      <td>39</td>
+      <td>2.9</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>17</td>
+      <td>40</td>
+      <td>3.4</td>
+      <td>Incomplete partition type I</td>
+      <td>Deficiency</td>
+      <td>ABI candidate</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>32</td>
+      <td>40</td>
+      <td>3.3</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>29</td>
+      <td>40</td>
+      <td>3</td>
+      <td>Cochlear hypoplasia (L), Cochlear aplasia (R)</td>
+      <td>Deficiency</td>
+      <td>ABI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>14</td>
+      <td>40</td>
+      <td>2.9</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>6</td>
+      <td>39</td>
+      <td>4.3</td>
+      <td>Hypoplastic cochlear aperture</td>
+      <td>Deficiency</td>
+      <td>ABI candidate</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>72</td>
+      <td>36</td>
+      <td>2.2</td>
+      <td>Hypoplastic cochlear aperture</td>
+      <td>Deficiency</td>
+      <td>ABI candidate</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>44</td>
+      <td>40</td>
+      <td>3.97</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>9</td>
+      <td>40</td>
+      <td>3.6</td>
+      <td>Normal</td>
+      <td>Normal</td>
+      <td>CI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>8</td>
+      <td>38</td>
+      <td>6</td>
+      <td>Hypoplastic cochlear aperture</td>
+      <td>Deficiency</td>
+      <td>ABI candidate</td>
+    </tr>
+  </tbody>
+</table>
+
+_ABI, auditory brainstem implantation; CI, cochlear implantation; CISS, constructive interference in steady state._
+
 As for genetic testing, we obtained data for 7 of the 13 patients. Two patients had mutations in the GJB2 gene, one had a mutation in the OTOF gene, and one had a mutation in the MYO15A gene. Please refer to Supplementary file 2 for detailed information on the genetic data.
 
 Inner ear structure and cochlear nerve were inspected using temporal bone high-resolution CT and constructive interference in steady state (CISS) MRI. The presence of IEM&CND was determined based on Sennaroğlu classification criteria (Sennaroğlu and Bajin, 2017); descriptions refer to a bilateral condition if the side (such as L or R) is not specified.
 
-## Segmentation of subcortical auditory regions and tractography of the central auditory pathway
+### Segmentation of subcortical auditory regions and tractography of the central auditory pathway
 
 All subcortical auditory nuclei, including the bilateral CN, superior olivary complex (SOC), IC, and MGB, were segmented in both group-average space and individual space with good inter-rater reliability (see Figure 1).
 
@@ -70,23 +209,35 @@ All subcortical auditory nuclei, including the bilateral CN, superior olivary co
 
 We reconstructed the auditory pathway in vivo using probabilistic tractography in four subdivisions: the trapezoid body (TB), lateral lemniscus (LL), brachium of inferior colliculus (BIC), and acoustic radiation (AR) (see Figure 2). The auditory pathway was generally symmetric bilaterally. Except for the fibres connecting the CN to the contralateral SOC, contralateral probabilistic tracking resulted in fewer streamlines than ipsilateral counterparts (fibres tracking from the CN or SOC to the contralateral IC showed fewer than 30 streamlines each and were thus removed from further analyses).
 
-## Tractography of the language pathway
+![Figure 2.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig2-v1.jpg)
+
+**Figure 2.:** (A, E) present schematic diagrams for the ascending auditory pathway and the language pathway, respectively. The auditory diagram was adapted from Duvernoys Atlas of the Human Brain Stem and Cerebellum (2009); the language diagram was adapted from Friederici et al., 2017. (B, F) show three-dimensional reconstructions of tractography results of the central auditory pathway and the language pathway, respectively, in the study-specific template (at group level averaged from all 10 normal-hearing controls). Fibre colours refer to the subdivisions in each pathway, corresponding with the schematic colours in (A) and (E). The ball-and-stick diagrams represent the relative region-of-interest (ROI) size and streamline numbers in each pathway. Tractography results are also displayed in the study-specific white matter fibre orientation distribution (FOD) template in (C) and (G), colour coded by subdivision, and in (D, H), colour coded by direction (red: left-right; green: anterior-posterior; blue: superior-inferior). See Figure 2—video 1 and Figure 2—video 2 for three-dimensional animated videos of these pathways.
+
+### Tractography of the language pathway
 
 The language pathway was also reconstructed bilaterally, each comprising two dorsal streams and two ventral streams (see Figure 2). Dorsal pathway I connects the posterior part of the superior temporal cortex (pSTC) to the premotor cortex (PMC) via the arcuate fascicle (AF) and the superior longitudinal fascicle (SLF). Dorsal pathway II connects the pSTC to the pars opercularis of Broca’s area (BA44) via the AF/SLF. Ventral pathway I connects pars triangularis of Broca’s area (BA45) and the temporal cortex via the extreme fibre capsule system (EFCS). Ventral pathway II connects the frontal operculum (FOP) and the anterior part of the STC via the uncinate fascicle (UF). The whole language pathway showed left dominance in fibre numbers.
 
-## Children with profound SNHL exhibited fibre impairment in the central auditory pathway and the language pathway
+### Children with profound SNHL exhibited fibre impairment in the central auditory pathway and the language pathway
 
 In the central auditory pathway, FBA results demonstrated reduced fibre density (FD), fibre cross-section (FC), and fibre density and cross-section (FDC) in TB and decreased FC in LL in patients with profound SNHL (pFWE < 0.05) (see Figure 3A). There was no significant difference in the ‘superior’ part of the auditory pathway (i.e. the bilateral BIC and AR). In the language pathway, only the left ventral streams showed reduced FC and only the left dorsal streams showed reduced FD, while decreased FDC was found in both the left dorsal and left ventral streams (see Figure 3B). The size of impaired areas in the dorsal streams was larger than that in the ventral streams. No significant difference was found in fibre metrics of the right language pathway.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig3-v1.jpg)
+
+**Figure 3.:** Streamlines associated with significantly reduced fibre cross-section (FC), fibre density (FD), and fibre density and cross-section (FDC) (family-wise error [FWE]-corrected p-value<0.05) in fixel-wise comparison between patients with profound SNHL (n=13) and normal hearing controls (n=10) are shown for the central auditory pathway (A) and the language pathway (B). The left two columns in each panel display colour coded by direction and the right two coded by absolute values of effect size. Mean FC, FD, and FDC extracted from pathway subdivisions, entire pathways, and impaired fixels from (A) and (B) in the central auditory pathway (C) and the language pathway (D) are shown for patients with profound SNHL versus normal hearing controls. ‘p’ represents the uncorrected p-value; ‘pFWE’ denotes the FWE-corrected p-value. Non-significant p-values, whether uncorrected or FWE-corrected, are not displayed in the figure. The error bars represent Standard Error of the Mean. Refer to Figure 3—figure supplement 1 for results displayed by separating three groups: profound SNHL with ear malformations and/or cochlear nerve deficiency (IEM&CND), profound SNHL with normal peripheral structure, and normal hearing controls.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The error bars represent Standard Error of the Mean.
+
 Next, we performed a tract-of-interest analysis to examine specific subdivisions in these pathways (see Figure 3C and D). Fibre metrics of all tracts displayed a decreased trend in children with profound SNHL. In accordance with fixel-wise comparison results, only the ‘inferior’ subdivisions of the central auditory pathway (TB and bilateral LL) had significant fibre impairments. In the language pathway, significant impairment was found bilaterally rather than only on the left side. The left ventral I, left ventral II, and right dorsal II streams exhibited all-round fibre impairment, as FC, FD, and FDC were all significantly reduced. When considering central pathways as a whole, the mean FC of the entire central auditory pathway and the mean FC, FD, and FDC of the entire language pathway were significantly reduced. After extracting the mean values of significant results from fixel-wise comparison, the mean fibre metrics of these impaired fixels demonstrated a significant, large decrease. Of all tract-of-interest comparisons, only the decrease of FD and FDC of impaired fixels in both pathways survived family-wise error (FWE) correction (pFWE < 0.05). It is worth noting, however, that in our tract-of-interest analysis, there is the potential for double dipping as we re-analysed the impaired pixels identified from the same comparison, which could have impacted the reported effect size.
 
-## Peripheral nerve structure moderated the structural development of central pathways
+### Peripheral nerve structure moderated the structural development of central pathways
 
 In the present study, all seven children who underwent CI surgery had normal inner ear and cochlear nerve structure (see Table 1 and Figure 4A). All six children who underwent ABI surgery or were ABI candidates presented with IEM&CND (see Table 1 and Figure 4B). The cochlear nerve and vestibular nerve converge to form cranial nerve VIII (the vestibulocochlear nerve; cn.VIII), which travels through cerebrospinal fluid (CSF) in the cerebellopontine angle cistern and enters the brainstem. We measured the median contrast value of cranial nerve VIII (regressing out surrounding CSF median contrast values) to represent peripheral nerve tissue density (see Figure 4C), which provides a quantitative assessment of peripheral nerve structure. One patient with absent cochlear nerve also presented with no vestibular nerve; therefore, he was absent of cn.VIII and was left out in the following statistics.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig4-v1.jpg)
 
-**Figure 4.:** (A) shows temporal bone high-resolution CT (HRCT) and constructive interference in steady state (CISS) sections from a patient who underwent cochlear implantation (CI) surgery (male, 32 months old) and demonstrates a normal structure of the inner ear and cochlear nerve. (B) presents temporal bone HRCT and CISS sections from an auditory brainstem implantation (ABI) candidate (male, 17 months old) and reveals IEM&CND. The red arrow in (B) points to the missing cochlear nerve that is normally present, as shown by the red arrow in (A). (C) displays inverted CISS sections (axial plane) at the pontomedullary junction from a patient with profound SNHL. Cranial nerve VIII (cn.VIII) is visualized as a hyperintense structure relative to the surrounding cerebrospinal fluid (CSF). Cn.VIII was segmented (purple) and extracted for its median contrast value, regressing out surrounding CSF median values. (D) shows the cn.VIII median contrast values for patients with normal peripheral structure versus those with IEM&CND. (E) presents the mean fibre density (FD), fibre cross-section (FC), and fibre density and cross-section (FDC) of profound hearing loss-associated impaired fixels (from fixel-wise comparison results between patients and controls; see Figure 2A and B) in central pathways for patients with normal peripheral structure versus those with IEM&CND. (F) displays the Pearson correlation between cn.VIII median contrast values and the mean FD of entire central pathways for patients with profound SNHL. (G) illustrates the Pearson correlation between cn.VIII median contrast values and the mean FD of profound hearing loss-associated impaired fixels in central pathways for patients with profound SNHL. (H) demonstrates the moderation of central auditory pathway maturation by cn.VIII median contrast values. The mean FD of the entire central auditory pathway was significantly associated with age (beta value = 0.809), and their association was negatively moderated by cn.VIII median contrast values (interaction beta value = –0.379). (I) shows the moderation of language pathway maturation by cn.VIII median contrast values. The mean FD of the entire language pathway was significantly associated with age (beta value = 0.782), and their association was negatively moderated by cn.VIII median contrast values (interaction beta value = –0.298). These moderation effects are visualized as separate correlation plots of central pathway FD and age for patients with normal peripheral structure and those with IEM&CND. In panels (D–G), 'p’ represents the uncorrected p-value; ‘pFWE’ denotes the family-wise error (FWE)-corrected p-value. Non-significant p-values, whether uncorrected or FWE-corrected, are not displayed in the figure. The error bars represent Standard Error of the Mean. In panels (H) and (I), *p<0.05, **p<0.01, ***p<0.001. Refer to Figure 4—source data 2 for detailed statistics of the moderation analysis, as well as moderation analysis results after controlling gender, gestational weeks, and birth weights.Figure 4—source data 1.Figure 4—source data 2.(a) Moderation analysis of the effect of cn.VIII median contrast values on the relationship between auditory pathway fibre density (FD) and age. (b) Moderation analysis of the effect of cn.VIII median contrast values on the relationship between language pathway FD and age. (c) Moderation analysis of the effect of cn.VIII median contrast values on the relationship between auditory pathway FD and age, controlling gender, gestational weeks, and birth weights. (d) Moderation analysis of the effect of cn.VIII median contrast values on the relationship between language pathway FD and age, controlling gender, gestational weeks, and birth weights.
+**Figure 4.:** (A) shows temporal bone high-resolution CT (HRCT) and constructive interference in steady state (CISS) sections from a patient who underwent cochlear implantation (CI) surgery (male, 32 months old) and demonstrates a normal structure of the inner ear and cochlear nerve. (B) presents temporal bone HRCT and CISS sections from an auditory brainstem implantation (ABI) candidate (male, 17 months old) and reveals IEM&CND. The red arrow in (B) points to the missing cochlear nerve that is normally present, as shown by the red arrow in (A). (C) displays inverted CISS sections (axial plane) at the pontomedullary junction from a patient with profound SNHL. Cranial nerve VIII (cn.VIII) is visualized as a hyperintense structure relative to the surrounding cerebrospinal fluid (CSF). Cn.VIII was segmented (purple) and extracted for its median contrast value, regressing out surrounding CSF median values. (D) shows the cn.VIII median contrast values for patients with normal peripheral structure versus those with IEM&CND. (E) presents the mean fibre density (FD), fibre cross-section (FC), and fibre density and cross-section (FDC) of profound hearing loss-associated impaired fixels (from fixel-wise comparison results between patients and controls; see Figure 2A and B) in central pathways for patients with normal peripheral structure versus those with IEM&CND. (F) displays the Pearson correlation between cn.VIII median contrast values and the mean FD of entire central pathways for patients with profound SNHL. (G) illustrates the Pearson correlation between cn.VIII median contrast values and the mean FD of profound hearing loss-associated impaired fixels in central pathways for patients with profound SNHL. (H) demonstrates the moderation of central auditory pathway maturation by cn.VIII median contrast values. The mean FD of the entire central auditory pathway was significantly associated with age (beta value = 0.809), and their association was negatively moderated by cn.VIII median contrast values (interaction beta value = –0.379). (I) shows the moderation of language pathway maturation by cn.VIII median contrast values. The mean FD of the entire language pathway was significantly associated with age (beta value = 0.782), and their association was negatively moderated by cn.VIII median contrast values (interaction beta value = –0.298). These moderation effects are visualized as separate correlation plots of central pathway FD and age for patients with normal peripheral structure and those with IEM&CND. In panels (D–G), 'p’ represents the uncorrected p-value; ‘pFWE’ denotes the family-wise error (FWE)-corrected p-value. Non-significant p-values, whether uncorrected or FWE-corrected, are not displayed in the figure. The error bars represent Standard Error of the Mean. In panels (H) and (I), *p<0.05, **p<0.01, ***p<0.001. Refer to Figure 4—source data 2 for detailed statistics of the moderation analysis, as well as moderation analysis results after controlling gender, gestational weeks, and birth weights.
 
 We divided patients with profound SNHL into a normal peripheral structure subgroup and an IEM&CND subgroup, and compared their peripheral nerve and central pathway structure. The IEM&CND subgroup had significantly lower cn.VIII median contrast values than the normal peripheral structure subgroup (pFWE = 0.006; see Figure 4D). Fixel-wise comparison showed no significant difference between the two subgroups in the central auditory pathway and the language pathway (pFWE > 0.05). Then, we extracted mean fibre metrics of profound hearing loss-associated impaired fixels (significant regions in the fixel-wise comparison between patients with profound SNHL and normal hearing controls) and compared them between the two subgroups. All fibre metrics showed a reduced trend for the IEM&CND compared to the normal peripheral structure subgroup; only FD of profound hearing loss-associated impaired fixels in the language pathway showed a significant decrease but did not survive FWE correction (p=0.046, pFWE > 0.05; see Figure 4E).
 
@@ -94,9 +245,17 @@ To investigate the relationship between peripheral nerves and central pathways, 
 
 Further, a moderation analysis was conducted to explore the specific impact of peripheral nerve structure on the maturation of central pathways over time. The temporal developmental trajectories of FD of both the entire central auditory pathway and the entire language pathway were negatively moderated by cn.VIII median contrast values (interaction beta value = –0.379 and –0.298, respectively; see Figure 4H and I, Figure 4—source data 2). After controlling for gender, gestational weeks, and birth weight, the moderation effect was no longer significant (see Figure 4—source data 2). No significant moderation effect was found on the maturation of FC of central pathways by peripheral nerve structure.
 
-## Investigating correlations between preoperative characteristics and postoperative outcomes
+### Investigating correlations between preoperative characteristics and postoperative outcomes
 
 Our research aimed to explore the relationship between preoperative attributes and postoperative auditory and linguistic performance in all patients undergoing implantation (seven CI recipients and two ABI recipients). Evaluations included pure tone audiometry 6 mo post-device activation, and four auditory and language scales at both the onset and 6 mo post-activation, along with changes in these scores over the intervening period. The scales we employed were the Categories of Auditory Performance (CAP), Speech Intelligibility of Rating (SIR), Infant-toddler Meaningful Auditory Integration Scale (IT-MAIS), and Meaningful Use of Speech Scale (MUSS). These scales predominantly offer a qualitative and observational measure of auditory performance, speech use, and speech intelligibility in various real-life scenarios and are rooted in subjective interpretations. A notable trend was that subjective assessments of auditory and language development, as measured by various scales, appeared to be more responsive to preoperative metrics such as age, gender, choice of surgery, peripheral nerve tissue density, and fibre densities in the central auditory and language pathways. Conversely, the objective indicator of postoperative auditory condition (PTA) exhibited a more focused correlation pattern (see Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig5-v1.jpg)
+
+**Figure 5.:** The size of the bubble represents the correlation levels; the colour intensity of the bubble represents the uncorrected significance levels. All correlations deemed significant are positive. Start, at device activation; 6 m, at 6 mo post-activation; ∆6m, changes over the 6-month intervening period; PTA-6m, pure tone average at 6 mo post-activation; CAP, Categories of Auditory Performance; SIR, Speech Intelligibility of Rating; IT-MAIS, Infant-toddler Meaningful Auditory Integration Scale; MUSS, Meaningful Use of Speech Scale. For correlations specific to CI recipients, please refer to Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The size of the bubble represents the correlation levels; the colour intensity of the bubble represents the uncorrected significance levels. All correlations deemed significant are positive. Start, at device activation; 6m, at 6 mo post-activation; ∆6m, changes over the 6-month intervening period; PTA-6m, pure tone average at 6 mo post-activation; CAP, Categories of Auditory Performance; SIR, Speech Intelligibility of Rating; IT-MAIS, Infant-toddler Meaningful Auditory Integration Scale; MUSS, Meaningful Use of Speech Scale.
 
 Significantly, age showed a positive correlation with numerous auditory and language scales at both the initial and six-month post-activation, and with changes in these scores over this period. Gender demonstrated a correlation with IT-MAIS and MUSS at startup and with SIR 6 mo post-activation. This positive correlation implies that female patients (coded as '2') typically achieve higher scores on these scales than their male counterparts (coded as '1'). Contrasting with age and gender, the choice of surgery (CI versus ABI) manifested a unique positive correlation with PTA 6 mo post-activation, but not with auditory and language scales. This suggests a more immediate effect on the objective auditory condition. A positive correlation signifies that the patients who opted for ABI surgeries (coded as '2') typically exhibited higher PTA values (indicating poorer hearing) compared to those who underwent CI surgeries (coded as '1'), at least at the 6-month post-activation.
 
@@ -112,13 +271,13 @@ In addition, our findings presented an unexpected correlation: a positive associ
 
 In this study, we successfully segmented subcortical auditory regions and reconstructed the auditory and language pathways in vivo. Our findings showed decreased FD and FC mainly in the inferior part of the central auditory pathway and the left language pathway. Additionally, we discovered that the correlation between language pathway fibre metrics and peripheral vestibulocochlear nerve structure is stronger and more significant than that in the central auditory pathway, and that the peripheral nerve structure moderated the developmental trajectory of the central auditory and language pathways. Preoperatively evaluating the structure of the auditory-language network helps predict postoperative audiometric and qualitative language outcomes.
 
-## The new pipeline for mapping the human auditory pathway with in vivo MRI
+### The new pipeline for mapping the human auditory pathway with in vivo MRI
 
 To address the issue of inability to precisely locate subcortical auditory nuclei using sound-stimulating fMRI tasks for patients with profound hearing loss, we have introduced a new pipeline that only requires the acquisition and postprocessing of structural and diffusional images. The CN appears as an angulated wedge shape along the brainstem surface when viewed from above; it is mostly located between the inferior cerebellar peduncle (ICP) and CSF, with a small width of up to around 2 mm (Rosahl and Rosahl, 2013). The SOC is a small cell mass that is buried deep in the brainstem, surrounded by multiple fibre bundles. These two delicate auditory nuclei are prone to partial volume effects due to insufficient resolution and a lack of contrast to differentiate them from their surroundings in in vivo structural MR brain scans (even when using 7T MRI scanner; Sitek et al., 2019). To address this, we have reconstructed super-resolution TDI maps to provide complementary contrast for high-resolution structural images, allowing the CN and the SOC to be delineated according to track density and track direction at an isotropic resolution of 0.5 mm. The super-resolution properties of TDI maps have been validated using in vivo and in silico data, and the anatomical contrast of TDI maps from ex vivo mouse data has been related to histology (Calamante et al., 2011; Calamante et al., 2012). TDI maps have been demonstrated to be useful in delineating substructures of the thalamus, the basal ganglia, and brainstem fibre bundle cross-sections to assist fibre tracking (Calamante et al., 2013; Kwon et al., 2021; Tang et al., 2018). Epprecht et al. found that significantly different fibre orientations can be detected in the CN area and in the ICP area using diffusion tensor model (Epprecht et al., 2020), which suggests the potential role of fibre direction information in distinguishing the CN from adjacent structures. In the present study, the good inter-rater reliability of segmentation suggests that this method is effective for locating the subcortical auditory nuclei.
 
 Our results showed that the best way to capture fibre features of different tracts in the auditory pathway is to track them separately and optimize tracking strategies for each part. We implemented probabilistic tractography and deliberately chose seeds and termination ROIs for each tract based on anatomical prior knowledge. MCP fibres were excluded when tracking the TB, which accounted for a large proportion of contralateral streamlines if not controlled and have yet been neglected in earlier studies. Exclusion ROIs are also essential when tracking the AR, because the AR crosses with several major fibre bundles that own greater FOD amplitudes in the corresponding directions. Mafei et al. found that optimal tracking parameters for the ARs were probabilistic tractography with default settings (angle threshold = 45°, step size = 1/2 * voxel size); however, the FOD amplitude threshold was not mentioned (Maffei et al., 2019). We examined a range of cutoff values and found that thresholding at 0.05 obtained optimal results for the ARs and 0.1 for subcortical auditory tracts. The tractography parameters established in the present study offer reliable recommendations for future attempts to track the auditory pathway.
 
-## Fibre impairment pattern in the central auditory pathway of children with profound SNHL
+### Fibre impairment pattern in the central auditory pathway of children with profound SNHL
 
 Normally, the axonal myelination of the auditory pathway starts at the 26th foetal week, becomes definitive by the 29th week of gestation, and continuously increases in density until at least 1 y postnatal age (Moore et al., 1995). With the deprivation of hearing inputs, the central auditory pathways of children with congenital profound hearing loss displayed a brainstem-dominant fibre impairment pattern that included both microstructural impairment and macroscopic deficiency: the FD, FC, and FDC of the TB and the FC of the lateral lemnisci were significantly decreased; nevertheless, no significant difference was found in the branchium of inferior colliculus or the AR.
 
@@ -128,13 +287,13 @@ The TB was the most affected tract in the auditory pathway of children with cong
 
 The formation of a brainstem-dominant impairment pattern warrants investigation. The absence of a significant difference in two high-level auditory pathways, the BIC and AR, may reflect that the susceptibility of fibre structures to auditory deprivation decreases in a bottom-up fashion along the pathway, or that upper pathways in the thalamus and cerebrum may have already undergone cross-modal plasticity so that fibres are still structurally intact but subserve other functions. It has been proposed that the auditory cortex might reorganize to mediate other functions such as vision. Auditory areas in the superior temporal sulcus show greater recruitment in individuals with severe-to-profound hearing loss than in hearing individuals when processing visual, tactile, or signed stimuli (Bavelier et al., 2006). However, it is unclear that to what extent the primary auditory cortex may be affected by cross-modal plasticity and whether such cortical plasticity would affect downstream auditory nuclei and in-between fibre bundles. Further studies incorporating structural and functional features of the auditory pathway in larger samples are required to shed light on these questions.
 
-## The structural development of the language pathway in children with profound SNHL
+### The structural development of the language pathway in children with profound SNHL
 
 After CI and/or ABI implantation, children were able to achieve good hearing sensation, but their performance in speech recognition and production was poorer and varied (Sennaroğlu et al., 2016). One of the most important tasks in this field is identifying the factors that contribute to language outcome after implantation. In this study, we focused on the structural properties of the language pathway and found that patients with profound SNHL had an all-streams-affected fibre impairment that was left-dominant.
 
 The language pathway was reconstructed based on Angela Friederici’s model, which elucidates the neuroanatomical fibre bundles that underlie specific language functions (Friederici, 2011; Friederici et al., 2017). The coordination between BA44 and pSTC subserves syntactic computation, while the ventral streams that connect BA45 and FOP with the temporal cortex support lexical-semantic comprehension. The pSTC integrates syntactic and semantic information for comprehension at the sentence level and is also connected to the PMC as a peripheral sensorimotor interface system. The maturational status of these tracts has been found to be associated with behavioural performance. For example, the tract targeting BA44 is highly predictive of behavioural performance on processing hierarchically complex sentences (Skeide et al., 2016). In this study, these four streams were separately reconstructed using probabilistic tractography. FBA results showed that the dorsal streams mainly suffered from reduced FD, while the ventral streams mainly exhibited decreased FC in children with profound SNHL. The combined metric FDC was more sensitive in detecting fibre impairment in both dorsal and ventral streams. These results demonstrate that deprived auditory inputs have a damaging effect on the structural development of all language streams that serve different functions, which may indicate that children with congenital profound hearing loss suffer from an overall underdeveloped language capacity in semantics, syntax, and sensorimotor integration, rather than just struggling with oral communication.
 
-## Moderation of central pathway maturation by peripheral auditory structure
+### Moderation of central pathway maturation by peripheral auditory structure
 
 Patients with normal peripheral auditory structure and those with IEM&CND had significantly different cn.VIII median contrast values (which has been shown to represent nerve tissue density; Harris et al., 2021), but few differences in FD and FC of the central auditory pathway and language pathway. However, several central pathways were positively correlated with cn.VIII median contrast values, including FC of bilateral BIC and LL, FC of two left ventral streams, and FD of bilateral dorsal streams and left ventral streams. Although all patients included in the study were diagnosed with bilaterally profound SNHL, several patients with normal peripheral structure had late-onset or progressive hearing loss that may have allowed a small amount of peripheral auditory inputs to stimulate central development before profound hearing loss. In contrast, all patients with CND failed newborn hearing screening and remained profound hearing loss since (see Supplementary file 1). This phenomenon may partly explain the correlation between peripheral nerve tissue density and central fibre metrics.
 
@@ -146,13 +305,13 @@ To understand the specific impact of peripheral nerve structure on the developme
 
 Indeed, the quantitative differences observed between the effects on the central auditory and language structures may be influenced by the varying ability to accurately image each pathway with current neuroimaging technologies. The central auditory pathway, largely situated in the brainstem, faces severe distortion in diffusion images due to the inherent properties of the echo-planar imaging (EPI) sequence used. Despite distortion correction methods, it is challenging to entirely eliminate these effects. In contrast, the language pathways, primarily located in the cerebrum, have less distortion, allowing for more accurate imaging. Additionally, the auditory pathways in the brain (e.g. the auditory radiations) intersect with numerous cerebral fibre tracts, complicating accurate tractography. While the Constrained Spherical Deconvolution (CSD) modelling approach we employed is currently the most advanced method for addressing crossing fibres, it is not entirely exempt from these issues. The language pathways, on the other hand, intersect with fewer fibre tracts, facilitating more precise reconstruction. Lastly, the language pathways are more extensive and possess more fibres than the auditory pathways. From a statistical perspective, this enables more ‘sampling’ when extracting average metrics such as FD, resulting in more stable outcomes. Therefore, the differences in our ability to visualize and quantify these pathways might have influenced the comparative effects observed. As neuroimaging technologies and methodologies continue to advance, we anticipate that our understanding of the differential effects of hearing loss on the central auditory and language structures will continue to evolve and improve. Another limitation is that the normal hearing control group did not undergo scanning with the CISS sequence, precluding the establishment of a baseline for comparing the development of auditory and language pathways in SNHL to normal development, which requires future research to include a baseline assessment.
 
-## Integrating pre-surgical evaluations for optimized auditory-language rehabilitation
+### Integrating pre-surgical evaluations for optimized auditory-language rehabilitation
 
 Our study delivers novel insight into the quantification of central auditory structural development and advocates an individualized, comprehensive pre-surgical evaluation of the auditory-language network to inform surgical decisions and predict prognosis (see Figure 6). From the correlation results, we observed significant clinical values that bolster the utility of such an evaluation. Further research should explore association and causation between neural and more robust auditory (e.g. speech-in-noise) and language evaluations.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85983/elife-85983-fig6-v1.jpg)
 
-## Comprehensive auditory system assessment: Informed surgical decisions
+### Comprehensive auditory system assessment: Informed surgical decisions
 
 By refining the CISS-based estimation of cn.VIII tissue density, we enable more accurate quantitative assessment of peripheral nerve structure, which is essential for characterizing CND. The positive correlation of cn.VIII median contrast value with CAP and IT-MAIS at 6 mo post-activation, and with change in SIR, underscores its clinical value in predicting postoperative auditory performance.
 
@@ -160,7 +319,7 @@ Furthermore, by reconstructing the entire central auditory pathway, we enable me
 
 Moreover, by integrating the findings from HRCT, CISS MRI, and reconstruction of the central auditory pathway, we offer a holistic view from the cochlea to the auditory cortex, which may guide critical surgical decisions such as the choice between CI and ABI, and the side of implantation. Our study primarily includes patients with normal peripheral structures undergoing CI, but patients with varying malformations may also be CI candidates. Thus, while our findings provide initial insights, further investigations encompassing a more diverse patient population with different types of IEM&CND are warranted. It is also worth noting that the timepoint of outcomes post-implantation is important when comparing ABI and CI. Although our study found that ABI generally resulted in poorer PTA 6 mo post-activation compared to CI, clinical experience suggests that ABI patients may show considerable improvements over a longer term (within a year or two post-activation). Therefore, longer-term follow-up is essential to fully understand the outcomes of different surgeries. Our study’s 6-month follow-up lays the groundwork for future, more comprehensive studies.
 
-## Language pathways: Central to post-implant speech outcomes
+### Language pathways: Central to post-implant speech outcomes
 
 We found that FD of most language pathways positively correlates with auditory and language scales. Our findings indicate the potentially central role of the structural development of the language pathway in predicting auditory and language outcomes following implantation.
 
@@ -172,19 +331,19 @@ Additionally, our results also indicate a significant positive correlation betwe
 
 Overall, while the study’s findings emphasize the value of these preoperative metrics in determining postoperative outcomes, we acknowledge the need for additional research to corroborate these findings and unlock the full potential of these evaluations. By pushing forward in these investigations, we can continue to refine and enhance auditory rehabilitation, delivering patient-specific care and ultimately improving postoperative auditory and language outcomes.
 
-## Strengths and limitations
+### Strengths and limitations
 
 The strengths of the present study include (1) the first comprehensive in vivo reconstruction of the central auditory pathway independent of using auditory stimuli; (2) the inclusion of children with IEM&CND in addition to those with normal inner ear structures to provide a more complete picture of children with congenital profound hearing loss; and (3) a precise inspection of fibre structures of the auditory pathway, the language pathway, and their subdivisions using a fixel-based approach that address crossing fibre issues.
 
 We also acknowledge some limitations of this study: (1) the genetic dataset in our study is incomplete and heterogeneous. While two patients underwent extensive testing of over 200 genes, five were tested for select common genes. For a thorough understanding of the genetic factors in auditory deficits, future studies should employ uniform and comprehensive genetic testing across participants. (2) Our cohort is of a limited size, which may limit the generalizability of these findings to a larger population. (3) The potential discrepancies in the ability to image auditory and language pathways could have influenced the observed effects. Specifically, the more pronounced distortion of the auditory pathway in diffusion images, the complex fibre-crossing issue within the auditory pathway, and the fewer fibres present compared to the language pathway may have contributed to the observed differences. (4) A ‘floor effect’ was observed in the PTA of ABI recipients and in some auditory and language scale scores. This may have masked the full extent of the relationships between the structural parameters and postoperative progress, as significant improvements could potentially be observed in some patients over a more extended period. (5) The scales employed (CAP, SIR, IT-MAIS, and MUSS) primarily provide subjective and observational measures. While they offer valuable qualitative insights into auditory performance and speech use in real-life contexts, they have limited quantitative precision. Their usefulness should be appreciated within this context.
 
-## Conclusions
+### Conclusions
 
 In conclusion, this study introduced a new pipeline for in vivo reconstruction of the central auditory pathway, found both microscopic and macroscopic fibre impairment in specific auditory and language tracts, and discovered a negative moderation effect of peripheral auditory structure on central pathway maturation. Additionally, our investigation uncovered significant correlations between fibre densities of auditory and language pathway subdivisions and various auditory and language outcomes, underscoring the potential predictive value of these structural parameters. This provides structural evidence supporting the necessity of early auditory intervention and establishes a promising comprehensive pre-surgical evaluation of the auditory-language network for children with severe-to-profound SNHL to assist with surgical planning and prognosis.
 
 ## Methods
 
-## Study sample
+### Study sample
 
 Twenty-three children aged under 6 years old, including 13 patients with bilateral profound congenital SNHL and 10 controls matched on age and gender, were included.
 
@@ -192,9 +351,9 @@ The patients met the following criteria: (1) diagnosis of bilateral profound SNH
 
 The study protocol was approved (SH9H-2021-T449-1) by the Ethics Committee of Shanghai Jiao Tong University School of Medicine Affiliated Ninth People’s Hospital (Shanghai, China), and all enrolled subjects had informed consent provided by parent/guardian.
 
-## Preoperative clinical and imaging evaluation
+### Preoperative clinical and imaging evaluation
 
-## Clinical data
+#### Clinical data
 
 Age, gender, gestational weeks, birth weight, and a thorough medical history of pregnancy and hearing condition were recorded.
 
@@ -202,7 +361,7 @@ Pure tone audiometry was conducted at frequencies of 0.5k, 1k, 2k, 4k, and 8k Hz
 
 Genetic data were obtained from the patients' records, coming from various sources, which led to variations in the testing panels among patients. Specifically, two patients underwent comprehensive hereditary deafness gene testing, which analysed over 200 genes linked to hearing loss. In contrast, five patients were tested for a limited set of common genes, such as GJB2 and MTR. Genetic data for the remaining six patients could not be obtained due to practical constraints.
 
-## CT, MRI acquisition, and quality assessment
+### CT, MRI acquisition, and quality assessment
 
 A temporal bone high-resolution CT (sections of 0.5 mm in thickness) and a three-dimensional (3D) CISS MRI scan (3-Tesla MAGNETOM Vida, Siemens Healthcare, Erlangen, Germany) were acquired to inspect the structure of the inner ear and the cochlear nerve of patients. Two experienced neuroradiologists assessed the presence and type of IEM&CND based on Sennaroğlu classification criteria (inter-rater agreement = 0.923) (Sennaroğlu and Bajin, 2017).
 
@@ -212,100 +371,100 @@ The acquisition protocol was adapted from the Developing Human Connectome Projec
 
 Each patient’s MRI was transferred to a DICOM workstation during acquisition to review any clinical or research-relevant incidental findings. Then, insufficient coverage, excessive motion, and/or ghosting were visually assessed. If any image failed the visual quality assessment, the MR technicians would decide whether to re-scan the sequence according to the child’s condition.
 
-## Postoperative outcomes assessment
+### Postoperative outcomes assessment
 
 Of 13 patients, 9 underwent auditory implantation (two ABI recipients and seven CI recipients). Postoperative data were collected during follow-up appointments.
 
-## Pure tone audiometry
+#### Pure tone audiometry
 
 This was conducted at 6 mo after device activation.
 
-## Auditory and language scales
+#### Auditory and language scales
 
 Four auditory and language scales were assessed both at activation and at 6 mo after activation. The scales included:
 
 Assessments were conducted by certified audiologists and speech therapists, who were blinded to the preoperative evaluations to ensure unbiased data collection.
 
-## MRI data analysis
+### MRI data analysis
 
-## Cranial nerve VIII measurement
+#### Cranial nerve VIII measurement
 
 The measurement of cranial nerve VIII tissue density was adapted from Harris et al.’s protocol (Harris et al., 2021). Specifically, the contrast of CISS images was inverted to visualize cranial nerve VIII as a hyperintense structure relative to the surrounding CSF. The Cn.VIII was segmented on each axial section using ITK-SNAP (Yushkevich et al., 2006) by two independent raters. The inter-rater agreement was assessed using the DICE coefficient, yielding a value of 0.977 ± 0.010 (mean ± SD). The median contrast value of cn.VIII was calculated across sections. The median contrast values of adjacent CSF were also collected and regressed out to control contrast differences across individuals due to scanner heating and motion artefact.
 
-## Diffusional MRI processing
+#### Diffusional MRI processing
 
 The state-of-the-art FBA pipeline (Dhollander et al., 2021) was implemented to process diffusional data using MRtrix3 (Tournier et al., 2019). Specifically, after standard preprocessing steps (including denoising, Gibbs ringing correction, eddy-current and motion correction, bias field correction, and intensity normalization), response functions for WM, GM, and CSF were estimated from the data themselves. The diffusional images were then upsampled to 1.25 mm isotropic voxels for subsequent better estimation of fibre orientation distribution (FOD). We used multi-shell multi-tissue constrained spherical deconvolution (msmt-CSD) to obtain WM-like FOD as well as GM-like and CSF-like counterparts in all voxels (Dhollander and Connelly, 2016). A study-specific WM FOD template was created using the WM FOD images from all 10 controls. Finally, study-specific auditory and language pathways were generated from this template and filtered to reduce reconstruction bias (Smith et al., 2015). These generated tractograms were then converted to fixel masks, allowing for fixel-based analysis of specific tracts.
 
-## Reconstruction of the human auditory pathway
+### Reconstruction of the human auditory pathway
 
-## Overview
+#### Overview
 
 We generated directionally encoded colour track density imaging (DEC-TDI) maps from whole-brain tractography to obtain high spatial resolution images of the white matter. These DEC-TDI maps and T1-weighted images provided complementary information and enhanced anatomical contrast for subsequent manual segmentation of subcortical auditory nuclei. The primary auditory cortex was extracted from the Human Brainnetome Atlas (Fan et al., 2016) and co-registered to diffusional space. Finally, the auditory pathway was tracked based on anatomical prior knowledge and visualized using 3D volume rendering. This process was performed at both the group-average and individual level.
 
-## Track density imaging
+#### Track density imaging
 
 The DEC short‐tracks TDI (stTDI) map method (Calamante et al., 2012) was used to obtain better directional information compared to the standard DEC-TDI pipeline (Calamante et al., 2010), particularly in low-intensity structures such as brainstem nuclei that we were interested in. Whole-brain probabilistic tractography was constrained to short tracks by setting the maximum length of each track to 20 mm (corresponding to 10 acquired voxels). We generated 40 million short tracks for each dataset using the iFOD2 algorithm (Tournier et al., 2010) by randomly seeding throughout the brain with the following parameters: angle threshold = 45°, minimum length = 4 mm, maximum length = 20 mm, cutoff value = 0.1. We then constructed the super-resolution TDI maps with a 0.5 mm isotropic grid size by calculating the number of tracks in each element of the grid. The colour-coding values were obtained by averaging the colours of all the streamline segments contained within each grid element, thereby indicating the local fibre orientation. (Green represents anterior-to-posterior, blue represents superior-to-inferior, and red represents left-to-right.)
 
-## Image registration
+#### Image registration
 
 At the group level, a study-specific T1-weighted brain template was created using the T1-weighted images from all 10 controls using antsMultivariateTemplateConstruction2.sh in ANTs (Avants et al., 2011) and transformed to the study-specific DEC-TDI space. At the individual level, T1-weighted images were transformed to each individual’s DEC-TDI space. Therefore, manual segmentation can be carried out in T1-weighted and DEC-TDI with a 0.5 mm isotropic resolution.
 
-## Manual segmentation of subcortical auditory regions
+#### Manual segmentation of subcortical auditory regions
 
 Subcortical auditory regions were segmented based on anatomical observations in histology studies (Moore, 1987; Rosahl and Rosahl, 2013; Winer, 1984) as well as earlier attempts to delineate some of these structures via MRI in vivo (García-Gomar et al., 2019; Sitek et al., 2019). Two raters independently segmented the auditory nuclei using the mrview toolbox in MRtrix3 (Tournier et al., 2019). Only the overlap areas between the two raters’ segmentations were retained in the following analysis (inter-rater DICE coefficient: CN, 0.798; SOC, 0.690; IC, 0.829; MGB, 0.795).
 
-## Cochlea nucleus (CN)
+##### Cochlea nucleus (CN)
 
 The CN is located on the brainstem surface at the pontomedullary junction, where auditory nerve axons enter and terminate. The CN is elongated and curved from ventrolateral to dorsomedial. The ventral and dorsal portions of the CN can be distinguished by histological cytoarchitectonic properties, although approximately 10% of their shared borders remain a grey zone (Rosahl and Rosahl, 2013). In a horizontal view, the CN borders the ICP medially; its anterior half extends laterally along the posterior edge of the middle cerebellar peduncle (MCP) (Moore and Osen, 1979; Terr and Edgerton, 1985).
 
 On T1-weighted images, the CN can be located at the pontomedullary junction where cranial nerve VIII enters the brainstem and is roughly delineated along the brainstem surface from ventrolateral to dorsomedial. In DEC-TDI maps, the CN is distinguished from its medial neighbour, the ICP, by its clear blue border, as the ICP travels mainly in the rostrocaudal direction (Epprecht et al., 2020). The CN, on the other hand, is a mixture of cell bodies and axons that travel from ventrolateral to dorsomedial, resulting in either low-intensity areas (where cells dominate) or green colour areas (where axons dominate).
 
-## Superior olivary complex (SOC)
+##### Superior olivary complex (SOC)
 
 The SOC is a group of cells located in the pons, a short distance medial and rostral to the CN. The SOC is composed of a laminar medial nucleus (which extends about 4 mm rostrocaudally) and a small lateral nucleus; the entire complex is enclosed by a capsule of rostrally directed axons of the ascending auditory pathway (Moore, 1987; Strominger and Hurwitz, 1976).
 
 The SOC is not distinguishable on T1-weighted images. In DEC-TDI maps, the SOC appears as a hypointense area surrounded by hyperintense fibres in the horizontal view: medially, the medial lemnisci; ventrally, the TB; and laterally, the MCP. The SOC was delineated from the same axial plane as the rostral-most extent of the ventral CN, extending about 4 mm rostrally (García-Gomar et al., 2019).
 
-## Inferior colliculus (IC)
+##### Inferior colliculus (IC)
 
 The IC is easy to locate as the two inferior spherical structures of the corpora quadrigemina in the dorsal midbrain (Mansour et al., 2019). On T1-weighted images, the IC is distinguished from its medially adjacent structure, the periaqueductal grey matter, by demonstrating more intense T1 signals in the horizontal view. However, in DEC-TDI maps, most of the signal of the IC is lost, possibly due to distortion from tissue/air interface.
 
-## Medial geniculate body (MGB)
+##### Medial geniculate body (MGB)
 
 The MGB is located in the ventromedial thalamus. On T1-weighted images, the MGB is identified as an oval-shaped hypointense eminence that is medial to the lateral geniculate body and lateral to the superior colliculus (Winer, 1984). In the horizontal view of DEC-TDI maps, the MGB is restricted ventrolaterally by the blue areas of the corticospinal tract (CST).
 
-## Tractography
+### Tractography
 
 Subcortical auditory regions were segmented manually as described above. The primary auditory cortex (A41/42, TE1.0 and TE1.2) was extracted from the Human Brainnetome Atlas (Fan et al., 2016) in the MNI space and co-registered to the WM FOD space by a rigid, affine, and nonlinear transformation using ANTs (Avants et al., 2011). Probabilistic tractography of each major tract in the auditory pathway was performed in the WM FOD space using iFOD2 algorithm with optimized parameters. For cortical tracts (ARs), we set a 0.05 cutoff value and 80 mm maximum length; for subcortical tracts, the cutoff value was 0.1 and the maximum length was set to 200 mm. Other parameters were kept the same across all tracts: 10,000 seeds per voxel, angle threshold = 45°, and minimum length = 4 mm. A mask of brainstem and thalamus was created semi-automatically using ITK-SNAP (Yushkevich et al., 2006) to constrain tracking of the subcortical auditory pathway; a centre ROI in the sagittal plane was used as exclusion for ipsilateral tracking.
 
-## Trapezoid body (TB) and lateral lemnisci (LL)
+#### Trapezoid body (TB) and lateral lemnisci (LL)
 
 The neurons in the CN receive nerve innervation from the cochlea and project to the IC both directly and indirectly. The SOC is the major relay station and receives axons from mostly the contralateral, partly the ipsilateral CN; the contralateral dominance remains in the following ascending pathway (Moore, 1987). The ascending axons below the level of the SOC form the TB; axons above the level of the SOC form the LL (Moore et al., 1995). The TB travels horizontally in the inferior pons and comprises many crossing fibres. The LL runs rostrally and dorsally to the IC and is located on the lateral side of the brainstem superficially.
 
 Tracking of the TB and LL was carried out by seeding from each CN to the SOC and the IC in both sides, using MCP as an exclusion ROI for anatomical constraints, and seeding from each SOC to the IC in both sides.
 
-## Brachium of inferior colliculus (BIC)
+#### Brachium of inferior colliculus (BIC)
 
 All ascending projections from the auditory brainstem to the thalamus are carried in the BIC (Moore, 1987). Tracking of the BIC was performed by seeding from the IC to the ipsilateral MGB. There are also commissural pathways between the bilateral IC; however, the commissure of IC is difficult to trace via tractography due to signal loss near the tissue/air interface.
 
-## Acoustic radiation (AR)
+#### Acoustic radiation (AR)
 
 The AR is the final stream that links the subcortical auditory pathway to the auditory cortex (Rademacher et al., 2002). The AR crosses with or travels near many major fibre bundles on its way to the auditory cortex, including the CST, the arcuate fasciculus (AF), the inferior fronto-occipital fasciculus (IFOF), the middle longitudinal fasciculus (MLF), the inferior fasciculus (ILF), and the optic radiation (OR). We manually delineated major cross-sections of the tracts mentioned above as exclusion ROIs. Then, we tracked the AR by seeding from the MGB, terminating in the ipsilateral primary auditory cortex, and excluding the adjacent tracts for anatomical constraint.
 
-## Visualization
+### Visualization
 
 Streamlines were transformed into the trk format in Python via the Nibabel package (https://nipy.org/nibabel/) and visualized in DSI Studio (https://dsi-studio.labsolver.org/).
 
-## Reconstruction of the language pathway
+### Reconstruction of the language pathway
 
 Language ROIs were also extracted from the Human Brainnetome Atlas (Fan et al., 2016) for its finer subdivision in the temporal and frontal cortex, and co-registered from the MNI152 T1 space (Fonov et al., 2009) to the WM FOD space using rigid, affine, and nonlinear transformation with ANTs (Avants et al., 2011). The anterior superior temporal cortex (aSTC) was defined as the combination of A22r, A38l, and aSTS; the posterior superior temporal cortex (pSTC) was segmented by combining A22c, rpSTS, and cpSTS. The frontal areas were also extracted: the pars opercularis of Broca’s area (BA44), pars triangularis of Broca’s area (BA45), the FOP, and the PMC.
 
 Probabilistic tractography was performed in the WM FOD space. Two dorsal streams of the language pathway were seeded from BA44 or PMC and terminated in pSTC; two ventral streams were seeded from BA45 or FOP and terminated in aSTC. Parameters included iFOD2 algorithm, 10,000 seeds per voxel, angle threshold = 45°, cutoff value = 0.1, minimum length = 4 mm, maximum length = 200 mm. Tracts were visualized in the same way as the auditory pathway.
 
-## Fixel-based metrics
+### Fixel-based metrics
 
 In the FBA framework, a ‘fixel’ refers to a ‘fibre population within a voxel’, allowing for the measurement of WM metrics for individual fibres crossing in the same voxel. FD, FC, and FDC were calculated for the study-specific auditory pathway and the study-specific language pathway. FD values are approximately proportional to total intra-axonal volume and measure WM microstructure, while FC estimates macroscopic differences by using information from individual subject warps to the study-specific template. The combined FDC measure enables a more sensitive assessment of fixel-wise effects (Dhollander et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 Fixel-wise comparison of FC, FD, and FDC between groups was conducted using the connectivity-based fixel enhancement method (Raffelt et al., 2015). Tract-wise analysis was performed by extracting the mean fibre metrics of tracts-of-interest and comparing them between groups using PALM (Winkler et al., 2014) in MATLAB. For both comparisons, age and gender were controlled, and family-wise-corrected (FWE) p-values were obtained via permutation testing. Pearson correlation between cn.VIII median contrast values and central pathway fibre metrics were conducted using PALM in MATLAB. Moderation analysis was performed using SPSS. Pearson correlation between preoperative characteristics (age, gender, surgical choice, cn.VIII median contrast values, mean FD of the central auditory pathway and the language pathway) and postoperative outcomes (PTA and four auditory and language scales) was also conducted using PALM in MATLAB.

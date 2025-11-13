@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Elevated intraocular pressure (IOP) due to insufficient aqueous humor outflow through the trabecular meshwork and Schlemm’s canal (SC) is the most important risk factor for glaucoma, a leading cause of blindness worldwide. We previously reported loss of function mutations in the receptor tyrosine kinase TEK or its ligand ANGPT1 cause primary congenital glaucoma in humans and mice due to failure of SC development. Here, we describe a novel approach to enhance canal formation in these animals by deleting a single allele of the gene encoding the phosphatase PTPRB during development. Compared to Tek haploinsufficient mice, which exhibit elevated IOP and loss of retinal ganglion cells, Tek +/- ; Ptprb +/- mice have elevated TEK phosphorylation, which allows normal SC development and prevents ocular hypertension and RGC loss. These studies provide evidence that PTPRB is an important regulator of TEK signaling in the aqueous humor outflow pathway and identify a new therapeutic target for treatment of glaucoma.
+Elevated intraocular pressure (IOP) due to insufficient aqueous humor outflow through the trabecular meshwork and Schlemm’s canal (SC) is the most important risk factor for glaucoma, a leading cause of blindness worldwide. We previously reported loss of function mutations in the receptor tyrosine kinase TEK or its ligand ANGPT1 cause primary congenital glaucoma in humans and mice due to failure of SC development. Here, we describe a novel approach to enhance canal formation in these animals by deleting a single allele of the gene encoding the phosphatase PTPRB during development. Compared to Tek haploinsufficient mice, which exhibit elevated IOP and loss of retinal ganglion cells, Tek+/-;Ptprb+/- mice have elevated TEK phosphorylation, which allows normal SC development and prevents ocular hypertension and RGC loss. These studies provide evidence that PTPRB is an important regulator of TEK signaling in the aqueous humor outflow pathway and identify a new therapeutic target for treatment of glaucoma.
 
 ## Introduction
 
@@ -35,6 +35,14 @@ Activation of the TEK receptor has been achieved in vitro and in vivo either by 
 
 To increase the level of TEK phosphorylation in vivo, we utilized a PtprbNLS-LacZ knock-in reporter allele (Bäumer et al., 2006) to delete a single allele of the Ptprb gene. This construct incorporates a β-Galactosidase cDNA tagged with a nuclear localization signal in place of the first exon of Ptprb, preventing production of PTPRB protein. As previously described, heterozygous PtprbNLS-LacZ/WT mice are born normally (Bäumer et al., 2006), although expression of PTPRB was reduced by approximately 50% (Figure 1A, uncropped images presented as Figure 1—figure supplement 1). Likewise, Tek heterozygosity resulted in approximately 50% reduction in TEK protein detected in lung lysate (Figure 1A). Reductions in phosphatase abundance had a direct effect on TEK activation and PtprbNLS-LacZ/WT mice showed approximately a 118% increase in phosphorylated TEK when measured in lung tissue using an immunoprecipitation assay (Figure 1B, uncropped images presented as Figure 1—figure supplement 2), confirming our hypothesis that changes in PTPRB expression would have a direct impact on TEK phosphorylation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blot of lung lysate from P5 Control, Tek+/-, PtprbNLS-LacZ/WT and Tek+/-;PtprbNLS-LacZ/WT mice revealed a 50% reduction in PTPRB expression in PtprbNLS-LacZ/WT (heterozygous) and Tek+/-;PtprbNLS-LacZ/WT mice. Likewise, TEK expression was reduced approximately 50% in Tek+/- and Tek+/-;PtprbNLS-LacZ/WT mice. (B) Immunoprecipitation of lung lysates from adult control and PtprbNLS-LacZ/WT using anti-TEK antibody followed by western blotting with anti-phospho tyrosine antibody revealed a marked elevation of TEK phosphorylation in PtprbNLS-LacZ/WT animals compared to littermate controls. Horizontal lines indicate population means. *p<0.05, ***p<0.001 as determined by Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig1-figsupp2-v2.jpg)
+
 The finding that PtprbNLS-LacZ/WT haploinsufficient mice exhibited markedly increased TEK phosphorylation suggested that these animals would provide a powerful tool to study the effect of PTPRB blockade on SC development in the context of reduced TEK signaling. Therefore, we crossed mice carrying the PtprbNLS-LacZ allele with a previously-described mouse model of Tek heterozygosity, creating a constitutive model of Tek+/-;PtprbNLS-LacZ/WT double haploinsufficency. Adult Tek haploinsufficient mice have been reported to exhibit a hypomorphic SC insufficient for normal AHO, leading to moderate IOP elevation (Souma et al., 2016). To test our hypothesis that ~50% reduction of PTPRB activity might prevent the glaucoma phenotype in Tek+/- mice without the need to increase ligand availability, Tek+/-;PtprbNLS-LacZ/WT double heterozygous mice were generated, and enucleated eyes were collected. After fixation, eyes were prepared for whole-mount immunostaining and visualized using confocal microscopy. Consistent with previous findings (Souma et al., 2016), analysis of CD31-positive SC area revealed a hypomorphic canal phenotype in adult Tek heterozygous mice when compared to littermate controls (Control: 29,974 ± 2145, Tek+/-: 17,457 ± 1040 μm2/20x field; Figure 2A). This phenotype was abrogated by deletion of a single Ptprb allele in Tek+/-;PtprbNLS-LacZ/WT animals, which exhibited normal SC area (Tek+/-;PtprbNLS-LacZ/WT: 23,848 ± 1574 μm2/20x field). Importantly, despite elevated TEK activation, PtprbNLS-LacZ/WT animals displayed a normal SC (PtprbNLS-LacZ/WT: 28,175 ± 1668 μm2/20x field), suggesting reduction of PTPRB function is well tolerated during SC development in the absence of other mutations.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig2-v2.jpg)
@@ -46,6 +54,14 @@ Developmental haploinsufficency of Tek and Ptprb had clear effects on adult SC a
 In addition to decreased area, Tek+/- SCs are characterized by focal thinning and convolutions which are not present in WT littermates (Souma et al., 2016) (Figure 2E). Interestingly, although Ptprb haploinsufficency resulted in increased proliferation and expanded canal area in Tek+/-;PtprbNLS-LacZ/WT animals, these focal defects were still observed—suggesting that directional signaling may play a role in proper canal formation which cannot be recapitulated by nonspecific TEK activation.
 
 We next examined the effect of altered SC area in Tek+/- and Tek+/-;PtprbNLS-LacZ/WT mice on aqueous humor homeostasis. Tek heterozygous mice on an outbred background were found to have elevated IOP at 30 weeks of age (Figure 3A, Control: 13.7 ± 0.23, Tek+/- 18.15±0.33 mmHg). Consistent with observations of SC morphology, while PtprbNLS-LacZ/WT mice had normal IOP (13.81 ± 0.82 mmHg), incorporation of this allele into the Tek+/- model was beneficial and blunted the ocular hypertension associated with Tek haploinsufficiency, despite the presence of focal morphological defects (Tek+/-;PtprbNLS-LacZ/WT IOP: 14.92 ± 0.31 mmHg). To confirm the impact of the PtprbNLS-LacZ-induced IOP reduction on the retina, we counted BRN3B positive ganglion cells in an additional cohort of mice at 19 weeks of age (Figure 3B). While Tek heterozygous mice showed a marked reduction in RGCs, this loss did not occur in Tek+/;PtprbNLS-LacZ/WT mice.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig3-v2.jpg)
+
+**Figure 3.:** (A) Elevated intraocular pressure (IOP) was observed in Tek+/- haploinsufficient mice at 30 weeks of age when measured by rebound tonography. As in Figure 2, this phenotype was prevented in Tek+/-;PtprbNLS-LacZ/WT double heterozygous animals, confirming the importance of TEK activation in IOP homeostasis (n = 6 WT, 14 PtprbNLS-LacZ/WT, 12 Tek+/- and 14 Tek+/-;PtprbNLS-LacZ/WT mice). (B) BRN3B staining in retinal flat-mounts from a second group of mice revealed loss of retinal ganglion cells by 19 weeks in Tek+/- mice. Littermate Tek+/-;PtprbNLS-LacZ/WT animals were protected, correlating with the reduced IOP observed (n = 4 WT, 4 PtprbNLS-LacZ/WT, 3 Tek+/- and 4 Tek+/-;PtprbNLS-LacZ/WT mice). Horizontal lines indicate population means. *p<0.05, ***p<0.001 as determined by 1-way ANOVA followed by Bonferroni’s correction.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48474/elife-48474-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Confocal microscopy of P5 retinas stained with anti-CD31 antibody reveal normal progression of the superficial vasculature at both arterial and venous sprouting fronts. n = 6 (WT), 5 (Tek+/-), 3 (PtprbNLS-LacZ/WT), and 3 (Tek+/-;PtprbNLS-LacZ/WT). Horizontal lines indicate population means. Lack of significance was determined by 1-way ANOVA followed by Bonferroni’s correction. (B) Normal, fully developed retinal vasculature was observed in all three plexus layers in mice of all genotypes at P20. Scale bars indicate 250 μm in all panels.
 
 TEK signaling is critical for retinal angiogenesis, and to exclude the possibility that vascular defects and subsequent ischemia were responsible for RGC loss in Tek+/- mice, we examined vascular morphology in our animals. We first examined retinas collected at P5, when development of the superficial vasculature is ongoing. At this timepoint, CD31 staining revealed normal progress of the angiogenic sprouting front in Tek+/-, PtprbNLS-LacZ/WT, and Tek+/;PtprbNLS-LacZ/WT mice when compared to littermate controls (Figure 3—figure supplement 1A). At P20, when development of the mature retinal vasculature is complete, we observed normal patterning in all three retinal vascular layers in mice of all genotypes (Figure 3—figure supplement 1B). By this timepoint, hyaloid vessels were not observed in animals of any genotype. Taken together, these data suggest that blunted IOP elevation in Tek+/;PtprbNLS-LacZ/WT animals likely had a direct impact on glaucoma pathogenesis in our model and that retinal ischemia is unlikely to account for the RGC loss observed in Tek haploinsufficient mice.
 
@@ -63,32 +79,140 @@ While these results highlight the potential of PTPRB as a therapeutic target for
 
 ## Materials and methods
 
-## Study approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>PtprbNLS-LacZ</td>
+      <td>Bäumer et al., 2006</td>
+      <td></td>
+      <td>Maintained on a mixed background</td>
+    </tr>
+    <tr>
+      <td>Genetic Reagent (M. musculus)</td>
+      <td>Tek+/-</td>
+      <td>Thomson et al., 2017</td>
+      <td>Tektm1.1Vlcg; MGI:5544795</td>
+      <td>Maintained on a mixed background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PTPRB (Rabbit polyclonal)</td>
+      <td>Nawroth et al., 2002</td>
+      <td></td>
+      <td>Western blot: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TEK (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-324</td>
+      <td>Western blot 1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-αTubulin (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-32293</td>
+      <td>Western blot: 1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>4G10 Platinum anti-phosphotyrosine (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>05–1050</td>
+      <td>Western blot: 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31 MEC13.3 (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>55337</td>
+      <td>IF: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PROX1 (Goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF2727</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki-67 (Rabbit monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>MA5-14520</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BRN3b (Goat polyclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-6026</td>
+      <td>IF: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>Version 1.52 p</td>
+      <td>Used for all image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad.com</td>
+      <td>Version 5.0</td>
+      <td>Used for statistical analysis and graph generation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Indesign</td>
+      <td>Adobe.com</td>
+      <td>Version 14.01 × 64</td>
+      <td>Used for figure creation</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study approval
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health and the ARVO guidelines for care and use of vertebrate research subjects in eye research. All animal experiments were approved by the Animal Care Committee at the Center for Comparative Medicine of Northwestern University (Evanston, Illinois, USA).
 
-## Generation and breeding of Tek+/-;PtprbNLS-LacZ/WTmice
+### Generation and breeding of Tek+/-;PtprbNLS-LacZ/WTmice
 
 PtprbNLS-LacZ/WT mice have been previously described (Winderlich et al., 2009; Bäumer et al., 2006) and were a generous gift of Dr. Dietmar Vestweber (Max Planck Institute, Münster, Germany). Tek+/- mice were generated by crossing TekCOIN (Thomson et al., 2014; Economides et al., 2013) mice with Rosa26rtTA;TetOnCre (Belteki et al., 2005) as previously described (Souma et al., 2016). After undergoing Cre-mediated gene deletion, animals were crossed with WT ICR mice to obtain Tek+/- animals which did not express the TetOnCre or Rosa26rtTA transgenes. Throughout the present study, animals were maintained on a mixed genetic background free of the retina degeneration mutations RD1 and RD8 and allowed unrestricted access to standard rodent chow (Harlan Teklad #7912; Envigo, Indianapolis IN) and water. As animals were maintained on a mixed background, littermate controls were used for all experiments and animals were included in the study on the basis of full litters (i.e. a control from one litter would not be included without their matching mutant littermates). To determine experimental group sizes, data from our previous studies of SC morphology (Souma et al., 2016; Thomson et al., 2017) were used to estimate required numbers. Breeding cages were then set up based on these estimates, and all resulting animals were included in the described studies.
 
-## Western blot
+### Western blot
 
 Lung samples from Tek+/-, PtprbNLS-LacZ/WT and Tek+/-, PtprbNLS-LacZ/WT mice with control littermates were homogenized in RIPA buffer (50 mM TRIS, 150 mM NaCl, 1% IGEPAL CA-630, 0.5% Na Deoxycholate, 0.1% SDS, pH 7.5) containing protease and phosphatase inhibitor cocktails (Sigma). Samples were lysed (30 min at 4°C) and centrifuged (10 min at 14,000*g, 4°C) before the supernatant was used for western blot and immunoprecipitation. For western blot, 100 μg lysate was separated on a 4–15% Tris-glycine gel (Bio-Rad) and transferred to PVDF membranes using standard methods. Membranes were then cut horizontally at 75 kDa and blocked in (5% BSA in Tris buffered saline containing 0.05% Tween-20, pH 7.5) before incubating with appropriate primary and HRP-conjugated secondary antibodies (Jackson Immunoresearch). After washing, membranes were incubated in ECL substrate (SuperSignal West Pico PLUS, Thermo Fisher) and imaged on an iBright 1500 digital camera system (Thermo Fisher-Life Technologies). Quantification was performed using ImageJ Fiji software (Schindelin et al., 2012). Values obtained from quantifying total TEK or PTPRB were normalized to matching alpha-tubulin bands obtained from the lower (<75 kDA) region of the same membrane. Primary antibodies used: Rabbit anti-TEK (Santa Cruz Biotech #sc-324, 1:2500), mouse anti-alpha tubulin (Santa Cruz Biotech #sc-32293, 1:10,000), rabbit anti-PTPRB (Nawroth et al., 2002).
 
 For Immunoprecipitation assays of TEK phosphorylation, 1 mg of protein lysate was incubated with 1 μg rabbit anti-TEK antibody (C-20, Santa Cruz) before antibody-protein complexes were captured using Protein-A conjugated Dynabeads (Invitrogen). Proteins were then eluted by boiling in 2x Laemmli sample buffer containing 100 mM DTT, loaded on a 4–15% Tris-glycine gel and separated by SDS-PAGE as described above. Phosphorylated tyrosine was detected using mouse anti-phospho-tyrosine antibody (4G10 Platinum, Millipore #05–1050, 1:2000) before membranes were stripped using a commercial stripping solution (Restore, Thermo Fisher # 21059) and re-probed using anti-TEK antibody as described above. Bands were imaged using a ChemiDock imaging system (Bio-Rad) and quantified as above. Relative TEK phosphorylation is reported in the manuscript as a normalized ratio of pTyr:Total TEK signals obtained from the same membrane. All western blot and immunoprecipitation experiments were performed at least twice. Values and statistics reported are derived from the data shown in the manuscript.
 
-## Schlemm’s canal immunostaining and imaging
+### Schlemm’s canal immunostaining and imaging
 
 Whole-mount imaging of SC was performed as described previously (Thomson et al., 2017; Thomson and Quaggin, 2018). Briefly, enucleated eye globes were immersion fixed (2% formaldehyde in 0.1M phosphate buffer pH 7.5, 12 hr at 4°C) before the lens and retina were removed and limbal flat mounts were prepared. Tissues were blocked (5% donkey serum, 2.5% bovine serum albumin in Tris buffered saline pH 7.5 containing 0.5% Triton X-100, overnight at 4°C) before incubating in appropriate primary and alexafluor-labled secondary antibodies (Thermo Fisher Scientific, Waltham, MA) diluted in additional blocking buffer. Antibodies used: Rat anti-mouse CD31 (Dilution 1:100. #55337, BD Biosciences, Franklin Lakes New Jersey), Rabbit anti-human Ki-67 (Dilution 1:200. #MA5-14520, ThermoFisher Scientific, Waltham, MA), goat anti-human PROX1 (Dilution 1:200. #AF2727, R and D Systems, Minneapolis, MN). After staining, tissues were washed (Tris buffered saline pH 7.5 containing 0.05% Tween-20) and mounted on microscope slides. Images were captured using a Nikon A1R confocal microscope at the Center for Advanced Microscopy at Northwestern University equipped with a 20x objective with a numerical aperture of 0.75. To measure SC area, 3 10-image Z stacks were captured using a step size of 1.67 μm and a pinhole of 1.2 Airy units at intervals around the circumference of SC. To prevent bias in image location selection, the episclaral vein was used as a landmark for the initial field and subsequent images were taken at 120° intervals. In the manuscript, images of SC are shown as maximum intensity projections of these 10-image Z stacks. Canal area was measured in each 65,536 μm2 field using Fiji software (Schindelin et al., 2012) and an average value was obtained for each eye. Likewise, quantification of Ki-67 and PROX1 expression was performed in three imaging zones from each eye and the results were averaged to obtain the reported value for the animal. eight image confocal Z stacks were obtained with a step size of 1 μm and pinhole of 1.2. Ki-67 positive nuclei were counted manually using ImageJ Fiji software. PROX1 expression was reported as mean background-subtracted fluorescence per μm2 CD31+ SC area as measured using ImageJ Fiji software. Quantification of convolutions and focal defects was performed from stitched images of the full SC circumference obtained using the objective described above with the pinhole set to 150 μm.
 
-## Intraocular pressure measurement
+### Intraocular pressure measurement
 
 IOP measurements were obtained from awake mice using a Tonolab rebound tonometer (iCare) as previously described (Thomson et al., 2014; John et al., 1997). Animals were restrained in a soft plastic cone, and average IOPs were recorded from 3 sets of 6 recordings performed by a blinded technician. Finding no difference between left and right eyes, we have reported all IOP measurements as single averaged values for each animal.
 
-## Retinal ganglion cell quantification
+### Retinal ganglion cell quantification
 
 Enucleated eyes from Tek+/-;PtprbNLS-LacZ/WT mice with littermate Tek+/-, PtprbNLS-LacZ/WT, and WT controls were collected at 19 weeks and fixed as above. Retinas were collected before blocking and staining as above. Antibodies used: Goat anti BRN3 (Dilution: 1:1000. Santa Cruz Biotechnology, sc-6026). Retinas were imaged in a standardized pattern as flat mounts using a Nikon A1R microscope as described above and BRN3+ ganglion cells were quantified by a blinded student.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using Prism 5.0 software (Graphpad, La Jolla CA USA). Two-tailed Student’s t-test or ANOVA followed by use of Bonferroni’s method for multiple comparisons were used for statistical significance testing as appropriate. Throughout the text, values are reported as means ± standard error (SEM). In figures, plotted data points represent average values from individual animals with horizontal lines indicating the group mean. p-values<0.05 were considered significant and are indicated in figures using the following notation: *p<0.05, **p<0.01 and ***p<0.001.

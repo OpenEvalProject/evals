@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05cq64r17 Faculty of Biology and Environmental Protection, Department of Invertebrate Zoology and Hydrobiology, University of Łódź Łódź Poland
-2. https://ror.org/01dr6c206 Institute of Systematics and Evolution of Animals, Polish Academy of Sciences Kraków Poland
+1. Faculty of Biology and Environmental Protection, Department of Invertebrate Zoology and Hydrobiology, University of Łódź Łódź Poland ([ROR:05cq64r17](https://ror.org/05cq64r17))
+2. Institute of Systematics and Evolution of Animals, Polish Academy of Sciences Kraków Poland ([ROR:01dr6c206](https://ror.org/01dr6c206))
 3. Oxford University Museum of Natural History Oxford United Kingdom
-4. https://ror.org/02y7rck89 College of Agriculture and Biological Sciences, Dali University Dali China
-5. https://ror.org/0102mm775 Department of Ecology and Biogeography, Faculty of Biological and Veterinary Sciences, Nicolaus Copernicus University Toruń Poland
+4. College of Agriculture and Biological Sciences, Dali University Dali China ([ROR:02y7rck89](https://ror.org/02y7rck89))
+5. Department of Ecology and Biogeography, Faculty of Biological and Veterinary Sciences, Nicolaus Copernicus University Toruń Poland ([ROR:0102mm775](https://ror.org/0102mm775))
 
 † Corresponding author
 
@@ -35,23 +35,23 @@ In scorpionfies, the male behaviour towards the female may be coercive in such a
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70508/elife-70508-fig1-v2.jpg)
 
-**Figure 1.:** Baltipanorpa oppressiva sp. nov. (Panorpidae) from Baltic amber (middle Eocene), holotype MP/2711.A-B, habitus, photograph of preserved portion (A) and explanatory drawing (B), with genital bulb in ventrolateral view magnified; C-E, notal organ: fully-clasped clamp formed by notal and postnotal organs (C), teeth inside the notal-postnotal clamp (D), detail of terminal clasp (E); F, life reconstruction of entire specimen (head and thorax, missing in this species, based on habitus of congeneric Baltipanorpa damzeni); G, forewing; H, hind wing (same scale in both wings). Abbreviations: Ep, epandrium; HP, horn-like process; Hv, hypovalve; NO, notal process; PO, postnotal process; Gs, gonostylus; Gcx, gonocoxite. Red colour: notal process.
+**Figure 1.:** A-B, habitus, photograph of preserved portion (A) and explanatory drawing (B), with genital bulb in ventrolateral view magnified; C-E, notal organ: fully-clasped clamp formed by notal and postnotal organs (C), teeth inside the notal-postnotal clamp (D), detail of terminal clasp (E); F, life reconstruction of entire specimen (head and thorax, missing in this species, based on habitus of congeneric Baltipanorpa damzeni); G, forewing; H, hind wing (same scale in both wings). Abbreviations: Ep, epandrium; HP, horn-like process; Hv, hypovalve; NO, notal process; PO, postnotal process; Gs, gonostylus; Gcx, gonocoxite. Red colour: notal process.
 
 Here, we describe three exceptional scorpionflies from three different Cretaceous and Eocene ambers deposits and each belonging to a distinct panorpoid lineage. The disparate abdominal configurations and specialisations in the new taxa allow us to extrapolate trends observed among extant relatives, discussing possible mating habits for the new fossils and previously described ones with preserved non-genitalic abdominal modifications (Willmann and Novokschonov, 1998; Krzemiński and Soszyńska-Maj, 2012; Archibald, 2013; Wang and Hua, 2020; Zhang et al., 2021). Additionally, the new taxa are of general evolutionary significance, including the description of a new extinct panorpoid family and the first orthophlebiid species described in amber.
 
 ## Results
 
-## Systematic palaeontology
+### Systematic palaeontology
 
-## Mecoptera Packard, 1886Panorpoidea Latreille, 1805Panorpidae Latreille, 1805
+#### Mecoptera Packard, 1886Panorpoidea Latreille, 1805Panorpidae Latreille, 1805
 
-## Baltipanorpa Krzemiński and Soszyńska-Maj, 2012
+##### Baltipanorpa Krzemiński and Soszyńska-Maj, 2012
 
 Type species. Baltipanorpa damzeni Krzemiński and Soszyńska-Maj, 2012; Baltic amber.
 
 Other species included. Baltipanorpa oppressiva sp. nov.; Baltic amber.
 
-## Baltipanorpa oppressiva Soszyńska-Maj and Krzemiński sp. nov.
+##### Baltipanorpa oppressiva Soszyńska-Maj and Krzemiński sp. nov.
 
 (Figure 1A–H)
 
@@ -67,9 +67,9 @@ Diagnosis. Wing membrane with dark maculations (vs. transparent in B. damzeni); 
 
 Description. Body length 7.2 mm as preserved (only abdomen). Head. Antennae partly preserved with 14 cylindrical flagellomeres twice longer than wide. Wings (Figure 1A). Elongate and narrow, almost 3.5× longer than wide, at least 10 mm long, ~ 3 mm wide. Forewing (Figure 1G). Membrane bearing seven maculated areas, largest occupying the wing tip; Sc short and single reaching wing margin in midwing, opposite crossvein m-cu; costal area narrow; R1a and R1b surrounding pterostigmal area; Rs with five branches reaching wing margin, Rs1+2 longer than R3+4; fork of Mb more distal than fork of Rs, crossvein r3+4–m1+2 sinuous; M with four branches reaching wing margin, M1+2 13× longer than M3+4, M4 sharply curved at m-cu; Cu1 and Cu2 fused at base, with two crossveins between them; three anal veins, A1 reaching wing margin proximal to origin of Rs. Hind wing (Figure 1H). Venation very similar to forewing, except for: Mb fused with Cu1, A1 proximally fused with Cu2, only one cu2-a2. Abdomen (Figure 1A and B). Incomplete, longer than wings; first two segments are missing; notal and postnotal processes on tergites III and IV, respectively (Figure 1B), both processes very long (1.2 mm), about equal in length, reaching segment VII; notal process with spine-like setae on inner surface’s distal half (Figure 1B and C), bearing terminal fork curved posteriorly (Figure 1E); postnotal process terminally curved anteriorly, lodged between prongs of notal process (Figure 1B and C), bearing one very long seta at midlength of organ, and few shorter setae in basal part (Figure 1C and D); postnotal organ covered with short and blunt teeth, irregularly distributed on inner surface; tergite V medially bearing a large, strongly recurved process (horn, 300 µm); abdominal segments VI–VIII moderately elongate, with fused tergites and sternites; segments VII–VIII narrower basally. Genitalia (Figure 1B). Genital bulb round; hypovalves narrow, not extending to apex of gonocoxite; gonostylus shorter than gonocoxite.
 
-## Orthophlebiidae Handlirsch, 1906
+### Orthophlebiidae Handlirsch, 1906
 
-## Burmorthophlebia Soszyńska-Maj, Krzemiński and Wang gen. nov.
+#### Burmorthophlebia Soszyńska-Maj, Krzemiński and Wang gen. nov.
 
 Zoobank registration: urn:lsid:zoobank.org:act:C6F6028E-4A2B-45D2-89EB-4C6736974E6D
 
@@ -79,7 +79,7 @@ Type species. Burmorthophlebia multiprocessa sp. nov., by monotypy and present d
 
 Diagnosis. Rostrum long and narrow; antenna with at least 30 flagellomeres. Fore- and hind wings with R1 slightly curved in pterostigmal area towards anterior wing margin; Rs with five branches (vs. six and more in other genera of Orthophlebiidae), Rs1+2 and Rs3+4 very long (vs. much shorter in other genera of Orthophlebiidae) Rs1 ascending, Rs1+2 and Rs2 almost at the same level. Forewing with Sc long and simple, reaching pterostigmal area; M with five branches; two crossveins present between M4 and Cu1; two anal veins. Hind wing with Sc single and simple, only reaching M3+4 forking; M with four branches; one anal vein. Abdominal segments VI–VIII moderately elongate; very short notal process on tergite III, not extending beyond end of this tergite; postnotal process absent; two hirsute postnotal areas on tergite IV; tergites VI and VII with a pair of distal appendages each. Genital bulb without stem part, gonostyli long and thin.
 
-## Burmorthophlebia multiprocessa Soszyńska-Maj, Krzemiński and Wang sp. nov.
+#### Burmorthophlebia multiprocessa Soszyńska-Maj, Krzemiński and Wang sp. nov.
 
 (Figure 2A–H)
 
@@ -97,11 +97,11 @@ Description. Body length 9.5 mm from frons to the end of gonostyli (Figure 2A). 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70508/elife-70508-fig2-v2.jpg)
 
-**Figure 2.:** Burmorthophlebia multiprocessa gen. et sp. nov. (Orthophlebiidae) from Kachin amber, Myanmar (Late Cretaceous), holotype MP/3721.A, amber piece with habitus in lateral view; B, life reconstruction; C, forewing; D, hind wing, partially reconstructed; E-F, abdomen in lateral view, explanatory drawing (E) and photograph (F); G, detail of head in lateral view, antennae and rostrum; H, notal process and postnotal areas (on tergites III and IV, respectively). Abbreviations: AH, anal horns; PA1, PA2, postnotal areas 1, 2; other symbols as in Figure 1.
+**Figure 2.:** A, amber piece with habitus in lateral view; B, life reconstruction; C, forewing; D, hind wing, partially reconstructed; E-F, abdomen in lateral view, explanatory drawing (E) and photograph (F); G, detail of head in lateral view, antennae and rostrum; H, notal process and postnotal areas (on tergites III and IV, respectively). Abbreviations: AH, anal horns; PA1, PA2, postnotal areas 1, 2; other symbols as in Figure 1.
 
 Remarks. Burmorthophlebia gen. nov. differs from all other genera of the family Orthophlebiidae in number of veins in radial sector, and in unusually long veins Rs1+2 and Rs3+4 which are only terminally forked, at level of end of Sc. Wings of Burmorthophlebia gen. nov. are more narrow than in other orthophlebids. Five veins in radial sector are present also in a recently established family Protorthophlebiidae (Soszyńska-Maj et al., 2019), but the rostrum in this family is short (only c. twice as long as its maximum width), and VI-VIII abdominal segments in male are shorter than wide, while Burmorthophlebia gen. nov. has a long rostrum and elongate abdominal segments, both characters typical to orthoplebids.
 
-## Cantabridae Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang fam. nov.
+#### Cantabridae Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang fam. nov.
 
 Zoobank registration: urn:lsid:zoobank.org:act:225FC0C1-5827-4CA1-9F44-B27F9EFD5681
 
@@ -111,7 +111,7 @@ Diagnosis. Head with three pairs of long ocellar bristles, rostrum elongate; pro
 
 Remarks. The wing venation and general habitus of Cantabra gen. et. sp. nov. resemble those of the Panorpidae and Panorpodidae. The new fossil species differs from panorpids in the distinct body bristles, particularly those on head and thorax, an unusually elongate pronotum, clearly longer than the head (shorter in panorpids), and the lack of median tooth on the inner surface of male gonostyli, instead bearing several minute denticles in a row. From panorpodids, Cantabra gen. et. sp. nov. differs in greatly elongate rostrum, elongate abdomen and fused VII and VIII abdominal segments. The remarkably elongate and narrow male abdomen of the new taxon resembles extinct family Holcorpidae, but differs from the latter in five veins in medial sector in both wings and less elongate abdominal segments VI-VIII (Archibald, 2013).
 
-## Cantabra Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang gen. nov.
+#### Cantabra Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang gen. nov.
 
 Zoobank registration: urn:lsid:zoobank.org:act:EF60B085-D327-4D60-BD97-DEC45E16E008
 
@@ -121,7 +121,7 @@ Etymology. After the Latin ‘cantabra’ (‘cantabrum’ in neutrum) meaning �
 
 Diagnosis. As for the family (vide supra).
 
-## Cantabra soplao Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang sp. nov.
+#### Cantabra soplao Soszyńska-Maj, Pérez-de la Fuente, Krzemiński and Wang sp. nov.
 
 (Figures 3A–G and Figures 4A–E)
 
@@ -139,17 +139,17 @@ Description. Body length ~9.25 mm without antennae (Figure 3A). Head (Figure 3B 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70508/elife-70508-fig3-v2.jpg)
 
-**Figure 3.:** Cantabra soplao gen.et sp. nov. (Cantabridae fam. nov.), from El Soplao amber, Spain (Early Cretaceous), holotype CES-437. A, ventral and lateral habitus, respectively; B-C, head, frontoventral view (B), lateral view (C); D, setae on anal area of forewing; E, postnotal organ seen in ventrolateral view (head is to the left), morphology distorted due to the skewed view; F, genital bulb in ventral view; G, detail of gonostylus, showing its inner denticles. Abbreviations: OB, ocellar bristles; PO, postnotal organ.
+**Figure 3.:** et sp. nov. (Cantabridae fam. nov.), from El Soplao amber, Spain (Early Cretaceous), holotype CES-437. A, ventral and lateral habitus, respectively; B-C, head, frontoventral view (B), lateral view (C); D, setae on anal area of forewing; E, postnotal organ seen in ventrolateral view (head is to the left), morphology distorted due to the skewed view; F, genital bulb in ventral view; G, detail of gonostylus, showing its inner denticles. Abbreviations: OB, ocellar bristles; PO, postnotal organ.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70508/elife-70508-fig4-v2.jpg)
 
-**Figure 4.:** Cantabra soplao gen.et sp. nov. (Cantabridae fam. nov.) from El Soplao amber, Spain (Early Cretaceous), holotype CES-437. A, right forewing; B, right hind wing (same scale for both wings); C-D, reconstruction of abdomen in lateral view, with genital bulb shown in ventral view (C); inset (arrow) shows the genital bulb expanded, with elements tagged (D); E, life reconstruction, in resting position. Notal organ not visible in holotype and thus not depicted for caution. Length of antennae and rostrum are conjectural; morphology of legs is based on the preserved left foreleg, which is mostly complete. Abbreviations: Bp, basal process; Pm, parameres; other symbols as in Figure 1.
+**Figure 4.:** et sp. nov. (Cantabridae fam. nov.) from El Soplao amber, Spain (Early Cretaceous), holotype CES-437. A, right forewing; B, right hind wing (same scale for both wings); C-D, reconstruction of abdomen in lateral view, with genital bulb shown in ventral view (C); inset (arrow) shows the genital bulb expanded, with elements tagged (D); E, life reconstruction, in resting position. Notal organ not visible in holotype and thus not depicted for caution. Length of antennae and rostrum are conjectural; morphology of legs is based on the preserved left foreleg, which is mostly complete. Abbreviations: Bp, basal process; Pm, parameres; other symbols as in Figure 1.
 
 ## Discussion
 
 A series of clamping devices used to seize and hold different body parts of the female during courtship and copulation exist in panorpid males. These structures ensure the eventual genital connection and sperm transfer and extend copulation time (Zhong and Hua, 2013a; Zhong et al., 2014). The latter is critical for males, as the more prolonged the copulation, the more sperm can be transferred and, thus, the greater the number of potentially fertilised eggs (Engqvist and Sauer, 2002; Kullmann and Sauer, 2005). Aside from genital clamping structures (among which the most conspicuous is a pair of pincer-like gonostyli), panorpids present non-genital clamping systems on their abdomens. These are notal and postnotal organs, as well as anal horns which are used to catch and immobilize female during mating. Based on the size, shape and interlocking mechanism of these clamping structures, the grasp on the body of female becomes more or less secure, therefore facilitating a greater degree of coercion during mating, which has been associated with less investment in costly nuptial gifts (Tong and Hua, 2019).
 
-## Notal and postnotal organs
+### Notal and postnotal organs
 
 The notal organ (NO) is a process on abdominal tergite III. The postnotal organ (PO) typically consists of a small process on abdominal tergite IV (Crampton, 1931; Mickoleit, 1971). In extant scorpionflies, both structures are present in most Panorpidae, the only recent species from the Eomeropidae (the ‘living fossil’ Notiothauma reedi MacLachlan, 1877 [MacLachlan, 1877; Crampton, 1931]), and can be vestigial, if present, in the Panorpodidae (Tong et al., 2017; Wang and Hua, 2018a). Both NOs and POs act jointly by typically creating a clamping structure that grasps the female forewing before and during copulation; in panorpids, these organs allow to achieve and maintain the typical V-shaped mating position (Figure 6A and B; Byers and Thornhill, 1983). Moreover, the NO and the PO bear specialised setae, cephalically directed and thinned terminally, which interlace and/or electrostatically interact with both venational setae and membrane microtrichia from the female’s wing (Zhong and Hua, 2013a). Observations on three species of Neopanorpa van der Weele, 1909 (van der Weele, 1909) bearing NOs of different lengths have shown different mating strategies in these species (Zhong and Hua, 2013a; Tong and Hua, 2019). Males of two species with short and medium-sized NO, i.e. N. lui Chou and Ran, 1981 (Chou et al., 1981) and N. carpenteri (Cheng, 1957) indirectly transfer a nuptial gift of a salivary secretion prior to copulation. The short NO of N. lui ends at the base of the PO, and the medium sized NO in N. carpenteri reaches the end of the abdominal segment IV; both stabilize the female wings only partially and apparently play an auxiliary role during copulation. Contrarily, N. longiprocessa (Hua and Chou, 1997), with a long NO capable to cover the entire wing width of the female, exclusively relies on coercive copulation, and does not offer nuptial gifts. Short NOs and POs pinch only the anterior margin of female forewings, and both processes are spatially suited to fit the latter. In Panorpa amurensis MacLachlan, 1872 (MacLachlan, 1872) (Figure 5A,B), the space created by the clasped NO and PO matches the space of the anterior valley fold of the female wing delimited by the convex costal vein (C), the concave subcostal vein (Sc), and the convex radial vein (R1), clamping together with the PO before or at the latter vein. Our measurements of these distances in this and other panorpid species with various NOs indicate that this seems to be an effective arrangement to grip the anterior wing fold of the female (see Supplementary file 1 for measurements). As the C, Sc, and R1 run almost parallel over a long stretch, the female forewing may be gripped more anteriorly or posteriorly, usually by its half or basal third, as can be observed in photographs of mating panorpids (Zhong and Hua, 2013a; Zhong et al., 2014; Tong and Hua, 2019).
 
@@ -167,19 +167,19 @@ As introduced above, long NOs differ mechanically from short NOs. They are prese
 
 Among extinct mecopterans, an extremely long NO was hitherto only known in Baltipanorpa damzeni from Baltic amber (Krzemiński and Soszyńska-Maj, 2012). In this species, the NO forms together with an unusually elongate PO a clip-like structure able to reach beyond the full width of the female’s wing during mating (Figure 6E). Both NO and PO possess short tooth-like bristles, which would have increased their holding power. The PO is bent anteriorly, partially securing the clip in this way. Baltipanorpa oppressiva sp. nov has a similarly characteristic NO-PO clip bearing inner tooth-like bristles, but its NO is terminally forked in two prongs bent posteriorly at an almost right angle, which embrace the tip of PO (Figures 1B, E, 6F). The interaction of these structures in the new species results in a full clasp-like mechanism. The female wing enclosed in this remarkable clamp was likely fully immobilised, a withdrawal attempt probably causing risk of tearing the wing membrane. A similar function, although less effective than that in B. oppressiva sp. nov, must have been accomplished in B. damzeni by a few pairs of elongate bristles on the posterior side of the NO (Figure 6E). Furthermore, the NO-PO clamp in Baltipanorpa is raised at angle of about 50° from the abdomen, and so the captured female’s forewing was also kept raised and separated from the male’s abdomen. This position is deemed as genuine (not preservational) as it is now known from two different species (Figure 6E and F) and is unique to this genus. In extant panorpids with very long NOs (Neopanorpa), this process is placed at a much lower angle and keeps the female wing rather flat against the abdomen, having no other counterpart such as the long PO in the two fossil Baltipanorpa species discussed herein (Figure 6A and D).
 
-## Anal horns
+### Anal horns
 
 The anal horns are distal processes directed posteriorly on abdominal tergite VI. Among extant panorpids, anal horns are single (in Cerapanorpa Gao, Ma and Hua, 2016 (in Gao and Hua, 2016), Megapanorpa Wang and Hua, 2018 (Wang and Hua, 2018a), and some species of Panorpa Linnaeus, 1758), or paired Dicerapanorpa Zhong and Hua 2013 (Zhong and Hua, 2013b), and arise at different angles from the dorsal end of tergite VI (Zhong et al., 2014; Tong et al., 2018; Wang and Hua, 2019a). Aside from panorpids, anal horns are also known in Notiothauma reedi (Eomeropidae; Crampton, 1931; Mickoleit, 1971). In conjunction with tergite VII, which is proximally narrowed and/or depressed, the anal horns create a clamping system to accommodate and hold the female’s terminal abdomen into the strained copulatory position necessary for sperm transmission. It has been demonstrated that anal horns play an important role at initiating copulation and in prolonging its duration in the absence of nuptial gifts and under female resistance, and that the lack of anal horns is correlated with the inability to prolong copulation after gift provisioning (Zhong et al., 2014).
 
 Burmorthophlebia multiprocessa gen et sp. nov. bears a pair of anal horns raised at a 45° angle (Figures 2E, F, 5E). By comparison with extant species, these processes must have been involved in manipulating and holding the female abdomen during mating. Paired anal horns in other fossil species are known in Orthophlebia longicauda Willmann and Novokschonov, 1998 (Orthophlebiidae; Late Jurassic of Karatau in Kazakhstan) and in two species of Holcorpa Scudder, 1878 (Holcorpidae) from two Eocene localities (Florissant, Colorado, USA, and the Okanagan Highlands, British Columbia, Canada) (Scudder, 1878, Willmann and Novokschonov, 1998; Archibald, 2013).
 
-## Other mating-related modifications in males
+### Other mating-related modifications in males
 
 Aside from notal-postnotal organs and anal horns, other male abdominal processes involved in the physical interaction with the female during mating are occasionally present in scorpionflies. Among extant panorpids these are positioned on the ventral side, such as a long process on abdominal sternite III (Neopanorpa furcata (Hardwicke, 1823)) and a ‘ventral hook’ on sternite VI (Leptopanorpa linyejiei Wang and Hua, 2020) (Hardwicke, 1823; Wang and Hua, 2020). In fossil panorpoids, other male abdominal structures with assumed clamping function occurred in the Late Jurassic species Orthophlebia heidemariae. This was the case of a large medial horn-like process on tergite V (Figure 5C and D). Such process has been referred to as ‘tergal spine’, ‘unpaired median tergal process (monocornus)’, or a ‘median tergal horn’ (Crampton, 1931; Mickoleit, 1971; Willmann and Novokschonov, 1998, respectively). It is probable that this process was also used to fix the female abdomen during mating in conjunction with other more distal structures from the male dorsal abdomen. The abdomen of O. heidemariae is preserved in an upturned position and forming a full circle (Figure 5C), which is a frequent mating position among panorpid males. The large horn-like process is opposite to a small putative process and notch on tergite VII (Figure 5D); both structures likely interlocked with one another to facilitate a strained copulatory position (Willmann and Novokschonov, 1998). In Baltipanorpa oppressiva sp. nov. the horn-like process on tergite V is strongly recurved, and the subsequent tergite VI has an anterior depression and a greatly expanded end, resulting in a notched shape. Both specialised shapes strongly suggest that this horn and the tergite VI were engaged in holding the female abdomen during mating (Figure 6F). Such conformation was enabled to a certain extent by the position of the female’s wings (at least a forewing) which was raised high (56°) over the male’s abdomen and secured in this position by the extremely long notal-postnotal clip unique to Baltipanorpa. Moreover, Burmorthophlebia multiprocessa gen. et sp. nov. bears paired processes directed posteriorly at 45° angle on tergite VII, similar to the paired anal horns present on tergite VI, but smaller. Alleged homologous structures have been formerly referred to as ‘paired tergal processes (bicornua)’ or ‘lateral tergal horns’ (Crampton, 1931; Mickoleit, 1971). The most plausible function for these processes in this new species was also holding the female terminal abdomen during mating.
 
 Cantabra soplao gen et sp. nov. has greatly elongate abdominal segments VI–VIII. Among extant panorpids, such development is present in species of Leptopanorpa MacLachlan, 1875 (MacLachlan, 1875) endemic to Indonesia, and also in a few Neopanorpa species (Wang and Hua, 2020). Although biology of these taxa remains unknown, the greatly elongate abdomens are considered to be influenced by sexual selection, in displays to females and competition among male rivals. Extremely elongate abdomens were also present among other extinct panorpoid lineages: the Orthophlebiidae (Willmann and Novokschonov, 1998), the Holcorpidae (Archibald, 2013; Li et al., 2017; Zhang et al., 2021), and in taxa of uncertain relationships from the Middle Jurassic of China, where abdomen elongation was extreme (Wang et al., 2013). Great abdominal elongation is regarded as a result of convergence (Wang and Hua, 2020). Additionally, in the Holcorpidae and Orthophlebiidae swellings on the first tarsomeres of the hind legs in males were most probably used in sexual display; the size and shape of these swellings was likely species specific (Zhang et al., 2021). In the mecopterans presented herein the tarsomeres were not modified (yet in Cantabra soplao gen. et sp. nov. the shape of legs is unknown). Tarsal swellings do not occur in Recent Panorpoidea.
 
-## Conclusions
+### Conclusions
 
 The morphology of the male’s abdomen in extant scorpionflies represents a good approximation to the mating strategy used toward a female. Thus, the abdominal structures of fossil specimens have the ability to convey information on the likely reproductive strategies of extinct scorpionflies and, to some extent, on their evolution. Based on the disparate male abdominal shapes of the three fossil taxa described herein, these almost certainly had different mating strategies along a nuptial gifting-coercive gradient as observed among their extant panorpid relatives. Firstly, the Cretaceous species Cantabra soplao gen. et sp. nov., currently the only known member of its lineage, bears a small PO, with the absence of other posterior abdominal processes. This suggests that its mating behaviour was devoid of coercion and that nuptial gifting must have played an important role in these scorpionflies. Extant panorpid species which NO-PO system is very small or even absent and lack posterior abdominal processes (‘horns’) either rely on nuptial edible gifts or on mouth-to-mouth feeding during copulation adopting an O-shaped position instead of the typical V-position (Figure 6A; Zhong et al., 2015). It is plausible that the mating in C. soplao gen. et sp. nov. was similar. Regardless, the great degree of elongation of the abdomen in this species was probably involved in sexual selection dynamics.
 
@@ -191,13 +191,13 @@ The remarkable diversity of abdominal configurations shown herein suggests that 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70508/elife-70508-fig7-v2.jpg)
 
-**Figure 7.:** A, Orthophlebia heidemariae Willmann and Novokschonov, 1998 (Orthophlebiidae); B, Cantabra soplao gen et sp.nov. (Cantabridae fam. nov.); C, Burmorthophlebia multiprocessa gen. et sp. nov. (Orthophlebiidae); D. Baltipanorpa damzeni Krzemiński and Soszyńska-Maj, 2012 (Panorpidae); E, Baltipanorpa oppressiva sp. nov. (Panorpidae); F-I, some examples of extant Panorpidae species: F, Leptopanorpa linyejiei Wang and Hua, 2018; G, Leptopanorpa jacobsoni van der Weele, 1909; H. Neopanorpa longistipitata Wang and Hua, 2018; I. Panorpa jinhuaensis Wang and Hua, 2019. Notal processes depicted in red. Drawings not at same scale.
+**Figure 7.:** nov. (Cantabridae fam. nov.); C, Burmorthophlebia multiprocessa gen. et sp. nov. (Orthophlebiidae); D. Baltipanorpa damzeni Krzemiński and Soszyńska-Maj, 2012 (Panorpidae); E, Baltipanorpa oppressiva sp. nov. (Panorpidae); F-I, some examples of extant Panorpidae species: F, Leptopanorpa linyejiei Wang and Hua, 2018; G, Leptopanorpa jacobsoni van der Weele, 1909; H. Neopanorpa longistipitata Wang and Hua, 2018; I. Panorpa jinhuaensis Wang and Hua, 2019. Notal processes depicted in red. Drawings not at same scale.
 
 Our data provide first steps toward gaining a deep-time perspective able to inform discussions on the evolution of mating-related sexual conflict in Mecoptera and in insects more generally. Extant fauna show that extreme female holding mechanisms such as those from Baltipanorpa did not survive until today among scorpionflies (Wang, 2020). In fact, mating strategies involving gift provisioning appear to have been evolutionarily favored among mecopterans contrary to forced mating, and likely more prone to promote the species' genetic diversity. In order to start formulating hypotheses about when mating strategies –including those fully coercive– and associated anatomical structures of scorpionflies appeared throughout evolutionary history, it will be necessary to keep discovering fossil males with good abdominal preservation. The latter will in turn necessitate from improving the knowledge on the currently contentious phylogenetic relationships among mecopteran groups.
 
 ## Materials and methods
 
-## Geological context
+### Geological context
 
 The geographical provenance of the amber samples used in this study is marked on the map provided (Figure 8). The Spanish amber sample was gathered in official excavations with the participation of one of us (RPF) taking place between 2008 and 2010 in the El Soplao outcrop (near Rábago village, Cantabria, northern Spain) (Najarro et al., 2009; Najarro et al., 2010), and is dated as middle Albian, Early Cretaceous (ca. 105 Ma) (Barrón, pers. comm.). The Myanmar amber sample comes from Kachin, near Tanai town, Hukawng Valley, Kachin State, Myanmar, and is dated as earliest Cenomanian (98.8 ± 0.62 Ma), Late Cretaceous (Shi et al., 2012). It was acquired in 2016, prior to the armed conflict and the escalation of the ethnic strife in the area (Haug et al., 2020; Szwedo et al., 2020). The age of Baltic amber is estimated as Lutetian, middle Eocene (ca. 45 Ma) (Grimaldi and Ross, 2017), or as late Eocene (Kasiński et al., 2020).
 
@@ -205,11 +205,11 @@ The geographical provenance of the amber samples used in this study is marked on
 
 **Figure 8.:** The two white stars represent Cretaceous localities (El Soplao amber, Spain; Kachin amber, Myanmar); the yellow star an Eocene deposit (Baltic amber).
 
-## Specimen repository
+### Specimen repository
 
 All the studied specimens are deposited in public institutions. Holotype CES-437 is deposited at the Institutional Collection from the El Soplao Cave (Government of Cantabria), Celis, Cantabria, N Spain. The specimen is partly preserved, the amber piece was polished and included in Epoxy resin for visibility and protection. Holotype MP/3721 is housed at the collection from the Museum of the Institute of Systematics and Evolution of Animals, Polish Academy of Sciences, Kraków, Poland (ISEA PAS). The specimen is almost complete, several cracks cut the specimen. Holotype MP/2711 is housed at the collection of the Museum of the ISEA PAS, Kraków, Poland. The specimen is well preserved but incomplete, a neuropteran and a cecidomyiid dipteran are present as syninclusions.
 
-## Methods
+### Methods
 
 Photographs of amber inclusions were taken with a Leica M205C stereomicroscope and an attached Leica DFC295 camera, under a Nikon Eclipse E100 compound microscope with an attached Nikon DS F11 camera at the University of Łódź, and with a Nikon SMZ25 stereomicroscope equipped with a Nikon DS-Ri2 digital camera at the ISEA (PAS). In most instances, incident and transmitted light were used simultaneously. Stacks of photographs were processed using NIS-Elements Imaging Software. Drawings were obtained based on the photographs but corroborating the morphological details under the optic equipment, and then digitally processed in CorelDraw X10.
 

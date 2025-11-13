@@ -29,6 +29,14 @@ In this study, we optogenetically interfered with the circuit function by activa
 
 We recorded multiple unit and field potential activities from the dorsal hippocampus in five rats, during exploration and quiet immobility sessions. In these rats, Halorhodopsin (NpHR-YFP, n = 4 rats) or Archaerhodopsin (ArchT, n = 1 rat) was expressed in the dorsal CA1 region of the hippocampus under the control of the CaMKIIα promoter using an adeno-associated virus (AAV2/1). In four rats, fifteen independently-movable tetrodes and one 200 µm optic fiber centered in the middle of the tetrode bundle targeted the dorsal CA1 region while, in the remaining animal, 24 tetrodes and four optic fibers were used (see Materials and methods). We recorded during four 25 min exploration sessions in which first a familiar environment (FAM1) was explored followed by a novel environment (NOV), and finally, the animals were returned to the familiar environment for the remaining two sessions. During the second familiar exploration session laser stimulation was applied (FAML) in a fixed part of the environment but not in the last exploration (FAM2, see Figure 1A). We tested whether the light application affected the behavior of the animals (Figure 1—figure supplement 1). In all sessions, neither the average speed nor the occupancy within the light stimulation sector were significantly different, compared to the part of the environment where no light was triggered (all p>0.5607). We identified monosynaptically-connected pyramidal cell-interneuron pairs by calculating the cross-correlation of their spike firing times and testing for the presence of a short-latency (1–2 ms) sharp (1–2 ms wide) peak. This peak indicates the presence of a monosynaptic connection in which the presynaptic pyramidal cell can discharge the postsynaptic interneuron within a short latency. In turn, the magnitude of the peak, that is, its transmission probability, reflects the connection weight between a given cell pair. Changes in firing rate across sessions by either or both cells in the pair would result in an alteration of the magnitude of the peak that does not reflect a change in this connection weight, but rather a general change in the probability of joint firing. To account for this, throughout all the analysis, we measured the chance probability that the pair fires together, by averaging the correlation probabilities over the 10–50 ms time bins and subtracting this from the peak. Altogether, we identified 78 pyramidal cell-interneuron pairs in these recordings (see Materials and methods).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61106/elife-61106-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental paradigm: on each recording day the animal was exposed three times to the same familiar environment (FAM1, FAML, and FAM2), including one session in which light stimulation was triggered (FAML) as the animal explored a defined sector of the environment (1/3 – ½ of the arena). In addition, the animal also explored a novel environment (NOV). Each behavioral session was flanked by sleep, with 500 ms light pulses given in the last. (B) examples of cells in which light application suppressed activity and triggered an elevated rate, through disinhibition. int, interneuron; pyr, pyramidal cells. Light responses were measured during the last rest session by applying 500 ms test light pulses. The histograms show the probability of spiking within the 20 ms time bins. (C) The mean firing rate of the postsynaptic interneurons (left) and presynaptic pyramidal cells (right) that were part of a detected monosynaptic cell pair were plotted during FAM1 vs. FAML sessions. Lines represent the x = y line. Note that the majority of interneurons were inhibited by the light, whereas several pyramidal cells exhibited either prominent suppression or excitation of their rate. (D) Monosynaptic spike transmission probabilities also exhibit alterations during the FAML session with more cell pairs showing a reduction of spike transmission probabilities relative to FAM1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61106/elife-61106-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Influence of light application on the behavior of the animal in familiar environment sessions: FAM1, FAML,and FAM2. A: Mean (± SEM) speed of animal in light sector vs. the rest of the environment. B: Time that animal spent in the light sector vs. rest of the environment (mean ± SEM).
+
 The light stimulation inhibited not only a selected population of pyramidal cells but also many interneurons, while a further group of pyramidal cells increased their firing due to disinhibition, as assessed directly by their light responses to brief light pulses in the rest session at the end of the recordings (Figure 1B). In our previous work, we showed that these disinhibited pyramidal cells only increased their firing after the maximum light-mediated suppression on interneurons (Gridchyn et al., 2020; Schoenenberger et al., 2016). We also showed before (Schoenenberger et al., 2016) that both somatostatin- and parvalbumin immunopositive interneurons can express transgenes following AAV-mediated transduction in agreement with earlier work (Nathanson et al., 2009). It is possible, however, that other adeno-associated virus serotypes or the usage of the same virus in other brain regions may yield principal cell-specific expression. As a result, many pyramidal cell - interneuron pairs with monosynaptic connections showed changes in firing rate during the FAML session, when compared to FAM1 (Figure 1C). The altered network activity during the light session is demonstrated by significantly lower correlation of the FAM1 vs FAML rates as compared to rates measured in alternating 5 s time windows within FAM1, both for pyramidal cells and interneurons (all p<0.0001, Z-test). However, no significant differences were found in the median of FAM1 and FAML firing rates (interneuron p=0.3213 pyramidal cell p=0.1448, Mann-Whitney test). The spike transmission probability of these cell pairs was also changed (Figure 1D). As for firing rates, the correlation FAM1 vs FAML spike transmission values was lower than that measured in alternating 5 s time windows within FAM1 (p<0.0001, Z-test). Moreover, there was a significant reduction in the median of the spike transmission probabilities from FAM1 to FAML (p<0.01. Mann-Whitney test). Because in the spike transmission measurements the chance probability that cells randomly fire together was compensated for, light-induced network modifications altered the ability of the pyramidal cell to drive the postsynaptic interneuron, beyond that of the firing rate alterations-mediated changes. Changes in connection weight between cell pairs during the FAML session could be either transient or reflect longer-term plasticity that outlasts optogenetic stimulation. Moreover, connection strength could change as place cells remap their place fields during exploration of a different environment (Wilson and McNaughton, 1993). We, therefore, tested whether significant changes in the spike transmission of monosynaptic pairs can be seen across sessions, relative to the baseline identified in FAM1 (Figure 2A–B). To do this, we generated a score that represented the absolute value of normalized spike transmission differences between sessions (difference divided by the sum, see Materials and methods). Overall, this score was the largest between NOV-FAM1 and FAML-FAM1 sessions. However, while the changes between FAM2-FAM1 sessions were about 30% weaker relative to the others, they were still significantly larger than zero (all p<0.001; ANOVA). In addition, changes between FAM2-FAM1 sessions were significantly larger than changes within FAM1 sessions as assessed by correlations measured in alternating 5 s time windows (p<0.0268, F-test), independent of the variability across animals (p=0. 0562, Likelihood-ratio test).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61106/elife-61106-fig2-v2.jpg)
@@ -77,9 +85,75 @@ Overall, our data indicate that during active behavior, changes in interneuron e
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Long-Evans Rats</td>
+      <td>Janvier, France</td>
+      <td>RRID:RGD-631593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Rattus norvegicus)</td>
+      <td>AAV2/1.CAMKII.ArchT.GFP.WPRE.SV40</td>
+      <td>Penn Vector Core</td>
+      <td>RRID:Addgene: 26971-AAV1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>AAV2/1.CaMKIIα::eNpHR3.0-YFP</td>
+      <td>Penn Vector Core</td>
+      <td>RRID:Addgene: 99039-AAV1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python</td>
+      <td>RRID:SCR_008394 https://www.python.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LFP Online</td>
+      <td>GtiHub</td>
+      <td>https://github.com/igridchyn/lfp_online</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>12 um tungsten wires</td>
+      <td>California Fine Wire</td>
+      <td>M294520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Headstage amplifier</td>
+      <td>Axona, St. Albans, UK</td>
+      <td>http://www.axona.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 This study used previously published electrophysiological spike data (Schoenenberger et al., 2016). Accordingly, the experimental and spike clustering work has been described in this previous work in detail. Data from one additional rat recorded in the same paradigm and analyzed using the same methods was included in the data set.
 
-## Surgery for virus injection and microdrive implantation
+### Surgery for virus injection and microdrive implantation
 
 Four male adult rats (Long Evans, 300–500 g) were injected with a recombinant adeno-associated virus to express Halorhodopsin-YFP in the dorsal CA1 area (AAV2/1.CaMKIIα::eNpHR3.0-YFP Zhang et al., 2007, obtained from the Penn Vector Core facility, 1.6 × 1013 genome copies/mL; Addgene 26971) and the remaining animal was injected with a recombinant adeno-associated virus to express Archaerhodopsin (ArchT) in the dorsal CA1 area (AAV2/1.CaMKII::ArchT.GFP.WPRE.SV40 (Boyden et al., 2005), obtained from the Penn Vector Core facility, 6.41*1012 genome copies per mL). The virus was injected at four sites into dorsal CA1 of the right hemisphere in four rats and bilaterally in one rat: site 1: −3.0 AP, ±2.2 L, 2.1 DV; site 2: −3.7 AP, ±2.9 L, 2.0 DV; site 3: −4.3 AP, ±3.5 L, 2.0 DV; site 4: −5.0 AP, ±4.2 L, 2.2 DV. 3.5 weeks after virus injection, animals were implanted with 15 (28 in one rat) independently movable wire-tetrodes under deep anesthesia using isoflurane (0.5–2%), oxygen (1–2 L/min) and an initial dose of buprenorphine (0.1 mg/kg). Tetrodes were attached to the 15-tetrode (24-tetrode and 4-octrode in one rat) microdrive assemblies, enabling their independent movement. The tetrodes were constructed from four individual tungsten wires, 12 µm in diameter (H-Formvar insulation with Butyral bond coat, California Fine Wire, Grover Beach CA), twisted and then heated to bind them into a single bundle. The tips were then gold plated to reduce their impedance to 200–300 kΩ.
 
@@ -87,30 +161,30 @@ A 200 μm/0.48 NA optic fiber stub (Doric Lenses) located in the center of the t
 
 All procedures involving experimental animals were carried out in accordance with Austrian (Austrian Federal Law for experiments with live animals) animal law under a project license (BMBWF-66.018/0015-WF/V/3b/2014, BMBWF-66.018/0018-WF/V/3b/2019) approved by the Austrian Federal Science Ministry (BMWFW).
 
-## Data acquisition
+### Data acquisition
 
 32-channel unity-gain preamplifier panels (Axona Ltd, St Albans, Hertfordshire, UK) were used to reduce cable movement artifacts. Wide-band (0.1/1 Hz – 5 kHz) recordings were taken, and the amplified local field potential and multiple-unit activity were continuously digitized at 24 kHz using a 128-channel data acquisition system (Axona Ltd, St Albans, Hertfordshire, UK). Two red LEDs mounted on the preamplifier headstage were used to track the location of the animal.
 
 Green/yellow laser light for NpHR activation was provided by a 561 nm DPSS laser system equipped with an acousto-optic modulator (Omicron). The light was coupled into an optic fiber (four optic fibers in one rat) connected to a fiber-optic rotary joint (Doric lenses) from where a 200 μm/0.48 NA patch cord transmitted the light to the microdrive. Laser intensity was set to reach 25 mW total power at the tip of every implanted fiber stub. Data were recorded 6–7 weeks after AAV injection to ensure sufficient NpHR-YFP/ArchT GFP expression levels.
 
-## Behavioral paradigms
+### Behavioral paradigms
 
 Data was recorded while the animals explored different arenas or rested in a sleep box. The sleep box was small (20 cm × 27 cm) with 60 cm high walls and cushioned with a terry towel for the animal to sleep/rest comfortably. During training and electrode positioning, the animals were familiarized with a 120 cm circular environment with 20 cm high walls (minimum of 60 min of exposure per day for at least seven days) that served as the familiar arena in all experiments. Curtains were used to enclose this arena and provide a stable set of external cues. In all exploration sessions, small food pellets were dropped at random from an automated overhead system (2–3/min) to motivate the animals to explore the entire arena. For recordings in a novel environment, several other arenas with different sizes, shapes, and textures were used. In addition, curtains were opened to provide novel distal room cues.
 
 Typical recording days consisted of 10 sessions: four exploration sessions flanked by five sleep sessions and a final test session where brief laser pulses were applied while the animal still rested in the sleep box. Typically, sleep and exploration sessions lasted 25 min, whereas the laser test session lasted 18 min. The animals first explored the familiar arena. After visiting a different novel arena, the familiar arena was explored again, but laser illumination was automatically triggered when the animal entered a specific part of the arena (light zone). Finally, the same arena was explored again. All exploration sessions were flanked by sleep. The light zone was defined by a center position and an angle between 120° and 180° such that it covered one-third to half of the arena. The initial angle defining the illumination zone was random and thus random also with respect to the hippocampal place fields. Every day, a novel illumination zone that had about 50% overlap with the previous day’s zone was defined. During the course of the project and also within individual animals, the angle defining the size of the illumination zone was increased to include more place fields in the light zone. After completion of the experiments, the rats were deeply anesthetized and perfused through the heart first with PBS followed by a 4% buffered formalin phosphate solution for the histological verification of electrode tracks and optic fiber position. Furthermore, NpHR-YFP/ArchT-GFP expression in dorsal CA1 was verified in each animal by checking the fluorescence of the YFP/GFP tag.
 
-## Spike sorting and unit classification
+### Spike sorting and unit classification
 
 Unit isolation and clustering procedures have been described before (Csicsvari et al., 1998). Briefly, after resampling of the raw data to 20 kHz, action potentials were extracted from the digitally high-pass filtered (0.8–5 kHz) signal. The power computed in a sliding window (12.8 ms) and action potentials with a power of >5 SD from the baseline mean were selected. The spike features were then extracted using principal components analyses. The detected action potentials were then segregated into putative multiple single units using an automatic clustering software (Harris et al., 2000) (http://klustakwik.sourceforge.net/). Finally, the generated clusters were manually refined by a graphical cluster cutting program. Only units with clear refractory periods in their autocorrelation and well-defined cluster boundaries were used for further analysis. Periods of waking spatial exploration, immobility, and sleep were clustered together. The stability of the cells was verified by plotting spike features over time. In addition, an isolation distance (based on Mahalanobis distance, [Harris et al., 2000]) was calculated to ensure the spike clusters did not overlap during the recordings. CA1 pyramidal cells and interneurons were discriminated by their autocorrelations, firing rate, and waveforms (Csicsvari et al., 1999; Henze et al., 2000). In total, we recorded 1842 pyramidal cells and 91 interneurons.
 
-## Pyramidal cell-interneuron coupling
+### Pyramidal cell-interneuron coupling
 
 Isolation of monosynaptically-connected pyramidal cell-interneuron pairs was performed as described previously by identifying cross-correlograms between pyramidal cells and interneurons that exhibited a large, sharp peak in the 0.5–2.5 ms bins (after the discharge of the reference pyramidal cells) (Csicsvari et al., 1998). Because the number of action potentials used for the construction of these cross-correlograms varied from cell to cell, the histograms were normalized by dividing each bin by the number of reference pyramidal spike events (Csicsvari et al., 1998). The connection strength was thus accessed by measuring the spike transmission probability at the monosynaptic peak indicating the probability that the pyramidal cell would discharge its postsynaptic interneuron partner. However, the chance probability of the two cells firing together was subtracted in order to account for firing rate change-related fluctuations in the correlation strength. The chance firing probability was estimated by averaging the 10–50 ms bins on both sides of the histogram. The significance level for the monosynaptic peak was set at three standard deviations from the baseline (p<0.000001) (Abeles, 1982; Csicsvari et al., 1998). In addition, to filter out sparse histograms, we only considered monosynaptic pairs in which either FAM1 or FAM2 contained at least 1000 spike coincidence counts with the −50 to 50 ms intervals, and the SD of the bin values were less than one-third of the mean bin value.
 
-## Comparison of firing rate and firing field analysis
+### Comparison of firing rate and firing field analysis
 
 To compare firing rates between two sessions, we calculated the relative firing rate change by dividing the signed difference between the mean firing rates by the sum of the mean rates (i.e. c=(r2-r1)/(r2+r1)), where r1 and r2 denote the mean firing rates in the two sessions that are compared (Leutgeb et al., 2004; Leutgeb et al., 2005). This score is always between −1 and 1, and the extreme values −1 and 1 mean that a neuron is firing exclusively in one of the two sessions. A similar measure was used to measure the relative change of spike transmission and spike pairing events across different sessions.
 
-## Statistical analyses
+### Statistical analyses
 
 We used linear mixed models and ANOVA to determine the significance of variables in predicting spike transmission probabilities and their changes. We used a mixed model comparison to test whether predictions were independent of other variables and displayed corresponding partial correlations in the figures. We added the animal variable as a random effect to all linear mixed models to account for variability across animals and used the comparison of linear mixed model and linear model without an animal variable to test whether an animal variable contributed significantly to the prediction of spike probability and their changes. We used Holm-Bonferroni multiple testing correction to account for comparisons in multiple time windows in the analysis with prediction through pairing.

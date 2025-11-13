@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.05534.001 Protein output from synonymous codons is thought to be equivalent if appropriate tRNAs are sufficiently abundant. Here we show that mRNAs encoding iterated lysine codons, AAA or AAG, differentially impact protein synthesis: insertion of iterated AAA codons into an ORF diminishes protein expression more than insertion of synonymous AAG codons. Kinetic studies in E. coli reveal that differential protein production results from pausing on consecutive AAA-lysines followed by ribosome sliding on homopolymeric A sequence. Translation in a cell-free expression system demonstrates that diminished output from AAA-codon-containing reporters results from premature translation termination on out of frame stop codons following ribosome sliding. In eukaryotes, these premature termination events target the mRNAs for Nonsense-Mediated-Decay (NMD). The finding that ribosomes slide on homopolymeric A sequences explains bioinformatic analyses indicating that consecutive AAA codons are under-represented in gene-coding sequences. Ribosome ‘sliding’ represents an unexpected type of ribosome movement possible during translation. DOI: http://dx.doi.org/10.7554/eLife.05534.001
+Protein output from synonymous codons is thought to be equivalent if appropriate tRNAs are sufficiently abundant. Here we show that mRNAs encoding iterated lysine codons, AAA or AAG, differentially impact protein synthesis: insertion of iterated AAA codons into an ORF diminishes protein expression more than insertion of synonymous AAG codons. Kinetic studies in E. coli reveal that differential protein production results from pausing on consecutive AAA-lysines followed by ribosome sliding on homopolymeric A sequence. Translation in a cell-free expression system demonstrates that diminished output from AAA-codon-containing reporters results from premature translation termination on out of frame stop codons following ribosome sliding. In eukaryotes, these premature termination events target the mRNAs for Nonsense-Mediated-Decay (NMD). The finding that ribosomes slide on homopolymeric A sequences explains bioinformatic analyses indicating that consecutive AAA codons are under-represented in gene-coding sequences. Ribosome ‘sliding’ represents an unexpected type of ribosome movement possible during translation.
 
 ## Introduction
 
@@ -33,109 +33,434 @@ Here we take a high-resolution biochemical look at the molecular events that occ
 
 ## Results
 
-## Protein production is differentially diminished by iterated lysine codons (AAA vs AAG)
+### Protein production is differentially diminished by iterated lysine codons (AAA vs AAG)
 
-To begin investigating the translation of poly(lysine)-encoding sequences, we created a series of mCherry- and luciferase-based reporter constructs (
+To begin investigating the translation of poly(lysine)-encoding sequences, we created a series of mCherry- and luciferase-based reporter constructs (Figure 1A) containing no insert, glutamic acid (GAA) repeats, or consecutive lysine residues encoded by various combinations of AAA and AAG codons. These reporters were introduced into S. cerevisiae and E. coli cells and the protein products visualized by either luminescence or fluorescence, respectively (Figure 1B). The insertion of twelve consecutive negatively charged glutamic acid residues (GAA) had no negative impact on production of the reporter protein (Figure 1B). By contrast, the addition of consecutive lysine residues generally resulted in overall less protein production (Figure 1B), consistent with previous studies of poly(lysine)-containing reporters (Ito-Harashima et al., 2007; Lu and Deutsch, 2008; Chiabudini et al., 2012). Interestingly, we find that protein output from the poly(lysine)-containing reporters is codon dependent in both bacteria and yeast; reporters containing iterated AAG lysine codons generate more protein than those with an equivalent number of synonymous AAA codons (Figure 1B). The relative differences in expression of AAG- vs AAA-encoded poly(lysine)-containing reporters in E. coli and S. cerevisiae are comparable (4 ± 0.3-fold more in E. coli and 3 ± 1-fold more in S. cerevisiae from reporters with AAG12 vs AAA12).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig1-v2.jpg)
 
-**Figure 1.:** E. coli and S. cerevisiae.(A) Schematics of the mCherry (top) and luciferase (middle, and bottom) reporters used in this study. The mCherry reporter contains an N-terminal thioredoxin (Thrdx) domain, 3HA-tag, sequence of interest (black section), followed by the C-terminal mCherry sequence. The top luciferase reporter includes a 2HA tag followed by sequences of interest (used for study in Figure 1B). The second luciferase reporter (used in Figure 6) has sequences of interest at the N-terminal end of Renilla. Firefly is used in this construct as an internal control in the second luciferase reporter. (B) Relative amounts of protein expressed from reporters expressed in E. coli (mCherry, red) and S. cerevisiae (luciferase, green). Error bars results from for the standard error of at least three experiments.DOI: http://dx.doi.org/10.7554/eLife.05534.003
+**Figure 1.:** (A) Schematics of the mCherry (top) and luciferase (middle, and bottom) reporters used in this study. The mCherry reporter contains an N-terminal thioredoxin (Thrdx) domain, 3HA-tag, sequence of interest (black section), followed by the C-terminal mCherry sequence. The top luciferase reporter includes a 2HA tag followed by sequences of interest (used for study in Figure 1B). The second luciferase reporter (used in Figure 6) has sequences of interest at the N-terminal end of Renilla. Firefly is used in this construct as an internal control in the second luciferase reporter. (B) Relative amounts of protein expressed from reporters expressed in E. coli (mCherry, red) and S. cerevisiae (luciferase, green). Error bars results from for the standard error of at least three experiments.
 
-## Kinetic analysis of lysine incorporation on consecutive AAA and AAG codons
+### Kinetic analysis of lysine incorporation on consecutive AAA and AAG codons
 
-One potential explanation for the codon-dependent expression of poly(lysine)-containing proteins could be that the ribosome more rapidly incorporates lysine on AAG than AAA codons. In
+One potential explanation for the codon-dependent expression of poly(lysine)-containing proteins could be that the ribosome more rapidly incorporates lysine on AAG than AAA codons. In E. coli a single tRNA with a UUU anti-codon decodes both lysine codons (Chan and Lowe, 2009), making E. coli an excellent system for studying differences in the production of poly(lysine) peptides. We measured the rate of lysine incorporation using a previously described reconstituted E. coli translation system (Youngman et al., 2004; Gromadski et al., 2006; Zaher and Green, 2009) on a series of lysine-encoding simple mRNAs including: AUG-AAA-UUC-AAG-UAA (MKFK-Stop), AUG-UUC-AAA (MFK), AUG-(AAA or AAG)5-UAA (MK(A or G)5-Stop). Only Lys-tRNALys was included during the translation of MKFK-Stop and MK5-Stop mRNAs while both Lys-tRNALys and Phe-tRNAPhe were present when MFK was translated. Electrophoretic TLC (eTLC) readily resolved the reaction products allowing for analysis of intermediate and complete peptide products (Figure 2A). The quantitated data were modeled in Mathematica using the kinetic scheme displayed in Figure 2B (see ‘Material and methods’). These experiments reveal that addition of a single lysine in a heteropolymeric sequence is rapid and independent of whether lysine is the first or second amino acid incorporated (Figure 2C, rate constants for formation of MK and MFK peptides are 12 s−1 and 7 s−1, respectively); these rates are similar to those typically measured for peptide bond formation in this in vitro system (Gromadski et al., 2006). For messages containing iterated lysine codons, the rate constant for translating the first lysine codon is similarly fast (k1,obs from 2–19 s−1, Figure 2C) for AAA and AAG codons. However, subsequent lysines in an iterated sequence are added with considerably slower kinetics on both AAA (k2,obs = 0.0005 and k3,obs = 0.0003 s−1) and AAG codons (k2,obs = 0.009 and k3,obs = 0.015 s−1) (Figure 2C). We note that the rate of second lysine addition during the translation of MK5-STOP messages are somewhat slower on AAA relative to AAG codons, potentially partially explaining the decreased overall protein output on these mRNAs. More importantly, however, these data show that the reactivity of the second Lys-tRNALys on iterated lysine containing messages (such as MK5-Stop) is substantially reduced (at least 130-fold) on both lysine codon-containing mRNAs relative to normal elongation rates. Interestingly, the addition of a second lysine to messages with fewer sequential lysine codons (such as MK2F-STOP) does not exhibit such a striking kinetic defect (k2,obs is not largely affected, data not shown). These data suggest that the identity of the message (i.e. a long poly(A) sequence) plays a critical role in the observed slowing of elongation. Toeprinting assays performed using the E. coli PURE cell-free translation system are consistent with these observations; E. coli ribosomes stall when the second lysine codon in iterated (AAA)- and (AAG)-codon containing sequences is positioned in the A site (Figure 2—figure supplement 1). Together, these results reveal that translating consecutive lysines in a poly(lysine) peptide sequence, either on iterated AAA or AAG codons, can lead to substantial kinetic delays in vitro.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig2-v2.jpg)
 
-**Figure 2.:** (A) Example eTLC displaying the E. coli translation products of a AUG-(AAA)5-UAA message. The ± poles of the electrophoretic TLC are indicated. MK4 and MK5 products (and those with greater numbers of lysine) are difficult to resolve in this system but the other products are easily visualized. (B) Kinetic scheme for rate constants of sequential lysine additions to peptide chain. (C) Bar graph displaying rate constants for the addition of individual lysines to a variety of messages: MKFK-Stop (gray), MKA5-Stop (blue), MKG5-Stop (black), and MFK (gray).DOI: http://dx.doi.org/10.7554/eLife.05534.004
+**Figure 2.:** (A) Example eTLC displaying the E. coli translation products of a AUG-(AAA)5-UAA message. The ± poles of the electrophoretic TLC are indicated. MK4 and MK5 products (and those with greater numbers of lysine) are difficult to resolve in this system but the other products are easily visualized. (B) Kinetic scheme for rate constants of sequential lysine additions to peptide chain. (C) Bar graph displaying rate constants for the addition of individual lysines to a variety of messages: MKFK-Stop (gray), MKA5-Stop (blue), MKG5-Stop (black), and MFK (gray).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Toeprinting assays were performed with constructs containing 1–12 consecutive lysines inserted (either AAG and AAA codons). Assays were performed in the presence and absence of thiostrepton to mark ribosomes on the initiating AUG codon. Sequences on which toeprints appear are highlighted in red.DOI: http://dx.doi.org/10.7554/eLife.05534.005
+**Figure 2—figure supplement 1.:** Toeprinting assays were performed with constructs containing 1–12 consecutive lysines inserted (either AAG and AAA codons). Assays were performed in the presence and absence of thiostrepton to mark ribosomes on the initiating AUG codon. Sequences on which toeprints appear are highlighted in red.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Kinetic scheme used to model the rate constants of sequential lysine additions to the peptide chain (same as Figure 2A). We also attempted to model with peptidyl-tRNA drop-off rates included. Inserting peptidyl-tRNA drop-off into our model decreases the quality of fits, and returns rates of drop-off small enough that they are inconsequential relative to the time scale of the reaction. (B) The top panel displays the differential equations used to solve for each rate constant. The bottom panels display the mathematical solutions for the differential equations. These solutions were used to perform modeling and fit the data. The fits were performed both iteratively (e.g., we solved for k1 by fitting the plots measuring the disappearance of M, then input that value into the equation describing the appearance of MK to solve for k2) and by letting all of the values float for each data set. In both cases, the rate constants modeled were essentially the same, indicating that the first lysine is added quickly (k1), and subsequent lysines (k2, k3) are added more slowly. (C) An example fit in Mathematica showing time course for the formation and depletion of MK on a message with AAG codons. This time course, for example, was used to model the k2 value. (D) R2 values for the fits for the appearance and disappearance of each species used to model rate constants.DOI: http://dx.doi.org/10.7554/eLife.05534.006
+**Figure 2—figure supplement 2.:** (A) Kinetic scheme used to model the rate constants of sequential lysine additions to the peptide chain (same as Figure 2A). We also attempted to model with peptidyl-tRNA drop-off rates included. Inserting peptidyl-tRNA drop-off into our model decreases the quality of fits, and returns rates of drop-off small enough that they are inconsequential relative to the time scale of the reaction. (B) The top panel displays the differential equations used to solve for each rate constant. The bottom panels display the mathematical solutions for the differential equations. These solutions were used to perform modeling and fit the data. The fits were performed both iteratively (e.g., we solved for k1 by fitting the plots measuring the disappearance of M, then input that value into the equation describing the appearance of MK to solve for k2) and by letting all of the values float for each data set. In both cases, the rate constants modeled were essentially the same, indicating that the first lysine is added quickly (k1), and subsequent lysines (k2, k3) are added more slowly. (C) An example fit in Mathematica showing time course for the formation and depletion of MK on a message with AAG codons. This time course, for example, was used to model the k2 value. (D) R2 values for the fits for the appearance and disappearance of each species used to model rate constants.
 
-## E. coli ribosomes add extra lysines on iterated AAA-containing mRNAs
+### E. coli ribosomes add extra lysines on iterated AAA-containing mRNAs
 
-As we explored the kinetics of lysine incorporation, we evaluated the ability of the ribosome to translate a variety of MK
+As we explored the kinetics of lysine incorporation, we evaluated the ability of the ribosome to translate a variety of MK(A or G)2 di-lysine messages (Figure 3A). Unexpectedly, we found that messages containing iterated AAA codons generate extended peptides longer than the designed coding sequence (Figure 3A). When E. coli initiation complexes (programmed with fMet-tRNAfMet) are reacted with Lys-tRNALys on messages containing two consecutive lysine codons followed by a variety of non-lysine codons (Phe (UUC), Val (GUC), or Stop (UAA)), only MKK peptide should be synthesized. However, we see the formation of a majority population of extended peptide product containing at least four lysines on all messages with two consecutive AAA codons (Figure 3B, lanes 2-4). In contrast, equivalent messages with two AAG codons predominantly form the expected MKK product (Figure 3B, compare lane 3 vs 5). We also find that a mixed sequence of lysine codons (AAA-AAG) can form some extended peptide (Figure 3—figure supplement 1). These data suggest that 5 As in a row are sufficient to promote the addition of extra lysines in vitro. We note that the identity of the codon that follows the di-lysine sequence is not relevant to the observed amount of extended peptide product (Figure 3B, Figure 3—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig3-v2.jpg)
 
-**Figure 3.:** E. coli ribosomes add extra lysines on messages containing two sequential AAA, but not AAG, lysine codons.(A) Illustration of the ribosome on the entire MKA2-Stop message. (B) eTLCs showing the peptide products resulting from translation of indicated messages with Lys-tRNAlys (but no other tRNAs or release factors) present. (C) eTLC displaying the peptide products resulting from the translation of indicated messages in the presence of Lys-tRNALys alone, or in the presence of Lys-tRNALys + factors (either RF1 or Phe-tRNAPhe) necessary for messages to be fully translated.DOI: http://dx.doi.org/10.7554/eLife.05534.007
+**Figure 3.:** (A) Illustration of the ribosome on the entire MKA2-Stop message. (B) eTLCs showing the peptide products resulting from translation of indicated messages with Lys-tRNAlys (but no other tRNAs or release factors) present. (C) eTLC displaying the peptide products resulting from the translation of indicated messages in the presence of Lys-tRNALys alone, or in the presence of Lys-tRNALys + factors (either RF1 or Phe-tRNAPhe) necessary for messages to be fully translated.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** E. coli ribosomes add extra lysines to peptides translated on messages containing sequential AAA-AAG lysine codons.TLC showing all of the peptide products resulting from translation of MKA2V-Stop, MKA3-Stop, MKA4-STOP, and MKAKGF-Stop messages with Lys-tRNAlys (but no other tRNAs or release factors) present.DOI: http://dx.doi.org/10.7554/eLife.05534.008
+**Figure 3—figure supplement 1.:** TLC showing all of the peptide products resulting from translation of MKA2V-Stop, MKA3-Stop, MKA4-STOP, and MKAKGF-Stop messages with Lys-tRNAlys (but no other tRNAs or release factors) present.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Translation reactions were run in the presence of either Lys-tRNAlys only, or Lys-tRNAlys and other factors (Phe-tRNAPhe or RF1). All errors bars represent the standard error from at least three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.05534.009
+**Figure 3—figure supplement 2.:** Translation reactions were run in the presence of either Lys-tRNAlys only, or Lys-tRNAlys and other factors (Phe-tRNAPhe or RF1). All errors bars represent the standard error from at least three independent experiments.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** (A) In vitro transcribed mRNAs used in our in vitro studies run as distinct, single bands on high-resolution denaturing PAGE gel. The RNA is visualized with methylene blue stain. (B) The mRNAs encoding consecutive AAA codons result in discrete length toeprint signatures, yielding specific bands corresponding to the full-length message on our toeprints. We also performed RACE experiments on in vitro T7 transcribed mCherry reporter mRNAs containing A18-36 sequences and found that with high frequency, our RNAs contained the expected number of As. Importantly, in both the cell-free system and in vivo, T7 RNA polymerase is responsible for transcribing the mRNAs relevant to the output. Together, these data provide strong evidence that the mRNAs utilized throughout this study are accurately transcribed by T7 RNA polymerase.DOI: http://dx.doi.org/10.7554/eLife.05534.010
+**Figure 3—figure supplement 3.:** (A) In vitro transcribed mRNAs used in our in vitro studies run as distinct, single bands on high-resolution denaturing PAGE gel. The RNA is visualized with methylene blue stain. (B) The mRNAs encoding consecutive AAA codons result in discrete length toeprint signatures, yielding specific bands corresponding to the full-length message on our toeprints. We also performed RACE experiments on in vitro T7 transcribed mCherry reporter mRNAs containing A18-36 sequences and found that with high frequency, our RNAs contained the expected number of As. Importantly, in both the cell-free system and in vivo, T7 RNA polymerase is responsible for transcribing the mRNAs relevant to the output. Together, these data provide strong evidence that the mRNAs utilized throughout this study are accurately transcribed by T7 RNA polymerase.
 
 The production of peptide products containing more than the encoded number of lysines is surprising, especially given that there are no nearby upstream or downstream in-frame or out-of-frame lysine codons in these mRNAs (Figure 3A). We speculate that these extended peptides result from the ribosome repeatedly moving backwards by at least three nucleotides to position an AAA Lys codon in the A site, and then subsequent standard peptide bond formation. Toeprinting assays performed on iterated AAA- and AAG-containing mRNAs provide further support for such irregular movement of ribosomes specifically on iterated AAA codons (Figure 2—figure supplement 1); the toeprint on the iterated AAA sequence is diffuse relative to the discrete toeprint seen on iterated AAG sequence. In the course of performing our experiments we carefully considered reports suggesting that T7 RNA polymerase could promiscuously add extra adenosines to poly(A) messages (Tsuchihashi and Brown, 1992; Ratinier et al., 2008); no experiment that we performed revealed any evidence for such heterogeneity in our mRNA products (Figure 3—figure supplement 3). Unlike better studied −1 and +1 frameshifting events, these data suggest that ribosomes on iterated AAA sequences are making unexpected and large excursions from their initial frame; we refer to this process as ‘ribosome sliding’.
 
-## Ribosome sliding is slow relative to the rate of normal elongation and termination reactions
+### Ribosome sliding is slow relative to the rate of normal elongation and termination reactions
 
-The observation of ribosome sliding on iterated AAA codons is surprising given that the ribosome must somewhat regularly translate mRNA sequences in vivo that contain two consecutive AAA codons. While three or more AAA codons in a row are selected against in gene coding sequences, there are thousands of examples of two consecutive AAA codons in S. cerevisiae and E. coli genes (see further details in bioinformatic analysis below, Table 1). In the experiments described in Figure 3A, ribosome initiation complexes formed on the specified MKA2-Stop and MKA2F-Stop messages (Figure 3B) were only supplied with Lys-tRNALys and essential elongation factors; the subsequent substrates normally present in vivo after the formation of MKK peptide were left out. To determine if ribosome sliding occurs in more typical circumstances, we performed elongation reactions on the same mRNAs, but where both Lys-tRNALys and the relevant other downstream substrates (release factor 1 (RF1) or Phe-tRNAPhe) were added to the ribosome initiation complexes. The result is clear; in this latter case, the anticipated MKKF or MKK peptide products are predominantly generated (Figure 3C, Figure 3—figure supplement 2). These data suggest that ribosome sliding on iterated AAA sequences occurs more slowly than the normal rate of peptidyl transfer with Phe-tRNAPhe or RF1-catalyzed peptide release, respectively. Moreover, these results readily explain how the ribosome can normally translate (at least two) sequential AAA codons in vivo without sliding. When there are more than two AAA codons in a row, each lysine after the first is added slowly (Figure 2B), raising the possibility that sliding may become relevant on such messages.10.7554/eLife.05534.011Table 1.Bioinformatic analyses of poly(lysine) sequencesDOI: http://dx.doi.org/10.7554/eLife.05534.011OrganismSequenceOccurancesFraction observedFraction expectedEnrichmentE. coliAAG-AAG2440.080.081.01AAG-AAA9020.290.201.45AAA-AAG5440.180.200.87AAA-AAA14160.460.520.88AAG-AAG-AAG90.070.023.37AAG-AAG-AAA200.160.062.89AAG-AAA-AAG210.170.063.03AAA-AAG-AAG40.030.060.58AAG-AAA-AAA360.290.142.00AAA-AAG-AAA290.230.141.61AAA-AAA-AAG40.030.140.22AAA-AAA-AAA10.010.380.02AAG-AAG-AAA-AAG10.250.0216.07AAG-AAG-AAA-AAA10.250.046.20AAA-AAG-AAA-AAA20.500.104.78S. cerevisiaeAAG-AAG38450.210.141.45AAG-AAA51830.280.241.20AAA-AAG45050.240.241.04AAA-AAA48580.260.390.69AAG-AAG-AAG2610.160.052.87AAG-AAG-AAA2340.140.091.57AAG-AAA-AAG2240.130.091.51AAA-AAG-AAG1890.110.091.27AAG-AAA-AAA2110.130.150.87AAA-AAG-AAA2610.160.151.07AAA-AAA-AAG1170.070.150.48AAA-AAA-AAA1710.100.240.43AAG-AAG-AAG-AAG240.100.024.88AAA-AAG-AAG-AAG280.120.033.48AAG-AAA-AAG-AAG230.100.032.86AAG-AAG-AAA-AAG190.080.032.36AAG-AAG-AAG-AAA270.110.033.35AAG-AAG-AAA-AAA130.050.060.99AAG-AAA-AAG-AAA190.080.061.44AAA-AAG-AAG-AAA110.050.060.83AAA-AAG-AAA-AAG170.070.061.29AAG-AAA-AAA-AAG50.020.060.38AAA-AAA-AAG-AAG90.040.060.68AAG-AAA-AAA-AAA90.040.090.42AAA-AAG-AAA-AAA140.060.090.65AAA-AAA-AAG-AAA60.030.090.28AAA-AAA-AAA-AAG50.020.090.23AAA-AAA-AAA-AAA90.040.150.25The prevalence precise sequences encoding 2–3 consecutive lysine residues in E. coli and S. cerevisiae are displayed. The raw number of ‘occurrences’ are listed for each sequence. The enrichment values listed reflect the fraction observed/fraction expected.
+The observation of ribosome sliding on iterated AAA codons is surprising given that the ribosome must somewhat regularly translate mRNA sequences in vivo that contain two consecutive AAA codons. While three or more AAA codons in a row are selected against in gene coding sequences, there are thousands of examples of two consecutive AAA codons in S. cerevisiae and E. coli genes (see further details in bioinformatic analysis below, Table 1). In the experiments described in Figure 3A, ribosome initiation complexes formed on the specified MKA2-Stop and MKA2F-Stop messages (Figure 3B) were only supplied with Lys-tRNALys and essential elongation factors; the subsequent substrates normally present in vivo after the formation of MKK peptide were left out. To determine if ribosome sliding occurs in more typical circumstances, we performed elongation reactions on the same mRNAs, but where both Lys-tRNALys and the relevant other downstream substrates (release factor 1 (RF1) or Phe-tRNAPhe) were added to the ribosome initiation complexes. The result is clear; in this latter case, the anticipated MKKF or MKK peptide products are predominantly generated (Figure 3C, Figure 3—figure supplement 2). These data suggest that ribosome sliding on iterated AAA sequences occurs more slowly than the normal rate of peptidyl transfer with Phe-tRNAPhe or RF1-catalyzed peptide release, respectively. Moreover, these results readily explain how the ribosome can normally translate (at least two) sequential AAA codons in vivo without sliding. When there are more than two AAA codons in a row, each lysine after the first is added slowly (Figure 2B), raising the possibility that sliding may become relevant on such messages.
 
-## Ribosomes slide on poly(A)-containing reporters in an E. coli cell-free translation system
+**Table 1.**
+ Bioinformatic analyses of poly(lysine) sequences
 
-The initial in vivo observation that protein production is more severely impacted by iterated AAA than AAG codons (
+
+<table>
+  <thead>
+    <tr>
+      <th>Organism</th>
+      <th>Sequence</th>
+      <th>Occurances</th>
+      <th>Fraction observed</th>
+      <th>Fraction expected</th>
+      <th>Enrichment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="15">E. coli</td>
+      <td>AAG-AAG</td>
+      <td>244</td>
+      <td>0.08</td>
+      <td>0.08</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA</td>
+      <td>902</td>
+      <td>0.29</td>
+      <td>0.20</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG</td>
+      <td>544</td>
+      <td>0.18</td>
+      <td>0.20</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA</td>
+      <td>1416</td>
+      <td>0.46</td>
+      <td>0.52</td>
+      <td>0.88</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAG</td>
+      <td>9</td>
+      <td>0.07</td>
+      <td>0.02</td>
+      <td>3.37</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA</td>
+      <td>20</td>
+      <td>0.16</td>
+      <td>0.06</td>
+      <td>2.89</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAG</td>
+      <td>21</td>
+      <td>0.17</td>
+      <td>0.06</td>
+      <td>3.03</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAG</td>
+      <td>4</td>
+      <td>0.03</td>
+      <td>0.06</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAA</td>
+      <td>36</td>
+      <td>0.29</td>
+      <td>0.14</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAA</td>
+      <td>29</td>
+      <td>0.23</td>
+      <td>0.14</td>
+      <td>1.61</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAG</td>
+      <td>4</td>
+      <td>0.03</td>
+      <td>0.14</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAA</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>0.38</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA-AAG</td>
+      <td>1</td>
+      <td>0.25</td>
+      <td>0.02</td>
+      <td>16.07</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA-AAA</td>
+      <td>1</td>
+      <td>0.25</td>
+      <td>0.04</td>
+      <td>6.20</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAA-AAA</td>
+      <td>2</td>
+      <td>0.50</td>
+      <td>0.10</td>
+      <td>4.78</td>
+    </tr>
+    <tr>
+      <td rowspan="26">S. cerevisiae</td>
+      <td>AAG-AAG</td>
+      <td>3845</td>
+      <td>0.21</td>
+      <td>0.14</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA</td>
+      <td>5183</td>
+      <td>0.28</td>
+      <td>0.24</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG</td>
+      <td>4505</td>
+      <td>0.24</td>
+      <td>0.24</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA</td>
+      <td>4858</td>
+      <td>0.26</td>
+      <td>0.39</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAG</td>
+      <td>261</td>
+      <td>0.16</td>
+      <td>0.05</td>
+      <td>2.87</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA</td>
+      <td>234</td>
+      <td>0.14</td>
+      <td>0.09</td>
+      <td>1.57</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAG</td>
+      <td>224</td>
+      <td>0.13</td>
+      <td>0.09</td>
+      <td>1.51</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAG</td>
+      <td>189</td>
+      <td>0.11</td>
+      <td>0.09</td>
+      <td>1.27</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAA</td>
+      <td>211</td>
+      <td>0.13</td>
+      <td>0.15</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAA</td>
+      <td>261</td>
+      <td>0.16</td>
+      <td>0.15</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAG</td>
+      <td>117</td>
+      <td>0.07</td>
+      <td>0.15</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAA</td>
+      <td>171</td>
+      <td>0.10</td>
+      <td>0.24</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAG-AAG</td>
+      <td>24</td>
+      <td>0.10</td>
+      <td>0.02</td>
+      <td>4.88</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAG-AAG</td>
+      <td>28</td>
+      <td>0.12</td>
+      <td>0.03</td>
+      <td>3.48</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAG-AAG</td>
+      <td>23</td>
+      <td>0.10</td>
+      <td>0.03</td>
+      <td>2.86</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA-AAG</td>
+      <td>19</td>
+      <td>0.08</td>
+      <td>0.03</td>
+      <td>2.36</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAG-AAA</td>
+      <td>27</td>
+      <td>0.11</td>
+      <td>0.03</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <td>AAG-AAG-AAA-AAA</td>
+      <td>13</td>
+      <td>0.05</td>
+      <td>0.06</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAG-AAA</td>
+      <td>19</td>
+      <td>0.08</td>
+      <td>0.06</td>
+      <td>1.44</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAG-AAA</td>
+      <td>11</td>
+      <td>0.05</td>
+      <td>0.06</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAA-AAG</td>
+      <td>17</td>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAA-AAG</td>
+      <td>5</td>
+      <td>0.02</td>
+      <td>0.06</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAG-AAG</td>
+      <td>9</td>
+      <td>0.04</td>
+      <td>0.06</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>AAG-AAA-AAA-AAA</td>
+      <td>9</td>
+      <td>0.04</td>
+      <td>0.09</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>AAA-AAG-AAA-AAA</td>
+      <td>14</td>
+      <td>0.06</td>
+      <td>0.09</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAG-AAA</td>
+      <td>6</td>
+      <td>0.03</td>
+      <td>0.09</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>AAA-AAA-AAA-AAG</td>
+      <td>5</td>
+      <td>0.02</td>
+      <td>0.09</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>AAA-AAA-AAA-AAA</td>
+      <td>9</td>
+      <td>0.04</td>
+      <td>0.15</td>
+      <td>0.25</td>
+    </tr>
+  </tbody>
+</table>
+
+_The prevalence precise sequences encoding 2–3 consecutive lysine residues in E. coli and S. cerevisiae are displayed. The raw number of ‘occurrences’ are listed for each sequence. The enrichment values listed reflect the fraction observed/fraction expected._
+
+### Ribosomes slide on poly(A)-containing reporters in an E. coli cell-free translation system
+
+The initial in vivo observation that protein production is more severely impacted by iterated AAA than AAG codons (Figure 1) was recapitulated using the PURExpress E. coli cell-free translation system (NEB) (Figure 4A). This system contains all factors required for normal translation, but lacks cellular factors involved in the degradation of RNA or proteins that might obscure interesting effects on translation. When the mCherry reporters (described in Figure 1A) were expressed in this system, we find that iterated AAA-containing reporters produce less protein than their iterated AAG-containing counterparts (Figure 4A, lanes 3 vs 4). Additionally, we note the appearance of a truncated protein product generated from the iterated AAA-containing reporter (Figure 4A, lane 3). This band is slightly larger than the size of protein produced when a stop-codon is positioned at the insertion site (Figure 4A, lanes 2–3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig4-v2.jpg)
 
-**Figure 4.:** (A) Expression of mCherry reporters (Figure 1A) in the E. coli PURE cell-free translation system (NEB). The truncated band generated from the (AAA)12 reporter is boxed in red. The expected sizes of the full-length, STOP protein and truncated reporter are 42 kDa, 15 kDa, and 17 kDa, respectively. (B) Expression of mCherry reporters in the PURE system and subsequent treatment of peptide products with RNase A. Only the positive control (with a truncated mRNA species) yielded a peptidyl-tRNA product that shifted in mobility upon RNase A treatment. (C) Expression of mCherry reporters (Figure 1A) in the PURE in vitro translation system in the presence and absence of RFs (RFs = RF1, RF2, and RF3).DOI: http://dx.doi.org/10.7554/eLife.05534.012
+**Figure 4.:** (A) Expression of mCherry reporters (Figure 1A) in the E. coli PURE cell-free translation system (NEB). The truncated band generated from the (AAA)12 reporter is boxed in red. The expected sizes of the full-length, STOP protein and truncated reporter are 42 kDa, 15 kDa, and 17 kDa, respectively. (B) Expression of mCherry reporters in the PURE system and subsequent treatment of peptide products with RNase A. Only the positive control (with a truncated mRNA species) yielded a peptidyl-tRNA product that shifted in mobility upon RNase A treatment. (C) Expression of mCherry reporters (Figure 1A) in the PURE in vitro translation system in the presence and absence of RFs (RFs = RF1, RF2, and RF3).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** mCherry reporters (Figure 1A: no insert, AAG12, AAA12) were expressed in the PURExpress cell-free translation system lacking release factors (RFs) (light gray). RFs were added back to the reactions individually (RF1 in green, RF2 in purple), and in combination (RF1/3 in red and Rf2/3 dark gray). The plot displays the fraction of protein in the truncated band (100% × (radioactivity in truncated band)/(radioactivity in truncated + full-length bands)).DOI: http://dx.doi.org/10.7554/eLife.05534.013
+**Figure 4—figure supplement 1.:** mCherry reporters (Figure 1A: no insert, AAG12, AAA12) were expressed in the PURExpress cell-free translation system lacking release factors (RFs) (light gray). RFs were added back to the reactions individually (RF1 in green, RF2 in purple), and in combination (RF1/3 in red and Rf2/3 dark gray). The plot displays the fraction of protein in the truncated band (100% × (radioactivity in truncated band)/(radioactivity in truncated + full-length bands)).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Figure 1A) expressed in E. coli.The full-length peptide product is noted with the solid arrow, and the truncated band is highlighted with the dotted arrow. WT = no insert.DOI: http://dx.doi.org/10.7554/eLife.05534.014
+**Figure 4—figure supplement 2.:** The full-length peptide product is noted with the solid arrow, and the truncated band is highlighted with the dotted arrow. WT = no insert.
 
 To ask whether the truncated band is the typical product of a stalled ribosome, a peptidyl-tRNA, we subjected the products of our PURE reactions to RNase A treatment (Figure 4B). As a positive control, we observed that peptidyl-tRNA product generated from a non-stop mRNA (Figure 4B, lanes 9–10) does indeed change in mobility when treated with RNase A (see uppermost band resolve into smaller peptide products from this inefficiently translated mRNA). By contrast, the truncated band generated from the (AAA)12-containing reporter does not shift in mobility on a gel following RNase A treatment (Figure 4A, lanes 5–6). We closely examined our reporter sequence and found that there are several out of frame stop-codons following the (AAA)12 insert (Supplementary file 1). We next showed that the truncated band is generated by RF-mediated peptide release, likely on a canonical stop codon reached following ribosome sliding on poly(A) sequence (Figure 4A, lanes 7–8). Further experiments indicate that both RF1 and RF2 can promote release of this product and that the release reaction is independent of RF3 (Figure 4—figure supplement 1). The formation of truncated product from our (AAA)12 reporters is a signature that reports on ribosome sliding on iterated AAA sequences. We note that the truncated band is also observed when the mCherry reporter is expressed in E. coli (and a western is performed with an α-HA antibody) (Figure 4—figure supplement 2). Together, these data provide evidence that ribosome slipping on iterated AAA sequences occurs both in a fully reconstituted translation system and in E. coli.
 
-## Efficiency of ribosome sliding is dictated by consecutive A residues in the mRNA
+### Efficiency of ribosome sliding is dictated by consecutive A residues in the mRNA
 
-To determine the minimum number of consecutive lysine or adenosine residues necessary for ribosomes to robustly slide on the iterated AAA-containing reporters, we expressed reporter constructs containing 3, 6, 9 or 12 lysines (encoded by AAA) in the PURExpress
+To determine the minimum number of consecutive lysine or adenosine residues necessary for ribosomes to robustly slide on the iterated AAA-containing reporters, we expressed reporter constructs containing 3, 6, 9 or 12 lysines (encoded by AAA) in the PURExpress E. coli cell-free translation system (Figure 5). Truncated product (which we have determined to be a signature of ribosome sliding) was generated with as few as three consecutive lysines. We next asked whether the number of lysines residues or the number of consecutive adenosine nucleotides determines the extent of ribosome sliding. In this case, reporters were created containing a three lysine (K3) insert encoded by 9, 10, 11, or 13 As in a row (Figure 5). We find that an A11 repeat results in the robust formation of truncated product (Figure 5, Figure 5—figure supplement 1) while little product is seen with A9 or A10 sequences, though each sequence encodes the same number of consecutive lysines.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig5-v2.jpg)
 
-**Figure 5.:** Expression of mCherry reporters containing poly(A) inserts of various lengths in the presence (+) and absence (−) of RFs.DOI: http://dx.doi.org/10.7554/eLife.05534.015
+**Figure 5.:** Expression of mCherry reporters containing poly(A) inserts of various lengths in the presence (+) and absence (−) of RFs.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** mCherry reporters (Figure 1A: no insert, and various A stretches) were expressed in the PURExpress cell-free translation system (Figure 5). The plot reports the percent of truncated peptide product expressed relative to total peptide product for each reporter (100% × (radioactivity in truncated band)/(radioactivity in truncated + full-length bands)).DOI: http://dx.doi.org/10.7554/eLife.05534.016
+**Figure 5—figure supplement 1.:** mCherry reporters (Figure 1A: no insert, and various A stretches) were expressed in the PURExpress cell-free translation system (Figure 5). The plot reports the percent of truncated peptide product expressed relative to total peptide product for each reporter (100% × (radioactivity in truncated band)/(radioactivity in truncated + full-length bands)).
 
-## Poly(lysine) inserts that promote ribosome sliding are targeted by NMD in S. cerevisiae
+### Poly(lysine) inserts that promote ribosome sliding are targeted by NMD in S. cerevisiae
 
 In eukaryotic systems, NMD is a quality control system that recognizes mRNAs containing premature termination codons (PTC) and targets them for degradation. Upf1 is a key protein in NMD and upf1Δ cells stabilize PTC-containing transcripts. Previous studies established that when ribosomes frameshift during translation, these mRNAs are typically targeted for decay by NMD because the ribosomes generally encounter an out of frame premature termination codon (Belew et al., 2011, 2014). We proposed that if the ribosome slides on iterated AAA-containing mRNAs in yeast, as it does in the bacterial system, then iterated AAA-containing mRNAs should be targeted by NMD. We addressed this possibility by measuring the levels of (AAA)12, (AAG)12, and (AAGAAGAAA)4-containing mRNAs in two different yeast-expressed reporter systems (Figure 1A) in wild-type and upf1Δ cells.
 
-First, as a control, we measured the mRNA levels of luciferase reporters containing no insert, an engineered premature stop codon (positive control), and a stem-loop known to trigger an alternative mRNA quality control pathway, no-go decay (negative control) (
+First, as a control, we measured the mRNA levels of luciferase reporters containing no insert, an engineered premature stop codon (positive control), and a stem-loop known to trigger an alternative mRNA quality control pathway, no-go decay (negative control) (Doma and Parker, 2006). We find that the levels of mRNA for PTC and stem-loop containing reporters are lowered (PTC = 2 fold, stem-loop = 21 fold) relative to reporters with no insert in wild-type yeast cells. Moreover, as expected, the level of PTC, but not stem-loop-containing, mRNA is recovered when the reporters are expressed in upf1Δ cells (Figure 6A). When this same experiment was performed with a luciferase reporter containing an (AAA)12 sequence, we find that reporter mRNA levels are substantially reduced in wild-type cells (>50-fold down), and that these levels are partially recovered in a upf1Δ strain (Figure 6A). These results suggest that the (AAA)12-containing reporter is indeed a target of NMD in vivo.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig6-v2.jpg)
 
-**Figure 6.:** Luciferase (A) and mCherry (B) reporters (Figure 1A) were expressed in wild-type and upf1Δ S. cerevisiae, and the levels of reporter RNA were quantified by qRT-PCR. Various insertions including 12 lysines ((AAA)12, (AAG)12, (AAG2AAA)4), stem-loop, or premature termination codon (PTC) in the coding sequence are specified on the x-axes.DOI: http://dx.doi.org/10.7554/eLife.05534.017
+**Figure 6.:** Luciferase (A) and mCherry (B) reporters (Figure 1A) were expressed in wild-type and upf1Δ S. cerevisiae, and the levels of reporter RNA were quantified by qRT-PCR. Various insertions including 12 lysines ((AAA)12, (AAG)12, (AAG2AAA)4), stem-loop, or premature termination codon (PTC) in the coding sequence are specified on the x-axes.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Representative experiments measuring the amount of mCherry reporter mRNA in wild-type BY4741 (black) and upf1Δ (blue) cells as a function of time following transcriptional shut-off for reporters containing (A) (AAG)12, (B) (AAA)12, and (C) (AAG2AAA)4 inserts. (D) The measured half-lives for decay of mCherry reporter mRNA in wild-type (BY4741) and upf1Δ cells.DOI: http://dx.doi.org/10.7554/eLife.05534.018
+**Figure 6—figure supplement 1.:** Representative experiments measuring the amount of mCherry reporter mRNA in wild-type BY4741 (black) and upf1Δ (blue) cells as a function of time following transcriptional shut-off for reporters containing (A) (AAG)12, (B) (AAA)12, and (C) (AAG2AAA)4 inserts. (D) The measured half-lives for decay of mCherry reporter mRNA in wild-type (BY4741) and upf1Δ cells.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** MKA5-STOP message was translated with Lys-tRNALys present by S. cerevisiae ribosomes in a previously described yeast in vitro reconstituted system (Shoemaker, et al., 2010). The reaction was allowed to proceed for 10 min; aliquots of the reaction were quenched at various time points with KOH to hydrolyze the peptidyl-tRNA bond and allow for the visualization of discrete peptide products (right panel). After 10 min, eukaryotic release factors eRf1:eRF3 were added; time points quenched with formic acid; these lanes allow for visualization of peptides released from peptidyl-tRNA (shown in the left panel). Normally, eRF1:eRF3 should only catalyze the release of peptide products from ribosomes on stop codons. The release reaction was allowed to proceed for 5 min (left panel).DOI: http://dx.doi.org/10.7554/eLife.05534.019
+**Figure 6—figure supplement 2.:** MKA5-STOP message was translated with Lys-tRNALys present by S. cerevisiae ribosomes in a previously described yeast in vitro reconstituted system (Shoemaker, et al., 2010). The reaction was allowed to proceed for 10 min; aliquots of the reaction were quenched at various time points with KOH to hydrolyze the peptidyl-tRNA bond and allow for the visualization of discrete peptide products (right panel). After 10 min, eukaryotic release factors eRf1:eRF3 were added; time points quenched with formic acid; these lanes allow for visualization of peptides released from peptidyl-tRNA (shown in the left panel). Normally, eRF1:eRF3 should only catalyze the release of peptide products from ribosomes on stop codons. The release reaction was allowed to proceed for 5 min (left panel).
 
 To more directly compare our S. cerevisiae and E. coli results, we performed experiments instead using the related mCherry reporters (Figure 1A) with no insert, or a variety of lysine inserts ((AAG)12, (AAA)12, and (AAGAAGAAA)4). In addition to measuring the absolute levels of reporter mRNAs in wild-type and upf1Δ cells (Figure 6), we asked whether the rates of mRNA decay for these reporters are impacted in the upf1Δ knock-out background (Figure 6B and Figure 6—figure supplement 1). We chose to include a mixed AAA/AAG reporter in addition to the simpler AAA and AAG repeat reporters because this sequence is commonly used to report on the NSD phenomenon (Dimitrova et al., 2009; Chiabudini et al., 2012, 2014). Indeed, a recent study with an (AAGAAGAAA)4-containing reporter argued that a truncated product generated by such a construct resulted from an unusual release factor-dependent termination event on a sense (lysine) codon (Chiabudini et al., 2014). In an attempt to recapitulate these results, we directly looked for evidence of eRF1:eRF3-mediated termination activity on iterated lysine mRNAs in vitro using a yeast reconstituted translation system (Shoemaker et al., 2010); we see no evidence that such an event can occur (Figure 6—figure supplement 2). We propose that an alternative explanation for the published data could be that the ribosome slides out of frame on the (AAGAAGAAA)4 sequence, resulting in premature termination on a previously out-of-frame stop codon, akin to what we observe in the PURE E. coli cell-free translation system (Figure 4C). This possibility seemed particularly likely given that we observed sliding activity on a AUG-AAA-AAG-UUC-STOP sequence in our in vitro reconstituted E. coli system (Figure 3—figure supplement 1).
 
 In wild type and upf1Δ cells, we find that the level of the (AAG)12 containing reporter mRNA is unchanged relative to the mCherry reporter with no insert (Figure 6B). In contrast, the levels of (AAGAAGAAA)4 and (AAA)12 reporter mRNAs are significantly reduced compared to the control (no insert) reporter (15-fold and 30-fold, respectively). These observations are consistent with the low levels of protein expressed in vivo from these reporters relative to sequences containing no insert or (AAG)12 (Figure 1B). As with the luciferase reporters, the level of mCherry mRNA containing an (AAA)12 insert is partially recovered by the deletion of UPF1 (Figure 6B). Strikingly, when the (AAGAAGAAA)4-containing reporters are expressed in upf1Δ cells, the mRNA levels are nearly fully recovered. The mRNA half-lives for these reporters are similarly recovered in the upf1Δ cells (Figure 6—figure supplement 1). Thus both the (AAGAAGAAA)4 and (AAA)12 reporter mRNAs are targeted by NMD in yeast cells (Figure 6B). These results are consistent with a model invoking ribosome sliding followed by recognition of out-of-frame premature termination codons.
 
-## Iterated AAA codons are selected against in yeast and bacteria coding regions
+### Iterated AAA codons are selected against in yeast and bacteria coding regions
 
 We performed bioinformatic analyses of fully annotated ORFs to evaluate the codon usage in sequences of consecutive lysines found in the E. coli and S. cerevisiae transcriptomes. In both organisms, AAA codons are found more commonly than AAG codons (62% AAA vs 38% AAG in yeast, and 72% AAA vs 28% AAG in bacteria); however, consecutive AAA codons are under-represented relative to their overall codon usage (Table 1). This is highlighted by the observation that the longer the stretch of lysines, the lower the likelihood of the motif being comprised solely of AAA codons (Table 1). Such an underrepresentation of AAA codons becomes pronounced in runs of 3 or 4 lysine codons in both organisms. In E. coli, only a single AAA-AAA-AAA sequence is present, which is 50-fold less common than expected based on the frequency of AAA codons; in contrast, (AAG)3 sequences are found 3.3-fold more often than expected. In S. cerevisiae, the trends are similar; there are 2.3 and 4-fold fewer (AAA)3 and (AAA)4 sequences, respectively, than expected. Conversely, (AAG)3 and (AAG)4 sequences are threefold to fivefold more abundant than expected. These data together argue that evolution has selected against the use of long runs of A to encode sequential lysines within ORFs.
 
@@ -143,11 +468,11 @@ We performed bioinformatic analyses of fully annotated ORFs to evaluate the codo
 
 Although many of the major players in NSD have been identified, a high-resolution mechanistic understanding of how translation of poly(A) sequences triggers NSD has been missing. Here, we provide mechanistic insight into what initially happens when the ribosome encounters poly(A) sequence. First, we find that the expression of proteins containing poly(lysine) stretches is codon-dependent in both bacteria and eukaryotes, with reporters containing iterated AAA codons consistently producing less protein than those with equivalent AAG codons (Figures 1, 4). This differential protein output is not the result of imprecise RNA polymerase action (Figure 3—figure supplement 3) nor likely of disparities in the rate of adding lysine codons (Figure 2); lysines are slowly incorporated on iterated AAA and AAG codons. Instead, the codon-dependent disparity primarily stems from an unusual sliding event that occurs when ribosomes encounter consecutive AAA codons (Figures 3, 4). Our observation that ribosomes can slide in multiple frames on iterated AAA sequences provides a rationale for consecutive AAA codons being substantially under-represented in open reading frames in most genomes (see Bioinformatic discussion below, Table 1 and (unpublished data).
 
-Our biochemical data in
+Our biochemical data in E. coli lead us to propose a model (Figure 7) for what happens to the ribosome during the translation of homopolymeric A sequences. On these messages, the first lysine is added quickly (k1,obs) while subsequent lysines are added more slowly, causing the ribosome to pause. We note that the rate constants measured in the in vitro assay reflect all of the processes that can occur each time a new lysine moiety is added to the growing polypeptide chain (Lys-tRNALys binding, peptidyl-transfer, translocation, peptidyl-tRNA drop-off, 70S complex instability, etc). We suspect it to be unlikely that ribosome pausing is caused solely by dramatically large defects in peptidyl-transfer, but instead may result from ribosomes that become effectively inactivated (e.g. as a result of complex instability on homopolymeric A messages, etc). Whatever the cause for an initial ribosome pausing event on iterated AAA sequences, the ribosome can either slide or perform another round of peptide bond formation. If the ribosome slides such that another AAA codon is positioned in the A site, the next step will also be slow, while if sliding somehow positions a non-lysine codon in the A site, recovery from slow elongation may occur. In our in vitro system translating di-lysine messages, we are able to observe sliding when consecutive AAA-codons are present because we force a strong pause after MKK formation by leaving out downstream factors required for translation to proceed (Figure 3). Our data suggest that ribosome sliding on iterated AAA sequences is the major difference between the translation of poly(AAA)- and poly(AAG)-containing messages that results in substantially different protein outputs. While each sequential addition of lysine in an iterated AAG sequence may be slow, the ribosome maintains frame and ultimately is able to produce full-length protein. By contrast, with repeated AAA sequences, the ribosome can eventually escape the homopolymeric A sequence through repeated sliding events, often emerging out-of-frame from the A stretch, and thus unable to produce full-length protein.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/05534/elife-05534-fig7-v2.jpg)
 
-**Figure 7.:** In this model translation is paused following the addition of the first lysine. The ribosome can than either slide or perform another round of peptide bond formation. If an AAA codon is positioned in the A site after sliding, the next step will also be slow, while if sliding results in a non-lysine codon in the A site, recovery from slow elongation may occur.DOI: http://dx.doi.org/10.7554/eLife.05534.020
+**Figure 7.:** In this model translation is paused following the addition of the first lysine. The ribosome can than either slide or perform another round of peptide bond formation. If an AAA codon is positioned in the A site after sliding, the next step will also be slow, while if sliding results in a non-lysine codon in the A site, recovery from slow elongation may occur.
 
 Ribosome sliding on poly(A) is distinct from traditional programmed ribosomal movements such as +1 (Farabaugh and Björk, 1999; Taliaferro and Farabaugh, 2007) and −1 frame-shifts (Dinman et al., 1991; Plant et al., 2003; Caliskan et al., 2014; Chen et al., 2014; Kim et al., 2014). During a programmed frame-shifting (PRF) event, specific signals direct elongating ribosomes to shift reading frame by one base in the 5′ (−1) or 3′ (+1) direction (Dinman, 2012). −1 PRFs signals are typically characterized by a ‘slippery’ sequence (X XXY YYZ) that is modulated by the presence of a downstream secondary structure, most commonly a pseudoknot (Plant et al., 2003; Jacobs et al., 2007; Caliskan et al., 2014; Chen et al., 2014; Kim et al., 2014). The secondary structure impairs the normal movement of the ribosome during translocation, and promotes the frame-shift event in an EF-G dependent manner (Caliskan et al., 2014; Chen et al., 2014). +1 PRFs signals are more diverse than −1 PRFs, but still generally depend on a slippery sequence and a downstream element (e.g., secondary structure or rare codon) that causes the ribosome to pause (Dinman, 2012). Iterated A stretches are inherently slippery and contain a built-in translation pause (adding consecutive lysines is slow—Figure 2), however the poly(A) sequences that we have studied lack significant secondary structure downstream that might contribute to limiting unregulated ribosome sliding. As such, when ribosomes slide on iterated AAA codons, forward and backward movements may be permitted. The scale of the movements undergone during a ribosome sliding event may be more similar to those documented in translational bypassing on the gene product 60 of bacteriophage T4 which is synthesized from a discontinuous reading frame (Samatova et al., 2014). Importantly, however, in contrast to this specific concerted large-scale movement (50 nucleotides) which results in the production of a single peptide product, ribosome sliding is different in that no single outcome appears to be encoded by the event. The inability of the ribosome to translate a discrete product on homopolymeric A sequences likely explains the bioinformatic analyses demonstrating that poly(A) sequences are strongly selected against in coding sequences containing iterated lysines (Table 1). Consistent with this idea, in E. coli we find that the minimum length (11) of a homopolymeric A sequence needed to trigger ribosome sliding in the PURE cell-free translation system (Figure 5, and Figure 5—figure supplement 1) correlates with the length of lysine stretch at which homopolymeric sequences are selected against in mRNA coding regions (Table 1).
 
@@ -161,34 +486,34 @@ Even though cells rarely maintain homopolymeric A sequences in ORFs, there are s
 
 ## Materials and methods
 
-## Reporter creation
+### Reporter creation
 
 The Thrdx-HA-mCherry (Figure 1A, Supplementary file 1) no insert reporter expressed in E. coli and the PURExpress cell-free translation system was created using Gateway cloning to include the 2HA-mCherry sequence in the pBAD-DEST49 vector. The vectors containing inserts (Thrdx-HA-insert-mCherry: (AAA)12, (AAA)6, (AAG)12, (AAGAAGAAA)4, (GAA)12, TAA (STOP), (A)9-13, etc) were subsequently derived from this clone. To create the mCherry reporter expressed in yeast (Figure 1A), the Thrdx-HA-mCherry and Thrdx-HA-insert-mCherry sequences were amplified out of the pBAD-DEST49 vectors and cloned into the p-ENTR/D-TOPO vector. The vector was then reacted with lr-clonease II to move the sequences into the pYES-DEST52 plasmid. The dual luciferase reporter described in Figure 1A was based on the dual luciferase plasmid from Takacs et al. (2011). In this reporter, Renilla and Firefly luciferase are under the control of ADH and GPD promoters, respectively. We inserted sequences of interest into the N-terminus of Renilla luciferase. The single Renilla luciferase reporter described in Figure 1A was cloned into pYES2 (with a Gal promoter) using the Gateway cloning system.
 
-## In vivo protein expression and visualization
+### In vivo protein expression and visualization
 
 Thrdx-HA-mCherry and Thrdx-HA-insert-mCherry constructs were expressed in 6 ml E. coli grown in LB-Ampicillin. The cells were grown to an OD of 0.4–0.6, induced with 25 μl of 5 g/10 ml arabinose, then harvested 2 hr post-induction. In yeast, the Thrdx-HA-mCherry constructs were expressed in wild-type and upf1Δ S. cerevisiae (BY4741) grown in 5 ml of–URA/+galactose media to an OD of 0.6. The single luciferase reporters were transformed into yeast and grown in–URA/+galactose media, and harvested at an OD of 0.6. Proteins production was analyzed via fluorescence, luminescence (Figure 1) or western blot analysis (Figure 4—figure supplement 2).
 
-## Assessing lysine incorporation in fully reconstituted in vitro translation assays
+### Assessing lysine incorporation in fully reconstituted in vitro translation assays
 
 70S initiation complexes (ICs) were prepared using E. coli ribosomes programmed with various mRNAs and f-[35S]-Met-tRNAMet in the P site. mRNAs were generated by transcription with T7 polymerase and ICs were formed, pelleted, and resuspended as previously described (Youngman et al., 2004) on our messages of interest. Translation assays were initiated when equal volumes of ternary complex (10–20 μM charged tRNA, 12 μM EFG, 60 μM EfTu) were added to 0.2 nM 70S initiation complexes. Assays were performed in 219-Tris buffer (50 mM Tris pH 7.5, 70 mM NH4Cl, 30 mM KCl, 7 mM MgCl2, 5 mM βME). The limited addition of iterated lysines on a MKA5-STOP message was also observed in polymix buffer (50 mM K2HPO4 pH 7.5, 95 mM KCl, 5 mM NH4Cl, 5 mM Mg(OAc)2, 0.5 mM CaCl2, 8 mM putrescine, 1 mM spermidine, 1 mM DTT). To measure the rates of amino acid incorporation, the reactions are quenched with 500 mM KOH (final concentration) at discrete time points (0 s–30 min) either by hand or on a quench-flow apparatus. For assays including release factors for the duration of the reaction (Figure 3C), RF1 and additional GTP were added prior to the initiation of translation (final concentrations 1 μM and 200 μM, respectively). The time-points were diluted 1:10 in nuclease free water and the reactants, intermediates and products visualized by electrophoretic TLC, as previously described (Zaher and Green, 2009). The reactants, products and intermediates were visualized by phosophorimaging and quantified with ImageQuant. The kinetic fits were modeled using Mathematica (details in Figure 2—figure supplement 2).
 
-## Expression of reporters in the PURExpress in vitro translation system
+### Expression of reporters in the PURExpress in vitro translation system
 
 The Thrdx-HA-mCherry and Thrdx-HA-insert-mCherry reporters were expressed in the PURExpress in vitro translation system (NEB, Ipswitch, MA) from PCR products. The peptidyl-tRNA construct was generated by creating a truncated mRNA lacking a stop codon directly after the Thrdx-HA sequence. The PURExpress reactions were initiated by mixing 1 μl of PCR product (29–22 ng/μl), 2 μl of solution A, 1.5 μl of solution B, and 0.6 μl of 35S-methionine. The reactions were run for 45–60 min at 37°C. Following translation, the products were immediately heat-denatured and loaded on a 4–12% Bis-Tris gel at 4°C in XT-MES buffer. For the experiments in which the PURExpress reaction products were treated with RNase A (Figures 4B), 0.5–1 μg of RNase A (Ambion, Grand Island, NY) was added to each reaction and solutions were incubated on ice for an additional 30 min before being denatured and loaded on a gel. The peptide products of the PURExpress reactions were visualized by Phosphoimager and quantified with ImageQuant (Figure 3—figure supplement 2, and Figure 5—figure supplement 1).
 
-## Toeprinting assays
+### Toeprinting assays
 
 DNA templates were PCR amplified from plasmids (PCR-Blunt II-TOPO vector) encoding MEA(insert)EAEDYKDD sequences. The PURExpress cell-free transcription-translation system (NEB, Ipswich, MA) was used for in vitro protein synthesis. Reactions were run for 30 min at 37°C by mixing 0.2-pmol of DNA template, 2.5 μl of Solution A and 1 μl of Solution B along with either 0.5 μl of DMSO (5%) or thiostrepton (0.5 mm in 5% DMSO). 1 pmol of 32PATP-labeled NV1 primer was added, and reverse transcription was performed with AMV as previously described (Vazquez-Laslop et al., 2008; Tanner et al., 2009). Reactions were phenol and chloroform extracted, ethanol precipitated and visualized on a 6% denaturing PAGE gel. Sequencing lanes were generated from plasmids using the Sequenase 2.0 DNA sequencing kit (Affymetrix, Santa Clara, CA). All bands were visualized by PhosphorImager.
 
-## Real-time quantitative reverse transcription PCR (qRT PCR) to measure reporter mRNA levels
+### Real-time quantitative reverse transcription PCR (qRT PCR) to measure reporter mRNA levels
 
 Reporter mRNA levels were quantified by qRT-PCR using the iQ5 iCycler system (Bio-Rad, Hercules, CA) and iQ SYBR Green Supermix (Bio-Rad, Hercules, CA).
 
-## Measuring mRNA decay
+### Measuring mRNA decay
 
 To measure the rate of mRNA decay in yeast for our mCherry reporters, we grew wild-type and upf1Δ cells expressing reporters in–ura/galactose media at 30°C to an OD600 of 0.4. Cells were washed three times with–ura media lacking sugar, then re-suspended in -ura/glucose media; the transcription of the reporter is shut-off by glucose. Samples were collected at discrete time points (0–90 min), and mRNA levels were analyzed by qRT PCR.
 
-## Bioinformatic analyses
+### Bioinformatic analyses
 
 E. coli K-12 substrain MG1655 complete genome, 4140 ORFs (data source: GenBank:U00096.3; http://www.ncbi.nlm.nih.gov/nuccore/U00096.3) and S. cerevisiae 5887 verified ORFs (data source: http://downloads.yeastgenome.org/sequence/S288C_reference/orf_protein/) have been used for extraction of lysine codon numbers and analyses of consecutive codons shown in Table 1. Expected values for consecutive variants of lysine AAA and AAG codons were calculated based on observed values for a single AAA and AAG codons and their probabilities to be found in such arrangments. Observed values were calculated based on data from genomic distribution and total numbers of variants for two, three or four consecutive lys codons, respectively.

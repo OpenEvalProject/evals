@@ -12,7 +12,7 @@
 
 ## Abstract
 
-10.7554/eLife.17210.001 This is an analysis of how magnetic fields affect biological molecules and cells. It was prompted by a series of prominent reports regarding magnetism in biological systems. The first claims to have identified a protein complex that acts like a compass needle to guide magnetic orientation in animals ( Qin et al., 2016 ). Two other articles report magnetic control of membrane conductance by attaching ferritin to an ion channel protein and then tugging the ferritin or heating it with a magnetic field ( Stanley et al., 2015 ; Wheeler et al., 2016 ). Here I argue that these claims conflict with basic laws of physics. The discrepancies are large: from 5 to 10 log units. If the reported phenomena do in fact occur, they must have causes entirely different from the ones proposed by the authors. The paramagnetic nature of protein complexes is found to seriously limit their utility for engineering magnetically sensitive cells. DOI: http://dx.doi.org/10.7554/eLife.17210.001
+This is an analysis of how magnetic fields affect biological molecules and cells. It was prompted by a series of prominent reports regarding magnetism in biological systems. The first claims to have identified a protein complex that acts like a compass needle to guide magnetic orientation in animals (Qin et al., 2016). Two other articles report magnetic control of membrane conductance by attaching ferritin to an ion channel protein and then tugging the ferritin or heating it with a magnetic field (Stanley et al., 2015; Wheeler et al., 2016). Here I argue that these claims conflict with basic laws of physics. The discrepancies are large: from 5 to 10 log units. If the reported phenomena do in fact occur, they must have causes entirely different from the ones proposed by the authors. The paramagnetic nature of protein complexes is found to seriously limit their utility for engineering magnetically sensitive cells.
 
 ## Introduction
 
@@ -22,7 +22,7 @@ The physical laws by which magnetic fields act on matter are taught to science s
 
 ## Results
 
-## A molecular biocompass?
+### A molecular biocompass?
 
 Generally speaking, magnetic fields interact only weakly with biological matter. The reason magnetic fields are used for whole-body medical imaging, and why they have such appeal for magnetogenetics, is that they penetrate through tissues essentially undisturbed. The other side of this coin is that evolution had to develop rather special mechanisms to sense a magnetic field at all, especially one as weak as the Earth’s field.
 
@@ -30,83 +30,147 @@ This mechanism is well understood in just one case: that of magnetotactic bacter
 
 On this background, a recent article by Qin et al. (2016) introduces a new proposal. As for magnetotactic bacteria, the principle is that of a compass needle that aligns with the magnetic field, but here the needle consists of a single macromolecule. This putative magnetic receptor protein was isolated from the fruit fly and forms a rod-shaped multimeric complex that includes 40 iron atoms. The authors imaged individual complexes by electron microscopy on a sample grid. They claim (1) that each such rod has an intrinsic magnetic moment, and (2) that this moment is large enough to align the rods with the earth’s magnetic field: “about 45% of the isolated rod-like protein particles oriented with their long axis roughly parallel to the geomagnetic field”. We will see that neither claim is plausible based on first principles:
 
-## Could the protein complex have a permanent dipole moment?
+#### Could the protein complex have a permanent dipole moment?
 
 The smallest iron particles known to have a permanent magnetic moment at room temperature are single-domain crystals of magnetite (Fe3O4), about 30 nm in size (Dunlop, 1972). Those contain about 1 million iron atoms, closely packed to produce high exchange interaction, which serves to coordinate their individual magnetic moments (Feynman et al., 1963; Ch 37). The protein complex described by Qin et al. (2016) contains only 40 Fe atoms, and those are spread out over a generous 24 nm. There is no known mechanism by which these would form a magnetic domain and thus give the complex a permanent magnetic moment. Despite intense interest in making single-molecule magnets, their blocking temperature – above which the magnetic moment fluctuates thermally – is still below 14 degrees Kelvin (Demir et al., 2015). So the amount of iron in this putative molecular compass seems too small by about 5 log units.
 
-## Could individual complexes align with the earth's field?
+#### Could individual complexes align with the earth's field?
 
 Let us suppose generously that the 40 Fe atoms could in fact conspire – by a mechanism unknown to science – to align their individual spins perfectly, and to make a single molecule with a permanent magnetic moment at room temperature. How well would this miniature compass needle align with the earth’s magnetic field? This is a competition between the magnetic force that aligns the particle and thermal forces that randomize its orientation. What is that balance?
 
-An atom with n unpaired electrons has an effective magnetic moment of(1)μeff=n(n+2)μB,
+An atom with n unpaired electrons has an effective magnetic moment of
 
-where (In the spirit of order-of-magnitude calculations, I will use single-digit precision for all quantities)(2)μB=Bohrmagneton=9×10−24JT,
+$$
+\mu_{eff}=\sqrt{n(n+2)}\mu_{B},
+$$
 
-For iron atoms, n is at most 5, and a complex of 40 aligned Fe atoms would therefore have a magnetic moment of at best(3)m=40×5(5+2)μB=2×10−21JT.
+where (In the spirit of order-of-magnitude calculations, I will use single-digit precision for all quantities)
 
-The interaction energy of that moment with the earth's field (about 50 µT) is at most(4)m BEarth=1×10−25J.
+$$
+\mu_{B}=Bohrmagneton=9\times10^{−24}\frac{J}{T},
+$$
 
-Meanwhile the thermal energy per degree of freedom is(5)k T=4×10−21J.
+For iron atoms, n is at most 5, and a complex of 40 aligned Fe atoms would therefore have a magnetic moment of at best
 
-The ratio between those is(6)m BEarthk T=2×10−5.
+$$
+m=40\times\sqrt{5(5+2)}\mu_{B}=2\times10^{−21}\frac{J}{T}.
+$$
+
+The interaction energy of that moment with the earth's field (about 50 µT) is at most
+
+$$
+m B_{Earth}=1\times10^{−25}J.
+$$
+
+Meanwhile the thermal energy per degree of freedom is
+
+$$
+k T=4\times10^{−21}J.
+$$
+
+The ratio between those is
+
+$$
+\frac{m B_{Earth}}{k T}=2\times10^{−5}.
+$$
 
 That is the degree of alignment one would expect for the protein complex. Instead, the authors claim an alignment of 0.45. Again, this claim exceeds by about 5 log units the prediction from basic physics, even allowing for an unexplained coordination of the 40 Fe spins. Clearly the reported observations must arise from some entirely different cause, probably unrelated to magnetic fields.
 
-## An ion channel gated by magnetic force?
+### An ion channel gated by magnetic force?
 
 With the goal of controlling the activity of neurons, Wheeler et al. (2016) reported the design of a molecular system intended to couple magnetic fields to ionic current across the cell membrane. Their single-component protein consists of a putative mechano-sensitive cation channel (TRPV4) fused on the intracellular face to two subunits of ferritin. The hope was that “the paramagnetic protein would enable magnetic torque to tug open the channel to depolarize cells”. Indeed, the report includes experimental results from several preparations suggesting that neural activity can be modulated by static magnetic fields (There is a similar claim in Stanley et al. (2015); but the evidence is scant and hard to interpret: only 18 of ~2000 cells 'responded' (their Supplementary Figure 10)). What could be the underlying biophysical mechanism?
 
-Ferritin is a large protein complex with 24 subunits that forms a spherical shell about 12 nm in diameter. Wheeler et al. (2016) suppose optimistically that the two subunits of ferritin attached to the channel protein are able to nucleate an entire 24-subunit ferritin complex. The hollow core of this particle can be filled with iron in the form of a ferric hydroxide (Arosio et al., 2009). At room temperature ferritin has no permanent magnetization: it is strictly paramagnetic or superparamagnetic (Papaefthymiou, 2010). Unlike the magnetite particles in magnetotactic bacteria, the iron core of ferritin is too small (~5 nm) to sustain a permanent dipole moment (blocking temperature ~40 K). Instead the direction of the Fe spins in the core fluctuates thermally. An external magnetic field biases these fluctuations, producing a magnetic moment m proportional to the field B of(7)m= ξB,
+Ferritin is a large protein complex with 24 subunits that forms a spherical shell about 12 nm in diameter. Wheeler et al. (2016) suppose optimistically that the two subunits of ferritin attached to the channel protein are able to nucleate an entire 24-subunit ferritin complex. The hollow core of this particle can be filled with iron in the form of a ferric hydroxide (Arosio et al., 2009). At room temperature ferritin has no permanent magnetization: it is strictly paramagnetic or superparamagnetic (Papaefthymiou, 2010). Unlike the magnetite particles in magnetotactic bacteria, the iron core of ferritin is too small (~5 nm) to sustain a permanent dipole moment (blocking temperature ~40 K). Instead the direction of the Fe spins in the core fluctuates thermally. An external magnetic field biases these fluctuations, producing a magnetic moment $m$ proportional to the field $B$ of
 
-where ξ is the magnetizability of a ferritin particle. This quantity can be derived from bulk measurements of ferritin magnetic susceptibility (see Methods) at(8)ξ=2.4×10−22JT2.
+$$
+m= ξB,
+$$
+
+where $ξ$ is the magnetizability of a ferritin particle. This quantity can be derived from bulk measurements of ferritin magnetic susceptibility (see Methods) at
+
+$$
+ξ=2.4\times10^{−22}\frac{J}{T^{2}}.
+$$
 
 I will consider four scenarios by which such a ferritin particle might be manipulated with an external magnetic field. In the first, the magnetic field has a gradient, and the particle is pulled in the direction of higher field strength. In the second, the force arises from interactions among neighboring ferritins through their induced magnetic moments. In the third, the magnetic field exerts a torque assuming that the ferritin core is anisotropic, with a preferred axis of magnetization. Finally, the collective pull of many ferritins on the cell membrane may induce a stress that opens stretch-activated channels.
 
-## A magnetic field gradient pulls on ferritin (Figure 1a)
+#### A magnetic field gradient pulls on ferritin (Figure 1a)
 
-Paramagnetic particles experience a force that is proportional to the magnetic field gradient and the induced magnetic moment (
+Paramagnetic particles experience a force that is proportional to the magnetic field gradient and the induced magnetic moment (Feynman et al., 1963; Ch 35; Pankhurst et al., 2003). In the experiments of Wheeler et al. (2016) the field strength was ~0.05 T and the field gradient ~6.6 T/m (their Supplementary Figure 2). What is the resulting force on a ferritin particle?
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17210/elife-17210-fig1-v3.jpg)
 
-**Figure 1.:** The magnetic field  induces a moment B in the ferritin core, leading to a force m or a torque F on the ferritin particle, and resulting forces tugging on the channel. See text for details.NDOI: http://dx.doi.org/10.7554/eLife.17210.003
+**Figure 1.:** The magnetic field B induces a moment m in the ferritin core, leading to a force F or a torque N on the ferritin particle, and resulting forces tugging on the channel. See text for details.
 
-The interaction energy between the moment and the magnetic field is(9)U=−12mB,
+The interaction energy between the moment and the magnetic field is
 
-where the factor of 1/2 arises because the moment m is in turn induced by the field (Jackson, 1998; Ch 5.16). The force produced by the field gradient is the spatial derivative of that energy, namely(10)F1=−ddxU=ξ BdBdx=2×10−22×0.05×7N=7×10−23N.
+$$
+U=−\frac{1}{2}mB,
+$$
+
+where the factor of $1/2$ arises because the moment $m$ is in turn induced by the field (Jackson, 1998; Ch 5.16). The force produced by the field gradient is the spatial derivative of that energy, namely
+
+$$
+F_{1}=−\frac{d}{dx}U=ξ B\frac{dB}{dx}=2\times10^{−22}\times0.05\times7N=7\times10^{−23}N.
+$$
 
 This would be the force exerted by one ferritin complex on its linkage under the reported experimental conditions.
 
-How does this compare to the force needed to open an ion channel? That has been measured directly for the force-sensitive channels in auditory hair cells (Howard and Hudspeth, 1988), and amounts to about 2×10−13N. So this mechanism for pulling on ferritin seems at least 9 log units too weak to provide an explanation.
+How does this compare to the force needed to open an ion channel? That has been measured directly for the force-sensitive channels in auditory hair cells (Howard and Hudspeth, 1988), and amounts to about $2\times10^{−13}N$. So this mechanism for pulling on ferritin seems at least 9 log units too weak to provide an explanation.
 
-## Two ferritins pull on each other (Figure 1b)
+#### Two ferritins pull on each other (Figure 1b)
 
-As proposed by Davila et al. (2003), neighboring paramagnetic particles linked to the cell membrane could tug on each other by the interaction between their magnetic moments, rather than by each being drawn into a magnetic field gradient. If the field is oriented parallel to the cell membrane, then nearby ferritins will have induced magnetic moments that are collinear and thus attract each other. If the field is perpendicular to the membrane their magnetic moments will repel (Figure 1b). These dipole-dipole interactions decline very rapidly with distance. For example, in the attractive configuration the force between two dipoles of equal magnetic moment m at distance d is given by(11)F=3μ02π m2d4,
+As proposed by Davila et al. (2003), neighboring paramagnetic particles linked to the cell membrane could tug on each other by the interaction between their magnetic moments, rather than by each being drawn into a magnetic field gradient. If the field is oriented parallel to the cell membrane, then nearby ferritins will have induced magnetic moments that are collinear and thus attract each other. If the field is perpendicular to the membrane their magnetic moments will repel (Figure 1b). These dipole-dipole interactions decline very rapidly with distance. For example, in the attractive configuration the force between two dipoles of equal magnetic moment $m$ at distance $d$ is given by
 
-where(12)μ0=4π×10−7 NA2
+$$
+F=\frac{3\mu_{0}}{2\pi} \frac{m^{2}}{d^{4}},
+$$
 
-is the vacuum permeability. The strongest interaction will be between two ferritins that are nearly touching, so that d=2R=12nm. In that situation one estimates that(13)F2=3μ02π (ξ B)2(2R)4=3×10−21N.
+where
+
+$$
+\mu_{0}=4\pi\times10^{−7} \frac{N}{A^{2}}
+$$
+
+is the vacuum permeability. The strongest interaction will be between two ferritins that are nearly touching, so that $d=2R=12nm$. In that situation one estimates that
+
+$$
+F_{2}=\frac{3\mu_{0}}{2\pi} \frac{(ξ B)^{2}}{(2R)^{4}}=3\times10^{−21}N.
+$$
 
 Unfortunately we are again left with an exceedingly tiny force, about 8 log units weaker than the gating force of the hair cell channel.
 
-What if the mechano-sensitive channel used in this study is simply much more sensitive to tiny forces than the channel in auditory hair cells? An absolute limit to sensitivity is given by thermal fluctuations. Whatever molecular linkage the ferritin is pulling on, it needs to provide at least kT of energy to that degree of freedom to make any difference over thermal motions. Because of the steep distance dependence, the force between ferritins drops dramatically if they move just one radius apart. The free energy gained by that motion compared to the thermal energy is approximately(14)F2Rk T=3×10−21×6×10−94×10−21=4×10−9,
+What if the mechano-sensitive channel used in this study is simply much more sensitive to tiny forces than the channel in auditory hair cells? An absolute limit to sensitivity is given by thermal fluctuations. Whatever molecular linkage the ferritin is pulling on, it needs to provide at least kT of energy to that degree of freedom to make any difference over thermal motions. Because of the steep distance dependence, the force between ferritins drops dramatically if they move just one radius apart. The free energy gained by that motion compared to the thermal energy is approximately
+
+$$
+\frac{F_{2}R}{k T}=\frac{3\times10^{−21}\times6\times10^{−9}}{4\times10^{−21}}=4\times10^{−9},
+$$
 
 again 8 log units too small to have any noticeable effect.
 
-## The magnetic field exerts a torque on the ferritin (Figure 1c)
+#### The magnetic field exerts a torque on the ferritin (Figure 1c)
 
-Although at room temperature ferritin has no permanent magnetic moment, its induced moment may exhibit some anisotropy. In general this means that the iron core is more easily magnetized in the 'easy' direction than orthogonal to it. For example, this may result from an asymmetric shape of the core. While the exact value of that anisotropy is unknown, we can generously suppose it to be infinite, so the ferritin particle has magnetizability ξ in one direction and zero in the orthogonal directions. Thus the induced magnetic moment may point at an angle relative to the field (Figure 1c), resulting in a torque on the ferritin particle that could tug on the linkage with the channel protein.
+Although at room temperature ferritin has no permanent magnetic moment, its induced moment may exhibit some anisotropy. In general this means that the iron core is more easily magnetized in the 'easy' direction than orthogonal to it. For example, this may result from an asymmetric shape of the core. While the exact value of that anisotropy is unknown, we can generously suppose it to be infinite, so the ferritin particle has magnetizability $ξ$ in one direction and zero in the orthogonal directions. Thus the induced magnetic moment may point at an angle relative to the field (Figure 1c), resulting in a torque on the ferritin particle that could tug on the linkage with the channel protein.
 
-However, the magnitude of such effects is again dwarfed by thermal fluctuations: The interaction energy between the moment and a magnetic field pointing along the easy axis is(15)U∥=−12mB=−12ξ B2=−3×10−25J
+However, the magnitude of such effects is again dwarfed by thermal fluctuations: The interaction energy between the moment and a magnetic field pointing along the easy axis is
+
+$$
+U_{∥}=−\frac{1}{2}mB=−\frac{1}{2}ξ B^{2}=−3\times10^{−25}J
+$$
 
 and zero with the field orthogonal. This free energy difference is about 4 log units smaller than the thermal energy. Following the same logic as for Qin et al’s compass needle, the magnetic field can bias the alignment of the ferritins by only an amount of 10–4. Another way to express this is that any torque exerted by the ferritin on its ion channel linkage will be 10,000 times smaller than the thermal fluctuations in that same degree of freedom.
 
-## Many ferritins exert a stress that gates mechanoreceptors in the membrane (Figure 1d)
+#### Many ferritins exert a stress that gates mechanoreceptors in the membrane (Figure 1d)
 
-Perhaps the magnetic responses are unrelated to the specific linkage between ferritin and a channel protein. Instead one could imagine that a large number of ferritins exert a collective tug on the cell membrane, deforming it and opening some stress-activated channels in the process. The membrane stress required to gate mechanoreceptors has been measured directly by producing a laminar water flow over the surface of a cell: For TRPV4 channels it amounts to ~20 dyne/cm2 (Soffe et al., 2015); for Piezo1 channels ~50 dyne/cm2 (Ranade et al., 2014). Suppose now that the membrane is decorated with ferritins attached by some linkage, and instead of viscous flow tugging on the surface one applies a magnetic field gradient to pull on those ferritins with force F1 (Equation 10). The density of ferritins one would need to generate the required membrane stress is(16)20dyn/cm27×10−23N=3×1010ferritinsμm2
+Perhaps the magnetic responses are unrelated to the specific linkage between ferritin and a channel protein. Instead one could imagine that a large number of ferritins exert a collective tug on the cell membrane, deforming it and opening some stress-activated channels in the process. The membrane stress required to gate mechanoreceptors has been measured directly by producing a laminar water flow over the surface of a cell: For TRPV4 channels it amounts to ~20 dyne/cm2 (Soffe et al., 2015); for Piezo1 channels ~50 dyne/cm2 (Ranade et al., 2014). Suppose now that the membrane is decorated with ferritins attached by some linkage, and instead of viscous flow tugging on the surface one applies a magnetic field gradient to pull on those ferritins with force $F_{1}$ (Equation 10). The density of ferritins one would need to generate the required membrane stress is
 
-Unfortunately, even if the membrane is close-packed with ferritin spheres, one could fit at most 104 on a square micron. So this hypothetical mechanism produces membrane stress at least 6 log units too weak to open any channels.
+$$
+\frac{20dyn/cm^{2}}{7\times10^{−23}N}=3\times10^{10}\frac{ferritins}{\mum^{2}}
+$$
 
-## An ion channel gated by magnetic heating?
+Unfortunately, even if the membrane is close-packed with ferritin spheres, one could fit at most $10^{4}$ on a square micron. So this hypothetical mechanism produces membrane stress at least 6 log units too weak to open any channels.
+
+### An ion channel gated by magnetic heating?
 
 For a different mode of activating membrane channels, Stanley et al. (2015) combined the expression of ferritin protein with that of the temperature-sensitive membrane channel TRPV1. The hope was that a high-frequency magnetic field could be used to heat the iron core of ferritin, leading to a local temperature increase sufficient to open the TRPV1 channels, allowing cations to flow into the cell. Stanley et al. (2015) compared three different options for interaction between the ion channels in the plasma membrane and the ferritin protein: In one case the ferritin was expressed in the cytoplasm, in another it was targeted to the membrane by a myristoyl tail, and in the third it was tethered directly to the channel protein by a camelid antibody linkage. The direct one-to-one linkage between ferritin and ion channel worked best for generating Ca influx via high-frequency magnetic fields, leading the authors to conclude that “Because temperature decays as the inverse distance from the particle surface, heat transfer is likely to be most efficient for this construct, suggesting that heat transfer from the particle could be limiting the efficiency of the other constructs.” Here I consider whether heat transfer from the ferritin particle is a likely source of thermal activation for the TRPV1 channel at all.
 
@@ -116,39 +180,75 @@ Owing to the small size of the nanoparticles, the physics of heating are quite d
 
 Given the long-standing interest in ferritin for medical engineering (Babincova et al., 2000), the extensive research on its magnetic properties (Papaefthymiou, 2010), and the ease with which magnetic heating can be measured, it is surprisingly difficult to find any published evidence for magnetic heating in ferritin. One report on the subject concludes simply that there is none: ferritin shells reconstituted with a magnetite core produced no measurable magnetic heating (SLP < 0.1 W/g), whereas doping the iron with varying amounts of cobalt did produce some modest heating rates (Fantechi et al., 2014). Why is native ferritin such a poor heater? Both theory and experiment show that the efficiency of heating magnetic nanoparticles depends strongly on the particle size, and plummets steeply below 10 nm (Fortin et al., 2007; Purushotham and Ramanujan, 2010). Magnetite particles smaller than 8 nm are not considered useful for magnetic hyperthermia (Fantechi et al., 2015). The iron core of ferritin measures only 5–6 nm in diameter. Furthermore, the ferric hydroxide material in native ferritin has much lower magnetic susceptibility than magnetite (~8-fold, Zborowski et al., 1996).
 
-So, based on the literature, the heating rate for ferritin is too low to be measurable. Obviously this casts doubt on the claims of Stanley et al. (2015) that they activated ion channels through heating ferritin. For the sake of keeping the argument alive, and to evaluate potential future developments, let us instead suppose that ferritin could be engineered to produce a specific heating rate of(17)P=30Wg of metal
+So, based on the literature, the heating rate for ferritin is too low to be measurable. Obviously this casts doubt on the claims of Stanley et al. (2015) that they activated ion channels through heating ferritin. For the sake of keeping the argument alive, and to evaluate potential future developments, let us instead suppose that ferritin could be engineered to produce a specific heating rate of
 
-This is the highest value obtained by filling the ferritin shell with cobalt-doped magnetite (Fantechi et al., 2014) and thus a generous estimate of what might be accomplished by future engineering of ferritin complexes inside cells. Assuming this specific heating rate, a single ferritin particle with 2400 iron atoms generates heat at a rate of(18)Q=7×10−18W
+$$
+P=30\frac{W}{g of metal}
+$$
 
-This heat flux will produce a temperature gradient in the surrounding medium (Figure 2). As Stanley et al. (2015) state, the temperature indeed decays as the inverse distance r from the particle (Feynman et al., 1963, Ch 12), namely(19)T(r)=Q4πκ1r
+This is the highest value obtained by filling the ferritin shell with cobalt-doped magnetite (Fantechi et al., 2014) and thus a generous estimate of what might be accomplished by future engineering of ferritin complexes inside cells. Assuming this specific heating rate, a single ferritin particle with 2400 iron atoms generates heat at a rate of
 
-where(20)κ=0.61 Wm⋅K
+$$
+Q=7\times10^{−18}W
+$$
 
-is the thermal conductivity of water. Right at the surface of the ferritin sphere the temperature increase is highest, namely(21)Tferritin=T(6 nm)=1.5×10−10K
+This heat flux will produce a temperature gradient in the surrounding medium (Figure 2). As Stanley et al. (2015) state, the temperature indeed decays as the inverse distance $r$ from the particle (Feynman et al., 1963, Ch 12), namely
 
-This is a very tiny increase. Activation of a TRPV1 channel requires about 5 K of increase relative to body temperature (
+$$
+T(r)=\frac{Q}{4\piκ}\frac{1}{r}
+$$
+
+where
+
+$$
+κ=0.61 \frac{W}{m⋅K}
+$$
+
+is the thermal conductivity of water. Right at the surface of the ferritin sphere the temperature increase is highest, namely
+
+$$
+T_{ferritin}=T(6 nm)=1.5\times10^{−10}K
+$$
+
+This is a very tiny increase. Activation of a TRPV1 channel requires about 5 K of increase relative to body temperature (Cao et al., 2013). So the temperature increase expected, even from a futuristic optimized ferritin, is more than 10 orders of magnitude too small.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17210/elife-17210-fig2-v3.jpg)
 
-**Figure 2.:** The same argument applies to a ferritin sphere heated from its magnetic core (top) and a spherical cell with a large number of heated ferritins on its surface (bottom).DOI: http://dx.doi.org/10.7554/eLife.17210.004
+**Figure 2.:** The same argument applies to a ferritin sphere heated from its magnetic core (top) and a spherical cell with a large number of heated ferritins on its surface (bottom).
 
 The assumption underlying Equation (19) is that thermal transport from the magnetic particle to the surrounding medium follows Fourier’s Law, in which the heat flux is proportional to the temperature gradient. This is a good approximation, as long as the length scales of the problem are large compared to the mean free path of the heat carriers, which are phonons in the current problem. In water, the phonon mean free path is ~0.3 nm, about the size of a water molecule (Rabin, 2002). Indeed, all the relevant dimensions are at least 10-fold larger than that, namely the size of the ferritin particle, the size of the ion channel protein, and the distance from ferritin to ion channel. One therefore expects that non-Fourier heat transport will make only small corrections to the above results, on the order of 10% or less (Chen, 1996).
 
-Another effect resulting from thermal physics at small scales is the thermal resistance to heat flow at the boundary between two materials. A given heat flux across the boundary will produce a discontinuous step in temperature between the two materials. How large is this step for heated nanoparticles? Ge et al. (2004) followed thermal transfer between a metal nanoparticle with organic coating and the surrounding water, and observed a thermal conductance of(22)G=2×108Wm2⋅K,
+Another effect resulting from thermal physics at small scales is the thermal resistance to heat flow at the boundary between two materials. A given heat flux across the boundary will produce a discontinuous step in temperature between the two materials. How large is this step for heated nanoparticles? Ge et al. (2004) followed thermal transfer between a metal nanoparticle with organic coating and the surrounding water, and observed a thermal conductance of
 
-largely independent of particle size. With the heat flux produced by our ferritin particle the resulting temperature step would be(23)ΔTferritin=Q4πR21G=7×10−11K.
+$$
+G=2\times10^{8}\frac{W}{m^{2}⋅K},
+$$
+
+largely independent of particle size. With the heat flux produced by our ferritin particle the resulting temperature step would be
+
+$$
+ΔT_{ferritin}=\frac{Q}{4\piR^{2}}\frac{1}{G}=7\times10^{−11}K.
+$$
 
 Again, an exceedingly tiny contribution.
 
 It appears that there is no possibility of raising the temperature by several degrees near a single nanoparticle, even if the heating rate were 1000-fold higher. While there have been isolated reports of such magnetic heating effects near synthetic nanoparticles (Huang et al., 2010; Riedinger et al., 2013; Piñol et al., 2015), they have met a good amount of skepticism. As has been pointed out repeatedly, there is no known physical mechanism for such an effect (Rabin, 2002; Keblinski et al., 2006; Gupta et al., 2010), and it has been suggested that the underlying methods of thermometry should be reevaluated (Dutz and Hergt, 2013; 2014).
 
-Moving on from single-particle heating one may ask whether the many other ferritins expressed on the same cell, though they are at greater distance, might contribute to heating the local environment. Suppose one can express Nferritins=10,000 TRPV1-ferritin complexes on the surface of a spherical cell with rcell=5μm radius. That is about 10-fold the natural expression level in sensory neurons. One can treat the heat production of those 10,000 ferritins as distributed evenly over the surface of the cell. Then the temperature gradient outside the cell again follows a 1/r profile (Figure 2). At the surface of the cell the resulting temperature increase will be(24)Tcell=Q Nferritins4π κ rcell=1.7×10−9K
+Moving on from single-particle heating one may ask whether the many other ferritins expressed on the same cell, though they are at greater distance, might contribute to heating the local environment. Suppose one can express $N_{ferritins}=10,000$ TRPV1-ferritin complexes on the surface of a spherical cell with $r_{cell}=5\mum$ radius. That is about 10-fold the natural expression level in sensory neurons. One can treat the heat production of those 10,000 ferritins as distributed evenly over the surface of the cell. Then the temperature gradient outside the cell again follows a 1/r profile (Figure 2). At the surface of the cell the resulting temperature increase will be
+
+$$
+T_{cell}=\frac{Q N_{ferritins}}{4\pi κ r_{cell}}=1.7\times10^{−9}K
+$$
 
 Unfortunately this is still too low by 9 orders of magnitude. So one cannot achieve activation of single neurons this way, which is of course a central goal of genetically expressed activators.
 
-Suppose now that one expresses this number of ferritin-TRPV1 complexes on every neuron in the brain. Would that perhaps be sufficient to heat the entire organ? At that density, the heating rate per unit mass of brain will be(25)Pbrain=Q Nferritins43π  rcell31ρbrain=1.2×10−4Wg,
+Suppose now that one expresses this number of ferritin-TRPV1 complexes on every neuron in the brain. Would that perhaps be sufficient to heat the entire organ? At that density, the heating rate per unit mass of brain will be
 
-where ρbrain=1.03 g/cm3 is the specific density. For comparison, the resting metabolic rate of brain tissue is ~1.2×10−2 W/g, and the resulting heat is carried away and regulated by the processes that keep the organ’s temperature stable. Heating of ferritin throughout the entire brain would therefore contribute only a 1% increase to the heat already being generated from basal activity: this will not overwhelm the homothermic regulation mechanisms sufficiently to open TRPV1 channels.
+$$
+P_{brain}=\frac{Q N_{ferritins}}{\frac{4}{3}\pi  r_{cell}^{3}}\frac{1}{ρ_{brain}}=1.2\times10^{−4}\frac{W}{g},
+$$
+
+where $ρ_{brain}=1.03 g/cm^{3}$ is the specific density. For comparison, the resting metabolic rate of brain tissue is ~$1.2\times10^{−2} W/g$, and the resulting heat is carried away and regulated by the processes that keep the organ’s temperature stable. Heating of ferritin throughout the entire brain would therefore contribute only a 1% increase to the heat already being generated from basal activity: this will not overwhelm the homothermic regulation mechanisms sufficiently to open TRPV1 channels.
 
 In summary, it seems very unlikely that the effects reported in Stanley et al. (2015) have anything to do with heating ferritin. The available evidence says that native ferritin produces no measurable magnetic heating at all. Even if we ignore that and assume a generous heating rate, namely the largest reported using a custom metal alloy for the ferritin core, the resulting effects are too small to matter by enormous factors of 1010 (single-channel activation) and 109 (for single-neuron activation).
 
@@ -168,18 +268,125 @@ With an eye towards such future developments, it is unfortunate that these three
 
 ## Materials and methods
 
-## Magnetizability of native ferritin
+### Magnetizability of native ferritin
 
-Central to the arguments about magnetogenetics is the proportionality factor ξ between the magnetic moment m of a single ferritin molecule and the magnetic field B,(26)m= ξB.
+Central to the arguments about magnetogenetics is the proportionality factor $ξ$ between the magnetic moment $m$ of a single ferritin molecule and the magnetic field $B$,
 
-Experimental measurements are usually performed on bulk samples of ferritin and report the magnetic susceptibility χ, defined by(27)M= χH=χB/μ0,
+$$
+m= ξB.
+$$
 
-where M is the magnetization of the material, namely the magnetic moment per unit volume, and(28)μ0=4π×10−7NA2
+Experimental measurements are usually performed on bulk samples of ferritin and report the magnetic susceptibility $χ$, defined by
 
-is the vacuum permeability. Therefore(29)ξ=χρμ0,
+$$
+M= χH=χB/\mu_{0},
+$$
 
-where ρ is the number of ferritin particles per unit volume. In practice, we will see that the reported measurements of magnetization are more often normalized by the iron content of the sample or by the mass, rather than by volume. Then the choice of ρ must be adjusted accordingly.
+where $M$ is the magnetization of the material, namely the magnetic moment per unit volume, and
 
-## Magnetic heating of nanoparticles
+$$
+\mu_{0}=4\pi\times10^{−7}\frac{N}{A^{2}}
+$$
 
-Table 1 summarizes some published measurements on magnetic heating of small nanoparticles with diameter below 10 nm. The loss power per unit mass (SLP) depends on the apparatus used for heating. Over the range of conditions considered here, a good approximation is that SLP varies proportionally to the frequency of the alternating magnetic field and to the square of the field strength (Hergt et al., 2004). The table therefore corrects all the SLP numbers to the conditions used by Stanley et al. (2015): field strength H=B/μ0=25.5kA/m and frequency f=465kHz.10.7554/eLife.17210.005Table 1.Published measurements of specific loss power (SLP) for various magnetic particles of diameter d, taken at a magnetic field strength H and frequency f. The values in the column “SLP corr” are corrected for the field and frequency used by Stanley et al. (2015).DOI: http://dx.doi.org/10.7554/eLife.17210.005ReferenceMateriald [nm]H [kA/m]f [kHz]SLP [W/g]SLP corr [W/g]NotesFortin et al. (2007)Fe2O35.324.870042.8Fortin et al. (2007)Fe2O36.724.87001410Fortin et al. (2007)Fe2O3824.87003726Fantechi et al. (2015)Fe3O48121836.575Hergt et al. (2004)Fe2O37154101549Fantechi et al. (2014)ferritin with Fe3O4612.4183<0.01<0.1per mass of only the metal ionsFantechi et al. (2014)ferritin with Co0.15Fe2.85O46.812.41832.8130per mass of only the metal ions
+is the vacuum permeability. Therefore
+
+$$
+ξ=\frac{χ}{ρ\mu_{0}},
+$$
+
+where $ρ$ is the number of ferritin particles per unit volume. In practice, we will see that the reported measurements of magnetization are more often normalized by the iron content of the sample or by the mass, rather than by volume. Then the choice of $ρ$ must be adjusted accordingly.
+
+### Magnetic heating of nanoparticles
+
+Table 1 summarizes some published measurements on magnetic heating of small nanoparticles with diameter below 10 nm. The loss power per unit mass (SLP) depends on the apparatus used for heating. Over the range of conditions considered here, a good approximation is that SLP varies proportionally to the frequency of the alternating magnetic field and to the square of the field strength (Hergt et al., 2004). The table therefore corrects all the SLP numbers to the conditions used by Stanley et al. (2015): field strength H=B/μ0=25.5kA/m and frequency f=465kHz.
+
+**Table 1.**
+ Published measurements of specific loss power (SLP) for various magnetic particles of diameter d, taken at a magnetic field strength H and frequency f. The values in the column “SLP corr” are corrected for the field and frequency used by Stanley et al. (2015).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>Material</th>
+      <th>d [nm]</th>
+      <th>H [kA/m]</th>
+      <th>f [kHz]</th>
+      <th>SLP [W/g]</th>
+      <th>SLP corr [W/g]</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fortin et al. (2007)</td>
+      <td>Fe2O3</td>
+      <td>5.3</td>
+      <td>24.8</td>
+      <td>700</td>
+      <td>4</td>
+      <td>2.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fortin et al. (2007)</td>
+      <td>Fe2O3</td>
+      <td>6.7</td>
+      <td>24.8</td>
+      <td>700</td>
+      <td>14</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fortin et al. (2007)</td>
+      <td>Fe2O3</td>
+      <td>8</td>
+      <td>24.8</td>
+      <td>700</td>
+      <td>37</td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fantechi et al. (2015)</td>
+      <td>Fe3O4</td>
+      <td>8</td>
+      <td>12</td>
+      <td>183</td>
+      <td>6.5</td>
+      <td>75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hergt et al. (2004)</td>
+      <td>Fe2O3</td>
+      <td>7</td>
+      <td>15</td>
+      <td>410</td>
+      <td>15</td>
+      <td>49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fantechi et al. (2014)</td>
+      <td>ferritin with Fe3O4</td>
+      <td>6</td>
+      <td>12.4</td>
+      <td>183</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.1</td>
+      <td>per mass of only the metal ions</td>
+    </tr>
+    <tr>
+      <td>Fantechi et al. (2014)</td>
+      <td>ferritin with Co0.15Fe2.85O4</td>
+      <td>6.8</td>
+      <td>12.4</td>
+      <td>183</td>
+      <td>2.81</td>
+      <td>30</td>
+      <td>per mass of only the metal ions</td>
+    </tr>
+  </tbody>
+</table>

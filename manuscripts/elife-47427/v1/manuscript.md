@@ -33,19 +33,43 @@ Eye tracking studies of children and adults with ASD have been central in quanti
 
 We recently discovered (Pierce et al., 2011a) and then replicated (Pierce et al., 2016a) the finding of one such clinically relevant subtype with marked lack of early social visual engagement. This subtype can be identified and the deficit objectively quantified with a novel eye tracking preferential looking paradigm, the GeoPref Test (Figure 1A). The paradigm displays dynamic non-social colorful geometric patterns side-by-side with social images of happy children in motion. A subset of toddlers comprising around 20% of the ASD population, spend less than 30% of task time looking at social displays and instead prefer to attend to geometric patterns 70–100% of the task time. This degree of marked lack of social visual engagement is seldom seen in non-ASD comparison groups, displaying 98% specificity (Pierce et al., 2016a). Thus, this unique subtype of ASD toddlers, referred to as ‘GeoPref ASD’, displays a specific and extreme lack of preference for socially compelling stimuli. GeoPref ASD was originally identified in early screening population-based samples that have high generalizability across the ASD spectrum (Pierce et al., 2011a). In the largest eye tracking study of ASD to date (Pierce et al., 2016a), we replicated in a large independent sample (n = 334) the same ASD subtype using the original cutoffs derived in our first discovery on this topic (Pierce et al., 2011a). GeoPref ASD toddlers are also more severe on a variety of other clinical behavioral measures, indicating that this subtype is highly clinically relevant beyond social visual engagement (Pierce et al., 2016a). The GeoPref Test has high test-retest reliability (Pierce et al., 2016a) and is simple, fast, and easy to implement, making it a robust behavioral assay for identification of a clinically highly relevant early ASD subtype.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig1-v1.jpg)
+
+**Figure 1.:** Panel A shows examples of the stimuli used in the GeoPref eye tracking test as well as example fixations from a GeoPref ASD individual (pink), and a nonGeo ASD individual (blue). The red dots superimposed on the stimulus show visual fixations and the size of the red dots indicate fixation duration. Panel B shows a scatter-boxplot of eye tracking data on the GeoPref test for subjects who also had rsfMRI data available (GeoPref ASD, n = 16, pink; nonGeo ASD, n = 62, blue; language/developmental delay, LD/DD, n = 15 yellow; typically developing siblings of ASD individuals, TD ASDSib, n = 16 green; typically developing toddlers, n = 55, turquoise). The middle line of the boxplot represents the median. The box boundaries represent the interquartile range (IQR; Q1 = 25th percentile, Q3 = 75th percentile), while the whiskers indicate the a distance of 1.5*IQR. Percentage of time fixating on the geometric visual stimulus is plotted on the y-axis and group membership is plotted on the x-axis. The cutoff threshold of 69% is noted as the dashed line. GeoPref ASD toddlers (pink) fall above the cutoff, while all other ASD toddlers (nonGeo ASD; blue) fall below the cutoff. Panel C depicts individual and group-level developmental trajectories for longitudinal data from GeoPref ASD (n = 60, pink) or nonGeo ASD (n = 62, blue) on ADOS, Mullen Early Scales of Learning, and Vineland Adaptive Behavior subscales. All measures show a significant main effect of subtype passing FDR q < 0.05. Mullen Receptive Language and Visual Reception subscales additionally show significant (FDR q < 0.05) age*subtype interactions, indicative of different developmental trajectories between the subtypes. The image of a child shown in panel A is taken from a commercially available video (Yoga Kids 3; Gaiam, Boulder, Colorado, http://www.gaiam.com, created by Marsha Wenig, http://yogakids.com) and re-produced here with permission.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** GeoPref ASD subtype (pink) and nonGeo ASD toddlers (blue).
+
 In the current work, we aimed to identify how intrinsic functional connectivity between neural circuits, as measured by resting state fMRI (rsfMRI), is affected in early ASD development and whether heterogeneity in early social visual engagement is a key factor explaining such connectivity differences. Several networks were examined that have high relevance for early social visual engagement. Primary visual cortex, visual association cortices, and networks involved in attentional or salience processing are of high relevance, given their importance in hierarchical processing of features from social visual stimuli (Haxby et al., 2001; Kriegeskorte et al., 2008; Uddin et al., 2013; Mottron et al., 2006; Felleman and Van Essen, 1991; Yang et al., 2015). Subcortical areas such as the amygdala and ventral striatum are also of relevance given theories about social motivation as a key driver of social engagement difficulties in autism (Chevallier et al., 2012; Mosconi et al., 2009; Elison et al., 2013). A large-scale network, the default mode network, is also key since this network is one of the primary networks of the ‘social brain’ involved in high-level social-cognitive and social-communicative processing (e.g., mentalizing, joint attention) (Lombardo et al., 2010a; Redcay et al., 2013; Van Overwalle, 2009; Schurz et al., 2014; Nummenmaa and Calder, 2009; Eggebrecht et al., 2017; Alcalá-López et al., 2018; Redcay and Schilbach, 2019; Schilbach et al., 2008). We analyzed rsfMRI data in one of the largest and youngest samples of ASD to date and compare ASD to several non-ASD comparison groups – typically developing (TD) toddlers, toddlers with language or general developmental delay (LD/DD) and TD toddlers with an older ASD sibling (TD ASDSib). We also examined how connectivity differences may be better modeled by taking into account heterogeneity in early social visual engagement. Based on prior work theorizing altered connectivity between high-level social-cognitive networks in frontal cortex and posterior networks involved in sensation, perception and attention (Courchesne and Pierce, 2005), we hypothesized that there may be atypical and heterogeneous functional connectivity between higher-level social brain networks such as the default mode network (DMN) and posterior lower-level networks that are integral for visual perception and attention. We further hypothesized that GeoPref ASD toddlers may display the most extreme effects on functional connectivity. Finally, to test the utility of our ASD subtype for predicting individual differences in social-communication symptomatology, we predicted that robust relationships between functional connectivity and social-communication behavior would be apparent only within the GeoPref ASD subtype.
 
 ## Results
 
-## Behavioral and developmental characteristics of the GeoPref ASD subtype
+### Behavioral and developmental characteristics of the GeoPref ASD subtype
 
 Our primary aim in this work was to test if early ASD subtypes defined on the basis of distinctions in early social engagement behavior would also differ at the level of macroscale neural circuit organization as measured with rsfMRI. However, because little prior work exists characterizing these subtypes, we first set out to detail how these subtypes are characterized both behaviorally and developmentally over the first 4 years of life. Using longitudinal data from 12 to 48 months of life, we assessed how the GeoPref and nonGeo ASD subtypes differ with respect to clinical behavioral trajectories. Every measure across the ADOS, Mullen Early Scales of Learning and the Vineland Adaptive Behavior subscales showed a significant effect of group, except for the Vineland Motor subscale. This indicates that there is an on-average difference between GeoPref and nonGeo ASD in this early developmental period manifesting with the GeoPref ASD subtype being more severely affected. In addition, the Mullen Receptive Language and Visual Reception subscales also showed evidence of an age*subtype interaction, which manifests as GeoPref ASD showing a much steeper downwards trajectory of severity compared to nonGeo ASD. These steeper downward trajectories in GeoPref ASD should not be interpreted as this subtype losing skills over development. Rather, since the scores analyzed here are normed T-scores, the correct interpretation is that as individuals get older, this subtype may be falling behind age-appropriate norms at a faster rate than nonGeo ASD. No other measure showed evidence of this kind of age*subtype interaction (Figure 1C; Figure 1—figure supplement 1 and Supplementary file 1). These insights generally extend prior work (Pierce et al., 2011a; Pierce et al., 2016a) by showing that the GeoPref ASD subtype distinction is indeed a subtype distinction with clinical importance extending beyond the domain of early social visual engagement. These results underscore that GeoPref ASD individuals are more severely affected across the ASD symptom dyad, as well as other language, cognitive, motor, and adaptive behavior domains. These data also suggest that receptive language and non-verbal cognitive skills may be particular domains where GeoPref ASD individuals may take on different developmental paths and progressively fall further behind typically-developing age norms compared to nonGeo ASD peers.
 
-## Functional hypoconnectivity between the default mode network and visual or attention networks in ASD
+### Functional hypoconnectivity between the default mode network and visual or attention networks in ASD
 
 To assess ASD differences in functional connectivity we modeled the rsfMRI data with two approaches – 1) an unstratified case-control model approach and 2) a stratified subtype model approach. These two modeling approaches can be empirically compared to discern whether subtyping by the GeoPref ASD or nonGeo ASD subtypes is an important distinction for explaining macroscale functional neural circuit organization. Using an unstratified case-control model comparing all ASD toddlers (n = 109) to toddlers from multiple non-ASD comparison groups (TD, TD ASDSib, LD/DD; n = 55, n = 16, and n = 15 respectively), we identify three component pairs passing multiple comparisons correction at FDR q < 0.05. These effects feature reduced default mode network (DMN; IC10) connectivity in ASD with primary visual cortex (PVC; IC05: F(3, 189)=6.62, p=2.79e-4, partial η2 = 0.099, Cohen’s d > 0.52), visual association circuitry located in occipito-temporal cortex (OTC; IC02: F(3, 189)=5.98, p=6.41e-4, partial η2 = 0.088, Cohen’s d > 0.51) and the dorsal attention network (DAN; IC09: F(3, 189)=5.93, p=6.87e-4, partial η2 = 0.087, Cohen’s d > 0.40) (Figure 2). All other comparisons between non-ASD comparison groups showed relatively small effect size differences, indicating that the ASD group is the primary reason for these larger reductions in connectivity. See Supplementary file 2 for a full list of all statistics for these case-control comparisons. This modeling approach suggests that without taking into account heterogeneity in social engagement, ASD as a whole shows specific reductions in DMN connectivity with visual and attention circuits compared to TD, but also compared to LD/DD toddlers and TD siblings of ASD individuals.
 
-## Marked functional hypoconnectivity between default mode and visual association circuitry in GeoPref ASD
+![Figure 2.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig2-v1.jpg)
+
+**Figure 2.:** The left column shows surface renderings of ICA components of visual association areas in occipito-temporal cortex (OTC; IC02), primary visual cortex (PVC; IC05), the dorsal attention network (DAN; IC09) and the default mode network (DMN; IC10). The middle column shows scatter-boxplots for DMN-OTC, DMN-PVC, and DMN-DAN connectivity across GeoPref ASD (pink), nonGeo ASD (blue), ASD with no eye tracking data (ASD no ET; magenta), LD/DD (yellow), TD ASDSib (green), and TD (turquoise). Standardized effect sizes (Cohen’s d) are reported in the plots for comparisons of all ASD individuals combined, compared to the other non-ASD comparison groups. The middle line of the boxplot represents the median. The box boundaries represent the interquartile range (IQR; Q1 = 25th percentile, Q3 = 75th percentile), while the whiskers indicate the a distance of 1.5*IQR. The right column uses heatmaps to show standardized effect sizes (Cohen’s d) for all pairwise comparisons of groups with rsfMRI and eye tracking data used in the subtype model. Note that effect sizes are depicted as absolute values, and the directionality of the effects can be seen in the scatter-boxplots. Cells outlined in thick black lines are specific comparisons that survive FDR q < 0.05. Cells outlined in thinner black lines are comparisons that survive FDR q < 0.1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** This figure shows scatterplots of functional connectivity and percentage fixation on the geometric stimulus. Below each scatterplot are the AIC values for the subtype and transdiagnostic models.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Power simulation at minimum effect size (d = 0.80751) to achieve 80% power at alpha = 0.05 and n = 16 (GeoPref ASD) vs n = 55 (TD). The gray histogram plotted here are the sample effect size estimates simulated from 100,000 experiments sampling n = 16 vs n = 55 from a population size of n = 10,000,000, and where the true population effect size is d = 0.80751 (green vertical line). Plotted in red is the histogram of sample effect sizes from 80,000 experiments whereby the results of the simulated experiment resulted in a rejected null hypothesis (e.g., p<0.05). Plotted as a black vertical line is the actual sample effect size estimated from the current study for GeoPref ASD vs TD (d = 1.28).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/47427/elife-47427-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Panels A-B show mean framewise displacement (A) and mean DVARS before and after wavelet denoising (B) across all groups. Specific example subjects are labeled in panel A and shown in panels C-E as examples of high (C), medium (D), or low motion (E) subjects. The plots in panels C-E show framewise displacement on top and DVARS on the bottom. The DVARS plot shows the DVARS trace from the raw preprocessed data (black), the noise identified from wavelet denoising (brown), and the final wavelet denoised dataset (blue).
+
+### Marked functional hypoconnectivity between default mode and visual association circuitry in GeoPref ASD
 
 Using the eye tracking subtypes from the GeoPref Test, we next recomputed stratified subtype models to test whether subtyping by social engagement heterogeneity provides a better explanation of differences in macroscale intrinsic functional neural circuit organization. DMN-OTC and DMN-PVC appear again in these stratified models as effects passing FDR q < 0.05, despite the fact that n = 31 ASD subjects from the original unstratified case-control model had to be dropped in this analysis since they lacked any eye tracking data to make the GeoPref or nonGeo ASD distinction. Descriptive standardized effect sizes for all pairwise comparisons of ASD subtypes and non-ASD comparison groups are shown in Figure 2 and pairwise comparisons surviving FDR q < 0.05 correction are highlighted in Figure 2 with black outlines around specific cells. See Supplementary file 3 for statistics from pairwise group comparisons.
 
@@ -55,7 +79,7 @@ The subtype model can also be compared against models that ignore categorical su
 
 These results generally suggest that heterogeneity in early social engagement is important for some, but not all, functional connectivity differences present in early ASD toddlers. This evidence supports the idea that in toddlerhood, ASD is characterized by functional hypoconnectivity between the DMN and visual circuits in PVC and OTC as well as attention circuitry (DAN). However, for the subtype of individuals with the most pronounced social engagement difficulties (GeoPref ASD), it is DMN-OTC connectivity that may be most important in distinguishing them from their other ASD counterparts.
 
-## Subtype-specific association between DMN-OTC connectivity and social-communication difficulties
+### Subtype-specific association between DMN-OTC connectivity and social-communication difficulties
 
 We next tested whether the two ASD subtypes would differ in the relationship between functional connectivity and social-communication difficulties. This test is critical for examining the question of whether the two ASD subtypes should indeed be considered as discrete types of ASD with different underlying neurobiological mechanisms relevant for the behavioral phenotype. Here we find evidence for subtype-specific associations for DMN-OTC connectivity. A strong negative correlation between DMN-OTC connectivity and ADOS social affect total is present in the GeoPref ASD subtype (r = −0.78, p=0.001, 95% CI = [−0.99,–0.35]), indicating that reductions in DMN-OTC connectivity are associated with more enhanced social-communication difficulties. No such relationship exists for nonGeo ASD (r = 0.06, p=0.64, 95% CI = [−0.20, 0.33]) (Figure 3). Correlation strength also significantly differed between the subtypes (z = 3.71, p=0.0001). In contrast, DMN-PVC showed no evidence of relationships in either subtype (GeoPref ASD r = 0.04, p=0.88, 95% CI = [−0.81, 0.75]; nonGeo ASD r = 0.22, p=0.12, 95% CI = [−0.10, 0.49]) or for differences in the strength of the relationship between subtypes (z = 0.59, p=0.55). DMN-DAN showed no evidence of a strong relationship in GeoPref ASD (r = −0.33, p=0.25, 95% CI = [−0.83, 0.58]). However, there was a significant, although weak positive relationship in nonGeo ASD (r = 0.29, p=0.04, 95% CI = [0.05, 0.49]). The differences in the strength of the relationship between subtypes was also weak, though significant (z = 2.14, p=0.03) (Figure 3).
 
@@ -85,31 +109,98 @@ In conclusion, we identified that functional hypoconnectivity between ‘social 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study was approved by the Institutional Review Board at University of California, San Diego (UCSD Human Research Protection Program protocols 091539, 081722, or 110049). Parents provided written informed consent according to the Declaration of Helsinki and were paid for their participation. Identical to the approach used in our earlier studies (Pierce et al., 2011a; Pierce et al., 2016a; Lombardo et al., 2015; Pramparo et al., 2015a; Pramparo et al., 2015b), toddlers were recruited through two mechanisms: community referrals (e.g., website) or a general population-based screening method called the 1 Year Well-Baby Check-Up Approach (Pierce et al., 2011b) that allowed for the prospective study of ASD beginning at 12 months based on a toddler’s failure of the CSBS-DP Infant-Toddler Checklist (Wetherby and Prizant, 2002; Wetherby et al., 2008). All toddlers were tracked from an intake assessment age of 12–24 months and followed roughly every 12 months until 3–4 years of age. All toddlers, including normal control subjects, participated in a series of tests collected longitudinally across all visits, including the Autism Diagnostic Observation Schedule (ADOS; Module T, 1, or 2) (Lord et al., 2000), the Mullen Scales of Early Learning (Mullen, 1995), and the Vineland Adaptive Behavior Scales (Sparrow et al., 1984). All testing occurred at the University of California, San Diego Autism Center of Excellence (ACE).
 
 A total of n = 195 toddlers aged 12 to 48 months were scanned with rsfMRI during natural sleep for the current study. Of the total n = 195, n = 109 were ASD toddlers and this ASD group could be further split into n = 16 GeoPref ASD toddlers (11 male, five female), n = 62 nonGeo ASD toddlers (49 male, 13 female), and a further n = 31 ASD toddlers (27 male, four female) that could not be stratified in either GeoPref or nonGeo ASD subtypes because they lacked eye tracking data needed for such stratification. The GeoPref ASD subtype is defined as toddlers who spent 69% or more of their time fixated on the dynamic geometric stimulus in the GeoPref eye tracking test (Pierce et al., 2011a; Pierce et al., 2016a). The nonGeo ASD subtype represents individuals that spent less than 69% of time fixated on the dynamic geometric stimulus. The 69% threshold for the GeoPref test has been shown in past studies to replicably isolate the GeoPref ASD subtype and maximize specificity with respect to many other contrast groups (Pierce et al., 2011a; Pierce et al., 2016a). Several toddlers from multiple non-ASD groups were examined as contrast groups to the ASD sample. These toddlers consisted of n = 55 typically-developing control toddlers (TD, 37 male, 18 female), n = 15 with language or globally developmental delay (LD/DD, 10 male, five female), and n = 16 TD toddlers who were younger siblings of children already diagnosed with ASD (TD ASDSib, eight male, eight female). See Table 1 for characteristics such as age at scanning and age at eye tracking for all groups. Amongst the total n = 195 toddlers with rsfMRI data, an ANOVA on age at scanning found no group-differences across the groups (F(5, 189)=0.89, p=0.48). A chi-square analysis across the total n = 195 identified a subtle trend-level difference in the proportion of males and females distributed across groups, with more even proportions of males and females in non-ASD comparison groups than the ASD groups (χ2(5)=9.88, p=0.07). In all subsequent connectivity analyses, we statistically controlled for sex and age at scanning as covariates.
 
+**Table 1.**
+ Descriptive statistics across all groups for age at rsfMRI scan, sex, and head motion measurements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N (M, F)</th>
+      <th>Mean age at eye tracking in months (SD)</th>
+      <th>Mean age at rsfMRI scan in months (SD)</th>
+      <th>Age range at rsfMRI scan in months</th>
+      <th>Mean framewise displacement (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASD no ET (rsfMRI data only; no eye tracking data)</td>
+      <td>31 (27,4)</td>
+      <td>-</td>
+      <td>29.69 (8.88)</td>
+      <td>13.21–43.63</td>
+      <td>0.09 (0.08)</td>
+    </tr>
+    <tr>
+      <td>GeoPref ASD</td>
+      <td>16 (11,5)</td>
+      <td>28.37 (7.77)</td>
+      <td>29.92 (8.71)</td>
+      <td>14.16–43.79</td>
+      <td>0.06 (0.02)</td>
+    </tr>
+    <tr>
+      <td>nonGeo ASD</td>
+      <td>62 (49,13)</td>
+      <td>26.30 (8.35)</td>
+      <td>29.37 (8.35)</td>
+      <td>12.35–44.05</td>
+      <td>0.09 (0.12)</td>
+    </tr>
+    <tr>
+      <td>LD/DD</td>
+      <td>15 (10,5)</td>
+      <td>19.36 (4.15)</td>
+      <td>25.12 (7.97)</td>
+      <td>13.37–39.75</td>
+      <td>0.10 (0.05)</td>
+    </tr>
+    <tr>
+      <td>TD ASDSib</td>
+      <td>16 (8,8)</td>
+      <td>19.79 (6.20)</td>
+      <td>26.74 (9.38)</td>
+      <td>12.52–44.09</td>
+      <td>0.08 (0.04)</td>
+    </tr>
+    <tr>
+      <td>TD</td>
+      <td>55 (37,18)</td>
+      <td>23.07 (9.07)</td>
+      <td>29.61 (10.14)</td>
+      <td>13.17–47.93</td>
+      <td>0.10 (0.11)</td>
+    </tr>
+  </tbody>
+</table>
+
 Because the n = 16 within the GeoPref ASD subtype is a relatively small sample size, we ran a statistical power analysis simulation to identify the minimum effect size needed to detect reject the null hypothesis with an alpha of 0.05% and 80% power at the current sample sizes (e.g., n = 16 GeoPref ASD vs n = 55 TD). In this simulation, we generated data from two populations (hypothetically GeoPref ASD and TD), with the minimal effect size difference between the populations that achieves 80% power at these sample sizes. The population size of each group was set to n = 10,000,000. We then ran 100,000 simulated experiments whereby we randomly sampled without replacement n = 16 (e.g., GeoPref ASD) and n = 55 (e.g., TD) from each population, and then computed effect size and ran a hypothesis test (e.g., independent samples t-test) with the alpha set to 0.05. In Figure 2—figure supplement 2, we illustrate how variable sample effect size estimates can be given this context of n = 16 vs n = 55 (e.g., sample effect size estimates range from d < 0 to d > 1.5). Power is empirically shown here (see red histogram in Figure 2—figure supplement 2) since exactly 80,000 of the 100,000 (80%) experiments rejected the null hypothesis at alpha = 0.05. The minimum effect size to achieve 80% power with these sample sizes is d = 0.80751.
 
-## Eye tracking paradigm
+### Eye tracking paradigm
 
 Eye-tracking data from this study has already been reported in two prior studies (Pierce et al., 2011a; Pierce et al., 2016a). Briefly recapping the GeoPref eye tracking test, toddlers were seated on their parent’s lap 60 cm in front of the Tobii T120 eye tracking monitor and were presented a movie consisting of dynamic geometric or social stimuli on either side of the screen. The dynamic geometric stimulus was produced from recordings of animated screen saver programs. The dynamic social stimulus was produced from a series of short sequences of children doing yoga, which included images of children moving in a dramatic manner (e. g., waving arms and appearing as if dancing). These clips were used with permission from the commercially available video Yoga Kids 3 (2003 Gaiam Americas, Inc; https://www.gaiam.com) and specific permissions were given to use the clips for research purposes in published scholarly work. Audio information was discarded. The final stimulus was composed of 2 rectangular areas of interest (AOIs) horizontally distributed containing either the geometric or social stimulus and were changed in a simultaneous, time-linked fashion. The side (left/right) of presentation of geometric or social stimuli were randomly assigned across subject and diagnosis and percent fixation within each AOI calculated. The final movie contained a total of 28 scenes with single-scene duration varying from 2 to 4 s for a total presentation time of 60 s at 24 frames per second.
 
-## Longitudinal clinical behavioral data
+### Longitudinal clinical behavioral data
 
 To examine behavioral trajectories on other clinical measures (i.e. ADOS, Mullen, Vineland) we utilized the largest sample of GeoPref ASD toddlers available to boost power beyond the smaller sample that also had rsfMRI data available. An additional 44 GeoPref ASD toddlers who had valid eye tracking and clinical data (but not rsfMRI) were included with the n = 16 GeoPref ASD toddlers with eye tracking and rsfMRI data. Thus, a total of n = 60 GeoPref ASD and n = 62 nonGeo ASD toddlers were analyzed for differences in clinical behavioral trajectories, as illustrated in Figure 1C and Figure 1—figure supplement 1. We used linear mixed-effect modeling analyses (modeling random slopes and intercepts) to model within-individual trajectories and group-level trajectories. These analyses were implemented on z-scored data with the lme function contained within the nlme library in R. The dependent variables were either ADOS, Mullen, or Vineland subscale scores, while the independent variables modeled were always age, group, and the age*group interaction. A comparison of linear versus quadratic models indicated that a linear model provided a better fit (linear model, AIC = −158.09; quadratic model, AIC = −148.64) and thus, the linear model was used.
 
-## fMRI data acquisition
+### fMRI data acquisition
 
 Imaging data were collected on a 1.5 Tesla General Electric MRI scanner during natural sleep at night; no sedation was used. High-resolution T1-weighted anatomical scans were collected for warping fMRI data into standard atlas space. Blood oxygenation level-dependent (BOLD) signal was measured across the whole brain with echoplanar imaging (TE = 30 ms, TR = 2500 ms, flip angle = 90°, bandwidth = 70 kHz, field of view = 25.6 cm, in-plane resolution = 4×4 mm, slice thickness = 4 mm, 31 slices). The resting state session lasted 6 min and 25 s resulting in 154 total whole brain volumes. Within the preprocessing we discarded the first four volumes to allow for T2-stabilization effects, leaving a total of 150 volumes for the final analysis.
 
-## fMRI data preprocessing
+### fMRI data preprocessing
 
 Preprocessing of the resting state data was split into two components; core preprocessing and denoising. Core preprocessing was implemented with AFNI (http://afni.nimh.nih.gov/) using the tool speedypp.py (http://bit.ly/23u2vZp) (Kundu et al., 2012). This core preprocessing pipeline included the following steps: (i) slice acquisition correction using heptic (7th order) Lagrange polynomial interpolation; (ii) rigid-body head movement correction to the first frame of data, using quintic (5th order) polynomial interpolation to estimate the realignment parameters (3 displacements and three rotations); (iii) obliquity transform to the structural image; (iv) affine co-registration to the skull-stripped structural image using a gray matter mask; (v) nonlinear warping to MNI space (MNI152 template) with AFNI 3dQwarp; (v) spatial smoothing (6 mm FWHM); and (vi) a within-run intensity normalization to a whole-brain median of 1000. Core preprocessing was followed by denoising steps to further remove motion-related and other artifacts. Denoising steps included: (vii) wavelet time series despiking (‘wavelet denoising’); (viii) confound signal regression including the six motion parameters estimated in (ii), their first order temporal derivatives, and ventricular cerebrospinal fluid (CSF) signal (referred to as 13-parameter regression). The wavelet denoising method has been shown to mitigate substantial spatial and temporal heterogeneity in motion-related artifact that manifests linearly or non-linearly and can do so without the need for data scrubbing (Patel et al., 2014). Wavelet denoising is implemented with the Brain Wavelet toolbox (http://www.brainwavelet.org). The 13-parameter regression of motion and CSF signals was achieved using AFNI 3dBandpass with the –ort argument. To further characterize and describe motion and its impact on the data, we computed framewise displacement and DVARS (Power et al., 2012). Examples of how denoising impacts high and low motion subjects can be found in the Figure 2—figure supplement 3. Between-group comparisons showed that all groups were similar with respect to head motion as measured by mean framewise displacement (FD) (F(5,189) = 0.67, p=0.64) with all groups showing on-average less than 0.12 mm motion (see Table 1). Furthermore, mean DVARS measurements were similar across all groups before (F(5,189) = 0.28, p=0.92) and after denoising (F(5,189) = 0.57, p=0.72). Both of these results indicate that motion does not asymmetrically affect one group more than the others.
 
-## Connectivity analyses
+### Connectivity analyses
 
 To assess functional connectivity between neural circuits we utilized the unsupervised data-driven method of independent component analysis (ICA) to conduct a group-ICA and then used dual regression to back-project spatial maps and individual time series for each component and subject. Both group-ICA and dual regression were implemented with FSL’s MELODIC and Dual Regression tools (www.fmrib.ox.ac.uk/fsl). For group-ICA, the dimensionality estimate was fixed to a pre-specified dimensionality of 30 components, as in most cases with low-dimensional ICA, the number of meaningful components can be anywhere from 10 to 30 (Smith et al., 2013). Higher-dimensional solutions were not sought, although they may be important in future work, particularly with regard to further fractionating known networks like the DMN into subsystems (Kernbach et al., 2018). Given our a priori hypotheses regarding specific processes such as social cognition, attention, salience, visual perceptive, affective, and reward processes, we examined corresponding known networks that are involved in such processes – namely, the default mode, dorsal attention, salience, several visual networks, and amygdala/striatum-centered networks.
 
@@ -121,10 +212,10 @@ To compare the case-control model to the subtype model, we utilized the Akaike I
 
 We also used AIC and ΔAICi to compare the subtype model to a continuous transdiagnostic model. These models utilized all data from all groups with both fMRI and eye tracking data. The continuous transdiagnostic model utilized the continuous measure of percent fixation on the geometric stimulus and without any variable indicating group membership.
 
-## Connectivity-Behavior relationships
+### Connectivity-Behavior relationships
 
 To test for relationships between connectivity and social-communication difficulties on the ADOS, we computed robust regression partial correlations between connectivity and ADOS social affect total scores, while covarying for age at scanning. These correlations were computed using the robust regression MATLAB toolbox (https://github.com/canlab/RobustToolbox; Wager et al., 2005). To test for difference between-groups in the strength of such correlations we used the paired.r function in the psych R library to compute Z-statistics and p-values. We also performed bootstrapping to compute 95% confidence intervals around sample correlation estimates, using 100,000 bootstrap resamples. This analysis was done to allow for reporting of the distribution of sample correlation estimates that could have been observed.
 
-## Data and code availability
+### Data and code availability
 
 Tidy data and analysis code are available at https://github.com/mvlombardo/geoprefrsfmri (Lombardo, 2019; copy archived at https://github.com/elifesciences-publications/geoprefrsfmri).

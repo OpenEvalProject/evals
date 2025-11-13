@@ -12,7 +12,7 @@
 
 ### Affiliations
 
-1. https://ror.org/011dv8m48 Intercollegiate Faculty of Biotechnology UG-MUG, University of Gdansk Gdańsk Poland
+1. Intercollegiate Faculty of Biotechnology UG-MUG, University of Gdansk Gdańsk Poland ([ROR:011dv8m48](https://ror.org/011dv8m48))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Gene birth and loss is a hallmark of protein family evolution, however, molecula
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig1-v1.jpg)
 
-**Figure 1.:** Enterobacteriacrae and Erwiniaceae.Left - schematic phylogeny of sHsps in Enterobacterales. Gene duplication resulting in IbpA + IbpB two-protein system is marked with a star, while the loss of ibpB gene in Erwiniaceae clade is marked with a cross. AncA0 - reconstructed last common ancestor of IbpA from Erwiniaceae and Enterobacteriaceae, expressed as a part of two-protein system. AncA1 - reconstructed last common ancestor of secondarily single IbpA from Erwiniaceae. Right - representative extant sHsps’ ability to stimulate luciferase refolding. sHsps were present during the luciferase thermal denaturation step. Refolding of denatured luciferase was performed by the Hsp70-Hsp100 chaperone system. Activity of luciferase was measured after 1 hr refolding at 25 °C and shown as an average of 3 repeats. Error bars represent standard deviation.Figure 1—source data 1.Figure 1.
+**Figure 1.:** Left - schematic phylogeny of sHsps in Enterobacterales. Gene duplication resulting in IbpA + IbpB two-protein system is marked with a star, while the loss of ibpB gene in Erwiniaceae clade is marked with a cross. AncA0 - reconstructed last common ancestor of IbpA from Erwiniaceae and Enterobacteriaceae, expressed as a part of two-protein system. AncA1 - reconstructed last common ancestor of secondarily single IbpA from Erwiniaceae. Right - representative extant sHsps’ ability to stimulate luciferase refolding. sHsps were present during the luciferase thermal denaturation step. Refolding of denatured luciferase was performed by the Hsp70-Hsp100 chaperone system. Activity of luciferase was measured after 1 hr refolding at 25 °C and shown as an average of 3 repeats. Error bars represent standard deviation.
 
 sHsps are a family of ATP-independent molecular chaperones present in all living organisms with various copy numbers (ten representatives in human) (Haslbeck and Vierling, 2015). They bind misfolded proteins and sequester them into refolding – prone assemblies, preventing uncontrolled aggregation and helping to maintain proteostasis at stress conditions. sHsp is composed of a highly conserved α–crystallin domain (ACD), in a form of so-called β–sandwich, flanked by less conserved, unstructured N- and C-terminal regions (Haslbeck and Vierling, 2015; Haslbeck et al., 2019; Reinle et al., 2022). Their smallest functional unit is usually a dimer, formed by the interaction between ACDs of two neighboring sHsps. Stable sHsp dimers in turn tend to form variable and dynamic higher-order oligomers, stabilized by N- and C-terminal region interactions. Particularly the interaction between the IXI motif, highly conserved in sHsps C-termini, and the cleft formed by β4 and β8 strands of ACD is critical for oligomer formation (Haslbeck and Vierling, 2015; Kennaway et al., 2005; Mani et al., 2016; Simmons and Ochoterena, 2000). Oligomers of bacterial sHsps reversibly dissociate into smaller forms when the temperature increases. It is considered their activation mechanism, probably uncovering substrate interaction sites. The mechanism of sHsps’ interaction with misfolded substrates is not yet fully understood, but both N-termini and β4–β8 cleft region have been found to play a role in this process (Basha et al., 2006; Fuchs et al., 2009; Jaya et al., 2009; Lee et al., 1997; Reinle et al., 2022).
 
@@ -34,15 +34,31 @@ In most Enterobacterales a two-protein sHsps system exists, consisting of IbpA a
 
 ## Results
 
-## New activity of Erwiniaceae IbpA has evolved in parallel to IbpB gene loss
+### New activity of Erwiniaceae IbpA has evolved in parallel to IbpB gene loss
 
 To better understand the evolution of sHsps after gene loss, we reconstructed the IbpA ancestors from before and after the loss of its IbpB partner. This technique uses multiple sequence alignments of modern-day proteins from different species to infer amino acid sequences of its common ancestors (Ashkenazy et al., 2012; Pupko et al., 2002) and is widely used to investigate various evolutionary questions (Gaucher et al., 2008; Longo et al., 2020; Thomson et al., 2005; Thornton et al., 2003). We created a multiple sequence alignment of 77 IbpA sequences from Enterobacterales (Supplementary file 1), from which we inferred the phylogeny of IbpA using the maximum likelihood method (Figure 2, Supplementary file 2 – phylogenetic tree in Newick format). From that, we inferred ancestral sequences, which have the highest probability of producing the modern-day sequences using the empirical Bayes method (Ashkenazy et al., 2012; Cohen and Pupko, 2011; Cohen et al., 2008; Pupko et al., 2002; Simmons and Ochoterena, 2000). Next, we resurrected (i.e. expressed and purified) the last ancestor of IbpA present before (AncA0) and after (AncA1) the differential gene loss (Figure 2, Supplementary file 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig2-v1.jpg)
 
-**Figure 2.:** Enterobacterales.Phylogeny was reconstructed from 77 IbpA orthologs from Enterobacterales using the Maximum Likelihood algorithm with JTT + R3 substitution model. AncA0 - node representing the last common ancestor of IbpA from Erwiniaceae and Enterobacteriaceae. AncA1 - node representing the last common ancestor of IbpA from Erwiniaceae. Bootstrap support is noted for the major nodes. Extant IbpAs from E. coli and E. amylovora are marked with a red frame. Scale bar - substitutions per position.
+**Figure 2.:** Phylogeny was reconstructed from 77 IbpA orthologs from Enterobacterales using the Maximum Likelihood algorithm with JTT + R3 substitution model. AncA0 - node representing the last common ancestor of IbpA from Erwiniaceae and Enterobacteriaceae. AncA1 - node representing the last common ancestor of IbpA from Erwiniaceae. Bootstrap support is noted for the major nodes. Extant IbpAs from E. coli and E. amylovora are marked with a red frame. Scale bar - substitutions per position.
 
 Similarly, to modern-day IbpA proteins both AncA0 and AncA1 were fully folded, and reversibly deoligomerized into smaller species under elevated temperature (Figure 3—figure supplement 1). Moreover, both ancestral proteins were able to sequester aggregating firefly luciferase in sHsp-substrate assemblies. AncA0 exhibited sequestrase activity on the level comparable to IbpA from Escherichia coli (IbpAE. coli). AncA1 was moderately efficient in this process and IbpA from Erwinia amylovora (IbpAE.amyl) was the least efficient sequestrase (Figure 3A). The differences in sequestrase activity were especially pronounced at lower sHsp concentrations. Next, we tested their ability to bind protein aggregates in real time (Figure 3B). Ancestral proteins’ interaction with the aggregated substrates was stronger than in the case of extant E. amylovora IbpA, but weaker than in the case of extant E. coli IbpA (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sequestrase activity of extant and ancestral sHsps. Luciferase was heat denatured in the presence of different concentrations of sHsps and size of formed sHsps-substrate assemblies was measured by DLS. For every measurement, ten subsequent series of ten 10-s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average), calculated with Malvern Zetasizer Software 7.13. Error bars represent standard deviation obtained from the distribution. (B) Binding of extant and ancestral sHsps to heat-aggregated E. coli proteins. E. coli proteins were heat aggregated and immobilized on a Biolayer interferometry (BLI) sensor. sHsps were heat-activated before the binding step. (C) Extant and ancestral sHsps’ ability to stimulate luciferase refolding. Experiment was performed at 25 °C. Luciferase activity at each timepoint was shown as an average of 3 repeats. Error bars represent standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Hydrodynamic diameter distributions of small heat shock protein (sHsp) oligomers incubated subsequently at 25 °C (blue graphs) and 44 °C (red graphs). Size distributions were measured by DLS.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** AncA0, AncA1 - ML variants; AncA0AltAll, AncA1AltAll - AltAll variants. Positions differing between most likely (ML) and AltAll variants are marked in red. (A) Alignment of AncA0 and AncA0AltAll sequences. (B) Alignment of AncA1 and AncA1AltAll sequences.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Reversible deoligomerization at heat shock temperature; measurement were performed as in Figure 3—figure supplement 1. (B) Sequestrase activity. Luciferase sequestration assay was performed as in Figure 3B. For every measurement, ten subsequent series of ten 10-s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average), calculated with Malvern Zetasizer Software 7.13. Error bars represent standard deviation obtained from the distribution. (C–D) Ability to stimulate Hsp70-Hsp100-dependent luciferase disaggregation; Luciferase refolding assay was performed as in Figure 1. Activity of luciferase was measured after 1 hr refolding at 25 °C and shown as an average of 3 repeats. Error bars represent standard deviation; assays were performed at two concentrations of Hsp70 system: (C) standard (1 µM DnaK, 0.4 µM DnaJ 0.3 µM GrpE) or (D) increased (2 µM DnaK, 0.8 µM DnaJ 0.6 µM GrpE).
 
 Finally, we asked how the modification of the substrate aggregation process by reconstructed proteins influences subsequent substrate refolding by the Hsp100 and Hsp70 chaperones. AncA1 stimulated luciferase refolding, however, its effectiveness was around half of both analyzed extant sHsp systems (single IbpA from E. amylovora or IbpA + IbpB system from E. coli), similar to extant IbpA form E. coli without its IbpB partner. AncA0, in contrast, inhibited luciferase refolding in comparison to control (no sHsps at substrate aggregation step) (Figure 3C).
 
@@ -50,13 +66,47 @@ To test the robustness of our observations, we repeated the analysis for the alt
 
 We performed a molecular evolution analysis to test for positive selection across IbpA phylogeny using both branch models and branch-site models in codeml (Jeffares et al., 2015; Yang, 1998; Yang, 2007; Yang and Nielsen, 2002). The analysis shows a significantly increased ratio of nonsynonymous to synonymous substitutions, after the gene loss, at the branch leading to A1 with both tests. This result indicates that the new IbpA functionality likely arose due to an episode of positive selection rather than genetic drift (Figure 4A, Supplementary file 4 A,B). The result of the branch-site test indicates possible positive selection acting on all sites substituted at the branch leading to A1 with pp >0.5, therefore, we aimed to identify the minimum number of mutations that are responsible for a change in functional properties of IbpA.
 
-## Identification of residues defining ancestral sHsps activities
+![Figure 4.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig4-v1.jpg)
+
+**Figure 4.:** Luciferase refolding assay was performed as in Figure 1. Activity of luciferase was measured after 1 hr refolding at 25 °C and shown as an average of 3 repeats (6 in the case of no sHsp and proteins AncA0­ and AncA1 in panel C). Error bars represent standard deviation. (A) Schematic phylogeny of Enterobacterales IbpA showing increased ratio of nonsynonymous to synonymous substitutions (ω) on the branch between nodes AncA0 and AncA1. Loss of cooperating IbpB is marked on a tree. Value of the Likelihood Ratio Test (LRT) is given for the selection model. (B) Identification of substitutions necessary for AncA0 to obtain AncA1-like activity in luciferase disaggregation; seven candidate mutations were introduced into AncA0 (AncA0 + 7); subsequently, in series of six mutants, each of the candidate positions was reversed to a more ancestral state (AncA0 + 6* variants) (C) Effect of substitutions at positions 66 and 109 on the ability of AncA0 and AncA1 to stimulate luciferase refolding.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Reversible deoligomerization at heat shock temperature; measurements were performed as in Figure 3—figure supplement 2. (B) Sequestrase activity; luciferase sequestration assay was performed as in Figure 3B. For every measurement, ten subsequent series of ten 10-s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average), calculated with Malvern Zetasizer Software 7.13. Error bars represent standard deviation obtained from the distribution.
+
+### Identification of residues defining ancestral sHsps activities
 
 In order to identify amino acids responsible for the observed new functionality of AncA1, we compared the sequences of two ancestral proteins, selecting 7 out of 10 substitutions as probable candidates. Three substitutions were removed from the analysis based on the low conservation of these positions in extant proteins (Figure 4—figure supplement 1). The remaining seven were introduced into AncA0. Resulting AncA0 + 7 protein stimulated Hsp70-Hsp100-dependent luciferase refolding at the level comparable to AncA1 (Figure 4B). To further specify key mutations, we prepared seven additional variants. In each variant, a different position in AncA0 + 7 was reversed to a more ancestral state. The substantial decrease in luciferase refolding stimulation was observed for positions 66 and 109 (Figure 4B). Next, each of these substitutions on its own (Q66H or G109D) was separately introduced into AncA0. This was not sufficient to increase AncA0 ability to stimulate luciferase refolding. However, when both substitutions were introduced simultaneously, the resulting sHsp exhibited activity similar to AncA1 (Figure 4C). What is more, when in AncA1 these two positions were reversed to AncA0-like state, the resulting sHsp lost the ability to stimulate luciferase refolding (Figure 4C). All analyzed proteins, namely AncA0 + 7, AncA0 Q66H G109D and AncA1 H66Q D109G, possess biochemical properties characteristic for sHsps, exhibiting reversible thermal deoligomerization and sequestrase activity (Figure 4—figure supplement 2 A,B). All these results show that substitutions Q66H and G109D are both sufficient and necessary for the increase in activity observed for ancestral sHsps between A0 and A1 nodes.
 
-## Identified substitutions influence α-crystallin domain properties
+### Identified substitutions influence α-crystallin domain properties
 
 Substitutions Q66H and G109D, responsible for gaining single sHsp activity, are located in the ACD within β4 and β8 strands, which form a cleft responsible for the interaction with unstructured C-terminal peptide of the neighboring sHsp dimer (Figure 5A). In order to identify possible structural underpinnings of the single sHsp activity we have predicted structures of AncA0 and AncA0 Q66H G109D ACD dimers in complex with C-terminal peptide using AlphaFold2 and in silico mutagenesis and subjected them to 0.5 µs equilibrium molecular dynamics (MD) simulations. Analysis of the C-terminal peptide interface contact probabilities in MD trajectories showed that both substituted residues contact the C-terminal peptide, although the overall contact pattern remain similar upon their introduction (Figure 5—figure supplement 1) and no major differences in the overall ACD domains structure were observed (Figure 5—figure supplement 2). To explore the possibility that identified substitutions affect the strength of this interaction, we analyzed the binding of purified ACDs of AncA0 and AncA0 Q66H G109D to C-terminal peptide using biolayer interferometry. Titrations of immobilized C-terminal peptides by different ACDs (Figure 5B, Figure 5—figure supplement 3) allowed us to determine the dissociation constants. These two substitutions increased the K0.5 of ACD binding to the C-terminal peptide from 4.3 µM to 7.1 µM at the same time increasing the Hill coefficient of the interaction from 2.3 to 3.7, indicating a modest decrease in affinity, accompanied by an increase in binding cooperativity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-v1.jpg)
+
+**Figure 5.:** (A) Structural model of complex formed by AncA0 Q66H G109D ɑ-crystallin domain dimer (purple and lilac) and AncA0 C-terminal peptide (orange). (B) Effect of Q66H G109D substitutions (green) on AncA0 (purple) ACD’s affinity to the C-terminal peptide assayed by Biolayer interferometry (BLI). Biolayer thickness at the end of the association step was used to calculate the fraction of bound peptide. Filled circles represent means of triplicate measurements, individual data points are shown as hollow circles and were fitted to the cooperative binding model (Hill equation). Values of fitted binding affinities [K0.5] (AncA0 4.3 ± 0.2 µM, AncA0 Q66H G109D 7.1 ± 0.2 µM) and Hill coefficients [n] (AncA0 2.3 ± 0.17, AncA0 Q66H G109D 3.7 ± 0.34) are indicated on the plot. (C) Effect of Q66H G109D substitutions on AncA0 ACD’s affinity to aggregated E. coli proteins bound to BLI sensor. Analysis was performed as in Figure 3A.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Heatmaps illustrating contact probabilities, derived from last 400 ns of equilibrium molecular dynamics (MD) simulations, between residues of the α–crystallin domain (ACD) (vertical-axis) and the C-terminal peptide (horizontal axis) for AncA0 (left) and AncA0 Q66H G109D (right). Number within each cell of the heatmap and cell shading represent contact probability. Schematic next to the vertical axis of AncA0 heatmap represents positioning of the ACD residues within secondary structure elements. Substituted ACD residues are underlined.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Models represent middle structures of largest clusters obtained from equilibrium molecular dynamics simulation trajectories based on the AlphaFold2 prediction. Models were superimposed on the backbone heavy atoms of the C-terminal-peptide interacting ACD monomer without dimerization loop (residues 40–74 and 95–126) and the stably interacting C-terminal peptide fragment (residues 132–137), RMSD of the superimposed regions backbone atoms – 0.81 Å, RMSD of the whole complex backbone atoms – 3.42 Å. Substituted residues in positions 66 and 109 are shown in licorice representation.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Representative binding curves for different concentrations of AncA0 ACD and AncA0 Q66H G109D ACD interacting with AncA0 C-terminal peptide; background was not subtracted. Peptide was immobilized on BLI NTA sensor via His6-Sumo tag.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Hydrodynamic diameter distributions shown as DLS signal intensity for better visualization purposes of AncA0 and AncA0 Q66H G109D measured at 25, 35, and 45 °C. Size distributions were measured by DLS. Results are shown as an average of 3 repeats. Error bars (shades) represent standard deviation. (B) Changes of hydrodynamic diameter representing maximum of the dominant peak of hydrodynamic diameter distribution by volume with temperature. Results are shown as an average of 3 repeats. Error bars represent standard deviation.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Effect of Q66H G109D substitutions on AncA0 ACD affinity to aggregated luciferase; analysis was performed as in Fig.Figure 3A. (B) Ability of AncA0 ACD and AncA0 Q66H G109D ACD to sequester aggregating luciferase. Results were compared to α–crystallin domain (ACD) of extant E. coli IbpA, as well as full-length extant E. coli IbpA. Analysis was performed as in Figure 3B. For every measurement, ten subsequent series of ten 10-s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average), calculated with Malvern Zetasizer Software 7.13. Error bars represent standard deviation obtained from the distribution. (C) Ability of AncA0 ACD and AncA0 Q66H G109D ACD to stimulate Hsp70-Hsp100-dependent luciferase disaggregation. Luciferase refolding assay was performed as in Figure 1. Activity of luciferase was measured after 1 hr refolding at 25 °C and shown as an average of 3 repeats. Error bars represent standard deviation.
 
 As this interaction is known to play a crucial role in the formation of sHsp oligomers (Fu et al., 2005; Mani et al., 2016; Simmons and Ochoterena, 2000), we used dynamic light scattering to investigate how Q66H and G109D substitutions influence the size of oligomers formed by AncA0 at different temperatures. In agreement with decreased affinity between ACD and the C-–terminal peptide, we have shown that these substitutions slightly decrease the oligomer size and facilitate AncA0 deoligomerization (Figure 5—figure supplement 4 A,B).
 
@@ -64,9 +114,17 @@ As this interaction is known to play a crucial role in the formation of sHsp oli
 
 These results allow us to conclude that substitutions Q66H and G109D in AncA0 substantially increased the sHsp ability to stimulate Hsp70-Hsp100-dependent substrate refolding by weakening the interaction of β4-β8 cleft with both the C-terminal peptide and the aggregated substrates. Despite its ability to bind aggregated substrates in biolayer interferometry assay, analyzed ACDs do not exhibit sequestrase activity and were unable to positively influence substrate refolding by the Hsp70-Hsp100 system (Figure 5—figure supplement 5B, C).
 
-## Identified substitutions define the mode of action of extant sHsps
+### Identified substitutions define the mode of action of extant sHsps
 
 As more ancestral, AncA0-like state in positions 66 and 109 is conserved in IbpA of E. coli while more modern, AncA1-like state is conserved in IbpA of E. amylovora, we decided to ask whether this difference is sufficient to explain functional differences between the two extant proteins. Therefore, we introduced AncA1-like substitutions into IbpAE.coli and AncA0-like substitutions into IbpAE.amyl. Resulting IbpAE.coli Q66H G109D, in comparison to wild-type IbpAE.coli, exhibited an increased ability to stimulate Hsp70-Hsp100-dependent luciferase refolding, as well as a decreased ability to bind aggregated substrates becoming more similar to modern E. amylovora IbpA. At the same time, IbpAE.amyl H67Q D110G significantly less efficiently stimulated luciferase refolding, while exhibiting increased ability to bind aggregated substrates in comparison to wild-type IbpAE.amyl (Figure 6A–C). Still, both new IbpA variants exhibited properties characteristic of sHsps, namely reversible thermal deoligomerization and sequestrase activity (Figure 6—figure supplement 1A, B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig6-v1.jpg)
+
+**Figure 6.:** (A) Effect of substitutions at position 66 and 109 (and homologous) on the ability of IbpA from E. amylovora and E. coli to stimulate luciferase refolding. Assay was performed as in Figure 1B. Activity of luciferase was measured after 1 h refolding at 25 °C and shown as an average of 3 repeats. Error bars represent standard deviation. (B, C) Effect of substitutions at analyzed positions on binding of IbpA from E. coli (B) and E. amylovora (C) to heat - aggregated E. coli proteins. Assay was performed as in 3 A. (D–H) Effect of substitutions at analyzed positions on inhibition of Hsp70 system binding to aggregates by extant small heat shock proteins (sHsps) (D) Experimental scheme. (E–H) Aggregate-bound sHsps differently inhibit Hsp70 binding. Biolayer interferometry (BLI) sensor with immobilized aggregated luciferase and aggregate bound sHsps was incubated with Hsp70 or buffer (spontaneous dissociation curve).Dark gray traces (dashed line) represent Hsp70 binding to immobilized aggregates in the absence of sHsps. Results are presented as an average of 5 (in the case of IbpA E. coli in panel G), 4 (in the case of IbpA E. coli Q66H G109d with Hsp70 in panel H), 2 (in the case of IbpA E. coli Q66H G109d without Hsp70 in panel H) or 3 repeats (in the case of the remaining curves). Error bars (shades) represent standard deviation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89813/elife-89813-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Measurements were performed as in Figure 3—figure supplement 2. (B) Sequestrase activity of IbpAE. coli H66Q G109D and IbpAE.amyl H67Q D110 at heat shock temperature. Measurements were performed as in Figure 3B. For every measurement, ten subsequent series of ten 10-s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average), calculated with Malvern Zetasizer Software 7.13. Error bars represent standard deviation obtained from the distribution.
 
 Above results suggest that tight sHsp binding to aggregates negatively affects the subsequent Hsp70-Hsp100-dependent substrate refolding process. It is initiated by binding of the Hsp70 system (DnaK and cochaperones DnaJ and GrpE) to aggregates that require sHsps to be outcompeted from aggregates (Żwirowski et al., 2017). To gain insight into the competition between sHsps and Hsp70 we modified the biolayer interferometry experiments and introduced the sensor with sHsps bound to luciferase aggregates into a buffer containing Hsp70 system (Figure 6D). Although biolayer interferometry cannot distinguish between proteins bound to the sensor, we took advantage of the differences in the thickness of the protein layers specific for sHsp or Hsp70 binding and also in the binding kinetics. The analysis of the Hsp70 binding to the aggregates covered with sHsps clearly shows that the presence of IbpAE.amyl or IbpAE. coli Q66H G109D on aggregates only weakly inhibits Hsp70 binding (Figure 6E and H). In contrast, the inhibition is much more pronounced when IbpAE.amyl H67Q D110G or IbpAE. coli are present on aggregates (Figure 6F and G).
 
@@ -82,33 +140,246 @@ Following, with molecular precision, the genetic events associated with the gene
 
 ## Materials and methods
 
-## Reconstruction of IbpA phylogeny
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>Clustal Omega</td>
+      <td>RRID:SCR_001591</td>
+      <td>European Bioinformatics Institute</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iq-tree</td>
+      <td>IQ-TREE</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastML</td>
+      <td>FastML</td>
+      <td>RRID:SCR_016092</td>
+      <td>Tel Aviv University</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>codeml</td>
+      <td>codeml</td>
+      <td>RRID:SCR_014932</td>
+      <td>Part of PAML software package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gromacs 2019.2</td>
+      <td>GROMACS</td>
+      <td>RRID:SCR_014565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AlphaFold-Multimer</td>
+      <td>AlphaFold-Multimer</td>
+      <td></td>
+      <td>ColabFold implementation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>PyMol</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – AncA0 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying AncA0 gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – AncA1(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying AncA1 gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – AncA0alt_all(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying AncA0alt_all gene was ordered from Genscript on the basis of reconstructed amino acid sequence For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – AncA1alt_all(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying AncA1alt_all gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – AncA0 + 7(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying AncA0 + 7 gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET3a – IbpAEa(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET3a plasmid carrying gene encoding Erwinia amylovora IbpA protein was ordered from Genscript on the basis of amino acid sequence obtained from PDB database (accession number E5BAR7). For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-AncA0 ACD (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET28a plasmid carrying AncA0 ACD gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-AncA0 Q66H H109D ACD (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET28a plasmid carrying AncA0 ACD Q66H G109D gene was ordered from Genscript on the basis of reconstructed amino acid sequence. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Champion pET SUMO Expression System (plasmid)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. # K30001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a – His6-SUMO-C-peptide (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET28a plasmid carrying His6-SUMO-C-peptide gene was ordered from Genscript on the basis of reconstructed amino acid sequence of AncA0 C-terminal peptide. For the sequence of synthesized gene see Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OuantiLum Recombinant Luciferase</td>
+      <td>Promega</td>
+      <td>Cat. # E1701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Creatin Kinase</td>
+      <td>Roche</td>
+      <td>Cat. # 10127566001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DnaK</td>
+      <td>DOI:10.1016 /j.jmb.2008.12.009</td>
+      <td></td>
+      <td>DnaK protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DnaJ</td>
+      <td>DOI:10.1016 /j.jmb.2008.12.009</td>
+      <td></td>
+      <td>DnaJ protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ClpB</td>
+      <td>DOI:10.1016 /j.jmb.2008.12.009</td>
+      <td></td>
+      <td>ClpB protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IbpAEc</td>
+      <td>DOI:10.1016 /j.jmb.2008.12.009</td>
+      <td></td>
+      <td>IbpA protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IbpBEc</td>
+      <td>DOI: 10.1016 /j.jmb.2021.167054</td>
+      <td></td>
+      <td>IbpB protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GrpE</td>
+      <td>DOI: j.jmb.2008.12.009</td>
+      <td></td>
+      <td>GrpE protein from E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-tagged luciferase</td>
+      <td>DOI: 10.1371/journal.pgen.1008479</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat. # E151A, E152A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21 (DE3)</td>
+      <td>ther</td>
+      <td></td>
+      <td>Laboratory collection</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reconstruction of IbpA phylogeny
 
 Amino acid sequences of 77 IbpA orthologs from Enterobacterales were obtained from NCBI and UniProt databases and aligned using Clustal Omega (Sievers et al., 2011). Alignment was trimmed manually. JTT + R3 was identified as the best-fit model by iq-tree, using Bayesian Information Criterion, and was used in the analysis (Kalyaanamoorthy et al., 2017; Nguyen et al., 2015). The phylogenetic tree was inferred using iq-tree on the basis of 328 iterations of ML search with 100 rapid bootstraps replicates (Nguyen et al., 2015).
 
-## Reconstruction of ancestral IbpA amino acid sequences
+### Reconstruction of ancestral IbpA amino acid sequences
 
 Ancestral sequence reconstruction was performed on the basis of multiple sequence alignment of 77 amino acid sequences of IbpA orthologs from Erwiniaceae and Enterobacreriaceae as well as a phylogenetic tree of those orthologs (see above). Marginal reconstruction of ancestral sequences was performed with FastML program based on ML algorithm and Bayesian approach using JTT substitution matrix with gamma parameter (Ashkenazy et al., 2012; Cohen and Pupko, 2011; Cohen et al., 2008; Jones et al., 1992; Pupko et al., 2002; Simmons and Ochoterena, 2000).
 
 Alternative ancestral sequences for AncA0 and AncA1 proteins were obtained by substituting the most likely amino acid on every uncertain position (defined as a position with more than one amino acid with posterior probability ≥0.2) with the amino acid with the second highest posterior probability (Eick et al., 2017).
 
-## Analysis of natural selection
+### Analysis of natural selection
 
 Analysis of natural selection was performed using codeml. First, Pal2Nal was used to obtain codon alignment based on the multiple sequence alignment of amino acid sequences of IbpA orthologs from Enterobacterales (see above) as well as corresponding nucleotide sequences obtained from the NCBI database. Resulting codon alignment was then trimmed manually and used together with the phylogenetic tree obtained earlier (see above) for the selection analysis.
 
 For branch model analysis, models M0 (null hypothesis) and two-ratio (with either AncA0-AncA1 branch or Erwiniaceae clade as foreground) were used. For branch-site model analysis, models A null (null hypothesis) and A were used, with foreground branches selected as above. Statistical significance of different models was estimated with Likelihood Ratio Test (LRT) (Jeffares et al., 2015; Yang, 1998; Yang, 2007; Yang and Nielsen, 2002).
 
-## Protein purification
+### Protein purification
 
-## Purification of IbpA proteins
+#### Purification of IbpA proteins
 
 pET3a plasmids containing AncA0, AncA1, AncA0 + 7, AncA0 alt_all, AncA1alt_all, and IbpAEa genes were ordered from GeneScript (Supplementary file 5). Point mutations were introduced using site-directed mutagenesis and confirmed by sequencing. Proteins were overproduced in E. coli BL21(DE3). Cells were then lysed by sonication in Qsonica sonicator (13% amplitude, 2 min 30 s process time, 15 s pulse-ON time, 45 s pulse-OFF time) in lysis buffer L1 (50 mM Tris pH 7.5, 50 mM NaCl, 5 mM EDTA, 10% glycerol, 5 mM β-mercaptoethanol). Insoluble fraction containing proteins of interest was separated by centrifugation (75,000 x g, 30 min, 4 °C) and resolubilized in buffer A (40 mM Tris pH 7.5, 50 mM NaCl, 10% glycerol, 5 mM β-mercaptoethanol, 6 M urea) and then centrifuged (75,000 x g, 30 min, 4 °C). Supernatant was loaded on Q-Sepharose chromatography column equilibrated with buffer A and eluted in 50 mM–500 mM NaCl gradient. Fractions containing proteins of interest were then dialyzed to buffer B (40 mM Tris pH 8.5, 50 mM NaCl, 10% glycerol, 5 mM β-mercaptoethanol) and loaded on Q-Sepharose chromatography column equilibrated with buffer B. Flow-through fraction was collected and dialyzed to buffer C (50 mM Tris pH 7.5, 150 mM KCl, 5% (v/v) glycerol, 5 mM β-mercaptoethanol).
 
-## Purification of ACD domains
+#### Purification of ACD domains
 
 ACDs of IbpAEc, AncA0, and AncA0 Q66H G109D were purified as described previously (Piróg et al., 2021) and as a final step dialyzed to buffer G (50 mM Tris pH 7.5, 150 mM KCl, 5 mM β-mercaptoethanol).
 
-## Purification of His6-SUMO and His6-SUMO-C-terminal peptide of AncA0 construct
+#### Purification of His6-SUMO and His6-SUMO-C-terminal peptide of AncA0 construct
 
 His6-SUMO was purified using the Champion pET SUMO Expression System. pET28a plasmid containing gene encoding His6-SUMO fused with C-terminal peptide of AncA0 (PEAMKPPRIEIN) was ordered from GeneScript (Supplementary file 5). Proteins were overproduced in E. coli BL21(DE3). Cells were then lysed by sonication in Qsonica sonicator (20% amplitude, 2 min process time, 5 s pulse-ON time, 10 s pulse-OFF time) in lysis buffer L2 (40 mM Tris pH 7.5, 100 mM NaCl, 10% glycerol, 10 mM imidazole, 2 mM β-mercaptoethanol). Insoluble fractions were separated by centrifugation for 30 min at 70,000 x g and supernatants, containing proteins of interest, were incubated for 1 hr with Ni-NTA resin equilibrated with buffer L2. Resins were then washed with the buffer D (40 mM Tris pH 7.5, 100 mM NaCl, 10% glycerol, 40 mM imidazole, 2 mM β-mercaptoethanol) Proteins of interest were eluted from the columns with the buffer E (40 mM Tris pH 7.5, 100 mM NaCl, 10% glycerol, 400 mM imidazole, 2 mM β-mercaptoethanol) and then dialyzed to buffer C (as above).
 
@@ -118,11 +389,11 @@ Purity of purified proteins was assessed with SDS-PAGE electrophoresis with Coom
 
 OuantiLum Recombinant Luciferase was purchased from Promega. Creatin Kinase from rabbit muscle was purchased from Roche.
 
-## Luciferase refolding assay
+### Luciferase refolding assay
 
 1,5 μM recombinant firefly luciferase in buffer F (50 mM Tris pH 7.5, 150 mM KCl, 20 mM MgCl2, 2.5 mM DTT) was denatured by incubation for 10 min at 44 °C alone or in the presence of 10 μM sHsps (3 uM IbpAEc + 7 μM IbpBEc in the case of two-protein system from E. coli). Denatured luciferase was then incubated at 25 °C with Hsp70 system (1 μM DnaK, 0.4 μM DnaJ, and 0.3 μM GrpE), 2 μM ClpB, and ATP regeneration system (5 mM ATP, 0.1 mg/ml creatine kinase and 18 mM creatine phosphate). For experiment presented in Figure 3—figure supplement 3D, higher concentration of the Hsp70 system was used (2 μM DnaK, 0.8 μM DnaJ, and 0.6 μM GrpE). At different timepoints luciferase activity was measured with GLOMAX 20/20 luminometer, using the Luciferase Assay System from Promega. Results are presented as averages of at least three independent repeats ± standard deviation.
 
-## DLS measurements
+### DLS measurements
 
 Dynamic Light Scattering measurements were performed using Malvern Instruments ZetaSizer Nano S instrument, at 40 μl sample volume, scattering angle of 173° and wavelength of 633 nm. For every measurement, a minimum of 10 subsequent series of ten 10 s runs were averaged and particle size distribution was calculated by fitting to 70 size bins between 0.4 and 10,000 nm, as previously described (Żwirowski et al., 2017).
 
@@ -132,17 +403,21 @@ For measuring the influence of substitutions on oligomer formation, the size of 
 
 For assembly formation (sequestrase) assay, 1.5 μM firefly luciferase in buffer F was denatured alone or in the presence of different sHsp concentrations by incubation at 44 °C for 10 min. Size of obtained luciferase aggregates was then measured by DLS at 25 °C. Results are presented as an average hydrodynamic diameter of measured particles weighted by intensity (Z-average) ± standard deviation.
 
-## Biolayer interferometry (BLI) measurements
+### Biolayer interferometry (BLI) measurements
 
 sHsps interactions with aggregated luciferase or aggregated E. coli lysate were measured using the Octet K2 system. Anchoring layer of his-tagged luciferase was attached to Octet NTA Biosensors by 5 min incubation in 0.6 mg/ml his-tagged luciferase in denaturing conditions in buffer UF (50 mM Tris pH 7.5, 4.5 M urea, 150 mM KCl, 20 mM MgCl2, 2.5 mM DTT) at 25 °C with 350 rpm shaking. Sensors were then incubated for 5 min as above in buffer H (50 mM Tris pH 7.5, 150 mM KCl, 20 mM MgCl2, 5 mM β-mercaptoethanol) to remove urea and unbound luciferase. The protein aggregate was then formed on the sensor by incubation for 10 min in 0,5 mg/ml His-tagged luciferase or 0.2 mg/ml E. coli lysate in buffer H at 44 °C (in case of the luciferase) or 55 °C (in case of the lysate). Sensors were then again incubated in buffer H for 5 min at 25 °C with 350 rpm shaking to remove excess protein. Sensors with attached aggregate were placed in the Octet system in H buffer for 60 s baseline measurement and then placed for 1 hr in 5 μM sHsp solution in H buffer to measure sHsps association. Sensors were then moved for 1 hr to buffer H to measure protein dissociation. Measurements were performed with 1000 rpm shaking at 44 °C (in case of full-length sHsps) or at 25 °C (in case of ACDs). Full-length proteins were preincubated at 44 °C for 10 min before measurement.
 
 sHsps displacement by Hsp70 system was measured using ForteBio BLItz. Sensors with attached aggregates were prepared as described above, with buffer F (50 mM Tris pH 7.5, 150 mM KCl, 20 mM MgCl2, 2.5 mM DTT) instead of buffer H. Baseline biolayer was measured for 60 s. Sensors were then placed in 5 µM sHsp solution in buffer F, previously preincubated for 10 min at 44 °C. sHsps association was measured for 10 min. Sensors were then moved to either buffer F or Hsp70 system in buffer F (0.7 µM DnaK, 0.28 µM DnaJ, 0.21 µM GrpE, 5 mM ATP, 0.1 mg/ml creatine kinase, 18 mM creatine phosphate). Hsp70 system binding and sHsps dissociation were measured for 1 hr. Measurements were performed at room temperature with 2000 rpm shaking.
 
-ACD interactions with C-terminal peptide were measured using Octet K2 system. Octet NTA Biosensors were placed in buffer C (50 mM Tris pH 7.5, 150 mM KCl, 5% glycerol, 5 mM β-mercaptoethanol) and baseline signal was measured for 60 s. Sensors were then placed in 2.5 µM His6-SUMO-C-peptide solution in buffer C and incubated for 15 min. Surplus His6-SUMO-C-peptide was then removed by incubation in G buffer for 15 min. Sensors were then moved to ACD solution and association was measured for 48 min. After that, ACD dissociation was measured in buffer G for 10 min. Measurements were performed with 1000 rpm shaking at 25 °C. Measurements were performed for different ACD concentrations in triplicates. Biolayer thickness at the end of association stage was corrected for the nonspecific binding using control substituting His6-SUMO for His6-SUMO-C-peptide and converted to fraction bound by min-max scaling between 0 and 1 using minimal and maximal triplicate averages of biolayer thickness. To determine dissociation constant fraction bound as a function of ACD concentration was fitted to the Hill equation using SciPy implementation (Virtanen et al., 2020) of dogbox algorithm:fb = XnK0.5n+Xn
+ACD interactions with C-terminal peptide were measured using Octet K2 system. Octet NTA Biosensors were placed in buffer C (50 mM Tris pH 7.5, 150 mM KCl, 5% glycerol, 5 mM β-mercaptoethanol) and baseline signal was measured for 60 s. Sensors were then placed in 2.5 µM His6-SUMO-C-peptide solution in buffer C and incubated for 15 min. Surplus His6-SUMO-C-peptide was then removed by incubation in G buffer for 15 min. Sensors were then moved to ACD solution and association was measured for 48 min. After that, ACD dissociation was measured in buffer G for 10 min. Measurements were performed with 1000 rpm shaking at 25 °C. Measurements were performed for different ACD concentrations in triplicates. Biolayer thickness at the end of association stage was corrected for the nonspecific binding using control substituting His6-SUMO for His6-SUMO-C-peptide and converted to fraction bound by min-max scaling between 0 and 1 using minimal and maximal triplicate averages of biolayer thickness. To determine dissociation constant fraction bound as a function of ACD concentration was fitted to the Hill equation using SciPy implementation (Virtanen et al., 2020) of dogbox algorithm:
+
+$$
+f_{b} = \frac{X^{n}}{K_{0.5}^{n}+X^{n}}
+$$
 
 Where [X] is the total ACD concentration, K0.5-ACD concentration required to reach half-maximum binding at equilibrium, n-Hill coefficient, fb-fraction bound. Standard deviations of fitted K0.5 and n values were derived from the diagonal of the optimized parameters covariance matrix.
 
-## Molecular dynamics (MD)
+### Molecular dynamics (MD)
 
 All MD simulations were performed using Gromacs 2019.2 (Van Der Spoel et al., 2005) and CHARMM36-jul2021 as a force field (Huang et al., 2017). Simulations were performed in the isothermal-isobaric (NPT) ensemble, where the temperature was kept at 310 K using v-rescale thermostat (Bussi et al., 2007) with a time constant of 0.1 ps and the pressure was held at 1 bar using Parinello-Rahman barostat (Parrinello and Rahman, 1981). Lennard-Jones potential with a cut-off of 1.0 nm was used to describe Van der Waals interactions. Computation of long-range electrostatic interactions was performed using the particle mesh Ewald (PME) method (Essmann et al., 1995) with a Fourier grid spacing of 0.12 nm and a real space cutoff of 1.0 nm. Bonds between hydrogen and protein heavy atoms were constrained by P-LINCS (Hess et al., 1997), and water molecules geometry was constrained by SETTLE (Miyamoto and Kollman, 1992). Integration of equations of motion was performed by leap-frog algorithm (Van Gunsteren and Berendsen, 1988) with a time step of 2 fs. Periodic boundary conditions were applied in all dimensions.
 

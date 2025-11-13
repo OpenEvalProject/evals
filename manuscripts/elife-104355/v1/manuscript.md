@@ -18,10 +18,10 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 Key Laboratory of Bio-resources and Eco-environment (Ministry of Education), College of Life Sciences, Sichuan University Chengdu China
+1. Key Laboratory of Bio-resources and Eco-environment (Ministry of Education), College of Life Sciences, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
 2. Sichuan Key Laboratory of Development and Application of Monkey Models for Human Major Disease Sichuan China
 3. SCU-SGHB Joint Laboratory on Non-human Primates Research Meishan China
-4. https://ror.org/02drdmm93 Institute of Medical Biology, Chinese Academy of Medical Sciences & Peking Union Medical College Yunnan China
+4. Institute of Medical Biology, Chinese Academy of Medical Sciences & Peking Union Medical College Yunnan China ([ROR:02drdmm93](https://ror.org/02drdmm93))
 
 † Corresponding author
 
@@ -41,19 +41,98 @@ Here, this study identified spontaneous development of T2DM in individuals (here
 
 ## Results
 
-## Metagenome and 16S sequencing demonstrate alterations on gut microbiota in spontaneous T2DM macaques
+### Metagenome and 16S sequencing demonstrate alterations on gut microbiota in spontaneous T2DM macaques
 
 We identified eight spontaneous T2DM macaques out of 1698 individuals from long-term glucose monitoring in a captive population (Supplementary file 1). The fasting plasma glucose (FPG), fasting plasma insulin (FPI), and HOMA-IR levels in the T2DM macaques were significantly higher than in the control group (p<0.01), suggesting insulin resistance in T2DM macaques. However, glycosylated hemoglobin A1c (HbA1c), triglycerides (TG), total cholesterol (TC), high-density lipoprotein cholesterol (HDL), low-density lipoprotein cholesterol (LDL), and BMI did not significantly differ from the controls (p>0.05, Table 1). Comparison of gut microbiota between the two groups based on 16 S rRNA amplicon found that both Shannon and Simpson indices decreased in T2DM macaques but it was not significantly different from controls (p>0.05, Figure 1A and B). PCoA indicated that the microbiota composition of spontaneous T2DM macaques was different from the control group (Figure 1C). As one of the most dominant families in both groups, Lachnospiraceae showed significantly higher abundance in the T2DM group (14.48%) than in the control group (6.66%). While the abundance of the Lactobacillaceae family was significantly greater in the control group (25.95%) compared to spontaneous T2DM macaques (20.88%) (Figure 1D). A total of 21 microbes were identified as differential microbes between the T2DM group and control group, where ten microbes, including Erysipelotrichaceae and five members in Lachnospiraceae family (Ruminococcus gnavus (current name: Mediterraneibacter gnavus), Lachnospira, Coprococcus sp. Dorea longicatena, and Roseburia) were significantly greater in the T2DM group (Figure 1E).
 
+**Table 1.**
+ Physiological and biochemical parameters of Control and type 2 diabetes mellitus (T2DM) groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>T2DM (n=8)</th>
+      <th>Control (n=8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FPG (mmol/L)</td>
+      <td>7.75±1</td>
+      <td>4.05±1.02**</td>
+    </tr>
+    <tr>
+      <td>FPI (μU/mL)</td>
+      <td>17.97±8.50</td>
+      <td>6.45±2.56**</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR</td>
+      <td>6.24±3.06</td>
+      <td>1.20±0.65**</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>14.03±7.71</td>
+      <td>14.30±1.42</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>3.78±0.70</td>
+      <td>3.26±0.62</td>
+    </tr>
+    <tr>
+      <td>TG (mmol/L)</td>
+      <td>0.97±0.53</td>
+      <td>0.68±0.42</td>
+    </tr>
+    <tr>
+      <td>TC (mmol/L)</td>
+      <td>3.30±0.98</td>
+      <td>3.52±0.86</td>
+    </tr>
+    <tr>
+      <td>HDL (mmol/L)</td>
+      <td>1.23±0.40</td>
+      <td>1.42±0.38</td>
+    </tr>
+    <tr>
+      <td>LDL (mmol/L)</td>
+      <td>1.36±0.44</td>
+      <td>1.47±0.57</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05, **p<0.01.FPG: fasting plasma glucose (normal range:≤6.1 mmol/L); FPI: fasting plasma insulin (normal range:≤12 μU/mL); HOMA-IR: homeostasis model assessment- insulin resistance (normal range: ≤2.67); BMI: body mass index; HbA1c: glycosylated hemoglobin A1c (normal range:<6.5%); TG: triglycerides (normal range: 0.95±0.47 mmol/L); TC: total cholesterol (normal range: 3.06±0.98 mmol/L); HDL: high-density lipoprotein cholesterol (normal range: 1.62±0.46 mmol/L); LDL: low-density lipoprotein cholesterol (normal range: 2.47±0.98 mmol/L). (Matsuda and DeFronzo, 1999; Lorenzo et al., 2012; Cowie et al., 2010; Yu et al., 2019)._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig1-v1.jpg)
+
+**Figure 1.:** (A) Alpha diversity estimates (Shannon index) between T2DM and control groups (ns, not significant, two-tailed t-test, n=8). (B) Alpha diversity estimates (Simpson index) between T2DM and control groups (ns, not significant, two-tailed t-test, n=8). (C) Principal Coordinate Analysis (PCoA) (n=8). (D) Differential analysis of gut microbial composition in T2DM and control groups (n=8). (E) LEfSe analysis between T2DM and control groups (n=8). (F) Differential analysis of gut microbial function in T2DM and control groups (n=5). The pathways with red color were associated with T2DM and inflammation. Error bar is mean with ± standard deviation (s.d.). (G) Differential analysis of gut microbial Carbohydrate-Active enZYme (CAZy) enzyme in T2DM and control groups (n=5). CBMs: carbohydrate-binding module (p=0.022, two-tailed t-test); GTs: Glycosyl Transferases (p=0.013, two-tailed t-test); PLs: Polysaccharide Lyases (p=0.017, two-tailed t-test); AA: Auxiliary activity enzymes (ns, not significant, two-tailed t-test); GH: Glycoside hydrolases (ns, not significant, two-tailed t-test); CE: Carbohydrate esterases (p=0.039, two-tailed t-test). For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. In c, ellipses represent the 95% confidence intervals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Differential microbes screened by metagenome analysis (p<0.05, two-tailed t-test). T2DM: type 2 diabetes mellitus. (B) The proportion of all metabolites. (C) Correlation analysis between differential untargeted metabolites and differential microbes (Spearman’s Rho). (D) Correlation analysis between differential targeted metabolites and differential microbes (Spearman’s Rho), *p<0.05. Data shown are from five individuals per group.
+
 The metagenome results showed that the T2DM group had a higher abundance of Erysipelorictchaeae, Eubacterium rectale, Lachnospiraceae, Negativicutes, Blautia, and Coriobacteriia than the control group (Figure 1—figure supplement 1A). Functional enrichment demonstrated a total of 74 KEGG pathways with significant differences between the two groups. These pathways were mainly associated with T2DM and inflammation, including type II diabetes mellitus, glucagon signaling pathway, starch and sucrose metabolism, lipid metabolism, and toll-like receptor signaling pathways (Figure 1F). Among the six CAZy enzyme families, the Carbohydrate-binding module (CBMs), Glycosyl Transferases (GTs), Carbohydrate esterases (CEs), and Polysaccharide Lyases (PLs) families were significantly upregulated in the T2DM group, indicating significant changes in carbohydrate metabolism (Figure 1G). The results of metagenome and 16 S sequencing demonstrated significant alterations in the composition and function of gut microbiota in spontaneous T2DM macaques, with a greater abundance of microbes associated with T2DM and fewer beneficial microbes.
 
-## Fecal metabolome and blood transcriptome reveals dysfunction of fatty acid β oxidation and tryptophan metabolism in T2DM macaques
+### Fecal metabolome and blood transcriptome reveals dysfunction of fatty acid β oxidation and tryptophan metabolism in T2DM macaques
 
 The UHPLC-MS-based metabolome analysis on fecal samples of T2DM and control macaques identified 1564 metabolites belonging to various types of secondary metabolites, with lipids and lipid-like molecules being most abundant (31.1%) (Figure 1—figure supplement 1B). We found 64 significantly differential metabolites between the two groups using a combined multidimensional statistical analysis (OPLS-DA) and univariate statistical analysis (t-test) (VIP >1, p<0.05) (Figure 2A and B, Supplementary file 2). Among them, muscon, indole-3-acetaldehyde, and serotonin were significantly lower in the T2DM group (Figure 2C) and are associated with anti-inflammatory activity (Du et al., 2018; Alexeev et al., 2018; Manzella et al., 2018). Notably, 64 differential metabolites were significantly enriched in one pathway: tryptophan metabolism (Figure 2D), and we identified two significantly different metabolites, indole-3-acetaldehyde and serotonin in this pathway. Both metabolites are microbiota-derived tryptophan metabolites and the ligands for AhR (Alexeev et al., 2018; Manzella et al., 2018). The lower concentration of AhR ligands may lead to the development of inflammation and metabolic syndromes in humans (Natividad et al., 2018). In addition, we found the contents of many acylcarnitine metabolites were significantly higher in the T2DM group (VIP >1, p<0.1), including l-propionylcarnitine, hexanoyl-l-carnitine, (r)-butyrylcarnitine, and isovaleryl-l-carnitine (Supplementary file 2). Among them, l-propionylcarnitine, a kind of acylcarnitines, was the most upregulated metabolite in the T2DM macaques (FC: 16.19) (Figure 2C). Acylcarnitines are products of incomplete oxidation of LCFAs, which can activate pro-inflammatory signaling pathways and ultimately inhibit insulin activity (Rutkowsky et al., 2014). Our results indicated incomplete LCFAs β oxidation in spontaneous T2DM macaques, while similar characteristics were also observed in insulin-resistant and T2DM humans (Tilg and Moschen, 2008; Koves et al., 2008).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig2-v1.jpg)
+
+**Figure 2.:** (A) Orthogonal partial least squares discriminant analysis (OPLS-DA) score plots based on the metabolic profiles. (B) Volcano plots of metabolomics (p<0.05, two-tailed t-test). (C) Fecal metabolites with significant differences between T2DM and control groups (VIP >1, p<0.05, two-tailed t-test). (D) Enrichment analysis of the differentially abundant pathways between T2DM and control groups (p<0.05, two-tailed t-test). (E) Non-metric multidimensional scaling (NMDS) analysis between T2DM and control groups (p=0.019, two-tailed t-test). (F) Volcano plots of DEGs (log fold change ≥1, p<0.05, two-tailed t-test). (G) The GO and KEGG pathway enrichment analyses (p<0.05, two-tailed t-test). (H) Weighted Gene Co-Expression Network Analysis (WGCNA). (I) Venn analysis between hub genes and DEGs. In A and E, ellipses represent the 95% confidence intervals. Data shown are from eight individuals per group.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Total of 26 differential pathways were enriched (FDR<0.05). (B) The changes of gene expression in insulin resistance pathway compared to the control group, red color illustrating the up-regulation of genes and blue showed the down-regulation of genes in type 2 diabetes mellitus (T2DM) group, and the darker the color of the genes, the greater the |log10FC| value. (C) WGCNA functional enrichment. Data shown are from eight individuals per group.
+
 Blood transcriptome analysis was consistent with metabolome results, indicating dysfunction of fatty acid β-oxidation and inflammation in T2DM macaques. Gene expression in T2DM macaques exhibited significant differences from the controls (Figure 2E), and a total of 161 differentially expressed genes (DEGs) (26 upregulated and 135 downregulated) were identified in T2DM macaques at a FDR level of 0.05 (Figure 2F). Enrichment analysis of the DEGs was linked to diabetes, fatty acid metabolism, and inflammation, such as diabetic cardiomyopathy, glucose homeostasis, fatty acid metabolic process, and chemokine production (Figure 2G). We also identified 26 differential enrichment pathways between the two groups by aggregate fold change (AFC), and most were associated with insulin resistance and inflammation, including insulin resistance, PI3K-Akt signaling pathway, bacterial invasion of epithelial cells, and NOD-like receptor signaling pathway (Figure 2—figure supplement 1A). As shown in the insulin resistance pathway, expression of IL6 and IRS1 were upregulated, while INSR was downregulated in T2DM macaques (Figure 2—figure supplement 1B). The WGCNA analysis identified four modules that were related to T2DM. Dark green module and brown module were significantly positively correlated with T2DM, while green module and darkred module were negatively correlated with T2DM (Figure 2H). Genes in the dark green module and brown module related to lipolysis and inflammation were significantly upregulated in T2DM macaques, and genes in the green module and darkred module related to fatty acid metabolism and insulin secretion were significantly downregulated (Figure 2—figure supplement 1C). With the cut-off (|kME>0.8|), a total of 546 genes in the four modules were identified as hub genes (Supplementary file 3). Of these 546, 102 hub genes were also DEGs (Figure 2I). Several of these genes have been reported as correlated with T2DM in humans, including IGF2BP2, LEPR, RAP1A, SESTRIN 3, and ITLN1 (Lee et al., 2008; Su et al., 2016; Zhao et al., 2014; Nascimento et al., 2013; Tabassum et al., 2012). In addition, ACSM3, HADHB, and EFHB are involved in fatty acid β-oxidation and inflammation (Junková et al., 2021; Sekine et al., 2022; Howson et al., 2009).
 
-## Validation of LCFAs accumulation and inflammation in T2DM macaques
+### Validation of LCFAs accumulation and inflammation in T2DM macaques
 
 Collectively, metabolome and transcriptome results indicated dysfunction in fatty acid β oxidation and tryptophan metabolism in T2DM macaques, which may lead to LCFA accumulation and inflammation. To support this conclusion, we performed targeted medium- and long-chain fatty acid mass spectrometry of plasma and examined serum inflammatory cytokines in the macaques. A total of 34 fatty acids were detected, and among the five types of fatty acids, the concentration of saturated fatty acid (SFA) was significantly greater in the T2DM group (p<0.05, Figure 3A), while other types of fatty acids were not significantly different between the two groups (p>0.05, Figure 3B–E). In particular, concentrations of PA, palmitoleic acid, and oleic acid were significantly higher in the T2DM group than control group (p<0.05 and VIP >1). The concentration of PA in the plasma of T2DM macaques increased, while the concentration of palmitic acid in the stool decreased (Figure 3F and G, Supplementary file 2). Increased content of PA, palmitoleic acid, and oleic acid in the plasma was also found in human T2DM (Xu et al., 2020; Liu et al., 2010). PA was an important metabolite mediating insulin resistance through three main mechanisms, being increased diacylglycerol and ceramide synthesis, mitochondrial and endoplasmic reticulum stress, and activation of pro-inflammatory pathways through membrane receptors (Ertunc and Hotamisligil, 2016; Salvadó et al., 2015; Tumova et al., 2016; Cani et al., 2007). Analysis on the serum inflammatory cytokines found that IL-1β was significantly higher in the T2DM group (p<0.05, Figure 3H), but TNF-α and IL-6 levels showed no significant difference between the two groups (p>0.05, Figure 3I and J). IL-1β is a major player in a variety of autoinflammatory diseases and a key promoter of T2DM systemic and tissue inflammation (Dinarello et al., 2010). Moreover, blood routine examination showed an increase in white blood cell (WBC) number, neutrophil (NEU) percentage and NEU number and a decrease of lymphocyte (LYM) percentage and LYM number, also indicating the inflammation in the T2DM macaques (p<0.05, Table 2).
 
@@ -61,9 +140,147 @@ Collectively, metabolome and transcriptome results indicated dysfunction in fatt
 
 **Figure 3.:** (A–E) The contents of saturated fatty acid (SFA) (A, p=0.038), MUFA (B), PUFA (C), N3 (D), and N6 (E) in plasma (ns, not significant, two-tailed t-test). (F) The univariate analysis by two-tailed t-test, error bar is mean with ±s.d. (G) The multidimensional analysis by VIP value (VIP >1). (H–J) The contents of serum inflammatory cytokines, including IL-1β (H, p=0.032), TNF-α (I), and IL-6 (J) (ns, not significant, two-tailed t-test). (K) Correlation analysis between DEGs, differential metabolites, and differential microbes using Spearman rank correlation (|r|>0.5, adj p<0.05). For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. Data shown are from seven to eight individuals per group.
 
+**Table 2.**
+ Blood routine examination of Control and type 2 diabetes mellitus (T2DM) groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>T2DM (n=7)</th>
+      <th>Control (n=7)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WBC (10e9/L)</td>
+      <td>15.63±4.66</td>
+      <td>11.32±2.19*</td>
+    </tr>
+    <tr>
+      <td>RBC (10e12/L)</td>
+      <td>5.47±0.51</td>
+      <td>5.77±0.43</td>
+    </tr>
+    <tr>
+      <td>HGB (g/L)</td>
+      <td>129.57±15.48</td>
+      <td>136.71±9.60</td>
+    </tr>
+    <tr>
+      <td>HCT (%)</td>
+      <td>41.31±3.64</td>
+      <td>44.22±3.12</td>
+    </tr>
+    <tr>
+      <td>MCV (fl)</td>
+      <td>74.13±2.49</td>
+      <td>76.74±2.00</td>
+    </tr>
+    <tr>
+      <td>MCH (pg)</td>
+      <td>23.17±1.00</td>
+      <td>23.71±0.60</td>
+    </tr>
+    <tr>
+      <td>MCHC (g/L)</td>
+      <td>312.86±10.16</td>
+      <td>309±8.14</td>
+    </tr>
+    <tr>
+      <td>RDW (%)</td>
+      <td>15.23±2.12</td>
+      <td>14.69±1.74</td>
+    </tr>
+    <tr>
+      <td>PLT (10e9/L)</td>
+      <td>402±86.66</td>
+      <td>371.57±86.42</td>
+    </tr>
+    <tr>
+      <td>MPV (fl)</td>
+      <td>10.54±1.62</td>
+      <td>10.24±1.12</td>
+    </tr>
+    <tr>
+      <td>PCT (%)</td>
+      <td>0.42±0.08</td>
+      <td>0.38±0.09</td>
+    </tr>
+    <tr>
+      <td>PDW (%)</td>
+      <td>14.94±0.58</td>
+      <td>14.83±1.64</td>
+    </tr>
+    <tr>
+      <td>LYM% (%)</td>
+      <td>23.67±10.26</td>
+      <td>47.71±8.13**</td>
+    </tr>
+    <tr>
+      <td>LYM# (10e9/L)</td>
+      <td>3.46±1.66</td>
+      <td>5.39±1.52*</td>
+    </tr>
+    <tr>
+      <td>MON% (%)</td>
+      <td>4.18±3.34</td>
+      <td>6.18±2.29</td>
+    </tr>
+    <tr>
+      <td>MON# (10e9/L)</td>
+      <td>0.65±0.62</td>
+      <td>0.71±0.38</td>
+    </tr>
+    <tr>
+      <td>NEU% (%)</td>
+      <td>71.13±13.23</td>
+      <td>44.28±8.96**</td>
+    </tr>
+    <tr>
+      <td>NEU# (10e9/L)</td>
+      <td>11.36±4.91</td>
+      <td>5.00±1.38**</td>
+    </tr>
+    <tr>
+      <td>EOS% (%)</td>
+      <td>0.91±0.69</td>
+      <td>1.50±1.94</td>
+    </tr>
+    <tr>
+      <td>EOS# (10e9/L)</td>
+      <td>0.14±0.12</td>
+      <td>0.17±0.22</td>
+    </tr>
+    <tr>
+      <td>BAS% (%)</td>
+      <td>0.12±0.13</td>
+      <td>0.33±0.47</td>
+    </tr>
+    <tr>
+      <td>BAS# (10e9/L)</td>
+      <td>0.02±0.02</td>
+      <td>0.04±0.07</td>
+    </tr>
+    <tr>
+      <td>NRBC# (10e9/L)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>NRBC% (%)</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05, **p<0.01.WBC: white blood cell; RBC: red blood cell; HGB: hemoglobin; HCT: hematocrit; MCV: mean corpuscular volume; MCH: mean corpuscular hemoglobin; MCHC: mean corpuscular hemoglobin concentration; RDW: red blood cell distribution width; PLT: platelet; MPV: mean platelet volume; PCT: procalcitonin; PDW: platelet volume distribution width; LYM%: lymphocyte percentage; LYM#: lymphocyte value; MON%: monocytes percentage; MON#: monocytes value; NEU%: neutrophil percentage; NEU#: neutrophil value; EOS%: eoseosinophil percentage; EOS#: eoseosinophil value; BAS%: basophil percentage; BAS#: basophil value; NRBC%: nucleated red blood cell percentage; NRBC#: nucleated red blood cell value._
+
 To investigate the effect of gut microbiota on the LCFAs accumulation and inflammation in T2DM macaques, we performed a correlation analysis among the DEGs, differential metabolites, and differential microbes using Spearman’s rank correlation. Four differential microbes in Lachnospiraceae family (Coprococcus, Lachnospira, Roseburia, and Dorea longicatena) were significantly associated with three differential metabolites of PA, palmitoleic acid, and oleic acid (|r|>0.5, adj p<0.05), suggesting the participation of Lachnospiraceae microbes in LCFAs accumulation in T2DM macaques (Figure 3K). In addition, the bacteria in class Coriobacteriia was also associated with the three LCFAs (|r|>0.5, adj p<0.05, Figure 1—figure supplement 1C and D).
 
-## Fecal microbiota transplantation (FMT) with high content PA food induce prediabetes in mice
+### Fecal microbiota transplantation (FMT) with high content PA food induce prediabetes in mice
 
 To determine the causative effect of gut microbiota and PA on T2DM development, we collected feces from the spontaneous T2DM macaques and performed FMT in antibiotic-pretreated mice. Mice were either administered by FMT (FT), fed with a high concentration PA diet (PA), or were combined FMT and PA diet (FTPA). A control group was used and they were fed with normal commercial food and lacked FMT (Figure 4A). FPG monitoring found that FPG levels in the FTPA group and FT group increased continuously from day 60 (Figure 4B), while the control group maintained stable FPG levels throughout the 120 days. The FTPA group showed the highest FPG of 6.7 mmol/L at day 120, which was significantly higher than the control group and indicated FTPA-treated mice had developed prediabetes (Figure 4C). The oral glucose tolerance test (OGTT) showed obvious glucose intolerance in the FTPA group (Figure 4D and E), and the FPI values and insulin tolerance test (ITT) were both significantly elevated in the FTPA group, indicating insulin resistance (Figure 4F and G). Meanwhile, body weight (BW), TC, and TG significantly increased in the FTPA group (Figure 4H–J). While mice in the FT group and PA group had significant weight gain and mild insulin resistance, they did not exhibit significant glucose intolerance and no significant elevation in TC and TG levels compared to controls. Histopathological changes in the pancreas and liver of mice were investigated using H-E staining. Hepatocytes focal necrosis with inflammatory cell infiltration was commonly observed in the FTPA mice, but not frequent in hepatocytes in FT and PA groups (Figure 4K). Furthermore, decreased volume and area in pancreatic islets and inflammatory cell infiltration were detected in the FTPA mice (Figure 4L), while such pathological changes were not found in the control group. To eliminate interference from host species divergence in gut microbiota composition, we supplemented mouse experiments using FMT from control macaques (HFT group) (Figure 5—figure supplement 2A). By day 30, the HFT group exhibited significantly lower body weight than the untreated control group (p<0.05) (Figure 5—figure supplement 2B). Throughout the experimental period, FPG levels in both HFT and control groups remained within the normal range (<6 mmol/L) without significant differences, indicating that transplantation of control macaque microbiota did not induce glycemic alterations (Figure 5—figure supplement 2C).
 
@@ -71,9 +288,21 @@ To determine the causative effect of gut microbiota and PA on T2DM development, 
 
 **Figure 4.:** (A) Experimental scheme of FMT and high PA diet treatment. (B–H) Metabolic analysis, including the trend of fasting plasma glucose (FPG) within 120 days (B), FPG (C, p=0.0003), oral glucose tolerance test (OGTT) (D), AUC of OGTT (E, p=0.028), fasting plasma insulin FPI (F, p=0.007), ITT (G), and body weight change (H) on day 120. (I–J) The contents of TC (I, p=0.005) and TG (J, p=0.041) in serum on day 120. (K, L) Representative H-E staining images of liver (K) and pancreas (L). For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. Significance was determined using one-way ANOVA. In d, g, and h: *p<0.05, **p<0.01. Data shown are from four to six individuals per group.
 
-## Specific structure of gut microbiota mediates the absorption of excess PA in the ileum
+### Specific structure of gut microbiota mediates the absorption of excess PA in the ileum
 
 Given that the content of plasma PA significantly increased in the T2DM macaques (Figure 3F and G), we examined PA content in the feces, ileum, and serum in mice to compare the prediabetes mice and the spontaneous T2DM macaques. PA content in the serum and ileum of the FTPA group was significantly higher than the control group (p<0.05, Figure 5A and B), but its content in feces was significantly lower than the control group (p<0.05, Figure 5C). This suggested that the absorption of PA was significantly enhanced in the ileum leading to the increase of PA in serum. To verify this conclusion, expression of the Cd36 gene, a gene involved in the uptake and oxidation of LCFAs (Sun et al., 2023), was examined in the ileum of mice. Ileums showed a significantly upregulated expression of Cd36 in the FTPA group compared to the control group (p<0.05, Figure 5D). In contrast, the level of IL-17A, a protein inhibiting the expression of Cd36 (Kawano et al., 2022), was significantly reduced in the ileum of the FTPA group (p<0.05, Figure 5E). Interestingly, the PA group’s content of PA, Cd36 expression, and IL-17A was not significantly different from the control group. This indicated that without FMT, the ileum could not absorbp PA effectively even when fed in high concentrations. Consequently, gut microbiota mediated the absorption of excess PA in the ileum.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig5-v1.jpg)
+
+**Figure 5.:** (A–C) Total PA contents in serum (A, p=0.013), ileum (B, p=0.016), and feces (C, p=0.014) on day 120. (D) Quantitative RT-PCR for Cd36 transcripts in ileum on day 120 (p=0.049). (E) The content of IL-17A in ileum on day 120 (p=0.027). For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. Significance was determined using one-way ANOVA. Data shown are from three to four individual macaques per group. (F) Non-metric multidimensional scaling (NMDS) analysis (p=0.001, one-way ANOVA), ellipses represent the 95% confidence intervals. (G, H) LEfSe analysis between FTPA and control groups (G), FT and control groups (H). Data shown are from four individuals per group. (I) Specific gut microbiota structure promoted the absorption of excess PA by regulating the expression of IL-17A and Cd36, leading to the LCFAs accumulation and insulin resistance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Alpha diversity estimates (Shannon index) (p>0.05, one-way ANOVA, n=4). (B) Alpha diversity estimates (Simpson index) between T2DM and control groups (p>0.05, one-way ANOVA, n=4). (C) Family level taxonomy and relative abundance of five groups. (D) The changes in members of the Lachnospiraceae family from day –14 to day 120. (E) LEfSe analysis between PA and control groups. For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. Significance was determined using one-way ANOVA. Data shown are from four individuals per group.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/104355/elife-104355-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Experimental scheme of fecal fecal microbiota transplanting (FMT) from control macaques. (B, C) The physiological characteristic of mice with different treatments, including body weight change (B), and trend of fasting plasma glucose (FPG) within 30 days (C). *p<0.05. (D–F) Changes in gut microbiota α-diversity and structure in mice, including Shannon index (p=0.0012) (D), Simpson index (p=0.0012) (E), and NMDS analysis (p=0.001, one-way ANOVA) (F). (G–I) Composition of gut microbiota in mice at phylum level (G), family level (H), and genus level (I). (J, K) The relative abundance of members in Lachnospiraceae between HTP and TP groups (J), control, HFT, FT, and FTPA groups on day 30 (K). (L, M) LEfSe analysis between pre-antibiotic (–14D) and post-antibiotic (0D) groups (L), HFT and FT groups on day 30 (M). For all boxplots: centre lines, upper and lower bounds show median values, 25th and 75th quantiles; upper and lower whiskers show the largest and smallest non-outlier values. Significance was determined using one-way ANOVA. Data shown are from three to nine individuals per group.
 
 We then compared diversity and composition of microbiota communities between the FTPA, FT, PA, and control groups, and a fifth group consisting of the microbiota transplants (TP) from T2DM macaques. Shannon and Simpson indices were lower in the FTPA, FT, and PA groups than the control group (Figure 5—figure supplement 1A and B). NMDS analysis also indicated a distinct microbiota composition from the control group compared to other groups (NMDS1). In addition, microbiota composition of TP from T2DM macaques was distinct from other groups but a little closer to the FTPA and FT groups (NMDS2, Figure 5F). In particular, the Lachnospiraceae family showed the higher abundance in the TP, FTPA, and FT groups than in the PA and control groups (Figure 5—figure supplement 1C). The abundances of three members of microbes in Lachnospiraceae (R. gnavus (current name: M. gnavus), Coprococcus sp., and Clostridium) in the FTPA and FT groups gradually increased over time after FMT (Figure 5—figure supplement 1D). The FTPA and FT groups shared many differential microbes compared to the control group, such as the significantly upregulated R. gnavus (current name: M. gnavus) and Coprococcus sp., and the significantly downregulated Christensenellaceae, F16, Treponema sp., and Fibrobacter succinogenes (Figure 5G and H). It is noteworthy that these microbes were also differential microbes between T2DM macaques and controls, and their abundances changed in the same way as in macaques (Figure 1E). However, mice in the PA group did not share differential microbes with the spontaneous T2DM macaques. Correspondingly, the change of serum PA content in the PA group was not significantly higher than the control group (Figure 5—figure supplement 1E). Integrating 16 S rRNA sequencing data from the HFT, FT, and FTPA groups showed that the antibiotic treatment effectively depleted the gut microbiota, resulting in microbial diversity decreasing sharply, with the dominant phyla shifting from Bacteroidota and Bacillota to Pseudomonadota (Figure 5—figure supplement 2D–G). The HFT group restored microbial diversity within 30 days, achieving community proportions comparable to untreated controls. Core functional phyla (Bacteroidota and Bacillota) stably colonized in HFT group (Figure S4D-I). Critically, FT and FTPA groups exhibited increased Lachnospiraceae (including genera Ruminococcus (current name: Mediterraneibacter), Coprococcus, and Clostridium) compared with the HFT group on day 30. In addition, LEfSe comparison identified significant R. gnavus (current name: M. gnavus) enrichment in the FT group (LDA >3, p<0.01) (Figure 5—figure supplement 2J–M). Our results suggested that the transplanted microbiota from spontaneous T2DM macaques, especially the increased abundance of R. gnavus (current name: M. gnavus) and Coprococcus sp. and decreased abundance of Treponema, F. succinogenes, Christensenellaceae and F16, promoted the absorption of excess PA by regulating the expression of IL-17A and Cd36, leading to the LCFAs accumulation and insulin resistance (Figure 5I).
 
@@ -93,27 +322,27 @@ In conclusion, spontaneous T2DM macaques that have never been treated with diabe
 
 ## Materials and methods
 
-## The screening of spontaneous T2DM macaques
+### The screening of spontaneous T2DM macaques
 
 The experimental macaques used in this study were all from Greenhouse Biotechnology Co., LTD (Meishan, China). We obtained eight spontaneous T2DM macaques with FPG ≥7 mmol/L and eight healthy control macaques with FPG ≤6.1 mmol/L (three consecutive detections, each detection interval of one month) from a population of 1698 captive macaques. None of these 16 screened macaques received any medical treatment for diabetes.
 
-## Sample collection
+### Sample collection
 
 Each experimental macaque was kept in a single cage and was fasted for 12 hr but had free access to drinking water. We obtained serum, plasma, and whole blood for the detection of physiological and biochemical parameters, and metabolome and transcriptome analysis. Fecal samples were collected within 10 min after deposition. During the sampling process, fecal samples were loaded into a 50 mL sterile centrifuge tube were stored at –80℃. This study followed animal welfare guidelines throughout the sample collection process, and all observations and samplings were approved by the Sichuan University’s Animal Care Committee (Permit Numbers: SCU210429001 and SCU230810001).
 
-## Physiological and biochemical parameters
+### Physiological and biochemical parameters
 
 In this study, FPG, HbA1c, and FPI were detected by hexokinase method, high performance liquid chromatography, and electro-chemiluminescence method, respectively. TC, TG, HDL, and LDL were detected by automatic biochemical analyzer. HOMA-IR is one of the criteria for T2DM, calculated as: (FPI×FPG)/22.5.
 
-## Feces 16S rRNA amplicon sequencing and analysis
+### Feces 16S rRNA amplicon sequencing and analysis
 
 Total DNA from fecal samples was extracted using the QIAamp Fast DNA Stool Mini Kit. The V3-V4 region of the 16 S rRNA gene was amplified using the 341 F/806 R primer (341 F: 5'-CCTAYGGGRBGCASCAG –3', 806 R: 5'-GGACTACNNGGGTATCTAAT –3'). The purification and quantification of the amplified products were performed and followed by the sequencing library preparation with TruSeq Nano DNA LT Library Prep Kit (Illumina, USA). The library sequencing was performed on Illumina MiSeq platform and 250 bp paired-end reads were generated. Raw sequencing reads were merged using FLASH (VI.2.7, https://ccb.jhu.edu/software/FLASH/) (Magoč and Salzberg, 2011) and analyzed by QIIME2 (version 2020.11.1) pipeline with default parameters. Reads after denoising by DADA2 were clustered into OTUs at 99% similarity threshold. Taxonomy of OTUs was assigned based on Greengenes reference database (McDonald et al., 2012). The QIIME2 diversity plugin was used to calculate alpha diversity (Bolyen et al., 2019). Principal Coordinate Analysis (PCoA) was determined by using the R package vegan. Differentially microbes were determined using linear discriminant analysis effect size (LEfSe) (Segata et al., 2011).
 
-## Feces shotgun metagenome sequencing and analysis
+### Feces shotgun metagenome sequencing and analysis
 
 Total DNA from each sample was extracted using Tiangen DNA Stool Mini Kit (Tiangen Biotech Co., Ltd., China). Metagenome sequencing was performed using the Illumina NovaSeq 6000 platform with a paired-end sequencing length of 150 bp. Trimmomatic was used for removing the adapters and low-quality raw reads based on a four-base wide sliding window, with average quality per base >20 and minimum length 90 bp (Bolger et al., 2014). The rhesus macaque potential sequences were removed using Bowtie2 (Langmead and Salzberg, 2012) with the reference genome (assembly Mmul_10). Taxonomy of remaining reads was assigned using Kraken2 (Wood and Salzberg, 2014) with the option ‘--use-mpa-style.’ De novo assembly of remaining reads was performed using MEGAHIT (Li et al., 2015) with the option ‘-m 0.90 --min-contig-len 300.’ Prodigal (Hyatt et al., 2010) was used for gene prediction. The construction of non-redundant gene catalogue was performed with CD-HIT (Fu et al., 2012) with the option ‘-c 0.95 -aS 0.90.’ Quantification of the non-redundant genes in each sample was performed using Salmon (Patro et al., 2017). The amino acid sequences translated from non-redundant genes were aligned (--id 80% --query-cover 70% --evalue 1e-5) by DIAMOND (Buchfink et al., 2015) in the Carbohydrate-Active enZYmes (CAZy) database (Lombard et al., 2014). The annotation metabolic pathway was performed using HUMANn3 (Franzosa et al., 2018).
 
-## RNA sequencing and DEG analysis
+### RNA sequencing and DEG analysis
 
 Total RNA was extracted using PAXgene Blood RNA kit. The cDNA Library was constructed following the NEBNext UltraTM RNA Library Prep Kit for Illumina (NEB, USA) manual, and index was added to each sample for sample differentiation. cBot Cluster Generation System was used to cluster the sequences with the same index. Illumina HiSeq 2500 sequencing platform was used to obtain the paired-end sequencing reads (PE150). NGS QC Toolkit v2.3.3 (Patel and Jain, 2012) was used to obtain high quality reads (high-quality paired reads with more than 90% of bases with Q-value ≥20 were retained). Processed reads of each sample were mapped to the macaque reference genome using HISAT2 v2.1.0 (Kim et al., 2015). Each alignment output file was assembled into a separate transcriptome using StringTie v1.3.6 (Pertea et al., 2015), resulting in a transcript GTF file. To obtain the expression value of TPM (transcripts per million) and raw read counts of each gene, transcript GTF file was used as the reference annotation file. Differential expression analysis was performed using DESeq2 R package (Love et al., 2014). DEGs were screened according to Foldchange value (FC) and p-value corrected by FDR (Benjamini-Hochberg method was selected) (adj p<0.05, |log2FC|>1).
 
@@ -121,46 +350,157 @@ Weighted Gene Co-Expression Network Analysis (WGCNA) (Langfelder and Horvath, 20
 
 Instead of identifying the differentially expressed genes within a pathway between the two groups, Aggregate Fold Change (AFC) calculated the average multiple change for each gene and defined the pathway score as the average difference multiple for all genes in that pathway. A null hypothesis test was performed using the pathway scores of the gene expression dataset, and the significance of each pathway was estimated by p-value (Yu et al., 2017). STRING (v11.0) provides a tool for functional enrichment analysis based on AFC. GO and KEGG enrichment analysis was performed using g: Profiler (Raudvere et al., 2019), AFC enrichment analysis was performed using STRING (https://string-db.org/).
 
-## Untargeted metabolomics processing
+### Untargeted metabolomics processing
 
 The 200 μL homogenized fecal sample was mixed with 800 μL cold methanol/acetonitrile (1:1, v/v) to remove the protein. The mixture was centrifuged for 15 min (14,000 g, 4 °C) followed by the drying of the supernatant in a vacuum centrifuge. For LC-MS analysis, the samples were re-dissolved in 100 μL acetonitrile/water (1:1, v/v) solvent. LC-MS/MS analysis was performed using an UHPLC (1290 Infinity LC, Agilent Technologies) coupled to a quadrupole time-of-flight (AB Sciex TripleTOF 6600) in Shanghai Applied Protein Technology Co., Ltd. The samples were separated by Agilent 1290 Infinity LC ultra-high performance liquid chromatography (UHPLC) HILIC column. In both ESI positive and negative modes, the mobile phase contained A=25 mM ammonium acetate and 25 mM ammonium hydroxide in water and B=acetonitrile. The gradient was 85% B for 1 min and was linearly reduced to 65% in 11 min, and then was reduced to 40% in 0.1 min and kept for 4 min, and then increased to 85% in 0.1 min, with a 5 min re-equilibration period employed. AB Triple TOF 6600 mass spectrometer was used to collect the primary and secondary spectra of per sample. After separation by UHPLC, the samples were analyzed by Triple TOF 6600 mass spectrometer (AB SCIEX). Positive and negative modes of electrospray ionization (ESI) were, respectively, detected.
 
-## Targeted medium- and long-chain fatty acid metabolomics processing
+### Targeted medium- and long-chain fatty acid metabolomics processing
 
 A total amount of 100 μL plasma per sample was taken in 2 mL glass centrifuge tubes and 1 mL chloroform-methanol solution was added. After 30 min of ultrasound, the supernatant was taken and 2 mL of 1% sulfuric acid-methanol solution was added. The mixed solution was placed in a water bath at 80℃, for 30 min, and then 1 mL of N-hexane and 5 mL of pure water were added in turn. Next, 500 μL of supernatant was absorbed, 25 μL of methyl N-nonaconate was added and mixed. The final sample was detected by GC-MS. All samples were separated by Agilent DB-WAX capillary column (30 m×0.25 mm ID ×0.25 μm) gas chromatography. Agilent 7890/5975 C gas-mass spectrometer was used for mass spectrometry. The chromatographic peak area and retention time were extracted by MSD ChemStation software. The content of medium-and long-chain fatty acids was calculated by drawing a standard curve.
 
-## Metabolomics statistical processing
+### Metabolomics statistical processing
 
 The screening of significant changed metabolites was performed using univariate and multidimensional analysis. Student’s t-test was applied to determine the significance of differences between two groups. The variable importance in the projection (VIP) value of each variable was obtained from the Orthogonal Partial Least Squares Discriminant Analysis (OPLS-DA) model, which was used to indicate its contribution to the classification. The screening criteria were p<0.05 and VIP >1.
 
-## Animal treatments
+### Animal treatments
 
 Specific-pathogen-free C57BL/6 J male mice at 6 weeks of age (vendor: Chengdu Dossy Experimental Animals Co., LTD) were randomly assigned to four groups (FTPA, FT, PA, and Control). All the mice lived in cages with the same conditions, including 12 hr light and 12 hr dark cycles, temperature 22–25°C and humidity 40–60%.
 
-## Diets
+### Diets
 
 HPAD was prepared by adding 12% PA to conventional forage. Both the conventional forage and the HPAD were sterile and the fresh forage was renewed three times a week. On day 0, the diets of FTPA-treated mice and PA-treated mice were switched to HPAD, FT-treated mice and control mice were still fed with conventional forage. Drinking water was sterile and renewed twice a day.
 
-## Transplant preparation and use
+### Transplant preparation and use
 
 After single-cage feeding, FPG detection and fecal collection were performed, and fecal samples of seven T2DM macaques were mixed for the preparation of transplants. The appropriate volume of diluent was added to the fecal sample (i.e. add 4 ml diluent per gram of feces) and the preparation of diluent can be found in Berland et al., 2021. Sodium L-ascorbic acid and L-cysteine hydrochloride monohydrate were added to all suspensions at final concentrations of 5% (w/v) and 0.1% (w/v), respectively (The sterile diluent of control group was added with the same amount of reagent). The mixture was homogenized and filtered with a 200-mesh sterile mesh screen to remove large particles from the feces, and the filtrate was passed through 400 and 800 sterile mesh screens to remove undigested food and smaller particulate matter. The filtrate was divided into 50 ml centrifuge tubes, centrifuged at 600×g for 5 min, and the precipitation was discarded. Finally, the fecal supernatant was divided into new centrifuge tubes in equal parts (400 μL per tube) and frozen at –80 °C. For use, the transplant was quickly thawed in a 37℃ water bath.
 
-## Fecal microbiota transplantation (FMT)
+### Fecal microbiota transplantation (FMT)
 
 After 1 week of changed feeding regime, the FTPA and FT mice groups were pre-treated with 1 g/L neomycin sulfate, 1 g/L ampicillin, and 1 g/L metronidazole in the drinking water for 14 days, and the control group was not treated. For FMT treatment, the gavage with 400 μL transplant, which were thawed ahead of time, was performed for 14 days in FTPA and FT-treated mice. At the same time, the gavage in control and PA-treated mice were performed with sterile diluent.
 
-## Metabolic measurements
+### Metabolic measurements
 
 Throughout the experiment, body weight and feces were collected every month, FPG was detected every half month under fasting for at least 12 hr. OGTT was performed on day 110 and ITT was performed on day 115. For OGTT, after a 12 hr overnight fast, oral glucose gavage (1.2 g/kg of 12% dextrose solution) was performed and followed by blood sample collection from the tail vein at 0, 15, 30, 60, 90, and 120 min. For ITT, after a 6 hr fast, intraperitoneal insulin injection was performed (0.75 U/kg, human regular insulin), followed by the blood samples collection from the tail vein at 0, 20, 40, 60, 90, and 120 min. On day 120, after FPG detection, blood collection and issues were collected for quantitative RT-PCR, H-E staining, and ELISA.
 
-## Isolation of tissue for quantitative RT-PCR and ELISA
+### Isolation of tissue for quantitative RT-PCR and ELISA
 
 Tissue was homogenized for RNA extraction, after adjusting the final concentration of RNA, and DNA reverse transcription was performed. Quantitative RT-PCR was performed on CFX Connect Real-Time PCR Detection System (Bio-Rad, USA) using SYBR Green (Tables 3–5). PA, IL-1β, IL-6, TNF-α, and IL-17A were detected using the Jiangsu Meimian ELISA kit and followed the operator instructions.
 
-## H-E staining
+**Table 3.**
+ Primers of RT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Sequences of primers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD36/F</td>
+      <td>5’-ATGGGCTGTGATCGGAACTG-3’</td>
+    </tr>
+    <tr>
+      <td>CD36/R</td>
+      <td>5’-GTCTTCCCAATAAGCATGTCTCC-3’</td>
+    </tr>
+    <tr>
+      <td>GADPH/F</td>
+      <td>5’-CCTCGTCCCGTAGACAAAATG-3’</td>
+    </tr>
+    <tr>
+      <td>GADPH/R</td>
+      <td>5’-TCTCCACTTTGCCACTGCAA-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ RT-PCR reaction components.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2× SG Fast qPCR Master Mix</td>
+      <td>10.0 μL</td>
+    </tr>
+    <tr>
+      <td>DNF Buffer</td>
+      <td>2.0 μL</td>
+    </tr>
+    <tr>
+      <td>F primer (10 μmol/L)</td>
+      <td>0.4 μL</td>
+    </tr>
+    <tr>
+      <td>R primer (10 μmol/L)</td>
+      <td>0.4 μL</td>
+    </tr>
+    <tr>
+      <td>cDNA</td>
+      <td>1.0 μL</td>
+    </tr>
+    <tr>
+      <td>ddH2O</td>
+      <td>6.2 μL</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ RT-PCR cycle procotol.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Temperature</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>95℃</td>
+      <td>3 min</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>95℃</td>
+      <td>1–3 s</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>60℃</td>
+      <td>30 s</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>72℃</td>
+      <td>1 min</td>
+    </tr>
+  </tbody>
+</table>
+
+### H-E staining
 
 The isolated livers and pancreas were dehydrated and embedded after fixation with formalin for 24 hr. Paraffin-embedded livers and pancreas specimens were cut at a thickness of 3 μm. All sections were stained with hematoxylin then eosin, and finally, microscopy and image acquisition were performed.
 
-## Statistical analysis
+### Statistical analysis
 
 In this study, one-way ANOVA was used to determine statistical significance for comparisons of more than three groups, and for comparisons of two groups, two-tailed t-test was used. P-values are represented on figures as follows: ns, not significant, ∗p<0.05, ∗∗p<0.01.

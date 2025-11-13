@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05r7n9c40 Max Planck Institute for Terrestrial Microbiology and LOEWE Centre for Synthetic Microbiology (SYNMIKRO) Marburg Germany
+1. Max Planck Institute for Terrestrial Microbiology and LOEWE Centre for Synthetic Microbiology (SYNMIKRO) Marburg Germany ([ROR:05r7n9c40](https://ror.org/05r7n9c40))
 
 † Corresponding author
 
@@ -28,9 +28,21 @@ Here, we uncover the nature of plasmid dynamics and positioning through a combin
 
 ## Results
 
-## The F plasmid is regularly positioned by a spring-like force
+### The F plasmid is regularly positioned by a spring-like force
 
 To clarify the nature of plasmid dynamics, we turned to a high-throughput microfluidics approach based on a custom-fabricated ‘mother machine’ device coupled with a segmentation, tracking and foci detection pipeline (Figure 1A and B). Using this approach, we tracked, at 1 min resolution, the dynamics of mini-F plasmids during many thousands of cell cycles using a fully functional ParB-mVenus fusion (Sanchez et al., 2015). Under our conditions, cells had a median of two ParB foci at birth and four at division (Figure 1—figure supplement 1) and divided approximately every 100 min. Since ParB foci separate within 5 min of plasmid replication (Onogi et al., 2002; Walter et al., 2020) and there are only a few replication events per cell cycle, in the following we will assume each ParB focus consists of a single plasmid.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig1-v1.jpg)
+
+**Figure 1.:** (A) Timelapse of a single mother machine growth channel (E. coli strain DLT3125, phase contrast overlayed with ParB-mVenus fluorescence signal). Segmentation and tracking is indicated by coloured outlines. ParB-mVenus foci are highlighted by red dots. Time interval is 1 min. (B) Four example trajectories of tracked ParB-mVenus foci from different cells. Dashed lines indicate cell boundaries. (C) Distribution of foci positions as a function of cell length in cells containing one ParB-mVenus focus. Data from 879 cell cycles. (D) As in (C) but for cells containing two ParB-mVenus foci. Data from 5044 cell cycles. Red lines indicate the position of each peak as obtained by fitting to the sum of two Gaussian functions. (E) Top: Mean velocity of plasmids as a function of position relative to the trajectory mean in cells containing one plasmid. The velocity is measured over two consecutive frames, taken 1 min apart. Light and dark shading indicate standard deviation and standard error respectively. The red line indicates a linear fit. Note that the standard deviation of the velocity does not depend on position. Bottom: Probability density of plasmid position relative to mean of trajectory. Standard deviation 0.182 μm. Dashed lines indicate the region used for fitting which includes at least 68.27% of all data points. (F) As in (E) but for cells containing two ParB-mVenus foci and the position is relative to the indicated lines in (D). Standard deviations are 0.175 μm (old pole proximal) and 0.181 μm (new pole proximal). In (B–F), positions and velocities are measured along the long cell axis. Position values are negative towards the old pole. See also Figure 1—figure supplement 1 and Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Distribution of cell cycle duration and growth rate. The mean cell cycle duration is 101.17±34.55 min (mean ± s.d.). (B) Distribution of cell length at birth and at division. The mean length is 2.46±0.38 μm (mean ± s.d.) and 4.92±0.63 μm (mean ± s.d.) respectively. (C) Distribution of ParB-mVenus foci number as a function of relative cell age. Cells have 1.9±0.78 ParB foci (mean ± s.d.) at birth and 3.58±0.96 ParB foci (mean ± s.d.) at division. (D) Alluvial plot showing how the number of foci changes from birth to division. The maximum number of plasmids of the first and last 5 frames were used to determine the number of plasmids at birth and division respectively. (E) Violin plot depicting the middle 99.9 percentile of the cell length distribution for cells with different numbers of plasmids. The number inside the violin plot indicates the relative abundance of each population. The black bar indicates the mean. (F) Standard deviation of position (blue) and plasmid count (orange) plotted against cell length for cells containing 1 foci (data from 879 cell cycles). Plasmid position was centred around the mean of trajectory similar to Figure 1E. (G) Standard deviation of position (blue) and plasmid count (orange) plotted against cell length for cells containing 2 foci (data from 5044 cell cycles). Data in (A-E) is from the entire data set of 16346 cell cycles.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The shape of the velocity autocorrelation (VAC) functions for (i) subdiffusive/elastic/hindered, (ii) diffusive and (iii) superdiffusive/processive dynamics. Red line indicates a lag equal to the sampling time (the time over which the velocity was measured). In subdiffusive/hindered processes, movement is biased towards the direction the particle came from; in a diffusive process there is no directional bias, while in superdiffusive processes (e.g. directed movement), the particle is biased to keep moving in the same direction. This results in the VAC between frames (i.e. at a lag equal to the sampling time) being negative, zero and positive, respectively (indicated by the red line). The orange curves are generated using the normalised velocity autocorrelation $VAC=(t-1^{\alpha}+t+1^{\alpha}-2t^{\alpha})$/2 for any process with $MSD(t)∼t^{\alpha}$ and taking (i) $\alpha<1$, (ii) $\alpha=1$ and (iii) $\alpha>1$. The purple line in (iii) is a sketch of what the VAC might look like for oscillatory dynamics. (B–C) Mean position autocorrelation (PAC) and VAC of trajectories from cells with one plasmid (n=897). Shaded area indicates standard deviation. The autocorrelation time-scale , in B and C, was obtained by fitting the PAC to $\frac{e^{-t/\tau}+c}{c+1}$ and the VAC to $\frac{2e^{-t/\tau}-e^{-|t-\deltat|/\tau}-e^{-(t+\deltat)/\tau}}{2-2e^{-\deltat/\tau}}$ (red lines), where $\deltat$ is the time over which the velocity is calculated (1 frame = 60 s) and c is a constant accounting for any old-pole/new-pole bias. These functions arise from a model of over-damped spring-like motion. See the methods for further details. (D) Mean PAC of trajectories from different populations with 1,2,3, or 4 plasmids (n=879, 5044, 3129, 961). (E) As in (D) but for the VAC. (F) MSD measured every 60 s (n=2558). (G) MSD measured every 1 s (n=75). The diffusion constant D=2.01 ± 0.14e–4 μm2/s (mean ± 95% CI) was obtained by fitting $2D*Lag+c$ to the MSD-curve (red line).
 
 Consistent with many previous works (Adachi et al., 2006; Hatano et al., 2007; Niki and Hiraga, 1997; Sanchez et al., 2015), we found that F plasmid is, irrespective of length, approximately located at mid-cell in cells with a single plasmid and close to the quarter positions in cells with two plasmids (Figure 1C and D). In the latter case, their positions have been more accurately specified as the quarter positions of the nucleoid (Le Gall et al., 2016). We found that the precision of positioning for the single plasmid case was independent of cell length, while for two plasmids it decreased weakly for cell lengths greater than 3 μm, perhaps due to variation in nucleoid segregation (Figure 1—figure supplement 1).
 
@@ -40,75 +52,357 @@ To quantitatively examine the nature of plasmid positioning, we first measured t
 
 These results demonstrate that F plasmid exhibits true positioning. If this was not the case, we would expect a flattening of the velocity profile around the target positions and/or evidence of oscillations in the auto-correlation of position or velocity. Altogether the observed properties are characteristic of an over-damped spring-like force, similar to that observed for the chromosomal origins of E. coli (Hofmann et al., 2019; Kuwada et al., 2013). Under this model, the slope of the velocity profile is the reciprocal of the characteristic timescale, τ, at which elastic fluctuations act and we found this to be about 2 min. Comparable values, given the 1 min frame rate, were found by fitting to the position and velocity autocorrelation (Figure 1—figure supplement 2A, B). On timescales much shorter than this, plasmid dynamics are dominated by diffusion, whereas on longer timescales, the effective spring-like force dominates. As our temporal resolution is on the same order as τ, we can obtain estimates, under the over-damped spring model, for both the intrinsic diffusion coefficient of the plasmid D and the spring constant keff of the effective force by fitting to the mean and variance of the velocity profile (see Materials and methods). We find D=(2.27±0.24) x 10–4 μm2s–1 and keff/(kBT)=36.8 ± 4.1 μm–2 (bounds are the 95% confidence intervals). The latter implies a characteristic force of about 0.02 pN acting on the plasmid. Note that this estimate of the diffusion coefficient is not necessarily that of a plasmid lacking the ParABS system but rather describes the diffusive component of the dynamics in the presence of the system. To test this estimate, we tracked plasmid dynamics on a much shorter time-scale (1 s frame rate) at which diffusion is expected to dominate and measured the mean square displacement (MSD) of the plasmid. Unlike at the longer timescale, we found a linear dependence on time, and a diffusion coefficient of (2.01±0.14) x 10–4 μm2s–1 consistent with, and in support of, the over-damped spring model (Figure 1—figure supplement 2F, G).
 
-## Hopping of ParA-ATP on the nucleoid as an explanation of regular positioning
+### Hopping of ParA-ATP on the nucleoid as an explanation of regular positioning
 
 There have been two stochastic molecular-level models of plasmid positioning to date. Though different in some details, both models propose that elastic fluctuations of DNA and/or protein bonds power movement of plasmids up a gradient of DNA bound ParA-ATP. However, neither model exhibits true regular positioning as we observed for F plasmid. In the DNA relay model (Surovtsev et al., 2016a), plasmids oscillate across the nucleoid, reversing direction upon reaching either a pole or another plasmid, with regular positioning emerging from these oscillations only as a time-averaging effect. In the Brownian Ratchet model (Hu et al., 2021; Hu et al., 2017) on the other hand, plasmids exhibit ‘local excursions’ around home positions that are determined by the distance they segregate upon replication. In a narrow region of parameter space, this scheme leads to equi-positioning rather than regular positioning, that is plasmids maintain a particular inter-plasmid spacing along the long axis of the nucleoid rather than being positioned at particular locations. Given that previous coarse-grained models have displayed regular positioning (Ietswaart et al., 2014; Sugawara and Kaneko, 2011; Walter et al., 2017), we wondered how we could modify or extend these molecular models to exhibit true regular positioning.
 
-Ietswaart et al. have previously shown that regular positioning can theoretically be achieved, independently of the particular mechanism of force generation, through the balancing of the diffusive fluxes of nucleoid-bound ParA-ATP into the plasmid from each longitudinal direction. If plasmids, which act as sinks for ParA-ATP, move in the direction of greatest incoming flux, then they will move toward the regularly positioned configuration since this is the unique configuration in which the diffusive fluxes balance. This ‘flux balance’ mechanism has since been argued to underlie positioning in several other systems (Hofmann et al., 2019; Murray and Sourjik, 2017; Schumacher et al., 2017). It was also realised that a critical component of the mechanism is that the ParA-ATP dimers must diffuse on the nucleoid sufficiently far before hydrolysing ATP and unbinding (Murray and Howard, 2019; Subramanian and Murray, 2021). If the associated length-scale, s, is too short then only ParA-ATP dimers that first bind the nucleoid close to the plasmid will have the opportunity to interact with it. As a result, the fluxes of ParA into the plasmid balance across most of the cell and the plasmid does not receive any positional information (Figure 2A (i-iii)). As s increases the plasmid receives more positional information through the disparity in the diffusive ParA flux and beyond a threshold of half the nucleoid length true regular positioning is possible (Figure 2A (iv-v)). Note that the threshold decreases with the number of plasmids - with each additional plasmid, a shorter distance needs to be ‘sensed’ per plasmid. Sensing between plasmids occurs through competition for the same ParA-ATP dimers (Figure 2B). The diffusion of ParA dimers on the nucleoid referred to above could occur through hopping of dimers between DNA strands during transient unbinding events or through the direct contact of DNA strands. Indeed, this has been argued to be essential for ParA gradient formation in Caulobacter crescentus (Surovtsev et al., 2016b) and was observed in vitro using single-particle microscopy (Vecchiarelli et al., 2013). Note that formally there still exists a non-zero disparity in the incoming fluxes into the plasmid in the low s regime, however it becomes infinitesimal as s decreases below the threshold (Subramanian and Murray, 2021).
+Ietswaart et al. have previously shown that regular positioning can theoretically be achieved, independently of the particular mechanism of force generation, through the balancing of the diffusive fluxes of nucleoid-bound ParA-ATP into the plasmid from each longitudinal direction. If plasmids, which act as sinks for ParA-ATP, move in the direction of greatest incoming flux, then they will move toward the regularly positioned configuration since this is the unique configuration in which the diffusive fluxes balance. This ‘flux balance’ mechanism has since been argued to underlie positioning in several other systems (Hofmann et al., 2019; Murray and Sourjik, 2017; Schumacher et al., 2017). It was also realised that a critical component of the mechanism is that the ParA-ATP dimers must diffuse on the nucleoid sufficiently far before hydrolysing ATP and unbinding (Murray and Howard, 2019; Subramanian and Murray, 2021). If the associated length-scale, $s$, is too short then only ParA-ATP dimers that first bind the nucleoid close to the plasmid will have the opportunity to interact with it. As a result, the fluxes of ParA into the plasmid balance across most of the cell and the plasmid does not receive any positional information (Figure 2A (i-iii)). As $s$ increases the plasmid receives more positional information through the disparity in the diffusive ParA flux and beyond a threshold of half the nucleoid length true regular positioning is possible (Figure 2A (iv-v)). Note that the threshold decreases with the number of plasmids - with each additional plasmid, a shorter distance needs to be ‘sensed’ per plasmid. Sensing between plasmids occurs through competition for the same ParA-ATP dimers (Figure 2B). The diffusion of ParA dimers on the nucleoid referred to above could occur through hopping of dimers between DNA strands during transient unbinding events or through the direct contact of DNA strands. Indeed, this has been argued to be essential for ParA gradient formation in Caulobacter crescentus (Surovtsev et al., 2016b) and was observed in vitro using single-particle microscopy (Vecchiarelli et al., 2013). Note that formally there still exists a non-zero disparity in the incoming fluxes into the plasmid in the low $s$ regime, however it becomes infinitesimal as $s$ decreases below the threshold (Subramanian and Murray, 2021).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig2-v1.jpg)
 
-**Figure 2.:** The plasmid is biased away from locations at which there is a disparity in the incoming flux of ParA-ATP from either side (black arrows). However, the diffusion of ParA-ATP dimers on the nucleoid introduces a length-scale , defined as the average distance dimers diffuse between association (yellow arrow) and dissociation due to hydrolysis. As a result the plasmid receives only ParA-ATP dimers that associate at most a distance s from it (red dashed line). (sA) When  (i), where s≪L/2 is the nucleoid length, a disparity in the fluxes into the plasmid only exists when the plasmid is very close to the poles (blue region). In the interior region (grey), the fluxes balance and the plasmid obtains no positional information. As L increases (ii-iii), the region in which the plasmid receives no positional information shrinks leading to approximate mid-nucleoid positioning. When s (iv-v), ParA-ATP dimers can explore the entire nucleoid before reaching the plasmid. Hence the fluxes of ParA-ATP into the plasmid are balanced only at the mid-position. True regular positioning is achievable. (s≳L/2B) A similar argument applies to a cell with multiple plasmids but with threshold , where n is the number of plasmids. Here, sensing between plasmids occurs through competition for the same ParA-ATP dimers (the overlap between the two dashed circles). Quarter-positions are highlighted by grey dashed lines.L/(2n)
+**Figure 2.:** The plasmid is biased away from locations at which there is a disparity in the incoming flux of ParA-ATP from either side (black arrows). However, the diffusion of ParA-ATP dimers on the nucleoid introduces a length-scale $s$, defined as the average distance dimers diffuse between association (yellow arrow) and dissociation due to hydrolysis. As a result the plasmid receives only ParA-ATP dimers that associate at most a distance $s$ from it (red dashed line). (A) When $s≪L/2$ (i), where $L$ is the nucleoid length, a disparity in the fluxes into the plasmid only exists when the plasmid is very close to the poles (blue region). In the interior region (grey), the fluxes balance and the plasmid obtains no positional information. As $s$ increases (ii-iii), the region in which the plasmid receives no positional information shrinks leading to approximate mid-nucleoid positioning. When $s≳L/2$ (iv-v), ParA-ATP dimers can explore the entire nucleoid before reaching the plasmid. Hence the fluxes of ParA-ATP into the plasmid are balanced only at the mid-position. True regular positioning is achievable. (B) A similar argument applies to a cell with multiple plasmids but with threshold $L/(2n)$, where n is the number of plasmids. Here, sensing between plasmids occurs through competition for the same ParA-ATP dimers (the overlap between the two dashed circles). Quarter-positions are highlighted by grey dashed lines.
 
-The above argument explains why regular positioning was not observed in the DNA relay model (Surovtsev et al., 2016a). The key insight of that model was that bound ParA-ATP dimers experience the elastic fluctuations of the chromosomal DNA to which they bind and that these fluctuations can power the movement of the partition complex across the cell. If the partition complex has more tethers to the nucleoid in one direction, then the elastic pull of the chromosome will lead to a net force in this direction and a corresponding directed movement. However, in the model the ‘home’ position of each DNA-bound ParA-ATP dimer remains fixed. ParA dimers were assumed to remain bound until they interact with a (ParB-coated) plasmid that is dimers do not diffuse (hop) on the nucleoid. Hence, the diffusive length-scale, s, is zero and regular positioning cannot occur. On the other hand, in the Brownian Ratchet model (Hu et al., 2017) diffusion of ParA-ATP dimers was included but with a length-scale four times shorter than the nucleoid length. The model was therefore also not inside the regular positioning regime.
+The above argument explains why regular positioning was not observed in the DNA relay model (Surovtsev et al., 2016a). The key insight of that model was that bound ParA-ATP dimers experience the elastic fluctuations of the chromosomal DNA to which they bind and that these fluctuations can power the movement of the partition complex across the cell. If the partition complex has more tethers to the nucleoid in one direction, then the elastic pull of the chromosome will lead to a net force in this direction and a corresponding directed movement. However, in the model the ‘home’ position of each DNA-bound ParA-ATP dimer remains fixed. ParA dimers were assumed to remain bound until they interact with a (ParB-coated) plasmid that is dimers do not diffuse (hop) on the nucleoid. Hence, the diffusive length-scale, $s$, is zero and regular positioning cannot occur. On the other hand, in the Brownian Ratchet model (Hu et al., 2017) diffusion of ParA-ATP dimers was included but with a length-scale four times shorter than the nucleoid length. The model was therefore also not inside the regular positioning regime.
 
-## A unifying stochastic model explains all plasmid behaviours in terms of physical parameters
+### A unifying stochastic model explains all plasmid behaviours in terms of physical parameters
 
 Motivated by the previous discussion, we decided to develop our own minimal molecular model of ParABS positioning (Figure 3A). We take the DNA relay model as a starting point due to its relative simplicity (the Brownian Ratchet model explicitly models the ParA-ADP state and implements the force-dependent breakage of bonds and so has several more parameters).
 
-The original DNA-relay scheme is as follows (Surovtsev et al., 2016a). The nucleoid is considered as a two-dimensional surface to which dimers of ParA-ATP can bind (at rate ka). Upon association, dimers exhibit elastic fluctuations around their binding ‘home’ positions. If a dimer contacts the partition complex, itself modelled as a ParB-coated disk, it immediately binds, forming a tether between the PC and the nucleoid. The PC experiences the elastic force resulting from all attached tethers and moves as a Brownian particle under this force. Tethers are broken by ParB-induced hydrolysis (rate kh), with ParA returning to a diffuse pool in the cytosol. Since the transition back to its DNA-binding competent state is slow (Vecchiarelli et al., 2010), the cytosolic pool of ParA-ATP is assumed to be well mixed.
+![Figure 3.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-v1.jpg)
 
-Our model supplements this scheme with two additional components: diffusion of DNA-bound ParA-ATP dimers across the nucleoid (with diffusion coefficient Dh , where the subscript indicates diffusion of the home position) and plasmid-independent ATP hydrolysis and dissociation (with rate kd). See Materials and methods for further details of the model. In the original model, dimers only unbind from the DNA due to interaction with ParB on the plasmid. However, ParA exhibits basal ATP activity (Ah-Seng et al., 2009). Together with diffusion on the nucleoid, plasmid-independent hydrolysis introduces a finite diffusive length-scale to the system, namely the distance a ParA dimer diffuses on the nucleoid before dissociating.
+**Figure 3.:** (A) Schematic of the model. Light blue shading: nucleoid; light blue stroke: DNA-strand; red: nucleoid bound ParA; yellow: cytosolic ParA; purple: plasmid; arrows indicate binding and dynamics of the system; ka: nucleoid binding rate of ParA; kd: basal hydrolysis rate of ParA; koff: hydrolysis rate of plasmid bound ParA. Insets: (i) elastic fluctuations of the chromosome, (ii) hopping or transfer of DNA-bound ParA-ATP dimers leads to an effective diffusion coefficient Dh. (B) A cartoon depicting low (<10) and high (>10) epsilon conditions. Low leads to a sink of ParA at the plasmid, high leads to a peak of ParA at the plasmid. (C) - (H) Example trajectories from different regimes form the phase diagram. Insets: top, velocity profile; bottom, position histogram; data from 1000 simulations. (I) Phase diagram obtained by varying Dh and koff. Shown in terms of the dimensionless parameters $\lambda$ and $\epsilon$. The colour is based on an analysis of simulated trajectories as follows. Light brown: Regular positioning (confined and average position at mid-cell); blue: Static (confined and average position not at mid-cell); pink: Oscillations (highest peak in the position autocorrelation at non-zero lag); black: Diffusion (none of the previous). See Materials and methods for details. Location of the F-plasmid is marked by a cross (Figure 3—figure supplement 1). Number of ParA-ParB tethers and plasmid mobility can be found in (Figure 3—figure supplement 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Phase diagram of simulations with one plasmid (same as Figure 3I). Contours mark regions where the standard deviation of both position and velocity matches the experimental data, only by varying less than the fold change indicated by the number on the contour. (B–G) position (orange) and velocity (blue) autocorrelation at the indicated positions on the phase diagram (same locations as in Figure 3I). Dara from 1000 simulations. Dashed red line indicates a lag of 1 min. Only the autocorrelations of the regular positioning regime match the experimental curves (Figure 1—figure supplement 2B, C).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Heatmap depicting the number of ParA-plasmid tethers across the phase space for cells with on plasmid. (B) Data from Figure 3I re-plotted against the number of ParA-plasmid tethers and plasmid speed (measured over 1-min intervals) instead of $\epsilon,\lambda$. The colour of the data points is the same as in Figure 3I. (C) Kymographs of the ParA distribution of the marked points in (A), as also used in Figure 3. The position of the plasmid is indicated by the red line.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Same as in Figure 3I, but with varying numbers of ParA dimers. Unsurprisingly, diffusive dynamics dominate at low numbers. However, the regular positioning regime begins to appear from as little as 10 ParA dimers and all four regimes are detectable from 50 ParA dimers. As the number increases from 50 to 300, the borders between the regimes slightly shift. However, this saturates at around 300 ParA dimers, beyond which the number of ParA has little influence on the dynamical nature of the system.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A–D) Each scatter plot contains multiple 1D sweeps centred at the corresponding location in our phase diagram. Each 1D sweep (at its extreme) increases or decreases one parameter by a factor of 100 (fold change 10–2 - 102). At a fold change of 100 the parameters are the same as at the indicated location. Labels in red indicate parameters which were used to change $\epsilon$ and $\lambda$ in our phase diagram (10 simulations per point). The locations for (A) and (C) were chosen such that $D_{h}=0$ (no diffusion on the nucleoid). (D) is located at our predicted parameters for F plasmid. The radius of the plasmid ($R_{p}$) could not be increased more than 10-fold since above that threshold the diameter of the plasmid was greater than the width of the cell. The colours in the scatter plot indicate the behaviour of the system as in Figure 3I. (E) Same as Figure 3I. Notable transitions. (1) Decreasing the tether hydrolysis rate $k_{h}$ results in longer lived tethers and hence slower plasmid movement. Beyond a point, the plasmid appears static on the timescale of the simulation. However, we have confirmed by performing longer simulations that it is not static but diffusive for $\lambda<1$ and regularly positioned for $\lambda>1$ (as explained in the text, the blue region in the top left of the phase diagram is technically diffusive) as predicted by flux balance. As $k_{h}$ is increased in the $\lambda<1$ regime, an oscillatory transition occurs when the plasmid begins to move faster than hydrolyzed ParA dimers can be replaced resulting in a depletion zone behind the plasmid and directed movement. (2) Decreasing $D_{h}$ decreases the diffusive length-scale $\lambda$, moving the system out of the regular positioning regime and towards either oscillatory or diffusive dynamics. It also decreases the total flux of ParA into the plasmid leading to fewer tethers but this is not responsible for the nature of the dynamics as increasing $n_{A}$ , the total amount of ParA, does not affect the nature of the dynamics (see also Figure 3—figure supplement 3). (3) Increasing $k_{d}$ decreases both $\lambda$ and $\epsilon$ (as well as the fraction of nucleoid-bound ParA dimers $\theta$) and so moves the system approximately diagonally in the phase diagram. (4) The plasmid diffusion coefficient $D_{p}$ is most relevant in the oscillatory regime, in which there are the fewest tethers. Oscillations rely on the plasmid moving faster than hydrolyzed ParA tethers can be replaced. Thus increasing plasmid mobility through $D_{p}$ results in stronger directed movement and hence oscillations, while decreasing it moves the system towards more diffusive behaviour (C). (5) An additional requirement for non-diffusive dynamics is that the tether lifetime is longer that the timescale of the tether-induced ‘pulling’ ($\frac{1}{k_{h}}>\frac{\sigma_{x,y}^{2}}{D_{p}}$ for a single tether). This effect explains the darkening in the phase diagram at the bottom of the oscillatory regime. The same transition to diffusive dynamics occurs at high values of the spring constant $\sigma_{x.y}$ . Note however that for the longest tether lifetime and high $\sigma_{x.y}$ , regular positioned was observed at $D_{h}=0$ ($\lambda=0$; no diffusion on the nucleoid) i.e. outside of our claimed regular positioning regime (A). This occurs because at this unphysical value, $\sigma_{x.y}$ is comparable to the size of the cell and therefore DNA-bound ParA dimers can interact with the plasmid from every location within the cell. The plasmid is therefore positioned at mid-cell because this is where the net force from all tethered dimers balances. In other words geometry sensing occurs, not through the local detection of a disparity in incoming fluxes but through the global detection of all ParA dimers.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** 1D sweeps orthogonal to the phase diagram support the role of $\lambda$ and $\epsilon$ in defining the dynamics.(A) Same as Figure 3I with four marked positions. (B) Example simulated trajectories at the marked positions. The parameters $D_{h}$ , $k_{d}$ , $k_{h}$ and $k_{a}$ were changed simultaneously by the indicated factor. This causes a change in the turnover rate of ParA-plasmid tethers while keeping the dimensionless quantities $\lambda$, $\epsilon$ and $\theta$ unchanged. The colour of each trajectory shows the classification of the dynamics at that fold change according to the colour scheme introduced in Figure 3I based on multiple long trajectories. Note the change in the frequency of fluctuations in plasmid position, consistent with changes in tether lifetime. The average number of tethers (indicated in each panel) does not remain constant because with increasing $D_{h}$ each bound ParA dimer has less time between hopping events to explore its local neighbourhood through elastic fluctuations of the underlying DNA (controlled by the parameters $D_{h}$ and $\sigma_{x,y}$), leading to a lower rate of tether formation. In the oscillatory regime, the increase in the plasmid speed results in a shortening of the period of the oscillations. However, at the shortest tether lifetimes, noise begins to dominate as the tether lifetime approaches the timescale of tether-induced pulling.
+
+The original DNA-relay scheme is as follows (Surovtsev et al., 2016a). The nucleoid is considered as a two-dimensional surface to which dimers of ParA-ATP can bind (at rate $k_{a}$). Upon association, dimers exhibit elastic fluctuations around their binding ‘home’ positions. If a dimer contacts the partition complex, itself modelled as a ParB-coated disk, it immediately binds, forming a tether between the PC and the nucleoid. The PC experiences the elastic force resulting from all attached tethers and moves as a Brownian particle under this force. Tethers are broken by ParB-induced hydrolysis (rate $k_{h}$), with ParA returning to a diffuse pool in the cytosol. Since the transition back to its DNA-binding competent state is slow (Vecchiarelli et al., 2010), the cytosolic pool of ParA-ATP is assumed to be well mixed.
+
+Our model supplements this scheme with two additional components: diffusion of DNA-bound ParA-ATP dimers across the nucleoid (with diffusion coefficient $D_{h}$ , where the subscript indicates diffusion of the home position) and plasmid-independent ATP hydrolysis and dissociation (with rate $k_{d}$). See Materials and methods for further details of the model. In the original model, dimers only unbind from the DNA due to interaction with ParB on the plasmid. However, ParA exhibits basal ATP activity (Ah-Seng et al., 2009). Together with diffusion on the nucleoid, plasmid-independent hydrolysis introduces a finite diffusive length-scale to the system, namely the distance a ParA dimer diffuses on the nucleoid before dissociating.
 
 While, theoretical models with emergent behaviours are, in some sense, more than the sum of their parts, insight can be gained by identifying which physical properties of the model, typically describable by a set of dimensionless quantities, are responsible for a given behaviour. Identifying these informative quantities is critical since exploring the entire parameter space is often unfeasible. In this direction, we sought to identify the most important dimensionless quantities that characterise the behaviours of the system:
 
-λ=sL/2=2Dh/kdL/2: This is the average distance, relative to half the nucleoid length, L, that each ParA-ATP dimer would theoretically diffuse on the nucleoid unhindered along each direction before unbinding due to basal ATP hydrolysis (Figure 3A). As discussed above, we expect that regular positioning is only possible when λ≳1 and we confirm this below, justifying our identification of this quantity as important for the system dynamics.
+$\lambda=\frac{s}{L/2}=\frac{\sqrt{2D_{h}/k_{d}}}{L/2}$: This is the average distance, relative to half the nucleoid length, L, that each ParA-ATP dimer would theoretically diffuse on the nucleoid unhindered along each direction before unbinding due to basal ATP hydrolysis (Figure 3A). As discussed above, we expect that regular positioning is only possible when $\lambda≳1$ and we confirm this below, justifying our identification of this quantity as important for the system dynamics.
 
-ε=khkd: As λ is the ratio of the diffusive timescale to the timescale of basal hydrolysis, we reasoned that a second quantity describing the ratio of the timescale of ParB-induced hydrolysis (kh) to the timescale of basal hydrolysis would also be informative in specifying the dynamics. We expect that when this ratio, ε, is sufficiently large, the concentration of ParA-ATP at the plasmid will be less than that away from the plasmid (Figure 3B, Figure 3—figure supplement 2) and the opposite when ε is small. This will allow us to probe the corresponding variation found experimentally.
+$\epsilon=\frac{k_{h}}{k_{d}}$: As $\lambda$ is the ratio of the diffusive timescale to the timescale of basal hydrolysis, we reasoned that a second quantity describing the ratio of the timescale of ParB-induced hydrolysis ($k_{h}$) to the timescale of basal hydrolysis would also be informative in specifying the dynamics. We expect that when this ratio, $\epsilon$, is sufficiently large, the concentration of ParA-ATP at the plasmid will be less than that away from the plasmid (Figure 3B, Figure 3—figure supplement 2) and the opposite when $\epsilon$ is small. This will allow us to probe the corresponding variation found experimentally.
 
-Since the force on the plasmid is generated by the tethers between it and nucleoid-associated ParA, we reasoned that the number of nucleoid-associated ParA should also affect the dynamics of the system. Thus, we introduce a third quantity, θ, the steady state number of DNA-bound ParA dimers in the absence of ParB-induced hydrolysis, given by θ=kaka+kdnA, with nA being the total number of dimers in the system. Note that this involves the ratio of the third reaction rate of the system, the association rate of ParA to the nucleoid, ka, relative to, once again, the basal hydrolysis rate kd.
+Since the force on the plasmid is generated by the tethers between it and nucleoid-associated ParA, we reasoned that the number of nucleoid-associated ParA should also affect the dynamics of the system. Thus, we introduce a third quantity, $\theta$, the steady state number of DNA-bound ParA dimers in the absence of ParB-induced hydrolysis, given by $\theta=\frac{k_{a}}{k_{a}+k_{d}}n_{A}$, with $n_{A}$ being the total number of dimers in the system. Note that this involves the ratio of the third reaction rate of the system, the association rate of ParA to the nucleoid, $k_{a}$, relative to, once again, the basal hydrolysis rate $k_{d}$.
 
-We can independently vary λ, ε and θ through the parameters Dh, kh, and nA, respectively. However, we found that while nA had, unsurprisingly, a strong effect on the degree of stochasticity in the system, it had little effect on the nature of the dynamics (Figure 3—figure supplement 3). The different regimes were clearly detectable from at least nA=50 dimers. We therefore focused on λ and ε.
+We can independently vary $\lambda$, $\epsilon$ and $\theta$ through the parameters $D_{h}$, $k_{h}$, and $n_{A}$, respectively. However, we found that while $n_{A}$ had, unsurprisingly, a strong effect on the degree of stochasticity in the system, it had little effect on the nature of the dynamics (Figure 3—figure supplement 3). The different regimes were clearly detectable from at least $n_{A}=50$ dimers. We therefore focused on $\lambda$ and $\epsilon$.
 
-We first considered the case of a single plasmid and performed simulations of the model over a range of values of these two quantities. The other parameters were fixed at estimated values (see Table 1) and the length of the simulated nucleoid was chosen to match the average length of cells with one F plasmid (Figure 1—figure supplement 1). These simulations produced a range of plasmid behaviours with a clear dependence on the position in this (λ,ε) phase space (Figure 3C–I). In particular we observed an interface at approximately In particular we observed an interface at approximately λ≈1 separating two regimes at small λ, with a single regime at large λ.
+We first considered the case of a single plasmid and performed simulations of the model over a range of values of these two quantities. The other parameters were fixed at estimated values (see Table 1) and the length of the simulated nucleoid was chosen to match the average length of cells with one F plasmid (Figure 1—figure supplement 1). These simulations produced a range of plasmid behaviours with a clear dependence on the position in this $(\lambda,\epsilon)$ phase space (Figure 3C–I). In particular we observed an interface at approximately In particular we observed an interface at approximately $\lambda≈1$ separating two regimes at small $\lambda$, with a single regime at large $\lambda$.
 
-We first consider small λ. The plasmid was found to move diffusively for ε<10 as evidenced by its zero mean velocity across the nucleoid and flat-topped position distribution. However, the diffusivity of the plasmid decreases with decreasing ε so that at the lowest values of ε studied, at which the hydrolysis rate kh at the plasmid is comparable to the rate kd away from it, the plasmid moves so slowly that it is effectively static on the timescale of our simulations (35 min) and remains approximately at its initial position.
+**Table 1.**
+ Model Parameters.
 
-When ε is increased beyond 10 (i.e. when the hydrolysis rate at the plasmid is much greater than that away from it), we observed clear oscillatory behaviour, similar to that observed in previous models. This transition from static to diffusive to oscillatory can be understood in the terms of the differing timescale of tether dissociation on the one hand and the ParA repletion rate on the other (Hu et al., 2015; Walter et al., 2017). In the oscillatory regime, tethers break (due to ATP hydrolysis) faster than they can be replaced. This leads to a ParA depletion zone behind the plasmid that reinforces its movement in the same direction. The result is directed motion until the nucleoid edge, at which point the depletion zone fills, causing the plasmid to change direction. This turnaround time is apparent in the boundary peaks in the position distribution (Figure 3E). At even higher values of ε, tethers are so short lived that the dynamics become once again diffusive.
 
-At the interface region λ≈1, the plasmid becomes confined to the centre region of the nucleoid where it exhibits either diffusive or oscillatory motion depending on the position along the interface. As λ is increased further, the positioning becomes more precise, the confined region shrinks and the plasmid exhibits true regular positioning. This is consistent with our hypothesis of the importance of the diffusive length-scale for the functioning of the flux-balance mechanism. Within this large regular positioning regime the position distribution, velocity profile and autocorrelation (Figure 3—figure supplement 1) have qualitatively the same form as we observed experimentally for cells containing a single plasmid and we found excellent quantitative agreement for (λ,ε)=(2.66,56.42) (Figure 4 and Figure 3H, blue cross in Figure 3I). Interestingly, these parameter values suggest that while the dynamics of a single F plasmid sits within the regular positioning regime, it is not far from the interfacial region of confined oscillations.
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Brief description</th>
+      <th>Value</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ka</td>
+      <td>Association rate to the nucleoid of cytosolic ParA</td>
+      <td>0.19 s–1</td>
+      <td>As Surovtsev et al., 2016a. Based on in vitro measurement from Vecchiarelli et al., 2010. Results in 95% ParA nucleoid association in the absence of a plasmid.</td>
+    </tr>
+    <tr>
+      <td>kd</td>
+      <td>Dissociation due to basal hydrolysis rate of ParA</td>
+      <td>0.01 s–1</td>
+      <td>Based on in vitro measurement from Hwang et al., 2013; Vecchiarelli et al., 2013.</td>
+    </tr>
+    <tr>
+      <td>kh</td>
+      <td>Tether dissociation due to plasmid stimulated hydrolysis of ParA</td>
+      <td>0.01–3 s–1</td>
+      <td>Sweeped over in this study.</td>
+    </tr>
+    <tr>
+      <td>Dp</td>
+      <td>Diffusion coefficient of the plasmid</td>
+      <td>3x10–3 μm2s–1</td>
+      <td>As Surovtsev et al., 2016a.Based on MSD of a Δpar plasmid.</td>
+    </tr>
+    <tr>
+      <td>Dh</td>
+      <td>Diffusion coefficient of ParA home position on the nucleoid</td>
+      <td>3.22x10–4 to 0.29 μm2s–1</td>
+      <td>Sweeped over in this study.</td>
+    </tr>
+    <tr>
+      <td>DA</td>
+      <td>Diffusion coefficient of DNA-bound ParA due to chromosomal fluctuations</td>
+      <td>0.01 μm2s–1</td>
+      <td>As Surovtsev et al., 2016a; Based on Javer et al., 2014 and Weber et al., 2010.</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>Width of the cell</td>
+      <td>0.95 μm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Length of the cell</td>
+      <td>2.5–4.34 μm</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>Simulation time step</td>
+      <td>0.001 s</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Rp</td>
+      <td>Radius Plasmid</td>
+      <td>0.05 μm</td>
+      <td>As Surovtsev et al., 2016a. Estimate from Sanchez et al., 2015.</td>
+    </tr>
+    <tr>
+      <td>RA</td>
+      <td>Radius ParA</td>
+      <td>0.002 μm</td>
+      <td>As Surovtsev et al., 2016a. Based on ParA crystal structure from Leonard et al., 2005.</td>
+    </tr>
+    <tr>
+      <td>σx</td>
+      <td>Width of elastic fluctuations of the chromosome along long cell axis</td>
+      <td>0.1 μm</td>
+      <td>As Surovtsev et al., 2016a.</td>
+    </tr>
+    <tr>
+      <td>σy</td>
+      <td>Width of elastic fluctuations of the chromosome along short cell axis</td>
+      <td>0.05 μm</td>
+      <td>As Surovtsev et al., 2016a.</td>
+    </tr>
+    <tr>
+      <td>nA</td>
+      <td>Number of ParA dimers</td>
+      <td>500</td>
+      <td>Midrange estimate from Adachi et al., 2006; Bouet et al., 2005; Lim et al., 2014.</td>
+    </tr>
+    <tr>
+      <td>np</td>
+      <td>Number of Plasmids</td>
+      <td>1–5</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
+
+We first consider small $\lambda$. The plasmid was found to move diffusively for $\epsilon<10$ as evidenced by its zero mean velocity across the nucleoid and flat-topped position distribution. However, the diffusivity of the plasmid decreases with decreasing $\epsilon$ so that at the lowest values of $\epsilon$ studied, at which the hydrolysis rate kh at the plasmid is comparable to the rate kd away from it, the plasmid moves so slowly that it is effectively static on the timescale of our simulations (35 min) and remains approximately at its initial position.
+
+When $\epsilon$ is increased beyond 10 (i.e. when the hydrolysis rate at the plasmid is much greater than that away from it), we observed clear oscillatory behaviour, similar to that observed in previous models. This transition from static to diffusive to oscillatory can be understood in the terms of the differing timescale of tether dissociation on the one hand and the ParA repletion rate on the other (Hu et al., 2015; Walter et al., 2017). In the oscillatory regime, tethers break (due to ATP hydrolysis) faster than they can be replaced. This leads to a ParA depletion zone behind the plasmid that reinforces its movement in the same direction. The result is directed motion until the nucleoid edge, at which point the depletion zone fills, causing the plasmid to change direction. This turnaround time is apparent in the boundary peaks in the position distribution (Figure 3E). At even higher values of $\epsilon$, tethers are so short lived that the dynamics become once again diffusive.
+
+At the interface region $\lambda≈1$, the plasmid becomes confined to the centre region of the nucleoid where it exhibits either diffusive or oscillatory motion depending on the position along the interface. As $\lambda$ is increased further, the positioning becomes more precise, the confined region shrinks and the plasmid exhibits true regular positioning. This is consistent with our hypothesis of the importance of the diffusive length-scale for the functioning of the flux-balance mechanism. Within this large regular positioning regime the position distribution, velocity profile and autocorrelation (Figure 3—figure supplement 1) have qualitatively the same form as we observed experimentally for cells containing a single plasmid and we found excellent quantitative agreement for $(\lambda,\epsilon)=(2.66,56.42)$ (Figure 4 and Figure 3H, blue cross in Figure 3I). Interestingly, these parameter values suggest that while the dynamics of a single F plasmid sits within the regular positioning regime, it is not far from the interfacial region of confined oscillations.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig4-v1.jpg)
 
-**Figure 4.:** Simulated data (blue) from Figure 3H at  compared to the experimental data (red) from (λ,ε)=(2.66,56.42)Figure 1E. Top: Mean velocity of plasmids as a function of position relative to the trajectory mean. Light and dark shading indicate standard deviation and standard error respectively. Bottom: Probability density of plasmid position relative to mean of trajectory.
+**Figure 4.:** Simulated data (blue) from Figure 3H at $(\lambda,\epsilon)=(2.66,56.42)$ compared to the experimental data (red) from Figure 1E. Top: Mean velocity of plasmids as a function of position relative to the trajectory mean. Light and dark shading indicate standard deviation and standard error respectively. Bottom: Probability density of plasmid position relative to mean of trajectory.
 
-We next measured how many ParA tethers were associated with the plasmid as the parameters were varied. We found the numbers of tethers varies positively with λ and negatively with ε, consistent with an increase in the flux of ParA dimers into the plasmid and longer tether lifetimes respectively (Figure 3—figure supplement 2A). Interestingly we found a clear relationship between the mobility of the plasmid and the number of ParA tethers, with the oscillatory regime having the fewest number of (simultaneous) tethers and the greatest mobility and the regularly-positioning regime at low ε, having the most tethers and the slowest movement (Figure 3—figure supplement 2B). This was also apparent from kymographs of the ParA distribution (Figure 3—figure supplement 2C). Note however, that the latter regime does exhibit regular positioning - it simply takes a very long time for the plasmid to move to mid-position. Similarly, in the ‘static’ regime the plasmid actually exhibits very slow diffusive motion. In this sense, there are really only three regimes (diffusive, oscillatory and regular positioning) and their interfaces.
+We next measured how many ParA tethers were associated with the plasmid as the parameters were varied. We found the numbers of tethers varies positively with $\lambda$ and negatively with $\epsilon$, consistent with an increase in the flux of ParA dimers into the plasmid and longer tether lifetimes respectively (Figure 3—figure supplement 2A). Interestingly we found a clear relationship between the mobility of the plasmid and the number of ParA tethers, with the oscillatory regime having the fewest number of (simultaneous) tethers and the greatest mobility and the regularly-positioning regime at low $\epsilon$, having the most tethers and the slowest movement (Figure 3—figure supplement 2B). This was also apparent from kymographs of the ParA distribution (Figure 3—figure supplement 2C). Note however, that the latter regime does exhibit regular positioning - it simply takes a very long time for the plasmid to move to mid-position. Similarly, in the ‘static’ regime the plasmid actually exhibits very slow diffusive motion. In this sense, there are really only three regimes (diffusive, oscillatory and regular positioning) and their interfaces.
 
-Finally, we explored how the other parameters of the model affect the dynamics. We varied the main parameters across four orders of magnitude centred on the set used in Figure 4 (which lies in the regular positioning regime). We found that only the two parameters varied in our sweep were able to push the system into the static or oscillatory regimes (Figure 3—figure supplement 4). Starting from the diffusive regime, this could also be achieved by changing the basal hydrolysis rate kd consistent with how the dimensionless quantities λ and ε depend on it (changing kd should move the system diagonally in the phase diagram). To confirm the role of these dimensionless quantities in determining the dynamics, we varied Dh , kd , kh and ka simultaneously over two orders of magnitude. This has the effect of modulating the turnover rate of ParA tethers while keeping λ, ε and θ fixed. We found no change in the nature of the dynamics beyond an expected increase in the frequency of the fluctuations in the plasmid position as the tether turnover rate is increased (Figure 3—figure supplement 5).
+Finally, we explored how the other parameters of the model affect the dynamics. We varied the main parameters across four orders of magnitude centred on the set used in Figure 4 (which lies in the regular positioning regime). We found that only the two parameters varied in our sweep were able to push the system into the static or oscillatory regimes (Figure 3—figure supplement 4). Starting from the diffusive regime, this could also be achieved by changing the basal hydrolysis rate $k_{d}$ consistent with how the dimensionless quantities $\lambda$ and $\epsilon$ depend on it (changing $k_{d}$ should move the system diagonally in the phase diagram). To confirm the role of these dimensionless quantities in determining the dynamics, we varied $D_{h}$ , $k_{d}$ , $k_{h}$ and $k_{a}$ simultaneously over two orders of magnitude. This has the effect of modulating the turnover rate of ParA tethers while keeping $\lambda$, $\epsilon$ and $\theta$ fixed. We found no change in the nature of the dynamics beyond an expected increase in the frequency of the fluctuations in the plasmid position as the tether turnover rate is increased (Figure 3—figure supplement 5).
 
-We also explored if regular positioning is achievable in the absence of ParA-ATP diffusion on the nucleoid (i.e. Dh=0). However, we found that it only occurs if the length scale of chromosome fluctuations σx,y is increased far beyond its measured value of about 0.1 µm to 1 µm (Figure 3—figure supplement 4A). At this unphysically high value, each DNA-bound ParA dimer can, through the fluctuations of the underlying DNA, interact with the plasmid over long distances and from across the cell. The plasmid is therefore positioned at mid-cell because this is the only position where the net force from all ParA dimers balances. However, based on the measurements of the chromosome fluctuations (Lim et al., 2014; Surovtsev et al., 2016a; Wiggins et al., 2010), we believe this regime is not biologically relevant.
+We also explored if regular positioning is achievable in the absence of ParA-ATP diffusion on the nucleoid (i.e. $D_{h}=0$). However, we found that it only occurs if the length scale of chromosome fluctuations $\sigma_{x,y}$ is increased far beyond its measured value of about 0.1 µm to 1 µm (Figure 3—figure supplement 4A). At this unphysically high value, each DNA-bound ParA dimer can, through the fluctuations of the underlying DNA, interact with the plasmid over long distances and from across the cell. The plasmid is therefore positioned at mid-cell because this is the only position where the net force from all ParA dimers balances. However, based on the measurements of the chromosome fluctuations (Lim et al., 2014; Surovtsev et al., 2016a; Wiggins et al., 2010), we believe this regime is not biologically relevant.
 
-## Regular positioning of two plasmids
+### Regular positioning of two plasmids
 
 We next considered the case of cells having two and more plasmids. We found that our model could reproduce the same quarter positioning as observed for F plasmid (Figure 5A). Importantly, regular positioning was achieved irrespective of where the two plasmids were initially positioned. This is in contrast to the model of Hu et al., in which plasmids move apart a fixed distance. We also simulated plasmid replication by duplicating one plasmid during the simulation. We found that the replicated plasmids moved apart rapidly towards the quarter positions in a qualitatively similar way as we observed in our experimental data (Figure 5B–E). We expect that better knowledge of the biochemical parameters would further improve this comparison.
 
-Examining the phase diagram for more than one plasmid, we found the boundary of the regularly positioning regime expands to lower λ values (Figure 5—figure supplement 1B). This is consistent with s, the distance ParA-ATP dimers diffuse on the nucleoid, needing to be greater than L2n for regular positioning to occur (Figure 2). When we displayed the phase diagrams in terms of λn=nλ=sL/2n , we found that they all collapsed onto each other, with regularly positioning only occurring for λn≳1, further confirming the importance of this parameter (Figure 5—figure supplement 1C).
+![Figure 5.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig5-v1.jpg)
 
-## Length dependent transition to the confined oscillatory regime
+**Figure 5.:** (A) Kymographs showing the distribution of plasmid positions starting from different initial positions along the long axis. Data is from 1000 simulations each. Nucleoid length is chosen to match our experimental data (see Table 2). (B) Example of F plasmid replication (splitting ParB-mVenus focus) event. (C) Example simulated replication event. (D) Kymograph of F plasmid splitting events as in (B). Data from 500 cell cycles were combined according to the time of focus splitting. (E) Kymograph of simulated plasmid replication. Upon replication, both plasmids occupy the same position but only one inherits the ParA-ParB tethers. This does not affect the result as the number of tethers equilibrates rapidly. Data from 1000 simulations. Note that in (D) position is relative to cell length, rather than nucleoid length as in the simulations (D). See also Figure 5—figure supplement 1A.
 
-While F plasmid operates within the regular positioning regime, our model predicts that its dynamics can become oscillatory by decreasing λ (Figure 3I, white arrow). Since λ depends inversely on the nucleoid length, L, we wondered whether oscillations would appear in longer cells. When we used the same model parameters determined above but with different lengths, we found that the system could indeed enter the (confined) oscillatory regime, commensurate with the length-induced decrease in λ (Figure 6A).
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Example trajectory showing positioning relative to mid-nucleoid during plasmid replication/deletion. One plasmid is replicated every 15 min (orange circles) for 60 min. Afterwards, one plasmid is deleted every 15 min (orange cross). (B) Boundary of the regular positioning regime for 1–4 plasmids, determined by $(1−ψ)∗\phi>0.7$ (see Materials and methods). Number on the contour indicates the number of plasmids, $n$. The colours are arbitrary and for visual clarity (region on top is the brightest). (C) Same as in (B) but with a normalised $\lambda$ to take account of the number of plasmids: $\lambda_{n}=n\lambda$. This way all regimes collapse into one location.
+
+**Table 2.**
+ Simulation parameters used in figures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure</th>
+      <th>kh (1/s)</th>
+      <th>Dh (μm2/s)</th>
+      <th>L (μm)</th>
+      <th>np</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 3C, Figure 3—figure supplement 1B, Figure 3—figure supplement 4A, Figure 3—figure supplement 5B</td>
+      <td>0.0133</td>
+      <td>0.000440</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3D, Figure 3—figure supplement 1C, Figure 3—figure supplement 4B, Figure 3—figure supplement 5B</td>
+      <td>0.0769</td>
+      <td>0.000440</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3E, Figure 3—figure supplement 1D, Figure 3—figure supplement 4C, Figure 3—figure supplement 5B</td>
+      <td>0.1785</td>
+      <td>0.000623</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3F, Figure 3—figure supplement 1E</td>
+      <td>0.0752</td>
+      <td>0.002497</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3G, Figure 3—figure supplement 1F</td>
+      <td>0.5642</td>
+      <td>0.014162</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3H, Figure 3—figure supplement 1G, Figure 3—figure supplement 4D, Figure 3—figure supplement 5B</td>
+      <td>0.5642</td>
+      <td>0.056760</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 3I, Figure 8, Figure 3—figure supplement 1A, Figure 3—figure supplement 2, Figure 3—figure supplement 3*, Figure 3—figure supplement 4E</td>
+      <td>0.01–3</td>
+      <td>0.000322–0.29</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>0.5642</td>
+      <td>0.056760</td>
+      <td>2.53</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 5A</td>
+      <td>0.5642</td>
+      <td>0.056760</td>
+      <td>2.91</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Figure 5C, E†</td>
+      <td>0.5642</td>
+      <td>0.007179</td>
+      <td>2.91</td>
+      <td>1 -&gt;2</td>
+    </tr>
+    <tr>
+      <td>Figure 6A (inset: orange, blue)</td>
+      <td>0.5642</td>
+      <td>0.056760</td>
+      <td>1.82,4.93</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1A</td>
+      <td>0.5642</td>
+      <td>0.056760</td>
+      <td>3.54</td>
+      <td>1 -&gt;5</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1B, C</td>
+      <td>0.01–3</td>
+      <td>0.000322–0.29</td>
+      <td>2.53, 2.91, 3.67, 4.34</td>
+      <td>1,2,3,4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*nA was changed in the range of 5 to 1000.†kd was changed to 0.001._
+
+Examining the phase diagram for more than one plasmid, we found the boundary of the regularly positioning regime expands to lower $\lambda$ values (Figure 5—figure supplement 1B). This is consistent with $s$, the distance ParA-ATP dimers diffuse on the nucleoid, needing to be greater than $\frac{L}{2n}$ for regular positioning to occur (Figure 2). When we displayed the phase diagrams in terms of $\lambda_{n}=n\lambda=\frac{s}{L/2n}$ , we found that they all collapsed onto each other, with regularly positioning only occurring for $\lambda_{n}≳1$, further confirming the importance of this parameter (Figure 5—figure supplement 1C).
+
+### Length dependent transition to the confined oscillatory regime
+
+While F plasmid operates within the regular positioning regime, our model predicts that its dynamics can become oscillatory by decreasing $\lambda$ (Figure 3I, white arrow). Since $\lambda$ depends inversely on the nucleoid length, L, we wondered whether oscillations would appear in longer cells. When we used the same model parameters determined above but with different lengths, we found that the system could indeed enter the (confined) oscillatory regime, commensurate with the length-induced decrease in $\lambda$ (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig6-v1.jpg)
+
+**Figure 6.:** (A) inverse dependence of $\lambda$ on nucleoid length. inset: simulated trajectories at the highlighted lengths/$\lambda$ values. (B) kymographs of parb-mvenus signal along the long axis of two cells depicting the transition from regular position to low-amplitude oscillations. the plasmid trajectory is highlighted in red. (C) the fraction of the oscillating population plotted against cell length for cells with one (879 cell cycles) or two plasmids (5044 cell cycles) (see figure 6—figure supplement 1). (D) the distribution of threshold length-scale (l/2n) for cells containing different numbers of plasmids. data from 16,346 cell cycles.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Example trajectory (made up) of a cell containing one foci. Shaded areas indicate cell boundaries. Black bars represent a sliding window moving along the trajectory. Points which are captured by the sliding window are marked by dashed lines. (B) Same trajectory as in (A) but each point in the middle of a sliding window was colour-coded based on the sign of the velocity autocorrelation at a lag of 1 min (i.e. between consecutive frames) inside the sliding window. Orange indicates negative correlation/regular positioning and blue positive correlation/oscillations. Segments are classified (indicated by coloured shading) only if they consist of more than 6 points with the same annotation. These were used for subsequent analysis. (C) Example of an annotated/classified trajectory from experimental data.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A violin plot of the velocity autocorrelation at lag 1 min in the 12 frames before and after plasmid replication (one fluorescent focus becoming two). The black bar indicates the mean. Post-replication trajectories are separated according to the sign of the value before replication. Trajectories with persistent dynamics (positive velocity autocorrelation) do not have an increased bias to remain persistent after replication (n=186). (B) An example cell cycle in which oscillatory dynamics are detectable before plasmid replication but not afterwards.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) 210 lineages of mother cells were followed over many generations to calculate the autocorrelation of oscillatory status (1 if the cycle contains an oscillatory segment, 0 otherwise) (B) The number of analysed cell cycles from each channel of the mother machine that contain an oscillatory segment.
 
 Motivated by these results, we went back to our F plasmid data and examined cells harbouring one plasmid with greater than average cell length. Consistent with our simulations, we found multiple cell cycles in which the plasmid was initially stably positioned at mid-cell but as the length of the cell increased, appeared to display low-amplitude oscillations (Figure 6B). To investigate if this transition was reproducible, we developed a method to classify segments of trajectories as oscillatory (or processive), regularly positioned or undetermined based on the velocity autocorrelation between consecutive frames (Figure 6—figure supplement 1). Binning the individual time-points from these classified segments according to cell length revealed the relative abundance of the two populations (Figure 6C). We found a marked increase in the proportion of oscillatory segments from cell lengths of about 3 μm, with up to 50% of timepoints being classified as oscillatory, consistent with our prediction. This also confirms a previous rough estimate that F plasmid operates not far below the threshold of oscillatory instability (Walter et al., 2017).
 
-Interestingly, the same analysis on cells containing two plasmids revealed a significantly smaller proportion of oscillatory segments and a weaker length dependence. However, this is again consistent with our prediction that, in a cell with n plasmids, ParA-ATP dimers need to diffuse on the nucleoid an average distance of at least L/(2n) in order for the plasmids to sense each other and regular positioning to occur (Figure 2B). Since, within the population, this threshold distance is greatest for cells containing a single plasmid (Figure 6D), it is in these cells that we are most likely to observe a transition to oscillatory behaviour. More specifically, these results suggest that ParA-ATP dimers diffuse a distance of about 1.5 μm before dissociating. We also examined how oscillations are affected by changes in plasmid number within individual cells i.e. upon plasmid replication (Figure 6—figure supplement 2). We found that oscillatory behaviour appeared to decrease in that a classification of oscillatory dynamics before replication was not a reliable indicator of oscillatory dynamics afterwards. The same was true across generations - we observed a rapid decay in the autocorrelation for containing an oscillatory trajectory segment (Figure 6—figure supplement 3).
+Interestingly, the same analysis on cells containing two plasmids revealed a significantly smaller proportion of oscillatory segments and a weaker length dependence. However, this is again consistent with our prediction that, in a cell with $n$ plasmids, ParA-ATP dimers need to diffuse on the nucleoid an average distance of at least $L/(2n)$ in order for the plasmids to sense each other and regular positioning to occur (Figure 2B). Since, within the population, this threshold distance is greatest for cells containing a single plasmid (Figure 6D), it is in these cells that we are most likely to observe a transition to oscillatory behaviour. More specifically, these results suggest that ParA-ATP dimers diffuse a distance of about 1.5 μm before dissociating. We also examined how oscillations are affected by changes in plasmid number within individual cells i.e. upon plasmid replication (Figure 6—figure supplement 2). We found that oscillatory behaviour appeared to decrease in that a classification of oscillatory dynamics before replication was not a reliable indicator of oscillatory dynamics afterwards. The same was true across generations - we observed a rapid decay in the autocorrelation for containing an oscillatory trajectory segment (Figure 6—figure supplement 3).
 
-## pB171 operates closer to the oscillatory regime than F Plasmid
+### pB171 operates closer to the oscillatory regime than F Plasmid
 
-We have shown above that F plasmid is, for the most part, regularly positioned within cells, with a transition towards oscillatory behaviour only occurring in those cells with greatest sensing threshold L/(2n), that is in cells with the lowest plasmid concentration. Might other ParABS systems exhibit more pronounced oscillatory dynamics? To explore this, we examined the dynamics induced by the ParABS system of the plasmid pB171. We chose this system as it has previously been described as oscillatory (Ringgaard et al., 2009) and it belongs to the other family of ParABS systems, namely type 1b (F plasmid is type 1a).
+We have shown above that F plasmid is, for the most part, regularly positioned within cells, with a transition towards oscillatory behaviour only occurring in those cells with greatest sensing threshold $L/(2n)$, that is in cells with the lowest plasmid concentration. Might other ParABS systems exhibit more pronounced oscillatory dynamics? To explore this, we examined the dynamics induced by the ParABS system of the plasmid pB171. We chose this system as it has previously been described as oscillatory (Ringgaard et al., 2009) and it belongs to the other family of ParABS systems, namely type 1b (F plasmid is type 1a).
 
 Using a previously constructed TetR/tetO labelling system, we first determined the copy number of this system and found it to be comparable to F plasmid (Figure 7—figure supplement 1). We then examined plasmid dynamics in cells containing a single plasmid and found clear unambiguous oscillatory behaviour in ~80% of such cells (Figure 7A), in stark contrast to F plasmid (Figure 7—figure supplement 2). This was reflected in the flat-topped plasmid position distribution (Figure 7B), which was very different from that of F plasmid and more similar to what we obtained in the oscillatory regime of our model (Figure 3—figure supplement 1). More importantly, the oscillatory nature of the dynamics was reflected in the position and velocity autocorrelations (Figure 7C and D), including a positive velocity autocorrelation between consecutive frames, which is a signature of processive motion (Figure 1—figure supplement 2). These curves qualitatively matched those obtained in our model within the oscillatory regime (Figure 3—figure supplement 1).
 
-We also found that oscillatory dynamics were more likely in longer cells (Figure 7E), consistent with our prediction of the importance of nucleoid length in determining the dynamical regime (through λ). Overall oscillations were almost four times as likely for pB171 as for F plasmid (Figure 7F). However, this was much reduced when we considered cells with two plasmids, for which oscillations were much less apparent (Figure 7E and F, Figure 7—figure supplement 3). This suggests that, similar to F plasmid, the ParABS system of pB171 does not lie entirely within the oscillatory regime, but only enters it for cells containing a single plasmid, in which the sensing distance required for regular positioning is longest (see above).
+![Figure 7.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig7-v1.jpg)
+
+**Figure 7.:** (A) Two kymographs (pB171) of TetR-mCherry signal along the long axis of two cells with one plasmid. Red line indicates the trajectory of the plasmid (more examples of trajectories can be found in Figure 7—figure supplement 2). (B) Relative position position distribution for pB171 (blue, 68 cell cycles) and F-Plasmid (red, 879 cell cycles) for cells with one plasmid. (C,D) Position and velocity autocorrelation for pB171 (blue) and F plasmid (red). Positive velocity autocorrelation at 1 min (dashed red line) indicates processive dynamics (see Figure 1—figure supplement 2). (E) The proportion of trajectory time points classified as oscillatory from pB171 plotted against cell length for cells containing one or two plasmids. Data from 68 and 117 cell cycles, respectively. (F) Comparison between oscillating population of pB171 and F-Plasmid with one and two plasmids on whole population level.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Data from 124 cells. The mean is 2.56 plasmids per cell.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Example kymographs of cells with one plasmid. Time is in minutes on the x-axis and position along the long axis in μm is on the y-axis. The intensity corresponds to TetR-mCherry (pB171) or ParB-mVenus (F).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** As in Figure 7—figure supplement 2 but trajectories are from cells containing two plasmids. See Figure 7F for quantification.
+
+We also found that oscillatory dynamics were more likely in longer cells (Figure 7E), consistent with our prediction of the importance of nucleoid length in determining the dynamical regime (through $\lambda$). Overall oscillations were almost four times as likely for pB171 as for F plasmid (Figure 7F). However, this was much reduced when we considered cells with two plasmids, for which oscillations were much less apparent (Figure 7E and F, Figure 7—figure supplement 3). This suggests that, similar to F plasmid, the ParABS system of pB171 does not lie entirely within the oscillatory regime, but only enters it for cells containing a single plasmid, in which the sensing distance required for regular positioning is longest (see above).
 
 ## Discussion
 
@@ -118,17 +412,118 @@ The nature of partition complex positioning on the other hand has yet to be reso
 
 In this work, we addressed this deficiency by first performing a high-throughput quantitative analysis of plasmid dynamics. We determined that the motion of F plasmid, which hosts a type 1a ParABS system, is consistently biased towards specific home positions (mid-cell in cells containing a single plasmid, approximate quarter positions in cells with two plasmids) as if pulled by a spring-like force. The precision of this ‘regular positioning’ was seen in the consistently spatially varying average velocity of the plasmid and supports the presence of a geometry sensing mechanism. However, such positioning was not observed in either of the two existing molecular-level models of plasmid positioning (Brownian Ratchet Hu et al., 2017 and DNA relay Surovtsev et al., 2016a). Our results therefore indicate that neither model is consistent with the dynamics of F plasmid (and indeed of pB171, see below).
 
-Our model lies between the DNA relay and Brownian Ratchet models in terms of the model ingredients but encompases, in terms of qualitative outputs, the previous stochastic models as specific cases according to λ, the ratio of the length scale of ParA-ATP dimer diffusion on the nucleoid and the nucleoid length (Figure 8A). At one extreme the DNA relay model (Surovtsev et al., 2016a) does not incorporate ParA-ATP diffusion (λ=0) and therefore oscillations are the only non-trivial behaviour. On the other extreme, the model of Ietswaart et al., 2014 includes it but without basal ATP hydrolysis (λ=∞) such that only regular positioning is obtained. A model of the PomXYZ system of Myxococcus xanthus (Schumacher et al., 2017), which positions a protein rather than plasmid cargo, also lies here. The Brownian Ratchet model (Hu et al., 2017) on the other hand incorporates dimer diffusion but with a length scale (giving λ=0.5) that places the system just outside of the regular positioning regime for the case of a single plasmid. This explains why this study found single plasmids to exhibit ‘local excursions’ around mid-cell, that is approximate rather than regular positioning (Figure 3F). Further comparison of the different stochastic models is given in the Materials and methods section and in Table 3.
+Our model lies between the DNA relay and Brownian Ratchet models in terms of the model ingredients but encompases, in terms of qualitative outputs, the previous stochastic models as specific cases according to $\lambda$, the ratio of the length scale of ParA-ATP dimer diffusion on the nucleoid and the nucleoid length (Figure 8A). At one extreme the DNA relay model (Surovtsev et al., 2016a) does not incorporate ParA-ATP diffusion ($\lambda=0$) and therefore oscillations are the only non-trivial behaviour. On the other extreme, the model of Ietswaart et al., 2014 includes it but without basal ATP hydrolysis ($\lambda=∞$) such that only regular positioning is obtained. A model of the PomXYZ system of Myxococcus xanthus (Schumacher et al., 2017), which positions a protein rather than plasmid cargo, also lies here. The Brownian Ratchet model (Hu et al., 2017) on the other hand incorporates dimer diffusion but with a length scale (giving $\lambda=0.5$) that places the system just outside of the regular positioning regime for the case of a single plasmid. This explains why this study found single plasmids to exhibit ‘local excursions’ around mid-cell, that is approximate rather than regular positioning (Figure 3F). Further comparison of the different stochastic models is given in the Materials and methods section and in Table 3.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/78743/elife-78743-fig8-v1.jpg)
 
-**Figure 8.:** (A) The phase diagram for a single plasmid from Figure 3I with the conceptual location of existing stochastic models indicated. In the DNA relay model, bound ParA-ATP dimers do not diffuse on the nucleoid and so . The model cannot produce regular positioning. In the model of Ietswaart et al., ParA dimers diffuse on nucleoid but only dissociate by interacting with the plasmid, therefore λ=0 and the model lies entirely in the regular positioning regime. For both models, the y-axis represents λ=∞ the hydrolysis rate at the plasmid. The Brownian Ratchet lies between these two extremes. The length scale associated to ParA diffusion is finite but its value was fixed at kh μm (given s=0.5 for a 2 μm nucleoid), so that the regular positioning regime is not explored. The locations of the ParABS systems of F plasmid and pB171 in cells containing a single plasmid are shown. The location of pB171 is an estimate based on a qualitative comparison of its dynamics. The blue dashed line marks the region in which the period of the oscillations resembles the experimental observations. (λ=0.5B) ATP consumption rate. Red lines are the contours from (A).
+**Figure 8.:** (A) The phase diagram for a single plasmid from Figure 3I with the conceptual location of existing stochastic models indicated. In the DNA relay model, bound ParA-ATP dimers do not diffuse on the nucleoid and so $\lambda=0$. The model cannot produce regular positioning. In the model of Ietswaart et al., ParA dimers diffuse on nucleoid but only dissociate by interacting with the plasmid, therefore $\lambda=∞$ and the model lies entirely in the regular positioning regime. For both models, the y-axis represents $k_{h}$ the hydrolysis rate at the plasmid. The Brownian Ratchet lies between these two extremes. The length scale associated to ParA diffusion is finite but its value was fixed at $s=0.5$ μm (given $\lambda=0.5$ for a 2 μm nucleoid), so that the regular positioning regime is not explored. The locations of the ParABS systems of F plasmid and pB171 in cells containing a single plasmid are shown. The location of pB171 is an estimate based on a qualitative comparison of its dynamics. The blue dashed line marks the region in which the period of the oscillations resembles the experimental observations. (B) ATP consumption rate. Red lines are the contours from (A).
 
-A recent deterministic model deviates from this scheme (Jindal and Emberly, 2019) and requires some explanation. This model does not include ParA diffusion on the nucleoid (hence λ=0) but it nonetheless produces regular positioning. This is in contrast to our model, for which we otherwise could not obtain, with biologically relevant parameters, regular positioning (Figure 3—figure supplement 4), as well as the DNA relay model. We believe this disparity is due to the continuous nature of the Jindal and Emberly model. The plasmid velocity is determined by the entire ParA dimer concentration but weighted according to the distance from the plasmid. Therefore, there is a regime (in which the plasmid movement is slower than ParA un-/binding) for which the mid-cell position is the stable configuration since at that location the weighted sum of ParA dimers on either side balances. This holds even if the ParA gradient is locally symmetric around an off-centre plasmid and because the model is continuous, even small differences produce an effect. In contrast, in the deterministic models with ParA-ATP diffusion in the nucleoid, the geometry of the cell is encoded in the local ParA gradient around the plasmid (when λ is sufficiently large) and plasmid positioning does not rely on interactions with distant ParA. In our stochastic model without such diffusion (Dh=0), the relatively low concentration of ParA dimers means that the effect of rare long-distance interactions between the plasmid and ParA dimers is not sufficient to affect the dynamics due to the inherent stochasticity of the system. The Jindal and Emberly model also predicts that oscillations occur for intermediate plasmid concentrations i.e. the system transitions from regular positioning to oscillations to regular positioning with increasing plasmid concentration. However, we only observe the latter transition experimentally.
+**Table 3.**
+ Model comparison.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hopping and relay(This study)</th>
+      <th>DNA-Relay (Surovtsev et al., 2016a)</th>
+      <th>Brownian-Ratchet (Hu et al., 2017)</th>
+      <th>Model of Ietswaart et al., 2014</th>
+      <th>Model of Schumacher et al., 2017†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elastic fluctuations</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Basal-hydrolysis</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>ParA diffusion on nucleoid</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Length-scale of ParA diffusion on the nucleoid</td>
+      <td>finite</td>
+      <td>0</td>
+      <td>finite</td>
+      <td>infinite</td>
+      <td>infinite</td>
+    </tr>
+    <tr>
+      <td>ParA diffusion on partition complex</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Hydrolyzed nucleoid bound ParA state</td>
+      <td>X</td>
+      <td>X</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Limited binding of ParA to partition complex</td>
+      <td>X</td>
+      <td>X</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Limit on tether length</td>
+      <td>X</td>
+      <td>X</td>
+      <td>✓</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Cytosolic ParA pool</td>
+      <td>Well mixed</td>
+      <td>Well mixed</td>
+      <td>Unlimited pool, well mixed</td>
+      <td>Well mixed</td>
+      <td>Well mixed</td>
+    </tr>
+    <tr>
+      <td>Observed behaviour</td>
+      <td>Diffusion, regular positioning, static, oscillations</td>
+      <td>Oscillations</td>
+      <td>Diffusion, local excursion*, static, oscillations</td>
+      <td>Regular positioning ‡</td>
+      <td>Regular positioning</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The Brownian ratchet model has all the necessary components/mechanisms to produce regular positioning. However, the parameters used in the study were such that the length-scale was not sufficiently high for regular positioning and therefore only ‘local excursion’ (approximate positioning in our terminology) instead of regular positioning was observed in cells with one plasmid.†In this model of the PomXYZ of Myxococcus xanthus, PomZ is the analog to ParA and the PomXY cluster is the analog of the partition complex.‡There are two stochastic models (with and without ParA filaments) presented in Ietswaart et al., 2014. The model including filaments is an extension of the other. Both models are capable of producing regular positioning._
+
+A recent deterministic model deviates from this scheme (Jindal and Emberly, 2019) and requires some explanation. This model does not include ParA diffusion on the nucleoid (hence $\lambda=0$) but it nonetheless produces regular positioning. This is in contrast to our model, for which we otherwise could not obtain, with biologically relevant parameters, regular positioning (Figure 3—figure supplement 4), as well as the DNA relay model. We believe this disparity is due to the continuous nature of the Jindal and Emberly model. The plasmid velocity is determined by the entire ParA dimer concentration but weighted according to the distance from the plasmid. Therefore, there is a regime (in which the plasmid movement is slower than ParA un-/binding) for which the mid-cell position is the stable configuration since at that location the weighted sum of ParA dimers on either side balances. This holds even if the ParA gradient is locally symmetric around an off-centre plasmid and because the model is continuous, even small differences produce an effect. In contrast, in the deterministic models with ParA-ATP diffusion in the nucleoid, the geometry of the cell is encoded in the local ParA gradient around the plasmid (when $\lambda$ is sufficiently large) and plasmid positioning does not rely on interactions with distant ParA. In our stochastic model without such diffusion ($D_{h}=0$), the relatively low concentration of ParA dimers means that the effect of rare long-distance interactions between the plasmid and ParA dimers is not sufficient to affect the dynamics due to the inherent stochasticity of the system. The Jindal and Emberly model also predicts that oscillations occur for intermediate plasmid concentrations i.e. the system transitions from regular positioning to oscillations to regular positioning with increasing plasmid concentration. However, we only observe the latter transition experimentally.
 
 We also note that a previous deterministic model (Walter et al., 2017) implemented an alternative scheme in which the finite diffusive length-scale is of cytosolic ParA rather than the nucleoid-associated dimers. From a mathematical viewpoint, this system has very similar dynamics and is capable of both oscillations and regular positioning. However, given the rapid diffusion of small cytosolic proteins and the slow transition of ParA to its DNA-binding competent state (Vecchiarelli et al., 2010), we expect that ParA in the cytosol is well-mixed.
 
-In Figure 8A, we indicate the location of F plasmid in the one-plasmid phase diagram of our model based on the fit to the subpopulation of cells containing a single plasmid (Figure 4). While on average it lies in the regular positioning regime, we have seen that in the longest cells it exhibits confined oscillations. This was predicted by our model since longer cells have lower λ. We also examined the dynamics of the type 1b ParABS system of pB171 and found clear oscillatory dynamics in the majority of cells carrying a single plasmid. While we do not have enough data for an accurate fitting, the 10–15 min period of the oscillations places pB171 within the indicated region, suggesting that both ε and λ are lower than for F plasmid. While adjusting the model parameters can change the nature (period etc) of the dynamics within the regions, we have found that their locations within the phase diagram are relatively robust (see e.g Figure 3—figure supplements 3 and 4). Thus, while additional system parameters may be involved, we speculate that that λ, and hence the diffusive length scale of ParA dimers, is lower for pB171 than for F plasmid. It remains to be seen if this is the case. Nevertheless, our results indicate that both F plasmid and especially pB171 lie close to the dynamical transition between regular positioning and oscillations, with the systems only crossing into the oscillatory regime for the subpopulation of cells with the lowest plasmid concentration. This was previously suggested but not experimentally demonstrated for F plasmid (Walter et al., 2017). Importantly, both systems can be explained by the same model.
+In Figure 8A, we indicate the location of F plasmid in the one-plasmid phase diagram of our model based on the fit to the subpopulation of cells containing a single plasmid (Figure 4). While on average it lies in the regular positioning regime, we have seen that in the longest cells it exhibits confined oscillations. This was predicted by our model since longer cells have lower $\lambda$. We also examined the dynamics of the type 1b ParABS system of pB171 and found clear oscillatory dynamics in the majority of cells carrying a single plasmid. While we do not have enough data for an accurate fitting, the 10–15 min period of the oscillations places pB171 within the indicated region, suggesting that both $\epsilon$ and $\lambda$ are lower than for F plasmid. While adjusting the model parameters can change the nature (period etc) of the dynamics within the regions, we have found that their locations within the phase diagram are relatively robust (see e.g Figure 3—figure supplements 3 and 4). Thus, while additional system parameters may be involved, we speculate that that $\lambda$, and hence the diffusive length scale of ParA dimers, is lower for pB171 than for F plasmid. It remains to be seen if this is the case. Nevertheless, our results indicate that both F plasmid and especially pB171 lie close to the dynamical transition between regular positioning and oscillations, with the systems only crossing into the oscillatory regime for the subpopulation of cells with the lowest plasmid concentration. This was previously suggested but not experimentally demonstrated for F plasmid (Walter et al., 2017). Importantly, both systems can be explained by the same model.
 
 To understand why this might be the case, we used our model to measure the consumption of ATP throughout the explored phase space. Interestingly, we found that the oscillatory regime consumed the least ATP (Figure 8B). This is because this regime has the least flux of ParA-ATP dimers into the plasmid due to the short distance ParA dimers diffuse before dissociating from the DNA despite the fact that the plasmid moves back and forth across the nucleoid i.e. the directed movement of the plasmids cannot compensate for the reduced incoming flux of ParA dimers. Consistent with this, the oscillatory regime has the fewest simultaneous ParA-plasmid tethers (Figure 3—figure supplement 2). That the dynamics due to ParABS lie just below the onset of oscillation may therefore be due to achieving regular positioning while at the same time minimising energy consumption.
 
@@ -136,23 +531,23 @@ Overall, our results uncover the dynamical nature of ParABS systems and propose 
 
 ## Materials and methods
 
-## Strains and growth condition
+### Strains and growth condition
 
 F plasmid experiments use strain DLT3125 (Sanchez et al., 2015), a derivative of the E. coli K-12 strain DLT1215 (Bouet et al., 2005) containing the mini-F plasmid derivative pJYB234. This plasmid carries a functional ParB-mVenus fusion. Overnight cultures were grown at 37 °C in LB-Media containing 10 µg/ml thymine + 10 µg/ml chloramphenicol.
 
 Experiments on plasmid pB171, use strain SR1 (Ringgaard et al., 2009), a derivative of the E. coli K-12 strain containing a ΔpcnB mutation which reduces the copy number of the hosted pB171-derived plasmids. SR1 carries plasmids pSR233 and pSR124 (Ringgaard et al., 2009). Plasmid pSR233 is a miniR1 plasmid carrying the parABS system (par2) of pB171 in addition to a tetO array. Plasmid pSR124 encodes an inducible tetR-mCherry fusion under the control of a PBAD promoter. TetR binds to tetO and allows to track the motion of pSR233. Overnight cultures were grown at 37 °C in LB-Media containing 1 µg/ml thiamine + 50 µg/ml kanamycin + 100 µg/ml ampicillin.
 
-## Microfluidics
+### Microfluidics
 
 Like the original mother machine (Wang et al., 2010), our design consists of a main channel through which nutrient media flows and narrow growth-channels in which cells are trapped. However, we follow (Baltekin et al., 2017) and include (i) a small opening at the end of each growth channel (ii) a waste channel connected to that opening to allow a continuous flow of nutrients through the growth channels (iii) an inverted growth-channel that is used to remove the background from fluorescence and phase contrast. We used a silicon wafer with this design to create the mother machine. We poured a polydimethylsiloxane (PDMS) mixture composed of a ratio of 1:7 (curing agent:base) over the wafer and let it rest at low pressure in a degasser for ~30 min to remove air bubbles inside. The PDMS was then baked at 80 °C overnight (~16 h). The cured PDMS was peeled off the wafer. Before imaging, the chip is bonded to a glass slide using a plasma generator (30 s at 75 W) and subsequently baked for a further 30 min at 80 °C, while the microscope is prepared.
 
-## Microscopy
+### Microscopy
 
 We used a Nikon Ti microscope with a 100 x/1.45 oil objective and a Hamamatsu Photonics camera for all imaging. For imaging cells of strain DLT3125 we used a mother machine. Overnight cultures were inoculated into fresh media (M9+0.5% glycerol + 0.2% casamino acids + 0.04 mg/mL thymine + 0.2 mg/mL leucine + 10 μg/mL chloramphenicol) for 4 hours at 30 °C before imaging. Cells were loaded into the chip through the main channel and the chip was placed into a preheated microscope at 30 °C. The cells were constantly supplied with fresh media by pumping 2 μL/min of M9+0.5% glycerol + 0.2% casamino + 0.04 mg/mL thymine + 0.2 mg/mL leucine through the microfluidic chip. Cells were grown for 2 hr inside the microscope before imaging. Cells were imaged at 1 minute intervals for approximately 72 hr. Both phase contrast and YFP-signal were captured. Imaging was repeated independently with similar results.
 
 For imaging cells of strain SR1 we used agar pads. Overnight cultures were inoculated into fresh media (M9+0.5% glycerol + 0.2% casamino + 1 μg/ml thiamine + 10 μg/ml arabinose + 50 μg/ml kanamycin + 100 μg/ml ampicillin) for 2 hr at 30 °C before imaging. The arabinose was added to induce synthesis of tetR-mCherry. Longer or continuous induction of arabinose leads to replication defects. Cells were placed on an 1% agar pad made from M9+0.5% glycerol + 0.2% casamino acids + 1 μg/mL thiamine and they were imaged at 1 min intervals for 4 hr. Both phase contrast and RFP-signal were captured. Imaging was performed twice and the data combined.
 
-## Image processing
+### Image processing
 
 Our image processing pipeline for mother-machine experiments consists of three parts: (I) preprocessing, (II) segmentation and foci finding, and (III) cell and foci tracking. While Parts I and III use custom Matlab scripts, Part II is based on SuperSegger (Stylianidou et al., 2016), a Matlab-based package for segmenting and tracking bacteria within microcolonies (original code is available at https://github.com/wiggins-lab/SuperSegger; Wiggins, 2018), that we modified to better handle high-throughput data. SuperSegger employs pre-trained neural networks to segment cells by identifying their boundaries. It comes with a pre-trained model for E. coli which worked very well with our data. Therefore there was no need to train our own neural network. SuperSegger is capable of tracking cells however the tracking did not work properly with mother-machine images and so we developed our own method. Nevertheless, acknowledging that one of the main components of our pipeline, the segmentation, uses SuperSegger we refer to the entire pipeline as MotherSegger (code is available at https://gitlab.gwdg.de/murray-group/MotherSegger/-/tree/PaperParABS; Koehler and Murray, 2022b; copy archived at swh:1:rev:42e2a6ec49b12fc19fe14e3fe2247f699f110f9e).
 
@@ -162,40 +557,40 @@ In Part III, both foci and cells are tracked. Since cells cannot change their or
 
 To filter out potential segmentation errors, cell cycles that do not have exactly 1 parent and 2 daughters are excluded from analysis along with their immediate relatives (with the exception of those who are pushed out of the growth channel). For the analysis of foci trajectories, we considered only trajectories coming from at least 12 consecutive frames with the same number of foci. For pB171, we used (unmodified) SuperSegger to process images of cells growing on agarose pads.
 
-## Over-damped spring
+### Over-damped spring
 
-The distribution px,δt|x0 describes the probability that a Brownian particle, initially at position x0 , experiencing a spring-like force (harmonic potential) towards 0 is found at position x at a time δt later (Doi and Edwards, 1988):
+The distribution $px,\deltat|x_{0}$ describes the probability that a Brownian particle, initially at position $x_{0}$ , experiencing a spring-like force (harmonic potential) towards 0 is found at position $x$ at a time $\deltat$ later (Doi and Edwards, 1988):
 
-px,δt|x0=f/kBT2πSexp-f/kBT2Sx-x0e-δt/τ2 where S=1-e-2δt/τ , τ=kBTfD , kB is Boltzmann’s constant and T is the absolute temperature. The stiffness of the spring is f/kBT and D is the intrinsic diffusion coefficient. From this, it is straightforward to calculate the expected value and variance of the step-wise velocity v:=x-x0δt to be E[v]=e-δt/τ-1δtx0 and Var[v] = Dτδt2(1-e-2δt/τ). Note the two properties characteristic of an (over-damped) spring-like force: The expected value E[v] linearly scales with x0 while the variance Var[v] is independent of the initial position. We observed the same properties in our experimental data. We determined D and τ via D=Var[v]Ln(δtm+1)δtm2+2m , τ=-δtln(δtm+1) where m is the slope of the velocity profile.
+$px,\deltat|x_{0}=\sqrt{\frac{f/k_{B}T}{2\piS}}exp-\frac{f/k_{B}T}{2S}x-x_{0}e^{-\deltat/\tau}^{2}$ where $S=1-e^{-2\deltat/\tau}$ , $\tau=\frac{k_{B}T}{fD}$ , $k_{B}$ is Boltzmann’s constant and T is the absolute temperature. The stiffness of the spring is $f/k_{B}T$ and D is the intrinsic diffusion coefficient. From this, it is straightforward to calculate the expected value and variance of the step-wise velocity $v:=\frac{x-x_{0}}{\deltat}$ to be $E[v]=\frac{e^{-\deltat/\tau}-1}{\deltat}x_{0}$ and $Var[v] = \frac{D\tau}{\deltat^{2}}(1-e^{-2\deltat/\tau})$. Note the two properties characteristic of an (over-damped) spring-like force: The expected value $E[v]$ linearly scales with $x_{0}$ while the variance $Var[v]$ is independent of the initial position. We observed the same properties in our experimental data. We determined D and $\tau$ via $D=\frac{Var[v]Ln(\deltatm+1)}{\deltatm^{2}+2m}$ , $\tau=-\frac{\deltat}{ln(\deltatm+1)}$ where m is the slope of the velocity profile.
 
-The distribution px,δt|x0 can also be used to calculate the position and velocity autocorrelations:
+The distribution $px,\deltat|x_{0}$ can also be used to calculate the position and velocity autocorrelations:
 
-E[x(t0)x(t0+t)]/E[x(t0)2]=e-t/τ and E[v(t0)v(t0+t)]/E[v(t0)2]=2e-t/τ-e-|t-δt|/τ-e-(t+δt)/τ2-2e-δt/τ respectively. Finally, a characteristic force can be defined as the force on the particle at an extension of one standard deviation of the equilibrium distribution i.e. at x=kBT/k . For F plasmid, this gives a force of F=k kBT/k= 0.019 pN at T=30°C.
+$E[x(t_{0})x(t_{0}+t)]/E[x(t_{0})^{2}]=e^{-t/\tau}$ and $E[v(t_{0})v(t_{0}+t)]/E[v(t_{0})^{2}]=\frac{2e^{-t/\tau}-e^{-|t-\deltat|/\tau}-e^{-(t+\deltat)/\tau}}{2-2e^{-\deltat/\tau}}$ respectively. Finally, a characteristic force can be defined as the force on the particle at an extension of one standard deviation of the equilibrium distribution i.e. at $x=\sqrt{k_{B}T/k}$ . For F plasmid, this gives a force of $F=k \sqrt{k_{B}T/k}= 0.019 pN$ at $T=30°C$.
 
-## Model
+### Model
 
-Our model is an extension of the previous DNA-relay model (Surovtsev et al., 2016a) that incorporates diffusion on the nucleoid (hopping) and basal hydrolysis of ParA-ATP and uses analytic expressions for the fluctuations rather than a second order approximation. Like the DNA relay it is a 2D off-lattice stochastic model and updates positions in discrete time steps dt. The implementation was written in C++ (code is available at https://gitlab.gwdg.de/murray-group/hopping_and_relay/-/tree/PaperParABS; Koehler and Murray, 2022a; copy archived at swh:1:rev:75dc93a972652847a2ea30bada3bc3206568edfa). It consists of the following components. ParA associates to the DNA non-specifically in its ATP-dependent dimer state with the rate ka . Once associated, ParA (i.e. ParA-ATP dimers) moves in two distinct ways: (i) Diffusive motion on the nucleoid with the diffusion coefficient Dh . This is an effective description of the movement of dimers due to transient unbinding events that allow them to ‘hop’ between DNA-strands. We do not consider the alternative scenario in which dimers transfer between DNA strands when the latter come into contact. In this scenario the effective diffusion coefficient would depend on the parameters describing the DNA fluctuations (DA and σx,y). (ii) Between hopping events, each bound ParA dimer experiences the elastic fluctuations of the DNA strand it is bound to. This is implemented as elastic (spring-like) fluctuations around its initial position. Dimers dissociate from the nucleoid due to either basal ATP hydrolyse at a rate kd or due to hydrolysis stimulated by ParB on the plasmid. The latter is modelled as a ParB-coated disc and ParB-ParA tethers form whenever the disk comes in contact with a ParA dimer. ParB-stimulated hydrolysis then breaks these tethers at a rate kh , returning ParA to the cytosolic pool. The plasmid experiences the elastic force of every tethered ParA and moves according the its intrinsic diffusion coefficient Dp and the resultant force of all tethers. An overview of this scheme is shown in Figure 3A.
+Our model is an extension of the previous DNA-relay model (Surovtsev et al., 2016a) that incorporates diffusion on the nucleoid (hopping) and basal hydrolysis of ParA-ATP and uses analytic expressions for the fluctuations rather than a second order approximation. Like the DNA relay it is a 2D off-lattice stochastic model and updates positions in discrete time steps $dt$. The implementation was written in C++ (code is available at https://gitlab.gwdg.de/murray-group/hopping_and_relay/-/tree/PaperParABS; Koehler and Murray, 2022a; copy archived at swh:1:rev:75dc93a972652847a2ea30bada3bc3206568edfa). It consists of the following components. ParA associates to the DNA non-specifically in its ATP-dependent dimer state with the rate $k_{a}$ . Once associated, ParA (i.e. ParA-ATP dimers) moves in two distinct ways: (i) Diffusive motion on the nucleoid with the diffusion coefficient $D_{h}$ . This is an effective description of the movement of dimers due to transient unbinding events that allow them to ‘hop’ between DNA-strands. We do not consider the alternative scenario in which dimers transfer between DNA strands when the latter come into contact. In this scenario the effective diffusion coefficient would depend on the parameters describing the DNA fluctuations ($D_{A}$ and $\sigma_{x,y}$). (ii) Between hopping events, each bound ParA dimer experiences the elastic fluctuations of the DNA strand it is bound to. This is implemented as elastic (spring-like) fluctuations around its initial position. Dimers dissociate from the nucleoid due to either basal ATP hydrolyse at a rate $k_{d}$ or due to hydrolysis stimulated by ParB on the plasmid. The latter is modelled as a ParB-coated disc and ParB-ParA tethers form whenever the disk comes in contact with a ParA dimer. ParB-stimulated hydrolysis then breaks these tethers at a rate $k_{h}$ , returning ParA to the cytosolic pool. The plasmid experiences the elastic force of every tethered ParA and moves according the its intrinsic diffusion coefficient $D_{p}$ and the resultant force of all tethers. An overview of this scheme is shown in Figure 3A.
 
 As in the DNA relay model we have made some simplifications that we next make explicit. First, we only modelled three states of ParA: 'nucleoid associated' and 'cytosolic' and 'tethered'. Second, cytosolic ParA are assumed to be well mixed. This is justified based on the slow conformation changes needed to return it to a state competent for DNA-binding (Vecchiarelli et al., 2010). Third, no individual ParB molecules were modelled, rather the plasmid is treated as a disk coated with enough ParB that each nucleoid bound ParA that makes contact with the plasmid instantaneously finds a ParB partner, therefore removing the need to model individual ParB. This is justified by the substantially higher local concentration of ParB compared to ParA at the plasmid.
 
-The nucleoid is modelled as a rectangle with the dimensions L×W. The positions of ParA and the plasmid(s), are updated every time step dt as follows. Between hopping events, each nucleoid associated ParA dimer fluctuates about a home position xh . The new position x(t+dt) of each dimer is given by x(t+dt)=xh+δx, where δx is drawn with probability p(δx,dt | x(t)-xh) where x(t) is its original position (see section ‘Over-damped spring’) and the normalised spring constant (f/kBT above) along each dimension is 1/σx,y2 and the diffusion coefficient DA . During hopping events x(t) and xh are both offset by a value drawn from a Gaussian distribution with μ=0 and σ=2Dhdt for both dimensions. The displacement of the plasmid is determined similar to each ParA dimer but according to the resultant force acting on it. This resultant force vector has an effective spring constant equal to the spring constant of a single tether times the number of tethers and acts towards an equilibrium position xp(t)+∑tethers(xh-x(t))/n, where xp(t) is the plasmid position and the sum is over all (n) tethers. We ignore the effects of Torque. The intrinsic diffusion coefficient of the plasmid is Dp . If the plasmid has no tethers attached then it moves by normal diffusion, with displacements drawn from a Gaussian distribution with μ=0 and σ=2Dpdt . The x and y components of all positions are updated independently and all simulations in this paper were run until the system reached equilibrium before acquiring data used for analysis.
+The nucleoid is modelled as a rectangle with the dimensions $L\timesW$. The positions of ParA and the plasmid(s), are updated every time step $dt$ as follows. Between hopping events, each nucleoid associated ParA dimer fluctuates about a home position $x_{h}$ . The new position $x(t+dt)$ of each dimer is given by $x(t+dt)=x_{h}+\deltax$, where $\deltax$ is drawn with probability $p(\deltax,dt | x(t)-x_{h})$ where $x$(t) is its original position (see section ‘Over-damped spring’) and the normalised spring constant ($f/k_{B}T$ above) along each dimension is $1/\sigma_{x,y}^{2}$ and the diffusion coefficient $D_{A}$ . During hopping events $x(t)$ and $x_{h}$ are both offset by a value drawn from a Gaussian distribution with $\mu=0$ and $\sigma=\sqrt{2D_{h}dt}$ for both dimensions. The displacement of the plasmid is determined similar to each ParA dimer but according to the resultant force acting on it. This resultant force vector has an effective spring constant equal to the spring constant of a single tether times the number of tethers and acts towards an equilibrium position $x_{p}(t)+\sum_{tethers}^{}(x_{h}-x(t))/n$, where $x_{p}(t)$ is the plasmid position and the sum is over all ($n$) tethers. We ignore the effects of Torque. The intrinsic diffusion coefficient of the plasmid is $D_{p}$ . If the plasmid has no tethers attached then it moves by normal diffusion, with displacements drawn from a Gaussian distribution with $\mu=0$ and $\sigma=\sqrt{2D_{p}dt}$ . The x and y components of all positions are updated independently and all simulations in this paper were run until the system reached equilibrium before acquiring data used for analysis.
 
-## Comparison of stochastic ParABS models
+### Comparison of stochastic ParABS models
 
 The most recent stochastic models of positioning by ParABS and ParABS-like systems explicitly incorporate earlier proposals for the mechanism of force generation, namely, that the elastic fluctuations of the DNA and/or ParA-ParB protein tethers can power the movement of cargo up the gradient of DNA-bound ParA-ATP dimers (Hu et al., 2015; Lim et al., 2014). However, the models differ in other ways (see Table 3).
 
-The DNA relay model (Surovtsev et al., 2016a) does not allow DNA-bound ParA dimers to diffuse (hop) on the nucleoid. They fluctuate around a home position due to the elastic fluctuations of the underlying chromosomal locus. In our terminology, this model therefore has λ=0, where λ is the ratio of the ParA dimer diffusive length scale to the nucleoid length (see main text). Oscillations were the only non-trivial behaviour found in this model.
+The DNA relay model (Surovtsev et al., 2016a) does not allow DNA-bound ParA dimers to diffuse (hop) on the nucleoid. They fluctuate around a home position due to the elastic fluctuations of the underlying chromosomal locus. In our terminology, this model therefore has $\lambda=0$, where $\lambda$ is the ratio of the ParA dimer diffusive length scale to the nucleoid length (see main text). Oscillations were the only non-trivial behaviour found in this model.
 
-The Brownian Ratchet model (Hu et al., 2017) on the other hand includes diffusion of dimers on the nucleoid as well as several other details such as explicit modelling of the transient DNA-bound ParA-ADP state, limited binding to cargo and the force and length-dependent dissociation of ParA-ParB tethers. It also includes basal (plasmid independent) ParA hydrolysis. Together with diffusion on the nucleoid, this results in λ being finite. However, through parameters analyses, its value was fixed at λ=0.5. As a result, ‘local excursions’ (confined diffusion in our terminology) were observed for single plasmids rather than regular positioning. This led the authors to conclude that the biological system lies in a narrow regime of the model parameter space in which two or more plasmids are regularly positioned due to newly replicated plasmids moving apart a fixed distance (‘directed segregation’).
+The Brownian Ratchet model (Hu et al., 2017) on the other hand includes diffusion of dimers on the nucleoid as well as several other details such as explicit modelling of the transient DNA-bound ParA-ADP state, limited binding to cargo and the force and length-dependent dissociation of ParA-ParB tethers. It also includes basal (plasmid independent) ParA hydrolysis. Together with diffusion on the nucleoid, this results in $\lambda$ being finite. However, through parameters analyses, its value was fixed at $\lambda=0.5$. As a result, ‘local excursions’ (confined diffusion in our terminology) were observed for single plasmids rather than regular positioning. This led the authors to conclude that the biological system lies in a narrow regime of the model parameter space in which two or more plasmids are regularly positioned due to newly replicated plasmids moving apart a fixed distance (‘directed segregation’).
 
-While not incorporating an explicit mechanism of force generation, the earlier model of Ietswaart et al., 2014 is worth mentioning here. This stochastic model was based on the formation of short DNA bound ParA-ATP filaments. It included diffusion of ParA dimers on the nucleoid but without basal hydrolysis (kd=0). Hence, the diffusion of each ParA dimer on the nucleoid is interrupted only upon interaction with a plasmid and λ=∞. This model gave regular positioning, as did a variant without ParA filament formation, as the only non-trivial behaviour. The authors explained the emergence of regular positioning by a ‘flux balance’ argument. Plasmids are positioned because that is the unique configuration in which the diffusive flux of ParA dimers into each plasmid from either side balances (see Figure 2 and main text). They demonstrated this mathematically using a simplified deterministic model in which plasmids both act as sinks for ParA-ATP and move up the gradient of ParA-ATP on the nucleoid.
+While not incorporating an explicit mechanism of force generation, the earlier model of Ietswaart et al., 2014 is worth mentioning here. This stochastic model was based on the formation of short DNA bound ParA-ATP filaments. It included diffusion of ParA dimers on the nucleoid but without basal hydrolysis ($k_{d}=0$). Hence, the diffusion of each ParA dimer on the nucleoid is interrupted only upon interaction with a plasmid and $\lambda=∞$. This model gave regular positioning, as did a variant without ParA filament formation, as the only non-trivial behaviour. The authors explained the emergence of regular positioning by a ‘flux balance’ argument. Plasmids are positioned because that is the unique configuration in which the diffusive flux of ParA dimers into each plasmid from either side balances (see Figure 2 and main text). They demonstrated this mathematically using a simplified deterministic model in which plasmids both act as sinks for ParA-ATP and move up the gradient of ParA-ATP on the nucleoid.
 
-The above models have also been applied to ParA-like systems. In the PomXYZ system of Myxococcus xanthus, the ParA-like protein PomZ positions a large protein cluster formed by PomX and PomY at the middle of the cell. (Schumacher et al., 2017) explained this behaviour using the same elastic DNA/protein bond fluctuations as the models above, combined with the flux-balance mechanism of Ietswaart et al. Like the latter, their model did not include basal hydrolysis of PomZ and therefore λ=∞. More recently, the Brownian Ratchet model has also been used to explain the positioning of carboxysomes in the cyanobacterium Synechococcus elongatus (MacCready et al., 2018).
+The above models have also been applied to ParA-like systems. In the PomXYZ system of Myxococcus xanthus, the ParA-like protein PomZ positions a large protein cluster formed by PomX and PomY at the middle of the cell. (Schumacher et al., 2017) explained this behaviour using the same elastic DNA/protein bond fluctuations as the models above, combined with the flux-balance mechanism of Ietswaart et al. Like the latter, their model did not include basal hydrolysis of PomZ and therefore $\lambda=∞$. More recently, the Brownian Ratchet model has also been used to explain the positioning of carboxysomes in the cyanobacterium Synechococcus elongatus (MacCready et al., 2018).
 
-## Phase space
+### Phase space
 
-To generate the phase space (Figures 3I and 8A, Figure 3—figure supplement 1A) of our model we chose 100 values of λ and ε, resulting in a 100 by 100 grid of different parameter combinations. This was done by varying Dh for λ and kh for ε. To visualise the behaviour of each parameter combination we considered three quantities (i) φ, (ii) ψ and (ii) χ. (i) φ describes the goodness of regular positioning. The mean position of a plasmid-trajectory along the long axis is used as an input to a triangle wave function: φ=fn(x)=1-2(nx/L-⌊nx/L⌋-0.5) , where x is the mean position of the trajectory, L is the cell length and n is the number of plasmids. If the mean of a trajectory is equal to the position defined by regular positioning for that number of plasmids, then φ=1. If a trajectory is positioned at a pole or exactly between two regular positions it returns 0. (ii) ψ describes the mobility of a trajectory. ψ is equal to the standard deviation of the trajectory positions divided by L/12n (the standard deviation of the uniform distribution of width L/n). If a trajectory is oscillating, its distribution of position is roughly uniform (Figure 3E) resulting in a ψ close to 1. If a trajectory stays approximately at one position, ψ is much lower than 1. (iii) χ describes if a trajectory is oscillating. χ is equal to the highest positive maxima after the first negative minima in the normalised autocorrelation function of position. χ is equal to 0 if there is no negative minima or no positive maxima after a negative minima. From these three quantities, we calculated three descriptors with values between 0 and 1, describing the three regimes of oscillations, regular positioning and static. Regular Positioning: (1-ψ)φ is high if the plasmid is non-mobile and regularly positioned. Static: (1-ψ)(1-φ) is high if non-mobile and not regularly positioned. Oscillations: χ is high if oscillating. Each regime is associated with a colour and this colour is scaled by its corresponding descriptor. The colours were chosen to be colourblind friendly (light brown RGB:[255 193 7], blue RGB:[30 136 229], pink RGB:[216 27 96]). Note that for diffusive trajectories, we expect φ=1, ψ=1 and χ=0 and hence all descriptors are 0 (visualised as black). To smoothen the phase diagram we used the morphological operation ‘opening’ followed by a 2-D Gaussian filter. The methodology above, while somewhat arbitrary, was found to describe the dynamics of the system well.
+To generate the phase space (Figures 3I and 8A, Figure 3—figure supplement 1A) of our model we chose 100 values of $\lambda$ and $\epsilon$, resulting in a 100 by 100 grid of different parameter combinations. This was done by varying Dh for $\lambda$ and kh for $\epsilon$. To visualise the behaviour of each parameter combination we considered three quantities (i) $\phi$, (ii) $ψ$ and (ii) $χ$. (i) φ describes the goodness of regular positioning. The mean position of a plasmid-trajectory along the long axis is used as an input to a triangle wave function: $\phi=f_{n}(x)=1-2(nx/L-⌊nx/L⌋-0.5)$ , where $x$ is the mean position of the trajectory, $L$ is the cell length and $n$ is the number of plasmids. If the mean of a trajectory is equal to the position defined by regular positioning for that number of plasmids, then φ=1. If a trajectory is positioned at a pole or exactly between two regular positions it returns 0. (ii) $ψ$ describes the mobility of a trajectory. ψ is equal to the standard deviation of the trajectory positions divided by $L/\sqrt{12}n$ (the standard deviation of the uniform distribution of width L/n). If a trajectory is oscillating, its distribution of position is roughly uniform (Figure 3E) resulting in a $ψ$ close to 1. If a trajectory stays approximately at one position, ψ is much lower than 1. (iii) $χ$ describes if a trajectory is oscillating. $χ$ is equal to the highest positive maxima after the first negative minima in the normalised autocorrelation function of position. $χ$ is equal to 0 if there is no negative minima or no positive maxima after a negative minima. From these three quantities, we calculated three descriptors with values between 0 and 1, describing the three regimes of oscillations, regular positioning and static. Regular Positioning: $(1-ψ)\phi$ is high if the plasmid is non-mobile and regularly positioned. Static: $(1-ψ)(1-\phi)$ is high if non-mobile and not regularly positioned. Oscillations: χ is high if oscillating. Each regime is associated with a colour and this colour is scaled by its corresponding descriptor. The colours were chosen to be colourblind friendly (light brown RGB:[255 193 7], blue RGB:[30 136 229], pink RGB:[216 27 96]). Note that for diffusive trajectories, we expect $\phi=1$, $ψ=1$ and $χ=0$ and hence all descriptors are 0 (visualised as black). To smoothen the phase diagram we used the morphological operation ‘opening’ followed by a 2-D Gaussian filter. The methodology above, while somewhat arbitrary, was found to describe the dynamics of the system well.
 
-## Classification of trajectories
+### Classification of trajectories
 
 Regular positioning and oscillations are distinguishable by calculating the velocity autocorrelation between adjacent frames (lag 1 min, Figure 1—figure supplement 2A). However, this method does not work for trajectories which change behaviour. Therefore, we developed a procedure to find segments inside a trajectory which are oscillatory or regularly positioned. A sliding window is moved across a trajectory and the velocity autocorrelation is calculated inside the window. If the autocorrelation at lag 1 is positive the point in the middle of the sliding window is annotated ‘oscillatory’. Otherwise the point is labelled ‘regularly positioned’ (Figure 6—figure supplement 1A, B). Multiple points in a row with the same annotation form a segment (Figure 6—figure supplement 1B). With this procedure a trajectory can be broken down into multiple segments belonging to different behaviours (Figure 6—figure supplement 1C). To annotate our data we used a sliding window of size 12 and a requirement of 6 successive points of the same annotation to form a segment (Figure 6—figure supplement 1D). One weakness of this approach is the small window size which may result in false positives oscillatory segments.

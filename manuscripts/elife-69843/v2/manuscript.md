@@ -40,33 +40,81 @@ E2-activated HSF1 is transcriptionally potent and takes part in the regulation o
 
 ## Results
 
-## HSF1 deficiency reduces the estrogen-stimulated proliferation and mobility of ERα-positive MCF7 cells
+### HSF1 deficiency reduces the estrogen-stimulated proliferation and mobility of ERα-positive MCF7 cells
 
 To study the contribution of HSF1 in E2 signaling, we established MCF7 cell lines with reduced HSF1 expression. Firstly, we tested a few HSF1-targeting shRNAs (Figure 1—figure supplement 1A). Then, the most potent variant that reduced HSF1 level about 10-fold (termed afterward shHSF1) was chosen for further studies. Although the heat shock response was significantly reduced, the expression of HSP genes (HSPA1A, HSPH1, HSPB1, and HSPB8) was still induced after this HSF1 knockdown (Figure 1—figure supplement 1B). Thus, we additionally created MCF7 variants with HSF1 functional knockout using the CRISPR/Cas9 gene targeting approach (clones arisen from two individual cells termed KO#1 and KO#2 afterward). Then, considering the slight differences between clones, we created an additional experimental model: six new individual HSF1-negative (HSF1−) and six HSF1-positive (HSF1+) MCF7 clones obtained using the DNA-free CRISPR/Cas9 system (which was more effective) were pooled before analyses. The complete elimination of HSF1 (Figure 1A, Figure 1—figure supplement 1A) was connected with a substantial loss of inducibility of HSP genes (Figure 1—figure supplement 1B) and proteins (HSP105/HSPH1, HSP90, HSP70/HSPA1) following hyperthermia (Figure 1B). The ability of cells to form colonies in the clonogenic assay was reduced in all MCF7 experimental models of HSF1 depletion (using shRNA and sgRNA; Figure 1C, Figure 1—figure supplement 1C). Moreover, the population size of ALDH-positive (stem/progenitor) cells correlated with the HSF1 level and was reduced in HSF1-deficient cells (Figure 1—figure supplement 1D). Also, the increased contribution of cells in the G1 phase was associated with the HSF1 knockout (Figure 1—figure supplement 1E). HSF1 knockdown did not affect the proliferation rate, while the functional HSF1 knockout led to a slight reduction in the proliferation rate under standard conditions (this effect was not visible under less favorable growing conditions, i.e., in phenol red-free 5% dextran-activated charcoal-stripped fetal bovine serum (FBS); Figure 1D, Figure 1—figure supplement 1F). To check if HSF1 deficiency would affect the growth of another ERα-positive cell line, we modified T47D cells using the CRISPR/Cas9 method (Figure 1—figure supplement 2A). Under standard conditions, we did not observe differences between HSF1+ and HSF1− T47D cells in the proliferation and clonogenic assay (not shown). Unlike MCF7 cells, HSF1− T47D cells grew slightly faster than HSF1+ cells, but this difference was not statistically significant and no differences were observed in the cell cycle (Figure 1—figure supplement 2B and C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig1-v2.jpg)
+
+**Figure 1.:** (A) HSF1 level and (B) heat shock response assessed by western blot in unmodified cells (WT) and in cells obtained using DNA-free CRISPR/Cas9 system: HSF1+ (six clones with the normal HSF1 level were pooled) and HSF1− (six HSF1-negative clones were pooled). Actin (ACTB) was used as a protein loading control. Heat shock: 43°C/1 hr + recovery 37°C/6 hr. (C) The number of colonies formed in the clonogenic assay: representative images of single-cell clones stained with crystal violet and their quantification (mean ± SD, n = 4). (D) Growth curves of untreated (Ctr) and E2-stimulated cells in phenol red-free media with 5% or 10% charcoal-stripped FBS (assessed using crystal violet staining). Mean and standard deviation from three independent experiments (each in three technical replicates) are shown. (E) F-actin staining in cells treated with E2 (10 nM for 14 days), then seeded for 24 hr on fibronectin-coated slides. Arrowheads, ameboid-like cells; arrows, mesenchymal-like cells; scale bar, 50 μm. (F) The number of cells after F-actin staining was counted in 10 random fields and single cells (ameboid-like and mesenchymal-like) were calculated as a percent of all cells. (G) Cell adhesion to collagens and vitronectin analyzed after E2 treatment (10 nM for 14 days); adhesion to BSA serves as a negative control (n = 4) (H) The number of migrating cells assessed by Boyden chamber assay after E2 treatment (10 nM for 14 days) (n = 3, each in three technical replicates). Boxplots represent the median, upper and lower quartiles, maximum and minimum; ***p<0.0001, **p<0.001, *p<0.05 (significance of differences versus the corresponding control – next to the curve/box/bar or between cell variants). See Figure 1—figure supplement 1 and Figure 1—figure supplement 2 for an extended characteristic of other HSF1-deficient MCF7 and T47D cell models.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot analysis of HSF1 level in unmodified cells (WT), variants stably transduced with nonspecific shRNA (SCR) or with three different HSF1-specific shRNAs (shHSF1), and combination of control clones (MIX) or two HSF1-negative clones (KO#1, KO#2) arisen from single cells following CRISPR/Cas9 gene targeting. Actin (ACTB) was used as a protein loading control. The graph below shows the results of densitometric analyses of HSF1 immunodetection (n = 3). (B) Expression of indicated HSP genes analyzed by RT-qPCR in MCF7 cell variants exposed to elevated temperature (HS: 43°C/1 hr + recovery 37°C/4 hr) in relation (fold change) to untreated control (Ctr). (C) The number of colonies formed in the clonogenic assay: representative images of single-cell clones stained with crystal violet and their quantification (mean ± SD, n = 5). (D) ALDEFLUOR assay of progenitor (ALDH-positive) cells assessed by flow cytometry (n = 4). (E) Cell cycle phases and sub-G1 distribution in sub-confluent cells at 72 hr after plating presented as 100% stacked column plots (mean ± SD, n = 3). *p<0.05, significantly different to WT (C–E). Growth curves of untreated (Ctr) (F) and E2-stimulated (G) cell variants in phenol red-free media with 5% or 10% charcoal-stripped FBS assessed using crystal violet staining. Mean and standard deviation from four independent experiments (each in 2–6 technical replicates) are shown. (H) Number of migrating cells analyzed by Boyden chamber assay after E2 treatment (10 nM for 14 days) (n = 3). Boxplots represent the median, upper and lower quartiles, maximum and minimum; ***p<0.0001, **p<0.001, *p<0.05 – significance of differences versus the corresponding control (next to the curve/box/bar) or between cell variants (F–H). (I) F-actin staining in cells treated with E2 (10 nM for 14 days), then seeded for 24 hr on fibronectin-coated slides. Scale bar, 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blot analysis of HSF1 level in T47D cell variants: unmodified (WT), a combination of five control (HSF1+) and five HSF1-negative (HSF1−) clones arisen from single cells following CRISPR/Cas9 gene targeting. Actin (ACTB) was used as a protein loading control. (B) Cell growth curves of untreated (Ctr) and E2-treated cells in phenol red-free media with 10% charcoal-stripped FBS assessed using crystal violet staining. Mean and standard deviation from three independent experiments (each in six technical replicates) are shown. (C) Cell cycle phases and sub-G1 distribution in sub-confluent cells at 72 hr after plating presented as 100% stacked column plots (mean ± SD, n = 3). *p<0.05, significantly different to WT. (D) F-actin staining in cells treated with E2 (10 nM for 14 days), then seeded for 24 hr on fibronectin-coated slides. Arrowheads, ameboid-like cells; arrows, mesenchymal-like cells; scale bar, 50 μm. (E) The number of cells after F-actin staining was counted in 10 random fields and single cells (ameboid-like and mesenchymal-like) were calculated as a percent of all cells. (F) Cell adhesion to collagens analyzed after E2 treatment (10 nM for 14 days) (n = 8). (G) The number of migrating cells assessed by Boyden chamber assay after E2 treatment (10 nM for 14 days) (n = 3). Boxplots represent the median, upper and lower quartiles, maximum and minimum; ***p<0.0001, **p<0.001, *p<0.05 – significance of differences versus the corresponding control (next to the curve/box/bar) or between cell variants (B,, E–G).
 
 We have previously demonstrated that HSF1 was activated after E2 treatment of ERα-positive cells and it was able to bind to the regulatory sequences of several target genes, which correlated with the upregulation of their transcription (Vydra et al., 2019). Since most of these genes code for proteins involved in E2 signaling, we expected that HSF1 downregulation could affect E2-dependent processes, especially cell proliferation. Therefore, we compared E2-stimulated proliferation of HSF1-proficient and HSF1-deficient MCF7 cells in all experimental models. HSF1 deficiency resulted in weaker growth stimulation by E2 (than in the corresponding control cells), but a statistically significant difference was not observed in all experimental conditions/cell variants (Figure 1D, Figure 1—figure supplement 1G). However, E2-stimulated proliferation was not significantly reduced in HSF1-deficient T47D cells (Figure 1—figure supplement 2B). These results indicate that HSF1 may influence the growth of ER-positive breast cancer cells, unstimulated and stimulated by estrogen, although the effect also depends on other factors (differences between cells, culture conditions).
 
 We then searched for differences between modified cells in response to longer E2 treatment. We noticed that stimulation of HSF1-proficient MCF7 cells with E2 for 7–14 days resulted in cell-cell dissociation, the acquisition of an ameboid- or mesenchymal-like morphology (Figure 1E and F, Figure 1—figure supplement 1I), and enhanced adhesion to collagens (I and IV) but reduced to vitronectin (Figure 1G; adhesion to fibronectin, laminin, and tenascin was not affected; not shown). These changes enabled cells to migrate faster (Figure 1H, Figure 1—figure supplement 1H). HSF1 deficiency counteracted cell scattering after E2 stimulation (Figure 1E and F, Figure 1—figure supplement 1I ). This was associated with the reduced adhesion to collagens and cell motility (Figure 1G and H, Figure 1—figure supplement 1H). It is noteworthy that T47D cells differed from MCF7 cells in response to E2 treatment for 14 days, especially in acquired cell morphology. Amoeboid-like morphology was dominant among the scattered MCF7 cells, while mesenchymal-like morphology was dominant in T47D cells (Figure 1E and F, Figure 1—figure supplement 2D and E). Also, adhesion to collagens was not affected by E2 in T47D cells (Figure 1—figure supplement 2F). Nevertheless, E2 treatment enhanced migration of HSF1-proficient but not HSF1-deficient T47D cells (Figure 1—figure supplement 2G).
 
-## Transcriptional response to estrogen is inhibited in HSF1-deficient cells
+### Transcriptional response to estrogen is inhibited in HSF1-deficient cells
 
 In a search for the mechanism responsible for a distinct response to estrogen in ER-positive cells with different levels of HSF1, we analyzed global gene expression profiles by RNA-seq in all MCF7 cell variants. At control conditions (no E2 stimulation), we found relatively few genes differentially expressed in HSF1-proficient and HSF1-deficient cells that were common for different models of HSF1 downregulation. These included mainly known HSF1 targets (e.g., HSPH1, HSPE1, HSPD1, HSP90AA1) slightly repressed in HSF1-deficient cells. Analyzing the response to E2, we initially compared cell variants from different models: with the normal level of HSF1 (WT, SCR, and MIX) and HSF1-deficient cells (shHSF1, KO#1, and KO#2) (Supplementary file 1, sheet 1). We found 50 genes similarly regulated by E2 (47 upregulated and 3 downregulated) in all HSF1-proficient MCF7 cell variants (Figure 2—figure supplement 1A and B). On the other hand, only 13 genes were similarly upregulated after E2 stimulation in HSF1-deficient MCF7 cell variants (Figure 2—figure supplement 1A and C). The gene set enrichment analyses indicated that HSF1 deficiency negatively affected the processes activated by estrogen (the early and late estrogen response; Figure 2—figure supplement 1E). Moreover, though almost all genes upregulated by E2 in HSF1-proficient cells were also upregulated in HSF1-deficient cells (except NAPRT), the degree of their activation (measured as a fold change E2 versus Ctr) was usually weaker in the latter cells (Figure 2—figure supplement 1F), which indicated that the transcriptional response to estrogen was inhibited in the lack of HSF1. Interestingly, however, several E2-dependent genes revealed slightly higher basal expression (without E2 stimulation) in HSF1-deficient cells (Figure 2—figure supplement 1G), which suggested that in the absence of E2, HSF1 could be involved in the suppression of these genes.
 
 Considering differences between KO#1 and KO#2 HSF1 knockout clones derived from individual cells (Figure 2—figure supplement 1D), we performed an additional transcriptomic analysis using a putatively more representative MCF7 cell model obtained by DNA-free CRISPR/Cas9 method (heterogeneous populations of HSF1+ and HSF1− cells) (Supplementary file 1, sheet 2). The analysis showed that 3715 genes significantly changed the expression (2336 upregulated and 1479 downregulated) in HSF1+ cells after E2 stimulation. On the other hand, only 2969 genes (1818 upregulated and 1151 downregulated) changed the expression in HSF1− cells (Figure 2A). Thus, approximately 20% of genes responding to E2 treatment in HSF1+ cells did not respond similarly in HSF1− cells. Moreover, among genes up- or downregulated in both cell variants, approximately 68% or 81%, respectively, responded less effectively (fold change E2 versus Ctr) in HSF1− cells than HSF1+ cells (Figure 2A, bottom panel). The gene set enrichment analyses revealed the slight differences in the early and late estrogen response pathways (Hallmark gene sets M5906 and M5907) but also in genes defining epithelial-mesenchymal transition (M5930). Interestingly, the expression of genes from these pathways already differentiated untreated HSF1− and HSF1+ cells. Genes encoding cell cycle-related targets of E2F transcription factors (M5925), involved in the G2/M checkpoint (M5901) as well as ECM proteoglycans (M27219) and collagen formation (M631), also discriminated HSF1− and HSF1+ cells (Figure 2—figure supplement 2A). The analysis confirmed that the transcriptional response to estrogen was inhibited in the lack of HSF1. In addition, signaling pathways related to proliferation, migration, and collagen adhesion were identified as primarily affected, which was consistent with the results of functional tests. Among E2-responding genes that were common for all MCF7 cell models, 46 were upregulated and 2 were downregulated (Figure 2B). Though a fraction of genes with higher basal expression in HSF1− cells than in HSF1+ cells (potentially repressed by HSF1) was smaller compared to other models of HSF1 deficiency (Figure 2—figure supplement 1), it remained relevant (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overlap of genes stimulated or repressed after the E2 treatment (RNA-seq analyses) in HSF1+ and HSF1− cells (model created as described in Figure 1). The bottom panel compares the degree of response to E2 of overlapping genes. (B) Heatmap with hierarchical clustering of normalized read counts from RNA-seq (row z-score) for selected genes (identified as similarly responding in all MCF7 cell models; see Figure 2—figure supplement 1) stimulated or repressed after the E2 treatment. (C) The response to E2 stimulation presented as a mean fold change E2 versus Ctr (dots; scale on the top) as well as changes in the expression level between Ctr and E2 (arrows begin at the level of mean expression in untreated cells and end at the level of mean expression in treated cells; normalized RNA-seq read counts with a scale on the bottom). Genes are sorted according to the hierarchical clustering shown in the heatmap. Upregulation, fold change >1.0; downregulation, fold change <1.0. Statistically significant differences between untreated HSF1+ and HSF1− cells are marked: ***p<0.0001, **p<0.001, *p<0.05. (D) Nascent RNA gene expression analyses by RT-qPCR in wild-type (WT), HSF1+, and HSF1− cells. The upper panel shows E2-stimulated changes (E2 versus Ctr fold change; E2 treatment: 10 nM, 4 hr), bottom panel shows basal expression level represented as fold differences between untreated wild-type control (WT), HSF1+, and HSF1− cells. Corresponding total RNA analyses are shown in Figure 2—figure supplement 2B. ***p<0.0001, **p<0.001, *p<0.05 (significance of differences versus the corresponding control – above the bar, or between cell variants). (E) Analyses at the protein level (western blot) after 48 hr treatment with E2. HSPA8 was used as a protein loading control. The graph below shows the results of densitometric analyses (n = 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Overlap of differentially expressed genes and (B, C) heatmaps with hierarchical clustering of normalized read counts from RNA-seq (row z-score) for genes stimulated or repressed after the E2 treatment in cells with different levels of HSF1: unmodified (WT), stably transduced with nonspecific shRNA (SCR), stably transduced with HSF1-specific shRNA (shHSF1), the combination of control clones arisen from single cells following CRISPR/Cas9 gene targeting (MIX), HSF1-negative single clones obtained by CRISPR/Cas9 gene targeting (KO#1, KO#2). Ctr, untreated cells; E2, 17β-estradiol treatment (10 nM, 4 hr). (D) Principal component analysis (PCA) of normalized RNA-seq read counts (dimensions 1 and 2 were responsible for 41.7% of variability). (E) Gene set enrichment analysis showing significant terms from the Hallmark, BioCarta, PID, and Reactome subsets of the canonical pathways collection detected in E2-stimulated HSF1-proficient and HSF1-deficient cells. Blue, a fraction of downregulated genes; red, a fraction of upregulated genes. (F) Comparison of the response to E2 stimulation (E2 versus Ctr) in HSF1-proficient and HSF1-deficient cells. Genes shown in (B) are sorted from the highest to the lowest difference between average fold changes in both cell variants decreased by the standard deviation (SD). Upregulation, fold change >1.0; downregulation, fold change <1.0. (G) Comparison of the expression level (normalized RNA-seq read counts; mean ± SD) of the same set of genes in unstimulated (Ctr) and E2-stimulated HSF1-proficient and HSF1-deficient cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Gene set enrichment analysis showing significant (false discovery rate [FDR] ≤ 0.001) terms from the Hallmark, Reactome, BioCarta, and KEGG gene sets collection detected in E2-stimulated HSF1+ and HSF1− cells, as well as differentiating untreated cells. Blue, a fraction of downregulated genes; red, a fraction of upregulated genes. (B) Analyses of the expression by RT-qPCR using total RNA. The upper panels show E2-stimulated changes, lower panels show differences between untreated WT, HSF1+, and HSF1− cells (fold change). Ctr, untreated cells; E2, 17β-estradiol treatment (10 nM, 4 hr). ***p<0.0001, **p<0.001, *p<0.05 (above the bar – versus the corresponding control, between the bars – between cell variants).
+
 To validate the RNA-seq results, we selected 13 estrogen-induced genes for RT-qPCR analyses using nascent RNA (Figure 2D). In the case of nine genes, the degree of activation was substantially lower in HSF1− than in HSF1+ cells. When the basal expression in E2-untreated cells was compared, there were 12 genes expressed at a higher level in untreated HSF1− cells in comparison to HSF1+ cells (Figure 2D). Additional RT-qPCR analyses using total RNA showed that of the 15 genes tested 12 were less activated after E2 treatment in HSF1− than in HSF1+ cells. When the basal expression in E2-untreated cells was compared, six genes were expressed at a significantly higher level and one at a lower level in HSF1− than HSF1+ cells (Figure 2—figure supplement 2B). Therefore, although the response to E2 was highly variable (differences were observed between cell models), RT-qPCR-based validation generally confirmed differences between HSF1-proficient and HSF1-deficient MCF7 cells revealed by the RNA-seq. These changes at the transcriptional level might have direct functional consequences in HSF1− cells (reduced level of E2-stimulated lcnRNAs, e.g., LINC01016) but also were connected with the reduced protein level of E2-stimulated genes (HSPB8, PHLDA1, and EGR3 are shown as examples; Figure 2E).
 
-## HSF1 influences the binding of ERα to chromatin
+### HSF1 influences the binding of ERα to chromatin
 
 To further study the influence of HSF1 on estrogen signaling, we analyzed ERα binding to chromatin in HSF1-proficient and HSF1-deficient MCF7 cells. We performed ChIP-seq analyses using the first functional knockout model (KO#2 and MIX cells) and validation by ChIP-qPCR using the model obtained by the DNA-free CRISPR/Cas9 system. A list of all ERα-binding sites detected by ChIP-seq in unstimulated cells and after 30 or 60 min of E2 treatment is presented in Supplementary file 2. These analyses revealed that in unstimulated cells ERα binding was more efficient (more binding sites and increased number of tags per peak) in HSF1-deficient cell variant (KO#2) than in the corresponding HSF1-proficient control (MIX cells) (Figure 3A and B) (it is worth noting that the MIX cell variant was also different from wild-type cells, indicating that the genome organization was affected by the CRISPR/Cas9 procedure itself, possibly due to off-targets). ERα target sequences in IGFBP4 or GREB1 are examples of such increased binding efficiency in unstimulated HSF1-deficient cells (Figure 3D). Estrogen treatment for 30 or 60 min resulted in enhanced ERα binding in all cell variants. However, fold enrichment (E2 versus Ctr) was lower in HSF1-deficient cells than in HSF1-proficient cells (Figure 3C). Moreover, the number of detected peaks in the E2-treated HSF1-deficient cells was only slightly higher than in unstimulated cells (Figure 3A) and enhanced ERα binding was primarily manifested in sites already existing in unstimulated cells (Figure 3C and D). We additionally searched for ERα- binding preferences in HSF1-proficient and HSF1-deficient cells. After estrogen treatment, ERβ (ESR2) and ERα (ESR1) motifs were centrally enriched in ERα-binding regions in all cell variants (Figure 3—figure supplement 1). Moreover, in untreated cells, the motif for PBX1 (not centrally enriched in peak regions), which is a pioneer factor known to bind to the chromatin before ERα recruitment (Magnani et al., 2011), was identified by MEME-ChIP analysis in all cell variants (not shown). This indicates that ERα chromatin-binding preferences were not substantially changed in HSF1-deficient cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig3-v2.jpg)
+
+**Figure 3.:** (A) Number of peaks and peak size distribution (number of tags per peak), (B) heatmap visualization of ERα ChIP-seq data (versus input), and (C) binding enrichment (fold enrichment E2 versus Ctr) after E2 stimulation (10 nM for 30 or 60 min) in HSF1-deficient cells (KO#2) and corresponding control (MIX, a combination of control clones arisen from single cells following CRISPR/Cas9 gene targeting). Heatmaps depict all ERα-binding events centered on the peak region within a 3 kb window around the peak. Peaks in each sample were ranked on intensity. (D) Examples of ERα peaks identified in ChIP-seq analyses, normalized by scaling factor using bamCoverage tool, and visualized by the IGV browser in unstimulated cells (Ctr) and after E2 treatment (10 nM, 30 min). The scale for each sample is shown in the left corner. Line plots show the E2/Ctr ratio obtained using the bamCoverage tool. (E) Comparison of ERα-binding efficiency (by ChIP-qPCR; % of input) in selected sequences in untreated (Ctr; upper panel) and after E2 stimulation (10 nM, 30 min; bottom panel) HSF1+ and HSF1− MCF7 cells (model created as described in Figure 1). ***p<0.0001, **p<0.001, *p<0.05 (significance of differences versus the corresponding control – above the bar, or between cell variants). (F) Western blot analysis of ERα level and its phosphorylated form (pS118) after E2 treatment (1, 10, and 100 nM for 30 or 60 min) in HSF1+ and HSF1− cells. Actin (ACTB) was used as a protein loading control. Graphs below show the results of densitometric analyses (n = 4). *p<0.05 (significance of differences versus the corresponding control – above the bar, or between cell variants, versus the same treatment).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The CentriMo plots show the distribution of the given motifs in peaks from untreated (Ctr) and estrogen (E2)-treated (10 nM for 30 min) MCF7 cell variants. JASPAR motif names, IDs, and the p-value of the motif’s central enrichment in peaks are shown in the legend of each plot. MCF7 cell variants: wild type (WT), a combination of control clones arisen from single cells following CRISPR/Cas9 gene targeting (MIX), HSF1-negative clone obtained by CRISPR/Cas9 gene targeting (KO#2).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Interactions between ERα and HSP90 assessed by Proximity Ligation Assay (PLA; red spots) in HSF1-positive (HSF1+) and HSF1-negative (HSF1−) MCF7 cells created using DNA-free CRISPR/Cas9 system. Ctr, untreated cells; E2, 17β-estradiol treatment (10 nM). DNA was stained with DAPI. Scale bar, 20 μm. The mean number of spots per cell is shown in the boxplots below, which represent the median, upper and lower quartiles, maximum and minimum; ***p<0.0001, **p<0.001, *p<0.05 – significance of differences versus the corresponding control (above the box) or between cell variants. (B) Western blot analysis of HSP90 and (C) ERα levels in MCF7 and T47D cells cultured in standard conditions: unmodified (WT), variants stably transduced with nonspecific shRNA (SCR) or with HSF1-specific shRNA (shHSF1), a combination of control clones (MIX, HSF1+), two HSF1-negative clones (KO#1, KO#2), and a combination of HSF1-negative (HSF1−) clones arisen from single cells following CRISPR/Cas9 gene targeting. Actin (ACTB) was used as a protein loading control. The graphs show the results of densitometric analyses (n = 3); **p<0.001, *p<0.05 – significance of differences versus the corresponding control. (D) HSP90 and ERα localization assessed by immunofluorescence in wild-type MCF7 cells. DNA was stained with DAPI. Scale bar, 20 μm.
 
 Validation of ChIP-seq results revealed that in the case of IGFBP4 and GREB1 (i.e., sequences highly enriched with ERα after E2 stimulation) the binding efficiency of ERα was higher in unstimulated HSF1− cells than in the corresponding HSF1+ cells. On the other hand, although estrogen treatment strongly induced ERα binding, this induction was considerably lower in HSF1− cells (Figure 3E). Therefore, we confirmed that in this experimental system the deficiency of HSF1 may result in enhanced binding of unliganded ERα (in particular at strongly responsive ERα-binding sites) and weaker subsequent enrichment of ERα binding upon estrogen stimulation. However, other patterns of the response to E2 treatment are also possible, especially in sequences that were weakly enriched in ERα after stimulation, as exemplified by AMZ1, SDK2, SMPD3, and SMTNL2 (Figure 3D and E). Observed differences in response to E2 between cells with different levels of HSF1 may result from altered expression of ERα in HSF1-deficient cells. We found that although the kinetics of ERα activation (as assessed by S118 phosphorylation) in response to E2 treatment was similar in HSF1+ and HSF1− MCF7 cells, ERα and pS118 ERα levels were lower in HSF1− cells (Figure 3F).
 
 ERα is known to be kept in an inactive state by HSP90 (Pratt and Toft, 1997), in particular by HSP90AA1 (Dhamad et al., 2016), that is, the HSF1 transcriptional target. Thus, looking for a reason for the decreased ERα level and its dysregulated binding to DNA in HSF1-deficient cells, we focused on ERα and HSP90 interactions. Analyses of the proximity of both proteins by PLA revealed that the number of ERα /HSP90 complexes decreased after estrogen treatment in HSF1+ MCF7 cells (Figure 3—figure supplement 2A). This indicates that liganded (and transcriptionally active) ERα is indeed released from the inhibitory complex with HSP90. HSP90AA1 expression was substantially reduced in HSF1-deficient cells (RNA-seq analyses), which correlated with the reduced HSP90 protein level (Figure 3—figure supplement 2B). Also, the ERα level was considerably decreased in most HSF1-deficient cell variants (except KO#1 cells; Figure 3—figure supplement 2C), especially in cells cultured in phenol-free media (Figure 3F). Therefore, we hypothesized that the number of ERα/HSP90 complexes could be reduced in HSF1-deficient cells, which would result in enhanced basal transcriptional activity of ERα in untreated cells. However, we observed an increased number of such complexes both in untreated and E2-stimulated HSF1− cells when compared to HSF1+ cells (Figure 3—figure supplement 2A). This indicates that the response to estrogen could be dysregulated in HSF1-deficient cells, also at the level of ERα/HSP90 interactions, in a mechanism not related directly to the HSP90 and ERα downregulation mediated by the HSF1 deficiency.
 
-## HSF1 can cooperate with ERα in chromatin binding and participate in the spatial organization of chromatin loops
+### HSF1 can cooperate with ERα in chromatin binding and participate in the spatial organization of chromatin loops
 
 Since estrogen-activated HSF1 was shown to bind to chromatin, we compared the binding patterns of ERα and HSF1 in wild-type MCF7 cells (using our ChIP-seq data deposited in the NCBI GEO database; accession no. GSE137558; Vydra et al., 2019). Although in untreated cells (Ctr) there were 1535 and 2248 annotated peaks for ERα and HSF1 respectively (compared to the input), only a few (below 50) binding sites with overlapped peaks for both transcription factors were identified. Moreover, these common binding regions were characterized by a small number of tags (smaller in the case of ERα) (Figure 4A; Supplementary file 3, sheet 1). On the other hand, the search for ERα and HSF1 common binding regions created after estrogen treatment (E2 versus Ctr) returned more than 200 peaks (Supplementary file 3, sheet 2). They represented only a small fraction of the total number of ERα-binding sites (~2.6% from 8320 peaks; in the case of HSF1, this represents 35% of 571 peaks) (Figure 4B). Numbers of tags per peak and fold enrichment increased after E2 stimulation for both factors, yet more for ERα than HSF1 binding in such regions (Figure 4C). These results suggest that although there is a significant overlap between two sets of peaks (p-value=0.0099, ChIPpeakAnno, peakPermTest), the cobinding of both factors in the same DNA region may not be critical in the regulation of the ERα transcriptional activity. Instead, we postulate that HSF1 may influence the organization of the chromatin loops created after estrogen stimulation. When we combined ERα and HSF1 ChIP-seq peaks with data from chromatin interaction analysis by paired-end tag sequencing (ChIA-PET) performed by Fullwood et al., 2009, it was evident that the HSF1-binding sites mapped to ERα-interacting loci (ERα anchor regions) (Figure 4D, Figure 4—figure supplement 1) even if actual ERα binding was not detected in the same locus (examples of such anchors in FAM102A, HSPB8, PRKCE, and WWC1 regulatory sequences are shown in Figure 4D). HSF1 peaks unrelated to ERα anchoring were also existing (Figure 4—figure supplement 1B). Further analyses of the spatial organization of chromatin by chromosome conformation capture (3C) technique revealed that some interactions between different ERα anchor regions were dependent on the presence of HSF1. This is exemplified by HSPB8 and WWC1 loci analyzed in HSF1-proficient and HSF1-deficient cells (Figure 4E), which confirms the role of HSF1 in the formation of ERα-mediated chromatin loops.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overlapped HSF1 and ERα ChIP-seq peaks in untreated wild-type MCF7 cells – peak size distribution (number of tags per peak). (B) The number of overlapped ERα and HSF1 peaks identified after E2 stimulation in wild-type MCF7 cells. (C) Overlapped HSF1 and ERα ChIP-seq peaks in wild-type MCF7 after E2 stimulation – peak size distribution (number of tags per peak) and fold enrichment. (D) Examples of ERα and HSF1 peaks identified by MACS in ChIP-seq analyses in wild-type MCF7 cells after E2 treatment and corresponding ChIA-PET interactions (Fullwood et al., 2009) downloaded from ENCODE database and visualized by the IGV browser. The red bar shows the ERα anchor region (interacting loci), the red line – the intermediate genomic span between the two anchors forming a putative loop; the scale for each sample is shown in the left corner. (E) ERα-mediated chromatin interactions analyzed by chromosome conformation capture (3C) technique in HSPB8 and WWC1 loci. The scheme represents ERα anchor regions (red bars), HSF1-binding sites (blue arrows), and forward (F) and reverse (R) primers around subsequent HindIII cleavage sites. A model of chromatin loops resulting from interactions between ERα anchor regions is also illustrated above. Interactions between selected DNA regions were analyzed by PCR in untreated and E2-stimulated HSF1+ and HSF1− cells. (F) Interactions between ERα and HSF1 assessed by Proximity Ligation Assay (PLA) (red spots) in HSF1+ and HSF1− MCF7 cells after E2 treatment. DNA was stained with DAPI. Scale bar, 20 μm. Representative nuclei are enlarged. The number of spots per nucleus is shown in boxplots (which represent the median, upper and lower quartiles, maximum and minimum). ***p<0.0001, *p<0.05. E2, 10 nM for 60 min (or 30 min for 3C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HSF1 binding in ERα anchoring region. (B) HSF1 binding unrelated to ERα anchoring. Peaks identified by MACS in ChIP-seq analyses in wild-type MCF7 cells after E2 treatment (10 nM, 60 min) and corresponding ChIA-PET interactions (Fullwood et al., 2009) downloaded from ENCODE database and visualized by the IGV browser. The red bar shows the ERα anchor region (interacting loci), red line – a loop (the intermediate genomic span between the two anchors). The scale for each sample is shown in the left corner.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) HSF1 and ERα localization assessed by immunofluorescence in wild-type MCF7 cells. DNA was stained with DAPI. Scale bar, 20 μm. (B) Interactions between ERα (mouse Ab) and HSF1 (rabbit Ab) assessed by Proximity Ligation Assay (PLA) (red spots) in HSF1+ and HSF1− MCF7 cells after E2 treatment (10 nM for 60 min). DNA was stained with DAPI. Scale bar, 20 μm. Representative nuclei are enlarged. The average number of spots per nucleus is shown in boxplots. ***p<0.0001.
 
 Though the cobinding of HSF1 and ERα to DNA was rare and relatively weak, particularly in untreated cells, the proximity of both factors was easily detected. In general, both transcription factors colocalized in the nucleus when assessed by immunofluorescence (Figure 4—figure supplement 2A). Thus, PLA spots indicating putative HSF1/ERα interactions were mainly located in the nucleus and their number increased after E2 treatment (Figure 4F, Figure 4—figure supplement 2B). However, large diversity was observed between individual cells, which suggests that also HSF1 binding to DNA may be differentiated at the single-cell level. Nevertheless, we concluded that the proximity of HSF1 and ERα putatively reflecting their interactions frequently happens in the cell nucleus.
 
@@ -76,21 +124,45 @@ The PLA results showed that interactions between ERα and HSF1 are possible, whi
 
 **Figure 5.:** (A) A workflow of the search for possible ERα and HSF1-binding patterns based on the presence (+) and absence (−) of estrogen-response element (ERE) and heat shock element (HSE) motifs within the binding/anchoring sites detected by ChIP-seq/ChIA-PET. (B) Graphical illustration of possible cooperation between ERα and HSF1 in the chromatin. (C) The number of genes potentially regulated by ERα and HSF1 via canonical binding, tethering, or cobinding. Peaks were annotated to the nearest gene transcription start site (several modes of regulation are possible for one gene). (D) Comparative analysis of 569, 220, and 65 genes potentially co-regulated by canonical ERα and HSF1 binding, tethering, and cobinding, respectively; examples of genes are shown in gray boxes.
 
-## Metastatic and nonmetastatic breast cancers differ in the level of HSF1 only in the ER+ group
+### Metastatic and nonmetastatic breast cancers differ in the level of HSF1 only in the ER+ group
 
 Our in vitro analyses indicated that HSF1 could support the transcriptional action of ERα upon estrogen treatment. On the other hand, HSF1-regulated chaperones are necessary to keep estrogen receptors in an inactive state in the absence of ligands, which collectively indicated important functional crosstalk between both factors. Therefore, to further study the significance of the interaction between ERα and HSF1 in actual breast cancer, we utilized RNA-seq data deposited in TCGA database. The analysis revealed that the transcript level of HSF1 negatively correlated with the ESR1 transcript level, although this tendency was relatively weak (Figure 6A). Neither ESR1 nor HSF1 transcript levels had a significant prognostic value (Figure 6—figure supplement 1A). Therefore, out of all breast cancer cases, we selected four groups (numbered from I to IV) characterized by significantly different levels of ERα (mRNA and protein level) and HSF1 (mRNA) expression: ER−/HSF1low, ER−/HSF1high, ER+/HSF1low, and ER+/HSF1high (Figure 6B). These groups varied in molecular subtypes composition. In ER+ cancers (luminal A, luminal B, and normal-like), the HSF1low group was more homogenous (mostly luminal A) than the HSF1high group. In ER– cases (basal-like and HER2-enriched), the HSF1high group was more homogenous (mostly basal-like) (Figure 6C). Importantly, the exclusion of cases with moderate/intermediate expression of ESR1 or HSF1 enabled us to observe the effect of both transcription factors on the survival of breast cancer patients, although the expression of HSF1 alone had no significant effect on the survival in either ER– or ER+ group analyzed separately (Figure 6—figure supplement 1B). Nevertheless, the most divergent groups were ER+/HSF1low and ER−/HSF1high (better and worse prognosis, respectively; p=0.0044), which represented luminal A and basal-like enriched groups (Figure 6D, Figure 6—figure supplement 1B). The difference between ER+/HSF1low and ER−/HSF1high cancers was also clearly visible in the multidimensional scaling (MDS) plots where the cancer cases belonging to these groups were separated. MDS plotting generally separated ER+ cases from ER−/HSF1high cases, while ER−/HSF1low cases were scattered between them (Figure 6E). On the other hand, HSF1high and HSF1low cases were not separated, although they were slightly shifted against each other. When looking at molecular subtypes, it became apparent that ER−/HER2-positive cancers were separated from ER−/basal-like cancers and slightly overlapped with ER+ cancers. These analyses indicate collectively that HSF1 and ERα may affect survival and have stronger prognostic value if analyzed together but only when extreme expression values are taken into account.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig6-v2.jpg)
+
+**Figure 6.:** (A) Correlation of HSF1 and ESR1 transcript level in all TCGA breast cancers. Each dot represents one cancer case; log(CPM), log2-counts per million. (B) Cases with markedly different mRNA levels of ESR1 (additionally, protein level determined by immunohistochemistry [IHC] was considered) and HSF1 selected for further analyses (groups I–IV). (C) Characteristics of selected groups by the molecular subtypes of breast cancer. (D) Kaplan–Meier plots for all selected groups. (E) Multidimensional scaling (MDS) plots of selected cases with marked: ER and HSF1 statuses (left) or molecular subtypes (right). (F) Plots of HSF1 expression levels in groups defined by ER status and presence/absence of metastases (**p<0.001). Black dots represent mean values. (G) Metastatic and nonmetastatic cases in groups of patients defined by ER status and HSF1 expression level. *p<0.05. (H) The proportion of metastatic (red) to nonmetastatic (green) cases (and their number) in ER+, ER−, and NA groups with different levels of HSF1 expression (deciles). ER+/−, estrogen receptor-positive/negative; HSF1high, high HSF1 level, HSF1low, low HSF1 level; NA, not assigned to any group.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) All TCGA breast cancer cases. In the combined analysis, patients were split into high HSF1 and low HSF1 groups by the median value of HSF1 expression. (B) Cases with the most divergent ESR1 or HSF1 expression selected as shown in Figure 6B. (C) Selected cases were limited to basal-like and luminal A subtypes as shown in Figure 7B.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (C) The proportion of metastatic (red) to nonmetastatic (green) cases (and their number) in ER-positive and ER-negative groups with different levels of HSF1 expression (deciles).
+
 Since in vitro analyses showed an effect of HSF1 on E2-stimulated cell migration that may facilitate metastasis formation, we checked HSF1 levels in metastatic (defined as all cases with a nonzero number of positive lymph nodes or with distant metastases; 418 cases) and nonmetastatic (399 cases) breast cancers (data deposited in TCGA database). ER+ (defined by our criteria, Figure 6B) was the only group in which HSF1 expression level was higher in metastatic cases than in nonmetastatic ones (logFC = 0.32, p-value=0.0005) (Figure 6F). When groups of patients defined by ER status were analyzed for overrepresentation of metastatic tumors, we found that they might be more common among ER+ tumors (51.3% versus 39.6% in the ER− group; p-value=0.018, Fisher’s exact test) (Figure 6G, upper panel). Furthermore, only in the ER+ group a proportional increase in metastatic disease was observed with the increase in HSF1 expression (Figure 6H) and metastatic tumors were overrepresented in ER+/HSF1high (62% versus 44.3% in ER+/HSF1low) (p-value=0.059, Pearson’s chi-squared test, verified by chi-squared posthoc test) (Figure 6G, bottom). When all patients (split into groups by ER status from TCGA clinical data and HSF1 expression split by median value or intervals) were analyzed, among-groups differences were also present (p-value = 0.001) (Figure 6—figure supplement 2). These analyses suggest that the action of HSF1 and its effect on metastasis formation may differ in ER+ versus ER− breast cancers.
 
-## HSF1 increases the disparity of the transcriptome in ER-positive breast cancers
+### HSF1 increases the disparity of the transcriptome in ER-positive breast cancers
 
 Furthermore, we analyzed global gene expression profiles in breast cancers with different ERα and HSF1 statuses. Differential expression tests between the above-selected groups of patients (Supplementary file 5) revealed that generally ERα had a much stronger influence on the transcriptome (i.e., ER+ versus ER−) than HSF1 (i.e., HSF1high versus HSF1low). Nevertheless, differences between ER+ and ER− cases were higher in the presence of high levels of HSF1, which implicates that HSF1 increases the disparity of the transcriptome of ER+ cancers. Also, the differences in the transcript levels between HSF1high and HSF1low cancers were higher in ER+ than ER− cases (Figure 7A). Remarkably, the most divergent were ER+/HSF1low and ER−/HSF1high cancers, which resembled the most significant differences in the survival probability (Figure 6D). Then, we looked at differences in numbers of differently expressed genes (DEGs) between patients’ groups. To eliminate the possible influence of the group size on DEGs, we repeated each test 10 times, randomly subsampling groups to an equal number of cases and averaging the number of DEGs. Furthermore, to check whether heterogeneity of selected groups regarding molecular subtypes could affect observed differences in gene expression profiles, only basal-like (ER−) and luminal A (ER+) cancers were included in these tests (Figure 7B). In general, these analyses also revealed that the number of genes differentiating ER+ and ER− cases was higher in HSF1high cancers, while the number of genes differentiating HSF1high and HSF1low cases was higher in ER+ cancers. The most divergent were again ER+/HSF1low and ER−/HSF1high cases while the most similar, ER−/HSF1low and ER−/HSF1high (Figure 7C). This tendency was maintained when groups with mixed molecular subtypes composition were analyzed as well as more homogenous cancer groups (i.e., only basal-like and luminal A). Furthermore, the prognostic value of both ESR1 and HSF1 was visible in such homogenous groups (Figure 6—figure supplement 1C), which may simply reflect the prognostic difference between the basal-like and luminal A (i.e., ER-negative and ER-positive) breast cancer subtypes. Also, HSF1high cases were dominant in basal-like cases, while HSF1low were dominant in luminal A cases. Further analyses showed that the level of HSF1 did not affect the survival of ER-positive luminal A cancers but may slightly worsen the prognosis of basal-like cancers (Figure 6—figure supplement 1C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig7-v2.jpg)
+
+**Figure 7.:** (A) Boxplots of fold changes (log fold change [logFC] absolute values) illustrating differences in gene expression between groups characterized in Figure 6; represented are the median, upper/lower quartiles, and the highest/lowest values (excluding outliers shown as dots). (B) Composition of ER+ and ER− groups with different levels of HSF1 reduced to one molecular subtype (luminal A and basal, respectively). (C) The number of differently expressed genes (y-axis) plotted cumulatively against the false discovery rate (FDR) value of differences (x-axis). Comparisons of ER+ and ER− cancer cases as well as HSF1high and HSF1low: all cases (upper graphs; for group indexes see panel A) and cases from pre-selected cancer subtypes (lower graphs; for group indexes, see panel B). (D) Gene set enrichment analyses showing differences between ER+ and ER− breast cancers with different HSF1 levels. Terms related to hormone signaling and metabolism and response to stimulus and protein processing in comparisons between groups that were selected in Figure 6B. Blue, a fraction of downregulated genes; red, a fraction of upregulated genes. (E) Differences in the expression of the E2-regulated gene set (as identified in MCF7 cells by RNA-seq; see Figure 2 and Figure 2—figure supplement 1) between breast cancers with different levels of ESR1 and HSF1 selected from TCGA database and qualified into four groups as shown in Figure 6B. Green boxes mark all possible comparisons between the ER+/HSF1high group to other groups. The black horizontal line separates genes up- and downregulated after E2 treatment in MCF7 cells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Without gene labels (the same scale is kept). (B) With gene labels. The points in the plots represent genes with statistically significant increased expression in the first group (red) or in the second group (blue) in the given comparison; group symbols as in Figure 6 (false discovery rate [FDR] < 0.05).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69843/elife-69843-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Blue, downregulated genes; red, upregulated genes. Terms related to estrogen response are marked with the green rectangle.
 
 Differences in gene expression profiles between pairwise compared groups of cancer were further illustrated on volcano plots that additionally separated upregulated and downregulated genes (Figure 7—figure supplement 1). Then we searched for the hypothetical influence of the HSF1 status on functions of ERα-related genes in actual cancer tissue. The gene set enrichment analysis identified terms related to estrogen response among the most significant ones associated with transcripts differentiating between ER+ and ER− cancers. It is noteworthy that terms related to spliceosomal complex assembly, especially the formation of a quadruple snRNP complex, were differentiating HSF1high and HSF1low cancers (Figure 7—figure supplement 2). The more detailed analysis focused on terms related to hormone signaling and metabolism showed differences between HSF1high and HSF1low cases when ER+ and ER− cancers were compared. These analyses indicate that HSF1 may enhance estrogen signaling. On the other hand, the analysis focused on terms related to response to stimulus and protein processing (i.e., functions presumed to be dependent on HSF1 action via the HSPs expression) revealed that most of them reached the statistical significance of differences between ER+/HSF1high and ER−/HSF1high cases (Figure 7D).
 
 We additionally compared the expression of E2-regulated genes (the set identified in MCF7 cells by RNA-seq, i.e., 46 upregulated and 2 downregulated genes; Figure 2) in selected groups of breast cancers with different levels of ESR1 and HSF1. The analysis revealed the highest upregulation of PGR and LINC01016 genes in ER+ compared to ER− cancers (regardless of HSF1 status) (Figure 7E). It is noteworthy, however, that not all genes upregulated by E2 in MCF7 cells revealed an increased expression level in ER+ compared to ER− cancers. Especially, FOXC1 and LINC00511 were expressed at a higher level in ER− cancers. Moreover, regardless of ER status, cancers with high HSF1 levels revealed a higher expression of MYBL1 than cancers with low HSF1 levels. Furthermore, expression of a few genes systematically differentiated cancers with high levels of both factors (ER+/HSF1high) compared to cancers with the low level of at least one factor (including RAPGEFL1, AMZ1, KCNF1, HSPB8 upregulated, and CYP24A1, SIM1 downregulated in ER+/HSF1high cancers), which was consistent in all relevant comparisons (marked with green boxes in Figure 7E). Nevertheless, the observed features of gene expression profiles confirmed collectively that HSF1 affects the genomic action of ERα in breast cancer.
 
-## HSF1 functional knockout results in a better response to hydroxytamoxifen and palbociclib treatments in MCF7 cells
+### HSF1 functional knockout results in a better response to hydroxytamoxifen and palbociclib treatments in MCF7 cells
 
 ER-positive breast cancers are frequently treated with tamoxifen, a selective estrogen receptor modulator. More recent therapeutic options include palbociclib, a selective inhibitor of the cyclin-dependent kinases CDK4 and CDK6, approved for women with advanced metastatic cancer. Thus, we studied the influence of HSF1 on the response of MCF7 and T47D cells to these drugs. Treatment of HSF1+ cells with 4-hydroxytamoxifen (4-OHT) resulted in slightly enhanced proliferation (Figure 8A). This may be a consequence of ERα activation (estimated by its phosphorylation at S118; Figure 8B) and induction of ERα-regulated genes (not shown) and is consistent with previous reports (Ali et al., 1993). Although HSF1 functional knockout by itself had different effects in both cell lines (MCF7 growth was inhibited, while T47D growth was enhanced after HSF1 knockout; see Figure 1D, Figure 1—figure supplement 1F and G, Figure 1—figure supplement 2B), treatment with 4-OHT did not result in increased proliferation, thus it gave better results than in HSF1+ cells (Figure 8A). 4-OHT slightly inhibited E2-stimulated cell proliferation, and the differences between HSF1+ and HSF1− cells reflected differences in response to E2. T47D cells were more resistant to palbociclib than MCF7 cells. The difference between HSF1+ and HSF1− was not significant in T47D cells while in MCF7 cells inhibitory concentration 50 (IC50) of palbociclib was more than twofold lower in HSF1− than in HSF1+ cells (Figure 8C). Palbociclib also inhibited E2-stimulated cell proliferation, yet only in MCF7 cells, it was slightly more effective in the absence of HSF1 (Figure 8A). These results show only some tendencies (the statistical significance depends on the tests used) but suggest that ER-positive breast tumors with low HSF1 expression may be more sensitive to treatment with 4-OHT and palbociclib than cases with high HSF1 levels.
 
@@ -118,101 +190,657 @@ In conclusion, HSF1 and ERα cooperate in response to estrogen stimulation. The 
 
 ## Materials and methods
 
-## Cell lines and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF7</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat#:HTB-22; RRID:VCL_0031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>T47D</td>
+      <td>European Collection of Authenticated Cell Cultures</td>
+      <td>Cat#:85102201; RRID:CVCL_0553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Edit-R Human HSF1 crRNAs</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:CM-012109-02-0002</td>
+      <td>Transfected construct (human)5′GGTGTCCGGGTCGCTCACGA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Edit-R Human HSF1 crRNAs</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:CM-012109-05-0002</td>
+      <td>Transfected construct (human)AAAGTGGTCCACATCGAGCA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Edit-R Human HSF1 crRNAs</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:CM-012109-03-0002</td>
+      <td>Transfected construct (human)GTGGTCCACATCGAGCAGGG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Edit-R tracrRNA</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:U-002005</td>
+      <td>Transfected construct</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSF1 (rabbit polyclonal)</td>
+      <td>Enzo, Life Sciences, Famingdale, NY</td>
+      <td>Cat#:ADI-SPA-901; RRID:AB_1083465</td>
+      <td>WB (1:4000),IF (1:300)PLA (1:300)ChIP (4 μg/sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSF1 (E-4) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc, Inc, Dallas, TX</td>
+      <td>Cat#:sc-17757; RRID:AB_627753</td>
+      <td>PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERα (estrogen receptor α) (D8H8) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>Cat#:8644; RRID:AB_2617128</td>
+      <td>WB (1:1000)PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERα (mouse monoclonal) ERalpha</td>
+      <td>Diagenode, Liège, Belgium</td>
+      <td>Cat#:C15100066; RRID:AB_2716575</td>
+      <td>PLA (1:200)ChIP (4 μg/sample)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphoERα (S118) (16J4) (mouse monoclonal)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>Cat#:2511; RRID:AB_331289</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTB (AC-15)(HRP) (mouse monoclonal)</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:A3854; RRID:AB_262011</td>
+      <td>WB (1:25,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP90 (rabbit polyclonal)</td>
+      <td>Enzo, Life Sciences, USA Famingdale, NY</td>
+      <td>Cat#:ADI-SPA-836; RRID:AB_10615944</td>
+      <td>WB (1:2000)PLA (1:200)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP70 (HSPA1) (mouse monoclonal)</td>
+      <td>Enzo, Life Sciences, Famingdale, NY</td>
+      <td>Cat#:ADI-SPA-810; RRID:AB_10616513</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP105 (rabbit polyclonal)</td>
+      <td>BioVision, Milpitas, CA</td>
+      <td>Cat#:3390-100; RRID:AB_2264190</td>
+      <td>WB (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSPB8/HSP22 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>Cat#:3059; RRID:AB_2248643</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TDAG51 (PHLDA1) (RN-E62) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc, Inc, Dallas, TX</td>
+      <td>Cat#:sc-23866; RRID:AB_628117</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EGR3 (A-7) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc, Inc, Dallas, TX</td>
+      <td>Cat#:sc-390967; RRID:AB_2894831</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSC70 (HSPA8) (B-6) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc, Inc, Dallas, TX</td>
+      <td>Cat#:sc-7298; RRID:AB_627761</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (HRP)</td>
+      <td>Millipore, Billerica, MA</td>
+      <td>Cat#:AP124P; RRID:AB_90456</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (HRP)</td>
+      <td>Millipore, Billerica, MA</td>
+      <td>Cat#:AP132P; RRID:AB_90264</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (Alexa Fluor 488)</td>
+      <td>Abcam, Cambridge, Great Britain</td>
+      <td>Cat#:ab150077; RRID:AB_2630356</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (Alexa Fluor 594)</td>
+      <td>Abcam, Cambridge, Great Britain</td>
+      <td>Cat#:ab150116; RRID:AB_2650601</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-shRNA1 vector</td>
+      <td>Clontech/Takara Bio USA, Inc.</td>
+      <td>Cat#:632177</td>
+      <td>Lentivirus construct to express a small hairpin RNA (shRNA)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-shHSF1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pLVX-shRNA1 vector encoding shRNA specific for HSF1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Edit-R hCMV-PuroR-Cas9 Expression Plasmid</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:U-005100-120</td>
+      <td>Cas9 expression vector</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary files 6–8</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>eSpCas9-GFP protein</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:ECAS9GFPPR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ Red Kit Mouse/Rabbit</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALDEFLUOR Kit</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat#:01700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The iDeal ChIP-seq Kit for Transcription Factors</td>
+      <td>Diagenode</td>
+      <td>Cat#:C01010055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-Zol RNA MiniPrep Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat#:R2052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>μMacs Streptavidin Kit</td>
+      <td>Miltenyi Biotec, Bergisch Gladbach, Germany</td>
+      <td>Cat#:130-074-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter 96 AQueous One Solution Assay</td>
+      <td>Promega; Madison, WI</td>
+      <td>Cat#:G3580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>Cat#:34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAseq Ultralow Input Library Kit</td>
+      <td>Qiagen, Venlo, Netherlands</td>
+      <td>Catt#:180492</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECM Cell Adhesion Array kit</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:ECM540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR Master Mix SYBR Green</td>
+      <td>A&amp;A Biotechnology, Gdynia, Poland</td>
+      <td>Cat#:2008-100A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>17 beta-estradiol</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:E4389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Hydroxytamoxifen</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:T176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Palbociclib, hydrochloride salt</td>
+      <td>LC Laboratories, Woburn, MA</td>
+      <td>Cat#:P-7788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Thiouridine</td>
+      <td>Cayman Chemical, Ann Arbor, MI</td>
+      <td>Cat#:16373-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin-TRITC</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:P1951</td>
+      <td>IF (1:800)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS6</td>
+      <td>Adobe</td>
+      <td>Version 13.0.1; RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>doi:10.1093/bioinformatics/btp352</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R software</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>Package v.3.6.2; RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>doi:10.1158/0008-5472.CAN-13-1070</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NOISeq</td>
+      <td>doi:10.1093/nar/gkv711</td>
+      <td>Package v.3.12; RRID:SCR_003002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC software</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hisat2</td>
+      <td>doi:10.1038/nmeth.3317</td>
+      <td>Version 2.0.5; RRID:SCR_015530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>doi:10.1093/bioinformatics/btt656</td>
+      <td>Version 1.6.5; RRID:SCR_012919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPpeakAnno</td>
+      <td>doi:10.1186/1471-2105-11-237</td>
+      <td>Version 3.24.2; RRID:SCR_012828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools2</td>
+      <td>doi:10.1093/nar/gkw257</td>
+      <td>Version 3.5.0; SCR_016366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>doi:10.1038/nmeth.1923</td>
+      <td>Version 2.2.9; SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME Suite</td>
+      <td>doi:10.1093/nar/gkv416</td>
+      <td>Version. 5.4.1; RRID:SCR_001783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS software</td>
+      <td>doi:10.1038/nprot.2012.101</td>
+      <td>Version 1.4.2; RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bedtools software</td>
+      <td>doi:10.1093/bioinformatics/btq033</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MedCalc Statistical Software</td>
+      <td>MedCalc Software Ltd, Ostend, Belgium</td>
+      <td>Version 19.2.1; RRID:SCR_015044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPseeker</td>
+      <td>Bioconductor package</td>
+      <td>Version 1.26.2; RRID:SCR_021322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TCGAbiolinks package</td>
+      <td>doi:10.1093/nar/gkv1507</td>
+      <td>Version 2.14; RRID:SCR_017683</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR package</td>
+      <td>doi:10.1093/bioinformatics/btp616</td>
+      <td>Version 3.28.1; RRID:SCR_012802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statistica</td>
+      <td>TIBCO Software Inc</td>
+      <td>RRID:SCR_014213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MSigDB</td>
+      <td>doi:10.1073/pnas.0506580102</td>
+      <td>RRID:SCR_016863</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Deoxyribonuclease I</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>Cat#:LS006333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNAClean XP beads</td>
+      <td>Beckman Coulter Life Science, Indianapolis, IN</td>
+      <td>Cat#:A63987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MTSEA-biotin-XX</td>
+      <td>Biotium, Fremont, CA</td>
+      <td>Cat#:90066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat#:D1306</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DharmaFECT Duo</td>
+      <td>Dharmacon, Horizon Discovery Group Company</td>
+      <td>Cat#:T-2010</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Viromer CRISPR</td>
+      <td>Lipocalyx GmbH, Halle (Saale), Germany</td>
+      <td>Cat#:VCr-01LB-01</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:4693116001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PhosSTOP (phosphatase inhibitor tablets)</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:4906837001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagen I</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:804592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagen IV</td>
+      <td>Sigma-Aldrich, Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat#:C55333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fibronectin</td>
+      <td>Corning, NY</td>
+      <td>Cat#:354008</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and treatments
 
 Human ERα-positive MCF7 and T47D breast cancer cell lines were purchased from the American Type Culture Collection (ATCC, Manassas, VA) and the European Collection of Authenticated Cell Cultures (ECACC, Porton Down, UK), respectively. Cells were cultured in DMEM/F12 medium (Merck KGaA, Darmstadt, Germany) supplemented with 10% FBS (EURx, Gdansk, Poland) and routinely tested for mycoplasma contamination. For heat shock, logarithmically growing cells were placed in a water bath at a temperature of 43°C for 1 hr. The cells were allowed to recover for the indicated time in a CO2 incubator at 37°C. For estrogen treatment, cells were seeded on plates and the next day the medium was replaced into a phenol-free medium supplemented with 5% or 10% dextran-activated charcoal-stripped FBS (PAN-Biotech GmbH, Aidenbach, Germany). 17β-estradiol (E2; #E4389, Merck KGaA) was added 48 hr later to a final concentration of 10 nM unless otherwise stated for the indicated time. For longer E2 treatments, the medium was changed every two days. In the case of treatments with palbociclib (hydrochloride salt, #P-7788, LC Laboratories, Woburn, MA) and 4-hydroxytamoxifen (#T176, Merck KGaA), an equal volume of DMSO was added as vehicle control. The growth media were not replaced either before or after treatments. Working solutions were prepared fresh before each experiment in a culture medium (without antibiotics).
 
-## HSF1 down-regulation using shRNA
+### HSF1 down-regulation using shRNA
 
 The shRNA target sequence for human HSF1 (NM_005526.4) was selected using the RNAi Target Sequence Selector (Clontech, Mountain View, CA). The target sequences were shHSF1 - 5′GCA GGT TGT TCA TAG TCA GAA-3′ (1994–2013 in NM_005526.4), shHSF1.2–5′CCT GAA GAG TGA AGA CAT A (526–544), and shHSF1.3–5′ CAG TGA CCA CTT GGA TGC TAT (1306–1326). The negative control sequence was 5′-ATG TAG ATA GGC GTT ACG ACT. Sense and antisense oligonucleotides were annealed and inserted into the pLVX-shRNA vector (Clontech) at BamHI/EcoRI site. Infectious lentiviruses were generated by transfecting DNA into HEK293T cells and virus-containing supernatant was collected. Human MCF7 cells were transduced with lentiviruses following the manufacturer’s instructions and selected using a medium supplemented with 1 μg/ml puromycin (Life Technologies/Thermo Fisher Scientific, Waltham, MA, USA).
 
-## HSF1 functional knockout using the CRISPR/Cas9 editing system
+### HSF1 functional knockout using the CRISPR/Cas9 editing system
 
 To remove the human HSF1 gene, Edit-R Human HSF1 (3297) crRNA, Edit-R tracrRNA, and Edit-R hCMV-PuroR-Cas9 Expression Plasmid (Dharmacon, Lafayette, CO) were introduced into MCF7 cells using DharmaFECT Duo (6 µg/ml) (Dharmacon) according to producer’s instruction. Transfected cells were enriched by puromycin (2 µg/ml) selection for 4 days. Afterward, single clones were obtained by limiting dilution on a 96-well plate. The efficiency of the HSF1 knockout was monitored by western blot. Out of 81 tested clones, 2 individual clones with the HSF1 knockout (KO#1 and KO#2) and 6 pooled control clones (MIX) were chosen for the next experiments. Among individually tested HSF1-targeting crRNAs, only two were effective (target sequences: GTGGTCCACATCGAGCAGGG and AAAGTGGTCCACATCGAGCA, both in exon 3 on the plus strand). For validation experiments, a new model was created using DNA-free system: Edit-R Human HSF1 (3297) crRNAs (GGTGTCCGGGTCGCTCACGA in exon 1 on the minus strand and AAAGTGGTCCACATCGAGCA in exon 3 on the plus strand), Edit-R tracrRNA (Dharmacon), and eSpCas9-GFP protein (#ECAS9GFPPR, Merck KGaA) were introduced into MCF7 and T47D cells using Viromer CRISPR (Lipocalyx GmbH, Halle [Saale], Germany) according to the manual provided by the producer. Single clones were obtained by limiting dilution on a 96-well plate. The efficiency of the HSF1 knockout was monitored by western blot and confirmed by sequencing (Genomed, Warszaw, Poland). Five (T47D) or six (MCF7) individual unaffected clones (HSF1+) or with the HSF1 functional knockout (HSF1−) were pooled each time before analyses.
 
-## Protein extraction and western blotting
+### Protein extraction and western blotting
 
 Whole-cell extracts were prepared using RIPA buffer supplemented with cOmplete protease inhibitors cocktail (Roche) and phosphatase inhibitors PhosSTOP (Roche, Indianapolis, IN). Proteins (20–30 μg) were separated on 10% SDS-PAGE gels and blotted to a 0.45 μm pore nitrocellulose filter (GE Healthcare, Europe GmbH, Freiburg, Germany) using Trans Blot Turbo system (Bio-Rad, Hercules, CA) for 10 min. Primary antibodies against HSF1 (1:4000, ADI-SPA-901), HSP90 (1:2000, ADI-SPA-836), and HSP70 (1:2000, ADI-SPA-810), all from Enzo Life Sciences (Farmingdale, NY), HSP105 (1:600, #3390-100, BioVision, Milpitas, CA), ERα (1:2000, #8644), phosphoERα (S118) (1:2000, #2511), HSPB8 (1:1000, #3059), all from Cell Signaling Technology (Danvers, MA), PHLDA1 (1:1000, #sc-23866), EGR3 (1:1000, #sc-390967), HSPA8/HSC70 (1:5000, #sc-7298), all from Santa Cruz Biotechnology (Dallas, TX), and ACTB (1:25,000, #A3854, Merck KGaA) were used. The primary antibody was detected by an appropriate secondary antibody conjugated with horseradish peroxidase (Thermo Fisher Scientific) and visualized by ECL kit (Thermo Fisher Scientific) or WesternBright Sirius kits (Advansta, Menlo Park, CA). Imaging was performed on x-ray film or in a G:BOX chemiluminescence imaging system (Syngene, Frederick, MD). The experiments were repeated in triplicate, and blots were subjected to densitometric analyses using ImageJ software to calculate relative protein expression after normalization with loading controls (statistical significance of differences was calculated using t-test).
 
-## Total and nascent RNA isolation, cDNA synthesis, and RT-qPCR
+### Total and nascent RNA isolation, cDNA synthesis, and RT-qPCR
 
 For nascent RNA labeling, 500 μM of 4-thiouridine (Cayman Chemical, Ann Arbor, MI) was added to control and E2-treated cells for the duration of the treatment (4 hr). Next, total RNA was isolated using the Direct-Zol RNA MiniPrep Kit (Zymo Research, Irvine, CA), digested with DNase I (Worthington Biochemical Corporation, Lakewood, NJ), and cleaned with RNAClean XP beads (Beckman Coulter Life Science, Indianapolis, IN). 5 µg of total RNA from each sample were taken for nascent RNA fraction isolation using methane thiosulfonate (MTS) chemistry according to Duffy and Simon, 2016. After the biotinylation step using MTSEA-biotin-XX (Biotium, Fremont, CA), s4U-RNA was cleaned with RNAClean XP beads and isolated using μMacs Streptavidin Kit (Miltenyi Biotec, Bergisch Gladbach, Germany) as described (Garibaldi et al., 2017). Total RNA (1 μg) and nascent RNA (isolated from 5 μg of total RNA) from each sample were converted into cDNA as described (Kus-Liskiewicz et al., 2013). Quantitative PCR was performed using a Bio-Rad C1000 Touch thermocycler connected to the head CFX-96. Each reaction was performed at least in triplicates using PCR Master Mix SYBRGreen (A&A Biotechnology, Gdynia, Poland). Expression levels were normalized against GAPDH, ACTB, HNRNPK, HPRT1, if not stated otherwise. The set of delta-Cq replicates (Cq values for each sample normalized against the geometric mean of four reference genes) for control and tested samples were used for statistical tests and estimation of the p-value. Shown are median, maximum, and minimum values of a fold change versus untreated control. The primers used in these assays are described in Supplementary file 6.
 
-## Clonogenic assay
+### Clonogenic assay
 
 Cells were plated onto 6-well dishes (1 × 103 cells per well) and cultured for 14 days. Afterward, cells were washed with the phosphate-buffered solution (PBS) and fixed with methanol. Colonies were stained with 0.2% crystal violet, washed, and air-dried. Colonies were counted manually.
 
-## Proliferation test
+### Proliferation test
 
 Cells (2 × 104 cells per well) were seeded and cultured in 12-well plates. At the indicated time, cells were washed with PBS, fixed in cold methanol, and rinsed with distilled water. Cells were stained with 0.1% crystal violet for 30 min, rinsed with distilled water extensively, and dried. Cell-associated dye was extracted with 1 ml of 10% acetic acid. Aliquots (200 μl) were transferred to a 96-well plate and the absorbance was measured at 595 nm (Synergy2 microtiter plate reader, BioTek Instruments, Winooski, VT). Grow curves are shown as the ratio of the absorbance on days 2, 4, and 6 against day 0 and were calculated from 3 to 6 independent experiments, each in 2–3 technical replicates.
 
-## Cell viability assay
+### Cell viability assay
 
 The effect of drug treatment on cell viability was determined colorimetrically using the CellTiter 96 AQueous One Solution Cell Proliferation Assay (Promega, Madison, WI) according to the manufacturer’s protocol. Cells seeded into 96-well plates (4 × 103 MCF7 cells and 1 × 104 T47D cells per well) were incubated with palbociclib in concentrations ranging from 0 to 100 µM in DMSO for the next 72 hr (max. DMSO concentration <0.5%). The experiment was performed 3–5 times with three replicates for each concentration of the tested compound. IC50 values were determined using the Quest Graph IC50 Calculator (AAT Bioquest, Inc, 28 September 2021, https://www.aatbio.com/tools/ic50-calculator) with the option ‘Set minimum response to zero’.
 
-## F-actin staining
+### F-actin staining
 
 Cells were treated with E2 for 14 days, then 5 × 104 cells per well were plated on fibronectin-coated Nunc Lab-Tek II chambered coverglass (#155383, Nalge Nunc International, Rochester, NY) and allowed to grow for 24 hr. Cells were briefly washed with PBS, fixed for 10 min with 4% paraformaldehyde (PFA) solution in PBS, washed with PBS (3 × 5 min), treated with 0.1% Triton-X100 in PBS for 5 min, and washed again in PBS (3 × 5 min). F-actin was visualized by incubation with phalloidin–tetramethylrhodamine B isothiocyanate (1:800, #P1951, Merck KGaA) while nuclei were counterstained with DAPI. Images were taken using Carl Zeiss LSM 710 confocal microscope with ZEN navigation software. The experiments were performed in triplicate. Cells were counted in 10 randomly selected fields for each replicate.
 
-## Cell adhesion tests
+### Cell adhesion tests
 
 Cells were cultured for 14 days with or without E2 (10 nM). The ECM Cell Adhesion Array kit (#ECM 540, Merck KGaA) was used according to the manufacturer’s instructions. Adhesion to collagen I and IV (#804592 and #C5533, Merck KGaA) was independently validated on collagen-coated (1 µg/cm2) 96-well plates. Cells (7 × 104 cells per well) were allowed to adhere for 30 min. The wells were washed three times with PBS, fixed with cold methanol, and stained with 0.1% crystal violet. The adsorbed dye was extracted with a 10% acetic acid solution for 5 min, and measurement was performed at 595 nm on the Synergy2 microtiter plate reader (BioTek Instruments).
 
-## Transwell migration test (Boyden chamber assay)
+### Transwell migration test (Boyden chamber assay)
 
 Transwell chambers (with 8 μm pore size membrane, Becton Dickinson) were coated with fibronectin (10 μg/ml, Becton Dickinson). Cells (8 × 104) were suspended in a HEPES-buffered serum-free medium containing 0.1% BSA, seeded in the top of the chambers, and placed in the wells containing medium supplemented with 10% FBS. After 24 hr, the inserts were washed with PBS, fixed with cold methanol, rinsed with distilled water, and stained with 0.1% crystal violet for 30 min. The cells on the upper surface of the inserts were gently removed with a cotton swab. Cells that migrated onto the lower surface were counted under a microscope in five random fields; all experiments were performed three times (three technical repetitions each).
 
-## ALDEFLUOR assay
+### ALDEFLUOR assay
 
 The assay was performed using a kit from STEMCELL Technologies (Vancouver, Canada, #01700) according to the protocol. Cells (6 × 105) were harvested by trypsinization and resuspended in 1 ml ALDEFLUOR Buffer. After the addition of 5 μl of BODIPY-aminoacetaldehyd e (BAAA), the substrate for aldehyde dehydrogenase (ALDH), and a brief mixing, 500 μl of the cell suspension (3 × 105) was immediately transferred to another tube supplemented with 5 μl of diethylaminobenzaldehyde (DEAB), a specific inhibitor of ALDH, and pipetted to mix evenly. Tubes were incubated at 5% CO2, 37°C for 60 min. Cells were collected by centrifugation and resuspended in ALDEFLUOR Buffer. Analyses were performed using the BD Canto III cytometer (Becton Dickinson, Franklin Lakes, NJ).
 
-## Cell cycle distribution
+### Cell cycle distribution
 
 Cells (3 × 105 per well) were plated onto 6-well plates. The next day medium was replaced and cells were grown for an additional 48 hr. Afterward, cells were harvested by trypsinization, rinsed with PBS, and fixed with ice-cold 70% ethanol at −20°C overnight. Cells were collected by centrifugation, resuspended in PBS containing RNase A (100 µg/ml), and stained with 100 µg/ml propidium iodide solution. DNA content was analyzed using flow cytometry to monitor the cell cycle changes.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
 Cells were plated onto Nunc Lab-Tek II chambered coverglass (#155383, Nalge Nunc International, Rochester, NY) and fixed for 15 min with 4% PFA solution in PBS, washed, treated with 0.1% Triton-X100 in PBS for 5 min, and washed again in PBS (3 × 5 min). IF imaging was performed using primary antibodies: anti-HSP90 (1:200; ADI-SPA-836, Enzo Life Science), anti-HSF1 (1:300; ADI-SPA-901, Enzo Life Sciences), or anti-ESR1 (1:200; C15100066, Diagenode) and secondary Alexa Fluor (488 or 594) conjugated antibodies (Abcam). Finally, the DNA was stained with DAPI. Images were taken using Carl Zeiss LSM 710 confocal microscope with ZEN navigation software.
 
-## Proximity Ligation Assay
+### Proximity Ligation Assay
 
 To detect the ERα/HSP90 and ERα/HSF1 interactions, the Duolink In Situ Proximity Ligation Assay (PLA) (Merck KGaA) was used according to the manufacturer’s protocol. Cells were plated onto Nunc Lab-Tek II chambered coverglass (#155383, Nalge Nunc International) 1 day before the experiment. Cells were fixed for 15 min with 4% PFA solution in PBS, washed in PBS, and treated with 0.1% Triton-X100 in PBS for 5 min. After washing, slides were incubated in Blocking Solution and immunolabeled (overnight, 4°C) with primary antibodies diluted in the Duolink Antibody Diluent: rabbit anti-HSP90 (1:200; #ADI-SPA-836, Enzo Life Science) and mouse anti-ERalpha (1:200; #C15100066, Diagenode, Liège, Belgium) or mouse anti-HSF1 (1:200; #sc-17757, Santa Cruz Biotechnology) and rabbit anti-ERα (1:200; #8644, Cell Signaling Technology), as well as rabbit anti-HSF1 (1:300; ADI-SPA-901, Enzo Life Sciences) and mouse anti-ERalpha; negative controls were proceeded without one primary antibody or both. Then the secondary antibodies with attached PLA probes were used. Signals of analyzed complexes were observed using Carl Zeiss LSM 710 confocal microscope with ZEN navigation software; red fluorescence signal indicated proximity (<40 nm) of proteins recognized by both antibodies (Fredriksson et al., 2002). Z-stacks images (12 slices; 5.5 μm) were taken at ×630 magnification. From each experimental condition, spots from 10 to 15 images were identified using Photoshop (Red Channel → Select → Color Range) and counted (Picture → Analysis → Record the measurements). Next, the mean number of spots per cell (nucleus, cytoplasm) in each image was calculated. Experiments were repeated three times.
 
-## Statistical analyses in in vitro experiments
+### Statistical analyses in in vitro experiments
 
 Outliers were determined using the Grubbs, Tukey criterion, and QQ plot. For each dataset, the normality of distribution was assessed by the Shapiro–Wilk test and, depending on data distribution homogeneity of variances, was verified by the Levene test or Brown–Forsythe test. For analysis of differences between compared groups with normal distribution, the quality of mean values was verified by the ANOVA test with a pairwise comparison done with the HSD Tukey test or Games–Howell test and Tamhane test depending on the homogeneity of variance. In the case of non-Gaussian distribution, the Kruskal–Wallis ANOVA was applied for the verification of the hypothesis on the equality of medians with Conover–Iman’s test for pairwise comparisons. p=0.05 was selected as a statistical significance threshold.
 
-## Global gene expression profiling
+### Global gene expression profiling
 
 Total RNA was isolated from all MCF7 cell variants (untreated, treated with 10 nM E2 for 4 hr, conditions based on Vydra et al., 2019) using the Direct-Zol RNA MiniPrep Kit (Zymo Research) and digested with DNase I (Worthington Biochemical Corporation). For each experimental point, RNAs from three biological replicates were first tested by RT-qPCR for the efficiency of treatments. They were sequenced separately for HSF1+ and HSF1− cell variants or pooled before sequencing for WT, SCR, shHSF1, MIX, KO#1, and KO#2 cell variants. cDNA libraries were sequenced by Illumina HighSeq 1500 (run type: paired-end, read length: 2 × 76 bp). Raw RNA-seq reads were aligned to the human genome hg38 in a Bash environment using hisat2 v 2.0.5. (Kim et al., 2015) with Ensembl genes transcriptome reference. Aligned files were processed using Samtools (v. 1.13) (Li et al., 2009). Furthermore, reads aligned in the coding regions of the genome were counted using FeatureCounts (v. 1.6.5) (Liao et al., 2014). Further data analyses were carried out using the R software package (v. 3.6.2; R Foundation for Statistical Computing; http://www.r-project.org). Read counts were normalized using DESeq2 (v. 1.32.0) (Lowe et al., 2014), then normalized expression values were subjected to differential analysis using NOISeq package (v. 3.12) (Tarazona et al., 2015) (E2 versus Ctr in all cell variants separately). To find common genes between samples, lists of differentiating genes were compared and Venn diagrams were performed (package VennDiagram v. 1.6.20 from CRAN). Heatmaps of normalized read counts or log2 fold changes (E2 versus Ctr) for genes shared between samples were generated (package pheatmap v. 1.0.12 from CRAN). The hierarchical clustering of genes was based on Euclidean distance. Colors are scaled per row. Gene set enrichment analysis was performed as follows: from the count matrices, we filtered out all the genes with less than 10 reads in each of the libraries. Then, we analyzed the gene-level effects of E2 stimulation of cells with normal/decreased HSF1 levels, performing the DESeq2 test for paired samples, with pairs defined by the cell variant (HSF1+ and HSF1−, and separate analysis of three cell variants with normal-HSF1 level: WT, SRC, MIX, and three cell variants with decreased HSF1 level: shHSF1, KO#1, and KO#2). Finally, we performed the gene set enrichment analysis in the same way as for TCGA data (see below for details) – for each test, genes were ranked according to their minimum significant difference (MSD), CERNO test from tmod package was used to find enriched terms, and tmodPanelPlot function was used to visualize the results. The raw RNA-seq data were deposited in the NCBI GEO database; accession nos. GSE159802 and GSE186004.
 
-## Chromatin immunoprecipitation and ChIP-qPCR
+### Chromatin immunoprecipitation and ChIP-qPCR
 
 The ChIP assay was performed according to the protocol from the iDeal ChIP-seq Kit for Transcription Factors (Diagenode) as described in detail in Vydra et al., 2019. For each IP reaction, 30 µg of chromatin and 4 μl of mouse anti-ERalpha monoclonal antibody (C15100066, Diagenode) was used. For negative controls, chromatin samples were processed without antibody (mock-IP). Obtained DNA fragments were used for global profiling of chromatin-binding sites or gene-specific ChIP-qPCR analysis using specific primers covering the known EREs. The set of delta-Cq replicates (difference of Cq values for each ChIP-ed sample and corresponding input DNA) for control and test sample were used for ERα-binding calculation (as a percent of input DNA) and estimation of the p-values. ERE motifs in individual peaks were identified using MAST software from the MEME Suite package (v. 5.1.1) (Bailey et al., 2015). The sequences of used primers are presented in Supplementary file 7.
 
-## Global profiling of chromatin-binding sites
+### Global profiling of chromatin-binding sites
 
 In each experimental point, four ChIP biological replicates (each from 30 μg of input chromatin) were collected and combined in one sample before DNA sequencing. Immunoprecipitated DNA fragments and input DNA were sequenced using the Illumina HiSeq 1500 system and QIAseq Ultralow Input Library Kit (run type: single read, read length: 1 × 65 bp). Raw sequencing reads were analyzed according to standards of ChIP-seq data analysis as described below. Quality control of reads was performed with FastQC software (https://www.bioinformatics.babraham.ac.uk/projects/fastqc) and low-quality sequences (average phred <30) were filtered out. Remained reads were aligned to the reference human genome sequence (hg19) using the Bowtie2.2.9 program (Langmead and Salzberg, 2012). Individual peaks (Ab-ChIPed samples versus input DNA) and differential peaks (17β-estradiol-treated versus untreated cells) were detected using MACS software (v. 1.4.2) (Feng et al., 2012), whereas the outcome was annotated with Homer package (v. 4.11) (Heinz et al., 2010). Peak intersections and their genomic coordinates were found using Bedtools software (Quinlan and Hall, 2010). The input DNA was used as a reference because no sequences were obtained using a mock-IP probe. The locations of identified ERα-binding sites were compared to genomic coordinates of E2-induced HSF1 peaks from our previous ChIP-seq analysis (NCBI GEO database; accession no. GSE137558). We defined ERα/HSF1-binding sites as ‘common’ if at least the center of one peak was within the corresponding peak. Dot plots showing peak size distribution were generated using MedCalc Statistical Software (v. 19.2.1; MedCalc Software Ltd, Ostend, Belgium; https://www.medcalc.org; 2020). Coverage of bam files was normalized using deepTools (v. 3.5.0; bamCoverage and bamCompare functions) (Ramírez et al., 2016), with scaling factors normalizing the coverage to 1 million reads. ChIP-seq heatmaps were prepared using peakHeatmap function from ChIPseeker Bioconductor package (v. 1.26.2), with margins of 3000 nucleotides upstream and downstream from the promoter. Venn diagrams peak overlap statistics and permutation tests were generated using the ChIPpeakAnno package (v. 3.24.2) (Zhu et al., 2010). The raw ChIP-seq data were deposited in the NCBI GEO database; accession no. GSE159724.
 
-## MEME-ChIP analyses
+### MEME-ChIP analyses
 
 The consensus DNA sequences for ERα binding were identified in silico by Motif Analysis of Large Nucleotide Datasets (MEME-ChIP, v. 5.1.1) (Bailey et al., 2015) using a 150 bp region centered on the summit point and visualized by CentriMo (Local Motif Enrichment Analysis) (Bailey and Machanick, 2012).
 
-## Classification of canonical binding, cobinding, and tethered binding of HSF1 and ERα
+### Classification of canonical binding, cobinding, and tethered binding of HSF1 and ERα
 
 Data from ERα-related chromatin interaction analysis by paired-end tag sequencing (ChIA-PET) (Fullwood et al., 2009; GSE18046) were processed as follows: raw paired-end tags detected in the same genome localizations were combined to individual peaks using GenomicRanges 1.42.0R package (‘reduce’ function to merge overlapping ranges), obtaining genomic coordinates of the ERα binding/anchor sites, then identified peaks were annotated with Homer package (v. 4.11) (Heinz et al., 2010). The locations of detected anchors were compared to genomic coordinates of HSF1 and ERα peaks (versus input) from ChIP-seq analysis of E2-treated MCF7 cells (GSE137558 and GSE159724, respectively). We defined ERα_ChIA-PET, HSF1_ChIP-seq, and ERα_ChIP-seq binding sites as overlapping if the center of each peak was within the two corresponding peaks. Additionally, for the sequence of all peaks from each analysis, a search for ERE and HSE motifs was performed using MAST software from the MEME Suite package (v. 5.4.1) (Bailey et al., 2015) with position weight matrix (PWM) of ERα and HSF1 from the JASPAR database (Fornes et al., 2020). Based on the presence of HSF1/ERα in genomic locus and/or motif matching, three types of binding regions, including canonical binding, cobinding, and tethered binding regions, were identified within ChIP-seq/ChIA-PET peaks. A procedure is illustrated in Figure 5A (lists of all peaks with annotation and information about the presence of motifs are presented in Supplementary file 4).
 
-## Chromosome conformation capture assay (3C)
+### Chromosome conformation capture assay (3C)
 
 The procedure was carried out according to the protocol from Deng and Blobel, 2017. In brief, 1 × 107 cells per sample were trypsinized and fixed with 1% formaldehyde in 1× PBS. Crosslinking was quenched by 0.125 M glycine and cells were lysed (10 mM Tris pH 8.0, 10 mM NaCl, 0.2% NP-40, protease inhibitors). Cell nuclei were resuspended in HindIII RE buffer (10 mM Tris pH 8.0, 50 mM NaCl, 10 mM MgCl2, 100 μg/ml BSA) and incubated sequentially with 0.3% SDS (1.5 hr) and 1.8% Triton X-100 (1.5 hr) at 37°C with rotation. Chromatin was cleaved using 450U HindIII restriction enzyme (BioLabs, Ipswich, MA) at 37°C overnight and diluted 15-fold in ligation buffer (50 mM Tris pH 7.5, 10 mM MgCl2, 10 mM DTT, 1% Triton X-100, 100 μg/ml BSA). Ligation was carried out using 4000U T4-DNA ligase (EURx) at 16°C overnight, in the presence of 1 mM ATP. All samples were de-crosslinked (65°C, overnight with mixing), RNase A and Proteinase K treated, and DNA was isolated using standard Phenol/Chloroform/Isoamyl alcohol purification method. Precipitated DNA was dissolved in 10 mM Tris pH 8.0 and used as a template in PCR analyses. The primers used are listed in Supplementary file 8.
 
-## Analysis of human patient TCGA data (performed using R v. 3.6.2)
+### Analysis of human patient TCGA data (performed using R v. 3.6.2)
 
-## Data retrieval
+#### Data retrieval
 
 Clinical and RNA-seq (HTSeq counts) data from TCGA breast cancer (BRCA) project were downloaded (1102 total samples) and prepared using TCGAbiolinks package (v. 2.14) (Colaprico et al., 2016). An additional file with clinical data containing ER receptor status, ‘nationwidechildrens.org_clinical_patient_brca.txt’(Anaya, 2021), was downloaded directly from the GDC repository (https://portalgdccancer.gov). Molecular subtype classification (according to Berger et al., 2018) was retrieved through TCGAbiolinks.
 
-## Cases selection
+#### Cases selection
 
 Counts were log CPM normalized with the cpm function from the edgeR package (v. 3.28.1) (Robinson et al., 2010). Then we selected four groups (numbered I–IV) of patients: ER-positive/negative with high/low HSF1 expression level using the following clinical and expression (log CPM) criteria: ER-positive if er_status_by_ihc: ‘Positive,’ er_status_ihc_Percent_Positive: ‘90–99%’ and expression level of ESR1 >6, ER-negative if er_status_by_ihc: ‘Negative’ and expression level of ESR1 <6, HSF1high (low) if the expression of HSF1 was above 67 (below 33) percentile across all TCGA_BRCA cases. We also excluded cases classified to HER2-enriched and basal-like subtypes from the ER-positive group, and luminal A (LumA), luminal B (LumB), and normal-like subtypes from the ER-negative group. In reduced groups (numbered IR–IVR), only the luminal A and basal-like cases were analyzed.
 
@@ -220,16 +848,16 @@ Survival analysis was performed using the survfit function from the survival pac
 
 MDS plots were used to visualize differences between patients. We performed MDS with MDSplot function from edgeR and plotted the results with ggplot2 (v. 3.3.2) (Wickham, 2016).
 
-## HSF1 expression and the occurrence of metastases
+#### HSF1 expression and the occurrence of metastases
 
 As metastatic we considered the cases fulfilling any of the following conditions in the clinical data: (1) containing the greater-than-0 value in the number_of_lymphnodes_positive_by_he column and/or (2) with the presence of metastases confirmed in any of the following columns: metastatic_site_at_diagnosis, metastatic_site_at_diagnosis_other, or distant_metastasis_present_ind2. Differential expression of HSF1 between metastatic and nonmetastatic tumors was assessed using the glmQLFTest function from edgeR. Statistical significance of the differences shown by contingency tables was assessed using fisher.test() function for 2 × 2 contingency tables and chisq.test() for the greater tables. Correction for the multiple testing was done using the Benjamini and Hochberg method (FDR = p.adjust(p, method = "fdr")).
 
 Differential expression analysis was done with the edgeR package (Robinson et al., 2010). Lowly expressed genes were filtered out by filterByExpr function with default parameters, resulting in 24,696 genes kept for statistical analysis. Then we performed a quasi-likelihood F test for all groups’ combinations one-versus-one and two obvious two-versus-two cases: ER+ versus ER− and HSF1-high versus HSF1-low (using mean expression levels for joined groups, with the weight of 0.5). p-Values were corrected for multiple testing using the Benjamini and Hochberg method.
 
-## Comparison of the number of genes differentially expressed between groups
+#### Comparison of the number of genes differentially expressed between groups
 
 To compare the size of differences identified in each test, we plotted the cumulative distributions of false discovery rate (FDR). Each test was repeated 10 times with the groups randomly subsampled to equal size of 30 (or 28 in case of reduced groups) to avoid the p-values being affected by the group size inequality. Results were averaged and plotted with ggplot2 (Wickham, 2016).
 
-## Gene set enrichment analysis
+#### Gene set enrichment analysis
 
 For gene set enrichment analysis, we selected Hallmark, BioCarta, Reactome, and PID gene sets from MSigDB (v7.0) (Subramanian et al., 2005) and merged it with the list of pathways downloaded from KEGG. DESeq2 was used to calculate log-fold changes with its standard error (Love et al., 2014). Then all genes were ordered according to their MSD calculated as |logFC| – 2*logFC_standard_error and tested for enrichment using the CERNO test (Zyla et al., 2019) from the tmod package (v. 0.44) (Weiner, 2016). The most significant results (effect size >0.65, p-value<0.001 at least in one comparison) and results for gene sets related to the biological processes of interest were visualized with the tmodPanelPlot function.

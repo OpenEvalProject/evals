@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Slo1 is a Ca 2+ - and voltage-activated K + channel that underlies skeletal and smooth muscle contraction, audition, hormone secretion and neurotransmitter release. In mammals, Slo1 is regulated by auxiliary proteins that confer tissue-specific gating and pharmacological properties. This study presents cryo-EM structures of Slo1 in complex with the auxiliary protein, β4. Four β4, each containing two transmembrane helices, encircle Slo1, contacting it through helical interactions inside the membrane. On the extracellular side, β4 forms a tetrameric crown over the pore. Structures with high and low Ca 2+ concentrations show that identical gating conformations occur in the absence and presence of β4, implying that β4 serves to modulate the relative stabilities of ‘pre-existing’ conformations rather than creating new ones. The effects of β4 on scorpion toxin inhibition kinetics are explained by the crown, which constrains access but does not prevent binding.
+Slo1 is a Ca2+- and voltage-activated K+ channel that underlies skeletal and smooth muscle contraction, audition, hormone secretion and neurotransmitter release. In mammals, Slo1 is regulated by auxiliary proteins that confer tissue-specific gating and pharmacological properties. This study presents cryo-EM structures of Slo1 in complex with the auxiliary protein, β4. Four β4, each containing two transmembrane helices, encircle Slo1, contacting it through helical interactions inside the membrane. On the extracellular side, β4 forms a tetrameric crown over the pore. Structures with high and low Ca2+ concentrations show that identical gating conformations occur in the absence and presence of β4, implying that β4 serves to modulate the relative stabilities of ‘pre-existing’ conformations rather than creating new ones. The effects of β4 on scorpion toxin inhibition kinetics are explained by the crown, which constrains access but does not prevent binding.
 
 ## Introduction
 
@@ -27,23 +27,188 @@ How these single or 2-TM small transmembrane proteins physically associate with 
 
 ## Results
 
-## Structure determination of the human Slo1 channel in 4 states
+### Structure determination of the human Slo1 channel in 4 states
 
 To obtain biochemically stable protein samples suitable for structural studies we modified the gene encoding the Slo1 α subunit by removing the C-terminal 57 amino acids (unstructured in the crystal structure of the human Slo1 cytoplasmic domain) (Yuan et al., 2010). This modification neither affected the function of the Slo1 channel α subunit alone nor the functional influence β subunits have on Slo1 (Figure 1—figure supplement 1). Co-expression with either the β1 or β4 subunit slowed the activation and deactivation kinetics of the truncated Slo1 channel and modified its apparent Ca2+sensitivity, as reported for the full length Slo1 channel (Figure 1—figure supplement 1) (McManus et al., 1995; Dworetzky et al., 1996; Lippiat et al., 2003; Ha et al., 2004). The truncated Slo1 channel fused with a C-terminal GFP was either expressed alone or co-expressed with the β4 subunit in HEK293S GnTI- cells using the BacMam method (Goehring et al., 2014) and purified in the presence of Digitonin and a mixture of phospholipids using a GFP nanobody-affinity column followed by size-exclusion chromatography (Fridy et al., 2014). The final protein sample of Slo1 co-expressed with the β4 subunit contained both the α subunit and the β4 subunit confirmed by SDS-PAGE and mass spectrometry. Structures of human Slo1 in four distinct states were determined: Ca2+-free and Ca2+-bound α subunit alone as well as Ca2+-free and Ca2+-bound α-β4 complex at resolutions of 4.0 Å, 3.8 Å, 3.5 Å and 3.2 Å, respectively (Figure 1A, Figure 1—figure supplements 2–4 and Table 1). Details of the structure determinations are given in Materials and methods.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig1-v2.jpg)
+
+**Figure 1.:** (A) Determination of atomic structures of human Slo1 in four various states. (B) Overall structure of the human Slo1-β4 channel complex in the presence of 10 mM Ca2+ in stereo, viewed parallel to the membrane. The Slo1 channel and β4 subunits are shown in ribbon representation, and colored red and blue respectively. Green spheres represent the K+ ions in the selectivity filter.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, C, E) Voltage-dependent channel activation of the truncated hsSlo1 (hsSlo1EM) alone (A), co-expressed with the β1 (C) or β4 (E) subunit in the absence of Ca2+. Representative current traces recorded in excised inside-out patch configuration are shown. Voltage protocol: holding potential −80 mV, depolarized from −80 to +120 mV in 10 mV incremental steps, stepping back to −40 mV. Tail currents used to generate activation curves are indicated by an arrow. (B, D, F) Ca2+ titration of the truncated hsSlo1 (hsSlo1EM) alone (B), co-expressed with the β1 (D) or β4 (F) subunit using excised inside-out patch recording. At each Ca2+ concentration, fraction of the maximum tail current at that concentration (n = 7–14; means ± SEM) is plotted against the depolarization voltage and fitted with a two-state Boltzmann function. (G). Plot of half activation voltage (V1/2) from the Boltzmann fitting against [Ca2+] for hsSlo1EM, hsSlo1EM + β1, hsSlo1EM + β4.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative raw micrograph. (B) Selected 2D class averages. (C) Euler angle distribution of particles for the final 3D reconstruction. (D) Fourier shell correlation (FSC) curves between the two half maps before (blue) and after (black) postprocessing. (E) FSC curves between model and half map 1 (red), half map 2 (blue), full map (black). (F) Local resolution of the final reconstruction estimated by Blocres (Cardone et al., 2013).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A, E, I) Euler angle distribution of particles for the final 3D reconstruction of closed hsSlo1 in complex with β4 (A), open hsSlo1 (E), and closed hsSlo1 (I). (B, F, J) Fourier shell correlation (FSC) curves between the two half maps before (blue) and after (black) postprocessing of the closed hsSlo1 in complex with β4 (B), open hsSlo1 (F), and closed hsSlo1 (J). (C, G, K) FSC curves between model and half map 1 (red), half map 2 (blue), full map (black) of the closed hsSlo1 in complex with β4 (C), open hsSlo1 (G), and closed hsSlo1 (K). (D, H, L) Local resolution of the final reconstruction of the closed hsSlo1 in complex with β4 (D), open hsSlo1 (H), and closed hsSlo1 (L), estimated by Blocres (Cardone et al., 2013).
+
+**Table 1.**
+ Structure refinement and validation, related to Figure 1 and Figure 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>hsSlo1 + β4 Open</th>
+      <th>hsSlo1 + β4 Closed</th>
+      <th>hsSlo1 Open</th>
+      <th>hsSlo1 Closed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Microscope/Camera</td>
+      <td colspan="4">Titan Krios/Gatan K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="4">300</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μM)</td>
+      <td>0.7 to 2.0</td>
+      <td>0.7 to 2.0</td>
+      <td>0.8 to 2.4</td>
+      <td>0.8 to 2.4</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.04</td>
+      <td>1.3</td>
+      <td>1.3</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Total electron dose (e-/Å2)</td>
+      <td>74</td>
+      <td>89</td>
+      <td>89</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>10</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td colspan="5">Reconstruction</td>
+    </tr>
+    <tr>
+      <td>Particle number</td>
+      <td>117,791</td>
+      <td>42,842</td>
+      <td>28,073</td>
+      <td>53,961</td>
+    </tr>
+    <tr>
+      <td>Resolution (unmasked, Å)</td>
+      <td>3.7</td>
+      <td>4.0</td>
+      <td>4.2</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked, Å)</td>
+      <td>3.2</td>
+      <td>3.5</td>
+      <td>3.8</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td colspan="5">RMS deviation</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.007</td>
+      <td>0.007</td>
+      <td>0.007</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.801</td>
+      <td>0.946</td>
+      <td>0.950</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.55</td>
+      <td>91.70</td>
+      <td>91.72</td>
+      <td>90.43</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>4.45</td>
+      <td>8.30</td>
+      <td>8.16</td>
+      <td>9.46</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.12</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td colspan="5">MolProbity</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>5.83</td>
+      <td>6.07</td>
+      <td>8.56</td>
+      <td>5.36</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.21</td>
+      <td>0.30</td>
+      <td>1.56</td>
+      <td>0.63</td>
+    </tr>
+  </tbody>
+</table>
 
 The final reconstruction of the Ca2+-bound α-β4 complex is of highest quality compared to the others, with the majority of regions well resolved for model building (Figure 1—figure supplements 2 and 3). The resolution of the density corresponding to the β4 extracellular region was worse than the TM regions (Figure 1—figure supplements 2F and 3). Still we were able to build an essentially complete model of β4 de novo using a subclass from focused-classification (see Materials and methods). Registration of the β4 subunit sequence was confirmed by recognizable large sidechains and the presence of four disulfide bonds as well as sugars attached to the two sequence-predicted and mass-spectrometry-confirmed N-glycosylation sites. The final model has good geometry and contains amino acids 16–54, 91–569, 577–615, 681–833 and 871–1056 of the α subunit and amino acids 7–205 of the β4 subunit (Table 1).
 
 The above atomic model of the Ca2+-bound α-β4 complex was used as a starting model for the other three conformations, followed by multiple rounds of manual rebuilding in Coot and real-space refinement with Phenix (Emsley et al., 2010; Afonine et al., 2018). The final models all have good geometry (Table 1). Due to its highest resolution, the atomic model of the Ca2+-bound α-β4 complex is used for most of the structural description and analysis in this manuscript.
 
-## Quaternary structure of the open human Slo1 α-β4 channel complex
+### Quaternary structure of the open human Slo1 α-β4 channel complex
 
 The human Slo1 α subunit tetramer is organized similarly to acSlo1 (Figure 1B) (Tao et al., 2017). Four of the β4 subunits bind to the human Slo1 tetramer, extending the channel extracellularly by about 40 Å when viewed from the side (Figure 1B). The complex has dimensions of approximately 150×150×150 Å. Consistent with disulfide crosslinking data in the literature, β4 subunits are located between voltage sensor domains (VSDs) and each β4 subunit contacts two neighboring VSDs simultaneously (Figure 1B) (Liu et al., 2008; Wu et al., 2009; Liu et al., 2010; Wu et al., 2013). The 120-amino acid linker between the two TMs (TM1 and TM2) of β4 forms a well-ordered structure on the extracellular side (termed ‘EC domain’ throughout the manuscript). Four EC domains form a ‘crown’ on top of the Slo1 channel (Figure 1B).
 
 The protein sample contained high concentrations of Ca2+ and Mg2+ (10 mM each). As expected, the channel adopts an open conformation and both Ca2+ binding sites (the Ca-RCK1 site and the Ca-bowl site) in the gating ring and the Mg2+ binding site at the interface between RCK1 and the VSD are occupied, as observed in acSlo1 under the same buffer conditions (Tao et al., 2017).
 
-## Structure of the β4 subunit
+### Structure of the β4 subunit
 
 Figure 2A shows a ribbon representation of the β4 subunit monomer in stereo. As predicted from the primary sequence, the β4 subunit contains two long transmembrane helices, TM1 and TM2 (Figure 2A). Density for the N-terminal six amino acids as well as the C-terminal five amino acids (residues 206–210) were not visible in the open Slo1-β4 complex, indicating their structural flexibility. Amino acids 7–11 form a short loop (termed ‘N-loop’) preceding TM1 (Figure 2A). TM1 kinks near the extracellular membrane interface and extends further into the extracellular space about four additional helical turns while TM2 extends beyond the intracellular membrane interface into the cytoplasm (Figure 2A). TM1 and TM2 within the β4 monomer form an extensive interface with mostly hydrophobic interactions (Figure 2B). The extended C-terminal part of TM2 also interacts with the N-loop through a few hydrogen bonds (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig2-v2.jpg)
+
+**Figure 2.:** (A) Stereo view of the β4 subunit monomer in ribbon representation with the extracellular side up. The N-terminal loop (‘N-loop’), TM1, extracellular domain (‘EC’) and TM2 are discretely colored gray, cyan, pink and blue. The gray bars delimit the membrane boundaries. (B) TM1 and TM2 within one β4 subunit interact extensively with each other. TM1 and TM2 are shown as ribbons in stereo view. Residues involved in the interactions are shown in sticks and colored according to atom type. (C) The EC domain of β4 subunit in stereo, viewed parallel to the membrane. The protein is shown as ribbons and colored as in panel (A). Four disulfide bonds and 2 N-glycosylation sugar groups are shown as sticks and colored according to atom type. (D, E) The β4 subunit tetramer in ribbon representation viewed parallel to the membrane (D) or from the extracellular side (E). Interfaces between two neighboring EC domains are highlighted by dotted circles. (F, G) The interface between the EC domain of two neighboring β4 subunits viewed parallel to the membrane (F) or from the extracellular side (G). The two EC domains are colored blue and pink. Sidechains of residues at the interface are shown as sticks and colored according to atom type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sequence alignment of the β subunit family. Secondary structures based on the cryo-EM structure of β4 are represented by ribbons (α helices), arrows (β strands), and lines (loops). Residues of the β4 subunit not modeled in the cryo-EM structure are denoted by dash lines. The four pairs of cysteine residues forming disulfide bonds are highlighted with color pairs. The two N-glycosylation sites are also highlighted in boxes. (B) Sequence alignment of the S0 helix of human Slo1 and human Slo3. Residues involved in Slo1-β4 association either through lipids or directly are highlighted purple and red, respectively. The corresponding residues conserved in Slo3 are underlined. (C) Sequence alignment of the two pore blocking toxins of human Slo1: CTX and IbTX, highlighting the basic residues.
 
 The well-ordered EC domain, which connects TM1 and TM2, contains mostly β strands (βA-βE, βH-βI), two short α helices (αF-αG) and loops in between (Figure 2A and C and Figure 2—figure supplement 1A). The structure is held together by four disulfide bonds (Figure 2C). The β4 EC domain also contains two predicted N-glycosylation sites, with one of them conserved among all the β subunits (Figure 2C and Figure 2—figure supplement 1A). Glycosylation at these two predicted sites were confirmed with tandem ms/ms and extra density near both sites was observed in the final map, most likely representing the sugars. Glycosylation was shown to regulate the sensitivity of Slo1-β4 to iberiotoxin and also modify other biophysical properties of Slo1-β1 (Jin et al., 2002; Hagen and Sanders, 2006). In the open Slo1-β4 model, these two glycosylation sites are located at the outer periphery of the EC domain, far from the β4/β4 or α/β4 interfaces (Figure 2C). Therefore, the structure does not obviously explain the functional effects of these modifications. We note that proteins in this study were expressed using a glycosylation-deficient strain that produces smaller sugar groups. We cannot rule out the possibility that these sugars under physiological conditions might form carbohydrate-carbohydrate or carbohydrate-protein interactions not observed in the current structural model. The secondary structural elements as well as the four disulfide bonds match a recently published NMR structure of the extracellular loop of human β4 (Wang et al., 2018). However, our Slo1-β4 complex structure exhibits a completely different tertiary structure of the EC domain than that proposed on the basis of NMR experiments. Based on a hypothetical Slo1-β4 model constructed from NMR titration and the β4 EC solution structure, N123 on β4 was suggested to be critical for regulating Slo1 gating through interactions with E264 on the turret of the α subunit upon Ca2+ binding (Wang et al., 2018). The distance between sidechains of these two residues was hypothesized to shift from 10.6 Å to 5.5 Å when the channel opens, allowing them to interact. However, these two residues are more than 27 Å apart in our open Slo1-β4 complex structure and remained essentially static in the closed Slo1-β4 complex structure, making any direct interactions very unlikely.
 
@@ -51,7 +216,7 @@ No structural homologs of the EC domain have been reported. A search of the prot
 
 The stoichiometry of α and β subunits was assumed generally to be 1:1. Evidence of sub 1:1 stoichiometry emerged from analysis of co-expression in oocytes (Wang et al., 2002) as well as in native tissues (Solaro et al., 1995; Ding et al., 1998; Kuntamallappanavar et al., 2017). It was proposed that a Slo1 channel can contain zero to four β subunits, with each β subunit incrementally influencing channel gating properties (Wang et al., 2002). In the Slo1-β4 complex structure, β4 binds to the α subunit with 1:1 subunit stoichiometry (i.e. four β4 subunits per tetramer of α subunits) (Figures 1B and 2D–E). The four β4 subunits form extensive interfaces with neighboring EC domains, encompassing a buried area of ~907 Å2/monomer (Figure 2D–G). The protein sample used for EM studies was produced by overexpressing β4, thus we cannot rule out the possibility that a sub 1:1 β:α complex could exist under physiological conditions. However, the structure would predict a more stable conformation upon tetramer formation because the EC domain, which interacts extensively with itself, makes only minimal contact with the α subunit (Figures 1B and 2D–G).
 
-## Chemical nature of interfaces between β4 and α
+### Chemical nature of interfaces between β4 and α
 
 Many biochemical and molecular biological studies have analyzed interactions between Slo1 and β subunits using, for example, disulfide crosslinking and TOXCAT assays (Liu et al., 2008; Wu et al., 2009; Liu et al., 2010; Morera et al., 2012; Wu et al., 2013). TM1 was predicted to be in the vicinity of S1 and S2 on the VSD (Liu et al., 2008; Wu et al., 2009; Liu et al., 2010; Wu et al., 2013) and direct interactions between TM1 of β2 and S1 of the VSD were found using the TOXCAT assay (Morera et al., 2012). In our Slo1-β4 structure, β4 associates with the α subunit almost exclusively through the two TM helices (Figure 3A). The TM1 segment near the outer leaflet of the membrane contacts the transmembrane domain (TMD) from one α subunit (‘α1’) through hydrophobic interactions with sidechains from S1 and the pore helix (PH), while at the same time interacting with sidechains from S6 and the turret of a contiguous α subunit (‘α2’) (Figure 3A–B). Notably, lipid molecules also contribute to these interfaces (Figure 3A–B). The TM1 segment near the inner leaflet acyl chain region mostly contacts S3 of α2 and several ordered lipid molecules through hydrophobic interactions (Figure 3C). The bottom of TM1, near the intracellular membrane interface, makes contacts with multiple regions of the α subunit including the S2-S3 linker and S0 from α2, the S6-RCK1 linker from α1 and phospholipid headgroups through hydrogen bonds (Figure 3C). With the same TOXCAT assay, no direct association with the α subunit was detected for TM2, the EC domain, or the C-terminus of β and it was thus suggested that there are no strong interactions between TM2 and S0 despite the nearness predicted from the disulfide crosslinking experiments (Liu et al., 2008; Wu et al., 2009; Liu et al., 2010; Morera et al., 2012; Wu et al., 2013). Our structure shows that the TM2 outer leaflet segment only interacts with α2. Furthermore, this interface is purely mediated by lipid molecules forming a hydrophobic core with TM2 sidechains (Figure 3A–B). The TM2 inner leaflet segment forms an extensive protein:protein interface with S0 and S3 from α2 (Figure 3A and C). The residues of β4 directly involved in the α/β association turn out to be fairly conserved among β1-β4 (Figure 2—figure supplement 1A). Therefore, it would seem likely that β1-β4 subunits all bind to Slo1 in a similar fashion. Furthermore, Slo1 residues involved in these specific interactions appear to be conserved between Slo1 and Slo3, which would explain why all members of the β subunit family also physically associate with Slo3 (Figure 2—figure supplement 1B) (Yang et al., 2009). We emphasize the general observation that lipid molecules make significant contributions to the α/β interfaces at both the inner and outer membrane leaflets, suggesting they are an integral part of the Slo1 α-β4 channel complex (Figure 3).
 
@@ -63,27 +228,314 @@ In the open α-β4 model, the N-loop preceding TM1 is located adjacent to the S6
 
 Wang et. al. suggested that the EC domain of β1 might interact with the extracellular side of the Slo1 VSD, as mutations in that region caused appreciable changes in Slo1 gating (Gruslova et al., 2012). The Slo1-β4 complex structure shows essentially no direct association between the β4 EC domain and the α subunit. The functional effects they observed from the mutations could be due to indirect effects.
 
-## Influence of β4 N-terminus on Slo1 gating
+### Influence of β4 N-terminus on Slo1 gating
 
 β1 and β4 subunits slow the kinetics of Slo1 activation and deactivation in response to voltage steps (Figure 1—figure supplement 1; Figure 4A). We sought to identify regions of β4 that mediate these rate changes. Guided by the structure, we divided β4 into 10 regions depicted in Figure 4B and described in detail in Materials and methods. Mutants were made by replacing one or more of these 10 regions of β4 mainly with the equivalent sequence from β1 (Figure 4B and Table 2). The β1 sequence – instead of alanine or other substitutions – was used, reasoning this would more likely achieve expression and assembly of a functional complex. Co-expression was carried out in Xenopus oocytes and currents were recorded under two-electrode voltage clamp (TEVC), as shown (Figure 4). Activation and deactivation kinetics were quantified by fitting a single exponential function to the current time course (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig4-v2.jpg)
+
+**Figure 4.:** (A) Voltage-dependent channel activation of the human Slo1 channel alone and co-expressed with the β1 or β4 subunit. Representative current traces recorded using two-electrode voltage clamp (TEVC) are shown. Recording buffer: HEPES 5 mM, KCl 98 mM, CaCl2 0.3 mM, and MgCl2 1 mM. Voltage protocol: holding potential 0 mV, step from −80 to 120 mV in 10 mV incremental steps, step back to 40 mV. A superposition of one single sweep (stepping to 100 mV) from the left three recordings is shown on the right. (B) A schematic drawing of the β4 subunit showing the 10 regions divided based on the atomic structure. (C) Quantification of channel activation and deactivation kinetics by fitting with a single exponential function (see Materials and methods). (D) Comparison of three pairs of mutants demonstrated that the nature of N-tail is correlated with the activation kinetics: the presence of β4 N-tail (left column) results in slower activation kinetics than β1 N-tail (right column). Schematic drawing of each corresponding mutant is shown next to the representative current traces. Voltage protocols are the same as in panel (A).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Bar graphs of the activation time constant (τ_on) (A) and deactivation time constant (τ_off) (B) of all the mutants in an ascending order from left to right. The activation and deactivation time constants were measured at voltage of 100 mV and 40 mV, respectively. Data are represented as mean ± SEM (n = 3–5). α alone (i.e. Slo1), β1 wt and β4 wt are colored dark gray, red and blue respectively. The two dashed lines indicate the time constant value of 50% and 2-fold of β4 wt. Mutants with time constant below 50% of β4 wt are colored light gray; more than 2-fold of β4 wt colored magenta; between 50% and β4 wt colored orange; between β4 wt and 2-fold of that colored cyan. (C) Schematic drawings and representative TEVC recordings of those mutants with significantly slower activation kinetics are shown.
+
+**Table 2.**
+ List of the β4 mutants for TEVC studies, related to Figure 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ShortName</th>
+      <th>β4 sequence</th>
+      <th>β1 sequence</th>
+      <th></th>
+      <th>ShortName</th>
+      <th>β4 sequence</th>
+      <th>β1 sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Slo1</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m27</td>
+      <td>1-10,20-190,206-210</td>
+      <td>10-18,178-191</td>
+    </tr>
+    <tr>
+      <td>β1</td>
+      <td>N/A</td>
+      <td>1-191</td>
+      <td></td>
+      <td>m28</td>
+      <td>11-193</td>
+      <td>1-9,181-191</td>
+    </tr>
+    <tr>
+      <td>β4</td>
+      <td>1-210</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m29</td>
+      <td>11-198</td>
+      <td>1-9,181-186</td>
+    </tr>
+    <tr>
+      <td>m2</td>
+      <td>7-210</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m30</td>
+      <td>49-210</td>
+      <td>1-47</td>
+    </tr>
+    <tr>
+      <td>m3</td>
+      <td>1-205</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m31</td>
+      <td>1-163</td>
+      <td>151-191</td>
+    </tr>
+    <tr>
+      <td>m4</td>
+      <td>10-210</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m32</td>
+      <td>1-10,49-210</td>
+      <td>10-47</td>
+    </tr>
+    <tr>
+      <td>m5</td>
+      <td>14-210</td>
+      <td>1-12</td>
+      <td></td>
+      <td>m33</td>
+      <td>1-163,206-210</td>
+      <td>151-191</td>
+    </tr>
+    <tr>
+      <td>m6</td>
+      <td>1-34,40-210</td>
+      <td>34-38</td>
+      <td></td>
+      <td>m34</td>
+      <td>1-10,49-163</td>
+      <td>10-47,151-191</td>
+    </tr>
+    <tr>
+      <td>m7</td>
+      <td>1-190,197-210</td>
+      <td>178-183</td>
+      <td></td>
+      <td>m35</td>
+      <td>1-28,49-210</td>
+      <td>28-47</td>
+    </tr>
+    <tr>
+      <td>m8</td>
+      <td>1-10,14-210</td>
+      <td>10-12</td>
+      <td></td>
+      <td>m36</td>
+      <td>1-163,181-210</td>
+      <td>151-167</td>
+    </tr>
+    <tr>
+      <td>m9</td>
+      <td>E9A</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m37</td>
+      <td>1-19,30-210</td>
+      <td>19-28</td>
+    </tr>
+    <tr>
+      <td>m10</td>
+      <td>1-18,20-210 (R19C)</td>
+      <td>18</td>
+      <td></td>
+      <td>m38</td>
+      <td>1-180,191-210</td>
+      <td>168-177</td>
+    </tr>
+    <tr>
+      <td>m11</td>
+      <td>R19L</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m39</td>
+      <td>1-10,30-210</td>
+      <td>10-28</td>
+    </tr>
+    <tr>
+      <td>m12</td>
+      <td>E14A</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m40</td>
+      <td>1-180,206-210</td>
+      <td>168-191</td>
+    </tr>
+    <tr>
+      <td>m13</td>
+      <td>1-42,44-210 (A43Y)</td>
+      <td>42</td>
+      <td></td>
+      <td>m41</td>
+      <td>1-10,20-210</td>
+      <td>10-18</td>
+    </tr>
+    <tr>
+      <td>m14</td>
+      <td>1-164,168-210</td>
+      <td>152-154</td>
+      <td></td>
+      <td>m42</td>
+      <td>1-190,206-210</td>
+      <td>178-191</td>
+    </tr>
+    <tr>
+      <td>m16</td>
+      <td>7-205</td>
+      <td>N/A</td>
+      <td></td>
+      <td>m43</td>
+      <td>11-210</td>
+      <td>1-9</td>
+    </tr>
+    <tr>
+      <td>m17</td>
+      <td>1-42,44-164,168-210</td>
+      <td>42,152-154</td>
+      <td></td>
+      <td>m44</td>
+      <td>replace β4EC (49-166) with "GGSGGGSG"</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>m18</td>
+      <td>1-11,13-14,16-18,20-210 (E12R, D15T, R19C)</td>
+      <td>11,14,18</td>
+      <td></td>
+      <td>m45</td>
+      <td>replace β1EC (41-153) with "GGSGGGSG"</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>m19</td>
+      <td>1-48,164-210</td>
+      <td>48-150</td>
+      <td></td>
+      <td>m46</td>
+      <td>replace β1EC (48-153) with "GGSGGGSG"</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>m20</td>
+      <td>1-45,167-210</td>
+      <td>45-153</td>
+      <td></td>
+      <td>m47</td>
+      <td>1-47,151-210</td>
+      <td>49-163</td>
+    </tr>
+    <tr>
+      <td>m21</td>
+      <td>49-163</td>
+      <td>1-47,151-191</td>
+      <td></td>
+      <td>m48</td>
+      <td>1-44,154-210</td>
+      <td>46-166</td>
+    </tr>
+    <tr>
+      <td>m22</td>
+      <td>1-10,49-163,206-210</td>
+      <td>10-47,151-191</td>
+      <td></td>
+      <td>m49</td>
+      <td>1-6,49-210</td>
+      <td>6-47</td>
+    </tr>
+    <tr>
+      <td>m23</td>
+      <td>1-10,49-163,196-210</td>
+      <td>10-47,151-182</td>
+      <td></td>
+      <td>m50</td>
+      <td>1-6,30-210</td>
+      <td>6-28</td>
+    </tr>
+    <tr>
+      <td>m24</td>
+      <td>1-28,49-163,181-210</td>
+      <td>28-47,151-167</td>
+      <td></td>
+      <td>m51</td>
+      <td>1-2,30-210</td>
+      <td>2-28</td>
+    </tr>
+    <tr>
+      <td>m25</td>
+      <td>1-19,30-180,191-210</td>
+      <td>19-28,168-177</td>
+      <td></td>
+      <td>m52</td>
+      <td>1-6,20-210</td>
+      <td>6-18</td>
+    </tr>
+    <tr>
+      <td>m26</td>
+      <td>1-10,30-180,206-210</td>
+      <td>10-28,168-191</td>
+      <td></td>
+      <td>m53</td>
+      <td>1-2,20-210</td>
+      <td>2-18</td>
+    </tr>
+  </tbody>
+</table>
 
 Figure 4—figure supplement 1A shows the plot of activation time constants (τ_on) of wild-type (wt) and all mutants in an ascending order from left to right. Based on their difference from the β4 or β1 wt values, these mutants are subdivided into four categories ranging from τ_on less than one half that of β4 wt (i.e. faster rates) to greater than two times β4 wt (i.e. slower rates). Deactivation time constants (τ_off) were plotted in a similar fashion (Figure 4—figure supplement 1B). Mutants with faster activation rates were distributed throughout the β4 structure, while those with significantly slower activation rates were distributed with some bias towards the inner leaflet region of TM1, the N-loop, and the N-tail (Figure 4—figure supplement 1A and C, Table 2). While mutations affecting τ_on were not strongly correlated with effects on τ_off, those causing the greatest slowing of deactivation also involved the N-terminus of TM1, the N-loop and N-tail (Figure 4—figure supplement 1B and Table 2).
 
 Although not observed in the cryo-EM structure, the N-tail plays a definitive role in determining activation kinetics. Specifically, mutants containing the N-tail of β4 activate more slowly than those with the N-tail of β1. This effect is demonstrated in Figure 4D, which shows the influence of the β4 versus the β1 N-tail independent of mutations elsewhere in the body of the β subunit. The importance of the β subunit N-terminus to gating has already been proposed (Castillo et al., 2015). We also observe that removal of the N-tail results in a modest increase in the rate of activation (Figure 4—figure supplement 1 and Table 2). In the open structure of the Slo1 α-β4 complex, the N-loop of β4 is located next to the S6-RCK1 linker of α. It would seem likely that the close proximity of this N-terminal region, including the N-tail of the β4 subunit, to an important gating region of the α subunit, the S6-RCK1 linker, somehow underlies the effects on activation that we observe.
 
-## Ca2+-induced Pore Opening in the Context of the β4 Subunit
+### Ca2+-induced Pore Opening in the Context of the β4 Subunit
 
 Ca2+ binding to two unique Ca2+ binding sites per α subunit produces protein conformational changes that splay the S6 (inner) helices, causing a wide pathway for ion diffusion to open between the cytoplasm and the transmembrane pore (Figure 5A). The Ca2+ binding sites are located within the cytoplasmic ‘gating ring’, which is centered on the four-fold channel axis just beneath the transmembrane pore (Figures 1B and 5B). When Ca2+ binds, a domain of the gating ring closest to the membrane, called the RCK1 N-lobe, expands away from the channel’s central axis; expansion of all four RCK1 N-lobes, one from each subunit, produces a radial expansion, as shown (Figure 5B). Since the RCK1 N-lobes are connected directly to the S6 helices via the S6-RCK1 linkers, their expansion produces pore opening. Structural details of the Ca2+ binding site reorganization upon Ca2+ binding, RCK1 N-lobe expansion and pore opening observed in human Slo1 are essentially the same as those observed previously in acSlo1 (Hite et al., 2017; Tao et al., 2017). Thus, the intricacies of Ca2+-mediated pore opening are conserved among Slo1 channels from invertebrates to mammals.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig5-v2.jpg)
+
+**Figure 5.:** (A) Ca2+-induced conformational changes in the pore domain of human Slo1-β4 channel complex. Superposition of the pore domain in the absence (red Cα trace) and presence (blue Cα trace) of Ca2+ is shown in stereo. The gating hinge residue G310 on inner helix is labeled. (B) Ca2+-induced conformational changes in the gating ring of human Slo1-β4 channel complex. Superposition of the gating ring (aligning the RCK2 domain) in the absence (red) and presence (blue) of Ca2+ is shown in stereo. The spheres indicate the position of Cα atoms of Gly334 at the beginning of RCK1 domain. Distances between the Cα atoms of Gly334 on opposing RCK1 subunits are labeled. (C) Ca2+ produced essentially no conformational changes in the β4 tetramer. Superposition of the β4 tetramer in the absence (red) and presence (blue) of Ca2+ is shown. (D, E) Ca2+ produced minimal conformational changes in the Slo1-β4 interfaces near the membrane outer leaflet, including the positions of lipid molecules, viewed parallel to membrane (D) or from the extracellular side (E). Superposition of the Slo1-β4 channel complex in the absence (red) and presence (blue) of Ca2+ is shown, aligning the transmembrane domain. For clarity, only one β4 subunit (as ribbons) and the two interacting Slo1 subunits (α1 and α2) (as cylinders) are shown. Lipids at the Slo1 and β4 TM1 outer leaflet interface are shown as sticks. K+ ions in the selectivity filter are show as marine spheres (E). (F) Ca2+-induced conformational changes in the Slo1-β4 interfaces near the membrane inner leaflet. Superposition of the Slo1-β4 channel complex in the absence (red) and presence (blue) of Ca2+ is shown in stereo, viewed parallel to the membrane, aligning the transmembrane domain. Sidechains of the β4 TM1 facing the S6-RCK1 linker as well as the three positively charged residues on S6-RCK1 linker (‘RKK’) are shown as sticks. Lipids at the Slo1 and β4 TM1 inner leaflet interface in the Ca2+-bound state are also shown as sticks. (G) Superposition of the Slo1-β4 channel complex in the absence (red) and presence (blue) of Ca2+ viewed from the intracellular side, aligning the transmembrane domain. Color and representation schemes are the same as in panel (F). Sidechains of the β4 TM1 facing the S6-RCK1 linker as well as the three positively charged residues on S6-RCK1 linker (‘RKK’) are shown as sticks. (H) The same superposition as in panel (G) with lipids at the Slo1 and β4 TM1 inner leaflet interface in the Ca2+-bound state (blue) and Ca2+-free state (red) shown as sticks.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overlay of Ca2+-bound human Slo1 in the absence (red) and presence (black) of β4. (B) Overlay of Ca2+-free human Slo1 in the absence (red ribbon) and presence (black) of β4. (C, D) The Ca-RCK1 site in the absence (C) and presence (D) of β4 in high Ca2+. The protein is shown as ribbons and Ca2+ ion shown as orange sphere. Sidechains as well as mainchains coordinating the Ca2+ ion are shown as sticks and colored according to atom types. (E, F) The Ca-bowl site in the absence (E) and presence (F) of β4 in high Ca2+. The protein is shown as ribbons and Ca2+ ion shown as orange sphere. Sidechains as well as mainchains coordinating the Ca2+ ion are shown as sticks and colored according to atom types.
 
 The Ca2+-bound structures of the human Slo1 α subunit determined in the absence and presence of the β4 subunit are essentially identical to each other (RMSD 2.0 Å) (Figure 5—figure supplement 1A). Likewise, the two Ca2+-free structures of the α subunit (± β4 subunit) are also the same within the accuracy of our measurements (RMSD 1.1 Å) (Figure 5—figure supplement 1B). Contrasting the large Ca2+-mediated conformational changes that occur within the α subunit pore (Figure 5A) and gating ring (Figure 5B) with the absence of conformational change in the β4 subunit (Figure 5C) gives the impression that the β4 subunits encage the α subunit channel without interfering with its Ca2+-mediated gating conformational changes. Within the outer leaflet of the membrane even lipid molecules that mediate interactions between the α and β subunits remain unperturbed (Figure 5D and E). Within the inner leaflet of the membrane, where large gating conformational changes in the α subunit occur (Figure 5A and F–H), interfaces between α and β subunits – especially surrounding the more centrally located TM1 of the β subunit – undergo change. This N-terminal segment of TM1 corresponds to the region where mutations had the largest influence on gating kinetics (Figure 5F–H and Figure 4—figure supplement 1).
 
 In functional studies, β subunits alter the apparent Ca2+ sensitivity of gating. But the sensitivity changes are not thought to reflect changes in intrinsic Ca2+ affinity for the binding sites, but instead are proposed to reflect indirect effects that β subunits have on α subunit conformational changes that are coupled to Ca2+ binding (Cox and Aldrich, 2000; Nimigean and Magleby, 2000; Bao and Cox, 2005; Savalli et al., 2007; Contreras et al., 2012). The structures support this proposal because the Ca2+ binding sites are unaltered by the presence of β subunits (Figure 5—figure supplement 1C–F). This study only determined structures at very low and very high Ca2+ concentrations. Had we determined structures at intermediate Ca2+ concentrations we suspect that we would observe the same closed and open conformations with a distribution accounting for their relative probabilities weighted according to the Ca2+ concentration (Hite and MacKinnon, 2017). We expect that the ‘weighting function’ would be altered by the presence of β subunits. The structural data support the idea that β subunits stabilize or destabilize conformational states of the α subunits rather than creating new states. The RCK1 N-lobe and S6-RCK1 linker region of the α subunit is one likely region where β subunits exert their effects. We also must point out that the structures determined in this study, corresponding to a cycle relating β subunits to Ca2+ binding (Figure 1A), are silent on direct effects that the β subunits could have on different conformations of the voltage sensors. It is very possible that yet unknown structural changes brought about by a transmembrane electric field could alter interactions between β subunits and the voltage sensors of the α subunits. Direct stabilization of different conformations of voltage sensors by β subunits remains a distinct mechanistic possibility (Bao and Cox, 2005; Savalli et al., 2007; Contreras et al., 2012).
 
-## Structural basis for modification of Slo1 toxin sensitivity by β subunits
+### Structural basis for modification of Slo1 toxin sensitivity by β subunits
 
 Certain protein toxins from scorpion venoms inhibit K+ channels by plugging their extracellular pore entryway (Anderson et al., 1988; MacKinnon and Miller, 1988). Our understanding of these toxins’ mechanism of action as pore blockers comes mainly from studies of charybdotoxin (CTX) and Iberiotoxin (IbTX) inhibition of Slo1 channels (Candia et al., 1992; Giangiacomo et al., 1992; Miller, 1995). The large conductance of Slo1 has enabled the measurement of toxin association and dissociation events in single channel recordings (MacKinnon and Miller, 1988). About 30 years ago a Slo1 with altered toxin binding properties was discovered (Reinhart et al., 1989). The altered properties were later attributed to the presence of β4 subunits (Behrens et al., 2000; Brenner et al., 2000; Meera et al., 2000; Weiger et al., 2000; Lippiat et al., 2003). We now know that different β subunits confer unique pharmacological profiles to the Slo1 channel (Behrens et al., 2000; Brenner et al., 2000; Lippiat et al., 2003). Studies with mutant β subunits showed that toxins are most sensitive to the composition of the EC domain (Meera et al., 2000).
 
 The α-β4 structure provides a simple explanation for the general observation that β subunits slow the rates of association and dissociation of toxins with the channel: the EC domain crown limits access to the toxin binding site. Using the crystal structure of CTX bound to the Kv1.2-Kv2.1 paddle chimera channel to model CTX binding to Slo1, we conclude that there is adequate space for toxin binding within the cage beneath the crown, but that CTX has restricted access across the central opening to reach its binding site (Figure 6A–C and Figure 6—figure supplement 1) (Banerjee et al., 2013). The toxin is elongated along one axis and likely has to orient with its long axis parallel to the 4-fold axis to pass through the opening on the top of the crown. Optimal orientation will still require amino acid sidechain adjustments on both the toxin and β subunits to permit passage. Restricted access rationalizes a reduced association rate (compared to a Slo1 channel without β subunits) if the probability of successful encounter is reduced (Schurr, 1970). Analogously, a reduced dissociation rate would reflect a reduced probability of toxin exit. If the toxin releases from its binding site and tumbles within the cage beneath the crown, rebinding many times before finally exiting, the resultant effect would be purely kinetic (the assumption here being that release and rebinding without dissociation from the cage would be too rapid to resolve as dissociation events in channel recordings). If, on the other hand, toxin is stabilized on its binding site by the β subunit, then equilibrium effects (i.e. effects on affinity) would also be expected. Data suggest that both kinetic (i.e. rate changes that could be modeled through a barrier height) and equilibrium effects (i.e. affinity changes that could be modeled through the depth of a toxin binding well) occur (Behrens et al., 2000; Brenner et al., 2000; Meera et al., 2000; Lippiat et al., 2003).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig6-v2.jpg)
+
+**Figure 6.:** (A) CTX docked onto the Slo1 channel based on the crystal structure of the CTX-Kv1.2–2.1 paddle chimera (PDB 4JTA). Only the transmembrane domain of Slo1 is shown (gray surface) and CTX is shown as pink ribbons. Dimensions of CTX in the plane parallel to membrane are indicated. (B) Central conduction pore of the open Slo1-β4 channel complex generated with Hole (Smart et al., 1996). For clarity, only two opposing subunits of Slo1 and β4 are shown (blue and red Cα traces). Pore radius: red,<1.15 Å; green, 1.15 to 2.30 Å; orange,>2.30 Å. (C) Diameter of the central pore. The van der Waals radius is plotted against the distance along the pore axis. (D) The EC domain tetramer of β4 provides potential new toxin binding sites. The EC tetramer is shown as blue ribbons. CTX is shown as pink sticks and ribbons. Potential new CTX binding sites on the EC domain and the corresponding interacting residues on CTX are shown as sticks and colored according to atom type. (E) Electrostatic surface potential of CTX viewed from the extracellular side (‘Top’) or the opposite side (‘Bottom’), calculated with APBS. (F) Negatively charged inner surface of the central pore formed by the EC tetramer of β4 subunits, calculated with APBS. (G, H) Two rings of negatively charged residues E64 and E67 on the EC domain of β4, facing the central pore axis, viewed parallel to the membrane (G) or from the extracellular side (H). EC domains are shown as blue ribbons. Sidechains of E64 and E67 are shown as sticks and colored according to atom type.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51409/elife-51409-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Stereo side view (A) and top view (B) of CTX docked onto the Ca2+-bound hsSlo1-β4 channel complex based on the crystal structure of the CTX-Kv1.2–2.1 paddle chimera (PDB 4JTA). The hsSlo1-β4 channel complex is shown as Cα traces with four subunits colored uniquely. CTX is shown as blue ribbons and surface.
 
 A number of prior experiments and conclusions are consistent with the α-β4 structure. In 1994 Garcia and colleagues demonstrated that K69 on β1 (corresponding to R77 on β4) can be cross-linked to CTX (Knaus et al., 1994a). R77 is located inside the cage formed by the EC domain crown, facing the backside of CTX (i.e. the side opposite the pore’s selectivity filter) (Figure 6D). Scorpion toxins generally are electropositive on their surface: CTX and IbTX contain a total of 8 and 7 positively charged residues, respectively (Figure 6E and Figure 2—figure supplement 1C). Garcia et. al. speculated that certain negatively charged residues within the large extracellular loop of the β subunit attract CTX to its binding site on the α subunit (Hanner et al., 1998). In line with this hypothesis, the inner surface of the cage formed by the EC domain crown is electronegative due to the presence of two rings of negatively charged residues – E64 and E67 (Figure 6F–H). These positions are almost strictly conserved as negatively charged residues (E or D) in β1 to β4 (Figure 2—figure supplement 1A), which would create electrostatic interactions between the toxin and the β subunit. Mutations made on the back side of CTX have little effect on affinity for Slo1 without β subunits (Park and Miller, 1992). The structural model predicts that some of the same CTX mutations are likely to have an effect in the presence of β subunits (Figure 6D).
 
@@ -97,7 +549,321 @@ Another idea we have when looking at the α-β4 Slo1 structure is inspired by th
 
 ## Materials and methods
 
-## Cloning, Expression and Purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hsSlo1 (human_KCNMA1)</td>
+      <td>synthetic</td>
+      <td>accession: Q12791.2 GI: 46396283</td>
+      <td>synthesized at GeneWiz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>hsbeta4 (human_KCNMB4)</td>
+      <td>synthetic</td>
+      <td>accession: NP_055320.4 GI: 26051275</td>
+      <td>synthesized at GeneWiz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>hsbeta1(human_KCNMB1)</td>
+      <td>synthetic</td>
+      <td>accession: Q16558.5 GI: 292495100</td>
+      <td>synthesized at GeneWiz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG BacMam</td>
+      <td>DOI: 10.1038/nprot.2014.173</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM</td>
+      <td>https://www.addgene.org/vector-database/2835/</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td>cells purchased from ATCC and we have now confirmed there is no mycoplasma contamination</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>cells purchased from ATCC and we have now confirmed there is no mycoplasma contamination</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>CRL-1711</td>
+      <td>cells purchased from ATCC and we have now confirmed there is no mycoplasma contamination</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10Bac</td>
+      <td>ThermoFisher</td>
+      <td>10361012</td>
+      <td>MAX Efficiency DH10Bac Competent Cells</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Xenopus laevi)</td>
+      <td>oocyte</td>
+      <td>Xenopus laevi</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Freestyle 293 medium</td>
+      <td>Gibco</td>
+      <td>12338018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sf-900 II SFM medium</td>
+      <td>Gibco</td>
+      <td>10902088</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2-didecylpropane-1,3-bis-β-D-maltopyranoside (LMNG)</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate (CHS)</td>
+      <td>Anatrace</td>
+      <td>CH210</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td>D141</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cellfectin II</td>
+      <td>Invitrogen</td>
+      <td>10362100</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD transfection reagent</td>
+      <td>Promega</td>
+      <td>E2312</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collegenase type II</td>
+      <td>Gibco</td>
+      <td>17107–0125</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamicin sulphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>A0752</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CNBr-activated sepharose beads</td>
+      <td>GE Healthcare</td>
+      <td>17043001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superose 6, 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>17517201</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINE T7 Transcription Kit</td>
+      <td>ThermoFisher</td>
+      <td>AM1344</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AmpliCap-MaxT7 high yield message maker kit</td>
+      <td>CELLSCRIPT</td>
+      <td>C-ACM04037</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>R1.2/1.3 400 mesh Au holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>1210627</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>DOI: 10.1016/j.jsb.2005.07.007</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>DOI: 10.1038/nmeth.4193</td>
+      <td>https://msg.ucsf.edu/software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>DOI: 10.1016/j.jsb.2015.11.003</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>other</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>DOI: 10.1038/nmeth.4169</td>
+      <td>http://www.cryosparc.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3</td>
+      <td>DOI: 10.7554/eLife.18722</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FrealignX</td>
+      <td>DOI: 10.1016/j.jsb.2013.07.005</td>
+      <td>http://grigoriefflab.janelia.org/frealign</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>DOI: 10.1107/S0907444910007493</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>DOI: 10.1107/S2059798318006551</td>
+      <td>https://www.phenix-online.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>DOI: 10.1002/jcc.20084</td>
+      <td>https://www.cgl.ucsf.edu/chimera</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>http://www.pymol.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>DOI: 10.1016/s0263-7855(97)00009-x</td>
+      <td>http://www.holeprogram.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp</td>
+      <td>Axon Instruments, Inc</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, Expression and Purification
 
 HsloM3 (GI: 507922, here referred to as human Slo1 or hsSlo1) was generously provided by Ligia Toro in a pcDNA3 vector and served as the template for subcloning. To improve the biochemical stability of hsSlo1, we excluded the very C-terminal 57 residues at the level of molecular biology. Specifically, a gene fragment encoding residues 1–1056 of hsSlo1 was subcloned into a modified pEG BacMam vector (Goehring et al., 2014). The resulting protein has green fluorescent protein (GFP) and a 1D4 antibody recognition sequence (TETSQVAPA) on the C-terminus, separated by a PreScission protease cleavage site (SNSLEVLFQ/GP). This truncated construct, denoted hsSlo1EM, was used in all the experiments of this manuscript.
 
@@ -111,11 +877,11 @@ The Ca2+-free hsSlo1 protein sample was prepared in a similar fashion with 5 mM 
 
 For confirmative studies of the two predicted N-glycosylation sites on human β4, single and double N2Q mutants were made and confirmed by sequencing (Genewiz). The hsSlo1EM-β4 glycosylation mutants complex were expressed and purified the same as hsSlo1EM-β4 wild-type. The purified proteins were analyzed with tandem mass spectrometry (ms/ms) at the Proteomics Resource Center of the Rockefeller University.
 
-## Cryo-EM grid preparation and imaging
+### Cryo-EM grid preparation and imaging
 
 3.5 μl of purified protein sample was pipetted onto glow-discharged Quantifoil Au 400 mesh, R 1.2/1.3 holey carbon grids (Quantifoil). Grids were blotted for 4 s with a blotting force of 1 and humidity of 100% and flash frozen in liquid-nitrogen-cooled liquid ethane using a FEI Vitrobot Mark IV (FEI). Grids were then transferred to a FEI Titan Krios electron microscope operating at an acceleration voltage of 300 keV. Images were recorded in an automated fashion on a Gatan K2 Summit detector (Gatan) set to super-resolution mode using SerialEM (Mastronarde, 2005). Images of Ca2+-bound (open) hsSlo1-β4 complex were recorded with an energy filter of 20 eV at a super-resolution pixel size of 0.52 Å and defocus range of 0.7 to 2.0 μm, for 10 s with a subframe exposure time of 200 ms in a dose of approximately eight electrons per pixel per second (a total accumulated dose of approximately 74 electrons per Å2 over 50 subframes or approximately 1.5 electrons per Å2 per subframe). Images of Ca2+-free (closed) hsSlo1-β4 complex were recorded at a super-resolution pixel size of 0.65 Å and defocus range of 0.7 to 2.0 μm, for 15 s with a subframe exposure time of 300 ms in a dose of approximately 10 electrons per pixel per second (a total accumulated dose of approximately 89 electrons per Å2 over 50 subframes or approximately 1.78 electrons per Å2 per subframe). Images of Ca2+-bound (open) hsSlo1 and Ca2+-free (closed) hsSlo1 were recorded at a super-resolution pixel size of 0.65 Å and defocus range of 0.8 to 2.4 μm for 15 s with a subframe exposure time of 300 ms in a dose of approximately 10 electrons per pixel per second (a total accumulated dose of approximately 89 electrons per Å2 over 50 subframes or approximately 1.78 electrons per Å2 per subframe).
 
-## Image processing and map calculation
+### Image processing and map calculation
 
 Dose-fractionated super-resolution images were 2×2 down sampled by Fourier cropping for motion correction with Unblur or MotionCorr2 (5×5 patches) (Grant and Grigorieff, 2015; Zheng et al., 2017). The parameters of the contrast transfer function were estimated by ctffind4 or GCTF (Rohou and Grigorieff, 2015; Zhang, 2016). Following motion correction, ~5 k particles from a subset of the images were interactively selected using RELION to generate templates representing different views for automated particle selection with RELION autopicking (Scheres, 2012) or gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/). The autopicked particles were manually inspected to remove false positives. The resulting particle images were then subjected to 2D classification in RELION to remove particles belonging to low-abundance classes and to generate projection averages for initial model generation with EMAN2 imposing C4 symmetry (Tang et al., 2007) or cryoSPARC (Punjani et al., 2017).
 
@@ -127,17 +893,17 @@ For the Ca2+-bound (open) conformation of hsSlo1, ~93 k particle images were se
 
 For the Ca2+-free (closed) conformation of hsSlo1, orientation and translational parameters of ~437 k autopicked particle images from 1292 micrographs were refined with the auto-refine algorithm of RELION using an initial model generated from cryoSPARC (Scheres, 2012; Punjani et al., 2017). The refined particle images were subjected to RELION’s 3D classification algorithm without image alignment, requesting six classes. Orientation and translational parameters for the 54 k particle images in the best class was refined using the auto-refine algorithm of RELION, resulting in a map that achieved a resolution of 4.9 Å before postprocessing. The rotational and translational parameters determined by RELION were used as the input for 40 additional cycles of refinement by FREALIGN, during which the resolution of the reference map used for alignment was limited to 7 Å to minimize over-refinement, resulting in a final map that achieved a resolution of 4.0 Å as assessed by Fourier shell correlation using the 0.143 cut-off criterion (Figure 1—figure supplement 4 and Table 1) (Lyumkis et al., 2013; Grant et al., 2018). The map was sharpened using an isotropic b-factor of −200 Å2 prior to model building and coordinate refinement.
 
-## Model building and refinement
+### Model building and refinement
 
 The transmembrane domain from the cryo-EM structure of open aplysia Slo1 (PDB 5TJ6) and the X-ray crystal structure of the human Slo1 gating-ring (PDB 3MT5) were docked into the cryo-EM density map of the Ca2+-bound Slo1-β4 complex using UCSF Chimera and then manually rebuilt in Coot to fit the density (Pettersen et al., 2004; Emsley et al., 2010). For the β4 subunit, the cryo-EM density map from a focus-classified and refined class was used for initial de novo building. The two transmembrane helices TM1 and TM2 were built by first placing secondary structure elements into the density. Once the backbone was traced, the sequence was registered by the assignment of large sidechains. The extracellular domain of β4 was built by identifying large sidechains, four pairs of disulfide bonds as well as the two N-glycosylation sites. An essentially complete model of β4 subunit was built with the exception of the very N-terminal six residues (aa 1–6) and C-terminal five residues (aa 206–210) for which no density was visible. The Slo1-β4 model after manual rebuilding in Coot was subjected to real-space refinement in Phenix (Afonine et al., 2018). The final model after a few iterations of real-space refinement and manual rebuilding has good geometry and contains amino acids 16–54, 91–569, 577–615, 681–833, and 871–1056 of the α subunit, and amino acids 7–205 of the β4 subunit (Table 1).
 
 The atomic model of the Ca2+-bound (open) Slo1-β4 complex was used as a starting model for the other three states followed by multiple rounds of manual rebuilding in Coot and real-space refinement with Phenix (Emsley et al., 2010; Afonine et al., 2018). The final models all have good geometry (Table 1). Figures were prepared using PyMOL (Molecular Graphics System, Version 2.2.0 Schrodinger, LLC) and Chimera (Pettersen et al., 2004).
 
-## Mutagenesis
+### Mutagenesis
 
 HsSlo1EM, wild-type human β4 and β1 subunits were subcloned into a pGEM vector. Guided by the structure, in particular the relative location of the bound lipid molecules, we divided the entire β4 sequence into 10 regions: 1) the unresolved N-terminus (‘N-tail’, aa 1–6); 2) the short loop preceding TM1 (‘N-loop’, aa 7–12); 3) TM1 near the inner membrane leaflet headgroup layer (‘TM1 ILH’, aa 13–19); 4) TM1 near the inner membrane leaflet acyl chain layer (‘TM1 ILA’, aa 20–29); 5) TM1 near the outer membrane leaflet layer (‘TM1 OL’, aa 30–48); 6) EC domain (aa 49–163); 7) TM2 near the outer membrane leaflet layer (‘TM2 OL’, aa 164–180); 8) TM2 near the inner membrane leaflet acyl chain layer (‘TM2 ILA’, aa 181–190); 9) TM2 near the inner membrane leaflet headgroup layer (‘TM2 ILH’, aa 191–205); and 10) unresolved C-terminus (‘C-tail’, aa 206–210) (Figure 4B). Mutants were made by replacing one or more of these 10 regions of β4 mostly with the equivalent residues from the β1 subunit based on the sequence alignment (Figure 2—figure supplement 1A and Table 2). All the mutants were generated using PCR and incorporation of the mutation(s) was verified by sequencing (GeneWiz).
 
-## Excised Inside-out patch recordings
+### Excised Inside-out patch recordings
 
 The constructs used for cryo-EM sample preparation: hsSlo1EM, wild-type human β4 and β1 in pEG BacMam vector, were used for measuring the Ca2+ sensitivity of the channel in HEK293T cells (ATCC) in voltage-clamp inside-out patch configuration.
 
@@ -147,7 +913,7 @@ Pipettes of borosilicate glass (Sutter Instruments; BF150-86-10) were pulled to�
 
 The bath solution contained 20 mM HEPES-NaOH, 136 mM KGluconate, 4 mM KCl and 10 mM Glucose, pH 7.4 (adjusted with NaOH) with an osmolarity of ~300 Osm/L. The bath solution supplemented with 2 mM MgCl2 was used as the pipette solution. Solutions used for the Ca2+-titration experiments contained the bath solution supplemented with an increasing amount of CaCl2: 0.5 μM, 2.5 μM, 10 μM, 50 μM. Note here the Ca2+ concentrations refer to the amount of Ca2+ added from a stock of CaCl2, not the free [Ca2+]. Ca2+-titration was achieved with local perfusion using a fast-pressurized microperfusion system (ALA Scientific; ALAVC3 × 8 PP). At each Ca2+ concentration, the ionic current was measured with a voltage-family protocol.
 
-## Two-electrode voltage clamp (TEVC) recordings
+### Two-electrode voltage clamp (TEVC) recordings
 
 HsSlo1EM, wild-type human β1, wild-type human β4 and β4 mutants in a pGEM vector were used for expression in Xenopus oocytes. cRNAs were prepared from NdeI linearized plasmids using AmpliCap-Max T7 high yield message maker kit (CELLSCRIPT) and purified with mMESSAGE mMACHINE kit (ThermoFisher Scientific). cRNA concentration was estimated based on agarose gel.
 
@@ -157,10 +923,20 @@ All recordings were performed at room temperature in two-electrode voltage-clamp
 
 Oocytes were recorded with bath solution of either low Ca2+ ND96 recording solution (96 mM NaCl, 2 mM KCl, 0.3 mM CaCl2, 1.0 mM MgCl2, 5 mM HEPES, pH 7.6 with NaOH) or high K recording solution (98 mM KCl, 0.3 mM CaCl2, 1.0 mM MgCl2, 5 mM HEPES, pH 7.6 with NaOH). To investigate voltage-dependent channel activation and deactivation, oocytes were held at either −80 mV for recordings in low Ca2+ ND96 solution or 0 mV for recordings in high K solution, with pulse potential starting from the holding potential and ending between +120 mV and +140 mV in 10 mV increments. The repolarization potential was +40 mV.
 
-## Data analysis
+### Data analysis
 
-For voltage-dependent channel activation recordings at a series of Ca2+ concentrations in excised inside-out patch experiments, the amount of current at the repolarization step (i.e. tail current), typically measured 4–5 ms after the depolarization step when most of the capacitive current had decayed, was normalized against the maximal current (I/Imax) at that concentration and plotted as a function of the depolarization voltage (I-V plot). This voltage-dependent activation plot was fitted with the two-state Boltzmann function:IImax=11+e-ZFRTV-Vmwhere I/Imax is the fraction of the maximal current, V is the depolarization voltage to open the channels, Vm is the voltage at which the channels have reached 50% of their maximal current, F is the Faraday constant, R is the gas constant, T is the absolute temperature, and Z is the apparent valence of voltage dependence.
+For voltage-dependent channel activation recordings at a series of Ca2+ concentrations in excised inside-out patch experiments, the amount of current at the repolarization step (i.e. tail current), typically measured 4–5 ms after the depolarization step when most of the capacitive current had decayed, was normalized against the maximal current (I/Imax) at that concentration and plotted as a function of the depolarization voltage (I-V plot). This voltage-dependent activation plot was fitted with the two-state Boltzmann function:
 
-For the voltage-dependent channel activation recordings made in oocytes with TEVC, the channel activation time course at the depolarization step (100 mV) and the deactivation time course at the repolarization step (40 mV) (typically spanning from 4 to 5 ms after the depolarization step or repolarization step when most of the capacitive current had decayed until the current has reached its steady state) were quantified by fitting with a single exponential function:It=A1-e-tτ+C
+$$
+\frac{I}{I_{max}}=\frac{1}{1+e^{-\frac{ZF}{RT}V-V_{m}}}
+$$
+
+where I/Imax is the fraction of the maximal current, V is the depolarization voltage to open the channels, Vm is the voltage at which the channels have reached 50% of their maximal current, F is the Faraday constant, R is the gas constant, T is the absolute temperature, and Z is the apparent valence of voltage dependence.
+
+For the voltage-dependent channel activation recordings made in oocytes with TEVC, the channel activation time course at the depolarization step (100 mV) and the deactivation time course at the repolarization step (40 mV) (typically spanning from 4 to 5 ms after the depolarization step or repolarization step when most of the capacitive current had decayed until the current has reached its steady state) were quantified by fitting with a single exponential function:
+
+$$
+It=A1-e^{\frac{-t}{\tau}}+C
+$$
 
 All data analysis and fits were carried out with the Clampfit software (Axon Instruments, Inc).

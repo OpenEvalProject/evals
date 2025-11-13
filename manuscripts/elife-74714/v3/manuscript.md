@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01rtyzb94 Department of Biological Sciences, Department of Chemistry and Chemical Biology, Center for Biotechnology and Interdisciplinary Studies, Rensselaer Polytechnic Institute Troy United States
-2. https://ror.org/008rmbt77 Department of Chemistry, Binghamton University Binghamton United States
-3. https://ror.org/0155zta11 Department of Molecular Physiology and Biophysics, Larner College of Medicine, University of Vermont Burlington United States
-4. https://ror.org/0420db125 Laboratory of Cell Biology, The Rockefeller University New York United States
+1. Department of Biological Sciences, Department of Chemistry and Chemical Biology, Center for Biotechnology and Interdisciplinary Studies, Rensselaer Polytechnic Institute Troy United States ([ROR:01rtyzb94](https://ror.org/01rtyzb94))
+2. Department of Chemistry, Binghamton University Binghamton United States ([ROR:008rmbt77](https://ror.org/008rmbt77))
+3. Department of Molecular Physiology and Biophysics, Larner College of Medicine, University of Vermont Burlington United States ([ROR:0155zta11](https://ror.org/0155zta11))
+4. Laboratory of Cell Biology, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
 
 † Corresponding author
 
@@ -31,6 +31,14 @@ Cytoplasmic dynein is the predominant motor responsible for minus-end-directed t
 
 The binding partners for human BicD2 include Nup358 (Splinter et al., 2010), Rab6GTP (Matanis et al., 2002), and nesprin-2G (Gonçalves et al., 2020). Nup358, also known as RanBP2, is a 358 kDa nuclear pore complex protein with multiple functions (Wu et al., 1995). During G2 phase, Nup358 engages in a pathway for positioning of the nucleus relative to the centrosome along microtubules by binding to BicD2, which in turn recruits dynein and dynactin (Figure 1; Splinter et al., 2010). This pathway is essential for apical nuclear migration during differentiation of radial glial progenitor cells, which give rise to the majority of neurons and glia cells of the neocortex (Hu et al., 2013; Baffet et al., 2015). A second nuclear positioning pathway is facilitated by BicD2/dynein and nesprin-2G (Gonçalves et al., 2020), a component of linker of nucleoskeleton and cytoskeleton (LINC) complexes (Fridolfsson et al., 2010), which is important for migration of post-mitotic neurons during brain development (Gonçalves et al., 2020). Apart from its roles in nuclear positioning, BicD2 is also involved in the transport of Golgi-derived and secretory vesicles. In this process, BicD2 and dynein are recruited by the vesicle-associated small GTPase Rab6 (Matanis et al., 2002; Grigoriev et al., 2007). Thus, BicD2 plays important roles in faithful chromosome segregation, neurotransmission at synapses, as well as brain and muscle development (Splinter et al., 2010; Hu et al., 2013; Baffet et al., 2015; Gonçalves et al., 2020; Zhang et al., 2009; Matanis et al., 2002). Mutations in BicD2 cause neuromuscular diseases, including a subset of spinal muscular atrophy cases (Neveling et al., 2013; Peeters et al., 2013; Martinez-Carrera and Wirth, 2015; Tsai et al., 2020; Synofzik et al., 2014), the most common genetic cause of infant death (Meijboom et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig1-v3.jpg)
+
+**Figure 1.:** (a) Nup358 interacts with both BicD2/dynein/dynactin and kinesin-1 (via kinesin-1 light chain 2, KLC2) to mediate bidirectional nuclear positioning in G2 phase of the cell cycle (Splinter et al., 2010; Cai et al., 2001; Cui et al., 2019). This pathway is essential for a fundamental process in brain development that is required for radial glial progenitor cells to differentiate to the majority of neurons and glia cells of the neocortex (Hu et al., 2013). (b, c) Schematic representation of the expression constructs BicD2-CTD (b, red) and Nup358-min (c, blue), in the context of the full-length proteins (gray). (c) KLC2 is recruited to Nup358-min via a W-acidic motif with the sequence LEWD (Cui et al., 2019). The X-ray structures of the TPR domain of the KLC2 (green, referred to as KLC2 hereafter), fused to a LEWD motif (purple) (Pernigo et al., 2013), and the X-ray structure of the BicD2-CTD (red) (Noell et al., 2019) are shown in cartoon representation in (c). The α-helical N-terminal domain of Nup358 (dark gray) promotes anchorage to the nuclear pore complex (NPC). (d) A representative isothermal titration calorimetry (ITC) thermogram of Nup358-min and BicD2-CTD is shown, from which the affinity (dissociation constant KD) was determined to be 1.7 ± 0.9 μM. N: number of sites; ∆S: the change in entropy; ∆H: the change in enthalpy. The experiment was repeated three times. The error of KD was calculated as the standard deviation from three experiments. In Figure 1—figure supplement 1, the affinity of Nup358-min-GST (i.e., with the GST-tag intact) and BicD2-CTD was determined by ITC to be 1.6 ± 1.0 μM. See also Figure 1—source data 1–4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The isothermal titration calorimetry (ITC) thermogram of BicD2-CTD with Nup358-min-GST (i.e., with the GST-tag intact) is shown, from which the affinity was determined to be 1.6 ± 1.0 μM, demonstrating that the GST fusion has a negligible effect on binding. (b) The control ITC thermogram for Figure 1 of Nup358-min (syringe) into the buffer (cell) is shown. Since the titration resulted in a flat line, thermodynamic parameters were not determined. Note that a brief spike is caused by an air bubble. (c) The control ITC thermogram of Nup358-min-GST (syringe) into buffer (cell) is shown. Since the titration resulted in a flat line, thermodynamic parameters were not determined. (d) Secondary structure prediction of Nup358-min created with the PredictProtein Server (Bernhofer et al., 2021; Yachdav et al., 2014). However, this prediction is not accurate for apo Nup358-min as shown by subsequent chemical shift analysis. IDP: intrinsically ordered protein domain.
+
 Within the Nup358 sequence, there are many intrinsically disordered regions (IDRs), which are also commonly found in proteins involved in dynein-dependent transport (Zhu et al., 2017; Celestino et al., 2019; Lee et al., 2020; Henen et al., 2021; Lee et al., 2018). Although IDRs and intrinsically disordered proteins (IDPs) make up ~30% of eukaryotic proteins and have important physiological functions (Ward et al., 2004), they remain the most poorly characterized class of proteins in regards to their structure, dynamics, and interactions. IDRs play important roles in dynein biology. For example, an IDR in the dynein light intermediate chain 1 (LIC1) undergoes a coil-to-α-helix transition when it interacts with the N-terminal domain of BicD2, which is an important step in the activation of dynein for processive motility (Celestino et al., 2019; Lee et al., 2020; Lee et al., 2018). A second, larger interface is formed between the N-terminal coiled coil of BicD2, the dynein tail, and dynactin, which promotes activation of dynein for processive motility (Splinter et al., 2012; Schlager et al., 2014b; McKenney et al., 2014; Urnavicius et al., 2015). Currently, the mechanism of dynein activation by full length BicD2/cargo complexes is not well understood since much of the available information pertaining to dynein activation was derived from studies with isolated BicD2 fragments.
 
 In addition to BicD2, Nup358 also recruits the opposite polarity motor kinesin-1 via the subunit kinesin-1 light chain 2 (KLC2), which binds to a W-acidic motif with the sequence LEWD in Nup358 (Cai et al., 2001; Cui et al., 2019; Dodding et al., 2011). While dynein is the predominant motor in G2 phase, kinesin-1 is also actively involved in nuclear positioning in G2 phase, modulating overall motility (Splinter et al., 2010). Such bidirectional transport is also displayed by mitochondria, endosomes, viruses, phagosomes, secretory vesicles, and many vesicles in neuronal axons and growth cones (Fu and Holzbaur, 2014; Hendricks et al., 2010; Wilson and Holzbaur, 2012; Zhu et al., 2017; Splinter et al., 2010; Bolhy et al., 2011; Morris and Hollenbeck, 1993; Soppina et al., 2009; Encalada et al., 2011; Dharan and Campbell, 2018; Gonçalves et al., 2020). Opposite polarity motors such as BicD2/dynein and kinesin-1 often bind in close spatial proximity to adapter-binding proteins such as Nup358, but it is unknown how their overall motility is regulated, likely because their interactions remain poorly characterized by structural and biophysical methods.
@@ -39,53 +47,249 @@ Here, we have determined the structural properties of the interface of a minimal
 
 ## Results
 
-## ITC establishes a minimal complex for Nup358/BicD2 interaction
+### ITC establishes a minimal complex for Nup358/BicD2 interaction
 
 Previously, we have determined an X-ray structure of the CTD of human BicD2 (BicD2-CTD, residues 715–804), which contains the binding sites for cargoes, including human Nup358 (Figure 1b; Noell et al., 2019). A complex was reconstituted with BicD2-CTD and a minimal fragment of human Nup358 containing residues 2148–2240, which is called Nup358-min (Noell et al., 2019; Cui et al., 2019; Figure 1c). Here, the affinity of the BicD2-CTD towards Nup358-min was determined by isothermal titration calorimetry (ITC) (Figure 1d, Figure 1—figure supplement 1). The ITC thermogram fits well to a one-site-binding model (with a single-equilibrium dissociation constant KD). The number of sites was determined to be N = 1.0, which is consistent with a molar ratio of [Nup358]/[BicD2] of 1. This molar ratio is in agreement with our previously published molar masses obtained from size-exclusion chromatography coupled to multi-angle light scattering (SEC-MALS), which showed that Nup358 and BicD2 form a 2:2 complex (Noell et al., 2018). The one-site-binding model and the 2:2 stoichiometry are in line with Nup358-min binding as a dimer to a single binding site on a BicD2 coiled-coil dimer, although we cannot exclude the possibility that two Nup358 monomers bind to two binding sites on BicD2, where both sites have the same dissociation constant KD. We also attempted to fit models assuming multiple binding sites and KDs, but those are not supported by the ITC thermogram. The equilibrium dissociation constant KD was determined to be 1.7 ± 0.9 μM, in a similar range as observed for other BicD2/cargo complexes as well as to the previously published affinity of 0.4 μM, obtained for BicD2-CTD towards a larger fragment of Nup358 (residues 2006–2443, with the GST-tag intact) (Noell et al., 2018). An ITC titration of Nup358-min-GST (i.e., with the GST-tag intact, whereas the GST was cleaved off in the first experiment) with BicD2-CTD yielded a very similar affinity of 1.6 ± 1.0 μM (Figure 1—figure supplement 1), demonstrating that the GST-tag does not affect the binding affinity. These ITC results confirm the mapped boundaries of the minimal binding site. The ITC analysis finally revealed that the Nup358-BicD2 interaction is driven by a favorable enthalpy change (ΔH = –19.2 ± 0.7 kcal/mol), which overcomes the unfavorable entropy change (ΔS = –38.2 ± 5.8 cal/mol/K).
 
-## The DD-BicD2-Nup358min complex moves processively on microtubules
+### The DD-BicD2-Nup358min complex moves processively on microtubules
 
 Single-molecule reconstitutions were used to determine if the adaptor-binding protein Nup358min can bind and relieve BicD2 autoinhibition, which in turn allows dynein and dynactin (DD) to be recruited and activated for processive motion. Nup358min (N) and full-length BicD2 (B) were labeled with two different color quantum dots (Qdots), and tissue-purified DD was unlabeled (Figure 2a). When dynein, dynactin, BicD2, and Nup358min were all present (DDBNmin), 23% dual-color complexes were observed (Figure 2—figure supplement 1a and c). To increase complex formation, Nup358min was artificially dimerized with a leucine zipper (Nup358min-zip), which increased the number of dual-colored complexes to 35% (Figure 2—figure supplement 1a and b). The rationale for this strategy was based on our previous observation that dimerization of the Drosophila adaptor-binding protein Egalitarian enhanced its affinity for BicD and bypassed the requirement for mRNA cargo for BicD activation (Sladewski et al., 2018). All further single-molecule reconstitutions thus used the dimerized version of Nup358-min (Nup358min-zip) because of its enhanced affinity for BicD2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig2-v3.jpg)
+
+**Figure 2.:** (a) Schematic of a DDBNmin-zip complex bound to a microtubule. BicD2 and Nup358 are shown labeled with two different color quantum dots (Qdot; stars). (b) Representative kymograph of the DDBNmin-zip complex moving processively on microtubules. Nup358min-zip was labeled with a 655 nm Qdot and BicD2 with a 525 nm Qdot. (c) Dynein-dynactin-BicD2 (DDB) complexes bind to microtubules but show very little processive motion. (d) Dynein-dynactin-Nup358min-zip complexes (DDNmin-zip) showed diffusive movement on microtubules. Nup358min-zip was labeled with a 655 nm Qdot. (e) As a control, processive motion of dynein-dynactin in the presence of the N-terminal domain of BicD2 (DDBCC1), with BicD2CC1 labeled with a 525 nm Qdot. (f) Bar graph showing the number of processive events of DDBNmin-zip per min per micrometer microtubule (MT) length. As controls, number of processive events are shown for active DDBCC1, DDB, and DDNmin-zip (g, h) Speed and run length of DDBNmin-zip (yellow) were compared with the constitutively active complex DDBCC1 (green). Speeds for the two complexes are significantly different (p<0.0022, unpaired t-test with Kolmogorov–Smirnov test), as are the run lengths (p<0.0001, Kolmogorov–Smirnov test). See also Figure 2—figure supplement 1. For each panel, data were obtained from three independent experiments and two protein preparations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) A leucine-zippered Nup358 (Nup358min-zip) forms DDBN complex (yellow) at a higher frequency than that of Nup358 monomer (Nup358min) (gray). The percent formation of DDBNmin-zip complex was 35% (n = 945), 50% higher than that of DDBNmin complexes (23%, n = 514). (b, c) Visualization of complex formation of DDBN formed with a dimerized Nup358min-zip versus a monomeric Nup358min. Yellow dots (indicated by white arrows) show the formation of the DDBN complex. Single color green quantum dot (Qdot) indicates BicD2, and red indicates Nup358min-zip. (d) Nup358 min-zip alone does not bind to MTs. Concentration of Nup358min-zip was the same as (b, c).
+
 The dynein-dynactin-BicD2-Nup358min-zip (DDBNmin-zip) complex exhibited robust processive motion on surface-immobilized microtubules (MTs), implying that Nup358min-zip relieves BicD2 autoinhibition to allow dynein activation (Figure 2b, Figure 2—video 1). As controls, DDB was shown to support a few processive events (Figure 2c, Figure 2—video 2), and DDNmin-zip exhibited only diffusive motion (Figure 2d). Nup358min-zip alone does not bind to microtubules (Figure 2—figure supplement 1d), and thus Nup358min-zip shows diffusive MT binding by virtue of an interaction with DD. The number of processively moving DDBN complexes on MTs is ~5.3 times higher than that of DDB complexes (Figure 2f). The speed and run length of all dual-color DDBNmin-zip complexes were analyzed, with the run length obtained from cumulative distribution analysis with a one-phase exponential decay fit, and speed determined from the mean ± standard deviation (SD). The speed and run length of DDBNmin-zip were quantified as 0.42 ± 0.26 µm/s (n = 123) and 3.6 ± 0.07 µm (n = 123), respectively (Figure 2g and h). These motile properties of DDBNmin-zip were compared with that of the DDBCC1 complex (BCC1, the N-terminal coiled-coil 1 domain of BicD2), a well-established fully active complex (McKenney et al., 2014; Sladewski et al., 2018; Figure 2e and f, Figure 2—video 3). The speed and run length of the DDBCC1 complex were 0.53 ± 0.28 µm/s (n = 137) and 4.8 ± 0.14 µm (n = 137), respectively, which are significantly faster (p=0.0022) and longer (p<0.0001 than that of DDBNmin-zip; Figure 2g and h). The number of processive events of DDBNmin-zip on MTs is approximately half that of the active DDBCC1 complex (Figure 2f). Importantly, the directed motion of DDBNmin-zip is very different from the autoinhibited DD complex, which shows only diffusive movement on MTs (Sladewski et al., 2018). The enhanced number of processive events only in the presence of both BicD2 and Nup358min-zip suggests that Nup358min-zip functionally relieves the autoinhibition of BicD2 so that DD can bind and move processively on MTs.
 
-## NMR titration mapped the BicD2-binding site to the N-terminal half of Nup358-min
+### NMR titration mapped the BicD2-binding site to the N-terminal half of Nup358-min
 
 Because our single-molecule processivity assays confirmed that the Nup358-min domain forms a DDBN complex that is activated for processive motility, we characterized the BicD2-binding site on Nup358-min, employing solution NMR, which can provide atomic resolution information for protein interactions in the native solution state. First, backbone assignment of Nup358-min was carried out using standard triple resonance experiments, 3D HNCO (Kay et al., 1990), HNCACO (Clubb et al., 1992), HNCA (Kay et al., 1990), HNCACB (Grzesiek and Bax, 1992), and CBCACONH (Grzesiek and Bax, 2002). 82 of the 89 total backbone amides were assigned in the 1H-15N HSQC (Figure 3—figure supplement 1). Then, 15N-labeled Nup358-min was titrated with unlabeled BicD2-CTD. Figure 3a shows the overlay of the HSQC spectrum of apo Nup358-min with that of the complex, for which 15N-labeled Nup358-min and unlabeled BicD2-CTD were mixed at a 1:1 molar ratio. The HSQC spectrum of the apo Nup358-min is characterized by a lack of dispersion, consistent with an IDP (Figure 1—figure supplement 1, Figure 3—figure supplement 1). Analysis of backbone chemical shifts (CA, CB, CO, N, and HN) of Nup358-min by TALOS-N (Shen and Bax, 2013) conclusively demonstrates that Nup358-min is a random coil in the apo state (Figure 3—figure supplement 3). Although the addition of BicD2-CTD resulted in little peak movement in the HSQC, significant peak intensity changes were observed for the N-terminal half of Nup358-min (Figure 3a and b). This points to a relatively wide binding region undergoing intermediate to slow exchange on the NMR time scale due to ligand binding.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig3-v3.jpg)
+
+**Figure 3.:** NMR mapping of Nup358 regions involved in BicD2-CTD binding was performed by titration of 15N-labeled Nup358-min with BicD2-CTD. (a) The HSQC spectrum of a 1:1 Nup358-min/BicD2-CTD complex (blue) is overlaid on that of apo-Nup358-min (red). The full HSQC assignment is shown in Figure 3—figure supplement 1. Many peaks disappeared in the complex spectrum (selected peaks labeled by residue name and number), indicating that BicD2 binding causes slow to intermediate chemical exchange on the NMR time scale. (b) Plot of the peak intensity change vs. the residue number of Nup358. The peak intensities I, as determined by peak heights, of the 1:1 BicD2-CTD/Nup358-min complex spectrum were divided by the peak intensities of the apo-Nup358 spectrum (I0) to obtain I/I0. Data points with an I/I0 of 0.65 or lower are colored red. This plot shows that the N-terminal half of Nup358-min is largely responsible for BicD2 binding. The peak intensities corresponding to the LEWD sequence motif (colored blue) in Nup358, which mediates binding of KLC2, are not affected by BicD2 binding. For the full titration results, please see Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Inset shows the assignment of peaks in a crowded region.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The titration clearly shows a consistent drop in intensity of the peaks in Nup358 that are in the BicD2-binding region. The Nup358 concentration was held constant at 1, and unlabeled BicD2 was added. The intensity ratio is determined dividing the height of the titrated peak by the height of the Apo peak. Error was estimated based on signal/noise for the first two titration points and based on three repeat measurements for the 1:1 complex.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** TALOS-N, a highly accurate program for determining secondary structure based on chemical shifts, was used to determine the secondary structure of the apo protein. The majority of the protein heavily favors random coil.
+
 The Nup358-min domain also contains the previously published KLC2-binding LEWD motif (Cui et al., 2019), but the BicD2-binding site determined here is separated from the LEWD motif by over 30 residues (Figure 3b). Residues 2192–2240 of Nup358 show little change in NMR signal between the apo sample and the complex (Figure 3b), indicating that the LEWD motif is not involved in BicD2 binding. Therefore, kinesin-1 and the dynein adaptor BicD2 may bind to separate but spatially close binding sites on the cargo Nup358. The proximity of these motor recognition sites may serve to enable the interaction between dynein and kinesin machineries for the regulation of bidirectional motility and precise positioning of the nucleus.
 
-## CEST suggests a coil-to-α-helix transition at the BicD2-Nup358 interface
+### CEST suggests a coil-to-α-helix transition at the BicD2-Nup358 interface
 
 Although our results from the HSQC titrations establish the general region of the BicD2 interface in Nup358, the chemical shifts of the bound state were not obtained due to peak disappearance in the HSQC upon BicD2 addition. To further characterize the BicD2/Nup358 interface with NMR, chemical exchange saturation transfer (CEST) experiments were performed. CEST has recently emerged as a powerful technique in solution NMR for measuring the chemical shifts of NMR invisible states (Vallurupalli et al., 2012; Charlier et al., 2017), such as the BicD2-CTD-bound state of Nup358-min, whose resonances are absent from the 15N-HSQC (Figure 3a and b). In CEST, when the invisible state is saturated by a weak and long radiofrequency (RF) pulse (B1), the saturation of the bound state will be transferred to the free state due to Nup358-min dissociating from the Nup358-min-BicD2 complex, causing a dip in peak intensity when B1 is on resonance with the bound state chemical shift, generating the minor dip in the CEST curve. If the chemical shifts of bound and unbound state are significantly different, which is, for example, the case for interface residues or residues that undergo structural changes upon complex formation, this difference gives rise to a double-dip appearance in the CEST profile (Figure 4c and d). The major dip in the profile will be observed at the chemical shift of the free or unbound state (when the B1 matches the chemical shift of unbound resonance, the ‘visible state’). The second, smaller dip in the profile peak will be observed at the chemical shift of the bound state (due to saturation transfer from the ‘invisible state’). In contrast, residues that are not located at the complex interface or do not undergo structural changes upon complex formation will result in resonances without chemical exchange and the CEST profile will only show a single dip (Figure 4a and b), corresponding to the chemical shift of the unbound state.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig4-v3.jpg)
+
+**Figure 4.:** In the CEST profile curve, E2194 and I2211 have only a single dip in 15N-CEST (a) and 13C′-CEST (b), respectively, due to little chemical shift perturbation upon BicD2-CTD binding. This suggests that E2194 is not at the binding interface and does not undergo conformational transition upon BicD2-CTD binding. In contrast, A2164 shows not only a dip at the chemical shift of the apo HSQC assignment, but also a smaller dip at about 3 ppm to the left in 15N-CEST (c), indicating that A2164 is in the binding region and/or experiences a conformational transition upon complex formation. (d) L2166 has a major peak and then a minor peak about 2.5 ppm to the right. The magnitude and direction of the chemical shift difference suggest a transition from a random coil to an α-helix (see Table 1). (e) Summary of the CEST data obtained across the entire Nup358-min region. Red squares show residues with double dip in CEST profile. Their chemical shift changes from the apo to the bound state indicate that these red residues are part of the α-helical region at the Nup358/BicD2 interface. Blue-colored residues show a single dip in CEST profile, suggesting that these remain in random coil conformation. White represents the residues where data were not obtained due to low signal-to-noise ratio or resonance overlap. All the curves with double dips and a sampling of curves with only single dip fits are shown in Figure 4—figure supplements 1–4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** These CEST profiles have a double-dip appearance, showing the bound state, represented by the minor dip as well as the free state, represented by the major dip. This experiment was repeated under slightly different conditions, one with a molar ratio 10:1 Nup358-min to BicD2-CTD and another one with a ratio of 20:1 Nup358-min to BicD2-CTD. The chemical shift range was also shifted by 2 ppm when the 20:1 ratio experimental was run. For example, one can see the presence of both the minor and major dips in L2184 in the ‘10:1’ experiment as well as the ‘20:1’ experiment, although the major dip do not return to baseline. This truncation was due to limited NMR time, necessitated by the stability of the sample. The 15N CEST curves resulted in the following residues being assigned as part of the α-helical region in bound state: A2163, A2164, K2165, L2166, I2167, K2178, and L2184.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** This experiment was performed using a 20:1 molar ratio of Nup358-min to BicD2-CTD. The following residues, already identified as α-helical residues, using the 15N CEST experiments, were confirmed with 13C′ CEST experiments: A2164, K2165, and L2166. Additionally, the following residues were added to the list of α-helical residues: R2162, R2169, E2171, E2172, L2177, K2181, F2183, and L2184. To fit the global exchange rate, only curves with sufficient signal/noise, significant resolution between the major and minor dips, and curves with sufficient resolution between the minor dip and the end of the curve were used.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** These 15N CEST curves show only a single dip at the major chemical shift, indicating that these sites do not undergo chemical exchange to a bound state. Note that these sites include residues around the LEWD motif as well as sites all the way to the C-terminus of Nup358-min.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Note that these sites include residues around the LEWD motif as well as sites at the C-terminus half of Nup358-min (see Figure 4).
+
+**Table 1.**
+ Chemical shift differences from chemical exchange saturation transfer (CEST) of Nup358/BicD2 and apo-Nup358 (Δδbound-apo) match closely to Δδ for coil-to-α-helix transition (Δδhelix-coil)‡.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Residue</th>
+      <th>Δδbound-apo</th>
+      <th>Δδhelix-coil</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A2163*</td>
+      <td>–3.6</td>
+      <td>–2.2</td>
+    </tr>
+    <tr>
+      <td>A2164*</td>
+      <td>–3.6</td>
+      <td>–2.2</td>
+    </tr>
+    <tr>
+      <td>K2165*</td>
+      <td>–0.8</td>
+      <td>–1.3</td>
+    </tr>
+    <tr>
+      <td>L2166*</td>
+      <td>–3.8</td>
+      <td>–1.9</td>
+    </tr>
+    <tr>
+      <td>I2167*</td>
+      <td>–5.7</td>
+      <td>–1.2</td>
+    </tr>
+    <tr>
+      <td>K2178*</td>
+      <td>–3.6</td>
+      <td>–1.3</td>
+    </tr>
+    <tr>
+      <td>L2184*</td>
+      <td>–5.5</td>
+      <td>–1.9</td>
+    </tr>
+    <tr>
+      <td>R2162†</td>
+      <td>1.7</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>A2164†</td>
+      <td>2.8</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>K2165†</td>
+      <td>2.7</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>L2166†</td>
+      <td>2.6</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>R2169†</td>
+      <td>2.9</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>E2171†</td>
+      <td>2.2</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>E2172†</td>
+      <td>3.0</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>L2177†</td>
+      <td>0.9</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>K2181†</td>
+      <td>3.0</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>F2183†</td>
+      <td>3.3</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>L2184†</td>
+      <td>1.0</td>
+      <td>1.6</td>
+    </tr>
+  </tbody>
+</table>
+
+_See also Appendix 1—table 1.CD spectroscopy confirms formation of an α-helix in Nup358 upon binding to BicD2.*Change in chemical shifts of amide 15N.†Change in chemical shifts of carbonyl 13C.‡Values taken from Wishart, 2011._
 
 We performed CEST experiments on both the 15N amide and the 13C carbonyl (C′) resonances. In 15N CEST NMR experiments, the following residues were identified as interface residues or residues that undergo structural transition because of the double-dip appearance in the CEST profile: A2163, A2164, K2165, L2166, I2167, K2178, and L2184 (Figure 4—figure supplement 1). For these residues, CEST indicates a significant chemical shift difference between their bound and unbound states. Using the program RING NMR Dynamics (Beckwith et al., 2020), the CEST data were fit to obtain chemical shift difference between free and bound state (Δδ), the exchange rate (kex), and the fractional minor population (Pb) (see Table 1, Appendix 1—table 1a and b). The weighted average of the 15N CEST fit parameters resulted in kex = 200 ± 70 s–1, consistent with slow to intermediate exchange (kex < Δω) on an NMR time scale. The weighted average of the minor population (Pb) is 0.04 ± 0.01, which is consistent with our sample preparation at a molar ratio of 1:20 for BicD2-CTD:15N-Nup358-min. Many peaks in the 15N-CEST suffered from low signal-to-noise ratio and resonance overlap common in IDPs, preventing the determination of additional chemical shifts of invisible states. To overcome this problem, we further carried out 13C′-CEST experiments based on HNCO, which correlates amides (HN) with the carbonyl (CO) of the preceding residue. Here, the saturation pulse B1 is on the carbonyl, and the intensity change due to saturation is still reported in an 15N-HSQC-like 2D spectrum. This method provided additional data for residues missed with the 15N CEST due to resonance overlap or low signal-to-noise ratio. For example, the F2183 peak in 15N-1H HSQC was overlapped. However, the L2184 peak, a well-resolved signal with high S/N, showed a CEST effect from the saturation of the F2183 carbonyl in HNCO-based 13C′-CEST. With the 13C HNCO-CEST experiment, we were able to observe minor states in the following residues: R2162, A2164, K2165, L2166, R2169, E2171, E2172, L2177, K2181, F2183, and L2184 (Figure 4—figure supplement 2, Appendix 1—table 1c). Thus, with CEST, we were able to further map the binding region to residues 2162–2184 (Figure 4e). Fitting of HNCO-CEST profiles with RING Dynamics resulted in a global exchange rate of 270 ± 50 s–1, in reasonable agreement with the value of kex from 15N CEST. kex obtained here is much slower in time scale than the rate of coil-to-α-helix transition in model peptides (Wang et al., 2004). This suggests that the kex obtained by CEST include contributions from other events, such as binding and oligomerization, in addition to coil-to-α-helix transition, consistent with similar observations for other binding studies (Charlier et al., 2017). The weighted average of the minor population (Pb) is 0.06 ± 0.01, which is again consistent with the ratio in which we mixed the two proteins for the NMR sample. The 18 CEST profiles with double-dip appearance all resulted in chemical shift changes in the direction and magnitude as expected for a coil-to-α-helix transition (Wishart, 2011) (typically the chemical shift for 15N becomes lower in the helical conformation, and higher for 13C, as shown in Table 1). The CEST results suggest that residues 2162–2184 of Nup358 undergo coil-to-α-helix transition upon binding to BicD2, revealing that BicD2 recognizes Nup358 through a short ‘cargo recognition α-helix,’ which is embedded in an IDP domain.
 
 To provide further evidence for the coil-to-α-helix transition, CD spectroscopy was carried out. The CD wavelength scans of the Nup358-min/BicD2-CTD complex had minima at 208 nm and 222 nm, characteristic for α-helical proteins (Noell et al., 2019; Figure 5). Such minima were absent in the CD spectra of Nup358-min as expected for an IDP. Notably, the minima at 208 and 222 nm were shifted towards more negative values in the complex compared to the sum of the individual spectra of Nup358-min and BicD2-CTD, suggesting that the α-helical content increases upon complex formation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig5-v3.jpg)
+
+**Figure 5.:** CD wavelength scans of BicD2-CTD (red), Nup358-min (blue), and the Nup358-min/BicD2 complex (green) at 4°C are shown. The sum of the individual wavelength scans of Nup358-min and BicD2-CTD is shown in black. The mean residue molar ellipticity [Θ] versus the wavelength is shown. Experiments were repeated two or three times, and representative scans are shown. A characteristic feature of α-helical structures is a local minimum at 222 nm (dashed line). Based on the values for [Θ] at 222 nm (shown on the right) and based on our calibration curve (Figure 5—figure supplement 1), the Nup358/BicD2 complex has a 14% ± 5% increase in α-helical content compared to the sum of the spectra of BicD2 and Nup358. See Figure 5—figure supplement 1 and Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** We previously published the thermal unfolding curve of wild-type BicD2-CTD that was recorded by CD spectroscopy at 222 nm (Figure 4E in reference Noell et al., 2019). Here, this curve was replotted as mean residue molar ellipticity [Θ] versus % protein unfolded to obtain a calibration curve for the α-helical content. 0% and 100% protein unfolded represent the values of [Θ]min and [Θ]max from the melting curve, respectively. At the apparent melting temperature TM, the protein is 50% unfolded. For purposes of calibration, we assume that native, 0% unfolded BicD2-CTD has an α-helical content of 96% as observed in the crystal structure 303030. We also used this method recently to assess changes in α-helical content in the Drosophila homolog BicD (Cui et al., 2020).
+
 To quantify the increase of the α-helical content, we determined the difference between the molar ellipticity at 222 nm of the complex and of the sum of the individual proteins, Δ[Θ], to be –4874 deg cm2/dmol (Figure 5), which corresponds to a 14% ± 5% increase of the α-helical content based on a published thermal unfolding curve of the BicD2-CTD, which was used for calibration (Noell et al., 2019; Figure 5, Figure 5—figure supplement 1, and Cui et al., 2020). We recently determined the experimental error to be ~5% (corresponding to Δ[Θ] of 2930 deg cm2/dmol) (Cui et al., 2020); therefore, we estimate that the α-helical content increases by 14% ± 5% upon Nup358/BicD2 complex formation, confirming a structural transition from a coil to an α-helix.
 
-## The minimal Nup358/BicD2 complex has a rod-like shape that is more compact than the individual proteins
+### The minimal Nup358/BicD2 complex has a rod-like shape that is more compact than the individual proteins
 
 Small-angle X-ray scattering (SAXS) experiments were carried out to obtain a low-resolution structure of the Nup358-min/BicD2-CTD complex. The quality of our SAXS data was confirmed by molar mass calculations: for Nup358-min, we determined a molar mass of 12.3 kDa (Appendix 2—table 1), which matches closely to the calculated mass of a monomer (10.6 kDa). For the Nup358-min/BicD2-CTD complex, we determined a molar mass of 47.6 kDa (Appendix 2—table 1), which matches closely to the expected mass of a Nup358-min/BicD2-CTD complex with a 2:2 stoichiometry (calculated molar mass of 43.0 kDa). These findings are in line with our previously published SEC-MALS data, which suggest that apo Nup358-min forms monomers, while the Nup358/BicD2 complex has a 2:2 stoichiometry (Cui et al., 2019; Noell et al., 2018).
 
 A Kratky plot of the SAXS profiles further confirmed that Nup358-min is intrinsically disordered as the signal increases at high q values instead of approaching zero (Figure 6a). In contrast, the Kratky plots of the BicD2-CTD and the Nup358-min/BicD2-CTD are bell-shaped, suggesting that they are folded (Figure 6a). Thus, Nup358-min becomes more compact upon complex formation with BicD2-CTD, consistent with the coil-to-α-helix transition observed from NMR and CD spectroscopy.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig6-v3.jpg)
+
+**Figure 6.:** (a) Dimensionless Kratky plots of the SAXS data collected from the minimal Nup358/BicD2 complex, from Nup358-min and BicD2-CTD (q: scattering vector; RG: radius of gyration; I(q): scattering intensity). (b) The pair distance distribution function p(r) of the Nup358-min/BicD2-CTD complex was derived from the scattering intensity profile (Figure 6—figure supplement 1). The molecular weight MW (Rambo and Tainer, 2013), the radius of gyration RG from the Guinier plot, and the largest dimension of the particle Dmax are shown. (c) Refined bead model 3D reconstruction of the Nup358-min/BicD2-CTD complex (cyan mesh). The statistical analysis and supporting SAXS data are summarized in Figure 6—figure supplement 1–4 and Appendix 2. See also Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The scattering intensity profile I(q) is shown as a function of the scattering vector (q). (b) The Guinier plot (top panel) is shown together with the normalized residual of the Guinier fit (bottom panel). (c) The pair distance distribution function p(r) is shown (top panel). The middle panel shows the scattering intensity profile calculated from the p(r) function (red) overlaid with the scattering intensity profile of the actual data (blue). The bottom panel shows the normalized residual of the fit. (d) The ‘data’ scattering intensity profile (blue) is overlaid with the ‘model’ scattering intensity profile that was calculated from the refined bead model 3D reconstruction (red, top panel). The bottom panel shows the normalized residual of the fit.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (a) The scattering intensity profile I(q) is shown as a function of the scattering vector (q). (b) The Guinier plot (top panel) is shown together with the normalized residual of the Guinier fit (bottom panel). (c) The pair distance distribution function p(r) is shown (top panel). The middle panel shows the scattering intensity profile calculated from the p(r) function (red) overlaid with the scattering intensity profile of the actual data (blue). The bottom panel shows the normalized residual of the fit.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (a) The scattering intensity profile I(q) is shown as a function of the scattering vector (q). (b) The Guinier plot (top panel) is shown together with the normalized residual of the Guinier fit (bottom panel). (c) The pair distance distribution function p(r) is shown (top panel). The middle panel shows the scattering intensity profile calculated from the p(r) function (red) overlaid with the scattering intensity profile of the actual data (blue). The bottom panel shows the normalized residual of the fit.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** The p(r) functions were derived from the SAXS profiles (Figure 6—figure supplements 1–3) and normalized towards the highest signal.
+
 The pair distance distribution function p(r) derived from the SAXS profile of the Nup358-min/BicD2-CTD complex has a peak that decays with a linear slope, which is characteristic of elongated, rod-like structures (Figure 6b). Since the width of a rod remains similar throughout its length, the sum of all pair distances will have a linear slope. The maximum particle diameter DMax of the complex is 190 Å, which is identical to the DMax that was determined for the BicD2-CTD sample (Appendix 2—table 1), suggesting that the overall length of the rod structure does not change. Bead models of the Nup358-min/BicD2 complex were reconstructed from the p(r) functions and confirm that the complex has a flexible, rod-like structure (Figure 6c). The normalized spatial discrepancy (NSD) is 0.7, suggesting the structural convergence and homogeneity of bead models reconstructed from SAXS profiles (Appendix 2—table 2).
 
 Taken together, these SAXS data suggest that the complex has a 2:2 stoichiometry and is more compact than the apo state, further validating the coil-to-α-helix transition in the Nup358/BicD2 complex.
 
-## Nup358 mutagenesis validates α-helix formation at the Nup358/BicD2 interface
+### Nup358 mutagenesis validates α-helix formation at the Nup358/BicD2 interface
 
 Our CEST, CD, and SAXS data provided strong evidence that residues 2162–2184 of Nup358 undergo a structural transition from random coil-to-α-helix upon complex formation with BicD2.
 
 To confirm our results, we also carried out alanine mutagenesis for all residues of the Nup358 α-helix and assessed binding of the mutated GST-tagged Nup358-min to BicD2-CTD by pull-down assays (Figure 7, Figure 7—figure supplement 1). Eleven mutants displayed diminished binding, which are interspaced throughout the α-helix. An α-helical wheel representation was created, which revealed that these interface residues are clustered on one side of the α-helical wheel (Figure 7c, red). The mutagenesis experiments are consistent with our results from NMR spectroscopy. While interface residues and residues that undergo the transition from coil-to-α-helix will show a chemical shift change, not all residues in the newly formed α-helix in Nup358-min will be at the binding interface; therefore, the mutagenesis data provides additional information. Notably, all interface residues that were identified from mutagenesis (Figure 7d, red) also had a double dip in the CEST profile (Figure 7d, red) or were not assessed (Figure 7d, white). Furthermore, removal of residues 2163–2166 (AAKL) of Nup358-min (ΔAAKL), which had double dips in CEST curves, virtually abolishes the interaction with the BicD2-CTD (Figure 7—figure supplement 1b). We also removed the α-helix from Nup358-min, and as expected, the resulting Nup358-fragment (residues 2185–2240) shows virtually no interaction with the BicD2-CTD (Figure 7—figure supplement 1a, last lane). Finally, we successfully assembled a minimal complex of the BicD2-CTD with a Nup358 fragment (residues 2158–2199) that only contained the BicD2-binding site deduced from NMR, which confirmed our mapped binding site (Figure 7—figure supplement 1c). Furthermore, known BicD2 residues that are important for Nup358 interaction include L746, R747, M749, and R753 (Terawaki et al., 2015), suggesting a potential binding site for the Nup358 α-helix in the center of the BicD2-CTD coiled coil (Figure 7e).
 
-## Nup358-BicD2 interface is essential for dynein activation
+![Figure 7.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig7-v3.jpg)
+
+**Figure 7.:** All residues of the Nup358 α-helix were mutated to alanine, and binding was assessed by GST-pull-down assays with purified Nup358-min-GST followed and BicD2-CTD. The elution fractions were analyzed by SDS-PAGE, and the intensities of the gel bands were quantified to obtain the ratio of bound BicD2-CTD/Nup358-min, normalized respective to the wild-type (Figure 7—figure supplement 1). The binding ratio was averaged from three independent experiments, and the error was calculated as the standard deviation. Eleven interface residues were identified, which are colored red and show a reduction of the binding ratio upon mutation by at least three times the standard deviation. In addition, interface residues were required to have a binding ratio that was reduced by 13% or more compared to the wild-type. Alanine and glycine residues were not assessed and are colored white. Residues for which mutations do not affect binding are colored light blue. (a) The sequence of the predicted Nup358 α–helix is shown above a bar graph of the ratios of bound BicD2 to Nup358 from the alanine mutant pull-down assays (WT = 1, indicated by the horizontal black line). (b) Representative SDS-PAGEs of elution fractions of the pull-down assays. A representative full dataset is shown in Figure 7—figure supplement 1. Note that a small gel band at 25 kDa represents GST. (c) Helical wheel representation for (a). (d) Comparison of helical residues in Nup358-BicD2 complex identified by chemical exchange saturation transfer (CEST) and results from pull-down assay of mutants. Red: CEST-positive (double dip in CEST profile) or strong reduction in binding from the pull-down assay with alanine mutation at this residue; blue: CEST-negative (single dip in CEST profile) or no effect in mutagenesis; white: data not available. (e) The structure of the Hs BicD2-CTD (Noell et al., 2019) is shown in red cartoon representation. Four Nup358/BicD2 interface residues that were previously identified by mutagenesis are shown in cyan spheres representation (Terawaki et al., 2015). See also Figure 7—figure supplement 1 and Figure 7—source data 1–3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** SDS-PAGE analyses of elution fractions of the pull-down assays (see Figure 7) to probe the effect of Nup358 mutants on the interaction with BicD2. The molecular weights and band position of standard proteins are indicated on the left. (a) A representative result is shown for all mutants that were quantified. Experiments were repeated three times. Note that a small gel band at 25 kDa represents GST. (b) Pull-down of BicD2-CTD and mutants of Nup358-min. Left panel: the linear sequence motif TEEE, which is located outside of the cargo recognition helix, was mutated to AAAA, to exclude the possibility that it engages in the interaction. Right panel: the sequence motif AAKL was removed to assess the role of the two alanines for the interaction. All four residues showed large structural changes in CEST. (c) SDS-PAGE analysis of the purified Nup358 (residues 2158–2199)/BicD2-CTD complex. The individually purified proteins were mixed, and the complex was isolated by gel filtration chromatography. (d) SDS-PAGE analyses of purified BicD2-CTD at known protein concentrations. (e) The signals of the protein bands from (c) were quantified, and the intensities of the gel bands were normalized to the 1 mg gel band. The normalized intensities are plotted versus the protein concentration. Note that the curve is linear.
+
+### Nup358-BicD2 interface is essential for dynein activation
 
 Five mutants that showed a reduced Nup358-min/BicD2-CTD interaction in the pull-down assays were selected for further characterization. Single-molecule-binding and processivity assays were used to further explore the impact of Nup358 mutants on dynein recruitment and activation of dynein motility. We assessed the interaction between BicD2 and the following Nup358min-zip mutants: I2167A, M2173A, L2177A, F2180A, and L2184A, in the context of the BNmin-zip and the DDBNmin-zip complex. The following parameters were quantified for WT and mutant Nup358min-zip constructs: (a) the number of single-molecule processive events of DDBNmin-zip on MTs, (b) the percent complex formation with BicD2 alone or with the DDB complex, and (c) the speed and run length of DDBNmin-zip on MTs.
 
 The number of processively moving DDBNmin-zip complexes on MTs was quantified as the number of dual-color Qdots moving per min per micrometer MT length (Figure 8a). The processive events of DDBNmin-zip formed with the Nup358min-zip mutants I2167A, M2173A, F2180A, and L2184A Nup358min-zip were significantly lower than that formed with WT-Nup358min-zip (Figure 8a). DDBNmin-zip formed with the Nup358min-zip-L2177A mutant did not result in a lower number of processively moving complexes, suggesting that there is some plasticity at the Nup358/BicD2 interface.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig8-v3.jpg)
+
+**Figure 8.:** (a) Bar graph of the processive events of DDBNmin-zip complexes per min per micrometer MT length. The number of processive events of DDBNmin-zip complexes formed with WT-Nup358min-zip is significantly higher (p<0.0001) than those formed with the Nup358min-zip mutants I2167A, M2173A, F2180A, and L2184A but the same as with mutant L2177A (orange, p=0.09). The number of processive events of DDBNmin-zip formed with WT-Nup358min-zip was 0.080 ± 0.0017/min/µm MT (n = 3, with n being the number of experiments). In contrast, these values for DDBNmin-zip formed with the Nup358min-zip mutants I2167A, M2173A, L2177A, F2180A, and L2184A were 0.020 ± 0.007/min/µm (n = 2), 0.052 ± 0.006/min/µm (n = 2), 0.072 ± 0.013min/µm (n = 3), 0.044 ± 0.005/min/µm (n = 2), 0.048 ± 0.0023/min/µm (n = 2) respectively. (b) The presence of dynein-dynactin (gray) increases the formation of BicD2-Nup358min-zip complexes (red). The percent formation of BNmin-zip was 14.41% (n = 580) for WT, 3.96% (n = 1142) for I2167A, 5.54% (n = 1877) for M2173A, 10.49% (n = 948) for L2177A, 10.47% (n = 412) for F2180A, and 6.31% (n = 1032) for L2184A Nup358min-zip. N is the total number of quantum dots (Qdots) counted. In contrast, these values for DDBNmin-zip complexes were 34.92% (n = 945), 5.62% (n = 986), 19.61% (n = 347), 21.87% (n = 778), 17.52% (n = 890), and 17.13% (n = 372), respectively. (c) Comparison of the speeds of DDBN complexes formed with WT-Nup358min-zip and mutant Nup358min-zip constructs. The speed of DDBN formed with Nup358min-zip mutants M2173A (0.23 ± 0.13 µm/s, n = 58; blue), L2177A (0.32 ± 0.22 µm/s; n = 86; orange), F2180A (0.25 ± 0.16 µm/s, n = 54; green), and L2184A (0.20 ± 0.13 µm/s, n = 41; purple) are significantly slower than that of DDBN-WT (p<0.0001 for mutants M2173A, F2180A, L2184A and p=0.0058 for L2177A), one-way ANOVA followed by Tukey’s test. (d). The run length of DDBNmin-zip formed with Nup358min-zip-M2173A (1.3 ± 0.07 µm, n = 58), L2177A (2.3 ± 0.08 µm, n = 86), F2180A (1.3 ± 0.07 µm, n = 54), and L2184A (1.5 ± 0.10 µm, n = 41) are significantly shorter than that formed with WT-Nup358min-zip (3.6 ± 0.07 µm; n = 123; data taken from 2 hr) (with p<0.0001 for mutants M2173A, F2180A, L2184A and p=0.0036 for L2177A; one-way ANOVA followed by Tukey’s test). See also Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/74714/elife-74714-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (a–e) Visualization of complex formation of DDBNmin-zip, formed with WT Nup358min-zip and Nup358min-zip mutants I2167A, M2173A, L2177A, and L2184. DDBNmin-zip formed with mutant F2180A is not shown because of its similarity to L2184. Yellow dots (some indicated by arrows) indicate the formation of the DDBNmin-zip complex, but single-color (green or red) quantum dots (Qdots) show individual uncomplexed BicD2 and Nup358min-zip molecules, respectively. (f–j). Visualization of complex formation of BNmin-zip formed with WT Nup358min-zip and Nup358min-zip mutants I2167A, M2173A, L2177A, and L2184.
 
 We next assessed how these Nup358min-zip mutants affected the BicD2-Nup358min-zip (BN) interaction in the absence or presence of DD. BicD2 and WT or mutant Nup358min-zip were labeled with different color Qdots, and the number of dual-color BNmin-zip and DDBNmin-zip complexes nonspecifically bound to a coverslip was quantified using the total internal reflection fluorescence (TIRF) microscopy (Figure 8—figure supplement 1). Nup358min-zip binds BicD2 alone moderately well, and the percentage of BN was reduced further for the Nup358min-zip mutants (Figure 8b, red). We also quantified how the presence of DD influences the BicD2-Nup358min-zip interaction. Strikingly, in the presence of DD, the formation of DDBNmin-zip complexes was about two times higher than the BN complexes (Figure 8b, gray). The mutant Nup358min-zip again showed reduced complex formation relative to WT (Figure 8b, gray). The difference between DDBNmin-zip and BNmin-zip indicates that DD enhances the BicD2-Nup358 interaction.
 
@@ -109,7 +313,7 @@ Nup358-min binds more strongly to the dynein/dynactin/BicD2 complex compared to 
 
 The affinity of the monomeric cargo Nup358-min for BicD2 is enhanced by dimerization by a leucine zipper, similar to what was previously observed for binding of the cargo Egalitarian for Drosophila BicD (Sladewski et al., 2018; McClintock et al., 2018). Thus, it is conceivable that a Nup358-min dimer binds to a BicD2 dimer, which is also in line with our ITC results, which reveal a single KD. While Nup358-min is a monomer on its own, it oligomerizes to form 2:2 complexes with either the BicD2-CTD or the KLC2, and also forms a ternary complex with both BicD2-CTD and KLC2 with 2:2:2 stoichiometry (Cui et al., 2019; Noell et al., 2018). We thus propose that cargo adaptor-induced dimerization may potentially be a universal feature of the activation mechanism since BicD2 and KLC2 both form dimers in active dynein and kinesin-1 motors (McKenney et al., 2014; Urnavicius et al., 2015; Cui et al., 2019; Cockburn et al., 2018). Importantly, NMR titration showed that BicD2 binding has no effect on the NMR signal of the LEWD motif of Nup358 (Figure 3), which can interact directly with KLC2 (Cui et al., 2019). These data further suggest that the Nup358-min domain is potentially capable of recruiting both dynein and kinesin-1 machineries for bidirectional positioning of the nucleus, although this remains to be confirmed in the context of full-length proteins and intact motors. Intriguingly, our NMR data show that the BicD2-binding site is only separated by 30 residues from the LEWD motif that acts as KLC2-binding site. The proximity of these binding sites may play a role in coordinating motility for bidirectional transport (Fu and Holzbaur, 2014; Hendricks et al., 2010; Wilson and Holzbaur, 2012; Splinter et al., 2010; Soppina et al., 2009; Encalada et al., 2011; Zhang et al., 2007; Cui et al., 2019; Belyy et al., 2016; Feng et al., 2020; Roberts et al., 2014; Gross et al., 2003; Derr et al., 2012; Ally et al., 2009; Kendrick et al., 2019; Furuta et al., 2013). Another intriguing possibility is that if kinesin binding dimerizes Nup358, this may be the key initial step leading to BicD2 activation and recruitment of DD to form a bidirectional complex (Figure 9). The ternary Nup358/BicD2/KLC2 complex may be a model for other transport modules, in which opposite polarity motors such as dynein and kinesin-1 act together.
 
-## Conclusion
+### Conclusion
 
 Based on our data, we propose a structural basis for cargo recognition through the dynein adaptor BicD2. Our results establish that BicD2 recognizes its cargo Nup358 through a small ‘cargo recognition α-helix’ that is embedded in an IDR. This region undergoes a structural transition from a random coil to an α-helix upon binding to BicD2. In single-molecule TIRF assays, four single-point mutations within the cargo recognition helix significantly inhibited the interaction between BicD2 and Nup358min-zip, and impaired run length and speed of the mutant DDBNmin-zip complexes on microtubules. Our results may facilitate the identification of regulatory mechanisms for BicD2-dependent transport pathways, which are important for cell cycle control, brain and muscle development, and vesicle transport.
 
@@ -117,40 +321,316 @@ Activation of BicD2 is a key regulatory step for transport as it is required to 
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2(DE3)-pLysS</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 714033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21-DE3-CodonPlus-RIL</td>
+      <td>Fisher scientific</td>
+      <td>Cat#50-125-350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human BicD2-CTD pet28a</td>
+      <td>GenScript Reference Noell et al., 2019doi:10.1021/acs.jpclett.9b01865</td>
+      <td>Sequence encoding residues 715–804 of human BicD2 cloned into a pet28a vector via the NdeI and XhoI restriction sites</td>
+      <td>For the protein sequence expressed from this vector, see ‘Supplementary methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human Nup358-min pGEX-6P-1</td>
+      <td>GenScript ReferenceNoell et al., 2019doi:10.1021/acs.jpclett.9b01865</td>
+      <td>Sequence encoding residues 2148–2240 of human Nup358 cloned into a pGEX-6P-1 vector via the BamHI and XhoI restriction sites</td>
+      <td>For the protein sequence expressed from this vector, see ‘Supplementary methods’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nup358-min-pGEX-6P-1</td>
+      <td>GenScriptThis paper</td>
+      <td>Modified Nup358-min pGEX-6P-1 vector that includes a SNAP-tag at its C-terminal domain</td>
+      <td>For the protein sequence expressed from this vector, see ‘Supplementary methods’This vector can be obtained from Dr. Solmaz’s lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Nup358-min-zip pGEX-6P-1</td>
+      <td>GenScriptThis paper</td>
+      <td>Modified Nup358-min-pGEX-6P-1 vector that includes a leucine zipper that was added at the C-terminus before the snap-tag</td>
+      <td>For the protein sequence expressed from this vector, see ‘Supplementary methods’This vector can be obtained from Dr. Solmaz’s lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human Nup358 (residues 2158–2199) pGEX-6P-1</td>
+      <td>GenScriptThis paper</td>
+      <td>Sequence encoding residues 2158–2199 of human Nup358 cloned into a pGEX-6P-1 vector via the BamHI and XhoI restriction sites</td>
+      <td>Protein overexpression plasmid, which can be obtained from Dr. Solmaz’s lab</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PreScission protease</td>
+      <td>Cytiva</td>
+      <td>Cat# 27084301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant protein</td>
+      <td>Thrombin, human plasma</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 6051951000U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>13C D-Glucose (U-13C6)</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>Cat# CLM-1396-PK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>15NH4Cl</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>Cat# NLM-467-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete EDTA-free Protease Inhibitor Cocktail tablets</td>
+      <td>Roche</td>
+      <td>Cat# 45-5056489001-EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin Student 2018</td>
+      <td>OriginLab</td>
+      <td></td>
+      <td>CD spectroscopy</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin GE Microcal ITC200</td>
+      <td>OriginLab</td>
+      <td></td>
+      <td>ITC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioXTAS RAW software suite (version 2.0.3).</td>
+      <td>Reference Hopkins et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.52v</td>
+      <td>Reference Schneider et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera (version 1.14)</td>
+      <td>Resource for Biocomputing, Visualization, and Informatics at the University of California, San FranciscoReference Pettersen et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coomassie brilliant blue R-250</td>
+      <td>VWR</td>
+      <td>Cat# VWRV0472-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNase Inhibitor</td>
+      <td>Promega</td>
+      <td>N261B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q-dot 525 streptavidin conjugate</td>
+      <td>Invitrogen</td>
+      <td>Q10141MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q-dot 565 streptavidin conjugate</td>
+      <td>Invitrogen</td>
+      <td>Q10131MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q-dot 655 streptavidin conjugate</td>
+      <td>Invitrogen</td>
+      <td>Q10121MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Biotin</td>
+      <td>New England BioLabs</td>
+      <td>S9110S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tubulin protein (X-rhodamine): bovine brain</td>
+      <td>Cytoskeleton, Inc</td>
+      <td>TL620M-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel</td>
+      <td>Cytoskeleton, Inc</td>
+      <td>TXD01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Bicaudal D homolog 2 isoform 2 (Homo sapiens)</td>
+      <td>This paper</td>
+      <td>NCBI:NP_056065.1</td>
+      <td>Protein overexpression plasmid, which can be obtained from Dr. Solmaz’s lab</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bos taurus)</td>
+      <td>Dynein-dynactin</td>
+      <td>Bovine brain</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample(B. taurus)</td>
+      <td>Tubulin</td>
+      <td>Bovine brain</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon ECLIPSE Ti microscope</td>
+      <td>Nikon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon NIS Elements</td>
+      <td>Nikon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Andor EMCCD Camera</td>
+      <td>Andor Technology USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>v7; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-[Methoxy(polyethyleneoxy)propyl]trimethoxysilane</td>
+      <td>J&amp;K Scientific</td>
+      <td>967192</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Butylamine</td>
+      <td>Acros Organics</td>
+      <td>A0344582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Fiji</td>
+      <td>NIH</td>
+      <td>1.53c</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRPipe</td>
+      <td>NIH, reference Delaglio et al., 1995</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRFAM_SPARKY</td>
+      <td>Reference Lee et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Nup358-min and BicD2-CTD were expressed and purified as previously described (Noell et al., 2019; Noell et al., 2018; Cui et al., 2020). For details, see Appendix 3.
 
-## Pull-down assays
+### Pull-down assays
 
 GST-pull-down assays of human Nup358-min-GST and human BicD2-CTD were performed as described (Cui et al., 2020). For details, see Appendix 3.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ITC experiments were performed as previously described (Noell et al., 2018). In brief, protein samples were extensively dialyzed against a buffer containing 150 mM NaCl, 30 mM HEPES pH 7.5, 0.5 mM TCEP, and 1 mM MgCl2. For ITC experiments, BicD2-CTD was placed in the cell of a calorimeter (MicroCal Auto-iTC200, GE Healthcare) and titrated with Nup358-min (either without the GST-tag Figure 1) or with the GST-tag intact (Figure 1—figure supplement 1a) at 25°C. As controls, titrations of Nup358-min (with or without the GST-tag) into buffer were carried out, which resulted in a flat line (Figure 1—figure supplement 1b and c). The corrected ITC curves were analyzed using a nonlinear least-squares minimization method in Origin 7.0 and fitted with the one-site model to determine the number of sites N, the equilibrium binding constant K, the change in entropy ∆S, and the change in enthalpy ∆H. The affinity (dissociation constant Kd) was calculated as the inverse of K. Data was analyzed with the Origin software (OriginLab). For the titration of Nup358-min + BicD2 CTD, the protein concentrations were 0.27 mM (Nup358-min) and 0.019 mM (BicD2-CTD), respectively. For the titration of Nup358-min-GST + BicD2 CTD, the protein concentrations were 0.12 mM (Nup358-min-GST) and 0.013 mM (BicD2-CTD), respectively. Protein concentrations were determined by UV absorbance at 280 nm.
 
-## Nuclear magnetic resonance
+### Nuclear magnetic resonance
 
 HSQC NMR experiments of 15N-labeled Nup358-min were recorded on a 0.2 mM, 440 μl sample with 10% D2O on a Bruker 800 MHz spectrometer equipped with a cryoprobe at 25°C. HSQC was taken on a 1:1 mixture of 15N-Nup358min-BicD2-CTD, where the sample was concentrated to keep the concentration of Nup358-min to 0.2 mM in 20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM TCEP. Backbone assignments were accomplished using standard triple resonance experiments and standard NMR processing analysis tools (Delaglio et al., 1995; Ying et al., 2017; Lee et al., 2009; Lee et al., 2019). For details, see Appendix 3. 15N CEST NMR was initially performed with a 0.6 mM sample and a 10:1 ratio of BicD2-CTD:15N-Nup358-min. The temperature was reduced to 20°C, and the pH was reduced to 6.5 to help improve signal/noise by decreasing the rate of solvent exchange of amide protons. 15N DCEST NMR (Yuwen et al., 2018a; Yuwen et al., 2018b) was performed with the same sample conditions. A second sample with a 20:1 ratio of 15N-Nup358-min:BicD2-CTD was utilized to improve the S/N ratio of the weakest peaks. For both experiments, the 800 MHz spectrometer with cryoprobe was used. For CEST, the saturation pulse was 400 ms at both 10 Hz and 20 Hz. The saturation frequency ranged from 118 ppm (the center of the HSQC spectrum) to 126 ppm in steps of 0.25 ppm in CEST. The second attempt was run from 116 to 124 ppm. The DCEST was performed to cover the whole spectral width for amides, with a 10 Hz saturation and a 700 Hz spectral width, and a 20 Hz saturation pulse with a 600 Hz spectral width. 13C′ HNCO-CEST NMR (Charlier et al., 2017) was performed with a 0.6 mM sample and a 1:20 ratio of BicD2-CTD:Nup358-Min at 20°C and pH of 6.5. For this experiment, a 600 MHz spectrometer with cryoprobe was used to minimize the effect of 13C′ transverse relaxation. The saturation pulse was 300 ms at 10 Hz. The saturation frequency ranged from 170 to 180 ppm in steps of 0.33 ppm. The CEST data were fitted with the program RING NMR Dynamics (Beckwith et al., 2020) and are presented in Appendix 1—table 1.
 
-## CD spectroscopy
+### CD spectroscopy
 
 CD spectroscopy was performed as previously described (Cui et al., 2020). For details, see Appendix 3.
 
-## SAXS experiments
+### SAXS experiments
 
 Nup358-min and BicD2-CTD were purified as described above. The monodispersity of the protein was confirmed by SEC-MALS, which is published (Cui et al., 2019; Noell et al., 2018). Purified Nup358-min and BicD2-CTD were dialyzed against the following buffer: 150 mM NaCl, 20 mM HEPES pH 7.5, 0.5 mM TCEP. The dialysis buffer was used as buffer match for SAXS experiments as well as for dilutions. The following protein concentrations were used: Nup358-min 4 mg/ml, BicD2-CTD 1 mg/ml. To assemble the complex, Nup358-min and BicD2-CTD were mixed in a 1:1 molar ratio and incubated for 30 min on ice, with a final concentration of 1.3 mg BicD2-CTD and 1.3 mg Nup358-min. The affinity of BicD2-CTD towards Nup358-min is 1.7 ± 0.9 μM (Figure 1); therefore, this protein concentration is sufficient for complex formation. To assure monodispersity, SAXS data were collected for at least three protein concentrations for each sample, and we also collected data of a Nup358-min/BicD2-CTD complex that was further purified by gel filtration, with comparable results (data not shown). Prior to data collection, samples were thawed, filtered (pore size 0.2 μm), and centrifuged (30 min, 21,700 × g, 4°C). SAXS data was collected at the beamline 7A1 at the Cornell High Energy Synchrotron Source, with a dual Pilatus 100k detector system (Dectris, Baden, Switzerland), at a single detector position, on July 3, 2019, as described previously (Zhao et al., 2021). Quartz capillary with a path length of 1.6 mm was used as the sample cell (OD = 1.5 mm, wall thickness = 10 μm). For each dataset, 20 frames were collected at 4°C, with 0.1 s exposure times (wavelength = 9.835 keV, beam dimensions = 250 * 250 μm, beam current = 49.9 mA [positrons], beam flux = 2.4 * 1012 photons/s). Most samples showed no detectable radiation damage, which was monitored by averaging 20 frames.
 
 SAXS data were processed with the BioXTAS RAW software suite (version 2.0.3) (Hopkins et al., 2017). To obtain scattering intensity profiles, 20 data frames were reduced to scattering intensity profiles, placed on an absolute scale, averaged, and the scattering intensity profile of the buffer match was subtracted. The data quality was assessed by Guinier plots, molar mass calculations, and dimensionless Kratky plots in BioXTAS RAW (Hopkins et al., 2017; Hajizadeh et al., 2018; Konarev et al., 2003; Mylonas and Svergun, 2007; Trewhella et al., 2017). Pair distance distribution p(r) functions were derived from the scattering intensity profiles by the program GNOM (Svergun, 1992) of the ATSAS 3.0.0-1 software suite (Franke et al., 2017) implemented in RAW (Hopkins et al., 2017). Fifteen bead model 3D reconstructions were performed with the Dammiff program (Franke and Svergun, 2009) implemented in ATSAS/RAW (Hopkins et al., 2017; Franke et al., 2017). The resulting models were aligned, grouped into clusters, averaged, and the average model was refined in Dammiff (Franke and Svergun, 2009; Volkov and Svergun, 2003; Svergun, 1999). Figures of the refined molecular envelopes were created in the program UCSF Chimera (version 1.14)(Pettersen et al., 2004), developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from P41-GM103311. P(r) functions were normalized to the highest signal of each curve.
 
-## Protein expression and purification for single-molecule assays
+### Protein expression and purification for single-molecule assays
 
 Cytoplasmic dynein and dynactin were purified from 300 g bovine brain as described in Bingham et al., 1998, and tubulin was purified from 200 g bovine brain as described in Castoldi and Popov, 2003. Purified dynein was stored at −20°C, and dynactin and tubulin were stored at –80°C, in 10 mM imidazole, pH 7.4, 0.2 M NaCl, 1 mM EGTA, 2 mM DTT, 10 μM Mg ATP, 5 μg/ml leupeptin, 50% glycerol. The N-terminal domain of human BicD2 (BicD2CC1) with a biotin tag at its N-terminus was expressed in bacteria as described (Sladewski et al., 2018). Full-length human wild-type BicD2 was expressed in Sf9 cells as described for Drosophila BicD (Sladewski et al., 2018). The Bradford reagent (Bio-Rad, USA) was used to measure the protein concentration. To create a fluorescently labeled version of Nup358-min, the expression vector described above was modified to include a SNAP-tag for fluorescent labeling at its CTD, which is referred to as Nup358min. Nup358min was expressed and purified with the N-terminal GST-tag intact as described for Nup358-min (Noell et al., 2018; Sckolnick et al., 2013) using the BL21-DE3-CodonPlus-RIL strain for expression. Nup358min was dimerized using a leucin zipper (hereafter called Nup358min-zip); the leucine zipper sequence was added at the C-terminus before the snap-tag. The sequences of these two constructs are shown in Appendix 3. The SNAP tag on Nup358min-zip and Nup358min was biotinylated with SNAP-biotin substrate (New England BioLabs, MA) as described (Sckolnick et al., 2013).
 
-## Single-molecule assay
+### Single-molecule assay
 
 Dynein, dynactin, BicD2, and Nu358min-zip constructs were diluted into high salt buffer (30 mM HEPES pH 7.4, 300 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 20 mM DTT) and clarified for 20 min at 400,000 × g to remove aggregates. To form the dynein-dynactin-BicD2-Nup358min-zip (DDBNmin-zip) complex, BicD2 and Nup358min-zip were mixed with 525 nm and 655 nm streptavidin Qdots (Invitrogen, CA), respectively, at a 1:1 molar ratio in separate tubes and incubated for 15 min on ice. To block excess binding sites on streptavidin Qdots, 5 µM biotin was added to both tubes. Labeled BicD2 and Nup358min-zip were then mixed with preformed DD complex at a molar ratio of 1:1:2:2 (250 nM dynein, 250 nM dynactin, 500 nM BicD2, and 500 nM Nup358min-zip) and incubated on ice for 30 min in motility buffer (30 mM HEPES pH 7.4, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 20 mM DTT). The dynein-dynactin-Nup358min-zip (DDNmin-zip) complex contained Nup358min-zip that was labeled with a 655 nm Qdot. In the dynein-dynactin-BicD2CC1 (DDBCC1) complex, BicD2CC1 was labeled with a 525 nm streptavidin Qdot. The DDBNmin-zip, DDNmin-zip, and DDBCC1 complexes were diluted in motility buffer (30 mM HEPES pH 7.4, 150 mM potassium acetate, 2 mM magnesium acetate, 1 mM EGTA, 2 mM MgATP, 20 mM DTT, 8 mg/ml BSA, 0.5 mg/ml kappa-casein, 0.5% pluronic F68, 10 mM paclitaxel, and an oxygen scavenger system) to a final concentration of 1.25–2.50 nM dynein for observing motion on microtubules. The oxygen-scavenging system consisted of 5.8 mg/ml glucose, 0.045 mg/ml catalase, and 0.067 mg/ml glucose oxidase (Sigma-Aldrich). To analyze the motion of the complexes without any ambiguity, oxygen scavengers were not used in two-color experiments so that the microtubules would photo bleach. Purified tubulin was mixed with rhodamine-labeled tubulin at a molar ratio of 10:1 and polymerized as described (Sladewski et al., 2018). PEGylated glass slides were prepared and coated with 0.3 mg/ml rigor kinesin for microtubule attachment as described (Sladewski et al., 2018). After rinsing 2–3 times with motility buffer to remove excess rigor kinesin, MTs were added. Excess microtubules were removed by rinsing with motility buffer. Then, dynein protein samples were added to the glass surface. Motion of DDBNmin-zip, DDNmin-zip, and DDBCC1 were observed using TIRF microscope as described (Sladewski et al., 2018).
 
-## Microscopy and data analysis
+### Microscopy and data analysis
 
 To detect the motion of Qdot-labeled DDBNmin-zip and DDBCC1 complexes on microtubules, TIRF microscopy was used. The TIRF microscope system is operated by the Nikon NIS Elements software, and single-molecule images were acquired on a Nikon ECLIPSE Ti microscope equipped with objective-type TIRF. The laser lines 488 and 561 nm were used to illuminate 525 nm and 655 nm Qdots and rhodamine-labeled microtubules. Typically, 300–600 frames were captured at 100 or 200 ms intervals (10 or 5 frames/s) using two Andor EMCCD cameras (Andor Technology USA, South Windsor, CT). Individual Qdots were tracked using the ImageJ MtrackJ plugin for run length and speed measurements of single complexes (Meijering et al., 2012). Run length is defined as the total travel distance by individual complexes, and speed was calculated by dividing the run length by the total time. To determine the characteristic run length, data were plotted as 1-cumulative probability distribution (1-CDF) with GraphPad Prism Software and fit to a one-phase exponential decay equation p(x) = Ae-x/λ, where p(x) is the relative frequency, x is the travel distance along a microtubule track, and A is the amplitude. Speed was reported as mean ± SD, and run length reported as mean ± standard error (SE). The number of processive events was calculated by counting the number of moving dual-color Qdots per time per μm microtubule. The number of dual-color Qdots (DDBNmin-zip) was counted on 18–32 microtubules in each case. For measuring the formation of DDBNmin-zip and BNmin-zip complexes containing WT or mutant Nup358min-zip, the number of dual-color and single-color (green or red) Qdots was counted on multiple 512 × 512 pixel fields. The DDBNmin-zip and BNmin-zip complexes were bound to the glass surfaces nonspecifically. The percentage of colocalization was calculated from the total number of dual-color Qdots divided by all dual- and single-color Qdots. Statistical significance for two sets of run length data was determined by the Kolmogorov–Smirnov test, a nonparametric distribution. For speed data comparison, an unpaired t-test was performed. For three or more datasets of run length or speed, statistical significance was calculated using one-way ANOVA followed by Tukey’s post-hoc test. Statistical differences for binding frequency of DDBNmin-zip containing WT or mutant Nup358min-zip were determined by one-way ANOVA followed by Tukey’s post-hoc test.

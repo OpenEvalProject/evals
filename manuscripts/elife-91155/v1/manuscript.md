@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03s7gtk40 Department of Genetics, Leipzig University, Institute for Biology Leipzig Germany
-2. https://ror.org/0546hnb39 Department of Biology, University of Konstanz Konstanz Germany
-3. https://ror.org/0546hnb39 Electron Microscopy Center, University of Konstanz Konstanz Germany
-4. https://ror.org/041nas322 Department of Molecular Brain Physiology and Behavior, LIMES Institute, University of Bonn Bonn Germany
-5. https://ror.org/013meh722 Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom
-6. https://ror.org/01jty7g66 German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig Leipzig Germany
+1. Department of Genetics, Leipzig University, Institute for Biology Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+2. Department of Biology, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+3. Electron Microscopy Center, University of Konstanz Konstanz Germany ([ROR:0546hnb39](https://ror.org/0546hnb39))
+4. Department of Molecular Brain Physiology and Behavior, LIMES Institute, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+5. Department of Physiology, Development and Neuroscience, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+6. German Centre for Integrative Biodiversity Research (iDiv) Halle-Jena-Leipzig Leipzig Germany ([ROR:01jty7g66](https://ror.org/01jty7g66))
 
 † Corresponding author
 
@@ -47,7 +47,7 @@ Another focus of our work was to describe the morphology and ultrastructure of t
 
 Proper classiﬁcation of sensilla requires investigation of their external and internal morphology. However, the ultrastructure of scattered and small insect sensilla, like that of Drosophila larvae, is challenging to investigate. Fortunately, recent advances in EM technique made it possible to image large regions of tissue, like the entire central nervous system of larval (Ohyama et al., 2015; Schlegel et al., 2016; Carreira-Rosario et al., 2018; Miroschnikow et al., 2018; Winding et al., 2022) and adult Drosophila melanogaster (Zheng et al., 2018; Scheffer et al., 2020; Schlegel et al., 2023), Caenorhabditis elegans (White et al., 1986; Cook et al., 2019), Ciona intestinalis (Ryan et al., 2016), and the larva of Platynereis dumerilii (Verasztó et al., 2020), as well as parts of the brain of Pristionchus pacificus (Bumbarger et al., 2013; Hong et al., 2019) and rodents (Denk and Horstmann, 2004; Helmstaedter et al., 2013; Motta et al., 2019). In this data, we reconstructed the external sensory sensilla in a full body first instar EM volume (Peale et al., 2024; Schoofs et al., 2024) and in volumes of single sensilla of third instar larvae obtained by FIB-SEM. For single sensilla imaging, accuracy and precision are required which are often difficult to realize technically. In order to achieve these technical demands, we took advantage of FIB-SEM in combination with an optimized preparation protocol. This allowed us to exactly target even the smallest sensilla on the larval body wall for subsequent serial slicing and imaging by FIB-SEM.
 
-## Structural organization of Drosophila larvae
+### Structural organization of Drosophila larvae
 
 The body of Drosophila larvae is divided into segments (Figure 1A): a pseudocephalon (Pce, from now on called ‘head,’ Figure 1A’), three thoracic (T1-T3) and nine abdominal (A1-A9) segments (Campos-Ortega and Hartenstein, 1997). The head is the strongly reduced head capsule of the larva, dorsally fused with and partially retracted in the prothorax (Courtney et al., 2000; Wipfler et al., 2013). The last abdominal segment, A8, is more appropriately named ‘anal division’ as it is formed by the fusion of at least two abdominal segments A8 and A9 (Figure 1A’’).
 
@@ -60,6 +60,14 @@ The largest sense organs of Drosophila larvae are arranged in pairs on the right
 ![Figure 2.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig2-v1.jpg)
 
 **Figure 2.:** (A) 3D reconstruction of a representative dorsal organ of a first instar (L1) larva highlighting its position at the larval body (top) and its cell type organization. Color scheme: yellow- olfactory receptor neuron (ORN); –purple – chordotonal organ (ChO); blue – DOp3/5/6 cooling cell; orange – DOp3/5/6 warming cell; turquoise – DOp1/2/4 mechanosensory cell; red – DOp2/4 unknown sensory cell. Color code in (A) applies to all micrographs in Figures 2—6 (B) SEM image depicting the outer morphology of the dorsal organ in a third instar (L3) larva. The dome is covered by multiple tiny perforations (pf). Three of the seven molting pores, which are traces of ecdysis, are visible. (C) Reconstruction of the peripheral and olfactory sensilla of the dorsal organ (DO) from their sensory tip to their cell body in the dorsal organ ganglion (DOG). (D) L3: Cross-section of the dome with tiny perforations and molting pores. The olfactory triplets are still visible, but dendritic branching is already present at this level. (E) L1: longitudinal section of the dome with tiny perforations but absent molting pores, as ecdysis has not occurred yet. The olfactory dendrites are branched and spread throughout the dome. (F) L3: ganglion of the dorsal organ, showing exemplary peripheral (p) and olfactory (asterisks) cell bodies (G) L1: ganglion of the dorsal organ, showing exemplary peripheral (p) and olfactory (asterisks) cell bodies. Scale bars: (B) 2 μm; (D) 5 μm; (E) 2 μm; (F) 5 μm; (G) 10 μm. Abbreviations: d - dendritic branches; mp - molting pores; p –peripheral cell bodies; pf – perforations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig3-v1.jpg)
+
+**Figure 3.:** (A) 3D reconstruction of a dorsal organ of a first instar (L1) larva showing its position at the larval body (top) and one exemplary triplet of olfactory receptor neurons (ORNs) (yellow, bottom). The color code in A applies to all micrographs in this figure. (B) L1: A longitudinal section through the base of the dorsal organ showing seven olfactory triplets bathed in the outer sensillum lymph (osl). Peripheral sensilla (DOp) 1, 2, and 6 are visible (C) L3: A cross-section through the base of the dorsal organ showing seven olfactory triplets and all peripheral sensilla 1–6. (D) L1: olfactory triplet at the level of the inner sensillum lymph (isl) cavity. (E) L3: olfactory triplets further proximal than in C. (F) L1: dendritic inner segments of the olfactory triplet bathed in the isl. The thecogen support cell is highly lamellated (lm). (G) L1: longitudinal section through an olfactory sensillum from dendritic branching (b) in the dome through osl where the dendrite is enclosed by a dendritic sheath (ds) to the ciliary constriction (cc) at the transition from the outer to the inner dendritic segment inside the isl cavity. Scale bars: (B) 2 μm; (C) 5 μm; (D) 1 μm; (E) 5 μm; (F) 1 μm; (G) 5 μm. Abbreviations: DOp1-p6 – peripheral sensilla 1–6; b – (dendritic) branching; cc - ciliary constriction; d - dendrite; ds - dendritic sheath; inner sensillum lymph – isl; lc - lymph cavity; lm – lamellation; osl – outer sensillum lymph; ORN – olfactory receptor neuron.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The terminal organ (TO) and the dorsal organ (DO) are visible. Numbers define the peripheral DO sensilla which lie in a circle around the dome structure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig4-v1.jpg)
 
@@ -85,11 +93,263 @@ The largest sense organs of Drosophila larvae are arranged in pairs on the right
 
 **Figure 9.:** (A) 3D reconstruction of the labial organ of a first instar (L1) larva (bottom). The outline shows the position of this organ on the larval head (top). (B, C, D) (FIB)-SEM images of third instar (L3) larvae; (E, F, G, H) section scanning transmission electron microscopy (ssTEM) images of L1 larvae. The color code in A applies to all micrographs in this figure. (B) Scanning electron microscopy (SEM) image of the lower larval head with left and right labial organ (LO). (C) SEM image of the LO in an L3 larva. The LO is composed of two sensilla, here named LO1 and LO2. LO1 forms a pore in the center of a small socket on the bottom of a cylindrical cuticle depression. LO2 protrudes peg-shaped from the cuticle; its outer cuticle structure appears rough. (D) Cross-section through the base of LO1 and LO2. Here, putative molting pores (mp) are visible. LO2 is enclosed by a socket septum (ss). (E) Cross-section of the base of LO1 and LO2. LO1 contains a tubular body and is enclosed by a dendritic sheath. The knob of LO2 is mainly formed by the epicuticle and partially by the exocuticle at the base (asterisk). (F) Cross-section proximal of (E). LO1 and LO2 are enclosed by a dendritic sheath. In LO2, the tubular body is visible. The whole knob-shaped structure is held in place by the socket septum. (G) Cross-section proximal of (F). Dendrite of LO1 has entered the inner sensillum lymph (isl) cavity. The ciliary constriction (cc) is visible at the transition between the inner and outer segments. LO2 is still enclosed by the dendritic sheath. (H) Cross-section through the labial organ showing the enveloping support cells. (I) Schematic drawing of (H): The dendrites are surrounded by their sensillar support cells, the thecogen (which forms the dendritic sheath), the trichogen, and the tormogen cell. Scale bars: (B) 10 μm; (C) 1 μm; (D) 1 μm; (E) 1 μm; (F) 1 μm; (G) 1 μm; (H) 2 μm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; mp – molting pore; ss - socket septum; tb - tubular body.
 
+**Table 1.**
+ Summary of morphological features of head sensory organs of third instar Drosophila larvae.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sensillum</th>
+      <th>External Structure</th>
+      <th>Pores</th>
+      <th>Dendrites</th>
+      <th>Hypothesized function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>dome</td>
+      <td>round, dome-shaped cuticle shaft</td>
+      <td>multiple pores</td>
+      <td rowspan="2">21 arranged in seven triplets one with a tubular body</td>
+      <td>olfaction</td>
+    </tr>
+    <tr>
+      <td>DOp1</td>
+      <td>cuticle bulge with pore in center at dome-base</td>
+      <td>terminal pore (molting)</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>DOp2, DOp4</td>
+      <td>cuticle bulge with pore in center at dome-base</td>
+      <td>terminal pore (molting)</td>
+      <td>two; one with a tubular body</td>
+      <td rowspan="2">mechanosensation + unknown thermosensation</td>
+    </tr>
+    <tr>
+      <td>DOp3, DOp5, DOp6</td>
+      <td>cuticle bulge with pore in center at dome-base</td>
+      <td>terminal pore (molting)</td>
+      <td>two; ‘dendritic bulbs’</td>
+    </tr>
+    <tr>
+      <td>VO*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VO1</td>
+      <td>shallow dome</td>
+      <td>terminal pore (molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>VO2</td>
+      <td>steep pore in cuticle surface</td>
+      <td>terminsal pore</td>
+      <td>two</td>
+      <td>contact chemosensation</td>
+    </tr>
+    <tr>
+      <td>VO3, VO4</td>
+      <td>steep pore in cuticle surface</td>
+      <td>terminal pore (molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>LO</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LO1</td>
+      <td>cuticle cavity with pore in center</td>
+      <td>terminal pore (molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>LO2</td>
+      <td>peg-shaped shaft, rough surface</td>
+      <td>basal pore (molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>TO†</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P1/3</td>
+      <td>bud-shaped shaft with pore in the center</td>
+      <td>terminal pore</td>
+      <td>three; one with a tubular body</td>
+      <td>gustation + mechanosensation</td>
+    </tr>
+    <tr>
+      <td>P2</td>
+      <td>bud-shaped shaft with pore in the center</td>
+      <td>terminal pore</td>
+      <td>five; one with a tubular body</td>
+      <td>gustation + mechanosensation</td>
+    </tr>
+    <tr>
+      <td>Pdo</td>
+      <td>bud-shaped shaft with pore in the center</td>
+      <td>terminal pore</td>
+      <td>three</td>
+      <td>gustation</td>
+    </tr>
+    <tr>
+      <td>Pmod</td>
+      <td>bud-shaped shaft</td>
+      <td>lateral pore (molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>T1/5</td>
+      <td>cuticle cavity with pore in center</td>
+      <td>terminal pore</td>
+      <td>three; one with a tubular body</td>
+      <td>gustation + mechanosensation</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>cuticle cavity with pore in center</td>
+      <td>terminal pore</td>
+      <td>four</td>
+      <td>gustation</td>
+    </tr>
+    <tr>
+      <td>T3/4</td>
+      <td>cuticle cavity with pore in center</td>
+      <td>terminal pore</td>
+      <td>two</td>
+      <td>gustation</td>
+    </tr>
+    <tr>
+      <td>Sdi/do</td>
+      <td>pore in cuticle</td>
+      <td>terminal pore(molting)</td>
+      <td>one with a tubular body</td>
+      <td>mechanosensation</td>
+    </tr>
+    <tr>
+      <td>K1</td>
+      <td>knob-shaped shaft</td>
+      <td>lateral pore (molting)</td>
+      <td>one</td>
+      <td>chemosensation (oxygen)</td>
+    </tr>
+    <tr>
+      <td>K2</td>
+      <td>knob-shaped shaft</td>
+      <td>lateral pore (molting)</td>
+      <td>one (slightly lammelated)</td>
+      <td>osmosensation + chemosensation (oxygen)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Singh and Singh, 1984 report the VO to consist of five sensilla.†adopted from Rist and Thum, 2017._
+
 Sensory organs located on the thoracic and abdominal segments are of simpler organization mostly consisting of only one sensillum (Figure 1B). Different names have been given to these sensilla (Table 2). In the present work, we identified three basic types of thoracic and abdominal sensilla and refer to them as papilla (p), hair (h), and knob (k) sensilla (Figures 1 and 2, Figures 10—13, Table 2). This nomenclature corresponds to the one of Dambly-Chaudière and Ghysen, 1986, which is most consistent with our findings. Please note that we have translated their term ‘kölbchen sensilla’ into English as ‘knob sensilla.’ The term knob or knob-in-pit sensillum was already used in previous studies (Singh and Singh, 1984; Rist and Thum, 2017; Singh, 1997). It allows us to use the same abbreviation (e.g. vk for ventral knob sensillum), which also allows for comparison with these studies. We are aware that the term papilla sensilla is questionable, as the outer and inner morphology resembles the one of the spot sensilla we found in the TO in our previous work (Rist and Thum, 2017). The term papilla sensilla is based on findings in light microscope data and does not describe the outer morphology appropriately. Nevertheless, renaming these sensilla would be inconvenient for the comprehension and comparability with already published data and would make it necessary to use different abbreviations.
+
+**Table 2.**
+ Summary of morphological findings of this study for sensilla of thoracic and abdominal segments of first (L1) and third (L3) instar larvae.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sensillum</th>
+      <th>Number, location(per hemisegment)</th>
+      <th>External structure</th>
+      <th>Pores</th>
+      <th>Dendrites</th>
+      <th>Hypothesized function</th>
+      <th>Other names / classifications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hair sensillum (h)singledouble</td>
+      <td>total: 4127T1-3: 3 dorsal and lateralA1-7: 2 lateralA8: 4 at t1-2, t4, t67×2 hairsA1-7: 1 dorsal</td>
+      <td>hair-shaped smooth cuticle shaft, different sizes: short, intermediate,long; shaft might be bifurcatedlong, no bifurcation short and long; no bifurcation</td>
+      <td>L1: noneL3: basal pore (molting)</td>
+      <td>one: terminates at base shaft with tb h3: two, one with and one w/o tb h4: one with tb</td>
+      <td>mechanosensation mechanosensation unknown function mechanosensation</td>
+      <td>hair-types C, D, E Kankel, 1980 trichoid Dambly-Chaudière and Ghysen, 1986; Green and Hartenstein, 1997; Hartenstein, 1988</td>
+    </tr>
+    <tr>
+      <td>knob sensillum (k)</td>
+      <td>total: 11T1: 2, one dorsal; one ventralT2-3: 2, one lateral, one ventralA8/9: 5 at t1-3, t5, t7</td>
+      <td>knob-shaped cuticle shaft in cavity; smooth surfacelong; shaft protrudes out of cavity; smooth surface</td>
+      <td>L1: noneL3: basal pore (molting)</td>
+      <td>T1-3: three: one innervates peg, one at base with tb, one at base w/o tbA8/9: three or two (one w/o tb is missing)</td>
+      <td>chemosensation(oxygen) mechanosensation unknown function</td>
+      <td>koelbchen Dambly-Chaudière and Ghysen, 1986; Hertweck, 1931 knob-in-pit Singh and Singh, 1984 hair-type B Kankel, 1980 basiconic Hartenstein, 1988 sensory papillae Sato and Denell, 1985 dorsal/ ventral pit Lewis, 1978 black sensory organ Lohs-Schardin et al., 1979 black dot Campos-Ortega and Hartenstein, 1985</td>
+    </tr>
+    <tr>
+      <td>papilla sensillum (p)</td>
+      <td>total: 94,5head: 6T1: 10T2-3: 7A1-7: 9dorsal, lateral, ventralA8: 1 at t1 +1 unpaired at anus (vas)</td>
+      <td>shallow cuticle depression (with pore in center in L3)</td>
+      <td>L1: noneL3: terminal pore (molting)</td>
+      <td>one: one at base with tbtwo: p6 (A1-A7) one at base with tb, one w/o tb</td>
+      <td>mechanosensation mechanosensation unknown function</td>
+      <td>papilla Dambly-Chaudière and Ghysen, 1986; Green and Hartenstein, 1997; Hartenstein, 1988 campaniform Hartenstein, 1988; Singh and Singh, 1984 pit Green and Hartenstein, 1997</td>
+    </tr>
+    <tr>
+      <td>keilin’s organ(KO)</td>
+      <td>total: 3T1-3: 1ventral</td>
+      <td>three hair sensilla: hair-shaped shaft of similar lengthtwo papilla sensilla: pore in cuticle surface in L3</td>
+      <td>L1: noneL3: basal pore (molting)L1: noneL3: terminal pore (molting)</td>
+      <td>five (four in L3): one at base of each hair (3) one below each papilla (2) all with tb</td>
+      <td>mechanosensation mechanosensation</td>
+      <td>hair-type A Kankel, 1980 Fussstummelsinnesorgan Hertweck, 1931</td>
+    </tr>
+    <tr>
+      <td>spiracle sense organ (sp)</td>
+      <td>total: 1at posterior spiracle</td>
+      <td>four sensilla at base of the spiracular hairs</td>
+      <td>L1: none</td>
+      <td>four: one at base with tb</td>
+      <td>mechanosensation</td>
+      <td>spiracular hairs Jürgens, 1987 hair tufts Sato and Denell, 1985</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig10-v1.jpg)
 
 **Figure 10.:** (A) 3D reconstruction of a papilla sensillum of a first third instar (L1) larva (bottom). The outline shows the distribution of this sensillum type on the thoracic and abdominal hemisegments (top). (B, D, F) (FIB)-SEM images of third third instar (L3) larvae; (C, E, G, H) section scanning transmission electron microscopy (ssTEM) images of L1 larvae. The color code in A applies to all micrographs in this figure. (B) Electron micrographs of a papilla sensillum in an L3 larva. The sensillum lays in a cuticular depression with a visible molting pore (mp). (C) Longitudinal section through a papilla sensillum showing typical features of a mechanoreceptive sensillum. The base is formed by the dendrite, and the tubular body (tb) is enclosed by a dendritic sheath (ds), which is formed by the thecogen cell. The dendrite tip is anchored in the cuticle by the socket septum (ss). Further proximal, the dendrite enters the inner sensillum lymph (isl) cavity and transitions from the outer to the inner dendritic segment at the ciliary constriction (cc). (D, E) Longitudinal section through the base of a papilla sensillum in third (D) and L1 larva (E). A molting pore is visible in (D), whereas it is missing in (E). (F) Untypical papilla sensillum, with a short hair-like protuberance. (G) Sensory tip of abdominal papilla sensillum p6 with two dendrites, one without a tubular body (white arrowhead). (G’) Sensory tip of abdominal papilla sensillum p5, also called slit papilla sensillum. The tubular body is oval-shaped and appears more electron-lucent than canonical tubular bodies. (G’’) Sensory tip of thoracic papilla sensillum px with an electron-lucent and oval-shaped tubular body. (G’’’) Sensory tip of thoracic papilla sensillum py with very electron-dense tubular body. (H) Electron micrograph of sensory and support cells at the level of ciliary constriction. (I) Schematic drawing of (H) highlighting the sensillar support cells: the thecogen, the trichogen and the tormogen cell. Scale bars: (B) 1 µm; (C) 0.5 µm; (D) 1 µm; (E) 1 µm; (F) 0.5 µm; (G) 0.5 µm; (H) 1 µm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; mp – molting pore; ss - socket septum; tb - tubular body.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig11-v1.jpg)
+
+**Figure 11.:** (A) 3D reconstruction of a hair sensillum of a first instar (L1) larva (bottom). The outline shows the distribution of this sensillum type on the thoracic and abdominal hemisegments (top). (B, D, F) (FIB)-SEM images of third instar (L3) larvae; (C, E, G, H) section scanning transmission electron microscopy (ssTEM) images of L1 larvae. The color code in A applies to all micrographs in this figure. (B, B’) Electron micrographs of hair sensilla in L3 larvae. Hair sensilla can be branched (B’) or unbranched (B). A molting pore is visible on the hair in B. (C) Longitudinal section through a hair sensillum showing typical features of a mechanoreceptive sensillum (see (E) for details). The base is formed by the dendrite (green), and the tubular body (tb) is enclosed by a dendritic sheath (ds), which is formed by the thecogen cell. The dendrite tip is anchored in the cuticle by the socket septum (ss). The hair is devoid of dendrites. (D) Longitudinal section through the base of a hair with a putative molting pore (mp). (E, G) Longitudinal section through the sensory dendrite. The dendritic outer segment enters the lymph cavity and tapers off, reaching the ciliary constriction from where the inner dendritic segment begins. The dendrite is enclosed by the thecogen cell (the), trichogen cell (tri), and tormogen cell (tor). (F) Mechanoreceptive region of the dendrite with a tubular body surrounded by a dendritic sheath and enclosed by a septum socket. (H) Electron micrograph of sensory and support cells at the level of ciliary constriction. (I) Schematic drawing of (H) highlighting the sensillar support cells: the thecogen, the trichogen, and the tormogen cell. Scale bars: (B) 2 and (B’) 1 µm, respectively; (C) 1 µm; (D) 1 µm; (E) 1 µm; (F) 1 µm; (G) 1 µm; (H) 1 µm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; mp – molting pore; ss - socket septum; tb - tubular body; the – thecogen cell; to – tormogen cell; tri – trichogen cell.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Shown is a section scanning transmission electron microscopy (ssTEM) image of a typical hair sensillum in an first instar (L1) larva. When force (F) is applied to either side of the hair, it is transmitted to the tubular body (tb) by the hair base, and the dendritic sheath. Inside the tb body, specialized channels ensure mechanotransduction.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig12-v1.jpg)
 
@@ -113,15 +373,23 @@ Papilla sensilla are most abundant in terms of number. We counted six papilla se
 
 **Figure 15.:** (A) 3D reconstruction of a hair sensillum at the terminal segment of a first instar (L1) larva (bottom). The outline shows the distribution of this sensillum type on the last fused hemisegments (top). (B, C) section scanning transmission electron microscopy (ssTEM) images of a third instar (L1) larva. The color code in A applies to all micrographs in this figure. (B) Longitudinal section through the hair sensillum. A sensory hair is sitting on top of a cone-like structure with more (non-innervated) hairs and bristles. A dendrite with a tubular body (tb) ends at the base of the sensory hair. It is surrounded by a dendritic sheath (ds) and anchored in the cuticle by a septum socket (ss). (C) Longitudinal section further proximal than B at the level of the ciliary constriction (cc). The inner sensillum lymph (isl) cavity and the support cells can be observed. (D) Schematic drawing of (C), defining the sensory cell and the associated tormogen, trichogen, and thecogen cells. Scale bars: (B) 2 μm; (C) 1 μm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; ss - socket septum; tb – tubular body.
 
+![Figure 16.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig16-v1.jpg)
+
+**Figure 16.:** (A) 3D reconstruction of a knob sensillum at the terminal sensory cone t3 in a first instar (L1) larva (bottom). The outline shows the distribution of knob sensilla on the last fused hemisegments (top). (C-H) Section scanning transmission electron microscopy (ssTEM) images of an L1 larva. The color code in A applies to all micrographs in this figure. (B) 3D reconstruction of the outer appearance of t3. Inside the cone, a knob-shaped sensillum shaft is visible that is sunken into a deep and steep cavity. The cone is surrounded by (non-sensory) hairs and bristles. (C, D) Longitudinal section through the knob in the cone t3. The dendrite of one sensory cell protrudes into the shaft and bulges out at the end (orange). Two other dendrites end at the base of the shaft, one containing a tubular body (green), the other not (red, arrowhead). All dendrites are enclosed by a dendritic sheath (ds). Knob sensilla innervated by three sensory cells are found in t2 and t3. (E) Longitudinal section through the knob sensillum of cone t5. Only two dendrites are abundant, one protruding into the sensillum shaft (orange) and the other containing a tubular body (green). Further proximal, the dendrites are bathed inside the inner sensillum lymph (isl) at the level of the ciliary constriction (cc). Knob sensilla innervated by only two sensory cells are found in cones t1, t5, and t7. (F) Longitudinal section through the three dendrites of t3 at the level of the ciliary constriction. The common thecogen cell (the) forms an isl cavity. The thecogen cell is enclosed by the trichogen cell (tri) and the tormogen (tor) cell. (G) Knob sensillum of the terminal organ with only one abundant dendrite (orange) that protrudes into the knob. (H) Longitudinal section of t3 proximal of (D) with all three dendrites sharing a common dendritic sheath, enclosed by the tormogen, trichogen, and thecogen cell. (I) Schematic drawing of (H), defining the sensory cells and the associated tormogen, trichogen, and thecogen cells. Scale bars: (C) 2 μm; (D) 2 μm; (E) 2 μm; (F) 1 μm; (G) 1 μm; (H) 1 μm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; tb – tubular body; the – thecogen cell; to – tormogen cell; tri – trichogen cell.
+
+![Figure 16—figure supplement 1.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig16-figsupp1-v1.jpg)
+
+**Figure 16—figure supplement 1.:** The reconstruction shows the outer appearance of t1 in a first instar (L1) larva. Inside the cone, we find a knob sensillum and a hair sensillum. In addition, one papilla sensillum sits at the base of the cone. The hair and the papilla sensillum are both innervated by one sensory cell containing a tubular body (tb). The knob sensillum is innervated by two sensory cells, one containing a tb that ends at the base of the knob and one without a tb that protrudes into the knob (asterisk).
+
 ![Figure 17.](https://cdn.elifesciences.org/articles/91155/elife-91155-fig17-v1.jpg)
 
 **Figure 17.:** (A) 3D reconstruction of the spiracle sense organ (sp) at the terminal segment of a first instar (L1) larva (bottom). The outline shows the position of this organ on the last fused hemisegments (top). (B, C) Section scanning transmission electron microscopy (ssTEM) images of an L1 larva. The color code in A applies to all micrographs in this figure. (B) Longitudinal section through a posterior spiracle. The main tracheal tube (tr) and two spiracular glands (sg) are visible. (C) Longitudinal section of the tip of the spiracle. Two sensilla of the spiracle sense organ can be observed. Furthermore, a spiracular gland and a wax pore (wp) associated with another spiracular gland are visible. The glands secrete wax around the tracheal valve to prevent moisture ingress. (D) Close-up view of the mechanoreceptive region of a spiracle sensillum near the tracheal valve. The dendrite contains a tubular body (tb) at the tip and is enclosed by a typical dendritic sheath (ds). (E) Longitudinal section of the tip of the spiracle further proximal than (B) showing the two sensilla inside the inner sensillum lymph (isl) with their associated support cells. The ciliary constriction (cc) is visible for one sensillum. (F) Schematic drawing of (E), defining the sensory cells and the associated tormogen, trichogen, and thecogen cells. Furthermore, the tracheal and gland cells are shown. Scale bars: (B) 10 μm; (C) 5 μm; (D) 2 μm; (E) 5 μm. Abbreviations: cc - ciliary constriction; ds - dendritic sheath; isl – inner sensillum lymph; sg – spiracular glands; sp – spiracle; tb – tubular body; tr – trachea.
 
 In the following, sense organs and sensilla of the larval head, thoracic, and abdominal segments are classiﬁed based on their external and internal morphology. Also, developmental aspects are addressed by comparison of first (L1) and third instar (L3) larvae.
 
-## Description of individual external sensory organs of the Drosophila larva
+### Description of individual external sensory organs of the Drosophila larva
 
-## Dorsal organ
+#### Dorsal organ
 
 Despite previous studies on the ultrastructure of the DO (Chu and Axtell, 1971; Singh and Singh, 1984), many aspects of its structural organization, like the peripheral sensilla and the corresponding accessory cells (ACs), remained unclear. The 3D EM volumes recorded in the present work allow to complement and clarify the knowledge of the anatomy of the DO (Figures 2—7, Table 1). Figures 2—7 provide a comprehensive description of the organization of the entire organ. Therefore, by means of targeted FIB-SEM and ssTEM, we obtained continuous image stacks of the DO covering the distance from its outer sensory parts to the region of the DO ganglion (DOG), where the cell bodies of the sensory neurons are located. It enabled us to trace dendrites from their tips at the cuticle surface to the neuron’s cell body in the DOG and to generate a 3D reconstruction visualizing the spatial organization of the neuronal components of the DO (Figure 2A and C). Furthermore, accessory support cells were identified and described in detail (Figure 7). Most sensilla display a repertoire of these cells in a highly stereotyped fashion: a thecogen, a trichogen, and a tormogen cell. Due to their role in the formation of the sensillum, they have also been termed sheath, shaft, and socket cell, respectively (Prelic et al., 2021).
 
@@ -149,55 +417,55 @@ In total, we find 43 cell bodies in the DOG, 36 of them being of sensory and sev
 
 Within the DO, we also find the (accessory) cells that build the structure of the organ. We find 60 cells in total, 28 (7 × 4) being associated with the olfactory sensilla, 24 (6 × 4) being associated with the six peripheral sensilla, and one being associated with the papilla sensillum p6. The seven remaining cells are of unknown origin but might also be peripheral glial cells. The remaining ACs of p6 and Pdo lay outside the DO.
 
-## Chordotonal organ in close proximity to dorsal organ
+#### Chordotonal organ in close proximity to dorsal organ
 
 In close proximity to the DO, we find a single-innervated (monodynal) chordotonal organ (ChO) (Figure 6A and B). It lays diagonally to the DO dome in between the non-sensory cells that build up the DO (Figure 6C and D), but it is not part of the DOG. The bipolar sensory cell ends with a ciliary structure of type 1 (Yack, 2004; Figure 6E). The cilium is growing out of the dendritic inner segment and is surrounded by the prominent scolopale, which is made up of the scolopale rods (Figure 6D and E). The rods are segregated by the scolopale cell. The end of the cilium is inserted into a cap, which is ensheathed by the cap cell (Figure 6D). The cilium is bathed in sensillum lymph within the scolopale (Figure 6E) and exhibits a ciliary dilation (Figure 6D). The inner dendritic segment contains a very noticeable striated ciliary rootlet (Figure 6F), which originates from the basal body towards the cell body. We find these DO-associated ChO (doChO) not only in L1 but also in L3 larvae (Figure 6G, white arrow).
 
-## Ventral organ
+#### Ventral organ
 
 The ventral organ is located ventral to the terminal organ and lateral to the mouth hooks. The sensilla of the VO are located in a cuticle invagination, hidden by a row of cirri (Figure 8B). We identified four sensilla in the VO (Figure 8A–I, Table 1). Three of them (VO1, VO3, and VO4) are innervated by a single neuron, and one (VO2) by two neurons (Figure 8F–I). This number is in accordance with previous findings in other cyclorrhaphan larvae (Honda and Ishikawa, 1987) but contradicts a study on Drosophila larvae reporting that five sensilla belong to the VO (Singh and Singh, 1984).
 
 We name these sensilla VO1- VO4. Starting from the medial most sensillum VO1, we number the four sensilla in a clockwise direction in the left and an anti-clockwise direction in the right hemisphere when seen from the front. VO1 forms a shallow dome centering a tiny pore (Figure 8B). VO1 is innervated by one dendrite that terminates with a tubular body at the base of the pore and is encased by a dendritic sheath (Figure 8C, F and G). The microtubules can be clearly distinguished and are evenly distributed in the tubular body area (Figure 8C’’). The VO1 sensillum was also termed plate sensillum in earlier literature (Honda and Ishikawa, 1987). VO2, VO3, and VO4 lie in pits (Figure 8). In L3 larvae, we could observe terminal pores, which are absent in L1 larvae and thus are likely molting pores. VO3 and VO4, like VO1, resemble papilla sensilla. All are innervated by only one dendrite, which composes a tubular body at its tip at the base of the pore openings or the epicuticle, respectively (8 A, C, F, G). The tubular body of VO3 consists of more densely packed microtubules that are not distinguishable from each other (Figure 8C’). VO4 displays a unique type of tubular body, which can only be found in this sensillum. It is rather large compared to other tubular bodies, and the dendrite intermingles with electron-dense material of unknown origin in this area (Figure 8C and D) (for potential functional implications, please refer to the related section in the discussion). Unlike the other three sensilla, VO2 is innervated by two dendrites (Figure 8H, I). Distinguishing it from the dendrites innervating the other sensilla of the VO, the dendrites of VO2 are distally surrounded by a cuticle tube (Figure 8A and C), lack a tubular body and branch multifold distally of the ciliary constriction (Figure 8E). The terminal pore is also present in L1 larvae. Each of the VO sensilla possesses its individual set of three ACs (Figure 8F–I), but the thecogen cell and the trichogen cell of VO2 appear substantially more electron-lucent (Figure 8H, asterisks), with mitochondria of altered structure (Figure 8H, white arrowhead) compared with ordinary ones (Figure 8H, black arrowhead).
 
-## Labial organ
+#### Labial organ
 
 Located on the ventral side of the ventral lip (labium) lays the labial organ (LO – also called lbo) (Figure 9A and B). In the present study, we find two sensilla associated with the LO in accordance with Kankel, 1980; Figure 9C, I. In contrast, Singh and Singh, 1984 describe three sensilla based on examination of internal ultrastructure. We name the two identified sensilla LO1 and LO2 (Figure 9C). LO1 forms a cavity with a pore in the center and sits on a small, shallow socket (Figure 9C). The pore is absent in L1 larvae and thus likely a molting pore. LO1 is innervated by one neuron that composes a tubular body on the tip of its dendrite, which terminates below the pore opening. The dendrite is surrounded by a dendritic sheath (Figure 9E and F). LO2 forms a knob-like cuticle shaft protruding from the cuticle. The knob’s cuticle has a rough texture and appears more electron-lucent than the cuticle of the surrounding body wall (Figure 9C). Internally, the knob is filled with an electron-dense material (Figure 9E). Like LO1, LO2 is innervated by one dendrite composing a tubular body, which terminates at the base of the knob where a molting pore is present in L3 larvae and absent in L1 larvae (Figure 9D–F). The two labial organ sensilla both have their own set of ACs: a thecogen cell, which forms the dendritic sheath; a trichogen cell, which forms the shape of the sensillum; and a tormogen cell, which forms the sensillar socket. We find two more cells in the LO, most likely non-apoptotic glial cells originating from the sensory organ precursor cell (SOP) or its secondary precursor cell (pIIb), respectively (Fichelson and Gho, 2003).
 
-## Sensilla of thoracic and abdominal segments
+### Sensilla of thoracic and abdominal segments
 
-## Papilla sensilla
+#### Papilla sensilla
 
 The papilla sensillum is most similar to the canonic type of the campaniform sensillum. Papilla sensilla forms a shallow depression in the cuticlewith a pore in its center in L3 larvae (Figure 10A, B). In L1 larvae, the pore is absent and, therefore, a molting pore (Figure 10C, E). Papilla sensilla are innervated by one dendrite which terminates with a tubular body below the pore or the epicuticle, respectively (Figure 10C–E). The tubular bodies show no organized distribution of microtubules which are difficult to distinguish as they occur in densely packed clusters (Figure 10E). The tubular body of the p6 sensillum in the abdominal segments is of a similar shape, although another sensory neuron without a tubular body exists in a shared sensillum space (Figure 10G). The dendrites of abdominal sensilla p5, the so-called slit papilla, and the py papilla of the first thoracic segment don’t show the typical dendritic swelling at the tip and the tubular body appears to be more delicate (Figure 10G’, G’’). In contrast, the tip of the thoracic px neuron is thickened and the tubular body is quite noticeable, as the whole inner area is packed with electron-dense material (Figure 10G’’’). For all types, the dendrite tip is anchored in the endocuticle by a socket septum (Figure 10C–E). The dendrites are enclosed by a dendritic sheath, which is most likely segregated by the thecogen cell (Figure 10C–E). The thecogen cell also forms an inner sensillum lymph cavity at the transition from the outer to the inner dendritic segment at the level of the ciliary constriction (Figure 10C, H, I). Furthermore, the sensillum is enveloped by the thecogen cell and the tormogen cell (Figure 10H, I) . In some exceptional cases, we find a short hair-like structure protruding from the papilla sensilla or positions where we would expect papilla sensilla (Figure 10F).
 
-## Hair sensilla
+#### Hair sensilla
 
 A hair sensillum (Figure 11A) is most similar to the canonic type of the trichoid sensillum. Hair sensilla comprises a round, hair-shaped shaft that sits in the center of a shallow cuticle depression (Figure 11B). In accordance with previous literature (Kankel, 1980), we find that the shaft of hair sensilla varies greatly in size. It might be very short, reduced to a stump, or very long up to more than 15 µm (Figure 11B). The form of the hair shaft might vary, too. We observed bifurcated shafts forming two branches (Figure 11B'). Furthermore, we observed hair sensilla that come in a pair (‘double hair,’ Figure 12). The double hair h3/h4 was exclusively found on abdominal segments. Because of the differences in external morphology of the hair shaft, Kankel, 1980 classified hair sensilla into three different types, called type C, D, and E (Table 2). However, we here find that the internal ultrastructure of hair sensilla (Figure 11C–I) is in general similar irrespective of the length and the shape of the shaft. The interior of the hair shaft is electron-lucent, surrounded by an electron-dense sheath (Figure 11C, D). A pore, presumably a molting pore, can be found at the base of the shaft (Figure 11D) in L3 larvae. All hair sensilla are innervated by a single dendrite terminating at the base of the shaft composing a tubular body (Figure 11E, F). The tubular body of the hair sensilla is even more thicker than the canonical tubular body of papilla sensilla, and the microtubules are clearly visible and distinguishable from each other. A socket septum is clearly visible (Figure 11E, F). Apart from the difference in outer appearance and structure of the tubular body, the hair sensilla are quite similar to the papilla sensilla, with a typical set of ACs (Figure 11G–I) and a small inner sensillum lymph cavity at the transition from the outer to the inner dendritic segment at the level of the ciliary constriction (Figure 11E, H, I).
 
-## Double hair organ
+#### Double hair organ
 
 As mentioned previously, the abdominal hair sensilla h3 and h4 represent a special case of compound hair sensilla. It consists of two hairs of different sizes, which are adjacent to each other, sitting in one cuticle depression (Figure 12A, B). Usually, the h4 sensillum structure is of the same type as a canonical hair sensillum, containing one sensory cell with a tubular body at the base of the hair (Figure 12D). In contrast, the outer hair of h3 is comparatively short and, therefore, called a bristle. The key aspects are similar to the abdominal papilla p6, with two sensory cells (Figure 12E, F), one containing a tubular body (which rather exhibits the structural properties of papilla than hair sensilla) (Figure 12C, D). Both h3 and h4 possess their own set of ACs and are, therefore, individual sensilla (Figure 12H, I), although in one exceptional case, they shared one lymph space (Figure 12G). At the level of the ciliary constriction, the thecogen cell forms an inner sensillum lymph cavity (Figure 12E, F).
 
-## Knob sensilla
+#### Knob sensilla
 
 The knob sensillum is most similar to the canonic type of the basiconic sensillum. Knob sensilla are present on thoracic segments (Figure 13A) and on the sensory cones of the last abdominal segment (Figure 16A), but similar structures can also be found in the terminal organ (Figure 16G; Rist and Thum, 2017). Knob sensilla have been described under various names such as koelbchen, knob-in-pits, hair-type B, black sensory organs, black dots, sensory papillae, or dorsal/ventral pits (Hertweck, 1931; Lewis, 1978; Lohs-Schardin et al., 1979; Kankel, 1980; Singh and Singh, 1984; Campos-Ortega and Hartenstein, 1985; Sato and Denell, 1985; Dambly-Chaudière and Ghysen, 1986; Hartenstein, 1988; Campos-Ortega and Hartenstein, 1997; Table 2).
 
 The knob sensilla of the thoracic segments display a common external morphology, a knob-shaped cuticle shaft sunken into a round cuticle cavity (Figure 13B). The cuticle shaft slightly protrudes from the cavity. Investigation of internal ultrastructure by targeted FIB-SEM and ssTEM reveals that three dendrites are associated with one thoracic knob sensillum (Figure 13C–I). One dendrite innervates the shaft, proceeding to its tip (Figure 13C). The other two dendrites end at the base of the knob, one with a tubular body (Figure 13C–E). All dendrites are surrounded individually by one dendritic sheath (Figure 13C–E), which arises from the common thecogen cell. Each sheath is connected to a pore at the base of the knob in L3 larvae (Figure 13D). This pore is not present in L1 larvae (Figure 13C–E) and is, therefore, most likely a molting pore. The dendritic sheath of the three dendrites disappears at the epidermal layer. Here, dendrites are surrounded by three common sheath cells (Figure 13H, I). In T1, we find one dorsal knob sensillum (dk) and one ventral knob sensillum (vk), whereas in T2-T3, we find one lateral knob sensillum (lk) and one ventral knob sensillum (Figure 1B and Figure 13A). All thoracic knob sensilla were examined and no difference in structural organization was recognized. In contrast, the knob sensilla of the sensory cones are inconsistent and house either two (Figure 16D and E) or three (Figure 16F) neurons, whereas the knob sensilla of the TO only contain one sensory cell (Figure 16G; Rist and Thum, 2017), which dendrite protrudes into the shaft. Knob sensilla of the last abdominal segment are discussed in a separate results section, as they are organized in specialized terminal sense organs.
 
-## Keilin’s organ
+#### Keilin’s organ
 
 The KO is exclusively located on the ventral side of the thoracic segments T1-T3 (Figure 14A). The KO is relatively easy to identify and was described for larvae of several dipteran species (Keilin, 1915; Lakes and Pollack, 1990; Lakes‐Harlan et al., 1991). The KO of Drosophila larvae has so far been described as consisting of three hairs (Kankel, 1980). In L1 larvae, we find that two papilla-like sensilla are associated with the organ in addition to three hair sensilla (Figure 14A, E and G). One of the papilla-like sensilla is degenerating during the L1 stage (Figure 14E–F). Signs of degeneration are the comparatively small diameter of the dendrite (Figure 14E) and poor axonal development, like the absence of growth cones and axon branching (not shown). This finding is congruent with a study of the KO of the larvae of Phormia (Lakes‐Harlan et al., 1991) and provides an explanation for studies that find five sensory neurons innervating the KO of Drosophila larvae (Dambly-Chaudière and Ghysen, 1986; Campos-Ortega and Hartenstein, 1997). In L3 larvae, the (surviving) papilla sensillum is externally recognizable by a tiny pore in the cuticle (Figure 14B). Also, a pore is found on the base of each of the hairs (Figure 14D). Because these pores are not found in L1 larvae, they are most likely molting pores. Investigation of the internal ultrastructure reveals that each of the three hair sensilla and the two papilla sensilla are associated with a single dendrite. All dendrites terminate with a tubular body below the cuticle; this organization represents the standard types of hair or papilla sensilla (Figure 14E and F). Also, all KO sensilla possess their own set of enveloping ACs (Figure 14H, I).
 
-## Sensilla of the anal division
+### Sensilla of the anal division
 
-## Terminal sensory cones
+#### Terminal sensory cones
 
 The terminal sense organs or sensory cones are located at the fused terminal segments (Figure 1A, Figure 15A, Figure 16A). According to the literature (Whittle et al., 1986; Denell and Frederick, 1983; Dambly-Chaudière and Ghysen, 1986; Jürgens, 1987), we could identify seven distinct sensory cones t1 – t7. They either house a knob sensillum (t3, t5, t7), a hair sensillum (t4, t6), both (t2), or both plus an additional papilla sensillum at the base of the cone (t1) (Figure 16—figure supplement 1). These results are consistent with previous findings in L1 larvae (Dambly-Chaudière and Ghysen, 1986; Jürgens, 1987), although the number of corresponding neurons is slightly different. We found that knob sensilla of t1, t5, and t7 are only innervated by two sensory neurons (Figure 16E) in contrast to three sensory neurons that were reported in the embryo (Dambly-Chaudière and Ghysen, 1986) and that we find in t2 and t3 (Figure 16C). These knob sensilla are still innervated by one neuron protruding into the shaft and one neuron containing a tubular body that sits at the base of the shaft. A third neuron without a tubular body is absent (Figure 16E). The hair sensilla associated with the sensory cones are innervated by one sensory cell with a tubular body on its tip (Figure 15B) and exhibits similar features as the canonic hair sensilla of the body wall. The only papilla sensillum associated with the sensory cones sits at the base of the t1 and shares the same structure as the canonic papilla sensilla. The t1 lays in close proximity to the anal plate towards the caudal end. T2 is situated dorso-caudal of t1, halfway in between the anal plate and the posterior spiracle. t3 lays anterodorsally of t2 and the cone of t4 lays anterodorsally of t3. The cone of t5 is located dorsal of t4, whereas t6 is located closer to the dorsal midline than t5. The cone of t7 is located at the dorsal midline and at the base of the posterior spiracle. All knob sensilla of the terminal sensory cones show a similar external structure as thoracic knob sensilla, but their shafts protrude far out of the cavity in L1 larvae (Figure 16B and C; Figure 16—figure supplement 1). In L3 larvae, the sensory cones further change in appearance, and the knob and hair sensilla are sunken into the full-grown cone and surrounded by broad-based apposing leaflets (Kuhn et al., 1992). All sensilla associated with the terminal sensory cones display a typical sensilla configuration: their dendrites are bathed in the inner sensillum lymph and ensheathed by a typical set of support cells (Figure 15C and D and Figure 16F, H, I). Besides the prominent sensory cones, there are some less noticeable external sensilla.
 
-## Spiracle sense organ
+#### Spiracle sense organ
 
 The spiracle sense organ (sp) consists of four sensilla (spA-D) which are located in close proximity to the spiracular openings at the base of the spiracular hairs (Figure 17A–D). They are all single-innervated, contain a tubular body (Figure 17D), and display a canonic set of support cells (Figure 17E and F). The spiracular glands lay in close proximity to these sensilla (Figure 17E and F).
 
-## Ventral anal papilla sensillum
+#### Ventral anal papilla sensillum
 
 One papilla sensillum can be found close to the anal plates. It is located at the anal opening and called ventral anal papilla sensillum (vas) in the literature (Campos-Ortega and Hartenstein, 1997). In contrast to Hartenstein’s findings, we find it to be only single-innervated. Notably, one unpaired anal cone or anal tuft (Lohs-Schardin et al., 1979; Denell and Frederick, 1983) is located in close proximity and was mistaken as a sensory cone before. We could not find any sensory cell associated with this structure, although vas lies in close proximity (Figure 1B).
 
@@ -209,9 +477,9 @@ We present a comprehensive anatomical analysis of external sensory organs of the
 
 The standard configuration of the larval body wall covers a total of 541 sensory cells associated with the external sensilla. 363 are probably mechanosensory according to their internal structure, as they possess a tubular body. The 363 mechanosensory cells can further be grouped into 201 neurons belonging to papilla sensilla, 100 to hair sensilla, and 22 to knob sensilla. The remaining 40 mechanosensory cells can be found in the major head organs and in the spiracle sense organ. We find 42 olfactory and 12 thermosensory neurons in the DOs and 50 gustatory neurons of which 46 cells are distributed in the TOs and 4 in the VOs. We find additional 26 sensory neurons in knob sensilla that are probably important for oxygen and carbon dioxide sensing. Their dendrites protrude into the sensillum shaft, where the dendritic sheath is perforated and, therefore, susceptible to chemical compounds that are able to diffuse into the cuticle. We also found 48 sensory cells whose ultrastructure was insufficient to make well-grounded predictions about their sensory mechanism, as they lacked noticeable structural components. These cells are distributed evenly throughout the larval body. We find two in each of the DOs, one in each thoracic knob sensillum, one each in the abdominal papilla sensilla p6, one in the abdominal hair sensilla h3, and one each in the knob sensilla of the terminal sensory cones t2 and t3. Apart from these sensory cells, there are more to be found in the larval body, like in chordotonal organs, pharyngeal organs, or multidendritic neurons. These were not regarded in this study but will be the subject of future studies.
 
-## Organization of larval sensilla types
+### Organization of larval sensilla types
 
-## Nomenclature, variability, and ultrastructure
+#### Nomenclature, variability, and ultrastructure
 
 As mentioned before, various names were given to the sensilla, not only immature insects but also larval Drosophila. Here, we aimed to list all names given to them (Tables 1 and 2) and to establish a standard nomenclature for Drosophila larval sensilla, using our detailed and comparative approach as a basis for the classification of all external sensilla. We identified three major types of sensilla which are most abundant on the larval body wall: papilla sensilla, hair sensilla, and knob sensilla. They occur either as solitary sensilla or are integrated into sensory organs or compound sensilla like the terminal organ, the keilin’s organ, or the terminal sensory cones. Also, they exhibit slight differences in terms of associated sensory cells or external appearance. Besides these most abundant types, we found specialized (olfactory and gustatory) sensilla, mainly in the organs of the head region.
 
@@ -219,19 +487,19 @@ Taking advantage of the whole larval volume, we were able to identify and name a
 
 These changes are: (i) for all external sensilla, the associated neurons are named in the following pattern: position within the segment (dorsal (d), lateral (l), ventral 1 (v), ventral 2 (v’), ventral 3 (v’’)), type of sensillum (external sensilla/sense organs (es) or chordotonal organs (Ch)), number of associated neurons (1, 2, 3,…) and order of appearance from ventral to dorsal (A, B, C, …); (ii) for the fused head and abdominal segments, we also used this pattern for simplification and clarity, even though we thereby ignore the segmental borders; (iii) to avoid confusion, we did not assign names that were used for other neurons again, for example, the neurons of abdominal hair sensillum h3 were named desA before, as Dambly-Chaudière and Ghysen, 1986 only could identify one neuron in their camera lucida drawings in the embryo. On the contrary, we did always see two neurons innervating h3, and, therefore, called these des2A. The remaining dorsal external sense neurons did not change in naming, even though des1A is not assigned. A full list of the external sense neurons is given in Table 2. In the following, we discuss different criteria used to assign putative functions to the identified sensilla and sensory cells.
 
-## Tubular bodies
+#### Tubular bodies
 
 Within the larval sensilla, we find a variation in the shape and size of tubular bodies, a well-known structure regarded to mediate mechanical sensation in insect sensilla sensory neurons (Thurm, 1964; Keil, 1997). These variations likely correlate with different mechanisms of mechanotransduction. For example, the tubular body of the hair sensilla is shaped in a way to transduce directional force applied to the hair (see Figure 11—figure supplement 1). When the hair is deflected, pressure is either applied or released from the dendrite tip via the cuticular structures (like a lever). In papilla sensilla, the force is applied unidirectional, either through deformation of the cuticle through external touch or movement of the body wall during motion. Abdominal p5 papilla are contained in vertical slits (slit papilla), and the tubular body sits beneath an elongated, cuticular mound in the center of the slit (Figure 10G’ G’’). Putatively, the tubular body is deformed by compression of the slit during movement. In contrast to the other tubular bodies (and especially to the delicate tubular bodies of p5 and py sensilla), the tubular body of px at the first thoracic segment appears to be very dense (Figure 10G’’’). It can be inferred that a compact tubular structure is also more rigid, leading to an increased sensitivity of the mechanotransduction apparatus, as it acts as an abutment for the spring-like proteins that work as mechanotransducers. However, additional physiological data on these sensory neurons is required to substantiate this hypothesis linking structure and function.
 
-## Developmental aspects
+#### Developmental aspects
 
 Morphological studies on the ultrastructure of the sensory neurons in Drosophila were either executed on Drosophila embryos (Campos-Ortega and Hartenstein, 1997; Dambly-Chaudière and Ghysen, 1986), first (Hartenstein, 1988), second (Singh and Singh, 1984) or third instar larvae (Dambly-Chaudière and Ghysen, 1986). Over the years, these works led to contradictory assumptions about the number and location of the larval sense organs and their corresponding sensory cells. In addition, various functions were to some extent assigned to the sensilla. Our analysis, using L1 and L3 larvae, allowed for clarification of several ambiguities. Primarily, we could address the difference between functional pores and molting pores. Pores that were found in L3 larvae but absent in L1 larvae were considered to be traces of molting and, therefore, not necessary for the sensory function of these sensilla. In most cases, this was true for mechanosensitive sensilla that are widely distributed on the larval body wall. Given their pore-like appearance in L3, especially papilla sensilla were suspected to serve chemosensory function in the past. Additionally, the sensilla of the KO were assumed to serve different sensory functions before (Hafez, 1950; Benz, 1956) and some of the peripheral sensilla of the DO were termed lateral pore receptors (Singh and Singh, 1984; Chu and Axtell, 1971) or classified as contact chemoreceptors (Chu and Axtell, 1971). If pores are absent in the sensilla of L1 larvae, they probably do not serve chemosensory function, although we cannot rule out this function completely given the lack of physiological experiments. On the other hand, pores that were found in both instars were considered to be functional pores and, therefore, most likely associated with external gustatory sensilla. Pore-containing sensilla are limited and restricted to the VO2 of the ventral organ (Figure 8C and E) and the pit and papilla sensilla of the terminal organ (data not shown; see results of Rist and Thum, 2017).
 
 Second, we could address the open questions regarding the number of sensilla and sensory neurons. For example, Singh and Singh, 1984 reported five sensilla in the VO, but our results show only four sensilla in L1 as well as in L3 larvae. Furthermore, they reported five dendrites in VO2. Because we obtained volumes of the VO including the sensory cell bodies, we could show that VO2 is innervated by two sensory cells with one proximal dendrite each, which branch multifold when entering the pore channel. In the abdominal double hair, the h3 sensillum houses two sensory cells instead of one reported before (Campos-Ortega and Hartenstein, 1997; Dambly-Chaudière and Ghysen, 1986). The keilin’s organ was reported to house either four (Lakes‐Harlan et al., 1991) or five (Campos-Ortega and Hartenstein, 1985; Campos-Ortega and Hartenstein, 1997; Dambly-Chaudière and Ghysen, 1986; Lakes‐Harlan et al., 1991) sensilla previously. With our work, we could explain these differences: one papilla sensillum is still abundant in L1 larvae, but already shows signs of degeneration and is completely missing in L3 larvae (Figure 14F). This is the only example of age-specific degeneration of sensilla between larval moltings that we could identify.
 
-## Hypothetical functions of larval head, thoracic, and abdominal sensilla
+### Hypothetical functions of larval head, thoracic, and abdominal sensilla
 
-## Dorsal organ
+#### Dorsal organ
 
 In Drosophila, the six peripheral sensilla of the DO were hypothesized to serve different modalities: contact chemosensation (gustation), mechanosensation, thermosensation, and hygrosensation (Chu and Axtell, 1971; Python and Stocker, 2002; Kwon et al., 2011; Klein et al., 2015; Ni et al., 2016; Hernandez-Nunez et al., 2021). Evidence derives from observed ultrastructure indicating certain functions (Chu and Axtell, 1971), and more recently from anatomical, physiological, and behavioral experiments (Kwon et al., 2011; Klein et al., 2015; Ni et al., 2016; Hernandez-Nunez et al., 2021). We conclude that DOp3, DOp5, and DOp6 are candidates for thermosensory function, which was confirmed recently (Hernandez-Nunez et al., 2021). Typically, insect thermosensory sensilla are associated with neurons that terminate below the other neurons of the sensillum and form extensive lamellation (Steinbrecht, 1984). DOp3, DOp5, and DOp6 each house two neurons. One neuron ends right below the cuticle surface of the sensillum (Figure 5A and B) and the other becomes visible within the inner sensillum lymph cavity and forms a lamellated dendritic bulb (Figure 5E and F). This remarkable structure might be similar to the ‘dendritic bulb’ described by recent studies using fluorescence microscopy of transgenic ﬂy lines (Klein et al., 2015; Ni et al., 2016; Hernandez-Nunez et al., 2021). It was shown that the DO neurons associated with these structures trigger cool avoidance behavior in larvae (Klein et al., 2015). Presumably, this response is mediated by Ir21a (Ni et al., 2016). In addition, two of these sensilla play a role in warmth sensing via Ir68a. This receptor is expressed in the neurons without a dendritic bulb. Both neurons were shown to act together as synchronous and opponent thermosensors (Hernandez-Nunez et al., 2021). Contact chemosensory function was assumed for at least two peripheral DO sensilla based on structural characteristics in Musca larvae (Chu and Axtell, 1971). Further evidence for gustatory function of the DO came from the report of Gr2a and Gr28a gene expression in DO neurons of Drosophila larvae (Colomb et al., 2007; Kwon et al., 2011). DOp2 and DOp4 each house two neurons, of which one is likely to be mechanosensory. This function is indicated by the presence of a tubular body located at the tip of the neurons’ dendrite (Figure 4D and F). However, their sensilla structure differs from the gustatory sensilla found in the TO (Rist and Thum, 2017). There, dendrites of one gustatory sensillum are surrounded by a common dendritic sheath, which forms the lymph-filled lumen of the sensillum. DOp2 and DOp4 are of simpler organization, lacking an obvious sensillum lumen as each dendrite is enclosed by an individual dendritic sheath. A cuticle tube, present in all gustatory TO sensilla, is absent, too. Furthermore, a terminal pore is missing in L1 larvae, which argues against a role in contact chemosensation. In adult Drosophila, Gr2a and Gr28a have been reported to be expressed not only in gustatory but also in other sensilla of another, yet unknown function (Thorne and Amrein, 2008). In addition, Gr28a was also reported to be expressed in the larval gut (Park and Kwon, 2011). Consequently, we are questioning the chemosensory roles of DOp2 and DOp4. The structural arrangement of DOp1 and papilla sensillum p6 suggests mechanosensation, as evidenced by the presence of a single neuron forming a tubular body at its dendritic tip (Figure 4B). Thus, our primary inference is that p6, DOp1, DOp2, and DOp4 predominantly serve mechanosensory functions, while DOp2B and DOp4B may potentially be associated with a distinct sensory mechanism.
 
@@ -239,55 +507,55 @@ The DO has been reported to consist of 14 sheath cells, 14 shaft cells, and 13 s
 
 Furthermore, we could find a total of 60 cells within the DO and a total of 43 cells in the DOG. In one exceptional case, we observed an eighth olfactory triplet in the DO, leading to an altered cell count of three more sensory cells in the DOG and four more potential ACs inside the DO. Therefore, we hypothesize that the olfactory DO sensilla, if not all (DO sensilla), possess four ACs derived from the SOPs. If the fourth one is a second tormogen cell, like in some adult olfactory sensilla (Shanbhag et al., 2000; Nava Gonzales et al., 2021), or a non-apoptotic glial cell, can’t be finally resolved with our data. In addition to the hypothesized 53 ACs (4 × 7 olfactory ACs, 4 × 6 peripheral ACs, 1 × p6 glial cell) and 36 sensory cells (21 olfactory, 11 peripheral, 1 p6, and 3 Pdo neurons), we find seven cells of unknown origin in the DO and in the DOG, respectively. They either also derive from SOPs or, more likely, are peripheral glial cells generated in the CNS that migrate towards their final destination (von Hilchen et al., 2008).
 
-## Ventral organ
+#### Ventral organ
 
 We conclude that the VO is mainly a mechanosensory organ and its only gustatory sensillum might be VO2. Contrary, a mainly gustatory function of the VO was assumed previously based on the presence of sensillum-terminal pores and the expression of gustatory receptor (Grs) genes in neurons of the VO (Chu-Wang and Axtell, 1972b; Singh and Singh, 1984; Python and Stocker, 2002; Colomb et al., 2007). In fact, the terminal pores of most VO sensilla might be traces of molting, as they were absent in L1 larvae of onion and seed-corn flies (Honda and Ishikawa, 1987), which have not undergone molting in this stage. Our results validate these findings, as there were no visible terminal pores (Figure 8C). VO sensilla VO1, VO3, and VO4 display structural characteristics typical for mechanosensation (Keil, 1997): innervation by a single dendrite terminating with a tubular body (Figure 8C). Their different size and microtubule organization likely correlate with the processing of different stimulus intensities applied to the mechanotransduction apparatus (Bechstedt et al., 2010).VO2, in contrast, displays a morphology similar to the gustatory pit sensilla T3 and T4 of the TO (Rist and Thum, 2017). Therefore, VO2 might be the single sensillum of the VO serving contact chemosensation.
 
-## Labial organ
+#### Labial organ
 
 We conclude that the main function of the LO lies in the detection of mechanical stimuli, too. The two single neurons of the LO sensilla each compose a tubular body at their endings (Figure 9E and F), indicating mechanosensory function. On the other hand, we cannot exclude additional sensory functions, especially for the LO2, which shows a noticeable outer appearance. It is possible that the club-shaped structure acts in hygrosensation by exerting pressure on the tubular body depending on humidity levels, acting as a hygromechanical transducer (Tichy and Kallina, 2010).
 
-## Papilla sensilla
+#### Papilla sensilla
 
 Papilla sensilla is the most abundant type of sensory structure throughout the larval sensory system (Figure 1B and Figure 10A). They occur in each segment, including the anal division and the head capsule. We conclude that their main function is the detection of mechanical stimuli, given the fact that they all possess a tubular body at the tip of their dendrites (Figure 10C–G). Most of the papilla sensilla probably detect mainly deformation of the cuticle by motion or external pressure applied, although the direction of force detection might differ in some papilla, like the abdominal slit papilla p5. The same is true for the abdominal papilla sensilla p6, but they house two sensory cells, v’es2A, one of them lacking a tubular body and, therefore, possibly serving a different sensory function.
 
-## Hair sensilla
+#### Hair sensilla
 
 Hair sensilla is abundant on the thoracic and abdominal segments. Like papilla sensilla, their sensory neurons all end with a tubular body at the dendrite tip, indicating mechanosensation (Figure 11C, E, F). As discussed above, hair sensilla most likely transduces directional force applied to the distal end of the hair. In addition to mechanosensory function, another unknown function can be assumed for the abdominal hair sensilla h3. It houses two sensory cells, des2A, one of them with and one without a tubular body. The sensory function of these neurons is difficult to assume only by ultrastructural analysis, as they lack obvious structures like pores (gustatory), tubular bodies (mechanosensory), or dendritic bulbs, or lamellated outer dendritic segments (hygro- and thermosensory).
 
-## Knob sensilla
+#### Knob sensilla
 
 Hygro- and thermosensory function was assumed for knob sensilla (Hartenstein, 1988), based on structural similarities with hygro-and thermosensory insect sensilla (Altner and Prillinger, 1980; Altner et al., 1981; Steinbrecht, 1984). Thereafter, knob-shaped sensilla sunken in a cuticle cavity associated with three dendrites typically hint towards a hygro- and or thermosensory function. One of the three neurons typically associated with hygro- and thermosensory sensilla displays peculiar structural characteristics as it might be branched or highly lamellated in its tip that ends beneath the knob (Altner and Prillinger, 1980; Altner et al., 1981; Steinbrecht, 1984). Instead of lamellation, we find that one neuron of the thoracic knob sensilla contains a tubular body (Figure 13D, E). Knob sensilla organized in sensory cones also display one sensory cell containing a tubular body, irrespective if they are innervated by two or three neurons in total (Figure 16D, E). This result indicates a mechanosensory and not a hygro- and thermosensory function for these neurons. In the absence of physiological data, however, the sensory function of the knob sensilla remains unclear. A sensory function of the other two knob sensilla neurons in contact chemosensation is not inconceivable. The knob sensilla of the TO are similar in external morphology and are candidates of contact chemosensation due to the indicated expression of certain Grs in their sensory neurons (Rist and Thum, 2017). In sensory neurons of thoracic segments, too, expression of Grs (Gr2a) was assumed based on GAL4 driver line analysis (Colomb et al., 2007). To which sensillum type these sensory neurons belong can now be determined based on the presently established morphological classification.
 
 Additionally, knob sensilla of the larval thoracic segments were associated with two atypical soluble guanylyl cyclases (asGC), Gyc-89Da and Gyc-89Db, which were shown to sense oxygen and are important for response to hypoxia and in larval ecdysis (Vermehren-Schmaedick et al., 2010; Morton et al., 2008). Two neurons were found on each thoracic hemisegment which express both subunits, which fit with the number of thoracic knob sensilla. In addition, each subunit was found to be expressed in two different neurons innervating the TO (per side), which also fits the number of knob sensilla in the TO (Rist and Thum, 2017). Furthermore, both subunits were co-expressed in neurons innervating the terminal sensory cones. It was stated that this is true for all cones (Morton et al., 2008). However, the assigned position seems to be slightly off. We hypothesize that these asGC were actually found in cones containing a knob sensillum (t1, t2, t3, t5, t7). The sixth one, which also appears to be of a different color in the confocal data, is most likely a tracheal dendrite (td) neuron, which we found to occur in this region (not shown). This interpretation is supported by findings that these asGC subunits were also individually expressed in two td neurons in A1 and A2 (per hemisegment) (Morton et al., 2008). Because the knob sensilla of the TO are only innervated by one neuron, which protrudes into the knob structure, we conclude that these neurons, in general (for all knob sensilla), are the ones expressing the asGC. Also, within the knob, the dendrites are swollen and not encased by a dendritic sheath, which makes them the most likely candidates for sensing external cues like oxygen (Figure 13C and Figure 16C, G). Therefore, we conclude that knob sensilla mainly serve chemosensory function (oxygen perception) and mechanosensory function (the latter is not true for TO-associated knob sensilla). K2 in the TO was also associated with CO2 perception, as its single neuron expresses Gr21a and Gr63a (Rist and Thum, 2017), which were shown to mediate CO2 responses (Kwon et al., 2007; Kwon et al., 2011; Jones et al., 2007; Faucher et al., 2006). In contrast to other larval knob sensilla, the dendrite of K2 is lamellated at its tip, which could also indicate a hygrosensory mechanism (Altner and Prillinger, 1980; Rist and Thum, 2017). The function of the third neuron innervating the thoracic and some of the knob sensilla of the anal division is not known and will have to be determined in the future.
 
-## Keilin’s organ
+#### Keilin’s organ
 
 The KO of Drosophila larvae was assumed to serve hygro- and thermosensory functions (Hafez, 1950; Benz, 1956). However, electrophysiological recordings of the KO of Phormia larvae indicate mechanosensory function, probably associated with the crawling behavior of the larvae (Lakes‐Harlan et al., 1991). This finding is in line with the anatomical characteristics of the KO. The organ consists of three hair-like and one respectively, two papilla-like sensilla. Each sensory dendrite terminates with a tubular body, which strongly indicates mechanosensory function. The arrangement of the sensory hair sensilla indicates that they are deflected by forces from different directions and, therefore, could be important for orientation. The exploratory behavior of the larva includes straight crawls interspersed with head casts and turns, that the larva executes to redirect the crawling directory. Turns are carried out by backward contractions of the most anterior segments as far as segment four (Berni et al., 2012). Therefore, the strongest directional change appears in the thoracic segments, where the KO could sense these changes in direction. In addition, it would also be imaginable that they are involved in the perception of upward and downward movements during orientation behaviors like rearing (Green et al., 1983).
 
-## Terminal sensory cones
+#### Terminal sensory cones
 
 The terminal sensory cones of the last abdominal segments are specialized sense organs, which house mainly hair and knob sensilla. Their prominent cone-like structures stick out of the food when the larvae are feeding, putting them in an ideal location to sense changes in oxygen concentrations in their surrounding environment (Vermehren-Schmaedick et al., 2010). Dwelling into the media enables the larvae to hide from predators and strong daylight to prevent desiccation (Kim et al., 2017). But completely submerging into the medium is dangerous as well, as it leads to hypoxia and death, eventually. Therefore, it is essential to dig exactly deep enough to be sheltered but not completely covered. The cone-associated mechanosensory hair sensilla might be activated when the cones are immersed into the medium, and therefore, act as a warning signal for the larva.
 
-## Spiracle sense organ
+#### Spiracle sense organ
 
 The sense organ of the posterior spiracle consists of four sensilla that sit around the spiracular opening (Figure 17A). They contain one sensory neuron each, with a tubular body at their dendrites’ tip (Figure 17D), which indicates mechanosensory function. The tubular body is surrounded by a dendritic sheath that is connected to electron-dense cuticular material and the spiracular hairs, which sit on top of the spiracle. The hairs protrude at a 90 degree angle from the spiracle (Figure 17C, D) and are probably deflected when the larva submerges into the substrate. Therefore, the spiracle sense organ could be important for the positioning of the spiracle in the right oxygen-rich environment.
 
-## Outlook
+#### Outlook
 
 In this work, we further extend the understanding of the larval sensory system. We complete the spatial map of all external sensory structures and internal chordotonal organs. We used ultrastructural details to make well-grounded predictions about the putative sensory functions of these sensory organs. These results will serve as a basis for further molecular and functional studies. To complete the understanding of the different modalities of larval sensation, it will be necessary in the future to also address the somatosensory, pharyngeal, and enteric sensory systems with all their sensilla, cells, and ultrastructure. This can now be done in subsequent studies of the EM volume of the entire body of the larva. A complete description of all external and internal sensory inputs of the Drosophila larva is now within reach.
 
 ## Materials and methods
 
-## Fly husbandry
+### Fly husbandry
 
 Drosophila wild-type Canton S ﬂies were kept on standard corn meal medium at room temperature, as previously described (Selcho et al., 2009; Rohwedder et al., 2012; Apostolopoulou et al., 2014). For all experiments, third-instar larvae prior to the wandering stage were used.
 
-## Scanning electron microscopy (SEM)
+### Scanning electron microscopy (SEM)
 
 L3 larvae were rinsed with tap water to remove food residuals. Then, specimens were incubated in tap water at 90 °C for 2 min. Subsequently, larvae were fixed in 2.5% glutaraldehyde in 0.1 M HEPES buffer for 3 hr. The fixative was exchanged each hour. Primary fixation was followed by three washing steps in 0.1 M HEPES buffer, each for 10 min. Then, samples were incubated in 1% osmium tetroxide buffered in 0.1 M HEPES for 2 hr, followed by three washing steps in 0.1 M HEPES for 10 min each. All steps were performed at pH 7 and 4°C. Next, samples were gradually dehydrated in an increasing ethanol series: 30%, 50%, 70% two times for 10 min, and then 70% overnight (all at 4 °C). The next day, dehydration was continued with 80%, 90%, three times 96% for 10 min, and 100% four times for 10 min (at room temperature). Dehydrated samples were transferred to a critical point drier (Bal-Tec CPD 030, Liechtenstein) and critical point dried over liquid CO2. Afterward, samples were glued to aluminum SEM-stubs using adhesive conductive carbon pads (Plano GmbH, Germany) or Conduct-C (Conductive Carbon Cement, Plano GmbH) and subsequently coated with ca. 12 nm platinum in a sputter coater (Quorum Q 150 R ES Sputter-Coater, UK). SEM micrographs were acquired on a FESEM Auriga Crossbeam workstation (Zeiss, Germany) using the SmartSEM software package (Zeiss, Germany).
 
-## Focused ion beam-sem (FIB-SEM)
+### Focused ion beam-sem (FIB-SEM)
 
 Larvae were rinsed in phosphate-buffered saline (PBS) to remove food residuals. For the study of head organs, the anterior half of the larva was incubated in 2% formaldehyde fixative (Sigma-Aldrich, Germany) with 2.5% glutardialdehyde in 0.1 M Na-cacodylate buffer, pH 7.4 for 30–60 min. Then, the head region was cut oﬀ and incubated in fresh fixative for another 90 min. For the investigation of thoracic and abdominal segments, the larva was cut into pieces not larger than four segments. Fixation was carried out similarly to larval heads. Wash- and post-fixation steps were similar to SEM preparation. En-bloc staining was carried out with 1% uranyl acetate and 1% phosphotungstic acid in 70% EtOH in the dark overnight before continuing the alcohol dehydration the next day. Samples were transferred to propylene oxide before embedding in Spurr (Plano, GmbH, Germany) using ascending Spurr concentrations diluted in propylene oxide for optimal tissue infiltration (Rist and Thum, 2017). The resin was drained of the samples by gravity during polymerization. Polymerization was carried out at 65 °C for 72 hr. Samples were mounted on aluminum SEM stubs using adhesive conductive carbon pads (Plano GmbH, Germany). Samples were sputter-coated with ~100 nm platinum.
 
@@ -299,14 +567,14 @@ In FIB-SEM, layers of the sample are mechanically removed by the ion beam of the
 
 **Figure 18.:** (A) In conventional block embedding, the sample is embedded in a bulk of resin. (A’) Block-embedded larval head: Frontal view of the block surface imaged with a stereomicroscope. The contours of the cuticle are complex to identify. Therefore, the block leads to extensive processing prior to Focused Ion Beam-SEM (FIB-SEM): excessive resin must be cut away to expose the region of interest to the ion and the electron beam. (A’’) Block surface seen through the scanning electron microscopy (SEM). Visible are the trenches left by focused ion beam (FIB) slicing of the regions of interest. (B) In contrast, minimal embedding preserves the topology of the sample because only a thin layer of resin covers the sample (B’). Samples can be glued directly to a SEM stub without prior cutting. Body parts and sensilla are visible by SEM (B’’) and can be directly targeted by the FIB. Scale bars: (A’), (A’’): 200 µm; (B’): 100 µm (B’’): 20 µm.
 
-## Whole larval volume
+### Whole larval volume
 
 Sensilla and neuron reconstruction was done on a STEM (scanning transmission electron microscopy) volume of a whole first instar larva; information on the technical details of its generation is mentioned in Peale et al., 2024.
 
-## IMAGE processing
+### IMAGE processing
 
 Out of the whole larval volume, we extracted smaller volumes of the sensory organs. The obtained image stacks were imported to Amira (Thermo Fischer Scientific, v2019). Because the whole larval volume was already aligned, the stacks were only slightly realigned by manual correction. FIB-SEM stacks were aligned in FIJI (Schindelin et al., 2012) using the TrakEM2 plugin (Cardona et al., 2012). In Amira, structures of interest were segmented and transformed into 3D objects. Next, the segmentations were imported to Blender (Blender Institute, Amsterdam), where the 3D reconstructions were manually finished using the preliminary segmentation as a template.
 
-## FIB-SEM/SEM image processing
+### FIB-SEM/SEM image processing
 
 Micrographs were processed in FIJI/ImageJ (NIH, USA) for slight contrast and brightness adjustments.

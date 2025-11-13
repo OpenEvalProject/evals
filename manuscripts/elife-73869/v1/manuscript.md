@@ -14,15 +14,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 College of Life Sciences, Zhejiang University Hangzhou China
-2. https://ror.org/01a15g348 Bioversity International Maccarese Italy
-3. https://ror.org/02z2d6373 Yunnan Academy of Agricultural Sciences Kunming China
+1. College of Life Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Bioversity International Maccarese Italy ([ROR:01a15g348](https://ror.org/01a15g348))
+3. Yunnan Academy of Agricultural Sciences Kunming China ([ROR:02z2d6373](https://ror.org/02z2d6373))
 
 † Corresponding author
 
 ## Abstract
 
-Whether species coculture can overcome the shortcomings of crop monoculture requires additional study. Here, we show how aquatic animals (i.e. carp, crabs, and softshell turtles) benefit paddy ecosystems when cocultured with rice. Three separate field experiments and three separate mesocosm experiments were conducted. Each experiment included a rice monoculture (RM) treatment and a rice-aquatic animal (RA) coculture treatment; RA included feed addition for aquatic animals. In the field experiments, rice yield was higher with RA than with RM, and RA also produced aquatic animal yields that averaged 0.52–2.57 t ha -1 . Compared to their corresponding RMs, the three RAs had significantly higher apparent nitrogen (N)-use efficiency and lower weed infestation, while soil N contents were stable over time. Dietary reconstruction analysis based on 13 C and 15 N showed that 16.0–50.2% of aquatic animal foods were from naturally occurring organisms in the rice fields. Stable-isotope-labeling ( 13 C) in the field experiments indicated that the organic matter decomposition rate was greater with RA than with RM. Isotope 15 N labeling in the mesocosm experiments indicated that rice used 13.0–35.1% of the aquatic animal feed-N. All these results suggest that rice-aquatic animal coculture increases food production, increases N-use efficiency, and maintains soil N content by reducing weeds and promoting decomposition and complementary N use. Our study supports the view that adding species to monocultures may enhance agroecosystem functions.
+Whether species coculture can overcome the shortcomings of crop monoculture requires additional study. Here, we show how aquatic animals (i.e. carp, crabs, and softshell turtles) benefit paddy ecosystems when cocultured with rice. Three separate field experiments and three separate mesocosm experiments were conducted. Each experiment included a rice monoculture (RM) treatment and a rice-aquatic animal (RA) coculture treatment; RA included feed addition for aquatic animals. In the field experiments, rice yield was higher with RA than with RM, and RA also produced aquatic animal yields that averaged 0.52–2.57 t ha-1. Compared to their corresponding RMs, the three RAs had significantly higher apparent nitrogen (N)-use efficiency and lower weed infestation, while soil N contents were stable over time. Dietary reconstruction analysis based on 13C and 15N showed that 16.0–50.2% of aquatic animal foods were from naturally occurring organisms in the rice fields. Stable-isotope-labeling (13C) in the field experiments indicated that the organic matter decomposition rate was greater with RA than with RM. Isotope 15N labeling in the mesocosm experiments indicated that rice used 13.0–35.1% of the aquatic animal feed-N. All these results suggest that rice-aquatic animal coculture increases food production, increases N-use efficiency, and maintains soil N content by reducing weeds and promoting decomposition and complementary N use. Our study supports the view that adding species to monocultures may enhance agroecosystem functions.
 
 ## Introduction
 
@@ -42,53 +42,53 @@ In this study, we conducted three field experiments and three mesocosm experimen
 
 ## Results
 
-## Yield, soil N content, and N-use efficiency in the field experiments
+### Yield, soil N content, and N-use efficiency in the field experiments
 
 We conducted three 4-year-long field experiments: one with rice-carp, one with rice-crabs, and one with rice-turtles. We found that rice yield was significantly higher in the RA treatment (the treatment with the coculture of rice and an aquatic animal) than in the RM treatment (the treatment with rice monoculture) in the rice-carp experiment (F1,10=7.828, p = 0.019), the rice-crab experiment (F1,10=5.957, p = 0.035), and the rice-turtle experiment (F1,10=12.472, p = 0.005) (Figure 1a). Compared to the corresponding monoculture, average rice yield over the 4 years in the RA treatment was 9.13% ± 3.11% higher for rice-carp, 12.05% ± 1.16 higher for rice-crabs, and 8.69% ± 1.74 higher for rice-turtles. During the experimental period, the average annual aquatic animal yield (in t ha–1) was 0.85 for rice-carp, 0.56 for rice-crab, and 2.66 for rice-turtle systems (Figure 1a).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig1-v1.jpg)
 
-**Figure 1.:** a), soil nitrogen content (b), and apparent N-use efficiency (c) in the field experiments.In (a), rice yields are indicated by symbols and lines, and aquatic animal yields are indicated by bars. Values are means ± SE (n = 6).Figure 1—source data 1.Figure 1a–c.
+**Figure 1.:** In (a), rice yields are indicated by symbols and lines, and aquatic animal yields are indicated by bars. Values are means ± SE (n = 6).
 
 Averaged across all 4 years, total soil N content was not significantly different in the RA vs. the RM treatment in all three experiments (F1,10=0.294 and p = 0.687 for the rice-carp experiment; F1,10=1.325 and p = 0.154 for the rice-crab experiment; and F1,10=0.236 and p = 0.345 for the rice-turtle experiment) (Figure 1b). At the end of the experiments, total soil N contents had not changed relative to initial values in the RA treatment of the rice-carp (t5 = −0.533, p = 0.631), rice-crab (t5 = 0.213, p = 0.842), and rice-turtle systems (t5 = −1.279, p = 0.259) (Appendix 1—figure 1).
 
 Compared to the RM treatment, the RA treatment received extra N from fish feed (Appendix 2—table 1). Data from the 4 years of the experiments showed that apparent N-use efficiency (ANUE) was higher in the RA treatment than in the RM treatment for the rice-crab system (F1,10=9.557, p = 0.011) and the rice-turtle system (F1,10=7.302, p = 0.022) but not for the rice-carp system (F1,10=0.209, p = 0.657) (Figure 1c).
 
-## Weed biomass, food sources, and decomposition in the field experiments
+### Weed biomass, food sources, and decomposition in the field experiments
 
 Weed biomass was significantly lower in the RA treatment than in the RM treatment in the rice-carp experiment (F1,10=513.456, p = 0.000), the rice-crab experiment (F1,10=538.032, p = 0.000), and the rice-turtle experiment (F1,10=557.659, p = 0.000) (Figure 2). In all three experiments, weed biomass significantly decreased over time in the RA treatment (p < 0.05) but not in the RM treatment (p > 0.05).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig2-v1.jpg)
 
-**Figure 2.:** No herbicides were used in the experiment. Values are means ± SE (n = 6).Figure 2—source data 1.Figure 2.
+**Figure 2.:** No herbicides were used in the experiment. Values are means ± SE (n = 6).
 
 Food source analysis showed that 50.2%, 34.9%, and 16.0% of the carp, crab, and turtle foods, respectively, were from the field environment rather than from applied feed (Figure 3). The main non-feed food sources for the aquatic animals in the rice fields included weeds, macro-algae, phytoplankton, zooplankton, and zoobenthos (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig3-v1.jpg)
 
-**Figure 3.:** 13C and δ15N), and the contribution of food sources to the aquatic animal diet in the field experiments.In each of the three plots in the figure, the white zone represents the proportion of food that aquatic animals (i.e. carp, crabs, or turtles) obtained from feed, and the grey zone represents the percentage of food that aquatic animals obtained from the rice field. The values in the rectangles to the right indicate the rice field food components as percentages of the total food obtained by the aquatic animals. POM: particulate organic matter.Figure 3—source data 1.Figure 3.
+**Figure 3.:** In each of the three plots in the figure, the white zone represents the proportion of food that aquatic animals (i.e. carp, crabs, or turtles) obtained from feed, and the grey zone represents the percentage of food that aquatic animals obtained from the rice field. The values in the rectangles to the right indicate the rice field food components as percentages of the total food obtained by the aquatic animals. POM: particulate organic matter.
 
 Determination of the stable isotope (13C) content in maize leaves indicated that the percentage remaining in maize litter tubes at 40 days after the beginning (DAB) of the experiment was lower in the RA treatment than in the RM treatment in the rice-turtle experiment (F1,10 = 23.353, p = 0.001) (Figure 4) but did not significantly differ between RM and RA treatments in the rice-carp experiment (F1,10 = 0.076, p = 0.788) or the rice-crab experiment (F1,10 = 1.092, p = 0.321) (Figure 4). At 80 DAB, however, the decomposition rate was higher in the RA treatment than in the RM treatment in all three experiments (for rice-carp: F1,10 = 11.432, p = 0.007; for rice-crab: F1,10=15.572, p = 0.003; for rice-turtle: F1,10 = 14.349, p = 0.004) (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig4-v1.jpg)
 
-**Figure 4.:** A higher percentage of 13C remaining indicates slower decomposition. Values are means ± SE (n = 6). An asterisk indicates a significant difference between RM (rice monoculture) and RA (rice-aquatic animal coculture) at p < 0.05; ns indicates that the difference was not statistically significant.Figure 4—source data 1.Figure 4.
+**Figure 4.:** A higher percentage of 13C remaining indicates slower decomposition. Values are means ± SE (n = 6). An asterisk indicates a significant difference between RM (rice monoculture) and RA (rice-aquatic animal coculture) at p < 0.05; ns indicates that the difference was not statistically significant.
 
-## Complementary utilization of feed-N by aquatic animals and rice in the mesocosm experiments
+### Complementary utilization of feed-N by aquatic animals and rice in the mesocosm experiments
 
 The δ15N percentage in the rice plant biomass was significantly higher in the RA treatment than in the RM treatment in all three mesocosm experiments (for rice-carp: F1,10 = 1278, p = 0.000; for rice-crab: F1,10 = 210.320, p = 0.000; for rice-turtle: F1,10 = 91.572, p = 0.000) (Appendix 1—figure 2). The results from the mesocosm experiments also indicated that rice used from 13.02% to 35.13% of the feed-15N (Figure 5a). The N in feed that was not consumed by aquatic animals represented 9.61–30.65% of the rice biomass-N in the RA treatments (Figure 5b).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig5-v1.jpg)
 
-**Figure 5.:** 15 N labeling in the mesocosm experiments.(a) Percentages of feed-N in rice plants, aquatic animals, and the environment (e.g., soil and water). (b) Total N in rice biomass at the end of the experiments. Values are means ± SE (n = 6).Figure 5—source data 1.Figure 5a and b.
+**Figure 5.:** (a) Percentages of feed-N in rice plants, aquatic animals, and the environment (e.g., soil and water). (b) Total N in rice biomass at the end of the experiments. Values are means ± SE (n = 6).
 
-## N accumulation in the mesocosm experiments
+### N accumulation in the mesocosm experiments
 
 The δ15N content in the soil in the mesocosm experiments did not significantly differ at the beginning vs. the end for the RM treatments (for rice-carp: t10 = 0.131, p = 0.449, n = 6; for rice-crab: t10 = 0.115, p = 0. 455, n = 6; for rice-turtle: t10 = 0.523, p = 0.623, n = 6), but was significantly higher at the end than at the beginning for the RA treatments (for rice-carp: t10 = 2.178, p = 0.027, n = 6; for rice-crab: t10 = 2.153, p = 0.028, n = 6; for rice-turtle: t10 = 3.292, p = 0.004, n = 6) (Figure 6a). The total N concentration in the soil was also significantly higher at the end than at the beginning of the experiments for the RA treatments (for rice-carp: t10 = 2.765, p = 0.009, n = 6; for rice crab: t10 = 3.204, p = 0.005, n = 6; for rice-turtle: t10 = 2.519, p = 0.015, n = 6) but not for the RM treatments (for rice-carp: t10 = 0.477, p = 0.322, n = 6; for rice-crab: t10 = 1.774, p = 0.053, n = 6; for rice-turtle: t10 = 0.132, p = 0.449, n = 6) (Figure 6b).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/73869/elife-73869-fig6-v1.jpg)
 
-**Figure 6.:** 15N content and total soil N content at the beginning vs the end of the mesocosm experiments.(a) δ15N value in soil at the beginning and end of the mesocosm experiments. (b) Total N in soil at the beginning and end of the mesocosm experiments. Values are means ± SE (n = 6). An asterisk indicates a significant difference between the before and after values for each treatment in each rice-aquatic system at p < 0.05; ns indicates that the difference was not statistically significant.Figure 6—source data 1.Figure 6a and b.
+**Figure 6.:** (a) δ15N value in soil at the beginning and end of the mesocosm experiments. (b) Total N in soil at the beginning and end of the mesocosm experiments. Values are means ± SE (n = 6). An asterisk indicates a significant difference between the before and after values for each treatment in each rice-aquatic system at p < 0.05; ns indicates that the difference was not statistically significant.
 
 ## Discussion
 
@@ -114,7 +114,7 @@ In our previous survey, the three typical types of coculture (i.e. rice-carp, ri
 
 ## Materials and methods
 
-## The rice–aquatic animal coculture systems in the study
+### The rice–aquatic animal coculture systems in the study
 
 Three coculture systems, namely rice-carp, rice-crab, and rice-turtle (Figure 7), were studied. These coculture systems have been developed and adapted to different rice-growing areas in China (Hu et al., 2016). The rice-carp coculture system, for example, has a long history and is widely practiced in south China (Xie et al., 2011; Wang et al., 2018). In recent decades, the rice-crab coculture system has been rapidly developing in northeastern China (Xu et al., 2019), and the rice-turtle coculture system has been rapidly developing in south China (Zhang et al., 2017). In these systems, the aquatic animals (i.e. carp, crabs, and softshell turtles, Figure 7) are partnered with rice plants during the whole rice-growing period (130–150 days) and are harvested every year when the rice matures. These three aquatic animals are economically important, and are usually cultured in fish ponds or paddy fields by local farmers. The meat of all these species is a popular food of the local people. To increase the growth and quality of aquatic animals in coculture systems, farmers often apply feed in the form of pellets (Appendix 2—table 1).
 
@@ -128,11 +128,11 @@ The Chinese mitten crab (Eriocheir sinensis Milne-Edwards) is used in the rice-c
 
 The Chinese softshell turtle (Pelodiscus sinensis) is often cultured in paddy fields by local farmers in southeastern China (Figure 7C). The turtles are omnivores but prefer animal diets (He, 2017). In this rice-turtle system, the growing season is from middle June to early November (ca. 140 days). The baby turtles (ca. 150 g each) are released into the field 1 week after rice is transplanted. The turtles remain with the rice plants for the whole rice-growth period. In the current study, pellet feed (6.51% N) was applied twice per day at ca. 7:00 am and 5:00 pm throughout the coculture period. The daily amount of feed was initially set as 0.5%–1.0% of the turtle fresh weight but was increased as the turtles grew. By turtle harvest, the total inputs of the feed and feed-N for RA plots were 1.62 t ha–1 and 105.46 kg ha–1, respectively. (Appendix 2—table 1). After they are harvested from paddy fields, the turtles are used as food or are temporarily cultured in fish ponds until they are used as food.
 
-## Ethics statement
+### Ethics statement
 
 In the following experiments, the samples of all aquatic animals (i.e. carp, crabs, and softshell turtles) were collected and measured in accordance with the approved guidelines of the Zhejiang University Experimental Animal Management Committee (reference number SYXK(Zhe)2018–0016). Details on the handling of animal samples were described in the Methods section.
 
-## Field experiments
+### Field experiments
 
 Each of three field experiments (one each for rice-carp, rice-crab, and rice-turtle systems) was conducted for 4 years (2017–2020) at a site (one system per site) where the particular system was widely practiced. The three sites are described in the supporting information (see Appendix 3).
 
@@ -152,13 +152,17 @@ At harvest in each year of the experiments, samples of rice plants and aquatic a
 
 Every experimental year, soil samples (0–20 cm depth) were collected immediately after harvest from each plot. All soil samples were air dried. Soil organic matter (SOM) content was determined by the K2Cr2O7 oxidation method, and total nitrogen (N) content was determined by the Kjeldahl method (Lu, 1999).
 
-We used the data collected in 2018 to estimate apparent N-use efficiency (ANUE) by calculating percentage of the input N that was used by rice and aquatic animals (Moll et al., 1982; Mayer et al., 2015; Zhang et al., 2017) as follows:(1)ANUE %=NyNs×100
+We used the data collected in 2018 to estimate apparent N-use efficiency (ANUE) by calculating percentage of the input N that was used by rice and aquatic animals (Moll et al., 1982; Mayer et al., 2015; Zhang et al., 2017) as follows:
+
+$$
+ANUE %=\frac{N_{y}}{N_{s}}\times100
+$$
 
 where Ny is the total amount of N contained in the grain and straw of rice plants, and in the aquatic animals that were removed from the paddy system, and Ns is the total input of fertilizer-N and feed-N. Ny was determined by multiplying the biomass of rice (grain and straw) and aquatic animals by the percentage of N in rice and aquatic animals. We assumed that the natural N input (e.g. N fixed by bacteria, N in the irrigation water, and atmospheric N deposition) was similar between RM and RA plots, and natural N input was therefore not included in our estimations of ANUE.
 
 Statistical analysis was conducted using the GLM in SPSS (V.20.0, RRID: SCR_002865). All data were subjected to a homogeneity test. If the data did not meet the assumptions of normality and homogeneity, they were log-transformed before analysis. For each field experiment, ANOVAs with a split-plot design (i.e. treatment RM and RA as the main plots and experimental years as the sub-plots) were performed on rice yields, total soil N content, ANUE, and weed biomass. For RM or RA plots, total N in the soil at the beginning and end of the experiment were compared by using paired t-tests (SPSS V.20.0, RRID: SCR_002865).
 
-## Mesocosm experiments
+### Mesocosm experiments
 
 To determine whether unconsumed and unassimilated feed-N is used by aquatic animals in rice-carp, rice-crab, or rice-turtle systems, we conducted three independent mesocosm experiments (one for each kind of system) at the Experimental Station of Zhejiang University in Deqing County, Zhejiang Province (30°33′N, 119°32′E.). The mesocosm experiments were conducted in 2019. The fate of feed-N was traced by using stable-isotope 15N-labeled feed in each mesocosm experiment.
 
@@ -170,6 +174,22 @@ Because soybean is the major raw ingredient of feeds for the three aquatic anima
 
 At harvest, samples of rice plants, aquatic animals (carp, crabs, and turtles), and soil were collected from each mesocosm (see Appendix 11). The 15N content in all samples of rice plants, aquatic animals, and soil was quantified with a ThermoFinnigan DELTA Plus continuous flow isotope ratio mass spectrometer.
 
-We calculated the contribution of feed-N to total rice biomass-N with a linear mixing model (Phillips and Gregg, 2003):(2)δ15NRM×a+δ15Nfeed×b=δ15NRA(3)a+b=1(4)b=(δ15NRA−δ15NRM)/(δ15Nfeed−δ15NRM)
+We calculated the contribution of feed-N to total rice biomass-N with a linear mixing model (Phillips and Gregg, 2003):
+
+$$
+\delta^{15}N_{RM}\timesa+\delta^{15}N_{feed}\timesb=\delta^{15}N_{RA}
+$$
+
+
+
+$$
+a+b=1
+$$
+
+
+
+$$
+b=(\delta^{15}N_{RA}−\delta^{15}N_{RM})/(\delta^{15}N_{feed}−\delta^{15}N_{RM})
+$$
 
 where a is the contribution of soil N to rice total biomass-N; b is the contribution of feed-N to rice total biomass-N; δ15NRM is the δ15N value of the rice plants in the RM treatment; δ15Nfeed is the δ15N value of 15N-labeled feed; and δ15NRAS is the δ15N value of rice plants in the RA treatment. For RM or RA mesocosms, δ15N and total N in the soil at the beginning and end of the experiment were compared by using one-tailed t-tests under the assumption that δ15N and total N in the soil would increase after the experiments (SPSS V.20.0, RRID: SCR_002865).

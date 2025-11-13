@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.04605.001 Previously we showed, using task-evoked fMRI, that compensatory intact hand usage after amputation facilitates remapping of limb representations in the cortical territory of the missing hand ( Makin et al., 2013a ). Here we show that compensatory arm usage in individuals born without a hand (one-handers) reflects functional connectivity of spontaneous brain activity in the cortical hand region. Compared with two-handed controls, one-handers showed reduced symmetry of hand region inter-hemispheric resting-state functional connectivity and corticospinal white matter microstructure. Nevertheless, those one-handers who more frequently use their residual (handless) arm for typically bimanual daily tasks also showed more symmetrical functional connectivity of the hand region, demonstrating that adaptive behaviour drives long-range brain organisation. We therefore suggest that compensatory arm usage maintains symmetrical sensorimotor functional connectivity in one-handers. Since variability in spontaneous functional connectivity in our study reflects ecological behaviour, we propose that inter-hemispheric symmetry, typically observed in resting sensorimotor networks, depends on coordinated motor behaviour in daily life. DOI: http://dx.doi.org/10.7554/eLife.04605.001
+Previously we showed, using task-evoked fMRI, that compensatory intact hand usage after amputation facilitates remapping of limb representations in the cortical territory of the missing hand (Makin et al., 2013a). Here we show that compensatory arm usage in individuals born without a hand (one-handers) reflects functional connectivity of spontaneous brain activity in the cortical hand region. Compared with two-handed controls, one-handers showed reduced symmetry of hand region inter-hemispheric resting-state functional connectivity and corticospinal white matter microstructure. Nevertheless, those one-handers who more frequently use their residual (handless) arm for typically bimanual daily tasks also showed more symmetrical functional connectivity of the hand region, demonstrating that adaptive behaviour drives long-range brain organisation. We therefore suggest that compensatory arm usage maintains symmetrical sensorimotor functional connectivity in one-handers. Since variability in spontaneous functional connectivity in our study reflects ecological behaviour, we propose that inter-hemispheric symmetry, typically observed in resting sensorimotor networks, depends on coordinated motor behaviour in daily life.
 
 ## Introduction
 
@@ -27,31 +27,217 @@ The relationship between deprivation-triggered brain plasticity and adaptive beh
 
 Changes in brain activity underlying task performance may also be captured indirectly by measuring spontaneous fluctuations in fMRI signal while participants are not performing a task, but are instead resting in the scanner (Gilaie-Dotan et al., 2013; Harmelech and Malach, 2013). During rest, the human brain is characterised by activation patterns that are temporally coherent and reproducible across known functional networks, and this coherence is termed ‘functional connectivity’ (Biswal et al., 1995; Nir et al., 2006; Smith et al., 2009; Yeo et al., 2011). To date, the relationship between altered resting-state functional connectivity and compensatory behaviour in one-handers is not known (Yu et al., 2014). Since it has been hypothesised that patterns of resting-state functional connectivity reflect the activity patterns evoked by every-day behaviours (Harmelech and Malach, 2013), we predicted that the way individuals behave to compensate for their disability would also be reflected in resting-state connectivity patterns. We focused on inter-hemispheric functional connectivity patterns, which are stronger between homologous regions along the sensorimotor homunculus, resulting in a symmetrical connectivity pattern. We aimed to test whether this symmetry is disrupted in one-handers who have a more asymmetrical pattern of limb use in daily life (i.e., increased usage of their intact hand vs their residual arm).
 
-Here we identified atypical asymmetry in functional connectivity and in structural features (as measured by white matter microstructure) in a relatively large sample of one-handers (n = 14, see Table 1 for demographic details) compared with matched two-handed controls (n = 23). Importantly, the degree of functional connectivity between the two homologous hand regions in the sensorimotor cortex reflected the degree to which one-handers utilised their residual arm during daily activities. These findings extend our previous reports by demonstrating that resting-state connectivity alterations reflect adaptive behaviours beyond the scope that could be identified using task-evoked brain activity. These findings also demonstrate the imprinting of daily behaviours in spontaneous brain activity, as previously postulated (Harmelech and Malach, 2013).10.7554/eLife.04605.005Table 1.Demographic details of individuals with congenital limb absenceDOI: http://dx.doi.org/10.7554/eLife.04605.005ParticipantAgeLevel of limb deficiencyAffected limbA0133below elbowRightA0226below elbowLeftA0337below elbowLeftA0433wristLeftA0527below elbowLeftA0656below elbowLeftA0751wristLeftA0824below elbowRightA0951below elbowRightA1020below elbowLeftA1148above elbowLeftA1224below elbowLeftA1335below elbowRightA1448below elbowLeft
+Here we identified atypical asymmetry in functional connectivity and in structural features (as measured by white matter microstructure) in a relatively large sample of one-handers (n = 14, see Table 1 for demographic details) compared with matched two-handed controls (n = 23). Importantly, the degree of functional connectivity between the two homologous hand regions in the sensorimotor cortex reflected the degree to which one-handers utilised their residual arm during daily activities. These findings extend our previous reports by demonstrating that resting-state connectivity alterations reflect adaptive behaviours beyond the scope that could be identified using task-evoked brain activity. These findings also demonstrate the imprinting of daily behaviours in spontaneous brain activity, as previously postulated (Harmelech and Malach, 2013).
+
+**Table 1.**
+ Demographic details of individuals with congenital limb absence
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Age</th>
+      <th>Level of limb deficiency</th>
+      <th>Affected limb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A01</td>
+      <td>33</td>
+      <td>below elbow</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>A02</td>
+      <td>26</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A03</td>
+      <td>37</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A04</td>
+      <td>33</td>
+      <td>wrist</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A05</td>
+      <td>27</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A06</td>
+      <td>56</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A07</td>
+      <td>51</td>
+      <td>wrist</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A08</td>
+      <td>24</td>
+      <td>below elbow</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>A09</td>
+      <td>51</td>
+      <td>below elbow</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>A10</td>
+      <td>20</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A11</td>
+      <td>48</td>
+      <td>above elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A12</td>
+      <td>24</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>A13</td>
+      <td>35</td>
+      <td>below elbow</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>A14</td>
+      <td>48</td>
+      <td>below elbow</td>
+      <td>Left</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Results
 
-## Increased anatomical asymmetry in the corticospinal tracts of one-handers
+### Increased anatomical asymmetry in the corticospinal tracts of one-handers
 
-The corticospinal tracts mediate a range of descending pathways from cortical motor areas to the spinal cord, as well as ascending tracts to somatosensory cortex. To study structural alterations in motor-related pathways of one-handers, asymmetry in white matter microstructure of the bilateral corticospinal tracts was investigated. Fractional anisotropy (FA), an index commonly derived from diffusion MRI, was used as a probe of tissue microstructure. This measurement is thought to reflect myelination and fibre density, but is also influenced by other micro-features (e.g., membrane permeability, tissue geometry, see ‘Discussion’) (
+The corticospinal tracts mediate a range of descending pathways from cortical motor areas to the spinal cord, as well as ascending tracts to somatosensory cortex. To study structural alterations in motor-related pathways of one-handers, asymmetry in white matter microstructure of the bilateral corticospinal tracts was investigated. Fractional anisotropy (FA), an index commonly derived from diffusion MRI, was used as a probe of tissue microstructure. This measurement is thought to reflect myelination and fibre density, but is also influenced by other micro-features (e.g., membrane permeability, tissue geometry, see ‘Discussion’) (Zatorre et al., 2012; Jones et al., 2013; Sampaio-Baptista et al., 2013). One-handers showed increased asymmetry in white matter microstructure (reflected by decreased white matter FA in the corticospinal tract contralateral to the missing hand relative to the ipsilateral tract) compared to controls (p = 0.003, randomisation test, Figure 1A). The effect peaked at the posterior limb of the internal capsule (peak z coordinate = 88, p = 0.02 corrected, Figure 1B), an area that contains sensory thalamic fibres, but was also distributed across extensive regions of the tract (Figure 1C). No significant group differences were found for control tracts that are not directly associated with the sensorimotor system (Inferior fronto-occipital fasciculus: p = 0.28, Inferior longitudinal fasciculus: p = 0.27, randomisation tests).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04605/elife-04605-fig1-v1.jpg)
 
-**Figure 1.:** (A) White matter values (mean fractional anisotropy ± s.e.m.) were extracted from the bilateral corticospinal tracts of each participant, and laterality indices were computed to determine the level of white matter asymmetry across hemispheres ([(intact − residual)/(intact + residual)] for one-handers, and [(dominant − nondominant)/(dominant + nondominant)] for controls). Laterality indices were significantly higher in one-handers compared to controls. (B) To spatially identify regions of increased white-matter laterality, laterality indices were computed for each slice along the superior–inferior axis of the corticospinal tracts, and a group comparison was conducted using permutation-based cluster statistics. Regions showing significant group differences along the corticospinal tracts were centred around the posterior limb of the internal capsule, reflecting higher laterality in one-handers compared to controls. Results are presented on the left corticospinal tract from a posterior view. (C) Right: Regions that show significantly higher laterality values in one-handers are presented on the left corticospinal tract (highlighted in green) along with their spatial locations along the z axis, as marked by arrows. Left: The lateralisation profile of white matter microstructure along the corticospinal tract is represented by p-values, derived from the comparison between one-handers and controls. Higher values indicate stronger statistical differences. The red line marks the significance threshold, corrected for multiple comparisons. 1H, one-handers; CTR, controls; asterisks denote significance at the level of **p < 0.01.DOI: http://dx.doi.org/10.7554/eLife.04605.002
+**Figure 1.:** (A) White matter values (mean fractional anisotropy ± s.e.m.) were extracted from the bilateral corticospinal tracts of each participant, and laterality indices were computed to determine the level of white matter asymmetry across hemispheres ([(intact − residual)/(intact + residual)] for one-handers, and [(dominant − nondominant)/(dominant + nondominant)] for controls). Laterality indices were significantly higher in one-handers compared to controls. (B) To spatially identify regions of increased white-matter laterality, laterality indices were computed for each slice along the superior–inferior axis of the corticospinal tracts, and a group comparison was conducted using permutation-based cluster statistics. Regions showing significant group differences along the corticospinal tracts were centred around the posterior limb of the internal capsule, reflecting higher laterality in one-handers compared to controls. Results are presented on the left corticospinal tract from a posterior view. (C) Right: Regions that show significantly higher laterality values in one-handers are presented on the left corticospinal tract (highlighted in green) along with their spatial locations along the z axis, as marked by arrows. Left: The lateralisation profile of white matter microstructure along the corticospinal tract is represented by p-values, derived from the comparison between one-handers and controls. Higher values indicate stronger statistical differences. The red line marks the significance threshold, corrected for multiple comparisons. 1H, one-handers; CTR, controls; asterisks denote significance at the level of **p < 0.01.
 
 Since accumulating evidence links white matter microstructure with motor behaviour (Scholz et al., 2009; Sampaio-Baptista et al., 2013), we aimed to test if asymmetry of white matter microstructure would be related to compensatory arm usage, as previously assessed (Makin et al., 2013a). However, no significant relationship was found (r = −0.27, p = 0.17, see ‘Materials and methods’).
 
-## Increased functional asymmetry in one-handers
+### Increased functional asymmetry in one-handers
 
-In the typical brain, the sensorimotor system is characterised by high levels of inter-hemispheric functional connectivity between homologous brain areas, resulting in symmetrical connectivity patterns (
+In the typical brain, the sensorimotor system is characterised by high levels of inter-hemispheric functional connectivity between homologous brain areas, resulting in symmetrical connectivity patterns (Biswal et al., 1995; Yeo et al., 2011). To study functional changes in one-handers, voxel-wise alterations in resting-state functional connectivity to the missing hand's territory (or the non-dominant hand region in controls) were examined using a seed-based approach (see ‘Materials and methods’). We defined the seed-region based on the mirror image of task-evoked activation while participants moved their dominant/intact hand (controls/one-handers, respectively). This seed-region encompassed both the primary somatosensory and motor cortices (SI and M1, respectively, see purple region in Figure 2B–C). Connectivity was assessed in one-handers compared with controls across the entire brain. Reduced connectivity to the seed-region was identified in the medial aspect of the homologous (intact) hand region, in the anterior bank of the central sulcus, corresponding with M1 (Figure 2B). This finding reflects an aberration in the typically symmetrical resting-state sensorimotor network. Group comparison of inter-hemispheric connectivity in the intact hand region, defined based on brain activations during hand movements, confirmed reduced connectivity between the two sensorimotor hand regions (p = 0.002, randomisation test, middle panel of Figure 2B). Smaller Clusters showing reductions in connectivity with the seed-region were also identified in the posterior aspect of the dorsomedial prefrontal cortex contralateral to the missing hand and in the middle temporal gyrus bilaterally (Table 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04605/elife-04605-fig2-v1.jpg)
 
-**Figure 2.:** (A) An illustration of the human sensorimotor homunculus, projected on a cortical surface map. Coloured lines show brain areas activated during execution of movements of the arms (blue), hands (purple), and lips (green) in the control group, using task-evoked fMRI scans. (B) Whole-brain group comparison (controls > one-handers) of resting-state functional connectivity using the missing hand's cortical territory as the seed-region. The seed-region (the mirror projection of intact/dominant hand activity, averaged across groups) is shown in purple shading. The orange-yellow clusters show areas with lower levels of connectivity to the missing hand territory in one-handers (corrected, p < 0.05). The insert on the left shows that the main resulting cluster overlaps with the task-evoked hand region, as measured in controls in (A), suggesting lower levels of inter-hemispheric connectivity between the cortical hand regions in one-handers. The bar plot in the middle reflects group-wise mean (±s.e.m.) connectivity levels between the seed-region and the intact hand ROI (defined based on intact/dominant hand activity, averaged across groups). (C) Whole-brain correlations between connectivity levels with the missing hand's seed-region (purple shading) and level of one-handers residual arm usage in daily tasks (level of bimanual usage). Significant correlations were restricted to the anterior aspect of the intact hand knob of the central sulcus, as can be seen in the insert to the left. Scatter plot in the middle reflects connectivity levels between the seed-region and the intact hand region (y axis) versus residual arm use (x axis). The red line on the y axis shows the mean ± confidence interval of controls' hand region inter-hemispheric connectivity. The significant positive correlation (p < 0.005) reflects that one-handers using their residual arm more frequently to support bimanual tasks showed higher levels of hand region functional connectivity, similar to those of control participants. This suggests that increased residual arm usage to support bimanual tasks normalises the aberrantly reduced levels of inter-hemispheric connectivity in one-handers, shown in (B). 1H = one-handers; CTR = controls; Asterisks denote significance at the level of **p < 0.005.DOI: http://dx.doi.org/10.7554/eLife.04605.003
+**Figure 2.:** (A) An illustration of the human sensorimotor homunculus, projected on a cortical surface map. Coloured lines show brain areas activated during execution of movements of the arms (blue), hands (purple), and lips (green) in the control group, using task-evoked fMRI scans. (B) Whole-brain group comparison (controls > one-handers) of resting-state functional connectivity using the missing hand's cortical territory as the seed-region. The seed-region (the mirror projection of intact/dominant hand activity, averaged across groups) is shown in purple shading. The orange-yellow clusters show areas with lower levels of connectivity to the missing hand territory in one-handers (corrected, p < 0.05). The insert on the left shows that the main resulting cluster overlaps with the task-evoked hand region, as measured in controls in (A), suggesting lower levels of inter-hemispheric connectivity between the cortical hand regions in one-handers. The bar plot in the middle reflects group-wise mean (±s.e.m.) connectivity levels between the seed-region and the intact hand ROI (defined based on intact/dominant hand activity, averaged across groups). (C) Whole-brain correlations between connectivity levels with the missing hand's seed-region (purple shading) and level of one-handers residual arm usage in daily tasks (level of bimanual usage). Significant correlations were restricted to the anterior aspect of the intact hand knob of the central sulcus, as can be seen in the insert to the left. Scatter plot in the middle reflects connectivity levels between the seed-region and the intact hand region (y axis) versus residual arm use (x axis). The red line on the y axis shows the mean ± confidence interval of controls' hand region inter-hemispheric connectivity. The significant positive correlation (p < 0.005) reflects that one-handers using their residual arm more frequently to support bimanual tasks showed higher levels of hand region functional connectivity, similar to those of control participants. This suggests that increased residual arm usage to support bimanual tasks normalises the aberrantly reduced levels of inter-hemispheric connectivity in one-handers, shown in (B). 1H = one-handers; CTR = controls; Asterisks denote significance at the level of **p < 0.005.
+
+**Table 2.**
+ Cluster statistics for presented statistical maps
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Statistical parametric map</th>
+      <th>Voxels</th>
+      <th>Max value</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hand-evoked activation (intact hand ROI)</td>
+      <td>305</td>
+      <td>9.09 (Z)</td>
+      <td>−38</td>
+      <td>−26</td>
+      <td>58</td>
+      <td>Primary sensorimotor cortex, intact/dominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Hand-evoked activation</td>
+      <td>166</td>
+      <td>9.84 (Z)</td>
+      <td>22</td>
+      <td>−50</td>
+      <td>−24</td>
+      <td>Intact cerebellum, lobule VI, intact/dominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Seed-based functional connectivity, between group t-test</td>
+      <td>239</td>
+      <td>4.26 (t)</td>
+      <td>−38</td>
+      <td>−24</td>
+      <td>60</td>
+      <td>Primary sensorimotor cortex, intact/dominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Seed-based functional connectivity, between group t-test</td>
+      <td>159</td>
+      <td>4.22 (t)</td>
+      <td>6</td>
+      <td>38</td>
+      <td>40</td>
+      <td>Dorsomedial prefrontal cortex, missing/nondominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Seed-based functional connectivity, between group t-test</td>
+      <td>72</td>
+      <td>3.92 (t)</td>
+      <td>70</td>
+      <td>−36</td>
+      <td>−2</td>
+      <td>Middle temporal gyrus, missing/nondominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Seed-based functional connectivity, between group t-test</td>
+      <td>7</td>
+      <td>3.21 (t)</td>
+      <td>−68</td>
+      <td>−26</td>
+      <td>−12</td>
+      <td>Middle temporal gyrus, intact/dominant hemisphere</td>
+    </tr>
+    <tr>
+      <td>Correlations between voxel-wise functional connectivity values and behavioural scores</td>
+      <td>225</td>
+      <td>0.81 (r)</td>
+      <td>−30</td>
+      <td>−28</td>
+      <td>44</td>
+      <td>Primary sensorimotor cortex, intact/dominant hemisphere</td>
+    </tr>
+  </tbody>
+</table>
+
+_Columns present the cluster size (no. of voxels), the value of the maximum ‘intensity’ within the cluster (Max value), the location of the maximum intensity voxel given as X/Y/Z values in MNI coordinates, and the functional region. Intact/dominant hemisphere relates to the hemisphere contralateral to the intact/dominant hand in one-handers/controls, respectively. Missing/nondominant hemisphere relates to the hemisphere contralateral to the missing/nondominant hand in one-handers/controls, respectively._
 
 To ensure that this effect was not caused by reduced signal-to-noise ratio in the missing hand territory of one-handers, the variance (amplitude) of signal fluctuations within this region was compared between one-handers and controls. No differences were found in the variance of both the mean regional time-course (p = 0.5, randomisation test), or the mean single-voxel time-courses (p = 0.5, randomisation test).
 
-## Resting state connectivity patterns reflect bimanual usage
+### Resting state connectivity patterns reflect bimanual usage
 
 We have previously shown that the missing hand territory of one-handers is activated when one-handers move their residual arm. Given that the missing hand territory (used here as a seed-region) was shown to represent the residual arm, It is possible that variations in connectivity strength between the hand regions of one-handers reflect compensatory arm usage. To address this, a whole brain voxel-wise analysis was conducted to test for positive correlations between functional connectivity values (to the missing hand's territory, as described above) and the level of residual arm usage in everyday activities (Makin et al., 2013a). Significant correlation with behavioural scores was found in a single cluster within the intact cortical hand region (Figure 2C), specifically in the anterior bank of the central sulcus, corresponding with M1. This result indicates that one-handers who employ their residual arm for typically bimanual tasks also demonstrate higher levels of hand region inter-hemispheric connectivity.
 
@@ -71,23 +257,23 @@ The association we established here between behaviour and functional connectivit
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study relied largely on the same population recruited for a previous study, using the same scanning procedures and exclusion criteria as described before (Makin et al., 2013a). Data from one control participant were discarded from the resting states fMRI analysese due to excessive head movements (>3 mm), and data from a different control participant were discarded from diffusion MRI analyses due to problems during data collection. Additionally, three one-handers and three control participants were recruited, resulting in a total of 14 one-handers (age = 36.64 ± 12.02, four with absent right hand, see Table 1 for demographic details) and 24 controls (age = 41.12 ± 12.86, eight left hand dominant). Recruitment was carried through the Oxford Centre for Enablement and Opcare in accordance with NHS national research ethics service approval (10/H0707/29), and written informed consent was obtained.
 
-## Limb-use strategy measurements
+### Limb-use strategy measurements
 
 Use of residual arm and prosthesis in one-handers were assessed with a revised version of the Motor Activity Log (Uswatte et al., 2006), as described before (Makin et al., 2013a). In short, participants with limb absence were requested to rate how frequently they incorporate their residual arm (either directly, or using a prosthesis) in an inventory of daily activities, with varying degrees of motor control. This questionnaire, indexing bimanual usage, was previously validated using limb acceleration data, collected in ecological settings (Makin et al., 2013a).
 
-## Scanning procedures
+### Scanning procedures
 
 The scanning protocol consisted of an anatomical T1 scan, a resting-state scan, a task-evoked scan for body-part functional localisation and two diffusion-weighted imaging scans. All scanning procedures but the resting-state scan were described previously (Makin et al., 2013a). Resting state functional data, based on the blood oxygenation level-dependent (BOLD) signal, were acquired using a three Tesla Verio scanner (Siemens, Erlangen, Germany), and using a multiple gradient echo-planar T2*-weighted pulse sequence, with the parameters: TR = 2410 ms; TE = 30 ms; flip angle = 90°; imaging matrix = 64 × 64; FOV = 192 mm axial slices. 46 slices with slice thickness of 3 mm and no gap were oriented in the oblique axial plane, covering the whole cortex, with partial coverage of the cerebellum. A total of 128 volumes were collected (Makin et al., 2013b). During the scan, participants were asked to lie still for 5 min in a dimmed room with their eyes open, and let their mind wander. They were explicitly asked not to move any body-part.
 
-## MRI data analyses
+### MRI data analyses
 
 All imaging data were processed using FSL 5.1 (www.fmrib.ox.ac.uk/fsl) (Jenkinson et al., 2012). Diffusion and functional MRI data collected from one-handers with absent right limbs (n = 4) were mirror reversed across the mid–sagittal plane prior to all analyses so that the hemisphere corresponding to the missing hand was consistently aligned. Data collected for left-hand dominant controls (n = 8) was also flipped, in order to account for potential biases stemming from this procedure. Note that the proportion of flipped data was not different between experimental groups (χ2(1) = 0.18, p = 0.67).
 
-## Diffusion MRI data analyses
+### Diffusion MRI data analyses
 
 Diffusion data were corrected for eddy-currents and head motion using an affine registration to a non-diffusion-weighted volume. The diffusion tensor model (Basser et al., 1994) was fitted at every voxel to derive fractional anisotropy (FA) maps. The FA reflects how directional water diffusion is within tissue, due to presence of structural barriers. In the text we interchangeably refer to FA and ‘white matter microstructure’, but we stress that the latter terminology corresponds to a simplified interpretation.
 
@@ -97,25 +283,25 @@ To compare the laterality of the corticospinal tracts between experimental group
 
 In order to further localise regions that drive the group white matter laterality difference, lateralities between corresponding locations along the corticospinal tracts were computed. For each participant separately and for each slice along the z-axis, a laterality index was computed as described above, using voxels of the skeletonised tracts within that slice. The resulting single-subject point–wise FA laterality indices were then compared between groups using permutation-based cluster statistics. Clusters were tested for significance using threshold-free cluster enhancement (Smith and Nichols, 2009) at p < 0.05, corrected for multiple comparisons across space. For presentation purposes, FA clusters were projected onto the canonical left corticospinal tract.
 
-## Preprocessing of functional data
+### Preprocessing of functional data
 
 Functional data were analysed using FMRIB's expert analysis tool (FEAT, version 5.98). Preprocessing of each individual task-evoked run was described previously (Makin et al., 2013a). For each individual resting states scan, the following pre-statistics processing was applied: motion correction using FMRIB's Linear Image Registration Tool (Jenkinson et al., 2002); brain-extraction using BET (Smith, 2002); and high pass temporal filtering of 150 s. Non-neuronal contributions to the BOLD signal were removed from the unsmoothed data of each participant by linear regression of motion parameters, as well as time-courses extracted from the ventricles and the white-matter. Data were then spatially smoothed using a Gaussian kernel of 8 mm full width at half maximum.
 
 All functional data were aligned to structural images (within-subject) initially using linear registration, then optimised using Boundary-Based Registration (Greve and Fischl, 2009). Structural images were transformed to standard MNI space using non-linear registration, and the resulting warp fields were applied to the functional statistical summary images.
 
-## Functional data analysis
+### Functional data analysis
 
 All statistical analyses were conducted using FSL and in-house Matlab code (Mathworks, Natick, MA, USA). To compute statistical parametric maps, we applied a voxel-based general linear model (GLM), as implemented in FEAT. Low-level analysis is detailed below for resting-state and task-evoked datasets. Group level analysis of spatial maps was carried out using FMRIB's local analysis of mixed effects. The cross-participant GLM included planned comparisons across or between the two groups. Z (Gaussianised T/F) statistic images were thresholded as detailed below. Family-wise error corrected cluster significance threshold of p < 0.05 was applied to the suprathreshold clusters.
 
-## ROI definition
+#### ROI definition
 
 ROI definition was based on a block design fMRI task, involving simple movements of the left and right hand/arm, lips and feet, resulting in six experimental conditions, as previously described (Makin et al., 2013a). The block design paradigm, as well as its temporal derivatives, was convolved with a gamma function (Friston et al., 1998) to model the activation time-course, associated with hand and arm movements (versus baseline) at the individual participant level. The contrast of main interest was the intact hand condition against baseline. The intact hand ROI was defined by averaging the low-level contrast of intact/dominant hand vs rest across the two groups (one-handers and controls). A threshold of Z > 7.5 was chosen, yielding a cluster centered around the hand knob of the central sulcus. As the spatial resolution and co-registration methods used here are insufficient to reliably dissociate the somatosensory and motor primary cortices, cortical regions spanning the central sulcus, and the pre- and post–central gyri were described here as ‘sensorimotor’. Since the primary sensorimotor cortex shows the highest levels of functional symmetry across the two cerebral hemispheres (Stark et al., 2008), the ROI representing the cortical territory of the missing hand was created by mirror flipping the intact hand ROI coordinates on the x-axis.
 
-## Homunculus construction
+#### Homunculus construction
 
 To visualise the typical representation of lips, hands and arms in Figure 2, contrasts for each task condition was defined against the feet condition in each control participant. Low- and high-level analyses were carried as described above. Each high level map was thresholded at Z >5.5 and the thresholded maps were mirror flipped and summed, in order to achieve a symmetrical bilateral group map. Each lips map was divided in 2, since lip movements are bilateral. Symmetrical maps of homologous body parts were then averaged, resulting in three bilateral maps, which were thresholded at Z >5. Note that due to the comparison between each body-part condition and baseline, the cluster involving the lips was merged with activation from the secondary somatosensory cortex. Resulting maps were projected on an inflated averaged brain, using the Connectome Workbench (http://humanconnectome.org/software/get-connectome-workbench.html, [Marcus et al., 2011]). This procedure was carried for visualisation purposes only, and was not used during data analysis.
 
-## Resting-state statistical analyses
+#### Resting-state statistical analyses
 
 The cross-groups ROI of the missing/nondominant hand region (in one-handers and control participants, respectively) was used as a seed-region in a functional connectivity analysis. For each participant separately, the averaged time-course of the voxels comprising this ROI was correlated with each of all other voxel time-courses of the brain, using MATLAB. Resulting Pearson correlation coefficients were converted to z-values using Fisher's correction to improve normality. A group disparity map was created using a two-tailed two-sampled t test, using MATLAB. All maps were corrected for multiple comparisons using FDR at significance threshold of p < 0.05. Resulting disparity values were projected onto an inflated averaged brain, using Workbench. To assess the significance of the hand regions inter-hemispheric connectivity effect, an independent ROI analysis was conducted. To that end, the temporal correlation between the time-courses of the intact and missing hand ROIs was calculated for each participant. The resulting values were compared between groups using a randomisation test, as described before, under the null hypothesis of no group differences in inter-regional functional connectivity.
 

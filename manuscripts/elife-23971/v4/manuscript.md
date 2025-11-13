@@ -23,25 +23,25 @@
 
 ## Abstract
 
-10.7554/eLife.23971.001 Homeostatic systems that rely on genetic regulatory networks are intrinsically limited by the transcriptional response time, which may restrict a cell’s ability to adapt to unanticipated environmental challenges. To bypass this limitation, cells have evolved mechanisms whereby exposure to mild stress increases their resistance to subsequent threats. However, the mechanisms responsible for such adaptive homeostasis remain largely unknown. Here, we used live-cell imaging and microfluidics to investigate the adaptive response of budding yeast to temporally controlled H 2 O 2 stress patterns. We demonstrate that acquisition of tolerance is a systems-level property resulting from nonlinearity of H 2 O 2 scavenging by peroxiredoxins and our study reveals that this regulatory scheme induces a striking hormetic effect of extracellular H 2 O 2 stress on replicative longevity. Our study thus provides a novel quantitative framework bridging the molecular architecture of a cellular homeostatic system to the emergence of nonintuitive adaptive properties. DOI: http://dx.doi.org/10.7554/eLife.23971.001
+Homeostatic systems that rely on genetic regulatory networks are intrinsically limited by the transcriptional response time, which may restrict a cell’s ability to adapt to unanticipated environmental challenges. To bypass this limitation, cells have evolved mechanisms whereby exposure to mild stress increases their resistance to subsequent threats. However, the mechanisms responsible for such adaptive homeostasis remain largely unknown. Here, we used live-cell imaging and microfluidics to investigate the adaptive response of budding yeast to temporally controlled H2O2 stress patterns. We demonstrate that acquisition of tolerance is a systems-level property resulting from nonlinearity of H2O2 scavenging by peroxiredoxins and our study reveals that this regulatory scheme induces a striking hormetic effect of extracellular H2O2 stress on replicative longevity. Our study thus provides a novel quantitative framework bridging the molecular architecture of a cellular homeostatic system to the emergence of nonintuitive adaptive properties.
 
 ## Introduction
 
 Homeostatic systems are ubiquitous in biology and function to restore internal physiological variables to a given set point following fluctuations in the internal or external environment. The accuracy of such control mechanisms (i.e. its ability to reach an equilibrium state that is as close as possible to the pre-existing state), is thought to be essential to ensure robust physiological adaptation. Therefore, understanding the mechanisms underlying accurate control in regulatory networks has emerged as a central question in Control Theory applied to biological systems (Khammash, 2016; Ma et al., 2009; Whitacre, 2012). Several seminal studies have pointed to the existence of ‘perfectly adapting’ systems in which exact restoration of the pre-existing state is observed, including bacterial chemotaxis (Barkai and Leibler, 1997; Berg and Tedesco, 1975), calcium signaling (El-Samad et al., 2002), and yeast hyperosmolarity response (Muzzey et al., 2009), all of which are based on a regulatory scheme referred to as ‘integral feedback’ (Yi et al., 2000).
 
-However, high control accuracy alone is insufficient to protect against the potentially damaging effects of environmental challenges, and other dynamical properties of homeostatic systems may determine the cell’s ability to adapt: indeed, most stress regulatory pathways feature transcriptional responses, which are intrinsically slower processes than the other biochemical effects of stress exposure (
+However, high control accuracy alone is insufficient to protect against the potentially damaging effects of environmental challenges, and other dynamical properties of homeostatic systems may determine the cell’s ability to adapt: indeed, most stress regulatory pathways feature transcriptional responses, which are intrinsically slower processes than the other biochemical effects of stress exposure (Muzzey and van Oudenaarden, 2009; Young et al., 2013). Because of this limiting response time, it is expected that a transient peak in the internal stress level (output peak of magnitude Omax, Figure 1A) may occur in response to stepwise exposure to an external stressor (input, Figure 1A). Such a transient overshoot may trigger irreversible deleterious effects leading to cell death, irrespective of the ability of the homeostatic system to accurately restore the pre-existing steady state (Oeq on Figure 1A). In this case, interestingly, the rate at which stress is applied (while keeping constant the overall magnitude of stress) should directly control Omax and hence determine cellular stress resistance (Figure 1A). Remarkably, this hypothesis has neither been formally addressed theoretically nor been tested experimentally. Yet, whether the adaptation range of a homeostatic system is set only by the overall stressor level, or alternatively, depends on the kinetics of the input stress pattern remains a question of fundamental importance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig1-v4.jpg)
 
-**Figure 1.:** 2O2.(A) Schematic representation of ‘training’ and ‘stress tolerance’ phenomena in a simple negative feedback-based system. (B) Schematic of the microfluidic device setup for live-cell imaging in H2O2-containing media. (C) Decline in extracellular H2O2 concentration comparing the single-cell assay and bulk experiment (starting at cellular OD600 = 0.5). (D) Sequence of phase-contrast and fluorescence images of cells at the indicated time points after addition of 0.4 mM H2O2 at t = 300 min. The red and green channels represent the Htb2-mCherry (nuclear marker) and Yap1-GFP signals, respectively. Orange and white lines represent the cellular and nuclear contours obtained after automated segmentation. The white bars represent 5 µm. (E) Top: Mean growth rate per cell as a function of time after addition of different H2O2 concentrations at t = 300 min, as indicated in the bottom panel. Middle: Mean nuclear Yap1-GFP localization as a function of time, with the same color coding as in the top and bottom panels. Yap1-GFP scoring is not possible at 0.6 mM due to metabolic arrest/cell death and GFP signal decline. (F) Increase in mean Yap1-GFP localization (relative to the pre-stress level) at steady state (measured for t > 800 min) as a function of H2O2 concentration added at t = 300 min during a step experiment. Lines represent the best fits to mathematical models of integral (blue), linear (red) and nonlinear (magenta) feedback with different sets of assumptions (see Materials and methods). (G) Comparison of growth rate at steady state as a function of H2O2 concentration for the wild-type (WT) strain and the Δyap1 mutant. Error bars and shaded regions are SEM (C, N = 6; E, N > 100 for most time points; F and G, N > 100 for each H2O2 concentration). See also Figure 1—figure supplement 1 and Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.23971.003
+**Figure 1.:** (A) Schematic representation of ‘training’ and ‘stress tolerance’ phenomena in a simple negative feedback-based system. (B) Schematic of the microfluidic device setup for live-cell imaging in H2O2-containing media. (C) Decline in extracellular H2O2 concentration comparing the single-cell assay and bulk experiment (starting at cellular OD600 = 0.5). (D) Sequence of phase-contrast and fluorescence images of cells at the indicated time points after addition of 0.4 mM H2O2 at t = 300 min. The red and green channels represent the Htb2-mCherry (nuclear marker) and Yap1-GFP signals, respectively. Orange and white lines represent the cellular and nuclear contours obtained after automated segmentation. The white bars represent 5 µm. (E) Top: Mean growth rate per cell as a function of time after addition of different H2O2 concentrations at t = 300 min, as indicated in the bottom panel. Middle: Mean nuclear Yap1-GFP localization as a function of time, with the same color coding as in the top and bottom panels. Yap1-GFP scoring is not possible at 0.6 mM due to metabolic arrest/cell death and GFP signal decline. (F) Increase in mean Yap1-GFP localization (relative to the pre-stress level) at steady state (measured for t > 800 min) as a function of H2O2 concentration added at t = 300 min during a step experiment. Lines represent the best fits to mathematical models of integral (blue), linear (red) and nonlinear (magenta) feedback with different sets of assumptions (see Materials and methods). (G) Comparison of growth rate at steady state as a function of H2O2 concentration for the wild-type (WT) strain and the Δyap1 mutant. Error bars and shaded regions are SEM (C, N = 6; E, N > 100 for most time points; F and G, N > 100 for each H2O2 concentration). See also Figure 1—figure supplement 1 and Materials and methods.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig1-figsupp1-v4.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Fluorescein diffusion kinetics in an empty trapping cavity. Top left: phase-contrast image centered on a trapping cavity with two supply channels on the sides. The blue circle corresponds to the region of interest (ROI) of the supply channel in which the GFP signal is scored over time (bottom left: blue line). The red circle corresponds to the ROI of the trapping cavity in which the GFP signal is scored over time (bottom left: red line). Right: fluorescence images were taken at the indicated time points. The white bar represents 5 µm. (B) Same experiment as (A) for a crowded cavity. The magnification region on the right bottom corner (GFP and phase contrast) shows that the fluorescein doesn’t enter the cells during the experiment. The white bar represents 5 µm. (C) Scoring of the mean nuclear Yap1-GFP localization as a function of time for cells located at the edge of the trapping cavity (30 s time resolution). Error bars are SEM (N > 100 for all time points). (D) Phenotypic distribution across the cells depending of their position in the trapping cavity. p-Value is calculated using a Chi-squared test of independency.DOI: http://dx.doi.org/10.7554/eLife.23971.004
+**Figure 1—figure supplement 1.:** (A) Fluorescein diffusion kinetics in an empty trapping cavity. Top left: phase-contrast image centered on a trapping cavity with two supply channels on the sides. The blue circle corresponds to the region of interest (ROI) of the supply channel in which the GFP signal is scored over time (bottom left: blue line). The red circle corresponds to the ROI of the trapping cavity in which the GFP signal is scored over time (bottom left: red line). Right: fluorescence images were taken at the indicated time points. The white bar represents 5 µm. (B) Same experiment as (A) for a crowded cavity. The magnification region on the right bottom corner (GFP and phase contrast) shows that the fluorescein doesn’t enter the cells during the experiment. The white bar represents 5 µm. (C) Scoring of the mean nuclear Yap1-GFP localization as a function of time for cells located at the edge of the trapping cavity (30 s time resolution). Error bars are SEM (N > 100 for all time points). (D) Phenotypic distribution across the cells depending of their position in the trapping cavity. p-Value is calculated using a Chi-squared test of independency.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig1-figsupp2-v4.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Growth rate measurements in the absence of stress. Top: cell volume of individual cells. Each color corresponds to a single cell followed over its successive divisions. The colored filled circle indicates a budding event. Middle: mean growth rate per cell as defined in Materials and methods. The error bars indicate the standard error of the mean (+/- SEM, N > 100 cells by the end of the experiment). Below: temporal profile of H2O2 concentration used during the experiment. (B) Same as (A), but following the switch from 0 to 0.4 mM H2O2 at t = 300 min. (C) Scatter plot showing the absence of correlation between cell growth rate and cell volume of individual cells. (D) Top: Evolution of mean (+/- SEM, N > 100 for most time points) cell size during the switch from 0 to 0.4 mM H2O2 at t = 300 min. Below: temporal profile of H2O2 concentration used during the experiment. (E) Similar experiment as in Figure 1E, but with the Δyap1 mutant.DOI: http://dx.doi.org/10.7554/eLife.23971.005
+**Figure 1—figure supplement 2.:** (A) Growth rate measurements in the absence of stress. Top: cell volume of individual cells. Each color corresponds to a single cell followed over its successive divisions. The colored filled circle indicates a budding event. Middle: mean growth rate per cell as defined in Materials and methods. The error bars indicate the standard error of the mean (+/- SEM, N > 100 cells by the end of the experiment). Below: temporal profile of H2O2 concentration used during the experiment. (B) Same as (A), but following the switch from 0 to 0.4 mM H2O2 at t = 300 min. (C) Scatter plot showing the absence of correlation between cell growth rate and cell volume of individual cells. (D) Top: Evolution of mean (+/- SEM, N > 100 for most time points) cell size during the switch from 0 to 0.4 mM H2O2 at t = 300 min. Below: temporal profile of H2O2 concentration used during the experiment. (E) Similar experiment as in Figure 1E, but with the Δyap1 mutant.
 
 Interestingly, however, there is one prominent example of stress pattern that confers improved cellular adaptation despite fast environmental changes, known as acquired stress resistance, or stress tolerance: in this case, a mild stress preconditioning increases resistance to subsequent, acute exposure to large doses of the same stressor. This effect has been observed in a broad spectrum of species, from unicellular organisms to mammals, in response to diverse environmental challenges (Davies et al., 1995; Hecker et al., 2007; Kandror et al., 2004; Kensler et al., 2007; Lewis et al., 1995; Lindquist, 1986; Lou and Yousef, 1997; Lu et al., 1993; Scholz et al., 2005) and is considered to be an anticipation strategy to overcome potentially harmful environmental conditions in the future (Mitchell et al., 2009). Stress resistance is thus itself an adaptive trait reflecting an intrinsic plasticity of the homeostatic machinery. However, the mechanisms underlying such adaptive homeostasis- the robustness of which is improved following stress exposure (Davies, 2016), remain to be elucidated. In particular, it is not known how this acquired stress resistance bypasses/overcomes the intrinsically slow response time of the stress response (e.g. through faster transcriptional response, or initially higher stressor degradation rate- analogous to stress buffering) and how this might be mechanistically achieved (Figure 1A).
 
@@ -49,57 +49,77 @@ Here, we used the response of budding yeast to hydrogen peroxide (H2O2) stress a
 
 ## Results
 
-## A quantitative assay to measure adaptation to H2O2 stress in single dividing yeast cells
+### A quantitative assay to measure adaptation to H2O2 stress in single dividing yeast cells
 
 We first sought to characterize the kinetics of the cellular response to stepwise exposure to increasing H2O2 concentrations and the emergence of cellular adaptation. Adaptation to H2O2 is usually measured by quantifying the fraction of surviving cells after the addition of a bolus of H2O2 to cells in culture. Under these conditions, cells rapidly degrade the H2O2 in the medium and, therefore, adaptation is partly due to the removal of the stressor. To circumvent this problem and to allow precise control of the stressor level, we developed custom microfluidic device to monitor the divisions of individual cells in trapping cavities while controlling external H2O2 concentrations by continuous replenishment of H2O2-containing medium (Figure 1B and C and Materials and methods). Using a fluorescent dye, we checked that diffusion in the trapping cavities was not impaired by the presence of a large cell cluster in the cavity (Figure 1—figure supplement 1A and B) and we also verified that cell growth was not affected despite the increasing cell confinement during a typical experiment (up to 1000 min, see Figure 1—figure supplement 2A). Using this technique, therefore, we could follow cellular adaptation by monitoring activation of the H2O2 stress response and real-time cellular growth rate.
 
-The signaling network activated in response to H2O2 is centered on the Yap1 regulon (Kuge and Jones, 1994; Lee et al., 1999). Yap1 is a transcription factor that, in the absence of H2O2, shuttles between the cytoplasm and nucleus. Upon exposure to H2O2, Yap1 is oxidized and nuclear export is prevented (Azevedo et al., 2003; Kuge et al., 1997; Lee et al., 1999). Hence, nuclear accumulation of Yap1 is a sensitive reporter of internal H2O2 levels (Toledano et al., 2004). In the nucleus, Yap1 activates the expression of genes involved in redox homeostasis and H2O2 scavenging (Gasch et al., 2000; Godon et al., 1998; Lee et al., 1999), leading to a negative feedback regulatory loop (Toledano et al., 2004). We monitored the dynamics of individual cells expressing Yap1-GFP and a nuclear marker (histone Htb2-mCherry) with a 3-min interval. Following the switch to medium containing 0–0.4 mM H2O2 (at t = 300 min; Figure 1D and Video 1), the cells experienced a transient stress level-dependent reduction in growth rate (see Materials and methods for the principle of the measurement) followed by a complete recovery, revealing intrinsic cellular adaptation (Figure 1E). In parallel, the switch to H2O2 induced an abrupt burst in Yap1-GFP nuclear localization, which saturated above 0.2 mM H2O2. Similar experiments performed with higher temporal resolution (30 s interval) revealed that the nuclear relocation time is around 120 s (see Figure 1—figure supplement 1C), which is much faster that the overall adaptation timescale (~45–100 min, see Figure 1E: Yap1-GFP quantification). However, this stands significantly higher than the timescale of stressor diffusion across cavity (see Figure 1—figure supplement 1A and B), therefore revealing that the activation of Yap1 is set by the diffusion of the stressor across the cell membrane rather than by limited diffusion in the device.10.7554/eLife.23971.006Video 1.Growth rate monitoring upon H2O2 stress (refers to Figure 1)Movie showing a time-lapse experiment where cells are exposed to sudden step stress of 0.4 mM H2O2 at t = 300 min. Left: phase contrast, right: growth rate evolution graph. The white bar represents 5 µm.DOI: http://dx.doi.org/10.7554/eLife.23971.006
+The signaling network activated in response to H2O2 is centered on the Yap1 regulon (Kuge and Jones, 1994; Lee et al., 1999). Yap1 is a transcription factor that, in the absence of H2O2, shuttles between the cytoplasm and nucleus. Upon exposure to H2O2, Yap1 is oxidized and nuclear export is prevented (Azevedo et al., 2003; Kuge et al., 1997; Lee et al., 1999). Hence, nuclear accumulation of Yap1 is a sensitive reporter of internal H2O2 levels (Toledano et al., 2004). In the nucleus, Yap1 activates the expression of genes involved in redox homeostasis and H2O2 scavenging (Gasch et al., 2000; Godon et al., 1998; Lee et al., 1999), leading to a negative feedback regulatory loop (Toledano et al., 2004). We monitored the dynamics of individual cells expressing Yap1-GFP and a nuclear marker (histone Htb2-mCherry) with a 3-min interval. Following the switch to medium containing 0–0.4 mM H2O2 (at t = 300 min; Figure 1D and Video 1), the cells experienced a transient stress level-dependent reduction in growth rate (see Materials and methods for the principle of the measurement) followed by a complete recovery, revealing intrinsic cellular adaptation (Figure 1E). In parallel, the switch to H2O2 induced an abrupt burst in Yap1-GFP nuclear localization, which saturated above 0.2 mM H2O2. Similar experiments performed with higher temporal resolution (30 s interval) revealed that the nuclear relocation time is around 120 s (see Figure 1—figure supplement 1C), which is much faster that the overall adaptation timescale (~45–100 min, see Figure 1E: Yap1-GFP quantification). However, this stands significantly higher than the timescale of stressor diffusion across cavity (see Figure 1—figure supplement 1A and B), therefore revealing that the activation of Yap1 is set by the diffusion of the stressor across the cell membrane rather than by limited diffusion in the device.
 
-The burst of nuclear Yap1-GFP relocation was followed by partial recovery to a steady-state level that was also H2O2 concentration-dependent (Figure 1D–F and Video 2), suggesting that Yap1 activity is still required in the adapted state (i.e. following growth recovery). Consistent with this, deletion of Yap1 strongly decreased the cells’ capacity to adapt, in agreement with previous findings (Inoue et al., 1999) (Figure 1G and Figure 1—figure supplement 2E). Last, the fact that a 0.1 mM H2O2 stress induces a partial nuclear relocation of Yap1-GFP but has no effect on growth rate indicates that Yap1 signaling is more sensitive to H2O2 than is the overall cellular physiology (Figure 1E).10.7554/eLife.23971.007Video 2.Yap1 nuclear relocation upon H2O2 stress (refers to Figure 1)Movie showing the nuclear enrichment of Yap1 in cells exposed to 0.4 mM H2O2 at t = 300 min. Left: Phase contrast and mCherry (Htb2-mCherry) channels. Right: GFP (Yap1-GFP) channel. The white bar represents 5 µm.DOI: http://dx.doi.org/10.7554/eLife.23971.007
+![Video 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-media1.mp4.jpg)
 
-## H2O2 effects on physiology are mediated by sequential thresholds
+**Video 1.:** Movie showing a time-lapse experiment where cells are exposed to sudden step stress of 0.4 mM H2O2 at t = 300 min. Left: phase contrast, right: growth rate evolution graph. The white bar represents 5 µm.
 
-Interestingly, while the cells adapted to 0.3 mM H
+The burst of nuclear Yap1-GFP relocation was followed by partial recovery to a steady-state level that was also H2O2 concentration-dependent (Figure 1D–F and Video 2), suggesting that Yap1 activity is still required in the adapted state (i.e. following growth recovery). Consistent with this, deletion of Yap1 strongly decreased the cells’ capacity to adapt, in agreement with previous findings (Inoue et al., 1999) (Figure 1G and Figure 1—figure supplement 2E). Last, the fact that a 0.1 mM H2O2 stress induces a partial nuclear relocation of Yap1-GFP but has no effect on growth rate indicates that Yap1 signaling is more sensitive to H2O2 than is the overall cellular physiology (Figure 1E).
+
+![Video 2.](https://cdn.elifesciences.org/articles/23971/elife-23971-media2.mp4.jpg)
+
+**Video 2.:** Movie showing the nuclear enrichment of Yap1 in cells exposed to 0.4 mM H2O2 at t = 300 min. Left: Phase contrast and mCherry (Htb2-mCherry) channels. Right: GFP (Yap1-GFP) channel. The white bar represents 5 µm.
+
+### H2O2 effects on physiology are mediated by sequential thresholds
+
+Interestingly, while the cells adapted to 0.3 mM H2O2 (complete mean growth rate recovery), exposure to 0.6 mM H2O2 induced full growth arrest (Figure 1E and Video 3), revealing that cell fate is controlled by a sharp threshold in external H2O2 level. To determine the physiological changes accompanying this switch from adaptation to arrest, we focused on the behavior of individual cells exposed to a sublethal dose (0.5 mM) of H2O2 (see Figure 2A and B). Notably, while all cells experienced at least a transient growth arrest (at t = 390 min, Figure 2B) following exposure to the stressor (at t = 300 min), we observed a high degree of heterogeneity in cell fate across the population at steady-state: 22% of cells present at the time of H2O2 addition recovered a normal growth and division rate at t > 600 min (referred to as the ‘adapted’ phenotype in the following); 36% experienced a prolonged slow-down of cell cycle progression characterized by an extended budded period, but continued to increase in size over time (‘prolonged cell cycle arrest’ phenotype); and 42% stopped growing and failed to divide (‘permanent growth arrest’ phenotype) (Figure 2A–C and Figure 2—figure supplement 1 and Video 4). We checked this heterogeneity in cell fate was not dependent on the position of cells with respect to the border of the cavity (see Figure 1—figure supplement 1D). Interestingly, performing the same analysis of phenotypic distribution at various H2O2 levels revealed that the cell cycle arrest phenotype emerged at lower concentrations of H2O2 than the growth arrest phenotype (typically ~0.2 and 0.5 mM H2O2, respectively; Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig2-v4.jpg)
 
-**Figure 2.:** 2O2.(A) Lineage of cells after addition of 0.5 mM H2O2 at t = 300 min. Each colored line corresponds to a single cell, and cell budding is indicated by the vertical black lines. The plot shows examples of cells with three distinct growth phenotypes, as indicated. (B) Quantification of the growth rate and division rate of the cellular phenotypes displayed in (A). Error bars are SEM. (C) Relative distribution (%) of cellular phenotypes as a function of H2O2 concentration added at t = 300 min. N = 100 for each concentration. (D) Top: Upregulation of cytoplasmic Rnr3-GFP expression at 300 min after addition of 0.4 mM H2O2. Bottom: Quantification of the Rnr3-GFP signal after addition of 0.4 mM H2O2. (E) Top: Upregulation of Ddc2-GFP expression at 300 min after addition of 0.4 mM H2O2. Bottom: Percentage of cells with durable Ddc2-GFP foci measured before and at 300 min after addition of 0.4 mM H2O2 for the cell phenotypes identified in (A). Error bars are 95% confidence intervals (CI). Two-proportions Z test. The whites bar represent 5 µm. See also Figure 2—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.23971.008
+**Figure 2.:** (A) Lineage of cells after addition of 0.5 mM H2O2 at t = 300 min. Each colored line corresponds to a single cell, and cell budding is indicated by the vertical black lines. The plot shows examples of cells with three distinct growth phenotypes, as indicated. (B) Quantification of the growth rate and division rate of the cellular phenotypes displayed in (A). Error bars are SEM. (C) Relative distribution (%) of cellular phenotypes as a function of H2O2 concentration added at t = 300 min. N = 100 for each concentration. (D) Top: Upregulation of cytoplasmic Rnr3-GFP expression at 300 min after addition of 0.4 mM H2O2. Bottom: Quantification of the Rnr3-GFP signal after addition of 0.4 mM H2O2. (E) Top: Upregulation of Ddc2-GFP expression at 300 min after addition of 0.4 mM H2O2. Bottom: Percentage of cells with durable Ddc2-GFP foci measured before and at 300 min after addition of 0.4 mM H2O2 for the cell phenotypes identified in (A). Error bars are 95% confidence intervals (CI). Two-proportions Z test. The whites bar represent 5 µm. See also Figure 2—figure supplement 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig2-figsupp1-v4.jpg)
 
-**Figure 2—figure supplement 1.:** 2O2.Top: Pedigree analysis of individual cells growing in the microfluidic during a typical H2O2 stress assay at 0.5 mM. Each colored line represents a single cell, and vertical black lines indicate cellular parentage. The vertical magenta line indicates the timing of switch to media containing H2O2. Each color corresponds to the phenotype acquired by the cells following the addition of stress. Bottom: same experiment as in the top panel but displaying the evolution of individual cell volume over time using the indicated color-coding.DOI: http://dx.doi.org/10.7554/eLife.23971.009
+**Figure 2—figure supplement 1.:** Top: Pedigree analysis of individual cells growing in the microfluidic during a typical H2O2 stress assay at 0.5 mM. Each colored line represents a single cell, and vertical black lines indicate cellular parentage. The vertical magenta line indicates the timing of switch to media containing H2O2. Each color corresponds to the phenotype acquired by the cells following the addition of stress. Bottom: same experiment as in the top panel but displaying the evolution of individual cell volume over time using the indicated color-coding.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig2-figsupp2-v4.jpg)
 
-**Figure 2—figure supplement 2.:** 2O2) step stress.(A) Propidium iodide (PI)-based microfluidics essay detecting mortality in cells exposed to 0.6 mM H2O2 at t = 300 min. Red-colored (PI-positive) cells correspond to dead cells with loss of cell membrane integrity. The white bar represents 5 µm. (B) Top: Quantification of the PI incorporation by the cells displayed in (A) as a function of time. Bottom: Temporal profile of the H2O2 concentration. The orange filled circles correspond to the time points displayed in (A). (C) Reversibility of the growth arrest. Top: mean growth rate of cells exposed to 0.6 mM H2O2 for various durations, as indicated in the bottom panel. Middle: mean cellular expression of TRX2pr-GFP-deg; Bottom: schematics of the temporal profile of the pulse. Error bars are SEM (N > 100 for most time points).DOI: http://dx.doi.org/10.7554/eLife.23971.010
+**Figure 2—figure supplement 2.:** (A) Propidium iodide (PI)-based microfluidics essay detecting mortality in cells exposed to 0.6 mM H2O2 at t = 300 min. Red-colored (PI-positive) cells correspond to dead cells with loss of cell membrane integrity. The white bar represents 5 µm. (B) Top: Quantification of the PI incorporation by the cells displayed in (A) as a function of time. Bottom: Temporal profile of the H2O2 concentration. The orange filled circles correspond to the time points displayed in (A). (C) Reversibility of the growth arrest. Top: mean growth rate of cells exposed to 0.6 mM H2O2 for various durations, as indicated in the bottom panel. Middle: mean cellular expression of TRX2pr-GFP-deg; Bottom: schematics of the temporal profile of the pulse. Error bars are SEM (N > 100 for most time points).
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig2-figsupp3-v4.jpg)
 
-**Figure 2—figure supplement 3.:** 2O2) step stress.(A) Cells exposed to 0.6 mM H2O2 (lethal stress) doesn’t induce Trx2-GFP and show bright vacuoles. Top: Quantification of Trx2-GFP level and the mean cellular intensity of the phase-contrast highest decile (note the increase in the intensity after stress addition revealing the presence of bright vacuoles, see Materials and methods). Middle: Temporal profile of the H2O2 concentration. Bottom: Phase-contrast and fluorescence images of individual cells right before (300 min) and 500 min after 0.6 mM H2O2 addition (801 min). (B) After addition of 0.4 mM H2O2, the fraction of cells with no growth recovery show low Trx2-GFP level and bright vacuoles. Top: Quantification of Trx2-GFP level and the mean cellular intensity of the phase-contrast highest decile. Middle: Temporal profile of the H2O2 concentration. Bottom: Phase-contrast and fluorescence images of individual cells 500 min after 0.4 mM H2O2 addition. The red contours show permanently arrested cells. (C) Summary of scoring of death markers in lethal (0.6 mM H2O2) and permissive (0.4 mM H2O2) step stress experiments. The white bars represent 5 µm.DOI: http://dx.doi.org/10.7554/eLife.23971.011
+**Figure 2—figure supplement 3.:** (A) Cells exposed to 0.6 mM H2O2 (lethal stress) doesn’t induce Trx2-GFP and show bright vacuoles. Top: Quantification of Trx2-GFP level and the mean cellular intensity of the phase-contrast highest decile (note the increase in the intensity after stress addition revealing the presence of bright vacuoles, see Materials and methods). Middle: Temporal profile of the H2O2 concentration. Bottom: Phase-contrast and fluorescence images of individual cells right before (300 min) and 500 min after 0.6 mM H2O2 addition (801 min). (B) After addition of 0.4 mM H2O2, the fraction of cells with no growth recovery show low Trx2-GFP level and bright vacuoles. Top: Quantification of Trx2-GFP level and the mean cellular intensity of the phase-contrast highest decile. Middle: Temporal profile of the H2O2 concentration. Bottom: Phase-contrast and fluorescence images of individual cells 500 min after 0.4 mM H2O2 addition. The red contours show permanently arrested cells. (C) Summary of scoring of death markers in lethal (0.6 mM H2O2) and permissive (0.4 mM H2O2) step stress experiments. The white bars represent 5 µm.
 
-To go beyond the characterization of growth and division impairments in cells submitted to H2O2, we asked whether these defects were accompanied by the activation of DNA damage response and/or ultimately lead to cell death. To this end, we examined the response of cells expressing Rnr3-GFP or Ddc2-GFP fusion proteins. Rnr3 is a subunit of ribonucleotide reductase and is upregulated during the DNA damage response (DDR), and Ddc2 is a DNA damage checkpoint protein that forms foci upon recruitment to DNA lesions. Exposure to 0.4 mM H2O2 substantially increased cytoplasmic Rnr3-GFP levels in cells displaying the prolonged cell cycle arrest phenotype, but not in adapted cells (Figure 2D). Similarly, the vast majority of cell-cycle-arrested cells displayed bright foci of Ddc2-GFP fluorescence, unlike adapted cells (Figure 2E). These experiments indicated that H2O2-induced DNA damage and subsequent DDR checkpoint activation were responsible for prolonged cell cycle arrest. In contrast, cells experiencing a permanent arrest showed no detectable increase in Rnr3-GFP (not shown). We considered that these cells may have a compromised physiological state preventing any response to the oxidative stress threat, and may ultimately die. To test this hypothesis, first, we used a vital stain (propidium iodide, PI) to monitor the onset of death in cells abruptly exposed to 0.6 mM H2O2 (see Figure 2—figure supplement 2A and B and Video 5). We found that all cells (N = 123) eventually became fluorescent, therefore demonstrating that a stress exposure to this H2O2 concentration ultimately induces cell lysis. Next, we wondered to which extent this growth arrest phenotype could be reverted by stress removal. To this end, we monitored the mean growth rate and the expression of the thioredoxin promoter fused to both sfGFP and a destabilizing degron sequence, TRX2pr-sfGFP-deg (TRX2 encodes a Yap1-regulated thioredoxin), after exposure of cells to 0.6 mM H2O2 for varying periods. H2O2 addition induced rapid growth arrest and irreversible decay of TRX2pr-sfGFP-deg levels (black lines on Figure 2—figure supplement 2C upper and middle panels, respectively). However, removal of the stress by switching back to H2O2-free medium at various times after H2O2 addition led to recovery of the mean cellular growth rate and induced reactivation of the Yap1 regulon if the duration of exposure was less than 4 hr (Figure 2—figure supplement 2C). This indicated that a few hours of exposure at 0.6 mM H2O2 were necessary to induce an irreversible growth arrest phenotype that ultimately lead to cell death.10.7554/eLife.23971.014Video 5.Cell mortality at high H2O2 step stress (refers to Figure 2—figure supplement 2)Movie showing the incorporation of PI in cells exposed to 0.6 mM H2O2 at t = 300 min. The white bar represents 5 µm.DOI: http://dx.doi.org/10.7554/eLife.23971.014
+![Video 3.](https://cdn.elifesciences.org/articles/23971/elife-23971-media3.mp4.jpg)
+
+**Video 3.:** Movie showing a permanent cell growth arrest in cells exposed to 0.6 mM H2O2. Left: phase contrast, right: growth rate evolution graph. The white bar represents 5 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/23971/elife-23971-media4.mp4.jpg)
+
+**Video 4.:** Movie showing different cell fates in cells exposed to 0.5 mM H2O2 at t = 300 min. Blue cell contours: Adapted cells; Yellow cell contours: Prolonged cell cycle arrest; Red contours: Permanent growth arrest. The white bar represents 5 µm.
+
+To go beyond the characterization of growth and division impairments in cells submitted to H2O2, we asked whether these defects were accompanied by the activation of DNA damage response and/or ultimately lead to cell death. To this end, we examined the response of cells expressing Rnr3-GFP or Ddc2-GFP fusion proteins. Rnr3 is a subunit of ribonucleotide reductase and is upregulated during the DNA damage response (DDR), and Ddc2 is a DNA damage checkpoint protein that forms foci upon recruitment to DNA lesions. Exposure to 0.4 mM H2O2 substantially increased cytoplasmic Rnr3-GFP levels in cells displaying the prolonged cell cycle arrest phenotype, but not in adapted cells (Figure 2D). Similarly, the vast majority of cell-cycle-arrested cells displayed bright foci of Ddc2-GFP fluorescence, unlike adapted cells (Figure 2E). These experiments indicated that H2O2-induced DNA damage and subsequent DDR checkpoint activation were responsible for prolonged cell cycle arrest. In contrast, cells experiencing a permanent arrest showed no detectable increase in Rnr3-GFP (not shown). We considered that these cells may have a compromised physiological state preventing any response to the oxidative stress threat, and may ultimately die. To test this hypothesis, first, we used a vital stain (propidium iodide, PI) to monitor the onset of death in cells abruptly exposed to 0.6 mM H2O2 (see Figure 2—figure supplement 2A and B and Video 5). We found that all cells (N = 123) eventually became fluorescent, therefore demonstrating that a stress exposure to this H2O2 concentration ultimately induces cell lysis. Next, we wondered to which extent this growth arrest phenotype could be reverted by stress removal. To this end, we monitored the mean growth rate and the expression of the thioredoxin promoter fused to both sfGFP and a destabilizing degron sequence, TRX2pr-sfGFP-deg (TRX2 encodes a Yap1-regulated thioredoxin), after exposure of cells to 0.6 mM H2O2 for varying periods. H2O2 addition induced rapid growth arrest and irreversible decay of TRX2pr-sfGFP-deg levels (black lines on Figure 2—figure supplement 2C upper and middle panels, respectively). However, removal of the stress by switching back to H2O2-free medium at various times after H2O2 addition led to recovery of the mean cellular growth rate and induced reactivation of the Yap1 regulon if the duration of exposure was less than 4 hr (Figure 2—figure supplement 2C). This indicated that a few hours of exposure at 0.6 mM H2O2 were necessary to induce an irreversible growth arrest phenotype that ultimately lead to cell death.
+
+![Video 5.](https://cdn.elifesciences.org/articles/23971/elife-23971-media5.mp4.jpg)
+
+**Video 5.:** Movie showing the incorporation of PI in cells exposed to 0.6 mM H2O2 at t = 300 min. The white bar represents 5 µm.
 
 Last, we checked that the behavior of permanently arrested cells, even at sublethal H2O2 concentrations (0.4 mM H2O2), was similar to the irreversible growth arrest phenotype at 0.6 mM H2O2. For this, we compared the expression of the TRX2-GFP fusion protein following either a 0.4 mM or a 0.6 mM H2O2 step. In both cases, we observed that the subpopulation of permanently arrested cells showed very low TRX2-GFP levels (Figure 2—figure supplement 3A–C). In addition, we found that, unlike adapted and cell cycle arrested cells, cells with a permanent growth arrest displayed the same bright and large vacuole phenotype (Figure 2—figure supplement 3A–C) in both conditions (0.4 mM and 0.6 mM H2O2). Therefore, these results indicate that the permanent growth arrest phenotype observed in step experiments (lethal or sublethal) reflects the inability of the cells to defend against the stressor.
 
 Collectively, our analysis reveals the existence of distinct cell fates following the exposure to acute sublethal doses of H2O2, and demonstrates that these phenotypes occur in a H2O2 concentration-dependent manner.
 
-## The kinetics of temporal stress patterns controls cellular adaptation to H2O2 through a training mechanism
+### The kinetics of temporal stress patterns controls cellular adaptation to H2O2 through a training mechanism
 
 The observation that increasing H2O2 external levels resulted in a sharp and partially reversible transition from adaptation to growth arrest suggested that the transient internal stress level Hmax reached closely after exposure to H2O2 may exceed a toxic concentration Htox beyond which cellular function is impaired, as hypothesized in the introduction. If so, exposure of cells to a gradual increase in H2O2 concentration should allow the cells more time to activate the antioxidant response and should thus dramatically improve cellular adaptation (see Figure 1A). To understand quantitatively how the kinetics of a stress pattern may influence cellular adaptation, we first developed a mathematical description of the homeostatic machinery based on the negative feedback regulation in the Yap1 network. This model was then used throughout this study to help identify and formalize the emergent properties of this system through iterative cycles of predictions and experimental challenges, rather than to perform exhaustive data fitting aimed at retrieving individual parameter values.
 
-The model assumed that nuclear relocation of Yap1 increases the production of antioxidants (referred to as ‘A’ in the model, see
+The model assumed that nuclear relocation of Yap1 increases the production of antioxidants (referred to as ‘A’ in the model, see Figure 3A), which then scavenge intracellular H2O2 (‘H’ in Figure 3A). For the sake of simplicity, we first developed a linear version of this model (f(H)=1 and g(H) = H; Figure 3A) that could successfully recapitulate the limited accuracy of the homeostatic system; the internal H2O2 level at steady-state Heq increases with the magnitude of H2O2 steps, unlike a system based on an ‘integral’ feedback regulatory scheme (Figures 1E, F and 3B, and Materials and methods). This property is a direct consequence of the assumption that antioxidants are not infinitely stable but must be diluted in growing cells (μ’≠0, see Materials and methods and Figure 3—figure supplement 1A and B). However, the growth rate does not affect the kinetics of the internal H2O2 burst during the transient response to H2O2 steps (see Figure 3—figure supplement 1 and Materials and methods). Therefore, the observation that the growth rate undergoes a transient slowdown during the regime that precedes adaptation to sublethal H2O2 steps should not impact the overall internal H2O2 kinetics nor the cellular adaptation capacity. Therefore, for the sake of simplicity, we neglected the variations in growth rate in the model.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig3-v4.jpg)
 
-**Figure 3.:** 2O2.(A) Schematic of the regulatory network involved in H2O2 scavenging: external H2O2 (represented by I), internal H2O2 (represented by H), and antioxidants (represented by A). A linear set of differential equations is used to describe the evolution of this system over time. (B) Response of the linear system described in panel (A) to sudden exposure to external H2O2 (step of amplitude I). Each colored line corresponds to a given concentration of H2O2. Heq is the steady-state internal H concentration, Hmax is the maximum H concentration reached during the transient regime. Htox is the threshold concentration beyond which growth/division is assumed to stop (obtained for I = 0.6 mM). (C) Phase diagram showing Hmax as a function of the amplitude of the step I and the rate of the H2O2 ramp δ = ΔI/ΔT. Inset shows a graphical representation of these parameters. The solid black line indicates the contour given when Hmax = Htox, assuming the general assumptions of the linear model described in panel A. (D) Sequence of phase-contrast and fluorescence images of individual cells at the indicated times after initiation (t = 100 min) of a linear ramped increase in H2O2 concentration at a rate δ of 2.2 μM/min. The red and green channels represent the Htb2-mCherry and Yap1-GFP signals, respectively. The white bars represent 5 µm. (E) Top: Mean growth rate per cell as a function of time after initiation (t = 100 min) of linear ramps in H2O2 concentration. The line colors correspond to the indicated ramp slopes in the bottom panel. Middle: Mean nuclear Yap1-GFP localization. Error bars and shaded regions are SEM, N > 100 for most time points. (F) Phase diagram recapitulating the mean growth rate of cells during adaptation to steps (Figure 1E) and linear ramps at various rates δ. The gray shading delimits the regions of adaptation and arrest, as expected from the linear feedback model. See also Figure 3—figure supplement 1 and Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.23971.015
+**Figure 3.:** (A) Schematic of the regulatory network involved in H2O2 scavenging: external H2O2 (represented by I), internal H2O2 (represented by H), and antioxidants (represented by A). A linear set of differential equations is used to describe the evolution of this system over time. (B) Response of the linear system described in panel (A) to sudden exposure to external H2O2 (step of amplitude I). Each colored line corresponds to a given concentration of H2O2. Heq is the steady-state internal H concentration, Hmax is the maximum H concentration reached during the transient regime. Htox is the threshold concentration beyond which growth/division is assumed to stop (obtained for I = 0.6 mM). (C) Phase diagram showing Hmax as a function of the amplitude of the step I and the rate of the H2O2 ramp δ = ΔI/ΔT. Inset shows a graphical representation of these parameters. The solid black line indicates the contour given when Hmax = Htox, assuming the general assumptions of the linear model described in panel A. (D) Sequence of phase-contrast and fluorescence images of individual cells at the indicated times after initiation (t = 100 min) of a linear ramped increase in H2O2 concentration at a rate δ of 2.2 μM/min. The red and green channels represent the Htb2-mCherry and Yap1-GFP signals, respectively. The white bars represent 5 µm. (E) Top: Mean growth rate per cell as a function of time after initiation (t = 100 min) of linear ramps in H2O2 concentration. The line colors correspond to the indicated ramp slopes in the bottom panel. Middle: Mean nuclear Yap1-GFP localization. Error bars and shaded regions are SEM, N > 100 for most time points. (F) Phase diagram recapitulating the mean growth rate of cells during adaptation to steps (Figure 1E) and linear ramps at various rates δ. The gray shading delimits the regions of adaptation and arrest, as expected from the linear feedback model. See also Figure 3—figure supplement 1 and Materials and methods.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig3-figsupp1-v4.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Dynamics of model variables under the assumptions of a linear integral feedback model, when the system is submitted to a step concentration. Each color line represents the temporal evolution of the variables H, AmRNA and A following the switch to the indicated H2O2 concentration. Parameter values: ε = 0, α = 1 min−1, β = 5 min−1, γ = 0.53 min−1, γ’=0.01 min−1, μ= log(2)/2.5 min−1, μ’=0 min−1. (B) Similar as in (A), but in the general case of the linear model. Parameter values: ε = 0, α = 1 min−1, β = 5 min−1, γ = 0.53 min−1, γ’=0.01 min−1, μ= log(2)/2.5 min−1, μ’ = log(2)/100 min−1. (C) Similar as in (A), but during linear stress ramp. (D) Similar as in (B), but during linear stress ramp. (E) Phase diagram (similar to Figure 3C) for the case of an integral feedback model (μ’=0 min−1). (F) Similar as (E) for the general case of the linear model (μ’ = log(2)/100 min−1). (G–J) Phase diagram obtained with different values of mRNA decay rates (μ), as indicated, while keeping the value of Iabs = 7.3 mM.DOI: http://dx.doi.org/10.7554/eLife.23971.016
+**Figure 3—figure supplement 1.:** (A) Dynamics of model variables under the assumptions of a linear integral feedback model, when the system is submitted to a step concentration. Each color line represents the temporal evolution of the variables H, AmRNA and A following the switch to the indicated H2O2 concentration. Parameter values: ε = 0, α = 1 min−1, β = 5 min−1, γ = 0.53 min−1, γ’=0.01 min−1, μ= log(2)/2.5 min−1, μ’=0 min−1. (B) Similar as in (A), but in the general case of the linear model. Parameter values: ε = 0, α = 1 min−1, β = 5 min−1, γ = 0.53 min−1, γ’=0.01 min−1, μ= log(2)/2.5 min−1, μ’ = log(2)/100 min−1. (C) Similar as in (A), but during linear stress ramp. (D) Similar as in (B), but during linear stress ramp. (E) Phase diagram (similar to Figure 3C) for the case of an integral feedback model (μ’=0 min−1). (F) Similar as (E) for the general case of the linear model (μ’ = log(2)/100 min−1). (G–J) Phase diagram obtained with different values of mRNA decay rates (μ), as indicated, while keeping the value of Iabs = 7.3 mM.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig3-figsupp2-v4.jpg)
 
-**Figure 3—figure supplement 2.:** 2O2ramps and scoring of the permanent growth arrest phenotype.(A) Schematics of the setup used to generate linear ramps. (B) Dosage of H2O2 concentration during the ramp experiments performed using the setup described in (A). Each colored line corresponds to the expected ramp slope, whereas the actual H2O2 measurements are indicated as colored filled circles. Error bars are SEM, N = 3. (C) Top: Scoring of the fraction of cells able to grow as a function of time during ramped H2O2 stress. Only the cells present at the time of ramp initiation (t = 100 min) are scored. The red and black lines correspond to 4.4 µM/min and 8.8 µM/min H2O2 ramps, respectively. Cells are considered as not able to grow (permanent growth arrest) when their growth stops and does not recovers until the end of the experiment. Bottom: Temporal profile of the H2O2 concentration for both ramps. (D) Same experiment as (C), but the fraction of cells able to grow is represented as a function of the absolute H2O2 concentration. (E) Cells with permanent growth arrest during 8.8 µM/min H2O2 ramp show bright vacuoles. Top: the mean cellular intensity of the phase-contrast highest decile (see Materials and methods) is displayed for individual cells during the ramped stress. Middle: temporal profile of the H2O2 concentration. Bottom left: MatLab boxplot showing the quantification of the mean cellular intensity of the phase-contrast highest decile for the subpopulation of cells with permanent growth arrest during the ramp. The quantification is done at the moment of the cell growth arrest as well as 200 min before and after the growth arrest (N = 50, total of 64 cells but only 50 were scored because not all cells can be followed 200 min after growth arrest). Bottom right: phase-contrast image of cells 611 min after the initiation of 8.8 µM/min H2O2 ramp. The red contours show permanently arrested cells. Two-means Z test. The white bar corresponds to 5 µm. (F) Determination of hard limit H2O2 concentration allowing adaptation. Mean cell growth rate per cell as a function of time after initiation (t = 100 min) of linear ramps at a rate δ of 2.2 μM/min during 140 hr. Expected and measured (N = 6) H2O2 concentrations are displayed on the bottom panel. Error bars are SEM.DOI: http://dx.doi.org/10.7554/eLife.23971.017
+**Figure 3—figure supplement 2.:** (A) Schematics of the setup used to generate linear ramps. (B) Dosage of H2O2 concentration during the ramp experiments performed using the setup described in (A). Each colored line corresponds to the expected ramp slope, whereas the actual H2O2 measurements are indicated as colored filled circles. Error bars are SEM, N = 3. (C) Top: Scoring of the fraction of cells able to grow as a function of time during ramped H2O2 stress. Only the cells present at the time of ramp initiation (t = 100 min) are scored. The red and black lines correspond to 4.4 µM/min and 8.8 µM/min H2O2 ramps, respectively. Cells are considered as not able to grow (permanent growth arrest) when their growth stops and does not recovers until the end of the experiment. Bottom: Temporal profile of the H2O2 concentration for both ramps. (D) Same experiment as (C), but the fraction of cells able to grow is represented as a function of the absolute H2O2 concentration. (E) Cells with permanent growth arrest during 8.8 µM/min H2O2 ramp show bright vacuoles. Top: the mean cellular intensity of the phase-contrast highest decile (see Materials and methods) is displayed for individual cells during the ramped stress. Middle: temporal profile of the H2O2 concentration. Bottom left: MatLab boxplot showing the quantification of the mean cellular intensity of the phase-contrast highest decile for the subpopulation of cells with permanent growth arrest during the ramp. The quantification is done at the moment of the cell growth arrest as well as 200 min before and after the growth arrest (N = 50, total of 64 cells but only 50 were scored because not all cells can be followed 200 min after growth arrest). Bottom right: phase-contrast image of cells 611 min after the initiation of 8.8 µM/min H2O2 ramp. The red contours show permanently arrested cells. Two-means Z test. The white bar corresponds to 5 µm. (F) Determination of hard limit H2O2 concentration allowing adaptation. Mean cell growth rate per cell as a function of time after initiation (t = 100 min) of linear ramps at a rate δ of 2.2 μM/min during 140 hr. Expected and measured (N = 6) H2O2 concentrations are displayed on the bottom panel. Error bars are SEM.
 
 Importantly, the linear model also predicted that, whereas steep ramps would quickly lead to growth arrest (since, eventually Hmax > Htox; green line on Figure 3C and inset), as observed experimentally beyond 0.6 mM, slower stress ramps may allow the cells to adapt to much higher stress levels (keeping Hmax < Htox; blue lines on Figure 3C and inset). The phase diagram in the (δ, I) space recapitulated these predictions and, additionally, clearly delimited the region in which adaptation to high-stress magnitude I is permitted (indicated by the black line Hmax = Htox on Figure 3C). The extent of this region is limited by the overall accuracy of the homeostatic system, which is mostly set by the degradation rate μ’ of antioxidant enzymes (Figure 3—figure supplement 1E and F and Materials and methods) and the response time of the antioxidant system, which derives from the degradation rate μ of corresponding mRNAs (Figure 3—figure supplement 1G–J and Materials and methods); μ was set to log(2)/40 min−1, according to previous measurements (Geisberg et al., 2014).
 
@@ -109,17 +129,17 @@ Interestingly, the model also predicted the existence of an absolute H2O2 level 
 
 Overall, this analysis identified a > 10-fold increase in the H2O2 adaptation limit observed when using slow versus fast stress ramping, which could be explained by a linear negative feedback model in which the response time of antioxidant expression plays a critical role. The unprecedented analysis therefore revealed the ‘training’ capabilities of individual yeast cells, which can be progressively acclimated to increasingly high levels of stress.
 
-## Acquisition of tolerance to H2O2 is distinct from cellular training
+### Acquisition of tolerance to H2O2 is distinct from cellular training
 
-Next, we considered how our framework based on a linear feedback model could explain the phenomenon of acquired stress tolerance, in which mild (I
+Next, we considered how our framework based on a linear feedback model could explain the phenomenon of acquired stress tolerance, in which mild (I0 = 0.1–0.4 mM) H2O2 pretreatment increased by several orders of magnitude the fraction of cells surviving a subsequent challenge with a more severe stepwise stress of magnitude ΔI (Davies et al., 1995). To transpose these observations using our methodology, we first verified that pretreating cells with I0 = 0.2 mM H2O2 shifted the adaptation threshold to ΔI = 1 mM (Figure 4A and B), contrasting with the ΔI = 0.6 mM threshold obtained for I0 = 0 mM (as shown in Figure 1). Here again, the large vacuole phenotype obtained with ΔI = 1 mM (as measured using phase-contrast intensity of cells) strongly suggested that these permanently arrested cells failed to adapt, as in steps and ramp experiments (Figure 4—figure supplement 1A). In addition, we found that this effect was clearly dependent on the Yap1 regulon, since yap1Δ mutants did not display acquisition of tolerance (Figure 4—figure supplement 1B and C). However, this increased resistance to stepwise stress exposure could not be explained by the linear feedback model, which predicted that both pretreated and naive cells should experience a similar internal peak stress during the subsequent stress challenge (Figure 4C). Mathematically, this results from an additivity principle, according to which the response to a perturbation ΔH (i.e. stress challenge) is independent of the response triggered by a preceding input fluctuation (i.e. preconditioning).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig4-v4.jpg)
 
-**Figure 4.:** (A) Mean cell growth rate (top panel) of cells exposed to H2O2 steps of the magnitude indicated in the bottom panel at t = 400 min after a 0.2 mM pretreatment at t = 0 min. (B) Fraction of cells without permanent growth arrest at different concentrations of H2O2 in the presence (yellow) or absence (blue) of pretreatment. N = 100 for each concentration. (C) Response of the linear system to simple H2O2 step of amplitude ΔI = 0.6 mM for naive (magenta: I0 = 0 mM) or pretreated (bleu: I0 = 0.2 mM) cells. (D) Top: Mean cell transcriptional dynamics (top panel) of the TRX2 promoter (Trx2-sfGFP-degron) for the H2O2 treatments shown in the middle panel. Bottom: Quantification of the maximum transcription rate of the TRX2 promoter during the indicated steps. Two-means Z test. (E) Mean cell Yap1-GFP nuclear localization upon a 0.2 mM H2O2 step for cells with (green line) or without (magenta line) a 0.2 mM pretreatment, as indicated in the bottom panel. (F) Quantification of the amplitude of the burst in Yap1 nuclear localization during a 0.1 mM H2O2 challenge step. The lines indicate the fit of the linear (red) and nonlinear (magenta) models. (G) Numerical phase diagram indicating the region in which adaptation is permitted as a function of the overall stress magnitude ΔI and stress rate δ for the linear (left) and nonlinear (right) models. The solid black line indicates the contour given when Hmax = Htox (survival threshold) as in Figure 3C. The vertical dashed line represents the basal stress resistance, as observed in step experiments. The green color represents the region in which cells can be trained to resist higher stress levels through a slow ramping process. The magenta region highlights the shift in survival threshold obtained following a pretreatment according to the nonlinear model. A, D–F, error bars and shaded regions are SEM (N > 100 for most time points). B, error bars are 95% CI. See also Figure 4—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.23971.018
+**Figure 4.:** (A) Mean cell growth rate (top panel) of cells exposed to H2O2 steps of the magnitude indicated in the bottom panel at t = 400 min after a 0.2 mM pretreatment at t = 0 min. (B) Fraction of cells without permanent growth arrest at different concentrations of H2O2 in the presence (yellow) or absence (blue) of pretreatment. N = 100 for each concentration. (C) Response of the linear system to simple H2O2 step of amplitude ΔI = 0.6 mM for naive (magenta: I0 = 0 mM) or pretreated (bleu: I0 = 0.2 mM) cells. (D) Top: Mean cell transcriptional dynamics (top panel) of the TRX2 promoter (Trx2-sfGFP-degron) for the H2O2 treatments shown in the middle panel. Bottom: Quantification of the maximum transcription rate of the TRX2 promoter during the indicated steps. Two-means Z test. (E) Mean cell Yap1-GFP nuclear localization upon a 0.2 mM H2O2 step for cells with (green line) or without (magenta line) a 0.2 mM pretreatment, as indicated in the bottom panel. (F) Quantification of the amplitude of the burst in Yap1 nuclear localization during a 0.1 mM H2O2 challenge step. The lines indicate the fit of the linear (red) and nonlinear (magenta) models. (G) Numerical phase diagram indicating the region in which adaptation is permitted as a function of the overall stress magnitude ΔI and stress rate δ for the linear (left) and nonlinear (right) models. The solid black line indicates the contour given when Hmax = Htox (survival threshold) as in Figure 3C. The vertical dashed line represents the basal stress resistance, as observed in step experiments. The green color represents the region in which cells can be trained to resist higher stress levels through a slow ramping process. The magenta region highlights the shift in survival threshold obtained following a pretreatment according to the nonlinear model. A, D–F, error bars and shaded regions are SEM (N > 100 for most time points). B, error bars are 95% CI. See also Figure 4—figure supplement 1.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig4-figsupp1-v4.jpg)
 
-**Figure 4—figure supplement 1.:** (A) The mean cellular intensity of the phase-contrast highest decile is quantified for a population of cells exposed to critical ΔI = 1 mM (black line) after pretreatment of I0 = 0.2 mM and for control population of cells only exposed to the pretreatment of I0 = 0.2 mM (magenta line). (B–C) Same as Figure 4A–B, but with the yap1Δ mutant. (D) Same as Figure 4E, but with various levels of H2O2 during pretreatment and with a challenging step of ΔI = 0.1 mM H2O2. The Yap1 maximal amplitudes from this graph are represented in Figure 4F. (E) Numerical simulation of the response of the H2O2 homeostatic machinery to a sequence of two consecutive stress steps of indicated amplitude (top), using the linear feedback model. The first step (I) corresponds to the pre-treatment, while the second represents the challenging step (ΔI) described in 0Figure 4. Each colored line corresponds to a particular temporal profile of H2O2 concentration. H (Middle) and A (Bottom) are two variables of the model described in Figure 3 and Materials and methods. (F) Same as (E), but for the nonlinear feedback model. (A,B,D) Error bars and shaded regions are SEM (N > 100 for most time points). (C) error bars are 95% CI.DOI: http://dx.doi.org/10.7554/eLife.23971.019
+**Figure 4—figure supplement 1.:** (A) The mean cellular intensity of the phase-contrast highest decile is quantified for a population of cells exposed to critical ΔI = 1 mM (black line) after pretreatment of I0 = 0.2 mM and for control population of cells only exposed to the pretreatment of I0 = 0.2 mM (magenta line). (B–C) Same as Figure 4A–B, but with the yap1Δ mutant. (D) Same as Figure 4E, but with various levels of H2O2 during pretreatment and with a challenging step of ΔI = 0.1 mM H2O2. The Yap1 maximal amplitudes from this graph are represented in Figure 4F. (E) Numerical simulation of the response of the H2O2 homeostatic machinery to a sequence of two consecutive stress steps of indicated amplitude (top), using the linear feedback model. The first step (I0) corresponds to the pre-treatment, while the second represents the challenging step (ΔI) described in Figure 4. Each colored line corresponds to a particular temporal profile of H2O2 concentration. H (Middle) and A (Bottom) are two variables of the model described in Figure 3 and Materials and methods. (F) Same as (E), but for the nonlinear feedback model. (A,B,D) Error bars and shaded regions are SEM (N > 100 for most time points). (C) error bars are 95% CI.
 
 To explain this phenomenon of acquired stress tolerance, we first hypothesized that the pretreatment may switch the cell to an activated/adapted state capable of a much quicker transcriptional response to the subsequent challenge, as proposed previously in the context of salt cross-tolerance (Guan et al., 2012). To test this hypothesis, we monitored the rate of TRX2pr-GFP-deg accumulation upon exposure to a range of H2O2 steps and found a lower transcription rate of the TRX2 promoter during the challenging step of magnitude ΔI = 0.6–0.8 mM than during the pretreatment of magnitude I0 = 0.2 mM (Figure 4D), thus ruling out the hypothesis of quicker and/or stronger transcriptional reactivation of the homeostatic machinery.
 
@@ -127,45 +147,49 @@ As an alternative hypothesis, we reasoned that stress preconditioning might incr
 
 To quantitatively account for these observations, we sought to refine the mathematical description of the homeostatic system. According to the linear model, the scavenging rate depends only on the concentration of antioxidant enzymes A, meaning that H2O2-scavenging enzymes would always be saturated by the H2O2 substrate following stress exposure. If, instead, we consider that the enzymes are sufficiently abundant or the internal H2O2 level is sufficiently low that enzyme saturation does not systematically occur, then the scavenging rate in the model becomes a nonlinear function of the two variables A and H (see Materials and methods). Consequently, stress pretreatment may drive the homeostatic system to an equilibrium state in which the upregulated enzymes not only function to counteract the existing H2O2 flux but may also contribute with no delay (i.e. before any transcriptional response) to the scavenging of a future stepwise H2O2 exposure. Thus, unlike the linear model, this nonlinear model was able to quantitatively recapitulate the clear I0-dependent reduction in peak internal H2O2 during the challenge step (Figure 4—figure supplement 1E and F), the magnitude of which was similar to the experimentally observed Yap1-GFP nuclear relocation (Figure 4F and Figure 4—figure supplement 1D). Finally, computing the phase diagram for the nonlinear model revealed that, whereas buffering of slow external fluctuations in H2O2 levels (i.e. through cellular training) is a generic property of homeostatic systems based on negative feedback loops, the adaptation to fast fluctuations in the external stressor levels following stress preconditioning (i.e. through acquisition of stress tolerance), is a distinct property that requires a specific nonlinear scavenging model (Figure 4G).
 
-## Peroxiredoxins are key components of the H2O2homeostatic machinery
+### Peroxiredoxins are key components of the H2O2homeostatic machinery
 
 Thus far, our framework has made no assumptions regarding the nature of the scavenging enzyme(s) responsible for H2O2 degradation. Therefore, we next sought to identify which of the Yap1 regulon effectors (Godon et al., 1998) are critical for H2O2 homeostasis. During the step experiments, adaptation could result from parallel protective and repair mechanisms (DDR, protein quality control, metabolic control, H2O2 scavenging). However, the ramp experiments, by eliminating the cellular response triggered by high transient H2O2 levels, provided a unique framework to specifically decipher the core genes of the H2O2 homeostatic machinery.
 
-To address this, we examined the growth rates of various mutants at 300 and 800 min after initiation of a stress ramp of δ = 1.1 μM/min (
+To address this, we examined the growth rates of various mutants at 300 and 800 min after initiation of a stress ramp of δ = 1.1 μM/min (Figure 5A). Deletion of Yap1 abolished adaptation (Figure 5B) with onset of growth arrest occurring at ~0.1 mM H2O2 (Figure 5C), similar to the threshold observed in step experiments (Figure 1G). The complete absence of ‘trainability’ of the Yap1 mutant contrasted with the efficient adaptation of the msn2Δmsn4Δ mutant (Figure 5B), which lacks the transcription factors involved in the general stress response. Similarly, mutants lacking enzymes involved in membrane lipid biosynthesis, erg3Δ and erg6Δ, adapted perfectly (Figure 5B), thus ruling out the possibility that reduced membrane permeability is responsible for adaptation to H2O2 ramps (Branco et al., 2004).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig5-v4.jpg)
 
-**Figure 5.:** 2O2.Quantification of mean growth rate upon exposure to a linear ramp (δ = 1.1 μM/min) starting at t = 100 min in various genotypes. (A) Illustration of the H2O2 ramp experiment indicating the timing of the measurements. (B) Stress response and membrane permeability mutants. (C) Details of the ramp experiment in the Δyap1 mutant. The dashed blue lines indicate the adaptation threshold obtained in step experiments (Figure 1G). (D) Yap1 effectors mutants. (E) Step experiment performed with Yap1 effectors mutants exposed to 0.4 mM H2O2. (F) Prxs mutants. (G) Schematic of a negative feedback control showing the essential role of Prxs in the H2O2 homeostasis. (H) Mutants affecting the peroxidatic cycle of Prxs. Error bars are SEM (N > 100). See also Figure 5—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.23971.020
+**Figure 5.:** Quantification of mean growth rate upon exposure to a linear ramp (δ = 1.1 μM/min) starting at t = 100 min in various genotypes. (A) Illustration of the H2O2 ramp experiment indicating the timing of the measurements. (B) Stress response and membrane permeability mutants. (C) Details of the ramp experiment in the Δyap1 mutant. The dashed blue lines indicate the adaptation threshold obtained in step experiments (Figure 1G). (D) Yap1 effectors mutants. (E) Step experiment performed with Yap1 effectors mutants exposed to 0.4 mM H2O2. (F) Prxs mutants. (G) Schematic of a negative feedback control showing the essential role of Prxs in the H2O2 homeostasis. (H) Mutants affecting the peroxidatic cycle of Prxs. Error bars are SEM (N > 100). See also Figure 5—figure supplement 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig5-figsupp1-v4.jpg)
 
-**Figure 5—figure supplement 1.:** ACT1 promoter.(A) Phase and GFP fluorescence image samples of cells carrying a Tsa1-GFP fusion (top) or an ACT1pr-TSA1-GFP fusion (bottom). (B) Quantification of mean cell cytoplasmic fluorescence for strains described in (A) Error bars are SEM (N > 100).DOI: http://dx.doi.org/10.7554/eLife.23971.021
+**Figure 5—figure supplement 1.:** (A) Phase and GFP fluorescence image samples of cells carrying a Tsa1-GFP fusion (top) or an ACT1pr-TSA1-GFP fusion (bottom). (B) Quantification of mean cell cytoplasmic fluorescence for strains described in (A) Error bars are SEM (N > 100).
 
 Interestingly, we found that deletion of known H2O2 scavengers, such as the mitochondrial cytochrome c peroxidase Ccp1 or the cytosolic and peroxisomal catalases Ctt1 and Cta1, did not contribute to adaptation (Figure 5D). Since these mutants were previously described to be hypersensitive to H2O2 (Jiang and English, 2006), we wondered whether they are required for adaptation to H2O2 steps. Indeed, growth recovery was delayed in the ccp1Δ mutant (but not the ctt1Δcta1Δ mutant) compared with wild-type cells following exposure to a single dose of 0.4 mM H2O2 (Figure 5E). This finding indicates that some H2O2 scavengers may actively contribute to the transient stress response even if they are not implicated in overall H2O2 homeostasis. In contrast, simultaneously deleting the three peroxiredoxin genes TSA1, TSA2, and AHP1, which encode the two yeast 2-Cys Prxs and the atypical Prx Ahp1 (tsa1Δtsa2Δahp1Δ), abolished cell growth whether the cells were exposed to H2O2 as ramps or as steps (Figure 5D and E, respectively). Additionally, the extent of adaptation was proportional to the number of cytosolic Prxs present (Figure 5F). Constitutive expression of Tsa1 under the ACT1 promoter (albeit less effective than the endogenous promoter, Figure 5—figure supplement 1A and B) in a tsa1Δ tsa2Δ background did not complement Tsa1 function, indicating the importance of the H2O2-dependent transcriptional induction of the corresponding effector genes (Figure 5F). Altogether, these observations demonstrate that Prxs are the essential antioxidants ensuring H2O2 homeostasis (Figure 5G).
 
 2-Cys Prxs are moonlighting enzymes that reversibly switch their function from H2O2 scavengers to chaperones upon hyperoxidation of their peroxidatic cysteine (CP) and reduction of this form by sulfiredoxin (Srx1) (Biteau et al., 2003; Jang et al., 2004). To determine which of the two Tsa1 functions is involved in adaptation to stress ramps, we first tested a mutant lacking the two cytosolic Trxs (trx1Δtrx2Δ) that assist Prxs in H2O2 scavenging, but not in protein quality control (PQC). We observed that adaptation was severely compromised in this strain (Figure 5H). Next, we examined a strain lacking Tsa2 and carrying a TSA1 mutation that impairs the peroxidatic cycle of Prx but not its function in PQC (tsa1C171Stsa2Δ) (Hanzén et al., 2016), and found that this strain also adapted poorly to H2O2 (Figure 5H). However, a strain lacking Tsa2 and carrying a TSA1 mutation that prevents hyperoxidation and specifically impairs the enzyme’s PQC function (tsa1ΔYFtsa2Δ) displayed a wild-type adaptation response (Figure 5H). Lastly, we tested the Δsrx1 strain, in which the defective reduction of hyperoxidized Tsa1 and Tsa2 severely impairs H2O2 scavenging in classical techniques (Biteau et al., 2003) and which Prx-mediated PQC is also defective (Hanzén et al., 2016). Surprisingly, the Δsrx1 strain displayed wild-type adaptation to H2O2 (Figure 5H). Taken together, this genetic analysis indicated that the peroxidatic, not the chaperone, function of 2-Cys Prxs is required for adaptation to stress ramps. The dispensability of Srx1 for adaptation suggests that the ramp protocol allows the cell to maintain internal H2O2 at low levels, thereby preventing Tsa1 and Tsa2 hyperoxidation.
 
-## Tsa1 expression dynamics and nonlinear scaling with the input stress level
+### Tsa1 expression dynamics and nonlinear scaling with the input stress level
 
-The mathematical model predicts that if Prx enzymes are the essential mediators of adaptation to H
+The mathematical model predicts that if Prx enzymes are the essential mediators of adaptation to H2O2, we would expect to observe strong and stable upregulation of these proteins upon exposure to H2O2 stress (Figure 4—figure supplement 1F). Indeed, a sustained increase in cytoplasmic Tsa1-GFP levels was observed upon exposure to a 0.4 mM H2O2 step (Figure 6A). This upregulation was accompanied by formation of fluorescent foci, as noted in previous studies with Tsa1-GFP (Hanzén et al., 2016; Weids and Grant, 2014). However, from the quantitative analysis of the dynamics of Tsa1-GFP protein upregulation (Figure 6B and C) and transcriptional activation (Figure 6—figure supplement 1A and B) upon H2O2 stress, we found that steady-state Tsa1 levels did not scale linearly, especially at low H2O2 concentrations (Figure 6C inset). Similarly, the scaling of Tsa1-GFP expression during a ramp experiment (δ = 1.1 μM/min) was sublinear (Figure 6D). These observations were in very good agreement with the nonlinear model, further ruling out the linear model (Figure 6B–D), and the steady-state Yap1-GFP level was also best fit using the nonlinear model (Figure 1F). These results suggest that the H2O2 scavenging capacity of the homeostatic system becomes increasingly more efficient with the accumulation of Prxs as the stress level increases, so that Prxs do not need to be upregulated in proportion to the external H2O2 concentration.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig6-v4.jpg)
 
-**Figure 6.:** (A) Sequence of phase-contrast and fluorescence images of individual cells at the indicated times after initiation (t = 300 min) of a 0.4 mM step in H2O2 concentration. The green channel represents the Tsa1-GFP signal. The white bars represent 5 µm. (B) Left: Mean cell expression (top) of Tsa1-GFP following the H2O2 steps indicated in the bottom panel. Right: Dynamics of antioxidant level with increasing stress, as expected from the nonlinear model. (C) Quantification of mean cell expression of Tsa1-GFP at steady state as a function of H2O2 concentration (from experiments in (B)). Colored lines indicate the fit of the linear (red) and nonlinear (magenta) models. Inset: log-log representation of Tsa1-GFP level with H2O2 level. Green lines indicate lines of slope one on a log-log scale, to emphasize the nonlinearity of Tsa1-GFP expression. (D) Mean Tsa1-GFP expression (top) during a ramp experiment, as indicated in the bottom panel. Colored lines indicate the fit of the linear (red) and nonlinear (magenta) models. (E) Top: Mean cellular transcription of the TRX2 promoter for cells exposed to the temporal H2O2 profiles described in the middle panel (with corresponding color coding). Bottom: Quantification of maximal transcriptional output during a step experiment performed at t = 200 min (early stress) or 500 min (late stress) with or without pretreatment. Student’s t-test. (F) Mean cellular expression of Tsa1-GFP for cells exposed to the temporal H2O2 profiles described in the bottom panel. Error bars and shaded regions are SEM (B,D-F: N > 100 for most time points, C: N > 100).DOI: http://dx.doi.org/10.7554/eLife.23971.022
+**Figure 6.:** (A) Sequence of phase-contrast and fluorescence images of individual cells at the indicated times after initiation (t = 300 min) of a 0.4 mM step in H2O2 concentration. The green channel represents the Tsa1-GFP signal. The white bars represent 5 µm. (B) Left: Mean cell expression (top) of Tsa1-GFP following the H2O2 steps indicated in the bottom panel. Right: Dynamics of antioxidant level with increasing stress, as expected from the nonlinear model. (C) Quantification of mean cell expression of Tsa1-GFP at steady state as a function of H2O2 concentration (from experiments in (B)). Colored lines indicate the fit of the linear (red) and nonlinear (magenta) models. Inset: log-log representation of Tsa1-GFP level with H2O2 level. Green lines indicate lines of slope one on a log-log scale, to emphasize the nonlinearity of Tsa1-GFP expression. (D) Mean Tsa1-GFP expression (top) during a ramp experiment, as indicated in the bottom panel. Colored lines indicate the fit of the linear (red) and nonlinear (magenta) models. (E) Top: Mean cellular transcription of the TRX2 promoter for cells exposed to the temporal H2O2 profiles described in the middle panel (with corresponding color coding). Bottom: Quantification of maximal transcriptional output during a step experiment performed at t = 200 min (early stress) or 500 min (late stress) with or without pretreatment. Student’s t-test. (F) Mean cellular expression of Tsa1-GFP for cells exposed to the temporal H2O2 profiles described in the bottom panel. Error bars and shaded regions are SEM (B,D-F: N > 100 for most time points, C: N > 100).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig6-figsupp1-v4.jpg)
 
-**Figure 6—figure supplement 1.:** TSA1 promoter activity during H2O2stress.(A) Dynamics of the mean transcriptional response of TSA1 promoter (TSA1pr-sfGFP-deg) in step experiments at indicated H2O2 concentrations. (B) Quantification of mean cell expression of TSA1pr-sfGFP-deg at steady state as a function of H2O2 concentration (from experiments in (A)). (C) Quantification of the maximal transcription rate of TSA1 promoter during a step experiment, as a function of the amplitude of the stress. The transcription rate was calculated by fitting a line over a 18-min time window to the data reported in (A) and by determining the maximal slope. Error bars and shaded regions are SEM (A) N > 100 for most time points, (B and C) N > 100.DOI: http://dx.doi.org/10.7554/eLife.23971.023
+**Figure 6—figure supplement 1.:** (A) Dynamics of the mean transcriptional response of TSA1 promoter (TSA1pr-sfGFP-deg) in step experiments at indicated H2O2 concentrations. (B) Quantification of mean cell expression of TSA1pr-sfGFP-deg at steady state as a function of H2O2 concentration (from experiments in (A)). (C) Quantification of the maximal transcription rate of TSA1 promoter during a step experiment, as a function of the amplitude of the stress. The transcription rate was calculated by fitting a line over a 18-min time window to the data reported in (A) and by determining the maximal slope. Error bars and shaded regions are SEM (A) N > 100 for most time points, (B and C) N > 100.
 
 We reasoned that, in this scenario, the stress-resistant state following pretreatment should quickly disappear as Prx enzymes are diluted upon removal of H2O2. To test this, we pretreated the cells with a 100 min pulse of 0.2 mM H2O2 and examined the transcriptional response (TRX2pr-sfGFP-deg) upon challenge 100 or 400 min later (Figure 6E). Notably, the transcriptional output of cells challenged 400 min after pretreatment was identical to that of cells exposed to H2O2 for the first time, indicating that the cells had returned to a naïve state by 400 min (Figure 6E upper panel: green vs red lines, and histogram). In contrast, TRX2pr-sfGFP transcription was lower in cells challenged 100 min after pretreatment compared with naive cells (Figure 6E, blue vs pink lines, and histogram). In parallel, we also observed that Tsa1-GFP levels were comparable to the basal level after a 400-min recovery period, but not after 100 min (Figure 6F), suggesting that Prx levels are tightly associated with the H2O2 buffering efficiency.
 
-## A Tsa1-dependent hormetic effect of H2O2 on replicative lifespan
+### A Tsa1-dependent hormetic effect of H2O2 on replicative lifespan
 
-The nonlinear scaling of Tsa1 expression upon exposure to H
+The nonlinear scaling of Tsa1 expression upon exposure to H2O2 may prove beneficial to cellular physiology in general, particularly during replicative aging. In support of this, the extension of both chronological and replicative longevity by caloric restriction has been shown to be mediated, at least in part, by activation of H2O2-dependent genes (Mesquita et al., 2010; Molin et al., 2011). Furthermore, recent work has shown that Tsa1 plays a role in processing of age-related protein aggregates, and overexpression of Tsa1 alone increases longevity through a mechanism involving the PQC machinery (Hanzén et al., 2016). To explore how activation of the H2O2 homeostatic machinery affects longevity, we measured the replicative lifespan (RLS) of cells exposed to various doses of H2O2. For this, we developed a microfluidic device that allows individual cells with different genetic backgrounds to be tracked microscopically from birth to death in separate channels (Figure 7A and B and Video 6). This is similar to our previously described device (Fehrmann et al., 2013), except that the large increase in capacity allows cells from up to 10 mutant strains to be tracked in parallel.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/23971/elife-23971-fig7-v4.jpg)
 
-**Figure 7.:** 2O2 on replicative longevity.(A) Sketch of the microfluidic device used for replicative aging experiments. (B) Sequence of overlaid phase-contrast and fluorescence images (Htb2-sfGFP, used as a nuclear marker to score cell division) of mother cells growing in individual cavities. Numbers indicate the timing (white) and number of cell divisions (yellow) for the mother cell at the tip of the cavity. (C) Survival curves for wild-type cells growing in media containing H2O2 at the indicated concentrations. (D) RLS as a function of H2O2 concentration. Box represents median and 95% CI. U test. Red line shows the median RLS for 0 mM H2O2. (E) Survival curves of Δyap1 and Δtsa1 mutants in the presence or absence of 10 μM H2O2. (F) Frequency of specific fluorescence foci (Ddc2-GFP, Hsp104-GFP) as a function of H2O2 concentration. Error bars are 95% CI. (G) (Top to bottom) Recapitulation of measurements of RLS (blue), Tsa1-GFP steady-state upregulation (green), and frequency of damage (DDC2 foci in brown, Hsp104 foci in purple). Bottom: Conceptual sketch showing the contributions of protective (black) and deleterious (red) effects of H2O2 on RLS.DOI: http://dx.doi.org/10.7554/eLife.23971.024
+**Figure 7.:** (A) Sketch of the microfluidic device used for replicative aging experiments. (B) Sequence of overlaid phase-contrast and fluorescence images (Htb2-sfGFP, used as a nuclear marker to score cell division) of mother cells growing in individual cavities. Numbers indicate the timing (white) and number of cell divisions (yellow) for the mother cell at the tip of the cavity. (C) Survival curves for wild-type cells growing in media containing H2O2 at the indicated concentrations. (D) RLS as a function of H2O2 concentration. Box represents median and 95% CI. U test. Red line shows the median RLS for 0 mM H2O2. (E) Survival curves of Δyap1 and Δtsa1 mutants in the presence or absence of 10 μM H2O2. (F) Frequency of specific fluorescence foci (Ddc2-GFP, Hsp104-GFP) as a function of H2O2 concentration. Error bars are 95% CI. (G) (Top to bottom) Recapitulation of measurements of RLS (blue), Tsa1-GFP steady-state upregulation (green), and frequency of damage (DDC2 foci in brown, Hsp104 foci in purple). Bottom: Conceptual sketch showing the contributions of protective (black) and deleterious (red) effects of H2O2 on RLS.
+
+![Video 6.](https://cdn.elifesciences.org/articles/23971/elife-23971-media6.mp4.jpg)
+
+**Video 6.:** Movie showing the entire lifespan of a cell from birth to death in a cavity of PDMS device. The white bar represents 5µm.
 
 Using this technique, we observed that H2O2 had a biphasic effect on RLS. Exposure to 10 and 25 μM H2O2 significantly increased RLS up to ~25% compared with unstressed cells (median RLS generations of 26, 33, and 32 at 0, 10, and 25 μM H2O2 respectively), whereas concentrations > 50 μM H2O2 decreased RLS (median RLS of 25 and 20 generations at 50 and 100 μM H2O2, respectively; Figure 7C and D). This suggested that H2O2 had a hormetic effect, in which low doses of H2O2 were beneficial and improved RLS, whereas higher doses had deleterious consequences on longevity (Ristow and Schmeisser, 2011).
 
@@ -191,7 +215,7 @@ The last facet of nonlinear feedback regulation that emerges from our quantitati
 
 ## Materials and methods
 
-## Strains and plasmids
+### Strains and plasmids
 
 All strains were congenic to S288C (Sikorski and Hieter, 1989; Huh et al., 2003) unless specified. Strains generated in this study were made using standard genetic techniques or classical PCR-mediated genome editing. See Supplementary file 1 for the list of strains used in this study.
 
@@ -199,27 +223,69 @@ The transcriptional reporter strains TSA1pr-sfGFP-deg, TRX2p-sfGFP-deg were gene
 
 Sequences of homology used in PCR primers for promoter duplication in vivo
 
-Target locusSequence of homology to the target locusTSA1pr-1TTCCCCTCGTTCAATTGCTCACAACCAACCACAACTACATACACATACATACACATSA1pr-2CCTTGATCTGGCTAAACTTGACTTCGTCAATTTCATTCAAGTGGAGATAGTCTCGTRX2pr-1TTATACACGCACACATACACGAGAGTCTACGATATCTTTAAATAACACATCAATATRX2pr-2TGGATCATGGGCGCATGTGAACCGTACCCACCGAATTGCGCTTGAAGTGTGTCCA
+<table>
+  <thead>
+    <tr>
+      <th>Target locus</th>
+      <th>Sequence of homology to the target locus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TSA1pr-1</td>
+      <td>TTCCCCTCGTTCAATTGCTCACAACCAACCACAACTACATACACATACATACACA</td>
+    </tr>
+    <tr>
+      <td>TSA1pr-2</td>
+      <td>CCTTGATCTGGCTAAACTTGACTTCGTCAATTTCATTCAAGTGGAGATAGTCTCG</td>
+    </tr>
+    <tr>
+      <td>TRX2pr-1</td>
+      <td>TTATACACGCACACATACACGAGAGTCTACGATATCTTTAAATAACACATCAATA</td>
+    </tr>
+    <tr>
+      <td>TRX2pr-2</td>
+      <td>TGGATCATGGGCGCATGTGAACCGTACCCACCGAATTGCGCTTGAAGTGTGTCCA</td>
+    </tr>
+  </tbody>
+</table>
 
 The strain tsa1Δ; tsa2Δ; ACT1pr::TSA1-GFP was generated by substituting the promoter region of TSA1 by the promoter of ACT1 in strain TSA1-GFP (BY4741). The cassette kanMX4::ACT1pr was amplified by PCR and then transformed into the strain TSA1-GFP (BY4741) using standard lithium acetate protocol. The primers contained sequences homologous to the TSA1 genomic locus that are listed below:
 
 Sequences of homology used in PCR primers for promoter substitution
 
-Target locusSequence of homology to the target locusTSA1-1CCACCGCCACAGGTGCGCAACCTCATCTCTACATTCCTGATGAAGACTAATSA1-2ACGGCAGTTTTCTTAAAAGTTGGAGCTTGCTTTTGAACTTGAGCGACCAT
+<table>
+  <thead>
+    <tr>
+      <th>Target locus</th>
+      <th>Sequence of homology to the target locus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TSA1-1</td>
+      <td>CCACCGCCACAGGTGCGCAACCTCATCTCTACATTCCTGATGAAGACTAA</td>
+    </tr>
+    <tr>
+      <td>TSA1-2</td>
+      <td>ACGGCAGTTTTCTTAAAAGTTGGAGCTTGCTTTTGAACTTGAGCGACCAT</td>
+    </tr>
+  </tbody>
+</table>
 
 To introduce tsa2Δ mutation, the transformed strain was crossed with strain Y14287.
 
-## H2O2 stability and dosage in the microfluidic setup
+### H2O2 stability and dosage in the microfluidic setup
 
 The H2O2 (Hydrogen peroxide solution 35wt. % in H2O, 349887–500 ML, Sigma) was mixed in the SCD media at the suitable concentration prior the microfluidic experiment. In order to increase the stability of the H2O2 during the microfluidic experiments, the SCD media were kept on ice. Temperature measurements showed that this procedure does not affect media temperature in the microfluidic device since media reached room temperature before entering the device (data not shown). The H2O2 concentration was measured using a colometric H2O2 assay kit (OxiSelect Hydrogen Peroxide Assay Kit (Colorimetric), STA-343, EUROMEDEX, France) in media samples taken from the outlet of the chip.
 
 Dosage experiments were run in triplicates.
 
-## Consumption of H2O2 in bulk experiment
+### Consumption of H2O2 in bulk experiment
 
 Over-night SCD-media culture (strain WT BY4742) was diluted in SCD to OD600 = 0.1 and incubated at 30°C, 220 rpm. At OD600 = 0.5, H2O2 was added to final concentration of 0.4 mM. Consumption of the H2O2 was determined by measuring the H2O2 concentration in the cell media over time. Bulk H2O2 consumption experiments were performed six times.
 
-## Microfabrication and microfluidics setup
+### Microfabrication and microfluidics setup
 
 Microfluidic chips were designed and made using standard techniques as previously described (Fehrmann et al., 2013). The microfluidic master used to assess the adaptation to oxidative stress was made using standard SU-8 lithography process at the ST-NANO facility of the IPCMS (Strasbourg, France). The microfluidic master for aging studies was made using similar techniques in the FEMTO-ST nanotechnology platform of the French Renatech network (Besançon, France). Prototypic molds were replicated in epoxy to ensure long-term preservation. The micro-channels were cast by curing PDMS (Sylgard 184,10:1 mixing ratio) and then covalently bound to a 24 × 50 mm coverslip using plasma surface activation (Diener, Germany).
 
@@ -227,11 +293,11 @@ Microfluidic chips were connected using Tygon tubing and media flows were driven
 
 For aging experiments, cells were maintained in a chip during typically 140 hr with constant medium perfusion (flow rate 10 μL/min). Cells started to enter the cavity about 20 hr following their loading in the device. In case H2O2 was used throughout the assay, fresh medium was prepared every 24 hr to prevent any decay in H2O2 concentration over time.
 
-## Media diffusion through the microfluidics device/ effects of cell confinement
+### Media diffusion through the microfluidics device/ effects of cell confinement
 
 The diffusion of the media in the trapping cavities was tested using a fluorescein dye assay. To do this, fluorescein (Sigma) was flown trough the microfluidics device either in the absence or in the presence of a dense microcolony of cells and fluorescence images were snapped every 2 s. The fluorescence was measured both in the supply channel at the border of the trapping cavity and in the middle of the trapping cavity. As expected, the fluorescence in the supply channel increased almost instantaneously as shown in Figure 1—figure supplement 1, whereas the increase of the fluorescence in the middle of the empty trapping cavity displayed a delay (half rising time t1/2 = 21 s). A comparable time (t1/2 = 24 s) was obtained in the presence of a dense microcolony of cells, hence showing that diffusion is not impaired in a crowded environment.
 
-## Time-lapse microscopy
+### Time-lapse microscopy
 
 All time-lapse experiments have been performed at least two times.
 
@@ -241,51 +307,89 @@ We used automated stages in order to follow up to 20 (adaptation experiments) or
 
 Temperature control was achieved using custom sample holder with thermoelectric modules and an objective heater with heating resistors. Temperature control was achieved using a PID controller (5C7-195, Oven Industries).
 
-## Image analysis
+### Image analysis
 
 Raw images were processed using custom software, called phyloCell, based on MATLAB and the image-processing toolbox (Fehrmann et al., 2013; Paoletti et al., 2016). This software features a comprehensive graphical user interface to perform segmentation/tracking and to introduce manual error corrections. The software is available for download on GitHub (Charvin, 2017). A copy is archived on https://github.com/elifesciences-publications/phyloCell. In this study, the software was used to segment cell contours based on phase-contrast images; to track cells over time; and to measure the fluorescence within the cells, including nuclear localization of fusion proteins.
 
-## Quantification of growth rate
+### Quantification of growth rate
 
 After segmentation of cell contours from time-lapse data, the volume V of individual cells was estimated by spherical approximation of the cellular shape (Figure 1—figure supplement 2A). The volume increase rate (which we refer to as cellular growth rate) was then determined for each time point as the increase in the cell volume in consecutive frames per unit of time (cell growth rate at t1 = (V(t2)-V(t1))/(t2-t1), where t2-t1 = 3 min). More specifically, the measurements of mean growth rate per cell used throughout this study (which reflects the metabolic capacity of a population of cells, see below) were measured by averaging the volume increase rate of individual budded cells over large micro-colonies of cells, whereas unbudded cells were not considered in this analysis. This is motivated by two reasons: first, the increase in cell volume is higher during the budded phase of the cell cycle, and therefore, it provides a more robust estimate of cell growth. Second, the purpose of this measurement is to provide a readout of cellular metabolic activity, independently of cell cycle progression. When cells are exposed to H2O2, the fraction of budded cells increases due to the activation in some cells of a G2/M checkpoint, but this cell cycle arrest is not necessarily accompanied by a change in metabolic activity. Therefore, if we were pooling the growth rate of both unbudded (slow volume increase) and budded cells (fast volume increase), the change in the repartition of each type of cells upon H2O2 exposure would induce a misleading change in the mean growth rate per cell, which would be unrelated to a potential change in metabolic activity. Instead, selecting only the budded cells provides a relevant assessment of cell growth rate, which is unaffected by the inherent variations in cell cycle progression during stress exposure (Figure 1—figure supplement 2B).
 
 Noteworthy, the definition of growth rate used in our study (dV/dt) differs from the classical one, which is given by μ= (1/V) x dV/dt. The reason why we used the simple first time derivative of cell volume is because the exponential growth model appeared to be irrelevant to assess the change in metabolic activity during stress exposure. Indeed, the growth rate of cells (defined as dV/dt) appeared to be independent of cell volume (Figure 1—figure supplement 2C). In addition, using dV/dt as readout of growth rate, we observed a complete recovery following the exposure to stress, suggesting that cells had recovered a normal metabolic activity. However, using μ= (1/V) x dV/dt as the definition of growth rate, we would have missed the recovery in metabolic activity, since the mean cell volume of adapted cells following the recovery was higher than that before the stress (Figure 1—figure supplement 2D), due to cell cycle arrested – yet metabolically active-cells.
 
-## Quantification of Yap1 nuclear localization
+### Quantification of Yap1 nuclear localization
 
 Following the segmentation of the nucleus using the Htb2-mCherry signal (Figure 1D), nuclear Yap1-GFP localization was measured at each frame by subtracting the average cytoplasmic fluorescence level from the mean nuclear level in order to remove the background. In addition, we noticed that there was a drift in the fluorescence level over time, which, for unclear reasons, appeared to mostly affect the cytoplasmic level. Therefore, we used a no-stress control experiment, in which Yap1-GFP nuclear localization was supposedly constant, to measure the extent by which background subtraction modifies the quantification of the nuclear localization over time. This measurement was then used to correct the drift observed in experiments in which a stress was applied.
 
-## Quantification of cell survival using a propidium iodide (PI) assay
+### Quantification of cell survival using a propidium iodide (PI) assay
 
 Media containing 5 µg/ml PI (Sigma, Saint-Louis, MO, USA) was flown through the microfluidics device during a 0.6 mM H2O2 step experiment, and images were recorded continuously. Dead cells, which experienced a loss of cell membrane integrity, incorporated the dye and displayed red fluorescence, as reported in Figure 2—figure supplement 1.
 
-## Quantification of the phase-contrast brightness of the cells
+### Quantification of the phase-contrast brightness of the cells
 
 We used the presence of persistent bright vacuoles as a readout to characterize the cells experiencing a permanent growth arrest following a H2O2 stress. To quantify this, we measured the mean intensity of the highest decile in the phase-contrast channel of the images.
 
-## Protocol to generate linear stress ramps
+### Protocol to generate linear stress ramps
 
-In order to generate ramps of H2O2 stress, we used an extra peristaltic pump driving the flow of a H2O2 stock solution to gradually increase the H2O2 concentration in the medium tank used to feed the microfluidic device (Figure 3—figure supplement 2A). Assuming C1 and V1, the concentrations and volume of the medium tank, respectively, μ1 the flow rate used to perfuse the microfluidic device from the tank, C0 and μ0 the concentration and flow rate from the H2O2 stock solution, using the conservation of mass, one can derive the evolution of V1 and C1 with time:dV1dt= μ0−μ1dC1dt= μ0V10+(μ0−μ1)t (C0−C1)
+In order to generate ramps of H2O2 stress, we used an extra peristaltic pump driving the flow of a H2O2 stock solution to gradually increase the H2O2 concentration in the medium tank used to feed the microfluidic device (Figure 3—figure supplement 2A). Assuming C1 and V1, the concentrations and volume of the medium tank, respectively, μ1 the flow rate used to perfuse the microfluidic device from the tank, C0 and μ0 the concentration and flow rate from the H2O2 stock solution, using the conservation of mass, one can derive the evolution of V1 and C1 with time:
 
-In the particular case of identical flow rates (μ0= μ1), V1 is constant and the evolution of C1 with time is given by:C1=C0 ( 1− eδt)
+$$
+\frac{dV_{1}}{dt}= \mu_{0}−\mu_{1}
+$$
 
-where δ=μ0V10. When t << 1/δ, then the concentration C1 increases linearly as:C1= C0 δ t
+
+
+$$
+\frac{dC_{1}}{dt}= \frac{\mu_{0}}{V_{1}^{0}+(\mu_{0}−\mu_{1})t} (C_{0}−C_{1})
+$$
+
+In the particular case of identical flow rates ($\mu_{0}= \mu_{1}$), V1 is constant and the evolution of C1 with time is given by:
+
+$$
+C_{1}=C_{0} ( 1− e^{\deltat})
+$$
+
+where $\delta=\frac{\mu_{0}}{V_{1}^{0}}$. When t << 1/δ, then the concentration C1 increases linearly as:
+
+$$
+C_{1}= C_{0} \delta t
+$$
 
 With μ0 = 30 μL/min and V10 = 1L, δ = 3. 10−5 min−1. Therefore, we should get a linear slope of 3 μM/min using C0 = 100 mM, provided t << 105 min, which is much higher than the duration of experiments (typically 103 min).
 
-However, H2O2 dosages during the calibration of stress ramp experiments showed that the actual concentrations were systematically 21.5 ± 2% lower than expected for all tested time points (0–1000 min) and ramp slopes (1.4–22.4 µM/min) (data not shown). To explain the origin of this deviation from the expected measurements (which stands higher than the 10% decay observed during step experiments, see Figure 1C), we hypothesize that it can be attributed to a higher H2O2 degradation rate in the medium tank during ramp experiments because the tank was not kept on ice due to the need to perform constant mixing using a magnetic stirrer. Therefore, the actual evolution of concentration in the medium tank is given by:C1= 0.785 C0 δ t
+However, H2O2 dosages during the calibration of stress ramp experiments showed that the actual concentrations were systematically 21.5 ± 2% lower than expected for all tested time points (0–1000 min) and ramp slopes (1.4–22.4 µM/min) (data not shown). To explain the origin of this deviation from the expected measurements (which stands higher than the 10% decay observed during step experiments, see Figure 1C), we hypothesize that it can be attributed to a higher H2O2 degradation rate in the medium tank during ramp experiments because the tank was not kept on ice due to the need to perform constant mixing using a magnetic stirrer. Therefore, the actual evolution of concentration in the medium tank is given by:
+
+$$
+C_{1}= 0.785 C_{0} \delta t
+$$
 
 For instance, a 1.1 µM/min ramp slope is obtained with μ0 = 30 μL/min and V10 = 1L and C0 = 46.67 mM.
 
-## Mathematical model of the H2O2 homeostatic machinery
+### Mathematical model of the H2O2 homeostatic machinery
 
 To understand the mechanism that underlies H2O2 homeostasis, we developed a mathematical framework based on the negative feedback regulation in the Yap1 network. The model was used throughout this study to help identify and formalize the emergent properties of this system through iterative cycles of predictions and experimental challenges, rather than to perform exhaustive data fitting to retrieve individual parameter values. In the following, we describe in details the principles of the mathematical model.
 
-## A - Model assumptions (refers to Figure 3)
+#### A - Model assumptions (refers to Figure 3)
 
-The model describes the dynamics of scavenging of internal H2O2 (variable H) by antioxidants enzymes. Yap1 activates the synthesis of mRNAs from antioxidant genes (AmRNA), which are in turn translated into antioxidant enzymes (variable A) in response to an input H2O2 stress (parameter I). The evolution of AmRNA, A and H with time can be written as:(1)dHdt= ε+α (I−H)− β A f(H)(2)dAmRNAdt= γ g(H)− μ AmRNAdAdt= γ′ AmRNA− μ′ A
+The model describes the dynamics of scavenging of internal H2O2 (variable H) by antioxidants enzymes. Yap1 activates the synthesis of mRNAs from antioxidant genes (AmRNA), which are in turn translated into antioxidant enzymes (variable A) in response to an input H2O2 stress (parameter I). The evolution of AmRNA, A and H with time can be written as:
 
-where ε represents the internal H2O2 production rate due to cellular activity, α is the rate constant associated with H2O2 diffusion, β is the rate of H2O2 scavenging by antioxidants, γ and γ′ are the transcription and translation antioxidants, respectively, and μ and μ′ are the degradation rate constants associated with mRNA degradation and antioxidant dilution (due to cell growth), respectively; f and g are functions of H that characterize the sensitivity to H2O2 of scavenging and A transcription, respectively.
+$$
+\frac{dH}{dt}= \epsilon+\alpha (I−H)− \beta A f(H)
+$$
+
+
+
+$$
+\frac{dA_{mRNA}}{dt}= \gamma g(H)− \mu A_{mRNA}
+$$
+
+
+
+$$
+\frac{dA}{dt}= \gamma^{′} A_{mRNA}− \mu^{′} A
+$$
+
+where ε represents the internal H2O2 production rate due to cellular activity, α is the rate constant associated with H2O2 diffusion, $\beta$ is the rate of H2O2 scavenging by antioxidants, $\gamma$ and $\gamma^{′}$ are the transcription and translation antioxidants, respectively, and $\mu$ and $\mu^{′}$ are the degradation rate constants associated with mRNA degradation and antioxidant dilution (due to cell growth), respectively; $f$ and $g$ are functions of H that characterize the sensitivity to H2O2 of scavenging and A transcription, respectively.
 
 Although the purpose of this modeling approach is to make the most simple mathematical description using a limited set of variable in order to get an in-depth understanding of the distinct functional role played by each model feature, we chose to describe antioxidant transcription and consider mRNA level as a separate variable because it introduces a delay in the antioxidant response which is mandatory to explain experimental results reported in Figure 3 (see also Figure 3—figure supplement 1).
 
@@ -293,19 +397,39 @@ For the sake of simplicity, the effect of H2O2 on cellular physiology (i.e. cel
 
 Last, even though this model features an important number of parameters (i.e. 7), the analysis below reveals that the detailed dynamical properties of the system are only dependent upon a combination of parameters, but not on the individual values.
 
-## B- Steady state for the linear model: f(H)=1, g(H) = H (refers to Figure 1F and Figure 3)
+#### B- Steady state for the linear model: f(H)=1, g(H) = H (refers to Figure 1F and Figure 3)
 
 In this section, we assume that the H2O2 scavenging rate depends on antioxidant concentration A but is independent of internal H2O2 level H, that is f = 1. In addition, we hypothesize that the antioxidant transcription rate linearly increases with H.
 
-Under these assumptions, it can be shown that the equilibrium state of the system described in Equations (1-3) is such that:(4)Heq= μμ′(ε+αI)αμμ′+βγγ′(5)AmRNA,eq= γμ′(ε+αI)αμμ′+βγγ′(6)Aeq= γγ′(ε+αI)αμμ′+βγγ′
+Under these assumptions, it can be shown that the equilibrium state of the system described in Equations (1-3) is such that:
+
+$$
+H_{eq}= \frac{\mu\mu^{′}(\epsilon+\alphaI)}{\alpha\mu\mu^{′}+\beta\gamma\gamma^{′}}
+$$
+
+
+
+$$
+A_{mRNA,eq}= \frac{\gamma\mu^{′}(\epsilon+\alphaI)}{\alpha\mu\mu^{′}+\beta\gamma\gamma^{′}}
+$$
+
+
+
+$$
+A_{eq}= \frac{\gamma\gamma^{′}(\epsilon+\alphaI)}{\alpha\mu\mu^{′}+\beta\gamma\gamma^{′}}
+$$
 
 In the following, we set ε = 0 for the sake of simplicity, unless specified otherwise.
 
-## C- Particular case: the ‘integral feedback’ model: μ’=0 (refers to Figure 1F)
+#### C- Particular case: the ‘integral feedback’ model: μ’=0 (refers to Figure 1F)
 
-From Equation (4), in the particular case in which μ’=0 (i.e. antioxidant dilution can be neglected), the equilibrium is such that the internal H2O2 concentration is strictly zero: Heq = 0, independently of the input H2O2 level I. This indicates that the system displays perfect homeostatic properties. This case corresponds to an ‘integral feedback’ system (Muzzey et al., 2009; Yi et al., 2000), in which the response of the scavenging machinery (production of antioxidants) is proportional to the integral over time of a function F (which can be derived from Equations (1) and (2)) that only depends on H, as follows (2):(7)A= γ∫F(H)dt
+From Equation (4), in the particular case in which μ’=0 (i.e. antioxidant dilution can be neglected), the equilibrium is such that the internal H2O2 concentration is strictly zero: Heq = 0, independently of the input H2O2 level I. This indicates that the system displays perfect homeostatic properties. This case corresponds to an ‘integral feedback’ system (Muzzey et al., 2009; Yi et al., 2000), in which the response of the scavenging machinery (production of antioxidants) is proportional to the integral over time of a function F (which can be derived from Equations (1) and (2)) that only depends on H, as follows (2):
 
-Therefore, during the transient regime following the exposure to a step in H2O2, as long as F(H) is not strictly zero, A keeps building up, thus ensuring a complete scavenging of internal H2O2 (i.e. Heq = 0). Figure 3—figure supplement 1A illustrates this property of the model, by showing the evolution of model variables upon exposure to a given H2O2 concentration. Such integral feedback control is widely used in systems engineering to ensure perfect tuning of a controlled variable (e.g. temperature control).
+$$
+A= \gamma\intF(H)dt
+$$
+
+Therefore, during the transient regime following the exposure to a step in H2O2, as long as $F(H)$ is not strictly zero, A keeps building up, thus ensuring a complete scavenging of internal H2O2 (i.e. Heq = 0). Figure 3—figure supplement 1A illustrates this property of the model, by showing the evolution of model variables upon exposure to a given H2O2 concentration. Such integral feedback control is widely used in systems engineering to ensure perfect tuning of a controlled variable (e.g. temperature control).
 
 However, the integral feedback model is ruled out by the experimental observation that Heq is not zero and depends on the external H2O2 level (Figure 1F). In contrast, with μ’≠0, Heq is proportional to the external H2O2 concentration (Equation (4)), in agreement with Figure 1F.
 
@@ -313,120 +437,276 @@ Therefore, the enzyme dilution rate (set by μ’) directly controls internal st
 
 In addition, taking this observation into consideration would require to model the additional feedback of internal H2O2 level on enzyme dilution rate. This additional feature would introduce the following drawbacks: (1) the model would no longer be linear (since the enzyme dilution rate would necessarily be a nonlinear function of internal H2O2 and antioxidants concentration); (2) by making the model more cumbersome, it would be difficult to interpret the respective effects of each feature of the model. Therefore, for sake of simplicity, this possibility has not been investigated in the scope of this study.
 
-## D- Response to linear ramps for the linear model (refers to Figure 3)
+#### D- Response to linear ramps for the linear model (refers to Figure 3)
 
 In this section, we calculate the response of the model to a linear ramp of H2O2, defined by:
 
-I(t)= δ t, where δ is the slope of the ramp (μM/min) and t is the time.
+$I(t)= \delta t$, where δ is the slope of the ramp (μM/min) and t is the time.
 
-## Particular case of the integral feedback (μ’=0)
+##### Particular case of the integral feedback (μ’=0)
 
 Even though this case does not match experimental findings (see above), it is instrumental to calculate the behavior of this system when it is submitted to linear ramps.
 
-Under this assumption, we can show that A follows:(8)A(t) ≈ αδtβ
+Under this assumption, we can show that A follows:
 
-AmRNA is given by:(9)AmRNA(t)= 1γ' dAdt≈ αδβγ'
+$$
+A(t) ≈ \frac{\alpha\deltat}{\beta}
+$$
 
-and H is given by:(10)H(t)= μγ AmRNA≈ αμδβγγ′
+AmRNA is given by:
 
-Therefore, interestingly, the internal H2O2 does not vary with time and its magnitude is proportional to the slope of the ramp δ. More specifically, since cells should adapt as long as H(t)<Htox, this predicts that cells can tolerate a maximum slope δmax defined by:(11)δmax= Htox βγγ'αμ
+$$
+A_{mRNA}(t)= \frac{1}{\gamma'} \frac{dA}{dt}≈ \frac{\alpha\delta}{\beta\gamma'}
+$$
+
+and H is given by:
+
+$$
+H(t)= \frac{\mu}{\gamma} A_{mRNA}≈ \frac{\alpha\mu\delta}{\beta\gamma\gamma^{′}}
+$$
+
+Therefore, interestingly, the internal H2O2 does not vary with time and its magnitude is proportional to the slope of the ramp $\delta$. More specifically, since cells should adapt as long as $H(t)<H_{tox}$, this predicts that cells can tolerate a maximum slope $\delta_{max}$ defined by:
+
+$$
+\delta_{max}= H_{tox} \frac{\beta\gamma\gamma'}{\alpha\mu} 
+$$
 
 Figure 3—figure supplement 1C illustrates the plateau of H reached during linear ramps for the integral feedback model.
 
-## General case of the linear feedback model (μ’≠0)
+##### General case of the linear feedback model (μ’≠0)
 
-In this case, unlike the integral feedback model, it can be shown that H increases linearly with time as:(12)H≈ μμ′αδtαμμ′+βγγ′
+In this case, unlike the integral feedback model, it can be shown that H increases linearly with time as:
+
+$$
+H≈ \frac{\mu\mu^{′}\alpha\deltat}{\alpha\mu\mu^{′}+\beta\gamma\gamma^{′}}
+$$
 
 as shown on the numerical simulation on Figure 3—figure supplement 1D. Therefore, under this assumption, the system has weaker homeostatic capabilities, compared to the integral feedback case.
 
 Unlike the transient regime observed in step experiments, under ramping stress, the evolution of H with time greatly depends on the dilution rate μ’. Therefore, in this case, it is probable that the growth rate arrest observed with steep ramps may help the cell survive to higher absolute stress levels by allowing more time for the cells to accumulate antioxidants enzymes, provided that their synthesis rate is not affected by stress. This possibility can be better understood by considering the adaptation to an arbitrary stress pattern, using the ‘phase diagram’ described in the next section. On this plot, the iso-H line on the phase diagram delimitating cell survival and arrest would be in between those displayed on Figure 3—figure supplement 1E (μ’=0) and Figure 3—figure supplement 1F (μ’ ≠ 0).
 
-## E- Characterization of the training capabilities – ‘phase diagram’ (refers to Figure 3)
+#### E- Characterization of the training capabilities – ‘phase diagram’ (refers to Figure 3)
 
 According to the analysis performed in the previous section, the internal H2O2 level reached upon stress exposure is proportional to the magnitude of the stress I during step experiment, but also strongly depends on the slope d = dI/dt of the ramp when using linearly increasing stress. By combining these two types of external perturbations, we can calculate numerically the maximal internal H2O2 level Hmax reached when the system is submitted to a stress of magnitude I applied with a rate δ (as described on the two-dimensionnal plot in Figure 3C, Figure 3—figure supplement 1E and F).
 
 We assume that there is toxicity threshold Htox (see Figure 3C) that is defined by the transient internal H2O2 level obtained when the cells are exposed to the limit concentration of 0.6 mM H2O2 in step experiments. Based on this, the ‘iso-H’ line defined by Hmax = Htox splits the (I, d = dI/dt) space into a domain where adaptation is possible (Hmax < Htox) and a domain where adaptation is prohibited (Hmax > Htox). For the linear models, the iso-H lines can be calculated analytically, see below. The interest of such ‘phase diagram’ is that it provides a synthetic overview the homeostatic capabilities of the system in response to an arbitrary linear perturbation.
 
-## Particular case of the integral feedback (μ’=0)
+##### Particular case of the integral feedback (μ’=0)
 
-In this particular case, in addition to the 0.6 mM threshold for step experiments (see vertical dashed line on Figure 3—figure supplement 1E), there is a threshold ramp slope δmax (defined in the previous section) beyond which adaptation is prohibited (horizontal line on Figure 3—figure supplement 1E). Conversely, this model implies that there is no limit in adaptation provided the slope of the ramp is less than δmax. In practice, however, this prediction is challenged by experimental observation (Figure 3) showing that there is a limited range of I allowing cell adaptation, even with very low ramp slopes. Therefore, the experiments focused on adaptation to a linear ramp further invalidate the integral feedback model.
+In this particular case, in addition to the 0.6 mM threshold for step experiments (see vertical dashed line on Figure 3—figure supplement 1E), there is a threshold ramp slope $\delta_{max}$ (defined in the previous section) beyond which adaptation is prohibited (horizontal line on Figure 3—figure supplement 1E). Conversely, this model implies that there is no limit in adaptation provided the slope of the ramp is less than $\delta_{max}$. In practice, however, this prediction is challenged by experimental observation (Figure 3) showing that there is a limited range of I allowing cell adaptation, even with very low ramp slopes. Therefore, the experiments focused on adaptation to a linear ramp further invalidate the integral feedback model.
 
-## General case of the linear model (μ’≠0)
+##### General case of the linear model (μ’≠0)
 
-In this case, in addition to the 0.6 mM threshold for step experiments (see vertical dashed line on Figure 3—figure supplement 1F), one can calculate the asymptotic limit of the iso-H line (Hmax = Htox) for slow ramps:(13)δ= μ'(Iabs−I)
+In this case, in addition to the 0.6 mM threshold for step experiments (see vertical dashed line on Figure 3—figure supplement 1F), one can calculate the asymptotic limit of the iso-H line (Hmax = Htox) for slow ramps:
 
-where:(14)Iabs= Htox(1+βγγ′αμμ′ )
+$$
+\delta= \mu^{'}(I_{abs}−I)
+$$
 
-Equation (13) has two important implications: first, the maximum allowed ramp slope δ is a linear function of the magnitude of the stress I, and its slope is set only by the antioxidant dilution rate μ'. Second, there is an absolute H2O2 concentration Iabs beyond which no adaptation is possible, as described below (Figure 3—figure supplement 1F).
+where:
 
-## Absolute adaptation concentration Iabs
+$$
+I_{abs}= H_{tox}(1+\frac{\beta\gamma\gamma^{′}}{\alpha\mu\mu^{′}} )
+$$
 
-Equation (14) defines the absolute H2O2 concentration Iabs that allows cellular adaptation. As expected intuitively, it appears as the balance between the kinetic constants that favor adaptation (scavenging rate, gene expression rate) and the ones that tend to increase internal H2O2 levels (H2O2 diffusion rate, dilution rate of antioxidant mRNA and proteins). Therefore, the experimental measurement of Iabs (as shown in Figure 3—figure supplement 2F) provides an assessment of the overall homeostatic capabilities of the system.
+Equation (13) has two important implications: first, the maximum allowed ramp slope $\delta$ is a linear function of the magnitude of the stress I, and its slope is set only by the antioxidant dilution rate $\mu^{'}$. Second, there is an absolute H2O2 concentration $I_{abs}$ beyond which no adaptation is possible, as described below (Figure 3—figure supplement 1F).
 
-## Influence of the delay in antioxidant response on the training capabilities
+##### Absolute adaptation concentration Iabs
+
+Equation (14) defines the absolute H2O2 concentration $I_{abs}$ that allows cellular adaptation. As expected intuitively, it appears as the balance between the kinetic constants that favor adaptation (scavenging rate, gene expression rate) and the ones that tend to increase internal H2O2 levels (H2O2 diffusion rate, dilution rate of antioxidant mRNA and proteins). Therefore, the experimental measurement of Iabs (as shown in Figure 3—figure supplement 2F) provides an assessment of the overall homeostatic capabilities of the system.
+
+##### Influence of the delay in antioxidant response on the training capabilities
 
 In addition to experimental measurement of growth rate during ramp experiments, Figure 3F displays the iso-H line (Hmax = Htox) as expected by the model, in which parameters values are similar to Figure 3—figure supplement 1I. The set of parameters was chosen to match the experimentally determined Iabs = 7.3 mM. Interestingly, in these conditions, the model tends to overestimate the adaptation capabilities for steep ramps (δ > 10 μM/min). We interpret this disagreement by the fact that there is a delay in the synthesis of antioxidants that render the system more sensitive to steep ramps. Indeed, by changing the kinetics of mRNA stability (by adjusting the value of decay rate to µ = log(2)/40 min−1 [Geisberg et al., 2014]), while maintaining the same value for Iabs, we obtained a better agreement with experiments (see Figure 3F and Figure 3—figure supplement 1G–1J).
 
-## F- Steady state for the nonlinear model: f(H) = H/(H+W), g(H) = H/(H+K) (refers to Figures 1 and 6)
+#### F- Steady state for the nonlinear model: f(H) = H/(H+W), g(H) = H/(H+K) (refers to Figures 1 and 6)
 
 This model constitutes a refinement of the linear feedback model described above, which fails to describe the scaling of Tsa1-GFP level with increasing H2O2 levels (Figure 6).
 
-## Saturation in antioxidant transcription rate
+##### Saturation in antioxidant transcription rate
 
-To this end, the first assumption to be added in the model is linked to the observed saturation in Tsa1 transcription rate (Figure 6—figure supplement 1C). Assuming g(H) = H/(H+K), where K is a constant that sets the saturating H concentration, the steady-state level for H is given by:(15)Heq=12(−(Z+K−I)+(Z+K−I)2+4IK)
+To this end, the first assumption to be added in the model is linked to the observed saturation in Tsa1 transcription rate (Figure 6—figure supplement 1C). Assuming g(H) = H/(H+K), where K is a constant that sets the saturating H concentration, the steady-state level for H is given by:
 
-with: Z≡γγ'βμμ'α~ Iabs
+$$
+H_{eq}=\frac{1}{2}(−(Z+K−I)+\sqrt{(Z+K−I)^{2}+4IK})
+$$
 
-Therefore, even though Heq is a priori a nonlinear function of I, when I << Iabs, Heq varies linearly with I:(16)Heq≈I KZ
+with: $Z≡\frac{\gamma\gamma^{'}\beta}{\mu\mu^{'}\alpha}~ I_{abs}$
 
-Similarly, Aeq is given by:Aeq≈I αβ (1−KZ)
+Therefore, even though Heq is a priori a nonlinear function of I, when I << $I_{abs}$, Heq varies linearly with I:
 
-In contrast, when I = Iabs and above, the equilibrium is given by:(17)Aeq≈γγ'μμ'
+$$
+H_{eq}≈I \frac{K}{Z}
+$$
 
-and(18)Heq≈I−Z
+Similarly, Aeq is given by:
+
+$$
+A_{eq}≈I \frac{\alpha}{\beta} (1−\frac{K}{Z})
+$$
+
+In contrast, when I = Iabs and above, the equilibrium is given by:
+
+$$
+A_{eq}≈\frac{\gamma\gamma'}{\mu\mu'}
+$$
+
+and
+
+$$
+H_{eq}≈I−Z
+$$
 
 which is expected since, under these conditions, the system has reached its maximum scavenging capabilities.
 
 Therefore, over an extensive range of concentration (since Iabs was shown to be larger than 7 mM, see Figure 3—figure supplement 2F), the level of antioxidants should scale linearly with the stress level I. This prediction is contradicted by the nonlinear scaling observed experimentally, especially for low H2O2 values (Figure 6), therefore indicating that an additional assumption is required to explain the data.
 
-## Nonlinear H2O2-dependent scavenging rate
+##### Nonlinear H2O2-dependent scavenging rate
 
 In the following, we assume that, in addition to saturation in antioxidant transcription rate, the rate of H2O2 scavenging by antioxidants is set by: f(H) = H/(H+W), where W represents the internal H2O2 concentration at which the scavenging rate saturates. In addition, unlike the previous sections, we now hypothesize the existence of a non-zero basal internal H2O2 production rate ε.
 
-The steady-state levels Heq and Aeq are given by the solution of a third-degree equation. However, in the particular case in which the steady state is below the saturation level for scavenging and transcription rate (i.e. Heq << K,W, corresponding to low external H2O2 levels), Heq can be approximated as:(19)Heq= 12 (−σ+ σ2+4σ(I+εα) )
+The steady-state levels Heq and Aeq are given by the solution of a third-degree equation. However, in the particular case in which the steady state is below the saturation level for scavenging and transcription rate (i.e. Heq << K,W, corresponding to low external H2O2 levels), Heq can be approximated as:
 
-with σ=αμμ'KWβγγ' ~KWIabs, and:(20)Aeq= γγ'μμ'HeqK
+$$
+H_{eq}= \frac{1}{2} (−\sigma+ \sqrt{\sigma^{2}+4\sigma(I+\frac{\epsilon}{\alpha}) })
+$$
+
+with $\sigma=\frac{\alpha\mu\mu'KW}{\beta\gamma\gamma'} ~\frac{KW}{I_{abs}}$, and:
+
+$$
+A_{eq}= \frac{\gamma\gamma'}{\mu\mu'}\frac{H_{eq}}{K}
+$$
 
 Therefore, this models implies that there is a sublinear dependency of both A and H with increasing stress level I, even for low external H2O2 levels, as indeed observed on Figures 1F and 6C. Noteworthy, the magnitude of the nonlinearity is controlled by three parameters: σ, which combines the saturation concentrations K and W, and the ratio ε/α, which represents the internal H2O2 concentration in the absence of scavenging and external H2O2.
 
-## G- Acquisition of tolerance
+#### G- Acquisition of tolerance
 
 In our experiments (Figure 4), cells that have been pre-exposed to H2O2 display a lower burst of nuclear relocation of Yap1-GFP upon a mild subsequent challenging stress, compared to naive ones.
 
 A numerical integration of Equations (1-3) according to the hypotheses of linear versus nonlinear feedback models is displayed in Figure 4—figure supplement 1E and F, using the same set of parameters as in Figure 6.
 
-## H- Summary of parameters values, data fitting procedures and numerical integration
+#### H- Summary of parameters values, data fitting procedures and numerical integration
 
-## Linear model
+##### Linear model
 
 Parameters used in the linear model
 
-Parameter nameValueCommentε0 or 0.2 mM min−1Basal H2O2 production rate in the absence of external H2O2. In the integral feedback case (μ’=0), the parameter value must be 0, otherwise there is no stable steady-state.α1 min−1H2O2 transport rate across cell membrane. Value based on the order of magnitude of timings (~1 min) of nuclear relocation upon addition of H2O2 (taken from Figure 1—figure supplement 1C).β5 min−1H2O2 scavenging rate. Derived from the absolute adaptation concentration Iabs in Figure 3.γ0.03 or 0.53 min−1Antioxidant transcription rate. This parameter was adjusted to keep a constant value of Iabs when changing the mRNA decay rate (see below).μvariableAntioxidant mRNA decay rate. In Figure 3B we used: μ=log(2)/2.5 min−1 to display the general properties of the dynamics of the system. In Figure 3C,F, we used: μ=log(2)/40 min−1, which provides a better agreement with experimental data, and corresponds to the actual order of magnitude of mRNA stability for TSA1 and other Prx genes(Geisberg et al., 2014).γ’0.01 min−1Antioxidant translation rate. Derived from the absolute adaptation concentration Iabs in Figure 3.μ’log(2)/100 min−1Antioxidant protein decay rate. Tsa1 is a stable protein, therefore, the decay is due to the dilution rate set by cell growth (doubling time ~ 100 min).
+<table>
+  <thead>
+    <tr>
+      <th>Parameter name</th>
+      <th>Value</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ε</td>
+      <td>0 or 0.2 mM min−1</td>
+      <td>Basal H2O2 production rate in the absence of external H2O2. In the integral feedback case (μ’=0), the parameter value must be 0, otherwise there is no stable steady-state.</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>1 min−1</td>
+      <td>H2O2 transport rate across cell membrane. Value based on the order of magnitude of timings (~1 min) of nuclear relocation upon addition of H2O2 (taken from Figure 1—figure supplement 1C).</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>5 min−1</td>
+      <td>H2O2 scavenging rate. Derived from the absolute adaptation concentration Iabs in Figure 3.</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>0.03 or 0.53 min−1</td>
+      <td>Antioxidant transcription rate. This parameter was adjusted to keep a constant value of Iabs when changing the mRNA decay rate (see below).</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>variable</td>
+      <td>Antioxidant mRNA decay rate. In Figure 3B we used: μ=log(2)/2.5 min−1 to display the general properties of the dynamics of the system. In Figure 3C,F, we used: μ=log(2)/40 min−1, which provides a better agreement with experimental data, and corresponds to the actual order of magnitude of mRNA stability for TSA1 and other Prx genes(Geisberg et al., 2014).</td>
+    </tr>
+    <tr>
+      <td>γ’</td>
+      <td>0.01 min−1</td>
+      <td>Antioxidant translation rate. Derived from the absolute adaptation concentration Iabs in Figure 3.</td>
+    </tr>
+    <tr>
+      <td>μ’</td>
+      <td>log(2)/100 min−1</td>
+      <td>Antioxidant protein decay rate. Tsa1 is a stable protein, therefore, the decay is due to the dilution rate set by cell growth (doubling time ~ 100 min).</td>
+    </tr>
+  </tbody>
+</table>
 
-## Data fitting procedure
+##### Data fitting procedure
 
 Values for α, μ and μ’ are set by experimental constraints as described in the table above. γ, γ’ and β could not be determined individually using the experiments performed in this study, since absolute concentration of H, A and AmRNA could not be measured. However, these parameters are tightly linked to Iabs, which is the absolute H2O2 concentration at which cells can adapt (as described in section 1E in this document). Experimentally Iabs = 7.2 mM, as obtained in Figure 3—figure supplement 2F. Based on this measurement, putative values of γ, γ’ and βwere set to get the expected value of Iabs.
 
-## Nonlinear model
+##### Nonlinear model
 
 Parameters used in the nonlinear model
 
-Parameter nameValueCommentε0.06 mM min−1Basal H2O2 production rate in the absence of external H2O2 Determined by a fitting procedure to data in Figure 6.α1 min−1H2O2 transport rate across cell membrane. Taken from Figure 1—figure supplement 1C.β10 mM−1 min−1H2O2 scavenging rate. Derived from the absolute adaptation concentration Iabs in Figure 3.γ0.1 mM−1 min−1Antioxidant transcription rate. Derived from the absolute adaptation concentration Iabs in Figure 3.μμ=log(2)/40 min−1Antioxidant mRNA decay rate. See the linear model above for the determination of parameter value.γ’0.005 mM−1 min−1Antioxidant translation rate. Derived from the absolute adaptation concentration Iabs in Figure 3.μ’log(2)/100 min−1Antioxidant protein decay rate. Tsa1 is a stable protein, therefore, the decay is due to the dilution rate set by cell growth (doubling time ~ 100 min).K0.01 mMOrder of magnitude of internal H2O2 at which antioxidant. transcription saturates. Taken from Figure 6—figure supplement 1C.W0.01 mMOrder of magnitude of internal H2O2 at which H2O2 scavenging rate saturates. The ratio K/W ~ 1 gave the best fit to curves in Figure 6, hence the order of magnitude of this parameter.
+<table>
+  <thead>
+    <tr>
+      <th>Parameter name</th>
+      <th>Value</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ε</td>
+      <td>0.06 mM min−1</td>
+      <td>Basal H2O2 production rate in the absence of external H2O2 Determined by a fitting procedure to data in Figure 6.</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>1 min−1</td>
+      <td>H2O2 transport rate across cell membrane. Taken from Figure 1—figure supplement 1C.</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>10 mM−1 min−1</td>
+      <td>H2O2 scavenging rate. Derived from the absolute adaptation concentration Iabs in Figure 3.</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>0.1 mM−1 min−1</td>
+      <td>Antioxidant transcription rate. Derived from the absolute adaptation concentration Iabs in Figure 3.</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>μ=log(2)/40 min−1</td>
+      <td>Antioxidant mRNA decay rate. See the linear model above for the determination of parameter value.</td>
+    </tr>
+    <tr>
+      <td>γ’</td>
+      <td>0.005 mM−1 min−1</td>
+      <td>Antioxidant translation rate. Derived from the absolute adaptation concentration Iabs in Figure 3.</td>
+    </tr>
+    <tr>
+      <td>μ’</td>
+      <td>log(2)/100 min−1</td>
+      <td>Antioxidant protein decay rate. Tsa1 is a stable protein, therefore, the decay is due to the dilution rate set by cell growth (doubling time ~ 100 min).</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>0.01 mM</td>
+      <td>Order of magnitude of internal H2O2 at which antioxidant. transcription saturates. Taken from Figure 6—figure supplement 1C.</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>0.01 mM</td>
+      <td>Order of magnitude of internal H2O2 at which H2O2 scavenging rate saturates. The ratio K/W ~ 1 gave the best fit to curves in Figure 6, hence the order of magnitude of this parameter.</td>
+    </tr>
+  </tbody>
+</table>
 
-## Data fitting procedure
+##### Data fitting procedure
 
 In Figure 6, Tsa1-GFP level data fitting to the model (using chi2 minimization) allows to estimate the order of magnitude of ε, and the ratio K/W, assuming that other parameter values are similar to the linear model. Importantly, this parameter set is then used with no fit (other than a scaling factor due to the use of arbitrary units in experimental measurements) to compare the agreement between data and model in Figure 1 (steps), Figure 6 (ramps) and Figure 4 (tolerance). Unlike the linear model, this model is unique in its ability to describe the acquisition of tolerance in pre-exposed cells.
 
-## Numerical integration
+##### Numerical integration
 
 Computing was performed using Matlab software. Numerical integration was based on the ode45 and ode15s functions.

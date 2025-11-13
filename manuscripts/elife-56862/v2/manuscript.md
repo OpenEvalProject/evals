@@ -25,11 +25,17 @@
 
 ## Abstract
 
-V-ATPase is an energy converting enzyme, coupling ATP hydrolysis/synthesis in the hydrophilic V 1 domain, with proton flow through the V o membrane domain, via rotation of the central rotor complex relative to the surrounding stator apparatus. Upon dissociation from the V 1 domain, the V o domain of the eukaryotic V-ATPase can adopt a physiologically relevant auto-inhibited form in which proton conductance through the V o domain is prevented, however the molecular mechanism of this inhibition is not fully understood. Using cryo-electron microscopy, we determined the structure of both the holo V/A-ATPase and isolated V o at near-atomic resolution, respectively. These structures clarify how the isolated V o domain adopts the auto-inhibited form and how the holo complex prevents formation of the inhibited V o form.
+V-ATPase is an energy converting enzyme, coupling ATP hydrolysis/synthesis in the hydrophilic V1 domain, with proton flow through the Vo membrane domain, via rotation of the central rotor complex relative to the surrounding stator apparatus. Upon dissociation from the V1 domain, the Vo domain of the eukaryotic V-ATPase can adopt a physiologically relevant auto-inhibited form in which proton conductance through the Vo domain is prevented, however the molecular mechanism of this inhibition is not fully understood. Using cryo-electron microscopy, we determined the structure of both the holo V/A-ATPase and isolated Vo at near-atomic resolution, respectively. These structures clarify how the isolated Vo domain adopts the auto-inhibited form and how the holo complex prevents formation of the inhibited Vo form.
 
 ## Introduction
 
 Rotary ATPase/ATP synthases, roughly classified into F type and V type ATPases, are marvelous, tiny rotary machines (Yokoyama and Imamura, 2005; Kinosita, 2012; Forgac, 2007; Yoshida et al., 2001; Kühlbrandt, 2019). These rotary motor proteins share a basic molecular architecture composed of a central rotor complex and surrounding stator apparatus. These proteins function to couple ATP hydrolysis/synthesis in the hydrophilic F1/V1 moiety with proton translocation through the membrane embedded hydrophobic Fo/Vo moiety by rotation of the central rotor complex relative to the surrounding stator apparatus, via a rotary catalytic mechanism (Figure 1; Kinosita, 2012; Forgac, 2007; Yoshida et al., 2001; Kühlbrandt, 2019; Guo and Rubinstein, 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig1-v2.jpg)
+
+**Figure 1.:** (A) Bacterial FoF1, (B) yeast V-ATPase, (C) Tth V/A-ATPase, (D) a schematic model of the rotary catalytic mechanism. The subunits of the central rotor complex are colored as follows: c-ring, dark blue; a-subunit, red; central axis, purple and cyan; and d-subunit, green.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig1-figsupp1-v2.jpg)
 
 Thus, both F and V type ATPases are basically capable of either ATP synthesis coupled to the proton motive force (pmf) driven by the membrane potential or proton pumping powered by ATP hydrolysis. The F type ATPase (F-ATPase, or FoF1) in mitochondria functions as an ATP synthase coupled to respiration, whilst in some bacteria the complex can function as an ATP dependent proton pump (Shibata et al., 1992; Kullen and Klaenhammer, 1999).
 
@@ -45,35 +51,105 @@ Here, we report a cryoEM structure of isolated Tth Vo at 3.9 Å resolution. The 
 
 ## Results
 
-## CryoEM structures of the isolated Vo domain and holo Tth V/A-ATPase
+### CryoEM structures of the isolated Vo domain and holo Tth V/A-ATPase
 
 We purified both the Tth V/A-ATPase and Vo domain with a His3-tagged c subunit from membranes of T. thermophilus cells using Ni-NTA resin. The purified complexes were reconstituted into nanodiscs composed of the membrane scaffold protein MSP1E3D1 and POPC lipids. For the Tth V/A-ATPase, acquisition of micrographs was carried out using the Titan Krios electron microscope equipped with a Falcon II direct electron detector. Cryo-EM micrographs of the complexes reconstituted into nanodiscs resulted in higher resolution EM maps compared to those previously reported for the LMNG solubilized preparations (Nakanishi et al., 2018). The strategy of single particle analysis for the Tth V/A-ATPase is summarized in Figure 2—figure supplement 1. We reconstructed the 3D structure of the holo complex rotational state 1 using 71,196 polished single particle images. The final structure of the state one has an overall resolution of 3.6 Å (Figure 2A). After subtracting the EM density of the membrane embedded domain from the density of the whole complex, we obtained a focused density map of A3B3D1F1d1 with two EG peripheral stalks and the soluble arm domain of the a subunit (asol) at 3.5 Å resolution (Figure 2—figure supplement 5). This map allowed us to build an atomic model of A3B3D1F1 (V1) (Figure 2—figure supplement 6). In our map, the obvious density of ADP-Mg was observed in the closed catalytic site, but not clearly observed in the semi-closed site, in contrast to our previously reported structure of the state 1 (PDBID: 5Y5Y). The secondary ADP in the semi-closed site shows a lower occupancy due to low affinity of the semi-closed site for the nucleotide and partial flexibility of the complex (Figure 2—figure supplement 2A). In the recent cryoEM map of Tth V/A-ATPase (PDBID: 6QUM), clear densities, likely corresponding to ADP, were observed in the cavities of the crown-like structure formed by the six β barrel domains of A3B3 (Zhou and Sazanov, 2019). In contrast, these densities were not clearly visible in our structure (Figure 2—figure supplement 2B). This dissimilarity can presumably be explained by differences in the purification procedures; we purified the His-tagged Tth V/A-ATPase using a nickel column, while the authors of the previous study isolated their Tth V/A-ATPase without an affinity purification step.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-v2.jpg)
+
+**Figure 2.:** (A) The holo Tth V/A-ATPase (left) and the focused refined map of A3B3DFd(EG)2asol (right). (B) The isolated Vo domain. Densities corresponding to the individual subunits are colored as follows: A, magenta; B, yellow; D, purple; F, cyan; E and G, gray; a, red; d, green; and c, dark blue. Scale bar = 30 Å.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Flow chart of the single particle analysis process for the holo TthV/A-ATPase.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The nucleotide binding site in a semi-closed AB pair (left), closed AB pair (center), and open AB pair (right). Some key residues of the A subunit, indicated in magenta box, are represented as sticks. ADP is shown as balls and sticks. Scale bar; 3 Å. (B) The nucleotide binding site within the crown-like structure of A3B3 proposed by Zhou and Sazanov, 2019. ADP is put in the same position as in the structure of Zhou and Sazanov (PDBID: 6QUM). Scale bar; 10 Å.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Flow chart of the single particle analysis process for the holo TthVo.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp4-v2.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Scale bar represents 50 Å for holo V/A-ATPase and 30 Å for isolated Vo. Angular distribution of particles used for final reconstruction of the holo TthV/A-ATPase (C), and isolated Vo (D). Fourier shell correlation (FSC) curves (E). Red line indicates the FSC = 0.143 criteria. FSC curves of the full map and two half maps against the built models with resolution estimated at FSC = 0.5 for V1EGdasol (F), and isolated Vo (G).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** The built models are presented as ribbons and sticks. Residue numbers are indicated above the figures. Scale bar = 10 Å.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** The built models are presented as ribbons and sticks. Residue numbers are indicated above the figures. Scale bar = 10 Å.
+
 The purified Vo domain reconstituted into nanodiscs was subjected to single particle analysis using a cryoEM (CRYOARM200, JEOL) equipped with a K2 summit electron direct detector in electron counting mode. The strategy of single particle analysis for TthVo is summarized in Figure 2—figure supplement 3. The 2D class averages disclosed the isolated Vo domain with clearly visible transmembrane helices and a hydrophilic domain extending above the integral membrane region (Figure 2—figure supplement 4). The scaffold proteins and lipids of the nanodiscs surrounding the membrane domain of the isolated Vo were clearly visible. Subsequent 3D classification of the observed Vo states revealed only one major class, indicating that the isolated Vo is structurally homogenous, in contrast to the Tth V/A-ATPase, which was clearly visible in three different rotational states (Nakanishi et al., 2018). Our 3D reconstruction map of the isolated Vo complex was obtained with an overall resolution of 3.9 Å (Figure 2—figure supplement 5). The final map shows clear density for protein components of Vo, including subunit a, subunit d and the c12 ring, but the EM density for both EG stalks, which attach to the asol region, is weak indicating disorder or flexibility in these regions (Figure 2B). In this structure, a C-terminal region of the EG stalk on the distal side is visible. With the exception of these two EG stalks, side-chain densities are detectable for most of the proteins in the complex, allowing construction of a de novo atomic model using Phenix and Coot software (Figure 3A,B, Figure 2—figure supplement 7). The map contains an apparent density inside the c12 rotor ring, likely corresponding to the phospholipids capping the hole of the ring (Figure 3—figure supplement 1A). A further apparent density was identified in the cavity between the a subunit and c12 ring on the upper periplasmic side (Figure 3—figure supplement 1B). This density may also correspond to phospholipids, and we suppose that it functions to plug the cavity between the a subunit and c12 ring, preventing proton leak from the periplasmic proton pathway. Similar densities corresponding to phospholipids were also observed in the recently published cryoEM density map of the holo complex (Zhou and Sazanov, 2019). Notably, the diameter of the c12 rotor ring in the isolated Vo is slightly smaller than that in the Tth V/A-ATPase (Figure 3—figure supplement 2). It is likely that penetration of the short helix of the subunit D into the subunit cavity of subunit d enlarges the diameter of the c12 rotor ring in the Tth V/A-ATPase.
 
-## Structure comparison of the isolated and complexed Vo domains
+![Figure 3.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig3-v2.jpg)
+
+**Figure 3.:** (A) Side view and (B) top view of a-, d-, c-, and EG subunits colored as in Figure 2, respectively. Scale bar represents 30 Å. The proximal and distal subdomains of the a-subunit are circled by dotted lines. (C) Comparison of the relative positions of asol (red) and the d subunit (green) in the isolated Vo domain (left) and the Vo domain in the holo complex (right). Arrows indicate the kinking and twisting points in the asol region of the isolated Vo. Scale bar represents 30 Å. (D) and (E) Specific interactions between the asol region and d subunit at the proximal (D) and distal (E) regions. The regions are specified by black squares in C. Scale bar = 5 Å.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The cross section of the c-ring region of the Vo density map perpendicular to the cell membrane. The density is colored according to the individual subunits; a (red), d (green), and c (dark blue). Density corresponding to lipid was observed inside the c-ring (grey). (B) Density corresponding to lipid was observed between the a-subunit and c-ring (yellow).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The dotted lines show the distance between Cα of L71 in adjacent subunits. Scale bar = 20 Å.
+
+### Structure comparison of the isolated and complexed Vo domains
 
 A comparison of structures determined for the isolated Vo domain with that in the holo complex revealed a high degree of similarity in the membrane embedded region. However, there were significant differences in the a subunit. The basic structure of the Tth Vo a subunit is almost identical to the eukaryotic counterpart, comprising a soluble arm domain (asol) and a C-terminal hydrophobic domain responsible for proton translocation via rotation of the c12 ring. The asol region contains two globular α/β folding subdomains responsible for binding of both the proximal and distal EG stalks (Figure 3A and B). Both globular subdomains are connected by a hydrophilic coiled coil with a bent conformation.
 
 In contrast to the Vo structure in the holo complex, the asol region in the isolated Vo is located in close proximity to the d subunit as a result of kinking and twisting of the coiled coil at residues a/L119 and a/A246 (Figure 3C, indicated by the arrows). In this structure, several interactions between the d subunit and asol residues can be observed (Figure 3D). At the proximal site, three amino acid residues, a/E57, a/H65, and a/Q106, form salt bridges or hydrogen bonds with residues d/R38, d/S41, and d/R63 of the d subunit, respectively. Our structure also reveals clearly connected densities between the distal subdomain of the asol region and d subunit (Figure 3E). Four side chains, d/Q138, d/R152, d/R156, and a/R196 apparently form hydrogen bonds with the oxygen atoms in the main chain of a/E201, a/L144, a/A197, and d/R156, respectively. With the exception of the interaction between a/E57 and d/R38 in the proximal site, these interactions are broken by the dynamic movement of asol and conformational changes of the d subunit in the Vo moiety of the holo Tth V/A-ATPase. The conformational changes induced by binding of V1 (A3B3DF) to Vo are described in a separate section below.
 
-## Structure of the membrane embedded region of the isolated Vo domain
+### Structure of the membrane embedded region of the isolated Vo domain
 
 Our previous low-resolution structure of the Tth V/A-ATPase suggested the involvement of half-channels in proton translocation on both the cytoplasmic and periplasmic sides of the Vo domain (Nakanishi et al., 2018). The atomic model of Vo presented here reveals details of the half-channels formed by the membrane-embedded C-terminal region of the a subunit (aCT) and its interface with the c12 ring. The aCT region contains eight membrane-embedded helices, MH1 to MH8. MH7 and MH8 are the highly-tilted membrane-embedded helices characteristic of rotary ATPases. The cytoplasmic hydrophilic cavity is formed by the cytoplasmic side of MH4, MH5, MH7, and MH8, and the c subunit/chain Z. The cavity is lined by the polar residues, a/R482, a/H491, a/H494, a/E497, a/Y501, a/E550, a/Q554, a/T553, a/H557, and c(Z)/Thr54 (Figure 4A), which make up the cytoplasmic half-channel. The periplasmic sides of MH1, MH2, MH7, and MH8 form the periplasmic hydrophilic cavity, lined with a/D365, a/Y368, a/E426, a/H452, a/R453, a/D455, and c(Y)/E63. The two hydrophilic channels are separated by a salt bridge formed between c(Z)/63Glu, a residue critical for proton translocation, and a/Arg563, a/Arg622, a/Gln619 of MH7 (Figure 4B). This salt bridge is conserved in both eukaryotic and prokaryotic Vo (Mazhab-Jafari et al., 2016; Kishikawa and Yokoyama, 2012). Of note, a salt bridge forms between a single arginine residue and a single glutamic (or aspartic) acid residue in Fo (Kühlbrandt, 2019; Murphy et al., 2019; Guo et al., 2019). Similar to the two-channel model described for other rotary ATPases (Srivastava et al., 2018; Hahn et al., 2018), the two arginine residues on the MH7 and MH8 play an important role in protonation and deprotonation of the carboxy groups on the c12 ring, with the resulting rotation of dc12 driven by proton translocation from the periplasmic to cytoplasmic side (Guo and Rubinstein, 2018; Hahn et al., 2018; Pogoryelov et al., 2010). Notably, in addition to the rigid salt bridge formed between the two a/Arg residues, a/Gln and c/Glu, further interactions between act and the c12 ring are observed. Furthermore, a/Asp392 and Leu393 -c(Y)/Arg49 in the loop region of the c subunit (Figure 4—figure supplement 1A), and the periplasmic sides of MH5 and MH6 are in close proximity to the C-terminal end of the c subunit (Figure 4—figure supplement 1B). These interactions are observed in the Vo moiety of the recently published holo complex structure (Zhou and Sazanov, 2019). Overall, our Vo structure is largely identical to the Vo moiety observed in the holo complex with the exception of some alterations in the hydrophilic domain (Zhou and Sazanov, 2019).
 
-## Voltage threshold for proton conductance activity of the isolated Vo domain
+![Figure 4.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig4-v2.jpg)
+
+**Figure 4.:** (A) The half-channels for proton translocation on both the cytoplasmic and periplasmic sides of the isolated Vo domain. Residues lining the pathways are represented as balls and sticks. Residues from the a-subunit and c-subunit are indicated in red and blue boxes, respectively. Proton flow, as it would occur in the case of ATP synthesis, is represented by arrows. The solid arrows indicate proton flow from the periplasmic side to the c-subunit (green), and from the c-subunit to the cytoplasmic side (blue). The dotted black arrows indicate proton movement due to rotation of the c12-ring. Scale bar = 10 Å. (B) The salt bridge between a/Arg563, Arg622, Gln619 and c/Glu63. Scale bar = 3 Å.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The cytosolic loop between MH2 and MH3 close to c/Arg49. Scale bar = 3 Å. (B) The periplasmic side of MH5 and MH6 in close proximity to the C-terminal end of the c subunit. Scale bar = 10 Å.
+
+### Voltage threshold for proton conductance activity of the isolated Vo domain
 
 Our structure of the isolated Vo domain suggests that the rotation of the c12 rotor ring relative to the stator is mechanically hindered by a defined interaction between the asol region and the d subunit. Previous studies have shown that isolated yeast Vo is impermeable to protons (Couoh-Cardel et al., 2015; Qi and Forgac, 2008), but it was unclear whether proton conductance is also inhibited in the isolated Tth Vo domain. To investigate proton conductance through the isolated Tth Vo, we reconstituted this domain into liposomes energized with a Δψ generated through a potassium ion (K+)/valinomycin diffusion potential. The pH change in the liposomes was monitored with 9-Amino-6-Chloro-2-Methoxyacridine (ACMA); the emission traces at 510 nm excited at 460 nm were recorded (Figure 5). The membrane potential was modulated by varying the external K+ concentration according to the Nernst equation. As shown in Figure 5B, the isolated Vo domain displays no proton conductance when the membrane potential is lower than 120 mV, defining a voltage threshold. The proton conductance through the Vo increases proportionally with the membrane potential when the membrane potential exceeds 130 mV (Figure 5B). The reported membrane potential in bacterial cells varies from −75 to −220 mV depending on growth environment and method of quantification (Lo et al., 2007; Bot and Prodan, 2010). Although the membrane potential of T. thermophilus under physiological conditions is unknown, we reported previously that the Tth V/A-ATPase is capable of ATP synthesis when the membrane potential exceeds −110 mV (Toei et al., 2007). Thus, proton impermeability of the isolated Tth Vo observed at potentials less than −120 mV may function to maintain pmf for ATP synthesis, when Tth Vo exists solely on the cell membrane. In contrast to the Vo domain, several experiments have indicated that proton conductance through the bacterial Fo domain is not sensitive to any specific threshold in membrane potential (Wiedenmann et al., 2008), whereas bacterial FoF1 is sensitive to a membrane potential threshold, likely dependent on the interaction between Fo and F1 (Feniouk et al., 2004). In addition, proton conductance through the Fo domain increases linearly with increasing Δψ loaded on the Fo liposome. These results indicate that there are no or few interactions between the a subunit and c-ring to hinder c-ring rotation in Fo. Together, the observed results suggest that asol of the a subunit and the d subunit, absent from Fo and validated structures of the V type ATPases, can be one of the keys for mechanical inhibition of proton conductance through Vo.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig5-v2.jpg)
 
-**Figure 5.:** o domain.(A) Changes of ACMA fluorescence due to pH changes inside the Vo proteo-liposomes. Values of the membrane potential (ΔΨ) were estimated using the Nernst equation, ΔΨ = RF/zF ln[KCl]o/[KCl]i, as described in the Materials and methods section. (B) The voltage threshold of proton conductance through the Vo domain (mean ± SD, n = 3).
+**Figure 5.:** (A) Changes of ACMA fluorescence due to pH changes inside the Vo proteo-liposomes. Values of the membrane potential (ΔΨ) were estimated using the Nernst equation, ΔΨ = RF/zF ln[KCl]o/[KCl]i, as described in the Materials and methods section. (B) The voltage threshold of proton conductance through the Vo domain (mean ± SD, n = 3).
 
 ## Discussion
 
 The structure of the isolated Tth Vo obtained clearly shows a different conformation from the Vo moiety in the holo-complex. From structural comparison between isolated Vo and the holo complex, it can be suggested that structural changes in isolated Vo observed in two subunits were most likely induced by dissociation of the V1 domain from Vo. In the isolated Vo domain, the d subunit adopts the closed form in which three side chains of the d subunit are able to interact with the distal subdomain of asol (Figure 3E). Once the short helix of the D subunit, an axis subunit of the V1 domain, inserts into the cavity of the d subunit, the interaction between H6 and H11 via d/R90 and d/E195 is broken (Figure 6A and Video 1), resulting in the d subunit adopting an open form, with side chains orientated away from the distal subdomain of asol.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig6-v2.jpg)
+
+**Figure 6.:** (A) Structural changes in the d subunit caused by insertion of the screw driver helix (SDH). A top view of the d-subunit is shown in the left panel. The d-subunit from the isolated Vo domain and the holo enzyme are colored in green and grey, respectively. Red arrows indicate movements of helices 6–9 (H6–H9). The key helices, H6 and H11, of the d-subunit in the isolated Vo domain and holo complex are shown in panel A, center and right. The H6 helix bends 45° as a result of interaction between the d-subunit and SDH. (B) Structural changes in the distal subdomain of asol. Upon the pivoting movement of asol on the proximal subdomain, the distal subdomain swings 25 Å and twists 15° between the isolated Vo (red) and the holo complex (gray). (C) The EG structure in the distal subdomain of asol (EGd) in the isolated Vo domain (left) and in the holo complex (right). (D) A schematic representation of mechanical inhibition of Vo induced by dissociation of V1. In the isolated Vo domain, rotation of the central rotor is inhibited by interactions between the d-subunit and asol (yellow box, Figure 3D, E).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The density map clearly indicates that the EG subunit at the distal subdomain of asol tilts away from the V1 side. Scale bar = 20 Å.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56862/elife-56862-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Structure of the d subunit in isolated Vo is shown in green and structure of the d subunit in the holo complex is shown in magenta. PDBID: yeast Vo (6O7U), yeast V-ATPase (6O7V), T. thermophilus V/A-ATPase (6QUM). Scale bar = 20 Å.
+
+![Video 1.](https://cdn.elifesciences.org/articles/56862/elife-56862-video1.mp4.jpg)
+
+**Video 1.:** A morphed movie focuses on the conformational changes of the d-subunit between isolated Vo and Vo in the holo-enzyme. a-, d-, c- and d-subunits are colored in red, green, dark blue, and orange, respectively. d/R90 and d/E195 are represented as balls and sticks. The density map of isolated Vo is shown as a semi-transparent surface.
+
 Another contributing factor is the dynamic motion of the asol region induced by binding the distal EG stalk to the top of the A3B3 from the V1 domain. In the isolated Vo, the N-terminal region of the EG stalk bound to the distal subdomain of asol is at a much steeper angle relative to the horizontal coiled coil structure of asol than that in the holo enzyme (Figure 6B,C and Figure 6—figure supplement 1). This finding suggests that the stalk region also adopts a steep angle, although the stalk and head domain of EG are disordered in the resolved structure and thus not visible in the density map (Figure 2B). Once the C-terminal globular domain of the distal EG stalk binds onto the top of A3B3, the angled distal EG adopts a vertical standing form, resulting in both twisting and kinking of the coiled coil of the hydrophilic arm and the distal globular subdomain of the a subunit (Figure 6C, Video 2). These dynamic motions of asol induce disruption of specific interactions between asol and the d subunit.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56862/elife-56862-video2.mp4.jpg)
+
+**Video 2.:** A morphed movie focusing on the conformational changes of a hydrophilic arm of the a-subunit between isolated Vo and Vo in the holo-enzyme. EGp and EGd indicate proximal and distal EG subunits. The position of EGd was determined from the low-resolution density map (Figure 6—figure supplement 1). The hydrophilic arm of the a-subunit associated with binding EGd to one of the B subunits from V1, is forced to swing away from the d-subunit, resulting in disruption of the specific interaction between the subunits.
 
 The isolated yeast Vo domain also adopts a conformation where the asol region is in close proximity to the d subunit, resulting in rigid interaction between the stator and rotor that is advantageous for inhibition of proton conductance (Roh et al., 2018; Mazhab-Jafari et al., 2016). Although an atomic model of the yeast holo V-ATPase has yet to be determined, a poly alanine model of the yeast V-ATPase shows that the asol region is some distance away from the d subunit in the Vo moiety (Zhao et al., 2015). In addition, a recently reported structure of the mammal V-ATPase clearly shows that asol is at a distance where it cannot interact with the d subunit (Abbas et al., 2020). This structure suggests that a similar conformational change in Vo is induced by binding of the V1 domain in the yeast V-ATPase, as described by Oot and Wilkins previously (Oot and Wilkens, 2012). Notably, the d subunit in the yeast enzyme differ in conformation between the isolated Vo domain and holo enzyme, in contrast to the Tth enzyme, where the d subunit is in the closed form in the isolated Vo domain (Figure 6—figure supplement 2; Vasanthakumar et al., 2019). The d subunit from the mammalian holo V-ATPase adopts a more open conformation than the yeast d subunit from the isolated Vo complex, as seen in the holo Tth V/A-ATPase (Abbas et al., 2020). In addition, Abbas et al. suggest that the d subunit from the yeast holo V-ATPase is also more open compare to that of the yeast isolated Vo (Abbas et al., 2020). These results indicate that the d subunit in the mammalian and yeast V-ATPase also exhibits a conformational change between isolated Vo and holo enzyme.
 
@@ -87,7 +163,136 @@ Our structure of the isolated Vo domain further reveals the mechanism of mechani
 
 ## Materials and methods
 
-## Protein preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background T. thermophilus</td>
+      <td>HB8</td>
+      <td>Tamakoshi et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>14:0 PC (DMPC)</td>
+      <td>Avanti polar lipid</td>
+      <td>850345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>16:0-18:1 PC (POPC)</td>
+      <td>Avanti polar lipid</td>
+      <td>850457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-beta-D-maltopyranoside</td>
+      <td>cosmo bio</td>
+      <td>D-1304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biobeads SM-2</td>
+      <td>bio-rad</td>
+      <td>1523920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-Phosphatidylcholine from soybean, Type II-S</td>
+      <td>Merck</td>
+      <td>P5638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-octyl-β-D-glucoside</td>
+      <td>sigma aldrich</td>
+      <td>850511P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>9-Amino-6-Chloro-2-Methoxyacridine</td>
+      <td>Thermo Fisher</td>
+      <td>A1324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbonyl cyanide 4-(trifluoromethoxy)phenylhydrazone</td>
+      <td>sigma aldrich</td>
+      <td>C2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valinomycin</td>
+      <td>sigma aldrich</td>
+      <td>V0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Zivanov et al., 2018</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>Zhang, 2016</td>
+      <td>RRID:SCR_016500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>https://www.phenix-online.org/</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>http://molprobity.biochem.duke.edu</td>
+      <td>RRID:SCR_014226</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein preparation
 
 T. thermophilus V/A-ATPase was expressed with a His3 tag on the C-terminus of the c-subunit using a modified operon generated by the integration vector system (Tamakoshi et al., 1997). Purification of His-tagged Vo was carried out as described previously (Nakanishi et al., 2015). Briefly, membranes of T. thermophilus were suspended in a buffer containing 10% Triton X-100 and sonicated to solubilize membrane proteins. After ultracentrifugation, the supernatant containing V/A-ATPase was applied to a Ni-NTA column. The fractions containing V/A-ATPase were dialyzed against 20 mM Tris-HCl (pH 8.0), 1 mM EDTA for 2 days at 4°C. The combined fraction was applied to a Resource Q column. Eluted fractions were analyzed by SDS-PAGE and the fractions containing Vo and V/A-ATPase were concentrated separately using Amicon 100K molecular weight cut-off filters (Millipore).
 
@@ -95,25 +300,231 @@ For nanodisc incorporation, 25 mM DMPC (Avanti) solubilized in 5% DDM was used. 
 
 V/A-ATPase was reconstituted into lipid nanodiscs using the same protocol as that for Vo, except that 1-Palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC, Avanti) was used as the lipid during reconstitution. Purified V/A-ATPase solubilized in 0.03% n-Dodecyl-β-D-maltoside (DDM) was mixed with the lipid stock and membrane scaffold protein MSP1E3D1 (Sigma) at a specific molar ratio of V/A-ATPase: MSP: POPC lipid = 1: 4: 520 and incubated on ice for 0.5 hr. 200 μl of Bio-beads SM-2 were added to initiate the reconstitution by removing detergents from the system and the mixture was incubated at 4°C for 3 hr with constant rotation. The bio-beads were removed and the nanodisc mixture applied to a Superdex200 Increase 10/300 column (GE Healthcare) pre-equilibrated in buffer (20 mM Tris-HCl pH8.0, 150 mM NaCl, 2 mM MgCl2). Reconstitution was assessed by both size exclusion chromatography and SDS-PAGE. The peak corresponding to the nanodisc-reconstituted V/A-ATPase was immediately used for cryo-EM observation.
 
-## Biochemical analysis
+### Biochemical analysis
 
 For measurements of proton channel activity, purified Vo was reconstituted into liposomes. L-α-Phosphatidylcholine Type II-S (Sigma-Adrich) was washed repeatedly beforehand to eliminate contamination of K+ ions (Soga et al., 2012), and the L-α-Phosphatidylcholine suspension was adjusted to a final concentration of 40 mg/mL in 4 mM Tricin, and 5 mM MgCl2 . To 250 μL of L-α-Phosphatidylcholine suspension, 250 μL of a solution containing 8% (w/v) n-octyl-β-D-glucoside (Sigma), and 500 mM KCl were added. Then, 60–80 ng of purified Vo was added. After a 30 min incubation at 4°C, 200 μL of Bio Beads SM-2, pre-equilibrated in 2 mM Tricin and 2.5 mM MgCl2, were added to the mixture. The bead mixture was gently stirred for 30 min at room temperature. After that, 300 μL of Bio Beads were added to the mixture and incubated for another 2 hr. The supernatant was ultracentrifuged (40 k rpm, 4°C, 30 min) to remove contaminating KCl. The pellet containing reconstituted proteoliposome was re-suspended in 2 mM Tricin and 2.5 mM MgCl2. The proteoliposomes were used for proton channel assay immediately. Proton channel activity was detected by the fluorescence quenching of 9-amino-6-chloro-2-methoxyacridine (ACMA) (Thermo Fisher), which changes fluorescence in response to pH reduction inside the proteoliposome. Fluorescence changes were monitored using a spectrofluorometer (FP-6200, JASCO). A 1200 μL aliquot of reaction buffer (2 mM Tricin, pH8.0, 2.5 mM MgCl2, 500 mM KCl + NaCl, 1 μL of 30 mg/mL ACMA, 20 μL of proteoliposome) were incubated at 25°C. Proton channel activity was initiated by injection of 1 μL of 0.1 mg/mL valinomycin at the time = 50 s. After 100 s, 1 μL of 0.2 mg/mL carbonyl cyanide-p-trifluoromethoxyphenylhydrazone was added. The initial rate of pH change was estimated from the linear fitting of the initial decay of fluorescence. The membrane potential (ΔΨ) across the liposome membrane was calculated by the Nernst equation, ΔΨ = (kBT/zF)ln([K+]out/[K+]in)=59.2 log([K+]out/[K+]in) in mV at 25°C, where [K+]out was taken to be that of the reaction buffer, and [K+]in was 500 mM as in the buffer for proteoliopsome reconstruction.
 
 Protein concentrations of Vo were determined from UV absorbances calibrated by quantitative amino acid analysis; 1 mg/ml gave an optical density of 0.56 at 280 nm. Polyacrylamide gel electrophoresis in the presence of SDS or AES was carried out as described previously (Nakano et al., 2008). The proteins were stained with Coomassie Brilliant Blue.
 
-## EM imaging
+### EM imaging
 
 For cryo-grid preparation, Quanfifoil R1.2/1.3 molybdenum grids were glow discharged by an Ion Bombarder (Vacuum Device) for 1 min. 2.4–2.7 μL of nanodisc-Vo were loaded onto the grid and blotted for 9 s with a blot force of 10, wait time of 0 s at 4°C, and 100% humidity using a Vitrobot (FEI). Then, the grid was plunged into liquid ethane without drain time. Cryo-EM movie collection was performed with the CRYOARM200 (JEOL) operating at 200 keV accelerating voltage and equipped with a direct electron detector, K2 Summit (Gatan) in electron counting mode using the data collection software JADAS. The pixel size was 1.1 Å/pix (x5,0000), a total dose of 79.2 e-/ Å2 (1.32 e-/ Å2/frame) with a 12 s exposure time (60 frames), and a defocus range of −1.0 to −3.5 μm.
 
 For V/A-ATPase analysis, gold grids were used to reduce beam-induced movement (Russo and Passmore, 2014). A 2.4 μL aliquot of V/A-ATPase sample at 3.5 mg/ml was added to a 1.2 μm hole, 1.3 μm spacing holey gold grid (Quantifoil UltrAuFoil) in a semi-automated vitrification device (Vitrobot, FEI/Thermo Fisher) at 100% humidity, 4°C. The grid was then automatically blotted once from both sides with filter paper for a 9 s blot time. The grid was then plunged into liquid ethane without a delay time. Preparations of the V/A-ATPase were observed with a Titan Krios (FEI/Thermo Fisher) operating at 300 kV acceleration voltage and equipped with a Falcon II (FEI/Thermo Fisher) detector at a magnification of 75,000x with a pixel size of 1.1 Å, set up to capture 34 frames, corresponding to a total dose of 91 e-/ Å−2 in a defocus range of −2.4 to −3.0 μm.
 
-## Image processing
+### Image processing
 
 Image processing was performed using the Relion 3.0.7 software (Zivanov et al., 2018). A total of 5988 cryo-EM movies were collected for isolated Vo and 3694 movies collected for V/A-ATPase. All images were subjected to motion correction using the MotionCor2 program (Zheng et al., 2017) followed by contrast transfer function (CTF) estimation using Gctf (Zhang, 2016). Manual selection of the motion-corrected micrographs results in 3268 good isolated Vo micrographs and 3084 good V/A-ATPase micrographs. For Vo, a template for particle auto-picking was generated by 2D classification of particles picked by the LoG (Laplacian of Gaussian) method implemented in the Relion software, while particles were picked manually to generate references for auto-picking for V/A-ATPase. Vo and V/A-ATPase particles were picked from each selected micrograph by template-based auto-picking and classified by several rounds of reference-free 2D classification (3.14 × 106 and 0.35 × 106 particles images, respectively). After 2D classifications, 706,617 particles selected for Vo and 147,292 particles selected for V/A-ATPase were subjected to several rounds of 3D classification, respectively. The initial model of Vo was generated from the Vo domain of our previous T. thermophilus V/A-ATPase structure (Nakanishi et al., 2018) using UCSF chimera (Pettersen et al., 2004). A total of 175,930 particles selected for Vo and 71,196 particles selected for V/A-ATPase assigned into good 3D classes were subjected to 3D auto-refinement followed by CTF refinement of Bayesian polishing. Then, 157,618 Vo particles were selected from the polished particles by 2D classification. Another round of 3D auto-refine, CTF refinement, and a final round of masked auto-refine gave a Vo map at 3.9 Å resolution and a V/A-ATPase map at 3.6 Å resolution. The resolution was estimated based on the gold standard FSC = 0.143 criterion. However, while the membrane domain was visible it was not well refined in the V/A-ATPase map. This is likely to be due to the structural flexibility between the Vo and V1 domains in this class. Therefore, focused classification with signal subtraction of the membrane domain was carried out for the V/A-ATPase map to obtain high-quality maps and this gave a near-atomic resolution (3.5 Å resolution) map of the hydrophilic domain (A3B3DFE2G2dasol).
 
-## Model building
+### Model building
 
 To generate an atomic model for the isolated Vo domain, each subunit of the Vo complex from the previous structure of the T. thermophilus V/A-ATPase (PDBID: 5Y5X) was fitted into the density map as a rigid body. Notably the a-subunit was divided into soluble and transmembrane domains and these domains fitted into the map separately. The rigid body structures were fitted against the density map manually using the COOT software (Emsley et al., 2010). Then, the manually fitted structures were refined using the phenix.real_space_refine program contained in the Phenix suite software (Adams et al., 2010). These processes were performed over several rounds. The geometry of the atomic model built in this study was checked using the MolProbity tool (Table 1; Chen et al., 2010).
+
+**Table 1.**
+ CryoEM data collection, refinement and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TthV/A-ATPase</th>
+      <th>V1EGdasol</th>
+      <th>Isolated Vo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>Electron microscope</td>
+      <td colspan="2">Titan Krios</td>
+      <td>CRYOARM200</td>
+    </tr>
+    <tr>
+      <td>Electron detector</td>
+      <td colspan="2">Falcon II</td>
+      <td>K2 summit</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="2">75,000</td>
+      <td>50,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="2">300</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="2">91</td>
+      <td>79.2</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="2">2.4–3.0</td>
+      <td>1.0–3.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="2">1.1</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Movie No.</td>
+      <td colspan="2">3694</td>
+      <td>5988</td>
+    </tr>
+    <tr>
+      <td>Frame per movie</td>
+      <td colspan="2">34</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Automation software</td>
+      <td colspan="2">EPU</td>
+      <td>JADAS</td>
+    </tr>
+    <tr>
+      <td colspan="4">Data processing</td>
+    </tr>
+    <tr>
+      <td>Total extracted particles</td>
+      <td colspan="2">3.5 × 105</td>
+      <td>3.14 × 106</td>
+    </tr>
+    <tr>
+      <td>Total particle after 2D</td>
+      <td colspan="2">144,758</td>
+      <td>706,617</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.6</td>
+      <td>3.5</td>
+      <td>3,93</td>
+    </tr>
+    <tr>
+      <td>Sharpening B-factor</td>
+      <td>−81.07</td>
+      <td>−60.25</td>
+      <td>−110.87</td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>30013</td>
+      <td>30014</td>
+      <td>30015</td>
+    </tr>
+    <tr>
+      <td colspan="4">Model building and refinement</td>
+    </tr>
+    <tr>
+      <td>Initial models</td>
+      <td>-</td>
+      <td>5Y5Y</td>
+      <td>5Y5X, 1V9M</td>
+    </tr>
+    <tr>
+      <td>Building and refinement package</td>
+      <td>-</td>
+      <td>COOT, phenix</td>
+      <td>COOT, phenix</td>
+    </tr>
+    <tr>
+      <td>Total atom No.</td>
+      <td>-</td>
+      <td>26,631</td>
+      <td>13,888</td>
+    </tr>
+    <tr>
+      <td>Total residue No.</td>
+      <td>-</td>
+      <td>3418</td>
+      <td>1894</td>
+    </tr>
+    <tr>
+      <td>Total chain No.</td>
+      <td>-</td>
+      <td>8</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>-</td>
+      <td>ADP</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>cc_mask</td>
+      <td>-</td>
+      <td>0.85</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored</td>
+      <td>-</td>
+      <td>88.89%</td>
+      <td>92.75%</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers</td>
+      <td>-</td>
+      <td>0.03%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers</td>
+      <td>-</td>
+      <td>11.45%</td>
+      <td>0.37%</td>
+    </tr>
+    <tr>
+      <td>c-beta deviation</td>
+      <td>-</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CaBLAM outliers</td>
+      <td>-</td>
+      <td>5.94%</td>
+      <td>2.84%</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>-</td>
+      <td>6.38</td>
+      <td>20.01</td>
+    </tr>
+    <tr>
+      <td>RMSD bonds (Å)</td>
+      <td>-</td>
+      <td>0.006</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>RMS angle (°)</td>
+      <td>-</td>
+      <td>0.669</td>
+      <td>0.725</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>-</td>
+      <td>2.73</td>
+      <td>2.26</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>-</td>
+      <td>6LY8</td>
+      <td>6LY9</td>
+    </tr>
+  </tbody>
+</table>
 
 Part of the 4.7 Å resolution hydrophilic domain structure of the T. thermophilus V/A-ATPase (PDBID: 5Y5Y) was fitted into the map of A3B3DFE2G2dasol. A rough initial model was refined against the map with the Phenix suite phenix.real_space_refine program (Adams et al., 2010). The initial model was extensively manually corrected residue by residue in the COOT graphics program (Emsley et al., 2010), in particular with respect to side-chain conformations. The peripheral stalks and d-subunit were removed because of a low resolution in these regions. The corrected model was again refined by the phenix.real_space_refine program with secondary structure, and the resulting model manually checked by COOT (Emsley et al., 2010). This iterative process was performed for multiple rounds to correct any remaining errors until the model was in good agreement with the geometry, as reflected by the MolProbity score of 2.21 for isolated Vo and 2.75 for A3B3DFE2G2dasol .
 

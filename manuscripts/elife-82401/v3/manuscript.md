@@ -10,20 +10,20 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Pharmaceutical Sciences and Pharmacogenomics Graduate Program, University of California, San Francisco San Francisco United States
-2. https://ror.org/038321296 Institute of Data Science and Biotechnology, Gladstone Institutes San Francisco United States
-3. https://ror.org/043mz5j54 Rheumatology Division, Department of Medicine, University of California, San Francisco San Francisco United States
-4. https://ror.org/043mz5j54 Department of Microbiology & Immunology, University of California, San Francisco San Francisco United States
+1. Pharmaceutical Sciences and Pharmacogenomics Graduate Program, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Institute of Data Science and Biotechnology, Gladstone Institutes San Francisco United States ([ROR:038321296](https://ror.org/038321296))
+3. Rheumatology Division, Department of Medicine, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Department of Microbiology & Immunology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 5. Chan Zuckerberg Biohub-San Francisco San Francisco United States
-6. https://ror.org/043mz5j54 Department of Epidemiology & Biostatistics, University of California, San Francisco San Francisco United States
-7. https://ror.org/043mz5j54 Institute for Human Genetics, University of California, San Francisco San Francisco United States
-8. https://ror.org/043mz5j54 Bakar Computational Health Sciences Institute, University of California, San Francisco San Francisco United States
+6. Department of Epidemiology & Biostatistics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+7. Institute for Human Genetics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+8. Bakar Computational Health Sciences Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Bacteria within the gut microbiota possess the ability to metabolize a wide array of human drugs, foods, and toxins, but the responsible enzymes for these chemical events remain largely uncharacterized due to the time-consuming nature of current experimental approaches. Attempts have been made in the past to computationally predict which bacterial species and enzymes are responsible for chemical transformations in the gut environment, but with low accuracy due to minimal chemical representation and sequence similarity search schemes. Here, we present an in silico approach that employs chemical and protein S imilarity algorithms that I dentify M icrobio M e E nzymatic R eactions (SIMMER). We show that SIMMER accurately predicts the responsible species and enzymes for a queried reaction, unlike previous methods. We demonstrate SIMMER use cases in the context of drug metabolism by predicting previously uncharacterized enzymes for 88 drug transformations known to occur in the human gut. We validate these predictions on external datasets and provide an in vitro validation of SIMMER’s predictions for metabolism of methotrexate, an anti-arthritic drug. After demonstrating its utility and accuracy, we made SIMMER available as both a command-line and web tool, with flexible input and output options for determining chemical transformations within the human gut. We present SIMMER as a computational addition to the microbiome researcher’s toolbox, enabling them to make informed hypotheses before embarking on the lengthy laboratory experiments required to characterize novel bacterial enzymes that can alter human ingested compounds.
+Bacteria within the gut microbiota possess the ability to metabolize a wide array of human drugs, foods, and toxins, but the responsible enzymes for these chemical events remain largely uncharacterized due to the time-consuming nature of current experimental approaches. Attempts have been made in the past to computationally predict which bacterial species and enzymes are responsible for chemical transformations in the gut environment, but with low accuracy due to minimal chemical representation and sequence similarity search schemes. Here, we present an in silico approach that employs chemical and protein Similarity algorithms that Identify MicrobioMe Enzymatic Reactions (SIMMER). We show that SIMMER accurately predicts the responsible species and enzymes for a queried reaction, unlike previous methods. We demonstrate SIMMER use cases in the context of drug metabolism by predicting previously uncharacterized enzymes for 88 drug transformations known to occur in the human gut. We validate these predictions on external datasets and provide an in vitro validation of SIMMER’s predictions for metabolism of methotrexate, an anti-arthritic drug. After demonstrating its utility and accuracy, we made SIMMER available as both a command-line and web tool, with flexible input and output options for determining chemical transformations within the human gut. We present SIMMER as a computational addition to the microbiome researcher’s toolbox, enabling them to make informed hypotheses before embarking on the lengthy laboratory experiments required to characterize novel bacterial enzymes that can alter human ingested compounds.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Our key innovations are the use of full chemical representations that include co
 
 ## Results
 
-## SIMMER pipeline to predict xenobiotic metabolizing enzymes
+### SIMMER pipeline to predict xenobiotic metabolizing enzymes
 
 There are many desiderata for a bacterial drug metabolism predictor (Aziz et al., 2018). Such a tool must be able to, based on chemical analogy to known bacterial chemistry, predict bacterial species, specific enzyme sequences, and the prevalence and abundance across human samples of those predicted species and sequences. We developed SIMMER, a tool that leverages chemical and protein similarity to identify enzymes in the human microbiome that could perform a queried chemical reaction (Figure 1). Given input substrate(s), metabolite(s), and any known cofactors, SIMMER predicts bacterial enzymes capable of performing the reaction and quantifies their prevalence and abundance in the human gut. SIMMER accomplishes this by chemically fingerprinting an input reaction, and then comparing it to all reactions in MetaCyc (Caspi et al., 2020). Enzyme annotations from the most similar MetaCyc reactions are then used as queries for a protein similarity search to find homologs in the genomes of gut bacteria. To decrease the runtime of a SIMMER query, we precomputed chemical descriptions and protein similarity searches for all reactions in MetaCyc.
 
@@ -51,31 +51,184 @@ SIMMER’s underlying data were drawn from the MetaCyc reaction database because
 
 After creating SIMMER’s precomputed chemical and pHMM search space, we next made SIMMER queryable (Figure 1B). When queried with a chemical transformation, SIMMER computes the chemical similarity of the input to all precomputed MetaCyc reactions, and sorts all MetaCyc reaction fingerprints according to their ascending Euclidean distance from the query. From this sorted list, SIMMER outputs enzymes (i.e., the precomputed pHMM search hits for the closest reactions) responsible for the query reaction. As an auxiliary function to enzyme sequence prediction, SIMMER additionally predicts an Enzyme Commission (EC) code that describes the chemical nature of the query. EC codes are four-digit identifiers of enzyme-driven reactions, where each digit describes the reaction with increasing chemical granularity (McDonald et al., 2009). The first digit, the EC class, describes broad chemistry such as whether the reaction is an oxidoreduction, hydrolysis, etc. event. The second and third digits, the EC sub-class and sub-sub-class, describe more detailed chemical information such as electron donor or transfer group identity. The fourth and final digit, the EC serial designation, often describes a reaction’s specific substrate(s). We implemented and validated a novel method to predict EC codes by extending a common approach to gene set enrichment analysis (GSEA) (Figure 2—figure supplement 1; Subramanian et al., 2005). With this enrichment method, SIMMER predicted reaction types for queries with high recall and accuracy for EC classes, sub-classes, and sub-sub-classes (Figure 2B, Figure 2—source data 1, Figure 2—figure supplement 1, Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig2-v3.jpg)
+
+**Figure 2.:** (A) SIMMER clusters similar reactions together in chemical space. To analyze SIMMER’s ability to group chemically similar reactions, we examined reaction similarity within versus without Enzyme Commission (EC) classes using the precomputed MetaCyc reaction dataset (N = 8914 reactions). A silhouette-like euclidean distance score was created by determining for each reaction its euclidean distance to all reactions within its EC class versus outside its EC class. For all EC classes, scores were smaller within versus without EC classes using SIMMER’s chemical representation, indicating that SIMMER can detect reaction similarity within EC classes. From the pairs of distributions, we computed a Kolmogorov statistic to determine if the distributions significantly (p < 0.05) differed. (B) The F1-score, or harmonic mean of SIMMER’s precision and recall, when predicting EC numbers on a subset of the MetaCyc database (N = 576 reactions total; 96 per EC class). The score is high for EC classes, and it generally decreases as an EC number’s resolution increases.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) For each EC code associated with MetaCyc reactions, an enrichment score (ES) was calculated by walking down the ranked list of reactions. Starting with a score of zero, each time the given EC is encountered the score increases by one, and each time a different EC is encountered the score decreases by one. Panel A is an example of such a walk with MetaCyc reaction RXN-6763. (B) Significance is established by comparing the true ES to the ES achieved from 1000 permutations of a shuffled reaction list. Panel B is an example of how RXN-6763 loses its EC enrichment structure after shuffling. (C) Because the MetaCyc database of reactions is unbalanced in its EC code representation, ES scores for a given EC type are divided by the number of times the EC in question occurs in the database. This yields a normalized ES (NES) for SIMMER reporting. This is also performed for the shuffled distributions. (D) For the serial designation of an EC code (the most granular description of an EC code), SIMMER’s performance diminished (Figure 2B), because enrichment calculations suffer from increased uniqueness in the ranked list and therefore reduced power to determine a match. This is proven here, as when the database is subsampled to ensure at least three of each unique serial designation, F1-scores (the harmonic mean of precision and recall) and accuracy remain high despite the increased EC resolution.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** The confusion matrices describe the same data as Figure 2B, but expanded out to describe the absolute number of true positives, false positives, false negatives, and true negatives for each EC class.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Distributions are computed as described in Figure 2A.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Distributions are computed as described in Figure 2A. The resulting score distributions were used to compare SIMMER’s resilience to different chemical representations, such as removal of products and cofactors (the representation methods employed by DrugBug [Sharma et al., 2017] and MicrobeFDT [Guthrie et al., 2019]) or the inclusion of exactly one substrate and exactly one product (the Mallory et al. method [Mallory et al., 2018]). For all EC classes, scores were smaller within versus without EC classes using SIMMER’s chemical representation, indicating that SIMMER can detect reaction similarity within EC classes. However, this was not consistently true when using only the input compound without cofactors or products (substrate), or when using only one substrate and product (one_substrate_one_product). From the pairs of distributions, we computed a Kolmogorov statistic to determine if the distributions significantly (p < 0.05) differed. This showed that the differences were statistically significant for SIMMER chemical representations and reduced, or in the wrong direction, when using a reduced representation. X’s in the KS test heatmap indicate an incorrect direction of difference (without grouping closer than within).
+
 We hypothesized that SIMMER accurately predicted the bacterial players responsible for chemical transformations due to the tool’s use of a full reaction that includes reactants, cofactors, and products, rather than just substrates. We assessed this hypothesis by demonstrating that SIMMER groups similar reactions together in chemical space. MetaCyc reactions possess EC annotations that describe the chemical class of a reaction (e.g., oxidoreduction, hydrolysis, intramolecular rearrangement, etc). We queried SIMMER with all EC annotated MetaCyc reactions and demonstrated that queries group significantly closer to other reactions within their EC class than they do to reactions of a different class (Figure 2A). We determined that SIMMER’s ability to group similar reactions in chemical space is resilient to different fingerprinting methods (Figure 2—figure supplement 3), but not to loss of products created and cofactors consumed in a reaction (Figure 2—figure supplement 4). Thus, we showed that similar reactions only cluster together in chemical space when a full reaction description (i.e., SIMMER’s representation method) is employed.
 
 Because SIMMER was created with the assumption that chemically similar reactions are mediated by sequence similar enzymes, we next ensured that similarity within SIMMER’s chemical space could be used to find shared, responsible enzymes. For all MetaCyc enzymes associated with multiple reactions, one reaction was used as a SIMMER query, and the second reaction searched for in the ordered reaction list output. As a negative control, these reaction similarity results were then compared to all possible pairwise combinations of reactions not conducted by the same enzyme. SIMMER predicted high similarity between reactions conducted by a shared enzyme, and low similarity for those reactions without a shared enzyme (Figure 3A). We also found a negative association between chemical reaction distance and global sequence similarity of MetaCyc enzyme annotations, though there is much variation in this relationship (Figure 3B). This reflects the known association between sequence similarity and similarity in chemical function, as well as reports that this relationship can often be overestimated (Tian and Skolnick, 2003). Indeed, MetaCyc reactions with identical chemical representations could be conducted by proteins with only ~20% global percent identity all the way to 100% (Figure 3B). This relationship informed our decision to use pHMM searches rather than BLAST to find sequence similar proteins from the human gut microbiome, as pHMM searches rely on matches of conserved sites rather than global percent identity between sequences. Together, these analyses informed the manner in which we combined chemical and protein similarity to create a microbiome enzyme prediction tool.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig3-v3.jpg)
 
-**Figure 3.:** (A) When SIMMER was queried with a MetaCyc reaction, other reactions driven by the same enzyme are returned as the most similar. As a contrast, reactions driven by a different enzyme yield a more uniform rank distribution. Solid lines of the violin plots depict median reaction similarity rank and dashed lines represent lower and upper quartile ranges. (B) There is a negative association between pairwise reaction euclidean distance and pairwise protein global percent identity, but it is highly variable, demonstrating the need for protein searches that do not rely on high global percent identity to capture shared function.Figure 3—source data 1.
+**Figure 3.:** (A) When SIMMER was queried with a MetaCyc reaction, other reactions driven by the same enzyme are returned as the most similar. As a contrast, reactions driven by a different enzyme yield a more uniform rank distribution. Solid lines of the violin plots depict median reaction similarity rank and dashed lines represent lower and upper quartile ranges. (B) There is a negative association between pairwise reaction euclidean distance and pairwise protein global percent identity, but it is highly variable, demonstrating the need for protein searches that do not rely on high global percent identity to capture shared function.
 
-## An expanded list of gut bacterial enzymes relevant to known cases of drug metabolism
+### An expanded list of gut bacterial enzymes relevant to known cases of drug metabolism
 
 To assess SIMMER’s prediction accuracy for previously characterized reactions and to mount a comparison to existing methods, we used drug metabolism as a use-case. First, we curated 300 drug metabolism events associated with the human gut microbiome from the literature (Supplementary file 1). For 33 of these reactions the responsible bacterial enzyme, characterized metabolite(s), and associated EC annotation are known (Supplementary file 1). These 33 reactions are conducted by 18 enzymes. Due to orthology and proclivity for genetic transfer between even distantly related bacteria, however, there are likely many as yet undiscovered homologs of these drug-metabolizing enzymes that can catalyze identical drug metabolism events (Pollet et al., 2017). To account for this, we created an expanded database (Figure 4, Figure 4—figure supplement 1, Figure 4—source data 1) of the 18 characterized enzymes from pHMM and phmmer searches of the UHGG database (Almeida et al., 2021), yielding 52,849 total candidate homologs (a median of 1087 candidates per enzyme). After filtering enzymes by hmmer significance, alignment length, presence in data from the human jejunum (Zmora et al., 2018) and RNA-sequencing studies (Integrative HMP (iHMP) Research Network Consortium, 2019), and predicted affinity for the substrate in question using the Similarity Ensemble Approach (Keiser et al., 2007), our database contained a median of 2 high-confidence homologous sequences per enzyme (range = 0–460 across the 18 enzyme families, Figure 4, Figure 4—figure supplement 1, Figure 4—source data 1). These 741 additional enzyme sequences for 33 reactions formed an expanded testing set of known gut bacterial enzymes.
 
-## SIMMER captures known gut bacterial enzymes involved in drug metabolism
+![Figure 4.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig4-v3.jpg)
+
+**Figure 4.:** Eleven of the 18 enzymes responsible for positive control drug metabolism events have high-confidence homologs that we gathered by filtering for biological significance.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** 52,849 total candidate homologs (a median of 1087 candidates per enzyme) were obtained via profile hidden Markov model (pHMM) searches with sequences from the literature. These putative homologs were filtered for presence in the human jejunum/ileum, presence in RNA-sequencing studies, and predicted affinity for the substrate in question using SEA. This resulted in 741 additional enzyme sequences for 33 positive control reactions.
+
+### SIMMER captures known gut bacterial enzymes involved in drug metabolism
 
 With our expanded database of drug-metabolizing enzymes from the human gut microbiome in hand, we next verified that SIMMER can accurately predict responsible enzymes and reaction types for the 33 known chemical transformations. Only 3 of these 33 reactions are themselves MetaCyc entries (5-ASA, dopamine, and levodopa degradation); if enzymes of reactions not described in MetaCyc were also accurately predicted, it would show that SIMMER can discover non-identical yet chemically similar reactions.
 
 SIMMER accurately predicted the specific enzymes from the human gut microbiome that conduct the 33 query reactions (Figure 5—source data 1). This enzyme list was populated by the results of the precomputed pHMM searches of human microbiome catalogs with annotated gene sequences from MetaCyc reactions (Figure 1A). In 29 cases (88%), the characterized (i.e., positive control) enzyme(s) for a reaction was found in the output enzyme list for the top 20 of the ranked MetaCyc reactions (Figure 5, Figure 5—figure supplement 1). We chose the top 20 out of ~9000 reactions as an accuracy cutoff, because this was the median rank of a true positive reaction in our analysis of MetaCyc reactions conducted by the same enzyme (Figure 3A, Figure 5—figure supplement 2). Since the positive controls span four EC classes (EC1 oxidoreductases, EC2 transferases, EC3 hydrolases, and EC4 lyases), this result demonstrates SIMMER’s ability to accurately predict microbiome-based enzymes for a diversity of reaction types. Also, despite inaccurate EC predictions for nicardipine reduction and brivudine transformation, SIMMER was able to, respectively, predict AzoR and BT_4554 enzymes as responsible for the reactions, because enzyme and EC predictions are separately computed by SIMMER (Figure 5, Figure 5—figure supplement 1, Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig5-v3.jpg)
+
+**Figure 5.:** (A) SIMMER accurately predicted Enzyme Commission (EC) classes for 28 previously characterized reactions that possess EC annotations. As with the MetaCyc database (Figure 2B), accuracy dropped off as EC resolution increased. (B) SIMMER predicted bacterial sequences previously shown to drive 33 drug metabolism events in the gut microbiome. Depicted is the rank (out of N = 8914 reactions) of the MetaCyc reaction that yielded a gut microbiome homolog matching the known positive control sequence. Reported accuracy is based on such a reaction being within the top 20 ranked reactions (dashed blue line).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** For this analysis, 31 of the positive control reactions was queried to SIMMER. Distributions were created based on all (N = 8914) MetaCyc reactions’ distance to a given input metabolism event, and colored by their Enzyme Commission (EC) class annotation in MetaCyc (oxidoreductases, transferases, etc.). The dashed blue line depicts the MetaCyc reaction that yielded a gut microbiome homolog matching the known positive control sequence. For example, when queried with 5-ASA acetylation, SIMMER outputs a most-similar MetaCyc reaction (RXN-13871) that SIMMER linked (via sequence similarity) to an N-acetyltransferase known from previous literature to drive 5-ASA metabolism in the human gut.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Accuracy is defined as whether or not the enzymes responsible for 33 positive control reactions are found in SIMMER’s sequence results for the closest N MetaCyc reactions. The dashed gray line represents our cutoff (N = 20 reactions) chosen for the accuracy measures in Figure 5 and Table 1. We defined the false positive rate as all output reactions preceding that which yields the positive control enzyme sequence within a given reaction number cutoff.
+
 SIMMER often predicts hundreds of sequences potentially responsible for an input reaction, meaning that the possibility of false positives is high. Because biotransformations of the microbiome are understudied, however, there does not exist in the literature a definitive list of all the bacterial enzymes that do not conduct a given reaction. For this reason, we were unable to directly assess an enzyme prediction false positive rate. Instead, we took a conservative approach and defined all output reactions preceding that which yielded the positive control enzyme sequence as false positives (Figure 5—figure supplement 2).
 
 Of the 33 drug metabolism events known to occur via human gut bacterial enzymes, EC annotations exist for 30. For five queries SIMMER predicted more than one significant EC class, but for 28 out of the 30 reactions (including these five), SIMMER’s top EC class prediction was correct (Figure 5, Figure 5—figure supplement 1, Figure 5—source data 1). The two failed EC predictions were for nicardipine reduction (inappropriately predicted as an isomerase reaction) and for brivudine transformation (for which SIMMER made no significant prediction).
 
-## SIMMER outperforms existing methods
+### SIMMER outperforms existing methods
 
 To mount a comparison to the other in silico methods that, in part, aimed to describe microbiome drug metabolism, we next queried the 33 positive control reactions using MicrobeFDT and DrugBug (Table 1) both of which rely solely on substrate chemical similarity rather than information from a whole reaction (Guthrie et al., 2019; Sharma et al., 2017).
+
+**Table 1.**
+ Comparison to existing methods.Table 1—source data 1.All data relevant to the comparison of SIMMER, DrugBug, and MicrobeFDT methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>DrugBug (Sharma et al., 2017)</th>
+      <th>MicrobeFDT (Guthrie et al., 2019)</th>
+      <th>SIMMER</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Underlying databases</td>
+      <td>Number of chemicals</td>
+      <td>2324compounds</td>
+      <td>10,822compounds</td>
+      <td>8914 reactions(12,439 unique compounds)</td>
+    </tr>
+    <tr>
+      <td>Number of bacterial genomes</td>
+      <td>491 (custom database)</td>
+      <td>3008 (IMG)</td>
+      <td>286,997 (UHGG)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Input types</td>
+      <td>Accepts novel SMILES</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>User options for different chemical fingerprints</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Output types</td>
+      <td>Reaction similarity measure</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>EC predictions</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Enzyme and species predictions</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Function predictions</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Prevalence/abundance</td>
+      <td></td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Network relationships</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Usability</td>
+      <td>Web server</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Command-line tool</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Docker container</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Accuracy</td>
+      <td>Prediction of previously characterized enzymes</td>
+      <td>3%</td>
+      <td>NA</td>
+      <td>88%</td>
+    </tr>
+    <tr>
+      <td>Prediction of previously characterized EC numbers</td>
+      <td>37%</td>
+      <td>29%</td>
+      <td>93%</td>
+    </tr>
+  </tbody>
+</table>
 
 For the 30 EC annotated positive control reactions, DrugBug had 37% accuracy in predicting EC classes (in comparison to SIMMER’s 93%) and predicted the correct enzyme for only a single reaction, SN38 glucuronide deconjugation, despite the presence of chemically similar reactions metabolized by the same enzyme amongst the positive controls (Table 1—source data 1). We additionally queried SIMMER with the four positive controls (ginsenoside Rb1, quercetin-3-glucoside, cycasin, and sorivudine) associated with characterized bacterial enzymes from the original DrugBug publication (Table 1—source data 1). Both DrugBug and SIMMER were able to predict EC classes for sorivudine, but only SIMMER was able to accurately predict the specific enzyme (BT_4554) responsible for the drug’s degradation. For ginsenoside Rb1 (3.2.1.192), quercetin-3-glucoside (3.2.1.21), and cycasin (3.2.1.21), SIMMER accurately predicted EC codes out to sub-sub-class (3.2.1.-), serial designation (3.2.1.21), and sub-sub-class (3.2.1.-), respectively, which was a resolution improvement over DrugBug (Table 1—source data 1).
 
@@ -87,7 +240,7 @@ In instances when DrugBug and MicrobeFDT did make predictions, they suffered fro
 
 Altogether, these findings illustrate SIMMER’s enhanced accuracy over other methods for the use-case of characterized drug metabolism events by gut bacteria, and also illustrate SIMMER’s novel ability to predict species and enzymes responsible for chemical transformations not previously described in literature or databases.
 
-## SIMMER predicts novel drug-metabolizing enzymes
+### SIMMER predicts novel drug-metabolizing enzymes
 
 After establishing SIMMER’s accuracy in predicting drug-metabolizing enzymes in the human gut environment, we predicted EC codes, functional annotations, and enzyme sequences for novel microbiome drug metabolism reactions that do not yet possess a responsible, characterized enzyme (Figure 6—source data 1). From our literature curation of 300 non-antibiotic therapeutics affected by the microbiome (Supplementary file 1), we were confident that 88 are directly metabolized by gut bacteria due to their association with an identified bacterial metabolite in the literature. We formatted these 88 reactions in SMILES format and input them as queries to SIMMER.
 
@@ -95,9 +248,9 @@ Of the 88 reactions queried, SIMMER determined significant EC predictions for 75
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig6-v3.jpg)
 
-**Figure 6.:** (A) Distributions depict the unique number of genes, strains, and phyla predicted to be responsible for 88 reported drug transformation reactions, as well as predicted gene functions. (B) A heatmap illustrating, for a given phylum, the number of unique drug-metabolizing enzymes predicted to conduct 88 different drug metabolism events. (C) Enzyme Commission Class representation for bacterial transformations of therapeutics before and after the employment of SIMMER. Our predictions greatly expand the number of characterized reduction (EC1), hydrolysis (EC2), and isomerization (EC5) events and modestly increase the number of transferase (EC2) and lyase (EC4) events.Figure 6—source data 1.
+**Figure 6.:** (A) Distributions depict the unique number of genes, strains, and phyla predicted to be responsible for 88 reported drug transformation reactions, as well as predicted gene functions. (B) A heatmap illustrating, for a given phylum, the number of unique drug-metabolizing enzymes predicted to conduct 88 different drug metabolism events. (C) Enzyme Commission Class representation for bacterial transformations of therapeutics before and after the employment of SIMMER. Our predictions greatly expand the number of characterized reduction (EC1), hydrolysis (EC2), and isomerization (EC5) events and modestly increase the number of transferase (EC2) and lyase (EC4) events.
 
-## Experimental validation of SIMMER predictions: MTX case study
+### Experimental validation of SIMMER predictions: MTX case study
 
 Among the 88 uncharacterized reactions, we assessed SIMMER’s ability to predict strains and enzymes for the hydrolysis of MTX. Oral MTX is an anti-folate immunosuppressant, and the first-line therapy for individuals with rheumatoid arthritis (RA). About half of RA patients, however, show inadequate response to MTX (Scher et al., 2020), and the reasons for this remain incompletely understood. This lack of efficacy may be due to altered pharmacokinetics, as oral bioavailability of MTX is subject to large inter-individual variation with values ranging from 32% to 70% (Roon and Laar, 2006). MTX is estimated to undergo extensive enterohepatic circulation, which results in increased exposure to gut bacteria in the small intestine (Roon and Laar, 2006). This exposure may result in MTX depletion, as it is known that MTX degrades to inactive metabolites 2,4-diamino-N10-methylpteroic acid (DAMPA) and glutamate in mice with intact gut microbiomes, but not in their antibiotic treated counterparts (Zaharko et al., 1969). In a recent human study, ex vivo stool samples from MTX non-responders depleted MTX to a higher degree, though the relevant strains and enzymes were not determined (Artacho et al., 2021).
 
@@ -105,27 +258,47 @@ When queried with MTX and its gut bacteria associated metabolites DAMPA and glut
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig7-v3.jpg)
 
-**Figure 7.:** (A) When queried with MTX hydrolysis to 2,4-diamino-N10-methylpteroic acid (DAMPA) and glutamate, SIMMER found that folate hydrolysis was the most chemically similar MetaCyc reaction. (B) SIMMER predicted 2286 unique bacterial sequences putatively capable of MTX hydrolysis to DAMPA and glutamate. There was great variability in the prevalence and abundance of these sequences in healthy human metagenomic data. Among the strains with predictions, Firmicutes were most common. The most frequent Prokka annotation was Carboxypeptidase G2.Figure 7—source data 1.
+**Figure 7.:** (A) When queried with MTX hydrolysis to 2,4-diamino-N10-methylpteroic acid (DAMPA) and glutamate, SIMMER found that folate hydrolysis was the most chemically similar MetaCyc reaction. (B) SIMMER predicted 2286 unique bacterial sequences putatively capable of MTX hydrolysis to DAMPA and glutamate. There was great variability in the prevalence and abundance of these sequences in healthy human metagenomic data. Among the strains with predictions, Firmicutes were most common. The most frequent Prokka annotation was Carboxypeptidase G2.
 
 We next screened an existing collection of 42 diverse bacterial strains found in the human gut for its ability to deplete MTX. This collection was of interest due to previously determined inter-strain variation in growth inhibition by MTX (Nayak et al., 2021). Each isolate was incubated with MTX (100 μg/ml), and MTX levels were determined by high-performance liquid chromatography (HPLC) (Figure 8). MTX depletion varied across the strain collection, with 10 isolates exhibiting at least a 50% decrease in MTX levels compared to control. There was a statistically significant concordance between SIMMER’s predictions of which strains had an enzyme capable of metabolizing MTX and our experimental results (Fisher’s exact test, odds ratio = 5.4, p-value <0.05, Figure 8). We next examined the seven strains for which SIMMER predicted capability to perform MTX hydrolysis but where we did not observe decreased drug levels. One of these discordant strains, E. coli BW25113, possesses the multidrug resistance efflux pump AcrAB-TolC, which actively exports MTX (Kopytek et al., 2000), explaining why MTX was not affected. To test if other discordant strains possessed orthologs of this efflux pump, we looked for AcrAB sequences in the genomes of all 42 bacterial strains. We found two more discordant strains with AcrAB genes: Edwardsiella tarda and Providencia rettgeri (Figure 8). Thus, 3/7 SIMMER predictions that did not match experimental results could be explained by the ability of drug efflux to mask the potential for enzymatic activity.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig8-v3.jpg)
+
+**Figure 8.:** A diverse panel of 42 isolates was incubated with MTX, and depletion (yes/no) measured via HPLC (50% decrease relative to sterile controls). SIMMER predicted (yes/no) that 13 of the 42 isolates were capable of MTX metabolism, and HPLC experiments showed that 10 isolates depleted MTX (SIMMER prediction p-value = 0.046, Fisher’s exact test). The maximum likelihood phylogenetic tree (PhyML) was created using 16S rRNA gene sequences from the 42 organisms’ closest representatives in the Greengenes database.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) In tandem with SIMMER predictions, we evaluated DrugBug species predictions for MTX metabolism in our in vitro assay. Unlike SIMMER, DrugBug predictions did not predict a single species capable of depleting MTX in the high-performance liquid chromatography (HPLC) assay. Additionally, by this HPLC assay, we were not able to validate any of DrugBug’s predicted MTX-metabolizing strains. MicrobeFDT could not be evaluated in our in vitro assay because it does not make species or enzyme predictions. (B) Confusion matrix for SIMMER predictions. Significance was determined with a Fisher’s exact test. (C) Confusion matrix for DrugBug predictions. Significance was determined with a Fisher’s exact test.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** Representative HPLC traces of bacteria that exhibited MTX depletion. The top row represents bacteria (or sterile control) after incubation with MTX for 15 hr, and the second row represents bacteria (or sterile control) after incubation with MTX for 72 hr. The gray shaded area represents the retention time of MTX (5.5 min).
+
 As an additional comparison to DrugBug and MicrobeFDT, we assessed MTX metabolism with both tools. Both incorrectly predicted that MTX degradation is through transferases rather than hydrolases. Because DrugBug also provides species and enzyme predictions, we assessed its ability to predict species responsible for MTX metabolism. We found that only SIMMER was able to significantly predict species capable of MTX metabolism (SIMMER odds ratio = 5.4 versus DrugBug odds ratio = 0). DrugBug produced zero true positives and predicted that MTX metabolism was a feature largely restricted to members of Bacteroidetes, a group who exhibited no activity in our in vitro assay (Figure 8—figure supplement 1).
 
-## Evaluation of SIMMER on external datasets
+### Evaluation of SIMMER on external datasets
 
 We next sought to determine the relationship between abundance of SIMMER predicted MTX-metabolizing enzymes and clinical response in patients. We took advantage of a publicly available dataset in which fecal samples from treatment-naive new-onset RA patients were profiled using shotgun sequencing; these same patients were followed for 4 months and MTX responder status and disease activity (DAS28) were assessed by the authors (Artacho et al., 2021). Response was defined as a DAS28 score improvement of at least 1.8 points at 4 months of MTX therapy (Artacho et al., 2021). Of SIMMER’s 2286 enzyme predictions for MTX hydrolysis, 386 were detected in the fecal samples of RA patients at baseline (prior to treatment). MTX non-responders exhibited a significant enrichment of SIMMER MTX predictions in their stool samples (Figure 9A). Similarly, a significant negative correlation was seen between patients’ disease score improvements and abundance of SIMMER enzyme predictions (Figure 9B). These data, combined with our HPLC validation and prior ex vivo incubations linking non-response to increased MTX metabolism (Artacho et al., 2021), emphasize the utility of using SIMMER to uncover clinically relevant drug–microbe interactions.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig9-v3.jpg)
 
-**Figure 9.:** N = 368 of SIMMER predicted sequences for MTX hydrolysis were found in new-onset RA patients with variable MTX response. (A) SIMMER enzyme predictions (normalized by read depth) were enriched in MTX non-responders (Generalized Linear Model (GLM) Poisson, p-value = 0.001), and (B) a significant negative association between disease severity improvement and number of SIMMER enzyme predictions (normalized by read depth) was observed (Pearson correlation = −0.4, Student’s t-test p-value = 0.01).Figure 9—source data 1.
+**Figure 9.:** N = 368 of SIMMER predicted sequences for MTX hydrolysis were found in new-onset RA patients with variable MTX response. (A) SIMMER enzyme predictions (normalized by read depth) were enriched in MTX non-responders (Generalized Linear Model (GLM) Poisson, p-value = 0.001), and (B) a significant negative association between disease severity improvement and number of SIMMER enzyme predictions (normalized by read depth) was observed (Pearson correlation = −0.4, Student’s t-test p-value = 0.01).
 
 Next, we sought experimental evidence for other novel transformations with SIMMER predictions. The side-chain cleavage of dexamethasone to 17-oxodexamethasone is one example. Dexamethasone was recently shown to be metabolized solely by Clostridium scindens (ATCC 35704) out of a collection of 76 isolates representative of the human gut microbiome (Zimmermann et al., 2019b). When the authors assessed dexamethasone metabolism in 28 shotgun sequenced human stool samples, metabolite formation varied substantially by individual, but could not be explained by C. scindens species abundance. To explore this lack of correlation in light of our findings, we assessed the abundance of C. scindens SIMMER enzyme predictions (Figure 10—source data 1) within each of the 28 samples (i.e., the number of C. scindens SIMMER enzyme predictions aligned to each sample’s shotgun sequencing reads) rather than each sample’s C. scindens species relative abundance. We found a significant association between metabolite formation and number of SIMMER enzyme aligned reads, and also a significant association between parent compound consumption and number of SIMMER enzyme aligned reads (Figure 10B). This underscores the importance of identifying an enzyme and quantifying its presence in metagenomic data.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig10-v3.jpg)
+
+**Figure 10.:** (A) Donors (N = 20) from the Javdan et al. 16S rRNA gene sequencing study (Javdan et al., 2020) possessed an enrichment of genomes harboring SIMMER enzyme predictions when metabolism of a given drug was observed. Violin plot curves were made using a seaborn package that performs a kernel density estimation of the underlying datapoint distribution. Chemical transformations were drawn using ChemDraw software. Single asterisks denote p-values ≤0.05, and double asterisks denote p-values ≤0.01 (t-test). (B) There was a significant correlation between a human stool sample’s ability to consume dexamethasone (consumption slope, a.u.), to produce 17-oxodexamethasone (production slope, a.u.), and the number of aligned SIMMER predicted sequences for side-chain cleavage of dexamethasone. Patient (N = 28) conversion slopes and metagenomics data were accessed from the original study (Zimmermann et al., 2019b). Chemical structures were drawn using ChemDraw software.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/82401/elife-82401-fig10-figsupp1-v3.jpg)
+
+**Figure 10—figure supplement 1.:** There was not a significant correlation between a human stool sample’s ability to consume dexamethasone (consumption slope, a.u.) or to produce 17-oxodexamethasone (production slope, a.u.), and the number of aligned desAB sequences. Patient (N = 28) conversion slopes and metagenomics data were accessed from the original study (Zimmermann et al., 2019b). This adds confidence to the finding described in Figure 7B, as it means SIMMER enzyme predictions were not correlated with dexamethasone metabolism due to co-occurrence in C. scindens with a gene previously reported to underlie bacterial side-chain cleavage of steroids (Ly et al., 2020).
 
 It came to our attention while preparing this manuscript that recombinant steroid-17,20-desmolase (DesAB) enzymes from C. scindens were shown to perform side-chain cleavage on prednisone, but also to a lesser extent on dexamethasone. DesAB’s reduced activity for dexamethasone was assumed to be due to the compound’s potentially inhibitory 16α-methyl group (Ly et al., 2020). To ensure that SIMMER’s enzyme prediction for dexamethasone cleavage was not enriched in metabolizing stool samples due to co-occurrence with already known DesAB, we next assessed the abundance of desAB reads across the 28 samples and found no significant correlation between number of reads and either metabolite formation or dexamethasone consumption slopes (Figure 10—figure supplement 1). These results indicate that species-level information alone is not enough to predict chemical transformations in a microbiome sample, but with SIMMER, knowledge of responsible enzymes can recapitulate a sample’s potential for therapeutic degradation.
 
 Lastly, eight of the 88 novel transformations were among those investigated in a high-throughput study exploring the metabolism of 571 compounds in ex vivo stool samples (Javdan et al., 2020). This publication demonstrated bacterial degradation of 57 therapeutics in a single pilot donor stool sample (with associated shotgun sequencing), as well as in 20 human stool samples (with associated 16S rRNA gene sequencing). While this study greatly expanded the number of drugs known to break down in the presence of gut bacteria and identified eight metabolite structures, it only identified a responsible enzyme in two of the 57 drug degradation cases due to the low-throughput nature of enzyme characterization. To further assess SIMMER’s ability to predict novel enzymes, and to demonstrate the utility of using SIMMER in an experimental context, we investigated the presence of our predictions in the Javdan et al. study sequencing results. Because shotgun metagenomics sequencing for the pilot donor was deposited, we were able to confirm via tBLASTn searches that SIMMER enzyme predictions were directly found in the pilot donor stool sample for all eight of the reactions with identified metabolites (Figure 10—source data 1). However, the sequencing data from the 20 human donor study were only 16S profiling, so we were unable to look directly for SIMMER enzyme predictions. We instead ensured that genomes found in metabolizing stool samples were SIMMER species predictions. We found that donors who could metabolize a given drug possessed a significant enrichment of species predicted by SIMMER. This was the case for five out of the six reactions analyzed (Figure 10—source data 1, Figure 10A). This result validates SIMMER’s ability to predict species potentially able to perform a queried metabolic reaction, though additional data would be needed to confirm that the strains in these 20 donors had the predicted enzyme.
 
-## SIMMER software
+### SIMMER software
 
 In addition to providing SIMMER (https://github.com/aebustion/SIMMER, copy archived at Bustion, 2023) as a command-line tool that quickly generates enzyme sequence predictions (fasta and tab-separated-value files), EC predictions (tab-separated-value file), and MetaCyc reactions ranked by similarity (tab-separated-value file) based on a user’s input reaction, SIMMER is also available as a user-friendly website (https://simmer.pollard.gladstone.org/). The user can either input one query reaction at a time or upload multiple reactions in tsv file format (Figure 11). All output types available with the SIMMER command-line tool are likewise retrievable via the SIMMER website. SIMMER’s underlying chemical and protein databases will be updated whenever major releases of MetaCyc that result in new enzyme-annotated reactions are released (estimated to be once a year).
 
@@ -159,7 +332,325 @@ SIMMER enters microbiome biotransformation research at an important point: while
 
 ## Materials and methods
 
-## Preparation of SIMMER’s underlying chemical data
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methotrexate</td>
+      <td>Sigma-Aldrich</td>
+      <td>M9929-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides thetaiotaomicron)</td>
+      <td>Bacteroides thetaiotaomicron</td>
+      <td>DSM 2079</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium asparagiforme)</td>
+      <td>Clostridium asparagiforme</td>
+      <td>DSM 15981</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium sporogenes)</td>
+      <td>Clostridium sporogenes</td>
+      <td>ATCC 15579</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium symbiosum)</td>
+      <td>Clostridium symbiosum</td>
+      <td>DSM 934</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Akkermansia muciniphila)</td>
+      <td>Akkermansia muciniphila</td>
+      <td>DSM 22959</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Alistipes shahii)</td>
+      <td>Alistipes shahii</td>
+      <td>DSM 19121</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides caccae)</td>
+      <td>Bacteroides caccae</td>
+      <td>DSM 19024</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides eggerthii)</td>
+      <td>Bacteroides eggerthii</td>
+      <td>DSM 20697</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides finegoldii)</td>
+      <td>Bacteroides finegoldii</td>
+      <td>DSM 17565</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides fragilis)</td>
+      <td>Bacteroides fragilis</td>
+      <td>DSM 2151</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides ovatus)</td>
+      <td>Bacteroides ovatus</td>
+      <td>DSM 1896</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides stercoris)</td>
+      <td>Bacteroides stercoris</td>
+      <td>DSM 19555</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides uniformis)</td>
+      <td>Bacteroides uniformis</td>
+      <td>DSM 6597</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides vulgatus)</td>
+      <td>Bacteroides vulgatus</td>
+      <td>DSM 1447</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides xylanisolvens)</td>
+      <td>Bacteroides xylanisolvens</td>
+      <td>DSM 18836</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium longum)</td>
+      <td>Bifidobacterium longum subsp longum</td>
+      <td>DSM 20219</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Blautia producta)</td>
+      <td>Blautia producta</td>
+      <td>DSM 3507</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium innocuum)</td>
+      <td>Clostridium innocuum</td>
+      <td>DSM 1286</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium scindens)</td>
+      <td>Clostridium scindens</td>
+      <td>DSM 5676</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Collinsella aerofaciens)</td>
+      <td>Collinsella aerofaciens</td>
+      <td>DSM 3979</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dorea formicigenerans)</td>
+      <td>Dorea formicigenerans</td>
+      <td>DSM 3992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dorea longicatena)</td>
+      <td>Dorea longicatena</td>
+      <td>DSM 13814</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Edwardsiella tarda)</td>
+      <td>Edwardsiella tarda</td>
+      <td>ATCC 23685</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella lenta)</td>
+      <td>Eggerthella lenta 1-3-56</td>
+      <td>DSM 110906</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella lenta)</td>
+      <td>Eggerthella lenta</td>
+      <td>DSM 2243</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella sinensis)</td>
+      <td>Eggerthella sinensis</td>
+      <td>DSM 16107</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella sp.)</td>
+      <td>Eggerthella sp.</td>
+      <td>DSM 11767</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Enterococcus faecalis)</td>
+      <td>Enterococcus faecalis</td>
+      <td>DSM 2570</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli BW25113</td>
+      <td>DSM 27469</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eubacterium eligens)</td>
+      <td>Eubacterium eligens</td>
+      <td>DSM 3376</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eubacterium hallii)</td>
+      <td>Eubacterium hallii</td>
+      <td>DSM 3353</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eubacterium rectale)</td>
+      <td>Eubacterium rectale</td>
+      <td>DSM 17629</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Faecalibacterium prausnitzii)</td>
+      <td>Faecalibacterium prausnitzii</td>
+      <td>DSM 17677</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Fusobacterium nucleatum)</td>
+      <td>Fusobacterium nucleatum subsp. nucleatum</td>
+      <td>DSM 15643</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gordonibacter pamelae)</td>
+      <td>Gordonibacter pamelae</td>
+      <td>DSM 110924</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactococcus lactis)</td>
+      <td>Lactococcus lactis</td>
+      <td>DSM 20481</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactonifactor longoviformis)</td>
+      <td>Lactonifactor longoviformis</td>
+      <td>DSM 17459</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Parabacteroides distasonis)</td>
+      <td>Parabacteroides distasonis</td>
+      <td>DSM 20701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Parabacteroides merdae)</td>
+      <td>Parabacteroides merdae</td>
+      <td>DSM 19495</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Prevotella copri)</td>
+      <td>Prevotella copri</td>
+      <td>DSM 18205</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Providencia rettgeri)</td>
+      <td>Providencia rettgeri</td>
+      <td>DSM 4542</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Ruminococcus obeum)</td>
+      <td>Ruminococcus obeum</td>
+      <td>DSM 25238</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of SIMMER’s underlying chemical data
 
 13,387 gene-annotated, enzyme-driven bacterial reactions were downloaded from MetaCyc version 24.1 (Caspi et al., 2008). Each reaction contained Simplified Molecular Input Line Entry System strings (SMILES) of reactant(s) and product(s) and UniProt or Entrez identifiers for sequences that catalyze the reaction (we also had access to an expanded list of sequence annotations for these reactions from a personal correspondence with Peter Karp of MetaCyc). All MetaCyc compounds were then protonated based on the pH environment of 7.4 in the human small intestine, where most oral drug absorption occurs. Protonation states were calculated using ChemAxon’s cxcalc majorms software (ChemAxon, 2023 ).
 
@@ -167,7 +658,7 @@ RDKit’s rdChemReactions module was employed to create chemical fingerprints re
 
 After creating fingerprint vectors for all MetaCyc reactions, an 8914 by 8914 pairwise similarity matrix of Tanimoto coefficients was created. These Tanimoto vectors make up SIMMER’s underlying chemical data.
 
-## Preparation of SIMMER’s underlying protein data
+### Preparation of SIMMER’s underlying protein data
 
 For each of the 8914 fingerprinted MetaCyc reactions, all relevant gene sequences were retrieved from the MetaCyc reaction’s UniProt and Entrez database linkouts and additional sequence data acquired from Peter Karp at MetaCyc. If at least two genes, with a median pairwise sequence similarity greater than or equal to 27%, were linked to a given MetaCyc reaction, the sequences were used to create a multiple sequence alignment and subsequent pHMM using Clustal Omega and HMMER3 (version 3.2.1) software, respectively (Eddy, 2009; Sievers and Higgins, 2014). This similarity cutoff was chosen based on previous protein family literature (Mi et al., 2021). If fewer than two genes, or genes with less than 27% global similarity, were associated with a given MetaCyc reaction, a pHMM of the MetaCyc gene(s) PANTHER subfamily was retrieved via InterPro linkouts (Mi et al., 2021). MetaCyc derived and PANTHER subfamily pHMMS were then queried against a UHGG collection of 286,997 isolate genomes and metagenome assembled genomes from the human gut environment using the HMMER3 hmmsearch module (Almeida et al., 2021; Eddy, 2009). In the case of MetaCyc reactions with too few sequences, too low a median pairwise sequence identity, and a missing PANTHER database subfamily pHMM, single sequence protein queries were conducted against the UHGG databse using HMMER3’s phmmer module, which internally created protein profiles for the single query sequences based on a position-independent scoring system. Resulting enzyme hit lists were filtered to only include high significance hits (e-value < 1E − 5, and hit length ≥ half of the input pHMM alignment or single sequence length). In sum, for each MetaCyc reaction, a profile representing the diversity of the enzyme family for that chemical transformation was used to find sequence similar hits in the human gut microbiome that can mediate chemically similar reactions.
 
@@ -175,54 +666,54 @@ Each human gut microbiome hit was further described by the identity, prevalence,
 
 Phylogenetic trees were also constructed for each hmmsearch and phmmer result. For each set of MetaCyc reaction human gut microbiome enzyme hits, CD-HIT was used to cluster results at 95% identity (Fu et al., 2012). Then MUSCLE was used to create a multiple sequence alignment for input to FastTree (Edgar, 2004; Price et al., 2009). Compact tree visualizations were made in R using ggtree and ggtreeExtra (Xu et al., 2021; Yu et al., 2017). All tree tips were colored by phylum and surrounded by circle annotators describing a given hit’s Prokka predicted function, genome type (i.e., from an isolate or metagenome assembled genome), and prevalence/abundance in the Predict cohort (Seemann, 2014).
 
-## Query functionality of SIMMER
+### Query functionality of SIMMER
 
 The query functionality of SIMMER was designed similar to the precomputed chemistry data. After receiving an input chemical transformation (or tsv describing multiple input reactions) in the form of SMILES, SIMMER fingerprints the reaction(s) and compares it to the precomputed chemical space by computing the Tanimoto coefficients between the input(s) and all precomputed reactions. The 8914 precomputed MetaCyc reaction Tanimoto vectors are then sorted by ascending euclidean distance to the query Tanimoto vector. SIMMER by default ranks reactions’ euclidean distances based directly on the Tanimoto vectors, but if a user’s inputs require a decrease in computational burden, PCA can be employed after similarity matrix creation and before euclidean distance rankings. The number of PCs to be used depends on the fingerprint style employed and was determined by the Kaiser criterion. Unless otherwise stated, all analyses in this manuscript employed the full Tanimoto similarity matrix with no PCA reduction. Human gut microbiome enzymes that may conduct the input reaction are reported from the precomputed UHGG hmmsearch or phmmer results of the closest euclidean distance MetaCyc reaction. Significantly enriched EC identities (i.e., reaction types) are also reported.
 
-## Reaction type predictions
+### Reaction type predictions
 
 SIMMER predicts an EC code (i.e., reaction type) for a query reaction if there is an enrichment of a particular EC at the top of the reaction list. Enrichment was determined in a manner similar to GSEA (Subramanian et al., 2005). For each EC code associated with MetaCyc reactions, an enrichment score (ES) was calculated by walking down the ranked list of reactions. Starting with a score of zero, each time the given EC is encountered the score increases by one, and each time a different EC is encountered the score decreases by one. At the end of this process, each EC receives an ES that is the score’s maximum distance from zero after walking through the list (Figure 2—figure supplement 1A). Because the MetaCyc database of reactions is unbalanced in its EC code representation, ES scores for a given EC type are divided by the number of times the EC in question occurs in the database. This yields a normalized ES (NES) for SIMMER reporting. Significance is established by comparing the true NES to the NES achieved from 1000 permutations of a shuffled reaction list (Figure 2—figure supplement 1B, C). When multiple EC codes are predicted as significant, they are ranked in ascending order of where in the list of 8914 reactions the NES occurs. This method was verified by subsampling the database of MetaCyc reactions to equal numbers (N = 96) of reactions for each EC class, the broadest resolution level of an EC code. Each of these subsampled reactions was then queried with SIMMER against the entire MetaCyc reaction database to create sorted reaction lists for each query. SIMMER predicted an EC code(s) for each reaction based on the most highly enriched EC. SIMMER’s recall, precision, and accuracy are high for EC class, sub-class, and sub-sub-class level resolution (Figure 2B, Figure 2—source data 1). For the serial designation of an EC code (the most granular description of an EC code), however, SIMMER’s performance diminished, potentially because enrichment calculations suffer from increased uniqueness in the ranked list and therefore reduced power to determine a match (Figure 2—source data 1). This indeed appears to be the case; when the database is subsampled to ensure at least three of each unique serial designation, F1-scores (the harmonic mean of precision and recall) and accuracy remain high despite the increased EC resolution (Figure 2—source data 1, Figure 2—figure supplement 1D).
 
-## Euclidean distance silhouette scores
+### Euclidean distance silhouette scores
 
 To analyze SIMMER’s resilience to different reaction chemistry representations, we created a silhouette-like euclidean distance score. For the precomputed MetaCyc chemical dataset of 8914 reactions (i.e., the Tanimoto pairwise similarity matrix), we split all reactions into their top-level EC codes (i.e., EC class) and determined for each reaction its euclidean distance to all reactions within its EC class versus outside its EC class. From the two distributions (within EC and without EC distances) created, we computed a Kolmogorov statistic to determine if the distributions significantly (p < 0.05) differed. We repeated this process for finer resolution EC classifications (sub-class, sub-sub-class, and serial designation). Euclidean distance silhouette scores were used to compare different chemical representations, such as fingerprint style, inclusion of products, and inclusion of cofactors.
 
-## Relationship between SIMMER’s underlying chemical and protein data
+### Relationship between SIMMER’s underlying chemical and protein data
 
 For MetaCyc enzymes (N = 34,279) associated with multiple reactions, one reaction was used as a SIMMER query, and the other reaction(s) searched for in the ordered reaction list output. As a negative control, these reaction similarity results were then compared to all pairwise combinations of MetaCyc enzymes (subsampled to N = 34,279) that do not conduct the same reaction.
 
 We also assessed the relationship between chemistry and protein similarity for all pairwise combinations of a subset of MetaCyc reactions annotated with only one protein sequence (N = 604 reactions). Chemical similarity was based on the Euclidean distance between two reaction fingerprint vectors in SIMMER’s precomputed chemical space (Figure 1A). Global protein similarity was determined via the Needleman–Wunsch algorithm. The relationship between chemical similarity and protein similarity was assessed with a Pearson’s correlation coefficient and p-value calculated using a Wald test with t-distribution of the test statistic.
 
-## Creating a compendium of drug metabolism use cases from the human gut
+### Creating a compendium of drug metabolism use cases from the human gut
 
 To analyze SIMMER under the use-case of drug metabolism, we created a compendium of drug degradations that occur in the human gut microbiome. The compendium of reactions is based on a literature curation of hundreds of papers, and is organized by reactions producing known/unknown metabolites and driven by known/unknown bacterial enzymes. The drug metabolism positive controls used to assess SIMMER’s accuracy were drawn from the list of reactions possessing a structurally elucidated metabolite and driven by a characterized bacterial enzyme.
 
 We further expanded the positive control list to include sequence similar enzymes that likely perform the same function. For this expansion, we performed pHMM searches (when a positive control reaction had been characterized with multiple sequence similar enzymes) and phmmer searches (when a positive control reaction had been characterized with only one sequence) of the UHGG database using HMMER3 software (Almeida et al., 2021; Eddy, 2009). High significance (e-value < 1E − 5) hits were kept when the resulting alignment was at least 50% of the input pHMM or sequence length. This list of significant hits was filtered by presence in human ileum or jejunum (the site of human drug absorption) via DIAMOND searches against metagenomic reads from a published study that employed jejunum and ileum endoscopy (Buchfink et al., 2021; Zmora et al., 2018). The hits were also filtered for presence in RNAsequencing data via DIAMOND searches of rnaSPAdes assembled reads from HMP2 metatranscriptomics control patient samples (Bushmanova et al., 2019; Integrative HMP (iHMP) Research Network Consortium, 2019). The hits were lastly filtered by predicted affinity for their substrates using the Similarity Ensemble Approach (Keiser et al., 2007).
 
-## Comparison to existing methods
+### Comparison to existing methods
 
 DrugBug predictions were made using the DrugBug web tool (http://metagenomics.iiserb.ac.in/drugbug/) with default settings. MicrobeFDT predictions were made in two manners: first by looking for direct enzyme metabolism events, and second, by looking for enzyme metabolism of compounds that overlap chemically with the positive control in question. Cypher query commands used are included in Table 1—source data 1.
 
-## Analysis of 16S and metagenomics data from Javdan et al.
+### Analysis of 16S and metagenomics data from Javdan et al.
 
 We analyzed results from sequencing studies (NCBI BioProject: PRJNA593062) described in a previously published high-throughput investigation of bacterial drug metabolism in human stool samples (Javdan et al., 2020). The first sequencing set in this publication was a deep metagenomic sequencing of one pilot individual’s ex vivo stool originally evaluated for its ability to degrade hundreds of therapeutics. We used MetaSPAdes with default settings to assemble the metagenomics reads into scaffolds (Nurk et al., 2017). We then queried SIMMER with eight reactions that were structurally elucidated (via nuclear magnetic resonance) by the previous publication, and ensured via TBLASTN searches that SIMMER predicted hits were found in the assembled metagenomic reads. The second sequencing set was a 16S rRNA sequencing experiment of twenty human donor stool samples originally evaluated for their inter-individual variation in bacterial drug degradation. We queried SIMMER with five of these reactions possessing structurally elucidated metabolites, and evaluated enrichment of SIMMER predicted bacterial species in metabolizing versus non-metabolizing donors. Species matches between SIMMER species predictions and the 16S study were made using the SequenceMatcher class from the difflib python module set to an 80% ratio cutoff. Enrichment of SIMMER predicted bacterial genomes was then assessed by computing a t-test for number of SIMMER genomes in metabolizers versus number of SIMMER genomes in non-metabolizers for a given reaction.
 
-## Analysis of dexamethasone metagenomics data
+### Analysis of dexamethasone metagenomics data
 
 For experimental corroboration of dexamethasone metabolism, we accessed shotgun sequencing data (PRJEB31790) from a cohort of 28 human stool samples shown to metabolize dexamethasone to varying degrees (Zimmermann et al., 2019b). Shotgun reads were assembled using MetaSpades with default settings. The metabolism of dexamethasone to 17-oxodexamethasone was input to SIMMER with N = 20 reactions output, and a DIAMOND database of all SIMMER enzyme predictions from C. scindens was created. Presence of SIMMER enzyme predictions was established via search with DIAMOND and normalized by sample read depth. Significance was established with a Pearson’s correlation coefficient and p-value calculated using a Student’s t-distribution.
 
-## Analysis of RA metagenomics data
+### Analysis of RA metagenomics data
 
 The Artacho sequencing study (PRJNA682730) raw reads were assembled using MetaSpades with default settings (Nurk et al., 2017). After assembly, DIAMOND was used to search for SIMMER sequences in reads, with presence defined as at least 50% coverage and at least 97% identity. All abundance measures were normalized by read depth. Correlation between DAS28 improvement and number of aligned SIMMER enzyme predictions was assessed using Pearson’s correlation coefficient and p-value calculated using a Student’s t-distribution. Enrichment of SIMMER enzyme predictions in MTX responders versus non-responders was assessed using a generalized linear model, glm(count~response, family = poisson).
 
-## Bacterial isolate screen for MTX hydrolysis
+### Bacterial isolate screen for MTX hydrolysis
 
 42 isolates commonly found in the human gut microbiome were obtained from Deutsche Sammlung von Mikroorganismen und Zellkulturen (DSMZ) and American Type Culture Collection (ATCC), and subcultured as previously described (Nayak et al., 2021). MTX (100 μg/ml) was added to cultures for 72 hr, samples then spun down at 2000 rcf for 5–10 min at 4°C, and supernatant injected to HPLC (see HPLC method). MTX was dosed based on the predicted concentration of the drug in a human gastrointestinal tract, as previously described (Nayak et al., 2021). Drug depletion was defined as at least a 50% decrease in MTX levels compared to control. SIMMER predicted enzymes’ presence or absence in the 42 isolates was determined by downloading genomes (Figure 8—source data 1) for all 42 isolates and conducting DIAMOND searches. Presence was defined as at least 97% global percent identity. Presence of AcrAB efflux machinery was determined by conducting DIAMOND searches for E. coli AcrA (P0AE06) and AcrB (P31224) against all 42 isolates, and reported in Figure 8—source data 1. For the phylogenetic tree, 16S rRNA gene sequences for the 42 organisms were downloaded from the Greengenes database (DeSantis et al., 2006) and aligned using MUSCLE (Edgar, 2004). Gaps occurring in greater than 50% of sequences removed before creating a maximum likelihood phylogenetic tree (PhyML) with 100 bootstraps and the GTR substitution model (Guindon et al., 2010).
 
-## MTX HPLC method
+### MTX HPLC method
 
 HPLC assays were performed on an Agilent HPLC (1220 Infinity), and data collected with OpenLAB CDS (Agilent Technologies). Solvent A was 0.1% formic acid, and solvent B was 100% methanol. Solvent B concentration was 10–30% from 0 to 1 min, 30–100% from 1 to 7 min, and then 100–10% from 7 to 7.5 min. The flow rate was 0.6 ml/min. A C18 column (Kinetex 2.6  µM; 100  Å; 15 cm × 0.46 cm; Phenomenex; 00F-4462-E0) was used with a SecurityGuard ULTRA cartridge guard column (Phenomenex part number AJ0-8768). The injection volume was 30 µl. At 310  nm, MTX retention time was 5.5 min (Figure 8—figure supplement 2). We compared the amount of MTX present in the bacterial supernatant compared to sterile and dimethyl sulfoxide (DMSO) controls to assess MTX metabolism.
 
-## Web tool creation
+### Web tool creation
 
 We used the python web framework Flask (https://flask.palletsprojects.com/en/2.1.x/) to make SIMMER available as a user-friendly website. The website accepts either a single query reaction or multiple query reactions via a file upload and provides the same outputs as the SIMMER command-line tool. The website also allows the user to download the outputs of interest. Keeping in mind the privacy and security of the data that a user might upload to the website, the website is designed to delete all uploaded data within 24 hr from the server. This will ensure security of the uploaded data.

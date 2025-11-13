@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands
-2. https://ror.org/05f0yaq80 Department of Psychology, Stockholm University Stockholm Sweden
-3. https://ror.org/04dkp9463 Department of Developmental Psychology, University of Amsterdam Amsterdam Netherlands
-4. https://ror.org/05wg1m734 Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands
-5. https://ror.org/05grdyy37 Department of Radiology and Nuclear Medicine, Amsterdam University Medical Centers Amsterdam Netherlands
-6. https://ror.org/016xsfp80 Department of Medical Imaging, Radboud University Medical Center Nijmegen Netherlands
+1. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
+2. Department of Psychology, Stockholm University Stockholm Sweden ([ROR:05f0yaq80](https://ror.org/05f0yaq80))
+3. Department of Developmental Psychology, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+4. Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+5. Department of Radiology and Nuclear Medicine, Amsterdam University Medical Centers Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))
+6. Department of Medical Imaging, Radboud University Medical Center Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
 ## Abstract
 
-Individual differences in striatal dopamine synthesis capacity have been associated with working memory capacity, trait impulsivity, and spontaneous eye-blink rate (sEBR), as measured with readily available and easily administered, ‘off-the-shelf’ tests. Such findings have raised the suggestion that individual variation in dopamine synthesis capacity, estimated with expensive and invasive brain positron emission tomography (PET) scans, can be approximated with simple, more pragmatic tests. However, direct evidence for the relationship between these simple trait measures and striatal dopamine synthesis capacity has been limited and inconclusive. We measured striatal dopamine synthesis capacity using [ 18 F]-FDOPA PET in a large sample of healthy volunteers (N = 94) and assessed the correlation with simple, short tests of working memory capacity, trait impulsivity, and sEBR. We additionally explored the relationship with an index of subjective reward sensitivity. None of these trait measures correlated significantly with striatal dopamine synthesis capacity, nor did they have out-of-sample predictive power. Bayes factor analyses indicated the evidence was in favour of absence of correlations for all but subjective reward sensitivity. These results warrant caution for using these off-the-shelf trait measures as proxies of striatal dopamine synthesis capacity.
+Individual differences in striatal dopamine synthesis capacity have been associated with working memory capacity, trait impulsivity, and spontaneous eye-blink rate (sEBR), as measured with readily available and easily administered, ‘off-the-shelf’ tests. Such findings have raised the suggestion that individual variation in dopamine synthesis capacity, estimated with expensive and invasive brain positron emission tomography (PET) scans, can be approximated with simple, more pragmatic tests. However, direct evidence for the relationship between these simple trait measures and striatal dopamine synthesis capacity has been limited and inconclusive. We measured striatal dopamine synthesis capacity using [18F]-FDOPA PET in a large sample of healthy volunteers (N = 94) and assessed the correlation with simple, short tests of working memory capacity, trait impulsivity, and sEBR. We additionally explored the relationship with an index of subjective reward sensitivity. None of these trait measures correlated significantly with striatal dopamine synthesis capacity, nor did they have out-of-sample predictive power. Bayes factor analyses indicated the evidence was in favour of absence of correlations for all but subjective reward sensitivity. These results warrant caution for using these off-the-shelf trait measures as proxies of striatal dopamine synthesis capacity.
 
 ## Introduction
 
@@ -45,11 +45,200 @@ Here, we measured striatal dopamine synthesis capacity with [18F]-FDOPA PET imag
 
 ## Results
 
-## Absence of correlations between trait measures and striatal dopamine synthesis capacity
+### Absence of correlations between trait measures and striatal dopamine synthesis capacity
 
 First, we report the Pearson correlations between striatal dopamine synthesis capacity and working memory capacity, trait impulsivity, sEBR, and subjective reward sensitivity. Dopamine synthesis capacity was quantified as the [18F]-FDOPA influx rate (kicer) for our three striatal ROIs (Piray et al., 2017): the caudate nucleus, putamen, and nucleus accumbens (ventral striatum). Working memory capacity was indexed with the Digit Span test (Groth-Marnat, 1997) and Listening Span test (Daneman and Carpenter, 1980); trait impulsivity was assessed with the Barratt Impulsiveness Scale (BIS-11; Patton et al., 1995); subjective reward sensitivity was assessed using the Behavioural Activation Scale (BAS; Carver and White, 1994); and sEBR was calculated from electro-oculography recordings (see ‘Methods’ for details). For trait measures that resulted in multiple (sub)scores, we used the total or composite score as the putative proxy measure. We report additional correlation analyses exploring the relationships between subscales of the trait measures and dopamine synthesis capacity in Figure 1—figure supplements 1–3.
 
 There were no significant correlations between dopamine synthesis capacity, in any of the three striatal ROIs, and working memory capacity, trait impulsivity, or sEBR, even without correcting for multiple comparisons (Figure 1, Table 1; all uncorrected p-values>0.050, all corrected p-values≥0.365). There was also no significant correlation with subjective reward sensitivity after correction for multiple comparisons (Figure 1, Table 1; corrected p-values=0.127). Specifically, the coefficients of correlation between dopamine synthesis capacity and both the Digit Span and Listening Span were almost zero in all three ROIs (Figure 1a and b, Table 1). In fact, the direction of the association between Digit Span and dopamine synthesis capacity was negative (e.g. ρ=–0.071 for the nucleus accumbens). The coefficient of the correlation between trait impulsivity and dopamine synthesis capacity was also almost zero in all three ROIs, and the direction of the association was, if anything, negative (Figure 1c, Table 1). There were also no significant correlations between sEBR and dopamine synthesis capacity (Figure 1d, Table 1), with correlation coefficients of almost zero in the caudate nucleus and putamen, and a positive (but non-significant) association in the nucleus accumbens (ρ=0.123). That association was slightly stronger but still not significant after correction for multiple comparisons when excluding nine participants that received inconsistent instructions for the sEBR measurement (see ‘Methods’; ρ=0.184, adjusted p-value=0.143). Among the four trait measures under consideration, subjective reward sensitivity was most strongly and positively associated with dopamine synthesis capacity (e.g. ρ=0.179 in the nucleus accumbens), but again the correlations were not statistically significant (Figure 1e, Table 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-v2.jpg)
+
+**Figure 1.:** Pearson correlations between dopamine synthesis capacity (kicer) in the caudate nucleus, putamen, or nucleus accumbens regions of interest (ROIs) and (a) working memory capacity measured with the Digit Span task (N = 94), (b) working memory capacity measured with the Listening Span task (N = 94), (c) trait impulsivity measured with the BIS-11 questionnaire (N = 66), (d) spontaneous eye-blink rate (N = 92), or (e) subjective reward sensitivity measured with the Behavioural Activation Scale (N = 94). The light grey shading represents the 95% confidence interval. The p-values provided in the annotations are not corrected for multiple comparisons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Correlations between dopamine synthesis capacity in the putamen, caudate nucleus, or nucleus accumbens regions of interest (ROIs) and (a) the forward section and (b) backward section of the Digit Span task and (c) the total number of words recalled in the Listening Span task. The light grey shading represents the 95% confidence interval. The p-values of the two-sided Pearson correlation coefficients are not corrected for multiple comparisons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Correlations between dopamine synthesis capacity in the putamen, caudate nucleus, or nucleus accumbens regions of interest (ROIs) and the BIS-11 sub-scale on (a) attention, (b) motor actions, and (c) nonplanning. The light grey shading represents the 95% confidence interval. The p-values of the two-sided Pearson correlation coefficients are not corrected for multiple comparisons.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Correlations between dopamine synthesis capacity in the putamen, caudate nucleus, or nucleus accumbens regions of interest (ROIs) and the BAS sub-scale on (a) reward-responsiveness, (b) fun-seeking, and (c) drive. The light grey shading represents the 95% confidence interval. The p-values of the two-sided Pearson correlation coefficients are not corrected for multiple comparisons.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Bayes factor results as function of varying priors for the null hypothesis of no positive correlation (H0) versus a positive correlation (H1) between striatal dopamine synthesis capacity and (a) working memory capacity measured with the Digit Span task (N = 94), (b) working memory capacity measured with the Listening Span task (N = 94), (c) trait impulsivity measured with the BIS-11 questionnaire (N = 66), (d) spontaneous eye-blink rate (N = 92), or (e) subjective reward sensitivity measured with the Behavioural Activation Scale (N = 94). The red dot corresponds to the Bayes factor for the default prior specification.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** From the full dataset, random subsamples were drawn for each of a series of sample sizes (N = 10, 15, 20, 25, 30, 40, 50, 60, 70, and 80), and for each subsample the correlations between the trait measures and dopamine synthesis capacity was computed. This was repeated 5000 times for each sample size to obtain distributions of the correlations between the trait measures and dopamine synthesis capacity. These distributions were then summarized with the 95, 80, and 50% confidence intervals to reveal the sampling variability of the correlations at varying sample sizes. This analysis was performed for each of the key trait measures under consideration: (a) working memory capacity measured with the Digit Span task, (b) working memory capacity measured with the Listening Span task, (c) trait impulsivity measured with the BIS-11 questionnaire, (d) spontaneous eye-blink rate, and (e) subjective reward sensitivity measured with the Behavioural Activation Scale. As indicated in the bottom-right panel, the different colours represent the striatal region of interest (ROI) in which dopamine synthesis capacity was estimated, and the opacity represents the confidence interval. The black dots represent the means across subsamples. Note that for BIS-11, the subsampling analysis was performed for a reduced range of sample sizes because the original data for this measure was limited to N = 66 (see ‘Methods’ for details).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** The whole striatum ROI is the combination of all three subregions of interest.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/83161/elife-83161-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** The masks are based on an independent, functional connectivity-based parcellation of the striatum (Piray et al., 2017).
+
+**Table 1.**
+ Statistics of the Pearson correlation analyses between striatal dopamine synthesis capacity and working memory capacity, trait impulsivity, spontaneous eye-blink rate, and subjective reward sensitivity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait measure</th>
+      <th>Striatal ROI</th>
+      <th>ρ</th>
+      <th>p-value</th>
+      <th>Adjusted p-value</th>
+      <th>BF01 (0,1)</th>
+      <th>BF01 (–1,1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digit Span</td>
+      <td>Caudate nucleus</td>
+      <td>–0.035</td>
+      <td>0.632</td>
+      <td>1</td>
+      <td>9.93</td>
+      <td>7.33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.069</td>
+      <td>0.746</td>
+      <td>1</td>
+      <td>12.19</td>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.071</td>
+      <td>0.751</td>
+      <td>1</td>
+      <td>12.31</td>
+      <td>6.19</td>
+    </tr>
+    <tr>
+      <td>Listening Span</td>
+      <td>Caudate nucleus</td>
+      <td>0.04</td>
+      <td>0.355</td>
+      <td>1</td>
+      <td>5.52</td>
+      <td>7.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>0.002</td>
+      <td>0.491</td>
+      <td>1</td>
+      <td>7.45</td>
+      <td>7.59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>0.034</td>
+      <td>0.375</td>
+      <td>1</td>
+      <td>5.78</td>
+      <td>7.22</td>
+    </tr>
+    <tr>
+      <td>BIS-11</td>
+      <td>Caudate nucleus</td>
+      <td>–0.048</td>
+      <td>0.648</td>
+      <td>1</td>
+      <td>8.56</td>
+      <td>6.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.011</td>
+      <td>0.536</td>
+      <td>1</td>
+      <td>6.98</td>
+      <td>6.48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.04</td>
+      <td>0.625</td>
+      <td>1</td>
+      <td>4.97</td>
+      <td>6.19</td>
+    </tr>
+    <tr>
+      <td>sEBR</td>
+      <td>Caudate nucleus</td>
+      <td>0.031</td>
+      <td>0.386</td>
+      <td>0.773</td>
+      <td>6.01</td>
+      <td>7.36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>0.017</td>
+      <td>0.434</td>
+      <td>0.773</td>
+      <td>6.7</td>
+      <td>7.57</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>nucleus accumbens</td>
+      <td>0.123</td>
+      <td>0.122</td>
+      <td>0.365</td>
+      <td>2.24</td>
+      <td>3.92</td>
+    </tr>
+    <tr>
+      <td>BAS</td>
+      <td>caudate nucleus</td>
+      <td>0.16</td>
+      <td>0.062</td>
+      <td>0.127</td>
+      <td>1.3</td>
+      <td>2.42</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>putamen</td>
+      <td>0.174</td>
+      <td>0.046</td>
+      <td>0.127</td>
+      <td>1.02</td>
+      <td>1.93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>nucleus accumbens</td>
+      <td>0.179</td>
+      <td>0.042</td>
+      <td>0.127</td>
+      <td>0.94</td>
+      <td>1.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_ρ: Pearson correlation coefficient; corresponding one-sided p-values (for a positive association) are reported both with and without Holm–Bonferroni correction for multiple comparisons for three striatal regions of interest (ROIs); BF01 (0,1): Bayes factor for the evidence in favour of the null hypothesis of no positive correlation (H0) versus the alternative hypothesis of a positive correlation (H1); BF01 (–1,1): Bayes factor for the non-directional hypotheses quantifying the evidence in favour of the null hypothesis of no correlation (H0) versus the alternative hypothesis that there is a correlation (H1); BIS-11: Barratt Impulsiveness Scale, assessing trait impulsivity; sEBR: spontaneous eye-blink rate; BAS: Behavioural Activation Scale, assessing subjective reward sensitivity._
 
 In accordance with the ROI-based correlation analyses, voxel-wise regression analyses of the trait measures on the dopamine synthesis capacity PET data did not reveal any significant clusters, and the location of any sub-threshold clusters was generally consistent with the ROI-based results (Figure 2).
 
@@ -59,6 +248,189 @@ In accordance with the ROI-based correlation analyses, voxel-wise regression ana
 
 Because of the lack of statistically significant correlations, we sought to quantify the evidence in our data for the absence of correlations between the trait measures and dopamine synthesis capacity using a Bayesian analysis of the associations. We calculated the Bayes factors (BF01) of the null hypotheses that dopamine synthesis capacity values and the different trait measures are not positively correlated (H0) versus the alternative hypotheses that they are positively correlated (H1; Table 2). For working memory capacity, the BF01 results indicated that the data were approximately 10–12 times more likely under the null hypothesis of no positive correlation than under the alternative hypothesis of a positive correlation for the Digit Span, and approximately 6 times more likely under the null hypothesis for the Listening Span, thus providing strong evidence for H0 over H1 for the Digit Span and moderate evidence for the Listening Span. Similarly, there was strong evidence for the null hypothesis of no positive correlation between trait impulsivity and dopamine synthesis capacity (BF01 ≈ 5–8). For sEBR, the analysis revealed moderate evidence for the null hypothesis of no positive correlation with dopamine synthesis capacity in the caudate nucleus and putamen (BF01 ≈ 6), but only weak, inconclusive evidence in the nucleus accumbens (BF01 ≈ 2). The data for the correlation between subjective reward sensitivity and dopamine synthesis capacity were equally likely under H0 or H1 (BF01 ≈ 1), indicating that the Bayesian analysis was inconclusive about the evidence for the existence of a positive correlation.
 
+**Table 2.**
+ Summary statistics of the cross-validated predictive accuracy of working memory capacity, trait impulsivity, spontaneous eye-blink rate, or subjective reward sensitivity for striatal dopamine synthesis capacity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait measure</th>
+      <th>Striatal ROI</th>
+      <th>Metric: R2</th>
+      <th></th>
+      <th></th>
+      <th>Metric: RMSE</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>Std_err</td>
+      <td>Perm_p</td>
+      <td>Mean</td>
+      <td>Std_err</td>
+      <td>Perm_p</td>
+    </tr>
+    <tr>
+      <td>Digit Span</td>
+      <td>Caudate nucleus</td>
+      <td>–0.19812</td>
+      <td>0.010189</td>
+      <td>0.617</td>
+      <td>0.002054</td>
+      <td>1.21E-05</td>
+      <td>0.6242</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.19854</td>
+      <td>0.010929</td>
+      <td>0.6048</td>
+      <td>0.002222</td>
+      <td>1.43E-05</td>
+      <td>0.4672</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.20066</td>
+      <td>0.011087</td>
+      <td>0.6154</td>
+      <td>0.001895</td>
+      <td>1.29E-05</td>
+      <td>0.5174</td>
+    </tr>
+    <tr>
+      <td>Listening Span</td>
+      <td>Caudate nucleus</td>
+      <td>–0.2009</td>
+      <td>0.01004</td>
+      <td>0.6272</td>
+      <td>0.002056</td>
+      <td>1.21E-05</td>
+      <td>0.6686</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>putamen</td>
+      <td>–0.20468</td>
+      <td>0.01074</td>
+      <td>0.6246</td>
+      <td>0.002227</td>
+      <td>1.39E-05</td>
+      <td>0.5344</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>nucleus accumbens</td>
+      <td>–0.20312</td>
+      <td>0.010809</td>
+      <td>0.6262</td>
+      <td>0.001898</td>
+      <td>1.28E-05</td>
+      <td>0.5624</td>
+    </tr>
+    <tr>
+      <td>BIS-11</td>
+      <td>Caudate nucleus</td>
+      <td>–0.3554</td>
+      <td>0.019555</td>
+      <td>0.6562</td>
+      <td>0.00212</td>
+      <td>1.46E-05</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.42078</td>
+      <td>0.032679</td>
+      <td>0.7408</td>
+      <td>0.002298</td>
+      <td>1.60E-05</td>
+      <td>0.7188</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.3709</td>
+      <td>0.02575</td>
+      <td>0.6382</td>
+      <td>0.001977</td>
+      <td>1.50E-05</td>
+      <td>0.6384</td>
+    </tr>
+    <tr>
+      <td>sEBR</td>
+      <td>Caudate nucleus</td>
+      <td>–0.20731</td>
+      <td>0.010552</td>
+      <td>0.6382</td>
+      <td>0.002077</td>
+      <td>1.22E-05</td>
+      <td>0.748</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.18209</td>
+      <td>0.010114</td>
+      <td>0.5242</td>
+      <td>0.0022</td>
+      <td>1.31E-05</td>
+      <td>0.5688</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.16276</td>
+      <td>0.008713</td>
+      <td>0.4236</td>
+      <td>0.001874</td>
+      <td>1.31E-05</td>
+      <td>0.335</td>
+    </tr>
+    <tr>
+      <td>BAS</td>
+      <td>Caudate nucleus</td>
+      <td>–0.16081</td>
+      <td>0.01069</td>
+      <td>0.461</td>
+      <td>0.002022</td>
+      <td>1.27E-05</td>
+      <td>0.187</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>–0.16465</td>
+      <td>0.011264</td>
+      <td>0.4672</td>
+      <td>0.002189</td>
+      <td>1.44E-05</td>
+      <td>0.1226</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nucleus accumbens</td>
+      <td>–0.16523</td>
+      <td>0.011255</td>
+      <td>0.4682</td>
+      <td>0.001865</td>
+      <td>1.29E-05</td>
+      <td>0.1468</td>
+    </tr>
+  </tbody>
+</table>
+
+_R2: coefficient of determination; RMSE: root mean square error; std_err: standard error; perm_p: p-value based on 5000 permutations; BIS-11: trait impulsivity questionnaire; sEBR: spontaneous eye-blink rate; BAS: Behavioural Activation Scale to measure subjective reward sensitivity._
+
 To assess the sensitivity of the Bayes factors to the priors that were used in the analyses, we performed a Bayes factor robustness check. This analysis indicated that the above conclusions hold even when specifying strong prior beliefs in the existence of positive correlations (Figure 1—figure supplement 4).
 
 We also assessed Bayes factors quantifying the relative evidence for the non-directional hypotheses of no correlation (H0) versus a (positive or negative) correlation (H1) between the trait measures and dopamine synthesis capacity (Table 2). This revealed moderate evidence for the null hypothesis of no correlation (H0) between striatal dopamine synthesis capacity and working memory capacity (BF01 ≈ 5–7), trait impulsivity (BF01 ≈ 6), or sEBR (BF01 ≈ 4–8). For subjective reward sensitivity, the relative evidence for the null hypothesis remained inconclusive (BF01 ≈ 2).
@@ -67,7 +439,7 @@ Of note, previous studies that used smaller sample sizes typically reported much
 
 To further inspect the impact of sample size and power, we calculated the effect size that we would be able to reliably detect with the one-sided Pearson correlation tests at acceptable levels of statistical power in our sample of N = 94 (with statistical significance level of α = 0.05), using G*Power (Faul et al., 2009). With power of 0.9 we would be able to reliably detect correlations with a coefficient of ρ = 0.29 (which corresponds to a sample Cohen’s d of 0.61). For a power of 0.8, the coefficients would have to be ρ = 0.25 (sample Cohen’s d = 0.52). The hypothesized correlations between striatal dopamine synthesis capacity and working memory capacity, impulsivity, and sEBR were all much weaker than that in the current sample: all but one correlation with ρ < 0.1. For an effect size of ρ = 0.1 and power of 0.8, a sample size of N = 614 would have been needed (N = 850 for power of 0.9).
 
-## Trait measures fail to predict striatal dopamine synthesis capacity
+### Trait measures fail to predict striatal dopamine synthesis capacity
 
 The statistical significance of a correlational model evaluated ‘in-sample’ does not necessarily speak to that model’s predictive accuracy for previously unseen data (Yarkoni and Westfall, 2017). We therefore used resampling methods, specifically k-fold cross-validation (k = 10 with 100 repeats) and permutation testing, to estimate to what extent each of the trait measures could predict striatal dopamine synthesis capacity, using simple linear regression models (see ‘Methods’ for details). We indexed predictive accuracy with the out-of-sample coefficient of determination (R2) and provide the root mean square error (RMSE) as an additional performance measure (Table 2).
 
@@ -99,13 +471,13 @@ In conclusion, the generally assumed link between baseline dopamine levels and t
 
 ## Methods
 
-## Participants
+### Participants
 
 This study is part of a larger project (Määttä et al., 2021) for which 100 healthy volunteers were recruited, 50 women and 50 men (age at inclusion: range 18–43, mean [SD] = 23.0 [5.0] y). The sample size was determined based on the overarching project’s aim to detect individual differences in dopaminergic drug effects as a function of dopamine synthesis capacity rather than the investigation of the relationships between dopamine synthesis capacity and putative proxy measures that we report here. All participants provided written informed consent and were paid 309 euros after completion of the overarching study. The study was approved by the local ethics committee (‘Commissie Mensgebonden Onderzoek’, CMO region Arnhem-Nijmegen, The Netherlands: protocol NL57538.091.16). People were recruited via an advertisement on the Radboud University electronic database for research participants (77%), a similar national database (https://www.proefbunny.nl/; 5%; a participant recruiting website that is not available anymore), and advertisement flyers around Nijmegen or word of mouth (together 18%). Prerequisites for participation were age between 18 and 45 y, Dutch as native language, and right-handedness. Before admission to the study, participants were extensively screened for adverse medical and psychiatric conditions. Exclusion criteria included any current or previous psychiatric or neurological disorders, having a first-degree family member with a current or previous psychiatric disorder, clinically significant hepatic, cardiac, renal, metabolic, or pulmonary disease, epilepsy, hyper- or hypotension, habitual smoking or drug use, pregnancy, and MRI contraindications, such as unremovable metal parts in the body or claustrophobia.
 
 Six participants dropped out before completion of the study because of discomfort in the MRI or PET scanner (N = 4), personal reasons (N = 1), or technical failure of the PET scanner (N = 1). Therefore, PET data were available for a total of N = 94 participants ( Supplementary file 1 lists participant characteristics for this sample). For the sEBR analyses, one participant was excluded due to poor data quality and one was excluded as an outlier (more than 5 SDs from the group mean), resulting in a final sample of N = 92. For the impulsivity analyses, 67 participants completed the BIS-11 questionnaire (see subsection ‘Trait impulsivity’ for details), one of whom was excluded due to missing PET data, resulting in a final sample of N = 66. For the Digit Span, Listening Span, and BAS questionnaire, the full sample of N = 94 was included.
 
-## General procedure
+### General procedure
 
 Data were collected as part of a large PET, pharmaco-fMRI study on the effects of methylphenidate and sulpiride on brain and cognition, employing a within-subject, placebo-controlled, double-blind cross-over design (Netherlands Trial Register 5959; https://trialsearch.who.int/Trial2.aspx?TrialID=NTR6140). For a detailed description of the testing sessions and tasks and measures collected, see Määttä et al., 2021.
 
@@ -113,13 +485,13 @@ The study consisted of five testing days separated by at least 1 wk. The first w
 
 Participants filled in the questionnaires of personality and trait characteristics online, after the third pharmaco-fMRI session and before the final testing day with PET scan (mean time difference = 32.45 d; standard error of mean = 3.14 d). The mean time difference between the intake session and PET session was 90.16 d, standard error of mean = 3.13 d.
 
-## Data acquisition and preprocessing
+### Data acquisition and preprocessing
 
-## MRI
+#### MRI
 
 On the intake session, a whole-brain structural image was acquired to use for within-subject registration with the PET images, using a T1-weighted magnetization prepared, rapid-acquisition gradient echo sequence (192 sagittal slices; repetition time, 2300 ms; echo time, 3.03 ms; field of view: 256 × 256 mm; flip angle, 8°; 256 × 256 matrix; 1.0 mm in-plane resolution; 1.0 mm slice thickness). The MRI experiment was performed on a 3T Siemens Magnetom Skyra MRI scanner at the Donders Institute using a 32-channel head coil.
 
-## PET
+#### PET
 
 The brain PET data were acquired on a state-of-the-art PET/CT scanner (Siemens Biograph mCT; Siemens Medical Systems, Erlangen, Germany) at the Department of Medical Imaging of the Radboud University Medical Center. We used the well-validated radiotracer [18F]-FDOPA, which was synthesized at Radboud Translational Medicine BV (RTM BV) in Nijmegen. The tracer is a substrate for aromatic amino acid decarboxylase, the enzyme that converts DOPA into dopamine. The rate of conversion of [18F]-FDOPA into dopamine provides an estimate of dopamine synthesis capacity. It is a stable measure with good test–retest reliability (intraclass correlation coefficients range from about 0.7–0.94 in the striatum) even after a 2-yr time interval between acquisitions of scans (Egerton et al., 2010; Vingerhoets et al., 1994). 50 min before the PET scan started, participants received 150 mg of carbidopa and 400 mg of entacapone to minimize peripheral metabolism of [18F]-FDOPA by peripheral decarboxylase and catechol-O-methyltransferase (COMT), respectively, thereby increasing signal-to-noise ratio in the brain (Boyes et al., 1986; Hoffman et al., 1992; Ishikawa et al., 1996; Léger et al., 1998).
 
@@ -129,7 +501,42 @@ The PET data were preprocessed and analysed using SPM12. All frames were realign
 
 After preprocessing, we extracted the mean kicer values from the caudate nucleus, putamen, and nucleus accumbens in native subject space. The masks for these ROIs were taken from an independent parcellation of the striatum based on intra-striatal functional connectivity (Figure 1—figure supplement 7; Piray et al., 2017). The extracted kicer values represent the dopamine synthesis capacity in the ROIs and were used to correlate the putative proxy measures with. There were strong correlations between dopamine synthesis capacity values in the three ROIs (Table 3).
 
-## Working memory
+**Table 3.**
+ Pearson correlation coefficients for dopamine synthesis capacity in the three striatal regions of interest.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Caudate nucleus</th>
+      <th>Putamen</th>
+      <th>Nucleus accumbens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Caudate nucleus</td>
+      <td>1</td>
+      <td>0.751</td>
+      <td>0.649</td>
+    </tr>
+    <tr>
+      <td>Putamen</td>
+      <td>0.751</td>
+      <td>1</td>
+      <td>0.787</td>
+    </tr>
+    <tr>
+      <td>Nucleus accumbens</td>
+      <td>0.649</td>
+      <td>0.787</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Working memory
 
 Working memory capacity was indexed with the Digit Span test (Groth-Marnat, 1997) and Listening Span test (Daneman and Carpenter, 1980). Both tasks were computerized.
 
@@ -137,13 +544,13 @@ In the Digit Span test, participants started with the forward section, in which 
 
 The Listening Span test consists of sets of pre-recorded sentences, increasing in size from two to seven sentences. Participants were presented with the sentences and were simultaneously required to answer written verification questions regarding the content of each sentence. At the end of each set, subjects recalled the final word of each sentence in the order of presentation. The Listening Span was defined as the set size for which the participant correctly recalled the final words on at least two out of three trials. Listening span increased with half a point when only one trial of the next level was correct. In addition to the Listening Span, the total number of final words that were correctly recalled was used as an additional measure.
 
-## Trait impulsivity
+#### Trait impulsivity
 
 Trait impulsivity was assessed with the Barratt Impulsiveness Scale (BIS-11; Patton et al., 1995). The BIS-11 is a self-report questionnaire, consisting of 30 statements about common (non)impulsive behaviours and preferences, and participants indicate their level of endorsement on a 4-point Likert scale. The BIS-11 total impulsivity scores reflect the tendency towards impulsivity. Participants completed the questionnaire at home between test days.
 
 Due to an experimenter error, a prototype of the questionnaire, known as BIS-11A, was originally administered. That version has never been validated and contains both differently phrased as well as completely different questions compared with the validated BIS-11 questionnaire (https://www.impulsivity.org/measurement/bis11/). When the error was discovered after the completion of the study, the intended version of the questionnaire (i.e. BIS-11) was sent to the participants, of whom 67 completed it.
 
-## sEBR
+#### sEBR
 
 The sEBR data were collected using electro-oculography (EOG), recorded on a BrainVision Recorder system (Brain Products GmbH, Munich, Germany) with 200 Hz sampling rate. We followed automatic and manual procedures for data acquisition, preprocessing, and data analysis of the EOG data (Sescousse et al., 2018). The EOG data were acquired during the day (before 5 pm) over a period of (up to) 10 min using two vertical and two horizontal Ag-AgCl electrodes placed around the eyes. During the study, the length of recording was increased from 6 to 10 min following recommendation by external colleagues; 28 participants were recorded for 6 min, and the 72 remaining participants were recorded for 10 min. The vertical EOG (vEOG) signal, used for assessing eye blinks, was obtained from a bipolar montage using the electrodes placed above and below the right eye. The horizontal EOG (hEOG) signal, used to exclude artefacts produced by saccades and muscle activity, was obtained from bipolar montage using the electrodes placed lateral to the eternal canthi, and the ground electrode was placed on the right mastoid.
 
@@ -151,11 +558,11 @@ Participants were comfortably seated facing a white wall from about 1.5 m distan
 
 The EOG data were rectified and band-pass filtered between 0.5 and 20 Hz using the Fieldtrip toolbox in MATLAB (Oostenveld et al., 2011; http://fieldtriptoolbox.org/; MathWorks Inc; https://nl.mathworks.com/products/matlab.html). Eye blinks were detected using an automated procedure based on a voltage change passing a threshold that was set individually per participant (range 100 μV) in a time interval of 400 ms (Slagter et al., 2010). The vEOG signal was visually inspected by two researchers independently to assess detection accuracy. Blinks were manually added or removed according to the threshold definition of a blink when appropriate, and potential artefacts from saccades or muscle activity were removed when they were detected in the hEOG signal. Because the inter-rater reliability of the independent scoring of the sEBR values was high (α = 0.98), the analyses were performed on the average blink rate determined by the two researchers.
 
-## Subjective reward sensitivity
+#### Subjective reward sensitivity
 
 We measured trait characteristics of reward sensitivity with the Behavioural Activation Scale (BAS; Carver and White, 1994; Franken et al., 2005). This scale consists of 17 items that are scored on a 4-point Likert scale and can be split into three subscales: Reward-Responsiveness, Drive, and Fun-Seeking. These were designed to assess the personality constructs of reinforcement sensitivity theory (Carver and White, 1994).
 
-## Statistical analysis
+### Statistical analysis
 
 The primary correlation analyses were performed with dopamine synthesis capacity for each of the three striatal ROIs and the total Digit Span score and Listening Span score, total BIS-11 score, sEBR values, and total BAS score. We subsequently explored the correlations between dopamine synthesis capacity and sub-sections of the proxy measures: forward and backward Digit Span, total words recalled in the Listening Span task, impulsivity scores on the attentional, motor and nonplanning subscales of the BIS-11, and scores on the Reward Responsiveness, Fun-Seeking and Drive subscales of the BAS questionnaire. Statistics for the correlations with the subscales are provided in Figure 1—figure supplements 1–3 but not used for inference on statistical significance, given the exploratory nature of these analyses.
 
@@ -165,7 +572,7 @@ For a more precise localization of any correlation effects, we also performed vo
 
 In addition to the confirmatory Pearson correlation tests, we used Bayes factor correlation analyses to quantify the evidence in favour of the null hypothesis (H0) that there is not a positive correlation versus the alternative hypothesis (H1) that there is a positive correlation. The Bayes factor (BF01) reports the ratio of the evidence for H0 over H1, given the data. Thus, a BF01 greater than 1 indicates stronger evidence for H0 than H1, and vice versa for a BF01 smaller than 1. We ran the Bayesian correlation analyses with uninformative (flat) prior beta distributions over the (0,1) interval. We also checked the robustness of the resulting Bayes factors by recalculating the Bayes factors for each correlation using a range of strong to weak beta priors (ranging from a width of 0–2). For completeness, we also quantified the evidence for the non-directional hypotheses of no correlation (H0) versus a non-zero correlation (H1) using Bayesian correlation analyses over the (–1,1) interval with uninformative priors. The Bayes factor analyses were performed using the function correlationBF of the BayesFactor package in R (Ly et al., 2016; version 0.9.12–4.2).
 
-## Predictive modelling
+### Predictive modelling
 
 We used k-fold cross-validation and permutation testing to estimate to what extent the trait variables could be used to predict dopamine synthesis capacity for previously unseen participants. These resampling methods were applied to simple linear regression models, in which dopamine synthesis capacity in one of the three striatal ROIs served as the outcome variable and one of the trait measures served as the predictor variable.
 
@@ -173,10 +580,18 @@ In k-fold cross-validation, the original data is randomly split into k subsample
 
 Permutation sampling is used to construct a null distribution of the model’s predictive accuracy, which can be compared to the estimated predictive accuracy for the original data to establish whether the model offers predictive performance above chance. For a single permutation, the outcome variable is randomly shuffled whereas the predictor variable is unaltered, thereby eliminating the participant-wise link between variables. This permuted dataset is then subjected to tenfold cross-validation to estimate the model’s predictive accuracy. By repeating this process many times (here, 5000 times), we obtain a distribution of the model’s predictive accuracy under the null hypothesis. The permutation p-value is defined as the proportion of permutations for which the model’s predictive accuracy is as good or greater than the predictive accuracy for the original data.
 
-We defined predictive accuracy as the model’s coefficient of determination, R2. If y^i is the predicted value of the i-th sample and yi is the corresponding true value for a total of n samples, the estimated R2 is defined asR2(y,y^)=1−∑i=1n(yi−y^i)2∑i=1n(yi−y¯)2
+We defined predictive accuracy as the model’s coefficient of determination, $R^{2}$. If $y^_{i}$ is the predicted value of the $i$-th sample and $y_{i}$ is the corresponding true value for a total of $n$ samples, the estimated $R^{2}$ is defined as
 
-where y-=1n∑i=1nyi . An R2 of 1 indicates perfect predictive accuracy. A constant (intercept-only) model that merely predicts the expected value of y, ignoring individual differences as a function of the predictor variable, would correspond to an R2 of 0. The model can be arbitrarily worse than an intercept-only model, and therefore R2 can be negative.
+$$
+R^{2}(y,y^)=1−\frac{\sumi=1n(y_{i}−y^_{i})^{2}}{\sumi=1n(y_{i}−y¯)^{2}}
+$$
 
-We additionally examined the root mean square error, RMSE, which represents the quadratic mean of the difference between the true values and predicted values:RMSE=1n∑i=1n(yi−y^i)2
+where $y-=\frac{1}{n}\sum_{i=1}^{n}y_{i}$ . An $R^{2}$ of 1 indicates perfect predictive accuracy. A constant (intercept-only) model that merely predicts the expected value of $y$, ignoring individual differences as a function of the predictor variable, would correspond to an $R^{2}$ of 0. The model can be arbitrarily worse than an intercept-only model, and therefore $R^{2}$ can be negative.
 
-In contrast to R2 , this metric is represented on the same scale as the outcome variable. An RMSE of 0 indicates perfect predictive accuracy, and higher scores correspond to worse accuracy.
+We additionally examined the root mean square error, $RMSE$, which represents the quadratic mean of the difference between the true values and predicted values:
+
+$$
+RMSE=\sqrt{\frac{1}{n}\sumi=1n(y_{i}−y^_{i})^{2}}
+$$
+
+In contrast to $R^{2}$ , this metric is represented on the same scale as the outcome variable. An $RMSE$ of 0 indicates perfect predictive accuracy, and higher scores correspond to worse accuracy.

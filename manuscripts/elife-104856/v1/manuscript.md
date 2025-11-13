@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/024kbgz78 School of Life Sciences, Gwangju Institute of Science and Technology Gwangju Republic of Korea
-2. https://ror.org/04jgeq066 Director for Laboratory Diagnosis and Analysis, Chungcheong Regional Center for Disease Control and Prevention, Korea Disease Control and Prevention Agency (KDCA) Daejeon Republic of Korea
+1. School of Life Sciences, Gwangju Institute of Science and Technology Gwangju Republic of Korea ([ROR:024kbgz78](https://ror.org/024kbgz78))
+2. Director for Laboratory Diagnosis and Analysis, Chungcheong Regional Center for Disease Control and Prevention, Korea Disease Control and Prevention Agency (KDCA) Daejeon Republic of Korea ([ROR:04jgeq066](https://ror.org/04jgeq066))
 
 † Corresponding author
 
@@ -32,9 +32,21 @@ To address these limitations, we conducted single-cell multi-omics analyses on P
 
 ## Results
 
-## The single-cell transcriptional landscape of HIV-1-infected cells in early stage of infection
+### The single-cell transcriptional landscape of HIV-1-infected cells in early stage of infection
 
 To uncover immune mechanisms and transcriptional regulation in HIV-1-infected cells, we performed single-cell multi-omics sequencing on PBMCs from nine individuals with early-stage HIV infection (<6 months) (Supplementary file 1A). Using the 10x Genomics Single-Cell platform, we obtained five scRNA-seq and four snRNA-seq data from single-cell multiome datasets. We integrated scRNA-seq and snRNA-seq data, identifying 16 distinct cell populations based on marker genes (Figure 1A; Figure 1—figure supplement 1A). We also observed some variability in the proportions of these cell populations among donors, suggesting inter-individual differences in immune cell composition (Figure 1—figure supplement 1B). Focusing on CD4+ T cells as main targets of HIV-1, we defined four subtypes: CD4 naive T cells, CD4+ effector memory T cells (CD4 EM cells), T helper (Th)2 cells, and Th17 cells (Figure 1B; Figure 1—figure supplement 1C, D). LDHB and SELL were highly expressed in CD4 naive T cells, whereas CD4 EM cells were characterized by high expression levels of HLA-DRA and GZMK. Among the activated CD4+ T cells, Th2 cells were identified based on the expression of STAT6 and GATA3, and Th17 cells were annotated based on the expression levels of RORA and STAT3.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig1-v1.jpg)
+
+**Figure 1.:** (A) UMAP plot displays the distribution of PBMCs in early infected patients (n = 9), clustered based on transcriptome signatures post-removing batch effects. (B) The UMAP plot displays the distribution of 4435 CD4 T cells from early infected patients. (C) UMAP of CD4 T cells identifies 3450 uninfected cells and 985 HIV-1 RNA+ cells. (D) Volcano plot reveals differentially expressed genes (DEGs) in HIV-1 RNA+ CD4 T cells compared to uninfected cells; red dots signify significant DEGs (adj p-value <0.01). (E) Bar plot reveals enriched biological processes and immune pathways in HIV-1 RNA+ CD4 T cells (p-value <0.01) using upregulated DEGs; significance presented as −log(p-value). (F) Heatmap exhibits signaling pathways enriched in CD4 T cell types through gene set enrichment analysis (GSEA); positive scores (dark orange) denote enrichment in HIV-1 RNA+ cells (nominal p-value <0.05 and <0.25) are marked with stars. (G) GSEA plots show significant immune pathways in CD4 naive, Th2, and Th17 cells, presenting enrichment score (ES), normalized enrichment score (NES), and false discovery rate (FDR).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Dot plot illustrates the gene expression of cell type-specific marker genes in all clusters, where the dot size represents the percentage of cells expressing the marker gene, and the color intensity indicates the average expression of the marker gene. (B) The proportion of cell types is depicted for each donor. (C) UMAP plots of subclustered CD4+ T cells from single-cell RNA-seq data. Each color represents a different donor. The right panel shows the distribution of cells after batch correction using the fastMNN algorithm. (D) Dot plot illustrates the gene expression of cell type-specific marker genes in all CD4 subclusters. (E) The proportion of HIV-1 RNA+ cells to uninfected cells is depicted for each cell type. The box plot includes the counts of both HIV-1 RNA+ cells and uninfected cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Upregulated (red) and downregulated (blue) genes are shown on the map of KEGG PI3K–AKT signaling pathway.
 
 To identify HIV-1 RNA+ cells, we aligned scRNA-seq reads to the HIV-1 genome. Additionally, we conducted targeted long-read sequencing using the remaining scRNA-seq libraries to improve the sequencing depth of HIV-1 transcripts. We identified 985 HIV-1 RNA+ cells and 3450 uninfected cells. CD4 naive and EM cells showed a higher proportion of HIV-1 RNA+ cells than Th2 and Th17 (Figure 1C; Figure 1—figure supplement 1E).
 
@@ -42,11 +54,19 @@ Gene expression profiling revealed 334 upregulated and 1,002 downregulated genes
 
 Given that CD4+ T cell differentiation influences HIV-1 survival (Horsburgh et al., 2022), we used gene set enrichment analysis (GSEA) to assess subtype-specific responses (Figure 1F). The GSEA results revealed that interferon-gamma and interferon-alpha responses were upregulated in all CD4+ T cell subtypes upon HIV-1 infection. Additionally, hallmarks related to T cell activation were downregulated in both Th2 and Th17 cells. Additionally, while interferon-alpha responses were enriched, downstream pathways (e.g., PI3–AKT–mTOR) were downregulated in Th17 cells (Figure 1F, G). Downregulated genes in Th17 cells were linked to PI3K–AKT signaling, while no such enrichment was observed among upregulated genes (Figure 1—figure supplement 2A, B). These results suggest that activated T cells experience immune dysfunction in early HIV-1 infection, contrasting with the effects observed in naive CD4+ T cells.
 
-## Characterization of epigenetic changes in HIV-1-infected CD4+ T cells in early infection
+### Characterization of epigenetic changes in HIV-1-infected CD4+ T cells in early infection
 
 Single-cell multiome technology enables a detailed understanding of cell states by simultaneously profiling transcriptome and epigenetic signatures within the same cell, facilitating the construction of an accurate gene regulatory network by identifying gene expression drivers. A combined UMAP was generated based on chromatin accessibility and gene expression, with cell types annotated using marker genes (Figure 2A; Figure 2—figure supplement 1A). Additionally, coverage plots revealed cell type-specific chromatin accessibility for nearby marker genes (Figure 2B). Chromatin accessibility in HIV-1 RNA+ naive and memory CD4+ T cells identified specific patterns, with closed differential accessibility regions (DARs) in naive cells linked to TNF-alpha signaling via NF-κB and open DARs related to HIV-1 Nef protein and signal transduction. In memory CD4+ T cells, closed DARs were related to interferon signaling and negative regulation of viral transcription, whereas open DARs were related to Tat-mediated HIV elongation. When examining genes adjacent to open chromatin regions (Figure 2D), we observed high chromatin accessibility for PSMB7 and CDK9 in naive and memory CD4+ T cells, respectively, both of which interact with the HIV-1 Tat protein (Apcher et al., 2003; Wang et al., 2020a). Furthermore, the chromatin accessibility of NR4A2 and TRIM62, which negatively regulate HIV-1 (Sreeram et al., 2022; Chen et al., 2023; Uchil et al., 2008), was reduced in HIV-1 RNA+ cells (Figure 2E).
 
-## Identification of key transcription factors governing HIV-1 infection features
+![Figure 2.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig2-v1.jpg)
+
+**Figure 2.:** (A) UMAP plot illustrates PBMC distribution in early infected patients (n = 8) post-clustering based on transcriptome and epigenome signatures, with batch effects removed. (B) Visualization of differential DNA accessibility across 15 cell clusters. Tracks display normalized chromatin accessibility at promoter regions of cluster-specific marker genes. (C) Heatmap displays differentially chromatin-accessible regions (DARs) in HIV-1 RNA+ and uninfected cells of naive and memory CD4 T cell types. Right heatmap presents enriched gene ontology for DAR-associated genes. (D) Volcano plot shows DARs between HIV-1 RNA+ CD4 T cells and uninfected cells; red dots signify significant DARs, with associated genes displayed. (E) Tracks display normalized chromatin accessibility at the promoter regions of key genes (PSMB7, CDK9, NR4A2, TRIM62) in HIV-1 RNA+ and uninfected cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Violin plot displays the gene expression of marker genes in scATAC-seq dataset. (B) The bar plot represents the gene ontologies associated with the target genes of the upregulated TFs in HIV-1 RNA+ cells (p-value <0.01). The significance of these enrichments is expressed as −log(p-value).
+
+### Identification of key transcription factors governing HIV-1 infection features
 
 Following HIV-1 infection, host transcription factors (TFs) regulate immune responses and viral persistence (Masenga et al., 2023). To identify key TFs and construct a gene regulatory network associated with HIV-1 infection, we integrated gene expression and chromatin accessibility data from HIV-1 RNA+ CD4+ T cells.
 
@@ -58,17 +78,37 @@ We found 15 TFs with increased and 24 with decreased regulon activity in HIV-1 R
 
 The chromatin accessibility data further supported the increased activity of these TFs in HIV-1 RNA+ cells. We calculated TF activity based on chromatin accessibility and identified enriched TF-binding motifs in HIV-1 RNA+ CD4+ T cells using DARs. KLF2-, JUND-, and FOSL2::JUNB-binding motifs were highly enriched in the DARs opened in HIV-1 RNA+ cells (Figure 3F), along with enhanced TF activity (Figure 3G). Furthermore, TF footprinting analysis revealed higher chromatin accessibility adjacent to the KLF2-binding motif sites (Figure 3H). The promoter region of KLF2 was more accessible, with higher mRNA expression in HIV-1 RNA+ cells than in uninfected cells (Figure 3I). Furthermore, the putative cis-regulatory element of KLF2 showed more chromatin-accessible peaks in HIV-1 RNA+ CD4+ T cells than in uninfected cells (Figure 3I). Overall, this multidimensional approach enabled integrating gene expression and chromatin accessibility in the early stage of infection in PLWH, highlighting potential key TFs that regulate HIV-1 transcription in host cells.
 
-## KLF2 is an essential regulator in the function of HIV-1-infected CD4+ T cells
+### KLF2 is an essential regulator in the function of HIV-1-infected CD4+ T cells
 
 Using a multidimensional approach, we identified KLF2 as a key TF within the gene regulatory network of HIV-1 RNA+ CD4+ T cells. KLF2 is reported to be involved in the quiescence, survival, and differentiation of T cells (Hart et al., 2012). However, its function in viral infection remains poorly understood. To elucidate the role of KLF2, we curated 88 KLF2 target genes from published chromatin immunoprecipitation (ChIP)-chip, ChIP-seq, and other TF-binding site profiling data, as well as SCENIC regulon datasets. Out of 88 KLF2 target genes, 44 were upregulated in HIV-1 RNA+ cells (Figure 4A; Supplementary file 1B). To validate these findings, we analyzed a publicly available single-cell transcriptomic dataset of HIV-infected PBMCs (Wang et al., 2020b). Consistently, expression of KLF2 and a significant proportion of KLF2 target genes, including LTB, PIM1, and NRP2, were also upregulated in HIV-infected CD4+ T cells (Figure 4—figure supplement 1A). These target genes were mainly associated with negative regulation of apoptotic process and negative regulation of programmed cell death (Figure 4B). Among these significantly upregulated KLF2 target genes, those reported to be involved in the regulation of HIV-1 replication (PIM1 and IL32) (Duverger et al., 2014; Didichenko et al., 2008), cell proliferation (TXNIP) (Muri et al., 2021), and the JAK/STAT pathway (LTB) also exhibited higher levels of chromatin accessibility in HIV-1 RNA+ CD4+ T cells than in uninfected cells (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig4-v1.jpg)
+
+**Figure 4.:** (A) Bar plot displays gene ontologies associated with upregulated KLF2 transcription factor (TF) target genes in HIV-1 RNA+ cells (p-value <0.01); significance expressed as −log(p-value). (B) Violin plot represents expression of upregulated KLF2 TF target genes in uninfected cells and HIV-1 RNA+ CD4 T cells (*p < 0.01). (C) Tracks display normalized chromatin accessibility at promoter loci of PIM1, IL32, TXNIP, and LTB for HIV-1 RNA+ and uninfected cells, with peak-to-gene links bottom of the coverage plot. (D) Dot plot displays ligand–receptor pairs detected between CD4 and CD8 T cells; red-labeled gene symbols are KLF2 target genes. Circle size indicates p-values, while color represents mean average expression levels. (E) Interactions between KLF2 target genes and HIV-1 proteins identified using STRING database. Yellow dots represent human proteins, and red dots represent HIV-1 proteins; line thickness indicates interaction strength.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heatmap showing the expression (Z-score normalized) of KLF2 target genes across healthy controls and HIV-1-infected individuals with high and low viral loads. Gene expression data were obtained from a published dataset (GSE157829). (B) Violin plots showing the expression levels of FOXP1 and GATA3 in HIV-1 RNA+ versus uninfected CD4+ T cells (top, current study). The bottom panel shows expression levels of KLF2 in published dataset (GSE242997), comparing HIV-infected cells treated with latency-reversing agents (LRA) and DMSO controls.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Circos plot shows cell–cell interactions that are upregulated in HIV-1-infected CD4+ T cells. Line thickness represents interaction strength, and arcs are colored by cell types. (B) Circos plot shows downregulated interactions in HIV-1-infected CD4+ T cells.
 
 Considering that CD8+ T cells play a critical role in the immune response against HIV-1 infection during chronic infection (Gulzar and Copeland, 2004; Mudd and Lederman, 2014), we further attempted to identify specific ligand–receptor pairs between CD4+ T cells and cytotoxic T lymphocytes to characterize the immune response induced by HIV-1-infected cells (Gulzar and Copeland, 2004). Toward this end, we computed significant ligand–receptor pair interactions between CD8+ and CD4+ T cells using CellPhoneDB (Figure 4D; Efremova et al., 2020). The results indicated a strong interaction between LTB and its receptor (LTBR) in naive CD4+ T cells, whereas other CD4+ T cell subtypes displayed a weaker interaction with cytotoxic CD8+ T cells. LTB expression was also significantly elevated in HIV-1 RNA+ cells (Supplementary file 1B). Additionally, the NRP2 receptor exhibited heightened levels of interaction between CD4+ and CD8+ T cells, particularly in the effector CD4+ T cell population. NRP2, a known target gene of KLF2, is expressed on T cells and modulates immune responses under pathological conditions (Roy et al., 2017). Given that KLF2 is involved in immune cell trafficking and adhesion, we used CellChat (v2.1.1) (Jin et al., 2025) to identify altered ligand–receptor interactions between HIV-1-infected CD4+ T cells and innate immune cells during infection. Both effector and central memory CD4+ T cells exhibited increased MIF and ICAM2 signaling with NK cells, which are associated with KLF2-mediated immune modulation and may enhance immune activation by facilitating immune cell adhesion and migration (Figure 4—figure supplement 2A; Pestal et al., 2024; SenBanerjee et al., 2004). However, HIV-1-infected CD4+ T cells simultaneously showed reduced CCL5 and CLEC2B signaling, potentially limited monocyte-driven responses and NK cell recruitment (Gouwy et al., 2011; Welte et al., 2006). These changes in immune interaction may represent a balance between immune activation and evasion, contributing to viral persistence.
 
 Subsequently, we explored the interactions between the host proteins encoded by KLF2 target genes and HIV-1 proteins. Using the STRING database, we identified 16 KLF2 target genes that encode proteins that directly interact with HIV-1 (Figure 4E). One of these target genes, SOCS3, which encodes a protein exhibiting a strong interaction with the Tat protein, pivotal for viral genome replication (Akhtar et al., 2010). Another KLF2 target gene, PIM1, which is known as a transactivator of Tat (Didichenko et al., 2008), displayed substantial interaction with JUNB and exhibited high gene expression and chromatin accessibility in HIV-1 RNA+ cells (Figure 4C).
 
-## Th17 cells exhibit increased enrichment and susceptibility to HIV-1 infection
+### Th17 cells exhibit increased enrichment and susceptibility to HIV-1 infection
 
 In vivo analysis of the states of cells with the HIV-1 provirus integrated into host genome has been a long-standing challenge in HIV research. To address this issue, we defined cells with two or more scATAC-seq reads that aligned to the HIV-1 genome as HIV-1 DNA+ cells. The sequencing reads predominantly aligned to the 5′- and 3′-long terminal repeat (LTR) regions of the HIV-1 genome (Figure 5A). We observed clustered HIV-1 DNA+ cells in a distinct region, indicating that these cells share a similar epigenetic profile (Figure 5B; Figure 5—figure supplement 1A). DARs were identified in the cluster enriched with HIV-1 DNA+ CD4+ T cells compared to the remaining CD4+ T cells (Figure 5C). The genes closest to the DARs that showed increased accessibility levels in the HIV-1 DNA+ CD4+ T cell cluster compared to the corresponding levels in the uninfected clusters were associated with the inflammatory and defense responses, which was in line with the activation of the innate immune response observed in HIV-1 RNA+ cells (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig5-v1.jpg)
+
+**Figure 5.:** (A) Bar plot presents scATAC-seq reads aligned to the HIV-1 genome, showing coverage for individual genomic windows (log-scaled, max value: 245). (B) UMAP of CD4 T cells based on chromatin accessibility identifies 5535 uninfected cells and 39 HIV-1 DNA+ cells. (C) Heatmap displays chromatin accessibility levels of differential accessibility regions (DARs) enriched in HIV-1 DNA+ CD4 T cell cluster. (D) Bar plot represents gene ontologies associated with genes near DARs of HIV-1 DNA+ CD4 T cell cluster; significance expressed as −log(p-value). (E) DNA sequences for overrepresented transcription factor-binding motifs in HIV-1 DNA+ CD4 T cell cluster compared to the rest of CD4 T cells. (F) Violin plot displays chromVAR motif activity score for enriched motifs. (***p < 0.0001, ****p < 0.00001) (G) Bar plots on the left show normalized ATAC reads for individual genes in HIV-1 DNA+ CD4 T cells and uninfected cells. Bottom shows peak-to-gene links; loop color strength signifies significance of links between peak and gene promoter. The right violin plot displays gene expression levels.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104856/elife-104856-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The ATAC UMAP plot displays the distribution of 5608 CD4 T cells from early infected patients. (B, C) The Feature Plot and violin plot indicate gene expression (RORC, STAT3) in CD4 T cells. (***p < 0.0001). (D) The tracks display the normalized chromatin accessibility levels at the promoter regions of RORC and STAT3 in all clusters of CD4 T cells.
 
 Notably, we identified distinctly enriched TF-binding motifs in HIV-1 DNA+ CD4+ T cells and HIV-1 RNA+ CD4+ T cells. The binding motifs for key regulators of Th17 cell differentiation (RORC, STAT3, and RORA) were enriched in HIV-1 DNA+ CD4+ T cells (Figure 5E, F; Castro et al., 2017). These TFs were also reported to regulate viral gene expression by binding to the HIV-1 LTRs (Wiche Salinas et al., 2021). Overall, HIV-1 DNA+ cells mostly represented the Th17 cell type (Figure 5—figure supplement 1B, C), in contrast to HIV-1 RNA+ CD4+ T cells, which belonged to various subtypes. Additionally, we confirmed significant enrichment of the KLF2 TF-binding motif in HIV-1 DNA+ CD4+ T cells, as found for HIV-1 RNA+ CD4+ T cells. Furthermore, we detected increased gene expression levels and chromatin accessibility of CCR6, IL4I1, NFKB1, and CCR5 (Figure 5G).
 
@@ -88,39 +128,39 @@ In summary, our study unveils disrupted immune mechanisms in distinct HIV-1 RNA+
 
 ## Methods
 
-## Preparation of PBMC samples from early infection of PLWH
+### Preparation of PBMC samples from early infection of PLWH
 
 PBMCs were collected from a total of nine individuals in the early stages of HIV infection (<6 months). Epidemiological and virological characteristics of these participants at baseline, including sex, age, duration from HIV-1 infection, CD4 T cell count, HIV-1 viral load, and HIV-1 p24 antigen/antibody screening (Supplementary file 1A).
 
-## Preparation of scRNA-seq libraries
+### Preparation of scRNA-seq libraries
 
 The libraries were prepared using the Chromium Single Cell 3′ Library & Gel Bead Kit v2 (PN-120237) (10x Genomics) following the manufacturer’s instructions. The single-cell suspension was washed twice with 1x PBS containing 0.04% BSA. Cell number and viability were determined using the Bio-Rad TC20 cell counter. The cells were loaded onto the 10x Genomics Chromium Controller to generate gel beads in emulsions (GEMs). Library preparation was performed according to the 10× Genomics Chromium Single Cell 3′ reagent kit (V2 chemistry) instructions. The quality and concentration of the libraries were assessed using the Agilent Bioanalyzer 2100. Finally, the libraries were sequenced on an Illumina NovaSeq.
 
-## Preparation of scATAC-seq libraries
+### Preparation of scATAC-seq libraries
 
 The libraries were prepared using the Chromium Next GEM Single Cell ATAC Library & Gel Bead Kit (PN-1000175) following the manufacturer’s instructions. After isolating the nuclei from PBMCs, the single-nuclei suspension was mixed with Transposition Mix and incubated for 60 min at 37°C. Subsequently, the transposed nuclei were combined with the master mix and loaded onto the 10x Genomics Chromium Controller to generate gel beads in emulsions (GEMs). Library construction was performed according to the instructions provided with the Chromium Next GEM Single Cell ATAC Reagent Kits (v1.1). The subsequent steps were performed in the same way as described in ‘Preparation of scRNA-seq libraries’.
 
-## Preparation of single-cell multiome libraries
+### Preparation of single-cell multiome libraries
 
 The libraries were prepared using the Chromium Next GEM Single Cell Multiome ATAC + Gene Expression Reagent Kits (PN-1000283) (10x Genomics) following the manufacturer’s instructions. Briefly, nuclei were mixed with Transposition Mix and incubated for 60 min at 37°C. Then these were loaded onto Chromium Next GEM Chip J (10x Genomics) and GEMs were generated according to the manufacturer’s instructions. After post-GEM cleaned up, barcoded transposed DNA and barcoded full-length cDNA fragments were pre-amplified with PCR. ATAC libraries were constructed using the Library Construction Kit (PN-1000190) and full-length pre-amplified cDNA fragments were additionally amplified via PCR. RNA libraries were constructed using the Library Construction Kit B (PN-1000279). Finally, the libraries were sequenced on an Illumina NovaSeq 6000.
 
-## HIV-1 targeted sequencing
+### HIV-1 targeted sequencing
 
 After scRNA-seq, remaining scRNA-seq full-length cDNA libraries were subjected to HIV-1 targeted sequencing using the SQK-LSK-109 Ligation Sequencing Kit (Oxford Nanopore Technologies) and three specific primers for HIV-1 (Supplementary file 1C). The TruSeq Read1 primer was used to preserve the cell barcode information, and the cDNA fragments containing the HIV-1 sequence were amplified by the HIV-1-specific primers. The cDNA fragments with HIV-1 were primarily selected through PCR using biotinylated primers. Subsequently, the HIV-1-specific primers selectively amplified the cDNA fragments through hemi-nested PCR. These selected cDNA fragments were sequenced on a MinION FLO-MIN106 R9.4.1 flow cell (Oxford Nanopore Technologies). Base calling was performed by using Guppy (V6.1.1), and cells with HIV-1 reads were identified using the cell barcode information.
 
-## Sequence alignment to human and HIV-1 genome
+### Sequence alignment to human and HIV-1 genome
 
 The reads from scRNA-seq and scATAC-seq were aligned to GRCh38 human genome (v.3.0.0) using CellRanger count (10x Genomics, v.6.1.2) and CellRanger ARC (v.2.0.0) with default options, respectively. Feature-barcode matrices were used for downstream analysis. To identify the sequencing reads containing the HIV-1 sequence, the reads from scRNA-seq were aligned to the HIV-1 genome using the STARsolo (v. 2.7.1a). We adjusted the mapping percentage parameter from 50% to 25% to map the short length of HIV-1 sequence included in the sequencing reads.
 
-## scRNA-seq data processing
+### scRNA-seq data processing
 
 For the scRNA-seq datasets, Seurat R package (v.3.2.1) was used for processing the raw count matrices (UMI counts per gene per cell) Stuart et al., 2019. Prior to feature filtering, DoubletFinder was used to identify and remove putative doublets (McGinnis et al., 2019). As in previous studies, standard quality control and preprocessing steps were performed for downstream analysis (Kim et al., 2024a; Kim et al., 2024b). Cells with fewer than 200 features and greater than 30% mitochondrial gene expression were excluded, and cells expressing fewer than three genes were eliminated. To ensure consistency in quality control and analysis, published scRNA-seq datasets were processed using the same Seurat-based pipeline as described above. Subsequently, the dataset was normalized, highly variable genes were selected, and scaling was performed in Seurat. Batch effects were removed using the ‘RunFastMNN’ function, and principal component analysis was performed after integrating the datasets. Cells were clustered based on the computed nearest neighbor map using the ‘FindNeighbors’ function. The clustered cells were visualized on UMAP embeddings. Differentially expressed genes in each cluster were identified using the ‘FindAllMarkers’ function, and the clusters were annotated using the known cell markers. Clusters were merged if the number of differentially expressed genes was less than 10.
 
-## scATAC-seq data processing
+### scATAC-seq data processing
 
 For the scATAC-seq datasets, Signac R package (v.1.5.0) was used to process the data (Stuart et al., 2021). To ensure common features across the datasets, combined peaks were generated. The transcription start site (TSS) enrichment score and nucleosome signal score were calculated for each cell using the ‘TSSEnrichment’ and ‘NucleosomeSignal’ functions in Signac. Cells were retained with a TSS enrichment score >1 and a nucleosome signal <2 and further filtered the cells containing <1000 or >100,000 ATAC fragments. MACS2 was utilized to identify peaks using each fragment file of datasets (Zhang et al., 2008). The datasets were merged, and batch effects were removed using Harmony (Korsunsky et al., 2019). The merged dataset was subjected to dimensional reduction with LSI using the ‘RunTFIDF’, ‘FindTopFeatures’, and ‘RunSVD’ functions. The LSI components were used for UMAP projection. The cell type of each cluster was annotated using differentially accessible peaks. To identify significant peaks for each cluster, the ‘FindAllMarks()’ function was employed with the following parameters: min.pct=0.1, test.use = ‘LR’, only.pos=TRUE. The ‘ClosestFeature()’ function was then used to find the closest genes to each peak within each cluster. Cell clusters were annotated using known cell markers. Subsequently, the scRNA-seq dataset and scATAC dataset from the 10x multiome dataset were integrated using identical cell barcodes to ensure the scATAC-seq clusters’ cell type annotation, leveraging the previously annotated scRNA-seq cell types.
 
-## Gene ontology enrichment analysis and GSEA
+### Gene ontology enrichment analysis and GSEA
 
 To identify enriched biological pathways in HIV-1 RNA+ CD4 T cells, DEGs for each cell type were identified using ‘FindMarkers’ function in Seurat (v.3.2.1). We compared the normalized gene expression data of HIV-1 RNA+ CD4 T cells with uninfected CD4 T cells. All genes that passed quality control were included in the DEG analysis without additional filtering.
 
@@ -128,18 +168,18 @@ For gene ontology enrichment analysis, DEGs were filtered based on |logFC| >0.25
 
 For GSEA, the raw count matrix was used, and no additional filtering was applied. GSEA was performed to identify the statistically significant gene sets in the HIV-1 RNA+ cell group within different CD4 T cell subtypes. Hallmark gene sets from Molecular Signatures Database (MSigDB) were used, and only gene sets containing 10–500 genes were selected.
 
-## Gene regulatory network analysis
+### Gene regulatory network analysis
 
 To construct a gene regulatory network and predict TF activities from a gene expression dataset, SCENIC (R package, https://github.com/aertslab/SCENIC; RRID:SCR_017247) was utilized as a computational method (Aibar et al., 2017). Co-expression modules between TFs and target genes were identified using GENIE3. The cisTarget Human motif database was utilized for scoring the regulons. Subsequently, the AUCell method was employed to score single cells and identify enrichment of regulons in the infection group.
 
-## Cell–cell interaction analysis
+### Cell–cell interaction analysis
 
 CellphoneDB was utilized to analyze cell–cell communication between CD4 T cell subtypes and CD8 T cell subtypes (Efremova et al., 2020). Interaction pairs with a positive mean expression level in the HIV-1 RNA+ group were selected to explore associations among cell types. The interaction strength was visualized using the ‘plot_cpdb’ function in the ktplots R package, represented as a dot plot. To identify dysregulated ligand–receptor signaling, we additionally applied CellChat (v2.1.1) (Jin et al., 2025). Differential expression analysis was performed between HIV-1 RNA+ and uninfected CD4+ T cells using the ‘identifyOverExpressedGenes’ function. Upregulated and downregulated interactions were determined based on fold-change values.
 
-## TF-binding motif enrichment and footprinting analysis
+### TF-binding motif enrichment and footprinting analysis
 
 The cells were categorized into three groups: HIV-1 RNA+ cell group, HIV-1 DNA+ cell group, and uninfected cell group. DARs among the groups were identified using the ‘FindMarkers’ function. DARs with a p-value less than 0.01 between the cell groups were filtered. DARs with a positive log2 fold-change value were selected for further analysis to identify enriched motifs. Enriched motifs were identified using the motifmatchr (R package, https://bioconductor.org/packages/motifmatchr; RRID:SCR_026739), which involved testing for overrepresentation of each DNA sequence motif in the DARs using a hypergeometric test. The computation of GC contents and matching of background sets of peaks for GC content, sequence length, and counts were performed using the 'FindMotifs' function in Signac. The per-cell motif activity score was calculated by chromVAR for each motif across the infection conditions (Schep et al., 2017). For the identification of a strong enrichment of Tn5 integration events adjacent to the enriched motifs, TF footprinting analysis was conducted using the ‘Footprint’ function in Signac.
 
-## Statistical analysis
+### Statistical analysis
 
 The subsection above provides a description of statistical analyses for single-cell transcriptomic and epigenetic studies. All descriptive statistical analyses were conducted in R 3.6.0 and higher. Benjamini–Hochberg correction was used for significance.

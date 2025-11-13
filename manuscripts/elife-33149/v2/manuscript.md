@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.33149.001 Piezo1 is a mechanosensitive (MS) ion channel with characteristic fast-inactivation kinetics. We found a slowly-inactivating MS current in mouse embryonic stem (mES) cells and characterized it throughout their differentiation into motor-neurons to investigate its components. MS currents were large and slowly-inactivating in the stem-cell stage, and became smaller and faster-inactivating throughout the differentiation. We found that Piezo1 is expressed in mES cells, and its knockout abolishes MS currents, indicating that the slowly-inactivating current in mES cells is carried by Piezo1. To further investigate its slow inactivation in these cells, we cloned Piezo1 cDNA from mES cells and found that it displays fast-inactivation kinetics in heterologous expression, indicating that sources of modulation other than the aminoacid sequence determine its slow kinetics in mES cells. Finally, we report that Piezo1 knockout ES cells showed a reduced rate of proliferation but no significant differences in other markers of pluripotency and differentiation.
+Piezo1 is a mechanosensitive (MS) ion channel with characteristic fast-inactivation kinetics. We found a slowly-inactivating MS current in mouse embryonic stem (mES) cells and characterized it throughout their differentiation into motor-neurons to investigate its components. MS currents were large and slowly-inactivating in the stem-cell stage, and became smaller and faster-inactivating throughout the differentiation. We found that Piezo1 is expressed in mES cells, and its knockout abolishes MS currents, indicating that the slowly-inactivating current in mES cells is carried by Piezo1. To further investigate its slow inactivation in these cells, we cloned Piezo1 cDNA from mES cells and found that it displays fast-inactivation kinetics in heterologous expression, indicating that sources of modulation other than the aminoacid sequence determine its slow kinetics in mES cells. Finally, we report that Piezo1 knockout ES cells showed a reduced rate of proliferation but no significant differences in other markers of pluripotency and differentiation.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ We describe in this manuscript a large mechanosensitive, slowly-inactivating cur
 
 ## Results
 
-## Mouse embryonic stem cells exhibit a slowly-inactivating mechanosensitive current
+### Mouse embryonic stem cells exhibit a slowly-inactivating mechanosensitive current
 
 We screened multiple cell lines searching for slow inactivating mechanosensitive (MS) currents using the ‘poking’ assay (Coste et al., 2010). In this assay individual cells can be mechanically stimulated with a round-end probe controlled by a piezo-actuator, while a second probe located at a distant part of the cell performs patch-clamp recordings. Mouse embryonic stem cells (mES cells) exhibited robust, slow inactivating MS currents (Figure 1A). Currents ranged from 0 to over 2100 pA over baseline, with an average value of 465 ± 112 pA (n = 30). MS currents could not be reliably fit to mono- or bi- exponential functions due to the large variability of the initial decay step. In order to quantify the inactivation behavior we used as a metric the slow inactivating component (slow fraction), defined as the relative fraction of peak current at the beginning of the stimulus that still remained 75 ms into the poking step. For a canonical fast-inactivating channel such as Piezo1 the slow fraction is typically less than 0.2. In mES cells the slow fraction of MS current had an average value 0.67 ± 0.04 (n = 30) and in some cells it approached 1.0.
 
@@ -44,7 +44,7 @@ A detailed study of the MS currents in mES cells revealed that they are selectiv
 
 **Figure 2.:** (A) A membrane patch is clamped at −80 mV and channel activity is evoked by pressure steps; the opening of 3 channels can be seen. (B) The amplitude histogram of the recording shown in (A) shows the distribution of all observed states (closed, open1, open2, open3). (C) Single channel conductance estimation from amplitude histograms of multiple recordings at different voltages gives a value of 24.7 ± 2.5 pS. (D) The ensemble of multiple pressure-evoked single channel recordings at −80 mV gives an apparent macroscopic current whose kinetics resembles that of the whole-cell poking currents (whole-cell poking current is shown in an inset for comparison).
 
-## MS current in mES cells depends on the differentiation state of the cell
+### MS current in mES cells depends on the differentiation state of the cell
 
 To study the evolution of the MS current after exiting the stem cell state we differentiated mES cells into motor neurons (Wichterle and Peljto, 2008). To initiate the differentiation, growth factors are removed from the media to which mouse embryonic stem cells are exposed, which terminates their pluripotent stage and sends them to a state of responsiveness to patterning signals. Retinoic acid (RA) is then applied, which induces differentiation into spinal nerve cells. Further addition of Smoothened agonist (SAG) at day three controls ventralization of nascent spinal neurons. Finally, addition of glial cell derived neurotrophic factor (GDNF) turns on a host of motor neuron-specific genes. To monitor the differentiation we used Hb9-GFP stem cells, in which the motor neuron specific promoter Hb9 drives GFP expression (Wichterle et al., 2002). We achieved approximately 30% efficiency as assessed by GFP expression and morphological and functional characterization. Three independent differentiations were performed, the same studies and measurements were carried out each time, and data from all three were combined.
 
@@ -60,7 +60,7 @@ MS currents followed a different course of development compared to voltage-depen
 
 **Figure 4.:** (A) The evolution of the peak- and slow- currents throughout the differentiations (three independent differentiations were performed, and data were pooled). Peak-current is the maximum mechanosensitive current achieved by the stimulation. Slow-current is the mechanosensitive current measured 75 ms after the beginning of the stimulation. (B) The evolution of the slow fraction, defined as the ratio between slow and peak current, throughout the differentiation. The mechanosensitive current becomes smaller and faster as the differentiation progresses. Below each dataset is the total number of cells assessed at each stage.
 
-## Piezo1 forms the slowly inactivating current of mES cells
+### Piezo1 forms the slowly inactivating current of mES cells
 
 To study the components of this current we performed expression analysis throughout the differentiation. We found that the expression of Piezo1 correlates with the observed MS current (Figure 5A,B). More specifically, expression of the Piezo1 gene follows the same course as the fast component of the MS current in mES cells. We then used Crispr/Cas9 technology to knock out the Piezo1 gene from mES cells and identify its contribution to the MS current. To minimize the chance of confounding factors from off-target effects, we obtained two independent clones using two different sgRNA sequences to guide Cas9 nuclease (Figure 5C). We obtained two separate colonies of mES cells in which the Piezo1 gene was knocked out by generating a frameshift mutation, which introduced an early stop codon. Study of the mechanosensitive behavior of these cells revealed that the entirety of the MS current is absent in knockout cells, rendering Piezo1 the likely pore-forming subunit of the MS channel in mES cells (Figure 5D).
 
@@ -68,7 +68,7 @@ To study the components of this current we performed expression analysis through
 
 **Figure 5.:** (A) Peak- and slow- mechanosensitive currents throughout the differentiation are plotted together with the difference between them, which we called ‘fast component’. (B) Piezo1 expression throughout the differentiation as assessed by transcriptome analysis. The expression of Piezo1 throughout the differentiation strikingly resembles the evolution of the fast component of the mechanosensitive current. FPKM: fraction per kilobase per million reads. (C) Schematic of the Crispr design. The diagram shows the beginning of the Piezo1 mRNA in mES cells. The first three exons are shown, along with the coding sequence (CDS) and the first predicted transmembrane (TM) region. Two guide RNA sequences (sgRNAs) were chosen to generate a double strand break in the beginning of the first TM region. Below the diagram, a sequence reaction of a fragment of DNA extracted from one of the modified colonies is shown. In yellow is marked the targeted sgRNA sequence, and boxed in black is marked the region with a two base-pair deletion that generates a frame-shift mutation, and an early stop codon shortly after. Only one sequence for each colony was obtained after sequencing with no background, indicating a homozygous mutation. (D) Both Piezo1 knock-out colonies of mouse embryonic stem cells showed no mechanosensitive activity.
 
-## Heterologous expression of Piezo1 cDNA from mouse embryonic stem cells yields a fast inactivating MS current
+### Heterologous expression of Piezo1 cDNA from mouse embryonic stem cells yields a fast inactivating MS current
 
 Recent work reported that point mutations of the human PIEZO1 gene give rise to a version of the protein with slowed inactivation kinetics (Albuisson et al., 2013; Bae et al., 2013). To investigate whether the conspicuous kinetics of Piezo1 in mES cells is due to an intrinsic feature of the Piezo1 gene in these cells, we studied the sequence of Piezo1 cDNA from mES cells and compared it to the reference sequence for Piezo1 obtained by the Patapoutian lab from N2A cells (Coste et al., 2010). The cDNA recovered from mES cells encodes a protein that contains three amino acid substitutions compared to the original sequence cloned from N2A cells: G147R, I229V, and V1572M. To analyze whether these mutations generate an intrinsically slower channel, we expressed the construct in HEK 293 cells in which we knocked-out of the endogenous Piezo1 gene to achieve a cell line with a clean background and compared its inactivation kinetics to the canonical Piezo1 cloned by the Patapoutian lab. Both constructs yielded currents with similar, fast inactivation kinetics (Figure 6A,B), excluding the point substitutions as accounting for the altered kinetics of Piezo1 in mES cells.
 
@@ -76,13 +76,303 @@ Recent work reported that point mutations of the human PIEZO1 gene give rise to 
 
 **Figure 6.:** (A) Mechanosensitive currents elicited by expression of Piezo1 cDNA from N2A cells in HEK293 cells. (B) Mechanosensitive currents elicited by expression of Piezo1 cDNA from mouse embryonic stem cells in HEK293. Both cDNAs differ in three aminoacids. (C) Slow fraction of mechanosensitive currents in HEK293 cells expressing either Piezo1 cDNA from N2A cells (left) or from mES cells (right). Expression of both cDNAs in HEK293 cells shows no significant difference in the kinetics, p=0.1899.
 
-## Piezo1 knockout does not affect pluripotency, early differentiation, or substrate stiffness-response, but decreases proliferation
+### Piezo1 knockout does not affect pluripotency, early differentiation, or substrate stiffness-response, but decreases proliferation
 
 We next sought to determine the developmental role of Piezo1 by comparing Piezo1 knockout to wild type lines across a series of in vitro pluripotency and early-differentiation phenotypes. During ‘naïve’ inner cell mass pluripotency (mESC) there was no significant difference in the organization of mESC colonies, expression of pluripotency transcription factors (SOX2), typical cell-to-cell or cell-to-substrate adhesions (E-Cadherin, F-Actin), or size of colonies (Figure 7A, Table 1). Overall proliferation rates however, were significantly lower in KO compared to WT genotypes, suggesting Piezo1 supports normal proliferation at this stage (Figure 7B). There was no significant difference in the percentage of cells in M-phase (PH-H3), and negligible evidence for cell death in either genotype (activated caspase three or pyknotic nuclei < 0.1%) (Figure 1C, Table 1), we therefore concluded the decreased proliferation was likely due to lengthening of cell cycle interphase.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/33149/elife-33149-fig7-v2.jpg)
 
 **Figure 7.:** (A) Immunostaining and confocal imaging of Piezo1 knockout (PZ1KO) pluripotent stem cells (bottom row) at naïve (ESC), primed (EpiSC), or gastrulation-model (Gastr) stages shows no differences in expression of pluripotency master regulator SOX2 (pink), typical pattern of cell to substrate (focal adhesions, at lower z, not shown) and intercellular adhesion by F-Actin (Phalloidin, green) and E-Cadherin (red), or general colony morphology. 1.6 μm Z section or oblique virtual section of representative colonies of WT and Piezo1 knockout (n = 2,3) ESC clones. 20x z stacks, scale bar 80 μm. (B) Growth curve of WT mESC stage cells showed PZ1KO lines were significantly slower (exponential curve fit). Mean number of cells per well per genotype ± sd (n = 2 WT, 3 KO lines per genotype) normalized to mean per genotype at day1. Exponential fit constant significantly different Students T-test p<0.05. (C) No significant difference in mitotic fraction or cell death. Immunostaining and epifluorescent imaging of WT (top) and PZ1KO for DAPI, M-phase cells (PH3), and dying cells (Caspase 3, pyknotic nuclei) showed no significant difference between genotypes in mitotic fraction (PH3 +nuclei) mean/genotype ± sd%, WT, n = 2, PZ1KO, n = 3 lines. Neither the cell death marker activated caspase3 or pyknotic nuclei were detectable in either genotype, confirming equivalently negligible levels of cell death. Scale bar is 80μm. (D) Epifluorescent imaging of transcription factor markers of pluripotency (SOX2, Figure 1A) and ectoderm (SOX2, Figure 1A) and Mesoderm (Brachyury) germ layer identities at naïve (mESC), primed (EpiSC) and gastrulation stage differentiation (Gastr, shown). Same scale bar as in C. (E) Quantitative cell scoring showed no significant difference between WT (n = 2) and PZ1KO (n = 3) clones, mean% of cells/line+/sd at each stage. Brachyury not tested at mESC stage since no differentiation was present. Decreased SOX2 percentage at Gastr stage indicated restriction of SOX2 expression to ectodermal lineage during gastrulation and was not different between genotypes. T-test p<0.05. (F) EpiSC stage cultures grown on standard tissue culture plastic substrate (100,000 k Pa) showed a small subpopulation of spontaneously differentiating cells (CDX2+, trophectoderm, embryonic endoderm, or paraxial mesoderm) whereas culture on a less stiff substrate (28 kPa PDMS) showed no spontaneous CDX2 differentiation. PZ1KO lines showed the same differential differentiation inhibiting response to substrate stiffness.
+
+**Table 1.**
+ Quantitative comparison of pluripotency and differentiation phenotypes.Proliferation was measured by seeding 4 96well plate wells, imaging whole wells at day 0, 1, 3, and 6, and scoring images for total cells (DAPI+) and subtracting the number of Sytox orange+ (dead) cells = total live cells. Total growth: table shows mean cells/line/genotype/day and standard deviation; n = 2 and n = 3 lines per WT or KO genotype respectively. Total cells is the sum of cells in four replicate wells/line. Normalized growth: Each line was normalized to its own day 0 value. Curve Fit Parameters: each line was fit with an exponential growth curve and the mean growth constants were computed and found not significantly different. Colony Size: whole colonies were segmented using MultiWavelength Cell Scoring adjusting the size and intensity thresholds so that entire colonies were segmented by DAPI signal, rather than individual cells. Mean values for n colonies counted for each line at day 0 and day six are shown, unit is μm2. No significant differences were found between genotype at either day. Proliferation: Three randomly chosen 10x fields (mean 1473 cells/field) per line were scored for total DAPI +cells and cells positive for phosphohistone H3 (PH3) in Metamorph. No significant difference between genotypes was observed. No cells were positive for activated caspase-3 or showed pyknotic nuclei, indicating negligible levels of cell death across genotypes. All statistics Student’s t-test, 1 tail, 2 sample unequal variance.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="4">Total growth</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT (n = 2)</td>
+      <td>SD</td>
+      <td>KO (n = 3)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Day 0</td>
+      <td>402.50</td>
+      <td>127.01</td>
+      <td>721.42</td>
+      <td>115.63</td>
+    </tr>
+    <tr>
+      <td>Day 1</td>
+      <td>342.75</td>
+      <td>61.23</td>
+      <td>849.33</td>
+      <td>64.51</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>2289.50</td>
+      <td>334.41</td>
+      <td>2043.17</td>
+      <td>346.46</td>
+    </tr>
+    <tr>
+      <td>Day 6</td>
+      <td>7919.38</td>
+      <td>1728.79</td>
+      <td>5234.17</td>
+      <td>1350.08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Normalized growth</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WT (n = 2)</td>
+      <td>SD</td>
+      <td>KO (n = 3)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Day 0</td>
+      <td>1.000</td>
+      <td>0.356</td>
+      <td>1.000</td>
+      <td>0.133</td>
+    </tr>
+    <tr>
+      <td>Day 1</td>
+      <td>0.864</td>
+      <td>0.206</td>
+      <td>1.388</td>
+      <td>0.077</td>
+    </tr>
+    <tr>
+      <td>Day 3</td>
+      <td>5.689</td>
+      <td>1.076</td>
+      <td>3.518</td>
+      <td>0.427</td>
+    </tr>
+    <tr>
+      <td>Day 6</td>
+      <td>19.802</td>
+      <td>5.096</td>
+      <td>8.124</td>
+      <td>1.708</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">Curve Fit Parameters</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td></td>
+      <td>Growth Constant</td>
+      <td>Goodness of Fit</td>
+    </tr>
+    <tr>
+      <td>HB9 (wt)</td>
+      <td>0.443</td>
+      <td>0.985</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WT13</td>
+      <td>0.489</td>
+      <td>0.996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KO5</td>
+      <td>0.377</td>
+      <td>0.993</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KO6</td>
+      <td>0.287</td>
+      <td>0.994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KO8</td>
+      <td>0.316</td>
+      <td>0.971</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean Growth Constant</td>
+      <td>SD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>0.326</td>
+      <td>0.033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KO</td>
+      <td>0.466</td>
+      <td>0.046</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p-value</td>
+      <td>0.316</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Colony size</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Day 0</td>
+      <td></td>
+      <td>Day 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td>Mean</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>HB9 (wt) (day 0, 6: n = 122, 30)</td>
+      <td>45666.2</td>
+      <td>81641.1</td>
+      <td>133231.9</td>
+      <td>66024.3</td>
+    </tr>
+    <tr>
+      <td>WT13 (day 0, 6: n = 74, 28)</td>
+      <td>78107.7</td>
+      <td>94966.6</td>
+      <td>156237.9</td>
+      <td>90772.1</td>
+    </tr>
+    <tr>
+      <td>KO5 (day 0, 6: n = 128, 24)</td>
+      <td>40269.1</td>
+      <td>74822.2</td>
+      <td>129713.2</td>
+      <td>81019.6</td>
+    </tr>
+    <tr>
+      <td>KO6 (day 0, 6: n = 69, 17)</td>
+      <td>101383.7</td>
+      <td>120527.3</td>
+      <td>95029.8</td>
+      <td>42050.6</td>
+    </tr>
+    <tr>
+      <td>KO8 (day 0, 6: n = 71, 19)</td>
+      <td>84821.1</td>
+      <td>108565.5</td>
+      <td>145450.6</td>
+      <td>107648.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Day 0</td>
+      <td colspan="2">Day 6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td>Mean</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>61886.9</td>
+      <td>22939.7</td>
+      <td>144734.9</td>
+      <td>16267.7</td>
+    </tr>
+    <tr>
+      <td>KO</td>
+      <td>75491.3</td>
+      <td>31607.4</td>
+      <td>123397.8</td>
+      <td>25796.9</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.618</td>
+      <td></td>
+      <td>0.170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Proliferation</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>% PH3+ of total DAPI</td>
+      <td></td>
+      <td>mean% PH3+</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>HB9 (wt)</td>
+      <td>3.487</td>
+      <td>WT</td>
+      <td>3.224</td>
+      <td>0.372</td>
+    </tr>
+    <tr>
+      <td>WT13</td>
+      <td>2.961</td>
+      <td>PZ1KO</td>
+      <td>3.424</td>
+      <td>0.218</td>
+    </tr>
+    <tr>
+      <td>KO5</td>
+      <td>3.331</td>
+      <td></td>
+      <td>T-test p value</td>
+      <td>0.292</td>
+    </tr>
+    <tr>
+      <td>KO6</td>
+      <td>3.268</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KO8</td>
+      <td>3.673</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We next tested several stages of early differentiation. When ‘naïve’ mESC cultures were converted to the next developmental stage, ‘primed,’ epiblast-like stem cells (EpiSC), no change in marker expression or colony organization was observed between genotypes (Figure 7A,D). Gastrulation was triggered by presentation of the in vivo cue BMP4, and differentiation to multiple germ lineages (SOX2, ectoderm; Brachyury, mesoderm) was not significantly different between genotypes (Figure 7A,D,E, Table 1). Finally, we asked if Piezo1 affected mESC response to substrate stiffness. Wild type mESC showed a lower rate of spontaneous differentiation under pluripotency conditions when cultured on a soft (28 kPa, PDMS) substrate compared to standard tissue culture plastic (100,000 kPa) following previous reports (Chowdhury et al., 2010). Piezo1 knockout clones showed the same relationship, indicating no effect of Piezo1 in mediating this response to substrate stiffness (Figure 7F). We conclude that while Piezo1 is expressed during pluripotency and mediates normal proliferation rate, it does not grossly affect the pluripotency per se, early germ layer differentiation, or response to substrate stiffness.
 
@@ -100,7 +390,7 @@ Overall Piezo1 KO ES cell lines showed minimal changes in pluripotency or differ
 
 ## Materials and methods
 
-## Cells
+### Cells
 
 HEK293 tsA201 cells were obtained from Sigma and maintained in DMEM (Gibco) supplemented with 10% Fetal Bovine Serum (Gibco) and 1% L- Glutamine (Gibco). Mouse embryonic stem cells (Hb9-GFP) were obtained from the Wichterle lab (Wichterle et al., 2002). This cell line contains a GFP transgene driven by the Hb9 promoter, a motor neuron specific promoter. Cells were kept in serum-free 2i + LIF media (Ying et al., 2008) and passaged every 2–3 days.
 
@@ -108,7 +398,7 @@ For electrophysiological recordings of mouse embryonic stem cells, cells were pl
 
 For differentiating mouse embryonic stem cells into motor neurons we followed protocols by the Wichterle lab (Wichterle et al., 2002), but replacing Sonic Hedgehog by SAG (smoothened agonist). Appearance around Day 5 of GFP-positive neurons signals a successful specification of motor neurons. The differentiation was performed three independent times and the electrophysiological results of all three differentiations were pooled together.
 
-## Electrophysiology
+### Electrophysiology
 
 All poking experiments were performed using a probe drawn from borosilicate glass (Sutter Instruments) fire polished (MF-83, Narishige Co.) until sealed. The probe was mounted to piezo-driven actuator driven by a controller/amplifier (P- 601/E-625; Physik Instrumente) controlled through Clampex software. After formation of a whole-cell seal by a different electrode, the probe was positioned at 60° to the cell ∼2 µm away from the membrane.
 
@@ -120,7 +410,7 @@ For single channel studies the following solutions were used (mM): Pipette: 150K
 
 For ion selectivity studies the following solutions were used (mM): Intracellular; 150KCl, 10Hepes, 10EGTA (pH 7.3 with KOH, 310 mOsm/kg). Extracellular NaCl; 150NaCl, 10Hepes, 10Glucose (pH 7.3 with NaOH, 310 mOsm/kg). Extracellular NaGluconate; 152NaGluconate, 10Hepes, 10Glucose (pH 7.3 with NaOH, 310 mOsm/kg). Extracellular NMDG-Cl; 152NMDG-Cl, 10Hepes, 10Glucose (pH 7.3 with KOH, 310 mOsm/kg). Extracellular CaCl2; 90CaCl2, 7.5Hepes, 7.5Glucose (pH 7.4 with NaOH, 310 mOsm/kg).
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 Total RNA was extracted at days 0 (mouse embryonic stem cells), 2, 3, 4, 5, and 7 (motor neurons) of each differentiation using a Trizol/RNeasy hybrid protocol. Briefly, cells are homogeneized using a recommended volume of Trizol (Invitrogen), chloroform is added in the recommended volume and the mix is shaken vigorously. After centrifugation to allow phase separation, the aqueous phase is kept and mixed with 70% ethanol 1:1. The protocol follows using an RNeasy column (QIAGEN) and following the manufacture’s instructions. For days 5 and 7 a step was added previous RNA extraction: cells were sorted using a BDFACSAria Cell Sorter (BD) to isolate only the GFP-positive fraction, therefore enriching the sample in motor neurons. GFP-positive cells were sorted into Trizol LS (Invitrogen) and extraction of RNA proceeded as before.
 
@@ -128,14 +418,14 @@ High throughput RNA sequencing was done in triplicates except for days 5 and 7, 
 
 High-throughput data is publicly available at the GEO database, for public access (accession number GSE106526).
 
-## Crispr-CAS9 knockout of Piezo1
+### Crispr-CAS9 knockout of Piezo1
 
 px459 (Addgene) was used to express Cas9 and guide RNA sequence along with a Puromycin resistance cassette according to published procedures (Ran et al., 2013). Two guide RNA sequences were cloned separately to obtain two independent knock-out colonies. Sequences were ACGCTTCAATGCTCTCTCGC and AGAGAGCATTGAAGCGTAAC, both located in the beginning of the second exon of the mouse Piezo1 gene. hB9-GFP mES cells were then transfected with the px459 vector using Lipofectamine 2000 (Invitrogen) and selected with 1 µg/ml Puromycin for 2 day. After 1 day of recovery in Puromycin-free medium, transfected cells were dissociated and sparsely re-plated into 10 cm dishes. Single colonies were isolated after 7 days, expanded, and DNA was extracted using QuickExtract DNA Extraction solution (Epicentre). A 500 bp region containing the Cas9 target was amplified by PCR using the following primers: CGTGTGCATCCACGTATGA and AGGTGTGCACTGAAGGAACC. Obtained fragment was then sequenced. Sequencing results showed that some colonies contained a mix of 2 sequences, indicating differential mutations in both alleles of the Piezo1 gene. However, four colonies showed a clear single sequence, indicating a homozygous mutation near the PAM sequence. Two of those colonies were selected for electrophysiological studies. A third colony was added to the studies for figure 7.
 
-## Cloning of Piezo1 cDNA from mouse embryonic stem cells
+### Cloning of Piezo1 cDNA from mouse embryonic stem cells
 
 Total RNA was extracted from mES cells using RNeasy kit (QIAGEN) and cDNA was made using Quantitect Reverse Kit (QIAGEN). The following primers were used in various combinations to obtain PCR fragments that cover the entire coding region of the mouse Piezo1 gene: TGCACTACTTCCACAGACCG, CAGGAAGATGAGCTTGGCGT, CTACTCCCTCTCACGTGTCCA, TCTACTGGCTGTTGCTGCC, CCAGCAACACAATGACCAGC, ATGGAGCCGCACGTGCTG, GATGCTGCCCCAGCCGTGGG, GGCCTGCCTCATCTGGACGG, AGCAGTTGGGCGACCTGGGC, TGCCCGCCCAGGCTGTGTGC, AGCCCAGCTCGTGCTGTGGG, CACGGTAGACGGGCTGACGC, CGGCGCTATGAGAACAAGCC, CGACCGTGCCCTCTACCTGC, GGAGTATACTAATGAGAAGC, AGG GACGCTGTGTCCCTACC, TACTGGATCTATGTGTGCGC, CATACCAGGTCACACAGGTC, TCCTCCTGATGCTCAAGCAGAGG, CTAGGTCCAGCAGCCGGTCAG, CTCACTCCATCATGTTCGAGG. PCRs were done using Phusion HF (NEB) or Pfu Ultra II (Agilent). For some difficult reactions 5% DMSO was added to the PCR reaction. The Piezo1 construct from N2A cells was obtained from the Patapoutian lab. For whole cell poking of both constructs transfected into HEK293 cells the following solutions were used (mM): 150KCl, 10Hepes, 10EGTA (pH 7.3 with NaOH, 310 mOsm/kg; intracellular) and 150NaCl, 3KCl, 2CaCl2, 2MgCl2, 10Hepes, 10Glucose (pH 7.3 with NaOH, 310 mOsm/kg; extracellular).
 
-## ESC phenotyping and data analysis
+### ESC phenotyping and data analysis
 
 ESC proliferation was measured by seeding in 250 ESC per well in 96 well plates coated with 5 ug/ml laminin5,2,1 (biolamina). Wells were stained with markers for all nuclei (Hoechst, NucBlue, Thermo) and dead cells (SytoxOrange, Thermo) and whole wells were imaged and quantified for live cells on days 0, 1, 3 and 6 using ImageExpress and Metamorph. ‘Naïve’ (Inner cell mass-like) ESC were maintained in ‘2i + LIF medium’ and transitioned to ‘primed’ (epiblast-like stem cells) EpiSC by incubation for 48 hr with mouse embryonic fibroblast conditioned medium with 20% ES cell grade FCS (CM) containing activin (from feeders) and added bFGF (20 ng/ml, Thermo) without LIF or 2i used for naïve culture, and germ layer differentiation was triggered by adding 50 ng/ml human recombinant BMP4 (R & D) to CM and incubating for 48 hr. Cultures for staining were seeded as above on Ibidi uclear eight well slides, or 28 kPa PDMs dishes (Ibidi), fixed with 4%PFA, permeabilized with 0.1%Triton, stained with the following primary antibodies (goat SOX2 1:500, #AF2018-SP, R and D Systems; rabbit E-Cadherin 1:200, #3195S, Cell Signaling Technologies; mouse N-Cadherin 1:100, #350802, BioLegend; rabbit SOX2 1:200, #3579S, Cell Signaling Technologies; goat Brachyury, 1:300, AF2085, R and D Systems; mouse CDX2 1:200, CDX2-88, BioGenex; phalloidin-647 1:50, A22287, Life; rabbit phospho-histone (S28) H3 1:500, #4178, Abcam; rabbit cleaved Caspase3 1:400, #9664S, Cell Signaling Technologies) and secondary antibodies (Donkey anti-mouse/rabbit/goat Alexa 488 555 647, Invitrogen) and DAPI (Life), imaged on a Leica SP8 inverted confocal with gallium arsenide detectors at 12 bits, 1024 × 1024 pixels using an HCX PL APO CS 20x/0.75NA air objective at 1 Airy unit pinhole and Nyquist spacings. Raw image data was analyzed quantitatively by unbiased automated image analysis, Metamorph MultiWavelength Cell Scoring module, and qualitatively by 3D blind deconvolution (Autoquant) 10 iterations and 3D-rendering (Imaris, Bitplane), contrast and gain were adjusted to maximize visual legibility, but kept constant across all fields and lines from the same stain.

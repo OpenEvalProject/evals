@@ -20,17 +20,17 @@
 
 ## Abstract
 
-10.7554/eLife.26801.001 Emerging evidence suggests that dopamine may modulate learning and memory with important implications for understanding the neurobiology of memory and future therapeutic targeting. An influential hypothesis posits that dopamine biases reinforcement learning. More recent data also suggest an influence during both consolidation and retrieval. Eighteen Parkinson’s disease patients learned through feedback ON or OFF medication, with memory tested 24 hr later ON or OFF medication (4 conditions, within-subjects design with matched healthy control group). Patients OFF medication during learning decreased in memory accuracy over the following 24 hr. In contrast to previous studies, however, dopaminergic medication during learning and testing did not affect expression of positive or negative reinforcement. Two further experiments were run without the 24 hr delay, but they too failed to reproduce effects of dopaminergic medication on reinforcement learning. While supportive of a dopaminergic role in consolidation, this study failed to replicate previous findings on reinforcement learning. DOI: http://dx.doi.org/10.7554/eLife.26801.001
+Emerging evidence suggests that dopamine may modulate learning and memory with important implications for understanding the neurobiology of memory and future therapeutic targeting. An influential hypothesis posits that dopamine biases reinforcement learning. More recent data also suggest an influence during both consolidation and retrieval. Eighteen Parkinson’s disease patients learned through feedback ON or OFF medication, with memory tested 24 hr later ON or OFF medication (4 conditions, within-subjects design with matched healthy control group). Patients OFF medication during learning decreased in memory accuracy over the following 24 hr. In contrast to previous studies, however, dopaminergic medication during learning and testing did not affect expression of positive or negative reinforcement. Two further experiments were run without the 24 hr delay, but they too failed to reproduce effects of dopaminergic medication on reinforcement learning. While supportive of a dopaminergic role in consolidation, this study failed to replicate previous findings on reinforcement learning.
 
 ## Introduction
 
 Phasic changes in dopamine level are believed to encode the reward prediction error (RPE), which measures the difference between the reward expected after an action, and the reward actually received (Schultz et al., 1993, Schultz et al., 1997). In turn the RPE guides reinforcement learning (RL) such that behaviour is adapted to changing surroundings. Several studies have taken advantage of the dopaminergic depletion in Parkinson’s disease (PD) in the substantia nigra pars compacta and ventral tegmental area (Agid et al., 1989; Shulman et al., 2011). PD patients are frequently treated with dopamine replacement therapy (levodopa and dopamine agonists), and thus by comparing patients in ON and OFF medication states the effects of dopamine depletion can be investigated.
 
-One influential study using such a procedure found that dopaminergic state modulated RL from positive and negative feedback (
+One influential study using such a procedure found that dopaminergic state modulated RL from positive and negative feedback (Frank et al., 2004). This study used the Probabilistic Selection Task (PST), in which participants see two Japanese Hiragana symbols on the screen at the same time, and must pick one, receiving either ‘Correct’ or ‘Incorrect’ feedback (see Figure 1). This feedback is determined probabilistically, so that card A in pair AB is given positive feedback on 80% of trials, and negative feedback on 20%, and vice versa for card B. Pairs CD and EF have probabilities 70–30% and 60–40%, respectively. During the learning trials, if a participant chooses card A over card B, this could be because they have learned that card A is more often rewarded and should be chosen, or that card B is more often punished and should be avoided – one cannot tell these apart from this choice. So, a novel pairs test is given where all the cards are shown in all possible combinations (e.g. AB, AC, AD, AE…), without feedback, and from this the percentage of times that card A is chosen, and card B avoided, can be used as benchmarks for positive and negative reinforcement, respectively.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig1-v2.jpg)
 
-**Figure 1.:** In each pair one card is more likely to be rewarded (shown ‘Correct’ feedback) than the other, with card A in pair AB rewarded 80% of trials, and card B on 20% of trials. For pairs CD and EF, the probabilities are 70–30% and 60–40%.DOI: http://dx.doi.org/10.7554/eLife.26801.003
+**Figure 1.:** In each pair one card is more likely to be rewarded (shown ‘Correct’ feedback) than the other, with card A in pair AB rewarded 80% of trials, and card B on 20% of trials. For pairs CD and EF, the probabilities are 70–30% and 60–40%.
 
 PD patients chose A more and avoided B less when ON medication, and vice versa for OFF medication (Frank et al., 2004). This suggested better learning from positive reinforcement and poorer negative reinforcement ON medication, while patients OFF showed the opposite pattern. Importantly, patients OFF medication were better at negative reinforcement than healthy age-matched controls (HC), suggesting that PD actually improved some aspect of RL. The explanation for these effects was provided with a model of the basal ganglia. In the Go-NoGo model, the two main pathways from the striatum are proposed to underlie positive and negative reinforcement. The direct pathway, which is mainly activated by striatal neurons containing dopamine D1 receptors and therefore is activated by a dopamine increase during a positive RPE, underlies positive reinforcement. The indirect pathway which is inhibited by D2 receptors, and therefore activated when a dopamine decrease signals a negative RPE, allows negative reinforcement. When PD patients are ON medication, the higher dopamine levels activate D1 receptors and inhibit D2 receptors, thus biasing towards the direct pathway, improving positive reinforcement. When OFF medication, the lower dopamine levels mean less D1 activation, and less D2 inhibition, thus increasing indirect pathway activity, and improving negative reinforcement.
 
@@ -50,47 +50,47 @@ These hypotheses were tested in experiment 1 where surprisingly we did not show 
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
-## Learning
+#### Learning
 
 Eighteen PD patients and 18 HC learned a modified version of the PST (2 pairs, different probabilities of reward, smiling or frowning faces as feedback, see Figure 7), and were tested immediately, 30 min and 24 hr later. PD patients were ON or OFF their dopaminergic medication on day 1 during learning, and ON or OFF on day 2 for testing (4 conditions; within-subject design). No data were excluded, but the final learning blocks were missing from two conditions for the same participant due to experimenter and computer error.
 
-Participants were able to learn the task, with final mean accuracies of 78.60% (SEM = 3.84) ON medication, 77.71% (4.16) OFF medication and 79.03% (4.67) for HC. No effects of medication (p=0.882, ηp2 =0.001), or disease (p=0.846, ηp2 =0.0004) were seen on the learning trials. We also examined win-stay lose-shift behaviour on the learning trials, but found no significant differences between groups (p>0.2; see Appendix 1 for details).
+Participants were able to learn the task, with final mean accuracies of 78.60% (SEM = 3.84) ON medication, 77.71% (4.16) OFF medication and 79.03% (4.67) for HC. No effects of medication (p=0.882, $η_{p}^{2}$ =0.001), or disease (p=0.846, $η_{p}^{2}$ =0.0004) were seen on the learning trials. We also examined win-stay lose-shift behaviour on the learning trials, but found no significant differences between groups (p>0.2; see Appendix 1 for details).
 
 We fit variations of the Q-learning model to the participants’ data, with and without different learning rates for the different PD medication states during learning (see Appendix 2 for details). A dual learning rate Q-learning model where the learning rates did not differ by medication state provided the best fit, further suggesting that dopaminergic medication did not affect learning.
 
-## Memory
+#### Memory
 
 The memory tests presented the same pairs as the learning trials, but without any feedback. The 30 min memory test data were missing from two conditions for the same patient due to experimenter and computer error.
 
-We looked at the difference between immediate and 30 min delayed memory blocks, and between 30 min and 24 hr blocks.
+We looked at the difference between immediate and 30 min delayed memory blocks, and between 30 min and 24 hr blocks. Figure 2 shows that both day 1 OFF conditions (and HC) have mean decreases in memory scores, while both day 1 ON conditions have slight increases in mean memory scores, although the standard error bars overlap with zero for the latter. A two-way repeated-measures ANOVA (day 1 medications * day 2 medication) showed no significant effect of day 1 medication state on the difference between 24 hr and 30 min memory scores (F (1, 16) = 2.803, p=0.114, ηp2 =0.149), and no other effects were significant (p>0.3, ηp2 <0.064). T-tests comparing ON-ON and OFF-ON showed no effect for either measure (p=0.51, d = 0.2314; p=0.376, d = 0.3483). Comparing ON-OFF and OFF-OFF showed no difference in the change across 30 min (p=0.292, d = 0.3233), but did show significant difference in the change across 24 hr (t (16)=2.894, p=0.0106, d = 0.4959). This survived Bonferroni correction for four comparisons (α = 0.0125). Non-parametric Wilcoxon’s tests demonstrated the same results (ON-OFF vs OFF-OFF: p=0.011, all others p>0.1). This suggests that low dopamine levels during learning or early memory may affect the persistence of the reinforced memory, at least in certain circumstances.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig2-v2.jpg)
 
-**Figure 2.:** ON-OFF had significantly greater increases in memory score over this time than OFF-OFF (* = p=0.0106) and indeed both day 1 ON conditions (blue bars) had a mean increase in accuracy while both day 1 OFF conditions (red bars) and HC (black bars) had a decrease. Error bars are SEM. Figure 2—source data 1 shows the summary statistics.DOI: http://dx.doi.org/10.7554/eLife.26801.00410.7554/eLife.26801.005Figure 2—source data 1.Figure 2, the difference in memory scores between 30 min and 24 hr tests for each condition.DOI: http://dx.doi.org/10.7554/eLife.26801.005
+**Figure 2.:** ON-OFF had significantly greater increases in memory score over this time than OFF-OFF (* = p=0.0106) and indeed both day 1 ON conditions (blue bars) had a mean increase in accuracy while both day 1 OFF conditions (red bars) and HC (black bars) had a decrease. Error bars are SEM. Figure 2—source data 1 shows the summary statistics.
 
-## Novel pairs
+#### Novel pairs
 
 The novel pairs task was given 24 hr after learning on day 2. Each possible combination of the cards was shown six times, without feedback, in a random order. The percentage of times participants chose the most rewarded card (A) and avoided the least rewarded card (B) were used as measures of expression of positive and negative reinforcement, respectively. One block of novel pairs data were missing due to computer error.
 
 The overall accuracy on the novel pairs test showed a positive correlation with the accuracy in the final learning block (r = 0.4365, p<0.0001), which is not surprising as participants who learned the task well would be expected to perform better on the test.
 
-A between-subjects multivariate ANOVA was run to compare PD patients against HC (
+A between-subjects multivariate ANOVA was run to compare PD patients against HC (Figure 3). Choose-A and avoid-B were not significantly different between PD patients and HC (p=0.714, d = 0.0969; p=0.753, d = 0.0834).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig3-v2.jpg)
 
-**Figure 3.:** There were no significant effects of day 1 or day 2 medication state (p>0.28). Error bars are SEM. Figure 3—figure supplement 1 shows the data when filtered by performance on the 80–20% pair for day 1 conditions, and Figure 3—figure supplement 2 shows the filtered day 2 conditions. Figure 3—source data 1 shows the summary statistics.DOI: http://dx.doi.org/10.7554/eLife.26801.00610.7554/eLife.26801.007Figure 3—source data 1.Figure 3, the percentages of choose-A and avoid-B selections in the experiment 1 novel pairs test.DOI: http://dx.doi.org/10.7554/eLife.26801.007
+**Figure 3.:** There were no significant effects of day 1 or day 2 medication state (p>0.28). Error bars are SEM. Figure 3—figure supplement 1 shows the data when filtered by performance on the 80–20% pair for day 1 conditions, and Figure 3—figure supplement 2 shows the filtered day 2 conditions. Figure 3—source data 1 shows the summary statistics.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** As the filtering removed data from different participants, paired samples statistics were no longer suitable. Independent-samples t-tests showed no significant effects of day 1 medication state (df = 57, p=0.975, d = 0.0956; p=0.265, d = 0.2010), nor an effect of disease state (df = 72, p=0.315, d = 0.1269; p=0.939, 0.1169) on choose-A or avoid-B. Error bars are SEM.DOI: http://dx.doi.org/10.7554/eLife.26801.00810.7554/eLife.26801.009Figure 3—figure supplement 1—source data 1.Figure 3—figure supplement 1, percentages of choose-A and avoid-B behaviours for experiment 1 split by Day 1 condition, after data filtering.DOI: http://dx.doi.org/10.7554/eLife.26801.009
+**Figure 3—figure supplement 1.:** As the filtering removed data from different participants, paired samples statistics were no longer suitable. Independent-samples t-tests showed no significant effects of day 1 medication state (df = 57, p=0.975, d = 0.0956; p=0.265, d = 0.2010), nor an effect of disease state (df = 72, p=0.315, d = 0.1269; p=0.939, 0.1169) on choose-A or avoid-B. Error bars are SEM.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Between-subjects t-tests showed no effect of day 2 medication state (df = 57, p=0.151, d = 0.1780; p=0.928, d = 0.0061). Error bars are SEM.DOI: http://dx.doi.org/10.7554/eLife.26801.01010.7554/eLife.26801.011Figure 3—figure supplement 2—source data 1.Figure 3—figure supplement 2, percentages of choose-A and avoid-B behaviours for experiment 1 split by day 2 condition, after data filtering.DOI: http://dx.doi.org/10.7554/eLife.26801.011
+**Figure 3—figure supplement 2.:** Between-subjects t-tests showed no effect of day 2 medication state (df = 57, p=0.151, d = 0.1780; p=0.928, d = 0.0061). Error bars are SEM.
 
-We found no effects of dopaminergic state during day 1 or day 2 on expression of positive and negative reinforcement. A repeated measures ANOVA (choice * day 1 * day 2) on the PD patients’ data showed a significant effect of choice (F (1, 16)=4.692, p=0.046, ηp2 = 0.227), with avoid-B higher than choose-A overall. There were no significant effects of day 1 or day 2 medication state, or any interactions (p>0.12). This suggests that overall PD patients were better at expressing negative reinforcement, but that medication on day 1 or day 2 had no effect.
+We found no effects of dopaminergic state during day 1 or day 2 on expression of positive and negative reinforcement. A repeated measures ANOVA (choice * day 1 * day 2) on the PD patients’ data showed a significant effect of choice (F (1, 16)=4.692, p=0.046, $η_{p}^{2}$ = 0.227), with avoid-B higher than choose-A overall. There were no significant effects of day 1 or day 2 medication state, or any interactions (p>0.12). This suggests that overall PD patients were better at expressing negative reinforcement, but that medication on day 1 or day 2 had no effect.
 
 There were also no significant effects when examining individual conditions with paired t-tests for choose-A (p>0.08, α = 0.0125) or avoid-B selections (p>0.2). This suggests that neither day 1 nor day 2 medication state affected choose-A or avoid-B performance.
 
@@ -98,55 +98,55 @@ The data filtering used by Frank et al. (2004) was applied to the data here also
 
 Overall, there were no significant effects of medication or disease state, suggesting that PD and dopaminergic medication did not affect novel pairs performance on the modified PST when tested 24 hr later. As experiment 1 failed to show the expected effects of dopamine on RL, experiment 2 was run without the 24 hr delay to attempt to replicate effects of dopamine on RL when tested immediately after learning.
 
-## Experiment 2
+### Experiment 2
 
-## Learning
+#### Learning
 
-Eighteen PD patients and 20 HC completed the modified PST with the novel pairs test immediately after learning. There were no memory blocks. PD patients were ON or OFF medications for both learning and testing. Participants again reached over 70% accuracy on the learning trials on average (ON: 77.01% (SEM = 3.67), OFF: 78.06% (4.04), HC: 74.69% (4.43)), and there were no effects of medication (p=0.806, ηp2 = 0.004) or disease (p=0.563, ηp2 = 0.006).
+Eighteen PD patients and 20 HC completed the modified PST with the novel pairs test immediately after learning. There were no memory blocks. PD patients were ON or OFF medications for both learning and testing. Participants again reached over 70% accuracy on the learning trials on average (ON: 77.01% (SEM = 3.67), OFF: 78.06% (4.04), HC: 74.69% (4.43)), and there were no effects of medication (p=0.806, $η_{p}^{2}$ = 0.004) or disease (p=0.563, $η_{p}^{2}$ = 0.006).
 
-## Novel pairs
+#### Novel pairs
 
-Overall accuracy in the novel pairs tests correlated positively with accuracy in the final learning block (r = 0.6686, p<0.0001). A multivariate ANOVA comparing PD patients and HC showed no effects of disease state on choose-A (p=0.285,
+Overall accuracy in the novel pairs tests correlated positively with accuracy in the final learning block (r = 0.6686, p<0.0001). A multivariate ANOVA comparing PD patients and HC showed no effects of disease state on choose-A (p=0.285, ηp2 = 0.021) or avoid-B (p=0.226, ηp2 = 0.027). Paired samples t-tests to compare ON and OFF medication conditions showed no significant differences for choose-A (p=0.727, d = 0.1311) or avoid-B (p=0.580, d = 0.1910; Figure 4a). Filtered data were also analysed; 1/18 ON, 3/18 OFF and 3/20 HC blocks were filtered out, and no effects of condition were found (p>0.1; Figure 4—figure supplement 1). Thus we did not find evidence that dopaminergic medication state affects choices on the modified-PST as in previous studies (Frank et al., 2004).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig4-v2.jpg)
 
-**Figure 4.:** There were no significant effects of disease state or medication condition on either selection in either experiment 2 (p>0.2) or experiment 3 (p>0.3). Error bars are SEM. Figure 4—figure supplement 1 shows the data after filtering was applied to experiment 2, and Figure 4—figure supplement 2 shows the filtered data for experiment 3. Figure 4—source data 1 shows the summary statistics.DOI: http://dx.doi.org/10.7554/eLife.26801.01210.7554/eLife.26801.013Figure 4—source data 1.Figure 4, the percentages of choose-A and avoid-B selections in experiments 2 and 3 novel pairs tests.DOI: http://dx.doi.org/10.7554/eLife.26801.013
+**Figure 4.:** There were no significant effects of disease state or medication condition on either selection in either experiment 2 (p>0.2) or experiment 3 (p>0.3). Error bars are SEM. Figure 4—figure supplement 1 shows the data after filtering was applied to experiment 2, and Figure 4—figure supplement 2 shows the filtered data for experiment 3. Figure 4—source data 1 shows the summary statistics.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Independent-samples t-tests showed no significant effects on choose-A or avoid-B for disease state (df = 47, p=0.361, d = 0.2768; p=0.126, d = 0.4681) or medication state (df = 30, p=0.473, d = 0.2575; p=0.825, d = 0.0792). Error bars are SEM.DOI: http://dx.doi.org/10.7554/eLife.26801.01410.7554/eLife.26801.015Figure 4—figure supplement 1—source data 1.Figure 4—figure supplement 1, percentages of choose-A and avoid-B behaviours for experiment 3, after data filtering.DOI: http://dx.doi.org/10.7554/eLife.26801.015
+**Figure 4—figure supplement 1.:** Independent-samples t-tests showed no significant effects on choose-A or avoid-B for disease state (df = 47, p=0.361, d = 0.2768; p=0.126, d = 0.4681) or medication state (df = 30, p=0.473, d = 0.2575; p=0.825, d = 0.0792). Error bars are SEM.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Independent-samples t-tests showed no effects of disease state (df = 31, p=0.509, d = 0.2465; p=0.926, d = 0.0345) or medication state (df = 20, p=0.579, d = 0.2415; p=0.555, d = 0.25658). Error bars are SEM.DOI: http://dx.doi.org/10.7554/eLife.26801.01610.7554/eLife.26801.017Figure 4—figure supplement 2—source data 1.Figure 4—figure supplement 2, percentages of choose-A and avoid-B behaviours for experiment 2, after data filtering.DOI: http://dx.doi.org/10.7554/eLife.26801.017
+**Figure 4—figure supplement 2.:** Independent-samples t-tests showed no effects of disease state (df = 31, p=0.509, d = 0.2465; p=0.926, d = 0.0345) or medication state (df = 20, p=0.579, d = 0.2415; p=0.555, d = 0.25658). Error bars are SEM.
 
-## Experiment 3
+### Experiment 3
 
 As experiment 2 did not replicate the findings of Frank et al. (2004), an exact replication was run to ensure we observed the well-described effect of dopamine enhancing positive reinforcement or impairing negative reinforcement.
 
-## Learning
+#### Learning
 
-Eighteen PD patients and 18 HC completed the original PST (Frank et al., 2004). PD patients were ON or OFF for both learning and novel pairs test. Neither PD nor medication state significantly affected the number of blocks completed (ON: 4.78 (0.59), OFF: 5.28 (0.50), HC: 5.94 (0.42); PD: p=0.145, ηp2 = 0.040; medications: p=0.477, ηp2 = 0.030) or the final learning accuracy (ON: 61.94% (3.35), OFF: 61.67% (3.26), HC: 57.22% (3.97); PD: p=0.291, ηp2 = 0.021; medications: p=0.950, ηp2 = 0.0002). Note that the final learning accuracies were lower than in experiments 1 and 2.
+Eighteen PD patients and 18 HC completed the original PST (Frank et al., 2004). PD patients were ON or OFF for both learning and novel pairs test. Neither PD nor medication state significantly affected the number of blocks completed (ON: 4.78 (0.59), OFF: 5.28 (0.50), HC: 5.94 (0.42); PD: p=0.145, $η_{p}^{2}$ = 0.040; medications: p=0.477, $η_{p}^{2}$ = 0.030) or the final learning accuracy (ON: 61.94% (3.35), OFF: 61.67% (3.26), HC: 57.22% (3.97); PD: p=0.291, $η_{p}^{2}$ = 0.021; medications: p=0.950, $η_{p}^{2}$ = 0.0002). Note that the final learning accuracies were lower than in experiments 1 and 2.
 
-## Novel pairs
+#### Novel pairs
 
-Again, overall accuracy in the novel pairs test correlated positively with the accuracy in the final learning block (r = 0.4680, p=0.0004). PD patients did not differ from HC on either choice (p=0.940, ηp2 = 0.0001; p=0.577, ηp2 = 0.006). Paired-samples t-tests showed no significant differences in choose-A (p=0.363, d = 0.2573) or avoid-B selections for the two medication conditions (p=0.968, d = 0.0132), meaning dopaminergic medication state didn’t affect positive or negative reinforcement in PD patients (Figure 4b). Data filtering excluded 8/18 ON blocks, 6/18 OFF blocks and 7/18 HC blocks, and no significant effects of disease or medication were seen in the remaining data (p>0.5; Figure 4—figure supplement 2).
+Again, overall accuracy in the novel pairs test correlated positively with the accuracy in the final learning block (r = 0.4680, p=0.0004). PD patients did not differ from HC on either choice (p=0.940, $η_{p}^{2}$ = 0.0001; p=0.577, $η_{p}^{2}$ = 0.006). Paired-samples t-tests showed no significant differences in choose-A (p=0.363, d = 0.2573) or avoid-B selections for the two medication conditions (p=0.968, d = 0.0132), meaning dopaminergic medication state didn’t affect positive or negative reinforcement in PD patients (Figure 4b). Data filtering excluded 8/18 ON blocks, 6/18 OFF blocks and 7/18 HC blocks, and no significant effects of disease or medication were seen in the remaining data (p>0.5; Figure 4—figure supplement 2).
 
 It should be noted that participants were only just above chance performance on the novel pairs task in experiment 3, with mean percentage of choices between 49% and 57% for all groups. This is lower than in experiments 1 and 2, suggesting that the original PST was harder for participants to learn.
 
-## General results
+### General results
 
-## Learning
+#### Learning
 
-As each experiment provided related statistics of learning, they were analysed together to get the full picture. A univariate analysis was run on the final learning block accuracies for each experiment (
+As each experiment provided related statistics of learning, they were analysed together to get the full picture. A univariate analysis was run on the final learning block accuracies for each experiment (Figure 5), which showed a significant effect of experiment (F (2, 187)=18.416, p<0.000001, ηp2 =0.165), but no effects of condition (p=0.578, ηp2=0.015) or interaction (p=0.587, ηp2 = 0.015). Post-hoc comparisons with Bonferroni corrections showed that experiment 3 had significantly lower final learning block accuracies than experiments 1 (p<0.000001) and 2 (p=0.000002), but there were no differences between experiments 1 and 2 (p=1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig5-v2.jpg)
 
-**Figure 5.:** Experiment 3’s final accuracy was significantly lower than experiments 1 and 2’s (p<0.000001). Error bars are SEM. Figure 5—source data 1 shows the summary statistics.DOI: http://dx.doi.org/10.7554/eLife.26801.01810.7554/eLife.26801.019Figure 5—source data 1.Figure 5, the mean final learning block accuracies across the three experiments.DOI: http://dx.doi.org/10.7554/eLife.26801.019
+**Figure 5.:** Experiment 3’s final accuracy was significantly lower than experiments 1 and 2’s (p<0.000001). Error bars are SEM. Figure 5—source data 1 shows the summary statistics.
 
-## Novel pairs
+#### Novel pairs
 
-A multivariate ANOVA was run on choose-A and avoid-B from each experiment. ON and OFF in experiments 2 and 3 were treated the same as ON-ON and OFF-OFF from experiment 1. There were no significant effects of condition on either choice (p=0.609,  ηp2 = 0.014; p=0.583, ηp2 = 0.015), but were significant effects of experiment on avoid-B (F (2, 188)=16.069, p<0.000001, ηp2 = 0.146). Bonferroni-corrected post-hoc tests showed that experiment 3 had lower avoid-B than experiments 1 (p=0.000005) and 2 (p=0.000013), while experiments 1 and 2 did not differ (p=1). There was no effect of experiment on choose-A performance (p=0.327, ηp2 = 0.012), and no interaction of experiment and condition for either choice (p=0.556, ηp2 = 0.016; p=0.749, ηp2 = 0.010).
+A multivariate ANOVA was run on choose-A and avoid-B from each experiment. ON and OFF in experiments 2 and 3 were treated the same as ON-ON and OFF-OFF from experiment 1. There were no significant effects of condition on either choice (p=0.609, $ η_{p}^{2}$ = 0.014; p=0.583, $η_{p}^{2}$ = 0.015), but were significant effects of experiment on avoid-B (F (2, 188)=16.069, p<0.000001, $η_{p}^{2}$ = 0.146). Bonferroni-corrected post-hoc tests showed that experiment 3 had lower avoid-B than experiments 1 (p=0.000005) and 2 (p=0.000013), while experiments 1 and 2 did not differ (p=1). There was no effect of experiment on choose-A performance (p=0.327, $η_{p}^{2} $= 0.012), and no interaction of experiment and condition for either choice (p=0.556, $η_{p}^{2}$ = 0.016; p=0.749, $η_{p}^{2}$ = 0.010).
 
 This means that experiment 3 had poorer final learning accuracy (despite passing the accuracy thresholds) and less avoid-B choices on the novel pairs test, than experiments 1 and 2 which used the modified-PST. Interestingly, this was because experiments 1 and 2 had avoid-B scores higher than choose-A, while experiment 3 had about the same scores.
 
@@ -154,15 +154,15 @@ This means that experiment 3 had poorer final learning accuracy (despite passing
 
 These experiments found that dopaminergic medication during learning prevented a decrease in memory for RL over 24 hr. However, dopamine did not affect expression of positive or negative reinforcement either during learning or testing, when tested immediately or 24 hr after learning. PD patients did not differ from HC in any of the experiments. Finally, experiment 3, using the original PST, had much lower accuracy in the learning trials, and lower avoid-B scores than experiments 1 and 2 which used the modified-PST.
 
-## Effects of dopamine on consolidation
+### Effects of dopamine on consolidation
 
 Dopaminergic medication seemed to affect memory performance on the PST. When patients were OFF medication on day 2, being ON medication the day before (during learning) prevented a decrease in their memory over the 24 delay. Interestingly, both day 1 ON conditions had a pattern of a slight increase in memory scores (albeit non-significantly different to zero), while both day 1 OFF conditions (and HC) showed a decrease on average. As this score was the difference between 30 min and 24 hr delay tests, it suggests that day 1 dopamine improved consolidation of the learned values sometime after 30 min, preventing a decay in the memory. This is in line with a previous study showing a benefit of dopamine at the time of learning on memory testing 20 min later (Coulthard et al., 2012), although it was only seen at longer delays here.
 
-All PD patients went back ON medication immediately after the day 1 session regardless of day 2 condition, so all patients were in an ON state for the hours after learning (see
+All PD patients went back ON medication immediately after the day 1 session regardless of day 2 condition, so all patients were in an ON state for the hours after learning (see Figure 6 for diagram). This means the day 1 ON and OFF groups differed in dopaminergic activity until about 1.5 hr after learning, when the medication would have reached peak concentration. This gives a short time window for day 1 medication to affect consolidation of RL.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig6-v2.jpg)
 
-**Figure 6.:** Blue is when patients were ON medication, red hatched bars when they were OFF, and yellow bars the PST phases. In order for patients to be fully OFF medication during testing, they were withdrawn from their dopaminergic medications a minimum of 15 hr prior to testing (>24 hr for long-lasting medications). Note that in all conditions, patients were ON medication for a few hours after the day 1 session, to minimise the time spent OFF medication.DOI: http://dx.doi.org/10.7554/eLife.26801.020
+**Figure 6.:** Blue is when patients were ON medication, red hatched bars when they were OFF, and yellow bars the PST phases. In order for patients to be fully OFF medication during testing, they were withdrawn from their dopaminergic medications a minimum of 15 hr prior to testing (>24 hr for long-lasting medications). Note that in all conditions, patients were ON medication for a few hours after the day 1 session, to minimise the time spent OFF medication.
 
 This finding fits with the wider literature implicating dopamine in memory and consolidation mechanisms (Lisman et al., 2011; Shohamy and Adcock, 2010). Dopamine given before or after learning can improve consolidation (Bernabeu et al., 1997; de Lima et al., 2011; Furini et al., 2014; Péczely et al., 2016; Rossato et al., 2009), although there is still debate on the time course of its effects. Synaptic tagging and capture models suggest dopaminergic effects would take place within a few hours of learning (Clopath et al., 2008; Redondo and Morris, 2011), and consolidation effects on RL have been reported over shorter times before (Coulthard et al., 2012). Synaptic tagging has mainly been studied in hippocampal circuits, and may relate to the binding of separate experiences within a time window of hours or days (Shohamy and Adcock, 2010). However, the PST is assumed to rely on basal ganglia functioning, at least when there are short delays between action and feedback as there were here (Foerde and Shohamy, 2011). Combining computational synaptic tagging and capture models with basal ganglia RL models would show whether such an explanation could explain this effect. Further behavioural work fractioning the time window after learning where dopamine impacts on consolidation of RL could also be illuminating.
 
@@ -170,7 +170,7 @@ Consolidation has not often been the focus in RL studies, rather learning or tes
 
 An alternate explanation is that dopamine state during the 30 min memory block affected reconsolidation of the RL values, allowing the values to be reconsolidated properly and recalled accurately the next day. Dopamine has been implicated in reconsolidation (Rossato et al., 2015), although it has not been investigated in the RL domain.
 
-## Effects of dopamine on learning from positive and negative feedback
+### Effects of dopamine on learning from positive and negative feedback
 
 Experiment 1 sought to separate the effects of dopamine during learning and during testing on positively and negatively reinforced information, but found no effects of either. PD patients also did not differ from HC. If our study were simply underpowered we might expect the results to at least be in the direction predicted by previous studies. Interestingly, the direction of effect was opposite to the expected effect, with the day 1 ON conditions having the highest amount of avoid-B selections. The classic view is that dopamine improves positive reinforcement, at the cost of impaired negative reinforcement, so it is unclear why the condition in which patients have the most dopamine would show greatest expression of negative reinforcement.
 
@@ -196,33 +196,223 @@ Some studies are now using simpler RL tasks that require learning to predict the
 
 It is interesting to consider what the implication of our results are for the theories of basal ganglia function. In particular, how our results can be reconciled with the observations that dopaminergic neurons activate striatal D1 neurons, which are believed to be involved in activating movements, while they inhibit the D2 neurons, which are thought to be involved in movement inhibition (Kravitz et al., 2010). It has been recently proposed that these neurons encode not only the expected value of an action in the difference of their activity, but also the variance of the reward in the sum of their activity (Mikhael and Bogacz, 2016). In PST, the stimuli with reward probability closer to 50% have a high variance of reward, because on some trials they result in positive and on some trials in negative feedback. In the simulations of the PST these stimuli strongly activated both D1 and D2 neurons (Mikhael and Bogacz, 2016). Thus on the simulated novel-pair trials with such stimuli and the stimulus A, the D1 neurons selective for both options were activated, and hence increasing the level of dopamine had little affect the accuracy in choose-A (or even decreased it for some variants of the model). These simulations show that the level of dopamine may little influence the accuracy the PST even if the dopaminergic modulation differentially affects the striatal D1 and D2 neurons.
 
-## Conclusion
+### Conclusion
 
 Dopamine and PD did not affect expression of positive or negative reinforcement when tested immediately or 24 hr after learning. Dopamine during learning improved the consolidation of RL memories over 24 hr. The original PST had very low accuracy, and the modifications made to the PST had large effects, increasing learning and novel pairs accuracy, and increasing the amount of avoid-B selections participants made. This highlights the effects that can be induced by small changes to these types of tasks. These experiments failed to replicate the previously reported effects of dopamine and PD on RL, suggesting the effect may be weak.
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
 Ethical approval was obtained from the NHS Research Ethics Committee at Frenchay, Bristol. All participants gave written consent, in accordance with the Declaration of Helsinki.
 
-## Participants
+#### Participants
 
-The three experiments reported here all tested PD patients and HC. Demographic data are shown in Table 1. PD patients had a diagnosis of idiopathic PD, were stable on their medications for at least 3 months, and were recruited through the general neurology and movement disorders clinic in Frenchay and Southmead Hospitals, Bristol. Patients were on levodopa and/or dopamine agonists, were not taking mono-amine oxidase inhibitors and did not have a Deep Brain Stimulator implanted. When coming OFF medication, patients were withdrawn from standard-release medication a minimum of 15 hr prior to testing, and from prolonged-release medication a minimum of 24 hr prior to testing. For the OFF-OFF condition patients went back ON medication for a short while after the day 1 session, to minimise time spent OFF medication and the risk of neuroleptic malignant syndrome (Keyser and Rodnitzky, 1991).10.7554/eLife.26801.021Table 1.The means and SEM for each experiment for PD patients and HC on all measures taken. Within each experiment, one-way ANOVAs were run between PD patients and HC (χ2 for the genders), and paired t-tests for the comparisons between patients ON and OFF medication for the UPDRS. MMSE scores from experiment 1 were converted to MoCA scores for comparison. *p<0.05, **p<0.01, ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.26801.021Experiment123MeasurePD patientsHCPD patientsHCPD patientsHCNumber181818201818Gender (M/F)15/3**7/1116/2***5/1511/711/7Age71.56 (2.06)71.19 (2.52)67.39 (2.10)66.05 (2.05)69.11 (1.44)71.61 (2.05)Years Education13.50 (0.66)12.93 (0.89)14.83 (0.91)13.75 (0.56)11.94 (0.52)*14.72 (0.65)MoCA29.44 (0.12)29.63 (0.13)28.72 (0.50)*26.85 (0.53)27.61 (0.54)26.78 (0.56)DASS21.71 (2.85)*12.19 (2.76)15.39 (2.54)20.05 (5.50)29.13 (4.53)**10.44 (2.29) Depression6.35 (0.81)**2.88 (0.87)4.94 (1.13)5.55 (1.958)7.13 (1.71)***2.78 (0.75) Anxiety7.88 (1.27)**3.25 (0.88)5.67 (0.84)5.50 (1.80)10.33 (1.58)***2.61 (0.69) Stress7.47 (1.41)6.06 (1.32)4.78 (1.09)9.00 (2.02)11.67 (1.73)**5.06 (1.25)BIS14.94 (2.36)15.31 (3.07)53.50 (2.47)51.90 (2.35)53.56 (2.70)51.00 (1.88)LARS−20.22 (1.36)***−27.44 (1.24)−23.50 (1.71)*−30.00 (1.58)−22.44 (2.06)*−27.06 (1.16)UPDRS ON18.67 (2.69)18.78 (2.85)26.50 (2.73)UPDRS OFF24.56 (3.41)***23.28 (2.97)30.44 (2.52)***Years since diagnosis4.44 (1.21)4.39 (0.90)5.00 (1.02)Years since symptoms5.18 (1.28)4.78 (0.86)6.44 (1.10)LDE (mg)566.41 (61.18)543.70 (67.36)653.00 (93.96)# levodopa/ dopamine agonists/both12/1/510/2/610/0/8# on XL meds3109MoCA=Montreal Cognitive Assessment, DASS=Depression, Anxiety and Stress Scale, BIS=Barratt Impulsivity Scale, LARS=Lille Apathy Rating Scale, UPDRS=Unified Parkinson’s Disease Rating Scale, LDE=Levodopa Dose Equivalence.
+The three experiments reported here all tested PD patients and HC. Demographic data are shown in Table 1. PD patients had a diagnosis of idiopathic PD, were stable on their medications for at least 3 months, and were recruited through the general neurology and movement disorders clinic in Frenchay and Southmead Hospitals, Bristol. Patients were on levodopa and/or dopamine agonists, were not taking mono-amine oxidase inhibitors and did not have a Deep Brain Stimulator implanted. When coming OFF medication, patients were withdrawn from standard-release medication a minimum of 15 hr prior to testing, and from prolonged-release medication a minimum of 24 hr prior to testing. For the OFF-OFF condition patients went back ON medication for a short while after the day 1 session, to minimise time spent OFF medication and the risk of neuroleptic malignant syndrome (Keyser and Rodnitzky, 1991).
+
+**Table 1.**
+ The means and SEM for each experiment for PD patients and HC on all measures taken. Within each experiment, one-way ANOVAs were run between PD patients and HC (χ2 for the genders), and paired t-tests for the comparisons between patients ON and OFF medication for the UPDRS. MMSE scores from experiment 1 were converted to MoCA scores for comparison. *p<0.05, **p<0.01, ***p<0.001.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th colspan="2">1</th>
+      <th colspan="2">2</th>
+      <th colspan="2">3</th>
+    </tr>
+    <tr>
+      <th>Measure</th>
+      <th>PD patients</th>
+      <th>HC</th>
+      <th>PD patients</th>
+      <th>HC</th>
+      <th>PD patients</th>
+      <th>HC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>20</td>
+      <td>18</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Gender (M/F)</td>
+      <td>15/3**</td>
+      <td>7/11</td>
+      <td>16/2***</td>
+      <td>5/15</td>
+      <td>11/7</td>
+      <td>11/7</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>71.56 (2.06)</td>
+      <td>71.19 (2.52)</td>
+      <td>67.39 (2.10)</td>
+      <td>66.05 (2.05)</td>
+      <td>69.11 (1.44)</td>
+      <td>71.61 (2.05)</td>
+    </tr>
+    <tr>
+      <td>Years Education</td>
+      <td>13.50 (0.66)</td>
+      <td>12.93 (0.89)</td>
+      <td>14.83 (0.91)</td>
+      <td>13.75 (0.56)</td>
+      <td>11.94 (0.52)*</td>
+      <td>14.72 (0.65)</td>
+    </tr>
+    <tr>
+      <td>MoCA</td>
+      <td>29.44 (0.12)</td>
+      <td>29.63 (0.13)</td>
+      <td>28.72 (0.50)*</td>
+      <td>26.85 (0.53)</td>
+      <td>27.61 (0.54)</td>
+      <td>26.78 (0.56)</td>
+    </tr>
+    <tr>
+      <td>DASS</td>
+      <td>21.71 (2.85)*</td>
+      <td>12.19 (2.76)</td>
+      <td>15.39 (2.54)</td>
+      <td>20.05 (5.50)</td>
+      <td>29.13 (4.53)**</td>
+      <td>10.44 (2.29)</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>6.35 (0.81)**</td>
+      <td>2.88 (0.87)</td>
+      <td>4.94 (1.13)</td>
+      <td>5.55 (1.958)</td>
+      <td>7.13 (1.71)***</td>
+      <td>2.78 (0.75)</td>
+    </tr>
+    <tr>
+      <td>Anxiety</td>
+      <td>7.88 (1.27)**</td>
+      <td>3.25 (0.88)</td>
+      <td>5.67 (0.84)</td>
+      <td>5.50 (1.80)</td>
+      <td>10.33 (1.58)***</td>
+      <td>2.61 (0.69)</td>
+    </tr>
+    <tr>
+      <td>Stress</td>
+      <td>7.47 (1.41)</td>
+      <td>6.06 (1.32)</td>
+      <td>4.78 (1.09)</td>
+      <td>9.00 (2.02)</td>
+      <td>11.67 (1.73)**</td>
+      <td>5.06 (1.25)</td>
+    </tr>
+    <tr>
+      <td>BIS</td>
+      <td>14.94 (2.36)</td>
+      <td>15.31 (3.07)</td>
+      <td>53.50 (2.47)</td>
+      <td>51.90 (2.35)</td>
+      <td>53.56 (2.70)</td>
+      <td>51.00 (1.88)</td>
+    </tr>
+    <tr>
+      <td>LARS</td>
+      <td>−20.22 (1.36)***</td>
+      <td>−27.44 (1.24)</td>
+      <td>−23.50 (1.71)*</td>
+      <td>−30.00 (1.58)</td>
+      <td>−22.44 (2.06)*</td>
+      <td>−27.06 (1.16)</td>
+    </tr>
+    <tr>
+      <td>UPDRS ON</td>
+      <td>18.67 (2.69)</td>
+      <td></td>
+      <td>18.78 (2.85)</td>
+      <td></td>
+      <td>26.50 (2.73)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UPDRS OFF</td>
+      <td>24.56 (3.41)***</td>
+      <td></td>
+      <td>23.28 (2.97)</td>
+      <td></td>
+      <td>30.44 (2.52)***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Years since diagnosis</td>
+      <td>4.44 (1.21)</td>
+      <td></td>
+      <td>4.39 (0.90)</td>
+      <td></td>
+      <td>5.00 (1.02)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Years since symptoms</td>
+      <td>5.18 (1.28)</td>
+      <td></td>
+      <td>4.78 (0.86)</td>
+      <td></td>
+      <td>6.44 (1.10)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LDE (mg)</td>
+      <td>566.41 (61.18)</td>
+      <td></td>
+      <td>543.70 (67.36)</td>
+      <td></td>
+      <td>653.00 (93.96)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># levodopa/ dopamine agonists/both</td>
+      <td>12/1/5</td>
+      <td></td>
+      <td>10/2/6</td>
+      <td></td>
+      <td>10/0/8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td># on XL meds</td>
+      <td>3</td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+      <td>9</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_MoCA=Montreal Cognitive Assessment, DASS=Depression, Anxiety and Stress Scale, BIS=Barratt Impulsivity Scale, LARS=Lille Apathy Rating Scale, UPDRS=Unified Parkinson’s Disease Rating Scale, LDE=Levodopa Dose Equivalence._
 
 HC were recruited from the ReMemBr Group’s healthy volunteer database.
 
 Experiment 1 tested 18 PD patients and 18 HC. PD patients were tested in a within-subjects manner, with all patients tested in all medication conditions.
 
-## Procedure
+#### Procedure
 
 PD patients were tested over two days, with learning taking place on day 1, and testing on day 2. Patients could be ON or OFF for each of these days, giving four conditions (ON-ON, ON-OFF, OFF-ON, OFF-OFF; see Figure 6) tested in a randomised, counterbalanced order. All patients completed all four conditions. HC completed one pair of days.
 
-Presentation software (Version 18.0, Neurobehavioural Systems, Inc., RRID:
+Presentation software (Version 18.0, Neurobehavioural Systems, Inc., RRID:SCR_002521) was used to run all experiments. A modified version of the PST was used, as during piloting it was found that participants could not learn the standard PST. In the modified PST, only 2 rather than 3 pairs were used, with the probabilities of rewards for the cards 80% and 20% and 65% and 35%. Instead of written feedback, smiling and frowning faces were used (see Figure 7). On each learning trial participants saw two symbols and had to select one with a button press. If they hadn’t responded within two seconds they were shown a ‘GO’ prompt, to prompt faster responding. There were four versions of the task, with different Hiragana symbols for each one, so that patients saw different symbols in each condition’s session. Which symbol in each pair was actually card A and card B was counterbalanced (same for CD and EF) and the versions given in each medication condition were randomised.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/26801/elife-26801-fig7-v2.jpg)
 
-**Figure 7.:** Participants saw two symbols on the screen, and selected one with a button press. If no response was made within 2 s, they were shown a ‘GO’ prompt. Feedback was determined probabilistically, was shown for 2 s, and was either the smiling or frowning face.DOI: http://dx.doi.org/10.7554/eLife.26801.022
+**Figure 7.:** Participants saw two symbols on the screen, and selected one with a button press. If no response was made within 2 s, they were shown a ‘GO’ prompt. Feedback was determined probabilistically, was shown for 2 s, and was either the smiling or frowning face.
 
 After 40 practice trials (different stimuli), and 240 learning trials (three blocks of 80), there was a block of 40 ‘memory trials’ which were the same as the learning trials but without the feedback. This measured the participants’ memory on the learning pairs, and is analogous to the delayed memory trials from Coulthard et al. (2012). Another memory block was given 30 min later.
 
@@ -230,29 +420,29 @@ On day 2, 24 hr after learning, a third memory block was given, and then the nov
 
 In addition to the PST, several other tasks were administered including the HVLT-R, UPDRS, MMSE, DASS, LARS, BIS and SMHSQ.
 
-## Experiment 2
+### Experiment 2
 
 As experiment 1 failed to show predicted effects of medication or disease state, further experiments were run. As we had made some modification to the PST based on our pilot data, we designed experiment 2 to test whether performance using our modified PST was as predicted from previous work (e.g. Frank et al., 2004) with no delay between learning and testing.
 
-## Participants
+#### Participants
 
 Eighteen PD patients and 20 HC were tested in experiment 2. Demographic data are shown in Table 1. Six of the PD patients were previously tested in experiment 1, however excluding these from the analysis did not change the direction of effects, and did not materially affect statistical outputs, so these participants were included in the analysis.
 
 Ten PD patients were given the MMSE while the others, and all HC, were given the MoCA. MMSE scores were converted to MoCA scores using the PD conversion from Waltz et al. (2007).
 
-## Procedure
+#### Procedure
 
 The modified PST described above was used again, but this time without any memory blocks, and without any delay between the learning and novel pairs blocks. Therefore, participants completed 40 practice trials (different stimuli), then three blocks of 80 learning trials (240 total), followed immediately by the block of 90 novel pairs trials.
 
 As learning and testing was on the same day, PD patients were ON for both, or OFF for both, meaning there were only two testing sessions, and only two conditions for patients. All patients completed both conditions. Again, condition order and task stimuli were randomised and counterbalanced. HC were tested once.
 
-## Experiment 3
+### Experiment 3
 
-## Participants
+#### Participants
 
 Eighteen PD patients and 18 HC were tested, demographic data are shown in Table 1. None of these participants had taken part in experiments 1 or 2. PD patients were tested once ON and once OFF (randomised order) and HC were tested once.
 
-## Procedure
+#### Procedure
 
 The original PST (Figure 1) was run, with three pairs (80–20%, 70–30%, 60–30%), which gave written ‘Correct’ or ‘Incorrect’ feedback. Maximum trial duration was 4000 ms, after which if no response was made, ‘No response detected’ was printed in red and the next trial began. The feedback was shown for 2000 ms.
 
@@ -262,9 +452,9 @@ The novel pairs test still had all possible combinations (15), although now each
 
 Task stimuli were randomised and counterbalanced.
 
-## Data analysis
+### Data analysis
 
-In all trials, selections of the cards with the highest probability of reward were taken as the ‘optimal’ choice, regardless of what feedback they produced on that specific trial. In the novel pairs block, the learning pairs (AB and CD) were excluded from the analysis as in previous studies (Frank et al., 2004). Between-subjects ANOVAs were used to compare PD patients to HC, and paired sample t-tests to compare the PD medication conditions (with Bonferroni corrections for multiple comparisons). Cohen’s d and ηp2 effect sizes are given for significant results from t-tests and ANOVAs, respectively.
+In all trials, selections of the cards with the highest probability of reward were taken as the ‘optimal’ choice, regardless of what feedback they produced on that specific trial. In the novel pairs block, the learning pairs (AB and CD) were excluded from the analysis as in previous studies (Frank et al., 2004). Between-subjects ANOVAs were used to compare PD patients to HC, and paired sample t-tests to compare the PD medication conditions (with Bonferroni corrections for multiple comparisons). Cohen’s d and $η_{p}^{2}$ effect sizes are given for significant results from t-tests and ANOVAs, respectively.
 
 Additional analyses were conducted after data filtering; if a participant scored 50% or lower on the AB choice in the novel pairs task, they were assumed to have not learnt the task properly and that data were excluded. Each condition was checked separately, so one medication condition’s data could be excluded while all other remain. This filtering was only applied to the novel pairs data and analysis.
 
@@ -272,6 +462,6 @@ Some data were missing from the analysis, due to experimenter error or computer 
 
 All error bars in the figures are standard error of the mean (SEM). MATLAB (RRID:SCR_001622) was used for data processing (code available at https://github.com/johnPGrogan/Effects-of-dopamine-on-RL-consolidation-in-PD/releases/tag/v1.0; Grogan, 2017), and SPSS (RRID:SCR_002865) for statistical tests. A copy of the code is available at https://github.com/elifesciences-publications/Effects-of-dopamine-on-RL-consolidation-in-PD.
 
-## Data availability
+### Data availability
 
 We did not obtain consent from participants to share individual data from this study, thus only summary statistics are presented in the figures, tables and text. Individual data are not provided in the source data files, although the summary statistics are.

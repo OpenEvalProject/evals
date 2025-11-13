@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.30018.001 Studies of the performance of individuals with dyslexia in perceptual tasks suggest that their implicit inference of sound statistics is impaired. Previously, using two-tone frequency discrimination, we found that the effect of previous trials' frequencies on the judgments of individuals with dyslexia decays faster than the effect on controls' judgments, and that the adaptation (decrease of neural response to repeated stimuli) of their ERP responses to tones is shorter ( Jaffe-Dax et al., 2017 ). Here, we show the cortical distribution of these abnormal dynamics of adaptation using fast-acquisition fMRI. We find that faster decay of adaptation in dyslexia is widespread, although the most significant effects are found in the left superior temporal lobe, including the auditory cortex. This broad distribution suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which also affects sensory cortices.
+Studies of the performance of individuals with dyslexia in perceptual tasks suggest that their implicit inference of sound statistics is impaired. Previously, using two-tone frequency discrimination, we found that the effect of previous trials' frequencies on the judgments of individuals with dyslexia decays faster than the effect on controls' judgments, and that the adaptation (decrease of neural response to repeated stimuli) of their ERP responses to tones is shorter (Jaffe-Dax et al., 2017). Here, we show the cortical distribution of these abnormal dynamics of adaptation using fast-acquisition fMRI. We find that faster decay of adaptation in dyslexia is widespread, although the most significant effects are found in the left superior temporal lobe, including the auditory cortex. This broad distribution suggests that the faster decay of implicit memory of individuals with dyslexia is a general characteristic of their cortical dynamics, which also affects sensory cortices.
 
 ## Introduction
 
@@ -24,25 +24,25 @@ Dyslexia, a specific and significant impairment in the development of reading sk
 
 The neural mechanism that may underlie the implicit learning of experimental statistics is adaptation; that is, an automatic, implicit, and stimulus-specific decrease of the response to repeated stimuli. Importantly, the rate of decay of the behavioral effect of previous trials in serial discrimination is similar to the rate of decay of neural adaptation, as measured by magnetoencephalography (MEG) (Lu et al., 1992). Inspired by this finding, we recently compared both the behavioral dynamics and the rate of adaptation (event-related potential [ERP] responses) of good readers (i.e., the control group) and dyslexic participants (Jaffe-Dax et al., 2017). All participants performed serial two-tone frequency discrimination in four blocks with different Trial Onset Asynchronies (TOAs, i.e., temporal interval from the onset of a trial to the onset of the next trial). Both the magnitude of perceptual contraction to the mean frequency of previous trials and the magnitude of neural adaptation (P2 and N1 components that are automatically produced by the auditory cortex [Mayhew et al., 2010]) decayed faster in participants with dyslexia (ERP [Jaffe-Dax et al., 2017]).
 
-As ERP responses cannot be used to localize the cortical source of this group difference, we now recruited the participants from the ERP study (Jaffe-Dax et al., 2017) to take part in an fMRI study with a similar protocol, which allowed us to characterize which brain areas show shorter adaptation in dyslexia. Using the ERP-based protocol in the scanner, we measured the BOLD response (βs) to tones for each TOA, and calculated the time constant of adaptation (fitting an exponential decay function). To identify the areas of significant group difference in time constants of adaptation, we used two methods: data-driven whole-brain analysis, and hypothesis-driven regions of interest (ROI) based on areas suggested to produce N1 and P2 (e.g. Mayhew et al., 2010). All cortical regions that responded to tone discrimination showed a tendency to decay faster in participants with dyslexia. Whole-brain analysis revealed significant group differences in the left superior temporal lobe and in the right insular cortex, and ROI analysis revealed significant differences in the left primary auditory cortex.
+As ERP responses cannot be used to localize the cortical source of this group difference, we now recruited the participants from the ERP study (Jaffe-Dax et al., 2017) to take part in an fMRI study with a similar protocol, which allowed us to characterize which brain areas show shorter adaptation in dyslexia. Using the ERP-based protocol in the scanner, we measured the BOLD response ($\beta$s) to tones for each TOA, and calculated the time constant of adaptation (fitting an exponential decay function). To identify the areas of significant group difference in time constants of adaptation, we used two methods: data-driven whole-brain analysis, and hypothesis-driven regions of interest (ROI) based on areas suggested to produce N1 and P2 (e.g. Mayhew et al., 2010). All cortical regions that responded to tone discrimination showed a tendency to decay faster in participants with dyslexia. Whole-brain analysis revealed significant group differences in the left superior temporal lobe and in the right insular cortex, and ROI analysis revealed significant differences in the left primary auditory cortex.
 
 ## Results
 
 We recruited 20 participants with dyslexia and 19 good readers from our previous study (Table 1; Jaffe-Dax et al., 2017) and asked them to perform two-tone frequency discrimination in separate blocks with four trial-onset intervals (TOAs) of 3, 6, 9, and 15 s. Before entering the scanner, all participants performed a short four-block training session with simulated scanner noise to familiarize them with in-scan conditions (Sperling et al., 2005; Chait et al., 2007). The two groups exhibited similar accuracy (72.4 ± 6% vs. 73 ± 4.6%, z = 0.5, p=0.57). In scans, good readers (controls) performed better than dyslexic participants (Mean ± SEM: 82.5 ± 1.6% vs. 76.3 ± 2.2%, z = 2.6, p<0.01 in Mann-Whitney U-tests), suggesting that they gained more from the short pre-scan practice (in line with the faster learning reported by Jaffe-Dax et al., 2017).
 
-To evaluate the dynamics of cortical adaptation in each group, we used the following procedure. First, we determined which Talairach voxels responded to the task (standard generalized linear model [GLM], p<0.001, false discovery rate [FDR] corrected) when all participants were considered. For each of these voxels, we calculated the dynamics of adaptation, among control participants and among participants with dyslexia, as follows. We estimated β over the mean blood oxygenation level dependent signal (BOLD) response of each group in each of the four TOA conditions (block design; see 'Materials and methods'). Using these βs, we fitted an exponential decay model (Lu et al., 1992; Jaffe-Dax et al., 2017): βTOA=a+bexp⁡-TOA/τ to each voxel. In this model, τ denotes the time constant of adaptation, a is the asymptotic level of BOLD and b is the magnitude of adaptation. Figures 1A and 1B show the distribution of the mean fitted τs for the control and dyslexic groups, respectively. Their comparison illustrates the broadly distributed trend of faster decay in the dyslexic group.
+To evaluate the dynamics of cortical adaptation in each group, we used the following procedure. First, we determined which Talairach voxels responded to the task (standard generalized linear model [GLM], p<0.001, false discovery rate [FDR] corrected) when all participants were considered. For each of these voxels, we calculated the dynamics of adaptation, among control participants and among participants with dyslexia, as follows. We estimated $\beta$ over the mean blood oxygenation level dependent signal (BOLD) response of each group in each of the four TOA conditions (block design; see 'Materials and methods'). Using these $\beta$s, we fitted an exponential decay model (Lu et al., 1992; Jaffe-Dax et al., 2017): $\betaTOA=a+bexp⁡-TOA/\tau$ to each voxel. In this model, $\tau$ denotes the time constant of adaptation, $a$ is the asymptotic level of BOLD and $b$ is the magnitude of adaptation. Figures 1A and 1B show the distribution of the mean fitted $\tau$s for the control and dyslexic groups, respectively. Their comparison illustrates the broadly distributed trend of faster decay in the dyslexic group.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30018/elife-30018-fig1-v2.jpg)
 
-**Figure 1.:** ) of adaptation, calculated separately for each of the responding voxels.τ(A) Control participants. (B) Participants with dyslexia. The estimated s for participants with dyslexia were consistently shorter than those estimated for the control group. Significant group differences in the whole-brain analysis (Monte-Carlo cluster-level corrected: cluster threshold of 44 voxels; see 'Materials and methods') are outlined in magenta. The left and right primary auditory cortices, which were estimated as a source of P2 (ERP) component, are outlined in orange. An ROI analysis (see text) revealed a significant group difference in the left primary auditory cortex (τFigure 2).
+**Figure 1.:** Cortical distribution of the groups’ mean estimated time constants ($\tau$) of adaptation, calculated separately for each of the responding voxels.(A) Control participants. (B) Participants with dyslexia. The estimated $\tau$s for participants with dyslexia were consistently shorter than those estimated for the control group. Significant group differences in the whole-brain analysis (Monte-Carlo cluster-level corrected: cluster threshold of 44 voxels; see 'Materials and methods') are outlined in magenta. The left and right primary auditory cortices, which were estimated as a source of P2 (ERP) component, are outlined in orange. An ROI analysis (see text) revealed a significant group difference in the left primary auditory cortex (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30018/elife-30018-fig2-v2.jpg)
 
 **Figure 2.:** Blue: control. Red: dyslexic. AC: the 3 subregions that comprise the primary auditory cortex, outlined in orange in Figure 1.
 
-To locate regions in which the fitted τ differs significantly between the groups, we conducted a whole-brain analysis, in which we fitted τ to each voxel, for each participant separately. To reduce the impact of outliers resulting from the noisy estimation of τ (due to this single subject and single voxel analysis), we assessed group difference with a non-parametric test (Mann-Whitney U test), in which extreme values are not over-weighted. We corrected for multiple comparison bias by requiring a cluster of contingent voxels with a significant group difference (cluster corrected for p<0.05, dictated 44 spatially contingent voxels, based on Monte-Carlo cluster-level correction). Significant regions were found in the left superior temporal cortex (TAL: −54,–18, 10) and in the right insular cortex (TAL: 39,–2, −8), outlined in magenta in Figure 1A and 1B. The superior temporal cortex is known to be involved in a broad range of auditory tasks, including simple tone discrimination (Daikhin and Ahissar, 2015), language (Fedorenko et al., 2010) and music (Fedorenko et al., 2011), and even social tasks (e.g. Deen et al., 2015). Thus, the group difference for this area was expected given the behavioral results. The right insular cortex is multi-modal (Bushara et al., 2003), and is also involved in introspection (Craig et al., 2000). A comparison of  Figures 1A and 1B suggests that other regions might have mean group differences (e.g., frontal cortices), but due to large inter-subject variability in these regions, the group differences were not significant. This large variability might account for the spurious dots of large τ values scattered throughout the cortical map (Figures 1A and 1B).
+To locate regions in which the fitted $\tau$ differs significantly between the groups, we conducted a whole-brain analysis, in which we fitted $\tau$ to each voxel, for each participant separately. To reduce the impact of outliers resulting from the noisy estimation of $\tau$ (due to this single subject and single voxel analysis), we assessed group difference with a non-parametric test (Mann-Whitney U test), in which extreme values are not over-weighted. We corrected for multiple comparison bias by requiring a cluster of contingent voxels with a significant group difference (cluster corrected for p<0.05, dictated 44 spatially contingent voxels, based on Monte-Carlo cluster-level correction). Significant regions were found in the left superior temporal cortex (TAL: −54,–18, 10) and in the right insular cortex (TAL: 39,–2, −8), outlined in magenta in Figure 1A and 1B. The superior temporal cortex is known to be involved in a broad range of auditory tasks, including simple tone discrimination (Daikhin and Ahissar, 2015), language (Fedorenko et al., 2010) and music (Fedorenko et al., 2011), and even social tasks (e.g. Deen et al., 2015). Thus, the group difference for this area was expected given the behavioral results. The right insular cortex is multi-modal (Bushara et al., 2003), and is also involved in introspection (Craig et al., 2000). A comparison of Figures 1A and 1B suggests that other regions might have mean group differences (e.g., frontal cortices), but due to large inter-subject variability in these regions, the group differences were not significant. This large variability might account for the spurious dots of large $\tau$ values scattered throughout the cortical map (Figures 1A and 1B).
 
-In addition to the whole-brain, data-driven analysis, we conducted an ROI, hypothesis-driven analysis. Given our previous ERP findings that P2 (and to a lesser extent N1) of individuals with dyslexia shows shorter adaptation (Jaffe-Dax et al., 2017), we conducted an ROI for the estimated cortical source of this ERP component. In a seminal MEG study (Lütkenhöner and Steinsträter, 1998), the source of N1 was attributed to Planum Temporale, and that of P2 to Heschl's gyrus. A more recent study (Mayhew et al., 2010) combined ERP and fMRI, and found significant correlations between variability in ERP-measured N1–P2 complex and BOLD responses in several regions, including the primary (Heschl's gyrus) and secondary (Planum Temporale and STG areas) auditory areas. Given these estimates, we conducted an ROI analysis on both primary and secondary auditory areas. We used a combined cytoarchitectonic (Morosan et al., 2001) and myeloarchitectonic (Dick et al., 2012) definition of these areas (the primary auditory cortex being composed of three sub-regions and two secondary auditory areas [Planum Temporale and Planum Polare]). We fitted the exponential decay model to the βs averaged over the right and the left primary auditory cortices (composed of 99 voxels each, denoted by the orange outlines in Figure 1A–1B), and over the two right and left secondary cortices. We found significant differences between the groups' τs in the left primary auditory cortex (z = 2.6, p<0.01, effect size r = 0.42; Mann-Whitney U-tests). In the right primary auditory cortex, the τ group difference showed the same trend, but did not reach significance (z = 1.5, p=0.15, effect size r = 0.23; Mann-Whitney U-tests). Figure 2 shows the βs estimated for the left and right primary auditory cortices of the control (blue) and dyslexic (red) participants on each of the four TOA blocks. None of the other sub-regions of auditory cortex yielded significant group differences.
+In addition to the whole-brain, data-driven analysis, we conducted an ROI, hypothesis-driven analysis. Given our previous ERP findings that P2 (and to a lesser extent N1) of individuals with dyslexia shows shorter adaptation (Jaffe-Dax et al., 2017), we conducted an ROI for the estimated cortical source of this ERP component. In a seminal MEG study (Lütkenhöner and Steinsträter, 1998), the source of N1 was attributed to Planum Temporale, and that of P2 to Heschl's gyrus. A more recent study (Mayhew et al., 2010) combined ERP and fMRI, and found significant correlations between variability in ERP-measured N1–P2 complex and BOLD responses in several regions, including the primary (Heschl's gyrus) and secondary (Planum Temporale and STG areas) auditory areas. Given these estimates, we conducted an ROI analysis on both primary and secondary auditory areas. We used a combined cytoarchitectonic (Morosan et al., 2001) and myeloarchitectonic (Dick et al., 2012) definition of these areas (the primary auditory cortex being composed of three sub-regions and two secondary auditory areas [Planum Temporale and Planum Polare]). We fitted the exponential decay model to the $\beta$s averaged over the right and the left primary auditory cortices (composed of 99 voxels each, denoted by the orange outlines in Figure 1A–1B), and over the two right and left secondary cortices. We found significant differences between the groups' $\tau$s in the left primary auditory cortex (z = 2.6, p<0.01, effect size r = 0.42; Mann-Whitney U-tests). In the right primary auditory cortex, the $\tau$ group difference showed the same trend, but did not reach significance (z = 1.5, p=0.15, effect size r = 0.23; Mann-Whitney U-tests). Figure 2 shows the $\beta$s estimated for the left and right primary auditory cortices of the control (blue) and dyslexic (red) participants on each of the four TOA blocks. None of the other sub-regions of auditory cortex yielded significant group differences.
 
 Taken together, the whole-brain and ROI analyses revealed a significant group difference in the timescales of adaptation in the left superior temporal cortex, left primary auditory cortex, and the right insular cortex. BOLD activity in both auditory regions was previously shown to correlate with the magnitude of N1–P2 responses (Mayhew et al., 2010). The right insular cortex is probably not associated with the P2 response that we measured with ERP and was therefore not predicted by our previous study. In addition, the general (though not significant) trend of shorter adaptation in participants with dyslexia was consistent across all responding voxels.
 
@@ -58,10 +58,122 @@ In summary, the data collected in this study point to the specific neural struct
 
 ## Materials and methods
 
-In the two-tone frequency discrimination task, subjects were asked to indicate which of two sequentially presented tones had a higher pitch. The tones were 50 ms long, presented at comfortable intensity, and were drawn from a uniform distribution between 800 Hz and 1250 Hz. The frequency difference within each pair was randomly drawn at between 1% and 20% (following the protocol in Jaffe-Dax et al., 2017). In the pre-training session (8 min), each participant performed one block of each of the four Trial Onset Asynchronies (TOAs) of 3, 6, 9, or 15 s, administered in four separate blocks in random order (each block consisted of 16 trials). These TOAs are longer than those in our previous ERP experiment (1.5, 3, 6, and 9 s, Jaffe-Dax et al., 2017), because the controls' ERP (N1 and P2) response at 9 s was still larger than that at 6 s. Each block had a constant TOA of 3, 6, 9, or 15 s. In the scanner, each participant performed three runs of four blocks (of 16 trials). The block design allowed us to measure the dynamics of adaptation in timescales that are independent of the sluggishness of typical hemodynamic response function (HRF), as we analyzed each block as a whole, and not on a trial-by-trial basis. Specifically, we modelled the magnitude of the BOLD signal in each block as a function of its TOA. This block design was used to estimate τ on the basis of the magnitude of the BOLD response. However, the number of trials was too small for robust estimation of behavioral context effects, which are based on the difference in success rate (binary scores for each trial) between trials that gain and those that are hampered by the context (Jaffe-Dax et al., 2017). Stimuli were digitally constructed using Matlab 2015b (The Mathworks Inc., Natwick, MA, USA) and administered through inserted sound-attenuating MR compatible S14 earphones (Sensimetrics Corporation, Malden, MA, USA). The demographic, cognitive and reading assessments of this cohort are described in Jaffe-Dax et al. (2017).
+In the two-tone frequency discrimination task, subjects were asked to indicate which of two sequentially presented tones had a higher pitch. The tones were 50 ms long, presented at comfortable intensity, and were drawn from a uniform distribution between 800 Hz and 1250 Hz. The frequency difference within each pair was randomly drawn at between 1% and 20% (following the protocol in Jaffe-Dax et al., 2017). In the pre-training session (8 min), each participant performed one block of each of the four Trial Onset Asynchronies (TOAs) of 3, 6, 9, or 15 s, administered in four separate blocks in random order (each block consisted of 16 trials). These TOAs are longer than those in our previous ERP experiment (1.5, 3, 6, and 9 s, Jaffe-Dax et al., 2017), because the controls' ERP (N1 and P2) response at 9 s was still larger than that at 6 s. Each block had a constant TOA of 3, 6, 9, or 15 s. In the scanner, each participant performed three runs of four blocks (of 16 trials). The block design allowed us to measure the dynamics of adaptation in timescales that are independent of the sluggishness of typical hemodynamic response function (HRF), as we analyzed each block as a whole, and not on a trial-by-trial basis. Specifically, we modelled the magnitude of the BOLD signal in each block as a function of its TOA. This block design was used to estimate $\tau$ on the basis of the magnitude of the BOLD response. However, the number of trials was too small for robust estimation of behavioral context effects, which are based on the difference in success rate (binary scores for each trial) between trials that gain and those that are hampered by the context (Jaffe-Dax et al., 2017). Stimuli were digitally constructed using Matlab 2015b (The Mathworks Inc., Natwick, MA, USA) and administered through inserted sound-attenuating MR compatible S14 earphones (Sensimetrics Corporation, Malden, MA, USA). The demographic, cognitive and reading assessments of this cohort are described in Jaffe-Dax et al. (2017).
+
+**Table 1.**
+ General characteristics of the participants in this study (mean and standard deviation).The assessments used in this study were the same as in our previous study (Jaffe-Dax et al., 2017).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Control group</th>
+      <th>Dyslexic group</th>
+      <th>Mann-Whitney z value</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N = 19</th>
+      <th>N = 20</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>25.9 (2.6)</td>
+      <td>24.5 (2.6)</td>
+      <td>1.7 n.s.</td>
+    </tr>
+    <tr>
+      <td colspan="4">General cognitive (scaled)</td>
+    </tr>
+    <tr>
+      <td>Block design</td>
+      <td>13.1 (3.2)</td>
+      <td>12.4 (2.9)</td>
+      <td>0.6 n.s.</td>
+    </tr>
+    <tr>
+      <td>Digit span</td>
+      <td>11.1 (2.9)</td>
+      <td>7.5 (1.9)</td>
+      <td>4.0****</td>
+    </tr>
+    <tr>
+      <td colspan="4">Phonological speed [items/minute]</td>
+    </tr>
+    <tr>
+      <td>Pseudo-word reading rate</td>
+      <td>64.0 (25.2)</td>
+      <td>31.9 (9.7)</td>
+      <td>3.9****</td>
+    </tr>
+    <tr>
+      <td>Single-word reading rate</td>
+      <td>101.6 (35.2)</td>
+      <td>69.2 (21.3)</td>
+      <td>3.0***</td>
+    </tr>
+    <tr>
+      <td>Word pattern recognition rate</td>
+      <td>69.8 (15.6)</td>
+      <td>41.7 (11.8)</td>
+      <td>4.5****</td>
+    </tr>
+    <tr>
+      <td>Passage reading rate</td>
+      <td>142.2 (23.9)</td>
+      <td>100.7 (17.4)</td>
+      <td>4.5****</td>
+    </tr>
+    <tr>
+      <td>Spoonerism rate</td>
+      <td>9.9 (3.0)</td>
+      <td>5.7 (3.1)</td>
+      <td>3.8****</td>
+    </tr>
+    <tr>
+      <td colspan="4">Phonological accuracy [% correct]</td>
+    </tr>
+    <tr>
+      <td>Pseudo-word reading accuracy</td>
+      <td>90.6 (11.9)</td>
+      <td>63.5 (18.4)</td>
+      <td>4.0****</td>
+    </tr>
+    <tr>
+      <td>Single-word reading accuracy</td>
+      <td>97.2 (4.3)</td>
+      <td>89.0 (6.5)</td>
+      <td>3.7****</td>
+    </tr>
+    <tr>
+      <td>Word pattern recognition accuracy</td>
+      <td>100.0 (0.0)</td>
+      <td>98.27 (3.1)</td>
+      <td>2.5**</td>
+    </tr>
+    <tr>
+      <td>Passage reading accuracy</td>
+      <td>98.7 (1.2)</td>
+      <td>95.4 (2.3)</td>
+      <td>4.1****</td>
+    </tr>
+    <tr>
+      <td>Spoonerism accuracy</td>
+      <td>90.8 (6.9)</td>
+      <td>77.8 (17.2)</td>
+      <td>2.5**</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p < 0.05; **p<0.01; ***p<0.005; ****p<0.0005._
 
 Before the functional scan, high-resolution (1 × 1 × 1 mm resolution) T1-weighted magnetization-prepared rapid acquisition gradient-echo (MPRAGE) images were acquired using a 3T Magnetom Skyra Siemens scanner and a 32-channel head coil at the ELSC Neuroimaging Unit (ENU). The cortical surface was reconstructed from the high-resolution anatomical images using standard procedures implemented by the BrainVoyager QX software package (version 2.84; Brain Innovation, The Netherlands). The functional T2*-weighted MRI protocols were based on a multislice gradient echo-planar imaging and obtained under the following parameters: TR = 1 s, TE = 30 ms, flip angle = 90°, imaging matrix = 64 × 64, field-of-view=192 mm; 42 slices with 3 mm slice thickness and no gap were oriented in AC-PC plane, covering the whole brain, with functional voxels of 3 × 3 × 3 mm and multiband parallel imaging with an acceleration factor of 3 (Moeller et al., 2010).
 
-Preprocessing of functional scans in BrainVoyager included 3D motion correction, slice scan time correction, and removal of low frequencies up to three cycles per scan (linear trend removal and high-pass filtering). The anatomical and functional images were transformed to the Talairach coordinate system using trilinear interpolation. Each voxel’s time course was z-score normalized and smoothed using a 3D Gaussian filter (full width at half maximum [FWHM] of 4 mm). A standard (two gamma) hemodynamic response function (Friston et al., 1998) was convolved with the trial timings of each TOA block to build four predictors for the subsequent GLM analysis. For all task-responsive voxels (p<0.001, FDR corrected; Benjamini and Yekutieli, 2001), each TOA condition was modeled separately to account for its contribution to the measured BOLD signal in each voxel. Specifically, a single β value was obtained for each TOA condition. An exponential decay model (see 'Results') was fitted to these β values, and its parameters were estimated for each voxel in each subject using a least-square method. For ROI analysis, the MNI coordinates of auditory cortex subdivision were obtained from Morosan et al., 2001 and translated into Talairach coordinates using Yale BioImage Suite Package (sprout022.sprout.yale.edu/mni2tal/mni2tal.html; Lacadie et al., 2008). The BOLD signal was averaged for each ROI and then the β values of the four TOA blocks were fitted to the exponential decay.
+Preprocessing of functional scans in BrainVoyager included 3D motion correction, slice scan time correction, and removal of low frequencies up to three cycles per scan (linear trend removal and high-pass filtering). The anatomical and functional images were transformed to the Talairach coordinate system using trilinear interpolation. Each voxel’s time course was z-score normalized and smoothed using a 3D Gaussian filter (full width at half maximum [FWHM] of 4 mm). A standard (two gamma) hemodynamic response function (Friston et al., 1998) was convolved with the trial timings of each TOA block to build four predictors for the subsequent GLM analysis. For all task-responsive voxels (p<0.001, FDR corrected; Benjamini and Yekutieli, 2001), each TOA condition was modeled separately to account for its contribution to the measured BOLD signal in each voxel. Specifically, a single $\beta$ value was obtained for each TOA condition. An exponential decay model (see 'Results') was fitted to these $\beta$ values, and its parameters were estimated for each voxel in each subject using a least-square method. For ROI analysis, the MNI coordinates of auditory cortex subdivision were obtained from Morosan et al., 2001 and translated into Talairach coordinates using Yale BioImage Suite Package (sprout022.sprout.yale.edu/mni2tal/mni2tal.html; Lacadie et al., 2008). The BOLD signal was averaged for each ROI and then the $\beta$ values of the four TOA blocks were fitted to the exponential decay.
 
 Whole-brain significance results were corrected for multiple comparison false-positive biases by a Monte-Carlo cluster correction (Forman et al., 1995), implemented using a plug-in of BrainVoyager (Goebel et al., 2006). The Monte-Carlo procedure was given an a-priori chosen probability for type I error of 0.05 and yielded a cluster threshold of 44 voxels. Non-parametric tests (Mann-Whitney’s U-test) were used for group comparisons, as we did not assume a normal distribution, as in our previous study (Jaffe-Dax et al., 2017).

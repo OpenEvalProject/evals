@@ -47,7 +47,7 @@
 
 ## Abstract
 
-10.7554/eLife.16940.001 A central tenet of skeletal muscle biology is the existence of an inverse relationship between the oxidative fibre capacity and its size. However, robustness of this relationship is unknown. We show that superimposition of Estrogen-related receptor gamma ( Errγ ) on the myostatin (Mtn) mouse null background ( Mtn ) results in hypertrophic muscle with a high oxidative capacity thus violating the inverse relationship between fibre size and oxidative capacity. We also examined the canonical view that oxidative muscle phenotype positively correlate with Satellite cell number, the resident stem cells of skeletal muscle. Surprisingly, hypertrophic fibres from -/- /Errγ Tg/+ Mtn mouse showed satellite cell deficit which unexpectedly did not affect muscle regeneration. These observations 1) challenge the concept of a constraint between fibre size and oxidative capacity and 2) indicate the important role of the microcirculation in the regenerative capacity of a muscle even when satellite cell numbers are reduced. -/- /Errγ Tg/+ DOI: http://dx.doi.org/10.7554/eLife.16940.001
+A central tenet of skeletal muscle biology is the existence of an inverse relationship between the oxidative fibre capacity and its size. However, robustness of this relationship is unknown. We show that superimposition of Estrogen-related receptor gamma (Errγ) on the myostatin (Mtn) mouse null background (Mtn-/-/ErrγTg/+) results in hypertrophic muscle with a high oxidative capacity thus violating the inverse relationship between fibre size and oxidative capacity. We also examined the canonical view that oxidative muscle phenotype positively correlate with Satellite cell number, the resident stem cells of skeletal muscle. Surprisingly, hypertrophic fibres from Mtn-/-/ErrγTg/+ mouse showed satellite cell deficit which unexpectedly did not affect muscle regeneration. These observations 1) challenge the concept of a constraint between fibre size and oxidative capacity and 2) indicate the important role of the microcirculation in the regenerative capacity of a muscle even when satellite cell numbers are reduced.
 
 ## Introduction
 
@@ -67,67 +67,67 @@ The main observations of the study are firstly that the muscles of Mtn-/-/ErrγT
 
 ## Results
 
-## Body and skeletal muscle mass
+### Body and skeletal muscle mass
 
-Introduction of Errγ in a skeletal muscle-specific manner into the
+Introduction of Errγ in a skeletal muscle-specific manner into the Mtn-/- background to generate double transgenic Mtn-/-/ErrγTg/+ resulted in viable, fertile offspring that were born at the expected Mendelian ratios. Firstly, we found that the HSA promoter used induced robust over-expression of Errγ in the Mtn-/- background (Figure 1A). The body mass of WT, Mtn-/- and Mtn-/-/ErrγTg/+ animals was similar at 12 weeks of age (Figure 1B). However, the EDL, gastrocnemius, soleus and TA muscles were in both Mtn-/- and Mtn-/-/ErrγTg/+ approximately 43%, 44%, 47% and 70% larger than their WT counterpart, respectively (Figure 1C–F). Importantly, there was no significant difference in mass for any of the muscles from Mtn-/- and Mtn-/-/ErrγTg/+ mice (Figure 1C–F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig1-v2.jpg)
 
-**Figure 1.:** (A) ERRγ mRNA levels. (B) Body and (C–F) skeletal muscle mass in wild type (Wt), myostatin null (Mtn) and ERRγ transgenic mice on the myostatin null background (Mtn:Eγ). (G) Exercise tolerance test on a mouse treadmill. (H–I) Contractile properties of the EDL muscle. Specific force denotes tetanic force normalized to wet muscle mass. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.002
+**Figure 1.:** (A) ERRγ mRNA levels. (B) Body and (C–F) skeletal muscle mass in wild type (Wt), myostatin null (Mtn) and ERRγ transgenic mice on the myostatin null background (Mtn:Eγ). (G) Exercise tolerance test on a mouse treadmill. (H–I) Contractile properties of the EDL muscle. Specific force denotes tetanic force normalized to wet muscle mass. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Contractile properties of the Soleus. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05DOI: http://dx.doi.org/10.7554/eLife.16940.003
+**Figure 1—figure supplement 1.:** (A) Contractile properties of the Soleus. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05
 
-## Exercise capacity
+### Exercise capacity
 
 Using the running to exhaustion protocol on a treadmill, we found that Mtn-/- mice performed worse than WT. However the Mtn-/-/ErrγTg/+ ran for approximately 80% longer than the Mtn-/- and 25% longer than the WT mice (Figure 1G).
 
-## Force generating capacity
+### Force generating capacity
 
 We found that the maximal isometric tetanic force generated by the EDL of Mtn-/- was not significantly different from that of the WT mice, despite the larger muscle mass (Figure 1H). The tetanic force generated by Mtn-/-/ErrγTg/+ EDL was, however, greater than that of the EDL from both WT and Mtn-/- mice. We next calculated the Specific Force (sPo), the tetanic force per muscle mass. The sPo of the EDL of Mtn-/- mice was lower that of the other groups, with that of the Mtn-/-/ErrγTg/+ mice being significantly greater than Mtn-/- mice, but not normalized to WT levels (Figure 1I). We also examined the force generating capacity of the soleus. The tetanic force of Mtn-/- soleus muscle was significantly lower than those of WT. There was no difference in this parameter between the soleus muscles of WT and Mtn-/-/ErrγTg/+ (Figure 1—figure supplement 1A). The specific force of the soleus showed the same overall profile as that of the EDL but did not reach statistical significance, possibly due to low sample size (Figure 1—figure supplement 1A).
 
-## Muscle fibre number, area and MHC profile
+### Muscle fibre number, area and MHC profile
 
-The increased muscle mass in
+The increased muscle mass in Mtn-/- mice are due to both hypertrophy and hyperplasia. We found that the introduction of Errγ into Mtn-/- did not significantly change the number of fibres normally seen in Mtn-/- EDL (Figure 2A–B) or soleus muscles (Figure 2—figure supplement 1A–B) both of which were greater than in WT. The fibre sizes were equivalent in the EDL of Mtn-/- and Mtn-/-/ErrγTg/+ mice. Of particular note was that the MHCIIB fibres in the EDL were approximately 270% larger in both Mtn-/- and Mtn-/-/ErrγTg/+ compared to WT (Figure 2B). The other notable result was the smaller size of MHCIIA fibres in Mtn-/-/ErrγTg/+ than Mtn-/-, but they were still larger than those in the WT (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative immunohistochemical images for MHC IIA and IIB staining in the EDL muscle. (B) EDL total fibre number and myofibre cross sectional area (CSA, μm2). (C) EDL, soleus and superficial TA muscle fibre type composition (D) Protein expression of key regulators that control anabolism (pAKT, p4EBP1) and catabolism (pFoxO3) in the gastrocnemius muscle. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.DOI: http://dx.doi.org/10.7554/eLife.16940.004
+**Figure 2.:** (A) Representative immunohistochemical images for MHC IIA and IIB staining in the EDL muscle. (B) EDL total fibre number and myofibre cross sectional area (CSA, μm2). (C) EDL, soleus and superficial TA muscle fibre type composition (D) Protein expression of key regulators that control anabolism (pAKT, p4EBP1) and catabolism (pFoxO3) in the gastrocnemius muscle. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Representative immunohistochemical images for MHC I (red) and IIA (green) staining in the soleus muscle. (B) Soleus total fibre number and MHC myofibre cross sectional area (CSA, μm2). N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.005
+**Figure 2—figure supplement 1.:** (A) Representative immunohistochemical images for MHC I (red) and IIA (green) staining in the soleus muscle. (B) Soleus total fibre number and MHC myofibre cross sectional area (CSA, μm2). N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 Introduction of Errγ into Mtn-/- caused a partial reversal of MHC profile of Mtn-/- towards the WT condition in all muscles examined (Figure 2C and Figure 2—figure supplement 1A and C). This conversion was only detected within the MHCII subtypes but did not extend to normalization of the proportion of MHCI fibres; in the soleus of Mtn-/-/ErrγTg/+, the proportion of MHCIIB fibres was lower than that in Mtn-/- while that of MHCIIA fibres was higher. Nevertheless, both Mtn-/- and Mtn-/-/ErrγTg/+ display a lower proportion of MHCI fibres in the soleus muscle than WT (Figure 2C).
 
 Next, we examined the mechanism underpinning fibre enlargement. We found that the levels of phosphorylated Akt (an inducer of anabolism) were higher in the muscle of Mtn-/- and Mtn-/-/ErrγTg/+ compared to WT (Figure 2D). A similar relationship was discovered for its downstream target 4EBP1 (Figure 2D). Akt not only promotes protein synthesis but also suppresses catabolism partly by phosphorylating and thereby inactivating FoxO3. We found that deletion of Mtn resulted in an increased ratio of the inactive:active (phosphorylated:non-phosphorylated) form of FoxO3. However, in muscles of Mtn-/-/ErrγTg/+ mice the levels of inactive FoxO3 were lower than in that of the Mtn-/- (Figure 2D).
 
-## Oxidative fibre profiling and vascular organisation
+### Oxidative fibre profiling and vascular organisation
 
-In all muscles examined, the intensity of the SDH staining (measure of oxidative activity) of fibres was lower in muscle from
+In all muscles examined, the intensity of the SDH staining (measure of oxidative activity) of fibres was lower in muscle from Mtn-/- compared to WT (Figure 3A and Figure 3—figure supplement 1A–B). However, upon over-expression of Errγ, the intensity of SDH staining in fibres of Mtn-/- muscle was restored to that of WT. Indeed, also the number of SDH positive fibres was higher than that seen in even the WT muscles albeit not significantly so (Figure 3A and Figure 3—figure supplement 1C). Introduction of Errγ into Mtn-/- also caused normalization of the number PAS positive fibres (Figure 3A and Figure 3—figure supplement 1D). The capillary to fibre ratio (C:F); was lowest in the muscles of Mtn-/- mice and highest in those of the Mtn-/-ErrγTg/+ mice (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig3-v2.jpg)
 
-**Figure 3.:** (A) SDH staining and quantification of EDL and soleus muscles of Wt, Mtn and Mtn:Eγ mice. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001. (B) Muscle capillary density as determined by CD31 staining. (C) Pair-wise comparisons of the metabolic profiles obtained from the gastrocnemius muscle from WT, Mtn and Mtn:Eγ mice. Principal components analysis (PCA) scores plots comparing WT, Mtn and Mtn:Eγ; WT and Mtn:Eγ; as well as Mtn and Mtn:Eγ); (% variance in the parenthesis). Colour loadings plots shown for PC1 of the model comparing Mtn and Mtn:Eγ. Product of PC loadings with standard deviation of the entire data set coloured by the square of the PC loading.DOI: http://dx.doi.org/10.7554/eLife.16940.006
+**Figure 3.:** (A) SDH staining and quantification of EDL and soleus muscles of Wt, Mtn and Mtn:Eγ mice. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001. (B) Muscle capillary density as determined by CD31 staining. (C) Pair-wise comparisons of the metabolic profiles obtained from the gastrocnemius muscle from WT, Mtn and Mtn:Eγ mice. Principal components analysis (PCA) scores plots comparing WT, Mtn and Mtn:Eγ; WT and Mtn:Eγ; as well as Mtn and Mtn:Eγ); (% variance in the parenthesis). Colour loadings plots shown for PC1 of the model comparing Mtn and Mtn:Eγ. Product of PC loadings with standard deviation of the entire data set coloured by the square of the PC loading.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Representative immunohistochemical images for MHC IIB (red) and IIA (green) staining in deep and superficial regions of the TA muscle. (B) SDH staining of the deep TA muscle. (C) MHC myofibre and SDH profiling of the deep TA muscle. (D) PAS staining and quantification of the deep TA muscle. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.007
+**Figure 3—figure supplement 1.:** (A) Representative immunohistochemical images for MHC IIB (red) and IIA (green) staining in deep and superficial regions of the TA muscle. (B) SDH staining of the deep TA muscle. (C) MHC myofibre and SDH profiling of the deep TA muscle. (D) PAS staining and quantification of the deep TA muscle. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
-## Metabonomics
+### Metabonomics
 
 The muscle metabolite profile was characterized by 1H NMR spectroscopy. To identify any metabolic variation driven by the genotypic differences, principal components analysis (PCA) was applied to these profiles. A clear clustering was observed in the scores plot comparing all three genotypic groups demonstrating that they had distinctive metabolite profiles (Figure 3C). Comparing the metabolic signature of the Mtn-/- muscle to the Mtn-/-/ErrγTg/+ showed clear differences between the two groups (Figure 3C) characterised by significantly greater levels of muscle lactate in Mtn-/- muscle compared to that of the Mtn-/-/ErrγTg/+ consistent with a greater glycolytic phenotype. Furthermore the levels of creatine/phosphocreatine were also more pronounced in the muscle from Mtn-/- compared to Mtn-/-/ErrγTg/+. Errγ modification led to higher taurine and anserine content in the muscle of these animals.
 
 Therefore, histochemical and NMR muscle profiles of the three genotypic groups provide further evidence that Errγ modification of Mtn-/- results in a remodeling of phenotype to a state that differentiates it not only from Mtn-/- but also WT.
 
-## Metabolic gene profile
+### Metabolic gene profile
 
-Key molecular and cellular features that would explain the metabolic profile of
+Key molecular and cellular features that would explain the metabolic profile of Mtn-/-/ErrγTg/+ muscle were defined. In the first instance, we examined key regulators of energy metabolism. We found that Errγ over-expression induced changes in levels of two key transcriptional regulators of metabolism; Perm1 and Pgc1a in Mtn-/- muscle (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig4-v2.jpg)
 
-**Figure 4.:** (A) Gene expression levels of transcriptional regulators, glucose metabolism regulators, oxidative metabolism genes, antioxidant and oxygen handling genes and fat metabolism genes. (B) Angiogenic gene expression. ‘a’ denotes changed significantly from WT and ‘b’ denotes changes significantly from Mtn. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.008
+**Figure 4.:** (A) Gene expression levels of transcriptional regulators, glucose metabolism regulators, oxidative metabolism genes, antioxidant and oxygen handling genes and fat metabolism genes. (B) Angiogenic gene expression. ‘a’ denotes changed significantly from WT and ‘b’ denotes changes significantly from Mtn. N = 5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, p<0.05.
 
 Next, we examined the expression of key regulators of glucose and fatty acid oxidation (Glut1, Glut4, Pdk4 and Had, Lpl and Cycs respectively). We found that Glut4 and Pdk4 were lower in Mtn-/-/ErrγTg/+ compared to Mtn-/-. Moreover, Had and Lpl, was higher in Mtn-/-/ErrγTg/+ than in Mtn-/-. Of particular note was the finding that the expression of markers of fatty acid metabolism, Had and Lpl, were not only higher in Mtn-/-/ErrγTg/+ than in Mtn-/- but also than in the WT condition (Figure 4A).
 
@@ -139,55 +139,55 @@ We established if the differences in oxidative metabolism between Mtn-/- and Mtn
 
 Therefore, the musclespecific expression of Errγ in Mtn-/- mice not only normalizes its metabolic molecular profile but also results in a better microvascular supply of the muscle.
 
-## Ultra-structure
+### Ultra-structure
 
-The ultra-structure of muscle in the three cohorts were examined. Using transmission electron microscopy, we found a number of abnormalities in the structure of muscle from
+The ultra-structure of muscle in the three cohorts were examined. Using transmission electron microscopy, we found a number of abnormalities in the structure of muscle from Mtn-/- mice heterogeneously sized sarcomeres, misaligned and disrupted Z-Lines, large inter-sarcomeric spaces and altered mitochondrial distribution and size (Figure 5A). In contrast, the muscle from Mtn-/-/ErrγTg/+ largely lacked these abnormalities (Figure 5A). We found that the density of mitochondria in both sub-membrane and intrafusal locations was decreased significantly following the deletion of Mtn. However, the expression of Errγ significantly increased the mitochondrial density at both locations compared to Mtn-/- and at the major site, the sub-membrane region, increased it even compared to WT. Mitochondrial hypertrophy has been postulated to compensate for decreased mitochondrial number or function. Hypertrophy is thought to either protect against apoptosis or for functional mitochondria to fuse with aberrant ones resulting in the maintenance of cell function (Frank et al., 2001; Ono et al., 2001). Mitochondrial hypertrophy was evident in both compartments in muscle from Mtn-/- (Figure 5B–E) and was normalized by Errγ in the sub-membrane region (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig5-v2.jpg)
 
-**Figure 5.:** (A) Transmission electron microscopy images in longitudinal and transverse sections of WT, Mtn and Mtn:Eγ muscle, scale 0.5 μm. Note the large spaces (red arrow) disrupted Z-lines (red arrowhead) and non-uniform sarcomere width (yellow arrows). (B) Quantification of submembrane mitochondrial density. (C) Quantification of Intrafusal mitochondrial density. (D) Quantification of submembrane mitochondrial size. (E) Quantification of intrafusal mitochondrial size. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.009
+**Figure 5.:** (A) Transmission electron microscopy images in longitudinal and transverse sections of WT, Mtn and Mtn:Eγ muscle, scale 0.5 μm. Note the large spaces (red arrow) disrupted Z-lines (red arrowhead) and non-uniform sarcomere width (yellow arrows). (B) Quantification of submembrane mitochondrial density. (C) Quantification of Intrafusal mitochondrial density. (D) Quantification of submembrane mitochondrial size. (E) Quantification of intrafusal mitochondrial size. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 These results show that the deletion of Mtn leads to numerous ultra-structural abnormalities. Over-expression of Errγ in the Mtn-/- prevents almost all the ultra-structural abnormalities.
 
-## Myonuclear organization and satellite cell
+### Myonuclear organization and satellite cell
 
-We next examined the features of individual muscle fibres to determine the effect of Errγ in
+We next examined the features of individual muscle fibres to determine the effect of Errγ in Mtn-/- mice. We found, that deletion of Mtn resulted in fewer satellite cells compared to WT and that the number of satellite cells was even lower in the muscles of the Mtn-/-/ErrγTg/+ mice (Figure 6A,C and D). Next, we determined proliferation and differentiation characteristics of satellite cells in the three cohorts. We found that following 48 hr of culture, the number of progeny had increased in all the genotypes but the proportional relationship found in uncultured fibres persisted (Figure 6E–F). During the 48 hr period of culture, satellite cells not only divide but also form clusters (Figure 6G–H). We found that the number of clusters were similar in fibres from WT and Mtn-/- (Figure 6G), but there were fewer clusters in the Mtn-/-/ErrγTg/+-derived cultures. The number of cells per cluster was highest in WT and lowest in the Mtn-/- with that of the Mtn-/-/ErrγTg/+ in between the two (Figure 6H). Finally, we found deletion of Mtn and the introduction of Errγ did not impact on the process of differentiation (Figure 6I).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig6-v2.jpg)
 
-**Figure 6.:** (A) Single EDL muscle fibres stained with DAPI to visualize myonuclei. (B) Quantification of myonuclear number in EDL fibres. (C) Quiescent satellite cells stained for Pax7 on freshly isolated (T = 0 hr) muscle fibres from the EDL (arrowhead). (D) Quantification of satellite cell number on freshly isolated EDL fibres. (E) Single muscle fibres after 48 hr in cell culture stained for DAPI, Pax7 and MyoD (arrowhead). (F) Quantification of total number of cells on muscle fibre at 48 hr. (G) Quantification of satellite cell clusters at 48 hr. (H) Cluster size at 48 hr on muscle fibres. (I) Profiling of differentiation at 48 hr. (J) Confocal stacks of single fibres labelled with DAPI to study myonuclear organization. (K) Virtual reconstruction of single muscle fibres, colour encondes distance in the z-plane. (L) Improvement in myonuclear organization, where 0% denote a random distribution. Fibres were from 4 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.DOI: http://dx.doi.org/10.7554/eLife.16940.010
+**Figure 6.:** (A) Single EDL muscle fibres stained with DAPI to visualize myonuclei. (B) Quantification of myonuclear number in EDL fibres. (C) Quiescent satellite cells stained for Pax7 on freshly isolated (T = 0 hr) muscle fibres from the EDL (arrowhead). (D) Quantification of satellite cell number on freshly isolated EDL fibres. (E) Single muscle fibres after 48 hr in cell culture stained for DAPI, Pax7 and MyoD (arrowhead). (F) Quantification of total number of cells on muscle fibre at 48 hr. (G) Quantification of satellite cell clusters at 48 hr. (H) Cluster size at 48 hr on muscle fibres. (I) Profiling of differentiation at 48 hr. (J) Confocal stacks of single fibres labelled with DAPI to study myonuclear organization. (K) Virtual reconstruction of single muscle fibres, colour encondes distance in the z-plane. (L) Improvement in myonuclear organization, where 0% denote a random distribution. Fibres were from 4 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.
 
 Myonuclear number and organization were then determined. First, there were significantly more myonuclei in the fibres of Mtn-/-/ErrγTg/+ compared to WT (Figure 6A–B). Secondly, we examined the distribution of myonuclei within a fibre. This is thought to be a regulated process since myonuclei position is important to minimize issues related to macromolecule movement in larger cells. Therefore the degree of regulation is inversely proportional to random positioning of the nuclei (Bruusgaard et al., 2003). In order to quantify this, we calculated the distance to the nearest neighbour for the nuclei located at the periphery of single fibres from WT, Mtn-/- and Mtn-/-/ErrγTg/+ mice. Confocal stacks of single fibres labelled with DAPI (Figure 6J) were used to generate the 3D coordinates of each nucleus in a fibre (Figure 6K) using Imaris software. Using custom made software, a simulation of randomly and optimally distributed nuclei was compared to the actual distribution (see Materials and methods). The WT fibres displayed an improvement from a random distribution of 20%. However Mtn-/- and Mtn-/-/ErrγTg/+ fibres had distributions that were more random, with significantly lower improvements of 10% and 4%, respectively (Figure 6L). These results show that the expression of Errγ in the Mtn-/- does not normalize key features related to either the satellite cells, myonuclei number of their positioning.
 
-## Skeletal muscle regeneration
+### Skeletal muscle regeneration
 
 Thus, far all the changes in muscle resulting from the over–expression of Errγin theMtn-/- were beneficial except for a lower number of satellite cells. In this section we determined the consequence of this deficit on the ability of skeletal muscle to regenerate, a process reliant on satellite cells. To that end, we induced injury of the TA using cardiotoxin and the progression of regeneration assessed at three crucial time points; day three (D3) as the process of debris clearance is ongoing and regeneration of fibres begins, day six (D6) when robust fibre regeneration can be quantified and day fourteen (D14) when debris clearance has been completed.
 
-At D3 the muscle clearance of dying fibres was slowest in
+At D3 the muscle clearance of dying fibres was slowest in Mtn-/- compared to the other two genotypes (Figure 7A–B). Clearance is mediated in part by macrophages and we found that the density of macrophages was highest in the muscle of Mtn-/-/ErrγTg/+ compared to either Mtn-/- or WT (Figure 7C–D). Furthermore, we found that the TA from Mtn-/-/ErrγTg/+ at the early stages of generation contained the highest number of committed muscle cells (Figure 7E–F).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig7-v2.jpg)
 
-**Figure 7.:** Skeletal muscle regeneration in response to cardiotoxin injury. (A) Muscle necrotic fibres visualized by IgG staining at Day 3 (arrows). (B) Quantification of dying fibre size at Day 3. (C) Macrophage infiltration in the TA muscle using an F4.80 antibody at Day 3 (arrows). (D) Quantification of macrophage density in damaged muscle. (E) Myogenic progenitors at Day 3. Pax-7 detection in green, MyoD expressing cells in red (arrows). (F) Quantification of uncommitted muscle cells (Pax-7+/MyoD-), precursor (Pax-7+/MyoD+) and committed (Pax-7-/MyoD+) muscle cells at Day 3. (G) Expression of embryonic myosin heavy chain on Day 6 (arrows). (H) Quantification of regenerating muscle fibres at Day 6. (I) Necrotic fibres at Day 6 detected via infiltrated fibre IgG profiling (arrows). (J) Quantification of dying muscle fibres at Day 6. (K) Cleaved caspase 3 staining at Day 6 as a marker of apoptosis (arrows). (L) Quantification of apoptotic density at Day 6. (M) Macrophage infiltration in the TA on Day 6 (arrows). (N) Quantification of macrophage infiltration at Day 6. (O) Myogenic progenitors on Day 6. Pax-7 detection in green, MyoD expressing cells in red (arrows). (P) Quantification of uncommitted muscle cells (Pax-7+/MyoD-), precursor (Pax-7+/MyoD+) and committed (Pax-7-/MyoD+) muscle cells at Day 6. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.DOI: http://dx.doi.org/10.7554/eLife.16940.011
+**Figure 7.:** Skeletal muscle regeneration in response to cardiotoxin injury. (A) Muscle necrotic fibres visualized by IgG staining at Day 3 (arrows). (B) Quantification of dying fibre size at Day 3. (C) Macrophage infiltration in the TA muscle using an F4.80 antibody at Day 3 (arrows). (D) Quantification of macrophage density in damaged muscle. (E) Myogenic progenitors at Day 3. Pax-7 detection in green, MyoD expressing cells in red (arrows). (F) Quantification of uncommitted muscle cells (Pax-7+/MyoD-), precursor (Pax-7+/MyoD+) and committed (Pax-7-/MyoD+) muscle cells at Day 3. (G) Expression of embryonic myosin heavy chain on Day 6 (arrows). (H) Quantification of regenerating muscle fibres at Day 6. (I) Necrotic fibres at Day 6 detected via infiltrated fibre IgG profiling (arrows). (J) Quantification of dying muscle fibres at Day 6. (K) Cleaved caspase 3 staining at Day 6 as a marker of apoptosis (arrows). (L) Quantification of apoptotic density at Day 6. (M) Macrophage infiltration in the TA on Day 6 (arrows). (N) Quantification of macrophage infiltration at Day 6. (O) Myogenic progenitors on Day 6. Pax-7 detection in green, MyoD expressing cells in red (arrows). (P) Quantification of uncommitted muscle cells (Pax-7+/MyoD-), precursor (Pax-7+/MyoD+) and committed (Pax-7-/MyoD+) muscle cells at Day 6. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05, #p<0.01, ¥p<0.001.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** (A) Abundance of eMHC fibres in CTX damaged TA after 14 days. (B) Cross sectional area of regenerating centrally locating nuclei containing fibres in damaged TA after 14 days. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.012
+**Figure 7—figure supplement 1.:** (A) Abundance of eMHC fibres in CTX damaged TA after 14 days. (B) Cross sectional area of regenerating centrally locating nuclei containing fibres in damaged TA after 14 days. N = 3 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 By D6, there was a greater degree of regeneration (size of newly formed eMHC+ fibres) in Mtn-/-/ErrγTg/+ compared to either Mtn-/- or WT (Figure 7G–H) and a more advanced removal of dying fibres in Mtn-/-/ErrγTg/+ than in Mtn-/- (Figure 7I–J). We also found evidence for a lower amount of cell death in the regenerating areas of Mtn-/-/ErrγTg/+ than Mtn-/- or WT mice (Figure 7K–L). At D6 macrophage activity was still high in the muscle of Mtn-/-/ErrγTg/+ compared to either Mtn-/- or wild type (Figure 7M–N) as were the number of committed (Myo+/Pax7-) muscle progenitor cells (Figure 7O–P). Precocious differentiation could lead to an exhaustion of cells which would ultimately attenuate fibre size. To examine this line of thought we examined damaged muscles at an advanced stage of regeneration (D14). We found further evidence for accelerated regeneration in the Mtn-/-/ErrγTg/+ compared to either Mtn-/- or WT gauged by a decrease in the density of fibres still expressing eMHC (Figure 7—figure supplement 1A). Importantly, there was no deficit in the size of newly regenerated fibre in the muscle of Mtn-/-/ErrγTg/+ mice (Figure 7—figure supplement 1B). These results show that even though the muscles of Mtn-/-/ErrγTg/+ have fewer satellite cells than the muscles of the WT and Mtn-/- mice, their muscle regenerating capacity exceeds that of both Mtn-/- and WT mice.
 
-## Non-genetic post-natal induction of oxidative skeletal muscle growth
+### Non-genetic post-natal induction of oxidative skeletal muscle growth
 
 Our newly generated hypermuscular, hyper-oxidative mouse line (Mtn-/-/ErrγTg/+) displays a number of characteristics that make them attractive both in terms of physiology and regeneration. However, the muscle phenotype in these models is largely established during embryonic and post-natal development. Therefore, we next established if similar phenotypes could be obtained via non-genetic modifications. To do so, we inhibited Mtn at post-natal stages in ErrγTg/+ mice (which displays an increased oxidative profile) by weekly injections of soluble activin receptor IIB protein (sActRIIB), which has been shown to antagonize signalling mediated by myostatin and related-proteins.
 
-Following 8 weeks of weekly injections we found that sActRIIB caused an increase in the body mass of both WT and
+Following 8 weeks of weekly injections we found that sActRIIB caused an increase in the body mass of both WT and ErrγTg/+ mice (Figure 8A). Examination of isolated muscles showed an increase in muscle mass of approximately 70% in the EDL of WT and 44% in ErrγTg/+ above age-matched control animals (Figure 8B). Other muscles examined showed a similar increase in muscle mass (Figure 8—figure supplement 1A). The increase in muscle mass was not due to an increase in fibre number (data not shown) but due to hypertrophy of all MHC fibre types (Figure 8—figure supplement 1B). There was no change in the MHC fibre type composition following the injection of sActRIIB in either genotype (Figure 8C and F). However, we found that injection of sActRIIB induced a decrease in the oxidative capacity of the muscle in WT mice as indicated by a decreased proportion of SDH+ fibres (Figure 8D and G). Strikingly, sActRIIB did not cause a reduction in the proportion of SDH+ fibres in ErrγTg/+ (Figure 8D and G). The increased oxidative capacity of the muscle was accompanied with a rise in the number of capillaries serving each fibre in the muscle from ErrγTg/+ but not WT mice (Figure 8E and H and Figure 8—figure supplement 1D). These results show that it is possible to induce substantial muscle enlargement while maintaining oxidative capacity, challenging the generally accepted dogma that the size and oxidative capacity of a fibre are, because of diffusion constraints, inversely related.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig8-v2.jpg)
 
-**Figure 8.:** ERRγ mice leads to hypertrophic muscle with enhanced oxidative and vascular features.(A) Body mass in 12-week-old mice after an 8 week treatment regime. (B) EDL muscle mass after sACtRIIB treatment. (C) Muscle fibre type profiling with MHCIIA (green) and MHCIIB (red) antibodies. (D) Oxidative enzyme profiling using SDH histochemistry. (E) Muscle capillary density profiling with CD31 antibody. Quantification of (F) MHC EDL fibre type, (G) SDH positive fibres, (H) capillary density. Intrafibre staining in the Errγ muscle in (D) is artefact and was ignored in all quantification procedures; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.013
+**Figure 8.:** (A) Body mass in 12-week-old mice after an 8 week treatment regime. (B) EDL muscle mass after sACtRIIB treatment. (C) Muscle fibre type profiling with MHCIIA (green) and MHCIIB (red) antibodies. (D) Oxidative enzyme profiling using SDH histochemistry. (E) Muscle capillary density profiling with CD31 antibody. Quantification of (F) MHC EDL fibre type, (G) SDH positive fibres, (H) capillary density. Intrafibre staining in the Errγ muscle in (D) is artefact and was ignored in all quantification procedures; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/16940/elife-16940-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** ERRγ mice.(A) Quantification of muscle mass in the Tibialis anterior (TA), gastrocnemius and soleus muscle. (B) Profiling of EDL CSA based on MHC isoforms in WT and Errγ after sActRIIB treatment. Note the hypertrophy in all fibres. (C) Profiling of EDL CSA based on SDH levels in WT and Errγ after sActRIIB treatment. (D) Capillary profile in the EDL muscle after sActRIIB treatment CD31 in green, laminin in red. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.DOI: http://dx.doi.org/10.7554/eLife.16940.014
+**Figure 8—figure supplement 1.:** (A) Quantification of muscle mass in the Tibialis anterior (TA), gastrocnemius and soleus muscle. (B) Profiling of EDL CSA based on MHC isoforms in WT and Errγ after sActRIIB treatment. Note the hypertrophy in all fibres. (C) Profiling of EDL CSA based on SDH levels in WT and Errγ after sActRIIB treatment. (D) Capillary profile in the EDL muscle after sActRIIB treatment CD31 in green, laminin in red. N = 4/5 male twelve-week old mice per group; One-way ANOVA followed by Bonferroni's multiple comparison tests, *p<0.05.
 
 ## Discussion
 
@@ -213,64 +213,68 @@ In summary, our work challenges the dogma of an inverse relationship between mus
 
 ## Materials and methods
 
-## Ethical approval
+### Ethical approval
 
 The experiments were performed under a project license from the United Kingdom Home Office in agreement with the Animals (Scientific Procedures) Act 1986. The University of Reading Animal Care and Ethical Review Committee approved all procedures. Animals were humanely sacrificed via Schedule 1 killing between 8:00–13:00.
 
-## Animal maintenance
+### Animal maintenance
 
 Healthy C57Bl/6 (WT), Mtn-/-, Mtn-/-/ErrγTg/+ and ErrγTg/+ mice were bred and maintained in accordance to the Animals (Scientific Procedures) Act 1986 (UK) and approved by the University of Reading in the Biological Resource Unit of Reading University. Mice were housed under standard environmental conditions (20–22°C, 12–12 hr light–dark cycle) and provided food and water ad libitum. We used male mice that were 4–5 months old at the start of the study. Each experimental group consisted of 3–12 mice. Mtn-/- and ErrγTg/+ mice were a gift of Se-Jin Lee (John’s Hopkins USA) and Ronald Evans respectively (Salk Institute for Biological Studies, La Jolla, USA). Post-natal muscle growth was induced in one month-old males WT and ErrγTg/+ mice that were injected twice weekly intraperitoneally with 10 mg/kg of the soluble activin receptor IIB (sActRIIB-Fc) for a period of two months. Each experimental group consisted of 5–6 mice.
 
-## Exercise fatigue test
+### Exercise fatigue test
 
 Mice were acclimatised to running on a treadmill in three sessions (10 m·min−1 for 15 min followed by a 1 m·min−1 increase per minute to a maximum of 12 m·min−1) (Columbus Instruments Model Exer 3/6 Treadmill, Serial S/N 120416). Exhaustion was determined by exercising the mice at 12 m·min−1 for 5 min, followed by 1 m·min−1 increases to a maximum of 20 m·min−1until the mouse was unable to run.
 
-## Muscle tension measurements
+### Muscle tension measurements
 
 Dissection of the hind limb was carried out under oxygenated Krebs solution (95% O2 and 5% CO2). Under circulating oxygenated Krebs solution one end of a silk suture was attached to the distal tendon of the extensor digitorum longus (EDL) and the other to a Grass Telefactor force transducer (FT03). The proximal tendon remained attached to the tibial bone. The leg was pinned to a Sylgard-coated experimental chamber. Two silver electrodes were positioned longitudinally on either side of the EDL. A constant voltage stimulator (S48, Grass Telefactor) was used to directly stimulate the EDL which was stretched to attain the optimal muscle length to produce maximum twitch tension (Pt). Tetanic contractions were provoked by stimulus trains of 500 ms duration at, 10, 20, 50, 100 and 200 Hz. The maximum tetanic tension (Po) was determined from the plateau of the frequency-tension curve. Specific force was estimated by normalising tetanic force to EDL muscle mass (g).
 
-## Histological analysis and immunohistochemistry
+### Histological analysis and immunohistochemistry
 
 Following dissection, the muscle was immediately frozen in liquid nitrogen-cooled isopentane and mounted in Tissue Tech freezing medium (Jung) cooled by dry ice/ethanol. Immunohistochemistry was performed on 10 μm cryosections that were dried for 30 min before the application of block wash buffer (PBS with 5% foetal calf serum (v/v), 0.05% Triton X-100). Antibodies were diluted in wash buffer 30 min before use. Details of primary and secondary antibodies are given in Supplementary file 1. F4/80 was detected using the Vector Laboratories ImmPRESS Excel Staining Kit. Morphometric analysis of fibre size was performed as previously described (Matsakas et al., 2012a).
 
-## Succinate dehydrogenase (SDH) staining
+### Succinate dehydrogenase (SDH) staining
 
 Transverse EDL muscle sections were incubated for 3 min at room temperature in a sodium phosphate buffer containing 75 mM sodium succinate (Sigma), 1.1 mM Nitroblue Tetrazolium (Sigma) and 1.03 mM Phenazine Methosulphate (Sigma). Samples were then fixed in 10% formal-calcium and cleared in xylene prior to mounting with DPX mounting medium (Fisher). Densitometry of the samples was performed on a Zeiss Axioskop2 microscope mounted with an Axiocam HRc camera. Axiovision Rel. 4.8 software was used to capture the images.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 To identify the distribution of the mitochondria in the muscle fibres, biceps and extensor carpi radialis muscle were removed cut in pieces of 1 mm3 and immerse fixed in 4% PFA and 2.5% glutaraldehyde in 0.1 M cacodylate buffer pH 7.4 (4°C, 48 hr). Tissue blocks were contrasted using 0.5% OsO4 (Roth, Germany; RT, 1.5 hr) and 1% uranyl acetate (Polysciences, Germany) in 70% ethanol (RT, 1 hr). After dehydration tissue blocks were embedded in epoxy resin (Durcopan, Roth, Germany) and ultrathin sections of 40 nm thickness were cut using a Leica UC6 ultramicrotome (Leica, Wetzlar, Germany). Sections were imaged using a Zeiss 906 TEM (Zeiss, Oberkochen, Germany) and analysed using ITEM software (Olympus, Germany).
 
-## 1H NMR spectroscopy-based metabonomic analysis
+### 1H NMR spectroscopy-based metabonomic analysis
 
 Polar metabolites were extracted from the gastrocnemius muscle using previously described protocols (Beckonert et al., 2007). Briefly, 40–50 mg of muscle tissue was snap frozen in liquid nitrogen and finely ground in 300 µL of chloroform: methanol (2:1) using a tissue lyzer. The homogenate was combined with 300 µL of water, vortexed and spun (13,000 g for 10 min) to separate the aqueous (upper) and organic (lower) phases. A vacuum concentrator (SpeedVac) was used to remove the water and methanol from the aqueous phase before reconstitution in 550 µL of phosphate buffer (pH 7.4) in 100% D2O containing 1 mM of the internal standard, 3-(trimethylsilyl)-[2,2,3,3,−2H4]-propionic acid (TSP). For each sample, a standard one-dimensional NMR spectrum was acquired with water peak suppression using a standard pulse sequence (recycle delay (RD)-90°-t1-90°-tm-90°-acquire free induction decay (FID)). RD was set as 2 s, the 90° pulse length was 16.98 µs, and the mixing time (tm) was 10 ms. For each spectrum, 8 dummy scans were followed by 128 scans with an acquisition time per scan of 3.8 s and collected in 64 K data points with a spectral width of 12.001 ppm. 1H nuclear magnetic resonance (NMR) spectra were manually corrected for phase and baseline distortions and referenced to the TSP singlet at δ 0.0. Spectra were digitized using an in-house MATLAB (version R2009b, The Mathworks, Inc.; Natwick, MA) script. To minimize baseline distortions arising from imperfect water saturation, the region containing the water resonance was excised from the spectra. Principal components analysis (PCA) was performed with Pareto scaling in MATLAB using scripts provided by Korrigan Sciences Ltd, UK.
 
-## Protein expression by western blotting
+### Protein expression by western blotting
 
 Frozen muscles were powdered and lysed in a buffer containing 50 mM Tris, pH7.5, 150 mM NaCl, 5 mM MgCl2, 1 mM DTT, 10% glycerol, 1%SDS, 1%Triton X-100, 1XRoche Complete Protease Inhibitor Cocktail, 1X Sigma-Aldrich Phosphatase Inhibitor Cocktail 1 and 3. Then, the samples were immunoblotted and visualized with SuperSignal West Pico Chemiluminescent substrate (Pierce). Blots were stripped using Restore Western Blotting Stripping Buffer (Pierce) according to the manufacturer’s instructions and were reprobed if necessary. Details of antibodies are given in Supplementary file 1.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Tissue samples were solubilised in TRIzol (Fisher) using a tissue homogeniser. Total RNA was prepared from skeletal muscles using the RNeasy Mini Kit (Quigen, Manchester, UK ). Total RNA (5 μg) was reverse-transcribed to cDNA with SuperScript II Reverse Transcriptse (Invitrogen) and analyzed by quantitative real-time RT-PCR on a StepOne Plus cycler, using the Applied Biosystems SYBRGreen PCR Master Mix. Primers were designed using the software Primer Express 3.0 (Applied Biosystems). Relative expression was calculated using the ΔΔCt method with normalization to the housekeeping genes cyclophilin-B, hypoxanthine-guanine phosphoribosyltransferase (hprt) and glyceraldehyde-3-phosphate dehydrogenase (GAPDH). Specific primer sequences are given in Supplementary file 1.
 
-## Myonuclear organisation
+### Myonuclear organisation
 
 For visualizing myonuclei, fibres were mounted with ProLong Diamons Antifade Mountant with DAPI (Molecular Probes, P36962), and a confocal microscope (Olympus FluoView 1000, BX61W1, Olympus, Japan) was used to observe single muscle fibres. Pictures were taken in confocal planes, separated by z-axis steps varying between 0.4 and 2 µm according to the optical thickness and the desired Nyquist sampling frequency. Confocal microscope images used for mapping of Euclidean positions of myonuclei were processed and analysed using Imaris (Bitplane) and ImageJ (NIH, Bethesda, MD, USA).
 
 For each muscle fibre, an idealized circular cylinder segment with constant radius was constructed, and the distance from each nucleus to its nearest neighbour was calculated.
 
-In order to measure how ordered the nuclei distribution for a particular fibre is, the mean nearest neighbour distance was calculated for the experimental data, as well as for the random and optimal distribution using parameters from the experiment. We denote the experimental, random and optimal means by ME, MR and MO. An 'orderness-score', g(ME), was then calculated as:g(ME,MR,MO)=ME−MRMO−MR
+In order to measure how ordered the nuclei distribution for a particular fibre is, the mean nearest neighbour distance was calculated for the experimental data, as well as for the random and optimal distribution using parameters from the experiment. We denote the experimental, random and optimal means by ME, MR and MO. An 'orderness-score', g(ME), was then calculated as:
+
+$$
+g(M_{E},M_{R},M_{O})=\frac{M_{E}−M_{R}}{M_{O}−M_{R}}
+$$
 
 Further details and availability of custom made software, please contact j.c.bruusgaard@ibv.uio.no.
 
-## Satellite cell culture
+### Satellite cell culture
 
 Single fibres from EDL were isolated using 0.2% collagenase I in DMEM medium and either fixed or cultured for 48 and 72 hr as previously described (Otto et al., 2008).
 
-## Skeletal muscle regeneration
+### Skeletal muscle regeneration
 
 Skeletal muscle damage was induced by injecting 30 µl of 50 µM cardiotoxin in the tibialis anterior (TA) muscle of one limb while the contralateral TA of the other limb was injected with 30 µL PBS to serve as an internal control. The degree of muscle regeneration was assessed on day 3 and day 6 post-injury.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± SE. Significant differences between two groups were performed by Student’s t-test for independent variables. The normality of the data for two samples was checked with a Kolmogorov–Smirnov test (α = 10%). Differences among groups were analysed by one-way or two-way analysis of variance (ANOVA) followed by Bonferroni’s multiple comparison tests as appropriate. In the case of non-homogeneous variances (Lavene’s test; p<0.05) for a variable, ANOVA was performed using the square root of the observations. Statistical analysis was performed on SPSS 18.0 (Chicago, IL). Differences were considered statistically significant at p<0.05.

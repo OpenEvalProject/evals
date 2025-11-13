@@ -14,7 +14,7 @@
 
 ## Abstract
 
-In all living organisms, it is essential to transmit genetic information faithfully to the next generation. The SMC-ParAB- parS system is widely employed for chromosome segregation in bacteria. A DNA-binding protein ParB nucleates on parS sites and must associate with neighboring DNA, a process known as spreading, to enable efficient chromosome segregation. Despite its importance, how the initial few ParB molecules nucleating at parS sites recruit hundreds of further ParB to spread is not fully understood. Here, we reconstitute a parS -dependent ParB spreading event using purified proteins from Caulobacter crescentus and show that CTP is required for spreading. We further show that ParB spreading requires a closed DNA substrate, and a DNA-binding transcriptional regulator can act as a roadblock to attenuate spreading unidirectionally in vitro. Our biochemical reconstitutions recapitulate many observed in vivo properties of ParB and opens up avenues to investigate the interactions between ParB- parS with ParA and SMC.
+In all living organisms, it is essential to transmit genetic information faithfully to the next generation. The SMC-ParAB-parS system is widely employed for chromosome segregation in bacteria. A DNA-binding protein ParB nucleates on parS sites and must associate with neighboring DNA, a process known as spreading, to enable efficient chromosome segregation. Despite its importance, how the initial few ParB molecules nucleating at parS sites recruit hundreds of further ParB to spread is not fully understood. Here, we reconstitute a parS-dependent ParB spreading event using purified proteins from Caulobacter crescentus and show that CTP is required for spreading. We further show that ParB spreading requires a closed DNA substrate, and a DNA-binding transcriptional regulator can act as a roadblock to attenuate spreading unidirectionally in vitro. Our biochemical reconstitutions recapitulate many observed in vivo properties of ParB and opens up avenues to investigate the interactions between ParB-parS with ParA and SMC.
 
 ## Introduction
 
@@ -26,33 +26,97 @@ Here, we reconstitute a parS-dependent ParB spreading on DNA in real-time, using
 
 ## Results
 
-## CTP reduces the nucleation of Caulobacter ParB on parS
+### CTP reduces the nucleation of Caulobacter ParB on parS
 
 Easter and Gober (2002) reported that ATP-bound Caulobacter ParA dissociated ParB from parS (Easter and Gober, 2002); however, the authors did not control for the effect of ATP alone on ParB-parS binding. NTPs are highly negatively charged and could have affected protein-DNA interactions by binding non-specifically to the often positively charged DNA-binding domain. To determine if ATP or other NTP alone affects ParB-parS interaction, we attached a linear 20 bp biotinylated parS DNA to a streptavidin-coated probe to measure the bio-layer interference (BLI) (Figure 1A). BLI assay monitors wavelength shifts (responses) resulting from changes in the optical thickness of the probe surface during association or dissociation of the analyte (see Materials and Methods). We monitored in real-time interactions between immobilized parS DNA and purified Caulobacter ParB or a premix of ParB + NTP (Figure 1B). Consistent with previous reports (Tran et al., 2018; Figge et al., 2003), Caulobacter ParB bound site-specifically to parS but not to non-cognate DNA (Figure 1—figure supplement 1). In the presence of ATP, GTP, or UTP, we observed a small reduction in ParB-parS binding at steady state regardless of whether Mg2+ was included in binding buffer or not (Figure 1B and Figure 1—figure supplement 2), suggesting that Caulobacter ParB is slightly sensitive to highly negatively charged compounds or to counter-ions (Na+) in NTP solutions. However, we noted that CTP had a pronounced effect on ParB-parS interaction, specifically in the presence of Mg2+ (Figure 1B and Figure 1—figure supplement 2). An increasing concentration of CTP (but not CMP or CDP) gradually reduced the binding of ParB to parS (Figure 1—figure supplement 3). In contrast, neither CTP nor other NTPs affected the binding of another protein-DNA pair, for example, the well-characterized TetR-tetO interaction (Saenger et al., 2000; Figure 1C). On closer inspection, we noted that ParB + CTP slowly dissociated from parS even before the probe was returned to a protein-free buffer (a gradual downward slope between 30th and 150th sec, Figure 1B), suggesting that CTP facilitated ParB removal from a 20 bp parS DNA. To investigate further, we monitored the dissociation rates of pre-bound CTP-free ParB-parS complexes after probes were returned to a protein-free buffer with or without CTP, we found ParB dissociating ~seven times faster in buffer with CTP than in buffer only solution (Figure 1D). Given the short length of a 20 bp parS DNA duplex that has only sufficient room for nucleation, our results suggest that CTP might decrease ParB nucleation on parS or liberates pre-bound ParB from parS site.
 
-## CTP facilitates ParB accumulation on a closed DNA substrate
+![Figure 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig1-v2.jpg)
+
+**Figure 1.:** (A) The domain architecture of ParB (dark green) and TetR (grey), and their respective DNA-binding sites parS and tetO. Convergent arrows below DNA-binding sites indicate that parS and tetO are palindromic. (B) Bio-layer interferometric (BLI) analysis of the interaction between a premix of 1 μM ParB-His6 dimer ± 1 mM NTP and a 20 bp DNA duplex containing parS. Biotinylated DNA fragments were immobilized onto the surface of a Streptavidin (SA)-coated probe (See Materials and methods). The BLI probe was dipped into a buffer only solution (0–30 s), then to a premix of protein ± NTP (30–150 s: association phase), and finally returned to a buffer only solution (150–270 s: dissociation phase). Sensorgrams were recorded over time. BLI analysis of the interaction between 1 μM TetR-His6 and a 20 bp parS probe was also recorded (a negative control). (C) BLI analysis of the interaction between a premix of 1 μM TetR-His6 ± 1 mM NTP and a 28 bp DNA duplex containing tetO. BLI analysis of the interaction between 1 mM CTP and a 28 bp tetO probe was also recorded (a negative control). (D) BLI analysis of the interaction between 1 μM Caulobacter ParB-His6 (without CTP) and a 20 bp parS DNA. For the dissociation phase, the probe was returned to a buffer only or buffer supplemented with 1 mM CTP. All buffers used for experiments in this figure contained Mg2+. Each BLI experiment was triplicated and a representative sensorgram was presented.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) BLI analysis of the interaction between purified Caulobacter ParB-His6 (0.125 to 2 µM) and a 20 bp parS DNA probe or a 28 bp tetO DNA probe. (B) BLI analysis of the interaction between purified TetR-His6 (0.125 to 2 µM) and a 20 bp parS DNA probe or a 28 bp tetO DNA probe.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Caulobacter ParB-His6 (1 µM dimer)±1 mM NTP, and a 20 bp DNA duplex containing parS were used. Mg2+ was omitted from all buffers in this experiment. A schematic of the DNA substrate is shown above the sensorgram.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) BLI analysis of the interaction between purified Caulobacter ParB and an increasing concentration of CTP-Mg2+. ParB-His6 (1 µM dimer) + 0–10 mM CTP, and a 20 bp DNA duplex containing parS were used for this experiment. (B) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM cytidine mono-, di-, or triphosphate, and a 20 bp parS DNA. A schematic of the DNA substrate is shown above the sensorgram. Mg2+ was included in all buffers for experiments in this figure.
+
+### CTP facilitates ParB accumulation on a closed DNA substrate
 
 Next, we investigated the effect of CTP on ParB-DNA interaction by employing a longer 169 bp parS-containing DNA fragment that has been labeled at both 5’ ends with biotin (Figure 2A). Immobilizing a dual biotin-labeled DNA on a streptavidin-coated BLI probe created a DNA substrate where both ends were blocked (a closed DNA) (Onn and Koshland, 2011; Figure 2—figure supplement 1). We monitored the interactions between immobilized DNA and purified Caulobacter ParB in the presence or absence of NTP. In the absence of NTP, we observed the usual nucleation event on parS with 1 µM ParB protein (Figure 2A). We noted that the BLI signal was not as high as with a 20 bp parS probe (Figure 2A) due to a less efficient immobilization of a longer DNA fragment on the BLI probe. Premixing ATP, GTP, or UTP with ParB did not change the sensorgrams markedly (Figure 2A). However, the addition of CTP significantly increased the response by ~12 fold (Figure 2A and Figure 2—figure supplement 2A), suggesting that more ParB associated with a 169 bp parS probe at steady state than by nucleation at parS alone. We observed that DNA-bound ParB was salt sensitive and dissociated readily to the solution when the BLI probe was returned to a low-salt protein-free buffer without CTP (Figure 2A, dissociation phase). However, the dissociation of pre-bound ParB-CTP from DNA was slowed down by ~fivefold if the probe was returned to a buffer supplemented with CTP (Figure 2—figure supplement 2B). The effect on the BLI response was not seen if Mg2+ was omitted (Figure 2—figure supplement 2C), neither did we observe an equivalent increase in response when a 169 bp dual biotin-labeled DNA containing a scrambled parS was employed instead (Figure 2A). Furthermore, we observed that a nucleation-competent but spreading-defective Caulobacter ParB (R104A) (Tran et al., 2018) mutant did not respond to the addition of CTP to the same extent as ParB (WT) (Figure 2B). Our results suggest that CTP is required for the increase in parS-dependent ParB accumulation in vitro. Lastly, we performed BLI experiments for eight additional chromosomal ParB proteins from a diverse set of bacterial species and consistently observed the specific effect of CTP on enhancing ParB association with a closed DNA in vitro (Figure 2—figure supplement 3). It is most likely that ParB-CTP interaction with DNA is conserved among ParB orthologs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig2-v2.jpg)
+
+**Figure 2.:** (A) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM NTP and a 169 bp dual biotin-labeled DNA containing a parS or a scrambled parS site. Interactions between a dual biotinylated DNA and streptavidin (SA)-coated probe created a DNA substrate where both ends were blocked (a closed DNA substrate) (see the schematic of the BLI probes above the sensorgram). (B) Interactions between a nucleation-competent but spreading-defective ParB (R104) variant with a 169 bp parS DNA fragment in the presence or absence of CTP were also recorded. Each BLI experiment was triplicated and a representative sensorgram was presented. (C) A schematic of the pull-down assay and immunoblot analysis of pulled-down Caulobacter ParB-His6. The length of bound DNA is ~2.8 kb. Beads were incubated with ParB protein for five minutes before being pulled down magnetically. All buffers used for experiments in this figure contained Mg2+.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A schematic of a double digestion assay using Exonuclease T7 + Exonuclease VII and PCR. PCR was performed using M13F, M13R oligos, and DNA attached to the BLI surface as a template. (B) The BLI probe was severed from the plastic adaptor and immerged into a PCR master mix. (C) Dual biotin-labeled DNA fragments on the BLI surface were resistant to Exo T7 + Exo VII digestion while single biotin-labeled DNA fragments on the BLI surface were not.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) BLI analysis of the interaction between an increasing concentration of Caulobacter ParB-His6 (0.125 to 1.0 µM) + 1 mM CTP and a 169 bp dual biotin-labeled parS DNA. A schematic of the DNA substrate is shown above the sensorgram. (B) BLI analysis of the interaction between 1 μM Caulobacter ParB-His6 (with 1 mM CTP) and a 169 bp dual biotin-labeled parS DNA. For the dissociation phase, the probe was returned to a buffer only or buffer supplemented with 1 mM CTP solution. All buffers used for experiments in panel A-B contained Mg2+. (C) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ±1 mM CTP and a 169 bp dual biotin-labeled DNA containing a parS site in buffer with or without MgCl2.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** BLI analysis of the interaction between a premix of 1 μM His6-MBP-tagged ParB proteins from a set of diverse bacterial species ± NTPs and a 169 bp dual biotin-labeled parS DNA. NTPs at 1 mM (final concentration) was used, except for BLI experiments with Zymomonas mobilis and Xanthomonas campestris ParBs where 0.01 mM CTP was used instead. Mg2+ was included in all buffers for this experiment. A schematic of the DNA substrate is shown above the sensorgrams.
+
 To independently verify the BLI data, we performed an in vitro pull-down of purified His-tagged Caulobacter ParB (Figure 2C). Streptavidin-coated paramagnetic beads were incubated with 2.8 kb dual biotin-labeled DNA fragments containing either parS or scrambled parS sites. Again, a dual biotin-labeled DNA formed a closed substrate on the surface of the beads. DNA-coated beads were incubated with purified Caulobacter ParB either in the presence or absence of NTP before being pulled down magnetically. Pulled-down ParB was released from beads and their protein level was analyzed by an α-His6 immunoblot (Figure 2C). We found ~13–15 fold more pulled-down ParB when CTP was included (Figure 2C). No enrichment was observed when scrambled parS-coated beads were used, confirming that the extensive in vitro association of ParB with DNA is dependent on parS (Figure 2C). Also, consistent with the BLI experiments, no further enrichment of ParB was seen when ATP, GTP or UTP was included (Figure 2C). Furthermore, a ParB (R104A) variant was not enriched in our pull-down assay regardless of whether CTP was present or not (Figure 2C). Altogether, our results suggest that a parS-dependent accumulation of ParB on a closed DNA substrate requires CTP.
 
-## A closed DNA substrate is required for an increased ParB association with DNA
+### A closed DNA substrate is required for an increased ParB association with DNA
 
 Next, we investigated whether a DNA substrate with a free end (an open DNA) can also support ParB accumulation in vitro. The 169 bp dual biotin-labeled DNA was designed with unique BamHI and EcoRI recognition sites flanking the parS site (Figure 3A). To generate an open end on DNA, we immerged the DNA-coated probes in buffers contained either BamHI or EcoRI (Figure 3A–C and Figure 3—figure supplement 1). Before restriction enzyme digestion, we again observed an enhanced ParB association with a closed DNA substrate in the presence of CTP (Figure 3A). After digestion by either BamHI or EcoRI, the inclusion of CTP had no effect on the BLI response, indicating that ParB did not accumulate on an open DNA substrate in vitro (Figure 3B–C). Our conclusion was further supported by results from an experiment in which we added BamHI after ParB + CTP and a closed DNA substrate were preincubated together for 120 s (Figure 3—figure supplement 2). Here, in the presence of BamHI, ParB binding to DNA reduced gradually over 30 min, while it was unaffected if heat-inactivated BamHI was employed instead (Figure 3—figure supplement 2). Lastly, consistent with BLI experiments, our pull-down assay also showed that ParB-CTP failed to accumulate when a 2.8 kb dual biotin-labeled DNA was linearized by HindIII digestion (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig3-v2.jpg)
+
+**Figure 3.:** (A) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM CTP and a 169 bp dual biotin-labeled parS DNA. (B) Same as panel A but immobilized DNA fragments have been restricted with BamHI before BLI analysis. (C) Same as panel A but immobilized DNA fragments have been restricted with EcoRI before BLI analysis. Schematic of DNA fragments with the relative positions of parS and restriction enzyme recognition sites are shown above the sensorgram. Each BLI experiment was triplicated and a representative sensorgram was presented. (D) A schematic of the pull-down assay and immunoblot analysis of pulled-down Caulobacter ParB-His6. For lanes 3 and 4, DNA-bound beads were incubated with HindIII to linearize bound DNA. Samples in lanes 1–4 were loaded on the same gel, the immunoblot was spliced together for presentation purposes. All buffers used for experiments in this figure contained Mg2+.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) (Left panel) A schematic of a digestion assay using BamHI/EcoRI and PCR. PCR was performed using M13F, M13R oligos, and DNA attached to the BLI surface as a template. (Right panel) The BLI probe was severed from the plastic adaptor and immerged into a PCR master mix. (B) Detection of intact 169 bp DNA fragments that were bound on the surface of the BLI probe before and after treatment with restriction enzymes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** BamHI was added after 1 μM Caulobacter ParB-His6 + 1 mM CTP and a 169 bp dual biotin-labeled parS DNA were preincubated together for 120 s. As a negative control, heat-inactivated BamHI was added instead. Mg2+ was included in all buffers for this experiment. A schematic of the DNA substrate is shown above the sensorgram.
+
 Next, we wondered if a tight protein-DNA binding could cap the open end of DNA, thereby mimicking a closed DNA substrate and restoring ParB accumulation. To investigate this possibility, we constructed a 170 bp dual biotin-labeled DNA fragment that contains a single parS site, a tetO operator, and flanking restriction enzyme recognition sites for EcoRI and BamHI (Figure 4A). With this closed DNA substrate, we observed an enhanced ParB association with DNA in the presence of CTP (Figure 4A). Again, we generated a free DNA end via restriction enzyme digestion. Consistent with previous experiments with a restricted 169 bp DNA probe, the addition of ParB + CTP had no effect on the BLI response (Figure 4B). However, it can be partially rescued by incubating a BamHI-restricted DNA probe with a premix of ParB + CTP + TetR (Figure 4B). We reason that TetR binding at tetO capped the open DNA end, essentially generated a closed DNA substrate. Our conclusion was further supported by results from an experiment in which a premix of ParB + CTP + TetR was tested against an EcoRI-restricted DNA instead (Figure 4C). Here, we did not observe an enhanced association of ParB with DNA even when TetR was included, most likely because of a persistent open DNA end that could not be blocked by TetR-tetO binding (Figure 4C). Finally, we observed that the TetR could attenuate ParB-CTP accumulation on a closed DNA substrate (magenta line vs. orange line, Figure 4A). This blocking effect is specific to TetR-tetO binding since the addition of anhydrotetracycline (ahTc), a negative effector of TetR (Saenger et al., 2000), allowed ParB-CTP to regain its accumulation on DNA (Figure 4—figure supplement 1). Overall, the ability of a DNA-bound TetR to act as a roadblock in vitro is consistent with previous ChIP-seq data that showed DNA-binding proteins or RNA polymerases could block or attenuate ParB spreading unidirectionally in vivo (Breier and Grossman, 2007; Murray et al., 2006; Sanchez et al., 2015; Rodionov et al., 1999).
 
-## parS DNA increases the CTP binding and hydrolysis rate of Caulobacter ParB
+![Figure 4.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig4-v2.jpg)
+
+**Figure 4.:** (A) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM CTP ± 1 μM TetR-His6 and a 170 bp dual biotin-labeled DNA containing a parS site. (B) Same as panel A but immobilized DNA fragments have been restricted with BamHI before BLI analysis. (C) Same as panel A but immobilized DNA fragments have been restricted with EcoRI before BLI analysis. Schematic of DNA fragments together with the relative positions of parS, tetO, and restriction enzyme recognition sites are shown above the sensorgram. Each BLI experiment was triplicated and a representative sensorgram was presented. All buffers used for experiments in this figure contained Mg2+.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Anhydrotetracycline (3 μM) or ethanol (0.01%) was added after 1 μM Caulobacter ParB-His6 + 1 mM CTP ± 1 μM TetR and a 170 bp dual biotin-labeled parS DNA were preincubated together for 120 s. Mg2+ was included in all buffers for this experiment. A schematic of the DNA substrate is shown above the sensorgram.
+
+### parS DNA increases the CTP binding and hydrolysis rate of Caulobacter ParB
 
 Recently, Myxococcus and Bacillus ParB were shown to bind and hydrolyze CTP (Osorio-Valeriano et al., 2019; Soh et al., 2019). Our in vitro results so far also hint at CTP binding directly to Caulobacter ParB. By employing a membrane-spotting assay (DRaCALA), we showed that Caulobacter ParB binds to radiolabeled CTP in the presence of parS DNA (Figure 5A). An excess of unlabeled CTP, but no other NTPs, could compete with radioactive CTP for binding to Caulobacter ParB (Figure 5B), suggesting that Caulobacter ParB does not bind other NTPs. The CTP binding of ParB was reduced when a non-cognate DNA site (NBS) (Wu and Errington, 2004) was used instead of parS (Figure 5A). We also failed to detect CTP binding in our DRaCALA assay or by isothermal titration calorimetry when DNA was omitted. Nevertheless, we robustly detected CTP hydrolysis to CDP and inorganic phosphate when Caulobacter ParB and CTP were included, albeit at a very low rate of ~0.4 CTP molecules per ParB per hour (Figure 5C). A background level of inorganic phosphate was observed when Caulobacter ParB was incubated with ATP, GTP, or UTP (Figure 5C). Crucially, the addition of a 22 bp parS DNA, but not a non-cognate 22 bp NBS DNA, increased CTP turnover rate sevenfold to ~3 CTP molecules per ParB per hour (Figure 5C). Lastly, the CTP hydrolysis was reduced to the background in the nucleation-competent but spreading-defective ParB (R104A) variant (Figure 5C). Altogether, our data suggest that parS DNA stimulates Caulobacter ParB to bind and hydrolyze CTP.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig5-v2.jpg)
 
-**Figure 5.:** parS DNA increases the CTP binding and hydrolysis rate by Caulobacter ParB.(A–B) CTP binding as monitored by DRaCALA assay using radiolabeled CTP α-P32. The bulls-eye staining indicates CTP binding due to a more rapid immobilization of protein-ligand complexes compared to free ligands alone. The starting concentration of proteins used in panel A was 25 μM. The same concentration of radioactive CTP, unlabeled CTP, and DNA was used in experiments shown in panels A and B. (C) A continuous monitoring of inorganic phosphate (Pi) released by recording absorbance at 360 nm overtime at 25°C. The rates of CTP hydrolysis were inferred from a Pi standard. The NTP hydrolysis of Caulobacter ParB was also monitored in the presence of ATP, GTP, or UTP, with a 22 bp parS DNA duplex or a non-cognate 22 bp NBS DNA duplex (a DNA-binding site of Noc protein Wu and Errington, 2004). The nucleation-competent but spreading-defective ParB (R104A) mutant did not hydrolyze CTP in the presence of parS DNA. All buffers used for experiments in this figure contained Mg2+.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A–B) CTP binding as monitored by DRaCALA assay using radiolabeled CTP α-P32. The bulls-eye staining indicates CTP binding due to a more rapid immobilization of protein-ligand complexes compared to free ligands alone. The starting concentration of proteins used in panel A was 25 μM. The same concentration of radioactive CTP, unlabeled CTP, and DNA was used in experiments shown in panels A and B. (C) A continuous monitoring of inorganic phosphate (Pi) released by recording absorbance at 360 nm overtime at 25°C. The rates of CTP hydrolysis were inferred from a Pi standard. The NTP hydrolysis of Caulobacter ParB was also monitored in the presence of ATP, GTP, or UTP, with a 22 bp parS DNA duplex or a non-cognate 22 bp NBS DNA duplex (a DNA-binding site of Noc protein Wu and Errington, 2004). The nucleation-competent but spreading-defective ParB (R104A) mutant did not hydrolyze CTP in the presence of parS DNA. All buffers used for experiments in this figure contained Mg2+.
 
-## ParB accumulation on DNA is unstable in the presence of a non-hydrolyzable analog CTPγS
+### ParB accumulation on DNA is unstable in the presence of a non-hydrolyzable analog CTPγS
 
 Next, we investigated the role of CTP hydrolysis by following ParB-parS interaction in the presence of a non-hydrolyzable analog CTPγS (Figure 6A and Figure 6—figure supplement 1). ParB was preincubated with CTP or CTPγS for 1 to 60 min before binding to a 169 bp closed parS DNA substrate (Figure 6A). We observed that Caulobacter ParB could accumulate on DNA in the presence of CTPγS, but in contrast to when CTP was employed, a longer preincubation time between ParB and CTPγS gradually reduced ParB accumulation on DNA (Figure 6A). Our results suggest the possibility that CTPγS, in the absence of parS DNA, converts apo-ParB in solution to a nucleation-incompetent form over time. Our observation is reminiscent of a time-course experiment in which CTPγS efficiently promoted the engagement between N-terminal domains of Bacillus ParB in the absence of parS DNA (Soh et al., 2019). The engagement of N-terminal domains was shown to convert Bacillus ParB from an open to a closed protein clamp (Soh et al., 2019). If not already bound on DNA, the closed form of ParB presumably cannot nucleate/load onto parS due to its now inaccessible DNA-binding domain (Soh et al., 2019). We wondered if CTPγS also catalyzed the N-domain engagement in Caulobacter ParB in the absence of parS DNA. To investigate this possibility, we employed site-specific cross-linking of a purified Caulobacter ParB (Q35C C297S) variant by a sulfhydryl-to-sulfhydryl crosslinker bismaleimidoethane (BMOE) (Figure 6B). A lone cysteine residue on the native ParB was first mutated to serine to create a cysteine-less ParB (C297S) variant, then a glutamine to cysteine mutation was engineered at position 35 at the N-terminal domain to create ParB (Q35C C297S). Both ParB (C297S) and ParB (Q35C C297S) were competent at spreading in the presence of CTP (Figure 6—figure supplement 2A). The cross-linking of ParB (Q35C C297S) was also enhanced by CTP and CTPγS but not by other NTPs, consistent with the specific role of CTP in ParB spreading (Figure 6—figure supplement 2B). We performed a time-course cross-linking of ParB (Q35C C297S) + CTP or CTPγS in the absence of parS DNA (Figure 6B). As shown in Figure 6B, CTPγS was twice as efficient as CTP in promoting the cross-linked form between N-terminal domains of Caulobacter ParB. The rapid increase in the nucleation-incompetent closed form of Caulobacter ParB might explain the overall reduction in accumulation overtime when ParB was preincubated with CTPγS (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig6-v2.jpg)
+
+**Figure 6.:** (A) (Left panel) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM CTP or CTPγS and a 169 bp dual biotin-labeled parS DNA. Purified ParB was preincubated with CTP or CTPγS for 1, 5, 15, 30, or 60 min before BLI analysis. (Right panel) Quantification of ParB-DNA interaction at the end of each association phase (150th sec). Error bars represent SD from three replicates. (B) (Left panel) Time course of Caulobacter ParB (Q35C C297S) cross-linking with CTP or CTPγS in the absence of parS DNA. Purified ParB-His6 (Q35C C297S) (10 µM) were preincubated with 1 mM CTP or CTPγS for 1, 5, 10, 15, or 30 min before BMOE was added. X indicates a cross-linked form of ParB. (Right panel) Quantification of the cross-linked (X) fractions. Error bars represent SD from three replicates. (C) BLI analysis of the interaction between a premix of 1 μM Caulobacter ParB-His6 ± 1 mM CTP or CTPγS and a 169 bp dual biotin-labeled parS DNA. CTP or CTPγS was added to purified ParB, and the mixture was immediately used for BLI experiments. All buffers used for experiments in this figure contained Mg2+.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** CTPγS (but not CMP-PCP) outcompeted radioactive CTP α-P32 for binding to ParB-parS complex, indicating that Caulobacter ParB can bind to CTPγS. Binding to radioactive CTP α-P32 was monitored by DRaCALA assay. The bulls-eye staining indicates CTP binding due to a more rapid immobilization of protein-ligand complexes compared to free ligands alone.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) BLI analysis of the interaction between a premix of 1 μM His-tagged ParB (C97S) or (Q35C C297S) ± 1 mM CTP and a 169 bp dual biotin-labeled parS DNA. In the presence of CTP, both variants of ParB were able to spread, indicating that the engineered mutations Q35C and C297S did not impair the function of ParB in vitro. (B) Purified Caulobacter ParB-His6 (Q35C C297S) ± NTPs ± parS DNA were incubated for 15 min at room temperature before cross-linking with BMOE. A cysteine-less ParB (C297S) was used as a negative control. X indicates a cross-linked form of ParB. A solid black triangle on lane four indicates a contaminated protein from the purification of ParB-His6 (Q35C C297S). A lower panel shows the quantification of the cross-linked (X) fractions. Error bars represent SD from three replicates.
 
 To further investigate the effect of CTPγS on ParB spreading on a longer time scale, we extended the association phase between 169 bp parS DNA and a freshly prepared premix of ParB + CTP or CTPγS from 120 s to 60 min (Figure 6C). In the presence of CTP, the reaction reached steady state after 120 s and remained stable for the duration of the association phase (Figure 6C). However, in the presence of CTPγS, ParB accumulation rapidly reached the maximal level after 200 s, then declined slowly over 60 min. We suggest that DNA-bound ParB-CTPγS complexes gradually dissociated from DNA into solution (possibly via a transient clamp opening or CTPγS leaving its weak binding pocket rather than by hydrolysis) but were not replenished by a new cycle of nucleation-spreading-dissociation because over time most ParB-CTPγS in solution was in a nucleation-incompetent closed form. Taken together, we suggest that CTP hydrolysis is not required for parS-bound ParB to escape the nucleation site to spread, but possibly contributes to maintaining the stability of spreading by recycling ParB.
 
@@ -64,7 +128,7 @@ The requirement of a DNA substrate with blocked ends for ParB accumulation in vi
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53515/elife-53515-fig7-v2.jpg)
 
-**Figure 7.:** Caulobacter ParB nucleation and spreading.(A) Caulobacter ParB nucleation at parS. CTP (orange) reduces Caulobacter ParB (dark green) nucleation at parS (magenta box), presumably by inducing conformational changes that are incompatible with a site-specific parS binding (Soh et al., 2019). Only apo- or CDP-bound ParB can nucleate on parS. ParB hydrolyzes CTP at a faster rate in the presence of parS. The domain architecture of ParB is also shown: NTD: N-terminal domain, DBD: DNA-binding domain, and CTD: C-terminal domain. (B) Caulobacter ParB escapes from the nucleation site parS. Apo-ParB at parS binds CTP and slides laterally away from the nucleation site parS while still associating with DNA. (C) Caulobacter ParB sliding and spreading on DNA. CTP-bound ParBs diffuse from the nucleation site parS and can run off the free DNA end unless they are blocked by DNA-bound roadblocks such as transcriptional regulators for example TetR. CTP hydrolysis is not required for ParB to escape from the nucleation parS site but might contribute to ParB recycling. It is not yet known whether both CTP molecules on a ParB dimer are concertedly hydrolyzed/dissociated for ParB to escape from the chromosome or a heterodimer state of ParB with a single CTP bound also exists in vivo.
+**Figure 7.:** (A) Caulobacter ParB nucleation at parS. CTP (orange) reduces Caulobacter ParB (dark green) nucleation at parS (magenta box), presumably by inducing conformational changes that are incompatible with a site-specific parS binding (Soh et al., 2019). Only apo- or CDP-bound ParB can nucleate on parS. ParB hydrolyzes CTP at a faster rate in the presence of parS. The domain architecture of ParB is also shown: NTD: N-terminal domain, DBD: DNA-binding domain, and CTD: C-terminal domain. (B) Caulobacter ParB escapes from the nucleation site parS. Apo-ParB at parS binds CTP and slides laterally away from the nucleation site parS while still associating with DNA. (C) Caulobacter ParB sliding and spreading on DNA. CTP-bound ParBs diffuse from the nucleation site parS and can run off the free DNA end unless they are blocked by DNA-bound roadblocks such as transcriptional regulators for example TetR. CTP hydrolysis is not required for ParB to escape from the nucleation parS site but might contribute to ParB recycling. It is not yet known whether both CTP molecules on a ParB dimer are concertedly hydrolyzed/dissociated for ParB to escape from the chromosome or a heterodimer state of ParB with a single CTP bound also exists in vivo.
 
 Our results so far suggest three distinct stages of Caulobacter ParB-DNA interactions in vitro:
 
@@ -74,13 +138,240 @@ Stage 2: Nucleated ParB escapes from parS (Figure 7B–C). We showed that Caulob
 
 Stage 3: ParB spreads or diffuses to non-specific DNA flanking parS. Our observation that Caulobacter ParB did not accumulate on an open DNA suggests that Caulobacter ParB diffuses laterally along the DNA. Similarly, cross-linking experiments on Bacillus ParB (Soh et al., 2019) proposed that the ParB-CTP complex forms a sliding clamp that moves along the DNA (Soh et al., 2019). From our experiments with CTPγS (Figure 6) and consistent with Soh et al. (2019), we suggest that the diffusive Caulobacter ParB along the DNA is CTP bound. The low CTP hydrolysis rate of Caulobacter ParB (~3 CTP molecules per ParB per hour) while ParB spreading could be observed by BLI within minutes also lends support to the interpretation that the diffusive spreading form of Caulobacter ParB is most likely CTP-bound (Figure 7B–C). For Bacillus and Caulobacter ParB, CTP hydrolysis is not required for ParB to escape from the nucleation site (Soh et al., 2019). Caulobacter ParB could still spread on a DNA when incubated with a non-hydrolyzable CTPγS (Figure 6), even though spreading, at least in vitro, was less stable over time in comparison to when CTP was employed (Figure 6C). As suggested for Bacillus ParB (Soh et al., 2019) and supported by our results with Caulobacter ParB, CTP hydrolysis might contribute to ParB recycling instead. It is possible that ParB recycling in vivo is achieved via several routes: (i) CTP dissociation from its weak binding pocket, (ii) CTP hydrolysis, (iii) a possible enhanced CTP dissociation/hydrolysis via collisions with DNA-bound roadblocks, or (iv) a transient clamp opening even when ParB is CTP bound. Additional work is required to investigate the dynamics of ParB clamp opening/closing, and whether both CTP molecules on opposite subunits of a ParB dimer are concertedly hydrolyzed/dissociated for ParB to escape from the chromosome or a heterodimer state of ParB with a single CTP bound exists in vivo.
 
-## Final perspectives
+### Final perspectives
 
 In this work, we showed the enhancing effect of CTP on Caulobacter ParB accumulation on DNA and further demonstrated that ParB spreading requires a closed DNA substrate and that a DNA-binding transcriptional regulator can act as a roadblock to attenuate spreading unidirectionally in vitro. Our real-time and label-free reconstitution of ParB spreading has successfully recapitulated many well-known aspects of ParB behaviors and is consistent with pioneering works by Soh et al. (2019) and Osorio-Valeriano et al. (2019). Beyond the biological significance of the findings, our label-free approaches to biochemical reconstitution obviate the often time-consuming and challenging task of site-specifically labeling proteins with fluorophores/chemical crosslinkers without affecting the function of proteins. Here, we have demonstrated the medium-throughput capability of our methodology by investigating the effect of CTP on the spreading of eight additional chromosomal ParB proteins. The ease and medium-throughput manner of our methodology is likely to facilitate future works by the community. Important areas of research in the future are to investigate (i) the effect of ParB-CTP spreading on the supercoiling state of the DNA and vice versa, and (ii) how ParA and SMC interact with ParB-CTP in vivo to organize and faithfully segregate replicated chromosomes to each daughter cell.
 
 ## Materials and methods
 
-## Protein overexpression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta (DE3)</td>
+      <td>Merck</td>
+      <td>Cat# 70954</td>
+      <td>Electro-competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>See Supplementary file 1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See Supplementary file 1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6xHis tag antibody (HRP) (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1187</td>
+      <td>Western blot (1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate Assay Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat# E6646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>NEB</td>
+      <td>Cat# E2611S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway BP Clonase II enzyme mix</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 11789020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dip-and-Read Streptavidin (SA) biosensors</td>
+      <td>Molecular Devices</td>
+      <td>Cat# 18–5019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HisTrap High Performance column</td>
+      <td>GE Healthcare</td>
+      <td>Cat# GE17524801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Heparin High Performance column</td>
+      <td>GE Healthcare</td>
+      <td>Cat# GE17040601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiLoad 16/600 Superdex 75 pg column</td>
+      <td>GE Healthcare</td>
+      <td>Cat# GE28989333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amersham Protran supported Western blotting membranes, nitrocellulose</td>
+      <td>GE Healthcare</td>
+      <td>Cat# GE10600016</td>
+      <td>pore size 0.45 μm, for DRaCALA assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BamHI-HF</td>
+      <td>NEB</td>
+      <td>Cat# R3136S</td>
+      <td>20,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BamHI</td>
+      <td>NEB</td>
+      <td>Cat# R0136S</td>
+      <td>20,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>EcoRI-HF</td>
+      <td>NEB</td>
+      <td>Cat# R3101S</td>
+      <td>20,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>HindIII-HF</td>
+      <td>NEB</td>
+      <td>Cat# R3104S</td>
+      <td>20,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Exonuclease VII</td>
+      <td>NEB</td>
+      <td>Cat# M0379S</td>
+      <td>10,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Exonuclease T7</td>
+      <td>NEB</td>
+      <td>Cat# M0263S</td>
+      <td>10,000 units/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzonase nuclease</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NTP</td>
+      <td>ThermoFisher</td>
+      <td>Cat# R0481</td>
+      <td>100 mM solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTPγS</td>
+      <td>Jena Bioscience</td>
+      <td></td>
+      <td>A gift from S. Gruber and custom synthesis (purity ≥ 96%)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CMP-PCP</td>
+      <td>Jena Bioscience</td>
+      <td>Cat# NU-254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>P32-α-CTP</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# BLU008H250UC</td>
+      <td>3000 Ci/mmol, 10 mCi/ml, 250 µCi</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anhydrotetracycline hydrochloride (ahTc)</td>
+      <td>Abcam</td>
+      <td>Cat# ab145350</td>
+      <td>Dissolved in ethanol</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bismaleimidoethane (BMOE)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# 22323</td>
+      <td>Dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLItz Pro</td>
+      <td>Molecular Devices</td>
+      <td>Cat# 50–0156</td>
+      <td>Version 1.2 https://www.moleculardevices.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>RRID: SCR_001905</td>
+      <td>Version 3.2.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID: SCR_013715</td>
+      <td>Version 5.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel 2016</td>
+      <td>Microsoft</td>
+      <td>RRID: SCR_016137</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein overexpression and purification
 
 Full-length Caulobacter ParB (WT) and ParB (R104A) were purified as described previously (Tran et al., 2018). Briefly, pET21b::ParB-His6 (WT or R104A) was introduced into E. coli Rosetta (DE3) competent cells (Merck). A 10 mL overnight culture was used to inoculate 4 L of LB medium + carbenicillin + chloramphenicol. Cells were grown at 37°C with shaking at 250 rpm to an OD600 of 0.4. The culture was then left to cool to 4°C before isopropyl-β-D-thiogalactopyranoside (IPTG) was added to a final concentration of 1 mM. The culture was shaken for 3 hr at 30°C before cells were harvested by centrifugation.
 
@@ -94,27 +385,27 @@ N-terminally His-tagged MBP-tagged ParB (orthologous proteins from various bacte
 
 Different batches of proteins were purified by A.S.B.J and N.T.T, and are consistent in all assays used in this work. Both biological (new sample preparations from a fresh stock aliquot) and technical (same sample preparation) replicates were performed for assays described in this study.
 
-## Construction of pET21b::ParB-His6 (C297S and Q35C C297S)
+### Construction of pET21b::ParB-His6 (C297S and Q35C C297S)
 
 DNA containing the codon-optimized coding sequence of ParB (C297S or Q35C C297S) was chemically synthesized (gBlocks dsDNA fragments, IDT). These gBlocks fragments and a NdeI-HindIII-digested pET21b backbone were assembled using a 2x Gibson master mix (NEB). Two and a half µL of each fragment at equimolar concentration was added to 5 µL 2x Gibson master mix (NEB), and the mixture was incubated at 50°C for 60 min. Five µL was used to transform chemically competent E. coli DH5α cells. Gibson assembly was possible due to a 23 bp sequence shared between the NdeI-HindIII-cut pET21b backbone and the gBlocks fragments. These 23 bp regions were incorporated during the synthesis of gBlocks fragments. The resulting plasmids were sequence verified by Sanger sequencing (Eurofins, Germany).
 
-## Construction of pET21b::TetR-His6
+### Construction of pET21b::TetR-His6
 
 DNA containing the coding sequence of TetR (class B, from Tn10) was chemically synthesized (gBlocks dsDNA fragments, IDT). This gBlocks fragment and a NdeI-HindIII-digested pET21b backbone were assembled together using a 2x Gibson master mix (NEB). Gibson assembly was possible due to a 23 bp sequence shared between the NdeI-HindIII-cut pET21b backbone and the gBlocks fragment. These 23 bp regions were incorporated during the synthesis of gBlocks fragments. The resulting plasmids were sequence verified by Sanger sequencing (Eurofins, Germany).
 
-## Construction of pENTR::ParB orthologs
+### Construction of pENTR::ParB orthologs
 
 The coding sequences of ParB orthologs were chemically synthesized (gBlocks dsDNA fragments, IDT) and cloned into pENTR-D-TOPO backbone (Invitrogen) by Gibson assembly (NEB). The resulting plasmids were sequence verified by Sanger sequencing (Eurofins, Germany).
 
-## Construction of pET-His-MBP-TEV-DEST::ParB orthologs
+### Construction of pET-His-MBP-TEV-DEST::ParB orthologs
 
 The parB genes were recombined into a Gateway-compatible destination vector pET-His-MBP-TEV-DEST (Jalal et al., 2019) via an LR recombination reaction (ThermoFisher). For LR recombination reactions: 1 µL of purified pENTR::parB (~100 ng/µL) was incubated with 1 µL of the destination vector pET-His-MBP-TEV-DEST (~100 ng/µL), 1 µL of LR Clonase II enzyme mix, and 2 µL of water in a total volume of 5 µL.
 
-## Construction of DNA substrates for BLI assays
+### Construction of DNA substrates for BLI assays
 
 All DNA constructs (Supplementary file 1) were designed in VectorNTI (ThermoFisher) and were chemically synthesized (gBlocks dsDNA fragments, IDT). All linear DNA constructs were designed with M13F and M13R homologous regions at each end. To generate a dual biotin-labeled DNA substrate, PCR reactions were performed using a 2x GoTaq PCR master mix (Promega), biotin-labeled M13F and biotin-labeled M13R primers, and gBlocks fragments as template. PCR products were resolved by electrophoresis and gel purified.
 
-## Measurement of protein-DNA interaction by bio-layer interferometry (BLI)
+### Measurement of protein-DNA interaction by bio-layer interferometry (BLI)
 
 Bio-layer interferometry experiments were conducted using a BLItz system equipped with Dip-and-Read Streptavidin (SA) Biosensors (Molecular Devices). BLItz monitors wavelength shifts (nm) resulting from changes in the optical thickness of the sensor surface during association or dissociation of the analyte. All BLI experiments were performed at 22°C. The streptavidin biosensor was hydrated in a low-salt binding buffer [100 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM MgCl2, and 0.005% Tween 20] for at least 10 min before each experiment. Biotinylated double-stranded DNA (dsDNA) was immobilized onto the surface of the SA biosensor through a cycle of Baseline (30 s), Association (120 s), and Dissociation (120 s). Briefly, the tip of the biosensor was dipped into a binding buffer for 30 s to establish the baseline, then to 1 μM biotinylated dsDNA for 120 s, and finally to a low salt binding buffer for 120 s to allow for dissociation.
 
@@ -134,30 +425,30 @@ To verify that dual biotin-labeled DNA fragments formed a closed substrate on th
 
 NTP (stock concentration: 100 mM) used in BLI assays was purchased from ThermoFisher. CTPγS (stock concentration: 90 mM) was a generous gift from Stephan Gruber and Young-Min Soh. CTPγS was also custom-synthesized and re-purified to 96% purity (Jena Bioscience). Another non-hydrolyzable analog CMP-PCP (Jena Bioscience) was unsuitable for our assays as Caulobacter ParB does not bind CMP-PCP (Figure 6—figure supplement 1).
 
-## Construction of DNA substrates for pull-down assays
+### Construction of DNA substrates for pull-down assays
 
 A 260 bp DNA fragment containing Caulobacter parS sites (genomic position: 4034789–4035048) (Tran et al., 2018) or scrambled parS sites were chemically synthesized (gBlocks fragments, IDT). These DNA fragments were subsequently 5’ phosphorylated using T4 PNK enzyme (NEB), then cloned into a SmaI-cut pUC19 using T4 DNA ligase (NEB). The two resulting plasmids are pUC19::260bp-parS and pUC19::260bp-scrambled parS (Supplementary file 1). These plasmids were sequence verified by Sanger sequencing (Eurofins, Germany). To generate dual biotin-labeled DNA substrates, we performed PCR using a pair of biotinylated primers: around_pUC19_F and around_pUC19_R, and either pUC19::260bp-parS or pUC19::260bp-scrambled parS as a template. Phusion DNA polymerase (NEB) was employed for this round-the-horn PCR reaction. The resulting ~2.8 kb linear DNA fragments were gel-purified and eluted in 50 µL of autoclaved distilled water.
 
-## Pull-down assays
+### Pull-down assays
 
 Paramagnetic MyOne Streptavidin C1 Dyna beads (ThermoFisher) were used for pull-down assays. Thirty µL of beads were washed twice in 500 µL of high-salt wash buffer [100 mM Tris-HCl pH 8.0, 1 M NaCl, 1 mM MgCl2, and 0.005% Tween 20] and once in 100 µL binding buffer [100 mM Tris-HCl pH 8.0, 100 mM NaCl, 1 mM MgCl2, and 0.005% Tween 20] by repeating a cycle of resuspension and pull-down by magnetic attraction. Five µL of ~50 nM dual biotin-labeled DNA substrate was incubated with 30 µL of beads in 100 µL binding buffer for 30 min at room temperature. The reaction was occasionally mixed by pipetting up and down several times. Afterward, DNA-coated beads were washed once in 500 µL high-salt buffer [100 mM Tris-HCl pH 8.0, 1000 mM NaCl, 1 mM MgCl2, and 0.005% Tween 20] and once in 500 µL of binding buffer. Finally, DNA-coated beads were resuspended in 300 µL of binding buffer. Ninety-six µL of the resuspended beads were used for each pull-down assay. Four µL of Caulobacter ParB-His6 (WT) or (R104A) (stock concentration: 25 µM) were added to 96 µL of suspended beads. NTPs were either omitted or added to the suspended beads to the final concentration of 1 mM. The mixture was pipetted up and down several times and was left to incubate at room temperature for 5 min. Beads were then pulled down magnetically and unwanted supernatant discarded. DNA-coated beads (now with bound protein) were then washed once with 500 µL of binding buffer and once with 100 µL of the same buffer. The unwanted supernatant was discarded, and the left-over beads were resuspended in 30 µL of 1x SDS-PAGE sample buffer. Each experiment was triplicated, and a representative immunoblot was presented.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 For immunoblot analysis, magnetic beads were resuspended directly in 1x SDS sample buffer, then heated to 42°C for 15 min before loading to 12% Novex Tris-Glycine SDS-PAGE gels (ThermoFisher). The eluted protein was resolved by electrophoresis at 150 V for 60 min. Resolved proteins were transferred to polyvinylidene fluoride membranes using the Trans-Blot Turbo Transfer System (BioRad) and probed with 1:5000 dilution of α-His6 HRP-conjugated antibody (Abcam). Blots were imaged and analyzed using an Amersham Imager 600 (GE Healthcare) and Image Studio Lite version 5.2 (LI-COR Biosciences). The band intensities were quantified for lanes 5 and 6 (Figure 2C), and the range of fold difference between replicates was reported.
 
-## Differential radial capillary action of ligand assay (DRaCALA) or membrane-spotting assay
+### Differential radial capillary action of ligand assay (DRaCALA) or membrane-spotting assay
 
 Purified Caulobacter ParB-His6 or TetR-His6 (final concentration: 25 µM) were incubated with 5 nM radiolabeled P32-α-CTP (Perkin Elmer), 30 µM of unlabeled cold CTP (Thermo Fisher), 1.5 μM of 22 bp parS or NBS DNA duplex in the reaction buffer [100 mM Tris pH 8.0, 100 mM NaCl, and 10 mM MgCl2] for 5 min at room temperature. For the NTP competition assay, the mixture was further supplemented with 500 µM of either unlabeled cold CTP, ATP, GTP, or UTP. Four μL of samples were spotted slowly onto a dry nitrocellulose membrane and air-dried. The nitrocellulose membrane was wrapped in cling film before being exposed to a phosphor screen (GE Healthcare) for two minutes. Each DRaCALA assay was triplicated, and a representative autoradiograph was shown.
 
-## DNA preparation for EnzCheck phosphate assay and DRaCALA
+### DNA preparation for EnzCheck phosphate assay and DRaCALA
 
 A 22 bp palindromic single-stranded DNA fragment (parS: GGATGTTTCACGTGAAACATCC or NBS: GGATATTTCCCGGGAAATATCC) [100 µM in 1 mM Tris-HCl pH 8.0, 5 mM NaCl buffer] was heated at 98°C for 5 min before being left to cool down to room temperature overnight to form 50 µM double-stranded parS or NBS DNA. The sequences of parS and NBS are underlined.
 
-## Measurement of NTPase activity by EnzCheck phosphate assay
+### Measurement of NTPase activity by EnzCheck phosphate assay
 
 NTP hydrolysis was monitored using an EnzCheck Phosphate Assay Kit (Thermo Fisher). Samples (100 µL) containing a reaction buffer supplemented with 1 mM of NTP and 1 µM ParB (WT or R104A) were assayed in a Biotek EON plate reader at 25°C for 15 hr with readings every minute. The reaction buffer (1 mL) typically contained: 740 μL Ultrapure water, 50 μL 20x customized reaction buffer [100 mM Tris pH 8.0, 2 M NaCl, and 20 mM MgCl2], 200 μL MESG substrate solution, and 10 μL purine nucleoside phosphorylase (1 unit). Reactions with buffer only, buffer + protein only or buffer + NTP only were also included as controls. The plates were shaken at 280 rpm continuously for 15 hr at 25°C. The inorganic phosphate standard curve was also constructed according to the manual. Each assay was triplicated. The results were analyzed using R and the NTPase rates were calculated using a linear regression fitting in R.
 
-## In vitro crosslinking using a sulfhydryl-to-sulfhydryl crosslinker bismaleimidoethane (BMOE)
+### In vitro crosslinking using a sulfhydryl-to-sulfhydryl crosslinker bismaleimidoethane (BMOE)
 
 A 50 µL mixture of 10 µM ParB (C297S) or (C297S Q35C) ± 1 mM NTP ± 0.5 µM parS dsDNA (22 bp) was assembled in a reaction buffer [10 mM Tris-HCl pH 7.4, 100 mM NaCl, and 1 mM MgCl2] and incubated for 15 min (Figure 6—figure supplement 2B) or for 1, 5, 10, 15, and 30 min (Figure 6B) at room temperature. BMOE (1 mM final concentration from a 20 mM stock solution) was then added, and the reaction was quickly mixed by three pulses of vortexing. SDS-PAGE sample buffer containing 23 mM β-mercaptoethanol was then added immediately to quench the crosslinking reaction. Samples were heated to 50°C for 15 min before being loaded on 12% TruPAGE Tris-Glycine Precast gels (Sigma Aldrich). Each assay was triplicated. Gels were stained with InstantBlue solution (Expedeon) and band intensity was quantified using Image Studio Lite version 5.2 (LI-COR Biosciences). The crosslinked fractions were averaged, and their standard deviations calculated in Excel.

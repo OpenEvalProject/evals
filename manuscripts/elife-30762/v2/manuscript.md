@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.30762.001 Humans effortlessly establish a gist-like memory of their environment whenever they enter a new place, a memory that can guide action even in the absence of vision. Neurons in the lateral intraparietal area (LIP) of the monkey exhibit a form of this environmental memory. These neurons respond when a monkey makes a saccade that brings the spatial location of a stimulus that appeared on a number of prior trials, but not on the present trial, into their receptive fields (RFs). The stimulus need never have appeared in the neuron’s RF. This memory response is usually weaker, with a longer latency than the neuron’s visual response. We suggest that these results demonstrate that LIP has access to a supraretinal memory of space, which is activated when the spatial location of the vanished stimulus can be described by a retinotopic vector from the center of gaze to the remembered spatial location.
+Humans effortlessly establish a gist-like memory of their environment whenever they enter a new place, a memory that can guide action even in the absence of vision. Neurons in the lateral intraparietal area (LIP) of the monkey exhibit a form of this environmental memory. These neurons respond when a monkey makes a saccade that brings the spatial location of a stimulus that appeared on a number of prior trials, but not on the present trial, into their receptive fields (RFs). The stimulus need never have appeared in the neuron’s RF. This memory response is usually weaker, with a longer latency than the neuron’s visual response. We suggest that these results demonstrate that LIP has access to a supraretinal memory of space, which is activated when the spatial location of the vanished stimulus can be described by a retinotopic vector from the center of gaze to the remembered spatial location.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we asked if neurons in the lateral intraparietal area (LIP), an area with 
 
 ## Results
 
-## Dataset
+### Dataset
 
 We recorded the activity of 131 neurons in three monkeys: 79 in Monkey A, 15 in Monkey B, and 37 in Monkey C. Because we had only a small number of cells in each monkey and the results from Monkeys B and C were comparable, these two data sets were combined for several analyses.
 
@@ -42,7 +42,7 @@ All neurons in our sample had visual responses to the onset of a saccade target 
 
 **Figure 1.:** (A) A tungsten microelectrode (250 µm thick, straight shadow) located in the target area based on known LIP activity and the commonly used atlas-defined coordinates (Paxinos et al., 1999; Saleem and Logothetis, 2012) within the given coronal slice of the brain. This electrode location was at −2 AP and +10 ML.
 
-## Task 1: Basic memory task
+### Task 1: Basic memory task
 
 We studied 72 LIP neurons using a task based on that used to demonstrate environmental memory in the frontal eye field (Umeno and Goldberg, 2001) (Figure 2). After determining the spatial tuning properties of the neuron being recorded, the monkey performed the basic memory task which is comprised of four blocks. We customized the arrangement of the stimuli (fixation point, saccade target, and probe stimulus) according to the spatial properties of each neuron’s receptive field. In the first block, we asked the monkey to perform 20 visually guided saccade trials in which no probe stimuli appeared on the screen (Figure 2, Block 1). In these trials, no stimulus, including the saccade target, encroached on the receptive field of the neuron. Next, we asked the monkey to perform a block of 30 visually guided saccade trials in which a task-irrelevant probe stimulus appeared at a location that would be brought into the receptive field by the required saccade (i.e. the future receptive field of the neuron) (Figure 2, Block 2). Then, we pseudorandomly interleaved trials in which the probe stimulus appeared on the screen with those in which no probe stimulus appeared (Figure 2, Block 3). Finally, we presented the monkey with a block of 100 trials in which, again, the probe stimulus never appeared (Figure 2, Block 4).
 
@@ -70,7 +70,7 @@ During Block 4, in which the probe stimulus no longer appeared, the memory respo
 
 The memory cells were not just the expected tail of a population distribution. To investigate the population median shift, we used a classical median approach. We analyzed the distribution of index histograms and found that memory activity significantly increased the median (medians > 0.1 and compared with the index histograms with a mean-deducted version of the same distribution Wilcoxon signed rank p=3.7034e-12 for Monkey A and 1.4923e-06 for Monkeys B and C). We also used a non-parametric and robust skewness estimator called the medcouple (medc) measure (Brys et al., 2004). Unlike classical histogram descriptors such as skewness and kurtosis, this approach finds the scaled median difference between the left and right sides of a distribution. Its values range from −1 to 1 (left to right skewed, respectively). Analysis using this method for mixed trials in Block 3 (memory) versus Block 1 (baseline) indices (Figure 5a inserts) revealed that the population data was skewed toward a memory response (positive medc, ~1). The positive skewness of the memory responses (compared to baseline) is also indicated by an increased slope of a polynomial fit line (red and blue lines in Figure 5a) which is shifted to left of the identity line (black dashed line).
 
-## Task 2: No-RF task
+### Task 2: No-RF task
 
 This task tested whether environmental memory could be evoked in the absence of receptive field stimulation. The basic memory task demonstrated that LIP neurons respond when a saccade brings the spatial location of a previously presented (now vanished) probe stimulus into their receptive field. However, because we established memory by having the monkey make a saccade that brought a stimulus into the receptive field, and then demonstrated the memory by having the monkey make the same saccade without a stimulus present, we could not know whether the memory response was independent of receptive field stimulation, or if it required visual stimulation or the receptive field to be established. Furthermore, we also could not determine whether the memory response was independent of the saccade used to establish it. To answer these questions, we used a modified version of the basic memory task, the No-RF task, in which the probe stimulus never appeared in the receptive field of the neuron and the monkey was required to make two different saccades on different trials (Figure 6).
 
@@ -138,7 +138,11 @@ We transformed the REX data into a form analyzable by MATLAB (MathWorks, Natick,
 
 Before performing detailed statistical analysis, we first investigated if the data came from standard normal distributions, using two-sample Kolmogorov-Smirnov (KS) test. When we tested the mean neural activity in the response windows (intervals described below), all of our data sets were found to be distributed non-normally (non-parametric).
 
-To show that the statistically significant cells in both experiments were not just one side of a symmetric distribution we calculated a memory index to quantify the degree to which each cell manifested memory activity, comparing postsaccadic activity in Block 1 (Rpre) with postsaccadic activity in Block 3 (Rmem):Memoryindex=(Rmem−Rpre)/(Rmem+Rpre)
+To show that the statistically significant cells in both experiments were not just one side of a symmetric distribution we calculated a memory index to quantify the degree to which each cell manifested memory activity, comparing postsaccadic activity in Block 1 (Rpre) with postsaccadic activity in Block 3 (Rmem):
+
+$$
+Memoryindex=(R_{mem}−R_{pre})/(R_{mem}+R_{pre})
+$$
 
 All index distributions were not normally distributed (by KS test), and we showed that the population median was significantly different from zero by using median values for the distribution of the memory indices and a Wilcoxon signed rank test to compare each sample with a test sample identical to the measured sample with the measured mean subtracted from each value. In addition, we calculated medcouple, a non-parametric histogram skewness measure (Brys et al., 2004). This tool is not affected by unsymmetrical tails and outliers, and is also not based on classical skewness represented by the third moment. Since this measure does not depend on mean or standard deviation, it gives an accurate description of a skewed distribution. Its results are bound between values: −1 (left skewed), 0 (symmetric), and 1 (right skewed).
 

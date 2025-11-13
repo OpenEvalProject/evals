@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.41313.001 Cellular actin assembly is controlled at the barbed ends of actin filaments, where capping protein (CP) limits polymerization. Twinfilin is a conserved in vivo binding partner of CP, yet the significance of this interaction has remained a mystery. Here, we discover that the C-terminal tail of Twinfilin harbors a CP-interacting (CPI) motif, identifying it as a novel CPI-motif protein. Twinfilin and the CPI-motif protein CARMIL have overlapping binding sites on CP. Further, Twinfilin binds competitively with CARMIL to CP, protecting CP from barbed-end displacement by CARMIL. Twinfilin also accelerates dissociation of the CP inhibitor V-1, restoring CP to an active capping state. Knockdowns of Twinfilin and CP each cause similar defects in cell morphology, and elevated Twinfilin expression rescues defects caused by CARMIL hyperactivity. Together, these observations define Twinfilin as the first ‘pro-capping’ ligand of CP and lead us to propose important revisions to our understanding of the CP regulatory cycle.
+Cellular actin assembly is controlled at the barbed ends of actin filaments, where capping protein (CP) limits polymerization. Twinfilin is a conserved in vivo binding partner of CP, yet the significance of this interaction has remained a mystery. Here, we discover that the C-terminal tail of Twinfilin harbors a CP-interacting (CPI) motif, identifying it as a novel CPI-motif protein. Twinfilin and the CPI-motif protein CARMIL have overlapping binding sites on CP. Further, Twinfilin binds competitively with CARMIL to CP, protecting CP from barbed-end displacement by CARMIL. Twinfilin also accelerates dissociation of the CP inhibitor V-1, restoring CP to an active capping state. Knockdowns of Twinfilin and CP each cause similar defects in cell morphology, and elevated Twinfilin expression rescues defects caused by CARMIL hyperactivity. Together, these observations define Twinfilin as the first ‘pro-capping’ ligand of CP and lead us to propose important revisions to our understanding of the CP regulatory cycle.
 
 ## Introduction
 
@@ -42,13 +42,17 @@ Here, we uncover a novel role for Twinfilin in protecting CP from the negative r
 
 ## Results
 
-## CP inhibits mTwf1-mediated depolymerization by capping barbed ends
+### CP inhibits mTwf1-mediated depolymerization by capping barbed ends
 
 Because CP binding proteins have been studied predominantly in mammalian systems, we focused our investigation on mouse rather than yeast CP and Twinfilin. Mutagenesis on the yeast Twinfilin tail previously identified a mutant, twf1-11, that targets a cluster of positively charged residues (R328A, K329A, R330A, R331A) necessary for binding CP (Falck et al., 2004). While truncations of the C-terminal tail in mouse Twinfilin (mTwf1) also disrupt CP binding, the residues involved have not yet been defined. We therefore first sought to generate a specific mutant in mTwf1 that disrupts the interaction, analogous to yeast twf1-11. An alignment of the three mouse and three human Twinfilin isoforms, along with the single Twinfilin genes expressed in S. cerevisiae and D. melanogaster (Figure 1A), revealed a region that includes two of the basic residues mutated in the yeast twf1-11 mutant. We mutated these two residues in mTwf1, changing them to alanines, to produce mTwf1-11 (K332A, R333A). To quantify binding of mTwf1 to CP, we performed fluorescence anisotropy assays using a mTwf1 tail peptide (317-350) labeled at its N-terminus with HiLyte488. The mTwf1 tail peptide displayed high affinity, concentration-dependent binding to CPα1β2, a major non-muscle isoform of CP in mammalian cells (Figure 1B). Moreover, full-length mTwf1 protein (unlabeled) competed with the labeled mTwf1 tail for CP binding, whereas full-length mTwf1-11 (unlabeled) did not (Figure 1C). Thus, the mTwf1-11 mutant effectively uncouples mTwf1 binding to CP.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig1-v2.jpg)
+
+**Figure 1.:** (A) Mouse Twinfilin-1 (mTwf1) domain organization: ADF-H, actin depolymerization factor homology domain; L, linker; T, tail. Sequence alignment of tail regions of Twinfilin isoforms from different species with boxed region highlighting conservation of residues critical for binding to Capping Protein (CP). mTwf1-11 carries a mutation in the tail region (KR332,333AA) that disrupts binding to CP. (B) Fluorescence anisotropy measurement of 100 nM HiLyte488-labeled mTwf1 tail peptide mixed with increasing concentrations of the indicated CP construct. (C) Fluorescence anisotropy measurement of 100 nM HiLyte488-labeled mTwf1 tail peptide incubated in the presence 1 μM CP and increasing concentrations of either mTwf1 or mTwf1-11. Anisotropy values for each condition averaged from three independent experiments. (D,E) Rates of barbed end depolymerization (subunits s−1) induced by 1 μM of the indicated mouse Twinfilin, in the (D) absence or (E) presence of 10 nM CP, determined from TIRF assays. Rates for each condition averaged from at least five filaments in each of two independent experiments. From left to right: (D) n = 19, 26, and 15 and mean depolymerization rates 1.13, 2.784 and 2.81 subunits s−1; (E) n = 13, 15, and 20 and mean depolymerization rates 1.13, 2.784 and 2.81 subunits s−1. (F) Rates of barbed end depolymerization (subunits s−1) induced by 1 μM mTwf1, in the absence or presence of 1 μM of the indicated CP construct, determined from TIRF assays. Rates for each condition averaged from at least five filaments from at least one experiment. From left to right n = 21, 25, 6, and 10; mean depolymerization rates 1.45, 2.991, 0.11, and 3.58 subunits s−1. (G) Summary of barbed end depolymerization activity of mTwf1 constructs in combination with different CP constructs determined from TIRF assays (as in D,E,F). Error bars, s.e.m. ****p≤0.0001, n.s. p>0.05 by one-way ANOVA with Tukey post hoc test.
+
 Using mTwf1-11, we addressed how CP binding affects Twinfilin’s actin depolymerization activities in total internal reflection fluorescence (TIRF) microscopy assays, by directly observing depolymerization at actin filament barbed ends in real time. In agreement with previous observations using yeast and mouse Twinfilin (Hilton et al., 2018; Johnston et al., 2015), 1 µM mTwf1 accelerated barbed end depolymerization by 2–3 fold compared to control reactions (Figure 1D), and the addition of CP blocked this effect (Figure 1E). Further, mTwf1-11 exhibited a similar rate (Figure 1D), indicating that this mutant has wild type depolymerization activity, and thus separates Twinfilin’s ability to bind CP from its ability to promote barbed-end depolymerization. Interestingly, the addition of CP was still able to block barbed-end depolymerization by mTwf1-11 (Figure 1E). These observations suggest that CP sterically blocks mTwf1 access to barbed ends, independent of its direct interaction with mTwf1. However, this left open the question of whether CP binding to mTwf1 might alter its mechanism of depolymerization independent of blocking the barbed end. To address this possibility, we utilized a CP mutant, CPαΔ28, which truncates the C-terminal tentacle of the alpha subunit, severely inhibiting capping activity (Kim et al., 2010). Importantly, in binding assays the mTwf1 tail interacted equally well with wild-type CP and CPαΔ28, demonstrating that this mutant binds normally to mTwf1 (Figure 1B). In TIRF assays, equimolar amounts of CPαΔ28 did not significantly alter mTwf1 depolymerization activity (Figure 1F; Figure 1—video 1; also summarized in Figure 1G), suggesting that while CP blocks Twinfilin access to barbed ends, Twinfilin-CP direct interaction does not alter Twinfilin depolymerization activity.
 
-## The twinfilin tail competes with CARMIL CPI motif for binding to CP
+### The twinfilin tail competes with CARMIL CPI motif for binding to CP
 
 Given that CP binding does not affect Twinfilin’s depolymerization activity, or other known activities of Twinfilin (Falck et al., 2004; Johnston et al., 2015; Palmgren et al., 2001), we next considered whether Twinfilin binding might influence CP functions in the presence of known regulators of CP. We were particularly interested in how Twinfilin might impact the regulation of CP by CPI-motif proteins such as CARMIL, since we noticed that the C-terminal tail regions of evolutionarily diverse Twinfilins share sequence homology with the CPI motifs of several CPI family proteins (Figure 2A). The consensus CPI motif is 17-amino acids long, with some additional contacts contributed from outside this motif, and tolerates significant divergence across the CPI-motif family (Edwards et al., 2014; Hernandez-Valladares et al., 2010). As an initial test, we used a mutant of CP, CP(RY), which alters two surface residues on the beta subunit (R15A, Y79A) that make essential contacts with CPI-motif proteins (Edwards et al., 2014; Hernandez-Valladares et al., 2010). The CP(RY) mutant is insensitive to inhibition and uncapping by CARMIL and disrupts binding with at least two other CPI-motif proteins, CD2AP and WASHCAP (FAM21) (Edwards et al., 2015). In fluorescence anisotropy binding assays, we observed that the CP(RY) mutant has approximately 20-fold reduced affinity for mTwf1 tail compared to wild type CP (Figure 2B). These data are consistent with mTwf1 and CPI-motif proteins sharing at least partially overlapping binding sites on CP. In addition, we asked whether introducing a mutation in the mTwf1 tail peptide at a conserved residue in CPI consensus sequences would alter binding to CP (Lys 325 in mTwf1; see red asterisk, sequence alignment in Figure 2A). In fluorescence anisotropy binding assays, we compared the abilities of wild-type and mutant (K325A) mTwf1 tail peptides to compete with labeled mTwf1 tail peptide for CP binding. This analysis revealed an ~30 fold reduction in binding affinity for the mutant (K325A) mTwf1 tail peptide compared to wild type peptide (Figure 2C).
 
@@ -58,13 +62,21 @@ Given that CP binding does not affect Twinfilin’s depolymerization activity, o
 
 We next asked whether the CP-binding region (CBR) of CARMIL1 (residues 964 – 1078) competes with mTwf1 tail for binding to CP. We observed that unlabeled CBR peptide competed with the fluorescent mTwf1 tail probe for CP binding (Figure 2D). These results indicate that CARMIL and mTwf1 directly compete for binding CP. Next, we more narrowly defined the region of CARMIL that competes with mTwf1 by using peptides that divide the CBR into its two conserved components, the CPI motif (969 – 1005) and the CARMIL-specific interaction (CSI) motif (1019 – 1037). The CSI makes additional contacts with CP, but is found only in CARMIL family members, and not in other CPI-motif proteins (Edwards et al., 2014). As expected based on Twinfilin’s sequence similarity to CPI motifs, only the CPI-motif peptide and not the CSI peptide competed with mTwf1 tail for CP binding (Figure 2D). Together, these results suggest that Twinfilin is a divergent CPI-motif protein and has important implications for CP regulation in cells (see Discussion).
 
-## Twinfilin attenuates CARMIL-mediated displacement of CP from barbed ends
+### Twinfilin attenuates CARMIL-mediated displacement of CP from barbed ends
 
 Given that CARMIL and Twinfilin compete for binding to CP, we asked whether mTwf1 affects CARMIL’s ability to displace CP from barbed ends. We addressed this question in pyrene actin assembly assays, where actin polymerization was initiated at time zero in the presence of CP and increasing concentrations of mTwf1, and after 400 s CARMIL1 CBR was spiked into the reaction. CARMIL1 alone (no mTwf1) strongly induced uncapping, leading to the rapid polymerization of previously-capped filament seeds (Figure 3A). However, increasing concentrations of mTwf1 attenuated CARMIL’s uncapping effects (Figure 3A). These results are consistent with mTwf1 competing with CARMIL for binding CP, and thereby blocking uncapping.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bulk fluorescence assays comparing the rates of actin assembly in the presence of 25 nM muscle Capping Protein (CPα1β1) and increasing concentrations of mTwf1. To initiate uncapping, 250 nM CBR fragment of CARMIL (see schematic, Figure 2A) was spiked into the reaction at 400 s. Data shown are representative curves from experiments repeated three independent times. (B) Representative time-lapse images from TIRF microscopy assays monitoring the displacement of labeled CP from barbed ends. Filaments were first polymerized and tethered using 1 µM actin (10% OG-labeled, 0.5% biotin–actin), then capped at their barbed ends by flowing in SNAP-649-CP (100% labeled). Next, 50 nM CBR fragment of CARMIL and different concentrations of mTwf1 were flowed in, and CP dissociation was monitored over time. Scale bar, 5 μm. (C) Quantification of the percentage of filaments retaining CP at the barbed ends in the presence of 50 nM CBR fragment of CARMIL and variable concentrations of mTwf1, determined from TIRF reactions as in (B). Control curve, buffer alone (no CBR or mTwf1). n > 45 events measured from at least two independent experiments. (D) Representative time-lapse images from TIRF microscopy assays monitoring CP displacement from barbed ends, analyzed as in (B), except using 1 μM mTwf1-11 instead of mTwf1. n > 45 events measured from at least two independent experiments. (E) Quantification of the percentage of filaments retaining CP at the barbed end in the presence of 50 nM CBR fragment of CARMIL and different concentrations of mTwf1-11, determined from TIRF assays as in (D). n > 45 events measured from at least two independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative time-lapse images from TIRF microscopy assays showing that mTwf2a protects Capping Protein (CP) from CARMIL-mediated displacement from barbed ends. Filaments were first polymerized and tethered using 1 µM actin (10% OG-labeled, 0.5% biotin–labeled), then SNAP-649-CP was flowed in to cap barbed ends. Subsequently, 50 nM CBR fragment of CARMIL and 250 nM mTwf2a was flowed in, and uncapping was monitored over time. (B) Quantification of the percentage of filaments retaining SNAP-649-CP at their barbed ends after flow in of 50 nM CBR fragment of CARMIL and variable concentrations of mTwf2a, measured from TIRF reactions as in (A). Control curve, buffer alone (no CBR or mTwf2a). n > 45 events measured from one experiment. (C) Concentration-dependent effects of Twinfilin isoforms (and mutant mTwf1-11) on time to 50% disappearance of CP from barbed ends, measured from data shown in Figure 3C (mTwf1), Figure 3E (mTwf1-11), and Supplemental Figure 3—figure supplement 1 (mTwf2a).
+
 To more directly observe mTwf1 effects on CARMIL-induced uncapping of barbed ends, we used TIRF microscopy. In these experiments, we used fluorescently labeled SNAP-tagged CP (SNAP-649-CP; 100% labeled) to monitor lifetimes of CP molecules on filament barbed ends (Bombardier et al., 2015). Filaments were first polymerized to a desired length (~10 µm) and then capped by flowing in SNAP-649-CP. Free CP was washed out, and then proteins of interest (or control buffer) were flowed in. Capped filaments were identified in the field of view prior to flow-in, and then monitored after flow-in to measure the dwell time of SNAP-649-CP. As expected, in the absence of other factors, SNAP-649-CP had a long dwell time, remaining on barbed ends for tens of minutes (Figure 3B and C). However, when CARMIL1 CBR was introduced, this led to the rapid displacement of SNAP-649-CP, with complete loss of CP from barbed ends by 100 s (Figure 3B and C). The addition of mTwf1 with CARMIL1 CBR attenuated the uncapping effects in a concentration-dependent manner (Figure 3B and C). Further, this attenuation required direct interactions between Twinfilin and CP, as mTwf1-11 failed to protect CP from CARMIL uncapping (Figure 3D and E and Figure 3—figure supplement 1). Similar effects were observed for the other major isoform of mouse Twinfilin that is expressed in non-muscle cells, mTwf2a (Figure 3—figure supplement 1) (Nevalainen et al., 2011; Vartiainen et al., 2003).
 
-## Twinfilin accelerates the dissociation of V-1 from CP
+### Twinfilin accelerates the dissociation of V-1 from CP
 
 We next considered whether Twinfilin binding to CP might affect the activities of CP inhibitor V-1/myotrophin, which is distinct from CPI-motif proteins in its mode of CP interaction. Unlike CARMIL, V-1 does not displace CP from barbed ends; instead, it sequesters CP and blocks it from binding filament ends (Bhattacharya et al., 2006; Jung et al., 2016; Taoka et al., 2003). In contrast to the CARMIL binding site on CP, which partially encircles the ‘stalk’ of the CP heterodimer (Hernandez-Valladares et al., 2010; Johnson et al., 2018; Zwolak et al., 2010), V-1 interacts with CP on the opposite face, sterically blocking binding to the filament end (Johnson et al., 2018; Takeda et al., 2010; Zwolak et al., 2010). To test how Twinfilin might affect the interaction of CP with V-1, we used pyrene-actin seeded elongation assays (Figure 4A). As expected, filament seeds pre-incubated with CP and then mixed with pyrene-actin monomers displayed minimal growth, whereas the addition of V-1 restored actin assembly to uncapped levels. Somewhat to our surprise, the further addition of mTwf1 suppressed V-1’s effects, restoring capping activity, while mTwf1-11 had no effect (Figure 4A and B). These effects were unexpected given the above-mentioned differences in Twinfilin’s predicted and V-1’s known binding sites on CP, and our observation that even high concentrations of V-1 (1000-fold excess to mTwf1 tail probe) fail to compete with mTwf1 for CP binding in anisotropy assays (Figure 4C). These results suggest that mTwf1 attenuates V-1 effects on CP via an allosteric mechanism, distinct from a simple steric binding competition.
 
@@ -74,13 +86,33 @@ We next considered whether Twinfilin binding to CP might affect the activities o
 
 In probing the mechanism further, we drew inspiration from a study by Fujiwara and colleagues, showing that CARMIL forms a transient ternary complex with V-1 and CP, leading to accelerated dissociation of V-1 from CP (Fujiwara et al., 2014). We asked whether mTwf1 might similarly catalyze the dissociation of V-1 from CP. In stopped-flow fluorescence assays, fluorescently labeled V-1 (TAMRA-V-1) was first allowed to bind CP, and then mixed at time zero with an excess of unlabeled V-1. The resulting decrease in fluorescence reflects the spontaneous dissociation of TAMRA-V-1 from CP (Figure 4D). The rate of V-1 dissociation from CP increased in the presence of increasing concentrations of mTwf1, pointing to the possible formation of a transient ternary complex that destabilizes V-1 interactions with CP (Figure 4D and E). Importantly, mTwf1-11 failed to enhance V-1 dissociation (Figure 4E), showing that this effect depends on direct interactions between mTwf1 tail and CP. These results demonstrate that CARMIL and Twinfilin share a common function in catalyzing the dissociation of V-1 from CP using their CPI motifs to bind CP, despite having different effects on the displacement of CP from barbed ends.
 
-## Structural evidence for the twinfilin tail interacting with the CPI-binding site on CP
+### Structural evidence for the twinfilin tail interacting with the CPI-binding site on CP
 
 Given the observed competition between mTwf1 tail peptide and the CPI motif of CARMIL for binding to CP, and the similarity between mTwf1 and CARMIL in catalyzing V-1 dissociation from CP, we sought structural evidence for the nature of the interaction between mTwf1 and CP. We hypothesized that the binding sites for mTwf1 and the CPI motif were likely overlapping. To test this hypothesis, we used hydrogen-deuterium exchange with mass spectrometry (HDX-MS) to interrogate the conformational dynamics and solvent accessibility of the backbone and sidechains of CP, free and in complex with Twf1. Further, we compared our results to those in our recent study on the interactions of CARMIL with CP using the same approach (Johnson et al., 2018). We tested three different forms of mTwf1: a short tail peptide (residues 317–350), a longer tail peptide (residues 305–350), and full-length mTwf1. These constructs were added to CP, either full-length alpha/beta heterodimer, or full-length alpha subunit with a beta subunit truncated at its C-terminus, removing the actin-binding beta tentacle. The results were essentially the same in each case. The presence of mTwf1 resulted in protection from H-D exchange at the N-terminal stalk of CP (Figure 5A, Figure 5—figure supplements 1 and 2). Similar effects to H-D exchange were observed upon CARMIL binding to CP (Johnson et al., 2018); also shown here in Figure 5B), which correspond well with the CPI-motif binding site defined by X-ray crystallography and solution NMR studies (Hernandez-Valladares et al., 2010; Takeda et al., 2010; Zwolak et al., 2010). For mTwf1, we also observed H-D exchange protection of a small region on CP corresponding to the V-1 binding site (Figure 5A and B, Figure 5—figure supplements 1 and 2), consistent with our results described above for the effects of mTwf1 in promoting V-1 dissociation from CP. These structural effects are also consistent with our previous results for CARMIL, which alters the V-1 binding site (Johnson et al., 2018). However, it is worth noting that mTwf1-induced changes in CP conformation at the actin-binding interface were not as extensive as those induced by CARMIL, which is consistent with CARMIL, but not mTwf1, weakening CP binding to actin at the barbed ends.
 
-## Twinfilin and CP colocalize in cells and have similar knockdown phenotypes
+![Figure 5.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig5-v2.jpg)
+
+**Figure 5.:** (A) A cartoon representation of a crystal structure of CP, based on PDB 3AAA (Takeda et al., 2010). Differences in deuterium uptake induced by mTwf1 binding to CP are displayed as a color gradient (see scale at bottom of panel (B) CPI domain of CARMIL overlaid on to its binding site on CP (around the stalk). Representative comparisons of deuterium uptake curves for free CP (black) with mTwf1 bound CP (red) for CP alpha subunit (upper panels) and CP beta subunit (lower panels). Error bars representing the results of t-tests between samples are shown above each time point to illustrate statistical significance. When error bars are not shown explicitly, the error is within the radius of the symbol. Data shown are representative curves from experiments repeated two independent times. (B) A cartoon representation of a crystal structure of CP, showing the differences in deuterium uptake induced by CBR domain of CARMIL binding to CP are displayed as a color gradient (see scale at the bottom). CPI domain of CARMIL overlaid on to its binding site on CP (around the stalk), V-1 is overlaid on its binding site on CP (barbed end binding surface) for comparison.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Deuterium uptake curves for all CP alpha-subunit peptides are shown for free CP (black) and mTwf1 bound CP (red). Data shown are representative of two independent experiments. Error bars representing the results of t-tests between samples are shown above each time point to illustrate statistical significance. When error bars are not shown explicitly, the error is within the radius of the symbol.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Deuterium uptake curves for all CP beta-subunit peptides are shown for free CP (black) and mTwf1 bound CP (red). Data shown are representative of two independent experiments. Error bars representing the results of t-tests between samples are shown above each time point to illustrate statistical significance. When error bars are not shown explicitly, the error is within the radius of the symbol.
+
+### Twinfilin and CP colocalize in cells and have similar knockdown phenotypes
 
 To investigate the functional relationship between Twinfilin and CP in cells, we started by asking whether mTwf1 and CP colocalize. While Twinfilin and CP have been localized individually, and are each reported to be enriched at the tips of filopodia and stereocilia, endocytic actin patches, lamellipodia, and Drosophila bristles (Avenarius et al., 2017; Falck et al., 2004; Goode et al., 1998; Nevalainen et al., 2011; Peng et al., 2009; Rzadzinska et al., 2009; Sinnar et al., 2014; Vartiainen et al., 2000), to our knowledge they have never been co-imaged in vertebrate cells. To address this, we performed immunofluorescence on CP and Twinfilin in mouse B16F10 melanoma cells, co-staining the cells with Alexa 568-phalloidin to visualize F-actin. We observed strong colocalization of Twinfilin and CP throughout the cell and a co-enrichment at the actin-rich leading and trailing edges (Figure 6A and B). Further, quantitative western blotting showed that Twinfilin and CP are present at ~1:2 molar ratio in B16F10 cells (Figure 6C, Figure 6—figure supplement 1). Previous studies reported the concentration of CP in B16F10 cells to be ~1 µM (Fujiwara et al., 2014; Pollard and Borisy, 2003), suggesting that mTwf1 is present at ~0.5 µM. Given the high affinity of the Twinfilin-CP interaction (Kd = 50 nM), these observations are consistent with mTwf1 being associated with a substantial fraction of the CP in cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative images from immunofluorescence staining showing colocalization of endogenous mTwf1 (yellow) and Capping Protein (magenta). Scale bar, 20 μm. Close ups of boxed regions shown in Zooms; scale bar, 4 μm. (B) Mander’s correlation coefficient (M1 and M2) values of overlap between mTwf1 and Capping Protein (CP) measured from cells (n = 67 cells) as in (A). Error bars, s.e.m. (C) Comparison of the relative abundance of mTwf1 and Capping Protein (CP) in B16F10 cells measured from western blot analysis. Data averaged from four separate experiments. Error bars, s.d. n.s. p>0.05 by t-test. (D,E) Representative western blots and quantification of cellular levels of mTwf1 (D) and CP (E) in B16F10 cells treated with siRNA against mTwf1 (si-Twf1) or CP (si-CP) or negative control (Control). Band intensity for control cells was set to 1.0. Data averaged from at least three separate experiments., error bars, s.d. (F) Representative images showing F-actin immunofluorescence in B16F10 cells treated with siRNA against mTwf1 (si-Twf1) or CP (si-CP) or negative control (Control); siRNA treated cells (si-Twf1 or si-CP) were also rescued using plasmids expressing si-resistant FL-myc-mTwf1 (WT or mTwf1-11). Scale bar, 20 μm. Close ups of boxed regions shown in Zooms; scale bar, 4 μm. (G) Microspike density in cells treated as in (D). Box and whisker plots show mean, first and third quartile, and the maximum and minimum values. Data averaged from two experiments. From Left to right: n = 45, 53, 51, 24, 24, and 20 and mean microspike density 0.69, 1.34, 1.77, 0.59, 1.24, and 1.01 filopodia per 10 μm of cell cortex. Error bars, s.e.m. ****p≤0.0001, *p≤0.05, n.s. p>0.05 by one-way ANOVA with Tukey post hoc test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative western blots from the analysis shown in Figure 5C, quantifying mTwf1 and Capping Protein (CP) levels in B16F10 cells. Known quantities of total cell extract (µg) were immunoblotted alongside known quantities of purified protein (ng). (B) Representative images from immunofluorescence of mTwf1 in B16F10 cells after treatment with siRNA against Twinfilin (si-Twf1), or Capping Protein (si-CP), or negative control (Control), and siRNA treated cells (either si-Twf1 or si-CP) rescued by plasmids expressing si-resistant full-length (FL)-myc-mTwf1 (WT or mTwf1-11). Scale bar, 20 µm. (C) Representative western blots showing levels of mTwf1 and Capping in B16F10 cells treated as above in (B). (D) Representative western blots of mTwf1 (D) in NIH-3T3 and Neuro-2A cells treated with siRNA oligonucleotides against CP (si-CP) or mTwf1 (si-Twf1) or negative control (Control).
 
 The ability of Twinfilin to function as a ‘pro-capping’ factor in vitro, by antagonizing the inhibitory effects of V-1 on CP, predicted that genetic loss of mTwf1 might at least partially phenocopy loss of CP. While a number of studies have examined how Twinfilin mutations affect whole animal development and physiology (Iwasa and Mullins, 2007; Meacham et al., 2009; Nevalainen et al., 2011; Wahlström et al., 2001; Wang et al., 2010; Yamada et al., 2007), we are unaware of any studies that have investigated how loss of Twf1 affects the morphology and actin organization of cultured mammalian cells. Using RNAi silencing in B16F10 cells, we separately depleted endogenous mTwf1 and CP, which was verified by both western blotting (Figure 6E and F) and immunostaining (Figure 6—figure supplement 1). Knockdown of either mTwf1 or CP led to a similar, marked increase in the density of peripheral protrusions or microspikes with a concomitant loss of lamellipodial surfaces (Figure 6F and G). Similar phenotypes have been reported for CP depletion in multiple cell lines (Edwards et al., 2013; Edwards et al., 2015; Mejillano et al., 2004; Sinnar et al., 2014). Expression of an RNAi-refractive mTwf1 construct, but not mTwf1-11, rescued the defects caused by depletion of endogenous mTwf1 (Figure 6F and G; Figure 6—figure supplement 1), demonstrating that these cellular functions of mTwf1 critically depend on its interaction with CP.
 
@@ -88,9 +120,17 @@ We also made the unexpected observation that knockdown of CP was accompanied by 
 
 Our results above also call into question whether the full extent of the phenotype caused by knockdown of CP (Figure 6G) is due to loss of CP, or instead is partly due to the accompanying loss of Twinfilin. To address this, we restored mTwf1 levels in cells depleted of CP by driving mTwf1 expression from a rescue plasmid, which was confirmed by western blotting and immunofluorescence (Figure 6—figure supplement 1). Forced expression of mTwf1 partially rescued the defects associated with CP depletion, indicating that a portion of the original defects observed after CP knockdown were likely due to the accompanying loss of mTwf1. These observations also suggest that many previously reported phenotypes arising from CP knockouts and knockdowns should be revisited or reinterpreted with the potential loss of Twinfilin in mind.
 
-## Defects caused by CARMIL1 hyperactivity can be rescued by elevated twinfilin expression
+### Defects caused by CARMIL1 hyperactivity can be rescued by elevated twinfilin expression
 
 Finally, we tested the prediction of our biochemical observations that loss of capping activity in cells caused by overexpressed CARMIL1 should be restored by co-overexpression of Twf1. B16F10 cells ectopically expressing CARMIL1 showed morphological defects similar to loss of CP, and ectopic mTwf1 expression rescued the defects (Figure 7A and B). Importantly, ectopic expression of mTwf1 alone caused no significant change in cell morphology. These results support our biochemical observations, and suggest that Twf1 promotes capping in vivo, at least in part by competing with CARMIL for CP binding and antagonizing the uncapping effects of CARMIL.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative images of F-actin staining in untreated B16F10 cells (control), and cells transfected with Flag-CARMIL1, full-length (FL)-myc-mTwf1, or both. Scale bar, 20 μm. (B) Average Microspike density in cells treated as in (A). Box and whisker plots show mean, first and third quartile, and the maximum and minimum values. Data averaged from two experiments (n = 19–25 cells per condition). Data averaged from two experiments. From Left to right: n = 19, 25, 20, and 25; mean microspike density 0.75, 1.13, 0.62, 0.58 filopodia per 10 μm of cell cortex. Error bars, s.e.m. ***p≤0.001, n.s. p>0.05 by one-way ANOVA with Tukey post hoc test. (C) ‘Earlier’ model for CP regulatory cycle, adapted from Fujiwara and colleagues (Fujiwara et al., 2014). Proposed steps in model: (1) V-1 globally inhibits Capping Protein (CP) in the cytoplasm, (2) membrane-associated CARMIL (at the protruding cell edge) catalyzes dissociation of V-1 from CP, (3) the resulting CARMIL-CP complex is partially active, binding weakly to free barbed ends to provide capping function, (4) an unknown factor or mechanism promotes dissociation of CARMIL from CP, allowing V-1 to rebind CP and complete the cycle. (D) Our revised working model for the CP regulatory cycle. We propose that V-1 functions to maintain a cytosolic reservoir of inactive CP, from which Twinfilin and CARMIL activate CP, generating two distinct forms of active CP in cells: Twinfilin-CP complexes and CARMIL-CP complexes. Twinfilin-CP complexes are fully active and support stable capping of barbed ends. In contrast, CARMIL-CP complexes have ~100 fold reduced affinity for barbed ends, and may therefore more transiently cap barbed ends, permitting restricted network growth at the cell membrane where CARMIL localizes. CARMIL and Twinfilin directly compete with each other for binding CP (shown in close up of Transition state), which may result in the displacement of CP from Twinfilin. This would leave Twinfilin at the barbed end to catalyze depolymerization, or alternatively return filaments back to the original state of assembly.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41313/elife-41313-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The three actin protomers at the barbed end are shown in gray, the CP heterodimer is shown in yellow, and Twinfilin is shown in blue. The structure of CP bound to the barbed end was solved by cryo-EM (Narita et al., 2006). We docked the Twinfilin ADFH domains onto this structure using the following criteria. The Twinfilin N-terminal ADFH (N-ADFH) lobe, shown bound between the first and third subunits from the barbed end of the actin filament, is based on the structure of this domain bound to G-actin (PDB 3DAW) (Paavilainen et al., 2008), and assumes that this domain also uses its F-site to bind to F-actin in a manner similar to cofilin, which was solved by cryo-EM (PDB 5YU8) (Tanaka et al., 2018). The Twinfilin C-terminal ADFH (C-ADFH) lobe, shown bound to the first subunit of the actin filament barbed end, is based on the solution structure of this domain bound to G-actin via is G/F-site. The Twinfilin linker sequence (connecting the two ADFH domains) is depicted as an unstructured chain, 25 residues long, which if unstructured (87 Å) is sufficient in length to allow each ADFH domain to bind a different actin protomer. There is no structure available for the CPI motif-containing C-terminal tail of Twinfilin; therefore, in this model we used the known structure of the CPI region of CARMIL bound to the stalk of CP (PDB 3AAE) (Hernandez-Valladares et al., 2010). Attempts to model Twinfilin bound to the opposite strand of F-actin did not allow sufficient length between the tail (binding CP) and the C-terminal ADFH domain binding to actin.
 
 ## Discussion
 
@@ -106,11 +146,448 @@ Finally, our data add to a broader emerging view that actin dynamics in vivo are
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Twinfilin</td>
+      <td>Pekka Lappalainen (Univ. Helsinki)</td>
+      <td></td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti- Capping Protein</td>
+      <td>Development Studies Hybridoma Bank</td>
+      <td>Cat: 3F2</td>
+      <td>WB (1:2000) IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti- Flag</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat: F3165</td>
+      <td>WB (1:5000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Myc</td>
+      <td>GeneTex</td>
+      <td>Cat: GTX29106</td>
+      <td>WB (1:5000) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- mouse-HRP</td>
+      <td>GE Healthcare</td>
+      <td>Cat: 31430</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- rabbit-HRP</td>
+      <td>GE Health care</td>
+      <td>Cat: 31460</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa Flour 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: A21206</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- mouse Alexa Flour 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: A21202</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti- rabbit Alexa Flour 633</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: A21071</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti- mouse Alexa Flour 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: A31571</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>B16F10</td>
+      <td>ATCC</td>
+      <td>CRL-6475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Neuro-2A neuroblast</td>
+      <td>ATCC</td>
+      <td>CCL-131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>NIH3T3 filbroblast</td>
+      <td>ATCC</td>
+      <td>CRL-1658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NHS-XX- Biotin</td>
+      <td>Merck KGaA</td>
+      <td>Cat: 203188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oregon-Green-488 iodoacetamide</td>
+      <td>Invitrogen</td>
+      <td>Cat: O6010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni2+-NTA- agarose beads</td>
+      <td>Qiagen</td>
+      <td>Cat: 30230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>tetrame thylrhodamine (TAMRA)−5- maleimide</td>
+      <td>Invitrogen</td>
+      <td>Cat: T6027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>methoxy-poly (ethylene glycol)- silane</td>
+      <td>Laysan Bio Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>biotin-poly (ethylene glycol)- sil</td>
+      <td>Laysan Bio Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AquaMount</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 14-390-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Flour 568- phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: A12380</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde 37%</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat: 252549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 137780–0775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: L2000-015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce ECL Western Blotting Substrate detection kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM-Dulbecco's Modified Eagle Medium</td>
+      <td>Gibco BRL Life Technologies</td>
+      <td>Cat: 11995–073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS-Fetal Bovine Serum</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat: F9423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>200 mM L- glutamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 25030–081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>N-terminal HiLyte488 mTwf1 Tail</td>
+      <td>Anaspec</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CARMIL CPI</td>
+      <td>WatsonBio Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CARMIL CSI</td>
+      <td>WatsonBio Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mTwf1 A305- D350</td>
+      <td>WatsonBio Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mTwf1 A305-D350, K325A</td>
+      <td>WatsonBio Sciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PreScission protease</td>
+      <td>GE Healthcare</td>
+      <td>Cat: GE27-0843-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>chicken CPα1β1</td>
+      <td>Soeno et al., 1998 Soeno et al., 1998</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>chicken SNAP- CPα1β1</td>
+      <td>Bombardier et al., 2015 Bombardier et al., 2015</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mouse CPα1β2</td>
+      <td>Kim et al., 2012</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mouse CPα1Δ28</td>
+      <td>Kim et al., 2012</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mouse CP α1β2 R15A/Y79A</td>
+      <td>Edwards et al., 2015 Edwards et al., 2015</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>human CARMIL1 CBR115 (964–1078)</td>
+      <td>Kim et al., 2012</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>human V-1</td>
+      <td>Edwards et al., 2015</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CARMIL1</td>
+      <td>Edwards et al., 2013 Edwards et al., 2013</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6p-1- mTwf1</td>
+      <td>Hilton et al., 2018 Hilton et al., 2018</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6p-1 -mTwf2a</td>
+      <td>Hilton et al., 2018 Hilton et al., 2018</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6p-1- mTwf1-11</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-M1</td>
+      <td>Addgene</td>
+      <td>Cat: 23007</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-myc-mTwf1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-myc-mTwf1-11</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>siTwf1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>siRNA; CGUUACCA UUUCUUUCUGUUU</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>siCP1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>siRNA; CCUCAGCGA UCUGAUCGACUU</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>siCP2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>siRNA; GCACGC UGAAUGAGAUCUA</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>control RNAi oligos (Stealth RNAi)</td>
+      <td>Invitrogen</td>
+      <td>Cat: 12935–200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/Image J</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS Elements software - Version 4.30.02</td>
+      <td>Nikon Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6.0</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Creative Cloud Illustrator</td>
+      <td>Adobe Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3) pLysS</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3) pRIL</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3) pRARE</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Plasmids used for expressing the following proteins were previously described: chicken CPα1β1 (Soeno et al., 1998), chicken SNAP- CPα1β1 (Bombardier et al., 2015), mouse CPα1β2 (Kim et al., 2012), mouse CPα1Δ28 (Kim et al., 2012), mouse CP α1β2 R15A/Y79A (Edwards et al., 2015), human CARMIL1 CBR115 (964–1078) (Kim et al., 2012), human V-1 (Edwards et al., 2015). The plasmid for over-expressing CARMIL1 in mammalian cells has been described (Edwards et al., 2013). To generate plasmids for expressing mouse Twinfilin isoforms as glutathione-S-transferase (GST)-fusions in E. coli, ORFs were PCR amplified from pHAT2-mTwf1 and pHAT2-mTwf2a kindly provided by Pekka Lappalainen (Univ. of Helsinki) (Nevalainen et al., 2009), and subcloned into the EcoRI and NotI sites of pGEX-6p-1, yielding pGEX-6p-1-mTwf1 and pGEX-6p-1-mTwf2a. pGEX-6p-1-mTwf1-11 (K332A, R333A) was generated by site-directed mutagenesis of pGEX-6p-1-mTwf1. For V-1 fluorescence experiments, we used a previously demonstrated strategy of removing two surface cysteine residues to allow direct labeling on the single remaining cysteine (Fujiwara et al., 2014); this was achieved by performing site-directed mutagenesis on wild type pGEX-GST-V-1 plasmid to introduce two mutations (C45S, C83S). To generate an RNAi-refractive construct of mTwf1 for expression in cultured cells, the ORF of mTwf1 was PCR amplified from pGEX-6p-1 and subcloned into the HindIII and SacI sites of pEGFP-C1 (Clontech, Mountain View, CA). Then, site-directed mutagenesis was used to introduce silent mutations at specific nucleotides of the ORF (703, 709, 711, 715), and the RNAi-refractive ORF was subcloned into the EcoRI and NotI sites of pCMV-M1, a gift from Linda Wordeman (Stumpff et al., 2008) (Addgene plasmid # 23007), yielding pCMV-myc-mTwf1. Site-directed mutagenesis was performed on pCMV-myc-mTwf1 to generate mutant pCMV-myc-mTwf1-11 (K332A, R333A). All constructs were verified by DNA sequencing.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Rabbit skeletal muscle actin (RMA) (Spudich and Watt, 1971), was purified from acetone powder generated from frozen ground hind leg muscle tissue of young rabbits (PelFreez, Rogers, AR). Lyophilized acetone powder stored at −80°C was mechanically sheared in a coffee grinder, resuspended in G-buffer (5 mM Tris-HCl pH 7.5, 0.5 mM DTT, 0.2 mM ATP, 0.1 mM CaCl2), and then cleared by centrifugation for 20 min at 50,000 × g. Actin was polymerized by the addition of 2 mM MgCl2 and 50 mM NaCl and incubated overnight at 4°C. F-actin was pelleted by centrifugation for 150 min at 361,000 × g, and the pellet solubilized by Dounce homogenization and dialyzed against G-buffer for 48 hr at 4°C. Monomeric actin was then precleared at 435,000 × g, and loaded onto a S200 (16/60) gel filtration column (GE healthcare, Marlborough, MA) equilibrated in G-Buffer. Peak fractions containing actin were stored at 4°C. For labeling actin with biotin (Breitsprecher et al., 2012) or Oregon Green (OG) (Kuhn and Pollard, 2005), the F-actin pellet described above was Dounced and dialyzed against G-buffer lacking DTT. Monomeric actin was then polymerized by adding an equal volume of 2X labeling buffer (50 mM Imidazole pH 7.5, 200 mM KCl, 0.3 mM ATP, 4 mM MgCl2). After 5 min, the actin was mixed with a 5-fold molar excess of NHS-XX-Biotin (Merck KGaA, Darmstadt, Germany) or Oregon-Green-488 iodoacetamide (Invitrogen, Carlsbad, CA) resuspended in anhydrous DMF, and incubated in the dark for 15 hr at 4°C. Labeled F-actin was pelleted as above, and the pellet was rinsed briefly with G-buffer, then depolymerized by Dounce homogenization, and dialyzed against G-buffer for 48 hr at 4°C. Labeled, monomeric actin was purified further on an S200 (16/60) gel filtration column as above. Aliquots of biotin-conjugated actin were snap frozen in liquid nitrogen and stored at −80°C. OG-488-actin was dialyzed for 15 hr against G-buffer with 50% glycerol and stored at −20°C.
 
@@ -128,47 +605,47 @@ CARMIL CBR115 and V-1 were purified from E. coli as above for mTwf1 proteins, ex
 
 The mTwf1 tail peptides used for anisotropy were sourced as follows: N-terminal HiLyte488 labeled mTwf1 (H317-D350) was purchased from Anaspec (Fremont, CA); unlabeled CARMIL1 CPI (G969-A1005), CARMIL1 CSI (M1019-M1037), mTwf1 (A305-D350) and mTwf1 (A305-D350, K325A), as well as N-terminal TAMRA labeled mTwf1 (A305-D350), were purchased from WatsonBio Sciences (Houston, TX).
 
-## Bulk pyrene F-actin assembly assays
+### Bulk pyrene F-actin assembly assays
 
 Pyrene actin assembly assays were performed as previously described (Chesarone-Cataldo et al., 2011), with slight modifications for monitoring uncapping. Reactions containing 2 μM G-actin (5% pyrene labeled), 25 nM CapZ, and variable concentrations of mTwf1 were mixed to a volume of 52 µl followed by addition of 3 µl of initiation mix (40 mM MgCl2, 10 mM ATP, 1 M KCl). Fluorescence was monitored at excitation and emission wavelengths of 365 and 407 nm, respectively, in a fluorescence spectrophotometer (Photon Technology International; Lawrenceville, NJ). Acquisition was paused at 400 s, and 5 µl of CARMIL CBR (final concentration 250 nM) was spiked into the reaction, mixed rapidly by pipetting, and measurement was resumed.
 
 For pyrene actin elongation assays (as in Figure 4A and B), 5 µl of freshly mechanically sheared F-actin (10 µM) was added to a mixture of the indicated proteins or control buffers, and then immediately mixed with 0.5 µM monomeric actin (10% pyrene labeled) in 60 µl reactions and monitored in a plate reader (Infinite M200; Tecan, Männedorf, Switzerland) at excitation and emission wavelengths of 365 and 407 nm, respectively.
 
-## Fluorescence anisotropy
+### Fluorescence anisotropy
 
 The following anisotropy experiments were performed in HEK buffer (20 mM HEPES pH 7.5, 1 mM EDTA, 50 mM KCl, 0.5 mM DTT). Reactions were incubated at room temperature for 15 min, and anisotropy was determined by measuring polarized emission intensities at 525 nm when excited at 497 nm using a fluorescence spectrophotometer (Photon Technology International). To compare mTwf1-tail binding to wild type and mutant CP (Figure 1B), HiLyte-488-mTwf1 tail peptide (100 nM) was mixed with different concentrations of wild-type or mutant CP. To compare the abilities of full-length wild type mTwf1 and mutant mTwf1-11 polypeptides to compete with labeled mTwf1-tail for binding CP (Figure 1C), HiLyte-488-mTwf1 tail peptide (100 nM) was mixed with 1 µM CP and variable concentrations of full-length mTwf1 polypeptides.
 
 The following anisotropy experiments were performed in the indicated buffer, incubated at room temperature for 2 min, and anisotropy was determined by measuring polarized emission intensities at 525 nm when excited at 497 nm for HiLyte-488, or at 582 nm when excited at 552 nm for TAMRA. To compare mTwf1 tail peptide binding to wild type CP and mutant CP(RY) (Figure 2B), HiLyte-488-mTwf1 tail peptide (60 nM) was mixed with different concentrations of CP or CP(RY) in HEK buffer containing 0.005% TWEEN 20. To compare the abilities of unlabeled wild type and mutant mTwf1 tail peptides to compete with labeled mTwf1 tail peptide for binding to CP (Figure 2C), TAMRA-mTwf1 tail peptide (A305-D350, 40 nM) was mixed with 1 µM CP and varying concentrations of the unlabeled tail peptides (mTwf1 A305-D350 or mTwf1 A305-D350, K325A) in 20 mM MOPS (pH 7.2), 1 mM TCEP, 100 mM KCl, 1 mM NaN3, 0.005% TWEEN 20. To test the abilities of different fragments of CARMIL to compete with mTwf1 tail peptide for binding CP, HiLyte-488-mTwf1 tail peptide (60 nM) was mixed with 240 nM CP and different concentrations of mouse CARMIL1 CBR (964–1078), CPI (969–1005), or CSI (1019–1037) in HEK buffer containing 0.005% TWEEN20.
 
-## Stopped-flow fluorescence
+### Stopped-flow fluorescence
 
 For kinetic dissociation experiments (as in Figure 4D and E), an SX.18MV stopped flow instrument with Pro-Data SX software V2.2.27 (Applied Photophysics Ltd., Leatherhead, UK) was used. 100 nM TAMRA-V-1 was preincubated with 2 µM CPα1β2. At time zero, TAMRA-V-1:CP complex was rapidly mixed via stopped-flow with an equal volume of a solution containing 5 µM unlabeled V-1, along with varied concentrations of mTwf1 or mTwf1-11. Experiments were performed at 25°C in HEK buffer containing 0.005% TWEEN20. Excitation occurred at 505 nm, with emission detected using a 570 + nm band-pass filter. All concentrations of mTwf were performed in replicates of 5–10, and traces were averaged. Apparent dissociation rates were determined by fitting the averaged data (5 ms. - 120 s.) to a single exponential model using Pro-Data Viewer software V4.2.27 (Applied Photophysics Ltd.).
 
-## Total internal reflection fluorescence (TIRF) microscopy
+### Total internal reflection fluorescence (TIRF) microscopy
 
 For all experiments, 24 × 60 mm coverslips (Fisher Scientific; Pittsburg, PA) were cleaned by successive sonications as follows: 60 min in detergent, 20 min in 1 M KOH, 20 min in 1 M HCl min, and 60 min in ethanol. Coverslips were then washed extensively with ddH2O and dried in an N2-stream. A solution of 80% ethanol pH 2.0, 2 mg/ml methoxy-poly (ethylene glycol)-silane and 2 µg/ml biotin-poly (ethylene glycol)-silane (Laysan Bio Inc.; Arab, AL) was prepared and layered on the cleaned coverslips (200 µl per coverslip). The coverslips were incubated for 16 hr at 70°C. To assemble flow cells, PEG-coated coverslips were rinsed extensively with ddH2O and dried in an N2-stream, then attached to a prepared flow chamber (Ibidi; Martinsried, German) with double sided tape (2.5 cm x 2 mm x 120 µm) and five min epoxy resin. Flow cells were prepared immediately before use by sequential incubations as follows: 3 min in HEK-BSA (20 mM Hepes pH 7.5, 1 mM EDTA, 50 mM KCl, 1% BSA), 30 s in Streptavidin (0.1 mg/ml in PBS), a fast rinse in HEK-BSA, and then equilibration in 1X TIRF buffer, pH 7.5 (10 mM imidazole, 50 mM KCl, 1 mM MgCl2, 1 mM EGTA, 0.2 mM ATP, 10 mM DTT, 15 mM glucose, 20 µg/ml catalase, 100 µg/ml glucose oxidase, and 0.5% methylcellulose (4000 cP)). To initiate reactions, actin monomers (10% OG-labeled, 0.5% biotinylated) were diluted to 1 µM in TIRF buffer, and immediately transferred to a flow chamber. After several minutes, once the actin filaments reached an appropriate length (approximately 10 µm), the reaction mixture was replaced by flow-in. For depolymerization experiments, the solution was replaced with TIRF buffer lacking actin monomers, with or without Twinfilin and/or CP polypeptides. For uncapping experiments, the solution was replaced with TIRF buffer lacking actin monomers, with 3 nM SNAP-649-CP (100% labeled), and filaments were allowed to be capped for 3 min. Subsequently, the solution was again replaced with TIRF buffer lacking actin monomers, with or without 50 nM CARMIL CBR and/or variable concentration of Twinfilin polypeptides. Time-lapse TIRF microscopy was performed using a Nikon-Ti200 inverted microscope equipped with a 150 mW Ar-Laser (Mellot Griot; Carlsbad, CA), a 60X TIRF-objective with a N.A. of 1.49 (Nikon Instruments Inc.; New York, NY), and an EMCCD camera (Andor Ixon; Belfast, Northern Ireland). During recordings, optimal focus was maintained using the perfect focus system (Nikon Instruments Inc). Images were captured every 5 s. The pixel size corresponded to 0.27 µm.
 
 Filament depolymerization rates were determined by tracing filaments in ImageJ (http://rsbweb.nih.gov/ij) and measuring the change in length of individual filaments for 15–20 min after flow-in, or until filaments disappeared. Differences in fluorescence intensity along the length of the filament provided fiduciary marks that allowed us to distinguish barbed- and pointed-ends. Filament uncapping was measured by monitoring the as the amount of time that SNAP-649-CP puncta remained associated with the barbed end of a filament after the addition of CARMIL to the reaction (with or without Twinfilin) and expressing it as a fraction of filaments that remained capped at a given time point. All results shown are data from at least two independent TIRF experiments.
 
-## Cell culture, transfection, and RNAi silencing
+### Cell culture, transfection, and RNAi silencing
 
 Mouse B16-F10 (CRL-6475), Neuro-2a (CCL-131), and NIH/3T3 (CRL-1658) cells obtained directly from ATCC (American Type Culture Collection; Manassas, VA), where their identities were authenticated by short tandem repeat DNA profiling and where they were tested for mycoplasma contamination. Cells were used for experiments within one year. All cells were grown in DMEM (Gibco BRL Life Technologies; Carlsbad, CA) supplemented with 10% fetal bovine serum (FBS; Sigma) and 200 mM L-glutamine (Thermo Fisher Scientific) at 37°C and 5% CO2.
 
 All cell culture experiments were carried out in 6-well dishes that were initially seeded with 100,000 cells. To knockdown Twinfilin-1 or Capping Protein cells were transfected 24 hr after seeding with 30 pmol siRNA oligo using Lipofectamine RNAiMAX (Thermo Fisher Scientific) according to the manufacturer’s instructions. RNAi oligos directed against the mouse Twinfilin-1 coding region targeting (siTwf1) 5’- CGUUACCAUUUCUUUCUGUUU −3’; and against the Capping Protein β subunit coding region targeting (siCP1) 5’- CCUCAGCGAUCUGAUCGACUU-3’, or (siCP2) 5’- GCACGCUGAAUGAGAUCUA-3’. Cells were transfected in parallel with control RNAi oligos (Invitrogen). For over expression experiments cultured cells were transfected using Lipofectamine 3000 (Thermo Fisher Scientific) according to the manufacturer’s instructions 24 hr after seeding. For CARMIL over expression experiments, 5 μG of DNA was transfected, and for Twinfilin over expression experiments 1 μG of DNA was transfected.
 
-## Antibodies
+### Antibodies
 
 The rabbit anti-Twinfilin was a generous gift from Pekka Lappalainen (Univ. Helsinki) and used a dilution of 1:1000 for western blot detection and 1:100 in cultured cells. A mouse anti-Capping Protein (Development Studies Hybridoma Bank; Iowa City, IA) was used at a dilution of 1:2000 for western blot detection and 1:50 in cultured cells. Mouse anti-Flag (F3165, Sigma) and rabbit anti-Myc (GTX29106, GeneTex; Irvine, CA) was used at 1:5000 for western blot detection and 1:500 in cultured cells. Mouse and Rabbit horseradish peroxidase conjugated secondary antibodies (GE Healthcare) were used at a dilution of 1:10,000 for western blot detection. Secondary antibodies for immunofluorescence (Alexa Fluor 488 or 647) and Alexa Fluor 568-phalloidin (ThermoFisher) were used at a dilution of 1:1000.
 
-## Immunostaining cells
+### Immunostaining cells
 
 For cell-staining experiments, 48 hr post transfection, the cells were re-plated on 3 × 1×1 mm glass coverslip (VWR International) that had been acid washed and coated with Laminin (Invitrogen) and allowed to adhere for 3–6 hr. Cells were fixed for 15 min with 4% paraformaldehyde in PBS at room temperature and then permeabilized for 15 min in permeabilization solution (0.5% Triton X-100 and 0.3 M glycine in PBS) at room temperature. Slips were then blocked in 3% BSA dissolved in PBST (1X PBS and 0.1% TWEEN 20) for 1 hr at room temperature, then incubated in primary antibody (in PBST) for 12 hr at 4°C. Coverslips were then washed three times with 1X PBST and incubated with secondary antibodies (in PBST) for 1 hr at room temperature. Slips were washed three times with PBST and two times with PBS, and subsequently mounted on to slides with AquaMount (Thermo Fisher Scientific). Cells were imaged on a Nikon i-E upright confocal microscope equipped with a CSU-W1 spinning disk head (Yokogawa, Tokyo, Japan), 60x oil objective (NA 1.4; Nikon Instruments), and an Ixon 897 Ultra-CCD camera (Andor Technology) controlled by NIS-Elements software. Maximum intensity projections and raw fluorescence values were measured using Fiji.
 
-## Western blotting
+### Western blotting
 
 To measure protein levels in cells after silencing and rescue, cells were harvest 48 hr after initial oligo transfection and incubated for 10 min at 4°C in RIPA buffer (50 mM Tris, pH 7.5, 150 mM NaCl, 1% NP-40, 0.5% Na-deoxycholate, 0.1% SDS, 2 mM EDTA, 50 mM NaF). Samples were incubated on ice for 30 min, vortexed every 10 min, then precleared by centrifugation at 20,800 x g for 15 min at 4°C, quantified by Bradford assay, and immunoblotted. Proteins were detected using a Pierce ECL Western Blotting Substrate detection kit (Thermo Fisher Scientific). Bands were quantified using ImageLab (Biorad).
 
-## Hydrogen deuterium exchange mass spectrometry (HDX-MS)
+### Hydrogen deuterium exchange mass spectrometry (HDX-MS)
 
 HDX-MS was performed as described (Johnson et al., 2018). CP and Twf1 samples were buffer-exchanged with 1X phosphate saline buffer (PBS), pH 7.4. HDX was initiated by diluting samples (25 μM, 2 μL) 10-fold with 1XPBS prepared in D2O buffer, or 1XPBS H2O buffer for samples measured for no-deuterium control. At different time intervals (10, 30, 60, 120, 360, 900, 3600, and 14400 s), the labeling reaction was quenched by rapidly decreasing the pH to 2.5 with 30 μL of quench buffer (3 M urea, 1% trifluoroacetic acid, H2O) at 4°C. The protein mixture was immediately injected into a custom-built HDX sample-handling device that enabled digestion with a column containing immobilized pepsin (2 mm ×20 mm) at a flow rate of 100 μL/min in 0.1% formic acid. The resulting peptic peptides were captured on a ZORBAX Eclipse XDB C8 column (2.1 mm ×15 mm, Agilent) for desalting (3 min). The C8 column was then switched in-line with a Hypersil Gold C18 column (2.1 mm ×50 mm, Thermo Fisher), and a linear gradient (4–40% acetonitrile, 0.1% formic acid, 50 μL/min flow rate, over 5 min) was used to separate the peptides and direct them to an LTQ-FTICR mass spectrometer (Thermo Fisher) equipped with an electrospray ionization source. Valves, columns, and tubing for protein digestion and peptide separation were immersed in an ice-water bath to minimize back-exchange.
 

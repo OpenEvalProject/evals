@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.42599.001 The single-celled green algae Chlamydomonas reinhardtii with its two flagella—microtubule-based structures of equal and constant lengths—is the canonical model organism for studying size control of organelles. Experiments have identified motor-driven transport of tubulin to the flagella tips as a key component of their length control. Here we consider a class of models whose key assumption is that proteins responsible for the intraflagellar transport (IFT) of tubulin are present in limiting amounts. We show that the limiting-pool assumption is insufficient to describe the results of severing experiments, in which a flagellum is regenerated after it has been severed. Next, we consider an extension of the limiting-pool model that incorporates proteins that depolymerize microtubules. We show that this ‘active disassembly’ model of flagellar length control explains in quantitative detail the results of severing experiments and use it to make predictions that can be tested in experiments.
+The single-celled green algae Chlamydomonas reinhardtii with its two flagella—microtubule-based structures of equal and constant lengths—is the canonical model organism for studying size control of organelles. Experiments have identified motor-driven transport of tubulin to the flagella tips as a key component of their length control. Here we consider a class of models whose key assumption is that proteins responsible for the intraflagellar transport (IFT) of tubulin are present in limiting amounts. We show that the limiting-pool assumption is insufficient to describe the results of severing experiments, in which a flagellum is regenerated after it has been severed. Next, we consider an extension of the limiting-pool model that incorporates proteins that depolymerize microtubules. We show that this ‘active disassembly’ model of flagellar length control explains in quantitative detail the results of severing experiments and use it to make predictions that can be tested in experiments.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Already at the time of its discovery, IFT was hypothesized to play a role in fla
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/42599/elife-42599-fig2-v2.jpg)
 
-**Figure 2.:** Chlamydomonas with diffusive return of kinesin-2 to the base.(a) Kinesin-2, dynein, and tubulin combine to form a complex with other IFT components in the basal pool and are injected into the flagellum. The kinesin-2 motors move toward the tip of the flagellum, where the complex eventually breaks down into its constituent parts. Dynein motors move in the retrograde direction carrying back some, but not all IFT components. Specifically, kinesin motors are not part of the retrograde IFT complex and they diffuse back to the base. In steady-state, the injection flux , ballistic flux Ji, and diffusive flux Jb are all equal. (Jdb) IFT flux vs. length, comparison between the quasi-steady state approximation (Equation 4) and stochastic simulations (Appendix 1). The shaded red area represents the mean and standard deviation computed from 10 realizations of the stochastic simulations. (inset) Kinesin-2 concentration vs. position along the flagellum (steady-state approximation [Equation 31]).
+**Figure 2.:** (a) Kinesin-2, dynein, and tubulin combine to form a complex with other IFT components in the basal pool and are injected into the flagellum. The kinesin-2 motors move toward the tip of the flagellum, where the complex eventually breaks down into its constituent parts. Dynein motors move in the retrograde direction carrying back some, but not all IFT components. Specifically, kinesin motors are not part of the retrograde IFT complex and they diffuse back to the base. In steady-state, the injection flux $J_{i}$, ballistic flux $J_{b}$, and diffusive flux $J_{d}$ are all equal. (b) IFT flux vs. length, comparison between the quasi-steady state approximation (Equation 4) and stochastic simulations (Appendix 1). The shaded red area represents the mean and standard deviation computed from 10 realizations of the stochastic simulations. (inset) Kinesin-2 concentration vs. position along the flagellum (steady-state approximation [Equation 31]).
 
 These observations motivated the development of mathematical models of flagellar length dynamics such as the balance point model (Marshall and Rosenbaum, 2001; Marshall et al., 2005). In the balance point model, there is a continual competition between assembly and disassembly, and either the rate of assembly, the rate of disassembly, or both, may be length-dependent. The steady-state length is determined by the point at which the assembly and disassembly processes come into balance.
 
@@ -54,83 +54,332 @@ Motivated by experimental observations of microtubule-depolymerizing proteins wi
 
 ## Results
 
-## Limiting motor pool gives rise to length-dependent injection rate
+### Limiting motor pool gives rise to length-dependent injection rate
 
 It is known from experiments that the injection rate of IFT particles in Chlamydomonas is length-dependent (Dentler, 2005). In this section, we show how length-dependent injection is a consequence of mass action kinetics of proteins available in limiting amounts.
 
 We first consider the flagellar length dynamics of a single flagellum. Our approach initially closely follows Hendel et al. (2018), although important differences will appear later on in the case of two flagella. The key biochemical variables are the tubulin dimers that make up the flagellar axoneme and the molecular motors kinesin-2 and dynein that transport IFT particles from the base to the tip and back. IFT particles combine in the basal pool with kinesin-2, tubulin and dynein to form a complex that is injected into the flagellum (Cole et al., 1998); see the schematic in Figure 2a.
 
-Here we consider the case that the rate-limiting molecule is kinesin-2, although similar results would apply to any other protein being rate-limiting for IFT assembly. Denoting the number of free molecular motors in the pool at the flagellar base by Mf, the injection flux Ji of IFT particles into the flagellum satisfies(1)Ji=kon⁢Mf.
+Here we consider the case that the rate-limiting molecule is kinesin-2, although similar results would apply to any other protein being rate-limiting for IFT assembly. Denoting the number of free molecular motors in the pool at the flagellar base by $M_{f}$, the injection flux $J_{i}$ of IFT particles into the flagellum satisfies
+
+$$
+J_{i}=k_{on}⁢M_{f}.
+$$
 
 Note that we consider the cell volume to be fixed, in which case biomolecule numbers and concentrations may be used interchangeably.
 
 First we consider the case in which the total number of motors is conserved. Later on we will also consider the case in which motor concentrations in basal pools are regulated by an external control mechanism, motivated by the severing experiments described previously in which length recovery indicates replenishment of protein levels.
 
-Kinesin-2 has been shown to undergo ballistic transport in the anterograde direction and diffusive motion in the retrograde direction (Chien et al., 2017). The total number of motors M satisfies M=Mf+Mb+Md, where Mb is the number of motors moving ballistically on the flagellum in IFT particles and Md is the number of motors moving diffusively. Therefore we may rewrite Equation 1 as(2)J=kon⁢(M-Mb-Md).
+Kinesin-2 has been shown to undergo ballistic transport in the anterograde direction and diffusive motion in the retrograde direction (Chien et al., 2017). The total number of motors $M$ satisfies $M=M_{f}+M_{b}+M_{d}$, where $M_{b}$ is the number of motors moving ballistically on the flagellum in IFT particles and $M_{d}$ is the number of motors moving diffusively. Therefore we may rewrite Equation 1 as
 
-The intraflagellar dynamics are fast compared to changes in length. The timescale of flagellar length dynamics, for example the recovery time after severing, is of the order of 10 min, whereas the molecular motors involved in IFT take at most tens of seconds to traverse the length of the flagellum by either ballistic or diffusive motion. Based on this separation of timescales, we treat IFT as a quasi-steady state process in which the injection flux Ji, diffusive flux Jb, and ballistic flux Jd are balanced, that is(3)Ji=Jb=Jd=:J.
+$$
+J=k_{on}⁢(M-M_{b}-M_{d}).
+$$
 
-As shown in Materials and methods, the quasi-steady state assumption of flux balance together with mass action kinetics of injection expressed in Equation 1 imply that(4)J=kon⁢M1+kon⁢L/v+kon⁢L2/2⁢D,where kon is the rate constant of motor injection, M is the total number of motors, v is the ballistic motor speed in IFT, and D is the diffusion coefficient of motors in the flagellum.
+The intraflagellar dynamics are fast compared to changes in length. The timescale of flagellar length dynamics, for example the recovery time after severing, is of the order of 10 min, whereas the molecular motors involved in IFT take at most tens of seconds to traverse the length of the flagellum by either ballistic or diffusive motion. Based on this separation of timescales, we treat IFT as a quasi-steady state process in which the injection flux $J_{i}$, diffusive flux $J_{b}$, and ballistic flux $J_{d}$ are balanced, that is
 
-We have validated the quasi-steady state assumption used to derive Equation 4 by comparing the IFT particle flux and the concentration of diffusing motors in the flagellum to the results of stochastic simulations (see Appendix 1), in which the dynamics of motors as well as the dynamics of microtubule assembly are taken into account explicitly; see Figure 2b. Parameter values used in simulations are provided in Table 1. (Note that in Equation 4 and throughout the manuscript, terms written in the form x/y⁢z are shorthand for x/(y⁢z), for example kon⁢L2/2⁢D is to be read as kon⁢L2/(2⁢D).)
+$$
+J_{i}=J_{b}=J_{d}=:J.
+$$
 
-IFT particle injection arising from a finite number of motors shared between the flagellum and the basal pool therefore leads to a length-dependent flux. This result holds true regardless of the identity of the rate-limiting IFT protein. However, the scaling of formula Equation 4 with length depends on whether ballistic or diffusive transport dominates. In the limit D≫L⁢v, the 1/L scaling of Marshall and Rosenbaum (2001) is recovered whereas in the limit D≪L⁢v, we recover the 1/L2 scaling of Hendel et al. (2018). Note that a distinction between our model and these previous works is the presence of a constant term in the denominator of Equation 4, which implies that in our formulation the flux does not blow up at L=0.
+As shown in Materials and methods, the quasi-steady state assumption of flux balance together with mass action kinetics of injection expressed in Equation 1 imply that
 
-In our model the assembly rate is determined by the rate of tubulin transport to the flagellar tip, as in Marshall and Rosenbaum (2001) and Hendel et al. (2018). Given mass-action kinetics of IFT particle assembly in the basal pool, this is simply the flux J of IFT particles times the amount of free tubulin Tf, so that the growth rate is given by the following ODE:(5)dLdt=γJTf−d,where d is the disassembly speed (assumed constant for now) and γ is a constant. The total amount of tubulin T is assumed to be conserved for now so that T=Tf+L, where tubulin is measured in units of corresponding flagellar length. As previously mentioned, later on we will consider the case in which protein levels in basal pools are not conserved and are instead monitored and regulated by an external control mechanism.
+$$
+J=\frac{k_{on}⁢M}{1+k_{on}⁢L/v+k_{on}⁢L^{2}/2⁢D},
+$$
 
-Substituting the expression Equation 4 for the flux into the above growth rate results in(6)d⁢Ld⁢t=γ⁢kon⁢M1+kon⁢L/v+kon⁢L2/2⁢D⁢(T-L)-d.
+where $k_{on}$ is the rate constant of motor injection, $M$ is the total number of motors, $v$ is the ballistic motor speed in IFT, and $D$ is the diffusion coefficient of motors in the flagellum.
 
-As shown in Materials and methods, this equation yields a stable steady-state length Ls⁢s for the single flagellum.
+We have validated the quasi-steady state assumption used to derive Equation 4 by comparing the IFT particle flux and the concentration of diffusing motors in the flagellum to the results of stochastic simulations (see Appendix 1), in which the dynamics of motors as well as the dynamics of microtubule assembly are taken into account explicitly; see Figure 2b. Parameter values used in simulations are provided in Table 1. (Note that in Equation 4 and throughout the manuscript, terms written in the form $x/y⁢z$ are shorthand for $x/(y⁢z)$, for example $k_{on}⁢L^{2}/2⁢D$ is to be read as $k_{on}⁢L^{2}/(2⁢D)$.)
 
-## Limiting-pool mechanisms alone cannot account for the rapid length equalization observed in severing experiments
+**Table 1.**
+ Parameter values and definitions.
 
-Whereas for a single flagellum the limiting-pool mechanism leads to a stable steady-state length, we show next that this mechanism is insufficient for the simultaneous length control of two flagella. A general limiting-pool model for the dynamics of two flagella having lengths L1⁢(t) and L2⁢(t) is given by the following ODEs:(7)dL1dt=γJ1Tf,1−d(8)dL2dt=γJ2Tf,2−d,where Ji and Tf,i for i=1, 2 denote the fluxes of IFT particles into the two flagella and the amounts of free tubulin in their basal pools, respectively. As we will show next, the particular forms of Ji and Tf,i depend on how the pools are coupled. In particular, the fluxes and free tubulin will be equal for the two flagella if the basal proteins are held in a common shared pool.
 
-Severing experiments illustrate that the flagella are coupled. We consider various modes of coupling, that is shared or separate motor pools and shared or separate tubulin pools, as depicted in Figure 3a, that give rise to different forms of Ji and Tf,i within our model. We investigate their consequences for length control by focusing on the solutions to the steady-state equations(9)0=γJ1Tf,1−d(10)0=γJ2Tf,2−d.
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+      <th>Units</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Parameters</td>
+    </tr>
+    <tr>
+      <td>Steady-state length</td>
+      <td>10–12</td>
+      <td>µm</td>
+      <td>Marshall and Rosenbaum, 2001; Rosenbaum et al., 1969</td>
+      <td>Ls⁢s</td>
+    </tr>
+    <tr>
+      <td>Tubulin pool per flagellum</td>
+      <td>38–47</td>
+      <td>µm</td>
+      <td>Marshall et al., 2005</td>
+      <td>T/N</td>
+    </tr>
+    <tr>
+      <td>Disassembly speed</td>
+      <td>0.5</td>
+      <td>µm/min</td>
+      <td>Marshall and Rosenbaum, 2001; Ludington et al., 2012</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>IFT speed</td>
+      <td>2.5–3</td>
+      <td>µm/s</td>
+      <td>Kozminski et al., 1993; Buisson et al., 2013</td>
+      <td>v</td>
+    </tr>
+    <tr>
+      <td>Diffusion coefficient</td>
+      <td>1.7</td>
+      <td>µm2/s</td>
+      <td>Chien et al., 2017</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>Assembly rate per tubulin</td>
+      <td>2.3 × 10-2 –3.6 × 10-2</td>
+      <td>min−1</td>
+      <td>Fit</td>
+      <td>γ⁢kon⁢M/N</td>
+    </tr>
+    <tr>
+      <td>Injection rate constant</td>
+      <td>0.8–4</td>
+      <td>min−1</td>
+      <td>Fit</td>
+      <td>kon</td>
+    </tr>
+    <tr>
+      <td>Prefactor in Equation 5</td>
+      <td>2.5 × 10-4</td>
+      <td></td>
+      <td>Estimate (Appendix 2)</td>
+      <td>γ</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Variables</td>
+    </tr>
+    <tr>
+      <td>Number of flagella</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Free tubulin</td>
+      <td></td>
+      <td>µm</td>
+      <td></td>
+      <td>Tf</td>
+    </tr>
+    <tr>
+      <td>Total motors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Free motors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mf</td>
+    </tr>
+    <tr>
+      <td>Ballistic motors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Mb</td>
+    </tr>
+    <tr>
+      <td>Diffusing motors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Md</td>
+    </tr>
+    <tr>
+      <td>Flux</td>
+      <td></td>
+      <td>min−1</td>
+      <td></td>
+      <td>J</td>
+    </tr>
+    <tr>
+      <td>Motor concentration</td>
+      <td></td>
+      <td>µm−1</td>
+      <td></td>
+      <td>cd⁢(x)</td>
+    </tr>
+    <tr>
+      <td>Average concentration</td>
+      <td></td>
+      <td>µm−1</td>
+      <td></td>
+      <td>cd¯</td>
+    </tr>
+  </tbody>
+</table>
 
-Length control implies that these steady-state equations must yield a unique steady-state solution for L1 and L2. We consider the steady-state lengths before and after severing. It is known from experiments (Figure 1b) that initially the two flagella have equal lengths, and that after severing, which is accompanied by a loss of material (e.g. tubulin and motors lost from the severed flagellum), there is a rapid equalization of flagellar lengths. This initial, fast equalization of lengths leads to flagella that are shorter than they were before the severing. These experimental observations may be used to reject candidate models. Here we focus on the short-time dynamics after severing and therefore do not account for protein replenishment; however, as we show in the next section, incorporating protein replenishment is incompatible with the constant disassembly models considered here.
+IFT particle injection arising from a finite number of motors shared between the flagellum and the basal pool therefore leads to a length-dependent flux. This result holds true regardless of the identity of the rate-limiting IFT protein. However, the scaling of formula Equation 4 with length depends on whether ballistic or diffusive transport dominates. In the limit $D≫L⁢v$, the $1/L$ scaling of Marshall and Rosenbaum (2001) is recovered whereas in the limit $D≪L⁢v$, we recover the $1/L^{2}$ scaling of Hendel et al. (2018). Note that a distinction between our model and these previous works is the presence of a constant term in the denominator of Equation 4, which implies that in our formulation the flux does not blow up at $L=0$.
 
-As we shall see, the constant disassembly models within our model space do not yield the rapid length equalization observed experimentally. As shown in Figure 3b and considered next on a case-by-case basis, if the lengths are in steady-state prior to severing, they are also in steady-state immediately after severing as well so that no length equalization occurs. This is because in these models the assembly and disassembly rates depend only on free protein levels in the basal protein pools, which are unaffected by severing. To be more precise, we may rewrite the governing equations Equations 7 and 8 in terms of the number of free motors Mf,1 and Mf,2 in the following form:(11)dL1dt=γkonMf,1Tf,1−d(12)dL2dt=γkonMf,2Tf,2−d.
+In our model the assembly rate is determined by the rate of tubulin transport to the flagellar tip, as in Marshall and Rosenbaum (2001) and Hendel et al. (2018). Given mass-action kinetics of IFT particle assembly in the basal pool, this is simply the flux $J$ of IFT particles times the amount of free tubulin $T_{f}$, so that the growth rate is given by the following ODE:
 
-In order to simulate a severing experiment, we first allow the two flagella to reach steady-state. Prior to severing, there is an amount of tubulin L1 and a number of motors M1,b+M1,d loaded on the first flagellum corresponding to the numbers of motors undergoing ballistic or diffusive motion (see Materials and methods). Severing is modeled by setting L1→0, T1→(T1-L1), and M1→(M1−M1,b−M1,d). Because severing does not change any of the protein levels in the basal pools, Mf,i and Tf,i for i=1, 2 are the same before and after severing. Moreover, the linear concentration profile of diffusing motors remains linear in the truncated flagellum; no redistribution of motors is required to maintain quasi-steady state. As a consequence the constant disassembly models predict no length recovery of the severed flagellum, contrary to what is observed.
+$$
+\frac{dL}{dt}=\gammaJT_{f}−d,
+$$
 
-## Tubulin separate, motors separate
+where $d$ is the disassembly speed (assumed constant for now) and $\gamma$ is a constant. The total amount of tubulin $T$ is assumed to be conserved for now so that $T=T_{f}+L$, where tubulin is measured in units of corresponding flagellar length. As previously mentioned, later on we will consider the case in which protein levels in basal pools are not conserved and are instead monitored and regulated by an external control mechanism.
+
+Substituting the expression Equation 4 for the flux into the above growth rate results in
+
+$$
+\frac{d⁢L}{d⁢t}=\frac{\gamma⁢k_{on}⁢M}{1+k_{on}⁢L/v+k_{on}⁢L^{2}/2⁢D}⁢(T-L)-d.
+$$
+
+As shown in Materials and methods, this equation yields a stable steady-state length $L_{s⁢s}$ for the single flagellum.
+
+### Limiting-pool mechanisms alone cannot account for the rapid length equalization observed in severing experiments
+
+Whereas for a single flagellum the limiting-pool mechanism leads to a stable steady-state length, we show next that this mechanism is insufficient for the simultaneous length control of two flagella. A general limiting-pool model for the dynamics of two flagella having lengths $L_{1}⁢(t)$ and $L_{2}⁢(t)$ is given by the following ODEs:
+
+$$
+\frac{dL_{1}}{dt}=\gammaJ_{1}T_{f,1}−d
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\gammaJ_{2}T_{f,2}−d,
+$$
+
+where $J_{i}$ and $T_{f,i}$ for $i=1, 2$ denote the fluxes of IFT particles into the two flagella and the amounts of free tubulin in their basal pools, respectively. As we will show next, the particular forms of $J_{i}$ and $T_{f,i}$ depend on how the pools are coupled. In particular, the fluxes and free tubulin will be equal for the two flagella if the basal proteins are held in a common shared pool.
+
+Severing experiments illustrate that the flagella are coupled. We consider various modes of coupling, that is shared or separate motor pools and shared or separate tubulin pools, as depicted in Figure 3a, that give rise to different forms of $J_{i}$ and $T_{f,i}$ within our model. We investigate their consequences for length control by focusing on the solutions to the steady-state equations
+
+$$
+0=\gammaJ_{1}T_{f,1}−d
+$$
+
+
+
+$$
+0=\gammaJ_{2}T_{f,2}−d.
+$$
+
+Length control implies that these steady-state equations must yield a unique steady-state solution for $L_{1}$ and $L_{2}$. We consider the steady-state lengths before and after severing. It is known from experiments (Figure 1b) that initially the two flagella have equal lengths, and that after severing, which is accompanied by a loss of material (e.g. tubulin and motors lost from the severed flagellum), there is a rapid equalization of flagellar lengths. This initial, fast equalization of lengths leads to flagella that are shorter than they were before the severing. These experimental observations may be used to reject candidate models. Here we focus on the short-time dynamics after severing and therefore do not account for protein replenishment; however, as we show in the next section, incorporating protein replenishment is incompatible with the constant disassembly models considered here.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42599/elife-42599-fig3-v2.jpg)
+
+**Figure 3.:** (a) Flagellar assembly in Chlamydomonas reinhardtii and modes of coupling between basal proteins pools. (b) Simulations of the severing experiment using different modes of coupling between basal pools of proteins. In all cases severing occurs at time zero. (i) In the case of separate pools of both motors and tubulin (Equations 44 and 45), the unsevered flagellum does not decrease in length. (ii) When only motors are shared (Equations 49 and 50), the flagellar lengths do not equalize after severing. (iii) When only tubulin is shared (Equations 56 and 57), the flagellar lengths do not equalize after severing. (iv) When both tubulin and motors are shared (Equations 58 and 59), there is no unique steady-state. The difference between the two flagellar lengths undergoes a random walk, as shown by the mean square displacement (inset, average over 10 runs).
+
+As we shall see, the constant disassembly models within our model space do not yield the rapid length equalization observed experimentally. As shown in Figure 3b and considered next on a case-by-case basis, if the lengths are in steady-state prior to severing, they are also in steady-state immediately after severing as well so that no length equalization occurs. This is because in these models the assembly and disassembly rates depend only on free protein levels in the basal protein pools, which are unaffected by severing. To be more precise, we may rewrite the governing equations Equations 7 and 8 in terms of the number of free motors $M_{f,1}$ and $M_{f,2}$ in the following form:
+
+$$
+\frac{dL_{1}}{dt}=\gammak_{on}M_{f,1}T_{f,1}−d
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\gammak_{on}M_{f,2}T_{f,2}−d.
+$$
+
+In order to simulate a severing experiment, we first allow the two flagella to reach steady-state. Prior to severing, there is an amount of tubulin $L_{1}$ and a number of motors $M_{1,b}+M_{1,d}$ loaded on the first flagellum corresponding to the numbers of motors undergoing ballistic or diffusive motion (see Materials and methods). Severing is modeled by setting $L_{1}→0$, $T_{1}→(T_{1}-L_{1})$, and $M_{1}→(M_{1}−M_{1,b}−M_{1,d})$. Because severing does not change any of the protein levels in the basal pools, $M_{f,i}$ and $T_{f,i}$ for $i=1, 2$ are the same before and after severing. Moreover, the linear concentration profile of diffusing motors remains linear in the truncated flagellum; no redistribution of motors is required to maintain quasi-steady state. As a consequence the constant disassembly models predict no length recovery of the severed flagellum, contrary to what is observed.
+
+#### Tubulin separate, motors separate
 
 The case of separate tubulin pools and individual motor pools leads to two uncoupled instances of (6). This is fundamentally inconsistent with the coupling observed in severing experiments, in particular the significant decrease in the length of the unsevered flagellum (Figure 3b(i)). In this model, the unsevered flagellum does not change length after severing, and therefore it may be ruled out.
 
-## Tubulin separate, motors shared
+#### Tubulin separate, motors shared
 
-When motors are shared through a common pool, IFT particles are injected into either flagellum with equal probability. Therefore J1=J2=:J and it can be shown by a straightforward generalization of Equation 4 (see Materials and methods) that the flux satisfies(13)J=kon⁢M/21+kon⁢(L1+L2)/2⁢v+kon⁢(L12+L22)/4⁢D.
+When motors are shared through a common pool, IFT particles are injected into either flagellum with equal probability. Therefore $J_{1}=J_{2}=:J$ and it can be shown by a straightforward generalization of Equation 4 (see Materials and methods) that the flux satisfies
 
-Initially the tubulin pools are equal, as are the flagellar lengths. However, after the loss of material due to severing, T1≠T2 and the lengths do not equalize (see Figure 3b(ii) and Figure 3—video 1). Because of the separate tubulin pools, severing leads to asymmetrical tubulin depletion and unequal steady-state lengths after severing. Therefore, we may rule out the model.
+$$
+J=\frac{k_{on}⁢M/2}{1+k_{on}⁢(L_{1}+L_{2})/2⁢v+k_{on}⁢(L_{1}^{2}+L_{2}^{2})/4⁢D}.
+$$
 
-## Tubulin shared, motors separate
+Initially the tubulin pools are equal, as are the flagellar lengths. However, after the loss of material due to severing, $T_{1}\neqT_{2}$ and the lengths do not equalize (see Figure 3b(ii) and Figure 3—video 1). Because of the separate tubulin pools, severing leads to asymmetrical tubulin depletion and unequal steady-state lengths after severing. Therefore, we may rule out the model.
 
-This case is analogous to the previous model in which only motors are shared, but this time only the tubulin pools are shared so that Tf,1=Tf,2=:Tf, with(14)Tf=T-L1-L2.
+#### Tubulin shared, motors separate
+
+This case is analogous to the previous model in which only motors are shared, but this time only the tubulin pools are shared so that $T_{f,1}=T_{f,2}=:T_{f}$, with
+
+$$
+T_{f}=T-L_{1}-L_{2}.
+$$
 
 As shown in Figure 3b(iii) and Figure 3—video 2, this model does not capture the length equalization observed in severing experiments and therefore may be ruled out. See Materials and methods for details.
 
-## Tubulin shared, motors shared
+#### Tubulin shared, motors shared
 
-The flux resulting from the shared motor assumption is the same as in Equation 13, and we are left with the steady-state equations(15)0=γJ(T−L1−L2)−d(16)0=γJ(T−L1−L2)−d.
+The flux resulting from the shared motor assumption is the same as in Equation 13, and we are left with the steady-state equations
 
-Because the two steady-state equations are identical, that is d⁢L1/d⁢t=d⁢L2/d⁢t, this model does not account for the simultaneous positive and negative growth rates for the two flagella observed in the severing experiment.
+$$
+0=\gammaJ(T−L_{1}−L_{2})−d
+$$
 
-More strikingly, subtracting the steady-state equations yields(17)d⁢(L1-L2)d⁢t=0so that the difference in lengths is not controlled at all. Note that this result is independent of the parameters. Indeed, a similar conclusion was reached in the context of actin filaments (Mohapatra et al., 2017), in which it was observed that sharing all biomolecules between filaments does not yield simultaneous length control. In the context of the full stochastic simulations, this degeneracy is manifested by the difference in lengths undergoing a random walk (inset to Figure 3b(iv) and Figure 3—video 3).
+
+
+$$
+0=\gammaJ(T−L_{1}−L_{2})−d.
+$$
+
+Because the two steady-state equations are identical, that is $d⁢L_{1}/d⁢t=d⁢L_{2}/d⁢t$, this model does not account for the simultaneous positive and negative growth rates for the two flagella observed in the severing experiment.
+
+More strikingly, subtracting the steady-state equations yields
+
+$$
+\frac{d⁢(L_{1}-L_{2})}{d⁢t}=0
+$$
+
+so that the difference in lengths is not controlled at all. Note that this result is independent of the parameters. Indeed, a similar conclusion was reached in the context of actin filaments (Mohapatra et al., 2017), in which it was observed that sharing all biomolecules between filaments does not yield simultaneous length control. In the context of the full stochastic simulations, this degeneracy is manifested by the difference in lengths undergoing a random walk (inset to Figure 3b(iv) and Figure 3—video 3).
 
 The above analysis shows that, regardless of the manner in which tubulin and motors are shared between flagella, the constant disassembly models we have considered are unable to explain the results of severing experiments. Although sharing either tubulin or motors, but not both, yields a unique steady-state, these models do not agree with the rapid length equalization observed in severing experiments. This motivates us to extend our study beyond the models considered thus far.
 
-## Controlling protein levels in the basal pool is incompatible with the constant disassembly models considered
+### Controlling protein levels in the basal pool is incompatible with the constant disassembly models considered
 
-So far, we have assumed that the tubulin pool T and motor pool M are fixed throughout the simulation. While this assumption is reasonable for the fast initial phase of the severing experiment in which the flagellar lengths rapidly equalize, the slower second phase of recovery to the original steady state lengths requires replenishment of proteins back to their original levels. This was shown experimentally by using cycloheximide at the time of severing to block the synthesis of new proteins (Rosenbaum et al., 1969), resulting in shorter flagella that did not recover to their original lengths.
+So far, we have assumed that the tubulin pool $T$ and motor pool $M$ are fixed throughout the simulation. While this assumption is reasonable for the fast initial phase of the severing experiment in which the flagellar lengths rapidly equalize, the slower second phase of recovery to the original steady state lengths requires replenishment of proteins back to their original levels. This was shown experimentally by using cycloheximide at the time of severing to block the synthesis of new proteins (Rosenbaum et al., 1969), resulting in shorter flagella that did not recover to their original lengths.
 
 It may seem plausible that adding an external control mechanism that replenishes protein levels would lead to length equalization, thus resolving the issue of unequal steady-state lengths after severing. However, as we next show, adding such a control mechanism on free proteins levels in the basal pool does not lead to length equalization. Instead, in this case the constant disassembly models we have considered completely fail to control lengths.
 
-To incorporate control on protein levels into our model, we assume that the total levels T and M of tubulin and motors are replenished over a timescale τr as the cell synthesizes new protein to achieve target protein levels T¯f and M¯f in the basal pool:(18)τrdTdt=T¯f−Tf(19)τrdMdt=M¯f−Mf.
+To incorporate control on protein levels into our model, we assume that the total levels $T$ and $M$ of tubulin and motors are replenished over a timescale $\tau_{r}$ as the cell synthesizes new protein to achieve target protein levels $T¯_{f}$ and $M¯_{f}$ in the basal pool:
 
-In steady-state, the above equations become Tf=T¯f and Mf=M¯f. The steady-state equation for length then becomes 0=γ⁢kon⁢M¯f⁢T¯f-d, that is length drops out of the assembly term completely! Therefore, this external control mechanism actually destabilizes the flagellar lengths (see Figure 3—videos 4—6 to observe this destabilization for various modes of coupling). Note that although we have used the simplest case of linear feedback Equations 18 and 19 to illustrate the point, this argument is general and does not depend on the details of the control mechanism. The only requirement is that the free protein levels Tf and Mf are driven to their target values T¯f and M¯f in steady state. This argument gives another compelling reason to look beyond the constant disassembly models considered thus far.
+$$
+\tau_{r}\frac{dT}{dt}=T¯_{f}−T_{f}
+$$
 
-## Tubulin shared, motors shared and concentration-dependent disassembly
+
+
+$$
+\tau_{r}\frac{dM}{dt}=M¯_{f}−M_{f}.
+$$
+
+In steady-state, the above equations become $T_{f}=T¯_{f}$ and $M_{f}=M¯_{f}$. The steady-state equation for length then becomes $0=\gamma⁢k_{on}⁢M¯_{f}⁢T¯_{f}-d$, that is length drops out of the assembly term completely! Therefore, this external control mechanism actually destabilizes the flagellar lengths (see Figure 3—videos 4—6 to observe this destabilization for various modes of coupling). Note that although we have used the simplest case of linear feedback Equations 18 and 19 to illustrate the point, this argument is general and does not depend on the details of the control mechanism. The only requirement is that the free protein levels $T_{f}$ and $M_{f}$ are driven to their target values $T¯_{f}$ and $M¯_{f}$ in steady state. This argument gives another compelling reason to look beyond the constant disassembly models considered thus far.
+
+### Tubulin shared, motors shared and concentration-dependent disassembly
 
 We next consider a model that allows for full exchange of IFT components between basal protein pools and replaces the constant disassembly assumption with a concentration-dependent disassembly rate. The assumption of a constant disassembly rate was based on experiments on mutants in which IFT was disabled (Marshall et al., 2005). However, subsequent experiments in organisms with intact IFT led to 50-fold greater disassembly rates than those measured in the absence of IFT (Ludington et al., 2012).
 
@@ -140,25 +389,67 @@ We will assume that the depolymerizer has the same motion as kinesin-2—uninter
 
 Given that the formulas for the steady-state flux apply for any rate-limiting IFT protein undergoing ballistic-to-diffusive motion along the flagella, for convenience we assume in what follows that the depolymerizer is the rate-limiting protein. However, this assumption is made only for convenience; in the more general case that the depolymerizer and the rate-limiting IFT protein are different, the same results are obtained with suitably rescaled parameters, as shown in Appendix 3.
 
-We replace the assumption of constant disassembly by a disassembly speed of the form d0+d1⁢cd⁢(L), where cd⁢(L) is the concentration of diffusing motors at the tip of the flagellum and d1>0. In general the disassembly rate may be an arbitrary function of concentration, in which case this model may be viewed as a first-order Taylor series expansion valid near steady-state. The flux and concentration at the flagellar tip are related by cd⁢(L)=J⁢L/D (Equation 31 in Materials and methods and Figure 2b (inset)), so that we may rewrite the governing equations as(20)dL1dt=γJ(T−L1−L2)−d0−d1JL1D(21)dL2dt=γJ(T−L1−L2)−d0−d1JL2Dwhere as before in the case of shared motors(22)J=kon⁢M/21+kon⁢(L1+L2)/2⁢v+kon⁢(L12+L22)/4⁢D.
+We replace the assumption of constant disassembly by a disassembly speed of the form $d_{0}+d_{1}⁢c_{d}⁢(L)$, where $c_{d}⁢(L)$ is the concentration of diffusing motors at the tip of the flagellum and $d_{1}>0$. In general the disassembly rate may be an arbitrary function of concentration, in which case this model may be viewed as a first-order Taylor series expansion valid near steady-state. The flux and concentration at the flagellar tip are related by $c_{d}⁢(L)=J⁢L/D$ (Equation 31 in Materials and methods and Figure 2b (inset)), so that we may rewrite the governing equations as
 
-This model yields simultaneous length control and length equalization after severing (Figure 4 and Figure 4—video 1). Subtracting Equation 21 from Equation 20, it follows immediately that L1,s⁢s=L2,s⁢s=:Ls⁢s, and solving for the steady-state length results in(23)Lss=(Dv+γDMd0+Md12d0)⟮−1+1+(d0TγMD)1−2d0/γkonMT(1+d0/γMv+d1/2γD)2⟯.
+$$
+\frac{dL_{1}}{dt}=\gammaJ(T−L_{1}−L_{2})−d_{0}−d_{1}\frac{JL_{1}}{D}
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\gammaJ(T−L_{1}−L_{2})−d_{0}−d_{1}\frac{JL_{2}}{D}
+$$
+
+where as before in the case of shared motors
+
+$$
+J=\frac{k_{on}⁢M/2}{1+k_{on}⁢(L_{1}+L_{2})/2⁢v+k_{on}⁢(L_{1}^{2}+L_{2}^{2})/4⁢D}.
+$$
+
+This model yields simultaneous length control and length equalization after severing (Figure 4 and Figure 4—video 1). Subtracting Equation 21 from Equation 20, it follows immediately that $L_{1,s⁢s}=L_{2,s⁢s}=:L_{s⁢s}$, and solving for the steady-state length results in
+
+$$
+L_{ss}=(\frac{D}{v}+\frac{\gammaDM}{d_{0}}+\frac{Md_{1}}{2d_{0}})⟮−1+\sqrt{1+(\frac{d_{0}T}{\gammaMD})\frac{1−2d_{0}/\gammak_{on}MT}{(1+d_{0}/\gammaMv+d_{1}/2\gammaD)^{2}}}⟯.
+$$
 
 In Appendix 3 we show that this solution is stable using linear stability analysis. Therefore, concentration-dependent disassembly yields simultaneous length control when all biomolecules are shared between flagella and is consistent with the rapid length equalization observed after severing Figure 4b. The presence of a concentration gradient is a critical ingredient in this model and here it is achieved by ballistic transport to the flagellar tip with diffusive return. The concentration gradient makes the disassembly rates length-dependent and yields independent equations for the steady-state lengths.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/42599/elife-42599-fig4-v2.jpg)
+
+**Figure 4.:** (a) The depolymerizer moves ballistically to the flagellar tip and diffuses back, (b) The model Equations 20 and 21 captures rapid length equalization, (c) Protein replenishment with timescale $\tau_{r}=5$ min is included through Equations 18 and 19 and the model is fit to severing data from Ludington et al. (2012) (and to Rosenbaum et al., 1969, see inset). For the fit to Ludington et al. (2012), we use fitting parameters of $L_{ss}=12.5\mum$, $T=28\mum$, $d_{0}=2\mum/min$, $d_{1}=2.7\times10^{−3}\mum^{2}/min$, and $\gamma⁢k_{on}⁢M=2.5⁢min^{-1}$; all other parameters are as in Table 1. For the fit to Rosenbaum et al., 1969, we use the same fitting parameters except for $\tau_{r}=8min$, $L_{ss}=10.2\mum$, and $d_{1}=8.4\times10^{−3}\mum^{2}/min$.
+
 Unlike the constant disassembly models we have considered, for which a limiting-pool mechanism is essential for length control, concentration-dependent disassembly yields length control under mild assumptions including the case that all biomolecules are in excess. Nevertheless, limiting-pools of biomolecules are needed to capture the depletion effects observed in severing experiments on Chlamydomonas, for example the shortening of the unsevered flagellum and the previously-mentioned absence of length recovery after cyclohexamide treatment (Rosenbaum et al., 1969). In Appendix 3 we explain that limiting pools of IFT motors are necessary for agreement with data whereas tubulin may either be limited or in excess. The presence of a limiting-pool once again raises the question, now in the context of concentration-dependent disassembly, of how biomolecules may be shared between flagella. In Appendix 3 we show that all relevant biomolecule pools must be shared for the concentration-dependent disassembly model to capture the rapid length equalization observed.
 
-Another feature of the concentration-dependent disassembly model is that it allows for an external control mechanism on protein levels in the basal pool, unlike the constant disassembly models we have considered. As shown in Figure 4c and Figure 4—video 2, upon including protein replenishment via Equations 18 and 19 on a timescale of τr=10 mins, the recovery of the flagella back to their original lengths is in reasonable agreement with experimental data.
+Another feature of the concentration-dependent disassembly model is that it allows for an external control mechanism on protein levels in the basal pool, unlike the constant disassembly models we have considered. As shown in Figure 4c and Figure 4—video 2, upon including protein replenishment via Equations 18 and 19 on a timescale of $\tau_{r}=10$ mins, the recovery of the flagella back to their original lengths is in reasonable agreement with experimental data.
 
-## Generalization to N>2 flagella
+#### Generalization to N>2 flagella
 
-The concentration-dependent disassembly model may be generalized to arbitrary flagellar number N, and here we demonstrate simultaneous length control in the case of N=8 flagella (Figure 5).
+The concentration-dependent disassembly model may be generalized to arbitrary flagellar number $N$, and here we demonstrate simultaneous length control in the case of $N=8$ flagella (Figure 5).
 
-Because motors are shared, the injection fluxes are equal and Ji=J for all i=1⁢…⁢N, with J satisfying(24)J=kon⁢M/N1+kon⁢(∑i=1NLi)/N⁢v+kon⁢(∑i=1NLi2)/2⁢N⁢Dand length dynamics given by(25)dLidt=γJ(T−∑j=1NLj)−d0−d1JLiD,i=1…N,where we have applied the boundary condition cd,i⁢(0)=0 as before. Taking any pairwise difference between the ith and jth equations at steady-state yields immediately Li,s⁢s=Lj,s⁢s, so that the steady-state lengths are equal to(26)Li,s⁢s=(Dv+γ⁢D⁢Md0+M⁢d1N⁢d0)⁢(-1+1+(2⁢d0⁢TN⁢γ⁢M⁢D)⁢1-N⁢d0/γ⁢kon⁢M⁢T(1+d0/γ⁢M⁢v+d1/N⁢γ⁢D)2)for all i=1,…,N. Stability follows from analyzing the linearized equations, as shown in Appendix 3.
+Because motors are shared, the injection fluxes are equal and $J_{i}=J$ for all $i=1⁢…⁢N$, with $J$ satisfying
+
+$$
+J=\frac{k_{on}⁢M/N}{1+k_{on}⁢(\sum_{i=1}^{N}L_{i})/N⁢v+k_{on}⁢(\sum_{i=1}^{N}L_{i}^{2})/2⁢N⁢D}
+$$
+
+and length dynamics given by
+
+$$
+\frac{dL_{i}}{dt}=\gammaJ(T−\sumj=1NL_{j})−d_{0}−d_{1}\frac{JL_{i}}{D},i=1…N,
+$$
+
+where we have applied the boundary condition $c_{d,i}⁢(0)=0$ as before. Taking any pairwise difference between the $i$th and $j$th equations at steady-state yields immediately $L_{i,s⁢s}=L_{j,s⁢s}$, so that the steady-state lengths are equal to
+
+$$
+L_{i,s⁢s}=(\frac{D}{v}+\frac{\gamma⁢D⁢M}{d_{0}}+\frac{M⁢d_{1}}{N⁢d_{0}})⁢(-1+\sqrt{1+(\frac{2⁢d_{0}⁢T}{N⁢\gamma⁢M⁢D})⁢\frac{1-N⁢d_{0}/\gamma⁢k_{on}⁢M⁢T}{(1+d_{0}/\gamma⁢M⁢v+d_{1}/N⁢\gamma⁢D)^{2}}})
+$$
+
+for all $i=1,…,N$. Stability follows from analyzing the linearized equations, as shown in Appendix 3.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/42599/elife-42599-fig5-v2.jpg)
 
-**Figure 5.:** .NWe solve (Equations 25) with  flagella and the larger shared pool N=8, T=336μm, and d0=0.1μm/min; otherwise all parameters are as in d1=120μm2/minTable 1.
+**Figure 5.:** The concentration-dependent disassembly model generalizes to arbitrary flagellar number $N$.We solve (Equations 25) with $N=8$ flagella and the larger shared pool $T=336\mum$, $d_{0}=0.1\mum/min$, and $d_{1}=120\mum^{2}/min$; otherwise all parameters are as in Table 1.
 
 ## Discussion
 
@@ -184,78 +475,266 @@ On the side of theory, a promising avenue to further test the active disassembly
 
 ## Materials and methods
 
-## Single flagellum
+### Single flagellum
 
-We first consider a single flagellum with time-dependent length L⁢(t). Given the highly regular structure of the axoneme revealed by cryo-electron microscopy (Bui et al., 2008; Barber et al., 2012), we assume a constant cross-sectional area in which case the flagellar geometry is fully described by its length. In our model the flagellar assembly rate is proportional to the flux J of IFT particles times the tubulin carried per particle. The tubulin carried is proportional to the amount of free tubulin Tf, assuming mass action kinetics in the basal pool (i.e. constant probability per time of tubulin binding to an IFT particle). For now we take the disassembly speed to be equal to a constant d. This yields the growth rate(27)dLdt=γJTf−d.
+We first consider a single flagellum with time-dependent length $L⁢(t)$. Given the highly regular structure of the axoneme revealed by cryo-electron microscopy (Bui et al., 2008; Barber et al., 2012), we assume a constant cross-sectional area in which case the flagellar geometry is fully described by its length. In our model the flagellar assembly rate is proportional to the flux $J$ of IFT particles times the tubulin carried per particle. The tubulin carried is proportional to the amount of free tubulin $T_{f}$, assuming mass action kinetics in the basal pool (i.e. constant probability per time of tubulin binding to an IFT particle). For now we take the disassembly speed to be equal to a constant $d$. This yields the growth rate
 
-As described in Results, we assume that motors are conserved having total number M=Mf+Mb+Md, where Mf is the number of motors freely available in the basal protein pool, Mb is the number of motors moving ballistically on the flagellum in IFT particles, and Md is the number of motors moving diffusively.
+$$
+\frac{dL}{dt}=\gammaJT_{f}−d.
+$$
 
-We assume a limiting pool of tubulin in addition to the limiting pool of motors, that is tubulin is conserved with total amount T=Tf+L. As the flagellum grows it incorporates more tubulin and the size of the free tubulin pool decreases. (In reality T=Tb+Tf+L, where Tb is the amount of tubulin undergoing IFT, but this correction is negligible; the amount of tubulin moving ballistically in IFT satisfies Tb/Tf<2⁢γ⁢kon⁢M⁢Ls⁢s/v, and consequently Tb/Tf<2.6×10-3 for the parameters contained in Table 1).
+As described in Results, we assume that motors are conserved having total number $M=M_{f}+M_{b}+M_{d}$, where $M_{f}$ is the number of motors freely available in the basal protein pool, $M_{b}$ is the number of motors moving ballistically on the flagellum in IFT particles, and $M_{d}$ is the number of motors moving diffusively.
 
-## Flux balance
+We assume a limiting pool of tubulin in addition to the limiting pool of motors, that is tubulin is conserved with total amount $T=T_{f}+L$. As the flagellum grows it incorporates more tubulin and the size of the free tubulin pool decreases. (In reality $T=T_{b}+T_{f}+L$, where $T_{b}$ is the amount of tubulin undergoing IFT, but this correction is negligible; the amount of tubulin moving ballistically in IFT satisfies $T_{b}/T_{f}<2⁢\gamma⁢k_{on}⁢M⁢L_{s⁢s}/v$, and consequently $T_{b}/T_{f}<2.6\times10^{-3}$ for the parameters contained in Table 1).
 
-In our model the flux, or injection rate, is proportional to the number of free molecular motors Mf so that(28)J=kon⁢Mf,according to mass action kinetics with first-order rate constant kon. By mass action and conservation of motors, the flux of motors may be expressed as(29)J=kon⁢(M-Mb-Md).
+#### Flux balance
 
-The ballistic flux is related to concentration in a simple manner. It satisfies J=ca¯⁢v, where ca¯ is the average concentration of motors moving in the anterograde direction and v is the anterograde velocity. (As mentioned previously, it follows from the quasi-steady state assumption that the injection flux, anterograde flux, and retrograde flux are equal so that there is a single flux J.) Therefore(30)Mb=Lca¯=LJ/v.
+In our model the flux, or injection rate, is proportional to the number of free molecular motors $M_{f}$ so that
 
-In quasi-steady state, the diffusive flux D⁢∂⁡cd/∂⁡x must equal the injection rate J. By Fick’s law, for constant J the concentration profile cd⁢(x) of the diffusing motors is linear, that is(31)cd⁢(x)=cd¯+JD⁢(x-L2),in which cd¯ is the average concentration along the flagellum and D is the diffusion constant (Figure 2b (inset)). We treat the flagellar base as a diffusive sink by fixing the boundary condition cd⁢(0)=0, which assumes that motors in the basal pool cannot leak diffusively into the flagellum; instead they attach to the microtubules in the axoneme and move directionally toward the tip (More general boundary conditions are discussed in Appendix 2.) This implies that(32)cd¯=J⁢L2⁢D.
+$$
+J=k_{on}⁢M_{f},
+$$
 
-Therefore(33)Md=cd¯⁢L=(J⁢L2⁢D)⁢L=J⁢L22⁢Dfor the diffusively-moving motors. Substituting the expressions Equation 30 and Equation 33 for Mb and Md into Equation 29 results in(34)J=kon⁢M1+kon⁢L/v+kon⁢L2/2⁢D.
+according to mass action kinetics with first-order rate constant $k_{on}$. By mass action and conservation of motors, the flux of motors may be expressed as
+
+$$
+J=k_{on}⁢(M-M_{b}-M_{d}).
+$$
+
+The ballistic flux is related to concentration in a simple manner. It satisfies $J=c_{a}¯⁢v$, where $c_{a}¯$ is the average concentration of motors moving in the anterograde direction and $v$ is the anterograde velocity. (As mentioned previously, it follows from the quasi-steady state assumption that the injection flux, anterograde flux, and retrograde flux are equal so that there is a single flux $J$.) Therefore
+
+$$
+M_{b}=Lc_{a}¯=LJ/v.
+$$
+
+In quasi-steady state, the diffusive flux $D⁢\partial⁡c_{d}/\partial⁡x$ must equal the injection rate $J$. By Fick’s law, for constant $J$ the concentration profile $c_{d}⁢(x)$ of the diffusing motors is linear, that is
+
+$$
+c_{d}⁢(x)=c_{d}¯+\frac{J}{D}⁢(x-\frac{L}{2}),
+$$
+
+in which $c_{d}¯$ is the average concentration along the flagellum and $D$ is the diffusion constant (Figure 2b (inset)). We treat the flagellar base as a diffusive sink by fixing the boundary condition $c_{d}⁢(0)=0$, which assumes that motors in the basal pool cannot leak diffusively into the flagellum; instead they attach to the microtubules in the axoneme and move directionally toward the tip (More general boundary conditions are discussed in Appendix 2.) This implies that
+
+$$
+c_{d}¯=\frac{J⁢L}{2⁢D}.
+$$
+
+Therefore
+
+$$
+M_{d}=c_{d}¯⁢L=(\frac{J⁢L}{2⁢D})⁢L=\frac{J⁢L^{2}}{2⁢D}
+$$
+
+for the diffusively-moving motors. Substituting the expressions Equation 30 and Equation 33 for $M_{b}$ and $M_{d}$ into Equation 29 results in
+
+$$
+J=\frac{k_{on}⁢M}{1+k_{on}⁢L/v+k_{on}⁢L^{2}/2⁢D}.
+$$
 
 The denominator is a quadratic function in length, and it is interesting to note that the flux has a similar functional form to the familiar substrate production rate in Michaelis-Menten enzyme kinetics (Fall, 2002); this is because of the separation of timescales assumption invoked in both derivations.
 
-Using the above expression for the flux in the growth rate Equation 27 together with the relation Tf=T-L gives(35)d⁢Ld⁢t=γ⁢kon⁢M1+kon⁢L/v+kon⁢L2/2⁢D⁢(T-L)-d.
+Using the above expression for the flux in the growth rate Equation 27 together with the relation $T_{f}=T-L$ gives
 
-Solving Equation 35 for the steady-state results in a quadratic equation for Ls⁢s. One root is always negative, leaving the solution(36)Ls⁢s=(Dv+γ⁢D⁢Md)⁢(-1+1+(2⁢d⁢Tγ⁢M⁢D)⁢1-d/γ⁢kon⁢M⁢T(1+d/γ⁢M⁢v)2),which is positive provided that T>d/γ⁢k⁢M. (We remind the reader that terms such as d/γ⁢kon⁢M are to be interpreted as d/(γ⁢kon⁢M).) This inequality provides a theoretical lower limit on the product of total motors and tubulin needed to obtain a positive steady-state length. When the inequality is not satisfied, that is T≤d/γ⁢kon⁢M, the disassembly term dominates and the length shrinks to zero.
+$$
+\frac{d⁢L}{d⁢t}=\frac{\gamma⁢k_{on}⁢M}{1+k_{on}⁢L/v+k_{on}⁢L^{2}/2⁢D}⁢(T-L)-d.
+$$
 
-We evaluate the stability of this solution by linearizing about Ls⁢s. Expanding to first order in Δ⁢L:=L-Ls⁢s, we find that the steady-state is stable, that is d⁢(Δ⁢L)/d⁢t=-λ⁢(Δ⁢L) with λ a positive constant given by(37)λ=(γ⁢kon⁢M1+kon⁢Ls⁢s/v+kon⁢Ls⁢s2/2⁢D)⁢(1+kon/v+kon⁢Ls⁢s/D1+kon⁢Ls⁢s/v+kon⁢Ls⁢s2/2⁢D⁢(T-Ls⁢s)).
+Solving Equation 35 for the steady-state results in a quadratic equation for $L_{s⁢s}$. One root is always negative, leaving the solution
 
-Based on the parameters estimated in Appendix 2, the associated timescale τ:=1/λ is approximately 15 min, which is consistent with experiment. This timescale is long compared to the few tens of seconds needed for molecular motors to traverse the flagellum in IFT, which justifies a posteriori our approximation of IFT as a quasi-steady state process.
+$$
+L_{s⁢s}=(\frac{D}{v}+\frac{\gamma⁢D⁢M}{d})⁢(-1+\sqrt{1+(\frac{2⁢d⁢T}{\gamma⁢M⁢D})⁢\frac{1-d/\gamma⁢k_{on}⁢M⁢T}{(1+d/\gamma⁢M⁢v)^{2}}}),
+$$
 
-We next consider the parameter space associated with the length dynamics. Introducing the nondimensional length L~=L/Ls⁢s and nondimensional time t~=t⁢γ⁢kon⁢M⁢T/Ls⁢s, we may rewrite Equation 35 in terms of the dimensionless parameters π1=d/γ⁢kon⁢M⁢T, π2=Ls⁢s/T, π3=kon⁢Ls⁢s/v, and π4=kon⁢Ls⁢s2/2⁢D as(38)d⁢L~d⁢t~=1-π2⁢L~1+π3⁢L~+π4⁢L~2-π1.
+which is positive provided that $T>d/\gamma⁢k⁢M$. (We remind the reader that terms such as $d/\gamma⁢k_{on}⁢M$ are to be interpreted as $d/(\gamma⁢k_{on}⁢M)$.) This inequality provides a theoretical lower limit on the product of total motors and tubulin needed to obtain a positive steady-state length. When the inequality is not satisfied, that is $T\leqd/\gamma⁢k_{on}⁢M$, the disassembly term dominates and the length shrinks to zero.
 
-We interpret these parameters as follows: π1 is the ratio of disassembly and assembly rates, π2 is the fraction of the tubulin pool taken up by the flagellum at steady-state, π3=τb/τi is the ratio of the ballistic timescale τb:=Ls⁢s/v of IFT transport to the injection timescale τi:=kon-1, and π4=τd/τi is an analogous ratio of the diffusive timescale τd=Ls⁢s2/2⁢D to the injection timescale. (We could equivalently think of π3 and π4 as ratios of lengthscales related to the same physical processes.)
+We evaluate the stability of this solution by linearizing about $L_{s⁢s}$. Expanding to first order in $Δ⁢L:=L-L_{s⁢s}$, we find that the steady-state is stable, that is $d⁢(Δ⁢L)/d⁢t=-\lambda⁢(Δ⁢L)$ with $\lambda$ a positive constant given by
 
-In terms of the experimentally measured parameters and those estimated in Appendix 2, we find π1≈0.4, π2≈0.2, π3≈0.1, and π4≈0.8. The relatively small values of π2 and π3 lead us to consider the limit π2→0 (i.e. no tubulin depletion) and π3→0 (i.e. instantaneous ballistic motion). In this limit, we have(39)d⁢Ld⁢t=γ⁢kon⁢M⁢T1+kon⁢L2/2⁢D-d,nearly recovering the model of Hendel et al. (2018) with the distinction that, as mentioned above, in our model there is an additional constant term in the denominator. Note however that the essential difference between our model and Hendel et al. (2018) lies in their effective control mechanism on the number of motors loaded on the flagella, which is not captured by any differences in these formulas (see Discussion).
+$$
+\lambda=(\frac{\gamma⁢k_{on}⁢M}{1+k_{on}⁢L_{s⁢s}/v+k_{on}⁢L_{s⁢s}^{2}/2⁢D})⁢(1+\frac{k_{on}/v+k_{on}⁢L_{s⁢s}/D}{1+k_{on}⁢L_{s⁢s}/v+k_{on}⁢L_{s⁢s}^{2}/2⁢D}⁢(T-L_{s⁢s})).
+$$
 
-## Two flagella
+Based on the parameters estimated in Appendix 2, the associated timescale $\tau:=1/\lambda$ is approximately 15 min, which is consistent with experiment. This timescale is long compared to the few tens of seconds needed for molecular motors to traverse the flagellum in IFT, which justifies a posteriori our approximation of IFT as a quasi-steady state process.
 
-In the case of two flagella with lengths L1⁢(t) and L2⁢(t) the length dynamics are given by(40)dL1dt=γJ1Tf,1−d(41)dL2dt=γJ2Tf,2−d,where Ji and Tf,i for i=1, 2 denote the fluxes and free amounts of tubulin for the two flagella, which may be equal when the biomolecule pools are shared. We consider various modes of coupling between the flagella giving rise to different forms of Ji and Tf,i and their consequences for length control. To assess whether a model achieves simultaneous length control we analyze the stability of solutions to the following steady-state equations:(42)0=γJ1Tf,1−d(43)0=γJ2Tf,2−d.
+We next consider the parameter space associated with the length dynamics. Introducing the nondimensional length $L~=L/L_{s⁢s}$ and nondimensional time $t~=t⁢\gamma⁢k_{on}⁢M⁢T/L_{s⁢s}$, we may rewrite Equation 35 in terms of the dimensionless parameters $\pi_{1}=d/\gamma⁢k_{on}⁢M⁢T$, $\pi_{2}=L_{s⁢s}/T$, $\pi_{3}=k_{on}⁢L_{s⁢s}/v$, and $\pi_{4}=k_{on}⁢L_{s⁢s}^{2}/2⁢D$ as
+
+$$
+\frac{d⁢L~}{d⁢t~}=\frac{1-\pi_{2}⁢L~}{1+\pi_{3}⁢L~+\pi_{4}⁢L~^{2}}-\pi_{1}.
+$$
+
+We interpret these parameters as follows: $\pi_{1}$ is the ratio of disassembly and assembly rates, $\pi_{2}$ is the fraction of the tubulin pool taken up by the flagellum at steady-state, $\pi_{3}=\tau_{b}/\tau_{i}$ is the ratio of the ballistic timescale $\tau_{b}:=L_{s⁢s}/v$ of IFT transport to the injection timescale $\tau_{i}:=k_{on}^{-1}$, and $\pi_{4}=\tau_{d}/\tau_{i}$ is an analogous ratio of the diffusive timescale $\tau_{d}=L_{s⁢s}^{2}/2⁢D$ to the injection timescale. (We could equivalently think of $\pi_{3}$ and $\pi_{4}$ as ratios of lengthscales related to the same physical processes.)
+
+In terms of the experimentally measured parameters and those estimated in Appendix 2, we find $\pi_{1}≈0.4$, $\pi_{2}≈0.2$, $\pi_{3}≈0.1$, and $\pi_{4}≈0.8$. The relatively small values of $\pi_{2}$ and $\pi_{3}$ lead us to consider the limit $\pi_{2}→0$ (i.e. no tubulin depletion) and $\pi_{3}→0$ (i.e. instantaneous ballistic motion). In this limit, we have
+
+$$
+\frac{d⁢L}{d⁢t}=\frac{\gamma⁢k_{on}⁢M⁢T}{1+k_{on}⁢L^{2}/2⁢D}-d,
+$$
+
+nearly recovering the model of Hendel et al. (2018) with the distinction that, as mentioned above, in our model there is an additional constant term in the denominator. Note however that the essential difference between our model and Hendel et al. (2018) lies in their effective control mechanism on the number of motors loaded on the flagella, which is not captured by any differences in these formulas (see Discussion).
+
+### Two flagella
+
+In the case of two flagella with lengths $L_{1}⁢(t)$ and $L_{2}⁢(t)$ the length dynamics are given by
+
+$$
+\frac{dL_{1}}{dt}=\gammaJ_{1}T_{f,1}−d
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\gammaJ_{2}T_{f,2}−d,
+$$
+
+where $J_{i}$ and $T_{f,i}$ for $i=1, 2$ denote the fluxes and free amounts of tubulin for the two flagella, which may be equal when the biomolecule pools are shared. We consider various modes of coupling between the flagella giving rise to different forms of $J_{i}$ and $T_{f,i}$ and their consequences for length control. To assess whether a model achieves simultaneous length control we analyze the stability of solutions to the following steady-state equations:
+
+$$
+0=\gammaJ_{1}T_{f,1}−d
+$$
+
+
+
+$$
+0=\gammaJ_{2}T_{f,2}−d.
+$$
 
 Here, we focus on short-time behavior, that is whether a candidate model yields rapid length equalization, and do not include the protein replenishment that takes place over a longer timescale.
 
-## Tubulin separate, motors separate
+#### Tubulin separate, motors separate
 
-The presence of separate tubulin pools and separate motor pools leads to two uncoupled instances of the single flagellum dynamics, that is(44)dL1dt=γkonM11+konL1/v+konL12/2D(T1−L1)−d(45)dL2dt=γkonM11+konL2/v+konL22/2D(T1−L2)−d.
+The presence of separate tubulin pools and separate motor pools leads to two uncoupled instances of the single flagellum dynamics, that is
 
-Setting M1=M2=M and T1=T2=T leads to steady state lengths given by Equation 36.
+$$
+\frac{dL_{1}}{dt}=\frac{\gammak_{on}M_{1}}{1+k_{on}L_{1}/v+k_{on}L_{1}^{2}/2D}(T_{1}−L_{1})−d
+$$
 
-## Tubulin separate, motors shared
 
-In the case of separate tubulin pools, we have Tf,1=T1-L1 and Tf,2=T2-L2. The flux may be calculated according to(46)J=12⁢kon⁢Mf=12⁢kon⁢(M-Mb-Md),where the factor of one-half comes from assuming equal injection probability into either flagellum. Further, Mb=J⁢(L1+L2)/v and(47)Md=cd,1¯L1+cd,2¯L2=J(L122D+L222D)so that(48)J=konM/21+kon(L1+L2)/2v+kon(L12+L22)/4D.
 
-This yields the flagellar length dynamics(49)dL1dt=γkonM/21+kon(L1+L2)/2v+kon(L12+L22)/4D(T1−L1)−d(50)dL2dt==γkonM/21+kon(L1+L2)/2v+kon(L12+L22)/4D(T2−L2)−d.
+$$
+\frac{dL_{2}}{dt}=\frac{\gammak_{on}M_{1}}{1+k_{on}L_{2}/v+k_{on}L_{2}^{2}/2D}(T_{1}−L_{2})−d.
+$$
 
-The steady-state equations are given by(51)0=γJ(T1−L1,ss)−d(52)0=γJ(T2−L2,ss)−d.
+Setting $M_{1}=M_{2}=M$ and $T_{1}=T_{2}=T$ leads to steady state lengths given by Equation 36.
 
-When T1=T2 it follows from subtracting the above equations that L1,s⁢s=L2,s⁢s. The steady-state equations are identical to the corresponding steady-state Equation 35 for a single flagellum with M replaced by M/2. Therefore the steady-state length satisfies Equation 36 upon rescaling M→M/2:(53)L1,s⁢s=L2,s⁢s=(Dv+γ⁢D⁢M2⁢d)⁢(-1+1+(4⁢d⁢Tγ⁢M⁢D)⁢1-2⁢d/γ⁢kon⁢M⁢T(1+2⁢d/γ⁢M⁢v)2).
+#### Tubulin separate, motors shared
 
-The steady state lengths are only equal if T1=T2, which is not the case after asymmetrical depletion of tubulin pools by severing (see Figure 3bii).
+In the case of separate tubulin pools, we have $T_{f,1}=T_{1}-L_{1}$ and $T_{f,2}=T_{2}-L_{2}$. The flux may be calculated according to
 
-## Tubulin shared, motors separate
+$$
+J=\frac{1}{2}⁢k_{on}⁢M_{f}=\frac{1}{2}⁢k_{on}⁢(M-M_{b}-M_{d}),
+$$
 
-We next consider the case in which tubulin is shared but the motor pools are separate. The separate motor pools yield decoupled fluxes identical to Equations 44 and 45:(54)J1=konM11+konL1/v+konL12/2D(55)J2=konM21+konL2/v+konL22/2D,which leads to the systems of equations(56)dL1dt=γkonM11+konL1/v+konL12/2D(T−L1−L2)−d(57)dL2dt=γkonM21+konL2/v+konL22/2D(T−L1−L2)−d.
+where the factor of one-half comes from assuming equal injection probability into either flagellum. Further, $M_{b}=J⁢(L_{1}+L_{2})/v$ and
 
-This system of equations is similar to the case of no sharing given by Equations 44-45, with the notable exception that the equations are coupled through the shared tubulin pool term T-L1-L2. The resulting steady-state equations are identical to those of Equation 35 for a single flagellum, with T replaced by T/2 and γ replaced by 2⁢γ. Therefore the steady-state lengths satisfy Equation 36 upon rescaling T→T/2 and γ→2⁢γ. This model yields simultaneous length control, and the resulting steady-state lengths satisfy L1,s⁢s=L2,s⁢s only if M1=M2=M. It follows that the steady-state lengths are unequal after severing because one of the two motor pools is depleted.
+$$
+M_{d}=c_{d,1}¯L_{1}+c_{d,2}¯L_{2}=J(\frac{L_{1}^{2}}{2D}+\frac{L_{2}^{2}}{2D})
+$$
 
-The model equations have a similar form to existing models (Marshall et al., 2005; Hendel et al., 2018), in which the assembly rates involve a factor of T-L1-L2 and either a 1/Li or 1/Li2-dependence in the denominator, for i=1, 2 as discussed earlier in the context of a single growing flagellum. Although the equations are similar, the absence of length equalization in our model (Figure 3biii) contrasts with the length equalization achieved in Hendel et al. (2018) by an additional control mechanism that instantaneously replenishes the number of motors on the flagellum after severing. As noted in the Discussion, the importance of protein replenishment for the model appears to be inconsistent with experimental results (Rosenbaum et al., 1969), which show that length equalization occurs even in the absence of new protein synthesis.
+so that
 
-## Tubulin shared, motors shared
+$$
+J=\frac{k_{on}M/2}{1+k_{on}(L_{1}+L_{2})/2v+k_{on}(L_{1}^{2}+L_{2}^{2})/4D}.
+$$
 
-We finally consider the case in which both tubulin and motors are shared through a common pool. By the shared tubulin pool assumption Tf,1=Tf,2=T-L1-L2. Further, by the shared motor pool assumption the injection rates satisfy J1=J2≡J. Therefore(58)dL1dt=γJ(T−L1−L2)−d(59)dL2dt=γJ(T−L1−L2)−d,in which J satisfies Equation 48. We are left with the steady-state equations(60)0=γJ(T−L1,ss−L2,ss)−d(61)0=γJ(T−L1,ss−L2,ss)−d.
+This yields the flagellar length dynamics
 
-These equations are identical, so that there is only a single equation for the two unknowns L1,s⁢s and L2,s⁢s and the steady-state lengths are indeterminate provided that the disassembly rate is constant. Note that this conclusion holds regardless of the particular form of the flux.
+$$
+\frac{dL_{1}}{dt}=\frac{\gammak_{on}M/2}{1+k_{on}(L_{1}+L_{2})/2v+k_{on}(L_{1}^{2}+L_{2}^{2})/4D}(T_{1}−L_{1})−d
+$$
 
-We next use linear stability analysis to demonstrate this breakdown of simultaneous length in greater detail. Let L1,s⁢s and L2,s⁢s denote any one of the infinitely-many possible solutions to Equations 60 and 61. Letting Δ⁢L1 and Δ⁢L2 be the deviations from steady-state such that L1=L1,s⁢s+Δ⁢L1 and L2=L2,s⁢s+Δ⁢L2, linearizing about any one of these solutions yields a matrix equation of the form(62)dd⁢t⁢(Δ⁢L1Δ⁢L2)=-(aaaa)⁢(Δ⁢L1Δ⁢L2),for a>0. The 2 × 2 matrix above has an vanishing eigenvalue, as we now show. Diagonalizing in terms of the sum Σ=Δ⁢L1+Δ⁢L2 and difference Γ=Δ⁢L1-Δ⁢L2 gives(63)dd⁢t⁢(ΣΓ)=-(2⁢a000)⁢(ΣΓ).
+
+
+$$
+\frac{dL_{2}}{dt}==\frac{\gammak_{on}M/2}{1+k_{on}(L_{1}+L_{2})/2v+k_{on}(L_{1}^{2}+L_{2}^{2})/4D}(T_{2}−L_{2})−d.
+$$
+
+The steady-state equations are given by
+
+$$
+0=\gammaJ(T_{1}−L_{1,ss})−d
+$$
+
+
+
+$$
+0=\gammaJ(T_{2}−L_{2,ss})−d.
+$$
+
+When $T_{1}=T_{2}$ it follows from subtracting the above equations that $L_{1,s⁢s}=L_{2,s⁢s}$. The steady-state equations are identical to the corresponding steady-state Equation 35 for a single flagellum with $M$ replaced by $M/2$. Therefore the steady-state length satisfies Equation 36 upon rescaling $M→M/2$:
+
+$$
+L_{1,s⁢s}=L_{2,s⁢s}=(\frac{D}{v}+\frac{\gamma⁢D⁢M}{2⁢d})⁢(-1+\sqrt{1+(\frac{4⁢d⁢T}{\gamma⁢M⁢D})⁢\frac{1-2⁢d/\gamma⁢k_{on}⁢M⁢T}{(1+2⁢d/\gamma⁢M⁢v)^{2}}}).
+$$
+
+The steady state lengths are only equal if $T_{1}=T_{2}$, which is not the case after asymmetrical depletion of tubulin pools by severing (see Figure 3bii).
+
+#### Tubulin shared, motors separate
+
+We next consider the case in which tubulin is shared but the motor pools are separate. The separate motor pools yield decoupled fluxes identical to Equations 44 and 45:
+
+$$
+J_{1}=\frac{k_{on}M_{1}}{1+k_{on}L_{1}/v+k_{on}L_{1}^{2}/2D}
+$$
+
+
+
+$$
+J_{2}=\frac{k_{on}M_{2}}{1+k_{on}L_{2}/v+k_{on}L_{2}^{2}/2D},
+$$
+
+which leads to the systems of equations
+
+$$
+\frac{dL_{1}}{dt}=\frac{\gammak_{on}M_{1}}{1+k_{on}L_{1}/v+k_{on}L_{1}^{2}/2D}(T−L_{1}−L_{2})−d
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\frac{\gammak_{on}M_{2}}{1+k_{on}L_{2}/v+k_{on}L_{2}^{2}/2D}(T−L_{1}−L_{2})−d.
+$$
+
+This system of equations is similar to the case of no sharing given by Equations 44-45, with the notable exception that the equations are coupled through the shared tubulin pool term $T-L_{1}-L_{2}$. The resulting steady-state equations are identical to those of Equation 35 for a single flagellum, with $T$ replaced by $T/2$ and $\gamma$ replaced by $2⁢\gamma$. Therefore the steady-state lengths satisfy Equation 36 upon rescaling $T→T/2$ and $\gamma→2⁢\gamma$. This model yields simultaneous length control, and the resulting steady-state lengths satisfy $L_{1,s⁢s}=L_{2,s⁢s}$ only if $M_{1}=M_{2}=M$. It follows that the steady-state lengths are unequal after severing because one of the two motor pools is depleted.
+
+The model equations have a similar form to existing models (Marshall et al., 2005; Hendel et al., 2018), in which the assembly rates involve a factor of $T-L_{1}-L_{2}$ and either a $1/L_{i}$ or $1/L_{i}^{2}$-dependence in the denominator, for $i=1, 2$ as discussed earlier in the context of a single growing flagellum. Although the equations are similar, the absence of length equalization in our model (Figure 3biii) contrasts with the length equalization achieved in Hendel et al. (2018) by an additional control mechanism that instantaneously replenishes the number of motors on the flagellum after severing. As noted in the Discussion, the importance of protein replenishment for the model appears to be inconsistent with experimental results (Rosenbaum et al., 1969), which show that length equalization occurs even in the absence of new protein synthesis.
+
+#### Tubulin shared, motors shared
+
+We finally consider the case in which both tubulin and motors are shared through a common pool. By the shared tubulin pool assumption $T_{f,1}=T_{f,2}=T-L_{1}-L_{2}$. Further, by the shared motor pool assumption the injection rates satisfy $J_{1}=J_{2}≡J$. Therefore
+
+$$
+\frac{dL_{1}}{dt}=\gammaJ(T−L_{1}−L_{2})−d
+$$
+
+
+
+$$
+\frac{dL_{2}}{dt}=\gammaJ(T−L_{1}−L_{2})−d,
+$$
+
+in which $J$ satisfies Equation 48. We are left with the steady-state equations
+
+$$
+0=\gammaJ(T−L_{1,ss}−L_{2,ss})−d
+$$
+
+
+
+$$
+0=\gammaJ(T−L_{1,ss}−L_{2,ss})−d.
+$$
+
+These equations are identical, so that there is only a single equation for the two unknowns $L_{1,s⁢s}$ and $L_{2,s⁢s}$ and the steady-state lengths are indeterminate provided that the disassembly rate is constant. Note that this conclusion holds regardless of the particular form of the flux.
+
+We next use linear stability analysis to demonstrate this breakdown of simultaneous length in greater detail. Let $L_{1,s⁢s}$ and $L_{2,s⁢s}$ denote any one of the infinitely-many possible solutions to Equations 60 and 61. Letting $Δ⁢L_{1}$ and $Δ⁢L_{2}$ be the deviations from steady-state such that $L_{1}=L_{1,s⁢s}+Δ⁢L_{1}$ and $L_{2}=L_{2,s⁢s}+Δ⁢L_{2}$, linearizing about any one of these solutions yields a matrix equation of the form
+
+$$
+\frac{d}{d⁢t}⁢(Δ⁢L_{1}Δ⁢L_{2})=-(aaaa)⁢(Δ⁢L_{1}Δ⁢L_{2}),
+$$
+
+for $a>0$. The 2 × 2 matrix above has an vanishing eigenvalue, as we now show. Diagonalizing in terms of the sum $Σ=Δ⁢L_{1}+Δ⁢L_{2}$ and difference $Γ=Δ⁢L_{1}-Δ⁢L_{2}$ gives
+
+$$
+\frac{d}{d⁢t}⁢(ΣΓ)=-(2⁢a000)⁢(ΣΓ).
+$$
 
 There is a vanishing eigenvalue associated to the difference of lengths, that is perturbations from steady-state in the difference of lengths do not decay on a finite timescale. This is consistent with previous results from stochastic simulations that the model with constant disassembly in which all biomolecules are shared does not yield simultaneous length control (Mohapatra et al., 2017). Noise must be included to observe this result; if fluctuations are not included, as in the deterministic ODE, any initial state with the correct sum in lengths appears stable. This is because the zero eigenvalue causes such states to be marginally stable.

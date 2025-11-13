@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.23670.001 The number of children born since the origin of Assisted Reproductive Technologies (ART) exceeds 5 million. The majority seem healthy, but a higher frequency of defects has been reported among ART-conceived infants, suggesting an epigenetic cost. We report the first whole-genome DNA methylation datasets from single pig blastocysts showing differences between in vivo and in vitro produced embryos. Blastocysts were produced in vitro either without (C-IVF) or in the presence of natural reproductive fluids (Natur-IVF). Natur-IVF embryos were of higher quality than C-IVF in terms of cell number and hatching ability. RNA-Seq and DNA methylation analyses showed that Natur-IVF embryos have expression and methylation patterns closer to in vivo blastocysts. Genes involved in reprogramming, imprinting and development were affected by culture, with fewer aberrations in Natur-IVF embryos. Methylation analysis detected methylated changes in C-IVF, but not in Natur-IVF, at genes whose methylation could be critical, such as IGF2R and NNAT. DOI: http://dx.doi.org/10.7554/eLife.23670.001
+The number of children born since the origin of Assisted Reproductive Technologies (ART) exceeds 5 million. The majority seem healthy, but a higher frequency of defects has been reported among ART-conceived infants, suggesting an epigenetic cost. We report the first whole-genome DNA methylation datasets from single pig blastocysts showing differences between in vivo and in vitro produced embryos. Blastocysts were produced in vitro either without (C-IVF) or in the presence of natural reproductive fluids (Natur-IVF). Natur-IVF embryos were of higher quality than C-IVF in terms of cell number and hatching ability. RNA-Seq and DNA methylation analyses showed that Natur-IVF embryos have expression and methylation patterns closer to in vivo blastocysts. Genes involved in reprogramming, imprinting and development were affected by culture, with fewer aberrations in Natur-IVF embryos. Methylation analysis detected methylated changes in C-IVF, but not in Natur-IVF, at genes whose methylation could be critical, such as IGF2R and NNAT.
 
 ## Introduction
 
@@ -41,35 +41,150 @@ We report here that modified swim-up protocols for the selection of spermatozoa 
 
 ## Results
 
-## Swim-up method improves the yield of pig IVF
+### Swim-up method improves the yield of pig IVF
 
-In order to select spermatozoa before IVF, a swim-up protocol was set up and compared with a conventional selection system by density gradient centrifugations. To do this, it was necessary to design a suitable washing and sperm selection medium imitating, as far as possible, in vivo conditions (NaturARTs PIG sperm washing medium and NaturARTs PIG sperm swim-up medium, EmbryoCloud, Murcia, Spain). The swim-up medium was supplemented either with bovine serum albumin (BSA) (Swim-up BSA group) or porcine oviductal fluid (POF, Swim-up fluid group) collected at the late follicular (LF) phase of the estrous cycle (NaturARTs POF-LF, EmbryoCloud, Murcia, Spain) (
+In order to select spermatozoa before IVF, a swim-up protocol was set up and compared with a conventional selection system by density gradient centrifugations. To do this, it was necessary to design a suitable washing and sperm selection medium imitating, as far as possible, in vivo conditions (NaturARTs PIG sperm washing medium and NaturARTs PIG sperm swim-up medium, EmbryoCloud, Murcia, Spain). The swim-up medium was supplemented either with bovine serum albumin (BSA) (Swim-up BSA group) or porcine oviductal fluid (POF, Swim-up fluid group) collected at the late follicular (LF) phase of the estrous cycle (NaturARTs POF-LF, EmbryoCloud, Murcia, Spain) (Figure 1). All the fluids used in this study were directly aspirated from the lumen of ovarian follicles, oviducts or uterus and processed according to the information described in the Materials and methods section, at http://embryocloud.com, and in previous references (Coy et al., 2008).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig1-v3.jpg)
 
-**Figure 1.:** Swim-up-BSA: NaturARTs PIG medium + BSA; Swim-up-Fluid: NaturARTs PIG medium + POF-LF*. Density gradient centrifugation: centrifugation through a discontinuous Percoll: gradient (45% and 90% v/v). *POF-LF: porcine oviductal fluid collected at the late follicular phase of the estrous cycle. Red box represents the portion of the reproductive tract whose conditions we tried to resemble in vitro. IVF results after using these three different sperm processing protocols are included in Table 1.DOI: http://dx.doi.org/10.7554/eLife.23670.003
+**Figure 1.:** Swim-up-BSA: NaturARTs PIG medium + BSA; Swim-up-Fluid: NaturARTs PIG medium + POF-LF*. Density gradient centrifugation: centrifugation through a discontinuous Percoll: gradient (45% and 90% v/v). *POF-LF: porcine oviductal fluid collected at the late follicular phase of the estrous cycle. Red box represents the portion of the reproductive tract whose conditions we tried to resemble in vitro. IVF results after using these three different sperm processing protocols are included in Table 1.
 
-Polyspermy after IVF is a major issue in the pig (Coy and Avilés, 2010). With these new protocols, we obtained significantly higher rates of monospermy than with conventional ones (49.6 ± 4.5 vs 17.4 ± 4.1, Table 1) and the final percentage of putative zygotes (evaluated at 24 hours post insemination, hpi) was significantly higher (35.2 ± 0.2 vs 14.6 ± 0.1, Table 1). Moreover, the addition of POF-LF to the Swim-up media instead of BSA increased the final yield of the system (35.2 ± 0.2 vs 29.7 ± 0.2, Table 1).10.7554/eLife.23670.004Table 1.IVF results after using three different sperm processing protocols (Density gradient, Swim-up-BSA and Swim-up-Fluid) as represented in Figure 1. a,b: Different letters in the same column indicate values statistically different (p<0.05). Penetration: proportion of oocytes penetrated by one or more spermatozoa. Monospermy: Monospermy percentage, calculated from penetrated oocytes, represents the proportion of penetrated oocytes with only one spermatozoon inside the ooplasm. Spermatozoa/Oocyte: Mean number of sperm per penetrated oocyte. Spermatozoa/ZP: Mean number of spermatozoa attached to ZP per oocyte. Yield: Percentage of putative zygotes per oocyte.DOI: http://dx.doi.org/10.7554/eLife.23670.004Sperm processing methodNPenetration (%)Monospermy (%)Spermatozoa/OocyteSpermatozoa/ZPZygote yield (%)Density gradient centrifugation10584.3 ± 3.6a 17.4 ± 4.1a 8.4 ± 0.7a 17.3 ± 2.3a 14.6 ± 0.1a Swim-up-BSA18069.6 ± 3.5b42.7 ± 4.6ab2.1 ± 0.1b7.2 ± 0.5b29.7 ± 0.2bSwim-up-Fluid18371.1 ± 3.4b49.6 ± 4.5b2.7 ± 0.1b8.6 ± 0.5b35.2 ± 0.2c
+Polyspermy after IVF is a major issue in the pig (Coy and Avilés, 2010). With these new protocols, we obtained significantly higher rates of monospermy than with conventional ones (49.6 ± 4.5 vs 17.4 ± 4.1, Table 1) and the final percentage of putative zygotes (evaluated at 24 hours post insemination, hpi) was significantly higher (35.2 ± 0.2 vs 14.6 ± 0.1, Table 1). Moreover, the addition of POF-LF to the Swim-up media instead of BSA increased the final yield of the system (35.2 ± 0.2 vs 29.7 ± 0.2, Table 1).
 
-## Reproductive fluids added to the culture media increase blastocyst quality
+**Table 1.**
+ IVF results after using three different sperm processing protocols (Density gradient, Swim-up-BSA and Swim-up-Fluid) as represented in Figure 1. a,b: Different letters in the same column indicate values statistically different (p<0.05). Penetration: proportion of oocytes penetrated by one or more spermatozoa. Monospermy: Monospermy percentage, calculated from penetrated oocytes, represents the proportion of penetrated oocytes with only one spermatozoon inside the ooplasm. Spermatozoa/Oocyte: Mean number of sperm per penetrated oocyte. Spermatozoa/ZP: Mean number of spermatozoa attached to ZP per oocyte. Yield: Percentage of putative zygotes per oocyte.
 
-In a second experiment, and using the Swim-up protocol for sperm selection, a new IVF/Embryo culture (EC) system (Natur-IVF) was developed, which included preincubation of oocytes in oviductal fluid (NaturARTs PIG OF-LF) and the presence of reproductive fluids as additives in the IVF and EC media (0–8 hr: NaturARTs POF-LF; 8–48 hr: oviductal fluid from the early luteal–EL- phase of the estrous cycle, NaturARTs POF-EL; 48–180 hr: uterine fluid -UF-from this same phase, NaturARTs PUF-EL) (
+
+<table>
+  <thead>
+    <tr>
+      <th>Sperm processing method</th>
+      <th>N</th>
+      <th>Penetration (%)</th>
+      <th>Monospermy (%)</th>
+      <th>Spermatozoa/Oocyte</th>
+      <th>Spermatozoa/ZP</th>
+      <th>Zygote yield (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Density gradient centrifugation</td>
+      <td>105</td>
+      <td>84.3 ± 3.6a</td>
+      <td>17.4 ± 4.1a</td>
+      <td>8.4 ± 0.7a</td>
+      <td>17.3 ± 2.3a</td>
+      <td>14.6 ± 0.1a</td>
+    </tr>
+    <tr>
+      <td>Swim-up-BSA</td>
+      <td>180</td>
+      <td>69.6 ± 3.5b</td>
+      <td>42.7 ± 4.6ab</td>
+      <td>2.1 ± 0.1b</td>
+      <td>7.2 ± 0.5b</td>
+      <td>29.7 ± 0.2b</td>
+    </tr>
+    <tr>
+      <td>Swim-up-Fluid</td>
+      <td>183</td>
+      <td>71.1 ± 3.4b</td>
+      <td>49.6 ± 4.5b</td>
+      <td>2.7 ± 0.1b</td>
+      <td>8.6 ± 0.5b</td>
+      <td>35.2 ± 0.2c</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reproductive fluids added to the culture media increase blastocyst quality
+
+In a second experiment, and using the Swim-up protocol for sperm selection, a new IVF/Embryo culture (EC) system (Natur-IVF) was developed, which included preincubation of oocytes in oviductal fluid (NaturARTs PIG OF-LF) and the presence of reproductive fluids as additives in the IVF and EC media (0–8 hr: NaturARTs POF-LF; 8–48 hr: oviductal fluid from the early luteal–EL- phase of the estrous cycle, NaturARTs POF-EL; 48–180 hr: uterine fluid -UF-from this same phase, NaturARTs PUF-EL) (Figure 2). Corresponding controls with BSA instead of OF/UF for each step (referred as C-IVF group) were analyzed (Figure 2). Evaluation at 24 hpi revealed higher penetration rate (66.6 ± 0.1 vs 43.7 ± 0.1, p<0.05) and similar monospermy rate (78.6 ± 0.1 vs 72.7 ± 0.1, p<0.05) for the Natur-IVF and C-IVF groups, respectively. Regarding embryo development, more than 40% of cleaved embryos reached the blastocyst stage in both groups (Table 2A). However, the Natur-IVF blastocysts showed a significant increase in their mean number of cells (81.8 ± 7.2, Table 2A) compared to the C-IVF ones (49.9 ± 3.7), and this number was similar to that observed in the in vivo samples (In-vivo group, 87.0 ± 7.2). Moreover, at day 7.5, embryos reaching the hatching or hatched stages were observed only in the Natur-IVF group (Table 2B). Taken together, these data indicate a higher quality, in terms of cell number and ability to hatch, in the ART-derived blastocysts when reproductive fluids were added to the culture medium.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig2-v3.jpg)
 
-**Figure 2.:** Swim-up-BSA or Swim-up-Fluid protocols were used for IVF. Previously, oocytes were preincubated in OF-LF for 30 min. Then, each group of putative zygotes were incubated in different media (0–8 hr, 8–48 hr and 48 hr-7days) as indicated in the diagram. O*: ovary with hemorrhagic corpus luteum; O**: early corpus luteum; OF-LF: oviductal fluid-late follicular phase of the estrous cycle; OF-EL: oviductal fluid-early luteal phase of the estrous cycle; UF-EL: uterine fluid-early luteal phase of the estrous cycle. Swim-up-BSA: NaturARTs PIG medium + BSA; Swim-up-Fluid: NaturARTs PIG medium + POF-LF. TALP: culture medium used for IVF. NCSU23: culture medium used for embryo development in vitro supplemented with sodium lactate, pyruvate and non-essential amino acids (NCSU23a) or with glucose and essential and non-essential amino acids (NCSU23b).DOI: http://dx.doi.org/10.7554/eLife.23670.005
+**Figure 2.:** Swim-up-BSA or Swim-up-Fluid protocols were used for IVF. Previously, oocytes were preincubated in OF-LF for 30 min. Then, each group of putative zygotes were incubated in different media (0–8 hr, 8–48 hr and 48 hr-7days) as indicated in the diagram. O*: ovary with hemorrhagic corpus luteum; O**: early corpus luteum; OF-LF: oviductal fluid-late follicular phase of the estrous cycle; OF-EL: oviductal fluid-early luteal phase of the estrous cycle; UF-EL: uterine fluid-early luteal phase of the estrous cycle. Swim-up-BSA: NaturARTs PIG medium + BSA; Swim-up-Fluid: NaturARTs PIG medium + POF-LF. TALP: culture medium used for IVF. NCSU23: culture medium used for embryo development in vitro supplemented with sodium lactate, pyruvate and non-essential amino acids (NCSU23a) or with glucose and essential and non-essential amino acids (NCSU23b).
 
-## The blastocyst transcriptome can be modulated in vitro by reproductive fluids
+**Table 2.**
+ (A) Comparative results of IVF yield by using BSA (C- IVF) or reproductive fluids (Natur-IVF) as additives in the culture medium for 7.5 days. (B) Results of blastocyst development (for each type) using BSA (C- IVF) or reproductive fluids (Natur-IVF) as additives in the culture medium for 7.5 days. Columns from ‘Early blastocyst’ to ‘Hatched blastocyst’ indicate the percentage of each type of blastocyst from Total blastocyst (Table 2A), classified according to Bo and Mapletoft25. a,b: Different letters in the same column indicate values statistically different (p<0.05). Cleavage: Cleavage percentage from N. Total Blastocysts: Percentage of blastocysts calculated from cleaved embryos. Yield: Percentage of putative blastocysts from N. Cell/blastocyst: mean number of cells per blastocyst.
 
-In vitro culture systems significantly alter embryonic gene expression as previously observed in pooled pig blastocysts (
+
+<table>
+  <thead>
+    <tr>
+      <th>A)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2"></th>
+      <th colspan="2"></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th>N</th>
+      <th>Penetration (%)</th>
+      <th>Monospermy (%)</th>
+      <th>Cleavage (%)</th>
+      <th>Total blastocysts(%)</th>
+      <th>Blastocyst Yield (%)</th>
+      <th>Cell/ blastocyst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>In vivo</td>
+      <td>41</td>
+      <td></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td>87.0 ± 7.2b</td>
+    </tr>
+    <tr>
+      <td>C- IVF</td>
+      <td>903</td>
+      <td>395(43.7 ± 0.1a)</td>
+      <td>656(72.7 ± 0.1)</td>
+      <td>429(47.5 ± 1.6a)</td>
+      <td>178(41.4 ± 2.4)</td>
+      <td>19.6 ± 1.3</td>
+      <td>49.9 ± 3.7a</td>
+    </tr>
+    <tr>
+      <td>Natur-IVF</td>
+      <td>961</td>
+      <td>640(66.6 ± 0.1b)</td>
+      <td>755(78.6 ± 0.1)</td>
+      <td>405(42.1 ± 1.6b)</td>
+      <td>180(44.5 ± 2.5)</td>
+      <td>18.7 ± 1.2</td>
+      <td>81.8 ± 7.2b</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### The blastocyst transcriptome can be modulated in vitro by reproductive fluids
+
+In vitro culture systems significantly alter embryonic gene expression as previously observed in pooled pig blastocysts (Bauer et al., 2010). Here, the transcriptomes from three individual day 7.5 blastocysts produced by C-IVF or Natur-IVF were compared with their in vivo counterparts (Figure 3A–B). RNA libraries showed acceptable quality in all nine blastocysts. Mean number of raw reads was 14.24 ± 2.23 (±SD) millions, and transcripts from 13,309 to 14,512 different genes (from a total of 20,789 annotated pig mRNAs) were detected in each individual. Principal Component Analysis (PCA) showed that, despite expected individual variability, the three embryos from each group clustered together (Figure 3B), with the C-IVF embryos showing higher variability, which could represent high embryo plasticity in response to suboptimal culture conditions. Therefore, after combining the triplicates, data from both in vitro groups showed high correlation (Pearson correlation coefficient [r] = 0.964), but Natur-IVF was closer to the In vivo group ([r] = 0.95) than C-IVF ([r] = 0.938). RNA-Seq data analysis (DESeq2 p<0.05 after multiple testing correction) identified 787 differentially expressed genes (DEG) between the C-IVF and In-vivo, and 621 DEGs between Natur-IVF and In vivo (Figure 3—source data 1, including also all the expression values for all the genes). Of the genes that were significantly different (adjusted p-value < 0.05, fold change > 1.5) in the pair-wise comparisons, there was a higher number of up-regulated (534/787–68%- in C-IVF embryos and 431/621–69%- in Natur-IVF) than down-regulated (253 and 190, respectively) (Figure 3C, Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig3-v3.jpg)
 
-**Figure 3.:** (A) Heatmap of global gene expression (with log2 fold change >1.5 and adjusted B-H p-value < 0.05). Numbers denote ID of a specific embryo. (B) Principal Component Analysis (PCA) of the RNA-Seq samples: In vivo embryos (IV, red), Natur-IVF (N, green) and C-IVF (C, blue). Numbers denote ID of specific embryos. (C) Venn diagram with DEGs (Figure 3—source data 1). *, #, § denotes DEGs exclusive for C-IVF, Natur-IVF and In vivo, respectively (Figure 3—source data 2). (D) Heat map of gene expression of key genes associated with embryo development/differentiation, epigenetic reprogramming, cell cycle/cell growth, gene expression and imprinting.DOI: http://dx.doi.org/10.7554/eLife.23670.00710.7554/eLife.23670.008Figure 3—source data 1.This data relates to Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.23670.00810.7554/eLife.23670.009Figure 3—source data 2.This data relates to Figure 3C.DOI: http://dx.doi.org/10.7554/eLife.23670.009
+**Figure 3.:** (A) Heatmap of global gene expression (with log2 fold change >1.5 and adjusted B-H p-value < 0.05). Numbers denote ID of a specific embryo. (B) Principal Component Analysis (PCA) of the RNA-Seq samples: In vivo embryos (IV, red), Natur-IVF (N, green) and C-IVF (C, blue). Numbers denote ID of specific embryos. (C) Venn diagram with DEGs (Figure 3—source data 1). *, #, § denotes DEGs exclusive for C-IVF, Natur-IVF and In vivo, respectively (Figure 3—source data 2). (D) Heat map of gene expression of key genes associated with embryo development/differentiation, epigenetic reprogramming, cell cycle/cell growth, gene expression and imprinting.
 
 Top Canonical Pathways, Physiological Systems and Molecular and Cellular Functions related to DEGs were identified (summarized in Supplementary file 1) using the Ingenuity Pathway Analysis (IPA) software. Globally, down-regulated genes in C-IVF and in Natur-IVF were linked to similar Top-cellular functions (Supplementary file 1). Equally, top Canonical Pathways affected by up-regulated genes were similar for both groups. In contrast, two pathways were identified in down-regulated DEGs in C-IVF embryos, but not in Natur-IVF DEGs (Supplementary file 1). Increased pathways in Natur-IVF and C-IVF included cholesterol, mevalonate, serine and glycine biosynthesis and p53 signaling. Decreased pathways (protein ubiquitination and 14-3-3 mediated signaling) were detected only in C-IVF. Similarly, Physiological Systems and Functions over-represented by up-regulated or down-regulated DEGs were different between C-IVF or Natur-IVF. These results show that, in spite of similarity, there were differences that could influence specific pathways and affect key molecular and cellular functions in the embryos from each group.
 
-## Natur-IVF blastocysts show fewer aberrantly expressed genes than C-IVF blastocysts
+### Natur-IVF blastocysts show fewer aberrantly expressed genes than C-IVF blastocysts
 
 Natur-IVF and C-IVF blastocysts shared 334 genes that were aberrantly expressed in both groups vs In vivo (Exclusive DEGs, Figure 3C- Figure 3—source data 2). However, there were 440 genes (from the 784 DEGs in C-IVF) that showed aberrant expression only in C-IVF vs In vivo (DEGs only in C-IVF, Figure 3C), while 40% fewer genes (n = 281 from the 620 DEGs in Natur-IVF) showed aberrant expression only in the Natur-IVF group vs In vivo (DEGs only in Natur-IVF, Figure 3C). Importantly, several genes related to epigenetic reprogramming (down: DNMT3B, DNMT1; up: HDAC5, KDM5A), embryo development (down: CTGF, ING2, KIT, EZH2; up: BMP4, TLN1, ADAR), cell growth (down: CDCA5, SMC1A; up: RB1, SMARCA2) or imprinting (up: IGF2BP2, GNAS; down: DIRAS3) were amongst the C-IVF-specific DEGs (Figure 3D).
 
@@ -77,43 +192,225 @@ Direct comparison between Natur-IVF vs In vivo and C-IVF vs In vivo DEGs rev
 
 These data suggest that in vitro culture significantly alters embryonic gene expression to a lesser extent than previously proposed (Bauer et al., 2010), and a better modulation of the blastocyst transcriptome was achieved by mimicking physiological conditions of fertilization and early embryo development by the addition of reproductive fluids (Natur-IVF).
 
-## Genome-wide DNA methylation of the pig blastocyst is affected by the in vitro culture system
+### Genome-wide DNA methylation of the pig blastocyst is affected by the in vitro culture system
 
-In this study, for the first time, whole-genome DNA methylation profiles on individual porcine blastocysts were generated by a low-cell adaptation of the post-bisulphite adaptor-tagging (PBAT) method (
+In this study, for the first time, whole-genome DNA methylation profiles on individual porcine blastocysts were generated by a low-cell adaptation of the post-bisulphite adaptor-tagging (PBAT) method (Miura et al., 2012; Peat et al., 2014). Three blastocysts from each group were analyzed. The number of unique alignments in the samples ranged from 13,150,508 to 42,208,651 and the coverage of CpGs (≥1 read) from 52% to 59.2%. The global methylation percentages of CpGs were 15.02 ± 3.3, 11.09 ± 2.6 and 12.33 ± 3.6 for the C-IVF, Natur-IVF and In-vivo groups, respectively. The distribution of methylation levels in windows of 150 CpGs across the genome and a general view of the methylation profiles of the nine individual blastocysts are shown in Figure 4A–B. The generally low level of methylation suggests that the genome has experienced substantial loss of methylation from the gametes, analogous to that observed in other mammals (Guo et al., 2014; Kobayashi et al., 2012). The landscape of methylated cytosines suggests some structure across the genome, with regions with more methylation consistent between the individual blastocysts (Figure 4B). What contributes to this structure, for example, the regions of relatively higher methylation, is not immediately obvious, as methylation was similar in different genomic contexts with no marked enrichment in repetitive elements, for example (Table 3). Regarding the different classes of blastocysts, methylation over specific genomic features followed the same tendency as the global differences, with higher values for C-IVF (Table 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig4-v3.jpg)
 
-**Figure 4.:** (A) Distribution of methylation percentages across tiles of 150 CpGs on the pig genome for three groups of blastocysts (In-vivo, C-IVF and Natur-IVF). (B) Random browser shot as example of methylation landscape of the nine individual blastocysts analysed (Chr8:37027152–118458156). The two first rows in the picture represent the genes and CpG islands annotated (Ensembl, RRID:SCR_006773 Sus scrofa 10.2) in the pig genome, respectively. Color scale represents methylation levels from red (highest methylation, up to 25%) to blue (lowest methylation-0%).DOI: http://dx.doi.org/10.7554/eLife.23670.010
+**Figure 4.:** (A) Distribution of methylation percentages across tiles of 150 CpGs on the pig genome for three groups of blastocysts (In-vivo, C-IVF and Natur-IVF). (B) Random browser shot as example of methylation landscape of the nine individual blastocysts analysed (Chr8:37027152–118458156). The two first rows in the picture represent the genes and CpG islands annotated (Ensembl, RRID:SCR_006773 Sus scrofa 10.2) in the pig genome, respectively. Color scale represents methylation levels from red (highest methylation, up to 25%) to blue (lowest methylation-0%).
 
-PCA revealed a good level of clustering for In-vivo and Natur-IVF embryos but not for C-IVF embryos (
+**Table 3.**
+ Percentages of methylation over genome features in porcine blastocysts produced in vitro (C-IVF and Natur-IVF) or collected in vivo (In vivo).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">% Methylation</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>In vivo</th>
+      <th></th>
+      <th>C-IVF</th>
+      <th>Natur-IVF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CpG islands</td>
+      <td>9.69</td>
+      <td></td>
+      <td>11.80</td>
+      <td>10.11</td>
+    </tr>
+    <tr>
+      <td>Promoters</td>
+      <td>9.26</td>
+      <td></td>
+      <td>11.61</td>
+      <td>9.11</td>
+    </tr>
+    <tr>
+      <td>TU</td>
+      <td>12.84</td>
+      <td></td>
+      <td>15.47</td>
+      <td>12.36</td>
+    </tr>
+    <tr>
+      <td>Intergenic</td>
+      <td>11.75</td>
+      <td></td>
+      <td>14.48</td>
+      <td>11.37</td>
+    </tr>
+    <tr>
+      <td>LINE1</td>
+      <td>12.63</td>
+      <td></td>
+      <td>15.43</td>
+      <td>12.02</td>
+    </tr>
+    <tr>
+      <td>LTR</td>
+      <td>12.77</td>
+      <td></td>
+      <td>15.53</td>
+      <td>12.06</td>
+    </tr>
+    <tr>
+      <td>SINE</td>
+      <td>12.45</td>
+      <td></td>
+      <td>15.30</td>
+      <td>11.94</td>
+    </tr>
+    <tr>
+      <td>GLOBAL</td>
+      <td>12.33</td>
+      <td></td>
+      <td>15.02</td>
+      <td>11.09</td>
+    </tr>
+  </tbody>
+</table>
+
+PCA revealed a good level of clustering for In-vivo and Natur-IVF embryos but not for C-IVF embryos (Figure 5A). In particular, embryos C34 and C36 were far from the other seven embryos analyzed.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig5-v3.jpg)
 
-**Figure 5.:** (A) Principal Component Analysis (PCA) of the DNA methylation samples: In vivo embryos (red), Natur-IVF (green) and C-IVF (blue). Numbers denote ID of specific embryo. (B) Venn diagram of DMRs by pair-wise comparison (adjusted-p <0.05). Number of DMRs with higher (↑) or lower (↓) methylation in each pair-wise comparison are indicated (Figure 5—source data 1). (C) Heatmap of the 417 DMRs between the C-IVF group and the other two groups (In vivo and Natur-IVF). (D) Heatmap of the 324 DMRs between Natur-IVF group and the other two groups (In vivo and C-IVF). (E) Heatmap of the 448 DMRs between the In vivo group and the other two groups (Natur-IVF and C-IVF). For C, D and E (Figure 5—source data 2): Relative methylation measure as the difference in percent of methylation from the median methylation across all samples.DOI: http://dx.doi.org/10.7554/eLife.23670.01210.7554/eLife.23670.013Figure 5—source data 1.This data relates to Figure 5B.DOI: http://dx.doi.org/10.7554/eLife.23670.01310.7554/eLife.23670.014Figure 5—source data 2.Figure 5B,C,D and E.DOI: http://dx.doi.org/10.7554/eLife.23670.014
+**Figure 5.:** (A) Principal Component Analysis (PCA) of the DNA methylation samples: In vivo embryos (red), Natur-IVF (green) and C-IVF (blue). Numbers denote ID of specific embryo. (B) Venn diagram of DMRs by pair-wise comparison (adjusted-p <0.05). Number of DMRs with higher (↑) or lower (↓) methylation in each pair-wise comparison are indicated (Figure 5—source data 1). (C) Heatmap of the 417 DMRs between the C-IVF group and the other two groups (In vivo and Natur-IVF). (D) Heatmap of the 324 DMRs between Natur-IVF group and the other two groups (In vivo and C-IVF). (E) Heatmap of the 448 DMRs between the In vivo group and the other two groups (Natur-IVF and C-IVF). For C, D and E (Figure 5—source data 2): Relative methylation measure as the difference in percent of methylation from the median methylation across all samples.
 
 The low level of global methylation suggested that few differentially methylated regions (DMRs) could be found. For this reason, and to obtain an unbiased measure of differences in genome methylation, a fixed size of 150 CpGs was used for analysis, as this was found to give a modal tile size of around 3 kb with about 150 reads per tile for most individuals. To make the data comparable to enable the detection of DMRs, separately from the global changes, the tiles informative in all samples (258,885) were extracted and quantile normalized. To identify DMRs, the comparison was filtered to require a consistent ≥5% absolute methylation change between all replicates of the first and second condition, followed by a T-test (B-H adjusted p<0.05). Differences between the groups were observed with fewer than 4000 DMRs for each pair-wise comparison (Figure 5—source data 1). Globally, fewer DMRs showed higher methylation in In vivo vs Natur-IVF (n = 1,660) than in In vivo vs C-IVF (n = 2244) (Figure 5B).
 
 To better characterize the changes in methylation exclusively affecting one of the groups (p<0.05 for both comparisons), the corresponding subsets of DMRs (‘exclusive’ DMRs for each group) were obtained by combining the previous lists (Figure 5B,C,D and E; Figure 5—source data 2), and the enrichment in specific features in those DMRs was evaluated (Supplementary file 3). For the three subsets of DMRs, there was a lower proportion of promoters compared to the global average (p<0.001). A lower proportion of LINE1s (p<0.05) was also found for the C-IVF group, while the Natur-IVF blastocyst group showed a higher proportion of DMRs in transcription units (defined over the annotated genes from 500 bp downstream of the annotated TSS, p<0.05). Both C-IVF and Natur-IVF DMRs were less enriched in intergenic regions (p<0.001) and at LTRs (p<0.05) than In vivo blastocysts. These departures from the methylation state might reflect global differences in the DNA methylation and/or demethylation capacity of the different groups at a developmental time when DNA methylation is rather dynamic.
 
-Exclusive DMRs for each group were linked to Canonical Pathways (p<0.01) and Diseases and Bio Functions (adjusted p-value < 0.05;
+Exclusive DMRs for each group were linked to Canonical Pathways (p<0.01) and Diseases and Bio Functions (adjusted p-value < 0.05; Figure 6) by IPA software. Representative genes for specific DMRs in each group are listed in Supplementary file 4. A DMR overlapping IGF2R, a gene directly related with the LOS in ruminants and mouse, was found in the subset of exclusive C-IVF DMRs (Figure 5—source data 2). The methylation percentages for this region (Chr1: 9,199,522–9,201,143) were 12.45%, 28.3% and 35.5% for C-IVF, Natur-IVF and In vivo, respectively (Figure 7A). In addition, a CpG island (oe = 0.89, Chr1:9,200,658–9,202,276) that overlapped the DMR showed significant differences in methylation (p<0.05): 14.1%, 27.8% and 29.4% for C-IVF, Natur-IVF and In vivo groups, respectively (Figure 7B), although we should be cautious about their significance since the CpG island distribution in the pig genome is very different to the human or mouse genome.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig6-v3.jpg)
 
-**Figure 6.:** DOI: http://dx.doi.org/10.7554/eLife.23670.015
-
 ![Figure 7.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig7-v3.jpg)
 
-**Figure 7.:** (A) Methylation quantitation at IGF2R from the unbiased analysis of genome methylation in SeqMonk with a fixed size of 150 CpG windows. Mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads. Asterisks indicate that methylation at the indicated region showed significantly different values (p<0.05) in Natur-IVF (*) and In vivo (**) vs C-IVF. TSS: transcription starting site. (B) Detailed view and methylation quantitation of the CpGi at the identified IGF2R DMR. Red rectangles represent, as indicated, CpG islands of the genes. Black boxes indicate the position of the targeted features, whose mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads.DOI: http://dx.doi.org/10.7554/eLife.23670.016
+**Figure 7.:** (A) Methylation quantitation at IGF2R from the unbiased analysis of genome methylation in SeqMonk with a fixed size of 150 CpG windows. Mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads. Asterisks indicate that methylation at the indicated region showed significantly different values (p<0.05) in Natur-IVF (*) and In vivo (**) vs C-IVF. TSS: transcription starting site. (B) Detailed view and methylation quantitation of the CpGi at the identified IGF2R DMR. Red rectangles represent, as indicated, CpG islands of the genes. Black boxes indicate the position of the targeted features, whose mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads.
 
 Top Diseases and Bio Functions linked by IPA to DMRs exclusive for each group with low or high methylation are represented in Figure 6. Top Molecular and Cellular Functions and representative genes related to DMRs with higher or lower methylation in each group (C-IVF, Natur-IVF and In vivo) are listed in Supplementary file 4.
 
-## Three imprinted genes were differentially methylated in C-IVF, but not in Natur-IVF blastocysts, compared to in vivo blastocysts
+### Three imprinted genes were differentially methylated in C-IVF, but not in Natur-IVF blastocysts, compared to in vivo blastocysts
 
-Following the finding of a DMR at
+Following the finding of a DMR at IGF2R, targeted analysis of candidate imprinted genes was done, as the differentially methylated regions of imprinted gene (igDMRs) are expected to maintain constant methylation in preimplantation embryos to ensure faithful imprinted expression of the associated genes throughout development. Therefore, they represent sites of methylation in preimplantation of clear biological significance. To identify putative igDMRs in the pig genome, all mouse igDMRs were lifted-over onto the pig genome. Where this was not possible, a gene-by-gene approach was taken to find the best possible fit for a candidate igDMR based on the known organization of the corresponding mouse imprinted gene. All the genomic regions were then inspected manually to confirm that the correct regions had been found (Table 4A). It is not possible to conclude that all regions were actually igDMRs (as this would require methylation information from oocyte and sperm) and, indeed, the methylation values indicated that for some of the genes there was no conserved DMR (i.e. methylation in blastocysts was far below the theoretical 50%) and the associated locus was unlikely to be imprinted. This would seem to be the case, for example, for the genes IMPACT, ZFP787 and ZFP777. For some, there was difficulty in finding possible homologous igDMRs, probably because of gaps in the porcine genome assembly (such as SNRPN, KCNQ1 and GRB10), and there were a number of others that were excluded because the homologous pig region had no suggestion of a CpG island in the region equivalent to the igDMR in mouse (e.g. U2AF1-RS1, MCTS2/H13). Comparison of methylation in the three groups of blastocysts for the resulting 14 candidate igDMRs (with sufficient read coverage) revealed differences for ZAC1 and PEG10, which were more methylated (p<0.05) in the C-IVF than in In vivo group, and PEG10 and NNAT, which were more methylated (p<0.05) in the C-IVF than in Natur-IVF and In vivo groups (Table 4B). No statistical differences were found between Natur-IVF and In vivo groups. Of these three igDMRs, the one at NNAT coincides with the promoter CpG island (Kobayashi et al., 2012) and, in addition, one 150 CpG tile overlapping NNAT had methylation higher than 50% in C-IVF in the unbiased analysis (Figure 8).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/23670/elife-23670-fig8-v3.jpg)
 
-**Figure 8.:** NNAT from the unbiased analysis of genome methylation in SeqMonk with a fixed size of 150 CpG windows.Black boxes indicate the position of the selected 150 CpG windows, whose mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads. Asterisks indicate that methylation at the indicated region (black box) showed significantly different values (p<0.05) in Natur-IVF (*) and In-vivo (**) vs C-IVF.DOI: http://dx.doi.org/10.7554/eLife.23670.017
+**Figure 8.:** Black boxes indicate the position of the selected 150 CpG windows, whose mean percentages of methylation are shown by the bars for each group. Blue (unmethylated) and red (methylated) dots represent methylation reads. Asterisks indicate that methylation at the indicated region (black box) showed significantly different values (p<0.05) in Natur-IVF (*) and In-vivo (**) vs C-IVF.
+
+**Table 4.**
+ Targeted analysis of candidate imprinted genes. (A) Predicted imprinted regions in the pig genome by lifted-over mouse igDMRs the pig genome and manually inspected. (B) Pair-wise comparison of methylation by Analysis Chi-Square in the three groups of blastocysts for the resulting 14 candidate igDMRs. *C-IVF vs In vivo: p<0.05 with 20 minimum observations and 10 minimum percentage of difference % methylation. ** C-IVF vsNatur-IVF: Analysis Chi- Square p<0.05 with 20 minimum observations and 10 minimum percentage of difference % methylation. Natur-IVF vs In vivo: no statistical differences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>A)</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Tile</th>
+      <th>Chromosome</th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IGF2R/AIR</td>
+      <td>1</td>
+      <td>9,244,239</td>
+      <td>9,248,054</td>
+    </tr>
+    <tr>
+      <td>ZAC1</td>
+      <td>1</td>
+      <td>23,638,887</td>
+      <td>23,643,228</td>
+    </tr>
+    <tr>
+      <td>SOCS5</td>
+      <td>3</td>
+      <td>99,885,360</td>
+      <td>99,887,132</td>
+    </tr>
+    <tr>
+      <td>ZFP787</td>
+      <td>6</td>
+      <td>55,574,080</td>
+      <td>55,575,926</td>
+    </tr>
+    <tr>
+      <td>ZIM2</td>
+      <td>6</td>
+      <td>56,641,190</td>
+      <td>56,644,823</td>
+    </tr>
+    <tr>
+      <td>IMPACT</td>
+      <td>6</td>
+      <td>102,001,929</td>
+      <td>102,002,533</td>
+    </tr>
+    <tr>
+      <td>NAT1l5</td>
+      <td>8</td>
+      <td>139,773,830</td>
+      <td>139,775,461</td>
+    </tr>
+    <tr>
+      <td>PEG10</td>
+      <td>9</td>
+      <td>81,642,957</td>
+      <td>81,644,146</td>
+    </tr>
+    <tr>
+      <td>INPP5FV2</td>
+      <td>14</td>
+      <td>141,186,219</td>
+      <td>141,188,231</td>
+    </tr>
+    <tr>
+      <td>NNAT</td>
+      <td>17</td>
+      <td>46,041,843</td>
+      <td>46,045,629</td>
+    </tr>
+    <tr>
+      <td>NESPAS</td>
+      <td>17</td>
+      <td>66,313,673</td>
+      <td>66,320,932</td>
+    </tr>
+    <tr>
+      <td>GNAS-exon1a</td>
+      <td>17</td>
+      <td>66,348,009</td>
+      <td>66,352,062</td>
+    </tr>
+    <tr>
+      <td>MEST</td>
+      <td>18</td>
+      <td>19,340,335</td>
+      <td>19,345,549</td>
+    </tr>
+    <tr>
+      <td>ZFP777</td>
+      <td>18</td>
+      <td>60,941,421</td>
+      <td>60,943,096</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -137,54 +434,54 @@ In conclusion, we report here the first time genome-wide DNA methylation and tra
 
 ## Materials and methods
 
-## Culture media
+### Culture media
 
 Unless otherwise indicated, all chemicals and reagents were purchased from Sigma-Aldrich Quimica S.A. (Madrid, Spain).
 
-## Collection and processing of follicular, oviductal and uterine fluids
+### Collection and processing of follicular, oviductal and uterine fluids
 
 Fluids were obtained from animals raised at a commercial farm (CEFU, S.A., Murcia, Spain) and slaughtered in an abattoir belonging to a food industry (El Pozo, S.A) near the University of Murcia. For the collection of follicular fluid, ovaries from 6-month-old Large White animals weighing 100–110 kg were transported to the laboratory in saline containing 100 μg/ml kanamycin sulfate, washed once in 0.04% cetrimide solution (alkyltrimethylammoniumbromide) and twice in saline within 30 min of slaughter. The content of follicles between 3 and 6 mm diameter, from at least 50 ovaries (25 females), was quickly aspirated, centrifuged at 1800 g for 30 min at 4°C and the supernatant filtered through 0.22 µm diameter filter (Naito et al., 1988). One ml follicular fluid (FF) aliquots were stored at −80°C until their use as additives for the IVM medium.
 
 For the collection of oviductal (OF) and uterine (UF) fluids, genital tracts from cyclic Large White sows (2–4 years old) were obtained at the abattoir and transported to the laboratory on ice within 30 min of slaughter. The cyclic stage of animals was assessed once in the laboratory, on the basis of ovarian morphology on both ovaries from the same female. Oviducts and uteri were classified as early follicular, late follicular, early luteal or late luteal phase (Carrasco et al., 2008). Both oviducts and uteri coming from the same genital tract were classified as in the same stage of the cycle. Once classified, oviducts and uteri were separated and quickly washed once with 0.4% v/v cetrimide solution and twice in saline. Oviducts and uteri were dissected on Petri dishes or trays, respectively, sitting on ice. Once dissected, OF were collected by aspiration with an automatic pipette by introducing a 200 µl pipette tip into the ampulla and manually making an increasing pressure gradient from the isthmus to the ampulla. The UF was collected by making a manual increasing pressure gradient from the proximal end to the distal end (utero-tubal junction) of the uterine horn and letting the fluid drop into a sterile 50ml Falcon tube. Once recovered, samples (OF and UF) were centrifuged twice at 7000 g for 10 min at 4°C to remove cellular debris. Then the supernatant was immediately stored at −80°C until use. Oviducts from animals at the late follicular phase (POF-LF) and at the early luteal phase (POF-EL) gave a mean volume of around 50 µl and 40 µl, respectively per oviduct. At the early luteal phase, approximately 10 ml of UF per uterine horn were collected each time. Aliquots of 50 µl OF and 50 ml UF of pooled samples from at least 20 animals for OF and five animals for UF were used. Only samples that passed quality controls (pH 7.0–7.6, osmolality 280–320 mOsm/kg, endotoxin <0.10 EU/mL, a minimum 90% of Metaphase II oocytes after IVM with FF and ZP hardening for oocyte preincubation in POF-LF >1 hr) were used for experiments.
 
-## Oocyte collection and in vitro maturation
+### Oocyte collection and in vitro maturation
 
 Ovaries from 6 months old animals weighing 100–110 kg were transported to the laboratory in saline containing 100 µg/ml kanamycin sulfate at 38°C, washed once in 0.04% cetrimide solution and twice in saline within 30 min of slaughter. Cumulus–oocyte complexes (COCs) were collected from antral follicles (3–6 mm diameter), washed twice with Dulbecco’s PBS (DPBS) supplemented with 1 mg/ml polyvinyl alcohol (PVA) and 0.005 mg/ml red phenol, and twice more in maturation medium previously equilibrated for a minimum of 3 hr at 38.5°C under 5% CO2 in air. Maturation medium was NCSU37 supplemented with 0.57 mM cysteine, 1 mM dibutyryl cAMP, 5 mg/ml insulin, 50 µM β-mercaptoethanol, 10 IU/ml equine chorionic gonadotropin (eCG; Foligon; Intervet International BV, Boxmeer, Holland), 10 IU/ml human chorionic gonadotropin (hCG; Veterin Corion; Divasa Farmavic, Barcelona, Spain), and 10% porcine follicular fluid (v/v). Only COCs with complete and dense cumulus oophorus were used for the experiments. Groups of 50 COCs were cultured in 500 µl maturation medium for 22 hr at 38.5°C under 5% CO2 in air. After culture, oocytes were washed twice in fresh maturation medium without dibutyryl cAMP, eCG and hCG and cultured for an additional period of 20–22 hr.
 
-## In vitro fertilization
+### In vitro fertilization
 
 Before IVF, mature oocytes were preincubated in 100% porcine oviductal fluid (POF) from the late follicular (LF) phase (NaturARTs POF-LF) for 30 min (Coy et al., 2008) and then washed three times in TALP medium. TALP medium consisted of 114.06 mM NaCl, 3.2 mM KCl, 8 mM Ca-lactate.5H2O, 0.5 mM MgCl2.6H2O, 0.35 mM NaH2PO4, 25.07 mM NaHCO3, 1.85 mM Na-lactate, 0.11 mM Na-pyruvate, 5 mM glucose, 2 mM caffeine, 1 mg/ml PVA and 0.17 mM kanamycin sulfate. Either 3 mg/ml BSA-FAF (A-6003) or 1% of NaturARTs POF-LF was included as additives in the IVF medium for the first 8 hr of coincubation (C-IVF and Natur-IVF groups, respectively). Ejaculated spermatozoa from boars of proven fertility (1–2 years old) were transported to the laboratory and 1 ml of semen was lay below 1 ml of NaturARTs PIG sperm swim up medium (http://embryocloud.com) at the bottom of a conical tube. After 20 min of incubation at 37°C (with the tube at a 45° angle), 0.75 ml from the top of the tube were aspirated and used for insemination of the IVF dishes (105 cells/ml) with the oocytes. For the density gradient group, aliquots of the semen samples (0.5 ml) were centrifuged (700 g, 30 min) through a discontinuous Percoll (Pharmacia, Uppsala, Sweden) gradient (45% and 90% v/v) and the resultant sperm pellets were diluted in TALP medium and centrifuged again for 10 min at 100 g. Finally, the pellet was diluted in TALP and 250 μl of this suspension were added to the wells containing the oocytes, giving a final concentration of 105 cells/ml.
 
 Spermatozoa and oocytes were incubated at 38.5°C under 5% CO2 for 8 hours. Later on, the putative zygotes were transferred to embryo culture medium. At this point, a sample of the putative zygotes from each group was collected, fixed and stained as previously described (Coy et al., 2008) to assess the fertilization rates (percentage of penetrated oocytes, percentage of monospermy, mean number of spermatozoa penetrating each oocyte and mean number of spermatozoa attached to the zona pellucida). Penetration rate was defined as the proportion of oocytes penetrated by one or more spermatozoa.
 
-## In vitro culture of putative zygotes
+### In vitro culture of putative zygotes
 
 Media for embryo culture were NCSU23 supplemented with sodium lactate (5 mM), pyruvate (0.5 mM) and non-essential amino acids (NCSU23a, for the first 48 hr) or NCSU23 supplemented with glucose (5.5 mM) and essential and non-essential amino acids (NCSU23b, 48–180 hr). At 8 hr post insemination (hpi), putative zygotes were transferred to culture dishes containing NCSU23a medium and 0.4% BSA in the C-IVF group or 1% POF from the early luteal (EL) phase of the estrous cycle (NaturARTs POF-EL) in the Natur-IVF group. At 48 hpi, the cleavage was assessed under the stereomicroscope and the 2–4 cell stage embryos were transferred to NCSU23b with 0.4% BSA (C-IVF group) or 1% of porcine uterine fluid (PUF) from early luteal phase (NaturARTs PUF-EL, Natur-IVF group). On day 7.5 (180 hpi), blastocyst stage morphology was assessed under the stereomicroscope and later on a sample was fixed and stained (Coy et al., 2008) and the remaining blastocyst were washed in PBS and frozen in PCR tubes in the minimum volume of medium. The parameters assessed in the stained blastocysts were development stage (2–4 cells, 8–16 cells, morula or blastocyst), mean number of cells per blastocyst, and ability for hatching (rhythmic movements of expansion and contraction before going out of the zona pellucida). The blastocysts frozen for genetic and epigenetic study were passed through liquid nitrogen vapours for 5 s and immediately introduced in the freezer at -80°C until the day of use for RNA extraction or bisulphite treatment.
 
-## Statistical analysis of IVF data
+### Statistical analysis of IVF data
 
 Data are presented as mean ± SEM, and all percentages were modeled according to the binomial model of variables and arcsin transformation to achieve normal distribution. The variables in all the experiments were analyzed by one-way or two-way ANOVA. When ANOVAs revealed a significant effect, values were compared by the Tukey test. A pvalue < 0.05 was taken to denote statistical significance.
 
-## Collection of blastocysts In vivo
+### Collection of blastocysts In vivo
 
 Ten sows 18-month old were weaned 21 days after second parturition and five days later showed signs of standing estrous. Animals were inseminated in the collaborative farm and slaughterhoused 7.5 days after. Genital tracts were collected and transported to the laboratory where uterine horns were briefly dissected and washed with PBS within 2 hr from slaughtering. Blastocysts were identified under the stereomicroscope, collected and immediately frozen as described for the in vitro produced embryos. A portion of these blastocysts was fixed in glutaraldehyde and stained with Hoechst for cell counting.
 
-## Experimental groups
+### Experimental groups
 
 C-IVF group (C-IVF): six blastocysts classified as 7A according to Bo and Mapletoft (Bo and Mapletoft, 2013) (#34, 35, 36, 93, 94 and 96) were produced in vitro with BSA as the only protein source. Sperm were processed by swim up in NaturARTs sperm medium with BSA (Swim-up-BSA). IVF medium consisted of TALP (0–8 hr) and embryo culture medium consisted of NCSU23a (8–48 hr) and NCSU23b (48–180 hr). Natur-IVF group: six blastocysts classified as 7A (#55, 85, 86, 27, 54 and 60) were produced in vitro with NaturARTs POF and PUF as the protein source. Sperm were processed by swim up in NaturARTs sperm medium with NaturARTs POF-LF (Swim-up-Fluid). IVF medium consisted of TALP +1% NaturARTs POF-LF (0–8 hr) and embryo culture medium consisted of NCSU23a + 1% NaturARTs POF-EL (8–48 hr) and NCSU23b + 1% NaturARTs PUF-LL (48–180 hr). For both groups, before IVF oocytes were pre-incubated for 30 min in preovulatory oviductal fluid (NaturARTs POF-LF). In vivo group: six blastocysts classified as 7A (#186, 193, 197, 189, 190 and 191) were collected by flushing the uteri of animals within 2 hr of slaughtering. The animals were under natural heat after weaning and insemination was performed 7 days before slaughtering.
 
-## RNA isolation and RNA-Seq
+### RNA isolation and RNA-Seq
 
 ARCTURUS PicoPure RNA Isolation Kit (KIT0204, Life Technologies) was used to extract the RNA from individual blastocysts. RNA-Seq libraries were generated using Ovation RNA-Seq System V2 (NuGEN, Cat. 7102–08) for low amount of starting material and further amplified with NEB Next DNA Library Prep Master Mix for Illumina (NEB, Cat. E6040S). All steps were performed according to manufacture guidelines. iPCRTag reverse primer with individual index was used to generate three independent biological replicates from each condition. 100 bp single end reads were sequenced on Illumina HiSeq 1000. Sequencing data were processed. For RNA-Seq libraries, raw sequence reads were trimmed using Trim Galore to remove adapter contamination and reads with poor quality defined by low PHRED score. Mapping was performed using Tophat software (http://tophat.cbcb.umd.edu/) and data were visualized with Seqmonk (RRID:SCR_001913, http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/). RNA quality was assayed by Bioanalyzer and even though each sample came from a single blastocyst, RIN score was between 6.1–8.2.
 
-## Analysis of RNA-Seq data
+### Analysis of RNA-Seq data
 
 Annotated pig mRNA features were quantitated with raw read counts in SeqMonk and these were fed into DESeq2 for differential expression analysis using a p-value cutoff of 0.05 and not applying independent filtering. Reads were subsequently re-quantitated as log2RPM (reads per million reads of library) and globally normalized to the 75th percentile of the data. Significant effect sizes were selected using the Seqmonk intensity difference filter where the difference in expression in each gene was compared to the set of differences in the 1% of the data with the most similar average expression level as the gene being tested. Only genes with significantly higher changes (p<0.05 after Benjamini and Hochberg correction) were kept.
 
-## Bisulfite sequencing based on post-bisulfite adapter tagging
+### Bisulfite sequencing based on post-bisulfite adapter tagging
 
 An adaptation of whole genome bisulfite sequencing that involves post-bisulfite adapter tagging (PBAT) (Miura et al., 2012) was used to analyze the methylome of individual pig blastocysts at single-base resolution on a genome-wide scale. Further modification of the method described in Smallwood et al. (Smallwood et al., 2014) was used to generate BS-seq libraries. Briefly, an individual blastocyst was lysed for 1 hr in 1% SDS with proteinase K and treated with bisulfite reagent using Imprint DNA modification kit (Sigma, MOD50). DNA was eluted in EB buffer and one round of first strand synthesis was performed using a biotinylated oligo 1 (5-[Btn]CTACACGACGCTCTTCCGATCTNNNNNNNNN-3). Samples were further treated with Exonuclease I, washed and eluted in 10 mM Tris-Cl and incubated with washed M-280 Streptavidin Dynabeads (Life Technologies) to pull down the biotinilated fraction of DNA. Second strand synthesis was performed using oligo 2 (5’-TGCTGAACCGCTCTTCCGATCTNNNNNNNNN −3’) and samples were amplified for 15 PCR cycles using indexed iPCRTag reverse primer (Smallwood et al., 2014) with KAPA HiFi HotStart DNA Polymerase (KAPA Biosystems) and purified using 0.8× Agencourt Ampure XP beads (Beckman Coulter). Libraries were assessed for quality and quantity using High-Sensitivity DNA chips on the Agilent Bioanalyser, and the KAPA Library Quantification Kit for Illumina (KAPA Biosystems). Three libraries generated from individual blastocysts for each experimental condition were prepared for 100 bp single-end sequencing on Illumina HiSeq 1000 and sequenced at three samples per lane.
 
-## Analysis of methylation data
+### Analysis of methylation data
 
 For the unbiased analysis, tiles were defined in SeqMonk using the read position tile generator tool and selecting one read count per position and 150 valid positions per window, in all the nine individual data sets (286,136 tiles). Then, the bisulphite quantitation pipeline was run over existing tiles, one minimum count to include position and 20 minimum observations to include feature. To remove the tiles without data, the filter on values for individual tiles was applied, where values had to be between 0 and 100 for exactly 9 of the nine selected data stores. Then, tiles with data for all the samples were obtained (N = 258,885 tiles). Bisulphite quantitation pipeline was run again over the new tiles and data were normalized by the match distribution quantile normalization tool. Finally, every pair-wise comparison was filtered to require a consistent 5% change between all replicates of the first and second condition, and then replicate sets stats was applied where every comparison had a significance below 0.05 after Benjamini and Hochberg correction. For the targeted analysis of the candidate imprinted regions a Chi-Square test (p<0.05) was applied for every comparison.

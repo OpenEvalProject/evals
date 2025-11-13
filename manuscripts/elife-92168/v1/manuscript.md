@@ -20,17 +20,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00y4zzh67 Department of Biological Sciences, The George Washington University Washington United States
-2. https://ror.org/04hnzva96 Center for Conservation Genomics, Smithsonian National Zoo & Conservation Biology Institute Washington United States
-3. https://ror.org/035zrb927 Department of Oncology, Lombardi Comprehensive Cancer Center, Georgetown University Washington United States
-4. https://ror.org/02vm5rt34 Departments of Pathology, Microbiology and Immunology, and of Pediatrics, Vanderbilt University School of Medicine Nashville United States
-5. https://ror.org/02vm5rt34 Department of Biological Sciences, Vanderbilt University Nashville United States
+1. Department of Biological Sciences, The George Washington University Washington United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
+2. Center for Conservation Genomics, Smithsonian National Zoo & Conservation Biology Institute Washington United States ([ROR:04hnzva96](https://ror.org/04hnzva96))
+3. Department of Oncology, Lombardi Comprehensive Cancer Center, Georgetown University Washington United States ([ROR:035zrb927](https://ror.org/035zrb927))
+4. Departments of Pathology, Microbiology and Immunology, and of Pediatrics, Vanderbilt University School of Medicine Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+5. Department of Biological Sciences, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
 
 † Corresponding author
 
 ## Abstract
 
-Global amphibian declines are compounded by deadly disease outbreaks caused by the chytrid fungus, Batrachochytrium dendrobatidis ( Bd ). Much has been learned about the roles of amphibian skin-produced antimicrobial components and microbiomes in controlling Bd , yet almost nothing is known about the roles of skin-resident immune cells in anti- Bd defenses. Mammalian mast cells reside within and serve as key immune sentinels in barrier tissues like skin. Accordingly, we investigated the roles of Xenopus laevis frog mast cells during Bd infections. Our findings indicate that enrichment of X. laevis skin mast cells confers anti- Bd protection and ameliorates the inflammation-associated skin damage caused by Bd infection. This includes a significant reduction in infiltration of Bd -infected skin by neutrophils, promoting mucin content within cutaneous mucus glands, and preventing Bd -mediated changes to skin microbiomes. Mammalian mast cells are known for their production of the pleiotropic interleukin-4 (IL4) cytokine and our findings suggest that the X. laevis IL4 plays a key role in manifesting the effects seen following cutaneous mast cell enrichment. Together, this work underscores the importance of amphibian skin-resident immune cells in anti- Bd defenses and illuminates a novel avenue for investigating amphibian host–chytrid pathogen interactions.
+Global amphibian declines are compounded by deadly disease outbreaks caused by the chytrid fungus, Batrachochytrium dendrobatidis (Bd). Much has been learned about the roles of amphibian skin-produced antimicrobial components and microbiomes in controlling Bd, yet almost nothing is known about the roles of skin-resident immune cells in anti-Bd defenses. Mammalian mast cells reside within and serve as key immune sentinels in barrier tissues like skin. Accordingly, we investigated the roles of Xenopus laevis frog mast cells during Bd infections. Our findings indicate that enrichment of X. laevis skin mast cells confers anti-Bd protection and ameliorates the inflammation-associated skin damage caused by Bd infection. This includes a significant reduction in infiltration of Bd-infected skin by neutrophils, promoting mucin content within cutaneous mucus glands, and preventing Bd-mediated changes to skin microbiomes. Mammalian mast cells are known for their production of the pleiotropic interleukin-4 (IL4) cytokine and our findings suggest that the X. laevis IL4 plays a key role in manifesting the effects seen following cutaneous mast cell enrichment. Together, this work underscores the importance of amphibian skin-resident immune cells in anti-Bd defenses and illuminates a novel avenue for investigating amphibian host–chytrid pathogen interactions.
 
 ## Introduction
 
@@ -42,13 +42,13 @@ Here, we combine comprehensive in vitro and in vivo approaches to define the rol
 
 ## Results
 
-## Frog mast cells possess archetypal mast cell cytology and transcriptional profiles
+### Frog mast cells possess archetypal mast cell cytology and transcriptional profiles
 
 We produced X. laevis recombinant (r)SCF and used this reagent to generate mast cell cultures from bone marrow-derived myeloid precursors (Yaparla et al., 2016). Mast cells were compared to bone marrow-derived neutrophilic granulocytes (hereafter referred to as ‘neutrophils’), differentiated using a recombinant X. laevis colony-stimulating factor-322 (rCSF3, i.e., granulocyte colony-stimulating factor [GCSF]). While the neutrophil cultures were comprised of cells with hyper-segmented nuclei and neutral-staining cytoplasms (Figure 1A), the mast cell cultures consisted predominantly of mononuclear cells with basophilic cytoplasm (Figure 1B). We confirmed the granulocyte-lineage of X. laevis mast cells using specific esterase (SE) staining (Figure 1D). As expected, X. laevis neutrophils were also SE-positive (Figure 1C). Mast cell and neutrophil morphology was further explored with electron microscopy (Figure 1E–H). Scanning electron microscopy (SEM) imaging demonstrated that X. laevis mast cells possess extensive folding of their plasma membranes (Figure 1F). This mast cell-characteristic membrane ruffling appeared as projections resembling pseudopods via transmission electron microscopy (TEM), which further revealed electron-dense heterogeneous granules, few mitochondria, and round to elongated nuclei (Figure 1H) typical of mammalian mast cells (Espinosa-Riquer et al., 2020). X. laevis neutrophils also exhibited pronounced membrane ruffling (Figure 1E) but strikingly distinct intracellular appearance including multilobed nuclei (Figure 1G).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig1-v1.jpg)
 
-**Figure 1.:** X. laevis bone marrow-derived mast cells possess archetypal mast cell cytology and transcriptional profiles.Neutrophils (A, C, E, G) and mast cells (B, D, F, H) were stained with Giemsa (A, B) and Leder to visualize specific esterase activity (SE) (C, D) or imaged with scanning and transmission electron microscopy (SEM: E, F and TEM: G, H). (I) Heat map of the top 30 differentially expressed genes (DEGs) identified with RNA sequencing analyses of X. laevis mast cell (N = 4) and neutrophil (N = 4) cultures. Log2fold change in expression represented as color scale.
+**Figure 1.:** Neutrophils (A, C, E, G) and mast cells (B, D, F, H) were stained with Giemsa (A, B) and Leder to visualize specific esterase activity (SE) (C, D) or imaged with scanning and transmission electron microscopy (SEM: E, F and TEM: G, H). (I) Heat map of the top 30 differentially expressed genes (DEGs) identified with RNA sequencing analyses of X. laevis mast cell (N = 4) and neutrophil (N = 4) cultures. Log2fold change in expression represented as color scale.
 
 X. laevis mast cells and neutrophils exhibited distinct transcriptional profiles of immune-related genes including those encoding lineage-specific transcription factors, immune receptors, downstream signaling components and adhesion molecules, as well as non-immune genes (Figure 1I). Frog mast cells and neutrophils each expressed greater levels of lineage-specific transcription factors associated with mammalian mast cell (gata1, gata2, and mitf) (Cildir et al., 2021) and neutrophil (cebp family members) (Paudel et al., 2022) counterparts, respectively (Figure 2A). Notably, mast cells expressed greater levels of enzyme and cytokine genes associated with tissue remodeling (carboxypeptidase-3 [cpa3]; Atiakshin et al., 2022), immune suppression (indoleamine 2,3 dioxygenase-1 [ido1]; Baban et al., 2009), and amelioration of cutaneous inflammation (leukemia inhibitory factor [lif]; Banner et al., 1998; Figure 2B). Conversely, neutrophils expressed predominantly proinflammatory enzymes and cytokine genes such as leukotriene 4 hydrolase (lta4h; Figure 2B) and tumor necrosis factor alpha (tnfa, Figure 2B). In addition, mast cells and neutrophils each had greater expression of genes encoding their respective growth factor receptors, kit and csf3r (Figure 2B).
 
@@ -56,13 +56,13 @@ X. laevis mast cells and neutrophils exhibited distinct transcriptional profiles
 
 **Figure 2.:** The differentially expressed genes from the RNA sequencing analyses of X. laevis mast cells and neutrophil cultures were profiled for those encoding (A) transcription factors associated with mast cell- or neutrophil-specific lineages and (B) granulocyte antimicrobial components and growth factor receptor genes. All depicted genes were significantly differentially expressed between the two populations, N = 4 per group.
 
-## Enriching frog cutaneous mast cells confers protection against Bd
+### Enriching frog cutaneous mast cells confers protection against Bd
 
 Although all granulocyte-lineage cells possess specific esterase activity, mast cells are the predominant mononuclear granulocytes to reside in vertebrate tissues (Agis et al., 1996). Therefore, we selectively enriched mast cells in X. laevis skin via subcutaneous rSCF administration (note SE-stained cells indicated by arrows in r-ctrl-injected skins, Figure 3A, versus r-SCF-injected skins, Figure 3B). We confirmed SE-positive cells in rSCF-treated skins also possessed round-oval nuclei (Figure 3C). Maximum mast cell enrichment was observed 12 hr post injection of rSCF (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig3-v1.jpg)
 
-**Figure 3.:** Bd loads.Representative images of specific esterase (SE) stained (A) control and (B) mast cell-enriched skin 12 hr post injection (hpi). (C) We confirmed the enriched population was composed of mono-morphonuclear cells. (D) Mast cell enrichment was optimized across several time points by quantifying SE-positive cells per field of view under ×40 magnification. Results represent means  ± SEM from three animals per time point (two experimental repeats). (E) Mast cell-enriched and control dorsal skins were collected from X. laevis 10 and 21 dpi. Bd loads are represented as the number of zoospore genomic equivalents (GE) × 105 per μL of total input DNA. Time points were analyzed independently. Results represent means ± SEM from seven animals per experimental group (N = 7). Asterisks indicate significance: p<0.05 by (D) one-way ANOVA with Tukey post hoc analysis or (E) Student’s t-test.
+**Figure 3.:** Representative images of specific esterase (SE) stained (A) control and (B) mast cell-enriched skin 12 hr post injection (hpi). (C) We confirmed the enriched population was composed of mono-morphonuclear cells. (D) Mast cell enrichment was optimized across several time points by quantifying SE-positive cells per field of view under ×40 magnification. Results represent means  ± SEM from three animals per time point (two experimental repeats). (E) Mast cell-enriched and control dorsal skins were collected from X. laevis 10 and 21 dpi. Bd loads are represented as the number of zoospore genomic equivalents (GE) × 105 per μL of total input DNA. Time points were analyzed independently. Results represent means ± SEM from seven animals per experimental group (N = 7). Asterisks indicate significance: p<0.05 by (D) one-way ANOVA with Tukey post hoc analysis or (E) Student’s t-test.
 
 We next examined the consequences of enriching frog skin mast cells on Bd infection outcomes. To this end, X. laevis were subcutaneously administered with rSCF or a recombinant control (r-ctrl), infected with Bd, and the skin fungal loads assessed at 10 and 21 days post infection (dpi). At 10 dpi, skin mast cell-enriched X. laevis possessed significantly lower Bd loads than r-ctrl-administered animals (Figure 3E). By 21 dpi, both r-ctrl and rSCF-administered groups possessed substantially greater Bd loads, although the mast cell-enriched animals continued to show significantly lower skin fungal loads (Figure 3E).
 
@@ -72,7 +72,7 @@ Mammalian mast cells may be labeled in situ with avidin to visualize the heparin
 
 **Figure 4.:** Frogs were administered r-ctrl or rSCF subcutaneously, mock or Bd-challenged, and their skins examined after 1, 3, 10, and 21 days post infection (dpi). (A, B) Representative images (cultures derived from five individual frogs) of bone marrow-derived frog mast cells, stained with fluorescently labeled avidin to visualize heparin-containing granules (avidin: red; nuclei: blue; actin: green). (C–I) Skin tissue from control (r-ctrl) or mast cell-enriched (rSCF), mock- (not shown) and Bd-infected (D–I) X. laevis were stained with fluorescently labeled avidin to visualize mast cells therein (N = 6 animals per treatment group). Images were inverted in ImageJ for greater contrast and visibility. (C) Heparin-containing mast cells were enumerated and depicted as means ± SEM of heparin-positive cells per field of view, N = 6 animals per treatment group. Asterisks indicate statistical significance from r-ctrl: p<0.05. Representative images of heparin-containing mast cells in the skins of (D) r-ctrl animals 1 dpi; (E) rSCF-administered frogs 1 dpi; (F, G) rSCF-administered frogs 10 dpi; (H) rSCF-administered frogs 21 dpi; and (I) r-ctrl-treated animals 21 dpi with Bd.
 
-## Mast cells protect frogs from Bd-elicited inflammation
+### Mast cells protect frogs from Bd-elicited inflammation
 
 To explore potential mechanisms of mast cell-mediated protection against Bd, we compared the gene expression profiles of r-ctrl- and rSCF-administered, Bd-infected frog skins at 21 dpi. Among the top differentially expressed genes, we noted mast cell-enriched, Bd-infected skins possessed more transcripts for genes associated with cutaneous strength and integrity (lamc2) (Kiritsi et al., 2013), suppression of cell migration (b3gnt3.1) (Ho et al., 2013), as well as ion and nutrient flow (gjb3l) (Chang et al., 2003; Figure 5A). Moreover, mast cell-enriched Bd-challenged skin exhibited greater expression of genes associated with protection of the mucosa and epithelial healing (ttf3.6s) (Taupin and Podolsky, 2003) and mucus production (duoxa1.s [Fischer, 2009], gabrp [Wang et al., 2021]; Figure 5A). In striking contrast, skins from control Bd-infected frogs revealed greater expression of genes associated with leukocyte infiltration and inflammation (e.g., ccl19, cxcl16, adamts13, csf3r; Figure 5A). These transcriptional profiles were supported by our histological observations wherein control (r-ctrl), Bd-infected skins exhibited hyperkeratosis, epidermal hyperplasia, jagged stratum corneum, and extensive leukocyte infiltration (Figure 5B), while mast cell-enriched Bd-infected tissues appeared considerably less afflicted by these pathologies (Figure 5C). Quantification of Bd-infected skin thickness confirmed that mast cell-enriched animals possessed significantly less thickened epidermal skin compared to control (r-ctrl), Bd-infected animals (Figure 5D).
 
@@ -82,15 +82,35 @@ To explore potential mechanisms of mast cell-mediated protection against Bd, we 
 
 Because mast cell-enriched frog skins had greater expression of genes associated with mucosal tissue integrity and mucus production (Figure 5A), we also investigated whether the anti-Bd protection identified in mast cell-enriched skins could be due at least in part to differences in mucus production. Interestingly, cutaneous mucus glands of mast cell-enriched, mock- and Bd-infected frogs were significantly more filled than those of mock- and Bd-infected control animals (Figure 5B, C, and E).
 
-## Cutaneous neutrophil enrichment results in increased Bd fungal loads
+### Cutaneous neutrophil enrichment results in increased Bd fungal loads
 
 Neutrophils are one of the first leukocytes to infiltrate infected tissues, typically amplifying inflammation (Wang, 2018). All vertebrate neutrophils depend on CSF3 for their differentiation and function (Roberts, 2005), and our previous work has confirmed that this is true of frog neutrophils, which intuitively also exhibit high expression the CSF3 receptor (csf3r) (Koubourli et al., 2017; Yaparla et al., 2016). Because csf3r expression was markedly elevated in control over mast cell-enriched skins of infected frogs (Figure 5A), we examined the neutrophil content in the skins of these animals over the 21-day course of Bd infection (Figure 6A–E). To this end, we used in situ hybridization analysis of skin-myeloperoxidase (mpo), a marker of neutrophils (Buchan et al., 2019). While the skins of r-ctrl- and rSCF-administered, mock-infected frogs contained relatively few neutrophils (Figure 6A and E), the skins of r-ctrl-injected, Bd-infected animals had significantly elevated neutrophil numbers (Figure 6B, C, and E). Conversely, at both examined time points (10, 21 dpi), the skins of mast cell-enriched frogs possessed neutrophil levels similar to those seen in the uninfected animals (Figure 6D and E).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig6-v1.jpg)
+
+**Figure 6.:** (A–E) Frogs were administered with r-ctrl or rSCF, mock- or Bd-infected, and examined in situ for neutrophil content via by RNAScope analyses of myeloperoxidase (mpo) transcripts. Representative images of (A) r-ctrl-injected frog skins 10 days post mock infection; (B) r-ctrl-injected frog skins 10 days post Bd infection; (C) r-ctrl-injected frog skins 21 days post Bd infection; and (D) r-SCF-administered frog skins 21 days post Bd infection. (E) Means ± SEM of mpo-positive neutrophils per field of view of r-ctrl- and rSCF-administered, mock- or Bd-challenged frog skins, 10 or 21 days post infection (dpi), (N = 6). Asterisks indicate significance from control: p<0.05 by one-way ANOVA with Tukey post hoc analysis. Representative specific-esterase staining of skin tissues from frogs were administered with (F) r-ctrl or (G) rCSF3, N = 4. Arrows denote specific esterase-positive cells. Ep: epithelium. (H) Bd loads in control and neutrophil-enriched skin tissues 7 dpi, N = 6. Asterisks indicate significance: p<0.05 by one-way ANOVA with Tukey post hoc analysis.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Frogs were administered with rCSF3 subcutaneously and their skins examined for specific esterase activity at 0, 6, 12, and 24 hr post injection. Results are means ± SEM of specific esterase (SE)-positive cells per field of view from four animals per time point (N = 4). Asterisks indicate significance: p<0.05 by one-way ANOVA with Tukey post hoc analysis.
+
 We next assessed the consequence of enriching frog skins for neutrophils via subcutaneous rCSF3 administration. We confirmed neutrophil enrichment peaked 12 hp rCSF3 injection (Figure 6—figure supplement 1) and resulted in a thickened epidermis in comparison with r-ctrl-injected skins of otherwise healthy animals (i.e., no Bd; Figure 6F and G). When challenged with Bd, frogs with neutrophil-enriched skin possessed significantly greater Bd loads than control frogs (Figure 6H), suggesting that neutrophil-mediated inflammation may be exacerbating Bd infections.
 
-## Enrichment of frog skin mast cells alters skin microbial composition
+### Enrichment of frog skin mast cells alters skin microbial composition
 
 We observed substantial differences in skin microbiomes, including changes in bacterial composition and richness as well as relative abundances of Bd-inhibitory bacteria (Figure 7, Figure 7—figure supplement 1). A total of 1645 bacterial amplicon sequence variants (ASVs) were identified from 20 bacterial phyla, 7 of which were predominant (Figure 7A). Of these, Verrucomicrobiota were only present on uninfected animals, whereas Acidobacteriota was only seen after 21 dpi on both control and mast cell-enriched, infected animals (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig7-v1.jpg)
+
+**Figure 7.:** Control (r-ctrl-injected) or mast cell-enriched (rSCF-injected) X. laevis were mock-infected or challenged with Bd for 21 days. (A) Microbial phyla distribution across groups. Low-abundance phyla (<5% relative abundance are not shown). At 10 days post infection (dpi) (B), community composition (Jaccard distances shown with 80% confidence ellipses) differed among all treatments. (C) Relative abundance of Bd-inhibitory bacteria and (D) bacterial richness were examined in control and mast cell-enriched frogs, 10 days post Bd or mock challenge. Letters above bars indicate statistically different groups.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** At 21 days post mock or Bd-challenge, we examined (A) community composition (Jaccard distances shown with 80% confidence ellipses), (B) relative abundance of Bd-inhibitory bacteria, and (C) bacterial richness. Letters above bars indicate statistically distinct groups.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Differences in mucosome-killing capacities were determined by incubating zoospores with total mucosome contents for 16 hr. Mucosomes were acquired from 10- or 21-day mock- or Bd-infected X. laevis that were injected with rSCF (mast cell-enriched) or r-ctrl (control). Results are mean ± SEM and were analyzed via a two-way ANOVA; 10- and 21-day experimental groups were analyzed independently; alpha set at 0.05. N = 5 experimental animals per treatment group for 10 days post infection (dpi) analyses and N = 8 experimental animals per treatment group for 21 dpi analyses.
 
 At 10 dpi, mast cell enrichment resulted in a nominal shift in community composition compared to control frogs (Figure 7B). Notably, while control, Bd-infected animals exhibited a drastic shift in community composition, mast cell-enriched animals possessed substantially less deviated community composition (Figure 7B), suggesting that these cells are somehow counteracting the adverse effects of Bd on the X. laevis cutaneous microbiome communities. These mast cell-mediated effects persisted to 21 dpi (Figure 7—figure supplement 1A).
 
@@ -100,13 +120,25 @@ Mast cell-enriched uninfected frogs exhibited increased skin bacterial richness 
 
 In addition to serving as a selective substratum for commensal microbes, amphibian skin-produced mucus may also offer antifungal protection (Woodhams et al., 2023). However, we found no significant differences in direct Bd-killing capacities of mucus isolated from mock- or Bd-challenged control or mast cell-enriched frogs (Figure 7—figure supplement 2).
 
-## Frog mast cells alter skin antimicrobial peptide gene expression
+### Frog mast cells alter skin antimicrobial peptide gene expression
 
 Amphibians rely heavily on skin-produced AMPs for antifungal protection (Patocka et al., 2019), and mast cells produce antimicrobial AMPs (Di Nardo et al., 2008). We thus examined whether mast cells could be sources of such AMPs during Bd infections. As anticipated, Bd-challenged mast cells, but not Bd-challenged neutrophils, upregulated their expression of the AMP-encoding genes, PGLa (pgla) and magainin (mag, Figure 8A).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig8-v1.jpg)
+
+**Figure 8.:** (A) Mast cells (MCs) and neutrophils derived from bone marrow of six individual frogs (N = 6) were co-cultured with Bd (five fungal cells per granulocyte) for 6 hr prior to gene expression analyses of the antimicrobial peptide genes PGLa (pgla) and magainin (mag) or interleukin-4 (il4). (B) Il4 gene expression in skins of control and mast cell-enriched, mock- and Bd-infected animals, N = 6. Representative images of frogs administered with (C) r-ctrl or (D) rIL4 and infected with Bd for 21 days, N = 7. Ep: epidermis; m: mucus gland. Means ± SEM of (E) percent mucus gland filling, (F) skin Bd loads, (G) epidermal thickness, and (H) mpo-positive neutrophils, per field of view of r-ctrl- or rIL4-administered, mock- or Bd-challenged frog skins 21 days post infection (dpi) (N = 7). Representative images of mpo-positive neutrophils in (I) control and (J) rIL4-treated frog skins, 21 dpi. Ep: epidermis; arrows: mpo-positive neutrophils. Asterisks indicate significance: p<0.05 by one-way ANOVA with Tukey post hoc analysis.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Magainin (mag) and (B) PGLa (pgla) expression was examined in control and mast cell-enriched frog skins after 12 hr of enrichment or after 10 or 21 days of mock- or Bd-challenge, N = 6. Asterisks indicate significance: p<0.05 by one-way ANOVA with Tukey post hoc analysis.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/92168/elife-92168-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Expression of selected genes in skin following subcutaneous injection of rIL4 (N = 7). (B) Frogs were exposed to Bd and 24 hr later injected subcutaneously with rIL4 or r-ctrl. Skin Bd loads were assessed 9 days following injection (N = 8, per group). Asterisks denote statistical significance, p<0.05 via ANOVA with Tukey post hoc analysis.
+
 To follow up these observations in vivo, we examined pgla and mag gene expression in the skins of mast cell-enriched and Bd-challenged animals. Compared to control (r-ctrl) animals, mast cell-enriched frogs did not have elevated mRNA levels of mag or pgla after 12 hr of rSCF administration (Figure 8—figure supplement 1A and B). Conversely, after 10 days of mock infection, mast cell-enriched animals possessed significantly greater skin expression of mag and pgla than control animals (Figure 8—figure supplement 1A and B). We did not see significant differences in skin mag or pgla gene expression between control and mast cell-enriched, Bd-challenged frogs after 10 dpi (Figure 8—figure supplement 1). By 21 days of challenge, the rSCF-administered mock-infected frogs possessed lower gene expression levels of both AMPs (significantly so for pgla, Figure 8—figure supplement 1A and B), possibly due to some sort of compensatory effect. At 21 dpi, mast cell-enriched frog skins had greater pgla expression than control frogs, though these differences did not reach statistical significance (Figure 8—figure supplement 1B).
 
-## Frog mast cell-expressed interleukin-4 confers anti-Bd protection
+### Frog mast cell-expressed interleukin-4 confers anti-Bd protection
 
 Mammalian mast cells are recognized as potent producers of the pleotropic anti-inflammatory cytokine, interleukin-4 (il4) (Babina et al., 2016). Notably, X. laevis mast cells challenged in vitro with Bd significantly upregulated their il4 gene expression, whereas almost no il4 expression was detected from either unstimulated or Bd-challenged neutrophils (Figure 8A).
 
@@ -136,29 +168,29 @@ It has become apparent that amphibian host-Bd interactions are highly complex an
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Outbred tadpoles (NF stage 56–60) and 1-year-old (1.5–2″), mixed-sex X. laevis were purchased from Xenopus 1 (Dexter, MI). Purchased adult frogs were used for in vitro culture studies and tadpoles were reared in-house through metamorphosis and used as juveniles in skin immune composition and Bd-infection studies. All animals were housed and handled under strict laboratory regulations as per GWU IACUC (approval number 15-024).
 
-## Recombinant cytokines
+### Recombinant cytokines
 
 The X. laevis rSCF, rCSF3, and rIL4 were generated as previously described for rCSF3 (Hauser et al., 2020). The X. laevis SCF, IL4, and CSF3 sequences representing the signal peptide-cleaved transcripts were ligated into the pMIB/V5 His A insect expression vectors (Invitrogen). The resulting recombinant cytokine expression constructs or empty vectors were transfected into Sf9 insect cells (Cellfectin II, Invitrogen). Recombinant proteins contain a V5 epitope, and western blot with an anti-V5-HRP antibody (Sigma) confirmed their presence. Positive transfectants were selected using 10 μg/mL blasticidin (Gibco). Expression cultures were scaled up to 500 mL liquid cultures, grown for 5 days, pelleted by centrifugation, and the supernatants collected. Supernatants were dialyzed overnight at 4°C against 150 mM sodium phosphate, concentrated against polyethylene glycol flakes (8 kDa) at 4°C, dialyzed overnight at 4°C against 150 mM sodium phosphate, and passed through Ni-NTA agarose columns (QIAGEN). Columns were washed with 2 × 10 volumes of high-stringency wash buffer (0.5% Tween 20, 50 mM sodium phosphate, 500 mM sodium chloride, 100 mM imidazole) and 5 × 10 volumes of low-stringency wash buffer (as above but with 40 mM imidazole). Recombinant proteins were eluted with 250 mM imidazole. After recombinant protein purification, a halt protease inhibitor cocktail (containing AEBSF, aprotinin, bestatin, E-64, leupeptin, and pepstatin A; Thermo Scientific) was added. Intact recombinant protein presence was confirmed again by western blot and the protein concentrations quantified by Bradford protein assays (Bio-Rad). Protein aliquots were stored at –20°C until use.
 
-## Bone marrow granulocyte cultures
+### Bone marrow granulocyte cultures
 
 Bone marrow isolation, culture conditions, and establishment of neutrophil cultures have been previously described (Yaparla and Grayfer, 2018). Briefly, adult X. laevis (approximately 1 year old) were euthanized in 5% tricaine mesylate followed by cervical dislocation. Femurs were removed and washed in ice-cold Amphibian-PBS (A-PBS) in sterile conditions. Each femur was flushed with 5 mL of A-PBS. Red blood cells were removed from culture via a differential gradient generated with 51% Percoll (Invitrogen). Bone marrow cell counts were generated using trypan blue exclusion and cells were seeded at a density of 104 cells/well for gene expression experiments, 5 × 104 cells/well for histology analyses, and 105 cells/well for electron microscopy analyses.
 
 Mast cell cultures were generated according to protocols adapted from Koubourli et al., 2018 and Meurer et al., 2016. Isolated bone marrow cells were treated with 250 ng/mL of rSCF on days 0, 4, and 7, and collected for further analysis on day 9. Cell cultures were maintained at 27°C with 5% CO2 in amphibian medium supplemented with 10% fetal bovine serum and 0.25% X. laevis serum. Neutrophil-like granulocytes were generated as above but with 250 ng/mL of rCSF3 on days 0 and 3, and collected for further analysis on day 5. Cell cultures were maintained at 27°C with 5% CO2 in amphibian serum-free medium supplemented with 10% fetal bovine serum, 0.25% X. laevis serum, 10 μg/mL gentamicin (Thermo Fisher Scientific, Waltham, MA), 100 U/mL penicillin, and 100 μg/mL streptomycin (Gibco, Thermo Fisher Scientific).
 
-## Enrichment of skin granulocyte subsets
+### Enrichment of skin granulocyte subsets
 
 Animals were subcutaneously injected between the skin and muscle layers with 5 µg/animal of rSCF, rCSF3, or r-ctrl in 10 µL of saline using finely pulled glass needles. Optimal time course and dose for in vivo mast cell and neutrophil enrichment were determined during preliminary experiments.
 
-## Recombinant interleukin-4 treatment
+### Recombinant interleukin-4 treatment
 
 The capacity of the recombinant interleukin-4 (rIL4) to induce expression of genes associated with mammalian IL4 responses were assessed by injecting frogs (N = 6 per treatment group) subcutaneously with rIL4 (5 µg/animal) or r-ctrl in 10 µL of saline. After 6 hr, animals were sacrificed, and skins were isolated for gene expression analyses.
 
-## Bd stocks and fungal challenge
+### Bd stocks and fungal challenge
 
 Bd isolate JEL 197 was grown in 1% tryptone broth or on 1% tryptone agar plates (Difco Laboratories, Detroit, MI) supplemented with 100 U/mL penicillin and 100 μg/mL streptomycin (Gibco) at 19°C.
 
@@ -168,7 +200,7 @@ For in vivo infection studies, zoospores were harvested by flooding confluent tr
 
 To examine the effect of rIL4 on Bd loads, frogs were infected with Bd by water bath (107 zoospores, as described above) and 1 day later injected subcutaneously, dorsally with rIL4 (5 µg/animal) or r-ctrl in 10 µL of saline. After an additional 9 days of infection, animals were sacrificed and their dorsal skin Bd loads examined.
 
-## Analyses of mucus Bd-killing capacities
+### Analyses of mucus Bd-killing capacities
 
 Mucosomes were collected from mast cell- or vector-enriched X. laevis that were either mock- or Bd-infected for 10 or 21 days. To this end, individual X. laevis were soaked in a 5 mL water bath for 1 hr. Each water sample was then lyophilized, reconstituted with 500 µL of molecular grade water, and passed through a sterile cell strainer to remove large debris.
 
@@ -176,7 +208,7 @@ Bd was seeded in opaque white 96-well plates (20,000 zoospores in 50 µL of tryp
 
 Zoospore viability was determined with the CellTiter-Glo 2.0 Cell Viability assay kit (Promega) according to the manufacturer’s instructions and using a SpectraMax plate reader (Molecular Devices, San Jose, CA). Luminescence readings were fitted to a standard curve (descending proportions of heat-killed zoospores to viable zoospores) to calculate the number of viable zoospores in each well. Zoospores were heated-killed at 65°C for 15 min.
 
-## Histology
+### Histology
 
 Leukocyte cytology and cutaneous SE staining has been described (Hauser et al., 2020). An Alcian Blue/PAS staining kit (Newcomer Supply, Middleton, WI) was used to quantify mucin content. Paraffin-embedded tissue sections (5 μm) were deparaffinized, rehydrated through A-PBS, and stained with Naphthol AS-D Chloroacetate (specific esterase; Sigma) or Alcian Blue/PAS (Newcomer Supply) according to the manufacturer’s instructions and optimized for Xenopus skin tissues. Cells collected from in vitro cultures were cytocentrifuged onto glass microscope slides (VWR). Cells were stained immediately with Giemsa (Sigma) for 7 min or fixed with 10% neutral-buffered formalin for 30 min and stained with specific esterase according to the manufacturer’s instructions. Slides stained with Alcian Blue/PAS (Newcomer Supply) were used to quantify mucin content from in vivo experiments. Images were taken using identical microscope settings under ×20 magnification. Images were converted to 8-bit in Fiji by ImageJ and threshold adjusted such that positive staining for mucus was captured within the mucus glands (threshold held constant across images). The percentage of each mucus gland positively stained and the average percent-positive per field of view were subsequently calculated. Positive staining of both acidic and neutral mucins was included in analyses. ImageJ was also used for epidermal thickness analyses using scale bars in the images to calibrate and measure epidermal thickness. All slides were imaged with a Leica DMi8 Inverted Fluorescent Microscope with all mucus glands assessed for each respective frog skin section (Leica Microsystems, Davie, FL).
 
@@ -184,25 +216,25 @@ An RNAScope ISH Kit (ACD Bio) and a X. laevis myeloperoxidase (mpo)-specific pro
 
 Toward avidin staining, skin tissues were fixed in 4% paraformaldehyde, washed with saline, cryo-protected in 15% then 30% sucrose, flash-frozen in optimal cutting temperature (OCT) compound (Fisher), and cryo-sectioned onto microscope slides (Fisher). Frozen sections were stained with Texas red-conjugated avidin (Thermo Fisher) and DAPI (Thermo Fisher) and glass cover slips mounted with Prolong Antifade mounting media (Thermo Fisher). Tissues were imaged using a Zeiss LSCM-800 confocal microscope. For each slide, 15 fields of view were enumerated at ×20 (Plan-Apochromat 20×/0.75) objective. Images were inversed in ImageJ to improve contrast and resolution of heparin-positive skin mast cells.
 
-## Electron microscopy
+### Electron microscopy
 
 Processing and imaging of cells for TEM and SEM was conducted at the GWU Nanofabrication and Imaging Center (GWNIC). For TEM, cells were fixed as monolayers on six-well plates with 2.5% glutaraldehyde and 1% paraformaldehyde in 0.1 M sodium cacodylate buffer for 1 hr. Cells were treated with 1% osmium tetroxide in 0.1 M sodium cacodylate buffer for 1 hr. Following washes, cells were en bloc stained with 1% uranyl acetate in water overnight at 4°C. Samples were dehydrated through an ethanol series and embedded in epoxy resin using LX112. Inverted BEEM capsules were placed into each tissue culture well to create on face blockfaces for sectioning. Resin was cured for 48 hr at 60°C. The 95 nm sections were post-stained with 1% aqueous uranyl acetate and Reynold’s lead citrate. All imaging was performed at 80 kV in a Talos 200X transmission electron microscope (Thermo Fisher Scientific, Hillsboro, OR).
 
 For SEM, cells were fixed with 2.5% glutaraldehyde/1% paraformaldehyde in sodium cacodylate buffer, followed by 1% OsO4, then dehydrated through an ethyl alcohol series. Coverslips were critical point dried and coated with 2 nm iridium. Cells were imaged using a Teneo Scanning Electron Microscope (Thermo Fisher Scientific).
 
-## Analyses of immune gene expression and Bd skin loads
+### Analyses of immune gene expression and Bd skin loads
 
 These analyses have been described (Hauser et al., 2020). Cells and tissues were homogenized in Trizol reagent, flash-frozen on dry ice, and stored at –80°C until RNA and DNA isolation. RNA isolation was performed using Trizol according to the manufacturer’s directions. RNA-Seq is described in detail below. For qRT-PCR gene expression analysis, total RNA (500 ng/sample) was reverse-transcribed into cDNA using cDNA qscript supermix (Quantabio, Beverly, MA). Following RNA extraction, back extraction buffer (4 M guanidinethiocyanate, 50 mM sodium citrate, 1 M Tris pH 8.0) was mixed with the remaining Trizol layer and centrifuged to isolate the DNA-containing aqueous phase. DNA was precipitated overnight with isopropanol, pelleted by centrifugation, washed with 80% ethanol, and resuspended in TE buffer (10 mM Tris pH 8.0, 1 mM EDTA). DNA was purified by phenol:chloroform extraction and resuspended in molecular grade water (VWR).
 
 Quantitative gene expression analyses for both Bd and X. laevis cells and tissues were performed using the CFX96 Real-Time System (Bio-Rad Laboratories, Hercules, CA) and iTaq Universal SYBR Green Supermix (Bio-Rad Laboratories). The Bio-Rad CFX Manager software (SDS) was employed for all expression analysis. All expression analyses were conducted using the ΔΔCt method relative to the gapdh endogenous control gene for X. laevis. Fungal load quantification was assessed by absolute qPCR. Isolated Bd DNA (JEL 197 isolate) was serially diluted and used as the standard curve. Primers were designed and validated against the Bd ribosomal RNA internal transcribed spacer 1 (ITS1). The primers used are listed in Supplementary file 1.
 
-## RNA sequencing
+### RNA sequencing
 
 For transcriptomic profiling, bone marrow-derived neutrophil and mast cell cultures were generated as described above and FACS-sorted according to pre-established size and internal complexity parameters to isolate the respective subsets for further analyses. Sorted cells were immediately processed to extract and purify RNA. Flash-frozen samples were sent to Azenta Life Sciences for all library preparation, RNA sequencing, and analyses. In short, polyadenylated RNA was isolated using Oligo dT beads. Enriched mRNAs were then fragmented for first- and second-strand cDNA synthesis. cDNA fragments were end repaired, 5′ phosphorylated, and dA-tailed. Fragments were then ligated to universal adaptors and PCR-amplified. 150 bp paired-end sequencing was performed on an Illumina HiSeq platform.
 
 FastQC was used to evaluate raw data quality. Adaptors sequences and poor-quality nucleotides were removed from reads using Trimmomatic v.0.36. The STAR aligner v.2.55.2b was used to map these reads to the Xenopus_laevis_9_2 reference genome from ENSEMBL. To determine differential gene expression, featureCount (Subread package v.1.5.2) was first used to count unique gene hits, which were then used with DESeq2 to calculate absolute log2 fold change.
 
-## Skin microbiome analyses
+### Skin microbiome analyses
 
 Towards microbiome studies, frogs were housed individually (N = 6/treatment group). At indicated times, frogs were gently rinsed with sterile deionized water to remove transient microbes and gently swabbed 20 times, dorsally. Genomic DNA was extracted from swabs using a PowerSoil Pro kit on a Qiacube HT (QIAGEN, MD). One-step PCR library prep and dual-index paired-end Illumina sequencing was used to sequence the skin microbiome of individual frogs. An ~380 base pair region in the V3-V5 region of the 16S rRNA gene using the universal primers 515F-Y (GTGYCAGCMGCCGCGGTAA) and 939R (CTTGTGCGGGCCCCCGTCAATTC) was used for amplification. Negative and positive controls (ZymoBIOMICS D6300 & D6305, Zymo, CA) were included in each round of extraction and PCR. Reactions were done in duplicate for each sample, pooled, cleaned with in-house Speed-beads (in a PEG/NaCl buffer), quantified with a Qubit4 (Invitrogen, MA) and pooled into a final library in equimolar proportion. The pooled library was sequenced on two Illumina MiSeq runs (v3 chemistry: 2 × 300 bp kit) at the Center for Conservation Genomics, Smithsonian National Zoo & Conservation Biology Institute.
 
@@ -212,6 +244,6 @@ To determine how Bd and mast cell treatments impacted skin microbiomes, the micr
 
 Days 10 and 21 post Bd infection were chose for these analyses since they represent an intermediate and a later timepoint of infection.
 
-## Statistical analyses
+### Statistical analyses
 
 Differences in transcript expression were calculated with one-way or multiway ANOVAs followed by Tukey post hoc tests. Student’s t-tests were used to determine differences in Bd loads between treatments only. Statistical differences in mucin content and mucosome Bd-killing were assessed with the two-way ANOVA calculator available online through Statistics Kingdom. For RNA sequencing, p-values were calculated with the Wald test and were adjusted using the Benjamini–Hochberg procedure.

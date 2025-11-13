@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.32904.001 Pioneering work with nonhuman primates and recent human studies established intracortical microstimulation (ICMS) in primary somatosensory cortex (S1) as a method of inducing discriminable artificial sensation. However, these artificial sensations do not yet provide the breadth of cutaneous and proprioceptive percepts available through natural stimulation. In a tetraplegic human with two microelectrode arrays implanted in S1, we report replicable elicitations of sensations in both the cutaneous and proprioceptive modalities localized to the contralateral arm, dependent on both amplitude and frequency of stimulation. Furthermore, we found a subset of electrodes that exhibited multimodal properties, and that proprioceptive percepts on these electrodes were associated with higher amplitudes, irrespective of the frequency. These novel results demonstrate the ability to provide naturalistic percepts through ICMS that can more closely mimic the body’s natural physiological capabilities. Furthermore, delivering both cutaneous and proprioceptive sensations through artificial somatosensory feedback could improve performance and embodiment in brain-machine interfaces.
+Pioneering work with nonhuman primates and recent human studies established intracortical microstimulation (ICMS) in primary somatosensory cortex (S1) as a method of inducing discriminable artificial sensation. However, these artificial sensations do not yet provide the breadth of cutaneous and proprioceptive percepts available through natural stimulation. In a tetraplegic human with two microelectrode arrays implanted in S1, we report replicable elicitations of sensations in both the cutaneous and proprioceptive modalities localized to the contralateral arm, dependent on both amplitude and frequency of stimulation. Furthermore, we found a subset of electrodes that exhibited multimodal properties, and that proprioceptive percepts on these electrodes were associated with higher amplitudes, irrespective of the frequency. These novel results demonstrate the ability to provide naturalistic percepts through ICMS that can more closely mimic the body’s natural physiological capabilities. Furthermore, delivering both cutaneous and proprioceptive sensations through artificial somatosensory feedback could improve performance and embodiment in brain-machine interfaces.
 
 ## Introduction
 
@@ -49,6 +49,105 @@ Receptive fields along the upper arm, forearm and hand corresponded to coarse so
 
 FG has reported a wealth of qualitative sensations induced by ICMS (Table 1). Unlike paresthetic sensations experienced post-injury, these naturalistic responses were broadly characterized as cutaneous (e.g. squeeze) or proprioceptive (e.g. rightward movement), and as being subjectively similar to sensations experienced prior to injury. At his own discretion, the subject used single-word descriptors to characterize the perceived sensations as accurately as possible. Single-word descriptors have the advantage that they can be compared across large data sets or subjects. However, as experimental advances continue to push the capabilities of ICMS, responses could become more complex and future studies might benefit from more structured descriptors, which take into consideration the complexity of these sensory experiences (Darie et al., 2017).
 
+**Table 1.**
+ Descriptions of the most prevalent sensations by percentage of total responses.Entries cover 90% of 381 reported sensations, with the final 10% comprising a mixture of other naturalistic cutaneous and proprioceptive descriptors. Each sensation is accompanied by the mode and 25th-75th percentiles in the distribution of amplitudes that elicited each sensation, and by the same quantities for the perceived reported intensities (on a scale of 1 [weak] to 10 [strong]).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>% Total Sensations (381 total)</th>
+      <th>Amplitude μA (mode)</th>
+      <th>Amplitude μA (25th, 75th percentile)</th>
+      <th>Intensity (mode)</th>
+      <th>Intensity (25th, 75th percentile)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Squeeze</td>
+      <td>24.9</td>
+      <td>40</td>
+      <td>40, 87.5</td>
+      <td>7</td>
+      <td>4, 7</td>
+    </tr>
+    <tr>
+      <td>Tap</td>
+      <td>17.3</td>
+      <td>70</td>
+      <td>40, 80</td>
+      <td>1</td>
+      <td>1, 4</td>
+    </tr>
+    <tr>
+      <td>Right movement</td>
+      <td>9.7</td>
+      <td>90</td>
+      <td>55, 90</td>
+      <td>1</td>
+      <td>1, 3</td>
+    </tr>
+    <tr>
+      <td>Vibration</td>
+      <td>8.1</td>
+      <td>40</td>
+      <td>40, 90</td>
+      <td>2</td>
+      <td>2, 3</td>
+    </tr>
+    <tr>
+      <td>Blowing</td>
+      <td>6.6</td>
+      <td>60</td>
+      <td>30, 80</td>
+      <td>1</td>
+      <td>1, 2</td>
+    </tr>
+    <tr>
+      <td>Forward Movement</td>
+      <td>5.8</td>
+      <td>70</td>
+      <td>40, 80</td>
+      <td>1</td>
+      <td>1, 4</td>
+    </tr>
+    <tr>
+      <td>Pinch</td>
+      <td>5.5</td>
+      <td>40</td>
+      <td>40, 90</td>
+      <td>3</td>
+      <td>3, 6</td>
+    </tr>
+    <tr>
+      <td>Press</td>
+      <td>5.0</td>
+      <td>40</td>
+      <td>40, 70</td>
+      <td>7</td>
+      <td>4, 7</td>
+    </tr>
+    <tr>
+      <td>Upward Movement</td>
+      <td>3.9</td>
+      <td>70</td>
+      <td>70, 85</td>
+      <td>1</td>
+      <td>1.25, 4</td>
+    </tr>
+    <tr>
+      <td>Goosebumps</td>
+      <td>3.1</td>
+      <td>100</td>
+      <td>60, 90</td>
+      <td>5</td>
+      <td>2, 5</td>
+    </tr>
+  </tbody>
+</table>
+
 We found that 18 electrodes had cutaneous-only responses across all tested current amplitudes, while six electrodes had proprioceptive-only responses; the rest of the electrodes (22/46) had mixed responses, where the perceived modality (cutaneous or proprioceptive) varied as stimulus parameters changed. Of these mixed-response electrodes, 45% evoked mostly cutaneous sensations, 32% evoked mostly proprioceptive sensations, and 23% had an equal number of cutaneous and proprioceptive sensations (Figure 2B). This pattern of cutaneous and proprioceptive evoked sensations complements recent reports of multimodal (i.e. cutaneous and proprioceptive) neurons throughout S1 (Yau et al., 2016; Kim et al., 2015b). While prior single-unit experiments have defined maps from single neurons to specific unimodal receptive fields (Kaas et al., 1979; Kaas, 1983; Friedman et al., 2004; Romo et al., 2000), the above results suggest that more than one variable may be represented when mapping with ICMS. This finding may be the product of different mechanisms by which receptive fields are observed through recording versus stimulation, and could be an important topic for future work. We found a significant difference between the amplitudes that elicited cutaneous or proprioceptive responses, with the distribution of proprioceptive responses skewed towards higher amplitudes (Figure 3A), when pooling across all electrodes and amplitudes that produced a sensation (p=0.039, Kruskal-Wallis nonparametric ANOVA, χ2(1,378)=4.41, proprioceptive responses N = 79, cutaneous responses N = 302). To assess consistent current delivery across all electrodes, we measured electrode impedance at the beginning of every session and found no significant difference when comparing proprioceptive or cutaneous responses (p=0.237, χ2(1,378)=1.39) and, furthermore, we found no significant difference between the impedance of proprioceptive- and cutaneous-only (p=0.922, χ2(1,155)=0.01) or mixed-response electrodes (p=0.372, χ2(1,221)=0.8). To account for potential bias from an uneven distribution of responses across amplitudes, we compared the proportion of proprioceptive and cutaneous responses in a bootstrapped resampling (N = 10000), in which each repetition drew 15 responses at each amplitude from all data pooled across days (Figure 3B). We observed a clear relationship between the number of proprioceptive and cutaneous responses and stimulation amplitudes, measured through overall positive slopes in the 1st-order polynomial fit at each iteration for proprioceptive responses, and negative slopes for cutaneous responses (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32904/elife-32904-fig3-v1.jpg)
@@ -65,25 +164,25 @@ To our knowledge, this is the first report in human of replicable, purely natura
 
 ## Materials and methods
 
-## Subject
+### Subject
 
 We recruited and consented a 32-year-old male participant (FG) with C5-level complete spinal cord injury, 1.5 years post-injury, to participate in a clinical trial of a BMI system with intracortical recording and stimulation. The subject has residual sensation in the anterior-radial section of his upper arm, and some residual sensation in the posterior-radial section of his upper arm and forearm, which present as paresthesias. All procedures were approved by the Institutional Review Boards (IRB) of the University of Southern California (USC) and Rancho Los Amigos National Rehabilitation Hospital (RLA). The implant procedure occurred at Keck Hospital of USC, and study sessions took place at RLA.
 
-## Surgical planning and implantation
+### Surgical planning and implantation
 
 Surgical planning followed the protocols described in (Aflalo et al., 2015), with an additional task for identifying an implant location within somatosensory cortex. In this task, a visual cue prompted the experimenter, who was standing next to the MRI, to reach into the MRI machine with a wooden pole and repeatedly press at one of three points on the subjects right upper limb where he previously reported residual paresthetic sensation; biceps, forearm and thenar eminence. The subject was instructed to attend to any residual sensation he felt at each location and report the number of times the experimenter touched him on the cued location (Kastner et al., 1998; Staines et al., 2002). After functional imaging, three target locations for electrode placement were identified; supramarginal gyrus (SMG), ventral premotor cortex (PMv) and primary somatosensory cortex (S1). One 96-channel, platinum-tipped Neuroport microelectrode recording array (Blackrock Microsystems, Salt Lake City, UT) was implanted in each of SMG and PMv. Two 7 × 7 SIROF (sputtered iridium oxide film)-tipped microelectrode arrays (with 48 physically-connected channels each) were implanted in S1. The SIROF-tipped electrodes have lower impedance than the platinum-tipped electrodes, and thus are better suited to stimulation.
 
-## Stimulation and recording parameters
+### Stimulation and recording parameters
 
 All stimuli consisted of biphasic, charge-balanced, cathodic-leading pulses, with 200 µs width per phase, 53 µs interphase interval, and one-second stimulus duration delivered to a single electrode on the S1 array only. The maximum charge delivered per phase was 20 nC. We selected these parameters, and set electric charge limits according to safe ranges shown in ICMS studies with NHPs (Kim et al., 2015a). Stimulation was delivered with a Blackrock CereStim device, and stimulation parameters were set and delivered using the CereStim API through MATLAB (The Mathworks Inc, Natick, MA) software (MATLAB code in Source code file 1).
 
-## Task
+### Task
 
 Experiment 1: After initial assessment of implant viability, we evaluated the effects of stimulation parameters through a percept-detection task. For this primary mapping task, each of the 96 stimulation electrodes were evaluated at eight amplitudes: 20, 30, 40, 60, 70, 80, 90, and 100 μA, at 150 Hz. The subject was seated in a wheelchair approximately 1.5 meters from a TV screen. The subject was instructed to look at a fixation point in the middle of the screen throughout the experiment. In each trial, after a three-second inter-trial interval, the subject was presented with a large purple circle on the screen indicating that an electric stimulus was being delivered. Then, after a one-second delay, an auditory cue signaled the subject to report whether he felt any sensation. When a sensation was perceived, the subject reported its location on a body and hand map, with anterior and posterior views, by referencing a fine overlaying grid (Figure 1). The subject also reported qualitative characteristics including the perceived stimulus intensity, the perceived duration of stimulation, and a description of the sensation (Table 1). Sensations closer in nature to tactile stimuli were classified as cutaneous, and those triggering a feeling of movement or change in position were classified as proprioceptive. To complete the mapping of amplitude, we ran trial blocks where we randomly selected a subset of electrodes. Each block contained three replicates of stimulation per parameter, per electrode. An additional set of trials, numbering 10% of the total trials in a block, were added as ‘catch’ trials, where the visual stimuli on the screen and auditory response cue remained identical but the stimulation did not occur. Catch trials were randomly interleaved among the normal trials. In each block, trials were ordered such that stimulation did not occur to the same or adjacent electrodes concurrently.
 
 Experiment 2: For the second mapping task, five electrodes were selected for further evaluation at different amplitudes and frequencies. All the phases of the task and other stimulation parameters were the same as in the previous mapping task. The subset of electrodes selected for this task were those that exhibited the most reliable responses in the first mapping task. We varied the current amplitude (20, 40, 60, 80, 100 μA) and pulse frequency (50, 100, 150, 200, 250, 300 Hz), and tested each amplitude-frequency combination six times per electrode. The full dataset was obtained over three consecutive days. In each day, each of the five electrodes received two replicates of all possible amplitude and frequency combinations. The order of electrode stimulation was determined pseudorandomly.
 
-## Statistics and analysis methods
+### Statistics and analysis methods
 
 Throughout the analysis we used the Kruskal-Wallis nonparametric ANOVA statistical test. We calculated correlations between responses using the Pearson linear correlation coefficient.
 

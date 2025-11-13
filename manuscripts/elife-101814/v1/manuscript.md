@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/04nfjn472 Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences Prague Czech Republic
-2. https://ror.org/0415vcw02 Czech University of Life Sciences Prague Czech Republic
-3. https://ror.org/024d6js02 Department of Ecology, Faculty of Science, Charles University Prague Czech Republic
-4. https://ror.org/024d6js02 Laboratory of Electron Microscopy, Faculty of Science, Charles University Prague Czech Republic
-5. https://ror.org/05pq4yn02 Biology Centre of the Czech Academy of Sciences České Budějovice Czech Republic
-6. https://ror.org/0199hds37 University Sorbonne Paris Nord Villetaneuse France
+1. Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences Prague Czech Republic ([ROR:04nfjn472](https://ror.org/04nfjn472))
+2. Czech University of Life Sciences Prague Czech Republic ([ROR:0415vcw02](https://ror.org/0415vcw02))
+3. Department of Ecology, Faculty of Science, Charles University Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+4. Laboratory of Electron Microscopy, Faculty of Science, Charles University Prague Czech Republic ([ROR:024d6js02](https://ror.org/024d6js02))
+5. Biology Centre of the Czech Academy of Sciences České Budějovice Czech Republic ([ROR:05pq4yn02](https://ror.org/05pq4yn02))
+6. University Sorbonne Paris Nord Villetaneuse France ([ROR:0199hds37](https://ror.org/0199hds37))
 
 † Corresponding author
 
 ## Abstract
 
-Pheromone communication is the cornerstone of eusocial insect societies since it mediates the social hierarchy, division of labor, and concerted activities of colony members. The current knowledge on molecular mechanisms of social insect pheromone detection by odorant receptors (ORs) is limited to bees and ants, while no OR was yet functionally characterized in termites, the oldest eusocial insect clade. Here, we present the first OR deorphanization in termites. We selected four OR sequences from the annotated antennal transcriptome of the termite Prorhinotermes simplex (Psammotermitidae), expressed them in Empty Neuron Drosophila , and functionally characterized them using single sensillum recording (SSR). For one of the selected ORs, PsimOR14, we obtained strong responses to the main component of P. simplex trail-following pheromone, the monocyclic diterpene neocembrene. PsimOR14 showed a narrow tuning to neocembrene with only one additional compound out of 67 tested generating non-negligible responses. We report on homology-based modeling and molecular dynamics simulations of ligand binding by PsimOR14. Subsequently, we used SSR in P. simplex workers and identified the olfactory sensillum responding to neocembrene, thus likely expressing PsimOR14 . Finally, we demonstrate that PsimOR14 is significantly more expressed in worker antennae compared to soldiers, which correlates with higher sensitivity of workers to neocembrene.
+Pheromone communication is the cornerstone of eusocial insect societies since it mediates the social hierarchy, division of labor, and concerted activities of colony members. The current knowledge on molecular mechanisms of social insect pheromone detection by odorant receptors (ORs) is limited to bees and ants, while no OR was yet functionally characterized in termites, the oldest eusocial insect clade. Here, we present the first OR deorphanization in termites. We selected four OR sequences from the annotated antennal transcriptome of the termite Prorhinotermes simplex (Psammotermitidae), expressed them in Empty Neuron Drosophila, and functionally characterized them using single sensillum recording (SSR). For one of the selected ORs, PsimOR14, we obtained strong responses to the main component of P. simplex trail-following pheromone, the monocyclic diterpene neocembrene. PsimOR14 showed a narrow tuning to neocembrene with only one additional compound out of 67 tested generating non-negligible responses. We report on homology-based modeling and molecular dynamics simulations of ligand binding by PsimOR14. Subsequently, we used SSR in P. simplex workers and identified the olfactory sensillum responding to neocembrene, thus likely expressing PsimOR14. Finally, we demonstrate that PsimOR14 is significantly more expressed in worker antennae compared to soldiers, which correlates with higher sensitivity of workers to neocembrene.
 
 ## Introduction
 
@@ -51,27 +51,41 @@ Here, we report on the first OR deorphanization in termites. We build on the kno
 
 ## Results
 
-## Phylogenetic reconstruction and candidate OR selection
+### Phylogenetic reconstruction and candidate OR selection
 
 In the first step, we reconstructed the phylogeny of termite ORs and ORCos using published protein sequences from two species in combination with our antennal transcriptome data on three species and the bristletail Lepisma saccharina as basal insect outgroup. In the resulting tree, all ORCo sequences and ORs from L. saccharina were basally situated, while the majority of termite OR sequences were organized into two large sister clusters, both of which were further split into several sub-branches mostly containing one sequence from all five termite species (Figure 1A). Only a few exceptions to this highly orthologous pattern were spotted, such as isolated sequences or species-specific expansions with a maximum of four paralogs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig1-v1.jpg)
+
+**Figure 1.:** (A) Phylogenetic tree is based on 182 protein sequences from five species of termites and the bristletail Lepisma saccharina as a basal insect outgroup, and also includes the sequences of ORCo. The topology and branching supports were inferred using the IQ-TREE maximum likelihood algorithm with the JTT+F+R8 model and supported by 10,000 iterations of ultrafast bootstrap approximation. Protein sequences of termite ORs can be found under the same labeling in Johny et al., 2023. L. saccharina sequences are listed in Thoma et al., 2019. Arrowheads highlight the four ORs from P. simplex selected for functional characterization. A fully annotated version of the tree is provided as Figure 1—figure supplement 1. (B) Heatmap shows the transcript abundances of 50 ORs identified in the RNAseq data from P. simplex worker antennae available in NCBI SRA archive under accession SRX17749141.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Protein sequences of termite ORs can be found under the same labeling in Johny et al., 2023. Lepisma saccharina sequences used as basal insect outgroup are listed in Thoma et al., 2019. The topology and branching supports were inferred using the IQ-TREE maximum likelihood algorithm with the JTT+F+R8 model and supported by 10,000 iterations of ultrafast bootstrap approximation.
+
 Out of the 50 ORs identified in P. simplex, 26 sequences represented full open reading frames with at least 6 undisputed transmembrane domains predicted using TMHMM-2.0. From these, we selected four sequences (PsimOR9, 14, 30, and 31) situated in different parts (sub-branches) of the tree (Figure 1) and used them for transgenic D. melanogaster generation and SSR screening.
 
-## Functional characterization of P. simplex ORs in D. melanogaster ab3 sensillum
+### Functional characterization of P. simplex ORs in D. melanogaster ab3 sensillum
 
 We expressed the four selected P. simplex ORs in the recently improved version of the D. melanogaster Empty Neuron system Chahda et al., 2019; the crossing scheme for fly generation adapted from Gonzalez et al., 2016 is shown in Figure 2—figure supplement 1. Spontaneous SSR firing rates of the four transgenic lines showed an expected pattern with no abnormal bursts, indicating that the ORs were functional. The flies were first subjected to SSR screening with Panel 1, consisting of 11 semiochemicals relevant to termite chemical communication and structurally related compounds. As shown in Figure 2A, PsimOR9 and PsimOR30 did not provide any strong response to any of the tested compounds, and PsimOR31 broadly and weakly responded to several compounds. By contrast, PsimOR14 systematically and strongly responded to stimulations by the monocyclic diterpene hydrocarbon neocembrene, which is the main component of the TFP in the genus Prorhinotermes (Sillam-Dussès et al., 2009). Additionally, a moderate PsimOR14 response was also recorded for the linear diterpene alcohol geranylgeraniol, while all other compounds in the panel, including two other terpenoids, only elicited weak or no responses (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap showing the average responses of the four odorant receptors (ORs) as Δ spikes/s from 3 to 6 independent replicates. (B) Comparison of SSR responses of transgenic D. melanogaster ab3A neurons expressing PsimOR14 (ab3A:PsimOR14) and W1118 D. melanogaster. The bars show the average Δ spikes/s values from five independent replicates ± SEM. (C) Characteristic SSR traces of ab3A:PsimOR14 and W1118 flies for 1 µg dose of neocembrene and geranylgeraniol. (D) Dose–response curve of ab3A:PsimOR14 SSR responses to neocembrene. The graph shows average Δ spikes/s values ± SEM based on nine replicates (8 in case of 100 ng and 4 in case of 500 ng stimulations). The curve fit and ED50 value were calculated using log(agonist) versus response non-linear algorithm with least square fit method and the constraint of minimal response >0. The crossing scheme for transgenic fly generation is shown in Figure 2—figure supplement 1, the raw data for all graphs is provided in Figure 2—source data 1–6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig2-figsupp1-v1.jpg)
+
 We then compared the responses of Drosophila ab3 sensillum in PsimOR14 expressing flies with those of W1118 flies. As evidenced in Figure 2B, the W1118 ab3 sensillum did not show any significant neuronal response to Panel 1 compounds, while the transgenic PsimOR14 line generated an average Δ spike number of >50 spikes/s for neocembrene and a minor secondary response of ~25 Δ spikes/s for geranylgeraniol. Characteristic responses for both lines to the two compounds are depicted in Figure 2C. In the next step, we tested the dose–response behavior of PsimOR14 flies to neocembrene and recorded an exponentially increasing neuronal response over the range of 0.01–10 ng to ED50 = ~24 ng and a lack of saturation at the dose of 500 ng (Figure 2D).
 
-## PsimOR14 is narrowly tuned to neocembrene, the main TFP component
+### PsimOR14 is narrowly tuned to neocembrene, the main TFP component
 
 To further address the specificity of PsimOR14 tuning, we tested three additional panels containing 56 frequently occurring insect semiochemicals from various chemical classes. As shown in Figure 3A, none of these compounds, including multiple terpenoids (mono-, sesqui-, di-), generated a strong response, suggesting a narrow tuning of PsimOR14 to neocembrene. The narrow tuning of PsimOR14 is evident also from the tuning curve depicted in Figure 3B, with the receptor lifetime sparseness value 0.88. These results confirm that PsimOR14 is a pheromone receptor adaptively tuned to detect the main TFP component, neocembrene.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig3-v1.jpg)
 
-**Figure 3.:** D. melanogaster ab3 sensillum expressing PsimOR14 to the complete set of 67 compounds (Panels 1–4).(A) Heatmap showing the average responses as Δ spikes/s from 3 to 6 independent replicates. (B) Tuning curve of PsimOR14 for the 67 compounds contained in Panels 1–4. The raw data for both graphs is provided in Figure 3—source data 1–3. Origin and purity of the tested chemicals are provided in Figure 3—source data 4.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.
+**Figure 3.:** (A) Heatmap showing the average responses as Δ spikes/s from 3 to 6 independent replicates. (B) Tuning curve of PsimOR14 for the 67 compounds contained in Panels 1–4. The raw data for both graphs is provided in Figure 3—source data 1–3. Origin and purity of the tested chemicals are provided in Figure 3—source data 4.
 
-## Identification of P. simplex olfactory sensillum responding to neocembrene
+### Identification of P. simplex olfactory sensillum responding to neocembrene
 
 Our next goal was to identify the antennal olfactory sensillum responsible for neocembrene detection by P. simplex workers using a combination of SSR measurements with scanning electron microscopy (SEM) and high-resolution SEM (HR-SEM) imaging. Since no previous study reported SSR responses of termite olfactory sensilla to pheromones or environmental cues, we decided to search for the neocembrene-detecting sensillum on the last flagellomere, known to harbor by far the most sensilla in termite workers (Castillo et al., 2021).
 
@@ -79,33 +93,98 @@ In SSR experiments with the termite-relevant compounds from Panel 1, we obtained
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig4-v1.jpg)
 
-**Figure 4.:** P. simplex workers.(A) Scanning electron microscopy (SEM) photograph of the last flagellomere of P. simplex worker. Arrow shows a small multiporous grooved sensillum responding to neocembrene and geranylgeraniol. Scale bar represents 50 µm. (B) High-resolution SEM (HR-SEM) view on the neocembrene-responding sensillum. Scale bar in the inset represents 500 nm. (C) Detailed view on single-sensillum recording (SSR) traces recorded from the neocembrene-responding sensillum during spontaneous firing, and upon stimulation with neocembrene and geranylgeraniol.
+**Figure 4.:** (A) Scanning electron microscopy (SEM) photograph of the last flagellomere of P. simplex worker. Arrow shows a small multiporous grooved sensillum responding to neocembrene and geranylgeraniol. Scale bar represents 50 µm. (B) High-resolution SEM (HR-SEM) view on the neocembrene-responding sensillum. Scale bar in the inset represents 500 nm. (C) Detailed view on single-sensillum recording (SSR) traces recorded from the neocembrene-responding sensillum during spontaneous firing, and upon stimulation with neocembrene and geranylgeraniol.
 
 The SSR response spectrum of neocembrene sensillum to Panel 1 was markedly similar to that of ab3A neuron of PsimOR14-expressing Drosophila (Figure 5A). None of the compounds elicited higher average responses than 10 Δ spikes/s, except for neocembrene and geranylgeraniol; their average Δ spikes/s were even slightly higher than those of heterologously expressed PsimOR14, reaching ~65 and ~29, respectively (Figure 5A, B). Likewise, the dose–response experiment with neocembrene indicated a higher sensitivity threshold and lower ED50 = 0.016 ng (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig5-v1.jpg)
 
-**Figure 5.:** P. simplex worker.(A) SSR responses to Panel 1. The bars show the average Δ spikes/s values from 8 to 17 replicates ± SEM. The raw data is provided in Figure 5—source data 1. (B) Characteristic SSR traces of the neocembrene-detecting sensillum for neocembrene and geranylgeraniol. (C) Dose–response curve of the SSR responses to neocembrene by the neocembrene-responding sensillum. The graph shows average Δ spikes/s values ± SEM based on 9–11 replicates. The curve fit and ED50 value were calculated using log(agonist) versus response non-linear algorithm with least square fit method and the constraint of minimal response >0. The raw data is provided in Figure 5—source data 2.Figure 5—source data 1.P. simplex workers.Figure 5—source data 2.P. simplex neocembrene sensillum.
+**Figure 5.:** (A) SSR responses to Panel 1. The bars show the average Δ spikes/s values from 8 to 17 replicates ± SEM. The raw data is provided in Figure 5—source data 1. (B) Characteristic SSR traces of the neocembrene-detecting sensillum for neocembrene and geranylgeraniol. (C) Dose–response curve of the SSR responses to neocembrene by the neocembrene-responding sensillum. The graph shows average Δ spikes/s values ± SEM based on 9–11 replicates. The curve fit and ED50 value were calculated using log(agonist) versus response non-linear algorithm with least square fit method and the constraint of minimal response >0. The raw data is provided in Figure 5—source data 2.
 
-## PsimOR14 gene and protein structure, protein modeling, ligand docking, MM/PBSA, MD simulations
+### PsimOR14 gene and protein structure, protein modeling, ligand docking, MM/PBSA, MD simulations
 
 Mapping the PsimOR14 transcript sequence on P. simplex draft genome revealed that the gene consists of six exons and is situated on the same locus and in close vicinity of PsimOR15, with which it shares the exon-intron boundaries, suggesting a recent diversification of the two genes via duplication, as also supported by their high sequence similarity (Figure 1A and Figure 6A). Transcript (Figure 6B) and protein (Figure 6C) structures of PsimOR14 showed the presence of seven transmembrane domains (S1–S7) with the largest extracellular loop between S3 and S4 and the longest intracellular loop between S4 and S5.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig6-v1.jpg)
 
-**Figure 6.:** (A) Genomic locus containing PsimOR14 and PsimOR15. PsimOR14 gene consists of one non-coding and five protein-coding exons. (B) PsimOR14 transcript with six exons, showing the protein-coding (higher boxes) and untranslated regions (lower boxes), and open reading frame (ORF; arrow). (C) Transmembrane architecture of PsimOR14. In red are shown seven residues interacting with neocembrene. Light blue ellipse shows the intracellular loop the most impacted by ligand binding. (D) Modeled apoform of PsimOR14. Red region denotes the binding site identified via docking, light blue region represents the intracellular S4–S5 loop. (E) Holoforms of PsimOR14 with three docked ligands. (F) Absolute PsimOR4 dynamicity expressed as average volumes explored by atoms per simulation step in PsimOR14 apoform and upon binding the three studied ligands. (G) Relative PsimOR14 dynamicity expressed as average explored atom volumes upon ligand binding relative to the volumes in PsimOR14 apoform. Nucleotide and protein sequences of PsimOR14 are provided under NCBI entry OR921181 and as Figure 6—source data 1. Interacting residues and their binding energies to the ligands are listed in Figure 6—source data 2. The raw data for explored atomic volumes are provided in Figure 6—source data 3.Figure 6—source data 1.Figure 6—source data 2.Figure 6—source data 3.
+**Figure 6.:** (A) Genomic locus containing PsimOR14 and PsimOR15. PsimOR14 gene consists of one non-coding and five protein-coding exons. (B) PsimOR14 transcript with six exons, showing the protein-coding (higher boxes) and untranslated regions (lower boxes), and open reading frame (ORF; arrow). (C) Transmembrane architecture of PsimOR14. In red are shown seven residues interacting with neocembrene. Light blue ellipse shows the intracellular loop the most impacted by ligand binding. (D) Modeled apoform of PsimOR14. Red region denotes the binding site identified via docking, light blue region represents the intracellular S4–S5 loop. (E) Holoforms of PsimOR14 with three docked ligands. (F) Absolute PsimOR4 dynamicity expressed as average volumes explored by atoms per simulation step in PsimOR14 apoform and upon binding the three studied ligands. (G) Relative PsimOR14 dynamicity expressed as average explored atom volumes upon ligand binding relative to the volumes in PsimOR14 apoform. Nucleotide and protein sequences of PsimOR14 are provided under NCBI entry OR921181 and as Figure 6—source data 1. Interacting residues and their binding energies to the ligands are listed in Figure 6—source data 2. The raw data for explored atomic volumes are provided in Figure 6—source data 3.
 
 Figure 6D shows the initial PsimOR14 model obtained using AlphaFold 2. Three terpenoid ligands, that is, the best agonists neocembrene and geranylgeraniol, and a weak agonist (+)-limonene, were selected for docking into the identified binding site. Dockings are visualized in Figure 6E, the final scores of the best-ranked poses are shown in Table 1. The predicted docking scores indicated neocembrene as the best ligand, followed by geranylgeraniol and (+)-limonene, in line with the ranking of their biological effect in SSR assays (Table 1). (+)-Limonene ranked as the worst agonist also according to the binding free energy calculated in MM/PBSA analysis, while the best energy score was obtained for geranylgeraniol followed by neocembrene (Table 1). Both docking and MM/PBSA analysis suggested that primarily Van der Waals interactions facilitate the binding; only in the case of geranylgeraniol has a non-negligible contribution of electrostatic interactions been recorded. Per-residue decomposition results (Figure 6C) showed that all three ligands bind two hydrophobic patches made out of residues from S3 and S4 (Cys154, Ala157, Val158; Thr221, Leu224, Ala225, Tyr228). Neocembrene and (+)-limonene only bind these patches, while geranylgeraniol also interacts with additional residues (Figure 6—source data 2).
 
+**Table 1.**
+ Docking scores and energy values inferred from the docking experiment and from MM/PBSA simulations for binding interactions of neocembrene, geranylgeraniol, and (+)-limonene with PsimOR14.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Docking experiment</th>
+      <th colspan="4">MM/PBSA E (kcal/mol) ± SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ligand</td>
+      <td>Docking score</td>
+      <td>VDWAALS</td>
+      <td>Electrostatic</td>
+      <td>ΔTOTAL</td>
+      <td>ΔVDWAALS</td>
+      <td>ΔEEL</td>
+      <td>ΔGSOLV</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">(kcal/mol)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neocembrene</td>
+      <td>–8.658</td>
+      <td>–19.777</td>
+      <td>–0.223</td>
+      <td>–28.72 ± 1.46</td>
+      <td>–26.92 ± 1.24</td>
+      <td>–0.29 ± 0.56</td>
+      <td>–1.51 ± 0.10</td>
+    </tr>
+    <tr>
+      <td>Geranylgeraniol</td>
+      <td>–8.331</td>
+      <td>–18.786</td>
+      <td>–11.137</td>
+      <td>–36.98 ± 1.22</td>
+      <td>–35.47 ± 0.96</td>
+      <td>–0.77 ± 0.56</td>
+      <td>–0.73 ± 0.27</td>
+    </tr>
+    <tr>
+      <td>(+)-Limonene</td>
+      <td>–7.638</td>
+      <td>–16.134</td>
+      <td>–0.561</td>
+      <td>–20.02 ± 2.63</td>
+      <td>–20.57 ± 2.30</td>
+      <td>–0.35 ± 0.47</td>
+      <td>0.89 ± 2.21</td>
+    </tr>
+  </tbody>
+</table>
+
 MD simulations of per atom explored volumes in PsimOR14 apoform and upon ligand binding delimited three regions with high dynamicity, that is the N-terminal region, the extracellular S3 and S4 loops, and especially the intracellular S4 and S5 loop (Figure 6F). Binding of each of the three ligands reduced the overall protein dynamicity; this protein stabilization did not differ dramatically among the three ligands. By contrast, binding of geranylgeraniol and neocembrene led to a conspicuous dynamicity increase in a portion of the S4 and S5 loop, compared to both the apoform and (+)-limonene binding (Figure 6G).
 
-## Caste-biased PsimOR14 expression and antennal sensitivity to neocembrene
+### Caste-biased PsimOR14 expression and antennal sensitivity to neocembrene
 
 We next decided to compare the expression pattern of PsimOR14 between P. simplex workers and soldiers, along with the sensitivity of the two castes to its preferred ligand, neocembrene. Both DESeq2 and EdgeR differential expression analyses of RNAseq read counts from heads (including antennae) of workers and soldiers revealed that PsimOR14 is significantly more expressed in workers, being among the three most upregulated ORs in workers (Figure 7A). Subsequent electroantennographic (EAG) measurements were in line with this observation and indicated significantly stronger responses to neocembrene in workers (p = 0.012) (Figure 7B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101814/elife-101814-fig7-v1.jpg)
 
-**Figure 7.:** PsimOR14 expression and EAG responses between P. simplex workers and soldiers.(A) Volcano plot representing edgeR differential gene expression analysis of all 50 P. simplex odorant receptors (ORs) in RNAseq data from soldier and workers heads (including antennae) sequenced in three independent biological replicates per caste. Colored dots mark ORs reaching absolute value of log2 fold change ≥1, horizontal lines represent p-value thresholds of 0.05 and 0.01. Based on SRA archives accessible under SRX18952230–32 and SRX18952237–39. Numeric values of the edgeR and DESeq2 differential expression analysis are provided in Figure 7—source data 1. (B) EAG responses of whole antenna preparations of workers and soldiers to neocembrene at a dose of 10 ng (mean ± SD shown on log2 scale). Inter-caste differences were compared using a t-test on log2-transformed data. Raw data is shown in Figure 7—source data 2.Figure 7—source data 1.Figure 7—source data 2.
+**Figure 7.:** (A) Volcano plot representing edgeR differential gene expression analysis of all 50 P. simplex odorant receptors (ORs) in RNAseq data from soldier and workers heads (including antennae) sequenced in three independent biological replicates per caste. Colored dots mark ORs reaching absolute value of log2 fold change ≥1, horizontal lines represent p-value thresholds of 0.05 and 0.01. Based on SRA archives accessible under SRX18952230–32 and SRX18952237–39. Numeric values of the edgeR and DESeq2 differential expression analysis are provided in Figure 7—source data 1. (B) EAG responses of whole antenna preparations of workers and soldiers to neocembrene at a dose of 10 ng (mean ± SD shown on log2 scale). Inter-caste differences were compared using a t-test on log2-transformed data. Raw data is shown in Figure 7—source data 2.
 
 ## Discussion
 
@@ -133,13 +212,338 @@ Future research in termites should also aim at finding the ORs or other chemosen
 
 ## Materials and methods
 
-## Termites
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR14_F</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>ATGATTCGATCAAAGAGAAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR14_R</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>TTAGGAGTCGTGTAGATGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO31_F</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>ATGGAATACATAAAAAATGAAACATATTCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO31_R</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>TCAACCTACGACATGTGAGTTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR9_F</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>ATGGACAGCCTTTACGACCAATCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR9_R</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>TCATTCAGTGACTGAGGGATCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO30_F</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>ATGGAGCACAGGAAATACAAAGTGACAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO30_R</td>
+      <td>This paper</td>
+      <td>PCR primer – cloning</td>
+      <td>TTACGTTCCCTGATTTGTGTCGGTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOrco_F</td>
+      <td>This paper</td>
+      <td>PCR primer – cDNA check</td>
+      <td>ATGTACAAGTTCAGGTTACACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOrco_R</td>
+      <td>This paper</td>
+      <td>PCR primer – cDNA check</td>
+      <td>CTAGTTGAGCTGTACCAACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GW1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PCR and Sanger sequencing primer</td>
+      <td>GTTGCAACAAATTGATGAGCAATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GW2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PCR and Sanger sequencing primer</td>
+      <td>GTTGCAACAAATTGATGAGCAATTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UAS1</td>
+      <td>Gonzalez et al., 2016</td>
+      <td>Sanger sequencing primer</td>
+      <td>TAGCGAGCGCCGGAGTATAAATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>UAS2</td>
+      <td>Gonzalez et al., 2016</td>
+      <td>Sanger sequencing primer</td>
+      <td>ACTGATTTCGACGGTTACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DmOr22a_F</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>TCTCCAGCATCGCCGAGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DmOr22a_R</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>CGGCAGAGGTCCAGTCCGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR14_SW_F</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>GAGAGCCAAGCAAACGAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR14_SW_R</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>TTTAGAAGGGAGCCACATCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO31_SW_F</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>GCTGGGTTAATCCCGATCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO31_SW_R</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>GCATGGCACCAAATAGTTCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR9_SW_F</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>TGGGCGAAACTGAGGATATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimOR9_SW_R</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>CGAGCCGACATAGAAGAAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO30_SW_F</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>TGCCATCACCAGCAGATAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PsimO30_SW_R</td>
+      <td>This paper</td>
+      <td>PCR primer – genotyping</td>
+      <td>CACCGACTGACTCAGCATATT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink RNA Mini</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 12183018A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript IV Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 18090050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DreamTaq Green PCR Master Mix</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: K1081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAquick Gel Extraction Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. #: 28706</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pCR8/GW/TOPO TA Cloning Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: K250020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OneShot TOP10</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: C404010</td>
+      <td>Competent cells, Certificates of Analysis available at https://www.thermofisher.com/order/catalog/product/C404010</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAprep Spin Miniprep Columns</td>
+      <td>QIAGEN</td>
+      <td>Cat. #: 27115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 11791019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUASg.attb (plasmid)</td>
+      <td>Drosophila Genomics Resource Center, Bloomington, USA</td>
+      <td>DGRC Stock 1422; https://dgrc.bio.indiana.edu//stock/1422; RRID:DGRC_1422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUASg.attB-PsimOR (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w; Or22abGAL4</td>
+      <td>Thomas O. Auer (from Richard Benton Lab, University of Lausanne, Switzerland)</td>
+      <td>FLYB:FBal0018186</td>
+      <td>Chahda et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>W1118</td>
+      <td>Michal Žurovec (from Laboratory of Molecular Genetics, Institute of Entomology, Czechia)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w-; Bl/Cyo; TM2/TM6B</td>
+      <td>MPI-Jena, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w-; +/+; UAS-OR(w+)/UAS-OR(w+)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>On-demand commercial transgenesis by BestGene Inc, USA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Cryptotermes secundus)</td>
+      <td>CsecOR and ORco sequences</td>
+      <td>Johny et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Zootermopsis nevadensis)</td>
+      <td>ZnevOR and ORco sequences</td>
+      <td>Johny et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Lepisma saccharina)</td>
+      <td>LsacOR sequences</td>
+      <td>Thoma et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Inquilinitermes inquilinus)</td>
+      <td>IinqOR and ORco sequences</td>
+      <td>Johny et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Neotermes cubanus)</td>
+      <td>NcubOR and ORco sequences</td>
+      <td>Johny et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (Prorhinotermes simplex)</td>
+      <td>PsimOR and ORco sequences</td>
+      <td>Johny et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Termites
 
 Multiple laboratory colonies of P. simplex, originating from previous field collections in Cuba and Florida, are held in the Institute of Organic Chemistry and Biochemistry, Czech Academy of Sciences. Colonies are reared in glass vivaria at 27°C and 80% relative humidity in clusters of spruce wood slices.
 
 The data reported here were collected from three mature Cuban colonies. The first one was used for antennal transcriptome sequencing and assembly followed by phylogenetic analysis, as described in Johny et al., 2023. The second one was used for RNA extraction for OR cloning, SSR, SEM, and HR-SEM. The third one was used for caste-specific head transcriptomes (head + antennae) of workers and soldiers, for caste-specific EAG recordings, and for SSR confirmation of the neocembrene-detecting sensillum. For all experiments with workers, fourth or fifth stage workers were selected as the most abundant developmental stages, recognized according to body size and head width.
 
-## RNA extraction, OR cloning, and construct generation
+### RNA extraction, OR cloning, and construct generation
 
 Total RNA was extracted from 20 pairs of dissected P. simplex antennae using PureLink RNA Mini Kit (Invitrogen, Carlsbad, CA, USA) following the manufacturer’s protocol and quantified using NanoDrop spectrophotometer (Thermo, Delaware, USA). From the total RNA, 2 µg was used to synthesize the cDNA using SuperScript IV Reverse Transcriptase (Invitrogen, Carlsbad, CA, USA) according to the manufacturer’s instructions. The efficiency of cDNA synthesis was evaluated by amplification of ORCo. The list of primers is provided in Key Resource Table.
 
@@ -147,25 +551,25 @@ The full-length open reading frame of each selected PsimORs was PCR-amplified fr
 
 The expression vector constructs were prepared using the Gateway LR recombination cloning technology (Invitrogen, USA) based on recombination of the phage-like attachment sites attL/R in pCR8/GW/TOPO with the bacteria-like attachment site attB in pUASg.attb vector (obtained from Drosophila Genomics Resource Center, Bloomington, USA). The resulting constructs pUASg.attB-PsimOR were purified using the QIAprep 2.0 Spin Miniprep Columns (QIAGEN, Germany) and insert sequences were verified by Sanger sequencing at Eurofins Genomics (Germany). All primers used for Sanger sequencing and colony PCR are listed in Key Resource Table.
 
-## Fly lines
+### Fly lines
 
 D. melanogaster lines used in the Empty Neuron system were kindly provided by Dr. Thomas O. Auer (from Richard Benton Lab, University of Lausanne, Switzerland). The wild-type W1118 line, used as a control, was kindly provided by Prof. Michal Žurovec (Biology Centre, Czechia). All D. melanogaster lines were reared in an incubator which was set at 24 ± 2°C with relative humidity of 50 ± 5%. Flies were fed with in-house prepared diet based on standard cornmeal food. The fly lines used are listed in Key Resource Table.
 
-## Transgenic expression of termite ORs in D. melanogaster ab3A neuron
+### Transgenic expression of termite ORs in D. melanogaster ab3A neuron
 
 Selected PsimORs were expressed in the D. melanogaster Empty Neuron system for functional screening. Transgenic D. melanogaster UAS-PsimOR lines were generated by BestGene Inc (Chino Hills, CA, USA) by injecting pUASg.attB-PsimOR vectors into fly embryos expressing the integrase PhiC31 and carrying an attP landing site resulting in flies with genotype w−; +; UAS-PsimOR (w+)/+.
 
 The recent CRISPR–Cas9-engineered empty neuron line Or22ab-Gal4 (Chahda et al., 2019) was used as Δhalo genetic background for the expression of UAS-PsimOR in Dmel ab3 sensilla. The fly crossing scheme was adapted from Gonzalez et al., 2016 with a modification at the F3 crossing. Final homozygote lines with UAS-PsimOR and Or22ab-Gal4 were generated and used for the electrophysiological recordings. The full description of the crossing scheme is provided in Figure 2—figure supplement 1.
 
-## Chemicals
+### Chemicals
 
 For SSR measurements, we used a total of 67 chemicals organized into four panels. The initial screening Panel 1 contained 11 compounds biologically relevant to termites, that is components of termite pheromones and CHCs known from Neoisoptera and structurally related compounds. This panel was used for initial SSR screening of PsimOR9, 14, 30, and 31 in transgenic D. melanogaster and for SSR experiments with P. simplex workers. For detailed analysis of Psim OR14, three additional panels were used, consisting of 56 frequently occurring insect semiochemicals (e.g., terpenoids, fatty acid esters, fatty alcohols and aldehydes, etc.). Panel 1 compounds were diluted in n-hexane to 100 ng/µl, Panel 2–4 compounds were diluted in paraffin oil to 10–3 vol/vol. List of all compounds tested and their origin is listed in Figure 3—source data 4.
 
-## Organic synthesis
+### Organic synthesis
 
 For the purpose of SSR experiments, we synthesized (Z)-dodec-3-en-1-ol, (3Z,6Z)-dodeca-3,6-dien-1-ol, (3Z,6Z,8E)-dodecatrien-1-ol, and dodec-3-yn-1-ol, and included these compounds into Panel 1. The de novo organic synthesis of these fatty alcohols is described in Appendix 1.
 
-## Electrophysiology
+### Electrophysiology
 
 SSR recordings on Drosophila ab3 sensillum were performed as described previously (Benton and Dahanukar, 2023; Olsson and Hansson, 2013). We used 2- to 4-day-old flies for one recording each to avoid neuronal adaptations from multiple stimulations. To expose more ab3 sensilla, the fly preparation was done with arista down (Keesey et al., 2022).
 
@@ -179,11 +583,11 @@ The signal was amplified and digitally converted using Syntech IDAC-4. The neuro
 
 EAG experiment addressing the caste specificity of antennal responses to neocembrene was performed with 15 workers and 15 soldiers; each individual was only used for one stimulation series consisting of air–hexane–neocembrene (10 ng)–hexane–air. The brain and antennal tip were placed between two Ag/AgCl electrodes containing Ringer’s solution and connected to a high impedance (1014 Ω) amplifier (Syntech, Buchenbach, Germany). The antennal preparation was placed into a stream of cleaned air (500 ml/min), into which the stimuli were injected from Pasteur pipettes containing a 1.5-cm2 filter paper impregnated with 10 µl of the tested solution. Odor injections were controlled by a foot switch-operated Syntech stimulus controller and maximal negative deflection was measured using Syntech EagPro software. Pasteur pipettes containing odorant stimuli were changed after three stimulations. Air responses were used for data normalization, the responses log2-transformed to reduce heteroscedasticity and comply with assumptions for parametric testing (Bartlett test for equal variances, and Shapiro–Wilk normality test), and then compared between workers and soldiers using Student’s t-test.
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 For SEM, 10 workers with intact antennae were cold-anesthetized and decapitated with micro-scissors. Heads were desiccated in increasing ethanol concentrations (60, 80, 90, and 96%, each for 2 hr) followed by 12 hr in acetone. Heads were then attached to aluminum holders for microscopy using adhesive tape and differentially oriented to allow axial, dorsal, ventral, and lateral views. The samples were gold-coated for regular SEM (4 nm gold layer) and HR-SEM (2 nm) using sputter coater Bal-Tec SCD 050. Last antennal segments were inspected and photographed under scanning electron microscope JEOL 6380 LV (SEM). The surface of particular sensilla was studied using high-resolution field emission scanning electron microscope JSM-IT800 (HR-SEM) and Olympus Soft Imaging Solution software. Working distance for all samples was 4.0–4.1 mm and accelerating voltage 2.0 kV.
 
-## Bioinformatics
+### Bioinformatics
 
 For phylogenetic reconstruction of termite ORs, we used 182 OR protein sequences originating from five termite species, that is Neotermes cubanus, P. simplex, Inquilinitermes inquilinus (Johny et al., 2023), Zootermopsis nevadensis (Terrapon et al., 2014), and Cryptotermes secundus (Harrison et al., 2018), and the bristletail L. saccharina (Thoma et al., 2019) as a basal insect outgroup. For all species, the ORCo sequence was included. Sequences were aligned by means of the MUSCLE algorithm and used for reconstructing the phylogenetic tree with the IQ-TREE maximum likelihood algorithm (Nguyen et al., 2015) using the JTT+F+R8 substitution model and 10,000 ultrafast bootstrap replicates.
 
@@ -193,11 +597,11 @@ Differential OR expression analysis in P. simplex soldier and worker heads (incl
 
 PsimOR14 secondary structure was predicted using online tools Jpred 4.0.0 (http://www.compbio.dundee.ac.uk/jpred) and TMHMM2.0 (https://services.healthtech.dtu.dk/services/TMHMM-2.0), schematic model was generated using Protter (https://wlab.ethz.ch/protter).
 
-## Protein modeling
+### Protein modeling
 
 PsimOR14 structure was modeled in its monomeric membrane-free form using AlphaFold2 (Jumper et al., 2021; Mirdita et al., 2022). The best model was refined by MD relaxation, employing GROMACS 2021.3 and CHARMM36m (Abraham et al., 2015; Huang et al., 2017). After solvation and neutralization by Na+ ions in TIP3P CHARMM water in a 1.5-nm padded box, temperature and pressure equilibration followed. Six different simulations with differing starting velocities were produced, followed by 150 ns periodic simulated annealing independently for each replica (0.5 ns at 300 K, then 0.5 ns at 320 K, repeating). The lowest potential energy structure was chosen. Neocembrene, geranylgeraniol, and (+)-limonene structures were sourced from PubChem (February 13, 2023) and parametrized using CgenFF 4.6, employing CHARMM-GUI for the conversion (Jo et al., 2008; Kim et al., 2023; Vanommeslaeghe et al., 2010). The binding site was predicted based on DEET-binding region of MhOR5 from M. hrabei (7LIG) (Del Mármol et al., 2021). Using the DockThor webserver, ligands were docked with all bonds treated as rotatable, centered around the expected binding site with maximized box size (40 units). The best binder was then selected for each complex (Santos et al., 2020).
 
-## MM/PBSA simulations
+### MM/PBSA simulations
 
 Complex topologies were built in GROMACS. Simulations included nine replicas for liganded (14 µs each) and six for unliganded PsimOR14 (6.9 µs), with different starting velocities. Convergence was assessed by ligand backbone RMSD distributions. Replicas were concatenated, split into 1.5 ns frames, and analyzed with MM/PBSA (ff19SB+GAFF2, linearized PB with diel = 2, SASA for apolar contributions, optimized CHARMM radii) using gmx_MMPBSA v1.6.3 and AmberTools 20 (Case et al., 2023; Guedes et al., 2021; Tian et al., 2020; Wang et al., 2004). For each liganded PsimOR14 (neocembrene, geranylgeraniol, and limonene), nine replica trajectories were separately analyzed, along with apoform PsimOR14 trajectories (six replicas). All trajectories were PBC-corrected, cleaned, and fitted to the first frame of the PsimOR14 trajectory.
 

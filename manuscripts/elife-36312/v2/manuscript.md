@@ -19,13 +19,33 @@
 
 ## Abstract
 
-10.7554/eLife.36312.001 Polarised mRNA transport is a prevalent mechanism for spatial control of protein synthesis. However, the composition of transported ribonucleoprotein particles (RNPs) and the regulation of their movement are poorly understood. We have reconstituted microtubule minus end-directed transport of mRNAs using purified components. A Bicaudal-D (BicD) adaptor protein and the RNA-binding protein Egalitarian (Egl) are sufficient for long-distance mRNA transport by the dynein motor and its accessory complex dynactin, thus defining a minimal transport-competent RNP. Unexpectedly, the RNA is required for robust activation of dynein motility. We show that a cis -acting RNA localisation signal promotes the interaction of Egl with BicD, which licenses the latter protein to recruit dynein and dynactin. Our data support a model for BicD activation based on RNA-induced occupancy of two Egl-binding sites on the BicD dimer. Scaffolding of adaptor protein assemblies by cargoes is an attractive mechanism for regulating intracellular transport.
+Polarised mRNA transport is a prevalent mechanism for spatial control of protein synthesis. However, the composition of transported ribonucleoprotein particles (RNPs) and the regulation of their movement are poorly understood. We have reconstituted microtubule minus end-directed transport of mRNAs using purified components. A Bicaudal-D (BicD) adaptor protein and the RNA-binding protein Egalitarian (Egl) are sufficient for long-distance mRNA transport by the dynein motor and its accessory complex dynactin, thus defining a minimal transport-competent RNP. Unexpectedly, the RNA is required for robust activation of dynein motility. We show that a cis-acting RNA localisation signal promotes the interaction of Egl with BicD, which licenses the latter protein to recruit dynein and dynactin. Our data support a model for BicD activation based on RNA-induced occupancy of two Egl-binding sites on the BicD dimer. Scaffolding of adaptor protein assemblies by cargoes is an attractive mechanism for regulating intracellular transport.
 
 ## Introduction
 
 Targeting of mRNAs to specific locations within the cytoplasm can confer precise spatial control over protein synthesis and function (Buxbaum et al., 2015; Holt and Schuman, 2013; Martin and Ephrussi, 2009). By compartmentalising protein function, mRNA localisation contributes to diverse processes, including embryonic axis determination, epithelial polarity and neuronal plasticity. Trafficking of mRNAs frequently depends on the action of cytoskeletal motors, in particular those that move along the polarised microtubule network (Mofatteh and Bullock, 2017). However, the mechanisms by which specific mRNAs are recruited to, and transported by, microtubule motors remain unclear.
 
 One of the most tractable systems for microtubule-based mRNA transport operates during early development of Drosophila melanogaster and is responsible for localising spatial determinants of embryonic patterning to microtubule minus ends. Transport of these mRNAs is dependent on the Egalitarian (Egl) and Bicaudal-D (BicD) proteins (Bullock and Ish-Horowicz, 2001), as well as the minus end-directed motor cytoplasmic dynein-1 (dynein) and its accessory complex dynactin (Wilkie and Davis, 2001). Egl is a 1004-amino-acid protein that directly associates with the specialised RNA stem-loops that mediate polarised transport (so-called RNA localisation signals) (Dienstbier et al., 2009). The basis of RNA recognition by Egl is not known, although an exonuclease-like domain between residues 557 and 726 is partly responsible (Dienstbier et al., 2009). Egl uses a short N-terminal region to bind BicD (Dienstbier et al., 2009), and C-terminal features to bind the LC8 dynein light chain (Navarro et al., 2004). Mammalian BicD orthologues – BICD1 and BICD2 – associate with dynein and dynactin (Hoogenraad et al., 2001). These observations have led to a model for linkage of localising mRNAs to the dynein transport machinery (Figure 1A). It is not known, however, if other factors co-operate with Egl and BicD to bridge mRNAs to the motor complex.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig1-v2.jpg)
+
+**Figure 1.:** (A) Existing model for linkage of localising mRNAs to dynein. Note that there is no structural information available for Egl. (B) Diagram of TIRF-based in vitro motility assay. RNAs and proteins were incubated together for at least 1 hr on ice at the following molar concentrations: 100 nM dynein dimers, 200 nM dynactin, 100 nM Egl/BICD2 (with the operational assumption of two Egl molecules per BICD2 dimer) and 1 μM RNA. RNA-protein mixtures were typically diluted 40-fold and injected into imaging chambers containing microtubules that were pre-immobilised on passivated glass surfaces. (C) Examples of kymographs (time-distance plots) showing behaviour of Cyanine5 (Cy5)-labelled hairy or I-factor RNAs in the presence of Egl/BICD2, dynein and dynactin. Diagonal lines are processive movements. In these and other kymographs, the microtubule minus end is to the left. (D) Fraction of microtubule (MT)-associated hairy RNA complexes that are processive, static or diffusive. (E) Kymograph illustrating behaviour of DY647-labelled ILS and a scrambled (Scram) version of the sequence labelled with DY547 following co-incubation with Egl/BICD2, dynein and dynactin. Arrowheads: examples of co-transport of the two RNA species. (F and G) Numbers of RNA binding events on microtubules (F) and processive RNA movements (G) of ILS and Scram RNAs. (H) Fraction of processive RNA movements that contain signals from the ILS only, Scram only, or both RNAs. In (D) and (F-H), circles are values for individual microtubules. Error bars: SD. Statistical significance was evaluated with a Welch’s t-test (F and G). ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The Drosophila sequence has 71% identity and 93% similarity with the mouse and human sequence.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Coomassie-stained gel of clarified lysates of Sf9 cells infected with baculoviruses encoding SNAP::dynein, Egl/BICD2, or Egl alone. The amount of soluble Egl is greatly increased by co-expression of BICD2. The SNAP::dynein lysate is included to illustrate the pattern of endogenous Sf9 cell proteins with molar masses similar to Egl (none of the dynein subunits is found in this region of the gel). (B) Coomassie-stained gel showing the affinity purification steps for Egl expressed alone. The yield of Egl was extremely low in the absence of BICD2 co-expression, presumably due to on-going solubility issues. Flow through: lysate recovered after incubation with the IgG affinity matrix. Wash (lysis buffer): material liberated from the affinity matrix after washing with lysis buffer. Wash (TEV buffer): material liberated from the affinity matrix after washing with TEV buffer. Eluted: material liberated from the affinity matrix by treatment with TEV protease (which cuts between the IgG-binding affinity tag and Egl). No material was recovered after gel filtration of the eluted protein. (C) Size-exclusion chromatography (SEC) trace of Egl/BICD2 produced in GF150 buffer at 4°C (Superose 6 Increase 3.2/300). The ratio of absorbance values at 260 to 280 nm for the peak fractions indicates that there was little, if any, RNA co-purified from the insect cells (A260:A280 is 0.57 for pure protein and 1.05 for a sample with 95% protein and 5% nucleic acid [Glasel, 1995]). Vo: void.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Examples of Coomassie-stained gels illustrating purity of protein preparations used for motility assays. The native brain dynactin contains both the p150 and p135 isoforms of DCTN1/Glued, as described previously (Schlager et al., 2014).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Accumulation of transported RNPs at the microtubule minus end (arrowhead). (B) Diffusive behaviour of an RNP on the microtubule lattice (arrowhead).
 
 Another outstanding question is how the assembly of the transport complex, and the activity of the dynein motor within it, is controlled. Several lines of evidence indicate that BicD is a key player in these processes. By forming an extended coiled-coil homodimer, the isolated N-terminal region of mammalian BICD2 (BICD2N: containing coiled-coil domain 1 (CC1) and part of CC2) can bridge the interaction between dynein and dynactin, forming a mutually dependent triple complex (Hoogenraad and Akhmanova, 2016; Splinter et al., 2012; Urnavicius et al., 2015; Zhang et al., 2017). The binding of dynein to BICD2N and dynactin increases the incidence of processive movement dramatically (McKenney et al., 2014; Schlager et al., 2014), which is associated with repositioning of the dynein motor domains with respect to the microtubule (Chowdhury et al., 2015; Zhang et al., 2017). The motor also moves with higher velocity and has increased force output once bound to BICD2N and dynactin (Belyy et al., 2016; McKenney et al., 2014). The equivalent N-terminal region of Drosophila BicD stimulates dynein-based transport in vivo (Dienstbier et al., 2009), indicating that this mechanism is evolutionarily conserved.
 
@@ -37,47 +57,131 @@ We set out to elucidate molecular mechanisms of dynein-based mRNA transport by E
 
 ## Results
 
-## An in vitro assay for dynein-based mRNA transport
+### An in vitro assay for dynein-based mRNA transport
 
 We set out to determine if purified dynein, dynactin, Egl and BicD are sufficient to induce mRNA transport in vitro. As no method is available for the purification of Drosophila dynein and dynactin, we established a system in which Drosophila Egl and an mRNA target are linked to mammalian dynein and dynactin complexes. We took advantage of the strong evolutionary conservation of the Egl/Rab6GTP-binding site of BicD (Figure 1—figure supplement 1; [Liu et al., 2013]) to produce a complex of Drosophila Egl bound to mouse BICD2. This complex was purified from Sf9 insect cells by co-expression of Egl with BICD2, as soluble Egl could not be recovered in the absence of its binding partner (Figure 1—figure supplement 2A,B). The Egl/BICD2 complex, which was captured using an affinity tag on Egl, was not associated with significant amounts of RNA (Figure 1—figure supplement 2C). This observation is consistent with previous evidence that RNA is not essential for the interaction of Egl with Drosophila BicD (Dienstbier et al., 2009; Liu et al., 2013). The 1.4 MDa human dynein complex and 1.1 MDa pig dynactin complex were purified from established recombinant and native sources, respectively (Schlager et al., 2014). The purity of these and other protein preparations used in the study is illustrated in Figure 1—figure supplement 3. RNAs were transcribed in vitro, and body-labelled by stochastic incorporation of fluorescent UTP.
 
 Interactions of fluorescent RNA molecules with surface-immobilised microtubules were monitored by total internal reflection fluorescence (TIRF) microscopy in the presence of dynein, dynactin, and Egl/BICD2 (Figure 1B). RNAs and proteins were incubated together for at least 1 hr to promote complex assembly, followed by dilution to concentrations that allow discrimination of single molecules on microtubules. We first used the 3’UTR of the hairy mRNA, which mediates transport by a complex containing Egl, BicD, dynein and dynactin in the Drosophila embryo (Bullock et al., 2003; Dix et al., 2013). We observed frequent association of hairy RNA with microtubules in the imaging chamber (Video 1). Gratifyingly, 80% of microtubule-associated hairy RNA puncta underwent long-distance transport (Figure 1C,D and Video 1). As observed previously with a Drosophila extract-based system (Soundararajan and Bullock, 2014), hairy RNAs accumulated at microtubule minus ends following transport (Figure 1—figure supplement 4A) and were also capable of diffusive motion on the microtubule lattice (Figure 1D and Figure 1—figure supplement 4B). We also performed experiments with the I-factor retrotransposon RNA, which is transported in association with Egl, BicD, dynein and dynactin during Drosophila oogenesis (Dienstbier et al., 2009; Dix et al., 2013; Van De Bor et al., 2005). Like hairy, this RNA exhibited robust minus end-directed transport in our in vitro assay (Figure 1C). These experiments reveal that no additional proteins are required for microtubule-based mRNA transport in vitro.
 
+![Video 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-video1.mp4.jpg)
+
+**Video 1.:** The RNA signal is shown in green. The position of the microtubules is indicated by a projection of the RNA signal over the course of the movie (magenta). Width of frame is 53.76 μm; movie corresponds to 252 s of real time.
+
 To test if RNA localisation signals are selectively recognised in our assay conditions, we mixed the well-characterised 59-nucleotide (nt) Egl-binding element from the I-factor (I-factor localisation signal (ILS)) (Dienstbier et al., 2009; Van De Bor et al., 2005), which was labelled with DY647, with an equimolar amount of a scrambled version of the same sequence labelled with DY547. In the presence of Egl, BICD2, dynein, and dynactin, the ILS bound to microtubules ~five times more frequently than the mutant RNA and exhibited a similar relative increase in the number of processive movements (Figure 1E–G). These data reveal that the transport machinery retains selectivity for RNA localisation signals in our assay. Further analysis revealed that ~75% of the processive complexes that contained the scrambled RNA also had a signal from the ILS (Figure 1E,H), raising the possibility that much of the transport of the mutant RNA is an indirect consequence of association with active ILS-bound transport complexes.
 
-## Egl/BICD2 and dynactin are required for mRNA transport by dynein
+### Egl/BICD2 and dynactin are required for mRNA transport by dynein
 
 We next investigated the involvement of each of the protein complexes in the RNA transport process. We first used SNAP tags to fluorescently label dynein and either Egl or BICD2 in the Egl/BICD2 complex. Egl and BICD2 were co-transported with dynein and hairy RNA in the presence of dynactin (Figure 2A and Figure 2—figure supplement 1; note that dynactin could not be labelled as it is from a native source). Next, we omitted individual protein complexes from the assembly mix. The association of hairy with microtubules was barely detected when Egl/BICD2, dynactin, or dynein was excluded (Figure 2B,C and Figure 2—figure supplement 2). Thus, the simultaneous presence of all three protein complexes is required to link RNA to microtubules. In the absence of Egl/BICD2 or dynactin, dynein rarely exhibited transport but could still associate with microtubules (Figure 2B and Figure 2—figure supplement 2). However, there was an ~two-fold increase in microtubule binding events when both Egl/BICD2 and dynactin were present (Figure 2D). Thus, the combination of Egl/BICD2 and dynactin stimulates dynein’s ability to associate with microtubules and move processively in the presence of RNA.
 
-## RNA-directed activation of dynein motility
+![Figure 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig2-v2.jpg)
+
+**Figure 2.:** (A) Kymographs showing co-transport of tetramethyrhodamine (TMR)-labelled dynein, Alexa647 (A647)-labelled BICD2 (included in the assembly as a complex with unlabelled Egl) and Alexa488 (A488)-labelled hairy mRNA in the presence of unlabelled dynactin. See Figure 2—figure supplement 1 for equivalent experiment with Egl labelled in the Egl/BICD2 complex. (B) Kymographs illustrating the results of omitting dynein, dynactin or Egl/BICD2 from the assay. Figure 2—figure supplement 2 shows images of separate channels. (C) Binding of Cy5-hairy RNA to microtubules in the presence of the indicated proteins. Signals were corrected for background binding of RNA to the glass surface. (D) Binding of TMR-dynein to microtubules in the presence of the indicated proteins. Background correction was not necessary due to negligible association of dynein with the glass. In this and other figures, black or white circles indicate proteins that were present or absent from the experiment, respectively. In C and D, small circles are values for individual microtubules. Error bars: SD. Statistical significance was evaluated with an ANOVA test with Dunnett’s multiple comparison correction. ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Kymographs illustrating transport of dynein with Egl (included in the assembly in a complex with unlabelled BICD2) and hairy mRNA in the presence of unlabelled dynactin. See Figure 2A for data from an analogous experiment in which BICD2 was labelled fluorescently within the Egl/BICD2 complex.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Images are individual channels for the merged data in Figure 2B.
+
+### RNA-directed activation of dynein motility
 
 As described in the Introduction, the prevailing model is that the association of Egl with BicD CC3 is sufficient to free the N-terminal region of BicD to interact with dynein and dynactin. Unlike Rab6, Egl can bind BicD in the absence of associated cargo, leading us to ask whether dynein and dynactin differentiate between RNA-bound and RNA-free Egl/BICD2. To address this question, we performed motility assays with Egl/BICD2, dynactin and fluorescent dynein in the presence and absence of RNA. Strikingly, the number of processive movements of dynein was ~six-fold higher when the RNA was present (Figure 3A,B). This reflected an increase in microtubule binding by dynein (Figure 3C), as well as the propensity for processive movement of those complexes associated with the microtubule (Figure 3D). The mean velocity and run length of dynein complexes bound to RNA were also significantly higher than those assayed in the absence of RNA (Figure 3E,F). We conclude that the RNA is required for robust stimulation of dynein motility and microtubule binding in the presence of Egl/BICD2 and dynactin.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig3-v2.jpg)
+
+**Figure 3.:** (A) Kymographs illustrating that hairy RNA increases the frequency of processive dynein movements in the presence of Egl/BICD2 and dynactin. (B–D) Numbers of processive dynein movements (B), microtubule-binding events of dynein (C) and fraction of microtubule-binding events that result in processive dynein movements (D) in the presence and absence of hairy RNA. (E and F) Distribution of segmental velocities (E) and run lengths (F) of dynein in the presence of Egl/BICD2 and dynactin ± hairy RNA (for experiments including hairy RNA, only those complexes associated with an RNA signal were analysed). (G) Kymographs illustrating that hairy RNA increases the frequency of processive dynein movements when dynactin and a complex of Egl bound to Drosophila BicD (DmBicD) is included in the assay. (H–J) Numbers of processive dynein movements (H), microtubule-binding events of dynein (I) and fraction of microtubule binding events that result in processive dynein movements (J) in the presence of dynactin and Egl/DmBicD ± hairy RNA. See Figure 3—figure supplement 1 for velocity and run length distributions for these experiments. Errors: SD, except in E and F (SEM). In B-D, and H-J, circles are values for individual microtubules. In B, C, H, and J, statistical significance was evaluated with a Welch’s t-test. In D and I, statistical significance was evaluated with a Student’s t-test. In E and F, statistical significance (compared to the equivalent parameter in the absence of RNA) was evaluated with a Mann-Whitney test using raw, unfitted values. **p<0.01. ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Distribution of segmental velocities (A) and run lengths (B) of dynein. Means ± SEM are shown for the raw, unfitted values; statistical significance (compared to the equivalent parameter in the absence of RNA) was evaluated with a Mann-Whitney test. ****p<0.0001.
+
 We next asked if the RNA-directed activation of dynein was a consequence of the combination of Egl with a BicD protein from a different species by performing experiments with a preparation of Drosophila Egl and Drosophila BicD (DmBicD). The Egl/DmBicD complex was also produced by co-expression of both proteins in Sf9 insect cells and purification with an affinity tag on Egl. The hairy RNA significantly increased the number of processive movements of dynein in the presence of dynactin and Egl/DmBicD (Figure 3G,H). This effect was again associated with enhanced microtubule binding of the motor, as well as increased probability of processive movement after engaging with the microtubule (Figure 3I,J). As was observed in the experiments with Egl/BICD2, the RNA also enhanced the mean velocity and length of dynein movements (Figure 3—figure supplement 1). Thus, RNA also gates the activation of dynein motility by a co-evolved Egl/BicD complex.
 
-## RNA promotes the assembly of the Egl/BicD/dynein/dynactin complex
+### RNA promotes the assembly of the Egl/BicD/dynein/dynactin complex
 
 We next considered two scenarios for how RNA stimulates dynein motility. First, the Egl/BicD/dynein/dynactin complex could be efficiently formed in the absence of RNA, with binding of RNA to Egl triggering a conformational change that activates processive dynein movement. Second, the ability of the Egl/BicD complex to interact with dynein and dynactin could be stimulated by the association of Egl with RNA, thus conferring different properties on the motor. To distinguish between these possibilities, we fluorescently labelled Egl in the purified Egl/BICD2 complex and monitored how hairy RNA affects its association with microtubule-bound dynein in the presence of dynactin. Although there was some association of dynein with Egl in the absence of RNA, the frequency of co-localisation increased by ~six-fold when the RNA was present (Figure 4A–C). We confirmed that the RNA also stimulates the association of BICD2 with microtubule-associated dynein by labelling BICD2 within the purified Egl/BICD2 complex (Figure 4—figure supplement 1). Many of the dynein complexes bound to Egl/BICD2 were motile (regardless of whether RNA was present of absent) (Figure 4B, Figure 4—figure supplement 1 and Figure 4—figure supplement 2), indicating that they were also complexed with dynactin (McKenney et al., 2014; Schlager et al., 2014). Thus, the ability of RNA to activate processive dynein motion is associated with enhanced assembly of the Egl/BICD2/dynein/dynactin complex.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) Kymographs illustrating the behaviour of fluorescent dynein and Egl (included in the assembly in a complex with unlabelled BICD2) in the presence of dynactin ± hairy RNA. (C) Fraction of microtubule-bound dyneins that associate with Egl in the presence of dynactin ± hairy RNA. Circles are values for individual microtubules. Error bars: SD. Statistical significance was evaluated with a Welch’s t-test. ****p<0.0001. See Figure 4—figure supplement 1 for equivalent data when BICD2 was labelled in the Egl/BICD2 complex. (D and E) Immunoblots of GFP-binding protein pulldowns from Drosophila embryo extracts showing RNA-induced co-precipitation of endogenous p150 (D) and Dhc (E) with Egl::GFP. This effect was observed in four independent experiments. For the blots shown, the amount of extract from which the loaded immunoprecipate was derived was 20 times the amount of extract loaded into the input lane for α-GFP, 200 times the amount of extract loaded into the input lane for α-Dhc and 1000 times the amount of extract loaded into the input lane for α-p150. Thus, only a small fraction of total Egl was associated with p150 and Dhc in the presence of RNA. Embryos expressing free GFP were used as a control. In control experiments, the presence of RNA did not cause co-precipitation of the dynein-dynactin complex with GFP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Kymographs illustrating the behaviour of fluorescently labelled versions of dynein and BICD2 (included in the assembly in a complex with unlabelled Egl) in the presence of dynactin ± hairy RNA. (C) Fraction of microtubule-bound dyneins that associate with BICD2 in the presence of Egl/BICD2, dynactin ± hairy RNA. Circles are values for individual microtubules. Error bars: SD. Statistical significance was evaluated with a Welch’s t-test. ****p<0.0001. See Figure 4A–C for equivalent data when Egl was labelled in the Egl/BICD2 complex.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Correlation between co-localisation of Egl (A) or BICD2 (B) (each included in the assembly in the context of the Egl/BICD2 complex) with dynein and transport. Circles are values for individual microtubules.
+
 We next investigated if the assembly of the endogenous transport complex is stimulated by RNA. We immunoprecipitated a transgenically expressed GFP-tagged Egl protein from Drosophila embryo extracts in the presence and absence of exogenous hairy 3’UTR and assayed for co-precipitation of the p150 (DCTN1/Glued) subunit of dynactin and the heavy chain of dynein (Dhc) by western blotting (Figure 4D,E). p150 and Dhc were not detected in the Egl::GFP immunoprecipitate in the absence of exogenous RNA, indicating that the association of Egl with dynein and dynactin is of low affinity or low abundance. In contrast, the addition of the hairy RNA led to detectable co-precipitation of the dynein and dynactin components with Egl::GFP. Thus, assembly of the transport complex is promoted by the RNA in the context of both purified and endogenously-expressed proteins.
 
-## The interaction of Egl with LC8 is not required for RNA-directed activation of dynein
+### The interaction of Egl with LC8 is not required for RNA-directed activation of dynein
 
 The results described above raise the question of how RNA binding stimulates the association of Egl and BicD proteins with dynein and dynactin. We first asked if this involves the binding of Egl to the LC8 dynein light chain. Motility assays were performed with a purified Egl/BICD2 complex in which Egl has two mutations in a consensus LC8-binding site that abolish association with LC8 in vivo and in vitro (Egldlc2pt; S965K + S969R) (Navarro et al., 2004). The Egldlc2pt/BICD2 complex supported robust transport of hairy RNA in the presence of dynein and dynactin (Figure 5A,B). Moreover, the mutant Egl/BICD2 complex still supported the RNA-induced increase in processive movement and microtubule binding of dynein in the presence of dynactin (Figure 5C–E), as well as higher mean velocities and run lengths of the motor (Figure 5—figure supplement 1). Thus, the interaction of Egl with LC8 does not play a significant role in activation of dynein by RNA.
 
-## The RNA localisation signal stabilises the Egl/BicD complex
+![Figure 5.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig5-v2.jpg)
+
+**Figure 5.:** (A) Kymograph illustrating robust transport of hairy RNA in the presence of dynein, dynactin and the Egldlc2pt/BICD2 complex. (B) Fraction of microtubule-associated hairy RNA complexes that are processive, static or diffusive using the Egldlc2pt/BICD2 complex. (C–E) Numbers of processive dynein movements (C), microtubule-binding events of dynein (D) and fraction of microtubule-binding events that result in processive dynein movements (E) in the presence and absence of hairy RNA. In C-E, circles are values for individual microtubules. Error bars: SD. Statistical significance in C-E was evaluated with a Student’s t-test. ****p<0.0001. See Figure 5—figure supplement 1 for velocity and run length distributions for these experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) Distribution of segmental velocities (A) and run lengths (B) of dynein. Means ± SEM are shown for the raw, unfitted values; statistical significance (compared to the equivalent parameter in the absence of RNA) was evaluated with a Mann-Whitney test. ****p<0.0001.
+
+### The RNA localisation signal stabilises the Egl/BicD complex
 
 These observations pointed to the other reported interaction of Egl/BICD2 with dynein and dynactin – that is the one mediated by BICD2N – as central to the activation of transport. As described in the Introduction, previous studies have indicated that occupancy of the Egl/Rab6GTP-binding site in BICD2 relieves autoinhibition, licensing BICD2N to interact with dynein and dynactin (Huynh and Vale, 2017; Liu et al., 2013). During handling of the purified Egl/BICD2 complex, we noticed that it had a tendency to dissociate upon dilution. This observation suggests dynamic exchange of constituent species. We therefore wondered if the RNA relieves BICD2 autoinhibition by stabilising its interaction with Egl. To test this hypothesis, we first mixed the 59-nt ILS RNA with purified Egl/BICD2 and performed size exclusion chromatography. The RNA localisation signal caused a large change in the elution profile of the protein complex compared to the RNA-free form (Figure 6—figure supplement 1), indicating a substantial increase in molar mass or a conformational change.
 
 We next used sedimentation equilibrium analytical ultracentrifugation (SE-AUC) to evaluate mean molar masses of complexes in the presence and absence of RNA independently of protein conformation. Over a range of protein concentrations, the presence of the ILS caused a large increase in mean molar mass compared to RNA-free samples (Figure 6A and Figure 6—figure supplement 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mean molar masses of Egl/BICD2 complexes at different concentrations in the presence and absence of the ILS determined by SE-AUC. For comparison, the concentration of Egl/BICD2 in the assembly mix for in vitro motility assays is 0.04 mg ml−1. In this and other panels of this figure, the RNA was present in a 10-fold molar excess to the protein (based on an operational assumption of a complex of two Egl molecules and a BICD2 dimer). Circles are values for individual samples. See Figure 6—figure supplement 2 for examples of raw data and fitting. Experiments were performed in 150 mM salt at 4°C. (B) SEC-MALS analysis of samples of Egl/BICD2 in the presence and absence of ILS RNA, and BICD2 alone for comparison. The MALS analysis provides the abundance-weighted mean mass of all of the species present throughout the peak (darker lines). Gels of collected fractions stained with SYPRO Ruby reveal more Egl associated with BICD2 in the presence of the ILS (maximum Egl:BICD2 ratio without ILS = 0.07; maximum Egl:BICD2 ratio with ILS = 0.48), which corresponds to species with higher mean molar mass (gels are aligned with corresponding positions in the SEC-MALS trace). Consistent with the relatively modest increase in molar mass compared to BICD2 alone, the SEC-MALS peak for the mixture of Egl/BICD2 without the ILS is dominated by free BICD2, with a relatively small amount of Egl. The absence of a BICD2-like shoulder in the trace of this sample presumably reflects rapid binding and unbinding of Egl. Free monomeric Egl elutes later from the column in a broad peak (Figure 6—figure supplement 3). The broad range of mean masses across the Egl/BICD2 peak in the presence of ILS indicates that our experimental conditions captured an equilibrating mixture of different Egl/BICD2 species. (C) SEC-MALS analysis of Egl/BICD2 in the presence of the ILS, scrambled ILS (Scram), or no RNA. In B and C, the concentration of the Egl/BICD2 input was 0.5 mg ml−1. (D) SEC-MALS analysis of different input concentrations of Egl/BICD2 in the presence of a 10-fold molar excess of the ILS (0.5 mg ml−1 data are reproduced from B). Note that SEC dilutes proteins ~10 fold before they are subjected to MALS analysis. SEC-MALS experiments were performed in 150 mM salt at room temperature. See Figure 6—figure supplement 4 for results with Egl/BICD2 ± ILS using lower ionic strength buffers.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The purified Egl/BICD2 complex was incubated with or without a 10-fold molar excess of the ILS (assuming two Egl molecules and one BICD2 dimer per complex) and subjected to SEC (G4000SWxl with guard column) in GF150 buffer at 4°C. Vo: void.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Raw data and goodness of fit are shown for one sample per concentration in the presence and absence of ILS RNA. Curves indicate data from runs at different velocities.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The peak corresponding to free Egl was confirmed by gel-based analysis of other SEC-MALS experiments. The observed molar mass of free Egl indicates a monomeric state (predicted molar mass: 112 kDa; observed molar mass: 112.0 ± 1.7 kDa). There is an apparent reduction in total eluted protein for the Egl/BICD2 minus ILS sample, which is likely due to the retention of a fraction of Egl on the column.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Data with 75 mM salt buffer. (B) Data with 50 mM salt buffer. SEC-MALS was performed at room temperature with inputs of 0.5 mg ml−1 Egl/BICD2 (with the RNA present in a 10-fold molar excess). Note that SEC dilutes proteins ~10-fold before they are subjected to MALS analysis. SYPRO Ruby-stained gels of collected fractions from the 50 mM experiment confirm more Egl associated with BICD2 in the presence of the ILS (maximum Egl:BICD2 ratio without ILS = 0.08; maximum Egl:BICD2 ratio with ILS = 1.05), which corresponds to species with higher molar mass (gels are aligned with corresponding positions in the SEC-MALS trace).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** SEC-MALS was performed in 50 mM salt and at 4°C using an input of 0.5 mg ml−1 protein (note that SEC dilutes proteins ~10-fold before they are subjected to MALS analysis). Gels of collected fractions stained with Coomassie Blue reveal more Egl associated with DmBicD in the presence of the ILS, which corresponds to species with higher molar mass (gels are aligned with corresponding positions in the SEC-MALS trace).
+
 An orthogonal method for determining molar masses – size-exclusion chromatography with multi-angle light scattering (SEC-MALS) – confirmed that the ILS substantially increases the mean molar mass of the Egl/BICD2 sample (Figure 6B and Figure 6—figure supplement 3). This effect was evident at all salt concentrations examined (Figure 6B and Figure 6—figure supplement 4). Despite being present in a 10-fold molar access to Egl/BICD2, the scrambled ILS RNA elicited a relatively small increase in mean molar mass (Figure 6C), confirming selectivity of the Egl/BICD2 complex for an active RNA localisation signal. Our finding that there is some association of Egl/BICD2 with the mutant RNA is compatible with earlier evidence that Egl is not a highly selective RNA-binding protein (Bullock et al., 2006; Dienstbier et al., 2009; Dix et al., 2013). The ILS induced a broad range of molar masses in the peak fractions, indicating an equilibrating mixture of larger complexes and smaller constituent components (Figure 6B,C). Consistent with such dynamics, the mean molar mass of the peak fractions increased with increasing amounts of Egl/BICD2 and RNA (Figure 6D). Analysis of peak SEC-MALS fractions by SDS-PAGE revealed that the ILS-induced increases in mass were associated with enhanced interaction of BICD2 and Egl (Figure 6B and Figure 6—figure supplement 4B). We also used SEC-MALS to determine the effect of the ILS on the purified complex of Egl and DmBicD. The mean molar mass of the peak fractions increased substantially in the presence of the ILS, and this was again associated with increased binding of Egl and the BicD protein (Figure 6—figure supplement 5). Collectively, these experiments reveal that the Egl/BICD2 and Egl/DmBicD complexes readily equilibrate with constituent species and that this is counteracted by the RNA localisation signal.
 
-## The copy numbers of RNA, Egl and BicD in active transport complexes
+### The copy numbers of RNA, Egl and BicD in active transport complexes
 
 In our SE-AUC and SEC-MALS experiments, mean molar masses of the mixtures of ILS, Egl and a BicD protein could reach ~400 kDa. The predicted molar masses of the BICD2, DmBicD and Egl polypeptides are 93, 89 and 112 kDa, respectively, while the ILS has a molar mass of 19 kDa. It was previously shown that DmBicD is a dimer (Stuurman et al., 1999), and we confirmed that this is also the case for BICD2 using SEC-MALS (Figure 6B; observed molar mass 186.7 ± 0.5 kDa). The mean molar masses observed in our experiments with the ILS are therefore compatible with a fraction of BicD dimers being occupied by more than one Egl molecule. To directly evaluate the stoichiometry of Egl and BicD in mRNA transport complexes, we returned to our in vitro motility assay. This system allows investigation of the copy number of these proteins in the fraction of complexes that are able to recruit dynein and dynactin and thus support processive movement on microtubules.
 
 We first produced Egl/BICD2 complexes with SNAP-tagged BICD2 and labelled them with a mixture of SNAP-reactive dyes such that approximately half of BICD2 polypeptides in the preparation were labelled with TMR, and approximately half were labelled with Alexa647. In an idealised situation, the exclusive presence of BICD2 dimers would result in 50% of complexes with one TMR dye and one Alexa647 dye, 25% with two TMR dyes and 25% with two Alexa647 dyes (Figure 7A). However, incomplete labelling of SNAP::BICD2 meant that an obligate BICD2 dimer would result in 40% of complexes labelled with both dyes (Supplementary file 1). When the labelled Egl/SNAP::BICD2 sample was used in motility assays with dynein, dynactin and hairy RNA, 39% of the motile complexes with a BICD2 signal were labelled with both dyes (Figure 7B,C). Our co-localisation analysis therefore fits well with there being a single BICD2 dimer in transport complexes (Supplementary file 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig7-v2.jpg)
+
+**Figure 7.:** (A) Idealised outcome of incubating a SNAP-tagged protein that is present in two copies per complex with equimolar amounts of two different SNAP-reactive dyes. The BICD2 dimer is used as an example, although the same principle applies for experiments with labelled Egl. (B) Kymograph of fluorescent signals when a complex of Egl and SNAP::BICD2 is labelled with a mixture of TMR and Alexa647 and assayed in the presence of RNA, dynactin and dynein. (C) Fraction of motile BICD2-containing complexes with signals from both fluorophores, only TMR, or only Alexa647. (D) Kymograph of fluorescent signals when a complex of Egl::SNAP and BICD2 is labelled with a mixture of TMR and Alexa647 and assayed in the presence of RNA, dynactin and dynein. (E) Fraction of motile Egl-containing complexes labelled with signals from both fluorophores, only TMR, or only Alexa647. (F) Kymograph of fluorescent signals when Cy3-hairy and Cy5-hairy are mixed and assayed in the presence of Egl/BICD2, dynactin and dynein. (G) Fraction of motile hairy RNA puncta labelled with both fluorophores, only Cy3, or only Cy5. In B, D and F, white arrowheads indicate complexes containing both dyes; green and magenta arrowheads indicate, respectively, complexes containing only TMR or only Alexa647 (B and D) or only Cy3 or Cy5 (F). In C, E and G, circles are values for individual microtubules; error bars: SD. See Supplementary files 1–3 for calculations of copy numbers based on corrections for the proportion of protein or RNA molecules that are unlabelled.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Kymograph of fluorescent signals when a complex of Egl::SNAP and BICD2 is labelled with a mixture of TMR and Alexa647 and assayed in the presence of dynactin and dynein and the absence of RNA. White, green and magenta arrowheads show, respectively, examples of motile Egl-containing complexes with signals from both fluorophores, only TMR, or only Alexa647. (B) Fraction of motile Egl-containing complexes labelled with signals from both fluorophores, only TMR, or only Alexa647. Circles are values for individual microtubules. Variance is high because of the small number of motile complexes per microtubule.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Representative TIRF image of a mixture of Cy3-hairy RNA and Cy5-hairy RNA adsorbed on a glass surface in the absence of proteins. (B) Quantification of co-localisation of Cy3 and Cy5 signals. Circles are values for individual fields of view. For each field of view, data were corrected for the frequency of chance overlap of fluorescent signals with this density of molecules. This frequency (which varied between 0.00 and 0.033 for different fields of view) was determined by scoring co-localisation in an image of a 90° rotation of the Cy5 image overlaid on the original orientation of the Cy3 image.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/36312/elife-36312-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A and B) Distribution of segmental velocities (A) and run lengths (B) of motile complexes containing both Cy3-hairy and Cy5-hairy (dual) or only one type of labelled RNA (single). Means ± SEM are shown for the raw, unfitted values; statistical significance was evaluated with a Mann-Whitney test. **p<0.01.
 
 When the procedure was repeated with SNAP-tagged Egl co-expressed with BICD2, the proportion of fluorescent complexes that was dual-labelled in the presence of RNA was 37% (Figure 7D,E). Correcting for the small fraction of Egl::SNAP molecules that are unlabelled, this result indicates that there are two Egl molecules in the vast majority of active RNA transport complexes (Supplementary files 1 and 2). When this experiment was performed in the absence of RNA, the relatively small number of motile Egl complexes observed also had signal from both dyes in 41% of cases (Figure 7—figure supplement 1). These data indicate that even when the assembly of the transport machinery is inefficient, motility is usually associated with the presence of two Egl molecules in a complex. The capacity of BicD to bind two Egl molecules is compatible with the symmetrical nature of the Egl-binding region of CC3 (Liu et al., 2013).
 
@@ -113,19 +217,393 @@ In addition to Rab6GTP-associated vesicles and Egl-associated mRNAs, BicD protei
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent (Drosophila melanogaster)</td>
+      <td>Egalitarian (Egl) cDNA</td>
+      <td>Epoch Life Sciences</td>
+      <td>Corresponding to NCBI:NM_166623</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (D. melanogaster)</td>
+      <td>Bicaudal-D (BicD) cDNA</td>
+      <td>Epoch Life Sciences</td>
+      <td>Corresponding to NCBI:NM_165220</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Mus musculus)</td>
+      <td>Bicaudal-D2 (BICD2) cDNA</td>
+      <td>Epoch Life Sciences</td>
+      <td>Corresponding to NCBI:NM_001039179</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Homo sapiens)</td>
+      <td>Dynein heavy chain (DHC) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:NM_001376.4</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Dynein intermediate chain 2 (DIC2) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:AF134477</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Dynein light intermediate chain 2 (DLIC2) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:NM_006141.2</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Dynein light chain Tctex (Tctex) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:NM_006519.2</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Dynein light chain LC8 (LC8) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:NM_003746.2</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (H. sapiens)</td>
+      <td>Dynein light chain Roadblock (Robl) cDNA</td>
+      <td>Epoch Life Sciences; PMID:24986880</td>
+      <td>Corresponding to NCBI:NM_141183.3</td>
+      <td>Codon optimised for Sf9 cell expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAceBac1 plasmid</td>
+      <td>PMID:27165327</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIDC plasmid</td>
+      <td>PMID:27165327</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (D. melanogaster)</td>
+      <td>hairy 3’UTR plasmid</td>
+      <td>PMID:12743042</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (D. melanogaster)</td>
+      <td>I-factor plasmid</td>
+      <td>PMID:15992540</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ILS RNA 5’.AAUGCACACCUCCCUCGUCACU CUUGAUUUUUCAAGAGCCUUCG AUCGAGUAGGUGUGCA.3’</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>With or without 5’ Dy647 label</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ILS scram RNA 5’.AAAAUGUGGUGCACUAUCUU CGUAUUCCAGUGCCACCGUGG UCUAAUUCACUCGUCGCC.3’</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>With or without 5’ Dy547 label</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: 11496015</td>
+      <td>Mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P[tub-Egl::GFP]</td>
+      <td>PMID:19515976</td>
+      <td>FLYB:FBal0230300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Sco/CyO P[actin5C-GFP]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBst0004533; RRID:BDSC_4533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Sigma-Aldrich:11814460001; RRID:AB_390913</td>
+      <td>Mix of clones 7.1 and 13.1 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-D. melanogaster Dhc (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank; PMID:10637305</td>
+      <td>DSHB:2C11-2; RRID:AB_2091523</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-D. melanogaster p150-C- term (rabbit polyclonal)</td>
+      <td>PMID:17325206</td>
+      <td></td>
+      <td>Raised against aa 1,073–1,280 (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GFP-trap magnetic agarose beads</td>
+      <td>Chromotek</td>
+      <td>Chromotek:gtma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Coomassie protein assay kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: 23200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Full-Range Rainbow prestained molecular weight markers</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare:RPN800E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Coomassie Instant Blue protein stain</td>
+      <td>Expedeon</td>
+      <td>Expedeon:ISB1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MEGAScript T7 transcription kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: AM1333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MEGAScript SP6 transcription kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisher Scientific: AM1330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa488-UTP</td>
+      <td>ThermoFisher Scientific</td>
+      <td>ThermoFisherScientific: C11403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy3-UTP</td>
+      <td>PerkinElmer</td>
+      <td>PerkinElmer:NEL582001EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy5-UTP</td>
+      <td>PerkinElmer</td>
+      <td>PerkinElmer: NEL583001EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Cell TMR-Star</td>
+      <td>New England Biolabs</td>
+      <td>NEB:S9105S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Surface Alexa Fluor 647</td>
+      <td>New England Biolabs</td>
+      <td>NEB:S9136S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG</td>
+      <td>Rapp Polymere</td>
+      <td>Rapp Polymere:103000–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-PEG</td>
+      <td>Rapp Polymere</td>
+      <td>Rapp Polymere: 133000-25-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PLL-g-PEG</td>
+      <td>Susos AG</td>
+      <td>Susos AG:PLL(20)-g[3.5]- PEG(2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic-F127</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:P2243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel (taxol)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T1912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GMPCPP</td>
+      <td>Jena Bioscience</td>
+      <td>Jena Bioscience:NU-405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:G2133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:C40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Streptavidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:S4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>α-casein</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:C6780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Porcine tubulin, unlabelled</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>Cytoskeleton Inc:T240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Porcine tubulin, biotin-conjugated</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>Cytoskeleton Inc:T333P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other, native protein</td>
+      <td>Porcine tubulin, HiLyte 488-conjugated</td>
+      <td>Cytoskeleton Inc.</td>
+      <td>Cytoskeleton Inc:TL488M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sednterp</td>
+      <td>T. Laue (University of New Hampshire)</td>
+      <td>RRID:SCR_016253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEDPHAT 13b</td>
+      <td>PMID:12895474</td>
+      <td>RRID:SCR_016254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GUSSI</td>
+      <td>PMID:26412649</td>
+      <td>RRID:SCR_014962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRA</td>
+      <td>Wyatt</td>
+      <td>RRID:SCR_016255</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 Sf9 cells (ThermoFisher Scientific, Waltham, MA) have not been genetically profiled since purchase but were grown in a tissue culture facility dedicated to insect cell expression. The cells were tested for mycoplasma twice a year (MycoAlert Detection Kit, Lonza) and the results were always negative.
 
-## Cloning and recombinant protein expression
+### Cloning and recombinant protein expression
 
 Sequences encoding Egalitarian and BicD proteins (Drosophila melanogaster Egl isoform B:NM_166623, mouse BICD2:NM_001039179 and Drosophila melanogaster BicD:NM_165220) were synthesised commercially (Epoch Life Sciences, Sugar Land, TX) with codons optimised for expression in Spodoptera frugiperda Sf9 cells, and cloned for use with the MultiBac expression system. Where required, sequences encoding SNAPf tags for fluorescent labelling of protein complexes and ZZ-LTLT tags for IgG-based affinity purification (Reck-Peterson et al., 2006) were added by Gibson Assembly (NEB, Ipswich, MA) of PCR-amplified insert and backbone fragments. All constructs were validated by sequencing of the entire open-reading frame. Genes encoding Egl::LTLT-ZZ or Egl::SNAP-LTLT-ZZ were cloned downstream of the polh promoter of the pACEBac1 acceptor vector (Sari et al., 2016), while genes encoding BICD2, SNAP::BICD2, or Drosophila melanogaster BicD (DmBicD) were cloned downstream of the polh promoter of the pIDC donor vector (Sari et al., 2016). The donor and acceptor vectors were recombined at defined Cre loci and incorporated into the baculovirus genome for simultaneous co-expression of Egl and BicD proteins. The same strategy was used for assembly of the gene encoding human DHC (tagged at the N-terminus with ZZ-LTLT-SNAP) with those encoding other human dynein subunits, as described previously (Schlager et al., 2014). The isoform composition of the assembled dynein complex is as follows: DHC:NM_001376.4; DIC2:AF134477; DLIC2:NM_006141.2; Tctex:NM_006519.2; LC8:NM_003746.2 and Robl:NM_014183.3. All recombinant proteins were expressed from the baculovirus genome in Sf9 cells as described previously (Schlager et al., 2014). Following protein expression, cells were frozen in liquid N2 and stored at −80°C.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 The Egldlc2pt mutations (S965K + S969R) (Navarro et al., 2004) were generated by whole-vector PCR using a single pair of complementary mutagenic primers containing the desired sequence. Following amplification, the template DNA was digested with DpnI, and the amplicon ligated and propagated by transformation into α-Select Silver Efficiency chemically competent E. coli (Bioline, London, UK). The presence of the desired mutations, and no others, was confirmed by sequencing of the entire open-reading frame.
 
-## Protein purification
+### Protein purification
 
 All purification steps were performed at 4°C. Native dynactin was purified from pig brain as described previously (Schlager et al., 2014; Urnavicius et al., 2015). Dynein, BICD2, Egl/BICD2 and Egl/DmBicD complexes were affinity purified via an N-terminal ZZ-LTLT on DHC (ZZ-LTLT-SNAP::DHC) and BICD2 (ZZ-LTLT-BICD2), or a C-terminal LTLT-ZZ tag on Egl (Egl::LTLT-ZZ or Egl::SNAP-LTLT-ZZ). Frozen Sf9 cells were thawed on ice. For dynein purification, cells were resuspended in lysis buffer (50 mM HEPES pH 7.3, 100 mM NaCl, 10% glycerol, 1 mM DTT, 0.1 mM MgATP, 2 mM PMSF, 1 x cOmplete EDTA-free protease inhibitor cocktail (Sigma-Aldrich, St Louis, MO)). For purification of Egl/BICD2 and Egl/DmBicD complexes, lysis buffer was modified to include 500 mM NaCl to disrupt any association of Egl with native RNA species. Lysates were generated by repeated passage of resuspended cells through a Wheaton dounce tissue grinder (Fisher Scientific, Hampton, NH) and subsequently clarified by ultracentrifugation at 70,000 RPM (504,000 x g) using a Beckman Coulter Type 70 Ti fixed-angle rotor in a Beckman Coulter Optima L-100 XP preparative ultracentrifuge.
 
@@ -133,45 +611,45 @@ During centrifugation, IgG Sepharose 6 affinity resin (GE Healthcare Life Scienc
 
 The affinity-purified protein complexes were further purified by FPLC-based gel-filtration chromatography (AKTA Purifier and AKTA Micro, GE Healthcare Life Sciences) in GF150 buffer (25 mM HEPES pH 7.3, 150 mM KCl, 1 mM MgCl2, 5 mM DTT, 0.1 mM MgATP, 10% glycerol) to remove large aggregates, TEV protease, and other small contaminants. For SEC-MALS and SE-AUC experiments, GF150 was modified to include 5 mM TCEP instead of DTT. For the dynein complex, a TSKgel G4000SWxl with guard column (TOSOH Bioscience Ltd, Reading, UK) was used, while a Superose 6 Increase 3.2/300 column (GE Healthcare Life Sciences) was used for BICD2, Egl/BICD2 and Egl/DmBicD complexes. Fractions containing the dynein complex were pooled and concentrated to ~1 mg ml−1. Fractions containing BICD2, Egl/BICD2 or Egl/DmBicD complexes were pooled without an additional concentration step. All purified proteins were dispensed in aliquots for single use, flash frozen in liquid N2, and stored at −80°C. Protein concentrations were determined using a Coomassie Protein Assay Kit (ThermoFisher Scientific). To assess purity, proteins were resolved by SDS-PAGE using Novex 4–12% Bis-Tris precast gels (ThermoFisher Scientific) and MES-SDS running buffer. Protein bands were visualised using Coomassie Instant Blue protein stain (Expedeon, Over, UK) and imaged with a ChemiDoc XRS + system (Bio-Rad). Protein sizes were evaluated by comparison with Full-Range Rainbow prestained molecular weight markers (GE Healthcare Life Sciences).
 
-## Fluorescent labelling of SNAP-tagged proteins
+### Fluorescent labelling of SNAP-tagged proteins
 
 Fluorescent labelling of SNAP-tagged proteins with either SNAP-Cell TMR-Star (NEB) or SNAP-Surface Alexa Fluor 647 (NEB) was performed on-column during affinity capture according to a previously described method that labels >95% of dynein dimers with at least one dye (Schlager et al., 2014). For the mixed-labelling of SNAP::BICD2 and Egl::SNAP in Figure 7, an extended labelling time of 4 hr and a further 10-fold excess of total SNAP-fluorophore reagent was used. This method labelled 90% of SNAP-tagged polypeptides (81% of complexes containing two protein copies labelled with two dyes) (Supplementary file 1). Labelling efficiency was determined with spectrophotometry as previously described (Schlager et al., 2014). The ratio of SNAP-Surface Alexa Fluor 647 to SNAP-Cell TMR-Star that yielded approximately half of labelled polypeptides having one fluorophore and half the other fluorophore was determined empirically for different batches of the dyes.
 
-## RNA synthesis and purification
+### RNA synthesis and purification
 
 Uncapped Cy5-hairy RNA or Cy3-hairy RNA was transcribed in vitro from a gel-purified PCR amplicon template using the MEGAscript T7 Transcription Kit (Ambion). The RNA is a 730-nt region of the 3’UTR containing the RNA localisation signal (Bullock et al., 2003). Cy3-UTP or Cy5-UTP (PerkinElmer, Waltham, MA) was added to the transcription reaction together with a 4-fold excess of unlabelled UTP in order to label the RNA at multiple internal sites. Alexa488-hairy RNA was synthesised from the same template using a 1:9 ratio of Alexa488-UTP (ThermoFisher Scientific) to unlabelled UTP. Cy5-I-factor RNA was synthesised from a linearised plasmid template using the MEGAscript SP6 Transcription Kit (Ambion) and a 1:3 ratio of Cy5-UTP to unlabelled UTP. The RNA is 597-nt long and contains the ILS localisation signal (Van De Bor et al., 2005). Following digestion of the template DNA with DNase I, proteins were removed using phenol-chloroform-isoamyl alcohol (ThermoFisher Scientific). Synthesised RNA was separated from unincorporated nucleotides by two rounds of purification with Sephadex G-50 size-exclusion RNA spin columns (Sigma-Aldrich), precipitated with NH4OAc/ethanol and resuspended in nuclease-free dH2O. These procedures typically yield RNA samples with an average of ~3 dyes per molecule. Where relevant, the mean number of dyes per RNA molecule was determined by spectrophotometry (Supplementary file 3). ILS wild-type (Van De Bor et al., 2005) and scrambled mutant RNAs (with and without a single 5’ DY547 or DY647 dye) were synthesised, decapped, deprotected, and HPLC purified by GE Dharmacon (Lafayette, CO). An additional two A’s were included at the 5’ prime of synthetic RNAs to space the fluorophore from the wild-type or mutant localisation signal. Sequences of the RNAs can be found in the Key Resources Table. For SE-AUC and SEC-MALS experiments, RNAs were further purified by gel-filtration chromatography in GF150 buffer (Superose 6 Increase 3.2/300, AKTA Micro (GE Healthcare)). All RNA concentrations were determined by spectrophotometry.
 
-## Motility chamber preparation
+### Motility chamber preparation
 
 Glass surfaces were prepared as described previously (Bieling et al., 2010). Motility chambers with a volume of ~10 μl were assembled by adhering glass cover slips functionalised with PEG/Biotin-PEG (Rapp Polymere, Tuebingen, Germany) to glass slides passivated with PLL-g-PEG (SuSos AG, Duebendorf, Switzerland) using three segments of double-sided tape distributed along the width of the slide. The arrangement of tape yielded two parallel motility chambers per cover slip and allowed side-by-side comparison of two different conditions on the same glass surface. For the experiment presented in Figure 7—figure supplement 2, RNA samples were added to the imaging chambers at this point. For all other assays, chamber surfaces were further passivated for 5 min with 1% (w/v) Pluronic F-127 (Sigma-Aldrich) and washed twice with 20 μl chilled motility buffer (30 mM HEPES pH 7.3, 5 mM MgSO4, 1 mM EGTA pH 7.3, 1 mM DTT, 0.5 mg ml−1 BSA). Chambers were then incubated with 2 mg ml−1 streptavidin (Sigma-Aldrich) for 5 min and again washed twice with 20 μl motility buffer. To block any unpassivated surface, chambers were incubated with 20 mg ml−1 α-casein (Sigma-Aldrich) for 5 min and washed twice with 20 μl motility buffer. The prepared chambers were kept in a humidified container until the addition of microtubules and protein/RNA mixtures to prevent desiccation of chamber surfaces.
 
-## Polymerisation and stabilisation of microtubules
+### Polymerisation and stabilisation of microtubules
 
 Microtubules were polymerised from porcine tubulin (Cytoskeleton Inc., Denver, CO) and labelled with fluorophores and biotin by stochastic incorporation of labelled dimers into the microtubule lattice. Mixes of 1.66 μM unlabelled tubulin, 0.15 μM Hilyte488-tubulin, and 0.4 μM biotin-tubulin were incubated in BRB80 (80 mM PIPES pH 6.85, 2 mM MgCl2, 0.5 mM EGTA, 1 mM DTT) with 0.5 mM GMPCPP (Jena Bioscience, Jena, Germany) for 2–4 hr at 37°C. Polymerised microtubules were pelleted in a room temperature table top centrifuge at 18,400 x g for 8.5 min, and washed once with pre-warmed (37°C) BRB80. After pelleting once more, the microtubules were gently resuspended in pre-warmed (37°C) BRB80 containing 40 μM paclitaxel (taxol; Sigma-Aldrich) and used on the same day.
 
-## In vitro motility assay
+### In vitro motility assay
 
 Constituents of motility assays were incubated together on ice for 1–2 hr by dilution into motility buffer to the following concentrations: 100 nM dynein, 200 nM dynactin, 100 nM Egl/BICD2 or Egl/DmBicD (using the operational assumption of two Egl molecules and one dimer of the BicD protein per complex), and 1 μM RNA. To ensure that all complexes assemble at the same ionic strengths, KCl was supplemented to a final concentration of 50 mM during assembly. Just prior to imaging, stabilised microtubules were immobilised in a prepared motility chamber for 5 min and subsequently washed once with motility buffer that also contained 50 mM KCl, 1 mg ml−1 α-casein, and 20 μM taxol. Assembly mixes were then diluted 40-fold (with the exception of the complexes in Figure 4A–C, which were diluted 20-fold) in motility buffer that also contained 50 mM KCl, 1 mg ml−1 α-casein, 20 μM taxol, 2.5 mM MgATP, and an oxygen scavenging system (1.25 μM glucose oxidase, 140 nM catalase, 71 mM 2-mercaptoethanol, 25 mM glucose) that greatly limits photobleaching (Yildiz et al., 2003). Diluted assembly mixes were applied to immobilised microtubules in the motility chamber for imaging at room temperature (23 ± 1°C). For the experiment documented in Figure 7—figure supplement 2, RNA only was added to the chamber and immediately washed with motility buffer containing 50 mM KCl, 1 mg ml−1 α-casein, 20 μM taxol, 2.5 mM MgATP, and an oxygen scavenging system.
 
-## TIRF microscopy
+### TIRF microscopy
 
 For each chamber, a single multicolour acquisition of 500 frames was made at the maximum achievable frame rate (~2 frames s−1) and 100 ms exposure per frame using a Nikon TIRF microscope system controlled with Micro-Manager open-source acquisition software (Edelstein et al., 2010) and equipped with a Nikon 100 × oil objective (APO TIRF, 1.49 NA oil). For the experiment documented in Figure 7—figure supplement 2, single frames were captured with a 1 s exposure in each channel. The following lasers were used: Coherent Sapphire 488 nm (150 mW), Coherent Sapphire 561 nm (150 mW), Coherent CUBE 641 nm (100 mW). Images were captured with an iXonEM+ DU-897E EMCCD camera (Andor, Belfast, UK), resulting in pixel dimensions of 105 x 105 nm. Multicolour acquisitions used sequential image capture with switching of emission filters (GFP, Cy3, and Cy5 (Chroma Technology Corp., Bellows Falls, VT)).
 
-## Immunoprecipitation from Drosophila extracts
+### Immunoprecipitation from Drosophila extracts
 
 Extracts were generated from embryos of P[tub-Egl::GFP] (Dienstbier et al., 2009) or Sco/CyO P[actin5C-GFP] flies (Bloomington Drosophila Stock Center: RRID:BDSC_4533), which contain genomically-integrated transgenes expressing Egl::GFP or GFP from the ubiquitous α-tubulin or β-actin promoters, respectively. 0–12 hr embryos were dechorionated and flash frozen in liquid N2. 300 μl chilled extraction buffer (25 mM HEPES pH 7.3, 50 mM KCl, 1 mM MgCl2, 2 mM DTT, 2x cOmplete EDTA-free protease inhibitor) was added for each 100 mg of frozen embryos, followed by grinding on ice with a motorised pellet pestle (ThermoFisher Scientific). The material was subjected to 25 passes in a Wheaton dounce tissue grinder (ThermoFisher Scientific) on ice before the addition of 200 μl chilled extraction buffer containing 0.5% Triton-X-100 per 100 mg of embryos. Following gentle mixing, samples were incubated on ice for 5 min and passed through a 23G syringe five times before clarification by two centrifugation steps (each 5 min at 3000 x g). 350 μl aliquots of clarified extract were incubated with 20 units Recombinant RNase Inhibitor (Promega, Madison, WI) and either 20 μl of a 6.7 μg/μl solution of unlabelled hairy RNA in dH2O or 20 μl dH2O for 30 min at 4°C. Magnetic beads coupled to GFP-binding protein (GFP-Trap MA (Chromotek, Martinsried, Germany)) were washed twice in PBS, followed by blocking of non-specific interaction sites with 1 mg ml−1 casein in PBS for 30 min at 4°C. After two washes of the beads in extraction buffer, the equivalent of 30 μl of initial bead slurry was mixed with the embryo extracts with or without hairy RNA. Following a 2 hr 30 min incubation at 4°C, beads were washed fives times for 1 min in extraction buffer containing 0.05% Triton-X-100 (three washes in 400 μl of buffer and two washes in 1 ml buffer). Proteins and RNA-protein complexes were eluted from the beads by the addition of 60 μl 1 x lithium dodecyl sulphate (LDS) buffer (ThermoFisher Scientific)/50 mM DTT and incubation at 80°C for 10 min.
 
 Following electrophoresis and blotting onto PVDF membranes, proteins were detected using the following primary antibodies: mouse α-GFP (mix of clones 7.1 and 13.1 (Sigma-Aldrich; RRID:AB_390913); diluted 1:1000); mouse α-Dhc (clone 2C11-C [Sharp et al., 2000]; RRID:AB_2091523) (provided by the Developmental Studies Hybridoma Bank (University of Iowa, Iowa, IA) and diluted 1:1000) and rabbit α-p150-C-term ([Kim et al., 2007]; provided by V. Gelfand, Northwestern University; diluted 1:10,000). Secondary antibodies were conjugated to horseradish peroxidase, with signal detected using the ECL Prime system (GE Healthcare) and Super RX-N medical X-ray film (FUJIFILM, Bedford, UK).
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Duplicate independent preparations of 1 mg ml−1 Egl/BICD2 (2.4 μM assuming two Egl molecules and a single BICD2 dimer per complex) in GF150 buffer (using 5 mM TCEP instead of 5 mM DTT) in the presence or absence of a 10-fold molar excess of ILS RNA were pre-incubated on ice for at least 1 hr and subsequently diluted in GF150 (TCEP) to yield three samples with volumes of 110 µl and protein concentrations of 1, 0.33, and 0.11 mg ml−1. These samples were loaded in 12 mm six-sector cells and subjected to equilibrium sedimentation in an An50Ti rotor using an Optima XL-I analytical ultracentrifuge (Beckmann) at 3200, 5600, and 10,000 rpm until equilibrium was reached at 4˚C. At each speed, comparison of several scans was used to judge whether equilibrium had been reached. Data were processed and analysed using SEDPHAT 13b ([Schuck, 2003]; RRID:SCR_016254) and plotted with GUSSI ([Brautigam, 2015]; RRID:SCR_014962). The partial-specific volumes (v-bar), solvent density and viscosity were calculated using Sednterp (T. Laue, University of New Hampshire; RRID:SCR_016253).
 
-## SEC-MALS
+### SEC-MALS
 
 Samples of BICD2, Egl/BICD2 and Egl/DmBicD were resolved on a Superdex 200 HR10/300 analytical gel filtration column (GE Healthcare) at 0.5 ml min−1 in GF150 buffer (using 5 mM TCEP instead of 5 mM DTT), GF75 buffer (contains 75 mM KCl with 5 mM DTT), or GF50 buffer (contains 50 mM KCl with 5 mM TCEP). All measurements for BICD2 and Egl/BICD2 were made at room temperature, whereas the relative instability of the Egl/DmBicD complex required measurements be made at 4°C. Where indicated, ILS RNA was added at a 10-fold molar excess over Egl/BICD2 or Egl/DmBicD (based on an operational assumption of two Egl molecules and a dimer of the BicD protein per complex) and incubated on ice for 1 hr prior to injection on the column. Samples lacking RNA were subjected to the same incubation. Following SEC fractionation, eluted protein was detected on a Wyatt Heleos II 18 angle light scattering instrument coupled to a Wyatt Optilab rEX online refractive index detector in a standard SEC-MALS format. Heleos detector 12 at 99° was replaced with Wyatt’s QELS detector for on-line dynamic light scattering measurements. Protein concentration was determined from the excess differential refractive index based on 0.186 RI increment for 1 g ml−1 protein solution. Concentrations and observed scattered intensities at each point in the chromatograms were used to calculate the absolute molecular mass from the intercept of the Debye plot, using Zimm’s model as implemented in ASTRA software (Wyatt; RRID:SCR_016255). Fractions were analysed by gel electrophoresis and staining with SYPRO Ruby (Lonza, Cambridge, UK) or Coomassie Instant Blue according to the manufacturer’s instructions.
 
-## Image analysis and statistics
+### Image analysis and statistics
 
 Kymographs were generated and analysed manually using FIJI ([Schindelin et al., 2012]; RRID:SCR_002285). Typically, three independent chambers were imaged using protein complexes from at least two independent assembly reactions for each experimental condition. The positions of microtubules were determined by the fluorescent tubulin signal or a projection of RNA/protein signals over the course of the movie. From each of these chambers, 5–10 microtubules were typically selected for analysis with preference given to those that were longer and better isolated from adjacent microtubules. No power analysis was used to determine sample size. Instead the sample size was chosen to allow the identification of a range of effect sizes. To avoid the risk of subconscious bias, microtubules were selected before visualising the motile properties of complexes on them.
 

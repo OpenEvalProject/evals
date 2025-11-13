@@ -9,11 +9,11 @@
 
 ### Affiliations
 
-1. https://ror.org/037zgn354 Department of Biological Chemistry, Johns Hopkins School of Medicine Baltimore United States
-2. https://ror.org/037zgn354 Department of Physiology, Johns Hopkins School of Medicine Baltimore United States
-3. https://ror.org/037zgn354 Department of Cell Biology, Johns Hopkins School of Medicine Baltimore United States
-4. https://ror.org/037zgn354 Department of Psychiatry and Behavioral Sciences, Johns Hopkins School of Medicine Baltimore United States
-5. https://ror.org/00za53h95 Department of Mental Health, Johns Hopkins Bloomberg School of Public Health Baltimore United States
+1. Department of Biological Chemistry, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+2. Department of Physiology, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+3. Department of Cell Biology, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+4. Department of Psychiatry and Behavioral Sciences, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+5. Department of Mental Health, Johns Hopkins Bloomberg School of Public Health Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ The second symposium, which took place in September 2023, had a similar format b
 
 The five areas of the symposium – academic success, mental health; conflict resolution, financial literacy, and support networks – are described in more detail below.
 
-## Academic success
+### Academic success
 
 The challenges faced by minoritized graduate students include language barriers, limited interactions with faculty before starting graduate school, and discrimination, and each of these can hinder academic progress (Golde, 2000; Smith et al., 2012; Hamzavi and Brown, 2023). The goal of this session was to ensure URG students began graduate school with the same expectations as every other graduate student, and that they had access to the same tools and resources. This included explicit discussions of procedures and policies new graduate students may be expected to implicitly know (or to figure out), and resources that can help support academic success. For instance, during their initial year, graduate students are expected to achieve a passing grade (B-) in all enrolled courses. The Hidden Curriculum Symposium conveyed this standard to students and gave advice about what to do if expectations were not met, such as guidance on reaching out to the administration to request a course retake.
 
@@ -51,7 +51,7 @@ Other topics covered included: coursework preparation; how to optimize laborator
 
 In addition, we provided tools for building study groups, discussed how to balance classes and lab work, and provided students with details of various university resources (such as tutoring services that offer peer study groups, additional notes and materials, and practice exams; disability accommodations; and advice on how to report abuse). Finally, the session ended with a panel discussion during which graduate students provided a wide range of perspectives and opinions.
 
-## Mental health
+### Mental health
 
 Graduate school can take a toll on the mental health of research students, and it has been reported that mental health disorders like anxiety and depression are six times higher among biomedical PhD students than the general population (Evans et al., 2018). Moreover, poor mental health can compound the problems caused by various forms of discrimination, such as systemic racism, sexism, homophobia, ableism, and discrimination based on social class (Schad et al., 2022).
 
@@ -59,19 +59,19 @@ Our second session aimed to demystify the ‘hidden curriculum’ of mental heal
 
 Modeled from the Johns Hopkins Student Well-Being Center, this session included a discussion of the ‘seven pillars of wellness’ (Stoewen, 2017) – physical wellness, emotional wellness, intellectual wellness, social wellness, environmental wellness, occupational wellness, and spiritual wellness. Following this discussion, the students completed an arts and crafts activity during which they created ‘values jars’ that included objects that, for each pillar of wellness, represented a goal that the student hoped to achieve during their first year of graduate school. Students could take the values jars home after the session in order to have a daily reminder to prioritize their wellness.
 
-## Conflict resolution
+### Conflict resolution
 
 There is a growing recognition of the importance of conflict resolution during graduate school (Schaller and Gatesman-Ammer, 2022). However, most of the interventions designed to resolve conflict do not consider that an URG student who is attempting to resolve a conflict may also be experiencing discrimination, imposter syndrome or microaggressions. Therefore, when conflict arises, URG students need to know how to properly advocate for their needs while being attentive to how they engage with faculty and staff, taking care to use professional language that is both clear and assertive.
 
 This session focused on acquiring and refining skills related to conflict resolution and utilized anonymous case studies based on real interpersonal conflicts experienced by members of the symposium planning committee during graduate school. Many scenarios were explored, including disagreements among classmates, issues between lab mates, and conflicts with professors. The students were also informed about the relevant university resources.
 
-## Financial literacy
+### Financial literacy
 
 Salaries for biomedical PhD students fall far below the cost of living across the United States (Woolston, 2022), so financial stress – and the impact it has on academic success and mental health – is a fact of life for many graduate students, especially those from underrepresented racial and ethnic groups. This session covered topics such as managing personal finances, securing funding through grants and fellowships, understanding federal and state taxes, and navigating the complexities of earning additional income. Research shows that a lack of financial knowledge can lead to increased stress, a decreased sense of belonging, and limited access to resources – all of which can adversely impact the academic success and well-being of URG graduate students (Eichelberger et al., 2017).
 
 One surprising finding from the surveys of the students who attended the symposium was that they were less confident about financial literacy than they were about the other four areas (Figure 1). One possible explanation for this is that there are more resources to advise students on traditional academic topics (such as which courses to take and how to choose a PhD advisor) than there are on general or non-academic topics. Another possibility is that graduate students from minority groups are disproportionately affected by financial burdens compared to white students (Martin and Dwyer, 2021). Either way, it is clear that URG students entering graduate school would benefit from help with both academic topics and more general topics, such as financial literacy.
 
-## Support networks
+### Support networks
 
 Success in graduate school generally requires effective mentorship and networking (Edwards et al., 2022), but URG students tend to have less access to both than their white peers due to implicit bias, a lack of representation, and systemic exclusion (Singleton et al., 2021). The networking activities at the symposium were designed to help first-year students establish relationships with their peers and to explore mentorship opportunities with senior graduate students, postdocs, and professors. We aimed to foster the creation of authentic connections that first-year students could utilize throughout their time in graduate school. Indeed, one student first met their future thesis advisor during the 2022 symposium.
 
@@ -90,6 +90,161 @@ We encourage graduate schools and programs in the life sciences and medicine at 
 ## Methods
 
 In the Fall of 2022, information about the Hidden Curriculum Symposium was sent via institutional email to incoming first-year graduate students as identified by the University Registrar. Of the 59 students contacted, 12 attended the symposium. A majority self-identified as Black/African American (9/12), followed by Latinx/Hispanic (2/12), and Indigenous/Native American (1/12); three-quarters had previously attended a Historically Black College or University (HBCU) or Minority Serving Institution (MSI). Information on the students is given is in Table 1. The study procedures were reviewed and acknowledged by the Johns Hopkins Medicine Institutional Review Board. Caveats to the interpretation of our data include the small sample size (n=12), the absence of a control group of students who did not attend the symposium, and potentially confounding effects (such as rural vs urban, socioeconomic status, and parent’s level of education).
+
+**Table 1.**
+ Characteristics of the students who attended the first Hidden Curriculum Symposium.Note: One student who completed the pre-symposium survey did not attend the symposium and was not included in subsequent analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Pre-symposium survey</th>
+      <th>Post-symposium survey</th>
+      <th>End-of-year survey</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number of respondents</td>
+      <td>13</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Age (years; mean ±SD)</td>
+      <td>23.9±1.33</td>
+      <td>23.7±1.44</td>
+      <td>23.7±1.44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Race: n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black/African American</td>
+      <td>9 (69.2)</td>
+      <td>9 (75)</td>
+      <td>9 (75)</td>
+    </tr>
+    <tr>
+      <td>Latinx/Hispanic</td>
+      <td>2 (15.4)</td>
+      <td>2 (16.7)</td>
+      <td>2 (16.7)</td>
+    </tr>
+    <tr>
+      <td>Indigenous/Native American</td>
+      <td>1 (7.7)</td>
+      <td>1 (8.3)</td>
+      <td>1 (8.3)</td>
+    </tr>
+    <tr>
+      <td>Asian/ Pacific Islander</td>
+      <td>1 (7.7)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>Not Reported</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender: n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>6 (46)</td>
+      <td>6 (50)</td>
+      <td>6 (50)</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>7 (54)</td>
+      <td>6 (50)</td>
+      <td>6 (50)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Education: n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bachelor’s</td>
+      <td>8 (61.6)</td>
+      <td>7 (58.4)</td>
+      <td>7 (58.4)</td>
+    </tr>
+    <tr>
+      <td>Master’s</td>
+      <td>1 (7.6)</td>
+      <td>1 (8.3)</td>
+      <td>1 (8.3)</td>
+    </tr>
+    <tr>
+      <td>Not Reported</td>
+      <td>4 (30.8)</td>
+      <td>4 (33.3)</td>
+      <td>4 (33.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Attended HBCU or MSI: n (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>9 (69.2)</td>
+      <td>9 (75)</td>
+      <td>9 (75)</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>4 (30.8)</td>
+      <td>3 (25)</td>
+      <td>3 (25)</td>
+    </tr>
+  </tbody>
+</table>
 
 The students who attended the first symposium were surveyed three times. Seven days prior to the symposium, they were sent a pre-survey containing 27 questions (see Table S1 in Supplementary file 1). Immediately after the second day of the symposium, the attendees were sent a post-survey (with the same 27 questions as the pre-survey) to assess the symposium’s effectiveness and to gather data to improve future programming. At the end of their first year, the students were sent an end-of-year survey containing 38 questions (see Table S2 in Supplementary file 1) to provide additional information on the effectiveness of the symposium. For all three surveys, the students were asked to answer each question on a scale ranging from 1 (not effective/not familiar/not confident) to 10 (very effective/very familiar/very confident). All responses were de-identified and anonymized.
 

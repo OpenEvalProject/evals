@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00ggpsq73 Department of Neurology, Otto-von-Guericke University Magdeburg Germany
-2. https://ror.org/01zwmgk08 Department of Behavioral Neurology, Leibnitz Institute for Neurobiology Magdeburg Germany
-3. https://ror.org/04bkje958 Kliniken Schmieder Heidelberg Germany
+1. Department of Neurology, Otto-von-Guericke University Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))
+2. Department of Behavioral Neurology, Leibnitz Institute for Neurobiology Magdeburg Germany ([ROR:01zwmgk08](https://ror.org/01zwmgk08))
+3. Kliniken Schmieder Heidelberg Germany ([ROR:04bkje958](https://ror.org/04bkje958))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Here, we report experiments designed to directly assess the process of feature-b
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Subjects were asked to simultaneously track the color change of two donut-shaped superimposed dot-clouds as illustrated in Figure 1a. The calculated trajectories of the two dot-clouds through color space were kept random and unpredictable, while never falling below a minimum critical distance, on each experimental trial, and the stimuli were designed in a manner that tracking could not be based on spatial information (c.f. Materials and methods for details). Color tracking lasted for 6–8 sec, after which both dot-clouds turned into grey. This prompted subjects to report the last perceived color of each stream (Target a, Target b; before turning grey), by dialing in the color as precisely as possible on a color wheel using a rotary knob (Figure 1b – Exp1). The color wheel was presented twice requiring the subjects to dial in the colors of both streams in sequence (Response 1, Response 2). The precision of the representation for the two color-streams (Precision High, Precision Low) was derived from the two standard deviations of a mixture model of two von Mises distributions containing pairs of target-response distances for all trials. On a given trial, the target (a or b) with the smaller of the two possible target-response distances (min(response 1 – target a, response 1 – target b)) was assigned to response 1 assuming a generally higher confidence for the first given response. The remaining target-response pair was assigned to response 2 (Figure 2a). Despite the fact that the resulting absolute precision estimates varied considerably across subjects (range(p1)=9.489, range(p2)=30.995) (Figure 3a), corresponding precision estimates of both streams showed a similar relation across subjects with a correlation of r=0.602 (p=0.008). A regression model with zero intercept (p1=a*p2) yielded a significant slope of a=1.748 (F(1,17) = 10.588, p=0.0046), suggesting an unbalanced resource distribution between the two streams of a similar ratio in each subject, independent of the overall precision of the subject. Importantly, none of the pairs of precision estimates were different from a Monte-Carlo simulated set of responses in any of the subjects (p>0.811), which indicates that the variation in precision between streams arises from independent distributions. However, subjects were to report the color of the two streams in sequence. This may have caused recency effects, that is, the representation of the later reported color may decay while giving the first response. Accordingly, the difference of precision estimates may not reflect an imbalance of resource allocation during color tracking but a recency-based imbalance generated in the response phase of the experimental trial. Experiment 2 addresses this possibility, by having sixteen subjects of experiment 1 track two color streams exactly as in experiment 1, but report only one color-stream on a given trial (Figure 1b – Exp2). The logic behind this manipulation is that the precision measures of just one color will still sample from both color-streams randomly, but remove the ambiguity of two possible target-response pairings for each trial. The precision estimates will therefore represent a mixture of distributions. A difference between precision distributions as seen in experiment 1, would verify that the imbalance of resource allocation is truly arising in the color tracking phase.
 
@@ -50,7 +50,7 @@ Subjects were asked to simultaneously track the color change of two donut-shaped
 
 **Figure 3.:** (a) High and low precision estimates for each of the tested subjects (n = 18) (blue dots) in experiment 1. Additionally, the results of the Monte-Carlo simulated precision estimates for each subject are displayed as two-dimensional gaussians. In general, subjects are almost twice as precise in responding to one of the streams compared to the other stream. (b) Results for experiment 2. When subjects (n = 16) have to report only one stream per trial (while still attending to both color streams), the general ratio of high and low precision responses remain. (c) The same subjects show very similar pairs of precision estimates in both experiments (irrespective of whether they have to respond to both streams sequentially or only one stream). (d) Estimated precision estimates for mixture models containing two distributions with equal deviation based on the means of each subjects estimated precisions. The estimated precision ratio of Mixture models containing two equal distributions reaches a median ratio of 1.24 and values higher than 1.928 in less than 5% of conducted simulations.
 
-## Experiment 2
+### Experiment 2
 
 The precision measures were subjected to a von Mises mixture model testing two distributions. Monte-Carlo estimates confirm that they do not differ from simulated datasets in any of the subjects (p>0.972). Furthermore, the pairs of high and low precision values are found to be correlated across subjects (r=0.579, p=0.019). As in experiment 1, the relation between high and low precision estimates was analyzed via linear regression with zero intercept, which yielded a significant slope of a=1.928 (F(1,15) = 21.84, p=0.0003; Figure 3b). The slope of slightly below 2 is similar to the one obtained when testing both color-streams in experiment 1, suggesting a robust subject-specific feature-based resource allocation that varies little across tasks.
 
@@ -58,7 +58,7 @@ In order to test computational biases of the mixture model itself potentially pr
 
 Because all but two of the subjects of experiment 1 took also part in experiment 2, the difference in precision estimates between streams could be tested for consistency across experiments. The consistency was quantified by the Euclidean distances between precision estimates in experiment 1 and 2 (s=167.79) spanning a two-dimensional precision space containing high- and low precision measures. Specifically, for each subject, we determined the distance between corresponding points of high and low precision values in experiment 1 and experiment 2 (precision pairs). The distances were then summed and tested against the sums of 10,000 random permutations of the estimated precision pairs among subjects. The measured distance between experiments was significantly smaller than the distance obtained from random permutations (p=0.0363; Figure 3c), indicating that the ratio of precision estimates is very consistent within the same subjects across experiments.
 
-## Experiments 3a-c
+### Experiments 3a-c
 
 The ~2:1 ratio of precision estimates for the two color-streams suggests a strongly limited resource that entails a trade-off assignment during tracking. This could arise because subjects consistently devote more resources to one stream than the other. Another possibility is that over time the trade-off allocation changes in a dynamic fashion randomly or periodically between the attended feature values. Experiments 1 and 2 do not allow to distinguish among these possibilities, because which stream is actually attended at a given moment remains undefined, as we just probe at a random time point after the onset of the color-streams.
 
@@ -74,17 +74,17 @@ Collapsing across time throughout experiments 3a-c, the pattern of precision est
 
 Next, precision estimates were calculated for each SOA increment (t1...t6) in trials without and in trials with a brightness cue (cue-absent, cue-present trials). For cue-present trials, precision estimates were obtained as a function of whether the cued or the uncued stream was tested. Figure 4b exhibits the precision time-courses for the cued and uncued stream for cue-present trials as well as the separate precision time-course for cue-absent trials in experiments 3a-c.
 
-## Experiment 3a
+### Experiment 3a
 
 Precision estimates for cue-absent trials do not show any significant variation over the 200ms SOA increments (F(5,70) = 1.676, p=0.153, e=0.107). For cue-present trials, the precision estimates over time every 200ms do not vary, as revealed by a non-significant main effect of SOA (F(5,70) = 1.487, p=0.213, e=0.096). We find, however, a significant interaction between SOA and stream (F(5,70) = 2.495, p=0.039, e=0.151) in the cue-present trials, while the main effect of stream remains not significant (F(1,14) = 0.260, p=0.618, e=0.018). Hereby, precision estimates for cued and uncued streams differed at 3.2 sec (t(14) = –2.443, p=0.028, e=0.299) and 3.6 sec (t(14) = 3.001, p=0.010, e=0.391). The morphology of the precision time courses of cued and uncued color streams in cue-present trials suggest that the cue indeed induces a stream-specific phase reset, time-locked to the brightness increment. With time, the resource allocation then shifts systematically from the cued to the uncued stream. To further investigate the relation of resource allocation between the cued and uncued stream, both time-courses were Fourier-transformed, and the absolute phase-relation between the precision time courses of the cued and uncued stream was analyzed. At around 1Hz (0.94Hz and 1.25Hz) the phase difference between the precision time-courses for the cued and uncued stream showed a maximum phase-lock of 0.35 (0.94Hz) and 0.35 (1.25Hz). Crucially, the mean phase difference between the precision time-course of the cued and uncued stream is unimodally centered around 180° at 0.94Hz (v(14) = 4.95, p=0.035, m=199.87°) as well as at 1.25Hz (v(14) = 5.05, p=0.033, m=163.09°).
 
-## Experiment 3b
+### Experiment 3b
 
 The precision time-courses sampled at 100ms for cue-absent trials varies consistently over SOAs (F(5,70) = 2.87, p=0.021, e=0.17) (Figure 4b). For cue-present trials, precision estimates differ between the cued and uncued stream (F(1,14) = 11.095, p=0.005, e=0.442) but not over time (F(5,70) = 0.456, p=0.771, e=0.032). The interaction between stream and SOA is not significant (F(5,70) = 1.228, p=0.305, e=0.081), although precision is higher when testing the cued compared to the uncued stream from 3.1 sec onwards (3.1: t(14) = –3.103, p=0.008, e=0.407; 3.2: t(14) = –2.074, p=0.057, e=0.235; 3.3: t(14) = –2.133, p=0.051, e=0.245). Please acknowledge the overall similarity of the time-course of precision estimates of the cued and uncued stream between 2800 and 3200ms when sampling every 200ms or 100ms. Although experiment 3a and 3b were performed by a different group of subjects, and covered a different temporal range, precision measures for both streams start to diverge consistently and substantially at about 3.1 sec after the brightness cue.
 
 The Fourier-transformed precision time-courses exhibit a consistent phase difference between the cued and uncued stream at around 3.75Hz (PLV = 0.39), with the phase difference centering around 180° (v(14) = 5.12, p=0.031, m=211.51°) (Figure 4b).
 
-## Experiment 3c
+### Experiment 3c
 
 For SOA increments of 40ms no systematic variation in precision responses could be observed for the cue-absent trials over time (F(5,70) = 0.695, p=0.629, e=0.047). Cue-present trials as well did not exhibit any differences in precision as a function of SOA increment (F(5,70) = 1.242, p=0.299, e=0.081), stream (F(1,14) = 3.202, p=0.095, e=0.186), or interaction of both (F(5,70) = 1.345, p=0.256, e=0.088). The phase-lock for the phase differences between the Fourier-transformed time-courses of the cued and uncued stream peaked at around 4.68Hz (PLV = 0.18). The direction for the phase-differences at that frequency of 161.10° failed to be show a unimodal distribution around 180° (v(14) = 2.59, p=0.172) or 0° (v(14) = –2.59, p=0.828).
 
@@ -96,11 +96,11 @@ The alternation rate of ~1 Hz is substantially lower than oscillatory processes 
 
 In the present framework of feature-value-based tracking, a much slower rate of alternating between two feature representations is observed which, as outlined below, may reflect (1) the speed with which attention can reweight and sharpen feature representations and (2) the specific limitations of how attention is allocated in feature space. In both cases, the temporal structure of alternation would be variable and reflect the demands of individual feature-value selection.
 
-## Feature attention is inherently slow
+### Feature attention is inherently slow
 
 Using SSVEP recordings, it was found that a color cue biases color attention slowly towards one of two superimposed color RDKs (Andersen and Müller, 2010; Forschack et al., 2017), with strongest selectivity appearing 500–600ms after cue onset. Moreover, feature attention has been shown to rely on a sequence of spatiotemporal modulations in extrastriate visual cortex, unfolding as a coarse-to-fine tuning process over a period of 200ms – 400ms (Bartsch et al., 2015; Bartsch et al., 2017; Bartsch et al., 2021). Sharpened color selectivity (stronger tuning) is only attained late in the modulation phase. Hence, resolving the tracked colors with high precision, as required in the present experiments, entails sharpened tuning towards one or the other color, resulting in a comparably slow change rate. The temporal profile of this systematic, yet non-oscillatory, alternation of feature-based resource allocation would be modulated by the discriminability of the present color value within a non-linear color space.
 
-## Feature-values can only be attended one at a time
+### Feature-values can only be attended one at a time
 
 A 2:1 ratio of tracking precision between streams alternating at ~1 Hz implies a strong resource limit, effectively allowing only one stream to be attended with precision at a given time. This interpretation dovetails with studies showing that subjects can only be consciously aware of – or access - one non-spatial feature value within a feature dimension at any given point in time (Huang et al., 2007; Huang and Pashler, 2007; Huang, 2010a; Huang, 2010b; Houtkamp and Roelfsema, 2009). A formal account of this limitation has been put forward by the Boolean map theory (Huang and Pashler, 2007), which posits that attentional selection works on a labelled Boolean map representation of the input. This sets specific limits on the way feature attention can operate. Specifically, the Boolean map is the representational format required for conscious access to feature-values, such that it makes the feature-value reportable. Such representation, however, can only be established for one feature-value at a time. Multiple objects/locations defined by different feature-values can be represented, but then, the identity of the feature-values becomes inaccessible. Hence, the attempt to access multiple feature-values in parallel engenders a sequential process (feature-by-feature selection) (Huang and Pashler, 2007; Morales and Pashler, 1999; Huang and Pashler, 2002), that makes selection a comparably slow operation (Huang et al., 2007). Morales and Pashler, 1999 demonstrate that symmetry judgments that are to be made based on the spatial distribution of color patches are accomplished by switching between colors. They find that RT increases from ~1200ms for two-color displays to ~2000ms for four-color displays, suggesting that the time to switch between colors takes something around 400ms, which is well in line with the alternation time seen here. The limitation of being able to access only one feature-value at a time, may account for the alternation in accessing the color streams when tracking over time. Research investigating object-based tracking of different features (Blaser et al., 2000) revealed that changing features of one objects can be easily tracked, whereas the simultaneous tracking of features of different objects results in poor performance. Importantly, analysis of the response pattern suggested that subjects did not divide but switched attention between objects when attempting to track the features of two objects simultaneously.
 
@@ -108,11 +108,11 @@ A 2:1 ratio of tracking precision between streams alternating at ~1 Hz implies a
 
 All experiments were approved by the ethics-commission of the Otto-von-Guericke University (no. 141/20). All participants gave written informed consent and consent to publish prior to their participation.
 
-## Subjects
+### Subjects
 
 Eighteen subjects (15 female/ 3 male) with a mean age of 30.5 (SD = 7.09) participated in the first study. None of the subjects reported any psychological or neurological disorders and had normal or corrected-to-normal vision. All participants additionally confirmed correct color-perception. Subjects were monetarily compensated for their participation.
 
-## General stimulus material
+### General stimulus material
 
 All stimulus material was generated using the Psychtoolbox for Matlab. Subjects were presented with a circular annulus with an outer radius of 5.66° consisting of two clouds of 900 colored dots each (0.2° in diameter), creating the perception of two superimposed objects occupying the same location (Figure 1a). The two objects’ colors changed continuously throughout each trial.
 
@@ -124,7 +124,7 @@ At the initial generation of the dot clouds at the beginning of each trial, the 
 
 Since cognitive processes maintaining solely feature-based information are being investigated, one goal was to control for any spatial information that could potentially be utilized by the subject during the feature-based tracking of the two streams. First, the annulus has an inner radius of 2.20°, restricting the primary task to peripheral vision only. Furthermore, a strategy of ‘dot-flipping’ was employed: At every frame throughout the continuous hue change, 10 random dots of both streams interchanged identity (Figure 1a), therefore removing any local spatial cues that might form during tracking, while leaving the color features (hue) and the amount of color information (900 dots each) intact.
 
-## Stimulus analysis
+### Stimulus analysis
 
 In order to ensure that subjects were not able to predict or report object colors solely based on stimulus statistics, descriptions for the color streams within each trial across the entire length of 480frames (8 sec) for all 150 utilized trials were calculated. This includes the average amount of the combined hue-reversals amongst the two color-streams per trial as well as the overall distribution of hue distances between streams. Additionally, the amount of intersection between all the hue-values of the two streams should give an indicator of categorical separation of streams within hue-space for each trial. Next, the distributions of target colors (last presented hue before recall) for both streams were tested against a uniform distribution using Kolmogorov-Smirnov tests within each subject to investigate any potential bias for specific colors subjects have to report on. Note, that the distribution of actual target colors was specific for each subject, since although the same 150 pairs of color streams were used for all subjects, trial-length (the point at which hue-change seized and objects had to be reported on) varied randomly between 6–8 sec. Similarly, the distribution of hue-distances between the two target-hues of each trial were tested for uniformity for each subject using Kolmogorov-Smirnov tests.
 
@@ -132,13 +132,13 @@ On average 8.79 combined reversals (SD = 2.93) within the two color-streams were
 
 The target hue-values (target colors at the time of report) were tested against a uniform distribution for each subject. All 300 targets were evenly distributed across the circular hue space in all but one subject (p=0.029), in which slightly more greenish (~180°) and purple (~240°) hues were present as targets. In all other 17 subjects, target hues were not different from a uniform distribution (0.335<p<0.993). Hue-distances between the two streams at the time of report exhibited an even distribution in between 90° and 180° degree in all (0.052<p<0.832) but two subjects (p=0.018, p=0.024), making statistical inferences for one of the target color based on the other highly unlikely.
 
-## Experiment 1
+### Experiment 1
 
-## Procedure
+#### Procedure
 
 Subjects were placed in a dark shielded chamber with a 24” FullHD LED monitor (Asus VG248QE) placed 70 cm in front of them. Throughout the experiment a fixation dot (0.12° diameter) was present and subjects were required to maintain fixation for most of the paradigm. At the start of each trial two superimposed colored cloud objects appeared on a black background and continuous hue changes in both objects were introduced as outlined above. Subjects were asked to attend to both color streams simultaneously as accurate as possible throughout the hue change. The trial continued for 6–8 sec, at which point both streams’ colors changed to an isoluminant uniform grey ([72 72 72] RGB…white point of used color space…devoid of any chroma). With the removal of the hue information, a colored ring (color-wheel) appeared within the inner diameter of the annulus (outer radius: 1.36°, inner radius: 0.95°) representing the entire available 1D-circular hue space as well as a white cursor (0.07°) placed at a random position on the edge of that circle (Figure 1b). Now subjects had to perform a precision estimation task by reporting the last perceived color for both streams (Ta and Tb) as precisely as possible by moving the cursor along the colored ring using a manual dial (SpaceMouse Compact, 3Dconnexion). The cursor position was recorded as response as soon as the top of the dial was pressed (R1). A second response was subsequently recorded the same way (R2). As soon as two consecutive color estimation responses were entered, feedback was given for two seconds by highlighting two additional cursor positions (grey) at the two target colors (Ta and Tb). After another 1 sec of blank screen the next trial started. Overall 150 trials were presented.
 
-## Data analysis
+#### Data analysis
 
 The precision of the individuals’ responses was operationalized as the standard deviation of the angular differences between target color and reported color (T-R). Assuming that continuously changing values within one feature dimension (color) are maintained by separate representations drawing on independent cognitive resources analogous to various fixed and variable slot or precision models in working memory (van den Berg et al., 2012; Merkel et al., 2021), the overall distribution of angular differences for each subject in experiment 1 should be a mixture of two separate precision distributions. Each one with a specific deviation, quantifying the amount of allocated feature-based resource for one of the two color streams, respectively.
 
@@ -152,27 +152,27 @@ The simulation thus creates a two-dimensional null-distribution for any given pa
 
 For each subject the pair of precision estimates could be ordered into a low and high precision value. Those were subsequently correlated to test whether there is an underlying relation between the amounts of resources allocated to multiple feature-based representations across subjects.
 
-## Experiment 2
+### Experiment 2
 
-## Stimulus and procedure
+#### Stimulus and procedure
 
 Sixteen of the subjects participating in the first experiment took part in experiment 2 (14 female / 2 male, mean age 30.69 (SD = 7.53)). The current control experiment did not differ from the first paradigm except for one crucial point: At the end of each hue-changing phase of each trial, only one of the two streams changed its color to an isoluminant grey [72, 72, 72] while the other stream maintained the last hue of the color stream (Figure 1b – Exp2). At that point a color wheel was presented, as in the previous study, and subjects were required to move a cursor along that wheel using a manual dial to indicate the last perceived color of the now grey stream. Following a confirming press of the dial, subjects received feedback through a second cursor appearing in grey at the actual target-color location on the color wheel.
 
 The same set of trajectories was used as in the previous study to generate the hue-changes. However, the length of each trial was again drawn from a uniform random distribution between 6 and 8 sec. A total of 150 trials were presented and for each of them an unambiguous target-response difference for the report of the last perceived color of the grey target-stream was recorded.
 
-## Data analysis
+#### Data analysis
 
 The distribution of all 150 angular target-response differences was modeled to be derived from the representational precision of two separate feature-based cognitive resources. Hereby during each trial exactly one of the two resources (allocated to the two color-streams) are probed. The association of the reported color stream and one of the two resources cannot be known and is random. Therefore, across the experiment it is to be expected that around 50% of each of the two resources is going to be a target. A mixture model of two von Mises distributions was used to estimate the precision of maintaining each of the two feature representations and their allocated resources over time. Models were restricted in that each had to explain 50% of the variance of the data. Furthermore, both von Mises distributions were centered on 0°(+–10°). Cognitive resources allocated to each of the two feature representations were quantified as the estimated standard deviations (sqrt(1/kappa)) of the two fitted von Mises distributions.
 
 Those precision estimates were again validated using Monte-Carlo simulations with the same logic as in the first experiment. For those simulations, 1000 distributions of 150 target-response differences were created from the sum of the actual target-colors for the particular subject and 75 random draws from two different von Mises distributions with the previously estimated standard deviations for that subject. Pairs of precision estimates from fitting the mixture model to each of the simulated target-response distributions constituted 2-dimensional null-distributions of precision values for each subject and, as in the previous analysis, determine the significance of the observed precision values for each subject. The relation between high and low precision values across subject was quantified using linear regression.
 
-## Experiment 3
+### Experiment 3
 
-## Subjects
+#### Subjects
 
 Forty-five subjects, who did not take part in any of the previous studies and were naïve to the task, participated in the current set of experiments. For three iterations of the experiment in which different SOAs between color change onset and response were introduced, fifteen different subjects each participated. For the SOA-200ms version (Exp3a), mean age of the subjects was 25.07 (SD = 4.83) with eleven females and four males participating. Exp3b in which duration between color onset and response varied in steps of 100ms, nine females and 6 males participated with mean age of all subjects being 23.60 (SD = 2.64). For the 40 ms version (Exp3c), another nine females and six males with a mean age of 23.60 (SD = 2.77) participated.
 
-## Stimulus and procedure
+#### Stimulus and procedure
 
 An annulus stimulus consisting of two overlapping set of dots was used with the same visual properties as in the previous set of experiments. Each trial started out with the hue of both streams being uniform grey ([72 72 72]) for 1–1.5 sec. Next, the two sets of dots appeared in different hues, which subsequently moved through color space. New pairs of trajectories along the hue circle were calculated offline with the same constraints as in the previous experiments. After the period of hue change, one of the targets turned grey again, at which point the color-wheel within the annulus appeared and subjects had to report the last perceived hue of the probed stream as precisely as possible using a dial.
 
@@ -182,7 +182,7 @@ Additionally, in half the trials a brief luminance change (cued trials) was intr
 
 In order to gather enough responses to estimate reliable precision values for cued and uncued streams across all six timepoints, the experiment was partitioned for each subject into three separate sessions on 3 successive days. Across sessions, overall 36 trials per timepoint and stream (cued stream / uncued stream) in the cued trials and 72 trials per timepoint in the uncued trials were presented for a total of 864 trials. Subjects’ task was to keep track of the two color-streams as precisely as possible and report the color of the probed (grey) stream at the end of each trial using a dial. They were told to not focus on any other aspect of the task. The appearance or significance of the luminance change was specifically not addressed by the experimenter throughout the sessions, but subjects were encouraged to simply ignore anything that did not concern their primary task if they mentioned it.
 
-## Analysis
+#### Analysis
 
 First, using von Mises mixture models, two pairs of precision estimates were calculated for each subject across SOAs and streams for the cued and uncued trials separately. For both trial-types (cued/uncued), the distribution of 432 target-response angular differences was fitted with the mixture model of two von-Mises distributions. The resulting deviation estimates quantified the low and high resource precisions for the trials in which one stream was cued and trials in which none of the streams were cued. This first analysis was used to replicate the previous finding of a general ratio of resource distribution amongst two relevant features within one dimension. In order to test, whether this ratio of resource allocation was altered by the appearance of the luminance-cue, the consistency of precision pairs for cued and uncued trials within each subject was determined using the sum of Euclidean distances between precision estimates for cued and uncued trials across subjects (see Exp2). This analysis was performed for each iteration of the experiment separately (SOA40, SOA100, SOA200). Linear regression models without intercept were used to quantify the ratio between high and low precision pairs for cued and uncued trials.
 

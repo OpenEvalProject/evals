@@ -15,17 +15,17 @@
 
 ## Abstract
 
-10.7554/eLife.14258.001 The advent of mobile DNA sequencers has made it possible to generate DNA sequencing data outside of laboratories and genome centers. Here, we report our experience of using the MinION, a mobile sequencer, in a 13-week academic course for undergraduate and graduate students. The course consisted of theoretical sessions that presented fundamental topics in genomics and several applied hackathon sessions. In these hackathons, the students used MinION sequencers to generate and analyze their own data and gain hands-on experience in the topics discussed in the theoretical classes. The manuscript describes the structure of our class, the educational material, and the lessons we learned in the process. We hope that the knowledge and material presented here will provide the community with useful tools to help educate future generations of genome scientists. DOI: http://dx.doi.org/10.7554/eLife.14258.001
+The advent of mobile DNA sequencers has made it possible to generate DNA sequencing data outside of laboratories and genome centers. Here, we report our experience of using the MinION, a mobile sequencer, in a 13-week academic course for undergraduate and graduate students. The course consisted of theoretical sessions that presented fundamental topics in genomics and several applied hackathon sessions. In these hackathons, the students used MinION sequencers to generate and analyze their own data and gain hands-on experience in the topics discussed in the theoretical classes. The manuscript describes the structure of our class, the educational material, and the lessons we learned in the process. We hope that the knowledge and material presented here will provide the community with useful tools to help educate future generations of genome scientists.
 
 ## Introduction
 
 The last decade has witnessed dramatic changes in the field of genomics with the advent of high-throughput DNA sequencing technologies. Sequencers have become the ultimate tool for a wide range of applications, from prenatal genetic screens and microbe identification to forensic sciences and autopsies. As such, genomics requires interdisciplinary thinking that involves concepts from molecular biology, statistics, computer science, and ethical and societal issues. Previous work has highlighted the benefit of hands-on training to help students put these concepts into context (Altman 1998; Donovan, 2008; Reisdorph et al., 2013; Magana et al., 2014). Hands-on training is also the preferred learning style of the Millennial generation, which currently makes up the majority of undergraduate and graduate students. Research has shown that people in this generation are technology focused, work most effectively in groups, and absorb information most efficiently by kinesthetic learning (learning by doing; Shapiro et al., 2013; Evans et al., 2015; Linderman et al., 2015).
 
-Here, we describe our experience of using mobile DNA sequencers in the classroom to facilitate hands-on learning. Our class focused on the newest sequencing technology: the MinION by Oxford Nanopore Technologies (ONT). Unlike other sequencing technologies that are static and require a laboratory setting, the MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run (
+Here, we describe our experience of using mobile DNA sequencers in the classroom to facilitate hands-on learning. Our class focused on the newest sequencing technology: the MinION by Oxford Nanopore Technologies (ONT). Unlike other sequencing technologies that are static and require a laboratory setting, the MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run (Figure 1A and B; Gardy et al., 2015; McIntyre et al., 2015; Erlich, 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14258/elife-14258-fig1-v2.jpg)
 
-**Figure 1.:** (A) Illumina MiSeq benchtop sequencer (left) and the MinION sequencer made by Oxford Nanopore Technologies (right; red rectangle). (B) The class during a hackathon.DOI: http://dx.doi.org/10.7554/eLife.14258.002
+**Figure 1.:** (A) Illumina MiSeq benchtop sequencer (left) and the MinION sequencer made by Oxford Nanopore Technologies (right; red rectangle). (B) The class during a hackathon.
 
 ## Overview of the Ubiquitous Genomics class
 
@@ -33,17 +33,106 @@ We developed a course for Columbia University entitled ‘Ubiquitous Genomics’
 
 The course consisted of 13 meetings (one two-hour class per week) and was separated into a theoretical section and an applied section (Supplementary file 1). The theoretical section overviewed sequencing technologies and their potential uses in medicine, bio-surveillance, forensics, and ethical aspects of DNA sequencing, such as genetic privacy and the ability of participants to comprehend risks and potential harm. The aim of the theoretical section was to create a common ground for the group of students with diverse majors and background knowledge. The format was an interactive seminar where the class discussed one or two recent research papers.
 
-The applied section comprised two three-week blocks of “hackathons” that included MinION sequencing, data analysis and an assignment. We estimate the consumable costs of a hackathon to be on the order of $1,000 per team per assignment (Table 1). However, nearly 90% of the cost is due to the MinION sequencer and any reduction in its price will affect the projection of the costs. We decided to use the term hackathon to convey to the students that, unlike a regular course lab, the questions were open-ended and even we (the instructors) did not always know the answers or the best tools to solve the assignments. In the first hackathon, entitled “from snack to sequence”, the students received unlabeled DNA collected from food and supermarket ingredients. They had to use the sequencers to collect the DNA data and devise a pipeline to infer the ingredients. In the second hackathon, called “CSI Columbia”, the students sequenced several human DNA samples without knowing the identity of the samples. The hackathon focused on collecting data from these samples and students were encouraged to try any possible method they could imagine to generate investigative leads.10.7554/eLife.14258.003Table 1.MinION consumables:Total cost estimate (in US Dollars) is for one MinION run per team. For the complete list of equipment and consumables required for organizing a hackathon, please see the following link: https://nanoporetech.com/uploads/community/Equipment_and_consumables_vC_with_FAQ_Sep2015.pdfDOI: http://dx.doi.org/10.7554/eLife.14258.003CompanyProductCat noPrice per unit (USD)Unit quantityAmount needed for ONT protocolCostCovarisg-TUBE520079$275101$27.50NEBUltra™ End Repair/dA-Tailing ModuleE7442S$225.0072 ul3 μl$9.40AgencourtAMPure XPA63880$315.005 ml60 μl$3.78Thermo FisherDynabeads MyOne Streptavidin C165001$475.002 mL50 μl$12NEBBlunt/TA Ligase Master MixM0367S$95250ul50 μl$19Tubes/ pipette-tips/H2O/ ethanol etc~$10ONTFlow-cell Reagent kit$90011$900Projected cost per team per run:$981.68
+The applied section comprised two three-week blocks of “hackathons” that included MinION sequencing, data analysis and an assignment. We estimate the consumable costs of a hackathon to be on the order of $1,000 per team per assignment (Table 1). However, nearly 90% of the cost is due to the MinION sequencer and any reduction in its price will affect the projection of the costs. We decided to use the term hackathon to convey to the students that, unlike a regular course lab, the questions were open-ended and even we (the instructors) did not always know the answers or the best tools to solve the assignments. In the first hackathon, entitled “from snack to sequence”, the students received unlabeled DNA collected from food and supermarket ingredients. They had to use the sequencers to collect the DNA data and devise a pipeline to infer the ingredients. In the second hackathon, called “CSI Columbia”, the students sequenced several human DNA samples without knowing the identity of the samples. The hackathon focused on collecting data from these samples and students were encouraged to try any possible method they could imagine to generate investigative leads.
+
+**Table 1.**
+ MinION consumables:Total cost estimate (in US Dollars) is for one MinION run per team. For the complete list of equipment and consumables required for organizing a hackathon, please see the following link: https://nanoporetech.com/uploads/community/Equipment_and_consumables_vC_with_FAQ_Sep2015.pdf
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Product</th>
+      <th>Cat no</th>
+      <th>Price per unit (USD)</th>
+      <th>Unit quantity</th>
+      <th>Amount needed for ONT protocol</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Covaris</td>
+      <td>g-TUBE</td>
+      <td>520079</td>
+      <td>$275</td>
+      <td>10</td>
+      <td>1</td>
+      <td>$27.50</td>
+    </tr>
+    <tr>
+      <td>NEB</td>
+      <td>Ultra™ End Repair/dA-Tailing Module</td>
+      <td>E7442S</td>
+      <td>$225.00</td>
+      <td>72 ul</td>
+      <td>3 μl</td>
+      <td>$9.40</td>
+    </tr>
+    <tr>
+      <td>Agencourt</td>
+      <td>AMPure XP</td>
+      <td>A63880</td>
+      <td>$315.00</td>
+      <td>5 ml</td>
+      <td>60 μl</td>
+      <td>$3.78</td>
+    </tr>
+    <tr>
+      <td>Thermo Fisher</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>65001</td>
+      <td>$475.00</td>
+      <td>2 mL</td>
+      <td>50 μl</td>
+      <td>$12</td>
+    </tr>
+    <tr>
+      <td>NEB</td>
+      <td>Blunt/TA Ligase Master Mix</td>
+      <td>M0367S</td>
+      <td>$95</td>
+      <td>250ul</td>
+      <td>50 μl</td>
+      <td>$19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tubes/ pipette-tips/H2O/ ethanol etc</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>~$10</td>
+    </tr>
+    <tr>
+      <td>ONT</td>
+      <td>Flow-cell Reagent kit</td>
+      <td></td>
+      <td>$900</td>
+      <td>1</td>
+      <td>1</td>
+      <td>$900</td>
+    </tr>
+    <tr>
+      <td colspan="2">Projected cost per team per run:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>$981.68</td>
+    </tr>
+  </tbody>
+</table>
 
 ## The hackathon structure
 
 To address our teaching goals, we set the three week hackathon cycle as follows: in the first week of each hackathon-block, the students met for a ~3-hour session, in which they worked in groups to set up the MinION sequencer, generate data, and start strategizing about the best approach to answer the assignment. In the second week, we had a meeting with the students to discuss technical issues related to the assignment, such as the best approach to identify an organism from MinION data. Each group had to explore a different approach and to report the results in a 5-minute presentation to the rest of the class. In the final class of each hackathon-block, the students presented their results and turned in their written assignments (Supplementary file 1).
 
-Naturally, the most challenging classes to prepare for were the MinION sessions. We employed several strategies to maximize the hands-on experience of the students within the time constraints of the class (
+Naturally, the most challenging classes to prepare for were the MinION sessions. We employed several strategies to maximize the hands-on experience of the students within the time constraints of the class (Figure 2):
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14258/elife-14258-fig2-v2.jpg)
-
-**Figure 2.:** DOI: http://dx.doi.org/10.7554/eLife.14258.004
 
 A week before the hackathon, the students were instructed to form groups of 4–5 people. We encouraged them to form groups with diverse skill sets (e.g. combinations of biology backgrounds and computer science backgrounds).
 

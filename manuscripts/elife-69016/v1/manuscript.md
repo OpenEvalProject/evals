@@ -50,15 +50,15 @@ While pulses of admixture are common, they are not the only mode of admixture. A
 
 Why do some regions of the genome retain genetic material derived from hybridization while others are purged of foreign DNA? We begin here by outlining emerging principles associated with variation in ancestry in admixed genomes, regardless of the evolutionary process driving this variation (see next section). We note that these principles apply to the large number of cases in which selection on average acts against hybridization, but may not apply to systems where hybridization is globally neutral or beneficial (Meier et al., 2017; Meier et al., 2019; Grant and Grant, 2019; Mitchell et al., 2019).
 
-## Principle 1: a combination of rapid and slower removal of foreign ancestry stabilizes admixed genomes
+### Principle 1: a combination of rapid and slower removal of foreign ancestry stabilizes admixed genomes
 
 Variance in genome-wide ancestry in admixed populations is predicted to be highest just after hybridization and decreases over time as recombination breaks down long ancestry tracts. When foreign ancestry is deleterious, selection during this initial period rapidly reduces the population's admixture proportion (Harris and Nielsen, 2016; Veller, 2019). This initial ‘fast’ period of purging lasts tens of generations (Veller, 2019), shifts ancestry genome-wide (Schumer et al., 2018; Matute et al., 2020), and begins to generate broad-scale differences in ancestry within and among chromosomes. Populations then enter a ‘slow’ period of purging, where selection on individual hybridization-derived haplotypes only subtly shifts genome-wide ancestry proportions. The shape and rate of this change in ancestry can vary from species to species (Veller, 2019), primarily as a function of the total recombination rate (see Principle 3). These predictions have been explored in a handful of systems to date (hominins, swordtails, Drosophila), but theory suggests they should be widespread. Similarly, research in this area has primarily focused on pulses of admixture but related patterns are expected for recent migrants in hybrid zone models (Sedghifar et al., 2015; Sedghifar et al., 2016).
 
-## Principle 2: functionally important regions of the genome experience reduced rates of introgression
+### Principle 2: functionally important regions of the genome experience reduced rates of introgression
 
 Although the sources of selection on hybrids undoubtedly differ between species (Juric et al., 2016; Schumer et al., 2018; Brandvain et al., 2014), studies across diverse taxa have largely found that regions of the genome that are dense in coding or conserved elements tend to be particularly resistant to movement between species (Sankararaman et al., 2014; Teeter et al., 2008; Turissini and Matute, 2017; Martin et al., 2013; Calfee, 2021; Brandvain et al., 2014; Masly and Presgraves, 2007; Maxwell et al., 2018). In the case of conserved regulatory elements in humans, this pattern is stronger at enhancers that harbor derived mutations as opposed to ancestral variants (Telis et al., 2020). The consistency of the observation that introgression is depleted in functionally important regions implies that selection against minor parent ancestry generates barriers to introgression that are, in many cases, common, functionally broad, and polygenic (Calfee et al., 2020). These genome-scale observations echo classic work reporting depleted introgression on sex chromosomes (Martin et al., 2013; Payseur, 2004; Presgraves, 2008) and asymmetry in the effects of hybridization between the sexes (e.g., Orr, 1997; Schilthuizen et al., 2011; Turelli, 1998; Haldane’s rule), well-accepted rules in the speciation literature (Masly and Presgraves, 2007) that have been thoroughly reviewed elsewhere (Presgraves, 2008; Payseur and Rieseberg, 2016).
 
-## Principle 3: the recombination landscape plays a key role in genome stabilization
+### Principle 3: the recombination landscape plays a key role in genome stabilization
 
 Selection acts to remove many introgressed haplotypes after hybridization. Because haplotypes derived from the minor parent species are longer in regions of the genome where recombination events are rare, minor parent haplotypes in low recombination rate regions are more likely to harbor variants that will be harmful in hybrids. This is conceptually similar to the reason why ancestry proportions shift drastically in the early generations after hybridization when ancestry tracts are long (i.e., Principle 1). Even after genome-wide admixture proportions have stabilized, theory predicts that minor-parent ancestry will be more fully removed from regions of the genome with low recombination rates (Wu, 2001; Nachman and Payseur, 2012). Data from diverse taxa, including swordtail fishes, humans, monkeyflowers, maize, and Heliconius butterflies (Schumer et al., 2018; Calfee, 2021; Edelman et al., 2019; Brandvain et al., 2014; Martin et al., 2019), support this theoretical prediction (but see Corbett-Detig and Nielsen, 2017). However, differing correlations between recombination rate and gene density can lead to local differences in minor parent ancestry, depending on where in the genome recombination primarily occurs. For example, in humans, recombination rates tend to be locally reduced near genes (Myers et al., 2005; Coop et al., 2008), resulting in a tendency to purge introgressed DNA near genes driven by both Principles 2 and 3, while in swordtail fishes and birds, recombination rates are elevated near genes (Baker et al., 2017; Singhal et al., 2015), pitting these rules against one another. In fact, the rapid evolution of the recombination landscape in some taxa (Auton et al., 2012; Baker et al., 2015) may be another factor contributing to variation in the landscape of introgression across species groups.
 
@@ -70,7 +70,7 @@ Because hybridization combines two diverged genomes into a single organism, hybr
 
 Although disentangling the causes of selection against introgression is a major goal of the field (Box 1) and motivator for our work, we caution readers against drawing a strong line separating some of the models discussed below. This is particularly true for Fisher’s geometric model (see below), which was proposed as a synthetic framework to interpret and predict many patterns and processes underlying hybrid fitness. As such, we approach these models as a source of biological inspiration for the types of mechanisms shaping hybrid genome evolution.
 
-## Hybrid incompatibilities
+### Hybrid incompatibilities
 
 Dobzhansky–Muller hybrid incompatibilities (DMIs) occur when mutations that have arisen in each parental species’ genome interact negatively in hybrids (Dobzhansky, 1982). DMIs are the best documented and best understood mechanism of selection on hybrids. Indeed, the search for DMIs predates the recognition of the ubiquity of hybridization (Barbash, 2010). In addition to incompatible substitutions that arise in directly interacting proteins, DMIs can take the form of reciprocal losses following gene duplication or modifications in co-evolving regulatory elements, among other mechanisms (Mack and Nachman, 2017; Dion-Côté and Barbash, 2017; Nguyen et al., 2017; Brucker and Bordenstein, 2013). The DMI model has also been explored in the context of developmental pathways (commonly referred to as ‘developmental systems drift’), where compensatory changes in gene interaction networks can lead to divergent molecular pathways that are incompatible in hybrids, despite resulting in the same phenotypes in both parent species (Schiffman and Ralph, 2018; Tulchinsky et al., 2014; Porter and Johnson, 2002). The loci involved in DMIs identified to date are functionally diverse (Presgraves, 2010a; Maheshwari and Barbash, 2011; Atanasov et al., 2018; Dujon and Louis, 2017), but existing theory and data have hinted at broader evolutionary forces that drive the emergence of hybrid incompatibilities.
 
@@ -78,15 +78,15 @@ DMIs are largely expected to locally restrict gene flow by preventing introgress
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69016/elife-69016-fig1-v1.jpg)
 
-**Figure 1.:** Xiphophorus.Classic models in evolutionary biology predict that incompatibilities can arise between any pair of interacting genes. Recent empirical work has suggested that certain genes or pathways may be especially prone to becoming involved in hybrid incompatibilities. The gene xmrk independently causes melanoma in hybrids between different swordtail fish species. (A) In crosses between Xiphophorus birchmanni and Xiphophorus malinche, xmrk interacts with the gene cd97 to generate melanoma in a subset of hybrids (Powell et al., 2020). (B) In crosses between distantly related species Xiphophorus maculatus and Xiphophorus hellerii, xmrk interacts with a different region, rab3d, to cause melanoma (Schartl et al., 2010; Kazianis et al., 1998; Lu et al., 2020). Phylogenetic analyses suggest that these incompatibilities with xmrk have arisen independently (Powell et al., 2020). Photos of hybrids in (B) were provided by Manfred Schartl.
+**Figure 1.:** Classic models in evolutionary biology predict that incompatibilities can arise between any pair of interacting genes. Recent empirical work has suggested that certain genes or pathways may be especially prone to becoming involved in hybrid incompatibilities. The gene xmrk independently causes melanoma in hybrids between different swordtail fish species. (A) In crosses between Xiphophorus birchmanni and Xiphophorus malinche, xmrk interacts with the gene cd97 to generate melanoma in a subset of hybrids (Powell et al., 2020). (B) In crosses between distantly related species Xiphophorus maculatus and Xiphophorus hellerii, xmrk interacts with a different region, rab3d, to cause melanoma (Schartl et al., 2010; Kazianis et al., 1998; Lu et al., 2020). Phylogenetic analyses suggest that these incompatibilities with xmrk have arisen independently (Powell et al., 2020). Photos of hybrids in (B) were provided by Manfred Schartl.
 
-## Hybridization load
+### Hybridization load
 
 Historically researchers have considered selection against introgression to reflect interactions between diverged genomes. However, processes occurring within populations can also generate barriers (or thoroughfares) to introgression (Juric et al., 2016; Harris and Nielsen, 2016; Bierne et al., 2002). In other words, selection on introgressed ancestry might reflect the unconditional deleterious effect of a mutation, rather than its poor interaction with other sites in the genome (as seen in DMIs). Such mildly deleterious alleles will preferentially reach fixation in populations with weaker purifying selection, such as those with smaller effective population sizes. With sufficient time, a large number of weakly deleterious mutations can accumulate within a species, which would generate a strong selective force after hybridization with a species that harbors fewer such mutations. In such cases, hybridization can introduce deleterious mutations at much higher frequencies in the recipient population than expected from mutation-selection balance in the species with higher historical effective population size. Although each mutation is weakly selected against individually, in aggregate these mutations strongly reduce hybrid fitness relative to populations with fewer deleterious mutations, because they are linked to the same haplotypes after hybridization. Interestingly, this prediction holds even if the census population size of the admixed population is relatively small (Schumer et al., 2018). In the case of a pulse model of admixture, after genome-wide admixture proportions have equilibrated, selection against specific deleterious sites may still drive long-term ancestry purging (see Effects of hybrid demography). Empirical studies support this prediction, showing that ancestry from the species with less effective purifying selection can be depleted over many generations of selection, particularly in coding and conserved non-coding regions of the genome (Juric et al., 2016; Harris and Nielsen, 2016).
 
 In contrast to other models, which predict widespread selection against minor parent ancestry, the additive hybridization load model predicts selection for directional introgression from the species that harbors fewer deleterious mutations. Alternatively, if deleterious mutations are recessive, theory and some empirical data predict that selection will favor an excess of foreign ancestry (Box 2; Harris and Nielsen, 2016; Kim, 2017), especially in the species with lower historical population sizes. In principle, selection against hybridization load could produce patterns that are distinguishable from other models of selection on hybrids because these weakly deleterious mutations are expected to be broadly distributed throughout the genome and fall within a particular range of selection coefficients (Box 1; Juric et al., 2016; Harris and Nielsen, 2016).
 
-## Ecological selection
+### Ecological selection
 
 Ecological selection is a potentially important but poorly understood source of selection on hybrids. This is in part because less is known about both the genetic architecture of ecological adaptation and the ways in which ecological traits can become decoupled in hybrids. Moreover, this source of selection is sensitive to the environments in which hybrids find themselves.
 
@@ -96,7 +96,7 @@ What patterns of ancestry can indicate the presence of ecological selection on h
 
 Our discussion of ecological selection on hybrids above ignores ‘transgressive’ segregation – where hybrid trait values fall outside of the range of phenotypes observed in either parent (Rieseberg et al., 1999). We discuss the possible interaction of ecological selection and transgressive segregation in Box 2.
 
-## Polygenic selection on hybrids
+### Polygenic selection on hybrids
 
 Given that populations evolve independently before admixture, hybridization has the potential to decouple suites of co-adapted alleles originally linked within the parental species. In hybrids, selection on polygenic traits has been frequently modeled using Fisher’s geometric model (Fisher, 1930), a simple mathematical description of the distance of an individual from its phenotypic optimum, that predicts many of the dynamics of selection against hybrids (Simon et al., 2018; Schiffman and Ralph, 2018; Tulchinsky et al., 2014; Porter and Johnson, 2002; Tenaillon, 2014; Schneemann, 2019; Yamaguchi and Otto, 2020; Fraïsse et al., 2016). We note that because of its generality Fisher’s geometric model has also been used to model selection on DMIs among other phenomena, but focus on its application to polygenic traits here.
 
@@ -106,13 +106,13 @@ In a Fisherian model of polygenic adaptation, individual fitness in the parental
 
 **Figure 2.:** (A, top) If two species have adapted from the ancestral state (gray) towards two different phenotypic optima (blue and red respectively), hybrids between those two species (purple, bottom) are predicted to fall far from the phenotypic optimum of either parental species (Barton, 2001; Thompson et al., 2019b; Thompson, 2020). The distribution shown for F2 hybrids was generated by simulating a phenotype controlled by 10 loci in each of the parental species with an exponential distribution of effect sizes, a mean trait value of 250 for parent species 1 (dashed blue line), a mean trait value of 1750 for parent species 2 (dashed red line), and additive effects at each locus on the phenotype. Simulations were performed in admix’em (Cui et al., 2016). (B, top) Similar principles apply in the case of a polygenic trait that does not differ between the parental species because it has been under stabilizing selection (Slatkin and Lande, 1994; Barton, 2001). In this case, different combinations of trait increasing and trait decreasing alleles are expected to have fixed over time in the two parental species without changing the average trait value across species. As a result, this will generate increased phenotypic variance in F2 and later generation hybrids compared to the parental species (Slatkin and Lande, 1994; Barton, 2001). These higher variance phenotypes in hybrids should be selected against via stabilizing selection. Simulations shown here illustrate this principle; F2 hybrids (purple bottom) have increased trait variance relative to the parental species. Simulations were performed as above but the average trait value was the same in the two parental species (2200). The underlying alleles and their effect sizes for this simulation were drawn from a random exponential distribution. Simulation code can be accessed on GitHub (https://github.com/Schumerlab/hybridization_review, copy archived at swh:1:rev:69a398b89365cc069c6856d990c2b74293b52486 .Schumerlab, 2021).
 
-## Adaptive introgression
+### Adaptive introgression
 
 There is no doubt that haplotypes introduced by hybridization can confer an adaptive advantage (Hedrick, 2013; Racimo et al., 2015; Song et al., 2011; Heliconius Genome Consortium, 2012; Norris et al., 2015; Feurtey et al., 2019; Corcoran et al., 2016). Along with hybrid incompatibilities, adaptive introgression is among the best studied consequences of hybridization and has been thoroughly discussed in many previous reviews (Marques et al., 2019; Hedrick, 2013; Racimo et al., 2015; Suarez-Gonzalez et al., 2018; Mallet, 2005). Here, we briefly summarize what is known about the impact of adaptive introgression on ancestry in the genome. Intuitively, adaptive introgression increases minor parent ancestry locally around the adaptive allele. The footprint of these peaks in minor parent ancestry is expected to be positively correlated with the selection coefficient in the absence of negative selection on linked sites (see below). However, adaptive haplotypes can actually be shorter in certain demographic scenarios, since they persist longer in hybrid populations, leaving more time for them to be broken up by recombination (Sedghifar et al., 2016; Shchur et al., 2020).
 
 Recent work has also highlighted how adaptive introgression can generate unique signatures of ancestry heterozygosity at neighboring sites (Setter et al., 2019). As an adaptive haplotype sweeps to fixation, it drives minor parent ancestry to intermediate frequency in large flanking regions, creating a ‘volcano-shaped’ signature of genetic diversity approaching the site under positive selection (Setter et al., 2019). This shape is generated because recombination events that shorten the haplotype but still contain the adaptive allele are retained during the sweep, resulting in a concentration of ancestry heterozygosity at the edges of a fixed adaptive haplotype (Setter et al., 2019; Moest et al., 2020).
 
-## Adaptive introgression against the genomic background
+### Adaptive introgression against the genomic background
 
 Given broad selection against minor parent ancestry, adaptive introgression is often occurring against a background of genome-wide purging (Calfee, 2021; Edelman et al., 2019; Turner and Harr, 2014). In some cases, this has made adaptively introgressed haplotypes easy to identify empirically since they form peaks of high minor parent ancestry against a background of low minor parent ancestry (Sankararaman et al., 2014; Vernot and Akey, 2014). This also means that several factors will impact the probability that a globally adaptive allele will introgress between species. These include the locations of potentially adaptive alleles relative to deleterious neighbors, the relative selection coefficients on adaptive and deleterious sites, and other features of genome organization (Veller, 2019). Although there is little empirical or theoretical work in this area to date, some predictions can be made from first principles. For example, an adaptive haplotype in a region of the genome with a very low recombination rate would have a lower probability of introgressing than a haplotype with the same advantage in a higher recombination rate region (Principle 3).
 
@@ -122,7 +122,15 @@ These factors highlight that beyond distinguishing between sources of selection 
 
 **Figure 3.:** Hybridization-derived haplotypes can be deleterious, neutral, or adaptive. In some cases, selection on deleterious and adaptive sites may interfere with each other. (A) Here, we illustrate a case in which there is tight physical linkage between sites that are deleterious in hybrids (such as Dobzhansky–Muller hybrid incompatibilities [DMIs]) and a site that is beneficial. Left – When positively and negatively selected sites are linked on the same haplotype, selection will act on the average of their selection coefficients. In this case, due to interference between positive and negative selection, ancestry is relatively stable in this region when selected sites are linked on the same haplotype. (Right) After a recombination event occurs and breaks apart this linkage, the positively selected haplotype will begin to rapidly increase in frequency. (B) Although not easily detectable using existing methods, such interference effects are potentially detectable using sharp transitions in ancestry over a short distance. Here, we illustrate the results of a simulation using the hybrid population simulator admix’em (Cui et al., 2016) where an adaptive locus (s = 0.05) is flanked on either side with loci deleterious in hybrids (each s = −0.05, 50 kb away). The admixture proportions simulated were 75% parent 1 and 25% parent 2, and the simulation was conducted for 200 generations. In this simulation, a haplotype arises where recombination events have unlinked the adaptive and deleterious sites, allowing the haplotype harboring the adaptive allele to begin to sweep to fixation. Long before fixation has occurred, however, the adaptive haplotype (gray box) is detectable due to the sharp ancestry change surrounding it.
 
-## Overlooked complexities of selection on hybrids
+![Figure 4.](https://cdn.elifesciences.org/articles/69016/elife-69016-fig4-v1.jpg)
+
+**Figure 4.:** A major challenge in the field is distinguishing between possible sources of selection driving particular patterns of ancestry in hybrids. One promising approach is to use simulations to begin to distinguish between these possibilities. (A) As an example, we simulate ancestry change under two models, the Dobzhansky–Muller hybrid incompatibility (DMI) model and the hybridization load model after a pulse of admixture. Selected sites are shown as red stars, with the size of the star in the schematic corresponding to the strength of selection on individual sites. (B) We performed simulations using SLiM under these two models of selection on hybrids (Haller and Messer, 2019). Admixture proportions for both simulations were set at 75% parent 1 and 25% parent 2, and F1 fitness was 0.85. Ancestry was tracked on a 25 Mb chromosome in a diploid hybrid population (N = 2000). In the simulation shown in purple, selection on hybrids is driven by selection on three hybrid incompatibilities with dominance of 0.5, randomly positioned along the chromosome. In the simulation shown in black, selection on hybrids mimics a load model, with a total of 160 sites under selection along the chromosome. In this case, the selected sites are deleterious in all genetic backgrounds. The shaded area indicates the period of ‘fast’ initial purging (Principle 1), which is followed by a slower period of long-term purging in the hybridization load simulation. Although differences in the dynamics of purging between the two models are partly driven by the number of loci under selection in hybrids, the DMI model differs from other models of selection because not all minor parent alleles are disfavored (see Figure 4—figure supplement 1). Simulation code can be accessed on GitHub (https://github.com/Schumerlab/hybridization_review).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69016/elife-69016-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Specifically, under a two-locus DMI model, minor parent ancestry at one of the loci can be neutral or even favored by selection. This is because recombination between the parental types can regenerate ancestral (aabb) and transitional genotypes (AAbb,aaBB), which are globally compatible (left panel). Models predict that this will lead to retention of minor parent ancestry at one of the two loci involved in the DMI (Bank et al., 2012; Lewontin and Kojima, 1960, right panel). Solid line shows ancestry at locus 1 and dashed line show ancestry at locus 2 under a deterministic model of selection on hybrid incompatibilities (Lewontin and Kojima, 1960) with a starting admixture proportion of 0.25, selection coefficient of 0.1, and dominance of 0.5. (B) In contrast, when minor parent ancestry is globally deleterious at sites under selection, purging is always expected. An example is shown in the left panel of fixation of a deleterious site in parent species 1 as a result of less efficient selection due to a lower historical effective population size. After admixture (right panel), parent 1 ancestry is predicted to be purged at this locus, assuming that hybrid population sizes are sufficiently large. See the main text for a detailed discussion of this issue. Solid line shows ancestry at the selected locus with a starting admixture proportion of 0.25, selection coefficient of 0.001, and dominance of 0.5. R scripts for implementation of these models are available on GitHub (https://github.com/Schumerlab/hybridization_review).
+
+### Overlooked complexities of selection on hybrids
 
 The mechanisms discussed above likely represent an incomplete picture of the breadth of forms of selection on hybrids. For example, weak but pervasive epistatic interactions (e.g., of interacting genes in pathways) could select for similar shifts in ancestry as expected from selection on polygenic traits, but whether such weak epistatic interactions are common is unknown. It is also important to also note that, to some extent, the distinctions made above between different sources of selection can be arbitrary and not biologically meaningful. In some cases, two or more of the selective frameworks may be simultaneously applied – such as a DMI caused by genes underlying an ecologically relevant trait (Arnegard et al., 2014; Thompson, 2019a).
 
@@ -138,7 +146,7 @@ Such ‘priority’ effects of selection on hybrids, with rapid purging of inter
 
 In the previous sections, we discussed what is known about the outcomes of hybridization across diverse species (Principles 1–3) as well as the challenges and prospects for understanding how different evolutionary processes lead to changes in ancestry after hybridization. Armed with these tools, we can begin to explore the directions that these advances will allow geneticists and evolutionary biologists to pursue.
 
-## Causes of convergent patterns of introgression across taxa
+### Causes of convergent patterns of introgression across taxa
 
 Biologists have long been fascinated with the question of whether evolution is predictable (Blount et al., 2018). A key unanswered question is the extent to which we can predict outcomes of hybridization within and between pairs of species. At a broad scale, some predictions can be made due to the interplay between selection and features of genomic organization such as recombination rate and the locations of coding and conserved basepairs, which appear to have consistent effects on ancestry in many species (e.g., Principles 2 and 3). Moving beyond these broad-scale features, there are good reasons to expect that replicated hybridization events between the same species will lead to predictable outcomes at the genomic level. In repeated hybridization events between the same species, the same genetic interactions and selective forces are predicted to drive concordant changes in ancestry along the genome. Indeed, this has been observed in experimental hybrid populations, natural hybrid populations (Schumer et al., 2018; Chaturvedi et al., 2020; Matute et al., 2020; Calfee et al., 2020; Kovach et al., 2016; Bay et al., 2019; Hufford et al., 2013; Riquet et al., 2019; Smukowski Heil et al., 2019), and in replicated cline studies (Westram et al., 2021; but see Nolte et al., 2009).
 
@@ -150,13 +158,13 @@ Compared to incompatibilities and adaptive introgression, we know much less abou
 
 For other mechanisms of selection, we expect much lower predictability across systems. For example, if species have independently adapted to distinct ecological conditions, we would not expect the genetic architecture of such traits to be shared except in rare cases (e.g., Jones et al., 2012). Without selection on the same underlying regions of the genome, any repeatability in local ancestry patterns in hybrids should not exceed what is expected due to broad-scale features such as gene density (Principles 2 and 3).
 
-## Predicting differences in local and global ancestry between species
+### Predicting differences in local and global ancestry between species
 
 Conserved mechanisms that shape ancestry after hybridization can also point to cases where we predict to see differences between species. We recently found differences in the extent to which introgressed haplotypes were retained in coding regions in the genomes of swordtail fishes and humans, likely due to differences in the underlying recombination maps (Schumer et al., 2018). Both species share a strong positive correlation between introgression and the local recombination rate. However, recombination is concentrated in promoters and other functional regions in swordtail fishes (Baker et al., 2017), and tends to occur away from such regions in humans (Myers et al., 2005; Coop et al., 2008). This results in distinct patterns of local ancestry, with swordtail fishes retaining more minor parent ancestry than humans in and around genes (presumably due to differing outcomes of the action of Principles 2 and 3 in the two species groups). As data from more diverse systems accumulates, comparative analyses of patterns of introgression as a function of these features of genome structure, combined with theoretical analyses, will further develop our understanding of how selection acts in admixed genomes.
 
 Similarly, as discussed in Principle 1, the speed of initial purging of minor parent ancestry is sensitive to the aggregate recombination rate, which differs widely between species (Veller, 2019). This is because the aggregate recombination rate is strongly influenced by the total number of chromosomes and whether recombination occurs in both sexes – properties that vary widely across the tree of life (Veller, 2019; Stapley et al., 2017). Notably, these factors together may be important in explaining the variation in admixture proportions observed in the genomes of different species that are known to commonly hybridize, from cases where retention of minor parent ancestry after hybridization is rare, such as Drosophila (Coyne and Orr, 2004), to those where extensive introgression is common, such as swordtail fishes (Cui, 2013).
 
-## Effects of hybrid demography
+### Effects of hybrid demography
 
 As is the case in non-admixed populations, we expect that certain features of genome evolution will be sensitive to the demographic history of hybrid populations themselves. The importance of demography has long been appreciated in the theoretical literature on tension zones (though less frequently incorporated into empirical analyses), where dynamics of dispersal and population density at the contact zone (Pierce et al., 2017; Larson et al., 2019) play a key role in the outcomes of hybridization and interpretation of cline analysis (Payseur, 2004; Barton, 2001; Barton and Hewitt, 1989; Bierne et al., 2011). The impacts of demography on hybridization have been less thoroughly explored in the context of pulses of admixture. However, there are multiple reasons to predict that pulses of hybridization may coincide with strong bottlenecks since they are often driven by ecological disturbance (Fisher et al., 2006; Chunco, 2014) and because selection on hybrids can be so strong that it essentially drives population collapse (Shorter et al., 2017).
 
@@ -170,23 +178,23 @@ These factors will also impact the repeatability and predictability of genome ev
 
 Hybridization often leads to unusually dynamic genome evolution and reorganization, which we are just beginning to understand. As more data become available from diverse hybridization events, across taxa and timescales, we can begin to distinguish between the different processes that shape ancestry in the genome after hybridization. Ultimately, we hope such research will lead to an understanding of how different sources of selection interact with each other and with variables such as genome structure to drive similarities and differences in patterns of introgression across species. Although there are outstanding questions that may require years to disentangle (see Box 3), we conclude our discussion by proposing a way forward to tackle a subset of these questions.
 
-## Repeatability in the evolution of hybrid incompatibilities
+### Repeatability in the evolution of hybrid incompatibilities
 
 In previous sections, we discussed the uncertainties surrounding how hybrid incompatibilities arise and the degree to which we expect incompatibilities to arise repeatedly (Figure 1), either in the same genes (Powell et al., 2020; Schartl et al., 2010) or in the same regions of the genome (Schumer et al., 2018; Brandvain et al., 2014; Martin et al., 2019). Such repeatability in the evolution of hybrid incompatibilities could undermine assumptions of the snowball effect, which posits that because newly arising mutations in one species can interact with any derived mutations in the second species, the number of incompatibilities between two species should increase exponentially over time (Orr and Turelli, 2001). Data consistent with this phenomenon has been documented in several systems (Matute et al., 2010; Moyle and Nakazato, 2010; Wang et al., 2015). However, if the mutations that cause DMIs are enriched in the same genes or genomic regions, the rate of this accumulation should slow (Kalirad and Azevedo, 2017; Maya-Lastra and Eaton, 2021). Similar predictions emerge from theoretical studies of gene regulatory network evolution, where the likelihood of a gene’s involvement in DMIs is directly related to the density of the gene network (Yang and Scarpino, 2020; Satokangas, 2020). Systematic differences in gene network connectivity between species could drive differences in the distribution of DMIs across the tree of life (Cutter and Bundus, 2020). Though limited by the experimental and statistical challenges inherent in identifying DMIs, both evidence for DMI ‘hotspots’ and a slowed snowball effect should be detectable from empirical data in experiments with sufficient power.
 
-## Distinguishing between selective forces
+### Distinguishing between selective forces
 
 The differences in genetic architecture assumed by each model of selection on hybrids is one promising route to inferring their role in shaping local ancestry after hybridization. Selection on DMIs is generally thought to be stronger and less polygenic than hybridization load models (Box 1; but empirical evidence is lacking, see Fierst and Hansen, 2010 for an exploration of polygenic epistatic selection). Higher levels of polygenicity will increase the proportion of neutral basepairs that are linked to sites that are deleterious in hybrids (Figure 4). Moreover, under a DMI model ancestral and transitional genotypes can be favored by selection, which will actually act to increase minor parent ancestry in some regions of the genome (Figure 4—figure supplement 1). Together these factors will lead to greater purging of minor parent ancestry over time under polygenic models of selection against minor parent ancestry, as opposed to classic DMI models (Figure 4). Comparing the predictions of these different architectures of selection on hybrids using modeling or simulations could serve as a powerful tool to allow researchers to distinguish between them, at least on a genome-wide scale (as in Juric et al., 2016).
 
-## Empirical studies of hybrid evolution
+### Empirical studies of hybrid evolution
 
 Studies of selection in contemporary hybridizing populations offer another route to merge pattern and process, and to tease apart forms of selection acting in admixed populations. For example, Chen et al., 2019; Chen et al., 2016 and Fitzpatrick, 2019 studied weakly differentiated populations and found that genome-wide selection broadly favored ancestry derived from migrants in small populations, consistent with the idea that in small populations foreign ancestry can be favored to lighten the genetic load. In contrast, we recently found little evidence that hybridization load shapes genome-wide ancestry in hybrid swordtail populations formed between species with substantial differences in historical effective population size (Schumer et al., 2018). While these studies used genomic tracking in natural populations, other researchers have leveraged laboratory crosses and systematically varied environmental conditions to explore how ecological selection shapes genome evolution (Smukowski Heil et al., 2019). Combining such observational and manipulative approaches with comparisons across diverse species may reveal the relative importance of the forces shaping evolution after hybridization along the speciation continuum.
 
-## Complex roles of the recombination landscape
+### Complex roles of the recombination landscape
 
 Several studies have highlighted the key role of local and global recombination rates in mediating the retention and purging of minor parent ancestry in the presence of selection on hybrids. It is also possible that hybrids will have different recombination landscapes than their parental species due to features such as structural differences between species that suppress recombination (Kirkpatrick, 2010), dysfunction in the recombination process (Davies et al., 2016), recombination modifiers (Brand et al., 2018), or different hotspot usage in hybrids compared to the parental species (Li et al., 2019). While historically the difficulty of constructing accurate recombination maps for non-model species would have made understanding these complexities infeasible, the dropping costs of sequencing in combination with new methods for directly mapping double-strand breaks in meiotic cells (Canela et al., 2016) may soon put the answers to these questions within reach for a number of hybridizing species.
 
-## Predicting differences between species after hybridization
+### Predicting differences between species after hybridization
 
 Examples of hybridization across the tree of life poise the field for a broader analysis of what genetic and biological features are associated with variation in rates of introgression. For one, theory predicts that species with fewer chromosomes will undergo faster and stronger purging of minor parent ancestry in their genomes, due to a low aggregate recombination rate (Veller, 2019, e.g., in species such as Arabidopsis, Drosophila, mosquitoes). In addition to empirical analyses to address key theoretical predictions, the wealth of newly available data opens up a large number of possible studies of underexplored features of organismal biology that could influence retention of minor parent ancestry after hybridization, which we discuss briefly here.
 
@@ -200,78 +208,78 @@ Though there are major challenges ahead, we have made significant progress in th
 
 ## Glossary
 
-## Adaptive introgression
+### Adaptive introgression
 
 The hybridization-mediated transfer of parental alleles that increase fitness in the recipient population.
 
-## Admixture
+### Admixture
 
 A more general term than hybridization that encompasses all gene flow between distinct populations, which may or may not be diverged enough to be considered species.
 
-## Ancestry linkage disequilibrium (ancestry LD)
+### Ancestry linkage disequilibrium (ancestry LD)
 
 Statistical association between haplotypes of the same ancestry that can be caused by physical linkage of sites, selection, or population structure; in the case of linkage disequilibrium due to physical linkage, ancestry LD extends over a much greater physical distances than is typical for non-admixed populations.
 
-## Ecological selection
+### Ecological selection
 
 Selection driven by the fitness of an organism’s traits in the context of its environment.
 
-## Fisher’s geometric model
+### Fisher’s geometric model
 
 A general model of selection where fitness is determined by distance from a phenotypic optimum, which has been applied in the hybridization literature to describe selection on polygenic traits (either stabilizing or directional; Figure 2), ecological selection on hybrids, and hybrid incompatibilities.
 
-## Genetic architecture
+### Genetic architecture
 
 The number, effect size, and location in the genome of loci contributing to a phenotype.
 
-## Haplotype
+### Haplotype
 
 A physically contiguous tract of DNA inherited from a single parent unbroken by recombination.
 
-## Hybrid incompatibilities
+### Hybrid incompatibilities
 
 Mutations that arise in interacting genes after two lineages diverge such that when individuals from these populations hybridize a previously ‘untested’ combination of alleles reduces hybrid viability or fertility.
 
-## Hybridization load
+### Hybridization load
 
 The burden of mildly deleterious mutations that preferentially accumulated in the parental lineage with less effective selection, leading to reduced fitness of hybrids that harbor more of that species’ genome and selection against ancestry derived from that species. Fitness in hybrids is not reduced relative to the parental species with lower historical effective population size.
 
-## Introgression
+### Introgression
 
 Transfer of a region of the genome between species due to hybridization.
 
-## Major parent
+### Major parent
 
 The species that contributed a majority of the genome of an admixed population.
 
-## Minor parent
+### Minor parent
 
 The species that contributed a minority of the genome of an admixed population.
 
-## Polygenic trait
+### Polygenic trait
 
 A trait where phenotypic variation is explained by the combined effects of many, sometimes thousands, of variants spread throughout the genome.
 
-## Segregation load
+### Segregation load
 
 The decrease in average fitness of hybrids expected due to the disruption of co-adapted sets of alleles inherited from the parental species that are broken apart by recombination and independent assortment.
 
-## Sexual selection
+### Sexual selection
 
 Selection driven by mate choice and competition for mates.
 
-## Snowball effect
+### Snowball effect
 
 The faster-than-linear increase in the number of DMIs with increasing numbers of substitutions between two species that is predicted by evolutionary theory.
 
-## Species
+### Species
 
 Two groups of organisms where hybrids between them have reduced viability or fertility. This can range from moderate impacts on viability or fertility to complete inviability or infertility.
 
-## Hybrid zone
+### Hybrid zone
 
 Spatial zone where hybrids form between the geographic regions occupied by two parental species.
 
-## Tension zone
+### Tension zone
 
 A stable zone where hybrids are found in a narrow geographical region as a result of balance between ongoing dispersal of individuals from parental populations and strong selection against hybrids.

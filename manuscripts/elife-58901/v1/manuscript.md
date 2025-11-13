@@ -33,11 +33,35 @@ The functional diversity of the VPH is likely explained by cellular heterogeneit
 
 ## Results
 
-## Isolation of single cells from the mouse VPH for transcriptomic analysis
+### Isolation of single cells from the mouse VPH for transcriptomic analysis
 
 To isolate single cells from the mouse VPH for scRNA-seq analysis, we microdissected the region of the VPH from fresh brain slices obtained from a total of five male and five female C57BL/6 mice (P30-34), as described previously (Mickelsen et al., 2017; Mickelsen et al., 2019), in two separate harvests (see Materials and methods). Single-cell suspensions were loaded onto a Chromium Controller (Figure 1a) and processed using the 10x Genomics platform (Zheng et al., 2017). All VPH microdissections were mapped for consistency using anatomical landmarks across the rostrocaudal axis (Figure 1b; Paxinos, 2012). The two harvests used 10x V2 and V3 chemistry, respectively, and both consisted of separate male and female pools for a total of four separate pools. We found little sex-dependent differences within each harvest (Figure 1c) and samples from the two harvests were pooled and batch corrected to account for chemistry-dependent differences (Figure 1—figure supplement 1a; see Materials and methods). In our pooled data set, the median transcripts (UMIs)/cell was 8,336 and the median genes/cell was 3,415 (Figure 1d). We used the 1,500 genes with the highest normalized dispersion for dimensionality reduction using principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) followed by cluster identification using Leiden community detection, identifying a total of 20 clusters in the first iteration of clustering (Figure 1e,f). Neuronal and non-neuronal clusters were segregated using a two-component Gaussian mixture model trained on the per-cluster average expression of four pan-neuronal markers Snap25, Syp, Tubb3, and Elavl2 (Figure 1—figure supplement 1b,c) leading to a binary classification of neuronal and non-neuronal cells (Figure 1e,f). Subsequent clustering of only neuronal cells (20 clusters; Figure 1—figure supplement 2a,c) and only non-neuronal cells (18 clusters; Figure 1—figure supplement 2b,d) showed comparable proportions from each sex and batch.
 
-## Identification of marker genes and testing gene specificity with a classification model
+![Figure 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-v1.jpg)
+
+**Figure 1.:** (a) Workflow schematic representing the VPH microdissection from coronal mouse brain slices, single-cell dissociation, sequencing library preparation, and bioinformatic analysis (Mickelsen et al., 2019). (b) Location of VPH microdissections mapped onto the coronal mouse brain atlas at distances from bregma of −2.54, –2.70, −2.92, and –3.16 mm. Atlas images were modified from Paxinos, 2012. (c) Two-dimensional UMAP plots representing 16,991 single cells from four sequencing libraries color-coded by mouse sex (left) and the 10x Genomics chemistry version (right) following batch correction. (d) Histograms of unique transcripts (left) and genes (right) were detected in 16,991 single cells after quality control. Dashed vertical lines represent the median transcripts and genes per cell, respectively. (e) Heatmap and (f) UMAP plot showing the first iteration of unsupervised clustering revealing 20 unique clusters. Neuronal populations are disjoint from non-neuronal populations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) When libraries were combined bioinformatically, we assessed the need for batch correction by visualizing the libraries with (lower) and without (upper) Harmony batch correction (Korsunsky et al., 2019). Batch effects correlated with 10x Genomics chemistry version were observed but no batch effects were associated with mouse sex. (b) UMAP plot of average normalized expression of pan-neuronal markers Snap25, Syp, Tubb3, and Elavl2 across all cells before the first iteration of unsupervised clustering. (c) A two-class Gaussian mixture model was trained using the expression of these four genes to segregate neuronal cells (blue) from non-neuronal cells (green).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Proportion of cells from each sample (female 1 and 2; male 1 and 2) contributing to each neuronal cluster (1-20); (b) and to each non-neuronal cluster (1-18). (c) Proportion of cells contributing to each neuronal cluster within each sample, and (d) contributing to each non-neuronal cluster within each sample. (e) Histogram of the number of unique transcripts (UMIs) per gene in the set of all genes (all, gray), in the set genes used to guide dimensionality reduction and clustering (highly-variable, blue), and in the set of genes used as marker genes (Top10, orange). Both the x-axis (UMIs per gene) and y-axis (number of genes) are represented on a log10-scale. (f) Same as (a) but shows the distribution of UMIs per gene in the set mitochondrial genes (mtRNA, red), and set of cell-cycle related genes (cell cycle, cyan). (g) The number of unique transcripts per cell for five representative marker genes. Each subpanel shows two distributions of UMIs/cell for a specific gene (shown in the top right corner): the distribution of UMIs/cell in cells of the population(s) for which this gene is a marker (blue), and the distribution of UMIs/cell in all other cells (gray). The population(s), which each gene identifies, is shown on the y-axis.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) A schematic of the cluster classification scheme used to demonstrate the number of marker genes needed to discriminate transcriptional clusters. (b) Class-balanced accuracy showing the overall performance of a random forest classifier trained on k = 2, 3, 5, 10, 15, 20 marker genes per cluster. (c) The per-anatomical-region and (d) per-cluster sensitivity of the cluster classifier. For regions with multiple clusters, a 95% confidence interval is shown as transparent bands around the mean (thick line). (e) Confusion matrix of the k = 10 classifier which shows how the classifier labeled cells from each cluster. The shade of each box represents the fraction of cells in a row assigned to that cluster by the classifier. The ground truth (original cluster labeling) is shown on the y-axis and the predicted clusters are shown on the x-axis. For example, the box with coordinates (GLUT7, GLUT10) shows the fraction of GLUT10 cells assigned to GLUT7 by the classifier. (f) The total number of cells in each cluster. Clusters with few cells dominate the misclassifications shown in panel (e). (g) For each value of k = 2, 3, 5, 10, 15, 20, k marker genes are selected from each of the 20 neuronal clusters and the combined set of marker genes is used to build the classifier model. This table lists the total number of genes corresponding to each value of k. The gene set sizes are strictly less than 20*k because some marker genes mark multiple populations and are only included once.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) UMAP plot showing unsupervised clustering of 18 VPH non-neuronal cells. (b) Violin plot showing the distribution of normalized expression of discriminatory marker genes in each cluster. Abbreviations: OPCs, oligodendrocyte precursor cells; VSMCs, vascular smooth muscle cells; VLMCs, vascular leptomeningeal cells; and VECs, vascular endothelial cells. (c) Heatmap showing scaled expression of discriminatory genes across all 18 non-neuronal clusters. (d) Violin plots showing the distribution of the number of unique transcripts (upper) and the number of genes in each non-neuronal cluster.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a) UMAP plot showing just non-neuronal clusters 1–6 (detail of Figure 1—figure supplement 4a). (b) Series of UMAP plots showing normalized expression of 10 key discriminatory marker genes for subpopulations of oligodendrocyte lineage cells. (c) UMAP plot showing just non-neuronal clusters 7–11 (detail of Figure 1—figure supplement 4a). (d) Series of UMAP plots showing normalized expression of 10 key discriminatory marker genes for astrocyte subpopulations, tanycytes, and ependymal cells.
+
+### Identification of marker genes and testing gene specificity with a classification model
 
 Throughout this study, we present multiple links between the transcriptional signatures of groups of single cells and their anatomical mapping. A key way in which we represent the shared transcriptional signature of groups of cells is through the presentation of marker genes, the expression of which is over-represented in a given population, as violin plots, which we use to show the distribution of transcripts per cell in each cluster for a given gene. While an individual marker gene may not be sufficient to uniquely describe an individual population, we provide an exhaustive set of markers that, when used in aggregate, specifically and uniquely identify each population described herein. Given that the median number of transcripts per cell is a small multiple of the number of genes per cell (Figure 1d), consistent with similar studies (e.g. Mickelsen et al., 2019; Moffitt et al., 2018; Chen et al., 2017), it is important to verify whether the marker gene expression presented is specific and robust. We first examined the distribution of transcripts captured per gene (Figure 1—figure supplement 2e and f) with the genes that we present as markers typically being the most highly expressed genes in the data set. Moreover, typical marker genes are expressed with at least 10 counts in a cell, and often with substantially more counts (Figure 1—figure supplement 2g).
 
@@ -47,15 +71,55 @@ We also verified that the markers presented are sufficient to uniquely describe 
 
 **Figure 2.:** (a) UMAP plots showing normalized expression of Slc17a6, Slc32a1, Gad1, and Hdc after the second iteration of unsupervised clustering on just neuronal cells. Using these four genes, neurons were classified by a three-class Gaussian mixture model as glutamatergic (GLUT, blue), GABAergic (GABA, yellow), or histaminergic (HA, green). (b) Unsupervised clustering of 20 VPH neuronal cell types shown in a UMAP embedding. (c) Heatmap showing scaled expression of discriminatory genes across all 20 neuronal clusters. (d) Violin plot showing the distribution of normalized expression in each cluster of neurotransmitters (Slc17a6, Slc32a1, Gad1, Gad2) (upper) and discriminatory marker genes (lower). (e) Violin plots showing the distribution of the number of unique transcripts (upper) and the number of genes (lower) in each neuronal cluster.
 
-## Major non-neuronal cell types in the VPH
+![Figure 3.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig3-v1.jpg)
+
+**Figure 3.:** (a) UMAP plots showing normalized expression of Tac1, Nos1, Calb2, and Foxp2 enriched in VPHGLUT cluster 7 following Slc32a1 and Slc17a6 (top). (b) Violin plot showing discriminatory marker genes enriched in cluster 7. (c) Mouse brain atlas schematic, modified from Paxinos, 2012, showing the PMv in a coronal section at distance from bregma of −2.46 mm (top). ISH images for Tac1, Nos1, Calb2, and Foxp2 from the ABA (Lein et al., 2007; bottom). (d) Confocal micrographs (40×) of FISH in coronal sections of wild type mice and corresponding pie charts representing co-expression of mRNA for Tac1 and Slc17a6 (n = 678 cells, three mice; upper) and Tac1 and Calb2 (n = 963 cells, three mice; lower). Scale bar (applicable to all micrographs) 50 μm. (e) UMAP plots showing normalized expression of markers in VPHGLUT cluster 7 only, including cell type markers for reference (Tac1, Adcyap1, and Slc17a6) and markers that define a subpopulation of putative catecholaminergic neurons (Slc6a3, Slc18a2 and Ddc, but with very low Th). ISH image from the ABA (Lein et al., 2007) showing Slc6a3 expression in the PMv (inset).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) UMAP plots showing cluster7 neurons among all neuronal populations (left), cluster 7 alone (middle) and following another iteration of clustering (right) revealing eight subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all eight VPHGLUT cluster 7 subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) Series of UMAP plots of VPHGLUT cluster 7 alone showing normalized expression of 10 key discriminatory marker genes that define distinct subpopulations and demonstrate heterogeneity among cluster 7 neurons.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig4-v1.jpg)
+
+**Figure 4.:** (a) UMAP plots showing normalized expression of Cck, Foxb1 (shared with VPHGLUT clusters 1–5), Synpr, Dlk1, Ebf3, and Stxbp6 (enriched in VPHGLUT cluster 6). (b) Violin plot showing discriminatory marker genes enriched in VPHGLUT cluster 6 following Slc32a1 and Slc17a6 (top). (c) Mouse brain atlas schematic (Paxinos, 2012) showing the PMd in a coronal section at distance from bregma of −2.70 mm (top). (d) ISH images for three anterior to posterior coronal sections (approximate distance from bregma −2.46,–2.80, and −2.92 mm) for Synpr (left), Dlk1 (middle), and Stxbp6 (right) from the ABA (Lein et al., 2007; bottom). In each case, expression appears to be enriched in the PMd in anterior sections and largely absent in the MB in the posterior section.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) UMAP plots showing cluster 8 neurons among all neuronal populations (left), cluster 8 alone (middle) and following another iteration of clustering (right) revealing six subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all six VPHGLUT cluster 8 subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) Mouse brain atlas schematic (Paxinos, 2012), showing the SUM (or retromammillary nucleus/RM) in a coronal section at distance from bregma of −3.08 mm. (e) UMAP plots showing cluster 8, showing normalized expression of Slc17a6, Slc32a1, Gad1, and Gad2. A region of cluster 8 (circled), corresponding to subcluster 3 (green) was enriched in cells that were Slc17a6+, Slc32a1+, Gad2+ but Gad1-. (f) UMAP plots of Sema3c, Inhba, and Rxfp1 expression (left) relative to corresponding ISH images from the ABA (Lein et al., 2007; right) showing localization to the posterior SUM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) UMAP plots showing clusters 14, 16, and 18 neurons among all neuronal populations (left), clustering of all three alone (middle) and following another iteration of clustering (right) showing eight subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all eight subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) Mouse brain atlas schematic (Paxinos, 2012) showing the Arc in a coronal section at distance from bregma of −2.45 mm. (e) UMAP plots showing discriminatory genes that define a selection of Arc cell types. (f) UMAP plots of key markers that identify VPHGLUT cluster 16 (also subcluster 8) as Arc KNDy neurons including Tac2, Pdyn, and Esr1 (left) and corresponding ISH images from the ABA (Lein et al., 2007; right) showing localization to the posterior Arc.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) UMAP plots showing clusters 15 and 19 neurons among all neuronal populations (left), clustering of both alone (middle) and following another iteration of clustering (right) showing five subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all five subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) Mouse brain atlas schematic (Paxinos, 2012) showing the LHA/Tub (also referred to as medial tuberal nucleus and terete hypothalamic nucleus) in a coronal section at distance from bregma of −2.15 mm. (e) UMAP plots showing discriminatory genes that define a selection of previously identified LHA/Tub neuronal cell populations (Mickelsen et al., 2019).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig5-v1.jpg)
+
+**Figure 5.:** (a) UMAP plots showing normalized expression of Hdc, Slc18a2, Wif1, and Maob enriched in VPHHA cluster 17 (circled). (b) Violin plot showing discriminatory marker genes enriched in VPHHA cluster 17 following Slc32a1 and Slc17a6 (top). (c) Mouse brain atlas schematic, modified from Paxinos, 2012, showing the dorsal TMN (TMNd) and ventral TMN (TMNv) in a coronal section at distance from bregma of −2.54 mm (top). ISH images for Hdc, Slc18a2, Wif1, and Maob from the ABA (Lein et al., 2007; bottom). (d) Confocal micrographs (40×) of FISH in coronal sections of wild type mice and corresponding pie charts representing co-expression of mRNA in the TMNv (top) for Hdc and Wif1 (n = 415 cells, three mice; upper) and Hdc and Maob (n = 570 cells, three mice; lower) and in the TMNd (bottom) for Hdc and Wif1 (n = 109 cells, three mice; upper) and Hdc and Maob (n = 192 cells, three mice; lower). Scale bar (applicable to all micrographs) 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) UMAP plots showing clusters 13 and 17 neurons among all neuronal populations (left), clustering of both alone (middle) and following another iteration of clustering (right) showing 10 subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all ten subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) UMAP plots showing discriminatory genes that define putative HA subclusters (7, 8, 9, and 10) and an HA-like subcluster (5), all defined by the perforated line. Subcluster five exhibits expression of several key HA markers including Slc18a2, Prph, Wif1, and Hrh3 (but limited Hdc) as well as Slc32a1 and several unique markers (Gm39653, Npy2r, and Chodl).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig6-v1.jpg)
+
+**Figure 6.:** (a) UMAP plots showing normalized expression of Tac2, Tcf4, Cplx1, and Pvalb enriched in VPHGLUT cluster 20 (circled). (b) Violin plot showing discriminatory marker genes enriched in VPHGLUT cluster 20 following Slc32a1 and Slc17a6 (top). (c) Mouse brain atlas schematic, modified from Paxinos, 2012, showing the LM in a coronal section at distance from bregma of −2.92 mm (top). ISH images for Tac2, Tcf4, Cplx1, and Pvalb from the ABA (Lein et al., 2007; bottom). (d) Confocal micrographs (40×) of FISH in coronal sections of wild type mice and corresponding pie charts representing co-expression of mRNA for Slc17a6 and Tac2 (n = 1210 cells, three mice; upper), Slc17a6 and Pvalb (n = 1057 cells, three mice, upper middle), Slc17a6 and Cplx1 (n = 1269 cells, three mice; lower middle), and Slc17a6 and Tcf4 (n = 1642 cells, three mice; lower), Scale bar (applicable to all micrographs) 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) UMAP plots showing cluster 20 neurons among all neuronal populations (left), clustering of cluster 20 alone (middle) and following another iteration of clustering (right) revealing three subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all three subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) UMAP plots showing discriminatory genes that define putative LM subclusters.
+
+### Major non-neuronal cell types in the VPH
 
 Among non-neuronal cell populations in the VPH, we identified 18 distinct clusters distinguished from one another by suites of cell type-specific discriminatory markers (Figure 1—figure supplement 4a–d). We resolved six distinct populations of oligodendrocyte lineage cells arranged in a contiguous strand in a UMAP plot (Figure 1—figure supplement 4a), likely reflecting a developmental gradient of gene expression. These include oligodendrocyte precursor cells (OPC or NG2+ cells; cluster 1), immature oligodendrocytes (cluster 2), and four oligodendrocyte populations (clusters 3–6), all of which exhibit a wave of differentially-expressed genes (Cspg4, Fyn, Ctps, Tspans2, Apod, Klk6, etc.; Figure 1—figure supplement 5a and b) that aligns well with the diversity of functional markers of the oligodendrocyte lineage in the mouse brain identified through previous scRNA-seq analyses (Marques et al., 2016; Zeisel et al., 2018; Saunders et al., 2018). We also resolved three distinct clusters of astrocytes (clusters 7, 8, and 9), all of which are Aqp4+ and Agt+. Clusters 7 and 8 are distinguishable by high expression of Slc7a10 and Htra1 and low expression of Gfap, while cluster 9 exhibits high expression of both Gfap and C4b (Figure 1—figure supplement 5c and d). In nearby clusters, we identified tanycytes (cluster 10: Rax+) and ependymal cells (cluster 11: Ccdc153+, S100a6+; Figure 1—figure supplement 5c and d). In addition, we found other distinct clusters readily identifiable as macrophages (cluster 12: Mrc1+), microglia (cluster 13: Tmem119+), pericytes (cluster 14: Rgs5+), vascular smooth muscle cells (VSMCs; cluster 15: Rgs5+, Acta2+), two populations of putative vascular leptomeningeal cells or VLMCs (cluster 16: Fxyd5+, Slc47a1+; cluster 17: Dcn+) and vascular endothelial cells (VECs; cluster 18: Pecam1+, Slc38a5+; Figure 1—figure supplement 3b). Our identification of major non-neuronal VPH cell types is based on, and closely aligns with, previous scRNA-seq analyses from mouse brain (Marques et al., 2016; Zeisel et al., 2018; Saunders et al., 2018).
 
-## Diverse populations of excitatory and inhibitory neuronal cell clusters in the VPH
+### Diverse populations of excitatory and inhibitory neuronal cell clusters in the VPH
 
 Among the neuronal clusters, which contained significantly more genes and UMIs per cell (4334 and 12,065, respectively) than the overall data set, we first examined broad patterns in the expression of fast amino acid and monoamine neurotransmitter markers (Figure 2a). Expression of genes necessary for the synthesis and packaging of the excitatory transmitter glutamate (Slc17a6, encoding the vesicular glutamate transporter 2, VGLUT2) and the inhibitory transmitter GABA (Slc32a1, encoding the vesicular GABA transporter, VGAT) provided a binary classification of Slc17a6+ clusters as glutamatergic (VPHGLUT) and Slc32a1+ clusters as GABAergic (VPHGABA) neurons. This was further supported by the expression of the gene encoding a synthetic enzyme for GABA (Gad1/GAD67) which largely aligns with Slc32a1+ clusters. We found that of the 20 neuronal clusters we identified, thirteen are glutamatergic, six are GABAergic and one (cluster 17) best matched the profile of a unique population of histaminergic (HA) neurons based on the unique expression of histidine decarboxylase (Hdc/HDC; Figure 2a,b). Overall, within these neuronal populations, clusters are distinguished by suites of differentially expressed transcripts (Figure 2c,d) with comparable UMIs/cell and genes/cell (Figure 2e). In the following analyses, we validated the co-expression of key markers and their spatial organization in selected VPH neuronal populations. In all cases, we first attempted to map transcriptionally distinct cell clusters onto specific anatomical subregions within the VPH, by comparing differentially-expressed transcripts with the online database of in situ hybridization (ISH) data from the Allen Brain Atlas (ABA; Lein et al., 2007), followed by co-expression analysis using multiplexed FISH.
 
-## Transcriptional signatures differentiate ventral and dorsal premammillary (PM) nuclei
+### Transcriptional signatures differentiate ventral and dorsal premammillary (PM) nuclei
 
 Among neuronal clusters that correspond to discrete anatomical subregions of the VPH, we identified at least one VPHGLUT population with a suite of differentially-expressed transcripts that appears to closely match the ventral premammillary nucleus (PMv; Figure 3). VPHGLUT cluster 7 is enriched in the following key transcripts: Tac1 (encoding substance P or SP), Nos1 (encoding neuronal nitric oxide synthase or NOS), Calb2 (encoding calretinin), and Foxp2 (encoding the transcription factor forkhead box P2; Figure 3a) along with a host of other differentially expressed markers (Figure 3b). The spatial pattern of expression of each of the markers in Figure 3a were found in the ABA (Lein et al., 2007), and correspond closely to the PMv (Figure 3c). Through FISH co-expression analysis, we found that Tac1, Calb2, and Slc17a6 are extensively co-expressed in a large cluster of neurons in the PMv (Figure 3d). These data broadly align with several known markers for the PMv (Donato and Elias, 2011). For example, SP (Shimada et al., 1988; Larsen, 1992) and NOS (Vincent and Kimura, 1992) are both enriched in the PMv. Another marker that is enriched in VPHGLUT cluster 7 is Adcyap1 (encoding the neuropeptide pituitary adenylate cyclase-activating polypeptide, or PACAP; Figure 3b). Consistent with the role of the PMv in reproductive function (Donato and Elias, 2011; Leshan and Pfaff, 2014), PACAP+ PMv neurons were recently shown to critically regulate female reproductive physiology and fertility (Ross et al., 2018).
 
@@ -63,11 +127,11 @@ Interestingly, we also found that a distinct subpopulation of VPHGLUT cluster 7 
 
 Another distinct VPHGLUT population (cluster 6) share a number of common markers with clusters 1–5, for example Cck (encoding the neuropeptide cholecystokinin) and Foxb1 (encoding the transcription factor Forkhead Box B1), which are largely undetectable in clusters 7–10 (Figure 4a,b). Curiously, VPHGLUT cluster 6 also expresses a suite of markers that are enriched in clusters 7–10 (ex. Ebf3, Dlk1, Synpr, Nxph1) but largely undetectable in clusters 1–5 (Figure 4a,b). In particular, Synpr (encoding the presynaptic protein synaptoporin), Dlk1 (encoding delta like non-canonical Notch ligand 1), Ebf3 (encoding early B cell factor 3) and Stxbp6 (encoding the synaptic protein syntaxin binding protein 6) are enriched in VPHGLUT cluster 6 (Figure 4a,b). Examining the expression patterns of Synpr, Dlk1, and Stxbp6 in the ABA (Lein et al., 2007), we found that all three are enriched in a discrete region that appears to correspond well to the dorsal PM (PMd; Figure 4c,d) and are largely undetectable in the more caudal mammillary bodies (MB; Figure 4d). This suggests that VPHGLUT cluster 6 likely represents a PMd population that expresses a number of unique signatures (ex. Synpr, Stxbp6) but shares some commonalities with VPHGLUT clusters 1–5 (ex. Foxb1, Cck, Adcyap1) and VPHGLUT cluster 7, a putative PMv population (ex. Nxph1, Ar). These data suggest that the spatially segregated PMd and PMv may be defined by distinct transcriptional signatures.
 
-## A neuronal population in the supramammillary (SUM) nuclei
+### A neuronal population in the supramammillary (SUM) nuclei
 
 Another notable neuronal cluster is VPHGLUT cluster 8. Subjecting this cluster to another iteration of unsupervised clustering revealed six subclusters (Figure 4—figure supplement 1a) which exhibit suites of differentially expressed genes (Figure 4—figure supplement 1b,c). Several of the markers that define distinct subclusters within VPHGLUT cluster 8 are found within anatomically identified neuronal populations in the SUM (Figure 4—figure supplement 1d), only the most ventral portion of which would be included in our microdissection (Figure 1b). These markers, previously identified in rodents include Th (encoding tyrosine hydroxylase, enriched in cluster 8–1; Swanson, 1982) and Nos1 (enriched in cluster 8–5; Yamada et al., 1996; Pedersen et al., 2017). Although all cells in cluster 8 express Slc17a6, and are nominally classified as glutamatergic, at least one subpopulation appears to co-express Slc32a1 and Gad2 but not Gad1 (Figure 4—figure supplement 1e). Subcluster 8–3 closely corresponds to this Slc17a6+/Slc32a1+/Gad2+ subcluster and co-expresses a suite of discriminatory makers including Sema3c, Inhba, Rxfp1 and others (Figure 4—figure supplement 1f). Cross-referencing with the ABA (Lein et al., 2007) shows selective expression of Sem3c, Inhba, and Rxfp1 in the SUM (Figure 4—figure supplement 1f). Another subcluster, cluster 8–4 also expresses a moderate level of Slc32a1 (Figure 4—figure supplement 1c). Interestingly, a unique population of VGLUT2/VGAT co-expressing axons originating in the SUM has been described among projections to the hippocampal dentate gyrus (Boulland et al., 2009; Soussi et al., 2010) and these dual phenotype SUM neurons were found to indeed co-release GABA and glutamate onto neurons of the dentate gyrus (Pedersen et al., 2017; Hashimotodani et al., 2018). Our identification of this VPHGLUT cluster 8 subpopulation is consistent with previous anatomical and functional data defining a unique dentate-projecting, dual phenotype SUM population but would require additional functional evidence to validate. However, the markers identified in our transcriptomic analysis may provide possible strategies for their precise genetic targeting. Furthermore, a microdissection that includes the entirety of the SUM would provide a more comprehensive picture of neuronal cell type diversity within this region.
 
-## Neuronal populations in the caudal arcuate (Arc) and lateral hypothalamic/tuberal (LHA/Tub) nuclei
+### Neuronal populations in the caudal arcuate (Arc) and lateral hypothalamic/tuberal (LHA/Tub) nuclei
 
 A number of neuronal clusters are defined by markers known to be enriched in the hypothalamic Arc nucleus, despite our microdissection likely capturing only the most caudal portion of the Arc. Clusters that express Arc-enriched markers (Romanov et al., 2017; Campbell et al., 2017), including cluster 14 (Unc13c, Trh, etc.), cluster 16 (Tac2, Pdyn, etc.), and cluster 18 (Agrp, Sst, etc.) were combined in a second iteration of clustering to reveal eight subclusters defined by differentially expressed genes (Figure 4—figure supplement 2a–c). Cluster 14 parsed into five subclusters with markers that include (Unc13c, Thrb and Trh; Figure 4—figure supplement 2e), that appear to correspond well to a population of cells in the caudal Arc. In particular, using ISH data from the ABA (Lein et al., 2007), both Dlk1 and Thrb (encoding the thyroid hormone receptor beta) are enriched in a cluster surrounding the 3rd ventricle/mammillary recess corresponding to the medial posterior portion of the Arc (Paxinos, 2012) or posterior portion of the periventricular nucleus (Allen Institute Mouse Brain Reference Atlas). Cluster 18 parsed into two subclusters. While both express Otp, one subcluster likely corresponds to well-known Arc AGRP/NPY neurons (Agrp and Npy), and another likely corresponds to a previously identified population of Arc Sst+ neurons such as Sst/Unc13c (Campbell et al., 2017).
 
@@ -75,29 +139,45 @@ A highly distinct neuronal cluster, VPHGLUT cluster 16, which did not subcluster
 
 Finally, two other distinct GABAergic neuronal populations (VPHGABA clusters 15 and 19; Figure 4—figure supplement 3a) appear to correspond to the tuberal region of the LHA, also known as the hypothalamic tuberal nuclei (Figure 4—figure supplement 3d). The most caudal part of this region would likely be included in the rostral-most slices in our microdissection. VPHGABA cluster 15 (enriched in Sst, Six3, Otp, Col25a1, Ecel1, and Parm1), which may be parsed into four subclusters, and VPHGABA cluster 19 (enriched in Sst, Otp, Dlk1, Pthlh, and Ptk2b; Figure 4—figure supplement 3b,c,e), correspond closely with two previously identified subpopulations of Sst-expressing GABAergic neurons in the tuberal LHA (LHAGABA clusters 6 and 13 , respectively; Mickelsen et al., 2019). Sst-expressing neurons are enriched in the tuberal region (Morales-Delgado, 2011) and have recently been implicated in the regulation of feeding behavior in mice (Luo et al., 2018).
 
-## Histaminergic neurons in the tuberomammillary (TMN) nuclei
+### Histaminergic neurons in the tuberomammillary (TMN) nuclei
 
 A highly distinct cluster emerged from our data set that exhibits a pattern of gene expression characteristic of histamine (HA)-producing neurons (VPHHA cluster 17). HA neurons are a well-characterized monoaminergic, neuromodulatory population with cell bodies concentrated in the ventral TMN (TMNv) and dorsal TMN (TMNd), and also scattered throughout the VPH region. TMN HA neurons are the sole source of neuronally-synthesized HA in the brain, make widespread projections throughout the brain (Ericson et al., 1987; Inagaki et al., 1988) and have a key role in modulating wakefulness (Brown et al., 2001; Haas et al., 2008; Panula and Nuutinen, 2013). Previous mouse hypothalamic scRNA-seq studies have also detected a population of HA neurons (Chen et al., 2017; Campbell et al., 2017; Kim et al., 2020). We found that VPHHA cluster 17 neurons express the following key transcripts: Hdc, in addition to Slc18a2 (encoding the vesicular monoamine transporter two or VMAT2), Maob (encoding monoamine oxidase B), and another unique marker Wif1 (encoding Wnt inhibitory factor 1; Figure 5a). Additional makers include transcripts for Maoa, Msrb2, Itm2a, Bsx, Hrh3, Hcrtr2, Sncg, and Prph (Figure 5b). Our identification of Prph (encoding the neurofilament protein peripherin) as a highly selective marker for HA neurons is consistent with previous anatomical work (Eriksson et al., 2008). Key markers (Hdc, Slc18a2, Wif1, and Maob) correspond well to the TMNv and TMNd in the ABA (Lein et al., 2007; Figure 5c). FISH analysis of Wif1 and Maob co-expression with Hdc revealed extensive co-expression in both the TMNv and TMNd but with lower coexpression in the TMNd (Figure 5d). With regard to fast neurotransmitter phenotype, we found that VPHHA cluster 17 neurons are exceptional in our data set in that they express very low levels of both Slc17a6 and Slc32a1, but robustly express Gad1. That TMN HA neurons are GAD+, and likely capable of GABA synthesis, has long been recognized (Vincent et al., 1983; Takeda et al., 1984). While there has been recent conflicting data on whether or not HA neurons express Slc32a1 (Yu et al., 2015; Venner et al., 2019), our data indicate that TMN HA neurons robustly co-express Gad1 accompanied by very low co-expression of Slc32a1.
 
 To investigate the possibility that TMN HA neurons are themselves heterogeneous, we subjected VPHHA cluster 17 neurons to another iteration of clustering. However, we also observed that a subset of VPHGABA cluster 13 neurons share some common markers with HA neurons and thus included both clusters 13 and 17 in our subclustering analysis. VPHHA cluster 17 parsed into four subclusters (subclusters 7–10; Figure 5—figure supplement 1a). While cluster 13 parsed into six subclusters (subclusters 1–6), only subcluster 5, which we refer to as HA-like, share some key features with subclusters 7–10, collectively denoted by the perforated outline (Figure 5—figure supplement 1a). Subclusters 9 and 10 comprise the majority of cluster 17 neurons and express all the cardinal signatures of HA neurons (Hdc, Slc18a2, Prph, Wif1, Hcrtr2, Hrh3). Subclusters 7 and 8 are much smaller populations that express variable levels of many of these same markers while also exhibiting highly unique markers (ex. Cckar, Wnt7a, Gpc5, and Rspo2; Figure 5—figure supplement 1c,d). Interestingly, HA-like subcluster five is unique in expressing a number of HA markers including Hdc (but at low levels), Slc18a2, Prph, Wif1, and Hrh3 in addition to several more unique makers such as GM39653, Npy2r, and Chodl (Figure 5—figure supplement 1c,d). Importantly, subcluster five is a putative GABAergic population with moderate co-expression of Slc32a1. Taken together, these data suggest a degree of transcriptional heterogeneity among HA neurons, which requires a larger, and perhaps enriched, sampling of Hdc+ neurons to fully resolve.
 
-## A distinct neuronal cluster corresponds to the lateral mammillary (LM) nuclei
+### A distinct neuronal cluster corresponds to the lateral mammillary (LM) nuclei
 
 We identified a distinct VPHGLUT population (cluster 20) characterized by the expression of Tac2, Pvalb (encoding the calcium-binding protein parvalbumin), Cplx1 (encoding the synaptic protein complexin-1), and Tcf4 (encoding transcription factor 4; Figure 6a), in addition to a suite of other discriminatory markers including Fgf1, Cbln2, Infg2, Nefm, Myo1a, and Syt2 (Figure 6b). The spatial pattern of expression of Tac2, Pvalb, Cplx1, and Tcf4 in the ABA (Lein et al., 2007) corresponds well to the lateral mammillary (LM) nuclei, which are tightly circumscribed bilateral cell clusters, immediately lateral to the medial mammillary region and bisected by the fornix (Figure 6c). LM neurons are components of the MB and are implicated in the encoding of head direction and aspects of spatial memory (Vann and Aggleton, 2004; Dillingham et al., 2015; Dillingham and Vann, 2019). Consistent with our scRNA-seq results, FISH analysis revealed extensive co-expression of Tac2, Pvalb, Cplx1, and Tcf4 with Slc17a6 in the LM. Notably, Pvalb expression is limited to a subset of Slc17a6+ neurons in the LM (Figure 6d). These data suggest that LM neurons comprise a transcriptionally-distinct population that appears to be confined to the anatomical boundaries of the LM.
 
 Although VPHGLUT cluster 20 is highly distinct relative to other clusters in UMAP space (Figure 2b), we found that it is not entirely homogenous. While Tcf4 is distributed evenly throughout cluster 20, one pole is enriched in Pvalb (Figure 6a). To explore the possibility of LM heterogeneity, we subjected cluster 20 to another round of clustering resulting in three distinct subclusters (Figure 6—figure supplement 1a), each defined by a number of discriminatory markers (Figure 6—figure supplement 1b,c,d). For example, Pvalb and Col11a1 are enriched in subcluster 1, while Fxyd6 and Slc7a3 are enriched in subcluster 3, suggesting a degree of cell type heterogeneity among LM neurons.
 
-## Multiple neuronal populations correspond to the medial mammillary region
+### Multiple neuronal populations correspond to the medial mammillary region
 
 We identified five VPHGLUT clusters that appear to be both closely interrelated to each other transcriptionally and distinct from other neuronal clusters. VPHGLUT clusters 1–5 are arranged in close proximity in UMAP space (Figure 2b), with clusters 1 and 2 forming one contiguous cluster and clusters 3–5 forming another. Clusters 1–5 share a number of common markers including genes that encode the neuropeptides Cartpt, Cck, Adcyap1 as well as the transcription factor Foxb1 (Figure 7a,b). Cross-referencing Cartpt, Foxb1, Cck, and Adcyap1 with the ABA (Lein et al., 2007) indicate that VPHGLUT clusters 1–5 correspond well to the medial mammillary region (Figure 7c), which itself may be subdivided into cytoarchitecturally-defined anatomical compartments: median (MnM), medial (MM), and lateral (ML) subdivisions (Paxinos, 2012). Notably, Cartpt, Foxb1, and Cck, show low expression in VPHGLUT cluster 20 (LM) in our scRNA-seq data and correspondingly low expression in the LM in ABA ISH data (Figure 7c). In contrast, Adcyap1 shows high expression in cluster 20 and high expression in the LM in ISH data, further reinforcing the notion that clusters 1–5 represent the medial mammillary region, and cluster 20 represents the LM. These data are consistent with other scRNA-seq analyses of whole mouse hypothalamus, which revealed a single population of Foxb1+ neurons ascribed to the mammillary nuclei in adult mice (Chen et al., 2017) and most recently, several in the developing mouse hypothalamus (Kim et al., 2020). Multiplex FISH analysis revealed extensive co-expression of the neuropeptide transcripts Cck, Adcyap1, and Cartpt with Slc17a6 in the region (Figure 7d). Other discriminatory markers that we found are common to clusters 1–5 include Rprm, Cpne9, Ctxn3, Fam19a1, and Gpr83 (Figure 7b and Figure 7—figure supplement 1a). Notably, we found that Cpne9 (encoding copine-9) is uniquely enriched in clusters 1–5, cluster 20, as well as cluster 6 (Figure 7—figure supplement 1a) suggesting that it may be a common marker for the entire MB, in addition to the PMd. Finally, we examined expression of other markers (Pitx2, Lhx1, Lhx5, Cdh11, Sim1, Sim2, and Nkx2.1) that have previously been implicated in MB development (Kim et al., 2020; Kimura et al., 1996; Bedont et al., 2015; Puelles et al., 2000; Martin et al., 2002; Marion et al., 2005; Shimogori et al., 2010; Skidmore et al., 2012; Miquelajáuregui et al., 2015; Szabó et al., 2015; Ferran et al., 2015) and found significant alignment with clusters 1–5 for virtually all markers (Figure 7—figure supplement 1a).
 
-## Spatial segregation of transcriptionally-distinct medial mammillary subpopulations
+![Figure 7.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig7-v1.jpg)
+
+**Figure 7.:** (a) UMAP plots showing normalized expression of Tac2, Tcf4, Cplx1, and Pvalb enriched in VPHGLUT clusters 1–5 (circled). (b) Violin plot showing discriminatory marker genes enriched in VPHGLUT clusters 1–5 following Slc32a1 and Slc17a6 (top). (c) Mouse brain atlas schematic, modified from Paxinos, 2012, showing the medial mammillary, and its anatomical subdivisions (MnM, MM, and ML) in a coronal section at distance from bregma of −2.92 mm (top). ISH images for Cartpt, Foxb1, Cck, and Adcyap1 from the ABA (Lein et al., 2007; bottom) showing widespread expression throughout the medial mammillary. (d) Confocal micrographs (40×) of FISH in coronal sections of wild type mice and corresponding pie charts representing co-expression of mRNA for Slc17a6 and Cck (n = 2787 cells, three mice; upper), Slc17a6 and Adcyap1 (n = 1805 cells, three mice; middle) and Slc17a6 and Cartpt (n = 2582 cells, three mice; lower). Scale bar (applicable to all micrographs) 50 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a) UMAP plots showing normalized expression of discriminatory markers either identified in the current analysis or known to have a role in the development of the MB (VPHGLUT cluster 1–5 and 20) and PMd (VPHGLUT cluster 6).
+
+### Spatial segregation of transcriptionally-distinct medial mammillary subpopulations
 
 We further investigated differentially expressed genes among VPHGLUT clusters 1–5 (Figure 8a), that comprise the medial mammillary region in an effort to determine if they exhibit any spatial organization with respect to the cytoarchitecurally-defined MnM, MM, and ML subdivisions. We identified a suite of differentially-expressed genes that define each of the transcriptionally distinct medial mammillary clusters 1–5 (Figure 8b) with two discriminatory genes from each shown in UMAP plots (Figure 8c). We went on to cross reference these makers with their spatial distribution within the medial mammillary region using the ABA (Lein et al., 2007) and found striking patterns of segmentation. Markers for cluster 1 neurons (Nts+, Col25a1+) appear to be enriched in the MM subdivision, medial to the principle mammillary tract (pm), whereas markers for cluster 4 neurons (Nos1+, Calb1+) are found concentrated in the ML subdivision, lateral to the principle mammillary tract (pm) and medial to the fornix (f). Cluster 2 neurons (Gpr83+, Spock3+) are concentrated in the central portion of the MnM subdivision, whereas cluster 3 neurons (Pvalb+, Slc24a2+) are enriched in the more dorsal portion of the MnM. Interestingly, cluster 5 neurons (Tac2+, Cxcl14+) appear to correspond to a thin rim of small diameter, Tac2+ neurons hugging the basal surface of the MM and ML (Figure 8d), overlapping with the region typically referred to as the TMNv or VTM (Paxinos, 2012). These Tac2+ neurons may be distinguished from the larger diameter Tac2+ neurons confined to the LM (VPHGLUT cluster 20). Despite being in the vicinity of TMNv HA neurons, 89.3% (176/197) of cluster 5 neurons are Tac2+ whereas only 2% (4/197) are Hdc+ indicating little to no overlap with HA neurons.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig8-v1.jpg)
+
+**Figure 8.:** (a) UMAP plot showing just VPHGLUT clusters 1–5 (detail of Figure 2b). (b) Heatmap showing scaled expression of discriminatory genes across only VPHGLUT clusters 1–5. (c) Pairs of UMAP plots showing normalized expression of two discriminatory marker genes for each of VPHGLUT clusters 1–5 (top to bottom): cluster 1 (Nts, Col25a1), cluster 2 (Gpr83, Spock3), cluster 3 (Pvalb, Slc24a2), cluster 4 (Nos1, Calb1), and cluster 5 (Tac2, Cxcl14). (d) Mouse brain atlas schematics, modified from Paxinos, 2012, showing subregions of the medial mammillary in a coronal section at distance from bregma of −2.92 mm (top). ISH images for each of the two markers shown in (c) from the ABA (Lein et al., 2007; bottom).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/58901/elife-58901-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a) UMAP plots showing clusters 1–5 neurons among all neuronal populations (left), clustering of all five alone (middle) and following another iteration of clustering (right) revealing 12 subclusters. (b) Heatmap showing scaled expression of discriminatory genes across all 12 subclusters. (c) Violin plot showing discriminatory marker genes enriched in each subcluster following Slc32a1 and Slc17a6 (top). (d) UMAP plots showing discriminatory genes that define putative MM subclusters.
+
 To further explore cellular heterogeneity among medial mammillary neurons, we subjected clusters 1–5 to another iteration of clustering which resulted in 12 subclusters (Figure 8—figure supplement 1a), each defined by suites of discriminatory markers (Figure 8—figure supplement 1b,c). Each of clusters 1–4 parsed into two to three subclusters, while cluster 5 remained largely intact. This further subclustering revealed markers that are common to single clusters and the discriminatory genes that define subclusters. For example, cluster 1 MM neurons are composed of three subclusters (3, 4, and 5) for which Nts and Col25a1 are common to all, as shown previously (Figure 8c,d), while Calb2 uniquely defines one subcluster, and Adra2a is enriched in another (Figure 8—figure supplement 1c,d). In sum, we found that richly diverse, transcriptionally distinct neuronal populations that comprise the medial mammillary region also exhibit a remarkable degree of compartmentalization within the known anatomical subdivisions of the region, demarcated by the principle mammillary tract and fornix.
 
-## Topographically-distinct projection targets of genetically-defined MM and ML neurons in the thalamus and midbrain
+### Topographically-distinct projection targets of genetically-defined MM and ML neurons in the thalamus and midbrain
 
 We next asked whether the cluster-specific discriminatory genes that we identified in our scRNA-seq analysis of the MB (summarized in Figure 9a) may be used to genetically target specific anatomical subdivisions of the MB (summarized in Figure 9b) and shed light on the organization of their projection targets. Neurons in the MB make two highly specific projections in the brain: (1) a major, unidirectional projection to the anterior thalamic nuclei (ATN) through the mammillothalamic tract (mtt); and (2) a bidirectional connection to the ventral tegmental nucleus of Gudden (VTg), via the mamillotegmental tract (mtg) (summarized in Figure 9c; Vann and Aggleton, 2004; Vann, 2010; Aggleton et al., 2010; Dillingham et al., 2015; Vann and Nelson, 2015). The rodent ATN itself may be subdivided into three broad compartments, anteroventral (AV), anteromedial (AM), and anterodorsal (AD), each of which exhibit unique patterns of connectivity. In particular, the MM projects topographically to the AM, the ML to the AV and the LM to the AD (Aggleton et al., 2010; Shibata, 1992; Jankowski et al., 2013; Bubb et al., 2017; Seki and Zyo, 1984; Hayakawa and Zyo, 1989; Wright et al., 2013). We therefore set out to test our prediction that the transcriptionally-distinct cell populations that we found to be segregated within specific subcompartments of the MB, exhibit a similar topographic mapping to the ATN. To this end, we used three Cre recombinase mouse driver lines to target separate anatomical subregions of the MB by bilaterally injecting the MB with the viral anterograde tracer AAV-DIO-ChR2-EYFP (schematic in Figure 9d). Using the Slc17a6 (VGLUT2)-Cre driver line to broadly target VPHGLUT neurons in the MB and their projections, we found labeling throughout the medial mammillary region at the injection site (Figure 9e), but largely sparing the LM, shown in a representative mouse. In addition to finding a high density of labeled axons in the mtt and mtg, we observed a plexus of fibers in the VTg and a high density of fibers in much of the ATN (AV and AM, but not AD, consistent with the latter being the target of LM projections). Next, using the Nts-Cre line to selectively target VPHGLUT cluster 1 neurons, that we had previously mapped to the MM subdivision, we found labeling at the injection site between the MM and ML and labeled axons in the mtt, mtg, and VTg, shown in a representative mouse. However, in the ATN, the AM subdivision appeared to be selectively targeted, while sparing the AV and AD (Figure 9e). Finally, using the Calb1-Cre driver to target VPHGLUT cluster 4 neurons, that we had mapped to the ML subdivision, we found clear labeling in the ML at the injection site (with some weak labeling in the MM/MnM) and labeled axons in the mtt, mtg, and VTg, shown in a representative mouse. Interestingly, and in stark contrast to our Nts-cre results, we observed highly specific labeling of the AV subdivision of the ATN, while sparing the AM and AD. These data are consistent with immunohistochemical evidence in guinea pig suggesting that CART (encoded by Cartpt) and calbindin (encoded by Calb1) are co-localized in the ML region of the MB and calbindin-immunoreactive fibers are concentrated in the AV subdivision of the ATN (Żakowski et al., 2014). Taken together, these anterograde tracing data suggest that not only are molecularly-defined subpopulations of MB neurons highly segregated within the anatomical subdivisions of the MB (MnM, MM, ML, and LM), but these subpopulations appear to project to distinct domains within the ATN, consistent with previous anterograde and retrograde tracing data without genetic specificity (Aggleton et al., 2010; Shibata, 1992; Jankowski et al., 2013; Bubb et al., 2017; Seki and Zyo, 1984; Hayakawa and Zyo, 1989; Wright et al., 2013).
 
@@ -133,17 +213,153 @@ Overall, our analysis of the molecular and spatial organization of VPH cell type
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57Bl/6</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:000664 RRID:IMSR_JAX:000664</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Slc17a6-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:016963 RRID:IMSR_JAX:016963</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nts-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: JAX:017525 RRID:IMSR_JAX:017525</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Calb1-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: JAX:028532 RRID:IMSR_JAX:028532</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Adeno -associated Virus)</td>
+      <td>AAV2-Ef1α-DIO-hChR2(H134R)-EYFP</td>
+      <td>UNC Viral Core</td>
+      <td>RRID:Addgene_55640</td>
+      <td>Diesseroth Lab</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Protease XXIII</td>
+      <td>Sigma</td>
+      <td>Cat# P4032</td>
+      <td>2.5 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Trypsin inhibitor</td>
+      <td>Sigma</td>
+      <td>Cat# T9253</td>
+      <td>10 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3’ Library and Gel Bead Kit</td>
+      <td>10x Genomics</td>
+      <td>Cat# 1000075</td>
+      <td>V2 and V3</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAScope fluorescent multiplex detection assay reagents</td>
+      <td>ACDBio</td>
+      <td>Cat# 320851</td>
+      <td>V1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAScope V1 fluorescent multiplex detection assay probes</td>
+      <td>ACDBio</td>
+      <td>Cat# 405911 Cat# 313641 Cat# 432001 Cat# 402271 Cat# 482531 Cat# 490471 Cat# 450291 Cat# 421931 Cat# 319171 Cat# 410351 Cat# 446391 Cat# 537191 Cat# 412361</td>
+      <td>Adcyap1 Calb2 Cartpt Cck Cplx1 Hdc Maob Pvalb Slc17a6 Tac1 Tac2 Tcf4 Wif1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scanpy</td>
+      <td>Python</td>
+      <td>RRID:SCR_018139</td>
+      <td>v1.3.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10x Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td>v3.0.2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield Hardset Mounting Media w/DAPi</td>
+      <td>Vector Labs</td>
+      <td>Cat# H-1500</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold Mounting Media w/DAPi</td>
+      <td>Thermofisher</td>
+      <td>Cat# P36965</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 To collect VPH neurons scRNA-seq analysis as well as fluorescence in situ hybridization experiments, we used both male and female C57BL/6 (JAX stock #000664) mice. For anterograde tracing experiments, we used the following Cre recombinase driver lines: (1) Slc17a6tm2(cre)Lowl/J knock-in mutant mice (JAX stock #016963, referred to here as Slc17a6-Cre mice; Vong et al., 2011). (2) Nts-Cre knock-in mutant mice (B6;129-Ntstm1(cre)Mgmj/J; JAX stock # 017525; Leinninger et al., 2011). (3) Calb1-IRES2-Cre-D knock-in mutant mice (B6;129S-Calb1tm2.1(cre)Hze/J; JAX stock # 028532, referred to here as Calb1-Cre). All mice were fed ad libitum and kept on a 12 hr light-dark cycle.
 
-## scRNA-seq cell capture and sequencing
+### scRNA-seq cell capture and sequencing
 
 Hypothalamic brain slices were obtained from juvenile (p30-34) mice, from a total of five male mice and five female mice over two independent harvests. The first harvest consisted of three male (pooled), three female (pooled), while the second consisted of two males (pooled) and two females (pooled), following previously described procedures (Mickelsen et al., 2019). Briefly, mice were anesthetized with isoflurane, then rapidly sacrificed by decapitation during the same time period (morning, 09:00-11:00). Brain slices were cut using a vibrating microtome (Lafayette Instrument Company) at a thickness of 225 μm in ice-cold high-sucrose slicing solution consisting of the following components (in mM): ﻿87 NaCl, 75 sucrose, 25 glucose, 25 NaHCO3, 1.25 NaH2PO4, 2.5 KCl, 7.5 MgCl2, 0.5 CaCl2 and 5 ascorbic acid saturated with 95% O2/5% CO2. Slices were then enzyme-treated for ~15 min at 34°C with protease XXIII (2.5 mg/mL; Sigma) in a high-sucrose dissociation solution containing the following (in mM): ﻿185 sucrose, 10 glucose, 30 Na2SO4, 2 K2SO4, 10 HEPES buffer, 0.5 CaCl2, 6 MgCl2, 5 ascorbic acid (pH 7.4) and 320 mOsm. Slices were washed three times with cold dissociation solution then transferred to a trypsin inhibitor/bovine serum albumin (TI/BSA) solution (10 mg/mL; Sigma) in cold dissociation solution. Four to five slices were obtained from each animal that approximately corresponded to mouse brain atlas images representing the distance from bregma −2.54,–2.70, −2.92, and −3.16 mm which includes the VPH. The VPH was dissected from each slice using a fine scalpel and forceps under a dissecting microscope and each slice was imaged and subsequently mapped onto mouse atlas images (Figure 1b; Paxinos, 2012). Microdissected tissue was kept in cold TI/BSA dissociation solution until trituration. Immediately before dissociation tissue was incubated for ~10 min at 37°C, then triturated with a series of small bore fire-polished Pasteur pipettes. Single-cell suspensions were passed through a 40 μm nylon mesh filter to remove any large debris or cell aggregates and kept on ice until single-cell capture.
 
 Cell viability for each sample was assessed on a Countess II automated cell counter (ThermoFisher), and up to 12,000 cells were loaded for capture onto an individual lane of a Chromium Controller (10x Genomics). Single-cell capture, barcoding and library preparation were performed using the 10x Chromium platform (Zheng et al., 2017) according to the manufacturer’s protocol (#CG00052) using version 2 (V2) chemistry for the first set of male and female samples and version 3 (V3) chemistry for the second set. cDNA and libraries were checked for quality on Agilent 4200 Tapestation, quantified by KAPA qPCR. The two V2 chemistry libraries were sequenced on individual lanes of an Illumina HiSeq4000 and the V3 chemistry libraries were pooled at 16.67% of lane of an Illumina NovaSeq 6000 S2 flow cell each, all samples targeting 6,000 barcoded cells with an average sequencing depth of 50,000 reads per cell.
 
-## scRNA-seq data processing, quality control, and analysis
+### scRNA-seq data processing, quality control, and analysis
 
 Illumina base call files for all libraries were converted to FASTQs using bcl2fastq v2.20.0.422 (Illumina) and FASTQ files were aligned to the mm10 (GRCh38.93, 10× Genomics mm10 reference 3.0.0) using the version 3.0.2 Cell Ranger count pipeline (10x Genomics), resulting in four gene-by-cell digital count matrices. Downstream analysis was performed using Scanpy (v1.3.7; Wolf et al., 2018) and can be found in its entirely on GitHub (see Data and code availability). Initial quality control was performed on each library individually and cells were excluded from downstream analysis by the following criteria: fewer than 2,000 transcripts, fewer than 1,000 genes, more than 50 hemoglobin transcripts, and more than 15% mtRNA content. Genes with fewer than three counts in at least three cells were also excluded from downstream analysis. These filtering criteria resulted in a substantial increase in data set quality but a dramatic reduction in called cells; the resulting individual counts matrices were reduced to 5,191 and 3,223 cells for the male and female V2 libraries, respectively, and 4,622 and 3,955 cells for the male and female V3 libraries. These matrices were then concatenated together, resulting in an initial aggregated counts matrix of 16,991 cells by 20,202 genes. This aggregated counts matrix was normalized by the total number of counts per cell then multiplied by the median number of counts across all cells and finally log2 transformed.
 
@@ -151,7 +367,27 @@ The 1,500 most highly variable genes as measured by dispersion were selected for
 
 Marker genes for each cluster, computed by a ‘one-versus-rest’ methodology comparing mean expression of every gene within a cluster to the expression in all other cells, were used to assign putative cell types to each cluster. For each cluster c containing n cells and each gene g for which the mean expression Ecg – E¬cg >2, we rank all cells by the expression of gene g. For a highly specific marker gene for cluster c, we expect the first n ranks to correspond to cells of cluster c. We construct a ROC curve such that:
 
-Cell in cluster CCell not in cluster CRank <= nTPFPRank > nFNTN
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cell in cluster C</th>
+      <th>Cell not in cluster C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rank &lt;= n</td>
+      <td>TP</td>
+      <td>FP</td>
+    </tr>
+    <tr>
+      <td>Rank &gt; n</td>
+      <td>FN</td>
+      <td>TN</td>
+    </tr>
+  </tbody>
+</table>
 
 The area under this curve (AUROC) is computed for each cluster-gene (c,g) pair, and genes with AUROC >0.8 are used to putatively identify cell types. Genes identified this way are consistent with genes identified using ScanPy (scanpy.tl.rank_genes_groups with the Wilcoxon Rank-Sum test).
 
@@ -161,14 +397,14 @@ Neuronal cells underwent another round of filtering, with fewer than 3,500 trans
 
 In order to test the robustness of our neuronal clustering analysis and the specificity of the marker genes presented throughout the manuscript, we devised a computational experiment where we predict the cluster label of each cell using only the expression at a small set of neuronal marker genes. Briefly, we split our neuronal expression matrix and associated cluster labels into two groups, a training and a testing group, each with a proportional number of cells from each cluster. Using the first group, we recomputed the top two marker genes from each of the 20 neuronal clusters using the one-versus-rest methodology described above. The expression of the cells in the first group with this set of genes was used train a random forest classification model, a model that takes the expression signature of a cell and predicts its cluster label. This model was then used to predict the cluster labels of the cells in the second group, which we compare to the original cluster labels. We built such a model using the top 2, 3, 5, 10, 15, and 20 genes from each cluster and predicted the cluster labels for the second group for using each model. This process is illustrated in Figure 1—figure supplement 3a–g and the source code is available in this project’s GitHub repository (see Data and code availability).
 
-## Fluorescence in situ hybridization (FISH)
+### Fluorescence in situ hybridization (FISH)
 
 FISH was carried out as previously described (Mickelsen et al., 2019). Briefly, to prepare tissue sections for FISH, male juvenile wild type C57BL/6 mice (P30–47) were anesthetized with isoflurane, decapitated and brains were dissected out into ice-cold sucrose. Brains were frozen on dry ice and cryosectioned at a thickness of 14 µm directly onto SuperFrost Plus microscope slides. Sections were then fixed with 4% paraformaldehyde (PFA) at 4°C for 15 min, and dehydrated for 5 min each in 50, 70, and 100% ethanol. RNAscope 2.5 Assay (Advanced Cell Diagnostics) was used for all FISH experiments according to the manufacturer’s protocols (Wang, 2012). All RNAscope FISH probes were designed and validated by Advanced Cell Diagnostics. ISH images from the Allen Brain Institute were acquired from the publically available resource, the Allen Mouse Brain Atlas (www.mouse.brain-map.org/; Lein et al., 2007) and were acquired with minor contrast adjustments and converted to grayscale to maintain image consistency.
 
-## Anterograde viral tract-tracing
+### Anterograde viral tract-tracing
 
 For anterograde tracing experiments, male P30-42 Slc17a6-cre, Nts-Cre, and Calb1-Cre mice were bilaterally injected with 50–100 nL of AAV2-Ef1α-DIO-hChR2(H134R)-EYFP (UNC Viral Core, Diesseroth Lab) into the MB (anteroposterior (AP): −2.90 mm, mediolateral (ML): ±0.04 mm, dorsoventral (DV): −5.20 mm) and allowed to incubate for 4–6 weeks. Slc17a6-cre mice (n = 3) were injected with 100 nL while Nts-Cre mice (n = 3) and Calb1-cre mice (n = 2) were injected with 50 nL. For histology, mice were anesthetized with ketamine/xylazine and transcardially perfused with 10 mL of 0.125 M saline followed by 40 mL of 4% PFA in 1× PBS (pH 7.4). Brains were then dissected and post-fixed for 24 hr in 4% PFA, followed by cryoprotection in 30% sucrose for 48 hr. Brains were flash frozen with cold isopentane and stored at −80°C. Frozen brains were cut into 50 μm thick coronal sections containing the ATN, LHA, MB, and VTg on a cryostat (Leica 3050 s) into 1× PBS. Slices were then mounted onto slides with Vectashield Hardset mounting media containing DAPI (Vector Labs). Regions of interest were imaged at 10× magnification on a fluorescence microscope (﻿Keyence BZ-X700). ﻿Images were processed with ImageJ, Adobe Photoshop CS, and Adobe Illustrator CC. Based on post hoc histological evaluation of the injection site, mice were excluded from subsequent anatomical analysis if MB injection sites were absent or off-target.
 
-## Data and code availability
+### Data and code availability
 
 Raw sequencing data and counts matrices are available in the Gene Expression Omnibus, accession number GSE146692. We further provide the final analyzed data sets in the form of H5AD (Wolf et al., 2018) and Loupe Cell Browser data files at https://singlecell.jax.org/hypothalamus. All code used to produce the analysis and figure panels is available on GitHub: https://github.com/TheJacksonLaboratory/ventral-posterior-hypothalamus-scrnaseq (Flynn, 2020; copy archived at https://github.com/elifesciences-publications/ventroposterior-hypothalamus-scrna-seq).

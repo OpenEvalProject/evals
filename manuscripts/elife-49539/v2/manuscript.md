@@ -28,6 +28,22 @@ Upon entry into M-phase (mitosis or meiosis) and spindle assembly, chromosomes a
 
 The molecular underpinnings of end-on attachment and tracking by kinetochores, and hence of force-coupling, remain unclear. However, two protein complexes, the Ndc80 and Ska complexes, have emerged for a prominent involvement in this process (Figure 1A) (Auckland and McAinsh, 2015; Monda and Cheeseman, 2018). The Ndc80 complex is part of the KMN network, which is stably bound to kinetochores during mitosis (Cheeseman and Desai, 2008). The KMN is crucially required for end-on microtubule attachment, and interference with its function leads to severe defects in chromosome alignment and SAC abrogation (Cheeseman et al., 2006; DeLuca et al., 2005; DeLuca et al., 2006; Kim and Yu, 2015; McCleland et al., 2003). In both humans and Saccharomyces cerevisiae, the four subunits of Ndc80 (NDC80/HEC1, NUF2, SPC25, and SPC24) have high coiled-coil content and form a ~ 60 nm dumbbell structure in which highly elongated NDC80:NUF2 and SPC25:SPC24 sub-complexes meet in a tetramerization domain (Figure 1B) (Ciferri et al., 2005; Ciferri et al., 2008; Huis in 't Veld et al., 2016; Valverde et al., 2016; Wei et al., 2005). At one end of Ndc80, two closely interacting calponin-homology (CH) domains near the N-terminal ends of NDC80 and NUF2 form a globular structure that binds the microtubule. An ~80 residue basic tail preceding the NDC80 CH-domain (Ndc80-tail) has also been implicated in microtubule binding, and phosphorylation by Aurora kinase activity has been proposed to modulate electrostatic interactions with the negatively charged MT lattice (Alushin et al., 2012; Cheerambathur et al., 2017; Cheeseman et al., 2002; Cheeseman et al., 2006; Ciferri et al., 2008; DeLuca et al., 2006; DeLuca et al., 2011; DeLuca et al., 2018; Guimaraes et al., 2008; Long et al., 2017; Miller et al., 2008; Shrestha et al., 2017; Tooley et al., 2011; Umbreit et al., 2012; Wei et al., 2007; Ye et al., 2015; Zaytsev et al., 2015; Zaytsev et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of Ndc80 and Ska at the kinetochore-microtubule interface. (B) Overview of important regions in the Ndc80 complex. (C) The Ska complex. SKA1, SKA2, and SKA3 contain an N-terminal coiled coil (CC) region that mediates complex formation and dimerization. SKA1 contains a microtubule binding domain (MTBD). The largely unstructured C-terminal region of SKA3 is phosphorylated during mitosis. Multisite in vitro phosphorylation of purified Ska by CDK1:Cyclin-B altered the migration of SKA3 on SDS-PAGE. Identified phosphorylation sites and the conservation of SKA3 are shown. (D) Analysis of a Ska:Ndc80 mixture by size-exclusion chromatography (SEC) using a superose 6 increase 5/150 column shows that a stable complex is formed between Ska that is phosphorylated by CDK1:Cyclin-B and Ndc80. Elution of Ska from the column can be followed specifically through the fluorescently labelled SKA1. In-gel fluorescence of SKA1 in the SEC fractions analyzed by SDS-PAGE is also shown. (E) Phosphorylated Ska with SKA3T358A/T360A does not bind to Ndc80. Analysis of fractions is shown in Figure 1—figure supplement 3. (F) Ska without SKA3104-412 as well as SKA3T358D/T360D does not interaction with Ndc80. A comparison with phosphatase-treated Ska on the input gel indicates the effective phosphorylation of the mutated SKA3. These chromatograms originate from one experiment and wild-type Ska (green) and Ndc80 (gray) are shown in both panels for comparison.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SEC-MALS analysis reveals that Ska is predominantly a dimer of a heterotrimer at a concentration of 1 mg/ml. Small amounts of monomeric Ska were determined as monomeric (eluting ~16.5 ml) or multimeric (eltuting before the dimeric Ska). (B) Sedimentation velocity AUC of Ska highlighted sample purity and the dimeric and elongated nature of the complex. Truncation of the C-terminal region of SKA3 and the MTBD of SKA1 show that the N-terminal coiled-coils of SKA1, SKA2, and SKA3 are sufficient for dimerization.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The P symbols mark residues that were phosphorylated by CDK1:Cyclin-B in vitro. The conservation analysis is part of the track shown in Figure 1C.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The chromatograms are shown again for clarity.
+
 At the opposite end of Ndc80, C-terminal RWD domains in SPC25 and SPC24 mediate interactions with other kinetochore subunits to dock Ndc80 complexes onto the rest of the kinetochore (Musacchio and Desai, 2017). The coiled-coils flanking the globular domains form an apparently rigid rod, with a distinctive hinge point coinciding with a ~ 38 residue insertion (residues 427–464 of human NDC80, Figure 1B), known as the Ndc80 loop (Ciferri et al., 2008; Wei et al., 2005). The Ndc80 loop was proposed to be a site of interaction for other microtubule-binding proteins, a feature essential for end-on attachment and coupling to microtubule dynamics, or a tension sensor (Hsu and Toda, 2011; Maure et al., 2011; Schmidt et al., 2012; Varma et al., 2012; Wan et al., 2009; Zhang et al., 2012).
 
 The Ska complex is crucially required to stabilize kinetochore-microtubule attachment (Auckland et al., 2017; Daum et al., 2009; Gaitanos et al., 2009; Hanisch et al., 2006; Ohta et al., 2010; Raaijmakers et al., 2009; Rines et al., 2008; Sauer et al., 2005; Theis et al., 2009; Welburn et al., 2009). Its three subunits (SKA1, SKA2, and SKA3) are paralogs that interact through N-terminal coiled-coil segments and can further oligomerize into a dimer of SKA1-3 trimers (Figure 1C) (Helgeson et al., 2018; Jeyaprakash et al., 2012; Maciejowski et al., 2017; Schmidt et al., 2012; van Hooff et al., 2017). Ska can target microtubules autonomously through a microtubule-binding winged-helix-like domain in the C-terminal region of SKA1 (Abad et al., 2014; Schmidt et al., 2012). Depending on the severity of depletion, ablation of Ska results either in a metaphase-like arrest with weak kinetochore fibres, reduced inter-kinetochore tension, and SAC activation, or in a more dramatic alignment defect similar in severity to that observed upon Ndc80 depletion, despite lack of evident kinetochore damage (Daum et al., 2009; Gaitanos et al., 2009; Hanisch et al., 2006; Ohta et al., 2010; Raaijmakers et al., 2009; Rines et al., 2008; Sauer et al., 2005; Theis et al., 2009; Welburn et al., 2009). However, while Ndc80 is required for the SAC response (Kim and Yu, 2015; McCleland et al., 2003), Ska is not and its ablation results in strong SAC activation, prolonged mitotic arrest, and frequent cell death in mitosis. Ska is not present in all eukaryotes, but an evolutionary distinct complex, Dam1, usually performs an analogous, complementary function in organisms devoid of Ska (van Hooff et al., 2017).
@@ -42,7 +58,7 @@ These fragmented and contradictory views may reflect experimental conditions tha
 
 ## Results
 
-## Ska directly binds Ndc80 upon CDK1:Cyclin B phosphorylation of SKA3T358/T360
+### Ska directly binds Ndc80 upon CDK1:Cyclin B phosphorylation of SKA3T358/T360
 
 We co-expressed human SKA1, SKA2, and SKA3 from a single baculovirus in insect cells and purified the resulting Ska complex using consecutive metal-affinity, ion-exchange, and size-exclusion chromatography (SEC). SEC-MALS (multiangle light scattering) and SV-AUC (sedimentation velocity-analytical ultracentrifugation) analyses identified recombinant Ska as a dimer (Figure 1—figure supplement 1), in line with previous reports (Helgeson et al., 2018; Jeyaprakash et al., 2012; Maciejowski et al., 2017; Schmidt et al., 2012).
 
@@ -50,19 +66,39 @@ SKA3 is strongly phosphorylated in mitosis, and at least three kinases, Aurora B
 
 Alanine substitution of Thr358 and Thr360 in SKA3 prevented the recruitment of Ska to the kinetochore in vivo (Zhang et al., 2017). Mutations T358A and T360A in SKA3 also prevented efficient formation of the Ska:Ndc80 complex in vitro (Figure 1E and Figure 1—figure supplement 3A). Thus, phosphorylation by CDK1:Cyclin B at other SKA3 sites, revealed by the phosphorylation induced shift of SKA3 on SDS-PAGE, was not sufficient to mediate Ska3:Ndc80 complex formation. It has also been shown that two phospho-mimetic mutations, T358D and T360D, are sufficient to promote robust Ska kinetochore localization when twelve additional potential phosphorylation target sites were mutated to alanine (Zhang et al., 2017). However, neither unphosphorylated nor phosphorylated Ska containing the T358D and T360D mutations bound Ndc80 efficiently (Figure 1F and Figure 1—figure supplement 3B), indicating that a single negative charge at positions Thr358 and Thr360 cannot functionally replace phosphate groups in our reconstituted system. This contradicts previous results obtained with a SKA3 fragment and a GST-NUF2:NDC80 sub-complex (Zhang et al., 2017). Consistent with multiple phosphosites in SKA3C and the importance of phosphorylation for Ska:Ndc80 binding, Ska lacking SKA3C did not bind Ndc80 (Figure 1F, orange traces). Collectively, these results demonstrate, for the first time, a direct interaction between full length Ndc80 and Ska complexes, and show that phosphorylation of Thr358 and Thr360 in SKA3C by CDK1:Cyclin B is necessary for its formation.
 
-## Ska binds the NDC80:NUF2 coiled coil and the Ndc80-loop is dispensable
+### Ska binds the NDC80:NUF2 coiled coil and the Ndc80-loop is dispensable
 
 We next set out to identify the Ndc80 regions that mediate the interaction with Ska. Phosphorylated Ska did not bind to an SPC24:SPC25 dimer, or to two engineered constructs, Ndc80dwarf and Ndc80bonsai, that lack large fragments of the coiled-coils in the Ndc80 subunits (Figure 2A, orange traces; Figure 2—figure supplement 1A–B). The latter observation is at odds with a previous report that identified an interaction between Ska and Ndc80bonsai (Janczyk et al., 2017). In this previous study, Ska (without phosphorylation) and Ndc80bonsai had been incubated on microtubules, a condition that might expose residual, low binding affinity between these constructs. Collectively, our observations suggest a potential requirement of the NDC80:NUF2 coiled coil in Ska binding (Figure 2B). To test this idea, we generated Ndc80jubaea, an extended Ndc80bonsai analogue that is also amenable to bacterial expression. Ndc80bonsai contains a total of 17% of the predicted coiled coil in all Ndc80 subunits, while Ndc80jubaea covers 66% of it. Importantly, Ndc80jubaea bound phosphorylated Ska (Figure 2A, blue traces, and Figure 2—figure supplement 1C). Collectively, these results demonstrate that NDC80286-504:NUF2169-351 encompasses the Ska-binding site, and that the Ndc80 tetramerization domain is not required for the interaction with Ska.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig2-v2.jpg)
+
+**Figure 2.:** (A) Full-length (fl), jubaea (j), and bonsai (b) Ndc80 complexes were tested for their ability to bind phosphorylated Ska. Symbols (* and ◊) indicate fusion proteins in jubaea and bonsai Ndc80. (B) Overview of Ndc80 as in Figure 1B. NDC80287-504 and NUF2169-351, the Ska binding region that is present in Ndc80Csequoia and absent in Ndc80Cbonsai, is indicated. (C) Overview of the three tested constructs that lack different parts of the NDC80-loop. The conservation of Ndc80 and its loop-region are shown. (D) Ndc80 lacking the Ndc80-loop still binds phosphorylated Ska. (E). Ska and Mis12:Ndc80:Ska were visualized by electron microscopy after glycerol-spraying and low-angle metal shadowing. SKA1MTBD-biotin (30 kDa) was conjugated with the biotin-binding globular T1S3 (88 kDa) to facilitate the recognition of Ska in micrographs. The presence of Mis12 (20 nm) marks the SPC24:SPC25 side of Ndc80 (62 nm). See Figure 2—figure supplement 2 for detailed sample preparation information. (F) Intra- and intermolecular crosslinks for Ska, Ska:Ndc80, and Ndc80. Contacts between SKA3C and the rest of Ska are highlighted in blue. Contacts between SKA3C and the NDC80:NUF2 coiled coil and the Ndc80 tetramerization domainare shown in orange and green, respectively. The SKA1MTBD is also proximal to the tetramerization domain. (G) A schematic representation of proximities.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ndc80, Ndc80-dwarf, and Ndc80-dwarf in the presence of an excess of SPC24:SPC25 were tested for their ability to bind phosphorylated Ska. Ndc80-dwarf binds SPC24:SPC25 stoichiometrically. Phosphorylated Ska only binds to full-length Ndc80. (B) An overview of the various Ndc80 constructs that were used. (C) During the course of our studies, we realized that the Ndc80jubaea construct used for the experiments in Figure 2A contained a V15M mutation in Nuf2. After correcting the mutation in the Ndc80jubaea construct, we repeated the Ska-binding assays, obtaining essentially identical results. Thus, the presence of the V15M mutation does not modify our conclusions on the ability of Ndc80jubaea to bind Ska.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The input for the preparative size-exclusion was analysed by SDS-PAGE followed by Coomassie staining and in-gel fluorescence of SKA1. The samples were not boiled prior to electrophoresis, and T1S3 remained tetrameric. The shift of SKA1TMR-biotin-T1S3 compared to SKA1TMR-biotin indicates successful and near complete labeling of SKA1 with T1S3. Ndc80 (N), Mis12 (M), Ska, and T1S3 are shown for comparison. (B) Size-exclusion chromatography was used to separate the input sample shown in panel A. Fractions were analyzed as indicated and labeled. Fractions indicated with A and B were analysed by electron microscopy (see Figure 2E).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Complex formation was assessed with a fraction of the material prior to the DSBU treatment. The near complete shift of Ska (light green) into a Ska:Ndc80 complex (dark green) is important to interpret the proximity map resulting from the cross-linking mass spectrometry analysis.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** All Skasubunit are visible in the input gel, but only the larger SKA3 is visible by Coomassie staining in the analysed fractions after size-exclusion chromatography. SKA1 was labeled with HiLyte-647 and could be followed specifically during size-exclusion chromatography and through in-gel fluorescence.
+
 Previously analyses identified the Ndc80-loop (NDC80427-464, Figure 2B–C) as a prime candidate for Ska binding, because loop deletions or sequence inversions prevent kinetochore recruitment of Ska in vivo (Zhang et al., 2012; Zhang et al., 2017). To address the function of the Ndc80-loop directly, we designed, and successfully expressed and purified, Ndc80 constructs with a partially or entirely deleted loop region. To our surprise, these ‘loopless’ truncation constructs retained the ability to form a complex with Ska (Figure 2D). This crucial observation indicates that impaired recruitment of Ska to kinetochores in cells expressing deleted or modified Ndc80-loop sequences does not reflect impairments of the Ska-binding site, but rather a regulatory role of the Ndc80-loop that enables Ska recruitment.
 
-## Structural characterization of the Ska:Ndc80 interaction
+### Structural characterization of the Ska:Ndc80 interaction
 
 Both Ska and Ndc80 are highly elongated and contain flexible or disordered fragments, a challenge for high-resolution structural characterisation. Electron microscopy after low-angle metal shadowing visualized the characteristic,~80 nm long, 8-subunit Ndc80:Mis12 subcomplex of the KMN network (Figure 2E). However, while Ska was visible with this technique despite its small size, no conspicuous or characterizing structural features were revealed (Figure 2E). Conjugation of a globular tetramer incorporating one Traptavidin (T) (Chivers et al., 2010) and three Streptavidin subunits (abbreviated as T1S3; 88 kDa) to C-terminally biotinylated SKA1 (30 kDa) facilitated the recognition of rotary-shadowed SKA1 and revealed Ska dimers with a ~ 10 nm separation between SKA1C and the N-terminal coiled coils of SKA1, SKA2, and SKA3 that form the Ska dimerization interface (Jeyaprakash et al., 2012) (Figure 2E and Figure 2—figure supplement 2A–B). The T1S3 labeling enabled us to localize Ska bound to Ndc80:Mis12. A dimer of Ska bound a single Ndc80:Mis12 without apparently inducing multimerization of Ndc80. The position of SKA1T1S3 near the middle of Ndc80 is consistent with the binding of SKA3 to the NDC80:NUF2 coiled coil and highlights how the microtubule-binding domains of the Ska dimer are positioned relative to the CH-domains of NDC80:NUF2. (Figure 2E).
 
 To complement these low-resolution micrographs with a proximity map, we determined potential contacts within the Ska:Ndc80 complex using DSBU (disuccinimidyl dibutyric urea) crosslinking followed by mass spectrometry (Pan et al., 2018). The three datasets (Ska, Ska:Ndc80, and Ndc80) contain a total of 233 unique intramolecular and 253 unique intermolecular crosslinks (Figure 2F, Figure 2—figure supplement 3, and Supplementary file 1c-1d). Despite the inability to distinguish the two copies of each subunit in the Ska:Ska dimer, we can draw several conclusions from the proximity maps. First, the extensive contacts of the unstructured SKA3102-412 with the rest of Ska largely disappear upon phosphorylation by CDK1:Cyclin B and binding to Ndc80 (Figure 2F, blue crosslinks). In the Ndc80-bound form, the phosphorylated SKA3C contacts the NDC80:NUF2 coiled coil and appears to reach into the portion of this coiled-coil that forms the tetramerization domain (SKA3 residues 247, 254, 394, 399, 408, 410; Figure 2F, orange and green crosslinks). Second, the SKA1 microtubule-binding domain (MTBD) and SKA379 from at least one of the Ska protomers are proximal to the Ndc80 tetramerization domain (Figure 2F, green crosslinks). Deletion of the MTBD of SKA1 does not interfere with Ska:Ndc80 binding (Figure 2—figure supplement 4), and these contacts do not reflect an essential interaction between the SKA1MTBD and Ndc80. Third, crosslinks between the unstructured Ndc80-tail with various regions of Ndc80 and with SKA3399, 410 emphasize the flexibility of the entire complex and the accessibility of the Ndc80-tail (Figure 2F, black crosslinks). Taken together, this structural analysis combining low-angle rotary shadowing and cross-linking/mass spectrometry demonstrates that the NDC80:NUF2 coiled-coil harbours a direct binding site for SKA3 that is phosphorylated at Thr358 and Thr360, that the Ndc80-loop is dispensable for Ska recruitment in vitro, and that at least one MTBD of SKA1 in a Ska dimer is positioned near the Ndc80 tetramerization domain (Figure 2G).
 
-## Aurora B does not disrupt Ska:Ndc80 binding in vitro
+### Aurora B does not disrupt Ska:Ndc80 binding in vitro
 
 In previous studies, Aurora B kinase activity has been shown to counteract the recruitment of Ska to kinetochores. This crucial observation appears to link the establishment of robust microtubule attachment with the suppression of Aurora B and the recruitment of Ska (Chan et al., 2012; Janczyk et al., 2017; Sivakumar and Gorbsky, 2017). Aurora B kinase phosphorylates the N-terminal tail of Ndc80 and this weakens microtubule attachments (see Introduction). While previous studies advocated a requirement of the Ndc80-tail for kinetochore recruitment of Ska in vivo (Cheerambathur et al., 2017; Janczyk et al., 2017), deletion of the unstructured Ndc80-tail does not perturb binding of phosphorylated Ska to Ndc80 in our reconstituted system (Figure 3A). This suggests that the Ndc80-tail, like the Ndc80-loop, contributes indirectly to the recruitment of Ska by establishing a proper kinetochore-microtubule interface rather than by providing a docking site.
 
@@ -74,7 +110,7 @@ Aurora B also phosphorylates SKA1 and SKA3 on at least seven consensus and non-c
 
 We therefore asked if Aurora B affects the stability of the Ska:Ndc80 interaction. Exposure of pre-formed Ska:Ndc80 complex to Aurora B did not cause its dissociation. Aurora B activity was confirmed by a shift in the elution volumes of Ndc80 and Ndc80:Ska from a SEC column and by the altered migration of the NDC80 subunit in phostag SDS-PAGE (Kinoshita et al., 2009) (Figure 3B, black and red traces). Conversely, dephosphorylation of pre-formed Ska:Ndc80 complex by lambda-phosphatase displaced Ska from Ndc80. Thus, deletions of the Ndc80-tail or of the Ndc80-loop, and Aurora B activity, all of which prevent kinetochore recruitment of Ska in vivo, do not affect Ska:Ndc80 binding in vitro. This suggests that Ska recruitment is licensed by particular features of the kinetochore-microtubule interface that signal successful bi-orientation.
 
-## The Ndc80-tail is required for end-on Ndc80-microtubule attachment
+### The Ndc80-tail is required for end-on Ndc80-microtubule attachment
 
 A single microtubule-binding site in the kinetochore contains multiple closely spaced Ndc80 complexes, with recent estimates converging on 6 to 8 complexes per attachment site (Huis in 't Veld et al., 2016; Suzuki et al., 2015; Weir et al., 2016). To address how physical clustering affects the microtubule binding properties and other interactions of Ndc80, we previously engineered an oligomerization module allowing controlled binding of 1, 2, 3 or 4 Ndc80 complexes (Volkov et al., 2018). We observed that multivalency has a dramatic effect on the residency time of Ndc80 on microtubules, increasing it by more than an order of magnitude for every Ndc80 added (Volkov et al., 2018). In force measurements with optical tweezers, sparse coating of beads with multivalent Ndc80 modules resulted in more efficient force-coupling than dense distributions of individual Ndc80 complexes (Volkov et al., 2018).
 
@@ -88,7 +124,21 @@ We started by asking how Aurora B affects the plus end binding properties of Ndc
 
 Previously, we used optical tweezers to study the ability of reconstituted kinetochore particles immobilized on beads to capture force generated by a depolymerizing microtubule. We found that multivalent Ndc80 modules stall microtubule depolymerization under microtubule-generated forces up to 5–6 pN (Volkov et al., 2018). These stalling events either induced a rescue of microtubule growth or were followed by an Ndc80-microtubule detachment event and continued microtubule depolymerization (Volkov et al., 2018). Using a similar experimental setup, we compared T1S3-[Ndc80]3 modules with unmodified, phosphorylated, or truncated Ndc80-tails (Figure 4G). Consistent with the inability to tip-track shortening microtubules (Figure 4F), tailless trivalent Ndc80 modules (NDC80Δ80) dissociated rapidly from depolymerizing microtubules and never rescued microtubule shortening (Figure 4H–I, orange trace). Force-induced stalls by unphosphorylated Ndc80 modules were followed by microtubule regrowth in 21 events, and by detachment in 36 events (Figure 4H–I, blue trace). In contrast, Ndc80 modules exposing a phosphorylated tail detached from microtubule ends without rescue in 27 of 29 events (Figure 4I, green trace). Thus, Ndc80 modules phosphorylated by Aurora B detached from shortening microtubule ends under force despite their ability to tip-track depolymerizing microtubules without load (Figure 4F). Unphosphorylated Ndc80 modules behaved differently and remained bound to microtubule ends independently of the force applied (Figure 4I, blue symbols). In line with our previous analyses (Volkov et al., 2018), there was a correlation between the force at stall and the likelihood of a rescue (Figure 4I). In addition, in this and subsequent experiments described in Figure 5, the duration of the stall emerged as an apparently critical parameter in determining the likelihood of a rescue after stall. Specifically, we did not observe rescues for stalls that ended within ~1 s, even for high stall forces. Rescues were only observed for longer stalls, albeit not as an obligate outcome, because detachments were also observed (Figure 4I).
 
-## Ska stabilizes end-on Ndc80-microtubule interactions under force
+![Figure 5.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig5-v2.jpg)
+
+**Figure 5.:** (A) Ska and trimeric Ndc80Δ80 modules were imaged simultaneously on dynamic microtubules using TIRF microscopy. (B) Trimeric Ndc80Δ80 modules (magenta) on dynamic microtubules (cyan) in the presence of increasing concentrations of phosphorylated (top row) or dephophosphorylated (bottom row) Ska (yellow). Scale bars: vertical (60 s), horizontal (5 μm). Arrows indicate successful end-tracking events. (C) Fraction of trimeric Ndc80Δ80 modules that initiate movement in the direction of microtubule shortening upon encounter with a depolymerizing end in the presence of Ska. Squares: fractions in an individual experiment, horizontal bars: median. (D) Ratio of Ska to Ndc80 after incubation of the beads coated with Ndc80 trimers and then Ska (400 nM; see also Figure 5—figure supplement 1). Horizontal lines: median. A t-test indicates significant different between the addition of phosphorylated or dephosphorylated Ska: T1S3[Ndc80]3 + Ska vs Ska℗: p<10−17. Other two-tailed p-values are T1S3[Ndc80]3 + Ska vs Ska3ΔC: p<10−22; T1S3[Ndc80]3 + Ska℗ vs Ska3ΔC: p<10−34; T3S1 + Ska vs Ska℗: p=0.012; T3S1 + Ska vs Ska3ΔC: p=0.99; T3S1 + Ska℗ vs Ska3ΔC: p=0.012; Ska℗ + T1S3[Ndc80]3 vs T3S1: p<10−28; Ska + T1S3[Ndc80]3 vs T3S1: p<10−30. (E) Optically trapped bead coated with Ndc80 trimers and Ska in a chamber with dynamic microtubules and additional soluble Ska. (F) An example force trace obtained in the presence of dephosphorylated Ska and a bead coated with non-phosphorylated Ndc80 trimers. (G–I) Correlation between the stalling force and the duration of the stall for each individual stall event in the presence of 10–100 nM Ska resulting in a detachment (open symbols), rescue (filled symbols) or superstall (black symbols) for the beads coated with non-phosphorylated Ndc80 trimers (G, blue symbols), Aurora B phosphorylated Ndc80 trimers (H), green symbols) or trimers containing Ndc80Δ80 (i), orange symbols). Two-sided Fisher exact testing indicates different detachment-rescue distributions between untreated Ndc80 (34-32) and Aurora B phosphorylated (47–15, p=0.006) or Ndc80Δ80(55–15, p=0.001). The addition of Ska (in comparison to Figure 4I) did change the detachment-rescue distribution for Ndc80Δ80 (p=0.010), but not significantly for untreated and Aurora B phosphorylated Ndc80 (p=0.207 and 0.081, respectively). See Figure 5—figure supplements 2 and 3 for data separated per Ska concentration and phosphorylation state.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Horizontal lines: median.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/49539/elife-49539-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A–C) Distributions of the duration of Ndc80-mediated microtubule stall in the absence or presence of 10 or 100 nM Ska (either dephosphorylated or phosphorylated) performed with beads coated with untreated (A), Aurora-B-phosphorylated (B) or tail-less (C) Ndc80 trimers. The force traces that are shown in Figure 4H come from events indicated with an arrow. Light bars indicate detachment events, filled bars rescue events, and black bars indicate ‘superstalls’. (D) Distributions of stalling forces (left) and stall durations (right) obtained with beads coated with untreated Ndc80 in the absence of Ska (blue), in the presence of phosphorylated (red) or dephosphorylated (black) Ska lacking SKA1MTBD, or in the presence of Ska lacking SKA3C (green). (E) Distributions of stalling forces in the absence or presence of 10 or 100 nM Ska (either dephosphorylated or phosphorylated) performed with beads coated with untreated (blue), Aurora-B-phosphorylated (green) or tail-less (orange) Ndc80 trimers.
+
+### Ska stabilizes end-on Ndc80-microtubule interactions under force
 
 Next, we asked if and how Ska influences the interaction of Ndc80 with microtubule ends. Since trivalent Ndc80 modules are very efficient microtubule tip-trackers by themselves in our assays (Figure 4F), we added fluorescently labeled Ska to flow chambers with dynamic microtubules and trivalent Ndc80Δ80 modules, which are instead very poor end-trackers (Figure 5A). CDK1-phosphorylated Ska associated with lattice-bound and tip-tracking Ndc80Δ80 modules when Ska was added at concentrations as low as 100 pM (Figure 5B–C). At concentrations of 1 and 10 nM, phosphorylated Ska effectively conferred tip-tracking ability to the Ndc80Δ80 modules whereas dephosphorylated Ska did not. These results demonstrate that upon binding to Ndc80, Ska creates an additional microtubule binding site which enables end-tracking of Ndc80Δ80:Ska complexes.
 
@@ -126,75 +176,281 @@ Kinetochore-microtubule interactions need to be reversible in the absence of ten
 
 ## Materials and methods
 
-## Expression and purification of Ska
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ska</td>
+      <td>This study</td>
+      <td></td>
+      <td>Following the biGBac system (Weissmann et al., 2016): SKA1SORT-HIS (CasI), SKA2 (CasII), SKA3 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 SkaΔMTBD</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA11-108 SORT-HIS (CasI), SKA2 (CasII), SKA3 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ska3ΔC</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA1SORT-HIS (CasI), SKA2 (CasII), SKA31-101 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ska3ΔCΔMTBD</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA11-108 SORT-HIS (CasI), SKA2 (CasII), SKA31-101 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ska3ΔC</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA1SORT-HIS (CasI), SKA2 (CasII), SKA31-101 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 SkaT358AT360A</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA1SORT-HIS (CasI), SKA2 (CasII), SKA3T358AT360A (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 SkaT358DT360D</td>
+      <td>This study</td>
+      <td></td>
+      <td>SKA1SORT-HIS (CasI), SKA2 (CasII), SKA3T358DT360D (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80</td>
+      <td>Musacchio laboratory, Huis in 't Veld et al., 2016</td>
+      <td></td>
+      <td>NDC80 (CasI), NUF2 (CasII), SPC25HIS (CasIII), SPC24 (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80</td>
+      <td>Musacchio laboratory, Volkov et al., 2018</td>
+      <td></td>
+      <td>NDC80 (CasI), NUF2 (CasII), SPC25SORT-HIS(CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80</td>
+      <td>Musacchio laboratory, Volkov et al., 2018</td>
+      <td></td>
+      <td>NDC80 (CasI), NUF2 (CasII), SPC25SORT-HIS(CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80Δ80</td>
+      <td>this study</td>
+      <td></td>
+      <td>NDC80Δ1-80 (CasI), NUF2 (CasII), SPC25SORT-HIS (CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80ΔloopA</td>
+      <td>this study</td>
+      <td></td>
+      <td>NDC80Δ429-444 (CasI), NUF2 (CasII), SPC25SORT-HIS (CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80ΔloopB</td>
+      <td>this study</td>
+      <td></td>
+      <td>NDC80Δ445-463 (CasI), NUF2 (CasII), SPC25SORT-HIS (CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBIG1 Ndc80ΔloopAB</td>
+      <td>this study</td>
+      <td></td>
+      <td>NDC80Δ429-463 (CasI), NUF2 (CasII), SPC25SORT-HIS (CasIII), SPC24SPY (CasIV)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX 2-rbs Ndc80bonsai</td>
+      <td>Musacchio laboratory, Ciferri et al., 2008</td>
+      <td></td>
+      <td>GST-PreScissionNUF21-169:SPC24122-197(CasI), NDC801-286:SPC25118-224 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX 2-rbs Ndc80jubaea</td>
+      <td>this study</td>
+      <td></td>
+      <td>GST-PreScissionNUF21-351:SPC2459-197(CasI), NDC801-506:SPC2554-224 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX 2-rbs Ndc80dwarf</td>
+      <td>this study</td>
+      <td></td>
+      <td>GST-PreScissionNUF21-169 &amp; 395-464 (CasI), NDC801-286 &amp; 551-642 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX 2-rbs SPC25:SPC24</td>
+      <td>Musacchio laboratory, Ciferri et al., 2005</td>
+      <td></td>
+      <td>GST-PreScissionSPC25 (CasI), SPC24 (CasII)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET30b-7M-SrtA</td>
+      <td>Hidde Ploegh laboratory</td>
+      <td>addgene 51141</td>
+      <td>Sortase (Ca2+ independent)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21a-Traptavidin</td>
+      <td>Mark Howarth laboratory</td>
+      <td>addgene 26054</td>
+      <td>Core Traptavidin (T)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21a-DCatch</td>
+      <td>Mark Howarth laboratory</td>
+      <td>addgene 59547</td>
+      <td>Biotin-binding dead streptavidin-SpyCatcher (S)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cdk1:Cyclin-B kinase</td>
+      <td>Musacchio laboratory, Huis in 't Veld et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Aurora B kinase</td>
+      <td>Musacchio laboratory, Girdler et al., 2008</td>
+      <td></td>
+      <td>Aurora B45-344:INCENP835-903</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lambda-phosphatase</td>
+      <td>Generated in-house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GGGG[Lys-HiLyte647]</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GGGG[Lys-TMR]</td>
+      <td>GenScript</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GGGG[Lys-PEG2-Biotin][Lys-TMR]</td>
+      <td>GenScript</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of Ska
 
 Expression cassettes from pLIB vectors containing SKA1SORT-HIS, SKA2, and SKA3 were combined on a pBIG1 vector using Gibson assembly as described (Weissmann et al., 2016). See the Key Resources Table for the different constructs used. Baculoviruses were generated in Sf9 insect cells and used for protein expression in Tnao38 insect cells. Between 60 and 72 hr post-infection, cells were washed in PBS (10 mM Na2HPO4, 1.8 mM KH2PO4, 2.7 mM KCl, 137 mM NaCl, pH 7.4) and stored at −80°C. All subsequent steps were performed on ice or at 4°C. Cells were thawed and resuspended in lysis buffer (20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 10% v/v glycerol, 2 mM TCEP, 20 mM imidazole, 0.5 mM PMSF, and protease-inhibitor mix HP Plus (Serva)), lysed by sonication, and cleared by centrifugation at 108,000 g for 60 min. The cleared lysate was filtered (0.8 μM) and applied to 5 or 10 ml HisTrap FF (GE Healthcare) equilibrated in washing buffer (20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 10% v/v glycerol, 1 mM TCEP, 20 mM imidazole), washed with ca. 35 column volumes, and eluted with two column volumes of elution buffer (washing buffer with 400 mM imidazole). Relevant fractions were pooled, diluted 5-fold with buffer A (20 mM Tris-HCl, pH 8.0, 30 mM NaCl, 5% v/v glycerol, 1 mM TCEP) and applied to a 25 ml Source15Q (GE Healthcare) strong anion exchange column equilibrated in buffer A. Bound proteins were eluted with a linear gradient from 30 mM to 500 mM NaCl in 180 ml. Relevant fractions were concentrated in 10 kDa molecular mass cut-off Amicon concentrators (Millipore) and applied to a Superdex 200 16/60 column (GE Healthcare) equilibrated in 20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 5% v/v glycerol, 1 mM TCEP. Relevant fractions were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at −80°C. Ska complexes with deletions or point mutations were purified in the same way.
 
-## Expression and purification of Ndc80dwarf, Ndc80jubaea, Ndc80bonsai, and SPC24/25
+### Expression and purification of Ndc80dwarf, Ndc80jubaea, Ndc80bonsai, and SPC24/25
 
 E. coli BL21(DE3)-Codon-plus-RIPL cells containing the Ndc80dwarf or Ndc80jubaeae pGEX-6P-2rbs vector were grown at 37°C in Terrific Broth in the presence of Chloramphenicol and Ampicillin to an OD600 of ~0.8. Protein expression was induced by the addition of 0.4 mM IPTG and cells were incubated ~14 hr at 18°C. Cells were washed in PBS and pellets were stored at −20°C or −80°C. All subsequent steps were performed on ice or at 4°C. Cells were thawed and resuspended in lysis buffer (50 mM Hepes, pH 8.0, 500 mM NaCl, 10% v/v glycerol, 2 mM TCEP, 1 mM EDTA, 0.5 mM PMSF, protease-inhibitor mix HP Plus (Serva)), lysed by sonication and cleared by centrifugation at 75,600 or 108,000 g for 60 min. The cleared lysate was bound to Glutathion-Agarose resin (3 ml resin for 5L expression culture, Serva) equilibrated in washing buffer (lysis buffer without protease inhibitors). The beads were washed extensively and protein was cleaved of the beads by overnight cleavage with 3C PreScission protease (generated in-house). The eluate was concentrated using 30 kDa molecular mass cut-off Amicon concentrators (Millipore) and applied to a Superdex 200 10/300 column (GE Healthcare) equilibrated in 50 mM Hepes, pH 8.0, 250 mM NaCl, 2 mM TCEP, 5% v/v glycerol. Relevant fractions were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at −80°C. During the course of our studies, we realized that the Ndc80jubaea construct used for the experiments in Figure 2A contained a V15M mutation in Nuf2. After correcting the mutation in the Ndc80jubaea construct, we repeated the Ska binding assays, obtaining essentially identical results (Figure 2—figure supplement 1). Thus, the presence of the V15M mutation does not modify our conclusions on the ability of Ndc80jubaea to bind Ska. Ndc80bonsai and SPC24/25 were expressed and purified as described previously (Ciferri et al., 2005; Ciferri et al., 2008).
 
-## Expression and purification of Ndc80full-length
+### Expression and purification of Ndc80full-length
 
 Expression cassettes from pLIB vectors containing NDC80, NUF2, SPC25HIS, SPC25SORT-HIS, SPC24, and SPC24SPY were combined on a pBIG1 vector using Gibson assembly as described (Volkov et al., 2018; Weissmann et al., 2016). See the Key Resources Table for the different constructs used. Baculoviruses were generated in Sf9 insect cells and used for protein expression in Tnao38 insect cells. Between 60 and 72 hr post-infection, cells were washed in PBS and stored at −80°C. All subsequent steps were performed on ice or at 4°C. Cells were thawed and resuspended in lysis buffer (50 mM Hepes, pH 8.0, 200 mM NaCl, 10% v/v glycerol, 2 mM TCEP, 20 mM imidazole, 0.5 mM PMSF, protease-inhibitor mix HP Plus (Serva)), lysed by sonication and cleared by centrifugation at 108,000 g for 60 min. The cleared lysate was filtered (0.8 μM) and applied to a 10 ml HisTrap FF (GE Healthcare) equilibrated in washing buffer (lysis buffer without protease inhibitors). The column was washed with approximately 35 column volumes of washing buffer and bound proteins were eluted with elution buffer (washing buffer containing 300 mM imidazole). Relevant fractions were pooled, diluted 5-fold with buffer A (50 mM Hepes, pH 8.0, 25 mM NaCl, 5% v/v glycerol, 1 mM EDTA, 2 mM TCEP) and applied to a 25 ml Source15Q (GE Healthcare) strong anion exchange column equilibrated in buffer A. Bound proteins were eluted with a linear gradient from 25 mM to 300 mM NaCl in 180 ml. Relevant fractions were concentrated in 50 kDa molecular mass cut-off Amicon concentrators (Millipore) and applied to a Superdex 200 16/600 or a Superose 6 10/300 column (GE Healthcare) equilibrated in 50 mM Hepes, pH 8.0, 250 mM NaCl, 2 mM TCEP (with or without 5% v/v glycerol). Size-exclusion chromatography was performed under isocratic conditions at recommended flow rates and relevant fractions were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at −80°C.
 
-## Expression and purification of Aurora B and CDK1:Cyclin-B kinases
+### Expression and purification of Aurora B and CDK1:Cyclin-B kinases
 
 E. coli BL21(DE3)-Codon-plus-RIPL cells containing the pGEX-6P-2rbs GST-Aurora B45-344:INCENP835-903 vector (Girdler et al., 2008) were grown to an OD600 of approximately 0.4 at 25°C and protein expression was induced by the addition of 0.1 mM IPTG for ~14 hr at 20°C. All subsequent steps were performed on ice or at 4°C. Bacterial pellets were resuspended in lysis buffer (25 mM Tris-HCl, pH 7.5, 300 mM NaCl, 1 mM TCEP, 1 mM EDTA, 1 mM PMSF), lysed by sonication, and cleared by centrifugation at 75,000 g for 30 min. Cleared lysates were applied onto a 5 ml GSH column (GE Healthcare), washed, and exposed overnight to 3C PreScission protease (generated in-house). After cleavage, Aurora B45-344:INCENP835-903 was concentrated and applied to a Superdex 200 10/300 column (GE Healthcare) equilibrated in 25 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM TCEP, 5% v/v glycerol. Relevant fractions after size-exclusion chromatography were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at −80°C.
 
 CDK1:Cyclin-B was expressed and purified as described (Huis in 't Veld et al., 2016). In brief, a pBIG1 vector containing codon-optimized GSTCDK1 and HISCyclin B1HIS was used to express CDK1:Cyclin-B in Tnao38 insect cells. Cells were thawed and resuspended in lysis buffer (50 mM Hepes, pH 7.5, 300 mM NaCl, 5% v/v glycerol, 2 mM TCEP, a bit of lypholized DNAse, 1 mM PMSF), lysed by sonication and cleared by centrifugation. The cleared lysate was filtered (0.8 μM) and applied to a 5 ml GSH column (GE Healthcare) equilibrated in washing buffer (lysis buffer without DNAse and PMSF). The column was washed and bound proteins were eluted using washing buffer containing 20 mM glutathione. Relevant fractions were pooled, concentrated, and applied to a Superdex 200 10/300 column (GE Healthcare) equilibrated in 50 mM Hepes, pH 7.5, 300 mM NaCl, 5% v/v glycerol, 2 mM TCEP. Relevant fractions after size-exclusion chromatography were pooled, concentrated, flash-frozen in liquid nitrogen, and stored at −80°C.
 
-## In vitro phosphorylation and fluorescent labeling
+### In vitro phosphorylation and fluorescent labeling
 
 The C-terminal polyhistidine tag on SKA1 was replaced with a fluorescent peptide in an overnight labeling reaction at 10°C. Sortase, Ska, and peptide were used in an approximate molar ratio of 1:10:100. Ska complexes were exposed to Aurora B or CDK1:Cyclin-B (with ATP and MgCl2) or lambda-phosphatase (with MnCl2) during the Sortase labeling reaction or, in the case of pre-formed Ska:Ndc80 complexes, in a separate reaction. Phosphorylation was assessed using SDS-PAGE followed by ProQ diamond stain (Thermo Fisher), Phostag-SDS-PAGE (Kinoshita et al., 2009), and mass spectrometry (see below).
 
-## Analytical size-exclusion chromatography
+### Analytical size-exclusion chromatography
 
 Proteins were mixed (exact concentrations in each experiment are indicated in the figures), incubated at 10°C for at least two hours, spun for 20 min at 13,000 rpm at 4°C, and then analyzed by size-exclusion chromatography at 4°C using an AKTAmicro system (GE Healthcare) mounted with a Superose 6 5/150 increase column (GE Healthcare) equilibrated in size-exclusion chromatography buffer (20 mM Tris-HCl pH 8, 200 mM NaCl, 2% v/v glycerol, and 2 mM TCEP) and operated at or near the recommended flow rate. Typically, fractions of 80 μL were collected and analyzed by SDS-PAGE. The absorbance of fluorescently labeled proteins was followed during chromatography using the AKTAmicro Monitor UV-900 (GE Healthcare) and by SDS-PAGE using a ChemiDoc MP system (Bio-Rad).
 
-## SEC-MALS
+### SEC-MALS
 
 SEC-MALS was performed on a Dawn Heleos II System with an Optilab T-rEX RI detector (Wyatt) and a 1260 Inifinity II LC system (Agilent). The Superose 6 increase 10/300 column (GE Healthcare) was pre-equilibrated with running buffer (50 mM HEPES pH 8.0, 200 mM NaCl, 10% Glycerol and 1 mM TCEP). Analysis was performed at room temperature with 100 µl Ska complex that was pre-diluted in running buffer from 6.7 mg/ml to 1 mg/ml.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Sedimentation velocity AUC was performed at 42,000 rpm at 20°C in a Beckman XL-A ultracentrifuge. Purified Ska complexes were diluted to approximately 10 μM in a buffer containing 20 mM Tris-HCl, 150 mM NaCl and 1 mM TCEP and loaded into standard double-sector centerpieces. The cells were scanned at 280 nm every minute and 500 scans were recorded for every sample. Data were analyzed using the program SEDFIT (Schuck, 2000) with the model of continuous c(s) distribution. The partial specific volumes of the proteins, buffer density and buffer viscosity were estimated using the program SEDNTERP. Data figures were generated using the program GUSSI.
 
-## Crosslinking and mass spectrometry
+### Crosslinking and mass spectrometry
 
 Samples were reduced, alkylated and digested with LysC and Trypsin and prepared for mass spectrometry as previously described (Rappsilber et al., 2007). Obtained peptides were separated on an U3000 nanoHPLC system (Thermo Fisher Scientific). Samples were injected onto a desalting cartridge, desalted for 5 min using water in 0.1% formic acid, backflushed onto a Pepmap C18 nanoHPLC column (Thermo Fisher Scientific) and separated using a gradient from 5–30% acetonitrile with 0.1% formic acid and a flow rate of 300 nl/min. Samples were directly sprayed via a nano-electrospray source in an Orbitrap type mass spectrometer (Thermo Fisher Scientific). The mass spectrometer was operated in a data-dependent mode acquiring one survey scan and subsequently up to 15 MS/MS scans. To identify phospho-sites, the resulting raw files were processed with MaxQuant (version 1.6.1.0 or 1.6.3.4) searching for Ska and Ndc80 sequences with acetylation (N-term), oxidation (M) and phosphorylation (STY) as variable modifications and carbamidomethylation (C) as fixed modification. A false discovery rate cut off of 1% was applied at the peptide and protein levels and as well on the site decoy fraction (Cox and Mann, 2008).
 
 To prepare Ska:Ndc80 for analysis by crosslinking and mass spectrometry, Ska was in vitro phosphorylated by CDK1:Cyclin-B as described above, purified using size-exclusion chromatography using a superose 6 increase 5/150 column (GE Healthcare) in crosslinking buffer (50 mM HEPES pH 8, 250 mM NaCl, 5% v/v glycerol, and 2 mM TCEP), and bound to Ndc80. Binding to Ndc80 was confirmed using analytical size-exclusion chromatography (see Figure 2—figure supplement 3). Approximately 100 μg of Ska, Ska:Ndc80 in crosslinking buffer were crosslinked by DSBU using an in-house generated protocol and analyzed using MeroX (v1.6.6.6 and 2.0.0.8) (Iacobucci et al., 2018) as described (Pan et al., 2018). The Ndc80 dataset reported in Pan et al. (2018) is deposited to the Proteome Xchange Consortium via the PRIDE partner repository (https://www.ebi.ac.uk/pride) with the data set identifier PXD010070. Proximity maps were visualized in Circos plots (Krzywinski et al., 2009) and arranged using Adobe Illustrator.
 
-## Alignments
+### Alignments
 
 Multiple species alignments of NDC80 and SKA3 were generated using Clustal Omega (Sievers et al., 2011) and curated in Jalview 2 (Waterhouse et al., 2009).
 
-## Low-angle metal shadowing and electron microscopy
+### Low-angle metal shadowing and electron microscopy
 
 Protein complexes were diluted 1:1 with spraying buffer (200 mM ammonium acetate and 60% glycerol) and air-sprayed onto freshly cleaved mica pieces of approximately 2 × 3 mm (V1 quality, Plano GmbH). Specimens were mounted and dried in a MED020 high-vacuum metal coater (Bal-tec). A Platinum layer of approximately 1 nm and a 7 nm Carbon support layer were evaporated subsequently onto the rotating specimen at angles of 6–7° and 45°, respectively. Pt/C replicas were released from the mica on water, captured by freshly glow-discharged 400-mesh Pd/Cu grids (Plano GmbH), and visualized using a LaB6 equipped JEM-1400 transmission electron microscope (JEOL) operated at 120 kV. Images were recorded at a nominal magnification of 60,000x on a 4k × 4 k CCD camera F416 (TVIPS), resulting in 0.18 nm per pixel. Particles were manually selected using EMAN2 (Tang et al., 2007).
 
-## Assembly of TS-Ndc80 modules
+### Assembly of TS-Ndc80 modules
 
 T1S3 and T3S1 assemblies were assembled from Traptavidin (T; addgene plasmid #26054) and Dead Streptavidin-SpyCatcher (S; addgene plasmid # 59547). Both plasmids were kind gifts from Mark Howarth (Chivers et al., 2010; Fairhead et al., 2014). T1S3-[Ndc80]3 modules were prepared as described previously (Volkov et al., 2018). In brief, a mixture of Ndc80 (or Ndc80Δ80) and T1S3 (1.8 μM) with an approximate 10-fold molar excess of Ndc80 was incubated for 12–16 hr at 10°C in the presence of protease inhibitor mix (Serva). Sortase (4 μM) and GGGGKTMR (137 μM) were included in the reaction to fluorescently label SPC25. In order to phosphorylate Ndc80 (19 μM), CDK1:Cyclin-B (75 nM), Aurora B (2.1 μM), ATP (1.25 mM) and MgCl2 (10 mM) were also included in the overnight reaction. Reaction mixtures were applied to a Superose 6 increase 10/300 column (GE Healthcare) equilibrated in 20 mM Tris-HCl pH 8.0, 200 mM NaCl, 2% v/v glycerol, 2 mM TCEP. Relevant fractions were pooled and concentrated using 50 kDa molecular mass cut-off. Amicon concentrators (Millipore), flash-frozen in liquid nitrogen, and stored at −80°C. Efficient phosphorylation of NDC80 was confirmed by mass spectrometry and phostag-SDS-PAGE.
 
-## Tubulin and microtubules
+### Tubulin and microtubules
 
 Digoxigenin-labeled tubulin was produced by labeling home-purified porcine brain tubulin (Castoldi and Popov, 2003) according to published protocols (Hyman, 1991). All other tubulins were purchased from Cytoskeleton Inc. GMPCPP-stabilized seeds were made by two rounds of polymerization in 25 µM tubulin (40% dig-tubulin) supplemented with 1 mM GMPCPP (Jena Biosciences) as described (Volkov et al., 2018).
 
-## TIRF microscopy
+### TIRF microscopy
 
 Chamber preparation and microscopy were performed as described (Volkov et al., 2018). In brief, both coverslips and slides were cleaned in oxygen plasma, immediately silanized, and later assembled in a chamber using double-sided tape. The chambers were first incubated with ~0.2 µM anti-DIG antibody (Roche) and passivated with 1% Pluronic F-127, followed by GMPCPP seeds (diluted 1:200 – 1:1000) and then the reaction mix. The reaction mix contained MRB80 buffer supplemented with 8 µM tubulin (4–6% labeled with HiLyte-488), 1 mM GTP, 1 mg/ml κ-casein, 0.01% methylcellulose, 4 mM DTT, 0.2 mg/ml catalase, 0.4 mg/ml glucose oxidase and 20 mM glucose; this mix was centrifuged in Beckman Airfuge for 5 min at 30 psi before adding to the chamber.
 
 Imaging was performed at 30°C using Nikon Ti-E microscope (Nikon) with the perfect focus system (Nikon) equipped with a Plan Apo 100 × 1.45 NA TIRF oil-immersion objective (Nikon), iLas2 ring TIRF module (Roper Scientific) and a Evolve 512 EMCCD camera (Roper Scientific). Images were acquired with MetaMorph 7.8 software (Molecular Devices). The final resolution was 0.16 µm/pixel. The objective was heated to 34°C by a custom-made collar coupled with a thermostat, resulting in the flow chamber being heated to 30°C. All images were analyzed using Fiji (Schindelin et al., 2012).
 
-## Preparation of beads for force measurement
+### Preparation of beads for force measurement
 
 1 µm glass COOH-functionalized beads (Bangs Laboratories) were coated with PLL-PEG (Poly-L-lysine (20 kDa) grafted with polyethyleneglycole (2 kDa), SuSoS AG) containing 1–10% PLL-PEG-biotin, then saturated with T1S3-[Ndc80]3 modules as described (Volkov et al., 2018). Coating density was determined for each bead preparation, and bead preparations containing on average 100–1000 Ndc80 copies per bead were used for optical trapping. This surface density was previously identified to be the optimal for efficient coupling of microtubule-generated force and rescue of shortening microtubules ends (Volkov et al., 2018). For experiments shown in Figure 5 and Figure 5—figure supplements 1 and 3, T1S3-[Ndc80]3-coated beads were additionally incubated with 400 nM Ska complex followed by extensive washing.
 
 Flow chambers with GMPCPP-stabilized seeds were prepared as described above, the reaction mix contained MRB80 buffer with 10–12 µM tubulin, 1 mM GTP, 1 mg/ml κ-casein, 4 mM DTT, 0.2 mg/ml catalase, 0.4 mg/ml glucose oxidase and 20 mM glucose. This reaction mix was centrifuged in Beckman Airfuge for 5 min at 30 psi, and then supplemented with freshly prepared beads with or without additional 10–100 nM of Ska complex.
 
-## Laser tweezers and experiments with the beads
+### Laser tweezers and experiments with the beads
 
 DIC microscopy and laser tweezers experiments were performed as described (Volkov et al., 2018). Images were captured using QImaging Retiga Electro CCD cameras and MicroManager 1.4 software. At the start of each experiment, 50 frames of bead-free fields of view in the chamber were captured, averaged, and used later for on-the-fly background correction. The images were acquired at eight frames per second, subjected to background substraction and each 10 consecutive frames were averaged. The signal from the quadrant photo-detector (QPD) signal was sampled at 10 kHz without additional filtering. Experiments were performed at 0.4–0.8W of the 1064 nm laser resulting in a typical trap stiffness of 0.03–0.07 pN/nm. Trap stiffness was determined for each bead after it detached from a microtubule. If a microtubule was stalled by a bead for more than 90 s, the power of the trapping laser was increased to 4W (corresponding to a typical trap stiffness of 0.4 pN/nm) and the bead was ruptured from the microtubule using 100 nM steps of the piezo stage. A typical force required to rupture a bead from a microtubule exceeded 40 pN.
 

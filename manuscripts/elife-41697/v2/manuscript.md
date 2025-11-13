@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.41697.001 Homologous recombination helps ensure the timely completion of genome duplication by restarting collapsed replication forks. However, this beneficial function is not without risk as replication restarted by homologous recombination is prone to template switching (TS) that can generate deleterious genome rearrangements associated with diseases such as cancer. Previously we established an assay for studying TS in Schizosaccharomyces pombe (Nguyen et al., 2015). Here, we show that TS is detected up to 75 kb downstream of a collapsed replication fork and can be triggered by head-on collision between the restarted fork and RNA Polymerase III transcription. The Pif1 DNA helicase, Pfh1, promotes efficient restart and also suppresses TS. A further three conserved helicases (Fbh1, Rqh1 and Srs2) strongly suppress TS, but there is no change in TS frequency in cells lacking Fml1 or Mus81. We discuss how these factors likely influence TS.
+Homologous recombination helps ensure the timely completion of genome duplication by restarting collapsed replication forks. However, this beneficial function is not without risk as replication restarted by homologous recombination is prone to template switching (TS) that can generate deleterious genome rearrangements associated with diseases such as cancer. Previously we established an assay for studying TS in Schizosaccharomyces pombe (Nguyen et al., 2015). Here, we show that TS is detected up to 75 kb downstream of a collapsed replication fork and can be triggered by head-on collision between the restarted fork and RNA Polymerase III transcription. The Pif1 DNA helicase, Pfh1, promotes efficient restart and also suppresses TS. A further three conserved helicases (Fbh1, Rqh1 and Srs2) strongly suppress TS, but there is no change in TS frequency in cells lacking Fml1 or Mus81. We discuss how these factors likely influence TS.
 
 ## Introduction
 
@@ -30,57 +30,93 @@ We, and others, have documented a related process to BIR in the fission yeast Sc
 
 ## Results
 
-## Elevated levels of TS are detected up to 75 kb downstream of RTS1
+### Elevated levels of TS are detected up to 75 kb downstream of RTS1
 
 In our previous study, we established an assay in S. pombe for studying TS associated with restart of a collapsed, yet unbroken, replication fork (Nguyen et al., 2015). Using this assay, we found that restarted replication is associated with high levels of TS similar to BIR in budding yeast (Nguyen et al., 2015). In S. cerevisiae, increased TS associated with BIR is only observed within the first 10 kb of template DNA that is copied, after which it drops to spontaneous levels (Mayle et al., 2015; Smith et al., 2007). In S. pombe, we observed high levels of TS at 12.4 kb downstream of the site of fork collapse but had not looked beyond this (Nguyen et al., 2015). To see if TS associated with RDR from a collapsed fork in S. pombe is similarly restricted to a ~ 10 kb region, as it is during BIR in S. cerevisiae, we used strains with a recombination reporter inserted at one of five different sites, ranging from 0.2 kb to 140 kb downstream of the RTS1 RFB on the right arm of chromosome 3 (Figure 1A,B). We also positioned RTS1 ‘within’ the reporter (we will refer to this as the 0 kb site) to monitor TS recombination during the initiation of RDR (Figure 1B). The reporter consists of a direct repeat of ade6- heteroalleles with an intervening his3+ gene (Figure 1B). A single TS between these repeats causes a deletion of the intervening region and formation of one ade6+ gene, whereas two TS events can convert one of the ade6- heteroalleles to ade6+. These events are distinguished by the loss/retention of the his3+ gene (Figure 1B). RTS1 is inserted close to a cluster of early firing replication origins (ori-1323, ori-1338 and ori-1342), which means that it is almost always encountered first by a replication fork moving in the telomere to centromere direction (Figure 1A). Therefore, as RTS1 is a polar RFB, it only blocks forks at this site in one orientation, which we refer to as the active orientation (AO) (Nguyen et al., 2015). The non-blocking orientation is referred to as the inactive orientation (IO) and acts as a negative control for our experiments (Nguyen et al., 2015). Indeed, the Ade+ recombinant frequencies, measured at the 35 kb, 75 kb and 140 kb sites are essentially the same with and without RTS1-IO (p > 0.4), and at the 0 kb, 0.2 kb and 12.4 kb sites RTS1-IO causes only a modest ~1.4–1.9-fold increase in deletions (p ≤ 0.001) compared to the spontaneous frequencies obtained from equivalent strains with no RTS1 (Figure 1C). Compared to strains with RTS1-IO, those with RTS1-AO exhibited increases of between 32-fold to 133-fold in the frequency of Ade+ recombinants at sites up to 35 kb downstream of the RFB, but no increase was observed at the 75 kb and 140 kb sites (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig1-v2.jpg)
+
+**Figure 1.:** (A) Map showing sites of insertion for the direct repeat recombination reporter on chromosome 3. (B) Schematic of the direct repeat recombination reporter showing the position of RTS1 insertion and two types of Ade+ recombinant. Asterisks indicate the position of point mutations in ade6-L469 and ade6-M375. (C) Ade+ recombinant frequencies for strains MCW429, MCW7229, MCW7429, MCW7430, MCW7297, MCW4712, MCW7131, MCW7257, MCW7565, MCW7614, MCW7326, MCW4713, MCW7133, MCW7259, MCW7567, MCW7616 and MCW7328. ‘0*’ indicates that RTS1 is positioned between the ade6- repeats. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ade+ recombinant frequencies for strains MCW7430, MCW7987, MCW7616 and MCW7620. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
 
 In our previous study, we showed that convergence with a canonical replication fork limits the distance travelled by restarted replication and, therefore, determines the chromosomal region in which TS can occur (Nguyen et al., 2015). To see if the absence of increased levels of TS at the 75 kb reporter was due to replication convergence occurring upstream of this site, we deleted replication origin ori-1253, which is responsible for more than 80% of canonical forks that normally converge with the collapsed/restarted fork (Nguyen et al., 2015). This deletion had no effect on the frequency of spontaneous recombination at the 75 kb reporter (p = 0.58 and 0.34 for gene conversions and deletions, respectively), whereas it caused an approximately 5-fold increase in deletions when RTS1-AO was present (p < 0.0001) (Figure 1—figure supplement 1). These data show that restarted replication can cause increased levels of TS at least as far as 75 kb downstream of a collapsed replication fork in S. pombe.
 
 The increases in recombinants up to 35 kb downstream of RTS1-AO are comparable to the 49-fold increase observed when the RFB is placed at the 0 kb site between the two ade6- heteroalleles (Figure 1C). However, at the 0 kb site, the fold increase in gene conversions is higher than that of deletions (by ~3:1), whereas, at the 0.2 kb downstream site, the fold increases in gene conversions and deletions are comparable (126-fold and 135-fold, respectively) and, at the 12.4 kb, 35 kb and 75 kb sites, the fold increase in deletions (42-fold, 58-fold and 4-fold, respectively) is much higher than for gene conversions (6-fold, 16-fold and 2-fold, respectively). These data suggest that during the initial phases of restarting DNA replication there is a greater likelihood of generating a gene conversion, whereas the TS associated with restarted replication is more likely to give rise to a deletion.
 
-## High levels of TS downstream of RTS1-AO depend on Pfh1
+### High levels of TS downstream of RTS1-AO depend on Pfh1
 
 In S. cerevisiae, efficient BIR depends on the Pif1 DNA helicase, which aids D-loop migration (Wilson et al., 2013). To investigate whether Pif1 is similarly important for RDR in S. pombe, as it is for BIR in S. cerevisiae, we made use of two mutant alleles of the S. pombe Pif1 gene, called pfh1-m21 and pfh1-mt*, which encode protein that localises normally to mitochondria but has greatly reduced (pfh1-m21) or no detectable (pfh1-mt*) nuclear localization (Pinter et al., 2008). This was important because Pfh1 has an essential mitochondrial function in S. pombe (Pinter et al., 2008). We first determined whether pfh1-m21 and pfh1-mt* affected the frequency of inter-repeat recombination in cells with the repeats flanking RTS1-IO or placed 0.2 kb or 12.4 kb downstream of it (Figure 2A). In the case of pfh1-m21, there was little or no effect on the frequency of Ade+ recombinants at the three sites (Figure 2A). The same is true for pfh1-mt* at the 0.2 kb and 12.4 kb reporter sites (Figure 2A). However, when the repeats flank RTS1-IO, the pfh1-mt* mutant exhibits an approximately 3-fold increase in Ade+ recombinants, which are mostly (87%) deletions (Figure 2A). This increase is more than the 2-fold increase observed in the equivalent strain with no RTS1 (Steinacher et al., 2012), which suggests that Pfh1 might be needed for aiding non-recombinogenic DNA replication past RTS1-IO.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ade+ recombinant frequencies for strains MCW4712, MCW4940, MCW4954, MCW7131, MCW7599, MCW7603, MCW7257, MCW7421 and MCW7425. (B) Ade+ recombinant frequencies for strains MCW4713, MCW4942, MCW4956, MCW7133, MCW7601, MCW7605, MCW7259, MCW7422 and MCW7426. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Values are relative to wild-type.
+
 We next determined the recombination frequency in strains with RTS1-AO (Figure 2B). Consistent with previous data (Steinacher et al., 2012), we observed a greater than 7-fold increase in Ade+ recombinants in a pfh1-mt* mutant, compared to wild-type, when RTS1-AO is flanked by the repeats at the 0 kb site (Figure 2B, Figure 2—figure supplement 1). A similar increase was seen in a pfh1-m21 mutant and, in both cases, essentially all of the additional recombinants were deletions (Figure 2B, Figure 2—figure supplement 1). In contrast, the frequency of recombinants formed at the 0.2 kb and 12.4 kb reporter sites (by TS associated with replication restart) was reduced in both mutants (Figure 2B, Figure 2—figure supplement 1). Importantly, there were bigger fold reductions at the 12.4 kb reporter than at the 0.2 kb reporter, and with the pfh1-mt* mutant compared to the pfh1-m21 mutant (Figure 2B, Figure 2—figure supplement 1). These data show that there is a doseage-sensitive requirement for Pfh1 in promoting TS recombination downstream of RTS1-AO. This requirement might reflect a direct role in TS or a role in promoting replication restart.
 
-## Pfh1 promotes replication restart at RTS1-AO
+### Pfh1 promotes replication restart at RTS1-AO
 
 To determine whether Pfh1 is needed for RDR at RTS1, we analysed DNA replication intermediates in a ~ 3.7 kb Sac1 restriction fragment, that encompasses the barrier, by native two-dimensional gel eletrophoresis (2DGE) (Figure 3A,B). As seen previously, replication forks accumulated at RTS1-AO in both wild-type and pfh1-mt* mutant (Figure 3B) (Steinacher et al., 2012). However, whilst in the wild-type blocked forks were resolved through a mixture of restart (indicated by the presence of large Y-shaped molecules) and fork convergence at the RFB (indicated by the presence of double Y-shaped molecules), in the pfh1-mt* mutant they were resolved mainly by fork convergence (indicated by a reduction in large Y-shaped molecules and increase in double Y-shaped molecules) (Figure 3B,C). These data indicate that Pfh1 promotes efficient replication restart following fork collapse at RTS1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig3-v2.jpg)
 
-**Figure 3.:** RTS1-AO.(A) Schematic showing location of RTS1-AO and hphMX6 adjacent to bub1 on chromosome 3. The position of the probe used for the 2DGE analysis in B) is also shown. (B) 2DGE of replication intermediates in the SacI fragment shown in A). The DNA was extracted from strains MCW7223, MCW8587 and MCW8605. (C) Quantification of 2DGE. Values are relative to wild-type and are based on two independent experiments with each value represented by a dot around the mean.
+**Figure 3.:** (A) Schematic showing location of RTS1-AO and hphMX6 adjacent to bub1 on chromosome 3. The position of the probe used for the 2DGE analysis in B) is also shown. (B) 2DGE of replication intermediates in the SacI fragment shown in A). The DNA was extracted from strains MCW7223, MCW8587 and MCW8605. (C) Quantification of 2DGE. Values are relative to wild-type and are based on two independent experiments with each value represented by a dot around the mean.
 
 Intriguingly, we also observed the accumulation of a novel DNA signal running approximately parallel to the ascending arc of small Y-shaped molecules in the pfh1-mt* mutant (Figure 3B, labelled ‘e’ in the left hand panel). A similar signal was recently reported to accumulate in samples from rad51∆ and rad52∆ mutants, and was shown to depend on the 5’ to 3’ exonuclease Exo1 (Ait Saada et al., 2017). Based on these findings, it was proposed that Rad51 and Rad52 protect the collapsed replication fork from excessive Exo1 activity, which could generate extensively resected regressed replication forks (Ait Saada et al., 2017; Teixeira-Silva et al., 2017). To see if the novel DNA signal from pfh1-mt* depended on Exo1, we analysed replication intermediates from a pfh1-mt* exo1∆ double mutant (Figure 3B). This analysis showed that the novel signal was indeed Exo1 dependent. Exactly how Pfh1 prevents accumulation of resected replication forks is unclear. It may simply be a byproduct of its role in promoting efficient replication restart. Alternatively, Pfh1 may play a direct role in protecting the collapsed fork. Regardless of the mechanism, the similarly low levels of large Y-shaped DNA molecules, from both the pfh1-mt* single mutant and pfh1-mt* exo1∆ double mutant, indicate that Pfh1 does not simply counter Exo1 activity to promote efficient RDR.
 
-## Pfh1 limits TS downstream of RTS1-AO
+### Pfh1 limits TS downstream of RTS1-AO
 
 The discovery that Pfh1 is needed to promote efficient RDR, explains why TS downstream of RTS1-AO is reduced in pfh1-m21 and pfh1-mt* mutants. This finding also opened up the possibility that Pfh1’s function in promoting efficient RDR might mask a role for it in limiting TS downstream of RTS1-AO. To investigate this possibility, we tested the effect of deleting ori-1253 on the frequency of TS at 0.2 and 12.4 kb reporter sites in the two pfh1 mutants, reasoning that allowing more time for RDR might partially offset the need for Pfh1. In the control strains, with RTS1-IO, a modest increase in the frequency of Ade+ recombinants was observed at the 0.2 kb reporter (but not 12.4 kb reporter) in both pfh1 mutants, which might stem from fork collapse at RTS1-IO due to loss of Pfh1 ‘sweepase’ activity (see Discussion) (Figure 4). In the strains with RTS1-AO, the frequency of Ade+ recombinants increased at both reporter sites when ori-1253 was deleted and, whilst the frequency of gene conversions remained less in the pfh1 mutants than in wild-type, the overall number of recombinants in the pfh1-m21 mutant was more than 2-fold higher than wild-type at the 0.2 kb reporter due to a greater increase in deletions (Figure 4, Figure 4—figure supplement 1). These data indicate that Pfh1, in addition to promoting RDR, also limits TS recombination.
 
-## A tRNA gene increases TS recombination downstream of RTS1-AO
+![Figure 4.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig4-v2.jpg)
+
+**Figure 4.:** The strains are MCW7414, MCW7598, MCW7602, MCW7293, MCW7423, MCW7427, MCW7416, MCW7600, MCW7604, MCW7295, MCW7424, MCW7428. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Values are relative to wild-type.
+
+### A tRNA gene increases TS recombination downstream of RTS1-AO
 
 Collisions between replication forks and RNA Polymerase III (Pol III) transcription complexes at tRNA genes are known to stall fork progression (Deshpande and Newlon, 1996; Pryce et al., 2009). However, unlike at RTS1, fork stalling at tRNA genes generally only elicits detectable changes in recombination when in conjunction with other genetic elements that perturb DNA replication, or when there are defects in the replication machinery (reviewed in McFarlane and Whitehall, 2009). For example, work from our lab previously showed that loss of Pfh1 causes a ~ 27-fold increase in direct repeat recombination when DNA replication is stalled through head-on collision with transcription at a tRNA gene inserted between the DNA repeats (Steinacher et al., 2012). Whether this is also true for collisions between RDR and Pol III complexes has previously not been examined. To investigate the potential for TS to be triggered by collisions between restarted replication and Pol III complexes, we inserted a tRNAGLU08 gene between the ade6- heteroalleles at the 12.4 kb reporter site downstream of RTS1-AO (Figure 5A). As the orientation of collision between replication and transcription complex can influence stalling and associated genome instability (Osmundson et al., 2017; Steinacher et al., 2012; Tran et al., 2017), we constructed yeast strains with tRNAGLU08 inserted so that collision between restarted replication and transcription complex would either be co-directional (tRNAGLU08CD) or head-on (tRNAGLU08HO) (Figure 5A). In the absence of RTS1-AO, there was little difference in the recombination frequency between strains with and without tRNAGLU08CD, whereas with tRNAGLU08HO there was a modest 1.5-fold increase in Ade+ recombinants (Figure 5B). A similar pattern was seen in the strains with RTS1-AO, although in this case the fold increase in Ade+ recombinants with tRNAGLU08HO was higher (2.3-fold) (Figure 5C). These data indicate that head-on collision between a restarted replication complex and a Pol III complex can trigger TS.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig5-v2.jpg)
 
-**Figure 5.:** tRNACD and GLU08tRNAHO on TS downstream of GLU08RTS1.(A) Schematic showing the position of tRNACD/HO within the direct repeat recombination reporter 12.4 kb downstream of GLU08RTS1. (B) Ade+ recombinant frequencies for strains MCW7229, MCW7434 and MCW7433. (C) Ade+ recombinant frequencies for strains MCW7259, MCW7521 and MCW7517. (D) Ade+ recombinant frequencies for strains MCW7433, MCW9381, MCW9383, MCW7517, MCW9360 and MCW9361. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
+**Figure 5.:** (A) Schematic showing the position of tRNAGLU08CD/HO within the direct repeat recombination reporter 12.4 kb downstream of RTS1. (B) Ade+ recombinant frequencies for strains MCW7229, MCW7434 and MCW7433. (C) Ade+ recombinant frequencies for strains MCW7259, MCW7521 and MCW7517. (D) Ade+ recombinant frequencies for strains MCW7433, MCW9381, MCW9383, MCW7517, MCW9360 and MCW9361. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
 
 We next investigated whether loss of Pfh1 would further exacerbate TS induced by tRNAGLU08HO. In the absence of RTS1, both pfh1-m21 and pfh1-mt* mutants caused a marked increase in Ade+ recombinants (17.3-fold and 31.6-fold, respectively) consistent with previous findings (Steinacher et al., 2012) (Figure 5D). However, in the presence of RTS1-AO, the fold change in TS in pfh1-m21 and pfh1-mt* mutants compared to wild-type was essentially the same with and without tRNAGLU08HO (compare data in Figure 2B and Figure 5D). These data suggest that Pfh1 is not needed to suppress TS induced by head-on collision between a restarted replication complex and a Pol III complex.
 
-## Rqh1 limits TS downstream of RTS1-AO
+### Rqh1 limits TS downstream of RTS1-AO
 
 The RecQ family DNA helicase Rqh1 has been shown to limit ectopic recombination at the RTS1 RFB (Ahn et al., 2005; Lambert et al., 2010; Lorenz et al., 2009; Pietrobon et al., 2014). To investigate whether it also affects TS associated with restarted DNA replication, we compared the frequency of Ade+ recombinants in a wild-type and rqh1∆ mutant at the 12.4 kb reporter site (Figure 6C). This analysis revealed a 2.9-fold increase in recombinants in the mutant, indicating that Rqh1 plays a role in limiting TS. However, whereas the fold increase in recombinants at 12.4 kb is similar to that for spontaneous recombination at the 0 kb reporter site (Figure 6A,C), it is significantly less than the 10-fold increase seen at the 0 kb site when RTS1-AO is flanked by the ade6- repeats (Figure 6B, Figure 6—figure supplement 1). Rqh1 is not required for replication restart at RTS1 (Lambert et al., 2010) and, therefore, the lower fold increase in recombinants at the 12.4 kb reporter site, compared to the 0 kb site, suggests that Rqh1 plays a more important role in limiting ectopic recombination during replication restart than in controlling TS associated with restarted replication.
 
-## CAF1 promotes TS
+![Figure 6.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig6-v2.jpg)
+
+**Figure 6.:** (A) Ade+ recombinant frequencies for strains MCW4712, MCW1443, FO1748, FO1814, MCW3059, MCW1451, MCW6972 and MCW7147. (B) Ade+ recombinant frequencies for strains MCW4713, MCW1447, FO1750, FO1816, MCW3061, MCW1452, MCW7213 and MCW7149. (C) Ade+ recombinant frequencies for strains MCW7259, MCW8201, MCW8200, MCW8227, MCW8193, MCW8195, MCW8359 and MCW8360. Data are mean values ± SD. Ade+ recombinant frequencies with statistical analysis are also shown in Supplementary file 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Values are relative to wild-type.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/41697/elife-41697-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic showing location of RTS1-AO between ade6 heteroalleles on chromosome 3. The position of the probe used for the 2DGE analysis in (B) is also shown. (B) 2DGE of replication intermediates in the EcoNI fragment shown in (A). The DNA was extracted from strains MCW4713, MCW3061 and MCW1452. (C) Quantification of 2DGE. Values are relative to wild-type and are based on two independent experiments with each value represented by a dot around the mean.
+
+### CAF1 promotes TS
 
 It has been proposed that Rqh1 limits ectopic recombination at the RTS1 RFB by unwinding D-loops formed by Rad51, and that this activity is counteracted by chromatin assembly factor 1 (CAF1) (Pietrobon et al., 2014). Our analysis of null mutants of two of the three CAF1 subunits (Pcf2 and Pcf3) reveals little or no change in spontaneous recombination at the 0 kb reporter but an approximately 3-fold reduction in gene conversions and ~30% reduction in deletions when RTS1-AO is present (Figure 6A,B, Figure 6—figure supplement 1). We also observed a 2-fold reduction in gene conversions and a 4-fold reduction in deletions in both pcf2∆ and pcf3∆ mutants downstream of RTS1-AO at the 12.4 kb reporter (Figure 6C, Figure 6—figure supplement 1). These data confirm that CAF1 promotes ectopic recombination associated with restarting replication at the RTS1 RFB. Moreover, considering that CAF1 is not required for replication restart (Pietrobon et al., 2014), our data show that it also promotes TS associated with restarted replication.
 
-## Srs2 and Fbh1 suppress TS associated with restarted replication
+### Srs2 and Fbh1 suppress TS associated with restarted replication
 
 The DNA helicases Srs2 and Fbh1, which are members of the UvrD family of proteins, are known regulators of Rad51-mediated recombination, especially at sites of replication fork stalling and collapse (Chiolo et al., 2007; Fugger et al., 2009; Lorenz et al., 2009; Marini and Krejci, 2010; Morishita et al., 2005; Osman et al., 2005; Simandlova et al., 2013; Tsutsui et al., 2014). Although a previous study showed that both proteins limit ectopic recombination at the RTS1 RFB (Lorenz et al., 2009), it was not known whether they have a similar influence on TS associated with restarted replication. To investigate this, we compared the frequency of inter-repeat recombination at and downstream of RTS1-AO in both srs2∆ and fbh1∆ mutants (Figure 6B,C). In the case of srs2∆, there was a similar 6-fold increase in Ade+ recombinants at both 0 kb and 12.4 kb reporters, which was also similar to the fold increase in spontaneous recombination at the 0 kb reporter containing RTS1-IO (Figure 6A,B,C). Unlike a srs2∆ mutant, fbh1∆ does not exhibit an increase in spontaneous recombination at the 0 kb reporter (Figure 6A) (Lorenz et al., 2009). However, when RTS1-AO is present, fbh1∆ causes an even greater increase in Ade+ recombinants at both 0 kb and 12.4 kb reporters than srs2∆ (Figure 6B,C). Altogether these data show that both Srs2 and Fbh1 strongly inhibit TS recombination associated with restarted replication. It has been reported that Srs2 is needed to promote efficient replication restart at RTS1 (Inagawa et al., 2009; Lambert et al., 2010) and, therefore, the increase in TS we observe at the 12.4 kb reporter in a srs2∆ mutant may be an underestimate of Srs2’s importance in suppressing TS.
 
-## Deleting fml1 or mus81 has little or no effect on the frequency of TS recombination downstream of RTS1-AO
+### Deleting fml1 or mus81 has little or no effect on the frequency of TS recombination downstream of RTS1-AO
 
 In S. cerevisiae, the FANCM-related DNA helicase Mph1 and structure-specific nuclease Mus81 have both been shown to affect levels of TS associated with BIR, with the former promoting TS and the latter limiting it (Mayle et al., 2015; Stafa et al., 2014). To see if S. pombe Mph1 (termed Fml1) and Mus81 similarly affect TS associated with replication restart at RTS1, we compared the frequency of inter-repeat recombination at and downstream of RTS1-AO in both fml1∆ and mus81∆ mutants (Figure 6B,C). As reported previously, loss of fml1 results in an almost 10-fold reduction in gene conversions at the 0 kb reporter whilst the frequency of deletions remains unchanged (Figure 6B, Figure 6—figure supplement 1) (Sun et al., 2008). Spontaneous recombination at the 0 kb reporter is similarly affected by fml1∆, albeit the fold reduction in gene conversions (~2.6-fold) is not as great (Figure 6A). In contrast, there is little change in the frequency of Ade+ recombinants at the 12.4 kb reporter downstream of RTS1-AO (Figure 6C, Figure 6—figure supplement 1). Deletion of mus81 has no effect on the frequency of gene conversions at either 0 or 12.4 kb reporters, but does cause a slight increase in deletions (~1.4-fold) at the 0 kb reporter and a decrease in deletions (~1.5-fold) at the 12.4 kb reporter (Figure 6BC, Figure 6—figure supplement 1). The absence of any major change in TS frequency at the 12.4 kb reporter, in both the fml1∆ and mus81∆ mutant, could be due to a change in restart efficiency offsetting a potential decrease or increase in TS. However, 2DGE of replication intermediates at and around RTS1-AO reveals wild-type levels of large Y-shaped and double Y-shaped DNA molecules, suggesting that restart is unaffected by loss of either Fml1 or Mus81 (Figure 6—figure supplement 2).
 
@@ -114,14 +150,122 @@ In conclusion, we have identified a number of factors that influence TS associat
 
 ## Materials and methods
 
-## Strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>various strains</td>
+      <td>PMID: 15889146</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>various strains</td>
+      <td>PMID: 25806683</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>various strains</td>
+      <td>this paper</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>MCW4956</td>
+      <td>PMID: 22426535</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>various strains</td>
+      <td>PMID: 19546232</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>MCW3059</td>
+      <td>PMID: 18851838</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pombe)</td>
+      <td>MCW3061</td>
+      <td>PMID: 18851838</td>
+      <td></td>
+      <td>standard laboratory strain (972) derivatives; see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMJ33</td>
+      <td>this paper</td>
+      <td></td>
+      <td>plasmid; see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMJ34</td>
+      <td>this paper</td>
+      <td></td>
+      <td>plasmid; see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCB44</td>
+      <td>this paper</td>
+      <td></td>
+      <td>plasmid; see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMW899</td>
+      <td>PMID: 22426535</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMW905</td>
+      <td>PMID: 22426535</td>
+      <td></td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>various oligonucleotides</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Supplementary file 3 (oligonucleotides)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and plasmids
 
 S. pombe strains and oligonucleotides are listed in Supplementary files 2 and 3, respectively. The construction of the ‘0 kb’ recombination reporter, with RTS1 positioned between the direct repeat of ade6- heteroalleles, has been described (Ahn et al., 2005). To integrate the ade6- direct repeat recombination reporter ~35 kb, ~75 kb and ~140 kb downstream of the normal ade6 locus, we used essentially the same strategy that was used previously to integrate the reporter at the 12.4 kb site (Nguyen et al., 2015), with the only difference being the construct used for targeted integration of ade6-M375::kanMX6. For targeted integration of ade6-M375::kanMX6 at the 35 kb site we constructed pMJ33, which is a derivative of pMW923 (Nguyen et al., 2015) containing ade6-M375::kanMX6 flanked by DNA fragments amplified from genomic DNA using primers oMW1659 plus oMW1660 and oMW1661 plus oMW1662. pMJ34 and pCB44, which were used for targeted integration of ade6-M375::kanMX6 at the 75 kb and 140 kb sites respectively, are similar to pMJ33 but contain genomic DNA fragments that were amplified using oMW1663 plus oMW1664 and oMW1665 plus oMW1666 (pMJ34) or oMW1621 plus oMW1622 and oMW1623 plus oMW1624 (pCB44). In each case, the targeting construct was liberated from its host plasmid by digestion with SpeI and PvuII. The strains with tRNAGLU08CD or tRNAGLU08HO, at the 12.4 kb ade6- direct repeat recombination reporter site, were constructed in the same way as the standard 12.4 kb reporter strain using pMW899 or pMW905 instead of pFOX2 (Nguyen et al., 2015; Steinacher et al., 2012). Plasmids were verified by DNA sequencing and strains were verified by diagnostic PCR.
 
-## Media and genetic methods
+### Media and genetic methods
 
 Protocols for the growth and genetic manipulation of S. pombe, and assays for recombination have been described (Morrow et al., 2017; Nguyen et al., 2015). Between 3 and 10 colonies were assayed in each recombination experiment, with experiments repeated at least three times to achieve a minimum sample size as calculated using the Power calculation n = f(α,β)(2 s2/δ2) where α = 0.05; β = 0.1; s = 40; and δ = 50. Strains being directly compared were analysed at the same time in parallel experiments. Statistical analysis of the recombination data was performed in SPSS Statistics Version 22 (IBM). Each data set was tested for normal distribution using a Shapiro-Wilk test, rejecting the null hypothesis (H0; ‘data fits a normal distribution’) at an α-level of p < 0.05. Several data sets did not conform to a normal distribution and, therefore, all comparisons were done using a two-tailed, two independent sample Wilcoxon rank-sum test (also known as the Mann-Whitney U test). This test is non-parametric and does not depend on data sets being normally distributed. Sample sizes and p values are given in Supplementary file 1.
 
-## Two dimensional gel electrophoresis
+### Two dimensional gel electrophoresis
 
 Genomic DNA was prepared from asynchronously growing yeast cultures by enzymatic lysis of cells embedded in agarose and run on 2D gels as described (Nguyen et al., 2015). The 32P-labelled probe for the 2D gel in Figure 3 was made by random prime labeling using a template amplified from genomic DNA using primers oMW706 plus oMW707. The probe for the 2 D gel in Figure 6—figure supplement 2 has been described (Ahn et al., 2005).

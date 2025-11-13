@@ -34,25 +34,25 @@ To address these questions a functional modelling approach is followed that exte
 
 ## Results
 
-## Mushroom bodies as drivers of rotational invariant visual homing
+### Mushroom bodies as drivers of rotational invariant visual homing
 
 For ants to return directly to their familiar route after a sideways displacement (Figure 1A 'Zero Vector') without continuous mental or physical realignment they require access to rotational invariant visual cues. Stone et al., 2018 recently demonstrated that binary images of panoramic skylines converted into their frequency components can provide such a rotationally-invariant encoding of scenes in a compact form (see Image processing for an introduction to frequency transformations of images). Moreover, they demonstrated that the difference between the rotationally invariant features (the amplitudes of the frequency coefficients) between two locations increases monotonically with distance producing an error surface reminiscent of the image difference surfaces reported by Zeil et al., 2003 which can guide an agent back to familiar terrain. Here we investigate whether the MB neuropils shown capable of assessing the visual valence of learned rotationally-varying panoramic skylines for RF (Ardin et al., 2016; Müller et al., 2018), might instead assess the visual valence of rotationally-invariant properties of views sampled along a familiar route supporting visual homing.
 
-To this end, the intensity sensitive input neurons of Ardin et al., 2016’s MB model are replaced with input neurons encoding rotational invariant amplitudes (Figure 2A left, blue panel). The network is trained along an 11⁢m curved route in a simulated world that mimics the training regime of ants in Wystrach et al., 2012 (see Materials and methods and Reproduce visual navigation behaviour for details on simulated world, image processing, model architecture and training and test regime). After training, the firing rate of the MB output neuron (MBON) when placed at locations across the environment at random orientations reveals a gradient that increases monotonically with distance from the familiar route area, providing a homing signal sufficient for VH independent of the animal’s orientation (Figure 2C).
+To this end, the intensity sensitive input neurons of Ardin et al., 2016’s MB model are replaced with input neurons encoding rotational invariant amplitudes (Figure 2A left, blue panel). The network is trained along an $11⁢m$ curved route in a simulated world that mimics the training regime of ants in Wystrach et al., 2012 (see Materials and methods and Reproduce visual navigation behaviour for details on simulated world, image processing, model architecture and training and test regime). After training, the firing rate of the MB output neuron (MBON) when placed at locations across the environment at random orientations reveals a gradient that increases monotonically with distance from the familiar route area, providing a homing signal sufficient for VH independent of the animal’s orientation (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig2-v2.jpg)
 
-**Figure 2.:** (A) Neural model of visual homing. Rotational-invariant amplitudes are input to the MB calyx which are then projected to the Kenyon cells (KCs) before convergence onto the MB output neuron (MBON) which seeks to memorise the presented data via reinforcement-learning-based plasticity (for more details see Visual homing) (MB circuit: left panels). SMP neurons measure positive increases in visual novelty (through input from the MBON) which causes a shift between the current heading (green cells) and desired headings (red cells) in the rings of the CX (SMP pathway between MB and CX: centre panel; CX circuit: right panels). The CX-based steering circuit then computes the relevant turning angle. Example activity profiles are shown for an increase in visual novelty, causing a shift in desired heading and a command to change direction. Each model component in all figures is labelled with a shaded star to indicate what aspects are new versus those incorporated from previous models (see legend in upper left). (B) Schematic of the steering circuit function. First the summed differences between the impact of 45 °left and right turns on the desired heading and the current heading are computed. By comparing the difference between the resultant activity profiles allows an appropriate steering command to be generated. (C) Schematic of the visual homing model. When visual novelty drops ( to t-2) the desired heading is an unshifted copy of the current heading so the current path is maintained but when the visual novelty increases (t-1 to t-1) the desired heading is shifted from the current heading. (tD) The firing rate of the MBON sampled across locations at random orientations is depicted by the heat-map showing a clear gradient leading back to the route. The grey curve shows the habitual route along which ants were trained. RP (release point) indicates the position where real ants in Wystrach et al., 2012 were released after capture at the nest (thus zero-vector) and from which simulations were started. The ability of the VH model to generate realistic homing data is shown by the initial paths of simulated ants which closely match those of real ants (see inserted polar plot showing the mean direction and 95% confidential interval), and also the extended exampled path shown (red line). Note that once the agent arrives in the vicinity of the route, it appears to meander due the flattening of visual novelty gradient and the lack of directional information.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A) Neural model of visual homing. Rotational-invariant amplitudes are input to the MB calyx which are then projected to the Kenyon cells (KCs) before convergence onto the MB output neuron (MBON) which seeks to memorise the presented data via reinforcement-learning-based plasticity (for more details see Visual homing) (MB circuit: left panels). SMP neurons measure positive increases in visual novelty (through input from the MBON) which causes a shift between the current heading (green cells) and desired headings (red cells) in the rings of the CX (SMP pathway between MB and CX: centre panel; CX circuit: right panels). The CX-based steering circuit then computes the relevant turning angle. Example activity profiles are shown for an increase in visual novelty, causing a shift in desired heading and a command to change direction. Each model component in all figures is labelled with a shaded star to indicate what aspects are new versus those incorporated from previous models (see legend in upper left). (B) Schematic of the steering circuit function. First the summed differences between the impact of 45 °left and right turns on the desired heading and the current heading are computed. By comparing the difference between the resultant activity profiles allows an appropriate steering command to be generated. (C) Schematic of the visual homing model. When visual novelty drops ($t-2$ to $t-1$) the desired heading is an unshifted copy of the current heading so the current path is maintained but when the visual novelty increases ($t-1$ to $t$) the desired heading is shifted from the current heading. (D) The firing rate of the MBON sampled across locations at random orientations is depicted by the heat-map showing a clear gradient leading back to the route. The grey curve shows the habitual route along which ants were trained. RP (release point) indicates the position where real ants in Wystrach et al., 2012 were released after capture at the nest (thus zero-vector) and from which simulations were started. The ability of the VH model to generate realistic homing data is shown by the initial paths of simulated ants which closely match those of real ants (see inserted polar plot showing the mean direction and 95% confidential interval), and also the extended exampled path shown (red line). Note that once the agent arrives in the vicinity of the route, it appears to meander due the flattening of visual novelty gradient and the lack of directional information.
 
 Motor output is then generated by connecting the MBON to a steering network recently located in the fan-shaped body (FB/CBU) of the CX that functions by minimising the difference between the animal’s current and desired headings (Stone et al., 2017). Stone et al., 2017’s key insight was that the anatomically observed shifts of activity in the columnar neurons that encode the desired heading in essence simulate 45° turns left and right, and thus by comparing the summed differences between the activity profiles of these predicted headings to the current heading then the appropriate turning command can be computed (see Figure 2B). We adopt this circuit as the basis for computing steering commands for all strategies as suggested by Honkanen et al., 2019.
 
-In the proposed VH model the current heading input to the steering circuit uses the same celestial global compass used in Stone et al., 2017’s PI model. Insects track their orientation through head-direction cells Seelig and Jayaraman, 2015 whose concurrent firing pattern forms a single bump of activity that shifts around the ring as the animal turns (measured through local visual [Green et al., 2017; Turner-Evans et al., 2017], global visual (Heinze and Homberg, 2007) and proprioceptive (Seelig and Jayaraman, 2015) cues). Neuroanatomical data (Kim et al., 2017; Turner-Evans et al., 2019; Pisokas et al., 2019) supports theoretical predictions (Cope et al., 2017; Kakaria and de Bivort, 2017) that the head-direction system of insects follows a ring attractor (RA) connectivity pattern characterised by local excitatory interconnections between direction selective neurons and global inhibition. In this work, the global compass RA network is not modelled directly but rather we simulate its sinusoidal activity profile in a ring of I-TB1 (locusts and Δ⁢7 of flies) neurons found in the protocerebral bridge (PCB/PB) (Figure 2A green ring) (see Current headings).
+In the proposed VH model the current heading input to the steering circuit uses the same celestial global compass used in Stone et al., 2017’s PI model. Insects track their orientation through head-direction cells Seelig and Jayaraman, 2015 whose concurrent firing pattern forms a single bump of activity that shifts around the ring as the animal turns (measured through local visual [Green et al., 2017; Turner-Evans et al., 2017], global visual (Heinze and Homberg, 2007) and proprioceptive (Seelig and Jayaraman, 2015) cues). Neuroanatomical data (Kim et al., 2017; Turner-Evans et al., 2019; Pisokas et al., 2019) supports theoretical predictions (Cope et al., 2017; Kakaria and de Bivort, 2017) that the head-direction system of insects follows a ring attractor (RA) connectivity pattern characterised by local excitatory interconnections between direction selective neurons and global inhibition. In this work, the global compass RA network is not modelled directly but rather we simulate its sinusoidal activity profile in a ring of I-TB1 (locusts and $Δ⁢7$ of flies) neurons found in the protocerebral bridge (PCB/PB) (Figure 2A green ring) (see Current headings).
 
 A desired heading is then generated by copying the current activity pattern of the global compass neurons to a new neural ring which we speculate could reside in either a distinct subset of I-TB1 neurons (Beetz et al., 2015) or in the FB. Crucially, the copied activity profile also undergoes a leftward shift proportional to any increase in visual novelty (a similar shifting mechanisms has been proposed for the head-direction system [Green et al., 2017; Turner-Evans et al., 2017]) which we propose is measured by neurons in the superior medial protocerebrum (SMP) (Aso et al., 2014; Plath et al., 2017) (see Figure 2A centre and activity of red rings). The result is a mechanism that recommends changing direction when the agent moves away from familiar terrain (visual novelty increases) but recommends little change to the current heading when the visual novelty is decreasing (see Figure 2C for a schematic of the VH mechanism). We note that there is a distinction between a ring network which describes a group of neurons whose pattern of activity forms a circular representation regardless of actual physical arrangement and RA networks which follow a specific connectivity pattern (all modelled RAs labelled in figures). Taken together the model iteratively refines it’s orientation to descend the visual novelty gradient and thus recover familiar terrain (see Figure 2A for full model).
 
 Figure 2D demonstrates that the proposed network accurately replicates both the directed initial paths as in Wystrach et al., 2012 (see the inserted black arrow), and extended homing paths as in Narendra, 2007 observed in ants displaced to novel locations perpendicular to their familiar routes. We note that upon encountering the route the model is unable to distinguish the direction in which to travel and thus meanders back and forth along the familiarity valley, unlike real ants, demonstrating the need for additional route recognition and recovery capabilities.
 
-## Optimally integrating visual homing and path integration
+### Optimally integrating visual homing and path integration
 
 We have demonstrated how ants could use visual cues to return to the route in the absence of PI but in most natural scenarios (e.g. displacement by a gust of wind) ants will retain a home vector readout offering an alternative, and often conflicting, guidance cue to that provided by VH. In such scenarios, desert ants strike a comprise by integrating their PI and VH outputs in a manner consistent with optimal integration theory by weighting VH relative to the familiarity of the current view (Legge et al., 2014) and PI relative to the home vector length (a proxy for directional certainty) (Wystrach et al., 2015).
 
@@ -60,9 +60,17 @@ Various ring-like structures of the CX represent directional cues as bumps of ac
 
 Thus we introduce a pair of integrating ring-attractor networks to the CX model (Figure 3A grey neural rings: RA_L and RA_R) that take as input the desired headings from the above proposed VH model (red neural rings: VH_L and VH_R) and Stone et al., 2017’s PI model (orange neural rings: PI_L and PI_R) and output combined Off Route desired heading signals that are sent to the steering circuits (blue neural rings: CPU_L and CPU_R). Stone et al., 2017 mapped the home vector computation to a population of neurons (CPU4) owing to their dual inputs from direction selective compass neurons (I_TB1) and motion-sensitive speed neurons (TN2) as well as their recurrent connectivity patterns facilitating accumulation of activity as the animal moves in a given direction. Wystrach et al., 2015 showed that the certainty of PI automatically scales with the home-vector length owing to the accumulating effect of the memory neurons which correlates with directional uncertainty, and thus the output PI network is directly input to the ring attractor circuits. In our implementation the VH input has a fixed height and width profile and influences the integration through tuning neurons (TUN) (see the plotted activation function in Figure 3B and Optimal cue integration) that we suggest reside in the SMP and modulate the PI input to the integration network. Altering the weighting in this manner rather than by scaling the VH input independently allows VH to dominate the integrated output at sites with high visual familiarity even in the presence of a large home vector without having large stored activity. We note, however, that both approaches remain feasible and further neuroanatomical data is required to clarify which, if either, mechanism is employed by insects.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig3-v2.jpg)
+
+**Figure 3.:** (A) Proposed model for optimally integrating PI and VH guidance systems. In each hemisphere, ring attractors (RAs) (grey neural rings) (speculatively located in FB/CBU) receive the corresponding inputs from PI (orange neural rings) and VH (red neural rings) with the outputs sent to the corresponding steering circuits (blue neural rings). Integration is weighted by the visual novelty tracking tuning neuron (TUN) whose activation function is shown in the leftmost panel. (B) Examples of optimal integration of PI and VH headings for two PI states with the peak stable state (grey dotted activity profile in the integration neurons) shifting towards VH as the home vector length recedes. (C) Replication of optimal integration studies of Wystrach et al., 2015 and Legge et al., 2014. Simulated ants are captured at various points (0.1 m, 1 m, 3 m and 7 m) along their familiar route (grey curve) and released at release point 1 (RP1) thus with the same visual certainty but with different PI certainties as in Wystrach et al., 2015 (see thick orange arrow). The left polar plot shows the initial headings of simulated ants increasingly weight their PI system (270°) in favour of their VH system (135°) as the home vector length increases and PI directional uncertainty drops. Simulated ants are also transferred from a single point 1 m along their familiar route to ever distant release points (RP1, RP2, RP3) thus with the same PI certainty but increasingly visual uncertainty as in Legge et al., 2014 (see thick red arrow). The right polar plot shows the initial headings of simulated ants increasingly weight PI (270°) over VH (135°) as visual certainty drops. (see Reproduce the optimal cue integration behaviour for details) (D) Example homing paths of the independent and combined guidance systems displaced from the familiar route (grey) to a fictive release point (RP).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The extended homing path of 20 agents released at RP1 in Figure 3B with different home vector length. (B) The activation of CPU4 neurons (PI memory) encoding home vectors with different lengths from 0 to 7.0 m. (C) The extended homing paths of 20 agents released at RP2 and RP3 in Figure 3B.
+
 Figure 3C shows the initial headings produced by the model which replicates the trends reported in cue-conflict experiments by Legge et al., 2014 and Wystrach et al., 2015 when the uncertainty of PI and VH cues were altered independently. Example extended paths of independent PI and VH models and the ring-attractor-based combined PI and VH model are plotted in Figure 3D with the combined model showing the most ant-like behaviour (Kohler and Wehner, 2005; Mangan and Webb, 2012) by initially following predominantly the home-vector direction before switching to visual homing when the home-vector length drops leading the simulated ant back to familiar terrain. Note that the PI-only and PI+VH models are drawn back towards their fictive nest sites indicated by their home vectors which if left to run would likely result in emergent search-like patterns as in Stone et al., 2017. Moreover, upon encountering the route the VH-based models (VH-only and PI+VH) are unable to distinguish the direction in which to travel and hence again (see meander around the valley of familiarity Figure 2D and Figure 3D) further demonstrating a need for a route recovery mechanism.
 
-## Route following in the insect brain
+### Route following in the insect brain
 
 The model described above can guide insects back to their familiar route area, but lacks the means to recover the route direction upon arrival as observed in homing insects. This is not surprisingly as VH relies upon translationally-varying but rotational-invariant information whereas RF requires rotationally varying cues. Thus we introduce a new elemental guidance system that makes use of the rotationally-varying phase coefficients of the frequency information derived from the panoramic skyline which tracks the orientation of specific features of the visual surroundings (see Materials and methods). Here, we ask whether by associating the rotationally invariant amplitudes (shown useful for place recognition) with the rotationally-varying phases experienced at those locations, insects might recover the familiar route direction.
 
@@ -70,25 +78,117 @@ Neuroanatomical data with which to constrain a model remains sparse and therefor
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig4-v2.jpg)
 
-**Figure 4.:** (A) Neural model. The visual pathway from the optic lobe via AOTU and Bulb to EB of the CX is modelled by a fully connected artificial neural network (ANN) with one hidden layer. The input layer receives the amplitudes of the frequency encoded views (as for the MB network) and the output layer is an 8-neuron ring whose population encoding represents the desired heading against to which the agent should align. (B) Behaviours. Blue and red arrows in the inserted polar plot (top left) display the mean directions and 95% confidential intervals of the initial headings of real (Wystrach et al., 2012) and simulated ants released at the start of the route , respectively. Dark blue curves show the routes followed by the model when released at five locations close to the start of the learned path. The overlaid fan-plots indicate the circular statistics (the mean direction and 95% confidential interval) of the homing directions recommended by the model when sampled across heading directions (20 samples at 18°intervals). Data for entire rotations are shown on the right for specific locations with the upper plot, sampled at (-7,-7), demonstrating accurate phase-based tracking of orientation, whereas the lower plot sampled at (1.5,-3) shows poor tracking performance and hence produces a wide fan-plot.(-2.5,-3.5)Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** (A) Neural model. The visual pathway from the optic lobe via AOTU and Bulb to EB of the CX is modelled by a fully connected artificial neural network (ANN) with one hidden layer. The input layer receives the amplitudes of the frequency encoded views (as for the MB network) and the output layer is an 8-neuron ring whose population encoding represents the desired heading against to which the agent should align. (B) Behaviours. Blue and red arrows in the inserted polar plot (top left) display the mean directions and 95% confidential intervals of the initial headings of real (Wystrach et al., 2012) and simulated ants released at the start of the route $(-7,-7)$, respectively. Dark blue curves show the routes followed by the model when released at five locations close to the start of the learned path. The overlaid fan-plots indicate the circular statistics (the mean direction and 95% confidential interval) of the homing directions recommended by the model when sampled across heading directions (20 samples at 18°intervals). Data for entire rotations are shown on the right for specific locations with the upper plot, sampled at $(1.5,-3)$, demonstrating accurate phase-based tracking of orientation, whereas the lower plot sampled at $(-2.5,-3.5)$ shows poor tracking performance and hence produces a wide fan-plot.
 
 We speculate that the most likely neural pathways for the new desired and current headings are from Optic Lobe via Anterior Optic Tubercle (AOTU) and Bulb (BU) to EB (CBL) of the CX (Homberg et al., 2003; Omoto et al., 2017) (see Figure 4A) with the desired heading terminating in the EB, whereas the current heading continues to the PB forming a local compass that sits beside the global compass used by PI and VH systems. This hypothesis is further supported by the recently identified parallel pathways from OL via AOTU to the CX in Drosophila (Timaeus et al., 2020). That’s to say that, firstly, there are two parallel pathways forming two compass systems- the global (here based on celestial cues) and the local (based on terrestrial cues) compasses modelled by the activation of I-TB1 and II-TB1 neurons, respectively. Four classes of CL1 neurons (or E-PG and P-EG neurons) Heinze and Homberg, 2009; Xu et al., 2020 and three classes of independent TB1 neurons Beetz et al., 2015 have been identified that provide potential sites for the parallel recurrent loops encoding independent local and global compasses. Secondly, the desired heading, which is the recalled phase of a specific view, is generated through the neural plasticity from AOTU to BU and BU to EB, which is line with recent evidence of associative learning between the R-neurons transmitting visual information from BU to EB and the compass neurons (CL1a or E-PG neurons) that receive input from EB (Kim et al., 2019; Fisher et al., 2019). This kind of learning endows the animal with the ability to flexibly adapt their local compass and also desired navigational orientation according to the changing visual surroundings. Hanesch et al., 1989 reported a direct pathway from EB to FB neurons which we model to allow comparison of the local compass activity (II-TB1) with the desired heading. However, we note that this connectivity has not been replicated in recent studies Heinze and Homberg, 2008 and thus further investigation of potential pathways is required.
 
 The RF model accurately recovers the initial route heading in a similar manner to real ants returned to the start of their familiar route (Wystrach et al., 2012; Figure 4B, insert), and then follows the remaining route in its entirety back to the nest again reflecting ant data (Kohler and Wehner, 2005; Mangan and Webb, 2012; Figure 4B). The quiver plots displayed in the background of Figure 4B show the preferred homing direction output by the ANN when rotated on the spot across locations in the environment. The noise in the results are due to errors in the tracking performance (see examples Figure 4B right) yet as these errors are in largely confined to the magnitude, the steering circuit still drives the ant along the route. We note that this effect is primarily a function of the specific frequency transformation algorithm used which we borrow from computer graphics to investigate the utility of frequency encoding of visual information. The biological realism of such transforms and their potential implementation in the insect vision system are addressed in the Discussion. The displaced routes also highlight the danger of employing solely RF which often shadows rather than converges with the route when displaced sideways, further demonstrating the necessity for integration with the Off-Route strategies that promote route convergence.
 
-## Route recovery through context-dependent modulation of guidance systems
+### Route recovery through context-dependent modulation of guidance systems
 
 Homing insects readily recognise familiar route surroundings, recover their bearing, and retrace their habitual path home, irrespective of the status of other guidance system such as PI. Replicating such context-dependent behavioural switching under realistic conditions is the final task for the proposed model. The visual novelty measured by the MBON provides an ideal signal for context switching with low output when close to the route when RF should dominate versus high output further away from the route when PI and VH should be engaged (see Figure 2D). Also the fact that Off-route strategies (PI and VH) compute their turning angles with reference to the global compass whereas the On-route RF strategy is driven with reference to a local compass provides a means to modulate their inputs to the steering circuit independently. This is realised through a non-linear weighting of the On and Off-route strategies which we propose acts through the same SMP pathway as the VH model (see the SN1 and SN2 neurons in Figure 5A) (see Context-dependent switch for neuron details and Figure 6 for a force-directed graph representation of the final unified model).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig5-v2.jpg)
 
-**Figure 5.:** (A) Context-dependent switching is realised using two switching neurons (SN1, SN2) that have mutually exclusive firing states (one active while the other is in active) allowing coordination between On and Off-Route strategies driven by the instantaneous visual novelty output by the MB. Connectivity and activation functions of the SMP neurons are shown in the left side of panel. (B) Activation history of the SN1, SN2 and TUN (to demonstrate the instantaneous visual novelty readout of the MB) neurons during the simulated displacement trials. (C) Paths generated by the unified model under control of the context-dependent switch circuit during simulated FV (solid line) and ZV (dashed line) displacement trials.Figure 5—source data 1.
+**Figure 5.:** (A) Context-dependent switching is realised using two switching neurons (SN1, SN2) that have mutually exclusive firing states (one active while the other is in active) allowing coordination between On and Off-Route strategies driven by the instantaneous visual novelty output by the MB. Connectivity and activation functions of the SMP neurons are shown in the left side of panel. (B) Activation history of the SN1, SN2 and TUN (to demonstrate the instantaneous visual novelty readout of the MB) neurons during the simulated displacement trials. (C) Paths generated by the unified model under control of the context-dependent switch circuit during simulated FV (solid line) and ZV (dashed line) displacement trials.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig6-v2.jpg)
 
 **Figure 6.:** (A): The detailed neural connections of the navigation coordination system. (B): The neural connection of the route following network. The input layer to the hidden layer is fully connected, so does the hidden layer to the output layer. (C): The network generating the visual homing memory. (D): The detailed neural connection of the ring attractor network for optimal cue integration.
 
 The activity of the proposed switching circuit and the paths that it generates in simulated zero vector and full vector displacement trials are shown in Figure 5B and C respectively. In the full vector trial (Figure 5B (upper), Figure 5C (solid line)) as visual novelty is initially high (see high TUN activity until step 78) SN2 is activated which enables Off-Route strategies (PI and VH) while SN1 (always the inverse of SN2) is deactivated which disables On-Route strategies. Note that it is the integration of PI and VH that generates the direct path back to the route area in the FV trial: PI recommends moving at a 45° bearing but VH prevents ascension of the visual novelty gradient that this would cause with the compromise being a bearing closer to 90° that is toward the route. As the route is approached the visual novelty decreases (again see TUN activity), until at step 78 SN2 falls below threshold and deactivates the Off-Route strategies while conversely SN1 activates and engages On-Route strategies. After some initial flip-flopping while the agents converges on the route (steps 78–85) RF becomes dominant and drives the agent back to the nest via the familiar path. In the zero vector trial (Figure 5B (lower), (Figure 5B (dashed line)) Off-route strategies (here only VH) largely dominate (some false positive route recognition (e.g step 60)) until the route is recovered (step 93), at which point the same flip-flopping during route convergence occurs (steps 93–96) followed by RF alone which returns the agent to the nest via the familiar path. It should be noted that the data presented utilised different activation functions of the TUN neuron that weights PI and VH (see Table 1 for parameter settings across trials and Discussion for insights into model limitations and potential extensions), yet the results presented nevertheless provide a proof-of-principle demonstration that the proposed unified navigation model can fulfil all of the criteria defined for replication of key adaptive behaviour observed in insects (Figure 1A).
+
+**Table 1.**
+ The detailed parameters settings for the simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Para.</th>
+      <th>Visual homing</th>
+      <th>Optimal integration tuning PI</th>
+      <th>Optimal integration tuning VH</th>
+      <th>Route following</th>
+      <th>Whole model ZV</th>
+      <th>Whole model FV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T⁢h⁢rK⁢C(Equation 14)</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.04</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>ηK⁢C⁢2⁢M⁢B⁢O⁢N(Equation 16)</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>kV⁢H(Equation 19)</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>2.0</td>
+      <td>/</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>kT⁢U⁢N (Equation 28)</td>
+      <td>/</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>/</td>
+      <td>0.025</td>
+      <td>0.0125</td>
+    </tr>
+    <tr>
+      <td>T⁢h⁢rS⁢N⁢2(Equation 32)</td>
+      <td>/</td>
+      <td>/</td>
+      <td>/</td>
+      <td>/</td>
+      <td>2.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>km⁢o⁢t⁢o⁢r(Equation 35)</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>0.125</td>
+      <td>0.375</td>
+      <td>0.375</td>
+    </tr>
+    <tr>
+      <td>SL (cm/step) (Equation 39)</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>initial heading (deg)</td>
+      <td>0~360</td>
+      <td>0~360</td>
+      <td>0~360</td>
+      <td>0 / 180</td>
+      <td>90</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -110,21 +210,179 @@ While this assemblage recreates optimal integration of strategies that share a c
 
 The resultant unified model of insect navigation Figure 1B and C represents a proof-of-principle framework as to how insects might co-ordinate core navigational behaviours (PI, VH and RF) under standard field manipulations Figure 1A. Neuroanatomical data has been drawn from across insect classes (see Table 2) to ensure neural realism where possible with performance compared to ant navigation behaviour in a single simulated desert ant habitat. The framework can be easily extended to new navigation behaviours observed in other insects from idiothetic PI (Kim and Dickinson, 2017) to straight line following El Jundi et al., 2016 to migrations (Reppert et al., 2016) as well as more nuanced strategies that flexibly use directional cues from different sensory modalities (Wystrach et al., 2013; Schwarz et al., 2017; Dacke et al., 2019). A priority of future works should be the investigation of the differences and commonalities in sensory systems, neural structures and ecology of different insect navigators and how they impact behaviour allowing for extension and refinement of the framework for different animals. Complementary stress-testing of models across different environments in both simulation and robotic studies are also required to ensure that model performance generalises across species and habitats and to provide guidance to researchers seeking the sensory, processing and learning circuits underpinning these abilities.
 
+**Table 2.**
+ The details of the main neurons used in the proposed model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Function</th>
+      <th>Num</th>
+      <th>Network</th>
+      <th>Brain region</th>
+      <th>Neuron in species(e.g.)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I-TB1</td>
+      <td>Global compasscurrent heading</td>
+      <td>8</td>
+      <td>Ring attractor</td>
+      <td rowspan="12">CX</td>
+      <td>TB1 in Schistocerca gregariaand Megalopta genalis</td>
+      <td>Heinze and Homberg, 2008; Stone et al., 2017</td>
+    </tr>
+    <tr>
+      <td>II-TB1</td>
+      <td>Local compasscurrent heading</td>
+      <td>8</td>
+      <td>Ring attractor</td>
+      <td>Δ7 in Drosophila</td>
+      <td>Franconville et al., 2018</td>
+    </tr>
+    <tr>
+      <td>S I-TB1</td>
+      <td>Copy of shiftedglobal heading</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>No data</td>
+      <td rowspan="3">/</td>
+    </tr>
+    <tr>
+      <td>VH-L</td>
+      <td>VH desiredheading left</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>VH-R</td>
+      <td>VH desiredheading right</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>PI-L</td>
+      <td>PI desiredheading left</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>CPU4 in Schistocerca gregariaand Megalopta genalis</td>
+      <td>Heinze and Homberg, 2008; Stone et al., 2017</td>
+    </tr>
+    <tr>
+      <td>PI-R</td>
+      <td>PI desiredheading right</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>P-F3N2v in Drosophila</td>
+      <td>Franconville et al., 2018</td>
+    </tr>
+    <tr>
+      <td>RF-L</td>
+      <td>RF desiredheading left</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>No data</td>
+      <td rowspan="4">/</td>
+    </tr>
+    <tr>
+      <td>RF-R</td>
+      <td>RF desiredheading right</td>
+      <td>8</td>
+      <td>Ring</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>RA-L</td>
+      <td>Cue integrationleft</td>
+      <td>8</td>
+      <td>Ring attractor</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>RA-R</td>
+      <td>Cue integrationright</td>
+      <td>8</td>
+      <td>Ring attractor</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>CPU1</td>
+      <td>Comparing thecurrent anddesired heading</td>
+      <td>16</td>
+      <td>Steering circuit</td>
+      <td>CPU1 in Schistocerca gregaria and Megalopta genalis PF-LCre in Drosophila</td>
+      <td>Heinze and Homberg, 2008; Stone et al., 2017Franconville et al., 2018</td>
+    </tr>
+    <tr>
+      <td>vPN</td>
+      <td>visual projection</td>
+      <td>81</td>
+      <td rowspan="3">Associative learning</td>
+      <td rowspan="3">MB</td>
+      <td>MB neurons in Drosophila</td>
+      <td>Aso et al., 2014</td>
+    </tr>
+    <tr>
+      <td>KCs</td>
+      <td>Kenyon cells</td>
+      <td>4000</td>
+      <td>Camponotus</td>
+      <td>Ehmer and Gronenberg, 2004</td>
+    </tr>
+    <tr>
+      <td>MBON</td>
+      <td>visual novelty</td>
+      <td>1</td>
+      <td>Apis mellifera</td>
+      <td>Rybak and Menzel, 1993</td>
+    </tr>
+    <tr>
+      <td>TUN</td>
+      <td>Tuning weightsfrom PI to RA</td>
+      <td>1</td>
+      <td>/</td>
+      <td rowspan="3">SMP</td>
+      <td>No data</td>
+      <td rowspan="3">/</td>
+    </tr>
+    <tr>
+      <td>SN1</td>
+      <td>Turn on/off theRF output to CPU1</td>
+      <td>1</td>
+      <td>Switch circuit</td>
+      <td>No data</td>
+    </tr>
+    <tr>
+      <td>SN2</td>
+      <td>Turn on/off theRA output to CPU1</td>
+      <td>1</td>
+      <td>Switch circuit</td>
+      <td>No data</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
 All source code related to this publication is available for download at https://github.com/XuelongSun/InsectNavigationToolkitModelling (Sun et al., 2020 ; copy archived at https://github.com/elifesciences-publications/InsectNavigationToolkitModelling). All simulations and network models are implemented by Python 3.5 and make use of external libraries-numpy, matplotlib, scipy, PIL and cv2.
 
-## Simulated 3D world
+### Simulated 3D world
 
-The environment used in this study is that provided by Stone et al., 2018 which is itself adapted from Baddeley et al., 2012 (see Figure 7C). It is a virtual ant-like world consisting of randomly generated bushes, trees and tussocks based on triangular patches (for more details see Baddeley et al., 2012). Therefore, the data of this simulated world is stored in a matrix with the size of NP×3×3, defining the three dimensional coordinates (x,y,z) of the three vertices of NP (number of patches) triangle patches. Agent movement was constrained to a 20⁢m×20⁢m training and test area allowing free movement without the requirement of an additional obstacle avoidance mechanism.
+The environment used in this study is that provided by Stone et al., 2018 which is itself adapted from Baddeley et al., 2012 (see Figure 7C). It is a virtual ant-like world consisting of randomly generated bushes, trees and tussocks based on triangular patches (for more details see Baddeley et al., 2012). Therefore, the data of this simulated world is stored in a matrix with the size of $N_{P}\times3\times3$, defining the three dimensional coordinates (x,y,z) of the three vertices of $N_{P}$ (number of patches) triangle patches. Agent movement was constrained to a $20⁢m\times20⁢m$ training and test area allowing free movement without the requirement of an additional obstacle avoidance mechanism.
 
-## Image reconstruction
+### Image reconstruction
 
-The agent’s visual input at location (x,y) with the heading direction θh is simulated from a point 1 cm above from the ground plane with field of view 360∘ wide by 90∘ high (centred on the horizon). This panoramic image (300×104) is then wrapped onto a sky-centred disk as required by the Zernike Moments transformation algorithm used with the size of 208⁢(104×2)×208 ready for image processing (see Figure 7D upper).
+The agent’s visual input at location $(x,y)$ with the heading direction $\theta_{h}$ is simulated from a point 1 cm above from the ground plane with field of view $360^{∘}$ wide by $90^{∘}$ high (centred on the horizon). This panoramic image ($300\times104$) is then wrapped onto a sky-centred disk as required by the Zernike Moments transformation algorithm used with the size of $208⁢(104\times2)\times208$ ready for image processing (see Figure 7D upper).
 
-## Image processing
+### Image processing
 
-## Frequency encoding conceptual overview
+#### Frequency encoding conceptual overview
 
 Image compression algorithms such as JPEG encoding Hudson et al., 2018 have long utilised the fact that a complex signal can be decomposed into a series of trigonometric functions that oscillate at different frequencies. The original signal can then be reconstructed by summing all (for prefect reconstruction) or some (for approximate reconstruction) of the base trigonometric functions. Thus, compression algorithms seek a balance between using the fewest trigonometric functions to encode the scene (for example, by omitting high frequencies that humans struggle to perceive), and the accuracy of the reconstructed signal (often given as an option when converting to JPEG format). Figure 7A provides a cartoon of the frequency decomposition process for a panoramic view.
 
@@ -134,146 +392,354 @@ In addition, as the phase of each coefficient describes how to align the signal 
 
 The image processing field has created an array of algorithms for deriving the frequency content of continuous signals (Jiang et al., 1996; Gonzalez et al., 2004). To allow exploration of the usefulness of frequency information, and how it could be used by the known neural structures, we adopt the same Zernike Moment algorithm used by Stone et al., 2018, but the reader should be clear that there are many alternate and more biologically plausible processes by which insects could derive similar information. It is beyond the scope of this proof of concept study to define precisely how this process might happen in insects but future research possibilities are outlined in the Discussion.
 
-## Zernike Moments encoding
+#### Zernike Moments encoding
 
-Zernike Moments (ZM) are defined as the projection of a function onto orthogonal basis polynomials called Zernike polynomials (Teague, 1980; Khotanzad and Hong, 1990). This set of functions are defined on the unit circle with polar coordinates (ρ,θ) shown as:(1)Vn⁢m⁢(ρ,θ)=Rn⁢m⁢(ρ)⁢ej⁢m⁢θwhere n∈N+ is the order and m is the repetition meeting the condition: m∈N, |m|≤n and n-|m| is even to ensure the rotational invariant property is met. Rn⁢m⁢(ρ) is the radial polynomial defined as:(2)Rn⁢m⁢(ρ)=∑s=0n-|m|/2(-1)s⁢(n-s)!s!⁢(n+|m|2-s)!⁢(n-|m|2-s)!⁢ρn-2⁢s
+Zernike Moments (ZM) are defined as the projection of a function onto orthogonal basis polynomials called Zernike polynomials (Teague, 1980; Khotanzad and Hong, 1990). This set of functions are defined on the unit circle with polar coordinates $(ρ,\theta)$ shown as:
 
-For a continuous image function f⁢(x,y), the ZM coefficient can be calculated by:(3)Zn⁢m⁢(ρ)=n+1π⁢∫∫x2+y2≤1f⁢(x,y)⁢Vn⁢m*⁢(ρ,θ)⁢𝑑x⁢𝑑y
+$$
+V_{n⁢m}⁢(ρ,\theta)=R_{n⁢m}⁢(ρ)⁢e^{j⁢m⁢\theta}
+$$
 
-For a digital image, summations can replace the integrals to give the ZM:(4)Zn⁢m⁢(ρ)=n+1π⁢∑x∑yf⁢(x,y)⁢Vn⁢m*⁢(ρ,θ),x2+y2≤1.
+where $n\inN^{+}$ is the order and $m$ is the repetition meeting the condition: $m\inN$, $|m|\leqn$ and $n-|m|$ is even to ensure the rotational invariant property is met. $R_{n⁢m}⁢(ρ)$ is the radial polynomial defined as:
 
-ZM are extracted from the simulated insect views in wrapped format (Figure 7D) whose centre is taken to be the origin of the polar coordinates such that all valid pixels lie within the unit circle. For a given image I (P1 in Figure 7D) and the rotated version of this image Iθ, (P2 in Figure 7D), the amplitude A=|Z| and phaseΦ=∠⁢Z of ZM coefficients of these two images will satisfy:(5){|Znmθr|=|Znme−jmθr|=|Znm|i.e.,Anmθr=AnmΦnmθr=Φnm−mθr
+$$
+R_{n⁢m}⁢(ρ)=\sums=0n-|m|/2(-1)^{s}⁢\frac{(n-s)!}{s!⁢(\frac{n+|m|}{2}-s)!⁢(\frac{n-|m|}{2}-s)!}⁢ρ^{n-2⁢s}
+$$
+
+For a continuous image function $f⁢(x,y)$, the ZM coefficient can be calculated by:
+
+$$
+Z_{n⁢m}⁢(ρ)=\frac{n+1}{\pi}⁢\int\int_{x^{2}+y^{2}\leq1}f⁢(x,y)⁢V_{n⁢m}^{*}⁢(ρ,\theta)⁢𝑑x⁢𝑑y
+$$
+
+For a digital image, summations can replace the integrals to give the ZM:
+
+$$
+Z_{n⁢m}⁢(ρ)=\frac{n+1}{\pi}⁢\sumx\sumyf⁢(x,y)⁢V_{n⁢m}^{*}⁢(ρ,\theta),x^{2}+y^{2}\leq1.
+$$
+
+ZM are extracted from the simulated insect views in wrapped format (Figure 7D) whose centre is taken to be the origin of the polar coordinates such that all valid pixels lie within the unit circle. For a given image $I$ (P1 in Figure 7D) and the rotated version of this image $I^{\theta}$, (P2 in Figure 7D), the amplitude $A=|Z|$ and phase$Φ=∠⁢Z$ of ZM coefficients of these two images will satisfy:
+
+$$
+{|Z_{nm}^{\theta_{r}}|=|Z_{nm}e^{−jm\theta_{r}}|=|Z_{nm}|i.e.,A_{nm}^{\theta_{r}}=A_{nm}Φ_{nm}^{\theta_{r}}=Φ_{nm}−m\theta_{r}
+$$
 
 From which we can see that the amplitude of the ZM coefficient remains the same while the phase of ZM carries the information regarding the rotation (see Figure 7A and D). This property is the cornerstone of the visual navigation model where the amplitudes encode the features of the view while the phase defines the orientation.
 
-Amplitudes for ZM orders ranging from n=0 to n=16 were selected as they appeared to cover the majority of information within the image. From Equation 1, we know that Vn,m=Vn,-m, so we limited m∈N+ to reduce the computational cost, which sets the total number of ZM coefficients (NZ⁢M) to (16÷2+1)2=81 which was input to the visual navigation networks. For training the ANN network for RF, in Equation 5, if we set m=1, such that Φn,1θr=Φn,1-θr which means that all ZM coefficients will provide the same information when the image is rotated. Further, the difference between the phase of ZM coefficients of the current view with those of the memorised view, will inherently provide the angle with which to turn to realign oneself, that is:(6)Φ7,1c⁢u⁢r⁢r⁢e⁢n⁢t-Φ7,1m⁢e⁢m⁢o⁢r⁢y=θh-θmwhere the order n of this ZM is selected to be n=7 manually by comparing the performance with different orders in this specific virtual environment, θh is the current heading of the agent while θm is the memorised heading direction (desired heading direction).
+Amplitudes for ZM orders ranging from $n=0$ to $n=16$ were selected as they appeared to cover the majority of information within the image. From Equation 1, we know that $V_{n,m}=V_{n,-m}$, so we limited $m\inN^{+}$ to reduce the computational cost, which sets the total number of ZM coefficients ($N_{Z⁢M}$) to $(16\div2+1)^{2}=81$ which was input to the visual navigation networks. For training the ANN network for RF, in Equation 5, if we set $m=1$, such that $Φ_{n,1}^{\theta_{r}}=Φ_{n,1}-\theta_{r}$ which means that all ZM coefficients will provide the same information when the image is rotated. Further, the difference between the phase of ZM coefficients of the current view with those of the memorised view, will inherently provide the angle with which to turn to realign oneself, that is:
 
-## Neural networks
+$$
+Φ_{7,1}^{c⁢u⁢r⁢r⁢e⁢n⁢t}-Φ_{7,1}^{m⁢e⁢m⁢o⁢r⁢y}=\theta_{h}-\theta_{m}
+$$
 
-We use the simple firing rate to model the neurons in the proposed networks, where the output firing rate C is a sigmoid function of the input I if there is no special note. In the following descriptions and formulas, a subscript is used to represent the layers or name of the neuron while the superscript is used to represent the value at a specific time or with a specific index.
+where the order $n$ of this ZM is selected to be $n=7$ manually by comparing the performance with different orders in this specific virtual environment, $\theta_{h}$ is the current heading of the agent while $\theta_{m}$ is the memorised heading direction (desired heading direction).
 
-## Current headings
+### Neural networks
+
+We use the simple firing rate to model the neurons in the proposed networks, where the output firing rate $C$ is a sigmoid function of the input $I$ if there is no special note. In the following descriptions and formulas, a subscript is used to represent the layers or name of the neuron while the superscript is used to represent the value at a specific time or with a specific index.
+
+#### Current headings
 
 In the proposed model, there are two independent compass systems based on the global and the local cues respectively so named global and local compass correspondingly. These two compass systems have similar neural pathways from OL via AOTU and BU to the CX but ended distinct groupings of TB1 neurons: I-TB1 and II-TB1 in the PB.
 
-## Global compass
+##### Global compass
 
-The global compass neural network applied in this study is the same as that of Stone et al., 2017, which has three layers of neurons: TL neurons, CL1 neurons and I-TB1 neurons. The 16 TL neurons respond to simulated polarised light input and are directly modelled as:(7)IT⁢L=cos⁡(θT⁢L-θh)where θT⁢L∈{0,π/4,π/2,3⁢π/4,π,5⁢π/4,3⁢π/2,7⁢π/4} is the angular preference of the 16 TL-neurons. The 16 CL1-neurons are inhibited by TL-neuron activity which invert the polarisation response:(8)IC⁢L⁢1=1.0-CT⁢L
+The global compass neural network applied in this study is the same as that of Stone et al., 2017, which has three layers of neurons: TL neurons, CL1 neurons and I-TB1 neurons. The 16 TL neurons respond to simulated polarised light input and are directly modelled as:
 
-The 8 I-TB1 neurons act as a ring attractor creating a sinusoidal encoding of the current heading. Each I-TB1 neuron receives excitation from the CL1 neuron sharing the same directional preference and inhibition from other I-TB1 neurons via mutual connections:(9)WI-T⁢B⁢1i⁢j=cos⁡(θI-T⁢B⁢1i-θI-T⁢B⁢1j)-12(10)II-T⁢B⁢1t,j=(1-c)⁢CC⁢L⁢1t,j+c⁢∑i=18WI-T⁢B⁢1i⁢j⁢CI-T⁢B⁢1t-1,jwhere c is a balance factor to modify the strength of the inhibition and the CL1 excitation. Finally, the population coding CI-T⁢B⁢1t,j,j=0,1,…⁢7 represents the heading of global compass of the agent at time t.
+$$
+I_{T⁢L}=cos⁡(\theta_{T⁢L}-\theta_{h})
+$$
 
-## Local compass
+where $\theta_{T⁢L}\in{0,\pi/4,\pi/2,3⁢\pi/4,\pi,5⁢\pi/4,3⁢\pi/2,7⁢\pi/4}$ is the angular preference of the 16 TL-neurons. The 16 CL1-neurons are inhibited by TL-neuron activity which invert the polarisation response:
 
-The local compass is derived from the terrestrial cues through a similar visual pathway as the global compass and also ends in a ring attractor network. As for the global compass, the local compass heading is directly modelled by the population encoding of II-TB1 neurons:(11)CI⁢I-T⁢B⁢1i=cos⁡(Φ7,1-θI⁢I-T⁢B⁢1i) i=0,1,…⁢7where θI⁢I-T⁢B⁢1 is the angular preference of the II-TB1 neurons and Φ7,1 is the phase of ZM. Therefore, the firing rate of CI⁢I-T⁢B⁢1 encodes the heading of the local compass.
+$$
+I_{C⁢L⁢1}=1.0-C_{T⁢L}
+$$
 
-## Visual homing
+The 8 I-TB1 neurons act as a ring attractor creating a sinusoidal encoding of the current heading. Each I-TB1 neuron receives excitation from the CL1 neuron sharing the same directional preference and inhibition from other I-TB1 neurons via mutual connections:
+
+$$
+W_{I-T⁢B⁢1}^{i⁢j}=\frac{cos⁡(\theta_{I-T⁢B⁢1}^{i}-\theta_{I-T⁢B⁢1}^{j})-1}{2}
+$$
+
+
+
+$$
+I_{I-T⁢B⁢1}^{t,j}=(1-c)⁢C_{C⁢L⁢1}^{t,j}+c⁢\sumi=18W_{I-T⁢B⁢1}^{i⁢j}⁢C_{I-T⁢B⁢1}^{t-1,j}
+$$
+
+where $c$ is a balance factor to modify the strength of the inhibition and the CL1 excitation. Finally, the population coding $C_{I-T⁢B⁢1}^{t,j},j=0,1,…⁢7$ represents the heading of global compass of the agent at time $t$.
+
+### Local compass
+
+The local compass is derived from the terrestrial cues through a similar visual pathway as the global compass and also ends in a ring attractor network. As for the global compass, the local compass heading is directly modelled by the population encoding of II-TB1 neurons:
+
+$$
+C_{I⁢I-T⁢B⁢1}^{i}=cos⁡(Φ_{7,1}-\theta_{I⁢I-T⁢B⁢1}^{i}) i=0,1,…⁢7
+$$
+
+where $\theta_{I⁢I-T⁢B⁢1}$ is the angular preference of the II-TB1 neurons and $Φ_{7,1}$ is the phase of ZM. Therefore, the firing rate of $C_{I⁢I-T⁢B⁢1}$ encodes the heading of the local compass.
+
+#### Visual homing
 
 The neural network of visual homing is an associative network constrained by the anatomical structure of the mushroom body (MB) of the insects. In contrast to Ardin et al., 2016 where a spiking neural network is implemented to model the MB, we apply a simple version of MB where the average firing rates of neurons are used.
 
-The visual projection neurons (vPNs) directly receive the amplitudes of the ZM coefficients as their firing rates:(12)Cv⁢P⁢Ni=Ai,i=0,1,2⁢…⁢Nv⁢P⁢Nwhere Nv⁢P⁢N is the number of the vPN neurons which is the same as the total number of ZM amplitudes applied and in this study Nv⁢P⁢N=NZ⁢M=81. The Ai denotes the it⁢h amplitudes of ZM coefficients.
+The visual projection neurons (vPNs) directly receive the amplitudes of the ZM coefficients as their firing rates:
 
-The vPNs project into Kenyon cells (KC) through randomly generated binary connections Wv⁢P⁢N⁢2⁢K⁢C, which result in the scenario wherein one KC receives 10 randomly selected vPNs’ activation:(13)IK⁢Cj=∑i=0Nv⁢P⁢NWv⁢P⁢N⁢2⁢K⁢Cj⁢i⁢Cv⁢P⁢Niwhere IK⁢Cj denotes the total input current of jt⁢h KC from the vPN and the KCs are modelled as binary neurons with the same threshold T⁢h⁢rk⁢c:(14)CKC={0ifIKC≤ThrKC1ifIKC>ThrKC
+$$
+C_{v⁢P⁢N}^{i}=A^{i},i=0,1,2⁢…⁢N_{v⁢P⁢N}
+$$
 
-The MBON neuron sums all the activation of Kenyon cells via plastic connections WK⁢C⁢2⁢E⁢N:(15)CM⁢B⁢O⁢N=∑i=0NK⁢CWK⁢C⁢2⁢M⁢B⁢O⁢Ni⁢CK⁢Ci
+where $N_{v⁢P⁢N}$ is the number of the vPN neurons which is the same as the total number of ZM amplitudes applied and in this study $N_{v⁢P⁢N}=N_{Z⁢M}=81$. The $A^{i}$ denotes the $i^{t⁢h}$ amplitudes of ZM coefficients.
 
-An anti-Hebbian learning rule is applied for the plasticity of WK⁢C⁢2⁢M⁢B⁢O⁢N in a simple way:(16)WK⁢C⁢2⁢M⁢B⁢O⁢Nt=WK⁢C⁢2⁢M⁢B⁢O⁢Nt-1-ηK⁢C⁢2⁢M⁢B⁢O⁢N i⁢f CK⁢Ci≥WK⁢C⁢2⁢M⁢B⁢O⁢Niwhere ηK⁢C⁢2⁢M⁢B⁢O⁢N is the learning rate. The learning process will happen only when the reward signal is turned on. The activation of EN CM⁢B⁢O⁢N represents the familiarity of the current view and the change of the CM⁢B⁢O⁢N is defined as:(17)Δ⁢CM⁢B⁢O⁢N=CM⁢B⁢O⁢Nt-CM⁢B⁢O⁢Nt-1
+The vPNs project into Kenyon cells (KC) through randomly generated binary connections $W_{v⁢P⁢N⁢2⁢K⁢C}$, which result in the scenario wherein one KC receives 10 randomly selected vPNs’ activation:
 
-Δ⁢CM⁢B⁢O⁢N is used to track the gradient of the familiarity to guide the agent to the more familiar locations by shifting the I-TB1 neurons’ activation CI-T⁢B⁢1.(18)CVHi=CI−TB1j,j={i+offsetifi+offset≤7i+offset−7otherwisei=0,1,...7
+$$
+I_{K⁢C}^{j}=\sumi=0N_{v⁢P⁢N}W_{v⁢P⁢N⁢2⁢K⁢C}^{j⁢i}⁢C_{v⁢P⁢N}^{i}
+$$
 
-The relationship between the Δ⁢CM⁢B⁢O⁢N and the o⁢f⁢f⁢s⁢e⁢t is shown as following:(19)offset={0ifΔCMBON<0min(⌊kVHΔCMBON⌋,4)otherwise
+where $I_{K⁢C}^{j}$ denotes the total input current of $j^{t⁢h}$ KC from the vPN and the KCs are modelled as binary neurons with the same threshold $T⁢h⁢r_{k⁢c}$:
 
-## Path integration
+$$
+C_{KC}={0ifI_{KC}\leqThr_{KC}1ifI_{KC}>Thr_{KC}
+$$
+
+The MBON neuron sums all the activation of Kenyon cells via plastic connections $W_{K⁢C⁢2⁢E⁢N}$:
+
+$$
+C_{M⁢B⁢O⁢N}=\sumi=0N_{K⁢C}W_{K⁢C⁢2⁢M⁢B⁢O⁢N}^{i}⁢C_{K⁢C}^{i}
+$$
+
+An anti-Hebbian learning rule is applied for the plasticity of $W_{K⁢C⁢2⁢M⁢B⁢O⁢N}$ in a simple way:
+
+$$
+W_{K⁢C⁢2⁢M⁢B⁢O⁢N}^{t}=W_{K⁢C⁢2⁢M⁢B⁢O⁢N}^{t-1}-η_{K⁢C⁢2⁢M⁢B⁢O⁢N} i⁢f C_{K⁢C}^{i}\geqW_{K⁢C⁢2⁢M⁢B⁢O⁢N}^{i}
+$$
+
+where $η_{K⁢C⁢2⁢M⁢B⁢O⁢N}$ is the learning rate. The learning process will happen only when the reward signal is turned on. The activation of EN $C_{M⁢B⁢O⁢N}$ represents the familiarity of the current view and the change of the $C_{M⁢B⁢O⁢N}$ is defined as:
+
+$$
+Δ⁢C_{M⁢B⁢O⁢N}=C_{M⁢B⁢O⁢N}^{t}-C_{M⁢B⁢O⁢N}^{t-1}
+$$
+
+$Δ⁢C_{M⁢B⁢O⁢N}$ is used to track the gradient of the familiarity to guide the agent to the more familiar locations by shifting the I-TB1 neurons’ activation $C_{I-T⁢B⁢1}$.
+
+$$
+C_{VH}^{i}=C_{I−TB1}^{j},j={i+offsetifi+offset\leq7i+offset−7otherwisei=0,1,...7
+$$
+
+The relationship between the $Δ⁢C_{M⁢B⁢O⁢N}$ and the $o⁢f⁢f⁢s⁢e⁢t$ is shown as following:
+
+$$
+offset={0ifΔC_{MBON}<0min(⌊k_{VH}ΔC_{MBON}⌋,4)otherwise
+$$
+
+#### Path integration
 
 The PI model implemented is that published by Stone et al., 2017. The core functionality arises from the CPU4 neurons that integrate the activation of TN2 neurons that encode the speed of the agent and the inverted activation of direction-sensitive I-TB1 neurons. The result is that the population of CPU4 neurons iteratively track the distance and orientation to the nest (a home vector) in a format akin to a series of directionally locked odometers.
 
-The firing rate of the CPU4 neurons are updated by:(20)IC⁢P⁢U⁢4t=IC⁢P⁢U⁢4t-1+r⁢(CT⁢N⁢2t-CI-T⁢B⁢1t-k)where the rate of the memory accumulation r=0.0025; the memory loss k=0.1; the initial memory charge of CPU4 neurons IC⁢P⁢U⁢40=0.1.
+The firing rate of the CPU4 neurons are updated by:
 
-The input of the TN2 neurons encoding the speed is calculated by:(21){IT⁢N⁢2L=[sin⁡(θh+θT⁢N⁢2)⁢cos⁡(θh+θT⁢N⁢2)]⁢𝒗IT⁢N⁢2R=[sin⁡(θh-θT⁢N⁢2)⁢cos⁡(θh-θT⁢N⁢2)]⁢𝒗where 𝒗 is the velocity (see Equation 39) of the agent and θT⁢N⁢2 is the preference angle of the TN2 neurons. In this study θT⁢N⁢2=π/4. The activation function applied to TN2 neurons is the rectified linear function given by:(22)CT⁢N⁢2=max⁡(0,2⁢IT⁢N⁢2)
+$$
+I_{C⁢P⁢U⁢4}^{t}=I_{C⁢P⁢U⁢4}^{t-1}+r⁢(C_{T⁢N⁢2}^{t}-C_{I-T⁢B⁢1}^{t}-k)
+$$
 
-As CPU4 neurons integrate the speed and direction of the agent, the desired heading of PI can be represented by the population encoding of these neurons, thus:(23)CP⁢I=CC⁢P⁢U⁢4
+where the rate of the memory accumulation $r=0.0025$; the memory loss $k=0.1$; the initial memory charge of CPU4 neurons $I_{C⁢P⁢U⁢4}^{0}=0.1$.
 
-## Route following
+The input of the TN2 neurons encoding the speed is calculated by:
 
-The route following model is based on a simple artificial neural network (ANN) with just one hidden layer. The input layer directly takes the amplitudes of the ZM coefficients as the activation in the same way as that of visual projection neurons in MB network. This is a fully connected neural network with the sigmoid activation function, so the forward propagation is ruled by:(24){Zli=∑i=0NWjiYl−1jYil=sigmoid(Zli)=11+e−Zlii=0,1,...7andl=0,1,2where Zli and Yli denote the input and output of the it⁢h neuron in lt⁢h layer, thus the input is the same as the MB network Z0i=Ai,i=0,1,…⁢NZ⁢M and the output of the ANN is consequently the population coding of the RF desired heading, that is:(25)CR⁢Fi=Yi2 i=0,1,…⁢7
+$$
+{I_{T⁢N⁢2_{L}}=[sin⁡(\theta_{h}+\theta_{T⁢N⁢2})⁢cos⁡(\theta_{h}+\theta_{T⁢N⁢2})]⁢𝒗I_{T⁢N⁢2_{R}}=[sin⁡(\theta_{h}-\theta_{T⁢N⁢2})⁢cos⁡(\theta_{h}-\theta_{T⁢N⁢2})]⁢𝒗
+$$
 
-For a fast and efficient implementation, the learning method applied here is back propagation with gradient descend. Training data is derived from the amplitudes and the population encoded phases of the ZM coefficients of the images reconstructed along a habitual route. As shown in Equation 11 the II-TB1 neurons encode the heading of local compass, therefore, the training pair for the RF network can be defined as {A,CI⁢I-T⁢B⁢1}. After training, this network will correlate the desired ZM phase with the specific ZM amplitudes, and when RF is running, the output of this neural network CR⁢F will represent the desired heading with respect to the current heading of the local compass represented by the population encoding of II-TB1 neurons.
+where $𝒗$ is the velocity (see Equation 39) of the agent and $\theta_{T⁢N⁢2}$ is the preference angle of the TN2 neurons. In this study $\theta_{T⁢N⁢2}=\pi/4$. The activation function applied to TN2 neurons is the rectified linear function given by:
 
-## Coordination of elemental guidance strategies
+$$
+C_{T⁢N⁢2}=max⁡(0,2⁢I_{T⁢N⁢2})
+$$
+
+As CPU4 neurons integrate the speed and direction of the agent, the desired heading of PI can be represented by the population encoding of these neurons, thus:
+
+$$
+C_{P⁢I}=C_{C⁢P⁢U⁢4}
+$$
+
+#### Route following
+
+The route following model is based on a simple artificial neural network (ANN) with just one hidden layer. The input layer directly takes the amplitudes of the ZM coefficients as the activation in the same way as that of visual projection neurons in MB network. This is a fully connected neural network with the sigmoid activation function, so the forward propagation is ruled by:
+
+$$
+{Z_{l}^{i}=\sumi=0NW^{ji}Y_{l−1}^{j}Y_{i}^{l}=sigmoid(Z_{l}^{i})=\frac{1}{1+e^{−Z_{l}^{i}}}i=0,1,...7andl=0,1,2
+$$
+
+where $Z_{l}^{i}$ and $Y_{l}^{i}$ denote the input and output of the $i^{t⁢h}$ neuron in $l^{t⁢h}$ layer, thus the input is the same as the MB network $Z_{0}^{i}=A^{i},i=0,1,…⁢N_{Z⁢M}$ and the output of the ANN is consequently the population coding of the RF desired heading, that is:
+
+$$
+C_{R⁢F}^{i}=Y_{i}^{2} i=0,1,…⁢7
+$$
+
+For a fast and efficient implementation, the learning method applied here is back propagation with gradient descend. Training data is derived from the amplitudes and the population encoded phases of the ZM coefficients of the images reconstructed along a habitual route. As shown in Equation 11 the II-TB1 neurons encode the heading of local compass, therefore, the training pair for the RF network can be defined as ${A,C_{I⁢I-T⁢B⁢1}}$. After training, this network will correlate the desired ZM phase with the specific ZM amplitudes, and when RF is running, the output of this neural network $C_{R⁢F}$ will represent the desired heading with respect to the current heading of the local compass represented by the population encoding of II-TB1 neurons.
+
+#### Coordination of elemental guidance strategies
 
 The coordination of the three main navigation strategies PI, VH and RF are realised in distinct stages. Firstly, Off-route strategies (PI and VH) are optimally integrated by weighing according to the certainly of each before a context-dependent switch activates either On-route (RF) or Off-route strategies depending on the current visual novelty.
 
-## Optimal cue integration
+### Optimal cue integration
 
-A ring attractor neural network is used to integrate the cues from the VH and PI guidance systems. As reported in Hoinville and Wehner, 2018 summation of directional cues represented in vector format leads to optimal angular cue integration which is the same case as real insects. Mangan and Yue, 2018 gave a biology plausible way to do this kind of computation based on a simple ring attractor neural network. There are two populations of neurons in this network, the first is the integration neurons (IN) which is the output population of the network. Constrained by the number of columns in each hemisphere of the insects CX, we set the number of the IN to be 8, and its firing rate is updated by:(26)τ⁢d⁢CI⁢Nd⁢t=-CI⁢N+g⁢(∑j=1nWE⁢2⁢Ej⁢i⁢CI⁢Nj+X1i+X2i+WI⁢2⁢E⁢CU⁢I) i=0,1,…⁢7.where WE⁢2⁢Ej⁢i is the recurrent connections from jt⁢h neuron to it⁢h neuron, g⁢(x) is the activation function that provides the non-linear property of the neuron:(27)g⁢(c)=m⁢a⁢x⁢(0,ρ+c)where ρ denotes the offset of the function.
+A ring attractor neural network is used to integrate the cues from the VH and PI guidance systems. As reported in Hoinville and Wehner, 2018 summation of directional cues represented in vector format leads to optimal angular cue integration which is the same case as real insects. Mangan and Yue, 2018 gave a biology plausible way to do this kind of computation based on a simple ring attractor neural network. There are two populations of neurons in this network, the first is the integration neurons (IN) which is the output population of the network. Constrained by the number of columns in each hemisphere of the insects CX, we set the number of the IN to be 8, and its firing rate is updated by:
 
-In Equation 26, X1 and X2 generally denote the cues that should be integrated. In this study, X1 and X2 represent the desired heading of path integration (CP⁢I) and visual homing (CV⁢H). The desired heading of PI is also tuned by the tuning neuron (TUN) in SMP which is stimulated by the MBON of MB (see Figure 3A) and its activation function is defined by a rectified linear function, that is:(28)CT⁢U⁢N=min⁡(kT⁢U⁢N⁢CE⁢N,1)where kT⁢U⁢N is the scaling factor.
+$$
+\tau⁢\frac{d⁢C_{I⁢N}}{d⁢t}=-C_{I⁢N}+g⁢(\sumj=1nW_{E⁢2⁢E}^{j⁢i}⁢C_{I⁢N}^{j}+X_{1}^{i}+X_{2}^{i}+W_{I⁢2⁢E}⁢C_{U⁢I}) i=0,1,…⁢7.
+$$
 
-Thus, the X1 and X2 for this ring attractor network can be calculated by:(29){X1i=CTUNCPIiX2i=CVHii=0,1,...7
+where $W_{E⁢2⁢E}^{j⁢i}$ is the recurrent connections from $j^{t⁢h}$ neuron to $i^{t⁢h}$ neuron, $g⁢(x)$ is the activation function that provides the non-linear property of the neuron:
 
-The second population of the ring attractor is called the uniform inhibition (UI) neurons modelled by:(30)τ⁢d⁢CU⁢Id⁢t=-u+g⁢(WI⁢2⁢I⁢CU⁢I+WE⁢2⁢I⁢∑k=1nCI⁢Nk) i=0,1,…⁢7.
+$$
+g⁢(c)=m⁢a⁢x⁢(0,ρ+c)
+$$
 
-After arriving at a stable state, the firing rate of the integration neurons in this ring attractor network provides the population encoding of the optimal integrated output CO⁢I:(31)CO⁢I=CC⁢N
+where $ρ$ denotes the offset of the function.
 
-## Context-dependent switch
+In Equation 26, $X_{1}$ and $X_{2}$ generally denote the cues that should be integrated. In this study, $X_{1}$ and $X_{2}$ represent the desired heading of path integration ($C_{P⁢I}$) and visual homing ($C_{V⁢H}$). The desired heading of PI is also tuned by the tuning neuron (TUN) in SMP which is stimulated by the MBON of MB (see Figure 3A) and its activation function is defined by a rectified linear function, that is:
 
-The model generates two current/desired headings pairs: the current heading of global compass decoded by CI-T⁢B⁢1 with the desired heading optimally integrated by the integration neurons of the ring attractor network CO⁢I and the current heading of local compass decoded by II-TB1 neurons CI⁢I-T⁢B⁢2 with the desired heading decoded by the output of the RF network CR⁢F. These two pairs of signal both are connected to the steering circuit (see Figure 5A and Steering circuit) but are turned on/off by two switching neurons (SN1 and SN2) in the SMP (Figure 5A). SN2 neuron receives the activation from MBON neuron and is modelled as:(32)SN2={0ifCMBON<ThrSN21otherwise
+$$
+C_{T⁢U⁢N}=min⁡(k_{T⁢U⁢N}⁢C_{E⁢N},1)
+$$
 
-While SN1 will always fire unless SN2 fires:(33)SN1={0ifCSN2=11otherwise
+where $k_{T⁢U⁢N}$ is the scaling factor.
+
+Thus, the $X_{1}$ and $X_{2}$ for this ring attractor network can be calculated by:
+
+$$
+{X_{1}^{i}=C_{TUN}C_{PI}^{i}X_{2}^{i}=C_{VH}^{i}i=0,1,...7
+$$
+
+The second population of the ring attractor is called the uniform inhibition (UI) neurons modelled by:
+
+$$
+\tau⁢\frac{d⁢C_{U⁢I}}{d⁢t}=-u+g⁢(W_{I⁢2⁢I}⁢C_{U⁢I}+W_{E⁢2⁢I}⁢\sumk=1nC_{I⁢N}^{k}) i=0,1,…⁢7.
+$$
+
+After arriving at a stable state, the firing rate of the integration neurons in this ring attractor network provides the population encoding of the optimal integrated output $C_{O⁢I}$:
+
+$$
+C_{O⁢I}=C_{C⁢N}
+$$
+
+### Context-dependent switch
+
+The model generates two current/desired headings pairs: the current heading of global compass decoded by $C_{I-T⁢B⁢1}$ with the desired heading optimally integrated by the integration neurons of the ring attractor network $C_{O⁢I}$ and the current heading of local compass decoded by II-TB1 neurons $C_{I⁢I-T⁢B⁢2}$ with the desired heading decoded by the output of the RF network $C_{R⁢F}$. These two pairs of signal both are connected to the steering circuit (see Figure 5A and Steering circuit) but are turned on/off by two switching neurons (SN1 and SN2) in the SMP (Figure 5A). SN2 neuron receives the activation from MBON neuron and is modelled as:
+
+$$
+SN2={0ifC_{MBON}<Thr_{SN2}1otherwise
+$$
+
+While SN1 will always fire unless SN2 fires:
+
+$$
+SN1={0ifC_{SN2}=11otherwise
+$$
 
 Therefore, the context-depend switch is achieved according to the current visual novelty represented by the activation of MBON.
 
-## Steering circuit
+#### Steering circuit
 
-The steering neurons, that is CPU1 neurons (CC⁢P⁢U⁢1i,i=0,1,2⁢…⁢15) receive excitatory input from the desired heading (CD⁢Hi,i=0,1,2⁢…⁢15) and inhibitory input from the current heading (CC⁢H,i=0,1,2⁢…⁢15) to generate the turning signal:(34)CS⁢Ti=CD⁢Hi-CC⁢Hi i=0,1,…⁢15
+The steering neurons, that is CPU1 neurons ($C_{C⁢P⁢U⁢1}^{i},i=0,1,2⁢…⁢15$) receive excitatory input from the desired heading ($C_{D⁢H}^{i},i=0,1,2⁢…⁢15$) and inhibitory input from the current heading ($C_{C⁢H},i=0,1,2⁢…⁢15$) to generate the turning signal:
 
-The turning angle is determined by the difference of the activation summations between left (i=0,1,2⁢…⁢7) and right (i=8,9,10⁢…⁢15) set of CPU1 neurons:(35)θM=km⁢o⁢t⁢o⁢r⁢(∑i=07CC⁢P⁢U⁢1-∑i=815CC⁢P⁢U⁢1)which corresponds to the difference of the length of the subtracted left and right vectors in Figure 2A. In addition, as it is illustrated in Figure 2A, another key part of steering circuit is the left/right shifted desired heading, in this paper, this is achieved by the offset connectivity pattern (WD⁢H⁢2⁢C⁢P⁢U⁢1⁢L and WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R) from the desired heading to the steering neurons (Heinze and Homberg, 2008; Stone et al., 2017):(36){CD⁢H0-7=CS⁢N⁢1⁢CR⁢F⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢L+CS⁢N⁢2⁢CO⁢I⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢LCD⁢H8-15=CS⁢N⁢1⁢CR⁢F⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R+CS⁢N⁢2⁢CO⁢I⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R
+$$
+C_{S⁢T}^{i}=C_{D⁢H}^{i}-C_{C⁢H}^{i} i=0,1,…⁢15
+$$
 
-Where the WD⁢H⁢2⁢C⁢P⁢U⁢1⁢L and WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R are:(37)WD⁢H⁢2⁢C⁢P⁢U⁢1⁢L=[0 1 0 0 0 0 0 00 0 1 0 0 0 0 00 0 0 1 0 0 0 00 0 0 0 1 0 0 00 0 0 0 0 1 0 00 0 0 0 0 0 1 00 0 0 0 0 0 0 11 0 0 0 0 0 0 0] WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R=[0 0 0 0 0 0 0 10 1 0 0 0 0 0 00 0 1 0 0 0 0 00 0 0 1 0 0 0 00 0 0 0 1 0 0 00 0 0 0 0 1 0 00 0 0 0 0 0 1 00 0 0 0 0 0 0 1]which defines the connection pattern realising the left/right shifting of the desired headings used throughout our model (Figure 2A, Figure 3A, Figure 4A, Figure 5A and Figure 6A.
+The turning angle is determined by the difference of the activation summations between left ($i=0,1,2⁢…⁢7$) and right ($i=8,9,10⁢…⁢15$) set of CPU1 neurons:
+
+$$
+\theta_{M}=k_{m⁢o⁢t⁢o⁢r}⁢(\sumi=07C_{C⁢P⁢U⁢1}-\sumi=815C_{C⁢P⁢U⁢1})
+$$
+
+which corresponds to the difference of the length of the subtracted left and right vectors in Figure 2A. In addition, as it is illustrated in Figure 2A, another key part of steering circuit is the left/right shifted desired heading, in this paper, this is achieved by the offset connectivity pattern ($W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}$ and $W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}$) from the desired heading to the steering neurons (Heinze and Homberg, 2008; Stone et al., 2017):
+
+$$
+{C_{D⁢H}^{0-7}=C_{S⁢N⁢1}⁢C_{R⁢F}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}+C_{S⁢N⁢2}⁢C_{O⁢I}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}C_{D⁢H}^{8-15}=C_{S⁢N⁢1}⁢C_{R⁢F}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}+C_{S⁢N⁢2}⁢C_{O⁢I}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}
+$$
+
+Where the $W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}$ and $W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}$ are:
+
+$$
+W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}=[0 1 0 0 0 0 0 00 0 1 0 0 0 0 00 0 0 1 0 0 0 00 0 0 0 1 0 0 00 0 0 0 0 1 0 00 0 0 0 0 0 1 00 0 0 0 0 0 0 11 0 0 0 0 0 0 0] W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}=[0 0 0 0 0 0 0 10 1 0 0 0 0 0 00 0 1 0 0 0 0 00 0 0 1 0 0 0 00 0 0 0 1 0 0 00 0 0 0 0 1 0 00 0 0 0 0 0 1 00 0 0 0 0 0 0 1]
+$$
+
+which defines the connection pattern realising the left/right shifting of the desired headings used throughout our model (Figure 2A, Figure 3A, Figure 4A, Figure 5A and Figure 6A.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/54026/elife-54026-fig7-v2.jpg)
 
-**Figure 7.:** (A): A cartoon depiction of a panoramic skyline, it’s decomposition into trigonometric functions, and reconstruction through the summation of low frequency coefficients reflecting standard image compression techniques. (B): Following a 90° rotation there is no change in the amplitudes of the frequency coefficients but the phases of the frequency coefficients track the change in orientation providing a rotational invariant signal useful for visual homing and rotationally-varying signal useful for route following, respectively. (C): The simulated 3D world used for all experiments. The pink area (size: ) is used for model training and testing zone for models allowing obstacle-free movement. (20⁢m×20⁢mD): The frequency encoding (Zernike Moment’s amplitudes and phase) of the views sampled from the same location but with different headings (P1 and P2 in (C), with  heading difference) in the simulated world. The first 81 amplitudes are identical while the 90∘phases have the difference of about .90∘Figure 7—source data 1.
+**Figure 7.:** (A): A cartoon depiction of a panoramic skyline, it’s decomposition into trigonometric functions, and reconstruction through the summation of low frequency coefficients reflecting standard image compression techniques. (B): Following a 90° rotation there is no change in the amplitudes of the frequency coefficients but the phases of the frequency coefficients track the change in orientation providing a rotational invariant signal useful for visual homing and rotationally-varying signal useful for route following, respectively. (C): The simulated 3D world used for all experiments. The pink area (size: $20⁢m\times20⁢m$) is used for model training and testing zone for models allowing obstacle-free movement. (D): The frequency encoding (Zernike Moment’s amplitudes and phase) of the views sampled from the same location but with different headings (P1 and P2 in (C), with $90^{∘}$ heading difference) in the simulated world. The first 81 amplitudes are identical while the phases have the difference of about $90^{∘}$.
 
-The current heading input to the steering circuit is also switched between global and local compass input via the SN1 and SN2 neuron:(38){CC⁢H0-7=CS⁢N⁢1⁢CI⁢I-T⁢B⁢1+CS⁢N⁢2⁢CI-T⁢B⁢1CC⁢H8-15=CS⁢N⁢1⁢CI⁢I-T⁢B⁢1+CS⁢N⁢2⁢CI-T⁢B⁢1
+The current heading input to the steering circuit is also switched between global and local compass input via the SN1 and SN2 neuron:
 
-## Detailed neural connectivity of unified model
+$$
+{C_{C⁢H}^{0-7}=C_{S⁢N⁢1}⁢C_{I⁢I-T⁢B⁢1}+C_{S⁢N⁢2}⁢C_{I-T⁢B⁢1}C_{C⁢H}^{8-15}=C_{S⁢N⁢1}⁢C_{I⁢I-T⁢B⁢1}+C_{S⁢N⁢2}⁢C_{I-T⁢B⁢1}
+$$
+
+### Detailed neural connectivity of unified model
 
 Figure 6A shows a complete picture of the proposed model. Specifically, it highlights the final coordination system showing that CX computing the optimal navigation output with the modulation from the MB and SMP. In addition, offset connectivity pattern from the desired heading to the steering circuit that underpin the left/right shifting is clearly shown. Figure 6B and C shows the network generating the desired heading of RF and VH respectively.
 
 In addition, Table 2 provides details of all modelled neural circuits with their function and naming conventions with links to biological evidence for these neural circuits where it exists and the animal that they were observed in.
 
-## Simulations
+### Simulations
 
-Equation 35 gives the turning angle of the agent, thus the instantaneous "velocity" (𝒗) at every step can be computed by:(39)𝒗t=SL⁢[cos⁡θMt,sin⁡θMt]where SL is the step length with the unit of centimetres. Note that we haven’t defined the time accuracy for every step of the simulations, thus the unit of the velocity in this implementation is c⁢m/s⁢t⁢e⁢p rather than c⁢m/s. Then the position of agent 𝑷t+1 in the Cartesian coordinates for the is updated by:(40)𝑷t+1=𝑷t+𝒗t
+Equation 35 gives the turning angle of the agent, thus the instantaneous "velocity" ($𝒗$) at every step can be computed by:
+
+$$
+𝒗^{t}=S_{L}⁢[cos⁡\theta_{M}^{t},sin⁡\theta_{M}^{t}]
+$$
+
+where $S_{L}$ is the step length with the unit of centimetres. Note that we haven’t defined the time accuracy for every step of the simulations, thus the unit of the velocity in this implementation is $c⁢m/s⁢t⁢e⁢p$ rather than $c⁢m/s$. Then the position of agent $𝑷^{t+1}$ in the Cartesian coordinates for the is updated by:
+
+$$
+𝑷^{t+1}=𝑷^{t}+𝒗^{t}
+$$
 
 The main parameter settings for all the simulations in this paper can be found in Table 1.
 
-## Reproduce visual navigation behaviour
+#### Reproduce visual navigation behaviour
 
-Inspired by the benchmark study of real ants in Wystrach et al., 2012, we test our model of VH and RF by reproducing the homing behaviours in that study. This is achieved by constructing a habitual route with a similar shape (arc or banana shape) in our simulated 3D world. The position 𝑷R-A⁢r⁢c and heading θR-A⁢r⁢c along that route is manually generated by:(41){θR−Arci=π2−iπ2NMPR−Arci=[−Rsin⁡θR−Arci,−7+Rcos⁡θR−Arci]i=0,1⋅⋅NMwhere the R=7⁢m is the radius of the arc and NM=20 in this case is the number of the sampling points where view images are reconstructed along the route. The reconstructed views then be wrapped and decomposed by ZM into amplitudes and phases are used to train the ANN network of RF and MB network of VH.
+Inspired by the benchmark study of real ants in Wystrach et al., 2012, we test our model of VH and RF by reproducing the homing behaviours in that study. This is achieved by constructing a habitual route with a similar shape (arc or banana shape) in our simulated 3D world. The position $𝑷_{R-A⁢r⁢c}$ and heading $\theta_{R-A⁢r⁢c}$ along that route is manually generated by:
 
-## Visual homing
+$$
+{\theta_{R−Arc}^{i}=\frac{\pi}{2}−i\frac{\pi}{2N_{M}}P_{R−Arc}^{i}=[−Rsin⁡\theta_{R−Arc}^{i},−7+Rcos⁡\theta_{R−Arc}^{i}]i=0,1⋅⋅N_{M}
+$$
 
-After training, 12 agents with different initial headings that were evenly distributed in [0,360) were released at the sideways release point (𝑷=[0,-7]) for the simulation of VH (Figure 2D). The headings of the agents at radius 2.5 m from the release point (manually selected to ensure that the all the agents have completed any large initial loop) are taken as the initial headings.
+where the $R=7⁢m$ is the radius of the arc and $N_{M}=20$ in this case is the number of the sampling points where view images are reconstructed along the route. The reconstructed views then be wrapped and decomposed by ZM into amplitudes and phases are used to train the ANN network of RF and MB network of VH.
 
-## Route following
+### Visual homing
 
-After training, 2 agents with 0° and 180° are released at the different release points (P=[−9,−7],[−8,−7],[−7,−7],[−6,−7],[−5,−7]) for the simulation of RF (see Figure 4B) to generate the homing path. And then, we release 12 agents on the route (𝑷=[-7,-7]) with different initial headings that is evenly distributed in [0,360) to compare the results with the real ant data in Wystrach et al., 2012. The heading of each agent at the position that is 0.6m from the release point is taken as the initial heading.
+After training, 12 agents with different initial headings that were evenly distributed in $[0,360)$ were released at the sideways release point ($𝑷=[0,-7]$) for the simulation of VH (Figure 2D). The headings of the agents at radius 2.5 m from the release point (manually selected to ensure that the all the agents have completed any large initial loop) are taken as the initial headings.
 
-## Reproduce the optimal cue integration behaviour
+### Route following
 
-We evaluated the cue integration model by reproducing the results of Wystrach et al., 2012 and Legge et al., 2014. The ants’ outbound routes in Wystrach et al., 2015 is bounded by the corridor, so here we simulate the velocity of the agent by:(42)𝒗o⁢u⁢tt=[r⁢a⁢n⁢d⁢(0,2⁢V0)-V0,V0],t=0,1⁢…⁢To⁢u⁢twhere the function r⁢a⁢n⁢d⁢(0,x) generates a random value from the uniform distribution of [0,x], thus the speed of x-axis will be in [-V0,V0] and will cancel each other during the forging. The speed of y-axis is constant so it will accumulated and be recorded by the PI model. And V0=1⁢c⁢m/s⁢t⁢e⁢p is the basic speed of the agent and To⁢u⁢t is the total time for outbound phase determining the length of the outbound route. As for the simulated homing route, we duplicate the outbound route when To⁢u⁢t=300 but with a inverted heading direction. And then the visual navigation network was trained with images sampled along a simulated route (grey curve in Figure 3B).
+After training, 2 agents with 0° and 180° are released at the different release points ($P=[−9,−7],[−8,−7],[−7,−7],[−6,−7],[−5,−7]$) for the simulation of RF (see Figure 4B) to generate the homing path. And then, we release 12 agents on the route ($𝑷=[-7,-7]$) with different initial headings that is evenly distributed in $[0,360)$ to compare the results with the real ant data in Wystrach et al., 2012. The heading of each agent at the position that is 0.6m from the release point is taken as the initial heading.
 
-## Tuning PI uncertainty
+#### Reproduce the optimal cue integration behaviour
 
-The agent in this simulation was allowed to forage to different distances of 0.1m, 1m, 3m or 7m from the nest to accrue different PI states and directional certainties before being translated to a never-before-experienced test site 1.5m from the nest. (RP1 in Figure 3B). For each trial, we release 20 agents with different initial headings that is evenly distributed in [0,360). The headings of every agent at the position that is 0.6m from the start point is taken as the initial headings, and the mean direction and the 95% confidential intervals are calculated. As in the biological experiment, the angle between the directions recommended by the PI and visual navigation systems differed by approximately 130°.
+We evaluated the cue integration model by reproducing the results of Wystrach et al., 2012 and Legge et al., 2014. The ants’ outbound routes in Wystrach et al., 2015 is bounded by the corridor, so here we simulate the velocity of the agent by:
+
+$$
+𝒗_{o⁢u⁢t}^{t}=[r⁢a⁢n⁢d⁢(0,2⁢V_{0})-V_{0},V_{0}],t=0,1⁢…⁢T_{o⁢u⁢t}
+$$
+
+where the function $r⁢a⁢n⁢d⁢(0,x)$ generates a random value from the uniform distribution of $[0,x]$, thus the speed of x-axis will be in $[-V_{0},V_{0}]$ and will cancel each other during the forging. The speed of y-axis is constant so it will accumulated and be recorded by the PI model. And $V_{0}=1⁢c⁢m/s⁢t⁢e⁢p$ is the basic speed of the agent and $T_{o⁢u⁢t}$ is the total time for outbound phase determining the length of the outbound route. As for the simulated homing route, we duplicate the outbound route when $T_{o⁢u⁢t}=300$ but with a inverted heading direction. And then the visual navigation network was trained with images sampled along a simulated route (grey curve in Figure 3B).
+
+### Tuning PI uncertainty
+
+The agent in this simulation was allowed to forage to different distances of 0.1m, 1m, 3m or 7m from the nest to accrue different PI states and directional certainties before being translated to a never-before-experienced test site 1.5m from the nest. (RP1 in Figure 3B). For each trial, we release 20 agents with different initial headings that is evenly distributed in $[0,360)$. The headings of every agent at the position that is 0.6m from the start point is taken as the initial headings, and the mean direction and the 95% confidential intervals are calculated. As in the biological experiment, the angle between the directions recommended by the PI and visual navigation systems differed by approximately 130°.
 
 As the length of the home vector increase (0.1m -> 7m) the activation of PI memory becomes higher (Figure 3B), and increasingly determines the output of the ring attractor integration. Since the length of the home vector is also encoded in the activation of the PI memory neurons, the ring attractor can extract this information as the strength of the cue. As the visual familiarity is nearly the same in the vicinity of the release point, the strength of visual homing circuit remains constant and has more of an influence as the PI length drops.
 
-## Tuning visual uncertainty
+### Tuning visual uncertainty
 
-The agent in this simulation was allowed to forage up to 1m from the nest to accrue its PI state and directional certainty before being translated to three different release points (RP1, RP2 and RP3 in Figure 3B). As the distance from nest increases (RP1->RP2->RP3) so does the visual uncertainty. For each trial, we release 12 agents with different initial headings that is evenly distributed in [0,360). The headings of each agent at the position that is 0.3m from the start point is taken as the initial headings, and the mean direction and the 95% confidential intervals are calculated.
+The agent in this simulation was allowed to forage up to 1m from the nest to accrue its PI state and directional certainty before being translated to three different release points (RP1, RP2 and RP3 in Figure 3B). As the distance from nest increases (RP1->RP2->RP3) so does the visual uncertainty. For each trial, we release 12 agents with different initial headings that is evenly distributed in $[0,360)$. The headings of each agent at the position that is 0.3m from the start point is taken as the initial headings, and the mean direction and the 95% confidential intervals are calculated.
 
-## Whole model
+### Whole model
 
-The simulated habitual route remains the same as in the simulation of visual navigation (Reproduce visual navigation behaviour) as is the learning procedure. The zero- and full- vector agents are both released at [-2,-7] with the heading 0° and 90°, respectively. The full-vector agent’s PI memory is generated by letting the agent forage along the route from nest to feeder.
+The simulated habitual route remains the same as in the simulation of visual navigation (Reproduce visual navigation behaviour) as is the learning procedure. The zero- and full- vector agents are both released at $[-2,-7]$ with the heading 0° and 90°, respectively. The full-vector agent’s PI memory is generated by letting the agent forage along the route from nest to feeder.

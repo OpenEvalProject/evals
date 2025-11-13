@@ -53,17 +53,37 @@ Here, we report that GluN3A-NMDARs selectively and negatively regulate synaptic 
 
 ## Results
 
-## Selective inhibition of activity-dependent gene expression by GluN3A at the post-transcriptional level
+### Selective inhibition of activity-dependent gene expression by GluN3A at the post-transcriptional level
 
 GluN3A expression is pervasive during postnatal brain development, and regulated removal allows for the activity-dependent stabilization or elimination of excess synapses (Pérez-Otaño et al., 2016). To assess whether GluN3A-NMDARs modulate activity-dependent gene expression, we expressed GluN3A in cultured cortical neurons over the stage when endogenous downregulation normally occurs (days in vitro [DIV] 9–14, ~ postnatal days P8–P16 in vivo, Figure 1A; Figure 1—figure supplement 1; Kehoe et al., 2014). We used lentiviral vectors where expression is targeted to neurons by the synapsin 1 promoter and induced synaptic activity with bicuculline, which inhibits ɣ-aminobutyric acid (GABA) transmission and triggers bursts of action potential firing (Hardingham et al., 2002).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig1-v2.jpg)
+
+**Figure 1.:** (A) Timeline of endogenous GluN3A expression and downregulation and of lentiviral infections. Rat cortical neurons in primary culture were infected on days in vitro (DIV) 9 with lentiviruses where Green fluorescent protein (GFP) or GluN3A and GFP (GFP-GluN3A) expression is driven by the human synapsin 1 promoter (synP). (B, C) DIV14 neurons were treated with bicuculline (50 μM, 1 hr) and matching samples collected for immunoblot and mRNA analyses (n = 4 from two independent cultures; ***p < 0.001, two-tailed unpaired t-test). (B) Left, representative western blots show that GluN3A inhibits the induction of the IEGs Arc and Fos but not Zif268. Right, signal intensities of indicated proteins as percentage of stimulated GFP-infected neurons. (C) quantitative Reverse Transcription-Polymerase Chain Reaction (qRT-PCR) analysis of IEG mRNA induction. Plotted values are fold-induction relative to non-stimulated neurons. (D) Volcano plots presenting the RNAseq-based differential expression analysis in DIV14 neurons treated with bicuculline or Brain-derived neurotrophic factor (BDNF) for 1 hr (n = 2–4 from two independent cultures). (E) DIV14 neurons were treated with MG132 (30 μM). A representative western blot probed with the indicated antibodies is shown. In immunoblot analyses, tubulin or actin was used as a loading control and GluN1 as a measure of potential effects of GluN3A on overall NMDAR numbers. Histograms in this and subsequent figures are mean ± standard error of the mean (SEM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunoblot (IB) analysis of the time-course of expression of NMDAR subunits and a repertoire of synaptic proteins in cultured cortical neurons. (B) Immunoblot analysis of extracellular signal-regulated kinase (ERK1/2) and cAMP Response Element Binding Protein (CREB) phosphorylation in whole-cell lysates of days in vitro (DIV) 14 cortical neurons treated with bicuculline for 1 hr. Left, representative western blots probed with the indicated antibodies. Right, fold-induction by bicuculline of phosphorylated proteins normalized to their total levels (n = 6–8 from three to four independent cultures). (C) Total lysates from cortical neurons pretreated with D-2-amino-5-phosphonovaleric acid (APV) (50 μM, 30 min) before stimulation with bicuculline (50 μM, 1 hr) were immunoblotted with the indicated antibodies. Quantification showed a general blockade of activity dependent by APV (n = 4–6 samples from two to three independent cultures, **p < 0.01, ***p < 0.001 analysis of variance (ANOVA) followed by Tukey’s test). (D) APV blocked the increase in Arc and Fos mRNA induced by bicuculline (n = 6–10 samples from three independent cultures, ***p < 0.001 one-way ANOVA followed by Tukey’s test). Data are expressed as fold-induction of non-stimulated neurons. (E, F) Analogous experiments to the ones in Figure 1B and C were conducted upon stimulation with BDNF (100 ng/ml, 1 hr).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Principal component analysis plot representing all RNAseq samples. (B) Volcano plot from RNAseq analysisof gene expression in untreated days in vitro (DIV) 14 neurons infected with GFP or GFP-GluN3A. (C) Integrative Genome Viewer tracks for RNAseq signal at representative genes in the different conditions. The immediate-early genes (IEGs) Arc, Fos, and Egr1 are similarly induced by bicuculline (Bic) and BDNF treatments in GFP and GFP-GluN3A-infected cultures. As expected, levels of Grin3a are increased in GFP-GluN3A- compared to GFP-infected cultures.
 
 As expected, bicuculline induced a robust expression of IEGs implicated in the consolidation of synaptic modifications and memories, including Arc, Fos, and Zif268/Egr1 (Flavell and Greenberg, 2008; Figure 1B). Enhancing GluN3A expression largely reduced the induction of Arc and Fos proteins while Zif268 induction was unaffected, indicating that GluN3A selectively inhibits specific activity-dependent signaling pathways (Figure 1B). Analysis at the mRNA level demonstrated that modulation occurs downstream of gene transcription: Arc, Fos, and Zif268 mRNA levels were strongly induced by bicuculline in both control and GluN3A-infected neurons, and no differences were observed in the time-courses or magnitude of induction (Figure 1C). Unchanged transcription was in-line with intact activation of the phosphorylation of extracellular signal-regulated kinase (ERK1/2) and CREB (Figure 1—figure supplement 1B), the two major pathways for activity-dependent transcription (Flavell and Greenberg, 2008). By contrast, the general NMDAR antagonist D-2-amino-5-phosphonovaleric acid (APV) inhibited all signaling pathways analyzed and the induction of IEGs at both mRNA and protein levels (Figure 1—figure supplement 1C, D).
 
 An analogous dissociation between protein and transcript levels of a subset of IEGs was observed when GluN3A-infected neurons were stimulated with the neurotrophin BDNF (Figure 1—figure supplement 1E, F), a potent inducer of gene expression at both transcriptional and translational levels (Rao et al., 2006). Whole transcriptome RNAseq analyses confirmed that transcriptional responses to bicuculline or BDNF were unaffected by GluN3A expression (Figure 1D; Figure 1—figure supplement 2). Together these results indicated that GluN3A-NMDARs repress the translation of specific activity-regulated mRNAs without affecting global transcriptional programs of gene expression. Inhibited induction of IEGs by GluN3A was not rescued by pretreatment with the proteasome inhibitor MG-132 (Figure 1E), ruling out alternative mechanisms such as enhanced proteasome-dependent degradation (Rao et al., 2006).
 
-## GluN3A inhibits mTORC1-dependent translation of IEGs
+### GluN3A inhibits mTORC1-dependent translation of IEGs
 
 We thus turned to protein synthesis pathways to search for mechanisms underlying the selective inhibition of gene expression by GluN3A. We focused on mTORC1 because it has been shown to couple synaptic signals including BDNF and NMDAR activation to translation of specific mRNAs in dendrites and synapses (Takei et al., 2004; Tang et al., 2002). mTORC1 signaling was strongly activated by bicuculline in DIV14 cortical neurons, as shown by phosphorylation of mTOR on Ser2448 (a reliable readout of mTORC1 kinase activity; see Chiang and Abraham, 2005) and of its downstream effectors, the p70-kDa ribosomal protein S6 kinase (S6K, Thr389) and the ribosomal protein S6 (Ser240–4, Figure 2A and B). The effects were blocked by APV and the NMDAR open-channel blocker MK-801, confirming NMDAR dependence in our model (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the mTORC1 signaling pathway. (B) Left, representative western blots of primary rat cortical neurons infected with GFP and GFP-GluN3A (days in vitro [DIV] 9) and treated with bicuculline at DIV14. Right, fold-induction of phosphorylated mTOR, S6 kinase (S6K), and S6 normalized to total protein (n = 6–8 from three to four independent cultures; *p < 0.05, ***p < 0.001, two-tailed paired t-test). (C) mTOR is required for activity-dependent induction of Arc and Fos but not Zif268. Left, representative western blots of DIV14 neurons stimulated with bicuculline after preincubation with rapamycin (100 nM, 1 hr before and during bicuculline treatment). Right, fold-induction of immediate-early genes (IEGs) in response to bicuculline (n = 4 from two independent cultures; *p < 0.05, ***p < 0.001, two-tailed paired t-test). (D) Reactivation of mTOR in GFP-GluN3A-infected neurons by adeno-associated virus (AAV) driven constitutively active Rheb (caRheb) rescues Arc induction. Left, representative western blots of neurons infected with lentiviral GFP-GluN3A and AAV-caRheb and treated with bicuculline. Right, fold-induction by bicuculline of pS6 and Arc in the indicated conditions (n = 4 from two independent cultures; ***p < 0.001, one-way analysis of variance [ANOVA] followed by Tukey’s test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunoblot analysis of the phosphorylation status of the mTOR downstream effector S6 in lysates from days in vitro (DIV) 14 cortical neurons stimulated with bicuculline in the absence (Ctrl) or presence of D-2-amino-5-phosphonovaleric acid (APV) (50 μM, 30 min) or MK801 (10 μM, 1 hr). (B) General inhibition of protein synthesis blocks activity induction of Arc, Fos, and Zif268. Whole lysates from DIV14 cortical neurons either untreated or treated with bicuculline (50 μM, 1 hr) and anisomycin (0.8 μM, 1 hr) were immunoblotted with the indicated antibodies. Left, representative immunoblots and right, quantifications, show a general blockade of IEGs tested by anisomycin. Data are expressed as fold-induction of nontreated neurons (n = 3–4 independent cultures, ***p < 0.001 analysis of variance [ANOVA] followed by Tukey’s test).
 
 The phosphorylation of mTOR, S6K, and S6 following bicuculline treatment was significantly reduced in GluN3A-infected neurons, indicating that GluN3A interferes with synaptic mTORC1 activation (Figure 2B). Two experiments linked mTORC1 inhibition to the altered production of IEGs. First, low concentrations of rapamycin (100 nM) that inhibit mTORC1 but not mTORC2 (Zhu et al., 2018), blocked Arc and Fos translation in response to bicuculline without affecting Zif268, demonstrating selective mTORC1 dependence (Figure 2C). By contrast, the general protein synthesis inhibitor anisomycin fully suppressed Arc, Fos, and Zif268 induction (Figure 2—figure supplement 1B). Second, restoring mTORC1 signaling in GluN3A-infected neurons by expressing a constitutively active form of Rheb, the main upstream activator of mTORC1, was sufficient to normalize IEG induction (Figure 2D).
 
@@ -71,41 +91,81 @@ Conversely, lentiviral knockdown of GluN3A in cortical neurons with a validated 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig3-v2.jpg)
 
-**Figure 3.:** (A) Primary rat cortical neurons were infected on days in vitro (DIV) 3 with lentiviruses expressing GFP alone or along with a small hairpin RNA (shRNA) against GluN3A (GFP-sh3A) and collected at DIV7–9, when GluN3A expression is maximal. (B) Representative blots and quantification of phosphorylated S6 kinase (S6K) and S6 normalized to total protein (n = 6–8 from three to four independent cultures; *p < 0.05, **p < 0.01 two-tailed paired t-test). Arrow marks specific GluN3A band. (C, D) Representative western blots and quantification of immediate-early gene (IEG) induction by bicuculline or BDNF (n = 6–12 from three independent cultures; *p < 0.05, **p < 0.01, ***p < 0.001, two-tailed paired t-test). Data plotted as percentage of stimulated control GFP-infected neurons. (E) Immunoblots and quantification of S6K and S6 phosphorylation in lysates from wild-type (WT) and Grin3a−/− hippocampi (n = 4–8 mice; *p < 0.05, **p < 0.01, two-tailed unpaired t-test).Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Grin3a−/− hippocampi.
+**Figure 3.:** (A) Primary rat cortical neurons were infected on days in vitro (DIV) 3 with lentiviruses expressing GFP alone or along with a small hairpin RNA (shRNA) against GluN3A (GFP-sh3A) and collected at DIV7–9, when GluN3A expression is maximal. (B) Representative blots and quantification of phosphorylated S6 kinase (S6K) and S6 normalized to total protein (n = 6–8 from three to four independent cultures; *p < 0.05, **p < 0.01 two-tailed paired t-test). Arrow marks specific GluN3A band. (C, D) Representative western blots and quantification of immediate-early gene (IEG) induction by bicuculline or BDNF (n = 6–12 from three independent cultures; *p < 0.05, **p < 0.01, ***p < 0.001, two-tailed paired t-test). Data plotted as percentage of stimulated control GFP-infected neurons. (E) Immunoblots and quantification of S6K and S6 phosphorylation in lysates from wild-type (WT) and Grin3a−/− hippocampi (n = 4–8 mice; *p < 0.05, **p < 0.01, two-tailed unpaired t-test).
 
-## mTORC1 inhibition requires GluN3A C-terminal domain interactions
+### mTORC1 inhibition requires GluN3A C-terminal domain interactions
 
 GluN3A subunits confer unique biophysical properties to NMDARs, including reduced channel conductance and calcium permeability, and enable distinct interactions with signaling/scaffolding proteins via their intracellular C-terminal tail (Pérez-Otaño et al., 2016). To dissect their contribution to inhibited mTORC1 signaling, we derived primary cortical neurons from Grin3a−/− mice and reexpressed full-length GluN3A, a mutant where the distal 33 amino acids of the GluN3A C-terminus have been deleted and lacks synapse destabilizing activity (GluN3A1082∆) (Fiuza et al., 2013; Kehoe et al., 2014), or GFP as a control (Figure 4A). While full-length GluN3A rescued the enhanced mTOR activation and hyperinduction of Arc and Fos proteins by bicuculline or BDNF in Grin3a−/− cultures, the GluN3A1082∆ mutant failed to do so (Figure 4B–E). Neither GluN3A nor GluN3A1082∆ modified the activation of other signaling pathways such as ERK1/2 phosphorylation or the induction of Zif268 in Grin3a−/− neurons (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cortical neurons from Grin3a−/− mice were infected on days in vitro (DIV) 6 with lentiviruses expressing GFP, GFP-GluN3A, or GFP-GluN3A1082∆, and stimulated with bicuculline or BDNF at DIV12. (B, D) Representative western blots of lysates from bicuculline or BDNF-treated neurons probed for the indicated antibodies. (C, E) Induction of phosphorylated S6 (normalized to total levels), Arc and Fos by bicuculline or BDNF (n = 3–7 from two to four independent cultures, *p < 0.05, **p < 0.01, ***p < 0.001 analysis of variance [ANOVA] followed by Tukey’s test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Left, representative steady-state glutamate-evoked ramp currents obtained with 2 mM (black) and 10 mM (red) extracellular Ca2+ for HEK293 cells expressing GluN1A/GluN2A alone, or with either GFP-GluN3A or GFP-GluN3A1082Δ. Insets show currents on expanded scale to highlight the Erev. Right, summary graph of the ΔErev obtained from multiple experiments is shown on right (n = 10–11, **p < 0.01, one-way analysis of variance [ANOVA] followed by Bonferroni post hoc test). (B) Summary graph depicting current density from HEK293 cells expressing GluN1A/GluN2A alone, or with either GFP-GluN3A or GFP-GluN3A1082Δ (*p < 0.05 compared to GluN1A/GluN2A, one-way analysis of variance (ANOVA) followed by Bonferroni post hoc test). (C) Top, responses to glycine of HEK293 cells expressing GluN1/GluN3A receptors in the absence or presence of CGP-78608 (500  nM). Bottom, quantification of fold peak current potentiation by CGP-78608 for GluN1/GluN3A and GluN1/GluN3A1082Δ receptors (n = 3–11).
+
 Since GluN3A and GluN3A1082∆ display similar distributions and cell surface targeting (Fiuza et al., 2013), the differences we observed are unlikely to stem from altered subcellular localization. We evaluated whether the deletion alters ion fluxes via GluN3A-NMDARs by analyzing electrophysiological responses to glutamate of GluN3A and GluN3A1082∆ when coexpressed with GluN1 and GluN2A in HEK293 cells. The relative calcium permeability was estimated by measuring the shift in reversal potential (∆Erev) of recombinant NMDAR currents induced by changing extracellular Ca2+ (Perez-Otano et al., 2001). GluN3A and GluN3A1082∆ yielded similarly reduced shifts in ∆Erev relative to conventional GluN1/GluN2A NMDARs, confirming that the mutant incorporated into functional triheteromeric GluN3A-NMDARs and arguing against differences in Ca2+ permeability (Figure 4—figure supplement 1). In addition, both GluN3A versions drove comparable reductions in current densities relative to conventional NMDARs (Figure 4—figure supplement 1B). Along with nonconventional NMDARs, GluN3A subunits can form glycine-gated diheteromeric GluN1/GluN3 receptors (Pérez-Otaño et al., 2016). Thus, we additionally examined whether the deletion modified responses to glycine of GluN1/GluN3 receptors taking advantage of the CGP-78608 compound (Grand et al., 2018), but no differences were found (Figure 4—figure supplement 1C). The absence of ionotropic differences favored the hypothesis that the inhibition of mTOR signaling requires metabotropic interactions of GluN3A-NMDARs, possibly modulating its association with synaptic adaptors or scaffolds.
 
-## GluN3A expression modulates the assembly of synaptic GIT1/mTORC1 complexes
+### GluN3A expression modulates the assembly of synaptic GIT1/mTORC1 complexes
 
 A leading candidate is the multifunctional adaptor GIT1. GIT1 is enriched in postsynaptic compartments and binds the 33 amino acids of the GluN3A C-terminus that we show above are required for mTORC1 inhibition (Fiuza et al., 2013). Although best known for its role in actin signaling (Zhang et al., 2003), GIT1 has been detected in mTOR immunoprecipitates from mouse astrocytes by mass spectrometry (Smithson and Gutmann, 2016) though a function for this association could not be established. Using reciprocal immunoprecipitation with GIT1 and mTOR antibodies, we isolated GIT1/mTOR complexes from lysates of microdissected hippocampal (Figure 5A) and cortical (not shown) tissue. We chose detergent conditions that preserve mTOR interactions with Raptor and Rictor (0.3% CHAPS) to further characterize the composition of the complex, and were able to identify Raptor (but not the mTORC2 component Rictor) in GIT1 immunoprecipitates. The mTOR antibody pulled down both, validating our assay conditions (Figure 5A). The GIT1-binding protein and Rac1 activator βPIX was also pulled down by the mTOR antibody while the control presynaptic protein synaptophysin was not (Figure 5A). We additionally detected phosphorylated mTOR at Ser2448 in GIT1 immunoprecipitates, demonstrating GIT1/mTORC1 complex functionality (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Protein extracts from P16 mouse hippocampus were solubilized with 0.3 % CHAPS buffer, incubated with antibodies against mTOR or GIT1 (IP), and immunoprecipitated proteins analysed by immunoblot (IB). Input: 10 % of lysate used for immunoprecipitation. IgG−: no antibody control. A cartoon of the interactions and regulation by activity (see panel D) is shown. (C) Representative images of proximity ligation assay for rat mTOR: GIT1 (magenta) in days in vitro (DIV) 17 rat hippocampal neurons transfected with GFP (green) to visualize dendritic morphology (scale bar, 5 μm). High magnification examples of spines and dendrites (scale bars, 0.5 and 1 μm) are shown. As negative control, only mTOR primary antibody was used. (D, E) Rat cortical neurons stimulated with BDNF or bicuculline were solubilized with 0.3 % CHAPS and incubated with GIT1 antibody (IP). Representative immunoblots (D) and quantification of mTOR phosphorylation in GIT1 immunoprecipitates (E) are shown (n = 3–6 from three independent cultures; *p < 0.05, # = 0.06, two-tailed unpaired t-test). (F–H) Primary mouse cortical neurons were infected with lentiviruses expressing GFP or GFP-shGIT1 on DIV7. mTOR responses to BDNF (F, G) and puromycin incorporation (H) in the presence or absence of 100 nM rapamycin were analyzed at DIV14. Quantification of phosphorylated S6K and S6 and Arc induction (#pS6K: p = 0.13, #pS6: p = 0.05, two-tailed paired; ***p < 0.001, two-way analysis of variance [ANOVA] followed by Tukey’s test) (G) and puromycin levels normalized to Ponceau S (n = 5–7 from four independent cultures, **p < 0.01, two-way ANOVA followed by Tukey’s test) (H) are shown.Figure 5—source data 1.Figure 5—source data 2.2448 in P16 mouse hippocampus.Figure 5—source data 3.Figure 5—source data 4.Figure 5—source data 5.
+**Figure 5.:** (A, B) Protein extracts from P16 mouse hippocampus were solubilized with 0.3 % CHAPS buffer, incubated with antibodies against mTOR or GIT1 (IP), and immunoprecipitated proteins analysed by immunoblot (IB). Input: 10 % of lysate used for immunoprecipitation. IgG−: no antibody control. A cartoon of the interactions and regulation by activity (see panel D) is shown. (C) Representative images of proximity ligation assay for rat mTOR: GIT1 (magenta) in days in vitro (DIV) 17 rat hippocampal neurons transfected with GFP (green) to visualize dendritic morphology (scale bar, 5 μm). High magnification examples of spines and dendrites (scale bars, 0.5 and 1 μm) are shown. As negative control, only mTOR primary antibody was used. (D, E) Rat cortical neurons stimulated with BDNF or bicuculline were solubilized with 0.3 % CHAPS and incubated with GIT1 antibody (IP). Representative immunoblots (D) and quantification of mTOR phosphorylation in GIT1 immunoprecipitates (E) are shown (n = 3–6 from three independent cultures; *p < 0.05, # = 0.06, two-tailed unpaired t-test). (F–H) Primary mouse cortical neurons were infected with lentiviruses expressing GFP or GFP-shGIT1 on DIV7. mTOR responses to BDNF (F, G) and puromycin incorporation (H) in the presence or absence of 100 nM rapamycin were analyzed at DIV14. Quantification of phosphorylated S6K and S6 and Arc induction (#pS6K: p = 0.13, #pS6: p = 0.05, two-tailed paired; ***p < 0.001, two-way analysis of variance [ANOVA] followed by Tukey’s test) (G) and puromycin levels normalized to Ponceau S (n = 5–7 from four independent cultures, **p < 0.01, two-way ANOVA followed by Tukey’s test) (H) are shown.
 
 We then examined the subcellular localization of GIT1/mTORC1 complexes using in situ proximity ligation assay (PLA) with antibodies against GIT1 and mTOR. PLA puncta were present along dendritic shafts often localized within or at the base of dendritic spines (Figure 5C), suggesting that GIT1 positions mTORC1 near synaptic sites to mediate dendritic translation in response to synaptic signals. To test this, we stimulated cortical neurons with bicuculline or BDNF and quantified mTOR phosphorylation in total lysates and GIT1 immunoprecipitates. Both bicuculline and BDNF induced large increases in the phosphorylation of GIT1-bound mTOR on Ser2448 (Figure 5D and E). Importantly, the phosphorylation of GIT1-bound mTOR was much higher than phosphorylation of the total cellular mTOR pool (BDNF: 1.98 ± 0.38- fold increase in total lysates vs. 4.2 ± 1.15 in GIT1 immunoprecipates; bicuculline: 1.42 ± 0.15 vs. 4.63 ± 1.24), consistent with a role for GIT1 in nucleating synaptic mTORC1 activation. Further evidence came from GIT1 loss-of-function experiments. Lentiviral knockdown of GIT1 blunted the activation of mTORC1 by BDNF, as shown by reduced phosphorylation of S6 and S6K (Figure 5F and G), and inhibited mTORC1-dependent protein synthesis assessed using a nonradioactive puromycin-labeling assay (SUnSET) (Figure 5H). Arc translation was also reduced, as judged by loss of rapamycin sensitivity relative to control neurons, while Zif268 which is mTORC1 independent was unaffected (Figure 5F and G). Collectively, these experiments demonstrated the existence of mTORC1 complexes composed of GIT1, mTOR, and Raptor that mediate mTORC1 signaling in response to synaptic stimuli.
 
-## GluN3A/GIT1 interactions control the emergence of mTORC1-dependent protein synthesis
+### GluN3A/GIT1 interactions control the emergence of mTORC1-dependent protein synthesis
 
 We further found that the abundance of GIT1/mTORC1 complexes is regulated throughout postnatal development. GIT1/mTORC1 complexes were readily observed in P16, but not P7 or P10, hippocampus or cortex of wild-type mice (Figure 6A; Figure 6—figure supplement 1). Because this time-course matches the timing of synaptic GluN3A downregulation in vivo (Henson et al., 2012), we asked whether GluN3A expression influences GIT1/mTORC1 assembly. Biochemical analysis of GIT1 immunoprecipitates from hippocampi of P10 wild-type and Grin3a−/− showed that GluN3A removal enables the formation of GIT1/mTORC1 complexes at earlier stages, as judged by enhanced GIT1/mTOR and GIT1/Raptor binding (Figure 6B). Reciprocally, reexpression of full-length GluN3A (but not the GluN3A1082∆ mutant) in Grin3a−/− neurons was sufficient to prevent the GIT1/mTOR association, indicating that GluN3A-bound GIT1 cannot incorporate into the complex (Figure 6C). Taken together, the results support a model where GluN3A expression regulates the abundance of synaptic GIT1/mTORC1 complexes by directly binding GIT1, impeding its association with mTOR and limiting mTORC1 activation and downstream protein synthesis of plasticity factors. Conversely, developmental or genetic GluN3A downregulation enables GIT1/mTORC1 formation and primes synapses for mTORC1-dependent translation (Figure 6D).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig6-v2.jpg)
+
+**Figure 6.:** (A) Hippocampi from P7, P10, and P16 wild-type mice were lysed, immunoprecipitated with GIT1 antibody and probed for the indicated antibodies. Input: 10 % of the lysate used for immunoprecipitation. IgG−: negative control without antibody. Red asterisks here and other panels indicate mechanistic target of rapamycin (mTOR)- and Raptor bound to GIT1. (B) GIT1/mTORC1 complex formation is enhanced in P10 Grin3a−/− hippocampus. Representative blots of GIT1 immunoprecipitates and quantifications are shown (n = 2–4 mice; **p < 0.01 unpaired t-test). Bound mTOR and Raptor are normalized to immunoprecipitated GIT1. Syp1: synaptophysin 1. (C) Grin3a−/− cortical neurons infected with GFP, GFP-GluN3A, or GFP-GluN3A1082Δ were solubilized and GIT1 immunoprecipitates blotted as indicated (IB). (D) GIT1/GluN3A control mTORC1 translation. Left: at early postnatal stages, immature synapses express GluN3A-NMDARs, which bind the postsynaptic scaffold GIT1 via their C-terminal tail preventing the nucleation of GIT1/mTORC1 and the mTORC1-mediated synthesis of plasticity proteins. Right: at juvenile/adult stages, GluN3A downregulation enables GIT1/mTOR/Raptor complex assembly and primes synapses for mTORC1 translation of mRNAs involved in synapse and memory consolidation. The genetic manipulations shown here to alter the age-dependent switch from mTORC1-independent to mTORC1-dependent modes of translation are indicated. Note that GluN3A expression is retained by subsets of synapses in adult brains and might play roles in selecting synapses that will be recruited to stably encode memory traces (see Discussion). (E) Mouse cortical neurons were infected with lentiviruses expressing GFP or GFP-sh3A on days in vitro (DIV) 3 and protein synthesis analyzed at DIV7–9. Representative blots and quantification of puromycin incorporation in infected neurons treated with rapamycin (100 nM), cycloheximide (CHX, 25 μM), or vehicle. (F) Grin3a−/− cortical neurons were infected with GFP, GFP-GluN3A, or GFP-GluN3A1082∆ lentiviruses, and protein synthesis analyzed at DIV12. GluN3A expression and mTOR activation were monitored with the indicated antibodies (IB). In panels D–E, n = 4–7 from three to four independent cultures (*p < 0.05, **p < 0.01, ***p < 0.001, two-way analysis of variance [ANOVA] followed by Tukey’s test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Somatosensory cortices from P7, P10, and P16 wild-type mice were lysed, immunoprecipitated with GIT1 antibody and probed for the indicated antibodies. Input: 10 % of the lysate used for immunoprecipitation. IgG− refers to a negative control without antibody. Red asterisk indicates mechanistic target of rapamycin (mTOR)-bound GIT1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Representative blots and quantification of puromycin incorporation in the presence or absence of 100 nM rapamycin in wild-type days in vitro (DIV) 7 and DIV14 neurons. Puromycin levels were normalized to Ponceau S staining (n = 6–8 samples from three to four independent cultures; **p < 0.01, followed by Tukey’s test).
+
 To test this model, we asked whether genetic manipulations of GluN3A/GIT1 interactions affect the timing and magnitude of mTORC1-dependent protein synthesis. A first set of experiments showed that protein synthesis in young cortical neurons (DIV7–9) is not dependent on mTORC1 activation, with strong rapamycin sensitivity emerging at later stages (DIV14) (Figure 6—figure supplement 2). Knockdown of GluN3A resulted in a large increase in protein synthesis in DIV7–9 neurons, which exhibited a rapamycin dependence typical of mature neurons (Figure 6E). Robust rapamycin-dependent protein synthesis was also observed in Grin3a−/− neurons (Figure 6F). Reexpression of GluN3A, but not GluN3A1082∆, reduced protein synthesis rates and was sufficient to block mTORC1 dependence, reinstating a juvenile mode of protein synthesis (Figure 6F). Thus GluN3A, via binding to GIT1, controls the age-dependent switch between mTORC1-independent and mTORC1-dependent protein synthesis.
 
-## Long-term memory formation is enhanced in Grin3a-deficient mice in a rapamycin-dependent manner
+### Long-term memory formation is enhanced in Grin3a-deficient mice in a rapamycin-dependent manner
 
 While GluN3A expression is typical of immature synapses at early postnatal stages as illustrated in our model, electron microscopy analyses demonstrate that subsets of synapses continue to express GluN3A into adulthood in areas such as the hippocampal CA1 (Roberts et al., 2009); and a recent mRNA expression study revealed that significant GluN3A levels are retained in a variety of brain regions (Murillo et al., 2021). Previous work showed that transgenic GluN3A overexpression impairs memory consolidation in hippocampal-dependent paradigms such as the Morris water maze (Roberts et al., 2009), but whether endogenous GluN3A expression has a physiological role in memory formation is unknown. We hypothesized that GluN3A modulation of synaptic mTORC1 signaling might provide a mechanism to set modes of translational control participating in memory encoding.
 
 We reasoned that, if so, GluN3A deletion would create a permissive environment for stable memory formation and tested this by assessing mice learning in increasingly demanding tasks. Testing of Grin3a−/− mice in a standard version of the Morris water maze (four trials per day) did not reveal differences in the latencies to reach the hidden platform relative to wild-type controls (Figure 7—figure supplement 1). Wild-type and Grin3a−/− mice displayed similar preferences for the target quadrant in probe trials where the platform was removed from the pool at the end of training, confirming that both had learnt the platform location (PT1; Figure 7—figure supplement 1C). Differences emerged with a more demanding version of the task (two trials per day): both male and female Grin3a−/− mice reached the platform significantly faster than wild types, with shorter latencies by day 3 of training and greater preference for the target quadrant in probe trials (PT1; Figure 7A and B; Figure 7—figure supplement 1B, D). No differences were observed in a visible version of the maze or in swim velocities, suggesting that motor or perceptual differences do not account for the phenotype (Figure 7—figure supplement 1E, F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig7-v2.jpg)
+
+**Figure 7.:** (A) Escape latencies of male wild-type (WT) and Grin3a−/− mice on a weak version of the Morris water maze (two trials per day) during 7-day training and after platform reversal on day 8. (B) Probe trials performed 24 hr after day 7 (PT1), or 24 hr after reversal training (PT2) (n = 10–13 mice per genotype; two-way analysis of variance [ANOVA] with Bonferroni post hoc test, *p < 0.05, ***p < 0.0001). (C) Conditioned taste aversion (CTA) paradigm. (D) Saccharin preference of control and double transgenic (dt) GluN3A mice, and (E) WT and Grin3a−/− mice after vehicle or LiCl injection (n = 5–7 mice per group; ***p < 0.001, two-way ANOVA followed by Bonferroni post hoc test). (F–H) Weak CTA paradigm and rapamycin treatment regime. Decreased saccharin preference of Grin3a−/− mice on the weak CTA (G) was reversed by rapamycin (H) (**p < 0.01, two-way ANOVA followed by Bonferroni post hoc test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Escape latencies of male wild-type (WT) and Grin3a−/− mice over the time-course of training on a standard hidden platform version of the Morris water maze (7 days, four trials per day). (B) Escape latencies of female Grin3a−/− and WT mice over the course of training (two trials per day). (C) On probe trials for memory acquisition performed 24 hr after day 7 (PT1), both groups showed similar preference for the target quadrant (n = 11–13 mice per group). Dashed lines indicate chance levels (25%). (D) Left, on the probe test performed 24 hr after day 7 (PT1), female Grin3a−/− mice showed enhanced preference for the target quadrant relative to WT (n = 11–13 mice per group; two-way analysis of variance [ANOVA] with Bonferroni post hoc test; p = 0.0062). Right, on probe tests 24 hr after completion of reversal training (PT2), female Grin3a−/− showed significant preference for the target quadrant (n = 11–13 mice per genotype; two-way ANOVA with Bonferroni post hoc test, **p<0.01, ***p < 0.0001). (E) WT and Grin3a−/− mice showed no differences in times to reach a visible platform. (F) Swimming speed over the training period. Data plotted correspond to the experiment shown in Figure 7C. (G) Alternation index of wild-type (WT) and Grin3a−/− mice in the Y-maze (n = 9–10 mice per genotype).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Double transgenic GluN3A (dtGluN3A) and wild-type (WT) mice showed similar ‘lying on belly’ latencies after a 0.15 M LiCl injection (n = 4–5 mice per group; unpaired two-tailed t-test, ***p < 0.001). (B) dt-GluN3A and control mice showed similar taste preferences (n = 8 mice per group). (C) The rapamycin treatment regime used does not impair the formation of ‘standard’ CTA memory in WT nor Grin3a−/− mice (n = 6–8 mice per group; two-way analysis of variance [ANOVA] with Bonferroni post hoc test, **p < 0.01).
 
 Similarly reduced learning thresholds had been reported in mice with elevated activity of mTOR or other pathways controlling translation (Banko et al., 2007; Costa-Mattioli et al., 2007; Hoeffer et al., 2008; Stern et al., 2013), often at the expense of impaired ability to respond to changed environments, altered memory fidelity, or appearance of perseverant and repetitive behaviors (Banko et al., 2007; Hoeffer et al., 2008; Santini et al., 2013; Shrestha et al., 2020b; Trinh et al., 2012). Thus, we evaluated cognitive flexibility by retraining the mice to learn a new platform location (‘reversal’). Grin3a−/− mice were better at shifting their preference relative to wild-type controls as evident in probe trials conducted 7 days after reversal (PT2; Figure 7A and B, Figure 7—figure supplement 1B, D). No perseverative behavior was observed either in a Y-maze spontaneous alternation task (Figure 7—figure supplement 1G). These results showed that GluN3A deletion facilitates spatial learning and memory without the unwanted effects associated to other modulators of translation.
 
 We then assessed associative memory formation using two tasks that depend on new protein synthesis and can be achieved with the single pairing of a conditioned (CS) and unconditioned stimulus (US): conditioned taste aversion (CTA) and contextual fear conditioning (FC). In CTA, a novel taste (saccharin, CS) is associated with an aversive US (LiCl, which induces nausea). The LiCl dose (US) and temporal contiguity between CS–US can be regulated to evaluate standard memory (Figure 7C), or ‘enhanced’ memory by using a weaker paradigm (Figure 7F; Adaikkan and Rosenblum, 2015). Transgenic mice with prolonged GluN3A expression into adulthood (dt GluN3A) displayed deficits in a standard CTA paradigm (US, LiCl 0.15 M i.p.) as judged by their similar preference for saccharin 24 hr after saline or LiCl injections (Figure 7D, green bars). This result was inline with the memory deficits reported in other behavioral paradigms (Roberts et al., 2009). Control experiments ruled out the possibility that the defect was due to insensitivity to LiCl or to defects in distinguishing flavors (Figure 7—figure supplement 2). By contrast, Grin3a−/− mice did not show differences relative to wild types in a standard paradigm of CTA memory (Figure 7E). We then used a weak CTA paradigm where the strength of the US was reduced (LiCl 0.025 M), and US–CS were separated by 5 hr (Figure 7F). Under these conditions, only Grin3a−/− mice formed an association between CS–US, as shown by their significantly reduced preference for saccharin after LiCl injection but intact preference in wild-type controls. The negative association was long-lasting as it could be observed 24 (Figure 7G) and 48 hr after conditioning (data not shown). To determine whether it was mTOR dependent, we treated mice with a subthreshold dosing regime of rapamycin (Stoica et al., 2011) that does not affect standard CTA memory (Figure 7—figure supplement 2). Rapamycin erased the weak CTA memory in Grin3a−/− mice (Figure 7H), supporting the notion that disinhibited mTOR signaling causes the cognitive enhancement.
 
 In contextual FC, a particular environment (CS) is associated with a foot-shock (US) (Figure 8A). Wild-type and Grin3a−/− littermates showed similar freezing responses before the delivery of the foot-shock (Figure 8B). However, freezing was significantly stronger in Grin3a−/− mice 24 and 48 hr after a weak training protocol (single pairing of a tone with a 0.3 mA foot-shock, Figure 8B and C), demonstrating enhanced and lasting memory formation. No differences were observed in short-term (1 hr) memory that is protein synthesis independent (Figure 8B). As in CTA, rapamycin occluded the difference between wild-type and Grin3a−/− mice (Figure 8C). Taken together, our behavioral results demonstrate that GluN3A deletion lowers the threshold for stable memory storage and provide pharmacological evidence linking the enhanced learning to a relief of GluN3A constraints on mTORC1 signaling.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig8-v2.jpg)
+
+**Figure 8.:** (A) Contextual fear conditioning test. (B) Enhanced contextual fear conditioning in Grin3a−/− mice 24 hr but not 1 hr after training (n = 9–13 mice per group; left: repeated measures two-way analysis of variance [ANOVA] with Bonferroni post hoc test, p = 0.004; right: two-tailed unpaired t-test, *p < 0.05). (C) Enhanced contextual fear conditioning in Grin3a−/− mice at 48 hr is reversed by rapamycin (2 × 20 mg/kg i.p., 24 hr apart, prior to training) (n = 10–11 mice per group; *p < 0.05; **p < 0.01, two-way ANOVA with Bonferroni post hoc test). (D, E) Conditional deletion of GluN3A from adult excitatory neurons, but not somatostatin (Sst) interneurons, enhances long-term contextual fear memory. The regime for tamoxifen (TMX) injection is indicated (*p < 0.05: ***p < 0.001 two-tailed unpaired t-test). (F, G) Cued-fear extinction in Grin3a−/− and wild-type littermates over a four-day fear extinction paradigm (n = 14–13 mice per group; *p = 0.0461 between-subjects effect, repeated measures ANOVA). Freezing levels were not different between phenotypes in FE1 (t(25) = 0.760, p = 0.455).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71575/elife-71575-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Top, tamoxifen (TMX) administration regime to Grin3af/f × CamK2a-CreERT2 mice. Hippocampal lysates of P90 mice were analyzed by sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS–PAGE) and immunoblotted for the indicated proteins (n = 4–8 mice per group; unpaired two-tailed t-test, ***p < 0.0001). (B) Immunoblot analysis of hippocampal lysates of P90 Grin3af/f × Som-Cre mice (n = 4–10 mice per group; unpaired two-tailed t-test, **p < 0.01). Note that conditional deletion of Grin3a decreases GluN3A expression without affecting other synaptic proteins.
 
 Yet the cognitive enhancement could have been due to lack of GluN3A during development rather than adult stages. Also, GluN3A is expressed by excitatory neurons and somatostatin interneurons, both recently implicated in protein synthesis-dependent memory consolidation (Sharma et al., 2020; Shrestha et al., 2020a). We therefore selectively ablated Grin3a from excitatory neurons or somatostatin-expressing interneurons by crossing floxed Grin3a mice (Grin3af/f) with mice that express Cre recombinase under the control of the Ca2+ calmodulin kinase IIα (Camk2a-CreERT2) or somatostatin (Sst-Cre) promoter. The first strategy allowed conditional deletion of GluN3A at adult stages by injecting tamoxifen (Figure 8D). Biochemical analysis of adult hippocampal lysates confirmed effective deletion of GluN3A, and revealed that ~70 % and ~ 20 % of GluN3A protein is expressed by excitatory and somatostatin interneurons, respectively (Figure 8—figure supplement 1). We then subjected the mice to the weak FC protocol. Adult deletion of GluN3A from excitatory neurons was sufficient to enhance long-term memory, as shown by stronger freezing of Grin3af/f × Camk2a-CreERT2 mice 24, 48 hr, and even 7 days after training (Figure 8D). In contrast, Grin3af/f × Sst-Cre and control mice exhibited similar freezing levels 24 and 48 hr after training (Figure 8E). Thus, adult GluN3A expression in excitatory neurons gates long-term memory formation.
 
@@ -115,7 +175,7 @@ Finally, we evaluated fear extinction (FE), a form of memory where repeated pres
 
 In this study, we report a regulatory mechanism that affords spatiotemporal control of mTORC1-dependent translation in response to synaptic stimulation. Specifically we identify GIT1/mTORC1 complexes as key mediators of synaptic mTORC1 responses, and demonstrate that GluN3A-NMDARs, through direct association with GIT1, impede GIT1/mTORC1 assembly and negatively regulate synaptic mTORC1 activation and mTORC1-dependent translation. Using in vitro and in vivo genetic approaches, we further show that negative regulation by GluN3A determines the emergence of mature mTORC1-dependent protein synthesis in developing brains, and continues to play a role in adult life by placing boundaries on long-term memory storage. More broadly, our findings suggest that neuronal GIT1/mTORC1 complexes might provide a central site for the regulation and dysregulation of synaptic translation in other physiological and disease contexts.
 
-## Modulation by GluN3A of GIT1/mTORC1 complex assembly
+### Modulation by GluN3A of GIT1/mTORC1 complex assembly
 
 mTORC1 is a ubiquitous protein kinase complex that promotes protein synthesis and cell growth in response to a variety of signals including nutrient availability, energy levels, insulin, growth factors, and synaptic inputs. Coupling such diverse signals to mTORC1 activation requires regulated targeting to specific subcellular compartments. For instance, mTORC1 responses to amino acids require its recruitment by the Ragulator–Rag complex to lysosomal membranes, where interactions between positive (Rheb) and negative (Tsc1/2 complex) mTOR regulators take place (Benjamin and Hall, 2014; Sancak et al., 2010). Our observations suggest that GIT1 could play an analogous scaffolding role to position mTORC1 such that it senses synaptic signals, with negative regulation by GluN3A limiting mTORC1-dependent translation at specific developmental times and/or in specific subsets of synapses in adult brains.
 
@@ -125,7 +185,7 @@ We previously reported that GluN3A modulates the formation of GIT1 complexes wit
 
 Our RNAseq analyses indicate that GluN3A acts at the level of translation and would thus preserve the supply of activity-induced plasticity mRNAs but restrict their active translation to specific synapses, in contrast to classical NMDARs that work at both transcriptional and translational levels. Nevertheless, GluN3A knockdown in cultured neurons has been shown to enhance the transcription of a subset of mRNAs (Chen et al., 2020) upon prolonged periods of synaptic activation (6–8 vs. 1 hr in the present study), and we cannot rule out later regulation by GluN3A of compensatory or homeostatic responses. Of note, tonic repression of mTOR-dependent protein synthesis by GluN2B-containing NMDARs has also been reported (Wang et al., 2011). However, the molecular determinants of stimulation or repression of protein synthesis were not addressed. It remains to be established whether GluN3A and GluN2B share common mechanisms.
 
-## A role for GluN3A in restricting translation for precise circuit refinements and long-term memory storage
+### A role for GluN3A in restricting translation for precise circuit refinements and long-term memory storage
 
 GluN3A-NMDARs are highly expressed during critical periods of experience-dependent neural circuit refinements, when they have been proposed to determine which synapses will be maintained or eliminated, and at lower levels in specific regions of the adult brain (Murillo et al., 2021). We propose a model whereby the lack or presence of GluN3A at postsynaptic sites contributes to spine-specific translation by setting an enhanced or repressed biochemical environment for mTORC1 signaling that will depend on the stage of brain development (Figure 6D) and the activity history of individual synapses. This is: synaptic GluN3A levels are downregulated by sensory experience and can be controlled at the level of individual synapses by activity-dependent endocytosis (Pérez-Otaño et al., 2006). The removal of GluN3A-NMDARs from active synapses would drive formation of nearby GIT1/mTORC1 complexes. This would locally increase the potential for dendritic translation of activity-regulated mRNAs, giving active inputs an advantage for consolidation versus less-active neighbors. Hence, competition for active mTORC1 would provide a means for selective synapse stabilization and memory storage. Defects in mTORC1 regulation might permit the consolidation of otherwise lost synaptic changes.
 
@@ -135,67 +195,637 @@ Our experiments using cell-type-specific and -inducible Grin3a knockout mice dem
 
 As far as tested here, GluN3A deletion does not impair other aspects of cognition such as memory flexibility or extinction. Yet significant GluN3A levels are retained in areas of the mouse and human adult brain with strong plasticity or functional integration needs (Fulcher et al., 2019; Murillo et al., 2021), and a recent study linked adult GluN3A expression to the control of emotional states (Otsu et al., 2019). In addition, genetic variations in GRIN3A have been shown to modulate prefrontal cortex activity (Gallinat et al., 2007) and episodic memory (Papenberg et al., 2014). Future investigations should determine whether domains of cognition other than the ones we tested are compromised by GluN3A deletion.
 
-## GluN3A and synaptic protein synthesis as selective therapeutic targets
+### GluN3A and synaptic protein synthesis as selective therapeutic targets
 
 The stabilization of memories requires de novo protein expression. Nevertheless, the effects on cognition of enhancing mTOR signaling or protein synthesis are perplexing. Loss of constraints on protein synthesis due to mutations in negative regulators of translation (FMR1, MECP2, or mTORC1 suppressors including NF1, TSC1/2, or the phosphatase PTEN) are associated with cognitive impairment and high incidence of autism spectrum disorders and intellectual disability (Kelleher and Bear, 2008), although a fraction of autistic individuals exhibit enhanced cognitive skills within specific domains (Heaton and Wallace, 2004). On the other hand, inhibiting the phosphorylation of eIF2α, which generally increases translation (Costa-Mattioli et al., 2007; Stern et al., 2013), or enhancing mTORC1 activity by removal of FKBP12 (Hoeffer et al., 2008) have been reported to lower memory thresholds. However, the cognitive enhancement came at the cost of reduced memory fidelity and cognitive flexibility even when cell-type-specific modulation was attempted (Santini et al., 2013; Shrestha et al., 2020a; Trinh et al., 2012), which we did not observe here. Key differences could be that other negative regulators of mTOR such as FMRP, PTEN, or Tsc1/2 are expressed in multiple cell types and neuronal locations, as demonstrated by their linkage to altered cell growth and appearance of tumors (Lipton and Sahin, 2014). Also, in some of the above situations, translation is constitutively activated and responses to incoming signals might be obliterated. By contrast, lack of GluN3A does not occlude mTORC1 activation but rather seems to prime mTOR activation by synaptic stimuli. At present, the enhancement of learning and memory produced by loss of GluN3A suggests that targeting GluN3A expression or signaling functions might be of therapeutic benefit. For instance, small molecules that perturb the GluN3A/GIT1 association might work in subtler ways than general translation regulators by specifically modulating synaptic mTORC1 signaling.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Adult (3–6 months old) Grin3a−/−, Grin3atm1a(EUCOMM)Hmgu/H (Grin3af/f) and double-transgenic GFP-GluN3A (dtGluN3A) mice backcrossed for 10–12 generations into a C57Bl6/J background were used. Single transgenic mice were used as controls for dtGluN3A mice, and wild-type littermates from heterozygote crosses were controls for Grin3a−/− mice. Commercial C57BL6/J mice were purchased from Charles River Laboratories. For time-specific knockout of Grin3a in excitatory neurons, tamoxifen-inducible CaMKIIα-CreERT2+/− mice (Erdmann et al., 2007) were crossed with Grin3af/f mice. Tamoxifen (Sigma-Aldrich T5648, 20 mg/ml dissolved in corn oil) was administered via oral gavage (five alternate days). For inhibitory neuron-specific knockout of Grin3a, Sst-IRES-Cre+/− mice (JAX Stock No. 018973) were backcrossed with C57BL/6Jmice for 12 generations and then bred with Grin3af/f mice. Male mice were used for behavioral experiments unless indicated. Animals were housed four to six per cage with ad libitum access to food and water and maintained in a temperature-controlled environment on a 12-hr dark/light cycle. All procedures were conducted in accordance with the European and Spanish regulations (2010/63/UE; RD 53/2013) and were approved by the Ethical Committee of the Generalitat Valenciana (2017/VSC/PEA/00196). For the cued-FC experiments, ethic protocols were approved by the Committee of Ethics of the Universitat Autònoma de Barcelona and the Generalitat de Catalunya.
 
-## Primary neuronal cultures
+### Primary neuronal cultures
 
 Cortical and hippocampal neurons in primary culture were prepared as described (Pérez-Otaño et al., 2006). Briefly, cortices were dissected from E19 rat pups or E17.5 mice pups and dissociated with papain (Worthington Biochemical). Mouse primary neurons were used for rescue experiments in the Grin3a-null background shown in Figures 4 and 6, and for shGIT1 experiments in Figure 5. Neurons were plated at 75,000 cells per well on 12-well plates, 500,000 cells per well on 6-well plates and 1,000,000 cells/ dish on 60 mm dishes coated with laminin and poly-D-lysine and grown in Neurobasal Medium supplemented with B27 (Thermo Fisher).
 
 Neurons were infected with lentiviruses 5 days prior to collection (timing of infection is indicated in figure legends). Neurotrophic factors and other drugs were used at the following concentrations: anisomycin (0.8 μM, Sigma-Aldrich A5892), recombinant human BDNF (100 ng/ml, PeproTech 450-02), bicuculline (50 μM, Abcam Ab120108), cycloheximide (25 μM, Sigma Aldrich C7698), (D,L)-APV (50 μM, Tocris 3693), MK801 (10 μM, Tocris 0924), rapamycin (100 nM, Alfa Aesar J62473), and puromycin (10 ng/ml, Sigma Aldrich P8833).
 
-## Lentiviral vectors
+### Lentiviral vectors
 
 For the generation of lentiviral constructs, full-length GluN3A and GluN3A1082∆ cDNAs were subcloned into a dual lentiviral vector Syn-WPRE-Syn-GFP kindly provided by Dr. Francisco G Scholl, University of Sevilla, Spain. For knockdown experiments, 19–20 base pairs (bp)-long small hairpin RNAs (shRNAs) directed to GluN3A (shGluN3A1185, target sequence: CTACAGCTGAGTTTAGAAA) or GIT1 (shGIT1, target sequence: TGATCACAAGAATGGGCATTA) were cloned into the pLentilox 3.7-GFP vector downstream the U6 promoter. The AAV encoding constitutively active human Rheb (AAV-caRheb, S16H) was kindly provided by Dr. Beverly Davidson, Children’s Hospital of Philadelphia, University of Pennsylvania.
 
-## RNA isolation, qRT-PCR, and RNAseq analyses
+### RNA isolation, qRT-PCR, and RNAseq analyses
 
 Total RNA from cultured cortical neurons was isolated using the Nucleospin RNA (Macherey-Nagel). RNA concentration and purity were assessed with NanoDrop. RNA quality was determined by the RNA Integrity Number (RIN) algorithm using the Agilent 2100 Bionalyzer Instrument; only samples with RIN >9 matched our standard.
 
-For qRT-PCR experiments, first-strand cDNA was synthesized from 1 μg of total RNA using the Invitrogen SuperScript IV First-Strand cDNA Synthesis System (Thermo Fisher). Quantitative real-time PCR (qPCR) was performed using the Applied Biosystems QuantStudio 3 Real-Time PCR system and analyzed with the QuantStudio 3 Design and Analysis software (v1.5.1, Thermo Fisher). Briefly, real-time qPCR was assayed in a total volume of 20 μl reaction mixture containing the ready-to-use PyroTaq EvaGreen qPCR Mix Plus ROX (Cmb), 5 pmol of forward and reverse (rv) primers (detailed in key resource table) and cDNA. PCR thermal conditions included an initial hold stage with 5 min at 50°C and 15 min at 95°C followed by 40 cycles of denaturation for 30 s at 95°C, annealing for 32 s at 60°C and primer elongation for 32 s at 72°C. All qPCR reactions were run in triplicates. Mean cycle threshold (Ct) values for each reaction were recorded and the relative RNA expression levels were calculated referring to Gapdh, encoding glyceraldehyde 3-phsophate dehydrogenase: ΔCt=〖Ct〗_GAPDH−〖Ct〗_(target gene). The gene expression fold change normalized to GAPDH and relative to control sample was calculated as 2∆Ct.
+For qRT-PCR experiments, first-strand cDNA was synthesized from 1 μg of total RNA using the Invitrogen SuperScript IV First-Strand cDNA Synthesis System (Thermo Fisher). Quantitative real-time PCR (qPCR) was performed using the Applied Biosystems QuantStudio 3 Real-Time PCR system and analyzed with the QuantStudio 3 Design and Analysis software (v1.5.1, Thermo Fisher). Briefly, real-time qPCR was assayed in a total volume of 20 μl reaction mixture containing the ready-to-use PyroTaq EvaGreen qPCR Mix Plus ROX (Cmb), 5 pmol of forward and reverse (rv) primers (detailed in key resource table) and cDNA. PCR thermal conditions included an initial hold stage with 5 min at 50°C and 15 min at 95°C followed by 40 cycles of denaturation for 30 s at 95°C, annealing for 32 s at 60°C and primer elongation for 32 s at 72°C. All qPCR reactions were run in triplicates. Mean cycle threshold (Ct) values for each reaction were recorded and the relative RNA expression levels were calculated referring to Gapdh, encoding glyceraldehyde 3-phsophate dehydrogenase: $ΔCt=〖Ct〗_GAPDH−〖Ct〗_(target gene)$. The gene expression fold change normalized to GAPDH and relative to control sample was calculated as 2∆Ct.
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>GIT-1 (mouse monoclonal, clone A-1)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-365084; RRID: AB_10850059</td>
+      <td>PLA 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Arc (mouse monoclonal, clone C-7)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-17839; RRID: AB_626696</td>
+      <td>WB 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>beta-Tubulin III (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T8660; RRID: AB_477590</td>
+      <td>WB 1:20,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NMDAR1, all splice variants (mouse monoclonal, clone R1JHL)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB1586; RRID: AB_11213180</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NR2B (mouse monoclonal, clone BWJHL)</td>
+      <td>Millipore</td>
+      <td>Cat# 05–920; RRID: AB_417391</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NR3A (mouse monoclonal)</td>
+      <td>Kindly provided by Jim Trimmer</td>
+      <td>N/A</td>
+      <td>WB 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PSD-95 (mouse monoclonal, clone K28/43)</td>
+      <td>Antibodies Incorporated</td>
+      <td>Cat# 75–028RRID: AB_10698024</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Puromycin (mouse monoclonal, clone 12D10)</td>
+      <td>Millipore</td>
+      <td>Cat# MABE343; RRID: AB_2566826</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synapsin I (mouse monoclonal, clone 46.1)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 106 011RRID: AB_2619772</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synaptophysin (mouse monoclonal, clone SY38)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB5258-20UG; RRID: AB_11214133</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CREB (rabbit monoclonal, clone 48H2)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9197; RRID: AB_331277</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NR2A (rabbit monoclonal, clone A12W)</td>
+      <td>Millipore</td>
+      <td>Cat# 05–901 R; RRID: AB_10805961</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-CamKinase II alpha (CaMKIIα) Thr286 (rabbit monoclonal, clone D21E4)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12716; RRID: AB_2713889</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p70 S6 kinase Thr389 (rabbit monoclonal, clone 108D2)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9234; RRID: AB_2269803</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Raptor (rabbit monoclonal, clone 24C12)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2280; RRID: AB_561245</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rheb (rabbit monoclonal, clone E1G1R)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 13879; RRID: AB_2721022</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rictor (rabbit monoclonal, clone 53A2)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2114; RRID: AB_2179963</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S6 ribosomal protein (rabbit monoclonal, clone 5G10)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2217; RRID: AB_331355</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GIT1 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2919; RRID: AB_2109982</td>
+      <td>IP 1:200, WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Egr-1/Zif268 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-110; RRID: AB_2097174</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>beta-Pix, SH3 domain (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 07–1450; RRID: AB_1586904</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Fos (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-52; RRID: AB_2106783</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CaMKIIα (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C6974; RRID: AB_258984</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mTOR (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2972; RRID: AB_330978</td>
+      <td>IP 1:100, PLA 1:150, WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NMDAR2A&amp;B, pan antibody (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB1548; RRID: AB_11212156</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NR3A (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 07–356; RRID: AB_2112620</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p30alpha (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-535; RRID: AB_632138</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p44/42 MAPK (Erk1/2) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9102; RRID: AB_330744</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p70 S6 kinase (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9202; RRID: AB_331676</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-CREB Ser133 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 06–519; RRID: AB_310153</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-mTOR Ser2448 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2971; RRID: AB_330970</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p38 MAPK Thr180/Tyr182 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9911; RRID: AB_10695905</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p44/42 MAPK (Erk1/2) Thr202/Tyr204 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9101; RRID: AB_331646</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-S6 ribosomal protein Ser240/244 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2215; RRID: AB_331682</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1573; RRID: CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(−)-Bicuculline methiodide</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120108; CAS: 55950-07-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(D,L)-APV sodium salt</td>
+      <td>Tocris</td>
+      <td>Cat# 3693; CAS: 1303993-72-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5892; CAS: 22862-76-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27 supplement</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDNF</td>
+      <td>PeproTech</td>
+      <td>Cat# 450-02; AN: P23560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP-78608</td>
+      <td>Tocris</td>
+      <td>Cat# 1493; CAS: 1135278-54-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 04693116001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C7698; CAS: 66-81-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-801</td>
+      <td>Tocris</td>
+      <td>Cat# 0924; CAS: 77086-22-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P8833; CAS: 58-58-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Alfa Aesar</td>
+      <td>Cat# J62473; CAS: 53123-88-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Alomone Labs</td>
+      <td>Cat# T-550; CAS: 18660-81-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Duolink In Situ Red Starter Kit Mouse/Rabbit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MasterMix qPCR ROx PyroTaq EvaGreen</td>
+      <td>cmb</td>
+      <td>Cat# 87H24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Nucleospin RNA</td>
+      <td>Macherey-Nagel</td>
+      <td>Cat# 740955.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Pierce BCA Protein Assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23,227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperScript IV First-Strand cDNA Synthesis System</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18-091-050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: B6;129 × 1-Grin3atm1Nnk/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:029974; RRID: IMSR_JAX:029974</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: CaMKIIα-CreERT2+/-</td>
+      <td>Erdmann et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: Grin3atm1a(EUCOMM)Hmgu/H</td>
+      <td>EUCOMM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: Sst-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock: 018973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>LV-hSYN-WPRE-hSYN-GFP-WPRE</td>
+      <td>Gascón et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>LV-hSYN-GluN3A-WPRE-hSYN-GFP-WPRE</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods; generated/stored in Perez-Otano’s lab.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>LV-hSYN-GluN3A1082Δ-WPRE-hSYN-GFP-WPRE</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods; generated/stored in Perez-Otano’s lab.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>pLentiLox3.7-GFP (pLL3.7-GFP)</td>
+      <td>Kindly provided by Dr. Michael Ehlers</td>
+      <td>Addgene plasmid #11795; RRID: Addgene_11795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>pLL3.7-shGluN3A1185-GFP (Target sequence: CTACAGCTGAGTTTAGAAA)</td>
+      <td>Yuan et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (virus)</td>
+      <td>pLL3.7-shGIT1-GFP (Target sequence: TGATCACAAGAATGGGCATTA)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods; generated/stored in Perez-Otano’s lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA1-Amp-GluN1-1A</td>
+      <td>Perez-Otano et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pcDNA1-Amp-GluN2A</td>
+      <td>Perez-Otano et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCIneo-GFPGluN3A</td>
+      <td>Perez-Otano et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pCIneo-GFPGluN3A1082Δ</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods; generated/stored in Perez-Otano’s lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>pRK5-GFP</td>
+      <td>Kindly provided by Dr. Michael Ehlers</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>Arc_fwd (mouse)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GAGCCTACAGAGCCAGGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>Arc_rv (mouse)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TGCCTTGAAAGTGTCTTGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>c-Fos_fwd (mouse/rat)</td>
+      <td>Chen et al., 2020</td>
+      <td></td>
+      <td>CTGCTCTACTTTGCCCCTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>c-Fos_rv (mouse/rat)</td>
+      <td>Chen et al., 2020;</td>
+      <td></td>
+      <td>TTTATCCCCACGGTGACAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>GAPDH_fwd (mouse/rat)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CATGGCCTTCCGTGTTCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (oligonucleotide)</td>
+      <td>GAPDH_rv (mouse/ rat)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TGATGTCATCATACTTGGCAGGTT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider, Rasband and Eliceiri, 2012</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant software version 5.2</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism software version 7.00</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio 3 Design and Analysis software v1.5.1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SMART software for video-tracking</td>
+      <td>PanLab S.L.</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 For RNAseq experiments, we performed bulk mRNA sequencing single end with a length of 50 bp using the RNAseq Illumina Hiseq2500. The preparation of the polyA sequencing library, library’s quality control and quantification, sequencing run and base calling data were carried out by the Genomics Core Facility of the Centre for Genomic Regulation (CRG, Barcelona). For the analysis, adapters were trimmed using trim_galore v0.6.4_dev and reads with longer length than 40  bp were selected. Trimmed reads were aligned using star c2.6.1b to the mouse genome (mm10). Reads with mapq >30 were selected using Samtools v1.9. Mapped reads were quantified using R scripts (R version 4.0.3, 2020), Rsubread v2.4.3 and the Mus_musculus.GRCm38.99.gtf annotation data. Differential expression analysis was performed using DESeq2 1.31.1 and limma 3.46.0; genes were annotated using biomaRt v2.46.3 and Volcano plots were performed with EnhancedVolcano 1.6.0. The tracks from the samples were performed with DeepTools v3.5.0, normalized with RPKM and visualization was done in IGV v2.6.3.
 
-## Protein extraction and western blotting
+### Protein extraction and western blotting
 
 Cultured neurons were collected in lysis buffer containing 50 mM Tris–HCl pH 6.8, 10 % glycerol, 2 % SDS, 0.1 M (D,L)-dithiothreitol, 0.04 % bromophenol blue, and supplemented with protease (cOmplete Protease Inhibitor Cocktail) and phosphatase (PhosSTOP) inhibitors. Lysates were incubated for 10 min at 65 °C, briefly centrifuged at maximum speed and proteins separated by SDS–PAGE. Proteins were transferred onto PVDF membranes (GE Healthcare). After incubation with primary antibodies, membranes were incubated with secondary HRP-conjugated secondary antibodies (1:10,000, GE Healthcare). Signals were visualized with film autoradiograpy or the Amerham 680 Blot Imager, and nonsaturated immunoreactive bands were quantified using the ImageQuant 5.2 software.
 
 For in vivo studies on mouse tissue, hippocampi and somatosensory cortex were dissected on ice, snapped frozen in liquid nitrogen and stored at −80 °C until processing. Tissues were homogenized in 15 (wt/vol) volumes of modified ice-cold RIPA buffer (50 mM Tris–HCl pH 7.5, 150 mM NaCl, 1% NP-40, 0.05 % deoxycholate, 0.01 % SDS) supplemented with protease and phosphatase inhibitors, sonicated and centrifuged for 20 min at 16,200 × g at 4 °C. Protein content was estimated using a Pierce BCA Assay kit (Thermo Fisher) before immunoblotting.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cultured cortical neurons or mouse hippocampus or somatosensory cortex were solubilized for 30 min in cold lysis buffer containing 0.1 % Triton X-100, 0.1 % SDS, 150 mM NaCl, 10 mM EDTA and 50 mM HEPES or 0.3 % CHAPS 3-[(3-cholamidopropyl)dimethylammonio]-1-propanesulfonic acid, 150 mM NaCl, 1 mM EDTA, and 40 mM HEPES, supplemented with protease and phosphatase inhibitors. Insoluble material was removed by centrifugation at 16,200 × g for 15 min and 100–150 μg of the resulting supernatants were incubated overnight at 4 °C with or without (IgG−) the immunoprecipitating antibody. Lysates were then incubated with protein A/G magnetic beads (BioRad) for 2 hr at 4 °C. Beads were precipitated using a magnetic rack, washed thrice in lysis buffer and immunoprecipitated proteins were eluted with SDS sample buffer and analyzed by western blotting.
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 Cultured neurons transfected with pRK5-GFP were fixed at DIV17 with 4 % PFA, 4 % sucrose in phosphate buffered Saline (PBS) (RT, 10 min), incubated with blocking solution and permeabilized. Cells were then incubated with rabbit polyclonal anti-mTOR antibody and mouse monoclonal anti-GIT1 antibody overnight at 4 °C, washed with PBS, and incubated for 1 hr with PLA secondary probes (anti-mouse Plus and anti-rabbit Minus, Olink Bioscience) at 37 °C. Cells were washed twice with Duolink II Wash Buffer A (Olink Bioscience) and incubated with the ligase (1:40; Olink Bioscience) in ligase buffer for 30 min at 37 °C. After additional washes with Buffer A, cells were incubated with DNA polymerase (1:80; Olink Bioscience) in amplification buffer for 100 min at 37 °C in the dark. Cells were then washed with Duolink II Wash Buffer B (Olink Bioscience) and incubated with chicken polyclonal anti-GFP for 1 hr at room temperature. After washing with PBS, cells were incubated with secondary goat anti-chicken-Alexa Fluor 488 for 1 hr at room temperature. Finally, cells were washed in PBS and mounted on slides with Fluoroshield mounting medium (Sigma-Aldrich). Fluorescence images were acquired by using Nikon A1 Ti2 system with a sequential acquisition setting at 1024 × 1024 pixels resolution; cells were randomly selected from different coverslips.
 
-## Protein synthesis assays
+### Protein synthesis assays
 
 Basal protein synthesis was measured using a SUnSET (surface sensing of translation) assay. Briefly, primary cortical cultures were treated with 10 ng/ ml of puromycin for 30 min and lysed as described above. Untreated neurons and neurons preincubated with the protein synthesis inhibitor cycloheximide (15 min before puromycin) were used as controls. Proteins were resolved by SDS–PAGE and analyzed by western blotting using an anti-puromycin antibody. Ponceau S staining was used as protein loading control.
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Morris water maze
+#### Morris water maze
 
 Mice were trained to find a submerged platform in a circular tank (190 cm diameter) filled with opaque white water in two or four trials per day with 45 min intertrial intervals (ITIs). If mice did not find the platform in 120 s, they were kindly guided to it. The hidden platform was relocated to the opposite quadrant after 7 days of training for the reversal training phase. Sixty-second-long probe tests in which platform was removed were performed at the end of each phase (PT1, after initial hidden platform learning; PT2, after reversal learning), and time spent in the target quadrant was compared to the average time spent in all other quadrants. Mice were tracked throughout the whole protocol using the video-tracking software SMART (Panlab S.L.).
 
-## Y-maze spontaneous alternation
+#### Y-maze spontaneous alternation
 
 Mice were introduced in a three-armed Y-shaped maze and recorded for 5 min. Correct triad scores were noted when all three arms were sequentially entered. Alternation indices were calculated as correct triads/possible triads. Maze was cleaned between animals with a water-based soap solution.
 
-## Conditioned taste aversion
+#### Conditioned taste aversion
 
 Test was adapted from Adaikkan and Rosenblum, 2015. In brief, mice were trained to drink from two bottles of water for 6 days. On conditioning day, water was changed for 0.2 % (regular CTA) or 0.1 % (weak CTA) saccharin for 40 min (regular) or 5 hr (weak) after the exposure, mice were injected LiCl intraperitoneally at 0.15 M (regular) or 0.025 M (weak). Saccharin preference was evaluated 24 hr after injection. For unconditioned taste preference, mice were presented two drinking bottles for 48 hr: one contained water and the other one of the following solutions: sucrose 5 % (sweet), NaCl 75 mM (salty), quinine 300 µM (bitter), and HCl 0.03 M (sour). Bottle sides were switched after 24 hr to avoid potential side bias. Solution preference was evaluated at 48 hr. For assessing sensitivity to LiCl toxicity, ‘lying on belly’ behavior was registered after injection of LiCl (0.15 M) or saline. This behavior consists in a totally general suppression of activity, and location of the mouse in the corner of a cage. The activity was measured for 20 min.
 
-## Fear conditioning and extinction
+#### Fear conditioning and extinction
 
 FC and FE procedures were carried out with a computerized Fear and Startle system (Panlab-Harvard, Barcelona, Spain). Tones and shocks were delivered and controlled using Freezing v1.3.04 software (Panlab-Harvard, Barcelona, Spain). The fear chambers consisted of a black methacrylate box with a transparent front door (25 × 25 × 25 cm) inside a sound-attenuating cubicle (67 × 53 × 55 cm). Animals were habituated to the chambers for 5 min/day during two consecutive days prior to FC. The chambers were carefully cleaned before and after each mouse.
 
@@ -203,10 +833,10 @@ For contextual FC, mice were placed in the fear chambers and allowed to explore 
 
 For cued FC, mice were placed in the fear chambers for 5 min and then received five trials of a tone (CS) (30 s, 6 kHz, 75 dB) that coterminated with a foot-shock (US) (0.3 mA, 1 s). The ITI was of 3 min, and three additional minutes followed the last trial. The FE sessions were performed four times in consecutive days (FE1, FE2, FE3, and FE4) starting 24 hr after FC. For FE, mice were placed in the fear chambers for 5 min and then exposed to 15 trials of the 30 s CS tone alone (cued-fear) with a 30 s of ITI interval. An additional 30-s interval followed the last trial of FE. Different contexts were used for FC and FE tests. FC context consisted of a yellow light source (~10 lux), a grid floor of 25 bars (3 mm Ø and 10 mm between bars), a background noise of 60 dB produced by a ventilation fan and soapy water in a solution of ethanol 70 % was used for cleaning between sessions. FE context consisted of a red-light source (~10 lux), a grey plexiglass floor covering the bars, no background noise and soapy water in a solution of isopropyl alcohol 40 % was used as cleaning agent between sessions. Different routes were used to transport animals from their home cages to testing room in FC and FE days. Freezing levels were scored and averaged in 30-s slots.
 
-## Electrophysiology
+### Electrophysiology
 
 HEK293 cells were cultured, transfected, and recorded as previously described using GluN1A and GluN2A in pcDNA1/Amp and GFP-tagged GluN3A or GluN3A1082Δ subcloned in pCI-neo (Chowdhury et al., 2013). HEK293 cells were obtained from ATCC, and no mycoplasm contamination was detected by regular testing. Briefly, cells were transfected with GluN1-1A, GluN2A, and either GFP-GluN3A or GFP-GluN3A1082Δ in a 1:1:3 ratio and maintained in medium with APV (250 μM). GFP was used as a transfection marker in cells where GluN3A constructs were omitted. Whole-cell recordings were made with on GFP-positive cells using a Multiclamp 700 A amplifier (Molecular Devices) 24 hr following transfection. Patch pipettes (2–4 MΩ) contained (in mM): 140 Cs methanesulfonate, 10 HEPES, 5 adenosine triphosphate (Na salt), 5 MgCl2, 0.2 CaCl2, and 10 BAPTA (pH 7.4). The extracellular solution contained (in mM) 150 NaCl, 5 KCl, 2 or 10 CaCl2, 10 HEPES, 10 glucose (pH 7.4), and was adjusted to 330 mOsm with sucrose. Currents were digitized at 2 kHz and filtered at 1 kHz. Series resistance (90–95%) and whole-cell capacitance compensation were employed. Experiments were performed at a holding potential of –80 mV with ramps (300 ms to +50 mV) elicited following a 3 s application of glutamate (1 mM) and glycine (100 μM) at 20 °C. The ΔErev, was calculated by subtracting the Erev obtained in 2 mM Ca2+ from the Erev measured in 10 mM Ca2+ and corrected for the junction potential between solutions. Initial peak currents were obtained from 1 s agonist applications in 2 mM Ca2+ and used to calculate the current density. Experiments on glycine-gated diheteromeric GluN1/GluN3A receptors expressed in HEK293 cells were performed as previously described (Grand et al., 2018) using GluN1-1a and GFP-GluN3A or GFP-GluN3A1082Δ subcloned in pCI-neo (see above).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were conducted with GraphPad Prism software. Comparison of quantitative variables between two groups was performed using Student’s t-test. One- or two-way analysis of variance (ANOVA) followed by a post hoc comparison test were used when more than two groups were compared, as indicated in the corresponding figure legend. Results are presented as mean ± standard error of the mean (SEM). Statistical methods used for behavioral studies are indicated in the corresponding figure legends.

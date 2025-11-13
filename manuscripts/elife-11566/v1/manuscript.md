@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.11566.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from "Diverse somatic mutation patterns and pathway alterations in human cancers" by Kan and colleagues published in Nature in 2010 ( Kan et al., 2010 ). The experiments to be replicated are those reported in Figures 3D-F and 4C-F. Kan and colleagues utilized mismatch repair detection (MRD) technology to identify somatic mutations in primary human tumor samples and identified a previously uncharacterized arginine 243 to histidine (R243H) mutation in the G-protein α subunit GNAO1 in breast carcinoma tissue. In Figures 3D-F, Kan and colleagues demonstrated that stable expression of mutant GNAO1 conferred a significant growth advantage in human mammary epithelial cells, confirming the oncogenic potential of this mutation. Similarly, expression of variants with somatic mutations in R243D MAP2K4 , a JNK pathway kinase (shown in Figures 4C-E) resulted in a significant increase in anchorage-independent growth. Interestingly, these mutants exhibited reduced kinase activity compared to wild type MAP2K4 , indicating these mutations impose a dominant-negative influence to promote growth (Figure 4F). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife . DOI: http://dx.doi.org/10.7554/eLife.11566.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from "Diverse somatic mutation patterns and pathway alterations in human cancers" by Kan and colleagues published in Nature in 2010 (Kan et al., 2010). The experiments to be replicated are those reported in Figures 3D-F and 4C-F. Kan and colleagues utilized mismatch repair detection (MRD) technology to identify somatic mutations in primary human tumor samples and identified a previously uncharacterized arginine 243 to histidine (R243H) mutation in the G-protein α subunit GNAO1 in breast carcinoma tissue. In Figures 3D-F, Kan and colleagues demonstrated that stable expression of mutant GNAO1R243D conferred a significant growth advantage in human mammary epithelial cells, confirming the oncogenic potential of this mutation. Similarly, expression of variants with somatic mutations in MAP2K4, a JNK pathway kinase (shown in Figures 4C-E) resulted in a significant increase in anchorage-independent growth. Interestingly, these mutants exhibited reduced kinase activity compared to wild type MAP2K4, indicating these mutations impose a dominant-negative influence to promote growth (Figure 4F). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife.
 
 ## Introduction
 
@@ -33,145 +33,145 @@ In Figure 4C–E, the functional relevance of six select MAP2K4 mutants (5 locat
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors. An asterisk (*) indicates data or information provided by the Reproducibility Project: Cancer Biology core team. A hashtag (#) indicates information provided by the replicating lab.
 
-## Protocol 1: Generation of N-terminally Flag-tagged MAP2K4 and GNAO1 wild-type and mutant vectors
+### Protocol 1: Generation of N-terminally Flag-tagged MAP2K4 and GNAO1 wild-type and mutant vectors
 
 This protocol generates N-terminally flag-tagged wild type or mutant GNAO1 and wild type or mutant MAP2K4 vectors. These vectors will be used in Protocols 2 and 4.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The vector backbone pRetroX-IRES-ZsGreen1 will be used instead of pRetroX-IRES-FLAG because the latter is no longer available. The replicating lab will use a cDNA with an ORF tagged with myc-DDK (the same as FLAG) for downstream protocols. Not all mutants used in the original study will be replicated. We will not generate MAP2K4 mutations G85R, R154W, N234I or S251N. All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Sequencing and gel analysis of plasmids will be reported. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
-## Protocol 2: Generation of human mammary epithelial cells stably expressing wild-type or GNAO1R243H
+### Protocol 2: Generation of human mammary epithelial cells stably expressing wild-type or GNAO1R243H
 
 This protocol describes the generation of HMECs stably expressing WT or mutant GNAO1R243H protein. Expression of GNAO1 will be confirmed by Western blot that will be a replication of Figure 3F. These cells will subsequently be used in Protocol 3.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. GNAO1 expression will be confirmed in the top 10% GFP positive HMECs with western blots. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
-## Protocol 3: Anchorage-independent colony formation assay of HMECs transduced with wild-type or mutant GNAO1
+### Protocol 3: Anchorage-independent colony formation assay of HMECs transduced with wild-type or mutant GNAO1
 
 This experiment tests the effect of WT or mutant GNAO1 expression on anchorage-independent colony formation of HMECs. It is a replication of the experiments reported in Figure 3D–E.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The original study counted cell colonies using GelCount to image, count, and analyze colonies, while the replication attempt will stain with crystal violet to enhance detection of cell colonies, image wells with a high-resolution camera, and use ImageJ software to count and analyze colonies. Since the software and approach used by the original and replication attempt are different, there will likely be some differences in sensitivity and error rates. All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
-## Protocol 4: Generation of NIH3T3 cells stably expressing wild-type or mutant MAP2K4
+### Protocol 4: Generation of NIH3T3 cells stably expressing wild-type or mutant MAP2K4
 
 This protocol describes the generation of NIH3T3 cells stably expressing wild-type or mutant MAP2K4 proteins. This protocol also describes verification of expression of MAP2K4 by western blot that will be a replication of Figure 4E. These cells will subsequently be used in Protocols 4 and 5.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 Not all mutants used in the original study will be replicated. We will not generate MAP2K4 mutations G85R, R154W, N234I or S251N. All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm their identity and will be sent for mycoplasma testing to ensure there is no contamination. MAP2K4 expression will be confirmed in the top 10% GFP positive HMECs with Western blots. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
-## Protocol 5: Anchorage-independent colony formation assay of NIH3T3 cells transduced with wild-type or mutant MAP2K4
+### Protocol 5: Anchorage-independent colony formation assay of NIH3T3 cells transduced with wild-type or mutant MAP2K4
 
 This experiment tests the effect of WT or mutant MAP2K4 expression on anchorage-independent colony formation of NIH3T3 cells. It is a replication of the experiments reported in Figure 4C and 4D.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Note:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 Not all mutants used in the original study will be replicated. We will not generate MAP2K4 mutations G85R, R154W, N234I or S251N. The original study counted cell colonies using GelCount to image, count, and analyze colonies, while the replication attempt will stain with crystal violet to enhance detection of cell colonies, image wells with a high-resolution camera, and use ImageJ software to count and analyze colonies. Since the software and approach used by the original and replication attempt are different, there will likely be some differences in sensitivity and error rates. All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
-## Protocol 6: Assessing the kinase activity of wild-type or mutant MAP2K4
+### Protocol 6: Assessing the kinase activity of wild-type or mutant MAP2K4
 
 This experiment tests the in vitro kinase activity of WT or mutant MAP2K4 immunoprecipitated from NIH3T3 cells. It is a replication of the experiment reported in Figure 4F.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Note:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 Not all mutants used in the original study will be replicated. We will not generate MAP2K4 mutations G85R, R154W, N234I or S251N. All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. All of the raw data, including the analysis files, will be uploaded to the project page on the OSF (https://osf.io/jpeqg/) and made publically available.
 
@@ -181,36 +181,36 @@ For additional details on power calculations, please see analysis scripts and as
 
 https://osf.io/bxr2d/
 
-## Protocol 1:
+### Protocol 1:
 
-## Protocol 2:
+### Protocol 2:
 
-## Protocol 3:
+### Protocol 3:
 
-## Summary of original data
+#### Summary of original data
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 4:
+### Protocol 4:
 
-## Protocol 5:
+### Protocol 5:
 
-## Summary of original data
+#### Summary of original data
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 6
+### Protocol 6
 
-## Summary of original data
+#### Summary of original data
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations

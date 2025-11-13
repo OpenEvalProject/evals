@@ -33,25 +33,25 @@
 ### Affiliations
 
 1. Consorcio Mexicano de Vigilancia Genómica (CoViGen-Mex) Mexico City Mexico
-2. https://ror.org/059ex5q34 Programa de Investigadoras e Investigadores por México, Consejo Nacional de Ciencia y Tecnología Mexico City Mexico
+2. Programa de Investigadoras e Investigadores por México, Consejo Nacional de Ciencia y Tecnología Mexico City Mexico ([ROR:059ex5q34](https://ror.org/059ex5q34))
 3. Departamento de Ingeniería Genética, CINVESTAV-Unidad Irapuato Guanajuato Mexico
-4. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
-5. https://ror.org/01r9htc13 Spatial Epidemiology Lab (SpELL), Université Libre de Bruxelles Bruxelles Belgium
-6. https://ror.org/05f950310 Department of Microbiology, Immunology and Transplantation, Rega Institute, KU Leuven Leuven Belgium
-7. https://ror.org/017fh2655 Centro de Investigación en Enfermedades Infecciosas, Instituto Nacional de Enfermedades Respiratorias Mexico City Mexico
-8. https://ror.org/01wka8n18 Department of Pathobiology, Royal Veterinary College London United Kingdom
-9. https://ror.org/01qjckx08 Instituto Nacional de Medicina Genómica Mexico City Mexico
+4. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. Spatial Epidemiology Lab (SpELL), Université Libre de Bruxelles Bruxelles Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+6. Department of Microbiology, Immunology and Transplantation, Rega Institute, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+7. Centro de Investigación en Enfermedades Infecciosas, Instituto Nacional de Enfermedades Respiratorias Mexico City Mexico ([ROR:017fh2655](https://ror.org/017fh2655))
+8. Department of Pathobiology, Royal Veterinary College London United Kingdom ([ROR:01wka8n18](https://ror.org/01wka8n18))
+9. Instituto Nacional de Medicina Genómica Mexico City Mexico ([ROR:01qjckx08](https://ror.org/01qjckx08))
 10. Astronomer LTD Mexico City Mexico
-11. https://ror.org/01tmp8f25 Escuela Nacional de Estudios Superiores, Universidad Nacional Autónoma de México Mexico City Mexico
-12. https://ror.org/009eqmr18 Departamento de Ciencias de la Computación, CINVESTAV-IPN Mexico City Mexico
+11. Escuela Nacional de Estudios Superiores, Universidad Nacional Autónoma de México Mexico City Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
+12. Departamento de Ciencias de la Computación, CINVESTAV-IPN Mexico City Mexico ([ROR:009eqmr18](https://ror.org/009eqmr18))
 13. Laboratorio de expresión génica y desarrollo en hongos, CINVESTAV-Unidad Irapuato Irapuato Mexico
-14. https://ror.org/01tmp8f25 Unidad Universitaria de Secuenciación Masiva y Bioinformática, Instituto de Biotecnología, Universidad Nacional Autónoma de México Chamilpa Mexico
-15. https://ror.org/03xddgg98 Coordinación de Calidad de Insumos y Laboratorios Especializados, Instituto Mexicano del Seguro Social Mexico City Mexico
-16. https://ror.org/000917t60 Facultad de Medicina y Centro de Investigación en Ciencias de la Salud y Biomedicina, Universidad Autónoma de San Luis Potosí San Luis Potosí Mexico
-17. https://ror.org/015v43a21 Centro de Investigación en Alimentación y Desarrollo-CIAD, Unidad Regional Mazatlán en Acuicultura y Manejo Ambiental Sinaloa Mexico
-18. https://ror.org/04q0r6m34 Posgrado en Ciencias Genómicas, Universidad Autónoma de la Ciudad de México Mexico City Mexico
-19. https://ror.org/01tmp8f25 Departamento de Genética del Desarrollo y Fisiología Molecular, Universidad Nacional Autónoma de México Cuernavaca Mexico
-20. https://ror.org/01tmp8f25 Facultad de Ciencias, Universidad Nacional Autónoma de Méxic Mexico City Mexico
+14. Unidad Universitaria de Secuenciación Masiva y Bioinformática, Instituto de Biotecnología, Universidad Nacional Autónoma de México Chamilpa Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
+15. Coordinación de Calidad de Insumos y Laboratorios Especializados, Instituto Mexicano del Seguro Social Mexico City Mexico ([ROR:03xddgg98](https://ror.org/03xddgg98))
+16. Facultad de Medicina y Centro de Investigación en Ciencias de la Salud y Biomedicina, Universidad Autónoma de San Luis Potosí San Luis Potosí Mexico ([ROR:000917t60](https://ror.org/000917t60))
+17. Centro de Investigación en Alimentación y Desarrollo-CIAD, Unidad Regional Mazatlán en Acuicultura y Manejo Ambiental Sinaloa Mexico ([ROR:015v43a21](https://ror.org/015v43a21))
+18. Posgrado en Ciencias Genómicas, Universidad Autónoma de la Ciudad de México Mexico City Mexico ([ROR:04q0r6m34](https://ror.org/04q0r6m34))
+19. Departamento de Genética del Desarrollo y Fisiología Molecular, Universidad Nacional Autónoma de México Cuernavaca Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
+20. Facultad de Ciencias, Universidad Nacional Autónoma de Méxic Mexico City Mexico ([ROR:01tmp8f25](https://ror.org/01tmp8f25))
 
 † Corresponding author
 
@@ -79,7 +79,19 @@ To achieve this, we investigated the introduction, spread, and replacement dynam
 
 The sampling date of this study comprises January 2020 to November 2021, corresponding to the first year of the epidemic in Mexico, just before the introduction of ‘Omicron’ (B.1.1.529) into the country (Consorcio de Vigilancia Genómica MexCoV2, 2021a; Consejo Nacional de Humanidades, Ciencias y Tecnologías, 2021; Taboada et al., 2021). During this time, Mexico reported a daily mean test rate ranging between 0.13–0.18 test per 1,000 inhabitants (Ritchie, 2020). Despite a lower testing rate compared to other countries, the cumulative number of viral genomes generated throughout 2020 and 2021 (both by CoViGen-Mex and other national institutions) correlates with the number of cases recorded at a national scale, corresponding to approximately 100 viral genomes per 10,000 cases, or ~1% of the official COVID-19 cases (Figure 1—figure supplement 1). Although SARS-CoV-2 sequencing remained centralized to Mexico City, the proportion of viral genomes per state roughly coincided with the spatial distribution of confirmed cases (with Mexico City reporting most cases), as stated officially Informe Técnico Diario COVID-19 MÉXICO, 2021 (Figure 1—figure supplement 1). Therefore, SARS-CoV-2 sequencing in Mexico has been sufficient to explore the spatial and temporal frequency of viral lineages across national territory (Consorcio de Vigilancia Genómica MexCoV2, 2021a; Consejo Nacional de Humanidades, Ciencias y Tecnologías, 2021; Taboada et al., 2021), now to further investigate the number of lineage-specific introduction events, and to characterize the extension and geographic distribution of associated transmission chains under a genomic epidemiology approach, as presented in this study. Our comparative analysis on the temporal distribution of virus lineages in Mexico confirmed previous published observations (O’Toole et al., 2021a; Consejo Nacional de Humanidades, Ciencias y Tecnologías, 2021; Taboada et al., 2021) showing that relative to other virus lineages circulating at the time, only the B.1.1.222, B.1.1.519, B.1.1.7 (Alpha), P.1 (Gamma), and B.1.617.2 (Delta) lineages displayed a dominant prevalence pattern within the country. Moreover, for most of these dominant lineages, peaks in genome sampling frequency (defined here as the proportion of viral genomes assigned to a specific lineage, relative to the proportion of viral genomes assigned to any other virus lineage in a given time point) often coincided with the epidemiological waves of infection recorded (except for B.1.1.7 and P.1) (Figure 1a and b).
 
-## B.1.1.222
+![Figure 1.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig1-v2.jpg)
+
+**Figure 1.:** (a) Time-scaled phylogeny of representative SARS-CoV-2 genomes from Mexico within a global context, highlighting the phylogenetic positioning of B.1.1.222, B.1.1.519, B.1.1.7, P.1, and B.1.617.2 sequences. Lineage B.1.1.222 is shown in light green, B.1.1.519 in yellow, P.1 in red (Gamma), B.1.1.7 (Alpha) in dark green, and B.1.617.2 (Delta) in teal (b) The epidemic curve for COVID-19 in Mexico from January 2020 up to November 2021, showing the average number of daily cases (red line) and associated excess mortality (represented by a punctuated grey curve, denoting weekly average values). The peak of the first (July 2020), the second (January 2021), and the third wave (August 2021) of infection are highlighted in yellow shadowing. The dashed red line corresponds to the start date national vaccination campaign (December 2020), whilst the dashed black line represents the implementation date of a systematic genome sampling and sequencing scheme for the surveillance of SARS-CoV-2 in Mexico (February 2021). The period for the implementation of non-pharmaceutical interventions at national scale is highlighted in grey shadowing. The lower panel represents the genome sampling frequency (defined here as the proportion of viral genomes assigned to a specific lineage, relative to the proportion of viral genomes assigned to any other virus lineage in a given time point) of dominant virus lineages detected in the country during the first year of the epidemic. Lineages displaying a lower sampling frequency are jointly shown in purple. (c) Heatmap displaying the volume of trips into a given state from any other state recorded from January 2020 up to November 2021 derived from anonymized mobile device geolocated and time-stamped data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) A significant correlation between the cumulative number of cases per state versus the number of viral genome sequences available per state is observed, indicating the estimated Spearman/Pearson coefficients and associated 95% confidence intervals (CI). Mexico City (CMX) displays the highest number of genomes sequenced relative to the reported number of cases. (b) A comparison between the total number of genomes sequenced from Mexico City (CMX) assigned to the lineages of interest plotted against collection date, and the number of daily cases reported for Mexico City (CMX) with symptom onset dates ranging from July 2020 up to November 2021 (colored according to the year of sample collection). The dashed black line represents the implementation date of a broader viral genome sampling and sequencing scheme for the surveillance of SARS-CoV-2 in Mexico (February 2021). (c) The cumulative proportion of genomes sequences generated per state across time (data from February 2020 up to November 2021). The states that generated a proportion of genome sequences above 0.50 (represented by a dashed grey line, relative to other states) are indicated: Mexico City (CMX-grey), State of Mexico (MEX-light blue), Yucatan (YUC-red) and Baja California Norte (BCN-dark green). Once more, the dashed black line represents the implementation date of a broader viral genome sampling and sequencing scheme for the surveillance of SARS-CoV-2 in Mexico (February 2021).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Map graph showing the mean intra-state connectivity recorded within national territory, derived from anonymized mobile device locations collected between 01/01/2020 and 31/12/2021. Values above 4E4 are indicated using a color gradient, whilst arrow thickness within the map represents the total number of bidirectional movements between states. (b) Maps graphs showing the mean inter-state connectivity between the southern region of the country (represented by the states of Yucatán, Quintana Roo, Chiapas and Campeche) and the remaining 28 states (recorded between 01/01/2020 and 31/12/2021). Again, values above 10–4 are indicated using a color gradient, whilst arrow thickness within the map represents the total number of bidirectional movements between states.
+
+### B.1.1.222
 
 The B.1.1.222 lineage circulated in North America between April 2020 and September 2021, mostly within the USA (~80% of all B.1.1.222-assigned genomes) and Mexico (~20% of all B.1.1.222-assigned genomes). With limited reports from other regions of the world, B.1.1.222 was thus considered as endemic to the region (https://cov-lineages.org/) O’Toole et al., 2021b. The first B.1.1.222-assigned genome was sampled from Mexico on April 2020 (Mexico/CMX-INER-0026/2020-04-04) O’Toole et al., 2021b, whilst the last B.1.1.222-assigned genome was sampled from the USA on September 2021 (USA/CA-CDPH-1002006730/2021-09-14). The latest sampling date for B.1.1.222 in Mexico corresponds to July 2021 (Mexico/CHH_INER_IMSS_1674/2021-07-26), two months before the latest sampling date of the lineage at an international scale. We observe that in Mexico, the B.1.1.222 lineage was continuously detected between April 2020 and May 2021, followed by a steady decline after July 2021 (Figure 1b). During its circulation period, most B.1.1.222 genomes were collected from the central region of the country, represented by Mexico City (CMX; Figure 2a). For B.1.1.222, a rising genome sampling frequency was observed from May 2020 onwards, coinciding with the first epidemiological wave recorded during July 2020. Subsequently, genome sampling frequency progressively increased to reach a highest of 35% recorded in October 2020, denoting established dominance before the emergence and spread of B.1.1.519 (Figure 1b).
 
@@ -91,7 +103,7 @@ Data from the first year of the epidemic (available until February 2021, as anal
 
 Phylodynamic analysis for the B.1.1.222 lineage revealed one main clade deriving from a single earliest MRCA (most recent common ancestor) with a ‘most likely’ location (supported by a relative Posterior Probability [PP] of 0.99) inferred to be ‘Mexico’, denoting lineage emergence in the country (Figure 2a). The inferred date for this MRCA corresponds to March 2020, further denoting a cryptic circulation period of a month (before the earliest sampling date for the lineage within the country, see Methods section "Time-scaled analysis"). Subsequent ‘introductions’ should be interpreted as ‘re-introduction’ events into the country (with dates ranging from October 2020 to July 2021). After emergence, B.1.1.222 was seeded into the USA from Mexico multiple times. In this context, we estimate a minimum of 237 introduction events from Mexico into the USA (95% HPD interval = [225-250]), and a minimum of 106 introduction events from the USA into Mexico (95% HPD interval = [93-120]; Figure 2a). Based on inferred node dates (for MRCAs) in the MCC tree, the B.1.1.222 lineage displayed a total persistence of up to 16 months.
 
-## B.1.1.519
+### B.1.1.519
 
 Directly descending from B.1.1.222 (Figure 1a), the B.1.1.519 lineage circulated in North America between August 2020 and November 2021, mostly within the USA (~60% of all B.1.1.519-assigned genomes) and Mexico (~30% of all B.1.1.519-assigned genomes). As for B.1.1.222, B.1.1.519 genome reporting from other countries was limited, and the B.1.1.519 lineage was also considered as endemic to the region (https://cov-lineages.org/) (Taboada et al., 2021; O’Toole et al., 2021l; Cedro-Tanda et al., 2021; Rodríguez-Maldonado et al., 2021). At an international scale, the earliest B.1.1.519-assigned genome was sampled from the USA on July 2020 (USA/TX-HMH-MCoV-45579/2020-07-31) O’Toole et al., 2021c, whilst the latest B.1.1.519-assigned genome was sampled from Mexico on December 2021 (Mexico/CHP_IBT_IMSS_5310/2021-12-27) Aceves et al., 2021. During initial phylogenetic assessment, we noted that most of B.1.1.519-assigned genomes collected after November 2021 came from outside North America (namely, from Turkey and Africa). These were further identified as outliers within the tree, likely to be sequencing errors resulting, and thus were excluded from further analyses. In Mexico, the B.1.1.519 lineage was first detected on August 2020 (Mexico/YUC-NYGC-39037-20/2020-08-28) (Taboada et al., 2021).
 
@@ -99,17 +111,25 @@ Our analysis derived from cumulative genome data from Mexico shows that B.1.1.51
 
 Phylodynamic analysis for the B.1.1.519 lineage revealed a similar pattern to the one observed for B.1.1.222, with one main clade deriving from a single MRCA (Figure 2b). The inferred date for this MRCA corresponds to July 2020, again with a ‘most likely’ source location inferred to be ‘Mexico’ (PP: 0.99). Thus, our results suggest that B.1.1.519 circulated cryptically in Mexico for one month prior to its initial detection (Figure 2b). After its emergence, the B.1.1.519 lineage was seeded back and forth between the USA and Mexico, with subsequent ‘re-introduction events’ into the country occurring between July 2020 and November 2021. In this light, we estimate a minimum number of 121 introduction events from the USA into Mexico (95% HPD interval = [108-131]), compared to a minimum number of 391 introduction events from Mexico into the USA (95% HPD interval = [380-402]) (Figure 2b). Based on inferred node dates in the MCC tree, the B.1.1.519 lineage displayed a total persistence of over 16 months.
 
-## B.1.1.7
+### B.1.1.7
 
 The B.1.1.7 lineage was first detected in the UK in September 2020, spreading to more than 175 countries in over a year O’Toole et al., 2021d. The earliest B.1.1.7-assigned genome from Mexico was sampled on late December 2020 (Mexico/TAM-InDRE-94/2020-12-31), while the latest B.1.1.7-assigned genome was sampled on October 2021 (Mexico/QUE_InDRE_FB47996_S8900/2021-10-13). Our analysis derived from cumulative genome data from the country revealed a continuous detection between February and September 2021. A peak in genome sampling frequency was observed around May 2021, coinciding with a lower number of cases recorded at the time (Figure 1b). Our results further confirm that the B.1.1.7 lineage reached an overall lower sampling frequency of up to 25% (relative to other virus lineages circulating in the country), as noted prior to this study (e.g. see Zárate et al., 2022; Sánchez-Talanquer et al., 2021; Ritchie, 2020; Subsecretaria de Prevención y Promoción de la Salud, 2021b). Of interest, similar observations were independently made for other Latin American countries, such as Brazil, Chile, and Peru (https://www.gisaid.org/), likely denoting region-specific dynamics for this lineage.
 
 Phylodynamic analysis for B.1.1.7 revealed an earliest MRCA dating to late October 2020, denoting a cryptic circulation period of approximately two months prior to detection in the country. The earliest genome sampling date also coincides with at least four independent and synchronous introduction events that date back to December 2020 (Figure 3a). In total, we estimated a minimum of 224 introduction events into Mexico (95% HPD interval = [219-231]). Potentially linked to the establishment of a systematic genome sequencing in Mexico, most of these were identified after February 2021. Within the MCC, we further identified seven clades (C1a to C7a) representing extended local transmission chains, with C3 and C7 being the largest (Figure 3a, Supplementary file 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig3-v2.jpg)
+
+**Figure 3.:** Maximum clade credibility (MCC) trees for the (a) B.1.1.7 and the (b) P.1 lineages, in which major clades identified as distinct introduction events into Mexico are highlighted. Nodes shown as red outline circles correspond to the most recent common ancestor (MRCA) for clades representing independent introduction events into Mexico. Based on the earliest and latest MRCAs, the estimated circulation period for each lineage is highlighted in yellow shadowing. The dashed purple line represents the date of the earliest viral genome sampled from Mexico, while its position in the tree indicated. The dashed yellow line represents the implementation date of a systematic virus genome sampling and sequencing scheme for the surveillance of SARS-CoV-2 in Mexico. The corresponding root-to-tip regression plots for each tree are shown, in which genomes sampled from Mexico are shown in blue, whilst genomes sampled elsewhere are shown in grey. Map graphs on the left show the cumulative proportion of genomes sampled across states per lineage of interest, corresponding to the period of circulation of the given lineage (relative to the total number of genomes taken from GISAID, corresponding to raw data before subsampling). Maps on the right represent the geographic distribution of the clades identified.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig3-figsupp2-v2.jpg)
+
 During its circulation period, most B.1.1.7 genomes from Mexico were generated from the state of Chihuahua, with these also representing the earliest B.1.1.7-assigned genomes from the country (Taboada et al., 2021; Zárate et al., 2022). However, only a small proportion of these genomes grouped within a larger clade denoting an extended transmission chain (C2a), with the rest falling within minor clusters, or representing singleton events (Figure 3a). Relative to other states, Chihuahua generated an overall lower proportion of viral genomes throughout 2020–2021 (Figure 1—figure supplement 1). Between February 2021 and September 2021 (corresponding to the circulation period of the B.1.1.7 lineage/Alpha VOC in Mexico), Mexico City reported the highest number of COVID-19 cases (https://coronavirus.gob.mx/datos/#DOView). During this time, Mexico City also reported the highest number of cases related to the B.1.1.7 lineage/Alpha VOC, with 2452 confirmed cases, followed by the states of Mexico, Jalisco, and Nuevo Leon (https://coronavirus.gob.mx/variantes/). Therefore, neither phylogenetic nor epidemiological data from the country support the notion that Chihuahua may have been an initial sink-source for the B.1.1.7 lineage/Alpha VOC (or for any other virus lineage, when comparing DTA results). Various factors can impact virus lineage distribution in a given region at a specific time point, including stochastic population processes, and the role of asymptomatic carriers, which can contribute to the difficulty in identifying extended transmission chains and their geographic distribution. Consequently, we can only speculate that given its proximity to the US border, Chihuahua may have been an early introduction point of the lineage from the US. However, this observation is not supported by our phylogeographic analyses, given the restrictions on determining source locations for virus introduction events into the country related to sampling limitations.
 
 For the larger C3a and C7a clades, both MRCA’s date to February 2021, denoting independent and synchronous introduction events (Figure 3a). The C3a comprises genomes collected from 22/32 states in the country, predominantly from Mexico City (CMX), followed by southern states of Yucatán (YUC) and Quintana Roo (ROO) (Figure 3—figure supplement 1). The C3a displayed a persistence of three months: from March to June 2021. For the C7a, viral genomes were sampled from 20/32 states of the country, with >70% of these coming from the southern state of Tabasco (TAB) and north-eastern state of Tamaulipas (TAM) (Figure 3—figure supplement 1). The C7a displayed a persistence of four months: from March to July 2021. Based on inferred node dates within the MCC tree, the B.1.1.7 lineage displayed a total persistence of approximately 10 months.
 
-## P.1
+### P.1
 
 The P.1 lineage was first detected in Brazil during October 2020 (Faria et al., 2021), after which it diverged into >20 sub-lineages that spread to different parts of the world O’Toole et al., 2021a. Relevant to North America, P.1.17 was the most prevalent sub-lineage detected within the region, again sampled mostly from the USA (~60% of all sequences) and from Mexico (~30% of all sequences, https://cov-lineages.org/) O’Toole et al., 2021a. In Mexico, we detected at least 13 P.1 sub-lineages, with the majority of assigned viral genomes belonging to the P.1.17 (66%), and to a lesser extent to the parental P.1 lineage (25%), as was noted prior to this study Consorcio de Vigilancia Genómica MexCoV2, 2021b. As our dataset comprises viral genomes assigned to the P.1 and descending sub-lineages, it is henceforth referred here as a P.1+.
 
@@ -119,21 +139,418 @@ Our phylodynamic analysis for P.1+revealed a minimum number of 130 introduction 
 
 The C1_P1 clade directly descends from viral genomes sampled from South America, and is mostly represented by viral genomes collected from the central region of the country (>40% of these coming from Mexico City and the State of Mexico; CMX and MEX; Figure 3—figure supplement 2). The C1_P1_17 clade is mostly represented by viral genomes from Mexico (75%), and to a lesser extent by genomes from the USA (20%). ‘Mexico’ genomes are positions basally to the C1_P1_17 clade, collected predominantly from the southern region of the country (>90%, represented by the states of Quintana Roo and Yucatán, ROO and YUC; Figure 3—figure supplement 2). Overall, our results indicate that in Mexico, the P.1 parental lineage was introduced independently and later than P.1.17, likely from distinct geographic locations. Contrasting to P.1, the P.1.17 lineage displayed a more successful spread, denoted by a sustained transmission chain located to the southern region of the country.
 
-## B.1.617.2
+### B.1.617.2
 
 Initially detected in India during October 2020, the B.1.617.2 lineage spread globally to become dominant, and was later associated with an increase in COVID cases recorded globally following March 2021 (O’Toole et al., 2021e; Tian et al., 2021). The parental B.1.617.2 lineage further diverged into >230 descending sub-lineages (designated as the AY.X) that spread to different regions of the world (O’Toole et al., 2021a; O’Toole et al., 2021e; O’Toole et al., 2021f). Again, as our dataset comprises both B.1.617.2 and AY. X-assigned genomes, it is henceforth referred here as a B.1.617.2+.
 
 The first ‘B.1.617.2-like’ genome from Mexico was sampled on September 2020 (Mexico/AGU-InDRE_FB18599_S4467/2020-09-22), followed by a sporadic genome detection throughout January 2021 (with <10 sequences) GISAID, 2008. However, the comparative analysis on genome sampling frequencies revealed that expansion of B.1.617.2+only occurred after April 2021 (Figure 1b). We further confirmed that by August 2021, the lineage had reached a relative frequency of >95%, coinciding with the peak of the third wave of infection recorded in the country Subsecretaria de Prevención y Promoción de la Salud, 2021a. Up to the sampling date of this study, we detected >80 B.1.617.2 sub-lineages (AY.X) circulating in Mexico, with most viral genomes assigned as AY.20 (22%), AY.26 (13%), and AY.100 (5%), followed by AY.113, AY.62, and AY.3. Of interest, these were previously noted to be mostly prevalent within North America (https://cov-lineages.org/) O’Toole et al., 2021g; O’Toole et al., 2021h; O’Toole et al., 2021i; O’Toole et al., 2021j; O’Toole et al., 2021k. During its circulation period, B.1.617.2+displayed a more homogeneous genome sampling distribution across Mexico, as compared to other virus lineages. Again, this is likely to be associated with the establishment of a systematic viral genome sampling and sequencing following February 2021, further driven by the widespread expansion of the lineage throughout the country (Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/82069/elife-82069-fig4-v2.jpg)
+
+**Figure 4.:** Maximum clade credibility (MCC) tree for the B.1.617.2 lineage, in which major clades identified as distinct introduction events into Mexico are highlighted. Nodes shown as red outline circles correspond to the most recent common ancestor (MRCA) for clades representing independent introduction events into Mexico. Based on the earliest and latest MRCAs, the estimated circulation period for each lineage is highlighted in yellow shadowing. The dashed purple line represents the date of the earliest viral genome sampled from Mexico, while its position in the tree is indicated. The dashed yellow line represents the implementation date of a systematic virus genome sampling and sequencing scheme for the surveillance of SARS-CoV-2 in Mexico. The corresponding root-to-tip regression plot for the tree is shown, in which genomes sampled from Mexico are shown in blue, whilst genomes sampled elsewhere are shown in grey. The map graph on the left show the cumulative proportion of genomes sampled across states per lineage of interest, corresponding to the period of circulation of the given lineage (relative to the total number of genomes taken from GISAID, corresponding to raw data before subsampling). The map on the right represents the geographic distribution of the main clades identified (for further details see Supplementary file 2). On the right, a zoom-in to the C5d and C6d clades showing sub-lineage composition with the most likely location estimated for each node. Geographic spread across Mexico inferred for these clades is further represented on the maps on the right, derived from a discrete phylogeographic analysis (DTA, see Methods section "Time-scaled analysis"). Viral transitions between Mexican states are represented by curved lines colored according to sampling location, showing only well-supported transitions (Bayes Factor >100 and a PP >0.9) (see Table 1).
+
 Phylodynamic analysis for B.1.617.2+revealed a minimum number of 142 introduction events into Mexico (95% HPD interval = [125-147]). Within the MCC, six major clades denoting extended transmission chains were identified (C1d-C6d), with C1d, C3d, C5d, and C6d being the largest (Figure 4, Supplementary file 2). At least four independent introduction events were detected as the earliest (and synchronous) MRCAs, all dating to April 2021 (including the ancestral nodes of the C3d, C4d, and C6d clades). Based on inferred node dates in the MCC tree, we report a total lineage persistence of seven months (up to November 30, 2021). C2d comprises ‘Mexico’ virus genomes assigned as AY.62, sampled mainly from the state of Yucatán. Clade C4d comprises genomes from Mexico assigned as AY.3, sampled mostly from the central and south of the country (JAL) (Figure 4). Of interest, the C1d and C3d clades represent two independent introduction and spread events of the AY.26 sub-lineage into the country. C1d comprises genomes from Mexico sampled from the north (>60%; BCS, SIN, JAL), followed by central (CMX) and south-eastern states (VER, ROO, and YUC) (Figure 4). The MRCA of the C1d dates to May 2021, denoting a clade persistence of 6 months (from May 2021 to November 2021). Comparably, the C3d comprises genomes from Mexico mostly sampled from the north (37%; SIN, BCS, and SON). Comparably, the MRCA of the C3d dates to April 2021, denoting a clade persistence of 7 months (from April 2021 to November 2021) (Figure 4).
 
 For the largest clades identified, C5d comprises viral genomes assigned as AY.100 (44%), to the parental B.1.617.2 (40%), and to the AY.113 (12%). Within this clade, we observe that the AY.100 and B.1.617.2 genomes are separated by a central sub-cluster of AY.113-assigned genomes (Figure 4). Approximately 70% of the genome sequences within C5d were sampled from Mexico (mostly assigned as AY.100 and AY.113), whilst 30% were sampled from the USA (mostly assigned as B.1.617.2). The majority of the ‘Mexico’ genomes are positioned basally and distally within the clade, sampled from all 32 states, but predominantly from north, centre and southern regions (>50%; represented by CHH, DUR, NLE, CMX, MEX, CAM, YUC, TAB, CHP, and ROO; Figure 4). Thus, the C5d represents the most genetically diverse and geographically widespread clade identified in Mexico. The MRCA of the C5d dates to May, denoting a clade persistence of up to 6 months (from May 2021 to November 2021). C6d is the second largest clade identified, comprising viral genomes from Mexico assigned as AY.20, mostly collected from central region of the country (>60%; represented by CMX, MEX, MOR, MIC, and HID) (Figure 4). Thus, contrasting to C5d, C6d denotes an extended transmission chain with a geographic distribution mainly restricted to central Mexico. The MRCA of the C6d clade dates to April, displaying a clade persistence of seven months (from April 2021 to November 2021).
 
-## Spread of B.1.617.2
+### Spread of B.1.617.2
 
 Given the size and diversity of the C5d and C6 clades, we further explored viral diffusion patterns across the country using a phylogeographic approach (see Methods section "Time-scaled analysis"). For the C5d clade, viral spread is likely to have occurred from the south (represented by the states of Chiapas and Campeche; CHP and CAM) into the rest of the country (Figure 4—video 1). Well-supported transitions (scored under a BF >100 and a PP >.90) were mostly inferred from the southern state of Campeche (CAM) into central and northern states, and subsequently from the northern state of Chihuahua (CHH) into the central and northern region of the country, with some bidirectionality observed. Well-supported transitions were also observed from Baja California into Chihuahua (BCN/BCS into CHH), and from Chihuahua into the USA (arbitrarily represented by the geographic coordinates of the state of California) (Figure 4). Contrastingly, for C6d, a limited viral spread was observed from central states (represented by Mexico City, CMX) into central, northern and southern regions of the country (again with some bidirectionality observed). Well-supported transitions were also inferred from the southern state of Chiapas into central and northern region of the country (Figure 4—video 2). Bayes Factor (BF) and Posterior Probability (PP) for well-supported transitions observed between locations can be found as Table 1.
 
-## Linking virus spread to human mobility data
+**Table 1.**
+ Bayes Factor (BF) and Posterior Probability (PP) for well-supported transitions observed between locations*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>C5d</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>C6d</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Location</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>BFR</th>
+      <th>PP</th>
+      <th>From</th>
+      <th>To</th>
+      <th>BFR</th>
+      <th>PP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BCN</td>
+      <td>CHH</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>AGU</td>
+      <td>CHP</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>CHP</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>BCN</td>
+      <td>CHP</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>CMX</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>CMX</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>MEX</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>COA</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>MIC</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>DUR</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>other</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>GRO</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>QUE</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>GUA</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>ROO</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>HID</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>SLP</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>JAL</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>SON</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>MEX</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>TAB</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>MIC</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>TAM</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>NLE</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>TLA</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>OAX</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>VER</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>other</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>ZAC</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>PUE</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CMX</td>
+      <td>CHH</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>QUE</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>CHP</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>SIN</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>CMX</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>SLP</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>DUR</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>SON</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>GUA</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>TAB</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>MIC</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>TLA</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>NLE</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>VER</td>
+      <td>13635.15617</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>QUE</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CAM</td>
+      <td>CHP</td>
+      <td>13635.15617</td>
+      <td>0.998890122</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>TAB</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>NLE</td>
+      <td>TAB</td>
+      <td>13635.15617</td>
+      <td>0.998890122</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>TAM</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>TAM</td>
+      <td>6810.002999</td>
+      <td>0.997780244</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>VER</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>CHP</td>
+      <td>YUC</td>
+      <td>2714.911095</td>
+      <td>0.99445061</td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>ZAC</td>
+      <td>14535.32494</td>
+      <td>1</td>
+      <td>MEX</td>
+      <td>PUE</td>
+      <td>164.4591205</td>
+      <td>0.915649279</td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>CMX</td>
+      <td>14535.32494</td>
+      <td>0.998890122</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>TLA</td>
+      <td>14535.32494</td>
+      <td>0.998890122</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>SIN</td>
+      <td>3621.718465</td>
+      <td>0.995560488</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BCS</td>
+      <td>CHH</td>
+      <td>1023.240732</td>
+      <td>0.984461709</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MIC</td>
+      <td>YUC</td>
+      <td>468.8988157</td>
+      <td>0.966703663</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CHH</td>
+      <td>other</td>
+      <td>399.6060762</td>
+      <td>0.961154273</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CAM</td>
+      <td>COA</td>
+      <td>188.7999953</td>
+      <td>0.921198668</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MEX</td>
+      <td>YUC</td>
+      <td>126.5111615</td>
+      <td>0.886792453</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*derived from the phylogeographic analyses for C5d and C6d (B.1.617.2+). Only values of BF >100 and PP >0.9 are shown._
+
+### Linking virus spread to human mobility data
 
 Human movement can directly contribute to virus spread into unexposed areas, while mobility patterns may also reveal the impact of social and demographic factors on epidemics, such as population density and the effectiveness of non-pharmaceutical interventions at different scales. Thus, tracking human mobility is crucial to understand virus spread, especially when other factors cannot fully explain observed trends. Our analysis on human mobility data derived from mobile phone usage (collected between January 2020 and December 2021 at a national scale, see Methods section "Human mobility data analysis and exploring correlations with genomic data"), revealed two mobility peaks across time (Figure 1c). The first occurred between February and April 2021, coinciding with the introduction and spread of the B.1.1.7 and P.1+lineages, and with the contraction of B.1.1.519. The second mobility peak was observed between August and November 2021, coinciding with the expansion of the B.1.617.2 lineage. Increased human movement (represented by the cumulative number of trips into a given state) were observed for Mexico City, and to a lesser extent, for Jalisco, the State of Mexico, Nuevo León and Puebla (followed by Coahuila, Guanajuato, and Veracruz; Figure 1c). Mean connectivity within national territory revealed intensified movements from Mexico City into the State of Mexico, Morelos, Hidalgo, Puebla, Veracruz and Jalisco, and from Jalisco into Michoacán and Guadalajara (Figure 1—figure supplement 2). However, for both the C5d and C6d clades, no correlation between viral transitions and mean connectivity was observed (C5d: Adjusted R-squared: 0.006577, F-statistic: 7.15 on 1 and 928 DF, p-value: 0.007628. C6d: Adjusted R-squared: 0.3216, F-statistic: 470.8 on 1 and 990 DF, p-value:<2.2e-16), nor with the pairwise distance between states (C5d: Adjusted R-squared: 0.01086, F-statistic: 4.051 on 1 and 277 DF, p-value: 0.04511. C6d: Adjusted R-squared: 0.02296, F-statistic: 2.715 on 1 and 72 DF, p-value: 0.1038). Many of the lineage-specific clades we identify displayed a geographic distribution within southern region of the country (i.e. clades C3a and C7 for B.1.1.7, clade C1_P1_17 for P.1, and clades C2d and C5d for B.1.617.2). In this context, ranking connectivity between the southern region of the country (represented by Yucatán, Quintana Roo, Chiapas and Campeche) and the remaining 28 states did reveal a consistently high number of bidirectional movements between regions (represented by the CAM, CMX, and VER; Figure 1—figure supplement 2).
 
@@ -157,11 +574,11 @@ Limitations of our study include uncertainty in determining source locations for
 
 ## Methods
 
-## Data collation and initial sequence alignments
+### Data collation and initial sequence alignments
 
 Global genome datasets assigned to each ‘Pango’ (Rambaut et al., 2020) lineage under investigation (B.1.1.222, B.1.1.519, B.1.1.7, P.1, and B.1.617.2) were downloaded with associated metadata from the GISAID platform (https://www.gisaid.org/) as of November 30th 2021 (GISAID, 2008; Shu and McCauley, 2017). The total number of sequences retrieved for each virus lineage were the following: B.1.1.222=3461, B.1.1.519=19,246, B.1.1.7=913,868, P.1=87,452, and B.1.617.2=2,166,874. These also included all SARS-CoV-2 genomes from Mexico available up the sampling date of this study, generated both by CoViGen-Mex and by other national institutions. Viral genome sequences were quality filtered to be excluded if presenting incomplete collection dates, if >1000 nt shorter than full genome length, and/or if showing >10% of sites coded as ambiguities (including N or X). Individual datasets were further processed using the Nextclade pipeline to filter according to sequence quality (Aksamentov et al., 2021). In addition, a set of the earliest SARS-CoV-2 sequences sampled from late 2019 to early 2020 (including reference sequence Wuhan-Hu-1, GenBank accession ID: MN908947.3), and a set of viral genomes representing an early virus diversity sampled up to May 31, 2020 were added for rooting purposes (https://github.com/BernardoGG/SARS-CoV-2_Genomic_lineages_Ecuador; Gutierrez, 2021). To generate whole genome alignments, datasets were mapped to the reference sequence Wuhan-Hu-1 (GenBank: MN908947.3) using Minimap2 (Li, 2018). Then, the main viral ORFs (Orf1ab and S) were extracted to generate reduced-length alignments of approximately 25,000 bases long, comprising only the largest and most phylogenetically informative coding genome regions (excluding smaller ORFs, UTRs, and short intergenic sequences).
 
-## Migration data and phylogenetically-informed subsampling
+### Migration data and phylogenetically-informed subsampling
 
 To provide an overview for global introductory events into Mexico as a proxy for dataset reduction, we used openly available data describing anonymized relative human mobility flow into different geographical regions based on mobile data usage (Kraemer et al., 2020a; Inward et al., 2022) (https://migration-demography-tools.jrc.ec.europa.eu/data-hub/index.html?state=5d6005b30045242cabd750a2). For any given dataset, all ‘non-Mexico’ sequences were sorted according to their location, selecting only the top 5 countries representing the most intense human mobility flow into Mexico. In the case reported sub-lineages, the subsampled datasets were further reduced by selecting the top 5 sub-lineages that circulate(d) in the country. The ‘Mexico’ genome sets were then subsampled to 4000 in proportion to the total number of cases reported across time (corresponding to the epidemiological weeks from publicly accessible epidemiological data from the country Gobierno de México, 2021a). This yielded datasets of a maximum of 8,000 genomes, with an approximate 1:1 ratio of ‘Mexico’ to ‘globally sampled’ viral genomes (keeping those corresponding to the earliest and latest collection dates, sampled both from Mexico and globally). Preliminary Maximum Likelihood (ML) tress were then inferred using IQ-TREE (command line: iqtree -s -m GTR +I + G -alrt 1000 Minh et al., 2020).
 
@@ -169,11 +586,11 @@ Phylogenetically informed subsampling is based on maintaining basic clustering p
 
 We further sought to validate our migration-informed genome subsampling scheme (applied to B.1.617.2+, representing the best sampled lineage in Mexico). For this, an independent dataset was built using a different migration sub-sampling approach, comprising all countries represented by B.1.617.2+sequences deposited in GISAID (available up to November 30, 2021). In order to compare the number of introduction events, the new dataset was analysed independently under a time-scaled DTA (as described in Methods Section "Time-scaled analysis"). The distribution plots for each genome dataset before and after applying our migration- and phylogenetically informed subsampling pipeline, and a full description of the approach employed to validate our migration-informed subsampling is available as Appendix 1.
 
-## Dataset assembly for initial phylogenetic inference
+### Dataset assembly for initial phylogenetic inference
 
 Given the reduced size of the original B.1.1.222 dataset, all sequences retained after initial quality filtering were used for further analyses. This resulted in a 3849-sequence alignment (including 760 genomes from Mexico). All other datasets (B.1.1.519, B.1.1.7, P.1, and B.1.617.2) were processed under the pipeline described (in Methods section "Migration data and phylogenetically-informed subsampling") to render informative datasets for phylogeographic analysis. The B.1.1.519 final dataset resulted in a 5001-sequence alignment, including 2501 genomes from Mexico. The B.1.1.7 final dataset resulted in a 7049-sequence alignment, including 1449 genomes from Mexico. The P.1 final dataset resulted in a 5493-sequence alignment, including 2570 genomes from Mexico. The B.1.617.2 final dataset resulted in a 5994-sequence alignment, including 3338 genomes from Mexico. All genome sequences used are publicly available and are listed in Supplementary file 1. Individual datasets were then used for phylogenetic inference as described above, with the resulting trees inputted for a time-scaled analyses.
 
-## Time-scaled analysis
+### Time-scaled analysis
 
 Output ML trees were assessed for temporal signal using TempEst v1.5.3 (Rambaut et al., 2016), removing outliers and re-estimating trees when necessary. The resulting trees were then time-calibrated informed by tip sampling dates using TreeTime (Sagulenko et al., 2018) (command line: treetime -aln --tree --clock-rate 8e-4 --dates --keep-polytomies --clock-filter 0). Due to a low temporal signal, a fixed clock rate corresponding to the reported viral evolutionary rate estimated (8×10−4 substitutions per site per year) was used (Su et al., 2020; MacLean et al., 2020). Root-to-tip regression plots for the ML trees (prior to time calibration, and excluding rooting sequences) show a weak temporal signal, and support the use of a fixed molecular clock rate (8×10–4) for the temporal calibration of phylogenetic trees (Figures 2—4).
 
@@ -181,6 +598,6 @@ In order to quantify lineage-specific introduction events into Mexico and to cha
 
 For the B.1.1.7, P.1, and B.1.617.2 datasets, analyses were performed to estimate the number of transitions into Mexico from other (unknown) geographic regions. Thus, two locations were considered: ‘Mexico’ and ‘other’. For the B.1.1.222 and B.1.1.519 datasets, we estimated the number of transitions between Mexico and the USA, based on the fact both these lineages were considered endemic to North America (with >90% of the virus genomes sampled from the USA and Mexico; O’Toole et al., 2021b). For this cases, three distinct geographic locations were considered: ‘Mexico’, ‘USA’ and ‘other’. The ‘most likely’ locations for lineage emergence were further obtained by comparing relative posterior probabilities (PP) between inferred ancestral locations for the given TMRCAs (Dellicour et al., 2021; Suchard et al., 2018; Lemey et al., 2009). For all analyses, independent Monte Carlo Markov Chain (MCMC) were run for 106 iterations, sampling every 103 states. To assess for sufficient effective sample size values (i.e. ESS >200) associated with the estimated parameters, we inspected MCMC convergence and mixing using Tracer 1.7 (Rambaut et al., 2018). In the case of B.1.617.2, we further explored viral diffusion patterns across the country by running two additional DTAs applied to the largest monophyletic clades identified within the MCC tree (C5d and C6d). For this, we used 33 distinct sampling locations (including all 32 states from Mexico, plus an ‘other’ location, referring to viral genomes sampled from outside the country). Visualization of the viral diffusion patterns was performed using SpreadViz (https://spreadviz.org/home), an updated web implementation of the Spatial Phylogenetic Reconstruction of Evolutionary Dynamics software SpreaD3 (Bielejec et al., 2016). In order to identify well-supported transitions between locations (Lemey et al., 2009), SpreadViz was also further used to estimate Bayes Factor (BF) values.
 
-## Human mobility data analysis and exploring correlations with genomic data
+### Human mobility data analysis and exploring correlations with genomic data
 
 Human mobility data used for this study derived from anonymized mobile device locations collected between 01/01/2020 and 31/12/2021 within national territory, made available by the company Veraset (Fontanelli, 2020). The source dataset includes anonymized identifiers for mobile devices, geographical coordinates (latitude and longitude) and a timestamp. The dataset was used to construct aggregated inter-state mobility networks, where nodes are defined as each of the 32 states from the country, whilst (weighed and directed) edges represent the normalized volume of observed trips between nodes (Fontanelli, 2020). The resulting networks were then used to quantify the number of cumulative trips from any state into a given specific state across time, the geographic distances among states, the mean inter-state connectivity observed between April 2021 and November 2021 (corresponding to the expansion period for the B.1.617.2 lineage, see Figure 4b, Supplementary file 3), and finally, for ranking connectivity between the south region of the country (represented by the states of Yucatán, Quintana Roo, Chiapas and Campeche) and the remaining 28 states (Supplementary file 3). The connectivity measure was defined as the sum of the weights for edges that go from any given node into other node(s), reflecting the number of trips in any direction. We then used the ‘PhyCovA’ software tool (https://evolcompvir-kuleuven.shinyapps.io/PhyCovA/) to perform preliminary analysis for exploring the human mobility data from the country as a potential predictor of viral transition among locations (Blokker et al., 2022). ‘PhyCovA’ was chosen as an explanatory approach over a fully-integrated GLM implemented in the Bayesian BEAST framework, as the last one would imply a high computational burden related to our datasets (Suchard et al., 2018).

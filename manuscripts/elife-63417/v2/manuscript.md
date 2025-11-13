@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Transient receptor potential (TRP) channels participate in calcium ion (Ca 2+ ) influx and intracellular Ca 2+ release. TRP channels have not been studied in Toxoplasma gondii or any other apicomplexan parasite. In this work, we characterize TgGT1_310560, a protein predicted to possess a TRP domain (TgTRPPL-2), and determined its role in Ca 2+ signaling in T. gondii , the causative agent of toxoplasmosis. TgTRPPL-2 localizes to the plasma membrane and the endoplasmic reticulum (ER) of T. gondii . The ΔTgTRPPL-2 mutant was defective in growth and cytosolic Ca 2+ influx from both extracellular and intracellular sources. Heterologous expression of TgTRPPL-2 in HEK-3KO cells allowed its functional characterization. Patching of ER-nuclear membranes demonstrates that TgTRPPL-2 is a non-selective cation channel that conducts Ca 2+ . Pharmacological blockers of TgTRPPL-2 inhibit Ca 2+ influx and parasite growth. This is the first report of an apicomplexan ion channel that conducts Ca 2+ and may initiate a Ca 2+ signaling cascade that leads to the stimulation of motility, invasion, and egress. TgTRPPL-2 is a potential target for combating toxoplasmosis.
+Transient receptor potential (TRP) channels participate in calcium ion (Ca2+) influx and intracellular Ca2+ release. TRP channels have not been studied in Toxoplasma gondii or any other apicomplexan parasite. In this work, we characterize TgGT1_310560, a protein predicted to possess a TRP domain (TgTRPPL-2), and determined its role in Ca2+ signaling in T. gondii, the causative agent of toxoplasmosis. TgTRPPL-2 localizes to the plasma membrane and the endoplasmic reticulum (ER) of T. gondii. The ΔTgTRPPL-2 mutant was defective in growth and cytosolic Ca2+ influx from both extracellular and intracellular sources. Heterologous expression of TgTRPPL-2 in HEK-3KO cells allowed its functional characterization. Patching of ER-nuclear membranes demonstrates that TgTRPPL-2 is a non-selective cation channel that conducts Ca2+. Pharmacological blockers of TgTRPPL-2 inhibit Ca2+ influx and parasite growth. This is the first report of an apicomplexan ion channel that conducts Ca2+ and may initiate a Ca2+ signaling cascade that leads to the stimulation of motility, invasion, and egress. TgTRPPL-2 is a potential target for combating toxoplasmosis.
 
 ## Introduction
 
@@ -36,9 +36,17 @@ In this work, we characterize TgTRPPL-2 in T. gondii, which represents the first
 
 ## Results
 
-## TgTRPPL-2 (TgGT1_310560) localizes to the plasma membrane and the endoplasmic reticulum
+### TgTRPPL-2 (TgGT1_310560) localizes to the plasma membrane and the endoplasmic reticulum
 
 Two genes in the T. gondii’s genome annotated as hypothetical proteins possess polycystic kidney disease (PKD) domains, which are characteristic of the Subfamily P (polycystin) of TRP channels. Mammalian TRPP channels contain six transmembrane domains with a large extracellular loop between the first and second transmembrane domain (Montell, 2005). We termed these proteins in T. gondii TgTRPPL-1 (TgGT1_247370) and TgTRPPL-2 (TgGT1_310560). Using BLASTp to compare the amino acid sequences of the human PC2 and TgTRPPL-2 showed low-sequence homology (21.7%), even within the PKD domains. The TgGT1_310560 gene predicts the expression of a protein of 2191 amino acids with an apparent molecular weight of 237 kDa and 14 transmembrane domains. The predicted topology (Omasits et al., 2014) showed a large extracellular loop between the first and second transmembrane domains, which is characteristic of PKD channels (Figure 1A, B). Because our initial analysis showed low-sequence homology, we next analyzed the amino acid sequence using the software HHPred, which searches for homology based on protein sequence and secondary structure (Söding, 2005). Sequence analysis of TgTRPPL-2 showed high homology to human PC2, and the top 10 hits obtained were PC2 homologous from a variety of organisms (Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the InterPro Domain annotation of TgTRPPL-2 in the GT1 strain. Red line indicates coverage of the sequence by mass spectrometry. (B) Predicted topology for TgTRPPL-2 in GT1 strain. Model was generated with the Protter application (Omasits et al., 2014). The PKD domain is shown in orange. The domain used to generate antibodies is highlighted in green. Predicted Transmembrane Domains (TMDs) are highlighted in purple. The red arrowhead indicates the predicted cleavage site for TgTRPPL2. (C) Schematic representation of C-terminal tagging of TgTRPPL-2 in TatiΔKu80 parasites and western blots of TgTRPPL-2-smHA membranes using αHA (1:1000) showing a major band at approximately 150 kDa (red arrowhead). (D) Immunofluorescence analysis (IFA) of extracellular tachyzoites using αHA antibody and co-localization with αSAG1 (1:1000) and αSERCA (1:1000) showing partial co-localization with both markers. (E) IFAs of extracellular and intracellular (F) tachyzoites respectively with αTgTRPPL-2 (1:100) showing labeling of the protein at the periphery, co-localized with αSAG1 (1:1000) and with αTgSERCA (1:1000). (G) Super-resolution of extracellular IFAs using αTgTRPPL-2 (1:100) co-localized with αSAG1 (1:1000) but not with αGAP45 (1:1000). Scale bars in D-G represent 5 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Amplification of ~2 kB in the TgTRPPL-2-smHA cell line validating the correct integration of TgTRPPL-2-smHA. (B) Western blot of three biological replicates of immunoprecipitated TgTRPPL-2-smHA using αHA antibody (1:1000) shows a band of ~150 kDa (highlighted by red boxes and arrow). No band is present in the control cell line. (C) Immunofluorescence analysis (IFA) of intracellular tachyzoites with αHA (1:100), αSAG1 (1:1000), and αGAP45 (1:1000) . (D) IFAs of intracellular and extracellular tachyzoites with αHA (1:100) show that TgTRPPL-2 did not co-localize with either αGAP45 (1:1000) or αGra1 (1:500). (E) IFAs of extracellular tachyzoites preincubated with α-toxin showing co-localization of TgTRPPL-2 with αSag1 (1:1000) but not with αGap45. (F) Quantification of Pearson’s coefficient of the co-localization of TgTRPPL2 with SAG1 or GAP45.
 
 To investigate the localization of TgTRPPL-2, we introduced the high-affinity tag smHA (Hortua Triana et al., 2018a) at the 3′ terminus of the TgTRPPL-2 locus and isolated TgTRPPL-2-smHA cell clones. Carboxy-terminus tagging was done in the parental line RHTatiΔku80 (TatiΔku80), which favors homologous recombination (Sheiner et al., 2011). Correct incorporation of the tag in the TgTRPPL-2-smHA line was validated by PCR (Figure 1—figure supplement 1A) and western blot analysis using anti-HA antibodies (Figure 1C). A band of approximately ~150 kDa was observed in lysates of TgTRPPL-2-smHA tachyzoites, which is nearly 87 kDa smaller than the predicted size of 237 kDa without taking into account the smHA tag (~39 kDa).
 
@@ -50,9 +58,17 @@ We next generated polyclonal antibodies against a fragment peptide of TgTRPPL-2,
 
 In summary, TgTRPPL-2 is expressed in T. gondii tachyzoites, is likely post-translationally cleaved, and localizes to the ER and the periphery.
 
-## TgTRPPL-2 is important for growth, invasion, and egress of T. gondii
+### TgTRPPL-2 is important for growth, invasion, and egress of T. gondii
 
 With the aim of investigating the physiological role of TgTRPPL-2 in T. gondii, we generated the ΔTgTRPPL-2 mutant using the CRISPR-Cas9 approach (Shen et al., 2017) to disrupt the transcription of TgTRPPL-2 by inserting a dihydrofolate reductase-thymidylate synthase (DHFR) cassette in the TgTRPPL-2 genomic locus (Figure 2A). Genetic controls for the insertion were done by PCR (Figure 2—figure supplement 1A) and qPCR, which showed a significant decrease in the levels of TgTRPPL-2 transcripts (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the generation of ΔTgTRPPL-2 in the T. gondii RH strain. (B) qPCR of total RNA from ΔTgTRPPL-2 (Δ), ΔTgTRPPL-2-trppl2 (C), and parental strains (P) using primers upstream and downstream of the insertion site of the dihydrofolate reductase-thymidylate synthase cassette. (C) Immunofluorescence analysis of extracellular parasites showing plasma membrane labeling with αTgTRPPL-2 (1:1000) and co-localization with αSERCA (1:1000). (D) Plaque assays of parental (P), ΔTgTRPPL-2 (Δ), and ΔTgTRPPL-2-trppl2 (C) parasites. Quantification of plaque sizes from three independent biological experiments using Student’s t-test. Values are means ± SEM. ****p<0.0001. (E) Red green assays of parental, and ΔTgTRPPL-2 cells quantifying invaded and attached intracellular parasites. Assays were done at two concentrations of extracellular Ca2+: 0.5 and 1.8 mM. Values are means ± SEM. **p<0.001, ****p<0.0001. (F) Time to egress stimulated by saponin/Ca2+ at 1.8 mM extracellular Ca2+ of both parental and the ΔTgTRPPL-2 mutant. (G) Statistical analysis of average egress time stimulated by saponin or Zaprinast in the presence or absence of extracellular Ca2+. Analysis was performed from three independent biological replicates using Student’s t-test. Values are means ± SEM, **p<0.003, ****p<0.0001. Black bars represent parental strain, blue bars represent ΔTgTRPPL-2. Scale bars for C represent 5 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Genomic validation of the insertion of the dihydrofolate reductase-thymidylate synthase cassette in the ΔTgTRPPL-2 locus. Primers used are shown in Figure 2A. (B) Western blot analysis of total lysates from different cells lines were run in an SDS-PAGE and developed with αTgTRPPL2 (1:1000) and αTubulin (1:10,000) (1: ΔKu80Tati; 2: TgTRPPL2-smHA; 3: RH; 4: ΔTgTRPPL-2). Note that all cell lines show a band at ~115–120 kDa and lane 2 (tagged line) shows two bands one at ~115–120 kDa and an additional band of ~150 kDa due to the presence of the smHA tag, which adds approximately 39 kDa to the protein. The sum of these two bands (120 + 150 kDa) represents the size predicted for TgTRPPL2 tagged with the smHA tag in ToxoDB. (C) Western blots of lysates from parental, ΔTgTRPPL-2 (Δ) and ΔTgTRPPL-2-trppl2 (C) cells were run in an SDS-PAGE cell and developed with the anti-TgTRPPL-2 antibody at 1:1000. αTubulin (1:10,000) was used as loading control. (D) Immunofluorescence analysis of extracellular tachyzoites with αTgTRPPL-2 (1:1000) co-localized with αSERCA (1:1000) in ΔTgTRPPL-2 and ΔTgTRPPL-2-trppl2. Scale bars represent 5 μm. Images were taken with equivalent time and laser power.
 
 We next complemented the ΔTgTRPPL-2 mutant with Cosmid PSBLZ13 (Vinayak et al., 2014) that contains the whole genomic locus of the TgTRPPL-2 gene and generated the cell line ΔTgTRPPL-2-trppl2. Controls for the expression of TgTRPPL-2 were done by qPCR (Figure 2B) and IFAs, which further confirmed the identity of the tagged gene, as it was not expressed in the ΔTgTRPPL-2 mutants and was present in the complemented line ΔTgTRPPL-2-trppl2 (Figure 2C). Further validation of the absence of expression of TgTRPPL-2 and its complementation is shown in Figure 2—figure supplement 1 with western blots analyses with mouse α-TgTRPPL-2 antibody and additional IFA images of the ΔTgTRPPL-2 and ΔTgTRPPL-2-trppl2 (Figure 2—figure supplement 1B, D). The western blots in Figure 2—figure supplement 1B, C showed a band at ~115 kDa in lysates of TatiΔku80, TgTRPPL-2-smHA and RH (wild type strain), which was absent in the ΔTgTRRPL-2 mutant. This band most likely represented the endogenously cleaved TgTRPPL-2. In the TgTRPPL2-smHA mutant lysate there was an additional band of ~150 kDa from the smHA tag, which added approximately 39 kDa to the protein, because of the smHA tag. The sum of both bands (120 + 150 kDa) represents the size predicted for TgTRPPL-2 in ToxoDB plus the smHA tag.
 
@@ -64,9 +80,17 @@ Egress of intracellular tachyzoites can be triggered by permeabilizing infected 
 
 In summary, disruption of the TgTRPPL-2 locus negatively impacted two important steps of the T. gondii lytic cycle, invasion and egress, which impaired parasite growth.
 
-## TgTRPPL-2 is important for cytosolic Ca2+ influx
+### TgTRPPL-2 is important for cytosolic Ca2+ influx
 
 We previously showed that T. gondii extracellular tachyzoites allow influx of Ca2+ when exposed to 1.8 mM extracellular Ca2+ (Pace et al., 2014). To determine the role of TgTRPPL-2 in this pathway, we loaded extracellular ΔTgTRPPL-2 parasites with Fura-2-AM to study intracellular Ca2+ changes after exposing them to 1.8 mM extracellular Ca2+ (Figure 3A). The resting cytosolic Ca2+ concentration of the ΔTgTRPPL-2 mutant was around 75 nM, which is similar to the resting concentration of parental cells (~70–100 nM). Adding 1.8 mM Ca2+ to the extracellular buffer caused an increase in cytosolic Ca2+ in both the parental strain and the ΔTgTRPPL-2 mutant (Figure 3B). However, Ca2+ influx of the ΔTgTRPPL-2 mutant was decreased by approximately 50% (Figure 3C). The ΔTgTRPPL-2-trppl2 mutant, however, regained the Ca2+ influx activity and showed higher Ca2+ influx than parental cells, consistent with the higher expression of TgTRPPL-2 shown by qPCR (Figure 2B). The reduction of Ca2+ influx was further confirmed when adding 1 mM extracellular Ca2+ to the ΔTgTRPPL-2 mutant (Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scheme showing the mechanism of Ca2+ influx and how cytosolic Ca2+ may activate the PM channel (Ca2+-activated calcium entry). NSC: nifedipine-sensitive channel; PKG: protein kinase G; PDE: phosphodiesterase; Thap: thapsigargin; Zap: Zaprinast.(B) Cytosolic Ca2+ measurements of Fura-2 loaded tachyzoites of the parental (RH), ΔTgTRPPL-2 and ΔTgTRPPL-2-trppl2 lines. The buffer contains 100 μM ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid (EGTA) to chelate contaminating Ca2+ and at 300 s, 1.8 mM Ca2+ were added to the suspension. The pink box indicates the area used for the quantification presented in (C). (C) Quantification and statistical analysis of the change in cytosolic Ca2+ during the first 20 s after addition of extracellular Ca2+. ***p<0.0002. (D) Constitutive Ca2+ influx into the cytosol of parasites suspended in a buffer with 1.8 mM Ca2+. (E) Quantification and statistical analysis of the slopes from (D). ****p<0.0001. (F) Cytosolic Ca2+ increase after adding Thap (1 µM) followed by Ca2+ influx after the addition of 1.8 mM extracellular Ca2+ at 400 s. The pink boxes indicate the area used for the quantification presented in (G) and (H). (G) Quantification and statistical analysis of the change in cytosolic Ca2+(Δ[Ca2+]cyt) at 50 s after the addition of Thap. (H) Quantification of the Δ[Ca2+]cyt 20 s after the addition of 1.8 mM of Ca2+. ***p<0.0008, ****p<0.0001. (I) Cytosolic Ca2+ increase stimulated by Zaprinast (100 µM) in the presence of 1.8 mM extracellular Ca2+. (J) Quantification and statistical analysis of the Δ[Ca2+]cyt during the first 15 s after adding Zaprinast (100 µM) (pink box, in I). **p<0.001, ****p<0.0001. (K) Quantification and statistical analysis of the Δ[Ca2+]cyt during the 20 s after adding Ca2+ without additions (ND) or after adding Thap or Zap. *p<0.02, **p<0.005, ***p<0.0008. Statistical analysis for all experiments was done from a minimum of three independent trials using Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cytosolic Ca2+ measurements of Fura-2-loaded tachyzoites of the parental and ΔTgTRPPL-2 mutant after addition of 1 mM extracellular Ca2+ at 300 s. (B) Cytosolic Ca2+ measurement after the addition of Zaprinast (100 µM) at 100 s and Ca2+ influx stimulated by the addition of 1.8 mM extracellular Ca2+ at 400 s. (C) Change in cytosolic Ca2+ 15 s after the addition of Zaprinast (labeled Zaprinast) and 20 s after the addition of 1.8 mM of extracellular Ca2+ (labeled Ca2+after Zaprinast). Values are means ± SEM, n = 3, **p<0.007, ****p<0.0001. Measurements of the complemented strain are not shown as the concentration of calcium goes outside the Fura 2 range.
 
 When T. gondii extracellular tachyzoites were suspended in a high Ca2+ buffer, a slow constitutive cytosolic influx of Ca2+ was observed, which we attribute to leakage through a PM channel (Figure 3D, parental black tracing). Interestingly, this leakage activity was significantly reduced in the ΔTgTRPPL-2 mutant (Figure 3D, E, blue tracing and bar), suggesting a role for TgTRPPL-2 in constitutive cytosolic Ca2+ influx at the PM. Additional evidence is provided by the enhanced Ca2+ leakage observed with the ΔTgTRPPL-2-trppl2 (Figure 3D, E, purple trace and bar). The high level of Ca2+ influx observed with the ΔTgTRPPL-2-trppl2 mutant may affect parasite fitness and would explain the partial growth recovery observed with this mutant.
 
@@ -76,13 +100,13 @@ We next tested the effects of Zaprinast. We previously showed that cytosolic Ca2
 
 Taken together, these results support a role for TgTRPPL-2 in Ca2+ influx at the PM. In addition, TgTRPPL-2 is modulated by cytosolic Ca2+ and is responsible for constitutive PM Ca2+ influx.
 
-## TgTRPPL-2 is a cation-conducting channel
+### TgTRPPL-2 is a cation-conducting channel
 
 With the aim of establishing whether TgTRPPL-2 functions as a channel and whether it is able to conduct Ca2+, we cloned the cDNA of the TgTRPPL-2 gene into a mammalian expression vector (pCDNA3.1) for expression in human embryonic kidney 293 cells (HEK-3KO) (Alzayady et al., 2016). These HEK cell line is genetically modified and the three isoforms of the inositol 1,4,5-trisphosphate receptor (IP3R) are deleted to reduce background Ca2+ currents (Alzayady et al., 2016). TgTRPPL-2 was mostly expressed at the ER of HEK cells as assessed by co-localization with a red fluorescent protein (mCherry) targeted to the ER and compared with the human homolog polycystin 2 (PC2) (Figure 4A). Because of this, we isolated nuclei (Figure 4B) for patch clamp experiments of the nuclear ER and further characterization of the permeability properties of TgTRPPL-2 using a modified outside-out single-channel patch clamp configuration called cytosolic-side out (Mak et al., 2013b; Figure 4B, C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig4-v2.jpg)
 
-**Figure 4.:** (A) Images of HEK-3KO cells expressing an endoplasmic reticulum (ER)-marker, polycystin 2 (PC2), or TgTRPPL-2 with the genetic calcium indicator gCaMPer. (B) Schematic representation of nuclear-patch clamp in the outside (cytosolic-side) out configuration. Ionic composition and concentration for bath and pipette solutions are shown. (C) Patched nuclear-extract expressing ER-marker, PC2, and TgTRPPL-2 with the genetic calcium indicator gCaMPer. (D) Representative tracing from control, TgTRPPL-2 or PC2-expressing cells showing the currents recorded in the presence of 1.8 mM luminal Ca2+ in a symmetrical potassium chloride solution. Tracings represent approximately 2 s. (E) Current-voltage relationship comparing single-channel current amplitude of control, PC2, and TgTRPPL-2-expressing cells from (D). Inset: calculated slope conductance for control, TgTRPPL-2, and PC2. (F) Current-voltage relationship comparing single-channel current amplitude of TgTRPPL-2-expressing cells at 1.8 and 10 mM [Ca2+] inside the pipette. Inset: calculated slope conductance for the conditions analyzed. (G) Representative traces of currents recorded from TgTRPPL-2-expressing cells using different concentration of [Ca2+] in the bath solution (Solution A vs. Solution C) (Supplementary file 4). Tracings represent approximately 2 s. (H) Current-voltage relationship comparing single-channel current amplitude of TgTRPPL-2-expressing cells at 0.1 and 10 μM [Ca2+] in the bath solution. Inset: calculated slope conductance for the different [Ca2+]. (I) Open probability of control and TgTRPPL-2-expressing cells in the presence of different [Ca2+] in the bath solution in comparison to the control. *p<0.01, **p<0.001. Scale bars in A and C represent 10 µm.  Figure 4—source data 1.
+**Figure 4.:** (A) Images of HEK-3KO cells expressing an endoplasmic reticulum (ER)-marker, polycystin 2 (PC2), or TgTRPPL-2 with the genetic calcium indicator gCaMPer. (B) Schematic representation of nuclear-patch clamp in the outside (cytosolic-side) out configuration. Ionic composition and concentration for bath and pipette solutions are shown. (C) Patched nuclear-extract expressing ER-marker, PC2, and TgTRPPL-2 with the genetic calcium indicator gCaMPer. (D) Representative tracing from control, TgTRPPL-2 or PC2-expressing cells showing the currents recorded in the presence of 1.8 mM luminal Ca2+ in a symmetrical potassium chloride solution. Tracings represent approximately 2 s. (E) Current-voltage relationship comparing single-channel current amplitude of control, PC2, and TgTRPPL-2-expressing cells from (D). Inset: calculated slope conductance for control, TgTRPPL-2, and PC2. (F) Current-voltage relationship comparing single-channel current amplitude of TgTRPPL-2-expressing cells at 1.8 and 10 mM [Ca2+] inside the pipette. Inset: calculated slope conductance for the conditions analyzed. (G) Representative traces of currents recorded from TgTRPPL-2-expressing cells using different concentration of [Ca2+] in the bath solution (Solution A vs. Solution C) (Supplementary file 4). Tracings represent approximately 2 s. (H) Current-voltage relationship comparing single-channel current amplitude of TgTRPPL-2-expressing cells at 0.1 and 10 μM [Ca2+] in the bath solution. Inset: calculated slope conductance for the different [Ca2+]. (I) Open probability of control and TgTRPPL-2-expressing cells in the presence of different [Ca2+] in the bath solution in comparison to the control. *p<0.01, **p<0.001. Scale bars in A and C represent 10 µm.
 
 In the presence of 1.8 mM Ca2+ inside the patch pipette and 100 nM Ca2+ in the bath solution (see scheme of Figure 4B), the membranes isolated from control cells, held at –80 mV, showed very little activity and the current remained at less than 1.5 pA (Figure 4D, control trace). Some channel activity was observed after artificially depolarizing membranes (–80 to +20 mV) presumably due to opening of potassium channels. In comparison, when analyzing membranes isolated from cells expressing TgTRPPL-2 a significant increase in the open probability and current size was observed (Figure 4D, TgTRPPL-2 blue trace). The current-voltage relationship was linear and significantly different from the one from control cells (Figure 4E, blue vs. black line).
 
@@ -94,15 +118,23 @@ Although no evidence for a conserved EF-hand motif was found in TgTRPPL-2, we ch
 
 To distinguish whether TgTRPPL-2 is able to conduct cation currents and to determine if the activity measured could be the result of permeation of potassium, we replaced potassium with the non-permeable ion cesium (Almog and Korngreen, 2009; Wu et al., 1999). In the presence of 1.8 mM Ca2+ inside the pipette, in a cesium chloride solution, membranes from TgTRPPL-2 and PC2-expressing cells had a significantly higher activity than control cells (Figure 5A). The current-voltage relationship was linear through different applied voltages and significantly different from that of control cells in potassium or cesium chloride solution (Figure 5B). Although channel conductance was slightly higher in potassium chloride, it was not significantly different than the calculated conductance and open probability obtained in cesium chloride (Figure 5B, C). However, when applying voltages higher than −40 mVs, the channel was open for longer times in the presence of cesium chloride vs. potassium chloride with calcium (Figure 5D, green vs. blue line). These results indicated that TgTRPPL-2 permeates Ca2+, however, potassium may modify the current properties.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative traces of currents recorded at −80 mV in the presence of 1.8 mM Ca2+ inside the pipette (Solution D, Supplementary file 4) of nuclear extracts from control, TgTRPPL-2-, or polycystin 2 (PC2)-expressing cells. Traces are a representation of 2 s. (B) Current-voltage relationship comparing single-channel current amplitude of TgTRPPL-2 cells in 1.8 mM in KCl (blue) or CsCl (green) buffer. Inset: slope conductance of TgTRPPL-2 in the different conditions analyzed. (C) Calculated open probability of TgTRPPL-2-expressing cells in the presence of 1.8 mM Ca2+ in a KCl (blue) or CsCl (green) buffer. (D) Average time of channel openings (dwell time) of TgTRPPL-2-expressing cells in the presence of 1.8 mM Ca2+ in a KCl (blue) or CsCl (green). *p<0.04. Values are means ± SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fluorescence of ER calcium in ER-RFP-HEK (Control) vs. TgTRPPL-2-HEK (TgTRPPL-2) in a high calcium-potassium solution of patched nuclear membranes while the membrane is depolarized. (B) Quantification of fluorescence of patched cells while the membrane is depolarized from −80 to +40 mV in a high calcium-potassium solution. (C) Quantification of the slope of fluorescence in (B) comparing TgTRPPL-2-HEK-3KO cells versus control cells. Slope of the fluorescence was quantified based on the five technical replicates of the artificial membrane depolarization in each cell analyzed. Asterisk indicate p-value for significant difference. Values represent the mean of the slope shown in (B). *p<0.01. (D) Quantification of fluorescence of patched cells while the membrane is depolarized from −80 to +40 mV in a high calcium-cesium solution. (E) Quantification of the slope of fluorescence in (D) comparing TgTRPPL-2-HEK-3KO cells versus control cells. The slope was quantified for the five technical replicates of patched membranes. Asterisk indicates p-value for significant difference. Values represent the mean of the slope shown in (D). *p<0.03. (F) Comparison of the fluorescence of patched nuclear extract of TgTRPPL-2-HEK cells while the membrane was artificially depolarized. (G) Quantification of the slope of fluorescence of patched TgTRPPL-2-HEK-3KO nuclear extracts in different experimental conditions. Slope of the fluorescence was quantified based on the five technical replicates of the artificial membrane depolarization in each cell analyzed.
+
 We further demonstrated that TgTRPPL-2 was able to conduct Ca2+ by recording Ca2+ changes of TgTRPPL-2-HEK-3KO or mCherry-ER-HEK-3KO cells co-transfected with a genetic Ca2+ indicator, which enabled measurement of ER luminal Ca2+ changes and whole-ER current activity (by breaking into the ER, but not pulling the membrane away) simultaneously. Luminal Ca2+ changes were followed through one cycle of membrane depolarization from −80 mV to 40 mV (Figure 5—figure supplement 1A). The fluorescence of the Ca2+ indicator decreased in the TgTRPPL-2-expressing cells with time as voltage was applied. In both potassium as well as cesium chloride solutions with 1.8 mM Ca2+ in the pipette, we observed that the fluorescence decrease was significantly larger when the HEK-3KO cells expressed TgTRPPL-2 (Figure 5—figure supplement 1B, C vs. D, E). The slope for the fluorescence decrease appeared higher in the cesium chloride solution than in the potassium solution, although was quite variable (Figure 5—figure supplement 1F, G). In summary, the observed decrease in the fluorescence of the Ca2+ indicator supported the Ca2+ permeation activity of TgTRPPL-2, which agrees with the single-channel conductance measurements.
 
-## TgTRPPL-2 can be inhibited by TRP channel inhibitors and is functional at the membrane of the ER
+### TgTRPPL-2 can be inhibited by TRP channel inhibitors and is functional at the membrane of the ER
 
 Taking into account that TgTRPPL-2 is a cation-permeable channel and partially localizes to the periphery (Figure 6A), we next investigated if the residual Ca2+ influx activity observed with the ΔTgTRPPL-2 mutant was sensitive to anthranilic acid (ACA), a wide spectrum TRP channel inhibitor (Harteneck et al., 2007). ACA inhibited Ca2+ influx by 40–50% of the parental cell line (Figure 6B, black vs. red traces). However, preincubation of the ΔTgTRPPL-2 mutant with ACA did not further reduce Ca2+ influx (Figure 6B, dark blue vs. light blue and 6C, blue points). We previously reported that Ca2+ influx in T. gondii was inhibited by L-type voltage-gated Ca2+ channel blockers like nifedipine (Pace et al., 2014). Preincubation with nifedipine inhibited Ca2+ influx of the parental cell line by almost 80% (Figure 6D, black vs. green bar in P). The rate of Ca2+ influx, defined as the ΔCa2+ immediately following the addition of Ca2+, of the ΔTgTRPPL-2 mutant was inhibited by nifedipine by almost 100% (Figure 6D, black vs. green bar in Δ). Rates of ΔCa2+ after adding extracellular Ca2+ and its inhibition by ACA and nifedipine for parental (P), ΔTgTRPPL-2 (Δ), and ΔTgTRPPL-2-trppl2 (C) mutants are shown in Figure 6D. The ΔCa2+ was highest for the complemented mutant as TgTRPPL-2 was overexpressed but the % of inhibition by ACA was still around 50% (Figure 6D, black vs. purple bar in C). These results point to TgTRPPL-2 functioning as a Ca2+ conducting channel that is important for Ca2+ influx from the extracellular milieu and is sensitive to TRP channel inhibitors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig6-v2.jpg)
 
-**Figure 6.:** 2+and inhibition by transient receptor potential inhibitors.(A) Scheme showing TgTRPPL-2 at the PM and endoplasmic reticulum. (B) Cytosolic Ca2+ measurements of Fura-2-loaded tachyzoites preincubated with 1 µM anthranilic acid (ACA). 1.8 mM Ca2+ was added where indicated. The purple box indicates the area used for the quantification presented in (D). (C) Percentage inhibition of Ca2+ influx in the presence of 1 µM of ACA: P: parental, Δ: ΔTgTRPPL-2 and C: ΔTgTRPPL-2-trppl2. (D) Change in cytosolic Ca2+ during the first 20 s after addition of Ca2+ in the presence of 10 µM of nifedipine or 1 µM ACA. P: parental, Δ: ΔTgTRPPL-2 and C: ΔTgTRPPL-2-trppl2. *p<0.01, **p<0.003, ****p<0.0001. (E) Cytosolic Ca2+ increase after adding Thap (1 µM) to a suspension of wild-type tachyzoites (RH). The red line shows a similar experiment, but the cells were preincubated with 1 µM ACA for 3 min. The pink and orange boxes show the areas used for the quantifications presented in (F) and (H). (F) Quantification and statistical analysis of the slope 50 s after the addition of Thap in the presence or absence of ACA in parental (P) and the ΔTgTRPPL-2 mutant (Δ). *p<0.01, ***p<0.0003. (G) Stimulation of Ca2+ influx 50 s after addition of Thap in the presence or absence of 1 µM ACA. The green box shows the area used for the quantifications presented in (H). (H) Quantification of change of cytosolic Ca2+ 20 s after the addition of 1.8 mM Ca2+ following the addition of Thap under different conditions. ****p<0.00001. The statistical analysis for all experiments was done from at least three independent trials using Student’s t-test. Values are means ± SEM.  Figure 6—source data 1.
+**Figure 6.:** (A) Scheme showing TgTRPPL-2 at the PM and endoplasmic reticulum. (B) Cytosolic Ca2+ measurements of Fura-2-loaded tachyzoites preincubated with 1 µM anthranilic acid (ACA). 1.8 mM Ca2+ was added where indicated. The purple box indicates the area used for the quantification presented in (D). (C) Percentage inhibition of Ca2+ influx in the presence of 1 µM of ACA: P: parental, Δ: ΔTgTRPPL-2 and C: ΔTgTRPPL-2-trppl2. (D) Change in cytosolic Ca2+ during the first 20 s after addition of Ca2+ in the presence of 10 µM of nifedipine or 1 µM ACA. P: parental, Δ: ΔTgTRPPL-2 and C: ΔTgTRPPL-2-trppl2. *p<0.01, **p<0.003, ****p<0.0001. (E) Cytosolic Ca2+ increase after adding Thap (1 µM) to a suspension of wild-type tachyzoites (RH). The red line shows a similar experiment, but the cells were preincubated with 1 µM ACA for 3 min. The pink and orange boxes show the areas used for the quantifications presented in (F) and (H). (F) Quantification and statistical analysis of the slope 50 s after the addition of Thap in the presence or absence of ACA in parental (P) and the ΔTgTRPPL-2 mutant (Δ). *p<0.01, ***p<0.0003. (G) Stimulation of Ca2+ influx 50 s after addition of Thap in the presence or absence of 1 µM ACA. The green box shows the area used for the quantifications presented in (H). (H) Quantification of change of cytosolic Ca2+ 20 s after the addition of 1.8 mM Ca2+ following the addition of Thap under different conditions. ****p<0.00001. The statistical analysis for all experiments was done from at least three independent trials using Student’s t-test. Values are means ± SEM.
 
 The localization of TgTRPPL-2 at the ER of tachyzoites (Figure 1D) indicated its potential function in cytosolic Ca2+ efflux observed after inhibiting TgSERCA with Thap (Moreno and Zhong, 1996). ER efflux activity observed after addition of Thap was significantly decreased by preincubation of Fura-2-loaded wild-type tachyzoites with ACA (Figure 6E, black vs. red traces). Interestingly, ACA inhibited the rate of ER Ca2+ efflux, which was comparable to the reduced efflux rate triggered by Thap of the ΔTgTRPPL-2 mutant (Figure 6F, compare red and blue bar).
 
@@ -112,7 +144,7 @@ To further validate the specificity of ACA for the inhibition of TgTRPPL-2, we t
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig7-v2.jpg)
 
-**Figure 7.:** (A) Example of currents recorded of TgTRPPL-2-expressing cells at –80 mV without inhibitors (black trace) compared with the currents in the presence of 1 μM of anthranilic acid (ACA) (blue trace) or 10 μM of benzamil (red trace). (B) Calculated open probability of TgTRPPL-2-expressing cells (black) or in the presence of ACA (blue). **p<0.006–0.007. (C) Calculated open probability of TgTRPPL-2-expressing cells (black) or in the presence of benzamil (red). Asterisks indicate p-values for significance. *p<0.02, **p<0.002, ***p<0.0002. (D) Average time of channel opening (dwell time) of TgTRPPL-2-expressing cells in the presence of TRP inhibitors. Asterisks indicate p-values for significance, *p<0.02. (E) Plaque assay of the ΔTgTRPPL-2 mutant and the parental strain in the presence of ACA (1 μM), benzamil (10 μM), and cilnidipine (40 μM) after 7 days of growth. (F) Statistical analysis of plaque sizes done from three independent biological replicates using Student’s t-test. Values are means ± SEM, ****p<0.0001.  Figure 7—source data 1.
+**Figure 7.:** (A) Example of currents recorded of TgTRPPL-2-expressing cells at –80 mV without inhibitors (black trace) compared with the currents in the presence of 1 μM of anthranilic acid (ACA) (blue trace) or 10 μM of benzamil (red trace). (B) Calculated open probability of TgTRPPL-2-expressing cells (black) or in the presence of ACA (blue). **p<0.006–0.007. (C) Calculated open probability of TgTRPPL-2-expressing cells (black) or in the presence of benzamil (red). Asterisks indicate p-values for significance. *p<0.02, **p<0.002, ***p<0.0002. (D) Average time of channel opening (dwell time) of TgTRPPL-2-expressing cells in the presence of TRP inhibitors. Asterisks indicate p-values for significance, *p<0.02. (E) Plaque assay of the ΔTgTRPPL-2 mutant and the parental strain in the presence of ACA (1 μM), benzamil (10 μM), and cilnidipine (40 μM) after 7 days of growth. (F) Statistical analysis of plaque sizes done from three independent biological replicates using Student’s t-test. Values are means ± SEM, ****p<0.0001.
 
 Based on the pharmacological results, we predicted that the TRP inhibitors should also inhibit in vitro growth assays (Figure 7E, F, top panel and parental bars). Both ACA and benzamil significantly inhibited in vitro T. gondii growth. We calculated the IC50 for ACA at 1.4 ± 0.4 μM. Consistent with ACA and benzamil targeting TRP channels, neither drug affected the already attenuated growth of the ΔTgTRPPL-2 mutant (Figure 7F). Cilnidipine, a voltage-gated Ca2+ channel blocker, completely inhibited growth of both parental and the ΔTgTRPPL-2 mutant, suggesting that the activity of the L-type Ca2+ channel contributes to the residual growth of the ΔTgTRPPL-2 mutant (Figure 7F).
 
@@ -142,66 +174,181 @@ Recent studies on Ca2+ signaling in T. gondii have expanded our understanding of
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63417/elife-63417-fig8-v2.jpg)
 
-**Figure 8.:** 2+influx into the cytosol of T. gondii.Ca2+ entry is mediated by two independent Ca2+ channels at the PM, a nifedipine-sensitive channel (NSC) and TgTRPPL-2. TgTRPPL-2 is a cation-permeable channel that mediates Ca2+ entry at the PM by a pathway that is activated by high [Ca2+] and can be inhibited by broad transient receptor potential inhibitors like anthranilic acid and benzamil. TgA1 is shown as the PM Ca2+ ATPase that pumps Ca2+ outside the cell. TgTRPPL-2 also localizes to the endoplasmic reticulum (ER) where it may function as a Ca2+ efflux channel. Increase in cytosolic [Ca2+] can modulate TgTRPPL-2 by allowing the channel to open for longer time, thus allowing more Ca2+ to enter the cell. Also shown is the IP3-responsive channel in the ER. The molecular identity of this channel is not known. Ca2+ activates the phosphatidyl inositol phospholipase C (PLC), which is also activated through protein kinase G signaling. PLC synthesizes IP3, which stimulates Ca2+ release from the ER.
+**Figure 8.:** Ca2+ entry is mediated by two independent Ca2+ channels at the PM, a nifedipine-sensitive channel (NSC) and TgTRPPL-2. TgTRPPL-2 is a cation-permeable channel that mediates Ca2+ entry at the PM by a pathway that is activated by high [Ca2+] and can be inhibited by broad transient receptor potential inhibitors like anthranilic acid and benzamil. TgA1 is shown as the PM Ca2+ ATPase that pumps Ca2+ outside the cell. TgTRPPL-2 also localizes to the endoplasmic reticulum (ER) where it may function as a Ca2+ efflux channel. Increase in cytosolic [Ca2+] can modulate TgTRPPL-2 by allowing the channel to open for longer time, thus allowing more Ca2+ to enter the cell. Also shown is the IP3-responsive channel in the ER. The molecular identity of this channel is not known. Ca2+ activates the phosphatidyl inositol phospholipase C (PLC), which is also activated through protein kinase G signaling. PLC synthesizes IP3, which stimulates Ca2+ release from the ER.
 
 ## Materials and methods
 
-## Toxoplasma growth
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse- αTgTRPPL-2</td>
+      <td>This work</td>
+      <td>Silvia Moreno (University of Georgia)</td>
+      <td>Recognizes TgGT1_310560 in T. gondii tachyzoites IFA (1:100) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit-αSag1</td>
+      <td>Mineo et al., 1993</td>
+      <td></td>
+      <td>IFA (1:1000) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit-αSERCA</td>
+      <td>Nagamune et al., 2007</td>
+      <td></td>
+      <td>IFA (1:1,000) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit-αGap45</td>
+      <td>Gaskins et al., 2004</td>
+      <td></td>
+      <td>IFA (1:1000) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse-αTubulin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#11867423001</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse-αHA</td>
+      <td>Roche</td>
+      <td>Cat#11867423001</td>
+      <td>IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A20181</td>
+      <td>IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 546</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A20183</td>
+      <td>IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>ΔTgTRPPL-2</td>
+      <td>This work</td>
+      <td>Silvia Moreno (University of Georgia)</td>
+      <td>Clonal cell line with the TgGT1_310560 disrupted Validated through genomic amplification, qPCR, IFAs, and WB</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>TgTRPPL-2-smHA</td>
+      <td>This work</td>
+      <td>Silvia Moreno (University of Georgia)</td>
+      <td>Clonal cell line with the TgGT1_310560 gene locus tagged Validated through genomic amplification, IFAs, and WB</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>ΔTgTRPPL-2-trppl2</td>
+      <td>This work</td>
+      <td>Silvia Moreno (University of Georgia)</td>
+      <td>Clonal cell line with the TgGT1_310560 disrupted and expressing an extra copy of the same gene Validated through genomic amplification, qPCR IFAs, and WB</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>RHTatiΔku80</td>
+      <td>Sheiner et al., 2011</td>
+      <td></td>
+      <td>Parental line used for tagging</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TgTRPPL-2-smHA</td>
+      <td>This work</td>
+      <td></td>
+      <td>Plasmid used to C-terminally tag TgGT1_310560</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMOS003-lenti-CMV-gCaMPer</td>
+      <td>Henderson et al., 2015</td>
+      <td>RRID:Addgene #65227</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Toxoplasma growth
 
 All parasite strains were maintained in vitro by serial passage in Dulbecco’s modified minimal essential media (DMEM) with 1% FBS, 2.5 µg/ml amphotericin B, 100 µg/ml streptomycin in the human telomerase reverse transcriptase immortalized foreskin fibroblasts (hTERT) (Farwell et al., 2000). hTert cells are periodically tested and treated for Mycoplasma contamination.
 
-## Generation of mutants
+### Generation of mutants
 
 The smHA-LIC-CAT plasmid was used for in situ C-terminal tagging of TgTRPPL-2-smHA (Hortua Triana et al., 2018a). Carboxy-terminus tagging was done in the parental line RHTatiΔku80 (TatiΔku80) (Sheiner et al., 2011), a parasite line that contains the tetracyclin-regulated transactivator system that allows conditional expression of genes (Meissner et al., 2001) and also in which the ku80 gene was deleted, increasing efficiency of homologues recombination (Fox et al., 2009). Briefly, a homology region of 974 bp covering the 3′ region of the gene of interest excluding the STOP codon was amplified by PCR using T. gondii RH genomic DNA as template and cloned into the plasmid. Plasmids were validated by restriction digest and sequencing. The oligonucleotides primers used for PCR and for creating the gene-tagging plasmids and for PCR validations are listed in Supplementary file 3 (primers T1–T3). Prior to transfection, all plasmids were linearized within the region of homology. Approximately 20 μg of plasmid DNA was used for transfection of 1 × 107 T. gondii RHTatiΔKu80 parasites using a Gene Pulser X Cell electroporator (BioRad). Selection was done with 20 μM chloramphenicol, and clones were isolated by limiting dilution. DNA of selected clones were isolated and screened by PCR.
 
 To disrupt the TgTRPPL-2 (TgGT1_310560) gene, a single-guide RNA against TgTRPPL-2 was constructed as described (Shen et al., 2017). The single-guide RNA was mutagenized with the desired sequence in a plasmid that contains the Cas9 using the Q5 Mutagenesis Kit following the manufacturer’s instructions. The correct mutation was verified by sequencing. The pyrimethamine-resistant DHFR cassette was amplified by PCR with primers containing 50 bp homology arms of the region upstream and downstream of the start and stop codon of the TgTRPPL-2 gene. The created sgTgTRPPL-2 CRISPR plasmid was co-transfected with the DHFR cassette (3:1, respectively) into RH tachyzoites. Selection followed with pyrimethamine for 7 days. Parasites were sub-cloned by limiting dilution, and screening for clones was done by PCR. The primers used for the creation of the ΔTgTRPPL-2 are listed in Supplementary file 3 (primers K1–K4).
 
-## Quantitative PCR
+### Quantitative PCR
 
 Total RNA from parental, ΔTgTRPPL-2 and ΔTgTRPPL2-trppl2 was extracted and reversed-transcribed into cDNA. The qPCR reaction was done using the iQSYBR Green master mix (BioRad), plus primers, and the reverse-transcribed cDNA (primers shown in Supplementary file 3, Q1–Q2). The qRT-PCR was carried out on a CFX96 PCR Real-Time detection system (C1000Touch Thermal cycler, BioRad). Relative quantification software (CFX Maestro software) was used for the analysis, and relative expression levels were calculated as the fold change using the formula 2ΔΔCT (Livak et al., 1995). Normalization was done using Actin and Tubulin primers. Experiments were repeated three times with triplicate samples.
 
-## Antibody production of TgTRPPL-2
+### Antibody production of TgTRPPL-2
 
 The antigenic region for TgTRPPL-2 chosen for antibody production was identified using the IEDB suite of antigenicity prediction software. The DNA sequence was amplified from RH genomic DNA and cloned into the pET-32 LIC/EK vector (Novagen), which adds an N-terminal thioredoxin and histidine tag to the expressed protein. Recombinant CP1Ag was expressed and initially purified via a nickel-affinity column (HisPur Thermo Fisher) as previously described (Chasen et al., 2017). Cleavage of the N-terminal thioredoxin and histidine tag was done by biotinylated thrombin. The antigen was passed again through the nickel column, and the purified tag-less antigen was gently eluted using 10 mM imidazole. Antibodies in mice were generated as previously (Chasen et al., 2019). Swiss Webster mice (Charles River) were inoculated intraperitoneally with 100 μg of TgTRPPL-2 mixed with complete Freund's adjuvant, followed by two boosts with 50 μg of TgTRPPL-2 in incomplete Freund's adjuvant. The final serum was collected by cardiac puncture after CO2 euthanasia. We created a αSERCA antibody for co-localization studies of the TgTRPPL-2. The phosphorylation (P) and nucleotide binding (N) domains of TgSERCA were cloned into XmaI and HindIII sites of pQE-80L plasmid for expression in Escherichia coli BL21-CodonPlus competent cells. Purified antigen was used to immunize Guinea pigs with 0.2 mg of antigen mixed with Freund’s complete adjuvant, followed by two boosts of 0.1 mg antigen mixed with Freund’s incomplete adjuvant (Sigma F5506). The resulting antibodies were used at 1:1000 for western blots. The animal protocol used was approved by the UGA Institutional Animal Care and Use Committee (IACUC).
 
-## Western blot analysis
+### Western blot analysis
 
 SDS-polyacrylamide gel electrophoresis (SDS-PAGE) followed established protocols (Laemmli, 1970). Lysates were prepared by resuspending a pellet of 1 × 108 tachyzoites in 50 μl of Cell Lytic lysis buffer containing 12.5 U benzonase and 1X protease cocktail inhibitor (P8340 Sigma). The reaction was stopped with one volume of 2% SDS and 1 mM EDTA. Total lysates were boiled in Laemmli sample buffer (BioRad). Immunoblotting followed established protocols using mouse anti-HA monoclonal antibody (1:1000) (Roche). Detection was done using the Odyssey Clx LICOR system using goat anti-mouse IRDye800WC (1:10,000). Loading control for western blots was done with primary mouse-anti-tubulin antibodies at a 1:15,000 dilution and goat anti-mouse IRDDye800WC as secondary (1:10,000).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Extracellular parasites were collected and purified as previously (Liu et al., 2014). Parasites were washed once with buffer A with glucose (BAG, 116 mM NaCl, 5.4 mM KCl, 0.8 mM MgSO4, 5.5 mM glucose, and 50 mM HEPES, pH 7.4), and an aliquot of 2 × 104 parasites was overlaid on a coverslip previously treated with poly-L-Lysine. Intracellular tachyzoites were grown on hTERT cells on coverslips. Both extracellular and intracellular parasites were fixed with 3% paraformaldehyde for 20 min at room temperature (RT), permeabilized with 0.3% Triton X-100, blocked with 3% bovine serum albumin (BSA), and exposed to primary antibodies (Ratα-HA 1:100). The secondary antibodies used were goat-αrat Alexa Fluor 488 (Life Technologies) at a 1:1000 dilution. For co-localization studies, we used α-Sag1 (1:1000) as membrane marker and α-TgSERCA as ER marker (1:1000). Slides were examined using an Olympus IX-71 inverted fluorescence microscope with a photometric CoolSNAP HQ charge-coupled device (CCD) camera driven by DeltaVision software (Applied Precision, Seattle, WA). Super-resolution images were imaged with a 63× oil (NA 1.4) objective on an 880-laser scanning microscope with Airyscan (Zeiss, Germany) with a 2× zoom. Airyscan images were process with the Zen Black Software (Zeiss, Germany).
 
-## Immunoprecipitation assays
+### Immunoprecipitation assays
 
 Freshly lysed tachyzoites expressing TgTRPPL-2-smHA were collected and filtered through an 8 µM membrane (Whatman). Tachyzoites were washed twice in BAG and resuspended in lysis buffer (50 mM Tris-HCl, pH 7.4, 150 mM KCl, 1 mM EDTA, 0.4% NP-40) to a final concentration of 2 × 109 total cells. Lysis was allowed to proceed for 30 min at 4°C, and cells were centrifuged at 15,000 × g for 20 min. Immunoprecipitation of TgTRPPL-2-smHA protein was performed using the Pierce HA Tag/Co-IP Kit (Thermo Fisher Scientific, Waltham, MA) according to the manufacturer’s instructions. Briefly, HA magnetic beads were washed twice in lysis buffer and mixed with the parasite lysate by vortexing for 1 hr at RT. Beads were collected and the flow-through fraction was saved for further analysis. Beads were washed twice in wash buffer (50 mM Tris-HCl, pH 7.4, 150 mM KCl, 1 mM EDTA, 0.1% NP-40) and once in ddH2O by gentle mixing. The tagged protein was recovered by mixing the beads with 1× Laemmli buffer and heated at 65°C for 10 min. The supernatant was collected and used for PAGE and western blots. The corresponding band was cut and resuspended in water and analyzed using LC-Mass Spectrometry. Samples were sent to the Proteomics and Mass Spectrometry Core Facility at the University of Georgia for analysis. The average counts that were obtained from two biological samples are shown in Supplementary file 2. Proteins with counts higher than three are shown.
 
-## Growth and invasion assays
+### Growth and invasion assays
 
 Plaque assays were done as previously described, with slight modifications (Liu et al., 2014). Briefly, 200 egressed tachyzoites were allowed to infect confluent hTERT cells for 7 days. After 7 days, cells were fixed with ethanol and stained with crystal violet. Plaque sizes were analyzed using FIJI (Schindelin et al., 2012). Invasion assays were performed as previously described, with slight modifications (Kafsack et al., 2004). A subconfluent monolayer of HFF cells was infected with 2 × 107 tachyzoites in the presence of 1.8 mM or 0.5 mM Ca2+ and placed for 20 min on ice and subsequently transferred for 5 min to a 37°C water bath for parasite invasion. Cells were immediately fixed with 3% paraformaldehyde for 20 min. Extracellular parasites (attached) were stained using RabbitαSag1 (1:1000) prior to permeabilization while intracellular parasites (invaded) were stained with MouseαSag1 (1:200). Secondary antibodies were goat-αrabbit Alexa Fluor 546 (1:1000) and goat-αmouse Alexa Fluor 488 (1:1000). Images were taken with an Olympus IX-71 inverted fluorescence microscope with a Photometric CoolSNAP HQ CCD camera driven by DeltaVision software (Applied Precision). Quantification was made of 10 fields of view at a 1000 magnification from three independent biological replicates. Percentage of invaded versus attached was quantified by dividing the number of parasites invaded or attached by the total parasites quantified in the field of view.
 
-## Egress experiments
+### Egress experiments
 
 hTERT cells were infected with 5 × 105 of RH or ΔTgTRPPL-2 tachyzoites. 24 hr after infection, parasitophorous vacuoles (PVs) were observed by microscopy and washed with Ringer’s buffer (155 mM NaCl, 3 mM KCl, 1 mM MgCl2, 3 mM NaH2PO4H2O, 10 mM HEPES, pH 7.3, and 5 mM glucose). Ringer’s buffer was used as extracellular buffer in the presence or absence of 1.8 mM Ca2+. Drugs were added in Ringer’s buffer 30 s after imaging at the following concentrations: saponin (0.02%) or Zaprinast (100 μM). Images were acquired in a time-lapse mode with an acquisition rate of 3 s for 12–20 min. For statistical analysis, egress time was quantified as the first parasite to egress out of the PV. Statistical analysis was done for three independent biological replicates and at least 5 PVs per experiment.
 
-## Cytosolic Ca2+measurements
+### Cytosolic Ca2+measurements
 
 Parasites were loaded with Fura-2-AM as described in Stasic et al., 2021; Vella et al., 2019. Briefly, fresh lysed extracellular tachyzoites were washed twice at 1800 rpm for 10 min at room temperature in buffer A (BAG) (116 mM NaCl, 5.4 mM KCl, 0.8 mM MgSO4, 5.5 mM d-glucose, and 50 mM HEPES, pH 7.4). Parasites were resuspended to a final density of 1 × 109 parasites/ml in loading buffer (Ringer’s plus 1.5% sucrose and 5 μM Fura-2-AM). The suspension was incubated for 26 min at 26°C with mild agitation. Subsequently, the parasites were washed twice with Ringer’s buffer to remove extracellular dye. Parasites were resuspended to a final density of 1 × 109 parasites/ml in Ringer’s buffer and kept in ice. For fluorescence measurements, 2 × 107 parasites/ml were placed in a cuvette with 2.5 ml of Ringer’s buffer. The cuvette was placed in a thermostatically controlled Hitachi F-7000 fluorescence spectrophotometer. Excitation was at 340 and 380 nm, and emission at 510 nm. The Fura-2-AM fluorescence relationship to intracellular Ca2+ concentration ([Ca2+]i) was calibrated from the ratio of 340/380 nm fluorescence values after subtraction of the background fluorescence of the cells at 340 and 380 nm as previously described (Grynkiewicz et al., 1985). Changes in [Ca2+]i (ΔF [Ca2+]) were measured by subtracting the highest peak of Ca2+ in the first 20 s after addition of Ca2+ or 100 s after the addition of drugs minus the baseline.
 
-## Cell transfections and culture of HEK-3KO cells
+### Cell transfections and culture of HEK-3KO cells
 
 Total RNA of wild-type T. gondii were extracted and reversed transcribed into cDNA. TgTRPPL-2 whole cDNA was amplified using primers shown in Supplementary file 3 (primers C1–C6). The amplified cDNA was cloned into the Zero Blunt TOPO vector using the cloning kit as per the manufacturer's instruction. Correct insertion was verified by colony PCR using M13F and M13R primers. Restriction digests was performed to remove the insert from the vector using the following restriction enzymes: BamHI and AvrII. The purified TgTRPPL-2 cDNA was ligated to linearized pCDNA 3.1 plasmid. Ligation to the vector was confirmed by PCR and sequencing. Purified TRPPL-2-pCDNA was used to co-transfect HEK-3KO cells.
 
 Human embryonic kidney (HEK) cells, which have the three endogenous isoforms of the IP3 receptor knocked out, were a gift from Dr. David Yule (Alzayady et al., 2016; Lock et al., 2018). The cells were maintained in DMEM with 10% fetal bovine serum 2.5 µg/ml amphotericin B and 100 µg/ml streptomycin. They are periodically checked for Mycoplasma contamination. Cells were transiently transfected as previously described (Longo et al., 2013) with 2.5 μg of TgTRPPL-2, PC2, or RFP DNA targeted to the ER. Each plasmid DNA were diluted in 200 μl of Opti-MEM with 25 μl of polyethylenimine and incubated for 10 min. The mix was then added to semi-confluent HEK-3KO cells in a dropwise manner, and 24 hr later the media was changed.
 
-## Preparation of nuclear extracts
+### Preparation of nuclear extracts
 
 48 hr after transfection, cells were collected and the nucleus extracted as previously described (Mak et al., 2013a). 2 × 107 of transiently transfected cells were collected in ice-cold PBS. Cells were spun down and washed twice in PBS and resuspended in Nuclei Isolation Solution (150 mM KCl, 250 mM sucrose, 10 mM Tris-HCl, 1.4 mM β-mercaptoethanol, 0.2 mM PMSF, pH 7.3). Cells were dounce homogenized and nuclei extracts stored on ice. 100 μl of nuclei were transferred to cover slips previously coated with poly-L-lysine and incubated for 20 min before filling the chamber with bath solution.
 
-## Patch clamp of nuclear membranes
+### Patch clamp of nuclear membranes
 
 Nuclear extracts expressing TgTRPPL-2 or the control with gCaMPer (Henderson et al., 2015) were used for analysis. Currents were recorded using electrodes pulled from filamented borosilicate capillary glass (Harvard Bioscience, MA) with a resistance of 10–15 MΩ. After forming the seal and pulling the outside (cytosolic-side) out, membrane patch configurations (Mak et al., 2013b) holding potentials were maintained at 0 mV. Recordings were obtained using the HEKA Electronic Patch Clamp EPC10 (Harvard Bioscience). The internal solution contained (mM) 140 KCl or CsCl, 10 HEPES, 1.8 or 10 free Ca2+ adjusted with EGTA. The Standard Bath Solution was symmetrical to the pipette solution except there was 100 nM or 10 µM of free Ca2+. Currents were elicited by applying voltage steps from the holding potential of 0 mV and stepping down to −80 mV and then up to 20 mV over 25 s. Data was acquired at 45 kHz and filtered at 2 kHz. Each voltage sweep was conducted a total of five times. Analysis of current amplitude, channel open probability, and channel conductance was conducted using FitMaster (Harvard Bioscience). Conductance was calculated by plotting the current-voltage relationship for each condition tested and then determining the slope conductance between −80 to +20 mV. gCaMPer fluorescent signals were simultaneously analyzed as the current signals in preparations where the ER was broken into. A Lumencor LED light source switching between 488 and 561 nm was used to excite the samples, and the fluorescent signals captured on a Hamamatsu Flash 4.0 cMOS camera using Zeiss Zen Black software.
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed by Student’s t-test using GraphPad PRISM version 8.2. All experimental data were analyzed from at least three independent biological replicates. Error bars shown represent standard error of the mean (SEM) of the biological replicates analyzed. For the electrophysiological analysis, a total of three cells per biological replicate (nine total cells) were analyzed.

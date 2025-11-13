@@ -16,12 +16,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States
-2. https://ror.org/0130frc33 Department of Genetics, University of North Carolina at Chapel Hill Chapel Hill United States
-3. https://ror.org/0130frc33 Bioinformatics and Analytics Research Collaborative, University of North Carolina at Chapel Hill Chapel Hill United States
-4. https://ror.org/041nas322 Institute for Pharmaceutical Microbiology, University of Bonn Bonn Germany
-5. https://ror.org/00py81415 Division of Infectious Diseases, Duke University Durham United States
-6. https://ror.org/0130frc33 Marsico Lung Institute, University of North Carolina at Chapel Hill Chapel Hill United States
+1. Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Department of Genetics, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. Bioinformatics and Analytics Research Collaborative, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+4. Institute for Pharmaceutical Microbiology, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+5. Division of Infectious Diseases, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+6. Marsico Lung Institute, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -41,17 +41,33 @@ Second-generation glycopeptides, known as lipoglycopeptides, are more potent var
 
 ## Results
 
-## Unsaturated fatty acids potentiate vancomycin killing of S. aureus
+### Unsaturated fatty acids potentiate vancomycin killing of S. aureus
 
 We have previously shown that rhamnolipids, a biosurfactant produced by Pseudomonas aeruginosa, synergizes with aminoglycosides, highlighting the potential of targeting the membrane to enhance antibiotic efficacy against S. aureus (Radlinski et al., 2019). We reasoned that CMAAs may also enhance the killing activity of glycopeptides since second-generation glycopeptides have a lipophilic tail and display potent activity (Blaskovich et al., 2018). We investigated the capacity of seven CMAAs to enhance the bactericidal activity of vancomycin (Figure 1A, Figure 1—figure supplement 1). Sublethal concentrations of each CMAA were established experimentally or from our previously published work (Figure 1—figure supplement 2; Radlinski et al., 2019). Vancomycin and CMAAs both have potent bactericidal activity against low-density bacterial populations (105–106 colony forming unit [CFU]/ml), but bactericidal activity wanes as population density increases (LaPlante and Rybak, 2004; Kollef, 2007; Parsons et al., 2012; Loffredo et al., 2021). We examined the bactericidal activity of vancomycin and CMAAs alone or in combination against S. aureus population of 108 CFU/ml, similar to the cell density of an abscess or infected wound (Pletzer and Hancock, 2018; König et al., 1998; Udekwu et al., 2009). At this density, vancomycin monotherapy resulted in an approximately 2-log reduction in bacterial abundance but did not eradicate the population (Figure 1A). Benzyl alcohol, a general membrane fluidizer known to lack antimicrobial activity alone, did not display synergy with vancomycin (Figure 1A; Parsons et al., 2012; Müller et al., 2016). Lauric acid, a saturated fatty acid, and its monoglyceride derivative, glycerol monolaurate, which synergizes with other antibiotics such as aminoglycosides, did not synergize with vancomycin (Figure 1A; Radlinski et al., 2019; Churchward et al., 2018; Hess et al., 2014; Fischer, 2020). Adarotene, a synthetic retinoid that also potentiates aminoglycosides, did not potentiate vancomycin killing (Figure 1A; Kim et al., 2018). In contrast, rhamnolipids improved vancomycin killing (Figure 1A), while palmitoleic acid and linoleic acid, two host-produced unsaturated fatty acids (UFAs), were the most potent adjuvants tested, resulting in a 6-log decrease in viable bacteria after 6 hr (Figure 1A). Palmitoleic and linoleic acid are both cis UFAs, a 16-carbon monounsaturated and 18-carbon polyunsaturated fatty acid, respectively (Parsons et al., 2012). Both UFAs have well-established antimicrobial activity and contribute to innate immunity in human nasal secretions, sebaceous glands of the skin, and breast milk (Wille and Kydonieus, 2003; Do et al., 2008). At the bacterial density and concentration examined here, neither palmitoleic acid nor linoleic acid had any activity against S. aureus in the absence of vancomycin (Figure 1A). However, when these UFAs were combined with vancomycin, we observed over 99% killing of both methicillin-sensitive S. aureus (MSSA) and methicillin-resistant S. aureus (MRSA) populations after only 30 min (Figure 1B–C). Importantly, the dual treatment eradicated the antibiotic-tolerant persister populations as indicated by the absence of a characteristic persister plateau (Figure 1B–C; Sidders et al., 2021). Additionally, we evaluated if dual treatment could bypass chemically induced tolerance using carbonyl cyanide m-chlorophenyl hydrazone (CCCP) to disrupt proton motive force or arsenate (AsKO) to deplete ATP (Conlon et al., 2016). While reduced ATP levels typically protect from antibiotics, we found that palmitoleic acid still potentiated vancomycin killing of S. aureus in a low energy, tolerant state (Figure 1—figure supplement 3). These data indicate that palmitoleic acid is a potent adjuvant against tolerant and susceptible S. aureus populations.
 
-## Antibiotic synergy is mediated by the accumulation of membrane-bound cell wall intermediates
+![Figure 1.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig1-v2.jpg)
+
+**Figure 1.:** (A) S. aureus HG003 cultures were grown to exponential phase and subsequently treated with CMAAs ± vancomycin (20 μg/ml, 20 X MIC of HG003). Colony forming units (CFUs) were enumerated after 6 hr. CMAAs tested include rhamnolipids (30 μg/ml), palmitoleic acid (11 μg/ml), linoleic acid (12 μg/ml), glycerol monolaurate (30 μg/ml), lauric acid (30 μg/ml), adarotene (3.2 μg/ml), and benzyl alcohol (40 mM). The statistical significance was determined using one-way ANOVA with Dunnett’s multiple comparison test comparing dual treated conditions to vancomycin alone. Unless indicated, comparisons were not significant. Data represent n=6 biologically independent replicates. (B) Methicillin-sensitive S. aureus (MSSA) strain HG003 (C) or community-acquired methicillin-resistant S. aureus (MRSA) strain LAC was challenged with DMSO (Ctrl), palmitoleic acid (11 μg/ml), vancomycin (20 μg/ml), orcombination therapy. CFU was enumerated at indicated time points. Data represent the mean values from n=6 biologically independent replicates ± SD. Statistical significance was determined using a two-way ANOVA with Dunnett’s multiple comparison test on the final time point evaluated (B and C). Comparisons made between the control and experimental conditions are indicated in the associated line color. ** and **** denote p<0.01 and p<0.0001, respectively. VAN, vancomycin; RL, rhamnolipids; PA, palmitoleic acid; LA, linoleic acid; GML, glycerol monolaurate; Ad, adarotene; BA, benzyl alcohol.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Rhamnolipid, a biosurfactant produced by Pseudomonas aeruginosa; (B) palmitoleic acid, a monounsaturated fatty acid; (C) linoleic acid, a polyunsaturated fatty acid; (D) glycerol monolaurate, a monoglyceride; (E) lauric acid, a saturated fatty acid; (F) adarotene, a synthetic retinoid; (G) benzyl alcohol, a general membrane fluidizer.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** HG003 was grown to exponential phase prior to challenge with 5, 11, 15, or 30 μg/ml of (A) PA alone, (B) PA +VAN (20 μg/ml), (C) LA alone, or (D) LA + VAN. An aliquot of cells was removed at the indicated time point, washed, and plated for colony forming unit (CFU). Data represent the mean values from n=3 biologically independent replicates ± SD. PA, palmitoleic acid; LA, linoleic acid; VAN, vancomycin.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** HG003 was grown to exponential phase and treated for 30 min with (A) Arsenate (AsKO, 5 mM), or (B) carbonyl cyanide m-chlorophenyl hydrazone (CCCP; 1 μM) prior to the addition of antibiotics. After 2 hr, an aliquot of cells was removed, washed, and plated to enumerate survivors. Data represent the mean values from n=6 biologically independent replicates ± SD. PA, palmitoleic acid; VAN, vancomycin.
+
+### Antibiotic synergy is mediated by the accumulation of membrane-bound cell wall intermediates
 
 Because palmitoleic acid exhibited the greatest synergy with vancomycin, we next evaluated whether palmitoleic acid synergizes with other cell wall inhibitors. Antibiotics that target cell wall biosynthesis can be divided into three categories based on their target: early cytoplasmic steps (fosfomycin), membrane-bound steps (vancomycin and bacitracin), and assembly/incorporation steps of peptidoglycan (β-lactams; Rajagopal and Walker, 2017). The latter two categories make up the majority of clinically relevant antibiotics that target the cell wall (Rajagopal and Walker, 2017). To gain insight into the mechanism of synergy within the context of the peptidoglycan biosynthesis pathway, we evaluated representative cell wall-acting antibiotics from each category in combination with palmitoleic acid (Figure 2A). Fosfomycin inhibits the cytosolic steps of peptidoglycan biosynthesis by targeting and irreversibly inhibiting enzymes MurA-B (Falagas et al., 2016). Fosfomycin did not exhibit synergy with palmitoleic acid (Figure 2B). β-lactam antibiotics target penicillin-binding proteins (PBPs) which are responsible for incorporating lipid II into the mature peptidoglycan and the cross-linking of peptidoglycan (Schneider and Sahl, 2010). Oxacillin inhibits PBP2 while nafcillin inhibits all four PBPs in S. aureus. Neither β-lactams exhibit synergy with palmitoleic acid (Figure 2C–D). These data indicate that UFAs do not synergize with antibiotics that target the early cytoplasmic steps or the assembly/incorporation steps of peptidoglycan synthesis.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic depicting cell wall biosynthesis, with each arrow in between intermediates indicating an enzymatic step. The cell wall is composed mainly of peptidoglycan, a polymer consisting of N-acetyl-glucosamine (NAG) and N-acetylmuramic acid (NAM) residues, the latter affixed with a short pentapeptide. NAM is attached to a lipid anchor known as bactoprenol and further modified to generate lipid II. Lipid II is flipped to the outer leaflet of the membrane and incorporated into the growing peptidoglycan layer. Bactoprenol is recycled and reused in a cyclic process. The targets inhibited by the antibiotics tested in (B–F) are indicated in red. Schematic created with BioRender.com. (B–F) Survival of HG003 challenged with indicated antibiotic monotherapy (black circles) or the antibiotic combined with PA (11 μg/ml, green square). Colony forming units (CFUs) were enumerated at indicated time points. Antibiotics tested include (B): fosfomycin (250 μg/ml)±PA, (C): the PBP2 inhibitor, oxacillin (OX, 5 X MIC, 5 μg/ml)±PA, (D): the PBP1-4 inhibitor, nafcillin (NAF, 5 X MIC, 2.5 μg/ml)±PA, (E): bacitracin (BAC, 250 μg/ml)±PA, and (F): tarocin A1 (8 μg/ml)±PA. Data represent the mean values from n=6 biologically independent replicates ± SD. Statistical analysis was evaluated at the end point by a two-tailed unpaired Student’s t-test with a 95% CI; conditions with significance are indicated on the graph, ****p<0.0001, otherwise comparisons were not significant.Figure 2—source data 1.Figure 2B–F.
+**Figure 2.:** (A) Schematic depicting cell wall biosynthesis, with each arrow in between intermediates indicating an enzymatic step. The cell wall is composed mainly of peptidoglycan, a polymer consisting of N-acetyl-glucosamine (NAG) and N-acetylmuramic acid (NAM) residues, the latter affixed with a short pentapeptide. NAM is attached to a lipid anchor known as bactoprenol and further modified to generate lipid II. Lipid II is flipped to the outer leaflet of the membrane and incorporated into the growing peptidoglycan layer. Bactoprenol is recycled and reused in a cyclic process. The targets inhibited by the antibiotics tested in (B–F) are indicated in red. Schematic created with BioRender.com. (B–F) Survival of HG003 challenged with indicated antibiotic monotherapy (black circles) or the antibiotic combined with PA (11 μg/ml, green square). Colony forming units (CFUs) were enumerated at indicated time points. Antibiotics tested include (B): fosfomycin (250 μg/ml)±PA, (C): the PBP2 inhibitor, oxacillin (OX, 5 X MIC, 5 μg/ml)±PA, (D): the PBP1-4 inhibitor, nafcillin (NAF, 5 X MIC, 2.5 μg/ml)±PA, (E): bacitracin (BAC, 250 μg/ml)±PA, and (F): tarocin A1 (8 μg/ml)±PA. Data represent the mean values from n=6 biologically independent replicates ± SD. Statistical analysis was evaluated at the end point by a two-tailed unpaired Student’s t-test with a 95% CI; conditions with significance are indicated on the graph, ****p<0.0001, otherwise comparisons were not significant.
 
 Vancomycin binds to the d-Ala-d-Ala moiety of lipid II and sterically hinders its incorporation into mature peptidoglycan; this indirectly causes an accumulation of lipid II on the cell membrane (Qiao et al., 2017). With this in mind, we wanted to determine if synergy with palmitoleic acid requires the accumulation of membrane-bound precursors. Bacitracin inhibits the recycling of the essential bactoprenol lipid carrier (Figure 2A; Stone and Strominger, 1971). Interestingly, while bacitracin monotherapy displayed negligible activity, the addition of palmitoleic acid led to drastic potentiation of bacitracin killing similar to vancomycin (Figures 2E and 1B–C). Sequestration of the limited pool of bactoprenol carrier lipids by vancomycin and bacitracin reduces wall teichoic acid (WTA) biosynthesis by redirecting any remaining bactoprenol toward peptidoglycan biosynthesis (Singh et al., 2017). Because WTAs have been found to protect S. aureus from the antimicrobial activity of UFAs (Parsons et al., 2012), we assessed whether WTA inhibition contributed to the mechanism of synergy using the WTA inhibitor tarocin A1 (Lee et al., 2016). We found that inhibition of WTA biosynthesis alone does not synergize with palmitoleic acid and likely does not contribute to the potentiation of vancomycin or bacitracin (Figure 2F). Taken together, these results suggest that palmitoleic acid relies on antibiotic induced accumulation of bactoprenol bound intermediates.
 
@@ -59,11 +75,11 @@ We next validated that lipid-bound intermediates were accumulating by analyzing 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig3-v2.jpg)
 
-**Figure 3.:** (A) S. aureus was grown to exponential phase and treated with DMSO (Control), PA monotherapy (11 μg/ml), VAN monotherapy (20 μg/ml), or PA +VAN combination therapy for 30 min. The membrane fraction was extracted and run on a C4 column. The question mark indicates an unknown peak. Additional peaks in VAN monotherapy may be glycinylated versions of lipid II. (B) High-performance liquid chromatography (HPLC) of a combined lipid I and lipid II, as well as a bactoprenol standard run alongside samples in A. (C) Samples run in A were subsequently run with a different method to yield better separation of bactoprenol and lipid I. PA +VAN samples align with the bactoprenol standard. Right Y-axis refers to PA +VAN samples due to lower concentrations of sample after sequential use in two different columns. Chromatograms are examples of n=3 biological replicates. PA, palmitoleic acid; VAN, vancomycin.Figure 3—source data 1.Figure 3A–C.
+**Figure 3.:** (A) S. aureus was grown to exponential phase and treated with DMSO (Control), PA monotherapy (11 μg/ml), VAN monotherapy (20 μg/ml), or PA +VAN combination therapy for 30 min. The membrane fraction was extracted and run on a C4 column. The question mark indicates an unknown peak. Additional peaks in VAN monotherapy may be glycinylated versions of lipid II. (B) High-performance liquid chromatography (HPLC) of a combined lipid I and lipid II, as well as a bactoprenol standard run alongside samples in A. (C) Samples run in A were subsequently run with a different method to yield better separation of bactoprenol and lipid I. PA +VAN samples align with the bactoprenol standard. Right Y-axis refers to PA +VAN samples due to lower concentrations of sample after sequential use in two different columns. Chromatograms are examples of n=3 biological replicates. PA, palmitoleic acid; VAN, vancomycin.
 
 Previous studies have determined that the accumulation of lipid II is saturated after 30 min of vancomycin treatment (Qiao et al., 2017). We speculate that the rapid killing seen with dual treatment in that time frame relies on maximizing lipid II and bactoprenol on the cell surface (Qiao et al., 2017; Chugunov et al., 2013). If palmitoleic acid prevents bactoprenol recycling, it is likely that the pool of lipid II available becomes significantly smaller making it easier for vancomycin to saturate its lethal target at the septum. This may explain why dual treated cells had less accumulation of lipid II than vancomycin alone (Figure 3A).
 
-## Large regions of increased fluidity are generated by combining palmitoleic acid and vancomycin
+### Large regions of increased fluidity are generated by combining palmitoleic acid and vancomycin
 
 Recent studies show that the bactoprenol-bound precursors, such as lipid II, alter the surrounding phospholipid bilayer (Chugunov et al., 2013). To accommodate the long hydrocarbon tail of these molecules, a long-lived hydrophobic and fluid microdomain are generated in the membrane, also known as regions of increased fluidity (RIFs; Müller et al., 2016; Chugunov et al., 2013). The presence of RIFs in the membrane also serves an essential role in the spatial organization of complex machinery that is involved in cell envelope biosynthesis. However, antibiotics that target lipid II utilize the unique characteristics of RIFs as a ‘landing terrain’ that distinguishes their target within a ‘sea’ of other lipids (Chugunov et al., 2013). Similar to the bulky hydrophobic nature of bactoprenol, the cis unsaturation in palmitoleic acid causes a ‘kink’ in its hydrocarbon tail which also favors a membrane environment with increased fluidity and hydrophobicity (Mingeot-Leclercq and Décout, 2016). Furthermore, palmitoleic acid is likely to preferentially insert at the septum where lipid II and bactoprenol are localized in RIFs. We hypothesized that cell death occurs by the induction of large RIF formation due to the combined accumulation of palmitoleic acid, bactoprenol, and lipid II, resulting in a disruption of membrane organization.
 
@@ -71,37 +87,77 @@ To investigate the effects of combination or monotherapy on S. aureus membrane f
 
 Consistent with previous studies, the untreated S. aureus cells exhibit smooth, consistent fluorescence across the membrane using either nile red or DiI-C12 (Figure 4A–C; Saeloh et al., 2018; Monteiro et al., 2015). Similarly, vancomycin monotherapy illustrated smooth membrane staining with either dye, although DiI-C12 fluorescence was brighter compared to control cells suggesting some overall increased fluidity in vancomycin treated cells (Figure 4A–B). Palmitoleic acid also increased overall Dil-C12 fluorescence indicating some increased fluidity in the presence of the fatty acid alone (Figure 4A–B). However, when cells were treated with both palmitoleic acid and vancomycin, large foci were easily observable using either nile red or Dil-C12, indicating the formation of large RIFs during dual treatment (Figure 4A–B). Even at sublethal concentrations of vancomycin, where no cell death occurs, RIFs are still obvious in dual treated cells, though less pronounced (Figure 4—figure supplement 1). Importantly, nile red staining remained uniform in cells treated with a CMAA that did not potentiate vancomycin (glycerol monolaurate) and in cells treated with palmitoleic acid combined with oxacillin (Figure 4—figure supplement 2). These data indicate that regardless of concentration, only cells treated with vancomycin and palmitoleic acid generate detectable RIFs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-v2.jpg)
+
+**Figure 4.:** S. aureus (HG003) treated with DMSO, PA (11 μg/ml), VAN (20 μg/ml), PA +VAN (10 μg/ml), or PA +VAN (20 μg/ml) for (A and B) 10 min or (C) 30 min. (A and C) HG003 was stained with fluorescent BODIPY-labeled VAN and nile red for 5 min. (B) Regions of increased fluidity (RIFs) in HG003 were visualized by DiI-C12. Cells were fixed prior to imaging on an agarose pad. Images are representative of the population. Scale bar, 1 μm. (D–F) Bioinformatic analysis of all cells treated for 30 min and imaged, n=2 or 3 separate biological replicates. (D) The number of nile red foci in each cell was quantified for each treatment group and represented as a percent of the total population. (E) Scatter plot of cell size of each cell in the indicated treatment group. The black line represents the median. Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test, and all conditions had a p<0.0001, ****, compared to the control. (F) The cell cycle was determined for each cell in a given treatment group and illustrated as a percent of the total population; phase 1 (P1), phase 2 (P2), and phase 3 (P3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HG003 was grown to exponential phase prior to the addition of palmitoleic acid (11 μg/ml) combined with vancomycin at 1, 5, or 10 μg/ml. After 10 min, antibiotics were removed, and cells were stained with nile red and fluorescently labeled vancomycin for 5 min. Cells were fixed prior to imaging on an agarose pad. Images are representative of the population. Scale bar, 1 μm. (B) In one replicate, an aliquot of cells was removed prior to fixation, washed, and plated for colony forming unit (CFU) to evaluate whether the combination was sublethal in the images taken.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** HG003 was grown to exponential phase prior to challenge with DMSO (control), palmitoleic acid (11 μg/ml), vancomycin (10 μg/ml), glycerol monolaurate (30 μg/ml), oxacillin (5 μg/ml), or a combination of these compounds as indicated in the figure. After 10 min, antibiotics were removed, and cells were stained with nile red and fluorescently labeled vancomycin for 5 min. Cells were fixed prior to imaging on an agarose pad. Images are representative of the population. Scale bar, 1 μm. PA, palmitoleic acid; VAN, vancomycin; GML, glycerol monolaurate; OX, oxacillin.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Bioinformatic analysis of the total population imaged after 10 min of antibiotic treatment. Representative images can be found in Figure 4A. (A) Number of nile red labeled foci per cell in each treatment group was quantified and represented as a percent of the total population. (B) Scatter plot of cell volume per cell in each treatment group overall (i.e. P1–P3). Analysis of cell volume is further broken down by (C) cells only in P1, (D) cells only in P2, or (E) cells only in P3. Black line represents the median. Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test comparing each condition to the control. n.s., *, **** denotes, not significant, p<0.05, and p<0.0001, respectively. (F) The cell cycle was determined for each cell in each treatment group and represented as a percent of the total population. (G) Schematic of the cell cycle and representative examples of cells classified in each phase. VAN, vancomycin; PA, palmitoleic acid; P1, phase 1; P2, phase 2; P3, phase 3.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Bioinformatic analysis of cell volume based on cell cycle phase after 30 min of treatment. Representative images can be found in Figure 4C, and the overall cell volume of the population by treatment group can be found in Figure 4E. (A–C) Scatter plots of cell volume per cell in each treatment group broken down by (A) cells only in P1, (B) cells only in P2, or (C) cells only in P3. Black line represents the median. Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test comparing each condition to the control. n.s., ***, **** denotes, not significant, p=0.0005, and p<0.0001, respectively. For representative examples of cells in each phase see Figure 4—figure supplement 3G. VAN, vancomycin; PA, palmitoleic acid; P1, phase 1; P2, phase 2; P3, phase 3.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** All S. aureus strains were grown to exponential phase prior to the indicated treatment. An aliquot of cells was removed at the indicated time points, washed, and plated for colony forming unit (CFU) to enumerate survivors. (A) HG003 was treated with DAP (10 μg/ml)±PA (11 μg/ml). (B–D) JE2 wild-type, JE2 floA::Tn, and JE2 crtM::Tn were treated with DMSO (ctrl), PA (11 μg/ml), VAN (20 μg/ml), or PA and VAN. (E) HG003 cultures were treated with ZA for 30 min prior to the addition of VAN (20 μg/ml)±PA (11 μg/ml). Data represents n=6 biologically independent replicates with error bars as SD. DAP, daptomycin; PA, palmitoleic acid; WT, wild-type; VAN, vancomycin; ZA, zaragozic acid.
+
 Additionally, the RIF phenotype visualized at 10 min (Figure 4A) was not transient, and images taken after 30 min also displayed large foci only in dual treated conditions (Figure 4C). Furthermore, dual treatment resulted in nearly 50% of the cell population with at least one foci per cell at both 10 and 30 min (Figure 4D, Figure 4—figure supplement 3A). Interestingly, although there was not a difference in cell size after 10 min overall, examining the cell volume by cell cycle indicated that while dual treated cells are similar in size to control cells when in phase 3, cells in phases 1 and 2 were significantly smaller (Figure 4—figure supplement 3B–E). However, after 30 min, dual treated cells had a significant decrease in cell volume overall and in all cell cycle phases (Figure 4E, Figure 4—figure supplement 4A–C), suggesting that cell shrinkage occurs after prolonged exposure. We also examined the distribution of the cell cycle in each treatment group and found that at either time point, dual treated conditions had a larger proportion of the population in phase 3 (Figure 4F, Figure 4—figure supplement 3F–G). Phase 3 is a short elongation step prior to an incredibly fast separation event (Monteiro et al., 2015; Zhou et al., 2015), and typically, only a small proportion of the cell population is found in phase 3, as observed in control and monotherapy treated cells (Figure 4F, Figure 4—figure supplement 3F). These results demonstrate that dual treatment leads to large RIFs, cell shrinkage, and disruption of the cell cycle.
 
 Previous work has shown that daptomycin causes large RIF formation similar to the phenotype we see with vancomycin and palmitoleic acid (Müller et al., 2016). Because daptomycin can already induce RIF formation and has potent bactericidal activity alone, we did not anticipate synergy with palmitoleic acid. Indeed, when tested, palmitoleic acid did not potentiate daptomycin killing of S. aureus (Figure 4—figure supplement 5A). Additional studies have shown that in the absence of FloA or CrtM, fluid microdomains can be disturbed (Zielińska et al., 2020; García-Fernández et al., 2017). Using S. aureus strains from the Nebraska Transposon Mutant Library, we investigated whether floA or crtM mutants would abrogate our phenotype. Interestingly, neither disruption of floA nor crtM impacted synergy between vancomycin and palmitoleic acid and looked identical to the parental strain JE2 (Figure 4—figure supplement 5B–D). We further confirmed that FloA was not involved by pre-treatment with zaragozic acid, a statin that has previously been shown to disrupt FloA rafts (García-Fernández et al., 2017). Pre-treatment also did not diminish palmitoleic acid potentiation of vancomycin killing (Figure 4—figure supplement 5E). Taken together, these data suggest that the induction of large RIFs induced by dual vancomycin-palmitoleic acid treatment is independent of factors responsible for natural, coordinated RIF formation in growing cells.
 
-## Dual treatment increases membrane permeability without forming a pore
+### Dual treatment increases membrane permeability without forming a pore
 
 Palmitoleic acid has previously been reported to increase permeability, albeit at higher concentrations and at lower cell densities than examined here (Parsons et al., 2012; Miller et al., 1977; Wang and Johnson, 1992). However, since we observed a reduction in cell volume (Figure 4—figure supplement 3C–E, Figure 4—figure supplement 4A–C), we wanted to evaluate whether permeability is altered at sublethal concentrations of palmitoleic acid that achieve synergy with vancomycin. We first determined if combination or monotherapy led to cellular content leakage by measuring ATP in the supernatant. While the control and vancomycin monotherapy had minimal ATP leakage, all groups that were treated with palmitoleic acid had more ATP in the supernatant after 10 min. Compared to palmitoleic acid monotherapy, the dual treatment groups had significantly more ATP loss (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig5-v2.jpg)
 
-**Figure 5.:** (A) S. aureus grown to exponential phase was treated with the indicated compounds for 10 min prior to separating the supernatant from the pellet. ATP measurements were taken using a plate reader and normalized to colony forming unit (CFU). (B) S. aureus grown to exponential phase was loaded with 8 μM of SYTOX Green and aliquoted into a microtiter plate prior to treatment. Membrane permeability was measured (485/522 nm) on a plate reader every 2 min for 28 min. (A–B) Cells were challenged with DMSO (control), nisin (200 IU/ml), or PA (11 μg/ml)±VAN (1, 5, or 10 μg/ml) were added as indicated on the graph. Data represent the mean values from n=2 or 3 biologically independent replicates with three technical replicates each ± SD. Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test comparing the means of the technical replicates of each condition to PA alone. n.s. and * denote, not significant and p<0.0332, respectively.Figure 5—source data 1.Figure 5A–B.
+**Figure 5.:** (A) S. aureus grown to exponential phase was treated with the indicated compounds for 10 min prior to separating the supernatant from the pellet. ATP measurements were taken using a plate reader and normalized to colony forming unit (CFU). (B) S. aureus grown to exponential phase was loaded with 8 μM of SYTOX Green and aliquoted into a microtiter plate prior to treatment. Membrane permeability was measured (485/522 nm) on a plate reader every 2 min for 28 min. (A–B) Cells were challenged with DMSO (control), nisin (200 IU/ml), or PA (11 μg/ml)±VAN (1, 5, or 10 μg/ml) were added as indicated on the graph. Data represent the mean values from n=2 or 3 biologically independent replicates with three technical replicates each ± SD. Statistical significance was determined by one-way ANOVA with Dunnett’s multiple comparisons test comparing the means of the technical replicates of each condition to PA alone. n.s. and * denote, not significant and p<0.0332, respectively.
 
 We next evaluated whether leakage of cellular content was due to pore formation by using SYTOX Green which is a membrane-impermeable dye that intercalates into DNA (Roth et al., 1997). Even though we observed significant ATP leakage after 10 min, the membranes in all treatment groups remained impermeable to SYTOX Green after 10 min except for our positive control, nisin (Figure 5B). These data indicate that the outflow of cytoplasmic contents is not associated with pore formation (Epand et al., 2016), as is the case with nisin (Wiedemann et al., 2004), but instead is likely due to increases in localized fluidity that may disturb lipid packing of the membrane and allow the escape of small molecules. This is also supported by previous work which has shown that UFAs increase membrane fluidity (Boudjemaa et al., 2018). However, while increased permeability may be a contributing factor, it is unlikely to be the main cause of cell death, as most CMAAs we tested (Figure 1A) have been shown to also increase membrane permeability, yet they did not potentiate vancomycin killing (Radlinski et al., 2019; Kim et al., 2018; Churchward et al., 2018; Hess et al., 2014).
 
-## Dual treated S. aureus display aberrant septal synthesis and membrane defects
+### Dual treated S. aureus display aberrant septal synthesis and membrane defects
 
 To further visualize membrane aberrations in dual-treated cells, we performed transmission electron microscopy (TEM). We observed normal cellular structure and septal formation in control, palmitoleic acid, and vancomycin monotherapy conditions (Figure 6A–C and E–G). In contrast, cells treated with both palmitoleic acid and vancomycin exhibited deformed septa that were misshapen and lacking an electron-dense mid-line compared to control cells (Figure 6D and H; yellow arrow). The dual treated cells additionally had an electron transparent region at the septa much thicker than the other conditions imaged and no discernable cell membrane or intermediate layer at the septum. Moreover, as expected based on fluorescence microscopy results, the dual treated cells had membrane aberrations that varied in size amongst the population of cells imaged (Figure 6H, red arrow). Interestingly, these ultrastructural alterations of the cell membrane and septa parallel those reported for lipoglycopeptide treated S. aureus (Belley et al., 2009). Palmitoleic acid did not potentiate oritavancin killing of S. aureus, a lipoglycopeptide, likely due to oritavancin being a potent bactericidal agent capable of inducing aberrant septal formation when used alone (Figure 6—figure supplement 1).
 
-## Dual treatment delocalizes cell division and peptidoglycan biosynthesis machinery
+![Figure 6.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig6-v2.jpg)
+
+**Figure 6.:** The ultrastructure of S. aureus cells treated for 30 min was visualized by TEM. (A–H)S. aureus HG003 grown to mid-exponential phase was treated with DMSO (A and E), 11 μg/ml PA (B and F), 20 μg/ml VAN, (C and G) and PA +VAN (D, H). (A–C and E–G) Micrographs of cells with a cross wall at mid-cell, while (D and H) show cells treated with PA +VAN have deformed septa (yellow arrows) and membrane invaginations (red arrows). Magnification of 50,000× with a 0.5 μm scale bar (A–D) or magnification of 150,000× with a 200 nm scale bar (E–H). (E) (1) Electron-dense midline of the septum, (2) electron-dense intermediate layer, located between the (3) cell membrane and the (4) cell wall. The white holes in the cytoplasm of imaged cells are artifacts that occur during sample preparation (Tizro et al., 1897). PA, palmitoleic acid; VAN, vancomycin.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** HG003 was grown to exponential phase prior to treatment with oritavancin (10 μg/ml)±palmitoleic acid (11 μg/ml). Aliquots of cells were taken at indicated time points, washed, and plated to enumerate survivors. Data represents n=3 biological replicates and error bars as SD. ORI, oritavancin; PA, palmitoleic acid.
+
+### Dual treatment delocalizes cell division and peptidoglycan biosynthesis machinery
 
 Disruption of RIF organization by other antibiotics has been found to displace or delocalize membrane-bound proteins, such as those of cell division and peptidoglycan biosynthesis (Müller et al., 2016; Saeloh et al., 2018). The divisome of S. aureus is a multi-protein complex that forms a ring at the site of cell division (Lund et al., 2018). Cell division requires the highly coordinated efforts of peptidoglycan biosynthesis, hydrolysis, and turgor pressure (Monteiro et al., 2015; Monteiro et al., 2018). EzrA is an essential divisome protein that acts as a scaffold and regulator for the proper formation of the division ring at the septum (Lund et al., 2018; Steele et al., 2011). To determine whether the septal defects visualized with TEM are caused by an improper localization of the divisome complex, we utilized an S. aureus strain with a chromosomal EzrA-GFP fusion (Saraiva et al., 2020). We found that the control and vancomycin treated cells maintained EzrA fluorescence at the septum as a single ring at the center of the cell (Figure 7A). In contrast, we observed two distinct phenotypes following dual treatment with palmitoleic acid and vancomycin: delocalization of EzrA throughout the cell or multiple distinct rings within a single cell (Figure 7A). Interestingly, we observed a small subpopulation of cells treated with palmitoleic acid monotherapy with delocalized EzrA (Figure 7A). This is consistent with a previous study that suggested low concentrations of antimicrobial lipids, including palmitoleic acid, exert bacteriostatic activity as a result of momentary cell division defects prior to cell recovery (Churchward et al., 2018; Cartron et al., 2014). As controls, we evaluated whether a CMAA that did not potentiate vancomycin (glycerol monolaurate) and an antibiotic that lacked synergy with palmitoleic acid (oxacillin) maintained the septal placement of EzrA. As expected, glycerol monolaurate plus vancomycin and oxacillin plus palmitoleic acid had proper placement of cell division machinery (Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig7-v2.jpg)
+
+**Figure 7.:** Localization of cell division and peptidoglycan biosynthesis machinery after 10 min. (A) HG003 with chromosomal ezrA-gfp was grown to exponential phase prior to treatment with DMSO (control), VAN (1, 5, or 10 μg/ml), PA (11 μg/ml), or PA +VAN at indicated concentrations in parentheses. (B) HG003 was grown to exponential phase and treated for a total of 10 min as indicated, and HADA (blue) was added after 5 min. The compounds and HADA dye were washed from the cells and stained with wheat germ agglutinin (WGA; green) for 5 min and then fixed. Gray arrows illustrated aberrant localization of peptidoglycan synthesis. (A–B) After treatment, cells were fixed prior to imaging on an agarose pad. Scale bars,1 μm. n=2 biological replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Localization of cell division machinery after 10 min was monitored using HG003 with a chromosomal ezrA-gfp. Cells were grown to exponential phase prior to treatment with vancomycin (10 μg/ml), palmitoleic acid (11 μg/ml), glycerol monolaurate (30 μg/ml), oxacillin (5 μg/ml), or in combination with palmitoleic acid or vancomycin as indicated. After treatment, cells were fixed prior to imaging on an agarose pad. Images are representative of the population. Scale bar, 1 μm. PA, palmitoleic acid; VAN, vancomycin; GML, glycerol monolaurate; OX, oxacillin.
+
 Since peptidoglycan synthesis is directly linked to cell division, we next aimed to determine if dual treatment alters peptidoglycan synthesis using HADA, a fluorescent d-amino acid that is incorporated into the newly synthesized cell wall, and wheat germ agglutinin (WGA) that stains mature cell wall (Kuru et al., 2015). After 10 min, the lower vancomycin monotherapy concentrations had yet to inhibit cell wall biosynthesis, but the highest concentration had shut down peptidoglycan biosynthesis in a majority of the cells in any given field, as expected (Figure 7B, PA +VAN10). In all control or monotherapy groups, HADA was correctly located at the septa (Figure 7B). In contrast, when palmitoleic acid was combined with lower vancomycin concentrations that allowed HADA incorporation, we saw aberrant peptidoglycan incorporation (Figure 7B, gray arrows). Peptidoglycan biosynthesis is a highly regulated process that occurs at the site of cell division prior to rapid daughter cell separation (Monteiro et al., 2018). In contrast, we observed that dual treated cells began to initiate peptidoglycan synthesis at additional division planes prior to daughter cell separation further indicating cell division or cytokinesis defects (Figure 7B, gray arrows) (Reichmann et al., 2019). Together, these data suggest that vancomycin in combination with palmitoleic acid promotes divisome and peptidoglycan biosynthesis delocalization, leading to lethal aberrant septa formation.
 
-## Palmitoleic acid sensitizes antibiotic-resistant isolates to vancomycin killing
+### Palmitoleic acid sensitizes antibiotic-resistant isolates to vancomycin killing
 
 One strategy to reduce the rise in resistance while also sensitizing already resistant and tolerant populations is to utilize chemotherapies with multiple bacterial targets (Gray and Wenzel, 2020a). Here, we have identified that combining palmitoleic acid and vancomycin targets multiple essential processes; thus, we next aimed to determine if dual treatment can re-sensitize resistant isolates to vancomycin. Despite the decreased susceptibility to vancomycin in characterized vancomycin-resistant S. aureus (VRSA) and VISA clinical isolates (with MICs of >16 μg/ml and 4 μg/ml, respectively; Kosowska-Shick et al., 2008), dual treatment resulted in similar killing kinetics to MSSA with 99.9% of the cells killed after only 30 min (Figure 8A–B). Additionally, palmitoleic acid potentiated vancomycin killing of other Gram-positive bacteria, including E. faecalis, B. subtilis, Enterococcus faecium, and Staphylococcus epidermidis (Figure 8C–G). Importantly, palmitoleic acid was able to potentiate vancomycin killing of vancomycin-resistant E. faecalis (Figure 8D). However, palmitoleic acid did not potentiate killing of the Gram-negative bacterial species Escherichia coli (Figure 8H), likely due to the outer membrane. These data illustrate the potency of palmitoleic acid as a vancomycin adjuvant against various Gram-positive bacteria, including those exhibiting vancomycin resistance.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/80246/elife-80246-fig8-v2.jpg)
 
-**Figure 8.:** (A) Vancomycin-intermediate S. aureus (VISA) strain SA770 (Kosowska-Shick et al., 2008) and (B) vancomycin-resistant S. aureus (VRSA) strain VRS2 (Kosowska-Shick et al., 2008) were grown to exponential phase prior challenge with DMSO (Ctrl), PA (11 μg/ml), VAN (20 μg/ml), or VAN + PA. At the indicated time points, an aliquot was removed and plated to enumerate survivors. PA potentiation of other Gram-positive bacteria was determined using (C) E. faecalis, (D) vancomycin-resistant E. faecalis (VRE), (E) E. faecium, (F) B. subtilis, (G) S. epidermidis, and Gram-negative bacterial species (H) E. coli. Strains were grown to exponential phase prior to challenge with concentrations of PA ± VAN indicated in Figure 8—source data 1. After 2 hr, an aliquot was removed and plated for colony forming unit (CFU) enumeration. Data represents n=6 or 3 biologically independent replicates with error bars as SD. Significance was evaluated using Student’s two-tailed unpaired t-test between VAN and VAN + PA conditions.Figure 8—source data 1.Figure 8A–H.
+**Figure 8.:** (A) Vancomycin-intermediate S. aureus (VISA) strain SA770 (Kosowska-Shick et al., 2008) and (B) vancomycin-resistant S. aureus (VRSA) strain VRS2 (Kosowska-Shick et al., 2008) were grown to exponential phase prior challenge with DMSO (Ctrl), PA (11 μg/ml), VAN (20 μg/ml), or VAN + PA. At the indicated time points, an aliquot was removed and plated to enumerate survivors. PA potentiation of other Gram-positive bacteria was determined using (C) E. faecalis, (D) vancomycin-resistant E. faecalis (VRE), (E) E. faecium, (F) B. subtilis, (G) S. epidermidis, and Gram-negative bacterial species (H) E. coli. Strains were grown to exponential phase prior to challenge with concentrations of PA ± VAN indicated in Figure 8—source data 1. After 2 hr, an aliquot was removed and plated for colony forming unit (CFU) enumeration. Data represents n=6 or 3 biologically independent replicates with error bars as SD. Significance was evaluated using Student’s two-tailed unpaired t-test between VAN and VAN + PA conditions.
 
 ## Discussion
 
@@ -121,25 +177,350 @@ In summary, the findings presented here demonstrate a promising approach to enha
 
 ## Materials and methods
 
-## Bacterial growth and conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain and strain background (Staphylococcus aureus)</td>
+      <td>HG003; MSSA</td>
+      <td>doi:10.1128/IAI.00088-10</td>
+      <td>BC1561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>LAC; CA-MRSA</td>
+      <td>doi:10.1073/pnas.0710217105</td>
+      <td>BC1684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>JE2 wild-type</td>
+      <td>doi:10.1128/mBio.00537-12.</td>
+      <td>BC9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>JE2 floA::Tn</td>
+      <td>doi:10.1128/mBio.00537-12.</td>
+      <td>BC1758</td>
+      <td>SAUSA300_1533; From NTML, strain NE184</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>JE2 crtM::Tn</td>
+      <td>doi:10.1128/mBio.00537-12.</td>
+      <td>BC440</td>
+      <td>SAUSA300_2499; From NTML, strain NE1444</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>HG003 ezrA-gfp</td>
+      <td>doi:10.1038/nature25506</td>
+      <td>BC1552</td>
+      <td>ezrA-gfp was transduced from ColpSGEzrA-GFP into HG003 background for this work</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>VISA</td>
+      <td>doi:10.1128/AAC.01073-08</td>
+      <td>SA770; BC1477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (S. aureus)</td>
+      <td>VRSA</td>
+      <td>doi:10.1128/AAC.01073-08</td>
+      <td>VRS2; BC1479</td>
+      <td>Vancomycin-resistant</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (Enterococcus faecalis)</td>
+      <td>VRE</td>
+      <td>doi:10.1128/iai.00425- 15</td>
+      <td>V583; BC231</td>
+      <td>Vancomycin-resistant</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (E. faecalis)</td>
+      <td>OG1</td>
+      <td>ATCC</td>
+      <td>BC524</td>
+      <td>ATCC 47077</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (Enterococcus faecium)</td>
+      <td>Clinical isolate</td>
+      <td>doi:10.1038/s41564-021-00966-0</td>
+      <td>BC1540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (Bacillus subtilis)</td>
+      <td>BS49</td>
+      <td>doi:10.1371/journal.pgen.1006701</td>
+      <td>BC209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (Escherichia coli)</td>
+      <td>MG1655</td>
+      <td>ATCC</td>
+      <td>BC15</td>
+      <td>ATCC 47076</td>
+    </tr>
+    <tr>
+      <td>Strain and strain background (Staphylococcus epidermidis)</td>
+      <td>CSF41498</td>
+      <td>doi:10.1128/jb.0194 6-14</td>
+      <td>BC17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Rhamnolipids</td>
+      <td>AGAE Technologies</td>
+      <td>Cat#R90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Palmitoleic acid</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #10009871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Linoleic acid</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #90150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Glycerol monolaurate</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#28170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Lauric acid</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#10006626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Adarotene</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#SML2061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Benzyl alcohol</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#A396500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Vancomycin</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#AAJ6279003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Fosfomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#P5396</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Oxacillin</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#AC45544005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Nafcillin</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#AC46138001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Bacitracin</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#BP29501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Tarocin A1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#SML1677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Daptomycin</td>
+      <td>MedChem Express</td>
+      <td>Cat.#HY-B0108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>zaragozic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#z2626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>Oritavancin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#24091</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>AsKO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#A6756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound and drug</td>
+      <td>CCCP</td>
+      <td>Cayman Chemical</td>
+      <td>Cat.#25458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BODIPY-VAN</td>
+      <td>Invitrogen</td>
+      <td>Cat.#V34850</td>
+      <td>Fluorescently labeled vancomycin, labeling cell wall, Figure 4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nile red</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.#72485</td>
+      <td>Cell membrane dye, Figure 4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiI-C12</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#D383</td>
+      <td>RIF specific dye, Figure 4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HADA</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#66475</td>
+      <td>Dye that stains new cell wall, Figure 7</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WGA-488</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#W11261</td>
+      <td>Dye that stains mature cell wall, Figure 7</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sytox green</td>
+      <td>ThermoFisher</td>
+      <td>Cat.#S7020</td>
+      <td>Cell viability dye, Figure 5</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BacTiter-Glo Microbial Viability Kit</td>
+      <td>Promega</td>
+      <td>Cat.#G8232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>Graphpad.com</td>
+      <td>Prism 9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Biorender</td>
+      <td>Biorender.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Metamorph 7.10</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>Acquisition software</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>Autoquant</td>
+      <td>Media cybernetics</td>
+      <td>Version 3.1.3</td>
+      <td>Deconvolution software</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>FIJI</td>
+      <td>ImageJ</td>
+      <td>v1.53q</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial growth and conditions
 
 S. aureus strains HG003 (MSSA; Herbert et al., 2010), HG003 ezrA-gfp, LAC (CA-MRSA; Kennedy et al., 2008), JE2, JE2 floA::tn, JE2 crtM::tn (Fey et al., 2013Fey et al., 2013), SA770 (VISA), and VRS2 (VRSA; Kosowska-Shick et al., 2008); B. subtilis strain BS49 (Anjuwon-Foster and Tamayo, 2017), E. coli strain MG1655 (Blattner et al., 1997), and S. epidermidis strain CSF41498 (Conlon et al., 2014) were routinely cultured in tryptic soy broth (TSB, Remel) at 37°C with 225 rpm shaking. E. faecalis strains OG1 and V583 (Maharshak et al., 2015) and a clinical E. faecium isolate (Aggarwala et al., 2021) were cultured in Brain Heart Infusion Broth (Oxoid) at 37°C with shaking (E. faecium) or statically (E. faecalis strains). The EzrA-GFP was transduced from the chromosome of ColpSGEzrA-GFP (Monteiro et al., 2018) to HG003 by phage transduction using phage 80α as previously described (Schneewind and Missiakas, 2014).
 
-## In vitro antibiotic survival assays
+### In vitro antibiotic survival assays
 
 Antibiotic survival assays were performed as previously described (Sidders et al., 2021). Briefly, overnight cultures were diluted 1:1000 into fresh media and grown for 3–5 hr depending on the strain to yield a starting inoculum in late exponential phase (~2 × 108 CFU/ml). The time required after back diluting an overnight culture to reach the starting inoculum was determined by performing growth curves of each strain (data not shown). Concentrations of antibiotics used in survival assays can be found in the figure legends or source data. At the indicated time points, an aliquot of cells was washed twice with PBS, serially diluted, and plated on tryptic soy agar to enumerate CFU. For assays with CCCP, AsKO, and zaragozic acid, these compounds were added 30 min prior to antibiotic challenge. Statistical analysis is indicated in the figure legends.
 
-## Membrane integrity assays
+### Membrane integrity assays
 
 Membrane permeability was measured using the SYTOX Green (Invitrogen) as previously described (Yasir et al., 2019). Briefly, measurements were carried out in a Synergy H1 (BioTek) plate reader equipped with 480 nm excitation and 522 nm emission filters. S. aureus HG003 was grown in TSB as described above. After reaching the desired starting CFU, cells were washed thrice with PBS + 10% TSB and resuspended. Cells were loaded with SYTOX Green for 15 min at room temperature in the dark. Subsequently, 100 μl of cells were added to each well of a black flat bottom 96-well polystyrene plate that was non-binding (Corning, 3991) to prevent the necessity of BSA being added. The final concentration of SYTOX Green was 8 μM. Compounds were added at concentrations indicated in the figure legend, and reads were taken every 2 min for 28 min while shaking.
 
 ATP levels were evaluated using the BactiterGLO kit (Promega) per manufacturer’s specifications and normalized to CFU that was taken after 10 min of treatment.
 
-## Accumulation of cell wall precursors
+### Accumulation of cell wall precursors
 
 S. aureus HG003 was grown to ~1 × 108 CFU/mL before being treated with vancomycin (10 µg/mL), palmitoleic acid (11 µg/mL), or the combination of both for 30 min. Cell numbers were documented after treatment, and cells were harvested at 8000 rpm for 10 min before being resuspended in 1× PBS. Lipids were extracted by addition of an equal volume of n-butanol-pyridine acetate (2:1 [v/v] pH 4.2), followed by vigorous vortexing and 3 min of centrifugation at 13,500 rpm using a microfuge to achieve phase separation, as previously described (Müller et al., 2012). The lipid containing upper phase was collected, and extraction was repeated with the lower phase. Upper phases were combined, washed twice with cold water (pH 4.2), and fully dried by desiccation. Dried lipids were resuspended in n-butanol with adjustment of the resuspension volume according to the normalized cell number. Analysis of lipid content was achieved by thin layer chromatography developed in the solvent according to Rick (CHCl3:MeOH:H2O:NH4OH [88:48:10:1]) followed by PMA staining as described before (Rick et al., 1998; Schneider et al., 2004). Additionally, samples were subjected to HPLC.
 
-## HPLC of cell wall precursors
+### HPLC of cell wall precursors
 
 HPLC was performed on an Agilent 1260 Infinity II System (Agilent Technologies, Santa Clara, CA, USA) equipped with a VWD detector. Separation of lipid II was achieved on a MultoHigh Bio 300 – C4 (4 × 125 mm, 5 µm) with a flow rate of 0.5 ml/min at 30°C, using a linear gradient of 3:1:1 (H2O:MeOH:IPA) for 3 min, which increased to 100% 0.5:1:1 (H2O:MeOH:IPA) in 35 min and was maintained for 5 min. Before the following run, the gradient was returned to 0% in 2 min and was retained for 5 min. Both solvent mixtures were buffered with 10 mM H3PO4.
 
@@ -147,7 +528,7 @@ Separation of bactoprenol and lipid I was achieved on an Agilent Poroshell 120 C
 
 The data was analyzed by comparing the peaks against standards of different purified cell wall precursors. Data analysis was performed using OpenLab CDS software version 2.6.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 All imaging was performed using S. aureus HG003 grown as described above prior to challenge with compounds at concentrations and time points indicated in figure legends.
 
@@ -157,12 +538,12 @@ After staining, S. aureus was fixed with 4% paraformaldehyde made fresh day of f
 
 Image Z-stacks were acquired using an Olympus IX81 inverted microscope fitted with a Hamamatsu ORCA-Flash4.0 V3 camera, X-Cite XYLIS XT720L (385) illumination, 100×/1.4 Oil UPlan S Apo PSF objective lens, and Metamorph 7.10 acquisition software (Molecular Devices). Z spacing was 0.2 μm, and pixel size in XY was 0.064 μm. Our Z-stacks ranged in thickness from 2.6 to 4.0 μm. We acquired images for all channels at each Z position before moving to the next Z position. Nile red was imaged with 560/25 excitation and 607/36 emission filters. BODIPY-VAN, EzrA, and WGA-488 were imaged with 485/20 excitation and 525/30 emission filters. HADA was imaged with 387/11 excitation and 440/40 emission filters. DiI-C12 was imaged with 572/35 excitation and 632/60 emission filters. All images were acquired with the same exposure settings. No pixels had saturated intensities. Z-stacks were subsequently deconvolved using Autoquant software version 3.1.3 with default settings. All images in a figure were processed in FIJI and have the same display adjustments. A single Z-plane that was determined to be the middle cross-section of S. aureus cells in the field of view was used for representative images of nile red, VAN-FL, WGA-488, and DiI-C12. A max projection of all Z-stacks was used for the representative images of HADA and EzrA-GFP.
 
-## Image analysis
+### Image analysis
 
 Image analysis was performed using Python with scikit-image (0.18.2) image processing library (van der Walt et al., 2014) and Fiji (v1.53q; Schindelin et al., 2012). The full analysis code is available on Github (copy archived at Sidders et al., 2023), while all raw imaging data and key processed steps were deposited in Zenodo repository.
 
 For quantification of bacterial cell features (volume, phase, and foci number), a middle cross-section from confocal z-stacks was used. This plane was selected automatically by finding the frame with maximum cell area from thresholded (Otsu) images of the cell wall (BODIPY-VAN). Detection of cells was performed in the membrane channel (Nile Red) using cellpose segmentation algorithm (Stringer et al., 2021). Total number of detected cells (all conditions) >32 k. Volume of cells was calculated based on the major and minor axis length of segmented cells as described previously (Monteiro et al., 2015). Membrane foci were segmented using Maximum Entropy Threshold (Fiji). Phases of the cell cycle were determined using a classification network trained using fastai deep learning library (2.5.3; Howard and Gugger, 2020). Briefly, a Resnet50 pre-trained network (fastai) was trained using manually annotated sets of cells (phase 1–150, phase 2–150, phase 3–150, and missegmented cells - 80) achieving error rate <4%. Trained classifier was used to predict the cell cycle phase of remaining cells.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 S. aureus was grown and challenged as described above. Cultures were centrifuged at 1500 × g, and the supernatant was removed. Bacterial cells pellets were resuspended in 4% paraformaldehyde/2.5% glutaraldehyde in 0.15 M sodium phosphate buffer, pH 7.4, for 1 hr at room temperature and stored at 4°C. Following three washes with 0.15 M sodium phosphate buffer, pH 7.4, the fixed cell pellets were post-fixed in 1% osmium tetroxide in 0.15 M sodium phosphate buffer, pH 7.4 for 45 min and washed three times with deionized water. The samples were gradually dehydrated with ethanol (30, 50, 75, 100, and 100%) and propylene oxide. The cell pellets were infiltrated with a 1:1 mixture of propylene oxide for and Polybed 812 epoxy resin overnight, followed by a 1:2 mixture of propylene oxide for and Polybed 812 epoxy resin for 3 hr and transferred to 100% resin to embed overnight (Polysciences, Inc,Warrington, PA, USA). Ultrathin sections (70–80 nm) were cut with a diamond knife and mounted on 200 mesh copper grids followed by staining with 4% aqueous uranyl acetate for 12 min and Reynold’s lead citrate for 8 min (Reynolds, 1963). Samples were observed using a JEOL JEM-1230 TEM operating at 80 kV (JEOL USA, Inc, Peabody, MA, USA), and images were acquired with a Gatan Orius SC1000 CCD Digital Camera and Gatan Microscopy Suite 3.0 software (Gatan, Inc, Pleasanton, CA, USA).

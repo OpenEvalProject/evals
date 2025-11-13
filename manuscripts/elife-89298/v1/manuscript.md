@@ -21,16 +21,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00ysqcn41 Department of Neuroscience, Jefferson Synaptic Biology Center, Vickie and Jack Farber Institute for Neuroscience, Sidney Kimmel Medical College at Thomas Jefferson University Philadelphia United States
-2. https://ror.org/00ysqcn41 Jefferson Weinberg ALS Center, Department of Neuroscience, Vickie and Jack Farber Institute for Neuroscience, Thomas Jefferson University Philadelphia United States
-3. https://ror.org/00ff4bt20 Department of Biology, Arcadia University Glenside United States
-4. https://ror.org/04vmvtb21 Department of Cell and Molecular Biology, Tulane Brain Institute, Tulane University New Orleans United States
+1. Department of Neuroscience, Jefferson Synaptic Biology Center, Vickie and Jack Farber Institute for Neuroscience, Sidney Kimmel Medical College at Thomas Jefferson University Philadelphia United States ([ROR:00ysqcn41](https://ror.org/00ysqcn41))
+2. Jefferson Weinberg ALS Center, Department of Neuroscience, Vickie and Jack Farber Institute for Neuroscience, Thomas Jefferson University Philadelphia United States ([ROR:00ysqcn41](https://ror.org/00ysqcn41))
+3. Department of Biology, Arcadia University Glenside United States ([ROR:00ff4bt20](https://ror.org/00ff4bt20))
+4. Department of Cell and Molecular Biology, Tulane Brain Institute, Tulane University New Orleans United States ([ROR:04vmvtb21](https://ror.org/04vmvtb21))
 
 † Corresponding author
 
 ## Abstract
 
-Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by motor neuron loss. Importantly, non-neuronal cell types such as astrocytes also play significant roles in disease pathogenesis. However, mechanisms of astrocyte contribution to ALS remain incompletely understood. Astrocyte involvement suggests that transcellular signaling may play a role in disease. We examined contribution of transmembrane signaling molecule ephrinB2 to ALS pathogenesis, in particular its role in driving motor neuron damage by spinal cord astrocytes. In symptomatic SOD1 G93A mice (a well-established ALS model), ephrinB2 expression was dramatically increased in ventral horn astrocytes. Reducing ephrinB2 in the cervical spinal cord ventral horn via viral-mediated shRNA delivery reduced motor neuron loss and preserved respiratory function by maintaining phrenic motor neuron innervation of diaphragm. EphrinB2 expression was also elevated in human ALS spinal cord. These findings implicate ephrinB2 upregulation as both a transcellular signaling mechanism in mutant SOD1-associated ALS and a promising therapeutic target.
+Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by motor neuron loss. Importantly, non-neuronal cell types such as astrocytes also play significant roles in disease pathogenesis. However, mechanisms of astrocyte contribution to ALS remain incompletely understood. Astrocyte involvement suggests that transcellular signaling may play a role in disease. We examined contribution of transmembrane signaling molecule ephrinB2 to ALS pathogenesis, in particular its role in driving motor neuron damage by spinal cord astrocytes. In symptomatic SOD1G93A mice (a well-established ALS model), ephrinB2 expression was dramatically increased in ventral horn astrocytes. Reducing ephrinB2 in the cervical spinal cord ventral horn via viral-mediated shRNA delivery reduced motor neuron loss and preserved respiratory function by maintaining phrenic motor neuron innervation of diaphragm. EphrinB2 expression was also elevated in human ALS spinal cord. These findings implicate ephrinB2 upregulation as both a transcellular signaling mechanism in mutant SOD1-associated ALS and a promising therapeutic target.
 
 ## Introduction
 
@@ -46,63 +46,63 @@ In search of new targets to modulate Eph-ephrin signaling, we chose to explore e
 
 ## Results
 
-## Increase in ventral horn ephrinB2 with disease progression
+### Increase in ventral horn ephrinB2 with disease progression
 
 Eph receptor signaling has been implicated in ALS (Van Hoecke et al., 2012; Tsuda et al., 2008); however, the involvement of specific ephrin ligands in disease remains unresolved. To begin to address this question, we assessed ephrinB2 expression over the course of disease in SOD1G93A mice at pre-symptomatic (60 days), symptomatic (120 days) and endstage time points using ephrinB2 immunohistochemistry (IHC). We focused in particular on the cervical ventral horn, as it is the location of PhMNs critical to maintaining diaphragm function (Warren and Alilain, 2014). In age-matched wild-type (WT) littermates, ephrinB2 was expressed at relatively low levels. Compared to WT controls (Figure 1a), there was pronounced up-regulation of ephrinB2 in ventral horn even at the late pre-symptomatic (60 day) time point (Figure 1b). EphrinB2 expression dramatically increased over disease course in SOD1G93A mice as seen at the symptomatic (120 day) time point (Figure 1c) and at disease endstage (Figure 1d). Quantification of ephrinB2 expression in the cervical spinal cord ventral horn showed an increase in expression at 60 days (18.58±8.42 a.u. fold increase; WT vs. 60d: p=0.048), 120 days (41.83±26.67 a.u. fold increase; WT vs. 120d: p=0.21; 60d vs. 120d: p=0.32) and endstage (63.42±10.99 a.u. fold increase; WT vs. endstage: p=0.015; 60d vs. endstage: p=0.017; 120d vs. endstage: p=0.3) compared to WT age-matched controls (1.00±0.40 a.u.) (Figure 1e; n=3–4 mice per group). Compared to WT control, ephrinB2 expression was also significantly increased at endstage in the thoracic (Figure 1f, g) and lumbar (Figure 1h–k) ventral horn. Increases in ephrinB2 expression were localized to spinal cord gray matter. Higher magnification imaging from lumbar spinal cord revealed that the vast majority of ephrinB2-expressing cells within the ventral horn displayed an astrocyte-like morphology (Figure 1j, k). These data indicate that ephrinB2 expression is upregulated in SOD1G93A mice and suggest that increases in ephrinB2 expression might be localized to glia.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig1-v1.jpg)
 
-**Figure 1.:** SOD1G93A mouse ventral horn cervical spinal cord tissue immuinostained for ephrinB2 at 60 days (b), 120 days (c), endstage (d), and WT mouse age-matched control (a), scale bar: 200 µm. Quantification of ephrinB2 expression within the ventral horn shows a progressive increase in expression over time compared to WT controls (e). Endstage ephrinB2 expression in the thoracic (f, g) and lumbar (h–k) regions; scale bar: 200 µm, 100 µm, respectively. Endstage SOD1G93A mouse cervical spinal cord tissue co-immuostained for ephrinB2 (l, n, o, q) and neuronal and astrocyte lineage-specific markers NeuN (m–n) and GFAP (p–q), respectively; scale bar: 30 µm. Analysis in panels A-K: n=3–4 mice per genotype and per time point; 1–2 females and 2 males per condition. Analysis in panels L-O: n=3 mice per genotype and per time point; 1 female and 2 males per condition.Figure 1—source data 1.Figure 1, panel E.
+**Figure 1.:** SOD1G93A mouse ventral horn cervical spinal cord tissue immuinostained for ephrinB2 at 60 days (b), 120 days (c), endstage (d), and WT mouse age-matched control (a), scale bar: 200 µm. Quantification of ephrinB2 expression within the ventral horn shows a progressive increase in expression over time compared to WT controls (e). Endstage ephrinB2 expression in the thoracic (f, g) and lumbar (h–k) regions; scale bar: 200 µm, 100 µm, respectively. Endstage SOD1G93A mouse cervical spinal cord tissue co-immuostained for ephrinB2 (l, n, o, q) and neuronal and astrocyte lineage-specific markers NeuN (m–n) and GFAP (p–q), respectively; scale bar: 30 µm. Analysis in panels A-K: n=3–4 mice per genotype and per time point; 1–2 females and 2 males per condition. Analysis in panels L-O: n=3 mice per genotype and per time point; 1 female and 2 males per condition.
 
-## EphrinB2 was upregulated in ventral horn astrocytes
+### EphrinB2 was upregulated in ventral horn astrocytes
 
 We next asked whether ephrinB2 was expressed in astrocytes. Expression of ephrinB2 was determined in neurons and astrocytes within ventral horn at disease endstage using double-IHC for ephrinB2 along with lineage-specific antibodies for reactive astrocytes (GFAP: glial fibrillary acidic protein) and for neurons (NeuN: neuronal nuclear protein; Lepore and Fischer, 2005). EphrinB2 upregulation was localized to GFAP-expressing astrocytes (Figure 1o–q) and was not co-localized to NeuN-expressing neurons (Figure 1l–n; n=3 mice). Thus, ephrinB2 expression is dramatically and selectively increased in reactive astrocytes of the SOD1G93A mouse spinal cord in areas of MN loss.
 
-## EphrinB2 knockdown in astrocytes of cervical ventral horn
+### EphrinB2 knockdown in astrocytes of cervical ventral horn
 
 Given that both ALS patients (Mitsumoto et al., 1998) and mutant SOD1 rodents (Lladó et al., 2006) succumb to disease due in part to diaphragmatic respiratory compromise, we next sought to focally reduce ephrinB2 expression in astrocytes in the region of the spinal cord containing respiratory PhMNs. To begin to test whether the increased expression of ephrinB2 might impact disease progression, we injected 60-day-old SOD1G93A mice with either lentivirus-GFP control vector or lentivirus that transduces an Efnb2 shRNA expression cassette (McClelland et al., 2009). Virus was injected bilaterally into the ventral horn at six sites throughout the C3-C5 region to bilaterally target the region of the spinal cord containing the diaphragmatic respiratory PhMN pool (Figure 2a–b; Lepore et al., 2008b). We have shown previously that this shRNA construct selectively targets Efnb2 and that knockdown effects of the shRNA on ephrinB2 levels are rescued by expression of a shRNA-insensitive version of Efnb2 (McClelland et al., 2009).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig2-v1.jpg)
 
-**Figure 2.:** We injected 60-day-old SOD1G93A mice with Lenti-GFP control or Lenti-shRNA-Efnb2 into cervical ventral horn (a). Injections were made bilaterally into six sites throughout C3-C5 to target the PhMN pool (b).Thirty µm transverse tissue sections of the cervical spinal cord show robust expression of the GFP reporter bilaterally within the ventral horn (c); scale bar: 500 µm. Cell lineage of viral transduction was assessed using three markers: neuronal marker NeuN, oligodendrocyte lineage marker Olig2, and astrocyte marker GFAP. Spinal cord tissue collected from SOD1G93A injected with Lenti-GFP vector was sectioned at 30 µm and immunostained for NeuN (d-f), Olig2 (g–i) and GFAP (j–l); scale bar: 150 µm. Quantification of transduction lineage was assessed by counting the total numbers of GFP+ cells that were co-labeled with each lineage-specific marker and expressing this as a percentage of the total number of GFP+ cells (m). We assessed the amount of knockdown achieved by the Lenti-shRNA-Efnb2 vector by immunostaining endstage SOD1G93A cervical spinal cord tissue with an anti-ephrinB2 antibody in both Lenti-GFP control (o, q) and Lenti-shRNA-Efnb2 (p, r) tissue; scale bar: 100 µm. Knockdown was quantified by counting the total number of GFP+ cells expressing ephrinB2+ within the cervical ventral horn (n). Analyses in all panels: n=3 mice per condition; 1 female and 2 males per condition.Figure 2—source data 1.Figure 2, panels M and N.
+**Figure 2.:** We injected 60-day-old SOD1G93A mice with Lenti-GFP control or Lenti-shRNA-Efnb2 into cervical ventral horn (a). Injections were made bilaterally into six sites throughout C3-C5 to target the PhMN pool (b).Thirty µm transverse tissue sections of the cervical spinal cord show robust expression of the GFP reporter bilaterally within the ventral horn (c); scale bar: 500 µm. Cell lineage of viral transduction was assessed using three markers: neuronal marker NeuN, oligodendrocyte lineage marker Olig2, and astrocyte marker GFAP. Spinal cord tissue collected from SOD1G93A injected with Lenti-GFP vector was sectioned at 30 µm and immunostained for NeuN (d-f), Olig2 (g–i) and GFAP (j–l); scale bar: 150 µm. Quantification of transduction lineage was assessed by counting the total numbers of GFP+ cells that were co-labeled with each lineage-specific marker and expressing this as a percentage of the total number of GFP+ cells (m). We assessed the amount of knockdown achieved by the Lenti-shRNA-Efnb2 vector by immunostaining endstage SOD1G93A cervical spinal cord tissue with an anti-ephrinB2 antibody in both Lenti-GFP control (o, q) and Lenti-shRNA-Efnb2 (p, r) tissue; scale bar: 100 µm. Knockdown was quantified by counting the total number of GFP+ cells expressing ephrinB2+ within the cervical ventral horn (n). Analyses in all panels: n=3 mice per condition; 1 female and 2 males per condition.
 
 We first determined whether our knockdown approach efficiently transduced astrocytes and reduced ephrinB2 expression in spinal cord astrocytes. Transverse sections of endstage SOD1G93A mouse cervical spinal cord show robust expression of the GFP reporter bilaterally within ventral horn following intrapsinal injection (Figure 2c). To evaluate cell lineage of viral transduction, we performed IHC on lenti-GFP transduced spinal cord tissue at disease endstage. The majority of GFP-expressing cells in ventral horn were GFAP+ reactive astrocytes; these GFAP+/GFP+ astrocytes also expressed high levels of ephrinB2, demonstrating that the lentiviral constructs targeted reactive astrocytes that included those with upregulated ephrinB2 expression (Figure 2j–l). On the contrary, there was little-to-no co-labeling of the GFP reporter with NeuN+ neurons (Figure 2d–f) or cells positive for oligodendrocyte transcription factor 2 (Olig2) (Figure 2g–i), demonstrating that the injected viral constructs did not target a large portion of neurons or cells of the oligodendrocyte lineage within the ventral horn. We quantified the percentage of transduced GFP+ cells that co-labeled with GFAP, NeuN or Olig2 and found that the majority of transduced cells were astrocytes (NeuN: 3.54 ± 1.09% labeled cells, n=3; Olig2: 0.18 ± 0.18% labeled cells, n=3; GFAP: 56.53 ± 5.30% labeled cells, n=3 mice; GFAP vs. NeuN: p=0.023; GFAP vs. Olig2: p=0.018) (Figure 2m). We next determined whether the lenti-shRNA vector effectively reduced ephrinB2 expression in ventral horn astrocytes. Compared to lenti-GFP control (Figure 2o–q), the lenti-shRNA (Figure 2p–r) reduced ephrinB2 expression by approximately a factor of 5 (Lenti-GFP: 86.92±22.35 GFP+/ephrinB2+ cells, n=3 mice; Lenti-shRNA: 16.67±1.76 GFP+/ephrinB2+ cells, n=3 mice mice; t-test, p=0.035; Figure 2n). Together, these results show that viral transduction was anatomically targeted to the cervical ventral horn, was relatively specific to the astrocyte lineage, and was able to significantly reduce ephrinB2 expression levels within the C3-C5 ventral horn of SOD1G93A mice.
 
-## Protection of MNs in the cervical spinal cord
+### Protection of MNs in the cervical spinal cord
 
 Loss of MNs in spinal cord is a hallmark of ALS. To determine whether knockdown of ephrinB2 in astrocytes might impact MN survival selectively in the region of ephrinB2 knockdown, we quantified MN somata within the C3-5 spinal cord. Using cresyl violet staining of transverse cervical spinal cord sections, the number of neurons with a somal diameter greater than 20 µm and with an identifiable nucleolus was determined (MNs, Figure 3a; Lepore et al., 2008b). In C3, C4, and C5 following transduction of Lenti-shRNA-Efnb2 (Figure 3d), there was a significantly greater number of MNs within the ventral horn compared to Lenti-GFP controls (Figure 3c) (Lenti-GFP: 266.4±19.46 MNs/µm2, n=4 mice; Lenti-shRNA-Efnb2: 344.3±6.31 MNs/µm2, n=4 mice; p=0.019, t-test) (Figure 3b). These data suggest that knockdown of ephrinB2 can increase survival of MNs in a mutant SOD1 model of ALS.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig3-v1.jpg)
 
-**Figure 3.:** G93A mice.SOD1G93A mice injected with Lenti-GFP control or Lenti-shRNA-Efnb2 were cresyl violet stained and MN counts were performed at 117 days of age. Thirty µm transverse cervical spinal cord tissue sections were stained with cresyl violet (a); scale bar: 250 µm. The dotted box outlines the ventral horn and area of the image shown in (c). MN populations within the ventral horn were quantified (b). Representative images show a greater loss of MNs in Lenti-Control (c) compared to the Lenti-shRNA-Efnb2 (d) group; scale bar: 100 µm. SOD1G93A mice injected with Lenti-GFP control or Lenti-shRNA-Efnb2 were assessed in vivo for PhMN-diaphragm innervation by electrophysiological analysis at 117 days of age. CMAP amplitudes were recorded from each hemi-diaphragm following ipsilateral phrenic nerve stimulation. Representative traces of Lenti-GFP (e) and Lenti-shRNA-Efnb2 (f) recordings show a larger CMAP amplitude in the Lenti-shRNA-Efnb2 group. Quantification of maximal CMAP amplitude shows significant preservation in the Lenti-shRNA-Efnb2-treated group compared to control (g). Analysis in panels A-D: n=4 mice per condition; 2 females and 2 males per condition. Analysis in panels E-G: n=4 mice per genotype and per time point; 2 females and 2 males per condition.Figure 3—source data 1.Figure 3, panels B and G.
+**Figure 3.:** SOD1G93A mice injected with Lenti-GFP control or Lenti-shRNA-Efnb2 were cresyl violet stained and MN counts were performed at 117 days of age. Thirty µm transverse cervical spinal cord tissue sections were stained with cresyl violet (a); scale bar: 250 µm. The dotted box outlines the ventral horn and area of the image shown in (c). MN populations within the ventral horn were quantified (b). Representative images show a greater loss of MNs in Lenti-Control (c) compared to the Lenti-shRNA-Efnb2 (d) group; scale bar: 100 µm. SOD1G93A mice injected with Lenti-GFP control or Lenti-shRNA-Efnb2 were assessed in vivo for PhMN-diaphragm innervation by electrophysiological analysis at 117 days of age. CMAP amplitudes were recorded from each hemi-diaphragm following ipsilateral phrenic nerve stimulation. Representative traces of Lenti-GFP (e) and Lenti-shRNA-Efnb2 (f) recordings show a larger CMAP amplitude in the Lenti-shRNA-Efnb2 group. Quantification of maximal CMAP amplitude shows significant preservation in the Lenti-shRNA-Efnb2-treated group compared to control (g). Analysis in panels A-D: n=4 mice per condition; 2 females and 2 males per condition. Analysis in panels E-G: n=4 mice per genotype and per time point; 2 females and 2 males per condition.
 
-## Preservation of diaphragm function
+### Preservation of diaphragm function
 
 Patients ultimately succumb to ALS because of respiratory compromise due significantly in part to loss of PhMNs that innervate diaphragm, the primary muscle of inspiration (Mitsumoto et al., 1998). To evaluate whether ephrinB2 knockdown in astrocytes focally within the PhMN pool impacts respiratory neural circuitry, we determined effects on both PhMN innervation of diaphragm using morphological assessment (Nicaise et al., 2013; Nicaise et al., 2012a; Nicaise et al., 2012b) and preservation of diaphragm function using in vivo electrophysiological measurements (Lepore et al., 2008b; Nicaise et al., 2013; Lepore et al., 2011b; Lepore et al., 2010). In anesthetized mice, we recorded compound muscle action potential (CMAP) amplitudes from each hemi-diaphragm following supramaximal stimulation of the ipsilateral phrenic nerve, an electrophysiological assay of functional diaphragm innervation by PhMNs. We performed these experiments in SOD1G93A mice at 117 days of age, a time point following the beginnings of forelimb motor dysfunction in the vast majority of animals but prior to endstage. Quantification of CMAP amplitude showed a 61% larger amplitude for the lenti-shRNA group (Figure 3f) compared to lenti-GFP (Figure 3e–g), demonstrating that ephrinB2 knockdown in cervical ventral horn resulted in significant preservation of functional diaphragm innervation (Lenti-GFP: 2.58±0.26 mV, n=4 mice; Lenti-shRNA: 4.20±0.32 mV, n=4 mice; t-test, p=0.0075). These data indicate that region-specific knockdown of ephrinB2 was able to generate functional rescue appropriate for the location targeted.
 
-## Effects on disease onset, disease duration, and animal survival
+### Effects on disease onset, disease duration, and animal survival
 
 We chose to perform anatomically-targeted shRNA delivery to only the ventral horn of the cervical (C3-C5) spinal cord in order to specifically target the critically-important phrenic nucleus and to use this motor circuit as a model system to examine the impact of knocking down astrocyte ephrinB2 expression on PhMN degeneration and diaphragm innervation. As expected, given that injections were delivered only to levels C3-5, ephrinB2 knockdown in astrocytes had no impact on overall disease phenotype, including limb motor function, disease onset and progression, and animal survival, as assessed by a battery of established measurements (Lepore et al., 2008b; Lepore et al., 2011b; Lepore et al., 2010; Lepore et al., 2007). EphrinB2 knockdown did not affect weight loss at any age tested (F (1, 18)=0.17, p=0.69) (Figure 4a; n=8–10 mice per group). Additionally, overall disease onset as determined by the timing of weight loss onset was unaffected, with both the lenti-GFP and lenti-shRNA groups showing similar onset as determined by Kaplan-Meier analysis (Lenti-GFP: 124.4 days; Lenti-shRNA-Efnb2 123.5 days, chi square: 0.017, p=0.90, Gehan-Breslow-Wilcoxon test; n=8–9 mice per group) (Figure 4b). Furthermore, there were no differences between the two groups in either hindlimb (F (1, 18)=0.48, p=0.50, ANOVA; n=9–10 mice per group) (Figure 4c) or forelimb (F (1, 18)=0.95, p=0.34, ANOVA; n=9–10 mice per group) (Figure 4e) grip strength decline. We also used these grip strength measurements to calculate hindlimb and forelimb disease onsets. We calculated onset individually for each animal as the age with a 10% decline in grip strength compared to the maximum strength for those limbs in the same animal (Lepore et al., 2011b; Lepore et al., 2007). EphrinB2 knockdown had no effect on either hindlimb disease onset (Lenti-GFP: 90.4 days; Lenti-shRNA-Efnb2 103.0 days, chi square: 2.92, p=0.09, Gehan-Breslow-Wilcoxon test; n=9–10 mice per group) (Figure 4d) or forelimb disease onset (Lenti-GFP: 107.2 days; Lenti-shRNA-Efnb2 105.1 days, chi square: 0.13, p=0.72, Gehan-Breslow-Wilcoxon test; n=9–10 mice per group) (Figure 4f). Given that previous work showed that astrocytes contribute to disease progression in mutant SOD1 rodents post-disease onset (Yamanaka et al., 2008), we examined whether ephrinB2 knockdown in astrocytes extended disease duration. Compared to lenti-GFP control, lenti-shRNA had no effect on disease duration as measured by the time from: weight onset to endstage (Lenti-GFP: 7.90±1.110 days, n=10 mice; Lenti-shRNA-Efnb2: 11.38±1.963 days, p=0.13, unpaired t-test; n=8 mice) (Figure 4g); hindlimb disease onset to endstage (Lenti-GFP: 41.90±6.63 days, n=10 mice; Lenti-shRNA-Efnb2: 29.44±6.34 days, n=9 mice, p=0.19, unpaired t-test) (Figure 4h); forelimb disease onset to endstage (Lenti-GFP: 25.10±6.48 days, n=10 mice; Lenti-shRNA-Efnb2: 27.11±8.92 days, n=9 mice, p=0.86, unpaired t-test) (Figure 4i); or hindlimb disease onset to forelimb disease onset (Lenti-GFP: 16.80±4.14 days, n=10 mice; Lenti-shRNA-Efnb2: 2.33±7.44 days, n=9 mice, p=0.099, unpaired t-test) (Figure 4j). Lastly, given that we targeted the location of the critically-important pool of PhMNs with our virus injections, we determined whether ephrinB2 knockdown specifically within the cervical ventral horn extended animal survival, as determined by the righting reflex (Lepore et al., 2011b; Lepore et al., 2007). Compared to lenti-GFP control, lenti-shRNA had no effect on the age of disease endstage as determined by Kaplan-Meier analysis (Lenti-GFP: 132.3 days; Lenti-shRNA-Efnb2 129.5 days, chi square: 0.24, p=0.63, Gehan-Breslow-Wilcoxon test; n=8–10 mice per group) (Figure 4k).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig4-v1.jpg)
 
-**Figure 4.:** G93A mice.Biweekly weights of Lenti-shRNA-Efnb2 and Lenti-Control mice were recorded until endpoint sacrifice (a), and disease onset was measured for each animal when there was a 10% drop in body weight (b). Biweekly individual hindlimb grip strengths were assessed for each animal (c), and disease onset was recorded when the animal had a 10% decline in hindlimb grip strength (d). Each animal was also tested for forelimb grip strength (e), and disease onset was recorded when the animal had a 10% decline in forelimb grip strength (f). Weights, forelimb grip strength and hindlimb grip strength were taken biweekly starting one week prior to injection of Lenti-shRNA-Efnb2 or Lenti-GFP control, and all force measurements plotted were the average force (lb) of all animals combined in each group. Disease duration was determined by time from weight onset to endstage (g), hindlimb disease onset to endstage (h), and forelimb diseaseonset to endstage for each animal (i). Disease duration was also measured from the time of forelimb disease onset to time of hindlimb disease onset (j). Survival was measured as the day each animal reached endstage, which was determined by the righting reflex (k). Analyses in all panels: n=8–10 mice per genotype and per time point; 4–5 females and 4–5 males per condition.Figure 4—source data 1.Figure 4, panels A-K.
+**Figure 4.:** Biweekly weights of Lenti-shRNA-Efnb2 and Lenti-Control mice were recorded until endpoint sacrifice (a), and disease onset was measured for each animal when there was a 10% drop in body weight (b). Biweekly individual hindlimb grip strengths were assessed for each animal (c), and disease onset was recorded when the animal had a 10% decline in hindlimb grip strength (d). Each animal was also tested for forelimb grip strength (e), and disease onset was recorded when the animal had a 10% decline in forelimb grip strength (f). Weights, forelimb grip strength and hindlimb grip strength were taken biweekly starting one week prior to injection of Lenti-shRNA-Efnb2 or Lenti-GFP control, and all force measurements plotted were the average force (lb) of all animals combined in each group. Disease duration was determined by time from weight onset to endstage (g), hindlimb disease onset to endstage (h), and forelimb diseaseonset to endstage for each animal (i). Disease duration was also measured from the time of forelimb disease onset to time of hindlimb disease onset (j). Survival was measured as the day each animal reached endstage, which was determined by the righting reflex (k). Analyses in all panels: n=8–10 mice per genotype and per time point; 4–5 females and 4–5 males per condition.
 
-## Preservation of PhMN innervation of the diaphragm
+### Preservation of PhMN innervation of the diaphragm
 
 We next quantified morphological innervation changes at the diaphragm NMJ, as this synapse is critical for functional PhMN-diaphragm circuit connectivity. We labeled phrenic motor axons and their terminals for neurofilament (using SMI-312R antibody) and synaptic vesicle protein 2 (SV2), respectively, and we labeled nicotinic acetylcholine receptors with Alexa555-conjugated alpha-bungarotoxin (Nicaise et al., 2012a; Lepore et al., 2010). Using confocal imaging of individual NMJs, we quantified the percentage of intact (Figure 5a), partially-denervated (Figure 5b) and completely-denervated (Figure 5c) NMJs in the diaphragm (Wright et al., 2007; Wright et al., 2009; Wright and Son, 2007). Although we assessed NMJ morphology only in SOD1G93A mice in this work, our previous findings show that all diaphragm NMJs in non-diseased WT mice are completely intact (Nicaise et al., 2012b; Lepore et al., 2010; Li et al., 2015b; Martin et al., 2015). In the current study, we find extensive denervation at a large portion of NMJs across the diaphragm at 117 days of age in SOD1G93A mice. Compared to control-treated animals (Figure 5d), the lenti-shRNA group (Figure 5e) showed a significant increase in the percentage of fully-innervated NMJs (Figure 5f) and a significant decrease in percentage of completely-denervated junctions (Figure 5g), demonstrating that lenti-shRNA treatment preserved PhMN innervation of the diaphragm (innervated: Lenti-GFP: 27.0 ± 2.5% of total NMJs, n=4 mice; Lenti-shRNA: 53.2±8.5, n=4; t-test, p=0.04) (denervated: Lenti-GFP: 21.6 ± 1.6% of total NMJs, n=4 mice; Lenti-shRNA: 8.0±3.7, n=4 mice; t-test, p=0.03). We also found a trend toward a decrease in the percentage of partially-denervated NMJs in lenti-shRNA animals versus control (Figure 5h), though the difference was not significant (partially-denervated: Lenti-GFP: 42.1 ± 0.7% of total NMJs, n=4 mice; Lenti-shRNA: 29.6±6.2; n=4 mice, t-test, p=0.11). Our NMJ analyses suggest that preservation of diaphragm innervation by PhMNs with focally-delivered lenti-shRNA-Efnb2 resulted in a maintenance of diaphragm function. The increased cervical MN survival in the lenti-shRNA-Efnb2 group coincided with enhanced preservation of diaphragm NMJ innervation, suggesting that the ephrinB2 knockdown-mediated effects on NMJ innervation and CMAP amplitudes were due at least in part to protection of PhMNs centrally within the cervical spinal cord.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig5-v1.jpg)
 
-**Figure 5.:** G93A mice.Diaphragm muscles were labeled with SMI-312 (green), SV2, (green) and alpha-Bungarotoxin (blue). Representative images of fully-innervated (a), partially-denervated (b) and completely-denervated ((c): arrowheads denote completely-denervated NMJs) NMJs are shown; all scale bars: 30 µm. Compared to SOD1G93A mice treated with Lenti-GFP (d), animals injected with Lenti-shRNA-Efnb2 (e) showed greater preservation of PhMN innervation of the diaphragm NMJ. Quantification revealed a significant increase in the percentage of fully-innervated NMJs (f) and a decrease in the percentage of completely-denervated NMJs (g) in the Lenti-shRNA-Efnb2 group compared to Lenti-GFP controls. The percentage of partially-denervated NMJs was not statistically different between the two groups (h). Analyses in all panels: n=4 mice per condition; 2 females and 2 males per condition.Figure 5—source data 1.Figure 5, panels F-H.
+**Figure 5.:** Diaphragm muscles were labeled with SMI-312 (green), SV2, (green) and alpha-Bungarotoxin (blue). Representative images of fully-innervated (a), partially-denervated (b) and completely-denervated ((c): arrowheads denote completely-denervated NMJs) NMJs are shown; all scale bars: 30 µm. Compared to SOD1G93A mice treated with Lenti-GFP (d), animals injected with Lenti-shRNA-Efnb2 (e) showed greater preservation of PhMN innervation of the diaphragm NMJ. Quantification revealed a significant increase in the percentage of fully-innervated NMJs (f) and a decrease in the percentage of completely-denervated NMJs (g) in the Lenti-shRNA-Efnb2 group compared to Lenti-GFP controls. The percentage of partially-denervated NMJs was not statistically different between the two groups (h). Analyses in all panels: n=4 mice per condition; 2 females and 2 males per condition.
 
-## EphrinB2 upregulation in human ALS spinal cord
+### EphrinB2 upregulation in human ALS spinal cord
 
 We also performed immunoblotting analysis on postmortem samples from human ALS donors with an SOD1 mutation (n=3 donors) and matching non-diseased human samples (n=3 donors). In the lumbar enlargement, there was a large increase in ephrinB2 protein expression in the SOD1 mutation ALS samples compared to the non-diseased controls (Figure 6) (non-ALS lumbar: 3.8±1.1 a.u.; ALS lumbar: 17.8±18.2; ALS cortex: 2.9±0.25; p=0.523, ANOVA). There was some donor-to-donor variability; while all of the non-ALS control samples showed similarly lower levels of ephrinB2 protein expression in the lumbar spinal cord, dramatic ephrinB2 upregulation in the SOD1 mutation samples was observed with only two of the three ALS donors. The absence of ephrinB2 upregulation in the one ALS sample may be related to the anatomical progression of disease in this particular donor. To this point, we also performed GFAP immunoblotting on the same lumbar spinal cord samples and found signficantly higher GFAP protein levels in the two samples with increased ephrinB2 expression (Figure 6). As the level of GFAP expression is often used as an indicator of disease progression at a particular anatomical region, this finding suggests that ephrinB2 upregulation may have occurred selectively at locations in the CNS where disease processes were already occurring by the time of death. Lastly, we did not observe increased ephrinB2 expression in a disease unaffected region in these same three ALS donor samples, as ephrinB2 protein levels were not elevated in frontal cortex (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/89298/elife-89298-fig6-v1.jpg)
 
-**Figure 6.:** Immunoblotting analysis on postmortem samples from human ALS donors with an SOD1 mutation and also non-diseased human samples. In the lumbar enlargement, there was a large increase in ephrinB2 protein expression in the SOD1 mutation ALS samples compared to the non-diseased controls (top blot). GFAP immunoblotting on the same lumbar spinal cord samples shows a robust increase in GFAP protein levels in the two samples with increased ephrinB2 expresison (middle blot). There was not increased ephrinB2 expression in a disease unaffected region in these same three ALS donor samples, as ephrinB2 protein levels were not elevated in the frontal cortex (top blot). Immunoblot for total protein (bottom blot). Demographic information: Donor 1 – death at 67 years; male; non-ALS; Donor 2 – death at 70 years; male; non-ALS; Donor 3 – death at 70 years; female; non-ALS; Donor 4 – death at 42 years; female; SOD1-D102H mutation; absence of C9orf72 repeat expansion; Donor 5 – death at 55 years; male; SOD1-A4V mutation; absence of C9orf72 repeat expansion; Donor 6 – death at 58 years; male; SOD1-V87A mutation; absence of C9orf72 repeat expansion.Figure 6—source data 1.Figure 6.
+**Figure 6.:** Immunoblotting analysis on postmortem samples from human ALS donors with an SOD1 mutation and also non-diseased human samples. In the lumbar enlargement, there was a large increase in ephrinB2 protein expression in the SOD1 mutation ALS samples compared to the non-diseased controls (top blot). GFAP immunoblotting on the same lumbar spinal cord samples shows a robust increase in GFAP protein levels in the two samples with increased ephrinB2 expresison (middle blot). There was not increased ephrinB2 expression in a disease unaffected region in these same three ALS donor samples, as ephrinB2 protein levels were not elevated in the frontal cortex (top blot). Immunoblot for total protein (bottom blot). Demographic information: Donor 1 – death at 67 years; male; non-ALS; Donor 2 – death at 70 years; male; non-ALS; Donor 3 – death at 70 years; female; non-ALS; Donor 4 – death at 42 years; female; SOD1-D102H mutation; absence of C9orf72 repeat expansion; Donor 5 – death at 55 years; male; SOD1-A4V mutation; absence of C9orf72 repeat expansion; Donor 6 – death at 58 years; male; SOD1-V87A mutation; absence of C9orf72 repeat expansion.
 
 ## Discussion
 
@@ -132,79 +132,250 @@ In summary, we found astrocyte-specific upregulation of ephrinB2 expression in t
 
 ## Materials and methods
 
-## Animal model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Transgenic SOD1G93A mice: C57BL/6 J congenic line B6.Cg-Tg(SOD1*G93A)1Gur/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:004435</td>
+      <td>Both female and male mice used</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Transgenic SOD1G93A mice: B6SJL-Tg(SOD1*G93A)1Gur/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002726</td>
+      <td>Both female and male mice used</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Spinal cord and cortex samples from ALS donors</td>
+      <td>Biorepository of the Jefferson Weinberg ALS Center (1 of 3 ALS samples)Project ALS (2 of 3 ALS samples)</td>
+      <td></td>
+      <td>All three ALS donors had an SOD1 mutation (donor 1: D102H mutation; donor 2: A4V; donor 2: V87A), and all three donors did not have a C9orf72 repeat expansion.These three donors succumbed to ALS at 42 (female), 55 (male), or 58 (male) years of age.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Spinal cord and cortex from non-ALS donors</td>
+      <td>NIH NeuroBioBank</td>
+      <td></td>
+      <td>Age of death for these three non-ALS donors was 67, 70, and 70 years.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonalAnti-SV2(Used for IHC)</td>
+      <td>Developmental Studies Hybridoma Bank, Iowa City, IA</td>
+      <td>RRID: AB_2315387</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonalAnti-SMI312(Used for IHC)</td>
+      <td>Covance, Greenfield, IN</td>
+      <td>RRID: AB_2314906</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonalAnti-NeuN(Used for IHC)</td>
+      <td>EMD-Millipore, Temecula, CA</td>
+      <td>RRID: AB_2298772</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonalAnti-GFAP(Used for IHC)</td>
+      <td>Dako, Carpinteria, CA</td>
+      <td>RRID: AB_10013482</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonalAnti-GFAP(Used for Westerns)</td>
+      <td>BD Bioscience, Franklin Lakes, NJ</td>
+      <td>Cat. #610566</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonalAnti-Olig2(Used for IHC)</td>
+      <td>EMD-Millipore, Temecula, CA</td>
+      <td>RRID: AB_2299035</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonalAnti-ephrinB2(Used for IHC)</td>
+      <td>R&amp;D Systems, Minneapolis, MN</td>
+      <td>RRID: AB_2261967</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonalAnti-ephrinB2 antibody(Used for Westerns)</td>
+      <td>Abcam, Cambridge, MA</td>
+      <td>RRID: AB_11156896</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonalAnti-EphA4(Used for IHC)</td>
+      <td>R&amp;D Systems, Minneapolis, MN</td>
+      <td>RRID: AB_2099371</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonalAnti-GFP(Used for IHC)</td>
+      <td>Aves Labs, Davis, CA</td>
+      <td>RRID: AB_10000240</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-shRNA-Efnb2;VSVG.HIV.SIN.cPPT.U6.SbRmEphrinB2.4.CMV.EGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Vector generated by the Dalva lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-Control;VSVG.HIV.SIN.cPPT.U6.Empty.CMV.EGFP</td>
+      <td>This study</td>
+      <td></td>
+      <td>Vector generated by the Dalva lab</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Scope 3.5.6 software</td>
+      <td>ADInstruments, Colorado Springs, CO</td>
+      <td>RRID: SCR_001620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ/Fiji software</td>
+      <td></td>
+      <td>RRID: SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bio-Rad Image Lab software</td>
+      <td>Bio-Rad, Hercules, CA</td>
+      <td>RRID:SCR_014210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Graphpad Prism 6</td>
+      <td>Graphpad Software Inc, LaJolla, CA</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other (Microscope)</td>
+      <td>Olympus FV1000 confocal microscope</td>
+      <td>Olympus, Center Valley, PA</td>
+      <td>RRID: SCR_014215</td>
+      <td>‘NMJ analysis’ subsection of the Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Other(Microscope)</td>
+      <td>Zeiss Axio M2 Imager confocal microscope</td>
+      <td>Zeiss, Hebron, KY</td>
+      <td>RRID:SCR_020922</td>
+      <td>‘Motor neuron counts’ subsection of the Materials and methods section</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal model
 
 Female and male transgenic SOD1G93A mice (C57BL/6 J congenic line: B6.Cg-Tg(SOD1*G93A)1Gur/J and B6SJL-Tg(SOD1*G93A)1Gur/J) were used in all experiments. All procedures were carried out in compliance with the National Institutes of Health (NIH) Guide for the Care and Use of Laboratory Animals and the ARRIVE (Animal Research: Reporting of In Vivo Experiments) guidelines. Experimental procedures were approved by Thomas Jefferson University Institutional Animal Care and Use Committee (IACUC) (approved IACUC protocol #01230). All animals were housed in a temperature-, humidity-, and light-controlled animal facility and were provided with food and water ad libitum.
 
-## Endstage care
+### Endstage care
 
 Due to the progression of muscle paralysis, animals were given access to softened food and were checked daily for overall health once the animals reached phenotypic onset of disease. We determined the onset for each animal by assessing total weight, hindpaw grip strength and forepaw grip strength (described below) (Lepore et al., 2008b; Li et al., 2015b). Animals were considered to have reached onset when there was a 10% loss in total body weight or a 10% loss in either forelimb or hindlimb grip strength. To determine the endstage for each animal, we used the ‘righting reflex’ method. We placed animals on their left and right sides; if a mouse could not right itself after 30 s on both sides, it was euthanized with an overdose of ketamine/xylazine.
 
-## Viral vectors
+### Viral vectors
 
 Vectors used were VSVG.HIV.SIN.cPPT.U6.SbRmEphrinB2.4.CMV.EGFP and VSVG.HIV.SIN.cPPT.U6.Empty.CMV.EGFP. Lenti-shRNA-Efnb2 or Lenti-Control constructs were driven by the U6 promoter, and EGFP expression was driven by the cytomegalovirus (CMV) promoter McClelland et al., 2009. shRNA sequence: Efnb2 shRNA: 5-GCAGACAGATGCACAATTA-3. Forward and reverse oligonucleotides were synthesized (Integrated DNA Technologies) and generated a dsDNA insert consisting of forward and reverse complement RNAi sequences separated by a hairpin region and flanked by restriction site overhangs. We used 1.9x10^10 for intraspinal injections (described below).
 
-## Intraspinal injection
+### Intraspinal injection
 
 For the intraspinal injections (Goulão et al., 2019; Lepore, 2011a; Li et al., 2015c), mice were first anesthetized with 1% isoflurane in oxygen, and the dorsal surface of the skin was shaved and cleaned with 70% ethanol. A half-inch incision was made on the dorsal skin starting at the base of the skull, and the underlying muscle layers were separated with a sterile surgical blade along the midline between the spinous processes of C2 and T1 to expose the cervical laminae. Paravertebral muscles overlying C3-C5 were removed using rongeurs, followed by bilateral laminectomies of the vertebrae over the C3-C5 spinal cord. A 33-gauge (G) needle on a Hamilton microsyringe (Hamilton, Reno, Nevada) was lowered 0.8 mm ventral from the dorsal surface just medial to the entry of the dorsal rootlets at C3, C4 and C5. After inserting the needle into the ventral horn, we waited three minutes before injecting the viral constructs. Two µL of Lenti-shRNA-Efnb2 or Lenti-Control virus were delivered to the spinal cord over 5 min, controlled by an UltraMicroPump and Micro4 Microsyringe Pump Controller (World Precision Instruments, Sarasota, Florida). After injection, the needle was left in place for 3 min before being slowly removed. Following intraspinal injection, dorsal muscle layers were sutured with 4–0 silk sutures (Covidien, Minneapolis, Minnesota) and the skin was closed with surgical staples (Braintree Scientific, Braintree, Massachusetts). The surface of the skin was treated with a topical iodine solution. Immediately following the procedure, mice were given 1 mL of Lactated Ringer’s solution (Hospira, San Jose, California) and cefazolin (6 mg) (Hospira, San Jose, California) via subcutaneous injections. Mice were placed in a clean cage on a surgical heating pad set to 37 ° C (Gaymar, Orchard Park, New York). At 12 and 24 hr after surgery, each animal was given an additional dose of buprenorphine hydrochloride (0.05 mg/kg) and monitored for pain/distress. Mice were 60 days old at the time of virus injection.
 
-## Weight and grip-strength test
+### Weight and grip-strength test
 
 Weights were measured for each animal biweekly prior to forelimb and hindlimb testing. Forelimb and hindlimb grip strengths were determined using a ‘Grip Strength Meter’ (DFIS-2 Series Digital Force Gauge; Columbus Instruments, OH) (Lepore et al., 2011b; Li et al., 2015c). Grip strength was measured by allowing the animals to tightly grasp a force gauge bar using both forepaws or both hindpaws, and then pulling the mice away from the gauge until both limbs released the bar. The force measurements were recorded in three trials, and the averages were used in analyses. Grip strengths were recorded biweekly starting one week prior to initial injection.
 
-## Compound muscle action potential recordings
+### Compound muscle action potential recordings
 
 At 117 days of age, mice were anesthetized with isoflurane (Piramal Healthcare, Bethlehem, Pennsylvania) at a concentration of 1.0–1.5% in oxygen. Animals were placed supine, and the abdomen was shaved and cleaned with 70% ethanol. Phrenic nerve conduction studies were performed with stimulation of the phrenic nerve via needle electrodes trans-cutaneously inserted into the neck region in proximity to the passage of the phrenic nerve (Cheng et al., 2021; Ghosh et al., 2018). A reference electrode was placed on the shaved surface of the right costal region. Phrenic nerve was stimulated with a single burst at 6 mV (amplitude) for a 0.5 ms duration. Each animal was stimulated between 10 and 20 times to ensure reproducibility, and recordings were averaged for analysis. ADI Powerlab8/30stimulator and BioAMPamplifier (ADInstruments, Colorado Springs, CO) were used for both stimulation and recording, and Scope 3.5.6 software (ADInstruments, Colorado Springs, CO; RRID: SCR_001620) was used for subsequent data analysis. Following recordings, animals were immediately euthanized, and tissue was collected (as described below).
 
-## Diaphragm dissection
+### Diaphragm dissection
 
 Animals were euthanized by an intraperitoneal injection of ketamine/xylazine diluted in sterile saline and then placed in a supine position. A laparotomy was performed to expose the inferior surface of the diaphragm. The diaphragm was then excised using spring scissors (Fine Science Tools, Foster City, California), stretched flat and pinned down on silicon-coated 10 cm dishes, and washed with PBS (Gibco, Pittsburgh, Pennsylvania). Diaphragms were then fixed for 20 min in 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, Pennsylvania). After washing in PBS, superficial fascia was carefully removed from the surface of the diaphragm with Dumont #5 Forceps (Fine Science Tools, Foster City, California). Diaphragms were then stained for NMJ markers (described below).
 
-## Diaphragm whole-mount histology
+### Diaphragm whole-mount histology
 
 Fresh diaphragm muscle was dissected from each animal for whole-mount immunohistochemistry, as described above (Cheng et al., 2021; Ghosh et al., 2019). Diaphragms were rinsed in PBS and then incubated in 0.1 M glycine for 30 min. Following glycine incubation, α-bungarotoxin conjugated to Alexa Fluor 555 at 1:200 (Life Technologies, Waltham, Massachusetts) was used to label post-synaptic nicotinic acetylcholine receptors. Ice-cold methanol was then added to the diaphragms for 5 min, and then diaphragms were blocked for 1 hr at room temperature in a solution of 2% bovine serum albumin and 0.2% Triton X-100 diluted in PBS (this solution was used for both primary and secondary antibody dilutions). Primary antibodies were added overnight at 4 ° C: pre-synaptic vesicle marker anti-SV2 at 1:10 (Developmental Studies Hybridoma Bank, Iowa City, Iowa; RRID: AB_2315387); neurofilament marker anti-SMI-312 at 1:1000 (Covance, Greenfield, Indiana; RRID: AB_2314906). The diaphragms were then washed and secondary antibody solution was added for 1 hr at room temperature: FITC anti-mouse IgG secondary (Jackson ImmunoResearch Laboratories, West Grove, PA; 1:100). Diaphragms were mounted with Vectashield mounting medium (Vector Laboratories, Burlingame, California), coverslips were added, and slides were stored at –20 °C.
 
-## Neuromuscular junction (NMJ) analysis
+### Neuromuscular junction (NMJ) analysis
 
 At 117 days of age, labeled muscles were analyzed for the percentage of NMJs that were intact, partially-denervated or completely denervated (Lepore et al., 2010; Wright et al., 2009). Whole-mounted diaphragms were imaged on a FV1000 confocal microscope (Olympus, Center Valley, Pennsylvania; RRID: SCR_014215). We conducted NMJ analysis on the right hemi-diaphragm.
 
-## Spinal cord and brain dissection
+### Spinal cord and brain dissection
 
 Animals were euthanized by an intraperitoneal injection of ketamine/xylazine diluted in sterile saline (as described above). Following diaphragm removal (described below), the animal was exsanguinated by cutting the right atrium and transcardially perfused with 0.9% saline solution (Thermo Fisher Scientific, Pittsburgh, Pennsylvania) then 4% paraformaldehyde (Electron Microscopy Sciences, Hatfield, Pennsylvania) to fix the tissue. Following perfusion, the spinal cord and brain were excised with rongeurs (Fine Science Tools, Foster City, California) and kept in a 4% paraformaldehyde solution overnight at 4 ° C, washed with 0.1 M Phosphate Buffer (Sodium Phosphate Dibasic Heptahydrate [Sigma-Aldrich, St. Louis, Missouri] and Sodium Monobasic Monohydrate [Sigma-Aldrich]), and placed in 30% sucrose (Sigma-Aldrich). A second group of animals was not perfused with 4% paraformaldehyde, and brain and spinal cord tissue were collected unfixed. Both fixed and unfixed samples were placed into an embedding mold (Polysciences Inc, Warrington, Pennsylvania) and covered with tissue freezing medium (General Data, Cincinnati, Ohio). Samples were then flash frozen in 2-methylbutane (Thermo Fisher Scientific, Pittsburgh, Pennsylvania) chilled in dry ice. Tissue was sectioned at 30 µm on a cryostat (Thermo Fisher Scientific, Philadelphia, Pennsylvania), placed on glass microscope slides (Thermo Fisher Scientific, Pittsburgh, Pennsylvania), and dried overnight at room temperature before freezing the samples at –20 ° C for long-term storage.
 
-## Spinal cord histology/cresyl violet staining
+### Spinal cord histology/cresyl violet staining
 
 Spinal cord tissue section slides were dried at room temperature for 2 hr. Following drying, slides were rehydrated in 3-min baths of xylene, 100% ethanol, 95% ethanol, 70% ethanol and dH2O. To stain the tissue, slides were placed in an Eriochrome solution (0.16% Eriochrome Cyanine, 0.4% Sulfuric Acid, 0.4% Ferric Chloride in dH2O) for 14 min, washed with tap water, placed in a developing solution (0.3% ammonium hydroxide in dH2O) for 5 min, washed with dH2O, and then placed into a cresyl violet solution (0.4% cresyl violet, 6% 1 M sodium acetate, 34% 1 M acetic acid) for 18 min. After staining, slides were dehydrated by being placed in baths of dH2O, 70% ethanol, 95% ethanol, 100% ethanol and xylene. Slides were mounted with poly-mount xylene (Polysciences, Warrington, Pennsylvania), and cover slips were added. Slides were then kept at room temperature for storage and analysis.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Prior to immunostaining, tissue sections were dried for 1 hr at room temperature. Antigen retrieval was performed using R&D Systems Protocol (R&D Systems, Minneapolis, Minnesota). Immediately after antigen retrieval, a hydrophobic pen (Newcomer Supply, Middleton, Wisconsin) was used to surround the tissue sections. Slides were blocked/permeabilized for 1 hr at room temperature with a solution of 5% Normal Horse Serum (Vector Laboratories, Burlingame, California), 0.2% Triton X-100 (Amresco, Solon, Ohio), diluted in PBS (primary and secondary antibodies were diluted in this solution as well). Slides were then treated with primary antibody overnight at 4 ° C with the following antibodies: neuronal marker anti-NeuN at 1:200 (EMD-Millipore, Temecula, California; AB_2298772); astrocyte marker anti-GFAP at 1:400 (Dako, Carpinteria, California; RRID: AB_10013482); oligodendrocyte lineage marker anti-Olig-2 at 1:200 (EMD-Millipore; RRID: AB_2299035); anti-ephrinB2 at 1:50 (R&D Systems, RRID: AB_2261967); anti-ephA4 at 1:100 (R&D Systems RRID: AB_2099371); and anti-GFP at 1:500 (Aves Labs, Davis, California, RRID: AB_10000240). On the following morning, samples were washed 3 x in PBS, and secondary antibody solutions were added for 1 hr at room temperature: donkey anti-rabbit IgG H&L (Alexa Fluor 647) at 1:200 (Abcam, Cambridge, Massachusetts); donkey anti-mouse IgG H&L (Alexa Fluor 488) at 1:200 (Abcam, Cambridge, Massachusetts); Rhodamine (TRITC) AffiniPure donkey anti-goat IgG (H+L) at 1:200 (Jackson ImmunoResearch, West Grove, Pennsylvania). Following secondary antibody treatment, samples were washed in PBS and 2 drops of FluorSave reagent (Calbiochem, San Diego, California) were added to tissue sections, then slides were coverslipped (Thermo Fisher Scientific, Pittsburgh, Pennsylvania). Slides were stored at 4 ° C.
 
-## Viral vector transduction quantification
+### Viral vector transduction quantification
 
 SOD1G93A mouse cervical spinal cord tissue at disease endstage was immunostained with anti-GFP and either anti-GFAP, anti-NeuN or anti-Olig2 (described above). We quantified the percentage of double-labeled GFP+/GFAP+, GFP+/NeuN+ or GFP+/Olig2+ cells versus the total number of GFP+ cells in the ventral horn. The cell lineage of lenti-viral transduction was plotted as a percentage of the total GFP+ cells.
 
-## Motor neuron counts
+### Motor neuron counts
 
 At 117 days of age, 30 µm mouse cervical spinal cord tissue sections were stained with cresyl violet (as described above) to determine the total number of MNs. Images were acquired using a 10 x objective on a Zeiss Axio M2 Imager (Carl Zeiss Inc, Thornwood, New York), and analyzed with ImageJ/Fiji software (RRID: SCR_003070). The area (converted into pixels) of each ventral horn was outlined separately starting from the central canal and tracing laterally and ventrally to encompass the right and left ventral horns for each spinal cord section. Within the area of each ventral horn, neurons were traced and somal area was assessed. We considered an MN as any neuron within the ventral horn greater than 20 µm in somal diameter and with an identifiable nucleolus (Li et al., 2015b). We then assessed total number of MNs per area of the ventral horn for both the Lenti-shRNA-Efnb2 group and the Lenti-control group.
 
-## EphrinB2 quantification
+### EphrinB2 quantification
 
 EphrinB2 levels in ventral horn of the cervical spinal cord of endstage SOD1G93A mice intraspinally injected with Lenti-shRNA-Efnb2 or Lenti-Control were evaluated. In addition, this same analysis was performed on uninjected SOD1G93A mice at 60 days of age, 120 days of age, and at disease endstage, as well as on uninjected WT mice at 140 days of age. Thirty µm cervical spinal cord sections were immunostained with anti-GFP and anti-ephrinB2 antibodies. ShRNA-induced knockdown was assessed by quantifying the number of ephinB2+/GFP+ cells for both Lenti-GFP control and Lenti-shRNA-Efnb2 groups. Four animals were used for each group, with the number of ephrinB2/GFP+ cells per animal averaged over three slides (eight tissue sections each).
 
-## Human postmortem tissue
+### Human postmortem tissue
 
 For analysis of human postmortem tissue, we examined three non-ALS and three ALS donors. Non-diseased samples were obtained from the NIH NeuroBioBank. Age of death for these three non-ALS donors was 67, 70, and 70 years. For the ALS samples, all three donors had an SOD1 mutation (donor 1: D102H mutation; donor 2: A4V; donor 2: V87A) and all did not have a C9orf72 repeat expansion. Two of these SOD1 ALS samples were obtained from Project ALS, and the third sample was obtained from the biorepository of the Jefferson Weinberg ALS Center. These three donors succumbed to ALS at 42 (female), 55 (male), or 58 (male) years of age.
 
-## Immunoblotting of postmortem tissue
+### Immunoblotting of postmortem tissue
 
 A total of 100 mg of fresh-frozen human autopsy sample (lumbar spinal cord or frontal cortex) were homogenized in 1% SDS using a Dounce homogenizer. Homogenate was centrifuged at 3000 rpm for 20 min at 4 °C to remove debris. Clear supernatant was then used to estimate total protein content using the bicinchoninic acid (BCA) assay (Pierce BCA kit #23225; Thermo Fischer Scientific, Waltham, Massachusetts). Thirty µg of protein were loaded onto 10% stain-free gel (#4568034; Bio-Rad, Hercules, California). After the run, gels were activated using UV light to crosslink protein and transferred to 0.22 µm nitrocellulose membrane. After transfer, membrane was exposed to chemiluminescence light to image total protein. Membrane was then blocked using 5% fat-free milk in tris-buffered aaline with tween (TBST) for one hour at room temperature. Anti-ephrinB2 antibody (Cat# ab131536, RRID: AB_11156896; Abcam, Cambridge, Massachusetts) at 1:500 dilution in 5% bovine serum albumin in TBST was incubated overnight, followed by three washes with TBST on the shaker for 15 min each. Anti-rabbit horseradish peroxidase (HRP) secondary (#NA9340V, Sigma-Aldrich, St. Louis, Missouri) at 1:5000 dilution was prepared in 5% fat-free milk and added to membrane for one hour at room temperature with shaking. Membranes were washed 3 x for 15 min on a shaker with TBST. Chemiluminescence signal was imaged using super signal west Atto (#38554; Bio-Rad, Hercules, California). The same membrane was used to probe for GFAP using anti-GFAP antibody (#610566; BD Bioscience, Franklin Lakes, New Jersey) at 1:2000 dilution overnight. Membrane was washed 3 x the next day with TBST and incubated with anti-mouse HRP (#NXA931V; Sigma-Aldrich, St. Louis, Missouri) at 1:5000 dilution for 1 hr at RT and washed, and then chemiluminescence was imaged as described above. Quantification for ephrinB2 was performed by normalizing to total protein using Bio-rad Image Lab software (RRID:SCR_014210).
 
-## Reagents
+### Reagents
 
 We authenticated relevant experimental regents to ensure that they performed similarly across experiments and to validate the resulting data. Whenever we used a new batch of the vector, we verified that the virus performed equivalently from batch-to-batch by confirming in every animal that the vector transduced predominantly GFAP-positive astrocytes and induced similar expression of the GFP reporter for each batch. For Alexa-conjugated α-bungarotoxin and for all antibodies used in the IHC studies, we always verified (when receiving a new batch from the manufacturer) that labeling in the spinal cord and/or diaphragm muscle coincided with the established expression pattern of the protein. We have provided Research Resource Identification Initiative (RRID) numbers for all relevant reagents (i.e. antibodies and computer programs) throughout the Materials and methods section.
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Before starting the study, mice were randomly assigned to experimental groups, and the different vectors used within a given experiment were randomly distributed across these mice (and within a given surgical day). For all the phenotypic analyses, we repeated the experiment for both virus groups in two separate cohorts. All surgical procedures and subsequent behavioral, electrophysiological and histological analyses were conducted in a blinded manner. In the Results section, we provide details of exact n’s, group means, standard error of the mean (SEM), statistical tests used and the results of all statistical analyses (including exact p-values, t-values, and F-values) for each experiment and for all statistical comparisons. Statistical significance was assessed by analysis of variance (ANOVA) and multiple comparisons post hoc test. T-test was used for analysis involving only two conditions. Graphpad Prism 6 (Graphpad Software Inc; LaJolla, CA; RRID: SCR_002798) was used to calculate all analyses, and p ˂ 0.05 was considered significant.
 

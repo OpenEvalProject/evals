@@ -32,7 +32,7 @@ Proteins are exquisite molecular machines that underlie virtually all physiologi
 
 Most current biochemical methods provide either structural or energetic information, but not both. To elucidate protein dynamics, a method should ideally (1) measure dynamics with high temporal resolution, over a large range of time scales (from nanoseconds to minutes); (2) measure structure with high spatial resolution; (3) resolve heterogeneity and distributions of conformations; (4) exhibit high sensitivity, allowing measurements from small amounts of protein, even single molecules; (5) work on proteins of arbitrary size; (6) work on proteins in their native environments, including membranes and protein complexes; (7) be minimally perturbing; and (8) measure structural dynamics and function simultaneously. While many methods, such as cryo-EM, nuclear magnetic resonance (NMR), and electron paramagnetic resonance (EPR), satisfy some of these criteria, no current method satisfies all of them.
 
-One approach that has the potential to satisfy all of these criteria is fluorescence resonance energy transfer (FRET). FRET is the nonradiative, through-space transfer of energy from a donor fluorophore to a nearby acceptor chromophore (Stryer and Haugland, 1967; Lakowicz, 2006). The FRET efficiency is steeply dependent on distance between the donor and acceptor, r, decreasing as 1r6 , making FRET a precise molecular ruler for measurements of distances between these probes. Each donor-acceptor pair has a characteristic distance, called the Förster distance (R0), at which FRET is 50% efficient. FRET measurements can be made from any size protein in vitro or in its native cellular environment. Fluorescence measurements are highly sensitive, giving FRET single-molecule sensitivity and high temporal resolution to record submillisecond events. Although FRET can only measure one set of distances in the protein at a time, the distances can have high spatial resolution (<2 Å) and can be interpreted in the framework of high-resolution static structures obtained from other methods (Gordon et al., 2018).
+One approach that has the potential to satisfy all of these criteria is fluorescence resonance energy transfer (FRET). FRET is the nonradiative, through-space transfer of energy from a donor fluorophore to a nearby acceptor chromophore (Stryer and Haugland, 1967; Lakowicz, 2006). The FRET efficiency is steeply dependent on distance between the donor and acceptor, $r$, decreasing as $\frac{1}{r^{6}}$ , making FRET a precise molecular ruler for measurements of distances between these probes. Each donor-acceptor pair has a characteristic distance, called the Förster distance (R0), at which FRET is 50% efficient. FRET measurements can be made from any size protein in vitro or in its native cellular environment. Fluorescence measurements are highly sensitive, giving FRET single-molecule sensitivity and high temporal resolution to record submillisecond events. Although FRET can only measure one set of distances in the protein at a time, the distances can have high spatial resolution (<2 Å) and can be interpreted in the framework of high-resolution static structures obtained from other methods (Gordon et al., 2018).
 
 One particularly powerful approach is to measure the FRET efficiency using fluorescent lifetimes, also known as time-resolved FRET (Grinvald et al., 1972). The lifetime of a fluorophore is the time between its excitation and emission of a photon, typically in the nanosecond range (Lakowicz, 2006). Steady-state FRET measurements record the intensity of emission using constant illumination and report a weighted-average distance between probes. In contrast, time-resolved FRET uses either pulsed or intensity-modulated excitation light and records the emission using a high-speed detection system. Time-resolved FRET can reveal the distribution of the distances between probes, something not possible using standard steady-state FRET approaches (Grinvald et al., 1972; Haas et al., 1975; Lakowicz et al., 1987b). Thus, time-resolved FRET can provide a nanosecond snapshot of the protein that reveals the conformational heterogeneity and the energetics of the conformational rearrangement.
 
@@ -44,13 +44,409 @@ In this study, we extended our tmFRET approach by introducing a fluorescent dono
 
 ## Results
 
-## Acd vs. Anap
+### Acd vs. Anap
 
 Previously, we used the fluorescent ncAA Anap for tmFRET experiments. However, Acd has a number of fluorescence properties that make it better suited for tmFRET than Anap. With the new Acd RS derived from Pyl-RS, Acd can be used for both prokaryotic and eukaryotic expression (Jones et al., 2021). Acd is similar in size to Anap, with three rings instead of two but with a linker to the α-carbon that is shorter by one rotatable bond; therefore, Acd has fewer possible rotameric states (Figure 1A,B). Like Anap, Acd absorbs in the far UV, but with a peak absorption at 385 nm instead of 350 nm for Anap. This makes Acd more compatible with the optics of most light microscopes and 405 nm laser excitation, allowing for greater excitation with lower autofluorescence from the cell. Anap and Acd both emit in the visible region with spectra that overlap the absorption of Cu2+-TETAC (Figure 1C,D) and other transition metals, making them both compatible with tmFRET. Acd, however, is much less environmentally sensitive than Anap. The emission of Anap is brighter and blue-shifted in a hydrophobic environment, whereas the emission of Acd is less affected by these solvents (compare DMSO and EtOH to KBT, our standard intracellular buffer, in Figure 1C,D), alleviating concerns that environmental changes in quantum yield will affect R0. In an aqueous environment, Acd has a lower extinction coefficient (7300 M–1 cm–1 at 385 nm for Acd vs. 12,600 M–1 cm–1 at 350 nm for Anap), but a larger quantum yield (0.8 for Acd vs. 0.3 for Anap), so that, with the same excitation light intensity, Acd is modestly brighter than Anap in an aqueous environment (but dimmer in a hydrophobic environment; Figure 1A, B and G). Acd also photobleaches about 10 times slower than Anap (Figure 1H), allowing for greater intensity excitation, brighter fluorescence, and experiments of longer duration. In addition, Acd incorporated into proteins is robust in the cell environment, whereas Anap appears to undergo a chemical change inside the cell at some protein sites, dramatically decreasing its brightness and blue-shifting its emission spectrum (Figure 1—figure supplement 1).
 
-Another property of Acd that makes it superior to Anap and many other fluorophores is its fluorescence lifetime. We measured the fluorescence lifetime of free Acd and Anap using a frequency-domain lifetime instrument (see Materials and methods). For frequency-domain measurements, the lifetime is described by plots of the shift of the phase of the response (phase delay) and the decrease in the amplitude of the response (modulation ratio) as a function of the modulation frequency of the excitation light. These data can then be fit with models for the lifetimes that assume that they have single-exponential or multiexponential decays. The data for Anap were best fit by two exponentials with time constants τD1 = 1.3 ns and τD2 = 3.3 ns, and with the relative amplitude α1 = 0.76 (Figure 1F and Table 1). In contrast, the measured lifetime for Acd was single exponential with a τD1 = 16 ns (Figure 1E and Table 1). The longer lifetime of Acd provides a greater dynamic range for FRET and fluorescence polarization measurements (Hostetler et al., 2020), and the single-exponential distribution greatly simplifies the analysis of FRET (see below).
+![Figure 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig1-v1.jpg)
 
-## Acd incorporation into MBP
+**Figure 1.:** (A, B) Absorption spectra of (A) Acd and Anap (B) in aqueous solution (KBT; red), EtOH (black), and DMSO (cyan), with the structures of the amino acids, inset. (C, D). Emission spectra in response to 370 nm excitation (left axis) and absorption spectrum of Cu2+-TETAC (right axis) in KBT for Acd (C) and Anap (D). Color scheme is the same as (A), but with Cu2+-TETAC spectrum in gray. (E, F) Frequency-domain measurements of fluorescence lifetime of Acd (E) and Anap (F) measured in KBT. Black: phase delay in degrees; red: modulation ratio. Curves are fits with Equations 5 and 6 corrected by Equations 13 and 14. Fit parameters for (E) are $\tau_{D_{1}}$ = 16.1 ns and for (F) are $\tau_{D_{1}}$ = 2.0 ns for a single exponential (solid curve) and $\tau_{D_{1}}$ = 1.3 ns, $\tau_{D_{2}}$ = 3.3 ns, and α1 = 0.76 (dashed curve). See Table 1 for collected data. (G) Quantum yield for Acd (red) and Anap (blue) was determined relative to quinine in 0.5 M H2SO4 (gold), as described in Materials and methods. Solid lines are fits with a line through the origin. (H) Acd (red) is more resistant to photobleaching than Anap (blue). For Acd, excitation at 380 nm with 14.7 nm slits and emission at 450 nm with 1 nm slit. For Anap, excitation at 350 nm with 14.7 nm slits and emission at 490 nm with 1 nm slit. Note that the Acd excitation light was ~38% brighter than the Anap excitation light. For both Acd and Anap, four independent experiments were each fit with a single exponential. The mean time constants ± SEM were 18,000 ± 863 s (n = 4) for Acd and 1838 ± 52 s (n = 4) for Anap.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Emission spectra of purified protein recorded in 6 M guanidinium HCl in KBT for (A) MBP-295Acd, (B) MBP-295Anap, (C) MBP-322Acd, and (D) MBP-322Anap. For Acd, samples were excited at 385 nm, with 5 nm slits, and emission was recorded with 5 nm slits. For Anap, samples were excited at 350 nm with 5 nm slits and emission was recorded with 5 nm slits. Red traces represent samples harvested from cells 24 hr post-transfection, and black traces represent samples harvested from cells 48 hr post-transfection. (E, F) Peak fluorescence intensities from fluorescence size exclusion chromatography for (E) Acd or (F) Anap were normalized to the peak tryptophan absorption at 280 nm of the same protein in the same fluorescence size-exclusion chromatography run (see Figure 2G,H). Data from cells harvested at 48 hr post-transfection were normalized to the data from cells harvested at 24 hr post-transfection. The numbers under each bar represent the position of the TAG stop codon into which Acd or Anap were incorporated. It should be noted that no truncated protein was observed in the tryptophan absorption channel (see Figure 2H). Our interpretation of these data is discussed below. Analysis of the emission spectra of Acd and Anap incorporated into MBP revealed a problem with some Anap-containing proteins that were not present in Acd-containing proteins. MBP constructs containing either Acd or Anap were expressed and purified as described in Materials and methods. The Acd emission spectra of MBP-295Acd and MBP-322Acd in denaturing solution (6 M guanidine HCl) were very similar to the emission spectrum of free Acd (Figure 1A,C). However, the emission spectrum of MBP-295Anap in denaturing solution was very different from that of free Anap (compare Figure 1B,D). Whereas the emission of free Anap exhibits a single peak at 495 nm in aqueous solution, the emission of MBP-295Anap exhibits two peaks, one at 495 nm and the other at 405 nm. Furthermore, the proportion of the 405 nm peak increased with time in culture between 24 and 48 hr. (B). The altered emission spectrum persisted after protein purification and remained stable. The finding that the emission spectrum was altered even in denaturing solution and changed over the course of days in culture suggests that it was not simply due to a change in the local environment of Anap in MBP-295Anap, but due to a chemical change of the fluorophore. To further explore the nature of the problem with Anap incorporated into MBP, we determined the emission spectrum and specific fluorescence of Anap introduced into multiple sites of MBP. Unlike MBP-295Anap, MBP-322Anap had an emission spectrum in denaturing solution that was very similar to that of free Anap and was not affected by time in culture (D). For two of the four MBP sites we tested, the specific fluorescence of Anap decreased dramatically between 24 and 48 hr in culture (F). No decrease was observed for Acd incorporated into MBP at the same positions (E). Therefore, it appears that, for some Anap-containing proteins, Anap underwent a chemical change inside the cell that dramatically decreased it brightness. This is a problem not seen with Acd constructs.
+
+Another property of Acd that makes it superior to Anap and many other fluorophores is its fluorescence lifetime. We measured the fluorescence lifetime of free Acd and Anap using a frequency-domain lifetime instrument (see Materials and methods). For frequency-domain measurements, the lifetime is described by plots of the shift of the phase of the response (phase delay) and the decrease in the amplitude of the response (modulation ratio) as a function of the modulation frequency of the excitation light. These data can then be fit with models for the lifetimes that assume that they have single-exponential or multiexponential decays. The data for Anap were best fit by two exponentials with time constants $\tau_{D_{1}}$ = 1.3 ns and $\tau_{D_{2}}$ = 3.3 ns, and with the relative amplitude α1 = 0.76 (Figure 1F and Table 1). In contrast, the measured lifetime for Acd was single exponential with a $\tau_{D_{1}}$ = 16 ns (Figure 1E and Table 1). The longer lifetime of Acd provides a greater dynamic range for FRET and fluorescence polarization measurements (Hostetler et al., 2020), and the single-exponential distribution greatly simplifies the analysis of FRET (see below).
+
+**Table 1.**
+ Fit parameters for frequency-domain lifetime data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Acceptor</th>
+      <th></th>
+      <th>Recovery</th>
+      <th>τD1 (ns)</th>
+      <th>α1</th>
+      <th>τD2 (ns)</th>
+      <th>r¯D1(Å)</th>
+      <th>σ1 (Å)</th>
+      <th>r¯D2(Å)</th>
+      <th>σ2 (Å)</th>
+      <th>A2 0.2 mM</th>
+      <th>A2 0.37 mM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anap</td>
+      <td>n/a</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td></td>
+      <td>1.3</td>
+      <td>0.76</td>
+      <td>3.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td></td>
+      <td>0.02</td>
+      <td>0.003</td>
+      <td>0.02</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td></td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Acd</td>
+      <td>n/a</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td></td>
+      <td>16.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td></td>
+      <td>0.03</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td></td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd-Y307F-C</td>
+      <td>Cu2+-TETAC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>0.92</td>
+      <td>15.6</td>
+      <td></td>
+      <td></td>
+      <td>23.7</td>
+      <td>6.2</td>
+      <td>13.4</td>
+      <td>6.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td>0.040</td>
+      <td>0.05</td>
+      <td></td>
+      <td></td>
+      <td>0.36</td>
+      <td>0.47</td>
+      <td>0.38</td>
+      <td>0.27</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td>10</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td>10</td>
+      <td>10</td>
+      <td>7</td>
+      <td>7</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBP-322Acd-C</td>
+      <td>Cu2+-TETAC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>0.94</td>
+      <td>15.1</td>
+      <td></td>
+      <td></td>
+      <td>13.6</td>
+      <td>5.3</td>
+      <td>15.8</td>
+      <td>5.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td>0.015</td>
+      <td>0.09</td>
+      <td></td>
+      <td></td>
+      <td>0.06</td>
+      <td>0.22</td>
+      <td>0.09</td>
+      <td>0.15</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td>5</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd-Y307F-HH</td>
+      <td>Cu2+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td>0.88</td>
+      <td>15.5</td>
+      <td></td>
+      <td></td>
+      <td>18.3</td>
+      <td>2.5</td>
+      <td>12.7</td>
+      <td>1.3</td>
+      <td>0.38</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td>0.040</td>
+      <td>0.07</td>
+      <td></td>
+      <td></td>
+      <td>0.21</td>
+      <td>0.54</td>
+      <td>0.04</td>
+      <td>0.26</td>
+      <td>0.002</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td>5</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd</td>
+      <td>n/a</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Mean</td>
+      <td></td>
+      <td>14.0</td>
+      <td>0.70</td>
+      <td>2.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>SEM</td>
+      <td></td>
+      <td>0.14</td>
+      <td>0.011</td>
+      <td>0.08</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>n</td>
+      <td></td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_r¯D1  and σ1 are from fits to the data in the absence of maltose. r¯D2 and σ2 are from fits to the data in the presence of 10 mM maltose. Recovery refers to fits to the data in the presence of TCEP, for Cu2+-TETAC, and EDTA, for Cu2+._
+
+### Acd incorporation into MBP
 
 To investigate the utility of Acd as a tmFRET donor, we incorporated Acd into MBP in mammalian cells. MBP is a clamshell-shaped protein that undergoes a significant closure of the clamshell upon binding maltose (see Figure 3A,B). For these experiments, we used two donor sites for specific incorporation of Acd, amino acid 295 at the outer lip of the clamshell and 322 on the back side of the clamshell. We have previously shown that Anap incorporated at MBP-295 and MBP-322 can be paired with nearby acceptor sites to measure maltose-dependent decreases or increases in distance, respectively (Gordon et al., 2018). Our MBP constructs have a mutation in the maltose-binding site, W340A, previously shown to decrease the affinity of MBP for maltose to ~300 μM (Martineau et al., 1990) and prevent the binding of endogenous sugars during protein purification from mammalian cells (Gordon et al., 2018). Using MBP allowed us to test if tmFRET could measure distances, distance distributions, and state energetics in a protein with a well-characterized structure and conformational rearrangement.
 
@@ -60,15 +456,35 @@ Acd incorporation into MBP at sites 295 and 322 was highly specific. In-gel fluo
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig2-v1.jpg)
 
-**Figure 2.:** (A, B) In-gel fluorescence for samples of (A) MBP-295Acd and (B) MBP-322Acd at various points during the purification process. The first lane sample is Precision Plus Dual Stain molecular weight standard. Lanes marked input represent cleared cell lysate. Lanes marked unbound represent the solution removed from the anti-FLAG affinity beads after the binding step. Lanes marked bound represent the sample eluted by FLAG peptide. The exclusion and inclusion of the amino acyl tRNA synthetase in the cell transfection is indicated by – and +, respectively. Excitation by a UV transilluminator at 354 nm was used in conjunction with a fluorescein emission filter. (C, D) The same gels as shown in (A, B) after staining with Coomassie blue. (E, F) Western blots using the same samples as (A, B) but run on a different gel. Lanes are the same as (A, B) except for the first lane in which the MagicMark XP standard was used. (G, H) Fluorescence size-exclusion chromatography of purified protein on a Superdex 200 Increase 5/150 GL column. Acd was excited at 385 nm with fluorescence recorded at 450 nm (G) and tryptophan absorption was measured at 280 nm (H). MBP eluted at 2.1 mL, and the FLAG peptide eluted at 2.5 mL.Figure 2—source data 1.Figure 2A, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-295Acd.Figure 2—source data 2.Figure 2B, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-322Acd.Figure 2—source data 3.Figure 2C, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-295Acd, and red arrow indicates the size of the truncation product.Figure 2—source data 4.Figure 2D, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-322Acd, and red arrow indicates the size of the truncation product.Figure 2—source data 5.Figure 2E, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-295Acd, and red arrow indicates the size of the truncation product.Figure 2—source data 6.Figure 2F, lane 2 is the same as lane 1 shown in the main text figure.Black arrow indicates the size of full-length MBP-322Acd, and red arrow indicates the size of the truncation product.
+**Figure 2.:** (A, B) In-gel fluorescence for samples of (A) MBP-295Acd and (B) MBP-322Acd at various points during the purification process. The first lane sample is Precision Plus Dual Stain molecular weight standard. Lanes marked input represent cleared cell lysate. Lanes marked unbound represent the solution removed from the anti-FLAG affinity beads after the binding step. Lanes marked bound represent the sample eluted by FLAG peptide. The exclusion and inclusion of the amino acyl tRNA synthetase in the cell transfection is indicated by – and +, respectively. Excitation by a UV transilluminator at 354 nm was used in conjunction with a fluorescein emission filter. (C, D) The same gels as shown in (A, B) after staining with Coomassie blue. (E, F) Western blots using the same samples as (A, B) but run on a different gel. Lanes are the same as (A, B) except for the first lane in which the MagicMark XP standard was used. (G, H) Fluorescence size-exclusion chromatography of purified protein on a Superdex 200 Increase 5/150 GL column. Acd was excited at 385 nm with fluorescence recorded at 450 nm (G) and tryptophan absorption was measured at 280 nm (H). MBP eluted at 2.1 mL, and the FLAG peptide eluted at 2.5 mL.
 
 Fluorescence-detection size-exclusion chromatography (FSEC) revealed a single monodispersed peak for purified MBP-295Acd and MBP-322Acd (excitation: 385 nm; emission: 450 nm) but only a minor signal without Acd-RS (Figure 2G). The UV absorption (280 nm) displayed two primary peaks, one for MBP and one for the FLAG peptide used to elute MBP from the anti-FLAG beads (Figure 2H). Interestingly, whereas the UV absorption of MBP-295Acd and MBP-322Acd was very similar in amplitude, the fluorescence of MBP-295Acd was only about half that of MBP-322Acd (Figure 2G,H). As shown below, the lower specific fluorescence of MBP-295Acd compared to MBP-322Acd was largely due to the partial quenching of Acd by a nearby tyrosine (Y307) in MBP-295Acd.
 
-## tmFRET with Cu2+-TETAC for MBP-295Acd and MBP-322Acd
+### tmFRET with Cu2+-TETAC for MBP-295Acd and MBP-322Acd
 
 To determine if Acd could serve as a donor for tmFRET, we introduced single cysteine mutations into our MBP-Acd constructs for modification by the cysteine-reactive acceptor Cu2+-TETAC. For MBP-295Anap, cysteine was introduced at position 237 (MBP-295Acd-C) and, for MBP-322Acd, cysteine was introduced at position 309 (MBP-322Acd-C) (Figure 3A,B). These donor-acceptor pairs were selected because (1) the sites are solvent exposed, (2) the sites are on rigid secondary structural elements (α-helices in MBP), (3) the distances between the sites are predicted to fall in the working range of tmFRET (~10–25 Å), and (4) the distances between the sites undergo moderate changes between apo and holo MBP. Figure 3A,B shows the position of these donor (magenta) and acceptor (orange) sites as clouds of possible rotamers modeled onto the X-ray crystal structures of the apo and holo states of MBP. MBP-295Acd-C has donor and acceptor sites on the outer lip of the clamshell with β-carbon distances, measured from the X-ray structures, of 21.3 Å in the apo state and 12.9 Å in the holo state, a distance change of −8.4 Å (shortening). MBP-322Acd-C has donor and acceptor sites on the backside of the clamshell with β-carbon distances of 13.4 Å in the apo state and 17.6 Å in the holo state, a distance change of +4.2 Å (lengthening). We have previously used these sites on MBP to establish the accuracy of tmFRET with Anap (Gordon et al., 2018).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Cartoon representations of MBP in the (A) apo (PDB 1OMP) and (B) holo (PDB 1ANF) conformations. The clouds represent possible conformers of Acd or Cu2+-TETAC with the carbonyl carbon of the acridone ring of Acd shown in orange and the Cu2+ ion of Cu2+-TETAC shown in magenta. Predicted donor-acceptor distances are listed in Table 2. (C–F) Emission spectra in response to 375 nm excitation, with 5 nm slits on both excitation and emission for (C, E) MBP-295Acd-C and (D, F) MBP-322Acd-C before (black) and after (red) application of Cu2+-TETAC. The dashed lines represent the Cu2+-TETAC data normalized to the peak initial data. (C, D) In the absence of maltose. (E, F) In the presence of 10 mM maltose.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Emission spectra in response to 375 nm excitation, with 5 nm slits on both excitation and emission for (A, C) MBP-295Acd and (B, D) MBP-322Acd before (black) and after (red) application of Cu2+-TETAC. The dashed lines represent the Cu2+-TETAC data normalized to the peak initial data. (A, B) In the absence of maltose. (C, D) In the presence of 10 mM maltose.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Quenching of MBP-322Acd-C by Tide Quencher 1 maleimide, with FCys and Fno Cys as defined in Equation 2. Data are shown as mean ± SEM for n = 8. Tide Quencher 1 maleimide was present during the time indicated by the bar. (B) Collected data showing each independent sample (circles) and the mean (line) for FCys/Fno Cys.
+
 tmFRET was readily observed in both MBP-Acd-C constructs. We recorded Acd emission spectra of purified MBP-295Acd-C and MBP-322Acd-C before and after application of 10 µM Cu2+-TETAC. Cu2+-TETAC produced a large decrease in fluorescence intensity for both MBP-295Acd-C (Figure 3C) and MBP-322Acd-C (Figure 3D). The emission spectra in the presence of Cu2+-TETAC were nearly identical in shape to the spectra without Cu2+-TETAC (Figure 4C–F, dashed traces), indicating that the fluorescence quenching reflected a FRET mechanism as opposed to a change of environment of Acd or an inner filter effect. Little or no decrease in fluorescence was observed in constructs lacking the introduced cysteine (MBP-295Acd and MBP-322Acd), indicating that virtually all the quenching was due to energy transfer with Cu2+-TETAC conjugated to the introduced cysteine (Figure 3—figure supplement 1). Labeling with Cu2+-TETAC was nearly complete as shown by the time courses shown in Figure 4 and the nearly complete quenching observed with a cysteine-reactive quencher with a long R0 value (Figure 3—figure supplement 2). Therefore, the fractional decrease in the donor’s fluorescence in the presence of acceptor is a measure of the FRET efficiency between the donor and acceptor sites.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig4-v1.jpg)
+
+**Figure 4.:** Quenching by Cu2+-TETAC and recovery with TCEP for (A) MBP-295Acd-C, (B) MBP-295Anap-C, (C) MBP-322Acd-C, and (D) MBP-322Anap-C, with FCys and Fno Cys as defined in Equation 2. Data are shown as mean ± SEM for n = 5. 10 µM Cu2+-TETAC and 2.5 mM TCEP were added at the times indicated by the bars. Open symbols represent data collected in the absence of maltose, and filled symbols represent data collected in the presence of 10 mM maltose. (E–F) Collected data showing each independent sample (circles) and the mean (black line) for FCys and Fno Cys for (E) MBP-295Acd-C (labeled 295Acd Cys) and MBP-295Acd (labeled 295Acd no Cys), MBP-322Acd-C (labeled 322Acd Cys) and MBP-322Acd (labeled 322Acd no Cys) and for (F) MBP-295Anap-C (labeled 295Anap Cys) and MBP-295Anap (labeled 295Anap no Cys), MBP-322Anap-C (labeled 322Anap Cys) and MBP-322Anap (labeled 322Anap no Cys). The absence and presence of 10 mM maltose are as indicated by the – and + shown beneath each data set.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Distances in the apo state are shown as open circles, and distances in the holo state are shown as filled circles. The β-carbon distances were determined from PDB structures 1OMP and 1TNF (see also Table 2). Points labeled steady state represent means of distances calculated from steady-state fluorescence resonance energy transfer (FRET), with n = 4–5. Points labeled lifetime represent means of distances determined from fits to frequency-domain lifetime measurements, with n = 3–7 (see also Table 1). Error bars represent standard error of the mean. Dashed lines indicate the R0 values for the FRET pairs indicated in the figure.
 
 The FRET efficiencies for our MBP-Acd constructs were appreciably different in the absence and presence of maltose. For MBP-295Acd-C, the quenching was greater in the presence of maltose, indicating an increase in FRET efficiency and shorter distance (Figure 3E). For MBP-322Acd-C, the quenching was smaller in the presence of maltose, indicating a decrease in FRET efficiency and longer distance (Figure 3F). These results demonstrate that tmFRET could be used to visualize the conformational change in MBP resulting from the binding of maltose – reporting a decrease in distance for the MBP-295Acd-C FRET pair at the outer lip of the clamshell and an increase in distance for the MBP-322Acd-C FRET pair on the back side of the clamshell (Table 2).
 
@@ -76,25 +492,118 @@ To quantitatively compare the FRET efficiencies with Acd and Anap, we measured t
 
 From the FRET efficiencies, we calculated the distances between the donors and acceptors using the Förster equation R = R0(1/E – 1)1/6. We calculated R0 using the emission spectrum and quantum yield of Acd (0.8) and the absorption spectrum of Cu2+ bound to cyclen (Table 2). We assumed random orientations of the donor and acceptor (κ2 = 2/3), a reasonable assumption when one member of the FRET pair is a metal ion (Haas et al., 1978; see Materials and methods). Figure 4—figure supplement 1 compares the tmFRET distance measurements for MBP-295Acd-C and MBP-322Acd-C with Cu2+-TETAC in the absence (open circles) or presence (closed circles) of maltose. Also shown are the β-carbon distances predicted from the X-ray crystal structures of MBP in the absence and presence of ligand. As we have previously demonstrated with MBP-Anap, the experimentally determined distances are generally smaller than the predictions above R0 and larger than the predictions below R0 (Gordon et al., 2018). This results in an underestimate of the change in distance due to maltose. This effect can be partially mitigated by using a Förster equation convolved with a Gaussian function (Förster convolved Gaussian [FCG]) for the distance dependence of the FRET efficiency (Gordon et al., 2018).
 
-## Lifetime measurements of MBP-Acd
+**Table 2.**
+ Predicted donor-acceptor distances from MBP X-ray crystal structures.
 
-Perhaps the most significant advantage to Acd is that it exhibits long, single-exponential fluorescence lifetimes (Figure 1E). The long duration (τD1 = 16 ns) provides a large dynamic range for changes in lifetime resulting from FRET, and the single-exponential distribution greatly simplifies the analysis of the time-resolved FRET. Therefore, we measured the fluorescence lifetimes of MBP-295Acd and MBP-322Acd using a frequency-domain lifetime instrument. The lifetime of MBP-322Acd was well fit with a single exponential with an average of 15.1 ns, similar to free Acd (Table 1). However, the lifetimes of MBP-295Acd could not be fit by a single exponential, requiring at least two exponentials (Figure 5A), with time constants τD1 = 14 ns and τD2 = 2.0 ns and a relative amplitude α1 = 0.7 (Figure 5D and E and Table 1).
+
+<table>
+  <thead>
+    <tr>
+      <th>Donor</th>
+      <th>Acceptor</th>
+      <th>R0 (Å)</th>
+      <th>Apo vs. Holo</th>
+      <th>rpredicted,β-carbon (Å)</th>
+      <th>rpredicted,centroid (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBP-295Acd-Y307F-C</td>
+      <td>Cu2+-TETAC</td>
+      <td>14.9</td>
+      <td>Apo</td>
+      <td>21.3</td>
+      <td>21.7</td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd-Y307F-C</td>
+      <td>Cu2+-TETAC</td>
+      <td>14.9</td>
+      <td>Holo</td>
+      <td>12.8</td>
+      <td>12.1</td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd-Y307F-HH</td>
+      <td>Cu2+</td>
+      <td>12.2</td>
+      <td>Apo</td>
+      <td>18.7</td>
+      <td>17.1</td>
+    </tr>
+    <tr>
+      <td>MBP-295Acd-Y307F-HH</td>
+      <td>Cu2+</td>
+      <td>12.2</td>
+      <td>Holo</td>
+      <td>10.9</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>MBP-322Acd-C</td>
+      <td>Cu2+-TETAC</td>
+      <td>14.9</td>
+      <td>Apo</td>
+      <td>13.4</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td>MBP-322Acd-C</td>
+      <td>Cu2+-TETAC</td>
+      <td>14.9</td>
+      <td>Holo</td>
+      <td>17.7</td>
+      <td>18.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_rpredicted, β-carbon, and rpredicted centroid were determined from PDB structures 1OMP and 1ANF. The calculated R0 values and predicted distances for MBP-295Acd constructs are the same as for MBP-295Acd-Y307F constructs._
+
+### Lifetime measurements of MBP-Acd
+
+Perhaps the most significant advantage to Acd is that it exhibits long, single-exponential fluorescence lifetimes (Figure 1E). The long duration ($\tau_{D_{1}}$ = 16 ns) provides a large dynamic range for changes in lifetime resulting from FRET, and the single-exponential distribution greatly simplifies the analysis of the time-resolved FRET. Therefore, we measured the fluorescence lifetimes of MBP-295Acd and MBP-322Acd using a frequency-domain lifetime instrument. The lifetime of MBP-322Acd was well fit with a single exponential with an average of 15.1 ns, similar to free Acd (Table 1). However, the lifetimes of MBP-295Acd could not be fit by a single exponential, requiring at least two exponentials (Figure 5A), with time constants $\tau_{D_{1}}$ = 14 ns and $\tau_{D_{2}}$ = 2.0 ns and a relative amplitude α1 = 0.7 (Figure 5D and E and Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig5-v1.jpg)
+
+**Figure 5.:** (A, C) Frequency-domain measurements of fluorescence lifetime of (A) MBP-295Acd and (C) MBP-295Acd-Y307F. Black, phase delay in degrees; red, modulation ratio. Curves are fits with Equations 5 and 6 corrected by Equations 13 and 14. Fit parameters for (A) are $\tau_{D_{1}}$ = 11.6 ns for a single exponential (solid curve) and $\tau_{D_{1}}$ = 13.9 ns, $\tau_{D_{2}}$ = 1.9 ns, and α1 = 0.70 Å (dashed curve) and for (C) are $\tau_{D_{1}}$ = 15.6 ns. (B) Cartoon representation of the proximity between Acd at position 295 and tyrosine at position 307 in the apo state. (D, E) Collected data from fits for MBP-295Acd (WT) and MBP-295Acd-Y307F, as indicated. Independent samples are shown as red circles, and the means are shown as black lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quenching by Cu2+-TETAC and recovery with TCEP for MBP-295Acd-Y307F-C, with FCys and Fno Cys as defined in Equation 2. Data are shown as mean ± SEM for n = 5. 10 µM Cu2+-TETAC and 2.5 mM TCEP were added at the times indicated by the bars. Open symbols represent data collected in the absence of maltose, and filled symbols represent data collected in the presence of 10 mM maltose. (B) Collected data showing each independent sample (circles) and the mean (red line) for FCys and Fno Cys. The absence and presence of 10 mM maltose are as indicated by the – and + shown beneath each data set.
 
 The shorter, nonsingle-exponential lifetimes observed for MBP-295Acd suggest that something in the environment of Acd is quenching its fluorescence in this construct. This is also consistent with the decrease in specific fluorescence we observed for MBP-295Acd relative to MBP-322Acd (Figure 2G,H). Previously, it was shown that Acd can be quenched by nearby tyrosine and tryptophan residues via photoinduced electron transfer (Speight et al., 2013). Close examination of the structure of MBP revealed a likely culprit for the quencher in MBP-295Acd. Tyrosine at position 307 is predicted to be in close proximity (<5 Å) to Acd at position 295 (Figure 5B). Indeed, the mutation Y307F increased the average lifetime to 15.5 ns and completely eliminated the double exponential character of MBP-295Acd (Figure 5C,D and Table 1). The MBP-295Acd-Y307F-C construct maintained the large maltose dependence of tmFRET, although the steady-state FRET efficiency was somewhat lower than MBP-295Acd-C, perhaps because Y307F altered the rotameric distribution of Acd (Figure 5—figure supplement 1). For the remainder of this study, every construct with Acd incorporated at position 295 also included the Y307F mutation.
 
-## Lifetime measurements of tmFRET reveal heterogeneity of donor-acceptor distances
+### Lifetime measurements of tmFRET reveal heterogeneity of donor-acceptor distances
 
-Previously, we determined the apparent efficiency of tmFRET with Anap using only steady-state measurements (Gordon et al., 2018), as also described above for Acd. The FRET efficiencies did not conform to the sixth-power distance dependence predicted by the Förster equation, but, instead, exhibited a shallower distance dependence. This shallower distance dependence was well fit with a Förster equation convolved with a Gaussian function (FCG). The FCG equation is the prediction of the apparent FRET efficiency if the distance between the donor and acceptor was heterogeneous instead of fixed. This heterogeneity in each conformational state was described by a Gaussian distribution, with a mean distance, r¯, and standard deviation, σ, where the distances did not change appreciably on the time scale of the fluorescence lifetime (Wozniak et al., 2008). This model also assumed that σ was the same for all the states and constructs that produced different mean distances, a simplifying assumption required when using steady-state FRET but which is not physically justified.
+Previously, we determined the apparent efficiency of tmFRET with Anap using only steady-state measurements (Gordon et al., 2018), as also described above for Acd. The FRET efficiencies did not conform to the sixth-power distance dependence predicted by the Förster equation, but, instead, exhibited a shallower distance dependence. This shallower distance dependence was well fit with a Förster equation convolved with a Gaussian function (FCG). The FCG equation is the prediction of the apparent FRET efficiency if the distance between the donor and acceptor was heterogeneous instead of fixed. This heterogeneity in each conformational state was described by a Gaussian distribution, with a mean distance, $r¯$, and standard deviation, σ, where the distances did not change appreciably on the time scale of the fluorescence lifetime (Wozniak et al., 2008). This model also assumed that σ was the same for all the states and constructs that produced different mean distances, a simplifying assumption required when using steady-state FRET but which is not physically justified.
 
-The long, single-exponential lifetime of Acd allowed us to measure the heterogeneity of donor-acceptor distances more directly than was possible with the FCG approach. FRET causes a decrease in the fluorescence lifetime of the donor by introducing a nonradiative pathway for the donor fluorophore to relax from its excited state, which can then be used to calculate the FRET efficiency. A continuous distribution of distances would produce a continuous distribution of lifetimes that can be fit to the lifetime data in either the time domain or the frequency domain. Like FCG, the approach assumes a particular form for the distance distribution, such as a Gaussian (Lakowicz et al., 1994a) or sum of Gaussians (Kulinski et al., 1997), and that the distances do not change appreciably on the time scale of the fluorescence lifetime (Wozniak et al., 2008). A major advance in using lifetimes instead of steady-state approaches, however, is that σ need not be the same for different constructs/conditions. Because the distributions are parameterized, the fits generally have fewer free parameters than fitting with a sum of exponentials. In addition, the use of structure-based parameters (e.g., r¯ and σ) allows the distances to be more easily interpreted in terms of the molecular structures. This approach was pioneered in the 1970s, mostly by Steinberg and coworkers (Grinvald et al., 1972; Haas et al., 1975).
+The long, single-exponential lifetime of Acd allowed us to measure the heterogeneity of donor-acceptor distances more directly than was possible with the FCG approach. FRET causes a decrease in the fluorescence lifetime of the donor by introducing a nonradiative pathway for the donor fluorophore to relax from its excited state, which can then be used to calculate the FRET efficiency. A continuous distribution of distances would produce a continuous distribution of lifetimes that can be fit to the lifetime data in either the time domain or the frequency domain. Like FCG, the approach assumes a particular form for the distance distribution, such as a Gaussian (Lakowicz et al., 1994a) or sum of Gaussians (Kulinski et al., 1997), and that the distances do not change appreciably on the time scale of the fluorescence lifetime (Wozniak et al., 2008). A major advance in using lifetimes instead of steady-state approaches, however, is that σ need not be the same for different constructs/conditions. Because the distributions are parameterized, the fits generally have fewer free parameters than fitting with a sum of exponentials. In addition, the use of structure-based parameters (e.g., $r¯$ and σ) allows the distances to be more easily interpreted in terms of the molecular structures. This approach was pioneered in the 1970s, mostly by Steinberg and coworkers (Grinvald et al., 1972; Haas et al., 1975).
 
-We measured tmFRET with fluorescence lifetimes to determine the heterogeneity of the donor-acceptor distances in our MBP-Acd constructs. For each protein sample, we measured the fluorescence lifetime in the donor-only condition, after the addition of 10 µM Cu2+-TETAC and after the addition of 18 mM TCEP. For each condition, phase delay, φω, and modulation ratio, mω, at each modulation frequency, ω, along with the steady-state quenching data, E, were simultaneously fit with a model for the fluorescence lifetimes assuming a Gaussian distribution of distances between the donor and acceptor (see Materials and methods). The values of 3–4 free parameters for each condition were determined using χ2 minimization.
+We measured tmFRET with fluorescence lifetimes to determine the heterogeneity of the donor-acceptor distances in our MBP-Acd constructs. For each protein sample, we measured the fluorescence lifetime in the donor-only condition, after the addition of 10 µM Cu2+-TETAC and after the addition of 18 mM TCEP. For each condition, phase delay, φω, and modulation ratio, mω, at each modulation frequency, ω, along with the steady-state quenching data, E, were simultaneously fit with a model for the fluorescence lifetimes assuming a Gaussian distribution of distances between the donor and acceptor (see Materials and methods). The values of 3–4 free parameters for each condition were determined using $χ^{2}$ minimization.
 
 The model with Gaussian-distributed distances provided an excellent fit to the lifetime data for MBP-295Acd-Y307F-C and MBP-322Acd-C in the absence and presence of maltose. The data for the donor-only condition for MBP-295Acd-Y307F-C and MBP-322Acd-C were well fit by single-exponential lifetimes (Figure 6A–D, filled circles, and Table 1). The addition of Cu2+-TETAC caused a shift in the phase delay and modulation ratio data to higher frequencies, indicative of a shortening of the fluorescence lifetime of the donor (Figure 6A–D, bowties, and Table 1). For MBP-295Acd-Y307F-C, the shift was larger in the presence of maltose than in the absence of maltose (Figure 6A,C, filled vs. open bowties). This is consistent with a maltose-dependent decrease in distance, which would be expected to decrease the lifetimes for the MBP-295Acd-Y307F-C construct. In contrast, for MBP-322Acd-C, the shift was smaller in the presence of maltose than in the absence of maltose (Figure 6D, filled vs. open bowties, and Table 1), consistent with the maltose-dependent increase in distance expected for the MBP-322Acd-C construct. In all cases, the data in the presence of acceptor were not well fit by a single-exponential lifetime distribution, as expected for a single FRET distance, but were well fit by the model with Gaussian-distributed distances. And, in all cases, the reductions in lifetime reversed nearly completely after application of TCEP (Figure 6A–D, open circles, and Table 1). No detectable changes in lifetime occurred for similar experiments using MBP-295Acd-Y307F or MBP-322Acd lacking an acceptor-site cysteine (Figure 6—figure supplement 1).
 
-The distribution of distances predicted from the fits to the data in the presence of acceptor is shown for multiple samples in Figure 6E,F with parameter values given in Table 1. Both the mean distances, r¯, and the standard deviations, σ, of the distributions were fairly consistent across samples. The largest σ occurred with MBP-295Acd-Y307F-C in the absence of maltose (Figure 6E, black traces), the condition with the longest predicted distance and least amount of FRET. For MBP-295Acd-Y307F-C, the r¯ decreased from 23.7 Å to 13.4 Å in the presence of maltose, more consistent with the decrease in distance observed in the X-ray crystal structures than measured using steady-state tmFRET (Figure 4—figure supplement 1). For MBP-322-C, r¯ increased from 13.6 Å to 15.8 Å in the presence of maltose, somewhat smaller than the increase in distance in the X-ray crystal structures (Figure 4—figure supplement 1). Interestingly, the estimated σ with Cu2+-TETAC for all conformational states were quite large. In the absence of maltose, σ values were 6.2 Å for MBP-295Acd-Y307F-C and 5.3 Å for MBP-322-C (corresponding to a FWHM of 14.6 Å and 12.5 Å, respectively) and in the presence of 10 mM maltose, σ values were 6.5 Å for MBP-295Acd-Y307F-C and 5.5 Å for MBP-322-C (corresponding to a FWHM of 15.3 Å and 13.0 Å). The widths of these distributions are generally consistent with the predicted donor-acceptor distance distributions considering all possible rotamers of Acd and Cu2+-TETAC attached to a cysteine residue (Figure 6—figure supplement 2A,B). The heterogeneity in the distances likely reflects the relatively long linker associated with the acceptor Cu2+-TETAC attached to a cysteine residue.
+![Figure 6.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig6-v1.jpg)
 
-## Lifetime measurements with tmFRET reveal distributions among conformational states
+**Figure 6.:** (A–D) Frequency-domain measurements of fluorescence lifetime of (A, C) MBP-295Acd-Y307F-C and (B, D) MBP-322Acd-C. Black, phase delay in degrees; red, modulation ratio. Filled circles represent the donor-only condition at the beginning of the experiment. For (A, B, D), this was in the absence of maltose and for (C) this was in the presence of 10 mM maltose. Open bowties represent the addition of 10 µM Cu2+-TETAC in the absence of maltose. Filled bowties represent the addition of 10 µM Cu2+-TETAC in the presence of 10 mM maltose. Open circles represent data collected after sequential addition of TCEP. Solid curves represent fits to the data with Equations 5 and 6 and then corrected using Equations 13 and 14. The parameters for the fits shown in the figure are as follows: (A) $\tau_{D_{1}}=15.5 ns,$ $r¯_{1}=22.9 A˚,$ $\sigma_{1}=5.0 A˚;$ (B) $\tau_{D_{1}}=15.2 ns,$ $r¯_{1}=13.7 A˚,$ $\sigma_{1}=5.7 A˚;$ (C) $\tau_{D_{1}}=15.1 ns,$ $r¯_{2}=12.8 A˚,$ $\sigma_{2}=7.8 A˚;$ and (D) $\tau_{D_{1}}=15.4 ns,$ $r¯_{1}=13.7 A˚,$ $\sigma_{1}=5.0 A˚,$ $r¯_{2}=15.7 A˚,$ $\sigma_{2}=5.9 A˚.$ (E, F) Spaghetti plots representing the center and width of the Gaussians used to fit the distance distributions for each experiment (thin curves) and the average of all fits (thick curves) for (E) MBP-295Acd-Y307F-C and (F) MBP-322Acd-C in either the absence (black) or presence (red) of 10 mM maltose.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Frequency-domain measurements of fluorescence lifetime of (A, C) MBP-295Acd-Y307F and (B, D) MBP-322Acd in (A,B ) the absence and (B–D) presence of 10 mM maltose. Black, phase delay in degrees; red, modulation ratio. Fits are shown as solid curves with the following parameters: (A) $\tau_{D_{1}}=15.4 ns;$ (B) $\tau_{D_{1}}=15.8 ns;$ (C) $\tau_{D_{1}}=15.3 ns;$ and (D) $\tau_{D_{1}}=16.1 ns.$ Symbols are as indicated in the legend and are the same as in Figure 6.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Black open symbols represent distances from the apo structure (PDB 10MP), filled red symbols represent distances from the holo structure (PDB ANF1), and curves represent fits to the distances with a Gaussian. (A) MBP-295-Acd-C with Cu2+-TETAC conjugated to the cysteine fit with the following parameters: $r¯_{1}=22.3 A˚,\sigma_{1}=4.2 A˚,r¯_{2}=12.9 A˚, and \sigma_{2}=4.2 A˚.$ (B) MBP-322-Acd-C with Cu2+-TETAC conjugated to the cysteine fit with the following parameters: $r¯_{1}=11.6 A˚,\sigma_{1}=4.0 A˚,r¯_{2}=19.5 A˚, and \sigma_{2}=3.6 A˚.$ (C) MBP-295-Acd-HH bound to Cu2+ fit with the following parameters: $r¯_{1}=16.9 A˚,\sigma_{1}=1.4 A˚,r¯_{2}=7.9 A˚, and \sigma_{2}=2.5 A˚.$ The apo parameters are $r¯_{1}$ and σ1, and the holo parameters are $r¯_{2}$ and σ2. The gray and pink curves represent the black and red fits, respectively, from (A) and demonstrate the expected differences in donor-acceptor distances when using Cu2+-di-His vs. Cu2+-TETAC as the acceptor.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Cartoon representations of MBP-295Acd-HH in (A) the apo (PDB 10MP) and (B) the holo (PDB 1ANF) conformations. The clouds represent possible conformers of Acd or Cu2+-di-histidine with the carbonyl carbon of the acridone ring of Acd shown in orange and the Cu2+ ion shown in magenta. Donor-acceptor distances are listed in Table 2.
+
+The distribution of distances predicted from the fits to the data in the presence of acceptor is shown for multiple samples in Figure 6E,F with parameter values given in Table 1. Both the mean distances, $r¯$, and the standard deviations, σ, of the distributions were fairly consistent across samples. The largest σ occurred with MBP-295Acd-Y307F-C in the absence of maltose (Figure 6E, black traces), the condition with the longest predicted distance and least amount of FRET. For MBP-295Acd-Y307F-C, the $r¯$ decreased from 23.7 Å to 13.4 Å in the presence of maltose, more consistent with the decrease in distance observed in the X-ray crystal structures than measured using steady-state tmFRET (Figure 4—figure supplement 1). For MBP-322-C, $r¯$ increased from 13.6 Å to 15.8 Å in the presence of maltose, somewhat smaller than the increase in distance in the X-ray crystal structures (Figure 4—figure supplement 1). Interestingly, the estimated σ with Cu2+-TETAC for all conformational states were quite large. In the absence of maltose, σ values were 6.2 Å for MBP-295Acd-Y307F-C and 5.3 Å for MBP-322-C (corresponding to a FWHM of 14.6 Å and 12.5 Å, respectively) and in the presence of 10 mM maltose, σ values were 6.5 Å for MBP-295Acd-Y307F-C and 5.5 Å for MBP-322-C (corresponding to a FWHM of 15.3 Å and 13.0 Å). The widths of these distributions are generally consistent with the predicted donor-acceptor distance distributions considering all possible rotamers of Acd and Cu2+-TETAC attached to a cysteine residue (Figure 6—figure supplement 2A,B). The heterogeneity in the distances likely reflects the relatively long linker associated with the acceptor Cu2+-TETAC attached to a cysteine residue.
+
+### Lifetime measurements with tmFRET reveal distributions among conformational states
 
 The model for fluorescence lifetimes with Gaussian-distributed distances can reveal not only the heterogeneity of the distances within any given conformational state, σ, but also the distribution among conformational states (parameter A2 in Figure 8C ). Knowing the distribution among states at equilibrium allows us to calculate an equilibrium constant, and therefore a free energy difference, between states. Thus, time-resolved FRET experiments have the capability to reveal sparse structural information on intramolecular distances and heterogeneity and to quantify the energetics of conformational rearrangements within proteins or protein domains.
 
@@ -102,9 +611,29 @@ To determine whether tmFRET with Acd has the capability to measure the distribut
 
 To determine the distance distributions in MBP-295Acd-Y307F-HH at different concentrations of maltose, we measured tmFRET using fluorescence lifetimes. For each protein sample, we first measured the fluorescence lifetime of the donor-only in the absence of acceptor (Figure 7A, gray). The data were well fit with a single-exponential lifetime (Table 1) of 15.6 ns, which was not significantly different from what we observed for MBP-295Acd-Y307F-C (Student’s t-test, two-tailed, p=0.35). We then added 100 µM Cu2+ and measured tmFRET in five different conditions: (1) no maltose (red), (2) 200 μM maltose (green), (3) 370 μM maltose (blue), (4) 10 mM maltose (saturating maltose; magenta), and (5) after the addition of 17 mM EDTA to remove the Cu2+ from the di-histidine-binding site. As shown in Figure 7A, addition of 100 μM Cu2 caused a shift of the phase delay and modulation ratio to higher frequencies, indicative of a decrease in lifetime and FRET between Acd and Cu2+ bound to the di-histidine motif of MBP-295Acd-Y307F-HH. Addition of increasing concentrations of maltose produced further shifts in the phase delay and modulation ratio. This effect was almost completely reversed by the application of EDTA (Table 1). These results indicate that MBP-295Acd-Y307F-HH undergoes a maltose-dependent increase in average FRET efficiency, and subsaturating concentrations of maltose produced intermediate apparent FRET efficiencies.
 
-We first fit the data in the absence of maltose and in the presence of 10 mM maltose, as described above. These data could be well fit by our FRET model with a single Gaussian distance distribution (Figure 7A and Table 1). The mean distance r¯ decreased from r¯1 = 18.3 Å to r¯2 = 12.7 Å, more consistent with the maltose-dependent change in distance from the X-ray crystal structures than the distance change determined with steady-state FRET (Figure 7C and Figure 4—figure supplement 1). Interestingly, the σ values (σ1 = 2.5 Å and σ2 = 1.3 Å in the absence and presence of 10 mM maltose, respectively) were substantially smaller than the σ values when Cu2+-TETAC was used as the acceptor (σ1 = 6.2 Å and σ2 = 6.5 Å). This finding likely reflects that Cu2+ bound to a di-histidine motif is more rigid and closely associated with the protein backbone than Cu2+-TETAC attached to a cysteine residue, as seen in the rotameric clouds of the Cu2+-di-histidine (Figure 6—figure supplement 3) and predicted distance distributions of all possible rotamers (Figure 6—figure supplement 2C). Moreover, the value of σ in the absence of maltose was larger than in the presence of 10 mM maltose, consistent with previous findings from NMR, small-angle X-ray scattering (SAXS), and EPR spectroscopy (Tang et al., 2007; Selmke et al., 2018). The greater heterogeneity in distances in the absence vs. presence of maltose likely reflects increased heterogeneity in the degree to which the MBP clamshell is open in the apo state (Tang et al., 2007). These results highlight the power of using time-resolved FRET to measure distance distributions.
+![Figure 7.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig7-v1.jpg)
 
-To determine whether time-resolved FRET with Acd could be used to quantify the distribution among multiple conformational states, we analyzed the fluorescence lifetime data at 200 μM and 370 μM maltose. For these fits, we assumed that the distance distributions were described by the sum of two Gaussians, one with r¯1 and σ1 of the open clamshell state and one with r¯2 and σ2 of the closed clamshell state (see Figure 8C). The only parameter in the distance distribution that was allowed to vary was the proportion of the open vs. closed clamshell states (A2). Figure 7A shows that these distributions provided excellent fits to the fluorescence lifetime data at subsaturating maltose concentrations. Based on the relative area under each Gaussian for the clamshell closed vs. open populations, the proportion of the maltose-bound (clamshell closed) conformation was 0.38 in 200 µM maltose and 0.60 in 370 µM maltose (Table 1). These proportions closely matched the predictions based on the apparent FRET efficiency at subsaturating maltose concentrations measured from steady-state quenching experiments (Figure 7B). The maltose apparent affinity from both steady-state and lifetime FRET experiments was ~400 μM, similar to the 280 μM maltose affinity determined previously for MBP-295Anap-C with the W340A mutation but without the Y307F mutation (Gordon et al., 2018) and to the ~1 mM KD reported for MBP (Martineau et al., 1990).
+**Figure 7.:** (A) Frequency-domain measurements of fluorescence lifetimes of MBP-295Acd-HH measured sequentially in the absence of acceptor (donor only – gray), 100 µM Cu2+ (red), 100 µM Cu2+ and 200 µM maltose (green), 100 µM Cu2+ and 370 µM maltose (blue), and 100 µM Cu2+ and 10 mM maltose (magenta). Filled symbols represent phase delay, and open symbols represent modulation ratio. Solid curves are fits with Equations 5 and 6 corrected with Equations 13 and 14 with the following fit parameters: $\tau_{D_{1}}=15.7 ns, r¯_{1}=18.8 A˚,\sigma_{1}=3.5 A˚,r¯_{2}=12.6 A˚ and \sigma_{2}=1.3 A˚.$ (B) The dependence of apparent FRET efficiency measured with steady-state FRET (black) or fraction in the closed clamshell conformation measured with time-resolved FRET (red) on maltose concentration. Points are mean ± SEM for 3–5 independent experiments. The fraction of the population in the closed clamshell conformation at each MBP concentration was taken from model fits to the data, as shown in (A). Solid curve is a fit with the Hill equation with the following parameters: K1/2 = 393 µM and Hill slope = 1. (C) Spaghetti plots representing the center and width of the Gaussians used to fit the distance distributions for each experiment (thin curves) and the average of all fits (thick curves) for MBP-295Acd-HH at the indicated maltose concentrations. (D) Phasor plot in which each pixel of the fluorescence lifetime imaging microscopy image is plotted as a dot, with the color corresponding to the maltose concentration, as in (A) and (C). The line connects the centroid of the data in the absence of maltose to that in the presence of 10 mM maltose. (Inset) Magnified section of the phasor plot. The yellow points represent N and D predicted from Equations 7 and 8 from fits of the model to the frequency-domain data shown in (A). The fraction of the population in the closed clamshell conformation predicted by the models is compared to that given by the phasor plots.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quenching by Cu2+ and recovery with EDTA for MBP-295Acd-Y307F-HH, with FHH and Fno HH as defined in Equation 2. Data are shown as mean ± SEM for n = 4–5. 100 µM Cu2+ and 2 mM EDTA were added at the times indicated by the bars. Open symbols represent data collected in the absence of maltose, and filled symbols represent data collected in the presence of 10 mM maltose. (B) Collected data showing independent samples (circles) and the mean (black line) for FHH and Fno HH. The absence and presence of 10 mM maltose are as indicated by the – and + shown beneath each data set.
+
+We first fit the data in the absence of maltose and in the presence of 10 mM maltose, as described above. These data could be well fit by our FRET model with a single Gaussian distance distribution (Figure 7A and Table 1). The mean distance $r¯$ decreased from $r¯_{1}$ = 18.3 Å to $r¯_{2}$ = 12.7 Å, more consistent with the maltose-dependent change in distance from the X-ray crystal structures than the distance change determined with steady-state FRET (Figure 7C and Figure 4—figure supplement 1). Interestingly, the σ values (σ1 = 2.5 Å and σ2 = 1.3 Å in the absence and presence of 10 mM maltose, respectively) were substantially smaller than the σ values when Cu2+-TETAC was used as the acceptor (σ1 = 6.2 Å and σ2 = 6.5 Å). This finding likely reflects that Cu2+ bound to a di-histidine motif is more rigid and closely associated with the protein backbone than Cu2+-TETAC attached to a cysteine residue, as seen in the rotameric clouds of the Cu2+-di-histidine (Figure 6—figure supplement 3) and predicted distance distributions of all possible rotamers (Figure 6—figure supplement 2C). Moreover, the value of σ in the absence of maltose was larger than in the presence of 10 mM maltose, consistent with previous findings from NMR, small-angle X-ray scattering (SAXS), and EPR spectroscopy (Tang et al., 2007; Selmke et al., 2018). The greater heterogeneity in distances in the absence vs. presence of maltose likely reflects increased heterogeneity in the degree to which the MBP clamshell is open in the apo state (Tang et al., 2007). These results highlight the power of using time-resolved FRET to measure distance distributions.
+
+To determine whether time-resolved FRET with Acd could be used to quantify the distribution among multiple conformational states, we analyzed the fluorescence lifetime data at 200 μM and 370 μM maltose. For these fits, we assumed that the distance distributions were described by the sum of two Gaussians, one with $r¯_{1}$ and σ1 of the open clamshell state and one with $r¯_{2}$ and σ2 of the closed clamshell state (see Figure 8C). The only parameter in the distance distribution that was allowed to vary was the proportion of the open vs. closed clamshell states (A2). Figure 7A shows that these distributions provided excellent fits to the fluorescence lifetime data at subsaturating maltose concentrations. Based on the relative area under each Gaussian for the clamshell closed vs. open populations, the proportion of the maltose-bound (clamshell closed) conformation was 0.38 in 200 µM maltose and 0.60 in 370 µM maltose (Table 1). These proportions closely matched the predictions based on the apparent FRET efficiency at subsaturating maltose concentrations measured from steady-state quenching experiments (Figure 7B). The maltose apparent affinity from both steady-state and lifetime FRET experiments was ~400 μM, similar to the 280 μM maltose affinity determined previously for MBP-295Anap-C with the W340A mutation but without the Y307F mutation (Gordon et al., 2018) and to the ~1 mM KD reported for MBP (Martineau et al., 1990).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig8-v1.jpg)
+
+**Figure 8.:** (A) Plot of fluorescence lifetimes in the time domain for a donor fluorophore with two exponential components with time constants ($\tau_{D_{1}}$ and $\tau_{D_{2}}$) and relative amplitude ($\sigma_{1}$). (B) Plot of the FRET efficiency (E) as a function of distance ($r$) showing the characteristic distance for the donor-acceptor pair($R_{0}$). (C) Plot of a distribution of donor-acceptor distances $P(r)$ with two Gaussian components with means ($r¯_{1}$ and $r¯_{2}$), standard deviations ($\sigma_{1}$ and $\sigma_{2}$), and relative amplitude of the second component ($A_{2}$). The fraction of donor only ($f_{D}$) was modeled as a narrow Gaussian with a mean distance of 150 Å and a standard deviation of 0.1 Å, too far to exhibit any detectable FRET. (D) Plot of the imaginary ($N_{\omega}$) and real ($D_{\omega}$) components of the measured, corrected, and background fluorescence response as a function of the modulation frequency ($\omega$) where $f_{B}$ is the fraction of the fluorescence intensity due to background. (E) Plot of the phase delay $(\phi_{\omega})$ and modulation ratio $(m_{\omega})$ of the measured and corrected fluorescence response as a function of the modulation frequency ($\omega$) where $t_{0}$ is the time shift of the instrument response function.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Emission spectra in response to excitation at 370 nm normalized to the fluorescence intensity measured at 465 nm (left axis) and absorption spectra (right axis) are shown for donors and acceptors, respectively, in KBT. Each emission spectrum represents the mean of 5–6 experiments. The color scheme is as labeled in the figure.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/70236/elife-70236-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Simulated FRET depicted in the time and frequency domains for a donor with a τ = 15 ns lifetime in the absence of acceptor and a τ = 3 s lifetime in the presence of acceptor. (A) Simulated emission of a donor in the absence (blue) and presence (red) of acceptor in response to pulsed excitation (black). (B) Simulated emission of a donor in the absence (blue, D) and presence (red, DA) of acceptor in response to 50 MHz modulated excitation (black) shown in the time domain. The phase delay is given by φ, and the modulation ratio is given by m. (C) Simulated emission of a donor in the absence (blue) and presence (red) of acceptor in response to modulated excitation from 10 to 200 MHz shown in the frequency domain. The phase delay is given by φ, and the modulation ratio is given by m. The points indicate φ and m in response to 50 MHz modulated excitation.
 
 For fluorescence lifetime imaging microscopy (FLIM) experiments, the fluorescence lifetime data are sometimes displayed in a representation that highlights the different lifetime signatures in a model-independent way. These ‘phasor plots’ are polar plots of the raw phase delay and modulation ratio data, or correspondingly Cartesian plots of the imaginary (N) vs. the real (D) components of the fluorescence response, for each pixel at a given modulation frequency (Figure 7D; Digman et al., 2008). No assumption is made about the number of decay rates present, the specific models for the decay (e.g., exponential, nonexponential), or the shape of the distance distribution. The pixels that have the same lifetime signature present as a cluster of points in the plot. The clusters that fall on the ‘universal circle’ conform to a single-exponential fluorescence decay, and those inside the circle are multiexponential or nonexponential.
 
@@ -122,13 +651,93 @@ The use of FRET to study distance distributions was first reported by Steinberg 
 
 We chose MBP as a model system because it has a well-characterized structure with well-understood conformational energetics. In addition to the >100 static MBP structures in the Protein Data Bank of clamshell open (apo) and closed (holo) states, the conformational dynamics of MBP—and related solute-binding proteins—have also been extensively studied. Previous DEER and double quantum coherence (DQC) EPR studies using small nitroxide spin labels have revealed distinct distance populations for apo and holo MBP with similar widths to those we observed here by time-resolved tmFRET (Selmke et al., 2018). Interestingly, previous NMR and DEER experiments have identified sparsely populated structural states of apo MBP with varying degrees of clamshell closure (Tang et al., 2007; Selmke et al., 2018; Kaczmarski et al., 2020). The existence of several conformations of apo MBP in equilibrium is likely responsible for the larger heterogeneity we observed for apo MBP compared to the maltose-bound state.
 
-The approach presented here has some limitations that should be addressed in future work. Some of the parameters in the model are correlated, such as r¯ and σ. The modeling would benefit from Bayesian statistical analysis to provide correlations and confidence intervals on the parameters and quantitative comparisons of different models, as has recently been done for DEER (Sweger et al., 2020). It is important to use narrower distributions to better resolve the backbone movements and the relative proportion of two conformational states. Even though we have used small probes and short linkers compared to most FRET studies, the heterogeneity in distances associated with each conformational state is likely still dominated by the rotameric states of the probes, particularly for Cu2+-TETAC attached to a cysteine residue. The use of di-histidine metal-binding sites largely mitigates this problem, but bifunctional metal chelators might also be useful (Beausang et al., 2012). As demonstrated with MBP-295Acd, the lifetime of Acd may be affected by nearby residues or the local environment, a situation that can easily be identified by nonexponential lifetimes in the donor-only sample. This problem may be remedied by modeling the donor-only lifetimes with multiple exponentials (Lakowicz et al., 1984; Lakowicz et al., 1987a), mutating the offending residues, or alternative placement of the donor fluorophore. Also, because of its small size, Acd is a short wavelength fluorophore and is not very bright compared to larger fluorophores (Lavis and Raines, 2008; Speight et al., 2013). This decreases the sensitivity of the experiments and precludes fluorescence measurements from single molecules. In the future, brighter fluorophores and smaller, more rigid acceptors would improve the sensitivity and spatial resolution and make time-resolved tmFRET an even more faithful reporter of backbone distances and distributions. Even with these current limitations, however, the use of time-resolved tmFRET with Acd to resolve conformational distributions promises to provide many new insights into protein dynamics.
+The approach presented here has some limitations that should be addressed in future work. Some of the parameters in the model are correlated, such as $r¯$ and σ. The modeling would benefit from Bayesian statistical analysis to provide correlations and confidence intervals on the parameters and quantitative comparisons of different models, as has recently been done for DEER (Sweger et al., 2020). It is important to use narrower distributions to better resolve the backbone movements and the relative proportion of two conformational states. Even though we have used small probes and short linkers compared to most FRET studies, the heterogeneity in distances associated with each conformational state is likely still dominated by the rotameric states of the probes, particularly for Cu2+-TETAC attached to a cysteine residue. The use of di-histidine metal-binding sites largely mitigates this problem, but bifunctional metal chelators might also be useful (Beausang et al., 2012). As demonstrated with MBP-295Acd, the lifetime of Acd may be affected by nearby residues or the local environment, a situation that can easily be identified by nonexponential lifetimes in the donor-only sample. This problem may be remedied by modeling the donor-only lifetimes with multiple exponentials (Lakowicz et al., 1984; Lakowicz et al., 1987a), mutating the offending residues, or alternative placement of the donor fluorophore. Also, because of its small size, Acd is a short wavelength fluorophore and is not very bright compared to larger fluorophores (Lavis and Raines, 2008; Speight et al., 2013). This decreases the sensitivity of the experiments and precludes fluorescence measurements from single molecules. In the future, brighter fluorophores and smaller, more rigid acceptors would improve the sensitivity and spatial resolution and make time-resolved tmFRET an even more faithful reporter of backbone distances and distributions. Even with these current limitations, however, the use of time-resolved tmFRET with Acd to resolve conformational distributions promises to provide many new insights into protein dynamics.
 
 Applying our tmFRET approach with Acd to elucidate conformational equilibria in native environments will require overcoming significant challenges. We have previously shown that Acd can be incorporated into membrane proteins and soluble proteins in living mammalian cells (Jones et al., 2021). Endogenous fluorophores, such as NAD and NADH, contribute to a background problem when exciting Acd with 375 nm light, which can be partially overcome using 405 nm excitation. Because the lifetime of endogenous fluorophores is in the 2–3 ns range, we were able to use the much longer fluorescence lifetime of Acd to localize the Acd-incorporating proteins. In the case of tmFRET, in which the Acd lifetime would be reduced by the acceptor, it would be much more difficult to distinguish the Acd signal from autofluorescence. In addition, methods such as cell unroofing or permeabilizing cells would be required to gain solution access to intracellular donors for application of metal ion acceptors, and TETAC would likely be rendered unreactive in a reducing cellular environment. Until these problems can be overcome, tmFRET using Acd as a donor will likely be limited to in vitro applications. Even with these current limitations, however, the use of time-resolved tmFRET with Acd to resolve conformational distributions promises to provide many new insights into protein energetics and dynamics.
 
 ## Materials and methods
 
-## Constructs, cell culture, and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T/17</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-11268;RRID:CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NESAcdRS82.pUC57</td>
+      <td>BioBasic</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAcBac1.tR4-MbPyl</td>
+      <td>Plasmid # 50832; http://n2t.net/addgene:50832;</td>
+      <td>RRID:Addgene_50832</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pANAP</td>
+      <td>Addgene: DOI: 10.1021/ja4059553</td>
+      <td>Addgene: 48696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DN-eRF1 (peRF1-E55D.pcDNA5-FRT)</td>
+      <td>Jason Chin: DOI: 10.1021/ja5069728</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-MBP1-K295TAG-W340A.pcDNA3-k</td>
+      <td>Addgene</td>
+      <td>Plasmid # 126627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-MBP1-K295TAG-W340A-S233H-T237C.pcDNA3-k</td>
+      <td>Addgene</td>
+      <td>Plasmid # 127402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-MBP1-E322TAG-W340A.pcDNA3-k</td>
+      <td>Addgene</td>
+      <td>Plasmid # 127404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-MBP1-E322TAG-E309C-W340A.pcDNA3-k</td>
+      <td>Addgene</td>
+      <td>Plasmid # 127408</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs, cell culture, and transfection
 
 All target constructs were made in the pcDNA3.1 mammalian expression vector (Invitrogen, Carlsbad, CA), except as noted below. The MBP constructs with W340A mutation, pAnap, and DN-eRF1 were previously described (Schmied et al., 2014; Gordon et al., 2018). The amber stop codons (TAG) in MBP were introduced at positions 295 (MBP-295TAG) and 322 (MBP-322TAG). For each stop codon, three constructs were produced: no metal-binding site (i.e., wild-type), a di-histidine, and a cysteine. For MBP-295TAG, the di-histidines were introduced at positions 233 and 237 (MBP-295TAG-Y307F-HH), and the cysteine was introduced at position 237 (MBP-295TAG-C and MBP-295TAG-Y307F-C). MBP-295TAG-C and MBP-295TAG-Y307F-C also contained the 233H mutation. For MBP-322TAG, the di-histidines were introduced at positions 305 and 309 (MBP-322TAG-HH), and the cysteine at position 309 (MBP-322TAG-C). The aminoacyl tRNA synthetase for Acd with a nuclear export sequence, RS82, was synthesized by BioBasic and subcloned into pAcBac1.tR4-MbPyl (Addgene, Cambridge, MA) (pAcBac1.tR4-AcdRS82) for transient transfection (Jones et al., 2021).
 
@@ -136,7 +745,7 @@ HEK293T/17 cells were obtained from ATCC (Manassas, VA; #CRL-11268; RRID:CVCL_19
 
 HEK293T/17 cells were plated in six-well trays on glass coverslips. DMEM (Life Technologies, # 11995-065) supplemented with 10% fetal bovine serum and penicillin-streptomycin (50 U/mL) was used for HEK293T/17 culture. Cells were split twice a week and never exceeded 95% confluency. Cells were transfected at ≈25% confluency with a total of 1.6 µg of DNA and 10 µL of Lipofectamine 2000 (Invitrogen) per well. The 1.6 µg of DNA consisted of 0.9 µg of target gene, 0.3 µg of pANAP or pAcBac1.tR4-AcdRS82, and 0.4 µg of DN-eRF1. The DNA/Lipofectamine mix was prepared in 300 µL Opti-MEM (Invitrogen) per well. For transfection, cells were incubated in growth medium without antibiotics for 4–6 hr at 37°C with 5% CO2. After incubation, the medium was replaced with one including antibiotics and supplemented with either 20 µM L-Anap-ME (AsisChem, Waltham, MA) or 450 µM Acd. The L-Anap-ME was made as a 10 mM stock in ethanol and stored at –20°C. Acd was synthesized as previously described (Speight et al., 2013) and made as a 30 mM stock in water with drop-wise addition of 1 M NaOH to solubilize Acd and stored at 4°C. Trays were wrapped with aluminum foil to block light and incubated at 37°C until use. Cells were harvested approximately 48 hr after transfection unless otherwise specified. Cells were washed twice with PBS, and cell pellets from nine wells of six-well trays were stored at –20°C until use.
 
-## Protein purification, western blot analysis, and fluorescence size-exclusion chromatography
+### Protein purification, western blot analysis, and fluorescence size-exclusion chromatography
 
 For fluorometry experiments, between 1 and 4 frozen pellets were thawed and resuspended in 0.8 mL Potassium Buffer Tris (KBT) (in mM: KCl 130; Trizma Base 30; pH 7.4) supplemented with cOmplete mini EDTA-free protease inhibitor cocktail (Sigma-Aldrich, St. Louis, MO). The suspension was sonicated using a Sonifier 450 with MicroTip (Branson, Danbury, CT) with settings of power = 4 and duty cycle = 50% for a total of 10 pulses. Lysed cells were then spun in a benchtop refrigerated centrifuge at 13,000 rpm for 20–30 min at 4°C, and the cleared lysate was moved to a new tube.
 
@@ -146,64 +755,126 @@ For western blot analysis, we used 25 µL of lysis buffer per 10 mg cells. Lysis
 
 Gel filtration was performed on a Shimadzu Prominence HPLC (Kyoto, Japan) with a GE Superdex 200 Increase 5/150 GL column run at 0.3 mL/min with KBT as the running buffer. Tryptophan absorption was measured at 280 nm and Acd was excited at 385 nm with fluorescence recorded at 450 nm.
 
-## Fluorometry and spectrophotometry
+### Fluorometry and spectrophotometry
 
 Starna (Atascadero, CA) sub-micro-fluorometer cells (100 µL) were used for both fluorometry and spectrophotometry. Absorption measurements were made using a Beckman Coulter DU 800 spectrophotometer (Brea, CA). Fluorometry experiments were performed using a Jobin Yvon Horiba FluoroMax-3 spectrofluorometer (Edison, NJ). For emission spectra of Acd, we used excitation wavelengths of 370–385 nm, as indicated in the figure legends, and for Anap, we used excitation wavelengths of 350–370 nm, as indicated in the figure legends. We used 5 nm slits for excitation and emission, except for experiments to measure quantum yield in which we used 1 nm slits and photobleaching experiments, which used 14.1 nm excitation slits. For Acd time-course measurements, we excited samples at 385 nm and recorded the emission at 425 nm at alternating 10 and 30 s intervals using the anti-photobleaching mode of the instrument. For Anap time-course measurements, we excited samples at 350 nm and recorded the emission at 480 nm. Reagents (Cu2+, Cu2+-TETAC, EDTA, and TCEP) were added manually as 50–200× stocks during the period between measurements by pipetting up and down in the cuvette without removing it from the instrument. To minimize the loss of fluorescence signal due to the adhesion of protein to the interiors of the cuvette and pipette tip, both were passivated with 2% bovine serum albumin (Sigma-Aldrich) in KBT, followed by thorough rinsing with ultrapure water before use.
 
 Protein samples were diluted 1:50 to 1:100 in KBT to keep the fluorescence intensity within the linear range of the fluorometer. Cu2+ was prepared from CuSO4 as a 110 mM stocks in water, then diluted to make stocks of lower concentrations. TETAC (Toronto Research Chemicals, Toronto, Canada) was prepared as a 100 mM stock in DMSO and stored at –20°C until the day of use. To prepare Cu2+-TETAC, equal volumes of 100 mM TETAC stock and 110 mM CuSO4 stock were mixed together and allowed to incubate for 5 min at room temperature as the solution turned a darker shade of blue, indicating coordination of Cu2+ by the cyclen ring. This mixture was then diluted with water to concentrations of 1.1 mM Cu2+ and 1 mM TETAC. Incubation at high concentrations and the 10% excess of Cu2+ ensured that all of the TETAC was bound with Cu2+. This stock solution was then diluted 1:100 when added to the cuvette for fluorometer experiments, giving a final concentration of 10 µM Cu2+-TETAC. 0.5 M Bond-Breaker tris(2-carboxyethyl)phosphine (TCEP) stock solution (Thermo Fisher) was diluted 1:200 in the cuvette for a final concentration of 2.5 mM. EDTA (Sigma-Aldrich) was made as a 0.5 M stock in water, with the pH adjusted to pH 7 using HCl. This 0.5 M solution of EDTA in water was then diluted 1:50 in the cuvette for a final concentration of 10 mM.
 
-## Calculation of quantum yield
+### Calculation of quantum yield
 
-Quantum yields of Anap and Acd in KBT were determined relative to quinine in 0.5 M H2SO4 using a quantum yield of 0.546 measured with 366 nm excitation for the quinine standard (Brouwer, 2011) using the following equation (Lakowicz, 2006):(1)QM=QquinineslopeMslopequinineηM2ηquinine2
+Quantum yields of Anap and Acd in KBT were determined relative to quinine in 0.5 M H2SO4 using a quantum yield of 0.546 measured with 366 nm excitation for the quinine standard (Brouwer, 2011) using the following equation (Lakowicz, 2006):
+
+$$
+Q_{M}=Q_{quinine}\frac{slope_{M}}{slope_{quinine}}\frac{η_{M}^{2}}{η_{quinine}^{2}}
+$$
 
 where Q is the quantum yield, slope refers to the slope of the linear fits to the data, and ɳ is the refractive index for the Acd or Anap (M) and quinine samples. This method gives a quantum yield value for Acd of 0.8 and a quantum yield value for Anap of 0.32.
 
-## Measurement of FRET efficiency from steady-state fluorescence intensity
+### Measurement of FRET efficiency from steady-state fluorescence intensity
 
-For each time-course experiment in the fluorometer, the background signal in the absence of protein was first subtracted from the protein-containing signal. The fraction of fluorescence unquenched (F) was defined as follows:(2)F=FluoresencemetalFluorescencenometal
+For each time-course experiment in the fluorometer, the background signal in the absence of protein was first subtracted from the protein-containing signal. The fraction of fluorescence unquenched (F) was defined as follows:
 
-To determine the FRET efficiency, E, we corrected for nonspecific decreases in fluorescence (e.g., bleaching or loss of protein) with constructs without a cysteine or di-histidine motif as previously described (Gordon et al., 2018) using the following equations:(3)E=1−FCysFnoCysandE=1−FHHFnoHH
+$$
+F=\frac{Fluoresence_{metal}}{Fluorescence_{nometal}}
+$$
+
+To determine the FRET efficiency, E, we corrected for nonspecific decreases in fluorescence (e.g., bleaching or loss of protein) with constructs without a cysteine or di-histidine motif as previously described (Gordon et al., 2018) using the following equations:
+
+$$
+E=1−\frac{F_{Cys}}{F_{noCys}}andE=1−\frac{F_{HH}}{F_{noHH}}
+$$
 
 where Cys, no Cys, HH, and no HH refer to the presence or absence of a cysteine or di-histidine motif, respectively, in the construct. To calculate the mean and standard error of the mean for E, we used the mean and standard error of the mean for our F measurements (i.e., FHH, Fno HH, FCys, and Fno Cys) in Monte Carlo resampling (1 × 106 cycles; NIST Uncertainty Machine v1.3.4; Lafarge and Possolo, 2016).
 
-## Determination of R0 and the fraction of donor only (fD)
+### Determination of R0 and the fraction of donor only (fD)
 
-R0 values for FRET between Acd and either Cu2+-di-histidine or Cu2+-TETAC were calculated using the measured donor emission spectrum and quantum yield and the measured absorption spectrum for each type of bound metal using the following equation (Lakowicz, 2006):(4)R0=CJQη−4κ26
+R0 values for FRET between Acd and either Cu2+-di-histidine or Cu2+-TETAC were calculated using the measured donor emission spectrum and quantum yield and the measured absorption spectrum for each type of bound metal using the following equation (Lakowicz, 2006):
+
+$$
+R_{0}=C\sqrt[6]{JQη^{−4}κ^{2}}
+$$
 
 where C is a scaling factor, J is the normalized spectral overlap of the emission of the donor and absorption of the acceptor, Q is the quantum yield of Acd (see above), ɳ is the index of refraction (1.33 in our case), and κ2 is the orientation factor, assumed to be 2/3. This assumption is justified for at least three reasons. (1) The metal ion acceptor has multiple transition dipole moments. In the case of a mixed polarization donor-acceptor pair, in which one probe is freely rotating and one is immobile, 1/3 < κ2 < 4/3 (Haas et al., 1978). Thus, even if our donor were immobile, an assumption of κ2 = 2/3 gives a maximum error in R0 of about ±11%. (2) Our data reveal a distribution of donor-acceptor distances, introducing additional sources of randomized orientation and further reducing the potential error due to the κ2 = 2/3 assumption. (3) Using κ2 = 2/3 for our R0 calculations in this and other tmFRET studies gives the expected distances based on known structures. We based the determination of R0 on the emission spectrum of the free amino acid because of the more optimal signal-to-noise above 490 nm where the overlap with the acceptor absorption spectra occurs, and the indistinguishable shape of emission spectra of Acd-incorporating proteins and Acd in this region of overlap (Figure 8—figure supplement 1).
 
-## Measurement of frequency-domain fluorescence lifetime using FLIM
+### Measurement of frequency-domain fluorescence lifetime using FLIM
 
-The theory underlying our FRET measurements with fluorescence lifetimes is well described elsewhere (Lakowicz, 2006). Briefly, FRET decreases the fluorescence lifetime of a donor fluorophore by providing an additional path by which an excited state electron can lose its energy. When using a pulsed excitation source and measuring fluorescence in the time domain, the decrease in lifetime is readily apparent as a faster decay in fluorescence intensity after excitation (Figure 8—figure supplement 2A). When using a frequency (ω)-modulated excitation source, the lifetimes of donor in the absence and presence of acceptor are determined from the phase delays (φω) and modulation ratios (mω) at each frequency (Figure 8—figure supplement 2B). With our frequency-domain instrument, the frequency dependence of both φω and mω (Figure 8—figure supplement 2C) is required to resolve complex lifetimes. A similar analysis can be performed using a time-domain instrument (Lakowicz, 2006).
+The theory underlying our FRET measurements with fluorescence lifetimes is well described elsewhere (Lakowicz, 2006). Briefly, FRET decreases the fluorescence lifetime of a donor fluorophore by providing an additional path by which an excited state electron can lose its energy. When using a pulsed excitation source and measuring fluorescence in the time domain, the decrease in lifetime is readily apparent as a faster decay in fluorescence intensity after excitation (Figure 8—figure supplement 2A). When using a frequency (ω)-modulated excitation source, the lifetimes of donor in the absence and presence of acceptor are determined from the phase delays ($\phi_{\omega}$) and modulation ratios ($m_{\omega}$) at each frequency (Figure 8—figure supplement 2B). With our frequency-domain instrument, the frequency dependence of both $\phi_{\omega}$ and mω (Figure 8—figure supplement 2C) is required to resolve complex lifetimes. A similar analysis can be performed using a time-domain instrument (Lakowicz, 2006).
 
 Frequency-domain fluorescence lifetime data were collected using a Q2 laser scanner and A320 FastFLIM system (ISS, Inc, Champaign, IL) mounted on a Nikon TE2000U microscope (Melville, NY) and VistaVision software (ISS, Inc). Acd, Anap, or Atto 425 (the standard for calibration of the fluorescence lifetime) were excited using a 375 nm pulsed diode laser (ISS, Inc), driven by FastFLIM at the repetition rate of 10 MHz, with a 387 nm long-pass dichroic mirror, and emission was collected using a 451/106 nm band-pass emission filter and Hamamatsu model H7422P PMT detector. Affinity purified protein was used full strength in KBT buffer. For each experiment, 10–11 µL of fluorescent sample was pipetted onto an ethanol-cleaned #1.5 glass coverslip mounted directly above the 60 × 1.2 NA water-immersion objective. Other reagents (maltose, Cu2+-TETAC, Cu2+, TCEP, or EDTA) were pipetted directly into the sample drop and mixed at the final concentrations indicated in the text. For each condition, 256 × 256 confocal images were collected with a pinhole of 200 µm and a pixel dwell time of 1 ms. The pixels were averaged together for analysis, except as described for the phasor plot.
 
-The experimental phase delays (φω) and the modulation ratios (mω) of the fluorescence signal in response to an oscillatory stimulus with frequency ω were obtained using VistaVision software from the sine and cosine Fourier transform of the phase histogram H(p), subject to the instrument response function (IRF) calibrated with 2 µM Atto 425 in water with a lifetime of 3.6 ns (Lakowicz, 2006; Colyer et al., 2008; Digman et al., 2008).
+The experimental phase delays ($\phi_{\omega}$) and the modulation ratios ($m_{\omega}$) of the fluorescence signal in response to an oscillatory stimulus with frequency $\omega$ were obtained using VistaVision software from the sine and cosine Fourier transform of the phase histogram H(p), subject to the instrument response function (IRF) calibrated with 2 µM Atto 425 in water with a lifetime of 3.6 ns (Lakowicz, 2006; Colyer et al., 2008; Digman et al., 2008).
 
-## Analysis of frequency-domain fluorescence lifetime data
+### Analysis of frequency-domain fluorescence lifetime data
 
-The theoretical estimates for φω and mω were calculated from a model for fluorescence lifetime and FRET that assumes a single- or double-exponential donor fluorescence lifetime with one or two Gaussian-distributed distances between the donor and acceptor as previously described with some modification (Cheung et al., 1991; Lakowicz et al., 1991; Lakowicz et al., 1994b; Lakowicz, 2006). The phase delays (φω) and modulation ratios (mω) were calculated as a function of the modulation frequency (ω) using the following equations:(5)φω=arctanNωDω+ωt0(6)mω=Nω2+Dω2
+The theoretical estimates for $\phi_{\omega}$ and $m_{\omega}$ were calculated from a model for fluorescence lifetime and FRET that assumes a single- or double-exponential donor fluorescence lifetime with one or two Gaussian-distributed distances between the donor and acceptor as previously described with some modification (Cheung et al., 1991; Lakowicz et al., 1991; Lakowicz et al., 1994b; Lakowicz, 2006). The phase delays ($\phi_{\omega}$) and modulation ratios ($m_{\omega}$) were calculated as a function of the modulation frequency ($\omega$) using the following equations:
 
-where Nω corresponds to the imaginary component and Dω corresponds to the real component of fluorescence and t0 is the time shift of the IRF (Figure 8E). The imaginary and real components for the fluorescence response with a contaminating background fluorescence were calculated using the following equations:(7)Nω=1-fB1J∫0∞∑i=12PrαDiωτDAi21+ω2τDAi2dr+fBmωBsin⁡φωB(8)Dω=1-fB1J∫0∞∑i=12PrαDiτDAi1+ω2τDAi2dr+fBmωBcos⁡φωB
+$$
+\phi_{\omega}=arctan\frac{N_{\omega}}{D_{\omega}}+\omegat_{0}
+$$
 
-where fB is the fraction of the fluorescence intensity due to background (Figure 8D), and φωB and mωB are the phase delay and modulation ratio of the background fluorescence measured from samples of KBT without or with maltose. αi is the amplitude of the ith component of the donor-only fluorescence decay, and α1+α2=1 (Figure 8A). The normalization factor J is given by(9)J=∫0∞∑i=12PrαDiτDAidr
 
-The decay time constant of the ith component of the donor lifetime in the presence of acceptor (τDAi) is given by(10)1τDAi=1τDi+1τDiR0r6
 
-where τDi is the decay time constant of the donor in the absence of acceptor (Figure 8A), r is the distance between the donor and acceptor, and R0 is the characteristic distance for the donor-acceptor pair (Figure 8B).
+$$
+m_{\omega}=\sqrt{N_{\omega}^{2}+D_{\omega}^{2}}
+$$
 
-The apparent FRET efficiency based on the donor quenching of the acceptor was calculated using the following equation:(11)E=1-J/∑i=12αDiτDAi
+where $N_{\omega}$ corresponds to the imaginary component and $D_{\omega}$ corresponds to the real component of fluorescence and $t_{0}$ is the time shift of the IRF (Figure 8E). The imaginary and real components for the fluorescence response with a contaminating background fluorescence were calculated using the following equations:
 
-The distribution of donor-acceptor distances Pr was assumed to be the sum of up to two Gaussians:(12)P(r)=(1−fD)∑i=12Aiσi2πexp[−12(r−r¯iσi)2]+fDσi2πexp[−12(r−150 A˚0.1 A˚)2]
+$$
+N_{\omega}=1-f_{B}\frac{1}{J}\int_{0}^{∞}\sum_{i=1}^{2}\frac{Pr\alpha_{D_{i}}\omega\tau_{DA_{i}}^{2}}{1+\omega^{2}\tau_{DA_{i}}^{2}}dr+f_{B}m_{\omegaB}sin⁡\phi_{\omegaB}
+$$
 
-where Ai , r¯i , and σi are the amplitude, mean, and standard deviation of the ith Gaussian, respectively, and A1+A2=1 (Figure 8C). The fraction of donor only (fD) was modeled as a narrow Gaussian with a mean distance of 150 Å and a standard deviation of 0.1 Å, too far to exhibit any detectable FRET.
 
-The phase delay and modulation ratios displayed were corrected for the background fluorescence and time shift in the IRF using the following equations:(13)φωcorr.=arctan(mωsin(φω−ωt0)−fBmωBsin(φωB)mωcos(φω−ωt0)−fBmωBcos(φωB))(14)α1
 
-This model for fluorescence lifetimes and FRET was implemented in Igor (Wavemetrics, Lake Oswego, OR; code available at https://github.com/zagotta/FDlifetime_program; Zagotta, 2021). The model was simultaneously fit to the phase delay, modulation ratio, and steady-state quenching data with χ2 minimization.There are 12 parameters in the parameter vector (fD, τD1, α1, τD2, R0, r¯1, σ1, A2, r¯2, σ2, t0, fB) (Figure 8, blue variables). Since our donor fluorophore was determined to have a single exponential decay lifetime in our MBP constructs, the donor‐only data were fit with three free parameters (τD1, t0, fB) where fD=1 and α1=1. These τD1 and α1 values were then used for the remainder of the experiments with that sample.
+$$
+D_{\omega}=1-f_{B}\frac{1}{J}\int_{0}^{∞}\sum_{i=1}^{2}\frac{Pr\alpha_{D_{i}}\tau_{DA_{i}}}{1+\omega^{2}\tau_{DA_{i}}^{2}}dr+f_{B}m_{\omegaB}cos⁡\phi_{\omegaB}
+$$
 
-For experiments using Cu2+-TETAC as an acceptor, the donor-acceptor data at zero maltose concentration were assumed to arise from donor-acceptor distances with a single Gaussian distribution, plus an 8% contribution from donor only. This estimate of donor-only sites that were not labeled by Cu2+-TETAC was made using a cysteine-reactive quencher with a long R0 value (38 Å; Tide Quencher 1 maleimide; AAT Biosciences, Sunnyvale, CA; Figure 3—figure supplement 2). When labeling with 100 µM Cu2+, labeling efficiency was assumed to be 100% (Gordon et al., 2018). For these experiments, four parameters were allowed to vary (r¯1,σ1,t0,fB), where fD and R0 were previously determined from previous spectroscopy experiments, and A2=0. Similarly, the donor-acceptor data at saturating maltose concentration were assumed to arise from donor-acceptor distances with a single Gaussian distribution, plus a small amount of donor only, and four parameters were allowed to vary (r¯2,σ2,t0,fB) where A2=1. The donor-acceptor data at subsaturating maltose concentration were fit with three parameters (A2,t0,fB) with all other parameters the same as the preceding donor-acceptor experiments. Finally, the data for reversal of acceptor binding using TCEP or EDTA were fit with three free parameters (fD,t0,fB) with all other parameters the same as the preceding experiments.
+where $f_{B}$ is the fraction of the fluorescence intensity due to background (Figure 8D), and $\phi_{\omegaB}$ and $m_{\omegaB}$ are the phase delay and modulation ratio of the background fluorescence measured from samples of KBT without or with maltose. $\alpha_{i}$ is the amplitude of the ith component of the donor-only fluorescence decay, and $\alpha_{1}+\alpha_{2}=1$ (Figure 8A). The normalization factor $J$ is given by
 
-## In silico distance modeling
+$$
+J=\int_{0}^{∞}\sum_{i=1}^{2}Pr\alpha_{D_{i}}\tau_{DA_{i}}dr
+$$
+
+The decay time constant of the ith component of the donor lifetime in the presence of acceptor ($\tau_{DAi}$) is given by
+
+$$
+\frac{1}{\tau_{DA_{i}}}=\frac{1}{\tau_{D_{i}}}+\frac{1}{\tau_{D_{i}}}\frac{R_{0}}{r}^{6}
+$$
+
+where $\tau_{D_{i}}$ is the decay time constant of the donor in the absence of acceptor (Figure 8A), $r$ is the distance between the donor and acceptor, and $R_{0}$ is the characteristic distance for the donor-acceptor pair (Figure 8B).
+
+The apparent FRET efficiency based on the donor quenching of the acceptor was calculated using the following equation:
+
+$$
+E=1-J/\sum_{i=1}^{2}\alpha_{D_{i}}\tau_{DA_{i}}
+$$
+
+The distribution of donor-acceptor distances $Pr$ was assumed to be the sum of up to two Gaussians:
+
+$$
+P(r)=(1−f_{D})\sumi=12\frac{A_{i}}{\sigma_{i}\sqrt{2\pi}}exp[−\frac{1}{2}(\frac{r−r¯_{i}}{\sigma_{i}})^{2}]+\frac{f_{D}}{\sigma_{i}\sqrt{2\pi}}exp[−\frac{1}{2}(\frac{r−150 A˚}{0.1 A˚})^{2}]
+$$
+
+where $A_{i}$ , $r¯_{i}$ , and $\sigma_{i}$ are the amplitude, mean, and standard deviation of the ith Gaussian, respectively, and $A_{1}+A_{2}=1$ (Figure 8C). The fraction of donor only ($f_{D}$) was modeled as a narrow Gaussian with a mean distance of 150 Å and a standard deviation of 0.1 Å, too far to exhibit any detectable FRET.
+
+The phase delay and modulation ratios displayed were corrected for the background fluorescence and time shift in the IRF using the following equations:
+
+$$
+\phi_{\omega}^{corr.}=arctan(\frac{m_{\omega}sin(\phi_{\omega}−\omegat_{0})−f_{B}m_{\omegaB}sin(\phi_{\omegaB})}{m_{\omega}cos(\phi_{\omega}−\omegat_{0})−f_{B}m_{\omegaB}cos(\phi_{\omegaB})})
+$$
+
+
+
+$$
+\alpha_{1}
+$$
+
+This model for fluorescence lifetimes and FRET was implemented in Igor (Wavemetrics, Lake Oswego, OR; code available at https://github.com/zagotta/FDlifetime_program; Zagotta, 2021). The model was simultaneously fit to the phase delay, modulation ratio, and steady-state quenching data with χ2 minimization.There are 12 parameters in the parameter vector (fD, τD1, α1, τD2, R0, $r¯_{1}$, σ1, A2, $r¯_{2}$, σ2, t0, fB) (Figure 8, blue variables). Since our donor fluorophore was determined to have a single exponential decay lifetime in our MBP constructs, the donor‐only data were fit with three free parameters (τD1, t0, fB) where fD=1 and α1=1. These τD1 and α1 values were then used for the remainder of the experiments with that sample.
+
+For experiments using Cu2+-TETAC as an acceptor, the donor-acceptor data at zero maltose concentration were assumed to arise from donor-acceptor distances with a single Gaussian distribution, plus an 8% contribution from donor only. This estimate of donor-only sites that were not labeled by Cu2+-TETAC was made using a cysteine-reactive quencher with a long R0 value (38 Å; Tide Quencher 1 maleimide; AAT Biosciences, Sunnyvale, CA; Figure 3—figure supplement 2). When labeling with 100 µM Cu2+, labeling efficiency was assumed to be 100% (Gordon et al., 2018). For these experiments, four parameters were allowed to vary ($r¯_{1},\sigma_{1},t_{0},f_{B}$), where $f_{D}$ and $R_{0}$ were previously determined from previous spectroscopy experiments, and $A_{2}=0$. Similarly, the donor-acceptor data at saturating maltose concentration were assumed to arise from donor-acceptor distances with a single Gaussian distribution, plus a small amount of donor only, and four parameters were allowed to vary ($r¯_{2},\sigma_{2},t_{0},f_{B}$) where $A_{2}=1$. The donor-acceptor data at subsaturating maltose concentration were fit with three parameters ($A_{2},t_{0},f_{B}$) with all other parameters the same as the preceding donor-acceptor experiments. Finally, the data for reversal of acceptor binding using TCEP or EDTA were fit with three free parameters ($f_{D},t_{0},f_{B}$) with all other parameters the same as the preceding experiments.
+
+### In silico distance modeling
 
 Rotamer distributions for donor and acceptor sidechains were modeled from the published crystal structures of apo (PDB 1omp) and maltose-bound (PDB 1anf) MBP using the program mtsslWizard (Hagelueken et al., 2012). Starting models for Acd, Cu2+-TETAC, and Cu2+-histidine were built in Avogadro (version 1.2.0, http://avogadro.cc) and geometry optimized with MMFF94 (Acd) or UFF (Cu2+-histidine and Cu2+-TETAC) force fields. For the Cu2+-histidine structure, copper was bound to Nε2 of the histidine imidazole at a fixed bond length of 2.03 Å to approximate square planar coordination geometry. Starting structures were imported as custom amino acids into the mtsslWizard PyMOL plugin. For Acd and Cu2+-TETAC, 200 rotamers were generated at each site using the ‘tight’ van der Waals (vdW) constraint setting (3.4 Å cutoff, no clashes allowed). For Cu2+-di-histidine, 200 Cu2+-histidine rotamers were first generated at each residue of the di-histidine motif (233 and 237) using ‘loose’ vdW constraints (2.5 Å cutoff, 5 clashes allowed). Next, rotamers lacking a companion in the i ± 4 site with a Cu2+-Cu2+ distance of 1 Å or less were excluded. Distance distributions were obtained by normalization of the donor-acceptor distance histograms with all rotamers included, with distances calculated between the Cu2+ ion of Cu2+-TETAC/Cu2+-di-histidine and the carbonyl carbon of the acridone ring of Acd.

@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04j1n1c04 Laboratory for Systems Neurophysiology, RIKEN Center for Brain Science Wako Japan
-2. https://ror.org/02qg15b79 Synapse Biology Unit, Okinawa Institute of Science and Technology Okinawa Japan
+1. Laboratory for Systems Neurophysiology, RIKEN Center for Brain Science Wako Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))
+2. Synapse Biology Unit, Okinawa Institute of Science and Technology Okinawa Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
 
 † Corresponding author
 
@@ -32,43 +32,133 @@ In light of the above, we wished to investigate with fine temporal and spatial r
 
 ## Results
 
-## Optogenetic identification of DA and GABA neurons in the VTA
+### Optogenetic identification of DA and GABA neurons in the VTA
 
 In the present study, we sought to investigate the encoding properties of DA and GABA neurons of the VTA while mice engage in memory-dependent reward-seeking behavior. To identify neurons, we expressed the light-gated cation channel, channelrhodopsin-2 (ChR2), in DA and GABA neurons by injecting an adeno-associated virus containing FLEX-ChR2 into DAT-Cre and VGAT-Cre transgenic mice, respectively (Bäckman et al., 2006; Tsai et al., 2009; Vong et al., 2011; Figure 1A). Optogenetic identification and parallel electrophysiological recordings were performed using a custom-made diode-probe system diode-fiber assemblies attached to high-density silicon probes (Stark et al., 2012, Figure 1A, Figure 1—figure supplement 1). For each neuron, we assessed the response to light pulse trains delivered before and after behavioral sessions (Figure 1, Figure 1—figure supplements 1–2). We identified 104 neurons recorded from five DAT-Cre mice (hereafter referred to as DA neurons) and 74 neurons recorded from four VGAT-Cre mice (GABA neurons) with significant excitatory responses to light pulses (Figure 1B). Light-induced spikes from these neurons were almost identical to spontaneous spikes (waveform correlation coefficient >0.9, Figure 1—figure supplement 1). In addition, the electrophysiological profiles of the identified neuronal populations resembled those of previous studies (i.e. DA neurons fired action potentials with both wider waveforms and slower spontaneous firing rates than GABA neurons; Figure 1—figure supplement 1), confirming the selective expression of ChR2 in DA and GABA neurons (Cohen et al., 2012; Tan et al., 2012).
 
-## Behavioral performance in a memory-dependent decision-making task
+![Figure 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left: We confined ChR2 expression to DA and GABA neurons by injecting locally into the VTA the adeno-associated virus FLEX-ChR2 into transgenic mice expressing the Cre recombinase under the control of the promoter of the DA transporter (DAT::Cre) or the vesicular GABA transporter (VGAT::Cre). Approximately 10 days after the virus injection, the silicon probe was inserted into the brain in the same AP and ML coordinates. On a daily basis, the probe was inserted deeper into the brain by a few microns. Therefore, recording sessions were performed on different DV coordinates. Right: High-pass filtered voltage trace recorded during a light-stimulation session. Thick blue lines indicate light pulses (450 nm, 12ms). Two light-induced spikes are shown below. (B) Light response patterns of representative DA (red), GABA (blue), and unidentified (gray) neurons. (Top) Raster plots of spikes discharged during light stimulation (colored dots) and in the inter-stimulus baseline period (baseline, black dots). (Bottom) PSTHs extracted from the light-induced spikes. The black dashed line indicates the upper confidence limit of the baseline activity. If it is exceeded by the light-induced PSTH, then the unit is identified as light-responsive (See Figure 1—figure supplement 2 for an explanation of this term). The right inset shows, superimposed, the mean waveforms of spontaneous (black) and light-induced (colored) spikes recorded by a single probe shank.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Serial reconstructions of recording sites along the rostro-caudal axis of coronal midbrain slices for DAT-Cre (red) and VGAT-Cre (blue) animals. fr: fasciculus retroflexus, IF: interfascicular nucleus, IP: interpeduncular nucleus, ml: medial lemniscus, PBP: parabrachial pigmented nucleus, PN: paranigral nucleus, RN: red nucleus, rs: rubrospinal tract, SNc: substantia nigra pars compacta, SNr: substantia nigra pars reticulata. (B) Photograph of the silicon probe with attached optical fibers. Optical fibers (core diameter 50 μm) were glued to the shanks to ensure a firm, accurate, and durable insertion into the deep midbrain. Optical fibers on shanks 2 and 5 were coupled to blue laser diodes (450 nm), maintaining a certain distance from the tip of the shank to ensure that blue light could irradiate the whole span of the recording electrode array. (C) Schematic drawing of the mouse brain in the sagittal plane, illustrating the insertion of the silicon probe into the VTA. (D) Immunofluorescence microscopy image of a coronal brain slice of a DAT-Cre mouse injected with the optogenetic virus in the left VTA. DAT: dopamine transporter (red); YFP: yellow fluorescent protein (green); SN: substantia nigra. NOTE: the white dashed line highlights the trace by the probe shank on the tissue. (E) Mean waveforms of light-induced (colored) and spontaneous (black) spikes discharged by identified DA (red) and GABA (blue) neurons in a single light stimulation session. (F) Pearson’s correlation coefficient between the waveforms of spontaneous and light-induced spikes for the identified DA (red) and GABA (blue) neurons. The light-induced spike waveforms were almost identical to the spontaneous waveforms for all the identified neurons. This was reflected by the high mean correlation coefficient (mean ± standard error of the mean; DA: r=0.98 ± 0.09, p<0.05; GABA: r=0.98 ± 0.03, p<0.05). (G) Trough-to-peak spike duration vs. average spontaneous firing rate raster plot for the identified DA (red) and GABA (blue) neurons. The side plots show the distributions of the X- and Y-axis values in the main plot (pmf: probability mass function). In agreement with earlier reports (2) DA neurons fired spikes with lower rates (DA: 4.50±5.00 spikes/sec, GABA: 17.34±15.72 spikes/sec; unpaired t-test comparing the spontaneous rates: t(176) = 7.80, p<0.001) and wider waveforms (DA: 0.46±0.08ms, GABA: 0.34±0.10ms; unpaired t-test comparing trough-to-peak values: t(176) = 5.96, p<0.001) than the GABA neurons. (H) Latency of the first spike discharged during light stimulation for the identified DA (red) and GABA (blue) neurons. (I) Number of light-induced spikes per light pulse for DA (red) and GABA (blue) neurons.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** To identify the light-responsive units, we compared the light-induced average responses to average spontaneous firing activity To this end, we used the following jittering method. (A) Schematic representation of a spike train during a light stimulation session. Vertical black bars represent spiking events. The blue shaded areas indicate the light-stimulation windows. The firing activity between light stimulations is spontaneous. (B) To identify light-responsive units we raised the hypothesis that the relative firing rate during light stimulation, $\lambda^_{light}t$ , did not differ from the spontaneous firing rate, $\lambda^_{spont}t$ . To do so, we employed a jittering method in which a randomly jittered window (12ms) fitted in the spontaneous activity period preceding the light-pulse (that is, the jittered window onset never preceded the offset of the preceding light-pulse and the offset never succeeded the onset of the succeeding light pulse). We produced as many jittered windows as the light-pulses and we repeated this process 500 times in total. (C) For every neuron we produced peri-stimulus-time-histograms (PSTHs, 12ms, 1ms bins) of the relative firing rate, by superimposing the spike trains of every light stimulation pulse. If $n^{k}(t)$ is the number of spikes of a single neuron in post-light onset time $t$ of the $k_{th}$ stimulation pulse, then, the average firing rate, $\lambda^t=\frac{1}{K}*\frac{1}{T}*\sum_{k=1}^{K}n^{k}(t-t_{0})$ , where $K$ is the number of stimulation pulses, $T$ is the bin size (1ms) and $t_{0}$ the light-pulse onset time, represents the relative firing rate at time $t$ . In the end we produced one $\lambda^_{light}t$ and 500 $\lambda^_{spont}t$ firing rates. (D) From every,histogram we extracted the maximum and minimum values and stored them in two separate vectors. Vectors were sorted, and from them, the 95% confidence limits were calculated. These were the 2.5% largest value from the maximum PSTH vector and the 2.5% smallest value from the minimum PSTH vector (that is 13rd from the 500 rows). Units with $\lambda^_{light}t$ PSTH exceeding at any time point (between 1ms and 11ms) the high confidence limit, were identified as light-responsive. (E) If the $\lambda^_{light}t$ PSTH fell below the low confidence limit at any time point, then the unit was characterized as light-inhibited due to synaptic transmission (we did not find any light-inhibited units). Otherwise, those units whose PSTH did not violate any of the confidence limits were characterized as unidentified.
+
+### Behavioral performance in a memory-dependent decision-making task
 
 Mice were trained to perform sensory-guided and memory-dependent decisions in the “Memory Task” (Figure 2A, Figure 2—figure supplement 1). This task required animals to associate a visual cue presented at the beginning of the trial with a rewarded side arm of a figure-eight T-maze. A short memory delay was introduced between cue presentation and action selection. Following a correct response, they received water (5 μl) from a waterspout located at the end of each arm. Depending on the individual features of cognitive demand, the maze apparatus was divided into separate sections (i.e. ‘start’, ‘cue’, ‘delay’, ‘side arms’, and ‘reward’). To ensure that the mice made choices guided by the visual cues and had minimal influence from other behavioral parameters on decisions, we eliminated imbalances between the left and right trials in key task parameters (e.g. reward amount, visual environment, effort, and motor skill requirements).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the T-maze apparatus configuration in the memory task. Depending on the individual features of cognitive demand, the maze was divided into sections. Every trial commenced when the animal left the starting point, running along the central arm. In the visual cue section, a visual cue signaled the rewarded location. Between the visual cue section and the turning point at the end of the main arm, a brief memory delay was introduced. After reward consumption, the animals returned of their free will to the starting point to commence a new trial. (B) Correct performance rates in sessions with electrophysiological recordings. Gray lines illustrate performance rates for left and right trials in every session. Colored lines illustrate performance averages across sessions (mean ± standard deviation) for DAT-Cre (red) and VGAT-Cre (blue) animals. (C) In some training sessions animals received two blocks of trials with different memory loads. Gray lines illustrate correct performance rates for each block in every session and black lines show the average performance rates (mean ± standard deviation) across sessions, for all animals. (D) Mean firing rates (thick lines) ± 1 standard error of the mean (shaded areas) of the population activities of DA (red) and GABA (blue) neurons. The averaged population firing activity of GABA neurons increased in the cue and delay sections. However, the average population activity of DA neurons did not deviate from the beginning until the end of the trials.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Photograph of the T-maze apparatus with maze sections labeled. The mice were trained on different variations of an associative T-maze task with visual instruction cues. The behavioural apparatus was a Figure-eight T-maze (O’Hara & CO., LTD, Tokyo, Japan), 50 cm tall, with a main arm (120 cm) and side arms (30 cm each). Infrared light-beam sensors placed at key position points on the maze defined the beginning and end of the successive maze sections. The apparatus was equipped with sliding doors, which prevented the animals from developing unwanted behavior (e.g. moving backwards). Sensor activations were on-line monitored, and significant behavioural events (e.g. visual-cue presentation, reward delivery, door opening/closing) were dictated by an in-house behavioural software written in MATLAB (Mathworks, MA, USA), through a multi-signal processor interface system (RX6; Tucker-Davis Technologies, FL, USA). The moment-by-moment position of the animal on the maze apparatus was monitored continuously by a video tracking system, composed of a red light-emitting diode mounted on the mouse head stage and a video camera (39 frames/sec) hung by the room ceiling. Video data were stored for offline analysis. (B) Detailed schematic representation of the T-maze apparatus. Infrared light-beam sensors (s1–s6) were mounted securely at key positions on the maze to define the beginning and end of the maze sections (start: s1–s2; visual cue: s2–s3; delay: s3–s4; side-arms: s4–s5/s6; reward: s5/s6). The first activation of s5 or s6 sensors (i.e. 1st lick) triggered the water-delivery pump. Five sliding doors restrained the animals from unwanted moves. Every trial began with the animal activating s1. At this point, the doors d1, d3, and d5 remained closed, isolating the animal in the starting location for approximately 2 s. This served two purposes: (1) to drain the waterspouts and (2) to prevent the animal from making decisions on the next trial guided by the previous trial outcome. After door d1 opened, the animal could run freely along the main arm. Activating s2 and s3 resulted in the visual cue onset and offset, respectively. Activating s5 triggered the left water-delivery pump, and door d3 opened while d1 closed. Activating s6 triggered the right water-delivery pump, and door d5 opened while d1 closed. In the memory task, doors d2 and d4 were always open. In the no-cue-no-choice task, doors d2 and d4 were initially closed. However, when the mouse activated s4, one door opened pseudo-randomly. (C) To assess the influence of behavioral left-right biasing in decision making we applied the chi-square (χ2) test of independence. The null hypothesis was that correct performance was independent of behavioral choices. The black line illustrates the chi-squared distribution for 1 degree of freedom, along with the χ2 values from the independence test for every session (DAT-Cre: red dots and VGAT-Cre: blue dots). The test was passed in every session (the level of significance was set to 5%, corresponding to χ2=3.84 for 1 degree of freedom). (D) Representative example of trial speeds (cm/sec) in a single recording session of the memory task. (E) Shown are running speeds (mean ± standard error of the mean) categorized by maze sections and averaged across sessions for left (green) and right (magenta) trials for individual VGAT-Cre and DAT-Cre mice. Although differences were small, they occasionally reached significance. Importantly, we did not detect speed differences between left and right trials in the delay section (unpaired t-test between left and right speed per region, * p<0.05).
 
 At the time of neurophysiological data collection, all mice performed memory task trials with high accuracy. Averaging across sessions, the total correct rate was 86.8 ± 7.9% (mean ± standard deviation [SD]; left: 88.1 ± 10.0%, right: 87.2 ± 11.6%; paired t-test evaluating left vs right performance rate: t(59) = 0.46, p=0.65, 60 sessions in nine mice, Figure 2B). In addition, performance was independent of individual preference for the left-or-right arm visits in any of the recorded sessions (test of independence, χ2(1)<3.84, p>0.05, Ho: correct rate is independent of arm choice, Figure 2—figure supplement 1).
 
 We also assessed the contribution of memory-related processing to task performance. To achieve this, we delivered blocks of trials with different memory loads in separate training sessions. Across all sessions, the correct performance rate dropped with higher memory load demands (mean ± SD; low load: 83.1 ± 8.3%, high load: 73.9 ± 9.5%; paired t-test on correct performance rate: t(12) = 4.33, p<0.001, 13 sessions in seven mice, Figure 2C). This result is consistent with earlier reports (Floresco and Phillips, 2001; Floresco and Magyar, 2006) and highlights the important role of memory in supporting decisions in the present task.
 
-## The population activity of DA neurons is not elevated during the memory task trials
+### The population activity of DA neurons is not elevated during the memory task trials
 
 DA neurons are not known to be active in the delay period of short-term memory tasks (Schultz et al., 1993; Phillips et al., 2004; Matsumoto and Takada, 2013; Choi et al., 2020), even though DA is a key neurotransmitter in the regulation of prefrontal cortical mnemonic functions (Goldman-Rakic et al., 1989; Smiley et al., 1992; Smiley and Goldman-Rakic, 1993; Goldman-Rakic, 1997; Tzschentke, 2001). This well-established notion has been established from either analysis of putative neuronal activities or inferred from voltammetry and fiber photometry recordings (Ljungberg et al., 1991; Schultz, 2002; Phillips et al., 2004; Matsumoto and Takada, 2013; Choi et al., 2020). Corroborating these earlier reports, the average discharge rate of identified DA neurons in the present study remained essentially constant (Figure 2D). Simple linear regression analysis, with the neuronal firing rate as the response variable and the animal’s position on the maze as the single predictor variable, showed that from the beginning until the end of the trial (a 1.5-m distance), the population activity of DA neurons deviated slightly by 0.17±0.62 Hz (mean ± standard error of the mean [SEM], did not differ from a distribution with a mean equal to zero; one-sample t-test on the position coefficient, t(103) = 0.275, p=0.78). Notably, in the memory-delay period, the discharge rate of DA neurons declined by - 0.72±2.3 Hz (mean ± SEM, one-sample t-test on the position coefficient, t(103) = –0.31, p=0.75). On the other hand, the GABA neurons elevated their discharge rate by 4.29 ± 1.10 Hz in the delay period (mean ± SEM, one-sample t-test on the position coefficient, t(73) = 4.09, p<0.001), confirming evidence from an earlier report (Cohen et al., 2012).
 
-## DA and GABA neurons in the VTA show trajectory-specific encoding preferences in short-term memory-dependent behavior
+### DA and GABA neurons in the VTA show trajectory-specific encoding preferences in short-term memory-dependent behavior
 
 Making interpretations of the encoding properties of single neurons from population rate averages is highly challenging in tasks with many behavioral choices, especially for functionally heterogeneous populations such as the DA neurons. To overcome this limitation, we analyzed the firing activity of single neurons, by taking into consideration two important behavioral parameters. First, the animals visited either the left or right rewarded side arms in every trial. Therefore, we grouped and averaged trial spike trains of single neurons by the corresponding lap trajectories (left or right; see also Methods and Figure 3—figure supplement 1). Also, in the present task, significant behavioral events (including visual cue presentation, memory delay, and reward delivery) were inherently bound to fixed positions in the maze (Figure 2A, Figure 3—figure supplement 1). Thus, we arranged spiking events according to the position they occurred, to get an estimate of the behavioral correlates of neuronal activity. To this end, individual trial trajectories were linearized and represented as a one-dimensional vector consisting of 100 linearly spaced points (trial start: point 0; trial reward: point 100).
 
 Examples of discharge patterns arranged by position and trajectory are shown in Figure 3A, Figure 3—figure supplement 2. These representative neurons elevate transiently their firing activity at specific positions and do so consistently across trials. When we organized the normalized mean firing rates for the preferred and non-preferred lap trajectories of each neuron (i.e. trajectories with higher and lower firing rates, respectively) by the position of elevated transient activity (left and middle heatmaps in Figure 3B) we discovered that the position preference was uniform among neurons, producing a population sequential activity from the start until the end of trials. This result is in disagreement with several classical conditioning (Schultz et al., 1993; Cohen et al., 2012; Tan et al., 2012; van Zessen et al., 2012), instrumental learning (Parker et al., 2016) and delayed-response task studies (Matsumoto and Takada, 2013; Choi et al., 2020), which report homogeneous DA neuronal responses at key-task events, and in striking agreement with reports from the cortex (Fujisawa et al., 2008; Harvey et al., 2012).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-v1.jpg)
+
+**Figure 3.:** (A) Firing patterns of representative DA and GABA neurons. In each example: (Top) Raster plots of spiking events, for every correct trial, and their corresponding firing rate heatmaps as a function of position during right (purple) and left (green) trials. (Bottom) Average firing rates for correct left and right trials. Note that the trial and average firing rates (spikes/sec) are plotted as a function of position but normalized by the amount of time the mouse occupied each position on every trial. Thick lines above the average firing rates represent segments with significantly different firing rates between right and left correct trials (See also Figure 3—figure supplement 1; permutation test; p<0.05). It is evident in these examples that midbrain neurons differentiate their discharge rates between left and right trajectories in certain positions. (B) Heatmaps of neuronal population responses organized by preferred lap trajectory (i.e. the trajectory with the stronger response; first column) and non-preferred lap trajectory (i.e. the trajectory with the weaker response; second column) for DA neurons (Top; n=104 units, 35 sessions in five mice) and GABA neurons (Bottom; n=74 units, 25 sessions in four mice). Each row contains preferred and non-preferred trajectory responses of the same neuron. In every row, both responses are normalized by the maximum rate of the preferred trajectory. The third column shows maze segments with significantly different discharge rates between preferred and non-preferred trajectories.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** We applied a permutation method reported elsewhere (Fujisawa et al., 2008) to identify neurons with trajectory-specific encoding properties. The motivation behind this analysis is that if the lap trajectory contributes to the firing rate difference observed at certain positions, then shuffling the trajectory labels assigned to the spike trains of individual trials would cause a marked reduction in the rate difference. This process is described below. (A) From the spike trains of the correct left and right trials (top; raster plot), we estimated the trial relative firing rates ($\lambda^_{Left}x$ and $\lambda^_{Right}x$ ; middle). Importantly, we considered the variability in occupation time between positions and trials. Hence, to calculate the firing rates, we divided the number of spikes occurring in every position and trial (trial PSTHs) by the occupation time in the same position and for the same trial (trial occupation time). We subsequently produced the original average rate difference ($D_{0}x$ , bottom) between the left- and right-correct trials. (B) We shuffled the trajectory labels assigned to the trial spike trains along with the respective occupation times and re-calculated the difference $D_{i}(x)$ of the permuted labels. (C) We produced 500 surrogates with permuted differences $D_{i}x$ . In the end, we created a 500-by-100 matrix (shuffles-by-position) of $D_{i}(x)$ surrogates. (D, E) From these surrogates, we extracted the 95% confidence interval (lower and upper confidence limits) for the null hypothesis test. To do so, first, we calculated the confidence interval of each position point $x$. The difference values $D_{i}x$ in every position (column) were sorted and every row in the new matrix was treated as a potential confidence limit with different p-value. We term it as ‘pointwise acceptance band’. If the original data $D_{0}x$ breaks the pointwise band, it corresponds to rejecting the null hypothesis at position $x$. However, if this procedure is repeated for every position $x$ (i.e. 100 position points) in the maze, it raises the issue of multiple comparisons. (F, G) To address this, we constructed the ‘global band’, which can control errors of any false rejection across multiple indices. We produced another 500 permutations and calculated the percentage of the surrogate data $D_{j}x$ that broke the pointwise band candidates at any position points. If the percentage was more than 5%, we replaced the pointwise band with lower p-value. We repeated this process until a pointwise band candidate was exceeded by less than 5% of the new surrogates. When this happened, the pointwise band was used as the ‘global band’ (i.e. 95% confidence interval) for the hypothesis test. (H) The null hypothesis was rejected if the original difference $D_{0}x$ , exceeded at any position $x$ the global band. Then, the spatial extent of significance was defined by the number of position points exceeding the 95% confidence interval.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** All plots included in this figure were obtained from data recorded in the memory task. (A and B) Representative discharge activity of DA (a) and GABA (b) neurons. In each example: (Top) Raster plots of the spikes, arranged by trial, and their corresponding firing rate heatmaps as a function of position in right (purple) and left (green) trials. (Bottom) Average firing rates for correct left and right trials. Note that the firing rate (spikes/s) is plotted as a function of position but has been normalized by the amount of time the mouse occupied each position in every trial. The thick lines above the firing rates represent segments with significantly different firing rates between the correct right and left trials. (C and D) Heatmaps of the standardized average firing rates for the preferred (first column) and non-preferred (second column) trajectories of DA (c) and GABA (d) neurons. These plots show the number of standard deviations by which the average firing rate varied above or below the mean rate of correct trials as a function of the position on the maze. The row arrangement was the same as that in Figure 3B. The third column of the significant firing-rate difference is the same as that in the third column in Figure 3B. (E) Heatmaps of the normalized average firing rate for preferred (first column) and non-preferred (second column) trajectories and the significant difference between them (third column) for the unidentified VTA neurons.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Average firing rates of representative DA and GABA neurons extracted from real firing rate data (solid lines) and encoding model predictions (dashed lines) for left (green) and right (magenta) trials. (B) (Left and Middle columns) Normalized firing rate heatmaps for preferred and non-preferred trajectories for DA and GABA neurons recorded in the memory task (the same as the ones in Figure 3B). (Right column) Significant contributions in the firing rate difference (yellow lines) by individual behavioral variables in the memory delay extracted with the permutation analysis of the encoding model predictions. (C) (Top) Number of neurons significantly modulated by one of the independent variables. (Bottom) Number of neurons co-modulated by trajectory (trajectory-specific) and one of the individual variables. (Note: In B and C, the trajectory-specific neurons correspond to the significant neurons extracted using the permutation analysis of the original firing rates; third column in Figure 3B). (D) The distribution of the trial coefficient for DA and GABA neurons along with the mean ± standard deviation values. (E) Histogram of the number of independent behavioral variables co-modulating neurons in the delay region.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Firing activities of representative neurons (DA#2393 and GABA#3943) arranged by time and aligned at the offset of memory delay. The colored bands illustrate the range of the timestamps of key task events across the trials of a single recording session. Timestamps differed significantly across trials, sessions, behavioral protocols, and animals. As a result, we could not define a fixed epoch for every maze section with adequate duration to analyze the neuronal responses. (B) Firing activities of representative neurons (including DA#2393 and GABA#3943) arranged by position (same plots as in Figure 3A). Notably, the position of key task events was the same across trials, sessions, protocols, and animals, enabling the comparison of neuronal responses between animals and behavioral protocols. (C) Firing activities of the same neurons as in B, arranged by time and aligned by the timestamps of sensor 3 crossings. Consistent with earlier reports (Howe et al., 2013; Kim et al., 2020), while animals navigated the maze, receiving a continuous sensory input and making accurate estimations of the timing of key task events, we did not observe profound discharge rate elevations in response to the visual cue onset that would resemble strong RPE signaling.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Schematic representations of coronal slices containing the ventral tegmental area at different Bregma coordinates. Representations were adopted and modified from Paxinos and Franklin, 2008. (B) The approximate stereotaxic coordinates of the optogenetically identified DA and GABA neurons were extracted from the estimated location of the recording channels. From those, a scatterplot was produced. Solid triangles correspond to DA (red; DAT-significant) and GABA (blue; Vgat-significant) neurons with trajectory-specific differences in memory delay. Open circles illustrate neurons without significant firing rate differences between left and right trials (DAT non-significant or Vgat non-significant). (C) Among neuronal populations, significant anatomical segregation was observed only in GABA neurons. Accordingly, across the mediolateral axis, memory-specific GABA neurons localized more lateral regions of the VTA circuit (unpaired t-test, t(72) = –2.38, p=0.019).
+
 However, in our opinion, the most important finding was that the representative neurons in Figure 3A and Figure 3—figure supplement 2, differentiated their responses between left and right trials at certain maze positions in a robust manner. To assess the trajectory-specific effects on neuronal firing activity, we used the permutation method (Figure 3—figure supplement 1). First, we calculated the original difference between the average firing rates in the left and right trials. We then randomly reassigned the trajectory labels (left or right) on the trial spike trains and produced the permuted average firing rate differences. If neurons were modulated by trajectory, the original and permuted firing rate differences were significantly different. Since spiking events were arranged by position, the permutation method could also detect positions with significant differences.
 
 The right heatmap in Figure 3B summarizes the results from the permutation analysis applied to the populations of 104 DA and 74 GABA neurons. In both neuronal populations, there was abundant trajectory-specific activity, concentrated mostly in the delay and side-arm sections. Almost 20% of DA neurons differentiated their response between left or right trajectories in those maze sections (21% in the delay section and 22% in the side-arm section, 104 neurons, permutation test, p<0.05, Figure 3B and Table 1). In GABA neurons, the percentage was even higher, with almost 50% of these cells eliciting trajectory-specific activities (47% in the delay section and 47% in the side-arm section, 74 neurons, permutation test, p<0.05, Figure 3B and Table 1).
+
+**Table 1.**
+ Number of neurons with trajectory-specific firing activities in the memory task grouped by maze section.Data are presented for all recorded neurons and individually for optogenetically identified DA and GABA neurons; DA, dopamine; GABA, gamma-aminobutyric acid.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Memory task: Significant difference in firing rate between left and right trials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>start</td>
+      <td>cue</td>
+      <td>delay</td>
+      <td>side arms</td>
+      <td>reward</td>
+    </tr>
+    <tr>
+      <td>All (n=1191)</td>
+      <td>n=49 (4%)</td>
+      <td>n=78 (7%)</td>
+      <td>n=377 (32%)</td>
+      <td>n=505 (42%)</td>
+      <td>n=461 (39%)</td>
+    </tr>
+    <tr>
+      <td>DA (n=104)</td>
+      <td>n=4 (4%)</td>
+      <td>n=3 (3%)</td>
+      <td>n=22 (21%)</td>
+      <td>n=23 (22%)</td>
+      <td>n=24 (23%)</td>
+    </tr>
+    <tr>
+      <td>GABA (n=74)</td>
+      <td>n=4 (5%)</td>
+      <td>n=11 (15%)</td>
+      <td>n=35 (47%)</td>
+      <td>n=35 (47%)</td>
+      <td>n=34 (46%)</td>
+    </tr>
+  </tbody>
+</table>
 
 There have been reports of DA neurons discriminating between visual cues in a T-maze task (Engelhard et al., 2019) or choice selections in delayed-match-to-sample tasks (Matsumoto and Takada, 2013; Choi et al., 2020). However, in the present study, we did not detect different responses between left or right visual cues. Furthermore, neuronal preference for trajectories was not restricted to the turning point, which could indicate neuronal engagement in motor preparation for choice execution. Instead, it was spread in a wider area, covering a distance from the memory delay onset until the end of the side arms.
 
 A plausible explanation for the trajectory-specific responses in the side arms is that neurons were under the control of the sensory, motor, or goal-directed behavioral processes triggered by the opposite trajectories (Howe et al., 2013; Hamid et al., 2016; Mohebi et al., 2019). However, in the memory-delay section, trajectories were identical for the left and right trials, which could be suggestive of the engagement of these neurons in short-term memory processing. Neuronal preferences to arm visits in memory delay are not uncommon in T-maze tasks. They have been reported in prefrontal and post-parietal cortical neurons and have been attributed to short-term memory-dependent decisions (Fujisawa et al., 2008; Harvey et al., 2012). So, is the trajectory-specific activity in our task reminiscent of internally generated, memory representations, or can be attributed to the well-known DA-linked neuronal computations (Schultz, 2002; Cohen et al., 2012; Berke, 2018; Engelhard et al., 2019)? To test this hypothesis, we proceeded to a series of statistical analyses and control behavioral tasks.
 
-## Multiple regression analysis confirms the trajectory-specific effect on DA and GABA neurons
+### Multiple regression analysis confirms the trajectory-specific effect on DA and GABA neurons
 
 We discovered that significant proportions of VTA neurons fired preferentially for left or right trajectories at specific locations on the maze when we arranged discharge patterns by arm visit and position. This result does not attest that trajectory and position alone contribute to the neuronal firing rate. Midbrain DA neurons are known to respond to a wide variety of behavioral parameters (i.e. choice accuracy, reward history, running speed, and distance to rewards Engelhard et al., 2019) which could also exert a significant effect on neuronal firing activity. However, their effect could be dampened due to the specific firing range arrangement.
 
 Since these behavioral variables are difficult to control with behavioral tasks, we assessed their contribution to neuronal responses using multiple regression analysis (Figure 3—figure supplement 3 and Appendix 1). We found that all the examined variables (lap trajectory, trial number, speed, trial accuracy, and reward history) contributed to the firing activities of neuronal subpopulations; however, only the lap trajectory predictor could explain better the trajectory-specific activities observed in the ~20% of DA and ~50% of GABA neurons that were identified with the permutation analysis.
 
-## Memory-dependent but not motivated behavior is related to trajectory-specific activity in VTA neurons
+### Memory-dependent but not motivated behavior is related to trajectory-specific activity in VTA neurons
 
 Next, we investigated the contribution of short-term memory in decision-making on the trajectory-specific activity of VTA neurons. Memory-dependent decision-making depends on three major computational components. These are (i) sensory input gating, (ii) maintaining and manipulating memory contents and (iii) generating and executing appropriate motor plans (Cohen et al., 2002; Dreher and Burnod, 2002; Montague et al., 2004; Ott and Nieder, 2019).
 
@@ -84,11 +174,31 @@ However, the significant reduction in trajectory-specific encoding preference in
 
 To dissociate the short-term memory component of neuronal activity from the modulatory effects of running speed, incentive motivation, and motor-related signaling, we trained mice in a second control task. The cue-no-choice task preserved the same running speed parameters (Figure 5—figure supplement 2), motor skill requirements, and physical effort demands (i.e. visual cues, maze shape, arm length, and reward amount were the same) as the memory task, but it prevented animals from making decisions. Accordingly, the animals were presented with the same visual cue as in the memory task, which indicated the side arm that was rewarded and enabled them to allocate incentive motivational drive to the left-or-right trials; however, they were always forced to visit the rewarded arm by blocked access to the unrewarded arm (Figure 5A). In the same recording session, the mice performed a separate block of memory task trials. Similar to the first control task, in the delay section of the cue-no-choice task we observed a significant reduction in the spatial extent of the firing rate difference (DA: memory task 5.4±3.6 points, cue-no-choice task: 0.4±1.1, paired t-test, p=0.011, four animals; GABA: memory task 10.7±6.3 points, cue-no-choice task 3.5±4.2 points, paired t-test, p<0.001, 1 animal, Figure 5B–E). In the side arms, however, the trajectory-specific effect remained strong and was not significantly different from the effect observed in the memory task (DA: memory task 8.1±10.3 points, cue-no-choice task 5.0±4.6 points, paired t-test, p=0.146, four animals; GABA: memory task 8.7±5.9 points, cue-no-choice 5.2±6.2 points, paired t-test, p=0.086, 1 animal, Figure 5B–E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic representation of the T-maze apparatus illustrating the sequence of events in the cue-no-choice task. (B) Firing patterns of representative DA (left) and GABA (right) neurons during the memory and cue-no-choice tasks. Both examples illustrate that the trajectory-specific firing rate difference in the delay section of the memory task becomes notably weaker in the cue-no-choice task when animals do not make memory-dependent decisions, although running speed activities and incentive motivational drives of physical effort are the same between tasks. (C and D) The firing patterns of DA neurons (C; n=31 units, 28 sessions in four mice) and GABA neurons (D; n=28 units, 11 sessions in one mouse) in the memory task and the cue-no-choice task recorded during the same sessions. (Left and Middle columns) Normalized average neuronal firing rates associated with the preferred (left) and non-preferred (middle) trajectories. The right column represents the maze segments with significantly different discharge rates. The row order of the neurons is the same for the memory task and the control task heatmaps. The data shown here for the memory task are a subset of those shown in Figure 3B. (E) Average number of position points (mean ± standard deviation) with significant rate differences, arranged by maze section and behavioral task for (left) DA and (right) GABA neurons (** p<0.01, *** p<0.001, paired t-test comparing numbers of significant position points between tasks. Also, the numbers in parentheses describe the number of neurons with a significant rate difference).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Striatal DA levels ramp up when mice navigate a maze or corridor in search for reward (Howe et al., 2013; Hamid et al., 2016; Kim et al., 2020). Initially, this evidence challenged theoretical neuroscientists, since the time-course of this ramping activity (lasting a few seconds) did not conform either with the prediction-error (RPE, phasic activity) or reward rate (tonic activity) theories (Niv, 2013). However, further research on this topic, provided empirical evidence to support a theory that DA conveys a signal for incentive motivational drive in the form of state-action value (value of work; Hamid et al., 2016) or its derivative RPE; (Kim et al., 2020). Accordingly, the motivational value of future rewards is exponentially discounted with time or distance the theory was developed on an adaptive decision-making framework; Hence the value of reward is defined by reward probability; Figure 4 in Hamid et al., 2016. Different reward values correspond to different functions of discounted state-action values. If a cue predicts a reward with a higher value then the state-action value jumps to the discounted value function of that reward. In our study, key parameters that could potentially influence incentive motivational drives were equal between left and right trials (reward amount, lap trajectory distance, etc.) and moreover, behavioral performance did not indicate choice biasing (Figure 2—figure supplement 1C). However, we cannot rule out the possibility that left and right rewards were valued differently, producing distinct value functions. If this is true, then the trajectory-specific activities elicited by subgroups of DA and GABA neurons could reflect differences in the state-action values for left and right trials, and not memory-dependent decisions. (A) The plot illustrates the hypothesis of different discounted value functions (i.e. the state-action value is a function of position and trajectory). In the memory task and the cue-no-choice task the assignment of the state-action value function takes place when the visual cue signals which reward is available. (B) However, in the no-cue-no-choice task, the assignment occurs only when the mice are given access to one of the side arms.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative example of running speeds (cm/s) for memory (black) and cue-no-choice (orange) trials in a single session. Speed differences were evident at the T-intersection (between delay and arms). (B) Average running speed values (mean ± standard error of the mean) grouped by maze section and behavioral task for each of the DAT-Cre and VGAT-Cre animals performing the memory and cue-no-choice tasks. Importantly, no differences were detected in the delay and side-arm sections between memory (black) and cue-no-choice (brown) task trials (* p<0.05, unpaired t-test on speed).
+
 Together, these results suggest that trajectory-specific responses in the delay period of the memory task could reflect short-term memory representations linked to decision-making behavior and cannot be explained by running speed, motor, and motivation-related signaling differences.
 
-## Neuronal activities in delay and reward are unrelated
+### Neuronal activities in delay and reward are unrelated
 
 DA neurons are known to be excited by rewards (Schultz et al., 1993; Schultz et al., 1997; Cohen et al., 2012; Matsumoto and Takada, 2013; Engelhard et al., 2019; Choi et al., 2020). In agreement with this notion, we discovered that 27 DA neurons (28% of 104 neurons, Figure 6B column 4; we defined the first second of reward consumption as the reward section.) responded to reward with significant excitation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig6-v1.jpg)
+
+**Figure 6.:** (A) Firing patterns of representative DA and GABA neurons in the memory task for the period from trial start until the first lick of the waterspout, which triggered the water pump (top, space domain) and during reward consumption (bottom, time domain). In each example: (Top) Raster plots of the spike trains and their corresponding firing rate heatmaps arranged by trajectory and position (maze) or time (reward) in right (purple) and left (green) trials. (Bottom) Average firing rates for correct left and right trials. The thick lines above the firing rates represent segments with significantly different firing rates between the correct right and left trials. (B) Firing patterns of DA (top) and GABA (bottom) neurons in the time domain during reward consumption (from the first lick until 1 s later) for preferred (first column) and non-preferred (second column) rewards (DA: n=104 units, 35 sessions in five mice; GABA: n=74 units, 25 sessions in four mice). Each row represents the normalized average firing rates (preferred and non-preferred) of a single neuron on a color scale. Neurons were ordered according to the time point of the maximum rate in the preferred arm. The third column shows neurons with significant discrepancies between the left and right reward-related responses (paired t-test for mean firing rates, P<0.05). The fourth column shows post-delivery reward segments (100ms each) with significant excitation or inhibition compared with the 100 ms pre-reward segment (paired t-test comparing firing rates, p<0.05). (C) Correlations between the mean firing rate difference in the reward section and the difference in every other maze section for DA (left) and GABA (right) neurons (Pearson’s R values with p-values, *** p<0.001). Only the trajectory-specific firing rate difference in the side arms correlated with the reward-specific rate difference.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89743/elife-89743-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heatmaps of neuronal population responses organized by preferred lap trajectory (first column) and non-preferred lap trajectory (second column) for DA neurons (Top; n=104 units, 35 sessions in five mice) and GABA neurons (Bottom; n=74 units, 25 sessions in four mice). The third column shows maze segments with significantly different discharge rates between preferred and non-preferred trajectories for the start, visual cue, delay, and side arms sections. The fourth column shows neurons with significant discrepancies between the left and right reward-related responses (paired t-test for mean firing rates, p<0.05). Note: The first three heatmaps are adopted from Figure 3B (position-aligned firing rate) and the fourth heatmap is adopted from Figure 6B (third column; time-aligned firing rate). In all the heatmaps, each row contains responses of the same neuron. (B) Scatterplots created by dividing neuronal responses from the third and fourth column heatmaps in the plot (A) into six (6) categories, grouped by the trajectory-specific preference in the delay section (x-axis) and during reward consumption (y-axis). ‘L’ corresponds to a significant preference for the left trajectory, ‘R’ for the right trajectory, and ‘NS’ for non-significant firing rate difference (i.e. no preference). Note: to yield a better visual sense of how many observations belong to every category, we randomly jittered each point along the x- and y-axis. In both neuronal populations, more neurons showed opposite significant lap-trajectory preferences (red clusters) between delay and reward sections, as opposed to a small minority of neurons that elicited the same lap-trajectory preference (green clusters). Notably, in agreement with earlier studies reporting preferential contralateral responses of DA neurons (Kim et al., 2015; Parker et al., 2016; Engelhard et al., 2019; Lee et al., 2019; Moss et al., 2020), the majority of memory-specific neurons exhibited a preference for the contralateral lap trajectory to that of the recording site (left hemisphere). Accordingly, seventeen (17) of the twenty-three (23) DA neurons with trajectory-specific activities in the delay period of the memory task, elicited a significant preference for the right trials and only five (5) of them for the left trials. In GABA neurons, the percentage was similar with twenty-six (26) neurons showing a clear preference to the right trials and nine (9) to the left trials.
 
 DA neurons are known to discriminate between rewards with different magnitudes and predictabilities (Tobler et al., 2005; Morris et al., 2006; Matsumoto and Takada, 2013). In the present study, the animals were offered equivalent options in terms of reward magnitude, uncertainty, and effort. Thus, we predicted the presence of a small number of reward-discriminating neurons. However, we found that 23% of DA neurons and 46% of GABA neurons differed significantly in their responses to left-or-right rewards (Figure 6A and B column 3, and Table 1; paired t-test comparing mean firing rates, p<0.05). This unexpected result raised the hypothesis that the trajectory-specific activities we observed in the memory delay were related to selective preference for rewards.
 
@@ -98,7 +208,7 @@ Next, we sought to determine whether neurons with trajectory-specific activities
 
 The results from both analyses converge to the conclusion that trajectory-specific firing activities in memory delay do not reflect reward preference during consumption.
 
-## Anatomical organization of trajectory-specific neurons
+### Anatomical organization of trajectory-specific neurons
 
 Several recent studies have reported that neighboring DA neurons are more likely to share similar encoding properties, thus, forming functional but also anatomical clusters within the VTA (Lammel et al., 2008; Matsumoto and Takada, 2013; Engelhard et al., 2019). Therefore, we sought to determine whether neurons with memory-specific encoding properties were anatomically segregated from the rest of the population. Estimating the location of recorded neurons (i.e. Bregma vs Mediolateral coordinates) from the anatomical reconstruction of the recording channels revealed that the trajectory-specific GABA neurons were located more laterally compared to the rest of the group (Bregma: t(72) = 1.165, p=0.248, Mediolateral: t(72) = –2.38, p=0.019, Figure 3—figure supplement 5). However, in the DA neurons there was no clear anatomical segregation (Bregma: t(102) = 0.045, p=0.964, Mediolateral: t(102) = 0.177, p=0.860, Figure 3—figure supplement 5). The lack of evidence of functional and anatomical segregation in the DA neurons could be accounted for by the fact that we targeted mostly the lateral parts of the VTA. Also, since the position of the recording channels along the dorsoventral axis was changing daily, we did not include in our analysis the dorsoventral coordinates of the recorded neurons.
 
@@ -106,7 +216,7 @@ Several recent studies have reported that neighboring DA neurons are more likely
 
 In the present study, we performed extracellular recordings from optogenetically identified DA and GABA neurons in the VTA while mice performed reward-seeking tasks on a T-maze apparatus. Mice were trained to choose between two spatially separate goals under the instruction of visual cues presented at the beginning of the trial. A short memory delay was introduced between cue presentation and choice selection. We discovered that subpopulations of DA and GABA neurons showed differential responses between the left and right trials, starting from the onset of the memory delay in the main arm, where the trajectories were indistinguishable. Trajectory-specific preference was not correlated with reward history, running speed, the incentive motivational drive of physical effort, or reward-related encoding differences, and diminished significantly when the memory-dependent decision component was eliminated in control behavioral tasks. This evidence indicates that populations of DA and GABA neurons in the VTA encode internally generated signals that support short-term memory in decision-making.
 
-## Activities of midbrain DA neurons in short-term memory
+### Activities of midbrain DA neurons in short-term memory
 
 The ‘gating theory’ unifies the signaling activities of DA neurons in reward prediction and short-term memory (Cohen et al., 2002; Dreher and Burnod, 2002; Montague et al., 2004; Ott and Nieder, 2019). With regards to mnemonic processing, the well-established notion that DA somatic spiking activity is low in short-term memory stemmed either from recordings of putative DA neurons of the A8, A9, and A10 pathways (Schultz et al., 1993; Schultz, 2002; Matsumoto and Takada, 2013) or inferred from neuronal population activities (Phillips et al., 2004; Choi et al., 2020). Consistent with the latter reports we did not observe a profound variation in the population activity of DA neurons during the memory task.
 
@@ -120,17 +230,17 @@ The present study also corroborates important findings from a recent report, whi
 
 Overall, our results agree with the notion that DA neurons encode a variety of behavioral parameters in complex environments. In addition, we confirmed that in memory-dependent behaviors, DA neuronal populations did not elicit sustained increases in their discharge rate. However, in the present task, DA neurons individually encoded internal representations by differentiating their responses to lap trajectories in memory delay.
 
-## Role of motivated behavior in trajectory-specific encoding properties of VTA neurons
+### Role of motivated behavior in trajectory-specific encoding properties of VTA neurons
 
 Midbrain DA activity is known to be involved in motivated behavior while rodents navigate mazes to receive rewards beyond immediate reach (Hamid et al., 2016; Berke, 2018; Mohebi et al., 2019). When mice approach rewards, striatal DA concentrations increase, scaling flexibly with reward size and proximity, which is proposed to reflect a neural correlate of a sustained motivational drive (Howe et al., 2013). To evaluate the role of motivated behavior in the trajectory-specific preference of midbrain neurons, we compared firing activities between a memory task and a control task without memory-dependent decisions (cue-no-choice task). Although in the cue-no-choice task, the behavioral parameters that determined the incentive motivational drives were the same as in the memory task (visual cues, maze shape, and reward amount), neuronal responses did not differ between the left and right trials. This result strongly indicates that incentive motivational drives (at least for physical effort) do not contribute to trajectory-specific activities of midbrain neurons during the delay period of the memory task.
 
-## Memory-specific activities of the VTA neurons are not attributed to reward prediction error signaling
+### Memory-specific activities of the VTA neurons are not attributed to reward prediction error signaling
 
 We also assessed the role of reward-related processing in the trajectory-specific activity of the midbrain neurons. When animals estimate the spatial proximity of distant rewards, DA neurons calculate RPE signals from state-value functions (Hamid et al., 2016; Berke, 2018; Engelhard et al., 2019; Mohebi et al., 2019; Kim et al., 2020). In the present study, the animals received ongoing visual input, facilitating the continuous estimation of reward proximity. Thus, DA neurons can potentially estimate RPE signals from successive state values assigned to each position on the maze track (Figure 5—figure supplement 1). Therefore, the difference in firing activity between the left and right trials could be the result of differences in the state-value functions assigned to these trajectories (Hamid et al., 2016; Berke, 2018). However, significant evidence contradicts this hypothesis.
 
 First, the behavioral parameters that determine the state-value functions for the left and right trajectories were set to be identical in the cue-no-choice task and memory task, by preserving the same maze configurations and delivering equal amounts of reward. In addition, behavior in both tasks was cue-driven; therefore, animals could make predictions about the reward location and orchestrate behavior accordingly. However, we observed a prominent reduction in the firing rate difference between the left and right trials in the cue-no-choice task (Figure 5). Second, a significant subset of DA neurons (approximately 20%) responded differently to the left and right rewards in the memory task, although the same amount of reward was delivered. This unexpected finding raised the hypothesis that the encoding preference for reward could be reflected in the values of the preceding states in the maze and, therefore, could account for the trajectory-specific effect in memory delay. However, the differences in the firing activity elicited by the consumption of left or right rewards were unrelated to the firing rate difference in the delay section (Figure 6C). Also, we discovered a very small minority of neurons with the same trajectory preference in the memory delay and reward sections within the same trial (Figure 6—figure supplement 1). In conclusion, these findings indicate that the encoding preference for lap trajectories exhibited by midbrain DA and GABA neurons cannot be simply explained by discrepancies in RPE signaling.
 
-## GABA neurons of the VTA and short-term memory
+### GABA neurons of the VTA and short-term memory
 
 With the advent of highly selective identification and perturbation techniques, new evidence has emerged regarding the encoding properties and functional roles of local VTA inhibitory networks in reward processing and motivation. There are reports demonstrating that GABA neurons of the VTA suppress reward consummatory behavior (van Zessen et al., 2012), facilitate aversive behavior (Matsumoto and Hikosaka, 2007; Tan et al., 2012), and elicit sustained activities in the delay period between conditioned and unconditioned stimuli (Cohen et al., 2012). During these behaviors, the responses of DA and GABA neurons are often inverse, such that when GABA neurons are excited, neighboring DA neurons decrease their discharge rate. In particular, aversive stimuli excite GABA neurons, which then suppress the neighboring DA neurons (Tan et al., 2012). In addition, during reward consumption, GABA neurons are inactive (Cohen et al., 2012; van Zessen et al., 2012); however, when excited, they inhibit DA neurons and disturb consummatory behavior (van Zessen et al., 2012). Finally, in classical conditioning tasks, DA neurons respond to rewards and reward-predicting stimuli, whereas GABA neurons remain silent during such events (Cohen et al., 2012). However, we demonstrated here that midbrain DA and GABA neurons elicit remarkably similar encoding properties. Both neuronal populations respond to short-term memory-specific activities manifested by encoding preferences for lap trajectories. Notably, though, GABA neurons are more strongly engaged in this dynamic encoding activity since almost twice as many inhibitory neurons responded differently to the left and right trials.
 
@@ -138,41 +248,170 @@ This result presents an activity paradox. Given the abundant and potent synaptic
 
 Finally, the stronger engagement of GABA neurons in trajectory-specific activity is an interesting observation that requires further investigation. In our opinion, future research on this topic should point to the direction of network oscillations. The VTA circuit is known to oscillate in memory-engaging behaviors producing frequencies of a wide spectrum; up to 100 Hz (Fujisawa and Buzsáki, 2011); also unpublished observations in our study. Although the mechanisms supporting circuit oscillations in the VTA are not well investigated, evidence from the prefrontal cortex (van Aerde et al., 2008; Glykos et al., 2015) and the hippocampal formation (Traub et al., 2000; Mann and Paulsen, 2007) demonstrate that the excitation of the local network of inhibitory neurons is crucial for the generation and maintenance of network oscillations.
 
-## Conclusion
+### Conclusion
 
 In summary, we optogenetically probed DA and GABA neurons in the VTA while mice performed a decision-making task with memory load. We discovered that both neuronal populations elicited memory-dependent preferences for left or right trajectories that could not be explained by motor activity, motivated behavior, or reward-related processes. This evidence indicates that VTA neurons encode mental representations to support short-term memory-dependent decisions and provides insights into novel sophisticated coding strategies employed by the midbrain DA and GABA neurons in reward-related behavior.
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J-Slc6a3tm1.1(cre)Bkmn/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax #006660; RRID: IMSR_JAX:006660</td>
+      <td>male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J- Slc32a1tm2(cre)Lowl</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax #0016962; RRID: IMSR_JAX:0016962</td>
+      <td>male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-pA</td>
+      <td>UNC Vector Core</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>AB152</td>
+      <td>1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Aves Labs</td>
+      <td>SKU: 75–131</td>
+      <td>1/500-1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 546 IgG(Goat anti-chicken polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11040</td>
+      <td>1/500-1/1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 IgG(Goat anti-mouse polyclonal)</td>
+      <td>Jackson Immunoresearch Laboratories, Inc.</td>
+      <td>AB_23338840</td>
+      <td>1/500-1/1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI Fluoromount-G</td>
+      <td>SouthernBiotech</td>
+      <td>Cat No:0100–20</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>N/A</td>
+      <td>https://www.mathworks.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KlustaKwik2</td>
+      <td>Kadir et al., 2014</td>
+      <td>https://github.com/kwikteam/klustakwik2, copy archived at Buccino, 2019</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RPvdsEX</td>
+      <td>Tucker-Davis Technologies</td>
+      <td>https://www.tdt.com/component/rpvdsex/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silicon probe: 64-site, 6-shank</td>
+      <td>NeuroNexus</td>
+      <td>Buzsaki64spL</td>
+      <td>For electrophysiology recordings</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optical fiber AFS50/125Y</td>
+      <td>Thorlabs, Inc.</td>
+      <td>https://www.thorlabs.co.jp/thorproduct.cfm?partnumber=AFS50/125Y</td>
+      <td>For light stimulation for optogenetic identification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Blue laser diode</td>
+      <td>OSRAM Opto Semiconductors</td>
+      <td>PL450B</td>
+      <td>For light stimulation for optogenetic identification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>256-channel Multiplexed Biosignal Amplifier</td>
+      <td>Amplipex, Ltd.</td>
+      <td>KJE-1001</td>
+      <td>For electrophysiology recordings</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Figure-eight T-maze apparatus</td>
+      <td>O’Hara &amp; Co., Ltd.</td>
+      <td>http://ohara-time.co.jp/</td>
+      <td>For behavioral task</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Dr. Shigeyoshi Fujisawa (shigeyoshi.fujisawa@riken.jp).
 
-## Animals
+### Animals
 
 All experiments were approved by the RIKEN Institutional Animal Care and Use Committee. We used five adult male DAT-ires-Cre Jackson’s Lab; stock #6660; Bäckman et al., 2006 and four Vgat-ires-Cre Jackson’s Lab; stock #16962; Vong et al., 2011 mice backcrossed to C57BL/6 J. Animals were housed in separate cages on a 12 hr dark/light cycle and each performed the behavioral tasks at the same time of the day, between 11:00 and 17:00. In the cage, they were provided ad libitum food access but were restrained from water availability.
 
-## Behavioral tasks
+### Behavioral tasks
 
 All behavioral tasks took place on a T-maze apparatus. More information about the maze configuration is provided in Figure 2—figure supplement 1.
 
-## Memory task
+#### Memory task
 
 Behavioral sessions commenced with the animal being placed at the ‘starting position’ (Figure 2A and Figure 2—figure supplement 1). Then, access to the main corridor was provided and the animal had to run through the ‘start’ section (0–50 cm) before it arrived at the maze segment surrounded by two PC monitors (‘visual-cue’ section, 50–80 cm). In this section, it was presented with a distinctive visual object (vertical black and gray bars) in one of the two monitors (the other monitor remained dark) indicates which side arm to visit to obtain the reward (i.e. left cue → left reward, right cue → right reward). In the third region of the central arm (‘delay’ section, 80–120 cm) both monitors turned dark. While running in the delay section, the animal had to maintain the reward-related information and based on that perform the action selection at the T-intersection. The intersection at the end of the main arm designated the end of the delay section and the beginning of the ‘side-arms’ section (120–150 cm) where the animal runs towards the reward position in anticipation of the reward. Reward (5 μl water) was delivered on correct trials at the end of the side-arms section from a waterspout. The first activation of the light-beam sensor at the waterspout triggered the water-delivery pump (Burkert, Ingelfingen, Germany), followed by reward consumption (‘reward’ section). After consuming the reward, the animal could return of its own will to the starting position, to commence a new trial.
 
 Daily behavioral sessions consisted of 80–100 trials. Only animals with at least three successive sessions with an 80% performance ratio or more in the training phase were subjected to surgical operations.
 
-## No-Cue-No-Choice task
+#### No-Cue-No-Choice task
 
 Trials of this control task were delivered in recording sessions, interleaved with memory task trials. When the animal entered the visual cue section it was not instructed by the visual cue (Figure 4A and Figure 2—figure supplement 1). Also, access to both side arms was initially denied by closed sliding doors. Approximately 1 s after the animal arrived at the turning point, one of the sliding doors opened (pseudo-randomly) providing access to the reward. On every trial, the presentation or absence of the visual cue could instruct the animal about the task rules (i.e. memory task or no-cue-no-choice task).
 
-## Cue-no-choice-task
+#### Cue-no-choice-task
 
 The settings of this control task were the same as the memory task settings, except for the blockade of the unrewarded side arm (Figure 5A and Figure 2—figure supplement 1). Thus, the animals were always forced to perform correct choices. Because in both tasks, the same cue was presented, the animals could potentially be confused about the trial’s task rules. Therefore, memory task and cue-no-choice task trials were delivered in separate sets within the same recording session. Accordingly, when the animals completed the set of cue-no-choice task trials (approximately 50 trials), they were automatically delivered with another set of memory task trials (approximately 50 trials).
 
 Recording sessions lasted approximately 20–30 min.
 
-## Intracranial surgeries and electrophysiological recording
+### Intracranial surgeries and electrophysiological recording
 
 The surgical process consisted of two separate operations. First, mice (DAT-ires-Cre or Vgat-ires-Cre) were surgically injected with 200–500 nl of adeno-associated virus AAV5-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-pA University of North Carolina vector core facility; (Tsai et al., 2009) into the VTA stereotaxically (from inferior cerebral vein AP:~6.65 mm, from midline ML: - 0.55 mm on the left hemisphere, from surface 4–4.5 mm, Figure 1A). Ten to fifteen days later, mice were implanted with a silicon probe in the same AP and ML coordinates (vertical insertion was intended, 0 degrees; Figure 1A and Figure 1—figure supplement 1). We used Buzsaki64spL (NeuroNexus, Ann Arbor, MI, USA) silicon probes which are composed of 6 shanks (10 mm long, 15 μm thick, 200 μm shank separation) and each shank has 10 recording sites (160 μm2 each site 0.6–1.0 MΩ impedance). The silicon probe was attached to a custom-made micromanipulator and moved gradually to the desired depth position. On every probe shank, optic fibers were firmly attached to secure an accurate and firm insertion of the recording channels in the deep midbrain area (Figure 1—figure supplement 1). For experiments where light delivery was required, two of the optic fibers (shanks 2 and 5) were coupled with blue (450 nm) laser diodes (PL450B, OSRAM Opto Semiconductors). Light dispersion could potentially cover the axial and transverse span of all 64 channels (Stark et al., 2012).
 
@@ -180,59 +419,63 @@ During recording sessions, the wide-band neurophysiological signals were acquire
 
 We cannot exclude the possibility that some neurons were recorded in successive sessions because clustering analysis was performed on individual sessions.
 
-## Data analysis
+### Data analysis
 
 Unless otherwise stated, data analysis was performed with custom-made programs designed in MATLAB with Signal-processing and Statistics toolboxes.
 
-## Light-stimulation protocols for optogenetic identification
+#### Light-stimulation protocols for optogenetic identification
 
 Light stimulation protocols were delivered before and after the behavioral tasks. They were composed of 1, 2, 3, and 4 mW blocks of 450 nm light pulses. Each block consisted of 150 square pulses (12ms pulse duration; 0–1ms and 11–12ms contained artifacts) delivered at 1, 2, 3–10 Hz. Electrophysiological data recorded during light stimulation and behavioral protocols within a single session were merged and clustered together.
 
-## Statistical analysis for detection of light-responsive units
+#### Statistical analysis for detection of light-responsive units
 
 Neurons with light-induced responses exceeding the average spontaneous activity were classed as light-responsive. To identify light-responsive neurons we applied the statistical analysis described in detail in Figure 1—figure supplement 2.
 
-## Estimation of firing activity during behavior
+#### Estimation of firing activity during behavior
 
-To estimate the neuronal firing activity while animals performed the behavioral task, we took into consideration the primary goal of this study; which is to look for trajectory-specific encoding properties, as well as the inherent limitation of the task; that is the experimenter could not control the temporal precision of the behavioral events. To overcome this limitation, we arranged firing activity by the animal’s position on the maze. To do so, first, we linearized the trial trajectories and assigned them with a lap trajectory label (left or right). Then, the linearized products were divided into 100 position points and normalized so that position 0 corresponded to the starting point of the trial and position 1 to the waterspout. Second, we constructed post-distance histograms, analogous to the peri-stimulus-time-histograms (PSTHs), although the time of spiking events was replaced by the position they occurred (for simplicity, also by habit, we will call the post-distance histograms as PSTHs). To construct accurate PSTHs we considered the exact position the spikes were discharged and the time the animal occupied this certain position. Let nk(x) be the number of spikes of a single neuron and tk(x) be the occupation time in the xth position point of the kth trial (Figure 3—figure supplement 1). Then, λ^(x)=1K∗∑k=1K[n(k)(x)/t(k)(x)] where K is the number of trials, represents the average firing rate probability (spikes / sec) at position point x. To examine the trajectory-specific encoding properties of VTA neurons we produced average firing rate histograms for correct left and right trials, separately. Then, both histograms were smoothed with a Gaussian Kernel function (σ=0.5, length of 20 position points).
+To estimate the neuronal firing activity while animals performed the behavioral task, we took into consideration the primary goal of this study; which is to look for trajectory-specific encoding properties, as well as the inherent limitation of the task; that is the experimenter could not control the temporal precision of the behavioral events. To overcome this limitation, we arranged firing activity by the animal’s position on the maze. To do so, first, we linearized the trial trajectories and assigned them with a lap trajectory label (left or right). Then, the linearized products were divided into 100 position points and normalized so that position 0 corresponded to the starting point of the trial and position 1 to the waterspout. Second, we constructed post-distance histograms, analogous to the peri-stimulus-time-histograms (PSTHs), although the time of spiking events was replaced by the position they occurred (for simplicity, also by habit, we will call the post-distance histograms as PSTHs). To construct accurate PSTHs we considered the exact position the spikes were discharged and the time the animal occupied this certain position. Let $n^{k}(x)$ be the number of spikes of a single neuron and $t^{k}(x)$ be the occupation time in the $x_{th}$ position point of the $k_{th}$ trial (Figure 3—figure supplement 1). Then, $\lambda^(x)=\frac{1}{K}∗\sumk=1K[n^{(k)}(x)/t^{(k)}(x)]$ where K is the number of trials, represents the average firing rate probability (spikes / sec) at position point $x$. To examine the trajectory-specific encoding properties of VTA neurons we produced average firing rate histograms for correct left and right trials, separately. Then, both histograms were smoothed with a Gaussian Kernel function (σ=0.5, length of 20 position points).
 
-## Firing rate heatmap construction
+#### Firing rate heatmap construction
 
 To construct the normalized firing rate heatmaps shown in Figures 3B—6B, Figure 3—figure supplements 2 and 4 we took the following steps. First, for every neuron we produced the average firing rate for left and right correct trials. Second, we normalized both rates by dividing them with the maximum firing rate of the strongest trajectory response (e.g. for the example shown in Figure 3—figure supplement 1 we divided both average firing rates by the maximum rate of the response to the left trials). Then, the normalized rate of the stronger trajectory response was assigned to the ‘preferred’ heatmap and the rate of the weaker trajectory response to the ‘non-preferred’ heatmap (e.g. for the example shown in Figure 3—figure supplement 1, the left normalized rate was assigned to the ‘preferred’ heatmap and the right rate to the ‘non-preferred’ heatmap). Both rates occupied the same row. The row ordering was determined by the position of maximum rate.
 
-## Identifying trajectory-specific neurons with the permutation method
+#### Identifying trajectory-specific neurons with the permutation method
 
 To identify neurons with trajectory-specific encoding properties we applied the permutation test reported elsewhere (Fujisawa et al., 2008) and described in detail in Figure 3—figure supplement 1.
 
-## Regression analysis
+#### Regression analysis
 
 We designed a generalized linear regression model (GLM) with the neuronal firing rate (FR) modelled as a gaussian function of the lap trajectory (T), speed (S), trial number (TN), performance (R), current trial accuracy (A0), and previous trial accuracy (A-1) behavioural variables. With the permutation analysis, we observed that the trajectory-specific effect on the firing activity was dependent on position. Thus, we examined the joint effect of trajectory with position (P) on spiking activity. All dependent and independent variables were arranged by position. The values of the trajectory (1 for left and 2 for right), trial number, performance (cumulative correct rate), current trial and previous trial accuracy (1 for correct trial, 0 for error trial) variables remained constant throughout the whole trial. The firing rate, position and speed variables changed their values on every position.
 
-The GLM was:FR=β0+∑k=16βT∗PT⋅Pk+∑k=16βS⋅Sk+βTN⋅TN+βR⋅R+βA0⋅A0+βA−1⋅A−1+ε
+The GLM was:
+
+$$
+FR=\beta_{0}+\sumk=16\beta_{T∗P}T⋅P^{k}+\sumk=16\beta_{S}⋅S^{k}+\beta_{TN}⋅TN+\beta_{R}⋅R+\beta_{A_{0}}⋅A_{0}+\beta_{A_{−1}}⋅A_{−1}+\epsilon
+$$
 
 where the β values are the regressor coefficients for the different predictors (including the intercept β0) and ε is the Gaussian noise term. The 6th degree order polynomials of position and speed were chosen for model optimization with the Bayes information criterion.
 
-First, we generated model predictions of the average firing rates for left (L^0) and right (R^0) trials, and from those we calculated the predicted firing rate difference (D^0). Then, we shuffled the trajectory labels assigned to the tested variable (the assigned labels to the rest of the independent variables remained intact) and assessed the effect on the firing rate difference. For every predictor we produced 500 shuffled rate differences, D^j . If the absolute mean value of D^0 exceeded the top 5% of the D^j values (including Bonferroni correction), then the hypothesis was rejected, and the predictor was significantly contributing to the firing rate difference. We examined every maze region individually, but here we report only for the delay region.
+First, we generated model predictions of the average firing rates for left ($L^_{0}$) and right ($R^_{0}$) trials, and from those we calculated the predicted firing rate difference ($D^_{0}$). Then, we shuffled the trajectory labels assigned to the tested variable (the assigned labels to the rest of the independent variables remained intact) and assessed the effect on the firing rate difference. For every predictor we produced 500 shuffled rate differences, $D^_{j}$ . If the absolute mean value of $D^_{0}$ exceeded the top 5% of the $D^_{j}$ values (including Bonferroni correction), then the hypothesis was rejected, and the predictor was significantly contributing to the firing rate difference. We examined every maze region individually, but here we report only for the delay region.
 
-## Reward-related excitation or inhibition
+#### Reward-related excitation or inhibition
 
-The reward section was defined as the first second of reward consumption. To assess neuronal response to reward consumption and categorize it as excitatory, inhibitory, or non-responsive we performed the following analysis. First, we produced the smoothed mean firing rate response in the time domain (as we did in the maze sections in the space domain) for left, λ^Leftt, and right, λ^Rightt trials. For the preferred arm of each neuron, we compared the mean firing rate in the reward section to the mean rate in the 100ms epoch preceding reward delivery (paired t-test on mean firing rates; p<0.05; Figure 6B column 4).
+The reward section was defined as the first second of reward consumption. To assess neuronal response to reward consumption and categorize it as excitatory, inhibitory, or non-responsive we performed the following analysis. First, we produced the smoothed mean firing rate response in the time domain (as we did in the maze sections in the space domain) for left, $\lambda^_{Left}t,$ and right, $\lambda^_{Right}t$ trials. For the preferred arm of each neuron, we compared the mean firing rate in the reward section to the mean rate in the 100ms epoch preceding reward delivery (paired t-test on mean firing rates; p<0.05; Figure 6B column 4).
 
-## Encoding preferences in the reward section
+#### Encoding preferences in the reward section
 
 The difference in the intensity of neuronal firing activity between left and right rewards was assessed by comparing the mean firing rate of neuronal activity elicited in the reward section of left and right trials (paired t-test on mean firing rates; p<0.05; Figure 6B column 3).
 
-## Relationship of encoding preferences in the reward section to those in the remainder of the maze
+#### Relationship of encoding preferences in the reward section to those in the remainder of the maze
 
-To assess whether the trajectory-specific firing activity in the maze was linked to discrepancies in the response to left and right rewards, we followed the next steps of analysis. First, for every neuron and every maze section, we calculated the mean value of the relative firing rate difference between left and right trials (Dstart(x),Dcue(x),Ddelay(x),Darms(x),Dreward(t)). Then, for each neuronal group, we calculated the linear relationship (Pearson’s correlation) between the reward section mean values, to those in the remainder of the maze (Pearson’s correlation; Figure 6C).
+To assess whether the trajectory-specific firing activity in the maze was linked to discrepancies in the response to left and right rewards, we followed the next steps of analysis. First, for every neuron and every maze section, we calculated the mean value of the relative firing rate difference between left and right trials $(D_{start}(x),D_{cue}(x),D_{delay}(x),D_{arms}(x),D_{reward}(t))$. Then, for each neuronal group, we calculated the linear relationship (Pearson’s correlation) between the reward section mean values, to those in the remainder of the maze (Pearson’s correlation; Figure 6C).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After completion of the recording sessions, which lasted about a month, mice were anesthetized with isoflurane and perfused transcardially with 10 ml PBS and 10 ml paraformaldehyde (4%), before they were decapitated. Brains were then removed, post-fixed and coronal slices (100 μm) were prepared. The primary antibodies used were rabbit anti-tyrosine hydroxylase (TH) and chicken anti-GFP. The secondary antibodies used were AlexaFluor 549 anti-rabbit and 488 IgG anti-chicken, respectively. Sections were further stained with DAPI to visualize nuclei. Image acquisition was performed with a fluorescence microscope NanoZoomer (Hamamatsu, Japan) system.
 
-## Methodological considerations
+### Methodological considerations
 
-## Arranging firing rate by position
+#### Arranging firing rate by position
 
 With only a handful of exceptions (our report belongs to this minority group), scientific manuscripts reporting the encoding properties of DA neurons arrange neuronal responses by time and align them by key behavioral events, such as trial start, visual cue presentation, reward delivery, etc. We also attempted to arrange firing activities by time, but soon we came to the realization of the inherent caveats of this method in the T-maze task.
 
@@ -242,6 +485,6 @@ However, in the T-maze task, the timing of behavioral events was completely cont
 
 This important caveat could be easily resolved by arranging firing activities by position. This way, we could produce reliable neuronal firing averages from recording sessions and perform comparisons between behavioral tasks and animals.
 
-## Identifying and characterizing RPE signals in the Tmaze task
+#### Identifying and characterizing RPE signals in the Tmaze task
 
 The role of DA in processing RPE signals has been studied extensively with classical conditioning tasks (Ljungberg et al., 1991; Schultz et al., 1993; Schultz et al., 1997; Schultz, 2002; Tobler et al., 2005; Kim et al., 2020). In this Pavlovian paradigm, animals are usually physically restrained and are not trained to make decisions, also, they are exposed to a strictly controlled sensory environment and receive easily accessible and immediate rewards. The present study was designed to investigate the memory-encoding properties of individual neurons in a high-dimensional environment. We did not observe strong manifestations of RPE signaling (Figure 3—figure supplement 4). However, compared to classical conditioning studies, in the T-maze task neurons were under the control of numerous behavioral parameters that could be masking cue-related responses, and therefore we cannot draw safe conclusions about the computational role of DA neurons on RPE signals. So far, only manipulating the behavioral parameters with virtual reality tools, has provided insight into the RPE-related responses of DA neurons in goal-directed behavioral tasks like ours (Kim et al., 2020).
